@@ -149,6 +149,15 @@ const formatLastUpdated = (dateString: string) => {
         });
       };
       
+      const getFaviconUrl = (url) => {
+        try {
+          const domain = new URL(url).hostname;
+          return `https://www.google.com/s2/favicons?domain=${domain}&sz=32`;
+        } catch {
+          return '';
+        }
+      };
+      
       return `
         <div class="article-card" onclick="window.open('${article.url}', '_blank')" style="
           border: 1px solid #ddd; 
@@ -159,22 +168,20 @@ const formatLastUpdated = (dateString: string) => {
           border-radius: 8px;
           display: flex;
           flex-direction: column;
+          position: relative;
         ">
-          <div style="display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 8px;">
+          <img src="${getFaviconUrl(article.url)}" alt="${article.site} favicon" style="
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            width: 16px;
+            height: 16px;
+          " onerror="this.style.display='none';">
+          
+          <div style="display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 8px; margin-left: 25px;">
             <span style="font-size: 12px; color: #666;">${article.site}</span>
             <span style="font-size: 12px; color: #666;">${formatDate(article.published)}</span>
           </div>
-          
-          ${article.image_url ? `
-            <div style="margin-bottom: 10px;">
-              <img src="${article.image_url}" alt="${article.title}" style="
-                width: 100%;
-                height: 150px;
-                object-fit: cover;
-                border-radius: 4px;
-              " onerror="this.style.display='none';">
-            </div>
-          ` : ''}
           
           <h3 style="font-size: 16px; font-weight: bold; margin-bottom: 8px; line-height: 1.4; color: black;">
             ${article.title}
