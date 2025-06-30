@@ -346,7 +346,17 @@ class RSSCollector:
     
     def group_articles_by_date(self, articles: List[Dict[str, Any]]) -> Dict[str, List[Dict[str, Any]]]:
         """記事を日付別にグループ化（全期間対応）"""
-        today = datetime.now().date()
+        try:
+            from zoneinfo import ZoneInfo
+            jst = ZoneInfo("Asia/Tokyo")
+        except ImportError:
+            # Python 3.8以前の場合
+            from datetime import timezone
+            jst = timezone(timedelta(hours=9))
+        
+        # 日本時間で日付を取得
+        now_jst = datetime.now(jst)
+        today = now_jst.date()
         yesterday = today - timedelta(days=1)
         day_before_yesterday = today - timedelta(days=2)
         
@@ -362,7 +372,21 @@ class RSSCollector:
         
         for article in articles:
             try:
-                article_date = datetime.fromisoformat(article['published']).date()
+                # 記事の公開日時を日本時間に変換
+                article_datetime = datetime.fromisoformat(article['published'].replace('Z', '+00:00'))
+                if article_datetime.tzinfo is None:
+                    # タイムゾーン情報がない場合はUTCとして扱う
+                    try:
+                        from zoneinfo import ZoneInfo
+                        utc = ZoneInfo("UTC")
+                    except ImportError:
+                        from datetime import timezone
+                        utc = timezone.utc
+                    article_datetime = article_datetime.replace(tzinfo=utc)
+                
+                # 日本時間に変換
+                article_datetime_jst = article_datetime.astimezone(jst)
+                article_date = article_datetime_jst.date()
                 
                 if article_date == today:
                     grouped['本日'].append(article)
