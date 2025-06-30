@@ -1,0 +1,109 @@
+---
+import Layout from '../layouts/Layout.astro';
+import ArticleCard from '../components/ArticleCard.astro';
+import fs from 'fs';
+import path from 'path';
+
+// JSONデータの読み込み
+let articlesData;
+try {
+  const dataPath = path.join(process.cwd(), 'data', 'articles.json');
+  const jsonData = fs.readFileSync(dataPath, 'utf-8');
+  articlesData = JSON.parse(jsonData);
+} catch (error) {
+  console.error('Failed to load articles data:', error);
+  articlesData = {
+    last_updated: new Date().toISOString(),
+    total_articles: 0,
+    articles_by_date: {
+      '本日': [],
+      '昨日': [],
+      '一昨日': []
+    }
+  };
+}
+
+// 最終更新時刻のフォーマット
+const formatLastUpdated = (dateString: string) => {
+  const date = new Date(dateString);
+  return date.toLocaleString('ja-JP', {
+    year: 'numeric',
+    month: 'long',
+    day: 'numeric',
+    hour: '2-digit',
+    minute: '2-digit'
+  });
+};
+
+// 日付セクションのスタイル
+const getSectionStyle = (dateKey: string) => {
+  const styles = {
+    '本日': 'border-l-4 border-l-blue-500 bg-blue-50',
+    '昨日': 'border-l-4 border-l-green-500 bg-green-50',
+    '一昨日': 'border-l-4 border-l-orange-500 bg-orange-50'
+  };
+  return styles[dateKey] || 'border-l-4 border-l-gray-500 bg-gray-50';
+};
+---
+
+<Layout title="AI Info Aggregator - 最新記事一覧">
+  <!-- ヘッダー -->
+  <header class="mb-8 text-center">
+    <h1 class="text-4xl font-bold text-gray-900 mb-2">
+      📚 AI Info Aggregator
+    </h1>
+    <p class="text-gray-600 text-lg mb-4">
+      最新のビジネス・技術記事を一箇所で
+    </p>
+    <div class="text-sm text-gray-500">
+      最終更新: {formatLastUpdated(articlesData.last_updated)} | 
+      総記事数: {articlesData.total_articles}件
+    </div>
+  </header>
+
+  <!-- 記事セクション -->
+  {Object.entries(articlesData.articles_by_date).map(([dateKey, articles]) => (
+    <section class={`mb-8 p-6 rounded-lg ${getSectionStyle(dateKey)}`}>
+      <h2 class="text-2xl font-bold text-gray-800 mb-4 flex items-center">
+        <span class="mr-2">
+          {dateKey === '本日' ? '🗓️' : dateKey === '昨日' ? '📅' : '📆'}
+        </span>
+        {dateKey}の記事
+        <span class="ml-2 text-lg font-normal text-gray-600">
+          ({articles.length}件)
+        </span>
+      </h2>
+      
+      {articles.length > 0 ? (
+        <div class="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
+          {articles.map((article) => (
+            <ArticleCard
+              title={article.title}
+              url={article.url}
+              site={article.site}
+              published={article.published}
+              description={article.description}
+              category={article.category}
+            />
+          ))}
+        </div>
+      ) : (
+        <p class="text-gray-500 text-center py-8 italic">
+          {dateKey}の記事はありません
+        </p>
+      )}
+    </section>
+  ))}
+
+  <!-- フッター -->
+  <footer class="mt-12 pt-8 border-t border-gray-200 text-center text-gray-500 text-sm">
+    <p>
+      このサイトは個人利用目的で各サイトの公式RSSフィードから情報を収集しています。<br>
+      記事の著作権は各配信元に帰属します。
+    </p>
+    <p class="mt-2">
+      🤖 Powered by RSS & Astro | 
+      ⚡ Generated at {formatLastUpdated(articlesData.last_updated)}
+    </p>
+  </footer>
+</Layout>
