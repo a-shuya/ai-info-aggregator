@@ -168,7 +168,12 @@ const formatLastUpdated = (dateString: string) => {
     <!-- メインコンテンツ -->
     <div style="flex: 1; padding: 20px;">
       <div id="articleContainer">
-        <h2 id="contentTitle" style="font-size: 20px; font-weight: bold; margin-bottom: 20px;">本日のすべての記事</h2>
+        <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 20px;">
+          <h2 id="contentTitle" style="font-size: 20px; font-weight: bold; margin: 0;">本日のすべての記事</h2>
+          <a id="siteLink" href="#" target="_blank" style="font-size: 14px; color: #0066cc; text-decoration: none; display: none;">
+            元サイトを見る →
+          </a>
+        </div>
         <div id="articlesList">
           <!-- JavaScriptで動的に更新 -->
         </div>
@@ -183,6 +188,31 @@ const formatLastUpdated = (dateString: string) => {
     const contentTitle = document.getElementById('contentTitle');
     const dateSelector = document.getElementById('dateSelector');
     const periodSelector = document.getElementById('periodSelector');
+    const siteLink = document.getElementById('siteLink');
+    
+    // サイトごとの元サイトリンク
+    const siteLinks = {
+      '日経ビジネス': 'https://business.nikkei.com/latest/?i_cid=nbpnb_latest',
+      'Business Insider(ビジネス)': 'https://www.businessinsider.jp/business/',
+      'Business Insider(テック)': 'https://www.businessinsider.jp/tech-news/',
+      'Business Insider(サイエンス)': 'https://www.businessinsider.jp/science/',
+      'Business Insider(スタートアップ)': 'https://www.businessinsider.jp/tag/start-up/',
+      '日経xTECH(IT)': 'https://xtech.nikkei.com/top/it/',
+      'ITmedia(AI+)': 'https://www.itmedia.co.jp/aiplus/',
+      'はてなブックマーク (IT)': 'https://b.hatena.ne.jp/hotentry/it',
+      'はてなブックマーク (AI)': 'https://b.hatena.ne.jp/entrylist/it/AI・機械学習',
+      'Zenn(機械学習)': 'https://zenn.dev/topics/機械学習',
+      'Zenn(AI)': 'https://zenn.dev/topics/ai',
+      'Zenn(生成 AI)': 'https://zenn.dev/topics/生成ai',
+      'Zenn(ディープラーニング)': 'https://zenn.dev/topics/deeplearning',
+      'Zenn(LLM)': 'https://zenn.dev/topics/llm',
+      'Zenn(NLP)': 'https://zenn.dev/topics/nlp',
+      'Zenn(Python)': 'https://zenn.dev/topics/python',
+      'Zenn(Google Cloud)': 'https://zenn.dev/topics/googlecloud',
+      'Cloud Blog': 'https://cloud.google.com/blog?hl=en',
+      'Cloud Blog JA': 'https://cloud.google.com/blog/ja',
+      'G-gen': 'https://blog.g-gen.co.jp'
+    };
     
     // 今日の日付を設定
     const today = new Date();
@@ -264,10 +294,18 @@ const formatLastUpdated = (dateString: string) => {
       
       contentTitle.textContent = title;
       
+      // 元サイトリンクの表示制御
+      if (currentFilter !== 'all' && siteLinks[currentFilter]) {
+        siteLink.href = siteLinks[currentFilter];
+        siteLink.style.display = 'block';
+      } else {
+        siteLink.style.display = 'none';
+      }
+      
       if (filteredArticles.length === 0) {
         articlesList.innerHTML = '<p style="color: #666; text-align: center; padding: 40px;">記事がありません</p>';
       } else {
-        // PC版では3列、モバイルでは1列のグリッドレイアウト
+        // PC版では3列、モバイルでは1列のグリッドレイアウト（記事カードの最大幅制限）
         articlesList.innerHTML = `
           <div style="
             display: grid;
@@ -279,9 +317,13 @@ const formatLastUpdated = (dateString: string) => {
           </div>
         `;
         
-        // ホバー効果を追加
+        // 記事カードの最大幅制限とホバー効果を追加
         const articleCards = document.querySelectorAll('.article-card');
         articleCards.forEach(card => {
+          // レイアウトバグ修正：最大幅制限
+          card.style.maxWidth = '400px';
+          
+          // ホバー効果
           card.addEventListener('mouseenter', () => {
             card.style.transform = 'translateY(-2px)';
             card.style.boxShadow = '0 4px 12px rgba(0, 0, 0, 0.1)';
