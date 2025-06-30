@@ -31,26 +31,26 @@ Object.values(articlesData.articles_by_date).forEach(articles => {
 
 // サイト一覧を指定された順序で取得
 const sites = [
-  '日経ビジネス電子版',
+  '日経ビジネス',
   'Business Insider(ビジネス)',
   'Business Insider(テック)',
   'Business Insider(サイエンス)',
   'Business Insider(スタートアップ)',
-  '日経xTECH（IT）',
-  'ITmedia AI+',
-  'はてなブックマーク（IT）',
-  'はてなブックマーク（知識）',
-  'Zenn（機械学習）',
-  'Zenn（AI）',
-  'Zenn（生成AI）',
-  'Zenn（ディープラーニング）',
-  'Zenn（LLM）',
-  'Zenn（NLP）',
-  'Zenn（Python）',
-  'Zenn（Google Cloud）',
-  'Google Cloud Blog（英語）',
-  'Google Cloud Blog（日本語）',
-  'G-gen Tech Blog'
+  '日経xTECH(IT)',
+  'ITmedia(AI+)',
+  'はてなブックマーク (IT)',
+  'はてなブックマーク (AI)',
+  'Zenn(機械学習)',
+  'Zenn(AI)',
+  'Zenn(生成 AI)',
+  'Zenn(ディープラーニング)',
+  'Zenn(LLM)',
+  'Zenn(NLP)',
+  'Zenn(Python)',
+  'Zenn(Google Cloud)',
+  'Cloud Blog',
+  'Cloud Blog JA',
+  'G-gen'
 ].filter(site => allArticles.some(article => article.site === site));
 
 const formatLastUpdated = (dateString: string) => {
