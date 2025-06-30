@@ -118,13 +118,17 @@ class RSSCollector:
                 if len(description) > 200:
                     description = description[:200] + '...'
             
+            # 画像URL取得
+            image_url = self.extract_image_url(entry)
+            
             return {
                 'title': title,
                 'url': url,
                 'site': site_name,
                 'published': published.isoformat(),
                 'description': description,
-                'category': self.get_site_category(site_name)
+                'category': self.get_site_category(site_name),
+                'image_url': image_url
             }
             
         except Exception as e:
@@ -178,6 +182,44 @@ class RSSCollector:
             if feed['name'] == site_name:
                 return feed['category']
         return 'その他'
+    
+    def extract_image_url(self, entry: Any) -> str:
+        """RSS エントリから画像URLを抽出"""
+        import re
+        
+        # 複数の方法で画像URLを取得を試行
+        image_url = ''
+        
+        # 1. media:content や enclosure から
+        if hasattr(entry, 'enclosures') and entry.enclosures:
+            for enclosure in entry.enclosures:
+                if hasattr(enclosure, 'type') and enclosure.type and 'image' in enclosure.type:
+                    if hasattr(enclosure, 'href'):
+                        image_url = enclosure.href
+                        break
+        
+        # 2. summary や description から img タグを抽出
+        if not image_url:
+            content = ''
+            if hasattr(entry, 'summary'):
+                content = entry.summary
+            elif hasattr(entry, 'description'):
+                content = entry.description
+            
+            if content:
+                img_match = re.search(r'<img[^>]+src=["\']([^"\']+)["\']', content, re.IGNORECASE)
+                if img_match:
+                    image_url = img_match.group(1)
+        
+        # 3. media_content から
+        if not image_url and hasattr(entry, 'media_content'):
+            for media in entry.media_content:
+                if hasattr(media, 'url') and hasattr(media, 'type'):
+                    if 'image' in media.type:
+                        image_url = media.url
+                        break
+        
+        return image_url
     
     def classify_business_insider_article(self, title: str, description: str) -> str:
         """Business Insider記事のカテゴリ分類"""
