@@ -305,25 +305,45 @@ const formatLastUpdated = (dateString: string) => {
       if (filteredArticles.length === 0) {
         articlesList.innerHTML = '<p style="color: #666; text-align: center; padding: 40px;">記事がありません</p>';
       } else {
-        // PC版では3列、モバイルでは1列のグリッドレイアウト（左詰め配置）
+        // 3列固定レイアウト（レスポンシブ対応）
+        const articlesHTML = filteredArticles.map(createArticleHTML).join('');
+        
+        // ダミーボックスを追加（3の倍数になるまで）
+        const dummyBoxes = [];
+        const remainder = filteredArticles.length % 3;
+        if (remainder !== 0) {
+          const dummyCount = 3 - remainder;
+          for (let i = 0; i < dummyCount; i++) {
+            dummyBoxes.push('<div style="visibility: hidden;"></div>');
+          }
+        }
+        
         articlesList.innerHTML = `
           <div style="
             display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(300px, 400px));
+            grid-template-columns: repeat(3, 1fr);
             gap: 20px;
             max-width: 100%;
-            justify-content: start;
-          ">
-            ${filteredArticles.map(createArticleHTML).join('')}
+          " class="articles-grid">
+            ${articlesHTML}
+            ${dummyBoxes.join('')}
           </div>
+          
+          <style>
+            @media (max-width: 768px) {
+              .articles-grid {
+                grid-template-columns: 1fr !important;
+              }
+              .articles-grid > div[style*="visibility: hidden"] {
+                display: none !important;
+              }
+            }
+          </style>
         `;
         
-        // 記事カードの最大幅制限とホバー効果を追加
+        // 記事カードのホバー効果を追加
         const articleCards = document.querySelectorAll('.article-card');
         articleCards.forEach(card => {
-          // レイアウトバグ修正：最大幅制限
-          card.style.maxWidth = '400px';
-          
           // ホバー効果
           card.addEventListener('mouseenter', () => {
             card.style.transform = 'translateY(-2px)';
