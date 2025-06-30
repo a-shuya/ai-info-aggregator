@@ -305,13 +305,14 @@ const formatLastUpdated = (dateString: string) => {
       if (filteredArticles.length === 0) {
         articlesList.innerHTML = '<p style="color: #666; text-align: center; padding: 40px;">記事がありません</p>';
       } else {
-        // PC版では3列、モバイルでは1列のグリッドレイアウト（記事カードの最大幅制限）
+        // PC版では3列、モバイルでは1列のグリッドレイアウト（左詰め配置）
         articlesList.innerHTML = `
           <div style="
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            grid-template-columns: repeat(auto-fill, minmax(300px, 400px));
             gap: 20px;
             max-width: 100%;
+            justify-content: start;
           ">
             ${filteredArticles.map(createArticleHTML).join('')}
           </div>
