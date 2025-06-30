@@ -4,6 +4,7 @@ import tailwind from '@astrojs/tailwind';
 export default defineConfig({
   integrations: [tailwind()],
   output: 'static',
-  site: 'https://your-username.github.io',
-  base: '/ai-info-aggregator',
+  // Vercelでの本番デプロイ用設定
+  site: 'https://ai-info-aggregator.vercel.app',
+  // base: '/ai-info-aggregator', // Vercelでは不要
 });
