@@ -23,7 +23,15 @@ try {
   };
 }
 
-// 最終更新時刻のフォーマット
+// 全記事を統合して日付とサイト別に分類
+const allArticles = [];
+Object.values(articlesData.articles_by_date).forEach(articles => {
+  allArticles.push(...articles);
+});
+
+// サイト一覧を取得
+const sites = [...new Set(allArticles.map(article => article.site))].sort();
+
 const formatLastUpdated = (dateString: string) => {
   const date = new Date(dateString);
   return date.toLocaleString('ja-JP', {
@@ -34,76 +42,161 @@ const formatLastUpdated = (dateString: string) => {
     minute: '2-digit'
   });
 };
-
-// 日付セクションのスタイル
-const getSectionStyle = (dateKey: string) => {
-  const styles = {
-    '本日': 'border-l-4 border-l-blue-500 bg-blue-50',
-    '昨日': 'border-l-4 border-l-green-500 bg-green-50',
-    '一昨日': 'border-l-4 border-l-orange-500 bg-orange-50'
-  };
-  return styles[dateKey] || 'border-l-4 border-l-gray-500 bg-gray-50';
-};
 ---
 
 <Layout title="AI Info Aggregator - 最新記事一覧">
-  <!-- ヘッダー -->
-  <header class="mb-8 text-center">
-    <h1 class="text-4xl font-bold text-gray-900 mb-2">
-      📚 AI Info Aggregator
-    </h1>
-    <p class="text-gray-600 text-lg mb-4">
-      最新のビジネス・技術記事を一箇所で
-    </p>
-    <div class="text-sm text-gray-500">
-      最終更新: {formatLastUpdated(articlesData.last_updated)} | 
-      総記事数: {articlesData.total_articles}件
-    </div>
-  </header>
-
-  <!-- 記事セクション -->
-  {Object.entries(articlesData.articles_by_date).map(([dateKey, articles]) => (
-    <section class={`mb-8 p-6 rounded-lg ${getSectionStyle(dateKey)}`}>
-      <h2 class="text-2xl font-bold text-gray-800 mb-4 flex items-center">
-        <span class="mr-2">
-          {dateKey === '本日' ? '🗓️' : dateKey === '昨日' ? '📅' : '📆'}
-        </span>
-        {dateKey}の記事
-        <span class="ml-2 text-lg font-normal text-gray-600">
-          ({articles.length}件)
-        </span>
-      </h2>
+  <div style="display: flex; min-height: 100vh;">
+    <!-- 左サイドバー -->
+    <div style="width: 250px; border-right: 1px solid #ddd; padding: 20px; background-color: #f9f9f9;">
+      <h1 style="font-size: 18px; font-weight: bold; margin-bottom: 20px; text-align: center;">
+        AI Info Aggregator
+      </h1>
       
-      {articles.length > 0 ? (
-        <div class="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
-          {articles.map((article) => (
-            <ArticleCard
-              title={article.title}
-              url={article.url}
-              site={article.site}
-              published={article.published}
-              description={article.description}
-              category={article.category}
-            />
-          ))}
-        </div>
-      ) : (
-        <p class="text-gray-500 text-center py-8 italic">
-          {dateKey}の記事はありません
-        </p>
-      )}
-    </section>
-  ))}
+      <!-- 日付選択 -->
+      <div style="margin-bottom: 20px;">
+        <label style="display: block; font-size: 14px; font-weight: bold; margin-bottom: 5px;">日付選択:</label>
+        <input type="date" id="dateSelector" style="width: 100%; padding: 5px; border: 1px solid #ddd;">
+      </div>
+      
+      <!-- タブ -->
+      <div style="border-bottom: 1px solid #ddd; margin-bottom: 20px;">
+        <button class="tab-button active" data-filter="all" style="display: block; width: 100%; padding: 10px; border: none; background: none; text-align: left; cursor: pointer; border-bottom: 2px solid black;">
+          本日のすべて
+        </button>
+        {sites.map(site => (
+          <button class="tab-button" data-filter={site} style="display: block; width: 100%; padding: 10px; border: none; background: none; text-align: left; cursor: pointer; border-bottom: 1px solid #eee;">
+            {site}
+          </button>
+        ))}
+      </div>
+      
+      <!-- 統計 -->
+      <div style="font-size: 12px; color: #666;">
+        <p>最終更新: {formatLastUpdated(articlesData.last_updated)}</p>
+        <p>総記事数: {articlesData.total_articles}件</p>
+      </div>
+    </div>
 
-  <!-- フッター -->
-  <footer class="mt-12 pt-8 border-t border-gray-200 text-center text-gray-500 text-sm">
-    <p>
-      このサイトは個人利用目的で各サイトの公式RSSフィードから情報を収集しています。<br>
-      記事の著作権は各配信元に帰属します。
-    </p>
-    <p class="mt-2">
-      🤖 Powered by RSS & Astro | 
-      ⚡ Generated at {formatLastUpdated(articlesData.last_updated)}
-    </p>
-  </footer>
+    <!-- メインコンテンツ -->
+    <div style="flex: 1; padding: 20px;">
+      <div id="articleContainer">
+        <h2 id="contentTitle" style="font-size: 20px; font-weight: bold; margin-bottom: 20px;">本日のすべての記事</h2>
+        <div id="articlesList">
+          {allArticles
+            .filter(article => {
+              const articleDate = new Date(article.published).toDateString();
+              const today = new Date().toDateString();
+              return articleDate === today;
+            })
+            .map(article => (
+              <ArticleCard
+                title={article.title}
+                url={article.url}
+                site={article.site}
+                published={article.published}
+                description={article.description}
+                category={article.category}
+              />
+            ))
+          }
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script define:vars={{ allArticles, sites }}>
+    // タブ切り替え機能
+    const tabButtons = document.querySelectorAll('.tab-button');
+    const articlesList = document.getElementById('articlesList');
+    const contentTitle = document.getElementById('contentTitle');
+    const dateSelector = document.getElementById('dateSelector');
+    
+    // 今日の日付を設定
+    const today = new Date();
+    dateSelector.value = today.toISOString().split('T')[0];
+    
+    let currentFilter = 'all';
+    let currentDate = today.toDateString();
+    
+    function createArticleHTML(article) {
+      const formatDate = (dateString) => {
+        const date = new Date(dateString);
+        return date.toLocaleString('ja-JP', {
+          month: 'short',
+          day: 'numeric',
+          hour: '2-digit',
+          minute: '2-digit'
+        });
+      };
+      
+      return `
+        <div style="border: 1px solid #ddd; padding: 15px; margin-bottom: 10px;">
+          <div style="display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 8px;">
+            <span style="font-size: 12px; color: #666;">${article.site}</span>
+            <span style="font-size: 12px; color: #666;">${formatDate(article.published)}</span>
+          </div>
+          
+          <h3 style="font-size: 16px; font-weight: bold; margin-bottom: 8px; line-height: 1.4;">
+            <a href="${article.url}" target="_blank" rel="noopener noreferrer" style="color: black; text-decoration: none;">
+              ${article.title}
+            </a>
+          </h3>
+          
+          ${article.description ? `
+            <p style="font-size: 14px; color: #666; margin-bottom: 8px; overflow: hidden; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical;">
+              ${article.description}
+            </p>
+          ` : ''}
+          
+          <a href="${article.url}" target="_blank" rel="noopener noreferrer" style="color: #666; text-decoration: underline; font-size: 12px;">
+            記事を読む →
+          </a>
+        </div>
+      `;
+    }
+    
+    function filterArticles() {
+      const selectedDate = new Date(dateSelector.value).toDateString();
+      
+      let filteredArticles = allArticles.filter(article => {
+        const articleDate = new Date(article.published).toDateString();
+        return articleDate === selectedDate;
+      });
+      
+      if (currentFilter !== 'all') {
+        filteredArticles = filteredArticles.filter(article => article.site === currentFilter);
+      }
+      
+      const title = currentFilter === 'all' 
+        ? `${dateSelector.value}のすべての記事` 
+        : `${dateSelector.value}の${currentFilter}記事`;
+      
+      contentTitle.textContent = title;
+      
+      if (filteredArticles.length === 0) {
+        articlesList.innerHTML = '<p style="color: #666; text-align: center; padding: 40px;">記事がありません</p>';
+      } else {
+        articlesList.innerHTML = filteredArticles.map(createArticleHTML).join('');
+      }
+    }
+    
+    // タブクリックイベント
+    tabButtons.forEach(button => {
+      button.addEventListener('click', () => {
+        tabButtons.forEach(btn => {
+          btn.style.borderBottom = '1px solid #eee';
+          btn.classList.remove('active');
+        });
+        
+        button.style.borderBottom = '2px solid black';
+        button.classList.add('active');
+        
+        currentFilter = button.dataset.filter;
+        filterArticles();
+      });
+    });
+    
+    // 日付変更イベント
+    dateSelector.addEventListener('change', filterArticles);
+  </script>
 </Layout>
