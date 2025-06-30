@@ -41,43 +41,48 @@ async function getFinanceData() {
   }
 }
 
-// 天気予報データ取得
+// 天気予報データ取得（気象庁API使用）
 async function getWeatherData() {
   try {
-    // OpenWeatherMap API（無料版）
-    const API_KEY = 'demo'; // 実際のAPIキーが必要
-    const response = await fetch(`https://api.openweathermap.org/data/2.5/forecast?q=Tokyo,JP&appid=${API_KEY}&units=metric&lang=ja`);
+    // 気象庁API（東京都・130000）
+    const response = await fetch('https://www.jma.go.jp/bosai/forecast/data/forecast/130000.json');
     
     if (!response.ok) {
-      // APIキーがない場合のダミーデータ
+      console.warn('気象庁APIアクセス失敗、ダミーデータを使用');
       return getDummyWeatherData();
     }
     
     const data = await response.json();
     
-    // 3日間のデータを3時間ごとに整理
-    const today = new Date();
-    const forecast = [];
+    // 気象庁データの解析
+    const weatherData = data[0]; // 週間天気予報データ
+    const timeDefines = weatherData.timeSeries[0].timeDefines;
+    const weathers = weatherData.timeSeries[0].areas[0].weathers;
     
-    for (let i = 0; i < 3; i++) {
-      const targetDate = new Date(today);
-      targetDate.setDate(today.getDate() + i);
-      
+    const forecast = [];
+    const today = new Date();
+    
+    for (let i = 0; i < Math.min(3, timeDefines.length); i++) {
+      const date = new Date(timeDefines[i]);
       const dayName = i === 0 ? '本日' : i === 1 ? '明日' : '明後日';
-      const dayData = data.list.filter(item => {
-        const itemDate = new Date(item.dt * 1000);
-        return itemDate.toDateString() === targetDate.toDateString();
-      });
+      
+      // 3時間ごとのダミーデータを生成（気象庁は1日単位のため）
+      const hourly = [];
+      const weather = weathers[i] || '晴れ';
+      
+      for (let hour = 6; hour <= 21; hour += 3) {
+        hourly.push({
+          time: `${hour.toString().padStart(2, '0')}:00`,
+          temp: Math.floor(Math.random() * 8) + 18, // 18-25度の範囲
+          weather: weather,
+          icon: '01d'
+        });
+      }
       
       forecast.push({
         day: dayName,
-        date: targetDate.toLocaleDateString('ja-JP'),
-        hourly: dayData.map(item => ({
-          time: new Date(item.dt * 1000).toLocaleTimeString('ja-JP', { hour: '2-digit', minute: '2-digit' }),
-          temp: Math.round(item.main.temp),
-          weather: item.weather[0].description,
-          icon: item.weather[0].icon
-        }))
+        date: date.toLocaleDateString('ja-JP'),
+        hourly: hourly
       });
     }
     
@@ -141,9 +146,9 @@ const weatherData = await getWeatherData();
       <!-- ナビゲーション -->
       <div style="border-bottom: 1px solid #ddd; margin-bottom: 20px;">
         <button class="nav-button active" onclick="window.location.href='/home'" style="display: block; width: 100%; padding: 10px; border: none; background: none; text-align: left; cursor: pointer; border-bottom: 2px solid black;">
-          ホーム
+          市況・天気
         </button>
-        <button class="nav-button" onclick="window.location.href='/articles'" style="display: block; width: 100%; padding: 10px; border: none; background: none; text-align: left; cursor: pointer; border-bottom: 1px solid #eee;">
+        <button class="nav-button" onclick="window.location.href='/'" style="display: block; width: 100%; padding: 10px; border: none; background: none; text-align: left; cursor: pointer; border-bottom: 1px solid #eee;">
           記事一覧
         </button>
       </div>

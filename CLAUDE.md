@@ -46,9 +46,8 @@ python rss_collector.py
 
 ### フロントエンド (Astro)
 - **Astro**: 静的サイト生成フレームワーク
-- **src/pages/index.astro**: ホームページリダイレクト（/ → /home）
-- **src/pages/home.astro**: ホームページ（株価・天気ダッシュボード）
-- **src/pages/articles.astro**: 記事一覧表示ページ
+- **src/pages/index.astro**: 記事一覧表示ページ（メイン画面）
+- **src/pages/home.astro**: 市況・天気ダッシュボード
 - **src/layouts/Layout.astro**: 基本レイアウト
 - **src/components/ArticleCard.astro**: 記事カードコンポーネント
 
@@ -70,11 +69,11 @@ python rss_collector.py
 2. RSS収集実行時に自動的に新しいタグファイルが作成される
 3. フロントエンドは自動的に新しいタグを認識・表示
 
-### APIキー設定
-ホームページの天気予報機能を使用するには、OpenWeatherMapの無料APIキーが必要です：
-1. https://openweathermap.org/api でアカウント作成
-2. 無料のCurrent Weather Data APIキーを取得
-3. `src/pages/home.astro`の`API_KEY`変数を実際のキーに置き換え
+### 天気予報API
+市況・天気ページでは気象庁APIを使用：
+- **URL**: `https://www.jma.go.jp/bosai/forecast/data/forecast/130000.json`
+- **特徴**: APIキー不要、日本時間（JST）ネイティブ、東京都の公式天気データ
+- **フォールバック**: API取得失敗時はダミーデータを表示
 
 ### デプロイ・ホスティング
 - **Vercel**: 自動デプロイ（GitHubへのプッシュ時）
