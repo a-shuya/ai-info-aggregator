@@ -99,10 +99,12 @@ function getDummyWeatherData() {
     
     const hourly = [];
     for (let hour = 6; hour <= 21; hour += 3) {
+      const weatherTypes = ['晴れ', '曇り', '雨'];
+      const weather = weatherTypes[Math.floor(Math.random() * 3)];
       hourly.push({
         time: `${hour.toString().padStart(2, '0')}:00`,
         temp: Math.floor(Math.random() * 10) + 15,
-        weather: ['晴れ', '曇り', '雨'][Math.floor(Math.random() * 3)],
+        weather: weather,
         icon: '01d'
       });
     }
@@ -113,6 +115,15 @@ function getDummyWeatherData() {
       hourly
     };
   });
+}
+
+// 天気アイコンを取得する関数
+function getWeatherIcon(weather) {
+  if (weather.includes('晴') || weather.includes('clear')) return '☀️';
+  if (weather.includes('曇') || weather.includes('cloud')) return '☁️';
+  if (weather.includes('雨') || weather.includes('rain')) return '🌧️';
+  if (weather.includes('雪') || weather.includes('snow')) return '❄️';
+  return '☁️'; // デフォルト
 }
 
 const financeData = await getFinanceData();
@@ -132,7 +143,7 @@ const weatherData = await getWeatherData();
         <button class="nav-button active" onclick="window.location.href='/home'" style="display: block; width: 100%; padding: 10px; border: none; background: none; text-align: left; cursor: pointer; border-bottom: 2px solid black;">
           ホーム
         </button>
-        <button class="nav-button" onclick="window.location.href='/'" style="display: block; width: 100%; padding: 10px; border: none; background: none; text-align: left; cursor: pointer; border-bottom: 1px solid #eee;">
+        <button class="nav-button" onclick="window.location.href='/articles'" style="display: block; width: 100%; padding: 10px; border: none; background: none; text-align: left; cursor: pointer; border-bottom: 1px solid #eee;">
           記事一覧
         </button>
       </div>
@@ -184,6 +195,9 @@ const weatherData = await getWeatherData();
                   <div style="text-align: center; padding: 8px; border-radius: 4px; background-color: #f8f9fa;">
                     <div style="font-size: 12px; font-weight: bold; margin-bottom: 4px;">
                       {hour.time}
+                    </div>
+                    <div style="font-size: 16px; margin-bottom: 2px;">
+                      {getWeatherIcon(hour.weather)}
                     </div>
                     <div style="font-size: 14px; margin-bottom: 2px;">
                       {hour.temp}°C

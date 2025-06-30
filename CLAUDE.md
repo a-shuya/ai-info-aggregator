@@ -46,8 +46,9 @@ python rss_collector.py
 
 ### フロントエンド (Astro)
 - **Astro**: 静的サイト生成フレームワーク
-- **src/pages/index.astro**: 記事一覧表示ページ
-- **src/pages/home.astro**: ホームページ（ダッシュボード）
+- **src/pages/index.astro**: ホームページリダイレクト（/ → /home）
+- **src/pages/home.astro**: ホームページ（株価・天気ダッシュボード）
+- **src/pages/articles.astro**: 記事一覧表示ページ
 - **src/layouts/Layout.astro**: 基本レイアウト
 - **src/components/ArticleCard.astro**: 記事カードコンポーネント
 
