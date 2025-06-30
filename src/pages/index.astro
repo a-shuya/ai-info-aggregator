@@ -56,7 +56,9 @@ const formatLastUpdated = (dateString: string) => {
       <div style="margin-bottom: 20px;">
         <label style="display: block; font-size: 14px; font-weight: bold; margin-bottom: 5px;">期間選択:</label>
         <select id="periodSelector" style="width: 100%; padding: 5px; border: 1px solid #ddd; margin-bottom: 10px;">
-          <option value="recent">最近（本日・昨日・一昨日）</option>
+          <option value="本日">本日</option>
+          <option value="昨日">昨日</option>
+          <option value="一昨日">一昨日</option>
           {Object.keys(articlesData.articles_by_date).filter(key => key.match(/^\d{4}-\d{2}$/)).map(month => (
             <option value={month}>{month}</option>
           ))}
@@ -92,7 +94,7 @@ const formatLastUpdated = (dateString: string) => {
     <!-- メインコンテンツ -->
     <div style="flex: 1; padding: 20px;">
       <div id="articleContainer">
-        <h2 id="contentTitle" style="font-size: 20px; font-weight: bold; margin-bottom: 20px;">最近のすべての記事</h2>
+        <h2 id="contentTitle" style="font-size: 20px; font-weight: bold; margin-bottom: 20px;">本日のすべての記事</h2>
         <div id="articlesList">
           <!-- JavaScriptで動的に更新 -->
         </div>
@@ -113,7 +115,7 @@ const formatLastUpdated = (dateString: string) => {
     dateSelector.value = today.toISOString().split('T')[0];
     
     let currentFilter = 'all';
-    let currentPeriod = 'recent';
+    let currentPeriod = '本日';
     
     function createArticleHTML(article) {
       const formatDate = (dateString) => {
@@ -127,16 +129,21 @@ const formatLastUpdated = (dateString: string) => {
       };
       
       return `
-        <div style="border: 1px solid #ddd; padding: 15px; margin-bottom: 10px;">
+        <div class="article-card" onclick="window.open('${article.url}', '_blank')" style="
+          border: 1px solid #ddd; 
+          padding: 15px; 
+          margin-bottom: 10px;
+          cursor: pointer;
+          transition: all 0.2s ease;
+          border-radius: 8px;
+        ">
           <div style="display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 8px;">
             <span style="font-size: 12px; color: #666;">${article.site}</span>
             <span style="font-size: 12px; color: #666;">${formatDate(article.published)}</span>
           </div>
           
-          <h3 style="font-size: 16px; font-weight: bold; margin-bottom: 8px; line-height: 1.4;">
-            <a href="${article.url}" target="_blank" rel="noopener noreferrer" style="color: black; text-decoration: none;">
-              ${article.title}
-            </a>
+          <h3 style="font-size: 16px; font-weight: bold; margin-bottom: 8px; line-height: 1.4; color: black;">
+            ${article.title}
           </h3>
           
           ${article.description ? `
@@ -145,9 +152,9 @@ const formatLastUpdated = (dateString: string) => {
             </p>
           ` : ''}
           
-          <a href="${article.url}" target="_blank" rel="noopener noreferrer" style="color: #666; text-decoration: underline; font-size: 12px;">
+          <span style="color: #666; text-decoration: underline; font-size: 12px;">
             記事を読む →
-          </a>
+          </span>
         </div>
       `;
     }
@@ -156,20 +163,9 @@ const formatLastUpdated = (dateString: string) => {
       let filteredArticles = [];
       let title = '';
       
-      if (currentPeriod === 'recent') {
-        // 最近（本日・昨日・一昨日）の記事を表示
-        const recentArticles = [
-          ...(articlesData.articles_by_date['本日'] || []),
-          ...(articlesData.articles_by_date['昨日'] || []),
-          ...(articlesData.articles_by_date['一昨日'] || [])
-        ];
-        filteredArticles = recentArticles;
-        title = currentFilter === 'all' ? '最近のすべての記事' : `最近の${currentFilter}記事`;
-      } else {
-        // 指定された月の記事を表示
-        filteredArticles = articlesData.articles_by_date[currentPeriod] || [];
-        title = currentFilter === 'all' ? `${currentPeriod}のすべての記事` : `${currentPeriod}の${currentFilter}記事`;
-      }
+      // 指定された期間の記事を表示
+      filteredArticles = articlesData.articles_by_date[currentPeriod] || [];
+      title = currentFilter === 'all' ? `${currentPeriod}のすべての記事` : `${currentPeriod}の${currentFilter}記事`;
       
       // サイトフィルタを適用
       if (currentFilter !== 'all') {
@@ -181,7 +177,33 @@ const formatLastUpdated = (dateString: string) => {
       if (filteredArticles.length === 0) {
         articlesList.innerHTML = '<p style="color: #666; text-align: center; padding: 40px;">記事がありません</p>';
       } else {
-        articlesList.innerHTML = filteredArticles.map(createArticleHTML).join('');
+        // PC版では3列、モバイルでは1列のグリッドレイアウト
+        articlesList.innerHTML = `
+          <div style="
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+            max-width: 100%;
+          ">
+            ${filteredArticles.map(createArticleHTML).join('')}
+          </div>
+        `;
+        
+        // ホバー効果を追加
+        const articleCards = document.querySelectorAll('.article-card');
+        articleCards.forEach(card => {
+          card.addEventListener('mouseenter', () => {
+            card.style.transform = 'translateY(-2px)';
+            card.style.boxShadow = '0 4px 12px rgba(0, 0, 0, 0.1)';
+            card.style.borderColor = '#999';
+          });
+          
+          card.addEventListener('mouseleave', () => {
+            card.style.transform = 'translateY(0)';
+            card.style.boxShadow = 'none';
+            card.style.borderColor = '#ddd';
+          });
+        });
       }
     }
     
