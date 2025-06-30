@@ -125,7 +125,7 @@ class RSSCollector:
                 'title': title,
                 'url': url,
                 'site': site_name,
-                'published': published.isoformat(),
+                'published': published.isoformat() + 'Z',  # Add UTC timezone indicator
                 'description': description,
                 'category': self.get_site_category(site_name),
                 'image_url': image_url
