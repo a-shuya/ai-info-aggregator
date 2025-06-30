@@ -142,6 +142,7 @@ const formatLastUpdated = (dateString: string) => {
       const formatDate = (dateString) => {
         const date = new Date(dateString);
         return date.toLocaleString('ja-JP', {
+          timeZone: 'Asia/Tokyo',
           month: 'short',
           day: 'numeric',
           hour: '2-digit',
@@ -170,16 +171,14 @@ const formatLastUpdated = (dateString: string) => {
           flex-direction: column;
           position: relative;
         ">
-          <img src="${getFaviconUrl(article.url)}" alt="${article.site} favicon" style="
-            position: absolute;
-            top: 10px;
-            left: 10px;
-            width: 16px;
-            height: 16px;
-          " onerror="this.style.display='none';">
-          
-          <div style="display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 8px; margin-left: 25px;">
-            <span style="font-size: 12px; color: #666;">${article.site}</span>
+          <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 8px;">
+            <div style="display: flex; align-items: center; gap: 8px;">
+              <img src="${getFaviconUrl(article.url)}" alt="${article.site} favicon" style="
+                width: 16px;
+                height: 16px;
+              " onerror="this.style.display='none';">
+              <span style="font-size: 12px; color: #666;">${article.site}</span>
+            </div>
             <span style="font-size: 12px; color: #666;">${formatDate(article.published)}</span>
           </div>
           
