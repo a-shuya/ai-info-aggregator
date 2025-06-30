@@ -292,6 +292,13 @@ const formatLastUpdated = (dateString: string) => {
         filteredArticles = filteredArticles.filter(article => article.site === currentFilter);
       }
       
+      // 新着順でソート（新しい記事が上）
+      filteredArticles.sort((a, b) => {
+        const dateA = new Date(a.published);
+        const dateB = new Date(b.published);
+        return dateB - dateA; // 降順（新しい順）
+      });
+      
       contentTitle.textContent = title;
       
       // 元サイトリンクの表示制御
