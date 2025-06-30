@@ -39,13 +39,41 @@ python rss_collector.py
 - **rss_collector.py**: メインの収集スクリプト
 - **rss_config.json**: 収集対象のRSSフィード設定
 - **GitHub Actions**: 1時間毎の自動データ更新（.github/workflows/rss-collector.yml）
-- **data/articles.json**: 収集されたデータの保存先
+- **data/tags/**: サイト別に分割されたデータファイルの保存先
+  - 各サイト（タグ）ごとに個別のJSONファイルに分割保存
+  - 例: `日経ビジネス.json`、`Business Insider(ビジネス).json`
+- **data/articles_summary.json**: 全体統計情報（互換性のため）
 
 ### フロントエンド (Astro)
 - **Astro**: 静的サイト生成フレームワーク
-- **src/pages/index.astro**: メインページ（記事一覧表示）
+- **src/pages/index.astro**: 記事一覧表示ページ
+- **src/pages/home.astro**: ホームページ（ダッシュボード）
 - **src/layouts/Layout.astro**: 基本レイアウト
 - **src/components/ArticleCard.astro**: 記事カードコンポーネント
+
+### タグ管理システム
+記事データは各サイト（タグ）ごとに分割保存されます：
+
+**現在のタグ一覧（20サイト）:**
+- 日経ビジネス
+- Business Insider(ビジネス/テック/サイエンス/スタートアップ)
+- 日経xTECH(IT)
+- ITmedia(AI+)
+- はてなブックマーク (IT/AI)
+- Zenn(機械学習/AI/生成AI/ディープラーニング/LLM/NLP/Python/Google Cloud)
+- Cloud Blog/Cloud Blog JA
+- G-gen
+
+**新しいタグの追加方法:**
+1. `rss_config.json`に新しいRSSフィードを追加
+2. RSS収集実行時に自動的に新しいタグファイルが作成される
+3. フロントエンドは自動的に新しいタグを認識・表示
+
+### APIキー設定
+ホームページの天気予報機能を使用するには、OpenWeatherMapの無料APIキーが必要です：
+1. https://openweathermap.org/api でアカウント作成
+2. 無料のCurrent Weather Data APIキーを取得
+3. `src/pages/home.astro`の`API_KEY`変数を実際のキーに置き換え
 
 ### デプロイ・ホスティング
 - **Vercel**: 自動デプロイ（GitHubへのプッシュ時）

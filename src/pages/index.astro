@@ -4,12 +4,55 @@ import ArticleCard from '../components/ArticleCard.astro';
 import fs from 'fs';
 import path from 'path';
 
-// JSONデータの読み込み
+// JSONデータの読み込み（タグ別ファイルから）
 let articlesData;
 try {
-  const dataPath = path.join(process.cwd(), 'data', 'articles.json');
-  const jsonData = fs.readFileSync(dataPath, 'utf-8');
-  articlesData = JSON.parse(jsonData);
+  const tagsDir = path.join(process.cwd(), 'data', 'tags');
+  let allArticlesByDate = {
+    '本日': [],
+    '昨日': [],
+    '一昨日': []
+  };
+  let totalArticles = 0;
+  let lastUpdated = new Date().toISOString();
+  
+  // タグディレクトリが存在する場合
+  if (fs.existsSync(tagsDir)) {
+    const tagFiles = fs.readdirSync(tagsDir).filter(file => file.endsWith('.json'));
+    
+    for (const tagFile of tagFiles) {
+      try {
+        const tagPath = path.join(tagsDir, tagFile);
+        const tagData = JSON.parse(fs.readFileSync(tagPath, 'utf-8'));
+        
+        if (tagData.articles_by_date) {
+          // 各日付の記事をマージ
+          Object.entries(tagData.articles_by_date).forEach(([dateKey, articles]) => {
+            if (!allArticlesByDate[dateKey]) {
+              allArticlesByDate[dateKey] = [];
+            }
+            allArticlesByDate[dateKey].push(...articles);
+          });
+          
+          totalArticles += tagData.total_articles || 0;
+          
+          // 最新の更新時刻を取得
+          if (tagData.last_updated && tagData.last_updated > lastUpdated) {
+            lastUpdated = tagData.last_updated;
+          }
+        }
+      } catch (tagError) {
+        console.warn(`Failed to load tag file ${tagFile}:`, tagError);
+      }
+    }
+  }
+  
+  articlesData = {
+    last_updated: lastUpdated,
+    total_articles: totalArticles,
+    articles_by_date: allArticlesByDate
+  };
+  
 } catch (error) {
   console.error('Failed to load articles data:', error);
   articlesData = {
@@ -85,6 +128,16 @@ const formatLastUpdated = (dateString: string) => {
           ))}
         </select>
         <input type="date" id="dateSelector" style="width: 100%; padding: 5px; border: 1px solid #ddd; display: none;">
+      </div>
+      
+      <!-- ナビゲーション -->
+      <div style="border-bottom: 1px solid #ddd; margin-bottom: 20px;">
+        <button class="nav-button" onclick="window.location.href='/home'" style="display: block; width: 100%; padding: 10px; border: none; background: none; text-align: left; cursor: pointer; border-bottom: 1px solid #eee;">
+          ホーム
+        </button>
+        <button class="nav-button active" style="display: block; width: 100%; padding: 10px; border: none; background: none; text-align: left; cursor: pointer; border-bottom: 2px solid black;">
+          記事一覧
+        </button>
       </div>
       
       <!-- タブ -->
@@ -243,6 +296,19 @@ const formatLastUpdated = (dateString: string) => {
         });
       }
     }
+    
+    // ナビゲーションボタンのホバー効果
+    const navButtons = document.querySelectorAll('.nav-button');
+    navButtons.forEach(button => {
+      if (!button.classList.contains('active')) {
+        button.addEventListener('mouseenter', () => {
+          button.style.backgroundColor = '#f0f0f0';
+        });
+        button.addEventListener('mouseleave', () => {
+          button.style.backgroundColor = '';
+        });
+      }
+    });
     
     // タブクリックイベント
     tabButtons.forEach(button => {
