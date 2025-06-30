@@ -1,0 +1,86 @@
+# CLAUDE.md
+
+This file provides guidance to Claude Code (claude.ai/code) when working with code in this repository.
+
+## プロジェクト概要
+
+このプロジェクトは個人用の情報収集サイトで、複数のWebサイトのRSSフィードから最新記事を自動収集し、日付別に整理して表示するWebアプリケーションです。技術記事やビジネス記事を一箇所で閲覧できるようにすることが目的です。
+
+## 主要なコマンド
+
+### 開発環境
+```bash
+# 依存関係のインストール
+npm install
+pip install -r requirements.txt
+
+# 開発サーバーの起動
+npm run dev
+
+# 本番ビルド
+npm run build
+
+# ビルド結果のプレビュー
+npm run preview
+
+# RSSデータの手動収集
+python rss_collector.py
+```
+
+### データ収集の実行
+```bash
+# RSS収集スクリプトの実行（dataディレクトリにarticles.jsonが生成される）
+python rss_collector.py
+```
+
+## アーキテクチャ
+
+### データ収集システム (Python)
+- **rss_collector.py**: メインの収集スクリプト
+- **rss_config.json**: 収集対象のRSSフィード設定
+- **GitHub Actions**: 1時間毎の自動データ更新（.github/workflows/rss-collector.yml）
+- **data/articles.json**: 収集されたデータの保存先
+
+### フロントエンド (Astro)
+- **Astro**: 静的サイト生成フレームワーク
+- **src/pages/index.astro**: メインページ（記事一覧表示）
+- **src/layouts/Layout.astro**: 基本レイアウト
+- **src/components/ArticleCard.astro**: 記事カードコンポーネント
+
+### デプロイ・ホスティング
+- **Vercel**: 自動デプロイ（GitHubへのプッシュ時）
+- **GitHub Actions**: 定期的なデータ更新とコミット
+
+## データフロー
+
+1. GitHub ActionsがPythonスクリプトを定期実行
+2. スクリプトがRSSフィードを取得・解析
+3. 記事データをdata/articles.jsonに保存
+4. 変更をGitHubにコミット・プッシュ
+5. Vercelが自動的に再ビルド・デプロイ
+
+## 設定ファイル
+
+### rss_config.json
+RSSフィードの設定を管理。各フィードには以下の属性：
+- `name`: サイト名
+- `url`: RSS URL
+- `category`: カテゴリ
+- `enabled`: 有効/無効の切り替え
+
+### astro.config.mjs
+Astroの設定ファイル。Vercel向けの本番サイトURLを設定。
+
+## 日本語対応
+
+- UIは日本語
+- 日付表示は日本語形式
+- 記事は「本日」「昨日」「一昨日」で分類
+- 日本語フォントを使用（Hiragino Sans, Yu Gothic UI, Meiryo）
+
+## 重要な制約
+
+- 個人利用目的のプロジェクト
+- RSSフィードのみを使用（スクレイピング回避）
+- サーバー負荷軽減のため2秒間隔でリクエスト
+- 最新3日分の記事のみ保持

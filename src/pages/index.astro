@@ -52,16 +52,22 @@ const formatLastUpdated = (dateString: string) => {
         AI Info Aggregator
       </h1>
       
-      <!-- 日付選択 -->
+      <!-- 期間選択 -->
       <div style="margin-bottom: 20px;">
-        <label style="display: block; font-size: 14px; font-weight: bold; margin-bottom: 5px;">日付選択:</label>
-        <input type="date" id="dateSelector" style="width: 100%; padding: 5px; border: 1px solid #ddd;">
+        <label style="display: block; font-size: 14px; font-weight: bold; margin-bottom: 5px;">期間選択:</label>
+        <select id="periodSelector" style="width: 100%; padding: 5px; border: 1px solid #ddd; margin-bottom: 10px;">
+          <option value="recent">最近（本日・昨日・一昨日）</option>
+          {Object.keys(articlesData.articles_by_date).filter(key => key.match(/^\d{4}-\d{2}$/)).map(month => (
+            <option value={month}>{month}</option>
+          ))}
+        </select>
+        <input type="date" id="dateSelector" style="width: 100%; padding: 5px; border: 1px solid #ddd; display: none;">
       </div>
       
       <!-- タブ -->
       <div style="border-bottom: 1px solid #ddd; margin-bottom: 20px;">
         <button class="tab-button active" data-filter="all" style="display: block; width: 100%; padding: 10px; border: none; background: none; text-align: left; cursor: pointer; border-bottom: 2px solid black;">
-          本日のすべて
+          すべて
         </button>
         {sites.map(site => (
           <button class="tab-button" data-filter={site} style="display: block; width: 100%; padding: 10px; border: none; background: none; text-align: left; cursor: pointer; border-bottom: 1px solid #eee;">
@@ -74,49 +80,40 @@ const formatLastUpdated = (dateString: string) => {
       <div style="font-size: 12px; color: #666;">
         <p>最終更新: {formatLastUpdated(articlesData.last_updated)}</p>
         <p>総記事数: {articlesData.total_articles}件</p>
+        <p>保存期間: 1年間</p>
+        <div style="margin-top: 10px;">
+          {Object.entries(articlesData.articles_by_date).map(([period, articles]) => (
+            <p>{period}: {articles.length}件</p>
+          ))}
+        </div>
       </div>
     </div>
 
     <!-- メインコンテンツ -->
     <div style="flex: 1; padding: 20px;">
       <div id="articleContainer">
-        <h2 id="contentTitle" style="font-size: 20px; font-weight: bold; margin-bottom: 20px;">本日のすべての記事</h2>
+        <h2 id="contentTitle" style="font-size: 20px; font-weight: bold; margin-bottom: 20px;">最近のすべての記事</h2>
         <div id="articlesList">
-          {allArticles
-            .filter(article => {
-              const articleDate = new Date(article.published).toDateString();
-              const today = new Date().toDateString();
-              return articleDate === today;
-            })
-            .map(article => (
-              <ArticleCard
-                title={article.title}
-                url={article.url}
-                site={article.site}
-                published={article.published}
-                description={article.description}
-                category={article.category}
-              />
-            ))
-          }
+          <!-- JavaScriptで動的に更新 -->
         </div>
       </div>
     </div>
   </div>
 
-  <script define:vars={{ allArticles, sites }}>
+  <script define:vars={{ allArticles, sites, articlesData }}>
     // タブ切り替え機能
     const tabButtons = document.querySelectorAll('.tab-button');
     const articlesList = document.getElementById('articlesList');
     const contentTitle = document.getElementById('contentTitle');
     const dateSelector = document.getElementById('dateSelector');
+    const periodSelector = document.getElementById('periodSelector');
     
     // 今日の日付を設定
     const today = new Date();
     dateSelector.value = today.toISOString().split('T')[0];
     
     let currentFilter = 'all';
-    let currentDate = today.toDateString();
+    let currentPeriod = 'recent';
     
     function createArticleHTML(article) {
       const formatDate = (dateString) => {
@@ -156,20 +153,28 @@ const formatLastUpdated = (dateString: string) => {
     }
     
     function filterArticles() {
-      const selectedDate = new Date(dateSelector.value).toDateString();
+      let filteredArticles = [];
+      let title = '';
       
-      let filteredArticles = allArticles.filter(article => {
-        const articleDate = new Date(article.published).toDateString();
-        return articleDate === selectedDate;
-      });
+      if (currentPeriod === 'recent') {
+        // 最近（本日・昨日・一昨日）の記事を表示
+        const recentArticles = [
+          ...(articlesData.articles_by_date['本日'] || []),
+          ...(articlesData.articles_by_date['昨日'] || []),
+          ...(articlesData.articles_by_date['一昨日'] || [])
+        ];
+        filteredArticles = recentArticles;
+        title = currentFilter === 'all' ? '最近のすべての記事' : `最近の${currentFilter}記事`;
+      } else {
+        // 指定された月の記事を表示
+        filteredArticles = articlesData.articles_by_date[currentPeriod] || [];
+        title = currentFilter === 'all' ? `${currentPeriod}のすべての記事` : `${currentPeriod}の${currentFilter}記事`;
+      }
       
+      // サイトフィルタを適用
       if (currentFilter !== 'all') {
         filteredArticles = filteredArticles.filter(article => article.site === currentFilter);
       }
-      
-      const title = currentFilter === 'all' 
-        ? `${dateSelector.value}のすべての記事` 
-        : `${dateSelector.value}の${currentFilter}記事`;
       
       contentTitle.textContent = title;
       
@@ -196,7 +201,13 @@ const formatLastUpdated = (dateString: string) => {
       });
     });
     
-    // 日付変更イベント
-    dateSelector.addEventListener('change', filterArticles);
+    // 期間変更イベント
+    periodSelector.addEventListener('change', () => {
+      currentPeriod = periodSelector.value;
+      filterArticles();
+    });
+    
+    // 初期表示
+    filterArticles();
   </script>
 </Layout>
