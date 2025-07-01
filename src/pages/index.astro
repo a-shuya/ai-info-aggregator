@@ -256,6 +256,12 @@ const formatLastUpdated = (dateString: string) => {
       .articles-grid {
         grid-template-columns: 1fr !important;
         display: grid !important;
+        gap: 15px !important;
+        width: 100% !important;
+      }
+      .articles-grid .article-card {
+        width: 100% !important;
+        max-width: 100% !important;
       }
       .articles-grid > div[style*="visibility: hidden"] {
         display: none !important;
@@ -429,12 +435,13 @@ const formatLastUpdated = (dateString: string) => {
         // 画面幅に応じてグリッドレイアウトを決定
         const isMobile = window.innerWidth <= 1024;
         const gridColumns = isMobile ? '1fr' : 'repeat(3, 1fr)';
+        const gridGap = isMobile ? '15px' : '20px';
         
         articlesList.innerHTML = `
           <div style="
             display: grid;
             grid-template-columns: ${gridColumns};
-            gap: 20px;
+            gap: ${gridGap};
             width: 100%;
             max-width: 100%;
             overflow: hidden;
