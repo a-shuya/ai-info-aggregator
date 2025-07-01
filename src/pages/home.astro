@@ -136,9 +136,26 @@ const weatherData = await getWeatherData();
 ---
 
 <Layout title="ホーム - AI情報収集ページ">
-  <div style="display: flex; min-height: 100vh;">
-    <!-- 左サイドバー -->
-    <div style="width: 250px; border-right: 1px solid #ddd; padding: 20px; background-color: #f9f9f9;">
+  <!-- モバイル用ヘッダー -->
+  <div class="mobile-header" style="display: none; padding: 15px; background-color: #f9f9f9; border-bottom: 1px solid #ddd;">
+    <h1 style="font-size: 18px; font-weight: bold; margin-bottom: 15px; text-align: center;">
+      AI情報収集ページ
+    </h1>
+    
+    <!-- モバイル用ナビゲーション -->
+    <div style="display: flex; gap: 10px;">
+      <button class="mobile-nav-button active" onclick="window.location.href='/home'" style="flex: 1; padding: 8px; border: 1px solid #333; background: #333; color: white; cursor: pointer; border-radius: 4px;">
+        市況・天気
+      </button>
+      <button class="mobile-nav-button" onclick="window.location.href='/'" style="flex: 1; padding: 8px; border: 1px solid #ddd; background: white; cursor: pointer; border-radius: 4px;">
+        記事一覧
+      </button>
+    </div>
+  </div>
+
+  <div class="main-container" style="display: flex; min-height: 100vh;">
+    <!-- PC用左サイドバー -->
+    <div class="desktop-sidebar" style="width: 250px; border-right: 1px solid #ddd; padding: 20px; background-color: #f9f9f9;">
       <h1 style="font-size: 18px; font-weight: bold; margin-bottom: 20px; text-align: center;">
         AI情報収集ページ
       </h1>
@@ -155,7 +172,7 @@ const weatherData = await getWeatherData();
     </div>
 
     <!-- メインコンテンツ -->
-    <div style="flex: 1; padding: 20px;">
+    <div class="main-content" style="flex: 1; padding: 20px;">
       <h2 style="font-size: 24px; font-weight: bold; margin-bottom: 30px;">ダッシュボード</h2>
       
       <!-- 株価・為替情報 -->
@@ -223,6 +240,28 @@ const weatherData = await getWeatherData();
   <style>
     .nav-button:hover {
       background-color: #f0f0f0;
+    }
+    
+    /* レスポンシブスタイル */
+    @media (max-width: 768px) {
+      .mobile-header {
+        display: block !important;
+      }
+      .desktop-sidebar {
+        display: none !important;
+      }
+      .main-container {
+        flex-direction: column !important;
+      }
+      .main-content {
+        padding: 15px !important;
+      }
+    }
+    
+    @media (min-width: 769px) {
+      .mobile-header {
+        display: none !important;
+      }
     }
   </style>
 </Layout>

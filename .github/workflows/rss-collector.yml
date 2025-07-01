@@ -2,8 +2,8 @@ name: RSS Data Collector
 
 on:
   schedule:
-    # 毎時0分に実行 (UTC)
-    - cron: '0 * * * *'
+    # 10分毎に実行 (UTC)
+    - cron: '*/10 * * * *'
   workflow_dispatch: # 手動実行も可能
 
 jobs:
