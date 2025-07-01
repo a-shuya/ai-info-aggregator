@@ -72,7 +72,7 @@ Object.values(articlesData.articles_by_date).forEach(articles => {
   allArticles.push(...articles);
 });
 
-// サイト一覧を指定された順序で取得
+// サイト一覧を固定リストで表示（期間に関係なく常に表示）
 const sites = [
   '日経ビジネス',
   'Business Insider(ビジネス)',
@@ -94,7 +94,7 @@ const sites = [
   'Cloud Blog',
   'Cloud Blog JA',
   'G-gen'
-].filter(site => allArticles.some(article => article.site === site));
+];
 
 const formatLastUpdated = (dateString: string) => {
   const date = new Date(dateString);
@@ -151,7 +151,7 @@ const formatLastUpdated = (dateString: string) => {
 
   <div class="main-container" style="display: flex; min-height: 100vh;">
     <!-- PC用左サイドバー -->
-    <div class="desktop-sidebar" style="width: 250px; border-right: 1px solid #ddd; padding: 20px; background-color: #f9f9f9;">
+    <div class="desktop-sidebar" style="width: 250px; min-width: 250px; flex-shrink: 0; border-right: 1px solid #ddd; padding: 20px; background-color: #f9f9f9;">
       <h1 style="font-size: 18px; font-weight: bold; margin-bottom: 20px; text-align: center;">
         AI情報収集ページ
       </h1>
