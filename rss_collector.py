@@ -397,18 +397,19 @@ class RSSCollector:
                 article_datetime_jst = article_datetime.astimezone(jst)
                 article_date = article_datetime_jst.date()
                 
+                # 日付カテゴリ分類（本日・昨日・一昨日）
                 if article_date == today:
                     grouped['本日'].append(article)
                 elif article_date == yesterday:
                     grouped['昨日'].append(article)
                 elif article_date == day_before_yesterday:
                     grouped['一昨日'].append(article)
-                else:
-                    # 月別にグループ化
-                    month_key = article_date.strftime('%Y-%m')
-                    if month_key not in monthly_groups:
-                        monthly_groups[month_key] = []
-                    monthly_groups[month_key].append(article)
+                
+                # 月別分類（全ての記事を月別にも分類）
+                month_key = article_date.strftime('%Y-%m')
+                if month_key not in monthly_groups:
+                    monthly_groups[month_key] = []
+                monthly_groups[month_key].append(article)
                     
             except Exception as e:
                 logger.warning(f"日付解析エラー: {article.get('title', 'Unknown')} - {e}")

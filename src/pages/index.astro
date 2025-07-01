@@ -132,7 +132,8 @@ const formatLastUpdated = (dateString: string) => {
         <option value="本日">本日</option>
         <option value="昨日">昨日</option>
         <option value="一昨日">一昨日</option>
-        {Object.keys(articlesData.articles_by_date).filter(key => key.match(/^\d{4}-\d{2}$/)).map(month => (
+        <option value="2025-07">2025-07</option>
+        {Object.keys(articlesData.articles_by_date).filter(key => key.match(/^\d{4}-\d{2}$/) && key !== '2025-07').map(month => (
           <option value={month}>{month}</option>
         ))}
       </select>
@@ -163,7 +164,8 @@ const formatLastUpdated = (dateString: string) => {
           <option value="本日">本日</option>
           <option value="昨日">昨日</option>
           <option value="一昨日">一昨日</option>
-          {Object.keys(articlesData.articles_by_date).filter(key => key.match(/^\d{4}-\d{2}$/)).map(month => (
+          <option value="2025-07">2025-07</option>
+          {Object.keys(articlesData.articles_by_date).filter(key => key.match(/^\d{4}-\d{2}$/) && key !== '2025-07').map(month => (
             <option value={month}>{month}</option>
           ))}
         </select>
