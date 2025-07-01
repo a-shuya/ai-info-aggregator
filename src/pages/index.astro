@@ -208,8 +208,8 @@ const formatLastUpdated = (dateString: string) => {
     </div>
 
     <!-- メインコンテンツ -->
-    <div class="main-content" style="flex: 1; padding: 20px;">
-      <div id="articleContainer">
+    <div class="main-content" style="flex: 1; padding: 20px; max-width: calc(100vw - 250px); overflow: hidden; box-sizing: border-box;">
+      <div id="articleContainer" style="max-width: 100%; overflow: hidden;">
         <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 20px;">
           <h2 id="contentTitle" style="font-size: 20px; font-weight: bold; margin: 0;">本日のすべての記事</h2>
           <a id="siteLink" href="#" target="_blank" style="font-size: 14px; color: #0066cc; text-decoration: none; display: none;">
@@ -347,6 +347,10 @@ const formatLastUpdated = (dateString: string) => {
           display: flex;
           flex-direction: column;
           position: relative;
+          word-wrap: break-word;
+          overflow-wrap: break-word;
+          max-width: 100%;
+          box-sizing: border-box;
         ">
           <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 8px;">
             <div style="display: flex; align-items: center; gap: 8px;">
@@ -359,7 +363,7 @@ const formatLastUpdated = (dateString: string) => {
             <span style="font-size: 12px; color: #666;">${formatDate(article.published)}</span>
           </div>
           
-          <h3 style="font-size: 16px; font-weight: bold; margin-bottom: 8px; line-height: 1.4; color: black;">
+          <h3 style="font-size: 16px; font-weight: bold; margin-bottom: 8px; line-height: 1.4; color: black; word-wrap: break-word; overflow-wrap: break-word;">
             ${article.title}
           </h3>
           
@@ -425,6 +429,9 @@ const formatLastUpdated = (dateString: string) => {
             grid-template-columns: repeat(3, 1fr);
             gap: 20px;
             max-width: 100%;
+            width: 100%;
+            overflow: hidden;
+            box-sizing: border-box;
           " class="articles-grid">
             ${articlesHTML}
             ${dummyBoxes.join('')}
