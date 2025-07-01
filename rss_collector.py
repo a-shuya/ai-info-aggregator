@@ -244,8 +244,7 @@ class RSSCollector:
         category_mapping = {
             'ビジネス': 'ビジネス',
             'テックニュース': 'テック',
-            'サイエンス': 'サイエンス',
-            'スタートアップ': 'スタートアップ'
+            'サイエンス': 'サイエンス'
         }
         
         return category_mapping.get(rss_category, None)  # 該当なしはNone
