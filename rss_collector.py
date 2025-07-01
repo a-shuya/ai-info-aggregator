@@ -121,6 +121,9 @@ class RSSCollector:
             # 画像URL取得
             image_url = self.extract_image_url(entry)
             
+            # RSS カテゴリ取得（Business Insider用）
+            rss_category = self.extract_rss_category(entry)
+            
             return {
                 'title': title,
                 'url': url,
@@ -128,6 +131,7 @@ class RSSCollector:
                 'published': published.isoformat() + 'Z',  # Add UTC timezone indicator
                 'description': description,
                 'category': self.get_site_category(site_name),
+                'rss_category': rss_category,  # RSS元カテゴリを保存
                 'image_url': image_url
             }
             
@@ -221,8 +225,33 @@ class RSSCollector:
         
         return image_url
     
+    def extract_rss_category(self, entry: Any) -> str:
+        """RSSエントリからカテゴリを抽出"""
+        try:
+            # Business Insiderのcategoryフィールドから直接取得
+            if hasattr(entry, 'tags') and entry.tags:
+                # 最初のタグのtermを使用（Business Insiderの場合）
+                return entry.tags[0].term if hasattr(entry.tags[0], 'term') else ''
+                
+            return ''
+        except Exception as e:
+            logger.warning(f"RSSカテゴリ抽出エラー: {e}")
+            return ''
+    
+    def classify_business_insider_article_by_rss_category(self, rss_category: str) -> str:
+        """Business Insider記事のRSSカテゴリベースでの分類"""
+        # RSSカテゴリと対象カテゴリのマッピング（対象外は除外）
+        category_mapping = {
+            'ビジネス': 'ビジネス',
+            'テックニュース': 'テック',
+            'サイエンス': 'サイエンス',
+            'スタートアップ': 'スタートアップ'
+        }
+        
+        return category_mapping.get(rss_category, None)  # 該当なしはNone
+    
     def classify_business_insider_article(self, title: str, description: str) -> str:
-        """Business Insider記事のカテゴリ分類"""
+        """Business Insider記事のカテゴリ分類（キーワードベース）"""
         if not self.category_keywords or 'business_insider_categories' not in self.category_keywords:
             return 'ビジネス'  # デフォルトカテゴリ
         
@@ -325,19 +354,20 @@ class RSSCollector:
             if feed['name'] == 'Business Insider Japan':
                 categorized_articles = []
                 for article in articles:
-                    classified_category = self.classify_business_insider_article(
-                        article['title'], 
-                        article.get('description', '')
-                    )
+                    # まずRSSカテゴリベースで分類を試行
+                    rss_category = article.get('rss_category', '')
+                    classified_category = self.classify_business_insider_article_by_rss_category(rss_category)
                     
-                    # 元の記事をコピーしてカテゴリを更新
-                    for target_category in ['ビジネス', 'テック', 'サイエンス', 'スタートアップ']:
-                        if classified_category == target_category:
-                            categorized_article = article.copy()
-                            categorized_article['site'] = f'Business Insider({target_category})'
-                            categorized_article['category'] = target_category
-                            categorized_articles.append(categorized_article)
-                            break
+                    # RSSカテゴリベースで分類できない場合は除外
+                    if classified_category is None:
+                        logger.info(f"除外: Business Insider記事 (RSSカテゴリ: {rss_category}) - {article['title'][:50]}...")
+                        continue
+                    
+                    # 記事をコピーしてカテゴリを更新
+                    categorized_article = article.copy()
+                    categorized_article['site'] = f'Business Insider({classified_category})'
+                    categorized_article['category'] = classified_category
+                    categorized_articles.append(categorized_article)
                 
                 new_articles.extend(categorized_articles)
             else:
