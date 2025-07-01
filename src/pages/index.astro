@@ -255,6 +255,7 @@ const formatLastUpdated = (dateString: string) => {
       }
       .articles-grid {
         grid-template-columns: 1fr !important;
+        display: grid !important;
       }
       .articles-grid > div[style*="visibility: hidden"] {
         display: none !important;
@@ -425,10 +426,14 @@ const formatLastUpdated = (dateString: string) => {
           }
         }
         
+        // 画面幅に応じてグリッドレイアウトを決定
+        const isMobile = window.innerWidth <= 1024;
+        const gridColumns = isMobile ? '1fr' : 'repeat(3, 1fr)';
+        
         articlesList.innerHTML = `
           <div style="
             display: grid;
-            grid-template-columns: repeat(3, 1fr);
+            grid-template-columns: ${gridColumns};
             gap: 20px;
             width: 100%;
             max-width: 100%;
@@ -436,7 +441,7 @@ const formatLastUpdated = (dateString: string) => {
             box-sizing: border-box;
           " class="articles-grid">
             ${articlesHTML}
-            ${dummyBoxes.join('')}
+            ${isMobile ? '' : dummyBoxes.join('')}
           </div>
         `;
         

@@ -5,6 +5,10 @@ on:
     # 10分毎に実行 (UTC)
     - cron: '*/10 * * * *'
   workflow_dispatch: # 手動実行も可能
+  push:
+    branches: [ main ]
+    paths:
+      - '.github/workflows/rss-collector.yml'
 
 jobs:
   collect-rss:
@@ -27,7 +31,10 @@ jobs:
         pip install -r requirements.txt
         
     - name: Run RSS collector
-      run: python rss_collector.py
+      run: |
+        echo "Starting RSS collection at $(date)"
+        python rss_collector.py
+        echo "RSS collection completed at $(date)"
       
     - name: Commit and push changes
       run: |
