@@ -390,13 +390,23 @@ const formatLastUpdated = (dateString: string) => {
       return date.toISOString().split('T')[0];
     }
     
-    // 指定日付の記事を取得
+    // 指定日付の記事を取得（日本時間ベース）
     function getArticlesForDate(dateStr) {
       return allArticles.filter(article => {
         try {
+          // 記事の公開日時をUTC時刻として解析
           const articleDate = new Date(article.published);
-          const articleDateStr = formatDateKey(articleDate);
-          return articleDateStr === dateStr;
+          
+          // 日本時間に変換
+          const articleDateJST = new Date(articleDate.toLocaleString('en-US', { timeZone: 'Asia/Tokyo' }));
+          
+          // 選択された日付の範囲を日本時間で設定
+          const selectedDate = new Date(dateStr);
+          const startOfDayJST = new Date(selectedDate.getFullYear(), selectedDate.getMonth(), selectedDate.getDate(), 0, 0, 0, 0);
+          const endOfDayJST = new Date(selectedDate.getFullYear(), selectedDate.getMonth(), selectedDate.getDate(), 23, 59, 59, 999);
+          
+          // 記事の日付が選択された日の範囲内かチェック
+          return articleDateJST >= startOfDayJST && articleDateJST <= endOfDayJST;
         } catch {
           return false;
         }
