@@ -125,17 +125,10 @@ const formatLastUpdated = (dateString: string) => {
       </button>
     </div>
     
-    <!-- モバイル用期間選択 -->
+    <!-- モバイル用日付選択カレンダー -->
     <div style="margin-bottom: 15px;">
-      <select id="mobilePeriodSelector" style="width: 100%; padding: 8px; border: 1px solid #ddd; border-radius: 4px;">
-        <option value="本日">本日</option>
-        <option value="昨日">昨日</option>
-        <option value="一昨日">一昨日</option>
-        <option value="2025-07">2025-07</option>
-        {Object.keys(articlesData.articles_by_date).filter(key => key.match(/^\d{4}-\d{2}$/) && key !== '2025-07').map(month => (
-          <option value={month}>{month}</option>
-        ))}
-      </select>
+      <label style="display: block; font-size: 14px; font-weight: bold; margin-bottom: 5px;">日付選択:</label>
+      <div id="mobileCalendar" class="mobile-calendar"></div>
     </div>
     
     <!-- モバイル用タブ選択 -->
@@ -156,19 +149,10 @@ const formatLastUpdated = (dateString: string) => {
         AI情報収集ページ
       </h1>
       
-      <!-- 期間選択 -->
+      <!-- 日付選択カレンダー -->
       <div style="margin-bottom: 20px;">
-        <label style="display: block; font-size: 14px; font-weight: bold; margin-bottom: 5px;">期間選択:</label>
-        <select id="periodSelector" style="width: 100%; padding: 5px; border: 1px solid #ddd; margin-bottom: 10px;">
-          <option value="本日">本日</option>
-          <option value="昨日">昨日</option>
-          <option value="一昨日">一昨日</option>
-          <option value="2025-07">2025-07</option>
-          {Object.keys(articlesData.articles_by_date).filter(key => key.match(/^\d{4}-\d{2}$/) && key !== '2025-07').map(month => (
-            <option value={month}>{month}</option>
-          ))}
-        </select>
-        <input type="date" id="dateSelector" style="width: 100%; padding: 5px; border: 1px solid #ddd; display: none;">
+        <label style="display: block; font-size: 14px; font-weight: bold; margin-bottom: 5px;">日付選択:</label>
+        <div id="desktopCalendar" class="desktop-calendar"></div>
       </div>
       
       <!-- ナビゲーション -->
@@ -291,6 +275,141 @@ const formatLastUpdated = (dateString: string) => {
         display: none !important;
       }
     }
+    
+    /* カレンダーのスタイル */
+    .calendar {
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      background: white;
+      overflow: hidden;
+    }
+    
+    .calendar-header {
+      background: #f5f5f5;
+      padding: 10px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-bottom: 1px solid #ddd;
+    }
+    
+    .calendar-nav {
+      background: none;
+      border: none;
+      font-size: 18px;
+      cursor: pointer;
+      padding: 5px 10px;
+      border-radius: 4px;
+    }
+    
+    .calendar-nav:hover {
+      background: #e0e0e0;
+    }
+    
+    .calendar-nav:disabled {
+      opacity: 0.3;
+      cursor: not-allowed;
+    }
+    
+    .calendar-nav:disabled:hover {
+      background: none;
+    }
+    
+    .calendar-title {
+      font-weight: bold;
+      font-size: 16px;
+    }
+    
+    .calendar-grid {
+      display: grid;
+      grid-template-columns: repeat(7, 1fr);
+    }
+    
+    .calendar-day-header {
+      padding: 8px;
+      text-align: center;
+      font-size: 12px;
+      font-weight: bold;
+      background: #f9f9f9;
+      border-bottom: 1px solid #eee;
+    }
+    
+    .calendar-day {
+      padding: 8px;
+      text-align: center;
+      cursor: pointer;
+      border: 1px solid #f0f0f0;
+      min-height: 32px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: background-color 0.2s;
+    }
+    
+    .calendar-day:hover {
+      background: #f0f0f0;
+    }
+    
+    .calendar-day.other-month {
+      color: #ccc;
+      cursor: not-allowed;
+    }
+    
+    .calendar-day.other-month:hover {
+      background: none;
+    }
+    
+    .calendar-day.disabled {
+      color: #ccc;
+      cursor: not-allowed;
+    }
+    
+    .calendar-day.disabled:hover {
+      background: none;
+    }
+    
+    .calendar-day.selected {
+      background: #333;
+      color: white;
+    }
+    
+    .calendar-day.selected:hover {
+      background: #333;
+    }
+    
+    .calendar-day.today {
+      background: #e3f2fd;
+      font-weight: bold;
+    }
+    
+    .calendar-day.has-articles {
+      position: relative;
+    }
+    
+    .calendar-day.has-articles::after {
+      content: '';
+      position: absolute;
+      bottom: 2px;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 4px;
+      height: 4px;
+      background: #4caf50;
+      border-radius: 50%;
+    }
+    
+    /* モバイル用カレンダー調整 */
+    @media (max-width: 1024px) {
+      .mobile-calendar .calendar-day {
+        min-height: 40px;
+        font-size: 16px;
+      }
+      
+      .mobile-calendar .calendar-nav {
+        font-size: 20px;
+        padding: 8px 12px;
+      }
+    }
   </style>
 
   <script define:vars={{ allArticles, sites, articlesData }}>
@@ -298,12 +417,11 @@ const formatLastUpdated = (dateString: string) => {
     const tabButtons = document.querySelectorAll('.tab-button');
     const articlesList = document.getElementById('articlesList');
     const contentTitle = document.getElementById('contentTitle');
-    const dateSelector = document.getElementById('dateSelector');
-    const periodSelector = document.getElementById('periodSelector');
     const siteLink = document.getElementById('siteLink');
     
-    // モバイル用要素
-    const mobilePeriodSelector = document.getElementById('mobilePeriodSelector');
+    // カレンダー要素
+    const desktopCalendar = document.getElementById('desktopCalendar');
+    const mobileCalendar = document.getElementById('mobileCalendar');
     const mobileTabSelector = document.getElementById('mobileTabSelector');
     
     // サイトごとの元サイトリンク
@@ -329,12 +447,13 @@ const formatLastUpdated = (dateString: string) => {
       'G-gen': 'https://blog.g-gen.co.jp'
     };
     
-    // 今日の日付を設定
-    const today = new Date();
-    dateSelector.value = today.toISOString().split('T')[0];
-    
+    // 現在の状態
     let currentFilter = 'all';
-    let currentPeriod = '本日';
+    let currentDate = new Date(); // 現在選択されている日付
+    
+    // 日付選択範囲の設定
+    const minDate = new Date('2025-01-01');
+    const maxDate = new Date(); // 本日まで
     
     function createArticleHTML(article) {
       const formatDate = (dateString) => {
@@ -400,13 +519,125 @@ const formatLastUpdated = (dateString: string) => {
       `;
     }
     
+    // カレンダー作成関数
+    function createCalendar(container, currentMonth, currentYear) {
+      const firstDay = new Date(currentYear, currentMonth, 1);
+      const lastDay = new Date(currentYear, currentMonth + 1, 0);
+      const startDate = new Date(firstDay);
+      startDate.setDate(startDate.getDate() - firstDay.getDay()); // 週の最初の日（日曜日）
+      
+      const endDate = new Date(lastDay);
+      endDate.setDate(endDate.getDate() + (6 - lastDay.getDay())); // 週の最後の日（土曜日）
+      
+      const today = new Date();
+      const selectedDateStr = formatDateKey(currentDate);
+      
+      let html = `
+        <div class="calendar">
+          <div class="calendar-header">
+            <button class="calendar-nav" data-action="prev" ${currentYear === 2025 && currentMonth === 0 ? 'disabled' : ''}>‹</button>
+            <div class="calendar-title">${currentYear}年${currentMonth + 1}月</div>
+            <button class="calendar-nav" data-action="next" ${currentYear === today.getFullYear() && currentMonth === today.getMonth() ? 'disabled' : ''}>›</button>
+          </div>
+          <div class="calendar-grid">
+            <div class="calendar-day-header">日</div>
+            <div class="calendar-day-header">月</div>
+            <div class="calendar-day-header">火</div>
+            <div class="calendar-day-header">水</div>
+            <div class="calendar-day-header">木</div>
+            <div class="calendar-day-header">金</div>
+            <div class="calendar-day-header">土</div>
+      `;
+      
+      // カレンダーの日付を生成
+      for (let d = new Date(startDate); d <= endDate; d.setDate(d.getDate() + 1)) {
+        const dateStr = formatDateKey(d);
+        const isCurrentMonth = d.getMonth() === currentMonth;
+        const isToday = d.toDateString() === today.toDateString();
+        const isSelected = dateStr === selectedDateStr;
+        const isDisabled = d < minDate || d > maxDate;
+        const hasArticles = getArticlesForDate(dateStr).length > 0;
+        
+        const classes = [];
+        if (!isCurrentMonth) classes.push('other-month');
+        if (isToday) classes.push('today');
+        if (isSelected) classes.push('selected');
+        if (isDisabled) classes.push('disabled');
+        if (hasArticles) classes.push('has-articles');
+        
+        html += `<div class="calendar-day ${classes.join(' ')}" data-date="${dateStr}" ${isDisabled || !isCurrentMonth ? '' : 'data-clickable="true"'}>${d.getDate()}</div>`;
+      }
+      
+      html += `
+          </div>
+        </div>
+      `;
+      
+      container.innerHTML = html;
+      
+      // イベントリスナーを追加
+      const navButtons = container.querySelectorAll('.calendar-nav');
+      navButtons.forEach(button => {
+        button.addEventListener('click', (e) => {
+          const action = e.target.dataset.action;
+          if (action === 'prev') {
+            if (currentMonth === 0) {
+              createCalendar(container, 11, currentYear - 1);
+            } else {
+              createCalendar(container, currentMonth - 1, currentYear);
+            }
+          } else if (action === 'next') {
+            if (currentMonth === 11) {
+              createCalendar(container, 0, currentYear + 1);
+            } else {
+              createCalendar(container, currentMonth + 1, currentYear);
+            }
+          }
+        });
+      });
+      
+      // 日付クリックイベント
+      const dayButtons = container.querySelectorAll('.calendar-day[data-clickable="true"]');
+      dayButtons.forEach(button => {
+        button.addEventListener('click', (e) => {
+          const dateStr = e.target.dataset.date;
+          currentDate = new Date(dateStr);
+          
+          // 両方のカレンダーを更新
+          createCalendar(desktopCalendar, currentDate.getMonth(), currentDate.getFullYear());
+          createCalendar(mobileCalendar, currentDate.getMonth(), currentDate.getFullYear());
+          
+          // 記事をフィルター
+          filterArticles();
+        });
+      });
+    }
+    
+    // 日付キーのフォーマット（YYYY-MM-DD）
+    function formatDateKey(date) {
+      return date.toISOString().split('T')[0];
+    }
+    
+    // 指定日付の記事を取得
+    function getArticlesForDate(dateStr) {
+      return allArticles.filter(article => {
+        try {
+          const articleDate = new Date(article.published);
+          const articleDateStr = formatDateKey(articleDate);
+          return articleDateStr === dateStr;
+        } catch {
+          return false;
+        }
+      });
+    }
+    
     function filterArticles() {
       let filteredArticles = [];
       let title = '';
       
-      // 指定された期間の記事を表示
-      filteredArticles = articlesData.articles_by_date[currentPeriod] || [];
-      title = currentFilter === 'all' ? `${currentPeriod}のすべての記事` : `${currentPeriod}の${currentFilter}記事`;
+      // 選択された日付の記事を取得
+      const dateStr = formatDateKey(currentDate);
+      filteredArticles = getArticlesForDate(dateStr);
       
       // サイトフィルタを適用
       if (currentFilter !== 'all') {
@@ -420,6 +651,9 @@ const formatLastUpdated = (dateString: string) => {
         return dateB - dateA; // 降順（新しい順）
       });
       
+      // タイトル設定
+      const displayDate = currentDate.toLocaleDateString('ja-JP');
+      title = currentFilter === 'all' ? `${displayDate}のすべての記事` : `${displayDate}の${currentFilter}記事`;
       contentTitle.textContent = title;
       
       // 元サイトリンクの表示制御
@@ -514,25 +748,6 @@ const formatLastUpdated = (dateString: string) => {
       });
     });
     
-    // 期間変更イベント
-    periodSelector.addEventListener('change', () => {
-      currentPeriod = periodSelector.value;
-      // モバイル側も同期
-      if (mobilePeriodSelector) {
-        mobilePeriodSelector.value = currentPeriod;
-      }
-      filterArticles();
-    });
-    
-    // モバイル用期間変更イベント
-    if (mobilePeriodSelector) {
-      mobilePeriodSelector.addEventListener('change', () => {
-        currentPeriod = mobilePeriodSelector.value;
-        // PC側も同期
-        periodSelector.value = currentPeriod;
-        filterArticles();
-      });
-    }
     
     // モバイル用タブ変更イベント
     if (mobileTabSelector) {
@@ -556,19 +771,22 @@ const formatLastUpdated = (dateString: string) => {
       });
     }
     
-    // 画面サイズ変更時の同期処理
-    function syncSelectors() {
-      if (mobilePeriodSelector && periodSelector) {
-        mobilePeriodSelector.value = currentPeriod;
-        periodSelector.value = currentPeriod;
-      }
+    // 初期化処理
+    function initializeCalendars() {
+      // 今日の日付でカレンダーを初期化
+      createCalendar(desktopCalendar, currentDate.getMonth(), currentDate.getFullYear());
+      createCalendar(mobileCalendar, currentDate.getMonth(), currentDate.getFullYear());
+      
+      // モバイル用タブセレクターの初期化
       if (mobileTabSelector) {
         mobileTabSelector.value = currentFilter;
       }
+      
+      // 初期記事表示
+      filterArticles();
     }
     
     // 初期表示
-    filterArticles();
-    syncSelectors();
+    initializeCalendars();
   </script>
 </Layout>
