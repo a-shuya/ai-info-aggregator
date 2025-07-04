@@ -183,7 +183,7 @@ const formatLastUpdated = (dateString: string) => {
         <p>総記事数: {articlesData.total_articles}件</p>
         <p>保存期間: 1年間</p>
         <div style="margin-top: 10px;">
-          {Object.entries(articlesData.articles_by_date).map(([period, articles]) => (
+          {Object.entries(articlesData.articles_by_date).filter(([period]) => ['本日', '昨日', '一昨日'].includes(period)).map(([period, articles]) => (
             <p>{period}: {articles.length}件</p>
           ))}
         </div>
@@ -212,7 +212,7 @@ const formatLastUpdated = (dateString: string) => {
     <p>総記事数: {articlesData.total_articles}件</p>
     <p>保存期間: 1年間</p>
     <div style="margin-top: 10px; display: grid; grid-template-columns: repeat(auto-fit, minmax(120px, 1fr)); gap: 5px;">
-      {Object.entries(articlesData.articles_by_date).map(([period, articles]) => (
+      {Object.entries(articlesData.articles_by_date).filter(([period]) => ['本日', '昨日', '一昨日'].includes(period)).map(([period, articles]) => (
         <span>{period}: {articles.length}件</span>
       ))}
     </div>
