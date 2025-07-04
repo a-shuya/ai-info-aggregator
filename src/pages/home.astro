@@ -54,34 +54,87 @@ async function getWeatherData() {
     
     const data = await response.json();
     
-    // 気象庁データの解析
-    const weatherData = data[0]; // 週間天気予報データ
-    const timeDefines = weatherData.timeSeries[0].timeDefines;
-    const weathers = weatherData.timeSeries[0].areas[0].weathers;
+    // データ構造の検証
+    if (!data || !Array.isArray(data) || data.length === 0) {
+      console.warn('気象庁APIデータ構造エラー、ダミーデータを使用');
+      return getDummyWeatherData();
+    }
+    
+    const weatherData = data[0];
+    if (!weatherData?.timeSeries || !Array.isArray(weatherData.timeSeries) || weatherData.timeSeries.length < 2) {
+      console.warn('気象庁API timeSeries構造エラー、ダミーデータを使用');
+      return getDummyWeatherData();
+    }
+    
+    // 天気予報データ（timeSeries[0]）
+    const weatherSeries = weatherData.timeSeries[0];
+    const weatherTimeDefines = weatherSeries?.timeDefines || [];
+    const weathers = weatherSeries?.areas?.[0]?.weathers || [];
+    
+    // 気温データ（timeSeries[1]）
+    const tempSeries = weatherData.timeSeries[1];
+    const tempTimeDefines = tempSeries?.timeDefines || [];
+    const tempsMax = tempSeries?.areas?.[0]?.tempsMax || [];
+    const tempsMin = tempSeries?.areas?.[0]?.tempsMin || [];
     
     const forecast = [];
-    const today = new Date();
     
-    for (let i = 0; i < Math.min(3, timeDefines.length); i++) {
-      const date = new Date(timeDefines[i]);
+    // 日本時間でのタイムゾーン設定
+    const tokyoTimeZone = 'Asia/Tokyo';
+    
+    for (let i = 0; i < Math.min(3, weatherTimeDefines.length); i++) {
+      // 日付をJSTで正しく処理
+      const dateStr = weatherTimeDefines[i];
+      const date = new Date(dateStr);
+      
+      // 日本時間での日付表示
+      const jstDate = new Date(date.toLocaleString('en-US', { timeZone: tokyoTimeZone }));
       const dayName = i === 0 ? '本日' : i === 1 ? '明日' : '明後日';
       
-      // 3時間ごとのダミーデータを生成（気象庁は1日単位のため）
-      const hourly = [];
+      // 実際の天気データを使用
       const weather = weathers[i] || '晴れ';
       
+      // 気温データの取得（対応する日付のインデックスを検索）
+      let maxTemp = null;
+      let minTemp = null;
+      
+      // 気温データの日付と照合
+      for (let j = 0; j < tempTimeDefines.length; j++) {
+        const tempDateStr = tempTimeDefines[j];
+        const tempDate = new Date(tempDateStr);
+        
+        // 同じ日付の場合
+        if (tempDate.toDateString() === date.toDateString()) {
+          maxTemp = tempsMax[j] ? parseInt(tempsMax[j]) : null;
+          minTemp = tempsMin[j] ? parseInt(tempsMin[j]) : null;
+          break;
+        }
+      }
+      
+      // 3時間ごとのデータを生成（実際の気温範囲を使用）
+      const hourly = [];
       for (let hour = 6; hour <= 21; hour += 3) {
+        let temp;
+        if (maxTemp !== null && minTemp !== null) {
+          // 実際の最高・最低気温から時間帯を考慮した気温を推定
+          const tempRange = maxTemp - minTemp;
+          const timeRatio = Math.sin(((hour - 6) / 15) * Math.PI); // 昼に高く、朝夕に低く
+          temp = Math.round(minTemp + (tempRange * timeRatio));
+        } else {
+          // 気温データがない場合のフォールバック
+          temp = Math.floor(Math.random() * 8) + 18;
+        }
+        
         hourly.push({
           time: `${hour.toString().padStart(2, '0')}:00`,
-          temp: Math.floor(Math.random() * 8) + 18, // 18-25度の範囲
-          weather: weather,
-          icon: '01d'
+          temp: temp,
+          weather: weather
         });
       }
       
       forecast.push({
         day: dayName,
-        date: date.toLocaleDateString('ja-JP'),
+        date: jstDate.toLocaleDateString('ja-JP'),
         hourly: hourly
       });
     }
