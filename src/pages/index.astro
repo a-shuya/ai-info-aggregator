@@ -26,12 +26,15 @@ try {
         const tagData = JSON.parse(fs.readFileSync(tagPath, 'utf-8'));
         
         if (tagData.articles_by_date) {
-          // 各日付の記事をマージ
+          // 各日付の記事をマージ（重複排除）
           Object.entries(tagData.articles_by_date).forEach(([dateKey, articles]) => {
             if (!allArticlesByDate[dateKey]) {
               allArticlesByDate[dateKey] = [];
             }
-            allArticlesByDate[dateKey].push(...articles);
+            // URL基準で重複チェック
+            const existingUrls = new Set(allArticlesByDate[dateKey].map(article => article.url));
+            const uniqueArticles = articles.filter(article => !existingUrls.has(article.url));
+            allArticlesByDate[dateKey].push(...uniqueArticles);
           });
           
           totalArticles += tagData.total_articles || 0;
@@ -66,7 +69,7 @@ try {
   };
 }
 
-// 全記事を統合して日付とサイト別に分類
+// 全記事を統合（重複を避けるため各タグファイルから直接取得）
 const allArticles = [];
 Object.values(articlesData.articles_by_date).forEach(articles => {
   allArticles.push(...articles);
