@@ -393,9 +393,9 @@ const formatLastUpdated = (dateString: string) => {
       return date.toISOString().split('T')[0];
     }
     
-    // 指定日付の記事を取得（日本時間ベース）
+    // 指定日付の記事を取得（日本時間ベース・重複排除）
     function getArticlesForDate(dateStr) {
-      return allArticles.filter(article => {
+      const filteredArticles = allArticles.filter(article => {
         try {
           // 記事の公開日時をUTC時刻として解析
           const articleDate = new Date(article.published);
@@ -414,6 +414,19 @@ const formatLastUpdated = (dateString: string) => {
           return false;
         }
       });
+      
+      // URL基準で重複排除
+      const uniqueArticles = [];
+      const seenUrls = new Set();
+      
+      for (const article of filteredArticles) {
+        if (!seenUrls.has(article.url)) {
+          seenUrls.add(article.url);
+          uniqueArticles.push(article);
+        }
+      }
+      
+      return uniqueArticles;
     }
     
     function filterArticles() {
