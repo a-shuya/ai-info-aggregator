@@ -1,9 +1,71 @@
 {
   "site": "Zenn(Python)",
-  "last_updated": "2025-07-09T20:46:04.402714",
-  "total_articles": 114,
+  "last_updated": "2025-07-09T20:57:27.508518",
+  "total_articles": 126,
   "articles_by_date": {
+    "本日": [
+      {
+        "title": "メモ | FoldCraft関係",
+        "url": "https://zenn.dev/machine_etal/articles/ec4e5745c2d305",
+        "site": "Zenn(Python)",
+        "published": "2025-07-09T19:46:07Z",
+        "description": "foldcraft.def\nBootStrap: docker\nFrom: nvidia/cuda:12.4.1-cudnn-devel-ubuntu22.04\n\n%post\n  # localtime関係のWARNINGに対処\n  touch /etc/localtime\n\n  # 必要なパッケージのインストール (冗長)\n  apt update &amp;&amp; apt upgrade ...",
+        "category": "開発",
+        "rss_category": "",
+        "image_url": "https://res.cloudinary.com/zenn/image/upload/s--VJUG5JyS--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:%25E3%2583%25A1%25E3%2583%25A2%2520%257C%2520FoldCraft%25E9%2596%25A2%25E4%25BF%2582%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:_machine%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL3plbm4tdXNlci11cGxvYWQvYXZhdGFyLzA3Y2VmMWU4NmUuanBlZw==%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png"
+      },
+      {
+        "title": "macOS M2環境でpyenvによるPythonのインストールがBUILD FAILEDで苦戦",
+        "url": "https://zenn.dev/fuku_senta/articles/e0780ce46fee67",
+        "site": "Zenn(Python)",
+        "published": "2025-07-09T16:12:04Z",
+        "description": "現象\n\nHomebrewでpyenvをインストール\npyenvでPython 3.13.5のインストールを試みる\nエラー発生でインストール失敗 &lt;-- 今ここ\n\n\nビルド失敗で、ld: symbol(s) not found for architecture arm64と言っているので、M2（Apple Silicon）のせいで相性が悪いのかなと思いつつも、ハマってしまいました。\n$ pye...",
+        "category": "開発",
+        "rss_category": "",
+        "image_url": "https://res.cloudinary.com/zenn/image/upload/s--ntCXXXJu--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:macOS%2520M2%25E7%2592%25B0%25E5%25A2%2583%25E3%2581%25A7pyenv%25E3%2581%25AB%25E3%2582%2588%25E3%2582%258BPython%25E3%2581%25AE%25E3%2582%25A4%25E3%2583%25B3%25E3%2582%25B9%25E3%2583%2588%25E3%2583%25BC%25E3%2583%25AB%25E3%2581%258CBUILD%2520FAILED%25E3%2581%25A7%25E8%258B%25A6%25E6%2588%25A6%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:fuku_senta%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9saDMuZ29vZ2xldXNlcmNvbnRlbnQuY29tL2EvQUl0YnZta0pVX2h1R0hESlEyU0k5T04zVWxaUFAza3haeG43dVo1VG1XWlg9czk2LWM=%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png"
+      },
+      {
+        "title": "Python開発をnpm風に始める最短ルート – PDM入門",
+        "url": "https://zenn.dev/oharu121/articles/2ef58aa0ee28c8",
+        "site": "Zenn(Python)",
+        "published": "2025-07-09T15:46:39Z",
+        "description": "はじめに\nPython開発の依存管理に「Poetry」や「pipenv」を使ったことがある人も多いはず。\nしかし、Node.js の npm / yarn に慣れている人からすると、Poetry はカチッとしすぎるし、pipenv は普及力にかける...\nそんな中、最近人気が出ているのが PDM (Python Development Master) です。\n\n\nnpm install のような簡...",
+        "category": "開発",
+        "rss_category": "",
+        "image_url": "https://res.cloudinary.com/zenn/image/upload/s--lCfjP3tE--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:Python%25E9%2596%258B%25E7%2599%25BA%25E3%2582%2592npm%25E9%25A2%25A8%25E3%2581%25AB%25E5%25A7%258B%25E3%2582%2581%25E3%2582%258B%25E6%259C%2580%25E7%259F%25AD%25E3%2583%25AB%25E3%2583%25BC%25E3%2583%2588%2520%25E2%2580%2593%2520PDM%25E5%2585%25A5%25E9%2596%2580%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:O%2520Haru%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9saDMuZ29vZ2xldXNlcmNvbnRlbnQuY29tL2EvQUNnOG9jSXdQdmFwaGptVTIwMkxrb29lbU5jcDFRREdnRU40NE5RVTB5U0VKdHBqUUJWSjNQMFM9czk2LWM=%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png"
+      },
+      {
+        "title": "Node.js出身者のためのPoetry入門 – Pythonプロジェクトの管理",
+        "url": "https://zenn.dev/oharu121/articles/3a7e23a169a2e6",
+        "site": "Zenn(Python)",
+        "published": "2025-07-09T15:46:11Z",
+        "description": "はじめに\nNode.js では npm init を叩けば package.json が作られて依存管理の準備が整いますよね？\nPythonにも似たような仕組みがありますが、標準の pip + venv ではやや物足りない…\nそこで今回は，Pythonの依存管理ツール「Poetry」 を使って、Node.jsとの比較を交えながらプロジェクトセットアップの6段階を簡潔に紹介します。\n\n Poetry...",
+        "category": "開発",
+        "rss_category": "",
+        "image_url": "https://res.cloudinary.com/zenn/image/upload/s--VIAmwl5c--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:Node.js%25E5%2587%25BA%25E8%25BA%25AB%25E8%2580%2585%25E3%2581%25AE%25E3%2581%259F%25E3%2582%2581%25E3%2581%25AEPoetry%25E5%2585%25A5%25E9%2596%2580%2520%25E2%2580%2593%2520Python%25E3%2583%2597%25E3%2583%25AD%25E3%2582%25B8%25E3%2582%25A7%25E3%2582%25AF%25E3%2583%2588%25E3%2581%25AE%25E7%25AE%25A1%25E7%2590%2586%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:O%2520Haru%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9saDMuZ29vZ2xldXNlcmNvbnRlbnQuY29tL2EvQUNnOG9jSXdQdmFwaGptVTIwMkxrb29lbU5jcDFRREdnRU40NE5RVTB5U0VKdHBqUUJWSjNQMFM9czk2LWM=%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png"
+      },
+      {
+        "title": "忙しい人のための uv チュートリアル",
+        "url": "https://zenn.dev/momocraft/articles/2bbeb3085c25bc",
+        "site": "Zenn(Python)",
+        "published": "2025-07-09T15:11:08Z",
+        "description": "※この記事は人間がアウトライン書いて、Gemini Pro2.5が書き直したものです\nこの記事では、個人の需要と偏見で決めたuvの使い方を紹介します。\nTLDR: uvはPythonのインストールとpip installの代替だけに使えばリターン十分にあります。\nTLDR: 更に忙しい人は 3. 自分用のMakefile から見てもOK\n\n 1 uv python によるバージョン管理\nこれまで私...",
+        "category": "開発",
+        "rss_category": "",
+        "image_url": "https://res.cloudinary.com/zenn/image/upload/s--VbQbogCV--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:%25E5%25BF%2599%25E3%2581%2597%25E3%2581%2584%25E4%25BA%25BA%25E3%2581%25AE%25E3%2581%259F%25E3%2582%2581%25E3%2581%25AE%2520uv%2520%25E3%2583%2581%25E3%2583%25A5%25E3%2583%25BC%25E3%2583%2588%25E3%2583%25AA%25E3%2582%25A2%25E3%2583%25AB%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:momocraft%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9saDMuZ29vZ2xldXNlcmNvbnRlbnQuY29tL2EtL0FPaDE0R2pvb01Sc1lSOFdxS1Nid19YYm44cE1UVGR6TWNqNVRZdU9GNzBSbFE9czk2LWM=%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png"
+      }
+    ],
     "昨日": [
+      {
+        "title": "Claudeサブスクを有効活用するためにWindows機で音声入力から使えるようにしてみた",
+        "url": "https://zenn.dev/mtaerohand/articles/ca50220cdae609",
+        "site": "Zenn(Python)",
+        "published": "2025-07-09T14:02:54Z",
+        "description": "はじめに\nどうも、bunbookです。普段はAWSをメインに触っている人間です。最近の休日は流行りに乗ってClaude Codeと戯れています。\n\nX: https://x.com/bunbook270301\n\n\n本記事はソリューションの提案というよりは日曜大工の事例紹介兼備忘録だと思ってください。自分のPCだから気軽にやってるだけで、正直他人に勧められるかは……な方法なので。\n\n やったこと\n5...",
+        "category": "開発",
+        "rss_category": "",
+        "image_url": "https://res.cloudinary.com/zenn/image/upload/s--vW9-j6vN--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:Claude%25E3%2582%25B5%25E3%2583%2596%25E3%2582%25B9%25E3%2582%25AF%25E3%2582%2592%25E6%259C%2589%25E5%258A%25B9%25E6%25B4%25BB%25E7%2594%25A8%25E3%2581%2599%25E3%2582%258B%25E3%2581%259F%25E3%2582%2581%25E3%2581%25ABWindows%25E6%25A9%259F%25E3%2581%25A7%25E9%259F%25B3%25E5%25A3%25B0%25E5%2585%25A5%25E5%258A%259B%25E3%2581%258B%25E3%2582%2589%25E4%25BD%25BF%25E3%2581%2588%25E3%2582%258B%25E3%2582%2588%25E3%2581%2586%25E3%2581%25AB%25E3%2581%2597%25E3%2581%25A6%25E3%2581%25BF%25E3%2581%259F%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:bunbook%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL3plbm4tdXNlci11cGxvYWQvYXZhdGFyLzdmOTc4Njg2MzMuanBlZw==%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png"
+      },
       {
         "title": "Lakebaseを使ったAIエージェントを実装してみる",
         "url": "https://zenn.dev/camay119/articles/dbb94b9b527007",
@@ -19,7 +81,7 @@
         "url": "https://zenn.dev/kako_jun/articles/8a106225ff31d4",
         "site": "Zenn(Python)",
         "published": "2025-07-09T12:08:52Z",
-        "description": "はじめに\nkako-junです。\nビジネスや研究において、データ分析は不可欠です。（よう知らんけど）\nしかし、従来の統計分析ツールでは、一度に一つの統計法則しか適用できず、データに潜む複雑なパターンや異常を見逃してしまうことってありませんか？\n例えば、財務データがベンフォード法則に従っているかを確認するだけでは、パレートの法則や正規分布からの逸脱を見落とし、全体像を把握できないかもしれません。\n今...",
+        "description": "はじめに\nkako-junです。\nビジネスや研究において、データ分析は不可欠です。（よう知らんけど）\nしかし、従来の統計分析ツールでは、一度に一つの統計法則しか適用できず、データに潜む複雑なパターンや異常を見逃してしまうことってありませんか？\n例えば、財務データがベンフォードの法則に従っているかを確認するだけでは、パレートの法則や正規分布からの逸脱を見落とし、全体像を把握できないかもしれません。\n...",
         "category": "開発",
         "rss_category": "",
         "image_url": "https://res.cloudinary.com/zenn/image/upload/s--w2xczE5K--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:%25E7%25A0%2594%25E7%25A9%25B6%25E3%2583%25BB%25E7%259B%25A3%25E6%259F%25BB%25E3%2581%25AE%25E4%25B8%258D%25E6%25AD%25A3%25E6%25A4%259C%25E7%259F%25A5%25E3%2583%25BB%25E3%2583%2587%25E3%2583%25BC%25E3%2582%25BF%25E5%2593%2581%25E8%25B3%25AA%25E7%25AE%25A1%25E7%2590%2586%25E3%2581%25AB%25E3%2580%25825%25E3%2581%25A4%25E3%2581%25AE%25E6%25B3%2595%25E5%2589%2587%25E3%2581%25A7%25E8%25A6%258B%25E5%25AE%2588%25E3%2582%258B%25E7%25B5%25B1%25E8%25A8%2588%25E5%2588%2586%25E6%259E%2590%25E3%2583%2584%25E3%2583%25BC%25E3%2583%25AB%25E3%2580%258Clawkit%25E3%2580%258D%25E3%2582%2592%25E3%2580%2581Claude%2520Code...%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:kako-jun%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL3plbm4tdXNlci11cGxvYWQvYXZhdGFyLzFmNzk3NTk4OWQuanBlZw==%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png"
@@ -189,6 +251,66 @@
     ],
     "2025-07": [
       {
+        "title": "メモ | FoldCraft関係",
+        "url": "https://zenn.dev/machine_etal/articles/ec4e5745c2d305",
+        "site": "Zenn(Python)",
+        "published": "2025-07-09T19:46:07Z",
+        "description": "foldcraft.def\nBootStrap: docker\nFrom: nvidia/cuda:12.4.1-cudnn-devel-ubuntu22.04\n\n%post\n  # localtime関係のWARNINGに対処\n  touch /etc/localtime\n\n  # 必要なパッケージのインストール (冗長)\n  apt update &amp;&amp; apt upgrade ...",
+        "category": "開発",
+        "rss_category": "",
+        "image_url": "https://res.cloudinary.com/zenn/image/upload/s--VJUG5JyS--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:%25E3%2583%25A1%25E3%2583%25A2%2520%257C%2520FoldCraft%25E9%2596%25A2%25E4%25BF%2582%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:_machine%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL3plbm4tdXNlci11cGxvYWQvYXZhdGFyLzA3Y2VmMWU4NmUuanBlZw==%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png"
+      },
+      {
+        "title": "macOS M2環境でpyenvによるPythonのインストールがBUILD FAILEDで苦戦",
+        "url": "https://zenn.dev/fuku_senta/articles/e0780ce46fee67",
+        "site": "Zenn(Python)",
+        "published": "2025-07-09T16:12:04Z",
+        "description": "現象\n\nHomebrewでpyenvをインストール\npyenvでPython 3.13.5のインストールを試みる\nエラー発生でインストール失敗 &lt;-- 今ここ\n\n\nビルド失敗で、ld: symbol(s) not found for architecture arm64と言っているので、M2（Apple Silicon）のせいで相性が悪いのかなと思いつつも、ハマってしまいました。\n$ pye...",
+        "category": "開発",
+        "rss_category": "",
+        "image_url": "https://res.cloudinary.com/zenn/image/upload/s--ntCXXXJu--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:macOS%2520M2%25E7%2592%25B0%25E5%25A2%2583%25E3%2581%25A7pyenv%25E3%2581%25AB%25E3%2582%2588%25E3%2582%258BPython%25E3%2581%25AE%25E3%2582%25A4%25E3%2583%25B3%25E3%2582%25B9%25E3%2583%2588%25E3%2583%25BC%25E3%2583%25AB%25E3%2581%258CBUILD%2520FAILED%25E3%2581%25A7%25E8%258B%25A6%25E6%2588%25A6%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:fuku_senta%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9saDMuZ29vZ2xldXNlcmNvbnRlbnQuY29tL2EvQUl0YnZta0pVX2h1R0hESlEyU0k5T04zVWxaUFAza3haeG43dVo1VG1XWlg9czk2LWM=%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png"
+      },
+      {
+        "title": "Python開発をnpm風に始める最短ルート – PDM入門",
+        "url": "https://zenn.dev/oharu121/articles/2ef58aa0ee28c8",
+        "site": "Zenn(Python)",
+        "published": "2025-07-09T15:46:39Z",
+        "description": "はじめに\nPython開発の依存管理に「Poetry」や「pipenv」を使ったことがある人も多いはず。\nしかし、Node.js の npm / yarn に慣れている人からすると、Poetry はカチッとしすぎるし、pipenv は普及力にかける...\nそんな中、最近人気が出ているのが PDM (Python Development Master) です。\n\n\nnpm install のような簡...",
+        "category": "開発",
+        "rss_category": "",
+        "image_url": "https://res.cloudinary.com/zenn/image/upload/s--lCfjP3tE--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:Python%25E9%2596%258B%25E7%2599%25BA%25E3%2582%2592npm%25E9%25A2%25A8%25E3%2581%25AB%25E5%25A7%258B%25E3%2582%2581%25E3%2582%258B%25E6%259C%2580%25E7%259F%25AD%25E3%2583%25AB%25E3%2583%25BC%25E3%2583%2588%2520%25E2%2580%2593%2520PDM%25E5%2585%25A5%25E9%2596%2580%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:O%2520Haru%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9saDMuZ29vZ2xldXNlcmNvbnRlbnQuY29tL2EvQUNnOG9jSXdQdmFwaGptVTIwMkxrb29lbU5jcDFRREdnRU40NE5RVTB5U0VKdHBqUUJWSjNQMFM9czk2LWM=%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png"
+      },
+      {
+        "title": "Node.js出身者のためのPoetry入門 – Pythonプロジェクトの管理",
+        "url": "https://zenn.dev/oharu121/articles/3a7e23a169a2e6",
+        "site": "Zenn(Python)",
+        "published": "2025-07-09T15:46:11Z",
+        "description": "はじめに\nNode.js では npm init を叩けば package.json が作られて依存管理の準備が整いますよね？\nPythonにも似たような仕組みがありますが、標準の pip + venv ではやや物足りない…\nそこで今回は，Pythonの依存管理ツール「Poetry」 を使って、Node.jsとの比較を交えながらプロジェクトセットアップの6段階を簡潔に紹介します。\n\n Poetry...",
+        "category": "開発",
+        "rss_category": "",
+        "image_url": "https://res.cloudinary.com/zenn/image/upload/s--VIAmwl5c--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:Node.js%25E5%2587%25BA%25E8%25BA%25AB%25E8%2580%2585%25E3%2581%25AE%25E3%2581%259F%25E3%2582%2581%25E3%2581%25AEPoetry%25E5%2585%25A5%25E9%2596%2580%2520%25E2%2580%2593%2520Python%25E3%2583%2597%25E3%2583%25AD%25E3%2582%25B8%25E3%2582%25A7%25E3%2582%25AF%25E3%2583%2588%25E3%2581%25AE%25E7%25AE%25A1%25E7%2590%2586%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:O%2520Haru%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9saDMuZ29vZ2xldXNlcmNvbnRlbnQuY29tL2EvQUNnOG9jSXdQdmFwaGptVTIwMkxrb29lbU5jcDFRREdnRU40NE5RVTB5U0VKdHBqUUJWSjNQMFM9czk2LWM=%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png"
+      },
+      {
+        "title": "忙しい人のための uv チュートリアル",
+        "url": "https://zenn.dev/momocraft/articles/2bbeb3085c25bc",
+        "site": "Zenn(Python)",
+        "published": "2025-07-09T15:11:08Z",
+        "description": "※この記事は人間がアウトライン書いて、Gemini Pro2.5が書き直したものです\nこの記事では、個人の需要と偏見で決めたuvの使い方を紹介します。\nTLDR: uvはPythonのインストールとpip installの代替だけに使えばリターン十分にあります。\nTLDR: 更に忙しい人は 3. 自分用のMakefile から見てもOK\n\n 1 uv python によるバージョン管理\nこれまで私...",
+        "category": "開発",
+        "rss_category": "",
+        "image_url": "https://res.cloudinary.com/zenn/image/upload/s--VbQbogCV--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:%25E5%25BF%2599%25E3%2581%2597%25E3%2581%2584%25E4%25BA%25BA%25E3%2581%25AE%25E3%2581%259F%25E3%2582%2581%25E3%2581%25AE%2520uv%2520%25E3%2583%2581%25E3%2583%25A5%25E3%2583%25BC%25E3%2583%2588%25E3%2583%25AA%25E3%2582%25A2%25E3%2583%25AB%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:momocraft%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9saDMuZ29vZ2xldXNlcmNvbnRlbnQuY29tL2EtL0FPaDE0R2pvb01Sc1lSOFdxS1Nid19YYm44cE1UVGR6TWNqNVRZdU9GNzBSbFE9czk2LWM=%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png"
+      },
+      {
+        "title": "Claudeサブスクを有効活用するためにWindows機で音声入力から使えるようにしてみた",
+        "url": "https://zenn.dev/mtaerohand/articles/ca50220cdae609",
+        "site": "Zenn(Python)",
+        "published": "2025-07-09T14:02:54Z",
+        "description": "はじめに\nどうも、bunbookです。普段はAWSをメインに触っている人間です。最近の休日は流行りに乗ってClaude Codeと戯れています。\n\nX: https://x.com/bunbook270301\n\n\n本記事はソリューションの提案というよりは日曜大工の事例紹介兼備忘録だと思ってください。自分のPCだから気軽にやってるだけで、正直他人に勧められるかは……な方法なので。\n\n やったこと\n5...",
+        "category": "開発",
+        "rss_category": "",
+        "image_url": "https://res.cloudinary.com/zenn/image/upload/s--vW9-j6vN--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:Claude%25E3%2582%25B5%25E3%2583%2596%25E3%2582%25B9%25E3%2582%25AF%25E3%2582%2592%25E6%259C%2589%25E5%258A%25B9%25E6%25B4%25BB%25E7%2594%25A8%25E3%2581%2599%25E3%2582%258B%25E3%2581%259F%25E3%2582%2581%25E3%2581%25ABWindows%25E6%25A9%259F%25E3%2581%25A7%25E9%259F%25B3%25E5%25A3%25B0%25E5%2585%25A5%25E5%258A%259B%25E3%2581%258B%25E3%2582%2589%25E4%25BD%25BF%25E3%2581%2588%25E3%2582%258B%25E3%2582%2588%25E3%2581%2586%25E3%2581%25AB%25E3%2581%2597%25E3%2581%25A6%25E3%2581%25BF%25E3%2581%259F%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:bunbook%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL3plbm4tdXNlci11cGxvYWQvYXZhdGFyLzdmOTc4Njg2MzMuanBlZw==%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png"
+      },
+      {
         "title": "Lakebaseを使ったAIエージェントを実装してみる",
         "url": "https://zenn.dev/camay119/articles/dbb94b9b527007",
         "site": "Zenn(Python)",
@@ -203,7 +325,7 @@
         "url": "https://zenn.dev/kako_jun/articles/8a106225ff31d4",
         "site": "Zenn(Python)",
         "published": "2025-07-09T12:08:52Z",
-        "description": "はじめに\nkako-junです。\nビジネスや研究において、データ分析は不可欠です。（よう知らんけど）\nしかし、従来の統計分析ツールでは、一度に一つの統計法則しか適用できず、データに潜む複雑なパターンや異常を見逃してしまうことってありませんか？\n例えば、財務データがベンフォード法則に従っているかを確認するだけでは、パレートの法則や正規分布からの逸脱を見落とし、全体像を把握できないかもしれません。\n今...",
+        "description": "はじめに\nkako-junです。\nビジネスや研究において、データ分析は不可欠です。（よう知らんけど）\nしかし、従来の統計分析ツールでは、一度に一つの統計法則しか適用できず、データに潜む複雑なパターンや異常を見逃してしまうことってありませんか？\n例えば、財務データがベンフォードの法則に従っているかを確認するだけでは、パレートの法則や正規分布からの逸脱を見落とし、全体像を把握できないかもしれません。\n...",
         "category": "開発",
         "rss_category": "",
         "image_url": "https://res.cloudinary.com/zenn/image/upload/s--w2xczE5K--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:%25E7%25A0%2594%25E7%25A9%25B6%25E3%2583%25BB%25E7%259B%25A3%25E6%259F%25BB%25E3%2581%25AE%25E4%25B8%258D%25E6%25AD%25A3%25E6%25A4%259C%25E7%259F%25A5%25E3%2583%25BB%25E3%2583%2587%25E3%2583%25BC%25E3%2582%25BF%25E5%2593%2581%25E8%25B3%25AA%25E7%25AE%25A1%25E7%2590%2586%25E3%2581%25AB%25E3%2580%25825%25E3%2581%25A4%25E3%2581%25AE%25E6%25B3%2595%25E5%2589%2587%25E3%2581%25A7%25E8%25A6%258B%25E5%25AE%2588%25E3%2582%258B%25E7%25B5%25B1%25E8%25A8%2588%25E5%2588%2586%25E6%259E%2590%25E3%2583%2584%25E3%2583%25BC%25E3%2583%25AB%25E3%2580%258Clawkit%25E3%2580%258D%25E3%2582%2592%25E3%2580%2581Claude%2520Code...%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:kako-jun%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL3plbm4tdXNlci11cGxvYWQvYXZhdGFyLzFmNzk3NTk4OWQuanBlZw==%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png"
