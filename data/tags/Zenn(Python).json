@@ -1,8 +1,40 @@
 {
   "site": "Zenn(Python)",
-  "last_updated": "2025-07-24T02:26:03.258024",
-  "total_articles": 245,
+  "last_updated": "2025-07-24T03:48:33.236091",
+  "total_articles": 251,
   "articles_by_date": {
+    "本日": [
+      {
+        "title": "causalimpactを使ってオフライン施策の効果検証をしてみた",
+        "url": "https://zenn.dev/neinc_tech/articles/86e4ee39ac276e",
+        "site": "Zenn(Python)",
+        "published": "2025-07-23T23:25:33Z",
+        "description": "はじめに\nこんにちは、NEのデータ事業推進部（DSO）でデータアナリストをしている本岡です。\n私は普段、EC業界のデータを用いた売上や顧客行動の分析、当社のデータ基盤の整備なども担当しています。\n本日は「ある施策が本当に効果があったのか？」を検証したいときに役立つ手法、Causal Impact（介入効果分析）についてご紹介します。  実際のデータを用いて、どのように施策の効果を検証できるのかを解...",
+        "category": "開発",
+        "rss_category": "",
+        "image_url": "https://res.cloudinary.com/zenn/image/upload/s--oPNt-SbC--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:causalimpact%25E3%2582%2592%25E4%25BD%25BF%25E3%2581%25A3%25E3%2581%25A6%25E3%2582%25AA%25E3%2583%2595%25E3%2583%25A9%25E3%2582%25A4%25E3%2583%25B3%25E6%2596%25BD%25E7%25AD%2596%25E3%2581%25AE%25E5%258A%25B9%25E6%259E%259C%25E6%25A4%259C%25E8%25A8%25BC%25E3%2582%2592%25E3%2581%2597%25E3%2581%25A6%25E3%2581%25BF%25E3%2581%259F%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_34:%25E3%2582%2582%25E3%2581%25A8%25E3%2582%2592%25E3%2581%258B%2Cx_220%2Cy_108/bo_3px_solid_rgb:d6e3ed%2Cg_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL3plbm4tdXNlci11cGxvYWQvYXZhdGFyL2JiMzg1NzFjZWMuanBlZw==%2Cr_20%2Cw_90%2Cx_92%2Cy_102/co_rgb:6e7b85%2Cg_south_west%2Cl_text:notosansjp-medium.otf_30:NE%25E6%25A0%25AA%25E5%25BC%258F%25E4%25BC%259A%25E7%25A4%25BE%25E3%2581%25AE%25E9%2596%258B%25E7%2599%25BA%25E3%2583%2596%25E3%2583%25AD%25E3%2582%25B0%2Cx_220%2Cy_160/bo_4px_solid_white%2Cg_south_west%2Ch_50%2Cl_fetch:aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL3plbm4tdXNlci11cGxvYWQvYXZhdGFyLzZiMzVlYzFjNTEuanBlZw==%2Cr_max%2Cw_50%2Cx_139%2Cy_84/v1627283836/default/og-base-w1200-v2.png"
+      },
+      {
+        "title": "Javaレガシー帳票出力アプリをPythonにリメイクした話",
+        "url": "https://zenn.dev/nickelth/articles/outputreportpy",
+        "site": "Zenn(Python)",
+        "published": "2025-07-23T21:36:13Z",
+        "description": "Flask帳票出力アプリ\n\n 0. はじめに\n昔SIerにて、以下の構築の案件に関わったことがある。\n\nこの帳票出力アプリの構築では、\nユーザがJavaScript UIの画面に入力した値をバックエンド側で処理し,\n生成されたSQLでDBに問い合わせ、結果をもとにPDFを生成する。\nしかし、帳票出力処理とバックエンド処理が密結合なため動作が重く、\n保守性も拡張性も絶望的であった。\nフロントとバック...",
+        "category": "開発",
+        "rss_category": "",
+        "image_url": "https://res.cloudinary.com/zenn/image/upload/s--rb8BEQhk--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:Java%25E3%2583%25AC%25E3%2582%25AC%25E3%2582%25B7%25E3%2583%25BC%25E5%25B8%25B3%25E7%25A5%25A8%25E5%2587%25BA%25E5%258A%259B%25E3%2582%25A2%25E3%2583%2597%25E3%2583%25AA%25E3%2582%2592Python%25E3%2581%25AB%25E3%2583%25AA%25E3%2583%25A1%25E3%2582%25A4%25E3%2582%25AF%25E3%2581%2597%25E3%2581%259F%25E8%25A9%25B1%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:%25E3%2583%258B%25E3%2583%2583%25E3%2582%25B1%25E3%2583%25AB%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL3plbm4tdXNlci11cGxvYWQvYXZhdGFyLzU0Mjc3ODIwNWEuanBlZw==%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png"
+      },
+      {
+        "title": "Python初心者がグラム・シュミットの正規直交化法をコードでゼロから書いてみた",
+        "url": "https://zenn.dev/kyojyu01/articles/6405a257ec26bc",
+        "site": "Zenn(Python)",
+        "published": "2025-07-23T21:15:56Z",
+        "description": "こんにちは、きょーじゅです。\n今日は線形代数に登場するグラム・シュミットの正規直交化法をPythonでコーディングすることにチャレンジしました。\nコードを書き上げた後にChatGPTに聞いたらNumPyという便利技があったようですが、そのようなものを全く知らなかったので手計算のプロセスをそのままコードにしました。読み辛いのはご容赦ください。\n\n グラム・シュミットの正規直交化法とは\nグラムシュミッ...",
+        "category": "開発",
+        "rss_category": "",
+        "image_url": "https://res.cloudinary.com/zenn/image/upload/s--pOWxv5Hl--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:Python%25E5%2588%259D%25E5%25BF%2583%25E8%2580%2585%25E3%2581%258C%25E3%2582%25B0%25E3%2583%25A9%25E3%2583%25A0%25E3%2583%25BB%25E3%2582%25B7%25E3%2583%25A5%25E3%2583%259F%25E3%2583%2583%25E3%2583%2588%25E3%2581%25AE%25E6%25AD%25A3%25E8%25A6%258F%25E7%259B%25B4%25E4%25BA%25A4%25E5%258C%2596%25E6%25B3%2595%25E3%2582%2592%25E3%2582%25B3%25E3%2583%25BC%25E3%2583%2589%25E3%2581%25A7%25E3%2582%25BC%25E3%2583%25AD%25E3%2581%258B%25E3%2582%2589%25E6%259B%25B8%25E3%2581%2584%25E3%2581%25A6%25E3%2581%25BF%25E3%2581%259F%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:%25E3%2581%258D%25E3%2582%2587%25E3%2583%25BC%25E3%2581%2598%25E3%2582%2585%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9saDMuZ29vZ2xldXNlcmNvbnRlbnQuY29tL2EvQUNnOG9jSlZ5WF9abGR3RjFXakZZZkxnQnMyb2RjSUZVb3ZsYU45RjRkU19LdDNfeVFhUmM3X249czk2LWM=%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png"
+      }
+    ],
     "昨日": [
       {
         "title": "EmbulkをDocker×Lambdaで動かす（開発＆本番環境）",
@@ -198,6 +230,36 @@
       }
     ],
     "2025-07": [
+      {
+        "title": "causalimpactを使ってオフライン施策の効果検証をしてみた",
+        "url": "https://zenn.dev/neinc_tech/articles/86e4ee39ac276e",
+        "site": "Zenn(Python)",
+        "published": "2025-07-23T23:25:33Z",
+        "description": "はじめに\nこんにちは、NEのデータ事業推進部（DSO）でデータアナリストをしている本岡です。\n私は普段、EC業界のデータを用いた売上や顧客行動の分析、当社のデータ基盤の整備なども担当しています。\n本日は「ある施策が本当に効果があったのか？」を検証したいときに役立つ手法、Causal Impact（介入効果分析）についてご紹介します。  実際のデータを用いて、どのように施策の効果を検証できるのかを解...",
+        "category": "開発",
+        "rss_category": "",
+        "image_url": "https://res.cloudinary.com/zenn/image/upload/s--oPNt-SbC--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:causalimpact%25E3%2582%2592%25E4%25BD%25BF%25E3%2581%25A3%25E3%2581%25A6%25E3%2582%25AA%25E3%2583%2595%25E3%2583%25A9%25E3%2582%25A4%25E3%2583%25B3%25E6%2596%25BD%25E7%25AD%2596%25E3%2581%25AE%25E5%258A%25B9%25E6%259E%259C%25E6%25A4%259C%25E8%25A8%25BC%25E3%2582%2592%25E3%2581%2597%25E3%2581%25A6%25E3%2581%25BF%25E3%2581%259F%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_34:%25E3%2582%2582%25E3%2581%25A8%25E3%2582%2592%25E3%2581%258B%2Cx_220%2Cy_108/bo_3px_solid_rgb:d6e3ed%2Cg_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL3plbm4tdXNlci11cGxvYWQvYXZhdGFyL2JiMzg1NzFjZWMuanBlZw==%2Cr_20%2Cw_90%2Cx_92%2Cy_102/co_rgb:6e7b85%2Cg_south_west%2Cl_text:notosansjp-medium.otf_30:NE%25E6%25A0%25AA%25E5%25BC%258F%25E4%25BC%259A%25E7%25A4%25BE%25E3%2581%25AE%25E9%2596%258B%25E7%2599%25BA%25E3%2583%2596%25E3%2583%25AD%25E3%2582%25B0%2Cx_220%2Cy_160/bo_4px_solid_white%2Cg_south_west%2Ch_50%2Cl_fetch:aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL3plbm4tdXNlci11cGxvYWQvYXZhdGFyLzZiMzVlYzFjNTEuanBlZw==%2Cr_max%2Cw_50%2Cx_139%2Cy_84/v1627283836/default/og-base-w1200-v2.png"
+      },
+      {
+        "title": "Javaレガシー帳票出力アプリをPythonにリメイクした話",
+        "url": "https://zenn.dev/nickelth/articles/outputreportpy",
+        "site": "Zenn(Python)",
+        "published": "2025-07-23T21:36:13Z",
+        "description": "Flask帳票出力アプリ\n\n 0. はじめに\n昔SIerにて、以下の構築の案件に関わったことがある。\n\nこの帳票出力アプリの構築では、\nユーザがJavaScript UIの画面に入力した値をバックエンド側で処理し,\n生成されたSQLでDBに問い合わせ、結果をもとにPDFを生成する。\nしかし、帳票出力処理とバックエンド処理が密結合なため動作が重く、\n保守性も拡張性も絶望的であった。\nフロントとバック...",
+        "category": "開発",
+        "rss_category": "",
+        "image_url": "https://res.cloudinary.com/zenn/image/upload/s--rb8BEQhk--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:Java%25E3%2583%25AC%25E3%2582%25AC%25E3%2582%25B7%25E3%2583%25BC%25E5%25B8%25B3%25E7%25A5%25A8%25E5%2587%25BA%25E5%258A%259B%25E3%2582%25A2%25E3%2583%2597%25E3%2583%25AA%25E3%2582%2592Python%25E3%2581%25AB%25E3%2583%25AA%25E3%2583%25A1%25E3%2582%25A4%25E3%2582%25AF%25E3%2581%2597%25E3%2581%259F%25E8%25A9%25B1%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:%25E3%2583%258B%25E3%2583%2583%25E3%2582%25B1%25E3%2583%25AB%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL3plbm4tdXNlci11cGxvYWQvYXZhdGFyLzU0Mjc3ODIwNWEuanBlZw==%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png"
+      },
+      {
+        "title": "Python初心者がグラム・シュミットの正規直交化法をコードでゼロから書いてみた",
+        "url": "https://zenn.dev/kyojyu01/articles/6405a257ec26bc",
+        "site": "Zenn(Python)",
+        "published": "2025-07-23T21:15:56Z",
+        "description": "こんにちは、きょーじゅです。\n今日は線形代数に登場するグラム・シュミットの正規直交化法をPythonでコーディングすることにチャレンジしました。\nコードを書き上げた後にChatGPTに聞いたらNumPyという便利技があったようですが、そのようなものを全く知らなかったので手計算のプロセスをそのままコードにしました。読み辛いのはご容赦ください。\n\n グラム・シュミットの正規直交化法とは\nグラムシュミッ...",
+        "category": "開発",
+        "rss_category": "",
+        "image_url": "https://res.cloudinary.com/zenn/image/upload/s--pOWxv5Hl--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:Python%25E5%2588%259D%25E5%25BF%2583%25E8%2580%2585%25E3%2581%258C%25E3%2582%25B0%25E3%2583%25A9%25E3%2583%25A0%25E3%2583%25BB%25E3%2582%25B7%25E3%2583%25A5%25E3%2583%259F%25E3%2583%2583%25E3%2583%2588%25E3%2581%25AE%25E6%25AD%25A3%25E8%25A6%258F%25E7%259B%25B4%25E4%25BA%25A4%25E5%258C%2596%25E6%25B3%2595%25E3%2582%2592%25E3%2582%25B3%25E3%2583%25BC%25E3%2583%2589%25E3%2581%25A7%25E3%2582%25BC%25E3%2583%25AD%25E3%2581%258B%25E3%2582%2589%25E6%259B%25B8%25E3%2581%2584%25E3%2581%25A6%25E3%2581%25BF%25E3%2581%259F%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:%25E3%2581%258D%25E3%2582%2587%25E3%2583%25BC%25E3%2581%2598%25E3%2582%2585%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9saDMuZ29vZ2xldXNlcmNvbnRlbnQuY29tL2EvQUNnOG9jSlZ5WF9abGR3RjFXakZZZkxnQnMyb2RjSUZVb3ZsYU45RjRkU19LdDNfeVFhUmM3X249czk2LWM=%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png"
+      },
       {
         "title": "EmbulkをDocker×Lambdaで動かす（開発＆本番環境）",
         "url": "https://zenn.dev/konan/articles/653381379e846f",
