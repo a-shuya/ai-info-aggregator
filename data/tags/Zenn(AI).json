@@ -1,9 +1,89 @@
 {
   "site": "Zenn(AI)",
-  "last_updated": "2025-07-25T05:49:39.764722",
-  "total_articles": 516,
+  "last_updated": "2025-07-25T06:14:42.370588",
+  "total_articles": 530,
   "articles_by_date": {
     "本日": [
+      {
+        "title": "ChatGPTとGoogle Tasks/Calendarを連携して「スケジュールマスター」を作った話",
+        "url": "https://zenn.dev/ispec_inc/articles/17d8468ca6c7cd",
+        "site": "Zenn(AI)",
+        "published": "2025-07-25T03:00:01Z",
+        "description": "はじめに\n今日あんまり調子良くないな〜、という日はAIにタスク管理任せてお尻を叩いて欲しいなと思ったのが始まりでした。\n今回、ChatGPT（GPTs）とGoogle Tasks / Calendar を連携させることで、\n会話ベースでスケジュール管理ができる「スケジュールマスター」を作りました。\nたとえば、\n\n「今日の予定見せて」→ カレンダー＋タスクを一覧表示\n「テックブログ書くタスクを23:...",
+        "category": "AI・技術",
+        "rss_category": "",
+        "image_url": "https://res.cloudinary.com/zenn/image/upload/s--HpGIM63Q--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:ChatGPT%25E3%2581%25A8Google%2520Tasks%252FCalendar%25E3%2582%2592%25E9%2580%25A3%25E6%2590%25BA%25E3%2581%2597%25E3%2581%25A6%25E3%2580%258C%25E3%2582%25B9%25E3%2582%25B1%25E3%2582%25B8%25E3%2583%25A5%25E3%2583%25BC%25E3%2583%25AB%25E3%2583%259E%25E3%2582%25B9%25E3%2582%25BF%25E3%2583%25BC%25E3%2580%258D%25E3%2582%2592%25E4%25BD%259C%25E3%2581%25A3%25E3%2581%259F%25E8%25A9%25B1%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_34:harutaka814%2Cx_220%2Cy_108/bo_3px_solid_rgb:d6e3ed%2Cg_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL3plbm4tdXNlci11cGxvYWQvYXZhdGFyLzRmN2Y5YzE4ZTUuanBlZw==%2Cr_20%2Cw_90%2Cx_92%2Cy_102/co_rgb:6e7b85%2Cg_south_west%2Cl_text:notosansjp-medium.otf_30:ispec%2520inc.%2Cx_220%2Cy_160/bo_4px_solid_white%2Cg_south_west%2Ch_50%2Cl_fetch:aHR0cHM6Ly9saDMuZ29vZ2xldXNlcmNvbnRlbnQuY29tL2EtL0FGZFp1Y29HV0lkT1ByT2d1MGY0aHNlSk9PT2N2M3JDa2RxUTVEWUdEUlNLPXM5Ni1j%2Cr_max%2Cw_50%2Cx_139%2Cy_84/v1627283836/default/og-base-w1200-v2.png"
+      },
+      {
+        "title": "Claude Code GitHub ActionsにIssue及びレビュー修正を自動でやってもらう",
+        "url": "https://zenn.dev/notahotel/articles/b82bead768bbcb",
+        "site": "Zenn(AI)",
+        "published": "2025-07-25T02:58:05Z",
+        "description": "準備\n\n\nhttps://docs.anthropic.com/ja/docs/claude-code/github-actions に沿ってセットアップを行う\nざっくりとこんな感じの汎用GitHub Actionsを作る\n\n\nclaude.yml\nname: Claude Code\n\npermissions:\n  contents: write\n  pull-requests: write\n  ...",
+        "category": "AI・技術",
+        "rss_category": "",
+        "image_url": "https://res.cloudinary.com/zenn/image/upload/s--cXUu6x1x--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:Claude%2520Code%2520GitHub%2520Actions%25E3%2581%25ABIssue%25E5%258F%258A%25E3%2581%25B3%25E3%2583%25AC%25E3%2583%2593%25E3%2583%25A5%25E3%2583%25BC%25E4%25BF%25AE%25E6%25AD%25A3%25E3%2582%2592%25E8%2587%25AA%25E5%258B%2595%25E3%2581%25A7%25E3%2582%2584%25E3%2581%25A3%25E3%2581%25A6%25E3%2582%2582%25E3%2582%2589%25E3%2581%2586%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_34:haru067%2Cx_220%2Cy_108/bo_3px_solid_rgb:d6e3ed%2Cg_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL3plbm4tdXNlci11cGxvYWQvYXZhdGFyLzAxOGNjZTA4NTYuanBlZw==%2Cr_20%2Cw_90%2Cx_92%2Cy_102/co_rgb:6e7b85%2Cg_south_west%2Cl_text:notosansjp-medium.otf_30:NOT%2520A%2520HOTEL%2Cx_220%2Cy_160/bo_4px_solid_white%2Cg_south_west%2Ch_50%2Cl_fetch:aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL3plbm4tdXNlci11cGxvYWQvYXZhdGFyLzkxZWZiZWIxYTAuanBlZw==%2Cr_max%2Cw_50%2Cx_139%2Cy_84/v1627283836/default/og-base-w1200-v2.png"
+      },
+      {
+        "title": "GENDAにおける生成AI活用のご紹介 & イベント開催のお知らせ",
+        "url": "https://zenn.dev/genda_jp/articles/0ec6330f245da5",
+        "site": "Zenn(AI)",
+        "published": "2025-07-25T02:14:25Z",
+        "description": "昨今、生成AIの活用は、開発のスタイルそのものを根本から変えつつあります。\nGENDAにおいても開発組織の立ち上げ以降、さまざまなツールの導入とトライアルを重ねてきました。現在では、それがエンジニアに深く根付き、各チームの意思決定や開発プロセスにまで影響を及ぼすようになっています。\n本記事では、GENDAにおける生成AI活用の取り組み、社内の雰囲気や事例、そして8/5にイベントを実施し、より詳しい...",
+        "category": "AI・技術",
+        "rss_category": "",
+        "image_url": "https://res.cloudinary.com/zenn/image/upload/s--ytnleuMT--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:GENDA%25E3%2581%25AB%25E3%2581%258A%25E3%2581%2591%25E3%2582%258B%25E7%2594%259F%25E6%2588%2590AI%25E6%25B4%25BB%25E7%2594%25A8%25E3%2581%25AE%25E3%2581%2594%25E7%25B4%25B9%25E4%25BB%258B%2520%2526%2520%25E3%2582%25A4%25E3%2583%2599%25E3%2583%25B3%25E3%2583%2588%25E9%2596%258B%25E5%2582%25AC%25E3%2581%25AE%25E3%2581%258A%25E7%259F%25A5%25E3%2582%2589%25E3%2581%259B%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_34:GENDA%2520%25E5%2585%25AC%25E5%25BC%258F%25E3%2582%25A2%25E3%2582%25AB%25E3%2582%25A6%25E3%2583%25B3%25E3%2583%2588%2Cx_220%2Cy_108/bo_3px_solid_rgb:d6e3ed%2Cg_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL3plbm4tdXNlci11cGxvYWQvYXZhdGFyLzNiM2M1MjhkNjguanBlZw==%2Cr_20%2Cw_90%2Cx_92%2Cy_102/co_rgb:6e7b85%2Cg_south_west%2Cl_text:notosansjp-medium.otf_30:GENDA%2Cx_220%2Cy_160/bo_4px_solid_white%2Cg_south_west%2Ch_50%2Cl_fetch:aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL3plbm4tdXNlci11cGxvYWQvYXZhdGFyLzlkMTNkMzU3OGYuanBlZw==%2Cr_max%2Cw_50%2Cx_139%2Cy_84/v1627283836/default/og-base-w1200-v2.png"
+      },
+      {
+        "title": "AIに無理矢理ノイズを与え、アイデア出しをさせる",
+        "url": "https://zenn.dev/takada_at/articles/4c61ced4a21b89",
+        "site": "Zenn(AI)",
+        "published": "2025-07-25T01:18:07Z",
+        "description": "問題意識\n「AIの書いた文章がつまらないのを何とかしたい」という記事を書きました。そこで指摘したのは、文章のトーンに一貫性がないという問題です。\nこの記事では、AIの文章がつまらなくなる別の原因として、意外性のなさという問題をあげたいと思います。基本的な仕組みの問題として、生成AIは、それまでの文脈に続いて確率の高い単語を予測することで文章を生成します。そのため、「技術ブログを書け」といったふわっ...",
+        "category": "AI・技術",
+        "rss_category": "",
+        "image_url": "https://res.cloudinary.com/zenn/image/upload/s--gzwc8CtD--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:AI%25E3%2581%25AB%25E7%2584%25A1%25E7%2590%2586%25E7%259F%25A2%25E7%2590%2586%25E3%2583%258E%25E3%2582%25A4%25E3%2582%25BA%25E3%2582%2592%25E4%25B8%258E%25E3%2581%2588%25E3%2580%2581%25E3%2582%25A2%25E3%2582%25A4%25E3%2583%2587%25E3%2582%25A2%25E5%2587%25BA%25E3%2581%2597%25E3%2582%2592%25E3%2581%2595%25E3%2581%259B%25E3%2582%258B%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:takada-at%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL3plbm4tdXNlci11cGxvYWQvYXZhdGFyL2ZmYTE3NjQxMTMuanBlZw==%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png"
+      },
+      {
+        "title": "プログラミング雑記 2025/07/25",
+        "url": "https://zenn.dev/baleenstudio/articles/4b4cf319c71fd2",
+        "site": "Zenn(AI)",
+        "published": "2025-07-25T00:53:57Z",
+        "description": "プログラミング\n\n .NET\nThe Rider 2025.2 Release Candidate Is Here! | The .NET Tools Blog\nThe ReSharper and .NET Tools 2025.2 Release Candidates Are Now Available | The .NET Tools Blog\n\n HTML\n最近のHTMLを改めてちゃんと学ん...",
+        "category": "AI・技術",
+        "rss_category": "",
+        "image_url": "https://res.cloudinary.com/zenn/image/upload/s--ufTW7YQe--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:%25E3%2583%2597%25E3%2583%25AD%25E3%2582%25B0%25E3%2583%25A9%25E3%2583%259F%25E3%2583%25B3%25E3%2582%25B0%25E9%259B%2591%25E8%25A8%2598%25202025%252F07%252F25%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_34:%25E7%259F%25B3%25E5%259D%2582%25E5%25BF%25A0%25E5%25BA%2583%2Cx_220%2Cy_108/bo_3px_solid_rgb:d6e3ed%2Cg_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL3plbm4tdXNlci11cGxvYWQvYXZhdGFyLzc2OWZhMGRkNDAuanBlZw==%2Cr_20%2Cw_90%2Cx_92%2Cy_102/g_south_west%2Ch_34%2Cl_default:og-publication-pro-mark-xcosax%2Cw_34%2Cx_217%2Cy_158/co_rgb:6e7b85%2Cg_south_west%2Cl_text:notosansjp-medium.otf_30:%25E6%25A0%25AA%25E5%25BC%258F%25E4%25BC%259A%25E7%25A4%25BEBALEEN%2520STUDIO%2Cx_255%2Cy_160/bo_4px_solid_white%2Cg_south_west%2Ch_50%2Cl_fetch:aHR0cHM6Ly9saDMuZ29vZ2xldXNlcmNvbnRlbnQuY29tL2EtL0FPaDE0R2dKOU1PLWxUQU1OQUVuMy1sZlQ5VzI4TWpoX2FxQXI3bzQ0c0xjVUE9czk2LWM=%2Cr_max%2Cw_50%2Cx_139%2Cy_84/v1627283836/default/og-base-w1200-v2.png"
+      },
+      {
+        "title": "マイクロソフトにみるAIのバーティカルモデル例",
+        "url": "https://zenn.dev/headwaters/articles/059ecc6d1f5509",
+        "site": "Zenn(AI)",
+        "published": "2025-07-25T00:34:58Z",
+        "description": "はじめに\n最近、ニュースでAGIという言葉をよく聞きます。\nAGI(Artificial General Intelligence)への挑戦を宣言するOpenAI, Metaの話題が多いですね。これは、ありとあらゆるタスクを横断的にこなすホリゾンタル(水平)のアプローチかと思います。\n一方、それを対となるアプローチとしてバーティカル(垂直)があります。特定の領域に特化したAIであり、それぞれの分野...",
+        "category": "AI・技術",
+        "rss_category": "",
+        "image_url": "https://res.cloudinary.com/zenn/image/upload/s--Be1NbcQB--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:%25E3%2583%259E%25E3%2582%25A4%25E3%2582%25AF%25E3%2583%25AD%25E3%2582%25BD%25E3%2583%2595%25E3%2583%2588%25E3%2581%25AB%25E3%2581%25BF%25E3%2582%258BAI%25E3%2581%25AE%25E3%2583%2590%25E3%2583%25BC%25E3%2583%2586%25E3%2582%25A3%25E3%2582%25AB%25E3%2583%25AB%25E3%2583%25A2%25E3%2583%2587%25E3%2583%25AB%25E4%25BE%258B%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_34:%25E9%2598%25BF%25E4%25B9%2585%25E6%25B4%25A5%2Cx_220%2Cy_108/bo_3px_solid_rgb:d6e3ed%2Cg_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL3plbm4tdXNlci11cGxvYWQvYXZhdGFyLzZjNGExY2UxMDYuanBlZw==%2Cr_20%2Cw_90%2Cx_92%2Cy_102/g_south_west%2Ch_34%2Cl_default:og-publication-pro-mark-xcosax%2Cw_34%2Cx_217%2Cy_158/co_rgb:6e7b85%2Cg_south_west%2Cl_text:notosansjp-medium.otf_30:%25E3%2583%2598%25E3%2583%2583%25E3%2583%2589%25E3%2582%25A6%25E3%2582%25A9%25E3%2583%25BC%25E3%2582%25BF%25E3%2583%25BC%25E3%2582%25B9%2Cx_255%2Cy_160/bo_4px_solid_white%2Cg_south_west%2Ch_50%2Cl_fetch:aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL3plbm4tdXNlci11cGxvYWQvYXZhdGFyLzk2NjJhOTg2OGQuanBlZw==%2Cr_max%2Cw_50%2Cx_139%2Cy_84/v1627283836/default/og-base-w1200-v2.png"
+      },
+      {
+        "title": "【VibeCodingChallenge#4】ニュース管理アプリ",
+        "url": "https://zenn.dev/acntechjp/articles/736b8dea38f190",
+        "site": "Zenn(AI)",
+        "published": "2025-07-24T22:00:01Z",
+        "description": "はじめに\nこの記事のVibeCodingChallengeでは、個人的にAIのプロンプトのみで開発をするという挑戦をし、AIとプロンプトだけで何が作れるのか？という挑戦をするものです。\n　ぜひ皆様の参考になれば幸いです。\n今回は、前回作った読書管理ツールを使った際に、生成AI周りのニュースも同じように管理したい。お気に入りの記事とか紹介できたりすると良いなと作りながらアイデアが湧いてきました。\nな...",
+        "category": "AI・技術",
+        "rss_category": "",
+        "image_url": "https://res.cloudinary.com/zenn/image/upload/s--Bh4Y8aK3--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:%25E3%2580%2590VibeCodingChallenge%25234%25E3%2580%2591%25E3%2583%258B%25E3%2583%25A5%25E3%2583%25BC%25E3%2582%25B9%25E7%25AE%25A1%25E7%2590%2586%25E3%2582%25A2%25E3%2583%2597%25E3%2583%25AA%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_34:Shota.Takiyanagi%2Cx_220%2Cy_108/bo_3px_solid_rgb:d6e3ed%2Cg_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL3plbm4tdXNlci11cGxvYWQvYXZhdGFyL2U2ZDA4MDY5ODcuanBlZw==%2Cr_20%2Cw_90%2Cx_92%2Cy_102/g_south_west%2Ch_34%2Cl_default:og-publication-pro-mark-xcosax%2Cw_34%2Cx_217%2Cy_158/co_rgb:6e7b85%2Cg_south_west%2Cl_text:notosansjp-medium.otf_30:Accenture%2520Japan%2520%2528%25E6%259C%2589%25E5%25BF%2597%2529%2Cx_255%2Cy_160/bo_4px_solid_white%2Cg_south_west%2Ch_50%2Cl_fetch:aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL3plbm4tdXNlci11cGxvYWQvYXZhdGFyLzAxYjYwMzgyNGYuanBlZw==%2Cr_max%2Cw_50%2Cx_139%2Cy_84/v1627283836/default/og-base-w1200-v2.png"
+      },
+      {
+        "title": "Raycastに学割はあるのか？申請方法を解説",
+        "url": "https://zenn.dev/yahat/articles/4a4be3a3b97468",
+        "site": "Zenn(AI)",
+        "published": "2025-07-24T20:24:57Z",
+        "description": "TL;DR\nRaycast Proには学生割引（50%オフ）がある！\n対象は Raycast Pro プランのみで、Advanced AI アドオンには適用されない。証明用フォームに申請するとクーポンコードが届き、通常 $10/月 → $5/月、年払いなら $8/月 → $4/月 になる。\nhttps://raycast.com/?via=special-price\n\n\n Raycastってそもそ...",
+        "category": "AI・技術",
+        "rss_category": "",
+        "image_url": "https://res.cloudinary.com/zenn/image/upload/s--mrZ-D3Dh--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:Raycast%25E3%2581%25AB%25E5%25AD%25A6%25E5%2589%25B2%25E3%2581%25AF%25E3%2581%2582%25E3%2582%258B%25E3%2581%25AE%25E3%2581%258B%25EF%25BC%259F%25E7%2594%25B3%25E8%25AB%258B%25E6%2596%25B9%25E6%25B3%2595%25E3%2582%2592%25E8%25A7%25A3%25E8%25AA%25AC%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:yahat%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL3plbm4tdXNlci11cGxvYWQvYXZhdGFyL2RlZGU3NTRjYmMuanBlZw==%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png"
+      },
       {
         "title": "ChatGPTにBANされた私が、UnityとVTuberの知見でAI英会話アプリを作った話",
         "url": "https://zenn.dev/codeanddesign/articles/73da774fc8279e",
@@ -179,16 +259,6 @@
         "image_url": "https://res.cloudinary.com/zenn/image/upload/s--3FBij2A8--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:%25E3%2580%258CDevin%252FCursor%252FCline%25E5%2585%25A8%25E7%25A4%25BE%25E5%25B0%258E%25E5%2585%25A5%2520%25E3%2582%25BB%25E3%2582%25AD%25E3%2583%25A5%25E3%2583%25AA%25E3%2583%2586%25E3%2582%25A3%25E3%2583%25AA%25E3%2582%25B9%25E3%2582%25AF%25E3%2581%25AB%25E3%2581%25A9%25E3%2581%2586%25E5%25AF%25BE%25E7%25AD%2596%25E3%2581%2597%25E3%2581%259F%25EF%25BC%259F%25E3%2580%258D%25E3%2581%25AB%25E5%258F%2582%25E5%258A%25A0%25E3%2581%2597%25E3%2581%259F%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:tetsurou%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9saDMuZ29vZ2xldXNlcmNvbnRlbnQuY29tL2EvQUFjSFR0Y3lRMm1Bdk52N1FLclVDcEpnZ3FSbUJmUzJJVHphR2JwSDJ0TG4wMzVIPXM5Ni1j%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png"
       },
       {
-        "title": "NotebookLMで\"速くわかる\"8つのワザ",
-        "url": "https://zenn.dev/name_less/articles/3a5fdcae40c9f4",
-        "site": "Zenn(AI)",
-        "published": "2025-07-23T12:00:01Z",
-        "description": "はじめに\n皆さん、\nインプット疲れ、感じていませんか？🤔\n\n毎日毎日更新されるAI情報...\n公式ドキュメントがいっぱい...\n積読の技術書は10冊くらいある...。\n\n正直、僕は\"読むだけで疲れる\"状態でした🫠\nそこで頼ったのが、\nGoogle の 「NotebookLM」でした\n今では\"毎日使うAIツール\"になり、手放せません🫂\nこの記事では、“理解を速くする”ための具体的な8つの使い方を紹介...",
-        "category": "AI・技術",
-        "rss_category": "",
-        "image_url": "https://res.cloudinary.com/zenn/image/upload/s--kXK03SMS--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:NotebookLM%25E3%2581%25A7%2522%25E9%2580%259F%25E3%2581%258F%25E3%2582%258F%25E3%2581%258B%25E3%2582%258B%25228%25E3%2581%25A4%25E3%2581%25AE%25E3%2583%25AF%25E3%2582%25B6%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:Gaku%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL3plbm4tdXNlci11cGxvYWQvYXZhdGFyL2MwMmMyNzc4YjguanBlZw==%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png"
-      },
-      {
         "title": "ジュニアエンジニアなら“AI駆動開発は設計が9割” ─ 出戻りゼロの実践手法",
         "url": "https://zenn.dev/spacemarket/articles/52dda5aaeecc65",
         "site": "Zenn(AI)",
@@ -320,6 +390,86 @@
       }
     ],
     "2025-07": [
+      {
+        "title": "ChatGPTとGoogle Tasks/Calendarを連携して「スケジュールマスター」を作った話",
+        "url": "https://zenn.dev/ispec_inc/articles/17d8468ca6c7cd",
+        "site": "Zenn(AI)",
+        "published": "2025-07-25T03:00:01Z",
+        "description": "はじめに\n今日あんまり調子良くないな〜、という日はAIにタスク管理任せてお尻を叩いて欲しいなと思ったのが始まりでした。\n今回、ChatGPT（GPTs）とGoogle Tasks / Calendar を連携させることで、\n会話ベースでスケジュール管理ができる「スケジュールマスター」を作りました。\nたとえば、\n\n「今日の予定見せて」→ カレンダー＋タスクを一覧表示\n「テックブログ書くタスクを23:...",
+        "category": "AI・技術",
+        "rss_category": "",
+        "image_url": "https://res.cloudinary.com/zenn/image/upload/s--HpGIM63Q--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:ChatGPT%25E3%2581%25A8Google%2520Tasks%252FCalendar%25E3%2582%2592%25E9%2580%25A3%25E6%2590%25BA%25E3%2581%2597%25E3%2581%25A6%25E3%2580%258C%25E3%2582%25B9%25E3%2582%25B1%25E3%2582%25B8%25E3%2583%25A5%25E3%2583%25BC%25E3%2583%25AB%25E3%2583%259E%25E3%2582%25B9%25E3%2582%25BF%25E3%2583%25BC%25E3%2580%258D%25E3%2582%2592%25E4%25BD%259C%25E3%2581%25A3%25E3%2581%259F%25E8%25A9%25B1%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_34:harutaka814%2Cx_220%2Cy_108/bo_3px_solid_rgb:d6e3ed%2Cg_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL3plbm4tdXNlci11cGxvYWQvYXZhdGFyLzRmN2Y5YzE4ZTUuanBlZw==%2Cr_20%2Cw_90%2Cx_92%2Cy_102/co_rgb:6e7b85%2Cg_south_west%2Cl_text:notosansjp-medium.otf_30:ispec%2520inc.%2Cx_220%2Cy_160/bo_4px_solid_white%2Cg_south_west%2Ch_50%2Cl_fetch:aHR0cHM6Ly9saDMuZ29vZ2xldXNlcmNvbnRlbnQuY29tL2EtL0FGZFp1Y29HV0lkT1ByT2d1MGY0aHNlSk9PT2N2M3JDa2RxUTVEWUdEUlNLPXM5Ni1j%2Cr_max%2Cw_50%2Cx_139%2Cy_84/v1627283836/default/og-base-w1200-v2.png"
+      },
+      {
+        "title": "Claude Code GitHub ActionsにIssue及びレビュー修正を自動でやってもらう",
+        "url": "https://zenn.dev/notahotel/articles/b82bead768bbcb",
+        "site": "Zenn(AI)",
+        "published": "2025-07-25T02:58:05Z",
+        "description": "準備\n\n\nhttps://docs.anthropic.com/ja/docs/claude-code/github-actions に沿ってセットアップを行う\nざっくりとこんな感じの汎用GitHub Actionsを作る\n\n\nclaude.yml\nname: Claude Code\n\npermissions:\n  contents: write\n  pull-requests: write\n  ...",
+        "category": "AI・技術",
+        "rss_category": "",
+        "image_url": "https://res.cloudinary.com/zenn/image/upload/s--cXUu6x1x--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:Claude%2520Code%2520GitHub%2520Actions%25E3%2581%25ABIssue%25E5%258F%258A%25E3%2581%25B3%25E3%2583%25AC%25E3%2583%2593%25E3%2583%25A5%25E3%2583%25BC%25E4%25BF%25AE%25E6%25AD%25A3%25E3%2582%2592%25E8%2587%25AA%25E5%258B%2595%25E3%2581%25A7%25E3%2582%2584%25E3%2581%25A3%25E3%2581%25A6%25E3%2582%2582%25E3%2582%2589%25E3%2581%2586%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_34:haru067%2Cx_220%2Cy_108/bo_3px_solid_rgb:d6e3ed%2Cg_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL3plbm4tdXNlci11cGxvYWQvYXZhdGFyLzAxOGNjZTA4NTYuanBlZw==%2Cr_20%2Cw_90%2Cx_92%2Cy_102/co_rgb:6e7b85%2Cg_south_west%2Cl_text:notosansjp-medium.otf_30:NOT%2520A%2520HOTEL%2Cx_220%2Cy_160/bo_4px_solid_white%2Cg_south_west%2Ch_50%2Cl_fetch:aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL3plbm4tdXNlci11cGxvYWQvYXZhdGFyLzkxZWZiZWIxYTAuanBlZw==%2Cr_max%2Cw_50%2Cx_139%2Cy_84/v1627283836/default/og-base-w1200-v2.png"
+      },
+      {
+        "title": "GENDAにおける生成AI活用のご紹介 & イベント開催のお知らせ",
+        "url": "https://zenn.dev/genda_jp/articles/0ec6330f245da5",
+        "site": "Zenn(AI)",
+        "published": "2025-07-25T02:14:25Z",
+        "description": "昨今、生成AIの活用は、開発のスタイルそのものを根本から変えつつあります。\nGENDAにおいても開発組織の立ち上げ以降、さまざまなツールの導入とトライアルを重ねてきました。現在では、それがエンジニアに深く根付き、各チームの意思決定や開発プロセスにまで影響を及ぼすようになっています。\n本記事では、GENDAにおける生成AI活用の取り組み、社内の雰囲気や事例、そして8/5にイベントを実施し、より詳しい...",
+        "category": "AI・技術",
+        "rss_category": "",
+        "image_url": "https://res.cloudinary.com/zenn/image/upload/s--ytnleuMT--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:GENDA%25E3%2581%25AB%25E3%2581%258A%25E3%2581%2591%25E3%2582%258B%25E7%2594%259F%25E6%2588%2590AI%25E6%25B4%25BB%25E7%2594%25A8%25E3%2581%25AE%25E3%2581%2594%25E7%25B4%25B9%25E4%25BB%258B%2520%2526%2520%25E3%2582%25A4%25E3%2583%2599%25E3%2583%25B3%25E3%2583%2588%25E9%2596%258B%25E5%2582%25AC%25E3%2581%25AE%25E3%2581%258A%25E7%259F%25A5%25E3%2582%2589%25E3%2581%259B%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_34:GENDA%2520%25E5%2585%25AC%25E5%25BC%258F%25E3%2582%25A2%25E3%2582%25AB%25E3%2582%25A6%25E3%2583%25B3%25E3%2583%2588%2Cx_220%2Cy_108/bo_3px_solid_rgb:d6e3ed%2Cg_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL3plbm4tdXNlci11cGxvYWQvYXZhdGFyLzNiM2M1MjhkNjguanBlZw==%2Cr_20%2Cw_90%2Cx_92%2Cy_102/co_rgb:6e7b85%2Cg_south_west%2Cl_text:notosansjp-medium.otf_30:GENDA%2Cx_220%2Cy_160/bo_4px_solid_white%2Cg_south_west%2Ch_50%2Cl_fetch:aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL3plbm4tdXNlci11cGxvYWQvYXZhdGFyLzlkMTNkMzU3OGYuanBlZw==%2Cr_max%2Cw_50%2Cx_139%2Cy_84/v1627283836/default/og-base-w1200-v2.png"
+      },
+      {
+        "title": "AIに無理矢理ノイズを与え、アイデア出しをさせる",
+        "url": "https://zenn.dev/takada_at/articles/4c61ced4a21b89",
+        "site": "Zenn(AI)",
+        "published": "2025-07-25T01:18:07Z",
+        "description": "問題意識\n「AIの書いた文章がつまらないのを何とかしたい」という記事を書きました。そこで指摘したのは、文章のトーンに一貫性がないという問題です。\nこの記事では、AIの文章がつまらなくなる別の原因として、意外性のなさという問題をあげたいと思います。基本的な仕組みの問題として、生成AIは、それまでの文脈に続いて確率の高い単語を予測することで文章を生成します。そのため、「技術ブログを書け」といったふわっ...",
+        "category": "AI・技術",
+        "rss_category": "",
+        "image_url": "https://res.cloudinary.com/zenn/image/upload/s--gzwc8CtD--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:AI%25E3%2581%25AB%25E7%2584%25A1%25E7%2590%2586%25E7%259F%25A2%25E7%2590%2586%25E3%2583%258E%25E3%2582%25A4%25E3%2582%25BA%25E3%2582%2592%25E4%25B8%258E%25E3%2581%2588%25E3%2580%2581%25E3%2582%25A2%25E3%2582%25A4%25E3%2583%2587%25E3%2582%25A2%25E5%2587%25BA%25E3%2581%2597%25E3%2582%2592%25E3%2581%2595%25E3%2581%259B%25E3%2582%258B%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:takada-at%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL3plbm4tdXNlci11cGxvYWQvYXZhdGFyL2ZmYTE3NjQxMTMuanBlZw==%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png"
+      },
+      {
+        "title": "プログラミング雑記 2025/07/25",
+        "url": "https://zenn.dev/baleenstudio/articles/4b4cf319c71fd2",
+        "site": "Zenn(AI)",
+        "published": "2025-07-25T00:53:57Z",
+        "description": "プログラミング\n\n .NET\nThe Rider 2025.2 Release Candidate Is Here! | The .NET Tools Blog\nThe ReSharper and .NET Tools 2025.2 Release Candidates Are Now Available | The .NET Tools Blog\n\n HTML\n最近のHTMLを改めてちゃんと学ん...",
+        "category": "AI・技術",
+        "rss_category": "",
+        "image_url": "https://res.cloudinary.com/zenn/image/upload/s--ufTW7YQe--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:%25E3%2583%2597%25E3%2583%25AD%25E3%2582%25B0%25E3%2583%25A9%25E3%2583%259F%25E3%2583%25B3%25E3%2582%25B0%25E9%259B%2591%25E8%25A8%2598%25202025%252F07%252F25%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_34:%25E7%259F%25B3%25E5%259D%2582%25E5%25BF%25A0%25E5%25BA%2583%2Cx_220%2Cy_108/bo_3px_solid_rgb:d6e3ed%2Cg_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL3plbm4tdXNlci11cGxvYWQvYXZhdGFyLzc2OWZhMGRkNDAuanBlZw==%2Cr_20%2Cw_90%2Cx_92%2Cy_102/g_south_west%2Ch_34%2Cl_default:og-publication-pro-mark-xcosax%2Cw_34%2Cx_217%2Cy_158/co_rgb:6e7b85%2Cg_south_west%2Cl_text:notosansjp-medium.otf_30:%25E6%25A0%25AA%25E5%25BC%258F%25E4%25BC%259A%25E7%25A4%25BEBALEEN%2520STUDIO%2Cx_255%2Cy_160/bo_4px_solid_white%2Cg_south_west%2Ch_50%2Cl_fetch:aHR0cHM6Ly9saDMuZ29vZ2xldXNlcmNvbnRlbnQuY29tL2EtL0FPaDE0R2dKOU1PLWxUQU1OQUVuMy1sZlQ5VzI4TWpoX2FxQXI3bzQ0c0xjVUE9czk2LWM=%2Cr_max%2Cw_50%2Cx_139%2Cy_84/v1627283836/default/og-base-w1200-v2.png"
+      },
+      {
+        "title": "マイクロソフトにみるAIのバーティカルモデル例",
+        "url": "https://zenn.dev/headwaters/articles/059ecc6d1f5509",
+        "site": "Zenn(AI)",
+        "published": "2025-07-25T00:34:58Z",
+        "description": "はじめに\n最近、ニュースでAGIという言葉をよく聞きます。\nAGI(Artificial General Intelligence)への挑戦を宣言するOpenAI, Metaの話題が多いですね。これは、ありとあらゆるタスクを横断的にこなすホリゾンタル(水平)のアプローチかと思います。\n一方、それを対となるアプローチとしてバーティカル(垂直)があります。特定の領域に特化したAIであり、それぞれの分野...",
+        "category": "AI・技術",
+        "rss_category": "",
+        "image_url": "https://res.cloudinary.com/zenn/image/upload/s--Be1NbcQB--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:%25E3%2583%259E%25E3%2582%25A4%25E3%2582%25AF%25E3%2583%25AD%25E3%2582%25BD%25E3%2583%2595%25E3%2583%2588%25E3%2581%25AB%25E3%2581%25BF%25E3%2582%258BAI%25E3%2581%25AE%25E3%2583%2590%25E3%2583%25BC%25E3%2583%2586%25E3%2582%25A3%25E3%2582%25AB%25E3%2583%25AB%25E3%2583%25A2%25E3%2583%2587%25E3%2583%25AB%25E4%25BE%258B%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_34:%25E9%2598%25BF%25E4%25B9%2585%25E6%25B4%25A5%2Cx_220%2Cy_108/bo_3px_solid_rgb:d6e3ed%2Cg_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL3plbm4tdXNlci11cGxvYWQvYXZhdGFyLzZjNGExY2UxMDYuanBlZw==%2Cr_20%2Cw_90%2Cx_92%2Cy_102/g_south_west%2Ch_34%2Cl_default:og-publication-pro-mark-xcosax%2Cw_34%2Cx_217%2Cy_158/co_rgb:6e7b85%2Cg_south_west%2Cl_text:notosansjp-medium.otf_30:%25E3%2583%2598%25E3%2583%2583%25E3%2583%2589%25E3%2582%25A6%25E3%2582%25A9%25E3%2583%25BC%25E3%2582%25BF%25E3%2583%25BC%25E3%2582%25B9%2Cx_255%2Cy_160/bo_4px_solid_white%2Cg_south_west%2Ch_50%2Cl_fetch:aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL3plbm4tdXNlci11cGxvYWQvYXZhdGFyLzk2NjJhOTg2OGQuanBlZw==%2Cr_max%2Cw_50%2Cx_139%2Cy_84/v1627283836/default/og-base-w1200-v2.png"
+      },
+      {
+        "title": "【VibeCodingChallenge#4】ニュース管理アプリ",
+        "url": "https://zenn.dev/acntechjp/articles/736b8dea38f190",
+        "site": "Zenn(AI)",
+        "published": "2025-07-24T22:00:01Z",
+        "description": "はじめに\nこの記事のVibeCodingChallengeでは、個人的にAIのプロンプトのみで開発をするという挑戦をし、AIとプロンプトだけで何が作れるのか？という挑戦をするものです。\n　ぜひ皆様の参考になれば幸いです。\n今回は、前回作った読書管理ツールを使った際に、生成AI周りのニュースも同じように管理したい。お気に入りの記事とか紹介できたりすると良いなと作りながらアイデアが湧いてきました。\nな...",
+        "category": "AI・技術",
+        "rss_category": "",
+        "image_url": "https://res.cloudinary.com/zenn/image/upload/s--Bh4Y8aK3--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:%25E3%2580%2590VibeCodingChallenge%25234%25E3%2580%2591%25E3%2583%258B%25E3%2583%25A5%25E3%2583%25BC%25E3%2582%25B9%25E7%25AE%25A1%25E7%2590%2586%25E3%2582%25A2%25E3%2583%2597%25E3%2583%25AA%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_34:Shota.Takiyanagi%2Cx_220%2Cy_108/bo_3px_solid_rgb:d6e3ed%2Cg_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL3plbm4tdXNlci11cGxvYWQvYXZhdGFyL2U2ZDA4MDY5ODcuanBlZw==%2Cr_20%2Cw_90%2Cx_92%2Cy_102/g_south_west%2Ch_34%2Cl_default:og-publication-pro-mark-xcosax%2Cw_34%2Cx_217%2Cy_158/co_rgb:6e7b85%2Cg_south_west%2Cl_text:notosansjp-medium.otf_30:Accenture%2520Japan%2520%2528%25E6%259C%2589%25E5%25BF%2597%2529%2Cx_255%2Cy_160/bo_4px_solid_white%2Cg_south_west%2Ch_50%2Cl_fetch:aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL3plbm4tdXNlci11cGxvYWQvYXZhdGFyLzAxYjYwMzgyNGYuanBlZw==%2Cr_max%2Cw_50%2Cx_139%2Cy_84/v1627283836/default/og-base-w1200-v2.png"
+      },
+      {
+        "title": "Raycastに学割はあるのか？申請方法を解説",
+        "url": "https://zenn.dev/yahat/articles/4a4be3a3b97468",
+        "site": "Zenn(AI)",
+        "published": "2025-07-24T20:24:57Z",
+        "description": "TL;DR\nRaycast Proには学生割引（50%オフ）がある！\n対象は Raycast Pro プランのみで、Advanced AI アドオンには適用されない。証明用フォームに申請するとクーポンコードが届き、通常 $10/月 → $5/月、年払いなら $8/月 → $4/月 になる。\nhttps://raycast.com/?via=special-price\n\n\n Raycastってそもそ...",
+        "category": "AI・技術",
+        "rss_category": "",
+        "image_url": "https://res.cloudinary.com/zenn/image/upload/s--mrZ-D3Dh--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:Raycast%25E3%2581%25AB%25E5%25AD%25A6%25E5%2589%25B2%25E3%2581%25AF%25E3%2581%2582%25E3%2582%258B%25E3%2581%25AE%25E3%2581%258B%25EF%25BC%259F%25E7%2594%25B3%25E8%25AB%258B%25E6%2596%25B9%25E6%25B3%2595%25E3%2582%2592%25E8%25A7%25A3%25E8%25AA%25AC%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:yahat%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL3plbm4tdXNlci11cGxvYWQvYXZhdGFyL2RlZGU3NTRjYmMuanBlZw==%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png"
+      },
       {
         "title": "ChatGPTにBANされた私が、UnityとVTuberの知見でAI英会話アプリを作った話",
         "url": "https://zenn.dev/codeanddesign/articles/73da774fc8279e",
@@ -489,16 +639,6 @@
         "category": "AI・技術",
         "rss_category": "",
         "image_url": "https://res.cloudinary.com/zenn/image/upload/s--3FBij2A8--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:%25E3%2580%258CDevin%252FCursor%252FCline%25E5%2585%25A8%25E7%25A4%25BE%25E5%25B0%258E%25E5%2585%25A5%2520%25E3%2582%25BB%25E3%2582%25AD%25E3%2583%25A5%25E3%2583%25AA%25E3%2583%2586%25E3%2582%25A3%25E3%2583%25AA%25E3%2582%25B9%25E3%2582%25AF%25E3%2581%25AB%25E3%2581%25A9%25E3%2581%2586%25E5%25AF%25BE%25E7%25AD%2596%25E3%2581%2597%25E3%2581%259F%25EF%25BC%259F%25E3%2580%258D%25E3%2581%25AB%25E5%258F%2582%25E5%258A%25A0%25E3%2581%2597%25E3%2581%259F%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:tetsurou%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9saDMuZ29vZ2xldXNlcmNvbnRlbnQuY29tL2EvQUFjSFR0Y3lRMm1Bdk52N1FLclVDcEpnZ3FSbUJmUzJJVHphR2JwSDJ0TG4wMzVIPXM5Ni1j%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png"
-      },
-      {
-        "title": "NotebookLMで\"速くわかる\"8つのワザ",
-        "url": "https://zenn.dev/name_less/articles/3a5fdcae40c9f4",
-        "site": "Zenn(AI)",
-        "published": "2025-07-23T12:00:01Z",
-        "description": "はじめに\n皆さん、\nインプット疲れ、感じていませんか？🤔\n\n毎日毎日更新されるAI情報...\n公式ドキュメントがいっぱい...\n積読の技術書は10冊くらいある...。\n\n正直、僕は\"読むだけで疲れる\"状態でした🫠\nそこで頼ったのが、\nGoogle の 「NotebookLM」でした\n今では\"毎日使うAIツール\"になり、手放せません🫂\nこの記事では、“理解を速くする”ための具体的な8つの使い方を紹介...",
-        "category": "AI・技術",
-        "rss_category": "",
-        "image_url": "https://res.cloudinary.com/zenn/image/upload/s--kXK03SMS--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:NotebookLM%25E3%2581%25A7%2522%25E9%2580%259F%25E3%2581%258F%25E3%2582%258F%25E3%2581%258B%25E3%2582%258B%25228%25E3%2581%25A4%25E3%2581%25AE%25E3%2583%25AF%25E3%2582%25B6%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:Gaku%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL3plbm4tdXNlci11cGxvYWQvYXZhdGFyL2MwMmMyNzc4YjguanBlZw==%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png"
       },
       {
         "title": "ジュニアエンジニアなら“AI駆動開発は設計が9割” ─ 出戻りゼロの実践手法",
