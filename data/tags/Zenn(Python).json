@@ -1,8 +1,50 @@
 {
   "site": "Zenn(Python)",
-  "last_updated": "2025-07-29T07:57:43.445861",
-  "total_articles": 296,
+  "last_updated": "2025-07-29T08:39:19.644997",
+  "total_articles": 304,
   "articles_by_date": {
+    "本日": [
+      {
+        "title": "［AtCoder］ABC-415｜A - Unsupported Type",
+        "url": "https://zenn.dev/hyperdb/articles/d734ad004ba9b7",
+        "site": "Zenn(Python)",
+        "published": "2025-07-29T07:45:49Z",
+        "description": "設問ページ\n\n🔗ABC-415 A - Unsupported Type\n\n\n\n 提出結果\ndef getInt():\n    return int(input())\n\n\ndef getIntList():\n    return list(map(int, input().split()))\n\n\ndef main():\n    N = getInt()\n    A = getIntList()\n ...",
+        "category": "開発",
+        "rss_category": "",
+        "image_url": "https://res.cloudinary.com/zenn/image/upload/s--FlaKEar7--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:%25EF%25BC%25BBAtCoder%25EF%25BC%25BDABC-415%25EF%25BD%259CA%2520-%2520Unsupported%2520Type%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:%25E3%2581%25AF%25E3%2581%2584%25E3%2581%25B1%25E3%2581%2581%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL3plbm4tdXNlci11cGxvYWQvYXZhdGFyLzBhODJkODgwMzQuanBlZw==%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png"
+      },
+      {
+        "title": "［AtCoder］ABC-415｜B - Pick Two",
+        "url": "https://zenn.dev/hyperdb/articles/3404ef71a54855",
+        "site": "Zenn(Python)",
+        "published": "2025-07-29T07:45:48Z",
+        "description": "設問ページ\n\n🔗ABC-415 B - Pick Two\n\n\n\n 提出結果\ndef getString():\n    return input()\n\n\ndef main():\n    S = getString()\n\n    T = [i + 1 for i in range(len(S)) if S[i] == \"#\"]\n\n    for x in range(0, len(T), 2):\n  ...",
+        "category": "開発",
+        "rss_category": "",
+        "image_url": "https://res.cloudinary.com/zenn/image/upload/s--tP-qR-qs--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:%25EF%25BC%25BBAtCoder%25EF%25BC%25BDABC-415%25EF%25BD%259CB%2520-%2520Pick%2520Two%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:%25E3%2581%25AF%25E3%2581%2584%25E3%2581%25B1%25E3%2581%2581%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL3plbm4tdXNlci11cGxvYWQvYXZhdGFyLzBhODJkODgwMzQuanBlZw==%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png"
+      },
+      {
+        "title": "夏のプロジェクト制作(初日)：Flaskでwebサーバを起動し、入力フォームを作った話",
+        "url": "https://zenn.dev/tomeito713/articles/a1f771b7679688",
+        "site": "Zenn(Python)",
+        "published": "2025-07-29T05:04:17Z",
+        "description": "はじめに\n夏のプロジェクトを開始してばかりですが何か書こうと思います。\n今週の目標は**「Python(Flask)でWebサーバーを起動し、ユーザーが文字を入力できるフォーム画面を作ること」**。\nこの初日での学びと、ぶつかった壁について記録していきます。\n\n 1. 最初の関門「Hello, World!」\nまずは、Flaskを使ってWebサーバーを起動し、ブラウザに「Hello, World!...",
+        "category": "開発",
+        "rss_category": "",
+        "image_url": "https://res.cloudinary.com/zenn/image/upload/s--3n96ycXt--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:%25E5%25A4%258F%25E3%2581%25AE%25E3%2583%2597%25E3%2583%25AD%25E3%2582%25B8%25E3%2582%25A7%25E3%2582%25AF%25E3%2583%2588%25E5%2588%25B6%25E4%25BD%259C%2528%25E5%2588%259D%25E6%2597%25A5%2529%25EF%25BC%259AFlask%25E3%2581%25A7web%25E3%2582%25B5%25E3%2583%25BC%25E3%2583%2590%25E3%2582%2592%25E8%25B5%25B7%25E5%258B%2595%25E3%2581%2597%25E3%2580%2581%25E5%2585%25A5%25E5%258A%259B%25E3%2583%2595%25E3%2582%25A9%25E3%2583%25BC%25E3%2583%25A0%25E3%2582%2592%25E4%25BD%259C%25E3%2581%25A3%25E3%2581%259F%25E8%25A9%25B1%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:tomeITo%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL3plbm4tdXNlci11cGxvYWQvYXZhdGFyLzhiOGZiNzdmYTYuanBlZw==%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png"
+      },
+      {
+        "title": "はじめまして！　夏のプロジェクト制作→prompt-injection-visualizer",
+        "url": "https://zenn.dev/tomeito713/articles/40e69244247284",
+        "site": "Zenn(Python)",
+        "published": "2025-07-29T05:04:17Z",
+        "description": "自己紹介\nはじめまして！京都産業大学 情報理工学部に通う大学1年生です。\n将来、トップIT企業で、AIセキュリティの専門家として活躍することを目標に学習しています。\n\n この夏の目標\nこの夏休みは、自分のキャリアにとって最も重要な期間だと思っています。\n目標は、PythonとFlask(その他)を使い、**「プロンプトインジェクション攻撃を可視化するWebアプリケーション」**を自らの手で開発し、...",
+        "category": "開発",
+        "rss_category": "",
+        "image_url": "https://res.cloudinary.com/zenn/image/upload/s--bYCzdFWu--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:%25E3%2581%25AF%25E3%2581%2598%25E3%2582%2581%25E3%2581%25BE%25E3%2581%2597%25E3%2581%25A6%25EF%25BC%2581%25E3%2580%2580%25E5%25A4%258F%25E3%2581%25AE%25E3%2583%2597%25E3%2583%25AD%25E3%2582%25B8%25E3%2582%25A7%25E3%2582%25AF%25E3%2583%2588%25E5%2588%25B6%25E4%25BD%259C%25E2%2586%2592prompt-injection-visualizer%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:tomeITo%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL3plbm4tdXNlci11cGxvYWQvYXZhdGFyLzhiOGZiNzdmYTYuanBlZw==%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png"
+      }
+    ],
     "昨日": [
       {
         "title": "gcp環境のdbtでpythonコードによるtable定義",
@@ -69,7 +111,7 @@
         "url": "https://zenn.dev/birf/articles/fa8e575e46c24e",
         "site": "Zenn(Python)",
         "published": "2025-07-27T21:57:36Z",
-        "description": "2025年5月ごろからCursor が streamable-httpトランスポートが受け付けられるようになっています。FastMCPで接続できるか確認しました。\nPython 3.11.10\nFastMCP 2.10.5\nCursor 1.2.2\n\n ソースコード\nfrom fastmcp import FastMCP\n\n# FastMCPサーバーを作成\nmcp = FastMCP(name=\"...",
+        "description": "2025年5月ごろからCursor が streamable-httpトランスポートを受け付けられるようになっています。FastMCPで接続できるか確認しました。\nPython 3.11.10\nFastMCP 2.10.5\nCursor 1.2.2\n\n ソースコード\nfrom fastmcp import FastMCP\n\n# FastMCPサーバーを作成\nmcp = FastMCP(name=\"...",
         "category": "開発",
         "rss_category": "",
         "image_url": "https://res.cloudinary.com/zenn/image/upload/s--plrWniI5--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:%25E3%2580%2590Cursor%25E3%2580%2591FastMCP%25E3%2582%25B5%25E3%2583%25BC%25E3%2583%2590%25E3%2581%25ABstreamable-http%25E3%2583%2588%25E3%2583%25A9%25E3%2583%25B3%25E3%2582%25B9%25E3%2583%259D%25E3%2583%25BC%25E3%2583%2588%25E3%2581%25A7%25E6%258E%25A5%25E7%25B6%259A%25E3%2581%2599%25E3%2582%258B%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:Birf%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL3plbm4tdXNlci11cGxvYWQvYXZhdGFyLzgwMzUwMjNjNmMuanBlZw==%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png"
@@ -199,6 +241,46 @@
     ],
     "2025-07": [
       {
+        "title": "［AtCoder］ABC-415｜A - Unsupported Type",
+        "url": "https://zenn.dev/hyperdb/articles/d734ad004ba9b7",
+        "site": "Zenn(Python)",
+        "published": "2025-07-29T07:45:49Z",
+        "description": "設問ページ\n\n🔗ABC-415 A - Unsupported Type\n\n\n\n 提出結果\ndef getInt():\n    return int(input())\n\n\ndef getIntList():\n    return list(map(int, input().split()))\n\n\ndef main():\n    N = getInt()\n    A = getIntList()\n ...",
+        "category": "開発",
+        "rss_category": "",
+        "image_url": "https://res.cloudinary.com/zenn/image/upload/s--FlaKEar7--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:%25EF%25BC%25BBAtCoder%25EF%25BC%25BDABC-415%25EF%25BD%259CA%2520-%2520Unsupported%2520Type%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:%25E3%2581%25AF%25E3%2581%2584%25E3%2581%25B1%25E3%2581%2581%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL3plbm4tdXNlci11cGxvYWQvYXZhdGFyLzBhODJkODgwMzQuanBlZw==%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png"
+      },
+      {
+        "title": "［AtCoder］ABC-415｜B - Pick Two",
+        "url": "https://zenn.dev/hyperdb/articles/3404ef71a54855",
+        "site": "Zenn(Python)",
+        "published": "2025-07-29T07:45:48Z",
+        "description": "設問ページ\n\n🔗ABC-415 B - Pick Two\n\n\n\n 提出結果\ndef getString():\n    return input()\n\n\ndef main():\n    S = getString()\n\n    T = [i + 1 for i in range(len(S)) if S[i] == \"#\"]\n\n    for x in range(0, len(T), 2):\n  ...",
+        "category": "開発",
+        "rss_category": "",
+        "image_url": "https://res.cloudinary.com/zenn/image/upload/s--tP-qR-qs--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:%25EF%25BC%25BBAtCoder%25EF%25BC%25BDABC-415%25EF%25BD%259CB%2520-%2520Pick%2520Two%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:%25E3%2581%25AF%25E3%2581%2584%25E3%2581%25B1%25E3%2581%2581%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL3plbm4tdXNlci11cGxvYWQvYXZhdGFyLzBhODJkODgwMzQuanBlZw==%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png"
+      },
+      {
+        "title": "夏のプロジェクト制作(初日)：Flaskでwebサーバを起動し、入力フォームを作った話",
+        "url": "https://zenn.dev/tomeito713/articles/a1f771b7679688",
+        "site": "Zenn(Python)",
+        "published": "2025-07-29T05:04:17Z",
+        "description": "はじめに\n夏のプロジェクトを開始してばかりですが何か書こうと思います。\n今週の目標は**「Python(Flask)でWebサーバーを起動し、ユーザーが文字を入力できるフォーム画面を作ること」**。\nこの初日での学びと、ぶつかった壁について記録していきます。\n\n 1. 最初の関門「Hello, World!」\nまずは、Flaskを使ってWebサーバーを起動し、ブラウザに「Hello, World!...",
+        "category": "開発",
+        "rss_category": "",
+        "image_url": "https://res.cloudinary.com/zenn/image/upload/s--3n96ycXt--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:%25E5%25A4%258F%25E3%2581%25AE%25E3%2583%2597%25E3%2583%25AD%25E3%2582%25B8%25E3%2582%25A7%25E3%2582%25AF%25E3%2583%2588%25E5%2588%25B6%25E4%25BD%259C%2528%25E5%2588%259D%25E6%2597%25A5%2529%25EF%25BC%259AFlask%25E3%2581%25A7web%25E3%2582%25B5%25E3%2583%25BC%25E3%2583%2590%25E3%2582%2592%25E8%25B5%25B7%25E5%258B%2595%25E3%2581%2597%25E3%2580%2581%25E5%2585%25A5%25E5%258A%259B%25E3%2583%2595%25E3%2582%25A9%25E3%2583%25BC%25E3%2583%25A0%25E3%2582%2592%25E4%25BD%259C%25E3%2581%25A3%25E3%2581%259F%25E8%25A9%25B1%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:tomeITo%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL3plbm4tdXNlci11cGxvYWQvYXZhdGFyLzhiOGZiNzdmYTYuanBlZw==%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png"
+      },
+      {
+        "title": "はじめまして！　夏のプロジェクト制作→prompt-injection-visualizer",
+        "url": "https://zenn.dev/tomeito713/articles/40e69244247284",
+        "site": "Zenn(Python)",
+        "published": "2025-07-29T05:04:17Z",
+        "description": "自己紹介\nはじめまして！京都産業大学 情報理工学部に通う大学1年生です。\n将来、トップIT企業で、AIセキュリティの専門家として活躍することを目標に学習しています。\n\n この夏の目標\nこの夏休みは、自分のキャリアにとって最も重要な期間だと思っています。\n目標は、PythonとFlask(その他)を使い、**「プロンプトインジェクション攻撃を可視化するWebアプリケーション」**を自らの手で開発し、...",
+        "category": "開発",
+        "rss_category": "",
+        "image_url": "https://res.cloudinary.com/zenn/image/upload/s--bYCzdFWu--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:%25E3%2581%25AF%25E3%2581%2598%25E3%2582%2581%25E3%2581%25BE%25E3%2581%2597%25E3%2581%25A6%25EF%25BC%2581%25E3%2580%2580%25E5%25A4%258F%25E3%2581%25AE%25E3%2583%2597%25E3%2583%25AD%25E3%2582%25B8%25E3%2582%25A7%25E3%2582%25AF%25E3%2583%2588%25E5%2588%25B6%25E4%25BD%259C%25E2%2586%2592prompt-injection-visualizer%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:tomeITo%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL3plbm4tdXNlci11cGxvYWQvYXZhdGFyLzhiOGZiNzdmYTYuanBlZw==%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png"
+      },
+      {
         "title": "gcp環境のdbtでpythonコードによるtable定義",
         "url": "https://zenn.dev/fwtosh/articles/03031b65bea5ef",
         "site": "Zenn(Python)",
@@ -263,7 +345,7 @@
         "url": "https://zenn.dev/birf/articles/fa8e575e46c24e",
         "site": "Zenn(Python)",
         "published": "2025-07-27T21:57:36Z",
-        "description": "2025年5月ごろからCursor が streamable-httpトランスポートが受け付けられるようになっています。FastMCPで接続できるか確認しました。\nPython 3.11.10\nFastMCP 2.10.5\nCursor 1.2.2\n\n ソースコード\nfrom fastmcp import FastMCP\n\n# FastMCPサーバーを作成\nmcp = FastMCP(name=\"...",
+        "description": "2025年5月ごろからCursor が streamable-httpトランスポートを受け付けられるようになっています。FastMCPで接続できるか確認しました。\nPython 3.11.10\nFastMCP 2.10.5\nCursor 1.2.2\n\n ソースコード\nfrom fastmcp import FastMCP\n\n# FastMCPサーバーを作成\nmcp = FastMCP(name=\"...",
         "category": "開発",
         "rss_category": "",
         "image_url": "https://res.cloudinary.com/zenn/image/upload/s--plrWniI5--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:%25E3%2580%2590Cursor%25E3%2580%2591FastMCP%25E3%2582%25B5%25E3%2583%25BC%25E3%2583%2590%25E3%2581%25ABstreamable-http%25E3%2583%2588%25E3%2583%25A9%25E3%2583%25B3%25E3%2582%25B9%25E3%2583%259D%25E3%2583%25BC%25E3%2583%2588%25E3%2581%25A7%25E6%258E%25A5%25E7%25B6%259A%25E3%2581%2599%25E3%2582%258B%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:Birf%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL3plbm4tdXNlci11cGxvYWQvYXZhdGFyLzgwMzUwMjNjNmMuanBlZw==%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png"
