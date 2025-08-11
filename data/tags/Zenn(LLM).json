@@ -1,7 +1,7 @@
 {
   "site": "Zenn(LLM)",
-  "last_updated": "2025-08-11T14:44:07.307517",
-  "total_articles": 325,
+  "last_updated": "2025-08-11T14:59:24.689853",
+  "total_articles": 323,
   "articles_by_date": {
     "本日": [
       {
@@ -49,7 +49,7 @@
         "url": "https://zenn.dev/singularity/articles/graphai-tools-agent",
         "site": "Zenn(LLM)",
         "published": "2025-08-10T22:37:25Z",
-        "description": "!\nGraphAI記事の一覧はこちら\n\n\n toolsAgentから呼び出されるagentのspec\n\n\nnamedInputs\n\nagentName - tool.name(funciton name)\narg - tool.arguments\nfunc - tool.name(funciton name)\ndata - passthrough from parent\n\n\n\nresult\n\nco...",
+        "description": "!\nGraphAI記事の一覧はこちら\n\n\n ToolsAgent\nGraphAI には、LLM を使って自然言語からエージェントを呼び出すための tools エージェントがあります。\n内部的には OpenAI などの LLM エージェントに tools のスキーマを渡し、その応答に含まれる tool_calls を基に、GraphAI 内の任意のエージェントを動的に呼び出している。\n動作の流れとし...",
         "category": "AI・技術",
         "rss_category": "",
         "image_url": "https://res.cloudinary.com/zenn/image/upload/s--Xh6YmDV_--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:GraphAI%2520-%2520ToolsAgent%25E3%2581%258B%25E3%2582%2589%25E5%2591%25BC%25E3%2581%25B3%25E5%2587%25BA%25E3%2581%2595%25E3%2582%258C%25E3%2582%258BAgent%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_34:Isamu%2Cx_220%2Cy_108/bo_3px_solid_rgb:d6e3ed%2Cg_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL3plbm4tdXNlci11cGxvYWQvYXZhdGFyLzZiNjM5MTg4YzEuanBlZw==%2Cr_20%2Cw_90%2Cx_92%2Cy_102/co_rgb:6e7b85%2Cg_south_west%2Cl_text:notosansjp-medium.otf_30:%25E3%2582%25B7%25E3%2583%25B3%25E3%2582%25AE%25E3%2583%25A5%25E3%2583%25A9%25E3%2583%25AA%25E3%2583%2586%25E3%2582%25A3%25E3%2583%25BB%25E3%2582%25BD%25E3%2582%25B5%25E3%2582%25A8%25E3%2583%2586%25E3%2582%25A3%2Cx_220%2Cy_160/bo_4px_solid_white%2Cg_south_west%2Ch_50%2Cl_fetch:aHR0cHM6Ly9saDMuZ29vZ2xldXNlcmNvbnRlbnQuY29tL2EtL0FPaDE0R2g3ODg4Mk5lcU4xYUxYZWxhbjZ5TDYzUVBVdGs3MjQ0aGs0QjdBdWc9czI1MC1j%2Cr_max%2Cw_50%2Cx_139%2Cy_84/v1627283836/default/og-base-w1200-v2.png"
@@ -219,16 +219,6 @@
         "image_url": "https://res.cloudinary.com/zenn/image/upload/s--enGiDoJU--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:%25E3%2583%2586%25E3%2582%25AD%25E3%2582%25B9%25E3%2583%2588%25E3%2582%2592%25E3%2583%2599%25E3%2582%25AF%25E3%2583%2588%25E3%2583%25AB%25E5%258C%2596%25E3%2580%2582%25E5%258D%2598%25E7%25B4%2594%25E3%2581%25AA%25E6%25AF%2594%25E8%25BC%2583%25E3%2581%25A7%25E3%2581%25AF%25E3%2581%25AA%25E3%2581%2584%25E6%25AD%25A3%25E7%25A2%25BA%25E6%2580%25A7%25E3%2581%258C%25E9%259D%25A2%25E7%2599%25BD%25E3%2581%2584%25E3%2580%2582%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:kemii%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL3plbm4tdXNlci11cGxvYWQvYXZhdGFyL2E5ZGYyMjM5ZmIuanBlZw==%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png"
       },
       {
-        "title": "Agent Development Kit 1.10.0 で追加された ツールの並列実行",
-        "url": "https://zenn.dev/soundtricker/articles/d01164a6b61f77",
-        "site": "Zenn(LLM)",
-        "published": "2025-08-09T02:39:21Z",
-        "description": "こんにちは、サントリーこと大橋です。\n2025/08/08にAgent Development Kit(以降ADK) 1.10.0がリリースされました。\nhttps://github.com/google/adk-python/releases/tag/v1.10.0\n最近は毎週金曜日にリリースされていますね。\n今回のリリースで追加された主な機能は以下です。\n\nライブセッション(Live Sess...",
-        "category": "AI・技術",
-        "rss_category": "",
-        "image_url": "https://res.cloudinary.com/zenn/image/upload/s--8Gl1N7T0--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:Agent%2520Development%2520Kit%25201.10.0%2520%25E3%2581%25A7%25E8%25BF%25BD%25E5%258A%25A0%25E3%2581%2595%25E3%2582%258C%25E3%2581%259F%2520%25E3%2583%2584%25E3%2583%25BC%25E3%2583%25AB%25E3%2581%25AE%25E4%25B8%25A6%25E5%2588%2597%25E5%25AE%259F%25E8%25A1%258C%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:Keisuke%2520Oohashi%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9saDMuZ29vZ2xldXNlcmNvbnRlbnQuY29tL2EtL0FPaDE0R2gzVXhkWXNLcWpLdFhESXlXRk50UHZyZUxmN2dXaFVsOWNBSVRHLVE9czI1MC1j%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png"
-      },
-      {
         "title": "Microsoft.Extensions.AI.IChatClientにOpenRouterを接続する方法",
         "url": "https://zenn.dev/ajkfds/articles/d0958a986ad199",
         "site": "Zenn(LLM)",
@@ -295,7 +285,7 @@
         "url": "https://zenn.dev/singularity/articles/graphai-tools-agent",
         "site": "Zenn(LLM)",
         "published": "2025-08-10T22:37:25Z",
-        "description": "!\nGraphAI記事の一覧はこちら\n\n\n toolsAgentから呼び出されるagentのspec\n\n\nnamedInputs\n\nagentName - tool.name(funciton name)\narg - tool.arguments\nfunc - tool.name(funciton name)\ndata - passthrough from parent\n\n\n\nresult\n\nco...",
+        "description": "!\nGraphAI記事の一覧はこちら\n\n\n ToolsAgent\nGraphAI には、LLM を使って自然言語からエージェントを呼び出すための tools エージェントがあります。\n内部的には OpenAI などの LLM エージェントに tools のスキーマを渡し、その応答に含まれる tool_calls を基に、GraphAI 内の任意のエージェントを動的に呼び出している。\n動作の流れとし...",
         "category": "AI・技術",
         "rss_category": "",
         "image_url": "https://res.cloudinary.com/zenn/image/upload/s--Xh6YmDV_--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:GraphAI%2520-%2520ToolsAgent%25E3%2581%258B%25E3%2582%2589%25E5%2591%25BC%25E3%2581%25B3%25E5%2587%25BA%25E3%2581%2595%25E3%2582%258C%25E3%2582%258BAgent%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_34:Isamu%2Cx_220%2Cy_108/bo_3px_solid_rgb:d6e3ed%2Cg_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL3plbm4tdXNlci11cGxvYWQvYXZhdGFyLzZiNjM5MTg4YzEuanBlZw==%2Cr_20%2Cw_90%2Cx_92%2Cy_102/co_rgb:6e7b85%2Cg_south_west%2Cl_text:notosansjp-medium.otf_30:%25E3%2582%25B7%25E3%2583%25B3%25E3%2582%25AE%25E3%2583%25A5%25E3%2583%25A9%25E3%2583%25AA%25E3%2583%2586%25E3%2582%25A3%25E3%2583%25BB%25E3%2582%25BD%25E3%2582%25B5%25E3%2582%25A8%25E3%2583%2586%25E3%2582%25A3%2Cx_220%2Cy_160/bo_4px_solid_white%2Cg_south_west%2Ch_50%2Cl_fetch:aHR0cHM6Ly9saDMuZ29vZ2xldXNlcmNvbnRlbnQuY29tL2EtL0FPaDE0R2g3ODg4Mk5lcU4xYUxYZWxhbjZ5TDYzUVBVdGs3MjQ0aGs0QjdBdWc9czI1MC1j%2Cr_max%2Cw_50%2Cx_139%2Cy_84/v1627283836/default/og-base-w1200-v2.png"
@@ -459,16 +449,6 @@
         "category": "AI・技術",
         "rss_category": "",
         "image_url": "https://res.cloudinary.com/zenn/image/upload/s--enGiDoJU--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:%25E3%2583%2586%25E3%2582%25AD%25E3%2582%25B9%25E3%2583%2588%25E3%2582%2592%25E3%2583%2599%25E3%2582%25AF%25E3%2583%2588%25E3%2583%25AB%25E5%258C%2596%25E3%2580%2582%25E5%258D%2598%25E7%25B4%2594%25E3%2581%25AA%25E6%25AF%2594%25E8%25BC%2583%25E3%2581%25A7%25E3%2581%25AF%25E3%2581%25AA%25E3%2581%2584%25E6%25AD%25A3%25E7%25A2%25BA%25E6%2580%25A7%25E3%2581%258C%25E9%259D%25A2%25E7%2599%25BD%25E3%2581%2584%25E3%2580%2582%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:kemii%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL3plbm4tdXNlci11cGxvYWQvYXZhdGFyL2E5ZGYyMjM5ZmIuanBlZw==%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png"
-      },
-      {
-        "title": "Agent Development Kit 1.10.0 で追加された ツールの並列実行",
-        "url": "https://zenn.dev/soundtricker/articles/d01164a6b61f77",
-        "site": "Zenn(LLM)",
-        "published": "2025-08-09T02:39:21Z",
-        "description": "こんにちは、サントリーこと大橋です。\n2025/08/08にAgent Development Kit(以降ADK) 1.10.0がリリースされました。\nhttps://github.com/google/adk-python/releases/tag/v1.10.0\n最近は毎週金曜日にリリースされていますね。\n今回のリリースで追加された主な機能は以下です。\n\nライブセッション(Live Sess...",
-        "category": "AI・技術",
-        "rss_category": "",
-        "image_url": "https://res.cloudinary.com/zenn/image/upload/s--8Gl1N7T0--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:Agent%2520Development%2520Kit%25201.10.0%2520%25E3%2581%25A7%25E8%25BF%25BD%25E5%258A%25A0%25E3%2581%2595%25E3%2582%258C%25E3%2581%259F%2520%25E3%2583%2584%25E3%2583%25BC%25E3%2583%25AB%25E3%2581%25AE%25E4%25B8%25A6%25E5%2588%2597%25E5%25AE%259F%25E8%25A1%258C%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:Keisuke%2520Oohashi%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9saDMuZ29vZ2xldXNlcmNvbnRlbnQuY29tL2EtL0FPaDE0R2gzVXhkWXNLcWpLdFhESXlXRk50UHZyZUxmN2dXaFVsOWNBSVRHLVE9czI1MC1j%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png"
       },
       {
         "title": "Microsoft.Extensions.AI.IChatClientにOpenRouterを接続する方法",
