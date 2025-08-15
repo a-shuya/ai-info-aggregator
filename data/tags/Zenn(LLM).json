@@ -1,18 +1,38 @@
 {
   "site": "Zenn(LLM)",
-  "last_updated": "2025-08-15T13:23:08.224836",
-  "total_articles": 344,
+  "last_updated": "2025-08-15T13:48:38.594295",
+  "total_articles": 348,
   "articles_by_date": {
     "本日": [
       {
-        "title": "LLMコード生成におけるパッケージハルシネーション（The 34th USENIX Security Symposium）",
+        "title": "テキストから構造化データを抽出するライブラリ、LangExtractを試した",
+        "url": "https://zenn.dev/trustart_dev/articles/912588f3414d05",
+        "site": "Zenn(LLM)",
+        "published": "2025-08-15T12:00:05Z",
+        "description": "概要\nhttps://github.com/google/langextract\nhttps://langextract.com/ja\nLangExtract は、LLMを使って非構造テキストから構造化データを抽出する Python ライブラリです。\n抽出結果には、元テキストの位置が付与され、それをブラウザでインタラクティブに確認することができます。\n2025年8月15日現在、約11kスターを獲得...",
+        "category": "AI・技術",
+        "rss_category": "",
+        "image_url": "https://res.cloudinary.com/zenn/image/upload/s--f9UNim61--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:%25E3%2583%2586%25E3%2582%25AD%25E3%2582%25B9%25E3%2583%2588%25E3%2581%258B%25E3%2582%2589%25E6%25A7%258B%25E9%2580%25A0%25E5%258C%2596%25E3%2583%2587%25E3%2583%25BC%25E3%2582%25BF%25E3%2582%2592%25E6%258A%25BD%25E5%2587%25BA%25E3%2581%2599%25E3%2582%258B%25E3%2583%25A9%25E3%2582%25A4%25E3%2583%2596%25E3%2583%25A9%25E3%2583%25AA%25E3%2580%2581LangExtract%25E3%2582%2592%25E8%25A9%25A6%25E3%2581%2597%25E3%2581%259F%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_34:gumpen%2Cx_220%2Cy_108/bo_3px_solid_rgb:d6e3ed%2Cg_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL3plbm4tdXNlci11cGxvYWQvYXZhdGFyLzU4Y2I1MTc4ODAuanBlZw==%2Cr_20%2Cw_90%2Cx_92%2Cy_102/co_rgb:6e7b85%2Cg_south_west%2Cl_text:notosansjp-medium.otf_30:TRUSTART%25E3%2583%2586%25E3%2583%2583%25E3%2582%25AF%25E3%2583%2596%25E3%2583%25AD%25E3%2582%25B0%2Cx_220%2Cy_160/bo_4px_solid_white%2Cg_south_west%2Ch_50%2Cl_fetch:aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL3plbm4tdXNlci11cGxvYWQvYXZhdGFyLzBlMjkzNTRiNDkuanBlZw==%2Cr_max%2Cw_50%2Cx_139%2Cy_84/v1627283836/default/og-base-w1200-v2.png"
+      },
+      {
+        "title": "「おっす」で始める！Goの公式MCP SDK × LangChainGoでエージェント実装",
+        "url": "https://zenn.dev/finatext/articles/7b3925be93459d",
+        "site": "Zenn(LLM)",
+        "published": "2025-08-15T09:45:01Z",
+        "description": "始めに\nLLMやAIの開発はほとんどPythonで行われているかと思いますが、Goのエコシステムにも素敵なフレームワークがあるので、サクッと使い方を紹介したいと思います。\nチャットボットなら200行以下で作れちゃいます！\n\n 必要な環境\n\nGo\n\nhttps://github.com/tmc/langchaingo (v0.1.14以降、現時点未リリース)\n\nhttps://github.com/...",
+        "category": "AI・技術",
+        "rss_category": "",
+        "image_url": "https://res.cloudinary.com/zenn/image/upload/s--X9hE5T0m--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:%25E3%2580%258C%25E3%2581%258A%25E3%2581%25A3%25E3%2581%2599%25E3%2580%258D%25E3%2581%25A7%25E5%25A7%258B%25E3%2582%2581%25E3%2582%258B%25EF%25BC%2581Go%25E3%2581%25AE%25E5%2585%25AC%25E5%25BC%258FMCP%2520SDK%2520%25C3%2597%2520LangChainGo%25E3%2581%25A7%25E3%2582%25A8%25E3%2583%25BC%25E3%2582%25B8%25E3%2582%25A7%25E3%2583%25B3%25E3%2583%2588%25E5%25AE%259F%25E8%25A3%2585%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_34:d.mzgr%2Cx_220%2Cy_108/bo_3px_solid_rgb:d6e3ed%2Cg_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL3plbm4tdXNlci11cGxvYWQvYXZhdGFyL2NjOTE1NmJhMjEuanBlZw==%2Cr_20%2Cw_90%2Cx_92%2Cy_102/co_rgb:6e7b85%2Cg_south_west%2Cl_text:notosansjp-medium.otf_30:Finatext%2520Tech%2520Blog%2Cx_220%2Cy_160/bo_4px_solid_white%2Cg_south_west%2Ch_50%2Cl_fetch:aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL3plbm4tdXNlci11cGxvYWQvYXZhdGFyLzA4YTZmZjMzNTIuanBlZw==%2Cr_max%2Cw_50%2Cx_139%2Cy_84/v1627283836/default/og-base-w1200-v2.png"
+      },
+      {
+        "title": "Vibe Coding で気を付けておきたいセキュリティ脅威「パッケージハルシネーション」について理解する",
         "url": "https://zenn.dev/su8/articles/c98b16838bbd88",
         "site": "Zenn(LLM)",
         "published": "2025-08-15T05:40:26Z",
         "description": "はじめに\nAI支援コード生成の急速な普及に伴い、開発者の多数がAIツールを活用し、AI由来のコード割合が増加傾向にある現在、新たなセキュリティ脅威が浮上している。パッケージハルシネーションと呼ばれるこの現象は、LLMが存在しないパッケージ名を含むコードを生成することで、ソフトウェアサプライチェーン全体に影響を与える可能性がある。\nこの問題を扱った研究がUSENIX Security 2025で発表...",
         "category": "AI・技術",
         "rss_category": "",
-        "image_url": "https://res.cloudinary.com/zenn/image/upload/s--taQA8KpA--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:LLM%25E3%2582%25B3%25E3%2583%25BC%25E3%2583%2589%25E7%2594%259F%25E6%2588%2590%25E3%2581%25AB%25E3%2581%258A%25E3%2581%2591%25E3%2582%258B%25E3%2583%2591%25E3%2583%2583%25E3%2582%25B1%25E3%2583%25BC%25E3%2582%25B8%25E3%2583%258F%25E3%2583%25AB%25E3%2582%25B7%25E3%2583%258D%25E3%2583%25BC%25E3%2582%25B7%25E3%2583%25A7%25E3%2583%25B3%25EF%25BC%2588The%252034th%2520USENIX%2520Security%2520Sympos...%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:su8%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9saDMuZ29vZ2xldXNlcmNvbnRlbnQuY29tL2EvQUVkRlRwNHdDZWsxTUFjbzVXNlpLQUgtaGNiMGI1SDZrODRKdkd2ZGpoNDZQUT1zOTYtYw==%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png"
+        "image_url": "https://res.cloudinary.com/zenn/image/upload/s--CnRN6TKY--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:Vibe%2520Coding%2520%25E3%2581%25A7%25E6%25B0%2597%25E3%2582%2592%25E4%25BB%2598%25E3%2581%2591%25E3%2581%25A6%25E3%2581%258A%25E3%2581%258D%25E3%2581%259F%25E3%2581%2584%25E3%2582%25BB%25E3%2582%25AD%25E3%2583%25A5%25E3%2583%25AA%25E3%2583%2586%25E3%2582%25A3%25E8%2584%2585%25E5%25A8%2581%25E3%2580%258C%25E3%2583%2591%25E3%2583%2583%25E3%2582%25B1%25E3%2583%25BC%25E3%2582%25B8%25E3%2583%258F%25E3%2583%25AB%25E3%2582%25B7%25E3%2583%258D%25E3%2583%25BC%25E3%2582%25B7%25E3%2583%25A7%25E3%2583%25B3%25E3%2580%258D%25E3%2581%25AB%25E3%2581%25A4%25E3%2581%2584%25E3%2581%25A6%25E7%2590%2586%25E8%25A7%25A3%25E3%2581%2599%25E3%2582%258B%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:su8%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9saDMuZ29vZ2xldXNlcmNvbnRlbnQuY29tL2EvQUVkRlRwNHdDZWsxTUFjbzVXNlpLQUgtaGNiMGI1SDZrODRKdkd2ZGpoNDZQUT1zOTYtYw==%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png"
       },
       {
         "title": "RunwayMLで挑む、一貫性のあるAI絵コンテ自動生成",
@@ -211,14 +231,34 @@
     ],
     "2025-08": [
       {
-        "title": "LLMコード生成におけるパッケージハルシネーション（The 34th USENIX Security Symposium）",
+        "title": "テキストから構造化データを抽出するライブラリ、LangExtractを試した",
+        "url": "https://zenn.dev/trustart_dev/articles/912588f3414d05",
+        "site": "Zenn(LLM)",
+        "published": "2025-08-15T12:00:05Z",
+        "description": "概要\nhttps://github.com/google/langextract\nhttps://langextract.com/ja\nLangExtract は、LLMを使って非構造テキストから構造化データを抽出する Python ライブラリです。\n抽出結果には、元テキストの位置が付与され、それをブラウザでインタラクティブに確認することができます。\n2025年8月15日現在、約11kスターを獲得...",
+        "category": "AI・技術",
+        "rss_category": "",
+        "image_url": "https://res.cloudinary.com/zenn/image/upload/s--f9UNim61--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:%25E3%2583%2586%25E3%2582%25AD%25E3%2582%25B9%25E3%2583%2588%25E3%2581%258B%25E3%2582%2589%25E6%25A7%258B%25E9%2580%25A0%25E5%258C%2596%25E3%2583%2587%25E3%2583%25BC%25E3%2582%25BF%25E3%2582%2592%25E6%258A%25BD%25E5%2587%25BA%25E3%2581%2599%25E3%2582%258B%25E3%2583%25A9%25E3%2582%25A4%25E3%2583%2596%25E3%2583%25A9%25E3%2583%25AA%25E3%2580%2581LangExtract%25E3%2582%2592%25E8%25A9%25A6%25E3%2581%2597%25E3%2581%259F%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_34:gumpen%2Cx_220%2Cy_108/bo_3px_solid_rgb:d6e3ed%2Cg_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL3plbm4tdXNlci11cGxvYWQvYXZhdGFyLzU4Y2I1MTc4ODAuanBlZw==%2Cr_20%2Cw_90%2Cx_92%2Cy_102/co_rgb:6e7b85%2Cg_south_west%2Cl_text:notosansjp-medium.otf_30:TRUSTART%25E3%2583%2586%25E3%2583%2583%25E3%2582%25AF%25E3%2583%2596%25E3%2583%25AD%25E3%2582%25B0%2Cx_220%2Cy_160/bo_4px_solid_white%2Cg_south_west%2Ch_50%2Cl_fetch:aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL3plbm4tdXNlci11cGxvYWQvYXZhdGFyLzBlMjkzNTRiNDkuanBlZw==%2Cr_max%2Cw_50%2Cx_139%2Cy_84/v1627283836/default/og-base-w1200-v2.png"
+      },
+      {
+        "title": "「おっす」で始める！Goの公式MCP SDK × LangChainGoでエージェント実装",
+        "url": "https://zenn.dev/finatext/articles/7b3925be93459d",
+        "site": "Zenn(LLM)",
+        "published": "2025-08-15T09:45:01Z",
+        "description": "始めに\nLLMやAIの開発はほとんどPythonで行われているかと思いますが、Goのエコシステムにも素敵なフレームワークがあるので、サクッと使い方を紹介したいと思います。\nチャットボットなら200行以下で作れちゃいます！\n\n 必要な環境\n\nGo\n\nhttps://github.com/tmc/langchaingo (v0.1.14以降、現時点未リリース)\n\nhttps://github.com/...",
+        "category": "AI・技術",
+        "rss_category": "",
+        "image_url": "https://res.cloudinary.com/zenn/image/upload/s--X9hE5T0m--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:%25E3%2580%258C%25E3%2581%258A%25E3%2581%25A3%25E3%2581%2599%25E3%2580%258D%25E3%2581%25A7%25E5%25A7%258B%25E3%2582%2581%25E3%2582%258B%25EF%25BC%2581Go%25E3%2581%25AE%25E5%2585%25AC%25E5%25BC%258FMCP%2520SDK%2520%25C3%2597%2520LangChainGo%25E3%2581%25A7%25E3%2582%25A8%25E3%2583%25BC%25E3%2582%25B8%25E3%2582%25A7%25E3%2583%25B3%25E3%2583%2588%25E5%25AE%259F%25E8%25A3%2585%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_34:d.mzgr%2Cx_220%2Cy_108/bo_3px_solid_rgb:d6e3ed%2Cg_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL3plbm4tdXNlci11cGxvYWQvYXZhdGFyL2NjOTE1NmJhMjEuanBlZw==%2Cr_20%2Cw_90%2Cx_92%2Cy_102/co_rgb:6e7b85%2Cg_south_west%2Cl_text:notosansjp-medium.otf_30:Finatext%2520Tech%2520Blog%2Cx_220%2Cy_160/bo_4px_solid_white%2Cg_south_west%2Ch_50%2Cl_fetch:aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL3plbm4tdXNlci11cGxvYWQvYXZhdGFyLzA4YTZmZjMzNTIuanBlZw==%2Cr_max%2Cw_50%2Cx_139%2Cy_84/v1627283836/default/og-base-w1200-v2.png"
+      },
+      {
+        "title": "Vibe Coding で気を付けておきたいセキュリティ脅威「パッケージハルシネーション」について理解する",
         "url": "https://zenn.dev/su8/articles/c98b16838bbd88",
         "site": "Zenn(LLM)",
         "published": "2025-08-15T05:40:26Z",
         "description": "はじめに\nAI支援コード生成の急速な普及に伴い、開発者の多数がAIツールを活用し、AI由来のコード割合が増加傾向にある現在、新たなセキュリティ脅威が浮上している。パッケージハルシネーションと呼ばれるこの現象は、LLMが存在しないパッケージ名を含むコードを生成することで、ソフトウェアサプライチェーン全体に影響を与える可能性がある。\nこの問題を扱った研究がUSENIX Security 2025で発表...",
         "category": "AI・技術",
         "rss_category": "",
-        "image_url": "https://res.cloudinary.com/zenn/image/upload/s--taQA8KpA--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:LLM%25E3%2582%25B3%25E3%2583%25BC%25E3%2583%2589%25E7%2594%259F%25E6%2588%2590%25E3%2581%25AB%25E3%2581%258A%25E3%2581%2591%25E3%2582%258B%25E3%2583%2591%25E3%2583%2583%25E3%2582%25B1%25E3%2583%25BC%25E3%2582%25B8%25E3%2583%258F%25E3%2583%25AB%25E3%2582%25B7%25E3%2583%258D%25E3%2583%25BC%25E3%2582%25B7%25E3%2583%25A7%25E3%2583%25B3%25EF%25BC%2588The%252034th%2520USENIX%2520Security%2520Sympos...%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:su8%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9saDMuZ29vZ2xldXNlcmNvbnRlbnQuY29tL2EvQUVkRlRwNHdDZWsxTUFjbzVXNlpLQUgtaGNiMGI1SDZrODRKdkd2ZGpoNDZQUT1zOTYtYw==%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png"
+        "image_url": "https://res.cloudinary.com/zenn/image/upload/s--CnRN6TKY--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:Vibe%2520Coding%2520%25E3%2581%25A7%25E6%25B0%2597%25E3%2582%2592%25E4%25BB%2598%25E3%2581%2591%25E3%2581%25A6%25E3%2581%258A%25E3%2581%258D%25E3%2581%259F%25E3%2581%2584%25E3%2582%25BB%25E3%2582%25AD%25E3%2583%25A5%25E3%2583%25AA%25E3%2583%2586%25E3%2582%25A3%25E8%2584%2585%25E5%25A8%2581%25E3%2580%258C%25E3%2583%2591%25E3%2583%2583%25E3%2582%25B1%25E3%2583%25BC%25E3%2582%25B8%25E3%2583%258F%25E3%2583%25AB%25E3%2582%25B7%25E3%2583%258D%25E3%2583%25BC%25E3%2582%25B7%25E3%2583%25A7%25E3%2583%25B3%25E3%2580%258D%25E3%2581%25AB%25E3%2581%25A4%25E3%2581%2584%25E3%2581%25A6%25E7%2590%2586%25E8%25A7%25A3%25E3%2581%2599%25E3%2582%258B%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:su8%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9saDMuZ29vZ2xldXNlcmNvbnRlbnQuY29tL2EvQUVkRlRwNHdDZWsxTUFjbzVXNlpLQUgtaGNiMGI1SDZrODRKdkd2ZGpoNDZQUT1zOTYtYw==%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png"
       },
       {
         "title": "RunwayMLで挑む、一貫性のあるAI絵コンテ自動生成",
