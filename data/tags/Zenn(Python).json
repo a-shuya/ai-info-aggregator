@@ -1,6 +1,6 @@
 {
   "site": "Zenn(Python)",
-  "last_updated": "2025-08-16T15:09:47.497014",
+  "last_updated": "2025-08-16T15:31:14.110812",
   "total_articles": 444,
   "articles_by_date": {
     "昨日": [
@@ -51,7 +51,7 @@
         "url": "https://zenn.dev/takahashin/articles/8aa84f7759fce6",
         "site": "Zenn(Python)",
         "published": "2025-08-15T14:15:23Z",
-        "description": "はじめに\n私が関わっているプロダクトはWEBシステムです。\nバックエンドはPythonで書かれており、AWS API GatewayからAWS Lambdaを呼び出す構成で動いています。\n構成の特徴は以下の通りです。\n\n1つのAPIエンドポイント = 1つのLambda関数\nLambdaごとに専用のPythonファイルを用意して実装\n共通処理はLambda Layerで用途ごとにPythonファイ...",
+        "description": "AWS Lambda + API Gateway構成でPydanticを導入して型安全性と可読性を改善した話\n\n はじめに\n私が関わっているプロダクトはWEBシステムです。\nバックエンドはPythonで書かれており、AWS API GatewayからAWS Lambdaを呼び出す構成で動いています。\n構成の特徴は以下の通りです。\n\n1つのAPIエンドポイント = 1つのLambda関数\nLambd...",
         "category": "開発",
         "rss_category": "",
         "image_url": "https://res.cloudinary.com/zenn/image/upload/s--46kewRaE--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:AWS%2520Lambda%2520%252B%2520API%2520Gateway%25E6%25A7%258B%25E6%2588%2590%25E3%2581%25A7Pydantic%25E3%2582%2592%25E5%25B0%258E%25E5%2585%25A5%25E3%2581%2597%25E3%2581%25A6%25E5%259E%258B%25E5%25AE%2589%25E5%2585%25A8%25E6%2580%25A7%25E3%2581%25A8%25E5%258F%25AF%25E8%25AA%25AD%25E6%2580%25A7%25E3%2582%2592%25E6%2594%25B9%25E5%2596%2584%25E3%2581%2597%25E3%2581%259F%25E8%25A9%25B1%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:%25E5%25B9%25A1%25E3%2583%25B6%25E8%25B0%25B7%25E4%25BA%25AD%25E7%259B%25B4%25E5%2590%2589%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL3plbm4tdXNlci11cGxvYWQvYXZhdGFyLzZhYmYwOTMxZmMuanBlZw==%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png"
@@ -243,7 +243,7 @@
         "url": "https://zenn.dev/takahashin/articles/8aa84f7759fce6",
         "site": "Zenn(Python)",
         "published": "2025-08-15T14:15:23Z",
-        "description": "はじめに\n私が関わっているプロダクトはWEBシステムです。\nバックエンドはPythonで書かれており、AWS API GatewayからAWS Lambdaを呼び出す構成で動いています。\n構成の特徴は以下の通りです。\n\n1つのAPIエンドポイント = 1つのLambda関数\nLambdaごとに専用のPythonファイルを用意して実装\n共通処理はLambda Layerで用途ごとにPythonファイ...",
+        "description": "AWS Lambda + API Gateway構成でPydanticを導入して型安全性と可読性を改善した話\n\n はじめに\n私が関わっているプロダクトはWEBシステムです。\nバックエンドはPythonで書かれており、AWS API GatewayからAWS Lambdaを呼び出す構成で動いています。\n構成の特徴は以下の通りです。\n\n1つのAPIエンドポイント = 1つのLambda関数\nLambd...",
         "category": "開発",
         "rss_category": "",
         "image_url": "https://res.cloudinary.com/zenn/image/upload/s--46kewRaE--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:AWS%2520Lambda%2520%252B%2520API%2520Gateway%25E6%25A7%258B%25E6%2588%2590%25E3%2581%25A7Pydantic%25E3%2582%2592%25E5%25B0%258E%25E5%2585%25A5%25E3%2581%2597%25E3%2581%25A6%25E5%259E%258B%25E5%25AE%2589%25E5%2585%25A8%25E6%2580%25A7%25E3%2581%25A8%25E5%258F%25AF%25E8%25AA%25AD%25E6%2580%25A7%25E3%2582%2592%25E6%2594%25B9%25E5%2596%2584%25E3%2581%2597%25E3%2581%259F%25E8%25A9%25B1%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:%25E5%25B9%25A1%25E3%2583%25B6%25E8%25B0%25B7%25E4%25BA%25AD%25E7%259B%25B4%25E5%2590%2589%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL3plbm4tdXNlci11cGxvYWQvYXZhdGFyLzZhYmYwOTMxZmMuanBlZw==%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png"
