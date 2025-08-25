@@ -1,6 +1,6 @@
 {
   "site": "Zenn(機械学習)",
-  "last_updated": "2025-08-25T19:57:56.430943",
+  "last_updated": "2025-08-25T20:29:24.738277",
   "total_articles": 110,
   "articles_by_date": {
     "一昨日": [
@@ -67,14 +67,14 @@
         "image_url": "https://res.cloudinary.com/zenn/image/upload/s--QKdVI7p_--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:AI%25E3%2581%25AF%25E9%25BB%2584%25E9%2587%2591%25E6%25AF%2594%25E3%2582%2592%25E5%25A4%25A2%25E8%25A6%258B%25E3%2582%258B%25E3%2581%258B%25EF%25BC%259F%25E2%2580%2595%25E2%2580%2595%25E6%2596%25B0%25E7%2590%2586%25E8%25AB%2596%25E3%2580%258EQualion%25E3%2580%258F%25E3%2581%258C%25E6%258B%2593%25E3%2581%258F%25E3%2580%2581%25E6%25AC%25A1%25E4%25B8%2596%25E4%25BB%25A3AI%25E3%2581%25AE%25E5%25B9%25BE%25E4%25BD%2595%25E5%25AD%25A6%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:Solufa%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9saDMuZ29vZ2xldXNlcmNvbnRlbnQuY29tL2EtL0FPaDE0R2hSSkFIRjk0YjU5N0ZnQmFCbWxYUFBDWmkxYVlYcWdhVE1RanZHPXM5Ni1j%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png"
       },
       {
-        "title": "機械学習のデータセットシフトをベイズの目線で理解しよう",
+        "title": "ベイズ目線で理解するMLOpsのデータセットシフト",
         "url": "https://zenn.dev/ksk_17090k1/articles/047686a0693a87",
         "site": "Zenn(機械学習)",
         "published": "2025-08-21T16:24:46Z",
         "description": "!\nこの記事には一部主観に基づく解釈が含まれています。\nもし誤りなどあればご指摘ください。\n\n\n はじめに\n機械学習といえば生成 AI がトレンド独占している今日このごろですが、\nMLOps における「データセットシフト」というややニッチ？な概念について調べる機会がありました。\nWEB で少し調べてみても、データセットシフトについて数式を使った説明をしている記事はあまりなかったのと、\n個人的に「ベ...",
         "category": "AI・技術",
         "rss_category": "",
-        "image_url": "https://res.cloudinary.com/zenn/image/upload/s--lpO-h3uc--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:%25E6%25A9%259F%25E6%25A2%25B0%25E5%25AD%25A6%25E7%25BF%2592%25E3%2581%25AE%25E3%2583%2587%25E3%2583%25BC%25E3%2582%25BF%25E3%2582%25BB%25E3%2583%2583%25E3%2583%2588%25E3%2582%25B7%25E3%2583%2595%25E3%2583%2588%25E3%2582%2592%25E3%2583%2599%25E3%2582%25A4%25E3%2582%25BA%25E3%2581%25AE%25E7%259B%25AE%25E7%25B7%259A%25E3%2581%25A7%25E7%2590%2586%25E8%25A7%25A3%25E3%2581%2597%25E3%2582%2588%25E3%2581%2586%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:ksk_17090k1%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9saDMuZ29vZ2xldXNlcmNvbnRlbnQuY29tL2EvQUNnOG9jTGhlS0k3RVlTOUFGUXYyaFJPM21vOUFJXzZsWHY4WmVCbWc5TmxkajQ5bUlLUEROYXY9czk2LWM=%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png"
+        "image_url": "https://res.cloudinary.com/zenn/image/upload/s--QfFOGBXD--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:%25E3%2583%2599%25E3%2582%25A4%25E3%2582%25BA%25E7%259B%25AE%25E7%25B7%259A%25E3%2581%25A7%25E7%2590%2586%25E8%25A7%25A3%25E3%2581%2599%25E3%2582%258BMLOps%25E3%2581%25AE%25E3%2583%2587%25E3%2583%25BC%25E3%2582%25BF%25E3%2582%25BB%25E3%2583%2583%25E3%2583%2588%25E3%2582%25B7%25E3%2583%2595%25E3%2583%2588%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:ksk_17090k1%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9saDMuZ29vZ2xldXNlcmNvbnRlbnQuY29tL2EvQUNnOG9jTGhlS0k3RVlTOUFGUXYyaFJPM21vOUFJXzZsWHY4WmVCbWc5TmxkajQ5bUlLUEROYXY9czk2LWM=%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png"
       },
       {
         "title": "Python x 自作英単語学習アプリ で勉強しよう！",
