@@ -1,9 +1,19 @@
 {
   "site": "Zenn(LLM)",
-  "last_updated": "2025-08-30T13:05:19.829425",
-  "total_articles": 423,
+  "last_updated": "2025-08-30T13:30:26.104236",
+  "total_articles": 424,
   "articles_by_date": {
     "本日": [
+      {
+        "title": "tree-sitterを使ってコードをインデックスする際のチャンクを自動で最適化する",
+        "url": "https://zenn.dev/ushironoko/articles/dc0e3cf6775951",
+        "site": "Zenn(LLM)",
+        "published": "2025-08-30T11:45:47Z",
+        "description": "前回に引き続き、最近書いているOSSの話です。\n前回↓\nhttps://zenn.dev/ushironoko/articles/7001411d4dca41\n\n コードをインデックスする際の問題点\n普通にコンテンツを読み込んでチャンクに分割する時は、指定されたチャンクサイズとチャンクオーバーラップの値を見て、単純な文字数で分割されます。この際、オーバーラップに指定した数値の分だけ隣り合うチャンク...",
+        "category": "AI・技術",
+        "rss_category": "",
+        "image_url": "https://res.cloudinary.com/zenn/image/upload/s---vZbUUds--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:tree-sitter%25E3%2582%2592%25E4%25BD%25BF%25E3%2581%25A3%25E3%2581%25A6%25E3%2582%25B3%25E3%2583%25BC%25E3%2583%2589%25E3%2582%2592%25E3%2582%25A4%25E3%2583%25B3%25E3%2583%2587%25E3%2583%2583%25E3%2582%25AF%25E3%2582%25B9%25E3%2581%2599%25E3%2582%258B%25E9%259A%259B%25E3%2581%25AE%25E3%2583%2581%25E3%2583%25A3%25E3%2583%25B3%25E3%2582%25AF%25E3%2582%2592%25E8%2587%25AA%25E5%258B%2595%25E3%2581%25A7%25E6%259C%2580%25E9%2581%25A9%25E5%258C%2596%25E3%2581%2599%25E3%2582%258B%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:ushironoko%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9saDMuZ29vZ2xldXNlcmNvbnRlbnQuY29tL2EtL0FPaDE0R2czSUk4bU84NDZtd1FFeVFhUXVDWVVQd1lFam9kMWZTOUNQNWRVdFE9czI1MC1j%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png"
+      },
       {
         "title": "GPT-5時代の「大規模言語モデル(LLM)」超入門",
         "url": "https://zenn.dev/ryofrontenginer/articles/102ae44170f0b1",
@@ -190,6 +200,16 @@
       }
     ],
     "2025-08": [
+      {
+        "title": "tree-sitterを使ってコードをインデックスする際のチャンクを自動で最適化する",
+        "url": "https://zenn.dev/ushironoko/articles/dc0e3cf6775951",
+        "site": "Zenn(LLM)",
+        "published": "2025-08-30T11:45:47Z",
+        "description": "前回に引き続き、最近書いているOSSの話です。\n前回↓\nhttps://zenn.dev/ushironoko/articles/7001411d4dca41\n\n コードをインデックスする際の問題点\n普通にコンテンツを読み込んでチャンクに分割する時は、指定されたチャンクサイズとチャンクオーバーラップの値を見て、単純な文字数で分割されます。この際、オーバーラップに指定した数値の分だけ隣り合うチャンク...",
+        "category": "AI・技術",
+        "rss_category": "",
+        "image_url": "https://res.cloudinary.com/zenn/image/upload/s---vZbUUds--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:tree-sitter%25E3%2582%2592%25E4%25BD%25BF%25E3%2581%25A3%25E3%2581%25A6%25E3%2582%25B3%25E3%2583%25BC%25E3%2583%2589%25E3%2582%2592%25E3%2582%25A4%25E3%2583%25B3%25E3%2583%2587%25E3%2583%2583%25E3%2582%25AF%25E3%2582%25B9%25E3%2581%2599%25E3%2582%258B%25E9%259A%259B%25E3%2581%25AE%25E3%2583%2581%25E3%2583%25A3%25E3%2583%25B3%25E3%2582%25AF%25E3%2582%2592%25E8%2587%25AA%25E5%258B%2595%25E3%2581%25A7%25E6%259C%2580%25E9%2581%25A9%25E5%258C%2596%25E3%2581%2599%25E3%2582%258B%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:ushironoko%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9saDMuZ29vZ2xldXNlcmNvbnRlbnQuY29tL2EtL0FPaDE0R2czSUk4bU84NDZtd1FFeVFhUXVDWVVQd1lFam9kMWZTOUNQNWRVdFE9czI1MC1j%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png"
+      },
       {
         "title": "GPT-5時代の「大規模言語モデル(LLM)」超入門",
         "url": "https://zenn.dev/ryofrontenginer/articles/102ae44170f0b1",
@@ -379,16 +399,6 @@
         "category": "AI・技術",
         "rss_category": "",
         "image_url": "https://res.cloudinary.com/zenn/image/upload/s--Dme-XZ8l--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:%25E7%25AD%258B%25E3%2583%2588%25E3%2583%25AC%25E3%2581%25AE%25E3%2581%258A%25E6%2589%258B%25E6%259C%25AC%25E5%258B%2595%25E7%2594%25BB%25E3%2582%2592LLM%25E3%2581%25A7%25E7%2594%259F%25E6%2588%2590%25E3%2581%2597%25E3%2581%259F%25E3%2581%2584%2520-Sora%252C%2520Veo%252C%2520Kling%252C%2520Seedance%252C%2520Wan%2520%25E3%2582%2592%25E6%25AF%2594%25E3%2581%25B9%25E3%2581%25A6%25E3%2581%25BF%25E3%2581%259F-%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:tomo25%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL3plbm4tdXNlci11cGxvYWQvYXZhdGFyLzIzNWYxYzQ1NGQuanBlZw==%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png"
-      },
-      {
-        "title": "時系列データ分析のための論文紹介②",
-        "url": "https://zenn.dev/tanukinet/articles/f1e5f04d43e453",
-        "site": "Zenn(LLM)",
-        "published": "2025-08-27T08:47:37Z",
-        "description": "論文\n前回記事 に引き続き、時系列データ分析のための論文紹介になります。\n今回は、前回紹介した「Transformer って時系列データで有効なの？」に対して、「いややっぱり Transformer 有効じゃね？」と考え直し、さらに改造を加えた Transformer で有効性を示した論文になります。\n\n タイトル\nA TIME SERIES IS WORTH 64 WORDS: LONG-TER...",
-        "category": "AI・技術",
-        "rss_category": "",
-        "image_url": "https://res.cloudinary.com/zenn/image/upload/s--7glLXsgA--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:%25E6%2599%2582%25E7%25B3%25BB%25E5%2588%2597%25E3%2583%2587%25E3%2583%25BC%25E3%2582%25BF%25E5%2588%2586%25E6%259E%2590%25E3%2581%25AE%25E3%2581%259F%25E3%2582%2581%25E3%2581%25AE%25E8%25AB%2596%25E6%2596%2587%25E7%25B4%25B9%25E4%25BB%258B%25E2%2591%25A1%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:tanukinet%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL3plbm4tdXNlci11cGxvYWQvYXZhdGFyL2I3NjliZjY1YmEuanBlZw==%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png"
       },
       {
         "title": "[AI Agent Jump Start] 記事一覧",
