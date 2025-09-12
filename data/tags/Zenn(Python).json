@@ -1,9 +1,29 @@
 {
   "site": "Zenn(Python)",
-  "last_updated": "2025-09-12T07:48:03.987180",
-  "total_articles": 660,
+  "last_updated": "2025-09-12T07:59:53.885897",
+  "total_articles": 664,
   "articles_by_date": {
     "本日": [
+      {
+        "title": "【Python入門】名前付きパイプを使ってプロセス間通信を実装してみる",
+        "url": "https://zenn.dev/mabo23/articles/762ecfd6d93138",
+        "site": "Zenn(Python)",
+        "published": "2025-09-12T06:24:29Z",
+        "description": "はじめに\nプロセス間通信（IPC）において、データを単方向に渡す方法としてパイプがあります。\nパイプは単方向通信に使用され、片方のプロセスが書き込み、もう片方のプロセスが読み込むことによってデータ送信を実現しています。\n詳しくはこちらの記事をご参照ください\nhttps://qiita.com/mabo23/items/d461387d4a2555803dac\nただし、os.pipe() で作られる...",
+        "category": "開発",
+        "rss_category": "",
+        "image_url": "https://res.cloudinary.com/zenn/image/upload/s--qAPnQ34R--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:%25E3%2580%2590Python%25E5%2585%25A5%25E9%2596%2580%25E3%2580%2591%25E5%2590%258D%25E5%2589%258D%25E4%25BB%2598%25E3%2581%258D%25E3%2583%2591%25E3%2582%25A4%25E3%2583%2597%25E3%2582%2592%25E4%25BD%25BF%25E3%2581%25A3%25E3%2581%25A6%25E3%2583%2597%25E3%2583%25AD%25E3%2582%25BB%25E3%2582%25B9%25E9%2596%2593%25E9%2580%259A%25E4%25BF%25A1%25E3%2582%2592%25E5%25AE%259F%25E8%25A3%2585%25E3%2581%2597%25E3%2581%25A6%25E3%2581%25BF%25E3%2582%258B%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:mabo%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL3plbm4tdXNlci11cGxvYWQvYXZhdGFyLzQzM2ZhMmVkZDAuanBlZw==%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png"
+      },
+      {
+        "title": "LiNGAMで因果探索する際の前処理の実践②：データの調整",
+        "url": "https://zenn.dev/as_causal/articles/e642ce304ef0a3",
+        "site": "Zenn(Python)",
+        "published": "2025-09-12T04:38:01Z",
+        "description": "はじめに\nこんにちは、因果探索アプリケーション Causalas 開発の井手です。\n前回の記事に引き続き今回も、因果探索アルゴリズムの一つであるLiNGAMを用いた因果探索における、前処理について調査しました。\nLiNGAMに関連する論文を中心に調査を行い、因果探索する際に共通して実施される前処理として、データの性質を調整する手法に焦点を当て、まとめましたので紹介します。\nLiNGAMの前処理にお...",
+        "category": "開発",
+        "rss_category": "",
+        "image_url": "https://res.cloudinary.com/zenn/image/upload/s--Wk42dh2n--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:LiNGAM%25E3%2581%25A7%25E5%259B%25A0%25E6%259E%259C%25E6%258E%25A2%25E7%25B4%25A2%25E3%2581%2599%25E3%2582%258B%25E9%259A%259B%25E3%2581%25AE%25E5%2589%258D%25E5%2587%25A6%25E7%2590%2586%25E3%2581%25AE%25E5%25AE%259F%25E8%25B7%25B5%25E2%2591%25A1%25EF%25BC%259A%25E3%2583%2587%25E3%2583%25BC%25E3%2582%25BF%25E3%2581%25AE%25E8%25AA%25BF%25E6%2595%25B4%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_34:%25E4%25BA%2595%25E6%2589%258B%2520%25E9%25BA%25BB%25E5%258F%258B%25E7%25BE%258E%2Cx_220%2Cy_108/bo_3px_solid_rgb:d6e3ed%2Cg_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL3plbm4tdXNlci11cGxvYWQvYXZhdGFyLzRlNDhjNDQ5MDQuanBlZw==%2Cr_20%2Cw_90%2Cx_92%2Cy_102/co_rgb:6e7b85%2Cg_south_west%2Cl_text:notosansjp-medium.otf_30:SCREEN%2520AS%2520%25E5%259B%25A0%25E6%259E%259C%25E6%258E%25A2%25E7%25B4%25A2%25E3%2583%2581%25E3%2583%25BC%25E3%2583%25A0%2Cx_220%2Cy_160/bo_4px_solid_white%2Cg_south_west%2Ch_50%2Cl_fetch:aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL3plbm4tdXNlci11cGxvYWQvYXZhdGFyLzVlNzhkNTc3OTAuanBlZw==%2Cr_max%2Cw_50%2Cx_139%2Cy_84/v1627283836/default/og-base-w1200-v2.png"
+      },
       {
         "title": "LeetCode 703. Kth Largest Element in a Stream (Python3)",
         "url": "https://zenn.dev/shimpo/articles/leet-code-703-20250906",
@@ -27,14 +47,14 @@
         "image_url": "https://res.cloudinary.com/zenn/image/upload/s--Aq_iBt8G--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:claude%2520code%25E3%2581%25AB%25E3%2583%2595%25E3%2583%25A9%25E3%2582%25AF%25E3%2582%25BF%25E3%2583%25AB%25E5%259B%25B3%25E5%25BD%25A2%25E6%259B%25B8%25E3%2581%258B%25E3%2581%259B%25E3%2581%25A6%25E3%2581%25BF%25E3%2581%259F%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:Akasan%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9saDMuZ29vZ2xldXNlcmNvbnRlbnQuY29tL2EvQUVkRlRwNXJfNDFtel9OY3dPYUtMRE1vc09tbVB6YmxHM0V5N3lNZzI3QWM9czk2LWM=%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png"
       },
       {
-        "title": "【Python】パイプで親子プロセス間通信をしてみる（親↔︎子）",
+        "title": "【Python入門】パイプで親子プロセス間通信をしてみる（親↔︎子）",
         "url": "https://zenn.dev/mabo23/articles/81e48690e0826d",
         "site": "Zenn(Python)",
         "published": "2025-09-11T06:19:18Z",
         "description": "はじめに\n前回の記事で、親子関係にあるプロセスのプロセス間通信を実現する方法としてパイプを解説し、親プロセスから子プロセスへのデータの渡し方について解説しました。\n前回の記事はこちら\nhttps://zenn.dev/mabo23/articles/f829f541b9e427\nこの記事では、親プロセスと子プロセスが相互にパイプを使ってプロセス間通信を実装する方法を、実体験に基づき解説していきます...",
         "category": "開発",
         "rss_category": "",
-        "image_url": "https://res.cloudinary.com/zenn/image/upload/s--HaUWhvLU--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:%25E3%2580%2590Python%25E3%2580%2591%25E3%2583%2591%25E3%2582%25A4%25E3%2583%2597%25E3%2581%25A7%25E8%25A6%25AA%25E5%25AD%2590%25E3%2583%2597%25E3%2583%25AD%25E3%2582%25BB%25E3%2582%25B9%25E9%2596%2593%25E9%2580%259A%25E4%25BF%25A1%25E3%2582%2592%25E3%2581%2597%25E3%2581%25A6%25E3%2581%25BF%25E3%2582%258B%25EF%25BC%2588%25E8%25A6%25AA%2520%25E5%25AD%2590%25EF%25BC%2589%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:mabo%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL3plbm4tdXNlci11cGxvYWQvYXZhdGFyLzQzM2ZhMmVkZDAuanBlZw==%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png"
+        "image_url": "https://res.cloudinary.com/zenn/image/upload/s--ZVsn082Z--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:%25E3%2580%2590Python%25E5%2585%25A5%25E9%2596%2580%25E3%2580%2591%25E3%2583%2591%25E3%2582%25A4%25E3%2583%2597%25E3%2581%25A7%25E8%25A6%25AA%25E5%25AD%2590%25E3%2583%2597%25E3%2583%25AD%25E3%2582%25BB%25E3%2582%25B9%25E9%2596%2593%25E9%2580%259A%25E4%25BF%25A1%25E3%2582%2592%25E3%2581%2597%25E3%2581%25A6%25E3%2581%25BF%25E3%2582%258B%25EF%25BC%2588%25E8%25A6%25AA%2520%25E5%25AD%2590%25EF%25BC%2589%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:mabo%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL3plbm4tdXNlci11cGxvYWQvYXZhdGFyLzQzM2ZhMmVkZDAuanBlZw==%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png"
       },
       {
         "title": "【令和最新版】Windows PC 環境構築手順書（PowerShell）",
@@ -149,14 +169,14 @@
         "image_url": "https://res.cloudinary.com/zenn/image/upload/s--4wVt7kU4--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:ASE%25E3%2583%25A9%25E3%2582%25A4%25E3%2583%2596%25E3%2583%25A9%25E3%2583%25AA%25E3%2582%2592%25E4%25BD%25BF%25E3%2581%25A3%25E3%2581%25A6%25E3%2582%25B0%25E3%2583%25A9%25E3%2583%2595%25E3%2582%25A7%25E3%2583%25B3%25E5%2588%2586%25E5%25AD%2590%25E3%2582%2592%25E6%259B%25B8%25E3%2581%258F%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:haru%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL3plbm4tdXNlci11cGxvYWQvYXZhdGFyLzIyNGNkNDUwYzAuanBlZw==%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png"
       },
       {
-        "title": "【Python】パイプで親子プロセス間通信をしてみる（親→子）",
+        "title": "【Python入門】パイプで親子プロセス間通信をしてみる（親→子）",
         "url": "https://zenn.dev/mabo23/articles/f829f541b9e427",
         "site": "Zenn(Python)",
         "published": "2025-09-10T05:39:56Z",
         "description": "はじめに\nアプリケーションプロセスが扱うデータはどのように他のプロセスに渡されるのか。\nその方法は、パイプ・名前付きパイプ・ソケットなどさまざまありますが、この記事では、パイプにフォーカスして基本を解説していきます。\n\n パイプとは何か\nパイプは親子関係にあるプロセスがデータを「一方通行」で送受信する、プロセス間通信の仕組みです。\n片方のプロセスが書き込んだデータを、もう片方のプロセスが読み込んで...",
         "category": "開発",
         "rss_category": "",
-        "image_url": "https://res.cloudinary.com/zenn/image/upload/s--cslXGYzz--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:%25E3%2580%2590Python%25E3%2580%2591%25E3%2583%2591%25E3%2582%25A4%25E3%2583%2597%25E3%2581%25A7%25E8%25A6%25AA%25E5%25AD%2590%25E3%2583%2597%25E3%2583%25AD%25E3%2582%25BB%25E3%2582%25B9%25E9%2596%2593%25E9%2580%259A%25E4%25BF%25A1%25E3%2582%2592%25E3%2581%2597%25E3%2581%25A6%25E3%2581%25BF%25E3%2582%258B%25EF%25BC%2588%25E8%25A6%25AA%25E2%2586%2592%25E5%25AD%2590%25EF%25BC%2589%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:mabo%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL3plbm4tdXNlci11cGxvYWQvYXZhdGFyLzQzM2ZhMmVkZDAuanBlZw==%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png"
+        "image_url": "https://res.cloudinary.com/zenn/image/upload/s--j7_NcUGx--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:%25E3%2580%2590Python%25E5%2585%25A5%25E9%2596%2580%25E3%2580%2591%25E3%2583%2591%25E3%2582%25A4%25E3%2583%2597%25E3%2581%25A7%25E8%25A6%25AA%25E5%25AD%2590%25E3%2583%2597%25E3%2583%25AD%25E3%2582%25BB%25E3%2582%25B9%25E9%2596%2593%25E9%2580%259A%25E4%25BF%25A1%25E3%2582%2592%25E3%2581%2597%25E3%2581%25A6%25E3%2581%25BF%25E3%2582%258B%25EF%25BC%2588%25E8%25A6%25AA%25E2%2586%2592%25E5%25AD%2590%25EF%25BC%2589%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:mabo%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL3plbm4tdXNlci11cGxvYWQvYXZhdGFyLzQzM2ZhMmVkZDAuanBlZw==%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png"
       },
       {
         "title": "【ベクトル・行列】機械学習で使う数学をいまさら勉強する【図解あり】",
@@ -181,6 +201,26 @@
     ],
     "2025-09": [
       {
+        "title": "【Python入門】名前付きパイプを使ってプロセス間通信を実装してみる",
+        "url": "https://zenn.dev/mabo23/articles/762ecfd6d93138",
+        "site": "Zenn(Python)",
+        "published": "2025-09-12T06:24:29Z",
+        "description": "はじめに\nプロセス間通信（IPC）において、データを単方向に渡す方法としてパイプがあります。\nパイプは単方向通信に使用され、片方のプロセスが書き込み、もう片方のプロセスが読み込むことによってデータ送信を実現しています。\n詳しくはこちらの記事をご参照ください\nhttps://qiita.com/mabo23/items/d461387d4a2555803dac\nただし、os.pipe() で作られる...",
+        "category": "開発",
+        "rss_category": "",
+        "image_url": "https://res.cloudinary.com/zenn/image/upload/s--qAPnQ34R--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:%25E3%2580%2590Python%25E5%2585%25A5%25E9%2596%2580%25E3%2580%2591%25E5%2590%258D%25E5%2589%258D%25E4%25BB%2598%25E3%2581%258D%25E3%2583%2591%25E3%2582%25A4%25E3%2583%2597%25E3%2582%2592%25E4%25BD%25BF%25E3%2581%25A3%25E3%2581%25A6%25E3%2583%2597%25E3%2583%25AD%25E3%2582%25BB%25E3%2582%25B9%25E9%2596%2593%25E9%2580%259A%25E4%25BF%25A1%25E3%2582%2592%25E5%25AE%259F%25E8%25A3%2585%25E3%2581%2597%25E3%2581%25A6%25E3%2581%25BF%25E3%2582%258B%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:mabo%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL3plbm4tdXNlci11cGxvYWQvYXZhdGFyLzQzM2ZhMmVkZDAuanBlZw==%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png"
+      },
+      {
+        "title": "LiNGAMで因果探索する際の前処理の実践②：データの調整",
+        "url": "https://zenn.dev/as_causal/articles/e642ce304ef0a3",
+        "site": "Zenn(Python)",
+        "published": "2025-09-12T04:38:01Z",
+        "description": "はじめに\nこんにちは、因果探索アプリケーション Causalas 開発の井手です。\n前回の記事に引き続き今回も、因果探索アルゴリズムの一つであるLiNGAMを用いた因果探索における、前処理について調査しました。\nLiNGAMに関連する論文を中心に調査を行い、因果探索する際に共通して実施される前処理として、データの性質を調整する手法に焦点を当て、まとめましたので紹介します。\nLiNGAMの前処理にお...",
+        "category": "開発",
+        "rss_category": "",
+        "image_url": "https://res.cloudinary.com/zenn/image/upload/s--Wk42dh2n--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:LiNGAM%25E3%2581%25A7%25E5%259B%25A0%25E6%259E%259C%25E6%258E%25A2%25E7%25B4%25A2%25E3%2581%2599%25E3%2582%258B%25E9%259A%259B%25E3%2581%25AE%25E5%2589%258D%25E5%2587%25A6%25E7%2590%2586%25E3%2581%25AE%25E5%25AE%259F%25E8%25B7%25B5%25E2%2591%25A1%25EF%25BC%259A%25E3%2583%2587%25E3%2583%25BC%25E3%2582%25BF%25E3%2581%25AE%25E8%25AA%25BF%25E6%2595%25B4%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_34:%25E4%25BA%2595%25E6%2589%258B%2520%25E9%25BA%25BB%25E5%258F%258B%25E7%25BE%258E%2Cx_220%2Cy_108/bo_3px_solid_rgb:d6e3ed%2Cg_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL3plbm4tdXNlci11cGxvYWQvYXZhdGFyLzRlNDhjNDQ5MDQuanBlZw==%2Cr_20%2Cw_90%2Cx_92%2Cy_102/co_rgb:6e7b85%2Cg_south_west%2Cl_text:notosansjp-medium.otf_30:SCREEN%2520AS%2520%25E5%259B%25A0%25E6%259E%259C%25E6%258E%25A2%25E7%25B4%25A2%25E3%2583%2581%25E3%2583%25BC%25E3%2583%25A0%2Cx_220%2Cy_160/bo_4px_solid_white%2Cg_south_west%2Ch_50%2Cl_fetch:aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL3plbm4tdXNlci11cGxvYWQvYXZhdGFyLzVlNzhkNTc3OTAuanBlZw==%2Cr_max%2Cw_50%2Cx_139%2Cy_84/v1627283836/default/og-base-w1200-v2.png"
+      },
+      {
         "title": "LeetCode 703. Kth Largest Element in a Stream (Python3)",
         "url": "https://zenn.dev/shimpo/articles/leet-code-703-20250906",
         "site": "Zenn(Python)",
@@ -201,14 +241,14 @@
         "image_url": "https://res.cloudinary.com/zenn/image/upload/s--Aq_iBt8G--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:claude%2520code%25E3%2581%25AB%25E3%2583%2595%25E3%2583%25A9%25E3%2582%25AF%25E3%2582%25BF%25E3%2583%25AB%25E5%259B%25B3%25E5%25BD%25A2%25E6%259B%25B8%25E3%2581%258B%25E3%2581%259B%25E3%2581%25A6%25E3%2581%25BF%25E3%2581%259F%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:Akasan%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9saDMuZ29vZ2xldXNlcmNvbnRlbnQuY29tL2EvQUVkRlRwNXJfNDFtel9OY3dPYUtMRE1vc09tbVB6YmxHM0V5N3lNZzI3QWM9czk2LWM=%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png"
       },
       {
-        "title": "【Python】パイプで親子プロセス間通信をしてみる（親↔︎子）",
+        "title": "【Python入門】パイプで親子プロセス間通信をしてみる（親↔︎子）",
         "url": "https://zenn.dev/mabo23/articles/81e48690e0826d",
         "site": "Zenn(Python)",
         "published": "2025-09-11T06:19:18Z",
         "description": "はじめに\n前回の記事で、親子関係にあるプロセスのプロセス間通信を実現する方法としてパイプを解説し、親プロセスから子プロセスへのデータの渡し方について解説しました。\n前回の記事はこちら\nhttps://zenn.dev/mabo23/articles/f829f541b9e427\nこの記事では、親プロセスと子プロセスが相互にパイプを使ってプロセス間通信を実装する方法を、実体験に基づき解説していきます...",
         "category": "開発",
         "rss_category": "",
-        "image_url": "https://res.cloudinary.com/zenn/image/upload/s--HaUWhvLU--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:%25E3%2580%2590Python%25E3%2580%2591%25E3%2583%2591%25E3%2582%25A4%25E3%2583%2597%25E3%2581%25A7%25E8%25A6%25AA%25E5%25AD%2590%25E3%2583%2597%25E3%2583%25AD%25E3%2582%25BB%25E3%2582%25B9%25E9%2596%2593%25E9%2580%259A%25E4%25BF%25A1%25E3%2582%2592%25E3%2581%2597%25E3%2581%25A6%25E3%2581%25BF%25E3%2582%258B%25EF%25BC%2588%25E8%25A6%25AA%2520%25E5%25AD%2590%25EF%25BC%2589%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:mabo%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL3plbm4tdXNlci11cGxvYWQvYXZhdGFyLzQzM2ZhMmVkZDAuanBlZw==%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png"
+        "image_url": "https://res.cloudinary.com/zenn/image/upload/s--ZVsn082Z--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:%25E3%2580%2590Python%25E5%2585%25A5%25E9%2596%2580%25E3%2580%2591%25E3%2583%2591%25E3%2582%25A4%25E3%2583%2597%25E3%2581%25A7%25E8%25A6%25AA%25E5%25AD%2590%25E3%2583%2597%25E3%2583%25AD%25E3%2582%25BB%25E3%2582%25B9%25E9%2596%2593%25E9%2580%259A%25E4%25BF%25A1%25E3%2582%2592%25E3%2581%2597%25E3%2581%25A6%25E3%2581%25BF%25E3%2582%258B%25EF%25BC%2588%25E8%25A6%25AA%2520%25E5%25AD%2590%25EF%25BC%2589%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:mabo%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL3plbm4tdXNlci11cGxvYWQvYXZhdGFyLzQzM2ZhMmVkZDAuanBlZw==%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png"
       },
       {
         "title": "【令和最新版】Windows PC 環境構築手順書（PowerShell）",
@@ -321,14 +361,14 @@
         "image_url": "https://res.cloudinary.com/zenn/image/upload/s--4wVt7kU4--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:ASE%25E3%2583%25A9%25E3%2582%25A4%25E3%2583%2596%25E3%2583%25A9%25E3%2583%25AA%25E3%2582%2592%25E4%25BD%25BF%25E3%2581%25A3%25E3%2581%25A6%25E3%2582%25B0%25E3%2583%25A9%25E3%2583%2595%25E3%2582%25A7%25E3%2583%25B3%25E5%2588%2586%25E5%25AD%2590%25E3%2582%2592%25E6%259B%25B8%25E3%2581%258F%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:haru%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL3plbm4tdXNlci11cGxvYWQvYXZhdGFyLzIyNGNkNDUwYzAuanBlZw==%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png"
       },
       {
-        "title": "【Python】パイプで親子プロセス間通信をしてみる（親→子）",
+        "title": "【Python入門】パイプで親子プロセス間通信をしてみる（親→子）",
         "url": "https://zenn.dev/mabo23/articles/f829f541b9e427",
         "site": "Zenn(Python)",
         "published": "2025-09-10T05:39:56Z",
         "description": "はじめに\nアプリケーションプロセスが扱うデータはどのように他のプロセスに渡されるのか。\nその方法は、パイプ・名前付きパイプ・ソケットなどさまざまありますが、この記事では、パイプにフォーカスして基本を解説していきます。\n\n パイプとは何か\nパイプは親子関係にあるプロセスがデータを「一方通行」で送受信する、プロセス間通信の仕組みです。\n片方のプロセスが書き込んだデータを、もう片方のプロセスが読み込んで...",
         "category": "開発",
         "rss_category": "",
-        "image_url": "https://res.cloudinary.com/zenn/image/upload/s--cslXGYzz--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:%25E3%2580%2590Python%25E3%2580%2591%25E3%2583%2591%25E3%2582%25A4%25E3%2583%2597%25E3%2581%25A7%25E8%25A6%25AA%25E5%25AD%2590%25E3%2583%2597%25E3%2583%25AD%25E3%2582%25BB%25E3%2582%25B9%25E9%2596%2593%25E9%2580%259A%25E4%25BF%25A1%25E3%2582%2592%25E3%2581%2597%25E3%2581%25A6%25E3%2581%25BF%25E3%2582%258B%25EF%25BC%2588%25E8%25A6%25AA%25E2%2586%2592%25E5%25AD%2590%25EF%25BC%2589%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:mabo%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL3plbm4tdXNlci11cGxvYWQvYXZhdGFyLzQzM2ZhMmVkZDAuanBlZw==%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png"
+        "image_url": "https://res.cloudinary.com/zenn/image/upload/s--j7_NcUGx--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:%25E3%2580%2590Python%25E5%2585%25A5%25E9%2596%2580%25E3%2580%2591%25E3%2583%2591%25E3%2582%25A4%25E3%2583%2597%25E3%2581%25A7%25E8%25A6%25AA%25E5%25AD%2590%25E3%2583%2597%25E3%2583%25AD%25E3%2582%25BB%25E3%2582%25B9%25E9%2596%2593%25E9%2580%259A%25E4%25BF%25A1%25E3%2582%2592%25E3%2581%2597%25E3%2581%25A6%25E3%2581%25BF%25E3%2582%258B%25EF%25BC%2588%25E8%25A6%25AA%25E2%2586%2592%25E5%25AD%2590%25EF%25BC%2589%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:mabo%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL3plbm4tdXNlci11cGxvYWQvYXZhdGFyLzQzM2ZhMmVkZDAuanBlZw==%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png"
       },
       {
         "title": "【ベクトル・行列】機械学習で使う数学をいまさら勉強する【図解あり】",
