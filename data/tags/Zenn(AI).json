@@ -1,9 +1,39 @@
 {
   "site": "Zenn(AI)",
-  "last_updated": "2025-09-21T10:10:37.406563",
-  "total_articles": 1287,
+  "last_updated": "2025-09-21T10:31:51.897705",
+  "total_articles": 1289,
   "articles_by_date": {
     "本日": [
+      {
+        "title": "AIエージェントを脱線させないプロンプト設計の実践ガイド",
+        "url": "https://zenn.dev/toccasystems/articles/ai-agent-guardrail-prompt-tips",
+        "site": "Zenn(AI)",
+        "published": "2025-09-21T10:08:20Z",
+        "description": "はじめに\nDevinやGitHub Copilot AgentのようなAIエージェントは、設計・実装の一部を自動化し開発速度を大きく向上させます。しかし、明確なガードレールなしに指示を出すと、リポジトリの前提を誤解したり、想定外の実装に踏み込んだりして生産性が下がることも少なくありません。本記事では、AIエージェントが設計や開発タスクを脱線しないようにするためのプロンプトのコツを、READMEやd...",
+        "category": "AI・技術",
+        "rss_category": "",
+        "image_url": "https://res.cloudinary.com/zenn/image/upload/s--p8L82gRT--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:AI%25E3%2582%25A8%25E3%2583%25BC%25E3%2582%25B8%25E3%2582%25A7%25E3%2583%25B3%25E3%2583%2588%25E3%2582%2592%25E8%2584%25B1%25E7%25B7%259A%25E3%2581%2595%25E3%2581%259B%25E3%2581%25AA%25E3%2581%2584%25E3%2583%2597%25E3%2583%25AD%25E3%2583%25B3%25E3%2583%2597%25E3%2583%2588%25E8%25A8%25AD%25E8%25A8%2588%25E3%2581%25AE%25E5%25AE%259F%25E8%25B7%25B5%25E3%2582%25AC%25E3%2582%25A4%25E3%2583%2589%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_34:Tatsuki%2520Tani%2Cx_220%2Cy_108/bo_3px_solid_rgb:d6e3ed%2Cg_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL3plbm4tdXNlci11cGxvYWQvYXZhdGFyL2Q1ZTdjOGJhMTYuanBlZw==%2Cr_20%2Cw_90%2Cx_92%2Cy_102/co_rgb:6e7b85%2Cg_south_west%2Cl_text:notosansjp-medium.otf_30:%25E6%25A0%25AA%25E5%25BC%258F%25E4%25BC%259A%25E7%25A4%25BE%25E3%2583%2588%25E3%2583%2583%25E3%2582%25AB%25E3%2582%25B7%25E3%2582%25B9%25E3%2583%2586%25E3%2583%25A0%25E3%2582%25BA%2Cx_220%2Cy_160/bo_4px_solid_white%2Cg_south_west%2Ch_50%2Cl_fetch:aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL3plbm4tdXNlci11cGxvYWQvYXZhdGFyL2Y5NDdlNzdmMDkuanBlZw==%2Cr_max%2Cw_50%2Cx_139%2Cy_84/v1627283836/default/og-base-w1200-v2.png"
+      },
+      {
+        "title": "AIを日常業務に根づかせるために—QA視点で考える「業務データ品質」と組織プロセス",
+        "url": "https://zenn.dev/sunny9/articles/2025-09-21-dataquality-idea",
+        "site": "Zenn(AI)",
+        "published": "2025-09-21T08:26:06Z",
+        "description": "要旨\nAI の働きは、モデルの良し悪し以上に入力されるデータの質に大きく依存する。\n日々の業務の一部を AI に移譲するためには、業務の中で生まれるデータ（チケット／設計書／議事録／決定履歴／FAQ 等）が高品質であることに越したことはない。\n本稿は、QA 視点でのデータ品質の観点と、組織としてそれを保つための仕組みを整理する。\n\n\n なぜいま「業務データ品質」なのか\n\n 1. AI は“書かれた...",
+        "category": "AI・技術",
+        "rss_category": "",
+        "image_url": "https://res.cloudinary.com/zenn/image/upload/s--284OMwS8--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:AI%25E3%2582%2592%25E6%2597%25A5%25E5%25B8%25B8%25E6%25A5%25AD%25E5%258B%2599%25E3%2581%25AB%25E6%25A0%25B9%25E3%2581%25A5%25E3%2581%258B%25E3%2581%259B%25E3%2582%258B%25E3%2581%259F%25E3%2582%2581%25E3%2581%25AB%25E2%2580%2594QA%25E8%25A6%2596%25E7%2582%25B9%25E3%2581%25A7%25E8%2580%2583%25E3%2581%2588%25E3%2582%258B%25E3%2580%258C%25E6%25A5%25AD%25E5%258B%2599%25E3%2583%2587%25E3%2583%25BC%25E3%2582%25BF%25E5%2593%2581%25E8%25B3%25AA%25E3%2580%258D%25E3%2581%25A8%25E7%25B5%2584%25E7%25B9%2594%25E3%2583%2597%25E3%2583%25AD%25E3%2582%25BB%25E3%2582%25B9%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:%25E3%2581%259F%25E3%2581%258B%25E3%2581%25A9%25E3%2582%2593%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL3plbm4tdXNlci11cGxvYWQvYXZhdGFyLzdmOWUzZDY4ZjMuanBlZw==%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png"
+      },
+      {
+        "title": "なぜ、高IQ者に比べて、ガリ勉して数学が出来るようになった人が先にAIによって淘汰されるのか？",
+        "url": "https://zenn.dev/pdfractal/articles/ea479bbe7a69d0",
+        "site": "Zenn(AI)",
+        "published": "2025-09-21T06:53:35Z",
+        "description": "はじめに\n近年、生成AIや大規模言語モデル（LLM）の急速な進歩により、多くの知的職業が自動化されつつあります。とりわけ注目を集めているのが、AIが大学入試や資格試験レベルの数学問題を正解するようになったというニュースです。かつては高い知性と努力の象徴だった数学的能力が、AIにあっさり追い抜かれるという現実は、衝撃的に映るでしょう。\nしかし本質的に言えば、AIは論理的推論によって数学を解いているわ...",
+        "category": "AI・技術",
+        "rss_category": "",
+        "image_url": "https://res.cloudinary.com/zenn/image/upload/s--oLcD0fG6--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:%25E3%2581%25AA%25E3%2581%259C%25E3%2580%2581%25E9%25AB%2598IQ%25E8%2580%2585%25E3%2581%25AB%25E6%25AF%2594%25E3%2581%25B9%25E3%2581%25A6%25E3%2580%2581%25E3%2582%25AC%25E3%2583%25AA%25E5%258B%2589%25E3%2581%2597%25E3%2581%25A6%25E6%2595%25B0%25E5%25AD%25A6%25E3%2581%258C%25E5%2587%25BA%25E6%259D%25A5%25E3%2582%258B%25E3%2582%2588%25E3%2581%2586%25E3%2581%25AB%25E3%2581%25AA%25E3%2581%25A3%25E3%2581%259F%25E4%25BA%25BA%25E3%2581%258C%25E5%2585%2588%25E3%2581%25ABAI%25E3%2581%25AB%25E3%2582%2588%25E3%2581%25A3%25E3%2581%25A6%25E6%25B7%2598%25E6%25B1%25B0%25E3%2581%2595%25E3%2582%258C%25E3%2582%258B%25E3%2581%25AE%25E3%2581%258B%25EF%25BC%259F%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:pdfractal%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL3plbm4tdXNlci11cGxvYWQvYXZhdGFyL2M4ZmJkZmFkY2QuanBlZw==%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png"
+      },
       {
         "title": "ChatGptに「最強の投資家」として数百社への投資判断を行ってもらい、結果をスプシに一括出力しよう",
         "url": "https://zenn.dev/matsupiee/articles/3ccca3df92197b",
@@ -177,26 +207,6 @@
         "image_url": "https://res.cloudinary.com/zenn/image/upload/s--EVkBliSX--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:Claude%2520Code%25E3%2582%25AB%25E3%2582%25B9%25E3%2582%25BF%25E3%2583%25A0%25E3%2582%25B3%25E3%2583%259E%25E3%2583%25B3%25E3%2583%2589%25E3%2581%25A7%25E4%25B9%2597%25E3%2582%258A%25E5%2588%2587%25E3%2582%258BWAF%25E8%25A8%25AD%25E5%25AE%259A%25E3%2581%25AE%25E3%2581%25A4%25E3%2582%2589%25E3%2581%25BF%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_34:mutao%2Cx_220%2Cy_108/bo_3px_solid_rgb:d6e3ed%2Cg_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL3plbm4tdXNlci11cGxvYWQvYXZhdGFyLzJkZmVkY2VkZTAuanBlZw==%2Cr_20%2Cw_90%2Cx_92%2Cy_102/co_rgb:6e7b85%2Cg_south_west%2Cl_text:notosansjp-medium.otf_30:GLOBIS%2520Tech%2Cx_220%2Cy_160/bo_4px_solid_white%2Cg_south_west%2Ch_50%2Cl_fetch:aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL3plbm4tdXNlci11cGxvYWQvYXZhdGFyLzBkOTg4YWVmMWUuanBlZw==%2Cr_max%2Cw_50%2Cx_139%2Cy_84/v1627283836/default/og-base-w1200-v2.png"
       },
       {
-        "title": "なぜ、AGIを作るためには「精神と時の部屋」が必要なのか？",
-        "url": "https://zenn.dev/pdfractal/articles/01d4a25a6850f3",
-        "site": "Zenn(AI)",
-        "published": "2025-09-20T05:57:24Z",
-        "description": "はじめに\n近年、ChatGPTに代表される大規模言語モデル（LLM）が急速に発展し、人間のような自然な対話や創造的な文章生成を行えるようになっています。しかし、こうしたLLMは依然として「汎用人工知能（AGI）」とは言えません。AGIとは、人間と同等以上に世界を理解し、試行錯誤を通じて自己改善できる知能を指しますが、LLMは膨大なテキストデータを統計的に模倣するだけであり、実世界で行動して因果的フ...",
-        "category": "AI・技術",
-        "rss_category": "",
-        "image_url": "https://res.cloudinary.com/zenn/image/upload/s--s3-XgH8D--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:%25E3%2581%25AA%25E3%2581%259C%25E3%2580%2581AGI%25E3%2582%2592%25E4%25BD%259C%25E3%2582%258B%25E3%2581%259F%25E3%2582%2581%25E3%2581%25AB%25E3%2581%25AF%25E3%2580%258C%25E7%25B2%25BE%25E7%25A5%259E%25E3%2581%25A8%25E6%2599%2582%25E3%2581%25AE%25E9%2583%25A8%25E5%25B1%258B%25E3%2580%258D%25E3%2581%258C%25E5%25BF%2585%25E8%25A6%2581%25E3%2581%25AA%25E3%2581%25AE%25E3%2581%258B%25EF%25BC%259F%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:pdfractal%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL3plbm4tdXNlci11cGxvYWQvYXZhdGFyL2M4ZmJkZmFkY2QuanBlZw==%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png"
-      },
-      {
-        "title": "LLMとSLM調べてみた",
-        "url": "https://zenn.dev/uepon/articles/f222be6911532f",
-        "site": "Zenn(AI)",
-        "published": "2025-09-20T03:08:46Z",
-        "description": "LLMとSLM調べてみた\n\n 書いた理由\n最近SLMという言葉をよく見かけるようになりました。最初はオフライン用とかオンプレミス環境向けの技術だと思っていました。社内データを外に出したくない企業向けかなと。\n調べてみたらそれだけではありませんでした。AIエージェントの分野でSLMの方がLLMより効率的という話があって、これは驚きました。備忘録として残しておきます。\n参考文献：\n\nSmall Lan...",
-        "category": "AI・技術",
-        "rss_category": "",
-        "image_url": "https://res.cloudinary.com/zenn/image/upload/s--H2HmuKih--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:LLM%25E3%2581%25A8SLM%25E8%25AA%25BF%25E3%2581%25B9%25E3%2581%25A6%25E3%2581%25BF%25E3%2581%259F%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:ue%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9saDMuZ29vZ2xldXNlcmNvbnRlbnQuY29tL2EtL0FPaDE0R2lIVW4zSmVfbW43ZlowbXlNVXRtOXpyLWZ1S0J3YjVTVUhnMXJWSFE9czk2LWM=%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png"
-      },
-      {
         "title": "情報革命、知識革命、知性革命",
         "url": "https://zenn.dev/tregu0458/articles/886c72347028fb",
         "site": "Zenn(AI)",
@@ -350,6 +360,36 @@
       }
     ],
     "2025-09": [
+      {
+        "title": "AIエージェントを脱線させないプロンプト設計の実践ガイド",
+        "url": "https://zenn.dev/toccasystems/articles/ai-agent-guardrail-prompt-tips",
+        "site": "Zenn(AI)",
+        "published": "2025-09-21T10:08:20Z",
+        "description": "はじめに\nDevinやGitHub Copilot AgentのようなAIエージェントは、設計・実装の一部を自動化し開発速度を大きく向上させます。しかし、明確なガードレールなしに指示を出すと、リポジトリの前提を誤解したり、想定外の実装に踏み込んだりして生産性が下がることも少なくありません。本記事では、AIエージェントが設計や開発タスクを脱線しないようにするためのプロンプトのコツを、READMEやd...",
+        "category": "AI・技術",
+        "rss_category": "",
+        "image_url": "https://res.cloudinary.com/zenn/image/upload/s--p8L82gRT--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:AI%25E3%2582%25A8%25E3%2583%25BC%25E3%2582%25B8%25E3%2582%25A7%25E3%2583%25B3%25E3%2583%2588%25E3%2582%2592%25E8%2584%25B1%25E7%25B7%259A%25E3%2581%2595%25E3%2581%259B%25E3%2581%25AA%25E3%2581%2584%25E3%2583%2597%25E3%2583%25AD%25E3%2583%25B3%25E3%2583%2597%25E3%2583%2588%25E8%25A8%25AD%25E8%25A8%2588%25E3%2581%25AE%25E5%25AE%259F%25E8%25B7%25B5%25E3%2582%25AC%25E3%2582%25A4%25E3%2583%2589%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_34:Tatsuki%2520Tani%2Cx_220%2Cy_108/bo_3px_solid_rgb:d6e3ed%2Cg_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL3plbm4tdXNlci11cGxvYWQvYXZhdGFyL2Q1ZTdjOGJhMTYuanBlZw==%2Cr_20%2Cw_90%2Cx_92%2Cy_102/co_rgb:6e7b85%2Cg_south_west%2Cl_text:notosansjp-medium.otf_30:%25E6%25A0%25AA%25E5%25BC%258F%25E4%25BC%259A%25E7%25A4%25BE%25E3%2583%2588%25E3%2583%2583%25E3%2582%25AB%25E3%2582%25B7%25E3%2582%25B9%25E3%2583%2586%25E3%2583%25A0%25E3%2582%25BA%2Cx_220%2Cy_160/bo_4px_solid_white%2Cg_south_west%2Ch_50%2Cl_fetch:aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL3plbm4tdXNlci11cGxvYWQvYXZhdGFyL2Y5NDdlNzdmMDkuanBlZw==%2Cr_max%2Cw_50%2Cx_139%2Cy_84/v1627283836/default/og-base-w1200-v2.png"
+      },
+      {
+        "title": "AIを日常業務に根づかせるために—QA視点で考える「業務データ品質」と組織プロセス",
+        "url": "https://zenn.dev/sunny9/articles/2025-09-21-dataquality-idea",
+        "site": "Zenn(AI)",
+        "published": "2025-09-21T08:26:06Z",
+        "description": "要旨\nAI の働きは、モデルの良し悪し以上に入力されるデータの質に大きく依存する。\n日々の業務の一部を AI に移譲するためには、業務の中で生まれるデータ（チケット／設計書／議事録／決定履歴／FAQ 等）が高品質であることに越したことはない。\n本稿は、QA 視点でのデータ品質の観点と、組織としてそれを保つための仕組みを整理する。\n\n\n なぜいま「業務データ品質」なのか\n\n 1. AI は“書かれた...",
+        "category": "AI・技術",
+        "rss_category": "",
+        "image_url": "https://res.cloudinary.com/zenn/image/upload/s--284OMwS8--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:AI%25E3%2582%2592%25E6%2597%25A5%25E5%25B8%25B8%25E6%25A5%25AD%25E5%258B%2599%25E3%2581%25AB%25E6%25A0%25B9%25E3%2581%25A5%25E3%2581%258B%25E3%2581%259B%25E3%2582%258B%25E3%2581%259F%25E3%2582%2581%25E3%2581%25AB%25E2%2580%2594QA%25E8%25A6%2596%25E7%2582%25B9%25E3%2581%25A7%25E8%2580%2583%25E3%2581%2588%25E3%2582%258B%25E3%2580%258C%25E6%25A5%25AD%25E5%258B%2599%25E3%2583%2587%25E3%2583%25BC%25E3%2582%25BF%25E5%2593%2581%25E8%25B3%25AA%25E3%2580%258D%25E3%2581%25A8%25E7%25B5%2584%25E7%25B9%2594%25E3%2583%2597%25E3%2583%25AD%25E3%2582%25BB%25E3%2582%25B9%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:%25E3%2581%259F%25E3%2581%258B%25E3%2581%25A9%25E3%2582%2593%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL3plbm4tdXNlci11cGxvYWQvYXZhdGFyLzdmOWUzZDY4ZjMuanBlZw==%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png"
+      },
+      {
+        "title": "なぜ、高IQ者に比べて、ガリ勉して数学が出来るようになった人が先にAIによって淘汰されるのか？",
+        "url": "https://zenn.dev/pdfractal/articles/ea479bbe7a69d0",
+        "site": "Zenn(AI)",
+        "published": "2025-09-21T06:53:35Z",
+        "description": "はじめに\n近年、生成AIや大規模言語モデル（LLM）の急速な進歩により、多くの知的職業が自動化されつつあります。とりわけ注目を集めているのが、AIが大学入試や資格試験レベルの数学問題を正解するようになったというニュースです。かつては高い知性と努力の象徴だった数学的能力が、AIにあっさり追い抜かれるという現実は、衝撃的に映るでしょう。\nしかし本質的に言えば、AIは論理的推論によって数学を解いているわ...",
+        "category": "AI・技術",
+        "rss_category": "",
+        "image_url": "https://res.cloudinary.com/zenn/image/upload/s--oLcD0fG6--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:%25E3%2581%25AA%25E3%2581%259C%25E3%2580%2581%25E9%25AB%2598IQ%25E8%2580%2585%25E3%2581%25AB%25E6%25AF%2594%25E3%2581%25B9%25E3%2581%25A6%25E3%2580%2581%25E3%2582%25AC%25E3%2583%25AA%25E5%258B%2589%25E3%2581%2597%25E3%2581%25A6%25E6%2595%25B0%25E5%25AD%25A6%25E3%2581%258C%25E5%2587%25BA%25E6%259D%25A5%25E3%2582%258B%25E3%2582%2588%25E3%2581%2586%25E3%2581%25AB%25E3%2581%25AA%25E3%2581%25A3%25E3%2581%259F%25E4%25BA%25BA%25E3%2581%258C%25E5%2585%2588%25E3%2581%25ABAI%25E3%2581%25AB%25E3%2582%2588%25E3%2581%25A3%25E3%2581%25A6%25E6%25B7%2598%25E6%25B1%25B0%25E3%2581%2595%25E3%2582%258C%25E3%2582%258B%25E3%2581%25AE%25E3%2581%258B%25EF%25BC%259F%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:pdfractal%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL3plbm4tdXNlci11cGxvYWQvYXZhdGFyL2M4ZmJkZmFkY2QuanBlZw==%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png"
+      },
       {
         "title": "ChatGptに「最強の投資家」として数百社への投資判断を行ってもらい、結果をスプシに一括出力しよう",
         "url": "https://zenn.dev/matsupiee/articles/3ccca3df92197b",
@@ -519,26 +559,6 @@
         "category": "AI・技術",
         "rss_category": "",
         "image_url": "https://res.cloudinary.com/zenn/image/upload/s--EVkBliSX--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:Claude%2520Code%25E3%2582%25AB%25E3%2582%25B9%25E3%2582%25BF%25E3%2583%25A0%25E3%2582%25B3%25E3%2583%259E%25E3%2583%25B3%25E3%2583%2589%25E3%2581%25A7%25E4%25B9%2597%25E3%2582%258A%25E5%2588%2587%25E3%2582%258BWAF%25E8%25A8%25AD%25E5%25AE%259A%25E3%2581%25AE%25E3%2581%25A4%25E3%2582%2589%25E3%2581%25BF%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_34:mutao%2Cx_220%2Cy_108/bo_3px_solid_rgb:d6e3ed%2Cg_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL3plbm4tdXNlci11cGxvYWQvYXZhdGFyLzJkZmVkY2VkZTAuanBlZw==%2Cr_20%2Cw_90%2Cx_92%2Cy_102/co_rgb:6e7b85%2Cg_south_west%2Cl_text:notosansjp-medium.otf_30:GLOBIS%2520Tech%2Cx_220%2Cy_160/bo_4px_solid_white%2Cg_south_west%2Ch_50%2Cl_fetch:aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL3plbm4tdXNlci11cGxvYWQvYXZhdGFyLzBkOTg4YWVmMWUuanBlZw==%2Cr_max%2Cw_50%2Cx_139%2Cy_84/v1627283836/default/og-base-w1200-v2.png"
-      },
-      {
-        "title": "なぜ、AGIを作るためには「精神と時の部屋」が必要なのか？",
-        "url": "https://zenn.dev/pdfractal/articles/01d4a25a6850f3",
-        "site": "Zenn(AI)",
-        "published": "2025-09-20T05:57:24Z",
-        "description": "はじめに\n近年、ChatGPTに代表される大規模言語モデル（LLM）が急速に発展し、人間のような自然な対話や創造的な文章生成を行えるようになっています。しかし、こうしたLLMは依然として「汎用人工知能（AGI）」とは言えません。AGIとは、人間と同等以上に世界を理解し、試行錯誤を通じて自己改善できる知能を指しますが、LLMは膨大なテキストデータを統計的に模倣するだけであり、実世界で行動して因果的フ...",
-        "category": "AI・技術",
-        "rss_category": "",
-        "image_url": "https://res.cloudinary.com/zenn/image/upload/s--s3-XgH8D--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:%25E3%2581%25AA%25E3%2581%259C%25E3%2580%2581AGI%25E3%2582%2592%25E4%25BD%259C%25E3%2582%258B%25E3%2581%259F%25E3%2582%2581%25E3%2581%25AB%25E3%2581%25AF%25E3%2580%258C%25E7%25B2%25BE%25E7%25A5%259E%25E3%2581%25A8%25E6%2599%2582%25E3%2581%25AE%25E9%2583%25A8%25E5%25B1%258B%25E3%2580%258D%25E3%2581%258C%25E5%25BF%2585%25E8%25A6%2581%25E3%2581%25AA%25E3%2581%25AE%25E3%2581%258B%25EF%25BC%259F%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:pdfractal%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL3plbm4tdXNlci11cGxvYWQvYXZhdGFyL2M4ZmJkZmFkY2QuanBlZw==%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png"
-      },
-      {
-        "title": "LLMとSLM調べてみた",
-        "url": "https://zenn.dev/uepon/articles/f222be6911532f",
-        "site": "Zenn(AI)",
-        "published": "2025-09-20T03:08:46Z",
-        "description": "LLMとSLM調べてみた\n\n 書いた理由\n最近SLMという言葉をよく見かけるようになりました。最初はオフライン用とかオンプレミス環境向けの技術だと思っていました。社内データを外に出したくない企業向けかなと。\n調べてみたらそれだけではありませんでした。AIエージェントの分野でSLMの方がLLMより効率的という話があって、これは驚きました。備忘録として残しておきます。\n参考文献：\n\nSmall Lan...",
-        "category": "AI・技術",
-        "rss_category": "",
-        "image_url": "https://res.cloudinary.com/zenn/image/upload/s--H2HmuKih--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:LLM%25E3%2581%25A8SLM%25E8%25AA%25BF%25E3%2581%25B9%25E3%2581%25A6%25E3%2581%25BF%25E3%2581%259F%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:ue%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9saDMuZ29vZ2xldXNlcmNvbnRlbnQuY29tL2EtL0FPaDE0R2lIVW4zSmVfbW43ZlowbXlNVXRtOXpyLWZ1S0J3YjVTVUhnMXJWSFE9czk2LWM=%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png"
       },
       {
         "title": "情報革命、知識革命、知性革命",
