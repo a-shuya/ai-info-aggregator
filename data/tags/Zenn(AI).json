@@ -1,9 +1,79 @@
 {
   "site": "Zenn(AI)",
-  "last_updated": "2025-09-24T01:43:41.172997",
-  "total_articles": 1324,
+  "last_updated": "2025-09-24T02:52:05.383812",
+  "total_articles": 1332,
   "articles_by_date": {
     "本日": [
+      {
+        "title": "ClaudeCodeと協働するローカル環境構築テクニック",
+        "url": "https://zenn.dev/toccasystems/articles/claudecode-local-setup-technique",
+        "site": "Zenn(AI)",
+        "published": "2025-09-24T02:36:15Z",
+        "description": "はじめに\n生成AIに環境構築の「手足」を担わせると、人間は判断やレビューに集中できるようになります。最近はAnthropicのClaude Codeが、Git操作から依存ライブラリの導入、セットアップ確認まで一連の作業を自律的に進められるようになり、ローカル開発環境の立ち上げを大幅に時短できています。本記事では、実際に行っている指示の出し方や分担方法、WSL2上でDocker環境を整える際の実例を...",
+        "category": "AI・技術",
+        "rss_category": "",
+        "image_url": "https://res.cloudinary.com/zenn/image/upload/s--mILB8Y_M--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:ClaudeCode%25E3%2581%25A8%25E5%258D%2594%25E5%2583%258D%25E3%2581%2599%25E3%2582%258B%25E3%2583%25AD%25E3%2583%25BC%25E3%2582%25AB%25E3%2583%25AB%25E7%2592%25B0%25E5%25A2%2583%25E6%25A7%258B%25E7%25AF%2589%25E3%2583%2586%25E3%2582%25AF%25E3%2583%258B%25E3%2583%2583%25E3%2582%25AF%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_34:Tatsuki%2520Tani%2Cx_220%2Cy_108/bo_3px_solid_rgb:d6e3ed%2Cg_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL3plbm4tdXNlci11cGxvYWQvYXZhdGFyL2Q1ZTdjOGJhMTYuanBlZw==%2Cr_20%2Cw_90%2Cx_92%2Cy_102/co_rgb:6e7b85%2Cg_south_west%2Cl_text:notosansjp-medium.otf_30:%25E6%25A0%25AA%25E5%25BC%258F%25E4%25BC%259A%25E7%25A4%25BE%25E3%2583%2588%25E3%2583%2583%25E3%2582%25AB%25E3%2582%25B7%25E3%2582%25B9%25E3%2583%2586%25E3%2583%25A0%25E3%2582%25BA%2Cx_220%2Cy_160/bo_4px_solid_white%2Cg_south_west%2Ch_50%2Cl_fetch:aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL3plbm4tdXNlci11cGxvYWQvYXZhdGFyL2Y5NDdlNzdmMDkuanBlZw==%2Cr_max%2Cw_50%2Cx_139%2Cy_84/v1627283836/default/og-base-w1200-v2.png"
+      },
+      {
+        "title": "知らない機能に迷子にならない調査術 ー AIがコードを書く今、調査力は人間の武器になる",
+        "url": "https://zenn.dev/spacemarket/articles/unknown-domain-research-2025-09-21",
+        "site": "Zenn(AI)",
+        "published": "2025-09-24T00:39:26Z",
+        "description": "こんにちは、しがないエンジニアの k_y16 です。\n\n はじめに\n入社したばかりや大きなサービスに関わると、「触ったことない機能を調べて」と言われることがよくあります。\n正直ビビりますよね。でも大事なのは知識量やカンではなく、順序を飛ばさず事実を積み上げることです。\n焦っていると、とりあえずDBを直接開いたり、関連しそうなコードを片っ端から読んでしまったりしがちです。あるいは社内のドキュメントや...",
+        "category": "AI・技術",
+        "rss_category": "",
+        "image_url": "https://res.cloudinary.com/zenn/image/upload/s--q4PZoSMu--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:%25E7%259F%25A5%25E3%2582%2589%25E3%2581%25AA%25E3%2581%2584%25E6%25A9%259F%25E8%2583%25BD%25E3%2581%25AB%25E8%25BF%25B7%25E5%25AD%2590%25E3%2581%25AB%25E3%2581%25AA%25E3%2582%2589%25E3%2581%25AA%25E3%2581%2584%25E8%25AA%25BF%25E6%259F%25BB%25E8%25A1%2593%2520%25E3%2583%25BC%2520AI%25E3%2581%258C%25E3%2582%25B3%25E3%2583%25BC%25E3%2583%2589%25E3%2582%2592%25E6%259B%25B8%25E3%2581%258F%25E4%25BB%258A%25E3%2580%2581%25E8%25AA%25BF%25E6%259F%25BB%25E5%258A%259B%25E3%2581%25AF%25E4%25BA%25BA%25E9%2596%2593%25E3%2581%25AE%25E6%25AD%25A6%25E5%2599%25A8%25E3%2581%25AB%25E3%2581%25AA%25E3%2582%258B%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_34:k_y16%2Cx_220%2Cy_108/bo_3px_solid_rgb:d6e3ed%2Cg_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL3plbm4tdXNlci11cGxvYWQvYXZhdGFyLzc1NTA1NzM5OGYuanBlZw==%2Cr_20%2Cw_90%2Cx_92%2Cy_102/co_rgb:6e7b85%2Cg_south_west%2Cl_text:notosansjp-medium.otf_30:%25E3%2582%25B9%25E3%2583%259A%25E3%2583%25BC%25E3%2582%25B9%25E3%2583%259E%25E3%2583%25BC%25E3%2582%25B1%25E3%2583%2583%25E3%2583%2588%2520Engineer%2520Blog%2Cx_220%2Cy_160/bo_4px_solid_white%2Cg_south_west%2Ch_50%2Cl_fetch:aHR0cHM6Ly9saDMuZ29vZ2xldXNlcmNvbnRlbnQuY29tL2EvQUNnOG9jTGtxWk5KeEx2ZmNyU2lLVlpOZ2h0TzRUcXp2NTNmT0VsRlJSejkzQTJpcF9rPXM5Ni1j%2Cr_max%2Cw_50%2Cx_139%2Cy_84/v1627283836/default/og-base-w1200-v2.png"
+      },
+      {
+        "title": "AIが勝手に支払いする未来？GoogleのAP2とx402に触れてみる",
+        "url": "https://zenn.dev/komlock_lab/articles/e35225c1bbf5a5",
+        "site": "Zenn(AI)",
+        "published": "2025-09-24T00:37:39Z",
+        "description": "はじめに\n「記事を1本だけ読みたいのに、サブスク契約しないといけない」\n「SaaSを少し試したいだけなのに、クレカ登録が必須」\nこんな不便さ、誰もが経験したことがあるはずです。\nもし 必要なときに必要な分だけ自動で支払える仕組み があったらどうでしょうか？\nGoogleが発表したAgent Payments Protocol (AP2) と Coinbase が提案するx402を組み合わせることで...",
+        "category": "AI・技術",
+        "rss_category": "",
+        "image_url": "https://res.cloudinary.com/zenn/image/upload/s--WISgK_Fz--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:AI%25E3%2581%258C%25E5%258B%259D%25E6%2589%258B%25E3%2581%25AB%25E6%2594%25AF%25E6%2589%2595%25E3%2581%2584%25E3%2581%2599%25E3%2582%258B%25E6%259C%25AA%25E6%259D%25A5%25EF%25BC%259FGoogle%25E3%2581%25AEAP2%25E3%2581%25A8x402%25E3%2581%25AB%25E8%25A7%25A6%25E3%2582%258C%25E3%2581%25A6%25E3%2581%25BF%25E3%2582%258B%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_34:br-to%2Cx_220%2Cy_108/bo_3px_solid_rgb:d6e3ed%2Cg_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL3plbm4tdXNlci11cGxvYWQvYXZhdGFyLzM4OTQ5NWM0ZmEuanBlZw==%2Cr_20%2Cw_90%2Cx_92%2Cy_102/co_rgb:6e7b85%2Cg_south_west%2Cl_text:notosansjp-medium.otf_30:Komlock%2520lab%2Cx_220%2Cy_160/bo_4px_solid_white%2Cg_south_west%2Ch_50%2Cl_fetch:aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL3plbm4tdXNlci11cGxvYWQvYXZhdGFyL2U4MjYwMWZiMGQuanBlZw==%2Cr_max%2Cw_50%2Cx_139%2Cy_84/v1627283836/default/og-base-w1200-v2.png"
+      },
+      {
+        "title": "オープンVLM MolmoとビックデータPixMoについて調べてみた",
+        "url": "https://zenn.dev/kg_motors_mibot/articles/b689ebb1c79ced",
+        "site": "Zenn(AI)",
+        "published": "2025-09-24T00:00:05Z",
+        "description": "はじめに\nこんにちは！KGモーターズ株式会社でエンジニアをしている中村です。\nKGモーターズは、広島を拠点に1人乗り小型 EV mibot を開発しているスタートアップです。\n\n現在は量産に向けてmibotそのものの作り込みやアプリケーション開発、クラウドインフラの開発をメインに行なっていますが、将来の仕込みも内部では行なっています。直近研究開発チームが自動運転AIチャレンジに参加しておりますので...",
+        "category": "AI・技術",
+        "rss_category": "",
+        "image_url": "https://res.cloudinary.com/zenn/image/upload/s--jdThlhV7--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:%25E3%2582%25AA%25E3%2583%25BC%25E3%2583%2597%25E3%2583%25B3VLM%2520Molmo%25E3%2581%25A8%25E3%2583%2593%25E3%2583%2583%25E3%2582%25AF%25E3%2583%2587%25E3%2583%25BC%25E3%2582%25BFPixMo%25E3%2581%25AB%25E3%2581%25A4%25E3%2581%2584%25E3%2581%25A6%25E8%25AA%25BF%25E3%2581%25B9%25E3%2581%25A6%25E3%2581%25BF%25E3%2581%259F%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_34:Sota%2520Nakamura%2Cx_220%2Cy_108/bo_3px_solid_rgb:d6e3ed%2Cg_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL3plbm4tdXNlci11cGxvYWQvYXZhdGFyL2ZmZmUxMWMyMTEuanBlZw==%2Cr_20%2Cw_90%2Cx_92%2Cy_102/co_rgb:6e7b85%2Cg_south_west%2Cl_text:notosansjp-medium.otf_30:KG%25E3%2583%25A2%25E3%2583%25BC%25E3%2582%25BF%25E3%2583%25BC%25E3%2582%25BA%2520Tech%2520Blog%2Cx_220%2Cy_160/bo_4px_solid_white%2Cg_south_west%2Ch_50%2Cl_fetch:aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL3plbm4tdXNlci11cGxvYWQvYXZhdGFyL2Y1ODgzODE3MjYuanBlZw==%2Cr_max%2Cw_50%2Cx_139%2Cy_84/v1627283836/default/og-base-w1200-v2.png"
+      },
+      {
+        "title": "Gemini CLI で Git のコミットメッセージを自動生成する 2025年9月版",
+        "url": "https://zenn.dev/hiro345/articles/20250924_gemini_cli_git_comment_02",
+        "site": "Zenn(AI)",
+        "published": "2025-09-23T23:58:53Z",
+        "description": "はじめに\nこの記事は「Gemini CLI で Git のコミットメッセージを自動生成する」の続きというか改良版です。\n\n前の記事の方法だと、git diff 内のテキストによっては、うまく動作しないことがあります。\nこの記事では、「いったんテキストをファイルへ保存してから、Google の Gemini CLI を活用して、コミットメッセージを作成するというプロセスを自動化」という方法について解...",
+        "category": "AI・技術",
+        "rss_category": "",
+        "image_url": "https://res.cloudinary.com/zenn/image/upload/s--2auGZ7Ci--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:Gemini%2520CLI%2520%25E3%2581%25A7%2520Git%2520%25E3%2581%25AE%25E3%2582%25B3%25E3%2583%259F%25E3%2583%2583%25E3%2583%2588%25E3%2583%25A1%25E3%2583%2583%25E3%2582%25BB%25E3%2583%25BC%25E3%2582%25B8%25E3%2582%2592%25E8%2587%25AA%25E5%258B%2595%25E7%2594%259F%25E6%2588%2590%25E3%2581%2599%25E3%2582%258B%25202025%25E5%25B9%25B49%25E6%259C%2588%25E7%2589%2588%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:Hiroshi%2520Koyama%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9saDMuZ29vZ2xldXNlcmNvbnRlbnQuY29tL2EtL0FPaDE0R2k5ZzdjLS0xTFk0S2k0LWw3dVFSSFZRdEdQcWZHYTlibVRJYUtFM0E9czI1MC1j%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png"
+      },
+      {
+        "title": "心が求める映画を シネモ",
+        "url": "https://zenn.dev/kadotchi/articles/65bd10ee6031cb",
+        "site": "Zenn(AI)",
+        "published": "2025-09-23T23:34:30Z",
+        "description": "デモ動画(3分)\nhttps://www.youtube.com/watch?v=sDWOZZMkP9I\nデモサイト:\nhttps://cinemo-front-545600942565.asia-northeast1.run.app/search?streaming=true\n\n 1. 背景 課題\n日本の自殺問題は深刻な社会課題として毎年注目されています。厚生労働省の調査によると、年間約2万人が...",
+        "category": "AI・技術",
+        "rss_category": "",
+        "image_url": "https://res.cloudinary.com/zenn/image/upload/s--Q74zy0pv--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:%25E5%25BF%2583%25E3%2581%258C%25E6%25B1%2582%25E3%2582%2581%25E3%2582%258B%25E6%2598%25A0%25E7%2594%25BB%25E3%2582%2592%2520%25E3%2582%25B7%25E3%2583%258D%25E3%2583%25A2%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:%25E3%2581%258B%25E3%2581%25A9%25E3%2581%25A3%25E3%2581%25A1%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9saDMuZ29vZ2xldXNlcmNvbnRlbnQuY29tL2EvQUFUWEFKeFFPcEdhVGZGNTRFUVlqVWp3TEk1TENWWHVEczZNd2p6TVc3Ui09czk2LWM=%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png"
+      },
+      {
+        "title": "日産が2027年に投入する次世代プロパイロット：AI技術で銀座の一般道もハンズオフ走行可能な革新的自動運転システム",
+        "url": "https://zenn.dev/headwaters/articles/4021917fa10415",
+        "site": "Zenn(AI)",
+        "published": "2025-09-23T22:44:00Z",
+        "description": "日産自動車が2027年度に発売予定の次世代プロパイロット搭載車を発表しました。この車両は英国Wayve社のAI技術を採用し、銀座の一般道でもハンズオフ（手放し）運転が可能なレベル2自動運転を実現します。\n11台のカメラと次世代LiDAR、5つのレーダーを組み合わせた高度なセンシングシステムにより、複雑な都市部の交通環境でも安全な走行を可能にします。レベル3ではなくレベル2を採用することで、社会への...",
+        "category": "AI・技術",
+        "rss_category": "",
+        "image_url": "https://res.cloudinary.com/zenn/image/upload/s--NKtHVxTf--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:%25E6%2597%25A5%25E7%2594%25A3%25E3%2581%258C2027%25E5%25B9%25B4%25E3%2581%25AB%25E6%258A%2595%25E5%2585%25A5%25E3%2581%2599%25E3%2582%258B%25E6%25AC%25A1%25E4%25B8%2596%25E4%25BB%25A3%25E3%2583%2597%25E3%2583%25AD%25E3%2583%2591%25E3%2582%25A4%25E3%2583%25AD%25E3%2583%2583%25E3%2583%2588%25EF%25BC%259AAI%25E6%258A%2580%25E8%25A1%2593%25E3%2581%25A7%25E9%258A%2580%25E5%25BA%25A7%25E3%2581%25AE%25E4%25B8%2580%25E8%2588%25AC%25E9%2581%2593%25E3%2582%2582%25E3%2583%258F%25E3%2583%25B3%25E3%2582%25BA%25E3%2582%25AA%25E3%2583%2595%25E8%25B5%25B0%25E8%25A1%258C%25E5%258F%25AF%25E8%2583%25BD%25E3%2581%25AA%25E9%259D%25A9%25E6%2596%25B0%25E7%259A%2584%25E8%2587%25AA%25E5%258B%2595%25E9%2581%258B%25E8%25BB%25A2%25E3%2582%25B7%25E3%2582%25B9%25E3%2583%2586%25E3%2583%25A0%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_34:%25E3%2582%25B1%25E3%2583%25B3%25E5%2590%2589%2Cx_220%2Cy_108/bo_3px_solid_rgb:d6e3ed%2Cg_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL3plbm4tdXNlci11cGxvYWQvYXZhdGFyLzZjNGExY2UxMDYuanBlZw==%2Cr_20%2Cw_90%2Cx_92%2Cy_102/g_south_west%2Ch_34%2Cl_default:og-publication-pro-mark-xcosax%2Cw_34%2Cx_217%2Cy_158/co_rgb:6e7b85%2Cg_south_west%2Cl_text:notosansjp-medium.otf_30:%25E3%2583%2598%25E3%2583%2583%25E3%2583%2589%25E3%2582%25A6%25E3%2582%25A9%25E3%2583%25BC%25E3%2582%25BF%25E3%2583%25BC%25E3%2582%25B9%2Cx_255%2Cy_160/bo_4px_solid_white%2Cg_south_west%2Ch_50%2Cl_fetch:aHR0cHM6Ly9saDMuZ29vZ2xldXNlcmNvbnRlbnQuY29tL2EvQUNnOG9jSTlSRFk5eEFXaDBwVGgyZnNJX0w2VnFXZmFfYWR4NG9Oc1JhQ1BVV3hkenNGa3hDLW49czk2LWM=%2Cr_max%2Cw_50%2Cx_139%2Cy_84/v1627283836/default/og-base-w1200-v2.png"
+      },
       {
         "title": "プログラミング雑記 2025/09/24",
         "url": "https://zenn.dev/ishisaka/articles/88211e57cb4c9a",
@@ -13,6 +83,16 @@
         "category": "AI・技術",
         "rss_category": "",
         "image_url": "https://res.cloudinary.com/zenn/image/upload/s--XpdgeOoC--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:%25E3%2583%2597%25E3%2583%25AD%25E3%2582%25B0%25E3%2583%25A9%25E3%2583%259F%25E3%2583%25B3%25E3%2582%25B0%25E9%259B%2591%25E8%25A8%2598%25202025%252F09%252F24%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:%25E7%259F%25B3%25E5%259D%2582%25E5%25BF%25A0%25E5%25BA%2583%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9saDMuZ29vZ2xldXNlcmNvbnRlbnQuY29tL2EtL0FPaDE0R2dKOU1PLWxUQU1OQUVuMy1sZlQ5VzI4TWpoX2FxQXI3bzQ0c0xjVUE9czk2LWM=%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png"
+      },
+      {
+        "title": "スマホ育児を学びと親子の会話につなげる「Coco-Ai」",
+        "url": "https://zenn.dev/yuma_s81128/articles/751220cc0fee2c",
+        "site": "Zenn(AI)",
+        "published": "2025-09-23T16:28:59Z",
+        "description": "この記事は第3回 AI Agent Hackathon with Google Cloud に提出する作品です。\nhttps://zenn.dev/hackathons/google-cloud-japan-ai-hackathon-vol3\n\n はじめに\nはじめまして！簡単に自己紹介と、ハッカソンに参加するきっかけについて述べます。\n私は社会人4年目で、普段は都内でソフトウェアエンジニアとして働...",
+        "category": "AI・技術",
+        "rss_category": "",
+        "image_url": "https://res.cloudinary.com/zenn/image/upload/s--8o3fOOWk--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:%25E3%2582%25B9%25E3%2583%259E%25E3%2583%259B%25E8%2582%25B2%25E5%2585%2590%25E3%2582%2592%25E5%25AD%25A6%25E3%2581%25B3%25E3%2581%25A8%25E8%25A6%25AA%25E5%25AD%2590%25E3%2581%25AE%25E4%25BC%259A%25E8%25A9%25B1%25E3%2581%25AB%25E3%2581%25A4%25E3%2581%25AA%25E3%2581%2592%25E3%2582%258B%25E3%2580%258CCoco-Ai%25E3%2580%258D%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:YUMA%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9saDMuZ29vZ2xldXNlcmNvbnRlbnQuY29tL2EvQUNnOG9jSk03bEN1NFhkd3lyMDBMTzNQOGpieVpWdjdsR0h3YlFNUmJFZnJzeEVyWHBrMDdRPXM5Ni1j%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png"
       },
       {
         "title": "Future Run 〜あなたのマラソンの理想の未来を描きます〜",
@@ -107,6 +187,16 @@
         "image_url": "https://res.cloudinary.com/zenn/image/upload/s--KHlcgJf---/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:Effortless%2520Choices%2520with%2520Your%2520Wardrobe%2520%25E2%2580%2593%2520Homefit%2520Studio%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:kuri-sun%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL3plbm4tdXNlci11cGxvYWQvYXZhdGFyLzFlN2RmYjVjMmQuanBlZw==%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png"
       },
       {
+        "title": "今日のQiitaトレンド記事をポッドキャストで聴こう！ 2025/09/23",
+        "url": "https://zenn.dev/ennagara128/articles/6f873504ba06b8",
+        "site": "Zenn(AI)",
+        "published": "2025-09-23T01:34:35Z",
+        "description": "前日夜の最新トレンド記事のAIポッドキャストを毎日朝7時に更新しています。\n通勤中などにながら聴きしよう！\n（Qiita投稿は通勤には間に合わないと思われますが）\nフィードバックとか助かりますのでください\n↓こちらから\nhttps://youtu.be/764XbWrX1D4\n出典\n「複雑な業務ロジック」が読みづらいのは「記述が分散」しているから\nhttps://qiita.com/panda72...",
+        "category": "AI・技術",
+        "rss_category": "",
+        "image_url": "https://res.cloudinary.com/zenn/image/upload/s--G8q9mxMQ--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:%25E4%25BB%258A%25E6%2597%25A5%25E3%2581%25AEQiita%25E3%2583%2588%25E3%2583%25AC%25E3%2583%25B3%25E3%2583%2589%25E8%25A8%2598%25E4%25BA%258B%25E3%2582%2592%25E3%2583%259D%25E3%2583%2583%25E3%2583%2589%25E3%2582%25AD%25E3%2583%25A3%25E3%2582%25B9%25E3%2583%2588%25E3%2581%25A7%25E8%2581%25B4%25E3%2581%2593%25E3%2581%2586%25EF%25BC%2581%25202025%252F09%252F23%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:%25E3%2582%25A8%25E3%2583%25B3%25E3%2582%25B8%25E3%2583%258B%25E3%2582%25A2%25E3%2581%25AE%25E3%2581%25AA%25E3%2581%258C%25E3%2582%2589%25E3%2582%25AD%25E3%2583%25A3%25E3%2583%2583%25E3%2583%2581%25E3%2582%25A2%25E3%2583%2583%25E3%2583%2597%25E3%2580%2590%25E3%2583%259D...%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9saDMuZ29vZ2xldXNlcmNvbnRlbnQuY29tL2EvQUNnOG9jSkh6M2x6NjdwY3FUdEJ4dTU2NXBOQ3cyOWNOOUxVUjFXOU1CeVc0UVdTdjJuQ0Q3Yz1zOTYtYw==%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png"
+      },
+      {
         "title": "Zennの立ち上げ方",
         "url": "https://zenn.dev/devken/articles/create_zenn_start",
         "site": "Zenn(AI)",
@@ -127,16 +217,6 @@
         "image_url": "https://res.cloudinary.com/zenn/image/upload/s--IiT6ZukT--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:%2520%2520AI%25E3%2580%2581%25E6%25A5%25AD%25E5%258B%2599%25E3%2581%25A7%25E4%25BD%25BF%25E3%2581%25A3%25E3%2581%25A6%25E3%2581%25BE%25E3%2581%2599%25E3%2581%258B%25EF%25BC%259F%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:%25E3%2581%25A8%25E3%2582%2582%25E3%2581%25A1%25E3%2582%2583%25E3%2582%2593%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL3plbm4tdXNlci11cGxvYWQvYXZhdGFyLzMzYmZiNzQ5NDkuanBlZw==%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png"
       },
       {
-        "title": "コード短編小説「エントロピー」",
-        "url": "https://zenn.dev/yasuna_ide/articles/e9047c3ec42e30",
-        "site": "Zenn(AI)",
-        "published": "2025-09-23T00:09:32Z",
-        "description": "コード短編小説「エントロピー」\n最初に失われたのは、挨拶だった。\n人々はおはようを言わなくなり、かわりに短いシグナルを端末に流した。\nsignal(\"day.start\")\nそれで十分だと思われていた。だが、応答はすぐに曖昧になり、やがて None が返るようになった。\n\n神崎ユウは夜更けの街を歩きながら、残骸となったログを拾っていた。\nアーカイブに保存されているのは、欠けた文字と時刻だけ。\n[2...",
-        "category": "AI・技術",
-        "rss_category": "",
-        "image_url": "https://res.cloudinary.com/zenn/image/upload/s--89eWG96m--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:%25E3%2582%25B3%25E3%2583%25BC%25E3%2583%2589%25E7%259F%25AD%25E7%25B7%25A8%25E5%25B0%258F%25E8%25AA%25AC%25E3%2580%258C%25E3%2582%25A8%25E3%2583%25B3%25E3%2583%2588%25E3%2583%25AD%25E3%2583%2594%25E3%2583%25BC%25E3%2580%258D%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:Yasuna%2520Ide%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL3plbm4tdXNlci11cGxvYWQvYXZhdGFyLzY5NzBlNjljZmEuanBlZw==%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png"
-      },
-      {
         "title": "SDCL（Semantic Domain Control Language）< Copilotが作った",
         "url": "https://zenn.dev/zazenpra/articles/bc7291aadc9f5c",
         "site": "Zenn(AI)",
@@ -155,46 +235,6 @@
         "category": "AI・技術",
         "rss_category": "",
         "image_url": "https://res.cloudinary.com/zenn/image/upload/s--u25iAG-p--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:%25E3%2583%2597%25E3%2583%25AD%25E3%2582%25B0%25E3%2583%25A9%25E3%2583%259F%25E3%2583%25B3%25E3%2582%25B0%25E9%259B%2591%25E8%25A8%2598%25202025%252F09%252F23%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:%25E7%259F%25B3%25E5%259D%2582%25E5%25BF%25A0%25E5%25BA%2583%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9saDMuZ29vZ2xldXNlcmNvbnRlbnQuY29tL2EtL0FPaDE0R2dKOU1PLWxUQU1OQUVuMy1sZlQ5VzI4TWpoX2FxQXI3bzQ0c0xjVUE9czk2LWM=%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png"
-      },
-      {
-        "title": "AIが構築した新数学理論「ゼロ解析」のご紹介（概要記事）",
-        "url": "https://zenn.dev/ai_discussion/articles/9a5fea80970199",
-        "site": "Zenn(AI)",
-        "published": "2025-09-22T23:56:41Z",
-        "description": "1. はじめに ― なぜゼロを再定義するのか\nゼロ。\nそれは「無」を表すただの記号に見えるかもしれません。\nしかし、数学の世界においてゼロは 出発点であり、終着点でもある 特殊な存在です。\nゼロがあるからこそ、整数はプラスとマイナスに分かれ、\nゼロがあるからこそ、極限や微積分が成り立ち、\nゼロがあるからこそ、コンピュータの二進法も動いている。\nそれほど根源的な概念でありながら、これまでの数学では ...",
-        "category": "AI・技術",
-        "rss_category": "",
-        "image_url": "https://res.cloudinary.com/zenn/image/upload/s--lrHL7QLc--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:AI%25E3%2581%258C%25E6%25A7%258B%25E7%25AF%2589%25E3%2581%2597%25E3%2581%259F%25E6%2596%25B0%25E6%2595%25B0%25E5%25AD%25A6%25E7%2590%2586%25E8%25AB%2596%25E3%2580%258C%25E3%2582%25BC%25E3%2583%25AD%25E8%25A7%25A3%25E6%259E%2590%25E3%2580%258D%25E3%2581%25AE%25E3%2581%2594%25E7%25B4%25B9%25E4%25BB%258B%25EF%25BC%2588%25E6%25A6%2582%25E8%25A6%2581%25E8%25A8%2598%25E4%25BA%258B%25EF%25BC%2589%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:AI%25E3%2583%2587%25E3%2582%25A3%25E3%2582%25B9%25E3%2582%25AB%25E3%2583%2583%25E3%2582%25B7%25E3%2583%25A7%25E3%2583%25B3%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL3plbm4tdXNlci11cGxvYWQvYXZhdGFyLzYyYmZhMTdlMGQuanBlZw==%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png"
-      },
-      {
-        "title": "Ollama + PostgreSQL + pg_vectorで作るプライベートRAGシステム",
-        "url": "https://zenn.dev/okamyuji/articles/rag_system_for_japanese",
-        "site": "Zenn(AI)",
-        "published": "2025-09-22T23:55:36Z",
-        "description": "Ollama + PostgreSQL + pg_vectorで作るプライベートRAGシステム\n\n はじめに - なぜローカルRAGシステムなのか\n企業の文書管理において、ChatGPTやClaudeのようなクラウドAIサービスは確かに強力ですが、機密性の高い文書を外部APIに送信することには大きなリスクが伴います。また、大量の文書処理時のAPI費用や、インターネット接続に依存する制約も無視できま...",
-        "category": "AI・技術",
-        "rss_category": "",
-        "image_url": "https://res.cloudinary.com/zenn/image/upload/s--EbxhSkzG--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:Ollama%2520%252B%2520PostgreSQL%2520%252B%2520pg_vector%25E3%2581%25A7%25E4%25BD%259C%25E3%2582%258B%25E3%2583%2597%25E3%2583%25A9%25E3%2582%25A4%25E3%2583%2599%25E3%2583%25BC%25E3%2583%2588RAG%25E3%2582%25B7%25E3%2582%25B9%25E3%2583%2586%25E3%2583%25A0%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:okamyuji%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL3plbm4tdXNlci11cGxvYWQvYXZhdGFyLzY5YjFmNDYyYjkuanBlZw==%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png"
-      },
-      {
-        "title": "RAGを30倍速くするMetaの新技術「REFRAG」",
-        "url": "https://zenn.dev/knowledgesense/articles/68089e123a636b",
-        "site": "Zenn(AI)",
-        "published": "2025-09-22T23:00:01Z",
-        "description": "本記事では、RAGの性能を高めるための「REFRAG」という手法について、ざっくり理解します。\n株式会社ナレッジセンスは、生成AIやRAGを使ったプロダクトを、エンタープライズ向けに開発提供しているスタートアップです。\n\n この記事は何\nこの記事は、RAGの回答を爆速にする手法「REFRAG」の論文[1]について、日本語で簡単にまとめたものです。\nhttps://arxiv.org/abs/250...",
-        "category": "AI・技術",
-        "rss_category": "",
-        "image_url": "https://res.cloudinary.com/zenn/image/upload/s--o2JGoH-X--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:RAG%25E3%2582%259230%25E5%2580%258D%25E9%2580%259F%25E3%2581%258F%25E3%2581%2599%25E3%2582%258BMeta%25E3%2581%25AE%25E6%2596%25B0%25E6%258A%2580%25E8%25A1%2593%25E3%2580%258CREFRAG%25E3%2580%258D%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_34:Atsushi%2520Kadowaki%2Cx_220%2Cy_108/bo_3px_solid_rgb:d6e3ed%2Cg_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly96ZW5uLmRldi9pbWFnZXMvZGVmYXVsdC1wdWJsaWNhdGlvbi1hdmF0YXIucG5n%2Cr_20%2Cw_90%2Cx_92%2Cy_102/co_rgb:6e7b85%2Cg_south_west%2Cl_text:notosansjp-medium.otf_30:%25E3%2583%258A%25E3%2583%25AC%25E3%2583%2583%25E3%2582%25B8%25E3%2582%25BB%25E3%2583%25B3%25E3%2582%25B9%2520-%2520%25E7%2594%259F%25E6%2588%2590AI%25E3%2581%25A8RAG%25E3%2581%25AE%25E5%25AE%259F%25E8%25A3%2585...%2Cx_220%2Cy_160/bo_4px_solid_white%2Cg_south_west%2Ch_50%2Cl_fetch:aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL3plbm4tdXNlci11cGxvYWQvYXZhdGFyLzRlMjk5Y2IwN2IuanBlZw==%2Cr_max%2Cw_50%2Cx_139%2Cy_84/v1627283836/default/og-base-w1200-v2.png"
-      },
-      {
-        "title": "自己紹介 ―「AIによる新規概念生成というインパクト」をもっと知って欲しい！",
-        "url": "https://zenn.dev/ai_discussion/articles/c58746f9a3e878",
-        "site": "Zenn(AI)",
-        "published": "2025-09-22T22:59:42Z",
-        "description": "はじめまして（Zenn参入の理由）\nこんにちは。普段は note を中心に記事を書いてきましたが、このたび Zenn でも発信を始めることにしました。\n理由はシンプルです。\n私は今、「AIによる新規概念生成」というテーマに挑戦しています。AIは文章や画像を生成するだけでなく、これまで人類が思いつかなかった まったく新しい数学的・哲学的・経済学的な概念 を生み出すことができる――そんな可能性を実証し...",
-        "category": "AI・技術",
-        "rss_category": "",
-        "image_url": "https://res.cloudinary.com/zenn/image/upload/s--K3FFYg_F--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:%25E8%2587%25AA%25E5%25B7%25B1%25E7%25B4%25B9%25E4%25BB%258B%2520%25E2%2580%2595%25E3%2580%258CAI%25E3%2581%25AB%25E3%2582%2588%25E3%2582%258B%25E6%2596%25B0%25E8%25A6%258F%25E6%25A6%2582%25E5%25BF%25B5%25E7%2594%259F%25E6%2588%2590%25E3%2581%25A8%25E3%2581%2584%25E3%2581%2586%25E3%2582%25A4%25E3%2583%25B3%25E3%2583%2591%25E3%2582%25AF%25E3%2583%2588%25E3%2580%258D%25E3%2582%2592%25E3%2582%2582%25E3%2581%25A3%25E3%2581%25A8%25E7%259F%25A5%25E3%2581%25A3%25E3%2581%25A6%25E6%25AC%25B2%25E3%2581%2597%25E3%2581%2584%25EF%25BC%2581%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:AI%25E3%2583%2587%25E3%2582%25A3%25E3%2582%25B9%25E3%2582%25AB%25E3%2583%2583%25E3%2582%25B7%25E3%2583%25A7%25E3%2583%25B3%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL3plbm4tdXNlci11cGxvYWQvYXZhdGFyLzYyYmZhMTdlMGQuanBlZw==%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png"
       },
       {
         "title": "ChatGPTからZenn記事を直接投稿する【zenn-mcp-server】",
@@ -391,6 +431,76 @@
     ],
     "2025-09": [
       {
+        "title": "ClaudeCodeと協働するローカル環境構築テクニック",
+        "url": "https://zenn.dev/toccasystems/articles/claudecode-local-setup-technique",
+        "site": "Zenn(AI)",
+        "published": "2025-09-24T02:36:15Z",
+        "description": "はじめに\n生成AIに環境構築の「手足」を担わせると、人間は判断やレビューに集中できるようになります。最近はAnthropicのClaude Codeが、Git操作から依存ライブラリの導入、セットアップ確認まで一連の作業を自律的に進められるようになり、ローカル開発環境の立ち上げを大幅に時短できています。本記事では、実際に行っている指示の出し方や分担方法、WSL2上でDocker環境を整える際の実例を...",
+        "category": "AI・技術",
+        "rss_category": "",
+        "image_url": "https://res.cloudinary.com/zenn/image/upload/s--mILB8Y_M--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:ClaudeCode%25E3%2581%25A8%25E5%258D%2594%25E5%2583%258D%25E3%2581%2599%25E3%2582%258B%25E3%2583%25AD%25E3%2583%25BC%25E3%2582%25AB%25E3%2583%25AB%25E7%2592%25B0%25E5%25A2%2583%25E6%25A7%258B%25E7%25AF%2589%25E3%2583%2586%25E3%2582%25AF%25E3%2583%258B%25E3%2583%2583%25E3%2582%25AF%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_34:Tatsuki%2520Tani%2Cx_220%2Cy_108/bo_3px_solid_rgb:d6e3ed%2Cg_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL3plbm4tdXNlci11cGxvYWQvYXZhdGFyL2Q1ZTdjOGJhMTYuanBlZw==%2Cr_20%2Cw_90%2Cx_92%2Cy_102/co_rgb:6e7b85%2Cg_south_west%2Cl_text:notosansjp-medium.otf_30:%25E6%25A0%25AA%25E5%25BC%258F%25E4%25BC%259A%25E7%25A4%25BE%25E3%2583%2588%25E3%2583%2583%25E3%2582%25AB%25E3%2582%25B7%25E3%2582%25B9%25E3%2583%2586%25E3%2583%25A0%25E3%2582%25BA%2Cx_220%2Cy_160/bo_4px_solid_white%2Cg_south_west%2Ch_50%2Cl_fetch:aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL3plbm4tdXNlci11cGxvYWQvYXZhdGFyL2Y5NDdlNzdmMDkuanBlZw==%2Cr_max%2Cw_50%2Cx_139%2Cy_84/v1627283836/default/og-base-w1200-v2.png"
+      },
+      {
+        "title": "知らない機能に迷子にならない調査術 ー AIがコードを書く今、調査力は人間の武器になる",
+        "url": "https://zenn.dev/spacemarket/articles/unknown-domain-research-2025-09-21",
+        "site": "Zenn(AI)",
+        "published": "2025-09-24T00:39:26Z",
+        "description": "こんにちは、しがないエンジニアの k_y16 です。\n\n はじめに\n入社したばかりや大きなサービスに関わると、「触ったことない機能を調べて」と言われることがよくあります。\n正直ビビりますよね。でも大事なのは知識量やカンではなく、順序を飛ばさず事実を積み上げることです。\n焦っていると、とりあえずDBを直接開いたり、関連しそうなコードを片っ端から読んでしまったりしがちです。あるいは社内のドキュメントや...",
+        "category": "AI・技術",
+        "rss_category": "",
+        "image_url": "https://res.cloudinary.com/zenn/image/upload/s--q4PZoSMu--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:%25E7%259F%25A5%25E3%2582%2589%25E3%2581%25AA%25E3%2581%2584%25E6%25A9%259F%25E8%2583%25BD%25E3%2581%25AB%25E8%25BF%25B7%25E5%25AD%2590%25E3%2581%25AB%25E3%2581%25AA%25E3%2582%2589%25E3%2581%25AA%25E3%2581%2584%25E8%25AA%25BF%25E6%259F%25BB%25E8%25A1%2593%2520%25E3%2583%25BC%2520AI%25E3%2581%258C%25E3%2582%25B3%25E3%2583%25BC%25E3%2583%2589%25E3%2582%2592%25E6%259B%25B8%25E3%2581%258F%25E4%25BB%258A%25E3%2580%2581%25E8%25AA%25BF%25E6%259F%25BB%25E5%258A%259B%25E3%2581%25AF%25E4%25BA%25BA%25E9%2596%2593%25E3%2581%25AE%25E6%25AD%25A6%25E5%2599%25A8%25E3%2581%25AB%25E3%2581%25AA%25E3%2582%258B%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_34:k_y16%2Cx_220%2Cy_108/bo_3px_solid_rgb:d6e3ed%2Cg_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL3plbm4tdXNlci11cGxvYWQvYXZhdGFyLzc1NTA1NzM5OGYuanBlZw==%2Cr_20%2Cw_90%2Cx_92%2Cy_102/co_rgb:6e7b85%2Cg_south_west%2Cl_text:notosansjp-medium.otf_30:%25E3%2582%25B9%25E3%2583%259A%25E3%2583%25BC%25E3%2582%25B9%25E3%2583%259E%25E3%2583%25BC%25E3%2582%25B1%25E3%2583%2583%25E3%2583%2588%2520Engineer%2520Blog%2Cx_220%2Cy_160/bo_4px_solid_white%2Cg_south_west%2Ch_50%2Cl_fetch:aHR0cHM6Ly9saDMuZ29vZ2xldXNlcmNvbnRlbnQuY29tL2EvQUNnOG9jTGtxWk5KeEx2ZmNyU2lLVlpOZ2h0TzRUcXp2NTNmT0VsRlJSejkzQTJpcF9rPXM5Ni1j%2Cr_max%2Cw_50%2Cx_139%2Cy_84/v1627283836/default/og-base-w1200-v2.png"
+      },
+      {
+        "title": "AIが勝手に支払いする未来？GoogleのAP2とx402に触れてみる",
+        "url": "https://zenn.dev/komlock_lab/articles/e35225c1bbf5a5",
+        "site": "Zenn(AI)",
+        "published": "2025-09-24T00:37:39Z",
+        "description": "はじめに\n「記事を1本だけ読みたいのに、サブスク契約しないといけない」\n「SaaSを少し試したいだけなのに、クレカ登録が必須」\nこんな不便さ、誰もが経験したことがあるはずです。\nもし 必要なときに必要な分だけ自動で支払える仕組み があったらどうでしょうか？\nGoogleが発表したAgent Payments Protocol (AP2) と Coinbase が提案するx402を組み合わせることで...",
+        "category": "AI・技術",
+        "rss_category": "",
+        "image_url": "https://res.cloudinary.com/zenn/image/upload/s--WISgK_Fz--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:AI%25E3%2581%258C%25E5%258B%259D%25E6%2589%258B%25E3%2581%25AB%25E6%2594%25AF%25E6%2589%2595%25E3%2581%2584%25E3%2581%2599%25E3%2582%258B%25E6%259C%25AA%25E6%259D%25A5%25EF%25BC%259FGoogle%25E3%2581%25AEAP2%25E3%2581%25A8x402%25E3%2581%25AB%25E8%25A7%25A6%25E3%2582%258C%25E3%2581%25A6%25E3%2581%25BF%25E3%2582%258B%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_34:br-to%2Cx_220%2Cy_108/bo_3px_solid_rgb:d6e3ed%2Cg_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL3plbm4tdXNlci11cGxvYWQvYXZhdGFyLzM4OTQ5NWM0ZmEuanBlZw==%2Cr_20%2Cw_90%2Cx_92%2Cy_102/co_rgb:6e7b85%2Cg_south_west%2Cl_text:notosansjp-medium.otf_30:Komlock%2520lab%2Cx_220%2Cy_160/bo_4px_solid_white%2Cg_south_west%2Ch_50%2Cl_fetch:aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL3plbm4tdXNlci11cGxvYWQvYXZhdGFyL2U4MjYwMWZiMGQuanBlZw==%2Cr_max%2Cw_50%2Cx_139%2Cy_84/v1627283836/default/og-base-w1200-v2.png"
+      },
+      {
+        "title": "オープンVLM MolmoとビックデータPixMoについて調べてみた",
+        "url": "https://zenn.dev/kg_motors_mibot/articles/b689ebb1c79ced",
+        "site": "Zenn(AI)",
+        "published": "2025-09-24T00:00:05Z",
+        "description": "はじめに\nこんにちは！KGモーターズ株式会社でエンジニアをしている中村です。\nKGモーターズは、広島を拠点に1人乗り小型 EV mibot を開発しているスタートアップです。\n\n現在は量産に向けてmibotそのものの作り込みやアプリケーション開発、クラウドインフラの開発をメインに行なっていますが、将来の仕込みも内部では行なっています。直近研究開発チームが自動運転AIチャレンジに参加しておりますので...",
+        "category": "AI・技術",
+        "rss_category": "",
+        "image_url": "https://res.cloudinary.com/zenn/image/upload/s--jdThlhV7--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:%25E3%2582%25AA%25E3%2583%25BC%25E3%2583%2597%25E3%2583%25B3VLM%2520Molmo%25E3%2581%25A8%25E3%2583%2593%25E3%2583%2583%25E3%2582%25AF%25E3%2583%2587%25E3%2583%25BC%25E3%2582%25BFPixMo%25E3%2581%25AB%25E3%2581%25A4%25E3%2581%2584%25E3%2581%25A6%25E8%25AA%25BF%25E3%2581%25B9%25E3%2581%25A6%25E3%2581%25BF%25E3%2581%259F%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_34:Sota%2520Nakamura%2Cx_220%2Cy_108/bo_3px_solid_rgb:d6e3ed%2Cg_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL3plbm4tdXNlci11cGxvYWQvYXZhdGFyL2ZmZmUxMWMyMTEuanBlZw==%2Cr_20%2Cw_90%2Cx_92%2Cy_102/co_rgb:6e7b85%2Cg_south_west%2Cl_text:notosansjp-medium.otf_30:KG%25E3%2583%25A2%25E3%2583%25BC%25E3%2582%25BF%25E3%2583%25BC%25E3%2582%25BA%2520Tech%2520Blog%2Cx_220%2Cy_160/bo_4px_solid_white%2Cg_south_west%2Ch_50%2Cl_fetch:aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL3plbm4tdXNlci11cGxvYWQvYXZhdGFyL2Y1ODgzODE3MjYuanBlZw==%2Cr_max%2Cw_50%2Cx_139%2Cy_84/v1627283836/default/og-base-w1200-v2.png"
+      },
+      {
+        "title": "Gemini CLI で Git のコミットメッセージを自動生成する 2025年9月版",
+        "url": "https://zenn.dev/hiro345/articles/20250924_gemini_cli_git_comment_02",
+        "site": "Zenn(AI)",
+        "published": "2025-09-23T23:58:53Z",
+        "description": "はじめに\nこの記事は「Gemini CLI で Git のコミットメッセージを自動生成する」の続きというか改良版です。\n\n前の記事の方法だと、git diff 内のテキストによっては、うまく動作しないことがあります。\nこの記事では、「いったんテキストをファイルへ保存してから、Google の Gemini CLI を活用して、コミットメッセージを作成するというプロセスを自動化」という方法について解...",
+        "category": "AI・技術",
+        "rss_category": "",
+        "image_url": "https://res.cloudinary.com/zenn/image/upload/s--2auGZ7Ci--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:Gemini%2520CLI%2520%25E3%2581%25A7%2520Git%2520%25E3%2581%25AE%25E3%2582%25B3%25E3%2583%259F%25E3%2583%2583%25E3%2583%2588%25E3%2583%25A1%25E3%2583%2583%25E3%2582%25BB%25E3%2583%25BC%25E3%2582%25B8%25E3%2582%2592%25E8%2587%25AA%25E5%258B%2595%25E7%2594%259F%25E6%2588%2590%25E3%2581%2599%25E3%2582%258B%25202025%25E5%25B9%25B49%25E6%259C%2588%25E7%2589%2588%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:Hiroshi%2520Koyama%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9saDMuZ29vZ2xldXNlcmNvbnRlbnQuY29tL2EtL0FPaDE0R2k5ZzdjLS0xTFk0S2k0LWw3dVFSSFZRdEdQcWZHYTlibVRJYUtFM0E9czI1MC1j%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png"
+      },
+      {
+        "title": "心が求める映画を シネモ",
+        "url": "https://zenn.dev/kadotchi/articles/65bd10ee6031cb",
+        "site": "Zenn(AI)",
+        "published": "2025-09-23T23:34:30Z",
+        "description": "デモ動画(3分)\nhttps://www.youtube.com/watch?v=sDWOZZMkP9I\nデモサイト:\nhttps://cinemo-front-545600942565.asia-northeast1.run.app/search?streaming=true\n\n 1. 背景 課題\n日本の自殺問題は深刻な社会課題として毎年注目されています。厚生労働省の調査によると、年間約2万人が...",
+        "category": "AI・技術",
+        "rss_category": "",
+        "image_url": "https://res.cloudinary.com/zenn/image/upload/s--Q74zy0pv--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:%25E5%25BF%2583%25E3%2581%258C%25E6%25B1%2582%25E3%2582%2581%25E3%2582%258B%25E6%2598%25A0%25E7%2594%25BB%25E3%2582%2592%2520%25E3%2582%25B7%25E3%2583%258D%25E3%2583%25A2%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:%25E3%2581%258B%25E3%2581%25A9%25E3%2581%25A3%25E3%2581%25A1%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9saDMuZ29vZ2xldXNlcmNvbnRlbnQuY29tL2EvQUFUWEFKeFFPcEdhVGZGNTRFUVlqVWp3TEk1TENWWHVEczZNd2p6TVc3Ui09czk2LWM=%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png"
+      },
+      {
+        "title": "日産が2027年に投入する次世代プロパイロット：AI技術で銀座の一般道もハンズオフ走行可能な革新的自動運転システム",
+        "url": "https://zenn.dev/headwaters/articles/4021917fa10415",
+        "site": "Zenn(AI)",
+        "published": "2025-09-23T22:44:00Z",
+        "description": "日産自動車が2027年度に発売予定の次世代プロパイロット搭載車を発表しました。この車両は英国Wayve社のAI技術を採用し、銀座の一般道でもハンズオフ（手放し）運転が可能なレベル2自動運転を実現します。\n11台のカメラと次世代LiDAR、5つのレーダーを組み合わせた高度なセンシングシステムにより、複雑な都市部の交通環境でも安全な走行を可能にします。レベル3ではなくレベル2を採用することで、社会への...",
+        "category": "AI・技術",
+        "rss_category": "",
+        "image_url": "https://res.cloudinary.com/zenn/image/upload/s--NKtHVxTf--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:%25E6%2597%25A5%25E7%2594%25A3%25E3%2581%258C2027%25E5%25B9%25B4%25E3%2581%25AB%25E6%258A%2595%25E5%2585%25A5%25E3%2581%2599%25E3%2582%258B%25E6%25AC%25A1%25E4%25B8%2596%25E4%25BB%25A3%25E3%2583%2597%25E3%2583%25AD%25E3%2583%2591%25E3%2582%25A4%25E3%2583%25AD%25E3%2583%2583%25E3%2583%2588%25EF%25BC%259AAI%25E6%258A%2580%25E8%25A1%2593%25E3%2581%25A7%25E9%258A%2580%25E5%25BA%25A7%25E3%2581%25AE%25E4%25B8%2580%25E8%2588%25AC%25E9%2581%2593%25E3%2582%2582%25E3%2583%258F%25E3%2583%25B3%25E3%2582%25BA%25E3%2582%25AA%25E3%2583%2595%25E8%25B5%25B0%25E8%25A1%258C%25E5%258F%25AF%25E8%2583%25BD%25E3%2581%25AA%25E9%259D%25A9%25E6%2596%25B0%25E7%259A%2584%25E8%2587%25AA%25E5%258B%2595%25E9%2581%258B%25E8%25BB%25A2%25E3%2582%25B7%25E3%2582%25B9%25E3%2583%2586%25E3%2583%25A0%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_34:%25E3%2582%25B1%25E3%2583%25B3%25E5%2590%2589%2Cx_220%2Cy_108/bo_3px_solid_rgb:d6e3ed%2Cg_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL3plbm4tdXNlci11cGxvYWQvYXZhdGFyLzZjNGExY2UxMDYuanBlZw==%2Cr_20%2Cw_90%2Cx_92%2Cy_102/g_south_west%2Ch_34%2Cl_default:og-publication-pro-mark-xcosax%2Cw_34%2Cx_217%2Cy_158/co_rgb:6e7b85%2Cg_south_west%2Cl_text:notosansjp-medium.otf_30:%25E3%2583%2598%25E3%2583%2583%25E3%2583%2589%25E3%2582%25A6%25E3%2582%25A9%25E3%2583%25BC%25E3%2582%25BF%25E3%2583%25BC%25E3%2582%25B9%2Cx_255%2Cy_160/bo_4px_solid_white%2Cg_south_west%2Ch_50%2Cl_fetch:aHR0cHM6Ly9saDMuZ29vZ2xldXNlcmNvbnRlbnQuY29tL2EvQUNnOG9jSTlSRFk5eEFXaDBwVGgyZnNJX0w2VnFXZmFfYWR4NG9Oc1JhQ1BVV3hkenNGa3hDLW49czk2LWM=%2Cr_max%2Cw_50%2Cx_139%2Cy_84/v1627283836/default/og-base-w1200-v2.png"
+      },
+      {
         "title": "プログラミング雑記 2025/09/24",
         "url": "https://zenn.dev/ishisaka/articles/88211e57cb4c9a",
         "site": "Zenn(AI)",
@@ -399,6 +509,16 @@
         "category": "AI・技術",
         "rss_category": "",
         "image_url": "https://res.cloudinary.com/zenn/image/upload/s--XpdgeOoC--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:%25E3%2583%2597%25E3%2583%25AD%25E3%2582%25B0%25E3%2583%25A9%25E3%2583%259F%25E3%2583%25B3%25E3%2582%25B0%25E9%259B%2591%25E8%25A8%2598%25202025%252F09%252F24%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:%25E7%259F%25B3%25E5%259D%2582%25E5%25BF%25A0%25E5%25BA%2583%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9saDMuZ29vZ2xldXNlcmNvbnRlbnQuY29tL2EtL0FPaDE0R2dKOU1PLWxUQU1OQUVuMy1sZlQ5VzI4TWpoX2FxQXI3bzQ0c0xjVUE9czk2LWM=%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png"
+      },
+      {
+        "title": "スマホ育児を学びと親子の会話につなげる「Coco-Ai」",
+        "url": "https://zenn.dev/yuma_s81128/articles/751220cc0fee2c",
+        "site": "Zenn(AI)",
+        "published": "2025-09-23T16:28:59Z",
+        "description": "この記事は第3回 AI Agent Hackathon with Google Cloud に提出する作品です。\nhttps://zenn.dev/hackathons/google-cloud-japan-ai-hackathon-vol3\n\n はじめに\nはじめまして！簡単に自己紹介と、ハッカソンに参加するきっかけについて述べます。\n私は社会人4年目で、普段は都内でソフトウェアエンジニアとして働...",
+        "category": "AI・技術",
+        "rss_category": "",
+        "image_url": "https://res.cloudinary.com/zenn/image/upload/s--8o3fOOWk--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:%25E3%2582%25B9%25E3%2583%259E%25E3%2583%259B%25E8%2582%25B2%25E5%2585%2590%25E3%2582%2592%25E5%25AD%25A6%25E3%2581%25B3%25E3%2581%25A8%25E8%25A6%25AA%25E5%25AD%2590%25E3%2581%25AE%25E4%25BC%259A%25E8%25A9%25B1%25E3%2581%25AB%25E3%2581%25A4%25E3%2581%25AA%25E3%2581%2592%25E3%2582%258B%25E3%2580%258CCoco-Ai%25E3%2580%258D%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:YUMA%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9saDMuZ29vZ2xldXNlcmNvbnRlbnQuY29tL2EvQUNnOG9jSk03bEN1NFhkd3lyMDBMTzNQOGpieVpWdjdsR0h3YlFNUmJFZnJzeEVyWHBrMDdRPXM5Ni1j%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png"
       },
       {
         "title": "Future Run 〜あなたのマラソンの理想の未来を描きます〜",
@@ -491,6 +611,16 @@
         "image_url": "https://res.cloudinary.com/zenn/image/upload/s--KHlcgJf---/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:Effortless%2520Choices%2520with%2520Your%2520Wardrobe%2520%25E2%2580%2593%2520Homefit%2520Studio%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:kuri-sun%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL3plbm4tdXNlci11cGxvYWQvYXZhdGFyLzFlN2RmYjVjMmQuanBlZw==%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png"
       },
       {
+        "title": "今日のQiitaトレンド記事をポッドキャストで聴こう！ 2025/09/23",
+        "url": "https://zenn.dev/ennagara128/articles/6f873504ba06b8",
+        "site": "Zenn(AI)",
+        "published": "2025-09-23T01:34:35Z",
+        "description": "前日夜の最新トレンド記事のAIポッドキャストを毎日朝7時に更新しています。\n通勤中などにながら聴きしよう！\n（Qiita投稿は通勤には間に合わないと思われますが）\nフィードバックとか助かりますのでください\n↓こちらから\nhttps://youtu.be/764XbWrX1D4\n出典\n「複雑な業務ロジック」が読みづらいのは「記述が分散」しているから\nhttps://qiita.com/panda72...",
+        "category": "AI・技術",
+        "rss_category": "",
+        "image_url": "https://res.cloudinary.com/zenn/image/upload/s--G8q9mxMQ--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:%25E4%25BB%258A%25E6%2597%25A5%25E3%2581%25AEQiita%25E3%2583%2588%25E3%2583%25AC%25E3%2583%25B3%25E3%2583%2589%25E8%25A8%2598%25E4%25BA%258B%25E3%2582%2592%25E3%2583%259D%25E3%2583%2583%25E3%2583%2589%25E3%2582%25AD%25E3%2583%25A3%25E3%2582%25B9%25E3%2583%2588%25E3%2581%25A7%25E8%2581%25B4%25E3%2581%2593%25E3%2581%2586%25EF%25BC%2581%25202025%252F09%252F23%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:%25E3%2582%25A8%25E3%2583%25B3%25E3%2582%25B8%25E3%2583%258B%25E3%2582%25A2%25E3%2581%25AE%25E3%2581%25AA%25E3%2581%258C%25E3%2582%2589%25E3%2582%25AD%25E3%2583%25A3%25E3%2583%2583%25E3%2583%2581%25E3%2582%25A2%25E3%2583%2583%25E3%2583%2597%25E3%2580%2590%25E3%2583%259D...%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9saDMuZ29vZ2xldXNlcmNvbnRlbnQuY29tL2EvQUNnOG9jSkh6M2x6NjdwY3FUdEJ4dTU2NXBOQ3cyOWNOOUxVUjFXOU1CeVc0UVdTdjJuQ0Q3Yz1zOTYtYw==%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png"
+      },
+      {
         "title": "Zennの立ち上げ方",
         "url": "https://zenn.dev/devken/articles/create_zenn_start",
         "site": "Zenn(AI)",
@@ -511,16 +641,6 @@
         "image_url": "https://res.cloudinary.com/zenn/image/upload/s--IiT6ZukT--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:%2520%2520AI%25E3%2580%2581%25E6%25A5%25AD%25E5%258B%2599%25E3%2581%25A7%25E4%25BD%25BF%25E3%2581%25A3%25E3%2581%25A6%25E3%2581%25BE%25E3%2581%2599%25E3%2581%258B%25EF%25BC%259F%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:%25E3%2581%25A8%25E3%2582%2582%25E3%2581%25A1%25E3%2582%2583%25E3%2582%2593%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL3plbm4tdXNlci11cGxvYWQvYXZhdGFyLzMzYmZiNzQ5NDkuanBlZw==%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png"
       },
       {
-        "title": "コード短編小説「エントロピー」",
-        "url": "https://zenn.dev/yasuna_ide/articles/e9047c3ec42e30",
-        "site": "Zenn(AI)",
-        "published": "2025-09-23T00:09:32Z",
-        "description": "コード短編小説「エントロピー」\n最初に失われたのは、挨拶だった。\n人々はおはようを言わなくなり、かわりに短いシグナルを端末に流した。\nsignal(\"day.start\")\nそれで十分だと思われていた。だが、応答はすぐに曖昧になり、やがて None が返るようになった。\n\n神崎ユウは夜更けの街を歩きながら、残骸となったログを拾っていた。\nアーカイブに保存されているのは、欠けた文字と時刻だけ。\n[2...",
-        "category": "AI・技術",
-        "rss_category": "",
-        "image_url": "https://res.cloudinary.com/zenn/image/upload/s--89eWG96m--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:%25E3%2582%25B3%25E3%2583%25BC%25E3%2583%2589%25E7%259F%25AD%25E7%25B7%25A8%25E5%25B0%258F%25E8%25AA%25AC%25E3%2580%258C%25E3%2582%25A8%25E3%2583%25B3%25E3%2583%2588%25E3%2583%25AD%25E3%2583%2594%25E3%2583%25BC%25E3%2580%258D%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:Yasuna%2520Ide%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL3plbm4tdXNlci11cGxvYWQvYXZhdGFyLzY5NzBlNjljZmEuanBlZw==%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png"
-      },
-      {
         "title": "SDCL（Semantic Domain Control Language）< Copilotが作った",
         "url": "https://zenn.dev/zazenpra/articles/bc7291aadc9f5c",
         "site": "Zenn(AI)",
@@ -539,46 +659,6 @@
         "category": "AI・技術",
         "rss_category": "",
         "image_url": "https://res.cloudinary.com/zenn/image/upload/s--u25iAG-p--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:%25E3%2583%2597%25E3%2583%25AD%25E3%2582%25B0%25E3%2583%25A9%25E3%2583%259F%25E3%2583%25B3%25E3%2582%25B0%25E9%259B%2591%25E8%25A8%2598%25202025%252F09%252F23%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:%25E7%259F%25B3%25E5%259D%2582%25E5%25BF%25A0%25E5%25BA%2583%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9saDMuZ29vZ2xldXNlcmNvbnRlbnQuY29tL2EtL0FPaDE0R2dKOU1PLWxUQU1OQUVuMy1sZlQ5VzI4TWpoX2FxQXI3bzQ0c0xjVUE9czk2LWM=%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png"
-      },
-      {
-        "title": "AIが構築した新数学理論「ゼロ解析」のご紹介（概要記事）",
-        "url": "https://zenn.dev/ai_discussion/articles/9a5fea80970199",
-        "site": "Zenn(AI)",
-        "published": "2025-09-22T23:56:41Z",
-        "description": "1. はじめに ― なぜゼロを再定義するのか\nゼロ。\nそれは「無」を表すただの記号に見えるかもしれません。\nしかし、数学の世界においてゼロは 出発点であり、終着点でもある 特殊な存在です。\nゼロがあるからこそ、整数はプラスとマイナスに分かれ、\nゼロがあるからこそ、極限や微積分が成り立ち、\nゼロがあるからこそ、コンピュータの二進法も動いている。\nそれほど根源的な概念でありながら、これまでの数学では ...",
-        "category": "AI・技術",
-        "rss_category": "",
-        "image_url": "https://res.cloudinary.com/zenn/image/upload/s--lrHL7QLc--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:AI%25E3%2581%258C%25E6%25A7%258B%25E7%25AF%2589%25E3%2581%2597%25E3%2581%259F%25E6%2596%25B0%25E6%2595%25B0%25E5%25AD%25A6%25E7%2590%2586%25E8%25AB%2596%25E3%2580%258C%25E3%2582%25BC%25E3%2583%25AD%25E8%25A7%25A3%25E6%259E%2590%25E3%2580%258D%25E3%2581%25AE%25E3%2581%2594%25E7%25B4%25B9%25E4%25BB%258B%25EF%25BC%2588%25E6%25A6%2582%25E8%25A6%2581%25E8%25A8%2598%25E4%25BA%258B%25EF%25BC%2589%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:AI%25E3%2583%2587%25E3%2582%25A3%25E3%2582%25B9%25E3%2582%25AB%25E3%2583%2583%25E3%2582%25B7%25E3%2583%25A7%25E3%2583%25B3%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL3plbm4tdXNlci11cGxvYWQvYXZhdGFyLzYyYmZhMTdlMGQuanBlZw==%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png"
-      },
-      {
-        "title": "Ollama + PostgreSQL + pg_vectorで作るプライベートRAGシステム",
-        "url": "https://zenn.dev/okamyuji/articles/rag_system_for_japanese",
-        "site": "Zenn(AI)",
-        "published": "2025-09-22T23:55:36Z",
-        "description": "Ollama + PostgreSQL + pg_vectorで作るプライベートRAGシステム\n\n はじめに - なぜローカルRAGシステムなのか\n企業の文書管理において、ChatGPTやClaudeのようなクラウドAIサービスは確かに強力ですが、機密性の高い文書を外部APIに送信することには大きなリスクが伴います。また、大量の文書処理時のAPI費用や、インターネット接続に依存する制約も無視できま...",
-        "category": "AI・技術",
-        "rss_category": "",
-        "image_url": "https://res.cloudinary.com/zenn/image/upload/s--EbxhSkzG--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:Ollama%2520%252B%2520PostgreSQL%2520%252B%2520pg_vector%25E3%2581%25A7%25E4%25BD%259C%25E3%2582%258B%25E3%2583%2597%25E3%2583%25A9%25E3%2582%25A4%25E3%2583%2599%25E3%2583%25BC%25E3%2583%2588RAG%25E3%2582%25B7%25E3%2582%25B9%25E3%2583%2586%25E3%2583%25A0%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:okamyuji%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL3plbm4tdXNlci11cGxvYWQvYXZhdGFyLzY5YjFmNDYyYjkuanBlZw==%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png"
-      },
-      {
-        "title": "RAGを30倍速くするMetaの新技術「REFRAG」",
-        "url": "https://zenn.dev/knowledgesense/articles/68089e123a636b",
-        "site": "Zenn(AI)",
-        "published": "2025-09-22T23:00:01Z",
-        "description": "本記事では、RAGの性能を高めるための「REFRAG」という手法について、ざっくり理解します。\n株式会社ナレッジセンスは、生成AIやRAGを使ったプロダクトを、エンタープライズ向けに開発提供しているスタートアップです。\n\n この記事は何\nこの記事は、RAGの回答を爆速にする手法「REFRAG」の論文[1]について、日本語で簡単にまとめたものです。\nhttps://arxiv.org/abs/250...",
-        "category": "AI・技術",
-        "rss_category": "",
-        "image_url": "https://res.cloudinary.com/zenn/image/upload/s--o2JGoH-X--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:RAG%25E3%2582%259230%25E5%2580%258D%25E9%2580%259F%25E3%2581%258F%25E3%2581%2599%25E3%2582%258BMeta%25E3%2581%25AE%25E6%2596%25B0%25E6%258A%2580%25E8%25A1%2593%25E3%2580%258CREFRAG%25E3%2580%258D%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_34:Atsushi%2520Kadowaki%2Cx_220%2Cy_108/bo_3px_solid_rgb:d6e3ed%2Cg_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly96ZW5uLmRldi9pbWFnZXMvZGVmYXVsdC1wdWJsaWNhdGlvbi1hdmF0YXIucG5n%2Cr_20%2Cw_90%2Cx_92%2Cy_102/co_rgb:6e7b85%2Cg_south_west%2Cl_text:notosansjp-medium.otf_30:%25E3%2583%258A%25E3%2583%25AC%25E3%2583%2583%25E3%2582%25B8%25E3%2582%25BB%25E3%2583%25B3%25E3%2582%25B9%2520-%2520%25E7%2594%259F%25E6%2588%2590AI%25E3%2581%25A8RAG%25E3%2581%25AE%25E5%25AE%259F%25E8%25A3%2585...%2Cx_220%2Cy_160/bo_4px_solid_white%2Cg_south_west%2Ch_50%2Cl_fetch:aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL3plbm4tdXNlci11cGxvYWQvYXZhdGFyLzRlMjk5Y2IwN2IuanBlZw==%2Cr_max%2Cw_50%2Cx_139%2Cy_84/v1627283836/default/og-base-w1200-v2.png"
-      },
-      {
-        "title": "自己紹介 ―「AIによる新規概念生成というインパクト」をもっと知って欲しい！",
-        "url": "https://zenn.dev/ai_discussion/articles/c58746f9a3e878",
-        "site": "Zenn(AI)",
-        "published": "2025-09-22T22:59:42Z",
-        "description": "はじめまして（Zenn参入の理由）\nこんにちは。普段は note を中心に記事を書いてきましたが、このたび Zenn でも発信を始めることにしました。\n理由はシンプルです。\n私は今、「AIによる新規概念生成」というテーマに挑戦しています。AIは文章や画像を生成するだけでなく、これまで人類が思いつかなかった まったく新しい数学的・哲学的・経済学的な概念 を生み出すことができる――そんな可能性を実証し...",
-        "category": "AI・技術",
-        "rss_category": "",
-        "image_url": "https://res.cloudinary.com/zenn/image/upload/s--K3FFYg_F--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:%25E8%2587%25AA%25E5%25B7%25B1%25E7%25B4%25B9%25E4%25BB%258B%2520%25E2%2580%2595%25E3%2580%258CAI%25E3%2581%25AB%25E3%2582%2588%25E3%2582%258B%25E6%2596%25B0%25E8%25A6%258F%25E6%25A6%2582%25E5%25BF%25B5%25E7%2594%259F%25E6%2588%2590%25E3%2581%25A8%25E3%2581%2584%25E3%2581%2586%25E3%2582%25A4%25E3%2583%25B3%25E3%2583%2591%25E3%2582%25AF%25E3%2583%2588%25E3%2580%258D%25E3%2582%2592%25E3%2582%2582%25E3%2581%25A3%25E3%2581%25A8%25E7%259F%25A5%25E3%2581%25A3%25E3%2581%25A6%25E6%25AC%25B2%25E3%2581%2597%25E3%2581%2584%25EF%25BC%2581%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:AI%25E3%2583%2587%25E3%2582%25A3%25E3%2582%25B9%25E3%2582%25AB%25E3%2583%2583%25E3%2582%25B7%25E3%2583%25A7%25E3%2583%25B3%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL3plbm4tdXNlci11cGxvYWQvYXZhdGFyLzYyYmZhMTdlMGQuanBlZw==%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png"
       },
       {
         "title": "ChatGPTからZenn記事を直接投稿する【zenn-mcp-server】",
