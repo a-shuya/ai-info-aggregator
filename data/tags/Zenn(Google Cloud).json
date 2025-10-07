@@ -1,9 +1,29 @@
 {
   "site": "Zenn(Google Cloud)",
-  "last_updated": "2025-10-07T14:59:36.783517",
+  "last_updated": "2025-10-07T15:29:17.175345",
   "total_articles": 388,
   "articles_by_date": {
-    "本日": [
+    "昨日": [
+      {
+        "title": "Generative AI Leader(GAIL) 勉強したことのメモ",
+        "url": "https://zenn.dev/qoo1000000/articles/90eb558bd0c92a",
+        "site": "Zenn(Google Cloud)",
+        "published": "2025-10-07T14:50:12Z",
+        "description": "はじめに\nお疲れ様です。\n現在、Generative AI Leader(GAIL)の勉強も並行して行なっています。\n勉強していて、メモがてらZennに残してしまおう！ということで作成しました。\n適宜更新を行なっていきます。よろしくお願いします。\n\n Agent Assist\n人間のオペレーターを支援することに特化したツール。リアルタイムの会話分析により適切な回答候補、関連記事、次のアクション提案...",
+        "category": "クラウド",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "[GCP] 絶対に JSON キーで実装する男 [Google Cloud Platform]",
+        "url": "https://zenn.dev/dokokade/articles/b67065eb1f183a",
+        "site": "Zenn(Google Cloud)",
+        "published": "2025-10-07T11:02:20Z",
+        "description": "まえがき\n昨今Google Cloud Platform(GCP)はjsonやP12でサービスキーを新規で生成してくれません。それはセキュリティ上正しいので、今後はサーバに鍵を置かないカタチにしていきたいです。\nしかし、たまたまGCPのPJTを変更したときとか、json管理が曖昧で洗い替えしたい時とか、さすがに、あちこちのコードを直す手間とか検証は無理というときがありますね？\n\n オーナーでもダメ...",
+        "category": "クラウド",
+        "rss_category": "",
+        "image_url": ""
+      },
       {
         "title": "AWS×GCPマルチクラウド環境でのプライベートDNS名前解決を実現する",
         "url": "https://zenn.dev/knowledgework/articles/303f715965d79d",
@@ -25,7 +45,7 @@
         "image_url": ""
       }
     ],
-    "昨日": [
+    "一昨日": [
       {
         "title": "適当に作ったWebアプリを雑に社内公開したい、そんなときはCloud Runがお勧め",
         "url": "https://zenn.dev/ncdc/articles/7499bb8ed277bd",
@@ -37,49 +57,27 @@
         "image_url": ""
       }
     ],
-    "一昨日": [
-      {
-        "title": "Secret Managerと連携させてCloud RunにFastAPIサーバをデプロイしてみた",
-        "url": "https://zenn.dev/akasan/articles/21a83f033f0990",
-        "site": "Zenn(Google Cloud)",
-        "published": "2025-10-05T09:53:35Z",
-        "description": "今回は先日公開した以下のSecret Managerの使い方を応用して、Cloud Runにそのシークレットを読ませてサーバを公開してみました。\nhttps://zenn.dev/akasan/articles/f500badd1ed9bf\n\n システム構成\n今回の構成は以下のようになっています。\n\nSecret Managerにてシークレットを管理\nArtifact RegistryにてClou...",
-        "category": "クラウド",
-        "rss_category": "",
-        "image_url": ""
-      },
-      {
-        "title": "衛星運用のAgent化第一歩：生成AIを呼び出すSlack Botのセキュアな基盤構築",
-        "url": "https://zenn.dev/singularity/articles/9e5b3212551055",
-        "site": "Zenn(Google Cloud)",
-        "published": "2025-10-05T04:49:11Z",
-        "description": "衛星運用のような専門的な社内業務において、GPTやGemini等の生成AI を活用して業務効率化を図ることは喫緊の課題です。今回は、そのための最初のインターフェースとして、社内メンバーの自然言語による問い合わせ（例えば「次の衛星画像のダウンリンク時間」）に対し、生成AIを通じて解析・応答するSlack Bot AgentをGCP上に構築する際の、セキュアで運用工数の少ない基盤アーキテクチャを確立し...",
-        "category": "クラウド",
-        "rss_category": "",
-        "image_url": ""
-      },
-      {
-        "title": "cloud buildのslack通知でのハマりどころ",
-        "url": "https://zenn.dev/syskul/articles/3ff8c68e571378",
-        "site": "Zenn(Google Cloud)",
-        "published": "2025-10-05T01:36:15Z",
-        "description": "Cloud Buildでdockerイメージをビルドし、Cloud Runにデプロイする仕組みを作って、Cloud Build Notifiers（Slack）を使ってビルド結果をSlackへ通知しようとしたのですが、思いのほかハマったので備忘録としてメモっておきます\n\n はじめに\ngoogle公式のガイドでcloud buildのビルド結果をslackに通知する方法が示されています\nそこにあるc...",
-        "category": "クラウド",
-        "rss_category": "",
-        "image_url": ""
-      },
-      {
-        "title": "GA となった公式 Spanner CLI へのフィードバックのススメ",
-        "url": "https://zenn.dev/apstndb/articles/official-spanner-cli-feedback",
-        "site": "Zenn(Google Cloud)",
-        "published": "2025-10-04T16:00:59Z",
-        "description": "はじめに\n2025年10月2日、 Google Cloud による公式 Spanner CLI が GA (General Availability) となりました。これは、spanner-cli コントリビュータが見る公式 Spanner CLIで紹介したプレビューリリースから約3ヶ月後のことです。\nプレビューで私は多くの期待を持ちましたが、 3ヶ月待っての GA をした今もそれに応えたとは言え...",
-        "category": "クラウド",
-        "rss_category": "",
-        "image_url": ""
-      }
-    ],
     "2025-10": [
+      {
+        "title": "Generative AI Leader(GAIL) 勉強したことのメモ",
+        "url": "https://zenn.dev/qoo1000000/articles/90eb558bd0c92a",
+        "site": "Zenn(Google Cloud)",
+        "published": "2025-10-07T14:50:12Z",
+        "description": "はじめに\nお疲れ様です。\n現在、Generative AI Leader(GAIL)の勉強も並行して行なっています。\n勉強していて、メモがてらZennに残してしまおう！ということで作成しました。\n適宜更新を行なっていきます。よろしくお願いします。\n\n Agent Assist\n人間のオペレーターを支援することに特化したツール。リアルタイムの会話分析により適切な回答候補、関連記事、次のアクション提案...",
+        "category": "クラウド",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "[GCP] 絶対に JSON キーで実装する男 [Google Cloud Platform]",
+        "url": "https://zenn.dev/dokokade/articles/b67065eb1f183a",
+        "site": "Zenn(Google Cloud)",
+        "published": "2025-10-07T11:02:20Z",
+        "description": "まえがき\n昨今Google Cloud Platform(GCP)はjsonやP12でサービスキーを新規で生成してくれません。それはセキュリティ上正しいので、今後はサーバに鍵を置かないカタチにしていきたいです。\nしかし、たまたまGCPのPJTを変更したときとか、json管理が曖昧で洗い替えしたい時とか、さすがに、あちこちのコードを直す手間とか検証は無理というときがありますね？\n\n オーナーでもダメ...",
+        "category": "クラウド",
+        "rss_category": "",
+        "image_url": ""
+      },
       {
         "title": "AWS×GCPマルチクラウド環境でのプライベートDNS名前解決を実現する",
         "url": "https://zenn.dev/knowledgework/articles/303f715965d79d",
