@@ -1,9 +1,9 @@
 {
   "site": "Zenn(Google Cloud)",
-  "last_updated": "2025-10-22T14:49:22.436465",
-  "total_articles": 448,
+  "last_updated": "2025-10-22T15:00:56.458890",
+  "total_articles": 439,
   "articles_by_date": {
-    "本日": [
+    "昨日": [
       {
         "title": "Google Cloud StorageでBasic認証付きでWeb公開(サービス拡張プラグイン編)",
         "url": "https://zenn.dev/quantum/articles/2710bb2efd7b54",
@@ -45,7 +45,7 @@
         "image_url": ""
       }
     ],
-    "昨日": [
+    "一昨日": [
       {
         "title": "GCP開発 Excuse AIで学ぶ生成AIアプリ構築（前編）",
         "url": "https://zenn.dev/acntechjp/articles/3764f8722b9e8d",
@@ -112,98 +112,6 @@
         "site": "Zenn(Google Cloud)",
         "published": "2025-10-20T21:14:19Z",
         "description": "これはなに？\nBigQuery を Python で使おうとしたら「403 Forbidden」エラーが出たんですが、bq コマンドでは問題なく動く。同じアカウントなのに挙動が違う、という状況に遭遇しました。\n調べてみたところ、Google Cloud SDK（CLI）と Python SDK（ライブラリ）では使われる認証方式が異なるため、設定や権限の扱いに差が出ることがわかりました。同じような問...",
-        "category": "クラウド",
-        "rss_category": "",
-        "image_url": ""
-      }
-    ],
-    "一昨日": [
-      {
-        "title": "GCP マルチプロジェクト監視ダッシュボード構築ガイド",
-        "url": "https://zenn.dev/acntechjp/articles/c1f57c8bfa8ab1",
-        "site": "Zenn(Google Cloud)",
-        "published": "2025-10-20T09:59:58Z",
-        "description": "はじめに\nGCP資格のProfessional Cloud DevOps Engineerの範囲で、複数のGCPプロジェクトをモニタリングするというテーマがあります。これは手を動かしてみたほうが良いなと思い、試してみました。\n継続コストのかかるVMを手元に持っていなかったので、手持ちのCloud Runはサーバレスだが、CPUとかのデータ取れるのか？とやる前に思いましたが、全く問題なしでした。\n\n...",
-        "category": "クラウド",
-        "rss_category": "",
-        "image_url": ""
-      },
-      {
-        "title": "Cloud Composerのローカル開発環境をカスタマイズして開発サイクルを大幅短縮した話",
-        "url": "https://zenn.dev/wed_engineering/articles/b95c976ff5df41",
-        "site": "Zenn(Google Cloud)",
-        "published": "2025-10-20T09:23:01Z",
-        "description": "はじめに\nWED株式会社データエンジニアのmomokun7です。\nCloud Composer (Managed Airflow) でDAGを開発していると、こんな経験はありませんか？\n「コード修正 → GCSアップロード → 反映待ち（3-5分） → エラー → また修正...」\nこの繰り返し、本当に時間がかかりますよね。ローカルで即座に動作確認できれば、開発効率は劇的に向上するはずです。Goo...",
-        "category": "クラウド",
-        "rss_category": "",
-        "image_url": ""
-      },
-      {
-        "title": "Vertex AI Search for commerceを採用したレコメンドシステムのアーキテクチャ例とTips紹介",
-        "url": "https://zenn.dev/bnx_techblog/articles/bff7d7a36cac06",
-        "site": "Zenn(Google Cloud)",
-        "published": "2025-10-20T05:36:03Z",
-        "description": "1. はじめに\nこんにちは、株式会社バンダイナムコネクサスの山野です。\n昨今のECサイトにおいて、商品レコメンドや検索はユーザ体験を向上させるうえで今や欠かせない機能となっています。しかし、高精度なレコメンドシステムを最初からフルスペックで実装しようとすると、膨大な開発コストと時間がかかります。ユーザー行動のモデリング、リアルタイム処理基盤、A/Bテスト環境、多言語対応など、考慮すべき要素は多岐に...",
-        "category": "クラウド",
-        "rss_category": "",
-        "image_url": ""
-      },
-      {
-        "title": "Spannerのパーティション化DMLは何であるか、何でないか",
-        "url": "https://zenn.dev/google_cloud_jp/articles/1c37c148b8e7a1",
-        "site": "Zenn(Google Cloud)",
-        "published": "2025-10-20T03:42:11Z",
-        "description": "tl;dr\n\nSpannerのパーティション化DML（PDML）は、トランザクション上限を超える大規模な更新や削除を行うための機能です。\nテーブルを内部でパーティションに分割し、各々を並列で処理するため、実行するDMLは冪等である必要があります。\nバッチ処理での一括データ更新や、アドホックなTTLの代替としての大量レコード削除といった、アトミック性が不要な場面で役立ちます。\n\n\n はじめに\nSpa...",
-        "category": "クラウド",
-        "rss_category": "",
-        "image_url": ""
-      },
-      {
-        "title": "GCP？SpannerとCloud SQLの違い",
-        "url": "https://zenn.dev/hungry/articles/da82d1218a1b19",
-        "site": "Zenn(Google Cloud)",
-        "published": "2025-10-19T15:45:10Z",
-        "description": "Spannerとの違いは？超すごいデータベース！\nCloud SQLよりももっともっとすごい特別なデータベース！\n\n 学校で例えると\n\n Cloud SQL = 1つの学校の図書室\n\nその学校の生徒が使う\n先生が1人で管理できる\n本が壊れても、その学校だけの問題\n\n\n Cloud Spanner = 世界中の学校をつなぐ超図書館システム\n\n東京、ニューヨーク、ロンドンの学校が全部つながっている\nど...",
-        "category": "クラウド",
-        "rss_category": "",
-        "image_url": ""
-      },
-      {
-        "title": "GCP？BigQueryとCloud SQLの違い",
-        "url": "https://zenn.dev/hungry/articles/88dde0787ead7c",
-        "site": "Zenn(Google Cloud)",
-        "published": "2025-10-19T15:34:01Z",
-        "description": "BigQueryとCloud SQLの違いを解説\n\n 一言で言うと\n\n\nBigQuery: 大量のデータを分析するための「分析専用の倉庫」\n\n\nCloud SQL: アプリを動かすための「普通のデータベース」\n\n\n\n 小学生向けの例え\n\n Cloud SQL = 学校の出席簿\n\n\n毎日、生徒の出欠を記録したり、確認したりする\n\n\n「田中さんは今日出席？」→すぐ答える\n\n\n一人ずつ細かく管理する\n\n...",
-        "category": "クラウド",
-        "rss_category": "",
-        "image_url": ""
-      },
-      {
-        "title": "GCP？Cloud SQLって美味しいの？",
-        "url": "https://zenn.dev/hungry/articles/2a985b623ece09",
-        "site": "Zenn(Google Cloud)",
-        "published": "2025-10-19T15:30:34Z",
-        "description": "Cloud SQLってなに？\n「大切なデータ」をインターネット上の安全な場所に保管してくれるサービス（リレーショナルデータベースサービス）。\nGoogleが作ったもので、まるで「雲の上にある超便利な本棚」みたいなものだよ！\n\n 普通の保存方法と何が違うの？\n\n 家のパソコンに保存する場合\n\nパソコンが壊れたらデータも消える😢\nそのパソコンの前にいないと使えない\n友達と一緒に使うのが難しい\n\n\n C...",
-        "category": "クラウド",
-        "rss_category": "",
-        "image_url": ""
-      },
-      {
-        "title": "GCP？BigQueryって美味しいの？",
-        "url": "https://zenn.dev/hungry/articles/80d4f525d335e8",
-        "site": "Zenn(Google Cloud)",
-        "published": "2025-10-19T15:19:17Z",
-        "description": "BigQueryって何？\nBigQueryは、膨大な情報の中から、欲しい情報を数秒で見つけ出してくれる魔法のような道具！\n\n どんなことができるの？\n\n\nたくさんのデータを保存できる\n何億、何兆というデータを保管できます\n例：YouTubeの動画情報全部とか、世界中の天気データとか\n\n\n超高速で検索・計算できる\n普通のパソコンだと何日もかかる計算を、数秒で終わらせます\nたくさんのコンピュータが協力...",
-        "category": "クラウド",
-        "rss_category": "",
-        "image_url": ""
-      },
-      {
-        "title": "GCP？Spannerって美味しいの？",
-        "url": "https://zenn.dev/hungry/articles/4f50174df04e26",
-        "site": "Zenn(Google Cloud)",
-        "published": "2025-10-19T15:10:33Z",
-        "description": "Spannerってなに？\nSpanner（スパナー） は、Googleが作った特別なデータベースです。\nデータベースというのは、情報を保存しておく「箱」のようなものです。\n例えば：\n\nゲームのセーブデータ\nお店の商品リスト\nSNSの投稿やメッセージ\n\nこういった情報を保存する場所がデータベースなんです。\n\n Spannerの何がすごいの？\n\n\n世界中どこからでも使える 🌏\n普通のデータベースは、1...",
         "category": "クラウド",
         "rss_category": "",
         "image_url": ""
