@@ -1,9 +1,9 @@
 {
   "site": "Zenn(Python)",
-  "last_updated": "2025-10-23T14:52:29.256003",
-  "total_articles": 998,
+  "last_updated": "2025-10-23T15:24:50.850075",
+  "total_articles": 993,
   "articles_by_date": {
-    "本日": [
+    "昨日": [
       {
         "title": "コーディングエージェントでコーディングエージェントを作って変わったこと、変わらなかったこと",
         "url": "https://zenn.dev/tkithrta/articles/49bc5b5b5f58c4",
@@ -95,7 +95,7 @@
         "image_url": ""
       }
     ],
-    "昨日": [
+    "一昨日": [
       {
         "title": "MediaPipe でクラス分類モデルを学習し、ハンドサイン推論アプリをつくった",
         "url": "https://zenn.dev/yamadamadamada/articles/1572249c05e6e7",
@@ -222,58 +222,6 @@
         "site": "Zenn(Python)",
         "published": "2025-10-21T17:07:58Z",
         "description": "はじめに\nLLMを使ったアプリケーションを開発していると、レスポンスの待ち時間が長くてユーザー体験が今ひとつ...という状況になってしまうこともあると思います。\n特に全てのテキスト生成が完了するまでユーザーが待ち続けなければならない構成では、体感的な遅延が大きくなりがちです。\n今回は、Amazon BedrockのレスポンスをストリーミングAPIで扱う実装について紹介します。\nWebSocketを...",
-        "category": "開発",
-        "rss_category": "",
-        "image_url": ""
-      }
-    ],
-    "一昨日": [
-      {
-        "title": "⚙️ Supabase × Render で作る開発支援チャット「DevLinkHub」開発ログ α版までの道",
-        "url": "https://zenn.dev/codseowner/articles/1fc068ba75ff01",
-        "site": "Zenn(Python)",
-        "published": "2025-10-21T13:54:11Z",
-        "description": "🧩 本記事は、現在開発中のWebアプリ「DevLinkHub」のα版開発記録です。\n実装途中の部分も多いですが、「個人開発をどのように形にしていったか」を記録としてまとめています。\n\n\n 初めに\n普段 Google Chat を使う中で「チャンネルを作れない不便さ」を感じたのがきっかけです。\nGitHub の Wiki や Issue のように、軽いやり取りと記録を統合できるチャットツールを目指し...",
-        "category": "開発",
-        "rss_category": "",
-        "image_url": ""
-      },
-      {
-        "title": "【Pyxel】SlackBot に MML → .wav 変換を仮実装してみた",
-        "url": "https://zenn.dev/sharl/articles/613efc4e830340",
-        "site": "Zenn(Python)",
-        "published": "2025-10-21T06:05:11Z",
-        "description": "2025/10/21 Pyxel 2.5.8 時点の内容です\n\n きっかけから実験へ\nhttps://x.com/sharlm/status/1980299513178054998\n\n某 Slack で楽譜を貼り付けて「この曲を吹けるようになりたい」という某 X 氏に刺激を受けて『MMLをSlackに投げたら音声ファイルにして貼り付ける』方法を模索していたら #pyxel にたどり着き\n\n\n Py...",
-        "category": "開発",
-        "rss_category": "",
-        "image_url": ""
-      },
-      {
-        "title": "uv × DockerでのPython開発環境構築方法",
-        "url": "https://zenn.dev/mkj/articles/3aaa36d6f35c08",
-        "site": "Zenn(Python)",
-        "published": "2025-10-21T02:50:01Z",
-        "description": "松尾研究所では、Python開発における標準ツールとしてuvを推奨しています。uvはPythonのパッケージ管理ツールで、依存関係の管理や仮想環境の構築を自動化し、高速で再現性のある開発を可能にすることが特長です。\nPythonパッケージだけでなく、Node.jsやブラウザ周りのツールなど他の依存も扱うときには、uvとDockerを併用するケースもあるかと思います。Dockerのコンテナ上でuvを...",
-        "category": "開発",
-        "rss_category": "",
-        "image_url": ""
-      },
-      {
-        "title": "Django 5系で silently fail - “空のクエリ問題”に注意",
-        "url": "https://zenn.dev/wisevine/articles/b0aeb5e707a2d0",
-        "site": "Zenn(Python)",
-        "published": "2025-10-21T01:00:05Z",
-        "description": "bubusuke です。\n2025年4月にDjango 5系のLTS（Long Term Support）版であるDjango 5.2が出ましたね。\nWiseVineのプロダクトではDjango4.2を使っていますが、Django4.2は2026年4月末でセキュリティサポートが終了します。\nそろそろ切り替えようかと思い準備を進めていた矢先、意図せぬ挙動に遭遇しました。\nこの挙動に気づかないと、本番...",
-        "category": "開発",
-        "rss_category": "",
-        "image_url": ""
-      },
-      {
-        "title": "Python 3.14 が速くなったときいてマイクロベンチマーク",
-        "url": "https://zenn.dev/nabetani/articles/a1780279a0e6c0",
-        "site": "Zenn(Python)",
-        "published": "2025-10-20T15:21:06Z",
-        "description": "これは何？\nPython 3.14 が速くなったという噂を聞いたので、今日も楽しいマイクロベンチマーク。\n\n 計算内容\n思いつきで適当に書いた意味のない計算。\n\nPython3\nimport sys\n\nS=int(sys.argv[1])\n\ndef t(s):\n    if s&lt;=2:\n        return [s]\n    a = s//2\n    b = s-a\n    retur...",
         "category": "開発",
         "rss_category": "",
         "image_url": ""
