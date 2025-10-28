@@ -1,9 +1,49 @@
 {
   "site": "Zenn(Python)",
-  "last_updated": "2025-10-28T06:56:13.588172",
-  "total_articles": 1035,
+  "last_updated": "2025-10-28T07:23:03.133062",
+  "total_articles": 1043,
   "articles_by_date": {
     "本日": [
+      {
+        "title": "【uv】torchインストール後に古いライブラリが入る原因と対策",
+        "url": "https://zenn.dev/shuto51/articles/cc3c920941230f",
+        "site": "Zenn(Python)",
+        "published": "2025-10-28T03:36:37Z",
+        "description": "執筆背景\nuv を利用して torch を利用するプロジェクトのライブラリ管理をしていたところ、uv の index 設定に気をつけないとある条件下で特定ライブラリのかなり古いバージョン（今回の場合は約2年前）がインストールされてしまうことに気づいた。\n原因が分かりにくかったかつ uv の index 設定に注意する必要があることを思い出せるようにするために執筆した。\n\n TL;DR（要約）\nuv...",
+        "category": "開発",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "【Python入門】関数の引数にある*（アスタリスク）の意味について",
+        "url": "https://zenn.dev/mabo23/articles/755b38a191a5f6",
+        "site": "Zenn(Python)",
+        "published": "2025-10-28T03:04:53Z",
+        "description": "目的\n\n関数にある「*」の意味を知った上で使用できるようになること\n\n\n アンパック\n* はアンパック演算子と言われています。\nこれによって、関数呼び出し時にリストや辞書の中身を関数の引数として展開して渡すことができます。\n\n 例\ndef add(a,b,c,d,e):\n    return a + b + c + d + e\n\nnums = [1, 2, 3, 4, 5]\n\nprint(add(...",
+        "category": "開発",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "「字幕だけで動画を意味分割する：Embedding × 多次元Otsu法によるチャンク化設計」",
+        "url": "https://zenn.dev/yukiharada1228/articles/9c787a2b6fbdc5",
+        "site": "Zenn(Python)",
+        "published": "2025-10-28T03:02:32Z",
+        "description": "字幕だけで動画を意味分割する — 多次元Otsu法によるシーンチャンク化アルゴリズム\n\n🎯 Goal\n字幕テキストだけを使って、動画の「意味の切れ目」で自動的にチャンク化（シーン分割）するアルゴリズムを、理論と設計の観点から解説します。\n映像や音声解析は一切使わず、Embedding × 多次元Otsu法 × 再帰分割 のシンプルな設計で、意味的まとまりを検出します。\n\n\n\n TL;DR\n\n字幕ご...",
+        "category": "開発",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "Raspberry PiでGPIB通信を実現する（4.3.7版）",
+        "url": "https://zenn.dev/peachpie/articles/7a3c498116b1b9",
+        "site": "Zenn(Python)",
+        "published": "2025-10-28T02:45:12Z",
+        "description": "最初に\n過去(https://zenn.dev/peachpie/articles/6b0df7a46add7f)にGPIBの構築方法を記載しましたが、待望の最新版が出たので改訂いたしました。\n\n 参考にした記事\n以下の投稿を参考にさせていただきました：\n\nRaspberry PiでGPIB通信\nLinux-GPIB setup guide\n\nただし、使用しているLinux-GPIBドライバがかな...",
+        "category": "開発",
+        "rss_category": "",
+        "image_url": ""
+      },
       {
         "title": "4ヶ月の成長プロセス",
         "url": "https://zenn.dev/seiji_ogawa/articles/0f02e18ae2e056",
@@ -51,7 +91,7 @@
         "url": "https://zenn.dev/aun_phonogram/articles/cursor-business-card-csv-converter",
         "site": "Zenn(Python)",
         "published": "2025-10-27T11:07:45Z",
-        "description": "Cursorで名刺データのCSV変換ツールを作った\n\n はじめに\nこんにちは。株式会社フォノグラムでWebマーケティングを担当している「おきょう」こと森山です。\n今回は、Cursorを使って名刺データをCSVに変換するツールを作ったお話をします。\nといっても作り方ではなく、こんなの作れる？と聞くだけの、対話だけで乗り切ったので、難しいことは聞かないでほしい…\n\n 背景\n今回展示会に出てたくさん名刺...",
+        "description": "Cursorで名刺データのCSV変換ツールを作った\n\n はじめに\nこんにちは。株式会社フォノグラムでWebマーケティングを担当している「おきょう」こと森山です。\n今回は、Cursorを使って名刺データをCSVに変換するツールを作ったお話をします。\nといっても作り方ではなく、こんなの作れる？と聞くだけの、対話だけで乗り切ったので、難しいことは聞かないでほしいです。私はコードが書けないので…\nこういう...",
         "category": "開発",
         "rss_category": "",
         "image_url": ""
@@ -271,6 +311,46 @@
     ],
     "2025-10": [
       {
+        "title": "【uv】torchインストール後に古いライブラリが入る原因と対策",
+        "url": "https://zenn.dev/shuto51/articles/cc3c920941230f",
+        "site": "Zenn(Python)",
+        "published": "2025-10-28T03:36:37Z",
+        "description": "執筆背景\nuv を利用して torch を利用するプロジェクトのライブラリ管理をしていたところ、uv の index 設定に気をつけないとある条件下で特定ライブラリのかなり古いバージョン（今回の場合は約2年前）がインストールされてしまうことに気づいた。\n原因が分かりにくかったかつ uv の index 設定に注意する必要があることを思い出せるようにするために執筆した。\n\n TL;DR（要約）\nuv...",
+        "category": "開発",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "【Python入門】関数の引数にある*（アスタリスク）の意味について",
+        "url": "https://zenn.dev/mabo23/articles/755b38a191a5f6",
+        "site": "Zenn(Python)",
+        "published": "2025-10-28T03:04:53Z",
+        "description": "目的\n\n関数にある「*」の意味を知った上で使用できるようになること\n\n\n アンパック\n* はアンパック演算子と言われています。\nこれによって、関数呼び出し時にリストや辞書の中身を関数の引数として展開して渡すことができます。\n\n 例\ndef add(a,b,c,d,e):\n    return a + b + c + d + e\n\nnums = [1, 2, 3, 4, 5]\n\nprint(add(...",
+        "category": "開発",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "「字幕だけで動画を意味分割する：Embedding × 多次元Otsu法によるチャンク化設計」",
+        "url": "https://zenn.dev/yukiharada1228/articles/9c787a2b6fbdc5",
+        "site": "Zenn(Python)",
+        "published": "2025-10-28T03:02:32Z",
+        "description": "字幕だけで動画を意味分割する — 多次元Otsu法によるシーンチャンク化アルゴリズム\n\n🎯 Goal\n字幕テキストだけを使って、動画の「意味の切れ目」で自動的にチャンク化（シーン分割）するアルゴリズムを、理論と設計の観点から解説します。\n映像や音声解析は一切使わず、Embedding × 多次元Otsu法 × 再帰分割 のシンプルな設計で、意味的まとまりを検出します。\n\n\n\n TL;DR\n\n字幕ご...",
+        "category": "開発",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "Raspberry PiでGPIB通信を実現する（4.3.7版）",
+        "url": "https://zenn.dev/peachpie/articles/7a3c498116b1b9",
+        "site": "Zenn(Python)",
+        "published": "2025-10-28T02:45:12Z",
+        "description": "最初に\n過去(https://zenn.dev/peachpie/articles/6b0df7a46add7f)にGPIBの構築方法を記載しましたが、待望の最新版が出たので改訂いたしました。\n\n 参考にした記事\n以下の投稿を参考にさせていただきました：\n\nRaspberry PiでGPIB通信\nLinux-GPIB setup guide\n\nただし、使用しているLinux-GPIBドライバがかな...",
+        "category": "開発",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
         "title": "4ヶ月の成長プロセス",
         "url": "https://zenn.dev/seiji_ogawa/articles/0f02e18ae2e056",
         "site": "Zenn(Python)",
@@ -315,7 +395,7 @@
         "url": "https://zenn.dev/aun_phonogram/articles/cursor-business-card-csv-converter",
         "site": "Zenn(Python)",
         "published": "2025-10-27T11:07:45Z",
-        "description": "Cursorで名刺データのCSV変換ツールを作った\n\n はじめに\nこんにちは。株式会社フォノグラムでWebマーケティングを担当している「おきょう」こと森山です。\n今回は、Cursorを使って名刺データをCSVに変換するツールを作ったお話をします。\nといっても作り方ではなく、こんなの作れる？と聞くだけの、対話だけで乗り切ったので、難しいことは聞かないでほしい…\n\n 背景\n今回展示会に出てたくさん名刺...",
+        "description": "Cursorで名刺データのCSV変換ツールを作った\n\n はじめに\nこんにちは。株式会社フォノグラムでWebマーケティングを担当している「おきょう」こと森山です。\n今回は、Cursorを使って名刺データをCSVに変換するツールを作ったお話をします。\nといっても作り方ではなく、こんなの作れる？と聞くだけの、対話だけで乗り切ったので、難しいことは聞かないでほしいです。私はコードが書けないので…\nこういう...",
         "category": "開発",
         "rss_category": "",
         "image_url": ""
