@@ -1,15 +1,65 @@
 {
   "site": "Zenn(Python)",
-  "last_updated": "2025-11-13T14:42:46.170625",
-  "total_articles": 1173,
+  "last_updated": "2025-11-13T15:30:08.473229",
+  "total_articles": 1168,
   "articles_by_date": {
-    "本日": [
+    "昨日": [
+      {
+        "title": "RubyやPythonのGVL(GIL)は1プロセス1コアではない",
+        "url": "https://zenn.dev/masapon/articles/5ce7982f8fee23",
+        "site": "Zenn(Python)",
+        "published": "2025-11-13T12:53:07Z",
+        "description": "概要\n普段 Ruby (MRI/CRuby) を使ってアプリケーションを開発しているのですが、GVL (Python においては GIL)について勘違いしていた部分があったため、記事として整理します。\n私は当初、「GVLがあるため、Rubyの1プロセスは1コアしか使えない」と雑に理解していました。そのため、マルチコアのサーバでCPU負荷の高い処理を複数スレッドで動かしても、1つのプロセスの場合1つ...",
+        "category": "開発",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "【Python】TypedDict で予約語をキーに使いたいときの対処法",
+        "url": "https://zenn.dev/oroshi/articles/typeddict_reserved_word",
+        "site": "Zenn(Python)",
+        "published": "2025-11-13T12:46:06Z",
+        "description": "Python には TypedDict というものがあり、これを使うと辞書型のオブジェクトの型を静的にチェックしてくれるようになります。Typescript の type に似ています。\n\n 例\nfrom typing import TypedDict\n\n\nclass Person(TypedDict):\n    name: str\n    age: int\n\n\nperson: Person = ...",
+        "category": "開発",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "スプリント手法を使ったPythonの勉強計画",
+        "url": "https://zenn.dev/kitsunem/articles/2e3d5b125f726a",
+        "site": "Zenn(Python)",
+        "published": "2025-11-13T11:48:35Z",
+        "description": "自己紹介\nうつ病で失業をしている50代です。正直、このまま定年してもおかしくないのですが、頭のリハビリしつつ勉強しようと思ってます。\n前回、余っているPCにDebianとJupyterを入れてPythonが勉強できる環境を作ったので、それを元に勉強しようと思っていますが、闇雲に勉強しても身につかないので、ChatGPTと一緒に計画を立てて勧めていきます。\n\n 計画\n計画はスプリントというGoogl...",
+        "category": "開発",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "Python で他生物の視覚をシミュレートする",
+        "url": "https://zenn.dev/aldagram_tech/articles/2bb82ddb00cffc",
+        "site": "Zenn(Python)",
+        "published": "2025-11-13T09:00:01Z",
+        "description": "こんにちは！アルダグラムでエンジニアをしている内倉です\n今年も、一年が終わろうとしていますね。\n私のブログ当番は、これが今年最後の予定なので、また印象に残ったニュースを振り返ってみたいと思います。\n今年、個人的に気になったニュースは、だいぶ最近ですが\n日本では初めての発見となる、二枚貝と共生するヨコエビ、その名も「ユキミノノマルハサミヨコエビ」の発見です。（なんと風情のあるお名前…）\n研究者の方の...",
+        "category": "開発",
+        "rss_category": "",
+        "image_url": ""
+      },
       {
         "title": "【Python】バーコードリーダーの入力を「キーボード」として奪われないためのevdev活用術",
         "url": "https://zenn.dev/meantix/articles/a3f4f932ee6564",
         "site": "Zenn(Python)",
         "published": "2025-11-13T06:04:28Z",
         "description": "はじめに\n業務効率化の一環として、Raspberry Piと安価なUSBバーコードリーダーを使って、備品管理や在庫管理システムを自作することがあります。\nしかし、USBバーコードリーダーの多くは**「USBキーボード（HIDデバイス）」**として認識されるため、以下のような問題に直面しがちです。\n\nターミナルやエディタに、読み取ったコードが勝手に入力されてしまう。\nSSH接続中や、ディスプレイを繋...",
+        "category": "開発",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "LLM開発の裏で行われるデバッグ作業: PyTorch DCP",
+        "url": "https://zenn.dev/turing_motors/articles/04eed10b0aafe9",
+        "site": "Zenn(Python)",
+        "published": "2025-11-13T06:03:34Z",
+        "description": "はじめに\nTuring CTO室に所属している東京科学大学(Institute of Science Tokyo)の藤井です。\n本記事は、LLM, VLM開発の裏で行われるリアルなデバッグ作業の様子を紹介します。\nLLM, VLMの開発の裏には本記事で紹介するような地道なデバッグ作業が多数あるのですが、なかなかその実態が伝わっていないように思います。できるだけ詳細にデバッグ作業の様子を記しましたの...",
         "category": "開発",
         "rss_category": "",
         "image_url": ""
@@ -40,98 +90,6 @@
         "site": "Zenn(Python)",
         "published": "2025-11-12T23:23:12Z",
         "description": "https://github.com/NVlabs/SegFormer\nSegformerとMMCVのインストールに異常にハマったのでメモ\nMMCVには複数のインストール方法が用意されているがどれも一筋縄では行かない。\n\n 環境\n\nubuntu 20.04\npython 3.9\npytorch 2.0\ncuda 11.8\nGPU(driver) 440\n\n\n pipを使ったインストール\ndocke...",
-        "category": "開発",
-        "rss_category": "",
-        "image_url": ""
-      }
-    ],
-    "昨日": [
-      {
-        "title": "Gemini Code AssistでフルスタックWebアプリ Part１: バックエンド編",
-        "url": "https://zenn.dev/sesamy_jp/articles/63935c690ddccf",
-        "site": "Zenn(Python)",
-        "published": "2025-11-12T14:09:54Z",
-        "description": "🚀 導入：AIと作るフルスタックWebアプリ\nこれは、GoogleのAIアシスタント「Gemini Code Assist (GCA)」を使い、フルスタックなWebアプリケーションをゼロから構築するチュートリアルのPart 1: バックエンド編です。\nPart1では、PythonのWebフレームワークFlaskとデータベースSQLiteを使い、ToDoリストアプリのバックエンドAPIを構築します。...",
-        "category": "開発",
-        "rss_category": "",
-        "image_url": ""
-      },
-      {
-        "title": "※編集中【Python入門】__file__ とは？",
-        "url": "https://zenn.dev/mabo23/articles/0ed28538af49da",
-        "site": "Zenn(Python)",
-        "published": "2025-11-12T12:18:23Z",
-        "description": "file (アンダースコア・アンダースコア・ファイル・アンダースコア・アンダースコア) は、Pythonにおいて現在実行されているモジュール（ファイル）のパスを保持している組み込みの変数です。\nこれは、Pythonの特殊な変数の一つで、ファイルの場所をプログラム内で特定するために非常に重要です。\nfile の役割と取得する値\n\n取得する値\nfile が保持する値は、通常、スクリプトファイル自身のパ...",
-        "category": "開発",
-        "rss_category": "",
-        "image_url": ""
-      },
-      {
-        "title": "Python データ構造チートシート（完全版）",
-        "url": "https://zenn.dev/biki/articles/74375838feefcb",
-        "site": "Zenn(Python)",
-        "published": "2025-11-12T10:43:26Z",
-        "description": "🧠 はじめに\nデータ構造を理解することは、アルゴリズムの武器を扱う練習。\nここでは主要な構造の「使いどころ」＋「操作」＋「Big O」＋「for ループ／再帰例」を網羅します。\n\n\n\n\n\n 🧩 List（リスト）\n\n 概要\n順序を持つ配列。append・pop・sort が主な操作。\nインデックスアクセスが O(1)。\n\n どんなときに使うか？\n\n順序付きデータの管理\nスタック・キューの実装\n配列...",
-        "category": "開発",
-        "rss_category": "",
-        "image_url": ""
-      },
-      {
-        "title": "【また2ポインタ法】leetcode解いていたらいきなり機械学習問題出たかと思った",
-        "url": "https://zenn.dev/zenn_mita/articles/031fe10b42739c",
-        "site": "Zenn(Python)",
-        "published": "2025-11-12T09:55:45Z",
-        "description": "目次\n\n解いた問題\n学び\n最初の解法\n答え\n感想\n\n\n 解いた問題\nLeetCode 121 Best Time to Buy and Sell Stock\n株取引を考えて利益が最大どのくらい出るかを答えてねってやつ\n株価予測？機械学習？と思ったが、株価を模したリストが与えられて、それが時系列に並んでいるって想定で解く問題だった。\n\n 学び\n\n2ポインタ法は結構汎用性のあるアルゴリズム\n空間計算量...",
-        "category": "開発",
-        "rss_category": "",
-        "image_url": ""
-      },
-      {
-        "title": "アルゴリズム学習はまるでRPGだった話 〜データ構造は武器だ〜",
-        "url": "https://zenn.dev/biki/articles/d980d4a16f1436",
-        "site": "Zenn(Python)",
-        "published": "2025-11-12T09:10:33Z",
-        "description": "🧠 はじめに\nGoogle 面接のコーディング練習をしているとき、ふと気づいた。\n「これ、まるで RPG じゃないか？」\nアルゴリズムの世界では、問題が敵で、データ構造が武器だ。\nそして、強い武器ほど正しく使わなければ勝てない。\n\n\n 🎮 ステージ 1：まずは“武器の一覧”を覚える\nアルゴリズムの敵（問題）はいろいろ出てくるけど、\n実は出てくる武器はだいたい同じ。\n\n\n\n敵（問題タイプ）\nよく使う...",
-        "category": "開発",
-        "rss_category": "",
-        "image_url": ""
-      },
-      {
-        "title": "pythonコード実行の監視-カバレッジやコールグラフの自作",
-        "url": "https://zenn.dev/mima_ita/articles/eb52684818d551",
-        "site": "Zenn(Python)",
-        "published": "2025-11-12T05:29:46Z",
-        "description": "はじめに\nPython 3.12よりsys.monitoringが追加されました。\nこれにより、コードオブジェクトに対して、開始イベントやRETURNイベントを監視することが可能になります。\nこの機能を応用することでカバレッジ計測や、コールグラフが自作できます。\n本記事では、このライブラリの使いかたの調査と実験を行います。\nまた、コードオブジェクトを使用するので、バイトコードに対して最低限の知識を...",
-        "category": "開発",
-        "rss_category": "",
-        "image_url": ""
-      },
-      {
-        "title": "PythonでOCRを実装してみた。そしてもうそんな時代じゃなかった💮",
-        "url": "https://zenn.dev/knc/articles/0ce2e037aad656",
-        "site": "Zenn(Python)",
-        "published": "2025-11-12T00:05:31Z",
-        "description": "はじめに\nどうしてもデジタル化が難しい紙のアンケートがあった。\n複数ページにわたる表形式で、手書きの数字を一つずつ書き込んでもらうのだ。\nそれを回収し、集計しなければならない。\n手入力なんてやっていられない。\nだから、スキャンしてPythonでOCR処理をしてみることにした。\n\n PythonでOCRを実装する\n使ったのは、オープンソースのOCRツールTesseract OCR。導入方法など詳しく...",
-        "category": "開発",
-        "rss_category": "",
-        "image_url": ""
-      },
-      {
-        "title": "Microsoft Agent Framework(Python)をollama+GPT-OSSで試してみる",
-        "url": "https://zenn.dev/kinniku_coder/articles/2025-11-12-agent_framework_ollama",
-        "site": "Zenn(Python)",
-        "published": "2025-11-11T23:50:37Z",
-        "description": "Microsoft Agent Framework(Python)をollama+GPT-OSSで試してみる\n\n\n Microsoft Agent Frameworkとは\nMicrosoft Agent Frameworkは、AIエージェントを用いたワークフローを構築するためのライブラリです。\n似たようなライブラリにセマンティックカーネルやAutoGenがありますが、Agent Framework...",
-        "category": "開発",
-        "rss_category": "",
-        "image_url": ""
-      },
-      {
-        "title": "#135 【Flet】タスクベースのProgressBarを作ってみた",
-        "url": "https://zenn.dev/nxted_sapporo/articles/b4a6b296e20e6f",
-        "site": "Zenn(Python)",
-        "published": "2025-11-11T23:20:33Z",
-        "description": "はじめに\n最近、Fletを使用してタスクベースのProgressBarを作ってみましたので自身の備忘録と共有も兼ねて記載します。\n\n Fletとは？\nFletとはPythonのライブラリで、特段フロントエンドの知識がなくても、Web、デスクトップ、モバイルアプリを簡単に構築できるフレームワークです。\n参考：https://flet.dev/docs/#what-is-flet\n\n 目標\n改めて本記...",
         "category": "開発",
         "rss_category": "",
         "image_url": ""
@@ -139,121 +97,91 @@
     ],
     "一昨日": [
       {
-        "title": "CUDA-Q で遊んでみる (3) — GPU で 期待値計算をしてみる",
-        "url": "https://zenn.dev/derwind/articles/dwd-cuda-q03",
+        "title": "Gemini Code AssistでフルスタックWebアプリ Part１: バックエンド編",
+        "url": "https://zenn.dev/sesamy_jp/articles/63935c690ddccf",
         "site": "Zenn(Python)",
-        "published": "2025-11-11T13:55:29Z",
-        "description": "目的\nCUDA-Q で遊んでみる (2) — GPU で Grover のアルゴリズムを回してみる に続いて別の用途で GPU を使ってみようというもの。\n面白いアプリケーションを思いつかなかったので、非常にくだらない計算をする。今度は、cuQuantum のテンソルネットワークシミュレータの cuTensorNet を間接的に使用する。\n以前にも 行列積状態について考える (10) — 50 量...",
+        "published": "2025-11-12T14:09:54Z",
+        "description": "🚀 導入：AIと作るフルスタックWebアプリ\nこれは、GoogleのAIアシスタント「Gemini Code Assist (GCA)」を使い、フルスタックなWebアプリケーションをゼロから構築するチュートリアルのPart 1: バックエンド編です。\nPart1では、PythonのWebフレームワークFlaskとデータベースSQLiteを使い、ToDoリストアプリのバックエンドAPIを構築します。...",
         "category": "開発",
         "rss_category": "",
         "image_url": ""
       },
       {
-        "title": "Pythonパッケージ・プロジェクト管理ツール「uv」をインストールしてみた",
-        "url": "https://zenn.dev/judenfly/articles/judenfly-20251111",
+        "title": "※編集中【Python入門】__file__ とは？",
+        "url": "https://zenn.dev/mabo23/articles/0ed28538af49da",
         "site": "Zenn(Python)",
-        "published": "2025-11-11T12:22:25Z",
-        "description": "uvの概要\nuvとはPythonのパッケージやプロジェクトを管理するAstral社製のOSSです。\nuvだけでPythonのバージョン管理もパッケージ管理もできます。\nまた、uv自体はRustで書かれており、pipの10～100倍高速と謳われています。\n\n uvをインストールしてみた\n私はろくにコードを書かないので、pipやvenvだけで事足りていました。\nしかし、下記のポストでuvを知って興味が...",
+        "published": "2025-11-12T12:18:23Z",
+        "description": "file (アンダースコア・アンダースコア・ファイル・アンダースコア・アンダースコア) は、Pythonにおいて現在実行されているモジュール（ファイル）のパスを保持している組み込みの変数です。\nこれは、Pythonの特殊な変数の一つで、ファイルの場所をプログラム内で特定するために非常に重要です。\nfile の役割と取得する値\n\n取得する値\nfile が保持する値は、通常、スクリプトファイル自身のパ...",
         "category": "開発",
         "rss_category": "",
         "image_url": ""
       },
       {
-        "title": "【ステラソラ】イベントミニゲームのお宝が眠っている確率を算出するツール作ってみた",
-        "url": "https://zenn.dev/neruneko/articles/002-stellasora-hex_game",
+        "title": "Python データ構造チートシート（完全版）",
+        "url": "https://zenn.dev/biki/articles/74375838feefcb",
         "site": "Zenn(Python)",
-        "published": "2025-11-11T11:00:05Z",
-        "description": "結論！\nこんな感じで、盤面のどこにお宝が置いてある可能性が高いかを可視化するツールを作りました！\n結局ゲームの盤面が増えたりお宝の形が増えたりすることがなかったり、キャラクターのスキルのほうが大事だったりしてほとんど使わずに終わりましたが。。。\n\n\n\n はじめに\nこんにちは。nemuneko です=^_^=\n今回は私がプレイしている「ステラソラ」というゲームに登場する、イベント用ミニゲームの補助ツ...",
+        "published": "2025-11-12T10:43:26Z",
+        "description": "🧠 はじめに\nデータ構造を理解することは、アルゴリズムの武器を扱う練習。\nここでは主要な構造の「使いどころ」＋「操作」＋「Big O」＋「for ループ／再帰例」を網羅します。\n\n\n\n\n\n 🧩 List（リスト）\n\n 概要\n順序を持つ配列。append・pop・sort が主な操作。\nインデックスアクセスが O(1)。\n\n どんなときに使うか？\n\n順序付きデータの管理\nスタック・キューの実装\n配列...",
         "category": "開発",
         "rss_category": "",
         "image_url": ""
       },
       {
-        "title": "CUDA-Q で遊んでみる (2) — GPU で Grover のアルゴリズムを回してみる",
-        "url": "https://zenn.dev/derwind/articles/dwd-cuda-q02",
+        "title": "【また2ポインタ法】leetcode解いていたらいきなり機械学習問題出たかと思った",
+        "url": "https://zenn.dev/zenn_mita/articles/031fe10b42739c",
         "site": "Zenn(Python)",
-        "published": "2025-11-11T10:54:45Z",
-        "description": "目的\nCUDA-Q で遊んでみる (1) — とりあえず Bell 状態を作ってみる に続いてもうちょっと何かやってみようというもの。\nQiskit で遊んでみる (8) — Qiskit Aer GPU で以前に GPU を使って Grover のアルゴリズムを回してみたので、今回それを CUDA-Q に移植してパフォーマンスを見てみたい。Google Colab の T4 を用いようと思う。\n...",
+        "published": "2025-11-12T09:55:45Z",
+        "description": "目次\n\n解いた問題\n学び\n最初の解法\n答え\n感想\n\n\n 解いた問題\nLeetCode 121 Best Time to Buy and Sell Stock\n株取引を考えて利益が最大どのくらい出るかを答えてねってやつ\n株価予測？機械学習？と思ったが、株価を模したリストが与えられて、それが時系列に並んでいるって想定で解く問題だった。\n\n 学び\n\n2ポインタ法は結構汎用性のあるアルゴリズム\n空間計算量...",
         "category": "開発",
         "rss_category": "",
         "image_url": ""
       },
       {
-        "title": "[Python] asyncio.TaskGroupの動きを確認してみた",
-        "url": "https://zenn.dev/ux_xu/articles/c441baf95c41d9",
+        "title": "アルゴリズム学習はまるでRPGだった話 〜データ構造は武器だ〜",
+        "url": "https://zenn.dev/biki/articles/d980d4a16f1436",
         "site": "Zenn(Python)",
-        "published": "2025-11-11T08:56:50Z",
-        "description": "Python3.11から追加されているTaskGroupについて、触ったことがなかったので実際に動かしながら振る舞いを確認してみました。\n\n 参考にしたページ\n\n\n\n 実行するスクリプト\n今回のテスト用にスクリプトを作成しました。\n\n Taskとしてのasync関数\nimport asyncio\nimport logging\n\nasync def task(num: int, delay: flo...",
+        "published": "2025-11-12T09:10:33Z",
+        "description": "🧠 はじめに\nGoogle 面接のコーディング練習をしているとき、ふと気づいた。\n「これ、まるで RPG じゃないか？」\nアルゴリズムの世界では、問題が敵で、データ構造が武器だ。\nそして、強い武器ほど正しく使わなければ勝てない。\n\n\n 🎮 ステージ 1：まずは“武器の一覧”を覚える\nアルゴリズムの敵（問題）はいろいろ出てくるけど、\n実は出てくる武器はだいたい同じ。\n\n\n\n敵（問題タイプ）\nよく使う...",
         "category": "開発",
         "rss_category": "",
         "image_url": ""
       },
       {
-        "title": "Colabで機械学習するならDagsHubを使わない手はない",
-        "url": "https://zenn.dev/paxdare_labo/articles/colab_mlflow_dagshub",
+        "title": "pythonコード実行の監視-カバレッジやコールグラフの自作",
+        "url": "https://zenn.dev/mima_ita/articles/eb52684818d551",
         "site": "Zenn(Python)",
-        "published": "2025-11-11T03:45:41Z",
-        "description": "はじめに\n最近は、Pythonをプログラム・機械学習する環境も、様々増えてきています。\nローカルでPythonを使うケースも多く、今年だけでもuvやmarimoなど、便利な環境が多くて助かっています。\n一方で、仕事柄、色々な環境で作業することが多いと、どうしてもSaaSのサービスがありがたかったりします。\nSaaSのPython環境といえば、Colabですね。\n私にとっては、Python学び始めた...",
+        "published": "2025-11-12T05:29:46Z",
+        "description": "はじめに\nPython 3.12よりsys.monitoringが追加されました。\nこれにより、コードオブジェクトに対して、開始イベントやRETURNイベントを監視することが可能になります。\nこの機能を応用することでカバレッジ計測や、コールグラフが自作できます。\n本記事では、このライブラリの使いかたの調査と実験を行います。\nまた、コードオブジェクトを使用するので、バイトコードに対して最低限の知識を...",
         "category": "開発",
         "rss_category": "",
         "image_url": ""
       },
       {
-        "title": "2025年の個人開発：爆速で「パンダ特化型SNS」を作った技術スタック全公開",
-        "url": "https://zenn.dev/kinnkinn/articles/622a65a2a76dce",
+        "title": "PythonでOCRを実装してみた。そしてもうそんな時代じゃなかった💮",
+        "url": "https://zenn.dev/knc/articles/0ce2e037aad656",
         "site": "Zenn(Python)",
-        "published": "2025-11-11T03:21:34Z",
-        "description": "この記事では、私が個人開発でリリースしたパンダ情報特化型アグリゲーションサービス「PanDo (パンドゥ)」について、そのアーキテクチャから実装のこだわりまでを紹介します。\n\nhttps://n-scroller.vercel.app\n\n 導入：なぜ今、パンダなのか？\n開発動機は、パンダに関する情報（動物園の公式サイト、ニュース、SNS）がWeb上に散在しており、それらを一元的に追いかけるのが困難...",
+        "published": "2025-11-12T00:05:31Z",
+        "description": "はじめに\nどうしてもデジタル化が難しい紙のアンケートがあった。\n複数ページにわたる表形式で、手書きの数字を一つずつ書き込んでもらうのだ。\nそれを回収し、集計しなければならない。\n手入力なんてやっていられない。\nだから、スキャンしてPythonでOCR処理をしてみることにした。\n\n PythonでOCRを実装する\n使ったのは、オープンソースのOCRツールTesseract OCR。導入方法など詳しく...",
         "category": "開発",
         "rss_category": "",
         "image_url": ""
       },
       {
-        "title": "【サクッと】Python&Gemini APIでCLI AI Agent作ってみた",
-        "url": "https://zenn.dev/shimiharu/articles/e5cc79d0b5db12",
+        "title": "Microsoft Agent Framework(Python)をollama+GPT-OSSで試してみる",
+        "url": "https://zenn.dev/kinniku_coder/articles/2025-11-12-agent_framework_ollama",
         "site": "Zenn(Python)",
-        "published": "2025-11-11T03:02:37Z",
-        "description": "はじめに\nAI Agentは兎にも角にもとりあえず作ってみようという記事を読んだので、簡単に作ってみました。\n\nいくつかの概念は抽象的に理解しやすい。沸騰したお湯は熱して待つだけ。他の概念は実際に試してみる必要がある。自転車の仕組みは、実際に乗ってみないと理解できない。\n\nhttps://fly.io/blog/everyone-write-an-agent/\n\n やったこと\nPythonとGem...",
+        "published": "2025-11-11T23:50:37Z",
+        "description": "Microsoft Agent Framework(Python)をollama+GPT-OSSで試してみる\n\n\n Microsoft Agent Frameworkとは\nMicrosoft Agent Frameworkは、AIエージェントを用いたワークフローを構築するためのライブラリです。\n似たようなライブラリにセマンティックカーネルやAutoGenがありますが、Agent Framework...",
         "category": "開発",
         "rss_category": "",
         "image_url": ""
       },
       {
-        "title": "【Colaboratory】gemma3を使ってみる",
-        "url": "https://zenn.dev/hoshinagi1219/articles/42778ccf1bacd4",
+        "title": "#135 【Flet】タスクベースのProgressBarを作ってみた",
+        "url": "https://zenn.dev/nxted_sapporo/articles/b4a6b296e20e6f",
         "site": "Zenn(Python)",
-        "published": "2025-11-11T02:11:01Z",
-        "description": "自分用の備忘録ですが、よかったら参照ください。\n躓きポイントは以下の通り（筆者は１時間ほど溶かしました...）\n\nHuggingFaceのTokenの権限設定\ngemma3の利用規約に同意する\n\n\n 0 前提\n\nHuggingFaceのアカウントは持っているとする\nモデルはgemma3-4b-itを使用（画像とテキスト入力がしたかったため）\n環境はGoogle Colaboratoryを使用\nHu...",
-        "category": "開発",
-        "rss_category": "",
-        "image_url": ""
-      },
-      {
-        "title": "ライブドアブログとnoteの記事をWordpressへ移行する 1",
-        "url": "https://zenn.dev/malzy/articles/f090df9d10cf06",
-        "site": "Zenn(Python)",
-        "published": "2025-11-10T20:40:03Z",
-        "description": "昨日食べたものは、たしか、肉じゃが、カツ丼、豚汁、アイスコーヒー、冷麺、カルビ丼でした。\n\n趣味の水泳関連の記事が、ライブドアブログとnoteの2つのプラットフォームに分散してしまいました。\nこれらの記事を新設したWordpressに集約して公開するまで、作業を記録していこうと思います。\n移行元の記事数は、\nライブドアブログ：904件 https://waist100.blog.jp/\nnote：...",
-        "category": "開発",
-        "rss_category": "",
-        "image_url": ""
-      },
-      {
-        "title": "Astronomer Certification DAG Authoring for Apache Airflow 3を取得してみた",
-        "url": "https://zenn.dev/hirokiswe/articles/467e962f2e6c8b",
-        "site": "Zenn(Python)",
-        "published": "2025-11-10T17:23:31Z",
-        "description": "はじめに\n\nこの記事は個人の記録・情報発信を目的に書いております。AIは利用しておりません。\n著者は Software Engineer (MLOps/Data Engineer) 2年目で、もう少しで3年目です。\nネット上にこちらの資格を取得した記事があまりなかったので、作成してみようと思いました。少しでも、受験を考えている方の参考になればと思っています。\n\n\n Apache Airflowとは...",
-        "category": "開発",
-        "rss_category": "",
-        "image_url": ""
-      },
-      {
-        "title": "OSSを読んで学ぶ！Django ORMを徹底解剖",
-        "url": "https://zenn.dev/techliberty/articles/a12acfba11d708",
-        "site": "Zenn(Python)",
-        "published": "2025-11-10T16:08:12Z",
-        "description": "この記事の概要\n本記事では、Django ORMの仕組みへの理解を実際にOSSの内部実装を見ながら深めていきます。\n対象読者\n\nDjangoを始めたてでORMにまだ慣れていないエンジニア\nフレームワークのOSSを読んでみたい人\n\n\n Django ORMとは何か\nDjangoのORMは、Pythonのクラスとデータベーステーブルを1対1でマッピングする仕組みです。他のORMと同じようにSQLを直接...",
+        "published": "2025-11-11T23:20:33Z",
+        "description": "はじめに\n最近、Fletを使用してタスクベースのProgressBarを作ってみましたので自身の備忘録と共有も兼ねて記載します。\n\n Fletとは？\nFletとはPythonのライブラリで、特段フロントエンドの知識がなくても、Web、デスクトップ、モバイルアプリを簡単に構築できるフレームワークです。\n参考：https://flet.dev/docs/#what-is-flet\n\n 目標\n改めて本記...",
         "category": "開発",
         "rss_category": "",
         "image_url": ""
@@ -261,11 +189,61 @@
     ],
     "2025-11": [
       {
+        "title": "RubyやPythonのGVL(GIL)は1プロセス1コアではない",
+        "url": "https://zenn.dev/masapon/articles/5ce7982f8fee23",
+        "site": "Zenn(Python)",
+        "published": "2025-11-13T12:53:07Z",
+        "description": "概要\n普段 Ruby (MRI/CRuby) を使ってアプリケーションを開発しているのですが、GVL (Python においては GIL)について勘違いしていた部分があったため、記事として整理します。\n私は当初、「GVLがあるため、Rubyの1プロセスは1コアしか使えない」と雑に理解していました。そのため、マルチコアのサーバでCPU負荷の高い処理を複数スレッドで動かしても、1つのプロセスの場合1つ...",
+        "category": "開発",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "【Python】TypedDict で予約語をキーに使いたいときの対処法",
+        "url": "https://zenn.dev/oroshi/articles/typeddict_reserved_word",
+        "site": "Zenn(Python)",
+        "published": "2025-11-13T12:46:06Z",
+        "description": "Python には TypedDict というものがあり、これを使うと辞書型のオブジェクトの型を静的にチェックしてくれるようになります。Typescript の type に似ています。\n\n 例\nfrom typing import TypedDict\n\n\nclass Person(TypedDict):\n    name: str\n    age: int\n\n\nperson: Person = ...",
+        "category": "開発",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "スプリント手法を使ったPythonの勉強計画",
+        "url": "https://zenn.dev/kitsunem/articles/2e3d5b125f726a",
+        "site": "Zenn(Python)",
+        "published": "2025-11-13T11:48:35Z",
+        "description": "自己紹介\nうつ病で失業をしている50代です。正直、このまま定年してもおかしくないのですが、頭のリハビリしつつ勉強しようと思ってます。\n前回、余っているPCにDebianとJupyterを入れてPythonが勉強できる環境を作ったので、それを元に勉強しようと思っていますが、闇雲に勉強しても身につかないので、ChatGPTと一緒に計画を立てて勧めていきます。\n\n 計画\n計画はスプリントというGoogl...",
+        "category": "開発",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "Python で他生物の視覚をシミュレートする",
+        "url": "https://zenn.dev/aldagram_tech/articles/2bb82ddb00cffc",
+        "site": "Zenn(Python)",
+        "published": "2025-11-13T09:00:01Z",
+        "description": "こんにちは！アルダグラムでエンジニアをしている内倉です\n今年も、一年が終わろうとしていますね。\n私のブログ当番は、これが今年最後の予定なので、また印象に残ったニュースを振り返ってみたいと思います。\n今年、個人的に気になったニュースは、だいぶ最近ですが\n日本では初めての発見となる、二枚貝と共生するヨコエビ、その名も「ユキミノノマルハサミヨコエビ」の発見です。（なんと風情のあるお名前…）\n研究者の方の...",
+        "category": "開発",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
         "title": "【Python】バーコードリーダーの入力を「キーボード」として奪われないためのevdev活用術",
         "url": "https://zenn.dev/meantix/articles/a3f4f932ee6564",
         "site": "Zenn(Python)",
         "published": "2025-11-13T06:04:28Z",
         "description": "はじめに\n業務効率化の一環として、Raspberry Piと安価なUSBバーコードリーダーを使って、備品管理や在庫管理システムを自作することがあります。\nしかし、USBバーコードリーダーの多くは**「USBキーボード（HIDデバイス）」**として認識されるため、以下のような問題に直面しがちです。\n\nターミナルやエディタに、読み取ったコードが勝手に入力されてしまう。\nSSH接続中や、ディスプレイを繋...",
+        "category": "開発",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "LLM開発の裏で行われるデバッグ作業: PyTorch DCP",
+        "url": "https://zenn.dev/turing_motors/articles/04eed10b0aafe9",
+        "site": "Zenn(Python)",
+        "published": "2025-11-13T06:03:34Z",
+        "description": "はじめに\nTuring CTO室に所属している東京科学大学(Institute of Science Tokyo)の藤井です。\n本記事は、LLM, VLM開発の裏で行われるリアルなデバッグ作業の様子を紹介します。\nLLM, VLMの開発の裏には本記事で紹介するような地道なデバッグ作業が多数あるのですが、なかなかその実態が伝わっていないように思います。できるだけ詳細にデバッグ作業の様子を記しましたの...",
         "category": "開発",
         "rss_category": "",
         "image_url": ""
@@ -441,41 +419,11 @@
         "image_url": ""
       },
       {
-        "title": "Colabで機械学習するならDagsHubを使わない手はない",
-        "url": "https://zenn.dev/paxdare_labo/articles/colab_mlflow_dagshub",
-        "site": "Zenn(Python)",
-        "published": "2025-11-11T03:45:41Z",
-        "description": "はじめに\n最近は、Pythonをプログラム・機械学習する環境も、様々増えてきています。\nローカルでPythonを使うケースも多く、今年だけでもuvやmarimoなど、便利な環境が多くて助かっています。\n一方で、仕事柄、色々な環境で作業することが多いと、どうしてもSaaSのサービスがありがたかったりします。\nSaaSのPython環境といえば、Colabですね。\n私にとっては、Python学び始めた...",
-        "category": "開発",
-        "rss_category": "",
-        "image_url": ""
-      },
-      {
         "title": "2025年の個人開発：爆速で「パンダ特化型SNS」を作った技術スタック全公開",
         "url": "https://zenn.dev/kinnkinn/articles/622a65a2a76dce",
         "site": "Zenn(Python)",
         "published": "2025-11-11T03:21:34Z",
         "description": "この記事では、私が個人開発でリリースしたパンダ情報特化型アグリゲーションサービス「PanDo (パンドゥ)」について、そのアーキテクチャから実装のこだわりまでを紹介します。\n\nhttps://n-scroller.vercel.app\n\n 導入：なぜ今、パンダなのか？\n開発動機は、パンダに関する情報（動物園の公式サイト、ニュース、SNS）がWeb上に散在しており、それらを一元的に追いかけるのが困難...",
-        "category": "開発",
-        "rss_category": "",
-        "image_url": ""
-      },
-      {
-        "title": "【サクッと】Python&Gemini APIでCLI AI Agent作ってみた",
-        "url": "https://zenn.dev/shimiharu/articles/e5cc79d0b5db12",
-        "site": "Zenn(Python)",
-        "published": "2025-11-11T03:02:37Z",
-        "description": "はじめに\nAI Agentは兎にも角にもとりあえず作ってみようという記事を読んだので、簡単に作ってみました。\n\nいくつかの概念は抽象的に理解しやすい。沸騰したお湯は熱して待つだけ。他の概念は実際に試してみる必要がある。自転車の仕組みは、実際に乗ってみないと理解できない。\n\nhttps://fly.io/blog/everyone-write-an-agent/\n\n やったこと\nPythonとGem...",
-        "category": "開発",
-        "rss_category": "",
-        "image_url": ""
-      },
-      {
-        "title": "【Colaboratory】gemma3を使ってみる",
-        "url": "https://zenn.dev/hoshinagi1219/articles/42778ccf1bacd4",
-        "site": "Zenn(Python)",
-        "published": "2025-11-11T02:11:01Z",
-        "description": "自分用の備忘録ですが、よかったら参照ください。\n躓きポイントは以下の通り（筆者は１時間ほど溶かしました...）\n\nHuggingFaceのTokenの権限設定\ngemma3の利用規約に同意する\n\n\n 0 前提\n\nHuggingFaceのアカウントは持っているとする\nモデルはgemma3-4b-itを使用（画像とテキスト入力がしたかったため）\n環境はGoogle Colaboratoryを使用\nHu...",
         "category": "開発",
         "rss_category": "",
         "image_url": ""
