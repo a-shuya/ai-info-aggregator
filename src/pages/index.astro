@@ -131,7 +131,14 @@ const formatLastUpdated = (dateString: string) => {
     <!-- モバイル用日付選択 -->
     <div style="margin-bottom: 15px;">
       <label style="display: block; font-size: 14px; font-weight: bold; margin-bottom: 5px;">日付選択:</label>
-      <input type="date" id="mobileDatePicker" style="width: 100%; padding: 8px; border: 1px solid #ddd; border-radius: 4px; font-size: 16px;">
+      <input type="date" id="mobileDatePicker" style="width: 100%; max-width: 100%; padding: 8px; border: 1px solid #ddd; border-radius: 4px; font-size: 16px; box-sizing: border-box;">
+    </div>
+    
+    <!-- モバイル用検索 -->
+    <div style="margin-bottom: 15px;">
+      <label style="display: block; font-size: 14px; font-weight: bold; margin-bottom: 5px;">記事を検索:</label>
+      <input type="text" id="mobileSearchInput" placeholder="タイトル、説明、サイト名で検索" style="width: 100%; padding: 8px; border: 1px solid #ddd; border-radius: 4px; font-size: 16px; box-sizing: border-box;">
+      <div id="mobileSearchCount" style="font-size: 12px; color: #666; margin-top: 5px;"></div>
     </div>
     
     <!-- モバイル用タブ選択 -->
@@ -155,7 +162,14 @@ const formatLastUpdated = (dateString: string) => {
       <!-- 日付選択 -->
       <div style="margin-bottom: 20px;">
         <label style="display: block; font-size: 14px; font-weight: bold; margin-bottom: 5px;">日付選択:</label>
-        <input type="date" id="desktopDatePicker" style="width: 100%; padding: 8px; border: 1px solid #ddd; border-radius: 4px;">
+        <input type="date" id="desktopDatePicker" style="max-width: 200px; padding: 8px; border: 1px solid #ddd; border-radius: 4px; box-sizing: border-box;">
+      </div>
+      
+      <!-- 検索ボックス -->
+      <div style="margin-bottom: 20px;">
+        <label style="display: block; font-size: 14px; font-weight: bold; margin-bottom: 5px;">記事を検索:</label>
+        <input type="text" id="desktopSearchInput" placeholder="タイトル、説明、サイト名で検索" style="width: 100%; max-width: 100%; padding: 8px; border: 1px solid #ddd; border-radius: 4px; box-sizing: border-box;">
+        <div id="desktopSearchCount" style="font-size: 12px; color: #666; margin-top: 5px;"></div>
       </div>
       
       <!-- ナビゲーション -->
@@ -429,6 +443,8 @@ const formatLastUpdated = (dateString: string) => {
       return uniqueArticles;
     }
     
+    let currentSearchQuery = '';
+    
     function filterArticles() {
       let filteredArticles = [];
       let title = '';
@@ -442,6 +458,17 @@ const formatLastUpdated = (dateString: string) => {
         filteredArticles = filteredArticles.filter(article => article.site === currentFilter);
       }
       
+      // 検索フィルタを適用
+      if (currentSearchQuery && currentSearchQuery.trim() !== '') {
+        const query = currentSearchQuery.toLowerCase().trim();
+        filteredArticles = filteredArticles.filter(article => {
+          const title = (article.title || '').toLowerCase();
+          const description = (article.description || '').toLowerCase();
+          const site = (article.site || '').toLowerCase();
+          return title.includes(query) || description.includes(query) || site.includes(query);
+        });
+      }
+      
       // 新着順でソート（新しい記事が上）
       filteredArticles.sort((a, b) => {
         const dateA = new Date(a.published);
@@ -452,7 +479,17 @@ const formatLastUpdated = (dateString: string) => {
       // タイトル設定
       const displayDate = currentDate.toLocaleDateString('ja-JP');
       title = currentFilter === 'all' ? `${displayDate}のすべての記事` : `${displayDate}の${currentFilter}記事`;
+      if (currentSearchQuery) {
+        title += ` (検索: "${currentSearchQuery}")`;
+      }
       contentTitle.textContent = title;
+      
+      // 検索結果カウント表示
+      const searchCountText = currentSearchQuery ? `${filteredArticles.length}件の検索結果` : '';
+      const desktopSearchCount = document.getElementById('desktopSearchCount');
+      const mobileSearchCount = document.getElementById('mobileSearchCount');
+      if (desktopSearchCount) desktopSearchCount.textContent = searchCountText;
+      if (mobileSearchCount) mobileSearchCount.textContent = searchCountText;
       
       // 元サイトリンクの表示制御
       if (currentFilter !== 'all' && siteLinks[currentFilter]) {
@@ -612,12 +649,38 @@ const formatLastUpdated = (dateString: string) => {
       // 日付ピッカーの設定
       setupDatePickers();
       
-      // モバイル用タブセレクターの初期化
+      // モバイルタブセレクターの初期値を設定
       if (mobileTabSelector) {
         mobileTabSelector.value = currentFilter;
       }
       
-      // 初期記事表示
+      // 検索ボックスのイベントリスナー
+      const desktopSearchInput = document.getElementById('desktopSearchInput');
+      const mobileSearchInput = document.getElementById('mobileSearchInput');
+      
+      if (desktopSearchInput) {
+        desktopSearchInput.addEventListener('input', (e) => {
+          currentSearchQuery = e.target.value;
+          // モバイル側も同期
+          if (mobileSearchInput) {
+            mobileSearchInput.value = e.target.value;
+          }
+          filterArticles();
+        });
+      }
+      
+      if (mobileSearchInput) {
+        mobileSearchInput.addEventListener('input', (e) => {
+          currentSearchQuery = e.target.value;
+          // デスクトップ側も同期
+          if (desktopSearchInput) {
+            desktopSearchInput.value = e.target.value;
+          }
+          filterArticles();
+        });
+      }
+      
+      // 初期表示
       filterArticles();
     }
     

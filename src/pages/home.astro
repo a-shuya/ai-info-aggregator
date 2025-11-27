@@ -5,7 +5,7 @@ import Layout from '../layouts/Layout.astro';
 async function getFinanceData() {
   try {
     // Yahoo Finance APIを使用（無料）
-    const symbols = ['%5EN225', 'USDJPY=X', '%5EGSPC']; // 日経平均、ドル円、S&P500
+    const symbols = ['USDJPY=X', 'BTC-USD']; // ドル円、ビットコイン
     const promises = symbols.map(async (symbol) => {
       const response = await fetch(`https://query1.finance.yahoo.com/v8/finance/chart/${symbol}?range=5d&interval=1d`);
       const data = await response.json();
@@ -22,9 +22,8 @@ async function getFinanceData() {
       const change = prevClose - prevPrevClose;
       
       let name;
-      if (symbol === '%5EN225') name = '日経平均株価';
-      else if (symbol === 'USDJPY=X') name = 'ドル円';
-      else if (symbol === '%5EGSPC') name = 'S&P 500';
+      if (symbol === 'USDJPY=X') name = 'ドル円';
+      else if (symbol === 'BTC-USD') name = 'ビットコイン';
       
       return {
         name,
@@ -240,7 +239,7 @@ const weatherData = await getWeatherData();
                 {item.name}
               </h4>
               <div style="font-size: 24px; font-weight: bold; margin-bottom: 8px;">
-                {item.name === 'ドル円' ? `¥${item.price?.toFixed(2)}` : item.price?.toLocaleString()}
+                {item.name === 'ドル円' ? `¥${item.price?.toFixed(2)}` : `$${item.price?.toLocaleString('en-US', {maximumFractionDigits: 2})}`}
               </div>
               <div style={`font-size: 14px; ${item.change >= 0 ? 'color: #10b981;' : 'color: #ef4444;'}`}>
                 {item.change >= 0 ? '+' : ''}{item.change?.toFixed(2)} 
