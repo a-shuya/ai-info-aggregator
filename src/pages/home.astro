@@ -5,7 +5,8 @@ import Layout from '../layouts/Layout.astro';
 async function getFinanceData() {
   try {
     // Yahoo Finance APIを使用（無料）
-    const symbols = ['USDJPY=X', 'BTC-USD']; // ドル円、ビットコイン
+    // オルカン（eMAXIS Slim 全世界株式）の代わりにMSCI ACWIを使用
+    const symbols = ['USDJPY=X', '%5EGSPC', 'ACWI', 'BTC-USD']; // ドル円、S&P500、全世界株式、ビットコイン
     const promises = symbols.map(async (symbol) => {
       const response = await fetch(`https://query1.finance.yahoo.com/v8/finance/chart/${symbol}?range=5d&interval=1d`);
       const data = await response.json();
@@ -21,15 +22,28 @@ async function getFinanceData() {
       const prevPrevClose = prices[prices.length - 2];
       const change = prevClose - prevPrevClose;
       
-      let name;
-      if (symbol === 'USDJPY=X') name = 'ドル円';
-      else if (symbol === 'BTC-USD') name = 'ビットコイン';
+      let name, chartUrl;
+      if (symbol === 'USDJPY=X') {
+        name = 'ドル円';
+        chartUrl = 'https://www.tradingview.com/symbols/USDJPY/';
+      } else if (symbol === '%5EGSPC') {
+        name = 'S&P 500';
+        chartUrl = 'https://www.tradingview.com/symbols/SPX/';
+      } else if (symbol === 'ACWI') {
+        name = 'オルカン（全世界株式）';
+        chartUrl = 'https://www.tradingview.com/symbols/AMEX-ACWI/';
+      } else if (symbol === 'BTC-USD') {
+        name = 'ビットコイン';
+        chartUrl = 'https://www.tradingview.com/symbols/BTCUSD/';
+      }
       
       return {
         name,
+        symbol,
         price: prevClose,
         change,
-        changePercent: ((change / prevPrevClose) * 100)
+        changePercent: ((change / prevPrevClose) * 100),
+        chartUrl
       };
     });
     
@@ -239,17 +253,44 @@ const weatherData = await getWeatherData();
                 {item.name}
               </h4>
               <div style="font-size: 24px; font-weight: bold; margin-bottom: 8px;">
-                {item.name === 'ドル円' ? `¥${item.price?.toFixed(2)}` : `$${item.price?.toLocaleString('en-US', {maximumFractionDigits: 2})}`}
+                {item.symbol === 'USDJPY=X' ? `¥${item.price?.toFixed(2)}` : 
+                 item.symbol === 'BTC-USD' ? `$${item.price?.toLocaleString('en-US', {minimumFractionDigits: 0, maximumFractionDigits: 0})}` :
+                 `$${item.price?.toFixed(2)}`}
               </div>
-              <div style={`font-size: 14px; ${item.change >= 0 ? 'color: #10b981;' : 'color: #ef4444;'}`}>
+              <div style={`font-size: 14px; margin-bottom: 12px; ${item.change >= 0 ? 'color: #10b981;' : 'color: #ef4444;'}`}>
                 {item.change >= 0 ? '+' : ''}{item.change?.toFixed(2)} 
                 ({item.changePercent >= 0 ? '+' : ''}{item.changePercent?.toFixed(2)}%)
               </div>
+              <a href={item.chartUrl} target="_blank" rel="noopener noreferrer" 
+                 style="display: inline-block; padding: 8px 16px; background-color: #333; color: white; text-decoration: none; border-radius: 4px; font-size: 14px; transition: background-color 0.2s;"
+                 onmouseover="this.style.backgroundColor='#555'"
+                 onmouseout="this.style.backgroundColor='#333'">
+                チャートを見る
+              </a>
             </div>
           ))}
         </div>
       </div>
 
+      <!-- TradingView埋め込みチャート（ドル円・BTC） -->
+      <div style="margin-bottom: 40px;">
+        <h3 style="font-size: 20px; font-weight: bold; margin-bottom: 20px; border-bottom: 2px solid #333; padding-bottom: 5px;">
+          チャート
+        </h3>
+        <div class="chart-grid" style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 20px; margin-bottom: 20px;">
+          <!-- ドル円チャート -->
+          <div style="border: 1px solid #ddd; border-radius: 8px; padding: 10px; background-color: white;">
+            <h4 style="font-size: 14px; font-weight: bold; margin-bottom: 10px;">ドル円</h4>
+            <div id="usdjpyChart" style="height: 300px;"></div>
+          </div>
+          <!-- ビットコインチャート -->
+          <div style="border: 1px solid #ddd; border-radius: 8px; padding: 10px; background-color: white;">
+            <h4 style="font-size: 14px; font-weight: bold; margin-bottom: 10px;">ビットコイン</h4>
+            <div id="btcChart" style="height: 300px;"></div>
+          </div>
+        </div>
+      </div>
+      
       <!-- 天気予報 -->
       <div>
         <h3 style="font-size: 20px; font-weight: bold; margin-bottom: 20px; border-bottom: 2px solid #333; padding-bottom: 5px;">
@@ -315,5 +356,57 @@ const weatherData = await getWeatherData();
         display: none !important;
       }
     }
+    
+    /* チャートグリッドのレスポンシブ */
+    @media (max-width: 1024px) {
+      .chart-grid {
+        grid-template-columns: 1fr !important;
+      }
+    }
   </style>
+  
+  <!-- TradingView Widget Script -->
+  <script is:inline src="https://s3.tradingview.com/tv.js"></script>
+  <script is:inline>
+    // ページ読み込み後にチャートを初期化
+    window.addEventListener('load', function() {
+      // ドル円チャート
+      if (document.getElementById('usdjpyChart')) {
+        new TradingView.widget({
+          "width": "100%",
+          "height": 300,
+          "symbol": "FX:USDJPY",
+          "interval": "D",
+          "timezone": "Asia/Tokyo",
+          "theme": "light",
+          "style": "1",
+          "locale": "ja",
+          "toolbar_bg": "#f1f3f6",
+          "enable_publishing": false,
+          "hide_side_toolbar": false,
+          "allow_symbol_change": false,
+          "container_id": "usdjpyChart"
+        });
+      }
+      
+      // ビットコインチャート
+      if (document.getElementById('btcChart')) {
+        new TradingView.widget({
+          "width": "100%",
+          "height": 300,
+          "symbol": "BINANCE:BTCUSDT",
+          "interval": "D",
+          "timezone": "Asia/Tokyo",
+          "theme": "light",
+          "style": "1",
+          "locale": "ja",
+          "toolbar_bg": "#f1f3f6",
+          "enable_publishing": false,
+          "hide_side_toolbar": false,
+          "allow_symbol_change": false,
+          "container_id": "btcChart"
+        });
+      }
+    });
+  </script>
 </Layout>
