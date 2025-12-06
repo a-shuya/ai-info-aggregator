@@ -1,9 +1,29 @@
 {
   "site": "Zenn(Python)",
-  "last_updated": "2025-12-06T21:39:53.294356",
-  "total_articles": 1439,
+  "last_updated": "2025-12-06T21:51:52.678882",
+  "total_articles": 1443,
   "articles_by_date": {
     "本日": [
+      {
+        "title": "子供のYouTube依存を技術で解決したい。ラズパイ×顔認識で「視聴時間の見える化」",
+        "url": "https://zenn.dev/tsubatech/articles/3748b3ca842a8c",
+        "site": "Zenn(Python)",
+        "published": "2025-12-06T17:38:34Z",
+        "description": "「子どもがどれくらいテレビ（YouTubeなどの動画）を見ているか」を、\nRaspberry Pi + Webカメラ + 顔認識で、なるべく自動で・ざっくりでいいから記録したい、と思って作った仕組みのメモです。\nやっていることはシンプルで、\n\n5秒ごとにカメラから画像を撮る\n映っている顔を検出して「誰か？」を判定\nその結果をCSVに書き溜める\nあとで「日付 × 人ごとの視聴時間（分）」に集計する\n...",
+        "category": "開発",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "LLMアプリケーションのセキュリティ② 機密情報の漏洩",
+        "url": "https://zenn.dev/inaki/articles/f6352ef21256c9",
+        "site": "Zenn(Python)",
+        "published": "2025-12-06T16:32:51Z",
+        "description": "業務でAmazon Bedrock とLLMを使ったツールを開発しています。実用化にあたり、セキュリティ対策が不可欠なので、LLMアプリケーションに必要なセキュリティ対策ガイドライン、OWASP Top 10 for LLM Applications（以下「OWASP-LLM Top 10」）を、自分の職務内容に照らし合わせて整理しています。本記事では、その10項目のうちの2つ目「機密情報の漏洩」...",
+        "category": "開発",
+        "rss_category": "",
+        "image_url": ""
+      },
       {
         "title": "マルコフ連鎖を使って友人2号botを作った",
         "url": "https://zenn.dev/huitgroup/articles/87714a40be4cbe",
@@ -16,6 +36,16 @@
       }
     ],
     "昨日": [
+      {
+        "title": "arXivの論文洪水をAIで攻略！自動要約＆DB管理ツール「paperfeeder」を作った",
+        "url": "https://zenn.dev/gorn/articles/6535adcd960311",
+        "site": "Zenn(Python)",
+        "published": "2025-12-06T14:56:42Z",
+        "description": "はじめに\nQiitaの方で書いた\"情報の洪水に立ち向かう！AI要約ツール「rsssummarizer」で快適なインプットライフを\"の実質的には続編となっています。ここで書いた、Paperfeederの話です。arXivはきわめて、有用な論文のソースですが、いかんせん、量が多く、さらに、どれがどれという感じです。その論文の洪水をなんとかできないかと考えました。\n\n 洪水をどうにかしよう\nそうすると、...",
+        "category": "開発",
+        "rss_category": "",
+        "image_url": ""
+      },
       {
         "title": "公式Dockerイメージ × uvで作るローカルKaggle環境",
         "url": "https://zenn.dev/ihiratch/articles/511969326cb27d",
@@ -42,6 +72,16 @@
         "site": "Zenn(Python)",
         "published": "2025-12-06T13:56:14Z",
         "description": "今回は改めてredisに入門してみました。今まで使って経験はありつつ、ちゃんと調べて勉強しようということで使ってみました。まずはサーバの建て方とPythonからのアクセス方法をまとめてみます。\n\n 検証内容\n今回は以下の内容を実施します\n\nredisサーバの起動\n\nDocker上でサーバを立てます\nポートは6379でポートフォワーディングによりローカル環境からアクセスできるようにします\n\n\npyt...",
+        "category": "開発",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "Vertex AI Agent Engine Memory Bank で AI エージェントの記憶を深ぼってみた",
+        "url": "https://zenn.dev/ri0/articles/89b9d2636a83f4",
+        "site": "Zenn(Python)",
+        "published": "2025-12-06T13:39:15Z",
+        "description": "はじめに\n業務でエージェント開発を行う人も増えてきたと思います。私自身エージェントを作る中で、「対話をまたいで一貫した文脈を維持すること」が案外難しいと感じる場面が多くありました。\n会話の中だけならうまく動くのに、セッションをまたぐと急に前提が抜け落ちたり、ユーザーの好みを忘れたりしてしまう——そんな状態では、エージェントを実サービスに統合したときの UX に大きな影響が出てしまいます。\nそんな中...",
         "category": "開発",
         "rss_category": "",
         "image_url": ""
@@ -242,26 +282,6 @@
         "site": "Zenn(Python)",
         "published": "2025-12-05T16:31:12Z",
         "description": "AI自動売買システムの開発を進めています。\n今回は、フロントエンドのUIを整理し、スクリーニング実行タブを削除しました。\n\n 変更内容\n\n\nAgentPanel.js からスクリーニング関連のコードを削除\n自動売買ログとポートフォリオ確認に集中できるUIに変更\nコードベースの軽量化\n\nスクリーニング機能は別の管理画面または独立したツールとして再実装する予定です。\nこれにより、メインのダッシュボード...",
-        "category": "開発",
-        "rss_category": "",
-        "image_url": ""
-      },
-      {
-        "title": "RAGを自分で実装したくなったらまずこれ見て【ruri-v3 × Faiss】",
-        "url": "https://zenn.dev/livetoon/articles/b273cdfc07c55c",
-        "site": "Zenn(Python)",
-        "published": "2025-12-05T15:27:23Z",
-        "description": "この記事はLivetoon Tech Advent Calendar 2025の６日目の記事です。\nhttps://adventar.org/calendars/12157\nCTOの長嶋が担当です。\n本日は、皆さんよく聞くRAGのお話です。\n\n 宣伝\nhttps://kai0.onelink.me/Hogh/AdventCalendar2025\n今回のアドベントカレンダーでは、LivetoonのA...",
-        "category": "開発",
-        "rss_category": "",
-        "image_url": ""
-      },
-      {
-        "title": "【脱Excel・PPT】生成AI×Google Colabで、研修資料の図解作成を2時間→10分に短縮した話",
-        "url": "https://zenn.dev/yujmatsu/articles/20251206_ai_googlecolab",
-        "site": "Zenn(Python)",
-        "published": "2025-12-05T15:00:01Z",
-        "description": "😫 研修資料作り、「図解」で力尽きていませんか？\n最近、社内の中途社員（ジュニア層）に向けた技術研修の資料を作っているのですが、\nこれだけは言わせてください。\n「演習問題の『回答図』を作るのが、あまりにもしんどい…！！」\nテキストで解説を書くのは良いんです。\nでも、それを補足する「グラフ」や「構成図」を作成しようとすると、途端に時間が溶けていきます。\n\nExcelでデータを入れて、グラフの書式を整...",
         "category": "開発",
         "rss_category": "",
         "image_url": ""
@@ -421,11 +441,41 @@
     ],
     "2025-12": [
       {
+        "title": "子供のYouTube依存を技術で解決したい。ラズパイ×顔認識で「視聴時間の見える化」",
+        "url": "https://zenn.dev/tsubatech/articles/3748b3ca842a8c",
+        "site": "Zenn(Python)",
+        "published": "2025-12-06T17:38:34Z",
+        "description": "「子どもがどれくらいテレビ（YouTubeなどの動画）を見ているか」を、\nRaspberry Pi + Webカメラ + 顔認識で、なるべく自動で・ざっくりでいいから記録したい、と思って作った仕組みのメモです。\nやっていることはシンプルで、\n\n5秒ごとにカメラから画像を撮る\n映っている顔を検出して「誰か？」を判定\nその結果をCSVに書き溜める\nあとで「日付 × 人ごとの視聴時間（分）」に集計する\n...",
+        "category": "開発",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "LLMアプリケーションのセキュリティ② 機密情報の漏洩",
+        "url": "https://zenn.dev/inaki/articles/f6352ef21256c9",
+        "site": "Zenn(Python)",
+        "published": "2025-12-06T16:32:51Z",
+        "description": "業務でAmazon Bedrock とLLMを使ったツールを開発しています。実用化にあたり、セキュリティ対策が不可欠なので、LLMアプリケーションに必要なセキュリティ対策ガイドライン、OWASP Top 10 for LLM Applications（以下「OWASP-LLM Top 10」）を、自分の職務内容に照らし合わせて整理しています。本記事では、その10項目のうちの2つ目「機密情報の漏洩」...",
+        "category": "開発",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
         "title": "マルコフ連鎖を使って友人2号botを作った",
         "url": "https://zenn.dev/huitgroup/articles/87714a40be4cbe",
         "site": "Zenn(Python)",
         "published": "2025-12-06T15:00:03Z",
         "description": "はじめに\nなんとなく思いついただけです。\n友人との過去のLINEのトークを元にマルコフ連鎖でランダムに文章を生成したら、「友人っぽい文体だけど何言ってるか分からないbot」ができて面白いのではと思い、Discordで「友人2号bot」として振る舞うbotを作ってみました。\nまた、記事の最後にGithubリポジトリのリンクを載せているので、気になる方は確認してみてください。\n!\n他人のLINEのトー...",
+        "category": "開発",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "arXivの論文洪水をAIで攻略！自動要約＆DB管理ツール「paperfeeder」を作った",
+        "url": "https://zenn.dev/gorn/articles/6535adcd960311",
+        "site": "Zenn(Python)",
+        "published": "2025-12-06T14:56:42Z",
+        "description": "はじめに\nQiitaの方で書いた\"情報の洪水に立ち向かう！AI要約ツール「rsssummarizer」で快適なインプットライフを\"の実質的には続編となっています。ここで書いた、Paperfeederの話です。arXivはきわめて、有用な論文のソースですが、いかんせん、量が多く、さらに、どれがどれという感じです。その論文の洪水をなんとかできないかと考えました。\n\n 洪水をどうにかしよう\nそうすると、...",
         "category": "開発",
         "rss_category": "",
         "image_url": ""
@@ -456,6 +506,16 @@
         "site": "Zenn(Python)",
         "published": "2025-12-06T13:56:14Z",
         "description": "今回は改めてredisに入門してみました。今まで使って経験はありつつ、ちゃんと調べて勉強しようということで使ってみました。まずはサーバの建て方とPythonからのアクセス方法をまとめてみます。\n\n 検証内容\n今回は以下の内容を実施します\n\nredisサーバの起動\n\nDocker上でサーバを立てます\nポートは6379でポートフォワーディングによりローカル環境からアクセスできるようにします\n\n\npyt...",
+        "category": "開発",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "Vertex AI Agent Engine Memory Bank で AI エージェントの記憶を深ぼってみた",
+        "url": "https://zenn.dev/ri0/articles/89b9d2636a83f4",
+        "site": "Zenn(Python)",
+        "published": "2025-12-06T13:39:15Z",
+        "description": "はじめに\n業務でエージェント開発を行う人も増えてきたと思います。私自身エージェントを作る中で、「対話をまたいで一貫した文脈を維持すること」が案外難しいと感じる場面が多くありました。\n会話の中だけならうまく動くのに、セッションをまたぐと急に前提が抜け落ちたり、ユーザーの好みを忘れたりしてしまう——そんな状態では、エージェントを実サービスに統合したときの UX に大きな影響が出てしまいます。\nそんな中...",
         "category": "開発",
         "rss_category": "",
         "image_url": ""
@@ -656,26 +716,6 @@
         "site": "Zenn(Python)",
         "published": "2025-12-05T16:31:12Z",
         "description": "AI自動売買システムの開発を進めています。\n今回は、フロントエンドのUIを整理し、スクリーニング実行タブを削除しました。\n\n 変更内容\n\n\nAgentPanel.js からスクリーニング関連のコードを削除\n自動売買ログとポートフォリオ確認に集中できるUIに変更\nコードベースの軽量化\n\nスクリーニング機能は別の管理画面または独立したツールとして再実装する予定です。\nこれにより、メインのダッシュボード...",
-        "category": "開発",
-        "rss_category": "",
-        "image_url": ""
-      },
-      {
-        "title": "RAGを自分で実装したくなったらまずこれ見て【ruri-v3 × Faiss】",
-        "url": "https://zenn.dev/livetoon/articles/b273cdfc07c55c",
-        "site": "Zenn(Python)",
-        "published": "2025-12-05T15:27:23Z",
-        "description": "この記事はLivetoon Tech Advent Calendar 2025の６日目の記事です。\nhttps://adventar.org/calendars/12157\nCTOの長嶋が担当です。\n本日は、皆さんよく聞くRAGのお話です。\n\n 宣伝\nhttps://kai0.onelink.me/Hogh/AdventCalendar2025\n今回のアドベントカレンダーでは、LivetoonのA...",
-        "category": "開発",
-        "rss_category": "",
-        "image_url": ""
-      },
-      {
-        "title": "【脱Excel・PPT】生成AI×Google Colabで、研修資料の図解作成を2時間→10分に短縮した話",
-        "url": "https://zenn.dev/yujmatsu/articles/20251206_ai_googlecolab",
-        "site": "Zenn(Python)",
-        "published": "2025-12-05T15:00:01Z",
-        "description": "😫 研修資料作り、「図解」で力尽きていませんか？\n最近、社内の中途社員（ジュニア層）に向けた技術研修の資料を作っているのですが、\nこれだけは言わせてください。\n「演習問題の『回答図』を作るのが、あまりにもしんどい…！！」\nテキストで解説を書くのは良いんです。\nでも、それを補足する「グラフ」や「構成図」を作成しようとすると、途端に時間が溶けていきます。\n\nExcelでデータを入れて、グラフの書式を整...",
         "category": "開発",
         "rss_category": "",
         "image_url": ""
