@@ -1,6 +1,6 @@
 {
   "site": "Zenn(Python)",
-  "last_updated": "2025-12-07T08:59:51.672428",
+  "last_updated": "2025-12-07T09:27:30.267717",
   "total_articles": 1469,
   "articles_by_date": {
     "本日": [
@@ -40,16 +40,6 @@
         "site": "Zenn(Python)",
         "published": "2025-12-07T04:29:24Z",
         "description": "名工大アドベントカレンダー 3 日目です。\n\n モチベーション\n\nマルチプロセスの進捗状況を tqdm で管理していて、子プロセスでも tqdm と干渉しない log を行いたい\n\n\n アイデア\nマルチプロセスでも QueueHandler で全ログを共有 Queue に集約し、メインプロセスの QueueListener + TqdmLoggingHandler が tqdm.write で一括...",
-        "category": "開発",
-        "rss_category": "",
-        "image_url": ""
-      },
-      {
-        "title": "[AI][Kaggle]001.Kaggle入門(機械学習Intro 0.メニュー)",
-        "url": "https://zenn.dev/rg687076/articles/4cc6b2735976a1",
-        "site": "Zenn(Python)",
-        "published": "2025-12-07T03:48:58Z",
-        "description": "Kaggle入門(機械学習Intro 0.メニュー)\nKaggle入門(機械学習Intro 1.モデルの仕組み)\nKaggle入門(機械学習Intro 2.基本的なデータ探索)\n\n最近よく聞く生成AI、それを作る側の人になりたい。\n「Kaggle」ってサイトがそれを可能にしてくれるみたいなんだけど、まさにAIエンジニアの登竜門という雰囲気あるんだけど、このサイト全編英語でなんじゃこりゃーってなる。...",
         "category": "開発",
         "rss_category": "",
         "image_url": ""
@@ -110,26 +100,6 @@
         "site": "Zenn(Python)",
         "published": "2025-12-07T01:35:44Z",
         "description": "Gemini APIの無料枠を使用していると、長時間稼働させた際にレート制限（429エラー）に引っかかることがありました。\nそこで、Gemini APIがエラーを返した際に、自動的にOpenRouter経由で別のモデル（または同じモデル）にリクエストを投げるフォールバック機能を実装しました。\n\n 背景\nAI自動売買エージェントを常時稼働させていると、定期的な市場分析や売買判断でAPIリクエスト数が...",
-        "category": "開発",
-        "rss_category": "",
-        "image_url": ""
-      },
-      {
-        "title": "AI投資エージェントに「資産推移グラフ」を実装！リアルタイム株価でデモトレード",
-        "url": "https://zenn.dev/kinghal0/articles/profit_chart_update",
-        "site": "Zenn(Python)",
-        "published": "2025-12-07T01:35:44Z",
-        "description": "AI投資エージェントに「資産推移グラフ」を実装！リアルタイム株価でデモトレード\n個人開発している「AI自動投資エージェント」のダッシュボードに、待望の資産推移グラフを実装しました！\nこれまではログのテキストが流れるだけでしたが、視覚的に「今、勝っているのか？」が分かるようになり、開発のモチベーションも爆上がりです。\n\n 実装した機能\n\n 1. 資産推移チャート (Profit Chart)\nRea...",
-        "category": "開発",
-        "rss_category": "",
-        "image_url": ""
-      },
-      {
-        "title": "AI自動売買システムを並列化＆ログ可視化を強化しました（マルチエージェントの進化）",
-        "url": "https://zenn.dev/kinghal0/articles/fkg4j92el9r27q",
-        "site": "Zenn(Python)",
-        "published": "2025-12-07T01:35:43Z",
-        "description": "はじめに\n個人開発しているAI自動売買システム「Stock Predictor」のアーキテクチャを改良しました。\nこれまでは「日本株」「米国株」「仮想通貨」の3つのエージェントが直列（順番）に動いていましたが、これを完全並列化し、さらにログ表示を3画面分割にしてリアルタイム性を高めました。\n\n 改善ポイント1: エージェントの並列実行 (Multi-threading)\nこれまでは for ループ...",
         "category": "開発",
         "rss_category": "",
         "image_url": ""
@@ -237,6 +207,16 @@
         "image_url": ""
       },
       {
+        "title": "Vertex AI Agent Engine Memory Bank で AI エージェントの記憶を深ぼってみた",
+        "url": "https://zenn.dev/ri0/articles/89b9d2636a83f4",
+        "site": "Zenn(Python)",
+        "published": "2025-12-06T13:39:15Z",
+        "description": "はじめに\n業務でエージェント開発を行う人も増えてきたと思います。私自身エージェントを作る中で、「対話をまたいで一貫した文脈を維持すること」が案外難しいと感じる場面が多くありました。\n会話の中だけならうまく動くのに、セッションをまたぐと急に前提が抜け落ちたり、ユーザーの好みを忘れたりしてしまう——そんな状態では、エージェントを実サービスに統合したときの UX に大きな影響が出てしまいます。\nそんな中...",
+        "category": "開発",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
         "title": "【化学でPython】matplotlib：実験・計算データをきれいなグラフで手軽に可視化する",
         "url": "https://zenn.dev/yamnor/articles/chem-with-python-matplotlib",
         "site": "Zenn(Python)",
@@ -262,6 +242,16 @@
         "site": "Zenn(Python)",
         "published": "2025-12-06T11:16:28Z",
         "description": "iterator\n\n\niteratorは, __iter__()と__next__()を持つオブジェクトである\n\n\n__iter__()は__next__()が実装されているオブジェクトを返す\n\n\n__iter__()が実装されているクラスに, __next__()も実装されている場合は自身を返せば良い\n\n→ このオブジェクトはiteratorである\n\n\n\n__iter__()が実装されているが,...",
+        "category": "開発",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "LLM APIのレート制限を分散環境で管理する - LLMRateLimiterの紹介",
+        "url": "https://zenn.dev/ameyanagi/articles/4dd9fce2b98cfd",
+        "site": "Zenn(Python)",
+        "published": "2025-12-06T10:34:32Z",
+        "description": "はじめに\n!\nTL;DR\n\n分散環境（K8s、Lambda等）でLLM APIのレート制限を管理するライブラリ\nRedisを使って複数プロセス間で状態を共有\n\npip install llmratelimiter → await limiter.acquire(tokens=5000) で使える\n\n\nLLM（大規模言語モデル）APIを利用する際、避けて通れないのがレート制限です。OpenAI、An...",
         "category": "開発",
         "rss_category": "",
         "image_url": ""
@@ -302,6 +292,16 @@
         "site": "Zenn(Python)",
         "published": "2025-12-06T02:19:14Z",
         "description": "まえがき\n通常Pythonをインターネットに公開して動かすにはVPSを借りないといけないのですが、最近はPythonを動かせるレンタルサーバも登場しており、一部のホストでVPSと比べると比較的安価で、設定もアシストがあったりします。\nColorfulboxはそんなレンタルサーバの１つで、最低スペックのお試しプランとして無料（ドメイン代は別途有料で必須）な個人趣味や学習用途に使えるものです。\nただ、...",
+        "category": "開発",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "【必須テクニック】PCの電源を切っても学習は止まらない！tmuxで守るDeep Learning",
+        "url": "https://zenn.dev/supiritasu/articles/supiritasu-05",
+        "site": "Zenn(Python)",
+        "published": "2025-12-06T01:30:54Z",
+        "description": "Deep Learningの学習において、最も恐ろしい事故の一つ。\nそれは 「SSH接続切れによる学習の強制終了」 ではないでしょうか？\n\nカフェのWi-Fiが瞬断した\n間違ってターミナルを閉じてしまった\n夜間学習させて寝ようと思ったが、PCの電源を切れない\n\nこれらの悩みは、tmux (Terminal Multiplexer) を導入するだけで全て解決します。\n今回は、学習プロセスを「守る」た...",
         "category": "開発",
         "rss_category": "",
         "image_url": ""
@@ -611,16 +611,6 @@
         "image_url": ""
       },
       {
-        "title": "[AI][Kaggle]001.Kaggle入門(機械学習Intro 0.メニュー)",
-        "url": "https://zenn.dev/rg687076/articles/4cc6b2735976a1",
-        "site": "Zenn(Python)",
-        "published": "2025-12-07T03:48:58Z",
-        "description": "Kaggle入門(機械学習Intro 0.メニュー)\nKaggle入門(機械学習Intro 1.モデルの仕組み)\nKaggle入門(機械学習Intro 2.基本的なデータ探索)\n\n最近よく聞く生成AI、それを作る側の人になりたい。\n「Kaggle」ってサイトがそれを可能にしてくれるみたいなんだけど、まさにAIエンジニアの登竜門という雰囲気あるんだけど、このサイト全編英語でなんじゃこりゃーってなる。...",
-        "category": "開発",
-        "rss_category": "",
-        "image_url": ""
-      },
-      {
         "title": "初心で挑むredis入門 ~Redis Strings編~",
         "url": "https://zenn.dev/akasan/articles/redis_datatypes",
         "site": "Zenn(Python)",
@@ -676,26 +666,6 @@
         "site": "Zenn(Python)",
         "published": "2025-12-07T01:35:44Z",
         "description": "Gemini APIの無料枠を使用していると、長時間稼働させた際にレート制限（429エラー）に引っかかることがありました。\nそこで、Gemini APIがエラーを返した際に、自動的にOpenRouter経由で別のモデル（または同じモデル）にリクエストを投げるフォールバック機能を実装しました。\n\n 背景\nAI自動売買エージェントを常時稼働させていると、定期的な市場分析や売買判断でAPIリクエスト数が...",
-        "category": "開発",
-        "rss_category": "",
-        "image_url": ""
-      },
-      {
-        "title": "AI投資エージェントに「資産推移グラフ」を実装！リアルタイム株価でデモトレード",
-        "url": "https://zenn.dev/kinghal0/articles/profit_chart_update",
-        "site": "Zenn(Python)",
-        "published": "2025-12-07T01:35:44Z",
-        "description": "AI投資エージェントに「資産推移グラフ」を実装！リアルタイム株価でデモトレード\n個人開発している「AI自動投資エージェント」のダッシュボードに、待望の資産推移グラフを実装しました！\nこれまではログのテキストが流れるだけでしたが、視覚的に「今、勝っているのか？」が分かるようになり、開発のモチベーションも爆上がりです。\n\n 実装した機能\n\n 1. 資産推移チャート (Profit Chart)\nRea...",
-        "category": "開発",
-        "rss_category": "",
-        "image_url": ""
-      },
-      {
-        "title": "AI自動売買システムを並列化＆ログ可視化を強化しました（マルチエージェントの進化）",
-        "url": "https://zenn.dev/kinghal0/articles/fkg4j92el9r27q",
-        "site": "Zenn(Python)",
-        "published": "2025-12-07T01:35:43Z",
-        "description": "はじめに\n個人開発しているAI自動売買システム「Stock Predictor」のアーキテクチャを改良しました。\nこれまでは「日本株」「米国株」「仮想通貨」の3つのエージェントが直列（順番）に動いていましたが、これを完全並列化し、さらにログ表示を3画面分割にしてリアルタイム性を高めました。\n\n 改善ポイント1: エージェントの並列実行 (Multi-threading)\nこれまでは for ループ...",
         "category": "開発",
         "rss_category": "",
         "image_url": ""
@@ -801,6 +771,16 @@
         "image_url": ""
       },
       {
+        "title": "Vertex AI Agent Engine Memory Bank で AI エージェントの記憶を深ぼってみた",
+        "url": "https://zenn.dev/ri0/articles/89b9d2636a83f4",
+        "site": "Zenn(Python)",
+        "published": "2025-12-06T13:39:15Z",
+        "description": "はじめに\n業務でエージェント開発を行う人も増えてきたと思います。私自身エージェントを作る中で、「対話をまたいで一貫した文脈を維持すること」が案外難しいと感じる場面が多くありました。\n会話の中だけならうまく動くのに、セッションをまたぐと急に前提が抜け落ちたり、ユーザーの好みを忘れたりしてしまう——そんな状態では、エージェントを実サービスに統合したときの UX に大きな影響が出てしまいます。\nそんな中...",
+        "category": "開発",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
         "title": "【化学でPython】matplotlib：実験・計算データをきれいなグラフで手軽に可視化する",
         "url": "https://zenn.dev/yamnor/articles/chem-with-python-matplotlib",
         "site": "Zenn(Python)",
@@ -826,6 +806,16 @@
         "site": "Zenn(Python)",
         "published": "2025-12-06T11:16:28Z",
         "description": "iterator\n\n\niteratorは, __iter__()と__next__()を持つオブジェクトである\n\n\n__iter__()は__next__()が実装されているオブジェクトを返す\n\n\n__iter__()が実装されているクラスに, __next__()も実装されている場合は自身を返せば良い\n\n→ このオブジェクトはiteratorである\n\n\n\n__iter__()が実装されているが,...",
+        "category": "開発",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "LLM APIのレート制限を分散環境で管理する - LLMRateLimiterの紹介",
+        "url": "https://zenn.dev/ameyanagi/articles/4dd9fce2b98cfd",
+        "site": "Zenn(Python)",
+        "published": "2025-12-06T10:34:32Z",
+        "description": "はじめに\n!\nTL;DR\n\n分散環境（K8s、Lambda等）でLLM APIのレート制限を管理するライブラリ\nRedisを使って複数プロセス間で状態を共有\n\npip install llmratelimiter → await limiter.acquire(tokens=5000) で使える\n\n\nLLM（大規模言語モデル）APIを利用する際、避けて通れないのがレート制限です。OpenAI、An...",
         "category": "開発",
         "rss_category": "",
         "image_url": ""
@@ -866,6 +856,16 @@
         "site": "Zenn(Python)",
         "published": "2025-12-06T02:19:14Z",
         "description": "まえがき\n通常Pythonをインターネットに公開して動かすにはVPSを借りないといけないのですが、最近はPythonを動かせるレンタルサーバも登場しており、一部のホストでVPSと比べると比較的安価で、設定もアシストがあったりします。\nColorfulboxはそんなレンタルサーバの１つで、最低スペックのお試しプランとして無料（ドメイン代は別途有料で必須）な個人趣味や学習用途に使えるものです。\nただ、...",
+        "category": "開発",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "【必須テクニック】PCの電源を切っても学習は止まらない！tmuxで守るDeep Learning",
+        "url": "https://zenn.dev/supiritasu/articles/supiritasu-05",
+        "site": "Zenn(Python)",
+        "published": "2025-12-06T01:30:54Z",
+        "description": "Deep Learningの学習において、最も恐ろしい事故の一つ。\nそれは 「SSH接続切れによる学習の強制終了」 ではないでしょうか？\n\nカフェのWi-Fiが瞬断した\n間違ってターミナルを閉じてしまった\n夜間学習させて寝ようと思ったが、PCの電源を切れない\n\nこれらの悩みは、tmux (Terminal Multiplexer) を導入するだけで全て解決します。\n今回は、学習プロセスを「守る」た...",
         "category": "開発",
         "rss_category": "",
         "image_url": ""
