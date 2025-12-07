@@ -1,6 +1,6 @@
 {
   "site": "Zenn(Python)",
-  "last_updated": "2025-12-07T05:57:37.820224",
+  "last_updated": "2025-12-07T06:38:04.618967",
   "total_articles": 1463,
   "articles_by_date": {
     "本日": [
@@ -70,6 +70,26 @@
         "site": "Zenn(Python)",
         "published": "2025-12-07T01:35:44Z",
         "description": "Gemini APIの無料枠を使用していると、長時間稼働させた際にレート制限（429エラー）に引っかかることがありました。\nそこで、Gemini APIがエラーを返した際に、自動的にOpenRouter経由で別のモデル（または同じモデル）にリクエストを投げるフォールバック機能を実装しました。\n\n 背景\nAI自動売買エージェントを常時稼働させていると、定期的な市場分析や売買判断でAPIリクエスト数が...",
+        "category": "開発",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "AI投資エージェントに「資産推移グラフ」を実装！リアルタイム株価でデモトレード",
+        "url": "https://zenn.dev/kinghal0/articles/profit_chart_update",
+        "site": "Zenn(Python)",
+        "published": "2025-12-07T01:35:44Z",
+        "description": "AI投資エージェントに「資産推移グラフ」を実装！リアルタイム株価でデモトレード\n個人開発している「AI自動投資エージェント」のダッシュボードに、待望の資産推移グラフを実装しました！\nこれまではログのテキストが流れるだけでしたが、視覚的に「今、勝っているのか？」が分かるようになり、開発のモチベーションも爆上がりです。\n\n 実装した機能\n\n 1. 資産推移チャート (Profit Chart)\nRea...",
+        "category": "開発",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "AI自動売買システムを並列化＆ログ可視化を強化しました（マルチエージェントの進化）",
+        "url": "https://zenn.dev/kinghal0/articles/fkg4j92el9r27q",
+        "site": "Zenn(Python)",
+        "published": "2025-12-07T01:35:43Z",
+        "description": "はじめに\n個人開発しているAI自動売買システム「Stock Predictor」のアーキテクチャを改良しました。\nこれまでは「日本株」「米国株」「仮想通貨」の3つのエージェントが直列（順番）に動いていましたが、これを完全並列化し、さらにログ表示を3画面分割にしてリアルタイム性を高めました。\n\n 改善ポイント1: エージェントの並列実行 (Multi-threading)\nこれまでは for ループ...",
         "category": "開発",
         "rss_category": "",
         "image_url": ""
@@ -217,16 +237,6 @@
         "image_url": ""
       },
       {
-        "title": "LLM APIのレート制限を分散環境で管理する - LLMRateLimiterの紹介",
-        "url": "https://zenn.dev/ameyanagi/articles/4dd9fce2b98cfd",
-        "site": "Zenn(Python)",
-        "published": "2025-12-06T10:34:32Z",
-        "description": "はじめに\n!\nTL;DR\n\n分散環境（K8s、Lambda等）でLLM APIのレート制限を管理するライブラリ\nRedisを使って複数プロセス間で状態を共有\n\npip install llmratelimiter → await limiter.acquire(tokens=5000) で使える\n\n\nLLM（大規模言語モデル）APIを利用する際、避けて通れないのがレート制限です。OpenAI、An...",
-        "category": "開発",
-        "rss_category": "",
-        "image_url": ""
-      },
-      {
         "title": "「風が吹けば桶屋が儲かる」をPythonで因果推論してみた 〜擬似相関と交絡因子の罠 vs 因果〜",
         "url": "https://zenn.dev/shayate811/articles/causal-inference",
         "site": "Zenn(Python)",
@@ -262,16 +272,6 @@
         "site": "Zenn(Python)",
         "published": "2025-12-06T02:19:14Z",
         "description": "まえがき\n通常Pythonをインターネットに公開して動かすにはVPSを借りないといけないのですが、最近はPythonを動かせるレンタルサーバも登場しており、一部のホストでVPSと比べると比較的安価で、設定もアシストがあったりします。\nColorfulboxはそんなレンタルサーバの１つで、最低スペックのお試しプランとして無料（ドメイン代は別途有料で必須）な個人趣味や学習用途に使えるものです。\nただ、...",
-        "category": "開発",
-        "rss_category": "",
-        "image_url": ""
-      },
-      {
-        "title": "【必須テクニック】PCの電源を切っても学習は止まらない！tmuxで守るDeep Learning",
-        "url": "https://zenn.dev/supiritasu/articles/supiritasu-05",
-        "site": "Zenn(Python)",
-        "published": "2025-12-06T01:30:54Z",
-        "description": "Deep Learningの学習において、最も恐ろしい事故の一つ。\nそれは 「SSH接続切れによる学習の強制終了」 ではないでしょうか？\n\nカフェのWi-Fiが瞬断した\n間違ってターミナルを閉じてしまった\n夜間学習させて寝ようと思ったが、PCの電源を切れない\n\nこれらの悩みは、tmux (Terminal Multiplexer) を導入するだけで全て解決します。\n今回は、学習プロセスを「守る」た...",
         "category": "開発",
         "rss_category": "",
         "image_url": ""
@@ -611,6 +611,26 @@
         "image_url": ""
       },
       {
+        "title": "AI投資エージェントに「資産推移グラフ」を実装！リアルタイム株価でデモトレード",
+        "url": "https://zenn.dev/kinghal0/articles/profit_chart_update",
+        "site": "Zenn(Python)",
+        "published": "2025-12-07T01:35:44Z",
+        "description": "AI投資エージェントに「資産推移グラフ」を実装！リアルタイム株価でデモトレード\n個人開発している「AI自動投資エージェント」のダッシュボードに、待望の資産推移グラフを実装しました！\nこれまではログのテキストが流れるだけでしたが、視覚的に「今、勝っているのか？」が分かるようになり、開発のモチベーションも爆上がりです。\n\n 実装した機能\n\n 1. 資産推移チャート (Profit Chart)\nRea...",
+        "category": "開発",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "AI自動売買システムを並列化＆ログ可視化を強化しました（マルチエージェントの進化）",
+        "url": "https://zenn.dev/kinghal0/articles/fkg4j92el9r27q",
+        "site": "Zenn(Python)",
+        "published": "2025-12-07T01:35:43Z",
+        "description": "はじめに\n個人開発しているAI自動売買システム「Stock Predictor」のアーキテクチャを改良しました。\nこれまでは「日本株」「米国株」「仮想通貨」の3つのエージェントが直列（順番）に動いていましたが、これを完全並列化し、さらにログ表示を3画面分割にしてリアルタイム性を高めました。\n\n 改善ポイント1: エージェントの並列実行 (Multi-threading)\nこれまでは for ループ...",
+        "category": "開発",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
         "title": "AI自動売買システム開発日誌：市場スクリーニング機能の強化と監視銘柄の大幅拡充",
         "url": "https://zenn.dev/kinghal0/articles/97myhbntc4qdon",
         "site": "Zenn(Python)",
@@ -751,16 +771,6 @@
         "image_url": ""
       },
       {
-        "title": "LLM APIのレート制限を分散環境で管理する - LLMRateLimiterの紹介",
-        "url": "https://zenn.dev/ameyanagi/articles/4dd9fce2b98cfd",
-        "site": "Zenn(Python)",
-        "published": "2025-12-06T10:34:32Z",
-        "description": "はじめに\n!\nTL;DR\n\n分散環境（K8s、Lambda等）でLLM APIのレート制限を管理するライブラリ\nRedisを使って複数プロセス間で状態を共有\n\npip install llmratelimiter → await limiter.acquire(tokens=5000) で使える\n\n\nLLM（大規模言語モデル）APIを利用する際、避けて通れないのがレート制限です。OpenAI、An...",
-        "category": "開発",
-        "rss_category": "",
-        "image_url": ""
-      },
-      {
         "title": "「風が吹けば桶屋が儲かる」をPythonで因果推論してみた 〜擬似相関と交絡因子の罠 vs 因果〜",
         "url": "https://zenn.dev/shayate811/articles/causal-inference",
         "site": "Zenn(Python)",
@@ -796,16 +806,6 @@
         "site": "Zenn(Python)",
         "published": "2025-12-06T02:19:14Z",
         "description": "まえがき\n通常Pythonをインターネットに公開して動かすにはVPSを借りないといけないのですが、最近はPythonを動かせるレンタルサーバも登場しており、一部のホストでVPSと比べると比較的安価で、設定もアシストがあったりします。\nColorfulboxはそんなレンタルサーバの１つで、最低スペックのお試しプランとして無料（ドメイン代は別途有料で必須）な個人趣味や学習用途に使えるものです。\nただ、...",
-        "category": "開発",
-        "rss_category": "",
-        "image_url": ""
-      },
-      {
-        "title": "【必須テクニック】PCの電源を切っても学習は止まらない！tmuxで守るDeep Learning",
-        "url": "https://zenn.dev/supiritasu/articles/supiritasu-05",
-        "site": "Zenn(Python)",
-        "published": "2025-12-06T01:30:54Z",
-        "description": "Deep Learningの学習において、最も恐ろしい事故の一つ。\nそれは 「SSH接続切れによる学習の強制終了」 ではないでしょうか？\n\nカフェのWi-Fiが瞬断した\n間違ってターミナルを閉じてしまった\n夜間学習させて寝ようと思ったが、PCの電源を切れない\n\nこれらの悩みは、tmux (Terminal Multiplexer) を導入するだけで全て解決します。\n今回は、学習プロセスを「守る」た...",
         "category": "開発",
         "rss_category": "",
         "image_url": ""
