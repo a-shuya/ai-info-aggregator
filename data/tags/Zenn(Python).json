@@ -1,9 +1,59 @@
 {
   "site": "Zenn(Python)",
-  "last_updated": "2025-12-16T11:43:12.669374",
-  "total_articles": 1586,
+  "last_updated": "2025-12-16T11:57:33.299550",
+  "total_articles": 1590,
   "articles_by_date": {
     "本日": [
+      {
+        "title": "［AtCoder］ABC-432｜B - Permute to Minimize",
+        "url": "https://zenn.dev/hyperdb/articles/5c3dc5aef5be5c",
+        "site": "Zenn(Python)",
+        "published": "2025-12-16T10:41:01Z",
+        "description": "設問ページ\n\n🔗ABC-432 B - Permute to Minimize\n\n\n\n 提出結果\ndef getString():\n    return input()\n\n\ndef main():\n    N = [int(s) for s in list(getString())]\n\n    N.sort()\n\n    if (N.index(0) if 0 in N else -1) == -...",
+        "category": "開発",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "［AtCoder］ABC-431｜B - Robot Weigh",
+        "url": "https://zenn.dev/hyperdb/articles/3cf338f09a7ec9",
+        "site": "Zenn(Python)",
+        "published": "2025-12-16T10:41:00Z",
+        "description": "設問ページ\n\n🔗ABC-431 B - Robot Weigh\n\n\n\n 提出結果\ndef getInt():\n    return int(input())\n\n\ndef getIntList():\n    return list(map(int, input().split()))\n\n\ndef getIntRow(N):\n    return [int(input()) for _ in rang...",
+        "category": "開発",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "［AtCoder］ABC-427｜B - Sum of Digits Sequence",
+        "url": "https://zenn.dev/hyperdb/articles/1dc1e7bd0c4e7c",
+        "site": "Zenn(Python)",
+        "published": "2025-12-16T10:41:00Z",
+        "description": "設問ページ\n\n🔗ABC-427 B - Sum of Digits Sequence\n\n\n\n 提出結果\ndef getInt():\n    return int(input())\n\n\ndef colSum(N):\n    return N if N &lt; 10 else sum([int(i) for i in list(str(N))])\n\n\ndef main():\n    N = getI...",
+        "category": "開発",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "［AtCoder］ABC-427｜A - ABC -> AC",
+        "url": "https://zenn.dev/hyperdb/articles/1afe562ad0ad8f",
+        "site": "Zenn(Python)",
+        "published": "2025-12-16T10:40:59Z",
+        "description": "設問ページ\n\n🔗ABC-427 A - ABC -&gt; AC\n\n\n\n 提出結果\ndef getString():\n    return input()\n\n\ndef main():\n    S = getString()\n    m = len(S) // 2\n\n    print(S[:m] + S[m + 1 :])\n\n\nif __name__ == \"__main__\":\n    main...",
+        "category": "開発",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "［AtCoder］ABC-432｜A - Permute to Maximize",
+        "url": "https://zenn.dev/hyperdb/articles/0f8d18246a71e3",
+        "site": "Zenn(Python)",
+        "published": "2025-12-16T10:40:59Z",
+        "description": "設問ページ\n\n🔗ABC-432 A - Permute to Maximize\n\n\n\n 提出結果\ndef getIntList():\n    return list(map(int, input().split()))\n\n\ndef main():\n    N = getIntList()\n\n    N.sort()\n    N.reverse()\n\n    print(\"\".join(map(st...",
+        "category": "開発",
+        "rss_category": "",
+        "image_url": ""
+      },
       {
         "title": "filterを実装してみた(Python)",
         "url": "https://zenn.dev/aryam/articles/457f793247e539",
@@ -157,16 +207,6 @@
         "image_url": ""
       },
       {
-        "title": "wandbとOptunaでタイタニックをチューンする：現代的MLスタックの実践",
-        "url": "https://zenn.dev/gorn/articles/78f251be30d692",
-        "site": "Zenn(Python)",
-        "published": "2025-12-15T12:47:18Z",
-        "description": "はじめに\n機械学習プロジェクトにおいて、モデルの精度を極限まで高めるハイパーパラメータチューニングは避けて通れない工程です。しかし、闇雲にパラメータを探るだけでは時間と計算リソースを浪費してしまいます。\n本記事では、Kaggleの入門タスクとして名高い「タイタニック号の生存予測」を題材に、以下の現代的なPythonデータサイエンススタックを組み合わせた、効率的かつ可視化されたチューニングパイプライ...",
-        "category": "開発",
-        "rss_category": "",
-        "image_url": ""
-      },
-      {
         "title": "Jupyterの「あるある」を根本解決する。次世代Pythonノートブック marimoを実務目線で解説",
         "url": "https://zenn.dev/chameleonmeme/articles/dd90b67b6ea268",
         "site": "Zenn(Python)",
@@ -177,31 +217,11 @@
         "image_url": ""
       },
       {
-        "title": "RAGで厄介なExcel文書を意味構造JSON化するOSSライブラリを作りました",
-        "url": "https://zenn.dev/harumikun/articles/42e9cd55ab5960",
-        "site": "Zenn(Python)",
-        "published": "2025-12-15T10:32:07Z",
-        "description": "はじめに\nこんちは！製造業で社内SE的なのやってる人です。\n最近RAG分野にハマっていますが、Excel文書が厄介者すぎるということに最近気が付きました。ZennでもRAGにおいて、このExcel文書をいかに扱うかの記事は定期的に見かけます。\nhttps://zenn.dev/firstautomation/articles/aed95bce20e900\nhttps://zenn.dev/satt...",
-        "category": "開発",
-        "rss_category": "",
-        "image_url": ""
-      },
-      {
         "title": "AI と協働で Python のチートシートを作ってみた♪",
         "url": "https://zenn.dev/animalz/articles/09c7056c25c1d6",
         "site": "Zenn(Python)",
         "published": "2025-12-15T08:00:04Z",
         "description": "国産プラットフォームを作る場合、Python - Django ベースで作ろうと思ってるので、今回は Python のチートシートを AI と協働でつくってみました。\nAI モデルは Gemini 2.5 Flash です。\n参考にしたサイトなどは、\n\nPython ドキュメント: https://docs.python.org/ja/3/\n\n3年ほど前に自作したサイトのチートシート: https...",
-        "category": "開発",
-        "rss_category": "",
-        "image_url": ""
-      },
-      {
-        "title": "推論サーバーのコンテナをAMDからARM対応した備忘録",
-        "url": "https://zenn.dev/fusic/articles/458e21809a7c52",
-        "site": "Zenn(Python)",
-        "published": "2025-12-15T07:11:54Z",
-        "description": "Fusicのレオナです。2025年新卒のMLOpsエンジニアです。本ブログはMLOps Advent Calendar 2025の12月14日枠への投稿です。\nhttps://qiita.com/advent-calendar/2025/mlops\n\n はじめに\nエッジ端末がAMDベースからJetson（ARMベース）に変わったことで、従来使っていたSageMaker推論コンテナが動かなくなりまし...",
         "category": "開発",
         "rss_category": "",
         "image_url": ""
@@ -511,6 +531,56 @@
     ],
     "2025-12": [
       {
+        "title": "［AtCoder］ABC-432｜B - Permute to Minimize",
+        "url": "https://zenn.dev/hyperdb/articles/5c3dc5aef5be5c",
+        "site": "Zenn(Python)",
+        "published": "2025-12-16T10:41:01Z",
+        "description": "設問ページ\n\n🔗ABC-432 B - Permute to Minimize\n\n\n\n 提出結果\ndef getString():\n    return input()\n\n\ndef main():\n    N = [int(s) for s in list(getString())]\n\n    N.sort()\n\n    if (N.index(0) if 0 in N else -1) == -...",
+        "category": "開発",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "［AtCoder］ABC-431｜B - Robot Weigh",
+        "url": "https://zenn.dev/hyperdb/articles/3cf338f09a7ec9",
+        "site": "Zenn(Python)",
+        "published": "2025-12-16T10:41:00Z",
+        "description": "設問ページ\n\n🔗ABC-431 B - Robot Weigh\n\n\n\n 提出結果\ndef getInt():\n    return int(input())\n\n\ndef getIntList():\n    return list(map(int, input().split()))\n\n\ndef getIntRow(N):\n    return [int(input()) for _ in rang...",
+        "category": "開発",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "［AtCoder］ABC-427｜B - Sum of Digits Sequence",
+        "url": "https://zenn.dev/hyperdb/articles/1dc1e7bd0c4e7c",
+        "site": "Zenn(Python)",
+        "published": "2025-12-16T10:41:00Z",
+        "description": "設問ページ\n\n🔗ABC-427 B - Sum of Digits Sequence\n\n\n\n 提出結果\ndef getInt():\n    return int(input())\n\n\ndef colSum(N):\n    return N if N &lt; 10 else sum([int(i) for i in list(str(N))])\n\n\ndef main():\n    N = getI...",
+        "category": "開発",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "［AtCoder］ABC-427｜A - ABC -> AC",
+        "url": "https://zenn.dev/hyperdb/articles/1afe562ad0ad8f",
+        "site": "Zenn(Python)",
+        "published": "2025-12-16T10:40:59Z",
+        "description": "設問ページ\n\n🔗ABC-427 A - ABC -&gt; AC\n\n\n\n 提出結果\ndef getString():\n    return input()\n\n\ndef main():\n    S = getString()\n    m = len(S) // 2\n\n    print(S[:m] + S[m + 1 :])\n\n\nif __name__ == \"__main__\":\n    main...",
+        "category": "開発",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "［AtCoder］ABC-432｜A - Permute to Maximize",
+        "url": "https://zenn.dev/hyperdb/articles/0f8d18246a71e3",
+        "site": "Zenn(Python)",
+        "published": "2025-12-16T10:40:59Z",
+        "description": "設問ページ\n\n🔗ABC-432 A - Permute to Maximize\n\n\n\n 提出結果\ndef getIntList():\n    return list(map(int, input().split()))\n\n\ndef main():\n    N = getIntList()\n\n    N.sort()\n    N.reverse()\n\n    print(\"\".join(map(st...",
+        "category": "開発",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
         "title": "filterを実装してみた(Python)",
         "url": "https://zenn.dev/aryam/articles/457f793247e539",
         "site": "Zenn(Python)",
@@ -661,16 +731,6 @@
         "image_url": ""
       },
       {
-        "title": "wandbとOptunaでタイタニックをチューンする：現代的MLスタックの実践",
-        "url": "https://zenn.dev/gorn/articles/78f251be30d692",
-        "site": "Zenn(Python)",
-        "published": "2025-12-15T12:47:18Z",
-        "description": "はじめに\n機械学習プロジェクトにおいて、モデルの精度を極限まで高めるハイパーパラメータチューニングは避けて通れない工程です。しかし、闇雲にパラメータを探るだけでは時間と計算リソースを浪費してしまいます。\n本記事では、Kaggleの入門タスクとして名高い「タイタニック号の生存予測」を題材に、以下の現代的なPythonデータサイエンススタックを組み合わせた、効率的かつ可視化されたチューニングパイプライ...",
-        "category": "開発",
-        "rss_category": "",
-        "image_url": ""
-      },
-      {
         "title": "Jupyterの「あるある」を根本解決する。次世代Pythonノートブック marimoを実務目線で解説",
         "url": "https://zenn.dev/chameleonmeme/articles/dd90b67b6ea268",
         "site": "Zenn(Python)",
@@ -681,31 +741,11 @@
         "image_url": ""
       },
       {
-        "title": "RAGで厄介なExcel文書を意味構造JSON化するOSSライブラリを作りました",
-        "url": "https://zenn.dev/harumikun/articles/42e9cd55ab5960",
-        "site": "Zenn(Python)",
-        "published": "2025-12-15T10:32:07Z",
-        "description": "はじめに\nこんちは！製造業で社内SE的なのやってる人です。\n最近RAG分野にハマっていますが、Excel文書が厄介者すぎるということに最近気が付きました。ZennでもRAGにおいて、このExcel文書をいかに扱うかの記事は定期的に見かけます。\nhttps://zenn.dev/firstautomation/articles/aed95bce20e900\nhttps://zenn.dev/satt...",
-        "category": "開発",
-        "rss_category": "",
-        "image_url": ""
-      },
-      {
         "title": "AI と協働で Python のチートシートを作ってみた♪",
         "url": "https://zenn.dev/animalz/articles/09c7056c25c1d6",
         "site": "Zenn(Python)",
         "published": "2025-12-15T08:00:04Z",
         "description": "国産プラットフォームを作る場合、Python - Django ベースで作ろうと思ってるので、今回は Python のチートシートを AI と協働でつくってみました。\nAI モデルは Gemini 2.5 Flash です。\n参考にしたサイトなどは、\n\nPython ドキュメント: https://docs.python.org/ja/3/\n\n3年ほど前に自作したサイトのチートシート: https...",
-        "category": "開発",
-        "rss_category": "",
-        "image_url": ""
-      },
-      {
-        "title": "推論サーバーのコンテナをAMDからARM対応した備忘録",
-        "url": "https://zenn.dev/fusic/articles/458e21809a7c52",
-        "site": "Zenn(Python)",
-        "published": "2025-12-15T07:11:54Z",
-        "description": "Fusicのレオナです。2025年新卒のMLOpsエンジニアです。本ブログはMLOps Advent Calendar 2025の12月14日枠への投稿です。\nhttps://qiita.com/advent-calendar/2025/mlops\n\n はじめに\nエッジ端末がAMDベースからJetson（ARMベース）に変わったことで、従来使っていたSageMaker推論コンテナが動かなくなりまし...",
         "category": "開発",
         "rss_category": "",
         "image_url": ""
