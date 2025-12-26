@@ -1,15 +1,45 @@
 {
   "site": "Zenn(Python)",
-  "last_updated": "2025-12-26T08:58:00.415068",
-  "total_articles": 1723,
+  "last_updated": "2025-12-26T09:32:03.270976",
+  "total_articles": 1725,
   "articles_by_date": {
     "本日": [
+      {
+        "title": "シェルスクリプトとしてもPythonスクリプトとしても実行できるファイルの作り方",
+        "url": "https://zenn.dev/omu_tryangle/articles/e109eb7475d61f",
+        "site": "Zenn(Python)",
+        "published": "2025-12-26T07:30:14Z",
+        "description": "結論から言うと、こう書きます。\n\"\"\":\"\necho シェルスクリプトはここ\necho exitコマンドは必須\nexit\n\"\"\"\nprint(\"Pythonスクリプトはここ\")\n上のスクリプトはシェルスクリプトとしてもPythonスクリプトとしても実行できます。\n$ sh script\nシェルスクリプトはここ\nexitコマンドは必須\n$ python script\nPythonスクリプトはここ\n\n...",
+        "category": "開発",
+        "rss_category": "",
+        "image_url": ""
+      },
       {
         "title": "AI自動売買エージェントに取引時間管理と自動メンテナンス機能を実装しました",
         "url": "https://zenn.dev/kinghal0/articles/pbqfci36fsvinx",
         "site": "Zenn(Python)",
         "published": "2025-12-26T05:05:03Z",
         "description": "AI自動売買エージェントの開発を進めていますが、今回は運用の効率化と安定性を高めるために重要なアップデートを行いました。\nこれまではエージェントが24時間365日絶え間なく動作していましたが、株式市場には「営業時間」があります。市場が閉まっている間にAPIを叩き続けるのはリソースの無駄ですし、ログも肥大化してしまいます。\nそこで、各市場の取引時間に合わせてエージェントが活動するようにロジックを修正...",
+        "category": "開発",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "AI自動売買システムを並列化＆ログ可視化を強化しました（マルチエージェントの進化）",
+        "url": "https://zenn.dev/kinghal0/articles/parallel_agents_update",
+        "site": "Zenn(Python)",
+        "published": "2025-12-26T05:01:17Z",
+        "description": "はじめに\n個人開発しているAI自動売買システム「Stock Predictor」のアーキテクチャを改良しました。\nこれまでは「日本株」「米国株」「仮想通貨」の3つのエージェントが直列（順番）に動いていましたが、これを完全並列化し、さらにログ表示を3画面分割にしてリアルタイム性を高めました。\n\n 改善ポイント1: エージェントの並列実行 (Multi-threading)\nこれまでは for ループ...",
+        "category": "開発",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "AI自動売買エージェントが「相場観」を持つように進化しました（適応型取引スパンの実装）",
+        "url": "https://zenn.dev/kinghal0/articles/adaptive_trading_horizon",
+        "site": "Zenn(Python)",
+        "published": "2025-12-26T05:01:17Z",
+        "description": "はじめに\n個人開発しているAI自動売買システム「Stock Predictor」に、新しい機能を追加しました。\nこれまでは単に「BUY/SELL/HOLD」を判断するだけでしたが、市場のボラティリティ（変動率）に応じて**「取引スパン（戦略）」を自律的に切り替える機能**を実装しました。\n\n 実装した機能：Adaptive Trading Horizon\nGoogle Gemini 2.5 Fla...",
         "category": "開発",
         "rss_category": "",
         "image_url": ""
@@ -177,16 +207,6 @@
         "image_url": ""
       },
       {
-        "title": "JijZept AI：数理最適化のためのAIアシスタント",
-        "url": "https://zenn.dev/jij_inc/articles/jijzept-ai-private-beta",
-        "site": "Zenn(Python)",
-        "published": "2025-12-25T08:10:04Z",
-        "description": "!\nこの記事は Jij Advent Calendar 2025 の記念すべき最終日の記事です🎉\n他の参加記事もぜひご覧ください：Jij Advent Calendar 2025 一覧\n\n株式会社Jij のしたろうです。以前は数理モデルを記述するPythonパッケージ JijModeling を開発していました。\nhttps://zenn.dev/jij_inc/articles/fa5693fa...",
-        "category": "開発",
-        "rss_category": "",
-        "image_url": ""
-      },
-      {
         "title": "PHPの現場に、世界トップ2のTypeScriptとPythonを導入した話",
         "url": "https://zenn.dev/sprix_it/articles/octoverse-report-2025",
         "site": "Zenn(Python)",
@@ -202,16 +222,6 @@
         "site": "Zenn(Python)",
         "published": "2025-12-25T03:33:10Z",
         "description": "東芝 Advent Calendar 2025 9日目の記事です。自己紹介は 3日目の記事 参照。\n現時点(2025-12)で、比較的楽に実践できる Python 開発でのサプライチェーン攻撃対策について、備忘録的にまとめてみました。日々の開発、からのパッケージ公開、その後の継続的なメンテナンスを含む全工程で多層的に防御するプラクティスになっています。私がメンテする PySETO 等の OSS リ...",
-        "category": "開発",
-        "rss_category": "",
-        "image_url": ""
-      },
-      {
-        "title": "vLLM V1の実装④ : Scheduler",
-        "url": "https://zenn.dev/vlntr_telco_rd/articles/vllm-v1-scheduler",
-        "site": "Zenn(Python)",
-        "published": "2025-12-25T03:00:00Z",
-        "description": "https://zenn.dev/vlntr_telco_rd/articles/vllm-v1-executer-worker\n前回は、MultiprocExecutor と Worker プロセスの協調動作、そして共有メモリベースのメッセージキューによるタスク配信について解説しました。今回は、vLLM V1 の推論制御を担う Scheduler について詳解します。\n\n\n アーキテクチャ概要\n...",
         "category": "開発",
         "rss_category": "",
         "image_url": ""
@@ -431,11 +441,41 @@
     ],
     "2025-12": [
       {
+        "title": "シェルスクリプトとしてもPythonスクリプトとしても実行できるファイルの作り方",
+        "url": "https://zenn.dev/omu_tryangle/articles/e109eb7475d61f",
+        "site": "Zenn(Python)",
+        "published": "2025-12-26T07:30:14Z",
+        "description": "結論から言うと、こう書きます。\n\"\"\":\"\necho シェルスクリプトはここ\necho exitコマンドは必須\nexit\n\"\"\"\nprint(\"Pythonスクリプトはここ\")\n上のスクリプトはシェルスクリプトとしてもPythonスクリプトとしても実行できます。\n$ sh script\nシェルスクリプトはここ\nexitコマンドは必須\n$ python script\nPythonスクリプトはここ\n\n...",
+        "category": "開発",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
         "title": "AI自動売買エージェントに取引時間管理と自動メンテナンス機能を実装しました",
         "url": "https://zenn.dev/kinghal0/articles/pbqfci36fsvinx",
         "site": "Zenn(Python)",
         "published": "2025-12-26T05:05:03Z",
         "description": "AI自動売買エージェントの開発を進めていますが、今回は運用の効率化と安定性を高めるために重要なアップデートを行いました。\nこれまではエージェントが24時間365日絶え間なく動作していましたが、株式市場には「営業時間」があります。市場が閉まっている間にAPIを叩き続けるのはリソースの無駄ですし、ログも肥大化してしまいます。\nそこで、各市場の取引時間に合わせてエージェントが活動するようにロジックを修正...",
+        "category": "開発",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "AI自動売買システムを並列化＆ログ可視化を強化しました（マルチエージェントの進化）",
+        "url": "https://zenn.dev/kinghal0/articles/parallel_agents_update",
+        "site": "Zenn(Python)",
+        "published": "2025-12-26T05:01:17Z",
+        "description": "はじめに\n個人開発しているAI自動売買システム「Stock Predictor」のアーキテクチャを改良しました。\nこれまでは「日本株」「米国株」「仮想通貨」の3つのエージェントが直列（順番）に動いていましたが、これを完全並列化し、さらにログ表示を3画面分割にしてリアルタイム性を高めました。\n\n 改善ポイント1: エージェントの並列実行 (Multi-threading)\nこれまでは for ループ...",
+        "category": "開発",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "AI自動売買エージェントが「相場観」を持つように進化しました（適応型取引スパンの実装）",
+        "url": "https://zenn.dev/kinghal0/articles/adaptive_trading_horizon",
+        "site": "Zenn(Python)",
+        "published": "2025-12-26T05:01:17Z",
+        "description": "はじめに\n個人開発しているAI自動売買システム「Stock Predictor」に、新しい機能を追加しました。\nこれまでは単に「BUY/SELL/HOLD」を判断するだけでしたが、市場のボラティリティ（変動率）に応じて**「取引スパン（戦略）」を自律的に切り替える機能**を実装しました。\n\n 実装した機能：Adaptive Trading Horizon\nGoogle Gemini 2.5 Fla...",
         "category": "開発",
         "rss_category": "",
         "image_url": ""
@@ -601,16 +641,6 @@
         "image_url": ""
       },
       {
-        "title": "JijZept AI：数理最適化のためのAIアシスタント",
-        "url": "https://zenn.dev/jij_inc/articles/jijzept-ai-private-beta",
-        "site": "Zenn(Python)",
-        "published": "2025-12-25T08:10:04Z",
-        "description": "!\nこの記事は Jij Advent Calendar 2025 の記念すべき最終日の記事です🎉\n他の参加記事もぜひご覧ください：Jij Advent Calendar 2025 一覧\n\n株式会社Jij のしたろうです。以前は数理モデルを記述するPythonパッケージ JijModeling を開発していました。\nhttps://zenn.dev/jij_inc/articles/fa5693fa...",
-        "category": "開発",
-        "rss_category": "",
-        "image_url": ""
-      },
-      {
         "title": "PHPの現場に、世界トップ2のTypeScriptとPythonを導入した話",
         "url": "https://zenn.dev/sprix_it/articles/octoverse-report-2025",
         "site": "Zenn(Python)",
@@ -626,16 +656,6 @@
         "site": "Zenn(Python)",
         "published": "2025-12-25T03:33:10Z",
         "description": "東芝 Advent Calendar 2025 9日目の記事です。自己紹介は 3日目の記事 参照。\n現時点(2025-12)で、比較的楽に実践できる Python 開発でのサプライチェーン攻撃対策について、備忘録的にまとめてみました。日々の開発、からのパッケージ公開、その後の継続的なメンテナンスを含む全工程で多層的に防御するプラクティスになっています。私がメンテする PySETO 等の OSS リ...",
-        "category": "開発",
-        "rss_category": "",
-        "image_url": ""
-      },
-      {
-        "title": "vLLM V1の実装④ : Scheduler",
-        "url": "https://zenn.dev/vlntr_telco_rd/articles/vllm-v1-scheduler",
-        "site": "Zenn(Python)",
-        "published": "2025-12-25T03:00:00Z",
-        "description": "https://zenn.dev/vlntr_telco_rd/articles/vllm-v1-executer-worker\n前回は、MultiprocExecutor と Worker プロセスの協調動作、そして共有メモリベースのメッセージキューによるタスク配信について解説しました。今回は、vLLM V1 の推論制御を担う Scheduler について詳解します。\n\n\n アーキテクチャ概要\n...",
         "category": "開発",
         "rss_category": "",
         "image_url": ""
