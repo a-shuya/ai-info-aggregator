@@ -1,6 +1,6 @@
 ---
 import Layout from '../layouts/Layout.astro';
-import ArticleCard from '../components/ArticleCard.astro';
+
 import fs from 'fs';
 import path from 'path';
 
@@ -113,37 +113,40 @@ const formatLastUpdated = (dateString: string) => {
 
 <Layout title="AI情報収集ページ - 最新記事一覧">
   <!-- モバイル用ヘッダー -->
-  <div class="mobile-header" style="display: none; padding: 15px; background-color: #f9f9f9; border-bottom: 1px solid #ddd;">
-    <h1 style="font-size: 18px; font-weight: bold; margin-bottom: 15px; text-align: center;">
+  <div class="mobile-header">
+    <h1 class="header-title">
       AI情報収集ページ
     </h1>
     
     <!-- モバイル用ナビゲーション -->
-    <div style="display: flex; gap: 10px; margin-bottom: 15px;">
-      <button class="mobile-nav-button" onclick="window.location.href='/home'" style="flex: 1; padding: 8px; border: 1px solid #ddd; background: white; cursor: pointer; border-radius: 4px;">
+    <div class="mobile-nav">
+      <button class="mobile-nav-button" onclick="window.location.href='/home'">
         市況・天気
       </button>
-      <button class="mobile-nav-button active" style="flex: 1; padding: 8px; border: 1px solid #333; background: #333; color: white; cursor: pointer; border-radius: 4px;">
+      <button class="mobile-nav-button active">
         記事一覧
       </button>
     </div>
     
     <!-- モバイル用日付選択 -->
-    <div style="margin-bottom: 15px;">
-      <label style="display: block; font-size: 14px; font-weight: bold; margin-bottom: 5px;">日付選択:</label>
-      <input type="date" id="mobileDatePicker" style="width: 100%; max-width: 100%; padding: 8px; border: 1px solid #ddd; border-radius: 4px; font-size: 16px; box-sizing: border-box;">
+    <div class="control-group">
+      <label class="control-label">日付選択:</label>
+      <input type="date" id="mobileDatePicker" class="date-picker">
     </div>
     
     <!-- モバイル用検索 -->
-    <div style="margin-bottom: 15px;">
-      <label style="display: block; font-size: 14px; font-weight: bold; margin-bottom: 5px;">記事を検索:</label>
-      <input type="text" id="mobileSearchInput" placeholder="タイトル、説明、サイト名で検索" style="width: 100%; padding: 8px; border: 1px solid #ddd; border-radius: 4px; font-size: 16px; box-sizing: border-box;">
-      <div id="mobileSearchCount" style="font-size: 12px; color: #666; margin-top: 5px;"></div>
+    <div class="control-group">
+      <label class="control-label">記事を検索:</label>
+      <div class="search-container">
+        <input type="text" id="mobileSearchInput" placeholder="タイトルで検索" class="search-input">
+        <button id="mobileSearchButton" class="search-button">検索</button>
+      </div>
+      <div id="mobileSearchCount" class="search-count"></div>
     </div>
     
     <!-- モバイル用タブ選択 -->
     <div>
-      <select id="mobileTabSelector" style="width: 100%; padding: 8px; border: 1px solid #ddd; border-radius: 4px;">
+      <select id="mobileTabSelector" class="tab-selector">
         <option value="all">すべて</option>
         {sites.map(site => (
           <option value={site}>{site}</option>
@@ -152,54 +155,57 @@ const formatLastUpdated = (dateString: string) => {
     </div>
   </div>
 
-  <div class="main-container" style="display: flex; min-height: 100vh;">
+  <div class="main-container">
     <!-- PC用左サイドバー -->
-    <div class="desktop-sidebar" style="width: 250px; min-width: 250px; flex-shrink: 0; border-right: 1px solid #ddd; padding: 20px; background-color: #f9f9f9;">
-      <h1 style="font-size: 18px; font-weight: bold; margin-bottom: 20px; text-align: center;">
+    <div class="desktop-sidebar">
+      <h1 class="sidebar-title">
         AI情報収集ページ
       </h1>
       
       <!-- 日付選択 -->
-      <div style="margin-bottom: 20px;">
-        <label style="display: block; font-size: 14px; font-weight: bold; margin-bottom: 5px;">日付選択:</label>
-        <input type="date" id="desktopDatePicker" style="width: 100%; padding: 8px; border: 1px solid #ddd; border-radius: 4px; box-sizing: border-box;">
+      <div class="sidebar-section">
+        <label class="control-label">日付選択:</label>
+        <input type="date" id="desktopDatePicker" class="date-picker">
       </div>
       
       <!-- 検索ボックス -->
-      <div style="margin-bottom: 20px;">
-        <label style="display: block; font-size: 14px; font-weight: bold; margin-bottom: 5px;">記事を検索:</label>
-        <input type="text" id="desktopSearchInput" placeholder="タイトル、説明、サイト名で検索" style="width: 100%; max-width: 100%; padding: 8px; border: 1px solid #ddd; border-radius: 4px; box-sizing: border-box;">
-        <div id="desktopSearchCount" style="font-size: 12px; color: #666; margin-top: 5px;"></div>
+      <div class="sidebar-section">
+        <label class="control-label">記事を検索:</label>
+        <div class="search-container-desktop">
+          <input type="text" id="desktopSearchInput" placeholder="タイトルで検索" class="search-input">
+          <button id="desktopSearchButton" class="search-button">検索</button>
+        </div>
+        <div id="desktopSearchCount" class="search-count"></div>
       </div>
       
       <!-- ナビゲーション -->
-      <div style="border-bottom: 1px solid #ddd; margin-bottom: 20px;">
-        <button class="nav-button" onclick="window.location.href='/home'" style="display: block; width: 100%; padding: 10px; border: none; background: none; text-align: left; cursor: pointer; border-bottom: 1px solid #eee;">
+      <div class="nav-section">
+        <button class="nav-button" onclick="window.location.href='/home'">
           市況・天気
         </button>
-        <button class="nav-button active" style="display: block; width: 100%; padding: 10px; border: none; background: none; text-align: left; cursor: pointer; border-bottom: 2px solid black;">
+        <button class="nav-button active">
           記事一覧
         </button>
       </div>
       
       <!-- タブ -->
-      <div style="border-bottom: 1px solid #ddd; margin-bottom: 20px;">
-        <button class="tab-button active" data-filter="all" style="display: block; width: 100%; padding: 10px; border: none; background: none; text-align: left; cursor: pointer; border-bottom: 2px solid black;">
+      <div class="tab-section">
+        <button class="tab-button active" data-filter="all">
           すべて
         </button>
         {sites.map(site => (
-          <button class="tab-button" data-filter={site} style="display: block; width: 100%; padding: 10px; border: none; background: none; text-align: left; cursor: pointer; border-bottom: 1px solid #eee;">
+          <button class="tab-button" data-filter={site}>
             {site}
           </button>
         ))}
       </div>
       
       <!-- 統計 -->
-      <div style="font-size: 12px; color: #666;">
+      <div class="stats-section">
         <p>最終更新: {formatLastUpdated(articlesData.last_updated)}</p>
         <p>総記事数: {articlesData.total_articles}件</p>
         <p>保存期間: 1年間</p>
-        <div style="margin-top: 10px;">
+        <div class="stats-breakdown">
           {Object.entries(articlesData.articles_by_date).filter(([period]) => ['本日', '昨日', '一昨日'].includes(period)).map(([period, articles]) => (
             <p>{period}: {articles.length}件</p>
           ))}
@@ -208,11 +214,11 @@ const formatLastUpdated = (dateString: string) => {
     </div>
 
     <!-- メインコンテンツ -->
-    <div class="main-content" style="flex: 1; padding: 20px; min-width: 0; max-width: calc(100vw - 270px); overflow: hidden; box-sizing: border-box;">
-      <div id="articleContainer" style="width: 100%; max-width: 100%; overflow: hidden;">
-        <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 20px;">
-          <h2 id="contentTitle" style="font-size: 20px; font-weight: bold; margin: 0;">本日のすべての記事</h2>
-          <a id="siteLink" href="#" target="_blank" style="font-size: 14px; color: #0066cc; text-decoration: none; display: none;">
+    <div class="main-content">
+      <div id="articleContainer" class="article-container">
+        <div class="content-header">
+          <h2 id="contentTitle" class="content-title">本日のすべての記事</h2>
+          <a id="siteLink" href="#" target="_blank" class="site-link">
             元サイトを見る →
           </a>
         </div>
@@ -224,11 +230,11 @@ const formatLastUpdated = (dateString: string) => {
   </div>
 
   <!-- モバイル用統計情報（下部） -->
-  <div class="mobile-stats" style="display: none; padding: 15px; background-color: #f9f9f9; border-top: 1px solid #ddd; font-size: 12px; color: #666;">
+  <div class="mobile-stats">
     <p>最終更新: {formatLastUpdated(articlesData.last_updated)}</p>
     <p>総記事数: {articlesData.total_articles}件</p>
     <p>保存期間: 1年間</p>
-    <div style="margin-top: 10px; display: grid; grid-template-columns: repeat(auto-fit, minmax(120px, 1fr)); gap: 5px;">
+    <div class="stats-grid">
       {Object.entries(articlesData.articles_by_date).filter(([period]) => ['本日', '昨日', '一昨日'].includes(period)).map(([period, articles]) => (
         <span>{period}: {articles.length}件</span>
       ))}
@@ -236,16 +242,302 @@ const formatLastUpdated = (dateString: string) => {
   </div>
 
   <style>
-    /* ボタンのホバー効果 */
-    .nav-button:not(.active):hover {
-      background-color: #f0f0f0;
+    /* 共通スタイル */
+    .control-label {
+      display: block;
+      font-size: 14px;
+      font-weight: bold;
+      margin-bottom: 5px;
     }
     
-    .tab-button:not(.active):hover {
-      background-color: #f0f0f0;
+    .date-picker {
+      width: 100%;
+      padding: 8px;
+      border: 1px solid #ddd;
+      border-radius: 4px;
+      box-sizing: border-box;
+    }
+
+    .search-container {
+      display: flex;
+      gap: 5px;
     }
     
-    /* レスポンシブスタイル */
+    .search-container-desktop {
+      display: flex;
+      gap: 5px;
+    }
+    
+    .search-input {
+      flex: 1;
+      padding: 8px;
+      border: 1px solid #ddd;
+      border-radius: 4px;
+      box-sizing: border-box;
+      min-width: 0;
+    }
+
+    .search-button {
+      padding: 8px 12px;
+      background-color: #333;
+      color: white;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      font-size: 14px;
+      white-space: nowrap;
+    }
+    
+    .search-button:hover {
+      background-color: #555;
+    }
+
+    .search-count {
+      font-size: 12px;
+      color: #666;
+      margin-top: 5px;
+    }
+
+    /* モバイルヘッダー */
+    .mobile-header {
+      display: none;
+      padding: 15px;
+      background-color: #f9f9f9;
+      border-bottom: 1px solid #ddd;
+    }
+
+    .header-title {
+      font-size: 18px;
+      font-weight: bold;
+      margin-bottom: 15px;
+      text-align: center;
+    }
+
+    .mobile-nav {
+      display: flex;
+      gap: 10px;
+      margin-bottom: 15px;
+    }
+
+    .mobile-nav-button {
+      flex: 1;
+      padding: 8px;
+      border: 1px solid #ddd;
+      background: white;
+      cursor: pointer;
+      border-radius: 4px;
+    }
+
+    .mobile-nav-button.active {
+      border: 1px solid #333;
+      background: #333;
+      color: white;
+    }
+
+    .control-group {
+      margin-bottom: 15px;
+    }
+
+    .tab-selector {
+      width: 100%;
+      padding: 8px;
+      border: 1px solid #ddd;
+      border-radius: 4px;
+    }
+
+    /* メインコンテナ */
+    .main-container {
+      display: flex;
+      min-height: 100vh;
+    }
+
+    /* デスクトップサイドバー */
+    .desktop-sidebar {
+      width: 250px;
+      min-width: 250px;
+      flex-shrink: 0;
+      border-right: 1px solid #ddd;
+      padding: 20px;
+      background-color: #f9f9f9;
+    }
+
+    .sidebar-title {
+      font-size: 18px;
+      font-weight: bold;
+      margin-bottom: 20px;
+      text-align: center;
+    }
+
+    .sidebar-section {
+      margin-bottom: 20px;
+    }
+
+    .nav-section, .tab-section {
+      border-bottom: 1px solid #ddd;
+      margin-bottom: 20px;
+    }
+
+    .nav-button, .tab-button {
+      display: block;
+      width: 100%;
+      padding: 10px;
+      border: none;
+      background: none;
+      text-align: left;
+      cursor: pointer;
+      border-bottom: 1px solid #eee;
+    }
+
+    .nav-button.active, .tab-button.active {
+      border-bottom: 2px solid black;
+    }
+
+    .nav-button:not(.active):hover, .tab-button:not(.active):hover {
+      background-color: #f0f0f0;
+    }
+
+    .stats-section, .mobile-stats {
+      font-size: 12px;
+      color: #666;
+    }
+
+    .stats-breakdown {
+      margin-top: 10px;
+    }
+
+    /* メインコンテンツエリア */
+    .main-content {
+      flex: 1;
+      padding: 20px;
+      min-width: 0;
+      max-width: calc(100vw - 270px);
+      overflow: hidden;
+      box-sizing: border-box;
+    }
+
+    .article-container {
+      width: 100%;
+      max-width: 100%;
+      overflow: hidden;
+    }
+
+    .content-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 20px;
+    }
+
+    .content-title {
+      font-size: 20px;
+      font-weight: bold;
+      margin: 0;
+    }
+
+    .site-link {
+      font-size: 14px;
+      color: #0066cc;
+      text-decoration: none;
+      display: none;
+    }
+
+    /* 記事カード */
+    :global(.article-card) {
+      border: 1px solid #ddd;
+      padding: 15px;
+      margin-bottom: 10px;
+      cursor: pointer;
+      transition: all 0.2s ease;
+      border-radius: 8px;
+      display: flex;
+      flex-direction: column;
+      position: relative;
+      word-wrap: break-word;
+      overflow-wrap: break-word;
+      min-width: 0;
+      max-width: 100%;
+      overflow: hidden;
+      box-sizing: border-box;
+    }
+
+    :global(.article-card:hover) {
+      transform: translateY(-2px);
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+      border-color: #999;
+    }
+    
+    :global(.articles-grid) {
+      width: 100%;
+      max-width: 100%;
+      overflow: hidden;
+      box-sizing: border-box;
+    }
+    
+    :global(.article-meta) {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 8px;
+    }
+    
+    :global(.article-site-info) {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+    }
+    
+    :global(.favicon) {
+        width: 16px;
+        height: 16px;
+    }
+    
+    :global(.meta-text) {
+        font-size: 12px;
+        color: #666;
+    }
+    
+    :global(.article-title) {
+        font-size: 16px; 
+        font-weight: bold; 
+        margin-bottom: 8px; 
+        line-height: 1.4; 
+        color: black; 
+        word-wrap: break-word; 
+        overflow-wrap: break-word;
+    }
+    
+    :global(.article-desc) {
+        font-size: 14px; 
+        color: #666; 
+        margin-bottom: 8px; 
+        overflow: hidden; 
+        display: -webkit-box; 
+        -webkit-line-clamp: 2; 
+        -webkit-box-orient: vertical;
+    }
+    
+    :global(.no-articles) {
+        color: #666; 
+        text-align: center; 
+        padding: 40px;
+    }
+
+    /* モバイル統計 */
+    .mobile-stats {
+      display: none;
+      padding: 15px;
+      background-color: #f9f9f9;
+      border-top: 1px solid #ddd;
+    }
+
+    .stats-grid {
+      margin-top: 10px;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+      gap: 5px;
+    }
+
+    /* レスポンシブ */
     @media (max-width: 1024px) {
       .mobile-header {
         display: block !important;
@@ -264,427 +556,382 @@ const formatLastUpdated = (dateString: string) => {
       .mobile-stats {
         display: block !important;
       }
-      .articles-grid {
+      :global(.articles-grid) {
         grid-template-columns: 1fr !important;
         display: grid !important;
         gap: 15px !important;
+      }
+      .article-container {
         width: 100% !important;
         max-width: 100% !important;
       }
-      #articleContainer {
+      :global(.article-card) {
         width: 100% !important;
         max-width: 100% !important;
-      }
-      .articles-grid .article-card {
-        width: 100% !important;
-        max-width: 100% !important;
-      }
-      .articles-grid > div[style*="visibility: hidden"] {
-        display: none !important;
       }
     }
-    
+
     @media (min-width: 1025px) {
-      .mobile-header {
-        display: none !important;
-      }
-      .mobile-stats {
+      .mobile-header, .mobile-stats {
         display: none !important;
       }
     }
-    
   </style>
 
   <script define:vars={{ allArticles, sites, articlesData }}>
-    // タブ切り替え機能
-    const tabButtons = document.querySelectorAll('.tab-button');
-    const articlesList = document.getElementById('articlesList');
-    const contentTitle = document.getElementById('contentTitle');
-    const siteLink = document.getElementById('siteLink');
-    
-    // 日付選択要素
-    const desktopDatePicker = document.getElementById('desktopDatePicker');
-    const mobileDatePicker = document.getElementById('mobileDatePicker');
-    const mobileTabSelector = document.getElementById('mobileTabSelector');
-    
-    // サイトごとの元サイトリンク
-    const siteLinks = {
-      '日経ビジネス': 'https://business.nikkei.com/latest/?i_cid=nbpnb_latest',
-      'Business Insider(ビジネス)': 'https://www.businessinsider.jp/business/',
-      'Business Insider(テック)': 'https://www.businessinsider.jp/tech-news/',
-      'Business Insider(サイエンス)': 'https://www.businessinsider.jp/science/',
-      '日経xTECH(IT)': 'https://xtech.nikkei.com/top/it/',
-      'ITmedia(AI+)': 'https://www.itmedia.co.jp/aiplus/',
-      'はてなブックマーク (IT)': 'https://b.hatena.ne.jp/hotentry/it',
-      'はてなブックマーク (AI)': 'https://b.hatena.ne.jp/entrylist/it/AI・機械学習',
-      'Zenn(機械学習)': 'https://zenn.dev/topics/機械学習',
-      'Zenn(AI)': 'https://zenn.dev/topics/ai',
-      'Zenn(生成 AI)': 'https://zenn.dev/topics/生成ai',
-      'Zenn(ディープラーニング)': 'https://zenn.dev/topics/deeplearning',
-      'Zenn(LLM)': 'https://zenn.dev/topics/llm',
-      'Zenn(NLP)': 'https://zenn.dev/topics/nlp',
-      'Zenn(Python)': 'https://zenn.dev/topics/python',
-      'Zenn(Google Cloud)': 'https://zenn.dev/topics/googlecloud',
-      'Cloud Blog': 'https://cloud.google.com/blog?hl=en',
-      'Cloud Blog JA': 'https://cloud.google.com/blog/ja',
-      'G-gen': 'https://blog.g-gen.co.jp'
+    // UI Elements
+    const elements = {
+        tabButtons: document.querySelectorAll('.tab-button'),
+        articlesList: document.getElementById('articlesList'),
+        contentTitle: document.getElementById('contentTitle'),
+        siteLink: document.getElementById('siteLink'),
+        desktopDatePicker: document.getElementById('desktopDatePicker'),
+        mobileDatePicker: document.getElementById('mobileDatePicker'),
+        mobileTabSelector: document.getElementById('mobileTabSelector'),
+        desktopSearchInput: document.getElementById('desktopSearchInput'),
+        mobileSearchInput: document.getElementById('mobileSearchInput'),
+        desktopSearchButton: document.getElementById('desktopSearchButton'),
+        mobileSearchButton: document.getElementById('mobileSearchButton'),
+        desktopSearchCount: document.getElementById('desktopSearchCount'),
+        mobileSearchCount: document.getElementById('mobileSearchCount')
+    };
+
+    // Configuration & State
+    const CONFIG = {
+        siteLinks: {
+            '日経ビジネス': 'https://business.nikkei.com/latest/?i_cid=nbpnb_latest',
+            'Business Insider(ビジネス)': 'https://www.businessinsider.jp/business/',
+            'Business Insider(テック)': 'https://www.businessinsider.jp/tech-news/',
+            'Business Insider(サイエンス)': 'https://www.businessinsider.jp/science/',
+            '日経xTECH(IT)': 'https://xtech.nikkei.com/top/it/',
+            'ITmedia(AI+)': 'https://www.itmedia.co.jp/aiplus/',
+            'はてなブックマーク (IT)': 'https://b.hatena.ne.jp/hotentry/it',
+            'はてなブックマーク (AI)': 'https://b.hatena.ne.jp/entrylist/it/AI・機械学習',
+            'Zenn(機械学習)': 'https://zenn.dev/topics/機械学習',
+            'Zenn(AI)': 'https://zenn.dev/topics/ai',
+            'Zenn(生成 AI)': 'https://zenn.dev/topics/生成ai',
+            'Zenn(ディープラーニング)': 'https://zenn.dev/topics/deeplearning',
+            'Zenn(LLM)': 'https://zenn.dev/topics/llm',
+            'Zenn(NLP)': 'https://zenn.dev/topics/nlp',
+            'Zenn(Python)': 'https://zenn.dev/topics/python',
+            'Zenn(Google Cloud)': 'https://zenn.dev/topics/googlecloud',
+            'Cloud Blog': 'https://cloud.google.com/blog?hl=en',
+            'Cloud Blog JA': 'https://cloud.google.com/blog/ja',
+            'G-gen': 'https://blog.g-gen.co.jp'
+        },
+        minDateStr: '2025-01-01'
+    };
+
+    let state = {
+        currentFilter: 'all',
+        currentDate: new Date(),
+        searchQuery: ''
     };
     
-    // 現在の状態
-    let currentFilter = 'all';
-    let currentDate = new Date(); // 現在選択されている日付
-    
-    // 日付選択範囲の設定
-    const minDateStr = '2025-01-01';
-    const maxDateStr = new Date().toISOString().split('T')[0]; // 本日まで
-    
+    // Articles Cache
+    const articlesCache = {
+        byDate: new Map(), // 'YYYY-MM-DD' -> Article[]
+        all: [] // All unique articles
+    };
+
+    // Helper Functions
+    function formatDate(dateString) {
+        return new Date(dateString).toLocaleString('ja-JP', {
+            timeZone: 'Asia/Tokyo',
+            month: 'short',
+            day: 'numeric',
+            hour: '2-digit',
+            minute: '2-digit'
+        });
+    }
+
+    function getFaviconUrl(url) {
+        try {
+            return `https://www.google.com/s2/favicons?domain=${new URL(url).hostname}&sz=32`;
+        } catch {
+            return '';
+        }
+    }
+
     function createArticleHTML(article) {
-      const formatDate = (dateString) => {
-        const date = new Date(dateString);
-        return date.toLocaleString('ja-JP', {
-          timeZone: 'Asia/Tokyo',
-          month: 'short',
-          day: 'numeric',
-          hour: '2-digit',
-          minute: '2-digit'
-        });
-      };
-      
-      const getFaviconUrl = (url) => {
-        try {
-          const domain = new URL(url).hostname;
-          return `https://www.google.com/s2/favicons?domain=${domain}&sz=32`;
-        } catch {
-          return '';
-        }
-      };
-      
-      return `
-        <div class="article-card" onclick="window.open('${article.url}', '_blank')" style="
-          border: 1px solid #ddd; 
-          padding: 15px; 
-          margin-bottom: 10px;
-          cursor: pointer;
-          transition: all 0.2s ease;
-          border-radius: 8px;
-          display: flex;
-          flex-direction: column;
-          position: relative;
-          word-wrap: break-word;
-          overflow-wrap: break-word;
-          min-width: 0;
-          max-width: 100%;
-          overflow: hidden;
-          box-sizing: border-box;
-        ">
-          <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 8px;">
-            <div style="display: flex; align-items: center; gap: 8px;">
-              <img src="${getFaviconUrl(article.url)}" alt="${article.site} favicon" style="
-                width: 16px;
-                height: 16px;
-              " onerror="this.style.display='none';">
-              <span style="font-size: 12px; color: #666;">${article.site}</span>
+        return `
+            <div class="article-card" onclick="window.open('${article.url}', '_blank')">
+                <div class="article-meta">
+                    <div class="article-site-info">
+                        <img src="${getFaviconUrl(article.url)}" alt="${article.site} favicon" class="favicon" onerror="this.style.display='none';">
+                        <span class="meta-text">${article.site}</span>
+                    </div>
+                    <span class="meta-text">${formatDate(article.published)}</span>
+                </div>
+                
+                <h3 class="article-title">${article.title}</h3>
+                
+                ${article.description ? `<p class="article-desc">${article.description}</p>` : ''}
             </div>
-            <span style="font-size: 12px; color: #666;">${formatDate(article.published)}</span>
-          </div>
-          
-          <h3 style="font-size: 16px; font-weight: bold; margin-bottom: 8px; line-height: 1.4; color: black; word-wrap: break-word; overflow-wrap: break-word;">
-            ${article.title}
-          </h3>
-          
-          ${article.description ? `
-            <p style="font-size: 14px; color: #666; margin-bottom: 8px; overflow: hidden; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical;">
-              ${article.description}
-            </p>
-          ` : ''}
-          
-        </div>
-      `;
+        `;
     }
     
-    // 日付キーのフォーマット（YYYY-MM-DD）
-    function formatDateKey(date) {
-      return date.toISOString().split('T')[0];
-    }
-    
-    // 指定日付の記事を取得（日本時間ベース・重複排除）
-    function getArticlesForDate(dateStr) {
-      const filteredArticles = allArticles.filter(article => {
-        try {
-          // 記事の公開日時をUTC時刻として解析
-          const articleDate = new Date(article.published);
-          
-          // 日本時間に変換
-          const articleDateJST = new Date(articleDate.toLocaleString('en-US', { timeZone: 'Asia/Tokyo' }));
-          
-          // 選択された日付の範囲を日本時間で設定
-          const selectedDate = new Date(dateStr);
-          const startOfDayJST = new Date(selectedDate.getFullYear(), selectedDate.getMonth(), selectedDate.getDate(), 0, 0, 0, 0);
-          const endOfDayJST = new Date(selectedDate.getFullYear(), selectedDate.getMonth(), selectedDate.getDate(), 23, 59, 59, 999);
-          
-          // 記事の日付が選択された日の範囲内かチェック
-          return articleDateJST >= startOfDayJST && articleDateJST <= endOfDayJST;
-        } catch {
-          return false;
-        }
-      });
-      
-      // URL基準で重複排除
-      const uniqueArticles = [];
-      const seenUrls = new Set();
-      
-      for (const article of filteredArticles) {
-        if (!seenUrls.has(article.url)) {
-          seenUrls.add(article.url);
-          uniqueArticles.push(article);
-        }
-      }
-      
-      return uniqueArticles;
-    }
-    
-    let currentSearchQuery = '';
-    
-    function filterArticles() {
-      let filteredArticles = [];
-      let title = '';
-      
-      // 選択された日付の記事を取得
-      const dateStr = formatDateKey(currentDate);
-      filteredArticles = getArticlesForDate(dateStr);
-      
-      // サイトフィルタを適用
-      if (currentFilter !== 'all') {
-        filteredArticles = filteredArticles.filter(article => article.site === currentFilter);
-      }
-      
-      // 検索フィルタを適用
-      if (currentSearchQuery && currentSearchQuery.trim() !== '') {
-        const query = currentSearchQuery.toLowerCase().trim();
-        filteredArticles = filteredArticles.filter(article => {
-          const title = (article.title || '').toLowerCase();
-          const description = (article.description || '').toLowerCase();
-          const site = (article.site || '').toLowerCase();
-          return title.includes(query) || description.includes(query) || site.includes(query);
+    // Initialize articles cache for faster lookup (Lightweight method)
+    function initializeArticlesCache() {
+        const seenUrls = new Set();
+        
+        allArticles.forEach(article => {
+            try {
+                // Populate global unique cache
+                if (!seenUrls.has(article.url)) {
+                    seenUrls.add(article.url);
+                    articlesCache.all.push(article);
+                }
+                
+                // Parse date once
+                const articleDate = new Date(article.published);
+                const articleDateJST = new Date(articleDate.toLocaleString('en-US', { timeZone: 'Asia/Tokyo' }));
+                
+                // Format as YYYY-MM-DD
+                const year = articleDateJST.getFullYear();
+                const month = String(articleDateJST.getMonth() + 1).padStart(2, '0');
+                const day = String(articleDateJST.getDate()).padStart(2, '0');
+                const dateKey = `${year}-${month}-${day}`;
+                
+                if (!articlesCache.byDate.has(dateKey)) {
+                    articlesCache.byDate.set(dateKey, []);
+                }
+                
+                const dayArticles = articlesCache.byDate.get(dateKey);
+                // Dedup within day list (safe check)
+                if (!dayArticles.some(a => a.url === article.url)) {
+                     dayArticles.push(article);
+                }
+
+            } catch (e) {
+                console.warn('Date parsing error', e);
+            }
         });
-      }
-      
-      // 新着順でソート（新しい記事が上）
-      filteredArticles.sort((a, b) => {
-        const dateA = new Date(a.published);
-        const dateB = new Date(b.published);
-        return dateB - dateA; // 降順（新しい順）
-      });
-      
-      // タイトル設定
-      const displayDate = currentDate.toLocaleDateString('ja-JP');
-      title = currentFilter === 'all' ? `${displayDate}のすべての記事` : `${displayDate}の${currentFilter}記事`;
-      if (currentSearchQuery) {
-        title += ` (検索: "${currentSearchQuery}")`;
-      }
-      contentTitle.textContent = title;
-      
-      // 検索結果カウント表示
-      const searchCountText = currentSearchQuery ? `${filteredArticles.length}件の検索結果` : '';
-      const desktopSearchCount = document.getElementById('desktopSearchCount');
-      const mobileSearchCount = document.getElementById('mobileSearchCount');
-      if (desktopSearchCount) desktopSearchCount.textContent = searchCountText;
-      if (mobileSearchCount) mobileSearchCount.textContent = searchCountText;
-      
-      // 元サイトリンクの表示制御
-      if (currentFilter !== 'all' && siteLinks[currentFilter]) {
-        siteLink.href = siteLinks[currentFilter];
-        siteLink.style.display = 'block';
-      } else {
-        siteLink.style.display = 'none';
-      }
-      
-      if (filteredArticles.length === 0) {
-        articlesList.innerHTML = '<p style="color: #666; text-align: center; padding: 40px;">記事がありません</p>';
-      } else {
-        // 3列固定レイアウト（レスポンシブ対応）
-        const articlesHTML = filteredArticles.map(createArticleHTML).join('');
-        
-        // ダミーボックスを追加（3の倍数になるまで）
-        const dummyBoxes = [];
-        const remainder = filteredArticles.length % 3;
-        if (remainder !== 0) {
-          const dummyCount = 3 - remainder;
-          for (let i = 0; i < dummyCount; i++) {
-            dummyBoxes.push('<div style="visibility: hidden;"></div>');
-          }
+    }
+
+    function getArticlesForDate(dateStr) {
+        // O(1) Lookup
+        return articlesCache.byDate.get(dateStr) || [];
+    }
+
+    function renderArticles(articles) {
+        if (articles.length === 0) {
+            elements.articlesList.innerHTML = '<p class="no-articles">記事がありません</p>';
+            return;
         }
-        
-        // 画面幅に応じてグリッドレイアウトを決定
+
         const isMobile = window.innerWidth <= 1024;
         const gridColumns = isMobile ? '1fr' : 'repeat(3, 1fr)';
         const gridGap = isMobile ? '15px' : '20px';
+
+        const articlesHTML = articles.map(createArticleHTML).join('');
         
-        articlesList.innerHTML = `
-          <div style="
-            display: grid;
-            grid-template-columns: ${gridColumns};
-            gap: ${gridGap};
-            width: 100%;
-            max-width: 100%;
-            overflow: hidden;
-            box-sizing: border-box;
-          " class="articles-grid">
-            ${articlesHTML}
-            ${isMobile ? '' : dummyBoxes.join('')}
-          </div>
+        // Add dummy boxes for alignment
+        let dummyBoxes = '';
+        if (!isMobile) {
+            const remainder = articles.length % 3;
+            if (remainder !== 0) {
+                dummyBoxes = Array(3 - remainder).fill('<div style="visibility: hidden;"></div>').join('');
+            }
+        }
+
+        elements.articlesList.innerHTML = `
+            <div style="display: grid; grid-template-columns: ${gridColumns}; gap: ${gridGap};" class="articles-grid">
+                ${articlesHTML}
+                ${dummyBoxes}
+            </div>
         `;
-        
-        // 記事カードのホバー効果を追加
-        const articleCards = document.querySelectorAll('.article-card');
-        articleCards.forEach(card => {
-          // ホバー効果
-          card.addEventListener('mouseenter', () => {
-            card.style.transform = 'translateY(-2px)';
-            card.style.boxShadow = '0 4px 12px rgba(0, 0, 0, 0.1)';
-            card.style.borderColor = '#999';
-          });
-          
-          card.addEventListener('mouseleave', () => {
-            card.style.transform = 'translateY(0)';
-            card.style.boxShadow = 'none';
-            card.style.borderColor = '#ddd';
-          });
-        });
-      }
     }
-    
-    // ナビゲーションボタンのホバー効果
-    const navButtons = document.querySelectorAll('.nav-button');
-    navButtons.forEach(button => {
-      if (!button.classList.contains('active')) {
-        button.addEventListener('mouseenter', () => {
-          button.style.backgroundColor = '#f0f0f0';
-        });
-        button.addEventListener('mouseleave', () => {
-          button.style.backgroundColor = '';
-        });
-      }
-    });
-    
-    // タブクリックイベント
-    tabButtons.forEach(button => {
-      button.addEventListener('click', () => {
-        tabButtons.forEach(btn => {
-          btn.style.borderBottom = '1px solid #eee';
-          btn.classList.remove('active');
-        });
+
+    function filterAndRender() {
+        let filtered;
         
-        button.style.borderBottom = '2px solid black';
-        button.classList.add('active');
+        if (state.searchQuery) {
+            // If searching, target ALL articles (ignore date)
+            filtered = [...articlesCache.all];
+        } else {
+            // Normal date filtering
+            const dateStr = state.currentDate.toISOString().split('T')[0];
+            filtered = getArticlesForDate(dateStr);
+        }
+
+        // Site Filter
+        if (state.currentFilter !== 'all') {
+            filtered = filtered.filter(a => a.site === state.currentFilter);
+        }
+
+        // Search Filter (Title Only)
+        if (state.searchQuery) {
+            const query = state.searchQuery.toLowerCase();
+            filtered = filtered.filter(a => 
+                (a.title || '').toLowerCase().includes(query)
+            );
+        }
+
+        // Sort descending
+        filtered.sort((a, b) => new Date(b.published) - new Date(a.published));
+
+        // Update UI
+        updateTitleAndMeta(filtered);
+        renderArticles(filtered);
+    }
+
+    function updateTitleAndMeta(articles) {
+        const displayDate = state.currentDate.toLocaleDateString('ja-JP');
+        let title;
         
-        currentFilter = button.dataset.filter;
-        filterArticles();
-      });
-    });
-    
-    
-    // モバイル用タブ変更イベント
-    if (mobileTabSelector) {
-      mobileTabSelector.addEventListener('change', () => {
-        const selectedFilter = mobileTabSelector.value;
-        
-        // PC側のタブボタンも同期
-        tabButtons.forEach(btn => {
-          btn.style.borderBottom = '1px solid #eee';
-          btn.classList.remove('active');
-        });
-        
-        const activeButton = document.querySelector(`[data-filter="${selectedFilter}"]`);
-        if (activeButton) {
-          activeButton.style.borderBottom = '2px solid black';
-          activeButton.classList.add('active');
+        if (state.searchQuery) {
+            // When searching, indicate "All Periods"
+            title = state.currentFilter === 'all' ? `全期間のすべての記事` : `全期間の${state.currentFilter}記事`;
+            title += ` (検索: "${state.searchQuery}")`;
+        } else {
+            // Normal date view
+            title = state.currentFilter === 'all' ? `${displayDate}のすべての記事` : `${displayDate}の${state.currentFilter}記事`;
         }
         
-        currentFilter = selectedFilter;
-        filterArticles();
-      });
+        if (state.searchQuery) {
+            const countText = `${articles.length}件の検索結果`;
+            if (elements.desktopSearchCount) elements.desktopSearchCount.textContent = countText;
+            if (elements.mobileSearchCount) elements.mobileSearchCount.textContent = countText;
+        } else {
+            if (elements.desktopSearchCount) elements.desktopSearchCount.textContent = '';
+            if (elements.mobileSearchCount) elements.mobileSearchCount.textContent = '';
+        }
+        
+        elements.contentTitle.textContent = title;
+
+        // Site Link visibility
+        if (state.currentFilter !== 'all' && CONFIG.siteLinks[state.currentFilter]) {
+            elements.siteLink.href = CONFIG.siteLinks[state.currentFilter];
+            elements.siteLink.style.display = 'block';
+        } else {
+            elements.siteLink.style.display = 'none';
+        }
     }
-    
-    // 日付選択イベントリスナー
-    function setupDatePickers() {
-      // 初期値設定
-      const todayStr = formatDateKey(currentDate);
-      desktopDatePicker.value = todayStr;
-      mobileDatePicker.value = todayStr;
-      
-      // min/max設定
-      desktopDatePicker.min = minDateStr;
-      desktopDatePicker.max = maxDateStr;
-      mobileDatePicker.min = minDateStr;
-      mobileDatePicker.max = maxDateStr;
-      
-      // PC用日付選択イベント
-      desktopDatePicker.addEventListener('change', (e) => {
-        const selectedDate = e.target.value;
-        currentDate = new Date(selectedDate);
+
+    // Event Listeners Setup
+    function setupEventListeners() {
+        // Tab Buttons
+        elements.tabButtons.forEach(btn => {
+            btn.addEventListener('click', () => {
+                elements.tabButtons.forEach(b => {
+                    b.classList.remove('active');
+                    b.style.borderBottom = '1px solid #eee';
+                });
+                btn.classList.add('active');
+                btn.style.borderBottom = '2px solid black';
+                
+                state.currentFilter = btn.dataset.filter;
+                if (elements.mobileTabSelector) elements.mobileTabSelector.value = state.currentFilter;
+                filterAndRender();
+            });
+        });
+
+        // Mobile Tab Selector
+        if (elements.mobileTabSelector) {
+            elements.mobileTabSelector.addEventListener('change', (e) => {
+                state.currentFilter = e.target.value;
+                
+                // Sync Desktop Tabs (Visual only)
+                elements.tabButtons.forEach(b => {
+                    b.classList.remove('active');
+                    b.style.borderBottom = '1px solid #eee';
+                    if (b.dataset.filter === state.currentFilter) {
+                        b.classList.add('active');
+                        b.style.borderBottom = '2px solid black';
+                    }
+                });
+                
+                filterAndRender();
+            });
+        }
+
+        // Date Pickers
+        const handleDateChange = (e) => {
+            const newDate = new Date(e.target.value);
+            state.currentDate = newDate;
+            state.searchQuery = ''; // Reset search on date change
+            if (elements.desktopSearchInput) elements.desktopSearchInput.value = '';
+            if (elements.mobileSearchInput) elements.mobileSearchInput.value = '';
+            
+            elements.desktopDatePicker.value = e.target.value;
+            elements.mobileDatePicker.value = e.target.value;
+            filterAndRender();
+        };
+
+        if (elements.desktopDatePicker) elements.desktopDatePicker.addEventListener('change', handleDateChange);
+        if (elements.mobileDatePicker) elements.mobileDatePicker.addEventListener('change', handleDateChange);
+
+        // Search Logic
+        const executeSearch = () => {
+            // Get value from the visible input
+            const desktopValue = elements.desktopSearchInput ? elements.desktopSearchInput.value.trim() : '';
+            const mobileValue = elements.mobileSearchInput ? elements.mobileSearchInput.value.trim() : '';
+            
+            // Determine used input based on visibility or just grab whichever has value (or prioritize desktop if both somehow have values)
+            // Simpler: sync values when button is clicked? No, let's just grab the non-empty one or strictly based on view.
+            // Actually, keep inputs synced logic?
+            // Let's just use the value from the input associated with the clicked button for now,
+            // or better, update state from the inputs when button is clicked.
+            
+            // To simplify, we check which element triggered or just check window width?
+            // But we can just read from the active input.
+            // Let's sync inputs first.
+            
+            let query = '';
+            if (window.getComputedStyle(elements.mobileSearchInput).display !== 'none' && elements.mobileSearchInput.offsetParent !== null) {
+                 query = elements.mobileSearchInput.value.trim();
+                 if (elements.desktopSearchInput) elements.desktopSearchInput.value = query;
+            } else {
+                 query = elements.desktopSearchInput.value.trim();
+                 if (elements.mobileSearchInput) elements.mobileSearchInput.value = query;
+            }
+            
+            state.searchQuery = query;
+            filterAndRender();
+        };
         
-        // モバイル側も同期
-        mobileDatePicker.value = selectedDate;
+        // Button Click Event
+        if (elements.desktopSearchButton) elements.desktopSearchButton.addEventListener('click', executeSearch);
+        if (elements.mobileSearchButton) elements.mobileSearchButton.addEventListener('click', executeSearch);
         
-        // 記事をフィルター
-        filterArticles();
-      });
-      
-      // モバイル用日付選択イベント
-      mobileDatePicker.addEventListener('change', (e) => {
-        const selectedDate = e.target.value;
-        currentDate = new Date(selectedDate);
-        
-        // PC側も同期
-        desktopDatePicker.value = selectedDate;
-        
-        // 記事をフィルター
-        filterArticles();
-      });
+        // Enter Key Event
+        const handleEnterKey = (e) => {
+            if (e.key === 'Enter') {
+                executeSearch();
+            }
+        };
+
+        if (elements.desktopSearchInput) elements.desktopSearchInput.addEventListener('keypress', handleEnterKey);
+        if (elements.mobileSearchInput) elements.mobileSearchInput.addEventListener('keypress', handleEnterKey);
     }
-    
-    // 初期化処理
+
+    // Initialization
     function initialize() {
-      // 日付ピッカーの設定
-      setupDatePickers();
-      
-      // モバイルタブセレクターの初期値を設定
-      if (mobileTabSelector) {
-        mobileTabSelector.value = currentFilter;
-      }
-      
-      // 検索ボックスのイベントリスナー
-      const desktopSearchInput = document.getElementById('desktopSearchInput');
-      const mobileSearchInput = document.getElementById('mobileSearchInput');
-      
-      if (desktopSearchInput) {
-        desktopSearchInput.addEventListener('input', (e) => {
-          currentSearchQuery = e.target.value;
-          // モバイル側も同期
-          if (mobileSearchInput) {
-            mobileSearchInput.value = e.target.value;
-          }
-          filterArticles();
-        });
-      }
-      
-      if (mobileSearchInput) {
-        mobileSearchInput.addEventListener('input', (e) => {
-          currentSearchQuery = e.target.value;
-          // デスクトップ側も同期
-          if (desktopSearchInput) {
-            desktopSearchInput.value = e.target.value;
-          }
-          filterArticles();
-        });
-      }
-      
-      // 初期表示
-      filterArticles();
+        // Pre-process articles
+        initializeArticlesCache();
+        
+        // Set initial date picker values
+        const todayStr = state.currentDate.toISOString().split('T')[0];
+        const maxDateStr = todayStr;
+        
+        if (elements.desktopDatePicker) {
+            elements.desktopDatePicker.value = todayStr;
+            elements.desktopDatePicker.min = CONFIG.minDateStr;
+            elements.desktopDatePicker.max = maxDateStr;
+        }
+        
+        if (elements.mobileDatePicker) {
+            elements.mobileDatePicker.value = todayStr;
+            elements.mobileDatePicker.min = CONFIG.minDateStr;
+            elements.mobileDatePicker.max = maxDateStr;
+        }
+
+        setupEventListeners();
+        filterAndRender();
     }
-    
-    // 初期表示
+
+    // Start
     initialize();
   </script>
 </Layout>
