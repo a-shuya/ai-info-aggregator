@@ -1,6 +1,6 @@
 {
   "site": "Zenn(機械学習)",
-  "last_updated": "2026-01-25T13:39:10.720321",
+  "last_updated": "2026-01-25T13:54:53.597144",
   "total_articles": 524,
   "articles_by_date": {
     "本日": [
@@ -35,21 +35,21 @@
         "image_url": ""
       },
       {
-        "title": "3DGSを商用利用したい人へ：1000FPS達成した独自ラスタライザを作った話",
+        "title": "商用OKで最速の3DGSラスタライザを作った【DGR 1.45x】",
         "url": "https://zenn.dev/amabito/articles/hyper-rasterizer-zenn",
         "site": "Zenn(機械学習)",
         "published": "2026-01-25T01:06:29Z",
-        "description": "結論から言う\n3D Gaussian Splatting（3DGS）を商用で使いたいなら、ラスタライザを自作するしかない。\nそして私は作った。HyperRasterizer。Apache 2.0ライセンス、商用利用OK、100万Gaussians @ 1080pで1000FPS。\nこの記事では、なぜ自作が必要だったのか、どう実装したのか、そしてどれだけ速くなったのかを解説する。\n\n\n 3DGSの商...",
+        "description": "TL;DR\n\n\ndiff-gaussian-rasterization (DGR) は商用利用不可\n\ngsplat は遅い（DGRの1/5程度）\n→ Apache 2.0で1.45x高速なの作った\n\n\n\n 背景\n3D Gaussian Splatting（3DGS）の商用利用ニーズが急増している。不動産のバーチャルツアー、ECの商品3D化、ゲームの背景生成...\nしかし、公式実装のdiff-gau...",
         "category": "AI・技術",
         "rss_category": "",
         "image_url": ""
       },
       {
-        "title": "【有料】3DGSラスタライザをCUDAで実装する：1000FPS達成の全技術",
+        "title": "【有料】Backward Passを130倍高速化した方法【3DGSラスタライザ】",
         "url": "https://zenn.dev/amabito/articles/hyper-rasterizer-impl-paid",
         "site": "Zenn(機械学習)",
         "published": "2026-01-25T01:06:29Z",
-        "description": "この記事で得られるもの\n\n3DGSラスタライザのBackward Pass実装方法\n\n130倍高速化を実現したForward-Order手法の詳細\n\n1M Gaussians @ 1080p = 1000 FPSを達成した最適化技術\n実際に動くCUDAコード（コピペ可）\nハマった罠とその解決策\n\n対象読者: CUDAの基礎がわかる人、3DGSを商用利用したい人\n\n\n 無料パートのおさらい\n前回の記...",
+        "description": "2026/01/26 更新: DGR 1.45x達成\n本記事の技術を実装した結果、DGRを1.45x上回る4169FPSを達成しました。\n\n 最終ベンチマーク (N=100K, 800x600)\n\n\n\nモード\nFPS\nDGR比\n\n\n\n\nHash-SORTED\n4,169\n1.45x\n\n\nHash-WSR\n3,800+\n1.32x\n\n\nDGR (参考)\n2,870\n1.0x\n\n\n\nこの記事で解説して...",
         "category": "AI・技術",
         "rss_category": "",
         "image_url": ""
@@ -103,7 +103,7 @@
         "url": "https://zenn.dev/rg687076/articles/ca86ff28e6a56f",
         "site": "Zenn(機械学習)",
         "published": "2026-01-23T12:35:50Z",
-        "description": "Kaggle入門4(中級機械学習 1.はじめに)\nKaggle入門4(中級機械学習 2.欠損値)\nKaggle入門4(中級機械学習 3.カテゴリ変数)\nKaggle入門4(中級機械学習 4.パイプライン)\nKaggle入門4(中級機械学習 5.初めに)\nKaggle入門4(中級機械学習 6.初めに)\nKaggle入門4(中級機械学習 7.初めに)\n← Kaggle入門3(地理空間データ分析)\n\n ...",
+        "description": "Kaggle入門4(中級機械学習 1.はじめに)\nKaggle入門4(中級機械学習 2.欠損値)\nKaggle入門4(中級機械学習 3.カテゴリ変数)\nKaggle入門4(中級機械学習 4.パイプライン)\nKaggle入門4(中級機械学習 5.クロスバリデーション)\nKaggle入門4(中級機械学習 6.初めに)\nKaggle入門4(中級機械学習 7.初めに)\n← Kaggle入門3(地理空間デー...",
         "category": "AI・技術",
         "rss_category": "",
         "image_url": ""
@@ -151,21 +151,21 @@
         "image_url": ""
       },
       {
-        "title": "3DGSを商用利用したい人へ：1000FPS達成した独自ラスタライザを作った話",
+        "title": "商用OKで最速の3DGSラスタライザを作った【DGR 1.45x】",
         "url": "https://zenn.dev/amabito/articles/hyper-rasterizer-zenn",
         "site": "Zenn(機械学習)",
         "published": "2026-01-25T01:06:29Z",
-        "description": "結論から言う\n3D Gaussian Splatting（3DGS）を商用で使いたいなら、ラスタライザを自作するしかない。\nそして私は作った。HyperRasterizer。Apache 2.0ライセンス、商用利用OK、100万Gaussians @ 1080pで1000FPS。\nこの記事では、なぜ自作が必要だったのか、どう実装したのか、そしてどれだけ速くなったのかを解説する。\n\n\n 3DGSの商...",
+        "description": "TL;DR\n\n\ndiff-gaussian-rasterization (DGR) は商用利用不可\n\ngsplat は遅い（DGRの1/5程度）\n→ Apache 2.0で1.45x高速なの作った\n\n\n\n 背景\n3D Gaussian Splatting（3DGS）の商用利用ニーズが急増している。不動産のバーチャルツアー、ECの商品3D化、ゲームの背景生成...\nしかし、公式実装のdiff-gau...",
         "category": "AI・技術",
         "rss_category": "",
         "image_url": ""
       },
       {
-        "title": "【有料】3DGSラスタライザをCUDAで実装する：1000FPS達成の全技術",
+        "title": "【有料】Backward Passを130倍高速化した方法【3DGSラスタライザ】",
         "url": "https://zenn.dev/amabito/articles/hyper-rasterizer-impl-paid",
         "site": "Zenn(機械学習)",
         "published": "2026-01-25T01:06:29Z",
-        "description": "この記事で得られるもの\n\n3DGSラスタライザのBackward Pass実装方法\n\n130倍高速化を実現したForward-Order手法の詳細\n\n1M Gaussians @ 1080p = 1000 FPSを達成した最適化技術\n実際に動くCUDAコード（コピペ可）\nハマった罠とその解決策\n\n対象読者: CUDAの基礎がわかる人、3DGSを商用利用したい人\n\n\n 無料パートのおさらい\n前回の記...",
+        "description": "2026/01/26 更新: DGR 1.45x達成\n本記事の技術を実装した結果、DGRを1.45x上回る4169FPSを達成しました。\n\n 最終ベンチマーク (N=100K, 800x600)\n\n\n\nモード\nFPS\nDGR比\n\n\n\n\nHash-SORTED\n4,169\n1.45x\n\n\nHash-WSR\n3,800+\n1.32x\n\n\nDGR (参考)\n2,870\n1.0x\n\n\n\nこの記事で解説して...",
         "category": "AI・技術",
         "rss_category": "",
         "image_url": ""
@@ -215,7 +215,7 @@
         "url": "https://zenn.dev/rg687076/articles/ca86ff28e6a56f",
         "site": "Zenn(機械学習)",
         "published": "2026-01-23T12:35:50Z",
-        "description": "Kaggle入門4(中級機械学習 1.はじめに)\nKaggle入門4(中級機械学習 2.欠損値)\nKaggle入門4(中級機械学習 3.カテゴリ変数)\nKaggle入門4(中級機械学習 4.パイプライン)\nKaggle入門4(中級機械学習 5.初めに)\nKaggle入門4(中級機械学習 6.初めに)\nKaggle入門4(中級機械学習 7.初めに)\n← Kaggle入門3(地理空間データ分析)\n\n ...",
+        "description": "Kaggle入門4(中級機械学習 1.はじめに)\nKaggle入門4(中級機械学習 2.欠損値)\nKaggle入門4(中級機械学習 3.カテゴリ変数)\nKaggle入門4(中級機械学習 4.パイプライン)\nKaggle入門4(中級機械学習 5.クロスバリデーション)\nKaggle入門4(中級機械学習 6.初めに)\nKaggle入門4(中級機械学習 7.初めに)\n← Kaggle入門3(地理空間デー...",
         "category": "AI・技術",
         "rss_category": "",
         "image_url": ""
@@ -305,7 +305,7 @@
         "url": "https://zenn.dev/rg687076/articles/4adfbc1ce1de20",
         "site": "Zenn(機械学習)",
         "published": "2026-01-19T11:38:59Z",
-        "description": "Kaggle入門4(中級機械学習 1.はじめに)\nKaggle入門4(中級機械学習 2.欠損値)\nKaggle入門4(中級機械学習 3.カテゴリ変数)\nKaggle入門4(中級機械学習 4.パイプライン)\nKaggle入門4(中級機械学習 5.初めに)\nKaggle入門4(中級機械学習 6.初めに)\nKaggle入門4(中級機械学習 7.初めに)\n← Kaggle入門3(地理空間データ分析)\n参加...",
+        "description": "Kaggle入門4(中級機械学習 1.はじめに)\nKaggle入門4(中級機械学習 2.欠損値)\nKaggle入門4(中級機械学習 3.カテゴリ変数)\nKaggle入門4(中級機械学習 4.パイプライン)\nKaggle入門4(中級機械学習 5.クロスバリデーション)\nKaggle入門4(中級機械学習 6.初めに)\nKaggle入門4(中級機械学習 7.初めに)\n← Kaggle入門3(地理空間デー...",
         "category": "AI・技術",
         "rss_category": "",
         "image_url": ""
