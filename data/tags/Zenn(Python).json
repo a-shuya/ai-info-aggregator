@@ -1,9 +1,9 @@
 {
   "site": "Zenn(Python)",
-  "last_updated": "2026-01-25T14:57:42.786918",
-  "total_articles": 2052,
+  "last_updated": "2026-01-25T15:29:30.704316",
+  "total_articles": 2046,
   "articles_by_date": {
-    "本日": [
+    "昨日": [
       {
         "title": "ラズパイで超簡易HTMLサーバーにする【Raspberry pi】",
         "url": "https://zenn.dev/cfjp/articles/274f631437fd4e",
@@ -40,6 +40,16 @@
         "site": "Zenn(Python)",
         "published": "2026-01-25T07:28:37Z",
         "description": "0. 何をしたいのか（問題）\n関数（グラフ）の「一番高いところ」を探したい。\n今回の関数はサイン波を2つ足したもの。\ny = f(x) = sin(freq * x) + 0.5 * sin(3 * freq * x)\n\nx：横軸（0 から 2π の範囲）\ny：縦軸（高さ）\nfreq：波の細かさ（周波数）\n\n目的はこれ。\nx* = 「0 ≤ x ≤ 2π の中で y が最大になる x」\ny* = ...",
+        "category": "開発",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "llms.txtをAgent skillsにするCLIを作った",
+        "url": "https://zenn.dev/akuwano/articles/aa723289f3460e",
+        "site": "Zenn(Python)",
+        "published": "2026-01-25T06:22:09Z",
+        "description": "Claude Codeで習作しているのでその中の公開しても大丈夫そうなものはなんとなく出していこう！と言う気持ちで公開してみた。\n\n 何をするもの？\nllms.txtで提供されるドキュメント（たとえばDatabricksなら https://docs.databricks.com/llms.txt ）とかをskillsに仕立て直すのが面倒くさいなと思ったのでそれを作った。\nシンプルにパターンマッチ...",
         "category": "開発",
         "rss_category": "",
         "image_url": ""
@@ -125,7 +135,7 @@
         "image_url": ""
       }
     ],
-    "昨日": [
+    "一昨日": [
       {
         "title": "INCA計測データ(MDF)をCSV/MAT変換するツールをオープンソースで公開しました",
         "url": "https://zenn.dev/nishina__n/articles/fe4b808de8c099",
@@ -197,7 +207,7 @@
         "image_url": ""
       },
       {
-        "title": "LLMのグラウンディングツールで名寄せ精度99%を実現した登山道情報サイトの開発",
+        "title": "公的機関に散在する登山道情報を集約するWebサービスを作った",
         "url": "https://zenn.dev/d3c0b/articles/ffba1788c2168e",
         "site": "Zenn(Python)",
         "published": "2026-01-24T05:34:24Z",
@@ -247,88 +257,6 @@
         "image_url": ""
       }
     ],
-    "一昨日": [
-      {
-        "title": "子スレッドのエラーを検知する方法",
-        "url": "https://zenn.dev/aldente/articles/cade3ba2328d5d",
-        "site": "Zenn(Python)",
-        "published": "2026-01-23T13:39:31Z",
-        "description": "概要\nPython の並行処理で子スレッドを実行している際に、子スレッド側でエラーが発生して処理が中断した場合、その異常を親スレッド（メインスレッド）で検知できるようにする方法を調べました。\n\n 実装方法\nPython の concurrent.futures.ThreadPoolExecutor を使用することで実装できます。\nfrom concurrent.futures import Thr...",
-        "category": "開発",
-        "rss_category": "",
-        "image_url": ""
-      },
-      {
-        "title": "Pydanticのmypyプラグインとalias_generatorで型チェックをすり抜ける",
-        "url": "https://zenn.dev/ishiwari/articles/8031a23b76adda",
-        "site": "Zenn(Python)",
-        "published": "2026-01-23T11:00:01Z",
-        "description": "概要\n\nPydanticのmypyプラグインとalias_generatorの組み合わせで、余分なキーや必須フィールド不足がすり抜けていた\nmypyでは両方を同時に検出する設定が存在しない\nプラグインを外して余分なキーを検出するように変更。プラグインのメリットはほぼランタイムでカバーできる\ntyなら両方検出できるが、Stable版はまだ\n\n\n 確認バージョン\n\nPydantic: 2.12.5\nm...",
-        "category": "開発",
-        "rss_category": "",
-        "image_url": ""
-      },
-      {
-        "title": "［AtCoder］ABC-065｜C - Reconciled?",
-        "url": "https://zenn.dev/hyperdb/articles/d658fc992701bd",
-        "site": "Zenn(Python)",
-        "published": "2026-01-23T09:52:24Z",
-        "description": "設問ページ\n\n🔗ABC-065 C - Reconciled?\n\n\n\n 提出結果\nimport math\n\n\ndef getIntMap():\n    return map(int, input().split())\n\n\ndef main():\n    N, M = getIntMap()\n\n    if abs(N - M) &gt; 1:\n        print(0)\n    else:\n...",
-        "category": "開発",
-        "rss_category": "",
-        "image_url": ""
-      },
-      {
-        "title": "［AtCoder］ABC-064｜C - Colorful Leaderboard",
-        "url": "https://zenn.dev/hyperdb/articles/b54f35cf02228a",
-        "site": "Zenn(Python)",
-        "published": "2026-01-23T07:33:00Z",
-        "description": "設問ページ\n\n🔗ABC-064 C - Colorful Leaderboard\n\n\n\n 提出結果\ndef getInt():\n    return int(input())\n\n\ndef getIntList():\n    return list(map(int, input().split()))\n\n\ndef main():\n    _N = getInt()\n    a = getIntLis...",
-        "category": "開発",
-        "rss_category": "",
-        "image_url": ""
-      },
-      {
-        "title": "ContainerアプリからLinuxデスクトップを操りたい！ GJSとD-Busで作る、コンテナ越えの画像ビューアー",
-        "url": "https://zenn.dev/dewins/articles/gjs-project-viewer",
-        "site": "Zenn(Python)",
-        "published": "2026-01-23T07:03:55Z",
-        "description": "きっかけ：コンテナの中からデスクトップGUIにアクセスしたくなった\n普段、開発環境としてDockerやPodmanコンテナを使っている方は多いと思います。\n私も環境が汚れないだけではなく、再現性が高いのでUdemy等の講座だったり、個人開発で重宝しています。\nそんな中、container側でSQL検索した情報の サムネイル画像を表示して確認したい と思った事がきっかけで、私のGJSとの（gjs-d...",
-        "category": "開発",
-        "rss_category": "",
-        "image_url": ""
-      },
-      {
-        "title": "【脱・初心者】Python自動化が「三日坊主」で終わる最大の理由（と、その解決策）",
-        "url": "https://zenn.dev/python_auto_lab/articles/8add683fc56113",
-        "site": "Zenn(Python)",
-        "published": "2026-01-23T03:22:30Z",
-        "description": "「Pythonで自動化ツールを作った！これで楽になるぞ！」\nそう思っていたのに、結局手動作業に戻ってしまった経験はありませんか？\nその原因の9割は、**「実行環境」**にあります。\n\n 🏠 自宅PC運用の「限界」\n例えば、今回作成した「最新ニュース監視Bot」や「決まった時間にInstagramに投稿するBot」。\nこれらを自宅のノートPCで動かすと、どうなるでしょうか？\n\n\nPCを閉じたら止まる...",
-        "category": "開発",
-        "rss_category": "",
-        "image_url": ""
-      },
-      {
-        "title": "v5.3で物理を解く ― なぜロケットは宇宙に行けるのか、教科書が教えない真実【後編】",
-        "url": "https://zenn.dev/dosanko_tousan/articles/aaa98c08fc9a76",
-        "site": "Zenn(Python)",
-        "published": "2026-01-23T02:26:53Z",
-        "description": "title: \"v5.3で物理を解く ― なぜロケットは宇宙に行けるのか、教科書が教えない真実【後編】\"\nemoji: \"🌍\"\ntype: \"tech\"\ntopics: [\"物理学\", \"宇宙工学\", \"軌道力学\", \"Python\", \"科学教育\"]\npublished: false\n\n「宇宙に行く」とは、高く上がることではない。\n「落ち続けているのに、地球が逃げていく」状態を作ることだ。\n\n\n...",
-        "category": "開発",
-        "rss_category": "",
-        "image_url": ""
-      },
-      {
-        "title": "Azureで個人開発したら年間いくらかかった？【2025年実績公開】",
-        "url": "https://zenn.dev/headwaters/articles/49f0aefec0df63",
-        "site": "Zenn(Python)",
-        "published": "2026-01-22T22:31:09Z",
-        "description": "2025年、Azureを使って個人開発アプリを作りました。開発の様子はYouTubeで公開しているのですが、今回はリアルなコストについて赤裸々にお話しします。\n「クラウド使ってみたいけど、請求が怖い...」\n「Azureって結局いくらかかるの？」\nそんな疑問を持つ方に向けて、実際の請求データを元に、何にいくらかかったのか、どう最適化したのかを共有します。\n\n 結論：年間でこれだけかかりました\nまず...",
-        "category": "開発",
-        "rss_category": "",
-        "image_url": ""
-      }
-    ],
     "2026-01": [
       {
         "title": "ラズパイで超簡易HTMLサーバーにする【Raspberry pi】",
@@ -366,6 +294,16 @@
         "site": "Zenn(Python)",
         "published": "2026-01-25T07:28:37Z",
         "description": "0. 何をしたいのか（問題）\n関数（グラフ）の「一番高いところ」を探したい。\n今回の関数はサイン波を2つ足したもの。\ny = f(x) = sin(freq * x) + 0.5 * sin(3 * freq * x)\n\nx：横軸（0 から 2π の範囲）\ny：縦軸（高さ）\nfreq：波の細かさ（周波数）\n\n目的はこれ。\nx* = 「0 ≤ x ≤ 2π の中で y が最大になる x」\ny* = ...",
+        "category": "開発",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "llms.txtをAgent skillsにするCLIを作った",
+        "url": "https://zenn.dev/akuwano/articles/aa723289f3460e",
+        "site": "Zenn(Python)",
+        "published": "2026-01-25T06:22:09Z",
+        "description": "Claude Codeで習作しているのでその中の公開しても大丈夫そうなものはなんとなく出していこう！と言う気持ちで公開してみた。\n\n 何をするもの？\nllms.txtで提供されるドキュメント（たとえばDatabricksなら https://docs.databricks.com/llms.txt ）とかをskillsに仕立て直すのが面倒くさいなと思ったのでそれを作った。\nシンプルにパターンマッチ...",
         "category": "開発",
         "rss_category": "",
         "image_url": ""
@@ -521,7 +459,7 @@
         "image_url": ""
       },
       {
-        "title": "LLMのグラウンディングツールで名寄せ精度99%を実現した登山道情報サイトの開発",
+        "title": "公的機関に散在する登山道情報を集約するWebサービスを作った",
         "url": "https://zenn.dev/d3c0b/articles/ffba1788c2168e",
         "site": "Zenn(Python)",
         "published": "2026-01-24T05:34:24Z",
