@@ -1,9 +1,79 @@
 {
   "site": "Zenn(Python)",
-  "last_updated": "2026-01-31T07:49:36.059812",
-  "total_articles": 2177,
+  "last_updated": "2026-01-31T08:01:27.163646",
+  "total_articles": 2187,
   "articles_by_date": {
     "本日": [
+      {
+        "title": "GitHub Copilot SDK docker handson",
+        "url": "https://zenn.dev/ymd65536/articles/copilot_sdk_docker_handson",
+        "site": "Zenn(Python)",
+        "published": "2026-01-31T07:16:27Z",
+        "description": "はじめに\n前回、GitHub Copilot SDK HandsonでCodepacesを使ってGitHub Copilot SDKを試しましたが、今回はDockerを使って試してみます。\n\n セットアップ\nまずはCLIで動作確認を行います。具体的には以下の手順で進めていきます。\n\nリポジトリのクローン\nDockerイメージのビルドとコンテナの起動\nDocker上でGitHub Copilot C...",
+        "category": "開発",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "🚀 AsyncSession × SQLModel × Pytest 実践ガイド：非同期DBテストの正しい作り方",
+        "url": "https://zenn.dev/oit2003/articles/042ca933723c71",
+        "site": "Zenn(Python)",
+        "published": "2026-01-31T06:13:48Z",
+        "description": "🌐 はじめに\nFastAPIを本格的に使い始めると、async def による非同期エンドポイントと AsyncSession（非同期DBセッション）を組み合わせた構成が主流になります。これは、高い同時処理性能とレスポンス性能を実現できる一方で、設計やテストの難易度を大きく引き上げる要因にもなります。\n特に、非同期DBを使ったAPIのテストでは、同期版では意識しなくてよかった問題が顕在化します。\n...",
+        "category": "開発",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "Streamlit：keyを使ってボタンごとに見た目を変える",
+        "url": "https://zenn.dev/headwaters/articles/087e71f4982597",
+        "site": "Zenn(Python)",
+        "published": "2026-01-31T03:33:28Z",
+        "description": "Streamlitのボタンは、そのままだと全ボタン同じ見た目になりがちです。\nでもst.button(..., key=\"...\")を付けるだけで、ボタンごとにCSSを分けて当てられます。\nポイントは、keyを指定すると画面上の要素にst-key-&lt;key&gt;というクラスが付くことです。\nこれをCSSで狙えばOK。\n\n 青いボタンと赤いボタンを作る\nimport streamlit as...",
+        "category": "開発",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "Python `python -m`でコマンドが動かない？`__main__`エントリーポイントの落とし穴",
+        "url": "https://zenn.dev/y_takashi/articles/66f4b13de6c072",
+        "site": "Zenn(Python)",
+        "published": "2026-01-31T03:26:41Z",
+        "description": "失礼しました！Zenn記事にもCTAを追加します。\n\n\n Python python -mでコマンドが動かない？__main__エントリーポイントの落とし穴\n\n TL;DR\n\n\npython -m module.pathでモジュールを実行しても何も動かない場合、エントリーポイントが欠けている可能性が高い\n\n__main__.pyまたはif __name__ == \"__main__\"のどちらかが必...",
+        "category": "開発",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "ラズパイサーバーでOpen-Meteoからの天気情報を取得する【Raspberry pi】",
+        "url": "https://zenn.dev/cfjp/articles/7ec7910bb662d5",
+        "site": "Zenn(Python)",
+        "published": "2026-01-31T03:00:01Z",
+        "description": "Raspberry pi サーバーで天気情報を取得するプログラムに挑戦\nこの前raspberry piのcpu温度をモニターするだけのプログラムを書きました。そこに1日の天気を表示するプログラムを追記したいと思います。\nまたpython -m http.serverでサーバーを動かしていましたがFastAPIを使ってより簡単に機能を追加できるようにしたいと思います。\n\nFastAPIの実装\ncpu...",
+        "category": "開発",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "DataAirlock: 個人情報を匿名化してLLMに安全に渡すCLIツール",
+        "url": "https://zenn.dev/akira0907/articles/dataairlock-hybrid-pii-detection",
+        "site": "Zenn(Python)",
+        "published": "2026-01-31T02:28:52Z",
+        "description": "はじめに\nClaude CodeやChatGPTなどのクラウドLLMは強力ですが、個人情報を含むデータを直接渡すのは危険です。\nかといって手動で匿名化するのは面倒で、分析結果を元のデータに戻すのも大変...\nそこで作ったのが DataAirlock です。\nhttps://github.com/akira0907/dataairlock\n\n DataAirlockとは\nローカルで個人情報を匿名化し...",
+        "category": "開発",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "Claude CodeのSubAgents × SkillsでPR前にコード品質を守る",
+        "url": "https://zenn.dev/datum_studio/articles/f87b5ab65d2841",
+        "site": "Zenn(Python)",
+        "published": "2026-01-31T00:35:35Z",
+        "description": "はじめに\nこんにちは、データエンジニアの山口歩夢です。\nClaude Codeにコードレビューしてもらうという使い方は便利ですが、少しのやり取りで多くのフィードバックをもらうのは大変かと思います。\n業務で活用していましたが、複雑なディレクトリ構成の大量のコードを一度にレビューしようとすると、どうしても見落としがあったりして、一度に質の高いフィードバックをもらうのが難しいなと感じていました。\nこれら...",
+        "category": "開発",
+        "rss_category": "",
+        "image_url": ""
+      },
       {
         "title": "【Box】間違って削除したファイルを秒速で「一括復元」する技術｜名前重複も自動回避するPython救出ボット（解決編）",
         "url": "https://zenn.dev/kmg/articles/53d956ebfb6069",
@@ -40,6 +110,26 @@
         "site": "Zenn(Python)",
         "published": "2026-01-30T23:05:27Z",
         "description": "この記事ではDocker Swarm で作った環境でMPIを走らせたいと思います。\nMPI では素数を抽出するプログラムを動作させました。\n\n 環境設定と構成\n基本的に環境構築はこの記事を参考にしていただければと思います。\nこの記事で工夫したことは「二つのマスターという」の概念を起用したことです。\n\n 二つのマスター\nクラスタでのMPI にはマスターが二つあります。\n一つ目はクラスターそのものを管...",
+        "category": "開発",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "【CAEエンジニアのAI入門 #5】AIは物理を知らない。だからエンジニアが必要だ",
+        "url": "https://zenn.dev/sanottti/articles/cdbdaf0d5cd4af",
+        "site": "Zenn(Python)",
+        "published": "2026-01-30T23:00:01Z",
+        "description": "はじめに：最終回にして、一番大事な話をする\nCAEエンジニアの皆さん、こんにちは。\nAI入門シリーズ、最終回です。\nここまでで、\n\nAIは爆速の応答曲面\nデータはメッシュ品質\nNNはノードと要素\n学習はソルバー実行\n\nと、CAEの言葉でAIを分解してきました。\n最後に一つ、\nどうしても伝えたいことがあります。\n\nAIは、物理を知らない\n\nでも、\n\nだからこそ、CAEエンジニアが必要\n\nこの回では\n...",
+        "category": "開発",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "【CAEエンジニアのAI入門 #4】学習とは何か？それは“ソルバー実行”である",
+        "url": "https://zenn.dev/sanottti/articles/928c9ec6a756a4",
+        "site": "Zenn(Python)",
+        "published": "2026-01-30T22:00:01Z",
+        "description": "はじめに：ソルバーを回すとき、人はグラフを見る\nCAEエンジニアの皆さん、こんにちは。\nAI入門シリーズ第4回です。\n第3回では、\n\nニューラルネットワーク＝ノードと要素\n活性化関数＝非線形材料特性\n\nという話をしました。\n今回はいよいよ、\n\n「学習（Training）」の正体\n\nに踏み込みます。\n結論から言います。\n\nAIの学習とは、ソルバー実行そのもの\n\nです。\n\n\n 第4回のテーマ\n\n学習と...",
         "category": "開発",
         "rss_category": "",
         "image_url": ""
@@ -177,41 +267,11 @@
         "image_url": ""
       },
       {
-        "title": "人の「感情」を中心としたAI内部構造の概念モデルと技術的アーキテクチャ/ハードウェア補正あり独自最小実装",
-        "url": "https://zenn.dev/cancan007/articles/5ec61175664e8f",
-        "site": "Zenn(Python)",
-        "published": "2026-01-30T04:26:31Z",
-        "description": "はじめに\n本稿は筆者自身が執筆した「社会の動きは人の感情の表現」であることを示した３記事を社会的問題背景の概念モデルとして、最近世間でも注目が浴びているAIの概念モデルを筆者独自の視点も含めて示している。また、技術的なAIモデルのアーキテクチャも示しながら、独自に「人をより理解・守る」ことを念頭においた最小実装を示す。\n\n AIは「人」の頭の中の動きがモデル\n「AIのモデルは人」\nこう聞くと、頭の...",
-        "category": "開発",
-        "rss_category": "",
-        "image_url": ""
-      },
-      {
         "title": "【Python】実行速度が遅くなるアンチパターンと改善レシピ7選",
         "url": "https://zenn.dev/forcia_tech/articles/20260130_python_acceleration_ota",
         "site": "Zenn(Python)",
         "published": "2026-01-30T04:00:01Z",
         "description": "前書き\nこんにちは、フォルシアでエンジニアをしている太田と申します。\n私は主にPythonを利用した開発を行っているのですが、開発内容の関係上、Pythonのコードを極力高速で実行したい瞬間があります。\nそこで今回は、Pythonが遅くなってしまうようなアンチパターンと低速化の回避が可能なコードを紹介し、定量的に速度の比較結果も示したいと思います。\n今回検証した環境と検証の際の条件を下記に示します...",
-        "category": "開発",
-        "rss_category": "",
-        "image_url": ""
-      },
-      {
-        "title": "【CAEエンジニアのAI入門 #3】ニューラルネットワークは「ノードと要素」で理解せよ",
-        "url": "https://zenn.dev/sanottti/articles/07abece9ac4486",
-        "site": "Zenn(Python)",
-        "published": "2026-01-30T03:00:02Z",
-        "description": "はじめに：黒魔術に見えるAIを、力学に引きずり下ろす\nCAEエンジニアの皆さん、こんにちは。\nAI入門シリーズ第3回です。\n前回までで、\n\nサロゲートモデル＝爆速の応答曲面\nデータ準備＝AIのメッシュ品質\n\nという話をしました。\n今回はいよいよ、\n**AIの中身（ニューラルネットワーク）**に入ります。\n安心してください。\nこれは黒魔術でも脳科学でもありません。\n\nただの行列計算です。\n\nしかも、...",
-        "category": "開発",
-        "rss_category": "",
-        "image_url": ""
-      },
-      {
-        "title": "【PyTorch×宇宙】深層学習で挑む銀河画像分類入門",
-        "url": "https://zenn.dev/yonesuryo/books/cb15dd8e7feb96",
-        "site": "Zenn(Python)",
-        "published": "2026-01-30T02:30:36Z",
-        "description": "未経験から「宇宙研究」の最前線へ。\n本物の観測データ × 最新AI技術で、あなただけの銀河分類器を作り上げよう。",
         "category": "開発",
         "rss_category": "",
         "image_url": ""
@@ -232,16 +292,6 @@
         "site": "Zenn(Python)",
         "published": "2026-01-29T22:54:07Z",
         "description": "はじめに\nこれまでの記事では、\n\n設計をコードとして記述できること\nFreeCAD を使えば実際に形を生成できること\n\nを見てきました。\nただ、多くの現場設計者は\nここでこう思うはずです。\n\n「でも、実務は Part Design だよね？」\n\nこの記事では、その疑問に正面から答えます。\nPart Design を捨てずに、\n設計条件だけをコード側に逃がす。\nこれが、現場で壊れない\nコード設計の現...",
-        "category": "開発",
-        "rss_category": "",
-        "image_url": ""
-      },
-      {
-        "title": "【CAEエンジニアのAI入門 #2】データ準備は“メッシュ品質”と同じくらい重要",
-        "url": "https://zenn.dev/sanottti/articles/41479fb5c44355",
-        "site": "Zenn(Python)",
-        "published": "2026-01-29T22:05:01Z",
-        "description": "はじめに：AIがバカなのは、だいたい人間のせい\nCAEエンジニアの皆さん、こんにちは。\nAI入門シリーズ第2回です。\n第1回では、\nサロゲートモデル＝爆速の応答曲面\nという話をしました。\n今回は、その応答曲面を壊滅的にダメにする原因 No.1の話です。\n結論から言います。\n\nAIがバカな予測をするとき、9割は「データ」が悪い\n\nこれはCAEで言えば、\n\nメッシュが荒い\n単位系が壊れている\n境界条件...",
         "category": "開発",
         "rss_category": "",
         "image_url": ""
@@ -521,6 +571,76 @@
     ],
     "2026-01": [
       {
+        "title": "GitHub Copilot SDK docker handson",
+        "url": "https://zenn.dev/ymd65536/articles/copilot_sdk_docker_handson",
+        "site": "Zenn(Python)",
+        "published": "2026-01-31T07:16:27Z",
+        "description": "はじめに\n前回、GitHub Copilot SDK HandsonでCodepacesを使ってGitHub Copilot SDKを試しましたが、今回はDockerを使って試してみます。\n\n セットアップ\nまずはCLIで動作確認を行います。具体的には以下の手順で進めていきます。\n\nリポジトリのクローン\nDockerイメージのビルドとコンテナの起動\nDocker上でGitHub Copilot C...",
+        "category": "開発",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "🚀 AsyncSession × SQLModel × Pytest 実践ガイド：非同期DBテストの正しい作り方",
+        "url": "https://zenn.dev/oit2003/articles/042ca933723c71",
+        "site": "Zenn(Python)",
+        "published": "2026-01-31T06:13:48Z",
+        "description": "🌐 はじめに\nFastAPIを本格的に使い始めると、async def による非同期エンドポイントと AsyncSession（非同期DBセッション）を組み合わせた構成が主流になります。これは、高い同時処理性能とレスポンス性能を実現できる一方で、設計やテストの難易度を大きく引き上げる要因にもなります。\n特に、非同期DBを使ったAPIのテストでは、同期版では意識しなくてよかった問題が顕在化します。\n...",
+        "category": "開発",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "Streamlit：keyを使ってボタンごとに見た目を変える",
+        "url": "https://zenn.dev/headwaters/articles/087e71f4982597",
+        "site": "Zenn(Python)",
+        "published": "2026-01-31T03:33:28Z",
+        "description": "Streamlitのボタンは、そのままだと全ボタン同じ見た目になりがちです。\nでもst.button(..., key=\"...\")を付けるだけで、ボタンごとにCSSを分けて当てられます。\nポイントは、keyを指定すると画面上の要素にst-key-&lt;key&gt;というクラスが付くことです。\nこれをCSSで狙えばOK。\n\n 青いボタンと赤いボタンを作る\nimport streamlit as...",
+        "category": "開発",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "Python `python -m`でコマンドが動かない？`__main__`エントリーポイントの落とし穴",
+        "url": "https://zenn.dev/y_takashi/articles/66f4b13de6c072",
+        "site": "Zenn(Python)",
+        "published": "2026-01-31T03:26:41Z",
+        "description": "失礼しました！Zenn記事にもCTAを追加します。\n\n\n Python python -mでコマンドが動かない？__main__エントリーポイントの落とし穴\n\n TL;DR\n\n\npython -m module.pathでモジュールを実行しても何も動かない場合、エントリーポイントが欠けている可能性が高い\n\n__main__.pyまたはif __name__ == \"__main__\"のどちらかが必...",
+        "category": "開発",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "ラズパイサーバーでOpen-Meteoからの天気情報を取得する【Raspberry pi】",
+        "url": "https://zenn.dev/cfjp/articles/7ec7910bb662d5",
+        "site": "Zenn(Python)",
+        "published": "2026-01-31T03:00:01Z",
+        "description": "Raspberry pi サーバーで天気情報を取得するプログラムに挑戦\nこの前raspberry piのcpu温度をモニターするだけのプログラムを書きました。そこに1日の天気を表示するプログラムを追記したいと思います。\nまたpython -m http.serverでサーバーを動かしていましたがFastAPIを使ってより簡単に機能を追加できるようにしたいと思います。\n\nFastAPIの実装\ncpu...",
+        "category": "開発",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "DataAirlock: 個人情報を匿名化してLLMに安全に渡すCLIツール",
+        "url": "https://zenn.dev/akira0907/articles/dataairlock-hybrid-pii-detection",
+        "site": "Zenn(Python)",
+        "published": "2026-01-31T02:28:52Z",
+        "description": "はじめに\nClaude CodeやChatGPTなどのクラウドLLMは強力ですが、個人情報を含むデータを直接渡すのは危険です。\nかといって手動で匿名化するのは面倒で、分析結果を元のデータに戻すのも大変...\nそこで作ったのが DataAirlock です。\nhttps://github.com/akira0907/dataairlock\n\n DataAirlockとは\nローカルで個人情報を匿名化し...",
+        "category": "開発",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "Claude CodeのSubAgents × SkillsでPR前にコード品質を守る",
+        "url": "https://zenn.dev/datum_studio/articles/f87b5ab65d2841",
+        "site": "Zenn(Python)",
+        "published": "2026-01-31T00:35:35Z",
+        "description": "はじめに\nこんにちは、データエンジニアの山口歩夢です。\nClaude Codeにコードレビューしてもらうという使い方は便利ですが、少しのやり取りで多くのフィードバックをもらうのは大変かと思います。\n業務で活用していましたが、複雑なディレクトリ構成の大量のコードを一度にレビューしようとすると、どうしても見落としがあったりして、一度に質の高いフィードバックをもらうのが難しいなと感じていました。\nこれら...",
+        "category": "開発",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
         "title": "【Box】間違って削除したファイルを秒速で「一括復元」する技術｜名前重複も自動回避するPython救出ボット（解決編）",
         "url": "https://zenn.dev/kmg/articles/53d956ebfb6069",
         "site": "Zenn(Python)",
@@ -556,6 +676,26 @@
         "site": "Zenn(Python)",
         "published": "2026-01-30T23:05:27Z",
         "description": "この記事ではDocker Swarm で作った環境でMPIを走らせたいと思います。\nMPI では素数を抽出するプログラムを動作させました。\n\n 環境設定と構成\n基本的に環境構築はこの記事を参考にしていただければと思います。\nこの記事で工夫したことは「二つのマスターという」の概念を起用したことです。\n\n 二つのマスター\nクラスタでのMPI にはマスターが二つあります。\n一つ目はクラスターそのものを管...",
+        "category": "開発",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "【CAEエンジニアのAI入門 #5】AIは物理を知らない。だからエンジニアが必要だ",
+        "url": "https://zenn.dev/sanottti/articles/cdbdaf0d5cd4af",
+        "site": "Zenn(Python)",
+        "published": "2026-01-30T23:00:01Z",
+        "description": "はじめに：最終回にして、一番大事な話をする\nCAEエンジニアの皆さん、こんにちは。\nAI入門シリーズ、最終回です。\nここまでで、\n\nAIは爆速の応答曲面\nデータはメッシュ品質\nNNはノードと要素\n学習はソルバー実行\n\nと、CAEの言葉でAIを分解してきました。\n最後に一つ、\nどうしても伝えたいことがあります。\n\nAIは、物理を知らない\n\nでも、\n\nだからこそ、CAEエンジニアが必要\n\nこの回では\n...",
+        "category": "開発",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "【CAEエンジニアのAI入門 #4】学習とは何か？それは“ソルバー実行”である",
+        "url": "https://zenn.dev/sanottti/articles/928c9ec6a756a4",
+        "site": "Zenn(Python)",
+        "published": "2026-01-30T22:00:01Z",
+        "description": "はじめに：ソルバーを回すとき、人はグラフを見る\nCAEエンジニアの皆さん、こんにちは。\nAI入門シリーズ第4回です。\n第3回では、\n\nニューラルネットワーク＝ノードと要素\n活性化関数＝非線形材料特性\n\nという話をしました。\n今回はいよいよ、\n\n「学習（Training）」の正体\n\nに踏み込みます。\n結論から言います。\n\nAIの学習とは、ソルバー実行そのもの\n\nです。\n\n\n 第4回のテーマ\n\n学習と...",
         "category": "開発",
         "rss_category": "",
         "image_url": ""
@@ -691,41 +831,11 @@
         "image_url": ""
       },
       {
-        "title": "人の「感情」を中心としたAI内部構造の概念モデルと技術的アーキテクチャ/ハードウェア補正あり独自最小実装",
-        "url": "https://zenn.dev/cancan007/articles/5ec61175664e8f",
-        "site": "Zenn(Python)",
-        "published": "2026-01-30T04:26:31Z",
-        "description": "はじめに\n本稿は筆者自身が執筆した「社会の動きは人の感情の表現」であることを示した３記事を社会的問題背景の概念モデルとして、最近世間でも注目が浴びているAIの概念モデルを筆者独自の視点も含めて示している。また、技術的なAIモデルのアーキテクチャも示しながら、独自に「人をより理解・守る」ことを念頭においた最小実装を示す。\n\n AIは「人」の頭の中の動きがモデル\n「AIのモデルは人」\nこう聞くと、頭の...",
-        "category": "開発",
-        "rss_category": "",
-        "image_url": ""
-      },
-      {
         "title": "【Python】実行速度が遅くなるアンチパターンと改善レシピ7選",
         "url": "https://zenn.dev/forcia_tech/articles/20260130_python_acceleration_ota",
         "site": "Zenn(Python)",
         "published": "2026-01-30T04:00:01Z",
         "description": "前書き\nこんにちは、フォルシアでエンジニアをしている太田と申します。\n私は主にPythonを利用した開発を行っているのですが、開発内容の関係上、Pythonのコードを極力高速で実行したい瞬間があります。\nそこで今回は、Pythonが遅くなってしまうようなアンチパターンと低速化の回避が可能なコードを紹介し、定量的に速度の比較結果も示したいと思います。\n今回検証した環境と検証の際の条件を下記に示します...",
-        "category": "開発",
-        "rss_category": "",
-        "image_url": ""
-      },
-      {
-        "title": "【CAEエンジニアのAI入門 #3】ニューラルネットワークは「ノードと要素」で理解せよ",
-        "url": "https://zenn.dev/sanottti/articles/07abece9ac4486",
-        "site": "Zenn(Python)",
-        "published": "2026-01-30T03:00:02Z",
-        "description": "はじめに：黒魔術に見えるAIを、力学に引きずり下ろす\nCAEエンジニアの皆さん、こんにちは。\nAI入門シリーズ第3回です。\n前回までで、\n\nサロゲートモデル＝爆速の応答曲面\nデータ準備＝AIのメッシュ品質\n\nという話をしました。\n今回はいよいよ、\n**AIの中身（ニューラルネットワーク）**に入ります。\n安心してください。\nこれは黒魔術でも脳科学でもありません。\n\nただの行列計算です。\n\nしかも、...",
-        "category": "開発",
-        "rss_category": "",
-        "image_url": ""
-      },
-      {
-        "title": "【PyTorch×宇宙】深層学習で挑む銀河画像分類入門",
-        "url": "https://zenn.dev/yonesuryo/books/cb15dd8e7feb96",
-        "site": "Zenn(Python)",
-        "published": "2026-01-30T02:30:36Z",
-        "description": "未経験から「宇宙研究」の最前線へ。\n本物の観測データ × 最新AI技術で、あなただけの銀河分類器を作り上げよう。",
         "category": "開発",
         "rss_category": "",
         "image_url": ""
@@ -746,16 +856,6 @@
         "site": "Zenn(Python)",
         "published": "2026-01-29T22:54:07Z",
         "description": "はじめに\nこれまでの記事では、\n\n設計をコードとして記述できること\nFreeCAD を使えば実際に形を生成できること\n\nを見てきました。\nただ、多くの現場設計者は\nここでこう思うはずです。\n\n「でも、実務は Part Design だよね？」\n\nこの記事では、その疑問に正面から答えます。\nPart Design を捨てずに、\n設計条件だけをコード側に逃がす。\nこれが、現場で壊れない\nコード設計の現...",
-        "category": "開発",
-        "rss_category": "",
-        "image_url": ""
-      },
-      {
-        "title": "【CAEエンジニアのAI入門 #2】データ準備は“メッシュ品質”と同じくらい重要",
-        "url": "https://zenn.dev/sanottti/articles/41479fb5c44355",
-        "site": "Zenn(Python)",
-        "published": "2026-01-29T22:05:01Z",
-        "description": "はじめに：AIがバカなのは、だいたい人間のせい\nCAEエンジニアの皆さん、こんにちは。\nAI入門シリーズ第2回です。\n第1回では、\nサロゲートモデル＝爆速の応答曲面\nという話をしました。\n今回は、その応答曲面を壊滅的にダメにする原因 No.1の話です。\n結論から言います。\n\nAIがバカな予測をするとき、9割は「データ」が悪い\n\nこれはCAEで言えば、\n\nメッシュが荒い\n単位系が壊れている\n境界条件...",
         "category": "開発",
         "rss_category": "",
         "image_url": ""
