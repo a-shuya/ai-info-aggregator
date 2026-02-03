@@ -1,15 +1,65 @@
 {
   "site": "Zenn(Python)",
-  "last_updated": "2026-02-03T12:25:26.012190",
-  "total_articles": 2219,
+  "last_updated": "2026-02-03T13:43:41.316970",
+  "total_articles": 2229,
   "articles_by_date": {
     "本日": [
+      {
+        "title": "FastAPIで重いファイル生成を安全にダウンロードさせる",
+        "url": "https://zenn.dev/okapii/articles/f092ecbdf9a564",
+        "site": "Zenn(Python)",
+        "published": "2026-02-03T12:48:04Z",
+        "description": "FastAPIでCSVなどのファイルを生成してダウンロードさせるとき、実装次第でタイムアウトやメモリ枯渇が起きる。\nStreamingResponseを使っていても実装次第で普通にタイムアウトする。\n\n レスポンス開始が「CSV生成後」になる実装\nfrom fastapi import FastAPI\nfrom fastapi.responses import StreamingResponse\n...",
+        "category": "開発",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "レシートをローカルLLMでマネーフォワードCSVまで作る前に知っておきたい4つの失敗",
+        "url": "https://zenn.dev/ukiajp/articles/receipt-local-llm-4-failures",
+        "site": "Zenn(Python)",
+        "published": "2026-02-03T11:48:33Z",
+        "description": "はじめに\nレシート画像をローカルLLMで読み取り、マネーフォワード（会計ソフト）のインポート用CSVまで自動生成するシステムを構築しました。\nこの記事では、Phase 1（OCR + テキストLLM方式）で実際にハマった4つの失敗を紹介します。同じことを試そうとしている方の参考になれば幸いです。\n\n\n この記事で伝えること\n\nレシート画像 → ローカルLLM（OCR + テキストLLM）→ マネー...",
+        "category": "開発",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "5-④[AI][Kaggle][python]Kaggle入門(データの可視化 4.散布図)",
+        "url": "https://zenn.dev/rg687076/articles/822a8f3fcb0d6d",
+        "site": "Zenn(Python)",
+        "published": "2026-02-03T11:42:43Z",
+        "description": "Kaggle入門5(データの可視化 1.Hello, Seaborn)\nKaggle入門5(データの可視化 2.折れ線グラフ)\nKaggle入門5(データの可視化 3.棒グラフとヒートマップ)\nKaggle入門5(データの可視化 4.散布図)\nKaggle入門5(データの可視化 5.ヒストグラムと密度プロット)\nKaggle入門5(データの可視化 6.xxx)\nKaggle入門5(データの可視化 ...",
+        "category": "開発",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "JetBrains Remote Development を使った快適なリモート開発入門（SSH接続編）",
+        "url": "https://zenn.dev/nattosystem_jp/articles/52b1fdaae32bb0",
+        "site": "Zenn(Python)",
+        "published": "2026-02-03T08:27:53Z",
+        "description": "はじめに\nこんにちは、JetBrains公式代理店NATTOSYSTEMのねばねばです。\n毎日ナットウを食べようという社訓はとくにないです。\nさて、本記事では、JetBrainsのリモート開発機能をご紹介いたします。\nリモート開発というと「遅い」「設定が大変」「ローカルとなにかが違う」といった印象がありますが、JetBrains Remote Development を使えば、そのイメージは大きく...",
+        "category": "開発",
+        "rss_category": "",
+        "image_url": ""
+      },
       {
         "title": "量子化誤差（ノイズ）を「微分器」に入れると何が起きるか― ΔΣ ADC を差分フィルタとして理解する ―",
         "url": "https://zenn.dev/qwerewq/articles/9bbeb45ce0c40e",
         "site": "Zenn(Python)",
         "published": "2026-02-03T07:56:13Z",
         "description": "はじめに\nデルタシグマADC（ΔΣ ADC）を説明するとき、「量子化誤差というノイズを微分器に入れて、ノイズを高周波側へ追い出す」という言い方が出てくる。ここでの“微分器”は、連続時間の d/dt ではなく、離散時間の一次差分 H(z)=1−z^-1 を指す。したがって「誤差を連続微分する」と解釈すると破綻する。正しい理解は「量子化誤差が差分形のフィルタ（NTF）を通って現れる等価モデルになる」と...",
+        "category": "開発",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "AIエンジニアがLangChainを推奨しない理由",
+        "url": "https://zenn.dev/genshi_ai/articles/166cf652723496",
+        "site": "Zenn(Python)",
+        "published": "2026-02-03T06:48:17Z",
+        "description": "はじめに\n先日、あるスタートアップがシステムを作り直すという文脈の中で「LangChain を採用」という記述があり、X で疑問を呈したところ「LangChain v1 で大幅に改善された」「批判は古い印象に基づいている」「根拠のない批判だ」という反論がありました。\nでは実際にソースコードを読んで確認してみよう、というのが本記事の趣旨です。\n私自身、2年前は LangChain をメインで使ってい...",
         "category": "開発",
         "rss_category": "",
         "image_url": ""
@@ -60,6 +110,16 @@
         "site": "Zenn(Python)",
         "published": "2026-02-03T02:00:01Z",
         "description": "はじめに\nClaude Code を日常的に使っていると、ある種のもどかしさを感じることがあります。\n\n「この前も同じこと説明したのに」\n「自分の好みのコーディングスタイルを毎回伝えるのが面倒」\n「要件を整理したいけど、何から聞けばいいかわからない」\n\nこれらの課題に対して、機械学習フレームワークや外部サービスに頼らず、情報理論と認知科学の基礎的なアルゴリズムだけで解決できないか。そう考えて作った...",
+        "category": "開発",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "医療データをLLMで安全に活用する：仮名化パイプライン「DataAirlock」の実践",
+        "url": "https://zenn.dev/akira0907/articles/dataairlock-medical-llm-workflow",
+        "site": "Zenn(Python)",
+        "published": "2026-02-03T00:45:42Z",
+        "description": "はじめに：LLMを使いたいのに、使えない\nClaude CodeやChatGPTが業務に有用なのは、もはや説明不要です。\n読影レポートの分析、カルテ記載のパターン抽出、診療データの傾向分析。\n「これ、LLMに投げたら一瞬なのに」と思う場面は日常的にあります。\nしかし医療現場では、ほぼ確実にここで止まります。\n患者データが含まれているから、外部サービスに送れない\nAPIが学習に使わないと言っても関係...",
         "category": "開発",
         "rss_category": "",
         "image_url": ""
@@ -212,16 +272,6 @@
         "site": "Zenn(Python)",
         "published": "2026-02-02T05:57:47Z",
         "description": "はじめに\nオブジェクト指向を学んでいると、\n「ポリモーフィズム（多態性）」 という言葉が出てきます。\n名前だけ見ると難しく感じるかもしれませんが、\n考え方自体はそこまで複雑ではありません。\n本記事では、\n\nポリモーフィズムとは何か\nなぜ必要なのか\nPythonでの具体例\nPythonならではのダックタイピング\n\nを解説します。\n\n ポリモーフィズムとは？\nポリモーフィズム（Polymorphism...",
-        "category": "開発",
-        "rss_category": "",
-        "image_url": ""
-      },
-      {
-        "title": "フレームワークなしでAIエージェントを作ってみた",
-        "url": "https://zenn.dev/fez_tech/articles/a5b7dc67defcd3",
-        "site": "Zenn(Python)",
-        "published": "2026-02-02T04:06:22Z",
-        "description": "こんにちは、株式会社フェズのデータテクノロジー開発部でエンジニアをしています石原です。\n普段は Urumo BI という、生成AIを活用した購買データ分析ソリューションの開発に携わっています。\n本記事は、AI×データ領域でより効率的な開発手法を学ぶ一環として、AIエージェント開発手法を比較検証していく連載の第1回です。\n\n はじめに\n最近「AIエージェント」という言葉をよく見かけるようになりました...",
         "category": "開発",
         "rss_category": "",
         "image_url": ""
@@ -441,11 +491,61 @@
     ],
     "2026-02": [
       {
+        "title": "FastAPIで重いファイル生成を安全にダウンロードさせる",
+        "url": "https://zenn.dev/okapii/articles/f092ecbdf9a564",
+        "site": "Zenn(Python)",
+        "published": "2026-02-03T12:48:04Z",
+        "description": "FastAPIでCSVなどのファイルを生成してダウンロードさせるとき、実装次第でタイムアウトやメモリ枯渇が起きる。\nStreamingResponseを使っていても実装次第で普通にタイムアウトする。\n\n レスポンス開始が「CSV生成後」になる実装\nfrom fastapi import FastAPI\nfrom fastapi.responses import StreamingResponse\n...",
+        "category": "開発",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "レシートをローカルLLMでマネーフォワードCSVまで作る前に知っておきたい4つの失敗",
+        "url": "https://zenn.dev/ukiajp/articles/receipt-local-llm-4-failures",
+        "site": "Zenn(Python)",
+        "published": "2026-02-03T11:48:33Z",
+        "description": "はじめに\nレシート画像をローカルLLMで読み取り、マネーフォワード（会計ソフト）のインポート用CSVまで自動生成するシステムを構築しました。\nこの記事では、Phase 1（OCR + テキストLLM方式）で実際にハマった4つの失敗を紹介します。同じことを試そうとしている方の参考になれば幸いです。\n\n\n この記事で伝えること\n\nレシート画像 → ローカルLLM（OCR + テキストLLM）→ マネー...",
+        "category": "開発",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "5-④[AI][Kaggle][python]Kaggle入門(データの可視化 4.散布図)",
+        "url": "https://zenn.dev/rg687076/articles/822a8f3fcb0d6d",
+        "site": "Zenn(Python)",
+        "published": "2026-02-03T11:42:43Z",
+        "description": "Kaggle入門5(データの可視化 1.Hello, Seaborn)\nKaggle入門5(データの可視化 2.折れ線グラフ)\nKaggle入門5(データの可視化 3.棒グラフとヒートマップ)\nKaggle入門5(データの可視化 4.散布図)\nKaggle入門5(データの可視化 5.ヒストグラムと密度プロット)\nKaggle入門5(データの可視化 6.xxx)\nKaggle入門5(データの可視化 ...",
+        "category": "開発",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "JetBrains Remote Development を使った快適なリモート開発入門（SSH接続編）",
+        "url": "https://zenn.dev/nattosystem_jp/articles/52b1fdaae32bb0",
+        "site": "Zenn(Python)",
+        "published": "2026-02-03T08:27:53Z",
+        "description": "はじめに\nこんにちは、JetBrains公式代理店NATTOSYSTEMのねばねばです。\n毎日ナットウを食べようという社訓はとくにないです。\nさて、本記事では、JetBrainsのリモート開発機能をご紹介いたします。\nリモート開発というと「遅い」「設定が大変」「ローカルとなにかが違う」といった印象がありますが、JetBrains Remote Development を使えば、そのイメージは大きく...",
+        "category": "開発",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
         "title": "量子化誤差（ノイズ）を「微分器」に入れると何が起きるか― ΔΣ ADC を差分フィルタとして理解する ―",
         "url": "https://zenn.dev/qwerewq/articles/9bbeb45ce0c40e",
         "site": "Zenn(Python)",
         "published": "2026-02-03T07:56:13Z",
         "description": "はじめに\nデルタシグマADC（ΔΣ ADC）を説明するとき、「量子化誤差というノイズを微分器に入れて、ノイズを高周波側へ追い出す」という言い方が出てくる。ここでの“微分器”は、連続時間の d/dt ではなく、離散時間の一次差分 H(z)=1−z^-1 を指す。したがって「誤差を連続微分する」と解釈すると破綻する。正しい理解は「量子化誤差が差分形のフィルタ（NTF）を通って現れる等価モデルになる」と...",
+        "category": "開発",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "AIエンジニアがLangChainを推奨しない理由",
+        "url": "https://zenn.dev/genshi_ai/articles/166cf652723496",
+        "site": "Zenn(Python)",
+        "published": "2026-02-03T06:48:17Z",
+        "description": "はじめに\n先日、あるスタートアップがシステムを作り直すという文脈の中で「LangChain を採用」という記述があり、X で疑問を呈したところ「LangChain v1 で大幅に改善された」「批判は古い印象に基づいている」「根拠のない批判だ」という反論がありました。\nでは実際にソースコードを読んで確認してみよう、というのが本記事の趣旨です。\n私自身、2年前は LangChain をメインで使ってい...",
         "category": "開発",
         "rss_category": "",
         "image_url": ""
@@ -496,6 +596,16 @@
         "site": "Zenn(Python)",
         "published": "2026-02-03T02:00:01Z",
         "description": "はじめに\nClaude Code を日常的に使っていると、ある種のもどかしさを感じることがあります。\n\n「この前も同じこと説明したのに」\n「自分の好みのコーディングスタイルを毎回伝えるのが面倒」\n「要件を整理したいけど、何から聞けばいいかわからない」\n\nこれらの課題に対して、機械学習フレームワークや外部サービスに頼らず、情報理論と認知科学の基礎的なアルゴリズムだけで解決できないか。そう考えて作った...",
+        "category": "開発",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "医療データをLLMで安全に活用する：仮名化パイプライン「DataAirlock」の実践",
+        "url": "https://zenn.dev/akira0907/articles/dataairlock-medical-llm-workflow",
+        "site": "Zenn(Python)",
+        "published": "2026-02-03T00:45:42Z",
+        "description": "はじめに：LLMを使いたいのに、使えない\nClaude CodeやChatGPTが業務に有用なのは、もはや説明不要です。\n読影レポートの分析、カルテ記載のパターン抽出、診療データの傾向分析。\n「これ、LLMに投げたら一瞬なのに」と思う場面は日常的にあります。\nしかし医療現場では、ほぼ確実にここで止まります。\n患者データが含まれているから、外部サービスに送れない\nAPIが学習に使わないと言っても関係...",
         "category": "開発",
         "rss_category": "",
         "image_url": ""
@@ -646,16 +756,6 @@
         "site": "Zenn(Python)",
         "published": "2026-02-02T05:57:47Z",
         "description": "はじめに\nオブジェクト指向を学んでいると、\n「ポリモーフィズム（多態性）」 という言葉が出てきます。\n名前だけ見ると難しく感じるかもしれませんが、\n考え方自体はそこまで複雑ではありません。\n本記事では、\n\nポリモーフィズムとは何か\nなぜ必要なのか\nPythonでの具体例\nPythonならではのダックタイピング\n\nを解説します。\n\n ポリモーフィズムとは？\nポリモーフィズム（Polymorphism...",
-        "category": "開発",
-        "rss_category": "",
-        "image_url": ""
-      },
-      {
-        "title": "フレームワークなしでAIエージェントを作ってみた",
-        "url": "https://zenn.dev/fez_tech/articles/a5b7dc67defcd3",
-        "site": "Zenn(Python)",
-        "published": "2026-02-02T04:06:22Z",
-        "description": "こんにちは、株式会社フェズのデータテクノロジー開発部でエンジニアをしています石原です。\n普段は Urumo BI という、生成AIを活用した購買データ分析ソリューションの開発に携わっています。\n本記事は、AI×データ領域でより効率的な開発手法を学ぶ一環として、AIエージェント開発手法を比較検証していく連載の第1回です。\n\n はじめに\n最近「AIエージェント」という言葉をよく見かけるようになりました...",
         "category": "開発",
         "rss_category": "",
         "image_url": ""
