@@ -1,9 +1,139 @@
 {
   "site": "Zenn(Python)",
-  "last_updated": "2026-02-04T10:52:34.076893",
-  "total_articles": 2219,
+  "last_updated": "2026-02-04T11:37:09.331524",
+  "total_articles": 2235,
   "articles_by_date": {
     "本日": [
+      {
+        "title": "【実装編】3D CADデータをAIにぶち込め！Pythonで始める無料サロゲートモデル構築",
+        "url": "https://zenn.dev/sanottti/articles/20a9a3b80009ce",
+        "site": "Zenn(Python)",
+        "published": "2026-02-04T11:10:37Z",
+        "description": "はじめに：3D形状を「数値」として扱う魔法\n前回、3D CADデータ（STL/STEP）を使ったサロゲートモデルの考え方について触れました。\n今回は**「じゃあ、具体的にどう書くの？」**という疑問に答えるべく、最小構成の実装コードを公開します。\n高価なソフトウェアは一切不要。numpy-stl と PyTorch さえあれば、あなたのPCで3D形状を理解するAIが動き出します。\n\n\n 1. 3D...",
+        "category": "開発",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "VPN未接続の影響でuv syncが失敗した",
+        "url": "https://zenn.dev/shuto2828/articles/081835782110f2",
+        "site": "Zenn(Python)",
+        "published": "2026-02-04T09:52:29Z",
+        "description": "RAGのPoCで取り急ぎuvでパッケージ管理しようとしたら、いきなりエラーになったので忘備録を。\n\n パッケージ管理ツール「uv」について\nこちらの記事がわかりやすいかと思います。\n\npip installよりuv addで依存関係管理するするのが主流になってそうです。\n\n 詰まったポイント\n\n 1. uv と VPN 問題\n\n エラー内容\n~/Project$ uv sync\nUsing CPy...",
+        "category": "開発",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "HTML解析はもう古い？AI時代の最新データ抽出ツール比較",
+        "url": "https://zenn.dev/yuuto127/articles/best-web-scraping-apis-2026",
+        "site": "Zenn(Python)",
+        "published": "2026-02-04T08:22:58Z",
+        "description": "「またサイトの構造が変わってる…」\n月曜の朝、その一言と共に絶望した経験はありませんか？\n先週書いたばかりのPythonスクリプトが動かない。Cloudflareの迷宮に迷い込み、IPBANとの終わりのない戦いに明け暮れる日々…。\n昔の私は、そんなウェブスクレイピングが大嫌いでした。\nでも、2026年の今、景色は完全に変わりました。もはや単に「HTMLをGETする」時代ではありません。AIによる指...",
+        "category": "開発",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "Locust 2.43でOpenTelemetry統合による「可観測性重視」の負荷テスト",
+        "url": "https://zenn.dev/1stscratch/articles/d9d0f6ba3523fa",
+        "site": "Zenn(Python)",
+        "published": "2026-02-04T07:00:01Z",
+        "description": "はじめに\nLocustはPythonで書けるオープンソースの負荷テストツールです。\nGUIや設定ファイル中心のツールとは違い、普通のPythonコードでテストシナリオを自由に記述できます。\n条件分岐やループもそのまま書けるので、複雑なユーザー行動を簡単に再現可能です。\n最新版（2.43）の最大の進化はOpenTelemetry（OTel）統合です。\nこれにより、従来の「RPSや応答時間を見るだけ」...",
+        "category": "開発",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "文字列を綺麗にするためのライブラリ",
+        "url": "https://zenn.dev/shogithub/articles/d3d964f2b3f97f",
+        "site": "Zenn(Python)",
+        "published": "2026-02-04T06:30:37Z",
+        "description": "目的\n本ドキュメントは、Excel由来・日本語混在・PCスペック/商品名データを対象に、正規化・名寄せ・表記統一をPythonで実装するための主要ライブラリと実務パターンをまとめたものです。NotebookLMに投入し、**具体的なコード生成（再現性・監査性重視）**を促す用途を想定しています。\n\n\n 前提と設計原則\n\nゴールデンマスター：**「正式発表版」**を正とする\nAIはルール抽出役、実装...",
+        "category": "開発",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "【Python】Requestsで「Errno 11001 getaddrinfo failed」が出た時の解決策",
+        "url": "https://zenn.dev/kmg/articles/ea4aad86953833",
+        "site": "Zenn(Python)",
+        "published": "2026-02-04T04:51:46Z",
+        "description": "1. 開発者を絶望させる「真っ赤なエラー」\nPythonでAPI連携（RequestsやSDK）を使っていると、昨日まで動いていたコードがいきなり動かなくなり、以下のような長いエラーを吐き出すことがあります。\nrequests.exceptions.ConnectionError: HTTPSConnectionPool(host='api.box.com', port=443): \nMax re...",
+        "category": "開発",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "【Box API】「404 Not Found」の正体｜ブラウザで見えるファイルがAPIで見つからない時の解決策",
+        "url": "https://zenn.dev/kmg/articles/e5380b8e8f9aa3",
+        "site": "Zenn(Python)",
+        "published": "2026-02-04T04:30:56Z",
+        "description": "1. 開発者を襲う「謎の404エラー」\nBox API（特にPython SDK）を使って自動化を進めていると、必ずと言っていいほどこの壁にぶつかります。\n「ブラウザで確認すると、ファイルは確実にそこにある。IDも合っている。なのにAPIを実行すると 404 Not Found が返ってくる」\nStatus: 404\nMessage: Not Found\nCode: not_found\n\n一方で、...",
+        "category": "開発",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "OpenAI Agent SDK を使ってみる：LLMと自作関数・外部サービスの連携",
+        "url": "https://zenn.dev/mima_ita/articles/c705db43a34e90",
+        "site": "Zenn(Python)",
+        "published": "2026-02-04T04:21:44Z",
+        "description": "はじめに\nOpenAIにおいて、Agents SDK を中心としたエージェント機能が提供されるようになってから、しばらく経過しました。\nこのエージェント機能を使用することで、LLMが外部のツールやサービスを呼び出しながら、複数ステップの処理を行うことが容易になります。\nたとえば、LLMの問い合わせの結果をWebで検索して、その内容を独自の関数で解析後、解析結果を再度LLMに問い合わせるといったよう...",
+        "category": "開発",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "FastAPIのDependsで実現する堅牢な認証と入力検証",
+        "url": "https://zenn.dev/noayasu/articles/40c5276d9bdeb7",
+        "site": "Zenn(Python)",
+        "published": "2026-02-04T04:04:47Z",
+        "description": "はじめに\nこの記事では、FastAPIのDependsを使った依存性注入の実装方法と、セキュリティを考慮した入力検証のベストプラクティスをまとめています。\n\n FastAPI Dependsとは\nDependsは**依存性注入（Dependency Injection）**を実現するクラスです。つまり、APIの処理が走る前に、指定した関数を自動で実行し、その結果を引数として受け取る機能です。\n\n ...",
+        "category": "開発",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "Pythonバックエンドでユーザー体験を損なう実装ミスとその対処法",
+        "url": "https://zenn.dev/noayasu/articles/70e9792aed53e4",
+        "site": "Zenn(Python)",
+        "published": "2026-02-04T03:59:12Z",
+        "description": "はじめに\nPythonでバックエンド開発をする際、一見問題なく動作しているようでも、実はUXを大幅に下げたり、セキュリティリスクを高めてしまう実装ミスがあります。この記事では、実際に遭遇した問題とその解決策をまとめています。\n\n 条件分岐による変数スコープの問題\n\n 問題のコード\n@app.post(\"/upload\")\nasync def upload_audio(file: UploadFil...",
+        "category": "開発",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "国土を1ファイルにする — FlatGeobufという選択",
+        "url": "https://zenn.dev/where/articles/b208c3ee441338",
+        "site": "Zenn(Python)",
+        "published": "2026-02-04T03:56:24Z",
+        "description": "GISや、防災データを扱っていると、「シェープファイルの管理がめんどくさい...」だったり、そもそも「GISのファイルが欠けて読めなくなった」ということがあります。\n国土数値情報はデータとしては価値が高い一方で、運用しずらいという課題もあります。\n国土数値情報のデータを例に、高速化つシンプルに扱えるようにする方法について解説します。\n\n 国土数値情報生データ\n\n国土数値情報ダウンロードサイトとは、...",
+        "category": "開発",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "with-me深掘り：情報理論で要件定義を自動化するClaude Codeプラグイン",
+        "url": "https://zenn.dev/h315uk3/articles/with-me-deep-dive",
+        "site": "Zenn(Python)",
+        "published": "2026-02-04T02:00:00Z",
+        "description": "!\n本記事は Symbiosis プラグインシリーズの第 2 弾です。\n前回: Claude Code の認知を拡張する: Symbiosis プラグインの設計思想\n\n\n はじめに\nソフトウェア開発において、要件定義は最も難しいフェーズの 1 つです。\n\n「何を作りたいかはわかるけど、うまく言語化できない」\n「聞くべきことがわからない」\n「暗黙の前提条件を見落としてしまう」\n\nこうした課題に対し、...",
+        "category": "開発",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "犬の「心」は映像に映らない？マルチモーダルAIが導いた『体温＞表情』という衝撃の結論",
+        "url": "https://zenn.dev/lluminai_tech/articles/c45aeb94d96a64",
+        "site": "Zenn(Python)",
+        "published": "2026-02-04T01:00:01Z",
+        "description": "はじめに\nルミナイR&amp;Dチームの宮脇彰梧です。\n現在はマルチモーダルAIの研究を行う大学院生として、生成AIやAIエージェントの技術を実践的に探求しています。\n「AIで犬の気持ちを翻訳したい」\nエンジニアなら一度は妄想するこのテーマ。多くの人がまず思い浮かべるのは、「カメラで尻尾の振りを解析する」や「表情筋を読み取る」といったComputer Visionのアプローチではないでしょうか？\n...",
+        "category": "開発",
+        "rss_category": "",
+        "image_url": ""
+      },
       {
         "title": "株価・為替データのリアルタイム収集 - 自動売買システム構築入門",
         "url": "https://zenn.dev/datajournal1/articles/833fedc859b811",
@@ -107,16 +237,6 @@
         "image_url": ""
       },
       {
-        "title": "AIエンジニアがLangChainを推奨しない理由",
-        "url": "https://zenn.dev/genshi_ai/articles/166cf652723496",
-        "site": "Zenn(Python)",
-        "published": "2026-02-03T06:48:17Z",
-        "description": "はじめに\n先日、あるスタートアップがシステムを作り直すという文脈の中で「LangChain を採用」という記述があり、X で疑問を呈したところ「LangChain v1 で大幅に改善された」「批判は古い印象に基づいている」「根拠のない批判だ」という反論がありました。\nでは実際にソースコードを読んで確認してみよう、というのが本記事の趣旨です。\n私自身、2年前は LangChain をメインで使ってい...",
-        "category": "開発",
-        "rss_category": "",
-        "image_url": ""
-      },
-      {
         "title": "toxで快適なテストライフを満喫しよう",
         "url": "https://zenn.dev/se_te_bon/articles/d5366f8fc15b41",
         "site": "Zenn(Python)",
@@ -167,16 +287,6 @@
         "image_url": ""
       },
       {
-        "title": "医療データをLLMで安全に活用する：仮名化パイプライン「DataAirlock」の実践",
-        "url": "https://zenn.dev/akira0907/articles/dataairlock-medical-llm-workflow",
-        "site": "Zenn(Python)",
-        "published": "2026-02-03T00:45:42Z",
-        "description": "はじめに：LLMを使いたいのに、使えない\nClaude CodeやChatGPTが業務に有用なのは、もはや説明不要です。\n読影レポートの分析、カルテ記載のパターン抽出、診療データの傾向分析。\n「これ、LLMに投げたら一瞬なのに」と思う場面は日常的にあります。\nしかし医療現場では、ほぼ確実にここで止まります。\n患者データが含まれているから、外部サービスに送れない\nAPIが学習に使わないと言っても関係...",
-        "category": "開発",
-        "rss_category": "",
-        "image_url": ""
-      },
-      {
         "title": "PythonでTidalCycles / SuperColliderっぽくライブコーディングする選択肢まとめ（違いと選び方）",
         "url": "https://zenn.dev/ryok/articles/python-livecoding-tidalcycles-alternatives",
         "site": "Zenn(Python)",
@@ -197,41 +307,11 @@
         "image_url": ""
       },
       {
-        "title": "インド海外インターンシップ Week 2（居眠り検知システムの立ち上げ）",
-        "url": "https://zenn.dev/t_tokunaga/articles/2025-08-17-india-internship-week-2",
-        "site": "Zenn(Python)",
-        "published": "2026-02-02T19:10:51Z",
-        "description": "2 週目からは、いよいよ本格的に開発業務がスタートしました。私たちのチームは「ドライバーの居眠り検知」をテーマに、カメラ映像からドライバーの状態を推定する Driver Drowsiness Detection システムの構築に取り組みました。月曜日から日曜日までの流れを、業務内容を中心に振り返ります。\n\n\n 月：理論調査と開発環境構築\n月曜日は、指導担当のエンジニアから改めて課題の詳細説明を受け...",
-        "category": "開発",
-        "rss_category": "",
-        "image_url": ""
-      },
-      {
         "title": "ClaudeCode使ってみた（バレーボールのアプリを制作）",
         "url": "https://zenn.dev/bhanamasaz/articles/34b18b91128e4f",
         "site": "Zenn(Python)",
         "published": "2026-02-02T18:34:04Z",
         "description": "なんだかんだ使ったことなかったClaudeCodeを使ってみた\n結論\n\nめっちゃ使えた\n\n\n 0.はじめに\nはじめまして。\n初投稿になります。備忘の意味で記事を1つ残してみることにしました。　\nあまり経験が深いわけではないので、趣味程度にやっているということで色々と多めに見てもらえると助かります。\n\n 1.導入談\nClaudeCodeに興味があり使ってみたいと考えていた。\nうちの会社はAI自体の利...",
-        "category": "開発",
-        "rss_category": "",
-        "image_url": ""
-      },
-      {
-        "title": "PyTorch TabularとPyTorch Frameの比較",
-        "url": "https://zenn.dev/hiroki_k21/articles/8798115486319f",
-        "site": "Zenn(Python)",
-        "published": "2026-02-02T17:10:52Z",
-        "description": "概要\nこの記事では、表形式データの深層学習モデルを扱うライブラリとして、PyTorch TabularとPyTorch Frameを比較します。両者は設計思想が異なるため、目的（素早いベースライン作成／拡張性の高い実装）に応じて選択します。\n\n PyTorch Tabularとは?\nPyTorch Tabularとは、表形式データを扱う深層学習モデルを扱うためのライブラリです。学習やsweep機能...",
-        "category": "開発",
-        "rss_category": "",
-        "image_url": ""
-      },
-      {
-        "title": "AI エージェントの課題解決の成果を、再利用可能な形で残す",
-        "url": "https://zenn.dev/akring/articles/3e186dde525b7b",
-        "site": "Zenn(Python)",
-        "published": "2026-02-02T16:18:07Z",
-        "description": "エージェントが実行した手順を再利用したい\n例えば、「AWS What's New の RSSフィードから指定されたキーワードにマッチする記事を抽出して」とエージェントに頼んだとしましょう。\nエージェントはリクエストを受け取って、記事を返してくれます。\nこのとき、エージェントが実行した手続きを再利用したくなりませんか。エージェントが最終結果を取得した手順をスクリプト化して再利用したくなりませんか。\n...",
         "category": "開発",
         "rss_category": "",
         "image_url": ""
@@ -361,6 +441,136 @@
     ],
     "2026-02": [
       {
+        "title": "【実装編】3D CADデータをAIにぶち込め！Pythonで始める無料サロゲートモデル構築",
+        "url": "https://zenn.dev/sanottti/articles/20a9a3b80009ce",
+        "site": "Zenn(Python)",
+        "published": "2026-02-04T11:10:37Z",
+        "description": "はじめに：3D形状を「数値」として扱う魔法\n前回、3D CADデータ（STL/STEP）を使ったサロゲートモデルの考え方について触れました。\n今回は**「じゃあ、具体的にどう書くの？」**という疑問に答えるべく、最小構成の実装コードを公開します。\n高価なソフトウェアは一切不要。numpy-stl と PyTorch さえあれば、あなたのPCで3D形状を理解するAIが動き出します。\n\n\n 1. 3D...",
+        "category": "開発",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "VPN未接続の影響でuv syncが失敗した",
+        "url": "https://zenn.dev/shuto2828/articles/081835782110f2",
+        "site": "Zenn(Python)",
+        "published": "2026-02-04T09:52:29Z",
+        "description": "RAGのPoCで取り急ぎuvでパッケージ管理しようとしたら、いきなりエラーになったので忘備録を。\n\n パッケージ管理ツール「uv」について\nこちらの記事がわかりやすいかと思います。\n\npip installよりuv addで依存関係管理するするのが主流になってそうです。\n\n 詰まったポイント\n\n 1. uv と VPN 問題\n\n エラー内容\n~/Project$ uv sync\nUsing CPy...",
+        "category": "開発",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "HTML解析はもう古い？AI時代の最新データ抽出ツール比較",
+        "url": "https://zenn.dev/yuuto127/articles/best-web-scraping-apis-2026",
+        "site": "Zenn(Python)",
+        "published": "2026-02-04T08:22:58Z",
+        "description": "「またサイトの構造が変わってる…」\n月曜の朝、その一言と共に絶望した経験はありませんか？\n先週書いたばかりのPythonスクリプトが動かない。Cloudflareの迷宮に迷い込み、IPBANとの終わりのない戦いに明け暮れる日々…。\n昔の私は、そんなウェブスクレイピングが大嫌いでした。\nでも、2026年の今、景色は完全に変わりました。もはや単に「HTMLをGETする」時代ではありません。AIによる指...",
+        "category": "開発",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "Locust 2.43でOpenTelemetry統合による「可観測性重視」の負荷テスト",
+        "url": "https://zenn.dev/1stscratch/articles/d9d0f6ba3523fa",
+        "site": "Zenn(Python)",
+        "published": "2026-02-04T07:00:01Z",
+        "description": "はじめに\nLocustはPythonで書けるオープンソースの負荷テストツールです。\nGUIや設定ファイル中心のツールとは違い、普通のPythonコードでテストシナリオを自由に記述できます。\n条件分岐やループもそのまま書けるので、複雑なユーザー行動を簡単に再現可能です。\n最新版（2.43）の最大の進化はOpenTelemetry（OTel）統合です。\nこれにより、従来の「RPSや応答時間を見るだけ」...",
+        "category": "開発",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "文字列を綺麗にするためのライブラリ",
+        "url": "https://zenn.dev/shogithub/articles/d3d964f2b3f97f",
+        "site": "Zenn(Python)",
+        "published": "2026-02-04T06:30:37Z",
+        "description": "目的\n本ドキュメントは、Excel由来・日本語混在・PCスペック/商品名データを対象に、正規化・名寄せ・表記統一をPythonで実装するための主要ライブラリと実務パターンをまとめたものです。NotebookLMに投入し、**具体的なコード生成（再現性・監査性重視）**を促す用途を想定しています。\n\n\n 前提と設計原則\n\nゴールデンマスター：**「正式発表版」**を正とする\nAIはルール抽出役、実装...",
+        "category": "開発",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "【Python】Requestsで「Errno 11001 getaddrinfo failed」が出た時の解決策",
+        "url": "https://zenn.dev/kmg/articles/ea4aad86953833",
+        "site": "Zenn(Python)",
+        "published": "2026-02-04T04:51:46Z",
+        "description": "1. 開発者を絶望させる「真っ赤なエラー」\nPythonでAPI連携（RequestsやSDK）を使っていると、昨日まで動いていたコードがいきなり動かなくなり、以下のような長いエラーを吐き出すことがあります。\nrequests.exceptions.ConnectionError: HTTPSConnectionPool(host='api.box.com', port=443): \nMax re...",
+        "category": "開発",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "【Box API】「404 Not Found」の正体｜ブラウザで見えるファイルがAPIで見つからない時の解決策",
+        "url": "https://zenn.dev/kmg/articles/e5380b8e8f9aa3",
+        "site": "Zenn(Python)",
+        "published": "2026-02-04T04:30:56Z",
+        "description": "1. 開発者を襲う「謎の404エラー」\nBox API（特にPython SDK）を使って自動化を進めていると、必ずと言っていいほどこの壁にぶつかります。\n「ブラウザで確認すると、ファイルは確実にそこにある。IDも合っている。なのにAPIを実行すると 404 Not Found が返ってくる」\nStatus: 404\nMessage: Not Found\nCode: not_found\n\n一方で、...",
+        "category": "開発",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "OpenAI Agent SDK を使ってみる：LLMと自作関数・外部サービスの連携",
+        "url": "https://zenn.dev/mima_ita/articles/c705db43a34e90",
+        "site": "Zenn(Python)",
+        "published": "2026-02-04T04:21:44Z",
+        "description": "はじめに\nOpenAIにおいて、Agents SDK を中心としたエージェント機能が提供されるようになってから、しばらく経過しました。\nこのエージェント機能を使用することで、LLMが外部のツールやサービスを呼び出しながら、複数ステップの処理を行うことが容易になります。\nたとえば、LLMの問い合わせの結果をWebで検索して、その内容を独自の関数で解析後、解析結果を再度LLMに問い合わせるといったよう...",
+        "category": "開発",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "FastAPIのDependsで実現する堅牢な認証と入力検証",
+        "url": "https://zenn.dev/noayasu/articles/40c5276d9bdeb7",
+        "site": "Zenn(Python)",
+        "published": "2026-02-04T04:04:47Z",
+        "description": "はじめに\nこの記事では、FastAPIのDependsを使った依存性注入の実装方法と、セキュリティを考慮した入力検証のベストプラクティスをまとめています。\n\n FastAPI Dependsとは\nDependsは**依存性注入（Dependency Injection）**を実現するクラスです。つまり、APIの処理が走る前に、指定した関数を自動で実行し、その結果を引数として受け取る機能です。\n\n ...",
+        "category": "開発",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "Pythonバックエンドでユーザー体験を損なう実装ミスとその対処法",
+        "url": "https://zenn.dev/noayasu/articles/70e9792aed53e4",
+        "site": "Zenn(Python)",
+        "published": "2026-02-04T03:59:12Z",
+        "description": "はじめに\nPythonでバックエンド開発をする際、一見問題なく動作しているようでも、実はUXを大幅に下げたり、セキュリティリスクを高めてしまう実装ミスがあります。この記事では、実際に遭遇した問題とその解決策をまとめています。\n\n 条件分岐による変数スコープの問題\n\n 問題のコード\n@app.post(\"/upload\")\nasync def upload_audio(file: UploadFil...",
+        "category": "開発",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "国土を1ファイルにする — FlatGeobufという選択",
+        "url": "https://zenn.dev/where/articles/b208c3ee441338",
+        "site": "Zenn(Python)",
+        "published": "2026-02-04T03:56:24Z",
+        "description": "GISや、防災データを扱っていると、「シェープファイルの管理がめんどくさい...」だったり、そもそも「GISのファイルが欠けて読めなくなった」ということがあります。\n国土数値情報はデータとしては価値が高い一方で、運用しずらいという課題もあります。\n国土数値情報のデータを例に、高速化つシンプルに扱えるようにする方法について解説します。\n\n 国土数値情報生データ\n\n国土数値情報ダウンロードサイトとは、...",
+        "category": "開発",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "with-me深掘り：情報理論で要件定義を自動化するClaude Codeプラグイン",
+        "url": "https://zenn.dev/h315uk3/articles/with-me-deep-dive",
+        "site": "Zenn(Python)",
+        "published": "2026-02-04T02:00:00Z",
+        "description": "!\n本記事は Symbiosis プラグインシリーズの第 2 弾です。\n前回: Claude Code の認知を拡張する: Symbiosis プラグインの設計思想\n\n\n はじめに\nソフトウェア開発において、要件定義は最も難しいフェーズの 1 つです。\n\n「何を作りたいかはわかるけど、うまく言語化できない」\n「聞くべきことがわからない」\n「暗黙の前提条件を見落としてしまう」\n\nこうした課題に対し、...",
+        "category": "開発",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "犬の「心」は映像に映らない？マルチモーダルAIが導いた『体温＞表情』という衝撃の結論",
+        "url": "https://zenn.dev/lluminai_tech/articles/c45aeb94d96a64",
+        "site": "Zenn(Python)",
+        "published": "2026-02-04T01:00:01Z",
+        "description": "はじめに\nルミナイR&amp;Dチームの宮脇彰梧です。\n現在はマルチモーダルAIの研究を行う大学院生として、生成AIやAIエージェントの技術を実践的に探求しています。\n「AIで犬の気持ちを翻訳したい」\nエンジニアなら一度は妄想するこのテーマ。多くの人がまず思い浮かべるのは、「カメラで尻尾の振りを解析する」や「表情筋を読み取る」といったComputer Visionのアプローチではないでしょうか？\n...",
+        "category": "開発",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
         "title": "株価・為替データのリアルタイム収集 - 自動売買システム構築入門",
         "url": "https://zenn.dev/datajournal1/articles/833fedc859b811",
         "site": "Zenn(Python)",
@@ -461,16 +671,6 @@
         "image_url": ""
       },
       {
-        "title": "AIエンジニアがLangChainを推奨しない理由",
-        "url": "https://zenn.dev/genshi_ai/articles/166cf652723496",
-        "site": "Zenn(Python)",
-        "published": "2026-02-03T06:48:17Z",
-        "description": "はじめに\n先日、あるスタートアップがシステムを作り直すという文脈の中で「LangChain を採用」という記述があり、X で疑問を呈したところ「LangChain v1 で大幅に改善された」「批判は古い印象に基づいている」「根拠のない批判だ」という反論がありました。\nでは実際にソースコードを読んで確認してみよう、というのが本記事の趣旨です。\n私自身、2年前は LangChain をメインで使ってい...",
-        "category": "開発",
-        "rss_category": "",
-        "image_url": ""
-      },
-      {
         "title": "toxで快適なテストライフを満喫しよう",
         "url": "https://zenn.dev/se_te_bon/articles/d5366f8fc15b41",
         "site": "Zenn(Python)",
@@ -521,16 +721,6 @@
         "image_url": ""
       },
       {
-        "title": "医療データをLLMで安全に活用する：仮名化パイプライン「DataAirlock」の実践",
-        "url": "https://zenn.dev/akira0907/articles/dataairlock-medical-llm-workflow",
-        "site": "Zenn(Python)",
-        "published": "2026-02-03T00:45:42Z",
-        "description": "はじめに：LLMを使いたいのに、使えない\nClaude CodeやChatGPTが業務に有用なのは、もはや説明不要です。\n読影レポートの分析、カルテ記載のパターン抽出、診療データの傾向分析。\n「これ、LLMに投げたら一瞬なのに」と思う場面は日常的にあります。\nしかし医療現場では、ほぼ確実にここで止まります。\n患者データが含まれているから、外部サービスに送れない\nAPIが学習に使わないと言っても関係...",
-        "category": "開発",
-        "rss_category": "",
-        "image_url": ""
-      },
-      {
         "title": "PythonでTidalCycles / SuperColliderっぽくライブコーディングする選択肢まとめ（違いと選び方）",
         "url": "https://zenn.dev/ryok/articles/python-livecoding-tidalcycles-alternatives",
         "site": "Zenn(Python)",
@@ -551,41 +741,11 @@
         "image_url": ""
       },
       {
-        "title": "インド海外インターンシップ Week 2（居眠り検知システムの立ち上げ）",
-        "url": "https://zenn.dev/t_tokunaga/articles/2025-08-17-india-internship-week-2",
-        "site": "Zenn(Python)",
-        "published": "2026-02-02T19:10:51Z",
-        "description": "2 週目からは、いよいよ本格的に開発業務がスタートしました。私たちのチームは「ドライバーの居眠り検知」をテーマに、カメラ映像からドライバーの状態を推定する Driver Drowsiness Detection システムの構築に取り組みました。月曜日から日曜日までの流れを、業務内容を中心に振り返ります。\n\n\n 月：理論調査と開発環境構築\n月曜日は、指導担当のエンジニアから改めて課題の詳細説明を受け...",
-        "category": "開発",
-        "rss_category": "",
-        "image_url": ""
-      },
-      {
         "title": "ClaudeCode使ってみた（バレーボールのアプリを制作）",
         "url": "https://zenn.dev/bhanamasaz/articles/34b18b91128e4f",
         "site": "Zenn(Python)",
         "published": "2026-02-02T18:34:04Z",
         "description": "なんだかんだ使ったことなかったClaudeCodeを使ってみた\n結論\n\nめっちゃ使えた\n\n\n 0.はじめに\nはじめまして。\n初投稿になります。備忘の意味で記事を1つ残してみることにしました。　\nあまり経験が深いわけではないので、趣味程度にやっているということで色々と多めに見てもらえると助かります。\n\n 1.導入談\nClaudeCodeに興味があり使ってみたいと考えていた。\nうちの会社はAI自体の利...",
-        "category": "開発",
-        "rss_category": "",
-        "image_url": ""
-      },
-      {
-        "title": "PyTorch TabularとPyTorch Frameの比較",
-        "url": "https://zenn.dev/hiroki_k21/articles/8798115486319f",
-        "site": "Zenn(Python)",
-        "published": "2026-02-02T17:10:52Z",
-        "description": "概要\nこの記事では、表形式データの深層学習モデルを扱うライブラリとして、PyTorch TabularとPyTorch Frameを比較します。両者は設計思想が異なるため、目的（素早いベースライン作成／拡張性の高い実装）に応じて選択します。\n\n PyTorch Tabularとは?\nPyTorch Tabularとは、表形式データを扱う深層学習モデルを扱うためのライブラリです。学習やsweep機能...",
-        "category": "開発",
-        "rss_category": "",
-        "image_url": ""
-      },
-      {
-        "title": "AI エージェントの課題解決の成果を、再利用可能な形で残す",
-        "url": "https://zenn.dev/akring/articles/3e186dde525b7b",
-        "site": "Zenn(Python)",
-        "published": "2026-02-02T16:18:07Z",
-        "description": "エージェントが実行した手順を再利用したい\n例えば、「AWS What's New の RSSフィードから指定されたキーワードにマッチする記事を抽出して」とエージェントに頼んだとしましょう。\nエージェントはリクエストを受け取って、記事を返してくれます。\nこのとき、エージェントが実行した手続きを再利用したくなりませんか。エージェントが最終結果を取得した手順をスクリプト化して再利用したくなりませんか。\n...",
         "category": "開発",
         "rss_category": "",
         "image_url": ""
