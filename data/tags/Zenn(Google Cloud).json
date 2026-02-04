@@ -1,9 +1,29 @@
 {
   "site": "Zenn(Google Cloud)",
-  "last_updated": "2026-02-04T14:24:49.246901",
+  "last_updated": "2026-02-04T15:10:19.006108",
   "total_articles": 814,
   "articles_by_date": {
-    "本日": [
+    "昨日": [
+      {
+        "title": "Spanner Query Tuning Note",
+        "url": "https://zenn.dev/sinmetal/articles/spanner-query-optimizer-note",
+        "site": "Zenn(Google Cloud)",
+        "published": "2026-02-04T10:33:21Z",
+        "description": "sinmetalがQuery Tuningする時に使う覚書\n\n NOT NULL制約がない時に出てくる、謎のResidual Condition\nシンプルなFilterでも Seek Condition: IS_NOT_DISTINCT_FROM と出た後に、 Residual Condition がかかることがある。\nこれは対象のColumnにNOT NULL制約がなくて、NULLが許容されてい...",
+        "category": "クラウド",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "Pub/SubとDataflowの違いを１回だけ説明してみよう~中野哲平",
+        "url": "https://zenn.dev/m_nakano_teppei/articles/9112d42ca8d160",
+        "site": "Zenn(Google Cloud)",
+        "published": "2026-02-04T06:24:10Z",
+        "description": "こんにちは！データエンジニアリングの世界へようこそ。前回は「データの置き場所」であるSpannerとBigQueryを解説しましたが、今回はそれらを繋ぐ**「動的な仕組み」であるPub/SubとDataflow**の違いにフォーカスします。\n「どっちもデータを流すものじゃないの？」と混乱しがちですが、実は**「ただ運ぶだけの人」と「運びながら中身をいじり倒す職人」**くらいの違いがあります。\n今回...",
+        "category": "クラウド",
+        "rss_category": "",
+        "image_url": ""
+      },
       {
         "title": "LookMLで実装する「動的フィルタリング」完全ガイド",
         "url": "https://zenn.dev/mbk_digital/articles/c45c0a336e8482",
@@ -15,7 +35,7 @@
         "image_url": ""
       }
     ],
-    "昨日": [
+    "一昨日": [
       {
         "title": "クラウド未経験エンジニアがGCP無料枠でLinux鯖を建てる話",
         "url": "https://zenn.dev/manatosasaki/articles/7fc125cb759007",
@@ -77,49 +97,27 @@
         "image_url": ""
       }
     ],
-    "一昨日": [
-      {
-        "title": "GKEでマネージドな OpenTelemetry Collector が登場",
-        "url": "https://zenn.dev/makocchan/articles/gke_mng_otelcol",
-        "site": "Zenn(Google Cloud)",
-        "published": "2026-02-02T14:25:54Z",
-        "description": "はじめに\nどうもこんにちは。間瀬です。\n今更ですが、明けましておめでとうございます。今年初のブログ執筆です。\n今回はいつの間にかプレビューとなっていた Managed OpenTelemetry for GKE を紹介したいと思います。\n紹介する機能に関する公式ドキュメントはこちらです。\n端的に言うと、GKEクラスタ上でマネージドなOpenTelemetry Collectorを利用することができ...",
-        "category": "クラウド",
-        "rss_category": "",
-        "image_url": ""
-      },
-      {
-        "title": "「指示すら面倒くさい」を解決する。NPO向け\"指示ゼロ\"自律エージェント『Shadow Director』",
-        "url": "https://zenn.dev/tigurt/articles/81dd42b0513f3c",
-        "site": "Zenn(Google Cloud)",
-        "published": "2026-02-02T10:14:52Z",
-        "description": "Shadow Directorイメージ4コマ漫画\n\n\n Shadow Directorデモ動画\nhttps://youtu.be/dGGha7JUp7s\n\n 開発背景\nまだ社会で一般化していない社会課題は多い。\n\n地方高校生たちの体験格差が生む、若者たちの選択肢の狭小化\n心肺蘇生の知識不足によって救えなかった命\n\nまだ一般化していない社会課題でも、高い感性でそれに気づき行動を起こすソーシャルイノベ...",
-        "category": "クラウド",
-        "rss_category": "",
-        "image_url": ""
-      },
-      {
-        "title": "組織構造自体をリードする AIエージェント - Helm",
-        "url": "https://zenn.dev/charles_389no/articles/f4adff7b7bcaf8",
-        "site": "Zenn(Google Cloud)",
-        "published": "2026-02-02T09:37:39Z",
-        "description": "組織構造自体をリードする AIエージェント - Helm\n[ここにデモ動画を配置]\n\n\n はじめに\n\n「AIを賢くするのではない。\n\"人とAIでできた組織\"を賢くする。」\n\nHelmは、組織構造そのものをリードするAIエージェントです。既存のAIエージェントがタスクや成果物を最適化するのに対し、Helmは組織の意思決定プロセスが「構造的に壊れている」問題を検知し、改善します。\n本記事では、Helm...",
-        "category": "クラウド",
-        "rss_category": "",
-        "image_url": ""
-      },
-      {
-        "title": "RTX830とGCPとのVPN接続で無駄にハマった話",
-        "url": "https://zenn.dev/terass_dev/articles/a5e80f3cec4b8f",
-        "site": "Zenn(Google Cloud)",
-        "published": "2026-02-02T08:58:44Z",
-        "description": "前提\n本記事は、GCP Cloud VPN や BGP の概念は大まかに理解しているものの、\n実際の構築・トラブルシュート経験が浅い人を想定しています。\nまた、検証目的のためセキュリティ強度など考慮出来ていない部分があります。\n\n 本記事の内容\n今更ながら RTX830 が安く手に入ったので、\nGCP（Cloud VPN）とのサイト間 VPN を試してみました。\n既にネット上に同様の記事が多く存在...",
-        "category": "クラウド",
-        "rss_category": "",
-        "image_url": ""
-      }
-    ],
     "2026-02": [
+      {
+        "title": "Spanner Query Tuning Note",
+        "url": "https://zenn.dev/sinmetal/articles/spanner-query-optimizer-note",
+        "site": "Zenn(Google Cloud)",
+        "published": "2026-02-04T10:33:21Z",
+        "description": "sinmetalがQuery Tuningする時に使う覚書\n\n NOT NULL制約がない時に出てくる、謎のResidual Condition\nシンプルなFilterでも Seek Condition: IS_NOT_DISTINCT_FROM と出た後に、 Residual Condition がかかることがある。\nこれは対象のColumnにNOT NULL制約がなくて、NULLが許容されてい...",
+        "category": "クラウド",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "Pub/SubとDataflowの違いを１回だけ説明してみよう~中野哲平",
+        "url": "https://zenn.dev/m_nakano_teppei/articles/9112d42ca8d160",
+        "site": "Zenn(Google Cloud)",
+        "published": "2026-02-04T06:24:10Z",
+        "description": "こんにちは！データエンジニアリングの世界へようこそ。前回は「データの置き場所」であるSpannerとBigQueryを解説しましたが、今回はそれらを繋ぐ**「動的な仕組み」であるPub/SubとDataflow**の違いにフォーカスします。\n「どっちもデータを流すものじゃないの？」と混乱しがちですが、実は**「ただ運ぶだけの人」と「運びながら中身をいじり倒す職人」**くらいの違いがあります。\n今回...",
+        "category": "クラウド",
+        "rss_category": "",
+        "image_url": ""
+      },
       {
         "title": "LookMLで実装する「動的フィルタリング」完全ガイド",
         "url": "https://zenn.dev/mbk_digital/articles/c45c0a336e8482",
