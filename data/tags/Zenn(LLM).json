@@ -1,45 +1,15 @@
 {
   "site": "Zenn(LLM)",
-  "last_updated": "2026-02-09T08:34:24.112495",
-  "total_articles": 1705,
+  "last_updated": "2026-02-09T09:41:47.354530",
+  "total_articles": 1703,
   "articles_by_date": {
     "本日": [
-      {
-        "title": "LangChainを使ってAIエージェントを作ってみた",
-        "url": "https://zenn.dev/fez_tech/articles/7c438c05a028a4",
-        "site": "Zenn(LLM)",
-        "published": "2026-02-09T04:57:33Z",
-        "description": "こんにちは、株式会社フェズのデータテクノロジー開発部でエンジニアをしています石原です。\n普段は Urumo BI という、生成AIを活用した購買データ分析ソリューションの開発に携わっています。\n本記事は、AIエージェント開発手法を比較検証していく連載の第2回です。\n前回は、あえてLangChain などのフレームワークを使わずに、\n最小構成の AIエージェント をフルスクラッチで実装しました。\n前...",
-        "category": "AI・技術",
-        "rss_category": "",
-        "image_url": ""
-      },
       {
         "title": "【WSL2】WindowsでローカルLLM！vLLMでOpenAI互換サーバーを構築する最短手順",
         "url": "https://zenn.dev/fmbro0203/articles/a0ee694a9bac10",
         "site": "Zenn(LLM)",
         "published": "2026-02-09T04:10:55Z",
         "description": "【WSL2】WindowsでローカルLLM！vLLMでOpenAI互換サーバーを構築する最短手順\nWindows上のWSL2 (Ubuntu) 環境を使って、ローカルLLM（大規模言語モデル）の推論サーバーを構築する手順をまとめました。\n今回は、高速な推論エンジンである vLLM を使用し、Windows側のPythonプログラムから OpenAI互換のAPI として呼び出すところまでを一気に進め...",
-        "category": "AI・技術",
-        "rss_category": "",
-        "image_url": ""
-      },
-      {
-        "title": "松尾研LLM講座2025@メインコンペ、決勝進出！🔥",
-        "url": "https://zenn.dev/rakushaking/articles/8fce7e7560b2cc",
-        "site": "Zenn(LLM)",
-        "published": "2026-02-09T03:23:16Z",
-        "description": "はじめに\n噂では4000人も?!参加してるらしい超大人気講座の松尾研LLM応用講座のメインコンペに参加してきました。結論からいうと100番以内に入れました、厳密には締め切り時間2/8@17:00時点にて68番手！200番以内に入るとアドバンスドコンペ、いわゆる決勝戦に出れます。\n\n コンペの概要\n本コンペでは、Qwenシリーズの小型LLMをベースにモデルの性能を競います。\n評価には、LLMの構造化...",
-        "category": "AI・技術",
-        "rss_category": "",
-        "image_url": ""
-      },
-      {
-        "title": "金融領域でText2SQLのPoCをやって見えた、本番化への4つの壁",
-        "url": "https://zenn.dev/zhu_tech/articles/b24810fba88329",
-        "site": "Zenn(LLM)",
-        "published": "2026-02-09T03:06:55Z",
-        "description": "はじめに\n「自然言語でデータを検索したい」——金融業界では特にこの要望が強いです。非エンジニアのビジネスユーザーがSQLを書かずに資産データや取引履歴を検索できれば、データ活用のスピードは劇的に変わります。\n私はマルチテナント型の業務SaaSにおいて、Text2SQL機能のPoCを設計・実装しました。結果として「動くもの」は作れましたが、本番投入に向けては想像以上に壁が多いことが分かりました。\nこ...",
         "category": "AI・技術",
         "rss_category": "",
         "image_url": ""
@@ -227,6 +197,26 @@
         "image_url": ""
       },
       {
+        "title": "🔍GLM-OCR（LLM）と Tesseract を同じ画像で比較してわかったこと",
+        "url": "https://zenn.dev/tktomaru/articles/glm-ocr-vs-tesseract-comparison",
+        "site": "Zenn(LLM)",
+        "published": "2026-02-08T01:29:00Z",
+        "description": "はじめに\n\n画像からテキストを抽出する OCR には、従来型の Tesseract と、近年登場した LLM ベースの手法があります。本記事では、オープンソースのビジョン言語モデル GLM-OCR（vLLM でローカル実行）と Tesseract で同じ書籍画像群を OCR し、その違いを統計的に比較しました。\n対象は 4 冊分の書籍画像（小説・図鑑的な資料など）で、各ページを切り抜いた画像に対し...",
+        "category": "AI・技術",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "温度のノイズを除去してLLMの浮動均衡点（FEP）を検出する",
+        "url": "https://zenn.dev/kuruiti_kuru00/articles/0915ff0de02238",
+        "site": "Zenn(LLM)",
+        "published": "2026-02-07T22:45:51Z",
+        "description": "LLMの推論状態における動的解析\nCRフィルタを用いた浮動均衡点（FEP）の抽出と「石灰化」現象の定量化\n\n 概要\nLLM（大規模言語モデル）の推論プロセスは、表層的には確率的な次単語予測の連鎖ですが、その基底には文脈の整合性を維持するための強固な数理的秩序が存在します。従来の解析手法は、クロスエントロピーやパープレキシティといった静的なスナップショット指標に依存してきましたが、これらでは推論の「...",
+        "category": "AI・技術",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
         "title": "マルチエージェント構築入門｜構成の全体像と3つの実装アプローチ",
         "url": "https://zenn.dev/yoshihiko555/articles/647d7be6d02fa1",
         "site": "Zenn(LLM)",
@@ -381,41 +371,11 @@
     ],
     "2026-02": [
       {
-        "title": "LangChainを使ってAIエージェントを作ってみた",
-        "url": "https://zenn.dev/fez_tech/articles/7c438c05a028a4",
-        "site": "Zenn(LLM)",
-        "published": "2026-02-09T04:57:33Z",
-        "description": "こんにちは、株式会社フェズのデータテクノロジー開発部でエンジニアをしています石原です。\n普段は Urumo BI という、生成AIを活用した購買データ分析ソリューションの開発に携わっています。\n本記事は、AIエージェント開発手法を比較検証していく連載の第2回です。\n前回は、あえてLangChain などのフレームワークを使わずに、\n最小構成の AIエージェント をフルスクラッチで実装しました。\n前...",
-        "category": "AI・技術",
-        "rss_category": "",
-        "image_url": ""
-      },
-      {
         "title": "【WSL2】WindowsでローカルLLM！vLLMでOpenAI互換サーバーを構築する最短手順",
         "url": "https://zenn.dev/fmbro0203/articles/a0ee694a9bac10",
         "site": "Zenn(LLM)",
         "published": "2026-02-09T04:10:55Z",
         "description": "【WSL2】WindowsでローカルLLM！vLLMでOpenAI互換サーバーを構築する最短手順\nWindows上のWSL2 (Ubuntu) 環境を使って、ローカルLLM（大規模言語モデル）の推論サーバーを構築する手順をまとめました。\n今回は、高速な推論エンジンである vLLM を使用し、Windows側のPythonプログラムから OpenAI互換のAPI として呼び出すところまでを一気に進め...",
-        "category": "AI・技術",
-        "rss_category": "",
-        "image_url": ""
-      },
-      {
-        "title": "松尾研LLM講座2025@メインコンペ、決勝進出！🔥",
-        "url": "https://zenn.dev/rakushaking/articles/8fce7e7560b2cc",
-        "site": "Zenn(LLM)",
-        "published": "2026-02-09T03:23:16Z",
-        "description": "はじめに\n噂では4000人も?!参加してるらしい超大人気講座の松尾研LLM応用講座のメインコンペに参加してきました。結論からいうと100番以内に入れました、厳密には締め切り時間2/8@17:00時点にて68番手！200番以内に入るとアドバンスドコンペ、いわゆる決勝戦に出れます。\n\n コンペの概要\n本コンペでは、Qwenシリーズの小型LLMをベースにモデルの性能を競います。\n評価には、LLMの構造化...",
-        "category": "AI・技術",
-        "rss_category": "",
-        "image_url": ""
-      },
-      {
-        "title": "金融領域でText2SQLのPoCをやって見えた、本番化への4つの壁",
-        "url": "https://zenn.dev/zhu_tech/articles/b24810fba88329",
-        "site": "Zenn(LLM)",
-        "published": "2026-02-09T03:06:55Z",
-        "description": "はじめに\n「自然言語でデータを検索したい」——金融業界では特にこの要望が強いです。非エンジニアのビジネスユーザーがSQLを書かずに資産データや取引履歴を検索できれば、データ活用のスピードは劇的に変わります。\n私はマルチテナント型の業務SaaSにおいて、Text2SQL機能のPoCを設計・実装しました。結果として「動くもの」は作れましたが、本番投入に向けては想像以上に壁が多いことが分かりました。\nこ...",
         "category": "AI・技術",
         "rss_category": "",
         "image_url": ""
@@ -596,6 +556,26 @@
         "site": "Zenn(LLM)",
         "published": "2026-02-08T01:29:37Z",
         "description": "はじめに\n\n画像からテキストを抽出する OCR には、従来型の Tesseract と、近年登場した LLM ベースの手法があります。本記事では、オープンソースのビジョン言語モデル GLM-OCR（vLLM でローカル実行）と Tesseract で同じ書籍画像群を OCR し、その違いを統計的に比較しました。\n対象は 4 冊分の書籍画像（小説・図鑑的な資料など）で、各ページを切り抜いた画像に対し...",
+        "category": "AI・技術",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "🔍GLM-OCR（LLM）と Tesseract を同じ画像で比較してわかったこと",
+        "url": "https://zenn.dev/tktomaru/articles/glm-ocr-vs-tesseract-comparison",
+        "site": "Zenn(LLM)",
+        "published": "2026-02-08T01:29:00Z",
+        "description": "はじめに\n\n画像からテキストを抽出する OCR には、従来型の Tesseract と、近年登場した LLM ベースの手法があります。本記事では、オープンソースのビジョン言語モデル GLM-OCR（vLLM でローカル実行）と Tesseract で同じ書籍画像群を OCR し、その違いを統計的に比較しました。\n対象は 4 冊分の書籍画像（小説・図鑑的な資料など）で、各ページを切り抜いた画像に対し...",
+        "category": "AI・技術",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "温度のノイズを除去してLLMの浮動均衡点（FEP）を検出する",
+        "url": "https://zenn.dev/kuruiti_kuru00/articles/0915ff0de02238",
+        "site": "Zenn(LLM)",
+        "published": "2026-02-07T22:45:51Z",
+        "description": "LLMの推論状態における動的解析\nCRフィルタを用いた浮動均衡点（FEP）の抽出と「石灰化」現象の定量化\n\n 概要\nLLM（大規模言語モデル）の推論プロセスは、表層的には確率的な次単語予測の連鎖ですが、その基底には文脈の整合性を維持するための強固な数理的秩序が存在します。従来の解析手法は、クロスエントロピーやパープレキシティといった静的なスナップショット指標に依存してきましたが、これらでは推論の「...",
         "category": "AI・技術",
         "rss_category": "",
         "image_url": ""
