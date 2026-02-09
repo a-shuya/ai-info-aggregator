@@ -1,9 +1,69 @@
 {
   "site": "Zenn(Python)",
-  "last_updated": "2026-02-09T22:41:20.257644",
-  "total_articles": 2331,
+  "last_updated": "2026-02-09T23:24:50.449339",
+  "total_articles": 2341,
   "articles_by_date": {
     "本日": [
+      {
+        "title": "【Pythonを用いた入力データ抽出】ランク学習#2 - スクレイピング",
+        "url": "https://zenn.dev/soyster/articles/61bf8a09819715",
+        "site": "Zenn(Python)",
+        "published": "2026-02-09T23:00:01Z",
+        "description": "はじめに\n前回のランク学習#1では、順位を予想する機械学習のフレームワークとして\"ランク学習\"を取り上げ、その代表的な手法としてLightGBMを取り上げた。LightGBM自体は、使いやすいライブラリが存在するため、テストデータを用いて簡単に学習・推論を行うことができる。\nしかし、何らか意味のあるモデルを生成するためには、まずは入力データを作る必要がある。そこで、今回は入力データの用意の仕方につ...",
+        "category": "開発",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "【PINNs実装】偏微分方程式（PDE）をPyTorchで書く技術｜CAEエンジニアのための実装ガイド Vol.2",
+        "url": "https://zenn.dev/sanottti/articles/pinn-02-heat-equation-pde",
+        "site": "Zenn(Python)",
+        "published": "2026-02-09T22:00:25Z",
+        "description": "はじめに\n前回は「時間」のみの変化（常微分方程式）を扱いましたが、CAEエンジニアが扱う物理現象のほとんどは「空間」と「時間」の両方で変化します。\n今回は、熱伝導や流体解析の基礎となる**偏微分方程式（PDE）を実装します。最大の壁は、「\\frac{\\partial^2 u}{\\partial x^2}（空間2階微分）をどうコードで書くか？」**です。\nここで、Deep Learningフレームワ...",
+        "category": "開発",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "[Matplotlib入門シリーズ第6回] 2次元図形の描画（円・楕円・長方形）",
+        "url": "https://zenn.dev/haruhiro1020/articles/7481fd6cd6e055",
+        "site": "Zenn(Python)",
+        "published": "2026-02-09T22:00:02Z",
+        "description": "はじめに\n本記事は「Pythonでデータを可視化するMatplotlib入門」シリーズの第6回です．\n前記事までは，折れ線・散布図などのグラフ作成を説明しました．\n本記事では2次元図形（円・楕円・長方形）を描画する方法を説明します．\n私のMatplotlibライブラリのバージョンは \"3.7.0\" です．\n\n 本シリーズの構成\n本シリーズの構成予定（全11記事）は以下を想定しています．\n\nMatp...",
+        "category": "開発",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "【PINNs入門】PyTorchで「ニュートンの冷却の法則」を解く｜CAEエンジニアのための実装ガイド Vol.1",
+        "url": "https://zenn.dev/sanottti/articles/pinn-01-newton-cooling-guide",
+        "site": "Zenn(Python)",
+        "published": "2026-02-09T21:55:29Z",
+        "description": "はじめに\nCAEエンジニアの皆さん、こんにちは。普段、FEM（有限要素法）やFVM（有限体積法）でシミュレーションを行う際、「メッシュ作成」にどれだけの時間を費やしていますか？\n近年注目されている PINNs (Physics-Informed Neural Networks) は、物理法則（微分方程式）をニューラルネットワークの損失関数に組み込むことで、メッシュレスで物理現象をシミュレーションす...",
+        "category": "開発",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "【Python】サロゲートモデルのための3D形状前処理：STL分割・特徴量抽出・自動修復の完全ガイド (2026年版)",
+        "url": "https://zenn.dev/sanottti/articles/surrogate-preprocessing-guide",
+        "site": "Zenn(Python)",
+        "published": "2026-02-09T21:29:49Z",
+        "description": "はじめに\n2026年現在、CAE（Computer Aided Engineering）や設計探査の分野において、\n**サロゲートモデル（代理モデル）**の活用は当たり前になりつつあります。\nシミュレーション計算コストを削減するために、AIモデルで物理現象を予測する技術です。\nしかし、ここで常にボトルネックになるのが\n「3D CADデータ（形状）をどうやってAIに入力するか？」\nという問題です。\n...",
+        "category": "開発",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "【AI×CAD】STEPファイル自動修復の未来：PythonOCCとAIエージェント(MCP)による自律型CAE前処理",
+        "url": "https://zenn.dev/sanottti/articles/step-auto-repair-agent",
+        "site": "Zenn(Python)",
+        "published": "2026-02-09T21:29:49Z",
+        "description": "3Dデータ処理の「ラストワンマイル」\n前回の記事では、STL（メッシュ）データの処理について解説しました。しかし、製造業の実務において、本当に扱いたいのはSTLに変換される前のSTEPやIGESといった中間CADフォーマット（B-Repデータ）です。\nSTLはあくまで「近似されたポリゴン」ですが、STEPは「厳密な曲面定義」を持ちます。しかし、PythonでSTEPファイルを扱うのは、STLに比べ...",
+        "category": "開発",
+        "rss_category": "",
+        "image_url": ""
+      },
       {
         "title": "Python開発完全ガイド: ゼロから始める基礎入門 2026",
         "url": "https://zenn.dev/gaku1234/books/python-basics-complete-guide-2026",
@@ -47,11 +107,31 @@
         "image_url": ""
       },
       {
+        "title": "6-③[AI][Kaggle][python]Kaggle入門(特徴エンジニアリング 3.特徴量の作成)",
+        "url": "https://zenn.dev/rg687076/articles/6523714297acd2",
+        "site": "Zenn(Python)",
+        "published": "2026-02-09T13:07:41Z",
+        "description": "Kaggle入門6(特徴エンジニアリング 1.特徴エンジニアリングとは)\nKaggle入門6(特徴エンジニアリング 2.相互情報)\nKaggle入門6(特徴エンジニアリング 3.特徴量の作成)\nKaggle入門6(特徴エンジニアリング 4.K平均法によるクラスタリング)\nKaggle入門6(特徴エンジニアリング 5.xxx)\nKaggle入門6(特徴エンジニアリング 6.最終回 xxx)\n← Ka...",
+        "category": "開発",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
         "title": "LazyNixとuvでお手軽Python開発",
         "url": "https://zenn.dev/shundeveloper/articles/c74a9afbf1e786",
         "site": "Zenn(Python)",
         "published": "2026-02-09T12:47:31Z",
         "description": "前置き\nLazyNixというローカル開発環境構築を爆速にするツールを作成しました。本記事では、LazyNixの便利さを伝えるため、使い方をチュートリアル形式で解説します。\nhttps://zenn.dev/shundeveloper/articles/6d9a464c4a6bad\n\n 本記事の対象者\n本記事はPythonを使う方全般に有用です。\n\nPythonの開発環境構築を楽にしたい開発者\nPy...",
+        "category": "開発",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "AI応用に向けたアナログニューラルネットワーク回路と容量チョッパー型比較器の動作原理",
+        "url": "https://zenn.dev/qwerewq/articles/da9ade63f7e4bf",
+        "site": "Zenn(Python)",
+        "published": "2026-02-09T12:25:02Z",
+        "description": "はじめに\nAIの普及により、ニューラルネットワークを用いた機械学習が広く用いられている。この流れを踏まえ、集積回路分野におけるアナログニューラルネットワークの位置づけを整理する。抵抗を用いた重み付け回路は比較的知られている。一方、容量に電荷を蓄える方式の重み付け回路は、動作を式で追える形の解説が少ない。そこで本記事では、容量による重み付けと比較器による2値化を対象に、電荷保存としきい値比較の関係と...",
         "category": "開発",
         "rss_category": "",
         "image_url": ""
@@ -127,41 +207,11 @@
         "image_url": ""
       },
       {
-        "title": "60件・1時間の請求書承認を、80〜90%自動化した（SmartDB×Selenium×OpenAI）",
-        "url": "https://zenn.dev/ogiki/articles/9194e2aae8a187",
-        "site": "Zenn(Python)",
-        "published": "2026-02-09T02:48:18Z",
-        "description": "はじめに：月初1時間、ハンコ作業で溶ける問題\n管理職って、本来は意思決定や改善に時間を使いたいはずなのに、現実はルーチンワークが多いです。私の場合、月初に「承認のハンコを押す」「請求書PDFをダウンロードする」「Web画面の金額と税額を目で突き合わせる」といった作業が発生します。\nしかもシステムが遅く、60件程度の承認をするだけで概ね1時間。正直、この時間を“確認のための確認”に使うより、もっと価...",
-        "category": "開発",
-        "rss_category": "",
-        "image_url": ""
-      },
-      {
-        "title": "多重共線性",
-        "url": "https://zenn.dev/dmmdata/articles/3d1dd0b204efe3",
-        "site": "Zenn(Python)",
-        "published": "2026-02-09T02:12:05Z",
-        "description": "線形回帰分析において、説明変数どうしに強い線形関係がある状態を多重共線性と呼びます（相関が高いのはその典型例です）。\n完全に線形従属の場合、X はランク落ちし、(X^\\top X)^{-1} が存在しません。そのため、逆行列を用いる形ではOLSを計算できません。一方、実務でよく遭遇するのは「完全ではないがかなり近い」ケースで、この場合は計算自体は可能ですが、推定結果が不安定になります。\n多重共線性...",
-        "category": "開発",
-        "rss_category": "",
-        "image_url": ""
-      },
-      {
         "title": "【大損中】最も美しいと言われるビットコインの技術論文を徹底解説してみた。Pythonでのサンプルコード付き！",
         "url": "https://zenn.dev/unemployed/articles/bitcoin-whitepaper",
         "site": "Zenn(Python)",
         "published": "2026-02-09T01:56:30Z",
         "description": "最初に\n※色んな意味で身を削って書いているので、もしかしたらそのうち非公開にして有料記事にするかもです。\nこの記事を読むとビットコインの技術論文が読めるようになります。\nまた副次的な効果でパチンコ・カジノへ行く人はお金が貯まるようになります。\n最近ビットコインが安くなっているという事で購入したのですが、自分は3ヶ月ほど前から気になっていて、暴落後、1500万円超えてからしまったと思い、1450万円...",
-        "category": "開発",
-        "rss_category": "",
-        "image_url": ""
-      },
-      {
-        "title": "AWSで株価予測アプリを作ってみる",
-        "url": "https://zenn.dev/rioichi/articles/88164acf120491",
-        "site": "Zenn(Python)",
-        "published": "2026-02-09T01:38:56Z",
-        "description": "はじめに\n株価予測アプリを作ることにしました。\n最終的には以下を目指します：\n\nLambda/Glueでデータ取得・加工\nSageMakerで株価予測\nRedshiftでデータ分析\nTerraformで全自動化\n\nこの記事では第1回として、Lambdaで株価取得してS3に保存するまでを書きます。\n\n やったこと\n\nLambda関数作成\nyfinance Layerの追加（53MB問題の解決）\nS3...",
         "category": "開発",
         "rss_category": "",
         "image_url": ""
@@ -411,6 +461,66 @@
     ],
     "2026-02": [
       {
+        "title": "【Pythonを用いた入力データ抽出】ランク学習#2 - スクレイピング",
+        "url": "https://zenn.dev/soyster/articles/61bf8a09819715",
+        "site": "Zenn(Python)",
+        "published": "2026-02-09T23:00:01Z",
+        "description": "はじめに\n前回のランク学習#1では、順位を予想する機械学習のフレームワークとして\"ランク学習\"を取り上げ、その代表的な手法としてLightGBMを取り上げた。LightGBM自体は、使いやすいライブラリが存在するため、テストデータを用いて簡単に学習・推論を行うことができる。\nしかし、何らか意味のあるモデルを生成するためには、まずは入力データを作る必要がある。そこで、今回は入力データの用意の仕方につ...",
+        "category": "開発",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "【PINNs実装】偏微分方程式（PDE）をPyTorchで書く技術｜CAEエンジニアのための実装ガイド Vol.2",
+        "url": "https://zenn.dev/sanottti/articles/pinn-02-heat-equation-pde",
+        "site": "Zenn(Python)",
+        "published": "2026-02-09T22:00:25Z",
+        "description": "はじめに\n前回は「時間」のみの変化（常微分方程式）を扱いましたが、CAEエンジニアが扱う物理現象のほとんどは「空間」と「時間」の両方で変化します。\n今回は、熱伝導や流体解析の基礎となる**偏微分方程式（PDE）を実装します。最大の壁は、「\\frac{\\partial^2 u}{\\partial x^2}（空間2階微分）をどうコードで書くか？」**です。\nここで、Deep Learningフレームワ...",
+        "category": "開発",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "[Matplotlib入門シリーズ第6回] 2次元図形の描画（円・楕円・長方形）",
+        "url": "https://zenn.dev/haruhiro1020/articles/7481fd6cd6e055",
+        "site": "Zenn(Python)",
+        "published": "2026-02-09T22:00:02Z",
+        "description": "はじめに\n本記事は「Pythonでデータを可視化するMatplotlib入門」シリーズの第6回です．\n前記事までは，折れ線・散布図などのグラフ作成を説明しました．\n本記事では2次元図形（円・楕円・長方形）を描画する方法を説明します．\n私のMatplotlibライブラリのバージョンは \"3.7.0\" です．\n\n 本シリーズの構成\n本シリーズの構成予定（全11記事）は以下を想定しています．\n\nMatp...",
+        "category": "開発",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "【PINNs入門】PyTorchで「ニュートンの冷却の法則」を解く｜CAEエンジニアのための実装ガイド Vol.1",
+        "url": "https://zenn.dev/sanottti/articles/pinn-01-newton-cooling-guide",
+        "site": "Zenn(Python)",
+        "published": "2026-02-09T21:55:29Z",
+        "description": "はじめに\nCAEエンジニアの皆さん、こんにちは。普段、FEM（有限要素法）やFVM（有限体積法）でシミュレーションを行う際、「メッシュ作成」にどれだけの時間を費やしていますか？\n近年注目されている PINNs (Physics-Informed Neural Networks) は、物理法則（微分方程式）をニューラルネットワークの損失関数に組み込むことで、メッシュレスで物理現象をシミュレーションす...",
+        "category": "開発",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "【Python】サロゲートモデルのための3D形状前処理：STL分割・特徴量抽出・自動修復の完全ガイド (2026年版)",
+        "url": "https://zenn.dev/sanottti/articles/surrogate-preprocessing-guide",
+        "site": "Zenn(Python)",
+        "published": "2026-02-09T21:29:49Z",
+        "description": "はじめに\n2026年現在、CAE（Computer Aided Engineering）や設計探査の分野において、\n**サロゲートモデル（代理モデル）**の活用は当たり前になりつつあります。\nシミュレーション計算コストを削減するために、AIモデルで物理現象を予測する技術です。\nしかし、ここで常にボトルネックになるのが\n「3D CADデータ（形状）をどうやってAIに入力するか？」\nという問題です。\n...",
+        "category": "開発",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "【AI×CAD】STEPファイル自動修復の未来：PythonOCCとAIエージェント(MCP)による自律型CAE前処理",
+        "url": "https://zenn.dev/sanottti/articles/step-auto-repair-agent",
+        "site": "Zenn(Python)",
+        "published": "2026-02-09T21:29:49Z",
+        "description": "3Dデータ処理の「ラストワンマイル」\n前回の記事では、STL（メッシュ）データの処理について解説しました。しかし、製造業の実務において、本当に扱いたいのはSTLに変換される前のSTEPやIGESといった中間CADフォーマット（B-Repデータ）です。\nSTLはあくまで「近似されたポリゴン」ですが、STEPは「厳密な曲面定義」を持ちます。しかし、PythonでSTEPファイルを扱うのは、STLに比べ...",
+        "category": "開発",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
         "title": "Python開発完全ガイド: ゼロから始める基礎入門 2026",
         "url": "https://zenn.dev/gaku1234/books/python-basics-complete-guide-2026",
         "site": "Zenn(Python)",
@@ -451,11 +561,31 @@
         "image_url": ""
       },
       {
+        "title": "6-③[AI][Kaggle][python]Kaggle入門(特徴エンジニアリング 3.特徴量の作成)",
+        "url": "https://zenn.dev/rg687076/articles/6523714297acd2",
+        "site": "Zenn(Python)",
+        "published": "2026-02-09T13:07:41Z",
+        "description": "Kaggle入門6(特徴エンジニアリング 1.特徴エンジニアリングとは)\nKaggle入門6(特徴エンジニアリング 2.相互情報)\nKaggle入門6(特徴エンジニアリング 3.特徴量の作成)\nKaggle入門6(特徴エンジニアリング 4.K平均法によるクラスタリング)\nKaggle入門6(特徴エンジニアリング 5.xxx)\nKaggle入門6(特徴エンジニアリング 6.最終回 xxx)\n← Ka...",
+        "category": "開発",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
         "title": "LazyNixとuvでお手軽Python開発",
         "url": "https://zenn.dev/shundeveloper/articles/c74a9afbf1e786",
         "site": "Zenn(Python)",
         "published": "2026-02-09T12:47:31Z",
         "description": "前置き\nLazyNixというローカル開発環境構築を爆速にするツールを作成しました。本記事では、LazyNixの便利さを伝えるため、使い方をチュートリアル形式で解説します。\nhttps://zenn.dev/shundeveloper/articles/6d9a464c4a6bad\n\n 本記事の対象者\n本記事はPythonを使う方全般に有用です。\n\nPythonの開発環境構築を楽にしたい開発者\nPy...",
+        "category": "開発",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "AI応用に向けたアナログニューラルネットワーク回路と容量チョッパー型比較器の動作原理",
+        "url": "https://zenn.dev/qwerewq/articles/da9ade63f7e4bf",
+        "site": "Zenn(Python)",
+        "published": "2026-02-09T12:25:02Z",
+        "description": "はじめに\nAIの普及により、ニューラルネットワークを用いた機械学習が広く用いられている。この流れを踏まえ、集積回路分野におけるアナログニューラルネットワークの位置づけを整理する。抵抗を用いた重み付け回路は比較的知られている。一方、容量に電荷を蓄える方式の重み付け回路は、動作を式で追える形の解説が少ない。そこで本記事では、容量による重み付けと比較器による2値化を対象に、電荷保存としきい値比較の関係と...",
         "category": "開発",
         "rss_category": "",
         "image_url": ""
@@ -531,41 +661,11 @@
         "image_url": ""
       },
       {
-        "title": "60件・1時間の請求書承認を、80〜90%自動化した（SmartDB×Selenium×OpenAI）",
-        "url": "https://zenn.dev/ogiki/articles/9194e2aae8a187",
-        "site": "Zenn(Python)",
-        "published": "2026-02-09T02:48:18Z",
-        "description": "はじめに：月初1時間、ハンコ作業で溶ける問題\n管理職って、本来は意思決定や改善に時間を使いたいはずなのに、現実はルーチンワークが多いです。私の場合、月初に「承認のハンコを押す」「請求書PDFをダウンロードする」「Web画面の金額と税額を目で突き合わせる」といった作業が発生します。\nしかもシステムが遅く、60件程度の承認をするだけで概ね1時間。正直、この時間を“確認のための確認”に使うより、もっと価...",
-        "category": "開発",
-        "rss_category": "",
-        "image_url": ""
-      },
-      {
-        "title": "多重共線性",
-        "url": "https://zenn.dev/dmmdata/articles/3d1dd0b204efe3",
-        "site": "Zenn(Python)",
-        "published": "2026-02-09T02:12:05Z",
-        "description": "線形回帰分析において、説明変数どうしに強い線形関係がある状態を多重共線性と呼びます（相関が高いのはその典型例です）。\n完全に線形従属の場合、X はランク落ちし、(X^\\top X)^{-1} が存在しません。そのため、逆行列を用いる形ではOLSを計算できません。一方、実務でよく遭遇するのは「完全ではないがかなり近い」ケースで、この場合は計算自体は可能ですが、推定結果が不安定になります。\n多重共線性...",
-        "category": "開発",
-        "rss_category": "",
-        "image_url": ""
-      },
-      {
         "title": "【大損中】最も美しいと言われるビットコインの技術論文を徹底解説してみた。Pythonでのサンプルコード付き！",
         "url": "https://zenn.dev/unemployed/articles/bitcoin-whitepaper",
         "site": "Zenn(Python)",
         "published": "2026-02-09T01:56:30Z",
         "description": "最初に\n※色んな意味で身を削って書いているので、もしかしたらそのうち非公開にして有料記事にするかもです。\nこの記事を読むとビットコインの技術論文が読めるようになります。\nまた副次的な効果でパチンコ・カジノへ行く人はお金が貯まるようになります。\n最近ビットコインが安くなっているという事で購入したのですが、自分は3ヶ月ほど前から気になっていて、暴落後、1500万円超えてからしまったと思い、1450万円...",
-        "category": "開発",
-        "rss_category": "",
-        "image_url": ""
-      },
-      {
-        "title": "AWSで株価予測アプリを作ってみる",
-        "url": "https://zenn.dev/rioichi/articles/88164acf120491",
-        "site": "Zenn(Python)",
-        "published": "2026-02-09T01:38:56Z",
-        "description": "はじめに\n株価予測アプリを作ることにしました。\n最終的には以下を目指します：\n\nLambda/Glueでデータ取得・加工\nSageMakerで株価予測\nRedshiftでデータ分析\nTerraformで全自動化\n\nこの記事では第1回として、Lambdaで株価取得してS3に保存するまでを書きます。\n\n やったこと\n\nLambda関数作成\nyfinance Layerの追加（53MB問題の解決）\nS3...",
         "category": "開発",
         "rss_category": "",
         "image_url": ""
