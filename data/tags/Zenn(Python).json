@@ -1,9 +1,49 @@
 {
   "site": "Zenn(Python)",
-  "last_updated": "2026-02-10T12:37:03.891761",
-  "total_articles": 2349,
+  "last_updated": "2026-02-10T14:07:08.735153",
+  "total_articles": 2355,
   "articles_by_date": {
     "本日": [
+      {
+        "title": "Pythonでプロセス生存確認を実装したら、Windowsで動かなかった話",
+        "url": "https://zenn.dev/rhythmcan/articles/17f0118f9d69f9",
+        "site": "Zenn(Python)",
+        "published": "2026-02-10T11:08:23Z",
+        "description": "TL;DR\n※ これは開発中に起こった問題を元とした、 Claude Code による自動生成記事です\n\n\nos.kill(pid, 0) はUnixではプロセス生存確認に使えるが、Windowsでは SystemError が発生する\nWindowsでは tasklist /FI \"PID eq {pid}\" を使う\nクロスプラットフォーム対応には sys.platform での分岐が必要\n\n!...",
+        "category": "開発",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "Databricks Asset Bundles (DABs)をFreeEdtionプランで試してみる",
+        "url": "https://zenn.dev/asor/articles/4deaf38dd4184e",
+        "site": "Zenn(Python)",
+        "published": "2026-02-10T10:15:10Z",
+        "description": "はじめに\nこんにちは。普段フルスタックエンジニアとして活動しているAsorです。\nデータエンジニアとして、データモデリングやETLの開発はもちろん大事ですが、基盤（プラットフォーム自体やインフラレイヤー）の管理も重要なタスクだと考えています。\n今回はデータプラットフォームであるDatabricksのIaCツールであるDatabricks Asset Bundlesを触ってみたいと思います。なお筆者...",
+        "category": "開発",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": ".gitattributesでGitHubの言語表示を最適化する",
+        "url": "https://zenn.dev/shogaku/articles/gitattributes-github-language-optimization",
+        "site": "Zenn(Python)",
+        "published": "2026-02-10T10:02:34Z",
+        "description": "はじめに\nデータサイエンス系のリポジトリをGitHubに置いていると、こんな表示になることがあります。\nJupyter Notebook 98.3% / Python 1.7%\nPythonで書いたコードなのに、Jupyter Notebookがほぼすべてを占有してしまう問題です。.ipynbファイルは中身がJSON（セルのソース・出力・メタデータの塊）なので、ファイルサイズも言語カウントも圧倒的...",
+        "category": "開発",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "Pytorch Tabularのmodel sweepで最適なモデルを探す",
+        "url": "https://zenn.dev/hiroki_k21/articles/929bfe59024c20",
+        "site": "Zenn(Python)",
+        "published": "2026-02-10T06:07:23Z",
+        "description": "Pytorch Tabularとは\nPytorch Tabularは、表形式データ向けの深層学習モデルをまとめて扱うためのライブラリです。モデルをいくつか試し、学習結果を並べて見比べたいときに役立つ機能として、Model Sweepが用意されています。\n\n Model Sweep\nModel Sweepは、複数のモデル設定をまとめて学習し、指定した指標で並べ替えて比較するための機能です。あらかじめ...",
+        "category": "開発",
+        "rss_category": "",
+        "image_url": ""
+      },
       {
         "title": "［AtCoder］ABC-443｜C - Chokutter Addiction",
         "url": "https://zenn.dev/hyperdb/articles/740195645d37dd",
@@ -182,16 +222,6 @@
         "site": "Zenn(Python)",
         "published": "2026-02-09T12:47:31Z",
         "description": "前置き\nLazyNixというローカル開発環境構築を爆速にするツールを作成しました。本記事では、LazyNixの便利さを伝えるため、使い方をチュートリアル形式で解説します。\nhttps://zenn.dev/shundeveloper/articles/6d9a464c4a6bad\n\n 本記事の対象者\n本記事はPythonを使う方全般に有用です。\n\nPythonの開発環境構築を楽にしたい開発者\nPy...",
-        "category": "開発",
-        "rss_category": "",
-        "image_url": ""
-      },
-      {
-        "title": "AI応用に向けたアナログニューラルネットワーク回路と容量チョッパー型比較器の動作原理",
-        "url": "https://zenn.dev/qwerewq/articles/da9ade63f7e4bf",
-        "site": "Zenn(Python)",
-        "published": "2026-02-09T12:25:02Z",
-        "description": "はじめに\nAIの普及により、ニューラルネットワークを用いた機械学習が広く用いられている。この流れを踏まえ、集積回路分野におけるアナログニューラルネットワークの位置づけを整理する。抵抗を用いた重み付け回路は比較的知られている。一方、容量に電荷を蓄える方式の重み付け回路は、動作を式で追える形の解説が少ない。そこで本記事では、容量による重み付けと比較器による2値化を対象に、電荷保存としきい値比較の関係と...",
         "category": "開発",
         "rss_category": "",
         "image_url": ""
@@ -501,6 +531,46 @@
     ],
     "2026-02": [
       {
+        "title": "Pythonでプロセス生存確認を実装したら、Windowsで動かなかった話",
+        "url": "https://zenn.dev/rhythmcan/articles/17f0118f9d69f9",
+        "site": "Zenn(Python)",
+        "published": "2026-02-10T11:08:23Z",
+        "description": "TL;DR\n※ これは開発中に起こった問題を元とした、 Claude Code による自動生成記事です\n\n\nos.kill(pid, 0) はUnixではプロセス生存確認に使えるが、Windowsでは SystemError が発生する\nWindowsでは tasklist /FI \"PID eq {pid}\" を使う\nクロスプラットフォーム対応には sys.platform での分岐が必要\n\n!...",
+        "category": "開発",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "Databricks Asset Bundles (DABs)をFreeEdtionプランで試してみる",
+        "url": "https://zenn.dev/asor/articles/4deaf38dd4184e",
+        "site": "Zenn(Python)",
+        "published": "2026-02-10T10:15:10Z",
+        "description": "はじめに\nこんにちは。普段フルスタックエンジニアとして活動しているAsorです。\nデータエンジニアとして、データモデリングやETLの開発はもちろん大事ですが、基盤（プラットフォーム自体やインフラレイヤー）の管理も重要なタスクだと考えています。\n今回はデータプラットフォームであるDatabricksのIaCツールであるDatabricks Asset Bundlesを触ってみたいと思います。なお筆者...",
+        "category": "開発",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": ".gitattributesでGitHubの言語表示を最適化する",
+        "url": "https://zenn.dev/shogaku/articles/gitattributes-github-language-optimization",
+        "site": "Zenn(Python)",
+        "published": "2026-02-10T10:02:34Z",
+        "description": "はじめに\nデータサイエンス系のリポジトリをGitHubに置いていると、こんな表示になることがあります。\nJupyter Notebook 98.3% / Python 1.7%\nPythonで書いたコードなのに、Jupyter Notebookがほぼすべてを占有してしまう問題です。.ipynbファイルは中身がJSON（セルのソース・出力・メタデータの塊）なので、ファイルサイズも言語カウントも圧倒的...",
+        "category": "開発",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "Pytorch Tabularのmodel sweepで最適なモデルを探す",
+        "url": "https://zenn.dev/hiroki_k21/articles/929bfe59024c20",
+        "site": "Zenn(Python)",
+        "published": "2026-02-10T06:07:23Z",
+        "description": "Pytorch Tabularとは\nPytorch Tabularは、表形式データ向けの深層学習モデルをまとめて扱うためのライブラリです。モデルをいくつか試し、学習結果を並べて見比べたいときに役立つ機能として、Model Sweepが用意されています。\n\n Model Sweep\nModel Sweepは、複数のモデル設定をまとめて学習し、指定した指標で並べ替えて比較するための機能です。あらかじめ...",
+        "category": "開発",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
         "title": "［AtCoder］ABC-443｜C - Chokutter Addiction",
         "url": "https://zenn.dev/hyperdb/articles/740195645d37dd",
         "site": "Zenn(Python)",
@@ -676,16 +746,6 @@
         "site": "Zenn(Python)",
         "published": "2026-02-09T12:47:31Z",
         "description": "前置き\nLazyNixというローカル開発環境構築を爆速にするツールを作成しました。本記事では、LazyNixの便利さを伝えるため、使い方をチュートリアル形式で解説します。\nhttps://zenn.dev/shundeveloper/articles/6d9a464c4a6bad\n\n 本記事の対象者\n本記事はPythonを使う方全般に有用です。\n\nPythonの開発環境構築を楽にしたい開発者\nPy...",
-        "category": "開発",
-        "rss_category": "",
-        "image_url": ""
-      },
-      {
-        "title": "AI応用に向けたアナログニューラルネットワーク回路と容量チョッパー型比較器の動作原理",
-        "url": "https://zenn.dev/qwerewq/articles/da9ade63f7e4bf",
-        "site": "Zenn(Python)",
-        "published": "2026-02-09T12:25:02Z",
-        "description": "はじめに\nAIの普及により、ニューラルネットワークを用いた機械学習が広く用いられている。この流れを踏まえ、集積回路分野におけるアナログニューラルネットワークの位置づけを整理する。抵抗を用いた重み付け回路は比較的知られている。一方、容量に電荷を蓄える方式の重み付け回路は、動作を式で追える形の解説が少ない。そこで本記事では、容量による重み付けと比較器による2値化を対象に、電荷保存としきい値比較の関係と...",
         "category": "開発",
         "rss_category": "",
         "image_url": ""
