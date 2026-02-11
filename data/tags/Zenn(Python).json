@@ -1,9 +1,9 @@
 {
   "site": "Zenn(Python)",
-  "last_updated": "2026-02-11T14:43:53.249406",
-  "total_articles": 2368,
+  "last_updated": "2026-02-11T15:44:35.393803",
+  "total_articles": 2356,
   "articles_by_date": {
-    "本日": [
+    "昨日": [
       {
         "title": "J-Quants API を FastAPI + SQLAlchemy で実運用する際のハマりどころと設計パターン",
         "url": "https://zenn.dev/ino_h/articles/2026-02-11-jquants-fastapi-sqlalchemy",
@@ -19,7 +19,7 @@
         "url": "https://zenn.dev/somewhere_panda/articles/0573572609e7c7",
         "site": "Zenn(Python)",
         "published": "2026-02-11T10:17:07Z",
-        "description": "概要\nQGIS のプラグインを作成し、プラグイン内の処理を修正するまでのナレッジを記事にしました。\n最近では、ArcGIS Pro のライセンス料金が高くなっており、ライセンス料金を負担に感じている企業も多いと思います。\nArcGIS Pro に対し、QGIS は無料なので ArcGIS Pro から QGIS のプラグインへの移行コストがどの程度か気になったので調査してみました。\nQGISのプラ...",
+        "description": "概要\nQGIS のプラグインがどの程度容易に作成できるか試してみました。\n背景としては、ArcGIS Pro のライセンス料金が高く、ArcGIS Pro のライセンス料金が高いと感じている企業も多いと思います。\nArcGIS のプラグインから QGIS のプラグインへの移行が可能なのか調査するために、QGIS のプラグインを開発してみます。\n\n QGIS のインストール\nQGIS をインストール...",
         "category": "開発",
         "rss_category": "",
         "image_url": ""
@@ -70,6 +70,16 @@
         "site": "Zenn(Python)",
         "published": "2026-02-11T08:38:43Z",
         "description": "はじめに\n前職で事務職をしていました。\nほぼ1人でやっておりまして、PC作業は量が多いと面倒くさい！どうにかならんか！と思っていました。\nそこで楽をするために（内緒）、VBA(Visual Basic for Application)に手を出してみました。\nしかし、VBAはやってみると分かるのですが、Excel, Accessの2強しかない。（Word, PowerPointもありますが）\n\nVB...",
+        "category": "開発",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "6-⑤[AI][Kaggle][python]Kaggle入門(特徴エンジニアリング 5.主成分分析)",
+        "url": "https://zenn.dev/rg687076/articles/ea0893f848cc1d",
+        "site": "Zenn(Python)",
+        "published": "2026-02-11T08:32:01Z",
+        "description": "Kaggle入門6(特徴エンジニアリング 1.特徴エンジニアリングとは)\nKaggle入門6(特徴エンジニアリング 2.相互情報)\nKaggle入門6(特徴エンジニアリング 3.特徴量の作成)\nKaggle入門6(特徴エンジニアリング 4.K平均法によるクラスタリング)\nKaggle入門6(特徴エンジニアリング 5.主成分分析)\nKaggle入門6(特徴エンジニアリング 6.最終回 ターゲットエン...",
         "category": "開発",
         "rss_category": "",
         "image_url": ""
@@ -175,7 +185,7 @@
         "image_url": ""
       }
     ],
-    "昨日": [
+    "一昨日": [
       {
         "title": "【2026年版】Python開発完全ガイド: ゼロから始める基礎入門を公開しました",
         "url": "https://zenn.dev/gaku1234/articles/python-basics-complete-guide-2026-intro",
@@ -192,6 +202,16 @@
         "site": "Zenn(Python)",
         "published": "2026-02-10T11:08:23Z",
         "description": "TL;DR\n※ これは開発中に起こった問題を元とした、 Claude Code による自動生成記事です\n\n\nos.kill(pid, 0) はUnixではプロセス生存確認に使えるが、Windowsでは SystemError が発生する\nWindowsでは tasklist /FI \"PID eq {pid}\" を使う\nクロスプラットフォーム対応には sys.platform での分岐が必要\n\n!...",
+        "category": "開発",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "SHAPとは",
+        "url": "https://zenn.dev/innovativemind/articles/3d15fd34fbc424",
+        "site": "Zenn(Python)",
+        "published": "2026-02-10T11:06:48Z",
+        "description": "SHAP（SHapley Additive exPlanations）は、各特徴量が予測に与えた影響の大きさを定量化する手法である。\n\n ある入力に対するモデル予測を、各特徴量の寄与の和として分解することで求める。\nーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーー\n\n 計算方法(特徴量数 M=4（A, B, C, D)の場合)\n\n\n例えばf(x)が年収予測の...",
         "category": "開発",
         "rss_category": "",
         "image_url": ""
@@ -337,168 +357,6 @@
         "image_url": ""
       }
     ],
-    "一昨日": [
-      {
-        "title": "1.5ビットパイプラインADCの仕組み",
-        "url": "https://zenn.dev/qwerewq/articles/c7fed3363b6833",
-        "site": "Zenn(Python)",
-        "published": "2026-02-09T14:51:52Z",
-        "description": "はじめに\nパイプラインADCは、複数段を直列に並べ、各段で粗い量子化と残差生成を行い、残差を次段へ渡して分解能を積み上げる方式である。高速と中高分解能を同時に狙えるため、通信系、計測系、画像系などで広く使われる。\n一方で、段間で受け渡す残差が正しくないと、その誤差は次段以降で修正できない。各段のMDACでは、残差を所定のゲインで生成し、決められた時間内に必要精度まで収束させる必要がある。このため残...",
-        "category": "開発",
-        "rss_category": "",
-        "image_url": ""
-      },
-      {
-        "title": "【Google AI Studio】デモ⑧AIに道具を作る「Code Execution」",
-        "url": "https://zenn.dev/sesamy_jp/articles/3447759f406e27",
-        "site": "Zenn(Python)",
-        "published": "2026-02-09T14:08:54Z",
-        "description": "AIに難しい計算を頼んだら、自信満々に間違えられたことはありませんか？\nAI（言語モデル）は言葉を操る天才ですが、厳密な「計算」や「論理」は少し苦手です。\nその弱点を、「AIに自分でプログラムを書いて解かせる」　ことで克服するのが、今回紹介する Code Execution（コード実行） です。\n\n 🚀 ステップ 1：AI Studioで「自習・自走」を見る\n\nまずは、PlaygroundでAIが...",
-        "category": "開発",
-        "rss_category": "",
-        "image_url": ""
-      },
-      {
-        "title": "MLB Statcast + Bat Tracking データセット（2024-2025）をKaggleに公開した話",
-        "url": "https://zenn.dev/shogaku/articles/mlb-statcast-bat-tracking-dataset-2024-2025",
-        "site": "Zenn(Python)",
-        "published": "2026-02-09T13:46:42Z",
-        "description": "はじめに\nMLBの2024-2025シーズンのStatcastデータにBat Tracking（バットトラッキング）メトリクスを組み合わせたデータセットをKaggleに公開しました。\nhttps://www.kaggle.com/datasets/yasunorim/mlb-statcast-bat-tracking-2024-2025\n\n Bat Trackingとは\nBat Trackingは...",
-        "category": "開発",
-        "rss_category": "",
-        "image_url": ""
-      },
-      {
-        "title": "6-③[AI][Kaggle][python]Kaggle入門(特徴エンジニアリング 3.特徴量の作成)",
-        "url": "https://zenn.dev/rg687076/articles/6523714297acd2",
-        "site": "Zenn(Python)",
-        "published": "2026-02-09T13:07:41Z",
-        "description": "Kaggle入門6(特徴エンジニアリング 1.特徴エンジニアリングとは)\nKaggle入門6(特徴エンジニアリング 2.相互情報)\nKaggle入門6(特徴エンジニアリング 3.特徴量の作成)\nKaggle入門6(特徴エンジニアリング 4.K平均法によるクラスタリング)\nKaggle入門6(特徴エンジニアリング 5.xxx)\nKaggle入門6(特徴エンジニアリング 6.最終回 xxx)\n← Ka...",
-        "category": "開発",
-        "rss_category": "",
-        "image_url": ""
-      },
-      {
-        "title": "LazyNixとuvでお手軽Python開発",
-        "url": "https://zenn.dev/shundeveloper/articles/c74a9afbf1e786",
-        "site": "Zenn(Python)",
-        "published": "2026-02-09T12:47:31Z",
-        "description": "前置き\nLazyNixというローカル開発環境構築を爆速にするツールを作成しました。本記事では、LazyNixの便利さを伝えるため、使い方をチュートリアル形式で解説します。\nhttps://zenn.dev/shundeveloper/articles/6d9a464c4a6bad\n\n 本記事の対象者\n本記事はPythonを使う方全般に有用です。\n\nPythonの開発環境構築を楽にしたい開発者\nPy...",
-        "category": "開発",
-        "rss_category": "",
-        "image_url": ""
-      },
-      {
-        "title": "APIレート制限の回避戦略 - 429エラーを防ぐ実践的アプローチ",
-        "url": "https://zenn.dev/datajournal1/articles/e6f52ee9079dc9",
-        "site": "Zenn(Python)",
-        "published": "2026-02-09T07:02:42Z",
-        "description": "はじめに\n2年前、スタートアップでSNS分析ツールを開発していた際、「Twitter APIのレート制限で1日に数百回しかデータが取れない」という壁にぶつかりました。ビジネス要件は1日10万件以上のツイート収集。従来のアプローチでは到底不可能でした。\n試行錯誤の末、複数のレート制限回避戦略を組み合わせることで、安定して大量データを収集できるシステムを構築しました。本記事では、その実装プロセスで学ん...",
-        "category": "開発",
-        "rss_category": "",
-        "image_url": ""
-      },
-      {
-        "title": "［AtCoder］ABC-443｜A - Append s",
-        "url": "https://zenn.dev/hyperdb/articles/705672e21fbb2c",
-        "site": "Zenn(Python)",
-        "published": "2026-02-09T05:31:44Z",
-        "description": "設問ページ\n\n🔗ABC-443 A - Append s\n\n\n\n 提出結果\ndef getString():\n    return input()\n\n\ndef main():\n    S = getString()\n\n    print(f\"{S}s\")\n\n\nif __name__ == \"__main__\":\n    main()",
-        "category": "開発",
-        "rss_category": "",
-        "image_url": ""
-      },
-      {
-        "title": "［AtCoder］ABC-443｜B - Setsubun",
-        "url": "https://zenn.dev/hyperdb/articles/5209462a61d888",
-        "site": "Zenn(Python)",
-        "published": "2026-02-09T05:31:43Z",
-        "description": "設問ページ\n\n🔗ABC-443 B - Setsubun\n\n\n\n 提出結果\ndef getIntMap():\n    return map(int, input().split())\n\n\ndef main():\n    N, K = getIntMap()\n\n    x = 0  # 年数\n    sum = N\n    while sum &lt; K:\n        x += 1\n     ...",
-        "category": "開発",
-        "rss_category": "",
-        "image_url": ""
-      },
-      {
-        "title": "Claude API実践レシピ集 ― TypeScript/Pythonで学ぶAI活用パターン",
-        "url": "https://zenn.dev/imudak/books/claude-api-recipes",
-        "site": "Zenn(Python)",
-        "published": "2026-02-09T04:06:55Z",
-        "description": "Anthropic Claude APIを使った実践的なレシピ集。基本的なAPI呼び出しからストリーミング、Tool Use、Vision、バッチ処理、コスト最適化まで、実際に動くコード例とともに解説します。",
-        "category": "開発",
-        "rss_category": "",
-        "image_url": ""
-      },
-      {
-        "title": "MLB投手の球種構成データセット（2020-2025）をKaggleに公開した話",
-        "url": "https://zenn.dev/shogaku/articles/mlb-pitcher-arsenal-dataset-2020-2025",
-        "site": "Zenn(Python)",
-        "published": "2026-02-09T03:00:01Z",
-        "description": "はじめに\nMLB投手の球種構成（Arsenal）の年次変化を追跡できるデータセットをKaggleに公開しました。\nhttps://www.kaggle.com/datasets/yasunorim/mlb-pitcher-arsenal-2020-2025\n本記事では、このデータセットの内容と使い方を紹介します。\n\n データセットの概要\nこのデータセットは、2020年から2025年までの6シーズン...",
-        "category": "開発",
-        "rss_category": "",
-        "image_url": ""
-      },
-      {
-        "title": "【大損中】最も美しいと言われるビットコインの技術論文を徹底解説してみた。Pythonでのサンプルコード付き！",
-        "url": "https://zenn.dev/unemployed/articles/bitcoin-whitepaper",
-        "site": "Zenn(Python)",
-        "published": "2026-02-09T01:56:30Z",
-        "description": "最初に\n※色んな意味で身を削って書いているので、もしかしたらそのうち非公開にして有料記事にするかもです。\nこの記事を読むとビットコインの技術論文が読めるようになります。\nまた副次的な効果でパチンコ・カジノへ行く人はお金が貯まるようになります。\n最近ビットコインが安くなっているという事で購入したのですが、自分は3ヶ月ほど前から気になっていて、暴落後、1500万円超えてからしまったと思い、1450万円...",
-        "category": "開発",
-        "rss_category": "",
-        "image_url": ""
-      },
-      {
-        "title": "【図解】Windows11でWSL2＋Docker+VSCode+ClaudeCodeによるPython開発環境を構築する手順",
-        "url": "https://zenn.dev/stockdatalab/articles/20260209_tech_env_claude",
-        "site": "Zenn(Python)",
-        "published": "2026-02-09T01:36:43Z",
-        "description": "はじめに\nこの記事では、Windows 11 に WSL2 を導入し、Docker上で Claude Code（VS Code拡張） を使える開発環境を作る手順を説明します。\n.devcontainer/devcontainer.json を置き、コンテナ起動時に Claude Code を自動でセットアップできるようにすることで、今後コンテナを作り直しても、拡張機能を手動インストールし直す手間を...",
-        "category": "開発",
-        "rss_category": "",
-        "image_url": ""
-      },
-      {
-        "title": "LangChainを学ぶ - 1. LangChainの基礎",
-        "url": "https://zenn.dev/hkazuki/articles/07d4f9b77c285c",
-        "site": "Zenn(Python)",
-        "published": "2026-02-08T23:59:19Z",
-        "description": "はじめに\nLangChainを初めて学ぶにあたって、実際に手を動かした内容をまとめた記事となります。\n複数回に分けて記事にしたいと思います。\n今回は、LangChainの基礎として基本的なコンポーネントを用いてLLMを動かしてみます。\n参照したリソースは以下に加えて、理解の補助にClaudeなどを適宜使用しました。\n\n LangChain Docs 公式\n\nhttps://docs.langcha...",
-        "category": "開発",
-        "rss_category": "",
-        "image_url": ""
-      },
-      {
-        "title": "freee APIをCloud Runで動かして経理作業を月2時間に減らした話",
-        "url": "https://zenn.dev/correlate/articles/freee-api-cloud-run",
-        "site": "Zenn(Python)",
-        "published": "2026-02-08T23:00:00Z",
-        "description": "毎月の経理に半日費やしていた\n合同会社を運営していると、開発以外の業務が地味に重い。特に経理。請求書の作成、経費の登録、入金の確認と消込。freeeを使っていても、ブラウザを開いて手作業で入力する時間が毎月半日ほどかかっていました。\n「freeeにはAPIがあるんだから、自動化すればいいのでは？」\nそう思ったのが半年前。実際にCloud Run上でfreee APIと連携する仕組みを作り、経理作業...",
-        "category": "開発",
-        "rss_category": "",
-        "image_url": ""
-      },
-      {
-        "title": "他人の戦国AI将軍が好きすぎてモニターアプリを勝手に作ったら、「足軽は切腹できない」という歴史的事実が判明した",
-        "url": "https://zenn.dev/tutupizizizi/articles/shogun-monitor-app",
-        "site": "Zenn(Python)",
-        "published": "2026-02-08T22:30:02Z",
-        "description": "この記事が好きすぎた。\nhttps://zenn.dev/shio_shoppaize/articles/5fee11d03a11a1\nClaude Code + tmux で「将軍→家老→足軽」の指揮系統を作って、AI部下10人に並列開発させるOSS。将軍（統括AI）、家老（中間管理AI）、足軽8人（実働AI）。全員Claude Codeで動く。\nで、好きすぎて、勝手にモニターアプリを作った。\n...",
-        "category": "開発",
-        "rss_category": "",
-        "image_url": ""
-      },
-      {
-        "title": "🔁 AsyncSession × SQLModel × Pytest：トランザクションロールバック戦略完全解説",
-        "url": "https://zenn.dev/oit2003/articles/570abaab1bf94e",
-        "site": "Zenn(Python)",
-        "published": "2026-02-08T15:00:01Z",
-        "description": "🌐 はじめに\n非同期DBテストを実務レベルで安定・高速に運用するために、トランザクションロールバック戦略は避けて通れない重要テーマです。\n前回の記事では、AsyncSession と SQLModel を使った基本的な非同期DBテスト構成として、「テストごとにDBを作り直す」方式を紹介しました。この方法は概念的に分かりやすく、学習用途や小規模テストには非常に有効です。しかし、実務でテストケースが増...",
-        "category": "開発",
-        "rss_category": "",
-        "image_url": ""
-      }
-    ],
     "2026-02": [
       {
         "title": "J-Quants API を FastAPI + SQLAlchemy で実運用する際のハマりどころと設計パターン",
@@ -515,7 +373,7 @@
         "url": "https://zenn.dev/somewhere_panda/articles/0573572609e7c7",
         "site": "Zenn(Python)",
         "published": "2026-02-11T10:17:07Z",
-        "description": "概要\nQGIS のプラグインを作成し、プラグイン内の処理を修正するまでのナレッジを記事にしました。\n最近では、ArcGIS Pro のライセンス料金が高くなっており、ライセンス料金を負担に感じている企業も多いと思います。\nArcGIS Pro に対し、QGIS は無料なので ArcGIS Pro から QGIS のプラグインへの移行コストがどの程度か気になったので調査してみました。\nQGISのプラ...",
+        "description": "概要\nQGIS のプラグインがどの程度容易に作成できるか試してみました。\n背景としては、ArcGIS Pro のライセンス料金が高く、ArcGIS Pro のライセンス料金が高いと感じている企業も多いと思います。\nArcGIS のプラグインから QGIS のプラグインへの移行が可能なのか調査するために、QGIS のプラグインを開発してみます。\n\n QGIS のインストール\nQGIS をインストール...",
         "category": "開発",
         "rss_category": "",
         "image_url": ""
@@ -566,6 +424,16 @@
         "site": "Zenn(Python)",
         "published": "2026-02-11T08:38:43Z",
         "description": "はじめに\n前職で事務職をしていました。\nほぼ1人でやっておりまして、PC作業は量が多いと面倒くさい！どうにかならんか！と思っていました。\nそこで楽をするために（内緒）、VBA(Visual Basic for Application)に手を出してみました。\nしかし、VBAはやってみると分かるのですが、Excel, Accessの2強しかない。（Word, PowerPointもありますが）\n\nVB...",
+        "category": "開発",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "6-⑤[AI][Kaggle][python]Kaggle入門(特徴エンジニアリング 5.主成分分析)",
+        "url": "https://zenn.dev/rg687076/articles/ea0893f848cc1d",
+        "site": "Zenn(Python)",
+        "published": "2026-02-11T08:32:01Z",
+        "description": "Kaggle入門6(特徴エンジニアリング 1.特徴エンジニアリングとは)\nKaggle入門6(特徴エンジニアリング 2.相互情報)\nKaggle入門6(特徴エンジニアリング 3.特徴量の作成)\nKaggle入門6(特徴エンジニアリング 4.K平均法によるクラスタリング)\nKaggle入門6(特徴エンジニアリング 5.主成分分析)\nKaggle入門6(特徴エンジニアリング 6.最終回 ターゲットエン...",
         "category": "開発",
         "rss_category": "",
         "image_url": ""
@@ -686,6 +554,16 @@
         "site": "Zenn(Python)",
         "published": "2026-02-10T11:08:23Z",
         "description": "TL;DR\n※ これは開発中に起こった問題を元とした、 Claude Code による自動生成記事です\n\n\nos.kill(pid, 0) はUnixではプロセス生存確認に使えるが、Windowsでは SystemError が発生する\nWindowsでは tasklist /FI \"PID eq {pid}\" を使う\nクロスプラットフォーム対応には sys.platform での分岐が必要\n\n!...",
+        "category": "開発",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "SHAPとは",
+        "url": "https://zenn.dev/innovativemind/articles/3d15fd34fbc424",
+        "site": "Zenn(Python)",
+        "published": "2026-02-10T11:06:48Z",
+        "description": "SHAP（SHapley Additive exPlanations）は、各特徴量が予測に与えた影響の大きさを定量化する手法である。\n\n ある入力に対するモデル予測を、各特徴量の寄与の和として分解することで求める。\nーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーー\n\n 計算方法(特徴量数 M=4（A, B, C, D)の場合)\n\n\n例えばf(x)が年収予測の...",
         "category": "開発",
         "rss_category": "",
         "image_url": ""
