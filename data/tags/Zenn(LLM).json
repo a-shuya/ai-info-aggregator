@@ -1,15 +1,97 @@
 {
   "site": "Zenn(LLM)",
-  "last_updated": "2026-02-19T20:54:19.582132",
-  "total_articles": 1879,
+  "last_updated": "2026-02-19T21:38:05.948128",
+  "total_articles": 1891,
   "articles_by_date": {
+    "本日": [
+      {
+        "title": "LLMプロンプト最適化で削りすぎた話 - 75%削減後にわかったバランスの重要性",
+        "url": "https://zenn.dev/nomuraya/articles/llm-prompt-optimization-balance",
+        "site": "Zenn(LLM)",
+        "published": "2026-02-19T18:09:59Z",
+        "description": "Claude Codeのモードファイルを最適化していたときの話です。「LLMが読むんだから、できるだけ削ろう」と考えて75%も削減したら、ユーザーから「削りすぎでは？」と指摘を受けました。\nこの失敗から、LLM向け最適化とユーザー体験のバランスについて学んだことをまとめます。\n\n 何をやったのか\nClaude Codeには「モードファイル」という、AIの動作を定義するファイルがあります。私はこれを...",
+        "category": "AI・技術",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "LLM出力精度を上げるNG例明示テクニック - ChatGPTプロンプト改善の実例",
+        "url": "https://zenn.dev/nomuraya/articles/llm-output-precision-ng-examples",
+        "site": "Zenn(LLM)",
+        "published": "2026-02-19T17:39:53Z",
+        "description": "ChatGPTにセッションログを生成させるスクリプトを作っていたときのことです。「こういう形式で出力して」と指示したのに、期待と違う形式で出力されることがありました。\n試行錯誤の結果、NG例を明示的に記載することで出力精度が大幅に向上しました。\n\n 何が問題だったのか\nセッションログ生成スクリプトで、以下のような出力を期待していました：\n期待していた出力:\n### 指示\n\n**指示ID**: P-...",
+        "category": "AI・技術",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "RAGの\"チャンク問題\"を超える Agentic File Search ── ドキュメントを人間のように読むAIエージェント",
+        "url": "https://zenn.dev/sweetfish/articles/1f438a5620e89a",
+        "site": "Zenn(LLM)",
+        "published": "2026-02-19T15:59:52Z",
+        "description": "はじめに\nRAGを組んでみたものの、「なんか回答の精度がいまいちだな...」と感じたことはありませんか？\n特に、契約書・仕様書・社内規程のように文書同士が相互参照しあうドキュメント群や、設計資料・運用手順書・議事録・FAQなど複数の資料をまたいで判断が必要な知識ベースでは、RAGの「チャンクに分割 → ベクトル検索」というパイプラインが構造的にうまく機能しないケースがあります。\nこの記事では、OS...",
+        "category": "AI・技術",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "なぜ新規事業開発に「エンジニアの思考」が必要なのか？生成AI時代の方法論「Depth & Velocity」",
+        "url": "https://zenn.dev/leading_ai/articles/2d4c53ba48f370",
+        "site": "Zenn(LLM)",
+        "published": "2026-02-19T15:33:23Z",
+        "description": "はじめに\nスタートアップや社内新規事業の現場で、こんな経験はないだろうか。\n\n事業サイドが3ヶ月かけた市場調査をPowerPointにまとめてくる。あなたは「これ、プロトタイプ作った方が早くない？」と思っている\n経営会議で企画が却下される。でもユーザーに触らせてすらいない\n「AIを使って効率化しよう」という号令は出るが、議事録要約で終わっている\n\n新規事業開発のプロセス自体が、ソフトウェア開発の進...",
+        "category": "AI・技術",
+        "rss_category": "",
+        "image_url": ""
+      }
+    ],
     "昨日": [
+      {
+        "title": "生成AIの推論コストを設計する",
+        "url": "https://zenn.dev/michishita_tkyk/articles/7addb5dd0b3ff4",
+        "site": "Zenn(LLM)",
+        "published": "2026-02-19T14:15:01Z",
+        "description": "生成AI事業において、推論コストは利益率を直接左右します。\nそれにもかかわらず、コストが「後から集計する数字」になっているケースは少なくありません。\n私は常にこう考えています。\nコストは経理の問題ではなく、アーキテクチャ設計の問題です。\n\n\n 推論コストは式で分解できる\nまず前提です。\n推論コストは構造化できる。\n基本式はシンプルです。\n月間コスト = リクエスト数 × 平均入力トークン × 単価...",
+        "category": "AI・技術",
+        "rss_category": "",
+        "image_url": ""
+      },
       {
         "title": "RAGがうまくいかない理由を設計観点で整理する",
         "url": "https://zenn.dev/michishita_tkyk/articles/491b7dee033606",
         "site": "Zenn(LLM)",
         "published": "2026-02-19T14:03:46Z",
         "description": "RAG（Retrieval-Augmented Generation）が期待通りに機能しない、という相談は非常に多いです。\n「精度が安定しない」「それっぽいが間違う」「PoCは動いたが本番で使えない」。\n原因はモデルの性能ではなく、設計の甘さにあるケースがほとんどです。\n本記事では、チャンク設計・Embedding選定・Retrieval評価という3つの観点から、改善に直結する論点を整理します。\n...",
+        "category": "AI・技術",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "夢みる機械",
+        "url": "https://zenn.dev/j_m/books/822730d170445e",
+        "site": "Zenn(LLM)",
+        "published": "2026-02-19T13:20:17Z",
+        "description": "「人間の解剖は猿の解剖のための鍵である」ーーカール・マルクス『経済学批判要綱』",
+        "category": "AI・技術",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "デジタル庁「行政の進化と革新のための生成AIの調達・利活用ガイドライン」を民間向けとして活用",
+        "url": "https://zenn.dev/syoshida07/articles/98cbecf180c8b8",
+        "site": "Zenn(LLM)",
+        "published": "2026-02-19T13:09:14Z",
+        "description": "生成AIは行政だけでなく、民間企業においても業務効率化、知識創造、意思決定支援など多方面で活用が進んでいる。\n一方で、誤情報生成、機密情報の漏えい、説明責任の欠如といったリスクも顕在化しており、組織としてのガバナンス体制と利用者のリテラシー強化が不可欠となっています。\n政府が2025年に公表した「行政の進化と革新のための生成AIの調達・利活用ガイドライン」は行政向けに策定されたものだが、その内容は...",
+        "category": "AI・技術",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "AI安全性レポート2026: 推論モデルの進化と自律エージェントの現在地",
+        "url": "https://zenn.dev/yu_ga/articles/ai-safety-report-2026-evolution",
+        "site": "Zenn(LLM)",
+        "published": "2026-02-19T12:52:45Z",
+        "description": "📌 3行でわかるこの記事\n\n\n国際AI安全性レポート2026が公開され、GPT-5, Claude Opus 4.5, Gemini 3などの推論システム（Reasoning Systems）の劇的な進化が明らかになった。\nGoogleとOpenAIのモデルが国際数学オリンピックで金メダルレベルを達成し、コーディングタスクの遂行能力も7ヶ月ごとに倍増している。\n一方で、AIエージェントによる自律的...",
         "category": "AI・技術",
         "rss_category": "",
         "image_url": ""
@@ -130,26 +212,6 @@
         "site": "Zenn(LLM)",
         "published": "2026-02-18T22:40:04Z",
         "description": "1. ざっくり言うと？\n\n東洋建設が、工事現場のカメラ映像をAIがリアルタイムで分析し、危険な状況を文章＆音声で知らせるシステムを開発\n従来のAIは「事前に覚えたもの」しか認識できなかったが、新システムは画像と言葉を同時に理解するAI　VLMで柔軟に対応\n現場の状況に合わせてプロンプト（指示文）を変えるだけで、同じシステムをどんな工事にも使い回せるのが革命的\n\n\n 2. もっと詳しく！\n\n 「覚え...",
-        "category": "AI・技術",
-        "rss_category": "",
-        "image_url": ""
-      },
-      {
-        "title": "【不都合な真実】Opus 4.5でも完全自動化は無理。AIエージェントの根本的限界を論文から読み解く",
-        "url": "https://zenn.dev/babushkai/articles/2026-01-31-why-ai-cant-automate-everything",
-        "site": "Zenn(LLM)",
-        "published": "2026-02-18T18:22:21Z",
-        "description": "AIエージェントで全部自動化できる？残念ながら、それは幻想です\nMoltbook、OpenClaw、claude-flow、CrewAI...\n2026年、AIエージェントの「群れ」が話題です。\nでも、ちょっと待ってください。\n本当に「完全自動化」できると思いますか？\n結論から言うと、Opus 4.5の200Kコンテキストでも、スウォーム・オーケストレーションでも、根本的な問題は解決していません。...",
-        "category": "AI・技術",
-        "rss_category": "",
-        "image_url": ""
-      },
-      {
-        "title": "情報収集を全自動化した ― RSS・LLMキュレーション・Discord配信をPythonで組んだ話",
-        "url": "https://zenn.dev/frsk/articles/rss-llm-auto-curation-pipeline",
-        "site": "Zenn(LLM)",
-        "published": "2026-02-18T16:17:38Z",
-        "description": "Xのタイムラインが情報源のすべてだった\n正直に言うと、技術トレンドのキャッチアップはほぼXに頼り切っていた。フォローしているエンジニアのポストを眺めて、バズっているものを拾う。それが自分の情報収集のほぼ全てだった。\nしばらくはそれで回っていた。ただ、ある時期から違和感を覚えるようになった。\n\n\nタイムラインが偏る ― アルゴリズムが自分の関心を強化する方向に働くので、見える世界がどんどん狭くなる。...",
         "category": "AI・技術",
         "rss_category": "",
         "image_url": ""
@@ -429,11 +491,91 @@
     ],
     "2026-02": [
       {
+        "title": "LLMプロンプト最適化で削りすぎた話 - 75%削減後にわかったバランスの重要性",
+        "url": "https://zenn.dev/nomuraya/articles/llm-prompt-optimization-balance",
+        "site": "Zenn(LLM)",
+        "published": "2026-02-19T18:09:59Z",
+        "description": "Claude Codeのモードファイルを最適化していたときの話です。「LLMが読むんだから、できるだけ削ろう」と考えて75%も削減したら、ユーザーから「削りすぎでは？」と指摘を受けました。\nこの失敗から、LLM向け最適化とユーザー体験のバランスについて学んだことをまとめます。\n\n 何をやったのか\nClaude Codeには「モードファイル」という、AIの動作を定義するファイルがあります。私はこれを...",
+        "category": "AI・技術",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "LLM出力精度を上げるNG例明示テクニック - ChatGPTプロンプト改善の実例",
+        "url": "https://zenn.dev/nomuraya/articles/llm-output-precision-ng-examples",
+        "site": "Zenn(LLM)",
+        "published": "2026-02-19T17:39:53Z",
+        "description": "ChatGPTにセッションログを生成させるスクリプトを作っていたときのことです。「こういう形式で出力して」と指示したのに、期待と違う形式で出力されることがありました。\n試行錯誤の結果、NG例を明示的に記載することで出力精度が大幅に向上しました。\n\n 何が問題だったのか\nセッションログ生成スクリプトで、以下のような出力を期待していました：\n期待していた出力:\n### 指示\n\n**指示ID**: P-...",
+        "category": "AI・技術",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "RAGの\"チャンク問題\"を超える Agentic File Search ── ドキュメントを人間のように読むAIエージェント",
+        "url": "https://zenn.dev/sweetfish/articles/1f438a5620e89a",
+        "site": "Zenn(LLM)",
+        "published": "2026-02-19T15:59:52Z",
+        "description": "はじめに\nRAGを組んでみたものの、「なんか回答の精度がいまいちだな...」と感じたことはありませんか？\n特に、契約書・仕様書・社内規程のように文書同士が相互参照しあうドキュメント群や、設計資料・運用手順書・議事録・FAQなど複数の資料をまたいで判断が必要な知識ベースでは、RAGの「チャンクに分割 → ベクトル検索」というパイプラインが構造的にうまく機能しないケースがあります。\nこの記事では、OS...",
+        "category": "AI・技術",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "なぜ新規事業開発に「エンジニアの思考」が必要なのか？生成AI時代の方法論「Depth & Velocity」",
+        "url": "https://zenn.dev/leading_ai/articles/2d4c53ba48f370",
+        "site": "Zenn(LLM)",
+        "published": "2026-02-19T15:33:23Z",
+        "description": "はじめに\nスタートアップや社内新規事業の現場で、こんな経験はないだろうか。\n\n事業サイドが3ヶ月かけた市場調査をPowerPointにまとめてくる。あなたは「これ、プロトタイプ作った方が早くない？」と思っている\n経営会議で企画が却下される。でもユーザーに触らせてすらいない\n「AIを使って効率化しよう」という号令は出るが、議事録要約で終わっている\n\n新規事業開発のプロセス自体が、ソフトウェア開発の進...",
+        "category": "AI・技術",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "生成AIの推論コストを設計する",
+        "url": "https://zenn.dev/michishita_tkyk/articles/7addb5dd0b3ff4",
+        "site": "Zenn(LLM)",
+        "published": "2026-02-19T14:15:01Z",
+        "description": "生成AI事業において、推論コストは利益率を直接左右します。\nそれにもかかわらず、コストが「後から集計する数字」になっているケースは少なくありません。\n私は常にこう考えています。\nコストは経理の問題ではなく、アーキテクチャ設計の問題です。\n\n\n 推論コストは式で分解できる\nまず前提です。\n推論コストは構造化できる。\n基本式はシンプルです。\n月間コスト = リクエスト数 × 平均入力トークン × 単価...",
+        "category": "AI・技術",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
         "title": "RAGがうまくいかない理由を設計観点で整理する",
         "url": "https://zenn.dev/michishita_tkyk/articles/491b7dee033606",
         "site": "Zenn(LLM)",
         "published": "2026-02-19T14:03:46Z",
         "description": "RAG（Retrieval-Augmented Generation）が期待通りに機能しない、という相談は非常に多いです。\n「精度が安定しない」「それっぽいが間違う」「PoCは動いたが本番で使えない」。\n原因はモデルの性能ではなく、設計の甘さにあるケースがほとんどです。\n本記事では、チャンク設計・Embedding選定・Retrieval評価という3つの観点から、改善に直結する論点を整理します。\n...",
+        "category": "AI・技術",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "夢みる機械",
+        "url": "https://zenn.dev/j_m/books/822730d170445e",
+        "site": "Zenn(LLM)",
+        "published": "2026-02-19T13:20:17Z",
+        "description": "「人間の解剖は猿の解剖のための鍵である」ーーカール・マルクス『経済学批判要綱』",
+        "category": "AI・技術",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "デジタル庁「行政の進化と革新のための生成AIの調達・利活用ガイドライン」を民間向けとして活用",
+        "url": "https://zenn.dev/syoshida07/articles/98cbecf180c8b8",
+        "site": "Zenn(LLM)",
+        "published": "2026-02-19T13:09:14Z",
+        "description": "生成AIは行政だけでなく、民間企業においても業務効率化、知識創造、意思決定支援など多方面で活用が進んでいる。\n一方で、誤情報生成、機密情報の漏えい、説明責任の欠如といったリスクも顕在化しており、組織としてのガバナンス体制と利用者のリテラシー強化が不可欠となっています。\n政府が2025年に公表した「行政の進化と革新のための生成AIの調達・利活用ガイドライン」は行政向けに策定されたものだが、その内容は...",
+        "category": "AI・技術",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "AI安全性レポート2026: 推論モデルの進化と自律エージェントの現在地",
+        "url": "https://zenn.dev/yu_ga/articles/ai-safety-report-2026-evolution",
+        "site": "Zenn(LLM)",
+        "published": "2026-02-19T12:52:45Z",
+        "description": "📌 3行でわかるこの記事\n\n\n国際AI安全性レポート2026が公開され、GPT-5, Claude Opus 4.5, Gemini 3などの推論システム（Reasoning Systems）の劇的な進化が明らかになった。\nGoogleとOpenAIのモデルが国際数学オリンピックで金メダルレベルを達成し、コーディングタスクの遂行能力も7ヶ月ごとに倍増している。\n一方で、AIエージェントによる自律的...",
         "category": "AI・技術",
         "rss_category": "",
         "image_url": ""
@@ -554,26 +696,6 @@
         "site": "Zenn(LLM)",
         "published": "2026-02-18T22:40:04Z",
         "description": "1. ざっくり言うと？\n\n東洋建設が、工事現場のカメラ映像をAIがリアルタイムで分析し、危険な状況を文章＆音声で知らせるシステムを開発\n従来のAIは「事前に覚えたもの」しか認識できなかったが、新システムは画像と言葉を同時に理解するAI　VLMで柔軟に対応\n現場の状況に合わせてプロンプト（指示文）を変えるだけで、同じシステムをどんな工事にも使い回せるのが革命的\n\n\n 2. もっと詳しく！\n\n 「覚え...",
-        "category": "AI・技術",
-        "rss_category": "",
-        "image_url": ""
-      },
-      {
-        "title": "【不都合な真実】Opus 4.5でも完全自動化は無理。AIエージェントの根本的限界を論文から読み解く",
-        "url": "https://zenn.dev/babushkai/articles/2026-01-31-why-ai-cant-automate-everything",
-        "site": "Zenn(LLM)",
-        "published": "2026-02-18T18:22:21Z",
-        "description": "AIエージェントで全部自動化できる？残念ながら、それは幻想です\nMoltbook、OpenClaw、claude-flow、CrewAI...\n2026年、AIエージェントの「群れ」が話題です。\nでも、ちょっと待ってください。\n本当に「完全自動化」できると思いますか？\n結論から言うと、Opus 4.5の200Kコンテキストでも、スウォーム・オーケストレーションでも、根本的な問題は解決していません。...",
-        "category": "AI・技術",
-        "rss_category": "",
-        "image_url": ""
-      },
-      {
-        "title": "情報収集を全自動化した ― RSS・LLMキュレーション・Discord配信をPythonで組んだ話",
-        "url": "https://zenn.dev/frsk/articles/rss-llm-auto-curation-pipeline",
-        "site": "Zenn(LLM)",
-        "published": "2026-02-18T16:17:38Z",
-        "description": "Xのタイムラインが情報源のすべてだった\n正直に言うと、技術トレンドのキャッチアップはほぼXに頼り切っていた。フォローしているエンジニアのポストを眺めて、バズっているものを拾う。それが自分の情報収集のほぼ全てだった。\nしばらくはそれで回っていた。ただ、ある時期から違和感を覚えるようになった。\n\n\nタイムラインが偏る ― アルゴリズムが自分の関心を強化する方向に働くので、見える世界がどんどん狭くなる。...",
         "category": "AI・技術",
         "rss_category": "",
         "image_url": ""
