@@ -1,15 +1,67 @@
 {
   "site": "Zenn(LLM)",
-  "last_updated": "2026-02-20T20:38:11.671924",
+  "last_updated": "2026-02-20T20:59:36.097546",
   "total_articles": 1884,
   "articles_by_date": {
+    "本日": [
+      {
+        "title": "ローカルLLMで2万文字のドキュメント分析を試した話 - DeepSeek-R1 32Bの実力検証",
+        "url": "https://zenn.dev/nomuraya/articles/local-llm-benchmark-deepseek-r1-32b",
+        "site": "Zenn(LLM)",
+        "published": "2026-02-20T17:39:57Z",
+        "description": "Mac上で動くローカルLLMを使って、同じタスク（2万文字のドキュメント分析）を複数のモデルで実行し、その性能差を比較しました。\nなぜこのベンチマークをやったか\nきっかけは、「Claude API の利用料金が気になる」という単純な動機でした。毎月の請求を見るたびに「これ、ローカルでできないかな？」と考えていました。\nさらに、「API が落ちたら作業が止まる」というリスクも気になっていました。ネッ...",
+        "category": "AI・技術",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "LLMアプリの品質保証パターン — 教育AIプロダクトの実装から学ぶ",
+        "url": "https://zenn.dev/7788/books/llm-quality-assurance-patterns",
+        "site": "Zenn(LLM)",
+        "published": "2026-02-20T15:50:36Z",
+        "description": "AIが生成するコンテンツの品質をどう担保するか。教育AIアプリ「MochiQ」の開発経験を通じて得た、LLM出力のバリデーション設計、ハルシネーション対策、プロンプトエンジニアリング、コスト最適化のパターンを体系的に解説します。",
+        "category": "AI・技術",
+        "rss_category": "",
+        "image_url": ""
+      }
+    ],
     "昨日": [
+      {
+        "title": "Model Reasoningの仕組み (メモ)",
+        "url": "https://zenn.dev/awesome548/articles/03c9051d7ab236",
+        "site": "Zenn(LLM)",
+        "published": "2026-02-20T14:55:25Z",
+        "description": "モデルのReasoning（推論）とは\n大規模言語モデル（LLM）におけるReasoningとは、複雑な問題に対して中間的な思考プロセスを生成しながら論理的に解決策を導き出す能力\n\n 大枠の流れ\n\n 入力の解釈とタスク分解\nモデルは入力を受け取ると、それを解決可能な小さなサブタスクに分解します。この挙動は、少数のラベル付きデータによるSupervised Fine-Tuning(SFT)を起点とし...",
+        "category": "AI・技術",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "生成AI基盤のログ設計と評価基盤の作り方",
+        "url": "https://zenn.dev/michishita_tkyk/articles/e9cc6e1bd7fbce",
+        "site": "Zenn(LLM)",
+        "published": "2026-02-20T14:31:27Z",
+        "description": "生成AI基盤は「モデル精度」ではなく「ログ設計」で成否が決まります。\nRAGやエージェントのPoCは通る。しかし本番で使われ始めた瞬間に「何が起きているか分からない」という状態になる。このパターンは本当によく見ます。\n本記事では、生成AI基盤におけるログ設計と評価基盤の作り方を、技術顧問レイヤーの視点で整理します。\n\n\n 生成AI基盤の品質はログ粒度で決まる\n主張はシンプルです。\n「あとから改善で...",
+        "category": "AI・技術",
+        "rss_category": "",
+        "image_url": ""
+      },
       {
         "title": "RAGとFine-tuningを設計観点で比較する",
         "url": "https://zenn.dev/michishita_tkyk/articles/e7a79f72459954",
         "site": "Zenn(LLM)",
         "published": "2026-02-20T14:11:27Z",
         "description": "生成AI活用の相談で必ず出る問いがあります。\n「RAGとFine-tuning、どちらが正解ですか？」\n私はこの質問が出た瞬間に少し身構えます。\n正解は技術ではなく、更新構造で決まるからです。\n本稿では思想論ではなく、設計観点で分解します。\n\n\n 更新コストは式で整理できる\nまず結論です。\n頻繁に変わる知識はRAG、安定した判断様式はFine-tuning が合理的です。\n更新コストを簡略化すると...",
+        "category": "AI・技術",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "LLMの指示が無視される？プロンプト分割で解決した話",
+        "url": "https://zenn.dev/jiye/articles/5f73478dfd2dc0",
+        "site": "Zenn(LLM)",
+        "published": "2026-02-20T12:06:36Z",
+        "description": "LLMの指示が無視される？プロンプト分割で解決した話\n\n 指示が無視される問題\nRAGシステムで回答を生成する際、1つのプロンプトに大きく2種類の指示を入れていた。\n\n回答生成のための指示\n日本語校正のための指示\n\nしかし、日本語校正の指示が無視されることがあった。たとえば、「である調」が混在したり、略語のルールが守られなかったりした。\n以下はダミーデータで再現した例。実際のプロンプトはもっと長い...",
         "category": "AI・技術",
         "rss_category": "",
         "image_url": ""
@@ -153,65 +205,15 @@
         "category": "AI・技術",
         "rss_category": "",
         "image_url": ""
-      },
-      {
-        "title": "なぜ新規事業開発に「エンジニアの思考」が必要なのか？生成AI時代の方法論「Depth & Velocity」",
-        "url": "https://zenn.dev/leading_ai/articles/2d4c53ba48f370",
-        "site": "Zenn(LLM)",
-        "published": "2026-02-19T15:33:23Z",
-        "description": "はじめに\nスタートアップや社内新規事業の現場で、こんな経験はないだろうか。\n\n事業サイドが3ヶ月かけた市場調査をPowerPointにまとめてくる。あなたは「これ、プロトタイプ作った方が早くない？」と思っている\n経営会議で企画が却下される。でもユーザーに触らせてすらいない\n「AIを使って効率化しよう」という号令は出るが、議事録要約で終わっている\n\n新規事業開発のプロセス自体が、ソフトウェア開発の進...",
-        "category": "AI・技術",
-        "rss_category": "",
-        "image_url": ""
       }
     ],
     "一昨日": [
-      {
-        "title": "生成AIの推論コストを設計する",
-        "url": "https://zenn.dev/michishita_tkyk/articles/7addb5dd0b3ff4",
-        "site": "Zenn(LLM)",
-        "published": "2026-02-19T14:15:01Z",
-        "description": "生成AI事業において、推論コストは利益率を直接左右します。\nそれにもかかわらず、コストが「後から集計する数字」になっているケースは少なくありません。\n私は常にこう考えています。\nコストは経理の問題ではなく、アーキテクチャ設計の問題です。\n\n\n 推論コストは式で分解できる\nまず前提です。\n推論コストは構造化できる。\n基本式はシンプルです。\n月間コスト = リクエスト数 × 平均入力トークン × 単価...",
-        "category": "AI・技術",
-        "rss_category": "",
-        "image_url": ""
-      },
       {
         "title": "RAGがうまくいかない理由を設計観点で整理する",
         "url": "https://zenn.dev/michishita_tkyk/articles/491b7dee033606",
         "site": "Zenn(LLM)",
         "published": "2026-02-19T14:03:46Z",
         "description": "RAG（Retrieval-Augmented Generation）が期待通りに機能しない、という相談は非常に多いです。\n「精度が安定しない」「それっぽいが間違う」「PoCは動いたが本番で使えない」。\n原因はモデルの性能ではなく、設計の甘さにあるケースがほとんどです。\n本記事では、チャンク設計・Embedding選定・Retrieval評価という3つの観点から、改善に直結する論点を整理します。\n...",
-        "category": "AI・技術",
-        "rss_category": "",
-        "image_url": ""
-      },
-      {
-        "title": "夢みる機械",
-        "url": "https://zenn.dev/j_m/books/822730d170445e",
-        "site": "Zenn(LLM)",
-        "published": "2026-02-19T13:20:17Z",
-        "description": "「人間の解剖は猿の解剖のための鍵である」―カール・マルクス『経済学批判要綱』",
-        "category": "AI・技術",
-        "rss_category": "",
-        "image_url": ""
-      },
-      {
-        "title": "デジタル庁「行政の進化と革新のための生成AIの調達・利活用ガイドライン」を民間向けとして活用",
-        "url": "https://zenn.dev/syoshida07/articles/98cbecf180c8b8",
-        "site": "Zenn(LLM)",
-        "published": "2026-02-19T13:09:14Z",
-        "description": "生成AIは行政だけでなく、民間企業においても業務効率化、知識創造、意思決定支援など多方面で活用が進んでいる。\n一方で、誤情報生成、機密情報の漏えい、説明責任の欠如といったリスクも顕在化しており、組織としてのガバナンス体制と利用者のリテラシー強化が不可欠となっています。\n政府が2025年に公表した「行政の進化と革新のための生成AIの調達・利活用ガイドライン」は行政向けに策定されたものだが、その内容は...",
-        "category": "AI・技術",
-        "rss_category": "",
-        "image_url": ""
-      },
-      {
-        "title": "AI安全性レポート2026: 推論モデルの進化と自律エージェントの現在地",
-        "url": "https://zenn.dev/yu_ga/articles/ai-safety-report-2026-evolution",
-        "site": "Zenn(LLM)",
-        "published": "2026-02-19T12:52:45Z",
-        "description": "📌 3行でわかるこの記事\n\n\n国際AI安全性レポート2026が公開され、GPT-5, Claude Opus 4.5, Gemini 3などの推論システム（Reasoning Systems）の劇的な進化が明らかになった。\nGoogleとOpenAIのモデルが国際数学オリンピックで金メダルレベルを達成し、コーディングタスクの遂行能力も7ヶ月ごとに倍増している。\n一方で、AIエージェントによる自律的...",
         "category": "AI・技術",
         "rss_category": "",
         "image_url": ""
@@ -339,11 +341,61 @@
     ],
     "2026-02": [
       {
+        "title": "ローカルLLMで2万文字のドキュメント分析を試した話 - DeepSeek-R1 32Bの実力検証",
+        "url": "https://zenn.dev/nomuraya/articles/local-llm-benchmark-deepseek-r1-32b",
+        "site": "Zenn(LLM)",
+        "published": "2026-02-20T17:39:57Z",
+        "description": "Mac上で動くローカルLLMを使って、同じタスク（2万文字のドキュメント分析）を複数のモデルで実行し、その性能差を比較しました。\nなぜこのベンチマークをやったか\nきっかけは、「Claude API の利用料金が気になる」という単純な動機でした。毎月の請求を見るたびに「これ、ローカルでできないかな？」と考えていました。\nさらに、「API が落ちたら作業が止まる」というリスクも気になっていました。ネッ...",
+        "category": "AI・技術",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "LLMアプリの品質保証パターン — 教育AIプロダクトの実装から学ぶ",
+        "url": "https://zenn.dev/7788/books/llm-quality-assurance-patterns",
+        "site": "Zenn(LLM)",
+        "published": "2026-02-20T15:50:36Z",
+        "description": "AIが生成するコンテンツの品質をどう担保するか。教育AIアプリ「MochiQ」の開発経験を通じて得た、LLM出力のバリデーション設計、ハルシネーション対策、プロンプトエンジニアリング、コスト最適化のパターンを体系的に解説します。",
+        "category": "AI・技術",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "Model Reasoningの仕組み (メモ)",
+        "url": "https://zenn.dev/awesome548/articles/03c9051d7ab236",
+        "site": "Zenn(LLM)",
+        "published": "2026-02-20T14:55:25Z",
+        "description": "モデルのReasoning（推論）とは\n大規模言語モデル（LLM）におけるReasoningとは、複雑な問題に対して中間的な思考プロセスを生成しながら論理的に解決策を導き出す能力\n\n 大枠の流れ\n\n 入力の解釈とタスク分解\nモデルは入力を受け取ると、それを解決可能な小さなサブタスクに分解します。この挙動は、少数のラベル付きデータによるSupervised Fine-Tuning(SFT)を起点とし...",
+        "category": "AI・技術",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "生成AI基盤のログ設計と評価基盤の作り方",
+        "url": "https://zenn.dev/michishita_tkyk/articles/e9cc6e1bd7fbce",
+        "site": "Zenn(LLM)",
+        "published": "2026-02-20T14:31:27Z",
+        "description": "生成AI基盤は「モデル精度」ではなく「ログ設計」で成否が決まります。\nRAGやエージェントのPoCは通る。しかし本番で使われ始めた瞬間に「何が起きているか分からない」という状態になる。このパターンは本当によく見ます。\n本記事では、生成AI基盤におけるログ設計と評価基盤の作り方を、技術顧問レイヤーの視点で整理します。\n\n\n 生成AI基盤の品質はログ粒度で決まる\n主張はシンプルです。\n「あとから改善で...",
+        "category": "AI・技術",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
         "title": "RAGとFine-tuningを設計観点で比較する",
         "url": "https://zenn.dev/michishita_tkyk/articles/e7a79f72459954",
         "site": "Zenn(LLM)",
         "published": "2026-02-20T14:11:27Z",
         "description": "生成AI活用の相談で必ず出る問いがあります。\n「RAGとFine-tuning、どちらが正解ですか？」\n私はこの質問が出た瞬間に少し身構えます。\n正解は技術ではなく、更新構造で決まるからです。\n本稿では思想論ではなく、設計観点で分解します。\n\n\n 更新コストは式で整理できる\nまず結論です。\n頻繁に変わる知識はRAG、安定した判断様式はFine-tuning が合理的です。\n更新コストを簡略化すると...",
+        "category": "AI・技術",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "LLMの指示が無視される？プロンプト分割で解決した話",
+        "url": "https://zenn.dev/jiye/articles/5f73478dfd2dc0",
+        "site": "Zenn(LLM)",
+        "published": "2026-02-20T12:06:36Z",
+        "description": "LLMの指示が無視される？プロンプト分割で解決した話\n\n 指示が無視される問題\nRAGシステムで回答を生成する際、1つのプロンプトに大きく2種類の指示を入れていた。\n\n回答生成のための指示\n日本語校正のための指示\n\nしかし、日本語校正の指示が無視されることがあった。たとえば、「である調」が混在したり、略語のルールが守られなかったりした。\n以下はダミーデータで再現した例。実際のプロンプトはもっと長い...",
         "category": "AI・技術",
         "rss_category": "",
         "image_url": ""
@@ -489,61 +541,11 @@
         "image_url": ""
       },
       {
-        "title": "なぜ新規事業開発に「エンジニアの思考」が必要なのか？生成AI時代の方法論「Depth & Velocity」",
-        "url": "https://zenn.dev/leading_ai/articles/2d4c53ba48f370",
-        "site": "Zenn(LLM)",
-        "published": "2026-02-19T15:33:23Z",
-        "description": "はじめに\nスタートアップや社内新規事業の現場で、こんな経験はないだろうか。\n\n事業サイドが3ヶ月かけた市場調査をPowerPointにまとめてくる。あなたは「これ、プロトタイプ作った方が早くない？」と思っている\n経営会議で企画が却下される。でもユーザーに触らせてすらいない\n「AIを使って効率化しよう」という号令は出るが、議事録要約で終わっている\n\n新規事業開発のプロセス自体が、ソフトウェア開発の進...",
-        "category": "AI・技術",
-        "rss_category": "",
-        "image_url": ""
-      },
-      {
-        "title": "生成AIの推論コストを設計する",
-        "url": "https://zenn.dev/michishita_tkyk/articles/7addb5dd0b3ff4",
-        "site": "Zenn(LLM)",
-        "published": "2026-02-19T14:15:01Z",
-        "description": "生成AI事業において、推論コストは利益率を直接左右します。\nそれにもかかわらず、コストが「後から集計する数字」になっているケースは少なくありません。\n私は常にこう考えています。\nコストは経理の問題ではなく、アーキテクチャ設計の問題です。\n\n\n 推論コストは式で分解できる\nまず前提です。\n推論コストは構造化できる。\n基本式はシンプルです。\n月間コスト = リクエスト数 × 平均入力トークン × 単価...",
-        "category": "AI・技術",
-        "rss_category": "",
-        "image_url": ""
-      },
-      {
         "title": "RAGがうまくいかない理由を設計観点で整理する",
         "url": "https://zenn.dev/michishita_tkyk/articles/491b7dee033606",
         "site": "Zenn(LLM)",
         "published": "2026-02-19T14:03:46Z",
         "description": "RAG（Retrieval-Augmented Generation）が期待通りに機能しない、という相談は非常に多いです。\n「精度が安定しない」「それっぽいが間違う」「PoCは動いたが本番で使えない」。\n原因はモデルの性能ではなく、設計の甘さにあるケースがほとんどです。\n本記事では、チャンク設計・Embedding選定・Retrieval評価という3つの観点から、改善に直結する論点を整理します。\n...",
-        "category": "AI・技術",
-        "rss_category": "",
-        "image_url": ""
-      },
-      {
-        "title": "夢みる機械",
-        "url": "https://zenn.dev/j_m/books/822730d170445e",
-        "site": "Zenn(LLM)",
-        "published": "2026-02-19T13:20:17Z",
-        "description": "「人間の解剖は猿の解剖のための鍵である」―カール・マルクス『経済学批判要綱』",
-        "category": "AI・技術",
-        "rss_category": "",
-        "image_url": ""
-      },
-      {
-        "title": "デジタル庁「行政の進化と革新のための生成AIの調達・利活用ガイドライン」を民間向けとして活用",
-        "url": "https://zenn.dev/syoshida07/articles/98cbecf180c8b8",
-        "site": "Zenn(LLM)",
-        "published": "2026-02-19T13:09:14Z",
-        "description": "生成AIは行政だけでなく、民間企業においても業務効率化、知識創造、意思決定支援など多方面で活用が進んでいる。\n一方で、誤情報生成、機密情報の漏えい、説明責任の欠如といったリスクも顕在化しており、組織としてのガバナンス体制と利用者のリテラシー強化が不可欠となっています。\n政府が2025年に公表した「行政の進化と革新のための生成AIの調達・利活用ガイドライン」は行政向けに策定されたものだが、その内容は...",
-        "category": "AI・技術",
-        "rss_category": "",
-        "image_url": ""
-      },
-      {
-        "title": "AI安全性レポート2026: 推論モデルの進化と自律エージェントの現在地",
-        "url": "https://zenn.dev/yu_ga/articles/ai-safety-report-2026-evolution",
-        "site": "Zenn(LLM)",
-        "published": "2026-02-19T12:52:45Z",
-        "description": "📌 3行でわかるこの記事\n\n\n国際AI安全性レポート2026が公開され、GPT-5, Claude Opus 4.5, Gemini 3などの推論システム（Reasoning Systems）の劇的な進化が明らかになった。\nGoogleとOpenAIのモデルが国際数学オリンピックで金メダルレベルを達成し、コーディングタスクの遂行能力も7ヶ月ごとに倍増している。\n一方で、AIエージェントによる自律的...",
         "category": "AI・技術",
         "rss_category": "",
         "image_url": ""
