@@ -1,6 +1,6 @@
 {
   "site": "Zenn(Python)",
-  "last_updated": "2026-02-22T20:01:34.568301",
+  "last_updated": "2026-02-22T20:41:35.484913",
   "total_articles": 2563,
   "articles_by_date": {
     "本日": [
@@ -30,16 +30,6 @@
         "site": "Zenn(Python)",
         "published": "2026-02-22T15:08:53Z",
         "description": "録音ファイルには患者名がない。7,284枚の写真にも患者情報がない。受信FAXは広告と医療文書が混在。3つの「名前のないデータ」から患者を自動特定するまでの試行錯誤。\n\n\n 「この録音、誰の診察？」\n訪問診療では、PLAUD NOTEというAIレコーダーで診察を録音し、文字起こしからカルテ（SOAP記録）を自動生成しています。1日8〜14件の訪問をこなす中で、この仕組みは欠かせません。\nところが致...",
-        "category": "開発",
-        "rss_category": "",
-        "image_url": ""
-      },
-      {
-        "title": "SIGNATEコンペのスコアをW&Bに記録する：signate-wandb-sync を作った",
-        "url": "https://zenn.dev/shogaku/articles/signate-wandb-sync-introduction",
-        "site": "Zenn(Python)",
-        "published": "2026-02-22T15:04:38Z",
-        "description": "はじめに\n以前、signate-deploy というCLIツールを作りました。SIGNATEコンペの提出をGitHub Actions経由で自動化するものです。\n今回はその続きとして、SIGNATEの提出スコアをWeights &amp; Biases（W&amp;B）に記録するツールを作りました。\npip install signate-wandb-sync\n\nPyPI: https://pyp...",
         "category": "開発",
         "rss_category": "",
         "image_url": ""
@@ -137,11 +127,11 @@
         "image_url": ""
       },
       {
-        "title": "「GIS＝GeoPandas」の固定観念から脱却しようとしてみた — GeoPandas vs Polars 地理空間データ前処理 3本勝負",
+        "title": "「GIS＝GeoPandas」の限界を突破しようとしてみた —— GeoPandas vs Polars 地理空間データ前処理 3本勝負",
         "url": "https://zenn.dev/teyo0318/articles/e69f1f14048242",
         "site": "Zenn(Python)",
         "published": "2026-02-22T09:28:01Z",
-        "description": "!\n「複雑な空間演算を行う場合の前処理をGeoPandasではなくPolarsで代替しよう」というのがこの記事のコンセプトです。\nより詳細な空間演算はGeoPandasやdask-geopandasを使わないとできません。(geopandasはもう要らないとかそういう内容の記事ではないです。）\nこの記事では本筋の空間演算に集中する為に、その前段階のデータの読み込みやフィルタリングをPolarsに任...",
+        "description": "!\n「複雑な空間演算を行う場合の前処理をgeopandasではなくpolarsで代替しよう」というのがこの記事のコンセプトです。\nより詳細な空間演算はgeopandasやdask-geopandasを使わないとできません。(geopandasはもう要らないとかそういう内容の記事ではないです。）\nこの記事では本筋の空間演算に集中する為に、その前段階のデータの読み込みやフィルタリングをPolarsに任...",
         "category": "開発",
         "rss_category": "",
         "image_url": ""
@@ -212,6 +202,16 @@
         "site": "Zenn(Python)",
         "published": "2026-02-22T03:14:22Z",
         "description": "【相場のノイズを制する「2Bot体制」 — 実稼働コードとAIレビューの全記録】\n\n暗号資産のアルゴトレーディングにおいて、「単一の戦略で全相場をカバーする」という幻想を抱いていませんか？\nレンジ相場を制する戦略はトレンドで焼き尽くされ、トレンドフォローはレンジでじわじわと資金を削られます。これは構造的な限界であり、回避不可能です。\n\n本書は、Hyperliquid上で実稼働している「Mean R...",
+        "category": "開発",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "LLMのInstruction Tuningデータ、10%に絞っても精度が上がる仕組みをNAITで理解する",
+        "url": "https://zenn.dev/hokuto7/articles/d30fc83fc198ba",
+        "site": "Zenn(Python)",
+        "published": "2026-02-22T02:02:13Z",
+        "description": "TL;DR\n\nNAITはニューロン活性化パターンを使ってInstruction Tuningデータを選択するフレームワークだ。\nAlpaca-GPT4の全52kデータのうち10%を選ぶだけで、全件学習より平均3.24%性能が向上する。\n外部APIも勾配計算も不要で、コストは$1.52・所要時間は1.32時間と既存手法の最大94%削減を達成する。\n\n\n なぜやったか\nLLMのInstruction ...",
         "category": "開発",
         "rss_category": "",
         "image_url": ""
@@ -511,16 +511,6 @@
         "image_url": ""
       },
       {
-        "title": "SIGNATEコンペのスコアをW&Bに記録する：signate-wandb-sync を作った",
-        "url": "https://zenn.dev/shogaku/articles/signate-wandb-sync-introduction",
-        "site": "Zenn(Python)",
-        "published": "2026-02-22T15:04:38Z",
-        "description": "はじめに\n以前、signate-deploy というCLIツールを作りました。SIGNATEコンペの提出をGitHub Actions経由で自動化するものです。\n今回はその続きとして、SIGNATEの提出スコアをWeights &amp; Biases（W&amp;B）に記録するツールを作りました。\npip install signate-wandb-sync\n\nPyPI: https://pyp...",
-        "category": "開発",
-        "rss_category": "",
-        "image_url": ""
-      },
-      {
         "title": "多重共線性の回帰係数への影響",
         "url": "https://zenn.dev/bio_dyn_arch/articles/feature_coefficient_stability",
         "site": "Zenn(Python)",
@@ -611,11 +601,11 @@
         "image_url": ""
       },
       {
-        "title": "「GIS＝GeoPandas」の固定観念から脱却しようとしてみた — GeoPandas vs Polars 地理空間データ前処理 3本勝負",
+        "title": "「GIS＝GeoPandas」の限界を突破しようとしてみた —— GeoPandas vs Polars 地理空間データ前処理 3本勝負",
         "url": "https://zenn.dev/teyo0318/articles/e69f1f14048242",
         "site": "Zenn(Python)",
         "published": "2026-02-22T09:28:01Z",
-        "description": "!\n「複雑な空間演算を行う場合の前処理をGeoPandasではなくPolarsで代替しよう」というのがこの記事のコンセプトです。\nより詳細な空間演算はGeoPandasやdask-geopandasを使わないとできません。(geopandasはもう要らないとかそういう内容の記事ではないです。）\nこの記事では本筋の空間演算に集中する為に、その前段階のデータの読み込みやフィルタリングをPolarsに任...",
+        "description": "!\n「複雑な空間演算を行う場合の前処理をgeopandasではなくpolarsで代替しよう」というのがこの記事のコンセプトです。\nより詳細な空間演算はgeopandasやdask-geopandasを使わないとできません。(geopandasはもう要らないとかそういう内容の記事ではないです。）\nこの記事では本筋の空間演算に集中する為に、その前段階のデータの読み込みやフィルタリングをPolarsに任...",
         "category": "開発",
         "rss_category": "",
         "image_url": ""
@@ -686,6 +676,16 @@
         "site": "Zenn(Python)",
         "published": "2026-02-22T03:14:22Z",
         "description": "【相場のノイズを制する「2Bot体制」 — 実稼働コードとAIレビューの全記録】\n\n暗号資産のアルゴトレーディングにおいて、「単一の戦略で全相場をカバーする」という幻想を抱いていませんか？\nレンジ相場を制する戦略はトレンドで焼き尽くされ、トレンドフォローはレンジでじわじわと資金を削られます。これは構造的な限界であり、回避不可能です。\n\n本書は、Hyperliquid上で実稼働している「Mean R...",
+        "category": "開発",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "LLMのInstruction Tuningデータ、10%に絞っても精度が上がる仕組みをNAITで理解する",
+        "url": "https://zenn.dev/hokuto7/articles/d30fc83fc198ba",
+        "site": "Zenn(Python)",
+        "published": "2026-02-22T02:02:13Z",
+        "description": "TL;DR\n\nNAITはニューロン活性化パターンを使ってInstruction Tuningデータを選択するフレームワークだ。\nAlpaca-GPT4の全52kデータのうち10%を選ぶだけで、全件学習より平均3.24%性能が向上する。\n外部APIも勾配計算も不要で、コストは$1.52・所要時間は1.32時間と既存手法の最大94%削減を達成する。\n\n\n なぜやったか\nLLMのInstruction ...",
         "category": "開発",
         "rss_category": "",
         "image_url": ""
