@@ -1,9 +1,61 @@
 {
   "site": "Zenn(Python)",
-  "last_updated": "2026-02-22T16:02:05.886376",
-  "total_articles": 2551,
+  "last_updated": "2026-02-22T16:48:53.961477",
+  "total_articles": 2561,
   "articles_by_date": {
+    "本日": [
+      {
+        "title": "録音・写真・FAXから患者を自動特定するパイプライン -- n8nで医療業務自動化 #2",
+        "url": "https://zenn.dev/shogo1123/articles/n8n-medical-automation-02",
+        "site": "Zenn(Python)",
+        "published": "2026-02-22T15:08:53Z",
+        "description": "PLAUD録音の患者マッチング、7,284枚の臨床写真の自動紐付け、受信FAXのAI解析パイプラインを構築する\n\n\n 前回のおさらい\n前回の記事では、n8nの環境構築と8つの医療システムのAPI統合を行いました。今回は、これらのAPIを組み合わせて3つのデータパイプラインを構築します。\n\n\nPLAUD録音 -&gt; 患者自動特定（録音 x スケジュール x デバイスID）\n\n臨床写真 -&gt;...",
+        "category": "開発",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "SIGNATEコンペのスコアをW&Bに記録する：signate-wandb-sync を作った",
+        "url": "https://zenn.dev/shogaku/articles/signate-wandb-sync-introduction",
+        "site": "Zenn(Python)",
+        "published": "2026-02-22T15:04:38Z",
+        "description": "はじめに\n以前、signate-deploy というCLIツールを作りました。SIGNATEコンペの提出をGitHub Actions経由で自動化するものです。\n今回はその続きとして、SIGNATEの提出スコアをWeights &amp; Biases（W&amp;B）に記録するツールを作りました。\npip install signate-wandb-sync\n\nPyPI: https://pyp...",
+        "category": "開発",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "多重共線性の回帰係数への影響",
+        "url": "https://zenn.dev/bio_dyn_arch/articles/feature_coefficient_stability",
+        "site": "Zenn(Python)",
+        "published": "2026-02-22T15:00:58Z",
+        "description": "はじめに\n線形回帰において、特徴量間の相関が高い状態はモデルの解釈性を損なう原因となる。\n本稿では、Pythonを用いたシミュレーションを通じて、多重共線性が係数の推定にどのような不安定さをもたらすかを確認する。\n\n 方法\n3つの特徴量 (x_1, x_2, x_3) を持つデータセットを生成し、目的変数 y を以下のルールで作成する。\n y = \\text{mean}(x_1, x_2, x_3...",
+        "category": "開発",
+        "rss_category": "",
+        "image_url": ""
+      }
+    ],
     "昨日": [
+      {
+        "title": "Geminiの会話をObsidianに自動保存するツールをPythonで作った話（失敗だらけの開発経緯）",
+        "url": "https://zenn.dev/ukiajp/articles/gemini-obsidian-exporter-development-journey",
+        "site": "Zenn(Python)",
+        "published": "2026-02-22T14:32:19Z",
+        "description": "はじめに\nGemini（GoogleのAI）の会話を手動でMarkdown保存し、Obsidianのバックアップ用フォルダに溜めていく作業が面倒だったので、「取得件数だけ指定したらあとは自動でエクスポートしてくれるツール」をPythonで作りました。\nやっていることは**「RPAならすぐできるレベル」**なのに、ブラウザの起動の仕方・画像クリック・2画面・ダウンロード先・UIのトグルなどで何度もつ...",
+        "category": "開発",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "Bedrock AgentCore × LINEで生成AIチャットボットを作ってみた",
+        "url": "https://zenn.dev/tyakku/articles/2026-02-11-12-40",
+        "site": "Zenn(Python)",
+        "published": "2026-02-22T14:16:37Z",
+        "description": "はじめに\nみのるんさん（@minorun365）のGitHubリポジトリ「AgentCore LINE Chatbot」と、書籍「AIエージェント開発 / 運用入門」に触発され、自分でもBedrock AgentCoreを使ったアプリケーションを構築してみました。\n構成はほぼ上記リポジトリをベースにしていますが、中身をしっかり理解するためにCDKは使わず手動デプロイしています。\nフロントエンドにL...",
+        "category": "開発",
+        "rss_category": "",
+        "image_url": ""
+      },
       {
         "title": "【Python×FastAPI】無料＆無制限！ローカルLLMを自作API化して分かった「ヤバい落とし穴」と対策",
         "url": "https://zenn.dev/kewa8579/articles/97410eb62465aa",
@@ -65,11 +117,11 @@
         "image_url": ""
       },
       {
-        "title": "「GIS＝GeoPandas」の限界を突破しようとしてみた —— GeoPandas vs Polars 地理空間データ前処理 3本勝負",
+        "title": "「GIS＝GeoPandas」の固定観念から脱却しようとしてみた — GeoPandas vs Polars 地理空間データ前処理 3本勝負",
         "url": "https://zenn.dev/teyo0318/articles/e69f1f14048242",
         "site": "Zenn(Python)",
         "published": "2026-02-22T09:28:01Z",
-        "description": "!\n「複雑な空間演算を行う場合の前処理をgeopandasではなくpolarsで代替しよう」というのがこの記事のコンセプトです。\nより詳細な空間演算はgeopandasやdask-geopandasを使わないとできません。(geopandasはもう要らないとかそういう内容の記事ではないです。）\nこの記事では本筋の空間演算に集中する為に、その前段階のデータの読み込みやフィルタリングをPolarsに任...",
+        "description": "!\n「複雑な空間演算を行う場合の前処理をGeoPandasではなくPolarsで代替しよう」というのがこの記事のコンセプトです。\nより詳細な空間演算はGeoPandasやdask-geopandasを使わないとできません。(geopandasはもう要らないとかそういう内容の記事ではないです。）\nこの記事では本筋の空間演算に集中する為に、その前段階のデータの読み込みやフィルタリングをPolarsに任...",
         "category": "開発",
         "rss_category": "",
         "image_url": ""
@@ -419,6 +471,56 @@
     ],
     "2026-02": [
       {
+        "title": "録音・写真・FAXから患者を自動特定するパイプライン -- n8nで医療業務自動化 #2",
+        "url": "https://zenn.dev/shogo1123/articles/n8n-medical-automation-02",
+        "site": "Zenn(Python)",
+        "published": "2026-02-22T15:08:53Z",
+        "description": "PLAUD録音の患者マッチング、7,284枚の臨床写真の自動紐付け、受信FAXのAI解析パイプラインを構築する\n\n\n 前回のおさらい\n前回の記事では、n8nの環境構築と8つの医療システムのAPI統合を行いました。今回は、これらのAPIを組み合わせて3つのデータパイプラインを構築します。\n\n\nPLAUD録音 -&gt; 患者自動特定（録音 x スケジュール x デバイスID）\n\n臨床写真 -&gt;...",
+        "category": "開発",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "SIGNATEコンペのスコアをW&Bに記録する：signate-wandb-sync を作った",
+        "url": "https://zenn.dev/shogaku/articles/signate-wandb-sync-introduction",
+        "site": "Zenn(Python)",
+        "published": "2026-02-22T15:04:38Z",
+        "description": "はじめに\n以前、signate-deploy というCLIツールを作りました。SIGNATEコンペの提出をGitHub Actions経由で自動化するものです。\n今回はその続きとして、SIGNATEの提出スコアをWeights &amp; Biases（W&amp;B）に記録するツールを作りました。\npip install signate-wandb-sync\n\nPyPI: https://pyp...",
+        "category": "開発",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "多重共線性の回帰係数への影響",
+        "url": "https://zenn.dev/bio_dyn_arch/articles/feature_coefficient_stability",
+        "site": "Zenn(Python)",
+        "published": "2026-02-22T15:00:58Z",
+        "description": "はじめに\n線形回帰において、特徴量間の相関が高い状態はモデルの解釈性を損なう原因となる。\n本稿では、Pythonを用いたシミュレーションを通じて、多重共線性が係数の推定にどのような不安定さをもたらすかを確認する。\n\n 方法\n3つの特徴量 (x_1, x_2, x_3) を持つデータセットを生成し、目的変数 y を以下のルールで作成する。\n y = \\text{mean}(x_1, x_2, x_3...",
+        "category": "開発",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "Geminiの会話をObsidianに自動保存するツールをPythonで作った話（失敗だらけの開発経緯）",
+        "url": "https://zenn.dev/ukiajp/articles/gemini-obsidian-exporter-development-journey",
+        "site": "Zenn(Python)",
+        "published": "2026-02-22T14:32:19Z",
+        "description": "はじめに\nGemini（GoogleのAI）の会話を手動でMarkdown保存し、Obsidianのバックアップ用フォルダに溜めていく作業が面倒だったので、「取得件数だけ指定したらあとは自動でエクスポートしてくれるツール」をPythonで作りました。\nやっていることは**「RPAならすぐできるレベル」**なのに、ブラウザの起動の仕方・画像クリック・2画面・ダウンロード先・UIのトグルなどで何度もつ...",
+        "category": "開発",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "Bedrock AgentCore × LINEで生成AIチャットボットを作ってみた",
+        "url": "https://zenn.dev/tyakku/articles/2026-02-11-12-40",
+        "site": "Zenn(Python)",
+        "published": "2026-02-22T14:16:37Z",
+        "description": "はじめに\nみのるんさん（@minorun365）のGitHubリポジトリ「AgentCore LINE Chatbot」と、書籍「AIエージェント開発 / 運用入門」に触発され、自分でもBedrock AgentCoreを使ったアプリケーションを構築してみました。\n構成はほぼ上記リポジトリをベースにしていますが、中身をしっかり理解するためにCDKは使わず手動デプロイしています。\nフロントエンドにL...",
+        "category": "開発",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
         "title": "【Python×FastAPI】無料＆無制限！ローカルLLMを自作API化して分かった「ヤバい落とし穴」と対策",
         "url": "https://zenn.dev/kewa8579/articles/97410eb62465aa",
         "site": "Zenn(Python)",
@@ -479,11 +581,11 @@
         "image_url": ""
       },
       {
-        "title": "「GIS＝GeoPandas」の限界を突破しようとしてみた —— GeoPandas vs Polars 地理空間データ前処理 3本勝負",
+        "title": "「GIS＝GeoPandas」の固定観念から脱却しようとしてみた — GeoPandas vs Polars 地理空間データ前処理 3本勝負",
         "url": "https://zenn.dev/teyo0318/articles/e69f1f14048242",
         "site": "Zenn(Python)",
         "published": "2026-02-22T09:28:01Z",
-        "description": "!\n「複雑な空間演算を行う場合の前処理をgeopandasではなくpolarsで代替しよう」というのがこの記事のコンセプトです。\nより詳細な空間演算はgeopandasやdask-geopandasを使わないとできません。(geopandasはもう要らないとかそういう内容の記事ではないです。）\nこの記事では本筋の空間演算に集中する為に、その前段階のデータの読み込みやフィルタリングをPolarsに任...",
+        "description": "!\n「複雑な空間演算を行う場合の前処理をGeoPandasではなくPolarsで代替しよう」というのがこの記事のコンセプトです。\nより詳細な空間演算はGeoPandasやdask-geopandasを使わないとできません。(geopandasはもう要らないとかそういう内容の記事ではないです。）\nこの記事では本筋の空間演算に集中する為に、その前段階のデータの読み込みやフィルタリングをPolarsに任...",
         "category": "開発",
         "rss_category": "",
         "image_url": ""
