@@ -1,9 +1,49 @@
 {
   "site": "Zenn(Python)",
-  "last_updated": "2026-02-22T02:36:11.427622",
-  "total_articles": 2533,
+  "last_updated": "2026-02-22T04:31:13.206654",
+  "total_articles": 2543,
   "articles_by_date": {
     "本日": [
+      {
+        "title": "Hyperliquid 2Bot体制v3詳解",
+        "url": "https://zenn.dev/kossssss/books/c3191a08d5ec42",
+        "site": "Zenn(Python)",
+        "published": "2026-02-22T03:14:22Z",
+        "description": "【相場のノイズを制する「2Bot体制」 — 実稼働コードとAIレビューの全記録】\n\n暗号資産のアルゴトレーディングにおいて、「単一の戦略で全相場をカバーする」という幻想を抱いていませんか？\nレンジ相場を制する戦略はトレンドで焼き尽くされ、トレンドフォローはレンジでじわじわと資金を削られます。これは構造的な限界であり、回避不可能です。\n\n本書は、Hyperliquid上で実稼働している「Mean R...",
+        "category": "開発",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "LLMのInstruction Tuningデータ、10%に絞っても精度が上がる仕組みをNAITで理解する",
+        "url": "https://zenn.dev/hokuto7/articles/d30fc83fc198ba",
+        "site": "Zenn(Python)",
+        "published": "2026-02-22T02:02:13Z",
+        "description": "TL;DR\n\nNAITはニューロン活性化パターンを使ってInstruction Tuningデータを選択するフレームワークだ。\nAlpaca-GPT4の全52kデータのうち10%を選ぶだけで、全件学習より平均3.24%性能が向上する。\n外部APIも勾配計算も不要で、コストは$1.52・所要時間は1.32時間と既存手法の最大94%削減を達成する。\n\n\n なぜやったか\nLLMのInstruction ...",
+        "category": "開発",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "KaggleのW&B実験管理をオフラインでも動かす：kaggle-wandb-sync を作った",
+        "url": "https://zenn.dev/shogaku/articles/kaggle-wandb-sync-offline-sync",
+        "site": "Zenn(Python)",
+        "published": "2026-02-22T00:59:33Z",
+        "description": "はじめに\nKaggleのコンペティションNotebookは、提出対象にするためにインターネット接続を無効にする必要があります。\nこれが意味するのは、W&amp;B（Weights &amp; Biases）にリアルタイムでメトリクスを送れないということです。wandb.log() を呼んでも何も起きない。\nこの問題を解決するCLIツールを作り、PyPIに公開しました。\npip install ka...",
+        "category": "開発",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "Pythonの__init__.pyはなぜ必要なのか？importの安定化・API設計・pytestとの関係",
+        "url": "https://zenn.dev/headwaters/articles/b6573a66d5749b",
+        "site": "Zenn(Python)",
+        "published": "2026-02-22T00:41:53Z",
+        "description": "概要\nPythonの開発をする中で、__init__.pyを何のためのファイルなのか、どこに配置すべきなのかが分からなかったので調べてみました。\n結論は、\n\n基本的に全てのパッケージディレクトリに__init__.pyを置くべき\nWebアプリ開発の場合、namespace packageが必要なケースはほぼ無い\n\n__init__.pyはアクセス制御ではなく、API設計\n大規模開発・チーム開発では...",
+        "category": "開発",
+        "rss_category": "",
+        "image_url": ""
+      },
       {
         "title": "確定申告を自動化する Agent Skill \"shinkoku\" を OSS にした",
         "url": "https://zenn.dev/kazukinagata/articles/83fe82191db01b",
@@ -20,6 +60,26 @@
         "site": "Zenn(Python)",
         "published": "2026-02-21T22:03:15Z",
         "description": "はじめに\n本記事は、森谷博之著『Python3ではじめるシステムトレード』（パンローリング社）を\n学習しながら、その手法を**米国穀物市場（WEAT/CORN ETF）**のアルゴリズムトレードに\n応用するプロジェクトの実装記録です。\n具体的には以下のデータを統合し、知識グラフ（JSON-LD → Neo4j）として構造化しました。\n\n\nSentinel-2（ESA衛星）：NDVI（植生指数）時系...",
+        "category": "開発",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "Claude Codeで実現する業務自動化 ― 小さい会社の5つの実践例",
+        "url": "https://zenn.dev/frsk/articles/claude-code-automation-recipes-2026",
+        "site": "Zenn(Python)",
+        "published": "2026-02-21T16:55:44Z",
+        "description": "自動化は大企業だけの話じゃない\n少人数のIT企業で働いている。開発、運用、営業、事務。人が少ないぶん、一人が何役もこなす。同じ作業を何度もやっていると、さすがにこれは自動化したいと思う場面が増えてくる。\nただ、業務自動化ってハードルが高く聞こえる。RPAツールは高い。SaaSを組み合わせればいけるが、Zapierの有料プランを複数契約すると月額がジワジワ効いてくる。自前でスクリプトを書けばいいが、...",
+        "category": "開発",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "【AWS破産】放置したGPUに月21万吸い取られた怒りで、ターミナルに「絶望」を表示するCLIツールを作った",
+        "url": "https://zenn.dev/masayann/articles/c9b0458e221982",
+        "site": "Zenn(Python)",
+        "published": "2026-02-21T16:34:01Z",
+        "description": "事件は、ある金曜日の深夜に起きました。\n何気なく開いたAWSの請求ダッシュボード。そこに表示されていた「$1,450.00」という数字を見た瞬間、全身の血の気が引き、リアルに変な声が出ました。\n「えっ……？」\n原因は単純です。最近流行りのAI（ローカルLLM）のファインチューニングを試そうと思い、強力なGPUインスタンス（g5.xlarge）を立ち上げたまま、数週間シャットダウンを忘れて放置してし...",
         "category": "開発",
         "rss_category": "",
         "image_url": ""
@@ -182,16 +242,6 @@
         "site": "Zenn(Python)",
         "published": "2026-02-21T06:24:11Z",
         "description": "はじめに\nFigmaのワイヤーフレームとアプリ画面を「目で見て」照合するのをやめた。\n代わりに、Figmaのノード構造をPythonスクリプトで抽出し、コードとの差分をAIに検出・修正させた。全41画面、100件以上の差分修正を1日で完了した。\n\n\n 何が問題だったか\nDesign Review（デザイン照合）は、Figmaの画面とアプリの実装を突き合わせて、余白・文字サイズ・角丸・色などの差異を...",
-        "category": "開発",
-        "rss_category": "",
-        "image_url": ""
-      },
-      {
-        "title": "git pushするだけでKaggle Notebookをデプロイ：kaggle-notebook-deploy を作った",
-        "url": "https://zenn.dev/shogaku/articles/kaggle-notebook-deploy-march-mania-2026",
-        "site": "Zenn(Python)",
-        "published": "2026-02-21T05:39:20Z",
-        "description": "はじめに\nKaggleのNotebookをブラウザ上のエディタで直接編集していませんか？\nブラウザエディタでは：\n\nGitによるバージョン管理ができない\n差分の確認がしづらい\nVSCode等の使い慣れたエディタが使えない\n\nこの不便を解消するために、git pushするだけでKaggle Notebookを自動デプロイするCLIツールを作り、PyPIに公開しました。\npip install kag...",
         "category": "開発",
         "rss_category": "",
         "image_url": ""
@@ -391,6 +441,46 @@
     ],
     "2026-02": [
       {
+        "title": "Hyperliquid 2Bot体制v3詳解",
+        "url": "https://zenn.dev/kossssss/books/c3191a08d5ec42",
+        "site": "Zenn(Python)",
+        "published": "2026-02-22T03:14:22Z",
+        "description": "【相場のノイズを制する「2Bot体制」 — 実稼働コードとAIレビューの全記録】\n\n暗号資産のアルゴトレーディングにおいて、「単一の戦略で全相場をカバーする」という幻想を抱いていませんか？\nレンジ相場を制する戦略はトレンドで焼き尽くされ、トレンドフォローはレンジでじわじわと資金を削られます。これは構造的な限界であり、回避不可能です。\n\n本書は、Hyperliquid上で実稼働している「Mean R...",
+        "category": "開発",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "LLMのInstruction Tuningデータ、10%に絞っても精度が上がる仕組みをNAITで理解する",
+        "url": "https://zenn.dev/hokuto7/articles/d30fc83fc198ba",
+        "site": "Zenn(Python)",
+        "published": "2026-02-22T02:02:13Z",
+        "description": "TL;DR\n\nNAITはニューロン活性化パターンを使ってInstruction Tuningデータを選択するフレームワークだ。\nAlpaca-GPT4の全52kデータのうち10%を選ぶだけで、全件学習より平均3.24%性能が向上する。\n外部APIも勾配計算も不要で、コストは$1.52・所要時間は1.32時間と既存手法の最大94%削減を達成する。\n\n\n なぜやったか\nLLMのInstruction ...",
+        "category": "開発",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "KaggleのW&B実験管理をオフラインでも動かす：kaggle-wandb-sync を作った",
+        "url": "https://zenn.dev/shogaku/articles/kaggle-wandb-sync-offline-sync",
+        "site": "Zenn(Python)",
+        "published": "2026-02-22T00:59:33Z",
+        "description": "はじめに\nKaggleのコンペティションNotebookは、提出対象にするためにインターネット接続を無効にする必要があります。\nこれが意味するのは、W&amp;B（Weights &amp; Biases）にリアルタイムでメトリクスを送れないということです。wandb.log() を呼んでも何も起きない。\nこの問題を解決するCLIツールを作り、PyPIに公開しました。\npip install ka...",
+        "category": "開発",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "Pythonの__init__.pyはなぜ必要なのか？importの安定化・API設計・pytestとの関係",
+        "url": "https://zenn.dev/headwaters/articles/b6573a66d5749b",
+        "site": "Zenn(Python)",
+        "published": "2026-02-22T00:41:53Z",
+        "description": "概要\nPythonの開発をする中で、__init__.pyを何のためのファイルなのか、どこに配置すべきなのかが分からなかったので調べてみました。\n結論は、\n\n基本的に全てのパッケージディレクトリに__init__.pyを置くべき\nWebアプリ開発の場合、namespace packageが必要なケースはほぼ無い\n\n__init__.pyはアクセス制御ではなく、API設計\n大規模開発・チーム開発では...",
+        "category": "開発",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
         "title": "確定申告を自動化する Agent Skill \"shinkoku\" を OSS にした",
         "url": "https://zenn.dev/kazukinagata/articles/83fe82191db01b",
         "site": "Zenn(Python)",
@@ -406,6 +496,26 @@
         "site": "Zenn(Python)",
         "published": "2026-02-21T22:03:15Z",
         "description": "はじめに\n本記事は、森谷博之著『Python3ではじめるシステムトレード』（パンローリング社）を\n学習しながら、その手法を**米国穀物市場（WEAT/CORN ETF）**のアルゴリズムトレードに\n応用するプロジェクトの実装記録です。\n具体的には以下のデータを統合し、知識グラフ（JSON-LD → Neo4j）として構造化しました。\n\n\nSentinel-2（ESA衛星）：NDVI（植生指数）時系...",
+        "category": "開発",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "Claude Codeで実現する業務自動化 ― 小さい会社の5つの実践例",
+        "url": "https://zenn.dev/frsk/articles/claude-code-automation-recipes-2026",
+        "site": "Zenn(Python)",
+        "published": "2026-02-21T16:55:44Z",
+        "description": "自動化は大企業だけの話じゃない\n少人数のIT企業で働いている。開発、運用、営業、事務。人が少ないぶん、一人が何役もこなす。同じ作業を何度もやっていると、さすがにこれは自動化したいと思う場面が増えてくる。\nただ、業務自動化ってハードルが高く聞こえる。RPAツールは高い。SaaSを組み合わせればいけるが、Zapierの有料プランを複数契約すると月額がジワジワ効いてくる。自前でスクリプトを書けばいいが、...",
+        "category": "開発",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "【AWS破産】放置したGPUに月21万吸い取られた怒りで、ターミナルに「絶望」を表示するCLIツールを作った",
+        "url": "https://zenn.dev/masayann/articles/c9b0458e221982",
+        "site": "Zenn(Python)",
+        "published": "2026-02-21T16:34:01Z",
+        "description": "事件は、ある金曜日の深夜に起きました。\n何気なく開いたAWSの請求ダッシュボード。そこに表示されていた「$1,450.00」という数字を見た瞬間、全身の血の気が引き、リアルに変な声が出ました。\n「えっ……？」\n原因は単純です。最近流行りのAI（ローカルLLM）のファインチューニングを試そうと思い、強力なGPUインスタンス（g5.xlarge）を立ち上げたまま、数週間シャットダウンを忘れて放置してし...",
         "category": "開発",
         "rss_category": "",
         "image_url": ""
@@ -566,16 +676,6 @@
         "site": "Zenn(Python)",
         "published": "2026-02-21T06:24:11Z",
         "description": "はじめに\nFigmaのワイヤーフレームとアプリ画面を「目で見て」照合するのをやめた。\n代わりに、Figmaのノード構造をPythonスクリプトで抽出し、コードとの差分をAIに検出・修正させた。全41画面、100件以上の差分修正を1日で完了した。\n\n\n 何が問題だったか\nDesign Review（デザイン照合）は、Figmaの画面とアプリの実装を突き合わせて、余白・文字サイズ・角丸・色などの差異を...",
-        "category": "開発",
-        "rss_category": "",
-        "image_url": ""
-      },
-      {
-        "title": "git pushするだけでKaggle Notebookをデプロイ：kaggle-notebook-deploy を作った",
-        "url": "https://zenn.dev/shogaku/articles/kaggle-notebook-deploy-march-mania-2026",
-        "site": "Zenn(Python)",
-        "published": "2026-02-21T05:39:20Z",
-        "description": "はじめに\nKaggleのNotebookをブラウザ上のエディタで直接編集していませんか？\nブラウザエディタでは：\n\nGitによるバージョン管理ができない\n差分の確認がしづらい\nVSCode等の使い慣れたエディタが使えない\n\nこの不便を解消するために、git pushするだけでKaggle Notebookを自動デプロイするCLIツールを作り、PyPIに公開しました。\npip install kag...",
         "category": "開発",
         "rss_category": "",
         "image_url": ""
