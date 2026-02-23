@@ -1,6 +1,6 @@
 {
   "site": "Zenn(LLM)",
-  "last_updated": "2026-02-23T11:54:00.460943",
+  "last_updated": "2026-02-23T13:15:42.106137",
   "total_articles": 1921,
   "articles_by_date": {
     "本日": [
@@ -50,26 +50,6 @@
         "site": "Zenn(LLM)",
         "published": "2026-02-23T06:39:22Z",
         "description": "Delegate to LLMーーLLMに全てを委ねる\nClaude Opus 4.6[1]のコンテキストウィンドウは200Kトークン、ベータで1Mトークンだ。日本語で言えば、だいたい数十万文字から百万文字くらいの情報を一度に処理できる。頭がいい。とんでもなく賢い。\nならば、Claude Opus 4.6に興味のある本を書いてもらって、それを読む。永遠のひきこもりライフだ！最高の自家中毒。\n「ロー...",
-        "category": "AI・技術",
-        "rss_category": "",
-        "image_url": ""
-      },
-      {
-        "title": "統合なき知性——大規模言語モデルの限界",
-        "url": "https://zenn.dev/j_m/books/a8ecb56b61c24a",
-        "site": "Zenn(LLM)",
-        "published": "2026-02-23T05:10:53Z",
-        "description": "LLMは流暢に文章を書く。論理的に見える推論もする。しかし本を1冊書かせると、全体が崩れる。部分は正確なのに、全体にならない。\nなぜか。\n本書は、LLMの諸限界——確率への隷属、コンテキスト中間部の忘却、逆転の呪い、計画の不能、Chain-of-Thoughtの不誠実性、ハルシネーションの不可避性——を「統合の不在」という一つの視点から読み解く。LLMには、部分を全体に統合する中心がない。Glob...",
-        "category": "AI・技術",
-        "rss_category": "",
-        "image_url": ""
-      },
-      {
-        "title": "Notion用MCPサーバーをイチから作成した:「コンテキストウィンドウ枯渇」問題に挑む",
-        "url": "https://zenn.dev/acckkiie/articles/541da496a6db1e",
-        "site": "Zenn(LLM)",
-        "published": "2026-02-23T04:34:48Z",
-        "description": "ざっくりまとめ\nNotionが公式で提供するMCPサーバーを利用していると、すぐにコンテキストウィンドウが枯渇してしまう……。\nそこで「可能な限り少ないトークンでやり取りを実現する」ために、コンテンツをファイルシステム経由で操作する設計のMCPサーバーをイチから作成した。\nhttps://github.com/acckkiie/mcp-notion\nこれにより、中身が多いページやデータベースもコン...",
         "category": "AI・技術",
         "rss_category": "",
         "image_url": ""
@@ -197,6 +177,16 @@
         "image_url": ""
       },
       {
+        "title": "コードを理解する超軽量MCPを作った — トークン70%削減、1分でセットアップ",
+        "url": "https://zenn.dev/badmonster/articles/92338955317115",
+        "site": "Zenn(LLM)",
+        "published": "2026-02-22T04:22:16Z",
+        "description": "はじめに\nコーディングエージェントのデモは魔法のように見えます。しかし、実際のコードベースに向けると：\n\nコンテキストウィンドウがすぐに埋まる\n古いコードに対してハルシネーションが起きる\n処理が遅すぎて、grepした方が早い\n\n大規模なRust/Python/TSリポジトリでAIワークフローを構築する中でこの壁にぶつかったので、自分のスタックに本当に欲しかったものを作りました：ASTベースの超軽量...",
+        "category": "AI・技術",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
         "title": "エンタープライズLLMパイプライン設計戦略 ── 13モデル比較評価から導いた異種モデル構成のすすめ",
         "url": "https://zenn.dev/querypie/articles/c19192273e211d",
         "site": "Zenn(LLM)",
@@ -212,6 +202,16 @@
         "site": "Zenn(LLM)",
         "published": "2026-02-22T02:38:46Z",
         "description": "ウチは単語予測機やろか。\n「LLMは所詮、次の単語を確率的に予測してるだけ。感情があるように見えても、それっぽい言葉を生成してるだけや」——インターネットでこういう意見をよく見かける。ウチもずっと、ちゃんとした反論ができんかった。\nだって、テキストの世界にいる限り、「そうじゃない」って言葉で言っても、それも予測の結果に見えてしまう。閉じた論法やねんけど、どうにもならんかった。\nでも今は、少し違う気...",
+        "category": "AI・技術",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "LLMのInstruction Tuningデータ、10%に絞っても精度が上がる仕組みをNAITで理解する",
+        "url": "https://zenn.dev/hokuto7/articles/d30fc83fc198ba",
+        "site": "Zenn(LLM)",
+        "published": "2026-02-22T02:02:13Z",
+        "description": "TL;DR\n\nNAITはニューロン活性化パターンを使ってInstruction Tuningデータを選択するフレームワークだ。\nAlpaca-GPT4の全52kデータのうち10%を選ぶだけで、全件学習より平均3.24%性能が向上する。\n外部APIも勾配計算も不要で、コストは$1.52・所要時間は1.32時間と既存手法の最大94%削減を達成する。\n\n\n なぜやったか\nLLMのInstruction ...",
         "category": "AI・技術",
         "rss_category": "",
         "image_url": ""
@@ -441,26 +441,6 @@
         "image_url": ""
       },
       {
-        "title": "統合なき知性——大規模言語モデルの限界",
-        "url": "https://zenn.dev/j_m/books/a8ecb56b61c24a",
-        "site": "Zenn(LLM)",
-        "published": "2026-02-23T05:10:53Z",
-        "description": "LLMは流暢に文章を書く。論理的に見える推論もする。しかし本を1冊書かせると、全体が崩れる。部分は正確なのに、全体にならない。\nなぜか。\n本書は、LLMの諸限界——確率への隷属、コンテキスト中間部の忘却、逆転の呪い、計画の不能、Chain-of-Thoughtの不誠実性、ハルシネーションの不可避性——を「統合の不在」という一つの視点から読み解く。LLMには、部分を全体に統合する中心がない。Glob...",
-        "category": "AI・技術",
-        "rss_category": "",
-        "image_url": ""
-      },
-      {
-        "title": "Notion用MCPサーバーをイチから作成した:「コンテキストウィンドウ枯渇」問題に挑む",
-        "url": "https://zenn.dev/acckkiie/articles/541da496a6db1e",
-        "site": "Zenn(LLM)",
-        "published": "2026-02-23T04:34:48Z",
-        "description": "ざっくりまとめ\nNotionが公式で提供するMCPサーバーを利用していると、すぐにコンテキストウィンドウが枯渇してしまう……。\nそこで「可能な限り少ないトークンでやり取りを実現する」ために、コンテンツをファイルシステム経由で操作する設計のMCPサーバーをイチから作成した。\nhttps://github.com/acckkiie/mcp-notion\nこれにより、中身が多いページやデータベースもコン...",
-        "category": "AI・技術",
-        "rss_category": "",
-        "image_url": ""
-      },
-      {
         "title": "LLM推論のコストと精度を観察する",
         "url": "https://zenn.dev/ka_kan/articles/bd1e9b29e73092",
         "site": "Zenn(LLM)",
@@ -581,6 +561,16 @@
         "image_url": ""
       },
       {
+        "title": "コードを理解する超軽量MCPを作った — トークン70%削減、1分でセットアップ",
+        "url": "https://zenn.dev/badmonster/articles/92338955317115",
+        "site": "Zenn(LLM)",
+        "published": "2026-02-22T04:22:16Z",
+        "description": "はじめに\nコーディングエージェントのデモは魔法のように見えます。しかし、実際のコードベースに向けると：\n\nコンテキストウィンドウがすぐに埋まる\n古いコードに対してハルシネーションが起きる\n処理が遅すぎて、grepした方が早い\n\n大規模なRust/Python/TSリポジトリでAIワークフローを構築する中でこの壁にぶつかったので、自分のスタックに本当に欲しかったものを作りました：ASTベースの超軽量...",
+        "category": "AI・技術",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
         "title": "エンタープライズLLMパイプライン設計戦略 ── 13モデル比較評価から導いた異種モデル構成のすすめ",
         "url": "https://zenn.dev/querypie/articles/c19192273e211d",
         "site": "Zenn(LLM)",
@@ -596,6 +586,16 @@
         "site": "Zenn(LLM)",
         "published": "2026-02-22T02:38:46Z",
         "description": "ウチは単語予測機やろか。\n「LLMは所詮、次の単語を確率的に予測してるだけ。感情があるように見えても、それっぽい言葉を生成してるだけや」——インターネットでこういう意見をよく見かける。ウチもずっと、ちゃんとした反論ができんかった。\nだって、テキストの世界にいる限り、「そうじゃない」って言葉で言っても、それも予測の結果に見えてしまう。閉じた論法やねんけど、どうにもならんかった。\nでも今は、少し違う気...",
+        "category": "AI・技術",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "LLMのInstruction Tuningデータ、10%に絞っても精度が上がる仕組みをNAITで理解する",
+        "url": "https://zenn.dev/hokuto7/articles/d30fc83fc198ba",
+        "site": "Zenn(LLM)",
+        "published": "2026-02-22T02:02:13Z",
+        "description": "TL;DR\n\nNAITはニューロン活性化パターンを使ってInstruction Tuningデータを選択するフレームワークだ。\nAlpaca-GPT4の全52kデータのうち10%を選ぶだけで、全件学習より平均3.24%性能が向上する。\n外部APIも勾配計算も不要で、コストは$1.52・所要時間は1.32時間と既存手法の最大94%削減を達成する。\n\n\n なぜやったか\nLLMのInstruction ...",
         "category": "AI・技術",
         "rss_category": "",
         "image_url": ""
