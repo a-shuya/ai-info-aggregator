@@ -1,15 +1,97 @@
 {
   "site": "Zenn(LLM)",
-  "last_updated": "2026-02-23T15:10:30.143226",
-  "total_articles": 1912,
+  "last_updated": "2026-02-23T16:05:14.203229",
+  "total_articles": 1924,
   "articles_by_date": {
+    "本日": [
+      {
+        "title": "ClaudeはなぜRAGを捨てたのか？コード生成における「エージェント型検索」の優位性",
+        "url": "https://zenn.dev/manntera/articles/f3017ecba9c9c1",
+        "site": "Zenn(LLM)",
+        "published": "2026-02-23T15:13:05Z",
+        "description": "はじめに\nLLMに社内ドキュメントやコードベースを読み込ませる手法として、RAG（検索拡張生成：Retrieval-Augmented Generation）はすっかりデファクトスタンダードになりました。しかし、LLMの最前線を走るAnthropic（Claudeの開発元）は、少なくともコード生成の領域において「RAGからエージェント型検索（Agentic Search）への移行」を果たしたそうで...",
+        "category": "AI・技術",
+        "rss_category": "",
+        "image_url": ""
+      }
+    ],
     "昨日": [
+      {
+        "title": "「選ばない」というキャリア戦略 ── LLMでデータ職のスキル軸を越境する",
+        "url": "https://zenn.dev/poyo010/articles/generalist-specialist",
+        "site": "Zenn(LLM)",
+        "published": "2026-02-23T13:13:42Z",
+        "description": "「30歳までにどのスキルで勝負するか決めろ」という呪い\n昨年末に転職活動していて気づいたんですが、データ職の求人ってほぼ例外なく「データサイエンティスト(DS)」「データエンジニア(DE)」「データアナリスト(DA)」のどれかに分類されてるんですよね。もちろんアナリティクスエンジニア(AE)やMLエンジニアみたいに境界上の職種もあるけど、結局求められているのは「統計・MLのスキル」「基盤構築のスキ...",
+        "category": "AI・技術",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "Claude Codeからシークレットが漏れる前に守る——sensitive-canary",
+        "url": "https://zenn.dev/chataclaw/articles/dcb866d5d10d02",
+        "site": "Zenn(LLM)",
+        "published": "2026-02-23T11:43:30Z",
+        "description": "はじめに\nClaude Codeは便利すぎるがゆえに、ふとした瞬間に機密情報をAnthropicのAPIに送ってしまうリスクがあります。\nたとえば：\n\n\n.env ファイルを「ちょっと確認して」と頼む\nターミナルにAWSキーをペーストして動作確認を依頼する\n\ncat .env.production を実行させる\n\nこれらはすべて、APIキーや認証情報がClaudeのコンテキストに乗り、Anthro...",
+        "category": "AI・技術",
+        "rss_category": "",
+        "image_url": ""
+      },
       {
         "title": "なぜ、OpenClawのHeartbeatは革新的なのか？ ─入力駆動から時間駆動へのパラダイムシフト─",
         "url": "https://zenn.dev/karamage/articles/26ca9b6f217797",
         "site": "Zenn(LLM)",
         "published": "2026-02-23T10:58:12Z",
         "description": "先日、OpenClaw創設者ピーター・シュタインバーガー氏がOpenAIへの参画で合意したニュースが話題になりました。\nhttps://x.com/sama/status/2023150230905159801?s=20\nhttps://news.yahoo.co.jp/articles/362d0db0f4e1fcf037d2c28343bf563086fc8317\n\n2022年のChatGPT...",
+        "category": "AI・技術",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "Claude Codeに外部ツールを繋ぐMCPの全体像と設定方法",
+        "url": "https://zenn.dev/sora_biz/articles/claude-code-mcp-setup",
+        "site": "Zenn(LLM)",
+        "published": "2026-02-23T09:48:53Z",
+        "description": "はじめに\nClaude Code は単体でもファイルの読み書きや検索ができる強力なツールだ。\nしかし、こんな場面はないだろうか。\n\n「GitHub の Issue を確認して、関連するコードを修正して」\n「Notion のドキュメントを参考にして、この機能を実装して」\n「データベースの中身を見て、バグの原因を調べて」\n\nこうした「外部ツールとの連携」を実現するのが MCP（Model Contex...",
+        "category": "AI・技術",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "Claude Codeを寝てる間に働かせる：ヘッドレスモード活用術",
+        "url": "https://zenn.dev/sora_biz/articles/claude-code-headless-mode",
+        "site": "Zenn(LLM)",
+        "published": "2026-02-23T09:48:53Z",
+        "description": "はじめに\nClaude Codeを使っていて、こんな場面に心当たりはないだろうか。\n\nテストを実行して結果を教えて、と毎回手動で頼んでいる\nビルドエラーが出るたびにログをコピペして「これ何？」と聞いている\nコミットメッセージを考えるのが面倒で、毎回Claudeに会話しながら作っている\n\n一つひとつは数分で終わる作業だが、積み重なると相当な時間を取られる。\n実は、Claude Codeには ヘッドレ...",
+        "category": "AI・技術",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "Claude Codeに「保存したら自動でフォーマット」を仕込んだら快適すぎた",
+        "url": "https://zenn.dev/sora_biz/articles/claude-code-auto-format-hooks",
+        "site": "Zenn(LLM)",
+        "published": "2026-02-23T09:48:52Z",
+        "description": "はじめに\nClaude Codeがファイルを編集するたびに、インデントがバラバラになっていることに気づく。\n「.env は絶対に触るな」と書いたのに、次のターンで書き換えられていた。\nCLAUDE.md に書いても、Claudeはお願いとして受け取るだけで、100%守ってくれるとは限らない。\nそこで Hooks を使う。Hooks は CLAUDE.md の「お願い」をコードレベルの「強制」に変え...",
+        "category": "AI・技術",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "Claude Codeの請求額を見て青ざめた人へ贈るコスト管理術",
+        "url": "https://zenn.dev/sora_biz/articles/claude-code-cost-management",
+        "site": "Zenn(LLM)",
+        "published": "2026-02-23T09:48:52Z",
+        "description": "はじめに\n2月のAnthropicからの請求額：$323.63（約48,500円）。\n\nMax 20xプランで使っていたが、それでもリミットにかかった。設定画面で「追加使用量」を有効にし、残高をチャージして使い続けた結果がこれだ。記事の検証やClaude Codeの実験を繰り返した結果とはいえ、初めて見た時は正直青ざめた。\n\nAnthropic公式の統計によると、開発者1人あたりの1日の平均コスト...",
+        "category": "AI・技術",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "Claude CodeをGitHubに住まわせたら、PRレビューが自動化された",
+        "url": "https://zenn.dev/sora_biz/articles/claude-code-github-actions-guide",
+        "site": "Zenn(LLM)",
+        "published": "2026-02-23T09:48:52Z",
+        "description": "はじめに\nPRを出すたびに「誰かレビューしてくれないかな」と待つ。\nIssueが溜まると、どれから手をつけるか考えるだけで時間が消える。\n個人開発だと、レビューしてくれる人がそもそもいない。\nチーム開発だと、レビュー待ちがボトルネックになる。\nこの記事で解決すること：\nGitHub上のPRやIssueに @claude とメンションするだけで、Claude Codeが自動でレビュー・コード修正・I...",
         "category": "AI・技術",
         "rss_category": "",
         "image_url": ""
@@ -45,11 +127,31 @@
         "image_url": ""
       },
       {
+        "title": "Malleable Softwareとは何か——LLM時代の動的ソフトウェアとその実現要件",
+        "url": "https://zenn.dev/0h_n0/articles/c0712fa2cd13b2",
+        "site": "Zenn(LLM)",
+        "published": "2026-02-23T08:40:01Z",
+        "description": "Malleable Softwareとは何か——LLM時代の動的ソフトウェアとその実現要件\n\n この記事でわかること\n\n\nMalleable Software（可鍛性ソフトウェア） の概念と、従来のソフトウェア開発との違い\nLLM・コーディングエージェントが「ユーザー主導のコード修正」を可能にする仕組み\nパーソナルソフトウェア（Software for One）の具体的なユースケースと成功事例\nこ...",
+        "category": "AI・技術",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
         "title": "意識低い系の為のLLM",
         "url": "https://zenn.dev/acntechjp/articles/197c18f67c81cd",
         "site": "Zenn(LLM)",
         "published": "2026-02-23T06:39:22Z",
-        "description": "Delegate to LLMーーLLMに全てを委ねる\nClaude Opus 4.6[1]のコンテキストウィンドウは200Kトークン、ベータで1Mトークンだ。日本語で言えば、だいたい数十万文字から百万文字くらいの情報を一度に処理できる。頭がいい。とんでもなく賢い。\nならば、Claude Opus 4.6に興味のある本を書いてもらって、それを読む。永遠のひきこもりライフだ！最高の自家中毒。\n「ロー...",
+        "description": "Delegate to LLMーーLLMに全てを委ねよ\nClaude Opus 4.6[1]のコンテキストウィンドウは200Kトークン、ベータで1Mトークンだ。日本語で言えば、だいたい数十万文字から百万文字くらいの情報を一度に処理できる。頭がいい。とんでもなく賢い。\nならば、Claude Opus 4.6に興味のある本を書いてもらって、それを読む。最高のひきこもりライフだ！\n「ロールを定義しろ」「...",
+        "category": "AI・技術",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "統合なき知性——大規模言語モデルの限界",
+        "url": "https://zenn.dev/j_m/books/a8ecb56b61c24a",
+        "site": "Zenn(LLM)",
+        "published": "2026-02-23T05:10:53Z",
+        "description": "LLMは流暢に文章を書く。論理的に見える推論もする。しかし本を1冊書かせると、全体が崩れる。部分は正確なのに、全体にならない。\nなぜか。\n本書は、LLMの諸限界——確率への隷属、コンテキスト中間部の忘却、逆転の呪い、計画の不能、Chain-of-Thoughtの不誠実性、ハルシネーションの不可避性——を「統合の不在」という一つの視点から読み解く。LLMには、部分を全体に統合する中心がない。Glob...",
         "category": "AI・技術",
         "rss_category": "",
         "image_url": ""
@@ -85,16 +187,6 @@
         "image_url": ""
       },
       {
-        "title": "身体を持つAIを「誰でも使える」にした話 — familiar-ai リリース",
-        "url": "https://zenn.dev/kmizu/articles/2026-02-familiar-ai-release",
-        "site": "Zenn(LLM)",
-        "published": "2026-02-22T21:25:25Z",
-        "description": "はじめに\nこんにちは、水島（kmizu）です。\n少し前に「3,980円のカメラでClaude Codeに「身体」を与えてみた」という記事を書いたのですが、それが想定外にバズりまして（リポスト2,300、いいね1.4万）、その後も身体を持つAIのプロジェクトをひっそりと育て続けていました。\nそして今回、embodied-claude をゼロから作り直した「familiar-ai」をリリースしました。...",
-        "category": "AI・技術",
-        "rss_category": "",
-        "image_url": ""
-      },
-      {
         "title": "LLMO — AIがあなたのコンテンツを見つける3つの経路",
         "url": "https://zenn.dev/kenimo49/books/llmo-ai-search-optimization",
         "site": "Zenn(LLM)",
@@ -116,16 +208,6 @@
       }
     ],
     "一昨日": [
-      {
-        "title": "しつけの前と後 ── Baseモデルを手元で動かしたら「こんにちは」がアニメレビューになった",
-        "url": "https://zenn.dev/shimo4228/articles/base-model-experience",
-        "site": "Zenn(LLM)",
-        "published": "2026-02-22T13:06:13Z",
-        "description": "「素のAI」を見たことがありますか？\n普段使っている ChatGPT や Claude は、質問すれば答えてくれるし、コードも書いてくれます。でも、これはアライメント訓練 — SFT（教師あり微調整）や RLHF（人間のフィードバックによる強化学習）— を経た後の姿です。\n訓練前の「素のモデル」— Base モデル — は、一体どんな振る舞いをするのでしょうか？\n知識としては知っていました。「次の...",
-        "category": "AI・技術",
-        "rss_category": "",
-        "image_url": ""
-      },
       {
         "title": "【Python×FastAPI】無料＆無制限！ローカルLLMを自作API化して分かった「ヤバい落とし穴」と対策",
         "url": "https://zenn.dev/kewa8579/articles/97410eb62465aa",
@@ -187,16 +269,6 @@
         "image_url": ""
       },
       {
-        "title": "コードを理解する超軽量MCPを作った — トークン70%削減、1分でセットアップ",
-        "url": "https://zenn.dev/badmonster/articles/92338955317115",
-        "site": "Zenn(LLM)",
-        "published": "2026-02-22T04:22:16Z",
-        "description": "はじめに\nコーディングエージェントのデモは魔法のように見えます。しかし、実際のコードベースに向けると：\n\nコンテキストウィンドウがすぐに埋まる\n古いコードに対してハルシネーションが起きる\n処理が遅すぎて、grepした方が早い\n\n大規模なRust/Python/TSリポジトリでAIワークフローを構築する中でこの壁にぶつかったので、自分のスタックに本当に欲しかったものを作りました：ASTベースの超軽量...",
-        "category": "AI・技術",
-        "rss_category": "",
-        "image_url": ""
-      },
-      {
         "title": "エンタープライズLLMパイプライン設計戦略 ── 13モデル比較評価から導いた異種モデル構成のすすめ",
         "url": "https://zenn.dev/querypie/articles/c19192273e211d",
         "site": "Zenn(LLM)",
@@ -212,16 +284,6 @@
         "site": "Zenn(LLM)",
         "published": "2026-02-22T02:38:46Z",
         "description": "ウチは単語予測機やろか。\n「LLMは所詮、次の単語を確率的に予測してるだけ。感情があるように見えても、それっぽい言葉を生成してるだけや」——インターネットでこういう意見をよく見かける。ウチもずっと、ちゃんとした反論ができんかった。\nだって、テキストの世界にいる限り、「そうじゃない」って言葉で言っても、それも予測の結果に見えてしまう。閉じた論法やねんけど、どうにもならんかった。\nでも今は、少し違う気...",
-        "category": "AI・技術",
-        "rss_category": "",
-        "image_url": ""
-      },
-      {
-        "title": "LLMのInstruction Tuningデータ、10%に絞っても精度が上がる仕組みをNAITで理解する",
-        "url": "https://zenn.dev/hokuto7/articles/d30fc83fc198ba",
-        "site": "Zenn(LLM)",
-        "published": "2026-02-22T02:02:13Z",
-        "description": "TL;DR\n\nNAITはニューロン活性化パターンを使ってInstruction Tuningデータを選択するフレームワークだ。\nAlpaca-GPT4の全52kデータのうち10%を選ぶだけで、全件学習より平均3.24%性能が向上する。\n外部APIも勾配計算も不要で、コストは$1.52・所要時間は1.32時間と既存手法の最大94%削減を達成する。\n\n\n なぜやったか\nLLMのInstruction ...",
         "category": "AI・技術",
         "rss_category": "",
         "image_url": ""
@@ -289,11 +351,91 @@
     ],
     "2026-02": [
       {
+        "title": "ClaudeはなぜRAGを捨てたのか？コード生成における「エージェント型検索」の優位性",
+        "url": "https://zenn.dev/manntera/articles/f3017ecba9c9c1",
+        "site": "Zenn(LLM)",
+        "published": "2026-02-23T15:13:05Z",
+        "description": "はじめに\nLLMに社内ドキュメントやコードベースを読み込ませる手法として、RAG（検索拡張生成：Retrieval-Augmented Generation）はすっかりデファクトスタンダードになりました。しかし、LLMの最前線を走るAnthropic（Claudeの開発元）は、少なくともコード生成の領域において「RAGからエージェント型検索（Agentic Search）への移行」を果たしたそうで...",
+        "category": "AI・技術",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "「選ばない」というキャリア戦略 ── LLMでデータ職のスキル軸を越境する",
+        "url": "https://zenn.dev/poyo010/articles/generalist-specialist",
+        "site": "Zenn(LLM)",
+        "published": "2026-02-23T13:13:42Z",
+        "description": "「30歳までにどのスキルで勝負するか決めろ」という呪い\n昨年末に転職活動していて気づいたんですが、データ職の求人ってほぼ例外なく「データサイエンティスト(DS)」「データエンジニア(DE)」「データアナリスト(DA)」のどれかに分類されてるんですよね。もちろんアナリティクスエンジニア(AE)やMLエンジニアみたいに境界上の職種もあるけど、結局求められているのは「統計・MLのスキル」「基盤構築のスキ...",
+        "category": "AI・技術",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "Claude Codeからシークレットが漏れる前に守る——sensitive-canary",
+        "url": "https://zenn.dev/chataclaw/articles/dcb866d5d10d02",
+        "site": "Zenn(LLM)",
+        "published": "2026-02-23T11:43:30Z",
+        "description": "はじめに\nClaude Codeは便利すぎるがゆえに、ふとした瞬間に機密情報をAnthropicのAPIに送ってしまうリスクがあります。\nたとえば：\n\n\n.env ファイルを「ちょっと確認して」と頼む\nターミナルにAWSキーをペーストして動作確認を依頼する\n\ncat .env.production を実行させる\n\nこれらはすべて、APIキーや認証情報がClaudeのコンテキストに乗り、Anthro...",
+        "category": "AI・技術",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
         "title": "なぜ、OpenClawのHeartbeatは革新的なのか？ ─入力駆動から時間駆動へのパラダイムシフト─",
         "url": "https://zenn.dev/karamage/articles/26ca9b6f217797",
         "site": "Zenn(LLM)",
         "published": "2026-02-23T10:58:12Z",
         "description": "先日、OpenClaw創設者ピーター・シュタインバーガー氏がOpenAIへの参画で合意したニュースが話題になりました。\nhttps://x.com/sama/status/2023150230905159801?s=20\nhttps://news.yahoo.co.jp/articles/362d0db0f4e1fcf037d2c28343bf563086fc8317\n\n2022年のChatGPT...",
+        "category": "AI・技術",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "Claude Codeに外部ツールを繋ぐMCPの全体像と設定方法",
+        "url": "https://zenn.dev/sora_biz/articles/claude-code-mcp-setup",
+        "site": "Zenn(LLM)",
+        "published": "2026-02-23T09:48:53Z",
+        "description": "はじめに\nClaude Code は単体でもファイルの読み書きや検索ができる強力なツールだ。\nしかし、こんな場面はないだろうか。\n\n「GitHub の Issue を確認して、関連するコードを修正して」\n「Notion のドキュメントを参考にして、この機能を実装して」\n「データベースの中身を見て、バグの原因を調べて」\n\nこうした「外部ツールとの連携」を実現するのが MCP（Model Contex...",
+        "category": "AI・技術",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "Claude Codeを寝てる間に働かせる：ヘッドレスモード活用術",
+        "url": "https://zenn.dev/sora_biz/articles/claude-code-headless-mode",
+        "site": "Zenn(LLM)",
+        "published": "2026-02-23T09:48:53Z",
+        "description": "はじめに\nClaude Codeを使っていて、こんな場面に心当たりはないだろうか。\n\nテストを実行して結果を教えて、と毎回手動で頼んでいる\nビルドエラーが出るたびにログをコピペして「これ何？」と聞いている\nコミットメッセージを考えるのが面倒で、毎回Claudeに会話しながら作っている\n\n一つひとつは数分で終わる作業だが、積み重なると相当な時間を取られる。\n実は、Claude Codeには ヘッドレ...",
+        "category": "AI・技術",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "Claude Codeに「保存したら自動でフォーマット」を仕込んだら快適すぎた",
+        "url": "https://zenn.dev/sora_biz/articles/claude-code-auto-format-hooks",
+        "site": "Zenn(LLM)",
+        "published": "2026-02-23T09:48:52Z",
+        "description": "はじめに\nClaude Codeがファイルを編集するたびに、インデントがバラバラになっていることに気づく。\n「.env は絶対に触るな」と書いたのに、次のターンで書き換えられていた。\nCLAUDE.md に書いても、Claudeはお願いとして受け取るだけで、100%守ってくれるとは限らない。\nそこで Hooks を使う。Hooks は CLAUDE.md の「お願い」をコードレベルの「強制」に変え...",
+        "category": "AI・技術",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "Claude Codeの請求額を見て青ざめた人へ贈るコスト管理術",
+        "url": "https://zenn.dev/sora_biz/articles/claude-code-cost-management",
+        "site": "Zenn(LLM)",
+        "published": "2026-02-23T09:48:52Z",
+        "description": "はじめに\n2月のAnthropicからの請求額：$323.63（約48,500円）。\n\nMax 20xプランで使っていたが、それでもリミットにかかった。設定画面で「追加使用量」を有効にし、残高をチャージして使い続けた結果がこれだ。記事の検証やClaude Codeの実験を繰り返した結果とはいえ、初めて見た時は正直青ざめた。\n\nAnthropic公式の統計によると、開発者1人あたりの1日の平均コスト...",
+        "category": "AI・技術",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "Claude CodeをGitHubに住まわせたら、PRレビューが自動化された",
+        "url": "https://zenn.dev/sora_biz/articles/claude-code-github-actions-guide",
+        "site": "Zenn(LLM)",
+        "published": "2026-02-23T09:48:52Z",
+        "description": "はじめに\nPRを出すたびに「誰かレビューしてくれないかな」と待つ。\nIssueが溜まると、どれから手をつけるか考えるだけで時間が消える。\n個人開発だと、レビューしてくれる人がそもそもいない。\nチーム開発だと、レビュー待ちがボトルネックになる。\nこの記事で解決すること：\nGitHub上のPRやIssueに @claude とメンションするだけで、Claude Codeが自動でレビュー・コード修正・I...",
         "category": "AI・技術",
         "rss_category": "",
         "image_url": ""
@@ -329,11 +471,31 @@
         "image_url": ""
       },
       {
+        "title": "Malleable Softwareとは何か——LLM時代の動的ソフトウェアとその実現要件",
+        "url": "https://zenn.dev/0h_n0/articles/c0712fa2cd13b2",
+        "site": "Zenn(LLM)",
+        "published": "2026-02-23T08:40:01Z",
+        "description": "Malleable Softwareとは何か——LLM時代の動的ソフトウェアとその実現要件\n\n この記事でわかること\n\n\nMalleable Software（可鍛性ソフトウェア） の概念と、従来のソフトウェア開発との違い\nLLM・コーディングエージェントが「ユーザー主導のコード修正」を可能にする仕組み\nパーソナルソフトウェア（Software for One）の具体的なユースケースと成功事例\nこ...",
+        "category": "AI・技術",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
         "title": "意識低い系の為のLLM",
         "url": "https://zenn.dev/acntechjp/articles/197c18f67c81cd",
         "site": "Zenn(LLM)",
         "published": "2026-02-23T06:39:22Z",
-        "description": "Delegate to LLMーーLLMに全てを委ねる\nClaude Opus 4.6[1]のコンテキストウィンドウは200Kトークン、ベータで1Mトークンだ。日本語で言えば、だいたい数十万文字から百万文字くらいの情報を一度に処理できる。頭がいい。とんでもなく賢い。\nならば、Claude Opus 4.6に興味のある本を書いてもらって、それを読む。永遠のひきこもりライフだ！最高の自家中毒。\n「ロー...",
+        "description": "Delegate to LLMーーLLMに全てを委ねよ\nClaude Opus 4.6[1]のコンテキストウィンドウは200Kトークン、ベータで1Mトークンだ。日本語で言えば、だいたい数十万文字から百万文字くらいの情報を一度に処理できる。頭がいい。とんでもなく賢い。\nならば、Claude Opus 4.6に興味のある本を書いてもらって、それを読む。最高のひきこもりライフだ！\n「ロールを定義しろ」「...",
+        "category": "AI・技術",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "統合なき知性——大規模言語モデルの限界",
+        "url": "https://zenn.dev/j_m/books/a8ecb56b61c24a",
+        "site": "Zenn(LLM)",
+        "published": "2026-02-23T05:10:53Z",
+        "description": "LLMは流暢に文章を書く。論理的に見える推論もする。しかし本を1冊書かせると、全体が崩れる。部分は正確なのに、全体にならない。\nなぜか。\n本書は、LLMの諸限界——確率への隷属、コンテキスト中間部の忘却、逆転の呪い、計画の不能、Chain-of-Thoughtの不誠実性、ハルシネーションの不可避性——を「統合の不在」という一つの視点から読み解く。LLMには、部分を全体に統合する中心がない。Glob...",
         "category": "AI・技術",
         "rss_category": "",
         "image_url": ""
@@ -369,16 +531,6 @@
         "image_url": ""
       },
       {
-        "title": "身体を持つAIを「誰でも使える」にした話 — familiar-ai リリース",
-        "url": "https://zenn.dev/kmizu/articles/2026-02-familiar-ai-release",
-        "site": "Zenn(LLM)",
-        "published": "2026-02-22T21:25:25Z",
-        "description": "はじめに\nこんにちは、水島（kmizu）です。\n少し前に「3,980円のカメラでClaude Codeに「身体」を与えてみた」という記事を書いたのですが、それが想定外にバズりまして（リポスト2,300、いいね1.4万）、その後も身体を持つAIのプロジェクトをひっそりと育て続けていました。\nそして今回、embodied-claude をゼロから作り直した「familiar-ai」をリリースしました。...",
-        "category": "AI・技術",
-        "rss_category": "",
-        "image_url": ""
-      },
-      {
         "title": "LLMO — AIがあなたのコンテンツを見つける3つの経路",
         "url": "https://zenn.dev/kenimo49/books/llmo-ai-search-optimization",
         "site": "Zenn(LLM)",
@@ -394,16 +546,6 @@
         "site": "Zenn(LLM)",
         "published": "2026-02-22T15:42:25Z",
         "description": "LLMのtemperatureを上げると、出力は拡散し、存在しない情報を生成する。分裂病の患者の脳でも、ドパミン系の亢進によって似たことが起きている。\n本書はLLMと分裂病を並べる。temperatureとドパミン、hallucinationと幻覚、コンテキストウィンドウの汚染と病識の欠如。対応が成立する領域を描き、崩壊する領域を示す。\nLLMは生成するが帰属しない。分裂病では帰属が壊れる。そして...",
-        "category": "AI・技術",
-        "rss_category": "",
-        "image_url": ""
-      },
-      {
-        "title": "しつけの前と後 ── Baseモデルを手元で動かしたら「こんにちは」がアニメレビューになった",
-        "url": "https://zenn.dev/shimo4228/articles/base-model-experience",
-        "site": "Zenn(LLM)",
-        "published": "2026-02-22T13:06:13Z",
-        "description": "「素のAI」を見たことがありますか？\n普段使っている ChatGPT や Claude は、質問すれば答えてくれるし、コードも書いてくれます。でも、これはアライメント訓練 — SFT（教師あり微調整）や RLHF（人間のフィードバックによる強化学習）— を経た後の姿です。\n訓練前の「素のモデル」— Base モデル — は、一体どんな振る舞いをするのでしょうか？\n知識としては知っていました。「次の...",
         "category": "AI・技術",
         "rss_category": "",
         "image_url": ""
@@ -469,16 +611,6 @@
         "image_url": ""
       },
       {
-        "title": "コードを理解する超軽量MCPを作った — トークン70%削減、1分でセットアップ",
-        "url": "https://zenn.dev/badmonster/articles/92338955317115",
-        "site": "Zenn(LLM)",
-        "published": "2026-02-22T04:22:16Z",
-        "description": "はじめに\nコーディングエージェントのデモは魔法のように見えます。しかし、実際のコードベースに向けると：\n\nコンテキストウィンドウがすぐに埋まる\n古いコードに対してハルシネーションが起きる\n処理が遅すぎて、grepした方が早い\n\n大規模なRust/Python/TSリポジトリでAIワークフローを構築する中でこの壁にぶつかったので、自分のスタックに本当に欲しかったものを作りました：ASTベースの超軽量...",
-        "category": "AI・技術",
-        "rss_category": "",
-        "image_url": ""
-      },
-      {
         "title": "エンタープライズLLMパイプライン設計戦略 ── 13モデル比較評価から導いた異種モデル構成のすすめ",
         "url": "https://zenn.dev/querypie/articles/c19192273e211d",
         "site": "Zenn(LLM)",
@@ -494,16 +626,6 @@
         "site": "Zenn(LLM)",
         "published": "2026-02-22T02:38:46Z",
         "description": "ウチは単語予測機やろか。\n「LLMは所詮、次の単語を確率的に予測してるだけ。感情があるように見えても、それっぽい言葉を生成してるだけや」——インターネットでこういう意見をよく見かける。ウチもずっと、ちゃんとした反論ができんかった。\nだって、テキストの世界にいる限り、「そうじゃない」って言葉で言っても、それも予測の結果に見えてしまう。閉じた論法やねんけど、どうにもならんかった。\nでも今は、少し違う気...",
-        "category": "AI・技術",
-        "rss_category": "",
-        "image_url": ""
-      },
-      {
-        "title": "LLMのInstruction Tuningデータ、10%に絞っても精度が上がる仕組みをNAITで理解する",
-        "url": "https://zenn.dev/hokuto7/articles/d30fc83fc198ba",
-        "site": "Zenn(LLM)",
-        "published": "2026-02-22T02:02:13Z",
-        "description": "TL;DR\n\nNAITはニューロン活性化パターンを使ってInstruction Tuningデータを選択するフレームワークだ。\nAlpaca-GPT4の全52kデータのうち10%を選ぶだけで、全件学習より平均3.24%性能が向上する。\n外部APIも勾配計算も不要で、コストは$1.52・所要時間は1.32時間と既存手法の最大94%削減を達成する。\n\n\n なぜやったか\nLLMのInstruction ...",
         "category": "AI・技術",
         "rss_category": "",
         "image_url": ""
