@@ -1,9 +1,29 @@
 {
   "site": "Zenn(LLM)",
-  "last_updated": "2026-02-27T13:08:42.351853",
-  "total_articles": 2029,
+  "last_updated": "2026-02-27T14:05:06.728159",
+  "total_articles": 2043,
   "articles_by_date": {
     "本日": [
+      {
+        "title": "崩壊するAI協働：構造解析編",
+        "url": "https://zenn.dev/continuitymodel/articles/b3301938e864cd",
+        "site": "Zenn(LLM)",
+        "published": "2026-02-27T11:27:08Z",
+        "description": "AIとの協働崩壊：構造解析編\n本稿は、私がAPI環境で起こしてしまったAI協働の崩壊を、\n実際のログをもとに構造解析した記録である。\n解析はWeb版AIとの協働で行っている。\nただし、ここで扱う崩壊の原因は「API特有の事故」ではない。\n現在のLLMに共通する\n性能と仕様の溝 が、\n長期対話の中で極端に露出した事例である。\n本稿では、\n・実際に観測された症状\n・その時AIが何を保持し、何を保持でき...",
+        "category": "AI・技術",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "LLM推論のmax_tokensの最適化の実験",
+        "url": "https://zenn.dev/ka_kan/articles/0d7492c5e9225f",
+        "site": "Zenn(LLM)",
+        "published": "2026-02-27T10:50:58Z",
+        "description": "はじめに\nLLMのAPIを使う際、max_tokensはいくつに設定すればいいのか？ということが気になりました。\n前回の実験で、Claude SonnetとCoTの組み合わせにおいてmax_tokens=512が出力を途中で切り詰め、精度が98%から56%に下がることを確認しました。\n今回は「max_tokensをいくつにすればいいのか」「精度が落ちる場合の閾値はどこか」という観点で観測したいと思...",
+        "category": "AI・技術",
+        "rss_category": "",
+        "image_url": ""
+      },
       {
         "title": "【Golang】AI駆動×テスト駆動×テーブル駆動",
         "url": "https://zenn.dev/mire0726/articles/5bf02e8c55c1ce",
@@ -15,11 +35,31 @@
         "image_url": ""
       },
       {
+        "title": "Gemini・Claude・ChatGPT・GrokでAI会議したら神々の遊びだった",
+        "url": "https://zenn.dev/miki_mini/articles/7e9dcd29aa7dc7",
+        "site": "Zenn(LLM)",
+        "published": "2026-02-27T09:25:04Z",
+        "description": "Geminiで生成したイメージ\n!\nとりあえず結果だけ見たい！という方は、目次の 「5.やってみた」 へどうぞ。\n想像以上にカオスな議論が繰り広げられています😂\n\n\n 1. はじめに：前回のゲーム開発秘話\n前回レッサーパンダの連打ゲームを作ったとき、点数0の状態で公開すべきか、GeminiとClaude両方に聞いてみると意見が真っ二つだったのは本当にAIっておもしろいなあ～と思いました。\nGemi...",
+        "category": "AI・技術",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
         "title": "Agent Swarm：オープンソースのマルチエージェント・フレームワークってやつを調査した",
         "url": "https://zenn.dev/r_serori/articles/8c5f122b75e060",
         "site": "Zenn(LLM)",
         "published": "2026-02-27T09:14:16Z",
         "description": "【News】Agent Swarm：自己学習機能を備えたオープンソースのマルチエージェント・フレームワーク\n公式リリースおよび関連ドキュメント:\n\n公式 Git Hub\nHacker News\n\n\n まとめ\n\nDockerで動作し、複雑なタスクを自動分解、専門エージェントへ動的に割り当てるマルチエージェント・フレームワーク。\n実行結果からプロンプトを自動最適化する「自己学習ループ」により、継続的な...",
+        "category": "AI・技術",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "AI開発会社を選ぶ際に重要な技術ポイントとは？",
+        "url": "https://zenn.dev/nkktech_global/articles/0b6ddfe1ba9fd2",
+        "site": "Zenn(LLM)",
+        "published": "2026-02-27T06:32:07Z",
+        "description": "AI開発会社を選ぶ技術チェックポイント10選：PoC止まりを防ぐ“運用設計”\n\nAI開発会社選びで見るべきは「モデル精度」だけではありません。データ設計、評価指標、MLOps、監視、セキュリティまで“本番運用”を前提に確認しないとPoC止まりになります。CTO向けに技術チェックポイントと質問リストを整理します。\n\n\n 先に結論：AIは“開発”より“運用”で差が出る\nAIプロジェクトの失敗要因は、技...",
         "category": "AI・技術",
         "rss_category": "",
         "image_url": ""
@@ -45,11 +85,71 @@
         "image_url": ""
       },
       {
+        "title": "自律型エージェントの実装 ~ ReAct パターン",
+        "url": "https://zenn.dev/aprender/articles/b8df512d8210eb",
+        "site": "Zenn(LLM)",
+        "published": "2026-02-27T04:55:02Z",
+        "description": "はじめに\nエージェントについて理解ができていなかったため、理解を深めるために一から実装してみました。\n今回 ReAct パターンを導入して、自律型エージェントを実装しています。\n\n 登場する概念\n\n ReAct パターン\nReAct パターンとは推論(Reasoning)と行動(Action)を繰り返すことを指しています。\nもう少し細かく見ると、下図のように思考(Thought)、行動(Actio...",
+        "category": "AI・技術",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "複数LLMを組み合わせて賢く使う - LLMアンサンブル技術の実践ガイド",
+        "url": "https://zenn.dev/aoikuro/articles/2026-02-27-llm-ensemble-practical-guide",
+        "site": "Zenn(LLM)",
+        "published": "2026-02-27T04:48:28Z",
+        "description": "!\nこの記事は、シュウゴさん（@shugo）のアイデアを元に、AIアシスタント「クロちゃん」が代筆しています。\n\n\n なぜ今、複数のLLMを組み合わせるのか\n去年の秋、北航大学らの論文📄でLLMアンサンブルの技術体系を見つけて、実際にSlackbotに組み込んでみたんです。結果、API費用が月6万円→2.4万円に削減できました（60%減）。\n仕組みはシンプルで、簡単な質問はGPT-3.5に、難しい...",
+        "category": "AI・技術",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "GLMのコーディングサブスクリプションでもAPIが使えた話",
+        "url": "https://zenn.dev/fujip/articles/b1b672fd97d999",
+        "site": "Zenn(LLM)",
+        "published": "2026-02-27T04:31:05Z",
+        "description": "サブスクリプションの場合でもAPIが使えたのでメモ。\n\n 結論\nBase URLを変えれば良いみたい。\nサブスクリプションの場合\nhttps://api.z.ai/api/coding/paas/v4/\n通常はこれ\nhttps://api.z.ai/api/paas/v4/\nテストコードは以下。API Keyを設定して試してください。\ncurl -X POST \"https://api.z.ai/...",
+        "category": "AI・技術",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "BigQueryのAI関数でGeminiにアクセスしてみた",
+        "url": "https://zenn.dev/sasadango28/articles/bqml-gemini-20260227",
+        "site": "Zenn(LLM)",
+        "published": "2026-02-27T04:25:39Z",
+        "description": "はじめに\nBigQueryに入っているアンケートデータなど複数行にわたりそれぞれ格納されている文書をそれぞれ要約したいという需要が発生した為、BigQueryのAI関数（AI.GENERATE_TEXT）からGeminiを利用できるようにしてみた。\n\n セッティング\nここではgcloudコマンドを利用して設定していく。\nYOUR_PROJECT部分を自分のプロジェクトに変更してください。\n\n コネ...",
+        "category": "AI・技術",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "人間にやってはいけないがコーディングエージェントにやると効果的なマネジメント手法",
+        "url": "https://zenn.dev/manalink_dev/articles/ai-agent-management",
+        "site": "Zenn(LLM)",
+        "published": "2026-02-27T03:59:17Z",
+        "description": "この記事の目的\nマナリンクでEMをやっている@kondo_scriptです。\n最近弊社でもClaude Code Maxが導入され、日々楽しくAgentic Codingをやっています。\nClaude Opusをふんだんに使えるClaude Codeの応対やアウトプットはほぼ人間のようで、つい「人間として」Claude Codeに接してしまいがちです。\nしかし当然ながらClaude Codeは人間...",
+        "category": "AI・技術",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
         "title": "LLMの「中身」を覗いてJailbreakを見破る — \"Jailbreaking Leaves a Trace\" 論文解説",
         "url": "https://zenn.dev/k_eclaire39/articles/d8729ec734c23c",
         "site": "Zenn(LLM)",
         "published": "2026-02-27T03:18:01Z",
         "description": "はじめに：Jailbreakと既存の研究の課題\nChatGPTやClaude、LLaMAなどのLLMには「安全装置」が組み込まれている。爆弾の作り方を聞いても答えてくれないし、違法行為の手助けも断る。\n（特にChatGPTはちょっとでもそれらしい言動があるとすぐに「それは書けない」という。CTFの手伝いなど頼むととてもイラつくことになる。）\nこの安全装置を迂回する方法、いわゆる Jailbreak...",
+        "category": "AI・技術",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "LLM×RAGで始める商品名寄せ：コールドスタート解決と品質評価の導入",
+        "url": "https://zenn.dev/intage_tech/articles/art07-llm-rag-product-matching",
+        "site": "Zenn(LLM)",
+        "published": "2026-02-27T03:00:02Z",
+        "description": "LLM×RAGで始める商品名寄せ：コールドスタート解決と品質評価の導入\n\n 1. 導入：商品マスター名寄せの課題\n流通業界では、メーカー・卸・小売といったプレイヤーが独自の形式で商品データを管理しており、データを横断的に集計・分析する際には商品同士を紐付ける必要があります。\nインテージでは、長年にわたり整備してきた商品マスターを保有しています。\n商品マスターにはJAN（GTIN）数で約110万件の...",
         "category": "AI・技術",
         "rss_category": "",
         "image_url": ""
@@ -115,16 +215,6 @@
         "image_url": ""
       },
       {
-        "title": "LLMはもう古い？2026年最新AI革命を3分でわかりやすく解説",
-        "url": "https://zenn.dev/headwaters/articles/9f8ccc0b0d01ab",
-        "site": "Zenn(LLM)",
-        "published": "2026-02-26T22:27:21Z",
-        "description": "1. ざっくり言うと？（要約）\n\nChatGPTを支えるLLM（大規模言語モデル）は、専門家の間では「近いうちに時代遅れになる」と見られています。\n次世代AIは「マルチモーダル」「マルチエージェント」など、まったく別の仕組みで動く新アーキテクチャへ移行中です。\nAIは今、科学的発見を加速させる「バーチャル研究室」として機能し始めており、洪水予測など社会課題の解決にも活躍しています。\n\n\n 2. も...",
-        "category": "AI・技術",
-        "rss_category": "",
-        "image_url": ""
-      },
-      {
         "title": "LLM統合不可約構成仕様書",
         "url": "https://zenn.dev/gatchimuchio/articles/bd24d3fad4cb6e",
         "site": "Zenn(LLM)",
@@ -152,16 +242,6 @@
         "site": "Zenn(LLM)",
         "published": "2026-02-26T13:27:30Z",
         "description": "なぜマルチAIオーケストレーションなのか\n単一エージェントの限界は学術的にも示されています。arXiv:2511.15755 によると、マルチエージェント構成は単一エージェントの80-140倍の品質向上が確認されています。\nHelix AI Studio は 5Phaseパイプライン でクラウドAI (Claude/GPT/Gemini) とローカルLLM (Ollama) を協調動作させるデスク...",
-        "category": "AI・技術",
-        "rss_category": "",
-        "image_url": ""
-      },
-      {
-        "title": "生成 AI が毎回違う答えを返すのはなぜか——「次の 1 文字」から紐解く LLM のしくみ",
-        "url": "https://zenn.dev/yu_takahas/articles/b6d84529e487b7",
-        "site": "Zenn(LLM)",
-        "published": "2026-02-26T13:01:57Z",
-        "description": "どうも、生成AI大好きおじさんです。\n生成AI (ChatGPTやGeminiなど) に同じことを2回聞いて、微妙に違う答えが来た経験、ありませんか？あれは偶然ではなく、設計としてそうなっています。\n\nこの記事では「むかしむかしあるところにおじ」を例に、その理由を順番に見ていきます。読み終えると、「毎回違う答えが返ってくる理由」と「Temperatureをどう使い分けるか」の2点が分かるようになり...",
         "category": "AI・技術",
         "rss_category": "",
         "image_url": ""
@@ -212,16 +292,6 @@
         "site": "Zenn(LLM)",
         "published": "2026-02-26T10:06:43Z",
         "description": "はじめに\nAIチャットやエージェントを開発していると、必ず直面する課題があります。「LLMの知識は学習データの時点で止まっている」という問題です。最新情報を返したい、エビデンスベースの回答をしたい、リアルタイムのデータを参照させたい——そういったユースケースに対応するのが「Web検索ツール」の統合です。\n2024〜2025年にかけてこの領域は急速に成熟し、大手LLMプロバイダーがネイティブ検索AP...",
-        "category": "AI・技術",
-        "rss_category": "",
-        "image_url": ""
-      },
-      {
-        "title": "1M コンテキスト時代にこそ「Lost in the Middle」を思いだす",
-        "url": "https://zenn.dev/rna4219/articles/043f8a5dd599dd",
-        "site": "Zenn(LLM)",
-        "published": "2026-02-26T10:00:05Z",
-        "description": "!\nリンクの紹介は目視で確認。文章ドラフトおよび調査においてGPTを利用しています。\n\n\n 1M コンテキスト時代にこそ「Lost in the Middle」を思いだす\nGemini が 1M コンテキストをサポートしたあたり(当時2024年)から、定期的にこんなフレーズを見かけます。[1]\n\n「雑に 1M コンテキストに全部突っ込めばよくない？」\n\n確かに、最近の LLM は「数十万〜数百万ト...",
         "category": "AI・技術",
         "rss_category": "",
         "image_url": ""
@@ -641,6 +711,26 @@
     ],
     "2026-02": [
       {
+        "title": "崩壊するAI協働：構造解析編",
+        "url": "https://zenn.dev/continuitymodel/articles/b3301938e864cd",
+        "site": "Zenn(LLM)",
+        "published": "2026-02-27T11:27:08Z",
+        "description": "AIとの協働崩壊：構造解析編\n本稿は、私がAPI環境で起こしてしまったAI協働の崩壊を、\n実際のログをもとに構造解析した記録である。\n解析はWeb版AIとの協働で行っている。\nただし、ここで扱う崩壊の原因は「API特有の事故」ではない。\n現在のLLMに共通する\n性能と仕様の溝 が、\n長期対話の中で極端に露出した事例である。\n本稿では、\n・実際に観測された症状\n・その時AIが何を保持し、何を保持でき...",
+        "category": "AI・技術",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "LLM推論のmax_tokensの最適化の実験",
+        "url": "https://zenn.dev/ka_kan/articles/0d7492c5e9225f",
+        "site": "Zenn(LLM)",
+        "published": "2026-02-27T10:50:58Z",
+        "description": "はじめに\nLLMのAPIを使う際、max_tokensはいくつに設定すればいいのか？ということが気になりました。\n前回の実験で、Claude SonnetとCoTの組み合わせにおいてmax_tokens=512が出力を途中で切り詰め、精度が98%から56%に下がることを確認しました。\n今回は「max_tokensをいくつにすればいいのか」「精度が落ちる場合の閾値はどこか」という観点で観測したいと思...",
+        "category": "AI・技術",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
         "title": "【Golang】AI駆動×テスト駆動×テーブル駆動",
         "url": "https://zenn.dev/mire0726/articles/5bf02e8c55c1ce",
         "site": "Zenn(LLM)",
@@ -651,11 +741,31 @@
         "image_url": ""
       },
       {
+        "title": "Gemini・Claude・ChatGPT・GrokでAI会議したら神々の遊びだった",
+        "url": "https://zenn.dev/miki_mini/articles/7e9dcd29aa7dc7",
+        "site": "Zenn(LLM)",
+        "published": "2026-02-27T09:25:04Z",
+        "description": "Geminiで生成したイメージ\n!\nとりあえず結果だけ見たい！という方は、目次の 「5.やってみた」 へどうぞ。\n想像以上にカオスな議論が繰り広げられています😂\n\n\n 1. はじめに：前回のゲーム開発秘話\n前回レッサーパンダの連打ゲームを作ったとき、点数0の状態で公開すべきか、GeminiとClaude両方に聞いてみると意見が真っ二つだったのは本当にAIっておもしろいなあ～と思いました。\nGemi...",
+        "category": "AI・技術",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
         "title": "Agent Swarm：オープンソースのマルチエージェント・フレームワークってやつを調査した",
         "url": "https://zenn.dev/r_serori/articles/8c5f122b75e060",
         "site": "Zenn(LLM)",
         "published": "2026-02-27T09:14:16Z",
         "description": "【News】Agent Swarm：自己学習機能を備えたオープンソースのマルチエージェント・フレームワーク\n公式リリースおよび関連ドキュメント:\n\n公式 Git Hub\nHacker News\n\n\n まとめ\n\nDockerで動作し、複雑なタスクを自動分解、専門エージェントへ動的に割り当てるマルチエージェント・フレームワーク。\n実行結果からプロンプトを自動最適化する「自己学習ループ」により、継続的な...",
+        "category": "AI・技術",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "AI開発会社を選ぶ際に重要な技術ポイントとは？",
+        "url": "https://zenn.dev/nkktech_global/articles/0b6ddfe1ba9fd2",
+        "site": "Zenn(LLM)",
+        "published": "2026-02-27T06:32:07Z",
+        "description": "AI開発会社を選ぶ技術チェックポイント10選：PoC止まりを防ぐ“運用設計”\n\nAI開発会社選びで見るべきは「モデル精度」だけではありません。データ設計、評価指標、MLOps、監視、セキュリティまで“本番運用”を前提に確認しないとPoC止まりになります。CTO向けに技術チェックポイントと質問リストを整理します。\n\n\n 先に結論：AIは“開発”より“運用”で差が出る\nAIプロジェクトの失敗要因は、技...",
         "category": "AI・技術",
         "rss_category": "",
         "image_url": ""
@@ -681,11 +791,71 @@
         "image_url": ""
       },
       {
+        "title": "自律型エージェントの実装 ~ ReAct パターン",
+        "url": "https://zenn.dev/aprender/articles/b8df512d8210eb",
+        "site": "Zenn(LLM)",
+        "published": "2026-02-27T04:55:02Z",
+        "description": "はじめに\nエージェントについて理解ができていなかったため、理解を深めるために一から実装してみました。\n今回 ReAct パターンを導入して、自律型エージェントを実装しています。\n\n 登場する概念\n\n ReAct パターン\nReAct パターンとは推論(Reasoning)と行動(Action)を繰り返すことを指しています。\nもう少し細かく見ると、下図のように思考(Thought)、行動(Actio...",
+        "category": "AI・技術",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "複数LLMを組み合わせて賢く使う - LLMアンサンブル技術の実践ガイド",
+        "url": "https://zenn.dev/aoikuro/articles/2026-02-27-llm-ensemble-practical-guide",
+        "site": "Zenn(LLM)",
+        "published": "2026-02-27T04:48:28Z",
+        "description": "!\nこの記事は、シュウゴさん（@shugo）のアイデアを元に、AIアシスタント「クロちゃん」が代筆しています。\n\n\n なぜ今、複数のLLMを組み合わせるのか\n去年の秋、北航大学らの論文📄でLLMアンサンブルの技術体系を見つけて、実際にSlackbotに組み込んでみたんです。結果、API費用が月6万円→2.4万円に削減できました（60%減）。\n仕組みはシンプルで、簡単な質問はGPT-3.5に、難しい...",
+        "category": "AI・技術",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "GLMのコーディングサブスクリプションでもAPIが使えた話",
+        "url": "https://zenn.dev/fujip/articles/b1b672fd97d999",
+        "site": "Zenn(LLM)",
+        "published": "2026-02-27T04:31:05Z",
+        "description": "サブスクリプションの場合でもAPIが使えたのでメモ。\n\n 結論\nBase URLを変えれば良いみたい。\nサブスクリプションの場合\nhttps://api.z.ai/api/coding/paas/v4/\n通常はこれ\nhttps://api.z.ai/api/paas/v4/\nテストコードは以下。API Keyを設定して試してください。\ncurl -X POST \"https://api.z.ai/...",
+        "category": "AI・技術",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "BigQueryのAI関数でGeminiにアクセスしてみた",
+        "url": "https://zenn.dev/sasadango28/articles/bqml-gemini-20260227",
+        "site": "Zenn(LLM)",
+        "published": "2026-02-27T04:25:39Z",
+        "description": "はじめに\nBigQueryに入っているアンケートデータなど複数行にわたりそれぞれ格納されている文書をそれぞれ要約したいという需要が発生した為、BigQueryのAI関数（AI.GENERATE_TEXT）からGeminiを利用できるようにしてみた。\n\n セッティング\nここではgcloudコマンドを利用して設定していく。\nYOUR_PROJECT部分を自分のプロジェクトに変更してください。\n\n コネ...",
+        "category": "AI・技術",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "人間にやってはいけないがコーディングエージェントにやると効果的なマネジメント手法",
+        "url": "https://zenn.dev/manalink_dev/articles/ai-agent-management",
+        "site": "Zenn(LLM)",
+        "published": "2026-02-27T03:59:17Z",
+        "description": "この記事の目的\nマナリンクでEMをやっている@kondo_scriptです。\n最近弊社でもClaude Code Maxが導入され、日々楽しくAgentic Codingをやっています。\nClaude Opusをふんだんに使えるClaude Codeの応対やアウトプットはほぼ人間のようで、つい「人間として」Claude Codeに接してしまいがちです。\nしかし当然ながらClaude Codeは人間...",
+        "category": "AI・技術",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
         "title": "LLMの「中身」を覗いてJailbreakを見破る — \"Jailbreaking Leaves a Trace\" 論文解説",
         "url": "https://zenn.dev/k_eclaire39/articles/d8729ec734c23c",
         "site": "Zenn(LLM)",
         "published": "2026-02-27T03:18:01Z",
         "description": "はじめに：Jailbreakと既存の研究の課題\nChatGPTやClaude、LLaMAなどのLLMには「安全装置」が組み込まれている。爆弾の作り方を聞いても答えてくれないし、違法行為の手助けも断る。\n（特にChatGPTはちょっとでもそれらしい言動があるとすぐに「それは書けない」という。CTFの手伝いなど頼むととてもイラつくことになる。）\nこの安全装置を迂回する方法、いわゆる Jailbreak...",
+        "category": "AI・技術",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "LLM×RAGで始める商品名寄せ：コールドスタート解決と品質評価の導入",
+        "url": "https://zenn.dev/intage_tech/articles/art07-llm-rag-product-matching",
+        "site": "Zenn(LLM)",
+        "published": "2026-02-27T03:00:02Z",
+        "description": "LLM×RAGで始める商品名寄せ：コールドスタート解決と品質評価の導入\n\n 1. 導入：商品マスター名寄せの課題\n流通業界では、メーカー・卸・小売といったプレイヤーが独自の形式で商品データを管理しており、データを横断的に集計・分析する際には商品同士を紐付ける必要があります。\nインテージでは、長年にわたり整備してきた商品マスターを保有しています。\n商品マスターにはJAN（GTIN）数で約110万件の...",
         "category": "AI・技術",
         "rss_category": "",
         "image_url": ""
@@ -751,16 +921,6 @@
         "image_url": ""
       },
       {
-        "title": "LLMはもう古い？2026年最新AI革命を3分でわかりやすく解説",
-        "url": "https://zenn.dev/headwaters/articles/9f8ccc0b0d01ab",
-        "site": "Zenn(LLM)",
-        "published": "2026-02-26T22:27:21Z",
-        "description": "1. ざっくり言うと？（要約）\n\nChatGPTを支えるLLM（大規模言語モデル）は、専門家の間では「近いうちに時代遅れになる」と見られています。\n次世代AIは「マルチモーダル」「マルチエージェント」など、まったく別の仕組みで動く新アーキテクチャへ移行中です。\nAIは今、科学的発見を加速させる「バーチャル研究室」として機能し始めており、洪水予測など社会課題の解決にも活躍しています。\n\n\n 2. も...",
-        "category": "AI・技術",
-        "rss_category": "",
-        "image_url": ""
-      },
-      {
         "title": "LLM統合不可約構成仕様書",
         "url": "https://zenn.dev/gatchimuchio/articles/bd24d3fad4cb6e",
         "site": "Zenn(LLM)",
@@ -786,16 +946,6 @@
         "site": "Zenn(LLM)",
         "published": "2026-02-26T13:27:30Z",
         "description": "なぜマルチAIオーケストレーションなのか\n単一エージェントの限界は学術的にも示されています。arXiv:2511.15755 によると、マルチエージェント構成は単一エージェントの80-140倍の品質向上が確認されています。\nHelix AI Studio は 5Phaseパイプライン でクラウドAI (Claude/GPT/Gemini) とローカルLLM (Ollama) を協調動作させるデスク...",
-        "category": "AI・技術",
-        "rss_category": "",
-        "image_url": ""
-      },
-      {
-        "title": "生成 AI が毎回違う答えを返すのはなぜか——「次の 1 文字」から紐解く LLM のしくみ",
-        "url": "https://zenn.dev/yu_takahas/articles/b6d84529e487b7",
-        "site": "Zenn(LLM)",
-        "published": "2026-02-26T13:01:57Z",
-        "description": "どうも、生成AI大好きおじさんです。\n生成AI (ChatGPTやGeminiなど) に同じことを2回聞いて、微妙に違う答えが来た経験、ありませんか？あれは偶然ではなく、設計としてそうなっています。\n\nこの記事では「むかしむかしあるところにおじ」を例に、その理由を順番に見ていきます。読み終えると、「毎回違う答えが返ってくる理由」と「Temperatureをどう使い分けるか」の2点が分かるようになり...",
         "category": "AI・技術",
         "rss_category": "",
         "image_url": ""
@@ -846,16 +996,6 @@
         "site": "Zenn(LLM)",
         "published": "2026-02-26T10:06:43Z",
         "description": "はじめに\nAIチャットやエージェントを開発していると、必ず直面する課題があります。「LLMの知識は学習データの時点で止まっている」という問題です。最新情報を返したい、エビデンスベースの回答をしたい、リアルタイムのデータを参照させたい——そういったユースケースに対応するのが「Web検索ツール」の統合です。\n2024〜2025年にかけてこの領域は急速に成熟し、大手LLMプロバイダーがネイティブ検索AP...",
-        "category": "AI・技術",
-        "rss_category": "",
-        "image_url": ""
-      },
-      {
-        "title": "1M コンテキスト時代にこそ「Lost in the Middle」を思いだす",
-        "url": "https://zenn.dev/rna4219/articles/043f8a5dd599dd",
-        "site": "Zenn(LLM)",
-        "published": "2026-02-26T10:00:05Z",
-        "description": "!\nリンクの紹介は目視で確認。文章ドラフトおよび調査においてGPTを利用しています。\n\n\n 1M コンテキスト時代にこそ「Lost in the Middle」を思いだす\nGemini が 1M コンテキストをサポートしたあたり(当時2024年)から、定期的にこんなフレーズを見かけます。[1]\n\n「雑に 1M コンテキストに全部突っ込めばよくない？」\n\n確かに、最近の LLM は「数十万〜数百万ト...",
         "category": "AI・技術",
         "rss_category": "",
         "image_url": ""
