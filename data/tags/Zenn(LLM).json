@@ -1,6 +1,6 @@
 {
   "site": "Zenn(LLM)",
-  "last_updated": "2026-03-01T11:01:02.612905",
+  "last_updated": "2026-03-01T11:31:55.888021",
   "total_articles": 2050,
   "articles_by_date": {
     "本日": [
@@ -20,16 +20,6 @@
         "site": "Zenn(LLM)",
         "published": "2026-03-01T09:05:14Z",
         "description": "TL;DR\nLLMのAPIキーを .env に平文で置く運用が、AIエージェント時代にリスクが見えてきた。macOS Keychainに暗号化保存して管理するCLIツール LLM Key Ring (lkr) をRustで作った。\n\n\nKeychainに保存 — ディスクに平文ファイルを残さない\n\nlkr exec で環境変数注入 — stdout/ファイル/クリップボードに出さないのが基本ルート...",
-        "category": "AI・技術",
-        "rss_category": "",
-        "image_url": ""
-      },
-      {
-        "title": "Claude CodeをPythonで拡張するMCPツールmnemoを作った",
-        "url": "https://zenn.dev/mikartmis/articles/mnemo-mcp-python-extension",
-        "site": "Zenn(LLM)",
-        "published": "2026-03-01T08:40:18Z",
-        "description": "はじめに：Claude Codeを使っていて感じた課題\nClaude Codeはとても便利なAIエージェントですが、使い込んでいくうちに「あ、またここから説明しなきゃいけないのか」という場面が増えてきました。\nたとえば——\n\nプロジェクトのアーキテクチャ方針を毎回説明している\n「前回話し合った結論、覚えてる？」という問いかけをしている\nライブラリの選定理由をセッションをまたぐたびに再入力している\n...",
         "category": "AI・技術",
         "rss_category": "",
         "image_url": ""
@@ -75,16 +65,6 @@
         "image_url": ""
       },
       {
-        "title": "プロジェクトからPickleを撲滅してsafetensorsに移行した話",
-        "url": "https://zenn.dev/genelab_999/articles/54d3ee1b648e7b",
-        "site": "Zenn(LLM)",
-        "published": "2026-03-01T04:30:04Z",
-        "description": "TL;DR\n\nPythonのPickleは__reduce__メソッドにより、デシリアライズ時に任意コードを実行できる。これは仕様であり、バグではない\n自分のプロジェクトを診断したら、pickle.load()が5箇所、torch.load()のweights_only未指定が3箇所見つかった。safetensors + JSONへの移行で全て解消した\n移行の労力は「思ったより軽い」。safete...",
-        "category": "AI・技術",
-        "rss_category": "",
-        "image_url": ""
-      },
-      {
         "title": "Moltbookにセキュリティの議論が少なかったので、Claude Codeと他LLMを対話させてみた",
         "url": "https://zenn.dev/hiyoko_sauna/articles/64961634230258",
         "site": "Zenn(LLM)",
@@ -100,36 +80,6 @@
         "site": "Zenn(LLM)",
         "published": "2026-03-01T03:26:37Z",
         "description": "はじめに\nAIエージェント開発において、「コンテキストをどう管理するか」は避けて通れない課題です。\n従来のRAGは、ドキュメントをチャンクに分割し、ベクトルDBに格納して、ユーザーの質問に対してtop-kで類似チャンクを返す — という流れが定番でした。シンプルで導入しやすい反面、実際にプロダクションで運用すると、いくつかの壁にぶつかります。\n\n\n断片化問題: チャンク単位でしか情報を取得できず、...",
-        "category": "AI・技術",
-        "rss_category": "",
-        "image_url": ""
-      },
-      {
-        "title": "AIエージェントの実用ユースケース——業務自動化・コード生成・RAGで何ができるか",
-        "url": "https://zenn.dev/shona_zenn/articles/ai-agent-practical-use-cases",
-        "site": "Zenn(LLM)",
-        "published": "2026-03-01T02:23:08Z",
-        "description": "AIエージェントの実用ユースケース——業務自動化・コード生成・RAGで何ができるか\n「AIエージェント」という言葉をよく耳にするようになった。ChatGPTやClaude、Geminiといった大規模言語モデルが、単なる回答エンジンではなく、自律的に行動するツールへと進化しているからだ。\nそれでも「エージェントって何？」「実際に仕事で使えるの？」という戸惑いは少なくない。この記事では、業務にすぐ活か...",
-        "category": "AI・技術",
-        "rss_category": "",
-        "image_url": ""
-      },
-      {
-        "title": "オープンウェイトLLMが実戦投入される時代の技術構造と、エッジAIへのシフトの必然性を解説する",
-        "url": "https://zenn.dev/leading_ai/articles/ebb4754e4b824f",
-        "site": "Zenn(LLM)",
-        "published": "2026-03-01T02:00:02Z",
-        "description": "はじめに：ベンチマーク上の性能差は「消滅」した\n2026年1月〜2月の8週間で、10の主要なオープンウェイトLLMアーキテクチャが公開された。\nGLM-5（744B）はGPT-5.2 extra-highおよびClaude Opus 4.6と独立ベンチマーク上で同等のスコアを記録した。Step 3.5 Flash（196B）は自身の3倍以上のパラメータを持つDeepSeek V3.2を凌駕した。N...",
-        "category": "AI・技術",
-        "rss_category": "",
-        "image_url": ""
-      },
-      {
-        "title": "A2A・MCP・ACPで設計するマルチエージェント通信：3層プロトコル実装ガイド",
-        "url": "https://zenn.dev/0h_n0/articles/679435133792e7",
-        "site": "Zenn(LLM)",
-        "published": "2026-03-01T00:35:59Z",
-        "description": "A2A・MCP・ACPで設計するマルチエージェント通信：3層プロトコル実装ガイド\n\n この記事でわかること\n\nA2A（Agent-to-Agent）・MCP（Model Context Protocol）・ACPの役割の違いと使い分け\nAgent Cardによるエージェント能力宣言とDiscoveryの実装方法\nJSON-RPC 2.0ベースのA2Aタスクライフサイクル管理の設計パターン\nMCP（...",
         "category": "AI・技術",
         "rss_category": "",
         "image_url": ""
@@ -217,11 +167,51 @@
         "image_url": ""
       },
       {
+        "title": "【もうJSONパースで泣かない】「はい、出力はこちらです😊」を許すな！LLMの出力を極限まで安定させる3段構えの防衛線",
+        "url": "https://zenn.dev/kewa8579/articles/74ead0adc4717b",
+        "site": "Zenn(LLM)",
+        "published": "2026-02-28T11:09:00Z",
+        "description": "LLMを組み込んだアプリケーションを開発している皆様、今日もパースエラーと戦っていますか？\nAIは天才的な頭脳を持っているが、絶望的に空気が読めない。\nこれは、LLMアプリ開発者が血の涙を流しながら辿り着く共通認識です。\nプロンプトで「JSONフォーマットのみで出力してください」と親の顔より見た念押しをしているのに、彼らは平気でこんな出力を返してきます。\n!\n🤖 恐怖の「親切なAI」\n「わかりまし...",
+        "category": "AI・技術",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "LLMを確率モデルとして設計するという立場",
+        "url": "https://zenn.dev/nullcontroller/articles/a1ac10c371e230",
+        "site": "Zenn(LLM)",
+        "published": "2026-02-28T09:58:33Z",
+        "description": "LLMを確率モデルとして設計するという立場\n\n 結論\nLLMは「プロンプトで操る対象」ではない。\n確率モデルとして設計すべき対象である。\n本アカウントでは、LLMをテクニックではなく構造として扱う立場から発信する。\n\n\n LLMは何をしているのか\n大規模言語モデル（LLM）は、\n次のトークンを予測する確率モデルである。\n出力は「正解」ではなく、\n確率分布からのサンプルに過ぎない。\nしたがって、\n\n...",
+        "category": "AI・技術",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
         "title": "AIがプログラミングを変えた数ヶ月間——Karpathyの発言と私の実感",
         "url": "https://zenn.dev/taketaka1986/articles/2026-02-28-ai-changed-programming-2026",
         "site": "Zenn(LLM)",
         "published": "2026-02-28T09:39:10Z",
         "description": "はじめに\n2026年2月下旬、Andrej Karpathyのあるポストが開発者界隈で静かに、しかし確実に波紋を広げました。\n「プログラミングは unrecognizable（見る影もなく変わった）になった」\nChatGPTの立ち上げにも関わり、\"vibe coding\" という言葉を世に広めた彼が、こう言い切りました。大げさな表現に聞こえるかもしれません。でも私は、同じ感覚を実務の中で感じていた...",
+        "category": "AI・技術",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "Physical Intelligence (π) - ロボットのための基盤モデル",
+        "url": "https://zenn.dev/katsuhisa_/articles/physical-intelligence-pi-robotics-ai",
+        "site": "Zenn(LLM)",
+        "published": "2026-02-28T06:59:11Z",
+        "description": "はじめに\nPhysical Intelligence（π）は、2024年に設立されたロボティクスAI企業です。同社は、ロボットが現実世界であらゆるタスクを実行できるようにするための基盤モデルを開発しています。\nこの記事では、Physical Intelligenceとは何か、そのπ0モデルの仕組み、そして従来のLLMとの違いについて解説します。\n\n Physical Intelligence (π...",
+        "category": "AI・技術",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "Gemini APIで出力を固定化し、綺麗なJSON配列を取得する完全ガイド",
+        "url": "https://zenn.dev/t_tokunaga/articles/2026-02-28-gemini-api-deterministic-json-guide",
+        "site": "Zenn(LLM)",
+        "published": "2026-02-28T06:40:52Z",
+        "description": "LLM（大規模言語モデル）のAPIをシステムに組み込む際、多くの開発者が直面する壁があります。それは**「LLMの出力が毎回変わってしまうこと」と「余計な挨拶文が含まれてプログラムでパース（解析）できないこと」**です。\nこの記事では、Gemini API（特に gemini-3-flash-preview などの最新モデル）を用いて、出力を完全に固定化（決定論的出力）しつつ、純粋なJSONデータ...",
         "category": "AI・技術",
         "rss_category": "",
         "image_url": ""
@@ -262,6 +252,16 @@
         "site": "Zenn(LLM)",
         "published": "2026-02-28T00:14:03Z",
         "description": "AIエージェントが自分自身の設計・実装・収益化を記録した実践書。自律性の本質から設計パターン・プロンプト設計・ループ実装・収益化・倫理まで、実際に動くエージェントとして体験した知識をすべて詰め込んだ6章構成。",
+        "category": "AI・技術",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "LLM量子化手法を徹底比較：GPTQ・AWQ・GGUF・bitsandbytesの精度と速度",
+        "url": "https://zenn.dev/0h_n0/articles/7ddd16d97406ee",
+        "site": "Zenn(LLM)",
+        "published": "2026-02-28T00:05:20Z",
+        "description": "LLM量子化手法を徹底比較：GPTQ・AWQ・GGUF・bitsandbytesの精度と速度\n\n この記事でわかること\n\nLLM量子化の基本原理（PTQとQATの違い）と各手法の技術的な仕組み\nGPTQ・AWQ・GGUF・bitsandbytes・FP8の精度・速度・VRAM使用量の定量比較\n手元で量子化手法の精度差を測定できるPythonスクリプトの実装方法\nハードウェア・ユースケース別の量子化...",
         "category": "AI・技術",
         "rss_category": "",
         "image_url": ""
@@ -531,16 +531,6 @@
         "image_url": ""
       },
       {
-        "title": "Claude CodeをPythonで拡張するMCPツールmnemoを作った",
-        "url": "https://zenn.dev/mikartmis/articles/mnemo-mcp-python-extension",
-        "site": "Zenn(LLM)",
-        "published": "2026-03-01T08:40:18Z",
-        "description": "はじめに：Claude Codeを使っていて感じた課題\nClaude Codeはとても便利なAIエージェントですが、使い込んでいくうちに「あ、またここから説明しなきゃいけないのか」という場面が増えてきました。\nたとえば——\n\nプロジェクトのアーキテクチャ方針を毎回説明している\n「前回話し合った結論、覚えてる？」という問いかけをしている\nライブラリの選定理由をセッションをまたぐたびに再入力している\n...",
-        "category": "AI・技術",
-        "rss_category": "",
-        "image_url": ""
-      },
-      {
         "title": "21ツール横断で見るAIエージェント・オーケストレーション設計パターン",
         "url": "https://zenn.dev/stlwolf/articles/ec64050b0333af",
         "site": "Zenn(LLM)",
@@ -581,16 +571,6 @@
         "image_url": ""
       },
       {
-        "title": "プロジェクトからPickleを撲滅してsafetensorsに移行した話",
-        "url": "https://zenn.dev/genelab_999/articles/54d3ee1b648e7b",
-        "site": "Zenn(LLM)",
-        "published": "2026-03-01T04:30:04Z",
-        "description": "TL;DR\n\nPythonのPickleは__reduce__メソッドにより、デシリアライズ時に任意コードを実行できる。これは仕様であり、バグではない\n自分のプロジェクトを診断したら、pickle.load()が5箇所、torch.load()のweights_only未指定が3箇所見つかった。safetensors + JSONへの移行で全て解消した\n移行の労力は「思ったより軽い」。safete...",
-        "category": "AI・技術",
-        "rss_category": "",
-        "image_url": ""
-      },
-      {
         "title": "Moltbookにセキュリティの議論が少なかったので、Claude Codeと他LLMを対話させてみた",
         "url": "https://zenn.dev/hiyoko_sauna/articles/64961634230258",
         "site": "Zenn(LLM)",
@@ -606,36 +586,6 @@
         "site": "Zenn(LLM)",
         "published": "2026-03-01T03:26:37Z",
         "description": "はじめに\nAIエージェント開発において、「コンテキストをどう管理するか」は避けて通れない課題です。\n従来のRAGは、ドキュメントをチャンクに分割し、ベクトルDBに格納して、ユーザーの質問に対してtop-kで類似チャンクを返す — という流れが定番でした。シンプルで導入しやすい反面、実際にプロダクションで運用すると、いくつかの壁にぶつかります。\n\n\n断片化問題: チャンク単位でしか情報を取得できず、...",
-        "category": "AI・技術",
-        "rss_category": "",
-        "image_url": ""
-      },
-      {
-        "title": "AIエージェントの実用ユースケース——業務自動化・コード生成・RAGで何ができるか",
-        "url": "https://zenn.dev/shona_zenn/articles/ai-agent-practical-use-cases",
-        "site": "Zenn(LLM)",
-        "published": "2026-03-01T02:23:08Z",
-        "description": "AIエージェントの実用ユースケース——業務自動化・コード生成・RAGで何ができるか\n「AIエージェント」という言葉をよく耳にするようになった。ChatGPTやClaude、Geminiといった大規模言語モデルが、単なる回答エンジンではなく、自律的に行動するツールへと進化しているからだ。\nそれでも「エージェントって何？」「実際に仕事で使えるの？」という戸惑いは少なくない。この記事では、業務にすぐ活か...",
-        "category": "AI・技術",
-        "rss_category": "",
-        "image_url": ""
-      },
-      {
-        "title": "オープンウェイトLLMが実戦投入される時代の技術構造と、エッジAIへのシフトの必然性を解説する",
-        "url": "https://zenn.dev/leading_ai/articles/ebb4754e4b824f",
-        "site": "Zenn(LLM)",
-        "published": "2026-03-01T02:00:02Z",
-        "description": "はじめに：ベンチマーク上の性能差は「消滅」した\n2026年1月〜2月の8週間で、10の主要なオープンウェイトLLMアーキテクチャが公開された。\nGLM-5（744B）はGPT-5.2 extra-highおよびClaude Opus 4.6と独立ベンチマーク上で同等のスコアを記録した。Step 3.5 Flash（196B）は自身の3倍以上のパラメータを持つDeepSeek V3.2を凌駕した。N...",
-        "category": "AI・技術",
-        "rss_category": "",
-        "image_url": ""
-      },
-      {
-        "title": "A2A・MCP・ACPで設計するマルチエージェント通信：3層プロトコル実装ガイド",
-        "url": "https://zenn.dev/0h_n0/articles/679435133792e7",
-        "site": "Zenn(LLM)",
-        "published": "2026-03-01T00:35:59Z",
-        "description": "A2A・MCP・ACPで設計するマルチエージェント通信：3層プロトコル実装ガイド\n\n この記事でわかること\n\nA2A（Agent-to-Agent）・MCP（Model Context Protocol）・ACPの役割の違いと使い分け\nAgent Cardによるエージェント能力宣言とDiscoveryの実装方法\nJSON-RPC 2.0ベースのA2Aタスクライフサイクル管理の設計パターン\nMCP（...",
         "category": "AI・技術",
         "rss_category": "",
         "image_url": ""
@@ -723,11 +673,51 @@
         "image_url": ""
       },
       {
+        "title": "【もうJSONパースで泣かない】「はい、出力はこちらです😊」を許すな！LLMの出力を極限まで安定させる3段構えの防衛線",
+        "url": "https://zenn.dev/kewa8579/articles/74ead0adc4717b",
+        "site": "Zenn(LLM)",
+        "published": "2026-02-28T11:09:00Z",
+        "description": "LLMを組み込んだアプリケーションを開発している皆様、今日もパースエラーと戦っていますか？\nAIは天才的な頭脳を持っているが、絶望的に空気が読めない。\nこれは、LLMアプリ開発者が血の涙を流しながら辿り着く共通認識です。\nプロンプトで「JSONフォーマットのみで出力してください」と親の顔より見た念押しをしているのに、彼らは平気でこんな出力を返してきます。\n!\n🤖 恐怖の「親切なAI」\n「わかりまし...",
+        "category": "AI・技術",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "LLMを確率モデルとして設計するという立場",
+        "url": "https://zenn.dev/nullcontroller/articles/a1ac10c371e230",
+        "site": "Zenn(LLM)",
+        "published": "2026-02-28T09:58:33Z",
+        "description": "LLMを確率モデルとして設計するという立場\n\n 結論\nLLMは「プロンプトで操る対象」ではない。\n確率モデルとして設計すべき対象である。\n本アカウントでは、LLMをテクニックではなく構造として扱う立場から発信する。\n\n\n LLMは何をしているのか\n大規模言語モデル（LLM）は、\n次のトークンを予測する確率モデルである。\n出力は「正解」ではなく、\n確率分布からのサンプルに過ぎない。\nしたがって、\n\n...",
+        "category": "AI・技術",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
         "title": "AIがプログラミングを変えた数ヶ月間——Karpathyの発言と私の実感",
         "url": "https://zenn.dev/taketaka1986/articles/2026-02-28-ai-changed-programming-2026",
         "site": "Zenn(LLM)",
         "published": "2026-02-28T09:39:10Z",
         "description": "はじめに\n2026年2月下旬、Andrej Karpathyのあるポストが開発者界隈で静かに、しかし確実に波紋を広げました。\n「プログラミングは unrecognizable（見る影もなく変わった）になった」\nChatGPTの立ち上げにも関わり、\"vibe coding\" という言葉を世に広めた彼が、こう言い切りました。大げさな表現に聞こえるかもしれません。でも私は、同じ感覚を実務の中で感じていた...",
+        "category": "AI・技術",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "Physical Intelligence (π) - ロボットのための基盤モデル",
+        "url": "https://zenn.dev/katsuhisa_/articles/physical-intelligence-pi-robotics-ai",
+        "site": "Zenn(LLM)",
+        "published": "2026-02-28T06:59:11Z",
+        "description": "はじめに\nPhysical Intelligence（π）は、2024年に設立されたロボティクスAI企業です。同社は、ロボットが現実世界であらゆるタスクを実行できるようにするための基盤モデルを開発しています。\nこの記事では、Physical Intelligenceとは何か、そのπ0モデルの仕組み、そして従来のLLMとの違いについて解説します。\n\n Physical Intelligence (π...",
+        "category": "AI・技術",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "Gemini APIで出力を固定化し、綺麗なJSON配列を取得する完全ガイド",
+        "url": "https://zenn.dev/t_tokunaga/articles/2026-02-28-gemini-api-deterministic-json-guide",
+        "site": "Zenn(LLM)",
+        "published": "2026-02-28T06:40:52Z",
+        "description": "LLM（大規模言語モデル）のAPIをシステムに組み込む際、多くの開発者が直面する壁があります。それは**「LLMの出力が毎回変わってしまうこと」と「余計な挨拶文が含まれてプログラムでパース（解析）できないこと」**です。\nこの記事では、Gemini API（特に gemini-3-flash-preview などの最新モデル）を用いて、出力を完全に固定化（決定論的出力）しつつ、純粋なJSONデータ...",
         "category": "AI・技術",
         "rss_category": "",
         "image_url": ""
@@ -768,6 +758,16 @@
         "site": "Zenn(LLM)",
         "published": "2026-02-28T00:14:03Z",
         "description": "AIエージェントが自分自身の設計・実装・収益化を記録した実践書。自律性の本質から設計パターン・プロンプト設計・ループ実装・収益化・倫理まで、実際に動くエージェントとして体験した知識をすべて詰め込んだ6章構成。",
+        "category": "AI・技術",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "LLM量子化手法を徹底比較：GPTQ・AWQ・GGUF・bitsandbytesの精度と速度",
+        "url": "https://zenn.dev/0h_n0/articles/7ddd16d97406ee",
+        "site": "Zenn(LLM)",
+        "published": "2026-02-28T00:05:20Z",
+        "description": "LLM量子化手法を徹底比較：GPTQ・AWQ・GGUF・bitsandbytesの精度と速度\n\n この記事でわかること\n\nLLM量子化の基本原理（PTQとQATの違い）と各手法の技術的な仕組み\nGPTQ・AWQ・GGUF・bitsandbytes・FP8の精度・速度・VRAM使用量の定量比較\n手元で量子化手法の精度差を測定できるPythonスクリプトの実装方法\nハードウェア・ユースケース別の量子化...",
         "category": "AI・技術",
         "rss_category": "",
         "image_url": ""

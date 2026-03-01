@@ -1,9 +1,39 @@
 {
   "site": "Zenn(Python)",
-  "last_updated": "2026-03-01T11:01:02.612905",
-  "total_articles": 2680,
+  "last_updated": "2026-03-01T11:31:55.888021",
+  "total_articles": 2688,
   "articles_by_date": {
     "本日": [
+      {
+        "title": "LangGraph × Azure OpenAIで構築する「AI動画生成エージェント」：Markdownから素材を一括量産する仕組み",
+        "url": "https://zenn.dev/kenquichi/books/b13f435b959794",
+        "site": "Zenn(Python)",
+        "published": "2026-03-01T11:10:08Z",
+        "description": "「プロンプトを投げるだけのAI活用」から、一歩先へ。\n\n本書は、LangGraphを用いて\n「ニュース記事の読み込み → 要約 → 音声合成 → 画像生成 → 動画編集」\nという複雑な工程を自律的に実行するエージェントを構築する実践書です。\n\nなぜ今、LangGraphなのか？\n動画生成のような多段ステップの自動化では、従来の逐次実行スクリプトだと「エラーへの弱さ」や「データの受け渡し」が課題にな...",
+        "category": "開発",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "Marcel予測と実際の勝利数の乖離から見る2021年ヤクルト・オリックスの優勝要因",
+        "url": "https://zenn.dev/shogaku/articles/npb-marcel-lastplace-to-champion",
+        "site": "Zenn(Python)",
+        "published": "2026-03-01T10:44:33Z",
+        "description": "はじめに\nMarcel法は、過去3年の個人成績を加重平均して翌年を予測する手法です。現状の延長線上を示すモデルであるため、チームの急変には反応しにくい特性があります。\n2021年は、両リーグで前年最下位のチームが優勝しました。\n\n\n東京ヤクルトスワローズ：2020年最下位 → 2021年セ・リーグ優勝\n\nオリックス・バファローズ：2020年最下位 → 2021年パ・リーグ優勝\n\n自作のNPB成績予...",
+        "category": "開発",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "Claude CodeをPythonで拡張するMCPツールmnemoを作った",
+        "url": "https://zenn.dev/mikartmis/articles/mnemo-mcp-python-extension",
+        "site": "Zenn(Python)",
+        "published": "2026-03-01T08:40:18Z",
+        "description": "はじめに：Claude Codeを使っていて感じた課題\nClaude Codeはとても便利なAIエージェントですが、使い込んでいくうちに「あ、またここから説明しなきゃいけないのか」という場面が増えてきました。\nたとえば——\n\nプロジェクトのアーキテクチャ方針を毎回説明している\n「前回話し合った結論、覚えてる？」という問いかけをしている\nライブラリの選定理由をセッションをまたぐたびに再入力している\n...",
+        "category": "開発",
+        "rss_category": "",
+        "image_url": ""
+      },
       {
         "title": "回路設計者のためのPythonライブラリまとめ",
         "url": "https://zenn.dev/qwerewq/articles/2a01fd3eb72d40",
@@ -35,11 +65,41 @@
         "image_url": ""
       },
       {
+        "title": "Claude Agent SDKで複数エージェントを並列実行——タスク自動化の実装ガイド",
+        "url": "https://zenn.dev/taketaka1986/articles/2026-03-01-claude-agent-sdk-multi-agent-parallel",
+        "site": "Zenn(Python)",
+        "published": "2026-03-01T05:18:13Z",
+        "description": "はじめに\n「AIに1つずつ仕事を頼む」時代は終わりつつあります。Anthropicが16台の並列ClaudeエージェントでCコンパイラを構築した事例が示すように、複数のAIエージェントを同時に走らせて分業するアプローチが実用段階に入りました。\n本記事では、Claude Agent SDK（旧Claude Code SDK）を使い、Pythonで複数のサブエージェントを並列実行するハンズオンを紹介し...",
+        "category": "開発",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
         "title": "最大距離を追うのをやめた ― ADS-B受信の改善を「証明」するために何を測るべきか",
         "url": "https://zenn.dev/north_to_now/books/plao-arena-system",
         "site": "Zenn(Python)",
         "published": "2026-03-01T05:01:58Z",
-        "description": "ADS-B受信環境の改善を統計的に証明するための評価基盤（PLAO/ARENA）の設計と実装について、全5回にわたって解説します。",
+        "description": "ADS-B受信環境の改善を統計的に証明するための評価基盤（PLAO/ARENA）の設計と実装について解説します。",
+        "category": "開発",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "プロジェクトからPickleを撲滅してsafetensorsに移行した話",
+        "url": "https://zenn.dev/genelab_999/articles/54d3ee1b648e7b",
+        "site": "Zenn(Python)",
+        "published": "2026-03-01T04:30:04Z",
+        "description": "TL;DR\n\nPythonのPickleは__reduce__メソッドにより、デシリアライズ時に任意コードを実行できる。これは仕様であり、バグではない\n自分のプロジェクトを診断したら、pickle.load()が5箇所、torch.load()のweights_only未指定が3箇所見つかった。safetensors + JSONへの移行で全て解消した\n移行の労力は「思ったより軽い」。safete...",
+        "category": "開発",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "10-⑤[AI][Kaggle][python]Kaggle入門(コンピュータービジョン 5.独自の畳み込みネットワーク)",
+        "url": "https://zenn.dev/rg687076/articles/1554ab215e4dee",
+        "site": "Zenn(Python)",
+        "published": "2026-03-01T02:02:07Z",
+        "description": "Kaggle入門10(コンピュータービジョン 1.畳み込み分類器)\nKaggle入門10(コンピュータービジョン 2.畳み込みとReLU)\nKaggle入門10(コンピュータービジョン 3.最大プーリング)\nKaggle入門10(コンピュータービジョン 4.スライディングウィンドウ)\nKaggle入門10(コンピュータービジョン 5.独自の畳み込みネットワーク)\nKaggle入門10(コンピュータ...",
         "category": "開発",
         "rss_category": "",
         "image_url": ""
@@ -60,6 +120,16 @@
         "site": "Zenn(Python)",
         "published": "2026-03-01T00:59:16Z",
         "description": "はじめに\n「AI にファイルを読ませて、バグを見つけさせて、修正まで自動でやらせたい」。そんな開発者の願望を叶える SDK が登場した。Anthropic が提供する Claude Agent SDK だ。\n筆者は普段 Python でバックエンド開発をしている。ある日 Agent SDK の存在を知り、週末に触ってみたところ想像以上に手軽だった。本記事では、筆者が実際にセットアップからカスタムツ...",
+        "category": "開発",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "A2A・MCP・ACPで設計するマルチエージェント通信：3層プロトコル実装ガイド",
+        "url": "https://zenn.dev/0h_n0/articles/679435133792e7",
+        "site": "Zenn(Python)",
+        "published": "2026-03-01T00:35:59Z",
+        "description": "A2A・MCP・ACPで設計するマルチエージェント通信：3層プロトコル実装ガイド\n\n この記事でわかること\n\nA2A（Agent-to-Agent）・MCP（Model Context Protocol）・ACPの役割の違いと使い分け\nAgent Cardによるエージェント能力宣言とDiscoveryの実装方法\nJSON-RPC 2.0ベースのA2Aタスクライフサイクル管理の設計パターン\nMCP（...",
         "category": "開発",
         "rss_category": "",
         "image_url": ""
@@ -157,16 +227,6 @@
         "image_url": ""
       },
       {
-        "title": "強化学習を『実装視点』で理解する：DQN/PPOへの道しるべ",
-        "url": "https://zenn.dev/horizon_it00/articles/a0bb05bc536ccc",
-        "site": "Zenn(Python)",
-        "published": "2026-02-28T09:00:01Z",
-        "description": "強化学習のアルゴリズムは難しいとよく言われます。しかし、実装の視点から見ると、「構造は単純で、試行錯誤がものを言う」領域です。\nこの記事では、強化学習の基本を「実装者が知るべき粒度」で解説します。概念説明だけでなく、最後に動くコードも載せています。\n対象：\n\n強化学習に興味があるが、用語が複雑に感じる方\nDQN/PPOを実装してみたい方\n「理論より、実装で理解したい」派のエンジニア\n\nこの記事を読...",
-        "category": "開発",
-        "rss_category": "",
-        "image_url": ""
-      },
-      {
         "title": "Best Time to Buy and Sell Stockを解く【morning leetcode #2】",
         "url": "https://zenn.dev/hungair0925/articles/4ab246531ca7d3",
         "site": "Zenn(Python)",
@@ -227,16 +287,6 @@
         "image_url": ""
       },
       {
-        "title": "LLM量子化手法を徹底比較：GPTQ・AWQ・GGUF・bitsandbytesの精度と速度",
-        "url": "https://zenn.dev/0h_n0/articles/7ddd16d97406ee",
-        "site": "Zenn(Python)",
-        "published": "2026-02-28T00:05:20Z",
-        "description": "LLM量子化手法を徹底比較：GPTQ・AWQ・GGUF・bitsandbytesの精度と速度\n\n この記事でわかること\n\nLLM量子化の基本原理（PTQとQATの違い）と各手法の技術的な仕組み\nGPTQ・AWQ・GGUF・bitsandbytes・FP8の精度・速度・VRAM使用量の定量比較\n手元で量子化手法の精度差を測定できるPythonスクリプトの実装方法\nハードウェア・ユースケース別の量子化...",
-        "category": "開発",
-        "rss_category": "",
-        "image_url": ""
-      },
-      {
         "title": "read「Pythonで学ぶシステムトレード」vol.3:「米国株は強い」は本当か？VTIのR²で確かめてみた",
         "url": "https://zenn.dev/hiroakikody/articles/c0ca1f2657e321",
         "site": "Zenn(Python)",
@@ -252,16 +302,6 @@
         "site": "Zenn(Python)",
         "published": "2026-02-27T21:27:57Z",
         "description": "はじめに\nイスラーム圏の歴史テキストを扱う OpenITI（Open Islamicate Texts Initiative） プロジェクトでは、TEI/XMLの代わりに mARkdown という軽量記法でテキストをタグ付けできます。\nTEI/XMLは構造化の国際規格として強力ですが、特にアラビア語のような右から左に書く言語（RTL）では、XMLタグとの混在でエディタ上の表示が乱れるという問題があ...",
-        "category": "開発",
-        "rss_category": "",
-        "image_url": ""
-      },
-      {
-        "title": "第6回: 情報理論・最適化理論: 30秒の驚き→数式修行→実装マスター 【後編】実装編",
-        "url": "https://zenn.dev/fumi_shiki/articles/ml-lecture-06-part2",
-        "site": "Zenn(Python)",
-        "published": "2026-02-27T17:23:27Z",
-        "description": "理論編は 【前編】第6回: 情報理論・最適化理論 をご覧ください。\n\n\n\n 🎯 学習目標\n\n\n Shannon エントロピー・KL・Cross-Entropy を PyTorch で実装し、恒等式 H(p,q) = H(p) + D_{KL} を数値検証できる\n\n AdamW の更新則と重み減衰の分離を説明できる\n\n Triton で行ごとの log-softmax カーネルを実装し、数値安定化の...",
         "category": "開発",
         "rss_category": "",
         "image_url": ""
@@ -491,6 +531,36 @@
     ],
     "2026-03": [
       {
+        "title": "LangGraph × Azure OpenAIで構築する「AI動画生成エージェント」：Markdownから素材を一括量産する仕組み",
+        "url": "https://zenn.dev/kenquichi/books/b13f435b959794",
+        "site": "Zenn(Python)",
+        "published": "2026-03-01T11:10:08Z",
+        "description": "「プロンプトを投げるだけのAI活用」から、一歩先へ。\n\n本書は、LangGraphを用いて\n「ニュース記事の読み込み → 要約 → 音声合成 → 画像生成 → 動画編集」\nという複雑な工程を自律的に実行するエージェントを構築する実践書です。\n\nなぜ今、LangGraphなのか？\n動画生成のような多段ステップの自動化では、従来の逐次実行スクリプトだと「エラーへの弱さ」や「データの受け渡し」が課題にな...",
+        "category": "開発",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "Marcel予測と実際の勝利数の乖離から見る2021年ヤクルト・オリックスの優勝要因",
+        "url": "https://zenn.dev/shogaku/articles/npb-marcel-lastplace-to-champion",
+        "site": "Zenn(Python)",
+        "published": "2026-03-01T10:44:33Z",
+        "description": "はじめに\nMarcel法は、過去3年の個人成績を加重平均して翌年を予測する手法です。現状の延長線上を示すモデルであるため、チームの急変には反応しにくい特性があります。\n2021年は、両リーグで前年最下位のチームが優勝しました。\n\n\n東京ヤクルトスワローズ：2020年最下位 → 2021年セ・リーグ優勝\n\nオリックス・バファローズ：2020年最下位 → 2021年パ・リーグ優勝\n\n自作のNPB成績予...",
+        "category": "開発",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "Claude CodeをPythonで拡張するMCPツールmnemoを作った",
+        "url": "https://zenn.dev/mikartmis/articles/mnemo-mcp-python-extension",
+        "site": "Zenn(Python)",
+        "published": "2026-03-01T08:40:18Z",
+        "description": "はじめに：Claude Codeを使っていて感じた課題\nClaude Codeはとても便利なAIエージェントですが、使い込んでいくうちに「あ、またここから説明しなきゃいけないのか」という場面が増えてきました。\nたとえば——\n\nプロジェクトのアーキテクチャ方針を毎回説明している\n「前回話し合った結論、覚えてる？」という問いかけをしている\nライブラリの選定理由をセッションをまたぐたびに再入力している\n...",
+        "category": "開発",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
         "title": "回路設計者のためのPythonライブラリまとめ",
         "url": "https://zenn.dev/qwerewq/articles/2a01fd3eb72d40",
         "site": "Zenn(Python)",
@@ -521,11 +591,41 @@
         "image_url": ""
       },
       {
+        "title": "Claude Agent SDKで複数エージェントを並列実行——タスク自動化の実装ガイド",
+        "url": "https://zenn.dev/taketaka1986/articles/2026-03-01-claude-agent-sdk-multi-agent-parallel",
+        "site": "Zenn(Python)",
+        "published": "2026-03-01T05:18:13Z",
+        "description": "はじめに\n「AIに1つずつ仕事を頼む」時代は終わりつつあります。Anthropicが16台の並列ClaudeエージェントでCコンパイラを構築した事例が示すように、複数のAIエージェントを同時に走らせて分業するアプローチが実用段階に入りました。\n本記事では、Claude Agent SDK（旧Claude Code SDK）を使い、Pythonで複数のサブエージェントを並列実行するハンズオンを紹介し...",
+        "category": "開発",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
         "title": "最大距離を追うのをやめた ― ADS-B受信の改善を「証明」するために何を測るべきか",
         "url": "https://zenn.dev/north_to_now/books/plao-arena-system",
         "site": "Zenn(Python)",
         "published": "2026-03-01T05:01:58Z",
-        "description": "ADS-B受信環境の改善を統計的に証明するための評価基盤（PLAO/ARENA）の設計と実装について、全5回にわたって解説します。",
+        "description": "ADS-B受信環境の改善を統計的に証明するための評価基盤（PLAO/ARENA）の設計と実装について解説します。",
+        "category": "開発",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "プロジェクトからPickleを撲滅してsafetensorsに移行した話",
+        "url": "https://zenn.dev/genelab_999/articles/54d3ee1b648e7b",
+        "site": "Zenn(Python)",
+        "published": "2026-03-01T04:30:04Z",
+        "description": "TL;DR\n\nPythonのPickleは__reduce__メソッドにより、デシリアライズ時に任意コードを実行できる。これは仕様であり、バグではない\n自分のプロジェクトを診断したら、pickle.load()が5箇所、torch.load()のweights_only未指定が3箇所見つかった。safetensors + JSONへの移行で全て解消した\n移行の労力は「思ったより軽い」。safete...",
+        "category": "開発",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "10-⑤[AI][Kaggle][python]Kaggle入門(コンピュータービジョン 5.独自の畳み込みネットワーク)",
+        "url": "https://zenn.dev/rg687076/articles/1554ab215e4dee",
+        "site": "Zenn(Python)",
+        "published": "2026-03-01T02:02:07Z",
+        "description": "Kaggle入門10(コンピュータービジョン 1.畳み込み分類器)\nKaggle入門10(コンピュータービジョン 2.畳み込みとReLU)\nKaggle入門10(コンピュータービジョン 3.最大プーリング)\nKaggle入門10(コンピュータービジョン 4.スライディングウィンドウ)\nKaggle入門10(コンピュータービジョン 5.独自の畳み込みネットワーク)\nKaggle入門10(コンピュータ...",
         "category": "開発",
         "rss_category": "",
         "image_url": ""
@@ -546,6 +646,16 @@
         "site": "Zenn(Python)",
         "published": "2026-03-01T00:59:16Z",
         "description": "はじめに\n「AI にファイルを読ませて、バグを見つけさせて、修正まで自動でやらせたい」。そんな開発者の願望を叶える SDK が登場した。Anthropic が提供する Claude Agent SDK だ。\n筆者は普段 Python でバックエンド開発をしている。ある日 Agent SDK の存在を知り、週末に触ってみたところ想像以上に手軽だった。本記事では、筆者が実際にセットアップからカスタムツ...",
+        "category": "開発",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "A2A・MCP・ACPで設計するマルチエージェント通信：3層プロトコル実装ガイド",
+        "url": "https://zenn.dev/0h_n0/articles/679435133792e7",
+        "site": "Zenn(Python)",
+        "published": "2026-03-01T00:35:59Z",
+        "description": "A2A・MCP・ACPで設計するマルチエージェント通信：3層プロトコル実装ガイド\n\n この記事でわかること\n\nA2A（Agent-to-Agent）・MCP（Model Context Protocol）・ACPの役割の違いと使い分け\nAgent Cardによるエージェント能力宣言とDiscoveryの実装方法\nJSON-RPC 2.0ベースのA2Aタスクライフサイクル管理の設計パターン\nMCP（...",
         "category": "開発",
         "rss_category": "",
         "image_url": ""
@@ -643,16 +753,6 @@
         "image_url": ""
       },
       {
-        "title": "強化学習を『実装視点』で理解する：DQN/PPOへの道しるべ",
-        "url": "https://zenn.dev/horizon_it00/articles/a0bb05bc536ccc",
-        "site": "Zenn(Python)",
-        "published": "2026-02-28T09:00:01Z",
-        "description": "強化学習のアルゴリズムは難しいとよく言われます。しかし、実装の視点から見ると、「構造は単純で、試行錯誤がものを言う」領域です。\nこの記事では、強化学習の基本を「実装者が知るべき粒度」で解説します。概念説明だけでなく、最後に動くコードも載せています。\n対象：\n\n強化学習に興味があるが、用語が複雑に感じる方\nDQN/PPOを実装してみたい方\n「理論より、実装で理解したい」派のエンジニア\n\nこの記事を読...",
-        "category": "開発",
-        "rss_category": "",
-        "image_url": ""
-      },
-      {
         "title": "Best Time to Buy and Sell Stockを解く【morning leetcode #2】",
         "url": "https://zenn.dev/hungair0925/articles/4ab246531ca7d3",
         "site": "Zenn(Python)",
@@ -713,16 +813,6 @@
         "image_url": ""
       },
       {
-        "title": "LLM量子化手法を徹底比較：GPTQ・AWQ・GGUF・bitsandbytesの精度と速度",
-        "url": "https://zenn.dev/0h_n0/articles/7ddd16d97406ee",
-        "site": "Zenn(Python)",
-        "published": "2026-02-28T00:05:20Z",
-        "description": "LLM量子化手法を徹底比較：GPTQ・AWQ・GGUF・bitsandbytesの精度と速度\n\n この記事でわかること\n\nLLM量子化の基本原理（PTQとQATの違い）と各手法の技術的な仕組み\nGPTQ・AWQ・GGUF・bitsandbytes・FP8の精度・速度・VRAM使用量の定量比較\n手元で量子化手法の精度差を測定できるPythonスクリプトの実装方法\nハードウェア・ユースケース別の量子化...",
-        "category": "開発",
-        "rss_category": "",
-        "image_url": ""
-      },
-      {
         "title": "read「Pythonで学ぶシステムトレード」vol.3:「米国株は強い」は本当か？VTIのR²で確かめてみた",
         "url": "https://zenn.dev/hiroakikody/articles/c0ca1f2657e321",
         "site": "Zenn(Python)",
@@ -738,16 +828,6 @@
         "site": "Zenn(Python)",
         "published": "2026-02-27T21:27:57Z",
         "description": "はじめに\nイスラーム圏の歴史テキストを扱う OpenITI（Open Islamicate Texts Initiative） プロジェクトでは、TEI/XMLの代わりに mARkdown という軽量記法でテキストをタグ付けできます。\nTEI/XMLは構造化の国際規格として強力ですが、特にアラビア語のような右から左に書く言語（RTL）では、XMLタグとの混在でエディタ上の表示が乱れるという問題があ...",
-        "category": "開発",
-        "rss_category": "",
-        "image_url": ""
-      },
-      {
-        "title": "第6回: 情報理論・最適化理論: 30秒の驚き→数式修行→実装マスター 【後編】実装編",
-        "url": "https://zenn.dev/fumi_shiki/articles/ml-lecture-06-part2",
-        "site": "Zenn(Python)",
-        "published": "2026-02-27T17:23:27Z",
-        "description": "理論編は 【前編】第6回: 情報理論・最適化理論 をご覧ください。\n\n\n\n 🎯 学習目標\n\n\n Shannon エントロピー・KL・Cross-Entropy を PyTorch で実装し、恒等式 H(p,q) = H(p) + D_{KL} を数値検証できる\n\n AdamW の更新則と重み減衰の分離を説明できる\n\n Triton で行ごとの log-softmax カーネルを実装し、数値安定化の...",
         "category": "開発",
         "rss_category": "",
         "image_url": ""
