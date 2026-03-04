@@ -1,9 +1,69 @@
 {
   "site": "Zenn(機械学習)",
-  "last_updated": "2026-03-04T11:57:43.727608",
-  "total_articles": 690,
+  "last_updated": "2026-03-04T13:16:38.608774",
+  "total_articles": 701,
   "articles_by_date": {
     "本日": [
+      {
+        "title": "Grok-based Transformer の構成要素を取り入れて Two-Tower モデルを改善する",
+        "url": "https://zenn.dev/dmmdata/articles/grok-based-transformer-tuning",
+        "site": "Zenn(機械学習)",
+        "published": "2026-03-04T12:55:58Z",
+        "description": "はじめに\n前回の記事[1]で、X のレコメンドアルゴリズムの公開コードを読みました。\nその中で、次のことを確認しました。\n\nTransformer を使ってユーザの行動履歴をエンコードしていること\n最近の LLM で見られるような Transformer の構成要素が使われていること\n\n\n\n\n要素\n（オリジナル）Transformer\nGrok-based Transformer\n\n\n\n\nNorm...",
+        "category": "AI・技術",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "【加工編】未来の情報を漏らすな：特徴量エンジニアリングと「指紋ファイル」",
+        "url": "https://zenn.dev/ricotiler/articles/keiba-ai-04-feature-engineering-leakage",
+        "site": "Zenn(機械学習)",
+        "published": "2026-03-04T11:15:35Z",
+        "description": "【加工編】未来の情報を漏らすな：特徴量エンジニアリングと「指紋ファイル」\n\n はじめに：データリークという落とし穴\n機械学習モデルの構築において、最も注意すべき問題の一つが **「データリーク（リーク）」**です。\nこれは、予測時点では知り得ない「未来の情報（答え）」が、学習データの中に誤って混入してしまう現象を指します。\n例えば、レース結果（着順や走破タイム）や、レース確定後に判明するオッズなど...",
+        "category": "AI・技術",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "LLMに「自信ある？」と聞いても無駄だった — 7つの手法で検証した結果",
+        "url": "https://zenn.dev/seeda_yuto/articles/llm-confidence-calibration-experiment",
+        "site": "Zenn(機械学習)",
+        "published": "2026-03-04T07:08:32Z",
+        "description": "結論を先に言う\nLLMに「この回答にどのくらい自信がある？」と聞くと、間違っている時ほど自信満々に答える。\n7つのプロンプト戦略を試して359回のAPI呼び出しをした結果、自己申告confidenceで正誤を見分ける方法はほぼ存在しなかった。ただし、1つだけ劇的に効く手法があった。\n\n きっかけ\n@ka_kan さんの記事「LLM推論時の自信度は当てにならない — コーディングタスクで検証」を読ん...",
+        "category": "AI・技術",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "金融AIでモデルアンサンブルを使う理由",
+        "url": "https://zenn.dev/sigma_lab/articles/aitrader-ai-trader-log-05-ens-20260304",
+        "site": "Zenn(機械学習)",
+        "published": "2026-03-04T04:25:05Z",
+        "description": "はじめに\n金融時系列は「最も予測が難しいデータ」の1つです。ノイズが多く、非定常で、相関が頻繁に崩れるため、単一指標や単純なモデルでは安定した予測が難しいという課題があります。特に、市場環境の変化に単一モデルが過剰適応してしまい、ロバスト性が損なわれるリスクは常に存在します。\nこの記事では、そのような課題に対し、金融AIでモデルアンサンブルを使う理由について、具体的な設計と実装を紹介します。複数の...",
+        "category": "AI・技術",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "金融時系列予測でLightGBM / LSTM / Transformerを比較してみた",
+        "url": "https://zenn.dev/sigma_lab/articles/aitrader-series-model-comp-1-20260304",
+        "site": "Zenn(機械学習)",
+        "published": "2026-03-04T03:51:38Z",
+        "description": "金融時系列予測でLightGBM / LSTM / Transformerを比較してみた\n\n はじめに\n金融時系列データは、その非定常性やノイズの多さから予測が非常に困難です。本記事では、代表的な機械学習モデルであるLightGBMと深層学習モデルのLSTM、そしてTransformerを金融時系列予測に適用し、それぞれの特性とアンサンブル学習の有効性について検証した結果を解説します。\n\n 課題\n...",
+        "category": "AI・技術",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "LightGBM vs LSTM vs Transformer: 金融時系列予測の実践比較",
+        "url": "https://zenn.dev/sigma_lab/articles/ai-mdl-comp-20260304",
+        "site": "Zenn(機械学習)",
+        "published": "2026-03-04T03:48:25Z",
+        "description": "金融時系列予測におけるモデル選択は、その複雑さと非定常性から常に挑戦的なテーマです。本稿では、勾配ブースティング決定木であるLightGBM、再帰型ニューラルネットワークのLSTM、そしてTransformerという異なるアーキテクチャを持つモデルを比較し、これらを組み合わせた異種モデルアンサンブルの設計と、実運用におけるパフォーマンスを詳細に検証します。特に、LightGBMを主体としつつ、LS...",
+        "category": "AI・技術",
+        "rss_category": "",
+        "image_url": ""
+      },
       {
         "title": "LoRA・QLoRA完全マニュアル ─ 2026年のLLMファインチューニング実装ガイド",
         "url": "https://zenn.dev/ai_nexus/articles/lora-qlora-finetuning-guide",
@@ -120,6 +180,66 @@
       }
     ],
     "2026-03": [
+      {
+        "title": "Grok-based Transformer の構成要素を取り入れて Two-Tower モデルを改善する",
+        "url": "https://zenn.dev/dmmdata/articles/grok-based-transformer-tuning",
+        "site": "Zenn(機械学習)",
+        "published": "2026-03-04T12:55:58Z",
+        "description": "はじめに\n前回の記事[1]で、X のレコメンドアルゴリズムの公開コードを読みました。\nその中で、次のことを確認しました。\n\nTransformer を使ってユーザの行動履歴をエンコードしていること\n最近の LLM で見られるような Transformer の構成要素が使われていること\n\n\n\n\n要素\n（オリジナル）Transformer\nGrok-based Transformer\n\n\n\n\nNorm...",
+        "category": "AI・技術",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "【加工編】未来の情報を漏らすな：特徴量エンジニアリングと「指紋ファイル」",
+        "url": "https://zenn.dev/ricotiler/articles/keiba-ai-04-feature-engineering-leakage",
+        "site": "Zenn(機械学習)",
+        "published": "2026-03-04T11:15:35Z",
+        "description": "【加工編】未来の情報を漏らすな：特徴量エンジニアリングと「指紋ファイル」\n\n はじめに：データリークという落とし穴\n機械学習モデルの構築において、最も注意すべき問題の一つが **「データリーク（リーク）」**です。\nこれは、予測時点では知り得ない「未来の情報（答え）」が、学習データの中に誤って混入してしまう現象を指します。\n例えば、レース結果（着順や走破タイム）や、レース確定後に判明するオッズなど...",
+        "category": "AI・技術",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "LLMに「自信ある？」と聞いても無駄だった — 7つの手法で検証した結果",
+        "url": "https://zenn.dev/seeda_yuto/articles/llm-confidence-calibration-experiment",
+        "site": "Zenn(機械学習)",
+        "published": "2026-03-04T07:08:32Z",
+        "description": "結論を先に言う\nLLMに「この回答にどのくらい自信がある？」と聞くと、間違っている時ほど自信満々に答える。\n7つのプロンプト戦略を試して359回のAPI呼び出しをした結果、自己申告confidenceで正誤を見分ける方法はほぼ存在しなかった。ただし、1つだけ劇的に効く手法があった。\n\n きっかけ\n@ka_kan さんの記事「LLM推論時の自信度は当てにならない — コーディングタスクで検証」を読ん...",
+        "category": "AI・技術",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "金融AIでモデルアンサンブルを使う理由",
+        "url": "https://zenn.dev/sigma_lab/articles/aitrader-ai-trader-log-05-ens-20260304",
+        "site": "Zenn(機械学習)",
+        "published": "2026-03-04T04:25:05Z",
+        "description": "はじめに\n金融時系列は「最も予測が難しいデータ」の1つです。ノイズが多く、非定常で、相関が頻繁に崩れるため、単一指標や単純なモデルでは安定した予測が難しいという課題があります。特に、市場環境の変化に単一モデルが過剰適応してしまい、ロバスト性が損なわれるリスクは常に存在します。\nこの記事では、そのような課題に対し、金融AIでモデルアンサンブルを使う理由について、具体的な設計と実装を紹介します。複数の...",
+        "category": "AI・技術",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "金融時系列予測でLightGBM / LSTM / Transformerを比較してみた",
+        "url": "https://zenn.dev/sigma_lab/articles/aitrader-series-model-comp-1-20260304",
+        "site": "Zenn(機械学習)",
+        "published": "2026-03-04T03:51:38Z",
+        "description": "金融時系列予測でLightGBM / LSTM / Transformerを比較してみた\n\n はじめに\n金融時系列データは、その非定常性やノイズの多さから予測が非常に困難です。本記事では、代表的な機械学習モデルであるLightGBMと深層学習モデルのLSTM、そしてTransformerを金融時系列予測に適用し、それぞれの特性とアンサンブル学習の有効性について検証した結果を解説します。\n\n 課題\n...",
+        "category": "AI・技術",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "LightGBM vs LSTM vs Transformer: 金融時系列予測の実践比較",
+        "url": "https://zenn.dev/sigma_lab/articles/ai-mdl-comp-20260304",
+        "site": "Zenn(機械学習)",
+        "published": "2026-03-04T03:48:25Z",
+        "description": "金融時系列予測におけるモデル選択は、その複雑さと非定常性から常に挑戦的なテーマです。本稿では、勾配ブースティング決定木であるLightGBM、再帰型ニューラルネットワークのLSTM、そしてTransformerという異なるアーキテクチャを持つモデルを比較し、これらを組み合わせた異種モデルアンサンブルの設計と、実運用におけるパフォーマンスを詳細に検証します。特に、LightGBMを主体としつつ、LS...",
+        "category": "AI・技術",
+        "rss_category": "",
+        "image_url": ""
+      },
       {
         "title": "LoRA・QLoRA完全マニュアル ─ 2026年のLLMファインチューニング実装ガイド",
         "url": "https://zenn.dev/ai_nexus/articles/lora-qlora-finetuning-guide",
@@ -308,16 +428,6 @@
         "site": "Zenn(機械学習)",
         "published": "2026-02-27T22:26:52Z",
         "description": "はじめに\n第1章からここまで、PINNsの理論、実装、そしてトラブルシューティングまでを駆け抜けました。\nしかし、読者の皆さんが最も気になっているのは、**「明日、上司にどう説明して、今の業務にどう組み込むか」**ではないでしょうか。\n「AnsysやNastranを解約して、明日から全部PINNsにします」\n……これは間違いなく却下されますし、エンジニアとしても不誠実です。\n最終章では、既存のCA...",
-        "category": "AI・技術",
-        "rss_category": "",
-        "image_url": ""
-      },
-      {
-        "title": "第6回: 情報理論・最適化理論: 30秒の驚き→数式修行→実装マスター 【後編】実装編",
-        "url": "https://zenn.dev/fumi_shiki/articles/ml-lecture-06-part2",
-        "site": "Zenn(機械学習)",
-        "published": "2026-02-27T17:23:27Z",
-        "description": "理論編は 【前編】第6回: 情報理論・最適化理論 をご覧ください。\n\n\n\n 🎯 学習目標\n\n\n Shannon エントロピー・KL・Cross-Entropy を PyTorch で実装し、恒等式 H(p,q) = H(p) + D_{KL} を数値検証できる\n\n AdamW の更新則と重み減衰の分離を説明できる\n\n Triton で行ごとの log-softmax カーネルを実装し、数値安定化の...",
         "category": "AI・技術",
         "rss_category": "",
         "image_url": ""
