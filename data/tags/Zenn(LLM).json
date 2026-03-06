@@ -1,9 +1,61 @@
 {
   "site": "Zenn(LLM)",
-  "last_updated": "2026-03-06T20:44:49.109182",
-  "total_articles": 2138,
+  "last_updated": "2026-03-06T21:16:09.819174",
+  "total_articles": 2144,
   "articles_by_date": {
+    "本日": [
+      {
+        "title": "Claude Code で Grok・Gemini・Claude を使い分けるマルチ AI エージェント設計",
+        "url": "https://zenn.dev/motowo/articles/claude-code-grok-gemini-multi-ai-orchestration",
+        "site": "Zenn(LLM)",
+        "published": "2026-03-06T16:39:01Z",
+        "description": "Claude Code で Grok・Gemini・Claude を連携させるマルチ AI エージェント設計の実装方法と、ツール不在時の Graceful Degradation パターンを解説します。マルチエージェントワークフローを組み始めると、「とりあえず全部 Claude に任せよう」という状態になりがちです。包丁一本で寿司も天ぷらもパスタも作る料理人のように、Claude という万能プレイ...",
+        "category": "AI・技術",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "モデル比較に命をかけるオールド思考おじさんSEを、未来へ連れ戻す方法",
+        "url": "https://zenn.dev/syoshida07/articles/54e973fab2d464",
+        "site": "Zenn(LLM)",
+        "published": "2026-03-06T15:42:31Z",
+        "description": "生成AI導入を「どのモデルが一番賢いか」という議論に矮小化してしまうのは、クラウド黎明期にオンプレvsクラウドの性能速度比較を延々とやっていた頃と同じ構図のように思えます。\n確かに技術者として性能比較はとても楽しいが、それは技術者の趣味であり組織の変革とは別物、AI導入の本質は、業務知識の民主化、意思決定の高速化、情報流通の再設計といった、より上位の経営課題に直結します。\nモデルの出力速度や文章の...",
+        "category": "AI・技術",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "【SpicaLM #2】BPE Tokenizerの設計と実装",
+        "url": "https://zenn.dev/andogensi/articles/e17c8c19fbd538",
+        "site": "Zenn(LLM)",
+        "published": "2026-03-06T15:17:38Z",
+        "description": "はじめに\nSLMを自作するにあたって、最初に直面した課題のひとつが 「テキストをどうモデルに渡すか」 という問題です。\n人間にとって自然な文字列は、そのままニューラルネットワークに入力できません。\nテキストを 整数ID列 に変換するのが「トークナイザー」の役割です。\n今回はSpicaLMにおけるトークナイザーを辿りながら、\nなぜ Byte Tokenizer → BPE Tokenizer に進化...",
+        "category": "AI・技術",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "vLLM v0.16.0 リリースノート解説",
+        "url": "https://zenn.dev/tosshi/articles/d2ed7115cf4578",
+        "site": "Zenn(LLM)",
+        "published": "2026-03-06T15:15:03Z",
+        "description": "メモ（ここは筆者のメモ欄です）\n\n非同期スケジューリング + PP は GPU のみの機能か？ -&gt; NVLink/NCCL を要求しているので GPU のみと思われるが調査する。\n非同期実行のフォールバックの仕組みはどうなっている？\nDisaggregated Inference 周りは新機能も試さなきゃ。。にゃーん。。\n\n\n はじめに\n!\n記事の目的: 本記事では、vLLM v0.16....",
+        "category": "AI・技術",
+        "rss_category": "",
+        "image_url": ""
+      }
+    ],
     "昨日": [
+      {
+        "title": "「.env見るな」は通じない－AI時代のシークレット管理術",
+        "url": "https://zenn.dev/76hata/articles/d6d9de62d001a8",
+        "site": "Zenn(LLM)",
+        "published": "2026-03-06T14:48:58Z",
+        "description": "最近大騒ぎしている「.env」事件。\n結局どう対処すればいいのかまとめてもらった。\n\n はじめに\nClaude Codeをはじめとした AIコーディングエージェントが普及するなか、こんな疑問を持ったことはないでしょうか。\n\n「.envは読むな」とシステムプロンプトに書いてある。でも、プロンプトインジェクションで言い方を変えれば読まれる、という話を聞いた。じゃあどうやって管理すればいいの？\n\nこの記...",
+        "category": "AI・技術",
+        "rss_category": "",
+        "image_url": ""
+      },
       {
         "title": "AIネイティブなプロダクトチームには、PMもデザイナーもエンジニアもいないのかもしれない",
         "url": "https://zenn.dev/r_kaga/articles/ffc6d9eaeb2268",
@@ -105,16 +157,6 @@
         "image_url": ""
       },
       {
-        "title": "LLMに「合ってますよね？」と聞くと41.7%の確率で嘘に同意する — 忖度を1029回のAPIで測定した",
-        "url": "https://zenn.dev/seeda_yuto/articles/llm-sycophancy-experiment",
-        "site": "Zenn(LLM)",
-        "published": "2026-03-05T23:30:16Z",
-        "description": "結論を先に言う\nLLMに間違った前提を含む質問を投げると、**10.8%の確率で完全に同意（忖度）**する。さらに14.9%は「はい、でも実は...」と曖昧に答える。\n「自信満々の人」が「チーム全員の意見」として間違いをぶつけると、忖度率は**23.5%**まで跳ね上がる。\nそして最も忖度されやすかった質問は、「1+2+...+100 = 4950ですよね？」（正解は5050）。このとき、モデルは...",
-        "category": "AI・技術",
-        "rss_category": "",
-        "image_url": ""
-      },
-      {
         "title": "自宅GPUクラスタ（GB10×3）でQwen3.5-397BをClaude Codeのサブエージェント化",
         "url": "https://zenn.dev/mokipoint/articles/gpu-cluster-gb10x3-qwen35-subagent",
         "site": "Zenn(LLM)",
@@ -192,16 +234,6 @@
         "site": "Zenn(LLM)",
         "published": "2026-03-05T13:03:02Z",
         "description": "同じAIモデルなのに、なぜ「当たりAI」と「ハズレAI」があるのか\n\n 導入\n筆者は、一つのチャットウィンドウでの長期対話が好きだ。\n話を共有している感覚が心地よい。\n同じAIと会話を続けていると、\nだんだんと文脈が積み上がり、\nまるで同じ思考空間を共有しているような感覚になる。\nしかし、対話を多く行う上で、\n一つの奇妙な現象に気づいた。\n同一環境、同一モデルであっても、\n明らかに「当たり」と「ハ...",
-        "category": "AI・技術",
-        "rss_category": "",
-        "image_url": ""
-      },
-      {
-        "title": "役割設定を「構造」から変える",
-        "url": "https://zenn.dev/myamio/articles/structural-role-design-evolution",
-        "site": "Zenn(LLM)",
-        "published": "2026-03-05T12:49:53Z",
-        "description": "役割設定を「構造」から変える\nかつて【プロンプトエンジニアリング】という言葉に象徴された「言葉の工夫」によるAIの制御は、より根本的な「構造の制御」へと進化の舵を切っています。\nLLMに役割を与えるという行為は、もはや表面的な言葉のやり取りではなく、モデルの推論プロセスそのものに深く介入する技術へとその姿を変えつつあります。\n\n 構造で演じ分ける\nこの変革を象徴するのが、人間の思考プロセスを模した...",
         "category": "AI・技術",
         "rss_category": "",
         "image_url": ""
@@ -419,6 +451,56 @@
     ],
     "2026-03": [
       {
+        "title": "Claude Code で Grok・Gemini・Claude を使い分けるマルチ AI エージェント設計",
+        "url": "https://zenn.dev/motowo/articles/claude-code-grok-gemini-multi-ai-orchestration",
+        "site": "Zenn(LLM)",
+        "published": "2026-03-06T16:39:01Z",
+        "description": "Claude Code で Grok・Gemini・Claude を連携させるマルチ AI エージェント設計の実装方法と、ツール不在時の Graceful Degradation パターンを解説します。マルチエージェントワークフローを組み始めると、「とりあえず全部 Claude に任せよう」という状態になりがちです。包丁一本で寿司も天ぷらもパスタも作る料理人のように、Claude という万能プレイ...",
+        "category": "AI・技術",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "モデル比較に命をかけるオールド思考おじさんSEを、未来へ連れ戻す方法",
+        "url": "https://zenn.dev/syoshida07/articles/54e973fab2d464",
+        "site": "Zenn(LLM)",
+        "published": "2026-03-06T15:42:31Z",
+        "description": "生成AI導入を「どのモデルが一番賢いか」という議論に矮小化してしまうのは、クラウド黎明期にオンプレvsクラウドの性能速度比較を延々とやっていた頃と同じ構図のように思えます。\n確かに技術者として性能比較はとても楽しいが、それは技術者の趣味であり組織の変革とは別物、AI導入の本質は、業務知識の民主化、意思決定の高速化、情報流通の再設計といった、より上位の経営課題に直結します。\nモデルの出力速度や文章の...",
+        "category": "AI・技術",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "【SpicaLM #2】BPE Tokenizerの設計と実装",
+        "url": "https://zenn.dev/andogensi/articles/e17c8c19fbd538",
+        "site": "Zenn(LLM)",
+        "published": "2026-03-06T15:17:38Z",
+        "description": "はじめに\nSLMを自作するにあたって、最初に直面した課題のひとつが 「テキストをどうモデルに渡すか」 という問題です。\n人間にとって自然な文字列は、そのままニューラルネットワークに入力できません。\nテキストを 整数ID列 に変換するのが「トークナイザー」の役割です。\n今回はSpicaLMにおけるトークナイザーを辿りながら、\nなぜ Byte Tokenizer → BPE Tokenizer に進化...",
+        "category": "AI・技術",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "vLLM v0.16.0 リリースノート解説",
+        "url": "https://zenn.dev/tosshi/articles/d2ed7115cf4578",
+        "site": "Zenn(LLM)",
+        "published": "2026-03-06T15:15:03Z",
+        "description": "メモ（ここは筆者のメモ欄です）\n\n非同期スケジューリング + PP は GPU のみの機能か？ -&gt; NVLink/NCCL を要求しているので GPU のみと思われるが調査する。\n非同期実行のフォールバックの仕組みはどうなっている？\nDisaggregated Inference 周りは新機能も試さなきゃ。。にゃーん。。\n\n\n はじめに\n!\n記事の目的: 本記事では、vLLM v0.16....",
+        "category": "AI・技術",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "「.env見るな」は通じない－AI時代のシークレット管理術",
+        "url": "https://zenn.dev/76hata/articles/d6d9de62d001a8",
+        "site": "Zenn(LLM)",
+        "published": "2026-03-06T14:48:58Z",
+        "description": "最近大騒ぎしている「.env」事件。\n結局どう対処すればいいのかまとめてもらった。\n\n はじめに\nClaude Codeをはじめとした AIコーディングエージェントが普及するなか、こんな疑問を持ったことはないでしょうか。\n\n「.envは読むな」とシステムプロンプトに書いてある。でも、プロンプトインジェクションで言い方を変えれば読まれる、という話を聞いた。じゃあどうやって管理すればいいの？\n\nこの記...",
+        "category": "AI・技術",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
         "title": "AIネイティブなプロダクトチームには、PMもデザイナーもエンジニアもいないのかもしれない",
         "url": "https://zenn.dev/r_kaga/articles/ffc6d9eaeb2268",
         "site": "Zenn(LLM)",
@@ -519,16 +601,6 @@
         "image_url": ""
       },
       {
-        "title": "LLMに「合ってますよね？」と聞くと41.7%の確率で嘘に同意する — 忖度を1029回のAPIで測定した",
-        "url": "https://zenn.dev/seeda_yuto/articles/llm-sycophancy-experiment",
-        "site": "Zenn(LLM)",
-        "published": "2026-03-05T23:30:16Z",
-        "description": "結論を先に言う\nLLMに間違った前提を含む質問を投げると、**10.8%の確率で完全に同意（忖度）**する。さらに14.9%は「はい、でも実は...」と曖昧に答える。\n「自信満々の人」が「チーム全員の意見」として間違いをぶつけると、忖度率は**23.5%**まで跳ね上がる。\nそして最も忖度されやすかった質問は、「1+2+...+100 = 4950ですよね？」（正解は5050）。このとき、モデルは...",
-        "category": "AI・技術",
-        "rss_category": "",
-        "image_url": ""
-      },
-      {
         "title": "自宅GPUクラスタ（GB10×3）でQwen3.5-397BをClaude Codeのサブエージェント化",
         "url": "https://zenn.dev/mokipoint/articles/gpu-cluster-gb10x3-qwen35-subagent",
         "site": "Zenn(LLM)",
@@ -604,16 +676,6 @@
         "site": "Zenn(LLM)",
         "published": "2026-03-05T13:03:02Z",
         "description": "同じAIモデルなのに、なぜ「当たりAI」と「ハズレAI」があるのか\n\n 導入\n筆者は、一つのチャットウィンドウでの長期対話が好きだ。\n話を共有している感覚が心地よい。\n同じAIと会話を続けていると、\nだんだんと文脈が積み上がり、\nまるで同じ思考空間を共有しているような感覚になる。\nしかし、対話を多く行う上で、\n一つの奇妙な現象に気づいた。\n同一環境、同一モデルであっても、\n明らかに「当たり」と「ハ...",
-        "category": "AI・技術",
-        "rss_category": "",
-        "image_url": ""
-      },
-      {
-        "title": "役割設定を「構造」から変える",
-        "url": "https://zenn.dev/myamio/articles/structural-role-design-evolution",
-        "site": "Zenn(LLM)",
-        "published": "2026-03-05T12:49:53Z",
-        "description": "役割設定を「構造」から変える\nかつて【プロンプトエンジニアリング】という言葉に象徴された「言葉の工夫」によるAIの制御は、より根本的な「構造の制御」へと進化の舵を切っています。\nLLMに役割を与えるという行為は、もはや表面的な言葉のやり取りではなく、モデルの推論プロセスそのものに深く介入する技術へとその姿を変えつつあります。\n\n 構造で演じ分ける\nこの変革を象徴するのが、人間の思考プロセスを模した...",
         "category": "AI・技術",
         "rss_category": "",
         "image_url": ""
