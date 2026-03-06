@@ -1,9 +1,9 @@
 {
   "site": "Zenn(機械学習)",
-  "last_updated": "2026-03-06T14:55:54.222943",
-  "total_articles": 713,
+  "last_updated": "2026-03-06T15:42:20.273826",
+  "total_articles": 704,
   "articles_by_date": {
-    "本日": [
+    "昨日": [
       {
         "title": "機械学習初心者が混乱しやすい行列計算",
         "url": "https://zenn.dev/yumeshimeji/articles/64e0cb907df86a",
@@ -45,7 +45,7 @@
         "image_url": ""
       }
     ],
-    "昨日": [
+    "一昨日": [
       {
         "title": "役割設定を「構造」から変える",
         "url": "https://zenn.dev/myamio/articles/structural-role-design-evolution",
@@ -112,98 +112,6 @@
         "site": "Zenn(機械学習)",
         "published": "2026-03-05T01:18:50Z",
         "description": "SimCLR 論文解説 ＆ PyTorch 実装（Contrastive Learning / 自己教師あり学習）\n本稿では、視覚表現のコントラスト学習のためのシンプルな枠組みである SimCLR (Simple Framework for Contrastive Learning ) を紹介する。SimCLRは、近年提案されているコントラスト型の自己教師あり学習アルゴリズムを、 特別なアーキテク...",
-        "category": "AI・技術",
-        "rss_category": "",
-        "image_url": ""
-      }
-    ],
-    "一昨日": [
-      {
-        "title": "Grok-based Transformer の構成要素を取り入れて Two-Tower モデルを改善する",
-        "url": "https://zenn.dev/dmmdata/articles/grok-based-transformer-tuning",
-        "site": "Zenn(機械学習)",
-        "published": "2026-03-04T12:55:58Z",
-        "description": "はじめに\n前回の記事[1]で、X のレコメンドアルゴリズムの公開コードを読みました。\nその中で、次のことを確認しました。\n\nTransformer を使ってユーザの行動履歴をエンコードしていること\n最近の LLM で見られるような Transformer の構成要素が使われていること\n\n\n\n\n要素\n（オリジナル）Transformer\nGrok-based Transformer\n\n\n\n\nNorm...",
-        "category": "AI・技術",
-        "rss_category": "",
-        "image_url": ""
-      },
-      {
-        "title": "【加工編】未来の情報を漏らすな：特徴量エンジニアリングと「指紋ファイル」",
-        "url": "https://zenn.dev/ricotiler/articles/keiba-ai-04-feature-engineering-leakage",
-        "site": "Zenn(機械学習)",
-        "published": "2026-03-04T11:15:35Z",
-        "description": "【加工編】未来の情報を漏らすな：特徴量エンジニアリングと「指紋ファイル」\n\n はじめに：データリークという落とし穴\n機械学習モデルの構築において、最も注意すべき問題の一つが **「データリーク（リーク）」**です。\nこれは、予測時点では知り得ない「未来の情報（答え）」が、学習データの中に誤って混入してしまう現象を指します。\n例えば、レース結果（着順や走破タイム）や、レース確定後に判明するオッズなど...",
-        "category": "AI・技術",
-        "rss_category": "",
-        "image_url": ""
-      },
-      {
-        "title": "LLMに「自信ある？」と聞いても無駄だった — 7つの手法で検証した結果",
-        "url": "https://zenn.dev/seeda_yuto/articles/llm-confidence-calibration-experiment",
-        "site": "Zenn(機械学習)",
-        "published": "2026-03-04T07:08:32Z",
-        "description": "結論を先に言う\nLLMに「この回答にどのくらい自信がある？」と聞くと、間違っている時ほど自信満々に答える。\n7つのプロンプト戦略を試して359回のAPI呼び出しをした結果、自己申告confidenceで正誤を見分ける方法はほぼ存在しなかった。ただし、1つだけ劇的に効く手法があった。\n\n きっかけ\n@ka_kan さんの記事「LLM推論時の自信度は当てにならない — コーディングタスクで検証」を読ん...",
-        "category": "AI・技術",
-        "rss_category": "",
-        "image_url": ""
-      },
-      {
-        "title": "金融時系列予測でLightGBM / LSTM / Transformerを比較してみた",
-        "url": "https://zenn.dev/sigma_lab/articles/aitrader-series-model-comp-1-20260304",
-        "site": "Zenn(機械学習)",
-        "published": "2026-03-04T03:51:38Z",
-        "description": "金融時系列予測でLightGBM / LSTM / Transformerを比較してみた\n\n はじめに\n金融時系列データは、その非定常性やノイズの多さから予測が非常に困難です。本記事では、代表的な機械学習モデルであるLightGBMと深層学習モデルのLSTM、そしてTransformerを金融時系列予測に適用し、それぞれの特性とアンサンブル学習の有効性について検証した結果を解説します。\n\n 課題\n...",
-        "category": "AI・技術",
-        "rss_category": "",
-        "image_url": ""
-      },
-      {
-        "title": "LightGBM vs LSTM vs Transformer: 金融時系列予測の実践比較",
-        "url": "https://zenn.dev/sigma_lab/articles/ai-mdl-comp-20260304",
-        "site": "Zenn(機械学習)",
-        "published": "2026-03-04T03:48:25Z",
-        "description": "金融時系列予測におけるモデル選択は、その複雑さと非定常性から常に挑戦的なテーマです。本稿では、勾配ブースティング決定木であるLightGBM、再帰型ニューラルネットワークのLSTM、そしてTransformerという異なるアーキテクチャを持つモデルを比較し、これらを組み合わせた異種モデルアンサンブルの設計と、実運用におけるパフォーマンスを詳細に検証します。特に、LightGBMを主体としつつ、LS...",
-        "category": "AI・技術",
-        "rss_category": "",
-        "image_url": ""
-      },
-      {
-        "title": "LoRA・QLoRA完全マニュアル ─ 2026年のLLMファインチューニング実装ガイド",
-        "url": "https://zenn.dev/ai_nexus/articles/lora-qlora-finetuning-guide",
-        "site": "Zenn(機械学習)",
-        "published": "2026-03-03T23:50:56Z",
-        "description": "ファインチューニング戦国時代の2026年\n2024年時点では、LLMのファインチューニングは「高コスト・高技術」でした。2026年現在、状況は大きく変わっています。個人開発者でもノートパソコンで、わずか数千円のGPUレンタル費でエンタープライズ品質のカスタムLLMを作れるようになったのです。\n本記事では、実装レベルで検証したLoRA・QLoRA・完全ファインチューニングの3手法を、数学的背景から実...",
-        "category": "AI・技術",
-        "rss_category": "",
-        "image_url": ""
-      },
-      {
-        "title": "AI関連でで「精度」に辿り着いた時に出てくる混同行列と評価指標を整理",
-        "url": "https://zenn.dev/t2yu/articles/4bd110e40bb86c",
-        "site": "Zenn(機械学習)",
-        "published": "2026-03-03T23:19:53Z",
-        "description": "日々の調査や問題解決の内容を、自分自身と、同じことに取り組む方のためにもドキュメント化する目的で記事を書いています。\n実装コードはここに下手に書くより、生成AIに作ってもらえば良いのであまり書かないようにしています。この記事もベースは生成AIに作ってもらったものです。\n\n TL;DR\n\n今更ですが、AI関連含め機械学習の分野をしていると辿り着く「精度」、精度を見ていくと出てくる混同行列について、覚...",
-        "category": "AI・技術",
-        "rss_category": "",
-        "image_url": ""
-      },
-      {
-        "title": "JSON vs YAML vs TOON 比較してみる",
-        "url": "https://zenn.dev/hanako_tech/articles/25d05ba8f124a4",
-        "site": "Zenn(機械学習)",
-        "published": "2026-03-03T21:00:01Z",
-        "description": "JSON vs TOON vs YAML：LLMのトークンをどれだけ節約できるか実測した\n「TOONというフォーマットがLLMのトークンを削減できる」という話を前に聞いて、簡単にデータで実測してみた。結論から言うと、思っていたより違いはない。ただし、理由がわかると逆に使いどころが明確になった。\n\n\n 3行サマリー\n\n大規模ネストデータでもTOONのトークン削減は 3〜7% が現実（劇的な改善はない...",
-        "category": "AI・技術",
-        "rss_category": "",
-        "image_url": ""
-      },
-      {
-        "title": "SVD-LLM の誤差伝播を補償する新手法 EP-SVD-LLM を考えて検証した",
-        "url": "https://zenn.dev/yoshi12/articles/f7750a3d6f61ec",
-        "site": "Zenn(機械学習)",
-        "published": "2026-03-03T15:19:26Z",
-        "description": "はじめに\nこの記事では、LLM の SVD ベース圧縮手法である SVD-LLM [1][2] をもとに、圧縮誤差の層間伝播を補償する手法 EP-SVD-LLM (Error Propagation-aware SVD-LLM) を提案し、その効果を検証します。\nSVD-LLM は、追加学習なしで LLM を効率的に低ランク圧縮できる手法です。一方で、各層を圧縮するときの最適化は基本的に元モデル側...",
         "category": "AI・技術",
         "rss_category": "",
         "image_url": ""
