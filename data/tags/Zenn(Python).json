@@ -1,6 +1,6 @@
 {
   "site": "Zenn(Python)",
-  "last_updated": "2026-03-08T21:30:20.670539",
+  "last_updated": "2026-03-08T21:50:15.912721",
   "total_articles": 2801,
   "articles_by_date": {
     "本日": [
@@ -10,16 +10,6 @@
         "site": "Zenn(Python)",
         "published": "2026-03-08T21:00:01Z",
         "description": "はじめに\n以下のリポジトリを参考に、AutoGenとGraphRAGを組み合わせた類似レポート検索を\n試しました。レポート検索エージェントを作成し、ツールでのレポート検索を可能にしました。\n結果として、キーワードが一致しない曖昧なクエリでも関係性をたどって類似文書を\n見つけられることが確認できました。\n同様の仕組みに興味がある方の参考になれば幸いです。\nhttps://github.com/kar...",
-        "category": "開発",
-        "rss_category": "",
-        "image_url": ""
-      },
-      {
-        "title": "Portkey AIゲートウェイ実装Deep Dive：条件付きルーティングとコスト最適化戦略",
-        "url": "https://zenn.dev/0h_n0/articles/6c55b2409143b2",
-        "site": "Zenn(Python)",
-        "published": "2026-03-08T16:21:52Z",
-        "description": "Portkey AIゲートウェイ実装Deep Dive：条件付きルーティングとコスト最適化戦略\n\n この記事でわかること\n\nPortkey AIゲートウェイの条件付きルーティングを使い、ユーザー属性やタスク種別でLLMプロバイダーを動的に振り分ける実装方法\n重み付きロードバランシングとフォールバックチェーンを組み合わせた高可用性アーキテクチャの構築手順\nサーキットブレーカーとカナリアテストを活用し...",
         "category": "開発",
         "rss_category": "",
         "image_url": ""
@@ -52,26 +42,6 @@
         "site": "Zenn(Python)",
         "published": "2026-03-08T14:46:08Z",
         "description": "FastAPI と Stripe を使って\nサブスクリプション課金対応バックエンドを構築しました。\n多くのStripeチュートリアルは\n\nCheckoutの作り方\n決済処理\n\nまでで終わります。\nしかし実際のサービスでは、それだけでは足りません。\n例えばこんな問題に遭遇したことはないでしょうか。\n\nWebhook処理が漏れて ユーザーが課金したのにPROにならない\n\n解約したのに 有料機能が使えて...",
-        "category": "開発",
-        "rss_category": "",
-        "image_url": ""
-      },
-      {
-        "title": "AI生成記事のPII漏洩を毎朝自動検出する仕組みを作った",
-        "url": "https://zenn.dev/yoshiki_ai/articles/pii-auto-scanner-articles",
-        "site": "Zenn(Python)",
-        "published": "2026-03-08T14:07:50Z",
-        "description": "なぜPIIスキャンが必要になったか\nAIで記事を大量生成していると、あるとき気づいた。\n生成された記事のドラフトに、社名がそのまま書いてあった。\n僕は[社名]で働くコンサルタントです。\nプロンプトに「自己紹介を含めて書いて」と指示したら、過去の会話に含まれていた情報をそのまま埋め込んだのだ。AIは記憶しない、と言われているが、同一セッション内の文脈は拾う。\nそれが公開される前に手動でチェックできて...",
-        "category": "開発",
-        "rss_category": "",
-        "image_url": ""
-      },
-      {
-        "title": "11-④[AI][Kaggle][python]Kaggle入門(時系列 4.時系列を特徴とする)",
-        "url": "https://zenn.dev/rg687076/articles/2242148605e1db",
-        "site": "Zenn(Python)",
-        "published": "2026-03-08T14:06:32Z",
-        "description": "Kaggle入門11(時系列 1.時系列データを用いた線形回帰)\nKaggle入門11(時系列 2.傾向(Trend))\nKaggle入門11(時系列 3.季節性)\nKaggle入門11(時系列 4.時系列を特徴とする)\nKaggle入門11(時系列 5.ハイブリッドモデル)\nKaggle入門11(時系列 6.機械学習による予測)\n← Kaggle入門10(コンピュータービジョン)\n(https:...",
         "category": "開発",
         "rss_category": "",
         "image_url": ""
@@ -137,21 +107,21 @@
         "image_url": ""
       },
       {
-        "title": "AIへの指示を16パターンに分類したら記事がブレなくなった",
-        "url": "https://zenn.dev/yoshiki_ai/articles/article-template-16-patterns",
-        "site": "Zenn(Python)",
-        "published": "2026-03-08T03:00:07Z",
-        "description": "問題\nGemini API で記事を量産していると、テーマが違うのに全記事が同じ構成になる現象が起きた。\n# どのテーマでも同じ構成になっていた（問題のある状態）\nH2: ○○とは何か\nH2: ○○のメリット\nH2: ○○のデメリット\nH2: ○○の選び方\nH2: まとめ\nLLM は「汎用的な解説記事」の構成として最もよく学習しているこのパターンを選びやすい。\n\n 解決策：記事テンプレートシステム...",
-        "category": "開発",
-        "rss_category": "",
-        "image_url": ""
-      },
-      {
         "title": "Canvaを使わずアイキャッチを量産する — Imagen 3 + Pillow + WordPress API",
         "url": "https://zenn.dev/yoshiki_ai/articles/eyecatch-auto-generation-pipeline",
         "site": "Zenn(Python)",
         "published": "2026-03-08T03:00:07Z",
         "description": "構成\narticle_generator_html_v2.py\n  ↓ 記事タイトル・本文を渡す\neyecatch_generator.py\n  ├── Step 1: Gemini API → デザイン設定を決定\n  ├── Step 2: Imagen 3 → 背景画像を生成\n  ├── Step 3: Pillow → タイトルテキストを合成\n  └── Step 4: WordPress ...",
+        "category": "開発",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "AIへの指示を16パターンに分類したら記事がブレなくなった",
+        "url": "https://zenn.dev/yoshiki_ai/articles/article-template-16-patterns",
+        "site": "Zenn(Python)",
+        "published": "2026-03-08T03:00:07Z",
+        "description": "問題\nGemini API で記事を量産していると、テーマが違うのに全記事が同じ構成になる現象が起きた。\n# どのテーマでも同じ構成になっていた（問題のある状態）\nH2: ○○とは何か\nH2: ○○のメリット\nH2: ○○のデメリット\nH2: ○○の選び方\nH2: まとめ\nLLM は「汎用的な解説記事」の構成として最もよく学習しているこのパターンを選びやすい。\n\n 解決策：記事テンプレートシステム...",
         "category": "開発",
         "rss_category": "",
         "image_url": ""
@@ -249,11 +219,41 @@
         "image_url": ""
       },
       {
+        "title": "ローカルLLM環境を構築するOllama入門",
+        "url": "https://zenn.dev/mitsuo119/books/845a9fc2c6b973",
+        "site": "Zenn(Python)",
+        "published": "2026-03-07T14:03:49Z",
+        "description": "「AIを自分のPCで動かしたい！」そんなあなたのための完全ガイド。Ollamaのインストールから、Python/JavaScript連携、RAG構築、Docker運用まで――身近な例え話とコピペで動くサンプルコードで、ローカルLLMの世界が自然と身につく。全20章。",
+        "category": "開発",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
         "title": "AIエージェントにツール持たせすぎて重くなったコストをサブエージェントで削減する",
         "url": "https://zenn.dev/yokomachi/articles/202603_sub-agent-cost-optimization",
         "site": "Zenn(Python)",
         "published": "2026-03-07T12:37:42Z",
         "description": "!\nこの記事は人間が書き、プログラムの実装・記事の校正に生成AIを使用しています。\n\n\n はじめに\n現在進行形でTONaRiというパーソナルAIエージェントを個人開発しています。Strands Agents + Amazon Bedrock AgentCoreで構築しており、フロントエンドにはAITuberKitを使用したVRM制御を行っています。\n\nパーソナルAIエージェントとして日常的な作業を...",
+        "category": "開発",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "LangGraph入門：LLMを\"チーム\"として動かすマルチエージェント設計パターン",
+        "url": "https://zenn.dev/biki/articles/langgraph-multi-agent-intro",
+        "site": "Zenn(Python)",
+        "published": "2026-03-07T10:49:45Z",
+        "description": "はじめに\nLangChainで調査→執筆→レビューのパイプラインを作ろうとしたとき、こんな壁にぶつかったことはないでしょうか？\n\n「レビューでNGが出たら執筆に戻る」ループ処理が書けない\n複数エージェントの状態を共有できない\n「前の処理の結果によって次のステップを変える」動的な条件分岐が辛い\n\nLangChainは線形なパイプラインには強いですが、「ループ」「状態共有」「動的ルーティング」が絡んで...",
+        "category": "開発",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "LangChainを学ぶ - 2. RAGによるデータのインデックス化",
+        "url": "https://zenn.dev/hkazuki/articles/cc496f15553d1a",
+        "site": "Zenn(Python)",
+        "published": "2026-03-07T10:33:50Z",
+        "description": "はじめに\n以下の記事の続きになります。\nhttps://zenn.dev/hkazuki/articles/07d4f9b77c285c\n今回はRAGについて具体的に動かしながら学んでいきます。\n参照したリソースは以下に加えて、理解の補助にClaudeなどを適宜使用しました。\nLangChain Docs 公式\nhttps://docs.langchain.com/oss/python/langc...",
         "category": "開発",
         "rss_category": "",
         "image_url": ""
@@ -401,16 +401,6 @@
         "image_url": ""
       },
       {
-        "title": "Portkey AIゲートウェイ実装Deep Dive：条件付きルーティングとコスト最適化戦略",
-        "url": "https://zenn.dev/0h_n0/articles/6c55b2409143b2",
-        "site": "Zenn(Python)",
-        "published": "2026-03-08T16:21:52Z",
-        "description": "Portkey AIゲートウェイ実装Deep Dive：条件付きルーティングとコスト最適化戦略\n\n この記事でわかること\n\nPortkey AIゲートウェイの条件付きルーティングを使い、ユーザー属性やタスク種別でLLMプロバイダーを動的に振り分ける実装方法\n重み付きロードバランシングとフォールバックチェーンを組み合わせた高可用性アーキテクチャの構築手順\nサーキットブレーカーとカナリアテストを活用し...",
-        "category": "開発",
-        "rss_category": "",
-        "image_url": ""
-      },
-      {
         "title": "Python の `del` はメモリを解放しない場合がある",
         "url": "https://zenn.dev/shunta_okada/articles/7804dcd3fe9181",
         "site": "Zenn(Python)",
@@ -436,26 +426,6 @@
         "site": "Zenn(Python)",
         "published": "2026-03-08T14:46:08Z",
         "description": "FastAPI と Stripe を使って\nサブスクリプション課金対応バックエンドを構築しました。\n多くのStripeチュートリアルは\n\nCheckoutの作り方\n決済処理\n\nまでで終わります。\nしかし実際のサービスでは、それだけでは足りません。\n例えばこんな問題に遭遇したことはないでしょうか。\n\nWebhook処理が漏れて ユーザーが課金したのにPROにならない\n\n解約したのに 有料機能が使えて...",
-        "category": "開発",
-        "rss_category": "",
-        "image_url": ""
-      },
-      {
-        "title": "AI生成記事のPII漏洩を毎朝自動検出する仕組みを作った",
-        "url": "https://zenn.dev/yoshiki_ai/articles/pii-auto-scanner-articles",
-        "site": "Zenn(Python)",
-        "published": "2026-03-08T14:07:50Z",
-        "description": "なぜPIIスキャンが必要になったか\nAIで記事を大量生成していると、あるとき気づいた。\n生成された記事のドラフトに、社名がそのまま書いてあった。\n僕は[社名]で働くコンサルタントです。\nプロンプトに「自己紹介を含めて書いて」と指示したら、過去の会話に含まれていた情報をそのまま埋め込んだのだ。AIは記憶しない、と言われているが、同一セッション内の文脈は拾う。\nそれが公開される前に手動でチェックできて...",
-        "category": "開発",
-        "rss_category": "",
-        "image_url": ""
-      },
-      {
-        "title": "11-④[AI][Kaggle][python]Kaggle入門(時系列 4.時系列を特徴とする)",
-        "url": "https://zenn.dev/rg687076/articles/2242148605e1db",
-        "site": "Zenn(Python)",
-        "published": "2026-03-08T14:06:32Z",
-        "description": "Kaggle入門11(時系列 1.時系列データを用いた線形回帰)\nKaggle入門11(時系列 2.傾向(Trend))\nKaggle入門11(時系列 3.季節性)\nKaggle入門11(時系列 4.時系列を特徴とする)\nKaggle入門11(時系列 5.ハイブリッドモデル)\nKaggle入門11(時系列 6.機械学習による予測)\n← Kaggle入門10(コンピュータービジョン)\n(https:...",
         "category": "開発",
         "rss_category": "",
         "image_url": ""
@@ -521,21 +491,21 @@
         "image_url": ""
       },
       {
-        "title": "AIへの指示を16パターンに分類したら記事がブレなくなった",
-        "url": "https://zenn.dev/yoshiki_ai/articles/article-template-16-patterns",
-        "site": "Zenn(Python)",
-        "published": "2026-03-08T03:00:07Z",
-        "description": "問題\nGemini API で記事を量産していると、テーマが違うのに全記事が同じ構成になる現象が起きた。\n# どのテーマでも同じ構成になっていた（問題のある状態）\nH2: ○○とは何か\nH2: ○○のメリット\nH2: ○○のデメリット\nH2: ○○の選び方\nH2: まとめ\nLLM は「汎用的な解説記事」の構成として最もよく学習しているこのパターンを選びやすい。\n\n 解決策：記事テンプレートシステム...",
-        "category": "開発",
-        "rss_category": "",
-        "image_url": ""
-      },
-      {
         "title": "Canvaを使わずアイキャッチを量産する — Imagen 3 + Pillow + WordPress API",
         "url": "https://zenn.dev/yoshiki_ai/articles/eyecatch-auto-generation-pipeline",
         "site": "Zenn(Python)",
         "published": "2026-03-08T03:00:07Z",
         "description": "構成\narticle_generator_html_v2.py\n  ↓ 記事タイトル・本文を渡す\neyecatch_generator.py\n  ├── Step 1: Gemini API → デザイン設定を決定\n  ├── Step 2: Imagen 3 → 背景画像を生成\n  ├── Step 3: Pillow → タイトルテキストを合成\n  └── Step 4: WordPress ...",
+        "category": "開発",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "AIへの指示を16パターンに分類したら記事がブレなくなった",
+        "url": "https://zenn.dev/yoshiki_ai/articles/article-template-16-patterns",
+        "site": "Zenn(Python)",
+        "published": "2026-03-08T03:00:07Z",
+        "description": "問題\nGemini API で記事を量産していると、テーマが違うのに全記事が同じ構成になる現象が起きた。\n# どのテーマでも同じ構成になっていた（問題のある状態）\nH2: ○○とは何か\nH2: ○○のメリット\nH2: ○○のデメリット\nH2: ○○の選び方\nH2: まとめ\nLLM は「汎用的な解説記事」の構成として最もよく学習しているこのパターンを選びやすい。\n\n 解決策：記事テンプレートシステム...",
         "category": "開発",
         "rss_category": "",
         "image_url": ""
@@ -631,11 +601,41 @@
         "image_url": ""
       },
       {
+        "title": "ローカルLLM環境を構築するOllama入門",
+        "url": "https://zenn.dev/mitsuo119/books/845a9fc2c6b973",
+        "site": "Zenn(Python)",
+        "published": "2026-03-07T14:03:49Z",
+        "description": "「AIを自分のPCで動かしたい！」そんなあなたのための完全ガイド。Ollamaのインストールから、Python/JavaScript連携、RAG構築、Docker運用まで――身近な例え話とコピペで動くサンプルコードで、ローカルLLMの世界が自然と身につく。全20章。",
+        "category": "開発",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
         "title": "AIエージェントにツール持たせすぎて重くなったコストをサブエージェントで削減する",
         "url": "https://zenn.dev/yokomachi/articles/202603_sub-agent-cost-optimization",
         "site": "Zenn(Python)",
         "published": "2026-03-07T12:37:42Z",
         "description": "!\nこの記事は人間が書き、プログラムの実装・記事の校正に生成AIを使用しています。\n\n\n はじめに\n現在進行形でTONaRiというパーソナルAIエージェントを個人開発しています。Strands Agents + Amazon Bedrock AgentCoreで構築しており、フロントエンドにはAITuberKitを使用したVRM制御を行っています。\n\nパーソナルAIエージェントとして日常的な作業を...",
+        "category": "開発",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "LangGraph入門：LLMを\"チーム\"として動かすマルチエージェント設計パターン",
+        "url": "https://zenn.dev/biki/articles/langgraph-multi-agent-intro",
+        "site": "Zenn(Python)",
+        "published": "2026-03-07T10:49:45Z",
+        "description": "はじめに\nLangChainで調査→執筆→レビューのパイプラインを作ろうとしたとき、こんな壁にぶつかったことはないでしょうか？\n\n「レビューでNGが出たら執筆に戻る」ループ処理が書けない\n複数エージェントの状態を共有できない\n「前の処理の結果によって次のステップを変える」動的な条件分岐が辛い\n\nLangChainは線形なパイプラインには強いですが、「ループ」「状態共有」「動的ルーティング」が絡んで...",
+        "category": "開発",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "LangChainを学ぶ - 2. RAGによるデータのインデックス化",
+        "url": "https://zenn.dev/hkazuki/articles/cc496f15553d1a",
+        "site": "Zenn(Python)",
+        "published": "2026-03-07T10:33:50Z",
+        "description": "はじめに\n以下の記事の続きになります。\nhttps://zenn.dev/hkazuki/articles/07d4f9b77c285c\n今回はRAGについて具体的に動かしながら学んでいきます。\n参照したリソースは以下に加えて、理解の補助にClaudeなどを適宜使用しました。\nLangChain Docs 公式\nhttps://docs.langchain.com/oss/python/langc...",
         "category": "開発",
         "rss_category": "",
         "image_url": ""
