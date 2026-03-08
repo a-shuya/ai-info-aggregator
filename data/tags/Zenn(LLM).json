@@ -1,7 +1,7 @@
 {
   "site": "Zenn(LLM)",
-  "last_updated": "2026-03-08T12:58:17.058894",
-  "total_articles": 2179,
+  "last_updated": "2026-03-08T13:45:24.493139",
+  "total_articles": 2185,
   "articles_by_date": {
     "本日": [
       {
@@ -30,16 +30,6 @@
         "site": "Zenn(LLM)",
         "published": "2026-03-08T09:51:32Z",
         "description": "はじめに\n「ChatGPTみたいなAIを、自分のPCで、”無料で”（←ここ大事）動かしたい」\nそう思ったことはありませんか？私は思いました。なのであなたも思ってください。\nクラウドのAIサービスは便利ですが、APIの利用料金がかかったり、会話内容がサーバーに送信されるというプライバシーの懸念があったりします。\nこの記事では、Windows + WSL2環境でローカルLLMを構築し、ブラウザからCh...",
-        "category": "AI・技術",
-        "rss_category": "",
-        "image_url": ""
-      },
-      {
-        "title": "AIコーディングの原則",
-        "url": "https://zenn.dev/takekazuomi/articles/ai-coding-principles",
-        "site": "Zenn(LLM)",
-        "published": "2026-03-08T09:43:55Z",
-        "description": "AIコーディングツールを使い始めて、しばらく経った。進歩は目覚ましく、便利だし役に立つ。一方で、OSS界隈ではAI Slop (AIが生成する低品質なコードやテキスト) が問題になっている。個人なら自分で気づいて直せるが、チームでは人数分だけ増幅される。誰かが流したSlopのレビューとリワークにチーム全体が巻き込まれ、AIコーディングのメリットを上回る生産性の低下を招く。この記事では、チームでその...",
         "category": "AI・技術",
         "rss_category": "",
         "image_url": ""
@@ -207,6 +197,26 @@
         "image_url": ""
       },
       {
+        "title": "LangGraph入門：LLMを\"チーム\"として動かすマルチエージェント設計パターン",
+        "url": "https://zenn.dev/biki/articles/langgraph-multi-agent-intro",
+        "site": "Zenn(LLM)",
+        "published": "2026-03-07T10:49:45Z",
+        "description": "はじめに\nLangChainで調査→執筆→レビューのパイプラインを作ろうとしたとき、こんな壁にぶつかったことはないでしょうか？\n\n「レビューでNGが出たら執筆に戻る」ループ処理が書けない\n複数エージェントの状態を共有できない\n「前の処理の結果によって次のステップを変える」動的な条件分岐が辛い\n\nLangChainは線形なパイプラインには強いですが、「ループ」「状態共有」「動的ルーティング」が絡んで...",
+        "category": "AI・技術",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "LangChainを学ぶ - 2. RAGによるデータのインデックス化",
+        "url": "https://zenn.dev/hkazuki/articles/cc496f15553d1a",
+        "site": "Zenn(LLM)",
+        "published": "2026-03-07T10:33:50Z",
+        "description": "はじめに\n以下の記事の続きになります。\nhttps://zenn.dev/hkazuki/articles/07d4f9b77c285c\n今回はRAGについて具体的に動かしながら学んでいきます。\n参照したリソースは以下に加えて、理解の補助にClaudeなどを適宜使用しました。\nLangChain Docs 公式\nhttps://docs.langchain.com/oss/python/langc...",
+        "category": "AI・技術",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
         "title": "Twinsプロジェクト　経緯",
         "url": "https://zenn.dev/kinose/articles/6dd93ddee35c37",
         "site": "Zenn(LLM)",
@@ -227,11 +237,31 @@
         "image_url": ""
       },
       {
+        "title": "LangGraphで複数LLMを議論させる実験基盤を作った話",
+        "url": "https://zenn.dev/sunyeul89/articles/c3198c122c8e7b",
+        "site": "Zenn(LLM)",
+        "published": "2026-03-07T09:50:14Z",
+        "description": "!\nこの記事は、multi-agent debate の性能そのものよりも、比較可能な実験基盤をどう作ったかに焦点を当てています。\n\n\n はじめに\nSakana AI の Applied Research Engineer 向け Technical Problem Set を見て、これはちょうど手を動かして整理すると面白いタイプの課題だと思いました。\n実装コードは以下です。\n\nお題は multi-...",
+        "category": "AI・技術",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
         "title": "【検証】RTX 5090でQwen3.5 MXFP4量子化を動かす — Q4_K_Mとの性能比較とMMQクラッシュ解消の記録",
         "url": "https://zenn.dev/toki_mwc/articles/rtx5090-mxfp4-qwen35-llama-cpp-benchmark",
         "site": "Zenn(LLM)",
         "published": "2026-03-07T09:42:49Z",
         "description": "はじめに\nMXFP4（Microscaling Floating Point 4-bit）は、ブロック浮動小数点方式で重みを4bitに圧縮する量子化手法です。llama.cppでは MXFP4_MOE として MoE（Mixture of Experts）モデル向けにサポートされていますが、NVIDIA Blackwell世代での動作報告はまだほとんどありません。\n筆者が以前 MXFP4_MOE ...",
+        "category": "AI・技術",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "neoAI-InstructBench：実際のLLM利用シナリオに根ざした日本語指示追従ベンチマーク",
+        "url": "https://zenn.dev/neoai/articles/4c4f2054733363",
+        "site": "Zenn(LLM)",
+        "published": "2026-03-07T08:00:05Z",
+        "description": "はじめに\nこんにちは。neoAI Researchの川本稔己です。\nLLMにリクエストを送るとき、指示を1つだけ伝えて済むことよりも、「日本語で」「敬語で」「メール形式で」のように複数の指示を同時に依頼することが多くなったように思います。そのときにLLMから返ってきた回答を見て、これ頼んだんだけどなぁ、、と送ったはずの指示に従ってくれないようなことはないでしょうか？個々の指示なら問題なく守ってくれ...",
         "category": "AI・技術",
         "rss_category": "",
         "image_url": ""
@@ -541,16 +571,6 @@
         "image_url": ""
       },
       {
-        "title": "AIコーディングの原則",
-        "url": "https://zenn.dev/takekazuomi/articles/ai-coding-principles",
-        "site": "Zenn(LLM)",
-        "published": "2026-03-08T09:43:55Z",
-        "description": "AIコーディングツールを使い始めて、しばらく経った。進歩は目覚ましく、便利だし役に立つ。一方で、OSS界隈ではAI Slop (AIが生成する低品質なコードやテキスト) が問題になっている。個人なら自分で気づいて直せるが、チームでは人数分だけ増幅される。誰かが流したSlopのレビューとリワークにチーム全体が巻き込まれ、AIコーディングのメリットを上回る生産性の低下を招く。この記事では、チームでその...",
-        "category": "AI・技術",
-        "rss_category": "",
-        "image_url": ""
-      },
-      {
         "title": "事例から学ぶ企業でのコーディングエージェントの内製やハーネスの作り方",
         "url": "https://zenn.dev/r_kaga/articles/13356a9b5eb492",
         "site": "Zenn(LLM)",
@@ -711,6 +731,26 @@
         "image_url": ""
       },
       {
+        "title": "LangGraph入門：LLMを\"チーム\"として動かすマルチエージェント設計パターン",
+        "url": "https://zenn.dev/biki/articles/langgraph-multi-agent-intro",
+        "site": "Zenn(LLM)",
+        "published": "2026-03-07T10:49:45Z",
+        "description": "はじめに\nLangChainで調査→執筆→レビューのパイプラインを作ろうとしたとき、こんな壁にぶつかったことはないでしょうか？\n\n「レビューでNGが出たら執筆に戻る」ループ処理が書けない\n複数エージェントの状態を共有できない\n「前の処理の結果によって次のステップを変える」動的な条件分岐が辛い\n\nLangChainは線形なパイプラインには強いですが、「ループ」「状態共有」「動的ルーティング」が絡んで...",
+        "category": "AI・技術",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "LangChainを学ぶ - 2. RAGによるデータのインデックス化",
+        "url": "https://zenn.dev/hkazuki/articles/cc496f15553d1a",
+        "site": "Zenn(LLM)",
+        "published": "2026-03-07T10:33:50Z",
+        "description": "はじめに\n以下の記事の続きになります。\nhttps://zenn.dev/hkazuki/articles/07d4f9b77c285c\n今回はRAGについて具体的に動かしながら学んでいきます。\n参照したリソースは以下に加えて、理解の補助にClaudeなどを適宜使用しました。\nLangChain Docs 公式\nhttps://docs.langchain.com/oss/python/langc...",
+        "category": "AI・技術",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
         "title": "Twinsプロジェクト　経緯",
         "url": "https://zenn.dev/kinose/articles/6dd93ddee35c37",
         "site": "Zenn(LLM)",
@@ -731,11 +771,31 @@
         "image_url": ""
       },
       {
+        "title": "LangGraphで複数LLMを議論させる実験基盤を作った話",
+        "url": "https://zenn.dev/sunyeul89/articles/c3198c122c8e7b",
+        "site": "Zenn(LLM)",
+        "published": "2026-03-07T09:50:14Z",
+        "description": "!\nこの記事は、multi-agent debate の性能そのものよりも、比較可能な実験基盤をどう作ったかに焦点を当てています。\n\n\n はじめに\nSakana AI の Applied Research Engineer 向け Technical Problem Set を見て、これはちょうど手を動かして整理すると面白いタイプの課題だと思いました。\n実装コードは以下です。\n\nお題は multi-...",
+        "category": "AI・技術",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
         "title": "【検証】RTX 5090でQwen3.5 MXFP4量子化を動かす — Q4_K_Mとの性能比較とMMQクラッシュ解消の記録",
         "url": "https://zenn.dev/toki_mwc/articles/rtx5090-mxfp4-qwen35-llama-cpp-benchmark",
         "site": "Zenn(LLM)",
         "published": "2026-03-07T09:42:49Z",
         "description": "はじめに\nMXFP4（Microscaling Floating Point 4-bit）は、ブロック浮動小数点方式で重みを4bitに圧縮する量子化手法です。llama.cppでは MXFP4_MOE として MoE（Mixture of Experts）モデル向けにサポートされていますが、NVIDIA Blackwell世代での動作報告はまだほとんどありません。\n筆者が以前 MXFP4_MOE ...",
+        "category": "AI・技術",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "neoAI-InstructBench：実際のLLM利用シナリオに根ざした日本語指示追従ベンチマーク",
+        "url": "https://zenn.dev/neoai/articles/4c4f2054733363",
+        "site": "Zenn(LLM)",
+        "published": "2026-03-07T08:00:05Z",
+        "description": "はじめに\nこんにちは。neoAI Researchの川本稔己です。\nLLMにリクエストを送るとき、指示を1つだけ伝えて済むことよりも、「日本語で」「敬語で」「メール形式で」のように複数の指示を同時に依頼することが多くなったように思います。そのときにLLMから返ってきた回答を見て、これ頼んだんだけどなぁ、、と送ったはずの指示に従ってくれないようなことはないでしょうか？個々の指示なら問題なく守ってくれ...",
         "category": "AI・技術",
         "rss_category": "",
         "image_url": ""
