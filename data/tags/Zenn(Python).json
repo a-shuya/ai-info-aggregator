@@ -1,9 +1,59 @@
 {
   "site": "Zenn(Python)",
-  "last_updated": "2026-03-09T07:41:32.809905",
-  "total_articles": 2815,
+  "last_updated": "2026-03-09T08:28:52.025500",
+  "total_articles": 2819,
   "articles_by_date": {
     "本日": [
+      {
+        "title": "ASNクラスタリングとは何か・なぜプロキシBanを引き起こすか完全ガイド【2026年版】",
+        "url": "https://zenn.dev/datajournal1/articles/c8e1438cbc22dc",
+        "site": "Zenn(Python)",
+        "published": "2026-03-09T07:10:46Z",
+        "description": "ASNクラスタリングとは何か・なぜプロキシBanを引き起こすか\nASNクラスタリングとは、複数のリクエストが同一のASN（自律システム番号）または同一の /24 サブネットに集中している状態のことで、アンチボットシステムが「単一の組織が送る自動化トラフィック」と判断してプロキシごとBanする主要な検出手法だ。 IPをどれだけローテーションしても送信元ASNが同じなら、Cloudflare・Akam...",
+        "category": "開発",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "［AtCoder］ABC-447｜A - Seats 2",
+        "url": "https://zenn.dev/hyperdb/articles/f3ea8e01a055c3",
+        "site": "Zenn(Python)",
+        "published": "2026-03-09T05:47:52Z",
+        "description": "設問ページ\n\n🔗ABC-447 A - Seats 2\n\n\n\n 提出結果\ndef getIntMap():\n    return map(int, input().split())\n\n\ndef main():\n    N, M = getIntMap()\n\n    # 2席を1組にして数える（余った席はそのまま追加）\n    print(\"Yes\" if (N // 2 + N % 2) &gt;...",
+        "category": "開発",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "［AtCoder］ABC-447｜B - mpp",
+        "url": "https://zenn.dev/hyperdb/articles/1ed9805919885e",
+        "site": "Zenn(Python)",
+        "published": "2026-03-09T05:47:51Z",
+        "description": "設問ページ\n\n🔗ABC-447 B - mpp\n\n\n\n 提出結果\ndef getString():\n    return input()\n\n\ndef main():\n    S = getString()\n\n    # それぞれの文字の出現回数を数える\n    # collections.Counterでもよい？\n    d = dict()\n    for c in S:\n        d.s...",
+        "category": "開発",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "［AtCoder］ABC-447｜C - Insert and Erase A",
+        "url": "https://zenn.dev/hyperdb/articles/1aeaf632ae595c",
+        "site": "Zenn(Python)",
+        "published": "2026-03-09T05:47:50Z",
+        "description": "設問ページ\n\n🔗ABC-447 C - Insert and Erase A\n\n\n\n 提出結果\ndef getString():\n    return input()\n\n\ndef removeA(s):\n    ret = []\n    for i in range(len(s)):\n        if s[i] != \"A\":\n            ret.append(s[i])\n    ...",
+        "category": "開発",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "click() は3回裏切る — Playwright × Magento 実戦パターン集",
+        "url": "https://zenn.dev/shimo4228/articles/playwright-magento-scoring",
+        "site": "Zenn(Python)",
+        "published": "2026-03-09T03:11:38Z",
+        "description": "はじめに\nMagento ベースの EC サイトを Playwright で自動操作しようとした。Magento は Adobe が開発するオープンソースの EC プラットフォームで、国内外の多くのネットショップが採用している。配送日時の設定、商品検索、データ取得——やることは単純だ。click() して、テキストを読んで、次のページに行く。\n3回目に click() が裏切られた時点で、「これは...",
+        "category": "開発",
+        "rss_category": "",
+        "image_url": ""
+      },
       {
         "title": "大学教員が挑んだAI-TAボット構築記：PDF×TeX二刀流と5重の防壁",
         "url": "https://zenn.dev/kase_lab/articles/e3e5ba68605ff4",
@@ -117,7 +167,7 @@
         "image_url": ""
       },
       {
-        "title": "最大距離を追うのをやめた ― ADS-B受信の改善を「証明」するために何を測るべきか",
+        "title": "ADS-B受信の評価指標を再設計する ― AUCという選択",
         "url": "https://zenn.dev/north_to_now/articles/adsb-auc-evaluation",
         "site": "Zenn(Python)",
         "published": "2026-03-08T13:55:02Z",
@@ -167,16 +217,6 @@
         "image_url": ""
       },
       {
-        "title": "【モデル編②】3モデル連携アーキテクチャ：競馬のプロセスを模倣する",
-        "url": "https://zenn.dev/ricotiler/articles/keiba-ai-07-multi-model-architecture",
-        "site": "Zenn(Python)",
-        "published": "2026-03-08T05:10:10Z",
-        "description": "【モデル編②】3モデル連携アーキテクチャ：競馬のプロセスを模倣する\n\n はじめに：一枚岩モデルの限界\n前回の記事で導入した「ランク学習」は、レース内の相対的な強さを評価できる強力な手法です。\nしかし、競馬の予測はそれほど単純ではありません。\n\nどの馬がハナを主張するのか？（展開）\nそれによって全体のペースはどうなるのか？（ペース）\nハイペースなら、どの馬が最後に脚を使えるのか？（上がり）\n\nこれら...",
-        "category": "開発",
-        "rss_category": "",
-        "image_url": ""
-      },
-      {
         "title": "AIへの指示を16パターンに分類したら記事がブレなくなった",
         "url": "https://zenn.dev/yoshiki_ai/articles/article-template-16-patterns",
         "site": "Zenn(Python)",
@@ -192,16 +232,6 @@
         "site": "Zenn(Python)",
         "published": "2026-03-08T03:00:07Z",
         "description": "構成\narticle_generator_html_v2.py\n  ↓ 記事タイトル・本文を渡す\neyecatch_generator.py\n  ├── Step 1: Gemini API → デザイン設定を決定\n  ├── Step 2: Imagen 3 → 背景画像を生成\n  ├── Step 3: Pillow → タイトルテキストを合成\n  └── Step 4: WordPress ...",
-        "category": "開発",
-        "rss_category": "",
-        "image_url": ""
-      },
-      {
-        "title": "金融AIでモデルアンサンブルを使う理由",
-        "url": "https://zenn.dev/sigma_lab/articles/aitrader-ai-trader-log-05-ens-20260304",
-        "site": "Zenn(Python)",
-        "published": "2026-03-08T01:05:37Z",
-        "description": "はじめに\n金融時系列は「最も予測が難しいデータ」の1つです。ノイズが多く、非定常で、相関が頻繁に崩れるため、単一指標や単純なモデルでは安定した予測が難しいという課題があります。特に、市場環境の変化に単一モデルが過剰適応してしまい、ロバスト性が損なわれるリスクは常に存在します。\nこの記事では、そのような課題に対し、金融AIでモデルアンサンブルを使う理由について、具体的な設計と実装を紹介します。複数の...",
         "category": "開発",
         "rss_category": "",
         "image_url": ""
@@ -232,16 +262,6 @@
         "site": "Zenn(Python)",
         "published": "2026-03-07T22:17:47Z",
         "description": "GeminiでレシートOCRしてセルフメディケーション税制を自動集計する\nセルフメディケーション税制を使って確定申告をする場合、\n対象商品の購入額を集計し、店舗ごとに整理して入力する必要があります。\nしかし実際には次のような問題があります。\n\nレシートが大量で手入力がつらい\n食品と医薬品が混ざっている\n同じレシートを読み込んでしまう可能性\n店舗ごとの合計金額を出したい\n\nそこで\nGemini + ...",
-        "category": "開発",
-        "rss_category": "",
-        "image_url": ""
-      },
-      {
-        "title": "ディープラーニングの異常検知ライブラリ「Anomalib v2.2.0」の環境構築でハマった話",
-        "url": "https://zenn.dev/asukuro/articles/781ebda976f6db",
-        "site": "Zenn(Python)",
-        "published": "2026-03-07T22:09:22Z",
-        "description": "はじめに\n監視カメラ画像の異常検知処理の実装に、軽量なディープラーニングアルゴリズムを使おうと、Anomalib を動かそうとしたら、やたらエラーがでたので、その内容と解決策を共有しつつ、環境構築の手順、簡単なサンプルコード、実行結果を紹介したいと思います。\n\n 1. Anomalib って？\nAnomalibは、Intelが開発を主導している、オープンソースのディープラーニングアルゴリズムのうち...",
         "category": "開発",
         "rss_category": "",
         "image_url": ""
@@ -461,6 +481,56 @@
     ],
     "2026-03": [
       {
+        "title": "ASNクラスタリングとは何か・なぜプロキシBanを引き起こすか完全ガイド【2026年版】",
+        "url": "https://zenn.dev/datajournal1/articles/c8e1438cbc22dc",
+        "site": "Zenn(Python)",
+        "published": "2026-03-09T07:10:46Z",
+        "description": "ASNクラスタリングとは何か・なぜプロキシBanを引き起こすか\nASNクラスタリングとは、複数のリクエストが同一のASN（自律システム番号）または同一の /24 サブネットに集中している状態のことで、アンチボットシステムが「単一の組織が送る自動化トラフィック」と判断してプロキシごとBanする主要な検出手法だ。 IPをどれだけローテーションしても送信元ASNが同じなら、Cloudflare・Akam...",
+        "category": "開発",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "［AtCoder］ABC-447｜A - Seats 2",
+        "url": "https://zenn.dev/hyperdb/articles/f3ea8e01a055c3",
+        "site": "Zenn(Python)",
+        "published": "2026-03-09T05:47:52Z",
+        "description": "設問ページ\n\n🔗ABC-447 A - Seats 2\n\n\n\n 提出結果\ndef getIntMap():\n    return map(int, input().split())\n\n\ndef main():\n    N, M = getIntMap()\n\n    # 2席を1組にして数える（余った席はそのまま追加）\n    print(\"Yes\" if (N // 2 + N % 2) &gt;...",
+        "category": "開発",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "［AtCoder］ABC-447｜B - mpp",
+        "url": "https://zenn.dev/hyperdb/articles/1ed9805919885e",
+        "site": "Zenn(Python)",
+        "published": "2026-03-09T05:47:51Z",
+        "description": "設問ページ\n\n🔗ABC-447 B - mpp\n\n\n\n 提出結果\ndef getString():\n    return input()\n\n\ndef main():\n    S = getString()\n\n    # それぞれの文字の出現回数を数える\n    # collections.Counterでもよい？\n    d = dict()\n    for c in S:\n        d.s...",
+        "category": "開発",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "［AtCoder］ABC-447｜C - Insert and Erase A",
+        "url": "https://zenn.dev/hyperdb/articles/1aeaf632ae595c",
+        "site": "Zenn(Python)",
+        "published": "2026-03-09T05:47:50Z",
+        "description": "設問ページ\n\n🔗ABC-447 C - Insert and Erase A\n\n\n\n 提出結果\ndef getString():\n    return input()\n\n\ndef removeA(s):\n    ret = []\n    for i in range(len(s)):\n        if s[i] != \"A\":\n            ret.append(s[i])\n    ...",
+        "category": "開発",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "click() は3回裏切る — Playwright × Magento 実戦パターン集",
+        "url": "https://zenn.dev/shimo4228/articles/playwright-magento-scoring",
+        "site": "Zenn(Python)",
+        "published": "2026-03-09T03:11:38Z",
+        "description": "はじめに\nMagento ベースの EC サイトを Playwright で自動操作しようとした。Magento は Adobe が開発するオープンソースの EC プラットフォームで、国内外の多くのネットショップが採用している。配送日時の設定、商品検索、データ取得——やることは単純だ。click() して、テキストを読んで、次のページに行く。\n3回目に click() が裏切られた時点で、「これは...",
+        "category": "開発",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
         "title": "大学教員が挑んだAI-TAボット構築記：PDF×TeX二刀流と5重の防壁",
         "url": "https://zenn.dev/kase_lab/articles/e3e5ba68605ff4",
         "site": "Zenn(Python)",
@@ -571,7 +641,7 @@
         "image_url": ""
       },
       {
-        "title": "最大距離を追うのをやめた ― ADS-B受信の改善を「証明」するために何を測るべきか",
+        "title": "ADS-B受信の評価指標を再設計する ― AUCという選択",
         "url": "https://zenn.dev/north_to_now/articles/adsb-auc-evaluation",
         "site": "Zenn(Python)",
         "published": "2026-03-08T13:55:02Z",
@@ -621,16 +691,6 @@
         "image_url": ""
       },
       {
-        "title": "【モデル編②】3モデル連携アーキテクチャ：競馬のプロセスを模倣する",
-        "url": "https://zenn.dev/ricotiler/articles/keiba-ai-07-multi-model-architecture",
-        "site": "Zenn(Python)",
-        "published": "2026-03-08T05:10:10Z",
-        "description": "【モデル編②】3モデル連携アーキテクチャ：競馬のプロセスを模倣する\n\n はじめに：一枚岩モデルの限界\n前回の記事で導入した「ランク学習」は、レース内の相対的な強さを評価できる強力な手法です。\nしかし、競馬の予測はそれほど単純ではありません。\n\nどの馬がハナを主張するのか？（展開）\nそれによって全体のペースはどうなるのか？（ペース）\nハイペースなら、どの馬が最後に脚を使えるのか？（上がり）\n\nこれら...",
-        "category": "開発",
-        "rss_category": "",
-        "image_url": ""
-      },
-      {
         "title": "AIへの指示を16パターンに分類したら記事がブレなくなった",
         "url": "https://zenn.dev/yoshiki_ai/articles/article-template-16-patterns",
         "site": "Zenn(Python)",
@@ -646,16 +706,6 @@
         "site": "Zenn(Python)",
         "published": "2026-03-08T03:00:07Z",
         "description": "構成\narticle_generator_html_v2.py\n  ↓ 記事タイトル・本文を渡す\neyecatch_generator.py\n  ├── Step 1: Gemini API → デザイン設定を決定\n  ├── Step 2: Imagen 3 → 背景画像を生成\n  ├── Step 3: Pillow → タイトルテキストを合成\n  └── Step 4: WordPress ...",
-        "category": "開発",
-        "rss_category": "",
-        "image_url": ""
-      },
-      {
-        "title": "金融AIでモデルアンサンブルを使う理由",
-        "url": "https://zenn.dev/sigma_lab/articles/aitrader-ai-trader-log-05-ens-20260304",
-        "site": "Zenn(Python)",
-        "published": "2026-03-08T01:05:37Z",
-        "description": "はじめに\n金融時系列は「最も予測が難しいデータ」の1つです。ノイズが多く、非定常で、相関が頻繁に崩れるため、単一指標や単純なモデルでは安定した予測が難しいという課題があります。特に、市場環境の変化に単一モデルが過剰適応してしまい、ロバスト性が損なわれるリスクは常に存在します。\nこの記事では、そのような課題に対し、金融AIでモデルアンサンブルを使う理由について、具体的な設計と実装を紹介します。複数の...",
         "category": "開発",
         "rss_category": "",
         "image_url": ""
@@ -686,16 +736,6 @@
         "site": "Zenn(Python)",
         "published": "2026-03-07T22:17:47Z",
         "description": "GeminiでレシートOCRしてセルフメディケーション税制を自動集計する\nセルフメディケーション税制を使って確定申告をする場合、\n対象商品の購入額を集計し、店舗ごとに整理して入力する必要があります。\nしかし実際には次のような問題があります。\n\nレシートが大量で手入力がつらい\n食品と医薬品が混ざっている\n同じレシートを読み込んでしまう可能性\n店舗ごとの合計金額を出したい\n\nそこで\nGemini + ...",
-        "category": "開発",
-        "rss_category": "",
-        "image_url": ""
-      },
-      {
-        "title": "ディープラーニングの異常検知ライブラリ「Anomalib v2.2.0」の環境構築でハマった話",
-        "url": "https://zenn.dev/asukuro/articles/781ebda976f6db",
-        "site": "Zenn(Python)",
-        "published": "2026-03-07T22:09:22Z",
-        "description": "はじめに\n監視カメラ画像の異常検知処理の実装に、軽量なディープラーニングアルゴリズムを使おうと、Anomalib を動かそうとしたら、やたらエラーがでたので、その内容と解決策を共有しつつ、環境構築の手順、簡単なサンプルコード、実行結果を紹介したいと思います。\n\n 1. Anomalib って？\nAnomalibは、Intelが開発を主導している、オープンソースのディープラーニングアルゴリズムのうち...",
         "category": "開発",
         "rss_category": "",
         "image_url": ""
