@@ -1,9 +1,49 @@
 {
   "site": "Zenn(Python)",
-  "last_updated": "2026-03-09T02:35:00.092846",
-  "total_articles": 2807,
+  "last_updated": "2026-03-09T04:31:56.457478",
+  "total_articles": 2813,
   "articles_by_date": {
     "本日": [
+      {
+        "title": "大学教員が挑んだAI-TAボット構築記：PDF×TeX二刀流と5重の防壁",
+        "url": "https://zenn.dev/kase_lab/articles/e3e5ba68605ff4",
+        "site": "Zenn(Python)",
+        "published": "2026-03-09T01:44:49Z",
+        "description": "はじめに：教育現場のリアルな課題と，非エンジニアの決意\n!\n【前提と予防線】\n筆者の本職は理論宇宙物理学の研究者（大学教員）であり，ソフトウェア工学やインフラ構築の専門家ではありません．本記事のコードやアーキテクチャには，プロのエンジニアから見れば洗練されていない部分が多数含まれているかと思います．\nしかし，「LMS（Moodle）の制約」「限られた研究・教育費」，そして「優秀すぎる学生からの容赦...",
+        "category": "開発",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "「反省（Reflexion）」するAIライターを実装したが、査読担当がガチすぎて再び限界を迎えた",
+        "url": "https://zenn.dev/lluminai_tech/articles/5d13048e323bb5",
+        "site": "Zenn(Python)",
+        "published": "2026-03-09T01:34:01Z",
+        "description": "はじめに\nルミナイR&amp;Dチームの宮脇彰梧です。\n現在はマルチモーダルAIの研究を行う大学院生として、生成AIやAIエージェントの技術を実践的に探求しています。\n\n\n前回のあらすじ：RAGとAgentで記事を書かせたら、査読担当（Reviewer）が厳しすぎて、執筆担当（Writer）が思考停止で修正を繰り返し、無限ループして爆発しました。\n\nhttps://zenn.dev/llumina...",
+        "category": "開発",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "上場企業のWebサイトURLを収集した話 – ◆30代 はじめてのスクレイピング◆",
+        "url": "https://zenn.dev/ext0mmy/articles/42a5d2700b8bae",
+        "site": "Zenn(Python)",
+        "published": "2026-03-08T23:30:01Z",
+        "description": "はじめに\n前回の記事で、上場企業のWebサイトURLを収集する必要がありました。\nしかし私、スクレイピングは初体験です。\nだって、GETだけならまだしも、よほどの動機がないとHTML解析なんて面倒じゃないですか。\nそうやって避けてきたツケが回ってきましたが、時代はAIコーディング。\nClaudeにやさしくリードしてもらいながら実装しました。\nこの記事ではそのごく一部を紹介します。ほぼ自分用の備忘録...",
+        "category": "開発",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "2日で10,000PVのサイトをVercelからCloudflare Pagesへ移行した全記録（商用利用対策）",
+        "url": "https://zenn.dev/codaccu/articles/7cb7f372129161",
+        "site": "Zenn(Python)",
+        "published": "2026-03-08T22:30:02Z",
+        "description": "はじめに\n個人開発していた書籍情報共有サービス「Engineer's Book Hub」が形になってきた際、直面したのが Vercelの商用利用制限（Non-Commercial Use Policy） です。将来的なマネタイズを視野に入れると、ホスティング先の変更は避けて通れない課題でした。\nそこで今回、Next.jsをCloudflare Pagesで動かすためのアダプターである OpenNe...",
+        "category": "開発",
+        "rss_category": "",
+        "image_url": ""
+      },
       {
         "title": "AutoGen × GraphRAG で類似レポート検索を試してみた",
         "url": "https://zenn.dev/secondselection/articles/autogen_graphrag",
@@ -137,21 +177,21 @@
         "image_url": ""
       },
       {
-        "title": "AIへの指示を16パターンに分類したら記事がブレなくなった",
-        "url": "https://zenn.dev/yoshiki_ai/articles/article-template-16-patterns",
-        "site": "Zenn(Python)",
-        "published": "2026-03-08T03:00:07Z",
-        "description": "問題\nGemini API で記事を量産していると、テーマが違うのに全記事が同じ構成になる現象が起きた。\n# どのテーマでも同じ構成になっていた（問題のある状態）\nH2: ○○とは何か\nH2: ○○のメリット\nH2: ○○のデメリット\nH2: ○○の選び方\nH2: まとめ\nLLM は「汎用的な解説記事」の構成として最もよく学習しているこのパターンを選びやすい。\n\n 解決策：記事テンプレートシステム...",
-        "category": "開発",
-        "rss_category": "",
-        "image_url": ""
-      },
-      {
         "title": "Canvaを使わずアイキャッチを量産する — Imagen 3 + Pillow + WordPress API",
         "url": "https://zenn.dev/yoshiki_ai/articles/eyecatch-auto-generation-pipeline",
         "site": "Zenn(Python)",
         "published": "2026-03-08T03:00:07Z",
         "description": "構成\narticle_generator_html_v2.py\n  ↓ 記事タイトル・本文を渡す\neyecatch_generator.py\n  ├── Step 1: Gemini API → デザイン設定を決定\n  ├── Step 2: Imagen 3 → 背景画像を生成\n  ├── Step 3: Pillow → タイトルテキストを合成\n  └── Step 4: WordPress ...",
+        "category": "開発",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "AIへの指示を16パターンに分類したら記事がブレなくなった",
+        "url": "https://zenn.dev/yoshiki_ai/articles/article-template-16-patterns",
+        "site": "Zenn(Python)",
+        "published": "2026-03-08T03:00:07Z",
+        "description": "問題\nGemini API で記事を量産していると、テーマが違うのに全記事が同じ構成になる現象が起きた。\n# どのテーマでも同じ構成になっていた（問題のある状態）\nH2: ○○とは何か\nH2: ○○のメリット\nH2: ○○のデメリット\nH2: ○○の選び方\nH2: まとめ\nLLM は「汎用的な解説記事」の構成として最もよく学習しているこのパターンを選びやすい。\n\n 解決策：記事テンプレートシステム...",
         "category": "開発",
         "rss_category": "",
         "image_url": ""
@@ -192,16 +232,6 @@
         "site": "Zenn(Python)",
         "published": "2026-03-07T22:17:47Z",
         "description": "GeminiでレシートOCRしてセルフメディケーション税制を自動集計する\nセルフメディケーション税制を使って確定申告をする場合、\n対象商品の購入額を集計し、店舗ごとに整理して入力する必要があります。\nしかし実際には次のような問題があります。\n\nレシートが大量で手入力がつらい\n食品と医薬品が混ざっている\n同じレシートを読み込んでしまう可能性\n店舗ごとの合計金額を出したい\n\nそこで\nGemini + ...",
-        "category": "開発",
-        "rss_category": "",
-        "image_url": ""
-      },
-      {
-        "title": "ディープラーニングの異常検知ライブラリ「Anomalib v2.2.0」の環境構築でハマった話",
-        "url": "https://zenn.dev/asukuro/articles/781ebda976f6db",
-        "site": "Zenn(Python)",
-        "published": "2026-03-07T22:09:22Z",
-        "description": "はじめに\n監視カメラ画像の異常検知処理の実装に、軽量なディープラーニングアルゴリズムを使おうと、Anomalib を動かそうとしたら、やたらエラーがでたので、その内容と解決策を共有しつつ、環境構築の手順、簡単なサンプルコード、実行結果を紹介したいと思います。\n\n 1. Anomalib って？\nAnomalibは、Intelが開発を主導している、オープンソースのディープラーニングアルゴリズムのうち...",
         "category": "開発",
         "rss_category": "",
         "image_url": ""
@@ -421,6 +451,46 @@
     ],
     "2026-03": [
       {
+        "title": "大学教員が挑んだAI-TAボット構築記：PDF×TeX二刀流と5重の防壁",
+        "url": "https://zenn.dev/kase_lab/articles/e3e5ba68605ff4",
+        "site": "Zenn(Python)",
+        "published": "2026-03-09T01:44:49Z",
+        "description": "はじめに：教育現場のリアルな課題と，非エンジニアの決意\n!\n【前提と予防線】\n筆者の本職は理論宇宙物理学の研究者（大学教員）であり，ソフトウェア工学やインフラ構築の専門家ではありません．本記事のコードやアーキテクチャには，プロのエンジニアから見れば洗練されていない部分が多数含まれているかと思います．\nしかし，「LMS（Moodle）の制約」「限られた研究・教育費」，そして「優秀すぎる学生からの容赦...",
+        "category": "開発",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "「反省（Reflexion）」するAIライターを実装したが、査読担当がガチすぎて再び限界を迎えた",
+        "url": "https://zenn.dev/lluminai_tech/articles/5d13048e323bb5",
+        "site": "Zenn(Python)",
+        "published": "2026-03-09T01:34:01Z",
+        "description": "はじめに\nルミナイR&amp;Dチームの宮脇彰梧です。\n現在はマルチモーダルAIの研究を行う大学院生として、生成AIやAIエージェントの技術を実践的に探求しています。\n\n\n前回のあらすじ：RAGとAgentで記事を書かせたら、査読担当（Reviewer）が厳しすぎて、執筆担当（Writer）が思考停止で修正を繰り返し、無限ループして爆発しました。\n\nhttps://zenn.dev/llumina...",
+        "category": "開発",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "上場企業のWebサイトURLを収集した話 – ◆30代 はじめてのスクレイピング◆",
+        "url": "https://zenn.dev/ext0mmy/articles/42a5d2700b8bae",
+        "site": "Zenn(Python)",
+        "published": "2026-03-08T23:30:01Z",
+        "description": "はじめに\n前回の記事で、上場企業のWebサイトURLを収集する必要がありました。\nしかし私、スクレイピングは初体験です。\nだって、GETだけならまだしも、よほどの動機がないとHTML解析なんて面倒じゃないですか。\nそうやって避けてきたツケが回ってきましたが、時代はAIコーディング。\nClaudeにやさしくリードしてもらいながら実装しました。\nこの記事ではそのごく一部を紹介します。ほぼ自分用の備忘録...",
+        "category": "開発",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "2日で10,000PVのサイトをVercelからCloudflare Pagesへ移行した全記録（商用利用対策）",
+        "url": "https://zenn.dev/codaccu/articles/7cb7f372129161",
+        "site": "Zenn(Python)",
+        "published": "2026-03-08T22:30:02Z",
+        "description": "はじめに\n個人開発していた書籍情報共有サービス「Engineer's Book Hub」が形になってきた際、直面したのが Vercelの商用利用制限（Non-Commercial Use Policy） です。将来的なマネタイズを視野に入れると、ホスティング先の変更は避けて通れない課題でした。\nそこで今回、Next.jsをCloudflare Pagesで動かすためのアダプターである OpenNe...",
+        "category": "開発",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
         "title": "AutoGen × GraphRAG で類似レポート検索を試してみた",
         "url": "https://zenn.dev/secondselection/articles/autogen_graphrag",
         "site": "Zenn(Python)",
@@ -551,21 +621,21 @@
         "image_url": ""
       },
       {
-        "title": "AIへの指示を16パターンに分類したら記事がブレなくなった",
-        "url": "https://zenn.dev/yoshiki_ai/articles/article-template-16-patterns",
-        "site": "Zenn(Python)",
-        "published": "2026-03-08T03:00:07Z",
-        "description": "問題\nGemini API で記事を量産していると、テーマが違うのに全記事が同じ構成になる現象が起きた。\n# どのテーマでも同じ構成になっていた（問題のある状態）\nH2: ○○とは何か\nH2: ○○のメリット\nH2: ○○のデメリット\nH2: ○○の選び方\nH2: まとめ\nLLM は「汎用的な解説記事」の構成として最もよく学習しているこのパターンを選びやすい。\n\n 解決策：記事テンプレートシステム...",
-        "category": "開発",
-        "rss_category": "",
-        "image_url": ""
-      },
-      {
         "title": "Canvaを使わずアイキャッチを量産する — Imagen 3 + Pillow + WordPress API",
         "url": "https://zenn.dev/yoshiki_ai/articles/eyecatch-auto-generation-pipeline",
         "site": "Zenn(Python)",
         "published": "2026-03-08T03:00:07Z",
         "description": "構成\narticle_generator_html_v2.py\n  ↓ 記事タイトル・本文を渡す\neyecatch_generator.py\n  ├── Step 1: Gemini API → デザイン設定を決定\n  ├── Step 2: Imagen 3 → 背景画像を生成\n  ├── Step 3: Pillow → タイトルテキストを合成\n  └── Step 4: WordPress ...",
+        "category": "開発",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "AIへの指示を16パターンに分類したら記事がブレなくなった",
+        "url": "https://zenn.dev/yoshiki_ai/articles/article-template-16-patterns",
+        "site": "Zenn(Python)",
+        "published": "2026-03-08T03:00:07Z",
+        "description": "問題\nGemini API で記事を量産していると、テーマが違うのに全記事が同じ構成になる現象が起きた。\n# どのテーマでも同じ構成になっていた（問題のある状態）\nH2: ○○とは何か\nH2: ○○のメリット\nH2: ○○のデメリット\nH2: ○○の選び方\nH2: まとめ\nLLM は「汎用的な解説記事」の構成として最もよく学習しているこのパターンを選びやすい。\n\n 解決策：記事テンプレートシステム...",
         "category": "開発",
         "rss_category": "",
         "image_url": ""
@@ -606,16 +676,6 @@
         "site": "Zenn(Python)",
         "published": "2026-03-07T22:17:47Z",
         "description": "GeminiでレシートOCRしてセルフメディケーション税制を自動集計する\nセルフメディケーション税制を使って確定申告をする場合、\n対象商品の購入額を集計し、店舗ごとに整理して入力する必要があります。\nしかし実際には次のような問題があります。\n\nレシートが大量で手入力がつらい\n食品と医薬品が混ざっている\n同じレシートを読み込んでしまう可能性\n店舗ごとの合計金額を出したい\n\nそこで\nGemini + ...",
-        "category": "開発",
-        "rss_category": "",
-        "image_url": ""
-      },
-      {
-        "title": "ディープラーニングの異常検知ライブラリ「Anomalib v2.2.0」の環境構築でハマった話",
-        "url": "https://zenn.dev/asukuro/articles/781ebda976f6db",
-        "site": "Zenn(Python)",
-        "published": "2026-03-07T22:09:22Z",
-        "description": "はじめに\n監視カメラ画像の異常検知処理の実装に、軽量なディープラーニングアルゴリズムを使おうと、Anomalib を動かそうとしたら、やたらエラーがでたので、その内容と解決策を共有しつつ、環境構築の手順、簡単なサンプルコード、実行結果を紹介したいと思います。\n\n 1. Anomalib って？\nAnomalibは、Intelが開発を主導している、オープンソースのディープラーニングアルゴリズムのうち...",
         "category": "開発",
         "rss_category": "",
         "image_url": ""
