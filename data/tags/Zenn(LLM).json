@@ -1,8 +1,120 @@
 {
   "site": "Zenn(LLM)",
-  "last_updated": "2026-03-10T02:37:51.946280",
-  "total_articles": 2176,
+  "last_updated": "2026-03-10T04:23:54.629668",
+  "total_articles": 2192,
   "articles_by_date": {
+    "本日": [
+      {
+        "title": "Code review as Attention",
+        "url": "https://zenn.dev/hmarui66/articles/038c7b856c2445",
+        "site": "Zenn(LLM)",
+        "published": "2026-03-10T02:59:33Z",
+        "description": "AIコーディングの台頭によって、ソフトウェアエンジニア界隈で「レビュープロセスのあり方」が改めて議論の的になっています。そんな流れの中で、ふと、ソフトウェア開発におけるレビューと、LLMの注意ヘッド(Attention Head)の役割が、似ているのではないかという考えに至りました。\n私は最近オライリーの『直感 LLM』を読んだ程度の、LLMの仕組みの概念を掴み始めたくらいの入門者です。なので、以...",
+        "category": "AI・技術",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "LLMのトークン節約フォーマットTOONを調べてみた ― 効果的なケース・微妙なケース",
+        "url": "https://zenn.dev/peoplex_blog/articles/1f50da32438eb6",
+        "site": "Zenn(LLM)",
+        "published": "2026-03-10T02:34:05Z",
+        "description": "はじめに\nLLMを使うにあたって、「JSONよりトークン効率の良いTOONというフォーマットがあるらしい」という話を耳にして、業務に活かせるか調べてみました。\nLLMを使う上で、トークン数はコストや精度に影響する要素です。もしフォーマットを変えるだけでトークンを削減でき、さらに推論精度まで上がるのであれば取り入れてみたいところです。\n本記事では、TOONフォーマットについて調べた内容と、実際にプロ...",
+        "category": "AI・技術",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "検索結果をメモリに記憶してRAGを高速化する手法",
+        "url": "https://zenn.dev/knowledgesense/articles/91ea622c6526e4",
+        "site": "Zenn(LLM)",
+        "published": "2026-03-10T01:50:04Z",
+        "description": "導入\nこんにちは、株式会社ナレッジセンスの須藤英寿です。\n今回は、RAGの検索の結果をメモリに蓄積していき、次以降の検索を高速かつ、高精度に実現するための手法「GAM-RAG」について紹介します。\nhttps://arxiv.org/pdf/2603.01783\n\n\n サマリー\nAgentとRAGを組み合わせて、検索を繰り返すことで精度高く関連するドキュメントを見つける手法が、コーディングエージェ...",
+        "category": "AI・技術",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "LLM-as-a-Judgeの信頼性を観察する",
+        "url": "https://zenn.dev/ka_kan/articles/bc363052468dda",
+        "site": "Zenn(LLM)",
+        "published": "2026-03-09T23:54:40Z",
+        "description": "はじめに\nRAGでLLM-as-a-Judgeをもとに自動評価をしていると、同じ入力を同じモデルに何度投げてもスコアは本当に安定するのか、モデルを変えたり、プロンプトを少し修正するとどうなるのか？が気になりました。\n今回は、先行記事のRAGノイズ耐性実験の評価パイプラインを題材に、これらを3つの観点で検証してみました。\n\n再現性: 同一モデル・同一プロンプトで10回繰り返したときのばらつき\nモデル...",
+        "category": "AI・技術",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "Claude CodeとCodexは「何回目か」は追えるが、「入り混じった順番」になると迷いやすい",
+        "url": "https://zenn.dev/caphtech/articles/paired-world-temporal-reasoning",
+        "site": "Zenn(LLM)",
+        "published": "2026-03-09T23:43:18Z",
+        "description": "はじめに\nClaude Code と Codex に順番問題を解かせると、最初はかなり賢く見えます。\nA の2回目の次は何か みたいな問題なら、どちらもよく当たるからです。ところが、A と X の出方がどう入り混じったかまで必要になると、正答率が急に落ちます。\n今回やったのは、その境目を見るための小さな実験です。小さな研究プロトタイプ RSM-0 を使って、「順番を理解しているように見える正答」と...",
+        "category": "AI・技術",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "LLM を制御するハーネスの初歩",
+        "url": "https://zenn.dev/7shi/articles/20260310-llm-harness",
+        "site": "Zenn(LLM)",
+        "published": "2026-03-09T18:20:41Z",
+        "description": "本記事では、いわゆる「AI コーディングエージェント」の仕組みを解剖します。単なる「チャット」がどのようにして「一連の作業の自動実行」へと変わるのか、その背後にあるメカニズムを探ります。\nOllama を対象とした学習用の実装を使用します。\n\ns02_tool_use.py\n\n!\n本記事は Gemini CLI の生成結果をベースに編集しました。\n\n\n コーディングエージェントとハーネス\nユーザー...",
+        "category": "AI・技術",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "LLMの振る舞いを決定論的に制御する『律環公理』と構造診断フレームワーク」",
+        "url": "https://zenn.dev/tokuni/articles/4766a439a97efd",
+        "site": "Zenn(LLM)",
+        "published": "2026-03-09T15:40:54Z",
+        "description": "律環公理（Nomological Ring Axioms）と\n\n 内包性動力学エンジン（Intensional Dynamics Engine）\n\n ─ 構造閾値による状態遷移の記述 ─\n\n著者：M-Tokuni\nNRA-IDE Project\n（日本語原文）\n\n\n\n 要旨\n多くの科学理論は距離、時間、速度などの測度を基礎として現象を記述してきた。これらの枠組みは連続変化を扱ううえで極めて有効であ...",
+        "category": "AI・技術",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "AIエージェントもCoTもマルチモーダルも、結局「次トークン予測」の応用だった",
+        "url": "https://zenn.dev/kotakotahiro/articles/70fbda480e0ea2",
+        "site": "Zenn(LLM)",
+        "published": "2026-03-09T15:26:49Z",
+        "description": "ChatGPTは「考えて」いないし、あなたの質問を「理解」もしていません。\nえ？そうなの？\nそれでもコードを書いて、設計レビューまでしてくれますよ？\n一体どうなっているのでしょうか。\n\n仕様書も読んでいないはずなのに、仕様を要約してくる\nさっきまでよく知らなかった技術スタックについて、最初から詳しかったような顔で語り始める\nなのに、変なところで堂々と嘘をついたりもする\n\nこの「賢いようで、よくわか...",
+        "category": "AI・技術",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "LMCache v0.3.15 リリースノート解説",
+        "url": "https://zenn.dev/tosshi/articles/e2f8f45e6fdc21",
+        "site": "Zenn(LLM)",
+        "published": "2026-03-09T15:23:48Z",
+        "description": "はじめに\n!\n記事の目的: この記事では、LMCache v0.3.15 の主要なアップデートを深掘りし、Prefill/Decode Disaggregated Inference アーキテクチャを支える技術的改善点を理解します。\n\nLLM 推論の高速化において、KV キャッシュの効率的な管理は極めて重要です。本記事では、LMCache v0.3.15 の主要なアップデートを、深掘りしながら初歩...",
+        "category": "AI・技術",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "OpenAI GPT-5.4が登場：100万トークンコンテキストとネイティブコンピュータ操作でエージェント時代が本格化",
+        "url": "https://zenn.dev/yu_ga/articles/2026-03-10-gpt-5-4-release",
+        "site": "Zenn(LLM)",
+        "published": "2026-03-09T15:19:28Z",
+        "description": "OpenAI GPT-5.4が登場：100万トークンコンテキストとネイティブコンピュータ操作でエージェント時代が本格化\n\n 📌 3行でわかるこの記事\n\nOpenAIがGPT-5.4をリリース、最大100万トークンのコンテキストウィンドウをサポート\nネイティブコンピュータ操作能力で、エージェントが複数アプリを横断するワークフローを実現\n知識業務ベンチマークGDPvalで83.0%を達成、人間の専門家...",
+        "category": "AI・技術",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "なぜ今、GTMエンジニアは価値を持つのか — 「エンジニアが売上を設計する時代」",
+        "url": "https://zenn.dev/rrr068/articles/b1e2f6b5597c53",
+        "site": "Zenn(LLM)",
+        "published": "2026-03-09T15:00:02Z",
+        "description": "はじめに\n最近、GTMエンジニアを耳にすることはありませんか？気になったので、調べてみました。\nお手隙に読んでいただけたらと思います。\n\n GTMエンジニアとは何か？\nGTMエンジニアとは、「ツール、データ、AIを組み合わせて、再現性のある成長の仕組み（収益エンジン）を構築するエンジニア」を指します。\n従来の組織では、マーケティング、営業（SDR/AE）、カスタマーサクセス（CS）といった部門がそ...",
+        "category": "AI・技術",
+        "rss_category": "",
+        "image_url": ""
+      }
+    ],
     "昨日": [
       {
         "title": "Claude Code には 5 分以内に返事しよう",
@@ -125,16 +237,6 @@
         "image_url": ""
       },
       {
-        "title": "OpenAI SDK で Amazon Bedrock を使う — Mantle の実動作モデルを調べた",
-        "url": "https://zenn.dev/akring/articles/5d0a026a8ede07",
-        "site": "Zenn(LLM)",
-        "published": "2026-03-08T23:00:02Z",
-        "description": "調査日: 2026-03-07\n\n\n\n はじめに\n2026年2月26日、AWS は Amazon Bedrock の Mantle 推論エンジン における OpenAI 互換 Projects API の一般提供をアナウンスしました。\nMantle は Amazon Bedrock の新しい分散推論ランタイムであり、Bedrock 上でホストされるモデルを OpenAI 互換の Chat Comp...",
-        "category": "AI・技術",
-        "rss_category": "",
-        "image_url": ""
-      },
-      {
         "title": "Open WebUIをVPSでセルフホストする方法【ローカルLLMをChatGPT風UIで使う】",
         "url": "https://zenn.dev/sandquince/articles/open-webui-selfhost",
         "site": "Zenn(LLM)",
@@ -150,26 +252,6 @@
         "site": "Zenn(LLM)",
         "published": "2026-03-08T22:00:05Z",
         "description": "はじめに\n自作の議事録AIチャットのRAGパイプラインで、検索結果にどのくらいのノイズ（無関係なチャンク）が混ざると回答の精度が悪くなるのか、が気になりました。\nノイズ比率を0%〜100%の7段階に推移させて、合計420条件でLLM評価を回してみました。\n!\nあくまで個人の実験なので、参考程度にお願いします。\n\n\n 実験\n\n タスク\n自作の議事録AIチャットの検索処理を使って実験します。\n実データ...",
-        "category": "AI・技術",
-        "rss_category": "",
-        "image_url": ""
-      },
-      {
-        "title": "AutoGen × GraphRAG で類似レポート検索を試してみた",
-        "url": "https://zenn.dev/secondselection/articles/autogen_graphrag",
-        "site": "Zenn(LLM)",
-        "published": "2026-03-08T21:00:01Z",
-        "description": "はじめに\n以下のリポジトリを参考に、AutoGenとGraphRAGを組み合わせた類似レポート検索を\n試しました。レポート検索エージェントを作成し、ツールでのレポート検索を可能にしました。\n結果として、キーワードが一致しない曖昧なクエリでも関係性をたどって類似文書を\n見つけられることが確認できました。\n同様の仕組みに興味がある方の参考になれば幸いです。\nhttps://github.com/kar...",
-        "category": "AI・技術",
-        "rss_category": "",
-        "image_url": ""
-      },
-      {
-        "title": "Portkey AIゲートウェイ実装Deep Dive：条件付きルーティングとコスト最適化戦略",
-        "url": "https://zenn.dev/0h_n0/articles/6c55b2409143b2",
-        "site": "Zenn(LLM)",
-        "published": "2026-03-08T16:21:52Z",
-        "description": "Portkey AIゲートウェイ実装Deep Dive：条件付きルーティングとコスト最適化戦略\n\n この記事でわかること\n\nPortkey AIゲートウェイの条件付きルーティングを使い、ユーザー属性やタスク種別でLLMプロバイダーを動的に振り分ける実装方法\n重み付きロードバランシングとフォールバックチェーンを組み合わせた高可用性アーキテクチャの構築手順\nサーキットブレーカーとカナリアテストを活用し...",
         "category": "AI・技術",
         "rss_category": "",
         "image_url": ""
@@ -329,6 +411,116 @@
     ],
     "2026-03": [
       {
+        "title": "Code review as Attention",
+        "url": "https://zenn.dev/hmarui66/articles/038c7b856c2445",
+        "site": "Zenn(LLM)",
+        "published": "2026-03-10T02:59:33Z",
+        "description": "AIコーディングの台頭によって、ソフトウェアエンジニア界隈で「レビュープロセスのあり方」が改めて議論の的になっています。そんな流れの中で、ふと、ソフトウェア開発におけるレビューと、LLMの注意ヘッド(Attention Head)の役割が、似ているのではないかという考えに至りました。\n私は最近オライリーの『直感 LLM』を読んだ程度の、LLMの仕組みの概念を掴み始めたくらいの入門者です。なので、以...",
+        "category": "AI・技術",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "LLMのトークン節約フォーマットTOONを調べてみた ― 効果的なケース・微妙なケース",
+        "url": "https://zenn.dev/peoplex_blog/articles/1f50da32438eb6",
+        "site": "Zenn(LLM)",
+        "published": "2026-03-10T02:34:05Z",
+        "description": "はじめに\nLLMを使うにあたって、「JSONよりトークン効率の良いTOONというフォーマットがあるらしい」という話を耳にして、業務に活かせるか調べてみました。\nLLMを使う上で、トークン数はコストや精度に影響する要素です。もしフォーマットを変えるだけでトークンを削減でき、さらに推論精度まで上がるのであれば取り入れてみたいところです。\n本記事では、TOONフォーマットについて調べた内容と、実際にプロ...",
+        "category": "AI・技術",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "検索結果をメモリに記憶してRAGを高速化する手法",
+        "url": "https://zenn.dev/knowledgesense/articles/91ea622c6526e4",
+        "site": "Zenn(LLM)",
+        "published": "2026-03-10T01:50:04Z",
+        "description": "導入\nこんにちは、株式会社ナレッジセンスの須藤英寿です。\n今回は、RAGの検索の結果をメモリに蓄積していき、次以降の検索を高速かつ、高精度に実現するための手法「GAM-RAG」について紹介します。\nhttps://arxiv.org/pdf/2603.01783\n\n\n サマリー\nAgentとRAGを組み合わせて、検索を繰り返すことで精度高く関連するドキュメントを見つける手法が、コーディングエージェ...",
+        "category": "AI・技術",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "LLM-as-a-Judgeの信頼性を観察する",
+        "url": "https://zenn.dev/ka_kan/articles/bc363052468dda",
+        "site": "Zenn(LLM)",
+        "published": "2026-03-09T23:54:40Z",
+        "description": "はじめに\nRAGでLLM-as-a-Judgeをもとに自動評価をしていると、同じ入力を同じモデルに何度投げてもスコアは本当に安定するのか、モデルを変えたり、プロンプトを少し修正するとどうなるのか？が気になりました。\n今回は、先行記事のRAGノイズ耐性実験の評価パイプラインを題材に、これらを3つの観点で検証してみました。\n\n再現性: 同一モデル・同一プロンプトで10回繰り返したときのばらつき\nモデル...",
+        "category": "AI・技術",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "Claude CodeとCodexは「何回目か」は追えるが、「入り混じった順番」になると迷いやすい",
+        "url": "https://zenn.dev/caphtech/articles/paired-world-temporal-reasoning",
+        "site": "Zenn(LLM)",
+        "published": "2026-03-09T23:43:18Z",
+        "description": "はじめに\nClaude Code と Codex に順番問題を解かせると、最初はかなり賢く見えます。\nA の2回目の次は何か みたいな問題なら、どちらもよく当たるからです。ところが、A と X の出方がどう入り混じったかまで必要になると、正答率が急に落ちます。\n今回やったのは、その境目を見るための小さな実験です。小さな研究プロトタイプ RSM-0 を使って、「順番を理解しているように見える正答」と...",
+        "category": "AI・技術",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "LLM を制御するハーネスの初歩",
+        "url": "https://zenn.dev/7shi/articles/20260310-llm-harness",
+        "site": "Zenn(LLM)",
+        "published": "2026-03-09T18:20:41Z",
+        "description": "本記事では、いわゆる「AI コーディングエージェント」の仕組みを解剖します。単なる「チャット」がどのようにして「一連の作業の自動実行」へと変わるのか、その背後にあるメカニズムを探ります。\nOllama を対象とした学習用の実装を使用します。\n\ns02_tool_use.py\n\n!\n本記事は Gemini CLI の生成結果をベースに編集しました。\n\n\n コーディングエージェントとハーネス\nユーザー...",
+        "category": "AI・技術",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "LLMの振る舞いを決定論的に制御する『律環公理』と構造診断フレームワーク」",
+        "url": "https://zenn.dev/tokuni/articles/4766a439a97efd",
+        "site": "Zenn(LLM)",
+        "published": "2026-03-09T15:40:54Z",
+        "description": "律環公理（Nomological Ring Axioms）と\n\n 内包性動力学エンジン（Intensional Dynamics Engine）\n\n ─ 構造閾値による状態遷移の記述 ─\n\n著者：M-Tokuni\nNRA-IDE Project\n（日本語原文）\n\n\n\n 要旨\n多くの科学理論は距離、時間、速度などの測度を基礎として現象を記述してきた。これらの枠組みは連続変化を扱ううえで極めて有効であ...",
+        "category": "AI・技術",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "AIエージェントもCoTもマルチモーダルも、結局「次トークン予測」の応用だった",
+        "url": "https://zenn.dev/kotakotahiro/articles/70fbda480e0ea2",
+        "site": "Zenn(LLM)",
+        "published": "2026-03-09T15:26:49Z",
+        "description": "ChatGPTは「考えて」いないし、あなたの質問を「理解」もしていません。\nえ？そうなの？\nそれでもコードを書いて、設計レビューまでしてくれますよ？\n一体どうなっているのでしょうか。\n\n仕様書も読んでいないはずなのに、仕様を要約してくる\nさっきまでよく知らなかった技術スタックについて、最初から詳しかったような顔で語り始める\nなのに、変なところで堂々と嘘をついたりもする\n\nこの「賢いようで、よくわか...",
+        "category": "AI・技術",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "LMCache v0.3.15 リリースノート解説",
+        "url": "https://zenn.dev/tosshi/articles/e2f8f45e6fdc21",
+        "site": "Zenn(LLM)",
+        "published": "2026-03-09T15:23:48Z",
+        "description": "はじめに\n!\n記事の目的: この記事では、LMCache v0.3.15 の主要なアップデートを深掘りし、Prefill/Decode Disaggregated Inference アーキテクチャを支える技術的改善点を理解します。\n\nLLM 推論の高速化において、KV キャッシュの効率的な管理は極めて重要です。本記事では、LMCache v0.3.15 の主要なアップデートを、深掘りしながら初歩...",
+        "category": "AI・技術",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "OpenAI GPT-5.4が登場：100万トークンコンテキストとネイティブコンピュータ操作でエージェント時代が本格化",
+        "url": "https://zenn.dev/yu_ga/articles/2026-03-10-gpt-5-4-release",
+        "site": "Zenn(LLM)",
+        "published": "2026-03-09T15:19:28Z",
+        "description": "OpenAI GPT-5.4が登場：100万トークンコンテキストとネイティブコンピュータ操作でエージェント時代が本格化\n\n 📌 3行でわかるこの記事\n\nOpenAIがGPT-5.4をリリース、最大100万トークンのコンテキストウィンドウをサポート\nネイティブコンピュータ操作能力で、エージェントが複数アプリを横断するワークフローを実現\n知識業務ベンチマークGDPvalで83.0%を達成、人間の専門家...",
+        "category": "AI・技術",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "なぜ今、GTMエンジニアは価値を持つのか — 「エンジニアが売上を設計する時代」",
+        "url": "https://zenn.dev/rrr068/articles/b1e2f6b5597c53",
+        "site": "Zenn(LLM)",
+        "published": "2026-03-09T15:00:02Z",
+        "description": "はじめに\n最近、GTMエンジニアを耳にすることはありませんか？気になったので、調べてみました。\nお手隙に読んでいただけたらと思います。\n\n GTMエンジニアとは何か？\nGTMエンジニアとは、「ツール、データ、AIを組み合わせて、再現性のある成長の仕組み（収益エンジン）を構築するエンジニア」を指します。\n従来の組織では、マーケティング、営業（SDR/AE）、カスタマーサクセス（CS）といった部門がそ...",
+        "category": "AI・技術",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
         "title": "Claude Code には 5 分以内に返事しよう",
         "url": "https://zenn.dev/keisukekarijuku/articles/e091d0c1548c30",
         "site": "Zenn(LLM)",
@@ -449,16 +641,6 @@
         "image_url": ""
       },
       {
-        "title": "OpenAI SDK で Amazon Bedrock を使う — Mantle の実動作モデルを調べた",
-        "url": "https://zenn.dev/akring/articles/5d0a026a8ede07",
-        "site": "Zenn(LLM)",
-        "published": "2026-03-08T23:00:02Z",
-        "description": "調査日: 2026-03-07\n\n\n\n はじめに\n2026年2月26日、AWS は Amazon Bedrock の Mantle 推論エンジン における OpenAI 互換 Projects API の一般提供をアナウンスしました。\nMantle は Amazon Bedrock の新しい分散推論ランタイムであり、Bedrock 上でホストされるモデルを OpenAI 互換の Chat Comp...",
-        "category": "AI・技術",
-        "rss_category": "",
-        "image_url": ""
-      },
-      {
         "title": "Open WebUIをVPSでセルフホストする方法【ローカルLLMをChatGPT風UIで使う】",
         "url": "https://zenn.dev/sandquince/articles/open-webui-selfhost",
         "site": "Zenn(LLM)",
@@ -474,26 +656,6 @@
         "site": "Zenn(LLM)",
         "published": "2026-03-08T22:00:05Z",
         "description": "はじめに\n自作の議事録AIチャットのRAGパイプラインで、検索結果にどのくらいのノイズ（無関係なチャンク）が混ざると回答の精度が悪くなるのか、が気になりました。\nノイズ比率を0%〜100%の7段階に推移させて、合計420条件でLLM評価を回してみました。\n!\nあくまで個人の実験なので、参考程度にお願いします。\n\n\n 実験\n\n タスク\n自作の議事録AIチャットの検索処理を使って実験します。\n実データ...",
-        "category": "AI・技術",
-        "rss_category": "",
-        "image_url": ""
-      },
-      {
-        "title": "AutoGen × GraphRAG で類似レポート検索を試してみた",
-        "url": "https://zenn.dev/secondselection/articles/autogen_graphrag",
-        "site": "Zenn(LLM)",
-        "published": "2026-03-08T21:00:01Z",
-        "description": "はじめに\n以下のリポジトリを参考に、AutoGenとGraphRAGを組み合わせた類似レポート検索を\n試しました。レポート検索エージェントを作成し、ツールでのレポート検索を可能にしました。\n結果として、キーワードが一致しない曖昧なクエリでも関係性をたどって類似文書を\n見つけられることが確認できました。\n同様の仕組みに興味がある方の参考になれば幸いです。\nhttps://github.com/kar...",
-        "category": "AI・技術",
-        "rss_category": "",
-        "image_url": ""
-      },
-      {
-        "title": "Portkey AIゲートウェイ実装Deep Dive：条件付きルーティングとコスト最適化戦略",
-        "url": "https://zenn.dev/0h_n0/articles/6c55b2409143b2",
-        "site": "Zenn(LLM)",
-        "published": "2026-03-08T16:21:52Z",
-        "description": "Portkey AIゲートウェイ実装Deep Dive：条件付きルーティングとコスト最適化戦略\n\n この記事でわかること\n\nPortkey AIゲートウェイの条件付きルーティングを使い、ユーザー属性やタスク種別でLLMプロバイダーを動的に振り分ける実装方法\n重み付きロードバランシングとフォールバックチェーンを組み合わせた高可用性アーキテクチャの構築手順\nサーキットブレーカーとカナリアテストを活用し...",
         "category": "AI・技術",
         "rss_category": "",
         "image_url": ""
