@@ -1,9 +1,139 @@
 {
   "site": "Zenn(Python)",
-  "last_updated": "2026-03-11T07:30:46.104907",
-  "total_articles": 2845,
+  "last_updated": "2026-03-11T08:04:13.193078",
+  "total_articles": 2867,
   "articles_by_date": {
     "本日": [
+      {
+        "title": "Kaggleの無料GPUを活用。大量の画像をReal-ESRGANで高速に高画質化する",
+        "url": "https://zenn.dev/juris_python/articles/09d266244665b3",
+        "site": "Zenn(Python)",
+        "published": "2026-03-11T07:09:54Z",
+        "description": "はじめに\nAIによる画像の超解像（Super Resolution）は、低解像度画像を高品質に復元する強力な技術です。\nしかし、数百〜数千枚の画像を処理しようとすると、ローカルPCでは処理時間やGPUメモリの制約に直面することがあります。\n例えば次のような用途です。\n\n\n機械学習のデータセット準備:\nAIの学習精度を上げるため、収集した低解像度データセットを一括で高品質化する前処理。\n\nゲーム開発...",
+        "category": "開発",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "【Python】音声を一括文字起こし！Whisper×Colabで1つのWordに集約する自動化スクリプト",
+        "url": "https://zenn.dev/kogawakaito/articles/speaking_transcription",
+        "site": "Zenn(Python)",
+        "published": "2026-03-11T06:58:00Z",
+        "description": "はじめに\n教育現場において、スピーキングテストやインタビューの文字起こしは避けて通れない「苦行」です。\nしかし、生徒の発話内容には、使用している語彙やポーズの長さなど、今後の指導に生かせるヒントはたくさん隠れています。\n前回の記事で、スピーキングテストのスコアごとの発話をコピペし、ボタンを押すだけで指導が必要な単語を識別してくれるシステムを紹介しました。\n本記事はその続きで、肝心の「文字起こし」を...",
+        "category": "開発",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "Pythonで作るClaudeエージェント実践入門",
+        "url": "https://zenn.dev/engeneers/books/python-claude-agent-vol1",
+        "site": "Zenn(Python)",
+        "published": "2026-03-11T06:05:17Z",
+        "description": "notecreator実装を題材に、ReAct・ツール設計・コスト管理を徹底解説",
+        "category": "開発",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "Cloud Run × gunicorn workers でレート制限が3.5倍貫通した話",
+        "url": "https://zenn.dev/edinetdb/articles/edinetdb-cloudrun-ratelimit",
+        "site": "Zenn(Python)",
+        "published": "2026-03-11T04:00:56Z",
+        "description": "本番のAPIサービスに日次1,000リクエストの上限を設けていました。ところがある日、1人のユーザーが3,546リクエストを叩いていることに気づきます。上限の3.5倍。レート制限のコードにバグはない。テストも通っている。なのに貫通している。\n原因は gunicorn の workers=2 でした。\n\n 構成\nPython（Flask）のAPIサーバーをCloud Runで動かしています。guni...",
+        "category": "開発",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "BigQueryのMAX()で日本語カラムを集約したら旧社名が返ってきた",
+        "url": "https://zenn.dev/edinetdb/articles/edinetdb-bq-max-japanese",
+        "site": "Zenn(Python)",
+        "published": "2026-03-11T04:00:55Z",
+        "description": "ある日、本番のダッシュボードに表示される企業名がおかしいことに気づきました。社名変更済みの企業なのに、旧社名が表示されている。しかも1社2社ではなく、157社。\n原因は MAX() でした。\n\n 何が起きたか\n金融データを扱うシステムで、企業の提出書類から最新の社名を取得する処理がありました。1つの企業が複数の書類を提出しているため、社名カラムを集約する必要があります。当初のSQLはこうでした。\n...",
+        "category": "開発",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "RAG + PageRank + ブラック・ショールズモデルで作る社労士試験AI学習アプリ【Python・Next.js・Supabase】",
+        "url": "https://zenn.dev/sasakisan/articles/0a0e1baf5cf28a",
+        "site": "Zenn(Python)",
+        "published": "2026-03-11T03:00:06Z",
+        "description": "はじめに\n社会保険労務士試験の学習を効率化したいという目的でAI学習アプリ「StudyFor-SR（スタディーフォー エスアール）」を開発しましたので、そのメインロジックについてここでお話しできればと思います。\n私自身が社労士試験の元受験経験者（過去に合格済み）で、受験生時代に感じた「悩み」と「非効率」を解決したいという思いから、このWebアプリを作りました。\n余談ではありますが、リリースしてから...",
+        "category": "開発",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "PythonでFFTを理解する ― NumPyで周波数スペクトルを可視化する",
+        "url": "https://zenn.dev/kta805/articles/bc57fe3146025b",
+        "site": "Zenn(Python)",
+        "published": "2026-03-11T02:21:52Z",
+        "description": "PythonでFFTを理解する ― NumPyで周波数スペクトルを可視化する\nデジタル信号処理（DSP）では、\n時間信号を周波数成分に分解する処理が非常に重要です。\nその代表的な手法が FFT（Fast Fourier Transform） です。\nこの記事では Python と NumPy を使って\n\nFFTとは何か\n周波数スペクトルの見方\n実際に信号を解析する\n\nを実験しながら理解します。\n\n...",
+        "category": "開発",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "確率的オウムと因果推論",
+        "url": "https://zenn.dev/makoto_shida/articles/e5fbbaca61cab8",
+        "site": "Zenn(Python)",
+        "published": "2026-03-11T02:01:01Z",
+        "description": "AIは「なぜ」を知らないー 確率的オウムと因果推論の深い溝\n\n確率的オウムと因果推論の深い溝\n「雨が降ったあと、地面が濡れる」\nこれは誰でも知っている。\nでも、もう少し踏み込んだ問いを立ててみよう。\n「地面が濡れているから、雨が降ったのか？」\n違う。順番が逆だ。\n雨が降ったことが原因で、地面が濡れたのが結果だ。\nこの「順番」と「方向性」を理解することが、因果推論の核心だ。\nそして、現在の多くのAI...",
+        "category": "開発",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "Chromeブックマークを毎日自動整理するPythonスクリプトを作った（WSL2 + cron）",
+        "url": "https://zenn.dev/754736277842632/articles/chrome-bookmark-auto-organizer",
+        "site": "Zenn(Python)",
+        "published": "2026-03-11T01:43:32Z",
+        "description": "TL;DR\nChromeのブックマークファイル（JSON）を直接読み書きして、ドメインベースの自動フォルダ分類・重複除去・トラッキングURL除去を行うPythonスクリプトを作りました。WSL2のcronで毎日自動実行し、全Chromeプロファイルに対応しています。\n\n なぜ作ったか\nブックマークが増えると「ブックマーク バー」や「その他のブックマーク」が散らかります。手動でフォルダ分けするのは面...",
+        "category": "開発",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "Twitter APIキー不要。AIのCLIでツイートを自動生成・投稿するツールを作った",
+        "url": "https://zenn.dev/kensuke_sam/articles/4aac09f26c2236",
+        "site": "Zenn(Python)",
+        "published": "2026-03-11T01:22:40Z",
+        "description": "TL;DR\n\nTwitter APIキーなしでツイートを自動生成・投稿できるCLIツールを作った\nGemini / Claude Code / Codex のいずれかのAI CLIがあれば動く\n記事URLを渡すだけでツイート案を5つ生成して選んで投稿できる\nOSS公開済み → Kensuke-sam/twitter-cli-bot\n\n\n\n\n 作った背景\nブログを書いた後、毎回X（Twitter）に...",
+        "category": "開発",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "python環境の構築手順",
+        "url": "https://zenn.dev/headwaters/articles/4fa9640e469ec3",
+        "site": "Zenn(Python)",
+        "published": "2026-03-11T00:20:55Z",
+        "description": "はじめに\n今回は人によって環境構築の手順が違うという点に注意しつつ、環境を構築していきます。既存の標準手順と最新ツールを用いた2パターンの手順を紹介します。\n\n 公式サイトから直接インストールする場合\nまずはインストールマネージャーからPythonを導入する手順を解説します。\n\n 1. Pythonのインストールマネージャーをダウンロード\n公式サイトのダウンロードボタンからインストールマネージャー...",
+        "category": "開発",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "tox続編: `tox.ini` 実践設定ガイド",
+        "url": "https://zenn.dev/se_te_bon/articles/a17b4ced2c3399",
+        "site": "Zenn(Python)",
+        "published": "2026-03-10T23:57:33Z",
+        "description": "はじめに\n前回の記事では、toxの概要と「まず動かしてみる！」を中心に紹介しました。\n今回は続編として、toxを使いこなす上で欠かせないtox.ini の設定項目についてまとめました。\n私自身、設定項目に何があるか、どういうことができるか、迷った経験があったので、この記事が少しでも参考になると嬉しいです！\n\n この記事で扱う範囲\ntox.ini の項目を、次の2つに分けて紹介します。\n\n\n[tox...",
+        "category": "開発",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "バイブコーディング消耗からの脱却：「スペックファーストAI開発」でOSSを作った実践記録 ― D-MemFS 開発戦記２",
+        "url": "https://zenn.dev/nightwalk/articles/5a8fc5de770995",
+        "site": "Zenn(Python)",
+        "published": "2026-03-10T22:50:05Z",
+        "description": "昨日 Qiita で公開した実装編の記事が、数時間で 350 views を超え、多くのストックをいただくなど、現場の悩みとしての関心の高さを実感しています。しかし、そのコードを生んだのは、AI との泥臭い「仕様」の壁打ちでした。\n\n\n 「バイブコーディング」の限界に、あなたは気づいているか\nAIにコードを書かせるのが当たり前になってきた。プロンプトを投げれば、それっぽいコードが返ってくる。動く。...",
+        "category": "開発",
+        "rss_category": "",
+        "image_url": ""
+      },
       {
         "title": "\"AIエージェントに決済させるSDKを作った——DID・JWT・ハッシュチェーンで認証・認可・監査を実装する\"",
         "url": "https://zenn.dev/cdad123/articles/90a89e3fabc4a5",
@@ -77,31 +207,11 @@
         "image_url": ""
       },
       {
-        "title": "【モデル編④】実験と分析の舞台裏：Jupyter Notebookと試行錯誤の記録",
-        "url": "https://zenn.dev/ricotiler/articles/keiba-ai-09-jupyter-experiment-workflow",
-        "site": "Zenn(Python)",
-        "published": "2026-03-10T12:12:00Z",
-        "description": "【モデル編④】実験と分析の舞台裏：Jupyter Notebookと試行錯誤の記録\n\n はじめに：AI開発の「実験室」\nここまで、データの加工やモデルの設計について解説してきましたが、これらのロジックはいきなり完成したわけではありません。\n数え切れないほどの「仮説」と「検証」の繰り返し（トライ＆エラー）の末に生まれたものです。\nこの試行錯誤のプロセスを支えているのが、Jupyter Noteboo...",
-        "category": "開発",
-        "rss_category": "",
-        "image_url": ""
-      },
-      {
         "title": "Claude Codeで自分好みの朝刊が届く仕組みを作った",
         "url": "https://zenn.dev/aoi_umigishi/articles/936073d8dd16e9",
         "site": "Zenn(Python)",
         "published": "2026-03-10T11:37:51Z",
         "description": "はじめに\nこんにちは、まっくすと申します。\n普段Flutter を使ったフリーランスのエンジニアとして働いています。\nエンジニアになって大事だなぁと感じるのは、\n言語や技術の最新情報を追いかける、ということです。\n特に昨今のAI技術の発展を追いかけることは、\n自分の仕事の生産性を上げることにつながるため、非常に重要だと考えます。\nただ、情報収集のために毎日複数のサイトを巡回するのは結構な手間です。...",
-        "category": "開発",
-        "rss_category": "",
-        "image_url": ""
-      },
-      {
-        "title": "PythonでMCPサーバーを自作してClaude Codeに接続する実践ガイド",
-        "url": "https://zenn.dev/biki/articles/mcp-python-server-claude-code-guide",
-        "site": "Zenn(Python)",
-        "published": "2026-03-10T10:56:55Z",
-        "description": "はじめに\nこの記事を読んで得られること：\n\n\nMCP（Model Context Protocol）の仕組みと、なぜ今エンジニアが注目すべきかを理解できる\n\nPythonでMCPサーバーを自作して、Claude Codeから使えるようになる\n\nstdioの罠など実際にハマったポイントを知って、スムーズに実装できる\n\n対象読者：\n\nPythonの基礎を知っている方\nClaude Codeを使ったこと...",
         "category": "開発",
         "rss_category": "",
         "image_url": ""
@@ -431,6 +541,136 @@
     ],
     "2026-03": [
       {
+        "title": "Kaggleの無料GPUを活用。大量の画像をReal-ESRGANで高速に高画質化する",
+        "url": "https://zenn.dev/juris_python/articles/09d266244665b3",
+        "site": "Zenn(Python)",
+        "published": "2026-03-11T07:09:54Z",
+        "description": "はじめに\nAIによる画像の超解像（Super Resolution）は、低解像度画像を高品質に復元する強力な技術です。\nしかし、数百〜数千枚の画像を処理しようとすると、ローカルPCでは処理時間やGPUメモリの制約に直面することがあります。\n例えば次のような用途です。\n\n\n機械学習のデータセット準備:\nAIの学習精度を上げるため、収集した低解像度データセットを一括で高品質化する前処理。\n\nゲーム開発...",
+        "category": "開発",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "【Python】音声を一括文字起こし！Whisper×Colabで1つのWordに集約する自動化スクリプト",
+        "url": "https://zenn.dev/kogawakaito/articles/speaking_transcription",
+        "site": "Zenn(Python)",
+        "published": "2026-03-11T06:58:00Z",
+        "description": "はじめに\n教育現場において、スピーキングテストやインタビューの文字起こしは避けて通れない「苦行」です。\nしかし、生徒の発話内容には、使用している語彙やポーズの長さなど、今後の指導に生かせるヒントはたくさん隠れています。\n前回の記事で、スピーキングテストのスコアごとの発話をコピペし、ボタンを押すだけで指導が必要な単語を識別してくれるシステムを紹介しました。\n本記事はその続きで、肝心の「文字起こし」を...",
+        "category": "開発",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "Pythonで作るClaudeエージェント実践入門",
+        "url": "https://zenn.dev/engeneers/books/python-claude-agent-vol1",
+        "site": "Zenn(Python)",
+        "published": "2026-03-11T06:05:17Z",
+        "description": "notecreator実装を題材に、ReAct・ツール設計・コスト管理を徹底解説",
+        "category": "開発",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "Cloud Run × gunicorn workers でレート制限が3.5倍貫通した話",
+        "url": "https://zenn.dev/edinetdb/articles/edinetdb-cloudrun-ratelimit",
+        "site": "Zenn(Python)",
+        "published": "2026-03-11T04:00:56Z",
+        "description": "本番のAPIサービスに日次1,000リクエストの上限を設けていました。ところがある日、1人のユーザーが3,546リクエストを叩いていることに気づきます。上限の3.5倍。レート制限のコードにバグはない。テストも通っている。なのに貫通している。\n原因は gunicorn の workers=2 でした。\n\n 構成\nPython（Flask）のAPIサーバーをCloud Runで動かしています。guni...",
+        "category": "開発",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "BigQueryのMAX()で日本語カラムを集約したら旧社名が返ってきた",
+        "url": "https://zenn.dev/edinetdb/articles/edinetdb-bq-max-japanese",
+        "site": "Zenn(Python)",
+        "published": "2026-03-11T04:00:55Z",
+        "description": "ある日、本番のダッシュボードに表示される企業名がおかしいことに気づきました。社名変更済みの企業なのに、旧社名が表示されている。しかも1社2社ではなく、157社。\n原因は MAX() でした。\n\n 何が起きたか\n金融データを扱うシステムで、企業の提出書類から最新の社名を取得する処理がありました。1つの企業が複数の書類を提出しているため、社名カラムを集約する必要があります。当初のSQLはこうでした。\n...",
+        "category": "開発",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "RAG + PageRank + ブラック・ショールズモデルで作る社労士試験AI学習アプリ【Python・Next.js・Supabase】",
+        "url": "https://zenn.dev/sasakisan/articles/0a0e1baf5cf28a",
+        "site": "Zenn(Python)",
+        "published": "2026-03-11T03:00:06Z",
+        "description": "はじめに\n社会保険労務士試験の学習を効率化したいという目的でAI学習アプリ「StudyFor-SR（スタディーフォー エスアール）」を開発しましたので、そのメインロジックについてここでお話しできればと思います。\n私自身が社労士試験の元受験経験者（過去に合格済み）で、受験生時代に感じた「悩み」と「非効率」を解決したいという思いから、このWebアプリを作りました。\n余談ではありますが、リリースしてから...",
+        "category": "開発",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "PythonでFFTを理解する ― NumPyで周波数スペクトルを可視化する",
+        "url": "https://zenn.dev/kta805/articles/bc57fe3146025b",
+        "site": "Zenn(Python)",
+        "published": "2026-03-11T02:21:52Z",
+        "description": "PythonでFFTを理解する ― NumPyで周波数スペクトルを可視化する\nデジタル信号処理（DSP）では、\n時間信号を周波数成分に分解する処理が非常に重要です。\nその代表的な手法が FFT（Fast Fourier Transform） です。\nこの記事では Python と NumPy を使って\n\nFFTとは何か\n周波数スペクトルの見方\n実際に信号を解析する\n\nを実験しながら理解します。\n\n...",
+        "category": "開発",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "確率的オウムと因果推論",
+        "url": "https://zenn.dev/makoto_shida/articles/e5fbbaca61cab8",
+        "site": "Zenn(Python)",
+        "published": "2026-03-11T02:01:01Z",
+        "description": "AIは「なぜ」を知らないー 確率的オウムと因果推論の深い溝\n\n確率的オウムと因果推論の深い溝\n「雨が降ったあと、地面が濡れる」\nこれは誰でも知っている。\nでも、もう少し踏み込んだ問いを立ててみよう。\n「地面が濡れているから、雨が降ったのか？」\n違う。順番が逆だ。\n雨が降ったことが原因で、地面が濡れたのが結果だ。\nこの「順番」と「方向性」を理解することが、因果推論の核心だ。\nそして、現在の多くのAI...",
+        "category": "開発",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "Chromeブックマークを毎日自動整理するPythonスクリプトを作った（WSL2 + cron）",
+        "url": "https://zenn.dev/754736277842632/articles/chrome-bookmark-auto-organizer",
+        "site": "Zenn(Python)",
+        "published": "2026-03-11T01:43:32Z",
+        "description": "TL;DR\nChromeのブックマークファイル（JSON）を直接読み書きして、ドメインベースの自動フォルダ分類・重複除去・トラッキングURL除去を行うPythonスクリプトを作りました。WSL2のcronで毎日自動実行し、全Chromeプロファイルに対応しています。\n\n なぜ作ったか\nブックマークが増えると「ブックマーク バー」や「その他のブックマーク」が散らかります。手動でフォルダ分けするのは面...",
+        "category": "開発",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "Twitter APIキー不要。AIのCLIでツイートを自動生成・投稿するツールを作った",
+        "url": "https://zenn.dev/kensuke_sam/articles/4aac09f26c2236",
+        "site": "Zenn(Python)",
+        "published": "2026-03-11T01:22:40Z",
+        "description": "TL;DR\n\nTwitter APIキーなしでツイートを自動生成・投稿できるCLIツールを作った\nGemini / Claude Code / Codex のいずれかのAI CLIがあれば動く\n記事URLを渡すだけでツイート案を5つ生成して選んで投稿できる\nOSS公開済み → Kensuke-sam/twitter-cli-bot\n\n\n\n\n 作った背景\nブログを書いた後、毎回X（Twitter）に...",
+        "category": "開発",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "python環境の構築手順",
+        "url": "https://zenn.dev/headwaters/articles/4fa9640e469ec3",
+        "site": "Zenn(Python)",
+        "published": "2026-03-11T00:20:55Z",
+        "description": "はじめに\n今回は人によって環境構築の手順が違うという点に注意しつつ、環境を構築していきます。既存の標準手順と最新ツールを用いた2パターンの手順を紹介します。\n\n 公式サイトから直接インストールする場合\nまずはインストールマネージャーからPythonを導入する手順を解説します。\n\n 1. Pythonのインストールマネージャーをダウンロード\n公式サイトのダウンロードボタンからインストールマネージャー...",
+        "category": "開発",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "tox続編: `tox.ini` 実践設定ガイド",
+        "url": "https://zenn.dev/se_te_bon/articles/a17b4ced2c3399",
+        "site": "Zenn(Python)",
+        "published": "2026-03-10T23:57:33Z",
+        "description": "はじめに\n前回の記事では、toxの概要と「まず動かしてみる！」を中心に紹介しました。\n今回は続編として、toxを使いこなす上で欠かせないtox.ini の設定項目についてまとめました。\n私自身、設定項目に何があるか、どういうことができるか、迷った経験があったので、この記事が少しでも参考になると嬉しいです！\n\n この記事で扱う範囲\ntox.ini の項目を、次の2つに分けて紹介します。\n\n\n[tox...",
+        "category": "開発",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "バイブコーディング消耗からの脱却：「スペックファーストAI開発」でOSSを作った実践記録 ― D-MemFS 開発戦記２",
+        "url": "https://zenn.dev/nightwalk/articles/5a8fc5de770995",
+        "site": "Zenn(Python)",
+        "published": "2026-03-10T22:50:05Z",
+        "description": "昨日 Qiita で公開した実装編の記事が、数時間で 350 views を超え、多くのストックをいただくなど、現場の悩みとしての関心の高さを実感しています。しかし、そのコードを生んだのは、AI との泥臭い「仕様」の壁打ちでした。\n\n\n 「バイブコーディング」の限界に、あなたは気づいているか\nAIにコードを書かせるのが当たり前になってきた。プロンプトを投げれば、それっぽいコードが返ってくる。動く。...",
+        "category": "開発",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
         "title": "\"AIエージェントに決済させるSDKを作った——DID・JWT・ハッシュチェーンで認証・認可・監査を実装する\"",
         "url": "https://zenn.dev/cdad123/articles/90a89e3fabc4a5",
         "site": "Zenn(Python)",
@@ -501,31 +741,11 @@
         "image_url": ""
       },
       {
-        "title": "【モデル編④】実験と分析の舞台裏：Jupyter Notebookと試行錯誤の記録",
-        "url": "https://zenn.dev/ricotiler/articles/keiba-ai-09-jupyter-experiment-workflow",
-        "site": "Zenn(Python)",
-        "published": "2026-03-10T12:12:00Z",
-        "description": "【モデル編④】実験と分析の舞台裏：Jupyter Notebookと試行錯誤の記録\n\n はじめに：AI開発の「実験室」\nここまで、データの加工やモデルの設計について解説してきましたが、これらのロジックはいきなり完成したわけではありません。\n数え切れないほどの「仮説」と「検証」の繰り返し（トライ＆エラー）の末に生まれたものです。\nこの試行錯誤のプロセスを支えているのが、Jupyter Noteboo...",
-        "category": "開発",
-        "rss_category": "",
-        "image_url": ""
-      },
-      {
         "title": "Claude Codeで自分好みの朝刊が届く仕組みを作った",
         "url": "https://zenn.dev/aoi_umigishi/articles/936073d8dd16e9",
         "site": "Zenn(Python)",
         "published": "2026-03-10T11:37:51Z",
         "description": "はじめに\nこんにちは、まっくすと申します。\n普段Flutter を使ったフリーランスのエンジニアとして働いています。\nエンジニアになって大事だなぁと感じるのは、\n言語や技術の最新情報を追いかける、ということです。\n特に昨今のAI技術の発展を追いかけることは、\n自分の仕事の生産性を上げることにつながるため、非常に重要だと考えます。\nただ、情報収集のために毎日複数のサイトを巡回するのは結構な手間です。...",
-        "category": "開発",
-        "rss_category": "",
-        "image_url": ""
-      },
-      {
-        "title": "PythonでMCPサーバーを自作してClaude Codeに接続する実践ガイド",
-        "url": "https://zenn.dev/biki/articles/mcp-python-server-claude-code-guide",
-        "site": "Zenn(Python)",
-        "published": "2026-03-10T10:56:55Z",
-        "description": "はじめに\nこの記事を読んで得られること：\n\n\nMCP（Model Context Protocol）の仕組みと、なぜ今エンジニアが注目すべきかを理解できる\n\nPythonでMCPサーバーを自作して、Claude Codeから使えるようになる\n\nstdioの罠など実際にハマったポイントを知って、スムーズに実装できる\n\n対象読者：\n\nPythonの基礎を知っている方\nClaude Codeを使ったこと...",
         "category": "開発",
         "rss_category": "",
         "image_url": ""
