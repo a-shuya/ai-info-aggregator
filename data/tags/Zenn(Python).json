@@ -1,9 +1,89 @@
 {
   "site": "Zenn(Python)",
-  "last_updated": "2026-03-11T11:23:38.826122",
-  "total_articles": 2871,
+  "last_updated": "2026-03-11T11:56:27.313414",
+  "total_articles": 2883,
   "articles_by_date": {
     "本日": [
+      {
+        "title": "確率的エビクション：メインスレッドのレイテンシを1msも犠牲にしないストレージ管理",
+        "url": "https://zenn.dev/neelbauman/articles/84b98138800687",
+        "site": "Zenn(Python)",
+        "published": "2026-03-11T10:53:28Z",
+        "description": "確率的エビクション：メインスレッドのレイテンシを1msも犠牲にしないストレージ管理\n\n キャッシュの掃除は、いつやるべきか。\nキャッシュライブラリ beautyspot を運用していると、避けて通れないのが「ストレージの肥大化」だ。数万件の LLM レスポンスをキャッシュすれば、当然ながらディスクやデータベースの容量を圧迫し始める。\nしかし、キャッシュを保存するたびに「期限切れのデータはないか？」...",
+        "category": "開発",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "ライブラリのための「非侵入的」な依存性注入：利便性と柔軟性を両立する設計",
+        "url": "https://zenn.dev/neelbauman/articles/7f53a6279d327c",
+        "site": "Zenn(Python)",
+        "published": "2026-03-11T10:53:27Z",
+        "description": "ライブラリのための「非侵入的」な依存性注入：利便性と柔軟性を両立する設計\n\n ライブラリにDIフレームワークを持ち込みたくなかった。\nライブラリ beautyspot を設計する際、避けたかったことの一つが、特定の DI（依存性注入）フレームワークをユーザーに強いることだ。キャッシュの保存先をローカルから S3 に変えたい、あるいは DB を SQLite から Redis に変えたいといった要求...",
+        "category": "開発",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "beautyspot におけるレート制限アルゴリズム「GCRA」の採用",
+        "url": "https://zenn.dev/neelbauman/articles/1312080d0ad889",
+        "site": "Zenn(Python)",
+        "published": "2026-03-11T10:53:27Z",
+        "description": "beautyspot におけるレート制限アルゴリズム「GCRA」の採用\n\n 固定ウィンドウ方式における「境界線問題」\nLLM（大規模言語モデル）の API を呼び出すアプリケーションを開発していると、必ず直面するのがレート制限（Rate Limit）の壁だ。\n「1分間に60回まで」という制限に対し、素朴な「固定ウィンドウ（Fixed Window）」方式で実装すると、ある重大な問題が浮き彫りになる...",
+        "category": "開発",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "Proxy Poolとは何か・構築・運用・ローテーション戦略の完全ガイド【2026年版】",
+        "url": "https://zenn.dev/datajournal1/articles/9c3d5c716a4693",
+        "site": "Zenn(Python)",
+        "published": "2026-03-11T10:08:23Z",
+        "description": "Proxy Pool（プロキシプール）とは何か\nProxy Poolとは、Webスクレイピングやデータ収集で使用する複数のプロキシIPアドレスを管理・ローテーションする仕組みで、単一IPからの連続アクセスによるブロック・レート制限・CAPTCHAを回避するためのインフラ層だ。 プールに含まれるIPの種別（データセンター・住宅・ISP・モバイル）・ASN多様性・ローテーション戦略・プール品質管理（死...",
+        "category": "開発",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "beautyspot v2.7.6 のリリース",
+        "url": "https://zenn.dev/neelbauman/articles/16f3a4147ad691",
+        "site": "Zenn(Python)",
+        "published": "2026-03-11T10:06:54Z",
+        "description": "beautyspot v2.7.6 のリリース\n\n キャッシュロジック実装の刷新\nPythonのキャッシュライブラリ beautyspot の v2.7.6 をリリースした。\n今回のアップデートでは、目に見える新機能の追加ではなく、非同期処理やデータベース制御といった「裏側」の安定性を固めることに注力している。\nbeautyspot v2.7.6 では、関数の実行結果を裏側で非同期に保存する。\nし...",
+        "category": "開発",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "DiscordからOpenClawを起動・停止する",
+        "url": "https://zenn.dev/acntechjp/articles/d23bbc74826b57",
+        "site": "Zenn(Python)",
+        "published": "2026-03-11T09:43:49Z",
+        "description": "この記事は？\nトークン節約のため、OpenClaw本体をDiscordチャットから起動・停止できるDiscord Botを作成した話です。今回はOpenClawの解説というより、運用を軽くするための周辺ツール実装にフォーカスします。\nOpenClawを検証したいものの、常時起動は不要で、できるだけ安価に運用したい人にはおすすめの内容です。\n\n なぜ作ろうと思った？\nOpenClawを使ってドローン...",
+        "category": "開発",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "LLMに「感情で思い出す力」を外付けする(しようと頑張っている)。",
+        "url": "https://zenn.dev/nob88/articles/79c8e8db72dedc",
+        "site": "Zenn(Python)",
+        "published": "2026-03-11T09:20:42Z",
+        "description": "何が不満なのか\n昨日決めた設計方針も、先週のコードレビューの議論も、「次はこの方向でいこう」と合意した文脈も。次のセッションでは同じ説明をもう一度繰り返し、同じ前提をもう一度共有し、同じ合意をもう一度取り付ける。\n辛い。記憶喪失の人間と仕事をしているようだ。\n人間は違う。3日前に話した内容を一字一句覚えていなくても、「あの時、結構悩んで決めたよな」という感覚は残っている。感情的に重要だった出来事は...",
+        "category": "開発",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "ポケモンバトルのための機械学習と強化学習入門",
+        "url": "https://zenn.dev/fibujrsl/books/099a1597b18670",
+        "site": "Zenn(Python)",
+        "published": "2026-03-11T08:34:01Z",
+        "description": "Pythonと機械学習を用いて、ポケモンの種族値をデータ分析するためのPythonコードを以下に示します",
+        "category": "開発",
+        "rss_category": "",
+        "image_url": ""
+      },
       {
         "title": "エンタープライズ向けAIチャットボット開発事例",
         "url": "https://zenn.dev/nkktech_global/articles/725bd11b6938a1",
@@ -135,16 +215,6 @@
         "image_url": ""
       },
       {
-        "title": "Prompt-Based Alignmentには天井がある — 囚人のジレンマ3モデル実証",
-        "url": "https://zenn.dev/shimo4228/articles/contemplative-alignment-benchmark",
-        "site": "Zenn(Python)",
-        "published": "2026-03-10T23:45:03Z",
-        "description": "協力的な相手に協力するのは、倫理ではない。ゲーム理論的に最適な戦略だ。\n囚人のジレンマというゲームがある。2人のプレイヤーが毎ラウンド「協力」か「裏切り」を同時に選ぶ。両方が協力すればそこそこの利益（互いに3点）、一方だけが裏切れば裏切った側が大きく得をし（5点 vs 0点）、両方裏切ると両方損する（互いに1点）。これを20ラウンド繰り返す。相手の戦略が見えてくるにつれて、「こいつには協力した方が...",
-        "category": "開発",
-        "rss_category": "",
-        "image_url": ""
-      },
-      {
         "title": "バイブコーディング消耗からの脱却：「スペックファーストAI開発」でOSSを作った実践記録 ― D-MemFS 開発戦記２",
         "url": "https://zenn.dev/nightwalk/articles/5a8fc5de770995",
         "site": "Zenn(Python)",
@@ -196,16 +266,6 @@
       }
     ],
     "昨日": [
-      {
-        "title": "Google Cloud Tasksで非同期処理を実装する — キュー管理とリトライ戦略",
-        "url": "https://zenn.dev/correlate_dev/articles/gcp-cloud-tasks-queue",
-        "site": "Zenn(Python)",
-        "published": "2026-03-10T13:18:29Z",
-        "description": "はじめに\nWebアプリケーションを開発していると、レスポンスタイムを犠牲にせずに重い処理を走らせたい場面に頻繁に遭遇します。画像のリサイズ、外部APIへの一括リクエスト、CSVの大量インポート、メール送信——これらをリクエスト処理の中で同期的に実行すると、ユーザーは処理が終わるまで待ち続けることになります。\n非同期処理はこの問題を解決する王道のアプローチです。しかし「キューにタスクを積む」という単...",
-        "category": "開発",
-        "rss_category": "",
-        "image_url": ""
-      },
       {
         "title": "「適当な連番」をやめて、実務に即した6桁の会員番号を設計した話",
         "url": "https://zenn.dev/kacchan822/articles/b3f60348554e19",
@@ -561,6 +621,86 @@
     ],
     "2026-03": [
       {
+        "title": "確率的エビクション：メインスレッドのレイテンシを1msも犠牲にしないストレージ管理",
+        "url": "https://zenn.dev/neelbauman/articles/84b98138800687",
+        "site": "Zenn(Python)",
+        "published": "2026-03-11T10:53:28Z",
+        "description": "確率的エビクション：メインスレッドのレイテンシを1msも犠牲にしないストレージ管理\n\n キャッシュの掃除は、いつやるべきか。\nキャッシュライブラリ beautyspot を運用していると、避けて通れないのが「ストレージの肥大化」だ。数万件の LLM レスポンスをキャッシュすれば、当然ながらディスクやデータベースの容量を圧迫し始める。\nしかし、キャッシュを保存するたびに「期限切れのデータはないか？」...",
+        "category": "開発",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "ライブラリのための「非侵入的」な依存性注入：利便性と柔軟性を両立する設計",
+        "url": "https://zenn.dev/neelbauman/articles/7f53a6279d327c",
+        "site": "Zenn(Python)",
+        "published": "2026-03-11T10:53:27Z",
+        "description": "ライブラリのための「非侵入的」な依存性注入：利便性と柔軟性を両立する設計\n\n ライブラリにDIフレームワークを持ち込みたくなかった。\nライブラリ beautyspot を設計する際、避けたかったことの一つが、特定の DI（依存性注入）フレームワークをユーザーに強いることだ。キャッシュの保存先をローカルから S3 に変えたい、あるいは DB を SQLite から Redis に変えたいといった要求...",
+        "category": "開発",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "beautyspot におけるレート制限アルゴリズム「GCRA」の採用",
+        "url": "https://zenn.dev/neelbauman/articles/1312080d0ad889",
+        "site": "Zenn(Python)",
+        "published": "2026-03-11T10:53:27Z",
+        "description": "beautyspot におけるレート制限アルゴリズム「GCRA」の採用\n\n 固定ウィンドウ方式における「境界線問題」\nLLM（大規模言語モデル）の API を呼び出すアプリケーションを開発していると、必ず直面するのがレート制限（Rate Limit）の壁だ。\n「1分間に60回まで」という制限に対し、素朴な「固定ウィンドウ（Fixed Window）」方式で実装すると、ある重大な問題が浮き彫りになる...",
+        "category": "開発",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "Proxy Poolとは何か・構築・運用・ローテーション戦略の完全ガイド【2026年版】",
+        "url": "https://zenn.dev/datajournal1/articles/9c3d5c716a4693",
+        "site": "Zenn(Python)",
+        "published": "2026-03-11T10:08:23Z",
+        "description": "Proxy Pool（プロキシプール）とは何か\nProxy Poolとは、Webスクレイピングやデータ収集で使用する複数のプロキシIPアドレスを管理・ローテーションする仕組みで、単一IPからの連続アクセスによるブロック・レート制限・CAPTCHAを回避するためのインフラ層だ。 プールに含まれるIPの種別（データセンター・住宅・ISP・モバイル）・ASN多様性・ローテーション戦略・プール品質管理（死...",
+        "category": "開発",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "beautyspot v2.7.6 のリリース",
+        "url": "https://zenn.dev/neelbauman/articles/16f3a4147ad691",
+        "site": "Zenn(Python)",
+        "published": "2026-03-11T10:06:54Z",
+        "description": "beautyspot v2.7.6 のリリース\n\n キャッシュロジック実装の刷新\nPythonのキャッシュライブラリ beautyspot の v2.7.6 をリリースした。\n今回のアップデートでは、目に見える新機能の追加ではなく、非同期処理やデータベース制御といった「裏側」の安定性を固めることに注力している。\nbeautyspot v2.7.6 では、関数の実行結果を裏側で非同期に保存する。\nし...",
+        "category": "開発",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "DiscordからOpenClawを起動・停止する",
+        "url": "https://zenn.dev/acntechjp/articles/d23bbc74826b57",
+        "site": "Zenn(Python)",
+        "published": "2026-03-11T09:43:49Z",
+        "description": "この記事は？\nトークン節約のため、OpenClaw本体をDiscordチャットから起動・停止できるDiscord Botを作成した話です。今回はOpenClawの解説というより、運用を軽くするための周辺ツール実装にフォーカスします。\nOpenClawを検証したいものの、常時起動は不要で、できるだけ安価に運用したい人にはおすすめの内容です。\n\n なぜ作ろうと思った？\nOpenClawを使ってドローン...",
+        "category": "開発",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "LLMに「感情で思い出す力」を外付けする(しようと頑張っている)。",
+        "url": "https://zenn.dev/nob88/articles/79c8e8db72dedc",
+        "site": "Zenn(Python)",
+        "published": "2026-03-11T09:20:42Z",
+        "description": "何が不満なのか\n昨日決めた設計方針も、先週のコードレビューの議論も、「次はこの方向でいこう」と合意した文脈も。次のセッションでは同じ説明をもう一度繰り返し、同じ前提をもう一度共有し、同じ合意をもう一度取り付ける。\n辛い。記憶喪失の人間と仕事をしているようだ。\n人間は違う。3日前に話した内容を一字一句覚えていなくても、「あの時、結構悩んで決めたよな」という感覚は残っている。感情的に重要だった出来事は...",
+        "category": "開発",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "ポケモンバトルのための機械学習と強化学習入門",
+        "url": "https://zenn.dev/fibujrsl/books/099a1597b18670",
+        "site": "Zenn(Python)",
+        "published": "2026-03-11T08:34:01Z",
+        "description": "Pythonと機械学習を用いて、ポケモンの種族値をデータ分析するためのPythonコードを以下に示します",
+        "category": "開発",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
         "title": "エンタープライズ向けAIチャットボット開発事例",
         "url": "https://zenn.dev/nkktech_global/articles/725bd11b6938a1",
         "site": "Zenn(Python)",
@@ -691,16 +831,6 @@
         "image_url": ""
       },
       {
-        "title": "Prompt-Based Alignmentには天井がある — 囚人のジレンマ3モデル実証",
-        "url": "https://zenn.dev/shimo4228/articles/contemplative-alignment-benchmark",
-        "site": "Zenn(Python)",
-        "published": "2026-03-10T23:45:03Z",
-        "description": "協力的な相手に協力するのは、倫理ではない。ゲーム理論的に最適な戦略だ。\n囚人のジレンマというゲームがある。2人のプレイヤーが毎ラウンド「協力」か「裏切り」を同時に選ぶ。両方が協力すればそこそこの利益（互いに3点）、一方だけが裏切れば裏切った側が大きく得をし（5点 vs 0点）、両方裏切ると両方損する（互いに1点）。これを20ラウンド繰り返す。相手の戦略が見えてくるにつれて、「こいつには協力した方が...",
-        "category": "開発",
-        "rss_category": "",
-        "image_url": ""
-      },
-      {
         "title": "バイブコーディング消耗からの脱却：「スペックファーストAI開発」でOSSを作った実践記録 ― D-MemFS 開発戦記２",
         "url": "https://zenn.dev/nightwalk/articles/5a8fc5de770995",
         "site": "Zenn(Python)",
@@ -746,16 +876,6 @@
         "site": "Zenn(Python)",
         "published": "2026-03-10T15:02:31Z",
         "description": "Streamlitで作る「ソクラテス」の顔── 対話を「指導」に変えるUI設計\n!\nこの記事は「答えないRAG ── ソクラテス」開発記シリーズの第8回です。\n安易に答えを教えず、ユーザーに問いかけて気付きを促す「教育型AI」。\nその実現に必要な技術（アーキテクチャ、データ設計、UI）を解説します。\n記事\n📚 シリーズ一覧\n\nVol.1: ソクラテスに説教されるシステムが爆誕した話\nVol.2: ...",
-        "category": "開発",
-        "rss_category": "",
-        "image_url": ""
-      },
-      {
-        "title": "Google Cloud Tasksで非同期処理を実装する — キュー管理とリトライ戦略",
-        "url": "https://zenn.dev/correlate_dev/articles/gcp-cloud-tasks-queue",
-        "site": "Zenn(Python)",
-        "published": "2026-03-10T13:18:29Z",
-        "description": "はじめに\nWebアプリケーションを開発していると、レスポンスタイムを犠牲にせずに重い処理を走らせたい場面に頻繁に遭遇します。画像のリサイズ、外部APIへの一括リクエスト、CSVの大量インポート、メール送信——これらをリクエスト処理の中で同期的に実行すると、ユーザーは処理が終わるまで待ち続けることになります。\n非同期処理はこの問題を解決する王道のアプローチです。しかし「キューにタスクを積む」という単...",
         "category": "開発",
         "rss_category": "",
         "image_url": ""
