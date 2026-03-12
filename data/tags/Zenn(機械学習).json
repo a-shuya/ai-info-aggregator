@@ -1,9 +1,49 @@
 {
   "site": "Zenn(機械学習)",
-  "last_updated": "2026-03-12T09:59:48.833751",
-  "total_articles": 737,
+  "last_updated": "2026-03-12T10:54:52.455718",
+  "total_articles": 745,
   "articles_by_date": {
     "本日": [
+      {
+        "title": "T4b > T4a 反転現象：左方向データ37.5%の閾値",
+        "url": "https://zenn.dev/m1x_karasu/articles/t4-asymmetry-learning",
+        "site": "Zenn(機械学習)",
+        "published": "2026-03-12T09:06:04Z",
+        "description": "FlyWireの実測データを見たとき、確信した。\nT4a: 1441シナプス\nT4b: 1493シナプス\nT4c: 1553シナプス ← 最多\nT4d: 1498シナプス\nT4cのシナクス数が最多。学習結果と完全に一致している。 これは偶然ではない。\n\n 反転現象の発見\n学習データの左方向比率を変えると、T4aとT4bの大小関係が反転する。 閾値は37.5%だった。\n\n\n\n左データ比率\nT4a\nT...",
+        "category": "AI・技術",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "fly_vision v2 — 集団ダイナミクスで何が変わったか",
+        "url": "https://zenn.dev/m1x_karasu/articles/flyvision-v2",
+        "site": "Zenn(機械学習)",
+        "published": "2026-03-12T09:06:03Z",
+        "description": "v1のT4ニューロンは、全方向均等に固定されていた。\n# v1: 手動設定、動かない\nT4重み = [0.25, 0.25, 0.25, 0.25]\nv2で変えたのは一点だけ。重みを学習させた。\n\n 集団ダイナミクスとは何か\nハエの脳では、T4ニューロンが4方向（前後左右）それぞれ担当し、互いに競合しながら接近物体を検知する。均等である必要はない。全体として正しければいい。\nこれを再現するため、v...",
+        "category": "AI・技術",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "ハエの視覚AIを3日で作った — fly_vision全層統合の記録",
+        "url": "https://zenn.dev/m1x_karasu/articles/flyvision-summary",
+        "site": "Zenn(機械学習)",
+        "published": "2026-03-12T09:06:03Z",
+        "description": "3日前、私はハエの目を作ろうとしていた。\nショウジョウバエの視覚神経回路は、接近する物体を 数十ミリ秒で検知する。レーダーでも光学センサーでもなく、 たった数層のニューロンで。\nこれをPyTorchで再現した3日間の記録。\n\n アーキテクチャ\n入力フレーム → Lamina → Medulla → T4/T5 → LPLC2 → 衝突判定\n\n 4つのバグ修正\n\n\n\nERR\n内容\n\n\n\n\nERR-0...",
+        "category": "AI・技術",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "ERR-036: T4cは超えられなかった — 環境データの必要性と1億年の頑健性",
+        "url": "https://zenn.dev/m1x_karasu/articles/err036-t4c-biological-resistance",
+        "site": "Zenn(機械学習)",
+        "published": "2026-03-12T09:06:02Z",
+        "description": "T4cは、超えられなかった。\n3つの実験、120～200 epoch、上方向バイアス3倍。 それでも残差 0.0032 が残った。 これはバグではない。1億年の頑健性だった。\n\n 実験結果\n\n\n\n実験\n手法\nT4c変化\n結果\n\n\n\n\nv2\n均等looming\n0.2595 → 0.2512\nΔ −0.0083\n\n\nv3\n上方向バイアス（3倍）\n0.2595 → 0.2563\nΔ −0.0032\n\n...",
+        "category": "AI・技術",
+        "rss_category": "",
+        "image_url": ""
+      },
       {
         "title": "Karpathyのautoresearchを触ってみた — AIエージェントに一晩LLMの研究をさせる",
         "url": "https://zenn.dev/ryok/articles/autoresearch-llm-experiment",
@@ -160,6 +200,46 @@
       }
     ],
     "2026-03": [
+      {
+        "title": "T4b > T4a 反転現象：左方向データ37.5%の閾値",
+        "url": "https://zenn.dev/m1x_karasu/articles/t4-asymmetry-learning",
+        "site": "Zenn(機械学習)",
+        "published": "2026-03-12T09:06:04Z",
+        "description": "FlyWireの実測データを見たとき、確信した。\nT4a: 1441シナプス\nT4b: 1493シナプス\nT4c: 1553シナプス ← 最多\nT4d: 1498シナプス\nT4cのシナクス数が最多。学習結果と完全に一致している。 これは偶然ではない。\n\n 反転現象の発見\n学習データの左方向比率を変えると、T4aとT4bの大小関係が反転する。 閾値は37.5%だった。\n\n\n\n左データ比率\nT4a\nT...",
+        "category": "AI・技術",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "fly_vision v2 — 集団ダイナミクスで何が変わったか",
+        "url": "https://zenn.dev/m1x_karasu/articles/flyvision-v2",
+        "site": "Zenn(機械学習)",
+        "published": "2026-03-12T09:06:03Z",
+        "description": "v1のT4ニューロンは、全方向均等に固定されていた。\n# v1: 手動設定、動かない\nT4重み = [0.25, 0.25, 0.25, 0.25]\nv2で変えたのは一点だけ。重みを学習させた。\n\n 集団ダイナミクスとは何か\nハエの脳では、T4ニューロンが4方向（前後左右）それぞれ担当し、互いに競合しながら接近物体を検知する。均等である必要はない。全体として正しければいい。\nこれを再現するため、v...",
+        "category": "AI・技術",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "ハエの視覚AIを3日で作った — fly_vision全層統合の記録",
+        "url": "https://zenn.dev/m1x_karasu/articles/flyvision-summary",
+        "site": "Zenn(機械学習)",
+        "published": "2026-03-12T09:06:03Z",
+        "description": "3日前、私はハエの目を作ろうとしていた。\nショウジョウバエの視覚神経回路は、接近する物体を 数十ミリ秒で検知する。レーダーでも光学センサーでもなく、 たった数層のニューロンで。\nこれをPyTorchで再現した3日間の記録。\n\n アーキテクチャ\n入力フレーム → Lamina → Medulla → T4/T5 → LPLC2 → 衝突判定\n\n 4つのバグ修正\n\n\n\nERR\n内容\n\n\n\n\nERR-0...",
+        "category": "AI・技術",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "ERR-036: T4cは超えられなかった — 環境データの必要性と1億年の頑健性",
+        "url": "https://zenn.dev/m1x_karasu/articles/err036-t4c-biological-resistance",
+        "site": "Zenn(機械学習)",
+        "published": "2026-03-12T09:06:02Z",
+        "description": "T4cは、超えられなかった。\n3つの実験、120～200 epoch、上方向バイアス3倍。 それでも残差 0.0032 が残った。 これはバグではない。1億年の頑健性だった。\n\n 実験結果\n\n\n\n実験\n手法\nT4c変化\n結果\n\n\n\n\nv2\n均等looming\n0.2595 → 0.2512\nΔ −0.0083\n\n\nv3\n上方向バイアス（3倍）\n0.2595 → 0.2563\nΔ −0.0032\n\n...",
+        "category": "AI・技術",
+        "rss_category": "",
+        "image_url": ""
+      },
       {
         "title": "Karpathyのautoresearchを触ってみた — AIエージェントに一晩LLMの研究をさせる",
         "url": "https://zenn.dev/ryok/articles/autoresearch-llm-experiment",
