@@ -1,9 +1,59 @@
 {
   "site": "Zenn(Python)",
-  "last_updated": "2026-03-13T07:32:45.495247",
-  "total_articles": 2891,
+  "last_updated": "2026-03-13T08:06:04.963558",
+  "total_articles": 2893,
   "articles_by_date": {
     "本日": [
+      {
+        "title": "lightGBM　2値分類　Training API",
+        "url": "https://zenn.dev/hiromu2001/articles/161bf67df231d5",
+        "site": "Zenn(Python)",
+        "published": "2026-03-13T05:05:41Z",
+        "description": "事前にデータ準備しておく\nx_data_train = data_train.drop(columns=\"目的変数\")\nx_data_test = data_test\ny_data_train = data_train[\"目的変数\"]\nホールドアウト検証用にはtrain_test_splitを使って自動で分ける\nインポート忘れずに\nimport lightgbm as lgb\nfrom sklea...",
+        "category": "開発",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "uvで変わるPython環境管理 ~パッケージ管理の新しいデファクトスタンダード~",
+        "url": "https://zenn.dev/egg_glass/books/python_uv_book",
+        "site": "Zenn(Python)",
+        "published": "2026-03-13T04:19:30Z",
+        "description": "uvは、Pythonのパッケージ管理、仮想環境管理、バージョン管理を一括して扱えるツールとして、注目を集めています。\n\n本書では、技術書典20の開催時期に合わせて、2026年時点の最新情報をもとに、uvの基本から実践的な活用までを体系的にまとめました。\n\nRust製で高速さに定評のあるPythonパッケージ・プロジェクトマネージャー「uv」を用いて、複数のツールに分散しがちなPython環境管理を...",
+        "category": "開発",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "Twitter/X APIの`since_id`が仕様通りに動かない件を調べてみた",
+        "url": "https://zenn.dev/rescuenow/articles/c7d7540d54892d",
+        "site": "Zenn(Python)",
+        "published": "2026-03-13T01:24:26Z",
+        "description": "はじめに\nTwitter/X APIを利用した投稿取得処理で、since_idを指定しているにもかかわらず、\nそのID自体の投稿が結果に含まれるケースに遭遇しました。\n（別件のランタイム更新をきっかけに気づきましたが、調査の結果ランタイム更新とは無関係でした。）\n公式ドキュメントには「指定したIDより大きい（つまり、より新しい）結果を返す」と明記されているので、since_idで指定したID自体は...",
+        "category": "開発",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "「Pythonで学ぶシステムトレード」vol.8:13章・14章：歩み値が教える市場の素顔",
+        "url": "https://zenn.dev/hiroakikody/articles/223f4d6ee7fea2",
+        "site": "Zenn(Python)",
+        "published": "2026-03-12T22:42:55Z",
+        "description": "13章・14章：歩み値が教える市場の素顔 ─ 正のフィードバックループと√N則の深い関係\nアルゴリズムトレードの教科書を農家エンジニアが読んだ学習記録 Vol.8\n\n\n\n 起：日足データでは見えない世界がある\n「VTIの日足データでOLS回帰をした。ADF検定でランダムウォークを確認した。」\n前回までの分析は全て**日足（1日単位）**のデータだった。\nしかし森谷氏は13章でこう問いかける。\n\n「...",
+        "category": "開発",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "Residential IPネットワークとは何か・仕組み・データセンターIPとの違い完全ガイド【2026年版】",
+        "url": "https://zenn.dev/datajournal1/articles/583e069ac343fd",
+        "site": "Zenn(Python)",
+        "published": "2026-03-12T21:55:11Z",
+        "description": "Residential IPネットワークとは何か\nResidential IPネットワークとは、ISP（インターネットサービスプロバイダー）が一般家庭のルーター・スマートフォン・PCに割り当てる実在のIPアドレス群を活用したプロキシインフラで、送信元がデータセンターではなく実際の住宅ユーザーに見えるためアンチボットシステムに検出されにくい。 データセンターIPはAWS・DigitalOceanとい...",
+        "category": "開発",
+        "rss_category": "",
+        "image_url": ""
+      },
       {
         "title": "『クリプトアート全史』ERC-721の標準化（2017〜2018）",
         "url": "https://zenn.dev/yasuna_ide/articles/2a8da4effe9440",
@@ -127,16 +177,6 @@
         "image_url": ""
       },
       {
-        "title": "マルチLLMサービスのコスト予測を自動化し、月次PDCAで精度を維持する仕組みを作った",
-        "url": "https://zenn.dev/shigerufukada/articles/3cb4e63fd754a9",
-        "site": "Zenn(Python)",
-        "published": "2026-03-12T09:17:53Z",
-        "description": "はじめに\nLLMを組み込んだサービスを運用していると、「ユーザーが増えたらコストはいくらになるのか？」という問いに答える必要が出てきます。\nインフラ固定費は比較的安定しますが、LLM APIコストはユーザー数に比例して増加します。さらに複数のLLMを呼び分けるマルチモデル構成だと、単純な「トークン数×単価」では正確な予測ができません。\nこの記事では、LLMコスト予測の精度を上げるために実測ベースの...",
-        "category": "開発",
-        "rss_category": "",
-        "image_url": ""
-      },
-      {
         "title": "「次」のたびにLLMを呼ぶのをやめたら APIコストが90%減った — chunk_answer()の設計と実装",
         "url": "https://zenn.dev/diced/articles/answer-chunking-api-cost-reduction",
         "site": "Zenn(Python)",
@@ -172,36 +212,6 @@
         "site": "Zenn(Python)",
         "published": "2026-03-12T01:45:05Z",
         "description": "TL;DR\n前回の記事でPythonスクリプトによるブックマーク自動整理を作りましたが、Chrome Syncによってクラウド側のデータでローカルが上書きされ、整理が元に戻るという致命的な問題がありました。\n解決策として**Chrome拡張機能（chrome.bookmarks API）**で整理するように作り直しました。APIを通じた変更はChrome Syncに正しく認識されるため、クラウドに...",
-        "category": "開発",
-        "rss_category": "",
-        "image_url": ""
-      },
-      {
-        "title": "Build an AI Agent from Scratch (No Frameworks, Just Python)",
-        "url": "https://zenn.dev/flp/articles/build-ai-agent-from-scratch-python",
-        "site": "Zenn(Python)",
-        "published": "2026-03-12T01:00:05Z",
-        "description": "日本語版はこちら\n\nBuilding a fully functional AI agent in Python — no frameworks, just the core loop and logic.\nAI Agents are everywhere right now. If you look at the landscape in 2026, it is dominated by pow...",
-        "category": "開発",
-        "rss_category": "",
-        "image_url": ""
-      },
-      {
-        "title": "【馬券戦略編①】期待値計算と確率キャリブレーション：スコアを「勝率」に変える",
-        "url": "https://zenn.dev/ricotiler/articles/keiba-ai-10-ev-and-probability-calibration",
-        "site": "Zenn(Python)",
-        "published": "2026-03-11T23:28:14Z",
-        "description": "【馬券戦略編①】期待値計算と確率キャリブレーション：スコアを「勝率」に変える\n\n はじめに：AIのスコアは「確率」ではない\nランク学習モデル（LGBMRanker）が出力するのは、あくまで「強さの順序を表すスコア」です。\nこのスコアは「3.5」や「-1.2」といった任意の実数値であり、そのままでは「勝率」として扱えません。\n馬券で勝つための鉄則は**「期待値（Expected Value）の高い馬...",
-        "category": "開発",
-        "rss_category": "",
-        "image_url": ""
-      },
-      {
-        "title": "金融AIでモデルアンサンブルを使う理由",
-        "url": "https://zenn.dev/sigma_lab/articles/aitrader-ai-trader-log-05-ens-20260304",
-        "site": "Zenn(Python)",
-        "published": "2026-03-11T23:00:21Z",
-        "description": "はじめに\n金融時系列は「最も予測が難しいデータ」の1つです。ノイズが多く、非定常で、相関が頻繁に崩れるため、単一指標や単純なモデルでは安定した予測が難しいという課題があります。特に、市場環境の変化に単一モデルが過剰適応してしまい、ロバスト性が損なわれるリスクは常に存在します。\nこの記事では、そのような課題に対し、金融AIでモデルアンサンブルを使う理由について、具体的な設計と実装を紹介します。複数の...",
         "category": "開発",
         "rss_category": "",
         "image_url": ""
@@ -491,6 +501,56 @@
     ],
     "2026-03": [
       {
+        "title": "lightGBM　2値分類　Training API",
+        "url": "https://zenn.dev/hiromu2001/articles/161bf67df231d5",
+        "site": "Zenn(Python)",
+        "published": "2026-03-13T05:05:41Z",
+        "description": "事前にデータ準備しておく\nx_data_train = data_train.drop(columns=\"目的変数\")\nx_data_test = data_test\ny_data_train = data_train[\"目的変数\"]\nホールドアウト検証用にはtrain_test_splitを使って自動で分ける\nインポート忘れずに\nimport lightgbm as lgb\nfrom sklea...",
+        "category": "開発",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "uvで変わるPython環境管理 ~パッケージ管理の新しいデファクトスタンダード~",
+        "url": "https://zenn.dev/egg_glass/books/python_uv_book",
+        "site": "Zenn(Python)",
+        "published": "2026-03-13T04:19:30Z",
+        "description": "uvは、Pythonのパッケージ管理、仮想環境管理、バージョン管理を一括して扱えるツールとして、注目を集めています。\n\n本書では、技術書典20の開催時期に合わせて、2026年時点の最新情報をもとに、uvの基本から実践的な活用までを体系的にまとめました。\n\nRust製で高速さに定評のあるPythonパッケージ・プロジェクトマネージャー「uv」を用いて、複数のツールに分散しがちなPython環境管理を...",
+        "category": "開発",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "Twitter/X APIの`since_id`が仕様通りに動かない件を調べてみた",
+        "url": "https://zenn.dev/rescuenow/articles/c7d7540d54892d",
+        "site": "Zenn(Python)",
+        "published": "2026-03-13T01:24:26Z",
+        "description": "はじめに\nTwitter/X APIを利用した投稿取得処理で、since_idを指定しているにもかかわらず、\nそのID自体の投稿が結果に含まれるケースに遭遇しました。\n（別件のランタイム更新をきっかけに気づきましたが、調査の結果ランタイム更新とは無関係でした。）\n公式ドキュメントには「指定したIDより大きい（つまり、より新しい）結果を返す」と明記されているので、since_idで指定したID自体は...",
+        "category": "開発",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "「Pythonで学ぶシステムトレード」vol.8:13章・14章：歩み値が教える市場の素顔",
+        "url": "https://zenn.dev/hiroakikody/articles/223f4d6ee7fea2",
+        "site": "Zenn(Python)",
+        "published": "2026-03-12T22:42:55Z",
+        "description": "13章・14章：歩み値が教える市場の素顔 ─ 正のフィードバックループと√N則の深い関係\nアルゴリズムトレードの教科書を農家エンジニアが読んだ学習記録 Vol.8\n\n\n\n 起：日足データでは見えない世界がある\n「VTIの日足データでOLS回帰をした。ADF検定でランダムウォークを確認した。」\n前回までの分析は全て**日足（1日単位）**のデータだった。\nしかし森谷氏は13章でこう問いかける。\n\n「...",
+        "category": "開発",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "Residential IPネットワークとは何か・仕組み・データセンターIPとの違い完全ガイド【2026年版】",
+        "url": "https://zenn.dev/datajournal1/articles/583e069ac343fd",
+        "site": "Zenn(Python)",
+        "published": "2026-03-12T21:55:11Z",
+        "description": "Residential IPネットワークとは何か\nResidential IPネットワークとは、ISP（インターネットサービスプロバイダー）が一般家庭のルーター・スマートフォン・PCに割り当てる実在のIPアドレス群を活用したプロキシインフラで、送信元がデータセンターではなく実際の住宅ユーザーに見えるためアンチボットシステムに検出されにくい。 データセンターIPはAWS・DigitalOceanとい...",
+        "category": "開発",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
         "title": "『クリプトアート全史』ERC-721の標準化（2017〜2018）",
         "url": "https://zenn.dev/yasuna_ide/articles/2a8da4effe9440",
         "site": "Zenn(Python)",
@@ -611,16 +671,6 @@
         "image_url": ""
       },
       {
-        "title": "マルチLLMサービスのコスト予測を自動化し、月次PDCAで精度を維持する仕組みを作った",
-        "url": "https://zenn.dev/shigerufukada/articles/3cb4e63fd754a9",
-        "site": "Zenn(Python)",
-        "published": "2026-03-12T09:17:53Z",
-        "description": "はじめに\nLLMを組み込んだサービスを運用していると、「ユーザーが増えたらコストはいくらになるのか？」という問いに答える必要が出てきます。\nインフラ固定費は比較的安定しますが、LLM APIコストはユーザー数に比例して増加します。さらに複数のLLMを呼び分けるマルチモデル構成だと、単純な「トークン数×単価」では正確な予測ができません。\nこの記事では、LLMコスト予測の精度を上げるために実測ベースの...",
-        "category": "開発",
-        "rss_category": "",
-        "image_url": ""
-      },
-      {
         "title": "「次」のたびにLLMを呼ぶのをやめたら APIコストが90%減った — chunk_answer()の設計と実装",
         "url": "https://zenn.dev/diced/articles/answer-chunking-api-cost-reduction",
         "site": "Zenn(Python)",
@@ -656,36 +706,6 @@
         "site": "Zenn(Python)",
         "published": "2026-03-12T01:45:05Z",
         "description": "TL;DR\n前回の記事でPythonスクリプトによるブックマーク自動整理を作りましたが、Chrome Syncによってクラウド側のデータでローカルが上書きされ、整理が元に戻るという致命的な問題がありました。\n解決策として**Chrome拡張機能（chrome.bookmarks API）**で整理するように作り直しました。APIを通じた変更はChrome Syncに正しく認識されるため、クラウドに...",
-        "category": "開発",
-        "rss_category": "",
-        "image_url": ""
-      },
-      {
-        "title": "Build an AI Agent from Scratch (No Frameworks, Just Python)",
-        "url": "https://zenn.dev/flp/articles/build-ai-agent-from-scratch-python",
-        "site": "Zenn(Python)",
-        "published": "2026-03-12T01:00:05Z",
-        "description": "日本語版はこちら\n\nBuilding a fully functional AI agent in Python — no frameworks, just the core loop and logic.\nAI Agents are everywhere right now. If you look at the landscape in 2026, it is dominated by pow...",
-        "category": "開発",
-        "rss_category": "",
-        "image_url": ""
-      },
-      {
-        "title": "【馬券戦略編①】期待値計算と確率キャリブレーション：スコアを「勝率」に変える",
-        "url": "https://zenn.dev/ricotiler/articles/keiba-ai-10-ev-and-probability-calibration",
-        "site": "Zenn(Python)",
-        "published": "2026-03-11T23:28:14Z",
-        "description": "【馬券戦略編①】期待値計算と確率キャリブレーション：スコアを「勝率」に変える\n\n はじめに：AIのスコアは「確率」ではない\nランク学習モデル（LGBMRanker）が出力するのは、あくまで「強さの順序を表すスコア」です。\nこのスコアは「3.5」や「-1.2」といった任意の実数値であり、そのままでは「勝率」として扱えません。\n馬券で勝つための鉄則は**「期待値（Expected Value）の高い馬...",
-        "category": "開発",
-        "rss_category": "",
-        "image_url": ""
-      },
-      {
-        "title": "金融AIでモデルアンサンブルを使う理由",
-        "url": "https://zenn.dev/sigma_lab/articles/aitrader-ai-trader-log-05-ens-20260304",
-        "site": "Zenn(Python)",
-        "published": "2026-03-11T23:00:21Z",
-        "description": "はじめに\n金融時系列は「最も予測が難しいデータ」の1つです。ノイズが多く、非定常で、相関が頻繁に崩れるため、単一指標や単純なモデルでは安定した予測が難しいという課題があります。特に、市場環境の変化に単一モデルが過剰適応してしまい、ロバスト性が損なわれるリスクは常に存在します。\nこの記事では、そのような課題に対し、金融AIでモデルアンサンブルを使う理由について、具体的な設計と実装を紹介します。複数の...",
         "category": "開発",
         "rss_category": "",
         "image_url": ""
