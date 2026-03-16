@@ -1,15 +1,45 @@
 {
   "site": "Zenn(機械学習)",
-  "last_updated": "2026-03-16T14:04:27.185658",
-  "total_articles": 787,
+  "last_updated": "2026-03-16T15:18:29.281928",
+  "total_articles": 782,
   "articles_by_date": {
-    "本日": [
+    "昨日": [
+      {
+        "title": "04_スタッキングでROIのブレを抑えた話：Isotonic Regressionの役割",
+        "url": "https://zenn.dev/keiba_ai_rui/articles/0bd6771159a6eb",
+        "site": "Zenn(機械学習)",
+        "published": "2026-03-16T11:04:57Z",
+        "description": "スタッキングでROIのブレを抑えた話：Isotonic Regressionの役割\n\n 単体LightGBMの問題：確率がズレている\nLightGBMで予測確率を出力すると、その確率は「実際の確率」とズレていることが多いです。\n例えば、モデルが「この馬が1着になる確率は30%」と出力しても、実際に「モデルが30%と出した馬」を100回集めると、1着になった回数は20回だったり40回だったりします。...",
+        "category": "AI・技術",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "AIツールで生産性30%向上｜2026年エンジニア市場予測とAI活用戦略",
+        "url": "https://zenn.dev/ailmarketing/articles/20260316-ai302026ai",
+        "site": "Zenn(機械学習)",
+        "published": "2026-03-16T08:26:42Z",
+        "description": "AIツールで生産性30%向上｜2026年エンジニア市場予測とAI活用戦略\n\n はじめに\n2026年のエンジニア市場は大きな変革期を迎えています。IT人材不足が79万人に達すると予測される一方で、AIツールの活用により生産性が30%向上するという興味深いデータが注目されています。\n本記事では、最新の市場データを基に、エンジニアがAIをどう活用して生産性を向上させ、変化する市場で競争力を維持できるかを...",
+        "category": "AI・技術",
+        "rss_category": "",
+        "image_url": ""
+      },
       {
         "title": "AIを「盆栽」にしないためのETL戦略 ―― 大規模分析",
         "url": "https://zenn.dev/nakano_teppei/articles/d4d7656e2b37d2",
         "site": "Zenn(機械学習)",
         "published": "2026-03-16T07:50:28Z",
         "description": "AIエンジニアにとって、モデルの学習は「盆栽」のようなものです。丹精込めて形を整えるのは楽しい。しかし、実務において重要なのは、その盆栽を置く「庭（データ基盤）」をどう管理するかです。\n今回は、私が経験した2つの対照的なプロジェクトを例に、ETL（Extract, Transform, Load）の具体的な技術選定と実装の勘所を共有します。\n\n 1. 「動的」なETL：ブロックチェーン異常検知の場...",
+        "category": "AI・技術",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "PythonでMFCCを計算する ― 音声認識で使われる特徴量を理解する",
+        "url": "https://zenn.dev/kta805/articles/fcf8732cc902cc",
+        "site": "Zenn(機械学習)",
+        "published": "2026-03-16T07:40:06Z",
+        "description": "PythonでMFCCを計算する ― 音声認識で使われる特徴量を理解する\nこれまでの記事では Python を使って\n\nFFT\nスペクトログラム\nメルスペクトログラム\n\nを作成してきました。\n今回は音声認識で最も有名な特徴量\nMFCC（Mel-Frequency Cepstral Coefficients）\nを計算してみます。\n音声認識や話者識別では\nこのMFCCが入力特徴量として使われることが非...",
         "category": "AI・技術",
         "rss_category": "",
         "image_url": ""
@@ -90,98 +120,6 @@
         "site": "Zenn(機械学習)",
         "published": "2026-03-15T21:45:28Z",
         "description": "着順予測をやめた日：多クラス分類から2値分類×3モデルへの転換\n\n 最初は「着順を予測する」モデルを作っていた\n競馬AIを作り始めた最初期、私のモデルは「着順を予測する多クラス分類」でした。\n「1着の馬を予測できれば、あとは買うだけ」という考え方です。\n実装は概念的にはシンプルです。\n# 最初のアプローチ：多クラス分類\n# ラベル：1着=0、2着=1、3着=2、4着以下=3\nfrom sklear...",
-        "category": "AI・技術",
-        "rss_category": "",
-        "image_url": ""
-      }
-    ],
-    "昨日": [
-      {
-        "title": "【Keras実験】ReLU・LeakyReLU・ELU・GELUを比較｜活性化関数の選び方",
-        "url": "https://zenn.dev/wasurenamemo/articles/5e273620953b7b",
-        "site": "Zenn(機械学習)",
-        "published": "2026-03-15T14:00:03Z",
-        "description": "「活性化関数って結局どれを使えばいいの？」\nMNISTで4種類を同条件で実験した結果をまとめます。結論：迷ったらReLU、精度を追うならGELUです。\n\n 比較した4種類\n\n\n\n関数\n特徴\n主な用途\n\n\n\n\nReLU\nシンプル・高速。死んだReLU問題あり\n画像分類全般\n\n\nLeakyReLU\n負領域も小さく通す。死んだReLUを防止\nReLUの代替\n\n\nELU\n負領域で指数的に変化。収束が速い\n...",
-        "category": "AI・技術",
-        "rss_category": "",
-        "image_url": ""
-      },
-      {
-        "title": "サポートベクトルマシンの数理 ── 双対問題によるハードマージン・ソフトマージンSVMの導出",
-        "url": "https://zenn.dev/sennsann99/articles/e0a7fe119242ca",
-        "site": "Zenn(機械学習)",
-        "published": "2026-03-15T11:30:58Z",
-        "description": "はじめに\nサポートベクトルマシン（SVM）は、分類問題における最も理論的に洗練された手法の一つです。その定式化は制約付き最適化問題として記述され、ラグランジュの双対理論を用いて解かれます。\n本記事では、まず双対問題の基本的な解法を具体例で確認した上で、SVMのハードマージン・ソフトマージンそれぞれの定式化と双対問題への帰着を導出します。\n\n 本記事で扱う内容\n\nラグランジュ双対問題の具体例による理...",
-        "category": "AI・技術",
-        "rss_category": "",
-        "image_url": ""
-      },
-      {
-        "title": "ラッソ回帰の数理 ── 劣微分によるスパース解の導出",
-        "url": "https://zenn.dev/sennsann99/articles/7fea15951e428d",
-        "site": "Zenn(機械学習)",
-        "published": "2026-03-15T11:25:20Z",
-        "description": "はじめに\n本記事では、　ラッソ回帰（Lasso Regression）　のパラメータがどのように決定されるかを、数式を追いながら丁寧に導出します。特に、L1正則化項が微分不可能な点をもつことに着目し、劣微分（subdifferential）　の概念を導入することで、パラメータが厳密にゼロになる「スパース性」が自然に生じる仕組みを明らかにします。\n\n 本記事で扱う内容\n\nラッソ回帰の誤差関数とその微...",
-        "category": "AI・技術",
-        "rss_category": "",
-        "image_url": ""
-      },
-      {
-        "title": "🤗 HuggingFace完全活用ガイド — Kaggle・NLP・データ分析で即戦力になるための全手順",
-        "url": "https://zenn.dev/ymtezo/articles/huggingface-guide-2026",
-        "site": "Zenn(機械学習)",
-        "published": "2026-03-15T11:18:15Z",
-        "description": "!\n動作確認日: 2026年3月12日\ntransformers==4.40.0 / datasets==2.19.0 / peft==0.10.0 で動作確認済み\n\n\n はじめに\nHuggingFaceは一言で言えば 「AIのGitHub」 です。\n2026年現在、100万以上のモデル・15万以上のデータセットが公開されており、Kaggleの上位解法ほぼ全てに登場し、NLP研究の標準ツールとなっ...",
-        "category": "AI・技術",
-        "rss_category": "",
-        "image_url": ""
-      },
-      {
-        "title": "生成AIが魅せる「同相の幻惑」 〜決定論的写像の錯覚、その位相幾何学的深淵〜",
-        "url": "https://zenn.dev/albatrosary/articles/eccb6241433ef7",
-        "site": "Zenn(機械学習)",
-        "published": "2026-03-15T01:28:47Z",
-        "description": "導入\n前回の記事では、Softmax CrowdingとSemantic Driftにより、自己回帰モデルの長時間生成が数学的に必ず破綻することを見た。\nではなぜ、我々エンジニアはなお「完璧なプロンプトを与えれば、完璧な出力が得られる」という 決定論的写像（Deterministic Mapping） の幻想に囚われ続けてしまうのか？\nその答えは、LLMの潜在空間（Latent Space）が持つ...",
-        "category": "AI・技術",
-        "rss_category": "",
-        "image_url": ""
-      },
-      {
-        "title": "【Keras実験】学習率スケジューラ5種を比較｜ReduceLROnplateau・CosineDecay・OneCycleなど",
-        "url": "https://zenn.dev/wasurenamemo/articles/30c30a03c138f5",
-        "site": "Zenn(機械学習)",
-        "published": "2026-03-15T01:01:00Z",
-        "description": "「学習率スケジューラって種類が多くてどれを使えばいいかわからない」\nMNISTで5種類を同条件で実験した結果をまとめます。結論：迷ったらReduceLROnPlateauが最も安定でした。\n\n 比較した5種類\n\n\n\nスケジューラ\n特徴\n\n\n\n\nStepDecay\n一定エポックごとに段階的に減少\n\n\nExponentialDecay\n指数関数的に滑らかに減少\n\n\nReduceLROnPlateau\n...",
-        "category": "AI・技術",
-        "rss_category": "",
-        "image_url": ""
-      },
-      {
-        "title": "【G検定対策】教師あり学習・教師なし学習・強化学習をやさしく整理してみる",
-        "url": "https://zenn.dev/bit_and_coffee/articles/gk-supervised-unsupervised-reinforcement-learning",
-        "site": "Zenn(機械学習)",
-        "published": "2026-03-14T23:02:10Z",
-        "description": "はじめに\n今回は、G検定でもかなり重要な「機械学習の学習スタイル3兄弟」をまとめます。\n具体的には、教師あり学習、教師なし学習、強化学習 の3つです。\n名前だけ見るとちょっと堅そうですが、ここは落ち着いて大丈夫です。\nイメージとしては、\n\n正解を見ながら学ぶのが教師あり学習\n正解なしでパターンを見つけるのが教師なし学習\n試行錯誤しながら報酬で学ぶのが強化学習\n\nという整理でまずはOKです。\n本記事...",
-        "category": "AI・技術",
-        "rss_category": "",
-        "image_url": ""
-      },
-      {
-        "title": "【馬券戦略編③】ポートフォリオ戦略と総合評価：リスクを分散し、最強の布陣を組む",
-        "url": "https://zenn.dev/ricotiler/articles/keiba-ai-12-portfolio-betting-strategy",
-        "site": "Zenn(機械学習)",
-        "published": "2026-03-14T21:49:10Z",
-        "description": "【馬券戦略編③】ポートフォリオ戦略と総合評価：リスクを分散し、最強の布陣を組む\n\n はじめに：単一戦略の限界\n前回までで、単勝や複勝など、各券種ごとに「勝てるルール」を見つけ出しました。\nしかし、一つの戦略だけで運用することにはリスクがあります。\n\n\n単勝戦略: 回収率は高いが、的中率が低く、不的中が続くと精神的にきつい（ドローダウンが大きい）。\n\n複勝戦略: 的中率は高いが、利益率が低く、大きく...",
-        "category": "AI・技術",
-        "rss_category": "",
-        "image_url": ""
-      },
-      {
-        "title": "01_競馬AIで的中率を上げても儲からない理由を数式で説明する",
-        "url": "https://zenn.dev/keiba_ai_rui/articles/beac006d2df1f8",
-        "site": "Zenn(機械学習)",
-        "published": "2026-03-14T15:33:23Z",
-        "description": "最初に信じていた嘘\n競馬AIを作り始めた頃、私は「的中率50%のモデルを作れれば勝てる」と信じていました。\n半分当たるなら儲かるはず。そう思っていました。\nでも現実は違いました。的中率を上げるほど、なぜかROI（回収率）は下がっていった。「当たるけど儲からない」という奇妙な状況が続きました。\n\n 的中率とROIの関係を数式で考える\nまず、ROIの定義から確認します。\nROI = 払戻合計 / 投資...",
         "category": "AI・技術",
         "rss_category": "",
         "image_url": ""
@@ -189,91 +127,91 @@
     ],
     "一昨日": [
       {
-        "title": "【Keras実験】AdamWとは？Adamとの違いを実験で比較｜迷ったらAdamWの理由",
-        "url": "https://zenn.dev/wasurenamemo/articles/242abbeb5912d2",
+        "title": "【Keras実験】ReLU・LeakyReLU・ELU・GELUを比較｜活性化関数の選び方",
+        "url": "https://zenn.dev/wasurenamemo/articles/5e273620953b7b",
         "site": "Zenn(機械学習)",
-        "published": "2026-03-14T14:43:46Z",
-        "description": "「AdamとAdamWって何が違うの？」「どっちを使えばいいの？」\n実験結果をもとに答えます。結論：迷ったらAdamWです。\n\n AdamWとは？\nAdamW（Decoupled Weight Decay Regularization）は2017年に提案されたAdamの改良版です。\nAdamとの違いは1点だけです。\n\n\n\n項目\nAdam\nAdamW\n\n\n\n\nWeight Decayの扱い\n勾配更新...",
+        "published": "2026-03-15T14:00:03Z",
+        "description": "「活性化関数って結局どれを使えばいいの？」\nMNISTで4種類を同条件で実験した結果をまとめます。結論：迷ったらReLU、精度を追うならGELUです。\n\n 比較した4種類\n\n\n\n関数\n特徴\n主な用途\n\n\n\n\nReLU\nシンプル・高速。死んだReLU問題あり\n画像分類全般\n\n\nLeakyReLU\n負領域も小さく通す。死んだReLUを防止\nReLUの代替\n\n\nELU\n負領域で指数的に変化。収束が速い\n...",
         "category": "AI・技術",
         "rss_category": "",
         "image_url": ""
       },
       {
-        "title": "Dense層（全結合層）とは？畳み込み層との違いをわかりやすく解説【Keras】",
-        "url": "https://zenn.dev/wasurenamemo/articles/f250113f194293",
+        "title": "サポートベクトルマシンの数理 ── 双対問題によるハードマージン・ソフトマージンSVMの導出",
+        "url": "https://zenn.dev/sennsann99/articles/e0a7fe119242ca",
         "site": "Zenn(機械学習)",
-        "published": "2026-03-14T13:43:49Z",
-        "description": "KerasでCNNを書くとき、必ず登場するDense層。「なんとなく使っているけど仕組みがよくわからない」という方向けに、畳み込み層との違いを中心にまとめます。\n\n Dense層とは？\nDense層（全結合層） とは、前の層のすべてのノードと結合し、重み付き和を計算する層です。\n計算式はシンプルです。\n出力 = 活性化関数（入力ベクトル × 重み行列 + バイアス）\n入力が3個・出力が2個なら、3...",
+        "published": "2026-03-15T11:30:58Z",
+        "description": "はじめに\nサポートベクトルマシン（SVM）は、分類問題における最も理論的に洗練された手法の一つです。その定式化は制約付き最適化問題として記述され、ラグランジュの双対理論を用いて解かれます。\n本記事では、まず双対問題の基本的な解法を具体例で確認した上で、SVMのハードマージン・ソフトマージンそれぞれの定式化と双対問題への帰着を導出します。\n\n 本記事で扱う内容\n\nラグランジュ双対問題の具体例による理...",
         "category": "AI・技術",
         "rss_category": "",
         "image_url": ""
       },
       {
-        "title": "なぜ競艇AIを作ったか——ヘッジファンドを辞めてコードを書き始めた理由",
-        "url": "https://zenn.dev/minazuki_airi/articles/kyotei-ai-01-why",
+        "title": "ラッソ回帰の数理 ── 劣微分によるスパース解の導出",
+        "url": "https://zenn.dev/sennsann99/articles/7fea15951e428d",
         "site": "Zenn(機械学習)",
-        "published": "2026-03-14T12:50:27Z",
-        "description": "外資系ヘッジファンドを辞めて最初にやったこと。\n競艇場に行って、1号艇に全ツッパして負けた。\nあれは1月の平和島だった。ターミナル近くのラーメン屋でかき込んだ昼飯のあと、改札を抜けて初めて競艇場に足を踏み入れた。スタンドに座って、コースの湿った匂いを吸い込んで、なんとなくプログラムをめくって、1号艇に5,000円投げた。\n1着になると思ったわけじゃない。競艇のことを何も知らなかったから、とりあえず...",
+        "published": "2026-03-15T11:25:20Z",
+        "description": "はじめに\n本記事では、　ラッソ回帰（Lasso Regression）　のパラメータがどのように決定されるかを、数式を追いながら丁寧に導出します。特に、L1正則化項が微分不可能な点をもつことに着目し、劣微分（subdifferential）　の概念を導入することで、パラメータが厳密にゼロになる「スパース性」が自然に生じる仕組みを明らかにします。\n\n 本記事で扱う内容\n\nラッソ回帰の誤差関数とその微...",
         "category": "AI・技術",
         "rss_category": "",
         "image_url": ""
       },
       {
-        "title": "1-bit LLMってなに？BitNetを調べたら「え、これって革命じゃない？」ってなった話",
-        "url": "https://zenn.dev/hina_dev/articles/bitnet-1bit-llm-intro",
+        "title": "🤗 HuggingFace完全活用ガイド — Kaggle・NLP・データ分析で即戦力になるための全手順",
+        "url": "https://zenn.dev/ymtezo/articles/huggingface-guide-2026",
         "site": "Zenn(機械学習)",
-        "published": "2026-03-14T11:37:37Z",
-        "description": "GitHub Trendingを眺めていたら、microsoft/BitNet がいきなり2,000以上スターを集めていて気になりました。\n「1-bit LLM」ってなんぞ？　と思って調べたら、思ってたより全然すごい話だったので共有します。\n\n 普通のLLMはどうなってる？\nまず前提として、GPTとかClaudeとかのLLMは、「重み（パラメータ）」と呼ばれる数値の塊でできています。\n普通はこの重...",
+        "published": "2026-03-15T11:18:15Z",
+        "description": "!\n動作確認日: 2026年3月12日\ntransformers==4.40.0 / datasets==2.19.0 / peft==0.10.0 で動作確認済み\n\n\n はじめに\nHuggingFaceは一言で言えば 「AIのGitHub」 です。\n2026年現在、100万以上のモデル・15万以上のデータセットが公開されており、Kaggleの上位解法ほぼ全てに登場し、NLP研究の標準ツールとなっ...",
         "category": "AI・技術",
         "rss_category": "",
         "image_url": ""
       },
       {
-        "title": "AI時代のエンジニアスキル格差を解消する実践的学習ロードマップ【2026年版】",
-        "url": "https://zenn.dev/ailmarketing/articles/20260313-ai-learning-roadmap",
+        "title": "生成AIが魅せる「同相の幻惑」 〜決定論的写像の錯覚、その位相幾何学的深淵〜",
+        "url": "https://zenn.dev/albatrosary/articles/eccb6241433ef7",
         "site": "Zenn(機械学習)",
-        "published": "2026-03-14T01:39:35Z",
-        "description": "AI時代のエンジニアスキル格差を解消する実践的学習ロードマップ【2026年版】\n\n はじめに\n2026年現在、AI技術の急速な進歩により、エンジニア間でのスキル格差が顕著になっています。ChatGPT、Claude、Geminiといった大規模言語モデル（LLM）の普及により、AI を活用できるエンジニアとそうでないエンジニアの生産性に大きな差が生まれています。\n本記事では、AI時代に取り残されない...",
+        "published": "2026-03-15T01:28:47Z",
+        "description": "導入\n前回の記事では、Softmax CrowdingとSemantic Driftにより、自己回帰モデルの長時間生成が数学的に必ず破綻することを見た。\nではなぜ、我々エンジニアはなお「完璧なプロンプトを与えれば、完璧な出力が得られる」という 決定論的写像（Deterministic Mapping） の幻想に囚われ続けてしまうのか？\nその答えは、LLMの潜在空間（Latent Space）が持つ...",
         "category": "AI・技術",
         "rss_category": "",
         "image_url": ""
       },
       {
-        "title": "生成AIの挙動を支配する「2つの数理法則」：Softmax CrowdingとSemantic Drift",
-        "url": "https://zenn.dev/albatrosary/articles/4126f5b78249c6",
+        "title": "【Keras実験】学習率スケジューラ5種を比較｜ReduceLROnplateau・CosineDecay・OneCycleなど",
+        "url": "https://zenn.dev/wasurenamemo/articles/30c30a03c138f5",
         "site": "Zenn(機械学習)",
-        "published": "2026-03-14T01:14:19Z",
-        "description": "導入\n昨今、ITエンジニアの界隈では「ChatGPTとClaude、どちらの精度が高いか」「Geminiの超広大なコンテキストウィンドウがあればRAGは不要か」といった、ツールの比較検証が日夜行われています。\nしかし、厳しい現実を言えば、「どのAPIを選び、どのプロンプトテクニックを駆使するか」といった議論は、極めて表層的な問題に過ぎません。\n生成AIを実際のアプリケーションやシステムに組み込む上...",
+        "published": "2026-03-15T01:01:00Z",
+        "description": "「学習率スケジューラって種類が多くてどれを使えばいいかわからない」\nMNISTで5種類を同条件で実験した結果をまとめます。結論：迷ったらReduceLROnPlateauが最も安定でした。\n\n 比較した5種類\n\n\n\nスケジューラ\n特徴\n\n\n\n\nStepDecay\n一定エポックごとに段階的に減少\n\n\nExponentialDecay\n指数関数的に滑らかに減少\n\n\nReduceLROnPlateau\n...",
         "category": "AI・技術",
         "rss_category": "",
         "image_url": ""
       },
       {
-        "title": "生成AIにおける「意味ドリフト」の数理的考察 〜なぜ設定やFTは揺らぎを根絶できないのか〜",
-        "url": "https://zenn.dev/albatrosary/articles/a19d3347567454",
+        "title": "【G検定対策】教師あり学習・教師なし学習・強化学習をやさしく整理してみる",
+        "url": "https://zenn.dev/bit_and_coffee/articles/gk-supervised-unsupervised-reinforcement-learning",
         "site": "Zenn(機械学習)",
-        "published": "2026-03-13T22:51:30Z",
-        "description": "1. 導入\n「システムプロンプトでガチガチにキャラクター設定を書いたのに、会話が長くなるといつの間にか忘れられている」\n「ファインチューニング（FT）で専門知識を学習させたのに、たまに全く関係のない嘘をつく」\nLLMを使った開発をしていると、誰もが一度はこんな経験をするのではないでしょうか。この現象は意味ドリフト（Semantic Drift） と呼ばれます。\n多くの人は、これを「プロンプトの書き...",
+        "published": "2026-03-14T23:02:10Z",
+        "description": "はじめに\n今回は、G検定でもかなり重要な「機械学習の学習スタイル3兄弟」をまとめます。\n具体的には、教師あり学習、教師なし学習、強化学習 の3つです。\n名前だけ見るとちょっと堅そうですが、ここは落ち着いて大丈夫です。\nイメージとしては、\n\n正解を見ながら学ぶのが教師あり学習\n正解なしでパターンを見つけるのが教師なし学習\n試行錯誤しながら報酬で学ぶのが強化学習\n\nという整理でまずはOKです。\n本記事...",
         "category": "AI・技術",
         "rss_category": "",
         "image_url": ""
       },
       {
-        "title": "T4c重み0.2595の発見 — 学習が示した非対称性",
-        "url": "https://zenn.dev/m1x_karasu/articles/t4c-discovery",
+        "title": "【馬券戦略編③】ポートフォリオ戦略と総合評価：リスクを分散し、最強の布陣を組む",
+        "url": "https://zenn.dev/ricotiler/articles/keiba-ai-12-portfolio-betting-strategy",
         "site": "Zenn(機械学習)",
-        "published": "2026-03-13T18:00:49Z",
-        "description": "ハエの天敵は、空から来る。\n鳥、ヤモリ、クモ。1億年の進化の中で、ショウジョウバエは「上からの危険」を最優先で検出するよう最適化された。\nその痕跡が、T4cの重みに刻まれている。\nT4c = 0.2595  ← 4方向で最大\nT4a = 0.2408\nT4b = 0.2495\nT4d = 0.2503\n\n 学習が暴いた矛盾\nv2で「全方向均等looming」を学習させたとき、T4cだけが生物値を下...",
+        "published": "2026-03-14T21:49:10Z",
+        "description": "【馬券戦略編③】ポートフォリオ戦略と総合評価：リスクを分散し、最強の布陣を組む\n\n はじめに：単一戦略の限界\n前回までで、単勝や複勝など、各券種ごとに「勝てるルール」を見つけ出しました。\nしかし、一つの戦略だけで運用することにはリスクがあります。\n\n\n単勝戦略: 回収率は高いが、的中率が低く、不的中が続くと精神的にきつい（ドローダウンが大きい）。\n\n複勝戦略: 的中率は高いが、利益率が低く、大きく...",
         "category": "AI・技術",
         "rss_category": "",
         "image_url": ""
       },
       {
-        "title": "複数のレコメンドシステム運用から学んだMLOpsのリアル",
-        "url": "https://zenn.dev/ksk_17090k1/articles/9e5f9ad0706415",
+        "title": "01_競馬AIで的中率を上げても儲からない理由を数式で説明する",
+        "url": "https://zenn.dev/keiba_ai_rui/articles/beac006d2df1f8",
         "site": "Zenn(機械学習)",
-        "published": "2026-03-13T16:43:14Z",
-        "description": "はじめに\nこんにちは、とある事業会社でMLエンジニアをやっている者です。\nいま私がいる会社では、運用中のレコメンドシステムがいくつかあります。\nこの記事では、\n複数のレコメンドを運用して得られた学びや、そこから考える今後進めていくMLOpsの方向性について書きたいと思います。\n教科書的ではないリアルなMLOpsに興味がある方、レコメンドシステムを運用中の方の参考に少しでもなれば嬉しいです。\n!\nこ...",
+        "published": "2026-03-14T15:33:23Z",
+        "description": "最初に信じていた嘘\n競馬AIを作り始めた頃、私は「的中率50%のモデルを作れれば勝てる」と信じていました。\n半分当たるなら儲かるはず。そう思っていました。\nでも現実は違いました。的中率を上げるほど、なぜかROI（回収率）は下がっていった。「当たるけど儲からない」という奇妙な状況が続きました。\n\n 的中率とROIの関係を数式で考える\nまず、ROIの定義から確認します。\nROI = 払戻合計 / 投資...",
         "category": "AI・技術",
         "rss_category": "",
         "image_url": ""
@@ -281,11 +219,41 @@
     ],
     "2026-03": [
       {
+        "title": "04_スタッキングでROIのブレを抑えた話：Isotonic Regressionの役割",
+        "url": "https://zenn.dev/keiba_ai_rui/articles/0bd6771159a6eb",
+        "site": "Zenn(機械学習)",
+        "published": "2026-03-16T11:04:57Z",
+        "description": "スタッキングでROIのブレを抑えた話：Isotonic Regressionの役割\n\n 単体LightGBMの問題：確率がズレている\nLightGBMで予測確率を出力すると、その確率は「実際の確率」とズレていることが多いです。\n例えば、モデルが「この馬が1着になる確率は30%」と出力しても、実際に「モデルが30%と出した馬」を100回集めると、1着になった回数は20回だったり40回だったりします。...",
+        "category": "AI・技術",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "AIツールで生産性30%向上｜2026年エンジニア市場予測とAI活用戦略",
+        "url": "https://zenn.dev/ailmarketing/articles/20260316-ai302026ai",
+        "site": "Zenn(機械学習)",
+        "published": "2026-03-16T08:26:42Z",
+        "description": "AIツールで生産性30%向上｜2026年エンジニア市場予測とAI活用戦略\n\n はじめに\n2026年のエンジニア市場は大きな変革期を迎えています。IT人材不足が79万人に達すると予測される一方で、AIツールの活用により生産性が30%向上するという興味深いデータが注目されています。\n本記事では、最新の市場データを基に、エンジニアがAIをどう活用して生産性を向上させ、変化する市場で競争力を維持できるかを...",
+        "category": "AI・技術",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
         "title": "AIを「盆栽」にしないためのETL戦略 ―― 大規模分析",
         "url": "https://zenn.dev/nakano_teppei/articles/d4d7656e2b37d2",
         "site": "Zenn(機械学習)",
         "published": "2026-03-16T07:50:28Z",
         "description": "AIエンジニアにとって、モデルの学習は「盆栽」のようなものです。丹精込めて形を整えるのは楽しい。しかし、実務において重要なのは、その盆栽を置く「庭（データ基盤）」をどう管理するかです。\n今回は、私が経験した2つの対照的なプロジェクトを例に、ETL（Extract, Transform, Load）の具体的な技術選定と実装の勘所を共有します。\n\n 1. 「動的」なETL：ブロックチェーン異常検知の場...",
+        "category": "AI・技術",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "PythonでMFCCを計算する ― 音声認識で使われる特徴量を理解する",
+        "url": "https://zenn.dev/kta805/articles/fcf8732cc902cc",
+        "site": "Zenn(機械学習)",
+        "published": "2026-03-16T07:40:06Z",
+        "description": "PythonでMFCCを計算する ― 音声認識で使われる特徴量を理解する\nこれまでの記事では Python を使って\n\nFFT\nスペクトログラム\nメルスペクトログラム\n\nを作成してきました。\n今回は音声認識で最も有名な特徴量\nMFCC（Mel-Frequency Cepstral Coefficients）\nを計算してみます。\n音声認識や話者識別では\nこのMFCCが入力特徴量として使われることが非...",
         "category": "AI・技術",
         "rss_category": "",
         "image_url": ""
@@ -456,26 +424,6 @@
         "site": "Zenn(機械学習)",
         "published": "2026-03-14T15:33:23Z",
         "description": "最初に信じていた嘘\n競馬AIを作り始めた頃、私は「的中率50%のモデルを作れれば勝てる」と信じていました。\n半分当たるなら儲かるはず。そう思っていました。\nでも現実は違いました。的中率を上げるほど、なぜかROI（回収率）は下がっていった。「当たるけど儲からない」という奇妙な状況が続きました。\n\n 的中率とROIの関係を数式で考える\nまず、ROIの定義から確認します。\nROI = 払戻合計 / 投資...",
-        "category": "AI・技術",
-        "rss_category": "",
-        "image_url": ""
-      },
-      {
-        "title": "【Keras実験】AdamWとは？Adamとの違いを実験で比較｜迷ったらAdamWの理由",
-        "url": "https://zenn.dev/wasurenamemo/articles/242abbeb5912d2",
-        "site": "Zenn(機械学習)",
-        "published": "2026-03-14T14:43:46Z",
-        "description": "「AdamとAdamWって何が違うの？」「どっちを使えばいいの？」\n実験結果をもとに答えます。結論：迷ったらAdamWです。\n\n AdamWとは？\nAdamW（Decoupled Weight Decay Regularization）は2017年に提案されたAdamの改良版です。\nAdamとの違いは1点だけです。\n\n\n\n項目\nAdam\nAdamW\n\n\n\n\nWeight Decayの扱い\n勾配更新...",
-        "category": "AI・技術",
-        "rss_category": "",
-        "image_url": ""
-      },
-      {
-        "title": "Dense層（全結合層）とは？畳み込み層との違いをわかりやすく解説【Keras】",
-        "url": "https://zenn.dev/wasurenamemo/articles/f250113f194293",
-        "site": "Zenn(機械学習)",
-        "published": "2026-03-14T13:43:49Z",
-        "description": "KerasでCNNを書くとき、必ず登場するDense層。「なんとなく使っているけど仕組みがよくわからない」という方向けに、畳み込み層との違いを中心にまとめます。\n\n Dense層とは？\nDense層（全結合層） とは、前の層のすべてのノードと結合し、重み付き和を計算する層です。\n計算式はシンプルです。\n出力 = 活性化関数（入力ベクトル × 重み行列 + バイアス）\n入力が3個・出力が2個なら、3...",
         "category": "AI・技術",
         "rss_category": "",
         "image_url": ""
