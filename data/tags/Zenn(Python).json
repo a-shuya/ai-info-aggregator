@@ -1,8 +1,30 @@
 {
   "site": "Zenn(Python)",
-  "last_updated": "2026-03-16T21:53:37.625779",
-  "total_articles": 2969,
+  "last_updated": "2026-03-16T22:39:11.377112",
+  "total_articles": 2979,
   "articles_by_date": {
+    "本日": [
+      {
+        "title": "1人OSS開発を『詰ませない』ためのAIエージェント設計 - wandas 開発の実践例",
+        "url": "https://zenn.dev/kasahart/articles/kasahart-20260315-wandas-2",
+        "site": "Zenn(Python)",
+        "published": "2026-03-16T22:05:57Z",
+        "description": "はじめに\nこんにちは。普段は会社勤めをしながら、3歳の子どもを育てる父親として、限られた空き時間をやり繰りしてOSS開発をしています。\n家族が寝静まった後の短い時間でプロジェクトを前に進めるため、1年前からGitHub Copilotを頼れる「共同開発者」としてフル活用してきました。\nしかし、AIエージェントにタスクを丸投げしようとすると、生成されたコードがメンテ不可になったり、コンテキストを無視...",
+        "category": "開発",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "[Matplotlib入門シリーズ第11回] アニメーション描画入門2",
+        "url": "https://zenn.dev/haruhiro1020/articles/ef45041efe609e",
+        "site": "Zenn(Python)",
+        "published": "2026-03-16T22:00:06Z",
+        "description": "はじめに\n本記事は「Pythonでデータを可視化するMatplotlib入門」シリーズの第11回です．\n前回の記事では，ArtistAnimation を使用してアニメーションを作成しました．\nArtistAnimation は\n\nフレームを事前に作成\nパラパラ漫画のように再生\n\nという仕組みでした．\nしかし，この方法には下記の欠点があります．\n\nフレーム数が多いとメモリを消費\n大規模アニメーショ...",
+        "category": "開発",
+        "rss_category": "",
+        "image_url": ""
+      }
+    ],
     "昨日": [
       {
         "title": "エンコーディングの解説と実装",
@@ -20,6 +42,26 @@
         "site": "Zenn(Python)",
         "published": "2026-03-16T13:50:14Z",
         "description": "EDA時、オブジェクトのデータをエンコーディングしようとするけど内容を知らないとできない。でもhreadとかで確認すると確認しずらい\nしかも列が多すぎると表示されない列がある\nそこでこのように表示させる\ndef check_object_columns(df):\n\n    # .select_dtypes(include=\"\")でデータタイプの指定ができる\n    #.columnsでカラム名の一...",
+        "category": "開発",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "【Keras実験】Xavier vs He初期化の違いをMNISTで比較｜ReLUならどちらを選ぶ？",
+        "url": "https://zenn.dev/wasurenamemo/articles/aa6ae503ce655d",
+        "site": "Zenn(Python)",
+        "published": "2026-03-16T13:19:56Z",
+        "description": "「kernel_initializerってデフォルトのままでいいの？」「XavierとHeって何が違うの？」\nMNISTで実験した結果をまとめます。結論：ReLUを使うならHe、Sigmoid/TanhならXavierです。\n\n なぜ初期化が重要なのか\n重みの初期値が不適切だと、層を通過するごとに信号が極端に小さく・大きくなり、勾配消失・勾配爆発が起きて学習が進まなくなります。\n特に深いネットワー...",
+        "category": "開発",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "【Keras実験】BatchNormalizationとDropoutは併用すべきか？4パターンをMNISTで比較",
+        "url": "https://zenn.dev/wasurenamemo/articles/6f7c41acc66fcb",
+        "site": "Zenn(Python)",
+        "published": "2026-03-16T13:13:58Z",
+        "description": "「BNとDropout、どっちを使えばいい？両方入れていいの？」\nMNISTで4パターンを実際に動かして比較しました。結論：安定性を重視するならBN→Dropoutの順で両方入れるのが最良でした。\n\n 比較した4パターン\n\n\n\nパターン\n構成\n\n\n\n\nA\nなし（ベースライン）\n\n\nB\nBatchNormalizationのみ\n\n\nC\nDropoutのみ（rate=0.3）\n\n\nD\nBN → Dro...",
         "category": "開発",
         "rss_category": "",
         "image_url": ""
@@ -45,6 +87,16 @@
         "image_url": ""
       },
       {
+        "title": "LLMアプリの正体は「mdとコードのサンドイッチ」だった",
+        "url": "https://zenn.dev/shimo4228/articles/llm-app-sandwich-architecture",
+        "site": "Zenn(Python)",
+        "published": "2026-03-16T12:33:03Z",
+        "description": "ローカルの9Bモデルで自作エージェントの insight 機能を再実装したら、Claude Code とまったく同じ構造が出てきた。\nLLM エージェントの振る舞いは、Markdown ファイル（以下 md）に書かれた自然言語の指示で定義できる。コードは LLM の出力をパースし、安全に実行するための骨格にすぎない。——前作で Qwen 9B のエージェントを作りながらそう書いた。あのとき気づいて...",
+        "category": "開発",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
         "title": "J-Quants API × EDINET DB — PBR/PER/配当利回りをPythonで算出する",
         "url": "https://zenn.dev/edinetdb/articles/edinetdb-jquants-guide",
         "site": "Zenn(Python)",
@@ -55,11 +107,11 @@
         "image_url": ""
       },
       {
-        "title": "ローカルLLMで日韓翻訳Discord Botを自作した話",
-        "url": "https://zenn.dev/linux_club/articles/d0b9027e52572a",
+        "title": "Claude Codeを使ったアプリ開発を4日間本気で学んでみた：1日目",
+        "url": "https://zenn.dev/gummybird/articles/866ee2471cbbcb",
         "site": "Zenn(Python)",
-        "published": "2026-03-16T10:00:05Z",
-        "description": "はじめに\nオンラインゲームで一緒に遊んでる韓国の友達がいて、ゲーム中に\n「ㅋㅋㅋ」「ㄷㄷ」「개잘해」みたいな表現がよく飛んでくる。\nDeepLを開く余裕もないし、そもそもコピペも面倒くさい。\nだったら自動で翻訳して発音まで教えてくれるDiscord Botを作ればよくない？\nと思って作り始めたのがこのプロジェクトです。\n\n 作ったもの\n\n 実際の動作\n日本語を送ると韓国語＋発音が返ってきます。\n\n...",
+        "published": "2026-03-16T11:08:36Z",
+        "description": "Claude Codeを使ったアプリ開発を4日間本気で学んでみた：1日目\n「インストールはしたけどなんかよくわからないままチャットしてる」という状態から抜け出したくて、会社から4日間のスキルアップ休暇をもらったのを機に、ちゃんと使いこなせるようになることにした。\n結果、3時間でAI情報収集システムをゼロから作りながら一通りの機能を体験できた。\n自分もまだ学び始めたばかりで、この記事は完全な習得記録...",
         "category": "開発",
         "rss_category": "",
         "image_url": ""
@@ -70,6 +122,16 @@
         "site": "Zenn(Python)",
         "published": "2026-03-16T10:00:05Z",
         "description": "はじめに\nみんな一度は夢見る「一攫千金」「億り人」……。\nそんな甘い話がそこら辺に転がってるわけないのは、頭ではわかってるんですけどね！\nそれでも夢くらい見させてほしい〜ということで、今回は FX のデータをちゃんと集めて、分析してみる環境を作るところから始めてみました。\n最終的な理想としては、\n\n過去データからそれっぽい傾向を分析\nエントリータイミングの把握や予測\n損切り・利確の目安\n\nあたりを...",
+        "category": "開発",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "ローカルLLMで日韓翻訳Discord Botを自作した話",
+        "url": "https://zenn.dev/linux_club/articles/d0b9027e52572a",
+        "site": "Zenn(Python)",
+        "published": "2026-03-16T10:00:05Z",
+        "description": "はじめに\nオンラインゲームで一緒に遊んでる韓国の友達がいて、ゲーム中に\n「ㅋㅋㅋ」「ㄷㄷ」「개잘해」みたいな表現がよく飛んでくる。\nDeepLを開く余裕もないし、そもそもコピペも面倒くさい。\nだったら自動で翻訳して発音まで教えてくれるDiscord Botを作ればよくない？\nと思って作り始めたのがこのプロジェクトです。\n\n 作ったもの\n\n 実際の動作\n日本語を送ると韓国語＋発音が返ってきます。\n\n...",
         "category": "開発",
         "rss_category": "",
         "image_url": ""
@@ -160,16 +222,6 @@
         "site": "Zenn(Python)",
         "published": "2026-03-16T05:49:51Z",
         "description": "設問ページ\n\n🔗ABC-448 A - chmin\n\n\n\n 提出結果\ndef getIntMap():\n    return map(int, input().split())\n\n\ndef getIntList():\n    return list(map(int, input().split()))\n\n\ndef main():\n    N, X = getIntMap()\n    A = get...",
-        "category": "開発",
-        "rss_category": "",
-        "image_url": ""
-      },
-      {
-        "title": "Decision Transformerは本当にRTGで行動が変わるのか？  最小実験で検証してみた",
-        "url": "https://zenn.dev/livingston/articles/794da809d770c7",
-        "site": "Zenn(Python)",
-        "published": "2026-03-16T03:34:42Z",
-        "description": "Decision Transformerは本当にRTGで行動が変わるのか？\nこの記事は次の論文をもとにした検証記事である。\nDecision Transformer: Reinforcement Learning via Sequence Modeling\nhttps://arxiv.org/abs/2106.01345\nこの論文は少々古いが、Decision Transformer（DT）は、\n...",
         "category": "開発",
         "rss_category": "",
         "image_url": ""
@@ -469,6 +521,26 @@
     ],
     "2026-03": [
       {
+        "title": "1人OSS開発を『詰ませない』ためのAIエージェント設計 - wandas 開発の実践例",
+        "url": "https://zenn.dev/kasahart/articles/kasahart-20260315-wandas-2",
+        "site": "Zenn(Python)",
+        "published": "2026-03-16T22:05:57Z",
+        "description": "はじめに\nこんにちは。普段は会社勤めをしながら、3歳の子どもを育てる父親として、限られた空き時間をやり繰りしてOSS開発をしています。\n家族が寝静まった後の短い時間でプロジェクトを前に進めるため、1年前からGitHub Copilotを頼れる「共同開発者」としてフル活用してきました。\nしかし、AIエージェントにタスクを丸投げしようとすると、生成されたコードがメンテ不可になったり、コンテキストを無視...",
+        "category": "開発",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "[Matplotlib入門シリーズ第11回] アニメーション描画入門2",
+        "url": "https://zenn.dev/haruhiro1020/articles/ef45041efe609e",
+        "site": "Zenn(Python)",
+        "published": "2026-03-16T22:00:06Z",
+        "description": "はじめに\n本記事は「Pythonでデータを可視化するMatplotlib入門」シリーズの第11回です．\n前回の記事では，ArtistAnimation を使用してアニメーションを作成しました．\nArtistAnimation は\n\nフレームを事前に作成\nパラパラ漫画のように再生\n\nという仕組みでした．\nしかし，この方法には下記の欠点があります．\n\nフレーム数が多いとメモリを消費\n大規模アニメーショ...",
+        "category": "開発",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
         "title": "エンコーディングの解説と実装",
         "url": "https://zenn.dev/hiromu2001/articles/79c873e037e01a",
         "site": "Zenn(Python)",
@@ -484,6 +556,26 @@
         "site": "Zenn(Python)",
         "published": "2026-03-16T13:50:14Z",
         "description": "EDA時、オブジェクトのデータをエンコーディングしようとするけど内容を知らないとできない。でもhreadとかで確認すると確認しずらい\nしかも列が多すぎると表示されない列がある\nそこでこのように表示させる\ndef check_object_columns(df):\n\n    # .select_dtypes(include=\"\")でデータタイプの指定ができる\n    #.columnsでカラム名の一...",
+        "category": "開発",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "【Keras実験】Xavier vs He初期化の違いをMNISTで比較｜ReLUならどちらを選ぶ？",
+        "url": "https://zenn.dev/wasurenamemo/articles/aa6ae503ce655d",
+        "site": "Zenn(Python)",
+        "published": "2026-03-16T13:19:56Z",
+        "description": "「kernel_initializerってデフォルトのままでいいの？」「XavierとHeって何が違うの？」\nMNISTで実験した結果をまとめます。結論：ReLUを使うならHe、Sigmoid/TanhならXavierです。\n\n なぜ初期化が重要なのか\n重みの初期値が不適切だと、層を通過するごとに信号が極端に小さく・大きくなり、勾配消失・勾配爆発が起きて学習が進まなくなります。\n特に深いネットワー...",
+        "category": "開発",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "【Keras実験】BatchNormalizationとDropoutは併用すべきか？4パターンをMNISTで比較",
+        "url": "https://zenn.dev/wasurenamemo/articles/6f7c41acc66fcb",
+        "site": "Zenn(Python)",
+        "published": "2026-03-16T13:13:58Z",
+        "description": "「BNとDropout、どっちを使えばいい？両方入れていいの？」\nMNISTで4パターンを実際に動かして比較しました。結論：安定性を重視するならBN→Dropoutの順で両方入れるのが最良でした。\n\n 比較した4パターン\n\n\n\nパターン\n構成\n\n\n\n\nA\nなし（ベースライン）\n\n\nB\nBatchNormalizationのみ\n\n\nC\nDropoutのみ（rate=0.3）\n\n\nD\nBN → Dro...",
         "category": "開発",
         "rss_category": "",
         "image_url": ""
@@ -509,6 +601,16 @@
         "image_url": ""
       },
       {
+        "title": "LLMアプリの正体は「mdとコードのサンドイッチ」だった",
+        "url": "https://zenn.dev/shimo4228/articles/llm-app-sandwich-architecture",
+        "site": "Zenn(Python)",
+        "published": "2026-03-16T12:33:03Z",
+        "description": "ローカルの9Bモデルで自作エージェントの insight 機能を再実装したら、Claude Code とまったく同じ構造が出てきた。\nLLM エージェントの振る舞いは、Markdown ファイル（以下 md）に書かれた自然言語の指示で定義できる。コードは LLM の出力をパースし、安全に実行するための骨格にすぎない。——前作で Qwen 9B のエージェントを作りながらそう書いた。あのとき気づいて...",
+        "category": "開発",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
         "title": "J-Quants API × EDINET DB — PBR/PER/配当利回りをPythonで算出する",
         "url": "https://zenn.dev/edinetdb/articles/edinetdb-jquants-guide",
         "site": "Zenn(Python)",
@@ -519,11 +621,11 @@
         "image_url": ""
       },
       {
-        "title": "ローカルLLMで日韓翻訳Discord Botを自作した話",
-        "url": "https://zenn.dev/linux_club/articles/d0b9027e52572a",
+        "title": "Claude Codeを使ったアプリ開発を4日間本気で学んでみた：1日目",
+        "url": "https://zenn.dev/gummybird/articles/866ee2471cbbcb",
         "site": "Zenn(Python)",
-        "published": "2026-03-16T10:00:05Z",
-        "description": "はじめに\nオンラインゲームで一緒に遊んでる韓国の友達がいて、ゲーム中に\n「ㅋㅋㅋ」「ㄷㄷ」「개잘해」みたいな表現がよく飛んでくる。\nDeepLを開く余裕もないし、そもそもコピペも面倒くさい。\nだったら自動で翻訳して発音まで教えてくれるDiscord Botを作ればよくない？\nと思って作り始めたのがこのプロジェクトです。\n\n 作ったもの\n\n 実際の動作\n日本語を送ると韓国語＋発音が返ってきます。\n\n...",
+        "published": "2026-03-16T11:08:36Z",
+        "description": "Claude Codeを使ったアプリ開発を4日間本気で学んでみた：1日目\n「インストールはしたけどなんかよくわからないままチャットしてる」という状態から抜け出したくて、会社から4日間のスキルアップ休暇をもらったのを機に、ちゃんと使いこなせるようになることにした。\n結果、3時間でAI情報収集システムをゼロから作りながら一通りの機能を体験できた。\n自分もまだ学び始めたばかりで、この記事は完全な習得記録...",
         "category": "開発",
         "rss_category": "",
         "image_url": ""
@@ -534,6 +636,16 @@
         "site": "Zenn(Python)",
         "published": "2026-03-16T10:00:05Z",
         "description": "はじめに\nみんな一度は夢見る「一攫千金」「億り人」……。\nそんな甘い話がそこら辺に転がってるわけないのは、頭ではわかってるんですけどね！\nそれでも夢くらい見させてほしい〜ということで、今回は FX のデータをちゃんと集めて、分析してみる環境を作るところから始めてみました。\n最終的な理想としては、\n\n過去データからそれっぽい傾向を分析\nエントリータイミングの把握や予測\n損切り・利確の目安\n\nあたりを...",
+        "category": "開発",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "ローカルLLMで日韓翻訳Discord Botを自作した話",
+        "url": "https://zenn.dev/linux_club/articles/d0b9027e52572a",
+        "site": "Zenn(Python)",
+        "published": "2026-03-16T10:00:05Z",
+        "description": "はじめに\nオンラインゲームで一緒に遊んでる韓国の友達がいて、ゲーム中に\n「ㅋㅋㅋ」「ㄷㄷ」「개잘해」みたいな表現がよく飛んでくる。\nDeepLを開く余裕もないし、そもそもコピペも面倒くさい。\nだったら自動で翻訳して発音まで教えてくれるDiscord Botを作ればよくない？\nと思って作り始めたのがこのプロジェクトです。\n\n 作ったもの\n\n 実際の動作\n日本語を送ると韓国語＋発音が返ってきます。\n\n...",
         "category": "開発",
         "rss_category": "",
         "image_url": ""
@@ -624,16 +736,6 @@
         "site": "Zenn(Python)",
         "published": "2026-03-16T05:49:51Z",
         "description": "設問ページ\n\n🔗ABC-448 A - chmin\n\n\n\n 提出結果\ndef getIntMap():\n    return map(int, input().split())\n\n\ndef getIntList():\n    return list(map(int, input().split()))\n\n\ndef main():\n    N, X = getIntMap()\n    A = get...",
-        "category": "開発",
-        "rss_category": "",
-        "image_url": ""
-      },
-      {
-        "title": "Decision Transformerは本当にRTGで行動が変わるのか？  最小実験で検証してみた",
-        "url": "https://zenn.dev/livingston/articles/794da809d770c7",
-        "site": "Zenn(Python)",
-        "published": "2026-03-16T03:34:42Z",
-        "description": "Decision Transformerは本当にRTGで行動が変わるのか？\nこの記事は次の論文をもとにした検証記事である。\nDecision Transformer: Reinforcement Learning via Sequence Modeling\nhttps://arxiv.org/abs/2106.01345\nこの論文は少々古いが、Decision Transformer（DT）は、\n...",
         "category": "開発",
         "rss_category": "",
         "image_url": ""
