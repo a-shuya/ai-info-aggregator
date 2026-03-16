@@ -1,25 +1,75 @@
 {
   "site": "Zenn(Python)",
-  "last_updated": "2026-03-16T19:44:05.355162",
-  "total_articles": 2961,
+  "last_updated": "2026-03-16T20:23:17.516478",
+  "total_articles": 2973,
   "articles_by_date": {
     "昨日": [
       {
-        "title": "Claude Codeを3時間で全機能制覇した話：AI情報収集システムを作りながら学ぶ最速ルート",
-        "url": "https://zenn.dev/gummybird/articles/866ee2471cbbcb",
+        "title": "エンコーディングの解説と実装",
+        "url": "https://zenn.dev/hiromu2001/articles/79c873e037e01a",
         "site": "Zenn(Python)",
-        "published": "2026-03-16T11:08:36Z",
-        "description": "Claude Codeを3時間で全機能制覇した話\n「インストールはしたけどなんかよくわからないままチャットしてる」という状態から抜け出したくて、今日1日でClaude Codeをちゃんと使ってみることにした。\n結果、3時間でAI情報収集システムをゼロから作りながら一通りの機能を体験できた。\n自分もまだ学び始めたばかりで、この記事は完全な習得記録というより「こうやったら動いた」という備忘録です。同じ...",
+        "published": "2026-03-16T14:21:20Z",
+        "description": "1. ラベルエンコーディング (Label Encoding)\n\n 3/17追記　文字列に順序がある場合はLabelEncoderを使うと正確に小さい順に番号降ってくれないときもあるから基本mapでラベルエンコーディングしたほうがいいよ！！\n各カテゴリーに 0, 1, 2... と連番の数字を割り当てる方法\n主に、値が2種類しかない場合や、値に「低・中・高」のような順序がある場合に使う\nメリット:...",
         "category": "開発",
         "rss_category": "",
         "image_url": ""
       },
       {
-        "title": "ローカルLLMで日韓翻訳Discord Botを自作した話",
-        "url": "https://zenn.dev/linux_club/articles/d0b9027e52572a",
+        "title": "指定カラム名のユニーク値表示法",
+        "url": "https://zenn.dev/hiromu2001/articles/487190bc5070ef",
         "site": "Zenn(Python)",
-        "published": "2026-03-16T10:00:05Z",
-        "description": "はじめに\nオンラインゲームで一緒に遊んでる韓国の友達がいて、ゲーム中に\n「ㅋㅋㅋ」「ㄷㄷ」「개잘해」みたいな表現がよく飛んでくる。\nDeepLを開く余裕もないし、そもそもコピペも面倒くさい。\nだったら自動で翻訳して発音まで教えてくれるDiscord Botを作ればよくない？\nと思って作り始めたのがこのプロジェクトです。\n\n 作ったもの\n\n 実際の動作\n日本語を送ると韓国語＋発音が返ってきます。\n\n...",
+        "published": "2026-03-16T13:50:14Z",
+        "description": "EDA時、オブジェクトのデータをエンコーディングしようとするけど内容を知らないとできない。でもhreadとかで確認すると確認しずらい\nしかも列が多すぎると表示されない列がある\nそこでこのように表示させる\ndef check_object_columns(df):\n\n    # .select_dtypes(include=\"\")でデータタイプの指定ができる\n    #.columnsでカラム名の一...",
+        "category": "開発",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "ファイルカラム名の変更",
+        "url": "https://zenn.dev/hiromu2001/articles/cc1557bd876390",
+        "site": "Zenn(Python)",
+        "published": "2026-03-16T13:01:44Z",
+        "description": "kaggleコンペあるある第一位！\n英語が意味不明でなんのデータかわからん！\nという事でカラム名を変換する方法を記録\nimport pandas as pd\ntrain = pd.read_csv(\"\")\n#まずは辞書でカラム名を書く\nnew_columns = {\n\"〇〇\":\"〇〇\",\n\"〇〇\":\"〇〇\",\n\"〇〇\":\"〇〇\",\n\"〇〇\":\"〇〇\",\n}\n#.renameで変更できる。元データを...",
+        "category": "開発",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "バフェットコードの代替を探している人へ — EDINET DBでできること",
+        "url": "https://zenn.dev/edinetdb/articles/edinetdb-bc-alternative",
+        "site": "Zenn(Python)",
+        "published": "2026-03-16T12:59:12Z",
+        "description": "バフェットコード（buffett-code.com）のアカウント作成に会社名の入力が必須になり、個人投資家の間で「使いづらくなった」という声が出ている。有料プランの値上げも重なり、代替サービスを探す動きが広がっている。\nこの記事では、代替として使える無料の財務データベース EDINET DB を紹介する。何ができて、何ができないのか。正直に書く。\n\n バフェットコードに何が起きたか\nバフェットコー...",
+        "category": "開発",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "LLMアプリの正体は「mdとコードのサンドイッチ」だった",
+        "url": "https://zenn.dev/shimo4228/articles/llm-app-sandwich-architecture",
+        "site": "Zenn(Python)",
+        "published": "2026-03-16T12:33:03Z",
+        "description": "ローカルの9Bモデルで自作エージェントの insight 機能を再実装したら、Claude Code とまったく同じ構造が出てきた。\nLLM エージェントの振る舞いは、Markdown ファイル（以下 md）に書かれた自然言語の指示で定義できる。コードは LLM の出力をパースし、安全に実行するための骨格にすぎない。——前作で Qwen 9B のエージェントを作りながらそう書いた。あのとき気づいて...",
+        "category": "開発",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "J-Quants API × EDINET DB — PBR/PER/配当利回りをPythonで算出する",
+        "url": "https://zenn.dev/edinetdb/articles/edinetdb-jquants-guide",
+        "site": "Zenn(Python)",
+        "published": "2026-03-16T12:11:59Z",
+        "description": "日本株の投資分析で「財務データはあるけど株価がない」「株価はあるけどBPSやEPSが手元にない」と感じたことはないだろうか。\nJ-Quants API（JPX総研）とEDINET DB（金融庁EDINET由来）は、それぞれ株価と有報財務データという異なる領域をカバーしている。両方を組み合わせることで、PBR・PER・配当利回りを自分の手で算出できる。\n\n 前提: 2つのAPIの守備範囲\n\n\n\n\nJ...",
+        "category": "開発",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "Claude Codeを使ったアプリ開発を4日間本気で学んでみた：1日目",
+        "url": "https://zenn.dev/gummybird/articles/866ee2471cbbcb",
+        "site": "Zenn(Python)",
+        "published": "2026-03-16T11:08:36Z",
+        "description": "Claude Codeを使ったアプリ開発を4日間本気で学んでみた：1日目\n「インストールはしたけどなんかよくわからないままチャットしてる」という状態から抜け出したくて、会社から4日間のスキルアップ休暇をもらったのを機に、ちゃんと使いこなせるようになることにした。\n結果、3時間でAI情報収集システムをゼロから作りながら一通りの機能を体験できた。\n自分もまだ学び始めたばかりで、この記事は完全な習得記録...",
         "category": "開発",
         "rss_category": "",
         "image_url": ""
@@ -30,6 +80,16 @@
         "site": "Zenn(Python)",
         "published": "2026-03-16T10:00:05Z",
         "description": "はじめに\nみんな一度は夢見る「一攫千金」「億り人」……。\nそんな甘い話がそこら辺に転がってるわけないのは、頭ではわかってるんですけどね！\nそれでも夢くらい見させてほしい〜ということで、今回は FX のデータをちゃんと集めて、分析してみる環境を作るところから始めてみました。\n最終的な理想としては、\n\n過去データからそれっぽい傾向を分析\nエントリータイミングの把握や予測\n損切り・利確の目安\n\nあたりを...",
+        "category": "開発",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "ローカルLLMで日韓翻訳Discord Botを自作した話",
+        "url": "https://zenn.dev/linux_club/articles/d0b9027e52572a",
+        "site": "Zenn(Python)",
+        "published": "2026-03-16T10:00:05Z",
+        "description": "はじめに\nオンラインゲームで一緒に遊んでる韓国の友達がいて、ゲーム中に\n「ㅋㅋㅋ」「ㄷㄷ」「개잘해」みたいな表現がよく飛んでくる。\nDeepLを開く余裕もないし、そもそもコピペも面倒くさい。\nだったら自動で翻訳して発音まで教えてくれるDiscord Botを作ればよくない？\nと思って作り始めたのがこのプロジェクトです。\n\n 作ったもの\n\n 実際の動作\n日本語を送ると韓国語＋発音が返ってきます。\n\n...",
         "category": "開発",
         "rss_category": "",
         "image_url": ""
@@ -429,21 +489,71 @@
     ],
     "2026-03": [
       {
-        "title": "Claude Codeを3時間で全機能制覇した話：AI情報収集システムを作りながら学ぶ最速ルート",
-        "url": "https://zenn.dev/gummybird/articles/866ee2471cbbcb",
+        "title": "エンコーディングの解説と実装",
+        "url": "https://zenn.dev/hiromu2001/articles/79c873e037e01a",
         "site": "Zenn(Python)",
-        "published": "2026-03-16T11:08:36Z",
-        "description": "Claude Codeを3時間で全機能制覇した話\n「インストールはしたけどなんかよくわからないままチャットしてる」という状態から抜け出したくて、今日1日でClaude Codeをちゃんと使ってみることにした。\n結果、3時間でAI情報収集システムをゼロから作りながら一通りの機能を体験できた。\n自分もまだ学び始めたばかりで、この記事は完全な習得記録というより「こうやったら動いた」という備忘録です。同じ...",
+        "published": "2026-03-16T14:21:20Z",
+        "description": "1. ラベルエンコーディング (Label Encoding)\n\n 3/17追記　文字列に順序がある場合はLabelEncoderを使うと正確に小さい順に番号降ってくれないときもあるから基本mapでラベルエンコーディングしたほうがいいよ！！\n各カテゴリーに 0, 1, 2... と連番の数字を割り当てる方法\n主に、値が2種類しかない場合や、値に「低・中・高」のような順序がある場合に使う\nメリット:...",
         "category": "開発",
         "rss_category": "",
         "image_url": ""
       },
       {
-        "title": "ローカルLLMで日韓翻訳Discord Botを自作した話",
-        "url": "https://zenn.dev/linux_club/articles/d0b9027e52572a",
+        "title": "指定カラム名のユニーク値表示法",
+        "url": "https://zenn.dev/hiromu2001/articles/487190bc5070ef",
         "site": "Zenn(Python)",
-        "published": "2026-03-16T10:00:05Z",
-        "description": "はじめに\nオンラインゲームで一緒に遊んでる韓国の友達がいて、ゲーム中に\n「ㅋㅋㅋ」「ㄷㄷ」「개잘해」みたいな表現がよく飛んでくる。\nDeepLを開く余裕もないし、そもそもコピペも面倒くさい。\nだったら自動で翻訳して発音まで教えてくれるDiscord Botを作ればよくない？\nと思って作り始めたのがこのプロジェクトです。\n\n 作ったもの\n\n 実際の動作\n日本語を送ると韓国語＋発音が返ってきます。\n\n...",
+        "published": "2026-03-16T13:50:14Z",
+        "description": "EDA時、オブジェクトのデータをエンコーディングしようとするけど内容を知らないとできない。でもhreadとかで確認すると確認しずらい\nしかも列が多すぎると表示されない列がある\nそこでこのように表示させる\ndef check_object_columns(df):\n\n    # .select_dtypes(include=\"\")でデータタイプの指定ができる\n    #.columnsでカラム名の一...",
+        "category": "開発",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "ファイルカラム名の変更",
+        "url": "https://zenn.dev/hiromu2001/articles/cc1557bd876390",
+        "site": "Zenn(Python)",
+        "published": "2026-03-16T13:01:44Z",
+        "description": "kaggleコンペあるある第一位！\n英語が意味不明でなんのデータかわからん！\nという事でカラム名を変換する方法を記録\nimport pandas as pd\ntrain = pd.read_csv(\"\")\n#まずは辞書でカラム名を書く\nnew_columns = {\n\"〇〇\":\"〇〇\",\n\"〇〇\":\"〇〇\",\n\"〇〇\":\"〇〇\",\n\"〇〇\":\"〇〇\",\n}\n#.renameで変更できる。元データを...",
+        "category": "開発",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "バフェットコードの代替を探している人へ — EDINET DBでできること",
+        "url": "https://zenn.dev/edinetdb/articles/edinetdb-bc-alternative",
+        "site": "Zenn(Python)",
+        "published": "2026-03-16T12:59:12Z",
+        "description": "バフェットコード（buffett-code.com）のアカウント作成に会社名の入力が必須になり、個人投資家の間で「使いづらくなった」という声が出ている。有料プランの値上げも重なり、代替サービスを探す動きが広がっている。\nこの記事では、代替として使える無料の財務データベース EDINET DB を紹介する。何ができて、何ができないのか。正直に書く。\n\n バフェットコードに何が起きたか\nバフェットコー...",
+        "category": "開発",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "LLMアプリの正体は「mdとコードのサンドイッチ」だった",
+        "url": "https://zenn.dev/shimo4228/articles/llm-app-sandwich-architecture",
+        "site": "Zenn(Python)",
+        "published": "2026-03-16T12:33:03Z",
+        "description": "ローカルの9Bモデルで自作エージェントの insight 機能を再実装したら、Claude Code とまったく同じ構造が出てきた。\nLLM エージェントの振る舞いは、Markdown ファイル（以下 md）に書かれた自然言語の指示で定義できる。コードは LLM の出力をパースし、安全に実行するための骨格にすぎない。——前作で Qwen 9B のエージェントを作りながらそう書いた。あのとき気づいて...",
+        "category": "開発",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "J-Quants API × EDINET DB — PBR/PER/配当利回りをPythonで算出する",
+        "url": "https://zenn.dev/edinetdb/articles/edinetdb-jquants-guide",
+        "site": "Zenn(Python)",
+        "published": "2026-03-16T12:11:59Z",
+        "description": "日本株の投資分析で「財務データはあるけど株価がない」「株価はあるけどBPSやEPSが手元にない」と感じたことはないだろうか。\nJ-Quants API（JPX総研）とEDINET DB（金融庁EDINET由来）は、それぞれ株価と有報財務データという異なる領域をカバーしている。両方を組み合わせることで、PBR・PER・配当利回りを自分の手で算出できる。\n\n 前提: 2つのAPIの守備範囲\n\n\n\n\nJ...",
+        "category": "開発",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "Claude Codeを使ったアプリ開発を4日間本気で学んでみた：1日目",
+        "url": "https://zenn.dev/gummybird/articles/866ee2471cbbcb",
+        "site": "Zenn(Python)",
+        "published": "2026-03-16T11:08:36Z",
+        "description": "Claude Codeを使ったアプリ開発を4日間本気で学んでみた：1日目\n「インストールはしたけどなんかよくわからないままチャットしてる」という状態から抜け出したくて、会社から4日間のスキルアップ休暇をもらったのを機に、ちゃんと使いこなせるようになることにした。\n結果、3時間でAI情報収集システムをゼロから作りながら一通りの機能を体験できた。\n自分もまだ学び始めたばかりで、この記事は完全な習得記録...",
         "category": "開発",
         "rss_category": "",
         "image_url": ""
@@ -454,6 +564,16 @@
         "site": "Zenn(Python)",
         "published": "2026-03-16T10:00:05Z",
         "description": "はじめに\nみんな一度は夢見る「一攫千金」「億り人」……。\nそんな甘い話がそこら辺に転がってるわけないのは、頭ではわかってるんですけどね！\nそれでも夢くらい見させてほしい〜ということで、今回は FX のデータをちゃんと集めて、分析してみる環境を作るところから始めてみました。\n最終的な理想としては、\n\n過去データからそれっぽい傾向を分析\nエントリータイミングの把握や予測\n損切り・利確の目安\n\nあたりを...",
+        "category": "開発",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "ローカルLLMで日韓翻訳Discord Botを自作した話",
+        "url": "https://zenn.dev/linux_club/articles/d0b9027e52572a",
+        "site": "Zenn(Python)",
+        "published": "2026-03-16T10:00:05Z",
+        "description": "はじめに\nオンラインゲームで一緒に遊んでる韓国の友達がいて、ゲーム中に\n「ㅋㅋㅋ」「ㄷㄷ」「개잘해」みたいな表現がよく飛んでくる。\nDeepLを開く余裕もないし、そもそもコピペも面倒くさい。\nだったら自動で翻訳して発音まで教えてくれるDiscord Botを作ればよくない？\nと思って作り始めたのがこのプロジェクトです。\n\n 作ったもの\n\n 実際の動作\n日本語を送ると韓国語＋発音が返ってきます。\n\n...",
         "category": "開発",
         "rss_category": "",
         "image_url": ""
