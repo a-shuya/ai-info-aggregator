@@ -1,9 +1,19 @@
 {
   "site": "Zenn(Python)",
-  "last_updated": "2026-03-18T22:03:49.752827",
+  "last_updated": "2026-03-18T22:48:20.334963",
   "total_articles": 2997,
   "articles_by_date": {
     "本日": [
+      {
+        "title": "Claude Code の skill に最小 observability を足して、死んだ skill と観測漏れを見つける",
+        "url": "https://zenn.dev/nabaaatee/articles/fe209cc92340fb",
+        "site": "Zenn(Python)",
+        "published": "2026-03-18T18:25:04Z",
+        "description": "はじめに\nClaude Code で skill を増やしていくと、追加そのものより先に、運用の実態が見えなくなります。\n見えなくなるのは、たとえば次の4つです。\n\nいま実際に使われている skill は何か\n名前だけ残っていて、実運用ではもう死んでいる skill は何か\nたまに失敗しているのに放置されている skill は何か\n「呼ばれているはず」の処理が、そもそも観測できる経路を通っているの...",
+        "category": "開発",
+        "rss_category": "",
+        "image_url": ""
+      },
       {
         "title": "【Gemini 2.5 Flash】インボイスを自律抽出。画像PDFをExcel/Markdownへ製錬する「ZeroWork-Tools」",
         "url": "https://zenn.dev/dev_haru/articles/e5ccb8b5bcfae7",
@@ -27,6 +37,16 @@
     ],
     "昨日": [
       {
+        "title": "個人開発でランサーズの案件スクリーニングを自動化した — AIが提案文まで書いてくれる",
+        "url": "https://zenn.dev/soushu/articles/lancers-ai-screening-tool",
+        "site": "Zenn(Python)",
+        "published": "2026-03-18T14:29:57Z",
+        "description": "はじめに\nフリーランス・法人でランサーズを使っていると、案件を探す時間そのものがコストになります。\n検索ページを開いて、案件を一つずつ確認して、金額やクライアント情報を見て、「これはSESだな」「これは予算が低すぎる」「これは良さそう」と判断して、良さそうなものには提案文を書く。この一連の作業を週に何度も繰り返している。\nやっていること自体はパターン化できる。ならば自動化できるはず。\nそう思って、...",
+        "category": "開発",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
         "title": "pytest の fixture の scope を試してみる",
         "url": "https://zenn.dev/shu_kitamura/articles/e7ea4b7fc6a0e8",
         "site": "Zenn(Python)",
@@ -42,6 +62,16 @@
         "site": "Zenn(Python)",
         "published": "2026-03-18T12:50:05Z",
         "description": "はじめに\n家族で過ごしていると、毎月末になると決まってこんな会話が発生するかと思います。\n\n「今月EPOSのやつ、いくらだっけ？」\n「コンビニは自分で払うとして…スーパーは折半で…」\n「あれ、計算合わない。もう一回やり直そう」\n\n複数枚のクレジットカードを二人で使っていると、「自分の支出」と「折半すべき支出」が混在して、毎月の精算が本当に面倒です。ExcelやスプレッドシートはPC前提で続かないし...",
+        "category": "開発",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "Discord Bot × Cloud Run ─ スラッシュコマンドとAI連携を含む本番デプロイガイド",
+        "url": "https://zenn.dev/correlate_dev/articles/discord-bot-cloud-run",
+        "site": "Zenn(Python)",
+        "published": "2026-03-18T11:45:25Z",
+        "description": "はじめに\nDiscord BotをCloud Runにデプロイする記事を探すと、多くはHerokuやVPSでの「常時起動型」の解説です。常時起動型はWebSocket接続を維持し続けるため、Cloud Runのゼロスケール機能と相性が悪く、最小インスタンス数を1以上に設定しなければなりません。\n本記事では、 HTTP Interaction型 と呼ばれる別のBotアーキテクチャを使い、Cloud ...",
         "category": "開発",
         "rss_category": "",
         "image_url": ""
@@ -175,16 +205,6 @@
         "category": "開発",
         "rss_category": "",
         "image_url": ""
-      },
-      {
-        "title": "麻雀AI「Mortal」を改造して、岡田紗佳プロの頭脳を再現させてみた！",
-        "url": "https://zenn.dev/kappamodoki/articles/e796bfc82d567b",
-        "site": "Zenn(Python)",
-        "published": "2026-03-17T19:14:49Z",
-        "description": "現在17歳、現役高校生。本当なら情報工学系の大学進学に向けて、英単語の1つでも暗記していなきゃいけない時期だ。しかし、俺の頭の中は麻雀と一人のプロ雀士、岡田紗佳プロのことでいっぱいだった。\n「役満ボディ」の異名を持ち、モデルとしての圧倒的な存在感を放つ彼女。\nもちろん、最初は卓上に映えるその美しい所作や凛とした佇まい（あとグラビア）に目を奪われたのは否定しない\nしかし、Mリーグという舞台で彼女の対...",
-        "category": "開発",
-        "rss_category": "",
-        "image_url": ""
       }
     ],
     "一昨日": [
@@ -214,26 +234,6 @@
         "site": "Zenn(Python)",
         "published": "2026-03-17T13:02:58Z",
         "description": "何が起きたか\n昨年、Rails 7.2 へのアップグレードを進めていたとき、一部の統計計算を含む処理が返ってこなくなりました。\nエラーで落ちるのではなく、ただ終わらない。ログにも異常は出ない。\n最初は Rails 側の変更を疑っていましたが、処理の流れを追ううちに、Python を呼んでいるあたりが怪しいことに気づきました。\ngem の更新差分を見直すと、pycall が 1.4.1 から 1.5...",
-        "category": "開発",
-        "rss_category": "",
-        "image_url": ""
-      },
-      {
-        "title": "プロンプト、手直す時代を、ぶっ壊す👍——DSPyで始める自動チューニング",
-        "url": "https://zenn.dev/explaza/articles/73993a662c4020",
-        "site": "Zenn(Python)",
-        "published": "2026-03-17T12:46:44Z",
-        "description": "はじめに\nこんにちは！\n株式会社エクスプラザのhyodoです！\nLLMを使ったアプリケーションを開発していて、こんな経験はありませんか？\n\n「プロンプトちょっと変えたら精度が上がった！……と思ったら別のケースで壊れた」\n「GPT-4oで動いてたプロンプト、Claude に変えたら全然ダメだった」\n「few-shot例を何パターンも手で試してるけど、どれがベストか分からない」\n\nプロンプトチューニン...",
-        "category": "開発",
-        "rss_category": "",
-        "image_url": ""
-      },
-      {
-        "title": "【検証編②】システム運用と高速化：ParquetとWeb UIの活用",
-        "url": "https://zenn.dev/ricotiler/articles/keiba-ai-14-system-operations-and-acceleration",
-        "site": "Zenn(Python)",
-        "published": "2026-03-17T12:34:19Z",
-        "description": "【検証編②】システム運用と高速化：ParquetとWeb UIの活用\n\n はじめに：待ち時間をゼロにする\nAIモデルの開発において、最も無駄な時間は「データの読み込み待ち」です。\n数年分のレースデータを毎回データベースからSQLで取得し、Pythonで加工していると、学習を始めるまでに数分〜数十分かかってしまいます。\nこれでは、パラメータを少し変えて試すだけの実験も億劫になります。\nそこで導入した...",
         "category": "開発",
         "rss_category": "",
         "image_url": ""
@@ -401,6 +401,16 @@
     ],
     "2026-03": [
       {
+        "title": "Claude Code の skill に最小 observability を足して、死んだ skill と観測漏れを見つける",
+        "url": "https://zenn.dev/nabaaatee/articles/fe209cc92340fb",
+        "site": "Zenn(Python)",
+        "published": "2026-03-18T18:25:04Z",
+        "description": "はじめに\nClaude Code で skill を増やしていくと、追加そのものより先に、運用の実態が見えなくなります。\n見えなくなるのは、たとえば次の4つです。\n\nいま実際に使われている skill は何か\n名前だけ残っていて、実運用ではもう死んでいる skill は何か\nたまに失敗しているのに放置されている skill は何か\n「呼ばれているはず」の処理が、そもそも観測できる経路を通っているの...",
+        "category": "開発",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
         "title": "【Gemini 2.5 Flash】インボイスを自律抽出。画像PDFをExcel/Markdownへ製錬する「ZeroWork-Tools」",
         "url": "https://zenn.dev/dev_haru/articles/e5ccb8b5bcfae7",
         "site": "Zenn(Python)",
@@ -421,6 +431,16 @@
         "image_url": ""
       },
       {
+        "title": "個人開発でランサーズの案件スクリーニングを自動化した — AIが提案文まで書いてくれる",
+        "url": "https://zenn.dev/soushu/articles/lancers-ai-screening-tool",
+        "site": "Zenn(Python)",
+        "published": "2026-03-18T14:29:57Z",
+        "description": "はじめに\nフリーランス・法人でランサーズを使っていると、案件を探す時間そのものがコストになります。\n検索ページを開いて、案件を一つずつ確認して、金額やクライアント情報を見て、「これはSESだな」「これは予算が低すぎる」「これは良さそう」と判断して、良さそうなものには提案文を書く。この一連の作業を週に何度も繰り返している。\nやっていること自体はパターン化できる。ならば自動化できるはず。\nそう思って、...",
+        "category": "開発",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
         "title": "pytest の fixture の scope を試してみる",
         "url": "https://zenn.dev/shu_kitamura/articles/e7ea4b7fc6a0e8",
         "site": "Zenn(Python)",
@@ -436,6 +456,16 @@
         "site": "Zenn(Python)",
         "published": "2026-03-18T12:50:05Z",
         "description": "はじめに\n家族で過ごしていると、毎月末になると決まってこんな会話が発生するかと思います。\n\n「今月EPOSのやつ、いくらだっけ？」\n「コンビニは自分で払うとして…スーパーは折半で…」\n「あれ、計算合わない。もう一回やり直そう」\n\n複数枚のクレジットカードを二人で使っていると、「自分の支出」と「折半すべき支出」が混在して、毎月の精算が本当に面倒です。ExcelやスプレッドシートはPC前提で続かないし...",
+        "category": "開発",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "Discord Bot × Cloud Run ─ スラッシュコマンドとAI連携を含む本番デプロイガイド",
+        "url": "https://zenn.dev/correlate_dev/articles/discord-bot-cloud-run",
+        "site": "Zenn(Python)",
+        "published": "2026-03-18T11:45:25Z",
+        "description": "はじめに\nDiscord BotをCloud Runにデプロイする記事を探すと、多くはHerokuやVPSでの「常時起動型」の解説です。常時起動型はWebSocket接続を維持し続けるため、Cloud Runのゼロスケール機能と相性が悪く、最小インスタンス数を1以上に設定しなければなりません。\n本記事では、 HTTP Interaction型 と呼ばれる別のBotアーキテクチャを使い、Cloud ...",
         "category": "開発",
         "rss_category": "",
         "image_url": ""
@@ -571,16 +601,6 @@
         "image_url": ""
       },
       {
-        "title": "麻雀AI「Mortal」を改造して、岡田紗佳プロの頭脳を再現させてみた！",
-        "url": "https://zenn.dev/kappamodoki/articles/e796bfc82d567b",
-        "site": "Zenn(Python)",
-        "published": "2026-03-17T19:14:49Z",
-        "description": "現在17歳、現役高校生。本当なら情報工学系の大学進学に向けて、英単語の1つでも暗記していなきゃいけない時期だ。しかし、俺の頭の中は麻雀と一人のプロ雀士、岡田紗佳プロのことでいっぱいだった。\n「役満ボディ」の異名を持ち、モデルとしての圧倒的な存在感を放つ彼女。\nもちろん、最初は卓上に映えるその美しい所作や凛とした佇まい（あとグラビア）に目を奪われたのは否定しない\nしかし、Mリーグという舞台で彼女の対...",
-        "category": "開発",
-        "rss_category": "",
-        "image_url": ""
-      },
-      {
         "title": "Docker・uvで FastAPI 開発環境を構築する",
         "url": "https://zenn.dev/amethyst/articles/2eef93ea9ddc10",
         "site": "Zenn(Python)",
@@ -606,26 +626,6 @@
         "site": "Zenn(Python)",
         "published": "2026-03-17T13:02:58Z",
         "description": "何が起きたか\n昨年、Rails 7.2 へのアップグレードを進めていたとき、一部の統計計算を含む処理が返ってこなくなりました。\nエラーで落ちるのではなく、ただ終わらない。ログにも異常は出ない。\n最初は Rails 側の変更を疑っていましたが、処理の流れを追ううちに、Python を呼んでいるあたりが怪しいことに気づきました。\ngem の更新差分を見直すと、pycall が 1.4.1 から 1.5...",
-        "category": "開発",
-        "rss_category": "",
-        "image_url": ""
-      },
-      {
-        "title": "プロンプト、手直す時代を、ぶっ壊す👍——DSPyで始める自動チューニング",
-        "url": "https://zenn.dev/explaza/articles/73993a662c4020",
-        "site": "Zenn(Python)",
-        "published": "2026-03-17T12:46:44Z",
-        "description": "はじめに\nこんにちは！\n株式会社エクスプラザのhyodoです！\nLLMを使ったアプリケーションを開発していて、こんな経験はありませんか？\n\n「プロンプトちょっと変えたら精度が上がった！……と思ったら別のケースで壊れた」\n「GPT-4oで動いてたプロンプト、Claude に変えたら全然ダメだった」\n「few-shot例を何パターンも手で試してるけど、どれがベストか分からない」\n\nプロンプトチューニン...",
-        "category": "開発",
-        "rss_category": "",
-        "image_url": ""
-      },
-      {
-        "title": "【検証編②】システム運用と高速化：ParquetとWeb UIの活用",
-        "url": "https://zenn.dev/ricotiler/articles/keiba-ai-14-system-operations-and-acceleration",
-        "site": "Zenn(Python)",
-        "published": "2026-03-17T12:34:19Z",
-        "description": "【検証編②】システム運用と高速化：ParquetとWeb UIの活用\n\n はじめに：待ち時間をゼロにする\nAIモデルの開発において、最も無駄な時間は「データの読み込み待ち」です。\n数年分のレースデータを毎回データベースからSQLで取得し、Pythonで加工していると、学習を始めるまでに数分〜数十分かかってしまいます。\nこれでは、パラメータを少し変えて試すだけの実験も億劫になります。\nそこで導入した...",
         "category": "開発",
         "rss_category": "",
         "image_url": ""
