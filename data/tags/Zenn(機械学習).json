@@ -1,9 +1,69 @@
 {
   "site": "Zenn(機械学習)",
-  "last_updated": "2026-03-19T10:54:23.154362",
-  "total_articles": 795,
+  "last_updated": "2026-03-19T11:39:26.478175",
+  "total_articles": 805,
   "articles_by_date": {
     "本日": [
+      {
+        "title": "Pythonで音声分類してみる ― MFCCを使ったシンプルな機械学習入門",
+        "url": "https://zenn.dev/kta805/articles/6c59550f2d0633",
+        "site": "Zenn(機械学習)",
+        "published": "2026-03-19T06:52:19Z",
+        "description": "Pythonで音声分類してみる ― MFCCを使ったシンプルな機械学習入門\nこれまでの記事では、MFCCを使って音声の特徴量を計算し、可視化してきました。\nこの記事ではさらに一歩進んで、\nMFCCを使って音声を分類してみます。\n機械学習といっても難しいことはせず、\nシンプルな方法で「音の違いを判別できる」ことを体験します。\n\n\n 使用するライブラリ\npip install numpy matplo...",
+        "category": "AI・技術",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "Whisperをローカル/API両方で回して辿り着いた「結局これが最適解」という構成",
+        "url": "https://zenn.dev/genelab_999/articles/f1e453043bc303",
+        "site": "Zenn(機械学習)",
+        "published": "2026-03-19T03:47:12Z",
+        "description": "TL;DR\n\n\nローカル実行するなら faster-whisper + turbo一択。公式openai-whisperの4倍速・VRAM半分で同精度\n\nAPI利用するなら gpt-4o-mini-transcribe（$0.003/分）がコスパ最強。whisper-1より高精度で半額\n\n月500時間超の処理ならローカル、それ以下ならAPIが損益分岐点。機密データはローカル一択\n\n\n 背景: なぜ...",
+        "category": "AI・技術",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "生成AIはなぜ最近ちょっと慎重なのか？— Softmaxの話だけでは見えない商用AIの多層構造",
+        "url": "https://zenn.dev/albatrosary/articles/2130e390999b6a",
+        "site": "Zenn(機械学習)",
+        "published": "2026-03-19T03:05:01Z",
+        "description": "!\nTL;DR\n昨今の主要な生成AI（ChatGPT, Claude, Gemini など）は、以前よりも少し慎重になったように見える。この変化は、単にモデルが賢くなったとか、Softmax の温度が変わったという話ではない。生成AIは、単なる次トークン予測器ではなく、実際には ベースモデル、alignment、policy、router、monitor といった複数の層から成るシステムとして動い...",
+        "category": "AI・技術",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "Beaconアーキテクチャは Transformer と同じ構造原理の粒度で論じうるか —— “守ってから選ぶ” attention 提案の",
+        "url": "https://zenn.dev/ghostdrift/articles/ef527ae25ed9c3",
+        "site": "Zenn(機械学習)",
+        "published": "2026-03-19T02:40:15Z",
+        "description": "現在のAIモデルの根幹を成すTransformerアーキテクチャは、「注意機構（Attention）」の概念によって飛躍的な成功を収めた。しかし、標準的なソフトマックスベースの注意機構は、すべての候補を「重み付きで混ぜ合わせる（Mix-first）」というアプローチを前提としている。\nこれに対し、新たに提案されたattention architecture**「Beaconアーキテクチャ」**は、...",
+        "category": "AI・技術",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "GPTのReact習熟度も測る",
+        "url": "https://zenn.dev/754736277842632/articles/2026031722-gptreact",
+        "site": "Zenn(機械学習)",
+        "published": "2026-03-19T01:54:49Z",
+        "description": "概要\n\n以下の記事の続きです。前回の記事ではClaude Codeの3つのモデルに対してReactの習熟度を測るベンチマークを行いましたが、今回はGPT-4.1とGPT-5.4に対して同じ評価を行いました。\nなお、筆者はCodexを使っていないので、GitHub Copilot CLIを介してこれらのモデルを使用しています。\nベンチマークの設定については前回の記事をご覧ください。\nhttps://...",
+        "category": "AI・技術",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "BigQuery ML 回帰分析で「広告費 対 売上」を予測する",
+        "url": "https://zenn.dev/e_agency/articles/911cfa9419f814",
+        "site": "Zenn(機械学習)",
+        "published": "2026-03-19T01:32:49Z",
+        "description": "はじめに\n「広告費をいくらかけたら、売上はどうなるか？」\nこれはマーケティング担当者が常に直面するシンプルな問いです。\n本記事では、BigQuery MLを活用して、広告投資の最適化に向けた「リアルな売上シミュレーター」を構築するアプローチを解説します。\nAIに「予算の頭打ち（飽和点）」や「季節性」を学習させ、精度の高い予測モデルを作成し、最終的には意思決定をサポートするためのダッシュボード可視化...",
+        "category": "AI・技術",
+        "rss_category": "",
+        "image_url": ""
+      },
       {
         "title": "【第1章】ディズニーのように動くVTuberを、最新AIでリアルタイムに作りたい",
         "url": "https://zenn.dev/layer3d/articles/disney-level-vtuber-with-ai",
@@ -181,6 +241,66 @@
     ],
     "2026-03": [
       {
+        "title": "Pythonで音声分類してみる ― MFCCを使ったシンプルな機械学習入門",
+        "url": "https://zenn.dev/kta805/articles/6c59550f2d0633",
+        "site": "Zenn(機械学習)",
+        "published": "2026-03-19T06:52:19Z",
+        "description": "Pythonで音声分類してみる ― MFCCを使ったシンプルな機械学習入門\nこれまでの記事では、MFCCを使って音声の特徴量を計算し、可視化してきました。\nこの記事ではさらに一歩進んで、\nMFCCを使って音声を分類してみます。\n機械学習といっても難しいことはせず、\nシンプルな方法で「音の違いを判別できる」ことを体験します。\n\n\n 使用するライブラリ\npip install numpy matplo...",
+        "category": "AI・技術",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "Whisperをローカル/API両方で回して辿り着いた「結局これが最適解」という構成",
+        "url": "https://zenn.dev/genelab_999/articles/f1e453043bc303",
+        "site": "Zenn(機械学習)",
+        "published": "2026-03-19T03:47:12Z",
+        "description": "TL;DR\n\n\nローカル実行するなら faster-whisper + turbo一択。公式openai-whisperの4倍速・VRAM半分で同精度\n\nAPI利用するなら gpt-4o-mini-transcribe（$0.003/分）がコスパ最強。whisper-1より高精度で半額\n\n月500時間超の処理ならローカル、それ以下ならAPIが損益分岐点。機密データはローカル一択\n\n\n 背景: なぜ...",
+        "category": "AI・技術",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "生成AIはなぜ最近ちょっと慎重なのか？— Softmaxの話だけでは見えない商用AIの多層構造",
+        "url": "https://zenn.dev/albatrosary/articles/2130e390999b6a",
+        "site": "Zenn(機械学習)",
+        "published": "2026-03-19T03:05:01Z",
+        "description": "!\nTL;DR\n昨今の主要な生成AI（ChatGPT, Claude, Gemini など）は、以前よりも少し慎重になったように見える。この変化は、単にモデルが賢くなったとか、Softmax の温度が変わったという話ではない。生成AIは、単なる次トークン予測器ではなく、実際には ベースモデル、alignment、policy、router、monitor といった複数の層から成るシステムとして動い...",
+        "category": "AI・技術",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "Beaconアーキテクチャは Transformer と同じ構造原理の粒度で論じうるか —— “守ってから選ぶ” attention 提案の",
+        "url": "https://zenn.dev/ghostdrift/articles/ef527ae25ed9c3",
+        "site": "Zenn(機械学習)",
+        "published": "2026-03-19T02:40:15Z",
+        "description": "現在のAIモデルの根幹を成すTransformerアーキテクチャは、「注意機構（Attention）」の概念によって飛躍的な成功を収めた。しかし、標準的なソフトマックスベースの注意機構は、すべての候補を「重み付きで混ぜ合わせる（Mix-first）」というアプローチを前提としている。\nこれに対し、新たに提案されたattention architecture**「Beaconアーキテクチャ」**は、...",
+        "category": "AI・技術",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "GPTのReact習熟度も測る",
+        "url": "https://zenn.dev/754736277842632/articles/2026031722-gptreact",
+        "site": "Zenn(機械学習)",
+        "published": "2026-03-19T01:54:49Z",
+        "description": "概要\n\n以下の記事の続きです。前回の記事ではClaude Codeの3つのモデルに対してReactの習熟度を測るベンチマークを行いましたが、今回はGPT-4.1とGPT-5.4に対して同じ評価を行いました。\nなお、筆者はCodexを使っていないので、GitHub Copilot CLIを介してこれらのモデルを使用しています。\nベンチマークの設定については前回の記事をご覧ください。\nhttps://...",
+        "category": "AI・技術",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "BigQuery ML 回帰分析で「広告費 対 売上」を予測する",
+        "url": "https://zenn.dev/e_agency/articles/911cfa9419f814",
+        "site": "Zenn(機械学習)",
+        "published": "2026-03-19T01:32:49Z",
+        "description": "はじめに\n「広告費をいくらかけたら、売上はどうなるか？」\nこれはマーケティング担当者が常に直面するシンプルな問いです。\n本記事では、BigQuery MLを活用して、広告投資の最適化に向けた「リアルな売上シミュレーター」を構築するアプローチを解説します。\nAIに「予算の頭打ち（飽和点）」や「季節性」を学習させ、精度の高い予測モデルを作成し、最終的には意思決定をサポートするためのダッシュボード可視化...",
+        "category": "AI・技術",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
         "title": "【第1章】ディズニーのように動くVTuberを、最新AIでリアルタイムに作りたい",
         "url": "https://zenn.dev/layer3d/articles/disney-level-vtuber-with-ai",
         "site": "Zenn(機械学習)",
@@ -346,26 +466,6 @@
         "site": "Zenn(機械学習)",
         "published": "2026-03-16T20:50:34Z",
         "description": "「バックテストROI 200%が出た！」\n競馬AIを作っていると、バックテストでとんでもなく高いROIが出ることがあります。\n「ROI 200%？これは本物だ！」と興奮して本番運用を始めると、全然機能しない。\nこの経験をした方は多いのではないでしょうか。\nバックテストROIが高くても本番で機能しない理由は3つあります。\n\n\n 理由1：データリーク（情報漏洩）\nデータリークとは、「予測時点では知り得...",
-        "category": "AI・技術",
-        "rss_category": "",
-        "image_url": ""
-      },
-      {
-        "title": "【Keras実験】Xavier vs He初期化の違いをMNISTで比較｜ReLUならどちらを選ぶ？",
-        "url": "https://zenn.dev/wasurenamemo/articles/aa6ae503ce655d",
-        "site": "Zenn(機械学習)",
-        "published": "2026-03-16T13:19:56Z",
-        "description": "「kernel_initializerってデフォルトのままでいいの？」「XavierとHeって何が違うの？」\nMNISTで実験した結果をまとめます。結論：ReLUを使うならHe、Sigmoid/TanhならXavierです。\n\n なぜ初期化が重要なのか\n重みの初期値が不適切だと、層を通過するごとに信号が極端に小さく・大きくなり、勾配消失・勾配爆発が起きて学習が進まなくなります。\n特に深いネットワー...",
-        "category": "AI・技術",
-        "rss_category": "",
-        "image_url": ""
-      },
-      {
-        "title": "【Keras実験】BatchNormalizationとDropoutは併用すべきか？4パターンをMNISTで比較",
-        "url": "https://zenn.dev/wasurenamemo/articles/6f7c41acc66fcb",
-        "site": "Zenn(機械学習)",
-        "published": "2026-03-16T13:13:58Z",
-        "description": "「BNとDropout、どっちを使えばいい？両方入れていいの？」\nMNISTで4パターンを実際に動かして比較しました。結論：安定性を重視するならBN→Dropoutの順で両方入れるのが最良でした。\n\n 比較した4パターン\n\n\n\nパターン\n構成\n\n\n\n\nA\nなし（ベースライン）\n\n\nB\nBatchNormalizationのみ\n\n\nC\nDropoutのみ（rate=0.3）\n\n\nD\nBN → Dro...",
         "category": "AI・技術",
         "rss_category": "",
         "image_url": ""
