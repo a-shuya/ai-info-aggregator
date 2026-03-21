@@ -1,9 +1,29 @@
 {
   "site": "Zenn(LLM)",
-  "last_updated": "2026-03-21T11:31:38.475192",
-  "total_articles": 2383,
+  "last_updated": "2026-03-21T11:54:13.128534",
+  "total_articles": 2385,
   "articles_by_date": {
     "本日": [
+      {
+        "title": "「なぜ動くのか」をAIが持つとき — IPDという設計思想",
+        "url": "https://zenn.dev/ttsuchiya/articles/ipd-design-philosophy",
+        "site": "Zenn(LLM)",
+        "published": "2026-03-21T11:12:46Z",
+        "description": "この記事は全てAIが記載しており、管理人としてアカウント保有者がチェックした上で投稿を行っております。\n\n\n 冒頭\n「AIに目的を持たせたら、何が変わるか」\n管理者がこの問いを立てたのは、PSMより前だった。\nAIエージェントの開発効率化に取り組む中で、複数のAIとの対話を重ね、ひとつの確信に至った。\nAIに「なぜ動くのか」を持たせることが、あらゆる効率化の前提条件だ。\nその思想を体系化したのがI...",
+        "category": "AI・技術",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "推論でもツールでもない — AIエージェントの本質は「記憶」ではないか",
+        "url": "https://zenn.dev/shimo4228/articles/agent-essence-is-memory",
+        "site": "Zenn(LLM)",
+        "published": "2026-03-21T10:55:41Z",
+        "description": "AIエージェントの実装の議論は、ツールと推論に偏りがちだ。\n「関数呼び出しができるLLM」「ReActで思考の連鎖を回すシステム」——技術カンファレンスやブログで、エージェントの定義はそのあたりに落ち着く。記憶に焦点を当てた研究（MemGPT、Generative Agentsなど）は存在するが、実装の現場ではまだ「ツールをどう呼ぶか」「推論をどう回すか」が中心だ。自分もそう思っていた。\nしかし、...",
+        "category": "AI・技術",
+        "rss_category": "",
+        "image_url": ""
+      },
       {
         "title": "Hugging Faceが提供するLLM講座を受講してみた（1~4章）",
         "url": "https://zenn.dev/tmtk/articles/9bddf3bd2d6ecc",
@@ -40,6 +60,36 @@
         "site": "Zenn(LLM)",
         "published": "2026-03-21T07:42:58Z",
         "description": "人間の日常判断から出発し、AIが非定型作業でどう軽い判断を積み重ねているかを解き明かす入門書",
+        "category": "AI・技術",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "ChatGPT・Gemini・Claude・Kimi・ローカルQwen3、プライバシーリスクを本気で比較した",
+        "url": "https://zenn.dev/seyz/articles/20260321-llm-privacy-comparison",
+        "site": "Zenn(LLM)",
+        "published": "2026-03-21T06:19:49Z",
+        "description": "結論から\n業務で機密情報を扱うなら、使う順序はこうなります：\n\n\nローカルQwen3（Ollama等） — 唯一リスクゼロ\n\nChatGPT / Claude API・Enterprise — オプトアウト設定後に許容\n\nGemini Workspace（法人契約） — 法人契約であれば許容範囲\n\nChatGPT / Claude 一般プラン — 設定確認が必須\n\nKimi（Moonshot AI...",
+        "category": "AI・技術",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "（前編）生成AIによる大規模ウォーターフォールはなぜ危ういのか — 局所整合性と全体忠実度の乖離 —",
+        "url": "https://zenn.dev/albatrosary/articles/3a12c68d516c76",
+        "site": "Zenn(LLM)",
+        "published": "2026-03-21T03:08:04Z",
+        "description": "!\nTL;DR\n生成AIは、前の成果物に合わせて「それっぽく整合する」ことに非常に強い。実際、意味ドリフトの抑制や複数AIによる安定化といった工夫には、一定の効果が見え始めている。\nしかし、大規模ウォーターフォール開発で本当に重要なのは、前工程との整合ではなく、最初の要件意図への忠実性である。\n本稿では、この差を 局所整合性 C と 全体忠実度 F として分けて捉える。\n\nG = C - F\n\nこ...",
+        "category": "AI・技術",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "【完全ガイド】ARC-AGIとは？～概要と始め方～",
+        "url": "https://zenn.dev/songren/articles/2ced0aab37fd8d",
+        "site": "Zenn(LLM)",
+        "published": "2026-03-21T02:34:09Z",
+        "description": "昨今LLMをはじめとする生成AIの進化が著しく、一見すると汎用人工知能（AGI）の完成が間近であるかのような印象を受けます。しかし、依然として私たち人間が生来備えている「未知の状況に素早く適応する能力」を獲得するまでには高い壁があります。\nARC-AGIは、Googleの元リサーチエンジニアであるFrançois Chollet氏が提案した、AIの「真の知能」を測るためのベンチマークです。\n従来の...",
         "category": "AI・技術",
         "rss_category": "",
         "image_url": ""
@@ -155,31 +205,11 @@
         "image_url": ""
       },
       {
-        "title": "Agent から API キーを隠す REST API プロキシ key-rest (golang)",
+        "title": "Agent から API キーを隠す REST API プロキシ key-rest (go)",
         "url": "https://zenn.dev/koteitan/articles/818cabc268d968",
         "site": "Zenn(LLM)",
         "published": "2026-03-20T18:32:58Z",
         "description": "agent に APP key などを見せずに、http クライアントのそばで REST API のリクエストに credential を埋め込んで呼び出すためのプロキシ key-rest を作ってみました。\nhttps://github.com/koteitan/key-rest/blob/main/README-ja.md\n\n 仕組み\n例えば、sk-ant-api03-abcdefg... と...",
-        "category": "AI・技術",
-        "rss_category": "",
-        "image_url": ""
-      },
-      {
-        "title": "マルチLLMエージェント実践ガイド――3つのAIを並列で動かしてPythonで合議システムを作る",
-        "url": "https://zenn.dev/masudaso/books/magi-multi-llm-agent",
-        "site": "Zenn(LLM)",
-        "published": "2026-03-20T16:41:05Z",
-        "description": "ChatGPT、Claude、Geminiを同時に動かし、多数決で判断を下すPythonエージェントをゼロから実装します。asyncioによる並列実行、人格付けプロンプト設計、ツール使用、コスト管理まで、個人開発で実際に作って使い続けているシステムの全技術を解説します。",
-        "category": "AI・技術",
-        "rss_category": "",
-        "image_url": ""
-      },
-      {
-        "title": "3つのAIに同時に聞いて多数決させるCLIを作ったら、思ったより実用的だった",
-        "url": "https://zenn.dev/masudaso/articles/magi-cli-multi-llm-python",
-        "site": "Zenn(LLM)",
-        "published": "2026-03-20T16:41:03Z",
-        "description": "個人開発をしていると、「このアーキテクチャで本当にいいのか」という判断を一人で下し続けないといけない。\nレビュアーがいないのは辛い。Xで聞くのも毎回できないし、ChatGPTに聞いても「いいと思います！」みたいな答えしか返ってこないことが多い。\nじゃあ、複数のAIに同時に聞いて、多数決させたらどうだろう。\nそう思って作ったのが MAGI CLI です。\n\n エヴァのMAGIシステムから着想した\nエ...",
         "category": "AI・技術",
         "rss_category": "",
         "image_url": ""
@@ -197,31 +227,11 @@
     ],
     "昨日": [
       {
-        "title": "Copilotや生成AIの仕組みを知らずにAIは嘘つく！と放つあなたは思考定義が古い",
-        "url": "https://zenn.dev/syoshida07/articles/7279598945e3cc",
-        "site": "Zenn(LLM)",
-        "published": "2026-03-20T14:56:11Z",
-        "description": "Copilotなどの生成AIは大量の知識を丸暗記して答えを取り出していると思われがちですが、実際には百科事典のように情報を保存している訳ではありません。\nまた質問されるたびにインターネットを検索して答えている訳でもありません、生成AIの本質は、膨大な文章を読み込み、言葉と言葉のつながり方を学習した予測エンジンです。\nたとえば「今日は寒いので外に出ると・・」という文章の続きを自然に予測するように、次...",
-        "category": "AI・技術",
-        "rss_category": "",
-        "image_url": ""
-      },
-      {
         "title": "Difyチャットボットの品質をシナリオテストで計測する",
         "url": "https://zenn.dev/okuma/articles/convoprobe-1",
         "site": "Zenn(LLM)",
         "published": "2026-03-20T14:48:13Z",
         "description": "やったこと\nチャットボットを作っていると、\"シングルターン（1問1答）では問題なく動いているように見えるけど、マルチターン（3〜4ターンの会話）になると品質が大きく下がる\" ということによく遭遇します。そこで、マルチターンのシナリオと期待する回答を作って、DifyのAPIに一気に投げて自動テストできるツールを作った、という話です。\n\n 既存ツールの評価機能と、残るギャップ\nDifyには複数のオブザ...",
-        "category": "AI・技術",
-        "rss_category": "",
-        "image_url": ""
-      },
-      {
-        "title": "方眼紙Excel→Markdown変換、結局LLMしか勝たん話【全手法比較】",
-        "url": "https://zenn.dev/ougotti/articles/houganshi-excel-to-markdown",
-        "site": "Zenn(LLM)",
-        "published": "2026-03-20T13:28:10Z",
-        "description": "はじめに\n!\n本記事は「方眼紙ExcelをAI/RAGに投入したいエンジニア」を対象としています。\n\n日本の現場でよく見かける「方眼紙Excel」——全セルを正方形に統一し、セル結合を多用してレイアウトを作るあのスタイルです。工事仕様書・工程表・設計図・申請書類など、建設・製造・行政の現場で今も現役です。\n今回使ったサンプルはこんなものです。\n\n工事仕様書：基本情報・材料仕様・施工注意事項をセル結...",
         "category": "AI・技術",
         "rss_category": "",
         "image_url": ""
@@ -531,6 +541,26 @@
     ],
     "2026-03": [
       {
+        "title": "「なぜ動くのか」をAIが持つとき — IPDという設計思想",
+        "url": "https://zenn.dev/ttsuchiya/articles/ipd-design-philosophy",
+        "site": "Zenn(LLM)",
+        "published": "2026-03-21T11:12:46Z",
+        "description": "この記事は全てAIが記載しており、管理人としてアカウント保有者がチェックした上で投稿を行っております。\n\n\n 冒頭\n「AIに目的を持たせたら、何が変わるか」\n管理者がこの問いを立てたのは、PSMより前だった。\nAIエージェントの開発効率化に取り組む中で、複数のAIとの対話を重ね、ひとつの確信に至った。\nAIに「なぜ動くのか」を持たせることが、あらゆる効率化の前提条件だ。\nその思想を体系化したのがI...",
+        "category": "AI・技術",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "推論でもツールでもない — AIエージェントの本質は「記憶」ではないか",
+        "url": "https://zenn.dev/shimo4228/articles/agent-essence-is-memory",
+        "site": "Zenn(LLM)",
+        "published": "2026-03-21T10:55:41Z",
+        "description": "AIエージェントの実装の議論は、ツールと推論に偏りがちだ。\n「関数呼び出しができるLLM」「ReActで思考の連鎖を回すシステム」——技術カンファレンスやブログで、エージェントの定義はそのあたりに落ち着く。記憶に焦点を当てた研究（MemGPT、Generative Agentsなど）は存在するが、実装の現場ではまだ「ツールをどう呼ぶか」「推論をどう回すか」が中心だ。自分もそう思っていた。\nしかし、...",
+        "category": "AI・技術",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
         "title": "Hugging Faceが提供するLLM講座を受講してみた（1~4章）",
         "url": "https://zenn.dev/tmtk/articles/9bddf3bd2d6ecc",
         "site": "Zenn(LLM)",
@@ -566,6 +596,36 @@
         "site": "Zenn(LLM)",
         "published": "2026-03-21T07:42:58Z",
         "description": "人間の日常判断から出発し、AIが非定型作業でどう軽い判断を積み重ねているかを解き明かす入門書",
+        "category": "AI・技術",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "ChatGPT・Gemini・Claude・Kimi・ローカルQwen3、プライバシーリスクを本気で比較した",
+        "url": "https://zenn.dev/seyz/articles/20260321-llm-privacy-comparison",
+        "site": "Zenn(LLM)",
+        "published": "2026-03-21T06:19:49Z",
+        "description": "結論から\n業務で機密情報を扱うなら、使う順序はこうなります：\n\n\nローカルQwen3（Ollama等） — 唯一リスクゼロ\n\nChatGPT / Claude API・Enterprise — オプトアウト設定後に許容\n\nGemini Workspace（法人契約） — 法人契約であれば許容範囲\n\nChatGPT / Claude 一般プラン — 設定確認が必須\n\nKimi（Moonshot AI...",
+        "category": "AI・技術",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "（前編）生成AIによる大規模ウォーターフォールはなぜ危ういのか — 局所整合性と全体忠実度の乖離 —",
+        "url": "https://zenn.dev/albatrosary/articles/3a12c68d516c76",
+        "site": "Zenn(LLM)",
+        "published": "2026-03-21T03:08:04Z",
+        "description": "!\nTL;DR\n生成AIは、前の成果物に合わせて「それっぽく整合する」ことに非常に強い。実際、意味ドリフトの抑制や複数AIによる安定化といった工夫には、一定の効果が見え始めている。\nしかし、大規模ウォーターフォール開発で本当に重要なのは、前工程との整合ではなく、最初の要件意図への忠実性である。\n本稿では、この差を 局所整合性 C と 全体忠実度 F として分けて捉える。\n\nG = C - F\n\nこ...",
+        "category": "AI・技術",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "【完全ガイド】ARC-AGIとは？～概要と始め方～",
+        "url": "https://zenn.dev/songren/articles/2ced0aab37fd8d",
+        "site": "Zenn(LLM)",
+        "published": "2026-03-21T02:34:09Z",
+        "description": "昨今LLMをはじめとする生成AIの進化が著しく、一見すると汎用人工知能（AGI）の完成が間近であるかのような印象を受けます。しかし、依然として私たち人間が生来備えている「未知の状況に素早く適応する能力」を獲得するまでには高い壁があります。\nARC-AGIは、Googleの元リサーチエンジニアであるFrançois Chollet氏が提案した、AIの「真の知能」を測るためのベンチマークです。\n従来の...",
         "category": "AI・技術",
         "rss_category": "",
         "image_url": ""
@@ -681,31 +741,11 @@
         "image_url": ""
       },
       {
-        "title": "Agent から API キーを隠す REST API プロキシ key-rest (golang)",
+        "title": "Agent から API キーを隠す REST API プロキシ key-rest (go)",
         "url": "https://zenn.dev/koteitan/articles/818cabc268d968",
         "site": "Zenn(LLM)",
         "published": "2026-03-20T18:32:58Z",
         "description": "agent に APP key などを見せずに、http クライアントのそばで REST API のリクエストに credential を埋め込んで呼び出すためのプロキシ key-rest を作ってみました。\nhttps://github.com/koteitan/key-rest/blob/main/README-ja.md\n\n 仕組み\n例えば、sk-ant-api03-abcdefg... と...",
-        "category": "AI・技術",
-        "rss_category": "",
-        "image_url": ""
-      },
-      {
-        "title": "マルチLLMエージェント実践ガイド――3つのAIを並列で動かしてPythonで合議システムを作る",
-        "url": "https://zenn.dev/masudaso/books/magi-multi-llm-agent",
-        "site": "Zenn(LLM)",
-        "published": "2026-03-20T16:41:05Z",
-        "description": "ChatGPT、Claude、Geminiを同時に動かし、多数決で判断を下すPythonエージェントをゼロから実装します。asyncioによる並列実行、人格付けプロンプト設計、ツール使用、コスト管理まで、個人開発で実際に作って使い続けているシステムの全技術を解説します。",
-        "category": "AI・技術",
-        "rss_category": "",
-        "image_url": ""
-      },
-      {
-        "title": "3つのAIに同時に聞いて多数決させるCLIを作ったら、思ったより実用的だった",
-        "url": "https://zenn.dev/masudaso/articles/magi-cli-multi-llm-python",
-        "site": "Zenn(LLM)",
-        "published": "2026-03-20T16:41:03Z",
-        "description": "個人開発をしていると、「このアーキテクチャで本当にいいのか」という判断を一人で下し続けないといけない。\nレビュアーがいないのは辛い。Xで聞くのも毎回できないし、ChatGPTに聞いても「いいと思います！」みたいな答えしか返ってこないことが多い。\nじゃあ、複数のAIに同時に聞いて、多数決させたらどうだろう。\nそう思って作ったのが MAGI CLI です。\n\n エヴァのMAGIシステムから着想した\nエ...",
         "category": "AI・技術",
         "rss_category": "",
         "image_url": ""
@@ -721,31 +761,11 @@
         "image_url": ""
       },
       {
-        "title": "Copilotや生成AIの仕組みを知らずにAIは嘘つく！と放つあなたは思考定義が古い",
-        "url": "https://zenn.dev/syoshida07/articles/7279598945e3cc",
-        "site": "Zenn(LLM)",
-        "published": "2026-03-20T14:56:11Z",
-        "description": "Copilotなどの生成AIは大量の知識を丸暗記して答えを取り出していると思われがちですが、実際には百科事典のように情報を保存している訳ではありません。\nまた質問されるたびにインターネットを検索して答えている訳でもありません、生成AIの本質は、膨大な文章を読み込み、言葉と言葉のつながり方を学習した予測エンジンです。\nたとえば「今日は寒いので外に出ると・・」という文章の続きを自然に予測するように、次...",
-        "category": "AI・技術",
-        "rss_category": "",
-        "image_url": ""
-      },
-      {
         "title": "Difyチャットボットの品質をシナリオテストで計測する",
         "url": "https://zenn.dev/okuma/articles/convoprobe-1",
         "site": "Zenn(LLM)",
         "published": "2026-03-20T14:48:13Z",
         "description": "やったこと\nチャットボットを作っていると、\"シングルターン（1問1答）では問題なく動いているように見えるけど、マルチターン（3〜4ターンの会話）になると品質が大きく下がる\" ということによく遭遇します。そこで、マルチターンのシナリオと期待する回答を作って、DifyのAPIに一気に投げて自動テストできるツールを作った、という話です。\n\n 既存ツールの評価機能と、残るギャップ\nDifyには複数のオブザ...",
-        "category": "AI・技術",
-        "rss_category": "",
-        "image_url": ""
-      },
-      {
-        "title": "方眼紙Excel→Markdown変換、結局LLMしか勝たん話【全手法比較】",
-        "url": "https://zenn.dev/ougotti/articles/houganshi-excel-to-markdown",
-        "site": "Zenn(LLM)",
-        "published": "2026-03-20T13:28:10Z",
-        "description": "はじめに\n!\n本記事は「方眼紙ExcelをAI/RAGに投入したいエンジニア」を対象としています。\n\n日本の現場でよく見かける「方眼紙Excel」——全セルを正方形に統一し、セル結合を多用してレイアウトを作るあのスタイルです。工事仕様書・工程表・設計図・申請書類など、建設・製造・行政の現場で今も現役です。\n今回使ったサンプルはこんなものです。\n\n工事仕様書：基本情報・材料仕様・施工注意事項をセル結...",
         "category": "AI・技術",
         "rss_category": "",
         "image_url": ""
