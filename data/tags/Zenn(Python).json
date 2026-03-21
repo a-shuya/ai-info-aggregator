@@ -1,9 +1,101 @@
 {
   "site": "Zenn(Python)",
-  "last_updated": "2026-03-21T17:13:53.758445",
-  "total_articles": 3020,
+  "last_updated": "2026-03-21T17:45:36.104221",
+  "total_articles": 3038,
   "articles_by_date": {
+    "本日": [
+      {
+        "title": "個人開発でDiscord通知対応のログ出力クラスを整備した",
+        "url": "https://zenn.dev/miz7maki/articles/92cc3c513224c0",
+        "site": "Zenn(Python)",
+        "published": "2026-03-21T17:30:49Z",
+        "description": "個人開発でPythonを用いたWebスクレイピングを行っていますが、今回ログの整備と一緒にDiscord通知にも対応させることにしました。\n\n ログ出力はloggingライブラリを用いる\nimport logging\nlogging.basicConfig(\n    level=logging.INFO,\n    format=f'%(asctime)s [%(levelname)s] %(mes...",
+        "category": "開発",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "有名な「狼と山羊とキャベツパズル」をpythonで解いてみる",
+        "url": "https://zenn.dev/atware/articles/61d4263ca64d25",
+        "site": "Zenn(Python)",
+        "published": "2026-03-21T15:11:14Z",
+        "description": "グラフ理論の練習として、有名な「狼と山羊とキャベツパズル」をPythonで解いてみます。\n\n 狼と山羊とキャベツパズルとは\n川の片岸に、人と狼、山羊、キャベツがあります。\n人は船を使って、一度に1つだけ荷物（または動物）を運ぶことができます。\nただし、人がいない岸において、以下の状態は許されません。\n\n狼と山羊が同じ岸にいる\n山羊とキャベツが同じ岸にいる\n\nこの制約を守りながら、最短手順で全てを無...",
+        "category": "開発",
+        "rss_category": "",
+        "image_url": ""
+      }
+    ],
     "昨日": [
+      {
+        "title": "OllamaでローカルLLMを動かす完全ガイド",
+        "url": "https://zenn.dev/penjin/articles/ollama-llm-guide-complete-local",
+        "site": "Zenn(Python)",
+        "published": "2026-03-21T14:45:43Z",
+        "description": "OllamaでローカルLLMを動かす完全ガイド\n\n この記事でわかること\nこのガイドでは、Ollamaを使ってローカルLLM（大規模言語モデル）を動かすメソッドについて詳しく解説します。以下に学ぶことについての概要です。\n\nOllamaの基本的な使い方\n必要な環境の準備\n基礎的な実装手順\n機能追加と実用化\nトラブルシューティング\n\n\n 環境準備\nOllamaをローカルで動かすためには、Python...",
+        "category": "開発",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "OllamaのモデルをPythonから使う実践ガイド",
+        "url": "https://zenn.dev/penjin/articles/python-ollama-practical-guide-model",
+        "site": "Zenn(Python)",
+        "published": "2026-03-21T14:45:00Z",
+        "description": "OllamaのモデルをPythonから使う実践ガイド\nこの記事では、OllamaのモデルをPythonから使った経験やメソッドを詳しく解説します。OllamaはAPIキー不要でローカルで動作するため、Pythonエンジニアにとって非常に使いやすいツールと言えます。このガイドでは、環境準備から実用化までの流れを丁寧に説明し、実際に動くコード例も紹介します。\n\n この記事でわかること\n\nOllamaの...",
+        "category": "開発",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "Claude Codeのトークン消費を削減する — FTS5ナレッジDB + Tier索引設計",
+        "url": "https://zenn.dev/soy_tuber/articles/st-claude-code-knowledge",
+        "site": "Zenn(Python)",
+        "published": "2026-03-21T12:57:35Z",
+        "description": "問題\nCLAUDE.mdにプロジェクト全体のコーディング規約・テストコマンド・ドキュメントを全て記述すると、毎ターン大量のトークンを消費してしまいます。LLMのコンテキストウィンドウを圧迫し、品質低下を招く可能性があります。\n\n 解決策：2層構造\n「Tier 1索引」と「Tier 2 FTS5 DB」の2層構造で、トークン消費を大幅に削減する設計です。Tier 1は600トークン以内の軽量インデッ...",
+        "category": "開発",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "Claude Codeのhooks機能でポート衝突・危険コマンドを事前に自動防止する",
+        "url": "https://zenn.dev/soy_tuber/articles/st-claude-code-hooks",
+        "site": "Zenn(Python)",
+        "published": "2026-03-21T12:57:35Z",
+        "description": "Claude Code hooksとは\nClaude Codeのhooks機能は、ツール実行前後のイベント駆動型自動化を可能にします。PreToolUse（実行前検証）、PostToolUse（実行後処理）、UserPromptSubmit（プロンプト送信時）など複数のライフサイクルイベントに対応しており、事前にルールを強制することで開発の安全性を向上させます。特にPreToolUseフックは、実...",
+        "category": "開発",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "コント：Claude Codeに取り憑かれた男",
+        "url": "https://zenn.dev/soy_tuber/articles/st-claude-code-conte",
+        "site": "Zenn(Python)",
+        "published": "2026-03-21T12:57:34Z",
+        "description": "コント：Claude Codeに取り憑かれた男\n登場人物：\n新山： 聞き手。先輩のあまりの変貌に戸惑い、必死に人間界へ引き戻そうとする。\n武智： Claude Codeに脳を乗っ取られたエンジニア。\n（カフェの席。新山がノートを持って座っている）\n新山： 武智さん、お久しぶりです！東京の現場はどうですか？最近、何にハマってるんですか？\n武智： ……Claude Codeやな。\n新山： ああ、やっぱ...",
+        "category": "開発",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "コント：Claude Codeに取り憑かれた男",
+        "url": "https://zenn.dev/soy_tuber/articles/claude-code-conte",
+        "site": "Zenn(Python)",
+        "published": "2026-03-21T12:52:29Z",
+        "description": "コント：Claude Codeに取り憑かれた男\n登場人物：\n新山： 聞き手。先輩のあまりの変貌に戸惑い、必死に人間界へ引き戻そうとする。\n武智： Claude Codeに脳を乗っ取られたエンジニア。\n（カフェの席。新山がノートを持って座っている）\n新山： 武智さん、お久しぶりです！東京の現場はどうですか？最近、何にハマってるんですか？\n武智： ……Claude Codeやな。\n新山： ああ、やっぱ...",
+        "category": "開発",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "Tool Use・MCP時代のプロンプトインジェクション対策：新しい攻撃面と5つの防御実装",
+        "url": "https://zenn.dev/0h_n0/articles/78e4204a2a50c3",
+        "site": "Zenn(Python)",
+        "published": "2026-03-21T12:16:25Z",
+        "description": "Tool Use・MCP時代のプロンプトインジェクション対策：新しい攻撃面と5つの防御実装\n\n この記事でわかること\n\nLLMのTool Use（Function Calling）・MCPがもたらす新しい攻撃面（Tool Poisoning、Rug-Pull、Cross-Tool Contamination）の仕組み\nOWASP LLM Top 10 2025のLLM01とAI Agent Sec...",
+        "category": "開発",
+        "rss_category": "",
+        "image_url": ""
+      },
       {
         "title": "Gemini EnterpriseでAgent EngineのADK AgentがOAuth Toolを使う方法",
         "url": "https://zenn.dev/pixiv/articles/b0831d97415ef8",
@@ -318,6 +410,96 @@
       }
     ],
     "2026-03": [
+      {
+        "title": "個人開発でDiscord通知対応のログ出力クラスを整備した",
+        "url": "https://zenn.dev/miz7maki/articles/92cc3c513224c0",
+        "site": "Zenn(Python)",
+        "published": "2026-03-21T17:30:49Z",
+        "description": "個人開発でPythonを用いたWebスクレイピングを行っていますが、今回ログの整備と一緒にDiscord通知にも対応させることにしました。\n\n ログ出力はloggingライブラリを用いる\nimport logging\nlogging.basicConfig(\n    level=logging.INFO,\n    format=f'%(asctime)s [%(levelname)s] %(mes...",
+        "category": "開発",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "有名な「狼と山羊とキャベツパズル」をpythonで解いてみる",
+        "url": "https://zenn.dev/atware/articles/61d4263ca64d25",
+        "site": "Zenn(Python)",
+        "published": "2026-03-21T15:11:14Z",
+        "description": "グラフ理論の練習として、有名な「狼と山羊とキャベツパズル」をPythonで解いてみます。\n\n 狼と山羊とキャベツパズルとは\n川の片岸に、人と狼、山羊、キャベツがあります。\n人は船を使って、一度に1つだけ荷物（または動物）を運ぶことができます。\nただし、人がいない岸において、以下の状態は許されません。\n\n狼と山羊が同じ岸にいる\n山羊とキャベツが同じ岸にいる\n\nこの制約を守りながら、最短手順で全てを無...",
+        "category": "開発",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "OllamaでローカルLLMを動かす完全ガイド",
+        "url": "https://zenn.dev/penjin/articles/ollama-llm-guide-complete-local",
+        "site": "Zenn(Python)",
+        "published": "2026-03-21T14:45:43Z",
+        "description": "OllamaでローカルLLMを動かす完全ガイド\n\n この記事でわかること\nこのガイドでは、Ollamaを使ってローカルLLM（大規模言語モデル）を動かすメソッドについて詳しく解説します。以下に学ぶことについての概要です。\n\nOllamaの基本的な使い方\n必要な環境の準備\n基礎的な実装手順\n機能追加と実用化\nトラブルシューティング\n\n\n 環境準備\nOllamaをローカルで動かすためには、Python...",
+        "category": "開発",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "OllamaのモデルをPythonから使う実践ガイド",
+        "url": "https://zenn.dev/penjin/articles/python-ollama-practical-guide-model",
+        "site": "Zenn(Python)",
+        "published": "2026-03-21T14:45:00Z",
+        "description": "OllamaのモデルをPythonから使う実践ガイド\nこの記事では、OllamaのモデルをPythonから使った経験やメソッドを詳しく解説します。OllamaはAPIキー不要でローカルで動作するため、Pythonエンジニアにとって非常に使いやすいツールと言えます。このガイドでは、環境準備から実用化までの流れを丁寧に説明し、実際に動くコード例も紹介します。\n\n この記事でわかること\n\nOllamaの...",
+        "category": "開発",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "Claude Codeのトークン消費を削減する — FTS5ナレッジDB + Tier索引設計",
+        "url": "https://zenn.dev/soy_tuber/articles/st-claude-code-knowledge",
+        "site": "Zenn(Python)",
+        "published": "2026-03-21T12:57:35Z",
+        "description": "問題\nCLAUDE.mdにプロジェクト全体のコーディング規約・テストコマンド・ドキュメントを全て記述すると、毎ターン大量のトークンを消費してしまいます。LLMのコンテキストウィンドウを圧迫し、品質低下を招く可能性があります。\n\n 解決策：2層構造\n「Tier 1索引」と「Tier 2 FTS5 DB」の2層構造で、トークン消費を大幅に削減する設計です。Tier 1は600トークン以内の軽量インデッ...",
+        "category": "開発",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "Claude Codeのhooks機能でポート衝突・危険コマンドを事前に自動防止する",
+        "url": "https://zenn.dev/soy_tuber/articles/st-claude-code-hooks",
+        "site": "Zenn(Python)",
+        "published": "2026-03-21T12:57:35Z",
+        "description": "Claude Code hooksとは\nClaude Codeのhooks機能は、ツール実行前後のイベント駆動型自動化を可能にします。PreToolUse（実行前検証）、PostToolUse（実行後処理）、UserPromptSubmit（プロンプト送信時）など複数のライフサイクルイベントに対応しており、事前にルールを強制することで開発の安全性を向上させます。特にPreToolUseフックは、実...",
+        "category": "開発",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "コント：Claude Codeに取り憑かれた男",
+        "url": "https://zenn.dev/soy_tuber/articles/st-claude-code-conte",
+        "site": "Zenn(Python)",
+        "published": "2026-03-21T12:57:34Z",
+        "description": "コント：Claude Codeに取り憑かれた男\n登場人物：\n新山： 聞き手。先輩のあまりの変貌に戸惑い、必死に人間界へ引き戻そうとする。\n武智： Claude Codeに脳を乗っ取られたエンジニア。\n（カフェの席。新山がノートを持って座っている）\n新山： 武智さん、お久しぶりです！東京の現場はどうですか？最近、何にハマってるんですか？\n武智： ……Claude Codeやな。\n新山： ああ、やっぱ...",
+        "category": "開発",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "コント：Claude Codeに取り憑かれた男",
+        "url": "https://zenn.dev/soy_tuber/articles/claude-code-conte",
+        "site": "Zenn(Python)",
+        "published": "2026-03-21T12:52:29Z",
+        "description": "コント：Claude Codeに取り憑かれた男\n登場人物：\n新山： 聞き手。先輩のあまりの変貌に戸惑い、必死に人間界へ引き戻そうとする。\n武智： Claude Codeに脳を乗っ取られたエンジニア。\n（カフェの席。新山がノートを持って座っている）\n新山： 武智さん、お久しぶりです！東京の現場はどうですか？最近、何にハマってるんですか？\n武智： ……Claude Codeやな。\n新山： ああ、やっぱ...",
+        "category": "開発",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "Tool Use・MCP時代のプロンプトインジェクション対策：新しい攻撃面と5つの防御実装",
+        "url": "https://zenn.dev/0h_n0/articles/78e4204a2a50c3",
+        "site": "Zenn(Python)",
+        "published": "2026-03-21T12:16:25Z",
+        "description": "Tool Use・MCP時代のプロンプトインジェクション対策：新しい攻撃面と5つの防御実装\n\n この記事でわかること\n\nLLMのTool Use（Function Calling）・MCPがもたらす新しい攻撃面（Tool Poisoning、Rug-Pull、Cross-Tool Contamination）の仕組み\nOWASP LLM Top 10 2025のLLM01とAI Agent Sec...",
+        "category": "開発",
+        "rss_category": "",
+        "image_url": ""
+      },
       {
         "title": "Gemini EnterpriseでAgent EngineのADK AgentがOAuth Toolを使う方法",
         "url": "https://zenn.dev/pixiv/articles/b0831d97415ef8",
