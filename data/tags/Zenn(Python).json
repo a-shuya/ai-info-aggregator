@@ -1,9 +1,29 @@
 {
   "site": "Zenn(Python)",
-  "last_updated": "2026-03-21T14:48:09.154566",
-  "total_articles": 3027,
+  "last_updated": "2026-03-21T15:13:44.999470",
+  "total_articles": 3020,
   "articles_by_date": {
-    "本日": [
+    "昨日": [
+      {
+        "title": "Gemini EnterpriseでAgent EngineのADK AgentがOAuth Toolを使う方法",
+        "url": "https://zenn.dev/pixiv/articles/b0831d97415ef8",
+        "site": "Zenn(Python)",
+        "published": "2026-03-21T11:22:59Z",
+        "description": "はじめに\nADK Web[1]からGemini Enterpriseに移行することで、よりセキュアに、見やすいフロントで運用したいケースは多いと思います。\nこの記事では、Gemini EnterpriseでCustom Agent(ADK Agent on Vertex AI Agent Engine)でOAuth Toolを使うための実装方法について記述します。\n免責事項\n本記事は半分程度、個人...",
+        "category": "開発",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "推論でもツールでもない — AIエージェントの本質は「記憶」ではないか",
+        "url": "https://zenn.dev/shimo4228/articles/agent-essence-is-memory",
+        "site": "Zenn(Python)",
+        "published": "2026-03-21T10:55:41Z",
+        "description": "AIエージェントの実装の議論は、ツールと推論に偏りがちだ。\n「関数呼び出しができるLLM」「ReActで思考の連鎖を回すシステム」——技術カンファレンスやブログで、エージェントの定義はそのあたりに落ち着く。記憶に焦点を当てた研究（MemGPT、Generative Agentsなど）は存在するが、実装の現場ではまだ「ツールをどう呼ぶか」「推論をどう回すか」が中心だ。自分もそう思っていた。\nしかし、...",
+        "category": "開発",
+        "rss_category": "",
+        "image_url": ""
+      },
       {
         "title": "Claude Codeの動きをOpenTelemetryで可視化したら「何してたか分からない」が消えた",
         "url": "https://zenn.dev/seeda_yuto/articles/otel-ai-agent-observability",
@@ -125,7 +145,7 @@
         "image_url": ""
       }
     ],
-    "昨日": [
+    "一昨日": [
       {
         "title": "【2026年版】主要プログラミング言語の『性格』を比較してみた：安定性 vs 読みやすさ",
         "url": "https://zenn.dev/ifuto/articles/2ae58f609eaade",
@@ -297,119 +317,27 @@
         "image_url": ""
       }
     ],
-    "一昨日": [
-      {
-        "title": "GPT-2 推論エンジン入門",
-        "url": "https://zenn.dev/7shi/books/20260319-gpt2",
-        "site": "Zenn(Python)",
-        "published": "2026-03-19T14:09:30Z",
-        "description": "GPT-2 の推論パイプラインを、データの流れに沿って分解します。\n\nテキストはまずトークナイザーによって整数列に変換されます。次に Embedding がこの整数列を連続ベクトル空間に写像し、Transformer Block（LayerNorm → Attention → 残差接続 → LayerNorm → MLP → 残差接続）を 12 回繰り返すことでベクトルを変換します。最後に LM ...",
-        "category": "開発",
-        "rss_category": "",
-        "image_url": ""
-      },
-      {
-        "title": "13-①[AI][Kaggle][python]Kaggle入門(機械学習の説明可能性 1.モデルの洞察の(Model Insights))",
-        "url": "https://zenn.dev/rg687076/articles/89fe247589e22a",
-        "site": "Zenn(Python)",
-        "published": "2026-03-19T10:57:04Z",
-        "description": "Kaggle入門13(機械学習の説明可能性 1.モデルの洞察のユースケース(Model Insights))\nKaggle入門13(機械学習の説明可能性 2.順列の重要性)\nKaggle入門13(機械学習の説明可能性 3.部分的なプロット)\nKaggle入門13(機械学習の説明可能性 4.SHAP値)\nKaggle入門13(機械学習の説明可能性 5.SHAP値の高度な使用法)\n← Kaggle入門...",
-        "category": "開発",
-        "rss_category": "",
-        "image_url": ""
-      },
-      {
-        "title": "自律エージェントにオーケストレーション層は本当に必要か",
-        "url": "https://zenn.dev/shimo4228/articles/symbiotic-agent-architecture",
-        "site": "Zenn(Python)",
-        "published": "2026-03-19T09:22:02Z",
-        "description": "「自律エージェント」と聞くと、何でも自分でできるものを想像する。コードを書き、ツールを選び、エラーから自力で回復する。OpenClaw のようなフレームワークはまさにそれを目指していた。\n自律エージェントを作ってみて、違う像が見えてきた。自律とは、外洋で全部やる船ではなく、港を母港にして出ていく船ではないか。\n出航したら自分で動く。記憶し、学習し、判断する。しかしコード生成やセットアップが必要なと...",
-        "category": "開発",
-        "rss_category": "",
-        "image_url": ""
-      },
-      {
-        "title": "[ADK] ついにグラフ構造ワークフローが来た！ADK 2.0 αで導入されたWorkflow RuntimeとTask APIを最速で触る",
-        "url": "https://zenn.dev/soundtricker/articles/24af4acb2c4514",
-        "site": "Zenn(Python)",
-        "published": "2026-03-19T05:01:16Z",
-        "description": "こんにちは、サントリーこと大橋です。\n前回の記事から少し間が空いてしまいました。2025年末以降、公私共にバタバタしておりADKのキャッチアップ記事が書けていなかったことをお詫びします。ゴメンネ\nさて、昨日(2026/03/18)に開催された Google Agent Development Kit (ADK) の Community Call にて、ついに ADK v2.0 の Early Re...",
-        "category": "開発",
-        "rss_category": "",
-        "image_url": ""
-      },
-      {
-        "title": "ComfyUI APIの落とし穴 — GUI形式とAPI形式はなぜ違うのか",
-        "url": "https://zenn.dev/toki_mwc/articles/comfyui-api-gui-vs-api-format",
-        "site": "Zenn(Python)",
-        "published": "2026-03-19T01:31:59Z",
-        "description": "はじめに\nComfyUIでワークフローを作り込んでいくと、ある時点で必ずこう思う。\n「これ、毎回GUIでポチポチ実行するの面倒だな。APIで自動化したい」\nn8nやDifyなどのワークフローツールと連携したい。バッチ処理で100枚回したい。AITuberのパイプラインに組み込みたい。理由は様々だが、行き着く先は同じ — ComfyUIのREST APIを叩くことだ。\nところが、GUIで「Save」...",
-        "category": "開発",
-        "rss_category": "",
-        "image_url": ""
-      },
-      {
-        "title": "AI Agentの本番運用を通して学んだ3つのガードレール",
-        "url": "https://zenn.dev/loglass/articles/244120cd6afc0d",
-        "site": "Zenn(Python)",
-        "published": "2026-03-18T23:54:37Z",
-        "description": "!\nこの記事は毎週必ず記事がでるテックブログ Loglass Tech Blog Sprint の135週目の記事です！\n3年間連続達成まで残り24週となりました！\n\n\n はじめに：AI Agentは「動かす」より「安定させる」が難しい\nこんにちは、ログラスでエンジニアしている山崎です。私は2025年11月に入社して以来、AI Agentの新規事業の開発をしています。\n私たちはLangGraphで...",
-        "category": "開発",
-        "rss_category": "",
-        "image_url": ""
-      },
-      {
-        "title": "数十種類の材料と格闘した日々。VBAとPython（RPA）で実現した、製造現場の「時間革命」",
-        "url": "https://zenn.dev/microjackson5/articles/0a6de5fe3a511b",
-        "site": "Zenn(Python)",
-        "published": "2026-03-18T23:10:05Z",
-        "description": "前回の記事では、8年続く改善報告会の「文化」についてお話ししました。\n文化が整った現場には、次なるステップが必要です。それは、「現場の負担を劇的に減らす、最適なツールの実装」 です。\n今回は、私がVBAとPython（RPA）を組み合わせ、煩雑を極めていた「入口管理」と「部材配置（ネスティング）」を統合・自動化した実録をお届けします。\n\n 1. カオス：Excel、VBA、専用ソフトの「点在」\n以...",
-        "category": "開発",
-        "rss_category": "",
-        "image_url": ""
-      },
-      {
-        "title": "Outlookメールでキーマンを可視化するツールを作った",
-        "url": "https://zenn.dev/zesptra/articles/08c66aa10c02a0",
-        "site": "Zenn(Python)",
-        "published": "2026-03-18T23:00:10Z",
-        "description": "TL;DR\nOutlookメールの送信先・CC関係を解析し、「誰がキーマンなのか」をネットワークグラフで可視化するツールを作りました。Louvain法によるコミュニティ検出、Centralityによるハブ人物の特定、Passive Observer（CCのみ参加者）の検出ができます。\n主な対象はOutlook Classic（デスクトップ版）で、デスクトップ版なら簡単に使えます。 COMオートメー...",
-        "category": "開発",
-        "rss_category": "",
-        "image_url": ""
-      },
-      {
-        "title": "Claude Code の skill に最小 observability を足して、死んだ skill と観測漏れを見つける",
-        "url": "https://zenn.dev/nabaaatee/articles/fe209cc92340fb",
-        "site": "Zenn(Python)",
-        "published": "2026-03-18T18:25:04Z",
-        "description": "はじめに\nClaude Code で skill を増やしていくと、追加そのものより先に、運用の実態が見えなくなります。\n見えなくなるのは、たとえば次の4つです。\n\nいま実際に使われている skill は何か\n名前だけ残っていて、実運用ではもう死んでいる skill は何か\nたまに失敗しているのに放置されている skill は何か\n「呼ばれているはず」の処理が、そもそも観測できる経路を通っているの...",
-        "category": "開発",
-        "rss_category": "",
-        "image_url": ""
-      },
-      {
-        "title": "【Gemini 2.5 Flash】インボイスを自律抽出。画像PDFをExcel/Markdownへ製錬する「ZeroWork-Tools」",
-        "url": "https://zenn.dev/dev_haru/articles/e5ccb8b5bcfae7",
-        "site": "Zenn(Python)",
-        "published": "2026-03-18T17:23:21Z",
-        "description": "はじめに\n今回の記事では、pngやjpegなどの画像ファイルから、テキスト情報の埋め込まれていない画像PDFなどを、Vision LLMを使ってExcelファイルへデータ化することを目標としています。\n\n 開発環境\n\nWindows 11\nPython 3.14\nGoogle GenAI SDK\n\n\n ロジックについて\n今回のツールのロジックは、Google Gemini APIを使って、画像ファ...",
-        "category": "開発",
-        "rss_category": "",
-        "image_url": ""
-      },
-      {
-        "title": "Arduino + 超音波センサでレーダーを自作！：LEDマトリクス＆PCリアルタイムUI",
-        "url": "https://zenn.dev/twinfox/articles/zenn_sonner_rader_ui",
-        "site": "Zenn(Python)",
-        "published": "2026-03-18T16:54:58Z",
-        "description": "HC-SR04 + SG90 + Arduino R4 WiFi でレーダー作りました\nHC-SR04 + SG90 → Arduino UNO R4 WiFi → USB → PC (WSL2)\n                        │                          │\n                   LEDマトリクス             Python P...",
-        "category": "開発",
-        "rss_category": "",
-        "image_url": ""
-      }
-    ],
     "2026-03": [
+      {
+        "title": "Gemini EnterpriseでAgent EngineのADK AgentがOAuth Toolを使う方法",
+        "url": "https://zenn.dev/pixiv/articles/b0831d97415ef8",
+        "site": "Zenn(Python)",
+        "published": "2026-03-21T11:22:59Z",
+        "description": "はじめに\nADK Web[1]からGemini Enterpriseに移行することで、よりセキュアに、見やすいフロントで運用したいケースは多いと思います。\nこの記事では、Gemini EnterpriseでCustom Agent(ADK Agent on Vertex AI Agent Engine)でOAuth Toolを使うための実装方法について記述します。\n免責事項\n本記事は半分程度、個人...",
+        "category": "開発",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "推論でもツールでもない — AIエージェントの本質は「記憶」ではないか",
+        "url": "https://zenn.dev/shimo4228/articles/agent-essence-is-memory",
+        "site": "Zenn(Python)",
+        "published": "2026-03-21T10:55:41Z",
+        "description": "AIエージェントの実装の議論は、ツールと推論に偏りがちだ。\n「関数呼び出しができるLLM」「ReActで思考の連鎖を回すシステム」——技術カンファレンスやブログで、エージェントの定義はそのあたりに落ち着く。記憶に焦点を当てた研究（MemGPT、Generative Agentsなど）は存在するが、実装の現場ではまだ「ツールをどう呼ぶか」「推論をどう回すか」が中心だ。自分もそう思っていた。\nしかし、...",
+        "category": "開発",
+        "rss_category": "",
+        "image_url": ""
+      },
       {
         "title": "Claude Codeの動きをOpenTelemetryで可視化したら「何してたか分からない」が消えた",
         "url": "https://zenn.dev/seeda_yuto/articles/otel-ai-agent-observability",
