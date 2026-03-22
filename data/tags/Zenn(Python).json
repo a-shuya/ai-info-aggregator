@@ -1,9 +1,49 @@
 {
   "site": "Zenn(Python)",
-  "last_updated": "2026-03-22T09:52:04.393726",
-  "total_articles": 3048,
+  "last_updated": "2026-03-22T10:33:02.092291",
+  "total_articles": 3054,
   "articles_by_date": {
     "本日": [
+      {
+        "title": "Streamlit × Claude LLM で作る「AI Sentiment Index」付きマーケットダッシュボード",
+        "url": "https://zenn.dev/windex/articles/828771e36768c0",
+        "site": "Zenn(Python)",
+        "published": "2026-03-22T07:51:38Z",
+        "description": "はじめに\n「株価を見るたびに複数のサイトを開き直している」「Fear &amp; Greed Indexって結局どこで見ればいいの？」\nそんな課題を解決するために、Streamlit + Python + 複数AI APIを組み合わせたマーケットダッシュボードを個人開発しました。\n最大の特徴は、Claude LLMをベースに設計した独自の AI Sentiment Index (Claude Ed...",
+        "category": "開発",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "既存システム拡張で学んだフロント〜バックエンド開発の実務と設計の考え方",
+        "url": "https://zenn.dev/nbs_tokyo/articles/fb14d8329cc6b3",
+        "site": "Zenn(Python)",
+        "published": "2026-03-22T07:17:54Z",
+        "description": "航空業務管理アプリ開発（既存システム拡張）で実務レベルの設計・実装を経験した話\n\n ■ はじめに\n既存の航空業務管理システムの拡張案件に参画し、契約・単価・公共料金に関するCRUD機能およびCSV取込機能の実装を担当しました。\n本案件は単純なCRUD実装にとどまらず、以下のような実務特有の設計・考慮点が求められるものでした。\n\n論理削除による履歴管理\nCSVによる大量データの安全な取り込み\n既存シ...",
+        "category": "開発",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "Dify の GUI 手運用を CLI・MCP・宣言的管理に置き換える「DifyOps」を作った",
+        "url": "https://zenn.dev/cacc_lab/articles/178a9333e99dda",
+        "site": "Zenn(Python)",
+        "published": "2026-03-22T06:56:07Z",
+        "description": "3つのアプリに同じプロンプト変更を反映するのに30分ほどかかった\nセルフホスト版の Dify を運用していて、ある日気づきました。\nGUI で1つのアプリの設定を変えて、同じ変更を残り2つにも反映して、ナレッジベースを更新して、変更前の設定をメモしておいて――全部手作業。\n「作る」のは簡単なのに「運用する」のがひたすら面倒。この摩擦を解消するために、DifyOps を作りました。\n\n\n DifyO...",
+        "category": "開発",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "Claude Code Skills × 投資分析 Vol.3 — 処方箋エンジン・逆張り検出・銘柄クラスタリング",
+        "url": "https://zenn.dev/okikusan/articles/655df6dd36dfd4",
+        "site": "Zenn(Python)",
+        "published": "2026-03-22T06:10:36Z",
+        "description": "📘 この記事はシリーズ第3回です\nVol.1: Claude Code Skills で株スクリーニングを自動化した話\nVol.2: Claude Code Skills で「使うほど賢くなる」投資分析AIを作った話\n\n\n Claude Code Skills × 投資分析 Vol.3 — 運用フェーズで追加した7つの機能\n\n はじめに\n前回の記事（Vol.2）で、Claude Code Skil...",
+        "category": "開発",
+        "rss_category": "",
+        "image_url": ""
+      },
       {
         "title": "B13-FFT × クライオEM 実データ解析　ー　公開ノート　ー",
         "url": "https://zenn.dev/morc_b13/articles/6e661a29630a2f",
@@ -35,11 +75,41 @@
         "image_url": ""
       },
       {
+        "title": "AIモデルを高速化するCUDA Graphsとは？PyTorchで効果を検証",
+        "url": "https://zenn.dev/kosuke_sugimoto/articles/1614e65b27f6b4",
+        "site": "Zenn(Python)",
+        "published": "2026-03-22T03:41:27Z",
+        "description": "はじめに\n近年、AI の発展に伴い、特に LLM のようなモデルではパラメータ数の増加とともに推論時間の増大が問題となっています。\nこのような背景の中で、アルゴリズムやモデル構造を変更せずに推論を高速化する手法の一つとして CUDA Graphs が vLLM をはじめとする各種ランタイムで見受けられます。\n本記事では、PyTorch を用いて CUDA Graphs を適用し、どの程度の高速化が...",
+        "category": "開発",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "[ADK] Web UI の初期stateをミドルウェアで差し込む",
+        "url": "https://zenn.dev/koichi73/articles/set-initial-state-in-adk-web",
+        "site": "Zenn(Python)",
+        "published": "2026-03-22T01:55:22Z",
+        "description": "はじめに\nADK の Web UI は、エージェントの動作確認にとても便利です。一方で、初期stateをセッションに入れ込むのは少し手間がかかります。\n現状の手段は主に2つあります。\n\n\nUI上の3点メニューからstateを追加する → セッションを作るたびに手入力が必要\n\nbefore_agent_callback で初回判定して注入する → コードを書いたり消したりが手間\n\nそこで今回は、設定...",
+        "category": "開発",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
         "title": "Claude CodeでBrowser Use CLI 2.0を使いこなす完全ガイド",
         "url": "https://zenn.dev/7788/articles/cb88f98c576ef7",
         "site": "Zenn(Python)",
         "published": "2026-03-22T01:02:15Z",
         "description": "はじめに\nAIエージェントがブラウザを操作する時代がついに本格化しました。\nBrowser Use CLI 2.0 は、AIがWebブラウザを自律的に操作できるオープンソースツールです。そして Claude Code と組み合わせることで、コードを書きながらリアルタイムにブラウザ自動化を実現できる、まったく新しい開発体験が生まれます。\nこの記事では、Claude CodeからBrowser Use...",
+        "category": "開発",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "NPB予測システムをBigQueryに載せた — 無料枠でBQML・Cloud Runまで",
+        "url": "https://zenn.dev/shogaku/articles/npb-prediction-gcp-bigquery",
+        "site": "Zenn(Python)",
+        "published": "2026-03-22T00:34:07Z",
+        "description": "はじめに\nNPB選手成績予測プロジェクトを1年以上運用してきました。\n→ 過去の記事:\n\nMarcel法とMLを比較してみた\nGitHub Actionsで年次自動再学習\n\nこれまでの構成は「GitHub Actions でデータ取得→学習→CSV保存→Streamlit で表示」で完結していました。データはCSV、APIはRaspberry Pi 5のDockerコンテナ、分析はローカルのPyt...",
         "category": "開発",
         "rss_category": "",
         "image_url": ""
@@ -157,26 +227,6 @@
         "image_url": ""
       },
       {
-        "title": "Gemini EnterpriseでAgent EngineのADK AgentがOAuth Toolを使う方法",
-        "url": "https://zenn.dev/pixiv/articles/b0831d97415ef8",
-        "site": "Zenn(Python)",
-        "published": "2026-03-21T11:22:59Z",
-        "description": "はじめに\nADK Web[1]からGemini Enterpriseに移行することで、よりセキュアに、見やすいフロントで運用したいケースは多いと思います。\nこの記事では、Gemini EnterpriseでCustom Agent(ADK Agent on Vertex AI Agent Engine)でOAuth Toolを使うための実装方法について記述します。\n免責事項\n本記事は半分程度、個人...",
-        "category": "開発",
-        "rss_category": "",
-        "image_url": ""
-      },
-      {
-        "title": "推論でもツールでもない — AIエージェントの本質は「記憶」ではないか",
-        "url": "https://zenn.dev/shimo4228/articles/agent-essence-is-memory",
-        "site": "Zenn(Python)",
-        "published": "2026-03-21T10:55:41Z",
-        "description": "AIエージェントの実装の議論は、ツールと推論に偏りがちだ。\n「関数呼び出しができるLLM」「ReActで思考の連鎖を回すシステム」——技術カンファレンスやブログで、エージェントの定義はそのあたりに落ち着く。記憶に焦点を当てた研究（MemGPT、Generative Agentsなど）は存在するが、実装の現場ではまだ「ツールをどう呼ぶか」「推論をどう回すか」が中心だ。自分もそう思っていた。\nしかし、...",
-        "category": "開発",
-        "rss_category": "",
-        "image_url": ""
-      },
-      {
         "title": "Claude Codeの動きをOpenTelemetryで可視化したら「何してたか分からない」が消えた",
         "url": "https://zenn.dev/seeda_yuto/articles/otel-ai-agent-observability",
         "site": "Zenn(Python)",
@@ -232,26 +282,6 @@
         "site": "Zenn(Python)",
         "published": "2026-03-20T23:57:29Z",
         "description": "前回の言語比較記事で、一番異彩を放っていた \"Water\"。気になったので実際にインストールして、そのすぐに記憶できる構文を確かめてみました。\n今回、開発者さんにWater非公開ドキュメントを共有いただきました。\nhttps://bessho-dev.github.io/water/homepage\n\n 意味ある記号のみ残されていた\nWaterを触って感心したのは、記号の捨て方です。()や{}とい...",
-        "category": "開発",
-        "rss_category": "",
-        "image_url": ""
-      },
-      {
-        "title": "スクレイピング×OpenAIで記事を自動生成する【Python入門チュートリアル】",
-        "url": "https://zenn.dev/datajournal1/articles/8b12bf4327d878",
-        "site": "Zenn(Python)",
-        "published": "2026-03-20T23:50:33Z",
-        "description": "スクレイピング×OpenAIで記事を自動生成するとは何か\nスクレイピングで収集したWebテキストをOpenAI APIに渡し、Structured Outputsで構造化した上でMarkdown記事を自動生成するPythonスクリプトのことだ。 「取得→クリーニング→抽出→生成→保存」を1ファイルで動かせるチュートリアルを本記事で解説する。本記事は「今日から手を動かして動かせるコード」に特化してい...",
-        "category": "開発",
-        "rss_category": "",
-        "image_url": ""
-      },
-      {
-        "title": "GPT-5.4 Computer Use を実際に動かしてわかったこと ── API設計・実装パターン・セキュリティの勘所",
-        "url": "https://zenn.dev/754736277842632/articles/2026031822-gpt-54-computer-use-api",
-        "site": "Zenn(Python)",
-        "published": "2026-03-20T22:37:15Z",
-        "description": "概要\n\nLLM が「PC を操作する」時代に入った\n2026年3月、OpenAI が GPT-5.4 をリリースしました。\n目玉機能の一つが Computer Use です。\nこれまで LLM の仕事は「テキストを生成すること」でした。\nコードを書く、文章を要約する、質問に答える...\n\n元記事: https://qiita.com/nogataka/items/1252ae527635aba34...",
         "category": "開発",
         "rss_category": "",
         "image_url": ""
@@ -461,6 +491,46 @@
     ],
     "2026-03": [
       {
+        "title": "Streamlit × Claude LLM で作る「AI Sentiment Index」付きマーケットダッシュボード",
+        "url": "https://zenn.dev/windex/articles/828771e36768c0",
+        "site": "Zenn(Python)",
+        "published": "2026-03-22T07:51:38Z",
+        "description": "はじめに\n「株価を見るたびに複数のサイトを開き直している」「Fear &amp; Greed Indexって結局どこで見ればいいの？」\nそんな課題を解決するために、Streamlit + Python + 複数AI APIを組み合わせたマーケットダッシュボードを個人開発しました。\n最大の特徴は、Claude LLMをベースに設計した独自の AI Sentiment Index (Claude Ed...",
+        "category": "開発",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "既存システム拡張で学んだフロント〜バックエンド開発の実務と設計の考え方",
+        "url": "https://zenn.dev/nbs_tokyo/articles/fb14d8329cc6b3",
+        "site": "Zenn(Python)",
+        "published": "2026-03-22T07:17:54Z",
+        "description": "航空業務管理アプリ開発（既存システム拡張）で実務レベルの設計・実装を経験した話\n\n ■ はじめに\n既存の航空業務管理システムの拡張案件に参画し、契約・単価・公共料金に関するCRUD機能およびCSV取込機能の実装を担当しました。\n本案件は単純なCRUD実装にとどまらず、以下のような実務特有の設計・考慮点が求められるものでした。\n\n論理削除による履歴管理\nCSVによる大量データの安全な取り込み\n既存シ...",
+        "category": "開発",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "Dify の GUI 手運用を CLI・MCP・宣言的管理に置き換える「DifyOps」を作った",
+        "url": "https://zenn.dev/cacc_lab/articles/178a9333e99dda",
+        "site": "Zenn(Python)",
+        "published": "2026-03-22T06:56:07Z",
+        "description": "3つのアプリに同じプロンプト変更を反映するのに30分ほどかかった\nセルフホスト版の Dify を運用していて、ある日気づきました。\nGUI で1つのアプリの設定を変えて、同じ変更を残り2つにも反映して、ナレッジベースを更新して、変更前の設定をメモしておいて――全部手作業。\n「作る」のは簡単なのに「運用する」のがひたすら面倒。この摩擦を解消するために、DifyOps を作りました。\n\n\n DifyO...",
+        "category": "開発",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "Claude Code Skills × 投資分析 Vol.3 — 処方箋エンジン・逆張り検出・銘柄クラスタリング",
+        "url": "https://zenn.dev/okikusan/articles/655df6dd36dfd4",
+        "site": "Zenn(Python)",
+        "published": "2026-03-22T06:10:36Z",
+        "description": "📘 この記事はシリーズ第3回です\nVol.1: Claude Code Skills で株スクリーニングを自動化した話\nVol.2: Claude Code Skills で「使うほど賢くなる」投資分析AIを作った話\n\n\n Claude Code Skills × 投資分析 Vol.3 — 運用フェーズで追加した7つの機能\n\n はじめに\n前回の記事（Vol.2）で、Claude Code Skil...",
+        "category": "開発",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
         "title": "B13-FFT × クライオEM 実データ解析　ー　公開ノート　ー",
         "url": "https://zenn.dev/morc_b13/articles/6e661a29630a2f",
         "site": "Zenn(Python)",
@@ -491,11 +561,41 @@
         "image_url": ""
       },
       {
+        "title": "AIモデルを高速化するCUDA Graphsとは？PyTorchで効果を検証",
+        "url": "https://zenn.dev/kosuke_sugimoto/articles/1614e65b27f6b4",
+        "site": "Zenn(Python)",
+        "published": "2026-03-22T03:41:27Z",
+        "description": "はじめに\n近年、AI の発展に伴い、特に LLM のようなモデルではパラメータ数の増加とともに推論時間の増大が問題となっています。\nこのような背景の中で、アルゴリズムやモデル構造を変更せずに推論を高速化する手法の一つとして CUDA Graphs が vLLM をはじめとする各種ランタイムで見受けられます。\n本記事では、PyTorch を用いて CUDA Graphs を適用し、どの程度の高速化が...",
+        "category": "開発",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "[ADK] Web UI の初期stateをミドルウェアで差し込む",
+        "url": "https://zenn.dev/koichi73/articles/set-initial-state-in-adk-web",
+        "site": "Zenn(Python)",
+        "published": "2026-03-22T01:55:22Z",
+        "description": "はじめに\nADK の Web UI は、エージェントの動作確認にとても便利です。一方で、初期stateをセッションに入れ込むのは少し手間がかかります。\n現状の手段は主に2つあります。\n\n\nUI上の3点メニューからstateを追加する → セッションを作るたびに手入力が必要\n\nbefore_agent_callback で初回判定して注入する → コードを書いたり消したりが手間\n\nそこで今回は、設定...",
+        "category": "開発",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
         "title": "Claude CodeでBrowser Use CLI 2.0を使いこなす完全ガイド",
         "url": "https://zenn.dev/7788/articles/cb88f98c576ef7",
         "site": "Zenn(Python)",
         "published": "2026-03-22T01:02:15Z",
         "description": "はじめに\nAIエージェントがブラウザを操作する時代がついに本格化しました。\nBrowser Use CLI 2.0 は、AIがWebブラウザを自律的に操作できるオープンソースツールです。そして Claude Code と組み合わせることで、コードを書きながらリアルタイムにブラウザ自動化を実現できる、まったく新しい開発体験が生まれます。\nこの記事では、Claude CodeからBrowser Use...",
+        "category": "開発",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "NPB予測システムをBigQueryに載せた — 無料枠でBQML・Cloud Runまで",
+        "url": "https://zenn.dev/shogaku/articles/npb-prediction-gcp-bigquery",
+        "site": "Zenn(Python)",
+        "published": "2026-03-22T00:34:07Z",
+        "description": "はじめに\nNPB選手成績予測プロジェクトを1年以上運用してきました。\n→ 過去の記事:\n\nMarcel法とMLを比較してみた\nGitHub Actionsで年次自動再学習\n\nこれまでの構成は「GitHub Actions でデータ取得→学習→CSV保存→Streamlit で表示」で完結していました。データはCSV、APIはRaspberry Pi 5のDockerコンテナ、分析はローカルのPyt...",
         "category": "開発",
         "rss_category": "",
         "image_url": ""
@@ -611,26 +711,6 @@
         "image_url": ""
       },
       {
-        "title": "Gemini EnterpriseでAgent EngineのADK AgentがOAuth Toolを使う方法",
-        "url": "https://zenn.dev/pixiv/articles/b0831d97415ef8",
-        "site": "Zenn(Python)",
-        "published": "2026-03-21T11:22:59Z",
-        "description": "はじめに\nADK Web[1]からGemini Enterpriseに移行することで、よりセキュアに、見やすいフロントで運用したいケースは多いと思います。\nこの記事では、Gemini EnterpriseでCustom Agent(ADK Agent on Vertex AI Agent Engine)でOAuth Toolを使うための実装方法について記述します。\n免責事項\n本記事は半分程度、個人...",
-        "category": "開発",
-        "rss_category": "",
-        "image_url": ""
-      },
-      {
-        "title": "推論でもツールでもない — AIエージェントの本質は「記憶」ではないか",
-        "url": "https://zenn.dev/shimo4228/articles/agent-essence-is-memory",
-        "site": "Zenn(Python)",
-        "published": "2026-03-21T10:55:41Z",
-        "description": "AIエージェントの実装の議論は、ツールと推論に偏りがちだ。\n「関数呼び出しができるLLM」「ReActで思考の連鎖を回すシステム」——技術カンファレンスやブログで、エージェントの定義はそのあたりに落ち着く。記憶に焦点を当てた研究（MemGPT、Generative Agentsなど）は存在するが、実装の現場ではまだ「ツールをどう呼ぶか」「推論をどう回すか」が中心だ。自分もそう思っていた。\nしかし、...",
-        "category": "開発",
-        "rss_category": "",
-        "image_url": ""
-      },
-      {
         "title": "Claude Codeの動きをOpenTelemetryで可視化したら「何してたか分からない」が消えた",
         "url": "https://zenn.dev/seeda_yuto/articles/otel-ai-agent-observability",
         "site": "Zenn(Python)",
@@ -686,26 +766,6 @@
         "site": "Zenn(Python)",
         "published": "2026-03-20T23:57:29Z",
         "description": "前回の言語比較記事で、一番異彩を放っていた \"Water\"。気になったので実際にインストールして、そのすぐに記憶できる構文を確かめてみました。\n今回、開発者さんにWater非公開ドキュメントを共有いただきました。\nhttps://bessho-dev.github.io/water/homepage\n\n 意味ある記号のみ残されていた\nWaterを触って感心したのは、記号の捨て方です。()や{}とい...",
-        "category": "開発",
-        "rss_category": "",
-        "image_url": ""
-      },
-      {
-        "title": "スクレイピング×OpenAIで記事を自動生成する【Python入門チュートリアル】",
-        "url": "https://zenn.dev/datajournal1/articles/8b12bf4327d878",
-        "site": "Zenn(Python)",
-        "published": "2026-03-20T23:50:33Z",
-        "description": "スクレイピング×OpenAIで記事を自動生成するとは何か\nスクレイピングで収集したWebテキストをOpenAI APIに渡し、Structured Outputsで構造化した上でMarkdown記事を自動生成するPythonスクリプトのことだ。 「取得→クリーニング→抽出→生成→保存」を1ファイルで動かせるチュートリアルを本記事で解説する。本記事は「今日から手を動かして動かせるコード」に特化してい...",
-        "category": "開発",
-        "rss_category": "",
-        "image_url": ""
-      },
-      {
-        "title": "GPT-5.4 Computer Use を実際に動かしてわかったこと ── API設計・実装パターン・セキュリティの勘所",
-        "url": "https://zenn.dev/754736277842632/articles/2026031822-gpt-54-computer-use-api",
-        "site": "Zenn(Python)",
-        "published": "2026-03-20T22:37:15Z",
-        "description": "概要\n\nLLM が「PC を操作する」時代に入った\n2026年3月、OpenAI が GPT-5.4 をリリースしました。\n目玉機能の一つが Computer Use です。\nこれまで LLM の仕事は「テキストを生成すること」でした。\nコードを書く、文章を要約する、質問に答える...\n\n元記事: https://qiita.com/nogataka/items/1252ae527635aba34...",
         "category": "開発",
         "rss_category": "",
         "image_url": ""
