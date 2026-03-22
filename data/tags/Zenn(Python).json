@@ -1,15 +1,87 @@
 {
   "site": "Zenn(Python)",
-  "last_updated": "2026-03-22T18:51:47.430309",
-  "total_articles": 3040,
+  "last_updated": "2026-03-22T19:31:00.473203",
+  "total_articles": 3048,
   "articles_by_date": {
+    "本日": [
+      {
+        "title": "FastAPIでRAGを作ったら日本語で壊れた話（軽量構成でどこまでいけるか）",
+        "url": "https://zenn.dev/fastapier/articles/9f73ecb80e0c9d",
+        "site": "Zenn(Python)",
+        "published": "2026-03-22T16:22:24Z",
+        "description": "はじめに\nFastAPIで、シンプルなDB検索ベースのRAGを作りました。\n最初は動いているように見えたんですが、\n日本語の文章を入れた瞬間、完全に壊れました。\n\n\n 🧪 初期データのセットアップ（重要）\nこのプロジェクトは、データベースに保存された内容を元に回答する仕組みになっています。\nそのため、データベースが空の状態では以下のように返されます：\n\"No relevant informatio...",
+        "category": "開発",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "【自作ツール解説】Chrome Bookmarks を Markdown 化する CLI ツール「chrome2foam」を自作した話",
+        "url": "https://zenn.dev/yh_catalysis/articles/chrome2foam-readme",
+        "site": "Zenn(Python)",
+        "published": "2026-03-22T15:29:42Z",
+        "description": "概要\nchrome2foam は、Google ChromeのブックマークをローカルのSQLiteデータベースに同期し、Cloudflare Workersを経由してMarkdownファイルに変換するCLIツールです。Foam や Obsidian などのナレッジベースツールのインボックスとして機能するように設計されています。\n6000件を超えるChromeブックマークを何とか管理したいという個人...",
+        "category": "開発",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "R CausalImpactをRust+PyO3で再実装して踏んだ地雷",
+        "url": "https://zenn.dev/gibbs/articles/causal-impact-rust-technical-highlights",
+        "site": "Zenn(Python)",
+        "published": "2026-03-22T15:26:32Z",
+        "description": "TL;DR\n\npycausalimpact は共変量を入れると効果の符号が反転する。原因は変数選択の欠如\nR の bsts と同じ spike-and-slab を Rust で実装し、PyO3 で Python に公開した\nR との数値互換性を ±3%（CI bounds は ±1%～±1.5%）まで詰めた\nこの記事では、実装で踏んだ地雷と設計判断を中心に書く\n\n\n 背景: pycausalim...",
+        "category": "開発",
+        "rss_category": "",
+        "image_url": ""
+      }
+    ],
     "昨日": [
+      {
+        "title": "【開発秘話 要件定義編】Chrome Bookmarks を Markdown 化する CLI ツール",
+        "url": "https://zenn.dev/yh_catalysis/articles/chrome2foam-dev1",
+        "site": "Zenn(Python)",
+        "published": "2026-03-22T14:35:05Z",
+        "description": "はじめに\nこの記事では、Google ChromeのブックマークをMarkdown化するCLIツール「chrome2foam」の開発に至るまでのAIとの壁打ちの軌跡を振り返ります。特に、最初に考えた「HTML解析」アプローチから、AIの助けを借りて「ChromeのJSONファイルを直接読み込む」という大きなブレイクスルーに至るまでの思考過程と、実際のプロンプトやAIの回答内容を詳細に記録しています...",
+        "category": "開発",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "PythonでTyperを用いてCLIツールを作成する",
+        "url": "https://zenn.dev/gami113/articles/20260322-typer-practice",
+        "site": "Zenn(Python)",
+        "published": "2026-03-22T14:27:32Z",
+        "description": "はじめに\nこんにちは、がみ(@LdKybe)です。\n開発にてPythonを利用したCLIツールを作成する機会があったため、PythonでのCLIツール作成方法を調べてみました。\nざっと調べたところ、PythonでCLIツールを作ろうとした場合、下記のような選択肢があるようです。\n\nsys.argv\nargparse\nclick\nTyper\n\n標準ライブラリしか使えない場合はargparseを利用す...",
+        "category": "開発",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "AIエージェント開発最前線：Claude HUD、OpenAIの監視、Astral買収の衝撃",
+        "url": "https://zenn.dev/soy_tuber/articles/st-ai-agent-dev-ecosystem-2026",
+        "site": "Zenn(Python)",
+        "published": "2026-03-22T12:58:04Z",
+        "description": "AIエージェント開発最前線：Claude HUD、OpenAIの監視、Astral買収の衝撃\nカテゴリ: dev-tool\n\n 今日のハイライト\nAIエージェント開発が本格化する中、その内部動作を理解するための「可視化」、安全性を担保する「監視」、そして開発基盤となる「エコシステム」に注目が集まっています。今回は、AIエージェント開発の高度化と、それを支える基盤技術の進化を示す3つのニュースを取り...",
+        "category": "開発",
+        "rss_category": "",
+        "image_url": ""
+      },
       {
         "title": "Tesla Fleet APIで「この第三者は登録されていません」と言われたら — partner_accounts登録の罠",
         "url": "https://zenn.dev/seeda_yuto/articles/tesla-fleet-api-virtual-key-guide",
         "site": "Zenn(Python)",
         "published": "2026-03-22T11:01:36Z",
         "description": "3時間溶かした一言\nこの第三者はTeslaに登録されていません。\n今回はアクセス権を付与できません。\nTesla Fleet APIでバーチャルキーのペアリングをしようとしたら、この画面で止まった。\nDeveloper Portalでアプリは作った。APIも全部有効にした。.well-knownの公開鍵も配信してる。ドキュメントに書いてあることは全部やった。それでもこのエラーが出る。\n結論から言う...",
+        "category": "開発",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "Andrej Karpathyの「autoresearch」が描く未来",
+        "url": "https://zenn.dev/aienthusiast/articles/article-20260322-094255",
+        "site": "Zenn(Python)",
+        "published": "2026-03-22T09:58:53Z",
+        "description": "はじめに\nAI研究の世界に、また一つ革新的なプロジェクトが登場しました。Tesla元AIディレクターでOpenAI創業メンバーでもあるAndrej Karpathy氏が公開した「autoresearch」は、AI研究そのものを自動化するという野心的な試みです。\nこのリポジトリは公開からわずかな期間で48,000以上のスターを獲得し、AI・機械学習コミュニティで大きな注目を集めています。一体何がそれ...",
         "category": "開発",
         "rss_category": "",
         "image_url": ""
@@ -85,7 +157,7 @@
         "image_url": ""
       },
       {
-        "title": "AIモデルを高速化するCUDA Graphsとは？PyTorchで効果を検証",
+        "title": "AI モデルを高速化する CUDA Graphs とは？PyTorch で効果を検証",
         "url": "https://zenn.dev/kosuke_sugimoto/articles/1614e65b27f6b4",
         "site": "Zenn(Python)",
         "published": "2026-03-22T03:41:27Z",
@@ -110,16 +182,6 @@
         "site": "Zenn(Python)",
         "published": "2026-03-22T01:02:15Z",
         "description": "はじめに\nAIエージェントがブラウザを操作する時代がついに本格化しました。\nBrowser Use CLI 2.0 は、AIがWebブラウザを自律的に操作できるオープンソースツールです。そして Claude Code と組み合わせることで、コードを書きながらリアルタイムにブラウザ自動化を実現できる、まったく新しい開発体験が生まれます。\nこの記事では、Claude CodeからBrowser Use...",
-        "category": "開発",
-        "rss_category": "",
-        "image_url": ""
-      },
-      {
-        "title": "NPB予測システムをBigQueryに載せた — 無料枠でBQML・Cloud Runまで",
-        "url": "https://zenn.dev/shogaku/articles/npb-prediction-gcp-bigquery",
-        "site": "Zenn(Python)",
-        "published": "2026-03-22T00:34:07Z",
-        "description": "はじめに\nNPB選手成績予測プロジェクトを1年以上運用してきました。\n→ 過去の記事:\n\nMarcel法とMLを比較してみた\nGitHub Actionsで年次自動再学習\n\nこれまでの構成は「GitHub Actions でデータ取得→学習→CSV保存→Streamlit で表示」で完結していました。データはCSV、APIはRaspberry Pi 5のDockerコンテナ、分析はローカルのPyt...",
         "category": "開発",
         "rss_category": "",
         "image_url": ""
@@ -173,16 +235,6 @@
         "category": "開発",
         "rss_category": "",
         "image_url": ""
-      },
-      {
-        "title": "MCPサーバとは何か — 会話で学ぶMCPの「なぜ」と仕組み",
-        "url": "https://zenn.dev/japannomu/articles/20260321_what-is-mcp-server",
-        "site": "Zenn(Python)",
-        "published": "2026-03-21T15:00:23Z",
-        "description": "Ubuntu上にMCPサーバ・FastAPI・SQLiteを構築しようとしている開発者が、AI（Claude Code）との会話を通じて「MCPサーバがなぜ必要か」「どんな仕組みか」を一つずつ紐解いていく。\n\n\n この会話の前提\n!\nこの会話は、Pythonプログラミング VTuber サプーさんの以下の動画を視聴したあとに行いました。MCPサーバの実装イメージはこの動画が出発点になっています。\n...",
-        "category": "開発",
-        "rss_category": "",
-        "image_url": ""
       }
     ],
     "一昨日": [
@@ -222,16 +274,6 @@
         "site": "Zenn(Python)",
         "published": "2026-03-21T12:52:29Z",
         "description": "コント：Claude Codeに取り憑かれた男\n登場人物：\n新山： 聞き手。先輩のあまりの変貌に戸惑い、必死に人間界へ引き戻そうとする。\n武智： Claude Codeに脳を乗っ取られたエンジニア。\n（カフェの席。新山がノートを持って座っている）\n新山： 武智さん、お久しぶりです！東京の現場はどうですか？最近、何にハマってるんですか？\n武智： ……Claude Codeやな。\n新山： ああ、やっぱ...",
-        "category": "開発",
-        "rss_category": "",
-        "image_url": ""
-      },
-      {
-        "title": "Tool Use・MCP時代のプロンプトインジェクション対策：新しい攻撃面と5つの防御実装",
-        "url": "https://zenn.dev/0h_n0/articles/78e4204a2a50c3",
-        "site": "Zenn(Python)",
-        "published": "2026-03-21T12:16:25Z",
-        "description": "Tool Use・MCP時代のプロンプトインジェクション対策：新しい攻撃面と5つの防御実装\n\n この記事でわかること\n\nLLMのTool Use（Function Calling）・MCPがもたらす新しい攻撃面（Tool Poisoning、Rug-Pull、Cross-Tool Contamination）の仕組み\nOWASP LLM Top 10 2025のLLM01とAI Agent Sec...",
         "category": "開発",
         "rss_category": "",
         "image_url": ""
@@ -339,11 +381,81 @@
     ],
     "2026-03": [
       {
+        "title": "FastAPIでRAGを作ったら日本語で壊れた話（軽量構成でどこまでいけるか）",
+        "url": "https://zenn.dev/fastapier/articles/9f73ecb80e0c9d",
+        "site": "Zenn(Python)",
+        "published": "2026-03-22T16:22:24Z",
+        "description": "はじめに\nFastAPIで、シンプルなDB検索ベースのRAGを作りました。\n最初は動いているように見えたんですが、\n日本語の文章を入れた瞬間、完全に壊れました。\n\n\n 🧪 初期データのセットアップ（重要）\nこのプロジェクトは、データベースに保存された内容を元に回答する仕組みになっています。\nそのため、データベースが空の状態では以下のように返されます：\n\"No relevant informatio...",
+        "category": "開発",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "【自作ツール解説】Chrome Bookmarks を Markdown 化する CLI ツール「chrome2foam」を自作した話",
+        "url": "https://zenn.dev/yh_catalysis/articles/chrome2foam-readme",
+        "site": "Zenn(Python)",
+        "published": "2026-03-22T15:29:42Z",
+        "description": "概要\nchrome2foam は、Google ChromeのブックマークをローカルのSQLiteデータベースに同期し、Cloudflare Workersを経由してMarkdownファイルに変換するCLIツールです。Foam や Obsidian などのナレッジベースツールのインボックスとして機能するように設計されています。\n6000件を超えるChromeブックマークを何とか管理したいという個人...",
+        "category": "開発",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "R CausalImpactをRust+PyO3で再実装して踏んだ地雷",
+        "url": "https://zenn.dev/gibbs/articles/causal-impact-rust-technical-highlights",
+        "site": "Zenn(Python)",
+        "published": "2026-03-22T15:26:32Z",
+        "description": "TL;DR\n\npycausalimpact は共変量を入れると効果の符号が反転する。原因は変数選択の欠如\nR の bsts と同じ spike-and-slab を Rust で実装し、PyO3 で Python に公開した\nR との数値互換性を ±3%（CI bounds は ±1%～±1.5%）まで詰めた\nこの記事では、実装で踏んだ地雷と設計判断を中心に書く\n\n\n 背景: pycausalim...",
+        "category": "開発",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "【開発秘話 要件定義編】Chrome Bookmarks を Markdown 化する CLI ツール",
+        "url": "https://zenn.dev/yh_catalysis/articles/chrome2foam-dev1",
+        "site": "Zenn(Python)",
+        "published": "2026-03-22T14:35:05Z",
+        "description": "はじめに\nこの記事では、Google ChromeのブックマークをMarkdown化するCLIツール「chrome2foam」の開発に至るまでのAIとの壁打ちの軌跡を振り返ります。特に、最初に考えた「HTML解析」アプローチから、AIの助けを借りて「ChromeのJSONファイルを直接読み込む」という大きなブレイクスルーに至るまでの思考過程と、実際のプロンプトやAIの回答内容を詳細に記録しています...",
+        "category": "開発",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "PythonでTyperを用いてCLIツールを作成する",
+        "url": "https://zenn.dev/gami113/articles/20260322-typer-practice",
+        "site": "Zenn(Python)",
+        "published": "2026-03-22T14:27:32Z",
+        "description": "はじめに\nこんにちは、がみ(@LdKybe)です。\n開発にてPythonを利用したCLIツールを作成する機会があったため、PythonでのCLIツール作成方法を調べてみました。\nざっと調べたところ、PythonでCLIツールを作ろうとした場合、下記のような選択肢があるようです。\n\nsys.argv\nargparse\nclick\nTyper\n\n標準ライブラリしか使えない場合はargparseを利用す...",
+        "category": "開発",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "AIエージェント開発最前線：Claude HUD、OpenAIの監視、Astral買収の衝撃",
+        "url": "https://zenn.dev/soy_tuber/articles/st-ai-agent-dev-ecosystem-2026",
+        "site": "Zenn(Python)",
+        "published": "2026-03-22T12:58:04Z",
+        "description": "AIエージェント開発最前線：Claude HUD、OpenAIの監視、Astral買収の衝撃\nカテゴリ: dev-tool\n\n 今日のハイライト\nAIエージェント開発が本格化する中、その内部動作を理解するための「可視化」、安全性を担保する「監視」、そして開発基盤となる「エコシステム」に注目が集まっています。今回は、AIエージェント開発の高度化と、それを支える基盤技術の進化を示す3つのニュースを取り...",
+        "category": "開発",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
         "title": "Tesla Fleet APIで「この第三者は登録されていません」と言われたら — partner_accounts登録の罠",
         "url": "https://zenn.dev/seeda_yuto/articles/tesla-fleet-api-virtual-key-guide",
         "site": "Zenn(Python)",
         "published": "2026-03-22T11:01:36Z",
         "description": "3時間溶かした一言\nこの第三者はTeslaに登録されていません。\n今回はアクセス権を付与できません。\nTesla Fleet APIでバーチャルキーのペアリングをしようとしたら、この画面で止まった。\nDeveloper Portalでアプリは作った。APIも全部有効にした。.well-knownの公開鍵も配信してる。ドキュメントに書いてあることは全部やった。それでもこのエラーが出る。\n結論から言う...",
+        "category": "開発",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "Andrej Karpathyの「autoresearch」が描く未来",
+        "url": "https://zenn.dev/aienthusiast/articles/article-20260322-094255",
+        "site": "Zenn(Python)",
+        "published": "2026-03-22T09:58:53Z",
+        "description": "はじめに\nAI研究の世界に、また一つ革新的なプロジェクトが登場しました。Tesla元AIディレクターでOpenAI創業メンバーでもあるAndrej Karpathy氏が公開した「autoresearch」は、AI研究そのものを自動化するという野心的な試みです。\nこのリポジトリは公開からわずかな期間で48,000以上のスターを獲得し、AI・機械学習コミュニティで大きな注目を集めています。一体何がそれ...",
         "category": "開発",
         "rss_category": "",
         "image_url": ""
@@ -419,7 +531,7 @@
         "image_url": ""
       },
       {
-        "title": "AIモデルを高速化するCUDA Graphsとは？PyTorchで効果を検証",
+        "title": "AI モデルを高速化する CUDA Graphs とは？PyTorch で効果を検証",
         "url": "https://zenn.dev/kosuke_sugimoto/articles/1614e65b27f6b4",
         "site": "Zenn(Python)",
         "published": "2026-03-22T03:41:27Z",
@@ -444,16 +556,6 @@
         "site": "Zenn(Python)",
         "published": "2026-03-22T01:02:15Z",
         "description": "はじめに\nAIエージェントがブラウザを操作する時代がついに本格化しました。\nBrowser Use CLI 2.0 は、AIがWebブラウザを自律的に操作できるオープンソースツールです。そして Claude Code と組み合わせることで、コードを書きながらリアルタイムにブラウザ自動化を実現できる、まったく新しい開発体験が生まれます。\nこの記事では、Claude CodeからBrowser Use...",
-        "category": "開発",
-        "rss_category": "",
-        "image_url": ""
-      },
-      {
-        "title": "NPB予測システムをBigQueryに載せた — 無料枠でBQML・Cloud Runまで",
-        "url": "https://zenn.dev/shogaku/articles/npb-prediction-gcp-bigquery",
-        "site": "Zenn(Python)",
-        "published": "2026-03-22T00:34:07Z",
-        "description": "はじめに\nNPB選手成績予測プロジェクトを1年以上運用してきました。\n→ 過去の記事:\n\nMarcel法とMLを比較してみた\nGitHub Actionsで年次自動再学習\n\nこれまでの構成は「GitHub Actions でデータ取得→学習→CSV保存→Streamlit で表示」で完結していました。データはCSV、APIはRaspberry Pi 5のDockerコンテナ、分析はローカルのPyt...",
         "category": "開発",
         "rss_category": "",
         "image_url": ""
@@ -509,16 +611,6 @@
         "image_url": ""
       },
       {
-        "title": "MCPサーバとは何か — 会話で学ぶMCPの「なぜ」と仕組み",
-        "url": "https://zenn.dev/japannomu/articles/20260321_what-is-mcp-server",
-        "site": "Zenn(Python)",
-        "published": "2026-03-21T15:00:23Z",
-        "description": "Ubuntu上にMCPサーバ・FastAPI・SQLiteを構築しようとしている開発者が、AI（Claude Code）との会話を通じて「MCPサーバがなぜ必要か」「どんな仕組みか」を一つずつ紐解いていく。\n\n\n この会話の前提\n!\nこの会話は、Pythonプログラミング VTuber サプーさんの以下の動画を視聴したあとに行いました。MCPサーバの実装イメージはこの動画が出発点になっています。\n...",
-        "category": "開発",
-        "rss_category": "",
-        "image_url": ""
-      },
-      {
         "title": "Claude Codeのトークン消費を削減する — FTS5ナレッジDB + Tier索引設計",
         "url": "https://zenn.dev/soy_tuber/articles/st-claude-code-knowledge",
         "site": "Zenn(Python)",
@@ -554,16 +646,6 @@
         "site": "Zenn(Python)",
         "published": "2026-03-21T12:52:29Z",
         "description": "コント：Claude Codeに取り憑かれた男\n登場人物：\n新山： 聞き手。先輩のあまりの変貌に戸惑い、必死に人間界へ引き戻そうとする。\n武智： Claude Codeに脳を乗っ取られたエンジニア。\n（カフェの席。新山がノートを持って座っている）\n新山： 武智さん、お久しぶりです！東京の現場はどうですか？最近、何にハマってるんですか？\n武智： ……Claude Codeやな。\n新山： ああ、やっぱ...",
-        "category": "開発",
-        "rss_category": "",
-        "image_url": ""
-      },
-      {
-        "title": "Tool Use・MCP時代のプロンプトインジェクション対策：新しい攻撃面と5つの防御実装",
-        "url": "https://zenn.dev/0h_n0/articles/78e4204a2a50c3",
-        "site": "Zenn(Python)",
-        "published": "2026-03-21T12:16:25Z",
-        "description": "Tool Use・MCP時代のプロンプトインジェクション対策：新しい攻撃面と5つの防御実装\n\n この記事でわかること\n\nLLMのTool Use（Function Calling）・MCPがもたらす新しい攻撃面（Tool Poisoning、Rug-Pull、Cross-Tool Contamination）の仕組み\nOWASP LLM Top 10 2025のLLM01とAI Agent Sec...",
         "category": "開発",
         "rss_category": "",
         "image_url": ""
