@@ -1,9 +1,59 @@
 {
   "site": "Zenn(Python)",
-  "last_updated": "2026-03-22T21:35:29.971500",
-  "total_articles": 3048,
+  "last_updated": "2026-03-22T21:56:42.997605",
+  "total_articles": 3054,
   "articles_by_date": {
     "本日": [
+      {
+        "title": "Mac miniとOllamaでローカルLLMを構築してファイル検索アプリを作った",
+        "url": "https://zenn.dev/mezzopiano/articles/edaa0a317df7f9",
+        "site": "Zenn(Python)",
+        "published": "2026-03-22T21:29:06Z",
+        "description": "はじめに\n前回の記事でOpenClawをOCIサーバーに入れてTelegramからファイル検索できるようにしました。しかし一つ大きな問題がありました。\n「ファイルの内容がGeminiのクラウドに送られる」\nMac miniには個人情報・写真・パスワードが大量にあります。それをGoogleのクラウドに送るのはリスクがあります。\nそこで今回は、完全にローカルで動くLLM（Ollama）をMac min...",
+        "category": "開発",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "Claude Code Hooksの安全設計で踏んだ落とし穴 — denyリストだけでは防げない理由",
+        "url": "https://zenn.dev/playpark/articles/claude-code-hooks-safety-design",
+        "site": "Zenn(Python)",
+        "published": "2026-03-22T21:10:16Z",
+        "description": "denyリストに書いたのに、すり抜けてくる\nClaude Codeにコードを書かせていると、ある日ふと気づく。「あれ、mainにpushされてない？」\nsettings.jsonのpermissions.denyにgit push --forceを入れておけば安心かというと、そうでもない。AIはgit push -f、git push origin HEAD:refs/heads/main、git...",
+        "category": "開発",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "【AI入門】強化学習の基本概念とSarsaアルゴリズムを用いた迷路探索の実装",
+        "url": "https://zenn.dev/hibari_inc/articles/reinforcement-learning-basics",
+        "site": "Zenn(Python)",
+        "published": "2026-03-22T17:40:22Z",
+        "description": "はじめに\nこんにちは、野村です。\n学生をしながら静岡のHIBARI株式会社でAIを用いたプロダクト開発をしています。大学では情報通信分野で研究を行っています。\n本記事は、強化学習とその学習手法について学んだ内容をまとめたものです。学習および実装にあたっては、次の書籍と公式リポジトリを参考にしています。\n\n\n参考書籍：\n小川雄太郎：作りながら学ぶ! 深層強化学習 PyTorchによる実践プログラミン...",
+        "category": "開発",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "NeurIPS Polymer 2025 上位解法の追試してみた話",
+        "url": "https://zenn.dev/amana/articles/neurips-polymer-2025",
+        "site": "Zenn(Python)",
+        "published": "2026-03-22T16:34:35Z",
+        "description": "はじめに\nNeurIPS - Open Polymer Prediction 2025は、ポリマーの化学構造（SMILES）から5つの物性値を予測するKaggleコンペティションです。2,000チームくらいが参加したコンペとのことでした。\n自分もバックグラウンドに(一応)化学周りの知識があるため、終了後ではありますが1位の解法を読み解いてなんとか追試できないか試してみました。\n具体的には特に1位の...",
+        "category": "開発",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "FastAPIでRAGを作ったら日本語で壊れた話（軽量構成でどこまでいけるか）",
+        "url": "https://zenn.dev/fastapier/articles/9f73ecb80e0c9d",
+        "site": "Zenn(Python)",
+        "published": "2026-03-22T16:22:24Z",
+        "description": "はじめに\nFastAPIで、シンプルなDB検索ベースのRAGを作りました。\n最初は動いているように見えたんですが、\n日本語の文章を入れた瞬間、完全に壊れました。\n\n\n 🧪 初期データのセットアップ（重要）\nこのプロジェクトは、データベースに保存された内容を元に回答する仕組みになっています。\nそのため、データベースが空の状態では以下のように返されます：\n\"No relevant informatio...",
+        "category": "開発",
+        "rss_category": "",
+        "image_url": ""
+      },
       {
         "title": "【自作ツール解説】Chrome Bookmarks を Markdown 化する CLI ツール「chrome2foam」を自作した話",
         "url": "https://zenn.dev/yh_catalysis/articles/chrome2foam-readme",
@@ -26,6 +76,26 @@
       }
     ],
     "昨日": [
+      {
+        "title": "Transformer に触れてみる (5) — GPT-2 もどきを使ってじゃんけん GPT を作る",
+        "url": "https://zenn.dev/derwind/articles/dwd-transformer05",
+        "site": "Zenn(Python)",
+        "published": "2026-03-22T14:47:37Z",
+        "description": "目的\nOpenAI の Improving Language Understanding by Generative Pre-Training を読み返しながら、「回帰モデルは \\sum_i \\| y_i - (a x_i + b) \\|^2 \\to 0 だけど、自己回帰モデルって\n\n\\begin{align*}\nL_1(\\mathcal{U}) = \\sum_i \\log P (u_i|u_{i...",
+        "category": "開発",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "【開発秘話 要件定義編】Chrome Bookmarks を Markdown 化する CLI ツール",
+        "url": "https://zenn.dev/yh_catalysis/articles/chrome2foam-dev1",
+        "site": "Zenn(Python)",
+        "published": "2026-03-22T14:35:05Z",
+        "description": "はじめに\nこの記事では、Google ChromeのブックマークをMarkdown化するCLIツール「chrome2foam」の開発に至るまでのAIとの壁打ちの軌跡を振り返ります。特に、最初に考えた「HTML解析」アプローチから、AIの助けを借りて「ChromeのJSONファイルを直接読み込む」という大きなブレイクスルーに至るまでの思考過程と、実際のプロンプトやAIの回答内容を詳細に記録しています...",
+        "category": "開発",
+        "rss_category": "",
+        "image_url": ""
+      },
       {
         "title": "PythonでTyperを用いてCLIツールを作成する",
         "url": "https://zenn.dev/gami113/articles/20260322-typer-practice",
@@ -137,41 +207,11 @@
         "image_url": ""
       },
       {
-        "title": "AIモデルを高速化するCUDA Graphsとは？PyTorchで効果を検証",
-        "url": "https://zenn.dev/kosuke_sugimoto/articles/1614e65b27f6b4",
-        "site": "Zenn(Python)",
-        "published": "2026-03-22T03:41:27Z",
-        "description": "はじめに\n近年、AI の発展に伴い、特に LLM のようなモデルではパラメータ数の増加とともに推論時間の増大が問題となっています。\nこのような背景の中で、アルゴリズムやモデル構造を変更せずに推論を高速化する手法の一つとして CUDA Graphs が vLLM をはじめとする各種ランタイムで見受けられます。\n本記事では、PyTorch を用いて CUDA Graphs を適用し、どの程度の高速化が...",
-        "category": "開発",
-        "rss_category": "",
-        "image_url": ""
-      },
-      {
-        "title": "[ADK] Web UI の初期stateをミドルウェアで差し込む",
-        "url": "https://zenn.dev/koichi73/articles/set-initial-state-in-adk-web",
-        "site": "Zenn(Python)",
-        "published": "2026-03-22T01:55:22Z",
-        "description": "はじめに\nADK の Web UI は、エージェントの動作確認にとても便利です。一方で、初期stateをセッションに入れ込むのは少し手間がかかります。\n現状の手段は主に2つあります。\n\n\nUI上の3点メニューからstateを追加する → セッションを作るたびに手入力が必要\n\nbefore_agent_callback で初回判定して注入する → コードを書いたり消したりが手間\n\nそこで今回は、設定...",
-        "category": "開発",
-        "rss_category": "",
-        "image_url": ""
-      },
-      {
         "title": "Claude CodeでBrowser Use CLI 2.0を使いこなす完全ガイド",
         "url": "https://zenn.dev/7788/articles/cb88f98c576ef7",
         "site": "Zenn(Python)",
         "published": "2026-03-22T01:02:15Z",
         "description": "はじめに\nAIエージェントがブラウザを操作する時代がついに本格化しました。\nBrowser Use CLI 2.0 は、AIがWebブラウザを自律的に操作できるオープンソースツールです。そして Claude Code と組み合わせることで、コードを書きながらリアルタイムにブラウザ自動化を実現できる、まったく新しい開発体験が生まれます。\nこの記事では、Claude CodeからBrowser Use...",
-        "category": "開発",
-        "rss_category": "",
-        "image_url": ""
-      },
-      {
-        "title": "NPB予測システムをBigQueryに載せた — 無料枠でBQML・Cloud Runまで",
-        "url": "https://zenn.dev/shogaku/articles/npb-prediction-gcp-bigquery",
-        "site": "Zenn(Python)",
-        "published": "2026-03-22T00:34:07Z",
-        "description": "はじめに\nNPB選手成績予測プロジェクトを1年以上運用してきました。\n→ 過去の記事:\n\nMarcel法とMLを比較してみた\nGitHub Actionsで年次自動再学習\n\nこれまでの構成は「GitHub Actions でデータ取得→学習→CSV保存→Streamlit で表示」で完結していました。データはCSV、APIはRaspberry Pi 5のDockerコンテナ、分析はローカルのPyt...",
         "category": "開発",
         "rss_category": "",
         "image_url": ""
@@ -222,16 +262,6 @@
         "site": "Zenn(Python)",
         "published": "2026-03-21T15:11:14Z",
         "description": "グラフ理論の練習として、有名な「狼と山羊とキャベツパズル」をPythonで解いてみます。\n\n 狼と山羊とキャベツパズルとは\n川の片岸に、人と狼、山羊、キャベツがあります。\n人は船を使って、一度に1つだけ荷物（または動物）を運ぶことができます。\nただし、人がいない岸において、以下の状態は許されません。\n\n狼と山羊が同じ岸にいる\n山羊とキャベツが同じ岸にいる\n\nこの制約を守りながら、最短手順で全てを無...",
-        "category": "開発",
-        "rss_category": "",
-        "image_url": ""
-      },
-      {
-        "title": "MCPサーバとは何か — 会話で学ぶMCPの「なぜ」と仕組み",
-        "url": "https://zenn.dev/japannomu/articles/20260321_what-is-mcp-server",
-        "site": "Zenn(Python)",
-        "published": "2026-03-21T15:00:23Z",
-        "description": "Ubuntu上にMCPサーバ・FastAPI・SQLiteを構築しようとしている開発者が、AI（Claude Code）との会話を通じて「MCPサーバがなぜ必要か」「どんな仕組みか」を一つずつ紐解いていく。\n\n\n この会話の前提\n!\nこの会話は、Pythonプログラミング VTuber サプーさんの以下の動画を視聴したあとに行いました。MCPサーバの実装イメージはこの動画が出発点になっています。\n...",
         "category": "開発",
         "rss_category": "",
         "image_url": ""
@@ -381,6 +411,56 @@
     ],
     "2026-03": [
       {
+        "title": "Mac miniとOllamaでローカルLLMを構築してファイル検索アプリを作った",
+        "url": "https://zenn.dev/mezzopiano/articles/edaa0a317df7f9",
+        "site": "Zenn(Python)",
+        "published": "2026-03-22T21:29:06Z",
+        "description": "はじめに\n前回の記事でOpenClawをOCIサーバーに入れてTelegramからファイル検索できるようにしました。しかし一つ大きな問題がありました。\n「ファイルの内容がGeminiのクラウドに送られる」\nMac miniには個人情報・写真・パスワードが大量にあります。それをGoogleのクラウドに送るのはリスクがあります。\nそこで今回は、完全にローカルで動くLLM（Ollama）をMac min...",
+        "category": "開発",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "Claude Code Hooksの安全設計で踏んだ落とし穴 — denyリストだけでは防げない理由",
+        "url": "https://zenn.dev/playpark/articles/claude-code-hooks-safety-design",
+        "site": "Zenn(Python)",
+        "published": "2026-03-22T21:10:16Z",
+        "description": "denyリストに書いたのに、すり抜けてくる\nClaude Codeにコードを書かせていると、ある日ふと気づく。「あれ、mainにpushされてない？」\nsettings.jsonのpermissions.denyにgit push --forceを入れておけば安心かというと、そうでもない。AIはgit push -f、git push origin HEAD:refs/heads/main、git...",
+        "category": "開発",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "【AI入門】強化学習の基本概念とSarsaアルゴリズムを用いた迷路探索の実装",
+        "url": "https://zenn.dev/hibari_inc/articles/reinforcement-learning-basics",
+        "site": "Zenn(Python)",
+        "published": "2026-03-22T17:40:22Z",
+        "description": "はじめに\nこんにちは、野村です。\n学生をしながら静岡のHIBARI株式会社でAIを用いたプロダクト開発をしています。大学では情報通信分野で研究を行っています。\n本記事は、強化学習とその学習手法について学んだ内容をまとめたものです。学習および実装にあたっては、次の書籍と公式リポジトリを参考にしています。\n\n\n参考書籍：\n小川雄太郎：作りながら学ぶ! 深層強化学習 PyTorchによる実践プログラミン...",
+        "category": "開発",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "NeurIPS Polymer 2025 上位解法の追試してみた話",
+        "url": "https://zenn.dev/amana/articles/neurips-polymer-2025",
+        "site": "Zenn(Python)",
+        "published": "2026-03-22T16:34:35Z",
+        "description": "はじめに\nNeurIPS - Open Polymer Prediction 2025は、ポリマーの化学構造（SMILES）から5つの物性値を予測するKaggleコンペティションです。2,000チームくらいが参加したコンペとのことでした。\n自分もバックグラウンドに(一応)化学周りの知識があるため、終了後ではありますが1位の解法を読み解いてなんとか追試できないか試してみました。\n具体的には特に1位の...",
+        "category": "開発",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "FastAPIでRAGを作ったら日本語で壊れた話（軽量構成でどこまでいけるか）",
+        "url": "https://zenn.dev/fastapier/articles/9f73ecb80e0c9d",
+        "site": "Zenn(Python)",
+        "published": "2026-03-22T16:22:24Z",
+        "description": "はじめに\nFastAPIで、シンプルなDB検索ベースのRAGを作りました。\n最初は動いているように見えたんですが、\n日本語の文章を入れた瞬間、完全に壊れました。\n\n\n 🧪 初期データのセットアップ（重要）\nこのプロジェクトは、データベースに保存された内容を元に回答する仕組みになっています。\nそのため、データベースが空の状態では以下のように返されます：\n\"No relevant informatio...",
+        "category": "開発",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
         "title": "【自作ツール解説】Chrome Bookmarks を Markdown 化する CLI ツール「chrome2foam」を自作した話",
         "url": "https://zenn.dev/yh_catalysis/articles/chrome2foam-readme",
         "site": "Zenn(Python)",
@@ -396,6 +476,26 @@
         "site": "Zenn(Python)",
         "published": "2026-03-22T15:26:32Z",
         "description": "TL;DR\n\npycausalimpact は共変量を入れると効果の符号が反転する。原因は変数選択の欠如\nR の bsts と同じ spike-and-slab を Rust で実装し、PyO3 で Python に公開した\nR との数値互換性を ±3%（CI bounds は ±1%～±1.5%）まで詰めた\nこの記事では、実装で踏んだ地雷と設計判断を中心に書く\n\n\n 背景: pycausalim...",
+        "category": "開発",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "Transformer に触れてみる (5) — GPT-2 もどきを使ってじゃんけん GPT を作る",
+        "url": "https://zenn.dev/derwind/articles/dwd-transformer05",
+        "site": "Zenn(Python)",
+        "published": "2026-03-22T14:47:37Z",
+        "description": "目的\nOpenAI の Improving Language Understanding by Generative Pre-Training を読み返しながら、「回帰モデルは \\sum_i \\| y_i - (a x_i + b) \\|^2 \\to 0 だけど、自己回帰モデルって\n\n\\begin{align*}\nL_1(\\mathcal{U}) = \\sum_i \\log P (u_i|u_{i...",
+        "category": "開発",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "【開発秘話 要件定義編】Chrome Bookmarks を Markdown 化する CLI ツール",
+        "url": "https://zenn.dev/yh_catalysis/articles/chrome2foam-dev1",
+        "site": "Zenn(Python)",
+        "published": "2026-03-22T14:35:05Z",
+        "description": "はじめに\nこの記事では、Google ChromeのブックマークをMarkdown化するCLIツール「chrome2foam」の開発に至るまでのAIとの壁打ちの軌跡を振り返ります。特に、最初に考えた「HTML解析」アプローチから、AIの助けを借りて「ChromeのJSONファイルを直接読み込む」という大きなブレイクスルーに至るまでの思考過程と、実際のプロンプトやAIの回答内容を詳細に記録しています...",
         "category": "開発",
         "rss_category": "",
         "image_url": ""
@@ -511,41 +611,11 @@
         "image_url": ""
       },
       {
-        "title": "AIモデルを高速化するCUDA Graphsとは？PyTorchで効果を検証",
-        "url": "https://zenn.dev/kosuke_sugimoto/articles/1614e65b27f6b4",
-        "site": "Zenn(Python)",
-        "published": "2026-03-22T03:41:27Z",
-        "description": "はじめに\n近年、AI の発展に伴い、特に LLM のようなモデルではパラメータ数の増加とともに推論時間の増大が問題となっています。\nこのような背景の中で、アルゴリズムやモデル構造を変更せずに推論を高速化する手法の一つとして CUDA Graphs が vLLM をはじめとする各種ランタイムで見受けられます。\n本記事では、PyTorch を用いて CUDA Graphs を適用し、どの程度の高速化が...",
-        "category": "開発",
-        "rss_category": "",
-        "image_url": ""
-      },
-      {
-        "title": "[ADK] Web UI の初期stateをミドルウェアで差し込む",
-        "url": "https://zenn.dev/koichi73/articles/set-initial-state-in-adk-web",
-        "site": "Zenn(Python)",
-        "published": "2026-03-22T01:55:22Z",
-        "description": "はじめに\nADK の Web UI は、エージェントの動作確認にとても便利です。一方で、初期stateをセッションに入れ込むのは少し手間がかかります。\n現状の手段は主に2つあります。\n\n\nUI上の3点メニューからstateを追加する → セッションを作るたびに手入力が必要\n\nbefore_agent_callback で初回判定して注入する → コードを書いたり消したりが手間\n\nそこで今回は、設定...",
-        "category": "開発",
-        "rss_category": "",
-        "image_url": ""
-      },
-      {
         "title": "Claude CodeでBrowser Use CLI 2.0を使いこなす完全ガイド",
         "url": "https://zenn.dev/7788/articles/cb88f98c576ef7",
         "site": "Zenn(Python)",
         "published": "2026-03-22T01:02:15Z",
         "description": "はじめに\nAIエージェントがブラウザを操作する時代がついに本格化しました。\nBrowser Use CLI 2.0 は、AIがWebブラウザを自律的に操作できるオープンソースツールです。そして Claude Code と組み合わせることで、コードを書きながらリアルタイムにブラウザ自動化を実現できる、まったく新しい開発体験が生まれます。\nこの記事では、Claude CodeからBrowser Use...",
-        "category": "開発",
-        "rss_category": "",
-        "image_url": ""
-      },
-      {
-        "title": "NPB予測システムをBigQueryに載せた — 無料枠でBQML・Cloud Runまで",
-        "url": "https://zenn.dev/shogaku/articles/npb-prediction-gcp-bigquery",
-        "site": "Zenn(Python)",
-        "published": "2026-03-22T00:34:07Z",
-        "description": "はじめに\nNPB選手成績予測プロジェクトを1年以上運用してきました。\n→ 過去の記事:\n\nMarcel法とMLを比較してみた\nGitHub Actionsで年次自動再学習\n\nこれまでの構成は「GitHub Actions でデータ取得→学習→CSV保存→Streamlit で表示」で完結していました。データはCSV、APIはRaspberry Pi 5のDockerコンテナ、分析はローカルのPyt...",
         "category": "開発",
         "rss_category": "",
         "image_url": ""
@@ -596,16 +666,6 @@
         "site": "Zenn(Python)",
         "published": "2026-03-21T15:11:14Z",
         "description": "グラフ理論の練習として、有名な「狼と山羊とキャベツパズル」をPythonで解いてみます。\n\n 狼と山羊とキャベツパズルとは\n川の片岸に、人と狼、山羊、キャベツがあります。\n人は船を使って、一度に1つだけ荷物（または動物）を運ぶことができます。\nただし、人がいない岸において、以下の状態は許されません。\n\n狼と山羊が同じ岸にいる\n山羊とキャベツが同じ岸にいる\n\nこの制約を守りながら、最短手順で全てを無...",
-        "category": "開発",
-        "rss_category": "",
-        "image_url": ""
-      },
-      {
-        "title": "MCPサーバとは何か — 会話で学ぶMCPの「なぜ」と仕組み",
-        "url": "https://zenn.dev/japannomu/articles/20260321_what-is-mcp-server",
-        "site": "Zenn(Python)",
-        "published": "2026-03-21T15:00:23Z",
-        "description": "Ubuntu上にMCPサーバ・FastAPI・SQLiteを構築しようとしている開発者が、AI（Claude Code）との会話を通じて「MCPサーバがなぜ必要か」「どんな仕組みか」を一つずつ紐解いていく。\n\n\n この会話の前提\n!\nこの会話は、Pythonプログラミング VTuber サプーさんの以下の動画を視聴したあとに行いました。MCPサーバの実装イメージはこの動画が出発点になっています。\n...",
         "category": "開発",
         "rss_category": "",
         "image_url": ""

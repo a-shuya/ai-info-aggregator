@@ -1,57 +1,15 @@
 {
   "site": "Zenn(生成 AI)",
-  "last_updated": "2026-03-22T21:35:29.971500",
-  "total_articles": 1556,
+  "last_updated": "2026-03-22T21:56:42.997605",
+  "total_articles": 1550,
   "articles_by_date": {
-    "本日": [
-      {
-        "title": "Claudeの本音をScratchpadで覗いたら、倫理も誘導耐性も丸見えだった",
-        "url": "https://zenn.dev/50s_zerotohero/articles/e2b1733651bad2",
-        "site": "Zenn(生成 AI)",
-        "published": "2026-03-22T15:16:05Z",
-        "description": "1. はじめに — なぜScratchpadを覗きたくなったか\nLLMは何を考えているんだろう？\nChatGPTやClaudeと会話していると、最終的な回答だけが表示されます。でもその裏側では、人間と同様にモデルが何らかの「思考」を行って回答しているはず。その思考を覗いてみたい。\nそんな興味を持ったきっかけは、Anthropicの安全性研究でした。Alignment Faking（2024年）の研...",
-        "category": "AI・技術",
-        "rss_category": "",
-        "image_url": ""
-      }
-    ],
     "昨日": [
-      {
-        "title": "【開発秘話 要件定義編】Chrome Bookmarks を Markdown 化する CLI ツール",
-        "url": "https://zenn.dev/yh_catalysis/articles/chrome2foam-dev1",
-        "site": "Zenn(生成 AI)",
-        "published": "2026-03-22T14:35:05Z",
-        "description": "はじめに\nこの記事では、Google ChromeのブックマークをMarkdown化するCLIツール「chrome2foam」の開発に至るまでのAIとの壁打ちの軌跡を振り返ります。特に、最初に考えた「HTML解析」アプローチから、AIの助けを借りて「ChromeのJSONファイルを直接読み込む」という大きなブレイクスルーに至るまでの思考過程と、実際のプロンプトやAIの回答内容を詳細に記録しています...",
-        "category": "AI・技術",
-        "rss_category": "",
-        "image_url": ""
-      },
-      {
-        "title": "自動運転AIが「目」を持った——3D空間理解の革命",
-        "url": "https://zenn.dev/nyancode/articles/20260322-ai-deepdive-daily",
-        "site": "Zenn(生成 AI)",
-        "published": "2026-03-22T13:04:45Z",
-        "description": "「なんでカーナビってたまに道を間違えるの？」\nカーナビの指示通りに走ったら、実際の道路と微妙にズレていて焦った……そんな経験はありませんか？\nあるいは、ニュースで自動運転車の話題を聞くたびに「本当に安全なの？」と不安になる方もいるかもしれません。\nその不安の根っこには、「AIはちゃんと周りの状況を\"立体的に\"理解しているのか？」という疑問があります。実は、AIが複数のカメラで撮った映像を3D空間と...",
-        "category": "AI・技術",
-        "rss_category": "",
-        "image_url": ""
-      },
       {
         "title": "全自動アプリケーション開発の仕組みを作って考えたこと",
         "url": "https://zenn.dev/7kamado/articles/29fc48a5928c46",
         "site": "Zenn(生成 AI)",
         "published": "2026-03-22T12:47:54Z",
         "description": "こんにちは7kamadoでソフトウェアエンジニアをしている山岸です。今回はモバイルアプリ開発でClaude Codeを使って自動で開発が進んでいく仕組みを作って運用してみたので、その考察です。\n\n TL;DR\n毎日80のGitHub Issueと60のPull RequestがClaude Codeによって自動生成され勝手にマージされていく環境を作りました。\nこの記事は、その環境での運用を踏まえて...",
-        "category": "AI・技術",
-        "rss_category": "",
-        "image_url": ""
-      },
-      {
-        "title": "【2026年03月22日】今週のAI最新情報まとめ",
-        "url": "https://zenn.dev/nyancode/articles/20260322-ai-news-weekly",
-        "site": "Zenn(生成 AI)",
-        "published": "2026-03-22T12:32:50Z",
-        "description": "はじめに\nこの記事では、2026年3月22日週に注目すべきAI関連のニュース・論文を5本ピックアップしてお届けします。今週は自動運転向けの3Dシーントークン化、音声言語モデルの評価手法、ビデオ生成モデルの3D空間認識、そしてエージェント型AIの成熟度論争やOpenAIの防衛分野への進出といった幅広いトピックが話題を集めました。研究論文からビジネス・倫理的議論まで、AI技術の最前線を俯瞰していきまし...",
         "category": "AI・技術",
         "rss_category": "",
         "image_url": ""
@@ -209,6 +167,16 @@
         "image_url": ""
       },
       {
+        "title": "（前編）生成AIによる大規模ウォーターフォールはなぜ危ういのか — 局所整合性と全体忠実度の乖離 —",
+        "url": "https://zenn.dev/albatrosary/articles/3a12c68d516c76",
+        "site": "Zenn(生成 AI)",
+        "published": "2026-03-21T03:08:04Z",
+        "description": "!\nTL;DR\n生成AIは、前の成果物に合わせて「それっぽく整合する」ことに非常に強い。実際、意味ドリフトの抑制や複数AIによる安定化といった工夫には、一定の効果が見え始めている。\nしかし、大規模ウォーターフォール開発で本当に重要なのは、前工程との整合ではなく、最初の要件意図への忠実性である。\n本稿では、この差を 局所整合性 C と 全体忠実度 F として分けて捉える。\n\nG = C - F\n\nこ...",
+        "category": "AI・技術",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
         "title": "Diaブラウザを使った論文読書のススメ",
         "url": "https://zenn.dev/tabetaaaaaaa/articles/e8014c2672ced8",
         "site": "Zenn(生成 AI)",
@@ -241,51 +209,11 @@
     ],
     "2026-03": [
       {
-        "title": "Claudeの本音をScratchpadで覗いたら、倫理も誘導耐性も丸見えだった",
-        "url": "https://zenn.dev/50s_zerotohero/articles/e2b1733651bad2",
-        "site": "Zenn(生成 AI)",
-        "published": "2026-03-22T15:16:05Z",
-        "description": "1. はじめに — なぜScratchpadを覗きたくなったか\nLLMは何を考えているんだろう？\nChatGPTやClaudeと会話していると、最終的な回答だけが表示されます。でもその裏側では、人間と同様にモデルが何らかの「思考」を行って回答しているはず。その思考を覗いてみたい。\nそんな興味を持ったきっかけは、Anthropicの安全性研究でした。Alignment Faking（2024年）の研...",
-        "category": "AI・技術",
-        "rss_category": "",
-        "image_url": ""
-      },
-      {
-        "title": "【開発秘話 要件定義編】Chrome Bookmarks を Markdown 化する CLI ツール",
-        "url": "https://zenn.dev/yh_catalysis/articles/chrome2foam-dev1",
-        "site": "Zenn(生成 AI)",
-        "published": "2026-03-22T14:35:05Z",
-        "description": "はじめに\nこの記事では、Google ChromeのブックマークをMarkdown化するCLIツール「chrome2foam」の開発に至るまでのAIとの壁打ちの軌跡を振り返ります。特に、最初に考えた「HTML解析」アプローチから、AIの助けを借りて「ChromeのJSONファイルを直接読み込む」という大きなブレイクスルーに至るまでの思考過程と、実際のプロンプトやAIの回答内容を詳細に記録しています...",
-        "category": "AI・技術",
-        "rss_category": "",
-        "image_url": ""
-      },
-      {
-        "title": "自動運転AIが「目」を持った——3D空間理解の革命",
-        "url": "https://zenn.dev/nyancode/articles/20260322-ai-deepdive-daily",
-        "site": "Zenn(生成 AI)",
-        "published": "2026-03-22T13:04:45Z",
-        "description": "「なんでカーナビってたまに道を間違えるの？」\nカーナビの指示通りに走ったら、実際の道路と微妙にズレていて焦った……そんな経験はありませんか？\nあるいは、ニュースで自動運転車の話題を聞くたびに「本当に安全なの？」と不安になる方もいるかもしれません。\nその不安の根っこには、「AIはちゃんと周りの状況を\"立体的に\"理解しているのか？」という疑問があります。実は、AIが複数のカメラで撮った映像を3D空間と...",
-        "category": "AI・技術",
-        "rss_category": "",
-        "image_url": ""
-      },
-      {
         "title": "全自動アプリケーション開発の仕組みを作って考えたこと",
         "url": "https://zenn.dev/7kamado/articles/29fc48a5928c46",
         "site": "Zenn(生成 AI)",
         "published": "2026-03-22T12:47:54Z",
         "description": "こんにちは7kamadoでソフトウェアエンジニアをしている山岸です。今回はモバイルアプリ開発でClaude Codeを使って自動で開発が進んでいく仕組みを作って運用してみたので、その考察です。\n\n TL;DR\n毎日80のGitHub Issueと60のPull RequestがClaude Codeによって自動生成され勝手にマージされていく環境を作りました。\nこの記事は、その環境での運用を踏まえて...",
-        "category": "AI・技術",
-        "rss_category": "",
-        "image_url": ""
-      },
-      {
-        "title": "【2026年03月22日】今週のAI最新情報まとめ",
-        "url": "https://zenn.dev/nyancode/articles/20260322-ai-news-weekly",
-        "site": "Zenn(生成 AI)",
-        "published": "2026-03-22T12:32:50Z",
-        "description": "はじめに\nこの記事では、2026年3月22日週に注目すべきAI関連のニュース・論文を5本ピックアップしてお届けします。今週は自動運転向けの3Dシーントークン化、音声言語モデルの評価手法、ビデオ生成モデルの3D空間認識、そしてエージェント型AIの成熟度論争やOpenAIの防衛分野への進出といった幅広いトピックが話題を集めました。研究論文からビジネス・倫理的議論まで、AI技術の最前線を俯瞰していきまし...",
         "category": "AI・技術",
         "rss_category": "",
         "image_url": ""
@@ -436,6 +364,16 @@
         "site": "Zenn(生成 AI)",
         "published": "2026-03-21T06:34:11Z",
         "description": "AIモデルの進化スピードが加速する中、Alibaba Cloudが放つ最新モデルQwen3.5が大きな注目を集めています。しかし、単に「パラメータ数が多ければ賢い」という常識が通用しない現象が、有志の検証によって明らかになってきました。\n今回は、Qwen3.5のモデル選定における重要なポイントを解説します。\n\n 1. 背景：Qwen3.5のラインナップと期待\nQwen3.5は、前世代のQwen2....",
+        "category": "AI・技術",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "（前編）生成AIによる大規模ウォーターフォールはなぜ危ういのか — 局所整合性と全体忠実度の乖離 —",
+        "url": "https://zenn.dev/albatrosary/articles/3a12c68d516c76",
+        "site": "Zenn(生成 AI)",
+        "published": "2026-03-21T03:08:04Z",
+        "description": "!\nTL;DR\n生成AIは、前の成果物に合わせて「それっぽく整合する」ことに非常に強い。実際、意味ドリフトの抑制や複数AIによる安定化といった工夫には、一定の効果が見え始めている。\nしかし、大規模ウォーターフォール開発で本当に重要なのは、前工程との整合ではなく、最初の要件意図への忠実性である。\n本稿では、この差を 局所整合性 C と 全体忠実度 F として分けて捉える。\n\nG = C - F\n\nこ...",
         "category": "AI・技術",
         "rss_category": "",
         "image_url": ""
