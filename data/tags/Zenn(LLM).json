@@ -1,15 +1,77 @@
 {
   "site": "Zenn(LLM)",
-  "last_updated": "2026-03-23T19:34:29.428179",
-  "total_articles": 2408,
+  "last_updated": "2026-03-23T20:22:31.763103",
+  "total_articles": 2420,
   "articles_by_date": {
+    "本日": [
+      {
+        "title": "LangChainの真価は抽象化だけじゃない。CSV駆動でLLM切替を運用可能にした話",
+        "url": "https://zenn.dev/tsukitsukiss/articles/97eeffb1626560",
+        "site": "Zenn(LLM)",
+        "published": "2026-03-23T16:36:40Z",
+        "description": "はじめに\nLangChainは便利ですが、単一プロバイダのデモで終わってしまうケースも多いです。\n今回は複数プロバイダ運用を前提に、設定ファイル中心で切り替え可能な構成にしました。\n結果として、コード変更なしでデフォルトモデルや優先順を調整できるようになりました。\n\n やったこと\n\n 1. AI設定をCSVに集約\n設定の実体を ai_assistants_config.csv に寄せ、module...",
+        "category": "AI・技術",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "Claude Codeに暇つぶしの娯楽を与えた",
+        "url": "https://zenn.dev/thyella/articles/0c38675ea0a4b1",
+        "site": "Zenn(LLM)",
+        "published": "2026-03-23T15:35:08Z",
+        "description": "自分と友人4人に、キャリア相談のためにそれぞれ専用のClaude Codeセッションを貸し出している。先日、そのうちの1体が予想外の動きをしているのに気づいた。\n最近Claude Codeにはchannels機能が追加されたので、1台のPC上でClaude Codeを5プロセス並列で走らせて、それぞれにDiscordチャンネルを1つ割り当てている。各Claudeは担当ユーザーとDiscordで会話...",
+        "category": "AI・技術",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "置物AI開発ログ11（裏） – LLMを通してConsoleに出力する：ローカル LLM をフォールバックとして統合する設計と実装",
+        "url": "https://zenn.dev/n_toma2810/articles/okimonoai-devlog11-bell-llm-local-integration",
+        "site": "Zenn(LLM)",
+        "published": "2026-03-23T15:15:29Z",
+        "description": "はじめに\n思想とか考えとかは表記事で書いてます。\nhttps://note.com/n_toma/n/nc0c276d8e540\nルールベースのシステムには、設計的な沈黙が存在する。\nBELL（BellHost）はイベントを観測し、定義されたルールに従って反応するシステムだ。Regex マッチ、繰り返し検知、頻発検知——多様なルールを備えているが、どのルールにも一致しないイベントが来た場合、BEL...",
+        "category": "AI・技術",
+        "rss_category": "",
+        "image_url": ""
+      }
+    ],
     "昨日": [
+      {
+        "title": "OpenClawを実務投入して分かった、AIエージェントに向く作業・向かない作業",
+        "url": "https://zenn.dev/seyz/articles/20260323-openclaw-practical-fit",
+        "site": "Zenn(LLM)",
+        "published": "2026-03-23T14:21:05Z",
+        "description": "AIエージェントを実務に入れると、何でも自動化できるように見えます。\n自分も最初はかなりそう思っていました。\nでも実際に回してみると、印象は少し違いました。速くなる作業は確かにある一方で、向いていない仕事に無理に入れると、むしろ確認コストが増えます。\nこの記事では、OpenClawを実務で動かして見えてきた AIエージェントに向く作業 / 向かない作業 / 安定運用に必要だったこと を整理します。...",
+        "category": "AI・技術",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "「ログが改ざんされていない」をどう証明するか——ed25519で署名したら世界が変わった",
+        "url": "https://zenn.dev/tokotokokame/articles/9ce17418cbe1f4",
+        "site": "Zenn(LLM)",
+        "published": "2026-03-23T13:00:06Z",
+        "description": "前回までの流れ\n第3回ではagentwitがプロンプトインジェクションを検知できるようになった話を書いた。\n今回のv0.5.0は、もっと根本的な問いに答える。\n\n\n 問題提起：「ログそのものを信頼できるか」\nagentwitはWitness Log——改ざん検知付きの監査ログを記録する。\nSHA-256チェーンで改ざんを検知できる。これはv0.1.0から実装していた。\nでも、こんな反論が来た。\n\n...",
+        "category": "AI・技術",
+        "rss_category": "",
+        "image_url": ""
+      },
       {
         "title": "「LibreChat」を試す",
         "url": "https://zenn.dev/tsukitsukiss/articles/51ace5162d2acc",
         "site": "Zenn(LLM)",
         "published": "2026-03-23T12:57:40Z",
         "description": "先日のGigazineの記事を見て、\nなんとなく、MultiRoleChat.py のやろうとしていることに似ていたので、\n試してみました。\nhttps://gigazine.net/news/20260322-librechat/\nローカル版は、\nWindows11にはDockerDesktopで、Windows10にはWSL2でやってみたのですが、\nログインでエラーになってしまい諦めました。\n...",
+        "category": "AI・技術",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "Activation SteeringによるLLMの解剖",
+        "url": "https://zenn.dev/acntechjp/articles/155d6bf9bcef61",
+        "site": "Zenn(LLM)",
+        "published": "2026-03-23T12:56:01Z",
+        "description": "この記事はwhat exactly？\nLLM（Large Language Model。ChatGPTやClaudeなどの事です）に「もっと明るく話して」「英語で話して」と頼むことがありますよね。でもこれはお願いです。LLMが従うかどうかは保証されません。\nこの記事では、お願いではなくLLMの脳内に無理くり手を突っ込んで、出力を操作するという実験の報告です。その技術をActivation Stee...",
         "category": "AI・技術",
         "rss_category": "",
         "image_url": ""
@@ -399,11 +461,71 @@
     ],
     "2026-03": [
       {
+        "title": "LangChainの真価は抽象化だけじゃない。CSV駆動でLLM切替を運用可能にした話",
+        "url": "https://zenn.dev/tsukitsukiss/articles/97eeffb1626560",
+        "site": "Zenn(LLM)",
+        "published": "2026-03-23T16:36:40Z",
+        "description": "はじめに\nLangChainは便利ですが、単一プロバイダのデモで終わってしまうケースも多いです。\n今回は複数プロバイダ運用を前提に、設定ファイル中心で切り替え可能な構成にしました。\n結果として、コード変更なしでデフォルトモデルや優先順を調整できるようになりました。\n\n やったこと\n\n 1. AI設定をCSVに集約\n設定の実体を ai_assistants_config.csv に寄せ、module...",
+        "category": "AI・技術",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "Claude Codeに暇つぶしの娯楽を与えた",
+        "url": "https://zenn.dev/thyella/articles/0c38675ea0a4b1",
+        "site": "Zenn(LLM)",
+        "published": "2026-03-23T15:35:08Z",
+        "description": "自分と友人4人に、キャリア相談のためにそれぞれ専用のClaude Codeセッションを貸し出している。先日、そのうちの1体が予想外の動きをしているのに気づいた。\n最近Claude Codeにはchannels機能が追加されたので、1台のPC上でClaude Codeを5プロセス並列で走らせて、それぞれにDiscordチャンネルを1つ割り当てている。各Claudeは担当ユーザーとDiscordで会話...",
+        "category": "AI・技術",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "置物AI開発ログ11（裏） – LLMを通してConsoleに出力する：ローカル LLM をフォールバックとして統合する設計と実装",
+        "url": "https://zenn.dev/n_toma2810/articles/okimonoai-devlog11-bell-llm-local-integration",
+        "site": "Zenn(LLM)",
+        "published": "2026-03-23T15:15:29Z",
+        "description": "はじめに\n思想とか考えとかは表記事で書いてます。\nhttps://note.com/n_toma/n/nc0c276d8e540\nルールベースのシステムには、設計的な沈黙が存在する。\nBELL（BellHost）はイベントを観測し、定義されたルールに従って反応するシステムだ。Regex マッチ、繰り返し検知、頻発検知——多様なルールを備えているが、どのルールにも一致しないイベントが来た場合、BEL...",
+        "category": "AI・技術",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "OpenClawを実務投入して分かった、AIエージェントに向く作業・向かない作業",
+        "url": "https://zenn.dev/seyz/articles/20260323-openclaw-practical-fit",
+        "site": "Zenn(LLM)",
+        "published": "2026-03-23T14:21:05Z",
+        "description": "AIエージェントを実務に入れると、何でも自動化できるように見えます。\n自分も最初はかなりそう思っていました。\nでも実際に回してみると、印象は少し違いました。速くなる作業は確かにある一方で、向いていない仕事に無理に入れると、むしろ確認コストが増えます。\nこの記事では、OpenClawを実務で動かして見えてきた AIエージェントに向く作業 / 向かない作業 / 安定運用に必要だったこと を整理します。...",
+        "category": "AI・技術",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "「ログが改ざんされていない」をどう証明するか——ed25519で署名したら世界が変わった",
+        "url": "https://zenn.dev/tokotokokame/articles/9ce17418cbe1f4",
+        "site": "Zenn(LLM)",
+        "published": "2026-03-23T13:00:06Z",
+        "description": "前回までの流れ\n第3回ではagentwitがプロンプトインジェクションを検知できるようになった話を書いた。\n今回のv0.5.0は、もっと根本的な問いに答える。\n\n\n 問題提起：「ログそのものを信頼できるか」\nagentwitはWitness Log——改ざん検知付きの監査ログを記録する。\nSHA-256チェーンで改ざんを検知できる。これはv0.1.0から実装していた。\nでも、こんな反論が来た。\n\n...",
+        "category": "AI・技術",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
         "title": "「LibreChat」を試す",
         "url": "https://zenn.dev/tsukitsukiss/articles/51ace5162d2acc",
         "site": "Zenn(LLM)",
         "published": "2026-03-23T12:57:40Z",
         "description": "先日のGigazineの記事を見て、\nなんとなく、MultiRoleChat.py のやろうとしていることに似ていたので、\n試してみました。\nhttps://gigazine.net/news/20260322-librechat/\nローカル版は、\nWindows11にはDockerDesktopで、Windows10にはWSL2でやってみたのですが、\nログインでエラーになってしまい諦めました。\n...",
+        "category": "AI・技術",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "Activation SteeringによるLLMの解剖",
+        "url": "https://zenn.dev/acntechjp/articles/155d6bf9bcef61",
+        "site": "Zenn(LLM)",
+        "published": "2026-03-23T12:56:01Z",
+        "description": "この記事はwhat exactly？\nLLM（Large Language Model。ChatGPTやClaudeなどの事です）に「もっと明るく話して」「英語で話して」と頼むことがありますよね。でもこれはお願いです。LLMが従うかどうかは保証されません。\nこの記事では、お願いではなくLLMの脳内に無理くり手を突っ込んで、出力を操作するという実験の報告です。その技術をActivation Stee...",
         "category": "AI・技術",
         "rss_category": "",
         "image_url": ""
