@@ -1,9 +1,39 @@
 {
   "site": "Zenn(LLM)",
-  "last_updated": "2026-03-23T11:57:15.422120",
-  "total_articles": 2424,
+  "last_updated": "2026-03-23T13:26:04.107866",
+  "total_articles": 2426,
   "articles_by_date": {
     "本日": [
+      {
+        "title": "「ログが改ざんされていない」をどう証明するか——ed25519で署名したら世界が変わった",
+        "url": "https://zenn.dev/tokotokokame/articles/9ce17418cbe1f4",
+        "site": "Zenn(LLM)",
+        "published": "2026-03-23T13:00:06Z",
+        "description": "前回までの流れ\n第3回ではagentwitがプロンプトインジェクションを検知できるようになった話を書いた。\n今回のv0.5.0は、もっと根本的な問いに答える。\n\n\n 問題提起：「ログそのものを信頼できるか」\nagentwitはWitness Log——改ざん検知付きの監査ログを記録する。\nSHA-256チェーンで改ざんを検知できる。これはv0.1.0から実装していた。\nでも、こんな反論が来た。\n\n...",
+        "category": "AI・技術",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "「LibreChat」を試す",
+        "url": "https://zenn.dev/tsukitsukiss/articles/51ace5162d2acc",
+        "site": "Zenn(LLM)",
+        "published": "2026-03-23T12:57:40Z",
+        "description": "先日のGigazineの記事を見て、\nなんとなく、MultiRoleChat.py のやろうとしていることに似ていたので、\n試してみました。\nhttps://gigazine.net/news/20260322-librechat/\nローカル版は、\nWindows11にはDockerDesktopで、Windows10にはWSL2でやってみたのですが、\nログインでエラーになってしまい諦めました。\n...",
+        "category": "AI・技術",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "Activation SteeringによるLLMの解剖",
+        "url": "https://zenn.dev/acntechjp/articles/155d6bf9bcef61",
+        "site": "Zenn(LLM)",
+        "published": "2026-03-23T12:56:01Z",
+        "description": "この記事はwhat exactly？\nLLM（Large Language Model。ChatGPTやClaudeなどの事です）に「もっと明るく話して」「英語で話して」と頼むことがありますよね。でもこれはお願いです。LLMが従うかどうかは保証されません。\nこの記事では、お願いではなくLLMの脳内に無理くり手を突っ込んで、出力を操作するという実験の報告です。その技術をActivation Stee...",
+        "category": "AI・技術",
+        "rss_category": "",
+        "image_url": ""
+      },
       {
         "title": "Claude Agent SDKでマルチエージェントTelegramグループチャットを作った",
         "url": "https://zenn.dev/acropapa330/articles/zenn_multi_agent_telegram",
@@ -180,26 +210,6 @@
         "site": "Zenn(LLM)",
         "published": "2026-03-23T00:30:06Z",
         "description": "こんにちは！\n株式会社エクスプラザでLLMアプリケーションエンジニアをしている@Junです。\nこの記事では、GitHub Agentic Workflowsを使って、AGENTS.mdを定期的かつ自動的にメンテナンスするためのWorkflowを構築した方法を紹介します。\n\n 背景\nAGENTS.mdを最初に整備しても、その後の変更に追従できず、内容が徐々に実態とズレていくことがよくあります。特に、...",
-        "category": "AI・技術",
-        "rss_category": "",
-        "image_url": ""
-      },
-      {
-        "title": "RTX 4060 8GBでQwen2.5-32Bが動く — M4超えの10.8 t/sを叩き出した最適化全手順",
-        "url": "https://zenn.dev/plasmon/articles/20260323-cata-local-llm-29207a",
-        "site": "Zenn(LLM)",
-        "published": "2026-03-23T00:23:02Z",
-        "description": "RTX 4060 8GBでQwen2.5-32Bが動く — M4超えの10.8 t/sを叩き出した最適化全手順\n手元のラップトップにRTX 4060が載っている。VRAM 8GB。ローカルLLMをやるには「貧乏くじ」と言われるスペックだ。\nそれでも32Bモデルを動かしたかった。7Bクラスは試した。動く。が、コーディング支援に使うと回答品質に不満が出る。かといってAPIに投げると月のコストが膨らむし...",
-        "category": "AI・技術",
-        "rss_category": "",
-        "image_url": ""
-      },
-      {
-        "title": "人間は道具を作るたびに、自分を選別してきた",
-        "url": "https://zenn.dev/cognitiveosmdl/articles/b3674728fe4da6",
-        "site": "Zenn(LLM)",
-        "published": "2026-03-23T00:00:11Z",
-        "description": "!\n本記事は、AI時代を生き抜くための「選別と生存」3部作の第2回です。\n第1回：AIと判断力の劣化\n第2回：道具による人類の「自己選別」の歴史（本記事）\n第3回：「AI禁止令」の真の狙いと認知設計\n\n\n AIを使えば使うほど、成果は出る。それは事実だ。\nコードの生成、設計案の壁打ち、ドキュメントの整理。AIの導入以降、生産性が上がった実感を持つエンジニアは多いだろう。\n問題は、何が起きているかで...",
         "category": "AI・技術",
         "rss_category": "",
         "image_url": ""
@@ -581,6 +591,36 @@
     ],
     "2026-03": [
       {
+        "title": "「ログが改ざんされていない」をどう証明するか——ed25519で署名したら世界が変わった",
+        "url": "https://zenn.dev/tokotokokame/articles/9ce17418cbe1f4",
+        "site": "Zenn(LLM)",
+        "published": "2026-03-23T13:00:06Z",
+        "description": "前回までの流れ\n第3回ではagentwitがプロンプトインジェクションを検知できるようになった話を書いた。\n今回のv0.5.0は、もっと根本的な問いに答える。\n\n\n 問題提起：「ログそのものを信頼できるか」\nagentwitはWitness Log——改ざん検知付きの監査ログを記録する。\nSHA-256チェーンで改ざんを検知できる。これはv0.1.0から実装していた。\nでも、こんな反論が来た。\n\n...",
+        "category": "AI・技術",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "「LibreChat」を試す",
+        "url": "https://zenn.dev/tsukitsukiss/articles/51ace5162d2acc",
+        "site": "Zenn(LLM)",
+        "published": "2026-03-23T12:57:40Z",
+        "description": "先日のGigazineの記事を見て、\nなんとなく、MultiRoleChat.py のやろうとしていることに似ていたので、\n試してみました。\nhttps://gigazine.net/news/20260322-librechat/\nローカル版は、\nWindows11にはDockerDesktopで、Windows10にはWSL2でやってみたのですが、\nログインでエラーになってしまい諦めました。\n...",
+        "category": "AI・技術",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "Activation SteeringによるLLMの解剖",
+        "url": "https://zenn.dev/acntechjp/articles/155d6bf9bcef61",
+        "site": "Zenn(LLM)",
+        "published": "2026-03-23T12:56:01Z",
+        "description": "この記事はwhat exactly？\nLLM（Large Language Model。ChatGPTやClaudeなどの事です）に「もっと明るく話して」「英語で話して」と頼むことがありますよね。でもこれはお願いです。LLMが従うかどうかは保証されません。\nこの記事では、お願いではなくLLMの脳内に無理くり手を突っ込んで、出力を操作するという実験の報告です。その技術をActivation Stee...",
+        "category": "AI・技術",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
         "title": "Claude Agent SDKでマルチエージェントTelegramグループチャットを作った",
         "url": "https://zenn.dev/acropapa330/articles/zenn_multi_agent_telegram",
         "site": "Zenn(LLM)",
@@ -756,26 +796,6 @@
         "site": "Zenn(LLM)",
         "published": "2026-03-23T00:30:06Z",
         "description": "こんにちは！\n株式会社エクスプラザでLLMアプリケーションエンジニアをしている@Junです。\nこの記事では、GitHub Agentic Workflowsを使って、AGENTS.mdを定期的かつ自動的にメンテナンスするためのWorkflowを構築した方法を紹介します。\n\n 背景\nAGENTS.mdを最初に整備しても、その後の変更に追従できず、内容が徐々に実態とズレていくことがよくあります。特に、...",
-        "category": "AI・技術",
-        "rss_category": "",
-        "image_url": ""
-      },
-      {
-        "title": "RTX 4060 8GBでQwen2.5-32Bが動く — M4超えの10.8 t/sを叩き出した最適化全手順",
-        "url": "https://zenn.dev/plasmon/articles/20260323-cata-local-llm-29207a",
-        "site": "Zenn(LLM)",
-        "published": "2026-03-23T00:23:02Z",
-        "description": "RTX 4060 8GBでQwen2.5-32Bが動く — M4超えの10.8 t/sを叩き出した最適化全手順\n手元のラップトップにRTX 4060が載っている。VRAM 8GB。ローカルLLMをやるには「貧乏くじ」と言われるスペックだ。\nそれでも32Bモデルを動かしたかった。7Bクラスは試した。動く。が、コーディング支援に使うと回答品質に不満が出る。かといってAPIに投げると月のコストが膨らむし...",
-        "category": "AI・技術",
-        "rss_category": "",
-        "image_url": ""
-      },
-      {
-        "title": "人間は道具を作るたびに、自分を選別してきた",
-        "url": "https://zenn.dev/cognitiveosmdl/articles/b3674728fe4da6",
-        "site": "Zenn(LLM)",
-        "published": "2026-03-23T00:00:11Z",
-        "description": "!\n本記事は、AI時代を生き抜くための「選別と生存」3部作の第2回です。\n第1回：AIと判断力の劣化\n第2回：道具による人類の「自己選別」の歴史（本記事）\n第3回：「AI禁止令」の真の狙いと認知設計\n\n\n AIを使えば使うほど、成果は出る。それは事実だ。\nコードの生成、設計案の壁打ち、ドキュメントの整理。AIの導入以降、生産性が上がった実感を持つエンジニアは多いだろう。\n問題は、何が起きているかで...",
         "category": "AI・技術",
         "rss_category": "",
         "image_url": ""
