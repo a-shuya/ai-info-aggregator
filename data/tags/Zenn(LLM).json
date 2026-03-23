@@ -1,15 +1,85 @@
 {
   "site": "Zenn(LLM)",
-  "last_updated": "2026-03-23T05:18:12.542527",
-  "total_articles": 2404,
+  "last_updated": "2026-03-23T06:43:38.495895",
+  "total_articles": 2416,
   "articles_by_date": {
     "本日": [
+      {
+        "title": "RAGの次は検索ではなく行動である｜Semantic Kernelで理解するAIエージェントの設計思想",
+        "url": "https://zenn.dev/startspace/articles/402e14cb2993e4",
+        "site": "Zenn(LLM)",
+        "published": "2026-03-23T03:00:11Z",
+        "description": "導入｜RAGの先で、私は何に行き着いたのか\nRAGの精度改善には、まだ多くの余地があります。\nChunking、検索戦略、Rerank、評価...やれることはまだあるし、実際に私はそれらを一通り試してきました。\nしかし、ある地点で違和感にぶつかります。\nそれは、「これで、本当に業務は終わるのか？」という問いです。\nRAGによって、社内ナレッジの検索は劇的に速くなりました。チャットボットに組み込めば...",
+        "category": "AI・技術",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "自社AI開発するのではなく、cli開発とskillsによる知識の言語化に焦点を当てた方がいいのではないだろうか",
+        "url": "https://zenn.dev/taro0079/articles/f8e399115373b6",
+        "site": "Zenn(LLM)",
+        "published": "2026-03-23T02:33:43Z",
+        "description": "ChatGPTの登場以降、あらゆる企業が「自社サービスへのAI組み込み」を模索しています。しかし、AI技術の進化はあまりにも速く、キャッチアップするだけでも一苦労です。\nAIチャットボットを作ってみたが、自社の独自仕様について嘘（ハルシネーション）をついて使い物にならなかったり、LLMの挙動を制御するために、延々とプロンプトエンジニアリングに時間を溶かしているといったことがあります。私自身もdif...",
+        "category": "AI・技術",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "Difyチャットボットの品質をシナリオテストで計測する",
+        "url": "https://zenn.dev/okuma/articles/convoprobe-intro",
+        "site": "Zenn(LLM)",
+        "published": "2026-03-23T02:22:52Z",
+        "description": "やったこと\nチャットボットを作っていると、\"シングルターン（1問1答）では問題なく動いているように見えるけど、マルチターン（3〜4ターンの会話）になると品質が大きく下がる\" ということによく遭遇します。そこで、マルチターンのシナリオと期待する回答を作って、DifyのAPIに一気に投げて自動テストできるツールを作った、という話です。\n\n 既存ツールの評価機能と、残るギャップ\nDifyには複数のオブザ...",
+        "category": "AI・技術",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "LLMで偽装Webページを自動生成するハニーポット",
+        "url": "https://zenn.dev/mizutani/articles/designing-llm-web-honeypots",
+        "site": "Zenn(LLM)",
+        "published": "2026-03-23T02:04:29Z",
+        "description": "LLMを使ってリアルなWebハニーポットを生成・運用するためのツール tamamo を実装したので、背景と設計上の判断について解説します。\nhttps://github.com/secmon-lab/tamamo\n\n モチベーション\nハニーポットは攻撃者を捕捉する様々な目的で利用されます。多くは攻撃者の挙動を研究するために使われますが、攻撃者の検知にも有効です。ただし public interne...",
+        "category": "AI・技術",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "メモリ16MB vs 1.2GB ── AIブラウザ自動化ツール5選を実測比較した",
+        "url": "https://zenn.dev/pepabo/articles/ai-browser-automation-tools-benchmark",
+        "site": "Zenn(LLM)",
+        "published": "2026-03-23T01:37:42Z",
+        "description": "Claude Codeでブラウザ操作をしていて、ツール選びに迷いました。候補は5つ、アプローチもバラバラ。全部インストールして10項目テストした結果、用途によって最適解の変わることがわかりました。\n先に結論: 認証管理ならplaywright-CLI。エージェントの操作基盤ならagent-browser。自然言語で自律操作ならbrowser-use。大量クロールならLightpanda。本番インフ...",
+        "category": "AI・技術",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "[GitHub Agentic Workflows] AGENTS.mdを定期的にメンテする",
+        "url": "https://zenn.dev/explaza/articles/eec6bb340c1240",
+        "site": "Zenn(LLM)",
+        "published": "2026-03-23T00:30:06Z",
+        "description": "こんにちは！\n株式会社エクスプラザでLLMアプリケーションエンジニアをしている@Junです。\nこの記事では、GitHub Agentic Workflowsを使って、AGENTS.mdを定期的かつ自動的にメンテナンスするためのWorkflowを構築した方法を紹介します。\n\n 背景\nAGENTS.mdを最初に整備しても、その後の変更に追従できず、内容が徐々に実態とズレていくことがよくあります。特に、...",
+        "category": "AI・技術",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "RTX 4060 8GBでQwen2.5-32Bが動く — M4超えの10.8 t/sを叩き出した最適化全手順",
+        "url": "https://zenn.dev/plasmon/articles/20260323-cata-local-llm-29207a",
+        "site": "Zenn(LLM)",
+        "published": "2026-03-23T00:23:02Z",
+        "description": "RTX 4060 8GBでQwen2.5-32Bが動く — M4超えの10.8 t/sを叩き出した最適化全手順\n手元のラップトップにRTX 4060が載っている。VRAM 8GB。ローカルLLMをやるには「貧乏くじ」と言われるスペックだ。\nそれでも32Bモデルを動かしたかった。7Bクラスは試した。動く。が、コーディング支援に使うと回答品質に不満が出る。かといってAPIに投げると月のコストが膨らむし...",
+        "category": "AI・技術",
+        "rss_category": "",
+        "image_url": ""
+      },
       {
         "title": "人間は道具を作るたびに、自分を選別してきた",
         "url": "https://zenn.dev/cognitiveosmdl/articles/b3674728fe4da6",
         "site": "Zenn(LLM)",
         "published": "2026-03-23T00:00:11Z",
-        "description": "AIを使えば使うほど、成果は出る。それは事実だ。\nコードの生成、設計案の壁打ち、ドキュメントの整理。AIの導入以降、生産性が上がった実感を持つエンジニアは多いだろう。\n問題は、何が起きているかではない。何が失われているかだ。\n本稿では「道具と抽象化の歴史」という視点から、AIが人間に対して何を行っているかの構造を分析する。先に言うと、AIは能力を拡張していない。代替している。そしてその代替のたびに...",
+        "description": "!\n本記事は、AI時代を生き抜くための「選別と生存」3部作の第2回です。\n第1回：AIと判断力の劣化\n第2回：道具による人類の「自己選別」の歴史（本記事）\n第3回：「AI禁止令」の真の狙いと認知設計\n\n\n AIを使えば使うほど、成果は出る。それは事実だ。\nコードの生成、設計案の壁打ち、ドキュメントの整理。AIの導入以降、生産性が上がった実感を持つエンジニアは多いだろう。\n問題は、何が起きているかで...",
         "category": "AI・技術",
         "rss_category": "",
         "image_url": ""
@@ -25,7 +95,7 @@
         "image_url": ""
       },
       {
-        "title": "Hindsight + Ollamaで、独自知見をAIエージェントが使える“つながる知識”にした",
+        "title": "Hindsight + Ollamaで、自分の知見をAIエージェントが使える“つながった知識”にした話",
         "url": "https://zenn.dev/acntechjp/articles/e58f4a2a7bcebd",
         "site": "Zenn(LLM)",
         "published": "2026-03-22T23:00:06Z",
@@ -122,16 +192,6 @@
         "site": "Zenn(LLM)",
         "published": "2026-03-22T11:37:40Z",
         "description": "CursorよりもClaudeのほうがいいですよ\n\nエンジニアの人と開発ツールの議論をしていたとき僕は得意げにこう言いました。\nCursorよりもClaudeのほうがいいですよ(キリッ、と。\n相手の表情がすっと曇り「いや、それ比較するものじゃなくない?」と返されて、はっとして自分の間違いに気づきました。CursorはAI機能を搭載したコードエディタです。Claudeは大規模言語モデルの名前。エディ...",
-        "category": "AI・技術",
-        "rss_category": "",
-        "image_url": ""
-      },
-      {
-        "title": "Andrej Karpathyの「autoresearch」が描く未来",
-        "url": "https://zenn.dev/aienthusiast/articles/article-20260322-094255",
-        "site": "Zenn(LLM)",
-        "published": "2026-03-22T09:58:53Z",
-        "description": "はじめに\nAI研究の世界に、また一つ革新的なプロジェクトが登場しました。Tesla元AIディレクターでOpenAI創業メンバーでもあるAndrej Karpathy氏が公開した「autoresearch」は、AI研究そのものを自動化するという野心的な試みです。\nこのリポジトリは公開からわずかな期間で48,000以上のスターを獲得し、AI・機械学習コミュニティで大きな注目を集めています。一体何がそれ...",
         "category": "AI・技術",
         "rss_category": "",
         "image_url": ""
@@ -481,11 +541,81 @@
     ],
     "2026-03": [
       {
+        "title": "RAGの次は検索ではなく行動である｜Semantic Kernelで理解するAIエージェントの設計思想",
+        "url": "https://zenn.dev/startspace/articles/402e14cb2993e4",
+        "site": "Zenn(LLM)",
+        "published": "2026-03-23T03:00:11Z",
+        "description": "導入｜RAGの先で、私は何に行き着いたのか\nRAGの精度改善には、まだ多くの余地があります。\nChunking、検索戦略、Rerank、評価...やれることはまだあるし、実際に私はそれらを一通り試してきました。\nしかし、ある地点で違和感にぶつかります。\nそれは、「これで、本当に業務は終わるのか？」という問いです。\nRAGによって、社内ナレッジの検索は劇的に速くなりました。チャットボットに組み込めば...",
+        "category": "AI・技術",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "自社AI開発するのではなく、cli開発とskillsによる知識の言語化に焦点を当てた方がいいのではないだろうか",
+        "url": "https://zenn.dev/taro0079/articles/f8e399115373b6",
+        "site": "Zenn(LLM)",
+        "published": "2026-03-23T02:33:43Z",
+        "description": "ChatGPTの登場以降、あらゆる企業が「自社サービスへのAI組み込み」を模索しています。しかし、AI技術の進化はあまりにも速く、キャッチアップするだけでも一苦労です。\nAIチャットボットを作ってみたが、自社の独自仕様について嘘（ハルシネーション）をついて使い物にならなかったり、LLMの挙動を制御するために、延々とプロンプトエンジニアリングに時間を溶かしているといったことがあります。私自身もdif...",
+        "category": "AI・技術",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "Difyチャットボットの品質をシナリオテストで計測する",
+        "url": "https://zenn.dev/okuma/articles/convoprobe-intro",
+        "site": "Zenn(LLM)",
+        "published": "2026-03-23T02:22:52Z",
+        "description": "やったこと\nチャットボットを作っていると、\"シングルターン（1問1答）では問題なく動いているように見えるけど、マルチターン（3〜4ターンの会話）になると品質が大きく下がる\" ということによく遭遇します。そこで、マルチターンのシナリオと期待する回答を作って、DifyのAPIに一気に投げて自動テストできるツールを作った、という話です。\n\n 既存ツールの評価機能と、残るギャップ\nDifyには複数のオブザ...",
+        "category": "AI・技術",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "LLMで偽装Webページを自動生成するハニーポット",
+        "url": "https://zenn.dev/mizutani/articles/designing-llm-web-honeypots",
+        "site": "Zenn(LLM)",
+        "published": "2026-03-23T02:04:29Z",
+        "description": "LLMを使ってリアルなWebハニーポットを生成・運用するためのツール tamamo を実装したので、背景と設計上の判断について解説します。\nhttps://github.com/secmon-lab/tamamo\n\n モチベーション\nハニーポットは攻撃者を捕捉する様々な目的で利用されます。多くは攻撃者の挙動を研究するために使われますが、攻撃者の検知にも有効です。ただし public interne...",
+        "category": "AI・技術",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "メモリ16MB vs 1.2GB ── AIブラウザ自動化ツール5選を実測比較した",
+        "url": "https://zenn.dev/pepabo/articles/ai-browser-automation-tools-benchmark",
+        "site": "Zenn(LLM)",
+        "published": "2026-03-23T01:37:42Z",
+        "description": "Claude Codeでブラウザ操作をしていて、ツール選びに迷いました。候補は5つ、アプローチもバラバラ。全部インストールして10項目テストした結果、用途によって最適解の変わることがわかりました。\n先に結論: 認証管理ならplaywright-CLI。エージェントの操作基盤ならagent-browser。自然言語で自律操作ならbrowser-use。大量クロールならLightpanda。本番インフ...",
+        "category": "AI・技術",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "[GitHub Agentic Workflows] AGENTS.mdを定期的にメンテする",
+        "url": "https://zenn.dev/explaza/articles/eec6bb340c1240",
+        "site": "Zenn(LLM)",
+        "published": "2026-03-23T00:30:06Z",
+        "description": "こんにちは！\n株式会社エクスプラザでLLMアプリケーションエンジニアをしている@Junです。\nこの記事では、GitHub Agentic Workflowsを使って、AGENTS.mdを定期的かつ自動的にメンテナンスするためのWorkflowを構築した方法を紹介します。\n\n 背景\nAGENTS.mdを最初に整備しても、その後の変更に追従できず、内容が徐々に実態とズレていくことがよくあります。特に、...",
+        "category": "AI・技術",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "RTX 4060 8GBでQwen2.5-32Bが動く — M4超えの10.8 t/sを叩き出した最適化全手順",
+        "url": "https://zenn.dev/plasmon/articles/20260323-cata-local-llm-29207a",
+        "site": "Zenn(LLM)",
+        "published": "2026-03-23T00:23:02Z",
+        "description": "RTX 4060 8GBでQwen2.5-32Bが動く — M4超えの10.8 t/sを叩き出した最適化全手順\n手元のラップトップにRTX 4060が載っている。VRAM 8GB。ローカルLLMをやるには「貧乏くじ」と言われるスペックだ。\nそれでも32Bモデルを動かしたかった。7Bクラスは試した。動く。が、コーディング支援に使うと回答品質に不満が出る。かといってAPIに投げると月のコストが膨らむし...",
+        "category": "AI・技術",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
         "title": "人間は道具を作るたびに、自分を選別してきた",
         "url": "https://zenn.dev/cognitiveosmdl/articles/b3674728fe4da6",
         "site": "Zenn(LLM)",
         "published": "2026-03-23T00:00:11Z",
-        "description": "AIを使えば使うほど、成果は出る。それは事実だ。\nコードの生成、設計案の壁打ち、ドキュメントの整理。AIの導入以降、生産性が上がった実感を持つエンジニアは多いだろう。\n問題は、何が起きているかではない。何が失われているかだ。\n本稿では「道具と抽象化の歴史」という視点から、AIが人間に対して何を行っているかの構造を分析する。先に言うと、AIは能力を拡張していない。代替している。そしてその代替のたびに...",
+        "description": "!\n本記事は、AI時代を生き抜くための「選別と生存」3部作の第2回です。\n第1回：AIと判断力の劣化\n第2回：道具による人類の「自己選別」の歴史（本記事）\n第3回：「AI禁止令」の真の狙いと認知設計\n\n\n AIを使えば使うほど、成果は出る。それは事実だ。\nコードの生成、設計案の壁打ち、ドキュメントの整理。AIの導入以降、生産性が上がった実感を持つエンジニアは多いだろう。\n問題は、何が起きているかで...",
         "category": "AI・技術",
         "rss_category": "",
         "image_url": ""
@@ -501,7 +631,7 @@
         "image_url": ""
       },
       {
-        "title": "Hindsight + Ollamaで、独自知見をAIエージェントが使える“つながる知識”にした",
+        "title": "Hindsight + Ollamaで、自分の知見をAIエージェントが使える“つながった知識”にした話",
         "url": "https://zenn.dev/acntechjp/articles/e58f4a2a7bcebd",
         "site": "Zenn(LLM)",
         "published": "2026-03-22T23:00:06Z",
@@ -596,16 +726,6 @@
         "site": "Zenn(LLM)",
         "published": "2026-03-22T11:37:40Z",
         "description": "CursorよりもClaudeのほうがいいですよ\n\nエンジニアの人と開発ツールの議論をしていたとき僕は得意げにこう言いました。\nCursorよりもClaudeのほうがいいですよ(キリッ、と。\n相手の表情がすっと曇り「いや、それ比較するものじゃなくない?」と返されて、はっとして自分の間違いに気づきました。CursorはAI機能を搭載したコードエディタです。Claudeは大規模言語モデルの名前。エディ...",
-        "category": "AI・技術",
-        "rss_category": "",
-        "image_url": ""
-      },
-      {
-        "title": "Andrej Karpathyの「autoresearch」が描く未来",
-        "url": "https://zenn.dev/aienthusiast/articles/article-20260322-094255",
-        "site": "Zenn(LLM)",
-        "published": "2026-03-22T09:58:53Z",
-        "description": "はじめに\nAI研究の世界に、また一つ革新的なプロジェクトが登場しました。Tesla元AIディレクターでOpenAI創業メンバーでもあるAndrej Karpathy氏が公開した「autoresearch」は、AI研究そのものを自動化するという野心的な試みです。\nこのリポジトリは公開からわずかな期間で48,000以上のスターを獲得し、AI・機械学習コミュニティで大きな注目を集めています。一体何がそれ...",
         "category": "AI・技術",
         "rss_category": "",
         "image_url": ""
