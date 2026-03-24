@@ -1,8 +1,20 @@
 {
   "site": "Zenn(Python)",
-  "last_updated": "2026-03-24T18:07:00.041194",
-  "total_articles": 3074,
+  "last_updated": "2026-03-24T19:21:00.199561",
+  "total_articles": 3078,
   "articles_by_date": {
+    "本日": [
+      {
+        "title": "BedrockでClaudeのプロンプトキャッシングを使う際、動的値があってもキャッシュを効かせる方法",
+        "url": "https://zenn.dev/tanaka066/articles/38349d0031c809",
+        "site": "Zenn(Python)",
+        "published": "2026-03-24T16:19:29Z",
+        "description": "はじめに\nAWS BedrockでClaudeを使っていて、プロンプトキャッシングを設定したものの「動的な値を入れるとキャッシュが毎回ミスする」という問題に直面しました\n例：ユーザー名・表示名\n　　ロール・権限（admin / user / guestなど）\n　　契約プラン（無料 / Pro / Enterpriseなど）\n　　言語設定・タイムゾーン\nこの記事では、システムプロンプトを配列で分割し...",
+        "category": "開発",
+        "rss_category": "",
+        "image_url": ""
+      }
+    ],
     "昨日": [
       {
         "title": "\"グルグルしてた私が理解したPythonデコレータ：@funcと@func()の違いまで\"",
@@ -15,11 +27,31 @@
         "image_url": ""
       },
       {
+        "title": "日本株4,300銘柄をAIエージェントで毎日分析する仕組みを作った",
+        "url": "https://zenn.dev/taiki_kishi/articles/jpss-ai-agent-stock-analysis",
+        "site": "Zenn(Python)",
+        "published": "2026-03-24T11:34:06Z",
+        "description": "この記事でわかること\n\n投資歴5年・累計約100万円の損失から、「エンジニアリングで改善できるかもしれない」と考えて仕組みを作った経緯\n毎日4,300銘柄以上をスコアリングするパイプライン（Phase A〜F）の全体アーキテクチャ\n18エージェント・20スキルをClaude Codeで運用するための設計パターン（3層ペルソナ・ADR体系・自動化の境界線）\n「感情的に失敗してきた人間」が「冷静なシス...",
+        "category": "開発",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
         "title": "PlaywrightでNotebookLMを自動操作してPPTXを生成する",
         "url": "https://zenn.dev/acropapa330/articles/notebooklm_playwright",
         "site": "Zenn(Python)",
         "published": "2026-03-24T10:32:16Z",
         "description": "PlaywrightでNotebookLMを自動操作してPPTXを生成する\n\n はじめに\n毎朝自動でAIニュースを収集し、NotebookLMにソースとして投入、スライドを生成してPPTXをダウンロードする——そんなパイプラインを作ろうとしました。\nNotebookLMには公式APIが存在しないので、Playwrightでブラウザを直接操作するしかありません。本記事はその試行錯誤の記録です。\n\n\n...",
+        "category": "開発",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "LLMのプロンプトからPIIを自動検出・保護するOSSミドルウェア（マイナンバー対応）",
+        "url": "https://zenn.dev/zivuch/articles/cloakllm-pii-protection-llm-japanese",
+        "site": "Zenn(Python)",
+        "published": "2026-03-24T09:08:20Z",
+        "description": "The Problem:\nEvery prompt you send to an LLM provider — OpenAI, Anthropic, Google — is visible in plaintext. Customer names, email addresses, and national IDs end up in provider logs.\nIf your applicat...",
         "category": "開発",
         "rss_category": "",
         "image_url": ""
@@ -172,16 +204,6 @@
         "site": "Zenn(Python)",
         "published": "2026-03-23T14:56:42Z",
         "description": "「マンガを自動生成」の本当の難しさ\nAIで画像を1枚生成するのは簡単です。AIでマンガを生成するのは、根本的に違う問題です。\nマンガには キャラクターの一貫性 があります。同じキャラクターが4コマ全てに登場して、毎回別人に見えたらマンガとして成立しません。表情は変わるけれど、顔の造形・髪型・服装は同じ。この制約をAIに守らせるのが難しい。\nマンガには レイアウトの制御 があります。3コマなのか4コ...",
-        "category": "開発",
-        "rss_category": "",
-        "image_url": ""
-      },
-      {
-        "title": "Cloud Run コールドスタート対策完全ガイド ─ 原因分析からDockerfile最適化・CPU Boostまで",
-        "url": "https://zenn.dev/correlate_dev/articles/cloud-run-cold-start",
-        "site": "Zenn(Python)",
-        "published": "2026-03-23T14:54:53Z",
-        "description": "はじめに\nCloud Run でAPIを公開していると、しばらく使われていなかった後の最初のリクエストだけ極端に遅くなる現象を経験することがあります。これがコールドスタートです。\nたとえば、夜間に誰もアクセスしていないサービスに朝一番でリクエストが来ると、インスタンスの起動からアプリケーションの初期化まで一通りの処理が走るため、通常のレスポンスタイムが100ms程度でも、コールドスタート時には3〜...",
         "category": "開発",
         "rss_category": "",
         "image_url": ""
@@ -369,6 +391,16 @@
     ],
     "2026-03": [
       {
+        "title": "BedrockでClaudeのプロンプトキャッシングを使う際、動的値があってもキャッシュを効かせる方法",
+        "url": "https://zenn.dev/tanaka066/articles/38349d0031c809",
+        "site": "Zenn(Python)",
+        "published": "2026-03-24T16:19:29Z",
+        "description": "はじめに\nAWS BedrockでClaudeを使っていて、プロンプトキャッシングを設定したものの「動的な値を入れるとキャッシュが毎回ミスする」という問題に直面しました\n例：ユーザー名・表示名\n　　ロール・権限（admin / user / guestなど）\n　　契約プラン（無料 / Pro / Enterpriseなど）\n　　言語設定・タイムゾーン\nこの記事では、システムプロンプトを配列で分割し...",
+        "category": "開発",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
         "title": "\"グルグルしてた私が理解したPythonデコレータ：@funcと@func()の違いまで\"",
         "url": "https://zenn.dev/niikun/articles/a055a166623c77",
         "site": "Zenn(Python)",
@@ -379,11 +411,31 @@
         "image_url": ""
       },
       {
+        "title": "日本株4,300銘柄をAIエージェントで毎日分析する仕組みを作った",
+        "url": "https://zenn.dev/taiki_kishi/articles/jpss-ai-agent-stock-analysis",
+        "site": "Zenn(Python)",
+        "published": "2026-03-24T11:34:06Z",
+        "description": "この記事でわかること\n\n投資歴5年・累計約100万円の損失から、「エンジニアリングで改善できるかもしれない」と考えて仕組みを作った経緯\n毎日4,300銘柄以上をスコアリングするパイプライン（Phase A〜F）の全体アーキテクチャ\n18エージェント・20スキルをClaude Codeで運用するための設計パターン（3層ペルソナ・ADR体系・自動化の境界線）\n「感情的に失敗してきた人間」が「冷静なシス...",
+        "category": "開発",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
         "title": "PlaywrightでNotebookLMを自動操作してPPTXを生成する",
         "url": "https://zenn.dev/acropapa330/articles/notebooklm_playwright",
         "site": "Zenn(Python)",
         "published": "2026-03-24T10:32:16Z",
         "description": "PlaywrightでNotebookLMを自動操作してPPTXを生成する\n\n はじめに\n毎朝自動でAIニュースを収集し、NotebookLMにソースとして投入、スライドを生成してPPTXをダウンロードする——そんなパイプラインを作ろうとしました。\nNotebookLMには公式APIが存在しないので、Playwrightでブラウザを直接操作するしかありません。本記事はその試行錯誤の記録です。\n\n\n...",
+        "category": "開発",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "LLMのプロンプトからPIIを自動検出・保護するOSSミドルウェア（マイナンバー対応）",
+        "url": "https://zenn.dev/zivuch/articles/cloakllm-pii-protection-llm-japanese",
+        "site": "Zenn(Python)",
+        "published": "2026-03-24T09:08:20Z",
+        "description": "The Problem:\nEvery prompt you send to an LLM provider — OpenAI, Anthropic, Google — is visible in plaintext. Customer names, email addresses, and national IDs end up in provider logs.\nIf your applicat...",
         "category": "開発",
         "rss_category": "",
         "image_url": ""
@@ -534,16 +586,6 @@
         "site": "Zenn(Python)",
         "published": "2026-03-23T14:56:42Z",
         "description": "「マンガを自動生成」の本当の難しさ\nAIで画像を1枚生成するのは簡単です。AIでマンガを生成するのは、根本的に違う問題です。\nマンガには キャラクターの一貫性 があります。同じキャラクターが4コマ全てに登場して、毎回別人に見えたらマンガとして成立しません。表情は変わるけれど、顔の造形・髪型・服装は同じ。この制約をAIに守らせるのが難しい。\nマンガには レイアウトの制御 があります。3コマなのか4コ...",
-        "category": "開発",
-        "rss_category": "",
-        "image_url": ""
-      },
-      {
-        "title": "Cloud Run コールドスタート対策完全ガイド ─ 原因分析からDockerfile最適化・CPU Boostまで",
-        "url": "https://zenn.dev/correlate_dev/articles/cloud-run-cold-start",
-        "site": "Zenn(Python)",
-        "published": "2026-03-23T14:54:53Z",
-        "description": "はじめに\nCloud Run でAPIを公開していると、しばらく使われていなかった後の最初のリクエストだけ極端に遅くなる現象を経験することがあります。これがコールドスタートです。\nたとえば、夜間に誰もアクセスしていないサービスに朝一番でリクエストが来ると、インスタンスの起動からアプリケーションの初期化まで一通りの処理が走るため、通常のレスポンスタイムが100ms程度でも、コールドスタート時には3〜...",
         "category": "開発",
         "rss_category": "",
         "image_url": ""
