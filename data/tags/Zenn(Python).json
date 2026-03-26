@@ -1,9 +1,19 @@
 {
   "site": "Zenn(Python)",
-  "last_updated": "2026-03-26T13:56:34.617301",
-  "total_articles": 3146,
+  "last_updated": "2026-03-26T15:12:14.918821",
+  "total_articles": 3130,
   "articles_by_date": {
-    "本日": [
+    "昨日": [
+      {
+        "title": "Claude Codeの画面録画、パスが丸見えだったので自動マスクツールを作った",
+        "url": "https://zenn.dev/sora_biz/articles/video-path-mask-article",
+        "site": "Zenn(Python)",
+        "published": "2026-03-26T10:56:56Z",
+        "description": "ターミナル録画、共有する前に見直してる？\nClaude Codeの操作画面を録画してXに投稿しようとした。再生して確認したら、ターミナルにこんな行が映ってた。\npencil – Batch Design (MCP)(filePath: \"c:\\\\Users\\\\自分の名前\\\\Documents\\\\Projects\\\\app...\nユーザー名が丸見え。しかもこの filePath: の行、MCP呼び出...",
+        "category": "開発",
+        "rss_category": "",
+        "image_url": ""
+      },
       {
         "title": "NotebookLMスライドをHeygenに自動アップロードしてAI動画生成パイプラインを完成させる",
         "url": "https://zenn.dev/acropapa330/articles/notebooklm_heygen",
@@ -185,17 +195,7 @@
         "image_url": ""
       }
     ],
-    "昨日": [
-      {
-        "title": "Google ColabでRAM・ディスク・GPUメモリを確認する方法【コピペOK】",
-        "url": "https://zenn.dev/wasurenamemo/articles/6f04a2b367bb7f",
-        "site": "Zenn(Python)",
-        "published": "2026-03-25T14:45:55Z",
-        "description": "学習中にこんなエラーが出たことはありませんか？\nResourceExhaustedError: OOM when allocating tensor\nNo space left on device\nどちらもメモリ・ディスク不足が原因です。この記事ではRAM・ディスク・GPUメモリをまとめて確認できるコードを紹介します。\n\n 一発で全部確認するコード\nColabのセルにペーストしてRunするだけです...",
-        "category": "開発",
-        "rss_category": "",
-        "image_url": ""
-      },
+    "一昨日": [
       {
         "title": "pandas のデータ加工を end-to-end で “スキーマ安全” にしたい",
         "url": "https://zenn.dev/shoutaro/articles/29dc6bdcf11083",
@@ -467,169 +467,17 @@
         "image_url": ""
       }
     ],
-    "一昨日": [
-      {
-        "title": "\"グルグルしてた私が理解したPythonデコレータ：@funcと@func()の違いまで\"",
-        "url": "https://zenn.dev/niikun/articles/a055a166623c77",
-        "site": "Zenn(Python)",
-        "published": "2026-03-24T13:09:51Z",
-        "description": "はじめに\nPython の教材を読んでいたとき、デコレータの説明でこんな気持ちになりませんでしたか。\n\n「あれがこれで、これがあれで…なんか分かった気がしないけど、FastAPI ではこう書くものらしい」\n\n私はそうでした。@app.get(\"/\") を見ても、@login_required を見ても、なんとなく「おまじない」として受け入れていました。\nでも、ある「たとえ話」を使って自分でコードを...",
-        "category": "開発",
-        "rss_category": "",
-        "image_url": ""
-      },
-      {
-        "title": "日本株4,300銘柄をAIエージェントで毎日分析する仕組みを作った",
-        "url": "https://zenn.dev/taiki_kishi/articles/jpss-ai-agent-stock-analysis",
-        "site": "Zenn(Python)",
-        "published": "2026-03-24T11:34:06Z",
-        "description": "この記事でわかること\n\n投資歴5年・累計約100万円の損失から、「エンジニアリングで改善できるかもしれない」と考えて仕組みを作った経緯\n毎日4,300銘柄以上をスコアリングするパイプライン（Phase A〜F）の全体アーキテクチャ\n18エージェント・20スキルをClaude Codeで運用するための設計パターン（3層ペルソナ・ADR体系・自動化の境界線）\n「感情的に失敗してきた人間」が「冷静なシス...",
-        "category": "開発",
-        "rss_category": "",
-        "image_url": ""
-      },
-      {
-        "title": "PlaywrightでNotebookLMを自動操作してPPTXを生成する",
-        "url": "https://zenn.dev/acropapa330/articles/notebooklm_playwright",
-        "site": "Zenn(Python)",
-        "published": "2026-03-24T10:32:16Z",
-        "description": "PlaywrightでNotebookLMを自動操作してPPTXを生成する\n\n はじめに\n毎朝自動でAIニュースを収集し、NotebookLMにソースとして投入、スライドを生成してPPTXをダウンロードする——そんなパイプラインを作ろうとしました。\nNotebookLMには公式APIが存在しないので、Playwrightでブラウザを直接操作するしかありません。本記事はその試行錯誤の記録です。\n\n\n...",
-        "category": "開発",
-        "rss_category": "",
-        "image_url": ""
-      },
-      {
-        "title": "LLMのプロンプトからPIIを自動検出・保護するOSSミドルウェア（マイナンバー対応）",
-        "url": "https://zenn.dev/zivuch/articles/cloakllm-pii-protection-llm-japanese",
-        "site": "Zenn(Python)",
-        "published": "2026-03-24T09:08:20Z",
-        "description": "The Problem:\nEvery prompt you send to an LLM provider — OpenAI, Anthropic, Google — is visible in plaintext. Customer names, email addresses, and national IDs end up in provider logs.\nIf your applicat...",
-        "category": "開発",
-        "rss_category": "",
-        "image_url": ""
-      },
-      {
-        "title": "NPB予測の精度を上げたくてベイズ統合した結果、順位予想が変わった話",
-        "url": "https://zenn.dev/shogaku/articles/npb-bayes-integration-production",
-        "site": "Zenn(Python)",
-        "published": "2026-03-24T08:35:45Z",
-        "description": "はじめに\nNPBの選手成績を予測するアプリを個人で作って公開しています。\n\n\nStreamlit: https://npb-prediction.streamlit.app/\n\n\nGitHub: https://github.com/yasumorishima/npb-prediction\n\n\nこれまではMarcel法（過去3年の加重平均）と機械学習（XGBoost/LightGBM）で予測してい...",
-        "category": "開発",
-        "rss_category": "",
-        "image_url": ""
-      },
-      {
-        "title": "Claude Codeの長期記憶をWindowsとMacで共有する仕組みを作った",
-        "url": "https://zenn.dev/aoi_umigishi/articles/fc877d2d7d3e38",
-        "site": "Zenn(Python)",
-        "published": "2026-03-24T08:26:03Z",
-        "description": "はじめに\nこんにちは、まっくすと申します。\n普段Flutterを使ったフリーランスのエンジニアとして働いています。\n私はClaude Codeを開発だけでなく、設計判断の壁打ちや記事構成の相談にも使っています。自宅で重い作業をする時はWindows、仕事では基本的にMacという2台体制で運用しています。\nここでいつも思うのは、Macで議論した設計判断を、Windowsが覚えていると良いな、というこ...",
-        "category": "開発",
-        "rss_category": "",
-        "image_url": ""
-      },
-      {
-        "title": "CausalImpact Python版4つ試して全部R版と合わなかったのでRustで作った",
-        "url": "https://zenn.dev/gibbs/articles/causalimpact-python-r-compatible-bsts",
-        "site": "Zenn(Python)",
-        "published": "2026-03-24T08:15:44Z",
-        "description": "この記事の対象と要点\nR版CausalImpactを業務で使っていて、Pythonに移行したい方が対象。R版とPython版で有意性の結論が変わったとき、どちらを信じるべきか迷った経験はないだろうか。この記事はその原因と解決策を書いたもので、記事の最後に同じ問題を抱えている方からのフィードバックを募集している。\nこの記事で分かること。既存のPython版CausalImpactがR版と結果が合わな...",
-        "category": "開発",
-        "rss_category": "",
-        "image_url": ""
-      },
-      {
-        "title": "スクレイピングで403エラーを回避する方法【Cloudflare対策あり・Python実装付き】",
-        "url": "https://zenn.dev/datajournal1/articles/006d6d29c67cd9",
-        "site": "Zenn(Python)",
-        "published": "2026-03-24T08:03:38Z",
-        "description": "スクレイピングの403エラーとは何か・なぜ発生するのか\nスクレイピング中の403 Forbiddenは「サーバーが意図的にアクセスを拒否している」状態であり、その原因は「ボット検出」「IPブロック」「レート制限」「地域制限」の4種類に分類できる。 「ブラウザでは見えるのにPythonで取れない」という現象はほぼ全て、TLSフィンガープリントの不一致またはヘッダー不足が原因だ。2026年現在、Clo...",
-        "category": "開発",
-        "rss_category": "",
-        "image_url": ""
-      },
-      {
-        "title": "Pythonで音声のノイズを除去する方法（スペクトル減算を実装）",
-        "url": "https://zenn.dev/kta805/articles/23420124a310c2",
-        "site": "Zenn(Python)",
-        "published": "2026-03-24T03:11:22Z",
-        "description": "Pythonで音声のノイズを除去する方法（スペクトル減算を実装）\n\n はじめに\n録音した音声にこんな悩みはありませんか？\n\nサーッというノイズが入る\n音声認識の精度が悪い\n録音が聞き取りづらい\n\n本記事では、\nPythonで音声のノイズを除去する方法（スペクトル減算）\nを実装します。\nスペクトル減算は、ノイズ除去の最も基本的な手法です。\n除去精度や処理後の音質面でデメリットはありますが\nシンプルで...",
-        "category": "開発",
-        "rss_category": "",
-        "image_url": ""
-      },
-      {
-        "title": "【開発秘話 実装編2】Chrome Bookmarks を Markdown 化する CLI ツール",
-        "url": "https://zenn.dev/yh_catalysis/articles/chrome2foam-dev3",
-        "site": "Zenn(Python)",
-        "published": "2026-03-24T02:50:05Z",
-        "description": "はじめに\n前回の「実装編1」に引き続き、今回はAIエディタ（GitHub Copilot）を用いた実際のツール「chrome2foam」の開発・実装プロセスについて記録します。\n\n\n fetch を動かして完成へ\n\n デバッグ基盤を作る\nfetch コマンドを動かす前に、filter が期待通りに動いているかを確かめたくなりました。「--verbose オプションがほしい」という素朴な要求から始ま...",
-        "category": "開発",
-        "rss_category": "",
-        "image_url": ""
-      },
-      {
-        "title": "生成AIにバッチジョブを書いてもらうならオニオンアーキテクチャがいいぞ",
-        "url": "https://zenn.dev/nishimoto/articles/6c5d18ba12ae3b",
-        "site": "Zenn(Python)",
-        "published": "2026-03-24T01:04:00Z",
-        "description": "🧅要約\n\nバッチジョブを生成AIに書いてもらうときに、オニオンアーキテクチャがなかなか良さそう\n①コードの見通しがよくなる点、②テスト書きやすい点、③外部とのやり取り部分のコード差し替えがしやすい点が個人的なメリット\nこの記事では、Pythonコードを生成AIにオニオンアーキテクチャで整理してもらう流れをまとめた\n\n対象: コード書けるが、保守性の高いコードを書いたことがない人向け\n\n オニオンア...",
-        "category": "開発",
-        "rss_category": "",
-        "image_url": ""
-      },
-      {
-        "title": "PythonとJavaScriptでツールを作ろう -- (2)なんでもメモCGI版",
-        "url": "https://zenn.dev/daisyroid/articles/0f7455e4e886b5",
-        "site": "Zenn(Python)",
-        "published": "2026-03-23T23:00:08Z",
-        "description": "前回の記事でPythonのWebサーバーを紹介しました。今日はその上で動くCGIスクリプトを作ることにします。\n\n GitHubリポジトリ\n作りました。ちょっとしたテキストをメモに残せるツールで、名前は「なんでもメモ」です。\nGitHubのリポジトリはこちらです。よろしければご覧ください。\nhttps://github.com/daisyroid/mymemo-cgi/\n配布ファイルは用意していま...",
-        "category": "開発",
-        "rss_category": "",
-        "image_url": ""
-      },
-      {
-        "title": "[Matplotlib入門シリーズのまとめ] Matplotlib入門シリーズの振り返り",
-        "url": "https://zenn.dev/haruhiro1020/articles/d87720c14c7b72",
-        "site": "Zenn(Python)",
-        "published": "2026-03-23T22:00:09Z",
-        "description": "はじめに\n本記事は，Matplotlib入門シリーズ のまとめ記事です．\nこれまでの記事では，\n\nMatplotlibの基礎\n2次元グラフ作成\n2次元図形の作成\n3次元グラフ作成\n3次元図形の作成\nアニメーション作成\n\nまで，Matplotlibを使うための一通りの操作を説明してきました．\n\n 本記事のゴール\n本記事では，\n\n各記事で何を学んだのか\nMatplotlibを学ぶことで何ができるように...",
-        "category": "開発",
-        "rss_category": "",
-        "image_url": ""
-      },
-      {
-        "title": "Copilotの消耗戦から抜け出す。Agentへ任せる「クラウド並行開発」の実践",
-        "url": "https://zenn.dev/kasahart/articles/kasahart-20260324-wandas-3",
-        "site": "Zenn(Python)",
-        "published": "2026-03-23T22:00:09Z",
-        "description": "はじめに\nこんにちは。普段は会社勤めをしながら、3歳の子どもを育てる父親として、限られた空き時間をやり繰りして OSS 開発をしています。\n家族が寝静まった後の短い時間でプロジェクトを前に進めるため、GitHub Copilot を頼れる「共同開発者」として活用してきました。前回は、信号処理用のOSS wandas 開発で試している AI エージェント設計について書きました。\nただ、その運用を続け...",
-        "category": "開発",
-        "rss_category": "",
-        "image_url": ""
-      },
-      {
-        "title": "Google Colab版 iPhone写真・動画 Discord自動送信ツール 要件定義書",
-        "url": "https://zenn.dev/fibujrsl/articles/5d029def5d4ee4",
-        "site": "Zenn(Python)",
-        "published": "2026-03-23T20:27:13Z",
-        "description": "Google Colab版 iPhone写真・動画 Discord自動送信ツール 要件定義書\n\n 1. システム名称\nGoogle Colab版 iPhone写真・動画 Discord自動送信ツール\n\n 2. 目的\niPhoneで撮影・保存した写真および動画を、Google Colab にアップロードし、Discord の指定Webhookへ自動送信する仕組みを提供する。\n画像は一定枚数ずつまとめ...",
-        "category": "開発",
-        "rss_category": "",
-        "image_url": ""
-      },
-      {
-        "title": "賃貸の制約を、ラズパイ × AIでハック?した話【YOLO × LINE通知】",
-        "url": "https://zenn.dev/req9/articles/b6208e21c36292",
-        "site": "Zenn(Python)",
-        "published": "2026-03-23T16:13:05Z",
-        "description": "インターホンの音に気付けない・・・\nうちの家の間取りは少し特殊で、自分の部屋までインターホンの音が届かないのです。\n部屋にいると、宅配の人が来ても気づけない。そして賃貸だから、インターホンを自分好みのものに交換するという選択肢も取れない・・・\nそこで、手元のラズパイで、後付けのAIインターホン通知システムを作ることにしました。\nやったことはシンプルで、ラズパイにカメラをつけて、そのカメラでインター...",
-        "category": "開発",
-        "rss_category": "",
-        "image_url": ""
-      }
-    ],
     "2026-03": [
+      {
+        "title": "Claude Codeの画面録画、パスが丸見えだったので自動マスクツールを作った",
+        "url": "https://zenn.dev/sora_biz/articles/video-path-mask-article",
+        "site": "Zenn(Python)",
+        "published": "2026-03-26T10:56:56Z",
+        "description": "ターミナル録画、共有する前に見直してる？\nClaude Codeの操作画面を録画してXに投稿しようとした。再生して確認したら、ターミナルにこんな行が映ってた。\npencil – Batch Design (MCP)(filePath: \"c:\\\\Users\\\\自分の名前\\\\Documents\\\\Projects\\\\app...\nユーザー名が丸見え。しかもこの filePath: の行、MCP呼び出...",
+        "category": "開発",
+        "rss_category": "",
+        "image_url": ""
+      },
       {
         "title": "NotebookLMスライドをHeygenに自動アップロードしてAI動画生成パイプラインを完成させる",
         "url": "https://zenn.dev/acropapa330/articles/notebooklm_heygen",
@@ -806,16 +654,6 @@
         "site": "Zenn(Python)",
         "published": "2026-03-25T16:28:43Z",
         "description": "3行まとめ\n\n車載・組み込み開発で、顧客の要求仕様は体系化されておらず、パワポをPDF化しただけという場合も多い\n「PDF仕様書→Excel転記」という前処理が毎回すごく時間がかかる\nドラッグ操作で要求を登録してExcel出力できるツール「VisionReq」を作ってβ公開した\n\n\n\n はじめに\n車載や組み込み系の受託開発をやっていると、プロジェクトの最初に必ずやることがあります。\n顧客から届いた...",
-        "category": "開発",
-        "rss_category": "",
-        "image_url": ""
-      },
-      {
-        "title": "Google ColabでRAM・ディスク・GPUメモリを確認する方法【コピペOK】",
-        "url": "https://zenn.dev/wasurenamemo/articles/6f04a2b367bb7f",
-        "site": "Zenn(Python)",
-        "published": "2026-03-25T14:45:55Z",
-        "description": "学習中にこんなエラーが出たことはありませんか？\nResourceExhaustedError: OOM when allocating tensor\nNo space left on device\nどちらもメモリ・ディスク不足が原因です。この記事ではRAM・ディスク・GPUメモリをまとめて確認できるコードを紹介します。\n\n 一発で全部確認するコード\nColabのセルにペーストしてRunするだけです...",
         "category": "開発",
         "rss_category": "",
         "image_url": ""
