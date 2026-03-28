@@ -1,9 +1,9 @@
 {
   "site": "Zenn(Python)",
-  "last_updated": "2026-03-28T14:37:47.304625",
-  "total_articles": 3177,
+  "last_updated": "2026-03-28T15:03:24.393387",
+  "total_articles": 3158,
   "articles_by_date": {
-    "本日": [
+    "昨日": [
       {
         "title": "【開発秘話】Gemini File Search管理ツールを自作したら、最初からAPIが存在していた話",
         "url": "https://zenn.dev/yh_catalysis/articles/filesearchtoolmgmt-dev1",
@@ -30,16 +30,6 @@
         "site": "Zenn(Python)",
         "published": "2026-03-28T10:40:07Z",
         "description": "スクレイピングのログ・監視設計【エラー検知と安定運用】\n!\n本記事で紹介する手法は、対象サイトの利用規約を遵守した上でのデータ収集を前提としています。商用利用の際は必ず各サイトの規約を確認してください。\n\n\n はじめに\nスクレイピングをスケジュール実行に乗せた途端、「気づいたらずっと失敗していた」「いつからデータが取れていないか分からない」という経験はありませんか？\n以前、ECサイトの価格データを...",
-        "category": "開発",
-        "rss_category": "",
-        "image_url": ""
-      },
-      {
-        "title": "推論モデルのコスト最適化をdiffで追跡する — llm-devproxy v0.4",
-        "url": "https://zenn.dev/ash4/articles/8973f300141afb",
-        "site": "Zenn(Python)",
-        "published": "2026-03-28T10:22:27Z",
-        "description": "プロンプトの書き方でコストも品質も変わる\n推論モデル（o3、o4-mini等）を使ったLLMアプリ開発で、プロンプトの書き方とモデル選択によってコストと出力品質がどう変わるかを実測しました。\n同じバグのあるPythonコードに対して、4パターンで実行した結果がこちらです：\n\n\n\n\no3(コスト / 推論比率)\no4-mini(コスト / 推論比率)\n\n\n\n\n\n詳細プロンプト（3案+トレードオフ要求...",
         "category": "開発",
         "rss_category": "",
         "image_url": ""
@@ -223,9 +213,19 @@
         "category": "開発",
         "rss_category": "",
         "image_url": ""
+      },
+      {
+        "title": "LLM評価はギャンブルだった — promptstatsで始める統計的評価",
+        "url": "https://zenn.dev/beckento/articles/b5e33b92cdd084",
+        "site": "Zenn(Python)",
+        "published": "2026-03-27T18:29:44Z",
+        "description": "LLM評価はギャンブルだった — promptstatsで始める統計的評価\n\n「平均スコアが2点高いから、新しいプロンプトのほうが良い」—— その判断、統計的に正しいですか？\n\n\n\n はじめに：なぜ今、promptstatsのようなツールが必要なのか\nLLMのプロンプトやモデルを比較するとき、多くのエンジニアは「スコアの平均を出して、高いほうを選ぶ」というやり方をしている。数件〜数十件のテストケー...",
+        "category": "開発",
+        "rss_category": "",
+        "image_url": ""
       }
     ],
-    "昨日": [
+    "一昨日": [
       {
         "title": "Claude Codeで有料記事プラットフォームを1日で作った",
         "url": "https://zenn.dev/either/articles/973855e8d5a4c9",
@@ -367,198 +367,6 @@
         "image_url": ""
       }
     ],
-    "一昨日": [
-      {
-        "title": "LangChainの全APIコールを1行で自動記録する — llm-devproxy v0.4",
-        "url": "https://zenn.dev/ash4/articles/940e3263b9a810",
-        "site": "Zenn(Python)",
-        "published": "2026-03-26T13:01:39Z",
-        "description": "LangChainのAPIコール、把握できていますか？\nLangChainでAgentやRAGパイプラインを組んでいると、内部で何回APIが呼ばれたか、各コールにいくらかかったかが分かりにくくなります。\nAgent1回の実行で、裏側ではこんなことが起きていたりします：\nAgent.invoke(\"売上データを分析して\")\n  → LLM呼び出し #1: タスク分解 (gpt-4o, $0.003)...",
-        "category": "開発",
-        "rss_category": "",
-        "image_url": ""
-      },
-      {
-        "title": "RAGとMCPで広がるAIチャットの可能性──Helix AI Studioの実装ガイド",
-        "url": "https://zenn.dev/tsunamayo7/articles/helix-ai-studio-rag-mcp-guide",
-        "site": "Zenn(Python)",
-        "published": "2026-03-26T12:04:55Z",
-        "description": "はじめに\nAIチャットアプリを作るとき、単純にAPIを叩くだけでは物足りなくなる瞬間がある。「自分のドキュメントを読ませたい」「外部ツールを使わせたい」──そういった要望に応えるのがRAG（Retrieval-Augmented Generation）とMCP（Model Context Protocol）だ。\nこの記事では、筆者が開発しているオープンソースのAIチャットアプリ「Helix AI ...",
-        "category": "開発",
-        "rss_category": "",
-        "image_url": ""
-      },
-      {
-        "title": "OpenAI SDK proxiesエラーの完全解決ガイド【httpx 0.28破壊的変更】",
-        "url": "https://zenn.dev/daishiro/articles/openai-sdk-proxies-httpx-error",
-        "site": "Zenn(Python)",
-        "published": "2026-03-26T11:58:26Z",
-        "description": "はじめに\nある日、本番運用中のWebアプリケーションのAI機能が突然動かなくなりました。\nエラー: AI処理に失敗しました: Client.__init__() got an unexpected keyword argument 'proxies'\n昨日まで問題なく動いていたOpenAI APIを使ったAIアシスタント機能が、突然このエラーで停止。原因は httpx 0.28の破壊的変更 と O...",
-        "category": "開発",
-        "rss_category": "",
-        "image_url": ""
-      },
-      {
-        "title": "# EMA Crossover Bot を $33 で3ヶ月運用した結果と設計の学び",
-        "url": "https://zenn.dev/maymay56/articles/42e53a7b2b9a75",
-        "site": "Zenn(Python)",
-        "published": "2026-03-26T11:47:41Z",
-        "description": "EMA Crossover Botを$33で本番稼働させて3ヶ月。3ペア×3戦略に拡張し、CircuitBreakerで損失管理している。結果はほぼトントン。$33の元手では月$100の収益目標に到達不可能であることがデータから明確になった。本記事では運用構成、実績データ、理論値との乖離、そこから得た設計上の学びを共有する。\n\n 運用構成の変遷\n前回記事（全決済マイナスの話）から構成を変更した。\n...",
-        "category": "開発",
-        "rss_category": "",
-        "image_url": ""
-      },
-      {
-        "title": "C/VBプログラマがPythonで初めてWeb APIを叩いてみた話",
-        "url": "https://zenn.dev/429only1/articles/913f32269d5196",
-        "site": "Zenn(Python)",
-        "published": "2026-03-26T11:33:15Z",
-        "description": "はじめに：なぜこの記事を書くのか\n私は長年（15年くらい）CとVBでプログラムを組んできました。\n今の会社に新卒で入社して、最新の技術を学ぶことなくずっとCとVBでレガシーシステムを触ってきました。\n「このままではいけない……」\nというわけで、今回は一念発起してPythonとWeb技術に触れた話です。\n\n JSONと文字列処理\nGoogle Books APIを叩いて、書誌情報を取得してみました。...",
-        "category": "開発",
-        "rss_category": "",
-        "image_url": ""
-      },
-      {
-        "title": "Claude Codeの画面録画、パスが丸見えだったので自動マスクツールを作った",
-        "url": "https://zenn.dev/sora_biz/articles/video-path-mask-article",
-        "site": "Zenn(Python)",
-        "published": "2026-03-26T10:56:56Z",
-        "description": "ターミナル録画、共有する前に見直してる？\nClaude Codeの操作画面を録画してXに投稿しようとした。再生して確認したら、ターミナルにこんな行が映ってた。\npencil – Batch Design (MCP)(filePath: \"c:\\\\Users\\\\自分の名前\\\\Documents\\\\Projects\\\\app...\nユーザー名が丸見え。しかもこの filePath: の行、MCP呼び出...",
-        "category": "開発",
-        "rss_category": "",
-        "image_url": ""
-      },
-      {
-        "title": "NotebookLMスライドをHeygenに自動アップロードしてAI動画生成パイプラインを完成させる",
-        "url": "https://zenn.dev/acropapa330/articles/notebooklm_heygen",
-        "site": "Zenn(Python)",
-        "published": "2026-03-26T09:03:19Z",
-        "description": "NotebookLMスライドをHeygenに自動アップロードしてAI動画生成パイプラインを完成させる\n前回までの記事で、NotebookLMからPPTXを自動生成し、OCR+Claude CLIでスピーカーノートを強化するパイプラインを作りました。今回はその最終ステップとして、生成したPPTXをHeygenのPPT/PDF to video機能に自動アップロードするところまでを実装します。\nシリー...",
-        "category": "開発",
-        "rss_category": "",
-        "image_url": ""
-      },
-      {
-        "title": "Pythonでも公開から一定日数が経過したパッケージをインストールしたい",
-        "url": "https://zenn.dev/watany/articles/a81a6122864539",
-        "site": "Zenn(Python)",
-        "published": "2026-03-26T08:59:38Z",
-        "description": "背景\n\n2026/03/24にLiteLLMが侵害されました。\n\nhttps://diary.shift-js.info/litellm-compromise/\n\n侵害の起点は3/1のTrivyの件だったらしく、要は使っているパッケージが、開発プロセスのどこかで侵害された何かを使っているとヤバい(雑)\n\n\n 公開から一定日数が経過したパッケージをインストールしたい\n\n要はpnpmのminimumR...",
-        "category": "開発",
-        "rss_category": "",
-        "image_url": ""
-      },
-      {
-        "title": "スクレイピングを人間っぽくする方法【検知回避テクニックまとめ】",
-        "url": "https://zenn.dev/datajournal1/articles/32f3ad81dddc0f",
-        "site": "Zenn(Python)",
-        "published": "2026-03-26T08:59:17Z",
-        "description": "!\n本記事で紹介する手法は、対象サイトの利用規約を遵守し、適切な頻度でアクセスすることを前提としています。商用利用の際は必ず各サイトの規約を確認してください。\n\n\n はじめに\nスクレイピングを書いてみたものの、しばらくしたら突然 403 Forbidden が返ってくる……。そんな経験、ありませんか？\n実はサイト側は、アクセスが「人間か、ボットか」を様々な角度で判定しています。User-Agent...",
-        "category": "開発",
-        "rss_category": "",
-        "image_url": ""
-      },
-      {
-        "title": "Claude Code実践ガイド：ターミナルからAIエージェントを使いこなす",
-        "url": "https://zenn.dev/shoichi2580/articles/ai-001-ja-20260326",
-        "site": "Zenn(Python)",
-        "published": "2026-03-26T06:58:30Z",
-        "description": "はじめに\n最近、Anthropic社の Claude が進化して、APIだけでなくCLIツール「Claude Code」が使えるようになりました。今までもAPI経由でClaudeを使うことはありましたが、ターミナルから直接AIエージェントを呼び出せる手軽さは格別です。特に、実際のコンテンツ作成フローで、スクリプトの改善や構成案出しに活用できるのでは？と思い、実際に試してみました。この記事では、Cl...",
-        "category": "開発",
-        "rss_category": "",
-        "image_url": ""
-      },
-      {
-        "title": "Figma にデザイントークンの数値をコメントで自動記録する仕組みを作った",
-        "url": "https://zenn.dev/assign/articles/2026-03-figma-design-token-auto-comment",
-        "site": "Zenn(Python)",
-        "published": "2026-03-26T06:14:28Z",
-        "description": "はじめに\n株式会社ASSIGNでWebフロント開発を担当している中水です。\n弊社のプロダクト「ASSIGN」は Web（React）とモバイル（Flutter）の 2 プラットフォームで展開しています。現在デザインシステムの構築を進めており、その一環として「各プラットフォームで実際に使われているデザイントークンの数値を、Figma 上で正確に可視化したい」というニーズが出てきました。\nトークンの設...",
-        "category": "開発",
-        "rss_category": "",
-        "image_url": ""
-      },
-      {
-        "title": "暗号資産Botの「負けない設計」— 5層の安全レイヤーで損失を制御する",
-        "url": "https://zenn.dev/ponfreelance/articles/7db5c71573fd0b",
-        "site": "Zenn(Python)",
-        "published": "2026-03-26T06:09:30Z",
-        "description": "暗号資産Botの「負けない設計」— 5層の安全レイヤーで損失を制御する\n暗号資産の自動売買Botを作って、最初に学んだことがあります。\n「勝つBot」より「負けないBot」の方がはるかに難しい。\n戦略ロジックを書いて、バックテストで良い結果が出て、本番に投入する。ここまでは楽しい。問題はその後です。\nAPIが5秒応答しない。スプレッドが通常の10倍に開く。価格が1分で5%動く。残高が足りないのに注...",
-        "category": "開発",
-        "rss_category": "",
-        "image_url": ""
-      },
-      {
-        "title": "【勉強メモ】『サイバーセキュリティプログラミング 第2版 ーPythonで学ぶハッカーの思考』3.4節",
-        "url": "https://zenn.dev/judenfly/articles/judenfly-20260326-02",
-        "site": "Zenn(Python)",
-        "published": "2026-03-26T02:21:18Z",
-        "description": "はじめに\n本記事はオライリー・ジャパン出版『サイバーセキュリティプログラミング 第2版 ーPythonで学ぶハッカーの思考』の「3章 ネットワーク：rawソケットと盗聴」の3.4節に関する私の勉強メモです。\nhttps://www.oreilly.co.jp/books/9784873119731/\n第3章で挫折した、または挫折しかかっている方の一助となれば幸いです。\n\n 3.4 ICMPのパース...",
-        "category": "開発",
-        "rss_category": "",
-        "image_url": ""
-      },
-      {
-        "title": "【勉強メモ】『サイバーセキュリティプログラミング 第2版 ーPythonで学ぶハッカーの思考』3.1～3.3節",
-        "url": "https://zenn.dev/judenfly/articles/judenfly-20260326-01",
-        "site": "Zenn(Python)",
-        "published": "2026-03-26T02:21:16Z",
-        "description": "はじめに\n本記事はオライリー・ジャパン出版『サイバーセキュリティプログラミング 第2版 ーPythonで学ぶハッカーの思考』の「3章 ネットワーク：rawソケットと盗聴」の3.1～3.3節に関する私の勉強メモです。\nhttps://www.oreilly.co.jp/books/9784873119731/\n第3章で挫折した、または挫折しかかっている方の一助となれば幸いです。\n\n 3.1 UDPを...",
-        "category": "開発",
-        "rss_category": "",
-        "image_url": ""
-      },
-      {
-        "title": "Pythonで音声のノイズを除去する ― Wienerフィルタを実装する",
-        "url": "https://zenn.dev/kta805/articles/c986750718bda7",
-        "site": "Zenn(Python)",
-        "published": "2026-03-26T01:45:33Z",
-        "description": "Pythonで音声のノイズを除去する ― Wienerフィルタを実装する\n\n はじめに\n前回はスペクトル減算によるノイズ除去を実装しました。\nしかし実際に試してみると、\n\n音声まで削れてしまう\n分類精度が逆に下がる\n不自然な歪んだ音が発生する\n\nといった問題が発生します。\n本記事では、より実用的な手法である\nWienerフィルタによるノイズ除去\nを実装します。\n\n\n Wienerフィルタとは\nWi...",
-        "category": "開発",
-        "rss_category": "",
-        "image_url": ""
-      },
-      {
-        "title": "Pythonで音楽ビジュアライザー的な",
-        "url": "https://zenn.dev/uchiyanma/articles/c0fa3fd7beca4c",
-        "site": "Zenn(Python)",
-        "published": "2026-03-26T01:09:09Z",
-        "description": "PythonとNumpyで作ります。\nこの記事では、FFTを全く知らない状態から、こんな動画を生成するまでの流れをまとめます。\nhttps://www.youtube.com/watch?v=VnS-z7wwHf4\n\n FFTって何？\n音楽ファイルは「時間 × 音の大きさ」の波形データです。ビジュアライザーに必要なのは「この瞬間、低音はどれくらい？高音はどれくらい？」という情報です。\nFFT（Fa...",
-        "category": "開発",
-        "rss_category": "",
-        "image_url": ""
-      },
-      {
-        "title": "Claude APIとPythonで「めんどくさい」を自動化する実践ガイド",
-        "url": "https://zenn.dev/soushu/articles/2026-03-26-claude-api-python",
-        "site": "Zenn(Python)",
-        "published": "2026-03-26T00:01:45Z",
-        "description": "はじめに：自動化は「怠惰」じゃなく「投資」\n個人開発をしていると、繰り返し発生する作業に時間を奪われがちです。ドキュメントの整理、データの変換、定型メールの下書き、コードレビューの初期チェック……。どれも1回あたりは数分で終わるけれど、積み重なると無視できない時間になります。\n私自身、暗号資産関連のツール開発や運用をしながら、こうした「小さなめんどくさい」をClaude APIとPythonで片っ...",
-        "category": "開発",
-        "rss_category": "",
-        "image_url": ""
-      },
-      {
-        "title": "さらばSora。動画生成AIの「産業シフト」を読み解き、次世代APIへ移行するための技術スタック",
-        "url": "https://zenn.dev/headwaters/articles/0b232a955c458a",
-        "site": "Zenn(Python)",
-        "published": "2026-03-25T22:57:11Z",
-        "description": "2026年3月24日、OpenAIは動画生成AI「Sora」の提供終了を発表しました。\n驚いた人も多いと思います。しかし、冷静に状況を整理すると、これは突然の出来事ではなく、AIビジネスの構造的な変化が表面に出てきただけです。\nこの記事では「なぜSoraが終わったのか」という背景から、「明日から何を使えばいいのか」という実装レベルの話まで、初心者エンジニアが実務で迷わないよう順番に解説します。\n\n...",
-        "category": "開発",
-        "rss_category": "",
-        "image_url": ""
-      },
-      {
-        "title": "PDF仕様書のExcel転記をやめるため、要求整理ツールを作った話",
-        "url": "https://zenn.dev/takuyaw/articles/6ebf4111c1e1ce",
-        "site": "Zenn(Python)",
-        "published": "2026-03-25T16:28:43Z",
-        "description": "3行まとめ\n\n車載・組み込み開発で、顧客の要求仕様は体系化されておらず、パワポをPDF化しただけという場合も多い\n「PDF仕様書→Excel転記」という前処理が毎回すごく時間がかかる\nドラッグ操作で要求を登録してExcel出力できるツール「VisionReq」を作ってβ公開した\n\n\n\n はじめに\n車載や組み込み系の受託開発をやっていると、プロジェクトの最初に必ずやることがあります。\n顧客から届いた...",
-        "category": "開発",
-        "rss_category": "",
-        "image_url": ""
-      }
-    ],
     "2026-03": [
       {
         "title": "【開発秘話】Gemini File Search管理ツールを自作したら、最初からAPIが存在していた話",
@@ -586,16 +394,6 @@
         "site": "Zenn(Python)",
         "published": "2026-03-28T10:40:07Z",
         "description": "スクレイピングのログ・監視設計【エラー検知と安定運用】\n!\n本記事で紹介する手法は、対象サイトの利用規約を遵守した上でのデータ収集を前提としています。商用利用の際は必ず各サイトの規約を確認してください。\n\n\n はじめに\nスクレイピングをスケジュール実行に乗せた途端、「気づいたらずっと失敗していた」「いつからデータが取れていないか分からない」という経験はありませんか？\n以前、ECサイトの価格データを...",
-        "category": "開発",
-        "rss_category": "",
-        "image_url": ""
-      },
-      {
-        "title": "推論モデルのコスト最適化をdiffで追跡する — llm-devproxy v0.4",
-        "url": "https://zenn.dev/ash4/articles/8973f300141afb",
-        "site": "Zenn(Python)",
-        "published": "2026-03-28T10:22:27Z",
-        "description": "プロンプトの書き方でコストも品質も変わる\n推論モデル（o3、o4-mini等）を使ったLLMアプリ開発で、プロンプトの書き方とモデル選択によってコストと出力品質がどう変わるかを実測しました。\n同じバグのあるPythonコードに対して、4パターンで実行した結果がこちらです：\n\n\n\n\no3(コスト / 推論比率)\no4-mini(コスト / 推論比率)\n\n\n\n\n\n詳細プロンプト（3案+トレードオフ要求...",
         "category": "開発",
         "rss_category": "",
         "image_url": ""
@@ -776,6 +574,16 @@
         "site": "Zenn(Python)",
         "published": "2026-03-27T19:32:02Z",
         "description": "Claude Code でブラウザ操作はできる。でも Premiere Pro や Excel、メモ帳 は？\n既存の GUI 自動化ツールを調べると、こんな状況でした:\n\n\nPeekaboo: MCP + Ollama 対応だが macOS 専用\n\n\nCua: クロスプラットフォームだが VM 内操作（ホスト OS を直接触れない）\n\nUI-TARS Desktop: ByteDance 製、MC...",
+        "category": "開発",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "LLM評価はギャンブルだった — promptstatsで始める統計的評価",
+        "url": "https://zenn.dev/beckento/articles/b5e33b92cdd084",
+        "site": "Zenn(Python)",
+        "published": "2026-03-27T18:29:44Z",
+        "description": "LLM評価はギャンブルだった — promptstatsで始める統計的評価\n\n「平均スコアが2点高いから、新しいプロンプトのほうが良い」—— その判断、統計的に正しいですか？\n\n\n\n はじめに：なぜ今、promptstatsのようなツールが必要なのか\nLLMのプロンプトやモデルを比較するとき、多くのエンジニアは「スコアの平均を出して、高いほうを選ぶ」というやり方をしている。数件〜数十件のテストケー...",
         "category": "開発",
         "rss_category": "",
         "image_url": ""
