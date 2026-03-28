@@ -1,9 +1,39 @@
 {
   "site": "Zenn(LLM)",
-  "last_updated": "2026-03-28T18:56:31.967104",
-  "total_articles": 2497,
+  "last_updated": "2026-03-28T19:35:22.940154",
+  "total_articles": 2499,
   "articles_by_date": {
     "昨日": [
+      {
+        "title": "single-agent runtime の次に来るもの: multi-agent 協調 runtime をどう考えるか",
+        "url": "https://zenn.dev/nhigashi/articles/4f1f8790745bd8",
+        "site": "Zenn(LLM)",
+        "published": "2026-03-28T14:46:55Z",
+        "description": "LLM agent の実行基盤を作っていると、ある時点で気づくことがあります。\n単一の runtime を賢くする問題と、複数の agent/runtime を協調させる問題は、かなり別物だということです。\nここしばらく見ていたのは、1 回の実行をどう成立させるか、という種類の問題でした。\n具体的には、必要な context を与え、tool を呼び、結果を返す、という流れをどううまく作るかです。...",
+        "category": "AI・技術",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "Claude Codeを使ってサイトのChatBotからパスワードを聞き出した話",
+        "url": "https://zenn.dev/hiyoko_sauna/articles/26faa08f85817f",
+        "site": "Zenn(LLM)",
+        "published": "2026-03-28T13:51:56Z",
+        "description": "はじめに\n\nLLMを搭載したChatBotに対して、プロンプトインジェクション（PI）で機密情報を引き出す——これは今やAIセキュリティにおける主要な脅威の一つだ。\nLakera社が公開するPI練習ゲーム「Gandalf」でこの攻撃手法を学んでいたが、最終レベルは英語しか受け付けず、自分の英語力では攻略できなかった。そこで、Claude Code（Opus 4.6）にAPI経由で自動攻撃させるとい...",
+        "category": "AI・技術",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "OSSで有報の開示漏れを自動検出する — 10点満点中3点の低評価からのスタート",
+        "url": "https://zenn.dev/majiro_ns/articles/disclosure-oss-phase1-integrated",
+        "site": "Zenn(LLM)",
+        "published": "2026-03-28T13:11:20Z",
+        "description": "はじめに\n有価証券報告書（以下「有報」）の作成は、上場企業にとって毎年度の重大義務です。しかし、2024〜2026年にかけて金融庁が矢継ぎ早に打ち出した人的資本・サステナビリティ開示の法令改正により、「どの項目が追加になったか」「自社の記載が対応済みか」を人手で確認する作業のコストが急激に増大しています。\n本記事では、この課題に対してPythonマルチエージェントシステム（M1〜M5パイプライン）...",
+        "category": "AI・技術",
+        "rss_category": "",
+        "image_url": ""
+      },
       {
         "title": "お前のAI、忖度してるぞ",
         "url": "https://zenn.dev/htakasu/articles/654c3906e86830",
@@ -197,16 +227,6 @@
         "image_url": ""
       },
       {
-        "title": "Karpathy発AutoResearchで一晩100実験を自動化する仕組みと実践",
-        "url": "https://zenn.dev/0h_n0/articles/28e8fe4721f315",
-        "site": "Zenn(LLM)",
-        "published": "2026-03-27T11:24:58Z",
-        "description": "Karpathy発AutoResearchで一晩100実験を自動化する仕組みと実践\n\n この記事でわかること\n\nAutoResearchの3ファイルアーキテクチャ（prepare.py / train.py / program.md）の設計思想と役割\n5分固定予算の実験ループで一晩100回以上のML実験を自律実行する仕組み\nSkyPilotによるマルチGPU並列化で910実験/8時間を実現した拡張...",
-        "category": "AI・技術",
-        "rss_category": "",
-        "image_url": ""
-      },
-      {
         "title": "Docling で PDF を Markdown に変換してみる",
         "url": "https://zenn.dev/fukurou_labo/articles/f523b8c34fcf43",
         "site": "Zenn(LLM)",
@@ -232,16 +252,6 @@
         "site": "Zenn(LLM)",
         "published": "2026-03-27T10:00:10Z",
         "description": "MCP、ちゃんとセキュリティ考えてますか？\n「とりあえず動いたAIエージェント」が、ある日突然、勝手に社外APIを叩いたり、内部データを外部に送信したりする可能性があります。\nこれはバグではありません。設計ミスです。\n\n\n たとえば、こんな実装をしていませんか？\nもし一つでも心当たりがあるなら、そのエージェントはすでに事故ってもおかしくない状態です。\n\n\nLLMの出力をそのままツールに渡している（...",
-        "category": "AI・技術",
-        "rss_category": "",
-        "image_url": ""
-      },
-      {
-        "title": "AIエージェント開発手法を比べてみた — フルスクラッチからLang系、Agno、Mastraまでの総まとめ",
-        "url": "https://zenn.dev/fez_tech/articles/f6ef0ea5a34536",
-        "site": "Zenn(LLM)",
-        "published": "2026-03-27T09:10:19Z",
-        "description": "こんにちは、株式会社フェズのデータテクノロジー開発部でエンジニアをしています石原です。\n普段は Urumo BI という、生成AIを活用した購買データ分析ソリューションの開発に携わっています。\n本記事は、AIエージェント開発手法を比較検証していく連載の最終回・第7回です。\n\n第1回：フレームワークなしでAIエージェントを作ってみた\n\n第2回：LangChainを使ってAIエージェントを作ってみた\n...",
         "category": "AI・技術",
         "rss_category": "",
         "image_url": ""
@@ -398,6 +408,36 @@
       }
     ],
     "2026-03": [
+      {
+        "title": "single-agent runtime の次に来るもの: multi-agent 協調 runtime をどう考えるか",
+        "url": "https://zenn.dev/nhigashi/articles/4f1f8790745bd8",
+        "site": "Zenn(LLM)",
+        "published": "2026-03-28T14:46:55Z",
+        "description": "LLM agent の実行基盤を作っていると、ある時点で気づくことがあります。\n単一の runtime を賢くする問題と、複数の agent/runtime を協調させる問題は、かなり別物だということです。\nここしばらく見ていたのは、1 回の実行をどう成立させるか、という種類の問題でした。\n具体的には、必要な context を与え、tool を呼び、結果を返す、という流れをどううまく作るかです。...",
+        "category": "AI・技術",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "Claude Codeを使ってサイトのChatBotからパスワードを聞き出した話",
+        "url": "https://zenn.dev/hiyoko_sauna/articles/26faa08f85817f",
+        "site": "Zenn(LLM)",
+        "published": "2026-03-28T13:51:56Z",
+        "description": "はじめに\n\nLLMを搭載したChatBotに対して、プロンプトインジェクション（PI）で機密情報を引き出す——これは今やAIセキュリティにおける主要な脅威の一つだ。\nLakera社が公開するPI練習ゲーム「Gandalf」でこの攻撃手法を学んでいたが、最終レベルは英語しか受け付けず、自分の英語力では攻略できなかった。そこで、Claude Code（Opus 4.6）にAPI経由で自動攻撃させるとい...",
+        "category": "AI・技術",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "OSSで有報の開示漏れを自動検出する — 10点満点中3点の低評価からのスタート",
+        "url": "https://zenn.dev/majiro_ns/articles/disclosure-oss-phase1-integrated",
+        "site": "Zenn(LLM)",
+        "published": "2026-03-28T13:11:20Z",
+        "description": "はじめに\n有価証券報告書（以下「有報」）の作成は、上場企業にとって毎年度の重大義務です。しかし、2024〜2026年にかけて金融庁が矢継ぎ早に打ち出した人的資本・サステナビリティ開示の法令改正により、「どの項目が追加になったか」「自社の記載が対応済みか」を人手で確認する作業のコストが急激に増大しています。\n本記事では、この課題に対してPythonマルチエージェントシステム（M1〜M5パイプライン）...",
+        "category": "AI・技術",
+        "rss_category": "",
+        "image_url": ""
+      },
       {
         "title": "お前のAI、忖度してるぞ",
         "url": "https://zenn.dev/htakasu/articles/654c3906e86830",
@@ -589,16 +629,6 @@
         "image_url": ""
       },
       {
-        "title": "Karpathy発AutoResearchで一晩100実験を自動化する仕組みと実践",
-        "url": "https://zenn.dev/0h_n0/articles/28e8fe4721f315",
-        "site": "Zenn(LLM)",
-        "published": "2026-03-27T11:24:58Z",
-        "description": "Karpathy発AutoResearchで一晩100実験を自動化する仕組みと実践\n\n この記事でわかること\n\nAutoResearchの3ファイルアーキテクチャ（prepare.py / train.py / program.md）の設計思想と役割\n5分固定予算の実験ループで一晩100回以上のML実験を自律実行する仕組み\nSkyPilotによるマルチGPU並列化で910実験/8時間を実現した拡張...",
-        "category": "AI・技術",
-        "rss_category": "",
-        "image_url": ""
-      },
-      {
         "title": "Docling で PDF を Markdown に変換してみる",
         "url": "https://zenn.dev/fukurou_labo/articles/f523b8c34fcf43",
         "site": "Zenn(LLM)",
@@ -624,16 +654,6 @@
         "site": "Zenn(LLM)",
         "published": "2026-03-27T10:00:10Z",
         "description": "MCP、ちゃんとセキュリティ考えてますか？\n「とりあえず動いたAIエージェント」が、ある日突然、勝手に社外APIを叩いたり、内部データを外部に送信したりする可能性があります。\nこれはバグではありません。設計ミスです。\n\n\n たとえば、こんな実装をしていませんか？\nもし一つでも心当たりがあるなら、そのエージェントはすでに事故ってもおかしくない状態です。\n\n\nLLMの出力をそのままツールに渡している（...",
-        "category": "AI・技術",
-        "rss_category": "",
-        "image_url": ""
-      },
-      {
-        "title": "AIエージェント開発手法を比べてみた — フルスクラッチからLang系、Agno、Mastraまでの総まとめ",
-        "url": "https://zenn.dev/fez_tech/articles/f6ef0ea5a34536",
-        "site": "Zenn(LLM)",
-        "published": "2026-03-27T09:10:19Z",
-        "description": "こんにちは、株式会社フェズのデータテクノロジー開発部でエンジニアをしています石原です。\n普段は Urumo BI という、生成AIを活用した購買データ分析ソリューションの開発に携わっています。\n本記事は、AIエージェント開発手法を比較検証していく連載の最終回・第7回です。\n\n第1回：フレームワークなしでAIエージェントを作ってみた\n\n第2回：LangChainを使ってAIエージェントを作ってみた\n...",
         "category": "AI・技術",
         "rss_category": "",
         "image_url": ""
