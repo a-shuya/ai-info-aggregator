@@ -1,7 +1,7 @@
 {
   "site": "Zenn(LLM)",
-  "last_updated": "2026-03-28T08:51:50.345487",
-  "total_articles": 2509,
+  "last_updated": "2026-03-28T09:42:07.892953",
+  "total_articles": 2507,
   "articles_by_date": {
     "本日": [
       {
@@ -10,26 +10,6 @@
         "site": "Zenn(LLM)",
         "published": "2026-03-28T06:28:39Z",
         "description": "今回の想定読者\n今回のネタは、ローカルLLMについてです。本記事を読んでいただけると、ローカルLLMの概要や使い方を知ることができます。（ファインチューニングについては触れていません）\n以下の様な方が想定読者です。\n\n諸事情により、OpenAIなど外部のLLMを利用できない、またはコスト節約したい\nローカルLLMに興味がある\nOllamaの使い方を知りたい\n\n\n ログビーの勉強会について\nログビー...",
-        "category": "AI・技術",
-        "rss_category": "",
-        "image_url": ""
-      },
-      {
-        "title": "局所整合から経路全体へ ― Jose Crespo の先にある「意味の経路積分」",
-        "url": "https://zenn.dev/albatrosary/articles/f3919356cf7c80",
-        "site": "Zenn(LLM)",
-        "published": "2026-03-28T03:22:47Z",
-        "description": "!\nTL;DR\n前稿では、Jose Crespo の “inverse Riemannian” という問題提起を手がかりに、生成AIの長期不安定性を「局所整合性と大域整合性のズレ」として整理した。生成AIは、その場その場の自然さには強い。しかし長い対話や長い推論では、一歩一歩は自然でも、全体としては目的から遠ざかることがある。\nでは、そのとき本当に見たいものは何だろうか。単なる次トークン予測や局所...",
-        "category": "AI・技術",
-        "rss_category": "",
-        "image_url": ""
-      },
-      {
-        "title": "PubMed × Vertex AI embeddings × UMAP/HDBSCAN でADC研究の地図を見てみた",
-        "url": "https://zenn.dev/ykato/articles/0a8fe05643af83",
-        "site": "Zenn(LLM)",
-        "published": "2026-03-28T02:05:59Z",
-        "description": "はじめに\nADC（抗体薬物複合体）は近年のオンコロジー領域で最も活発な開発分野のひとつだ。PubMedで「antibody drug conjugate」を検索すると、2021〜2026年だけで3000件以上の論文がヒットする。\nこれだけの量になると、人手でカバーするのは現実的ではないので今回は以下の解析手法で、ADC研究の「地図」を描いてみた。\n\n\nPubMed API（Biopython） で...",
         "category": "AI・技術",
         "rss_category": "",
         "image_url": ""
@@ -70,16 +50,6 @@
         "site": "Zenn(LLM)",
         "published": "2026-03-28T00:45:44Z",
         "description": "はじめに\nMoonshotAIが公開したAttention Residualsが気になったので、今回は自作TransformerにResidualsを組み込み、Wikipediaコーパスで標準残差との差を検証しました。\n!\n個人の実験のため、参考程度にお願いします。\n\n\n Attention Residuals\nTransformerは、1つ前の層の出力をそのまま足す、固定の残差接続を使います。\n...",
-        "category": "AI・技術",
-        "rss_category": "",
-        "image_url": ""
-      },
-      {
-        "title": "LLM SDK を基礎から理解2/5〜2.マルチターン会話編〜",
-        "url": "https://zenn.dev/pystarup/articles/36f95343f43199",
-        "site": "Zenn(LLM)",
-        "published": "2026-03-28T00:00:07Z",
-        "description": "はじめに\n本記事は「LLM SDK を基礎から理解する」シリーズの第2回です。\n\n\n\n回\nテーマ\n\n\n\n\n第1回\nテキスト生成の基本\n\n\n第2回（本記事）\nマルチターン会話\n\n\n第3回\nストリーミング\n\n\n第4回\nツール呼び出し（Function Calling）\n\n\n第5回\n埋め込み（Embedding）とRAGへの入口\n\n\n\n前回はLLM SDKを使った基本的なテキスト生成を解説しました。今回...",
         "category": "AI・技術",
         "rss_category": "",
         "image_url": ""
@@ -247,11 +217,31 @@
         "image_url": ""
       },
       {
+        "title": "生成AIのハルシネーションは「誤出力」？ 条件付き分布・真理条件・接地から見る数理的整理",
+        "url": "https://zenn.dev/albatrosary/articles/2d09da52a5daca",
+        "site": "Zenn(LLM)",
+        "published": "2026-03-27T03:12:34Z",
+        "description": "!\nTL;DR\nLLM は本質的に、入力 x に対して出力列 y の条件付き分布\n\nq_\\theta(y\\mid x)\n\nを近似している。ここで最適化されているのは「真実」ではなく「尤もらしい続き」である。したがって、ハルシネーションは単純な故障ではない。概念的には、\n\nH(x) = \\{\\,y \\mid q_\\theta(y\\mid x)\\ \\text{is high},\\ T_W(y)=0 \\...",
+        "category": "AI・技術",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
         "title": "【AIエージェント実践】ツール連携・メモリ管理・エラーハンドリング｜実務で使えるエージェント設計パターン",
         "url": "https://zenn.dev/shineos/articles/ai-agent-practical-patterns",
         "site": "Zenn(LLM)",
         "published": "2026-03-27T03:08:19Z",
         "description": "はじめに\n「単純な天気取得ボットは作れたけど、実務レベルの複雑なワークフローになると全然使い物にならない…」\n「デモ環境では完璧に動くのに、エッジケースに入るとエージェントがパニックを起こす」\n前回の記事では、AIエージェントの基本構造（思考→行動→観察）を学びました。しかし、いざこれを実戦投入しようとすると、皆さんも同じような壁にぶつかったのではないでしょうか？\n実は私も、初期に作った社内用エー...",
+        "category": "AI・技術",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "テーブルデータを含むRAGの実験 〜表形式データの検索精度を比較してみた〜",
+        "url": "https://zenn.dev/lluminai_tech/articles/dfa98d55cccd5e",
+        "site": "Zenn(LLM)",
+        "published": "2026-03-27T01:00:08Z",
+        "description": "テーブルデータ × RAGを実装で検証してみた\n〜データ形式・検索手法・LLM生成の性能差を測る〜\n\n はじめに\nルミナイR&amp;Dチームの権藤です。\n前回の記事「Naive RAG vs 進化系RAGを実装で比較してみた」では、テキストベースの文書検索における各RAG手法の性能を比較しました。\n\nしかし実務では、テーブルデータや表形式の情報を扱うケースも非常に多いです。製品仕様表、価格表、ス...",
         "category": "AI・技術",
         "rss_category": "",
         "image_url": ""
@@ -571,26 +561,6 @@
         "image_url": ""
       },
       {
-        "title": "局所整合から経路全体へ ― Jose Crespo の先にある「意味の経路積分」",
-        "url": "https://zenn.dev/albatrosary/articles/f3919356cf7c80",
-        "site": "Zenn(LLM)",
-        "published": "2026-03-28T03:22:47Z",
-        "description": "!\nTL;DR\n前稿では、Jose Crespo の “inverse Riemannian” という問題提起を手がかりに、生成AIの長期不安定性を「局所整合性と大域整合性のズレ」として整理した。生成AIは、その場その場の自然さには強い。しかし長い対話や長い推論では、一歩一歩は自然でも、全体としては目的から遠ざかることがある。\nでは、そのとき本当に見たいものは何だろうか。単なる次トークン予測や局所...",
-        "category": "AI・技術",
-        "rss_category": "",
-        "image_url": ""
-      },
-      {
-        "title": "PubMed × Vertex AI embeddings × UMAP/HDBSCAN でADC研究の地図を見てみた",
-        "url": "https://zenn.dev/ykato/articles/0a8fe05643af83",
-        "site": "Zenn(LLM)",
-        "published": "2026-03-28T02:05:59Z",
-        "description": "はじめに\nADC（抗体薬物複合体）は近年のオンコロジー領域で最も活発な開発分野のひとつだ。PubMedで「antibody drug conjugate」を検索すると、2021〜2026年だけで3000件以上の論文がヒットする。\nこれだけの量になると、人手でカバーするのは現実的ではないので今回は以下の解析手法で、ADC研究の「地図」を描いてみた。\n\n\nPubMed API（Biopython） で...",
-        "category": "AI・技術",
-        "rss_category": "",
-        "image_url": ""
-      },
-      {
         "title": "数千本の動画ライブラリにRAG検索を導入して社内AIコンテストで優勝した話",
         "url": "https://zenn.dev/yuta_tech/articles/4b67fe739dd07d",
         "site": "Zenn(LLM)",
@@ -626,16 +596,6 @@
         "site": "Zenn(LLM)",
         "published": "2026-03-28T00:45:44Z",
         "description": "はじめに\nMoonshotAIが公開したAttention Residualsが気になったので、今回は自作TransformerにResidualsを組み込み、Wikipediaコーパスで標準残差との差を検証しました。\n!\n個人の実験のため、参考程度にお願いします。\n\n\n Attention Residuals\nTransformerは、1つ前の層の出力をそのまま足す、固定の残差接続を使います。\n...",
-        "category": "AI・技術",
-        "rss_category": "",
-        "image_url": ""
-      },
-      {
-        "title": "LLM SDK を基礎から理解2/5〜2.マルチターン会話編〜",
-        "url": "https://zenn.dev/pystarup/articles/36f95343f43199",
-        "site": "Zenn(LLM)",
-        "published": "2026-03-28T00:00:07Z",
-        "description": "はじめに\n本記事は「LLM SDK を基礎から理解する」シリーズの第2回です。\n\n\n\n回\nテーマ\n\n\n\n\n第1回\nテキスト生成の基本\n\n\n第2回（本記事）\nマルチターン会話\n\n\n第3回\nストリーミング\n\n\n第4回\nツール呼び出し（Function Calling）\n\n\n第5回\n埋め込み（Embedding）とRAGへの入口\n\n\n\n前回はLLM SDKを使った基本的なテキスト生成を解説しました。今回...",
         "category": "AI・技術",
         "rss_category": "",
         "image_url": ""
@@ -801,11 +761,31 @@
         "image_url": ""
       },
       {
+        "title": "生成AIのハルシネーションは「誤出力」？ 条件付き分布・真理条件・接地から見る数理的整理",
+        "url": "https://zenn.dev/albatrosary/articles/2d09da52a5daca",
+        "site": "Zenn(LLM)",
+        "published": "2026-03-27T03:12:34Z",
+        "description": "!\nTL;DR\nLLM は本質的に、入力 x に対して出力列 y の条件付き分布\n\nq_\\theta(y\\mid x)\n\nを近似している。ここで最適化されているのは「真実」ではなく「尤もらしい続き」である。したがって、ハルシネーションは単純な故障ではない。概念的には、\n\nH(x) = \\{\\,y \\mid q_\\theta(y\\mid x)\\ \\text{is high},\\ T_W(y)=0 \\...",
+        "category": "AI・技術",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
         "title": "【AIエージェント実践】ツール連携・メモリ管理・エラーハンドリング｜実務で使えるエージェント設計パターン",
         "url": "https://zenn.dev/shineos/articles/ai-agent-practical-patterns",
         "site": "Zenn(LLM)",
         "published": "2026-03-27T03:08:19Z",
         "description": "はじめに\n「単純な天気取得ボットは作れたけど、実務レベルの複雑なワークフローになると全然使い物にならない…」\n「デモ環境では完璧に動くのに、エッジケースに入るとエージェントがパニックを起こす」\n前回の記事では、AIエージェントの基本構造（思考→行動→観察）を学びました。しかし、いざこれを実戦投入しようとすると、皆さんも同じような壁にぶつかったのではないでしょうか？\n実は私も、初期に作った社内用エー...",
+        "category": "AI・技術",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "テーブルデータを含むRAGの実験 〜表形式データの検索精度を比較してみた〜",
+        "url": "https://zenn.dev/lluminai_tech/articles/dfa98d55cccd5e",
+        "site": "Zenn(LLM)",
+        "published": "2026-03-27T01:00:08Z",
+        "description": "テーブルデータ × RAGを実装で検証してみた\n〜データ形式・検索手法・LLM生成の性能差を測る〜\n\n はじめに\nルミナイR&amp;Dチームの権藤です。\n前回の記事「Naive RAG vs 進化系RAGを実装で比較してみた」では、テキストベースの文書検索における各RAG手法の性能を比較しました。\n\nしかし実務では、テーブルデータや表形式の情報を扱うケースも非常に多いです。製品仕様表、価格表、ス...",
         "category": "AI・技術",
         "rss_category": "",
         "image_url": ""
