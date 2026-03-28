@@ -1,9 +1,19 @@
 {
   "site": "Zenn(Python)",
-  "last_updated": "2026-03-28T16:17:33.087121",
-  "total_articles": 3160,
+  "last_updated": "2026-03-28T16:55:23.431233",
+  "total_articles": 3162,
   "articles_by_date": {
     "昨日": [
+      {
+        "title": "OSSで有報の開示漏れを自動検出する — 10点満点中3点の低評価からのスタート",
+        "url": "https://zenn.dev/majiro_ns/articles/disclosure-oss-phase1-integrated",
+        "site": "Zenn(Python)",
+        "published": "2026-03-28T13:11:20Z",
+        "description": "はじめに\n有価証券報告書（以下「有報」）の作成は、上場企業にとって毎年度の重大義務です。しかし、2024〜2026年にかけて金融庁が矢継ぎ早に打ち出した人的資本・サステナビリティ開示の法令改正により、「どの項目が追加になったか」「自社の記載が対応済みか」を人手で確認する作業のコストが急激に増大しています。\n本記事では、この課題に対してPythonマルチエージェントシステム（M1〜M5パイプライン）...",
+        "category": "開発",
+        "rss_category": "",
+        "image_url": ""
+      },
       {
         "title": "【開発秘話】Gemini File Search管理ツールを自作したら、最初からAPIが存在していた話",
         "url": "https://zenn.dev/yh_catalysis/articles/filesearchtoolmgmt-dev1",
@@ -35,6 +45,16 @@
         "image_url": ""
       },
       {
+        "title": "推論モデルのコスト最適化をdiffで追跡する — llm-devproxy v0.4",
+        "url": "https://zenn.dev/ash4/articles/8973f300141afb",
+        "site": "Zenn(Python)",
+        "published": "2026-03-28T10:22:27Z",
+        "description": "プロンプトの書き方でコストも品質も変わる\n推論モデル（o3、o4-mini等）を使ったLLMアプリ開発で、プロンプトの書き方とモデル選択によってコストと出力品質がどう変わるかを実測しました。\n同じバグのあるPythonコードに対して、4パターンで実行した結果がこちらです：\n\n\n\n\no3(コスト / 推論比率)\no4-mini(コスト / 推論比率)\n\n\n\n\n\n詳細プロンプト（3案+トレードオフ要求...",
+        "category": "開発",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
         "title": "木の炭素量を計算して、お金に換算してみた【林業×AI×GIS #5】",
         "url": "https://zenn.dev/niikun/articles/c8458a8343f2b4",
         "site": "Zenn(Python)",
@@ -50,6 +70,16 @@
         "site": "Zenn(Python)",
         "published": "2026-03-28T10:06:13Z",
         "description": "はじめに\n前回、樹高マップをGeoTIFF形式で書き出し、QGISで地図上に重ねることができた。\n今回はその樹高マップ（CHM）を使って、個々の樹木を検出し、本数をカウントする。\nコードを実行したとき、御岳山の樹高マップの上に赤い点が一面に広がった。「あ、これが1本1本の木か」と思った瞬間があった。\n\n\n 本数が分かると何が嬉しいのか\n本数が分かると、林業的に以下のことが見えてくる。\n\n\n材積推定...",
+        "category": "開発",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "「あとで読む（読まない）」を仕組みで解決する — AI駆動の個人開発記",
+        "url": "https://zenn.dev/unsoluble_sugar/articles/beaac7bbf9ee7a",
+        "site": "Zenn(Python)",
+        "published": "2026-03-28T09:18:54Z",
+        "description": "はじめに\nRaindrop.ioに「あとで読みたい記事」を溜めているが、読まないまま埋もれていく一方だった。必要なのは気合いではなく仕組みだと思い、ChatGPTで仕様を固め、Claude Codeで実装した。\nhttps://github.com/unsolublesugar/tsuyu-mi\nRaindropの特定コレクションを定期的に走査し、記事本文をAIで要約、優先度つきのダッシュボードと...",
         "category": "開発",
         "rss_category": "",
         "image_url": ""
@@ -203,16 +233,6 @@
         "category": "開発",
         "rss_category": "",
         "image_url": ""
-      },
-      {
-        "title": "LLM評価はギャンブルだった — promptstatsで始める統計的評価",
-        "url": "https://zenn.dev/beckento/articles/b5e33b92cdd084",
-        "site": "Zenn(Python)",
-        "published": "2026-03-27T18:29:44Z",
-        "description": "LLM評価はギャンブルだった — promptstatsで始める統計的評価\n\n「平均スコアが2点高いから、新しいプロンプトのほうが良い」—— その判断、統計的に正しいですか？\n\n\n\n はじめに：なぜ今、promptstatsのようなツールが必要なのか\nLLMのプロンプトやモデルを比較するとき、多くのエンジニアは「スコアの平均を出して、高いほうを選ぶ」というやり方をしている。数件〜数十件のテストケー...",
-        "category": "開発",
-        "rss_category": "",
-        "image_url": ""
       }
     ],
     "一昨日": [
@@ -252,16 +272,6 @@
         "site": "Zenn(Python)",
         "published": "2026-03-27T12:24:50Z",
         "description": "はじめに\nAIツールが増えすぎて、タブが散らかっていませんか？\nOllama でローカル推論、Claude API で高精度な回答、Claude Code CLI でコード生成——プロバイダごとにUIが違い、会話履歴もバラバラ。RAG用のベクトルDBも別管理。この状況に疲れて、1つのWebアプリに全部まとめるOSSを作りました。\nHelix AI Studio v2.0 — FastAPI + W...",
-        "category": "開発",
-        "rss_category": "",
-        "image_url": ""
-      },
-      {
-        "title": "Karpathy発AutoResearchで一晩100実験を自動化する仕組みと実践",
-        "url": "https://zenn.dev/0h_n0/articles/28e8fe4721f315",
-        "site": "Zenn(Python)",
-        "published": "2026-03-27T11:24:58Z",
-        "description": "Karpathy発AutoResearchで一晩100実験を自動化する仕組みと実践\n\n この記事でわかること\n\nAutoResearchの3ファイルアーキテクチャ（prepare.py / train.py / program.md）の設計思想と役割\n5分固定予算の実験ループで一晩100回以上のML実験を自律実行する仕組み\nSkyPilotによるマルチGPU並列化で910実験/8時間を実現した拡張...",
         "category": "開発",
         "rss_category": "",
         "image_url": ""
@@ -379,6 +389,16 @@
     ],
     "2026-03": [
       {
+        "title": "OSSで有報の開示漏れを自動検出する — 10点満点中3点の低評価からのスタート",
+        "url": "https://zenn.dev/majiro_ns/articles/disclosure-oss-phase1-integrated",
+        "site": "Zenn(Python)",
+        "published": "2026-03-28T13:11:20Z",
+        "description": "はじめに\n有価証券報告書（以下「有報」）の作成は、上場企業にとって毎年度の重大義務です。しかし、2024〜2026年にかけて金融庁が矢継ぎ早に打ち出した人的資本・サステナビリティ開示の法令改正により、「どの項目が追加になったか」「自社の記載が対応済みか」を人手で確認する作業のコストが急激に増大しています。\n本記事では、この課題に対してPythonマルチエージェントシステム（M1〜M5パイプライン）...",
+        "category": "開発",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
         "title": "【開発秘話】Gemini File Search管理ツールを自作したら、最初からAPIが存在していた話",
         "url": "https://zenn.dev/yh_catalysis/articles/filesearchtoolmgmt-dev1",
         "site": "Zenn(Python)",
@@ -409,6 +429,16 @@
         "image_url": ""
       },
       {
+        "title": "推論モデルのコスト最適化をdiffで追跡する — llm-devproxy v0.4",
+        "url": "https://zenn.dev/ash4/articles/8973f300141afb",
+        "site": "Zenn(Python)",
+        "published": "2026-03-28T10:22:27Z",
+        "description": "プロンプトの書き方でコストも品質も変わる\n推論モデル（o3、o4-mini等）を使ったLLMアプリ開発で、プロンプトの書き方とモデル選択によってコストと出力品質がどう変わるかを実測しました。\n同じバグのあるPythonコードに対して、4パターンで実行した結果がこちらです：\n\n\n\n\no3(コスト / 推論比率)\no4-mini(コスト / 推論比率)\n\n\n\n\n\n詳細プロンプト（3案+トレードオフ要求...",
+        "category": "開発",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
         "title": "木の炭素量を計算して、お金に換算してみた【林業×AI×GIS #5】",
         "url": "https://zenn.dev/niikun/articles/c8458a8343f2b4",
         "site": "Zenn(Python)",
@@ -424,6 +454,16 @@
         "site": "Zenn(Python)",
         "published": "2026-03-28T10:06:13Z",
         "description": "はじめに\n前回、樹高マップをGeoTIFF形式で書き出し、QGISで地図上に重ねることができた。\n今回はその樹高マップ（CHM）を使って、個々の樹木を検出し、本数をカウントする。\nコードを実行したとき、御岳山の樹高マップの上に赤い点が一面に広がった。「あ、これが1本1本の木か」と思った瞬間があった。\n\n\n 本数が分かると何が嬉しいのか\n本数が分かると、林業的に以下のことが見えてくる。\n\n\n材積推定...",
+        "category": "開発",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "「あとで読む（読まない）」を仕組みで解決する — AI駆動の個人開発記",
+        "url": "https://zenn.dev/unsoluble_sugar/articles/beaac7bbf9ee7a",
+        "site": "Zenn(Python)",
+        "published": "2026-03-28T09:18:54Z",
+        "description": "はじめに\nRaindrop.ioに「あとで読みたい記事」を溜めているが、読まないまま埋もれていく一方だった。必要なのは気合いではなく仕組みだと思い、ChatGPTで仕様を固め、Claude Codeで実装した。\nhttps://github.com/unsolublesugar/tsuyu-mi\nRaindropの特定コレクションを定期的に走査し、記事本文をAIで要約、優先度つきのダッシュボードと...",
         "category": "開発",
         "rss_category": "",
         "image_url": ""
@@ -579,16 +619,6 @@
         "image_url": ""
       },
       {
-        "title": "LLM評価はギャンブルだった — promptstatsで始める統計的評価",
-        "url": "https://zenn.dev/beckento/articles/b5e33b92cdd084",
-        "site": "Zenn(Python)",
-        "published": "2026-03-27T18:29:44Z",
-        "description": "LLM評価はギャンブルだった — promptstatsで始める統計的評価\n\n「平均スコアが2点高いから、新しいプロンプトのほうが良い」—— その判断、統計的に正しいですか？\n\n\n\n はじめに：なぜ今、promptstatsのようなツールが必要なのか\nLLMのプロンプトやモデルを比較するとき、多くのエンジニアは「スコアの平均を出して、高いほうを選ぶ」というやり方をしている。数件〜数十件のテストケー...",
-        "category": "開発",
-        "rss_category": "",
-        "image_url": ""
-      },
-      {
         "title": "Claude Codeで有料記事プラットフォームを1日で作った",
         "url": "https://zenn.dev/either/articles/973855e8d5a4c9",
         "site": "Zenn(Python)",
@@ -624,16 +654,6 @@
         "site": "Zenn(Python)",
         "published": "2026-03-27T12:24:50Z",
         "description": "はじめに\nAIツールが増えすぎて、タブが散らかっていませんか？\nOllama でローカル推論、Claude API で高精度な回答、Claude Code CLI でコード生成——プロバイダごとにUIが違い、会話履歴もバラバラ。RAG用のベクトルDBも別管理。この状況に疲れて、1つのWebアプリに全部まとめるOSSを作りました。\nHelix AI Studio v2.0 — FastAPI + W...",
-        "category": "開発",
-        "rss_category": "",
-        "image_url": ""
-      },
-      {
-        "title": "Karpathy発AutoResearchで一晩100実験を自動化する仕組みと実践",
-        "url": "https://zenn.dev/0h_n0/articles/28e8fe4721f315",
-        "site": "Zenn(Python)",
-        "published": "2026-03-27T11:24:58Z",
-        "description": "Karpathy発AutoResearchで一晩100実験を自動化する仕組みと実践\n\n この記事でわかること\n\nAutoResearchの3ファイルアーキテクチャ（prepare.py / train.py / program.md）の設計思想と役割\n5分固定予算の実験ループで一晩100回以上のML実験を自律実行する仕組み\nSkyPilotによるマルチGPU並列化で910実験/8時間を実現した拡張...",
         "category": "開発",
         "rss_category": "",
         "image_url": ""
