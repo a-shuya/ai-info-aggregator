@@ -1,9 +1,59 @@
 {
   "site": "Zenn(Python)",
-  "last_updated": "2026-03-29T11:05:16.458075",
-  "total_articles": 3164,
+  "last_updated": "2026-03-29T11:41:57.886073",
+  "total_articles": 3174,
   "articles_by_date": {
     "本日": [
+      {
+        "title": "分散型スキャレイピング：100個以上のプロキシによるクラスタ構築と運用",
+        "url": "https://zenn.dev/onlineproxy/articles/f000683ec4212c",
+        "site": "Zenn(Python)",
+        "published": "2026-03-29T09:24:02Z",
+        "description": "大規模化（スケール）は、時に魅力的な罠となります。数百ページのスクレイピングから、100個以上のプロキシを介して数百万件のリクエストを処理するクラスタ構成へと移行する際、物理法則、あるいは少なくともネットワークアーキテクチャの法則は一変します。多くの開発者は、スケールアップを線形なプロセスだと誤解しています。単にプロキシを増やし、スレッドを増やし、帯域を広げればいいと考えてしまうのです。\nしかし現...",
+        "category": "開発",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "知識ベースを自然淘汰するRAGをつくってみた",
+        "url": "https://zenn.dev/midomo/articles/14ca85959aa1cc",
+        "site": "Zenn(Python)",
+        "published": "2026-03-29T08:49:57Z",
+        "description": "RAG の知識ベース（ルール集）を Thompson Sampling + LLM の突然変異・交差・淘汰 で自動進化させる仕組みを作った\n1,900回以上の実験で、進化なしと比べて +11〜18ポイント の正答率向上を確認\n仕様変更でルールが全部ゴミになっても 勝手に回復 する（V字回復）\n必要なもの: Python + JSON + Gemini API キー\n\n\n!\n高1（もうすぐ高2）が個...",
+        "category": "開発",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "OfficeドキュメントやPDFをAIに読ませるためのMCPサーバ「DocTools MCP」を作ってみた",
+        "url": "https://zenn.dev/snaga/articles/2026-03-29-doctools-mcp-agentic-rag",
+        "site": "Zenn(Python)",
+        "published": "2026-03-29T08:45:54Z",
+        "description": "はじめに（経緯）\n昨年夏ごろからAIエージェントのCLIツール（普段はGemini-CLIを使用しています）を使い始め、今では本当に日常的に活用するようになりました。開発そのものというよりは、仕様調査やインシデント分析、資料作成やタスク管理などのデスクワーク全般に使うようになっており、デスクトップには常時Gemini-CLIのコンソールが開いているという状況になっています。\n通常のデスクワークで避...",
+        "category": "開発",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "Freee MCP×GAS×Slackで毎月の収入・支出を自動サマリしてもらった。",
+        "url": "https://zenn.dev/yonamine/articles/c3386e0a8f5ad9",
+        "site": "Zenn(Python)",
+        "published": "2026-03-29T06:07:04Z",
+        "description": "前書き\n最近freeeからmcpが公開されたので使ってみました。\nhttps://github.com/freee/freee-mcp\n個人的に当月の収入/支出のサマリをslackへ毎日投稿してくると嬉しいのでシステムを組んでみました。\n\n システムフロー\n\n\nGAS（時間トリガー）が ngrok 経由でローカルサーバーに HTTP POST\n\nローカルサーバー（Express + Claude ...",
+        "category": "開発",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "GCP Secret Manager 実践ガイド ─ Cloud Run・GitHub Actions・ローカル開発でのシークレット管理",
+        "url": "https://zenn.dev/correlate_dev/articles/gcp-secret-manager",
+        "site": "Zenn(Python)",
+        "published": "2026-03-29T05:10:12Z",
+        "description": "はじめに\nAPIキーやデータベースの接続文字列を .env ファイルで管理しているプロジェクトは多いと思います。手軽で分かりやすい反面、.env ファイルには次のようなリスクがあります。\n\n\n.gitignore の設定ミスで Git に誤ってコミットしてしまうリスク\nチームメンバーへの共有がチャットやメールになりがちで、漏洩経路が増える\n誰がいつ値を変更・アクセスしたかの監査ログが残らない\nロー...",
+        "category": "開発",
+        "rss_category": "",
+        "image_url": ""
+      },
       {
         "title": "暗号通貨のグリッドトレードを自動化するボット「GridForge」を作った",
         "url": "https://zenn.dev/soushu/articles/gridforge-auto-grid-trading",
@@ -40,6 +90,16 @@
         "site": "Zenn(Python)",
         "published": "2026-03-29T02:11:18Z",
         "description": "はじめに\n3Dプリントといえば、BlenderやFusion 360などのGUIツールでモデリングするのが一般的です。ただ、GUIはAIエージェントとの相性がよくありません。\nそこで、Python + CLIだけで「モデリング → スライス → 印刷」が完結する構成を組んでみたところ、Claude Codeが全工程を自動で回してくれるようになりました。\nこの記事では、その構成と実際の流れを紹介しま...",
+        "category": "開発",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "GitHubのコミット履歴からメールアドレスが漏洩していないか自動チェックするツールを作った",
+        "url": "https://zenn.dev/long910/articles/2026-03-29-github-leak-check",
+        "site": "Zenn(Python)",
+        "published": "2026-03-29T00:00:00Z",
+        "description": "きっかけ\n「メールアドレスを非公開設定にしているのに、GitHub 関連の迷惑メールが増えた気がする…」\nそんな疑問から調べてみると、GitHub の \"Keep my email addresses private\" 設定は今後のコミットにしか適用されないことが分かりました。過去のコミットや他のサービスから移行したリポジトリには、本物のメールアドレスがそのまま残り続けます。\nスパムボットは Gi...",
         "category": "開発",
         "rss_category": "",
         "image_url": ""
@@ -192,16 +252,6 @@
         "site": "Zenn(Python)",
         "published": "2026-03-28T02:05:19Z",
         "description": "はじめに\nRaycast から一打で Notion INBOX に投入できるツール nin を、ChatGPT と Codex を使って作った。\nコードは書いていない。自分がやったのは「何を作るか」を言語化することだけだ。\n既存ツールで数時間詰まった末に自作を決意し、AI との対話で仕様を固め、プロンプト一発で動くものが出てきた——そのプロセスをまとめた。\n\n なぜ作ろうとしたか\n今年から Not...",
-        "category": "開発",
-        "rss_category": "",
-        "image_url": ""
-      },
-      {
-        "title": "マケデコハッカソン2026 開催報告と資料掲載",
-        "url": "https://zenn.dev/gamella/articles/736c01b952c591",
-        "site": "Zenn(Python)",
-        "published": "2026-03-28T01:18:50Z",
-        "description": "2026/3/26に第２回 マケデコハッカソン発表会を開催しました。\nhttps://mkdeco.connpass.com/event/384016/\nたくさんの人に視聴頂き、素晴らしい発表がたくさんありました。報告会の様子はYouTubeで確認可能です。\nhttps://www.youtube.com/live/atnLTfSEQPs?feature=share\n以下の発表が行われ、MixSe...",
         "category": "開発",
         "rss_category": "",
         "image_url": ""
@@ -401,6 +451,56 @@
     ],
     "2026-03": [
       {
+        "title": "分散型スキャレイピング：100個以上のプロキシによるクラスタ構築と運用",
+        "url": "https://zenn.dev/onlineproxy/articles/f000683ec4212c",
+        "site": "Zenn(Python)",
+        "published": "2026-03-29T09:24:02Z",
+        "description": "大規模化（スケール）は、時に魅力的な罠となります。数百ページのスクレイピングから、100個以上のプロキシを介して数百万件のリクエストを処理するクラスタ構成へと移行する際、物理法則、あるいは少なくともネットワークアーキテクチャの法則は一変します。多くの開発者は、スケールアップを線形なプロセスだと誤解しています。単にプロキシを増やし、スレッドを増やし、帯域を広げればいいと考えてしまうのです。\nしかし現...",
+        "category": "開発",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "知識ベースを自然淘汰するRAGをつくってみた",
+        "url": "https://zenn.dev/midomo/articles/14ca85959aa1cc",
+        "site": "Zenn(Python)",
+        "published": "2026-03-29T08:49:57Z",
+        "description": "RAG の知識ベース（ルール集）を Thompson Sampling + LLM の突然変異・交差・淘汰 で自動進化させる仕組みを作った\n1,900回以上の実験で、進化なしと比べて +11〜18ポイント の正答率向上を確認\n仕様変更でルールが全部ゴミになっても 勝手に回復 する（V字回復）\n必要なもの: Python + JSON + Gemini API キー\n\n\n!\n高1（もうすぐ高2）が個...",
+        "category": "開発",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "OfficeドキュメントやPDFをAIに読ませるためのMCPサーバ「DocTools MCP」を作ってみた",
+        "url": "https://zenn.dev/snaga/articles/2026-03-29-doctools-mcp-agentic-rag",
+        "site": "Zenn(Python)",
+        "published": "2026-03-29T08:45:54Z",
+        "description": "はじめに（経緯）\n昨年夏ごろからAIエージェントのCLIツール（普段はGemini-CLIを使用しています）を使い始め、今では本当に日常的に活用するようになりました。開発そのものというよりは、仕様調査やインシデント分析、資料作成やタスク管理などのデスクワーク全般に使うようになっており、デスクトップには常時Gemini-CLIのコンソールが開いているという状況になっています。\n通常のデスクワークで避...",
+        "category": "開発",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "Freee MCP×GAS×Slackで毎月の収入・支出を自動サマリしてもらった。",
+        "url": "https://zenn.dev/yonamine/articles/c3386e0a8f5ad9",
+        "site": "Zenn(Python)",
+        "published": "2026-03-29T06:07:04Z",
+        "description": "前書き\n最近freeeからmcpが公開されたので使ってみました。\nhttps://github.com/freee/freee-mcp\n個人的に当月の収入/支出のサマリをslackへ毎日投稿してくると嬉しいのでシステムを組んでみました。\n\n システムフロー\n\n\nGAS（時間トリガー）が ngrok 経由でローカルサーバーに HTTP POST\n\nローカルサーバー（Express + Claude ...",
+        "category": "開発",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "GCP Secret Manager 実践ガイド ─ Cloud Run・GitHub Actions・ローカル開発でのシークレット管理",
+        "url": "https://zenn.dev/correlate_dev/articles/gcp-secret-manager",
+        "site": "Zenn(Python)",
+        "published": "2026-03-29T05:10:12Z",
+        "description": "はじめに\nAPIキーやデータベースの接続文字列を .env ファイルで管理しているプロジェクトは多いと思います。手軽で分かりやすい反面、.env ファイルには次のようなリスクがあります。\n\n\n.gitignore の設定ミスで Git に誤ってコミットしてしまうリスク\nチームメンバーへの共有がチャットやメールになりがちで、漏洩経路が増える\n誰がいつ値を変更・アクセスしたかの監査ログが残らない\nロー...",
+        "category": "開発",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
         "title": "暗号通貨のグリッドトレードを自動化するボット「GridForge」を作った",
         "url": "https://zenn.dev/soushu/articles/gridforge-auto-grid-trading",
         "site": "Zenn(Python)",
@@ -436,6 +536,16 @@
         "site": "Zenn(Python)",
         "published": "2026-03-29T02:11:18Z",
         "description": "はじめに\n3Dプリントといえば、BlenderやFusion 360などのGUIツールでモデリングするのが一般的です。ただ、GUIはAIエージェントとの相性がよくありません。\nそこで、Python + CLIだけで「モデリング → スライス → 印刷」が完結する構成を組んでみたところ、Claude Codeが全工程を自動で回してくれるようになりました。\nこの記事では、その構成と実際の流れを紹介しま...",
+        "category": "開発",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "GitHubのコミット履歴からメールアドレスが漏洩していないか自動チェックするツールを作った",
+        "url": "https://zenn.dev/long910/articles/2026-03-29-github-leak-check",
+        "site": "Zenn(Python)",
+        "published": "2026-03-29T00:00:00Z",
+        "description": "きっかけ\n「メールアドレスを非公開設定にしているのに、GitHub 関連の迷惑メールが増えた気がする…」\nそんな疑問から調べてみると、GitHub の \"Keep my email addresses private\" 設定は今後のコミットにしか適用されないことが分かりました。過去のコミットや他のサービスから移行したリポジトリには、本物のメールアドレスがそのまま残り続けます。\nスパムボットは Gi...",
         "category": "開発",
         "rss_category": "",
         "image_url": ""
@@ -586,16 +696,6 @@
         "site": "Zenn(Python)",
         "published": "2026-03-28T02:05:19Z",
         "description": "はじめに\nRaycast から一打で Notion INBOX に投入できるツール nin を、ChatGPT と Codex を使って作った。\nコードは書いていない。自分がやったのは「何を作るか」を言語化することだけだ。\n既存ツールで数時間詰まった末に自作を決意し、AI との対話で仕様を固め、プロンプト一発で動くものが出てきた——そのプロセスをまとめた。\n\n なぜ作ろうとしたか\n今年から Not...",
-        "category": "開発",
-        "rss_category": "",
-        "image_url": ""
-      },
-      {
-        "title": "マケデコハッカソン2026 開催報告と資料掲載",
-        "url": "https://zenn.dev/gamella/articles/736c01b952c591",
-        "site": "Zenn(Python)",
-        "published": "2026-03-28T01:18:50Z",
-        "description": "2026/3/26に第２回 マケデコハッカソン発表会を開催しました。\nhttps://mkdeco.connpass.com/event/384016/\nたくさんの人に視聴頂き、素晴らしい発表がたくさんありました。報告会の様子はYouTubeで確認可能です。\nhttps://www.youtube.com/live/atnLTfSEQPs?feature=share\n以下の発表が行われ、MixSe...",
         "category": "開発",
         "rss_category": "",
         "image_url": ""
