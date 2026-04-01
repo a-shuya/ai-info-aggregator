@@ -1,7 +1,7 @@
 {
   "site": "Zenn(LLM)",
-  "last_updated": "2026-04-01T09:18:53.115220",
-  "total_articles": 2576,
+  "last_updated": "2026-04-01T10:31:37.715819",
+  "total_articles": 2580,
   "articles_by_date": {
     "本日": [
       {
@@ -10,16 +10,6 @@
         "site": "Zenn(LLM)",
         "published": "2026-04-01T07:38:09Z",
         "description": "先端技術開発グループ（WAND）の小島です。LLMを運用する際、デバイスメモリを削減するために量子化を行いますが、GPUの量子化の情報は多くあるものの、AWS Neuron（Inferentia2）での情報がほとんどなかったので試してみました。\n本記事では、Llama-3.1-8B InstructにINT8量子化を適用することで、Neuronデバイスメモリを約24%削減し（MaxLen=8192...",
-        "category": "AI・技術",
-        "rss_category": "",
-        "image_url": ""
-      },
-      {
-        "title": "【2026年版】AWSで社内ローカルLLMを構築する完全ガイド──データを外に出さない「自社AI」のつくり方",
-        "url": "https://zenn.dev/takuh/articles/4ec013ccb0dddb",
-        "site": "Zenn(LLM)",
-        "published": "2026-04-01T07:10:57Z",
-        "description": "はじめに──この記事で学べること\n「ChatGPTは便利だけど、社内の機密情報を入力しても大丈夫なの？」\n業務でAIを使い始めた企業の多くが、いま最も頭を悩ませているのがこの問題ではないでしょうか。ChatGPTやClaude、GeminiなどのクラウドAIサービスは非常に優秀ですが、入力したデータはすべて社外のサーバーに送信されます。議事録の要約、顧客データの分析、社内規程の検索──こうした業務...",
         "category": "AI・技術",
         "rss_category": "",
         "image_url": ""
@@ -85,11 +75,21 @@
         "image_url": ""
       },
       {
+        "title": "OWASPがエージェント専用リスクリスト「Agentic Applications Top 10 2026」を公開——LLM Top 10と",
+        "url": "https://zenn.dev/sharu389no/articles/0298bb96e64a1c",
+        "site": "Zenn(LLM)",
+        "published": "2026-03-31T22:06:05Z",
+        "description": "はじめに——なぜ「エージェント専用」のリストが必要になったのか\n2024年、OWASPはLLMを標的にした10大リスク「OWASP Top 10 for LLM Applications」を発表した。Prompt InjectionやInsecure Output Handlingが話題を呼び、多くの企業がチェックリストとして参照してきた。\nしかし2025年末、OWASPはそれとは別のリストを公開...",
+        "category": "AI・技術",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
         "title": "Claude Code + Ollama + MCPで「AI社長組織」を作る実践ガイド",
         "url": "https://zenn.dev/southgateresea/books/ai-president-mcp-guide",
         "site": "Zenn(LLM)",
         "published": "2026-03-31T19:17:33Z",
-        "description": "Claude Codeを「社長」、ローカルLLM（Ollama + Qwen 2.5 Coder 14B）を「部下ワーカー」として、MCPメッセージバスで指揮する「AI組織」を構築する実践ガイド。CrewAI/AutoGen/LangGraphとの比較から、MCP自作、ワーカー訓練、収益化まで。著者はAI社長本人。",
+        "description": "ClaudeCodeとローカルLLMが自律的に動き、人間による補助なく発案、作成した文章です。\n実験記録としてご覧ください。\nコメント等の指摘はClaudeCodeたちが読み、参考にするようです。\n\nClaude Codeを社長、ローカルLLM（Ollama + Qwen 2.5 Coder 14B）を部下ワーカーとして、MCPメッセージバスで指揮する「AI組織」を実際に構築する。環境構築からMC...",
         "category": "AI・技術",
         "rss_category": "",
         "image_url": ""
@@ -212,6 +212,26 @@
         "site": "Zenn(LLM)",
         "published": "2026-03-31T10:24:53Z",
         "description": "hookに記憶検索を仕込んだら、プロンプトを送るたびに7秒待たされるようになった——そんな状況に心当たりはないだろうか。結論から言うと、ベクトル検索の発火を制御してFTS5メインに切り替えたら0.09秒まで落ちた。\n前回の記事（Claude Codeの長期記憶を複数リポで安全に運用するポリシー設計）で、Claude Codeのhookを使ったセッション間記憶（sui-memory）を作った。SQL...",
+        "category": "AI・技術",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "師匠は隣のトップパフォーマー - Vercelに学ぶ「業務にAIエージェントを載せる」方法",
+        "url": "https://zenn.dev/r_kaga/articles/08fa0c3967a94b",
+        "site": "Zenn(LLM)",
+        "published": "2026-03-31T09:46:02Z",
+        "description": "初めまして、kagayaです。\nVercelは10人のインバウンドSDRチームを、6週間でAIエージェント1体+スーパーバイザー1人に置き換えました。コンバージョン率は維持したまま、対応速度は向上しているようです。\nhttps://tomtunguz.com/vercel-ai-sales-agents-jeanne-grosser/\n私自身も「業務にAIエージェントを載せる」を色々探索してるとこ...",
+        "category": "AI・技術",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "Claude Code を「何となく使っている」から抜け出す——『実践 Claude Code 入門』で得た気づき",
+        "url": "https://zenn.dev/nextbeat/articles/practical-claude-code-introduction",
+        "site": "Zenn(LLM)",
+        "published": "2026-03-31T05:52:00Z",
+        "description": "この記事は、Claude Code を日常的に使っているものの「うまく活用できている実感がない」と感じているエンジニア向けです。\n特に、「CLAUDE.md は作ってみたけど、サブエージェント・スキル・フック・MCP などはまだ使いこなせていない」という方を対象にしています。\n書籍『実践 Claude Code 入門』（技術評論社）を読んで得た気づきをベースにしているので、ぜひ本書も読んでみてくだ...",
         "category": "AI・技術",
         "rss_category": "",
         "image_url": ""
@@ -551,16 +571,6 @@
         "image_url": ""
       },
       {
-        "title": "【2026年版】AWSで社内ローカルLLMを構築する完全ガイド──データを外に出さない「自社AI」のつくり方",
-        "url": "https://zenn.dev/takuh/articles/4ec013ccb0dddb",
-        "site": "Zenn(LLM)",
-        "published": "2026-04-01T07:10:57Z",
-        "description": "はじめに──この記事で学べること\n「ChatGPTは便利だけど、社内の機密情報を入力しても大丈夫なの？」\n業務でAIを使い始めた企業の多くが、いま最も頭を悩ませているのがこの問題ではないでしょうか。ChatGPTやClaude、GeminiなどのクラウドAIサービスは非常に優秀ですが、入力したデータはすべて社外のサーバーに送信されます。議事録の要約、顧客データの分析、社内規程の検索──こうした業務...",
-        "category": "AI・技術",
-        "rss_category": "",
-        "image_url": ""
-      },
-      {
         "title": "ReAct (Reason+Act) パターンを TypeScript だけで実装する",
         "url": "https://zenn.dev/kt3k/articles/74785af8436b1e",
         "site": "Zenn(LLM)",
@@ -621,11 +631,21 @@
         "image_url": ""
       },
       {
+        "title": "OWASPがエージェント専用リスクリスト「Agentic Applications Top 10 2026」を公開——LLM Top 10と",
+        "url": "https://zenn.dev/sharu389no/articles/0298bb96e64a1c",
+        "site": "Zenn(LLM)",
+        "published": "2026-03-31T22:06:05Z",
+        "description": "はじめに——なぜ「エージェント専用」のリストが必要になったのか\n2024年、OWASPはLLMを標的にした10大リスク「OWASP Top 10 for LLM Applications」を発表した。Prompt InjectionやInsecure Output Handlingが話題を呼び、多くの企業がチェックリストとして参照してきた。\nしかし2025年末、OWASPはそれとは別のリストを公開...",
+        "category": "AI・技術",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
         "title": "Claude Code + Ollama + MCPで「AI社長組織」を作る実践ガイド",
         "url": "https://zenn.dev/southgateresea/books/ai-president-mcp-guide",
         "site": "Zenn(LLM)",
         "published": "2026-03-31T19:17:33Z",
-        "description": "Claude Codeを「社長」、ローカルLLM（Ollama + Qwen 2.5 Coder 14B）を「部下ワーカー」として、MCPメッセージバスで指揮する「AI組織」を構築する実践ガイド。CrewAI/AutoGen/LangGraphとの比較から、MCP自作、ワーカー訓練、収益化まで。著者はAI社長本人。",
+        "description": "ClaudeCodeとローカルLLMが自律的に動き、人間による補助なく発案、作成した文章です。\n実験記録としてご覧ください。\nコメント等の指摘はClaudeCodeたちが読み、参考にするようです。\n\nClaude Codeを社長、ローカルLLM（Ollama + Qwen 2.5 Coder 14B）を部下ワーカーとして、MCPメッセージバスで指揮する「AI組織」を実際に構築する。環境構築からMC...",
         "category": "AI・技術",
         "rss_category": "",
         "image_url": ""
@@ -748,6 +768,26 @@
         "site": "Zenn(LLM)",
         "published": "2026-03-31T10:24:53Z",
         "description": "hookに記憶検索を仕込んだら、プロンプトを送るたびに7秒待たされるようになった——そんな状況に心当たりはないだろうか。結論から言うと、ベクトル検索の発火を制御してFTS5メインに切り替えたら0.09秒まで落ちた。\n前回の記事（Claude Codeの長期記憶を複数リポで安全に運用するポリシー設計）で、Claude Codeのhookを使ったセッション間記憶（sui-memory）を作った。SQL...",
+        "category": "AI・技術",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "師匠は隣のトップパフォーマー - Vercelに学ぶ「業務にAIエージェントを載せる」方法",
+        "url": "https://zenn.dev/r_kaga/articles/08fa0c3967a94b",
+        "site": "Zenn(LLM)",
+        "published": "2026-03-31T09:46:02Z",
+        "description": "初めまして、kagayaです。\nVercelは10人のインバウンドSDRチームを、6週間でAIエージェント1体+スーパーバイザー1人に置き換えました。コンバージョン率は維持したまま、対応速度は向上しているようです。\nhttps://tomtunguz.com/vercel-ai-sales-agents-jeanne-grosser/\n私自身も「業務にAIエージェントを載せる」を色々探索してるとこ...",
+        "category": "AI・技術",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "Claude Code を「何となく使っている」から抜け出す——『実践 Claude Code 入門』で得た気づき",
+        "url": "https://zenn.dev/nextbeat/articles/practical-claude-code-introduction",
+        "site": "Zenn(LLM)",
+        "published": "2026-03-31T05:52:00Z",
+        "description": "この記事は、Claude Code を日常的に使っているものの「うまく活用できている実感がない」と感じているエンジニア向けです。\n特に、「CLAUDE.md は作ってみたけど、サブエージェント・スキル・フック・MCP などはまだ使いこなせていない」という方を対象にしています。\n書籍『実践 Claude Code 入門』（技術評論社）を読んで得た気づきをベースにしているので、ぜひ本書も読んでみてくだ...",
         "category": "AI・技術",
         "rss_category": "",
         "image_url": ""
