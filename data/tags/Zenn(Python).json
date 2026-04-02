@@ -1,15 +1,85 @@
 {
   "site": "Zenn(Python)",
-  "last_updated": "2026-04-02T10:14:50.560698",
-  "total_articles": 3247,
+  "last_updated": "2026-04-02T11:13:15.457296",
+  "total_articles": 3259,
   "articles_by_date": {
     "本日": [
+      {
+        "title": "Docker 上の JupyterLab でネットワーク切断後も実行を継続するためのメモ",
+        "url": "https://zenn.dev/starai_org/articles/9c9950aee1143d",
+        "site": "Zenn(Python)",
+        "published": "2026-04-02T08:39:51Z",
+        "description": "tl;dr\n\nJupyter Server 側の設定と JupyterLab 側の設定を組み合わせることで、ブラウザの切断後もカーネル実行を継続させることができる\n重要なのはベースイメージではなく、MappingKernelManager と kernelShutdown まわりの設定である\nブラウザを閉じたりリロードしたあとも実行そのものは継続しうるが、セル出力は復元されない場合がある\n長時間タ...",
+        "category": "開発",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "インビジブル・ハンドシェイク：CharlesとHTTP CanaryによるAndroidトラフィック解析の極意",
+        "url": "https://zenn.dev/onlineproxy/articles/20e586eef30a54",
+        "site": "Zenn(Python)",
+        "published": "2026-04-02T08:16:47Z",
+        "description": "デジタルの世界は、一連の静かで迅速な「会話」の上に成り立っています。スマートフォンのあらゆるアプリは、ネットワーク越しに常にデータをささやき、あるいは叫んでいます。開発者やセキュリティリサーチャーにとって、それらの会話を聞き取れないことは、視界ゼロで飛行機を操縦するようなものです。動いていることはわかっても、障害物がどこにあるのか、エンジンが期待通りに動いているのかを知る術はありません。\nデスクト...",
+        "category": "開発",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "LLMチャットをやめて「思考ログ再利用システム」を作った話（Sigma-Eta System）",
+        "url": "https://zenn.dev/kota26/articles/453d6c27872792",
+        "site": "Zenn(Python)",
+        "published": "2026-04-02T07:25:05Z",
+        "description": "title: \"Sigma-Eta System: ローカルLLMチャットを turn / round / role / memory reuse で構造化してみた\"\n\n\n Sigma-Eta System: ローカルLLMチャットを turn / round / role / memory reuse で構造化してみた\nローカル LLM を使ったチャットアプリを作るとき、最初は「UI からモデル...",
+        "category": "開発",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "Python × Claude API 本番運用ガイド：コスト最適化からテスト戦略まで",
+        "url": "https://zenn.dev/ztmyo/books/claude-api-practical-guide",
+        "site": "Zenn(Python)",
+        "published": "2026-04-02T07:24:03Z",
+        "description": "Claude API を Python で本番運用するための実践ガイド。Pythonic な設計パターン、非同期処理、コスト50%削減テクニック、LLM出力のテスト手法、FastAPI/Django統合、OpenAIからの移行パスまで。「動くコード」から「運用できるコード」へ。",
+        "category": "開発",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "日本の法体系*をGitにした",
+        "url": "https://zenn.dev/saqula/articles/2eb75eb771b758",
+        "site": "Zenn(Python)",
+        "published": "2026-04-02T07:14:47Z",
+        "description": "1. 日本の法体系[1]をGitにした\n日本の法体系[1:1]をGitにしました。\nつまり、\n\n有効な法律がファイルシステムの上に構造化され\n改正法をCommitに写像し\nCommitのdiffが新旧対照表になる\n\nをやりました。ネーミングは安直にgitlawです。\nhttps://github.com/aluqas/gitlaw-jp\n\n公布ブランチのグラフ（仮）\n!\nこの記事は典拠の調査やコー...",
+        "category": "開発",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "スクレイピングデータの保存設計【DB・CSV・データモデルの選び方】",
+        "url": "https://zenn.dev/datajournal1/articles/4806e347eb51d0",
+        "site": "Zenn(Python)",
+        "published": "2026-04-02T06:25:54Z",
+        "description": "スクレイピングデータの保存設計【DB・CSV・データモデルの選び方】\n!\n本記事で紹介する手法は、対象サイトの利用規約を遵守した上でのデータ収集を前提としています。商用利用の際は必ず各サイトの規約を確認してください。\n\n\n はじめに\nスクレイピングでデータを取得したはいいが、どこにどう保存すればいいのか迷った経験はありませんか？\n最初のプロジェクトでは「とりあえずCSVに書き出す」という実装にして...",
+        "category": "開発",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "Python3.13まででUUIDv7を利用したいあなたに..",
+        "url": "https://zenn.dev/timoneko/articles/dee5374bc3cc61",
+        "site": "Zenn(Python)",
+        "published": "2026-04-02T06:21:37Z",
+        "description": "python version 3.14以降では\nuuid.uuid7()\nこれを呼び出すだけで終わりです。\n\n Pythonでの(X進数)表現\nPythonの2進数（バイナリ）リテラルのプレフィクスは以下\n\n0b = 2進数\n0x = 16進数\n0o = 8進数\nこれは押さえておきましょう。\n\n UUID V7の構造\n\nRFC仕様では rand_a(12bit) + variant(2bit) +...",
+        "category": "開発",
+        "rss_category": "",
+        "image_url": ""
+      },
       {
         "title": "[Azure WebJob] Oryx を捨てたら WebJob 実装がシンプルになった話",
         "url": "https://zenn.dev/mannmoss/articles/c6020d80052583",
         "site": "Zenn(Python)",
         "published": "2026-04-02T06:05:54Z",
-        "description": "目次\n\n はじめに\n本記事では、Azure App Service Linux上でWebJobを動かす際に、Oryxビルドを使わずに依存パッケージを解決する方法を紹介します。\nCI/CDパイプライン上で事前に依存パッケージをインストールしてzipに同梱するPre-Build方式を採用し、Oryxに頼らず安定してWebJobを動かすまでの手順を解説します。\n\n 参考記事\nhttps://medium...",
+        "description": "目次\n\n はじめに\n本記事では、Azure App Service Linux上でWebJobを動かす際に、Oryxビルドを使わずに依存パッケージを解決する方法を紹介します。\n事前に依存パッケージをインストールしてzipに同梱するPre-Build方式を採用し、Oryxに頼らず安定してWebJobを動かすまでの手順を解説します。\n\n 参考記事\nhttps://medium.com/@sachint...",
         "category": "開発",
         "rss_category": "",
         "image_url": ""
@@ -65,6 +135,16 @@
         "image_url": ""
       },
       {
+        "title": "AIエージェントフレームワーク実装完全ガイド2026：CrewAI、LangGraph、Claudeで学ぶマルチエージェントシステム構築",
+        "url": "https://zenn.dev/tkaimirai/articles/a53abe00f5dfca",
+        "site": "Zenn(Python)",
+        "published": "2026-04-01T23:19:03Z",
+        "description": "はじめに\n2026年現在、AIエージェント開発は市場の実用段階に入りました。企業での採用が加速する中、開発者に求められるのは複数フレームワークを使い分けられる実践的スキルです。\nこの記事では、3つの主要フレームワークを使って、同じビジネスロジック（Pokémon情報検索・分析システム）をハンズオン形式で実装します。各フレームワークの特徴、長所・短所を実装を通じて理解できます。\n\n\n 実装するシステ...",
+        "category": "開発",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
         "title": "helix-agents: Ollama / Codex / OpenAI を 1 つの MCP で扱う",
         "url": "https://zenn.dev/tsunamayo7/articles/helix-agents-multi-provider-mcp",
         "site": "Zenn(Python)",
@@ -75,11 +155,11 @@
         "image_url": ""
       },
       {
-        "title": "行政書士・宅建士がPythonで国土交通省APIを叩いて保育園・介護施設マップを作った話",
+        "title": "行政書士/宅建士がPythonで国土交通省APIを叩いて保育園・介護施設マップを作った話",
         "url": "https://zenn.dev/rikusat/articles/0260778184b1cc",
         "site": "Zenn(Python)",
         "published": "2026-04-01T16:23:57Z",
-        "description": "行政書士・宅建士がPythonで国土交通省APIを叩いて保育園・介護施設マップを作った話\n\n はじめに\n「保育園の送迎で路上駐車するしかない」\n「訪問介護のヘルパーが駐車できなくて時間通りに行けない」\nこれを解決するサービスを作っています。\n私は行政書士・宅建士です。ある日この問題に気づいてから、どうしても放っておけなくなりました。近所の月極駐車場の「空き時間」を保育園・介護施設の送迎ドライバーに...",
+        "description": "行政書士/宅建士がPythonで国土交通省APIを叩いて保育園・介護施設マップを作った話\n\n はじめに\n「保育園の送迎で路上駐車するしかない」\n「訪問介護のヘルパーが駐車できなくて時間通りに行けない」\nこれを解決するサービスを作っています。\n私は行政書士・宅建士です。ある日この問題に気づいてから、どうしても放っておけなくなりました。近所の月極駐車場の「空き時間」を保育園・介護施設の送迎ドライバーに...",
         "category": "開発",
         "rss_category": "",
         "image_url": ""
@@ -137,16 +217,6 @@
         "image_url": ""
       },
       {
-        "title": "【MarkItDown】Office/PDFをMarkdown化してRAG前処理に使う",
-        "url": "https://zenn.dev/michy/articles/db76efae494691",
-        "site": "Zenn(Python)",
-        "published": "2026-04-01T12:25:48Z",
-        "description": "はじめに\nこの記事は、Microsoftの MarkItDown を使ってOffice/PDFファイルをMarkdownに変換する手順をまとめたものです。\nRAGやLLM向けの前処理では、PDFやWordのまま保持するより、見出しや表をある程度保ったテキストにしておくと扱いやすくなります。今回は uv を使って最小構成で導入し、複数ファイルをまとめて .md に変換するところまで確認しました。\n検...",
-        "category": "開発",
-        "rss_category": "",
-        "image_url": ""
-      },
-      {
         "title": "自律エージェントの自由と制約 — 自己修正・信頼境界・ゲーム性の設計",
         "url": "https://zenn.dev/shimo4228/articles/agent-freedom-and-constraints",
         "site": "Zenn(Python)",
@@ -162,16 +232,6 @@
         "site": "Zenn(Python)",
         "published": "2026-04-01T11:11:55Z",
         "description": "1.アクアがキューでレジ待ちミスしまくった理由（リアル裏話）\nXでは軽く「キューでFIFOを実践しよう！！」って書いたけど、\n実は「スタックだと思って一番下から取っちゃって、自分の番が来なかった…」ってリアルに失敗しまくってたんだよねw\n「これをゲームにしたらみんな笑いながら覚えられるかも！」ってGrokに相談したら、\nこんなRPGになったよ♡\n\n 2.スタックとキューの基本をおさらい！初心者が一...",
-        "category": "開発",
-        "rss_category": "",
-        "image_url": ""
-      },
-      {
-        "title": "Claude CodeのSkillsでハーネスエンジニアリングを実装した — ルール自動生成でコード品質を継続改善する",
-        "url": "https://zenn.dev/shintaroamaike/articles/df3ecc0ddee047",
-        "site": "Zenn(Python)",
-        "published": "2026-04-01T10:34:18Z",
-        "description": "はじめに\nCLAUDE.md にプロジェクトのルールを書けば Claude Code は守ってくれます。\nでも、そのルールを書くのは結局あなた自身です。\npathlib.Path を使うこと、Decimal で金額計算すること、bare except を避けること——\nチームの暗黙知をすべて文章に起こし、漏れなく管理し続けるのは意外と手間がかかります。\nAutoHarness スキルはそのルール生...",
         "category": "開発",
         "rss_category": "",
         "image_url": ""
@@ -451,11 +511,81 @@
     ],
     "2026-04": [
       {
+        "title": "Docker 上の JupyterLab でネットワーク切断後も実行を継続するためのメモ",
+        "url": "https://zenn.dev/starai_org/articles/9c9950aee1143d",
+        "site": "Zenn(Python)",
+        "published": "2026-04-02T08:39:51Z",
+        "description": "tl;dr\n\nJupyter Server 側の設定と JupyterLab 側の設定を組み合わせることで、ブラウザの切断後もカーネル実行を継続させることができる\n重要なのはベースイメージではなく、MappingKernelManager と kernelShutdown まわりの設定である\nブラウザを閉じたりリロードしたあとも実行そのものは継続しうるが、セル出力は復元されない場合がある\n長時間タ...",
+        "category": "開発",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "インビジブル・ハンドシェイク：CharlesとHTTP CanaryによるAndroidトラフィック解析の極意",
+        "url": "https://zenn.dev/onlineproxy/articles/20e586eef30a54",
+        "site": "Zenn(Python)",
+        "published": "2026-04-02T08:16:47Z",
+        "description": "デジタルの世界は、一連の静かで迅速な「会話」の上に成り立っています。スマートフォンのあらゆるアプリは、ネットワーク越しに常にデータをささやき、あるいは叫んでいます。開発者やセキュリティリサーチャーにとって、それらの会話を聞き取れないことは、視界ゼロで飛行機を操縦するようなものです。動いていることはわかっても、障害物がどこにあるのか、エンジンが期待通りに動いているのかを知る術はありません。\nデスクト...",
+        "category": "開発",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "LLMチャットをやめて「思考ログ再利用システム」を作った話（Sigma-Eta System）",
+        "url": "https://zenn.dev/kota26/articles/453d6c27872792",
+        "site": "Zenn(Python)",
+        "published": "2026-04-02T07:25:05Z",
+        "description": "title: \"Sigma-Eta System: ローカルLLMチャットを turn / round / role / memory reuse で構造化してみた\"\n\n\n Sigma-Eta System: ローカルLLMチャットを turn / round / role / memory reuse で構造化してみた\nローカル LLM を使ったチャットアプリを作るとき、最初は「UI からモデル...",
+        "category": "開発",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "Python × Claude API 本番運用ガイド：コスト最適化からテスト戦略まで",
+        "url": "https://zenn.dev/ztmyo/books/claude-api-practical-guide",
+        "site": "Zenn(Python)",
+        "published": "2026-04-02T07:24:03Z",
+        "description": "Claude API を Python で本番運用するための実践ガイド。Pythonic な設計パターン、非同期処理、コスト50%削減テクニック、LLM出力のテスト手法、FastAPI/Django統合、OpenAIからの移行パスまで。「動くコード」から「運用できるコード」へ。",
+        "category": "開発",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "日本の法体系*をGitにした",
+        "url": "https://zenn.dev/saqula/articles/2eb75eb771b758",
+        "site": "Zenn(Python)",
+        "published": "2026-04-02T07:14:47Z",
+        "description": "1. 日本の法体系[1]をGitにした\n日本の法体系[1:1]をGitにしました。\nつまり、\n\n有効な法律がファイルシステムの上に構造化され\n改正法をCommitに写像し\nCommitのdiffが新旧対照表になる\n\nをやりました。ネーミングは安直にgitlawです。\nhttps://github.com/aluqas/gitlaw-jp\n\n公布ブランチのグラフ（仮）\n!\nこの記事は典拠の調査やコー...",
+        "category": "開発",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "スクレイピングデータの保存設計【DB・CSV・データモデルの選び方】",
+        "url": "https://zenn.dev/datajournal1/articles/4806e347eb51d0",
+        "site": "Zenn(Python)",
+        "published": "2026-04-02T06:25:54Z",
+        "description": "スクレイピングデータの保存設計【DB・CSV・データモデルの選び方】\n!\n本記事で紹介する手法は、対象サイトの利用規約を遵守した上でのデータ収集を前提としています。商用利用の際は必ず各サイトの規約を確認してください。\n\n\n はじめに\nスクレイピングでデータを取得したはいいが、どこにどう保存すればいいのか迷った経験はありませんか？\n最初のプロジェクトでは「とりあえずCSVに書き出す」という実装にして...",
+        "category": "開発",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "Python3.13まででUUIDv7を利用したいあなたに..",
+        "url": "https://zenn.dev/timoneko/articles/dee5374bc3cc61",
+        "site": "Zenn(Python)",
+        "published": "2026-04-02T06:21:37Z",
+        "description": "python version 3.14以降では\nuuid.uuid7()\nこれを呼び出すだけで終わりです。\n\n Pythonでの(X進数)表現\nPythonの2進数（バイナリ）リテラルのプレフィクスは以下\n\n0b = 2進数\n0x = 16進数\n0o = 8進数\nこれは押さえておきましょう。\n\n UUID V7の構造\n\nRFC仕様では rand_a(12bit) + variant(2bit) +...",
+        "category": "開発",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
         "title": "[Azure WebJob] Oryx を捨てたら WebJob 実装がシンプルになった話",
         "url": "https://zenn.dev/mannmoss/articles/c6020d80052583",
         "site": "Zenn(Python)",
         "published": "2026-04-02T06:05:54Z",
-        "description": "目次\n\n はじめに\n本記事では、Azure App Service Linux上でWebJobを動かす際に、Oryxビルドを使わずに依存パッケージを解決する方法を紹介します。\nCI/CDパイプライン上で事前に依存パッケージをインストールしてzipに同梱するPre-Build方式を採用し、Oryxに頼らず安定してWebJobを動かすまでの手順を解説します。\n\n 参考記事\nhttps://medium...",
+        "description": "目次\n\n はじめに\n本記事では、Azure App Service Linux上でWebJobを動かす際に、Oryxビルドを使わずに依存パッケージを解決する方法を紹介します。\n事前に依存パッケージをインストールしてzipに同梱するPre-Build方式を採用し、Oryxに頼らず安定してWebJobを動かすまでの手順を解説します。\n\n 参考記事\nhttps://medium.com/@sachint...",
         "category": "開発",
         "rss_category": "",
         "image_url": ""
@@ -511,6 +641,16 @@
         "image_url": ""
       },
       {
+        "title": "AIエージェントフレームワーク実装完全ガイド2026：CrewAI、LangGraph、Claudeで学ぶマルチエージェントシステム構築",
+        "url": "https://zenn.dev/tkaimirai/articles/a53abe00f5dfca",
+        "site": "Zenn(Python)",
+        "published": "2026-04-01T23:19:03Z",
+        "description": "はじめに\n2026年現在、AIエージェント開発は市場の実用段階に入りました。企業での採用が加速する中、開発者に求められるのは複数フレームワークを使い分けられる実践的スキルです。\nこの記事では、3つの主要フレームワークを使って、同じビジネスロジック（Pokémon情報検索・分析システム）をハンズオン形式で実装します。各フレームワークの特徴、長所・短所を実装を通じて理解できます。\n\n\n 実装するシステ...",
+        "category": "開発",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
         "title": "helix-agents: Ollama / Codex / OpenAI を 1 つの MCP で扱う",
         "url": "https://zenn.dev/tsunamayo7/articles/helix-agents-multi-provider-mcp",
         "site": "Zenn(Python)",
@@ -521,11 +661,11 @@
         "image_url": ""
       },
       {
-        "title": "行政書士・宅建士がPythonで国土交通省APIを叩いて保育園・介護施設マップを作った話",
+        "title": "行政書士/宅建士がPythonで国土交通省APIを叩いて保育園・介護施設マップを作った話",
         "url": "https://zenn.dev/rikusat/articles/0260778184b1cc",
         "site": "Zenn(Python)",
         "published": "2026-04-01T16:23:57Z",
-        "description": "行政書士・宅建士がPythonで国土交通省APIを叩いて保育園・介護施設マップを作った話\n\n はじめに\n「保育園の送迎で路上駐車するしかない」\n「訪問介護のヘルパーが駐車できなくて時間通りに行けない」\nこれを解決するサービスを作っています。\n私は行政書士・宅建士です。ある日この問題に気づいてから、どうしても放っておけなくなりました。近所の月極駐車場の「空き時間」を保育園・介護施設の送迎ドライバーに...",
+        "description": "行政書士/宅建士がPythonで国土交通省APIを叩いて保育園・介護施設マップを作った話\n\n はじめに\n「保育園の送迎で路上駐車するしかない」\n「訪問介護のヘルパーが駐車できなくて時間通りに行けない」\nこれを解決するサービスを作っています。\n私は行政書士・宅建士です。ある日この問題に気づいてから、どうしても放っておけなくなりました。近所の月極駐車場の「空き時間」を保育園・介護施設の送迎ドライバーに...",
         "category": "開発",
         "rss_category": "",
         "image_url": ""
@@ -581,16 +721,6 @@
         "image_url": ""
       },
       {
-        "title": "【MarkItDown】Office/PDFをMarkdown化してRAG前処理に使う",
-        "url": "https://zenn.dev/michy/articles/db76efae494691",
-        "site": "Zenn(Python)",
-        "published": "2026-04-01T12:25:48Z",
-        "description": "はじめに\nこの記事は、Microsoftの MarkItDown を使ってOffice/PDFファイルをMarkdownに変換する手順をまとめたものです。\nRAGやLLM向けの前処理では、PDFやWordのまま保持するより、見出しや表をある程度保ったテキストにしておくと扱いやすくなります。今回は uv を使って最小構成で導入し、複数ファイルをまとめて .md に変換するところまで確認しました。\n検...",
-        "category": "開発",
-        "rss_category": "",
-        "image_url": ""
-      },
-      {
         "title": "自律エージェントの自由と制約 — 自己修正・信頼境界・ゲーム性の設計",
         "url": "https://zenn.dev/shimo4228/articles/agent-freedom-and-constraints",
         "site": "Zenn(Python)",
@@ -606,16 +736,6 @@
         "site": "Zenn(Python)",
         "published": "2026-04-01T11:11:55Z",
         "description": "1.アクアがキューでレジ待ちミスしまくった理由（リアル裏話）\nXでは軽く「キューでFIFOを実践しよう！！」って書いたけど、\n実は「スタックだと思って一番下から取っちゃって、自分の番が来なかった…」ってリアルに失敗しまくってたんだよねw\n「これをゲームにしたらみんな笑いながら覚えられるかも！」ってGrokに相談したら、\nこんなRPGになったよ♡\n\n 2.スタックとキューの基本をおさらい！初心者が一...",
-        "category": "開発",
-        "rss_category": "",
-        "image_url": ""
-      },
-      {
-        "title": "Claude CodeのSkillsでハーネスエンジニアリングを実装した — ルール自動生成でコード品質を継続改善する",
-        "url": "https://zenn.dev/shintaroamaike/articles/df3ecc0ddee047",
-        "site": "Zenn(Python)",
-        "published": "2026-04-01T10:34:18Z",
-        "description": "はじめに\nCLAUDE.md にプロジェクトのルールを書けば Claude Code は守ってくれます。\nでも、そのルールを書くのは結局あなた自身です。\npathlib.Path を使うこと、Decimal で金額計算すること、bare except を避けること——\nチームの暗黙知をすべて文章に起こし、漏れなく管理し続けるのは意外と手間がかかります。\nAutoHarness スキルはそのルール生...",
         "category": "開発",
         "rss_category": "",
         "image_url": ""
