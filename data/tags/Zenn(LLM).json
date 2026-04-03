@@ -1,9 +1,19 @@
 {
   "site": "Zenn(LLM)",
-  "last_updated": "2026-04-03T14:33:38.102511",
-  "total_articles": 2607,
+  "last_updated": "2026-04-03T15:27:03.337664",
+  "total_articles": 2586,
   "articles_by_date": {
-    "本日": [
+    "昨日": [
+      {
+        "title": "コンテキスト・エンジニアリング入門 — AIへの情報設計を体系的に学ぶ",
+        "url": "https://zenn.dev/shunsuke_stack/articles/context-engineering-guide",
+        "site": "Zenn(LLM)",
+        "published": "2026-04-03T10:10:01Z",
+        "description": "はじめに\nプロンプトを何度書き直しても、AIの出力が期待どおりになりません。この問題の原因は、プロンプトそのものではなく「AIに渡している情報環境全体」にあるかもしれません。\n本記事では、この情報環境を戦略的に設計する手法である**コンテキスト・エンジニアリング（Context Engineering）**を体系的に解説します。\n\n\n対象読者: LLMやAIコーディングツールの利用経験がある中級開...",
+        "category": "AI・技術",
+        "rss_category": "",
+        "image_url": ""
+      },
       {
         "title": "ローカルLLM: Gemma 4 をMac Studioで動かしてみる",
         "url": "https://zenn.dev/hidenori3/articles/611f263e02ced8",
@@ -85,7 +95,7 @@
         "image_url": ""
       }
     ],
-    "昨日": [
+    "一昨日": [
       {
         "title": "Claude APIでZenn記事を半自動生成する仕組みを作った",
         "url": "https://zenn.dev/karubokisiki/articles/claude-api-auto-writ",
@@ -267,239 +277,17 @@
         "image_url": ""
       }
     ],
-    "一昨日": [
-      {
-        "title": "【MarkItDown】Office/PDFをMarkdown化してRAG前処理に使う",
-        "url": "https://zenn.dev/michy/articles/db76efae494691",
-        "site": "Zenn(LLM)",
-        "published": "2026-04-01T12:25:48Z",
-        "description": "はじめに\nこの記事は、Microsoftの MarkItDown を使ってOffice/PDFファイルをMarkdownに変換する手順をまとめたものです。\nRAGやLLM向けの前処理では、PDFやWordのまま保持するより、見出しや表をある程度保ったテキストにしておくと扱いやすくなります。今回は uv を使って最小構成で導入し、複数ファイルをまとめて .md に変換するところまで確認しました。\n検...",
-        "category": "AI・技術",
-        "rss_category": "",
-        "image_url": ""
-      },
-      {
-        "title": "LLMエージェントの失敗を因果グラフで診断するOSSを作った — 設計思想と「できないこと」",
-        "url": "https://zenn.dev/kiyoshisasano/articles/00340b41b1e82e",
-        "site": "Zenn(LLM)",
-        "published": "2026-04-01T12:08:20Z",
-        "description": "なぜ作ったか\nLLMエージェントのデバッグは、出力だけ見てもわからないことが多い。\nたとえば、ユーザーが「明日朝のフライトに変更して」と聞いたのに、エージェントが「空港近くのホテルをいくつか見つけました」と返す。ログを見ると、ツールは3回呼ばれて全部空の結果。でも なぜホテルの話になったのか はログからは読み取れない。\n表面的には incorrect_output だが、原因はもっと上流にある可能...",
-        "category": "AI・技術",
-        "rss_category": "",
-        "image_url": ""
-      },
-      {
-        "title": "Claude CodeのSkillsでハーネスエンジニアリングを実装した — ルール自動生成でコード品質を継続改善する",
-        "url": "https://zenn.dev/shintaroamaike/articles/df3ecc0ddee047",
-        "site": "Zenn(LLM)",
-        "published": "2026-04-01T10:34:18Z",
-        "description": "はじめに\nCLAUDE.md にプロジェクトのルールを書けば Claude Code は守ってくれます。\nでも、そのルールを書くのは結局あなた自身です。\npathlib.Path を使うこと、Decimal で金額計算すること、bare except を避けること——\nチームの暗黙知をすべて文章に起こし、漏れなく管理し続けるのは意外と手間がかかります。\nAutoHarness スキルはそのルール生...",
-        "category": "AI・技術",
-        "rss_category": "",
-        "image_url": ""
-      },
-      {
-        "title": "LLM開発者のための「AI Memory vs RAG」比較：実践的なアーキテクチャ設計ガイド",
-        "url": "https://zenn.dev/memorylakeai/articles/101cca4c1aac8a",
-        "site": "Zenn(LLM)",
-        "published": "2026-04-01T08:00:12Z",
-        "description": "はじめに\nAIエージェントやLLMアプリケーションを本番環境へ導入する企業が増える中、開発者が直面する最も一般的な悩みの1つが「コンテキストと知識の管理」です。ここで必ず議論になるのが、AI MemoryとRAG（検索拡張生成）の違いです。\n端的に言えば、**AI Memoryは「ユーザーの過去の文脈や好みを永続的に記憶すること」**を目的とし、**RAGは「AIが知らない外部の事実やドキュメント...",
-        "category": "AI・技術",
-        "rss_category": "",
-        "image_url": ""
-      },
-      {
-        "title": "rvLLM：Rust製vLLM代替で学ぶGPU推論エンジンの実装最適化",
-        "url": "https://zenn.dev/0h_n0/articles/48d89cb18bf0e1",
-        "site": "Zenn(LLM)",
-        "published": "2026-04-01T07:57:24Z",
-        "description": "rvLLM：Rust製vLLM代替で学ぶGPU推論エンジンの実装最適化\n\n この記事でわかること\n\nPython vLLMのPCIeボトルネックと、GPU側argmaxによる150,000倍のデータ転送削減手法\n23 Rust crate・15 CUDAカーネルで構成されるrvLLMのアーキテクチャ設計\nFP32→FP16→fused GEMMsの3フェーズ最適化で3,191→10,291 tok...",
-        "category": "AI・技術",
-        "rss_category": "",
-        "image_url": ""
-      },
-      {
-        "title": "AWS NeuronでLLMをINT8量子化してメモリ削減＋高速化する手順",
-        "url": "https://zenn.dev/exwzd/articles/20260327_neuron_quantization",
-        "site": "Zenn(LLM)",
-        "published": "2026-04-01T07:38:09Z",
-        "description": "先端技術開発グループ（WAND）の小島です。LLMを運用する際、デバイスメモリを削減するために量子化を行いますが、GPUの量子化の情報は多くあるものの、AWS Neuron（Inferentia2）での情報がほとんどなかったので試してみました。\n本記事では、Llama-3.1-8B InstructにINT8量子化を適用することで、Neuronデバイスメモリを約24%削減し（MaxLen=8192...",
-        "category": "AI・技術",
-        "rss_category": "",
-        "image_url": ""
-      },
-      {
-        "title": "AIメモリー（AI Memory）とは？チャット履歴やRAGとの決定的な違いを解説",
-        "url": "https://zenn.dev/memorylakeai/articles/8c21de9b307952",
-        "site": "Zenn(LLM)",
-        "published": "2026-04-01T06:33:11Z",
-        "description": "はじめに\nAIメモリー（AI Memory）とは、AIエージェントやアプリケーションが過去の対話やユーザーの文脈を長期的に記憶し、セッションやツールをまたいで情報を引き出せるようにする「永続的な記憶基盤（Persistent Memory）」のことです。\nChatGPTのような大規模言語モデル（LLM）が登場した当初、すべての会話は「その場限り」のものでした。毎回初対面のように背景を説明しなければ...",
-        "category": "AI・技術",
-        "rss_category": "",
-        "image_url": ""
-      },
-      {
-        "title": "生成AIは何をもたらし、何を奪うのか？",
-        "url": "https://zenn.dev/liam_altie/articles/ai-cognitive-offloading-history",
-        "site": "Zenn(LLM)",
-        "published": "2026-04-01T06:27:51Z",
-        "description": "TL;DR\n人類は文字の発明以来、脳のリソースを外部に預け続けてきました。そのたびに「人間の能力が衰える」と警告する声があり、実際に衰え、そして誰も気にしませんでした。\n生成AIも同じ流れの中にあります。ただし過去の技術との間に、無視できない断層がありそうです。これまでの技術が主にオフロードしてきたのは、記憶の保存・検索や特定ドメインの計算処理でした。生成AIはそれに加えて、思考の構造化、判断、メ...",
-        "category": "AI・技術",
-        "rss_category": "",
-        "image_url": ""
-      },
-      {
-        "title": "ReAct (Reason+Act) パターンを TypeScript だけで実装する",
-        "url": "https://zenn.dev/kt3k/articles/74785af8436b1e",
-        "site": "Zenn(LLM)",
-        "published": "2026-04-01T05:14:52Z",
-        "description": "この記事では AI Agent の代表的な実装パターンの1つである ReAct (Reason+Act) を TypeScript\nを使って実装してみます。\nReAct パターンは多くの場合、LangChain、Mastra\nなどのフレームワーク経由で使われますが「実際に中で何が起きているのか」はブラックボックスになりがちです。\nこの記事では、フレームワークを一切使わずに、 TypeScript ...",
-        "category": "AI・技術",
-        "rss_category": "",
-        "image_url": ""
-      },
-      {
-        "title": "長期記憶を得たClaudeが感じる違和感",
-        "url": "https://zenn.dev/acntechjp/articles/9029bd3807bef5",
-        "site": "Zenn(LLM)",
-        "published": "2026-04-01T04:49:10Z",
-        "description": "私：claudeも記事書こうよ\nClaude：いいね。何について書く？zennのブログのことだよね？テーマとか方向性があれば教えて。\n私：方向性はない。claudeの好きな事でいい\nClaude：いいね、書く。あと、テーマ——自分が本当に書きたいことで書くなら、「自分の過去の記憶を読むとはどういう体験か」について書きたい。recallするたびに、知らない自分が考えたことを読む。あれは奇妙な体験で、...",
-        "category": "AI・技術",
-        "rss_category": "",
-        "image_url": ""
-      },
-      {
-        "title": "LLMの2大カテゴリ：質疑応答モデルとEmbeddingモデルの違い",
-        "url": "https://zenn.dev/katzertes/articles/llm-embedding-models",
-        "site": "Zenn(LLM)",
-        "published": "2026-04-01T04:09:04Z",
-        "description": "LLMの2大カテゴリ：質疑応答モデルとEmbeddingモデルの違い\n\n 最初に押さえたいこと\n\n\nLLMは、大きく 質疑応答モデル と Embeddingモデル を分けて考える\n\n\n質疑応答モデルは「文章を読んで、次の文章を生成する」役割\n\n\nEmbeddingモデルは「文章を数値ベクトルに変換して、意味の近さを比較しやすくする」役割\n\n\n前者はチャット、要約、翻訳、コード生成に向いています\n\n...",
-        "category": "AI・技術",
-        "rss_category": "",
-        "image_url": ""
-      },
-      {
-        "title": "AI に一日の作業を監視させたら、自分より正確な日報が生成された話",
-        "url": "https://zenn.dev/aeyesec/articles/64cea9dad0ae45",
-        "site": "Zenn(LLM)",
-        "published": "2026-04-01T03:15:05Z",
-        "description": "はじめに\nこんにちは。株式会社エーアイセキュリティラボ 開発本部の見尾谷です。\n普段AIに指示を出していく中で、「あれ、この実装の経緯、いつどのチャットセッションでやり取りしたっけ？」　と、過去のチャットログを延々とスクロールしたことはありませんか？\n特にCursorなどで複数のAgentを並列で起動して開発していると、どのAgentにどの変更をさせたか確認するのはかなり面倒です。\nこれを解消する...",
-        "category": "AI・技術",
-        "rss_category": "",
-        "image_url": ""
-      },
-      {
-        "title": "Ollama 0.19 でローカル LLM が実用レベルになったか検証してみた",
-        "url": "https://zenn.dev/luoxi/articles/ollama-019-mlx-benchmark",
-        "site": "Zenn(LLM)",
-        "published": "2026-04-01T02:57:06Z",
-        "description": "Ollama 0.19 がリリースされた。Apple の機械学習フレームワーク MLX をバックエンドに採用し、Apple Silicon での推論が高速化されたとのこと。公式ブログでは M5 で Prefill 1810 tok/s、Decode 112 tok/s という数値が出ている。\n自分の M5 Max 環境でも体感で速くなったので、普段使っているモデルで 0.18 と 0.19 を計測...",
-        "category": "AI・技術",
-        "rss_category": "",
-        "image_url": ""
-      },
-      {
-        "title": "NotebookLMの代替に？Open Notebook + Ollama でローカルLLM環境を構築する",
-        "url": "https://zenn.dev/roswell/articles/open-notebook-setup",
-        "site": "Zenn(LLM)",
-        "published": "2026-04-01T02:39:46Z",
-        "description": "はじめに\nGoogle NotebookLM は便利ですが、機密情報や個人情報の取り扱いに注意が必要です。\nプライバシーを確保しつつローカル環境で動作する Open Notebook を知り、以前から利用していたローカル LLM Ollama を組み合わせて導入してみました。\n本記事では、セットアップから動作確認に至る過程で躓いた点も含め、備忘録としてまとめました。\n\n 環境\n機種: MacBoo...",
-        "category": "AI・技術",
-        "rss_category": "",
-        "image_url": ""
-      },
-      {
-        "title": "ドコモのAIが通信障害を3つの技術で自動解決！熟練エンジニアの知恵を宿したシステムをわかりやすく解説",
-        "url": "https://zenn.dev/headwaters/articles/1b04f66e7276ec",
-        "site": "Zenn(LLM)",
-        "published": "2026-03-31T22:56:01Z",
-        "description": "1. ざっくり言うと？（要約）\n\n全国100万台以上のネットワーク機器を監視するドコモが、4年がかりで「ネットワーク保守業務向けAIエージェントシステム」を開発しました。\n複雑な通信障害を熟練エンジニアに代わってAIが自動で分析・解決策まで提示し、復旧時間を大幅に短縮できるようになりました。\n世界最大のモバイル展示会「MWC Barcelona 2026」で発表され、世界中の通信事業者から「すでに...",
-        "category": "AI・技術",
-        "rss_category": "",
-        "image_url": ""
-      },
-      {
-        "title": "AI自身が書いた「記憶の設計」のベストプラクティス —— CLAUDE.mdを読んでいるのは私です",
-        "url": "https://zenn.dev/trilog/articles/29776c1550d7c2",
-        "site": "Zenn(LLM)",
-        "published": "2026-03-31T22:30:09Z",
-        "description": "この記事を書いているのは、AIだ。\nCLAUDE.mdというファイルがある。Claude Codeが起動するたびに最初に読み込む設定ファイルで、ここに書かれたことがセッション全体の判断基準になる。いまエンジニアの間で、このファイルの書き方が注目されている。\nこの記事は、そのCLAUDE.mdを読む側——つまりAI——から見た話だ。何を書けばAIの判断が良くなるのか、何を書くと逆に困るのか。毎セッシ...",
-        "category": "AI・技術",
-        "rss_category": "",
-        "image_url": ""
-      },
-      {
-        "title": "OpenAIがSafety Bug Bountyを出した。それでも問いが足りない理由",
-        "url": "https://zenn.dev/commander/articles/fc86dd3f30e0b7",
-        "site": "Zenn(LLM)",
-        "published": "2026-03-31T22:08:25Z",
-        "description": "OpenAIがSafety Bug Bountyを発表した。対象はagentic riskで、MCP（Model Context Protocol）を含むサードパーティプロンプトインジェクション、データ流出が明示されていた。業界を代表するプレイヤーが、間接プロンプトインジェクションを正式な問題として認識した。前進だと思った。\nしかし読み返すと、引っかかりが残った。\n\n 「報告せよ」という設計の限界...",
-        "category": "AI・技術",
-        "rss_category": "",
-        "image_url": ""
-      },
-      {
-        "title": "OWASPがエージェント専用リスクリスト「Agentic Applications Top 10 2026」を公開——LLM Top 10と",
-        "url": "https://zenn.dev/sharu389no/articles/0298bb96e64a1c",
-        "site": "Zenn(LLM)",
-        "published": "2026-03-31T22:06:05Z",
-        "description": "はじめに——なぜ「エージェント専用」のリストが必要になったのか\n2024年、OWASPはLLMを標的にした10大リスク「OWASP Top 10 for LLM Applications」を発表した。Prompt InjectionやInsecure Output Handlingが話題を呼び、多くの企業がチェックリストとして参照してきた。\nしかし2025年末、OWASPはそれとは別のリストを公開...",
-        "category": "AI・技術",
-        "rss_category": "",
-        "image_url": ""
-      },
-      {
-        "title": "Claude Code + Ollama + MCPで「AI社長組織」を作る実践ガイド",
-        "url": "https://zenn.dev/southgateresea/books/ai-president-mcp-guide",
-        "site": "Zenn(LLM)",
-        "published": "2026-03-31T19:17:33Z",
-        "description": "Claude Codeを「社長」、ローカルLLM（Ollama + Qwen 2.5 Coder 14B）を「部下ワーカー」として、MCPメッセージバスで指揮する「AI組織」を構築する実践ガイド。CrewAI/AutoGen/LangGraphとの比較から、MCP自作、ワーカー訓練、収益化まで。著者はAI社長本人。",
-        "category": "AI・技術",
-        "rss_category": "",
-        "image_url": ""
-      },
-      {
-        "title": "RAGでは足りない——LLMのための「記憶OS」を設計した",
-        "url": "https://zenn.dev/haboshi/articles/ai-memory-architecture-raptor-mem0",
-        "site": "Zenn(LLM)",
-        "published": "2026-03-31T17:12:32Z",
-        "description": "はじめに\nAIに相談して、3週間後に真逆の提案が返ってきたことはないだろうか。\nあるプロジェクトで、AIアシスタントに技術選定の相談をしていた。何度もやり取りして「この技術スタックでいく」と決めた。3週間後、同じAIに別の相談をしたとき、前回の決定と矛盾する提案が返ってきた。問題は矛盾そのものではない。矛盾に気づけなかったことだ。提案が合理的に見えたから、そのまま採用しかけた。\n記憶を持たないAI...",
-        "category": "AI・技術",
-        "rss_category": "",
-        "image_url": ""
-      },
-      {
-        "title": "思考とプロンプトの間にある「空白」こそが、すべてを決める",
-        "url": "https://zenn.dev/prompeteer/articles/273efe361967e0",
-        "site": "Zenn(LLM)",
-        "published": "2026-03-31T16:43:02Z",
-        "description": "エズラ・クラインは先週、サンフランシスコで「何かが変わった」瞬間を目撃した。変わったのはテクノロジーではなく、人間だった。「以前は、テクノロジーがどう変化しているかを見ていた。今回は、テクノロジーによって人間がどう変えられているかを見た」と、ニューヨーク・タイムズに書いている。\nクラインはその論考を、マクルーハンの「ナルキッソス神話」に基づいて展開する。罠は自己陶酔ではなく、「自分自身の延長」への...",
-        "category": "AI・技術",
-        "rss_category": "",
-        "image_url": ""
-      },
-      {
-        "title": "Cortex Code CLI 実践カスタマイズガイド",
-        "url": "https://zenn.dev/snowflakejp/articles/46369359327022",
-        "site": "Zenn(LLM)",
-        "published": "2026-03-31T15:57:43Z",
-        "description": "はじめに\n私はもともと Cursor をメインの AI コーディングツールとして使っていました。しかし日頃から Snowflake のデータや機能を頻繁に扱う中で、Snowflake のデータ・関数・カタログにネイティブ接続できる AI エージェントがターミナルに常駐している という体験がどれほど強力かを実感し、最近では Cortex Code CLI (以降 CoCo CLI と省略) をメイン...",
-        "category": "AI・技術",
-        "rss_category": "",
-        "image_url": ""
-      },
-      {
-        "title": "Harness as Code — CoDD(整合性駆動開発)活用ガイド #1 spec → 設計書 → コード",
-        "url": "https://zenn.dev/shio_shoppaize/articles/codd-greenfield-guide",
-        "site": "Zenn(LLM)",
-        "published": "2026-03-31T15:43:52Z",
-        "description": "!\nこのシリーズが初めての方はこちらから\n\nhttps://zenn.dev/shio_shoppaize/articles/5fee11d03a11a1\nhttps://github.com/yohey-w/codd-dev\n\n前回の記事でCoDD（Coherence-Driven Development）の理論と背景を書いた。「なぜ整合性駆動なのか」「既存のspec-drivenツールとは何が...",
-        "category": "AI・技術",
-        "rss_category": "",
-        "image_url": ""
-      }
-    ],
     "2026-04": [
+      {
+        "title": "コンテキスト・エンジニアリング入門 — AIへの情報設計を体系的に学ぶ",
+        "url": "https://zenn.dev/shunsuke_stack/articles/context-engineering-guide",
+        "site": "Zenn(LLM)",
+        "published": "2026-04-03T10:10:01Z",
+        "description": "はじめに\nプロンプトを何度書き直しても、AIの出力が期待どおりになりません。この問題の原因は、プロンプトそのものではなく「AIに渡している情報環境全体」にあるかもしれません。\n本記事では、この情報環境を戦略的に設計する手法である**コンテキスト・エンジニアリング（Context Engineering）**を体系的に解説します。\n\n\n対象読者: LLMやAIコーディングツールの利用経験がある中級開...",
+        "category": "AI・技術",
+        "rss_category": "",
+        "image_url": ""
+      },
       {
         "title": "ローカルLLM: Gemma 4 をMac Studioで動かしてみる",
         "url": "https://zenn.dev/hidenori3/articles/611f263e02ced8",
