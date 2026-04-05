@@ -1,15 +1,55 @@
 {
   "site": "Zenn(Python)",
-  "last_updated": "2026-04-05T09:57:28.100451",
-  "total_articles": 3288,
+  "last_updated": "2026-04-05T10:46:34.448562",
+  "total_articles": 3290,
   "articles_by_date": {
     "本日": [
+      {
+        "title": "Claude Code のリトライループで Max quota が19分で消えた話と MCP で止める方法",
+        "url": "https://zenn.dev/tsunamayo7/articles/helix-agent-retry-loop-guard-v0110",
+        "site": "Zenn(Python)",
+        "published": "2026-04-05T07:23:52Z",
+        "description": "はじめに\nClaude Code の Opus を使っていて、Max plan の5時間分クォータが19分で消えるという現象を体験した方はいないでしょうか。原因の大半は、Claude が同じツールを同じ引数で延々と呼び続けるリトライループです。\nこの記事では、その現象への対策として作った MCP サーバー helix-agent の retry_guard について紹介します。\n\n 課題: Cla...",
+        "category": "開発",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "QUBO＋＋入門：項数爆発を防ぐ否定リテラルのネイティブサポート",
+        "url": "https://zenn.dev/comp_lab/articles/2df5fe1db0bd42",
+        "site": "Zenn(Python)",
+        "published": "2026-04-05T06:31:53Z",
+        "description": "はじめに\nQUBO/HUBOで組合せ最適化問題を記述するとき，否定リテラル \\overline{x} = 1 - x が頻繁に現れます．\n素朴に \\overline{x} を 1-x に置き換えて展開すると，高次項で項数が指数的に爆発するという深刻な問題が起きます．\nQUBO++（およびPython版PyQBPP）は，否定リテラルを展開せずにそのまま保持するネイティブサポートを備えており，この項数...",
+        "category": "開発",
+        "rss_category": "",
+        "image_url": ""
+      },
       {
         "title": "コードレビューのチェックリスト",
         "url": "https://zenn.dev/chibakawamura/articles/c4e452115dbb63",
         "site": "Zenn(Python)",
         "published": "2026-04-05T05:36:08Z",
         "description": "はじめに\n自分と同じく経験の浅いジュニアエンジニアに向けて、コードレビューの基本的なチェックリストを作成してみました。レビューで何を確認すべきかを理解することで、コード品質の向上に役立てることができると考えています。自分がよく使用するPythonを中心に作成しましたが他の言語でも大きく変わることはないと思いますので参考にしていただければと思います。\n\n 基本的な品質チェック\n\n 1. 定数と設定の...",
+        "category": "開発",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "X投稿1本から note・Qiita・Zenn に自動展開するパイプラインを作った",
+        "url": "https://zenn.dev/bentenweb_fumi/articles/8vt8cvkbbfxv",
+        "site": "Zenn(Python)",
+        "published": "2026-04-05T03:35:26Z",
+        "description": "はじめに\nフリーランスの情報発信、続けていますか？\nX、ブログ、note、Qiita、Zenn。「全部やるべき」とわかっていても、1人で複数メディアを運用するのは現実的ではありません。1記事書くのに1〜2時間。それを各メディア用にフォーマット調整して投稿。週3本ペースでやると、発信だけで週10時間以上が消えます。\nそこで「1つのX投稿から、AIが自動でリライトして複数メディアに展開する」仕組みを作...",
+        "category": "開発",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "ほぼ週間Go言語 2026年4月6日",
+        "url": "https://zenn.dev/baleenstudio/articles/59aee3a7458090",
+        "site": "Zenn(Python)",
+        "published": "2026-04-05T02:48:16Z",
+        "description": "今週もプログラミング雑記からGo言語の話題を中心に気になった話題を取り上げていきます。\n\n Go言語\nhttps://go.dev/blog/type-construction-and-cycle-detection\nGo 1.26で改善された型チェッカーの型構築とサイクル検出について説明しています。Goの型チェッカーは、AST（抽象構文木）をトレースして各型の内部表現を構築します。単純な型では深...",
         "category": "開発",
         "rss_category": "",
         "image_url": ""
@@ -187,26 +227,6 @@
         "image_url": ""
       },
       {
-        "title": "AI for Science の歩き方 #6 ― マルチモーダル AI と AI コード生成",
-        "url": "https://zenn.dev/aws_japan/articles/ai4s-06-multimodal-2026",
-        "site": "Zenn(Python)",
-        "published": "2026-04-04T01:57:17Z",
-        "description": "!\n本記事は「AI for Science の歩き方」シリーズの第 6 回です。初めての方は 第 1 回 からどうぞ。\n\nこの記事のゴール: 画像・音声を扱うマルチモーダル AI の始め方と、AI コード生成で日本語からコードを書かせる方法がわかる。\nこの記事では、文章以外も扱えるマルチモーダル AI の活用法と、日本語の指示でコードを書かせる AI コード生成の実践を紹介します。第 3〜5 回で...",
-        "category": "開発",
-        "rss_category": "",
-        "image_url": ""
-      },
-      {
-        "title": "AI for Science の歩き方 #5 ― ステップ 3: ファインチューニングと継続事前学習",
-        "url": "https://zenn.dev/aws_japan/articles/ai4s-05-finetune-2026",
-        "site": "Zenn(Python)",
-        "published": "2026-04-04T01:56:02Z",
-        "description": "!\n本記事は「AI for Science の歩き方」シリーズの第 5 回です。初めての方は 第 1 回 からどうぞ。プロンプトエンジニアリングは第 3 回、RAG とエージェントは第 4 回で解説しています。\n\nこの記事のゴール: ファインチューニングが自分に必要かどうか判断でき、必要な場合の始め方がわかる。\nこの記事では、ファインチューニング・継続事前学習・知識蒸留の仕組みと、本当に必要かを見...",
-        "category": "開発",
-        "rss_category": "",
-        "image_url": ""
-      },
-      {
         "title": "初めてのGitHub Copilot CLI：1日目——インストールからCI/CDまでを一気に実践（オトナの自由研究 #10）",
         "url": "https://zenn.dev/nnakapa/articles/lab-10-copilot-cli-day1",
         "site": "Zenn(Python)",
@@ -218,16 +238,6 @@
       }
     ],
     "一昨日": [
-      {
-        "title": "日本語対応オープンソースOCRの比較 その３",
-        "url": "https://zenn.dev/piment/articles/53710c5f3ed756",
-        "site": "Zenn(Python)",
-        "published": "2026-04-03T14:30:05Z",
-        "description": "以前の比較から様々なOCRがリリースされていましたので、精度、速度を測ってみます。\nhttps://zenn.dev/piment/articles/f4bc4d95310234\nGLM-OCRがバウンディングボックスがとれないので、比較はテキストのみです。\n今回調べたのは以下\n\nTesseract\nPaddleOCR\nGLM-OCR\n\nOwOCR\n\nChromeScreenAI\nmeikiocr...",
-        "category": "開発",
-        "rss_category": "",
-        "image_url": ""
-      },
       {
         "title": "GitHub Copilot でデモ用の製造データを作る — Excel エージェントで分析デモがやりたい!",
         "url": "https://zenn.dev/microsoft/articles/copilot-generate-manufacturing-demo-data",
@@ -411,11 +421,51 @@
     ],
     "2026-04": [
       {
+        "title": "Claude Code のリトライループで Max quota が19分で消えた話と MCP で止める方法",
+        "url": "https://zenn.dev/tsunamayo7/articles/helix-agent-retry-loop-guard-v0110",
+        "site": "Zenn(Python)",
+        "published": "2026-04-05T07:23:52Z",
+        "description": "はじめに\nClaude Code の Opus を使っていて、Max plan の5時間分クォータが19分で消えるという現象を体験した方はいないでしょうか。原因の大半は、Claude が同じツールを同じ引数で延々と呼び続けるリトライループです。\nこの記事では、その現象への対策として作った MCP サーバー helix-agent の retry_guard について紹介します。\n\n 課題: Cla...",
+        "category": "開発",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "QUBO＋＋入門：項数爆発を防ぐ否定リテラルのネイティブサポート",
+        "url": "https://zenn.dev/comp_lab/articles/2df5fe1db0bd42",
+        "site": "Zenn(Python)",
+        "published": "2026-04-05T06:31:53Z",
+        "description": "はじめに\nQUBO/HUBOで組合せ最適化問題を記述するとき，否定リテラル \\overline{x} = 1 - x が頻繁に現れます．\n素朴に \\overline{x} を 1-x に置き換えて展開すると，高次項で項数が指数的に爆発するという深刻な問題が起きます．\nQUBO++（およびPython版PyQBPP）は，否定リテラルを展開せずにそのまま保持するネイティブサポートを備えており，この項数...",
+        "category": "開発",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
         "title": "コードレビューのチェックリスト",
         "url": "https://zenn.dev/chibakawamura/articles/c4e452115dbb63",
         "site": "Zenn(Python)",
         "published": "2026-04-05T05:36:08Z",
         "description": "はじめに\n自分と同じく経験の浅いジュニアエンジニアに向けて、コードレビューの基本的なチェックリストを作成してみました。レビューで何を確認すべきかを理解することで、コード品質の向上に役立てることができると考えています。自分がよく使用するPythonを中心に作成しましたが他の言語でも大きく変わることはないと思いますので参考にしていただければと思います。\n\n 基本的な品質チェック\n\n 1. 定数と設定の...",
+        "category": "開発",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "X投稿1本から note・Qiita・Zenn に自動展開するパイプラインを作った",
+        "url": "https://zenn.dev/bentenweb_fumi/articles/8vt8cvkbbfxv",
+        "site": "Zenn(Python)",
+        "published": "2026-04-05T03:35:26Z",
+        "description": "はじめに\nフリーランスの情報発信、続けていますか？\nX、ブログ、note、Qiita、Zenn。「全部やるべき」とわかっていても、1人で複数メディアを運用するのは現実的ではありません。1記事書くのに1〜2時間。それを各メディア用にフォーマット調整して投稿。週3本ペースでやると、発信だけで週10時間以上が消えます。\nそこで「1つのX投稿から、AIが自動でリライトして複数メディアに展開する」仕組みを作...",
+        "category": "開発",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "ほぼ週間Go言語 2026年4月6日",
+        "url": "https://zenn.dev/baleenstudio/articles/59aee3a7458090",
+        "site": "Zenn(Python)",
+        "published": "2026-04-05T02:48:16Z",
+        "description": "今週もプログラミング雑記からGo言語の話題を中心に気になった話題を取り上げていきます。\n\n Go言語\nhttps://go.dev/blog/type-construction-and-cycle-detection\nGo 1.26で改善された型チェッカーの型構築とサイクル検出について説明しています。Goの型チェッカーは、AST（抽象構文木）をトレースして各型の内部表現を構築します。単純な型では深...",
         "category": "開発",
         "rss_category": "",
         "image_url": ""
@@ -591,41 +641,11 @@
         "image_url": ""
       },
       {
-        "title": "AI for Science の歩き方 #6 ― マルチモーダル AI と AI コード生成",
-        "url": "https://zenn.dev/aws_japan/articles/ai4s-06-multimodal-2026",
-        "site": "Zenn(Python)",
-        "published": "2026-04-04T01:57:17Z",
-        "description": "!\n本記事は「AI for Science の歩き方」シリーズの第 6 回です。初めての方は 第 1 回 からどうぞ。\n\nこの記事のゴール: 画像・音声を扱うマルチモーダル AI の始め方と、AI コード生成で日本語からコードを書かせる方法がわかる。\nこの記事では、文章以外も扱えるマルチモーダル AI の活用法と、日本語の指示でコードを書かせる AI コード生成の実践を紹介します。第 3〜5 回で...",
-        "category": "開発",
-        "rss_category": "",
-        "image_url": ""
-      },
-      {
-        "title": "AI for Science の歩き方 #5 ― ステップ 3: ファインチューニングと継続事前学習",
-        "url": "https://zenn.dev/aws_japan/articles/ai4s-05-finetune-2026",
-        "site": "Zenn(Python)",
-        "published": "2026-04-04T01:56:02Z",
-        "description": "!\n本記事は「AI for Science の歩き方」シリーズの第 5 回です。初めての方は 第 1 回 からどうぞ。プロンプトエンジニアリングは第 3 回、RAG とエージェントは第 4 回で解説しています。\n\nこの記事のゴール: ファインチューニングが自分に必要かどうか判断でき、必要な場合の始め方がわかる。\nこの記事では、ファインチューニング・継続事前学習・知識蒸留の仕組みと、本当に必要かを見...",
-        "category": "開発",
-        "rss_category": "",
-        "image_url": ""
-      },
-      {
         "title": "初めてのGitHub Copilot CLI：1日目——インストールからCI/CDまでを一気に実践（オトナの自由研究 #10）",
         "url": "https://zenn.dev/nnakapa/articles/lab-10-copilot-cli-day1",
         "site": "Zenn(Python)",
         "published": "2026-04-04T01:00:46Z",
         "description": "はじめに\n\n今回からしばらくGitHub Copilot CLIを題材にしたいと思います。GitHub Copilot CLIは初めてなのですが、Webやマニュアルに一切頼らず、GitHub Copilot CLI自身に聞きながら実験を進めていきたいと思います。\nいろんな実験をしたいので、今回もDockerでコンテナを作って、その中で遊んでみます。環境については、#01「AIの実験室をつくる」に詳...",
-        "category": "開発",
-        "rss_category": "",
-        "image_url": ""
-      },
-      {
-        "title": "日本語対応オープンソースOCRの比較 その３",
-        "url": "https://zenn.dev/piment/articles/53710c5f3ed756",
-        "site": "Zenn(Python)",
-        "published": "2026-04-03T14:30:05Z",
-        "description": "以前の比較から様々なOCRがリリースされていましたので、精度、速度を測ってみます。\nhttps://zenn.dev/piment/articles/f4bc4d95310234\nGLM-OCRがバウンディングボックスがとれないので、比較はテキストのみです。\n今回調べたのは以下\n\nTesseract\nPaddleOCR\nGLM-OCR\n\nOwOCR\n\nChromeScreenAI\nmeikiocr...",
         "category": "開発",
         "rss_category": "",
         "image_url": ""
