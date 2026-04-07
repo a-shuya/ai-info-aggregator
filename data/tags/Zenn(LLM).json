@@ -1,9 +1,29 @@
 {
   "site": "Zenn(LLM)",
-  "last_updated": "2026-04-07T12:00:45.568909",
-  "total_articles": 2683,
+  "last_updated": "2026-04-07T13:56:01.207920",
+  "total_articles": 2685,
   "articles_by_date": {
     "本日": [
+      {
+        "title": "Geminiの「拠」バグをGemma 4で再現する",
+        "url": "https://zenn.dev/acntechjp/articles/4b7c75006e82a5",
+        "site": "Zenn(LLM)",
+        "published": "2026-04-07T10:25:37Z",
+        "description": "結論\nGeminiで話題の「拠」バグをGemma 4（Googleのオープンモデル）で再現した。原因は3つの要素の組み合わせ。\n\n\nトークナイザが「拠」の繰り返しを圧縮できない。 「人」なら「人人」で1トークンにまとめられるが、「拠拠」は語彙に存在しない。1文字ずつ同一トークンが延々と並ぶ\n\n同一トークンの繰り返しで自己強化ループに入る。 「次も同じ文字だろう」という予測が際限なく強化され、P(s...",
+        "category": "AI・技術",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "GPT-OSS-120B を DeepSpeed ZeRO-3 でファインチューニングする",
+        "url": "https://zenn.dev/fixstars/articles/deepspeed-zero3-gpt-oss-120b",
+        "site": "Zenn(LLM)",
+        "published": "2026-04-07T08:11:58Z",
+        "description": "はじめに\nGPT-OSS-120B は、OpenAI により公開された Mixture of Experts（MoE）アーキテクチャ採用の 120B パラメータ大規模言語モデルです。モデルのパラメータサイズが非常に大きいため、ファインチューニングには複数 GPU への分散が必要になります。たとえば H200 では、1 台あたりのメモリ容量が 141 [GB] であるものの、単体ではモデル全体を収め...",
+        "category": "AI・技術",
+        "rss_category": "",
+        "image_url": ""
+      },
       {
         "title": "27B Denseに2.4倍差をつけたMoE — 8GB VRAMで測った35B-A3Bの実力",
         "url": "https://zenn.dev/plasmon/articles/20260403-unknown-5e39cb",
@@ -80,16 +100,6 @@
         "site": "Zenn(LLM)",
         "published": "2026-04-07T01:50:24Z",
         "description": "はじめに\n先日、「Claude Code の Memory 機構を見て、Agent Memory の限界を考える」というテーマで記事の構想を練っていた。Claude Codeが採用したアプローチは、現在のLLMの制約を逆手に取った非常に見事なエンジニアリングである。\nしかし同時に、それは「長期的なAgent Memory」に対する完全な回答ではないとも感じた。この仕組みが賢明であればあるほど、逆に...",
-        "category": "AI・技術",
-        "rss_category": "",
-        "image_url": ""
-      },
-      {
-        "title": "矛盾の管理もできるLLM-WIKIプラグインを作った",
-        "url": "https://zenn.dev/ktrysmt/articles/4ab03a26b30dea",
-        "site": "Zenn(LLM)",
-        "published": "2026-04-07T01:49:36Z",
-        "description": "https://github.com/ktrysmt/llmwiki\n大量のmarkdownの管理に困り始めていたところ最近バズってたツイートを見かけて良さそうだったので作ってみました。テキストファイル群からエンティティベースの Wiki を生成し、矛盾を構造的に管理しつつ情報を取り出しやすくする、というプラグインです。\ngistのほうのコメント欄で見つけたDeltaZero という実装が興味深か...",
         "category": "AI・技術",
         "rss_category": "",
         "image_url": ""
@@ -571,6 +581,26 @@
     ],
     "2026-04": [
       {
+        "title": "Geminiの「拠」バグをGemma 4で再現する",
+        "url": "https://zenn.dev/acntechjp/articles/4b7c75006e82a5",
+        "site": "Zenn(LLM)",
+        "published": "2026-04-07T10:25:37Z",
+        "description": "結論\nGeminiで話題の「拠」バグをGemma 4（Googleのオープンモデル）で再現した。原因は3つの要素の組み合わせ。\n\n\nトークナイザが「拠」の繰り返しを圧縮できない。 「人」なら「人人」で1トークンにまとめられるが、「拠拠」は語彙に存在しない。1文字ずつ同一トークンが延々と並ぶ\n\n同一トークンの繰り返しで自己強化ループに入る。 「次も同じ文字だろう」という予測が際限なく強化され、P(s...",
+        "category": "AI・技術",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "GPT-OSS-120B を DeepSpeed ZeRO-3 でファインチューニングする",
+        "url": "https://zenn.dev/fixstars/articles/deepspeed-zero3-gpt-oss-120b",
+        "site": "Zenn(LLM)",
+        "published": "2026-04-07T08:11:58Z",
+        "description": "はじめに\nGPT-OSS-120B は、OpenAI により公開された Mixture of Experts（MoE）アーキテクチャ採用の 120B パラメータ大規模言語モデルです。モデルのパラメータサイズが非常に大きいため、ファインチューニングには複数 GPU への分散が必要になります。たとえば H200 では、1 台あたりのメモリ容量が 141 [GB] であるものの、単体ではモデル全体を収め...",
+        "category": "AI・技術",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
         "title": "27B Denseに2.4倍差をつけたMoE — 8GB VRAMで測った35B-A3Bの実力",
         "url": "https://zenn.dev/plasmon/articles/20260403-unknown-5e39cb",
         "site": "Zenn(LLM)",
@@ -646,16 +676,6 @@
         "site": "Zenn(LLM)",
         "published": "2026-04-07T01:50:24Z",
         "description": "はじめに\n先日、「Claude Code の Memory 機構を見て、Agent Memory の限界を考える」というテーマで記事の構想を練っていた。Claude Codeが採用したアプローチは、現在のLLMの制約を逆手に取った非常に見事なエンジニアリングである。\nしかし同時に、それは「長期的なAgent Memory」に対する完全な回答ではないとも感じた。この仕組みが賢明であればあるほど、逆に...",
-        "category": "AI・技術",
-        "rss_category": "",
-        "image_url": ""
-      },
-      {
-        "title": "矛盾の管理もできるLLM-WIKIプラグインを作った",
-        "url": "https://zenn.dev/ktrysmt/articles/4ab03a26b30dea",
-        "site": "Zenn(LLM)",
-        "published": "2026-04-07T01:49:36Z",
-        "description": "https://github.com/ktrysmt/llmwiki\n大量のmarkdownの管理に困り始めていたところ最近バズってたツイートを見かけて良さそうだったので作ってみました。テキストファイル群からエンティティベースの Wiki を生成し、矛盾を構造的に管理しつつ情報を取り出しやすくする、というプラグインです。\ngistのほうのコメント欄で見つけたDeltaZero という実装が興味深か...",
         "category": "AI・技術",
         "rss_category": "",
         "image_url": ""
