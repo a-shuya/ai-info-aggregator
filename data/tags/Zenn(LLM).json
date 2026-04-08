@@ -1,7 +1,7 @@
 {
   "site": "Zenn(LLM)",
-  "last_updated": "2026-04-08T21:02:22.622848",
-  "total_articles": 2703,
+  "last_updated": "2026-04-08T21:58:07.542375",
+  "total_articles": 2705,
   "articles_by_date": {
     "本日": [
       {
@@ -22,6 +22,16 @@
         "site": "Zenn(LLM)",
         "published": "2026-04-08T14:56:19Z",
         "description": "はじめに\n「AIが文章を勝手に書くのだから、タイピング能力の価値は下がる」という見方は、一見するともっともらしく見えます。ですが実態は逆です。生成AIが安くしたのは初稿生成であり、価値の中心に残ったのは指示・修正・検証の反復です。しかも実際のChatGPT利用では、会話の多くが実用的助言、情報探索、文章作成に集中しており、仕事用途でも文章作成が中心です。つまりAI時代の仕事は、ますます文字を出し入...",
+        "category": "AI・技術",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "ローカルLLMを使って積読PDFを翻訳する（そしてまた積む）",
+        "url": "https://zenn.dev/sum3sh1/articles/0447d4cb53d070",
+        "site": "Zenn(LLM)",
+        "published": "2026-04-08T14:31:14Z",
+        "description": "はじめに\n人は愚かなものです。特に安売りの技術書を買うだけ買って読まないお前。\nその愚かな人間の一員である私ですが、とりあえず読むための努力はしようかなと思ってPDFを色々いじくり回して得た結論を共有しようかと思います。\n\n 手順\n\n 共通\nLLMといえばOllama！ではありません。私はLM Studioのほうが好みなのでそっちを使います。\n下記画像の通り、ターミナルっぽいアイコンを押すとAPI...",
         "category": "AI・技術",
         "rss_category": "",
         "image_url": ""
@@ -57,6 +67,16 @@
         "image_url": ""
       },
       {
+        "title": "RAGの検索をAIに任せたら精度が79%上がった",
+        "url": "https://zenn.dev/plasmon/articles/20260408-unknown-bcd7c6",
+        "site": "Zenn(LLM)",
+        "published": "2026-04-08T13:35:52Z",
+        "description": "RAGの検索をAIに任せたら精度が79%上がった\nRAG（Retrieval-Augmented Generation）の検索パイプラインは、ほとんどの場合こう組まれている:\nクエリ → ベクトル検索 → Top-K取得 → LLMに全部渡す\nこの固定パイプラインこそが、RAGの精度を制限している元凶だった。\n2026年2月のArXiv論文（arXiv:2602.03442）がA-RAG（Agen...",
+        "category": "AI・技術",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
         "title": "構造化生成とインターフェースによるプログラム生成",
         "url": "https://zenn.dev/yumayx/articles/fdd3779ffac260",
         "site": "Zenn(LLM)",
@@ -81,7 +101,7 @@
         "url": "https://zenn.dev/harunasu/books/423e24b92d4426",
         "site": "Zenn(LLM)",
         "published": "2026-04-08T10:10:03Z",
-        "description": "ChatGPT、Claude、Geminiに代表されるLLMに質問を投げる。すると、\"いい感じの\"回答が返ってくる。その間に何が起きているのか？\n\n大半の人はそんなこと気にも留めず「なんだか分からないけどいい感じの便利ツール」としてLLMを使い、その上で「効率のいいAIの使い方」を語ることすらある。\n\n「なんだか分からないけどいい感じの便利ツール」などという、ふわふわした理解のままLLMを使うのは...",
+        "description": "ChatGPT、Claude、Gemini。これらのLLMに質問を投げる。すると、\"いい感じの\"回答が返ってくる。その間に何が起きているのか？\n\n大半の人はそんなこと気にも留めず「なんだか分からないけどいい感じの便利ツール」としてLLMを使っています。\n\nなんなら「なんだか分からないけどいい感じの便利ツール」という理解で「効率のいいAIの使い方」なるものを語ったりしています。\n\n「そんなふわふわし...",
         "category": "AI・技術",
         "rss_category": "",
         "image_url": ""
@@ -182,16 +202,6 @@
         "site": "Zenn(LLM)",
         "published": "2026-04-07T23:58:05Z",
         "description": "Google DeepMindが2026年4月2日にリリースしたGemma 4。翌日さっそくローカル環境で試したところ、既存のQwen 3.5を精度・速度・VRAM効率の全面で上回った。速報としてまとめておく。\n評価タスクは適時開示から株価の変化方向を推定する5段階分類。場中に出た500件の重要開示を、実際の株価反応と照合して精度を測定した。\n\n 結論：全指標でQwen 3.5を上回った\n精度88...",
-        "category": "AI・技術",
-        "rss_category": "",
-        "image_url": ""
-      },
-      {
-        "title": "【Nishika 論文サク読み 第4回】EmoVoice",
-        "url": "https://zenn.dev/team_nishika/articles/17cd9e4d683327",
-        "site": "Zenn(LLM)",
-        "published": "2026-04-07T23:00:08Z",
-        "description": "こんにちは。Nishika AIエンジニアの山口です。\nvoicevox等のパラメータベースのttsを超え、自然言語を使ったttsの研究がないか気になったので調べてみました。\n\n 論文\nEmoVoice: LLM-based Emotional Text-To-Speech Model with Freestyle Text Prompting\n\ngithub\nhuggingfaceリンク\nプレイ...",
         "category": "AI・技術",
         "rss_category": "",
         "image_url": ""
@@ -521,6 +531,16 @@
         "image_url": ""
       },
       {
+        "title": "ローカルLLMを使って積読PDFを翻訳する（そしてまた積む）",
+        "url": "https://zenn.dev/sum3sh1/articles/0447d4cb53d070",
+        "site": "Zenn(LLM)",
+        "published": "2026-04-08T14:31:14Z",
+        "description": "はじめに\n人は愚かなものです。特に安売りの技術書を買うだけ買って読まないお前。\nその愚かな人間の一員である私ですが、とりあえず読むための努力はしようかなと思ってPDFを色々いじくり回して得た結論を共有しようかと思います。\n\n 手順\n\n 共通\nLLMといえばOllama！ではありません。私はLM Studioのほうが好みなのでそっちを使います。\n下記画像の通り、ターミナルっぽいアイコンを押すとAPI...",
+        "category": "AI・技術",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
         "title": "製造業向けRAGシステムのアクセス制御設計",
         "url": "https://zenn.dev/kukyotolab/articles/ed209091142b2a",
         "site": "Zenn(LLM)",
@@ -551,6 +571,16 @@
         "image_url": ""
       },
       {
+        "title": "RAGの検索をAIに任せたら精度が79%上がった",
+        "url": "https://zenn.dev/plasmon/articles/20260408-unknown-bcd7c6",
+        "site": "Zenn(LLM)",
+        "published": "2026-04-08T13:35:52Z",
+        "description": "RAGの検索をAIに任せたら精度が79%上がった\nRAG（Retrieval-Augmented Generation）の検索パイプラインは、ほとんどの場合こう組まれている:\nクエリ → ベクトル検索 → Top-K取得 → LLMに全部渡す\nこの固定パイプラインこそが、RAGの精度を制限している元凶だった。\n2026年2月のArXiv論文（arXiv:2602.03442）がA-RAG（Agen...",
+        "category": "AI・技術",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
         "title": "構造化生成とインターフェースによるプログラム生成",
         "url": "https://zenn.dev/yumayx/articles/fdd3779ffac260",
         "site": "Zenn(LLM)",
@@ -575,7 +605,7 @@
         "url": "https://zenn.dev/harunasu/books/423e24b92d4426",
         "site": "Zenn(LLM)",
         "published": "2026-04-08T10:10:03Z",
-        "description": "ChatGPT、Claude、Geminiに代表されるLLMに質問を投げる。すると、\"いい感じの\"回答が返ってくる。その間に何が起きているのか？\n\n大半の人はそんなこと気にも留めず「なんだか分からないけどいい感じの便利ツール」としてLLMを使い、その上で「効率のいいAIの使い方」を語ることすらある。\n\n「なんだか分からないけどいい感じの便利ツール」などという、ふわふわした理解のままLLMを使うのは...",
+        "description": "ChatGPT、Claude、Gemini。これらのLLMに質問を投げる。すると、\"いい感じの\"回答が返ってくる。その間に何が起きているのか？\n\n大半の人はそんなこと気にも留めず「なんだか分からないけどいい感じの便利ツール」としてLLMを使っています。\n\nなんなら「なんだか分からないけどいい感じの便利ツール」という理解で「効率のいいAIの使い方」なるものを語ったりしています。\n\n「そんなふわふわし...",
         "category": "AI・技術",
         "rss_category": "",
         "image_url": ""
@@ -676,16 +706,6 @@
         "site": "Zenn(LLM)",
         "published": "2026-04-07T23:58:05Z",
         "description": "Google DeepMindが2026年4月2日にリリースしたGemma 4。翌日さっそくローカル環境で試したところ、既存のQwen 3.5を精度・速度・VRAM効率の全面で上回った。速報としてまとめておく。\n評価タスクは適時開示から株価の変化方向を推定する5段階分類。場中に出た500件の重要開示を、実際の株価反応と照合して精度を測定した。\n\n 結論：全指標でQwen 3.5を上回った\n精度88...",
-        "category": "AI・技術",
-        "rss_category": "",
-        "image_url": ""
-      },
-      {
-        "title": "【Nishika 論文サク読み 第4回】EmoVoice",
-        "url": "https://zenn.dev/team_nishika/articles/17cd9e4d683327",
-        "site": "Zenn(LLM)",
-        "published": "2026-04-07T23:00:08Z",
-        "description": "こんにちは。Nishika AIエンジニアの山口です。\nvoicevox等のパラメータベースのttsを超え、自然言語を使ったttsの研究がないか気になったので調べてみました。\n\n 論文\nEmoVoice: LLM-based Emotional Text-To-Speech Model with Freestyle Text Prompting\n\ngithub\nhuggingfaceリンク\nプレイ...",
         "category": "AI・技術",
         "rss_category": "",
         "image_url": ""
