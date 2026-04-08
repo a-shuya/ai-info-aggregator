@@ -1,7 +1,7 @@
 {
   "site": "Zenn(LLM)",
-  "last_updated": "2026-04-08T01:08:17.316027",
-  "total_articles": 2691,
+  "last_updated": "2026-04-08T04:08:25.712903",
+  "total_articles": 2693,
   "articles_by_date": {
     "本日": [
       {
@@ -147,11 +147,11 @@
         "image_url": ""
       },
       {
-        "title": "Geminiに「拠」を繰り返し出力させると意味不明な文章が出てくる件をGemma 4で再現する",
+        "title": "Geminiの「拠」バグをGemma 4で再現する",
         "url": "https://zenn.dev/acntechjp/articles/4b7c75006e82a5",
         "site": "Zenn(LLM)",
         "published": "2026-04-07T10:25:37Z",
-        "description": "何が起きているか\nGoogleの対話AI「Gemini」に普通に質問すると、突然「拠拠拠拠拠拠……」と同じ文字を延々と繰り返し始め、その後まったく無関係な文章を語り始める。この現象がSNS等で話題になっている。\n\nこの記事では、Googleが公開しているオープンモデル「Gemma 4」を使って同じ現象を手元で再現し、原因を特定した。\n\n 結論\nGeminiで話題の「拠」バグをGemma 4（Goo...",
+        "description": "結論\nGeminiで話題の「拠」バグをGemma 4（Googleのオープンモデル）で再現した。原因は3つの要素の組み合わせ。\n\n\nトークナイザが「拠」の繰り返しを圧縮できない。 「人」なら「人人」で1トークンにまとめられるが、「拠拠」は語彙に存在しない。1文字ずつ同一トークンが延々と並ぶ\n\n同一トークンの繰り返しで自己強化ループに入る。 「次も同じ文字だろう」という予測が際限なく強化され、P(s...",
         "category": "AI・技術",
         "rss_category": "",
         "image_url": ""
@@ -192,6 +192,16 @@
         "site": "Zenn(LLM)",
         "published": "2026-04-07T04:07:48Z",
         "description": "Engineer Guild Hackathon 2025で決勝進出した話\nEngineer Guild Hackathon 2025 で、2 人チームで AI 学習プロダクトを開発し、決勝まで進みました。\n自分は主に、Azure OpenAI を使った LLM 設計、Azure インフラ構築、Figma での Web / スマホ UI デザインを担当しました。\n今さらですが、そのときのことを書き...",
+        "category": "AI・技術",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "Prime Intellect Labで始めるAgentic RL ―― 4BモデルでGPT-5を超える",
+        "url": "https://zenn.dev/mkj/articles/prime-rl-20260401",
+        "site": "Zenn(LLM)",
+        "published": "2026-04-07T02:50:05Z",
+        "description": "松尾研究所の太田・尾崎です．\n昨今自律的な行動をとることのできるエージェントが流行っていますが，これらはLLMに外部環境との作用が可能なツールを持たせたものとみなすことができます．なのでAgentが適切に行動するにはWeb検索や書類作成等のツールを適切に利用することが必須であり，そのためには正しい指示（ツールのマニュアル）やロバストなツール設計（MCPといったプロトコル化）が重要になります．\nそう...",
         "category": "AI・技術",
         "rss_category": "",
         "image_url": ""
@@ -681,11 +691,11 @@
         "image_url": ""
       },
       {
-        "title": "Geminiに「拠」を繰り返し出力させると意味不明な文章が出てくる件をGemma 4で再現する",
+        "title": "Geminiの「拠」バグをGemma 4で再現する",
         "url": "https://zenn.dev/acntechjp/articles/4b7c75006e82a5",
         "site": "Zenn(LLM)",
         "published": "2026-04-07T10:25:37Z",
-        "description": "何が起きているか\nGoogleの対話AI「Gemini」に普通に質問すると、突然「拠拠拠拠拠拠……」と同じ文字を延々と繰り返し始め、その後まったく無関係な文章を語り始める。この現象がSNS等で話題になっている。\n\nこの記事では、Googleが公開しているオープンモデル「Gemma 4」を使って同じ現象を手元で再現し、原因を特定した。\n\n 結論\nGeminiで話題の「拠」バグをGemma 4（Goo...",
+        "description": "結論\nGeminiで話題の「拠」バグをGemma 4（Googleのオープンモデル）で再現した。原因は3つの要素の組み合わせ。\n\n\nトークナイザが「拠」の繰り返しを圧縮できない。 「人」なら「人人」で1トークンにまとめられるが、「拠拠」は語彙に存在しない。1文字ずつ同一トークンが延々と並ぶ\n\n同一トークンの繰り返しで自己強化ループに入る。 「次も同じ文字だろう」という予測が際限なく強化され、P(s...",
         "category": "AI・技術",
         "rss_category": "",
         "image_url": ""
@@ -726,6 +736,16 @@
         "site": "Zenn(LLM)",
         "published": "2026-04-07T04:07:48Z",
         "description": "Engineer Guild Hackathon 2025で決勝進出した話\nEngineer Guild Hackathon 2025 で、2 人チームで AI 学習プロダクトを開発し、決勝まで進みました。\n自分は主に、Azure OpenAI を使った LLM 設計、Azure インフラ構築、Figma での Web / スマホ UI デザインを担当しました。\n今さらですが、そのときのことを書き...",
+        "category": "AI・技術",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "Prime Intellect Labで始めるAgentic RL ―― 4BモデルでGPT-5を超える",
+        "url": "https://zenn.dev/mkj/articles/prime-rl-20260401",
+        "site": "Zenn(LLM)",
+        "published": "2026-04-07T02:50:05Z",
+        "description": "松尾研究所の太田・尾崎です．\n昨今自律的な行動をとることのできるエージェントが流行っていますが，これらはLLMに外部環境との作用が可能なツールを持たせたものとみなすことができます．なのでAgentが適切に行動するにはWeb検索や書類作成等のツールを適切に利用することが必須であり，そのためには正しい指示（ツールのマニュアル）やロバストなツール設計（MCPといったプロトコル化）が重要になります．\nそう...",
         "category": "AI・技術",
         "rss_category": "",
         "image_url": ""
