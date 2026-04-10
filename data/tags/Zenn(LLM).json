@@ -1,19 +1,9 @@
 {
   "site": "Zenn(LLM)",
-  "last_updated": "2026-04-10T08:46:33.517467",
+  "last_updated": "2026-04-10T09:56:14.789371",
   "total_articles": 2724,
   "articles_by_date": {
     "本日": [
-      {
-        "title": "Zettelkastenに基づくLLMエージェントのメモリ設計：A-Mem論文解説",
-        "url": "https://zenn.dev/tsurubee/articles/amem-llm-agent-memory-design",
-        "site": "Zenn(LLM)",
-        "published": "2026-04-09T23:28:42Z",
-        "description": "はじめに：LLMエージェントはどう記憶するか\nClaude CodeのようなAIコーディングエージェントは、過去のことをどのように記憶しているのだろうか。まず基本となるのはコンテキストウィンドウである。ユーザーとの対話履歴やコードの内容は、コンテキストとしてモデルに渡される。モデルはこのコンテキストの範囲内であれば、過去のやり取りを参照して一貫した応答を返すことができる。しかし、コンテキストウィン...",
-        "category": "AI・技術",
-        "rss_category": "",
-        "image_url": ""
-      },
       {
         "title": "ローカルLLMで画像PDFを読む：Gemma 4 / Qwen 3.5 Vision比較",
         "url": "https://zenn.dev/kamo78/articles/gemma4-multimodal-pdf-local-llm",
@@ -40,6 +30,16 @@
         "site": "Zenn(LLM)",
         "published": "2026-04-09T18:36:47Z",
         "description": "この記事の内容\n秘匿環境（オンプレミスやVPC）で、ローカルLLMがMCPツールを自律的に選択・実行するAIエージェントを構築しました。\nRAGは「質問→ベクトル検索→LLMに渡す」という固定パイプラインですが、エージェントはLLMが状況に応じて「どのツールを使うか」を自分で判断します。文書検索が必要なら文書を検索し、対応履歴を調べるべきなら履歴DBにアクセスし、タスク登録が必要ならタスクを登録す...",
+        "category": "AI・技術",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "LLMにOSレベルのメモリ管理を与えるMemOSを解説する",
+        "url": "https://zenn.dev/0ai/articles/2507-03724-memos-memory-os",
+        "site": "Zenn(LLM)",
+        "published": "2026-04-09T18:16:20Z",
+        "description": "はじめに\nこの論文の完全解説（図解付き）は flecto で公開中 →\n\n 論文の概要（TL;DR）\nLLMは本質的にステートレスです。セッションをまたいで記憶を保持できず、ユーザーの好みや過去の会話は毎回リセットされます。\nMemOSはこの問題に対して、コンピューターOSのアプローチを持ち込みます。プレーンテキスト・KVキャッシュ・モデル重みという3種類のメモリを「OSレベルのリソース」として統...",
         "category": "AI・技術",
         "rss_category": "",
         "image_url": ""
@@ -481,16 +481,6 @@
     ],
     "2026-04": [
       {
-        "title": "Zettelkastenに基づくLLMエージェントのメモリ設計：A-Mem論文解説",
-        "url": "https://zenn.dev/tsurubee/articles/amem-llm-agent-memory-design",
-        "site": "Zenn(LLM)",
-        "published": "2026-04-09T23:28:42Z",
-        "description": "はじめに：LLMエージェントはどう記憶するか\nClaude CodeのようなAIコーディングエージェントは、過去のことをどのように記憶しているのだろうか。まず基本となるのはコンテキストウィンドウである。ユーザーとの対話履歴やコードの内容は、コンテキストとしてモデルに渡される。モデルはこのコンテキストの範囲内であれば、過去のやり取りを参照して一貫した応答を返すことができる。しかし、コンテキストウィン...",
-        "category": "AI・技術",
-        "rss_category": "",
-        "image_url": ""
-      },
-      {
         "title": "ローカルLLMで画像PDFを読む：Gemma 4 / Qwen 3.5 Vision比較",
         "url": "https://zenn.dev/kamo78/articles/gemma4-multimodal-pdf-local-llm",
         "site": "Zenn(LLM)",
@@ -516,6 +506,16 @@
         "site": "Zenn(LLM)",
         "published": "2026-04-09T18:36:47Z",
         "description": "この記事の内容\n秘匿環境（オンプレミスやVPC）で、ローカルLLMがMCPツールを自律的に選択・実行するAIエージェントを構築しました。\nRAGは「質問→ベクトル検索→LLMに渡す」という固定パイプラインですが、エージェントはLLMが状況に応じて「どのツールを使うか」を自分で判断します。文書検索が必要なら文書を検索し、対応履歴を調べるべきなら履歴DBにアクセスし、タスク登録が必要ならタスクを登録す...",
+        "category": "AI・技術",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "LLMにOSレベルのメモリ管理を与えるMemOSを解説する",
+        "url": "https://zenn.dev/0ai/articles/2507-03724-memos-memory-os",
+        "site": "Zenn(LLM)",
+        "published": "2026-04-09T18:16:20Z",
+        "description": "はじめに\nこの論文の完全解説（図解付き）は flecto で公開中 →\n\n 論文の概要（TL;DR）\nLLMは本質的にステートレスです。セッションをまたいで記憶を保持できず、ユーザーの好みや過去の会話は毎回リセットされます。\nMemOSはこの問題に対して、コンピューターOSのアプローチを持ち込みます。プレーンテキスト・KVキャッシュ・モデル重みという3種類のメモリを「OSレベルのリソース」として統...",
         "category": "AI・技術",
         "rss_category": "",
         "image_url": ""
