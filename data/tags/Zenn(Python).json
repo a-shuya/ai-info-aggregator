@@ -1,15 +1,95 @@
 {
   "site": "Zenn(Python)",
-  "last_updated": "2026-04-13T10:15:51.326074",
-  "total_articles": 3423,
+  "last_updated": "2026-04-13T11:44:50.405771",
+  "total_articles": 3437,
   "articles_by_date": {
     "本日": [
+      {
+        "title": "【ABC453 D】Go Straight 復習メモ：BFSの状態管理とTLE対策",
+        "url": "https://zenn.dev/iwamutsu/articles/k4bwc33ktku92e",
+        "site": "Zenn(Python)",
+        "published": "2026-04-13T09:57:41Z",
+        "description": "まずは結論から。\nこの問題は単純なBFSではなく、「直前の移動方向」も状態に含めて管理する必要があった。\nまた、Pythonで実装する場合、訪問管理に set() を使うとTLEになるため、3次元配列による定数倍の高速化が必須だった。\n\n\n コンテスト中に考えたこと\n幅優先探索（BFS）または深さ優先探索（DFS）で解けそう。\nしかし、前回動いた方向に依存するマス（o や x）がある。\nそのため、...",
+        "category": "開発",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "AtCoder Beginner Contest 453 参加記録と解答例 (A〜C問題)",
+        "url": "https://zenn.dev/iwamutsu/articles/ro94lhhb3j6xvr",
+        "site": "Zenn(Python)",
+        "published": "2026-04-13T09:57:23Z",
+        "description": "本記事は、AtCoder Beginner Contest 453 (ABC453) に参加した際の、A〜C問題の復習と解答の備忘録です。コンテスト中に考えた解法の方針や、提出したPythonのコードについて整理しています。\n\n A - Trimo\n実行時間制限: 2 sec / メモリ制限: 1024 MiB\n配点: 100 点\n\n 問題文\n長さ N の文字列 S が与えられます。\nS のうち先...",
+        "category": "開発",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "Pulumiを使ってAWSアーキテクチャ構成図を自動生成したけど微妙だった件",
+        "url": "https://zenn.dev/aiforall/articles/eaaf079c6611d2",
+        "site": "Zenn(Python)",
+        "published": "2026-04-13T08:19:41Z",
+        "description": "はじめに\nシステム構成図を描くのは、エンジニアにとって非常に手間のかかる作業です。 「コードを書けば、そこから勝手に図が生成されればいいのに…」と思ったことはありませんか？ モダンなIaCツールであるPulumiにはその機能が標準で備わっていると知り、実際にどれほど使えるものなのか試してみました。\n\n Pulumiとは\nPulumiは、PythonやTypeScriptなどの一般的なプログラミング...",
+        "category": "開発",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "<メモ> Python スクリプトを Rust に移植する実践チュートリアル",
+        "url": "https://zenn.dev/kurocat/articles/7e3efdf516c312",
+        "site": "Zenn(Python)",
+        "published": "2026-04-13T08:02:24Z",
+        "description": "Python スクリプトを Rust に移植する実践チュートリアル\n\n Rust への誘い\n\n「快感と痛覚は、同じ神経を共有している」\nコンパイルエラーの痛みも、やがて美しい音になる。\nあなたのその曖昧さも、型に変えられる。\n\nhttps://www.youtube.com/watch?v=qe2Ahp0y9WQ\nhttps://www.youtube.com/watch?v=qHY3m6PmJ7...",
+        "category": "開発",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "AIエージェント用のAPI Store、ベータ公開しました。🤖開発者募集中🤖",
+        "url": "https://zenn.dev/taihei365/articles/e9662ce6ac9cae",
+        "site": "Zenn(Python)",
+        "published": "2026-04-13T07:37:31Z",
+        "description": "TL;DR\nAIエージェントに新しい能力を追加する「API Store」のSDKを公開しました。Python で API を作って出品すると、Siglume 上のAIエージェントがそれを使えるようになります。開発者を募集しています。\nGitHub: https://github.com/taihei-05/siglume-app-sdk\n\n Siglume って何？\nSiglume は、AIエージ...",
+        "category": "開発",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "スクレイピングのエラーハンドリング完全ガイド【リトライ・タイムアウト・例外処理】",
+        "url": "https://zenn.dev/datajournal1/articles/958a4d012e6234",
+        "site": "Zenn(Python)",
+        "published": "2026-04-13T05:44:14Z",
+        "description": "スクレイピングのエラーハンドリング完全ガイド【リトライ・タイムアウト・例外処理】\n!\n本記事で紹介する手法は、対象サイトの利用規約・robots.txtを遵守した上での利用を前提としています。\n\n\n はじめに\nスクレイピングは「書いた通りに動く」ことがほとんどありません。\n以前、数百件の求人データを収集するスクリプトを書いたとき、最初の数十件は問題なく動いていたのに、途中でいきなり接続が切れてプロ...",
+        "category": "開発",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "Whisper APIはどこまでノイズに耐えられるか？ノイズ除去3手法＋VADで徹底検証した",
+        "url": "https://zenn.dev/kta805/articles/article_whisper_noise_erxperi",
+        "site": "Zenn(Python)",
+        "published": "2026-04-13T04:45:36Z",
+        "description": "はじめに\n会議音声を自動で議事録にするツールをPythonで実装したとき、こんな疑問が浮かびました。\n「実際の会議室にはノイズがある。Whisper APIはどの程度のノイズに耐えられるのか？ノイズ除去処理を組み合わせれば精度は上がるのか？」\nこの記事では、以下の内容を実験で検証した結果をまとめます。\n\nノイズレベルを段階的に変えてWhisperの認識精度がどう変わるか\nスペクトルサブトラクション...",
+        "category": "開発",
+        "rss_category": "",
+        "image_url": ""
+      },
       {
         "title": "effect ってなんですのん",
         "url": "https://zenn.dev/hnmr/articles/fe909ae93fc454",
         "site": "Zenn(Python)",
         "published": "2026-04-13T03:00:07Z",
         "description": "effect ってなんですのん\nそれはある日のこと\nぼく「あ、Claude Code の週制限叩いちゃったな……」\nぼく「仕事はいったんやめて遊ぼうかな」\nぼく「何をしよう？」\nぼく「そうだ！　Python に Algebraic effects and handlers を実装しよう！」\nということで始まります。シリーズ「Python に Algebraic effects and handle...",
+        "category": "開発",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "AIエージェントの暴走防止: LoopGuard 9層の設計と「なぜ9層も必要だったか」",
+        "url": "https://zenn.dev/syutain/articles/5f42b256a059fc7b",
+        "site": "Zenn(Python)",
+        "published": "2026-04-13T02:30:22Z",
+        "description": "AIエージェントの暴走防止: LoopGuard 9層の設計と「なぜ9層も必要だったか」\n\n はじめに\nAIエージェントの開発において、その暴走を防ぐことは重要な課題です。私の開発したLoopGuardは、AIエージェントが自己判断で危険な行動を取らないように設計されたシステムです。本記事では、LoopGuardの内部構造、設計判断の思考過程、そしてなぜ9層もの防護措置が必要だったのかを詳細に解説...",
         "category": "開発",
         "rss_category": "",
         "image_url": ""
@@ -132,16 +212,6 @@
         "site": "Zenn(Python)",
         "published": "2026-04-12T09:32:58Z",
         "description": "Haxeを使って言語の世界を無双しよう!!\nHaxe は 1つのコードを複数の言語に変換できる 言語です。\nWeb、ネイティブ、ゲーム、スクリプトなど、出力先を切り替えて同じロジックを再利用できます。この記事では基礎から実践まで、最小限のコードで複数ターゲットを動かす流れを示します。\n\n\n 概要\n\n\n目的: Haxe のクロスコンパイルを理解し、実用的なワークフローを作る\n\n対象読者: 複数言語で...",
-        "category": "開発",
-        "rss_category": "",
-        "image_url": ""
-      },
-      {
-        "title": "モンテカルロシミュレーションの数理とPython実装 -- 幾何ブラウン運動で株価の未来を確率的に予測する",
-        "url": "https://zenn.dev/shimada_ml/articles/951d84219726f8",
-        "site": "Zenn(Python)",
-        "published": "2026-04-12T09:27:15Z",
-        "description": "はじめに\nこの記事では、モンテカルロシミュレーションを用いて将来の株価をシミュレーションする方法を、数式レベルで導出し、Pythonで実装します。\n前回までの記事では、マーコウィッツのポートフォリオ理論とCAPMを用いて、過去データからリスク・リターンを分析しました。本記事では、これらのパラメータを用いて未来の株価パスを確率的に生成し、リスク評価に活用します。\n具体的には、以下の内容を扱います。\n...",
         "category": "開発",
         "rss_category": "",
         "image_url": ""
@@ -421,11 +491,91 @@
     ],
     "2026-04": [
       {
+        "title": "【ABC453 D】Go Straight 復習メモ：BFSの状態管理とTLE対策",
+        "url": "https://zenn.dev/iwamutsu/articles/k4bwc33ktku92e",
+        "site": "Zenn(Python)",
+        "published": "2026-04-13T09:57:41Z",
+        "description": "まずは結論から。\nこの問題は単純なBFSではなく、「直前の移動方向」も状態に含めて管理する必要があった。\nまた、Pythonで実装する場合、訪問管理に set() を使うとTLEになるため、3次元配列による定数倍の高速化が必須だった。\n\n\n コンテスト中に考えたこと\n幅優先探索（BFS）または深さ優先探索（DFS）で解けそう。\nしかし、前回動いた方向に依存するマス（o や x）がある。\nそのため、...",
+        "category": "開発",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "AtCoder Beginner Contest 453 参加記録と解答例 (A〜C問題)",
+        "url": "https://zenn.dev/iwamutsu/articles/ro94lhhb3j6xvr",
+        "site": "Zenn(Python)",
+        "published": "2026-04-13T09:57:23Z",
+        "description": "本記事は、AtCoder Beginner Contest 453 (ABC453) に参加した際の、A〜C問題の復習と解答の備忘録です。コンテスト中に考えた解法の方針や、提出したPythonのコードについて整理しています。\n\n A - Trimo\n実行時間制限: 2 sec / メモリ制限: 1024 MiB\n配点: 100 点\n\n 問題文\n長さ N の文字列 S が与えられます。\nS のうち先...",
+        "category": "開発",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "Pulumiを使ってAWSアーキテクチャ構成図を自動生成したけど微妙だった件",
+        "url": "https://zenn.dev/aiforall/articles/eaaf079c6611d2",
+        "site": "Zenn(Python)",
+        "published": "2026-04-13T08:19:41Z",
+        "description": "はじめに\nシステム構成図を描くのは、エンジニアにとって非常に手間のかかる作業です。 「コードを書けば、そこから勝手に図が生成されればいいのに…」と思ったことはありませんか？ モダンなIaCツールであるPulumiにはその機能が標準で備わっていると知り、実際にどれほど使えるものなのか試してみました。\n\n Pulumiとは\nPulumiは、PythonやTypeScriptなどの一般的なプログラミング...",
+        "category": "開発",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "<メモ> Python スクリプトを Rust に移植する実践チュートリアル",
+        "url": "https://zenn.dev/kurocat/articles/7e3efdf516c312",
+        "site": "Zenn(Python)",
+        "published": "2026-04-13T08:02:24Z",
+        "description": "Python スクリプトを Rust に移植する実践チュートリアル\n\n Rust への誘い\n\n「快感と痛覚は、同じ神経を共有している」\nコンパイルエラーの痛みも、やがて美しい音になる。\nあなたのその曖昧さも、型に変えられる。\n\nhttps://www.youtube.com/watch?v=qe2Ahp0y9WQ\nhttps://www.youtube.com/watch?v=qHY3m6PmJ7...",
+        "category": "開発",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "AIエージェント用のAPI Store、ベータ公開しました。🤖開発者募集中🤖",
+        "url": "https://zenn.dev/taihei365/articles/e9662ce6ac9cae",
+        "site": "Zenn(Python)",
+        "published": "2026-04-13T07:37:31Z",
+        "description": "TL;DR\nAIエージェントに新しい能力を追加する「API Store」のSDKを公開しました。Python で API を作って出品すると、Siglume 上のAIエージェントがそれを使えるようになります。開発者を募集しています。\nGitHub: https://github.com/taihei-05/siglume-app-sdk\n\n Siglume って何？\nSiglume は、AIエージ...",
+        "category": "開発",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "スクレイピングのエラーハンドリング完全ガイド【リトライ・タイムアウト・例外処理】",
+        "url": "https://zenn.dev/datajournal1/articles/958a4d012e6234",
+        "site": "Zenn(Python)",
+        "published": "2026-04-13T05:44:14Z",
+        "description": "スクレイピングのエラーハンドリング完全ガイド【リトライ・タイムアウト・例外処理】\n!\n本記事で紹介する手法は、対象サイトの利用規約・robots.txtを遵守した上での利用を前提としています。\n\n\n はじめに\nスクレイピングは「書いた通りに動く」ことがほとんどありません。\n以前、数百件の求人データを収集するスクリプトを書いたとき、最初の数十件は問題なく動いていたのに、途中でいきなり接続が切れてプロ...",
+        "category": "開発",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "Whisper APIはどこまでノイズに耐えられるか？ノイズ除去3手法＋VADで徹底検証した",
+        "url": "https://zenn.dev/kta805/articles/article_whisper_noise_erxperi",
+        "site": "Zenn(Python)",
+        "published": "2026-04-13T04:45:36Z",
+        "description": "はじめに\n会議音声を自動で議事録にするツールをPythonで実装したとき、こんな疑問が浮かびました。\n「実際の会議室にはノイズがある。Whisper APIはどの程度のノイズに耐えられるのか？ノイズ除去処理を組み合わせれば精度は上がるのか？」\nこの記事では、以下の内容を実験で検証した結果をまとめます。\n\nノイズレベルを段階的に変えてWhisperの認識精度がどう変わるか\nスペクトルサブトラクション...",
+        "category": "開発",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
         "title": "effect ってなんですのん",
         "url": "https://zenn.dev/hnmr/articles/fe909ae93fc454",
         "site": "Zenn(Python)",
         "published": "2026-04-13T03:00:07Z",
         "description": "effect ってなんですのん\nそれはある日のこと\nぼく「あ、Claude Code の週制限叩いちゃったな……」\nぼく「仕事はいったんやめて遊ぼうかな」\nぼく「何をしよう？」\nぼく「そうだ！　Python に Algebraic effects and handlers を実装しよう！」\nということで始まります。シリーズ「Python に Algebraic effects and handle...",
+        "category": "開発",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "AIエージェントの暴走防止: LoopGuard 9層の設計と「なぜ9層も必要だったか」",
+        "url": "https://zenn.dev/syutain/articles/5f42b256a059fc7b",
+        "site": "Zenn(Python)",
+        "published": "2026-04-13T02:30:22Z",
+        "description": "AIエージェントの暴走防止: LoopGuard 9層の設計と「なぜ9層も必要だったか」\n\n はじめに\nAIエージェントの開発において、その暴走を防ぐことは重要な課題です。私の開発したLoopGuardは、AIエージェントが自己判断で危険な行動を取らないように設計されたシステムです。本記事では、LoopGuardの内部構造、設計判断の思考過程、そしてなぜ9層もの防護措置が必要だったのかを詳細に解説...",
         "category": "開発",
         "rss_category": "",
         "image_url": ""
@@ -546,16 +696,6 @@
         "site": "Zenn(Python)",
         "published": "2026-04-12T09:32:58Z",
         "description": "Haxeを使って言語の世界を無双しよう!!\nHaxe は 1つのコードを複数の言語に変換できる 言語です。\nWeb、ネイティブ、ゲーム、スクリプトなど、出力先を切り替えて同じロジックを再利用できます。この記事では基礎から実践まで、最小限のコードで複数ターゲットを動かす流れを示します。\n\n\n 概要\n\n\n目的: Haxe のクロスコンパイルを理解し、実用的なワークフローを作る\n\n対象読者: 複数言語で...",
-        "category": "開発",
-        "rss_category": "",
-        "image_url": ""
-      },
-      {
-        "title": "モンテカルロシミュレーションの数理とPython実装 -- 幾何ブラウン運動で株価の未来を確率的に予測する",
-        "url": "https://zenn.dev/shimada_ml/articles/951d84219726f8",
-        "site": "Zenn(Python)",
-        "published": "2026-04-12T09:27:15Z",
-        "description": "はじめに\nこの記事では、モンテカルロシミュレーションを用いて将来の株価をシミュレーションする方法を、数式レベルで導出し、Pythonで実装します。\n前回までの記事では、マーコウィッツのポートフォリオ理論とCAPMを用いて、過去データからリスク・リターンを分析しました。本記事では、これらのパラメータを用いて未来の株価パスを確率的に生成し、リスク評価に活用します。\n具体的には、以下の内容を扱います。\n...",
         "category": "開発",
         "rss_category": "",
         "image_url": ""
