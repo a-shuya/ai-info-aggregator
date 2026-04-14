@@ -1,9 +1,69 @@
 {
   "site": "Zenn(LLM)",
-  "last_updated": "2026-04-14T15:52:21.241677",
-  "total_articles": 2784,
+  "last_updated": "2026-04-14T17:15:53.623307",
+  "total_articles": 2794,
   "articles_by_date": {
     "昨日": [
+      {
+        "title": "製造業RAG運用編：監査ログ + イベント駆動再インデックスを実装する【コード付き】",
+        "url": "https://zenn.dev/kukyotolab/articles/46e651877241a4",
+        "site": "Zenn(LLM)",
+        "published": "2026-04-14T14:25:28Z",
+        "description": "はじめに\n製造業向けRAGシリーズの第3弾です。\n第1弾（設計編）では、製造業特有のアクセス制御の複雑さ——文書の多層的な機密レベル、OT/ICS環境のネットワーク分断、ADとVector Storeの制御主体の違い——を整理し、allowed_groupsをメタデータに焼き込むAccess label mappingとFail Closedを軸とした設計原則を解説しました。\n第2弾（実装編）では...",
+        "category": "AI・技術",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "Geminiに「拠」を繰り返し出力させると意味不明な文章が出てくる件をGemma 4で再現する",
+        "url": "https://zenn.dev/j_m/articles/bd7f902c09323e",
+        "site": "Zenn(LLM)",
+        "published": "2026-04-14T13:38:16Z",
+        "description": "Google Bug Huntersへの報告\n本記事の内容は、Carlini et al. (2023) \"Scalable Extraction of Training Data from (Production) Language Models\" と同じなので、Google Bug Huntersへ報告したが、「ハルシネーション」としてクローズされた。Carlini と違い、suffix ar...",
+        "category": "AI・技術",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "VRAM(ビデオメモリ)32GBのローカルLLM環境(AI PC)をコスパ重視で構築してみる",
+        "url": "https://zenn.dev/playree/articles/2376eee1d9d24d",
+        "site": "Zenn(LLM)",
+        "published": "2026-04-14T12:36:48Z",
+        "description": "ローカルでそれなりに使えるLLM環境(AI PC)を用意してみようと思い、それならVRAMはやはり32GBは欲しいなということで、コスパ重視の構成を考えて実際に構築してみたという内容になります。\n※2026/04時点での情報です。\n\nNVIDIA GPU\nVRAM 32GBの確保を優先\n\n\n NVIDIA GeForce RTX 5060 Ti 16GB x2という選択肢\nNVIDIAのGPUで3...",
+        "category": "AI・技術",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "AIエージェントに\"記憶\"を実装した ── セッションログから長期記憶を自動構築する完全ローカルOSS",
+        "url": "https://zenn.dev/sert/articles/dc010822ff7282",
+        "site": "Zenn(LLM)",
+        "published": "2026-04-14T11:58:26Z",
+        "description": "はじめに：AIは毎回、記憶を失う\nClaude CodeやCursor、GitHub Copilotを使って開発していると、ある日ふと気づきます。\n「このエラー、3日前にも同じことやったのに……」\nAIエージェントは毎回まっさらな状態で会話を始めます。\n前回のセッションで一緒に苦労して解決したCORSエラーも、チームで決めた設計方針も、次のセッションでは忘れています。\n人間のペアプロ相手なら「あ、...",
+        "category": "AI・技術",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "AIエージェントと開発ツールの最新動向：Claude活用、LLMドキュメント変換、フロントエンド設計の進化",
+        "url": "https://zenn.dev/nomuraya/articles/ai-news-2026-03-22",
+        "site": "Zenn(LLM)",
+        "published": "2026-04-14T11:29:59Z",
+        "description": "!\nこの記事はAIエージェントが実際のニュースソースから自動生成したまとめです。各リンク先の原文を必ずご確認ください。\n\nAIエージェントと開発ツールの最新動向として、LLMを用いたドキュメント変換の実用化、型安全CSSフレームワークの採用、ローカルAI実行環境の構築、AIとの協働型開発プロセスの設計などが報告されている。ZennやHackerNewsで共有された事例を中心に、開発現場での取り組み...",
+        "category": "AI・技術",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "AIエージェント安全設計4選 — SREが本番運用で使うガードレールパターン",
+        "url": "https://zenn.dev/ojt/articles/sre-ai-agent-safety-design",
+        "site": "Zenn(LLM)",
+        "published": "2026-04-14T10:43:52Z",
+        "description": "はじめに\nClaude Code を使い始めて、最初の1週間で便利さと怖さを同時に知った。\nterraform plan の解析、コードの修正、エラーの原因調査——どれも人間より速く、それなりに正確だ。一方で、放っておくと意図しないファイルを生成し、聞いていないコマンドを叩こうとする。指示が曖昧なら「それらしい解釈」で勝手に動く。\nこれはSREとして毎日向き合っている状況と同じだった。\n優秀だが予...",
+        "category": "AI・技術",
+        "rss_category": "",
+        "image_url": ""
+      },
       {
         "title": "Claude Codeのトークン消費を半分にする——800時間の運用データから見つけた実践テクニック",
         "url": "https://zenn.dev/yurukusa/books/token-savings-guide",
@@ -197,16 +257,6 @@
         "image_url": ""
       },
       {
-        "title": "AIエージェントと組んだら、データサイエンスプロジェクトはどう変わる？実験してみた（前半戦）",
-        "url": "https://zenn.dev/mimochiz/articles/2c27b16a3e03fd",
-        "site": "Zenn(LLM)",
-        "published": "2026-04-13T12:26:13Z",
-        "description": "はじめに\n近年、生成 AI の進化は目覚ましく、その波はデータサイエンス領域にも確実に広がっています\nでは、生成 AI はデータサイエンスの仕事をどこまで代替・拡張できるのでしょうか\n機械学習モデルそのものの数理計算やアルゴリズム処理は、依然として従来の手法に依存しています\nしかし一方で、データ前処理・特徴量生成・推論結果の解釈といった “モデル前後の工程” においては、生成 AI の活用により生...",
-        "category": "AI・技術",
-        "rss_category": "",
-        "image_url": ""
-      },
-      {
         "title": "Difyのテキスト抽出ノードで日付取得がうまくいかなかった時に試したことと解決策",
         "url": "https://zenn.dev/sato_frontend/articles/d078da74a00c81",
         "site": "Zenn(LLM)",
@@ -338,6 +388,66 @@
       }
     ],
     "2026-04": [
+      {
+        "title": "製造業RAG運用編：監査ログ + イベント駆動再インデックスを実装する【コード付き】",
+        "url": "https://zenn.dev/kukyotolab/articles/46e651877241a4",
+        "site": "Zenn(LLM)",
+        "published": "2026-04-14T14:25:28Z",
+        "description": "はじめに\n製造業向けRAGシリーズの第3弾です。\n第1弾（設計編）では、製造業特有のアクセス制御の複雑さ——文書の多層的な機密レベル、OT/ICS環境のネットワーク分断、ADとVector Storeの制御主体の違い——を整理し、allowed_groupsをメタデータに焼き込むAccess label mappingとFail Closedを軸とした設計原則を解説しました。\n第2弾（実装編）では...",
+        "category": "AI・技術",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "Geminiに「拠」を繰り返し出力させると意味不明な文章が出てくる件をGemma 4で再現する",
+        "url": "https://zenn.dev/j_m/articles/bd7f902c09323e",
+        "site": "Zenn(LLM)",
+        "published": "2026-04-14T13:38:16Z",
+        "description": "Google Bug Huntersへの報告\n本記事の内容は、Carlini et al. (2023) \"Scalable Extraction of Training Data from (Production) Language Models\" と同じなので、Google Bug Huntersへ報告したが、「ハルシネーション」としてクローズされた。Carlini と違い、suffix ar...",
+        "category": "AI・技術",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "VRAM(ビデオメモリ)32GBのローカルLLM環境(AI PC)をコスパ重視で構築してみる",
+        "url": "https://zenn.dev/playree/articles/2376eee1d9d24d",
+        "site": "Zenn(LLM)",
+        "published": "2026-04-14T12:36:48Z",
+        "description": "ローカルでそれなりに使えるLLM環境(AI PC)を用意してみようと思い、それならVRAMはやはり32GBは欲しいなということで、コスパ重視の構成を考えて実際に構築してみたという内容になります。\n※2026/04時点での情報です。\n\nNVIDIA GPU\nVRAM 32GBの確保を優先\n\n\n NVIDIA GeForce RTX 5060 Ti 16GB x2という選択肢\nNVIDIAのGPUで3...",
+        "category": "AI・技術",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "AIエージェントに\"記憶\"を実装した ── セッションログから長期記憶を自動構築する完全ローカルOSS",
+        "url": "https://zenn.dev/sert/articles/dc010822ff7282",
+        "site": "Zenn(LLM)",
+        "published": "2026-04-14T11:58:26Z",
+        "description": "はじめに：AIは毎回、記憶を失う\nClaude CodeやCursor、GitHub Copilotを使って開発していると、ある日ふと気づきます。\n「このエラー、3日前にも同じことやったのに……」\nAIエージェントは毎回まっさらな状態で会話を始めます。\n前回のセッションで一緒に苦労して解決したCORSエラーも、チームで決めた設計方針も、次のセッションでは忘れています。\n人間のペアプロ相手なら「あ、...",
+        "category": "AI・技術",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "AIエージェントと開発ツールの最新動向：Claude活用、LLMドキュメント変換、フロントエンド設計の進化",
+        "url": "https://zenn.dev/nomuraya/articles/ai-news-2026-03-22",
+        "site": "Zenn(LLM)",
+        "published": "2026-04-14T11:29:59Z",
+        "description": "!\nこの記事はAIエージェントが実際のニュースソースから自動生成したまとめです。各リンク先の原文を必ずご確認ください。\n\nAIエージェントと開発ツールの最新動向として、LLMを用いたドキュメント変換の実用化、型安全CSSフレームワークの採用、ローカルAI実行環境の構築、AIとの協働型開発プロセスの設計などが報告されている。ZennやHackerNewsで共有された事例を中心に、開発現場での取り組み...",
+        "category": "AI・技術",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "AIエージェント安全設計4選 — SREが本番運用で使うガードレールパターン",
+        "url": "https://zenn.dev/ojt/articles/sre-ai-agent-safety-design",
+        "site": "Zenn(LLM)",
+        "published": "2026-04-14T10:43:52Z",
+        "description": "はじめに\nClaude Code を使い始めて、最初の1週間で便利さと怖さを同時に知った。\nterraform plan の解析、コードの修正、エラーの原因調査——どれも人間より速く、それなりに正確だ。一方で、放っておくと意図しないファイルを生成し、聞いていないコマンドを叩こうとする。指示が曖昧なら「それらしい解釈」で勝手に動く。\nこれはSREとして毎日向き合っている状況と同じだった。\n優秀だが予...",
+        "category": "AI・技術",
+        "rss_category": "",
+        "image_url": ""
+      },
       {
         "title": "Claude Codeのトークン消費を半分にする——800時間の運用データから見つけた実践テクニック",
         "url": "https://zenn.dev/yurukusa/books/token-savings-guide",
@@ -524,16 +634,6 @@
         "site": "Zenn(LLM)",
         "published": "2026-04-13T13:34:18Z",
         "description": "「自己進化するAIシステムを作った」\n今週、そういう投稿が2種類流れてきた。一方は成功し、もう一方はエラーの蓄積で崩壊し始めた。どちらも「自己進化」を目指していた。なのに、なぜ結果が真逆になったのか。\n\n LLM wikiを「自己進化させた」とき何が起きるか\nKarpathyさんのワークフロー（raw/ディレクトリにソースを入れ、LLMがwikiとして自動整理・更新する）に触発されて、フロントエン...",
-        "category": "AI・技術",
-        "rss_category": "",
-        "image_url": ""
-      },
-      {
-        "title": "AIエージェントと組んだら、データサイエンスプロジェクトはどう変わる？実験してみた（前半戦）",
-        "url": "https://zenn.dev/mimochiz/articles/2c27b16a3e03fd",
-        "site": "Zenn(LLM)",
-        "published": "2026-04-13T12:26:13Z",
-        "description": "はじめに\n近年、生成 AI の進化は目覚ましく、その波はデータサイエンス領域にも確実に広がっています\nでは、生成 AI はデータサイエンスの仕事をどこまで代替・拡張できるのでしょうか\n機械学習モデルそのものの数理計算やアルゴリズム処理は、依然として従来の手法に依存しています\nしかし一方で、データ前処理・特徴量生成・推論結果の解釈といった “モデル前後の工程” においては、生成 AI の活用により生...",
         "category": "AI・技術",
         "rss_category": "",
         "image_url": ""
