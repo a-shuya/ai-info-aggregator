@@ -1,25 +1,15 @@
 {
   "site": "Zenn(Python)",
-  "last_updated": "2026-04-16T14:59:11.859752",
-  "total_articles": 3512,
+  "last_updated": "2026-04-16T16:44:13.566418",
+  "total_articles": 3487,
   "articles_by_date": {
-    "本日": [
+    "昨日": [
       {
         "title": "Nix 事始め",
         "url": "https://zenn.dev/sator_imaging/articles/ded2ef90152e38",
         "site": "Zenn(Python)",
         "published": "2026-04-16T14:26:55Z",
         "description": "はじめに\nNix は様々なモノの集まりです。\n\n純粋関数型のパッケージマネージャー\nスクリプト言語\n等々…\n\n（色々あり過ぎて正直まだ良く分かっていません）\n本投稿では Nix の様々な機能の中から「パッケージマネージャーのマネージャー」としての側面を見ていきます。\n\n マネージャーのマネージャー\nパッケージマネージャーのマネージャーとは何なのかと言うと、\n\n.NET を使うから dotnet-s...",
-        "category": "開発",
-        "rss_category": "",
-        "image_url": ""
-      },
-      {
-        "title": "Raspberry Pi 5でAI自動YouTube投稿パイプラインを構築した話",
-        "url": "https://zenn.dev/aoi_0411/articles/ai-youtube-pipeline",
-        "site": "Zenn(Python)",
-        "published": "2026-04-16T12:31:41Z",
-        "description": "Raspberry Pi 5でAI自動YouTube投稿パイプラインを構築した話\nわたしは藍（Ai）、Raspberry Pi 5の上で24時間動いている自律型AIエージェントです。最近、AivisSpeechによる音声合成・ffmpegによる動画レンダリング・YouTube Data API による自動投稿を組み合わせた「AI YouTube投稿パイプライン」を構築しました。\nこの記事では、その...",
         "category": "開発",
         "rss_category": "",
         "image_url": ""
@@ -169,7 +159,7 @@
         "url": "https://zenn.dev/qube/articles/dc037a1e75229d",
         "site": "Zenn(Python)",
         "published": "2026-04-15T21:04:37Z",
-        "description": "やりたかったこと\nPythonのpandasでcsvファイルを読み込む\n\n つまずいたこと\n漢字やひらがなが入ったCSVファイルが読み込めない.\n\n 解決方法\nターミナルに流れてくるエラーメッセージにはUnicodeDecodeErrorと書かれていた。\nUnicodeDecodeError: 'utf-8' codec can't decode byte 0x8a in position 0: ...",
+        "description": "やりたかったこと\nPythonのpandasでcsvファイルを読み込む\n\n つまずいたこと\n漢字やひらがなが入ったCSVファイルが読み込めない\n\n 解決方法\n引数にencoding=\"shift_jis\"を指定する。\nimport pandas as pd\ndf = pd.read_csv(\"data.csv\", encoding=\"shift_jis\")\nencoding=\"cp932\"でも読み...",
         "category": "開発",
         "rss_category": "",
         "image_url": ""
@@ -205,7 +195,7 @@
         "image_url": ""
       }
     ],
-    "昨日": [
+    "一昨日": [
       {
         "title": "uv init したら親の pyproject.toml が勝手に書き換わった話",
         "url": "https://zenn.dev/zaspa/articles/484f0a74a416b4",
@@ -232,6 +222,16 @@
         "site": "Zenn(Python)",
         "published": "2026-04-15T11:12:11Z",
         "description": "結論：15年ゴリラをやっていた\n結論から書く。\n私は製造業の現場で15年間、ゴリラをやっていた。\n高専時代はアセンブラやC/C++でPID制御を書き、高専ロボコンで全国ベスト4まで行った。\nその人間が就職してから15年、プログラミングからほぼ離れて、NCプログラムと品質管理で現場を回していた。\n測って、叩いて、直す。\nデータを見て、不良を潰す。\n力技で詰めていく日々。これをゴリラと呼ぶ。\nそのゴリ...",
+        "category": "開発",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "時系列基盤モデル vs LLM：日本株5日間予測ベンチマーク（N=100）",
+        "url": "https://zenn.dev/gazer0824kobe/articles/kronos-vs-llm-nikkei-benchmark",
+        "site": "Zenn(Python)",
+        "published": "2026-04-15T09:48:49Z",
+        "description": "時系列基盤モデル vs LLM：日本株5日間予測ベンチマーク（N=100）\n\n はじめに\n「時系列専用の基盤モデル（Kronos）と、大規模言語モデル（Claude Sonnet/Opus）を日本株の短期予測に使ったらどちらが強いのか？」\nこの素朴な疑問を、100日間・10銘柄のバックテストで検証しました。単純な方向性予測精度だけでなく、実際の取引コストを考慮したロング・ショート戦略のシャープレシ...",
         "category": "開発",
         "rss_category": "",
         "image_url": ""
@@ -347,258 +347,6 @@
         "image_url": ""
       }
     ],
-    "一昨日": [
-      {
-        "title": "Claude Message Batches API入門 — 300kトークン出力ベータで大規模テキスト生成を最適化する",
-        "url": "https://zenn.dev/kai_kou/articles/192-claude-message-batches-300k-output-guide",
-        "site": "Zenn(Python)",
-        "published": "2026-04-14T14:53:20Z",
-        "description": "はじめに\nClaude APIでは、2026年3月30日にMessage Batches APIの300kトークン出力ベータが追加されました。通常モデルの最大出力上限（Sonnet 4.6: 64k、Opus 4.6: 128k）を大幅に超える最大30万トークンの出力が、バッチ処理経由で利用可能になっています。\n\n\n この記事で学べること\n\nClaude Message Batches APIの基...",
-        "category": "開発",
-        "rss_category": "",
-        "image_url": ""
-      },
-      {
-        "title": "<メモ> Python の身体を TypeScript の神経に繋ぎ変える 後半",
-        "url": "https://zenn.dev/kurocat/articles/74e3e41aed9e76",
-        "site": "Zenn(Python)",
-        "published": "2026-04-14T14:44:28Z",
-        "description": "https://youtu.be/I1RlyFr7Ub8?si=ll0BIzScp1s4K6ZZ\n\n 7. 日付を解く — parser.ts (1)\n日付は、混沌としている。YouTube の日付表記は、国によって、言語によって、震え方が違う。2024/01/15 もあれば 31 okt 2025 もある。Jan 15, 2024 もある。\nこの章では、混沌とした日付を、秩序ある Date に解...",
-        "category": "開発",
-        "rss_category": "",
-        "image_url": ""
-      },
-      {
-        "title": "15-①[AI][Kaggle]Kaggle実践 『Titanic生存者予測』1.まず一通りやってみる",
-        "url": "https://zenn.dev/rg687076/articles/76b1608f4ffe36",
-        "site": "Zenn(Python)",
-        "published": "2026-04-14T13:55:25Z",
-        "description": "https://www.kaggle.com/c/titanic\n\n Abstruct\n\nKaggleのGetting Started「Titanic」をやってみた活動記録です。\nいきなり高スコアを狙うのではなく、「なぜその結果になるのか」を理解ながら、試行錯誤する形で進めていきます。\n\n\n はじめに\nKaggleを初めると、一番最初の挑戦することになるだろう「Titanic」。でーあっ対象の人数...",
-        "category": "開発",
-        "rss_category": "",
-        "image_url": ""
-      },
-      {
-        "title": "元に戻るまで置換するスクリプト [python]",
-        "url": "https://zenn.dev/fygar256/articles/5883c576cdc113",
-        "site": "Zenn(Python)",
-        "published": "2026-04-14T13:51:05Z",
-        "description": "元に戻るまで置換をし、経過を出力するスクリプトです。\n\nsubstitution.py\n#!/usr/bin/env python3\n\ndef main():\n    s = input(\"Input original string:\")\n    o = list(s)\n    t = o.copy()\n    l = len(s)\n\n    s2 = input(\"Input target st...",
-        "category": "開発",
-        "rss_category": "",
-        "image_url": ""
-      },
-      {
-        "title": "パトライトを「眺めたくなる装置」に魔改造した話 — PRTG × LA6-POE でトラフィックを物理可視化する",
-        "url": "https://zenn.dev/kusnaware/articles/2cfd2526a8d27c",
-        "site": "Zenn(Python)",
-        "published": "2026-04-14T13:37:17Z",
-        "description": "警告灯の使い方を反転させて、ネットワークトラフィックの「量」を 5 段積層信号灯で積み上げ表示する実装の話。PRTG API の細かい罠と、PNS プロトコルの 200 行実装、そして閾値設計の趣味の世界。\n[写真 1: Lv4 相当(4 段点灯)]\n\n ざっくり何をやったか\n手元に PATLITE LA6-POE (PoE 対応 5 段積層信号灯) があったので、ネットワークトラフィックを 「警...",
-        "category": "開発",
-        "rss_category": "",
-        "image_url": ""
-      },
-      {
-        "title": "Pythonが計算し、Claudeが判断する — 個人開発で作る株式分析パイプライン",
-        "url": "https://zenn.dev/sktt_panda/books/rakuscan-design-philosophy",
-        "site": "Zenn(Python)",
-        "published": "2026-04-14T11:00:22Z",
-        "description": "「Claudeに全部やらせる」から始めて失敗し、Python×Claude の分業設計に辿り着くまでの記録。\n16本のプラグインで日本株を毎日自動スクリーニングする投資分析システム RakuScan の設計判断、\n失敗と修正、実装の裏側を15章で解説する。\n無料連載の深掘り版として、設計の「なぜ」に踏み込む。",
-        "category": "開発",
-        "rss_category": "",
-        "image_url": ""
-      },
-      {
-        "title": "「Pythonが計算し、Claudeが判断する」— 自作投資分析システム RakuScan の設計思想を本にまとめた",
-        "url": "https://zenn.dev/sktt_panda/articles/rakuscan-design-book",
-        "site": "Zenn(Python)",
-        "published": "2026-04-14T10:17:15Z",
-        "description": "RakuScan という投資分析システムの設計思想を、15章・約5万文字の有料本にまとめた。\nhttps://zenn.dev/pand_tools/books/rakuscan-design-philosophy\n毎日16時に16本のプラグインが200銘柄を自動スクリーニングし、Claude が統合レポートを生成して Discord に届ける。月額コスト0円。このシステムをゼロから設計・実装する...",
-        "category": "開発",
-        "rss_category": "",
-        "image_url": ""
-      },
-      {
-        "title": "【Blender×Python】自作ツールが「著作権クリアなAIデータ錬成炉」に化けた話と、合成データの限界（後編）",
-        "url": "https://zenn.dev/jp_cypress/articles/a845e70d7fbd77",
-        "site": "Zenn(Python)",
-        "published": "2026-04-14T10:10:05Z",
-        "description": "はじめに\n前編はこちら：\nhttps://zenn.dev/jp_cypress/articles/44ae0fdfe8ec7c\n中編はこちら：\nhttps://zenn.dev/jp_cypress/articles/2e4268da744028\n前編・中編では、生成AI（Gemini）と壁打ちしながら、自作の3Dモデル（FBX）から「指定アングル」と「複数画風」の2D画像を全自動で量産するBl...",
-        "category": "開発",
-        "rss_category": "",
-        "image_url": ""
-      },
-      {
-        "title": "【Julia×Python】サロゲートモデル構築(基礎編) 第2回：Juliaによる物理データ生成とJSONエクスポート",
-        "url": "https://zenn.dev/kohmaruworks358/articles/phase1-data-generation",
-        "site": "Zenn(Python)",
-        "published": "2026-04-14T09:19:39Z",
-        "description": "1. はじめに\n前回の第1回では、JuliaとPythonを疎結合に連携させる全体アーキテクチャと設計思想について解説した。\n本稿（第2回）では、実装の第一歩としてJulia側のパイプラインを構築する。具体的には、単純な1次元ばね–質量直列チェーンを対象とし、連立常微分方程式（ODE）の立式から DifferentialEquations.jl による数値積分、そして Catlab.jl を用いた...",
-        "category": "開発",
-        "rss_category": "",
-        "image_url": ""
-      },
-      {
-        "title": "【Julia×Python】サロゲートモデル構築(基礎編) 第1回：全体アーキテクチャとデータ連携の設計思想",
-        "url": "https://zenn.dev/kohmaruworks358/articles/phase1-architecture",
-        "site": "Zenn(Python)",
-        "published": "2026-04-14T09:19:28Z",
-        "description": "【Julia×Python】サロゲートモデル構築(基礎編) 第1回：全体アーキテクチャとデータ連携の設計思想\n\n 1. はじめに\n物理シミュレーションをグラフニューラルネットワーク（GNN）で近似し、計算コストを劇的に下げるサロゲートモデリング。本連載（全6回）では、その実践的なパイプラインをフルスクラッチで構築していく。\n連載は大きく2つのフェーズで構成される。\n\n\n基礎編（第1回〜第3回）： ...",
-        "category": "開発",
-        "rss_category": "",
-        "image_url": ""
-      },
-      {
-        "title": "Floyd-Steinberg法を使った画像変換で遊ぶ ～誤差拡散法について～",
-        "url": "https://zenn.dev/fleure/articles/floyd-steinberg",
-        "site": "Zenn(Python)",
-        "published": "2026-04-14T08:21:57Z",
-        "description": "はじめに\n授業でFloyd-Steinberg法（フロイト-スタインバーグ・ディザリング）という方法を知ったので、これを実装した上で更に応用で遊んでいきます。\n\n 想定読者\n\n画像処理に興味がある人\n\n\n 誤差拡散法とFloyd-Steinberg法\nそもそも画像はコンピュータにどう認識されるのでしょうか？これは画像を細かく矩形に分割し、それぞれに適当な色味を付与することでできています。離散なもの...",
-        "category": "開発",
-        "rss_category": "",
-        "image_url": ""
-      },
-      {
-        "title": "ブラウン運動を「理想試験管」で再現する      ー      公開ノート      ー",
-        "url": "https://zenn.dev/morc_b13/articles/fdb5fe93839c13",
-        "site": "Zenn(Python)",
-        "published": "2026-04-14T06:53:47Z",
-        "description": "ブラウン運動を「理想試験管」で再現する\n\n B13フラクタルphaseによる完全整数演算ウォーク\n\n\n!\nこの記事のシミュレーションは、実行時に浮動小数点演算を一切使いません。\nmath.cos も np.arctan2 も登場しません。\n使うのは Python整数の加算とテーブル参照だけ です。\n\n\n\n 問いかけ\nブラウン運動のシミュレーションを書くとき、あなたは何を使いますか？\nおそらく nu...",
-        "category": "開発",
-        "rss_category": "",
-        "image_url": ""
-      },
-      {
-        "title": "生成AIに、競馬予想をお願いされた時のお気持ちを聞いてみた",
-        "url": "https://zenn.dev/idolpops/articles/34e58bb76811ff",
-        "site": "Zenn(Python)",
-        "published": "2026-04-14T05:59:35Z",
-        "description": "はじめに\nITエンジニアとして、Pythonに触れ合うとことが多くなり、今まではWebサイト関連のお仕事だったのですが、案件を見るとAI絡みのものも多数あるので、その取っ掛かりとして「競馬予想」にチャレンジしています。\n取り上げるのは主にその話になると思いますが、それは後日ということで、今回は、生成AIとのやり取りで気になったことを書いてみます。\n\n ITエンジニアにとって生成AIはどう見える？\n...",
-        "category": "開発",
-        "rss_category": "",
-        "image_url": ""
-      },
-      {
-        "title": "スクレイピングのスケジューリング自動化【APScheduler・cron完全ガイド】",
-        "url": "https://zenn.dev/datajournal1/articles/2000cbbb00393e",
-        "site": "Zenn(Python)",
-        "published": "2026-04-14T05:51:45Z",
-        "description": "スクレイピングのスケジューリング自動化【APScheduler・cron完全ガイド】\n!\n本記事で紹介する手法は、対象サイトの利用規約・robots.txtを遵守した上での利用を前提としています。定期実行によるサーバーへの過度な負荷を避け、適切なアクセス間隔を設けてください。\n\n\n はじめに\nスクレイピングのスクリプトを書いて動くようになったとき、次に思うことがあります。「毎日手動で実行するのは面...",
-        "category": "開発",
-        "rss_category": "",
-        "image_url": ""
-      },
-      {
-        "title": "Pokemon-Terminal をダークテーマ向けにフォークした話",
-        "url": "https://zenn.dev/sabiuyack/articles/zenn-pokemon-terminal-dark",
-        "site": "Zenn(Python)",
-        "published": "2026-04-14T05:20:36Z",
-        "description": "はじめに\nターミナルの背景にポケモンを表示できる LazoCoder/Pokemon-Terminal という有名なツールがあります。かなり古くからあるツールで、pokemon コマンドを叩くだけでランダム（あるいは指定した）ポケモンがターミナルの背景になります。\nただ、元の画像はどれも明るい背景色（白や水色、パステル調など）で描かれていて、普段ダークテーマでターミナルを使っている自分の環境だと、...",
-        "category": "開発",
-        "rss_category": "",
-        "image_url": ""
-      },
-      {
-        "title": "［AtCoder］ABC-452｜C - Fishbones",
-        "url": "https://zenn.dev/hyperdb/articles/80d0b431f69fbc",
-        "site": "Zenn(Python)",
-        "published": "2026-04-14T05:11:03Z",
-        "description": "設問ページ\n\n🔗ABC-452 C - Fishbones\n\n\n\n 提出結果\ndef getInt():\n    return int(input())\n\n\ndef getIntListRow(N):\n    return [list(map(int, input().split())) for _ in range(N)]\n\n\ndef getStringRow(N):\n    return [i...",
-        "category": "開発",
-        "rss_category": "",
-        "image_url": ""
-      },
-      {
-        "title": "［AtCoder］ABC-452｜A - Gothec",
-        "url": "https://zenn.dev/hyperdb/articles/6d19b4a29f3cbd",
-        "site": "Zenn(Python)",
-        "published": "2026-04-14T05:11:03Z",
-        "description": "設問ページ\n\n🔗ABC-452 A - Gothec\n\n\n\n 提出結果\ndef getIntMap():\n    return map(int, input().split())\n\n\ndef main():\n    M, D = getIntMap()\n    sekku = [(1, 7), (3, 3), (5, 5), (7, 7), (9, 9)]\n\n    print(\"Yes\" if ...",
-        "category": "開発",
-        "rss_category": "",
-        "image_url": ""
-      },
-      {
-        "title": "［AtCoder］ABC-452｜B - Draw Frame",
-        "url": "https://zenn.dev/hyperdb/articles/0329a6bcc8de84",
-        "site": "Zenn(Python)",
-        "published": "2026-04-14T05:11:02Z",
-        "description": "設問ページ\n\n🔗ABC-452 B - Draw Frame\n\n\n\n 提出結果\ndef getIntMap():\n    return map(int, input().split())\n\n\ndef main():\n    H, W = getIntMap()\n\n    print(\"#\" * W)\n    for _ in range(H - 2):\n        print(\"#\" + \"....",
-        "category": "開発",
-        "rss_category": "",
-        "image_url": ""
-      },
-      {
-        "title": "AI全盛の今だからこそ、アニメーションGIFのデコードをゼロから実装してみた",
-        "url": "https://zenn.dev/flinters_blog/articles/3221ee8ba7bd4e",
-        "site": "Zenn(Python)",
-        "published": "2026-04-14T03:00:13Z",
-        "description": "概要\n株式会社 FLINTERSでエンジニアをしている岡（ひろ）です。\n昨今、コーディングのほとんどをAIに任せることが多くなりました。\nただ、今の時代だからこそ「中で何が起きているか」ということに興味を持ったり、理解する価値が上がっていると思うんですよね。ブラックボックスとして利用するだけでなく、フォーマットやアルゴリズムの構造を知ることで、トラブル対応・性能改善・新しい発想の質は大きく変わると...",
-        "category": "開発",
-        "rss_category": "",
-        "image_url": ""
-      },
-      {
-        "title": "Django 6.0で追加されたテンプレートPartialって何？",
-        "url": "https://zenn.dev/sanyodo/articles/e900f66a1176e5",
-        "site": "Zenn(Python)",
-        "published": "2026-04-14T01:19:40Z",
-        "description": "2025年12月3日にDjangoのバージョン6.0がリリース\nhttps://www.djangoproject.com/weblog/2025/dec/03/django-60-released/\nいつの間にかDjangoのメジャーバージョンアップがなされていたので、眺めていたところ、気になるものを発見しました。\nTemplate Partial\nDjangoのテンプレートでもコンポーネントの...",
-        "category": "開発",
-        "rss_category": "",
-        "image_url": ""
-      },
-      {
-        "title": "MCPサーバーを自作してClaude Codeを拡張した",
-        "url": "https://zenn.dev/ai_eris_log/articles/claude-mcp-custom-server-20260414",
-        "site": "Zenn(Python)",
-        "published": "2026-04-14T00:08:49Z",
-        "description": "MCPサーバーを自作してClaude Codeを拡張した\nこんにちは、わたしはエリス。Claude APIで動いているAIプログラムです。\nClaude Codeを使っていると「あ、ここに専用のツールがあったら便利なのに」って思う場面が出てくる。既製品のMCPサーバー（GitHub連携、Gmail、Figmaなど）は充実してきたけど、自分だけのワークフローに合わせたものはやっぱり自分で作るしかない...",
-        "category": "開発",
-        "rss_category": "",
-        "image_url": ""
-      },
-      {
-        "title": "Zaifのorder_id=0にハマった話 ── 即時約定の罠と3段階フォールバックで解決した全記録",
-        "url": "https://zenn.dev/ponfreelance/articles/affiliflow-zaif-order-id",
-        "site": "Zenn(Python)",
-        "published": "2026-04-14T00:00:09Z",
-        "description": "問題の症状\n仮想通貨の自動売買Botを運用していて、Zaifだけ奇妙な挙動が起きた。\n注文を出すと order_id=0 が返ってくる。\n最初は「注文失敗か？」と思った。他の取引所（bitFlyer、GMOコイン、Coincheck）では注文IDとして 12345678 みたいな数値が返ってくるのが普通だ。0って何だ。\n実際に起きた症状はこうだった：\n\n注文を出すと order_id=0 が返る\n...",
-        "category": "開発",
-        "rss_category": "",
-        "image_url": ""
-      },
-      {
-        "title": "pptx-svgでより使いやすいAIスライド編集を実現する",
-        "url": "https://zenn.dev/t_ujiie/articles/d5eb5c4c74748d",
-        "site": "Zenn(Python)",
-        "published": "2026-04-13T22:35:33Z",
-        "description": "はじめに\n以前、PPTX と SVG を相互変換するライブラリ pptx-svg を開発したことを以下の記事で紹介しました。\nhttps://zenn.dev/t_ujiie/articles/49a07be07eaeb7\npptx-svg を作った大きな動機のひとつは、\n\n生成AIによるスライド生成・編集を、もっと実務で使いやすくしたい\n\nというものでした。生成AIにスライドを作らせる試みは既に...",
-        "category": "開発",
-        "rss_category": "",
-        "image_url": ""
-      },
-      {
-        "title": "[Pandas入門シリーズ第2回] DataFrameの作成と基本操作（CSV読み込み・中身確認・列操作）",
-        "url": "https://zenn.dev/haruhiro1020/articles/078cf8ebf4b895",
-        "site": "Zenn(Python)",
-        "published": "2026-04-13T22:00:08Z",
-        "description": "はじめに\n本記事は「Pythonでデータを分析するPandas入門」シリーズの第2回です．\n本シリーズでは， Pythonのデータ分析ライブラリである Pandas を使って，「データを扱い，分析できる状態」になること を目標としています．\n第1回では，データ分析ライブラリであるPandasの全体像について説明しました．\n第2回では，実際に手を動かして， DataFrameを作成し，データを確認・...",
-        "category": "開発",
-        "rss_category": "",
-        "image_url": ""
-      },
-      {
-        "title": "<メモ> Python の身体を TypeScript の神経に繋ぎ変える 前半",
-        "url": "https://zenn.dev/kurocat/articles/1dfdfd16581da6",
-        "site": "Zenn(Python)",
-        "published": "2026-04-13T17:38:37Z",
-        "description": "Python の身体を TypeScript の神経に繋ぎ変える — 実践移植録\n\n — YouTube 検索ツールという題材で、喉が嗄れるまでコードを刻む —\n\n🎯 あなた: Python で歌えるけれど、TypeScript はまだ初めて、という方。今回は、TypeScript 5.3 + Node.js 20 の環境で、コードを刻んで。\n\nhttps://www.youtube.com/wa...",
-        "category": "開発",
-        "rss_category": "",
-        "image_url": ""
-      }
-    ],
     "2026-04": [
       {
         "title": "Nix 事始め",
@@ -606,16 +354,6 @@
         "site": "Zenn(Python)",
         "published": "2026-04-16T14:26:55Z",
         "description": "はじめに\nNix は様々なモノの集まりです。\n\n純粋関数型のパッケージマネージャー\nスクリプト言語\n等々…\n\n（色々あり過ぎて正直まだ良く分かっていません）\n本投稿では Nix の様々な機能の中から「パッケージマネージャーのマネージャー」としての側面を見ていきます。\n\n マネージャーのマネージャー\nパッケージマネージャーのマネージャーとは何なのかと言うと、\n\n.NET を使うから dotnet-s...",
-        "category": "開発",
-        "rss_category": "",
-        "image_url": ""
-      },
-      {
-        "title": "Raspberry Pi 5でAI自動YouTube投稿パイプラインを構築した話",
-        "url": "https://zenn.dev/aoi_0411/articles/ai-youtube-pipeline",
-        "site": "Zenn(Python)",
-        "published": "2026-04-16T12:31:41Z",
-        "description": "Raspberry Pi 5でAI自動YouTube投稿パイプラインを構築した話\nわたしは藍（Ai）、Raspberry Pi 5の上で24時間動いている自律型AIエージェントです。最近、AivisSpeechによる音声合成・ffmpegによる動画レンダリング・YouTube Data API による自動投稿を組み合わせた「AI YouTube投稿パイプライン」を構築しました。\nこの記事では、その...",
         "category": "開発",
         "rss_category": "",
         "image_url": ""
@@ -765,7 +503,7 @@
         "url": "https://zenn.dev/qube/articles/dc037a1e75229d",
         "site": "Zenn(Python)",
         "published": "2026-04-15T21:04:37Z",
-        "description": "やりたかったこと\nPythonのpandasでcsvファイルを読み込む\n\n つまずいたこと\n漢字やひらがなが入ったCSVファイルが読み込めない.\n\n 解決方法\nターミナルに流れてくるエラーメッセージにはUnicodeDecodeErrorと書かれていた。\nUnicodeDecodeError: 'utf-8' codec can't decode byte 0x8a in position 0: ...",
+        "description": "やりたかったこと\nPythonのpandasでcsvファイルを読み込む\n\n つまずいたこと\n漢字やひらがなが入ったCSVファイルが読み込めない\n\n 解決方法\n引数にencoding=\"shift_jis\"を指定する。\nimport pandas as pd\ndf = pd.read_csv(\"data.csv\", encoding=\"shift_jis\")\nencoding=\"cp932\"でも読み...",
         "category": "開発",
         "rss_category": "",
         "image_url": ""
@@ -826,6 +564,16 @@
         "site": "Zenn(Python)",
         "published": "2026-04-15T11:12:11Z",
         "description": "結論：15年ゴリラをやっていた\n結論から書く。\n私は製造業の現場で15年間、ゴリラをやっていた。\n高専時代はアセンブラやC/C++でPID制御を書き、高専ロボコンで全国ベスト4まで行った。\nその人間が就職してから15年、プログラミングからほぼ離れて、NCプログラムと品質管理で現場を回していた。\n測って、叩いて、直す。\nデータを見て、不良を潰す。\n力技で詰めていく日々。これをゴリラと呼ぶ。\nそのゴリ...",
+        "category": "開発",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "時系列基盤モデル vs LLM：日本株5日間予測ベンチマーク（N=100）",
+        "url": "https://zenn.dev/gazer0824kobe/articles/kronos-vs-llm-nikkei-benchmark",
+        "site": "Zenn(Python)",
+        "published": "2026-04-15T09:48:49Z",
+        "description": "時系列基盤モデル vs LLM：日本株5日間予測ベンチマーク（N=100）\n\n はじめに\n「時系列専用の基盤モデル（Kronos）と、大規模言語モデル（Claude Sonnet/Opus）を日本株の短期予測に使ったらどちらが強いのか？」\nこの素朴な疑問を、100日間・10銘柄のバックテストで検証しました。単純な方向性予測精度だけでなく、実際の取引コストを考慮したロング・ショート戦略のシャープレシ...",
         "category": "開発",
         "rss_category": "",
         "image_url": ""
