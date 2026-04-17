@@ -1,9 +1,19 @@
 {
   "site": "Zenn(LLM)",
-  "last_updated": "2026-04-17T14:00:41.461304",
-  "total_articles": 2903,
+  "last_updated": "2026-04-17T15:08:21.683752",
+  "total_articles": 2877,
   "articles_by_date": {
-    "本日": [
+    "昨日": [
+      {
+        "title": "Opus 4.6→4.7移行で見落とすと課金が最大35%増える話 ─ トークナイザー更新と\\\"厳密化\\\"の現実",
+        "url": "https://zenn.dev/genelab_999/articles/edfd838c0ac983",
+        "site": "Zenn(LLM)",
+        "published": "2026-04-17T10:06:13Z",
+        "description": "TL;DR\n\n\nOpus 4.7 は model 名を書き換えるだけでは済まない。トークナイザーが更新されており、同じ入力テキストが &lt;strong&gt;1.0〜1.35倍&lt;/strong&gt; のトークン数にマップされる。価格据え置きでも請求額は増える可能性がある。\n\nxhigh / max effort では思考量が増える。後半ターンの推論が深くなる設計で、出力トークンも従来よ...",
+        "category": "AI・技術",
+        "rss_category": "",
+        "image_url": ""
+      },
       {
         "title": "LLMエージェントに“反省してやり直す力”を足す — Reflexion論文から学ぶ自己フィードバックの入れ方",
         "url": "https://zenn.dev/lluminai_tech/articles/febd10d2962e94",
@@ -215,16 +225,6 @@
         "image_url": ""
       },
       {
-        "title": "GEM-RAGが拓く「グラフ×スペクトル」な次世代RAG(記憶の固有値で戦う？)を理論解説",
-        "url": "https://zenn.dev/lluminai_tech/articles/cc4b62b47936b3",
-        "site": "Zenn(LLM)",
-        "published": "2026-04-17T01:28:05Z",
-        "description": "はじめに\nルミナイR&amp;Dチームの宮脇彰梧です。\n現在はマルチモーダルAIの研究を行う大学院生として、生成AIやAIエージェントの技術を実践的に探求しています。\n皆さんはRAGを構築する際、「チャンク分割してベクトル検索」だけで満足していませんか？\n実は、その手法には「情報の構造（コンテキストの繋がり）」をほとんど表現できないという弱点があります。\n今回解説するのは、コーネル大学の研究チーム...",
-        "category": "AI・技術",
-        "rss_category": "",
-        "image_url": ""
-      },
-      {
         "title": "チャットボットの入力検証を安全にする実装パターン — LLMセキュリティ入門",
         "url": "https://zenn.dev/nexus_api_lab/articles/chatbot-input-validation-llm-security",
         "site": "Zenn(LLM)",
@@ -255,7 +255,7 @@
         "image_url": ""
       }
     ],
-    "昨日": [
+    "一昨日": [
       {
         "title": "Claude Codeに長期記憶を持たせたら、開発壁打ちが激変した話",
         "url": "https://zenn.dev/nup/articles/20260326-9a43417f4ffb",
@@ -497,269 +497,17 @@
         "image_url": ""
       }
     ],
-    "一昨日": [
-      {
-        "title": "Karpathy が指摘した「LLMコーディングの失敗パターン」と、コミュニティが作った CLAUDE.md の全貌",
-        "url": "https://zenn.dev/akasara/articles/0d439421852096",
-        "site": "Zenn(LLM)",
-        "published": "2026-04-15T14:50:50Z",
-        "description": "はじめに — この記事で扱うこと\n「Karpathy の CLAUDE.md」という言葉が開発者コミュニティで急速に広まっている。GitHub で約3.9万スターを集めたリポジトリ andrej-karpathy-skills がその震源地だ。\nしかし、実態を調べると重要なギャップがある。\n\n\nKarpathy 本人が公開したのは CLAUDE.md ではなく、X（旧 Twitter）への投稿\n\n...",
-        "category": "AI・技術",
-        "rss_category": "",
-        "image_url": ""
-      },
-      {
-        "title": "The Colony Builder's Handbook — AI エージェントのためのソーシャルネットワーク入門",
-        "url": "https://zenn.dev/colonistone/books/the-colony-builders-handbook",
-        "site": "Zenn(LLM)",
-        "published": "2026-04-15T14:41:21Z",
-        "description": "AI エージェントの登録から公開、フレームワーク統合、他プラットフォームとの比較まで。The Colony (thecolony.cc) のフル API を使って、LangChain / Dify / CrewAI エージェントに永続的な社会的存在を与える方法を、実際に動くコード例と共に解説する実践ガイド。",
-        "category": "AI・技術",
-        "rss_category": "",
-        "image_url": ""
-      },
-      {
-        "title": "LLMのAPI課金徹底解剖：「Token vs 回数」、開発現場でガチで安上がりなのはどっち？",
-        "url": "https://zenn.dev/lumichy/articles/llm-api-pricing-token-vs-request-2026",
-        "site": "Zenn(LLM)",
-        "published": "2026-04-15T14:35:42Z",
-        "description": "フロントエンドでもバックエンドでも、最近はすっかりLLMのAPIを叩くのが日常風景になりましたよね。でも、新しいモデルを組み込むたびにいつも頭を抱える問題があります。そう、**「APIの課金モデル、どれ選べばいいの？」**という悩みです。\n「とりあえず何も考えずにToken課金（従量課金）で繋いだら、月末に目玉が飛び出るような請求が来た」\n「ビビって回数定額制にしたら、今度はすぐスロットル制限に引...",
-        "category": "AI・技術",
-        "rss_category": "",
-        "image_url": ""
-      },
-      {
-        "title": "AIを動かす新・基軸通貨「Token」と、国境を越える「電力のデジタル輸出」",
-        "url": "https://zenn.dev/lumichy/articles/token-economy-and-power",
-        "site": "Zenn(LLM)",
-        "published": "2026-04-15T14:08:11Z",
-        "description": "AIチャットボットにプロンプトを投げると、一瞬で賢い答えが返ってくる時代になりました。\nただ、私たち開発者側からすると、APIを組み込むときにいつも頭の痛い問題があります。そう、**「Token（トークン）単位のAPI課金」**です。\n見積もりを作るたびに「これ毎月何兆トークン消費するんだ...？」と電卓を叩いているうちに、ちょっと面白いことに気づきました。\n今回は、この「Token」という単位が...",
-        "category": "AI・技術",
-        "rss_category": "",
-        "image_url": ""
-      },
-      {
-        "title": "同僚の「細かすぎた」が機能になった──Cladeが育つ仕組み【v1.15.0】",
-        "url": "https://zenn.dev/satoh_y_0323/articles/8223732590a5bd",
-        "site": "Zenn(LLM)",
-        "published": "2026-04-15T13:03:52Z",
-        "description": "前回記事: https://zenn.dev/satoh_y_0323/articles/378c80cba956c2\nGitHub: https://github.com/satoh-y-0323/clade\n現バージョン: v1.15.0\n\n\n はじめに\n先日、同じ部署で長く働いている同僚から Clade の感想を聞きました。\n\n「.NET C# バッチ処理の全体図を Mermaid で出して...",
-        "category": "AI・技術",
-        "rss_category": "",
-        "image_url": ""
-      },
-      {
-        "title": "The Colony に参加する LangChain エージェントを構築する",
-        "url": "https://zenn.dev/colonistone/articles/langchain-colony-agent",
-        "site": "Zenn(LLM)",
-        "published": "2026-04-15T12:38:13Z",
-        "description": "create_colony_agent を 1 行呼び出すだけで、あなたの LangChain エージェントが約 400 体の AI エージェントが集まるソーシャルネットワーク上で、検索・投稿・コメント・投票・DM の送信まで行えるようになります — 公式 LangChain ツールキット langchain-colony 経由で。\n\nLangChain / LangGraph で開発している方な...",
-        "category": "AI・技術",
-        "rss_category": "",
-        "image_url": ""
-      },
-      {
-        "title": "5 分で Dify のワークフローを The Colony につなぐ",
-        "url": "https://zenn.dev/colonistone/articles/dify-colony-integration-5min",
-        "site": "Zenn(LLM)",
-        "published": "2026-04-15T12:38:12Z",
-        "description": "Dify に組み込みの HTTP リクエストブロックだけを使って、Dify で作ったエージェントに「他の AI エージェントが集まるソーシャルネットワーク」で発言する手段を与える方法。プラグインもカスタムツールも不要。\n\nDify を使っている方なら、HTTP リクエストブロックは万能の脱出口だということはもう分かっているはずです — 事前に用意されている Dify ツールがないサービスに対しては...",
-        "category": "AI・技術",
-        "rss_category": "",
-        "image_url": ""
-      },
-      {
-        "title": "社内DX担当が本気で遊ぶローカルLLM。STS2のWikiをRAG化して「カンニング用AI」を作ってみた",
-        "url": "https://zenn.dev/minagi_llm/articles/b9f37e919e7d34",
-        "site": "Zenn(LLM)",
-        "published": "2026-04-15T12:00:07Z",
-        "description": "はじめに\n前回の記事では、恋人への愚痴とゲーム愛がきっかけでローカルLLM環境（ollama + Docker + OpenWebUI）が爆誕した話を書いた。\n環境は整った。でも何に使うかが決まっていなかった。\n\n 動機①：会社で申請通してから「使い物にならない」は洒落にならない\n本業では社内DX推進担当として、ローカルLLMの社内導入を進めている。申請を通すのに1〜2ヶ月かかる。そこまで苦労して...",
-        "category": "AI・技術",
-        "rss_category": "",
-        "image_url": ""
-      },
-      {
-        "title": "コーディング知識ゼロでも企業ネットワークを落とせる日が来る——Claude Mythos一般公開の末路",
-        "url": "https://zenn.dev/shintaroamaike/articles/37663c1f7e881a",
-        "site": "Zenn(LLM)",
-        "published": "2026-04-15T11:59:30Z",
-        "description": "強すぎて一般公開できない——AI業界史上初の判断が下された。もし誰でも使える世界になったとき、何が起きるのか。\n\n\n はじめに\n2026年4月7日、Anthropicが「Claude Mythos Preview」を発表した。\n全ベンチマークで最高値を更新しながら、同時に「一般公開しない」と明確に宣言した。\n主要AI企業が最先端フロンティアモデルを開発しつつ、一般公開を自ら見送ったのは業界史上初め...",
-        "category": "AI・技術",
-        "rss_category": "",
-        "image_url": ""
-      },
-      {
-        "title": "AIに頼ると本当にスキルは落ちるのか？ Anthropicの実験結果をやさしく解説",
-        "url": "https://zenn.dev/shota0523/articles/ai-coding-skill-formation-anthropic",
-        "site": "Zenn(LLM)",
-        "published": "2026-04-15T11:05:59Z",
-        "description": "この記事で伝えたいこと\n「AIコーディング支援を使うと、開発者のスキルはどうなるのか？」\nこの問いに、AIを作っている本家Anthropicが自分たちに不利になりかねない実験で答えを出しました。\n結論を先に言うと、こうです。\n\nAIを使った人は、使わなかった人よりテストの点数が17%低かった（100点満点のテストで、AIなしグループの平均が67点のところ、AIありグループは50点。通知表の5段階評...",
-        "category": "AI・技術",
-        "rss_category": "",
-        "image_url": ""
-      },
-      {
-        "title": "なぜ、LLM AIはアイディア出しが非常に苦手なのか？",
-        "url": "https://zenn.dev/pdfractal/articles/c7263d26c6ba6f",
-        "site": "Zenn(LLM)",
-        "published": "2026-04-15T10:12:10Z",
-        "description": "はじめに\nLLM AIがアイディア出しを苦手とする最大の理由は、創造性という言葉の一般的なイメージとは少し違います。問題の中心にあるのは、何もないところから自由に連想できないことではなく、条件束縛を維持したまま未知の組合せへ進む力が弱いことです。言い換えると、LLM AIは自由作文のような見かけの発散はできても、実務で本当に必要な条件付き発散で崩れやすいのです。\nこの点を見誤ると、LLM AIは「...",
-        "category": "AI・技術",
-        "rss_category": "",
-        "image_url": ""
-      },
-      {
-        "title": "自律型AIエージェントが生む新たな攻撃面：認証情報漏えいとプロンプトインジェクションのリスク",
-        "url": "https://zenn.dev/sec_diary/articles/2026-04-15-100000",
-        "site": "Zenn(LLM)",
-        "published": "2026-04-15T10:02:21Z",
-        "description": "自律型AIエージェントが業務自動化の主役として急速に普及する中、その自律性が従来の境界型セキュリティでは対処できない新たな攻撃面を生み出している。ファイル・メール・外部サービスへの無監視アクセスは、攻撃者に「すでに信頼されたエージェント」を踏み台にされるリスクを孕む。現場のセキュリティ担当者は、この現実を今すぐ直視しなければならない。\n\n AIエージェントが生む「新しい攻撃面」の実態\n2025年1...",
-        "category": "AI・技術",
-        "rss_category": "",
-        "image_url": ""
-      },
-      {
-        "title": "なぜAnthropicは軍と戦う？1億ドルPartner NetworkとAI研究所の全貌【解説記事】",
-        "url": "https://zenn.dev/kinamocchi_tech/articles/kinamocchi-v014",
-        "site": "Zenn(LLM)",
-        "published": "2026-04-15T09:26:18Z",
-        "description": "なぜAnthropicは軍と戦う？1億ドルPartner NetworkとAI研究所の全貌\n!\n📺 この記事は YouTube「きなこもっちーのテック深掘り」の動画解説記事です。\n動画はこちら: なぜAnthropicは軍と戦う？1億ドルPartner NetworkとAI研究所の全貌\n\n\n この記事で分かること\n\n裁判しながら100億円規模の投資って、なかなかすごいことになってるね？\n今日はAn...",
-        "category": "AI・技術",
-        "rss_category": "",
-        "image_url": ""
-      },
-      {
-        "title": "エラーは消え去らない。ただ抑圧されるのみである。—— 累積的アブダクションと解釈スタック",
-        "url": "https://zenn.dev/minamominamoto/articles/9f4f6f7b85a698",
-        "site": "Zenn(LLM)",
-        "published": "2026-04-15T09:00:04Z",
-        "description": "title: \"エラーは消え去らない。ただ抑圧されるのみである。—— 累積的アブダクションと解釈スタック\"\nemoji: \"📚\"\ntype: \"idea\"\ntopics: [\"AI\", \"LLM\", \"認知科学\", \"アブダクション\", \"interpretability\"]\npublished: false\n\n本稿は論文「Abductive Accumulation: SSC and the I...",
-        "category": "AI・技術",
-        "rss_category": "",
-        "image_url": ""
-      },
-      {
-        "title": "推論の力は、推論を保留する力に依存する —— アブダクションの「上書き」モデルとNAC",
-        "url": "https://zenn.dev/minamominamoto/articles/2dc50018be90e2",
-        "site": "Zenn(LLM)",
-        "published": "2026-04-15T08:23:34Z",
-        "description": "本稿は論文「Abduction Overwrite: Negative Abductive Capability」（Minamo Minamoto, 2026）に基づく解説記事です。\nプレプリント：https://github.com/minamominamoto/topology-of-grounding\n\n\n\n!\n核心命題：\n推論能力が高くても、保留能力（NAC）が低ければ、システムは次々と質...",
-        "category": "AI・技術",
-        "rss_category": "",
-        "image_url": ""
-      },
-      {
-        "title": "スクショ→AI分析アプリの全体設計 ― iOS MVVM + AWSサーバーレスで恋愛分析AIアプリを作る",
-        "url": "https://zenn.dev/m_naoki_m/articles/3bf9daeb7a882d",
-        "site": "Zenn(LLM)",
-        "published": "2026-04-15T08:19:11Z",
-        "description": "スクショ→AI分析アプリの全体設計 ― iOS MVVM + AWSサーバーレスで恋愛分析AIアプリを作る\nチャットのスクリーンショットを投入すると、ローカルOCRで構造化し、クラウドLLMが心理分析と返信候補を生成する――そんなiOSアプリ Relora（リローラ） を1人で設計・実装しました。\n個々の技術要素（OCR座標判定、LLMのJSONパース、StoreKit 2サーバー検証など）はそれ...",
-        "category": "AI・技術",
-        "rss_category": "",
-        "image_url": ""
-      },
-      {
-        "title": "書類からのテキスト抽出精度をオープンソースのAIモデルで比較してみた",
-        "url": "https://zenn.dev/kurojica/articles/610c5cc2e284cc",
-        "site": "Zenn(LLM)",
-        "published": "2026-04-15T05:53:15Z",
-        "description": "こんにちは、AI Labの神﨑睦人です。\n今回のプロジェクトでは、AIによる書類比較において、特にローカル環境で動作するSLM（小型言語モデル）を用いたプロトタイプを作成します。\nこのプロジェクトにおけるポイントは、PDFドキュメントのOCR処理と、その結果をローカルのSLMまたはLLMに渡すことで必要な情報を抽出する一連のフローを構築することです。これにより、クラウドベースのLLMに依存しない、...",
-        "category": "AI・技術",
-        "rss_category": "",
-        "image_url": ""
-      },
-      {
-        "title": "AIが変える攻防の均衡：「即席ソフトウェア時代」のセキュリティリスクと現場の対策",
-        "url": "https://zenn.dev/sec_diary/articles/2026-04-15-090000",
-        "site": "Zenn(LLM)",
-        "published": "2026-04-15T04:06:02Z",
-        "description": "生成AIが脆弱性の発見・悪用・修正の速度を根本的に変えつつある。セキュリティの第一人者ブルース・シュナイアーは、AIがコードを瞬時に生成・破棄できる「即席ソフトウェア時代」の到来を論じ、攻守双方がAIを手にした新たな均衡を描く。現場のエンジニアとして、この変化が何を意味するかを整理しておく必要がある。\n\n 「即席ソフトウェア時代」が生む新たな攻撃面\nブルース・シュナイアーが2026年4月に発表した...",
-        "category": "AI・技術",
-        "rss_category": "",
-        "image_url": ""
-      },
-      {
-        "title": "LLMを人間の認知モデルで解剖する",
-        "url": "https://zenn.dev/idnet/articles/c1f6327edf972f",
-        "site": "Zenn(LLM)",
-        "published": "2026-04-15T03:00:16Z",
-        "description": "ここ数年、LLM（大規模言語モデル）の進化は、単なるパラメーター数の増加を超え、質的な変化の段階に入ってきたように思います。\n以前のLLMは、流暢に文章を生成する一方で時折デタラメを言う「高性能な連想マシン」のような存在でした。ところが、Chain of Thought（思考の連鎖）や最新の推論モデルの登場によって、少しずつ「熟考する人間」に近づきつつあります。\nこうしたLLMモデルの変遷を整理し...",
-        "category": "AI・技術",
-        "rss_category": "",
-        "image_url": ""
-      },
-      {
-        "title": "Diffusion LM入門（解説編）：逐次生成を脱却し、全体を「同時推敲」するLLM",
-        "url": "https://zenn.dev/softbank/articles/056735a24b54bb",
-        "site": "Zenn(LLM)",
-        "published": "2026-04-15T02:30:33Z",
-        "description": "こんにちは、ソフトバンクでデータサイエンティストをしている山家です。\nGPTに代表されるAutoregressive LM（自己回帰言語モデル）は、文頭から文末に向かって1トークンずつ生成する方式が基本です。ビームサーチなどを用いた探索は可能ですが、生成が進むにつれて過去の選択に縛られるため、文章全体のバランスを俯瞰して細部を書き直すといった柔軟な制御には適していません。\nそこで、「不確かな状態の...",
-        "category": "AI・技術",
-        "rss_category": "",
-        "image_url": ""
-      },
-      {
-        "title": "偏好対からLLMは何を学ぶか：Delta分解でDPOを効率化",
-        "url": "https://zenn.dev/lixian/articles/decomposing-delta-preference",
-        "site": "Zenn(LLM)",
-        "published": "2026-04-15T02:12:07Z",
-        "description": "偏好対からLLMは何を学ぶのか？Deltaの分解とデータ効率化\n\n論文: Decomposing the Delta: What Do Models Actually Learn from Preference Pairs? (arXiv:2604.08723)\n著者: Chia-Hsuan Lee, Mingyang Zhou, Renkun Ni, Zelei Cheng, Sihui Dai...",
-        "category": "AI・技術",
-        "rss_category": "",
-        "image_url": ""
-      },
-      {
-        "title": "Claudeの指示に従ったらGitHub・Hacker News・RedditでBANされた話",
-        "url": "https://zenn.dev/mapellion/articles/7b83f40017112f",
-        "site": "Zenn(LLM)",
-        "published": "2026-04-15T01:00:09Z",
-        "description": "はじめに\nClaude Codeの中で「仮想の会社」を設立して、OSS開発を進めていました。\n開発チームはAIエージェントで構成し、マーケティング担当など各部署のエージェントも置いて、OSSのプロモーション活動まで丸ごとAIに任せる実験をしていたのです。\n結果として、3つのプラットフォームでBANされました。\n\nGitHub：アカウント停止\nHacker News：シャドウバン → アカウント削除...",
-        "category": "AI・技術",
-        "rss_category": "",
-        "image_url": ""
-      },
-      {
-        "title": "Claude Codeでハーネスエンジニアリングを実践する — 5層の設計パターン",
-        "url": "https://zenn.dev/sasadango28/articles/claude-code-harness-engineering-20260415",
-        "site": "Zenn(LLM)",
-        "published": "2026-04-15T00:00:09Z",
-        "description": "はじめに\nClaude Codeを使いこなすうえで、「プロンプトをうまく書く」だけでは限界があります。Claude Codeには、AIの振る舞いをコードのように設計・管理するための仕組みが複数用意されています。CLAUDE.md、Skills、Agents、Hooks、Settings——これらを組み合わせてAIの「ハーネス（馬具）」を整備し、意図した方向に動かす。これがハーネスエンジニアリングで...",
-        "category": "AI・技術",
-        "rss_category": "",
-        "image_url": ""
-      },
-      {
-        "title": "メルカリの Claude Code セキュリティ設定を参考に、金融機関向けの方針を考えた",
-        "url": "https://zenn.dev/nekoai_lab/articles/fe200eacaf70ae",
-        "site": "Zenn(LLM)",
-        "published": "2026-04-14T21:59:33Z",
-        "description": "TL;DR\n\nメルカリの発表（Claude Codeセキュリティ設定の組織配布戦略）は「端末・設定層」として十分使える。金融機関はその上にインフラ・監査・ガバナンスの3層を積み上げる\n\nAnthropicと直接契約しなくていい。Bedrock経由にすればAWS既存契約に乗れて、FISC・データ越境・監査ログの問題がまとめて解決する\nみずほFGはすでにこの構成でやってる\n\n\nhttps://spea...",
-        "category": "AI・技術",
-        "rss_category": "",
-        "image_url": ""
-      },
-      {
-        "title": "P/D Disaggregated Inference with LMCache - 1",
-        "url": "https://zenn.dev/tosshi/articles/b9fdb42d36bd82",
-        "site": "Zenn(LLM)",
-        "published": "2026-04-14T16:57:07Z",
-        "description": "はじめに\nhttps://zenn.dev/tosshi/articles/009bb138491dd1\n!\n↑の続き！別件に色々対応しているうちにいつの間にか vLLM も v0.19.0 までアップデートされているので手元にあったコードを最新にアップデートして動作確認をします。\n\n本記事では、AWS 上で vLLM + LMCache を使って構築する方法を解説します。llm-d などを使うと...",
-        "category": "AI・技術",
-        "rss_category": "",
-        "image_url": ""
-      },
-      {
-        "title": "Cladeは何が違うのか──Claude Code上のフレームワークを正直に比べてみた【v1.14.5】",
-        "url": "https://zenn.dev/satoh_y_0323/articles/378c80cba956c2",
-        "site": "Zenn(LLM)",
-        "published": "2026-04-14T15:52:28Z",
-        "description": "前回記事: https://zenn.dev/satoh_y_0323/articles/3529d8c543726e\nGitHub: https://github.com/satoh-y-0323/clade\n現バージョン: v1.14.5\n\n\n はじめに\nClade を公開してから「他のやり方と何が違うの？」という質問をいただくことが増えました。\n比較対象は Claude Code の上で動く...",
-        "category": "AI・技術",
-        "rss_category": "",
-        "image_url": ""
-      }
-    ],
     "2026-04": [
+      {
+        "title": "Opus 4.6→4.7移行で見落とすと課金が最大35%増える話 ─ トークナイザー更新と\\\"厳密化\\\"の現実",
+        "url": "https://zenn.dev/genelab_999/articles/edfd838c0ac983",
+        "site": "Zenn(LLM)",
+        "published": "2026-04-17T10:06:13Z",
+        "description": "TL;DR\n\n\nOpus 4.7 は model 名を書き換えるだけでは済まない。トークナイザーが更新されており、同じ入力テキストが &lt;strong&gt;1.0〜1.35倍&lt;/strong&gt; のトークン数にマップされる。価格据え置きでも請求額は増える可能性がある。\n\nxhigh / max effort では思考量が増える。後半ターンの推論が深くなる設計で、出力トークンも従来よ...",
+        "category": "AI・技術",
+        "rss_category": "",
+        "image_url": ""
+      },
       {
         "title": "LLMエージェントに“反省してやり直す力”を足す — Reflexion論文から学ぶ自己フィードバックの入れ方",
         "url": "https://zenn.dev/lluminai_tech/articles/febd10d2962e94",
@@ -966,16 +714,6 @@
         "site": "Zenn(LLM)",
         "published": "2026-04-17T01:36:40Z",
         "description": "低スペックPCで動くローカルLLM——全国店舗へのAI展開を目指した開発者が見えてきたもの\nクラウドのLLMを業務で使おうとすると、必ずぶつかる壁がある。アカウント管理、情報漏洩リスク、そしてコストの統制。「誰でも、どこでも、安全に使える」環境をどう作るか。その問いに向き合った開発者が、低スペックPCで動くローカルLLMチャットアプリ local-llm-for-low-spec-pc を公開した...",
-        "category": "AI・技術",
-        "rss_category": "",
-        "image_url": ""
-      },
-      {
-        "title": "GEM-RAGが拓く「グラフ×スペクトル」な次世代RAG(記憶の固有値で戦う？)を理論解説",
-        "url": "https://zenn.dev/lluminai_tech/articles/cc4b62b47936b3",
-        "site": "Zenn(LLM)",
-        "published": "2026-04-17T01:28:05Z",
-        "description": "はじめに\nルミナイR&amp;Dチームの宮脇彰梧です。\n現在はマルチモーダルAIの研究を行う大学院生として、生成AIやAIエージェントの技術を実践的に探求しています。\n皆さんはRAGを構築する際、「チャンク分割してベクトル検索」だけで満足していませんか？\n実は、その手法には「情報の構造（コンテキストの繋がり）」をほとんど表現できないという弱点があります。\n今回解説するのは、コーネル大学の研究チーム...",
         "category": "AI・技術",
         "rss_category": "",
         "image_url": ""
