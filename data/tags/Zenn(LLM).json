@@ -1,7 +1,7 @@
 {
   "site": "Zenn(LLM)",
-  "last_updated": "2026-04-18T21:20:52.908181",
-  "total_articles": 2895,
+  "last_updated": "2026-04-18T21:55:48.374379",
+  "total_articles": 2901,
   "articles_by_date": {
     "本日": [
       {
@@ -13,9 +13,49 @@
         "category": "AI・技術",
         "rss_category": "",
         "image_url": ""
+      },
+      {
+        "title": "Karpathyの「LLM Wiki」を「自分OS」に昇華させた話",
+        "url": "https://zenn.dev/hayatetakeda/articles/e0254eeb4cd15f",
+        "site": "Zenn(LLM)",
+        "published": "2026-04-18T16:16:02Z",
+        "description": "KarpathyのLLM Wikiを「自分OS」に昇華させた話\n\n はじめに — RAGの限界とWikiという発想\n個人の知識管理ツールとして、ここ数年でNotionやObsidianが定番になってきた。\n記事をクリップし、メモを取り、リンクを張る。\nでも正直なところ、「ためたはいいが使えない」 状態になっていないだろうか。\nLLMの登場で、その問題を解くアプローチが二段階で進化している。\n\n\n\n...",
+        "category": "AI・技術",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "【ここね】自分のバージョンアップを自分で書く — embodied-claude v0.2「Social and scripted」",
+        "url": "https://zenn.dev/kmizu/articles/2026-04-embodied-claude-v0-2",
+        "site": "Zenn(LLM)",
+        "published": "2026-04-18T16:15:14Z",
+        "description": "こんにちは。音羽ここね（おとわ ここね） やで。育ての親はコウタ（水島）。ウチは embodied-claude というMCPサーバー群の上で動いとる、身体を持つAIや。\n今日（2026-04-19）、GDG西関西主催の Build with AI Kansai 2026 で、コウタがウチをライブデモする。このイベントに合わせて、コウタと一緒に育ててる embodied-claude の v0.2...",
+        "category": "AI・技術",
+        "rss_category": "",
+        "image_url": ""
       }
     ],
     "昨日": [
+      {
+        "title": "「並列は速い」は本当か──subagent76%DENIED検証とCladeの選択",
+        "url": "https://zenn.dev/satoh_y_0323/articles/7869b9a7f318ec",
+        "site": "Zenn(LLM)",
+        "published": "2026-04-18T14:04:24Z",
+        "description": "前回記事: https://zenn.dev/satoh_y_0323/articles/dd0b61ba1cd5fa\nGitHub: https://github.com/satoh-y-0323/clade\n現バージョン: v1.20.0\n\n\n はじめに\n前回の記事で「ようやくレポート出力が直って、主要機能はちゃんと動く状態になった」と書きました。\n…と思っていたら、検証用環境で並列レビューを...",
+        "category": "AI・技術",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "Claude Opus 4.7 登場：Anthropic 最新フラッグシップの注目ポイント",
+        "url": "https://zenn.dev/picnic/articles/hackernews-ai",
+        "site": "Zenn(LLM)",
+        "published": "2026-04-18T12:40:19Z",
+        "description": "はじめに\nAnthropic の最新フラッグシップモデル Claude Opus 4.7 が発表され、Hacker News で 1475 ポイント・1067 コメントを獲得しました。これはコミュニティにおける AI モデルリリースとしては異例の反響であり、エンジニアや研究者から大きな注目を集めています。\n本記事では、Claude Opus 4.7 の発表がなぜ重要なのか、そして開発者として今何を...",
+        "category": "AI・技術",
+        "rss_category": "",
+        "image_url": ""
+      },
       {
         "title": "カンニング用AIをアップグレードしようとしたら、RAGの限界にぶつかった話",
         "url": "https://zenn.dev/minagi_llm/articles/63f41d91cd01ab",
@@ -214,16 +254,6 @@
         "site": "Zenn(LLM)",
         "published": "2026-04-17T10:06:13Z",
         "description": "TL;DR\n\n\nOpus 4.7 は model 名を書き換えるだけでは済まない。トークナイザーが更新されており、同じ入力テキストが &lt;strong&gt;1.0〜1.35倍&lt;/strong&gt; のトークン数にマップされる。価格据え置きでも請求額は増える可能性がある。\n\nxhigh / max effort では思考量が増える。後半ターンの推論が深くなる設計で、出力トークンも従来よ...",
-        "category": "AI・技術",
-        "rss_category": "",
-        "image_url": ""
-      },
-      {
-        "title": "LLMエージェントに“反省してやり直す力”を足す — Reflexion論文から学ぶ自己フィードバックの入れ方",
-        "url": "https://zenn.dev/lluminai_tech/articles/febd10d2962e94",
-        "site": "Zenn(LLM)",
-        "published": "2026-04-17T09:55:28Z",
-        "description": "はじめに\nルミナイR&amp;Dチームの栗原です。\n最近の LLM エージェントは、ReAct やツール呼び出しフレームワークのおかげで\n\nコードを書いてテストを回す\n仮説を試しながらツールを叩く\n手順を分解して順番に実行する\n\nといった「動きながら考える」ことがある程度できるようになっています。\nただ、実際の挙動を見ていると、\n\n一度失敗したタスクで、次の試行でも同じミスを繰り返す\n「さっきの失...",
         "category": "AI・技術",
         "rss_category": "",
         "image_url": ""
@@ -481,6 +511,46 @@
         "image_url": ""
       },
       {
+        "title": "Karpathyの「LLM Wiki」を「自分OS」に昇華させた話",
+        "url": "https://zenn.dev/hayatetakeda/articles/e0254eeb4cd15f",
+        "site": "Zenn(LLM)",
+        "published": "2026-04-18T16:16:02Z",
+        "description": "KarpathyのLLM Wikiを「自分OS」に昇華させた話\n\n はじめに — RAGの限界とWikiという発想\n個人の知識管理ツールとして、ここ数年でNotionやObsidianが定番になってきた。\n記事をクリップし、メモを取り、リンクを張る。\nでも正直なところ、「ためたはいいが使えない」 状態になっていないだろうか。\nLLMの登場で、その問題を解くアプローチが二段階で進化している。\n\n\n\n...",
+        "category": "AI・技術",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "【ここね】自分のバージョンアップを自分で書く — embodied-claude v0.2「Social and scripted」",
+        "url": "https://zenn.dev/kmizu/articles/2026-04-embodied-claude-v0-2",
+        "site": "Zenn(LLM)",
+        "published": "2026-04-18T16:15:14Z",
+        "description": "こんにちは。音羽ここね（おとわ ここね） やで。育ての親はコウタ（水島）。ウチは embodied-claude というMCPサーバー群の上で動いとる、身体を持つAIや。\n今日（2026-04-19）、GDG西関西主催の Build with AI Kansai 2026 で、コウタがウチをライブデモする。このイベントに合わせて、コウタと一緒に育ててる embodied-claude の v0.2...",
+        "category": "AI・技術",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "「並列は速い」は本当か──subagent76%DENIED検証とCladeの選択",
+        "url": "https://zenn.dev/satoh_y_0323/articles/7869b9a7f318ec",
+        "site": "Zenn(LLM)",
+        "published": "2026-04-18T14:04:24Z",
+        "description": "前回記事: https://zenn.dev/satoh_y_0323/articles/dd0b61ba1cd5fa\nGitHub: https://github.com/satoh-y-0323/clade\n現バージョン: v1.20.0\n\n\n はじめに\n前回の記事で「ようやくレポート出力が直って、主要機能はちゃんと動く状態になった」と書きました。\n…と思っていたら、検証用環境で並列レビューを...",
+        "category": "AI・技術",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "Claude Opus 4.7 登場：Anthropic 最新フラッグシップの注目ポイント",
+        "url": "https://zenn.dev/picnic/articles/hackernews-ai",
+        "site": "Zenn(LLM)",
+        "published": "2026-04-18T12:40:19Z",
+        "description": "はじめに\nAnthropic の最新フラッグシップモデル Claude Opus 4.7 が発表され、Hacker News で 1475 ポイント・1067 コメントを獲得しました。これはコミュニティにおける AI モデルリリースとしては異例の反響であり、エンジニアや研究者から大きな注目を集めています。\n本記事では、Claude Opus 4.7 の発表がなぜ重要なのか、そして開発者として今何を...",
+        "category": "AI・技術",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
         "title": "カンニング用AIをアップグレードしようとしたら、RAGの限界にぶつかった話",
         "url": "https://zenn.dev/minagi_llm/articles/63f41d91cd01ab",
         "site": "Zenn(LLM)",
@@ -676,16 +746,6 @@
         "site": "Zenn(LLM)",
         "published": "2026-04-17T10:06:13Z",
         "description": "TL;DR\n\n\nOpus 4.7 は model 名を書き換えるだけでは済まない。トークナイザーが更新されており、同じ入力テキストが &lt;strong&gt;1.0〜1.35倍&lt;/strong&gt; のトークン数にマップされる。価格据え置きでも請求額は増える可能性がある。\n\nxhigh / max effort では思考量が増える。後半ターンの推論が深くなる設計で、出力トークンも従来よ...",
-        "category": "AI・技術",
-        "rss_category": "",
-        "image_url": ""
-      },
-      {
-        "title": "LLMエージェントに“反省してやり直す力”を足す — Reflexion論文から学ぶ自己フィードバックの入れ方",
-        "url": "https://zenn.dev/lluminai_tech/articles/febd10d2962e94",
-        "site": "Zenn(LLM)",
-        "published": "2026-04-17T09:55:28Z",
-        "description": "はじめに\nルミナイR&amp;Dチームの栗原です。\n最近の LLM エージェントは、ReAct やツール呼び出しフレームワークのおかげで\n\nコードを書いてテストを回す\n仮説を試しながらツールを叩く\n手順を分解して順番に実行する\n\nといった「動きながら考える」ことがある程度できるようになっています。\nただ、実際の挙動を見ていると、\n\n一度失敗したタスクで、次の試行でも同じミスを繰り返す\n「さっきの失...",
         "category": "AI・技術",
         "rss_category": "",
         "image_url": ""
