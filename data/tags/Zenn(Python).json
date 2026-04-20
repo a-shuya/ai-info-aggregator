@@ -1,9 +1,61 @@
 {
   "site": "Zenn(Python)",
-  "last_updated": "2026-04-20T16:48:14.288582",
-  "total_articles": 3554,
+  "last_updated": "2026-04-20T17:46:10.610815",
+  "total_articles": 3566,
   "articles_by_date": {
+    "本日": [
+      {
+        "title": "CodeRouter の内側 — Anthropic ⇄ OpenAI 双方向翻訳と mid-stream セーフなフォールバック設計",
+        "url": "https://zenn.dev/zephel01/articles/cd0032896f0e74",
+        "site": "Zenn(Python)",
+        "published": "2026-04-20T16:44:19Z",
+        "description": "CodeRouter の内側\n\n この記事で扱うこと\nCodeRouter は、Claude Code や gemini-cli のような LLM エージェントの手前に立つ小さなルーターです。ユーザーから見れば「ローカル Ollama にフォールバックつきで繋ぎ込めて無料で動く便利ツール」ですが、実装目線で見ると、SSE ストリーミングプロトコルの 2 方言間を壊れずに翻訳しきるという、地味にしん...",
+        "category": "開発",
+        "rss_category": "",
+        "image_url": ""
+      }
+    ],
     "昨日": [
+      {
+        "title": "JetsonでTensorRTのセットアップとEngine化を行う手順まとめ (4)",
+        "url": "https://zenn.dev/logic_design/articles/jetson-tensorrt-engine-setup",
+        "site": "Zenn(Python)",
+        "published": "2026-04-20T13:48:50Z",
+        "description": "Jetson で TensorRT を使うとき、最初に欲しいのは「とにかく .onnx を .engine にして動かす」流れです。\nこの記事では、TensorRT の Python 環境構築から、trtexec を使った engine 化、INT8 / FP16 の考え方、Engine 情報の確認、Python サンプルまでまとめます。\n\n TensorRT Python 環境を整える\nまず P...",
+        "category": "開発",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "個人開発アプリの ASO 効果を API で定量化する",
+        "url": "https://zenn.dev/nawa_10half/articles/solo-dev-aso-analytics-api",
+        "site": "Zenn(Python)",
+        "published": "2026-04-20T13:44:33Z",
+        "description": "はじめに\n個人で iOS / Android アプリを 2 本出しています。「ClassicTimer」（ダイヤル式キッチンタイマー）と「かえたお」（タオル交換管理）です。\nリリースして数週間経つと次に気になるのは、本当に届いているのか？ でした。App Store Connect（以下 ASC）や Google Play Console の管理画面をブラウザで眺めても、数字は見えますが「昨日と何...",
+        "category": "開発",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "GEM-RAGをPythonで作る：NetworkXで「記憶の固有値」を計算してみた",
+        "url": "https://zenn.dev/lluminai_tech/articles/6b1b1b11c57874",
+        "site": "Zenn(Python)",
+        "published": "2026-04-20T12:38:35Z",
+        "description": "はじめに\nルミナイR&amp;Dチームの宮脇彰梧です。\nhttps://arxiv.org/abs/2409.15566\nhttps://zenn.dev/lluminai_tech/articles/cc4b62b47936b3\n前回の記事では、最新のRAG手法 GEM-RAG の理論について、スペクトルグラフ理論の観点から解説しました。\n「情報は点ではなく、構造を持ったグラフである」\n「その重...",
+        "category": "開発",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "Upstage Document Parse API を Python から叩いてみる",
+        "url": "https://zenn.dev/ytkdm/articles/upstage-document-parse-api-python",
+        "site": "Zenn(Python)",
+        "published": "2026-04-20T12:27:03Z",
+        "description": "はじめに\n前回は、Upstage Studio の GUI から Document Parse を試しました。\nhttps://zenn.dev/ytkdm/articles/upstage-document-parse-agent\nGUI で触ると、請求書や職務経歴シートのような表がある文書でも、ただのテキストではなく HTML や Markdown に近い形で見られました。ざっくり相性を見るに...",
+        "category": "開発",
+        "rss_category": "",
+        "image_url": ""
+      },
       {
         "title": "Claude Codeで個人開発を自動化した話 ― AIエージェントに事業を任せてみた",
         "url": "https://zenn.dev/agenta/articles/claude-code-agent-automation",
@@ -20,6 +72,16 @@
         "site": "Zenn(Python)",
         "published": "2026-04-20T11:56:31Z",
         "description": "この記事でわかること\n\nClaude Code を「専属CTO」として使う具体的なワークフロー\nlaunchd で Python スクリプトを定期実行する設定方法\nOllama ローカルLLM と Claude API のハイブリッド運用コスト\n実際に稼働している自動化パイプラインの全体像\n\n\n僕が今使っているシステムは、Claude Code が設計して launchd が動かしている。コードを...",
+        "category": "開発",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "EarlyStoppingのrestore_best_weightsとpatience、実験したら予想と逆の結果になった【Keras】",
+        "url": "https://zenn.dev/wasurenamemo/articles/c63a35fb5f11ae",
+        "site": "Zenn(Python)",
+        "published": "2026-04-20T11:39:32Z",
+        "description": "「restore_best_weights=Trueにすれば精度が上がるはず」\n「patience=3は短すぎるから駄目」\nどちらも定説として語られますが、実際に実験したらどちらも予想と逆の結果になりました。\n\n\n 実験①：restore_best_weights=True vs False\nCIFAR-10 + GAP + Dropout=0.2 のモデルで、patience=5固定で比較しまし...",
         "category": "開発",
         "rss_category": "",
         "image_url": ""
@@ -339,6 +401,56 @@
     ],
     "2026-04": [
       {
+        "title": "CodeRouter の内側 — Anthropic ⇄ OpenAI 双方向翻訳と mid-stream セーフなフォールバック設計",
+        "url": "https://zenn.dev/zephel01/articles/cd0032896f0e74",
+        "site": "Zenn(Python)",
+        "published": "2026-04-20T16:44:19Z",
+        "description": "CodeRouter の内側\n\n この記事で扱うこと\nCodeRouter は、Claude Code や gemini-cli のような LLM エージェントの手前に立つ小さなルーターです。ユーザーから見れば「ローカル Ollama にフォールバックつきで繋ぎ込めて無料で動く便利ツール」ですが、実装目線で見ると、SSE ストリーミングプロトコルの 2 方言間を壊れずに翻訳しきるという、地味にしん...",
+        "category": "開発",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "JetsonでTensorRTのセットアップとEngine化を行う手順まとめ (4)",
+        "url": "https://zenn.dev/logic_design/articles/jetson-tensorrt-engine-setup",
+        "site": "Zenn(Python)",
+        "published": "2026-04-20T13:48:50Z",
+        "description": "Jetson で TensorRT を使うとき、最初に欲しいのは「とにかく .onnx を .engine にして動かす」流れです。\nこの記事では、TensorRT の Python 環境構築から、trtexec を使った engine 化、INT8 / FP16 の考え方、Engine 情報の確認、Python サンプルまでまとめます。\n\n TensorRT Python 環境を整える\nまず P...",
+        "category": "開発",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "個人開発アプリの ASO 効果を API で定量化する",
+        "url": "https://zenn.dev/nawa_10half/articles/solo-dev-aso-analytics-api",
+        "site": "Zenn(Python)",
+        "published": "2026-04-20T13:44:33Z",
+        "description": "はじめに\n個人で iOS / Android アプリを 2 本出しています。「ClassicTimer」（ダイヤル式キッチンタイマー）と「かえたお」（タオル交換管理）です。\nリリースして数週間経つと次に気になるのは、本当に届いているのか？ でした。App Store Connect（以下 ASC）や Google Play Console の管理画面をブラウザで眺めても、数字は見えますが「昨日と何...",
+        "category": "開発",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "GEM-RAGをPythonで作る：NetworkXで「記憶の固有値」を計算してみた",
+        "url": "https://zenn.dev/lluminai_tech/articles/6b1b1b11c57874",
+        "site": "Zenn(Python)",
+        "published": "2026-04-20T12:38:35Z",
+        "description": "はじめに\nルミナイR&amp;Dチームの宮脇彰梧です。\nhttps://arxiv.org/abs/2409.15566\nhttps://zenn.dev/lluminai_tech/articles/cc4b62b47936b3\n前回の記事では、最新のRAG手法 GEM-RAG の理論について、スペクトルグラフ理論の観点から解説しました。\n「情報は点ではなく、構造を持ったグラフである」\n「その重...",
+        "category": "開発",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "Upstage Document Parse API を Python から叩いてみる",
+        "url": "https://zenn.dev/ytkdm/articles/upstage-document-parse-api-python",
+        "site": "Zenn(Python)",
+        "published": "2026-04-20T12:27:03Z",
+        "description": "はじめに\n前回は、Upstage Studio の GUI から Document Parse を試しました。\nhttps://zenn.dev/ytkdm/articles/upstage-document-parse-agent\nGUI で触ると、請求書や職務経歴シートのような表がある文書でも、ただのテキストではなく HTML や Markdown に近い形で見られました。ざっくり相性を見るに...",
+        "category": "開発",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
         "title": "Claude Codeで個人開発を自動化した話 ― AIエージェントに事業を任せてみた",
         "url": "https://zenn.dev/agenta/articles/claude-code-agent-automation",
         "site": "Zenn(Python)",
@@ -354,6 +466,16 @@
         "site": "Zenn(Python)",
         "published": "2026-04-20T11:56:31Z",
         "description": "この記事でわかること\n\nClaude Code を「専属CTO」として使う具体的なワークフロー\nlaunchd で Python スクリプトを定期実行する設定方法\nOllama ローカルLLM と Claude API のハイブリッド運用コスト\n実際に稼働している自動化パイプラインの全体像\n\n\n僕が今使っているシステムは、Claude Code が設計して launchd が動かしている。コードを...",
+        "category": "開発",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "EarlyStoppingのrestore_best_weightsとpatience、実験したら予想と逆の結果になった【Keras】",
+        "url": "https://zenn.dev/wasurenamemo/articles/c63a35fb5f11ae",
+        "site": "Zenn(Python)",
+        "published": "2026-04-20T11:39:32Z",
+        "description": "「restore_best_weights=Trueにすれば精度が上がるはず」\n「patience=3は短すぎるから駄目」\nどちらも定説として語られますが、実際に実験したらどちらも予想と逆の結果になりました。\n\n\n 実験①：restore_best_weights=True vs False\nCIFAR-10 + GAP + Dropout=0.2 のモデルで、patience=5固定で比較しまし...",
         "category": "開発",
         "rss_category": "",
         "image_url": ""
