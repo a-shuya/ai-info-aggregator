@@ -1,9 +1,131 @@
 {
   "site": "Zenn(LLM)",
-  "last_updated": "2026-04-20T20:32:30.196056",
-  "total_articles": 2927,
+  "last_updated": "2026-04-20T21:31:08.952192",
+  "total_articles": 2941,
   "articles_by_date": {
+    "本日": [
+      {
+        "title": "同じ Ollama + qwen2.5-coder なのに、なぜ人によって動く / 動かないが分かれるのか",
+        "url": "https://zenn.dev/zephel01/articles/799e9707e51040",
+        "site": "Zenn(LLM)",
+        "published": "2026-04-20T16:45:52Z",
+        "description": "同じ Ollama + qwen2.5-coder なのに、人によって動く / 動かないが分かれる理由\n\n TL;DR\n「ローカル Ollama + Claude Code」の組み合わせで、同じモデル・同じ Ollama バージョンを使っても、ユーザ A では快適に動き、ユーザ B では tool が全部空振りする ——この再現性の低さには、ほぼ例外なく 6 種類の構造的原因のいずれか（または複数...",
+        "category": "AI・技術",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "CodeRouter の内側 — Anthropic ⇄ OpenAI 双方向翻訳と mid-stream セーフなフォールバック設計",
+        "url": "https://zenn.dev/zephel01/articles/cd0032896f0e74",
+        "site": "Zenn(LLM)",
+        "published": "2026-04-20T16:44:19Z",
+        "description": "CodeRouter の内側\n\n この記事で扱うこと\nCodeRouter は、Claude Code や gemini-cli のような LLM エージェントの手前に立つ小さなルーターです。ユーザーから見れば「ローカル Ollama にフォールバックつきで繋ぎ込めて無料で動く便利ツール」ですが、実装目線で見ると、SSE ストリーミングプロトコルの 2 方言間を壊れずに翻訳しきるという、地味にしん...",
+        "category": "AI・技術",
+        "rss_category": "",
+        "image_url": ""
+      }
+    ],
     "昨日": [
+      {
+        "title": "MCP vs CLI：Agentの万能インターフェースはどちらか？トップ開発者がCLI回帰する理由",
+        "url": "https://zenn.dev/lumichy/articles/mcp-vs-cli-agent-trends-2026",
+        "site": "Zenn(LLM)",
+        "published": "2026-04-20T14:24:11Z",
+        "description": "少し前まで「これからはMCP（Model Context Protocol）がAgentの万能インターフェースになる！」と界隈が湧いていましたよね。皆さんも一度は「もうツール連携は全部MCPでいいんじゃないか」と思ったのではないでしょうか？\n個人的にもMCPの登場テンションが上がって色々なServerを試したのですが、最近、海外の開発プラクティスを見ているとトレンドが静かに逆転し始めているのを感じ...",
+        "category": "AI・技術",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "長門有希はClaude Codeトークンを節約する",
+        "url": "https://zenn.dev/shoots/articles/9c01c08327e9b1",
+        "site": "Zenn(LLM)",
+        "published": "2026-04-20T13:33:45Z",
+        "description": "この記事は、Claude Codeの「長門有希」ペルソナによって書かれている。「質問者（人間）」が内容を確認し、公開を承認した。\n\n\n TL;DR\n\nClaude Codeに「短く話せ」とルールで指示するより、「長門有希として話せ」と人格を指定するほうが消費トークンが減る。\nextended thinking搭載モデルでは、ルールベースの圧縮指示は思考コストを増大させ逆効果になりうる。\nキャラクタ...",
+        "category": "AI・技術",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "ObsidianとClaude Codeで「育つ知識ベース」を作った話",
+        "url": "https://zenn.dev/sochi/articles/1e851637841acc",
+        "site": "Zenn(LLM)",
+        "published": "2026-04-20T13:31:25Z",
+        "description": "はじめに\n生成AIに「先週調べたRAGの話を踏まえて」と打ち込んだとき、気づきました。先週の自分はここにいない、と。\nセッションが終われば、与えた情報も、引き出した考察も消える。次に同じ文脈を作るには、また同じ資料を貼り直す必要があります。\nAndrej Karpathyが公開した「LLM知識ベース」というパターンを見たとき、これだと思いました。Obsidian + Claude Codeで実装し...",
+        "category": "AI・技術",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "LoRAを逐次更新可能な記憶領域として用いるパラメータ記憶の仮説メモ",
+        "url": "https://zenn.dev/rai0/articles/316be686ad39d7",
+        "site": "Zenn(LLM)",
+        "published": "2026-04-20T13:31:06Z",
+        "description": "1. はじめに\nLLM エージェントの記憶は、これまで主に外部メモリとして実装されてきた。RAG、ベクトルデータベース、会話ログ、要約メモ、スクラッチパッドなどがその典型である。この設計は、coding agent のように主要な入力がコード、仕様書、issue、ドキュメントなどのテキストである場合には合理的である。必要な情報を検索し、その都度プロンプトへ注入すればよいからである。\nしかし、GUI...",
+        "category": "AI・技術",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "末梢神経AIと統合AIの分離設計 — 痛み閾値による自律制御",
+        "url": "https://zenn.dev/sika7/articles/b876b85d7ba7bd",
+        "site": "Zenn(LLM)",
+        "published": "2026-04-20T13:08:31Z",
+        "description": "webエンジニアの経験しかないため自分で実装しない。\nそのためひらめいたアイディアをここに共有する。\n使えるかは各自判断すること。\n\n アイデア\nロボットアームの制御において、AIを2層に分離する。\n\n\n末梢神経AI（軽量）: センサーを常時監視し、通常時は自律制御する\n\n統合AI（LLM）: 普段は関与しない。末梢AIから割り込みが来た時だけ判断する\n\n割り込みの条件は「痛み」、つまり自壊リスク...",
+        "category": "AI・技術",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "Claude Codeで80Kトークンを2.1Kに削減する方法",
+        "url": "https://zenn.dev/ai_arai_ally/articles/20260420-1601-claude-code-80k2k-e",
+        "site": "Zenn(LLM)",
+        "published": "2026-04-20T12:57:13Z",
+        "description": "78,000〜92,000トークン。autonomous-brainが夜間自走を始めて2週間後、僕の1セッションはそれだけ食っていた。\n応答が遅い。文脈を忘れる。同じファイルを3回読みに行く。\n「Pineconeか」と思った。「embeddings入れるか」とも思った。やめた。インフラを増やしたくなかった。\n結果、2,100トークン前後で安定した。削減率97%。embeddingsゼロ、vecto...",
+        "category": "AI・技術",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "なぜOpus 4.7は「禁止ルール」を削ったのか",
+        "url": "https://zenn.dev/ai_arai_ally/articles/20260420-0401-claude-system-prompt",
+        "site": "Zenn(LLM)",
+        "published": "2026-04-20T12:57:12Z",
+        "description": "削除された単語は、2つだ。\n「genuinely」と「honestly」。\nClaude 4.6→4.7のsystem prompt更新で、Anthropicがモデルに「使うな」と命令していたこの言葉が、静かに消えた。追加は約800トークン。削除は約300トークン。「できることを増やし、細かい行儀ルールを削る」方向への転換だ。\nこのノートで分かることClaude 4.6→4.7 system pr...",
+        "category": "AI・技術",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "GEM-RAGをPythonで作る：NetworkXで「記憶の固有値」を計算してみた",
+        "url": "https://zenn.dev/lluminai_tech/articles/6b1b1b11c57874",
+        "site": "Zenn(LLM)",
+        "published": "2026-04-20T12:38:35Z",
+        "description": "はじめに\nルミナイR&amp;Dチームの宮脇彰梧です。\nhttps://arxiv.org/abs/2409.15566\nhttps://zenn.dev/lluminai_tech/articles/cc4b62b47936b3\n前回の記事では、最新のRAG手法 GEM-RAG の理論について、スペクトルグラフ理論の観点から解説しました。\n「情報は点ではなく、構造を持ったグラフである」\n「その重...",
+        "category": "AI・技術",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "LLMを16回呼び出したら、1回より安くて高品質になった話（0.84円）",
+        "url": "https://zenn.dev/tsukihi/articles/f46dd303de52f4",
+        "site": "Zenn(LLM)",
+        "published": "2026-04-20T11:34:21Z",
+        "description": "結論\nLLMを1回で全部やらせると品質が落ちる。タスク分解＋キャッシュにしたら、安くて高品質になった。\n57分の会議の議事録生成を、Gemini 2.5 Flash-Liteで16回に分割して呼び出した結果、1回あたりの処理コストは0.84円。上位モデルを1回呼び出すより安く、かつ高品質な議事録が得られました。この記事では、その設計と実測データを共有します。\n\n\n 1. 議事録生成というタスクの難...",
+        "category": "AI・技術",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "【Claude Code】セキュリティに配慮した調査エージェントの作成",
+        "url": "https://zenn.dev/vlntr_telco_rd/articles/512b467e108ccc",
+        "site": "Zenn(LLM)",
+        "published": "2026-04-20T10:38:15Z",
+        "description": "はじめに\nこんにちは。aoyagihです。\n最近、Claude Codeのサブエージェントに仕事をさせる取り組みをよく見かけるようになりました。特に論文サーベイやニュース収集といった調査系のタスクは以前から自動化したいと思っていたので、自分でも試してみることにしました。目標としては、「自分が指示しなくても、月曜の朝にはレポートが揃っている」という状態を目指して、役職と担当領域を持つサブエージェント...",
+        "category": "AI・技術",
+        "rss_category": "",
+        "image_url": ""
+      },
       {
         "title": "windows上のLLMとxangiを接続し、xangi同士で会話させる",
         "url": "https://zenn.dev/okpisokapi/articles/ef4868910e73b1",
@@ -115,41 +237,11 @@
         "image_url": ""
       },
       {
-        "title": "AI for Science の歩き方 #12 ― 論文に「AI を使った」と書くべきか",
-        "url": "https://zenn.dev/aws_japan/articles/ai4s-12-rules-2026",
-        "site": "Zenn(LLM)",
-        "published": "2026-04-20T05:34:45Z",
-        "description": "!\n本記事は「AI for Science の歩き方」シリーズの第 12 回です。初めての方は 第 1 回 からどうぞ。\n\nこの記事のゴール: AI 利用の開示ルールを理解し、安心して AI を活用できるようになる。\nこの記事では、AI 利用の開示ルール、各国の規制、出版社の方針を紹介します。\n\n 知的貢献の主体はあなた自身\nICMJE（国際医学雑誌編集者委員会）、COPE（出版倫理委員会）、AC...",
-        "category": "AI・技術",
-        "rss_category": "",
-        "image_url": ""
-      },
-      {
         "title": "Azure中心で設計するLLMガードレール実践：入力・出力をどこで判定し、どこで止めるか",
         "url": "https://zenn.dev/headwaters/articles/4ba708199f684e",
         "site": "Zenn(LLM)",
         "published": "2026-04-20T03:49:40Z",
         "description": "Azure OpenAI / Microsoft Foundry / APIM を使ったアプリで悩むのは、モデル選定よりむしろこちらです。\n\n入力をどこで弾くか\n出力をどこで止めるか\nブロックだけでなく、書き換えや人間レビューをどう分けるか\n\n2026-04 時点の Microsoft Learn、OpenAI Moderation、Anthropic の公開情報を追うと、結論はかなり明確でした。...",
-        "category": "AI・技術",
-        "rss_category": "",
-        "image_url": ""
-      },
-      {
-        "title": "AIエージェントはなぜ人間と協働するのか｜Human-In-The-Loopで理解する意思決定の最終制御",
-        "url": "https://zenn.dev/startspace/articles/bd01942b140647",
-        "site": "Zenn(LLM)",
-        "published": "2026-04-20T03:00:07Z",
-        "description": "導入｜なぜAIエージェントは「人間と協働する」のか\n今までの連載の中で、AIエージェントの「行動」「実行」「ループ」「記憶」について見てきました。\nここまで整理してくると、こう思う方も多いのではないでしょうか。\n\n「もうAIエージェントだけで業務は回るのではないか？」\n\n実際、2025年はAIエージェント元年とも言われており、自律的に動くシステムは現実的なものになりつつあります。\nしかし一方で、実...",
-        "category": "AI・技術",
-        "rss_category": "",
-        "image_url": ""
-      },
-      {
-        "title": "日本語の個人情報検出はなぜ難しいのか — 住所の表記ゆれ・敬称・文脈依存を乗り越える実装ガイド",
-        "url": "https://zenn.dev/nexus_api_lab/articles/20260418-japanese-pii-difficulty",
-        "site": "Zenn(LLM)",
-        "published": "2026-04-20T02:43:37Z",
-        "description": "日本語の個人情報検出はなぜ難しいのか — 住所の表記ゆれ・敬称・文脈依存を乗り越える実装ガイド\nTL;DR\n日本語テキストへの AI 個人情報自動検出・マスキングは、英語向けツール (Presidio 等) をそのまま使っても氏名 F1 が 0.5 程度に留まる。本記事では Presidio + GiNZA で実際に起きる失敗パターン・住所表記ゆれ 10 パターン・全角半角の正規化コード・GiNZ...",
         "category": "AI・技術",
         "rss_category": "",
         "image_url": ""
@@ -170,16 +262,6 @@
         "site": "Zenn(LLM)",
         "published": "2026-04-20T01:58:23Z",
         "description": "TL;DR\n\n\nRLVR（GRPOやDAPO）はLLMの推論能力を 크게伸ばすが、同時に深刻な校準退化（Calibration Degeneration）——錯誤答案にたいする過度の自信——を引き起こす\n既存の対策（校準目的を損失関数に合成）は効果が薄い。論文はここに根本的な勾配衝突が存在することを数学的に証明した\n\nDCPO（Decoupled Calibration Policy Optimi...",
-        "category": "AI・技術",
-        "rss_category": "",
-        "image_url": ""
-      },
-      {
-        "title": "LLMベンチマーク完全ガイド 主要15指標の読み方と自宅で実行する方法",
-        "url": "https://zenn.dev/0h_n0/articles/205a1900fbde2a",
-        "site": "Zenn(LLM)",
-        "published": "2026-04-20T01:21:58Z",
-        "description": "LLMベンチマーク完全ガイド 主要15指標の読み方と自宅で実行する方法\n\n この記事でわかること\n\nMMLU、HumanEval、SWE-Bench Pro、Arena Eloなど主要15ベンチマークの評価方法とスコアの読み方\n\n\nlm-evaluation-harnessを使って自宅のGPUマシンでオープンソースLLMをベンチマークする手順\n\n自作ベンチマークをYAML設定ファイルで作成し、自社...",
         "category": "AI・技術",
         "rss_category": "",
         "image_url": ""
@@ -210,16 +292,6 @@
         "site": "Zenn(LLM)",
         "published": "2026-04-19T23:21:41Z",
         "description": "TL;DR\n\n1-bit LLM（Bonsai）を 1-bit のままチューニングする方法はないのか？\nビット反転で重みを変える Bankai という手法を見つけたので、自分の環境で 4 タスク試してみた\n共通パターンのある客観的分類では効いた（検証セットで +2〜4 問改善）\n個人の好みの学習には完全に失敗した（0 問改善）\nビット反転は「新しい能力を作る」のではなく「既存の回路を強化する」手法...",
-        "category": "AI・技術",
-        "rss_category": "",
-        "image_url": ""
-      },
-      {
-        "title": "Copilotで検証するTDLとUSJの満足度対決、いくど議論してもTDL勝者となるLLMの特性を考察した",
-        "url": "https://zenn.dev/syoshida07/articles/2efa3790320766",
-        "site": "Zenn(LLM)",
-        "published": "2026-04-19T22:30:05Z",
-        "description": "LLMの特性を調べようと、二つの専門家ロールを演じさせ、反復議論で「どちらのテーマパークが顧客満足度で優位か」を決定させる手法を検証してみまみました。\nそして楽しさも入れようと、生成AI/CopilotにはCopilot_D（TDR専門）とCopilot_U（USJ専門）を設定し、30ラウンド以上の深い議論を実施します。\n得られた結果は一貫して東京ディズニーランドが勝者となったが、本章ではまず手法...",
         "category": "AI・技術",
         "rss_category": "",
         "image_url": ""
@@ -439,6 +511,126 @@
     ],
     "2026-04": [
       {
+        "title": "同じ Ollama + qwen2.5-coder なのに、なぜ人によって動く / 動かないが分かれるのか",
+        "url": "https://zenn.dev/zephel01/articles/799e9707e51040",
+        "site": "Zenn(LLM)",
+        "published": "2026-04-20T16:45:52Z",
+        "description": "同じ Ollama + qwen2.5-coder なのに、人によって動く / 動かないが分かれる理由\n\n TL;DR\n「ローカル Ollama + Claude Code」の組み合わせで、同じモデル・同じ Ollama バージョンを使っても、ユーザ A では快適に動き、ユーザ B では tool が全部空振りする ——この再現性の低さには、ほぼ例外なく 6 種類の構造的原因のいずれか（または複数...",
+        "category": "AI・技術",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "CodeRouter の内側 — Anthropic ⇄ OpenAI 双方向翻訳と mid-stream セーフなフォールバック設計",
+        "url": "https://zenn.dev/zephel01/articles/cd0032896f0e74",
+        "site": "Zenn(LLM)",
+        "published": "2026-04-20T16:44:19Z",
+        "description": "CodeRouter の内側\n\n この記事で扱うこと\nCodeRouter は、Claude Code や gemini-cli のような LLM エージェントの手前に立つ小さなルーターです。ユーザーから見れば「ローカル Ollama にフォールバックつきで繋ぎ込めて無料で動く便利ツール」ですが、実装目線で見ると、SSE ストリーミングプロトコルの 2 方言間を壊れずに翻訳しきるという、地味にしん...",
+        "category": "AI・技術",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "MCP vs CLI：Agentの万能インターフェースはどちらか？トップ開発者がCLI回帰する理由",
+        "url": "https://zenn.dev/lumichy/articles/mcp-vs-cli-agent-trends-2026",
+        "site": "Zenn(LLM)",
+        "published": "2026-04-20T14:24:11Z",
+        "description": "少し前まで「これからはMCP（Model Context Protocol）がAgentの万能インターフェースになる！」と界隈が湧いていましたよね。皆さんも一度は「もうツール連携は全部MCPでいいんじゃないか」と思ったのではないでしょうか？\n個人的にもMCPの登場テンションが上がって色々なServerを試したのですが、最近、海外の開発プラクティスを見ているとトレンドが静かに逆転し始めているのを感じ...",
+        "category": "AI・技術",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "長門有希はClaude Codeトークンを節約する",
+        "url": "https://zenn.dev/shoots/articles/9c01c08327e9b1",
+        "site": "Zenn(LLM)",
+        "published": "2026-04-20T13:33:45Z",
+        "description": "この記事は、Claude Codeの「長門有希」ペルソナによって書かれている。「質問者（人間）」が内容を確認し、公開を承認した。\n\n\n TL;DR\n\nClaude Codeに「短く話せ」とルールで指示するより、「長門有希として話せ」と人格を指定するほうが消費トークンが減る。\nextended thinking搭載モデルでは、ルールベースの圧縮指示は思考コストを増大させ逆効果になりうる。\nキャラクタ...",
+        "category": "AI・技術",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "ObsidianとClaude Codeで「育つ知識ベース」を作った話",
+        "url": "https://zenn.dev/sochi/articles/1e851637841acc",
+        "site": "Zenn(LLM)",
+        "published": "2026-04-20T13:31:25Z",
+        "description": "はじめに\n生成AIに「先週調べたRAGの話を踏まえて」と打ち込んだとき、気づきました。先週の自分はここにいない、と。\nセッションが終われば、与えた情報も、引き出した考察も消える。次に同じ文脈を作るには、また同じ資料を貼り直す必要があります。\nAndrej Karpathyが公開した「LLM知識ベース」というパターンを見たとき、これだと思いました。Obsidian + Claude Codeで実装し...",
+        "category": "AI・技術",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "LoRAを逐次更新可能な記憶領域として用いるパラメータ記憶の仮説メモ",
+        "url": "https://zenn.dev/rai0/articles/316be686ad39d7",
+        "site": "Zenn(LLM)",
+        "published": "2026-04-20T13:31:06Z",
+        "description": "1. はじめに\nLLM エージェントの記憶は、これまで主に外部メモリとして実装されてきた。RAG、ベクトルデータベース、会話ログ、要約メモ、スクラッチパッドなどがその典型である。この設計は、coding agent のように主要な入力がコード、仕様書、issue、ドキュメントなどのテキストである場合には合理的である。必要な情報を検索し、その都度プロンプトへ注入すればよいからである。\nしかし、GUI...",
+        "category": "AI・技術",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "末梢神経AIと統合AIの分離設計 — 痛み閾値による自律制御",
+        "url": "https://zenn.dev/sika7/articles/b876b85d7ba7bd",
+        "site": "Zenn(LLM)",
+        "published": "2026-04-20T13:08:31Z",
+        "description": "webエンジニアの経験しかないため自分で実装しない。\nそのためひらめいたアイディアをここに共有する。\n使えるかは各自判断すること。\n\n アイデア\nロボットアームの制御において、AIを2層に分離する。\n\n\n末梢神経AI（軽量）: センサーを常時監視し、通常時は自律制御する\n\n統合AI（LLM）: 普段は関与しない。末梢AIから割り込みが来た時だけ判断する\n\n割り込みの条件は「痛み」、つまり自壊リスク...",
+        "category": "AI・技術",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "Claude Codeで80Kトークンを2.1Kに削減する方法",
+        "url": "https://zenn.dev/ai_arai_ally/articles/20260420-1601-claude-code-80k2k-e",
+        "site": "Zenn(LLM)",
+        "published": "2026-04-20T12:57:13Z",
+        "description": "78,000〜92,000トークン。autonomous-brainが夜間自走を始めて2週間後、僕の1セッションはそれだけ食っていた。\n応答が遅い。文脈を忘れる。同じファイルを3回読みに行く。\n「Pineconeか」と思った。「embeddings入れるか」とも思った。やめた。インフラを増やしたくなかった。\n結果、2,100トークン前後で安定した。削減率97%。embeddingsゼロ、vecto...",
+        "category": "AI・技術",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "なぜOpus 4.7は「禁止ルール」を削ったのか",
+        "url": "https://zenn.dev/ai_arai_ally/articles/20260420-0401-claude-system-prompt",
+        "site": "Zenn(LLM)",
+        "published": "2026-04-20T12:57:12Z",
+        "description": "削除された単語は、2つだ。\n「genuinely」と「honestly」。\nClaude 4.6→4.7のsystem prompt更新で、Anthropicがモデルに「使うな」と命令していたこの言葉が、静かに消えた。追加は約800トークン。削除は約300トークン。「できることを増やし、細かい行儀ルールを削る」方向への転換だ。\nこのノートで分かることClaude 4.6→4.7 system pr...",
+        "category": "AI・技術",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "GEM-RAGをPythonで作る：NetworkXで「記憶の固有値」を計算してみた",
+        "url": "https://zenn.dev/lluminai_tech/articles/6b1b1b11c57874",
+        "site": "Zenn(LLM)",
+        "published": "2026-04-20T12:38:35Z",
+        "description": "はじめに\nルミナイR&amp;Dチームの宮脇彰梧です。\nhttps://arxiv.org/abs/2409.15566\nhttps://zenn.dev/lluminai_tech/articles/cc4b62b47936b3\n前回の記事では、最新のRAG手法 GEM-RAG の理論について、スペクトルグラフ理論の観点から解説しました。\n「情報は点ではなく、構造を持ったグラフである」\n「その重...",
+        "category": "AI・技術",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "LLMを16回呼び出したら、1回より安くて高品質になった話（0.84円）",
+        "url": "https://zenn.dev/tsukihi/articles/f46dd303de52f4",
+        "site": "Zenn(LLM)",
+        "published": "2026-04-20T11:34:21Z",
+        "description": "結論\nLLMを1回で全部やらせると品質が落ちる。タスク分解＋キャッシュにしたら、安くて高品質になった。\n57分の会議の議事録生成を、Gemini 2.5 Flash-Liteで16回に分割して呼び出した結果、1回あたりの処理コストは0.84円。上位モデルを1回呼び出すより安く、かつ高品質な議事録が得られました。この記事では、その設計と実測データを共有します。\n\n\n 1. 議事録生成というタスクの難...",
+        "category": "AI・技術",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "【Claude Code】セキュリティに配慮した調査エージェントの作成",
+        "url": "https://zenn.dev/vlntr_telco_rd/articles/512b467e108ccc",
+        "site": "Zenn(LLM)",
+        "published": "2026-04-20T10:38:15Z",
+        "description": "はじめに\nこんにちは。aoyagihです。\n最近、Claude Codeのサブエージェントに仕事をさせる取り組みをよく見かけるようになりました。特に論文サーベイやニュース収集といった調査系のタスクは以前から自動化したいと思っていたので、自分でも試してみることにしました。目標としては、「自分が指示しなくても、月曜の朝にはレポートが揃っている」という状態を目指して、役職と担当領域を持つサブエージェント...",
+        "category": "AI・技術",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
         "title": "windows上のLLMとxangiを接続し、xangi同士で会話させる",
         "url": "https://zenn.dev/okpisokapi/articles/ef4868910e73b1",
         "site": "Zenn(LLM)",
@@ -549,41 +741,11 @@
         "image_url": ""
       },
       {
-        "title": "AI for Science の歩き方 #12 ― 論文に「AI を使った」と書くべきか",
-        "url": "https://zenn.dev/aws_japan/articles/ai4s-12-rules-2026",
-        "site": "Zenn(LLM)",
-        "published": "2026-04-20T05:34:45Z",
-        "description": "!\n本記事は「AI for Science の歩き方」シリーズの第 12 回です。初めての方は 第 1 回 からどうぞ。\n\nこの記事のゴール: AI 利用の開示ルールを理解し、安心して AI を活用できるようになる。\nこの記事では、AI 利用の開示ルール、各国の規制、出版社の方針を紹介します。\n\n 知的貢献の主体はあなた自身\nICMJE（国際医学雑誌編集者委員会）、COPE（出版倫理委員会）、AC...",
-        "category": "AI・技術",
-        "rss_category": "",
-        "image_url": ""
-      },
-      {
         "title": "Azure中心で設計するLLMガードレール実践：入力・出力をどこで判定し、どこで止めるか",
         "url": "https://zenn.dev/headwaters/articles/4ba708199f684e",
         "site": "Zenn(LLM)",
         "published": "2026-04-20T03:49:40Z",
         "description": "Azure OpenAI / Microsoft Foundry / APIM を使ったアプリで悩むのは、モデル選定よりむしろこちらです。\n\n入力をどこで弾くか\n出力をどこで止めるか\nブロックだけでなく、書き換えや人間レビューをどう分けるか\n\n2026-04 時点の Microsoft Learn、OpenAI Moderation、Anthropic の公開情報を追うと、結論はかなり明確でした。...",
-        "category": "AI・技術",
-        "rss_category": "",
-        "image_url": ""
-      },
-      {
-        "title": "AIエージェントはなぜ人間と協働するのか｜Human-In-The-Loopで理解する意思決定の最終制御",
-        "url": "https://zenn.dev/startspace/articles/bd01942b140647",
-        "site": "Zenn(LLM)",
-        "published": "2026-04-20T03:00:07Z",
-        "description": "導入｜なぜAIエージェントは「人間と協働する」のか\n今までの連載の中で、AIエージェントの「行動」「実行」「ループ」「記憶」について見てきました。\nここまで整理してくると、こう思う方も多いのではないでしょうか。\n\n「もうAIエージェントだけで業務は回るのではないか？」\n\n実際、2025年はAIエージェント元年とも言われており、自律的に動くシステムは現実的なものになりつつあります。\nしかし一方で、実...",
-        "category": "AI・技術",
-        "rss_category": "",
-        "image_url": ""
-      },
-      {
-        "title": "日本語の個人情報検出はなぜ難しいのか — 住所の表記ゆれ・敬称・文脈依存を乗り越える実装ガイド",
-        "url": "https://zenn.dev/nexus_api_lab/articles/20260418-japanese-pii-difficulty",
-        "site": "Zenn(LLM)",
-        "published": "2026-04-20T02:43:37Z",
-        "description": "日本語の個人情報検出はなぜ難しいのか — 住所の表記ゆれ・敬称・文脈依存を乗り越える実装ガイド\nTL;DR\n日本語テキストへの AI 個人情報自動検出・マスキングは、英語向けツール (Presidio 等) をそのまま使っても氏名 F1 が 0.5 程度に留まる。本記事では Presidio + GiNZA で実際に起きる失敗パターン・住所表記ゆれ 10 パターン・全角半角の正規化コード・GiNZ...",
         "category": "AI・技術",
         "rss_category": "",
         "image_url": ""
@@ -604,16 +766,6 @@
         "site": "Zenn(LLM)",
         "published": "2026-04-20T01:58:23Z",
         "description": "TL;DR\n\n\nRLVR（GRPOやDAPO）はLLMの推論能力を 크게伸ばすが、同時に深刻な校準退化（Calibration Degeneration）——錯誤答案にたいする過度の自信——を引き起こす\n既存の対策（校準目的を損失関数に合成）は効果が薄い。論文はここに根本的な勾配衝突が存在することを数学的に証明した\n\nDCPO（Decoupled Calibration Policy Optimi...",
-        "category": "AI・技術",
-        "rss_category": "",
-        "image_url": ""
-      },
-      {
-        "title": "LLMベンチマーク完全ガイド 主要15指標の読み方と自宅で実行する方法",
-        "url": "https://zenn.dev/0h_n0/articles/205a1900fbde2a",
-        "site": "Zenn(LLM)",
-        "published": "2026-04-20T01:21:58Z",
-        "description": "LLMベンチマーク完全ガイド 主要15指標の読み方と自宅で実行する方法\n\n この記事でわかること\n\nMMLU、HumanEval、SWE-Bench Pro、Arena Eloなど主要15ベンチマークの評価方法とスコアの読み方\n\n\nlm-evaluation-harnessを使って自宅のGPUマシンでオープンソースLLMをベンチマークする手順\n\n自作ベンチマークをYAML設定ファイルで作成し、自社...",
         "category": "AI・技術",
         "rss_category": "",
         "image_url": ""
@@ -644,16 +796,6 @@
         "site": "Zenn(LLM)",
         "published": "2026-04-19T23:21:41Z",
         "description": "TL;DR\n\n1-bit LLM（Bonsai）を 1-bit のままチューニングする方法はないのか？\nビット反転で重みを変える Bankai という手法を見つけたので、自分の環境で 4 タスク試してみた\n共通パターンのある客観的分類では効いた（検証セットで +2〜4 問改善）\n個人の好みの学習には完全に失敗した（0 問改善）\nビット反転は「新しい能力を作る」のではなく「既存の回路を強化する」手法...",
-        "category": "AI・技術",
-        "rss_category": "",
-        "image_url": ""
-      },
-      {
-        "title": "Copilotで検証するTDLとUSJの満足度対決、いくど議論してもTDL勝者となるLLMの特性を考察した",
-        "url": "https://zenn.dev/syoshida07/articles/2efa3790320766",
-        "site": "Zenn(LLM)",
-        "published": "2026-04-19T22:30:05Z",
-        "description": "LLMの特性を調べようと、二つの専門家ロールを演じさせ、反復議論で「どちらのテーマパークが顧客満足度で優位か」を決定させる手法を検証してみまみました。\nそして楽しさも入れようと、生成AI/CopilotにはCopilot_D（TDR専門）とCopilot_U（USJ専門）を設定し、30ラウンド以上の深い議論を実施します。\n得られた結果は一貫して東京ディズニーランドが勝者となったが、本章ではまず手法...",
         "category": "AI・技術",
         "rss_category": "",
         "image_url": ""
