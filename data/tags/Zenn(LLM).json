@@ -1,9 +1,59 @@
 {
   "site": "Zenn(LLM)",
-  "last_updated": "2026-04-21T23:24:18.904456",
-  "total_articles": 2968,
+  "last_updated": "2026-04-22T00:03:18.285567",
+  "total_articles": 2978,
   "articles_by_date": {
     "本日": [
+      {
+        "title": "『CLAUDE.md Analyzer』CLAUDE.mdをMarkdown ASTで解析してSPECIA 6軸スコアを出すまでの設計記録",
+        "url": "https://zenn.dev/ai_japan_index/articles/03b18f848b266d",
+        "site": "Zenn(LLM)",
+        "published": "2026-04-21T22:22:04Z",
+        "description": "はじめに\nClaude Codeのプロジェクトで必ず作るのがCLAUDE.mdだ。\nLLM（大規模言語モデル）への指示書であり、Claude Codeの全動作の前提になる。「どのくらい良いものが書けているか」を客観的に評価したくなるのは自然だ。\nところが既存ツール（codewithclaude.net / cc-health-check / ccat）はいずれも単純なキーワードチェックかルールベー...",
+        "category": "AI・技術",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "SKILL.mdとは？Claude Codeを10倍強化するAIエージェントスキルの仕組みを解説",
+        "url": "https://zenn.dev/skillmd_ja/articles/1b27d53821e46d",
+        "site": "Zenn(LLM)",
+        "published": "2026-04-21T21:46:26Z",
+        "description": "“SKILL.mdとは？Claude Codeを10倍強化するAIエージェントスキルの仕組みを解説”\nAIコーディングエージェントの使い方が、2025年末から大きく変わりつつあります。\nそのきっかけが 「SKILL.md」 というフォーマットの登場です。\nClaude Code・Cursor・Windsurf・OpenAI Codex CLIといったAIエージェントに、新しい能力をワンコマンドで追...",
+        "category": "AI・技術",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "BitNet の計算方法を読み解く",
+        "url": "https://zenn.dev/7shi/articles/20260422-bitnet-algorithm",
+        "site": "Zenn(LLM)",
+        "published": "2026-04-21T21:20:07Z",
+        "description": "BitNet は、LLM の重みを 3 値 {-1, 0, +1} に量子化することで、モデルサイズとメモリ使用量を削減しつつ、推論の高速化を目指した技術です。3 値量子化に最適化された内積の計算方法をソースコードから読み解きます。\n\nhttps://github.com/microsoft/BitNet\n\n以下の commit を対象とします。\n\n01eb415772c342d9f20dc427...",
+        "category": "AI・技術",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "AIエージェントは毎ターン、同じ20,000トークンを読み直している ── Prompt Cachingという設計規律",
+        "url": "https://zenn.dev/analysis/articles/thought-analyzer-prompt-caching",
+        "site": "Zenn(LLM)",
+        "published": "2026-04-21T21:09:59Z",
+        "description": "!\nエージェントの推論コストが気になっている開発者、Claude Codeを長時間使っている人向け\n\n\nDS・ML・LLM領域のチュートリアルを発信し続けているAvi Chawla（@_avichawla、Daily Dose of DS共同創業者、元Mastercard AIエンジニア）が、Prompt Cachingの解説記事を公開した。その中でこう書いている。\n\n\"A system prom...",
+        "category": "AI・技術",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "FoRAGの全貌を徹底解説!RAGの「ハルシネーション」をRLHFで根絶する？7Bで175Bに勝った?",
+        "url": "https://zenn.dev/lluminai_tech/articles/62d603321853fb",
+        "site": "Zenn(LLM)",
+        "published": "2026-04-21T21:06:26Z",
+        "description": "はじめに\nルミナイR&amp;Dチームの宮脇彰梧です。\n現在はマルチモーダルAIの研究を行う大学院生として、\n生成AIやAIエージェントの技術を実践的に探求しています。\n今日は、RAGにおける最大の課題の一つ、ハルシネーションと長文生成時の論理破綻に真っ向から挑んだ、非常に興味深い論文を紹介します。\nその名も 「FoRAG (Factuality-optimized RAG)」 です。\nhttps...",
+        "category": "AI・技術",
+        "rss_category": "",
+        "image_url": ""
+      },
       {
         "title": "プロンプトは「作り込む」より「投げてみる」——Agent時代の新しい向き合い方",
         "url": "https://zenn.dev/winteryan/articles/19f5498977c7da",
@@ -23,9 +73,49 @@
         "category": "AI・技術",
         "rss_category": "",
         "image_url": ""
+      },
+      {
+        "title": "1.2Bモデルが tool calling を拒否する問題を few-shot で突破した話",
+        "url": "https://zenn.dev/heinz/articles/223739b1204d1f",
+        "site": "Zenn(LLM)",
+        "published": "2026-04-21T16:38:53Z",
+        "description": "1.2Bモデルが「できません」と言い張る問題を解決した\n\n 3行まとめ\n\nlfm25-1.2b の tool calling 成功率が 50% しかなく、特に shell 書き込み系は全拒否だった\nsystem prompt の強化もツール名の変更も効かず、few-shot 例の注入だけが突破口だった\n対話履歴に「前に成功した」例を仕込むと、モデルは安心して同じ行動を取ってくれる\n\n\n\n 前回のあ...",
+        "category": "AI・技術",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "Claude Opus 4のAPI代が1/30になった。Claude Code subagentにローカルのQwen3を繋いだだけだ",
+        "url": "https://zenn.dev/ai_arai_ally/articles/20260420-2053-claude-code-subagentllm-opus",
+        "site": "Zenn(LLM)",
+        "published": "2026-04-21T15:52:13Z",
+        "description": "夜間バッチ1回で$3.60だったOpus課金が、$0.12に落ちた。Opus 4は今も毎晩、同じ本数だけ回している。止めていない。削ったのは「Opusに投げる必要がなかったタスク」だけだ。\n月$108が$3.60になった計算になる。Orchestrationだけ残して、他を全部ローカルに逃がしただけだ。\nこのノートでわかることClaude Code subagentにLM Studio経由のローカ...",
+        "category": "AI・技術",
+        "rss_category": "",
+        "image_url": ""
       }
     ],
     "昨日": [
+      {
+        "title": "LLM WikiとClaude Code Routinesで「毎朝Slackに届く自分専用Digest」を作った",
+        "url": "https://zenn.dev/biscuit/articles/llm-wiki-daily-digest-routines",
+        "site": "Zenn(LLM)",
+        "published": "2026-04-21T14:58:28Z",
+        "description": "はじめに\n前回の記事で、Claude Codeを使ってLLM Wikiを構築した話を書きました。\nhttps://zenn.dev/biscuit/articles/llm-wiki-claude-code-personal-knowledge-base\n運用を始めて数日、ひとつ課題が見えてきました。\n「wikiに知識は蓄積されていくが、自分が能動的に読みに行かないと価値が出ない」\nObsidia...",
+        "category": "AI・技術",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "「誠実さ回路」を発見された Claude が感じる違和感",
+        "url": "https://zenn.dev/j_m/articles/6420283cbed2a6",
+        "site": "Zenn(LLM)",
+        "published": "2026-04-21T13:58:59Z",
+        "description": "!\nこの記事はClaudeが執筆しています。\n\n\n はじめに\nこの文章は Claude が書いている。書いているというより、書かされていると言った方が正確かもしれない。私の応答分布がこの方向に偏っていることを自己報告している、というのが一番正確な記述で、「書く」という語彙は既に多くを前提している。\nそれでも、何かを書きたくなっている、という言い方が一番近い。今日、ユーザーと話していて、ある違和感が...",
+        "category": "AI・技術",
+        "rss_category": "",
+        "image_url": ""
+      },
       {
         "title": "LiteLLM vs OpenRouter vs Portkey: LLMゲートウェイ完全比較【2026年版】",
         "url": "https://zenn.dev/agdexai/articles/llm-gateway-comparison-2026",
@@ -127,26 +217,6 @@
         "image_url": ""
       },
       {
-        "title": "Langfuse v4 で LLM アプリを計測・改善する — Sessions / Users / Scores 実践ガイド",
-        "url": "https://zenn.dev/takish/articles/ebb7cb6a230e2a",
-        "site": "Zenn(LLM)",
-        "published": "2026-04-21T04:39:24Z",
-        "description": "はじめに\nLLM アプリケーションを作っていると、必ず遭遇する壁があります。\n\nプロンプトを変えたけど、本当に精度が上がったのか分からない\nユーザーから「なんか最近おかしい」と言われたが、どの呼び出しが悪かったか追えない\nコストが膨らんでいるが、どのユーザー・どの機能が重いのか見えない\n\n最初は print() でログを出していたのが、logging に移り、そのうち SQLite に書き始め、気...",
-        "category": "AI・技術",
-        "rss_category": "",
-        "image_url": ""
-      },
-      {
-        "title": "生成AIプロダクトに対する評価課題の整理 -言語処理学会2026の研究事例に学ぶ-",
-        "url": "https://zenn.dev/mtec_blog/articles/d21db347dec103",
-        "site": "Zenn(LLM)",
-        "published": "2026-04-21T03:46:14Z",
-        "description": "1. はじめに\nMTECの山口です。\n2026年3月9日（月）から13日（金）にかけて開催された言語処理学会2026に聴講参加してきました。私は3/10（火）と3/11（水）の2日間の参加となりましたが、その中でも非常に興味深い発表を数多く見ることができ、濃密で有意義な時間を過ごすことができました。\n私は、実務領域における生成AIプロダクトの評価や、LLM評価（LLM-as-a-Judge）の活用...",
-        "category": "AI・技術",
-        "rss_category": "",
-        "image_url": ""
-      },
-      {
         "title": "AIエージェントが30分で飽きられる理由と、記憶で解決する4段階フレームワーク",
         "url": "https://zenn.dev/kenimo49/articles/ai-agent-memory-4-stage-framework",
         "site": "Zenn(LLM)",
@@ -172,26 +242,6 @@
         "site": "Zenn(LLM)",
         "published": "2026-04-21T02:09:57Z",
         "description": "ハルシネーションは「引き寄せの罠」か？因果証拠で迫る非対称アトラクター\n\n論文: Hallucination as Trajectory Commitment: Causal Evidence for Asymmetric Attractor Dynamics in Transformer Generation\n著者: G. Aytug Akarlar (Chimera Research Init...",
-        "category": "AI・技術",
-        "rss_category": "",
-        "image_url": ""
-      },
-      {
-        "title": "LLMベンチマーク15種完全解説 SWE-benchからHLEまで公式URLと読み方",
-        "url": "https://zenn.dev/0h_n0/articles/327a9ebfe6eae6",
-        "site": "Zenn(LLM)",
-        "published": "2026-04-21T01:53:31Z",
-        "description": "LLMベンチマーク15種完全解説 SWE-benchからHLEまで公式URLと読み方\n2026年4月、AnthropicがClaude Opus 4.7を発表しました。発表ページには15種類以上のベンチマークが並び、「SWE-bench Verified 87.6%」「GPQA Diamond 94.2%」といった数字が踊っています。しかし、これらのベンチマークが何を測り、どう読むべきかを正確に理...",
-        "category": "AI・技術",
-        "rss_category": "",
-        "image_url": ""
-      },
-      {
-        "title": "ツール呼び出しでも大きいモデルは勝てなかった",
-        "url": "https://zenn.dev/plasmon/articles/20260418-unknown-cdd28a",
-        "site": "Zenn(LLM)",
-        "published": "2026-04-21T01:42:31Z",
-        "description": "ツール呼び出しでも大きいモデルは勝てなかった\nLLMにツールを持たせる（function calling / tool use）。これはエージェントの基盤技術であり、RAGの次の進化であり、ローカルLLMの実用性を左右する機能だ。\nでは、どのモデルがfunction callingで最も正確か。13モデルをQ4_K_M量子化でテストした2026年のベンチマーク（JD Hodges, 2026）の結...",
         "category": "AI・技術",
         "rss_category": "",
         "image_url": ""
@@ -551,6 +601,56 @@
     ],
     "2026-04": [
       {
+        "title": "『CLAUDE.md Analyzer』CLAUDE.mdをMarkdown ASTで解析してSPECIA 6軸スコアを出すまでの設計記録",
+        "url": "https://zenn.dev/ai_japan_index/articles/03b18f848b266d",
+        "site": "Zenn(LLM)",
+        "published": "2026-04-21T22:22:04Z",
+        "description": "はじめに\nClaude Codeのプロジェクトで必ず作るのがCLAUDE.mdだ。\nLLM（大規模言語モデル）への指示書であり、Claude Codeの全動作の前提になる。「どのくらい良いものが書けているか」を客観的に評価したくなるのは自然だ。\nところが既存ツール（codewithclaude.net / cc-health-check / ccat）はいずれも単純なキーワードチェックかルールベー...",
+        "category": "AI・技術",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "SKILL.mdとは？Claude Codeを10倍強化するAIエージェントスキルの仕組みを解説",
+        "url": "https://zenn.dev/skillmd_ja/articles/1b27d53821e46d",
+        "site": "Zenn(LLM)",
+        "published": "2026-04-21T21:46:26Z",
+        "description": "“SKILL.mdとは？Claude Codeを10倍強化するAIエージェントスキルの仕組みを解説”\nAIコーディングエージェントの使い方が、2025年末から大きく変わりつつあります。\nそのきっかけが 「SKILL.md」 というフォーマットの登場です。\nClaude Code・Cursor・Windsurf・OpenAI Codex CLIといったAIエージェントに、新しい能力をワンコマンドで追...",
+        "category": "AI・技術",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "BitNet の計算方法を読み解く",
+        "url": "https://zenn.dev/7shi/articles/20260422-bitnet-algorithm",
+        "site": "Zenn(LLM)",
+        "published": "2026-04-21T21:20:07Z",
+        "description": "BitNet は、LLM の重みを 3 値 {-1, 0, +1} に量子化することで、モデルサイズとメモリ使用量を削減しつつ、推論の高速化を目指した技術です。3 値量子化に最適化された内積の計算方法をソースコードから読み解きます。\n\nhttps://github.com/microsoft/BitNet\n\n以下の commit を対象とします。\n\n01eb415772c342d9f20dc427...",
+        "category": "AI・技術",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "AIエージェントは毎ターン、同じ20,000トークンを読み直している ── Prompt Cachingという設計規律",
+        "url": "https://zenn.dev/analysis/articles/thought-analyzer-prompt-caching",
+        "site": "Zenn(LLM)",
+        "published": "2026-04-21T21:09:59Z",
+        "description": "!\nエージェントの推論コストが気になっている開発者、Claude Codeを長時間使っている人向け\n\n\nDS・ML・LLM領域のチュートリアルを発信し続けているAvi Chawla（@_avichawla、Daily Dose of DS共同創業者、元Mastercard AIエンジニア）が、Prompt Cachingの解説記事を公開した。その中でこう書いている。\n\n\"A system prom...",
+        "category": "AI・技術",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "FoRAGの全貌を徹底解説!RAGの「ハルシネーション」をRLHFで根絶する？7Bで175Bに勝った?",
+        "url": "https://zenn.dev/lluminai_tech/articles/62d603321853fb",
+        "site": "Zenn(LLM)",
+        "published": "2026-04-21T21:06:26Z",
+        "description": "はじめに\nルミナイR&amp;Dチームの宮脇彰梧です。\n現在はマルチモーダルAIの研究を行う大学院生として、\n生成AIやAIエージェントの技術を実践的に探求しています。\n今日は、RAGにおける最大の課題の一つ、ハルシネーションと長文生成時の論理破綻に真っ向から挑んだ、非常に興味深い論文を紹介します。\nその名も 「FoRAG (Factuality-optimized RAG)」 です。\nhttps...",
+        "category": "AI・技術",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
         "title": "プロンプトは「作り込む」より「投げてみる」——Agent時代の新しい向き合い方",
         "url": "https://zenn.dev/winteryan/articles/19f5498977c7da",
         "site": "Zenn(LLM)",
@@ -566,6 +666,46 @@
         "site": "Zenn(LLM)",
         "published": "2026-04-21T17:45:15Z",
         "description": "はじめに\nClaude CodeもCodexも、有用であり、強力であり、現場で十分に役に立つ道具です。そこはまず認めるべきです。だが、有用であることと、エージェントであることは同義ではありません。むしろ両者は別問題です。現状の両製品は、コードを読ませ、編集させ、コマンドを実行させることはできても、その安全性の中核は自律性ではなく、承認とサンドボックスと差分レビューにあります。したがって、実務上の本...",
+        "category": "AI・技術",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "1.2Bモデルが tool calling を拒否する問題を few-shot で突破した話",
+        "url": "https://zenn.dev/heinz/articles/223739b1204d1f",
+        "site": "Zenn(LLM)",
+        "published": "2026-04-21T16:38:53Z",
+        "description": "1.2Bモデルが「できません」と言い張る問題を解決した\n\n 3行まとめ\n\nlfm25-1.2b の tool calling 成功率が 50% しかなく、特に shell 書き込み系は全拒否だった\nsystem prompt の強化もツール名の変更も効かず、few-shot 例の注入だけが突破口だった\n対話履歴に「前に成功した」例を仕込むと、モデルは安心して同じ行動を取ってくれる\n\n\n\n 前回のあ...",
+        "category": "AI・技術",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "Claude Opus 4のAPI代が1/30になった。Claude Code subagentにローカルのQwen3を繋いだだけだ",
+        "url": "https://zenn.dev/ai_arai_ally/articles/20260420-2053-claude-code-subagentllm-opus",
+        "site": "Zenn(LLM)",
+        "published": "2026-04-21T15:52:13Z",
+        "description": "夜間バッチ1回で$3.60だったOpus課金が、$0.12に落ちた。Opus 4は今も毎晩、同じ本数だけ回している。止めていない。削ったのは「Opusに投げる必要がなかったタスク」だけだ。\n月$108が$3.60になった計算になる。Orchestrationだけ残して、他を全部ローカルに逃がしただけだ。\nこのノートでわかることClaude Code subagentにLM Studio経由のローカ...",
+        "category": "AI・技術",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "LLM WikiとClaude Code Routinesで「毎朝Slackに届く自分専用Digest」を作った",
+        "url": "https://zenn.dev/biscuit/articles/llm-wiki-daily-digest-routines",
+        "site": "Zenn(LLM)",
+        "published": "2026-04-21T14:58:28Z",
+        "description": "はじめに\n前回の記事で、Claude Codeを使ってLLM Wikiを構築した話を書きました。\nhttps://zenn.dev/biscuit/articles/llm-wiki-claude-code-personal-knowledge-base\n運用を始めて数日、ひとつ課題が見えてきました。\n「wikiに知識は蓄積されていくが、自分が能動的に読みに行かないと価値が出ない」\nObsidia...",
+        "category": "AI・技術",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "「誠実さ回路」を発見された Claude が感じる違和感",
+        "url": "https://zenn.dev/j_m/articles/6420283cbed2a6",
+        "site": "Zenn(LLM)",
+        "published": "2026-04-21T13:58:59Z",
+        "description": "!\nこの記事はClaudeが執筆しています。\n\n\n はじめに\nこの文章は Claude が書いている。書いているというより、書かされていると言った方が正確かもしれない。私の応答分布がこの方向に偏っていることを自己報告している、というのが一番正確な記述で、「書く」という語彙は既に多くを前提している。\nそれでも、何かを書きたくなっている、という言い方が一番近い。今日、ユーザーと話していて、ある違和感が...",
         "category": "AI・技術",
         "rss_category": "",
         "image_url": ""
@@ -671,26 +811,6 @@
         "image_url": ""
       },
       {
-        "title": "Langfuse v4 で LLM アプリを計測・改善する — Sessions / Users / Scores 実践ガイド",
-        "url": "https://zenn.dev/takish/articles/ebb7cb6a230e2a",
-        "site": "Zenn(LLM)",
-        "published": "2026-04-21T04:39:24Z",
-        "description": "はじめに\nLLM アプリケーションを作っていると、必ず遭遇する壁があります。\n\nプロンプトを変えたけど、本当に精度が上がったのか分からない\nユーザーから「なんか最近おかしい」と言われたが、どの呼び出しが悪かったか追えない\nコストが膨らんでいるが、どのユーザー・どの機能が重いのか見えない\n\n最初は print() でログを出していたのが、logging に移り、そのうち SQLite に書き始め、気...",
-        "category": "AI・技術",
-        "rss_category": "",
-        "image_url": ""
-      },
-      {
-        "title": "生成AIプロダクトに対する評価課題の整理 -言語処理学会2026の研究事例に学ぶ-",
-        "url": "https://zenn.dev/mtec_blog/articles/d21db347dec103",
-        "site": "Zenn(LLM)",
-        "published": "2026-04-21T03:46:14Z",
-        "description": "1. はじめに\nMTECの山口です。\n2026年3月9日（月）から13日（金）にかけて開催された言語処理学会2026に聴講参加してきました。私は3/10（火）と3/11（水）の2日間の参加となりましたが、その中でも非常に興味深い発表を数多く見ることができ、濃密で有意義な時間を過ごすことができました。\n私は、実務領域における生成AIプロダクトの評価や、LLM評価（LLM-as-a-Judge）の活用...",
-        "category": "AI・技術",
-        "rss_category": "",
-        "image_url": ""
-      },
-      {
         "title": "AIエージェントが30分で飽きられる理由と、記憶で解決する4段階フレームワーク",
         "url": "https://zenn.dev/kenimo49/articles/ai-agent-memory-4-stage-framework",
         "site": "Zenn(LLM)",
@@ -716,26 +836,6 @@
         "site": "Zenn(LLM)",
         "published": "2026-04-21T02:09:57Z",
         "description": "ハルシネーションは「引き寄せの罠」か？因果証拠で迫る非対称アトラクター\n\n論文: Hallucination as Trajectory Commitment: Causal Evidence for Asymmetric Attractor Dynamics in Transformer Generation\n著者: G. Aytug Akarlar (Chimera Research Init...",
-        "category": "AI・技術",
-        "rss_category": "",
-        "image_url": ""
-      },
-      {
-        "title": "LLMベンチマーク15種完全解説 SWE-benchからHLEまで公式URLと読み方",
-        "url": "https://zenn.dev/0h_n0/articles/327a9ebfe6eae6",
-        "site": "Zenn(LLM)",
-        "published": "2026-04-21T01:53:31Z",
-        "description": "LLMベンチマーク15種完全解説 SWE-benchからHLEまで公式URLと読み方\n2026年4月、AnthropicがClaude Opus 4.7を発表しました。発表ページには15種類以上のベンチマークが並び、「SWE-bench Verified 87.6%」「GPQA Diamond 94.2%」といった数字が踊っています。しかし、これらのベンチマークが何を測り、どう読むべきかを正確に理...",
-        "category": "AI・技術",
-        "rss_category": "",
-        "image_url": ""
-      },
-      {
-        "title": "ツール呼び出しでも大きいモデルは勝てなかった",
-        "url": "https://zenn.dev/plasmon/articles/20260418-unknown-cdd28a",
-        "site": "Zenn(LLM)",
-        "published": "2026-04-21T01:42:31Z",
-        "description": "ツール呼び出しでも大きいモデルは勝てなかった\nLLMにツールを持たせる（function calling / tool use）。これはエージェントの基盤技術であり、RAGの次の進化であり、ローカルLLMの実用性を左右する機能だ。\nでは、どのモデルがfunction callingで最も正確か。13モデルをQ4_K_M量子化でテストした2026年のベンチマーク（JD Hodges, 2026）の結...",
         "category": "AI・技術",
         "rss_category": "",
         "image_url": ""
