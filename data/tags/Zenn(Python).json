@@ -1,9 +1,29 @@
 {
   "site": "Zenn(Python)",
-  "last_updated": "2026-04-22T07:56:53.539074",
-  "total_articles": 3618,
+  "last_updated": "2026-04-22T09:27:37.012849",
+  "total_articles": 3622,
   "articles_by_date": {
     "本日": [
+      {
+        "title": "観察フラグ運用のログ分離パターン — 未検証ロジックを本番と混ぜない",
+        "url": "https://zenn.dev/techquant/articles/observation-flag-log-separation",
+        "site": "Zenn(Python)",
+        "published": "2026-04-22T08:32:17Z",
+        "description": "はじめに\n自動売買システムを運用していると、「このロジックはまだ本番投入する勇気はないが、\n本番のマーケットデータに対して観察だけしてログを残したい」という場面が頻繁に発生する。\n本番コードに if experimental: でフラグを埋め込むのは簡単だが、これを雑にやると:\n\n本番ログに観察専用の DEBUG が混ざって読めない\n事故時、観察ロジックが誤発注に関与したかどうかの切り分けに時間が...",
+        "category": "開発",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "QUBO++で覆面算を解く：SEND + MORE = MONEY",
+        "url": "https://zenn.dev/comp_lab/articles/send-more-money",
+        "site": "Zenn(Python)",
+        "published": "2026-04-22T08:02:04Z",
+        "description": "問題\n\nSEND + MORE = MONEY\n8つの文字 S, E, N, D, M, O, R, Y にそれぞれ 0〜9 の異なる数字を割り当て、等式を成立させよ。ただし、先頭の S, M は 0 ではない。\n\n有名な覆面算（Verbal Arithmetic）のパズルです。これを QUBO として定式化し、QUBO++/PyQBPP で解いてみましょう。\n\n QUBOでの定式化\n\n バイナリ...",
+        "category": "開発",
+        "rss_category": "",
+        "image_url": ""
+      },
       {
         "title": "新人研修レビュー170件をどう割振る？数理最適化で全員の希望と公平性を両立した記録",
         "url": "https://zenn.dev/amplify/articles/23d943450f59f0",
@@ -39,7 +59,7 @@
         "url": "https://zenn.dev/sora97/articles/9c208f21caf046",
         "site": "Zenn(Python)",
         "published": "2026-04-22T07:51:07Z",
-        "description": "主に競技プログラミングやPaiza用\n\n よく使う入力パターン\nコードを開く\n複数の変数を一気に受け取る\n# 3つの数値を A, B, C に格納\na, b, c = map(int, input().split())\n\n縦にN行並んだ数値を受け取る\n# 1行ずつ数値としてリストに格納\nn = int(input())\na = [int(input()) for _ in range(n)]\n\n0...",
+        "description": "主に競技プログラミングやPaiza用\n\n よく使う入力パターン\nコードを開く\n文字列の受け取り\ns = input()\n\n複数の数値の受け取り\n# 3つの数値を a, b, c に格納\na, b, c = map(int, input().split())\n\n縦にN行並んだ数値を受け取る\n# 1行ずつ数値としてリストに格納\nn = int(input())\na = [int(input()) fo...",
         "category": "開発",
         "rss_category": "",
         "image_url": ""
@@ -571,6 +591,26 @@
     ],
     "2026-04": [
       {
+        "title": "観察フラグ運用のログ分離パターン — 未検証ロジックを本番と混ぜない",
+        "url": "https://zenn.dev/techquant/articles/observation-flag-log-separation",
+        "site": "Zenn(Python)",
+        "published": "2026-04-22T08:32:17Z",
+        "description": "はじめに\n自動売買システムを運用していると、「このロジックはまだ本番投入する勇気はないが、\n本番のマーケットデータに対して観察だけしてログを残したい」という場面が頻繁に発生する。\n本番コードに if experimental: でフラグを埋め込むのは簡単だが、これを雑にやると:\n\n本番ログに観察専用の DEBUG が混ざって読めない\n事故時、観察ロジックが誤発注に関与したかどうかの切り分けに時間が...",
+        "category": "開発",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "QUBO++で覆面算を解く：SEND + MORE = MONEY",
+        "url": "https://zenn.dev/comp_lab/articles/send-more-money",
+        "site": "Zenn(Python)",
+        "published": "2026-04-22T08:02:04Z",
+        "description": "問題\n\nSEND + MORE = MONEY\n8つの文字 S, E, N, D, M, O, R, Y にそれぞれ 0〜9 の異なる数字を割り当て、等式を成立させよ。ただし、先頭の S, M は 0 ではない。\n\n有名な覆面算（Verbal Arithmetic）のパズルです。これを QUBO として定式化し、QUBO++/PyQBPP で解いてみましょう。\n\n QUBOでの定式化\n\n バイナリ...",
+        "category": "開発",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
         "title": "新人研修レビュー170件をどう割振る？数理最適化で全員の希望と公平性を両立した記録",
         "url": "https://zenn.dev/amplify/articles/23d943450f59f0",
         "site": "Zenn(Python)",
@@ -605,7 +645,7 @@
         "url": "https://zenn.dev/sora97/articles/9c208f21caf046",
         "site": "Zenn(Python)",
         "published": "2026-04-22T07:51:07Z",
-        "description": "主に競技プログラミングやPaiza用\n\n よく使う入力パターン\nコードを開く\n複数の変数を一気に受け取る\n# 3つの数値を A, B, C に格納\na, b, c = map(int, input().split())\n\n縦にN行並んだ数値を受け取る\n# 1行ずつ数値としてリストに格納\nn = int(input())\na = [int(input()) for _ in range(n)]\n\n0...",
+        "description": "主に競技プログラミングやPaiza用\n\n よく使う入力パターン\nコードを開く\n文字列の受け取り\ns = input()\n\n複数の数値の受け取り\n# 3つの数値を a, b, c に格納\na, b, c = map(int, input().split())\n\n縦にN行並んだ数値を受け取る\n# 1行ずつ数値としてリストに格納\nn = int(input())\na = [int(input()) fo...",
         "category": "開発",
         "rss_category": "",
         "image_url": ""
