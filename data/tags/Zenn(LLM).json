@@ -1,11 +1,111 @@
 {
   "site": "Zenn(LLM)",
-  "last_updated": "2026-04-24T08:18:59.128640",
-  "total_articles": 3008,
+  "last_updated": "2026-04-24T09:58:25.484600",
+  "total_articles": 3020,
   "articles_by_date": {
     "本日": [
       {
-        "title": "Claude Codeに何回言えば覚えるの——CLAUDE.md・auto memory・compact完全ガイド",
+        "title": "Responsibility Pathway Layer――AIエージェントに責任経路を実装する最小構成",
+        "url": "https://zenn.dev/dantarg/articles/33825ca3f8c0e6",
+        "site": "Zenn(LLM)",
+        "published": "2026-04-24T09:28:17Z",
+        "description": "はじめに\nAIエージェントは、会話するだけのAIではない。\nWebを調べ、APIを呼び、ファイルを更新し、メールを書き、場合によっては業務システム上の処理まで実行する。\nそのとき問題になるのは、AIが賢いかどうかだけではない。\n本当に問われるのは、次のようなことだ。\n\nその判断は誰の責任として発生したのか\nAIの提案を誰が採用したのか\nどこで承認が必要だったのか\nどこで止められたのか\n止めなかった...",
+        "category": "AI・技術",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "Qwen3.5のアーキテクチャを理解するためにやったこと",
+        "url": "https://zenn.dev/meme_dayo/articles/0980cfce20fcb3",
+        "site": "Zenn(LLM)",
+        "published": "2026-04-24T09:13:56Z",
+        "description": "Qwen3.5は構造的に特殊というか　Qwen 3 Next 80B A3 を大きくマルチモーダルにした感じ\n→mamba寄りの知識がないと理解し難いので\nまず\nhttps://huggingface.co/blog/mlabonne/qwen35\n続いて\nhttps://qiita.com/peony_snow/items/649ecb307cd3b5c10aa7\nようやくこれが読めるレベルに\n...",
+        "category": "AI・技術",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "50のフレームワークを物語に統合する — Learning Journeyシステムの設計",
+        "url": "https://zenn.dev/tenchan0517/articles/novel-learning-journey",
+        "site": "Zenn(LLM)",
+        "published": "2026-04-24T08:14:25Z",
+        "description": "「小説を読んで人生が変わった」を設計で再現する\n誰しも一度くらいは、物語を通じて考え方が変わった経験があるのではないでしょうか。\nドラッカーの本を読んで経営を学んだのではなく、ある登場人物がドラッカー的な判断をする場面に心を動かされて、結果的にマネジメントの本質を理解した。アドラー心理学を教科書で学んだのではなく、小説の中でキャラクターが「課題の分離」を実践する姿を見て、自分の人間関係の捉え方が変...",
+        "category": "AI・技術",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "EC2でLLM推論のコールドスタートをどこまで短縮できるか検証してみた",
+        "url": "https://zenn.dev/fusic/articles/cd741e80366797",
+        "site": "Zenn(LLM)",
+        "published": "2026-04-24T07:42:41Z",
+        "description": "はじめに\nFusicのレオナです。GPU付きEC2でLLMを推論する際、インスタンス起動後にHugging Faceからモデルをダウンロードする構成はよくあります。しかし、モデルサイズが大きくなるにつれて、このダウンロード時間がコールドスタートのボトルネックになります。\n今回は、EC2単体の構成で、モデルの取得元・配置方法を変えることで、どの程度コールドスタートを高速化できるかを実測してみました。...",
+        "category": "AI・技術",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "AIとAIをつなぐ意味のパイプライン設計：会話ではなく、正典・制約・実ファイルで状態を継承する",
+        "url": "https://zenn.dev/yuta_yokoi/articles/91cf894e1072c6",
+        "site": "Zenn(LLM)",
+        "published": "2026-04-24T07:22:36Z",
+        "description": "会話ではなく、正典・制約・実ファイルで状態を継承する\n!\nこの記事は、完結済みのAIO実践シリーズ全6本の「第7弾」ではありません。\n既存シリーズを前提資料として扱い、その上位レイヤーに立つ 独立記事 です。\n\n関連キーワード：#AIO #AI #LLM #MultiAgent #AIエージェント #AIオーケストレーション #PM #アーキテクチャ #プロンプトエンジニアリング #llms.tx...",
+        "category": "AI・技術",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "なぜAIエージェントの再現性はプロンプトだけで解決できないのか？——暗黙知の構造化と「記憶設計」への転換",
+        "url": "https://zenn.dev/memorylakeai/articles/e4e59fec635d98",
+        "site": "Zenn(LLM)",
+        "published": "2026-04-24T03:43:59Z",
+        "description": "はじめに\n「昨日は完璧に動いていたAIエージェントが、今日になったら全く違う挙動をする」\n「別のタスクを頼んだら、さっきまで守っていた出力ルールを忘れてしまった」\nLLMを使ったアプリケーションやAIエージェントを開発していると、誰もが一度はこのような「再現性の欠如」に直面します。この問題に対して、多くの開発チームは「プロンプトの指示が足りないからだ」「もっと詳細に条件を記述しよう」と考え、プロン...",
+        "category": "AI・技術",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "PPOかGRPOか？Explained Varianceが解くRLVRの最大のジレンマ",
+        "url": "https://zenn.dev/lixian/articles/evpo-explained-variance-ppo",
+        "site": "Zenn(LLM)",
+        "published": "2026-04-24T02:29:09Z",
+        "description": "PPOかGRPOか？Explained Varianceが解くRLVRの最大のジレンマ\n\n TL;DR\n\nLLM後段訓練（RLVR）における最大の設計判断の一つは「Criticを使うかどうか」だが、PPO（Criticあり）とGRPO（Criticなし）のどちらが優れるかはタスク依存で、統一見解がない\n北京大学・复旦大学がEVPO（Explained Variance Policy Optimiz...",
+        "category": "AI・技術",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "個人のWikiから組織のナレッジ基盤へ：AIが読める知識を外在化する設計思想",
+        "url": "https://zenn.dev/biscuit/articles/externalize-knowledge-personal-to-org",
+        "site": "Zenn(LLM)",
+        "published": "2026-04-24T01:23:59Z",
+        "description": "はじめに\n以前、Andrej Karpathyが提唱した「LLM Wiki」のアイデアをClaude Codeで実装した話を記事にしました。\nhttps://zenn.dev/biscuit/articles/llm-wiki-claude-code-personal-knowledge-base\nObsidian Web Clipperで素材を集め、Claude Code Skillsで構造化W...",
+        "category": "AI・技術",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "AIガバナンスツールを自作した話 — LLM監査の実装記録",
+        "url": "https://zenn.dev/kei_concierge/articles/zenn-article-010",
+        "site": "Zenn(LLM)",
+        "published": "2026-04-24T01:22:23Z",
+        "description": "AIガバナンスツールを自作した話 — LLM監査の実装記録\n\n なぜ作ろうと思ったか\nLLMをプロダクションで使い始めると、必ずある問題に直面する。\n「なんでこのレスポンス、昨日より精度が落ちてるんだ？」\nログを遡ろうとするが、API呼び出しの記録はAnthropicのコンソールには入力・出力の生データが残っていない。どのリクエストで問題が起きたのか、追跡する手段がない。\n私が最初にこれを感じたの...",
+        "category": "AI・技術",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "『LLM API 価格変動トラッカー 2026』OpenRouterの全モデル価格を日次スナップショットで追いかけるダッシュボードを作った話",
+        "url": "https://zenn.dev/ai_japan_index/articles/030907387843cf",
+        "site": "Zenn(LLM)",
+        "published": "2026-04-23T23:25:53Z",
+        "description": "TL;DR\n\nOpenRouter APIを毎日自動フェッチしてLLM価格の前日比を記録するツールを作った\nバブルチャートで300件超のモデルをInput/Output価格×コンテキスト長の3変数で可視化\n価格帯が$0〜$60+/Mトークンと100倍以上開くため、対数スケールが必須だった\nFree($0)モデルは対数スケール（0は-∞）のため特別処理が必要\nWordPressでは &amp;&am...",
+        "category": "AI・技術",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "Claude Codeに何回言えば覚えるの——CLAUDE.md・auto memory・compact 記憶の生存戦略",
         "url": "https://zenn.dev/helloworld/articles/dce7eb8033aac7",
         "site": "Zenn(LLM)",
         "published": "2026-04-23T22:00:05Z",
@@ -46,16 +146,6 @@
       }
     ],
     "昨日": [
-      {
-        "title": "AIを「会話ツール」から「知識コンパイラ」に変える：ワークフロー型AIという次のパラダイム",
-        "url": "https://zenn.dev/biscuit/articles/workflow-ai-knowledge-compiler",
-        "site": "Zenn(LLM)",
-        "published": "2026-04-23T14:31:09Z",
-        "description": "はじめに\n以前、Andrej Karpathyが提唱した「LLM Wiki」のアイデアをClaude Codeで実装した話を記事にしました。\nhttps://zenn.dev/biscuit/articles/llm-wiki-claude-code-personal-knowledge-base\nObsidian Web Clipperで素材を集め、Claude Code Skillsで構造化W...",
-        "category": "AI・技術",
-        "rss_category": "",
-        "image_url": ""
-      },
       {
         "title": "有価証券報告書をAIに読ませる3つの選択肢——NECの93%削減事例から考える",
         "url": "https://zenn.dev/edinetdb/articles/edinetdb-nec-1300pages",
@@ -167,41 +257,11 @@
         "image_url": ""
       },
       {
-        "title": "ハーネスエンジニアリングとは何で、何ではないのか 〜作る側のハーネス、使う側のハーネス〜",
-        "url": "https://zenn.dev/r_kaga/articles/329afdc151899f",
-        "site": "Zenn(LLM)",
-        "published": "2026-04-22T23:31:45Z",
-        "description": "先日、Findy主催のハーネスエンジニアリング勉強会で登壇しました。\nhttps://findy.connpass.com/event/388471/\n発表では登壇の中でのすみ分けや尺を考えて絞りましたが、語りきれなかった部分をこの記事にまとめます。\nhttps://speakerdeck.com/rkaga/how-to-approach-harness-engineering\n\nハーネスエンジ...",
-        "category": "AI・技術",
-        "rss_category": "",
-        "image_url": ""
-      },
-      {
-        "title": "Audio AIは「聴く」時代へ。ローカルで動くLALMsをまとめて比較できるOSS「LALMsArena」を作った",
-        "url": "https://zenn.dev/kasahart/articles/kasahart-20260419-audio-llm-arena",
-        "site": "Zenn(LLM)",
-        "published": "2026-04-22T22:00:08Z",
-        "description": "はじめに\nこんにちは。普段は音データを pandas ライクに扱える OSS ライブラリ「wandas」を開発しています。wandas を作る中で Audio AI の世界が急速に変わってきていることに気づき、実際に触ってみました。\nここ最近、Audio AI の世界が急速に変わってきていると感じています。従来の音声認識（ASR）は「音声をテキストに変換して、それをテキスト LLM に渡す」という...",
-        "category": "AI・技術",
-        "rss_category": "",
-        "image_url": ""
-      },
-      {
         "title": "Claude Haiku 4.5 + skill で Opus 4.7 を超えた ― SkillsBench 追試とモデル選定の設計図",
         "url": "https://zenn.dev/ai_arai_ally/articles/20260422-0401-claude-haiku-4-5-skill-opus-4-7",
         "site": "Zenn(LLM)",
         "published": "2026-04-22T19:02:38Z",
         "description": "SkillsBench（84タスク / 7モデル / 7,308試行）で 61.2% → 84.3%、Opus 4.7（80.5%）を上回った。\n数字の意味はこうだった。Opus の出力を読み切る方が疲れる日があり、Haiku + skill に降ろした翌日、読み終えた後に時間が余っていた。\nモデルを替えたんじゃない。モデル選定の判断軸を、1個ずらしただけだ。\nこのノートで分かることSkillsB...",
-        "category": "AI・技術",
-        "rss_category": "",
-        "image_url": ""
-      },
-      {
-        "title": "LLMルーターの自動プロファイル選択をrule-basedでどこまでやるか—CodeRouter v1.6 auto_router",
-        "url": "https://zenn.dev/zephel01/articles/7614011eef3e76",
-        "site": "Zenn(LLM)",
-        "published": "2026-04-22T16:58:38Z",
-        "description": "LLM ルーターの『自動プロファイル選択』を rule-based でどこまでやるか\n\n この記事で扱うこと\nCodeRouter v1.6 で入れた auto_router という feature の、分類器としての設計判断を書きます。やっていること自体は「リクエスト本文を見てプロファイル (≒ どのモデル群に流すか) を自動で選ぶ」という、書いてみれば一行で済む話です。ただこの一行を実装すると...",
         "category": "AI・技術",
         "rss_category": "",
         "image_url": ""
@@ -511,7 +571,107 @@
     ],
     "2026-04": [
       {
-        "title": "Claude Codeに何回言えば覚えるの——CLAUDE.md・auto memory・compact完全ガイド",
+        "title": "Responsibility Pathway Layer――AIエージェントに責任経路を実装する最小構成",
+        "url": "https://zenn.dev/dantarg/articles/33825ca3f8c0e6",
+        "site": "Zenn(LLM)",
+        "published": "2026-04-24T09:28:17Z",
+        "description": "はじめに\nAIエージェントは、会話するだけのAIではない。\nWebを調べ、APIを呼び、ファイルを更新し、メールを書き、場合によっては業務システム上の処理まで実行する。\nそのとき問題になるのは、AIが賢いかどうかだけではない。\n本当に問われるのは、次のようなことだ。\n\nその判断は誰の責任として発生したのか\nAIの提案を誰が採用したのか\nどこで承認が必要だったのか\nどこで止められたのか\n止めなかった...",
+        "category": "AI・技術",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "Qwen3.5のアーキテクチャを理解するためにやったこと",
+        "url": "https://zenn.dev/meme_dayo/articles/0980cfce20fcb3",
+        "site": "Zenn(LLM)",
+        "published": "2026-04-24T09:13:56Z",
+        "description": "Qwen3.5は構造的に特殊というか　Qwen 3 Next 80B A3 を大きくマルチモーダルにした感じ\n→mamba寄りの知識がないと理解し難いので\nまず\nhttps://huggingface.co/blog/mlabonne/qwen35\n続いて\nhttps://qiita.com/peony_snow/items/649ecb307cd3b5c10aa7\nようやくこれが読めるレベルに\n...",
+        "category": "AI・技術",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "50のフレームワークを物語に統合する — Learning Journeyシステムの設計",
+        "url": "https://zenn.dev/tenchan0517/articles/novel-learning-journey",
+        "site": "Zenn(LLM)",
+        "published": "2026-04-24T08:14:25Z",
+        "description": "「小説を読んで人生が変わった」を設計で再現する\n誰しも一度くらいは、物語を通じて考え方が変わった経験があるのではないでしょうか。\nドラッカーの本を読んで経営を学んだのではなく、ある登場人物がドラッカー的な判断をする場面に心を動かされて、結果的にマネジメントの本質を理解した。アドラー心理学を教科書で学んだのではなく、小説の中でキャラクターが「課題の分離」を実践する姿を見て、自分の人間関係の捉え方が変...",
+        "category": "AI・技術",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "EC2でLLM推論のコールドスタートをどこまで短縮できるか検証してみた",
+        "url": "https://zenn.dev/fusic/articles/cd741e80366797",
+        "site": "Zenn(LLM)",
+        "published": "2026-04-24T07:42:41Z",
+        "description": "はじめに\nFusicのレオナです。GPU付きEC2でLLMを推論する際、インスタンス起動後にHugging Faceからモデルをダウンロードする構成はよくあります。しかし、モデルサイズが大きくなるにつれて、このダウンロード時間がコールドスタートのボトルネックになります。\n今回は、EC2単体の構成で、モデルの取得元・配置方法を変えることで、どの程度コールドスタートを高速化できるかを実測してみました。...",
+        "category": "AI・技術",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "AIとAIをつなぐ意味のパイプライン設計：会話ではなく、正典・制約・実ファイルで状態を継承する",
+        "url": "https://zenn.dev/yuta_yokoi/articles/91cf894e1072c6",
+        "site": "Zenn(LLM)",
+        "published": "2026-04-24T07:22:36Z",
+        "description": "会話ではなく、正典・制約・実ファイルで状態を継承する\n!\nこの記事は、完結済みのAIO実践シリーズ全6本の「第7弾」ではありません。\n既存シリーズを前提資料として扱い、その上位レイヤーに立つ 独立記事 です。\n\n関連キーワード：#AIO #AI #LLM #MultiAgent #AIエージェント #AIオーケストレーション #PM #アーキテクチャ #プロンプトエンジニアリング #llms.tx...",
+        "category": "AI・技術",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "なぜAIエージェントの再現性はプロンプトだけで解決できないのか？——暗黙知の構造化と「記憶設計」への転換",
+        "url": "https://zenn.dev/memorylakeai/articles/e4e59fec635d98",
+        "site": "Zenn(LLM)",
+        "published": "2026-04-24T03:43:59Z",
+        "description": "はじめに\n「昨日は完璧に動いていたAIエージェントが、今日になったら全く違う挙動をする」\n「別のタスクを頼んだら、さっきまで守っていた出力ルールを忘れてしまった」\nLLMを使ったアプリケーションやAIエージェントを開発していると、誰もが一度はこのような「再現性の欠如」に直面します。この問題に対して、多くの開発チームは「プロンプトの指示が足りないからだ」「もっと詳細に条件を記述しよう」と考え、プロン...",
+        "category": "AI・技術",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "PPOかGRPOか？Explained Varianceが解くRLVRの最大のジレンマ",
+        "url": "https://zenn.dev/lixian/articles/evpo-explained-variance-ppo",
+        "site": "Zenn(LLM)",
+        "published": "2026-04-24T02:29:09Z",
+        "description": "PPOかGRPOか？Explained Varianceが解くRLVRの最大のジレンマ\n\n TL;DR\n\nLLM後段訓練（RLVR）における最大の設計判断の一つは「Criticを使うかどうか」だが、PPO（Criticあり）とGRPO（Criticなし）のどちらが優れるかはタスク依存で、統一見解がない\n北京大学・复旦大学がEVPO（Explained Variance Policy Optimiz...",
+        "category": "AI・技術",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "個人のWikiから組織のナレッジ基盤へ：AIが読める知識を外在化する設計思想",
+        "url": "https://zenn.dev/biscuit/articles/externalize-knowledge-personal-to-org",
+        "site": "Zenn(LLM)",
+        "published": "2026-04-24T01:23:59Z",
+        "description": "はじめに\n以前、Andrej Karpathyが提唱した「LLM Wiki」のアイデアをClaude Codeで実装した話を記事にしました。\nhttps://zenn.dev/biscuit/articles/llm-wiki-claude-code-personal-knowledge-base\nObsidian Web Clipperで素材を集め、Claude Code Skillsで構造化W...",
+        "category": "AI・技術",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "AIガバナンスツールを自作した話 — LLM監査の実装記録",
+        "url": "https://zenn.dev/kei_concierge/articles/zenn-article-010",
+        "site": "Zenn(LLM)",
+        "published": "2026-04-24T01:22:23Z",
+        "description": "AIガバナンスツールを自作した話 — LLM監査の実装記録\n\n なぜ作ろうと思ったか\nLLMをプロダクションで使い始めると、必ずある問題に直面する。\n「なんでこのレスポンス、昨日より精度が落ちてるんだ？」\nログを遡ろうとするが、API呼び出しの記録はAnthropicのコンソールには入力・出力の生データが残っていない。どのリクエストで問題が起きたのか、追跡する手段がない。\n私が最初にこれを感じたの...",
+        "category": "AI・技術",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "『LLM API 価格変動トラッカー 2026』OpenRouterの全モデル価格を日次スナップショットで追いかけるダッシュボードを作った話",
+        "url": "https://zenn.dev/ai_japan_index/articles/030907387843cf",
+        "site": "Zenn(LLM)",
+        "published": "2026-04-23T23:25:53Z",
+        "description": "TL;DR\n\nOpenRouter APIを毎日自動フェッチしてLLM価格の前日比を記録するツールを作った\nバブルチャートで300件超のモデルをInput/Output価格×コンテキスト長の3変数で可視化\n価格帯が$0〜$60+/Mトークンと100倍以上開くため、対数スケールが必須だった\nFree($0)モデルは対数スケール（0は-∞）のため特別処理が必要\nWordPressでは &amp;&am...",
+        "category": "AI・技術",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "Claude Codeに何回言えば覚えるの——CLAUDE.md・auto memory・compact 記憶の生存戦略",
         "url": "https://zenn.dev/helloworld/articles/dce7eb8033aac7",
         "site": "Zenn(LLM)",
         "published": "2026-04-23T22:00:05Z",
@@ -546,16 +706,6 @@
         "site": "Zenn(LLM)",
         "published": "2026-04-23T18:19:23Z",
         "description": "I'm sticking to Moonshot's K2.6 benchmark table for this one, and that's on purpose. Benchmark posts tend to get messy the moment you start mixing vendor tables, different tool settings, different rea...",
-        "category": "AI・技術",
-        "rss_category": "",
-        "image_url": ""
-      },
-      {
-        "title": "AIを「会話ツール」から「知識コンパイラ」に変える：ワークフロー型AIという次のパラダイム",
-        "url": "https://zenn.dev/biscuit/articles/workflow-ai-knowledge-compiler",
-        "site": "Zenn(LLM)",
-        "published": "2026-04-23T14:31:09Z",
-        "description": "はじめに\n以前、Andrej Karpathyが提唱した「LLM Wiki」のアイデアをClaude Codeで実装した話を記事にしました。\nhttps://zenn.dev/biscuit/articles/llm-wiki-claude-code-personal-knowledge-base\nObsidian Web Clipperで素材を集め、Claude Code Skillsで構造化W...",
         "category": "AI・技術",
         "rss_category": "",
         "image_url": ""
@@ -671,41 +821,11 @@
         "image_url": ""
       },
       {
-        "title": "ハーネスエンジニアリングとは何で、何ではないのか 〜作る側のハーネス、使う側のハーネス〜",
-        "url": "https://zenn.dev/r_kaga/articles/329afdc151899f",
-        "site": "Zenn(LLM)",
-        "published": "2026-04-22T23:31:45Z",
-        "description": "先日、Findy主催のハーネスエンジニアリング勉強会で登壇しました。\nhttps://findy.connpass.com/event/388471/\n発表では登壇の中でのすみ分けや尺を考えて絞りましたが、語りきれなかった部分をこの記事にまとめます。\nhttps://speakerdeck.com/rkaga/how-to-approach-harness-engineering\n\nハーネスエンジ...",
-        "category": "AI・技術",
-        "rss_category": "",
-        "image_url": ""
-      },
-      {
-        "title": "Audio AIは「聴く」時代へ。ローカルで動くLALMsをまとめて比較できるOSS「LALMsArena」を作った",
-        "url": "https://zenn.dev/kasahart/articles/kasahart-20260419-audio-llm-arena",
-        "site": "Zenn(LLM)",
-        "published": "2026-04-22T22:00:08Z",
-        "description": "はじめに\nこんにちは。普段は音データを pandas ライクに扱える OSS ライブラリ「wandas」を開発しています。wandas を作る中で Audio AI の世界が急速に変わってきていることに気づき、実際に触ってみました。\nここ最近、Audio AI の世界が急速に変わってきていると感じています。従来の音声認識（ASR）は「音声をテキストに変換して、それをテキスト LLM に渡す」という...",
-        "category": "AI・技術",
-        "rss_category": "",
-        "image_url": ""
-      },
-      {
         "title": "Claude Haiku 4.5 + skill で Opus 4.7 を超えた ― SkillsBench 追試とモデル選定の設計図",
         "url": "https://zenn.dev/ai_arai_ally/articles/20260422-0401-claude-haiku-4-5-skill-opus-4-7",
         "site": "Zenn(LLM)",
         "published": "2026-04-22T19:02:38Z",
         "description": "SkillsBench（84タスク / 7モデル / 7,308試行）で 61.2% → 84.3%、Opus 4.7（80.5%）を上回った。\n数字の意味はこうだった。Opus の出力を読み切る方が疲れる日があり、Haiku + skill に降ろした翌日、読み終えた後に時間が余っていた。\nモデルを替えたんじゃない。モデル選定の判断軸を、1個ずらしただけだ。\nこのノートで分かることSkillsB...",
-        "category": "AI・技術",
-        "rss_category": "",
-        "image_url": ""
-      },
-      {
-        "title": "LLMルーターの自動プロファイル選択をrule-basedでどこまでやるか—CodeRouter v1.6 auto_router",
-        "url": "https://zenn.dev/zephel01/articles/7614011eef3e76",
-        "site": "Zenn(LLM)",
-        "published": "2026-04-22T16:58:38Z",
-        "description": "LLM ルーターの『自動プロファイル選択』を rule-based でどこまでやるか\n\n この記事で扱うこと\nCodeRouter v1.6 で入れた auto_router という feature の、分類器としての設計判断を書きます。やっていること自体は「リクエスト本文を見てプロファイル (≒ どのモデル群に流すか) を自動で選ぶ」という、書いてみれば一行で済む話です。ただこの一行を実装すると...",
         "category": "AI・技術",
         "rss_category": "",
         "image_url": ""
