@@ -1,9 +1,39 @@
 {
   "site": "Zenn(Python)",
-  "last_updated": "2026-04-29T04:06:27.324611",
-  "total_articles": 3691,
+  "last_updated": "2026-04-29T06:36:00.440879",
+  "total_articles": 3695,
   "articles_by_date": {
     "本日": [
+      {
+        "title": "AI バッチ生成で「途中まで成功した分の返金」を漏らさない設計 — 独立 DB セッションで失敗を必ず記録する",
+        "url": "https://zenn.dev/zoetaka38/articles/535330c1e5ba88",
+        "site": "Zenn(Python)",
+        "published": "2026-04-28T23:32:53Z",
+        "description": "はじめに\n「PRD を 1 機能あたり 1 クレジットで自動生成する」という機能を作るとき、5 機能まとめて生成するリクエストが来たらどう課金するか、迷うところです。\nナイーブに「1 個生成するたびに 1 クレジット減らす」と書くと、\n\n3 個目で AI 呼び出しが失敗したらクレジット 3 個分が宙に浮く\n例外を握りつぶせば返金漏れ、握りつぶさないと既に成功した 2 個分まで巻き戻される\n\n…とい...",
+        "category": "開発",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "Sentry エラーを Claude API で自動修正してみたら、3-Retry が効いた話",
+        "url": "https://zenn.dev/zoetaka38/articles/82c630d860462f",
+        "site": "Zenn(Python)",
+        "published": "2026-04-28T23:12:34Z",
+        "description": "はじめに\n本番環境のエラー対応、しんどくないですか。\n筆者は Corevice という会社で、社内向けの SaaS をいくつか運用しています。Sentry に通知が飛んできて、Slack で alerts チャンネルが赤くなり、誰かがアサインされて、再現環境を立ち上げて、原因を特定して、修正 PR を出して、レビューして、デプロイする。1 件あたりの平均所要時間は、軽いものでも 30 分から 1 ...",
+        "category": "開発",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "GMO Coin APIで仮想通貨自動売買Botを動かす仕組み：Donchianチャネル戦略の実例",
+        "url": "https://zenn.dev/ai_jidoka_lab/articles/zenn_bot_basics_20260425",
+        "site": "Zenn(Python)",
+        "published": "2026-04-28T23:00:12Z",
+        "description": "GMO Coin APIで仮想通貨自動売買Botを動かす仕組み：Donchianチャネル戦略の実例\n仮想通貨の自動売買Botに興味はあるけれど、「どこから始めればいいのか分からない」という方は多いと思います。\nこの記事では、GMO Coin APIを使った自動売買Botの基本的な仕組みを、実際に稼働中のDonchianチャネル戦略を例にとって解説します。Python初〜中級者を対象に、概念とコード...",
+        "category": "開発",
+        "rss_category": "",
+        "image_url": ""
+      },
       {
         "title": "Pythonで操る量子化学計算ソフト「Psi4」活用ガイド　４　振動解析",
         "url": "https://zenn.dev/pincolo/articles/bcd05feaf1e8bc",
@@ -172,16 +202,6 @@
         "site": "Zenn(Python)",
         "published": "2026-04-27T22:00:07Z",
         "description": "はじめに\n本記事は「Pythonでデータを分析するPandas入門」シリーズの第4回です．\n本シリーズでは， Pythonのデータ分析ライブラリである Pandas を使って，「データを扱い，分析できる状態」になること を目標としています．\n第3回では，データの抽出（loc/iloc・条件フィルタリング）を説明しました．\n第4回では，データ分析で避けて通れない， 欠損値(NaN)の処理 を説明しま...",
-        "category": "開発",
-        "rss_category": "",
-        "image_url": ""
-      },
-      {
-        "title": "Azure ML パイプラインコンポーネントバッチデプロイで CLI から Python SDK v2 に移行したらハマった話",
-        "url": "https://zenn.dev/aklzo/articles/0c48026d8a3c50",
-        "site": "Zenn(Python)",
-        "published": "2026-04-27T17:11:42Z",
-        "description": "!\nこの記事でわかること\n\n\naz ml batch-deployment create で動いていた @latest 自動解決が、Python SDK v2 の PipelineComponentBatchDeployment では 2 回目以降動かなくなる原因\n原因はコンポーネントが「匿名」か「名前付き」かによる内部挙動の違い（CLI 固有の機能差ではない）\nSDK で同じ挙動を再現する 3 ...",
         "category": "開発",
         "rss_category": "",
         "image_url": ""
@@ -381,6 +401,36 @@
     ],
     "2026-04": [
       {
+        "title": "AI バッチ生成で「途中まで成功した分の返金」を漏らさない設計 — 独立 DB セッションで失敗を必ず記録する",
+        "url": "https://zenn.dev/zoetaka38/articles/535330c1e5ba88",
+        "site": "Zenn(Python)",
+        "published": "2026-04-28T23:32:53Z",
+        "description": "はじめに\n「PRD を 1 機能あたり 1 クレジットで自動生成する」という機能を作るとき、5 機能まとめて生成するリクエストが来たらどう課金するか、迷うところです。\nナイーブに「1 個生成するたびに 1 クレジット減らす」と書くと、\n\n3 個目で AI 呼び出しが失敗したらクレジット 3 個分が宙に浮く\n例外を握りつぶせば返金漏れ、握りつぶさないと既に成功した 2 個分まで巻き戻される\n\n…とい...",
+        "category": "開発",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "Sentry エラーを Claude API で自動修正してみたら、3-Retry が効いた話",
+        "url": "https://zenn.dev/zoetaka38/articles/82c630d860462f",
+        "site": "Zenn(Python)",
+        "published": "2026-04-28T23:12:34Z",
+        "description": "はじめに\n本番環境のエラー対応、しんどくないですか。\n筆者は Corevice という会社で、社内向けの SaaS をいくつか運用しています。Sentry に通知が飛んできて、Slack で alerts チャンネルが赤くなり、誰かがアサインされて、再現環境を立ち上げて、原因を特定して、修正 PR を出して、レビューして、デプロイする。1 件あたりの平均所要時間は、軽いものでも 30 分から 1 ...",
+        "category": "開発",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "GMO Coin APIで仮想通貨自動売買Botを動かす仕組み：Donchianチャネル戦略の実例",
+        "url": "https://zenn.dev/ai_jidoka_lab/articles/zenn_bot_basics_20260425",
+        "site": "Zenn(Python)",
+        "published": "2026-04-28T23:00:12Z",
+        "description": "GMO Coin APIで仮想通貨自動売買Botを動かす仕組み：Donchianチャネル戦略の実例\n仮想通貨の自動売買Botに興味はあるけれど、「どこから始めればいいのか分からない」という方は多いと思います。\nこの記事では、GMO Coin APIを使った自動売買Botの基本的な仕組みを、実際に稼働中のDonchianチャネル戦略を例にとって解説します。Python初〜中級者を対象に、概念とコード...",
+        "category": "開発",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
         "title": "Pythonで操る量子化学計算ソフト「Psi4」活用ガイド　４　振動解析",
         "url": "https://zenn.dev/pincolo/articles/bcd05feaf1e8bc",
         "site": "Zenn(Python)",
@@ -546,16 +596,6 @@
         "site": "Zenn(Python)",
         "published": "2026-04-27T22:00:07Z",
         "description": "はじめに\n本記事は「Pythonでデータを分析するPandas入門」シリーズの第4回です．\n本シリーズでは， Pythonのデータ分析ライブラリである Pandas を使って，「データを扱い，分析できる状態」になること を目標としています．\n第3回では，データの抽出（loc/iloc・条件フィルタリング）を説明しました．\n第4回では，データ分析で避けて通れない， 欠損値(NaN)の処理 を説明しま...",
-        "category": "開発",
-        "rss_category": "",
-        "image_url": ""
-      },
-      {
-        "title": "Azure ML パイプラインコンポーネントバッチデプロイで CLI から Python SDK v2 に移行したらハマった話",
-        "url": "https://zenn.dev/aklzo/articles/0c48026d8a3c50",
-        "site": "Zenn(Python)",
-        "published": "2026-04-27T17:11:42Z",
-        "description": "!\nこの記事でわかること\n\n\naz ml batch-deployment create で動いていた @latest 自動解決が、Python SDK v2 の PipelineComponentBatchDeployment では 2 回目以降動かなくなる原因\n原因はコンポーネントが「匿名」か「名前付き」かによる内部挙動の違い（CLI 固有の機能差ではない）\nSDK で同じ挙動を再現する 3 ...",
         "category": "開発",
         "rss_category": "",
         "image_url": ""
