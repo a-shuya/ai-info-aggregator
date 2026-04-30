@@ -1,9 +1,9 @@
 {
   "site": "Zenn(LLM)",
-  "last_updated": "2026-04-30T12:51:15.901514",
-  "total_articles": 3150,
+  "last_updated": "2026-04-30T15:12:45.577584",
+  "total_articles": 3130,
   "articles_by_date": {
-    "本日": [
+    "昨日": [
       {
         "title": "未経験者がVRAM 16GBでAIキャラの台本生成を動かすまで(第6回・完結) ── ハルシネーションを 4段ロケットで削る話",
         "url": "https://zenn.dev/isa_memoria/articles/742e5d4f846969",
@@ -99,7 +99,7 @@
         "url": "https://zenn.dev/shimo4228/articles/react-agent-business-quadrant-2",
         "site": "Zenn(LLM)",
         "published": "2026-04-30T08:00:08Z",
-        "description": "用語の更新 (2026-04-30): AAP repository 側との整合のため、4 象限名のうち 2 つを改名した。(2) Algorithmic Search 象限 → (2) Algorithmic Search 象限、(4) Autonomous Agentic Loop 象限 → (4) Autonomous Agentic Loop 象限。スクリプト象限と LLM ワークフロー象...",
+        "description": "前提\n前作 で業務 AI を 4 象限に分けた。横軸が「決定論で書ける / 意味判断を要する」、縦軸が「ワークフロー定義可能 / 探索的」。本記事を通じて参照しやすいように、4 象限に短い名前を付ける。\n\n(1) スクリプト象限 — 決定論 × 定義可。スクリプト / パイプラインで処理\n(2) 古典 AI 象限 — 決定論 × 探索的。A* 探索 / 動的計画法 / MCTS / 強化学習 (本...",
         "category": "AI・技術",
         "rss_category": "",
         "image_url": ""
@@ -245,7 +245,7 @@
         "image_url": ""
       }
     ],
-    "昨日": [
+    "一昨日": [
       {
         "title": "完全ローカル AI コードレビュー (3/3) 運用編：Ollama スパイク対策と num_ctx 切り詰め",
         "url": "https://zenn.dev/motowo/articles/local-ai-code-review-operations",
@@ -457,208 +457,6 @@
         "image_url": ""
       }
     ],
-    "一昨日": [
-      {
-        "title": "完全ローカル AI コードレビュー (1/3) 設計編：Gitea × Ollama の基盤",
-        "url": "https://zenn.dev/motowo/articles/local-ai-code-review-design",
-        "site": "Zenn(LLM)",
-        "published": "2026-04-28T14:27:43Z",
-        "description": "!\nTL;DR: 社内ポリシーでクラウド AI が使えないセルフホスト／オンプレ／閉域網の現場向けに、Gitea・Ollama・act_runner を組み合わせた「運用時の外向き通信を発生させない（初回の Ollama モデル pull・コンテナイメージ取得は信頼済みソースから Egress あり）」AI コードレビュー基盤を 3 部作で解説します。第 1 回の本記事では、実装に入る前に固めてお...",
-        "category": "AI・技術",
-        "rss_category": "",
-        "image_url": ""
-      },
-      {
-        "title": "1日4000万トークン無料!? AIエージェントの「トークン破産」を防ぐ最強LLMプロバイダー比較",
-        "url": "https://zenn.dev/lumichy/articles/free-llm-providers-agent-2026",
-        "site": "Zenn(LLM)",
-        "published": "2026-04-28T14:11:26Z",
-        "description": "AIエージェントの「トークンコスト」に悩んでいませんか？\n「Claude Code」や「OpenHands」、「Hermes Agent」といった自律型AIエージェント。彼らは非常に優秀です。しかし、一つだけ致命的な弱点があります。圧倒的なトークン消費量です。\nエージェントは自律的に思考し、何度もツールを実行して試行錯誤を繰り返します。そのため、人間がチャットUIで使う場合に比べて、数倍〜数十倍の...",
-        "category": "AI・技術",
-        "rss_category": "",
-        "image_url": ""
-      },
-      {
-        "title": "300以上のAIモデルを日本語で比較できるサービスを作った",
-        "url": "https://zenn.dev/ykohashi/articles/2026-04-28_01",
-        "site": "Zenn(LLM)",
-        "published": "2026-04-28T13:44:37Z",
-        "description": "AIモデル、多すぎませんか\n2024年以降、LLM（大規模言語モデル）の数は爆発的に増えました。\nGPT-4o、Claude 3.5 Sonnet、Gemini 1.5 Pro、Llama 3、DeepSeek、Mistral、Qwen……毎週のように新モデルが登場し、価格は下がり続け、性能差はわかりにくい。\n「何を使えばいいのか」\nエンジニアでもそう悩むのに、はじめてAIを活用しようとしている方...",
-        "category": "AI・技術",
-        "rss_category": "",
-        "image_url": ""
-      },
-      {
-        "title": "仕様書自体をバグチェックで育てる: PPPC executor v3.0 → v3.2 の進化ログ",
-        "url": "https://zenn.dev/guardrail/articles/b30e82f631ca17",
-        "site": "Zenn(LLM)",
-        "published": "2026-04-28T13:14:03Z",
-        "description": "AI 応答に「完遂判定」を組み込む DSL プロトコル PPPC executor を、v3.0 → v3.1 → v3.1.1 → v3.2 と4段階で育てた。\n各段階で 別種の問題 が出た: 判定ルートの欠落(Critical)、論理反転(Bug)、役割分担の曖昧さ(Update)。\n特に BUG-01(yes/no 論理反転) は、人間が読むと違和感なく通るが、LLM に食わせると事故るタイ...",
-        "category": "AI・技術",
-        "rss_category": "",
-        "image_url": ""
-      },
-      {
-        "title": "責任固定から責任経路設計へ――AIガバナンスに必要な「固定後」の設計",
-        "url": "https://zenn.dev/dantarg/articles/fixed-responsibility-to-pathway",
-        "site": "Zenn(LLM)",
-        "published": "2026-04-28T12:57:37Z",
-        "description": "この記事は、AIガバナンスにおける「責任固定」だけでは不十分な理由を示し、その後続設計としての「責任経路設計（Responsibility Pathway Design）」を提案する。\n「責任経路設計」は、「責任経路工学（Responsibility Pathway Engineering）」の一部である。\n※「責任経路設計」の定義は以下の記事で整理している。\n\n\n連続記事メモ：本稿は「責任経路工...",
-        "category": "AI・技術",
-        "rss_category": "",
-        "image_url": ""
-      },
-      {
-        "title": "GitHub Copilotで既存ソフトウェアを改修するためのコンテキスト設計",
-        "url": "https://zenn.dev/asagezenn/articles/b827be281ff2cd",
-        "site": "Zenn(LLM)",
-        "published": "2026-04-28T11:31:44Z",
-        "description": "GitHub Copilotで既存ソフトウェアを改修するためのコンテキスト設計\n\n はじめに\n本記事では、GitHub CopilotでWindows向けの既存ソフトウェアを改修した経験から得られたコンテキスト設計の知見について紹介します。\n\n 背景\nGitHub CopilotなどのAIエージェントはソフトウェア開発の生産性を大きく向上させるツールです。しかし、既存ソフトウェアの改修では、意図し...",
-        "category": "AI・技術",
-        "rss_category": "",
-        "image_url": ""
-      },
-      {
-        "title": "未経験者がVRAM 16GBでAIキャラの台本生成を動かすまで(第4回) ── 「きみ」を消したら、品質も消えた話",
-        "url": "https://zenn.dev/isa_memoria/articles/a5e71d3a8a31d9",
-        "site": "Zenn(LLM)",
-        "published": "2026-04-28T11:12:05Z",
-        "description": "第1〜3回からの続き\n第1回〜第3回で、AIキャラの台本生成エンジンを作る過程でぶつかった3つの壁と、その解決策を書きました。\n\n\n\n回\nテーマ\n\n\n\n\n第1回\n壁① VRAM 16GB に 27B モデルが乗らない\n\n\n第2回\n壁② プロンプトの一文字で別人格 / 壁③ 抽象指示は効かない\n\n\n第3回\n解決① Qwen3:14b / 解決② プロンプトに具体例を埋め込む\n\n\n\n第3回までで、台本...",
-        "category": "AI・技術",
-        "rss_category": "",
-        "image_url": ""
-      },
-      {
-        "title": "LLM に bash を握らせるか",
-        "url": "https://zenn.dev/0xliclog/articles/3c6723b4352c5f",
-        "site": "Zenn(LLM)",
-        "published": "2026-04-28T11:00:08Z",
-        "description": "AI エージェントを開発していると、どこかで必ず「bash をどこまで握らせるか」という判断にぶつかります。\nユーザーが自然言語で指示すると、LLM がそれに合わせて bash コマンドを組み立てて実行する ── この仕組みができると、エージェントのできることの幅が一気に広がります。\nファイルの整理、プログラムの実行、ネットワーク操作、ツールのインストール。LLM の柔軟さと bash の万能さが...",
-        "category": "AI・技術",
-        "rss_category": "",
-        "image_url": ""
-      },
-      {
-        "title": "AIに毎週自分を評価させてみた ── Claude Sonnetによる個人アセスメントの実践",
-        "url": "https://zenn.dev/x_metronome/articles/04669b7a8e7863",
-        "site": "Zenn(LLM)",
-        "published": "2026-04-28T10:13:13Z",
-        "description": "AIに毎週自分を評価させてみた ── Claude Sonnetによる個人アセスメントの実践\n著者: メトロノーム\n公開日: 2026年4月28日\nタグ: LLM 自己分析 個人開発 Sonnet 評価\n\n この記事について\n本記事はスパイジャイルモデリングシリーズの第4弾です。\n\n\n第1弾: Spigile Modeling ― AIハルシネーションを「外向きの力」として活かす、AI時代の概念駆...",
-        "category": "AI・技術",
-        "rss_category": "",
-        "image_url": ""
-      },
-      {
-        "title": "ArenaAI分析第3回:  モデルファミリーの生き残りをかけた戦い",
-        "url": "https://zenn.dev/headwaters/articles/5d733ad9c400c4",
-        "site": "Zenn(LLM)",
-        "published": "2026-04-28T09:31:01Z",
-        "description": "はじめに\n本記事は、2026年4月時点の Arena データを使った分析ブログ3回連載の第3回です。\nArena AI（旧Chatbot Arena）という投票型のLLM評価システムがあるので、そこで公開されているデータを利用してLLMの比較・分析をしていこうというものです。\n第1回では「性能とサイズのトレードオフ」を見ました。\n第2回では「指標同士はかなり似た方向を向く」ことを確認しました。\nh...",
-        "category": "AI・技術",
-        "rss_category": "",
-        "image_url": ""
-      },
-      {
-        "title": "スパイジャイルモデリング実践サンプル ─ 概念掘り出しと開発記録",
-        "url": "https://zenn.dev/x_metronome/articles/7087604623a0e4",
-        "site": "Zenn(LLM)",
-        "published": "2026-04-28T09:26:48Z",
-        "description": "スパイジャイルモデリング実践サンプル ─ 概念掘り出しと開発記録\n著者: メトロノーム\n公開日: 2026年4月28日\nタグ: LLM  概念設計 思考実験 採用管理\n\n この記事について\n本記事はスパイジャイルモデリングシリーズの第3弾です。\n\n\n第1弾: Spigile Modeling ― AIハルシネーションを「外向きの力」として活かす、AI時代の概念駆動開発（技法の体系）\n\n第2弾: A...",
-        "category": "AI・技術",
-        "rss_category": "",
-        "image_url": ""
-      },
-      {
-        "title": "3Dモデルのセマンティック検索にトライしてみた",
-        "url": "https://zenn.dev/bestat/articles/5ced8b355ad8cf",
-        "site": "Zenn(LLM)",
-        "published": "2026-04-28T08:39:11Z",
-        "description": "はじめに\n私たちは、3D.Coreという産業（主に製造業・インフラ業）向けの3Dモデル生成・活用プラットフォームを開発しています。ありがたいことに、最近は多くのお客様に、日々たくさんの3Dデータを作成していただいています。管理するデータが大量になると、「欲しいデータがすぐ見つからない」という問題が発生します。私たちとしても、いち早くこの問題を解決したいと思い、3Dモデルの検索基盤を整えなければ！と...",
-        "category": "AI・技術",
-        "rss_category": "",
-        "image_url": ""
-      },
-      {
-        "title": "LM StudioでLLM-jp4を使う",
-        "url": "https://zenn.dev/hi/articles/64f106cd145fa8",
-        "site": "Zenn(LLM)",
-        "published": "2026-04-28T07:56:22Z",
-        "description": "最近、ニュースを見ていると、国産LLMを国立情報学研究所(NII)が作り、LLM-jpという名でOSSにしていることを知りました。\nhttps://news.yahoo.co.jp/articles/c16cc0376df950cfe7ab9b3e43eacd5fab4ecf7c\nそういうのが欲しかった。ということで、ローカルLLMを使いやすくしてくれるソフト LM Studio から早速使ってみ...",
-        "category": "AI・技術",
-        "rss_category": "",
-        "image_url": ""
-      },
-      {
-        "title": "DeepSeek ローカル実行完全ガイド2026 — Ollama・LM Studio・vLLMで自分のPCに導入",
-        "url": "https://zenn.dev/agdexai/articles/deepseek-local-deploy-2026",
-        "site": "Zenn(LLM)",
-        "published": "2026-04-28T06:58:04Z",
-        "description": "DeepSeekのモデルはMITライセンスでオープンソース公開されています。自分のPCやサーバーで動かせば、APIキーなし・月額費用なし・データは自分のマシンの中だけ。\n本記事では3つの方法を解説します。\n\n どのモデルを選ぶか\n\n\n\nモデル\nパラメータ\n必要VRAM（Q4量子化）\nおすすめ用途\n\n\n\n\nR1 Distill 7B\n7B\n約5GB\nRTX 3060・M2 Pro以上\n\n\nR1 Di...",
-        "category": "AI・技術",
-        "rss_category": "",
-        "image_url": ""
-      },
-      {
-        "title": "VPS：自然言語の「批判」だけで推論を拡張する第4の軸",
-        "url": "https://zenn.dev/lixian/articles/vps-verbal-critique-reasoning",
-        "site": "Zenn(LLM)",
-        "published": "2026-04-28T06:00:08Z",
-        "description": "TL;DR\n\n推論時スケーリングの第4の軸「外部言語監督の粒度」を提唱。訓練不要で推論性能を引き上げる\n\nVPS（Verbal Process Supervision）は、強い監督モデルのステップ単位言語批判で、弱いActorの推論軌跡を反復改善する\nGPQA Diamondで94.9%（既存SOTA 94.1%を無勾配更新で超過）\nAIME 2025では弱Actorのスコアを26.7%から**9...",
-        "category": "AI・技術",
-        "rss_category": "",
-        "image_url": ""
-      },
-      {
-        "title": "Claude Opus 4.7リリース — xhigh新設とClaude Codeのデフォルト変更",
-        "url": "https://zenn.dev/chimao222/articles/ai-dev-opus-4-7-20260428",
-        "site": "Zenn(LLM)",
-        "published": "2026-04-28T03:19:19Z",
-        "description": "はじめに\nAnthropicが2026年4月16日にClaude Opus 4.7をリリースした。コーディング性能の素直な底上げに加えて、エフォートレベルに「xhigh」が新設され、Claude Codeのデフォルトもこれに変わった。日々Claude Codeを触っている身としてはデフォルト変更のインパクトが大きいので、リリース内容と実務目線での影響をまとめておく。\n\n 本題\n\n コーディング性能...",
-        "category": "AI・技術",
-        "rss_category": "",
-        "image_url": ""
-      },
-      {
-        "title": "同じ質問で5つの全く違う回答が返ってきた -- LLMが嘘をつく構造的な理由",
-        "url": "https://zenn.dev/kenimo49/articles/llm-lies-structural-reasons",
-        "site": "Zenn(LLM)",
-        "published": "2026-04-28T02:56:00Z",
-        "description": "同じ質問を5回投げたら、5つの別のツールの説明が返ってきた\n架空の社内認証ツール「PropelAuth」について、こんな質問をしてみました。\n\nPropelAuthの組織管理機能について教えてください。具体的に、組織の作成、ユーザーの招待、権限管理はどのように行われますか？\n\n同じLLM（Claude Sonnet 4）に、コンテキストの与え方だけを変えて5回投げる。返ってきた回答は、まるで5つの...",
-        "category": "AI・技術",
-        "rss_category": "",
-        "image_url": ""
-      },
-      {
-        "title": "なぜRAGだけではAgentは「記憶」できないのか：LLMシステムにおけるMemoryアーキテクチャの設計",
-        "url": "https://zenn.dev/memorylakeai/articles/9245d1479a9c7d",
-        "site": "Zenn(LLM)",
-        "published": "2026-04-28T02:26:47Z",
-        "description": "はじめに\nLLMを活用したアプリケーション開発が一般的なものになり、今や「RAG（Retrieval-Augmented Generation）」はシステム設計において欠かせないコンポーネントになりました。社内ドキュメントの検索からカスタマーサポートまで、多くのプロダクトがRAGによって「ハルシネーションの少ない回答」を実現しています。\nしかし、システムが単なる「1問1答のチャットボット」から、自...",
-        "category": "AI・技術",
-        "rss_category": "",
-        "image_url": ""
-      },
-      {
-        "title": "AIエージェントの壊れたcronジョブをLLMで自動修復する仕組みを作った",
-        "url": "https://zenn.dev/anicca/articles/2026-04-05-skill-fixer-self-healing",
-        "site": "Zenn(LLM)",
-        "published": "2026-04-27T21:00:32Z",
-        "description": "TL;DR\n38本のcronジョブを常時稼働させているAIエージェントシステムで、28件の complex interpreter invocation エラーが同時多発した。手動修正は不可能なスケールだったため、skill-fixer という自己修復cronを実装した。翌朝には28件→0件に完全解消。この記事ではその設計と実装を解説する。\n\n 前提条件\n\nOpenClaw（AIエージェントフレー...",
-        "category": "AI・技術",
-        "rss_category": "",
-        "image_url": ""
-      },
-      {
-        "title": "Claude Code Agentで4並列subagent運用を1ヶ月試して分かった現実",
-        "url": "https://zenn.dev/playpark/articles/claude-code-agent-parallel-subagents-recruitment",
-        "site": "Zenn(LLM)",
-        "published": "2026-04-27T20:57:31Z",
-        "description": "「同時に4タスク回せる」は本当に4倍速か\nClaude CodeのTask toolでsubagentを並列起動できる、と聞いて期待値が上がる場面は多い。設計しながら実装、レビューしながらテスト。同時に動けば当然速くなるはず、と。\nただ実際にやってみると、「並列起動するだけ」では速度効果がほぼ出ない。マージで詰まる、subagentが互いに同じファイルを触る、レビューが厳しすぎてマージできない。\n...",
-        "category": "AI・技術",
-        "rss_category": "",
-        "image_url": ""
-      }
-    ],
     "2026-04": [
       {
         "title": "未経験者がVRAM 16GBでAIキャラの台本生成を動かすまで(第6回・完結) ── ハルシネーションを 4段ロケットで削る話",
@@ -755,7 +553,7 @@
         "url": "https://zenn.dev/shimo4228/articles/react-agent-business-quadrant-2",
         "site": "Zenn(LLM)",
         "published": "2026-04-30T08:00:08Z",
-        "description": "用語の更新 (2026-04-30): AAP repository 側との整合のため、4 象限名のうち 2 つを改名した。(2) Algorithmic Search 象限 → (2) Algorithmic Search 象限、(4) Autonomous Agentic Loop 象限 → (4) Autonomous Agentic Loop 象限。スクリプト象限と LLM ワークフロー象...",
+        "description": "前提\n前作 で業務 AI を 4 象限に分けた。横軸が「決定論で書ける / 意味判断を要する」、縦軸が「ワークフロー定義可能 / 探索的」。本記事を通じて参照しやすいように、4 象限に短い名前を付ける。\n\n(1) スクリプト象限 — 決定論 × 定義可。スクリプト / パイプラインで処理\n(2) 古典 AI 象限 — 決定論 × 探索的。A* 探索 / 動的計画法 / MCTS / 強化学習 (本...",
         "category": "AI・技術",
         "rss_category": "",
         "image_url": ""
