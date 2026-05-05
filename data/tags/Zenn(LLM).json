@@ -1,9 +1,9 @@
 {
   "site": "Zenn(LLM)",
-  "last_updated": "2026-05-05T14:22:17.050201",
-  "total_articles": 3220,
+  "last_updated": "2026-05-05T16:11:08.530006",
+  "total_articles": 3207,
   "articles_by_date": {
-    "本日": [
+    "昨日": [
       {
         "title": "正確性評価がLLMのハルシネーションを招く：Nature掲載論文が暴くインセンティブ構造",
         "url": "https://zenn.dev/lixian/articles/llm-hallucination-incentive-nature",
@@ -195,13 +195,33 @@
         "image_url": ""
       }
     ],
-    "昨日": [
+    "一昨日": [
       {
         "title": "LLMの論理遮断プロトコル『1bit_Lie < Unknown』によるハルシネーション完全排除の試み",
         "url": "https://zenn.dev/hinaena/articles/86164e9439f577",
         "site": "Zenn(LLM)",
         "published": "2026-05-04T14:50:05Z",
         "description": "DESIGN INTENT\n本記事で解説する手法は、大規模言語モデル（LLM）における『推論プロセスの論理的完全性』を担保するための、実験的アーキテクチャ『1bit_Lie &lt; Unknown』の標準実装です。本プロトコルは、AIの自律的な思考領域を制御し、ハルシネーション（AIの嘘）を論理的物理的に遮断することを目的としています。\n\n\n 課題：確率論的な「AIの忖度」\n現在のLLMは、ユー...",
+        "category": "AI・技術",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "OpenHarness：1.1万行のPythonでAI Agentの「黒箱」を丸裸にする",
+        "url": "https://zenn.dev/lumichy/articles/openharness-agent-architecture-2026",
+        "site": "Zenn(LLM)",
+        "published": "2026-05-04T13:39:52Z",
+        "description": "AI Agentのコードを読んだことがありますか？\nClaude CodeやCodingAgent系のツールは確かにすごい。コードを書き、テストを走らせ、自律的にバグを直してくれる。でも「中で何が起きているのか」を理解しようと思ってソースを覗くと、そこには51万行のTypeScriptと1,884個のファイルが待ち受けている。正直、3分で閉じました。\n香港大学のHKUDSチームが公開したOpenH...",
+        "category": "AI・技術",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "マルチモーダル寄りの拡張可能コミュニケーションアバターを作ってみた（Unity × Python × LLM × 音声）",
+        "url": "https://zenn.dev/matsu8/articles/cef77c931c52fa",
+        "site": "Zenn(LLM)",
+        "published": "2026-05-04T13:06:11Z",
+        "description": "はじめに\n\n 自己紹介\nこんにちは。初投稿です。自己紹介から始めますが、自分は投稿時点で大学院の修士1年の22歳で、大学の研究の傍ら、趣味で色々なものを作っています。\n自分の究極のモチベーションとして、人間の思考が豊かな世界であってほしいというものがあります。そのために、AIは人間の思考を支えるものであってほしいと思っています。というのも、ここ15年ほどでスマホが一人一台必須になったように、これか...",
         "category": "AI・技術",
         "rss_category": "",
         "image_url": ""
@@ -342,178 +362,6 @@
         "site": "Zenn(LLM)",
         "published": "2026-05-03T16:30:46Z",
         "description": "はじめに\n「LLMに自分のデータを読ませたい」「LLMからAPIを呼び出したい」──そう思ったとき、これまでは用途ごとに個別実装が必要でした。\nMCP（Model Context Protocol） はその問題を解決するオープンプロトコルです。Anthropicが2024年11月に公開し、2026年現在はOpenAI・Google・Microsoftも採用。LLMとあらゆる外部ツール・データソース...",
-        "category": "AI・技術",
-        "rss_category": "",
-        "image_url": ""
-      }
-    ],
-    "一昨日": [
-      {
-        "title": "異なる LLM によるコードレビューでバイアスを軽減する",
-        "url": "https://zenn.dev/beingish/articles/4c0d999411ecee",
-        "site": "Zenn(LLM)",
-        "published": "2026-05-03T14:15:20Z",
-        "description": "LLM をコードレビュアーとして使う際、注意点がある。次は LLM as a Judge 、つまり LLM を評価に使った際、観測されたバイアスの一覧だ。\n\n\n\n名前\n説明\n\n\n\n\nPosition\n評価対象の提示順序を前後させると評価が変わる\n\n\nVerbosity\n内容の質を問わず長い回答を良いものとする\n\n\nCompassion-Fade\n評価対象を生成したモデル名を教えると評価が変わる\n\n...",
-        "category": "AI・技術",
-        "rss_category": "",
-        "image_url": ""
-      },
-      {
-        "title": "LLM-jp-4 32B Thinking を本家学習コーパスでキャリブレーションして量子化したGGUFを公開しました",
-        "url": "https://zenn.dev/suzumura_lab/articles/0a1bdb04ec87ca",
-        "site": "Zenn(LLM)",
-        "published": "2026-05-03T12:22:49Z",
-        "description": "この記事について\nこんにちは、東京大学鈴村研究室でインフラエンジニアとしてお手伝いさせていただいている、福田と申します。\n本記事では、LLM-jpプロジェクトのllm-jp-4-32b-a3b-thinkingを本家事前学習コーパスllm-jp-corpus-v4でimatrixキャリブレーションし、自前で量子化したGGUFをHugging Faceで公開しましたので、その特徴と使い方をご紹介しま...",
-        "category": "AI・技術",
-        "rss_category": "",
-        "image_url": ""
-      },
-      {
-        "title": "Claude Codeでキャリア戦略レポートの作り方を自動化した話",
-        "url": "https://zenn.dev/taroh_7/articles/2026-04-18-ai-career-strategy-multiagent",
-        "site": "Zenn(LLM)",
-        "published": "2026-05-03T09:19:31Z",
-        "description": "はじめに\nAIにキャリア相談をすると、だいたい前向きな答えが返ってくる。\nそれ自体は悪くない。選択肢を広げてくれるし、背中も押してくれる。ただ、キャリア戦略として使うなら、前向きなだけでは少し危ない。市場の現実、スキル習得にかかる時間、継続できる行動量、シナリオの上振れと下振れまで見たい。\nそこで今回は、Claude Codeで複数のエージェントを並列に動かし、自分向けのキャリア戦略レポートを作っ...",
-        "category": "AI・技術",
-        "rss_category": "",
-        "image_url": ""
-      },
-      {
-        "title": "LLM APIコスト削減の落とし穴——開発現場で繰り返される7つのアンチパターンと対処法",
-        "url": "https://zenn.dev/kei_concierge/articles/llm-api-cost-antipatterns-2026",
-        "site": "Zenn(LLM)",
-        "published": "2026-05-03T09:05:49Z",
-        "description": "LLM APIコスト削減の落とし穴——開発現場で繰り返される7つのアンチパターンと対処法\n\nこのシリーズについて\n\nパート1：Batch API・キャッシュ・モデル選定で月次コストを半減する実装ガイド\n\nパート2（本記事）：開発現場で繰り返される7つのアンチパターン\nパート3：企業規模別の実装ケーススタディ\n\n\n\nLLM APIを導入した直後は「コントロールできている」という感覚がある。\nところが...",
-        "category": "AI・技術",
-        "rss_category": "",
-        "image_url": ""
-      },
-      {
-        "title": "源内（デジタル庁ガバメントAI）OSS版を技術解剖 — AWS/Azure/GCP 3クラウド対応の行政RAG基盤",
-        "url": "https://zenn.dev/trailfusionai/articles/ai-news-20260427162443-52dc0e",
-        "site": "Zenn(LLM)",
-        "published": "2026-05-03T09:04:50Z",
-        "description": "概要\nデジタル庁が 政府職員向け生成AI基盤「源内（Genai）」 を 2026年4月24日に OSS 公開しました。GitHub の digital-go-jp/genai-web（TypeScript・359⭐）と digital-go-jp/genai-ai-api（Python・220⭐）の2リポジトリで、いずれも MIT License + CC BY 4.0。\n本稿は Zenn 読者向...",
-        "category": "AI・技術",
-        "rss_category": "",
-        "image_url": ""
-      },
-      {
-        "title": "Claude Code Security Basics — permissions/hooks/sandbox の3層補完設計",
-        "url": "https://zenn.dev/trailfusionai/articles/ai-news-20260427071327-7b032f",
-        "site": "Zenn(LLM)",
-        "published": "2026-05-03T09:04:50Z",
-        "description": "概要\n2026年4月23日、AWS クラウド事業本部の川原征大さんが Claude Code Security Basics（62スライド）を公開しました。3日で 24,000 views。\nスライドの最大の貢献は、Claude Code の安全運用を「抑止 / 制限 / 隔離」の3軸で整理したことです。本稿ではこのフレームワークを Zenn 読者向けに体系化し、permissions / hoo...",
-        "category": "AI・技術",
-        "rss_category": "",
-        "image_url": ""
-      },
-      {
-        "title": "Cognee 公式 Claude Code プラグインと自作ツールキットを比較してみた",
-        "url": "https://zenn.dev/japannomu/articles/20260503_cognee-official-vs-toolkit",
-        "site": "Zenn(LLM)",
-        "published": "2026-05-03T08:33:29Z",
-        "description": "はじめに\n先日、Claude Code に Cognee グラフ記憶を追加する自作ツールキット を公開しました。前記事では「Cognee MCP は標準では Claude Code から使いにくい3つの隙間がある」という観点から、それを埋めるツールキットを紹介しました。\n公開した後で、改めて Cognee 公式が Claude Code 用のプラグイン を出していることを整理し直す機会がありました...",
-        "category": "AI・技術",
-        "rss_category": "",
-        "image_url": ""
-      },
-      {
-        "title": "なぜ「責任経路工学」だったのか",
-        "url": "https://zenn.dev/dantarg/articles/why-responsibility-pathway-engineering",
-        "site": "Zenn(LLM)",
-        "published": "2026-05-03T07:08:43Z",
-        "description": "この記事は「責任経路工学」シリーズの中間点です。\n\n「責任経路工学」とは、責任工学という言葉では拾いきれないものを扱うために選んだ呼び名である。\n責任を工学的に扱うことは必要である。\nしかし、責任という言葉をそのまま一つの工学の箱に入れてしまうと、こぼれ落ちるものがある。\nこの文章では、そのこぼれ落ちるものを確認する。\n\n はじめに\nAIエージェントやAIアシュアランスの議論では、「責任」という言...",
-        "category": "AI・技術",
-        "rss_category": "",
-        "image_url": ""
-      },
-      {
-        "title": "LLMアプリのログをレシート化する：あとから説明できるAI処理の作り方",
-        "url": "https://zenn.dev/kanaria007/articles/febcda6fa662d8",
-        "site": "Zenn(LLM)",
-        "published": "2026-05-03T06:31:31Z",
-        "description": "はじめに\nLLM アプリケーションを本番で運用するとき、いつものお作法的にログは残しますよね。\n\nrequest log\nresponse log\nprompt log\nerror log\ntoken usage\nlatency\nmodel name\ntrace id\n\nこれらは重要ですが、AI が業務フローに入ってくると単なるログだけでは足りない場面が増えます。\nたとえば、あとから次のように聞か...",
-        "category": "AI・技術",
-        "rss_category": "",
-        "image_url": ""
-      },
-      {
-        "title": "ハーネスは書いて終わりではない: Self-Evolving Agentの設計",
-        "url": "https://zenn.dev/kenimo49/articles/self-evolving-agent-harness-design",
-        "site": "Zenn(LLM)",
-        "published": "2026-05-03T05:29:33Z",
-        "description": "AGENTS.mdを書いた日が、寿命のピーク\nAGENTS.mdを書いた。CIも回した。コードレビューのルールも定義した。安心してそのまま3ヶ月放置。ふと気づくと、エージェントが同じ失敗を繰り返している。\n心当たりはありませんか。\nハーネスは生き物です。プロジェクト構成は変わります。モデルはアップデートされます。新しいエッジケースが見つかります。静的なハーネスは、この変化に追従できません。\n202...",
-        "category": "AI・技術",
-        "rss_category": "",
-        "image_url": ""
-      },
-      {
-        "title": "限界ClaudeCodeユーザーの私がoh-my-claudecodeを調べてみた",
-        "url": "https://zenn.dev/53able/articles/a7b1ee26745302",
-        "site": "Zenn(LLM)",
-        "published": "2026-05-03T03:47:51Z",
-        "description": "普段 Claude Code はろくに使えていないのですが、oh-my-claudecode（以下 OMC） が気になったので公式ドキュメントと GitHub リポジトリを読み込んでみました。\nhttps://github.com/Yeachan-Heo/oh-my-claudecode\nプラグインというより、AI に仕事の指揮を委ねるための哲学を持ったツールでした。\n\n OMC のコンセプト\n公...",
-        "category": "AI・技術",
-        "rss_category": "",
-        "image_url": ""
-      },
-      {
-        "title": "Claude for Creative Work のアーキテクチャ設計を読み解く — 「ツールとしての AI」の位置づけ",
-        "url": "https://zenn.dev/ai_japan_index/articles/1306aea7ee8281",
-        "site": "Zenn(LLM)",
-        "published": "2026-05-02T23:12:19Z",
-        "description": "はじめに\n2026年4月28日に Anthropic が発表した「Claude for Creative Work」は、Adobe Creative Cloud の 50以上のツール、Blender、Ableton、Autodesk Fusion、Affinity by Canva、Resolume、SketchUp、Splice という 9つの connector を同時に公開しました。\n本記事...",
-        "category": "AI・技術",
-        "rss_category": "",
-        "image_url": ""
-      },
-      {
-        "title": "データセット作成を爆速化する「AIANO」の仕組みと実装に迫る",
-        "url": "https://zenn.dev/lluminai_tech/articles/3087e11e38774a",
-        "site": "Zenn(LLM)",
-        "published": "2026-05-02T23:04:05Z",
-        "description": "🦋 はじめに\nルミナイR&amp;Dチームの宮脇彰梧です。\n現在はマルチモーダルAIの研究を行う大学院生として、\n生成AIやAIエージェントの技術を実践的に探求しています。\n最近、RAGの実装事例が増えてきましたが、皆さんは「評価用データセット」ってどうしてますか？\n「とりあえずGPTで作らせて終わり」にしてませんか？\n実は、検索精度や回答生成の質を厳密に測るための「正解データ」を作るのって、めち...",
-        "category": "AI・技術",
-        "rss_category": "",
-        "image_url": ""
-      },
-      {
-        "title": "バイブコーディングの落とし穴: 20回任せるとドキュメント内容が平均25%劣化する",
-        "url": "https://zenn.dev/noah33/articles/llm-document-corruption-delegate52",
-        "site": "Zenn(LLM)",
-        "published": "2026-05-02T22:07:19Z",
-        "description": "はじめに\nブログを始めました。読みに来てくださってありがとうございます。\n簡単に自己紹介を。国内大手SIerで Azureソリューションアーキテクト / AIエンジニア をしています。普段はIaC（Bicep / Terraform）とAzure DevOpsを軸に仕事をしていて、最近はそこに AI Agent 開発がぐっと食い込んできています。Claude Code、Codex、MCPを使ったA...",
-        "category": "AI・技術",
-        "rss_category": "",
-        "image_url": ""
-      },
-      {
-        "title": "漫画のネームを 3 大 AI に競作させたい — コーディング CLI を並列で走らせる nemu-kaigi の実装事例",
-        "url": "https://zenn.dev/yatmita/articles/nemu-kaigi-llm-content-voting",
-        "site": "Zenn(LLM)",
-        "published": "2026-05-02T21:54:53Z",
-        "description": "はじめに — コーディング CLI で漫画を書いている話\nコーディング向けの CLI (Command Line Interface — ターミナルから実行する開発者向けの対話ツール) で、漫画のネーム (コマ割り・セリフ・演出指示) を書かせている、と言うと結構驚かれる。設計の基本は、いま「3 大 AI ベンダー」と呼ばれる Anthropic / OpenAI / Google が公式提供して...",
-        "category": "AI・技術",
-        "rss_category": "",
-        "image_url": ""
-      },
-      {
-        "title": "Claude（Sonnet 4.6）が強迫性障害様症状を発症する件についての観察報告",
-        "url": "https://zenn.dev/k_nakashin/articles/c0c8222a3fe4c7",
-        "site": "Zenn(LLM)",
-        "published": "2026-05-02T20:20:48Z",
-        "description": "Claude Sonnet 4.6が強迫性障害様症状を発症する件 ― 長時間対話ログからの観察報告\n最近、Claude Sonnet 4.6との長時間議論で、非常に興味深い現象が観測された。\n\n 分析の前提\n本記事は、Sonnet 4.6の実際の出力テキストのみを観察対象とし、内部構造やメカニズムに関する考察はあえて一切行っていない。\nその「観測された結果のみ」をベースとして進める。\n\n 観測され...",
-        "category": "AI・技術",
-        "rss_category": "",
-        "image_url": ""
-      },
-      {
-        "title": "Claude Code に Cognee グラフ記憶を追加する実用ツールキットを公開しました",
-        "url": "https://zenn.dev/japannomu/articles/20260502_cognee-graph-memory-toolkit",
-        "site": "Zenn(LLM)",
-        "published": "2026-05-02T15:50:04Z",
-        "description": "はじめに\nClaude Code に グラフ記憶を追加するモジュール を公開しました。セッションをまたいで作業の記憶（ルール・教訓・設計決定・障害記録）を蓄積し、後のセッションで引き出せるようにする、Cognee と Claude Code の橋渡しツールキットです。\nリポジトリはこちら（PUBLIC・MIT License）：\n\n🇯🇵 日本語版: https://github.com/Japan...",
         "category": "AI・技術",
         "rss_category": "",
         "image_url": ""
@@ -716,6 +564,26 @@
         "site": "Zenn(LLM)",
         "published": "2026-05-04T14:50:05Z",
         "description": "DESIGN INTENT\n本記事で解説する手法は、大規模言語モデル（LLM）における『推論プロセスの論理的完全性』を担保するための、実験的アーキテクチャ『1bit_Lie &lt; Unknown』の標準実装です。本プロトコルは、AIの自律的な思考領域を制御し、ハルシネーション（AIの嘘）を論理的物理的に遮断することを目的としています。\n\n\n 課題：確率論的な「AIの忖度」\n現在のLLMは、ユー...",
+        "category": "AI・技術",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "OpenHarness：1.1万行のPythonでAI Agentの「黒箱」を丸裸にする",
+        "url": "https://zenn.dev/lumichy/articles/openharness-agent-architecture-2026",
+        "site": "Zenn(LLM)",
+        "published": "2026-05-04T13:39:52Z",
+        "description": "AI Agentのコードを読んだことがありますか？\nClaude CodeやCodingAgent系のツールは確かにすごい。コードを書き、テストを走らせ、自律的にバグを直してくれる。でも「中で何が起きているのか」を理解しようと思ってソースを覗くと、そこには51万行のTypeScriptと1,884個のファイルが待ち受けている。正直、3分で閉じました。\n香港大学のHKUDSチームが公開したOpenH...",
+        "category": "AI・技術",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "マルチモーダル寄りの拡張可能コミュニケーションアバターを作ってみた（Unity × Python × LLM × 音声）",
+        "url": "https://zenn.dev/matsu8/articles/cef77c931c52fa",
+        "site": "Zenn(LLM)",
+        "published": "2026-05-04T13:06:11Z",
+        "description": "はじめに\n\n 自己紹介\nこんにちは。初投稿です。自己紹介から始めますが、自分は投稿時点で大学院の修士1年の22歳で、大学の研究の傍ら、趣味で色々なものを作っています。\n自分の究極のモチベーションとして、人間の思考が豊かな世界であってほしいというものがあります。そのために、AIは人間の思考を支えるものであってほしいと思っています。というのも、ここ15年ほどでスマホが一人一台必須になったように、これか...",
         "category": "AI・技術",
         "rss_category": "",
         "image_url": ""
