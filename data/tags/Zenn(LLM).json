@@ -1,9 +1,39 @@
 {
   "site": "Zenn(LLM)",
-  "last_updated": "2026-05-06T09:58:13.544708",
-  "total_articles": 3227,
+  "last_updated": "2026-05-06T11:57:23.500318",
+  "total_articles": 3239,
   "articles_by_date": {
     "本日": [
+      {
+        "title": "RFPを貼るだけでAWSアーキテクチャ設計書が出てくるSaaSを個人開発した",
+        "url": "https://zenn.dev/architectai/articles/c61662ed9eb471",
+        "site": "Zenn(LLM)",
+        "published": "2026-05-06T09:44:26Z",
+        "description": "はじめに\n5月10日に ArchitectAI というSaaSをリリースします。\n「仕様書・RFPを入力したら、要件定義書・アーキテクチャ設計書・構成図・コスト見積・提案書が出てくる」——そんなサービスです。\n\n対象フェーズ： 要件定義〜アーキテクチャ設計まで。SIerが担当する基本設計書・詳細設計書の作成は対象外です。\n\n\n▲ ArchitectAI トップページ\nこの記事では、なぜ作ったか・何...",
+        "category": "AI・技術",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "AIエージェントの権限設計：何を読めるかより、何を変えられるかで分ける",
+        "url": "https://zenn.dev/kanaria007/articles/d70a29ae22ef7d",
+        "site": "Zenn(LLM)",
+        "published": "2026-05-06T09:39:44Z",
+        "description": "はじめに\nLLM や AI エージェントを業務システムに入れるとき、権限設計の話はだいたい「何を読ませるか」から始まります。\n\nどのドキュメントを読めるか\nどの Slack channel を読めるか\nどの ticket を読めるか\nどの DB table を読めるか\n個人情報を見せてよいか\n社外秘情報を見せてよいか\n\nもちろん read 権限は重要ですが、AI エージェントを本番に入れるときに本...",
+        "category": "AI・技術",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "誤差伝播を考慮した SVD 圧縮 LLM を、追加ランクなしで回復する",
+        "url": "https://zenn.dev/yoshi12/articles/e7f67c27b1b2e1",
+        "site": "Zenn(LLM)",
+        "published": "2026-05-06T08:47:18Z",
+        "description": "はじめに\n前回の記事では、LLM の SVD ベース圧縮手法に圧縮誤差の層間伝播を補償する EP-SVD-LLM を提案し、圧縮直後の PPL で効果を確認しました。\n一方、実用上は圧縮後にファインチューニングして精度を回復する運用が自然です。そこで本記事では、SVD-LLM / SC-SVD-LLM / EP-SVD-LLM の 3 手法で圧縮したモデルに対して post-compression...",
+        "category": "AI・技術",
+        "rss_category": "",
+        "image_url": ""
+      },
       {
         "title": "MCPサーバー設計で見落としがちな3つの実用Tips：annotations / 次ツール誘導 / compact mode",
         "url": "https://zenn.dev/kanseilink/articles/kanseilink-mcp-builder-tips-20260428",
@@ -45,6 +75,16 @@
         "image_url": ""
       },
       {
+        "title": "AIに編集させるなら「なぜ」を残しておきましょうという話",
+        "url": "https://zenn.dev/solidtofu/articles/93389c212ef0ec",
+        "site": "Zenn(LLM)",
+        "published": "2026-05-06T05:48:31Z",
+        "description": "※ AIと壁打ちしながら考えたことをClaudeにまとめてもらいました。半端で抽象的な方法論に留まっているため、今後は具体化していくことを検討しています。\n\nAIを使って文書を書いたりコードを編集したりすることが、だいぶ当たり前になってきましたね。ただ、使えば使うほど気になってくる問題があって、ちょっと整理してみました。\n\n 差分(diff)だけ残っても、あとで困ります\nGitのコミット履歴を見れ...",
+        "category": "AI・技術",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
         "title": "プロンプトの「読み込み忘れ」をテキストだけで防ぐ設計手法：【論文紹介】GIP",
         "url": "https://zenn.dev/masahikotenage/articles/3fcb92c9bf42ff",
         "site": "Zenn(LLM)",
@@ -65,11 +105,41 @@
         "image_url": ""
       },
       {
+        "title": "なぜ「キャッシュヒット」で90%オフ？ LLMプロンプトキャッシュの仕組みを全部図解する",
+        "url": "https://zenn.dev/lumichy/articles/prompt-caching-guide-2026",
+        "site": "Zenn(LLM)",
+        "published": "2026-05-06T04:31:01Z",
+        "description": "Claude Codeを1日回すとAPI代が数万円。ChatGPTで長い会話を続けると、だんだん応答が遅くなる——。\nAI Agentが当たり前になった2026年、LLMの運用コストと応答速度は「プロンプトの書き方」以上に 「同じ計算を何度やらせるか」 で決まるようになりました。20ターンの会話をすると、モデルは前の19ターン分を毎回ゼロから再計算しています。これ、冷静に考えると相当もったいない。...",
+        "category": "AI・技術",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "寝てる間に開発を全自動化したい、ってどんな開発の話なんだろう",
+        "url": "https://zenn.dev/jeeee/articles/2026-05-06-auto-dev-doubt",
+        "site": "Zenn(LLM)",
+        "published": "2026-05-06T03:08:52Z",
+        "description": "最近 AI 界隈で「プロンプトは終わった、これからはハーネスの時代だ」「メタハーネスが来る」「LangChain で組み合わせる」といった話をよく目にします。SNS では AI 研究者の主張をインフルエンサーが拡散していて、議論としては確かに面白い。\nただ、見ていてどうしてもモヤッとするのは 「で、それを実際の開発現場のどこで使うの?」 という話が抜け落ちていることです。主張そのものに反対したいわ...",
+        "category": "AI・技術",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
         "title": "OpenCode Go + pi-coding-agent のすゝめ",
         "url": "https://zenn.dev/kimuson/articles/pi-coding-agent-with-opencode-go",
         "site": "Zenn(LLM)",
         "published": "2026-05-06T02:36:28Z",
         "description": "pi-coding-agent と OpenCode Go がめちゃくちゃオススメなので紹介します！\nClaude Code / Codex で費用が厳しい、あるいはレートリミットに困らされている人は是非試してほしい！\n\n TL;DR\n\nOpen Model の性能向上と Closed Model の価格上昇圧力から Open Model が熱い\n現在でも Opus に匹敵するモデルを OpenC...",
+        "category": "AI・技術",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "【アーキテクチャ考察】なぜRAGだけではAgentは「記憶」できないのか？ 検索と文脈を分離するメモリインフラストラクチャの設計思想",
+        "url": "https://zenn.dev/memorylakeai/articles/87b5856eb15b73",
+        "site": "Zenn(LLM)",
+        "published": "2026-05-06T02:29:48Z",
+        "description": "リード\nLLM（大規模言語モデル）を活用したアプリケーション開発において、RAG（Retrieval-Augmented Generation）はもはや標準的なアプローチとなりました。しかし、社内ドキュメントをベクトル化し、Agentに検索能力を与えたにもかかわらず、「Agentがユーザーの意図を汲み取ってくれない」「セッションが変わるとまたイチから説明し直さなければならない」といった課題に直面し...",
         "category": "AI・技術",
         "rss_category": "",
         "image_url": ""
@@ -142,16 +212,6 @@
         "site": "Zenn(LLM)",
         "published": "2026-05-05T13:05:03Z",
         "description": "はじめに\n前の記事で以下のようなことを書きました。\n\n一つ考えられるのは、LLMモデル部分の可用性やキャパシティ確保は自サービスの責任から外してしまうということです。\n例えば多くの皆さんがお馴染みのClaude Codeは、ユーザーがAPIキーを提供するか、Claude.ai Subscriptionによる認証を済ませてそのユーザーが持つクオータを利用するかのどちらかでLLMモデルの利用権限を調達...",
-        "category": "AI・技術",
-        "rss_category": "",
-        "image_url": ""
-      },
-      {
-        "title": "ハーネスエンジニアリング入門【概要 & 実践的TIPS】",
-        "url": "https://zenn.dev/galirage/articles/ai-harness-engineering",
-        "site": "Zenn(LLM)",
-        "published": "2026-05-05T12:59:53Z",
-        "description": "はじめまして、ますみです！\n株式会社Galirage（ガリレージ）というAIスタートアップで、代表をしております^^\nその他にも、「AIとコミュニケーションする技術（インプレス出版）」という書籍を執筆させていただいたり、生成AIアカデミーというYouTubeチャンネルを運営したり、上智大学で非常勤講師をしたりしています！\n\n本日は、AI駆動開発の新しい設計手法として注目されている 「ハーネスエンジ...",
         "category": "AI・技術",
         "rss_category": "",
         "image_url": ""
@@ -471,6 +531,36 @@
     ],
     "2026-05": [
       {
+        "title": "RFPを貼るだけでAWSアーキテクチャ設計書が出てくるSaaSを個人開発した",
+        "url": "https://zenn.dev/architectai/articles/c61662ed9eb471",
+        "site": "Zenn(LLM)",
+        "published": "2026-05-06T09:44:26Z",
+        "description": "はじめに\n5月10日に ArchitectAI というSaaSをリリースします。\n「仕様書・RFPを入力したら、要件定義書・アーキテクチャ設計書・構成図・コスト見積・提案書が出てくる」——そんなサービスです。\n\n対象フェーズ： 要件定義〜アーキテクチャ設計まで。SIerが担当する基本設計書・詳細設計書の作成は対象外です。\n\n\n▲ ArchitectAI トップページ\nこの記事では、なぜ作ったか・何...",
+        "category": "AI・技術",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "AIエージェントの権限設計：何を読めるかより、何を変えられるかで分ける",
+        "url": "https://zenn.dev/kanaria007/articles/d70a29ae22ef7d",
+        "site": "Zenn(LLM)",
+        "published": "2026-05-06T09:39:44Z",
+        "description": "はじめに\nLLM や AI エージェントを業務システムに入れるとき、権限設計の話はだいたい「何を読ませるか」から始まります。\n\nどのドキュメントを読めるか\nどの Slack channel を読めるか\nどの ticket を読めるか\nどの DB table を読めるか\n個人情報を見せてよいか\n社外秘情報を見せてよいか\n\nもちろん read 権限は重要ですが、AI エージェントを本番に入れるときに本...",
+        "category": "AI・技術",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "誤差伝播を考慮した SVD 圧縮 LLM を、追加ランクなしで回復する",
+        "url": "https://zenn.dev/yoshi12/articles/e7f67c27b1b2e1",
+        "site": "Zenn(LLM)",
+        "published": "2026-05-06T08:47:18Z",
+        "description": "はじめに\n前回の記事では、LLM の SVD ベース圧縮手法に圧縮誤差の層間伝播を補償する EP-SVD-LLM を提案し、圧縮直後の PPL で効果を確認しました。\n一方、実用上は圧縮後にファインチューニングして精度を回復する運用が自然です。そこで本記事では、SVD-LLM / SC-SVD-LLM / EP-SVD-LLM の 3 手法で圧縮したモデルに対して post-compression...",
+        "category": "AI・技術",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
         "title": "MCPサーバー設計で見落としがちな3つの実用Tips：annotations / 次ツール誘導 / compact mode",
         "url": "https://zenn.dev/kanseilink/articles/kanseilink-mcp-builder-tips-20260428",
         "site": "Zenn(LLM)",
@@ -511,6 +601,16 @@
         "image_url": ""
       },
       {
+        "title": "AIに編集させるなら「なぜ」を残しておきましょうという話",
+        "url": "https://zenn.dev/solidtofu/articles/93389c212ef0ec",
+        "site": "Zenn(LLM)",
+        "published": "2026-05-06T05:48:31Z",
+        "description": "※ AIと壁打ちしながら考えたことをClaudeにまとめてもらいました。半端で抽象的な方法論に留まっているため、今後は具体化していくことを検討しています。\n\nAIを使って文書を書いたりコードを編集したりすることが、だいぶ当たり前になってきましたね。ただ、使えば使うほど気になってくる問題があって、ちょっと整理してみました。\n\n 差分(diff)だけ残っても、あとで困ります\nGitのコミット履歴を見れ...",
+        "category": "AI・技術",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
         "title": "プロンプトの「読み込み忘れ」をテキストだけで防ぐ設計手法：【論文紹介】GIP",
         "url": "https://zenn.dev/masahikotenage/articles/3fcb92c9bf42ff",
         "site": "Zenn(LLM)",
@@ -531,11 +631,41 @@
         "image_url": ""
       },
       {
+        "title": "なぜ「キャッシュヒット」で90%オフ？ LLMプロンプトキャッシュの仕組みを全部図解する",
+        "url": "https://zenn.dev/lumichy/articles/prompt-caching-guide-2026",
+        "site": "Zenn(LLM)",
+        "published": "2026-05-06T04:31:01Z",
+        "description": "Claude Codeを1日回すとAPI代が数万円。ChatGPTで長い会話を続けると、だんだん応答が遅くなる——。\nAI Agentが当たり前になった2026年、LLMの運用コストと応答速度は「プロンプトの書き方」以上に 「同じ計算を何度やらせるか」 で決まるようになりました。20ターンの会話をすると、モデルは前の19ターン分を毎回ゼロから再計算しています。これ、冷静に考えると相当もったいない。...",
+        "category": "AI・技術",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "寝てる間に開発を全自動化したい、ってどんな開発の話なんだろう",
+        "url": "https://zenn.dev/jeeee/articles/2026-05-06-auto-dev-doubt",
+        "site": "Zenn(LLM)",
+        "published": "2026-05-06T03:08:52Z",
+        "description": "最近 AI 界隈で「プロンプトは終わった、これからはハーネスの時代だ」「メタハーネスが来る」「LangChain で組み合わせる」といった話をよく目にします。SNS では AI 研究者の主張をインフルエンサーが拡散していて、議論としては確かに面白い。\nただ、見ていてどうしてもモヤッとするのは 「で、それを実際の開発現場のどこで使うの?」 という話が抜け落ちていることです。主張そのものに反対したいわ...",
+        "category": "AI・技術",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
         "title": "OpenCode Go + pi-coding-agent のすゝめ",
         "url": "https://zenn.dev/kimuson/articles/pi-coding-agent-with-opencode-go",
         "site": "Zenn(LLM)",
         "published": "2026-05-06T02:36:28Z",
         "description": "pi-coding-agent と OpenCode Go がめちゃくちゃオススメなので紹介します！\nClaude Code / Codex で費用が厳しい、あるいはレートリミットに困らされている人は是非試してほしい！\n\n TL;DR\n\nOpen Model の性能向上と Closed Model の価格上昇圧力から Open Model が熱い\n現在でも Opus に匹敵するモデルを OpenC...",
+        "category": "AI・技術",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "【アーキテクチャ考察】なぜRAGだけではAgentは「記憶」できないのか？ 検索と文脈を分離するメモリインフラストラクチャの設計思想",
+        "url": "https://zenn.dev/memorylakeai/articles/87b5856eb15b73",
+        "site": "Zenn(LLM)",
+        "published": "2026-05-06T02:29:48Z",
+        "description": "リード\nLLM（大規模言語モデル）を活用したアプリケーション開発において、RAG（Retrieval-Augmented Generation）はもはや標準的なアプローチとなりました。しかし、社内ドキュメントをベクトル化し、Agentに検索能力を与えたにもかかわらず、「Agentがユーザーの意図を汲み取ってくれない」「セッションが変わるとまたイチから説明し直さなければならない」といった課題に直面し...",
         "category": "AI・技術",
         "rss_category": "",
         "image_url": ""
@@ -606,16 +736,6 @@
         "site": "Zenn(LLM)",
         "published": "2026-05-05T13:05:03Z",
         "description": "はじめに\n前の記事で以下のようなことを書きました。\n\n一つ考えられるのは、LLMモデル部分の可用性やキャパシティ確保は自サービスの責任から外してしまうということです。\n例えば多くの皆さんがお馴染みのClaude Codeは、ユーザーがAPIキーを提供するか、Claude.ai Subscriptionによる認証を済ませてそのユーザーが持つクオータを利用するかのどちらかでLLMモデルの利用権限を調達...",
-        "category": "AI・技術",
-        "rss_category": "",
-        "image_url": ""
-      },
-      {
-        "title": "ハーネスエンジニアリング入門【概要 & 実践的TIPS】",
-        "url": "https://zenn.dev/galirage/articles/ai-harness-engineering",
-        "site": "Zenn(LLM)",
-        "published": "2026-05-05T12:59:53Z",
-        "description": "はじめまして、ますみです！\n株式会社Galirage（ガリレージ）というAIスタートアップで、代表をしております^^\nその他にも、「AIとコミュニケーションする技術（インプレス出版）」という書籍を執筆させていただいたり、生成AIアカデミーというYouTubeチャンネルを運営したり、上智大学で非常勤講師をしたりしています！\n\n本日は、AI駆動開発の新しい設計手法として注目されている 「ハーネスエンジ...",
         "category": "AI・技術",
         "rss_category": "",
         "image_url": ""
