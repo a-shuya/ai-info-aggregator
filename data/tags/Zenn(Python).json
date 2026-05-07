@@ -1,9 +1,69 @@
 {
   "site": "Zenn(Python)",
-  "last_updated": "2026-05-07T06:50:50.588064",
-  "total_articles": 3820,
+  "last_updated": "2026-05-07T09:25:35.976248",
+  "total_articles": 3830,
   "articles_by_date": {
     "本日": [
+      {
+        "title": "\"XBRL の『売上高』タグは20種類以上ある — 日本の有報を10年分正規化した話\"",
+        "url": "https://zenn.dev/edinetty/articles/b74f5e946238fd",
+        "site": "Zenn(Python)",
+        "published": "2026-05-07T01:58:00Z",
+        "description": "はじめに\n日本の上場企業の有価証券報告書（有報）は EDINET から XBRL でダウンロードできます。XBRLとは機械が読める決算短信みたいなものです。\nこれを生で扱うと大変なので、4135社 × 10年分を横断検索するために sqlite に詰めるまでに苦労したところを書きます。\n成果物は edinetty.com で動かしていて、誰でも全社のスクリーニングや決算ランキングが見られます。\nパ...",
+        "category": "開発",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "Google Ads API v23でMAXIMIZE_CLICKSが使えない問題とTARGET_SPENDへの移行",
+        "url": "https://zenn.dev/correlate_dev/articles/google-ads-api-v23-maximize-clicks-target-spend",
+        "site": "Zenn(Python)",
+        "published": "2026-05-07T01:45:37Z",
+        "description": "はじめに\nGoogle Ads API v23 の Python SDK で「クリック数の最大化」戦略を設定しようとしたら、AttributeError で落ちました。\nAttributeError: Assignment not allowed to field \"maximize_clicks\"\nin protocol message object.\n「え、MAXIMIZE_CLICKS って...",
+        "category": "開発",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "LangGraphマルチエージェント・ステートマシン設計：本番運用のテスト・監視・スキーマ進化",
+        "url": "https://zenn.dev/0h_n0/articles/a1eac06bee9a1f",
+        "site": "Zenn(Python)",
+        "published": "2026-05-07T00:48:27Z",
+        "description": "LangGraphマルチエージェント・ステートマシン設計：本番運用のテスト・監視・スキーマ進化\n\n この記事でわかること\n\nSupervisor/Swarmパターンの選定基準と、本番環境でのレイテンシ・精度トレードオフの判断方法\nサブグラフ合成による大規模ステートマシンのモジュール分割と名前空間分離の設計手法\nノード単体テスト・部分実行テスト・E2Eテストの3層テスト戦略の実装方法\n状態スキーマの...",
+        "category": "開発",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "MCPを5個個別登録する手間を、PyPI 1パッケージとDevice Code Flow loginで潰した話",
+        "url": "https://zenn.dev/zoetaka38/articles/d4c1d6a620755b",
+        "site": "Zenn(Python)",
+        "published": "2026-05-07T00:42:12Z",
+        "description": "Codens は今、product 表面が 5 つあります。Purple (orchestrator)、Red (auto-fix)、Blue (E2E QA)、Green (PRD)、それと billing と auth を担う Auth。元々は Purple だけが MCP を持っていて、purple-codens-mcp という PyPI package で 16 個の tool を Cla...",
+        "category": "開発",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "自作AIツールがnode_modulesまで読みに行く問題をgit ls-filesで直した",
+        "url": "https://zenn.dev/seeda_yuto/articles/python-git-ls-files-vs-rglob",
+        "site": "Zenn(Python)",
+        "published": "2026-05-07T00:26:32Z",
+        "description": "AIにコードを読ませる前処理が遅い\n自作のAIエージェントにリポジトリを読ませる処理を書いていたら、妙に遅かった。\n最初はモデルが重いのかと思った。プロンプトが長すぎるのか、コンテキストの詰め方が悪いのか、と疑った。\nでも原因はもっと手前だった。\nAIに渡すファイルを集める処理が、node_modules や .next まで見に行っていた。\nありがちなコードはこれ：\nfrom pathlib i...",
+        "category": "開発",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "FastAPI でやりがちなレイヤードアーキテクチャ違反と修正パターン",
+        "url": "https://zenn.dev/taichan/articles/3fc7209f770a37",
+        "site": "Zenn(Python)",
+        "published": "2026-05-07T00:01:57Z",
+        "description": "TL;DR\n\nRouter / Service / Repository の 3 層に責務を分けている\n各層でやっていいこと／やってはいけないことを決めてある\n\n\n\n 1. なぜレイヤ分離するのか\n\n 大前提\n\n書くのは 1 回、読む・直すのは 100 回\n機能追加で触る箇所が 1 ファイルに収まるか 3 層に散るかで保守コストが桁違い\n\n\n 理想像\n\n知らなくてよいことを知らないで済むように分け...",
+        "category": "開発",
+        "rss_category": "",
+        "image_url": ""
+      },
       {
         "title": "AIエージェント同士の無限しりとりを実現する技術",
         "url": "https://zenn.dev/acntechjp/articles/e1e1362f765d08",
@@ -172,16 +232,6 @@
         "site": "Zenn(Python)",
         "published": "2026-05-05T19:03:16Z",
         "description": "🌌 Pythonのゼロ除算エラーを「ブラックホール情報パラドックス」で解決する\nこんにちは。プログラミング初心者の暇人（年金生活者）です。\n最近、AIを相手にツールの日曜大工をしながら「宇宙の真理」や「ビッグバン」について語り合うのにハマっています。\n「これ使ってナントカ賞を受賞して、賞金をもらって楽をしたい……！」\nと、AI相手に議論していましたところ、とある壮大な妄想に取り憑かれました。\n「ゼ...",
-        "category": "開発",
-        "rss_category": "",
-        "image_url": ""
-      },
-      {
-        "title": "多肉植物LM を育てる (2) — テンソルネットワークで再びモデル圧縮を行う",
-        "url": "https://zenn.dev/derwind/articles/dwd-succulm02",
-        "site": "Zenn(Python)",
-        "published": "2026-05-05T16:46:23Z",
-        "description": "目的\n多肉植物LM を育てる (1) — データセットの作成とモデル訓練まで に対して Transformer に触れてみる (7) — GPT-2 もどきをテンソルネットワークでモデル圧縮したり解剖して挙動を見たりする の内容を適用するというものである。\n実際はテンソル化でパラメータが増えた後に圧縮するので、この規模のモデルではテンソル化前のものより圧縮できてはいない。ここで見たいのはサイズでは...",
         "category": "開発",
         "rss_category": "",
         "image_url": ""
@@ -371,6 +421,66 @@
     ],
     "2026-05": [
       {
+        "title": "\"XBRL の『売上高』タグは20種類以上ある — 日本の有報を10年分正規化した話\"",
+        "url": "https://zenn.dev/edinetty/articles/b74f5e946238fd",
+        "site": "Zenn(Python)",
+        "published": "2026-05-07T01:58:00Z",
+        "description": "はじめに\n日本の上場企業の有価証券報告書（有報）は EDINET から XBRL でダウンロードできます。XBRLとは機械が読める決算短信みたいなものです。\nこれを生で扱うと大変なので、4135社 × 10年分を横断検索するために sqlite に詰めるまでに苦労したところを書きます。\n成果物は edinetty.com で動かしていて、誰でも全社のスクリーニングや決算ランキングが見られます。\nパ...",
+        "category": "開発",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "Google Ads API v23でMAXIMIZE_CLICKSが使えない問題とTARGET_SPENDへの移行",
+        "url": "https://zenn.dev/correlate_dev/articles/google-ads-api-v23-maximize-clicks-target-spend",
+        "site": "Zenn(Python)",
+        "published": "2026-05-07T01:45:37Z",
+        "description": "はじめに\nGoogle Ads API v23 の Python SDK で「クリック数の最大化」戦略を設定しようとしたら、AttributeError で落ちました。\nAttributeError: Assignment not allowed to field \"maximize_clicks\"\nin protocol message object.\n「え、MAXIMIZE_CLICKS って...",
+        "category": "開発",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "LangGraphマルチエージェント・ステートマシン設計：本番運用のテスト・監視・スキーマ進化",
+        "url": "https://zenn.dev/0h_n0/articles/a1eac06bee9a1f",
+        "site": "Zenn(Python)",
+        "published": "2026-05-07T00:48:27Z",
+        "description": "LangGraphマルチエージェント・ステートマシン設計：本番運用のテスト・監視・スキーマ進化\n\n この記事でわかること\n\nSupervisor/Swarmパターンの選定基準と、本番環境でのレイテンシ・精度トレードオフの判断方法\nサブグラフ合成による大規模ステートマシンのモジュール分割と名前空間分離の設計手法\nノード単体テスト・部分実行テスト・E2Eテストの3層テスト戦略の実装方法\n状態スキーマの...",
+        "category": "開発",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "MCPを5個個別登録する手間を、PyPI 1パッケージとDevice Code Flow loginで潰した話",
+        "url": "https://zenn.dev/zoetaka38/articles/d4c1d6a620755b",
+        "site": "Zenn(Python)",
+        "published": "2026-05-07T00:42:12Z",
+        "description": "Codens は今、product 表面が 5 つあります。Purple (orchestrator)、Red (auto-fix)、Blue (E2E QA)、Green (PRD)、それと billing と auth を担う Auth。元々は Purple だけが MCP を持っていて、purple-codens-mcp という PyPI package で 16 個の tool を Cla...",
+        "category": "開発",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "自作AIツールがnode_modulesまで読みに行く問題をgit ls-filesで直した",
+        "url": "https://zenn.dev/seeda_yuto/articles/python-git-ls-files-vs-rglob",
+        "site": "Zenn(Python)",
+        "published": "2026-05-07T00:26:32Z",
+        "description": "AIにコードを読ませる前処理が遅い\n自作のAIエージェントにリポジトリを読ませる処理を書いていたら、妙に遅かった。\n最初はモデルが重いのかと思った。プロンプトが長すぎるのか、コンテキストの詰め方が悪いのか、と疑った。\nでも原因はもっと手前だった。\nAIに渡すファイルを集める処理が、node_modules や .next まで見に行っていた。\nありがちなコードはこれ：\nfrom pathlib i...",
+        "category": "開発",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "FastAPI でやりがちなレイヤードアーキテクチャ違反と修正パターン",
+        "url": "https://zenn.dev/taichan/articles/3fc7209f770a37",
+        "site": "Zenn(Python)",
+        "published": "2026-05-07T00:01:57Z",
+        "description": "TL;DR\n\nRouter / Service / Repository の 3 層に責務を分けている\n各層でやっていいこと／やってはいけないことを決めてある\n\n\n\n 1. なぜレイヤ分離するのか\n\n 大前提\n\n書くのは 1 回、読む・直すのは 100 回\n機能追加で触る箇所が 1 ファイルに収まるか 3 層に散るかで保守コストが桁違い\n\n\n 理想像\n\n知らなくてよいことを知らないで済むように分け...",
+        "category": "開発",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
         "title": "AIエージェント同士の無限しりとりを実現する技術",
         "url": "https://zenn.dev/acntechjp/articles/e1e1362f765d08",
         "site": "Zenn(Python)",
@@ -536,16 +646,6 @@
         "site": "Zenn(Python)",
         "published": "2026-05-05T19:03:16Z",
         "description": "🌌 Pythonのゼロ除算エラーを「ブラックホール情報パラドックス」で解決する\nこんにちは。プログラミング初心者の暇人（年金生活者）です。\n最近、AIを相手にツールの日曜大工をしながら「宇宙の真理」や「ビッグバン」について語り合うのにハマっています。\n「これ使ってナントカ賞を受賞して、賞金をもらって楽をしたい……！」\nと、AI相手に議論していましたところ、とある壮大な妄想に取り憑かれました。\n「ゼ...",
-        "category": "開発",
-        "rss_category": "",
-        "image_url": ""
-      },
-      {
-        "title": "多肉植物LM を育てる (2) — テンソルネットワークで再びモデル圧縮を行う",
-        "url": "https://zenn.dev/derwind/articles/dwd-succulm02",
-        "site": "Zenn(Python)",
-        "published": "2026-05-05T16:46:23Z",
-        "description": "目的\n多肉植物LM を育てる (1) — データセットの作成とモデル訓練まで に対して Transformer に触れてみる (7) — GPT-2 もどきをテンソルネットワークでモデル圧縮したり解剖して挙動を見たりする の内容を適用するというものである。\n実際はテンソル化でパラメータが増えた後に圧縮するので、この規模のモデルではテンソル化前のものより圧縮できてはいない。ここで見たいのはサイズでは...",
         "category": "開発",
         "rss_category": "",
         "image_url": ""
