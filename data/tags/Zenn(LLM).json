@@ -1,25 +1,15 @@
 {
   "site": "Zenn(LLM)",
-  "last_updated": "2026-05-07T13:17:12.417750",
-  "total_articles": 3265,
+  "last_updated": "2026-05-07T15:39:37.287333",
+  "total_articles": 3246,
   "articles_by_date": {
-    "本日": [
+    "昨日": [
       {
         "title": "DeepSeek-V4が出た——100万トークンが「標準装備」になる時代の話",
         "url": "https://zenn.dev/proper_willet/articles/dbbd0bb2b45886",
         "site": "Zenn(LLM)",
         "published": "2026-05-07T09:58:17Z",
         "description": "これ、ずっと言いたかったんですが。\nオープンソースのLLMって、ここ1年で「使い物になる」から「選択肢として本気で検討できる」に変わってきてるんですよね。その流れを一段階押し進めたのが、2026年4月24日にプレビュー公開されたDeepSeek-V4です。\n正直に書きます。100万トークンのコンテキストウィンドウをオープンソースで、しかもAPIのデフォルトとして出してきた——これだけで、けっこう大...",
-        "category": "AI・技術",
-        "rss_category": "",
-        "image_url": ""
-      },
-      {
-        "title": "AIワークフローのテストケースを作る：golden case / regression / incident replay",
-        "url": "https://zenn.dev/kanaria007/articles/e20e1b92ee5258",
-        "site": "Zenn(LLM)",
-        "published": "2026-05-07T09:41:36Z",
-        "description": "はじめに\nLLM や AI エージェントを本番に入れるとき、どうテストするかはとても悩ましいですね。\n普通の関数なら、入力と出力を比較できます。\nexpect(add(1, 2)).toBe(3);\nしかし、LLM アプリケーションでは、出力は主に自然言語です。\n同じ入力でも、表現が少し変わることがあります。\nモデルや prompt template を変えると、文章も変わります。\nRAG の検索...",
         "category": "AI・技術",
         "rss_category": "",
         "image_url": ""
@@ -175,7 +165,7 @@
         "image_url": ""
       }
     ],
-    "昨日": [
+    "一昨日": [
       {
         "title": "AI活用を頑張っても評価されない——社内ノウハウを可視化する「AI Store」構想",
         "url": "https://zenn.dev/toji_inoue/articles/ai-store-concept",
@@ -417,178 +407,6 @@
         "image_url": ""
       }
     ],
-    "一昨日": [
-      {
-        "title": "LLMアプリにOAuthでモデル利用権限を委譲するのは現実的なのか",
-        "url": "https://zenn.dev/hsaki/articles/llm-app-oauth",
-        "site": "Zenn(LLM)",
-        "published": "2026-05-05T13:05:03Z",
-        "description": "はじめに\n前の記事で以下のようなことを書きました。\n\n一つ考えられるのは、LLMモデル部分の可用性やキャパシティ確保は自サービスの責任から外してしまうということです。\n例えば多くの皆さんがお馴染みのClaude Codeは、ユーザーがAPIキーを提供するか、Claude.ai Subscriptionによる認証を済ませてそのユーザーが持つクオータを利用するかのどちらかでLLMモデルの利用権限を調達...",
-        "category": "AI・技術",
-        "rss_category": "",
-        "image_url": ""
-      },
-      {
-        "title": "AIエージェントのツール設計を本番品質に高める：スキーマ進化・障害モード・契約テストの実装戦略",
-        "url": "https://zenn.dev/0h_n0/articles/9f934729f3f62a",
-        "site": "Zenn(LLM)",
-        "published": "2026-05-05T12:45:15Z",
-        "description": "AIエージェントのツール設計を本番品質に高める：スキーマ進化・障害モード・契約テストの実装戦略\n\n この記事でわかること\n\nツールスキーマのバージョニング戦略と後方互換性を維持する具体的な設計パターン\n本番環境でエージェントが安全に動作する4段階の障害モード分類と対処実装\n品質ベースCircuit Breakerによるセマンティック障害検知の仕組みと実装例\nマルチモデル環境（Claude/GPT/...",
-        "category": "AI・技術",
-        "rss_category": "",
-        "image_url": ""
-      },
-      {
-        "title": "正確性評価がLLMのハルシネーションを招く：Nature掲載論文が暴くインセンティブ構造",
-        "url": "https://zenn.dev/lixian/articles/llm-hallucination-incentive-nature",
-        "site": "Zenn(LLM)",
-        "published": "2026-05-05T10:33:15Z",
-        "description": "正確性評価がLLMのハルシネーションを招く：Nature掲載論文が暴くインセンティブ構造\n\n\"ハルシネーションはミステリアスな現象ではない。現在の訓練・評価手順の必然的な産物だ。\"\n— Kalai, Nachum, Vempala, Zhang (OpenAI × Georgia Tech)\n\n2026年4月、Natureに掲載された論文 \"Evaluating large language mo...",
-        "category": "AI・技術",
-        "rss_category": "",
-        "image_url": ""
-      },
-      {
-        "title": "AIに任せたはずなのに人間がコピペ中継している——A2A AgentCardで解消した",
-        "url": "https://zenn.dev/i_ichi/articles/claude-code-agentcard-role-boundary",
-        "site": "Zenn(LLM)",
-        "published": "2026-05-05T10:22:34Z",
-        "description": "カスタムGPTで調査させた結果を、別のチャットにコピペして渡したことはないか。\nエージェントが出した設計書を、自分でまとめ直して、次のエージェントに貼り付けた。\nそのAI同士の橋渡しを、人間がやっている。\nそれ、2026年の作業じゃない。\n\n エージェントは互いを知らない\nなぜそうなるか。各エージェントは「自分が何をできるか」を互いに知らないからだ。誰に何を渡すべきか判断できない。だから人間が間に...",
-        "category": "AI・技術",
-        "rss_category": "",
-        "image_url": ""
-      },
-      {
-        "title": "Codex appを使ってみた。CLIより「作業の見通し」が良くてけっこう好きだった",
-        "url": "https://zenn.dev/dokusy/articles/b528905b1cbb1a",
-        "site": "Zenn(LLM)",
-        "published": "2026-05-05T10:20:24Z",
-        "description": "Codex appを使ってみた。CLIより「作業の見通し」が良くてけっこう好きだった\nども。\n最近、Xでつよつよエンジニアの方たちが Codex app をかなり褒めていて、気になったので自分でも使ってみました。\nもともと私はCodex CLIをよく使っているのですが、Codex appはCLIとは少し感覚が違いました。\nCLIが「ターミナルでエージェントに作業してもらう道具」だとすると、Code...",
-        "category": "AI・技術",
-        "rss_category": "",
-        "image_url": ""
-      },
-      {
-        "title": "自己同一性を前提としない体系を与えてLLMと哲学談義すると面白い",
-        "url": "https://zenn.dev/g000001/articles/aletheics-framework",
-        "site": "Zenn(LLM)",
-        "published": "2026-05-05T09:00:00Z",
-        "description": "自己同一性を前提としない体系を与えてLLMと哲学談義すると面白い\n哲学的な概念をPrologの述語として書き出してLLMとチャットすると面白いから始まる『〜を与えてLLMと哲学談義すると面白い』の第二弾ですが、思えば、前回の記事が元々世界に対して疑問を抱きやすい私の謎の探究心に火をつけてしまい、この半年ひどい迷走の挙句に、『ある』ってなんだろうという根本から構築しなおした、『顕現論』というものを構...",
-        "category": "AI・技術",
-        "rss_category": "",
-        "image_url": ""
-      },
-      {
-        "title": "AIエージェントのルールをハードコードしない：Policy / Effect Catalog の versioning 設計",
-        "url": "https://zenn.dev/kanaria007/articles/d02ea13d9163fd",
-        "site": "Zenn(LLM)",
-        "published": "2026-05-05T08:21:52Z",
-        "description": "はじめに\nLLM や AI エージェントを本番の業務フローに入れると、だんだん次のような考慮事項が増えていきます。\n\nこの action は自動実行してよいのか\nこの処理は support-only なのか effect-bearing なのか\nこの effect は rollback できるのか\nhuman review は必要なのか\nどの role の承認が必要なのか\nどの receipt が...",
-        "category": "AI・技術",
-        "rss_category": "",
-        "image_url": ""
-      },
-      {
-        "title": "Apple Intelligence の Foundation Models、思ったより使える / 使えない（個人開発で本気使い）",
-        "url": "https://zenn.dev/sawasige/articles/seekthea-apple-intelligence",
-        "site": "Zenn(LLM)",
-        "published": "2026-05-05T06:27:08Z",
-        "description": "はじめに\nSeekthea は個人開発の RSS リーダーで、Apple の Foundation Models framework（いわゆる Apple Intelligence のオンデバイス LLM）をフル活用しています。記事の要約・カテゴリ分類・キーワード抽出・興味学習用の翻訳など、ほぼ全ての AI 処理がオンデバイスで完結（Seekthea がこの形になるまでの設計プロセスは Smart...",
-        "category": "AI・技術",
-        "rss_category": "",
-        "image_url": ""
-      },
-      {
-        "title": "rtk-ai/rtk: コマンド結果をフィルタリング・圧縮してLLMのコンテキスト消費を抑えるツール",
-        "url": "https://zenn.dev/aiiro/articles/0c00227f53dfd4",
-        "site": "Zenn(LLM)",
-        "published": "2026-05-05T02:22:18Z",
-        "description": "はじめに\n日常的にLLMを使うようになり、実装やターミナルでの操作をLLMに任せることも増えてきています。\nしかし、 ls や git log 、 go test などの頻繁に実行するコマンドの結果を、そのままコンテキストに流し込まれると、人間にとっては有用でも、LLMにとっては不要なメタデータまで読み込ませることになります。\nLLMを長時間使い続けていると、こういったコマンドが繰り返し実行される...",
-        "category": "AI・技術",
-        "rss_category": "",
-        "image_url": ""
-      },
-      {
-        "title": "Claude Code CLIにMiniMaxをフォールバックとして組み込んだ話（安いLLMを2段構えで運用する戦略）",
-        "url": "https://zenn.dev/fukukei23/articles/claude-code-minimax-fallback",
-        "site": "Zenn(LLM)",
-        "published": "2026-05-05T01:50:12Z",
-        "description": "はじめに\n以前、Zennにて「Claude Code CLIをGLM/Z.AIで代替した話」という記事を公開しました。\nhttps://zenn.dev/fukukei23/articles/claude-code-cost-optimization\nこの記事では、Claude Code CLIの通信先をZ.AI（GLM）に切り替えることで、コストを大幅に抑えつつ開発を進める手法を紹介しました。実...",
-        "category": "AI・技術",
-        "rss_category": "",
-        "image_url": ""
-      },
-      {
-        "title": "RAGで人間の脳を再現して必要な情報だけを取り出す手法",
-        "url": "https://zenn.dev/knowledgesense/articles/cb14d18ac43801",
-        "site": "Zenn(LLM)",
-        "published": "2026-05-05T01:16:26Z",
-        "description": "導入\nこんにちは、株式会社ナレッジセンスの須藤英寿です。\n今回は人間の脳を再現して情報を検索し、さらに必要な情報にだけ整理することで高い精度を実現する手法「NeocorRAG」について紹介します。\nhttps://arxiv.org/pdf/2604.27852\n\n\n サマリー\n以前、人間の脳を再現して高い検索性能を実現した「HippoRAG2」という手法を紹介しました。この手法は、キーワードと文...",
-        "category": "AI・技術",
-        "rss_category": "",
-        "image_url": ""
-      },
-      {
-        "title": "「AIに評価させると甘くなる」をどう解決するか──メトロノーム評価法群 × GitHub Copilot 多モデル実践",
-        "url": "https://zenn.dev/x_metronome/articles/10ee3abe45fe02",
-        "site": "Zenn(LLM)",
-        "published": "2026-05-05T01:11:00Z",
-        "description": "「AIに評価させると甘くなる」をどう解決するか──メトロノーム評価法群 × GitHub Copilot 多モデル実践\n著者: メトロノーム\n公開日: 2026年5月5日\n\n 導入：「AIに評価させると甘くなる」問題\nAIを使って自分の成果物や思考プロセスを評価させたとき、こんな経験はないだろうか。\n\n「すごくよく整理されていますね」「独創的なアプローチです」「十分に高い水準です」\n\n何度やっても...",
-        "category": "AI・技術",
-        "rss_category": "",
-        "image_url": ""
-      },
-      {
-        "title": "LLM APIコスト最適化 企業規模別ケーススタディ——スタートアップ・中堅・大手の3段階戦略",
-        "url": "https://zenn.dev/kei_concierge/articles/llm-api-cost-enterprise-cases-2026",
-        "site": "Zenn(LLM)",
-        "published": "2026-05-05T01:00:07Z",
-        "description": "LLM APIコスト最適化 企業規模別ケーススタディ——スタートアップ・中堅・大手の3段階戦略\n\nこのシリーズについて\n\nパート1：Batch API・キャッシュ・モデル選定で月次コストを半減する実装ガイド\nパート2：開発現場で繰り返される7つのアンチパターン\n\nパート3（本記事）：企業規模別 実装ケーススタディ\n\n\n\n「コスト削減の手法はわかった。でも自分たちの規模にはどれが合っているのか」\nこ...",
-        "category": "AI・技術",
-        "rss_category": "",
-        "image_url": ""
-      },
-      {
-        "title": "AIエージェント時代の組織再設計——Meta・NVIDIA・PwC・Gartnerの事例を読み解く",
-        "url": "https://zenn.dev/biscuit/articles/ai-agent-org-models-2026-05",
-        "site": "Zenn(LLM)",
-        "published": "2026-05-04T23:06:25Z",
-        "description": "はじめに\nMeta は 2026 年 Q1（1〜3 月期）に売上 $56.3B（前年比 +33%）という好業績を計上した同じ時期に、8,000 人のレイオフと 6,000 人の採用凍結——実質 14,000 ポジション削減——を発表しました[1]。NVIDIA は 75,000 人の従業員に対し将来 750 万の AI エージェントを社内稼働させる構想（100:1 比率）を公表しました[2]。Pw...",
-        "category": "AI・技術",
-        "rss_category": "",
-        "image_url": ""
-      },
-      {
-        "title": "生成AI入力リスクの実務ルール",
-        "url": "https://zenn.dev/miyamatechlab/articles/bbc889f8f773c0",
-        "site": "Zenn(LLM)",
-        "published": "2026-05-04T16:48:01Z",
-        "description": "はじめに：AIで稼ぐなら、まず「事故」で信用を失わないこと\nはじめまして。みやまテック研究所のみやまです。\n本研究所では、個人事業主・フリーランス・小規模法人の方向けに、AI実装と情報セキュリティを実務に落とし込むための情報を発信しています。\n扱うのは大きく二つの領域です。\n一つ目は、AI導入時のセキュリティ。\n生成AIを業務に使うときの情報漏えい、顧客データの扱い、利用ルール、利用規約の確認、誤...",
-        "category": "AI・技術",
-        "rss_category": "",
-        "image_url": ""
-      },
-      {
-        "title": "Agentic RAGは本当に割に合わないのか？A-RAGを実務データで再検証する",
-        "url": "https://zenn.dev/livingston/articles/23d8f7c1500abb",
-        "site": "Zenn(LLM)",
-        "published": "2026-05-04T15:00:06Z",
-        "description": "はじめに\n結論から言うと、本データではA-RAG Fullを全面採用する理由はありませんでした。\n!\n\n全体Page HitはHybrid+RerankerとA-RAG Fullが同率（68%）ですが、A-RAG Fullはコスト比×11.32\n複数セクション横断（タイプC）ではA-RAG Naiveが3/5問で最も多くヒットし、A-RAG Fullは2/5問にとどまる\n実運用では、単純系はHyb...",
-        "category": "AI・技術",
-        "rss_category": "",
-        "image_url": ""
-      },
-      {
-        "title": "LenVM：価値推定で解くtokenレベル長さモデリング",
-        "url": "https://zenn.dev/lixian/articles/lenvm-length-value-model",
-        "site": "Zenn(LLM)",
-        "published": "2026-05-04T15:00:00Z",
-        "description": "はじめに\nLLMの推論能力が飛躍的に向上する一方で、「どれだけ思考を続ければよいか」という根本的な問いに対する体系的なアプローチは驚くほど限られている。推論チェーンの長さは推論コストとパフォーマンスの双方を直接左右するが、既存の長さ制御手法はシーケンスレベルの粗いペナルティに依存しており、token単位のきめ細かな制御ができないままだった。\n今回紹介する LenVM（Length Value Mo...",
-        "category": "AI・技術",
-        "rss_category": "",
-        "image_url": ""
-      }
-    ],
     "2026-05": [
       {
         "title": "DeepSeek-V4が出た——100万トークンが「標準装備」になる時代の話",
@@ -596,16 +414,6 @@
         "site": "Zenn(LLM)",
         "published": "2026-05-07T09:58:17Z",
         "description": "これ、ずっと言いたかったんですが。\nオープンソースのLLMって、ここ1年で「使い物になる」から「選択肢として本気で検討できる」に変わってきてるんですよね。その流れを一段階押し進めたのが、2026年4月24日にプレビュー公開されたDeepSeek-V4です。\n正直に書きます。100万トークンのコンテキストウィンドウをオープンソースで、しかもAPIのデフォルトとして出してきた——これだけで、けっこう大...",
-        "category": "AI・技術",
-        "rss_category": "",
-        "image_url": ""
-      },
-      {
-        "title": "AIワークフローのテストケースを作る：golden case / regression / incident replay",
-        "url": "https://zenn.dev/kanaria007/articles/e20e1b92ee5258",
-        "site": "Zenn(LLM)",
-        "published": "2026-05-07T09:41:36Z",
-        "description": "はじめに\nLLM や AI エージェントを本番に入れるとき、どうテストするかはとても悩ましいですね。\n普通の関数なら、入力と出力を比較できます。\nexpect(add(1, 2)).toBe(3);\nしかし、LLM アプリケーションでは、出力は主に自然言語です。\n同じ入力でも、表現が少し変わることがあります。\nモデルや prompt template を変えると、文章も変わります。\nRAG の検索...",
         "category": "AI・技術",
         "rss_category": "",
         "image_url": ""

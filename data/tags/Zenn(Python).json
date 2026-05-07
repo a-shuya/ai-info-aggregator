@@ -1,9 +1,39 @@
 {
   "site": "Zenn(Python)",
-  "last_updated": "2026-05-07T13:17:12.417750",
-  "total_articles": 3830,
+  "last_updated": "2026-05-07T15:39:37.287333",
+  "total_articles": 3818,
   "articles_by_date": {
-    "本日": [
+    "昨日": [
+      {
+        "title": "単振動の状微分方程式をオイラー法で実装してみた",
+        "url": "https://zenn.dev/m1_study_man/articles/fe285986a0f261",
+        "site": "Zenn(Python)",
+        "published": "2026-05-07T08:38:37Z",
+        "description": "常微分方程式：単振動を数値解析\n\n 単振動のモデル\n\nm\\frac{d^2x}{dt^2} = -kx\n\nばね定数 k\\,[kg/s^2] のバネ（質量はゼロとする）につながれた質量 m\\,[kg] の質点の運動を考える。\nここで x\\,[m] は質点の位置である（静止位置を x=0 とする）。\n質点を静止位置から移動させて手を離すと，質点は静止位置のまわりを行き来する。このような運動を単振動とい...",
+        "category": "開発",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "yfinance と J-Quants の補完で全上場銘柄 10 年を 0 円で回す自前株価 DB",
+        "url": "https://zenn.dev/investaitech/articles/jp-stock-db-1-yfinance-vs-jquants",
+        "site": "Zenn(Python)",
+        "published": "2026-05-07T07:45:36Z",
+        "description": "yfinance だけでは届かない、J-Quants Free だけでも届かない — 両者を補完で組む話です。\nyfinance は価格 OHLCV は強いものの銘柄マスタを返さず、上場廃止銘柄は例外ではなく空 DataFrame で沈黙します。J-Quants Free は銘柄マスタを公式即時で返してくれますが、価格は 12 週遅延で日々のスクリーニングには間に合いません。両者を 役割分担 で組...",
+        "category": "開発",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "Google Earth Engineで始める衛星画像解析　〜Sentinel-2とDeepLabV3+で「雪」を自動検出してみた",
+        "url": "https://zenn.dev/pdata_analytics/articles/cf3e740d74d572",
+        "site": "Zenn(Python)",
+        "published": "2026-05-07T05:52:05Z",
+        "description": "こんにちは。今回はお仕事ではなく趣味の分析のお話です。\nGoogle Earth Engine（GEE）と Sentinel-2 衛星画像を使って、山岳地帯の「積雪」を自動検出してみました。\nこのプロジェクトでは、\n\n昔ながらの衛星解析手法（NDSI）\n深層学習（DeepLabV3+）\n\nの両方を実装し、精度を比較しています。\n対象読者は、\n\n衛星画像解析をやったことがない\nGEEを聞いたことはあ...",
+        "category": "開発",
+        "rss_category": "",
+        "image_url": ""
+      },
       {
         "title": "\"XBRL の『売上高』タグは20種類以上ある — 日本の有報を10年分正規化した話\"",
         "url": "https://zenn.dev/edinetty/articles/b74f5e946238fd",
@@ -85,7 +115,7 @@
         "image_url": ""
       }
     ],
-    "昨日": [
+    "一昨日": [
       {
         "title": "Reverse ETLのOSSを、データエンジニア2年目が作ってる話 — drt",
         "url": "https://zenn.dev/poyo010/articles/drt-intro-zenn",
@@ -237,189 +267,37 @@
         "image_url": ""
       }
     ],
-    "一昨日": [
-      {
-        "title": "Pythonで時間記録機能を作る - フラグ管理と二重押し防止 - Day 3",
-        "url": "https://zenn.dev/klo/articles/800e306b7dc03a",
-        "site": "Zenn(Python)",
-        "published": "2026-05-05T14:40:57Z",
-        "description": "はじめに\nDay 2では、Electron + TypeScript + FastAPIという技術スタックを選んだ理由について書きました。\n今回はバックエンドの最初の機能として実装した、時間記録機能の設計について書きます。\nシンプルに見えて、設計の判断が積み重なった部分です。\n\n\n タイマー機能とは\n今回のツールにおける最初の機能として、作業時間の記録と管理を実装しました。\n一般的に言う打刻管理と...",
-        "category": "開発",
-        "rss_category": "",
-        "image_url": ""
-      },
-      {
-        "title": "dask-geopandasに再入門してみた ~遅延評価とSpatial Partitioning~",
-        "url": "https://zenn.dev/teyo0318/articles/5a8b161862e3e5",
-        "site": "Zenn(Python)",
-        "published": "2026-05-05T14:22:50Z",
-        "description": "先に結論\ndask-geopandasは大規模な地理空間分析に特化したGeoPandasの拡張ライブラリです。最大の強みは 遅延評価 (Lazy Evaluation) にあり、メモリに載りきらない数千万行単位のデータを効率的に処理できます。\n本記事では、dask-geopandasの基本となる遅延評価の仕組みについて解説します。\nとはいえ、dask-geopandasも万能ではありません。下記の...",
-        "category": "開発",
-        "rss_category": "",
-        "image_url": ""
-      },
-      {
-        "title": "Ollama実践入門──ローカルLLMをMacBook上で動かしてRAG・MCPと組み合わせる【2026】",
-        "url": "https://zenn.dev/karaagedesu/articles/d51edc5a4d6ea3",
-        "site": "Zenn(Python)",
-        "published": "2026-05-05T13:36:28Z",
-        "description": "はじめに\n「LLMを使いたいけどAPIコストが気になる」「機密データをクラウドに送りたくない」「オフラインで動かしたい」──そんなときの答えが Ollama です。\nOllamaはLlama・Gemma・Qwenなど主要なオープンソースLLMを、コマンド1行でローカル実行できるツールです。GPUは必須ではなく、M1以降のMacBookのCPUでも実用的な速度で動きます。\n2026年現在、個人開発の...",
-        "category": "開発",
-        "rss_category": "",
-        "image_url": ""
-      },
-      {
-        "title": "Google Cloud Vision API を使ってOCRをする(python)",
-        "url": "https://zenn.dev/yuhati/articles/google_cloud_vision_api",
-        "site": "Zenn(Python)",
-        "published": "2026-05-05T08:47:33Z",
-        "description": "ドキュメントからテキストを抽出して、必要な情報を抽出するために、Cloud Vision API を使って OCR をする方法を試しました。\n\n API有効化\nCloud Vision の設定とクリーンアップの手順に従い、APIを有効化します.\n\nEnable the API をクリック\n\n\nプロジェクトを確認　次へをクリック\n\n\nAPIを有効にする　「有効にする」をクリック\n\n\n\n\n Googl...",
-        "category": "開発",
-        "rss_category": "",
-        "image_url": ""
-      },
-      {
-        "title": "GitHub Actions + Google Maps Route API + iPhoneショートカットで朝の渋滞を検知する",
-        "url": "https://zenn.dev/yuki_2021/articles/9badb6bf2409c5",
-        "site": "Zenn(Python)",
-        "published": "2026-05-05T08:02:31Z",
-        "description": "!\nこの記事では自宅・職場の住所や通勤経路をGitHub Secretsおよびローカルのみのファイルで管理します。\nソースコードに住所をベタ書きしたままGitHubのパブリックリポジトリにpushすると、住所や通勤経路が全世界に公開されます。必ずSecretsを使ってください。\n\n\n 概要\n毎朝の通勤で「どのルートが今日は空いてるか」を確認するのが面倒だったので、\nボタン一発でSlackに結果を通...",
-        "category": "開発",
-        "rss_category": "",
-        "image_url": ""
-      },
-      {
-        "title": "scrapy-playwright入門【2026年版・Python】JSサイトをScrapyで取得する",
-        "url": "https://zenn.dev/datajournal1/articles/d4e533aae5ad8f",
-        "site": "Zenn(Python)",
-        "published": "2026-05-05T06:43:17Z",
-        "description": "!\n本記事で紹介する手法は、対象サイトの利用規約・robots.txtを遵守した上での利用を前提としています。\n\n!\nScrapy の基本的な使い方については ScrapyでのWebスクレイピング入門【2026年版・Python】 で解説しています。Playwright 単体の使い方は Playwrightでのスクレイピング入門【2026年版・Python】 を参照してください。本記事は scra...",
-        "category": "開発",
-        "rss_category": "",
-        "image_url": ""
-      },
-      {
-        "title": "mdx MaaSのAPIでLLM-jp-4を使う 第0回：準備",
-        "url": "https://zenn.dev/suzumura_lab/articles/d56a1805bd7efd",
-        "site": "Zenn(Python)",
-        "published": "2026-05-05T06:30:35Z",
-        "description": "mdx MaaSでは最新のオープンなLLM（大規模言語モデル）を安全に利用できる環境をβ版としてユーザーに提供しています。NII（国立情報学研究所）を中心とするLLM-jpチームが開発したLLM-jp-4も最近追加しました。本シリーズではmdx MaaSの即時応答API（以下「API」）からLLM-jp-4をPythonで利用する方法を紹介します。今回はそのための準備を説明します。\n※mdx Ma...",
-        "category": "開発",
-        "rss_category": "",
-        "image_url": ""
-      },
-      {
-        "title": "uv を導入し、自作のクラスをデフォルトでインポートできるようにする",
-        "url": "https://zenn.dev/kousukeota_ds/articles/3391d06816cd0f",
-        "site": "Zenn(Python)",
-        "published": "2026-05-05T04:53:26Z",
-        "description": "0. Introduction\n\n 0.1 目的\nsys.path.append をやめ、src layout の自作 package を uv 管理の仮想環境に editable install する。\n\n 0.2 前提\n\nOS: Ubuntu 24.04\nPython 3.13\nPROJECT_ROOT 構成: 本記事最下部参照\n\n\n 1. uv のインストール\nuv のインストール\ncurl...",
-        "category": "開発",
-        "rss_category": "",
-        "image_url": ""
-      },
-      {
-        "title": "AWS CDK × Claude Codeでチケット管理アプリを作る【構想編】",
-        "url": "https://zenn.dev/pekopugu/articles/aws-cdk-ticket-app-01",
-        "site": "Zenn(Python)",
-        "published": "2026-05-05T04:37:22Z",
-        "description": "この記事について\n本記事は「AWS CDK × Claude Codeでチケット管理アプリを作る」シリーズの第1回です。\n\n\n\n#\nタイトル\n\n\n\n\n1\n構想編（本記事）\n\n\n2\n環境構築編\n\n\n3\nバックエンド編（DynamoDB・Lambda・API Gateway・Cognito）\n\n\n4\n完結編（React・S3・CloudFront・振り返り）\n\n\n\n!\n本シリーズのソースコードはGit...",
-        "category": "開発",
-        "rss_category": "",
-        "image_url": ""
-      },
-      {
-        "title": "自分のトーン規約を渡して、Ollama に Zenn 下書きを点検させる",
-        "url": "https://zenn.dev/giteki/articles/002-ollama-draft-proofread",
-        "site": "Zenn(Python)",
-        "published": "2026-05-05T04:15:11Z",
-        "description": "ローカル LLM（Ollama）に、自分の Zenn 下書きを点検させる小道具の作成手順。\n\n なぜ作るか\n書き慣れていない頃ほど、自分の文章のトーンは緩む。媒体「技的」では「淡々とした工程誌」を方針にしているが、書いている最中は気が緩んで「〜してみた」や感嘆符が紛れ込む。後で読み返して直すこともあるが、記事ごとにそれをやるのは続かない。\n校正ツールは既にある。textlint は固定パターンに強...",
-        "category": "開発",
-        "rss_category": "",
-        "image_url": ""
-      },
-      {
-        "title": "agent に E2E テストを書かせる時、実装 diff を context として渡す設計を入れた話",
-        "url": "https://zenn.dev/zoetaka38/articles/a5f0c8c3ea4156",
-        "site": "Zenn(Python)",
-        "published": "2026-05-05T04:03:23Z",
-        "description": "はじめに\nCodens では Purple という orchestrator が「develop step」を回して実装させ、その出力を Blue が受けて E2E テストを書く、という多段の agent 構成にしている。これがそこそこ動いてはいたのだが、ずっと違和感があった。Blue が生成してくる E2E が「Purple がさっき変えた箇所」にぴったり寄ってこなくて、機能ベース、画面ベースで...",
-        "category": "開発",
-        "rss_category": "",
-        "image_url": ""
-      },
-      {
-        "title": "Claude Codeに長期記憶を持たせたら、壁打ちの質が変わるらしいのだが実際に作って分かったことのまとめ",
-        "url": "https://zenn.dev/0rv3/articles/cf3ca186ee68cd",
-        "site": "Zenn(Python)",
-        "published": "2026-05-05T01:14:23Z",
-        "description": "はじめに\n当記事に則って\nhttps://zenn.dev/noprogllama/articles/7c24b2c2410213\nClaude Codeにプロジェクト単位のローカル記憶を持たせるツール sui-memory を実装した。設計から実装まで一気通貫でやってみたところ、公式ドキュメントとコミュニティ記事の両方に載っていない仕様が大量に出てきた。\n本記事は、後続の実装者が同じ地雷を踏まな...",
-        "category": "開発",
-        "rss_category": "",
-        "image_url": ""
-      },
-      {
-        "title": "PythonとClaude APIで作る業務自動化ツール6選【コード付き】",
-        "url": "https://zenn.dev/kojikojiprg/articles/80f89f645e707b",
-        "site": "Zenn(Python)",
-        "published": "2026-05-05T01:00:06Z",
-        "description": "PythonとClaude APIで作る業務自動化ツール6選\nAIエンジニアとして副業を始めるにあたり、実際に受託案件のデモとして作った6つのツールを紹介します。\nすべてのコードはGitHubで公開しています。\nhttps://github.com/kojikojiprg/llm-tools-demo\n\n\n この記事で学べること\n\nClaude API（Anthropic）を使ったLLMアプリの基...",
-        "category": "開発",
-        "rss_category": "",
-        "image_url": ""
-      },
-      {
-        "title": "自動売買Botを作って分かった日本の取引所API比較 ── 実装者視点の本音レビュー",
-        "url": "https://zenn.dev/ponfreelance/articles/affiliflow-exchange-api-comparison",
-        "site": "Zenn(Python)",
-        "published": "2026-05-05T00:00:18Z",
-        "description": "評価軸\n取引所APIの比較記事は山ほどあるが、大半は公式サイトの表をコピーしただけ。\nこの記事は 実際にBot（FastAPI + ccxt）を組んで全取引所に接続した結果 分かった「実装者視点の違い」をまとめる。評価軸はこの4つ。\n\n\n\n評価軸\n意味\n\n\n\n\n注文の通しやすさ\n成行注文が使えるか、独自仕様のハンドリングが必要か\n\n\nデータ取得の充実度\nOHLCV（ローソク足）・約定履歴が取れるか...",
-        "category": "開発",
-        "rss_category": "",
-        "image_url": ""
-      },
-      {
-        "title": "「次、何を学べばいいんだろう」を解決するAIコーチCLI「tanren」を作った",
-        "url": "https://zenn.dev/nzk_3/articles/72722476d3e5f9",
-        "site": "Zenn(Python)",
-        "published": "2026-05-04T22:30:20Z",
-        "description": "「次、何を学べばいいんだろう」\n技術トレンドの変化が速すぎる、と感じませんか。\nRustが来た、と思えばGoが流行る。フロントはReactかと思えばNext.js、そしてまたRemix。インフラはKubernetesを覚えたらいいのか、それともServerlessか。AIが出てきて、もはや何が「標準」なのかすらわからなくなってきた。\n自分はそういう状況の中で、「自分は次に何を学べばいいのか」がわか...",
-        "category": "開発",
-        "rss_category": "",
-        "image_url": ""
-      },
-      {
-        "title": "[Pandas入門シリーズ第5回] データ型と変換",
-        "url": "https://zenn.dev/haruhiro1020/articles/48edb8fa04b5c5",
-        "site": "Zenn(Python)",
-        "published": "2026-05-04T22:00:05Z",
-        "description": "はじめに\n本記事は「Pythonでデータを分析するPandas入門」シリーズの第5回です．\n本シリーズでは， Pythonのデータ分析ライブラリである Pandas を使って，「データを扱い，分析できる状態」になること を目標としています．\n第4回では，欠損値の扱い方 を説明しました．\n第5回では，不具合が発生しやすい， データ型と変換 を説明します．\n私のPandasライブラリのバージョンは \"...",
-        "category": "開発",
-        "rss_category": "",
-        "image_url": ""
-      },
-      {
-        "title": "Neo4j × LangChain × Z.aiでRAGチャットボットを作った——農家エンジニアのチャットボット開発記⑤",
-        "url": "https://zenn.dev/hiroakikody/articles/cc88cc89516e22",
-        "site": "Zenn(Python)",
-        "published": "2026-05-04T21:54:25Z",
-        "description": "起：Systemプロンプトの限界とRAGへの転換\n前回までの4本で、renderでWeb上にアプリを公開するところまですすんだ。\nhttps://zenn.dev/hiroakikody/articles/e6ed27a649fcec\nhttps://zenn.dev/hiroakikody/articles/ed0332b4c0f292\nhttps://zenn.dev/hiroakikody/...",
-        "category": "開発",
-        "rss_category": "",
-        "image_url": ""
-      },
-      {
-        "title": "Pythonパッケージ配布の最短手順",
-        "url": "https://zenn.dev/d3c0b/articles/74627e56499816",
-        "site": "Zenn(Python)",
-        "published": "2026-05-04T16:22:30Z",
-        "description": "パッケージの配布は簡単\n難しそうだったり手間だと思うことがあるとすればそれは、パッケージ配布そのものとは別の、設定項目の多さ等によるのだと思います。\n\n パッケージの最短配布手順\n伝えたいのは、以下の4コマンド(実質3コマンド)だけで何もないところからパッケージ配布は出来てしまうということです。\n# uvでプロジェクトのディレクトリを作成する\nuv init zenntest # 各々のパッケージ...",
-        "category": "開発",
-        "rss_category": "",
-        "image_url": ""
-      }
-    ],
     "2026-05": [
+      {
+        "title": "単振動の状微分方程式をオイラー法で実装してみた",
+        "url": "https://zenn.dev/m1_study_man/articles/fe285986a0f261",
+        "site": "Zenn(Python)",
+        "published": "2026-05-07T08:38:37Z",
+        "description": "常微分方程式：単振動を数値解析\n\n 単振動のモデル\n\nm\\frac{d^2x}{dt^2} = -kx\n\nばね定数 k\\,[kg/s^2] のバネ（質量はゼロとする）につながれた質量 m\\,[kg] の質点の運動を考える。\nここで x\\,[m] は質点の位置である（静止位置を x=0 とする）。\n質点を静止位置から移動させて手を離すと，質点は静止位置のまわりを行き来する。このような運動を単振動とい...",
+        "category": "開発",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "yfinance と J-Quants の補完で全上場銘柄 10 年を 0 円で回す自前株価 DB",
+        "url": "https://zenn.dev/investaitech/articles/jp-stock-db-1-yfinance-vs-jquants",
+        "site": "Zenn(Python)",
+        "published": "2026-05-07T07:45:36Z",
+        "description": "yfinance だけでは届かない、J-Quants Free だけでも届かない — 両者を補完で組む話です。\nyfinance は価格 OHLCV は強いものの銘柄マスタを返さず、上場廃止銘柄は例外ではなく空 DataFrame で沈黙します。J-Quants Free は銘柄マスタを公式即時で返してくれますが、価格は 12 週遅延で日々のスクリーニングには間に合いません。両者を 役割分担 で組...",
+        "category": "開発",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "Google Earth Engineで始める衛星画像解析　〜Sentinel-2とDeepLabV3+で「雪」を自動検出してみた",
+        "url": "https://zenn.dev/pdata_analytics/articles/cf3e740d74d572",
+        "site": "Zenn(Python)",
+        "published": "2026-05-07T05:52:05Z",
+        "description": "こんにちは。今回はお仕事ではなく趣味の分析のお話です。\nGoogle Earth Engine（GEE）と Sentinel-2 衛星画像を使って、山岳地帯の「積雪」を自動検出してみました。\nこのプロジェクトでは、\n\n昔ながらの衛星解析手法（NDSI）\n深層学習（DeepLabV3+）\n\nの両方を実装し、精度を比較しています。\n対象読者は、\n\n衛星画像解析をやったことがない\nGEEを聞いたことはあ...",
+        "category": "開発",
+        "rss_category": "",
+        "image_url": ""
+      },
       {
         "title": "\"XBRL の『売上高』タグは20種類以上ある — 日本の有報を10年分正規化した話\"",
         "url": "https://zenn.dev/edinetty/articles/b74f5e946238fd",
