@@ -1,9 +1,49 @@
 {
   "site": "Zenn(Python)",
-  "last_updated": "2026-05-08T08:10:15.872681",
-  "total_articles": 3844,
+  "last_updated": "2026-05-08T09:54:13.698905",
+  "total_articles": 3856,
   "articles_by_date": {
     "本日": [
+      {
+        "title": "「user 12345 を削除しました」と言うのに DB が変わってない — AIエージェントの後付け検証 API を作った話",
+        "url": "https://zenn.dev/ardev/articles/aecfab260f9432",
+        "site": "Zenn(Python)",
+        "published": "2026-05-08T09:36:01Z",
+        "description": "動機: ベンチマークが見ない領域\n最近 AI agent エコシステムを観察していて、以下の失敗パターンが繰り返し見られました。\n[agent]   「user 12345 を削除しました」\n[reality]  DB 行数: 100 → 100 (変わってない)\n\n[agent]   「null チェックを追加しました」\n[reality]  diff: 関連しない 5 関数の rewrite ...",
+        "category": "開発",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "Sionna チュートリアルで分からなかったこと(1):BER は何で測っているのか",
+        "url": "https://zenn.dev/gnus/articles/e20e690f71283b",
+        "site": "Zenn(Python)",
+        "published": "2026-05-08T08:42:36Z",
+        "description": "はじめに\nSionna(NVIDIA の物理層シミュレータ)のチュートリアルを一通り動かしてみて、コードはちゃんと走るし、BER カーブも綺麗に出る。けれど、よく考えると、自分が何を測っているのかをちゃんと理解できていない部分がいくつもあった。\n具体的には:\n\nBER って何で測っているんだろう\n\n@tf.function とか sionna.phy とか、おまじないみたいに書いているけど何?\n変...",
+        "category": "開発",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "openpyxl で既存 Excel に列を追加する:VBA から Python に移って一番最初に欲しくなる処理",
+        "url": "https://zenn.dev/gnus/articles/77d7db489eee64",
+        "site": "Zenn(Python)",
+        "published": "2026-05-08T08:23:17Z",
+        "description": "はじめに\n社内のちょっとした集計ツールや帳票が、VBA や Excel ベースで動いているのは、それなりに大きな組織だと珍しくないと思う。VBA が悪いとは思っていない。Excel の中で完結することが利点になる場面はあるし、引き継ぎや配布の手軽さもある。\nただ、自分が使う側になって、\n\nもっと速く動かしたい\nもっと読みやすく書きたい\n後から他人(あるいは未来の自分)が見て、何をしているかが分かる...",
+        "category": "開発",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "【Flask/Python】WebPushとLINE通知を実装する方法",
+        "url": "https://zenn.dev/yonimal_dev/articles/0cf16ff514e585",
+        "site": "Zenn(Python)",
+        "published": "2026-05-08T08:18:33Z",
+        "description": "こんにちは。\nWebサイトを運用していると、新着情報やアラートをユーザーに通知したい場面があります。\n一方で、メールアドレスの収集やアプリ導入のハードルを避けたいケースもあります。\n本記事では、Python（Flask）環境で、「WebPush」と「LINE通知」をシンプルに実装する方法を紹介します。\n\n\n 通知手法の比較\nWebアプリで採用される主な通知手法を、ユーザーの手軽さやプライバシー、管...",
+        "category": "開発",
+        "rss_category": "",
+        "image_url": ""
+      },
       {
         "title": "【続編】ヴォイニッチ手稿解読の「数学的堅牢性」：異物混入による自壊プロセスの実証",
         "url": "https://zenn.dev/k40i/articles/d9a75565a71d23",
@@ -25,6 +65,16 @@
         "image_url": ""
       },
       {
+        "title": "LeRobot を始める前に — 環境・用語・ログ・Tips まとめ",
+        "url": "https://zenn.dev/rhmtrz/articles/lerobot-primer-and-tips",
+        "site": "Zenn(Python)",
+        "published": "2026-05-08T07:31:00Z",
+        "description": "シリーズ: LeRobot チュートリアル — 第 0 回(前提知識リファレンス)\n最初に一度読んで、以降の各記事から参照する位置づけです。\n\n\n この記事の目的\nLeRobot を始めたときに「最初から知っていれば詰まらなかった」内容をまとめました。用語、環境、ログの読み方、データの保存場所など、各チュートリアルで毎回説明すると冗長になる事項をここに集約します。\n各チュートリアル中に「詳細はこの...",
+        "category": "開発",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
         "title": "緯度経度を度分秒(DMS)に変換する Python 実装：60秒繰り上がりの罠",
         "url": "https://zenn.dev/gnus/articles/e918dd0173ff72",
         "site": "Zenn(Python)",
@@ -40,6 +90,26 @@
         "site": "Zenn(Python)",
         "published": "2026-05-08T04:24:49Z",
         "description": "はじめに\nエージェントの開発をしていると、「ちゃんと動いている」を担保するのが意外と難しいことに気づきます。LLM が確率的に振る舞う以上、従来の単体テストや統合テストのように合否が一意に決まる世界ではありません。\n本記事では、なぜエージェントに専用の評価が必要なのかを整理し、そのうえで ADK が提供する評価パイプラインを「テストケースの準備 → 評価基準の準備 → 評価の実行」の3ステップで実...",
+        "category": "開発",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "「なぜかAIツールが遅い」の正体は、最初の60秒の沈黙だった話",
+        "url": "https://zenn.dev/zoetaka38/articles/ee046d899d3e33",
+        "site": "Zenn(Python)",
+        "published": "2026-05-08T04:05:16Z",
+        "description": "ある日のサポート報告から\n「Codens の plan 生成、動かないっぽいです」というスレッドが、サポートチャネルに流れてきた。\n該当のジョブを覗くと、ジョブそのものは Celery worker の中で元気に走っていた。AI エージェントがリポジトリを舐めて、タスク分解を組み立てている最中。あと 10 分くらいで完了する見込み。何も壊れていない。\nただ、ユーザの画面では「分析中…」のスピナーが...",
+        "category": "開発",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "RustでEVMをフルスクラッチして、マイナンバー×ZK-SNARKsの「完全匿名オンライン選挙」を実装した話",
+        "url": "https://zenn.dev/nezu511/articles/0e0982cb5db689",
+        "site": "Zenn(Python)",
+        "published": "2026-05-07T16:33:25Z",
+        "description": "行政手続きの完全自動化・自律化を目指し、フルスクラッチで開発中のエンタープライズ特化型EVM「Leviathan（リヴァイアサン）」。\n本記事では、この自作EVM上で、マイナンバーカード（JPKI）による「確実な個人識別」と、ZK-SNARKsによる「完全な匿名性」をプロトコルレベルで両立させたオンライン選挙システムの実装方法について解説します。\n※ 筆者はゼロ知識証明や暗号技術についてはまだまだ...",
         "category": "開発",
         "rss_category": "",
         "image_url": ""
@@ -152,16 +222,6 @@
         "site": "Zenn(Python)",
         "published": "2026-05-07T07:45:36Z",
         "description": "yfinance だけでは届かない、J-Quants Free だけでも届かない — 両者を補完で組む話です。\nyfinance は価格 OHLCV は強いものの銘柄マスタを返さず、上場廃止銘柄は例外ではなく空 DataFrame で沈黙します。J-Quants Free は銘柄マスタを公式即時で返してくれますが、価格は 12 週遅延で日々のスクリーニングには間に合いません。両者を 役割分担 で組...",
-        "category": "開発",
-        "rss_category": "",
-        "image_url": ""
-      },
-      {
-        "title": "Google Earth Engineで始める衛星画像解析　〜Sentinel-2とDeepLabV3+で「雪」を自動検出してみた",
-        "url": "https://zenn.dev/pdata_analytics/articles/cf3e740d74d572",
-        "site": "Zenn(Python)",
-        "published": "2026-05-07T05:52:05Z",
-        "description": "こんにちは。今回はお仕事ではなく趣味の分析のお話です。\nGoogle Earth Engine（GEE）と Sentinel-2 衛星画像を使って、山岳地帯の「積雪」を自動検出してみました。\nこのプロジェクトでは、\n\n昔ながらの衛星解析手法（NDSI）\n深層学習（DeepLabV3+）\n\nの両方を実装し、精度を比較しています。\n対象読者は、\n\n衛星画像解析をやったことがない\nGEEを聞いたことはあ...",
         "category": "開発",
         "rss_category": "",
         "image_url": ""
@@ -401,6 +461,46 @@
     ],
     "2026-05": [
       {
+        "title": "「user 12345 を削除しました」と言うのに DB が変わってない — AIエージェントの後付け検証 API を作った話",
+        "url": "https://zenn.dev/ardev/articles/aecfab260f9432",
+        "site": "Zenn(Python)",
+        "published": "2026-05-08T09:36:01Z",
+        "description": "動機: ベンチマークが見ない領域\n最近 AI agent エコシステムを観察していて、以下の失敗パターンが繰り返し見られました。\n[agent]   「user 12345 を削除しました」\n[reality]  DB 行数: 100 → 100 (変わってない)\n\n[agent]   「null チェックを追加しました」\n[reality]  diff: 関連しない 5 関数の rewrite ...",
+        "category": "開発",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "Sionna チュートリアルで分からなかったこと(1):BER は何で測っているのか",
+        "url": "https://zenn.dev/gnus/articles/e20e690f71283b",
+        "site": "Zenn(Python)",
+        "published": "2026-05-08T08:42:36Z",
+        "description": "はじめに\nSionna(NVIDIA の物理層シミュレータ)のチュートリアルを一通り動かしてみて、コードはちゃんと走るし、BER カーブも綺麗に出る。けれど、よく考えると、自分が何を測っているのかをちゃんと理解できていない部分がいくつもあった。\n具体的には:\n\nBER って何で測っているんだろう\n\n@tf.function とか sionna.phy とか、おまじないみたいに書いているけど何?\n変...",
+        "category": "開発",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "openpyxl で既存 Excel に列を追加する:VBA から Python に移って一番最初に欲しくなる処理",
+        "url": "https://zenn.dev/gnus/articles/77d7db489eee64",
+        "site": "Zenn(Python)",
+        "published": "2026-05-08T08:23:17Z",
+        "description": "はじめに\n社内のちょっとした集計ツールや帳票が、VBA や Excel ベースで動いているのは、それなりに大きな組織だと珍しくないと思う。VBA が悪いとは思っていない。Excel の中で完結することが利点になる場面はあるし、引き継ぎや配布の手軽さもある。\nただ、自分が使う側になって、\n\nもっと速く動かしたい\nもっと読みやすく書きたい\n後から他人(あるいは未来の自分)が見て、何をしているかが分かる...",
+        "category": "開発",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "【Flask/Python】WebPushとLINE通知を実装する方法",
+        "url": "https://zenn.dev/yonimal_dev/articles/0cf16ff514e585",
+        "site": "Zenn(Python)",
+        "published": "2026-05-08T08:18:33Z",
+        "description": "こんにちは。\nWebサイトを運用していると、新着情報やアラートをユーザーに通知したい場面があります。\n一方で、メールアドレスの収集やアプリ導入のハードルを避けたいケースもあります。\n本記事では、Python（Flask）環境で、「WebPush」と「LINE通知」をシンプルに実装する方法を紹介します。\n\n\n 通知手法の比較\nWebアプリで採用される主な通知手法を、ユーザーの手軽さやプライバシー、管...",
+        "category": "開発",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
         "title": "【続編】ヴォイニッチ手稿解読の「数学的堅牢性」：異物混入による自壊プロセスの実証",
         "url": "https://zenn.dev/k40i/articles/d9a75565a71d23",
         "site": "Zenn(Python)",
@@ -421,6 +521,16 @@
         "image_url": ""
       },
       {
+        "title": "LeRobot を始める前に — 環境・用語・ログ・Tips まとめ",
+        "url": "https://zenn.dev/rhmtrz/articles/lerobot-primer-and-tips",
+        "site": "Zenn(Python)",
+        "published": "2026-05-08T07:31:00Z",
+        "description": "シリーズ: LeRobot チュートリアル — 第 0 回(前提知識リファレンス)\n最初に一度読んで、以降の各記事から参照する位置づけです。\n\n\n この記事の目的\nLeRobot を始めたときに「最初から知っていれば詰まらなかった」内容をまとめました。用語、環境、ログの読み方、データの保存場所など、各チュートリアルで毎回説明すると冗長になる事項をここに集約します。\n各チュートリアル中に「詳細はこの...",
+        "category": "開発",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
         "title": "緯度経度を度分秒(DMS)に変換する Python 実装：60秒繰り上がりの罠",
         "url": "https://zenn.dev/gnus/articles/e918dd0173ff72",
         "site": "Zenn(Python)",
@@ -436,6 +546,26 @@
         "site": "Zenn(Python)",
         "published": "2026-05-08T04:24:49Z",
         "description": "はじめに\nエージェントの開発をしていると、「ちゃんと動いている」を担保するのが意外と難しいことに気づきます。LLM が確率的に振る舞う以上、従来の単体テストや統合テストのように合否が一意に決まる世界ではありません。\n本記事では、なぜエージェントに専用の評価が必要なのかを整理し、そのうえで ADK が提供する評価パイプラインを「テストケースの準備 → 評価基準の準備 → 評価の実行」の3ステップで実...",
+        "category": "開発",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "「なぜかAIツールが遅い」の正体は、最初の60秒の沈黙だった話",
+        "url": "https://zenn.dev/zoetaka38/articles/ee046d899d3e33",
+        "site": "Zenn(Python)",
+        "published": "2026-05-08T04:05:16Z",
+        "description": "ある日のサポート報告から\n「Codens の plan 生成、動かないっぽいです」というスレッドが、サポートチャネルに流れてきた。\n該当のジョブを覗くと、ジョブそのものは Celery worker の中で元気に走っていた。AI エージェントがリポジトリを舐めて、タスク分解を組み立てている最中。あと 10 分くらいで完了する見込み。何も壊れていない。\nただ、ユーザの画面では「分析中…」のスピナーが...",
+        "category": "開発",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "RustでEVMをフルスクラッチして、マイナンバー×ZK-SNARKsの「完全匿名オンライン選挙」を実装した話",
+        "url": "https://zenn.dev/nezu511/articles/0e0982cb5db689",
+        "site": "Zenn(Python)",
+        "published": "2026-05-07T16:33:25Z",
+        "description": "行政手続きの完全自動化・自律化を目指し、フルスクラッチで開発中のエンタープライズ特化型EVM「Leviathan（リヴァイアサン）」。\n本記事では、この自作EVM上で、マイナンバーカード（JPKI）による「確実な個人識別」と、ZK-SNARKsによる「完全な匿名性」をプロトコルレベルで両立させたオンライン選挙システムの実装方法について解説します。\n※ 筆者はゼロ知識証明や暗号技術についてはまだまだ...",
         "category": "開発",
         "rss_category": "",
         "image_url": ""
@@ -546,16 +676,6 @@
         "site": "Zenn(Python)",
         "published": "2026-05-07T07:45:36Z",
         "description": "yfinance だけでは届かない、J-Quants Free だけでも届かない — 両者を補完で組む話です。\nyfinance は価格 OHLCV は強いものの銘柄マスタを返さず、上場廃止銘柄は例外ではなく空 DataFrame で沈黙します。J-Quants Free は銘柄マスタを公式即時で返してくれますが、価格は 12 週遅延で日々のスクリーニングには間に合いません。両者を 役割分担 で組...",
-        "category": "開発",
-        "rss_category": "",
-        "image_url": ""
-      },
-      {
-        "title": "Google Earth Engineで始める衛星画像解析　〜Sentinel-2とDeepLabV3+で「雪」を自動検出してみた",
-        "url": "https://zenn.dev/pdata_analytics/articles/cf3e740d74d572",
-        "site": "Zenn(Python)",
-        "published": "2026-05-07T05:52:05Z",
-        "description": "こんにちは。今回はお仕事ではなく趣味の分析のお話です。\nGoogle Earth Engine（GEE）と Sentinel-2 衛星画像を使って、山岳地帯の「積雪」を自動検出してみました。\nこのプロジェクトでは、\n\n昔ながらの衛星解析手法（NDSI）\n深層学習（DeepLabV3+）\n\nの両方を実装し、精度を比較しています。\n対象読者は、\n\n衛星画像解析をやったことがない\nGEEを聞いたことはあ...",
         "category": "開発",
         "rss_category": "",
         "image_url": ""
