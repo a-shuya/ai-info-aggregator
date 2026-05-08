@@ -1,7 +1,7 @@
 {
   "site": "Zenn(LLM)",
-  "last_updated": "2026-05-08T09:54:13.698905",
-  "total_articles": 3262,
+  "last_updated": "2026-05-08T11:21:55.449258",
+  "total_articles": 3270,
   "articles_by_date": {
     "本日": [
       {
@@ -55,16 +55,6 @@
         "image_url": ""
       },
       {
-        "title": "LoRAとは何か？低コストなAIモデル微調整と、学習後にLoRAを圧縮するPARAの解説",
-        "url": "https://zenn.dev/kas_blog/articles/20250508-lora-para-adaptive-rank-allocation",
-        "site": "Zenn(LLM)",
-        "published": "2026-05-08T04:48:24Z",
-        "description": "論文情報\n\n論文タイトル: Post-Optimization Adaptive Rank Allocation for LoRA\narXiv: https://arxiv.org/abs/2604.27796v1\n\n関連するLoRA原論文: LoRA: Low-Rank Adaptation of Large Language Models\nLoRA原論文: https://arxiv.org/...",
-        "category": "AI・技術",
-        "rss_category": "",
-        "image_url": ""
-      },
-      {
         "title": "AI に要約させずに Web 情報の原典を読む CLI を作った",
         "url": "https://zenn.dev/thkt/articles/eae521ee3f4016",
         "site": "Zenn(LLM)",
@@ -80,6 +70,16 @@
         "site": "Zenn(LLM)",
         "published": "2026-05-08T03:23:32Z",
         "description": "はじめに\n本記事では、LLMアプリケーションやAgentシステムを構築する開発者に向けて、「なぜ現在のAIは記憶を保持できないのか」「なぜRAGや要約では不十分なのか」をシステムアーキテクチャの視点から解き明かす。\nそして、その場しのぎのパッチワークではなく、システム全体を支える「Memory Layer（記憶層）」をどのように設計すべきか、さらにはそのインフラストラクチャとして注目すべき設計思想...",
+        "category": "AI・技術",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "モデル評価にいつまでも人手を割けないチームへ — LLM-as-a-Judge論文から学ぶ“LLMでLLMを採点する”設計",
+        "url": "https://zenn.dev/lluminai_tech/articles/3ddc99a694f4ae",
+        "site": "Zenn(LLM)",
+        "published": "2026-05-08T01:00:08Z",
+        "description": "はじめに\nルミナイR&amp;Dチームの栗原です。\nLLM アプリを作っていると、ほぼ必ずぶつかるのが 評価のコスト問題 です。\n\n新しいプロンプトやモデル設定を試すたびに、人手で比較するのは大変\n自動指標（BLEU / ROUGE / accuracy など）は、人間の好みをうまく反映しない\n\n本番環境では A/B テストもしたいけど、ログの読み解きにも時間がかかる\n\n\nそこで出てきたアイデアが...",
         "category": "AI・技術",
         "rss_category": "",
         "image_url": ""
@@ -187,6 +187,36 @@
         "image_url": ""
       },
       {
+        "title": "LLMとは何か、を有限列挙で証明する：Layer-0 機能必然性定理 v3.0 公開",
+        "url": "https://zenn.dev/gatchimuchio/articles/e5f8edb2fd2e3d",
+        "site": "Zenn(LLM)",
+        "published": "2026-05-07T03:10:30Z",
+        "description": "LLMとは何か、を有限列挙で証明する：Layer-0 機能必然性定理 v3.0 公開\n現代のLarge Language Modelは、6つの機能役割を必ず実装する。1つでも、その機能等価物まで含めて欠ければ、それはもうLLMではない。これを定義公理と有限全列挙で証明し、コマンド一発で再現可能にしたパッケージを公開した。\n\nGitHub：gatchimuchio/LLM-Layer-0-Funct...",
+        "category": "AI・技術",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "MTP（Multi-Token Prediction）の系譜とメカニズムを徹底解説",
+        "url": "https://zenn.dev/acrosstudioblog/articles/ad05d752e3c038",
+        "site": "Zenn(LLM)",
+        "published": "2026-05-07T03:01:13Z",
+        "description": "0. はじめに：なぜこの記事を書いたのか\n最近、界隈で噂になっているQwen 3.6 27BのDenseモデルをDGX Spark環境で試してみました。しかし、実際に動かしてみるとどうしても推論スピードが遅く、実運用に向けてネックを感じていました。そこで高速化の手法を色々調べてみたところ、「MTP（Multi-Token Prediction）を組み込むと推論が速くなるらしい」という情報に行き着き...",
+        "category": "AI・技術",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "AIはなぜ間違った投資判断をするのか｜投資エージェント実験の出発点",
+        "url": "https://zenn.dev/startspace/articles/65bb1e5cab1773",
+        "site": "Zenn(LLM)",
+        "published": "2026-05-07T03:00:09Z",
+        "description": "導入｜AIは本当に投資判断できるのか？\nLLMは「物事を理解しているAI」ではなく、「次に来る言葉を予測するAI」です。\nそれでも、ニュースを読むことができ、企業情報を整理した上で、それっぽい投資判断を出すことはできます。\nしかしここで1つ疑問があります。\nLLMが出力したその判断は、本当に正しいのでしょうか？\n株式投資では、判断を間違えればそのまま損失につながります。「それっぽい判断」では通用し...",
+        "category": "AI・技術",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
         "title": "ローカルLLM｜Minecraft自律｜踏んだバグ7種",
         "url": "https://zenn.dev/toki_mwc/articles/minecraft-hermes-3role-mineflayer-bugs",
         "site": "Zenn(LLM)",
@@ -202,6 +232,16 @@
         "site": "Zenn(LLM)",
         "published": "2026-05-07T02:29:26Z",
         "description": "はじめに\nLLMの強化学習（RLVR）では、人間が報酬関数を設計する代わりに、LLM自身に報酬を生成させるアプローチが主流になりつつある。だが、LLMが生成した報酬は本当に信頼できるのか？——という根本的な問いに対して、これまでの研究はほぼ目を背けてきた。\n既存のアプローチは「どう報酬候補を生成するか」「どの報酬候補を選ぶか」に注力する一方で、**「いつその報酬を展開する（使う）べきか」**という...",
+        "category": "AI・技術",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "BookRAGの内部アルゴリズムを解説する",
+        "url": "https://zenn.dev/shugorun/articles/d27f209a794348",
+        "site": "Zenn(LLM)",
+        "published": "2026-05-07T01:52:50Z",
+        "description": "はじめに\n皆さんこんにちは。情報工学系男子です。\n最近、RAGがアツいらしいです。アツいRAG、みんな大好きRAGの中で、ひときわ輝いていたこの論文 BookRAG: A Hierarchical Structure-aware Index-based Approach for Retrieval-Augmented Generation on Complex Documents をご存じでしょう...",
         "category": "AI・技術",
         "rss_category": "",
         "image_url": ""
@@ -541,16 +581,6 @@
         "image_url": ""
       },
       {
-        "title": "LoRAとは何か？低コストなAIモデル微調整と、学習後にLoRAを圧縮するPARAの解説",
-        "url": "https://zenn.dev/kas_blog/articles/20250508-lora-para-adaptive-rank-allocation",
-        "site": "Zenn(LLM)",
-        "published": "2026-05-08T04:48:24Z",
-        "description": "論文情報\n\n論文タイトル: Post-Optimization Adaptive Rank Allocation for LoRA\narXiv: https://arxiv.org/abs/2604.27796v1\n\n関連するLoRA原論文: LoRA: Low-Rank Adaptation of Large Language Models\nLoRA原論文: https://arxiv.org/...",
-        "category": "AI・技術",
-        "rss_category": "",
-        "image_url": ""
-      },
-      {
         "title": "AI に要約させずに Web 情報の原典を読む CLI を作った",
         "url": "https://zenn.dev/thkt/articles/eae521ee3f4016",
         "site": "Zenn(LLM)",
@@ -566,6 +596,16 @@
         "site": "Zenn(LLM)",
         "published": "2026-05-08T03:23:32Z",
         "description": "はじめに\n本記事では、LLMアプリケーションやAgentシステムを構築する開発者に向けて、「なぜ現在のAIは記憶を保持できないのか」「なぜRAGや要約では不十分なのか」をシステムアーキテクチャの視点から解き明かす。\nそして、その場しのぎのパッチワークではなく、システム全体を支える「Memory Layer（記憶層）」をどのように設計すべきか、さらにはそのインフラストラクチャとして注目すべき設計思想...",
+        "category": "AI・技術",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "モデル評価にいつまでも人手を割けないチームへ — LLM-as-a-Judge論文から学ぶ“LLMでLLMを採点する”設計",
+        "url": "https://zenn.dev/lluminai_tech/articles/3ddc99a694f4ae",
+        "site": "Zenn(LLM)",
+        "published": "2026-05-08T01:00:08Z",
+        "description": "はじめに\nルミナイR&amp;Dチームの栗原です。\nLLM アプリを作っていると、ほぼ必ずぶつかるのが 評価のコスト問題 です。\n\n新しいプロンプトやモデル設定を試すたびに、人手で比較するのは大変\n自動指標（BLEU / ROUGE / accuracy など）は、人間の好みをうまく反映しない\n\n本番環境では A/B テストもしたいけど、ログの読み解きにも時間がかかる\n\n\nそこで出てきたアイデアが...",
         "category": "AI・技術",
         "rss_category": "",
         "image_url": ""
@@ -671,6 +711,36 @@
         "image_url": ""
       },
       {
+        "title": "LLMとは何か、を有限列挙で証明する：Layer-0 機能必然性定理 v3.0 公開",
+        "url": "https://zenn.dev/gatchimuchio/articles/e5f8edb2fd2e3d",
+        "site": "Zenn(LLM)",
+        "published": "2026-05-07T03:10:30Z",
+        "description": "LLMとは何か、を有限列挙で証明する：Layer-0 機能必然性定理 v3.0 公開\n現代のLarge Language Modelは、6つの機能役割を必ず実装する。1つでも、その機能等価物まで含めて欠ければ、それはもうLLMではない。これを定義公理と有限全列挙で証明し、コマンド一発で再現可能にしたパッケージを公開した。\n\nGitHub：gatchimuchio/LLM-Layer-0-Funct...",
+        "category": "AI・技術",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "MTP（Multi-Token Prediction）の系譜とメカニズムを徹底解説",
+        "url": "https://zenn.dev/acrosstudioblog/articles/ad05d752e3c038",
+        "site": "Zenn(LLM)",
+        "published": "2026-05-07T03:01:13Z",
+        "description": "0. はじめに：なぜこの記事を書いたのか\n最近、界隈で噂になっているQwen 3.6 27BのDenseモデルをDGX Spark環境で試してみました。しかし、実際に動かしてみるとどうしても推論スピードが遅く、実運用に向けてネックを感じていました。そこで高速化の手法を色々調べてみたところ、「MTP（Multi-Token Prediction）を組み込むと推論が速くなるらしい」という情報に行き着き...",
+        "category": "AI・技術",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "AIはなぜ間違った投資判断をするのか｜投資エージェント実験の出発点",
+        "url": "https://zenn.dev/startspace/articles/65bb1e5cab1773",
+        "site": "Zenn(LLM)",
+        "published": "2026-05-07T03:00:09Z",
+        "description": "導入｜AIは本当に投資判断できるのか？\nLLMは「物事を理解しているAI」ではなく、「次に来る言葉を予測するAI」です。\nそれでも、ニュースを読むことができ、企業情報を整理した上で、それっぽい投資判断を出すことはできます。\nしかしここで1つ疑問があります。\nLLMが出力したその判断は、本当に正しいのでしょうか？\n株式投資では、判断を間違えればそのまま損失につながります。「それっぽい判断」では通用し...",
+        "category": "AI・技術",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
         "title": "ローカルLLM｜Minecraft自律｜踏んだバグ7種",
         "url": "https://zenn.dev/toki_mwc/articles/minecraft-hermes-3role-mineflayer-bugs",
         "site": "Zenn(LLM)",
@@ -686,6 +756,16 @@
         "site": "Zenn(LLM)",
         "published": "2026-05-07T02:29:26Z",
         "description": "はじめに\nLLMの強化学習（RLVR）では、人間が報酬関数を設計する代わりに、LLM自身に報酬を生成させるアプローチが主流になりつつある。だが、LLMが生成した報酬は本当に信頼できるのか？——という根本的な問いに対して、これまでの研究はほぼ目を背けてきた。\n既存のアプローチは「どう報酬候補を生成するか」「どの報酬候補を選ぶか」に注力する一方で、**「いつその報酬を展開する（使う）べきか」**という...",
+        "category": "AI・技術",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "BookRAGの内部アルゴリズムを解説する",
+        "url": "https://zenn.dev/shugorun/articles/d27f209a794348",
+        "site": "Zenn(LLM)",
+        "published": "2026-05-07T01:52:50Z",
+        "description": "はじめに\n皆さんこんにちは。情報工学系男子です。\n最近、RAGがアツいらしいです。アツいRAG、みんな大好きRAGの中で、ひときわ輝いていたこの論文 BookRAG: A Hierarchical Structure-aware Index-based Approach for Retrieval-Augmented Generation on Complex Documents をご存じでしょう...",
         "category": "AI・技術",
         "rss_category": "",
         "image_url": ""
