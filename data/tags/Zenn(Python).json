@@ -1,9 +1,59 @@
 {
   "site": "Zenn(Python)",
-  "last_updated": "2026-05-08T14:54:07.924575",
-  "total_articles": 3856,
+  "last_updated": "2026-05-08T16:18:33.243178",
+  "total_articles": 3851,
   "articles_by_date": {
-    "本日": [
+    "昨日": [
+      {
+        "title": "uvでDockerイメージを作るときの構成",
+        "url": "https://zenn.dev/zaspa/articles/e3abf2cf19a5e3",
+        "site": "Zenn(Python)",
+        "published": "2026-05-08T13:22:39Z",
+        "description": "はじめに\n\nPythonのパッケージ管理に uv を使うケースが増えてきています\nDocker化する場合、pip + requirements.txt をメインで使っていましたが、uv + pyproject.toml / uv.lock 前提で書く方法をまとめたいと思います\n題材としてFastAPIを使いたいと思います\n\n\n なぜ pip + requirements.txt ではなく uv +...",
+        "category": "開発",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "Python の Callable と LangChain Runnable — 「呼べるもの」を抽象化する",
+        "url": "https://zenn.dev/moridev/articles/c8cd7fc5950a8a",
+        "site": "Zenn(Python)",
+        "published": "2026-05-08T12:59:07Z",
+        "description": "Python のコードを書いていると Callable という型をよく目にします。typing.Callable[[int, str], bool] のような書き方で、引数と戻り値の型を持つ関数を表します。\nところが、これと似て非なる概念として LangChain には Runnable というインターフェイスがあります。prompt | llm | parser という記法で chain を組む...",
+        "category": "開発",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "【Python】楽天の商品価格を取得してCSV保存してみた",
+        "url": "https://zenn.dev/katsuboh/articles/6848a4f6cd4054",
+        "site": "Zenn(Python)",
+        "published": "2026-05-08T12:29:05Z",
+        "description": "今日やったこと\n楽天の商品価格をスクレイピングして、\nCSV保存するツールを作成しました。\n\n 使用したもの\n・Python\n・requests\n・BeautifulSoup\n・csv\n\n つまずいたこと\nprice取得でNoneになった。\n\n 解決方法\nHTMLを確認したところ、\nmetaタグのcontent属性に価格が入っていた。\n\n 学んだこと\nBeautifulSoupだけじゃなく、\nHT...",
+        "category": "開発",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "TypeScriptでクラスベースのコンポーネント設計 - Day 6",
+        "url": "https://zenn.dev/klo/articles/9bf349b27ea9a4",
+        "site": "Zenn(Python)",
+        "published": "2026-05-08T12:23:58Z",
+        "description": "はじめに\nDay 5では、FastAPIによるAPIハブの設計とインスタンス化の方針について書きました。\n今回はフロントエンドの技術選定と、クラスベースのコンポーネント設計について書きます。なぜReactを使わなかったのか、共通コンポーネントをどのように設計したか、バックエンドとの連携方法の判断を記録します。\nなお、機能コンポーネント実装については全容をまとめた別記事として後日公開する予定のため、...",
+        "category": "開発",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "🪡Praxia — 個人の暗黙知を組織知に自動昇格させるマルチエージェントOSSを作った",
+        "url": "https://zenn.dev/gen99/articles/88a84eddc21ce5",
+        "site": "Zenn(Python)",
+        "published": "2026-05-08T11:29:59Z",
+        "description": "TL;DR\nベテランの「効くプロンプト」が個人の引き出しに留まる問題を解消するため、業務フロー特化型マルチエージェント・オーケストレーター + 個人→組織メモリ自動循環機構 を持つ OSS「Praxia」を作りました。Apache 2.0 で公開。6 業務領域 (投資/営業/設計/購買/特許/法務) のスキルが標準同梱、SSO + RBAC + 監査ログ も組み込み済みです。\n\n\nシリーズ記事: ...",
+        "category": "開発",
+        "rss_category": "",
+        "image_url": ""
+      },
       {
         "title": "「user 12345 を削除しました」と言うのに DB が変わってない — AIエージェントの後付け検証 API を作った話",
         "url": "https://zenn.dev/ardev/articles/aecfab260f9432",
@@ -125,7 +175,7 @@
         "image_url": ""
       }
     ],
-    "昨日": [
+    "一昨日": [
       {
         "title": "FastAPIによるAPIハブ設計 - 責務分離の実践 - Day 5",
         "url": "https://zenn.dev/klo/articles/1016ec043c7d8c",
@@ -307,159 +357,57 @@
         "image_url": ""
       }
     ],
-    "一昨日": [
-      {
-        "title": "Reverse ETLのOSSを、データエンジニア2年目が作ってる話 — drt",
-        "url": "https://zenn.dev/poyo010/articles/drt-intro-zenn",
-        "site": "Zenn(Python)",
-        "published": "2026-05-06T14:54:48Z",
-        "description": "何を書くか\nX や GitHub では何度か触れてたんですが、drt (data reverse tool) という Reverse ETL の OSS を個人で作ってます。先日 v0.7.0 を出して \"Production Ready\" を一区切りつけられたタイミングなので、リポジトリの README に書いてるような機能の話より一段引いて、「Reverse ETL ってそもそも何なのか」「な...",
-        "category": "開発",
-        "rss_category": "",
-        "image_url": ""
-      },
-      {
-        "title": "タスク管理のデータ構造 - JSONLとUUIDの選択 - Day 4",
-        "url": "https://zenn.dev/klo/articles/cc7a0af4e9a394",
-        "site": "Zenn(Python)",
-        "published": "2026-05-06T14:51:31Z",
-        "description": "はじめに\nDay 3では、時間記録機能の設計とパス指定にまつわる失敗について書きました。\n今回はタスク管理機能のデータ構造について書きます。保存形式の選定・UUIDによるタスク識別・ステータス設計と、将来のNN機能との連携を見据えた判断が積み重なった部分です。\n\n\n 機能概要\nタスク管理機能は、目標を登録しステータスを割り振ることで進行度を管理する目的で実装しています。\nステータスは未着手・進行中...",
-        "category": "開発",
-        "rss_category": "",
-        "image_url": ""
-      },
-      {
-        "title": "解説通り全探索でやったのにTLEになった話 【AtCoder典型90問032 Ekiden】",
-        "url": "https://zenn.dev/kurisho/articles/atcoder-typical032",
-        "site": "Zenn(Python)",
-        "published": "2026-05-06T13:03:22Z",
-        "description": "経緯\nAtCoderの典型90問の「Ekiden」を解いたときの話。\n解説では「制約が小さいから順列全探索で解ける」とあった。\n全探索なら簡単かと思ったがTLEになって意外と苦戦してしまった。\n結果的に、全探索でACできたが実装に工夫が必要だったので備忘録として。\n提出はPython(PyPy)で行った。\n\n ざっくり問題確認\n\nN人の駅伝選手がN人の区間を走る ( N &lt;= 10 )\nどの...",
-        "category": "開発",
-        "rss_category": "",
-        "image_url": ""
-      },
-      {
-        "title": "フローチャートでAIにコードを書かせたら、開発が安定した話",
-        "url": "https://zenn.dev/schhrcat/articles/0419f9c1d38dab",
-        "site": "Zenn(Python)",
-        "published": "2026-05-06T12:05:43Z",
-        "description": "AIに「設計」を渡したら、開発が変わった話\n\n\n 堕落した開発スタイル\n最近の自分は、完全にAI頼りだった。\n「これ作って」と雑にプロンプトを投げると、それっぽいPythonコードが一瞬で出てくる。\n正直、楽しい。\nでも——どこかで違和感があった。\n\n\n 手戻りの連続\nコードは動く。でも、こんなことが繰り返されていた。\n\n微妙に仕様と違う\n再指示が必要になる\nトークンが無駄に増えていく\n結局、何度...",
-        "category": "開発",
-        "rss_category": "",
-        "image_url": ""
-      },
-      {
-        "title": "Pythonスクレイピングでスマホサイトを取得する方法【Playwright・モバイルエミュレーション・2026年版】",
-        "url": "https://zenn.dev/datajournal1/articles/633e12162c4125",
-        "site": "Zenn(Python)",
-        "published": "2026-05-06T11:05:39Z",
-        "description": "!\n本記事で紹介する手法は、対象サイトの利用規約・robots.txtを遵守した上での利用を前提としています。\n\n\n はじめに\nPCブラウザでスクレイピングしているのに、欲しいデータが取れない——原因がスマホ専用コンテンツだと気づくまでに時間がかかることがあります。\n以前、飲食店の口コミデータを収集しようとしたとき、PCブラウザからアクセスすると「アプリでご確認ください」というページにリダイレクト...",
-        "category": "開発",
-        "rss_category": "",
-        "image_url": ""
-      },
-      {
-        "title": "意外とシンプル！FastMCPでMCPサーバを解説",
-        "url": "https://zenn.dev/dktech/articles/f72d63e90f398e",
-        "site": "Zenn(Python)",
-        "published": "2026-05-06T10:34:35Z",
-        "description": "意外とシンプル！FastMCPでMCPサーバを解説\n\n\n はじめに\nMCPサーバー、最近よく聞いたり見たりすることが多いですよね。「AIに他のツールを使わせるようにする仕組み」――言葉で聞くとなんとなくイメージはできるんですが、実装や裏側の仕組みがイマイチ分からなくてモヤモヤしていました。\n今回、FastMCPという簡単にMCPサーバーを作れるPythonフレームワークを使って、自分でMCPサーバ...",
-        "category": "開発",
-        "rss_category": "",
-        "image_url": ""
-      },
-      {
-        "title": "居酒屋のつけ払いから読む x402 batch-settlement：決済構造と信頼境界の設計",
-        "url": "https://zenn.dev/sal9000/articles/dd776686d40243",
-        "site": "Zenn(Python)",
-        "published": "2026-05-06T09:28:27Z",
-        "description": "ここ 1-2 年で、エージェントが自分の判断で外部 API を叩くワークフローが現実になってきた。Claude や GPT のようなモデルが、人間からの指示を起点に、必要な情報源を選び、API を呼び、結果を統合する。研究の中だけの話ではなくて、日常の実装でこの形が普通に走り始めている。\nAPI を叩く主体がエージェントに移ると、その API に課金する仕組みも作り直さないといけない。人間がクリッ...",
-        "category": "開発",
-        "rss_category": "",
-        "image_url": ""
-      },
-      {
-        "title": "Claude Advisor Tool入門 — SonnetとOpusを組み合わせてコスト削減と品質向上を両立する",
-        "url": "https://zenn.dev/kai_kou/articles/207-claude-advisor-tool-guide",
-        "site": "Zenn(Python)",
-        "published": "2026-05-06T09:25:46Z",
-        "description": "はじめに\n2026年4月9日、AnthropicはClaude APIにAdvisor Tool（advisor_20260301）をパブリックベータとして追加しました。\nこのツールは、より高速・低コストなExecutorモデル（SonnetやHaiku）と、より高知能なAdvisorモデル（Opus 4.6）を1つのAPIリクエスト内で組み合わせる仕組みです。Executorがタスクを自律的に実...",
-        "category": "開発",
-        "rss_category": "",
-        "image_url": ""
-      },
-      {
-        "title": "DigiKey APIをPythonで叩いて、電子部品の価格・在庫を取得してみる",
-        "url": "https://zenn.dev/egghead/articles/digikey-api-python",
-        "site": "Zenn(Python)",
-        "published": "2026-05-06T06:49:52Z",
-        "description": "こんにちは、酒井です！\n株式会社 EGGHEAD（エッグヘッド）で、電子部品調達を効率化する「スマートAI調達」を開発しています。\nhttps://egghead.co.jp?utm_source=zenn&amp;utm_medium=social&amp;utm_campaign=normal\n今回は、DigiKey APIをPythonから叩いて、電子部品の検索、価格・在庫確認、BOM一括チ...",
-        "category": "開発",
-        "rss_category": "",
-        "image_url": ""
-      },
-      {
-        "title": "気象庁データで10年間の猛暑日を可視化する：Pythonスクレイピング入門",
-        "url": "https://zenn.dev/k16kgw/articles/9e371abb0ed898",
-        "site": "Zenn(Python)",
-        "published": "2026-05-06T03:36:56Z",
-        "description": "※ 本記事はClaude codeのOpus 4.7でプログラムコードを作成し、Sonnet 4.6で記事本文の執筆および細かい編集を行いました。また、「はじめに」「おわりに」については人力で執筆しました。なお、主要な出力結果については正確性を確認しており、全体のデータの傾向についても妥当であることを確認してあります。プロジェクト本体は https://github.com/k16kgw/hot_...",
-        "category": "開発",
-        "rss_category": "",
-        "image_url": ""
-      },
-      {
-        "title": "自作プログラム言語skipについて",
-        "url": "https://zenn.dev/tkea/articles/93149c76f2c91d",
-        "site": "Zenn(Python)",
-        "published": "2026-05-06T03:35:15Z",
-        "description": "skipとは\nskipは、Python,yamlで構成しています。\nS-peed\nK-ey\nI-nstant\nP-rogram\nの略です。\nこちらで公開しています:https://github.com/tkeaprograming/Skip-v0.1\nこれはバージョン0.1なのですが、v0.2からが少し不安定なので初めてならこちらがおすすめです。\n動かすには少々工夫が必要です。まず、Python3...",
-        "category": "開発",
-        "rss_category": "",
-        "image_url": ""
-      },
-      {
-        "title": "国勢調査データをSQLite×plotly×Streamlitでインタラクティブな地図アプリにする",
-        "url": "https://zenn.dev/cool_crocus678/articles/japan-census-map",
-        "site": "Zenn(Python)",
-        "published": "2026-05-06T01:42:25Z",
-        "description": "作ったアプリ\n国勢調査の労働力状態データを都道府県別の構成比（%）で可視化する地図アプリを作りました。人数（実数）では見えにくい地域特性を探索できます。\nhttps://japan-census-map-5uzfbmxnxdj2x33movxm5j.streamlit.app\n\n\n Streamlitを選んだ理由\nplotlyとの親和性が高く、インタラクティブな地図が少ないコードで実装できます。集...",
-        "category": "開発",
-        "rss_category": "",
-        "image_url": ""
-      },
-      {
-        "title": "多目的多パラメータ最適化CMOSアナログ回路",
-        "url": "https://zenn.dev/qwerewq/articles/aabd1c1a0ec5db",
-        "site": "Zenn(Python)",
-        "published": "2026-05-06T01:41:09Z",
-        "description": "はじめに\n前回は\nx = [Wn, Wp]\nだけで考えた。\n今回はパラメータを増やして、\nx = [Wn, Ln, Wp, Lp, VDD]\nで考える。\nつまり、\n\nNMOS の幅 Wn\n\nNMOS の長さ Ln\n\nPMOS の幅 Wp\n\nPMOS の長さ Lp\n\n電源電圧 VDD\n\n\nを動かして、CMOSインバータの性能を比べる。\n見る性能は次の4つにする。\n1. 伝搬遅延 td    小さいほ...",
-        "category": "開発",
-        "rss_category": "",
-        "image_url": ""
-      },
-      {
-        "title": "[AI][Kaggle]Kaggle実践 番外編 Jupyter NotebookのTips",
-        "url": "https://zenn.dev/rg687076/articles/54dbae71b28293",
-        "site": "Zenn(Python)",
-        "published": "2026-05-05T23:15:34Z",
-        "description": "Kaggle実践1(『Titanic生存者予測』)\n\n Abstract\n\nJupyter Notebookのちょっとした使い方とか\n\n\n 概要\nKaggleのTitanicコンペに参加してるんだけど、Jupyter Notebookでちょっとだけ\"？\"ってなる時があって、その解決方法を書いとこうと思いまして。\n\n Tips\n\n Jupyter Notebookで行番号を表示する。\nView → ...",
-        "category": "開発",
-        "rss_category": "",
-        "image_url": ""
-      },
-      {
-        "title": "Pythonのゼロ除算エラーを「ブラックホール情報パラドックス」で解決する",
-        "url": "https://zenn.dev/cocoa3j21/articles/e612809f1ed613",
-        "site": "Zenn(Python)",
-        "published": "2026-05-05T19:03:16Z",
-        "description": "🌌 Pythonのゼロ除算エラーを「ブラックホール情報パラドックス」で解決する\nこんにちは。プログラミング初心者の暇人（年金生活者）です。\n最近、AIを相手にツールの日曜大工をしながら「宇宙の真理」や「ビッグバン」について語り合うのにハマっています。\n「これ使ってナントカ賞を受賞して、賞金をもらって楽をしたい……！」\nと、AI相手に議論していましたところ、とある壮大な妄想に取り憑かれました。\n「ゼ...",
-        "category": "開発",
-        "rss_category": "",
-        "image_url": ""
-      }
-    ],
     "2026-05": [
+      {
+        "title": "uvでDockerイメージを作るときの構成",
+        "url": "https://zenn.dev/zaspa/articles/e3abf2cf19a5e3",
+        "site": "Zenn(Python)",
+        "published": "2026-05-08T13:22:39Z",
+        "description": "はじめに\n\nPythonのパッケージ管理に uv を使うケースが増えてきています\nDocker化する場合、pip + requirements.txt をメインで使っていましたが、uv + pyproject.toml / uv.lock 前提で書く方法をまとめたいと思います\n題材としてFastAPIを使いたいと思います\n\n\n なぜ pip + requirements.txt ではなく uv +...",
+        "category": "開発",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "Python の Callable と LangChain Runnable — 「呼べるもの」を抽象化する",
+        "url": "https://zenn.dev/moridev/articles/c8cd7fc5950a8a",
+        "site": "Zenn(Python)",
+        "published": "2026-05-08T12:59:07Z",
+        "description": "Python のコードを書いていると Callable という型をよく目にします。typing.Callable[[int, str], bool] のような書き方で、引数と戻り値の型を持つ関数を表します。\nところが、これと似て非なる概念として LangChain には Runnable というインターフェイスがあります。prompt | llm | parser という記法で chain を組む...",
+        "category": "開発",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "【Python】楽天の商品価格を取得してCSV保存してみた",
+        "url": "https://zenn.dev/katsuboh/articles/6848a4f6cd4054",
+        "site": "Zenn(Python)",
+        "published": "2026-05-08T12:29:05Z",
+        "description": "今日やったこと\n楽天の商品価格をスクレイピングして、\nCSV保存するツールを作成しました。\n\n 使用したもの\n・Python\n・requests\n・BeautifulSoup\n・csv\n\n つまずいたこと\nprice取得でNoneになった。\n\n 解決方法\nHTMLを確認したところ、\nmetaタグのcontent属性に価格が入っていた。\n\n 学んだこと\nBeautifulSoupだけじゃなく、\nHT...",
+        "category": "開発",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "TypeScriptでクラスベースのコンポーネント設計 - Day 6",
+        "url": "https://zenn.dev/klo/articles/9bf349b27ea9a4",
+        "site": "Zenn(Python)",
+        "published": "2026-05-08T12:23:58Z",
+        "description": "はじめに\nDay 5では、FastAPIによるAPIハブの設計とインスタンス化の方針について書きました。\n今回はフロントエンドの技術選定と、クラスベースのコンポーネント設計について書きます。なぜReactを使わなかったのか、共通コンポーネントをどのように設計したか、バックエンドとの連携方法の判断を記録します。\nなお、機能コンポーネント実装については全容をまとめた別記事として後日公開する予定のため、...",
+        "category": "開発",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "🪡Praxia — 個人の暗黙知を組織知に自動昇格させるマルチエージェントOSSを作った",
+        "url": "https://zenn.dev/gen99/articles/88a84eddc21ce5",
+        "site": "Zenn(Python)",
+        "published": "2026-05-08T11:29:59Z",
+        "description": "TL;DR\nベテランの「効くプロンプト」が個人の引き出しに留まる問題を解消するため、業務フロー特化型マルチエージェント・オーケストレーター + 個人→組織メモリ自動循環機構 を持つ OSS「Praxia」を作りました。Apache 2.0 で公開。6 業務領域 (投資/営業/設計/購買/特許/法務) のスキルが標準同梱、SSO + RBAC + 監査ログ も組み込み済みです。\n\n\nシリーズ記事: ...",
+        "category": "開発",
+        "rss_category": "",
+        "image_url": ""
+      },
       {
         "title": "「user 12345 を削除しました」と言うのに DB が変わってない — AIエージェントの後付け検証 API を作った話",
         "url": "https://zenn.dev/ardev/articles/aecfab260f9432",
