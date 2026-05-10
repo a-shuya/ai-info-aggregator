@@ -1,7 +1,7 @@
 {
   "site": "Zenn(Python)",
-  "last_updated": "2026-05-10T19:34:38.537803",
-  "total_articles": 3905,
+  "last_updated": "2026-05-10T20:26:44.091245",
+  "total_articles": 3899,
   "articles_by_date": {
     "本日": [
       {
@@ -27,41 +27,11 @@
     ],
     "昨日": [
       {
-        "title": "書籍のOCRにLLMを組み合わせることで精度を上げるだけでなく文書構造や図も表現した記録",
-        "url": "https://zenn.dev/phpmyadmin/articles/0dba6fef411e21",
-        "site": "Zenn(Python)",
-        "published": "2026-05-10T14:58:21Z",
-        "description": "課題\n手元にあるビジネス書1冊 (縦書き和文、120ページ分) のページ画像をテキスト化したかった。\n入力は PNG 120 枚 (1ページ=1ファイル)、解像度は十分にきれい。図表はほぼなく、文章メイン。\n「専用OCR」「ローカルLLM」「両者の併用」の3手法を実装し、文字精度・処理時間・Markdown構造化要素の数で比較した。\n\n 結論\n\n\n\n手法\n正解類似度 (1849文字基準)\n120ペ...",
-        "category": "開発",
-        "rss_category": "",
-        "image_url": ""
-      },
-      {
-        "title": "ReDel 再現実装：LLMが自ら委譲する再帰マルチエージェントの仕組みと実装",
-        "url": "https://zenn.dev/sonder01/articles/redel-recursive-delegation-multi-agent-4c401942e7",
-        "site": "Zenn(Python)",
-        "published": "2026-05-10T14:54:08Z",
-        "description": "何を再現するか\nReDel: A Toolkit for LLM-Powered Recursive Multi-Agent Systems（EMNLP 2024 Demo）\n\narXiv: https://arxiv.org/abs/2408.02248\n\nGitHub: https://github.com/zhudotexe/redel\n\n著者: Andrew Zhu, Liam Dugan...",
-        "category": "開発",
-        "rss_category": "",
-        "image_url": ""
-      },
-      {
         "title": "Pythonの高階関数をLuaで表現する",
         "url": "https://zenn.dev/yokamak/articles/975a93fa58894a",
         "site": "Zenn(Python)",
         "published": "2026-05-10T14:09:25Z",
         "description": "サンプル例１\n以下、Pythonで関数の中に関数を定義。\ndef print_price(price,f):\n    print(f(price))\n\ndef zeikomi(price):\n    return int(price*1.1)\n\nprint_price(800,zeikomi)\n#880\nLuaでPythonの高階関数を同じように表現することが可能です。\n-- 高階関数の例：pri...",
-        "category": "開発",
-        "rss_category": "",
-        "image_url": ""
-      },
-      {
-        "title": "AI-Traderを最小再現する：自律エージェント金融ベンチマークをPythonで組む",
-        "url": "https://zenn.dev/sonder01/articles/ai-trader-benchmark-repro",
-        "site": "Zenn(Python)",
-        "published": "2026-05-10T13:52:39Z",
-        "description": "何を再現するか\nこの記事では、論文 AI-Trader: Benchmarking Autonomous Agents in Real-Time Financial Markets の中核アイデアを、ローカルで動く最小ベンチマークとして再現します。\n先に日付を正確に書いておくと、この論文は arXiv ID 2512.10971 として 2025年12月1日 に公開されています。論文中の評価期間に...",
         "category": "開発",
         "rss_category": "",
         "image_url": ""
@@ -87,7 +57,7 @@
         "image_url": ""
       },
       {
-        "title": "研究用コードしか書いたことがなかった大学院生が、初ハッカソンで学んだ「チーム開発」の難しさ (ハッカソン体験記)",
+        "title": "研究用コードしか書いたことがなかった大学院生が、初ハッカソンで学んだ「チーム開発」の難しさ",
         "url": "https://zenn.dev/chagama01/articles/9a097f28f06175",
         "site": "Zenn(Python)",
         "published": "2026-05-10T11:11:33Z",
@@ -121,7 +91,7 @@
         "url": "https://zenn.dev/umiyama5/articles/37c35003d10bfc",
         "site": "Zenn(Python)",
         "published": "2026-05-10T09:41:59Z",
-        "description": "はじめに\n自分用の家計簿を題材に、入力アプリ(Androidアプリ)からBI分析までをつなぐ「家計簿ETL」を作りました。\nこの記事は家計簿という小さな題材を使って、ETLからBIまでの流れを設計した個人的な経験を整理したものです。\n※ 本記事の文章作成にはAIを一部利用しています。構成、実装内容、設計判断、最終的な記述確認は筆者が行っています。\n\n 背景\n私は過去にPower BIで分析レポート...",
+        "description": "はじめに\n自分用の家計簿を題材に、入力アプリからBI分析までをつなぐミニETLを作りました。\n構成は以下のとおりです。\nAndroidアプリ（Kotlin + Jetpack Compose）\n  ↓ CSV出力\nGoogle Drive\n  ↓ Pythonスクリプト(Google Colab)\nBigQuery\n  ↓\nPower BI Desktop\nこの記事は家計簿という小さな題材を使って...",
         "category": "開発",
         "rss_category": "",
         "image_url": ""
@@ -187,21 +157,21 @@
         "image_url": ""
       },
       {
-        "title": "AIと作る日本株デイトレードボット開発記 #2 スクリーニング：今日上がる銘柄を探せ",
-        "url": "https://zenn.dev/ryoya_aitech/articles/daytrade-bot-02-screener",
-        "site": "Zenn(Python)",
-        "published": "2026-05-10T02:58:59Z",
-        "description": "前回のおさらい\n#1でシステム全体像を説明しました。\n今回は「238銘柄からどうやって今日取引する銘柄を選ぶか」を解説します。\n\n\n スクリーニングの目的\nデイトレードで一番重要なのは銘柄選定です。\nどんなに良いシグナルエンジンがあっても、そもそも「今日動かない銘柄」を選んでしまえば意味がありません。\n毎朝8:50に自動でスクリーニングを実行し、「今日上がりそうな銘柄」を10件選んでLINEに送信...",
-        "category": "開発",
-        "rss_category": "",
-        "image_url": ""
-      },
-      {
         "title": "給料だけじゃ1000万は無理。だからAIに株を任せることにした",
         "url": "https://zenn.dev/ryoya_aitech/articles/daytrade-bot-01-intro",
         "site": "Zenn(Python)",
         "published": "2026-05-10T02:58:59Z",
         "description": "突然ですが、お金の話をします\n27歳、手取り約25万円の会社員です。\n現在の金融資産は 550万円。すべてNISAで積み立てた投資信託です。目標は 1000万円。\nあと450万円。毎月5万円をNISAに積み立て続けた場合、いつ達成できるか計算してみました。\n\n\n\n想定リターン\n達成までの期間\n\n\n\n\n運用益なし（積立のみ）\n約7年半\n\n\n年利3%（保守的）\n約5年4ヶ月\n\n\n年利5%（オルカン想定...",
+        "category": "開発",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "AIと作る日本株デイトレードボット開発記 #2 スクリーニング：今日上がる銘柄を探せ",
+        "url": "https://zenn.dev/ryoya_aitech/articles/daytrade-bot-02-screener",
+        "site": "Zenn(Python)",
+        "published": "2026-05-10T02:58:59Z",
+        "description": "前回のおさらい\n#1でシステム全体像を説明しました。\n今回は「238銘柄からどうやって今日取引する銘柄を選ぶか」を解説します。\n\n\n スクリーニングの目的\nデイトレードで一番重要なのは銘柄選定です。\nどんなに良いシグナルエンジンがあっても、そもそも「今日動かない銘柄」を選んでしまえば意味がありません。\n毎朝8:50に自動でスクリーニングを実行し、「今日上がりそうな銘柄」を10件選んでLINEに送信...",
         "category": "開発",
         "rss_category": "",
         "image_url": ""
@@ -491,41 +461,11 @@
         "image_url": ""
       },
       {
-        "title": "書籍のOCRにLLMを組み合わせることで精度を上げるだけでなく文書構造や図も表現した記録",
-        "url": "https://zenn.dev/phpmyadmin/articles/0dba6fef411e21",
-        "site": "Zenn(Python)",
-        "published": "2026-05-10T14:58:21Z",
-        "description": "課題\n手元にあるビジネス書1冊 (縦書き和文、120ページ分) のページ画像をテキスト化したかった。\n入力は PNG 120 枚 (1ページ=1ファイル)、解像度は十分にきれい。図表はほぼなく、文章メイン。\n「専用OCR」「ローカルLLM」「両者の併用」の3手法を実装し、文字精度・処理時間・Markdown構造化要素の数で比較した。\n\n 結論\n\n\n\n手法\n正解類似度 (1849文字基準)\n120ペ...",
-        "category": "開発",
-        "rss_category": "",
-        "image_url": ""
-      },
-      {
-        "title": "ReDel 再現実装：LLMが自ら委譲する再帰マルチエージェントの仕組みと実装",
-        "url": "https://zenn.dev/sonder01/articles/redel-recursive-delegation-multi-agent-4c401942e7",
-        "site": "Zenn(Python)",
-        "published": "2026-05-10T14:54:08Z",
-        "description": "何を再現するか\nReDel: A Toolkit for LLM-Powered Recursive Multi-Agent Systems（EMNLP 2024 Demo）\n\narXiv: https://arxiv.org/abs/2408.02248\n\nGitHub: https://github.com/zhudotexe/redel\n\n著者: Andrew Zhu, Liam Dugan...",
-        "category": "開発",
-        "rss_category": "",
-        "image_url": ""
-      },
-      {
         "title": "Pythonの高階関数をLuaで表現する",
         "url": "https://zenn.dev/yokamak/articles/975a93fa58894a",
         "site": "Zenn(Python)",
         "published": "2026-05-10T14:09:25Z",
         "description": "サンプル例１\n以下、Pythonで関数の中に関数を定義。\ndef print_price(price,f):\n    print(f(price))\n\ndef zeikomi(price):\n    return int(price*1.1)\n\nprint_price(800,zeikomi)\n#880\nLuaでPythonの高階関数を同じように表現することが可能です。\n-- 高階関数の例：pri...",
-        "category": "開発",
-        "rss_category": "",
-        "image_url": ""
-      },
-      {
-        "title": "AI-Traderを最小再現する：自律エージェント金融ベンチマークをPythonで組む",
-        "url": "https://zenn.dev/sonder01/articles/ai-trader-benchmark-repro",
-        "site": "Zenn(Python)",
-        "published": "2026-05-10T13:52:39Z",
-        "description": "何を再現するか\nこの記事では、論文 AI-Trader: Benchmarking Autonomous Agents in Real-Time Financial Markets の中核アイデアを、ローカルで動く最小ベンチマークとして再現します。\n先に日付を正確に書いておくと、この論文は arXiv ID 2512.10971 として 2025年12月1日 に公開されています。論文中の評価期間に...",
         "category": "開発",
         "rss_category": "",
         "image_url": ""
@@ -551,7 +491,7 @@
         "image_url": ""
       },
       {
-        "title": "研究用コードしか書いたことがなかった大学院生が、初ハッカソンで学んだ「チーム開発」の難しさ (ハッカソン体験記)",
+        "title": "研究用コードしか書いたことがなかった大学院生が、初ハッカソンで学んだ「チーム開発」の難しさ",
         "url": "https://zenn.dev/chagama01/articles/9a097f28f06175",
         "site": "Zenn(Python)",
         "published": "2026-05-10T11:11:33Z",
@@ -585,7 +525,7 @@
         "url": "https://zenn.dev/umiyama5/articles/37c35003d10bfc",
         "site": "Zenn(Python)",
         "published": "2026-05-10T09:41:59Z",
-        "description": "はじめに\n自分用の家計簿を題材に、入力アプリ(Androidアプリ)からBI分析までをつなぐ「家計簿ETL」を作りました。\nこの記事は家計簿という小さな題材を使って、ETLからBIまでの流れを設計した個人的な経験を整理したものです。\n※ 本記事の文章作成にはAIを一部利用しています。構成、実装内容、設計判断、最終的な記述確認は筆者が行っています。\n\n 背景\n私は過去にPower BIで分析レポート...",
+        "description": "はじめに\n自分用の家計簿を題材に、入力アプリからBI分析までをつなぐミニETLを作りました。\n構成は以下のとおりです。\nAndroidアプリ（Kotlin + Jetpack Compose）\n  ↓ CSV出力\nGoogle Drive\n  ↓ Pythonスクリプト(Google Colab)\nBigQuery\n  ↓\nPower BI Desktop\nこの記事は家計簿という小さな題材を使って...",
         "category": "開発",
         "rss_category": "",
         "image_url": ""
@@ -651,21 +591,21 @@
         "image_url": ""
       },
       {
-        "title": "AIと作る日本株デイトレードボット開発記 #2 スクリーニング：今日上がる銘柄を探せ",
-        "url": "https://zenn.dev/ryoya_aitech/articles/daytrade-bot-02-screener",
-        "site": "Zenn(Python)",
-        "published": "2026-05-10T02:58:59Z",
-        "description": "前回のおさらい\n#1でシステム全体像を説明しました。\n今回は「238銘柄からどうやって今日取引する銘柄を選ぶか」を解説します。\n\n\n スクリーニングの目的\nデイトレードで一番重要なのは銘柄選定です。\nどんなに良いシグナルエンジンがあっても、そもそも「今日動かない銘柄」を選んでしまえば意味がありません。\n毎朝8:50に自動でスクリーニングを実行し、「今日上がりそうな銘柄」を10件選んでLINEに送信...",
-        "category": "開発",
-        "rss_category": "",
-        "image_url": ""
-      },
-      {
         "title": "給料だけじゃ1000万は無理。だからAIに株を任せることにした",
         "url": "https://zenn.dev/ryoya_aitech/articles/daytrade-bot-01-intro",
         "site": "Zenn(Python)",
         "published": "2026-05-10T02:58:59Z",
         "description": "突然ですが、お金の話をします\n27歳、手取り約25万円の会社員です。\n現在の金融資産は 550万円。すべてNISAで積み立てた投資信託です。目標は 1000万円。\nあと450万円。毎月5万円をNISAに積み立て続けた場合、いつ達成できるか計算してみました。\n\n\n\n想定リターン\n達成までの期間\n\n\n\n\n運用益なし（積立のみ）\n約7年半\n\n\n年利3%（保守的）\n約5年4ヶ月\n\n\n年利5%（オルカン想定...",
+        "category": "開発",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "AIと作る日本株デイトレードボット開発記 #2 スクリーニング：今日上がる銘柄を探せ",
+        "url": "https://zenn.dev/ryoya_aitech/articles/daytrade-bot-02-screener",
+        "site": "Zenn(Python)",
+        "published": "2026-05-10T02:58:59Z",
+        "description": "前回のおさらい\n#1でシステム全体像を説明しました。\n今回は「238銘柄からどうやって今日取引する銘柄を選ぶか」を解説します。\n\n\n スクリーニングの目的\nデイトレードで一番重要なのは銘柄選定です。\nどんなに良いシグナルエンジンがあっても、そもそも「今日動かない銘柄」を選んでしまえば意味がありません。\n毎朝8:50に自動でスクリーニングを実行し、「今日上がりそうな銘柄」を10件選んでLINEに送信...",
         "category": "開発",
         "rss_category": "",
         "image_url": ""
