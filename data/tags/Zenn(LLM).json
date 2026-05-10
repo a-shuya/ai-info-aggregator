@@ -1,9 +1,99 @@
 {
   "site": "Zenn(LLM)",
-  "last_updated": "2026-05-10T10:35:46.381704",
-  "total_articles": 3278,
+  "last_updated": "2026-05-10T11:30:56.314167",
+  "total_articles": 3296,
   "articles_by_date": {
     "本日": [
+      {
+        "title": "RAGのRetrieve戦略 — Adaptive RAGの変遷",
+        "url": "https://zenn.dev/senna/articles/4f48c1d4d71163",
+        "site": "Zenn(LLM)",
+        "published": "2026-05-10T10:15:21Z",
+        "description": "Adaptive RAGとは\nAdaptive RAG（または Adaptive Retrieval）は、retrieve するタイミング・回数・戦略をクエリやモデル状態に応じて動的に変えるRAG手法群を指す総称です。\n素朴なSingle-step RAGが抱える構造的な問題に対応するための手法です。\nSkill-RAG という論文で「検索がうまくいかなかった時に、失敗の原因を見分けて対処を切り替...",
+        "category": "AI・技術",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "「Context is the New Code」を実装に落とす：Patrick Debois の CDLC をチームに導入する設計メモ",
+        "url": "https://zenn.dev/aerign/articles/35e44677478bf4",
+        "site": "Zenn(LLM)",
+        "published": "2026-05-10T09:59:59Z",
+        "description": "TL;DR\n\nDevOpsDays の発案者 Patrick Debois が AI Engineer で 「Context is the New Code」 という講演を行い、CDLC（Context Development Life Cycle） という概念を提唱した。\nLLM はエンジン、コンテキストはその燃料。プロンプトを「その場限りの文字列」ではなく 生成・テスト・配布・監視・適応のルー...",
+        "category": "AI・技術",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "自分のトーン規約を LLM に教える — プロンプトでどこまで届くか",
+        "url": "https://zenn.dev/giteki/articles/003-prompt-tuning-for-tone",
+        "site": "Zenn(LLM)",
+        "published": "2026-05-10T09:38:22Z",
+        "description": "ローカル LLM にトーン規約を「プロンプトで」どこまで教えられるかを試した工程記録。前記事（002）で作った点検スクリプトに --prompt PATH を足し、プロンプトの書き方を5通り入れ替えながら、固定の入力で出力を比べる。最後にプロンプトはそのまま、モデル世代だけ上げた比較を1本足す。\n\n なぜ続編にするか\n002 では Ollama に Zenn 下書きを点検させる小道具を組んだ。スキ...",
+        "category": "AI・技術",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "CodexをローカルLLMで駆動する",
+        "url": "https://zenn.dev/robustonian/articles/codex_with_local_llm",
+        "site": "Zenn(LLM)",
+        "published": "2026-05-10T07:47:08Z",
+        "description": "はじめに\n本記事では、ローカルLLMを用いてCodex CLIを駆動するための方法についてまとめる。\n!\n検証環境はUbuntu 24.04 LTSで行っているが、一般的なLinuxや、Mac、WSL環境でもそのまま使えるかも。\n\n\n 背景\n私は生成AIのベンチマーク評価をすることが趣味の一つなのだが、最近はLLMとClaude CodeやCodexなどのハーネスを組み合わせた際のエージェント性能...",
+        "category": "AI・技術",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "AIエージェントが「役職者」、「相棒」になる日",
+        "url": "https://zenn.dev/daishiro/articles/ai-agent-enterprise-personal-session",
+        "site": "Zenn(LLM)",
+        "published": "2026-05-10T07:44:11Z",
+        "description": "Anthropicが発表したManaged Agentsの新アーキテクチャを読んでいて、「これは単なる技術改善ではないな」って感じました。AIが人間社会にどう組み込まれていくかの構造が、ここで変わりつつあります。\n\n 従来のAIエージェントの限界\nこれまでのAIエージェントは、1つのコンテナにすべてが詰まっていました。\n\n推論（考える部分）\nツール実行（動く部分）\n会話の記憶（覚える部分）\n\nこれ...",
+        "category": "AI・技術",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "CachyOSでllama.cppをコンパイルして動かす",
+        "url": "https://zenn.dev/craftgear/articles/7789a677af2ae4",
+        "site": "Zenn(LLM)",
+        "published": "2026-05-10T07:13:28Z",
+        "description": "MTPやD-Flashなどの新しい最適化をいち早く試すために、なるべく簡単にllama.cppをソースからビルドして動かせるようにします。\n\n なぜCachyOSか\nCachyOSはArch Linuxベースのディストリビューションで、ゲーミング対応を積極的に行っていることで有名です。\nhttps://cachyos.org\nnVidiaの最新ドライバが最初から含まれているので、LLM向け環境を構...",
+        "category": "AI・技術",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "RubyLLM × さくらのAI Engine — 「OpenAI 互換」でハマったこと",
+        "url": "https://zenn.dev/takeyuwebinc/articles/daec34094c21ce",
+        "site": "Zenn(LLM)",
+        "published": "2026-05-10T06:36:03Z",
+        "description": "さくらのAI Engine（以下 さくら）は OpenAI 互換 API を提供しており、base_url を差し替えるだけで OpenAI 用に書いたクライアントが動きます。RubyLLM から繋ぐぶんには、API キーと openai_api_base を さくら の値に差し替えるだけで chat.ask までは通ります。ただし「OpenAI 互換」が保証するのは「同じクライアントで叩ける」段...",
+        "category": "AI・技術",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "ローカルLLM3モデルを物性物理の質問でファクトチェック｜Qwen3・LLM-jp-4・Gemma3",
+        "url": "https://zenn.dev/black_lotus/articles/2f68d0790002d9",
+        "site": "Zenn(LLM)",
+        "published": "2026-05-10T06:33:50Z",
+        "description": "ローカルLLM3モデルを物性物理の質問でファクトチェック｜Qwen3・LLM-jp-4・Gemma3\n\n はじめに\n前回まではOllamaでQwen3とLLM-jp-4を動かして、同じ質問を投げて感触を比べました。\n今回はGemma3を加えて、3モデルを5つの質問で比較します。\nただし、汎用的なベンチマーク記事にはしませんでした。\nローカルLLMの比較記事は世にたくさんあります。\nそこに記事をもう...",
+        "category": "AI・技術",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "Human Return Point――HITLと人間監督の再設計",
+        "url": "https://zenn.dev/dantarg/articles/human-return-point",
+        "site": "Zenn(LLM)",
+        "published": "2026-05-10T06:26:28Z",
+        "description": "連続記事メモ：本稿は「責任経路工学」シリーズの一部です。\n第6回はこちら\n\n現時点では、責任経路を「責任経路モデル（理論層）」「責任経路設計（設計層）」「責任経路工学（実装・監査層）」の三層として整理しています。本稿は、その三層構造を前提に、工学層の構成要素である Human Return Point を扱います。\n\n\n はじめに\nAIガバナンスでは、Human-in-the-loop という言葉...",
+        "category": "AI・技術",
+        "rss_category": "",
+        "image_url": ""
+      },
       {
         "title": "プロンプト改善をガチャにしない——LLMによるレビューをGround Truthで評価する",
         "url": "https://zenn.dev/bloomblock_blog/articles/llm-system-evaluation",
@@ -400,6 +490,96 @@
       }
     ],
     "2026-05": [
+      {
+        "title": "RAGのRetrieve戦略 — Adaptive RAGの変遷",
+        "url": "https://zenn.dev/senna/articles/4f48c1d4d71163",
+        "site": "Zenn(LLM)",
+        "published": "2026-05-10T10:15:21Z",
+        "description": "Adaptive RAGとは\nAdaptive RAG（または Adaptive Retrieval）は、retrieve するタイミング・回数・戦略をクエリやモデル状態に応じて動的に変えるRAG手法群を指す総称です。\n素朴なSingle-step RAGが抱える構造的な問題に対応するための手法です。\nSkill-RAG という論文で「検索がうまくいかなかった時に、失敗の原因を見分けて対処を切り替...",
+        "category": "AI・技術",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "「Context is the New Code」を実装に落とす：Patrick Debois の CDLC をチームに導入する設計メモ",
+        "url": "https://zenn.dev/aerign/articles/35e44677478bf4",
+        "site": "Zenn(LLM)",
+        "published": "2026-05-10T09:59:59Z",
+        "description": "TL;DR\n\nDevOpsDays の発案者 Patrick Debois が AI Engineer で 「Context is the New Code」 という講演を行い、CDLC（Context Development Life Cycle） という概念を提唱した。\nLLM はエンジン、コンテキストはその燃料。プロンプトを「その場限りの文字列」ではなく 生成・テスト・配布・監視・適応のルー...",
+        "category": "AI・技術",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "自分のトーン規約を LLM に教える — プロンプトでどこまで届くか",
+        "url": "https://zenn.dev/giteki/articles/003-prompt-tuning-for-tone",
+        "site": "Zenn(LLM)",
+        "published": "2026-05-10T09:38:22Z",
+        "description": "ローカル LLM にトーン規約を「プロンプトで」どこまで教えられるかを試した工程記録。前記事（002）で作った点検スクリプトに --prompt PATH を足し、プロンプトの書き方を5通り入れ替えながら、固定の入力で出力を比べる。最後にプロンプトはそのまま、モデル世代だけ上げた比較を1本足す。\n\n なぜ続編にするか\n002 では Ollama に Zenn 下書きを点検させる小道具を組んだ。スキ...",
+        "category": "AI・技術",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "CodexをローカルLLMで駆動する",
+        "url": "https://zenn.dev/robustonian/articles/codex_with_local_llm",
+        "site": "Zenn(LLM)",
+        "published": "2026-05-10T07:47:08Z",
+        "description": "はじめに\n本記事では、ローカルLLMを用いてCodex CLIを駆動するための方法についてまとめる。\n!\n検証環境はUbuntu 24.04 LTSで行っているが、一般的なLinuxや、Mac、WSL環境でもそのまま使えるかも。\n\n\n 背景\n私は生成AIのベンチマーク評価をすることが趣味の一つなのだが、最近はLLMとClaude CodeやCodexなどのハーネスを組み合わせた際のエージェント性能...",
+        "category": "AI・技術",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "AIエージェントが「役職者」、「相棒」になる日",
+        "url": "https://zenn.dev/daishiro/articles/ai-agent-enterprise-personal-session",
+        "site": "Zenn(LLM)",
+        "published": "2026-05-10T07:44:11Z",
+        "description": "Anthropicが発表したManaged Agentsの新アーキテクチャを読んでいて、「これは単なる技術改善ではないな」って感じました。AIが人間社会にどう組み込まれていくかの構造が、ここで変わりつつあります。\n\n 従来のAIエージェントの限界\nこれまでのAIエージェントは、1つのコンテナにすべてが詰まっていました。\n\n推論（考える部分）\nツール実行（動く部分）\n会話の記憶（覚える部分）\n\nこれ...",
+        "category": "AI・技術",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "CachyOSでllama.cppをコンパイルして動かす",
+        "url": "https://zenn.dev/craftgear/articles/7789a677af2ae4",
+        "site": "Zenn(LLM)",
+        "published": "2026-05-10T07:13:28Z",
+        "description": "MTPやD-Flashなどの新しい最適化をいち早く試すために、なるべく簡単にllama.cppをソースからビルドして動かせるようにします。\n\n なぜCachyOSか\nCachyOSはArch Linuxベースのディストリビューションで、ゲーミング対応を積極的に行っていることで有名です。\nhttps://cachyos.org\nnVidiaの最新ドライバが最初から含まれているので、LLM向け環境を構...",
+        "category": "AI・技術",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "RubyLLM × さくらのAI Engine — 「OpenAI 互換」でハマったこと",
+        "url": "https://zenn.dev/takeyuwebinc/articles/daec34094c21ce",
+        "site": "Zenn(LLM)",
+        "published": "2026-05-10T06:36:03Z",
+        "description": "さくらのAI Engine（以下 さくら）は OpenAI 互換 API を提供しており、base_url を差し替えるだけで OpenAI 用に書いたクライアントが動きます。RubyLLM から繋ぐぶんには、API キーと openai_api_base を さくら の値に差し替えるだけで chat.ask までは通ります。ただし「OpenAI 互換」が保証するのは「同じクライアントで叩ける」段...",
+        "category": "AI・技術",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "ローカルLLM3モデルを物性物理の質問でファクトチェック｜Qwen3・LLM-jp-4・Gemma3",
+        "url": "https://zenn.dev/black_lotus/articles/2f68d0790002d9",
+        "site": "Zenn(LLM)",
+        "published": "2026-05-10T06:33:50Z",
+        "description": "ローカルLLM3モデルを物性物理の質問でファクトチェック｜Qwen3・LLM-jp-4・Gemma3\n\n はじめに\n前回まではOllamaでQwen3とLLM-jp-4を動かして、同じ質問を投げて感触を比べました。\n今回はGemma3を加えて、3モデルを5つの質問で比較します。\nただし、汎用的なベンチマーク記事にはしませんでした。\nローカルLLMの比較記事は世にたくさんあります。\nそこに記事をもう...",
+        "category": "AI・技術",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "Human Return Point――HITLと人間監督の再設計",
+        "url": "https://zenn.dev/dantarg/articles/human-return-point",
+        "site": "Zenn(LLM)",
+        "published": "2026-05-10T06:26:28Z",
+        "description": "連続記事メモ：本稿は「責任経路工学」シリーズの一部です。\n第6回はこちら\n\n現時点では、責任経路を「責任経路モデル（理論層）」「責任経路設計（設計層）」「責任経路工学（実装・監査層）」の三層として整理しています。本稿は、その三層構造を前提に、工学層の構成要素である Human Return Point を扱います。\n\n\n はじめに\nAIガバナンスでは、Human-in-the-loop という言葉...",
+        "category": "AI・技術",
+        "rss_category": "",
+        "image_url": ""
+      },
       {
         "title": "プロンプト改善をガチャにしない——LLMによるレビューをGround Truthで評価する",
         "url": "https://zenn.dev/bloomblock_blog/articles/llm-system-evaluation",
