@@ -1,9 +1,119 @@
 {
   "site": "Zenn(Python)",
-  "last_updated": "2026-05-10T11:30:56.314167",
-  "total_articles": 3889,
+  "last_updated": "2026-05-10T12:36:22.931782",
+  "total_articles": 3907,
   "articles_by_date": {
     "本日": [
+      {
+        "title": "Python の contextvars 入門 — スレッドと async を横断する文脈管理",
+        "url": "https://zenn.dev/moridev/articles/8a38bf111ea8d9",
+        "site": "Zenn(Python)",
+        "published": "2026-05-10T12:35:26Z",
+        "description": "リクエスト ID をログに混ぜたい、ユーザーの言語設定を関数の引数で持ち回らずに使いたい、テナント ID を全クエリに自動付与したい。こうしたニーズは Web 開発でよく出てきます。\nPython では古くから threading.local が同じ目的に使われていました。スレッドごとに独立した変数を持てる仕組みです。一方で、asyncio を使うコードではこの threading.local だ...",
+        "category": "開発",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "LightGBM LambdaRank で時系列データを扱うときの walkforward 評価の罠",
+        "url": "https://zenn.dev/karasuda_lab/articles/e538a97c0b2d10",
+        "site": "Zenn(Python)",
+        "published": "2026-05-10T11:17:54Z",
+        "description": "個人プロジェクトで LightGBM の LambdaRank を使い始めたとき、僕は同じ罠に3回ハマりました。最初の2回は「まあそういうもんか」と流してしまって、3回目でやっと「これは構造的な問題だ」と気づきました。\nこのあと読んでもらうことは、特別な話ではありません。時系列データでランキング学習をするなら、誰でも必ず直面することです。でも誰も最初から知っているわけじゃないし、僕みたいに3回ハマ...",
+        "category": "開発",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "研究用コードしか書いたことがなかった大学院生が、初ハッカソンで学んだ「チーム開発」の難しさ",
+        "url": "https://zenn.dev/chagama01/articles/9a097f28f06175",
+        "site": "Zenn(Python)",
+        "published": "2026-05-10T11:11:33Z",
+        "description": "1. はじめに\n先日、初めてハッカソンに参加しました。\n本記事では、そこで作成したツールの実装内容と、初めてのチーム開発を通じて学んだことをまとめます。\n\n 2. 参加の背景\n普段は大学院で研究活動をしています。研究を進める中で、理論開発、作業自動化やデータ解析のためにコードを書くようになってから、1〜2年ほどが経ちました。\nただ、これまでのコーディングは自分一人で完結するものがほとんどで、作成す...",
+        "category": "開発",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "📈Praxia × 営業業務 — 商談準備 6h → 1h、提案合意率 +15〜20pt",
+        "url": "https://zenn.dev/gen99/articles/d9e8e4e33e0330",
+        "site": "Zenn(Python)",
+        "published": "2026-05-10T11:10:05Z",
+        "description": "このシリーズについて: Praxia は業務特化型マルチエージェント・オーケストレーター + 個人→組織メモリ自動循環機構 を持つ OSS。本記事は営業業務での具体的な活用例にフォーカスします。\n全体紹介は こちら。\n\n\n\n 前提となる現場の課題\nB2B 営業の現場でよく聞く失敗:\n\n「IR をざっと読んだだけで臨んだら、相手 CFO から『3 ヶ月前のあの設備投資、御社の製品でカバーできますか?...",
+        "category": "開発",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "自作Pythonパッケージのバージョン管理方法の結論",
+        "url": "https://zenn.dev/d3c0b/articles/3be6500b9304d3",
+        "site": "Zenn(Python)",
+        "published": "2026-05-10T11:01:05Z",
+        "description": "自作Pythonパッケージのバージョン管理問題\n自作PythonパッケージをPyPIへ上げる際には、基本的には以下の3箇所のバージョン情報を記載/変更する必要があるようです。\n\n\npyproject.toml（必須）\nパッケージトップレベルの__init__.pyの__version__変数（慣習）\nコミットのタグ（GitHubでリリースを管理する場合）\n\nリリースの際にこれら３箇所を毎回手動で変...",
+        "category": "開発",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "自作アプリからBigQuery・Power BIまで、個人開発で自分用のミニ家計簿ETLを設計した",
+        "url": "https://zenn.dev/umiyama5/articles/37c35003d10bfc",
+        "site": "Zenn(Python)",
+        "published": "2026-05-10T09:41:59Z",
+        "description": "はじめに\n自分用の家計簿を題材に、入力アプリからBI分析までをつなぐミニETLを作りました。\n構成は以下のとおりです。\nAndroidアプリ（Kotlin + Jetpack Compose）\n  ↓ CSV出力\nGoogle Drive\n  ↓ Pythonスクリプト(Google Colab)\nBigQuery\n  ↓\nPower BI Desktop\nこの記事は家計簿という小さな題材を使って...",
+        "category": "開発",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "自分のトーン規約を LLM に教える — プロンプトでどこまで届くか",
+        "url": "https://zenn.dev/giteki/articles/003-prompt-tuning-for-tone",
+        "site": "Zenn(Python)",
+        "published": "2026-05-10T09:38:22Z",
+        "description": "ローカル LLM にトーン規約を「プロンプトで」どこまで教えられるかを試した工程記録。前記事（002）で作った点検スクリプトに --prompt PATH を足し、プロンプトの書き方を5通り入れ替えながら、固定の入力で出力を比べる。最後にプロンプトはそのまま、モデル世代だけ上げた比較を1本足す。\n\n なぜ続編にするか\n002 では Ollama に Zenn 下書きを点検させる小道具を組んだ。スキ...",
+        "category": "開発",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "C-3PO、自己ループで自分を直し、外向けの顔も整える ── v1.6 〜 v1.9 と GitHub Pages を建てた話",
+        "url": "https://zenn.dev/satoh_y_0323/articles/5aa01c7e977626",
+        "site": "Zenn(Python)",
+        "published": "2026-05-10T07:41:06Z",
+        "description": "前回記事: https://zenn.dev/satoh_y_0323/articles/7a2ea5069cf542\nC3 GitHub: https://github.com/satoh-y-0323/claude-code-conductor / PyPI: https://pypi.org/project/claude-code-conductor/ / 公式ドキュメント: https:/...",
+        "category": "開発",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "dmol-book を読む — 分子・材料データの深層学習を1章ずつ動かす",
+        "url": "https://zenn.dev/amana/books/dmol-reading",
+        "site": "Zenn(Python)",
+        "published": "2026-05-10T06:52:53Z",
+        "description": "分子や材料データに深層学習 (DL) を応用するための代表的な公開教科書\ndmol-book (Andrew White 著, \"Deep Learning for Molecules and Materials\")\nを、1章ずつ読み解く学習ノート。\n\nマテリアルズ・インフォマティクス (MI) や ケモインフォマティクスに足を踏み入れたい\n学生・研究者・(自分のような)エンジニア向けに、サイトに...",
+        "category": "開発",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "PDFをMarkdownに爆速変換！OSS『Marker』をIntel ARC GPUで動かすまでの奮闘記",
+        "url": "https://zenn.dev/dewins/articles/marker_blog_post",
+        "site": "Zenn(Python)",
+        "published": "2026-05-10T05:02:36Z",
+        "description": "はじめに\n大量のPDF資料をMarkdown形式に変換して、ナレッジベースとして活用したい！ そんな思いから、高精度なPDF変換で話題のOSS Marker を試してみることにしました。\nこのツールはCPUかGPUかを選択できて、GPU使うことで処理を高速化できるのが魅力です。\n今回は私の開発環境である Fedora + Intel ARC GPU という、少し珍しい（？）組み合わせで環境を構築し...",
+        "category": "開発",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "5.年齢の特徴量エンジニアリングで、年齢(Age)をRandomForestRegressorで推測するやり方を深堀りする",
+        "url": "https://zenn.dev/rg687076/articles/e98b6772e230c3",
+        "site": "Zenn(Python)",
+        "published": "2026-05-10T04:02:59Z",
+        "description": "Kaggle実践1(『Titanic生存者予測』1.まず一通りやってみる)\nKaggle実践1(『Titanic生存者予測』2.ブラッシュアップのロードマップ)\nKaggle実践1(『Titanic生存者予測』3.Name(敬称)の特徴量エンジニアリング)\nKaggle実践1(『Titanic生存者予測』4.家族人数の特徴量エンジニアリング)\nKaggle実践1(『Titanic生存者予測』5.年...",
+        "category": "開発",
+        "rss_category": "",
+        "image_url": ""
+      },
       {
         "title": "「顔を検出するAI」から紐解くCNN",
         "url": "https://zenn.dev/ringo_acid/articles/3ebcc64dae7d90",
@@ -15,21 +125,21 @@
         "image_url": ""
       },
       {
-        "title": "AIと作る日本株デイトレードボット開発記 #2 スクリーニング：今日上がる銘柄を探せ",
-        "url": "https://zenn.dev/ryoya_aitech/articles/daytrade-bot-02-screener",
-        "site": "Zenn(Python)",
-        "published": "2026-05-10T02:58:59Z",
-        "description": "前回のおさらい\n#1でシステム全体像を説明しました。\n今回は「238銘柄からどうやって今日取引する銘柄を選ぶか」を解説します。\n\n\n スクリーニングの目的\nデイトレードで一番重要なのは銘柄選定です。\nどんなに良いシグナルエンジンがあっても、そもそも「今日動かない銘柄」を選んでしまえば意味がありません。\n毎朝8:50に自動でスクリーニングを実行し、「今日上がりそうな銘柄」を10件選んでLINEに送信...",
-        "category": "開発",
-        "rss_category": "",
-        "image_url": ""
-      },
-      {
         "title": "給料だけじゃ1000万は無理。だからAIに株を任せることにした",
         "url": "https://zenn.dev/ryoya_aitech/articles/daytrade-bot-01-intro",
         "site": "Zenn(Python)",
         "published": "2026-05-10T02:58:59Z",
         "description": "突然ですが、お金の話をします\n27歳、手取り約25万円の会社員です。\n現在の金融資産は 550万円。すべてNISAで積み立てた投資信託です。目標は 1000万円。\nあと450万円。毎月5万円をNISAに積み立て続けた場合、いつ達成できるか計算してみました。\n\n\n\n想定リターン\n達成までの期間\n\n\n\n\n運用益なし（積立のみ）\n約7年半\n\n\n年利3%（保守的）\n約5年4ヶ月\n\n\n年利5%（オルカン想定...",
+        "category": "開発",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "AIと作る日本株デイトレードボット開発記 #2 スクリーニング：今日上がる銘柄を探せ",
+        "url": "https://zenn.dev/ryoya_aitech/articles/daytrade-bot-02-screener",
+        "site": "Zenn(Python)",
+        "published": "2026-05-10T02:58:59Z",
+        "description": "前回のおさらい\n#1でシステム全体像を説明しました。\n今回は「238銘柄からどうやって今日取引する銘柄を選ぶか」を解説します。\n\n\n スクリーニングの目的\nデイトレードで一番重要なのは銘柄選定です。\nどんなに良いシグナルエンジンがあっても、そもそも「今日動かない銘柄」を選んでしまえば意味がありません。\n毎朝8:50に自動でスクリーニングを実行し、「今日上がりそうな銘柄」を10件選んでLINEに送信...",
         "category": "開発",
         "rss_category": "",
         "image_url": ""
@@ -95,16 +205,6 @@
         "image_url": ""
       },
       {
-        "title": "グラフDB・GraphRAG・GNN ローカル環境ハンズオン",
-        "url": "https://zenn.dev/ppgm/books/graphdb-graphrag-gnn-hands-on",
-        "site": "Zenn(Python)",
-        "published": "2026-05-09T19:22:54Z",
-        "description": "Neo4j（Docker）、LlamaIndex + OpenAI による GraphRAG、PyTorch Geometric による GNN を、映画レコメンドという一貫したテーマで体験する実践ガイドです。グラフ技術・機械学習の経験ゼロから、3つの技術を手を動かしながら学べます。",
-        "category": "開発",
-        "rss_category": "",
-        "image_url": ""
-      },
-      {
         "title": "靴屋の店主が、日々のSNS投稿が面倒すぎてThreads同時投稿ツールを自作した話",
         "url": "https://zenn.dev/sns_studio/articles/shoes-shop-owner-built-sns-studio",
         "site": "Zenn(Python)",
@@ -152,16 +252,6 @@
         "site": "Zenn(Python)",
         "published": "2026-05-09T14:52:45Z",
         "description": "本記事は、AtCoder Beginner Contest 457 (Polaris.AIプログラミングコンテスト) に参加した際の、A〜D問題の復習と解答の備忘録です。コンテスト中に考えた解法の方針や、提出したPython of A〜D問題の復習と解答の備忘録です。コンテスト中に考えた解法の方針や、提出したPythonのコードについて整理しています。\n\n A - Array /\n実行時間制限: ...",
-        "category": "開発",
-        "rss_category": "",
-        "image_url": ""
-      },
-      {
-        "title": "「実装はAIに任せた。でも精度は出なかった」",
-        "url": "https://zenn.dev/beckento/articles/a000216f224e53",
-        "site": "Zenn(Python)",
-        "published": "2026-05-09T14:26:53Z",
-        "description": "「実装はAIに任せた。でも精度は出なかった」\n\n 衛星×政府統計で八幡浜みかん出荷量予測を試みた全記録\n\n\n はじめに\nコードはほとんど書いていない。設計だけした。それでも精度は出なかった。\n「設計は人間、実装はClaudeCode」という分業体制で、衛星データと政府統計を組み合わせた農業収量予測パイプラインを構築した。コーディング工数はほぼゼロで動くものができた。しかし完成したモデルは、「毎年平...",
         "category": "開発",
         "rss_category": "",
         "image_url": ""
@@ -461,6 +551,116 @@
     ],
     "2026-05": [
       {
+        "title": "Python の contextvars 入門 — スレッドと async を横断する文脈管理",
+        "url": "https://zenn.dev/moridev/articles/8a38bf111ea8d9",
+        "site": "Zenn(Python)",
+        "published": "2026-05-10T12:35:26Z",
+        "description": "リクエスト ID をログに混ぜたい、ユーザーの言語設定を関数の引数で持ち回らずに使いたい、テナント ID を全クエリに自動付与したい。こうしたニーズは Web 開発でよく出てきます。\nPython では古くから threading.local が同じ目的に使われていました。スレッドごとに独立した変数を持てる仕組みです。一方で、asyncio を使うコードではこの threading.local だ...",
+        "category": "開発",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "LightGBM LambdaRank で時系列データを扱うときの walkforward 評価の罠",
+        "url": "https://zenn.dev/karasuda_lab/articles/e538a97c0b2d10",
+        "site": "Zenn(Python)",
+        "published": "2026-05-10T11:17:54Z",
+        "description": "個人プロジェクトで LightGBM の LambdaRank を使い始めたとき、僕は同じ罠に3回ハマりました。最初の2回は「まあそういうもんか」と流してしまって、3回目でやっと「これは構造的な問題だ」と気づきました。\nこのあと読んでもらうことは、特別な話ではありません。時系列データでランキング学習をするなら、誰でも必ず直面することです。でも誰も最初から知っているわけじゃないし、僕みたいに3回ハマ...",
+        "category": "開発",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "研究用コードしか書いたことがなかった大学院生が、初ハッカソンで学んだ「チーム開発」の難しさ",
+        "url": "https://zenn.dev/chagama01/articles/9a097f28f06175",
+        "site": "Zenn(Python)",
+        "published": "2026-05-10T11:11:33Z",
+        "description": "1. はじめに\n先日、初めてハッカソンに参加しました。\n本記事では、そこで作成したツールの実装内容と、初めてのチーム開発を通じて学んだことをまとめます。\n\n 2. 参加の背景\n普段は大学院で研究活動をしています。研究を進める中で、理論開発、作業自動化やデータ解析のためにコードを書くようになってから、1〜2年ほどが経ちました。\nただ、これまでのコーディングは自分一人で完結するものがほとんどで、作成す...",
+        "category": "開発",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "📈Praxia × 営業業務 — 商談準備 6h → 1h、提案合意率 +15〜20pt",
+        "url": "https://zenn.dev/gen99/articles/d9e8e4e33e0330",
+        "site": "Zenn(Python)",
+        "published": "2026-05-10T11:10:05Z",
+        "description": "このシリーズについて: Praxia は業務特化型マルチエージェント・オーケストレーター + 個人→組織メモリ自動循環機構 を持つ OSS。本記事は営業業務での具体的な活用例にフォーカスします。\n全体紹介は こちら。\n\n\n\n 前提となる現場の課題\nB2B 営業の現場でよく聞く失敗:\n\n「IR をざっと読んだだけで臨んだら、相手 CFO から『3 ヶ月前のあの設備投資、御社の製品でカバーできますか?...",
+        "category": "開発",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "自作Pythonパッケージのバージョン管理方法の結論",
+        "url": "https://zenn.dev/d3c0b/articles/3be6500b9304d3",
+        "site": "Zenn(Python)",
+        "published": "2026-05-10T11:01:05Z",
+        "description": "自作Pythonパッケージのバージョン管理問題\n自作PythonパッケージをPyPIへ上げる際には、基本的には以下の3箇所のバージョン情報を記載/変更する必要があるようです。\n\n\npyproject.toml（必須）\nパッケージトップレベルの__init__.pyの__version__変数（慣習）\nコミットのタグ（GitHubでリリースを管理する場合）\n\nリリースの際にこれら３箇所を毎回手動で変...",
+        "category": "開発",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "自作アプリからBigQuery・Power BIまで、個人開発で自分用のミニ家計簿ETLを設計した",
+        "url": "https://zenn.dev/umiyama5/articles/37c35003d10bfc",
+        "site": "Zenn(Python)",
+        "published": "2026-05-10T09:41:59Z",
+        "description": "はじめに\n自分用の家計簿を題材に、入力アプリからBI分析までをつなぐミニETLを作りました。\n構成は以下のとおりです。\nAndroidアプリ（Kotlin + Jetpack Compose）\n  ↓ CSV出力\nGoogle Drive\n  ↓ Pythonスクリプト(Google Colab)\nBigQuery\n  ↓\nPower BI Desktop\nこの記事は家計簿という小さな題材を使って...",
+        "category": "開発",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "自分のトーン規約を LLM に教える — プロンプトでどこまで届くか",
+        "url": "https://zenn.dev/giteki/articles/003-prompt-tuning-for-tone",
+        "site": "Zenn(Python)",
+        "published": "2026-05-10T09:38:22Z",
+        "description": "ローカル LLM にトーン規約を「プロンプトで」どこまで教えられるかを試した工程記録。前記事（002）で作った点検スクリプトに --prompt PATH を足し、プロンプトの書き方を5通り入れ替えながら、固定の入力で出力を比べる。最後にプロンプトはそのまま、モデル世代だけ上げた比較を1本足す。\n\n なぜ続編にするか\n002 では Ollama に Zenn 下書きを点検させる小道具を組んだ。スキ...",
+        "category": "開発",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "C-3PO、自己ループで自分を直し、外向けの顔も整える ── v1.6 〜 v1.9 と GitHub Pages を建てた話",
+        "url": "https://zenn.dev/satoh_y_0323/articles/5aa01c7e977626",
+        "site": "Zenn(Python)",
+        "published": "2026-05-10T07:41:06Z",
+        "description": "前回記事: https://zenn.dev/satoh_y_0323/articles/7a2ea5069cf542\nC3 GitHub: https://github.com/satoh-y-0323/claude-code-conductor / PyPI: https://pypi.org/project/claude-code-conductor/ / 公式ドキュメント: https:/...",
+        "category": "開発",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "dmol-book を読む — 分子・材料データの深層学習を1章ずつ動かす",
+        "url": "https://zenn.dev/amana/books/dmol-reading",
+        "site": "Zenn(Python)",
+        "published": "2026-05-10T06:52:53Z",
+        "description": "分子や材料データに深層学習 (DL) を応用するための代表的な公開教科書\ndmol-book (Andrew White 著, \"Deep Learning for Molecules and Materials\")\nを、1章ずつ読み解く学習ノート。\n\nマテリアルズ・インフォマティクス (MI) や ケモインフォマティクスに足を踏み入れたい\n学生・研究者・(自分のような)エンジニア向けに、サイトに...",
+        "category": "開発",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "PDFをMarkdownに爆速変換！OSS『Marker』をIntel ARC GPUで動かすまでの奮闘記",
+        "url": "https://zenn.dev/dewins/articles/marker_blog_post",
+        "site": "Zenn(Python)",
+        "published": "2026-05-10T05:02:36Z",
+        "description": "はじめに\n大量のPDF資料をMarkdown形式に変換して、ナレッジベースとして活用したい！ そんな思いから、高精度なPDF変換で話題のOSS Marker を試してみることにしました。\nこのツールはCPUかGPUかを選択できて、GPU使うことで処理を高速化できるのが魅力です。\n今回は私の開発環境である Fedora + Intel ARC GPU という、少し珍しい（？）組み合わせで環境を構築し...",
+        "category": "開発",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "5.年齢の特徴量エンジニアリングで、年齢(Age)をRandomForestRegressorで推測するやり方を深堀りする",
+        "url": "https://zenn.dev/rg687076/articles/e98b6772e230c3",
+        "site": "Zenn(Python)",
+        "published": "2026-05-10T04:02:59Z",
+        "description": "Kaggle実践1(『Titanic生存者予測』1.まず一通りやってみる)\nKaggle実践1(『Titanic生存者予測』2.ブラッシュアップのロードマップ)\nKaggle実践1(『Titanic生存者予測』3.Name(敬称)の特徴量エンジニアリング)\nKaggle実践1(『Titanic生存者予測』4.家族人数の特徴量エンジニアリング)\nKaggle実践1(『Titanic生存者予測』5.年...",
+        "category": "開発",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
         "title": "「顔を検出するAI」から紐解くCNN",
         "url": "https://zenn.dev/ringo_acid/articles/3ebcc64dae7d90",
         "site": "Zenn(Python)",
@@ -471,21 +671,21 @@
         "image_url": ""
       },
       {
-        "title": "AIと作る日本株デイトレードボット開発記 #2 スクリーニング：今日上がる銘柄を探せ",
-        "url": "https://zenn.dev/ryoya_aitech/articles/daytrade-bot-02-screener",
-        "site": "Zenn(Python)",
-        "published": "2026-05-10T02:58:59Z",
-        "description": "前回のおさらい\n#1でシステム全体像を説明しました。\n今回は「238銘柄からどうやって今日取引する銘柄を選ぶか」を解説します。\n\n\n スクリーニングの目的\nデイトレードで一番重要なのは銘柄選定です。\nどんなに良いシグナルエンジンがあっても、そもそも「今日動かない銘柄」を選んでしまえば意味がありません。\n毎朝8:50に自動でスクリーニングを実行し、「今日上がりそうな銘柄」を10件選んでLINEに送信...",
-        "category": "開発",
-        "rss_category": "",
-        "image_url": ""
-      },
-      {
         "title": "給料だけじゃ1000万は無理。だからAIに株を任せることにした",
         "url": "https://zenn.dev/ryoya_aitech/articles/daytrade-bot-01-intro",
         "site": "Zenn(Python)",
         "published": "2026-05-10T02:58:59Z",
         "description": "突然ですが、お金の話をします\n27歳、手取り約25万円の会社員です。\n現在の金融資産は 550万円。すべてNISAで積み立てた投資信託です。目標は 1000万円。\nあと450万円。毎月5万円をNISAに積み立て続けた場合、いつ達成できるか計算してみました。\n\n\n\n想定リターン\n達成までの期間\n\n\n\n\n運用益なし（積立のみ）\n約7年半\n\n\n年利3%（保守的）\n約5年4ヶ月\n\n\n年利5%（オルカン想定...",
+        "category": "開発",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "AIと作る日本株デイトレードボット開発記 #2 スクリーニング：今日上がる銘柄を探せ",
+        "url": "https://zenn.dev/ryoya_aitech/articles/daytrade-bot-02-screener",
+        "site": "Zenn(Python)",
+        "published": "2026-05-10T02:58:59Z",
+        "description": "前回のおさらい\n#1でシステム全体像を説明しました。\n今回は「238銘柄からどうやって今日取引する銘柄を選ぶか」を解説します。\n\n\n スクリーニングの目的\nデイトレードで一番重要なのは銘柄選定です。\nどんなに良いシグナルエンジンがあっても、そもそも「今日動かない銘柄」を選んでしまえば意味がありません。\n毎朝8:50に自動でスクリーニングを実行し、「今日上がりそうな銘柄」を10件選んでLINEに送信...",
         "category": "開発",
         "rss_category": "",
         "image_url": ""
@@ -551,16 +751,6 @@
         "image_url": ""
       },
       {
-        "title": "グラフDB・GraphRAG・GNN ローカル環境ハンズオン",
-        "url": "https://zenn.dev/ppgm/books/graphdb-graphrag-gnn-hands-on",
-        "site": "Zenn(Python)",
-        "published": "2026-05-09T19:22:54Z",
-        "description": "Neo4j（Docker）、LlamaIndex + OpenAI による GraphRAG、PyTorch Geometric による GNN を、映画レコメンドという一貫したテーマで体験する実践ガイドです。グラフ技術・機械学習の経験ゼロから、3つの技術を手を動かしながら学べます。",
-        "category": "開発",
-        "rss_category": "",
-        "image_url": ""
-      },
-      {
         "title": "靴屋の店主が、日々のSNS投稿が面倒すぎてThreads同時投稿ツールを自作した話",
         "url": "https://zenn.dev/sns_studio/articles/shoes-shop-owner-built-sns-studio",
         "site": "Zenn(Python)",
@@ -606,16 +796,6 @@
         "site": "Zenn(Python)",
         "published": "2026-05-09T14:52:45Z",
         "description": "本記事は、AtCoder Beginner Contest 457 (Polaris.AIプログラミングコンテスト) に参加した際の、A〜D問題の復習と解答の備忘録です。コンテスト中に考えた解法の方針や、提出したPython of A〜D問題の復習と解答の備忘録です。コンテスト中に考えた解法の方針や、提出したPythonのコードについて整理しています。\n\n A - Array /\n実行時間制限: ...",
-        "category": "開発",
-        "rss_category": "",
-        "image_url": ""
-      },
-      {
-        "title": "「実装はAIに任せた。でも精度は出なかった」",
-        "url": "https://zenn.dev/beckento/articles/a000216f224e53",
-        "site": "Zenn(Python)",
-        "published": "2026-05-09T14:26:53Z",
-        "description": "「実装はAIに任せた。でも精度は出なかった」\n\n 衛星×政府統計で八幡浜みかん出荷量予測を試みた全記録\n\n\n はじめに\nコードはほとんど書いていない。設計だけした。それでも精度は出なかった。\n「設計は人間、実装はClaudeCode」という分業体制で、衛星データと政府統計を組み合わせた農業収量予測パイプラインを構築した。コーディング工数はほぼゼロで動くものができた。しかし完成したモデルは、「毎年平...",
         "category": "開発",
         "rss_category": "",
         "image_url": ""
