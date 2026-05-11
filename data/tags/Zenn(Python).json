@@ -1,15 +1,125 @@
 {
   "site": "Zenn(Python)",
-  "last_updated": "2026-05-11T14:08:30.286084",
-  "total_articles": 3927,
+  "last_updated": "2026-05-11T16:46:52.258504",
+  "total_articles": 3925,
   "articles_by_date": {
-    "本日": [
+    "昨日": [
+      {
+        "title": "時間記録をCSVで行う理由 - Day 9",
+        "url": "https://zenn.dev/klo/articles/a4e0b774016b2a",
+        "site": "Zenn(Python)",
+        "published": "2026-05-11T14:52:03Z",
+        "description": "はじめに\nDay 8では、データ保存先の設計を3回変えることになった経緯について書きました。\n今回は時間記録の保存形式にCSVを採用した理由と、フォーマット設計の判断について書きます。\n\n\n なぜCSVを選んだか\n時間記録の保存形式にCSVを採用した理由は、NN機能での読み込みに適していると判断したためです。\nCSVの特徴は、1行目にヘッダーを定義し2行目以降にデータを入れる構造です。NN機能で読...",
+        "category": "開発",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "MCPサーバーを1時間で自作する：Claude Code に自分のツールを持たせる最短ルート",
+        "url": "https://zenn.dev/yokotaro/articles/41367484adb7f4",
+        "site": "Zenn(Python)",
+        "published": "2026-05-11T14:18:15Z",
+        "description": "はじめに\nClaude Code に「自社のDBを参照させたい」「自作のAPIを叩かせたい」と思ったことはないだろうか。それを実現するのが MCP（Model Context Protocol） だ。\n公式ドキュメントは英語で、とっつきにくく見える。だが実態はシンプルで、TypeScript なら30行足らずでツールを1本定義できる。この記事では「MCPサーバーとは何か」の概念から、hello-w...",
+        "category": "開発",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "Claude Agent SDK 入門：Python 30行で自分だけのAIエージェントを作る",
+        "url": "https://zenn.dev/yokotaro/articles/af304f93110b90",
+        "site": "Zenn(Python)",
+        "published": "2026-05-11T14:09:43Z",
+        "description": "はじめに\n「AIエージェントを作りたいけど、LangChainは複雑すぎる」「ChatGPT APIは使えるけど、ファイル操作や検索を自分で全部実装するのが面倒」——そう感じたことはないだろうか。\nClaude Agent SDK は、そのボトルネックを根本から解決する。pip install claude-agent-sdk の1行で、ファイル読み書き・コマンド実行・Web検索といったツール群が...",
+        "category": "開発",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "ClaudeCodeでviライクエディタ「FoxEditor」を作ってみた#1",
+        "url": "https://zenn.dev/schhrcat/articles/d2ba511ddf35a1",
+        "site": "Zenn(Python)",
+        "published": "2026-05-11T12:54:54Z",
+        "description": "1. はじめに\nWindowsで動く、viライクなシンプルなエディタを自作してみたかった。\n※筆者は職場ではviで開発を行っている。\n※慣れるとホームポジションを維持できるので楽(慣れるまでがシンドイ)\n※viが入っていないLinuxは存在していない(ハズ)なので客先での作業も安心\n「エディタは何を使ってますか？」の問いに対して、VS Codeやviやemacsなど様々な回答があるだろうが、「自作...",
+        "category": "開発",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "LangGraph の config 伝搬と ContextVar の関係を読み解く",
+        "url": "https://zenn.dev/moridev/articles/9a2cec54d7d068",
+        "site": "Zenn(Python)",
+        "published": "2026-05-11T11:13:06Z",
+        "description": "LangGraph でグラフを書いていると、RunnableConfig という辞書がノード関数の第 2 引数で受け取れることに気づきます。thread_id や recursion_limit を入れたり、configurable フィールドにアプリ独自の設定を入れたり、と便利に使えます。\nasync def fetch_node(state: State, config: RunnableCo...",
+        "category": "開発",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "NVIDIA製GPUのCompute Capabilityを改めて確認する",
+        "url": "https://zenn.dev/aiforall/articles/3da8b0b6724ea7",
+        "site": "Zenn(Python)",
+        "published": "2026-05-11T10:10:05Z",
+        "description": "Google Colabの無料版で使用可能なTesla T4など発売時期が古いNVIDIA製GPUでローカルLLM関連のコードを実行すると以下のようなエラーに直面することがあります。\nValueError: Bfloat16 is only supported on GPUs with compute capability of at least 8.0. Your Tesla T4 GPU ha...",
+        "category": "開発",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "Windows 11でPythonの基本環境を構築する",
+        "url": "https://zenn.dev/edamame_lab/articles/087e6d44cd1a80",
+        "site": "Zenn(Python)",
+        "published": "2026-05-11T09:50:46Z",
+        "description": "はじめに\nこの記事では、Windows 11 で Python の基本的な開発環境を構築する手順を説明します。\nPython をインストールするだけでなく、次の内容まで扱います。\n\nPython のインストール\nPython のバージョン確認\n長すぎるファイルパスへの対策\n作業用フォルダの作成\n仮想環境 .venv の作成\n基本的な Python パッケージのインストール\nJupyter Note...",
+        "category": "開発",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "【Python】不可解な「逆円周率ノイズ」を、局所解からAIを救うアテにする",
+        "url": "https://zenn.dev/cocoa3j21/articles/b72a764450e23a",
+        "site": "Zenn(Python)",
+        "published": "2026-05-11T09:49:20Z",
+        "description": "1. 数字は喋っている。「逆円周率」という思考実験\n円周率 \\pi = 3.1415926535\\dots\nこの数字を眺めているとき、ふと奇妙な直感にとらわれた。\n円周率が無限に続く無理数であるということは、「この物理空間には完全な円（静止・安定）は存在しない」という証明である。\n現実の物質は、円になろうとしてもなれず、永遠に「ズレ」を修正する微細な振動（エラー修復）を繰り返しているはずだ。\nなら...",
+        "category": "開発",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "Langfuseの第一歩〜なにができるのか〜",
+        "url": "https://zenn.dev/mochitec_tech/articles/03d30d23086e88",
+        "site": "Zenn(Python)",
+        "published": "2026-05-11T09:47:14Z",
+        "description": "はじめに\n5つのAgentが連鎖するSNS自動投稿サービスを動かしています。各Agentが何をinput/outputしてどこで詰まったのかを、ログ出力だけでは追えなくなってきたので、LLMアプリの観測ツール Langfuse を入れました。\nこの記事では、セットアップ手順は公式ドキュメントや先行記事に譲り、「動いている状態で何が見えるか」 にスクショ付きでフォーカスします。Langfuseシリー...",
+        "category": "開発",
+        "rss_category": "",
+        "image_url": ""
+      },
       {
         "title": "【古いスマホ活用術】重力センサーで「座った時間」を監視。毎日の作業時間をDiscordに全自動記録する0円DIY",
         "url": "https://zenn.dev/notekeikei/articles/2a7d634ef61edf",
         "site": "Zenn(Python)",
         "published": "2026-05-11T08:48:26Z",
         "description": "【古いスマホ活用術】重力センサーで「座った時間」を監視。毎日の作業時間をDiscordに全自動記録する0円DIY\n\n\n はじめに\n引き出しの奥で眠っている「古いスマホ」、皆さんはどうしていますか？\n在宅ワークが増えて、「自分が今日、実際に何時間机に向かって作業していたか」を正確に把握したいと思うようになりました。市販のIoT着席センサーやスマートチェアは数万円するし、スマートウォッチのスタンド機能...",
+        "category": "開発",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "AIボット初日、3つのエラーで詰んだ話【デイトレボット開発記 #4】",
+        "url": "https://zenn.dev/ryoya_aitech/articles/daytrade-bot-04-firstrun",
+        "site": "Zenn(Python)",
+        "published": "2026-05-11T08:02:40Z",
+        "description": "動かしてみたら、全然動かなかった\n「PCを起動してkabu STATIONを開くだけでいい」と思っていました。\n結果：ボットは動かず、LINEも来ず、気づいたらPCがスリープしていました。\n今回はボット初日に遭遇した3つのエラーと、その解決方法を記録します。\n\n\n エラー① タスクスケジューラーがボットを起動できなかった\n\n 症状\n朝8:45に自動起動するよう設定したはずなのに、何も起きない。\n\n...",
+        "category": "開発",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "Python・LINE・Claudeで作る自動売買ボットの設計図【デイトレボット開発記 #2】",
+        "url": "https://zenn.dev/ryoya_aitech/articles/daytrade-bot-02-system",
+        "site": "Zenn(Python)",
+        "published": "2026-05-11T08:02:40Z",
+        "description": "前回のおさらい\n#1「給料だけじゃ1000万は無理。だからAIに株を任せることにした」では、ボットを作った動機を話しました。\n今回は 「どうやって作ったか」 の設計全体を解説します。\n\n\n 技術スタック（ほぼ無料）\n言語:       Python 3.11\n価格データ: yfinance（無料・15分遅延）\n           kabu STATION API（無料・リアルタイム）\n取引API...",
         "category": "開発",
         "rss_category": "",
         "image_url": ""
@@ -135,26 +245,6 @@
         "image_url": ""
       },
       {
-        "title": "要求工学でAIチャットボットに「会話力」を持たせた{非同期アーキテクチャ}——農家エンジニアのチャットボット開発記⑦",
-        "url": "https://zenn.dev/hiroakikody/articles/6ce276d4d5fe3b",
-        "site": "Zenn(Python)",
-        "published": "2026-05-10T21:05:33Z",
-        "description": "起：クレソンAIに足りなかったもの\n連日のブラッシュアップで、クレソンの使い方を教えてくれるチャットボットがどんどん使いやすくなってきている。\n前回のVol.6で紹介したPhase 3bでは、Tool Selectorを実装し、挨拶への返答が爆速になった。しかし「クレソンで何か作りたい」という曖昧な質問には、40秒かけてRAGで答えるしかなかった。ユーザーが何人分・何ジャンルを求めているかわからな...",
-        "category": "開発",
-        "rss_category": "",
-        "image_url": ""
-      },
-      {
-        "title": "「施策は本当に効果があったのか」──因果推論に学ぶアップリフトモデリング入門",
-        "url": "https://zenn.dev/k568/articles/uplift-modeling-meta-learner-intro",
-        "site": "Zenn(Python)",
-        "published": "2026-05-10T15:52:20Z",
-        "description": "はじめに\nこんにちは、ギックスでエンジニアをしています中島です。\n業務の中で推薦モデルの管理を行っているのですが、近しい業務を行っている方であれば「顧客への推薦内容は適切なのか」「この施策は本当に効果があったのか」と考えることは多いのではないでしょうか。特にリコメンドやクーポン配布の文脈では、そのクーポンは、本当に売上を押し上げたのか？ と問い直すのは意外と難しい問題です。\n難しい理由の一つは、や...",
-        "category": "開発",
-        "rss_category": "",
-        "image_url": ""
-      },
-      {
         "title": "git pullでデータが消えた - 保存先設計を3回変えた話 - Day 8",
         "url": "https://zenn.dev/klo/articles/ee303febdef657",
         "site": "Zenn(Python)",
@@ -165,27 +255,7 @@
         "image_url": ""
       }
     ],
-    "昨日": [
-      {
-        "title": "書籍のOCRにLLMを組み合わせることで精度を上げるだけでなく文書構造や図も表現した記録",
-        "url": "https://zenn.dev/phpmyadmin/articles/0dba6fef411e21",
-        "site": "Zenn(Python)",
-        "published": "2026-05-10T14:58:21Z",
-        "description": "課題\n手元にあるビジネス書1冊 (縦書き和文、120ページ分) のページ画像をテキスト化したかった。\n入力は PNG 120 枚 (1ページ=1ファイル)、解像度は十分にきれい。図表はほぼなく、文章メイン。\n「専用OCR」「ローカルLLM」「両者の併用」の3手法を実装し、文字精度・処理時間・Markdown構造化要素の数で比較した。\n\n 結論\n\n\n\n手法\n正解類似度 (1849文字基準)\n120ペ...",
-        "category": "開発",
-        "rss_category": "",
-        "image_url": ""
-      },
-      {
-        "title": "ReDel 再現実装：LLMが自ら委譲する再帰マルチエージェントの仕組みと実装",
-        "url": "https://zenn.dev/sonder01/articles/redel-recursive-delegation-multi-agent-4c401942e7",
-        "site": "Zenn(Python)",
-        "published": "2026-05-10T14:54:08Z",
-        "description": "何を再現するか\nReDel: A Toolkit for LLM-Powered Recursive Multi-Agent Systems（EMNLP 2024 Demo）\n\narXiv: https://arxiv.org/abs/2408.02248\n\nGitHub: https://github.com/zhudotexe/redel\n\n著者: Andrew Zhu, Liam Dugan...",
-        "category": "開発",
-        "rss_category": "",
-        "image_url": ""
-      },
+    "一昨日": [
       {
         "title": "Pythonの高階関数をLuaで表現する",
         "url": "https://zenn.dev/yokamak/articles/975a93fa58894a",
@@ -417,175 +487,123 @@
         "image_url": ""
       }
     ],
-    "一昨日": [
-      {
-        "title": "AtCoder Beginner Contest 457 参加記録と解答例 (A～D問題)",
-        "url": "https://zenn.dev/iwamutsu/articles/t82n5il0fqccqx",
-        "site": "Zenn(Python)",
-        "published": "2026-05-09T14:52:45Z",
-        "description": "本記事は、AtCoder Beginner Contest 457 (Polaris.AIプログラミングコンテスト) に参加した際の、A〜D問題の復習と解答の備忘録です。コンテスト中に考えた解法の方針や、提出したPython of A〜D問題の復習と解答の備忘録です。コンテスト中に考えた解法の方針や、提出したPythonのコードについて整理しています。\n\n A - Array /\n実行時間制限: ...",
-        "category": "開発",
-        "rss_category": "",
-        "image_url": ""
-      },
-      {
-        "title": "1週間の振り返りと今後の開発方針 - Day 7",
-        "url": "https://zenn.dev/klo/articles/9668f2d0079617",
-        "site": "Zenn(Python)",
-        "published": "2026-05-09T13:33:50Z",
-        "description": "はじめに\nDay 6では、TypeScriptによるクラスベースのコンポーネント設計とSwaggerを用いたAPI連携について書きました。\n今回はDay 1からDay 6までの総括と、開発を通じて気づいたこと、今後の方針について書きます。\n\n\n 1週間で実装した機能\nこの1週間で記録した内容を振り返ります。\n\n\n\nDay\nテーマ\n実装内容\n\n\n\n\nDay 1\n開発方針\n自作の動機・AI生成コードを...",
-        "category": "開発",
-        "rss_category": "",
-        "image_url": ""
-      },
-      {
-        "title": "Microsoft Agent Governance Toolkit入門 — AIエージェントのOWASP対策をPythonで実装する",
-        "url": "https://zenn.dev/kai_kou/articles/210-microsoft-agent-governance-toolkit-guide",
-        "site": "Zenn(Python)",
-        "published": "2026-05-09T12:37:27Z",
-        "description": "はじめに\nAIエージェントが本番システムで自律的に動作するようになった今、「エージェントが何をしているか」を制御・監査する仕組みが不可欠になっています。\n2026年4月2日、MicrosoftはAgent Governance ToolkitをMITライセンスでオープンソース公開しました。このツールキットは、自律型AIエージェントに対して以下を提供します。\n\n\nポリシー強制: 各エージェントアクシ...",
-        "category": "開発",
-        "rss_category": "",
-        "image_url": ""
-      },
-      {
-        "title": "数理最適化で京王井の頭線の急行の停車駅を設定する",
-        "url": "https://zenn.dev/akimasanishida/articles/904a88047f7209",
-        "site": "Zenn(Python)",
-        "published": "2026-05-09T11:48:56Z",
-        "description": "ぼくのかんがえたさいきょうの京王井の頭線の急行\n!\n筆者は数理最適化の入門者です．助言や誤り指摘など頂けますと幸いです．\n休日に大急ぎで書きました．文体や読みやすさなどはやがて修正されるかもしれません．\n\n\n 概要\n京王井の頭線は，急行と各駅停車の2種類の列車が運行され，途中の永福町駅で待ち合わせを行う．急行の停車駅設定は，非常に複雑な制約の下での組み合わせ最適化問題である．\n本記事では，非常に簡...",
-        "category": "開発",
-        "rss_category": "",
-        "image_url": ""
-      },
-      {
-        "title": "C-3PO、自己観測と学習の輪を閉じる ── DuckDB と Thompson Sampling で v1.0 を超えた話",
-        "url": "https://zenn.dev/satoh_y_0323/articles/7a2ea5069cf542",
-        "site": "Zenn(Python)",
-        "published": "2026-05-09T11:15:23Z",
-        "description": "前回記事: https://zenn.dev/satoh_y_0323/articles/2452fd9116e2f2\nC3 GitHub: https://github.com/satoh-y-0323/claude-code-conductor / PyPI: https://pypi.org/project/claude-code-conductor/\n本記事のスコープ: C3 v0.7.1...",
-        "category": "開発",
-        "rss_category": "",
-        "image_url": ""
-      },
-      {
-        "title": "マルコフ連鎖モンテカルロ法（MCMC）のメトロポリス法 ~ガウス分布を近似~",
-        "url": "https://zenn.dev/m1_study_man/articles/d69db7a2a7f049",
-        "site": "Zenn(Python)",
-        "published": "2026-05-09T08:10:35Z",
-        "description": "MCMC（Markov Chain Monte Carlo）は、\n「ある確率分布っぽくランダムに点を動かす方法」\nです。分布がよくわからない、解析がやりにくい高次元の分布でもサンプリングによって近似する方法です。\n今回は、最も基本的な「メトロポリス法」を使って、ガウス分布を生成します。\n\n 今回作りたい分布\n今回は標準正規分布：\nP(x) ∝ e^{-\\frac{x^2}{2}}\nを目標にします。...",
-        "category": "開発",
-        "rss_category": "",
-        "image_url": ""
-      },
-      {
-        "title": "TS / Go / Python で書く同じプロトコル：x402 per-request scope context の 3 つの解",
-        "url": "https://zenn.dev/sal9000/articles/2b0cb13d23b96c",
-        "site": "Zenn(Python)",
-        "published": "2026-05-09T06:06:59Z",
-        "description": "x402 の batch-settlement（バッチ決済）scheme の Python port を書いている。reference 実装は TypeScript、PR #2230 として Go 実装も同時期に出てきた。同じプロトコルを 3 言語で書くと、表面の API はほぼ揃うのだが、1 リクエストの間だけ生きる context をどう保持するか だけは言語ごとに別の解になる。\nここに来ると...",
-        "category": "開発",
-        "rss_category": "",
-        "image_url": ""
-      },
-      {
-        "title": "ローカルLLMの評価について",
-        "url": "https://zenn.dev/sea_yassan_dev/books/01-local-llm-assessment",
-        "site": "Zenn(Python)",
-        "published": "2026-05-09T03:10:32Z",
-        "description": "CallbackeHandlerを使用してLLMの呼び出し管理やトークン管理の実装方法について紹介します。またLLMの生成物に対して評価方法について紹介します。",
-        "category": "開発",
-        "rss_category": "",
-        "image_url": ""
-      },
-      {
-        "title": "VS CodeでPythonにRuffを入れたら保存時の整形がかなり楽だった",
-        "url": "https://zenn.dev/hknote/articles/b17758c7b4a165",
-        "site": "Zenn(Python)",
-        "published": "2026-05-09T02:40:26Z",
-        "description": "VS Codeで Ruff を入れてみたら、保存時の整形、使っていない import の削除、import順の整理あたりがかなり素直にまとまってくれて、思った以上に使いやすかったです。\n今回やったことはそこまで多くありません。\n\nVS CodeにRuff拡張を入れる\n設定ファイルを少し触る\n\n.vscode/settings.json をGit管理して、チームで同じ挙動にする\n\nこの記事では、VS...",
-        "category": "開発",
-        "rss_category": "",
-        "image_url": ""
-      },
-      {
-        "title": "AIトレーダー開発ログ #13: アルファの生態系管理：劣化アルファの自動代謝とスペシエーション・チェック",
-        "url": "https://zenn.dev/sigma_lab/articles/qros-research-devlog-13-alpha-ecol-20260330",
-        "site": "Zenn(Python)",
-        "published": "2026-05-08T23:02:34Z",
-        "description": "はじめに\n金融市場という過酷な環境において、一度見つけた「アルファ（超過収益の源泉）」が永遠に機能することはありません。金融時系列予測の世界では、手法の普及や市場環境の変化（レジームシフト）によって、昨日まで有効だったロジックが今日にはただのノイズへと劣化する「アルファの減衰（Alpha Decay）」が日常的に発生します。\nQROS Helix プロジェクトの第13回目となる今回は、アルファを単...",
-        "category": "開発",
-        "rss_category": "",
-        "image_url": ""
-      },
-      {
-        "title": "自分のLINEデータベースの解析：iOSのバックアップファイルを解析して過去のLINEトークを振り返る",
-        "url": "https://zenn.dev/abe_i/articles/line-analyze",
-        "site": "Zenn(Python)",
-        "published": "2026-05-08T22:56:27Z",
-        "description": "はじめに\n「10年前の今頃、だれとどんな会話をしていたのかな。」\nこれが知りたくてLINEのトーク履歴を抽出する方法を考えました。\nトークルームごとの日付検索はLINEアプリでもできますが、\nルームを跨いだ検索は2026年5月現在できません。\nLINEアプリのエクスポート機能でトーク履歴の抽出して検索することも考えられますが、\nこのエクスポート機能には次のような不便を感じていました。\n\nエクスポー...",
-        "category": "開発",
-        "rss_category": "",
-        "image_url": ""
-      },
-      {
-        "title": "Claude Haiku 4.5 + n8n で問い合わせ対応ワークフローを作ったら、100% 精度・1 件 0.5 円で運用できた",
-        "url": "https://zenn.dev/aiflowlab/articles/n8n-claude-haiku-inquiry-workflow",
-        "site": "Zenn(Python)",
-        "published": "2026-05-08T22:36:14Z",
-        "description": "はじめに\nClaude API + n8n で何が作れるかの実例として、問い合わせメール対応ワークフロー を実装しました。10 件のテストケースで 4 軸分類すべて 100% 一致、1 件あたり約 0.5 円で運用できる構成です。\n\nワークフローの中身は次の 3 段構えです。\n\n\n4 軸で分類: category / urgency / sentiment / recommended_respon...",
-        "category": "開発",
-        "rss_category": "",
-        "image_url": ""
-      },
-      {
-        "title": "要求工学でチャットボットを設計した——農家エンジニアのチャットボット開発記⑥",
-        "url": "https://zenn.dev/hiroakikody/articles/67d7f989b9259c",
-        "site": "Zenn(Python)",
-        "published": "2026-05-08T22:27:05Z",
-        "description": "起：Graph RAGは完成した。でも、なんか遅い。\n前回までの5本で、Neo4j × LangChain × Z.aiを使ったGraph RAGチャットボットを本番公開するところまで進んだ。\n農家エンジニアのチャットボット開発記シリーズ1－4\nhttps://zenn.dev/hiroakikody/articles/e6ed27a649fcec\nhttps://zenn.dev/hiroaki...",
-        "category": "開発",
-        "rss_category": "",
-        "image_url": ""
-      },
-      {
-        "title": "ComfyUIを動かすためのGPU準備＆インストールガイド",
-        "url": "https://zenn.dev/miraclest/articles/claude-code-comfyui-gpu-setup",
-        "site": "Zenn(Python)",
-        "published": "2026-05-08T22:00:03Z",
-        "description": "この記事でやること\n第1回では、Claude Code の Skill から自宅 GPU サーバーの ComfyUI を叩く全体像を見ました。\n「自分のマシンに GPU が刺さっているのに、なぜ他人の GPU に金を払うのか」問題ですね。はい、そこに刺さった人向けの続きです。\n今回は実際に手を動かします。ゴールは「ComfyUI が起動し、ブラウザから触れる」ところまで。\n画像を1枚出すにはモデル...",
-        "category": "開発",
-        "rss_category": "",
-        "image_url": ""
-      },
-      {
-        "title": "スクレイピング結果をFastAPIでAPIとして公開する方法【Python・2026年版】",
-        "url": "https://zenn.dev/datajournal1/articles/2940197667d468",
-        "site": "Zenn(Python)",
-        "published": "2026-05-08T20:28:18Z",
-        "description": "!\n本記事で紹介する手法は、対象サイトの利用規約・robots.txtを遵守した上での利用を前提としています。スクレイピングしたデータを外部公開する場合は、著作権・個人情報保護法等の関連法規も確認してください。\n\n\n はじめに\nスクレイピングで定期収集したデータを「他のメンバーやサービスからも使いたい」という場面があります。毎回 CSV を共有するのは手間がかかりますし、リアルタイムのデータが必要...",
-        "category": "開発",
-        "rss_category": "",
-        "image_url": ""
-      },
-      {
-        "title": "WEBスクレイピングやってみました",
-        "url": "https://zenn.dev/ken_0421/articles/ef43acc63760a9",
-        "site": "Zenn(Python)",
-        "published": "2026-05-08T17:12:21Z",
-        "description": "WEBスクレイピングやってみました\n嫁が道の駅が好きで、休日などに行く機会が多く毎回調べるのが面倒な為\nどこに道の駅があるのか把握するため近畿の道の駅をすべてCSVデータ化しようと思いました。\n\n WEBスクレイピングとは？\nWEBスクレイピングというのはWEBのファイルを解析して、\nさらに必要な情報（文字列、数値等）を抽出するというものです。\n\n 注意するべき点\nスクレイピングはコードの書き方次...",
-        "category": "開発",
-        "rss_category": "",
-        "image_url": ""
-      }
-    ],
     "2026-05": [
+      {
+        "title": "時間記録をCSVで行う理由 - Day 9",
+        "url": "https://zenn.dev/klo/articles/a4e0b774016b2a",
+        "site": "Zenn(Python)",
+        "published": "2026-05-11T14:52:03Z",
+        "description": "はじめに\nDay 8では、データ保存先の設計を3回変えることになった経緯について書きました。\n今回は時間記録の保存形式にCSVを採用した理由と、フォーマット設計の判断について書きます。\n\n\n なぜCSVを選んだか\n時間記録の保存形式にCSVを採用した理由は、NN機能での読み込みに適していると判断したためです。\nCSVの特徴は、1行目にヘッダーを定義し2行目以降にデータを入れる構造です。NN機能で読...",
+        "category": "開発",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "MCPサーバーを1時間で自作する：Claude Code に自分のツールを持たせる最短ルート",
+        "url": "https://zenn.dev/yokotaro/articles/41367484adb7f4",
+        "site": "Zenn(Python)",
+        "published": "2026-05-11T14:18:15Z",
+        "description": "はじめに\nClaude Code に「自社のDBを参照させたい」「自作のAPIを叩かせたい」と思ったことはないだろうか。それを実現するのが MCP（Model Context Protocol） だ。\n公式ドキュメントは英語で、とっつきにくく見える。だが実態はシンプルで、TypeScript なら30行足らずでツールを1本定義できる。この記事では「MCPサーバーとは何か」の概念から、hello-w...",
+        "category": "開発",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "Claude Agent SDK 入門：Python 30行で自分だけのAIエージェントを作る",
+        "url": "https://zenn.dev/yokotaro/articles/af304f93110b90",
+        "site": "Zenn(Python)",
+        "published": "2026-05-11T14:09:43Z",
+        "description": "はじめに\n「AIエージェントを作りたいけど、LangChainは複雑すぎる」「ChatGPT APIは使えるけど、ファイル操作や検索を自分で全部実装するのが面倒」——そう感じたことはないだろうか。\nClaude Agent SDK は、そのボトルネックを根本から解決する。pip install claude-agent-sdk の1行で、ファイル読み書き・コマンド実行・Web検索といったツール群が...",
+        "category": "開発",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "ClaudeCodeでviライクエディタ「FoxEditor」を作ってみた#1",
+        "url": "https://zenn.dev/schhrcat/articles/d2ba511ddf35a1",
+        "site": "Zenn(Python)",
+        "published": "2026-05-11T12:54:54Z",
+        "description": "1. はじめに\nWindowsで動く、viライクなシンプルなエディタを自作してみたかった。\n※筆者は職場ではviで開発を行っている。\n※慣れるとホームポジションを維持できるので楽(慣れるまでがシンドイ)\n※viが入っていないLinuxは存在していない(ハズ)なので客先での作業も安心\n「エディタは何を使ってますか？」の問いに対して、VS Codeやviやemacsなど様々な回答があるだろうが、「自作...",
+        "category": "開発",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "LangGraph の config 伝搬と ContextVar の関係を読み解く",
+        "url": "https://zenn.dev/moridev/articles/9a2cec54d7d068",
+        "site": "Zenn(Python)",
+        "published": "2026-05-11T11:13:06Z",
+        "description": "LangGraph でグラフを書いていると、RunnableConfig という辞書がノード関数の第 2 引数で受け取れることに気づきます。thread_id や recursion_limit を入れたり、configurable フィールドにアプリ独自の設定を入れたり、と便利に使えます。\nasync def fetch_node(state: State, config: RunnableCo...",
+        "category": "開発",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "NVIDIA製GPUのCompute Capabilityを改めて確認する",
+        "url": "https://zenn.dev/aiforall/articles/3da8b0b6724ea7",
+        "site": "Zenn(Python)",
+        "published": "2026-05-11T10:10:05Z",
+        "description": "Google Colabの無料版で使用可能なTesla T4など発売時期が古いNVIDIA製GPUでローカルLLM関連のコードを実行すると以下のようなエラーに直面することがあります。\nValueError: Bfloat16 is only supported on GPUs with compute capability of at least 8.0. Your Tesla T4 GPU ha...",
+        "category": "開発",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "Windows 11でPythonの基本環境を構築する",
+        "url": "https://zenn.dev/edamame_lab/articles/087e6d44cd1a80",
+        "site": "Zenn(Python)",
+        "published": "2026-05-11T09:50:46Z",
+        "description": "はじめに\nこの記事では、Windows 11 で Python の基本的な開発環境を構築する手順を説明します。\nPython をインストールするだけでなく、次の内容まで扱います。\n\nPython のインストール\nPython のバージョン確認\n長すぎるファイルパスへの対策\n作業用フォルダの作成\n仮想環境 .venv の作成\n基本的な Python パッケージのインストール\nJupyter Note...",
+        "category": "開発",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "【Python】不可解な「逆円周率ノイズ」を、局所解からAIを救うアテにする",
+        "url": "https://zenn.dev/cocoa3j21/articles/b72a764450e23a",
+        "site": "Zenn(Python)",
+        "published": "2026-05-11T09:49:20Z",
+        "description": "1. 数字は喋っている。「逆円周率」という思考実験\n円周率 \\pi = 3.1415926535\\dots\nこの数字を眺めているとき、ふと奇妙な直感にとらわれた。\n円周率が無限に続く無理数であるということは、「この物理空間には完全な円（静止・安定）は存在しない」という証明である。\n現実の物質は、円になろうとしてもなれず、永遠に「ズレ」を修正する微細な振動（エラー修復）を繰り返しているはずだ。\nなら...",
+        "category": "開発",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "Langfuseの第一歩〜なにができるのか〜",
+        "url": "https://zenn.dev/mochitec_tech/articles/03d30d23086e88",
+        "site": "Zenn(Python)",
+        "published": "2026-05-11T09:47:14Z",
+        "description": "はじめに\n5つのAgentが連鎖するSNS自動投稿サービスを動かしています。各Agentが何をinput/outputしてどこで詰まったのかを、ログ出力だけでは追えなくなってきたので、LLMアプリの観測ツール Langfuse を入れました。\nこの記事では、セットアップ手順は公式ドキュメントや先行記事に譲り、「動いている状態で何が見えるか」 にスクショ付きでフォーカスします。Langfuseシリー...",
+        "category": "開発",
+        "rss_category": "",
+        "image_url": ""
+      },
       {
         "title": "【古いスマホ活用術】重力センサーで「座った時間」を監視。毎日の作業時間をDiscordに全自動記録する0円DIY",
         "url": "https://zenn.dev/notekeikei/articles/2a7d634ef61edf",
         "site": "Zenn(Python)",
         "published": "2026-05-11T08:48:26Z",
         "description": "【古いスマホ活用術】重力センサーで「座った時間」を監視。毎日の作業時間をDiscordに全自動記録する0円DIY\n\n\n はじめに\n引き出しの奥で眠っている「古いスマホ」、皆さんはどうしていますか？\n在宅ワークが増えて、「自分が今日、実際に何時間机に向かって作業していたか」を正確に把握したいと思うようになりました。市販のIoT着席センサーやスマートチェアは数万円するし、スマートウォッチのスタンド機能...",
+        "category": "開発",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "AIボット初日、3つのエラーで詰んだ話【デイトレボット開発記 #4】",
+        "url": "https://zenn.dev/ryoya_aitech/articles/daytrade-bot-04-firstrun",
+        "site": "Zenn(Python)",
+        "published": "2026-05-11T08:02:40Z",
+        "description": "動かしてみたら、全然動かなかった\n「PCを起動してkabu STATIONを開くだけでいい」と思っていました。\n結果：ボットは動かず、LINEも来ず、気づいたらPCがスリープしていました。\n今回はボット初日に遭遇した3つのエラーと、その解決方法を記録します。\n\n\n エラー① タスクスケジューラーがボットを起動できなかった\n\n 症状\n朝8:45に自動起動するよう設定したはずなのに、何も起きない。\n\n...",
+        "category": "開発",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "Python・LINE・Claudeで作る自動売買ボットの設計図【デイトレボット開発記 #2】",
+        "url": "https://zenn.dev/ryoya_aitech/articles/daytrade-bot-02-system",
+        "site": "Zenn(Python)",
+        "published": "2026-05-11T08:02:40Z",
+        "description": "前回のおさらい\n#1「給料だけじゃ1000万は無理。だからAIに株を任せることにした」では、ボットを作った動機を話しました。\n今回は 「どうやって作ったか」 の設計全体を解説します。\n\n\n 技術スタック（ほぼ無料）\n言語:       Python 3.11\n価格データ: yfinance（無料・15分遅延）\n           kabu STATION API（無料・リアルタイム）\n取引API...",
         "category": "開発",
         "rss_category": "",
         "image_url": ""
@@ -711,51 +729,11 @@
         "image_url": ""
       },
       {
-        "title": "要求工学でAIチャットボットに「会話力」を持たせた{非同期アーキテクチャ}——農家エンジニアのチャットボット開発記⑦",
-        "url": "https://zenn.dev/hiroakikody/articles/6ce276d4d5fe3b",
-        "site": "Zenn(Python)",
-        "published": "2026-05-10T21:05:33Z",
-        "description": "起：クレソンAIに足りなかったもの\n連日のブラッシュアップで、クレソンの使い方を教えてくれるチャットボットがどんどん使いやすくなってきている。\n前回のVol.6で紹介したPhase 3bでは、Tool Selectorを実装し、挨拶への返答が爆速になった。しかし「クレソンで何か作りたい」という曖昧な質問には、40秒かけてRAGで答えるしかなかった。ユーザーが何人分・何ジャンルを求めているかわからな...",
-        "category": "開発",
-        "rss_category": "",
-        "image_url": ""
-      },
-      {
-        "title": "「施策は本当に効果があったのか」──因果推論に学ぶアップリフトモデリング入門",
-        "url": "https://zenn.dev/k568/articles/uplift-modeling-meta-learner-intro",
-        "site": "Zenn(Python)",
-        "published": "2026-05-10T15:52:20Z",
-        "description": "はじめに\nこんにちは、ギックスでエンジニアをしています中島です。\n業務の中で推薦モデルの管理を行っているのですが、近しい業務を行っている方であれば「顧客への推薦内容は適切なのか」「この施策は本当に効果があったのか」と考えることは多いのではないでしょうか。特にリコメンドやクーポン配布の文脈では、そのクーポンは、本当に売上を押し上げたのか？ と問い直すのは意外と難しい問題です。\n難しい理由の一つは、や...",
-        "category": "開発",
-        "rss_category": "",
-        "image_url": ""
-      },
-      {
         "title": "git pullでデータが消えた - 保存先設計を3回変えた話 - Day 8",
         "url": "https://zenn.dev/klo/articles/ee303febdef657",
         "site": "Zenn(Python)",
         "published": "2026-05-10T15:01:09Z",
         "description": "はじめに\nDay 7で書いた通り、これまではツールの基礎についての記事を書いてきました。\nWeek 2からは、実装中に発生した設計変更を中心に記録していきます。今回はデータ保存先の設計を変えることになった経緯と、最終的にOSのユーザーデータ領域への保存を採用した理由について書きます。\n\n\n 設計の変遷\nデータ保存先の設計は以下の2段階で変遷しました。\n\n\n\n段階\n方式\n廃止理由\n\n\n\n\n第1段階\n...",
-        "category": "開発",
-        "rss_category": "",
-        "image_url": ""
-      },
-      {
-        "title": "書籍のOCRにLLMを組み合わせることで精度を上げるだけでなく文書構造や図も表現した記録",
-        "url": "https://zenn.dev/phpmyadmin/articles/0dba6fef411e21",
-        "site": "Zenn(Python)",
-        "published": "2026-05-10T14:58:21Z",
-        "description": "課題\n手元にあるビジネス書1冊 (縦書き和文、120ページ分) のページ画像をテキスト化したかった。\n入力は PNG 120 枚 (1ページ=1ファイル)、解像度は十分にきれい。図表はほぼなく、文章メイン。\n「専用OCR」「ローカルLLM」「両者の併用」の3手法を実装し、文字精度・処理時間・Markdown構造化要素の数で比較した。\n\n 結論\n\n\n\n手法\n正解類似度 (1849文字基準)\n120ペ...",
-        "category": "開発",
-        "rss_category": "",
-        "image_url": ""
-      },
-      {
-        "title": "ReDel 再現実装：LLMが自ら委譲する再帰マルチエージェントの仕組みと実装",
-        "url": "https://zenn.dev/sonder01/articles/redel-recursive-delegation-multi-agent-4c401942e7",
-        "site": "Zenn(Python)",
-        "published": "2026-05-10T14:54:08Z",
-        "description": "何を再現するか\nReDel: A Toolkit for LLM-Powered Recursive Multi-Agent Systems（EMNLP 2024 Demo）\n\narXiv: https://arxiv.org/abs/2408.02248\n\nGitHub: https://github.com/zhudotexe/redel\n\n著者: Andrew Zhu, Liam Dugan...",
         "category": "開発",
         "rss_category": "",
         "image_url": ""
