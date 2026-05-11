@@ -1,9 +1,79 @@
 {
   "site": "Zenn(Python)",
-  "last_updated": "2026-05-11T00:11:15.736226",
-  "total_articles": 3905,
+  "last_updated": "2026-05-11T04:39:49.899098",
+  "total_articles": 3917,
   "articles_by_date": {
     "本日": [
+      {
+        "title": "RAGのチャンキング戦略を比較する：固定長・再帰分割・セマンティックの使い分け",
+        "url": "https://zenn.dev/libercraft/articles/20260511-rag-chunking-comparison",
+        "site": "Zenn(Python)",
+        "published": "2026-05-11T02:56:32Z",
+        "description": "RAGを本番に近い構成で動かしたとき、「なぜか精度が出ない」と詰まった経験があるなら、最初に疑うべきはチャンキング設計です。プロンプトを何度書き直しても改善しないケースの多くは、「検索段階で正しい文書片を取得できていない」という根本問題を抱えています。そしてその根本には、チャンキングをデフォルト設定のまま放置した、という判断があります。\n「chunk_size=512 にした理由は？」と聞かれて答...",
+        "category": "開発",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "GitHub ActionsでPythonスクレイピングを定期実行する方法【2026年版】",
+        "url": "https://zenn.dev/datajournal1/articles/0615548ccff37f",
+        "site": "Zenn(Python)",
+        "published": "2026-05-11T02:55:17Z",
+        "description": "!\n本記事で紹介する手法は、対象サイトの利用規約・robots.txtを遵守した上での利用を前提としています。\n\n\n はじめに\nスクレイピングスクリプトを書いた後、「毎日自動で実行したいけどサーバーを借りるのはコストがかかる」と思ったことはありませんか。\n以前、価格監視スクリプトをローカルPCで動かしていたとき、PCをスリープするたびに止まってしまいました。VPSを借りることも検討しましたが、月額...",
+        "category": "開発",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "AIトレーダー開発ログ #10: AIトレーディングシステムの全体設計",
+        "url": "https://zenn.dev/sigma_lab/articles/qros-research-quant-research-ai----20260416",
+        "site": "Zenn(Python)",
+        "published": "2026-05-10T23:02:01Z",
+        "description": "|\n| Ticker | AAPL |\n| Prediction Prob | 0.723 |\n| Market Regime | 乱高倉 |\n| Kelly Fraction | 0.055 |\n| Expected Return | 3.89% |\n| Drawdown | -1.57% |\n\n\n 分析\n今回の結果から以下の点が確認できました。\n\n\nドローダウン低下: 複数モデルにより単一モデ...",
+        "category": "開発",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "AIトレーダー開発ログ #7: Transformerは金融時系列に有効なのか",
+        "url": "https://zenn.dev/sigma_lab/articles/qros-research-quant-research-ai----20260331",
+        "site": "Zenn(Python)",
+        "published": "2026-05-10T23:02:00Z",
+        "description": "|\n| モデル構造 | Transformer Encoder (2 layers) |\n| ハイパーパラメータ | d_model=64, nhead=4 |\n| 学習ターゲット | 次期リターンの方向性 |\n| 平均シャープレシオ | 0.0 (alpha_inventory) |\n| 学習の安定性 | 低い（過学習の傾向が顕著） |\n現時点では、Transformerを単体で適用しても、金融...",
+        "category": "開発",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "【番外編】WSL2で作るオープンソースCAE環境（Elmer FEM + Gmsh + ParaView + Python）",
+        "url": "https://zenn.dev/naka_cae01/articles/wsl2-cae-setup-memo",
+        "site": "Zenn(Python)",
+        "published": "2026-05-10T22:10:13Z",
+        "description": "はじめに\nこちらの連載ではWindows上でのElmerなどを用いたオープンソースCAEの勉強を発信しています。\n気分転換も兼ねて、将来の解析自動化やサーバーによる解析進捗管理を見越してWindows PC内にWSL2を使ってUbuntu環境を構築しました。\n本ドキュメントでは、メッシャー（Gmsh）、ソルバー（Elmer FEM）、ポストプロセッサ（ParaView）、および自動化・データ処理ツ...",
+        "category": "開発",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "色んなソースからIT関連記事へのURLを探して、NotebookLMに音声解説してもらう",
+        "url": "https://zenn.dev/baleenstudio/articles/aab732f9c267da",
+        "site": "Zenn(Python)",
+        "published": "2026-05-10T22:00:07Z",
+        "description": "はじめに\n筆者はかなりいい歳をしたエンジニアです。こんな歳になっても日々の勉強はしなくちゃいけないとわかっているのですが、中々うまくいっていませんでした。\nそこへNotebookLMという神のようなツールが発表されました。なんと、URLを食わせると音声解説を作ってくれると言います。最初は半信半疑で音声解説を作ってみましたが、軽妙な2人の会話で成り立つ、素晴らしいPod Castが出来上がりました。...",
+        "category": "開発",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "要求工学でAIチャットボットに「会話力」を持たせた{非同期アーキテクチャ}——農家エンジニアのチャットボット開発記⑦",
+        "url": "https://zenn.dev/hiroakikody/articles/6ce276d4d5fe3b",
+        "site": "Zenn(Python)",
+        "published": "2026-05-10T21:05:33Z",
+        "description": "起：クレソンAIに足りなかったもの\n連日のブラッシュアップで、クレソンの使い方を教えてくれるチャットボットがどんどん使いやすくなってきている。\n前回のVol.6で紹介したPhase 3bでは、Tool Selectorを実装し、挨拶への返答が爆速になった。しかし「クレソンで何か作りたい」という曖昧な質問には、40秒かけてRAGで答えるしかなかった。ユーザーが何人分・何ジャンルを求めているかわからな...",
+        "category": "開発",
+        "rss_category": "",
+        "image_url": ""
+      },
       {
         "title": "「施策は本当に効果があったのか」──因果推論に学ぶアップリフトモデリング入門",
         "url": "https://zenn.dev/k568/articles/uplift-modeling-meta-learner-intro",
@@ -142,16 +212,6 @@
         "site": "Zenn(Python)",
         "published": "2026-05-10T07:41:06Z",
         "description": "前回記事: https://zenn.dev/satoh_y_0323/articles/7a2ea5069cf542\nC3 GitHub: https://github.com/satoh-y-0323/claude-code-conductor / PyPI: https://pypi.org/project/claude-code-conductor/ / 公式ドキュメント: https:/...",
-        "category": "開発",
-        "rss_category": "",
-        "image_url": ""
-      },
-      {
-        "title": "dmol-book を読む — 分子・材料データの深層学習を1章ずつ動かす",
-        "url": "https://zenn.dev/amana/books/dmol-reading",
-        "site": "Zenn(Python)",
-        "published": "2026-05-10T06:52:53Z",
-        "description": "分子や材料データに深層学習 (DL) を応用するための代表的な公開教科書\ndmol-book (Andrew White 著, \"Deep Learning for Molecules and Materials\")\nを、1章ずつ読み解く学習ノート。\n\nマテリアルズ・インフォマティクス (MI) や ケモインフォマティクスに足を踏み入れたい\n学生・研究者・(自分のような)エンジニア向けに、サイトに...",
         "category": "開発",
         "rss_category": "",
         "image_url": ""
@@ -471,6 +531,76 @@
     ],
     "2026-05": [
       {
+        "title": "RAGのチャンキング戦略を比較する：固定長・再帰分割・セマンティックの使い分け",
+        "url": "https://zenn.dev/libercraft/articles/20260511-rag-chunking-comparison",
+        "site": "Zenn(Python)",
+        "published": "2026-05-11T02:56:32Z",
+        "description": "RAGを本番に近い構成で動かしたとき、「なぜか精度が出ない」と詰まった経験があるなら、最初に疑うべきはチャンキング設計です。プロンプトを何度書き直しても改善しないケースの多くは、「検索段階で正しい文書片を取得できていない」という根本問題を抱えています。そしてその根本には、チャンキングをデフォルト設定のまま放置した、という判断があります。\n「chunk_size=512 にした理由は？」と聞かれて答...",
+        "category": "開発",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "GitHub ActionsでPythonスクレイピングを定期実行する方法【2026年版】",
+        "url": "https://zenn.dev/datajournal1/articles/0615548ccff37f",
+        "site": "Zenn(Python)",
+        "published": "2026-05-11T02:55:17Z",
+        "description": "!\n本記事で紹介する手法は、対象サイトの利用規約・robots.txtを遵守した上での利用を前提としています。\n\n\n はじめに\nスクレイピングスクリプトを書いた後、「毎日自動で実行したいけどサーバーを借りるのはコストがかかる」と思ったことはありませんか。\n以前、価格監視スクリプトをローカルPCで動かしていたとき、PCをスリープするたびに止まってしまいました。VPSを借りることも検討しましたが、月額...",
+        "category": "開発",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "AIトレーダー開発ログ #10: AIトレーディングシステムの全体設計",
+        "url": "https://zenn.dev/sigma_lab/articles/qros-research-quant-research-ai----20260416",
+        "site": "Zenn(Python)",
+        "published": "2026-05-10T23:02:01Z",
+        "description": "|\n| Ticker | AAPL |\n| Prediction Prob | 0.723 |\n| Market Regime | 乱高倉 |\n| Kelly Fraction | 0.055 |\n| Expected Return | 3.89% |\n| Drawdown | -1.57% |\n\n\n 分析\n今回の結果から以下の点が確認できました。\n\n\nドローダウン低下: 複数モデルにより単一モデ...",
+        "category": "開発",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "AIトレーダー開発ログ #7: Transformerは金融時系列に有効なのか",
+        "url": "https://zenn.dev/sigma_lab/articles/qros-research-quant-research-ai----20260331",
+        "site": "Zenn(Python)",
+        "published": "2026-05-10T23:02:00Z",
+        "description": "|\n| モデル構造 | Transformer Encoder (2 layers) |\n| ハイパーパラメータ | d_model=64, nhead=4 |\n| 学習ターゲット | 次期リターンの方向性 |\n| 平均シャープレシオ | 0.0 (alpha_inventory) |\n| 学習の安定性 | 低い（過学習の傾向が顕著） |\n現時点では、Transformerを単体で適用しても、金融...",
+        "category": "開発",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "【番外編】WSL2で作るオープンソースCAE環境（Elmer FEM + Gmsh + ParaView + Python）",
+        "url": "https://zenn.dev/naka_cae01/articles/wsl2-cae-setup-memo",
+        "site": "Zenn(Python)",
+        "published": "2026-05-10T22:10:13Z",
+        "description": "はじめに\nこちらの連載ではWindows上でのElmerなどを用いたオープンソースCAEの勉強を発信しています。\n気分転換も兼ねて、将来の解析自動化やサーバーによる解析進捗管理を見越してWindows PC内にWSL2を使ってUbuntu環境を構築しました。\n本ドキュメントでは、メッシャー（Gmsh）、ソルバー（Elmer FEM）、ポストプロセッサ（ParaView）、および自動化・データ処理ツ...",
+        "category": "開発",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "色んなソースからIT関連記事へのURLを探して、NotebookLMに音声解説してもらう",
+        "url": "https://zenn.dev/baleenstudio/articles/aab732f9c267da",
+        "site": "Zenn(Python)",
+        "published": "2026-05-10T22:00:07Z",
+        "description": "はじめに\n筆者はかなりいい歳をしたエンジニアです。こんな歳になっても日々の勉強はしなくちゃいけないとわかっているのですが、中々うまくいっていませんでした。\nそこへNotebookLMという神のようなツールが発表されました。なんと、URLを食わせると音声解説を作ってくれると言います。最初は半信半疑で音声解説を作ってみましたが、軽妙な2人の会話で成り立つ、素晴らしいPod Castが出来上がりました。...",
+        "category": "開発",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "要求工学でAIチャットボットに「会話力」を持たせた{非同期アーキテクチャ}——農家エンジニアのチャットボット開発記⑦",
+        "url": "https://zenn.dev/hiroakikody/articles/6ce276d4d5fe3b",
+        "site": "Zenn(Python)",
+        "published": "2026-05-10T21:05:33Z",
+        "description": "起：クレソンAIに足りなかったもの\n連日のブラッシュアップで、クレソンの使い方を教えてくれるチャットボットがどんどん使いやすくなってきている。\n前回のVol.6で紹介したPhase 3bでは、Tool Selectorを実装し、挨拶への返答が爆速になった。しかし「クレソンで何か作りたい」という曖昧な質問には、40秒かけてRAGで答えるしかなかった。ユーザーが何人分・何ジャンルを求めているかわからな...",
+        "category": "開発",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
         "title": "「施策は本当に効果があったのか」──因果推論に学ぶアップリフトモデリング入門",
         "url": "https://zenn.dev/k568/articles/uplift-modeling-meta-learner-intro",
         "site": "Zenn(Python)",
@@ -606,16 +736,6 @@
         "site": "Zenn(Python)",
         "published": "2026-05-10T07:41:06Z",
         "description": "前回記事: https://zenn.dev/satoh_y_0323/articles/7a2ea5069cf542\nC3 GitHub: https://github.com/satoh-y-0323/claude-code-conductor / PyPI: https://pypi.org/project/claude-code-conductor/ / 公式ドキュメント: https:/...",
-        "category": "開発",
-        "rss_category": "",
-        "image_url": ""
-      },
-      {
-        "title": "dmol-book を読む — 分子・材料データの深層学習を1章ずつ動かす",
-        "url": "https://zenn.dev/amana/books/dmol-reading",
-        "site": "Zenn(Python)",
-        "published": "2026-05-10T06:52:53Z",
-        "description": "分子や材料データに深層学習 (DL) を応用するための代表的な公開教科書\ndmol-book (Andrew White 著, \"Deep Learning for Molecules and Materials\")\nを、1章ずつ読み解く学習ノート。\n\nマテリアルズ・インフォマティクス (MI) や ケモインフォマティクスに足を踏み入れたい\n学生・研究者・(自分のような)エンジニア向けに、サイトに...",
         "category": "開発",
         "rss_category": "",
         "image_url": ""
