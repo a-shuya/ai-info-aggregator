@@ -1,8 +1,130 @@
 {
   "site": "Zenn(Python)",
-  "last_updated": "2026-05-12T08:03:34.345319",
-  "total_articles": 3927,
+  "last_updated": "2026-05-12T10:43:13.412737",
+  "total_articles": 3949,
   "articles_by_date": {
+    "本日": [
+      {
+        "title": "ant CLI入門 — Claude APIをターミナルとCI/CDで使いこなす完全ガイド",
+        "url": "https://zenn.dev/kai_kou/articles/211-ant-cli-claude-api-terminal-guide",
+        "site": "Zenn(Python)",
+        "published": "2026-05-12T09:40:32Z",
+        "description": "はじめに\nAnthropicはClaude API専用の公式コマンドラインツール ant CLI をリリースしました。curl でAPIを叩くより大幅に少ないコードで、Claude APIのすべてのリソースをターミナルから操作できます。\n\n この記事で学べること\n\nant CLIのインストールとセットアップ\nMessages APIへのメッセージ送信とレスポンス整形\nエージェント・セッションのCL...",
+        "category": "開発",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "連合学習の練習 client_fn(context: Context)",
+        "url": "https://zenn.dev/ebichiri_k/articles/d88c7697637c25",
+        "site": "Zenn(Python)",
+        "published": "2026-05-12T07:56:41Z",
+        "description": "https://zenn.dev/0h_n0/articles/3de76140bdaf41\nDeprecation Warningが出てたので直し方を。\n# simulation.py\n# 前略\ndef client_fn(context: Context) -&gt; fl.client.Client:\n    cid = int(context.node_config.get(\"partit...",
+        "category": "開発",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "OpenClawの次に触りたい、自分専用に育つAIエージェント「Hermes Agent」入門",
+        "url": "https://zenn.dev/boutiquehack/articles/hermes-agent-intro",
+        "site": "Zenn(Python)",
+        "published": "2026-05-12T06:52:09Z",
+        "description": "はじめに\nChatGPTやClaudeに、毎回同じ前提を説明していませんか。\n「自分はこういう仕事をしていて」「このリポジトリを触っていて」「前回はこの方針で進めたから、その続きで」。生成AIを日常的に使うほど、この文脈の貼り直しがじわじわ効いてきます。\n最近はChatGPTにもClaudeにもメモリ機能があります。CursorやClaude Codeのように、プロジェクト単位でかなり賢く文脈を持...",
+        "category": "開発",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "PDFの自動ページ分割をユーザー修正から学習させてみた",
+        "url": "https://zenn.dev/kurojica/articles/df96fc947cacb2",
+        "site": "Zenn(Python)",
+        "published": "2026-05-12T06:47:53Z",
+        "description": "こんにちは。AILabの堂上拓です。\n今回はMicrosaas開発シリーズとして、複数の書類が連結されたPDFを「書類単位」に自動分割するパイプラインに、ユーザー修正からの学習機能を組み込むプロトタイプを実装しました。\nこのプロトタイプは、ユーザーが一度行ったページ分割操作（書類の分割・結合）を学習データとしてDBに蓄積し、次回以降の同じフォーマットのPDF処理時に自動的にページ境界を再現すること...",
+        "category": "開発",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "KV キャッシュで Transformer の自己回帰復号を 7〜22× 高速化する — ONNX Runtime 実践記",
+        "url": "https://zenn.dev/ux_xu/articles/kv-cache-onnx-transformer",
+        "site": "Zenn(Python)",
+        "published": "2026-05-12T06:10:06Z",
+        "description": "はじめに\n自己回帰型 Transformer（GPT 系）の CPU 推論で、KV キャッシュの有無だけでスループットが桁レベルで変わることを実験で確かめました。\ndistilgpt2 を ONNX にエクスポートし、3 種類の実装を比較します。\n\n\n\n実装\n概要\n\n\n\n\nbaseline\n毎ステップ全トークンを再計算（KV キャッシュなし）\n\n\nkv\nKV キャッシュあり（毎ステップ 1 トーク...",
+        "category": "開発",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "リコーダーすら吹けない男が、ギターの指板SVGをCSVから一括生成するツールをPythonで作った話",
+        "url": "https://zenn.dev/sakuneko/articles/e398ff2e25764d",
+        "site": "Zenn(Python)",
+        "published": "2026-05-12T05:00:06Z",
+        "description": "はじめに\n楽器は全く弾けないけれど、ひょんなことから「ギターの指板（Fretboard）図」を大量生成するスクリプトを書くことになった経緯。\nボツになった海外案件のコードを供養しつつ、GitHubで公開したことの報告。\n使用技術・ライブラリ\nPython 3.x\nfretboardgtr: 指板描画のコアライブラリ。\nargparse / csv: CLIツールとしての操作性と一括処理の実現。\n技...",
+        "category": "開発",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "INT8量子化でCNNをエッジ推論向けに最適化する — ONNX Runtime PTQ 実践記",
+        "url": "https://zenn.dev/ux_xu/articles/ort-int8-ptq-cnn",
+        "site": "Zenn(Python)",
+        "published": "2026-05-12T04:47:40Z",
+        "description": "はじめに\nFP32 の MobileNetV2 を、PTQ（Post-Training Quantization）で INT8 に変換し、ファイルサイズ約 1/4・CPU 推論 2〜3× を狙った実験記録です。\nINT8のSIMD命令のsdotがない Raspberry Pi 4 でも INT8 Static は約 2.2× 高速化しました。「sdot がなければ速くならない」という予想が外れた理...",
+        "category": "開発",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "PythonスクレイピングでLINE通知する方法【LINE Notify・Messaging API・2026年版】",
+        "url": "https://zenn.dev/datajournal1/articles/f746e3b0ac2ae4",
+        "site": "Zenn(Python)",
+        "published": "2026-05-12T03:00:06Z",
+        "description": "!\n本記事で紹介する手法は、対象サイトの利用規約・robots.txtを遵守した上での利用を前提としています。\n\n!\n2025年3月31日をもって LINE Notify サービスは終了しました。本記事では後継の LINE Messaging API を使った方法を中心に解説します。\n\n\n はじめに\nスクレイピングで価格変動や在庫復活を検知したとき、通知をスマホに届けたい——Slack や Dis...",
+        "category": "開発",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "MCP の token bloat を 12 分の 1 にした、31 tools を 1 package に詰めた時の実測",
+        "url": "https://zenn.dev/zoetaka38/articles/cb6982bf5e8b59",
+        "site": "Zenn(Python)",
+        "published": "2026-05-12T02:48:06Z",
+        "description": "今週 X で @akshay_pachaar が MCP vs CLI の議論をまとめていて、その中の数字が結構強かったんですよね。\n\n\"The MCP vs CLI debate. For most of 2025, AI Engineers argued about it. The skeptics had real numbers: Playwright MCP eats 13.7K tok...",
+        "category": "開発",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "C-3PO、その名を返上する ── PO 廃止完遂と DX 整理 (v1.10 〜 v2.3)",
+        "url": "https://zenn.dev/satoh_y_0323/articles/2fe38354ea2f10",
+        "site": "Zenn(Python)",
+        "published": "2026-05-12T00:38:21Z",
+        "description": "前回記事: https://zenn.dev/satoh_y_0323/articles/5aa01c7e977626\nC3 GitHub: https://github.com/satoh-y-0323/claude-code-conductor / PyPI: https://pypi.org/project/claude-code-conductor/ / 公式ドキュメント: https:/...",
+        "category": "開発",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "未来からの通信を受け取る電子ペーパー",
+        "url": "https://zenn.dev/req9/articles/be56db9d50f148",
+        "site": "Zenn(Python)",
+        "published": "2026-05-11T23:30:05Z",
+        "description": "作ったもの\n未来からの通信を受け取る装置です。\nhttps://youtu.be/RbLZ2i1KT1w\n...\nというのは冗談ですが、\nInky Impressionという電子ペーパーを使って、以前の記事で書いたミドナというキャラのつぶやきを表示する装置です。\nミドナは私が作っているAIキャラで、ローカルLLMのGemma4のE4BをUnslothでファインチューニングしています。\n生きている世...",
+        "category": "開発",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "[Pandas入門シリーズ第6回] データの並び替えとランキング",
+        "url": "https://zenn.dev/haruhiro1020/articles/05ff6b7b902ee5",
+        "site": "Zenn(Python)",
+        "published": "2026-05-11T22:00:05Z",
+        "description": "はじめに\n本記事は「Pythonでデータを分析するPandas入門」シリーズの第6回です．\n本シリーズでは， Pythonのデータ分析ライブラリである Pandas を使って，「データを扱い，分析できる状態」になること を目標としています．\n第5回では，データ型とその変換 について説明しました．\n第6回では， データの並び替えとランキング を説明します．\nデータはそのままでは比較しづらいため，順序...",
+        "category": "開発",
+        "rss_category": "",
+        "image_url": ""
+      }
+    ],
     "昨日": [
       {
         "title": "時間記録をCSVで行う理由 - Day 9",
@@ -120,16 +242,6 @@
         "site": "Zenn(Python)",
         "published": "2026-05-11T08:02:40Z",
         "description": "前回のおさらい\n#1「給料だけじゃ1000万は無理。だからAIに株を任せることにした」では、ボットを作った動機を話しました。\n今回は 「どうやって作ったか」 の設計全体を解説します。\n\n\n 技術スタック（ほぼ無料）\n言語:       Python 3.11\n価格データ: yfinance（無料・15分遅延）\n           kabu STATION API（無料・リアルタイム）\n取引API...",
-        "category": "開発",
-        "rss_category": "",
-        "image_url": ""
-      },
-      {
-        "title": "「助けて」じゃ届かない。デジタル秋田犬が吠えれば街が動く——子供の孤立ゼロを目指す4つのIoT×AIインフラ構想",
-        "url": "https://zenn.dev/miki_mini/articles/8e6cdb078cc708",
-        "site": "Zenn(Python)",
-        "published": "2026-05-11T08:00:07Z",
-        "description": "美容系勤務独学初心者マリー・アントワネット系エンジニア目指してます！\n今回は子供を守るライフラインが無いならデジタル秋田犬を放てばいいじゃない👸🍰です。\n読了時間の目安：約7〜10分\n!\n3行まとめ\n\n子供の孤立・車内放置・連れ去りを「街ごと」防ぐ4つのIoT×AIシステム構想を提案します\nメインは「デジタル秋田犬アプリ」——近くのスマホが一斉に秋田犬の吠え声を上げ、犯罪を心理的に抑止します\nRa...",
         "category": "開発",
         "rss_category": "",
         "image_url": ""
@@ -499,6 +611,126 @@
     ],
     "2026-05": [
       {
+        "title": "ant CLI入門 — Claude APIをターミナルとCI/CDで使いこなす完全ガイド",
+        "url": "https://zenn.dev/kai_kou/articles/211-ant-cli-claude-api-terminal-guide",
+        "site": "Zenn(Python)",
+        "published": "2026-05-12T09:40:32Z",
+        "description": "はじめに\nAnthropicはClaude API専用の公式コマンドラインツール ant CLI をリリースしました。curl でAPIを叩くより大幅に少ないコードで、Claude APIのすべてのリソースをターミナルから操作できます。\n\n この記事で学べること\n\nant CLIのインストールとセットアップ\nMessages APIへのメッセージ送信とレスポンス整形\nエージェント・セッションのCL...",
+        "category": "開発",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "連合学習の練習 client_fn(context: Context)",
+        "url": "https://zenn.dev/ebichiri_k/articles/d88c7697637c25",
+        "site": "Zenn(Python)",
+        "published": "2026-05-12T07:56:41Z",
+        "description": "https://zenn.dev/0h_n0/articles/3de76140bdaf41\nDeprecation Warningが出てたので直し方を。\n# simulation.py\n# 前略\ndef client_fn(context: Context) -&gt; fl.client.Client:\n    cid = int(context.node_config.get(\"partit...",
+        "category": "開発",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "OpenClawの次に触りたい、自分専用に育つAIエージェント「Hermes Agent」入門",
+        "url": "https://zenn.dev/boutiquehack/articles/hermes-agent-intro",
+        "site": "Zenn(Python)",
+        "published": "2026-05-12T06:52:09Z",
+        "description": "はじめに\nChatGPTやClaudeに、毎回同じ前提を説明していませんか。\n「自分はこういう仕事をしていて」「このリポジトリを触っていて」「前回はこの方針で進めたから、その続きで」。生成AIを日常的に使うほど、この文脈の貼り直しがじわじわ効いてきます。\n最近はChatGPTにもClaudeにもメモリ機能があります。CursorやClaude Codeのように、プロジェクト単位でかなり賢く文脈を持...",
+        "category": "開発",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "PDFの自動ページ分割をユーザー修正から学習させてみた",
+        "url": "https://zenn.dev/kurojica/articles/df96fc947cacb2",
+        "site": "Zenn(Python)",
+        "published": "2026-05-12T06:47:53Z",
+        "description": "こんにちは。AILabの堂上拓です。\n今回はMicrosaas開発シリーズとして、複数の書類が連結されたPDFを「書類単位」に自動分割するパイプラインに、ユーザー修正からの学習機能を組み込むプロトタイプを実装しました。\nこのプロトタイプは、ユーザーが一度行ったページ分割操作（書類の分割・結合）を学習データとしてDBに蓄積し、次回以降の同じフォーマットのPDF処理時に自動的にページ境界を再現すること...",
+        "category": "開発",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "KV キャッシュで Transformer の自己回帰復号を 7〜22× 高速化する — ONNX Runtime 実践記",
+        "url": "https://zenn.dev/ux_xu/articles/kv-cache-onnx-transformer",
+        "site": "Zenn(Python)",
+        "published": "2026-05-12T06:10:06Z",
+        "description": "はじめに\n自己回帰型 Transformer（GPT 系）の CPU 推論で、KV キャッシュの有無だけでスループットが桁レベルで変わることを実験で確かめました。\ndistilgpt2 を ONNX にエクスポートし、3 種類の実装を比較します。\n\n\n\n実装\n概要\n\n\n\n\nbaseline\n毎ステップ全トークンを再計算（KV キャッシュなし）\n\n\nkv\nKV キャッシュあり（毎ステップ 1 トーク...",
+        "category": "開発",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "リコーダーすら吹けない男が、ギターの指板SVGをCSVから一括生成するツールをPythonで作った話",
+        "url": "https://zenn.dev/sakuneko/articles/e398ff2e25764d",
+        "site": "Zenn(Python)",
+        "published": "2026-05-12T05:00:06Z",
+        "description": "はじめに\n楽器は全く弾けないけれど、ひょんなことから「ギターの指板（Fretboard）図」を大量生成するスクリプトを書くことになった経緯。\nボツになった海外案件のコードを供養しつつ、GitHubで公開したことの報告。\n使用技術・ライブラリ\nPython 3.x\nfretboardgtr: 指板描画のコアライブラリ。\nargparse / csv: CLIツールとしての操作性と一括処理の実現。\n技...",
+        "category": "開発",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "INT8量子化でCNNをエッジ推論向けに最適化する — ONNX Runtime PTQ 実践記",
+        "url": "https://zenn.dev/ux_xu/articles/ort-int8-ptq-cnn",
+        "site": "Zenn(Python)",
+        "published": "2026-05-12T04:47:40Z",
+        "description": "はじめに\nFP32 の MobileNetV2 を、PTQ（Post-Training Quantization）で INT8 に変換し、ファイルサイズ約 1/4・CPU 推論 2〜3× を狙った実験記録です。\nINT8のSIMD命令のsdotがない Raspberry Pi 4 でも INT8 Static は約 2.2× 高速化しました。「sdot がなければ速くならない」という予想が外れた理...",
+        "category": "開発",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "PythonスクレイピングでLINE通知する方法【LINE Notify・Messaging API・2026年版】",
+        "url": "https://zenn.dev/datajournal1/articles/f746e3b0ac2ae4",
+        "site": "Zenn(Python)",
+        "published": "2026-05-12T03:00:06Z",
+        "description": "!\n本記事で紹介する手法は、対象サイトの利用規約・robots.txtを遵守した上での利用を前提としています。\n\n!\n2025年3月31日をもって LINE Notify サービスは終了しました。本記事では後継の LINE Messaging API を使った方法を中心に解説します。\n\n\n はじめに\nスクレイピングで価格変動や在庫復活を検知したとき、通知をスマホに届けたい——Slack や Dis...",
+        "category": "開発",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "MCP の token bloat を 12 分の 1 にした、31 tools を 1 package に詰めた時の実測",
+        "url": "https://zenn.dev/zoetaka38/articles/cb6982bf5e8b59",
+        "site": "Zenn(Python)",
+        "published": "2026-05-12T02:48:06Z",
+        "description": "今週 X で @akshay_pachaar が MCP vs CLI の議論をまとめていて、その中の数字が結構強かったんですよね。\n\n\"The MCP vs CLI debate. For most of 2025, AI Engineers argued about it. The skeptics had real numbers: Playwright MCP eats 13.7K tok...",
+        "category": "開発",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "C-3PO、その名を返上する ── PO 廃止完遂と DX 整理 (v1.10 〜 v2.3)",
+        "url": "https://zenn.dev/satoh_y_0323/articles/2fe38354ea2f10",
+        "site": "Zenn(Python)",
+        "published": "2026-05-12T00:38:21Z",
+        "description": "前回記事: https://zenn.dev/satoh_y_0323/articles/5aa01c7e977626\nC3 GitHub: https://github.com/satoh-y-0323/claude-code-conductor / PyPI: https://pypi.org/project/claude-code-conductor/ / 公式ドキュメント: https:/...",
+        "category": "開発",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "未来からの通信を受け取る電子ペーパー",
+        "url": "https://zenn.dev/req9/articles/be56db9d50f148",
+        "site": "Zenn(Python)",
+        "published": "2026-05-11T23:30:05Z",
+        "description": "作ったもの\n未来からの通信を受け取る装置です。\nhttps://youtu.be/RbLZ2i1KT1w\n...\nというのは冗談ですが、\nInky Impressionという電子ペーパーを使って、以前の記事で書いたミドナというキャラのつぶやきを表示する装置です。\nミドナは私が作っているAIキャラで、ローカルLLMのGemma4のE4BをUnslothでファインチューニングしています。\n生きている世...",
+        "category": "開発",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "[Pandas入門シリーズ第6回] データの並び替えとランキング",
+        "url": "https://zenn.dev/haruhiro1020/articles/05ff6b7b902ee5",
+        "site": "Zenn(Python)",
+        "published": "2026-05-11T22:00:05Z",
+        "description": "はじめに\n本記事は「Pythonでデータを分析するPandas入門」シリーズの第6回です．\n本シリーズでは， Pythonのデータ分析ライブラリである Pandas を使って，「データを扱い，分析できる状態」になること を目標としています．\n第5回では，データ型とその変換 について説明しました．\n第6回では， データの並び替えとランキング を説明します．\nデータはそのままでは比較しづらいため，順序...",
+        "category": "開発",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
         "title": "時間記録をCSVで行う理由 - Day 9",
         "url": "https://zenn.dev/klo/articles/a4e0b774016b2a",
         "site": "Zenn(Python)",
@@ -614,16 +846,6 @@
         "site": "Zenn(Python)",
         "published": "2026-05-11T08:02:40Z",
         "description": "前回のおさらい\n#1「給料だけじゃ1000万は無理。だからAIに株を任せることにした」では、ボットを作った動機を話しました。\n今回は 「どうやって作ったか」 の設計全体を解説します。\n\n\n 技術スタック（ほぼ無料）\n言語:       Python 3.11\n価格データ: yfinance（無料・15分遅延）\n           kabu STATION API（無料・リアルタイム）\n取引API...",
-        "category": "開発",
-        "rss_category": "",
-        "image_url": ""
-      },
-      {
-        "title": "「助けて」じゃ届かない。デジタル秋田犬が吠えれば街が動く——子供の孤立ゼロを目指す4つのIoT×AIインフラ構想",
-        "url": "https://zenn.dev/miki_mini/articles/8e6cdb078cc708",
-        "site": "Zenn(Python)",
-        "published": "2026-05-11T08:00:07Z",
-        "description": "美容系勤務独学初心者マリー・アントワネット系エンジニア目指してます！\n今回は子供を守るライフラインが無いならデジタル秋田犬を放てばいいじゃない👸🍰です。\n読了時間の目安：約7〜10分\n!\n3行まとめ\n\n子供の孤立・車内放置・連れ去りを「街ごと」防ぐ4つのIoT×AIシステム構想を提案します\nメインは「デジタル秋田犬アプリ」——近くのスマホが一斉に秋田犬の吠え声を上げ、犯罪を心理的に抑止します\nRa...",
         "category": "開発",
         "rss_category": "",
         "image_url": ""
