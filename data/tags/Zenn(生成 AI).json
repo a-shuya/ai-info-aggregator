@@ -1,9 +1,19 @@
 {
   "site": "Zenn(生成 AI)",
-  "last_updated": "2026-05-12T12:30:56.604161",
-  "total_articles": 2007,
+  "last_updated": "2026-05-12T15:26:22.577373",
+  "total_articles": 2002,
   "articles_by_date": {
-    "本日": [
+    "昨日": [
+      {
+        "title": "vLLM のメモリが 100GB 超え？実は 60GB が \"空き地\" になっている話",
+        "url": "https://zenn.dev/nobmake/articles/cff39920ee6897",
+        "site": "Zenn(生成 AI)",
+        "published": "2026-05-12T11:31:27Z",
+        "description": "NVIDIA GB10 (128GB 統合メモリ) 環境で vLLM を運用していたところ、Qwen3.6-35B-A3B-NVFP4 という量子化済みモデルなのに 96GB のメモリを使っていた。\n調査の結果、これは「モデルのサイズ」ではなく 「KV キャッシュの過剰確保」 が原因と判明。設定を見直すことで 96GB → 38GB (−58GB) に削減できた。\n本記事では、原因の特定から解決ま...",
+        "category": "AI・技術",
+        "rss_category": "",
+        "image_url": ""
+      },
       {
         "title": "AI時代のエンジニアリングとは何か",
         "url": "https://zenn.dev/t0doroki_taka/articles/9b682a4968ccd2",
@@ -30,6 +40,16 @@
         "site": "Zenn(生成 AI)",
         "published": "2026-05-12T07:59:41Z",
         "description": "はじめに\n生成AIのスタートアッププロダクトを見ていると、ある構図が見えてきます。\n!\n生成AIは業務ソフトを再発明する\n\n初期のAIサービスは、多くの場合こうでした。\n!\nユーザー入力\n↓\nプロンプト\n↓\nLLM（GPT / Gemini / Claude）\n↓\n出力\n\nいわゆる Wrapper（ラッパー）型サービスです。しかしこのモデルには大きな問題があります。\n基盤モデル企業が同じ機能を実装...",
+        "category": "AI・技術",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "SQLだけで時系列予測（BigQuery × TimesFM）",
+        "url": "https://zenn.dev/nttdata_tech/articles/696be475b58ca6",
+        "site": "Zenn(生成 AI)",
+        "published": "2026-05-12T06:45:02Z",
+        "description": "はじめに\nGoogle BigQuery は、Google Cloud のサーバーレスなデータウェアハウスです。\n大量データの集計や分析を SQL で実行でき、インフラ管理をほとんど意識せずに使えます。\nその BigQuery 上で、機械学習を SQL を用いて操作できる機能が BigQuery ML です。\nAI関数が増えたことで、SQLだけで予測や異常検知を試せる範囲が広がりました。\n2025...",
         "category": "AI・技術",
         "rss_category": "",
         "image_url": ""
@@ -115,11 +135,11 @@
         "image_url": ""
       },
       {
-        "title": "【Claude Code】instinctの設計ちゃんとできてますか？ ハーネスの完全自動改善を促進しよう",
+        "title": "【Claude Code】instinctを駆使したチームハーネスの完全自動改善システム",
         "url": "https://zenn.dev/einperience/articles/cc8d468209c937",
         "site": "Zenn(生成 AI)",
         "published": "2026-05-12T00:21:39Z",
-        "description": "はじめに\n\nこの記事の目的は、チームや個人で色々と考えなくても、ローカルでagentを使用してさえいれば\nプロジェクトのハーネスが自動改善される仕組みを整えるためのヒントを提供することです。\nそのために、有名OSSのEverything Claude Codeを引き合いに出して、現実のプロジェクトへ取り込む方法を模索します。\nスター数17万を誇る有名OSSのECC（Everything Claud...",
+        "description": "はじめに\n\nこの記事の目的は、agentを使用してさえいれば\nハーネスが自動的に改善される仕組み\nを整えることです。\nそのために、有名OSSのEverything Claude Codeや強化学習との対比を引き合いに出して、現実のプロジェクトへ取り込む方法を模索&amp;提案します。\nスター数17万を誇る有名OSSのECC（Everything Claude Code）には、Continuous ...",
         "category": "AI・技術",
         "rss_category": "",
         "image_url": ""
@@ -145,7 +165,7 @@
         "image_url": ""
       }
     ],
-    "昨日": [
+    "一昨日": [
       {
         "title": "💡「Codex」 既存サイトのデザイン修正：デザインルールを定義するより、イメージ渡すほうが速かった話",
         "url": "https://zenn.dev/como/articles/1f8b161010abd2",
@@ -247,99 +267,17 @@
         "image_url": ""
       }
     ],
-    "一昨日": [
-      {
-        "title": "Claude Code を10倍使いやすくするスラッシュコマンド集を作って公開した",
-        "url": "https://zenn.dev/jun_eng/articles/71012bb4d0cf51",
-        "site": "Zenn(生成 AI)",
-        "published": "2026-05-10T14:43:35Z",
-        "description": "Claude Code を使い始めて気づいたことがある。\n毎回同じプロンプトを書いている。\n「このコードをレビューして。バグ・セキュリティ・パフォーマンスの観点で、重要度別に整理して返して」\n「テストを書いて。エッジケースも含めて網羅的に」\n「PR の説明文を書いて。変更理由と破壊的変更を含めて」\nこれを毎回手で打つのは無駄だし、プロンプトの質がその日の気分で変わる。\nそこで Claude Cod...",
-        "category": "AI・技術",
-        "rss_category": "",
-        "image_url": ""
-      },
-      {
-        "title": "Copilot/生成AIを使いこなす若手の提案力で受注率が変わる、国内データが示す勝つSIerの条件",
-        "url": "https://zenn.dev/syoshida07/articles/50a858313c4074",
-        "site": "Zenn(生成 AI)",
-        "published": "2026-05-10T13:19:46Z",
-        "description": "日本のSIerは長年、人月モデルを中心とした受託開発で成長してきたが、生成AIの普及により工数＝価値という前提が崩れつつある。\n経済産業省は2025年の崖で、レガシー刷新の遅れにより最大12兆円/年の経済損失が発生すると警告している（経産省DXレポート）\nこの状況下で企業が求めるのは、単なる開発力ではなく、ROI（投資利益率）を明確に示す提案力である。\nIPA（独立行政法人情報処理推進機構）の調査...",
-        "category": "AI・技術",
-        "rss_category": "",
-        "image_url": ""
-      },
-      {
-        "title": "ローカルLLM3モデルにいろいろ質問して比較評価｜Qwen3・LLM-jp-4・Gemma3",
-        "url": "https://zenn.dev/black_lotus/articles/2f68d0790002d9",
-        "site": "Zenn(生成 AI)",
-        "published": "2026-05-10T06:33:50Z",
-        "description": "はじめに\n前回まではOllamaでQwen3とLLM-jp-4を動かして、同じ質問を投げて感触を比べました。\n今回はGemma3を加えて、3モデルを5つの質問で比較します。\nただし、汎用的なベンチマーク記事にはしませんでした。\nローカルLLMの比較記事は世にたくさんあります。\nそこに記事をもう一つ加えるなら、自分の専門領域でモデルがどこを間違えるかを実際に見て、赤入れまで残した記録にしたいと思いま...",
-        "category": "AI・技術",
-        "rss_category": "",
-        "image_url": ""
-      },
-      {
-        "title": "モデル使い分けの「固定費」って、どこから割に合うんだろう",
-        "url": "https://zenn.dev/jeeee/articles/2026-05-10-model-routing-threshold",
-        "site": "Zenn(生成 AI)",
-        "published": "2026-05-10T05:10:38Z",
-        "description": "最近、GPT-5.5 と Claude Opus 4.7 を どう使い分けるか という話をよく目にします。\nよく見るのは、「GPT-5.5 は自走・探索・ツール横断、Opus 4.7 は精密修正・レビュー・仕様厳守、だから工程ごとに分業させるとよい」という整理です。\nこの主張自体は、かなり納得できます。\n実際、OpenAI の GPT-5.5 発表では、コーディング、リサーチ、データ分析、ドキュメ...",
-        "category": "AI・技術",
-        "rss_category": "",
-        "image_url": ""
-      },
-      {
-        "title": "LangGraphでReActエージェント実装してみた",
-        "url": "https://zenn.dev/mori373/articles/20260508-react-agent",
-        "site": "Zenn(生成 AI)",
-        "published": "2026-05-10T03:09:24Z",
-        "description": "はじめに\nこんにちは！現在大学院でAI研究を行っているmori-373(@mm03)です。\n最近は、LangGraphを使ったAIエージェントの勉強などを精力的に行っております。\n今回は、AIエージェントの設計パターンで最も基本的なものの一つであるReActエージェントをLangGraphで実装してみました！\nまた、実装はnotebookで行い、以下のリポジトリにアップしています。\nhttps:/...",
-        "category": "AI・技術",
-        "rss_category": "",
-        "image_url": ""
-      },
-      {
-        "title": "AI入門 2026年度講義ノート",
-        "url": "https://zenn.dev/kogikun/books/ai-introduction-2026",
-        "site": "Zenn(生成 AI)",
-        "published": "2026-05-10T02:44:58Z",
-        "description": "生成AIを使いながら、AIの原理・歴史・社会問題・作り方を学ぶ全学部向けの講義ノートです。\n⚠️講義ノートなので、必ずしも全ての内容を授業で扱うわけではありません。",
-        "category": "AI・技術",
-        "rss_category": "",
-        "image_url": ""
-      },
-      {
-        "title": "Codexの「ペット」の作り方",
-        "url": "https://zenn.dev/galirage/articles/codex-custom-pets",
-        "site": "Zenn(生成 AI)",
-        "published": "2026-05-10T00:24:04Z",
-        "description": "はじめまして、ますみです！\n株式会社Galirage（ガリレージ）というAIスタートアップで、代表をしております^^\nその他にも、「AIとコミュニケーションする技術（インプレス出版）」という書籍を執筆させていただいたり、生成AIアカデミーというYouTubeチャンネルを運営したり、上智大学で非常勤講師をしたりしています！\n\nCodexに自分だけの「ペット」を住まわせると、開発体験が少しだけ楽しくな...",
-        "category": "AI・技術",
-        "rss_category": "",
-        "image_url": ""
-      },
-      {
-        "title": "Claude Codeの「/radio」は、ただのBGM機能じゃない",
-        "url": "https://zenn.dev/taketsuyo/articles/c3282cbcd40d2a",
-        "site": "Zenn(生成 AI)",
-        "published": "2026-05-09T21:34:46Z",
-        "description": "正直、最初はスルーしかけた。 Codeで「/radio」と打つと、 FMというlo-fiラジオが流れる。\nそれだけ？と思うじゃないですか。\nでもこれ、AI駆動開発の次の方向をかなり象徴していると思う。\n\n\n え、AI開発ツールがラジオを流すの？\n話題になっているのは、 Codeのターミナルで「/radio」と入力するだけで、ブラウザからClaude FMのlo-fi音楽を流せるという小さな機能です...",
-        "category": "AI・技術",
-        "rss_category": "",
-        "image_url": ""
-      },
-      {
-        "title": "Harness Engineering とは何か ― 2026年2月から90日で業界共通語になった概念の正体",
-        "url": "https://zenn.dev/zztomcat/articles/6ceaa1abea7f52",
-        "site": "Zenn(生成 AI)",
-        "published": "2026-05-09T15:58:13Z",
-        "description": "---\ntitle: \"Harness Engineering とは何か ― 2026年2月から90日で業界共通語になった概念の正体\"\nemoji: \"🪝\"\ntype: \"tech\"\ntopics: [\"AI\", \"生成AI\", \"AIエージェント\", \"ClaudeCode\", \"GitHubCopilot\"]\npublished: true\n---\n\n TL;DR\n\n\nHarness Engi...",
-        "category": "AI・技術",
-        "rss_category": "",
-        "image_url": ""
-      }
-    ],
     "2026-05": [
+      {
+        "title": "vLLM のメモリが 100GB 超え？実は 60GB が \"空き地\" になっている話",
+        "url": "https://zenn.dev/nobmake/articles/cff39920ee6897",
+        "site": "Zenn(生成 AI)",
+        "published": "2026-05-12T11:31:27Z",
+        "description": "NVIDIA GB10 (128GB 統合メモリ) 環境で vLLM を運用していたところ、Qwen3.6-35B-A3B-NVFP4 という量子化済みモデルなのに 96GB のメモリを使っていた。\n調査の結果、これは「モデルのサイズ」ではなく 「KV キャッシュの過剰確保」 が原因と判明。設定を見直すことで 96GB → 38GB (−58GB) に削減できた。\n本記事では、原因の特定から解決ま...",
+        "category": "AI・技術",
+        "rss_category": "",
+        "image_url": ""
+      },
       {
         "title": "AI時代のエンジニアリングとは何か",
         "url": "https://zenn.dev/t0doroki_taka/articles/9b682a4968ccd2",
@@ -366,6 +304,16 @@
         "site": "Zenn(生成 AI)",
         "published": "2026-05-12T07:59:41Z",
         "description": "はじめに\n生成AIのスタートアッププロダクトを見ていると、ある構図が見えてきます。\n!\n生成AIは業務ソフトを再発明する\n\n初期のAIサービスは、多くの場合こうでした。\n!\nユーザー入力\n↓\nプロンプト\n↓\nLLM（GPT / Gemini / Claude）\n↓\n出力\n\nいわゆる Wrapper（ラッパー）型サービスです。しかしこのモデルには大きな問題があります。\n基盤モデル企業が同じ機能を実装...",
+        "category": "AI・技術",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "SQLだけで時系列予測（BigQuery × TimesFM）",
+        "url": "https://zenn.dev/nttdata_tech/articles/696be475b58ca6",
+        "site": "Zenn(生成 AI)",
+        "published": "2026-05-12T06:45:02Z",
+        "description": "はじめに\nGoogle BigQuery は、Google Cloud のサーバーレスなデータウェアハウスです。\n大量データの集計や分析を SQL で実行でき、インフラ管理をほとんど意識せずに使えます。\nその BigQuery 上で、機械学習を SQL を用いて操作できる機能が BigQuery ML です。\nAI関数が増えたことで、SQLだけで予測や異常検知を試せる範囲が広がりました。\n2025...",
         "category": "AI・技術",
         "rss_category": "",
         "image_url": ""
@@ -451,11 +399,11 @@
         "image_url": ""
       },
       {
-        "title": "【Claude Code】instinctの設計ちゃんとできてますか？ ハーネスの完全自動改善を促進しよう",
+        "title": "【Claude Code】instinctを駆使したチームハーネスの完全自動改善システム",
         "url": "https://zenn.dev/einperience/articles/cc8d468209c937",
         "site": "Zenn(生成 AI)",
         "published": "2026-05-12T00:21:39Z",
-        "description": "はじめに\n\nこの記事の目的は、チームや個人で色々と考えなくても、ローカルでagentを使用してさえいれば\nプロジェクトのハーネスが自動改善される仕組みを整えるためのヒントを提供することです。\nそのために、有名OSSのEverything Claude Codeを引き合いに出して、現実のプロジェクトへ取り込む方法を模索します。\nスター数17万を誇る有名OSSのECC（Everything Claud...",
+        "description": "はじめに\n\nこの記事の目的は、agentを使用してさえいれば\nハーネスが自動的に改善される仕組み\nを整えることです。\nそのために、有名OSSのEverything Claude Codeや強化学習との対比を引き合いに出して、現実のプロジェクトへ取り込む方法を模索&amp;提案します。\nスター数17万を誇る有名OSSのECC（Everything Claude Code）には、Continuous ...",
         "category": "AI・技術",
         "rss_category": "",
         "image_url": ""
