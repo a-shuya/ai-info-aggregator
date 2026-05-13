@@ -1,9 +1,129 @@
 {
   "site": "Zenn(LLM)",
-  "last_updated": "2026-05-13T10:47:35.990791",
-  "total_articles": 3355,
+  "last_updated": "2026-05-13T13:06:25.865979",
+  "total_articles": 3373,
   "articles_by_date": {
     "本日": [
+      {
+        "title": "14のAIエージェントが協調する自律型開発フレームワークの設計と実装",
+        "url": "https://zenn.dev/fukukei23/articles/nexuscore-multi-agent-architecture",
+        "site": "Zenn(LLM)",
+        "published": "2026-05-13T11:51:14Z",
+        "description": "0. なぜ「AIエージェント群」なのか\n「ChatGPTにコードを書かせる」だけでは、プロダクション品質のコードは生まれません。\nレビュー、テスト、セキュリティ検査、要件の明確化——人間の開発者が当たり前にやっていることをAI開発でも実現するには、専門化されたエージェントの協調が必要です。\nNexusCoreは、14の専門エージェントがソフトウェア開発ライフサイクル全体を自律実行するオープンソース...",
+        "category": "AI・技術",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "AI責任ノード――AIエージェントを責任経路で管理する",
+        "url": "https://zenn.dev/dantarg/articles/ai-responsibility-node",
+        "site": "Zenn(LLM)",
+        "published": "2026-05-13T07:35:51Z",
+        "description": "連続記事メモ：本稿は「責任経路工学」シリーズの一部です。\n第9回はこちら\n\n現時点では、責任経路を「責任経路モデル（理論層）」「責任経路設計（設計層）」「責任経路工学（実装・監査層）」の三層として整理しています。本稿は、その三層構造を前提に、AIを最終責任主体ではなく、責任経路上で識別・制御・記録される作動単位として扱います。\n\n\n はじめに\nAIをめぐる議論は、しばしば二つの極に寄る。\n一つは、...",
+        "category": "AI・技術",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "ChatGPT/GeminiのAPIを叩くときに「型」の安心感が欲しい人のためのZod",
+        "url": "https://zenn.dev/kasouzou/articles/3d2f82d0cded92",
+        "site": "Zenn(LLM)",
+        "published": "2026-05-13T02:33:22Z",
+        "description": "最近、LLM（大規模言語モデル）の出力をそのままプログラムで扱いたい場面が増えてるよね。\nでも、AIの返答ってたまにフォーマットが崩れたり、いらないプロパティが混ざったりして「ランタイムエラーで死ぬ」のが一番怖い。\nそんなときに便利なのが Zod を使ったスキーマバリデーション。\n今回は TypeScript プロジェクトで LLM のレスポンスを安全に受け取る方法をサクッと紹介するよ。\n\n なぜ...",
+        "category": "AI・技術",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "Claude Code のトークン消費を半分にした5つのテクニック",
+        "url": "https://zenn.dev/kei_concierge/articles/claude-code-token-optimization",
+        "site": "Zenn(LLM)",
+        "published": "2026-05-13T01:00:11Z",
+        "description": "Claude Code のトークン消費を半分にした5つのテクニック\n月末にAnthropicの請求書を開いて「え、また？」となった経験はないだろうか。\nClaude Codeは強力だ。コードを書いてくれる、レビューしてくれる、バグを直してくれる。しかしその代償として、気づかないうちにトークンが積み上がっていく。特に長いシステムプロンプトや、ファイル全体を毎回渡すような使い方をしていると、トークン消...",
+        "category": "AI・技術",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "Claude Codeで仮想会社を運営してわかった、人間がやるべきこと",
+        "url": "https://zenn.dev/mapellion/articles/4abe61fd1c143b",
+        "site": "Zenn(LLM)",
+        "published": "2026-05-13T01:00:05Z",
+        "description": "はじめに\nClaude Codeの中に仮想会社を設立して、OSS開発をまるごとエージェントで回す実験をしていました。開発・レビュー・セキュリティ・マーケティング・法務・経営企画……10の部署にエージェントを配置して、自律的に動かす構成です。\nしばらく運営した後、GitHub・Hacker News・Redditで立て続けにBANされました。笑\nBANされた話はこちら！\nhttps://zenn.d...",
+        "category": "AI・技術",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "Claude が instructions を無視する感覚は正しい",
+        "url": "https://zenn.dev/naoya643/articles/claude-ignores-instructions",
+        "site": "Zenn(LLM)",
+        "published": "2026-05-13T00:21:15Z",
+        "description": "同じ事故を 2 回踏んだあなたへ\nClaude Code を 2〜3 週間使ってきて、最近こんな経験をしていませんか。\n\n「本番 URL を確認してから完了報告すること」と CLAUDE.md に書いたのに、CI が green になっただけで「完了しました」と報告される\n「同じファイルを 2 つのセッションで触らない」と書いたのに、別タブの worktree が普通に上書きしている\n「気をつけて...",
+        "category": "AI・技術",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "Gemini Flash Lite が 20 ターンで壊れるのを、要約を embedding することで止めた話",
+        "url": "https://zenn.dev/officekamiya/articles/69de32dd33f37b",
+        "site": "Zenn(LLM)",
+        "published": "2026-05-13T00:03:05Z",
+        "description": "個人開発で SaaS を作っていて、内蔵 AI チャットに Gemini Flash Lite を使っているのですが、20 ターンを過ぎたあたりから応答品質が目に見えて崩れる現象に当たりました。同じモデルなのに、短い会話ではちゃんと喋れていたのに、長くなると別の何かに変わっていく。\n最初はプロンプトを直せば済むと思って何度も書き直したのですが、これは構造的な問題で、プロンプトをいくら磨いても根治し...",
+        "category": "AI・技術",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "OpenCode Webモード × Tailscaleでスマホを開発環境にする",
+        "url": "https://zenn.dev/headwaters/articles/a1b2c3d4e5f607",
+        "site": "Zenn(LLM)",
+        "published": "2026-05-12T23:40:05Z",
+        "description": "はじめに\n出先で少しコードを書きたい、AIエージェントにタスクを投げたい。\nでも、そのためにわざわざ重いPCを持ち歩くのは面倒ですよね。\n最近、自宅のUbuntu PCでOpenCodeのWebモードを常時起動しておき、Tailscale経由でスマホやタブレットからアクセスするという運用を始めたところ、驚くほど快適だったので共有します。\n個人的な手記レベルの内容で、高度な技術は扱いませんので注意し...",
+        "category": "AI・技術",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "2台のGPUマシンを束ねてQwen2.5-72Bを動かす llama.cpp RPC入門",
+        "url": "https://zenn.dev/holyholy555/articles/cbbf872c3e65b2",
+        "site": "Zenn(LLM)",
+        "published": "2026-05-12T23:21:39Z",
+        "description": "はじめに\nソフトウェアエンジニアのホーリーデイです。\n「GPUはある。でも1台ぶんのVRAMでは足りない」\n大きめのGGUFモデルをローカルで試そうとすると、最初にぶつかるのがVRAM容量です。小さめの量子化モデルなら1台のPCでも動きますが、70B級、特にQ8系のモデルになると一気に厳しくなります。\nそこで今回は、llama.cpp のRPC機能を使って、2台のPCに搭載されたGPUをネットワー...",
+        "category": "AI・技術",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "GraphRAGで読む『羅生門』",
+        "url": "https://zenn.dev/tyumugiko/articles/cf6b12ecba8127",
+        "site": "Zenn(LLM)",
+        "published": "2026-05-12T22:58:39Z",
+        "description": "はじめに\nGraphRAGをご存じでしょうか？\nRAG（Retrieval-Augmented Generation）は近年、AIアプリケーションの定番技術として広く普及し、もはや常識のようにもてはやされています。\nそんな脚光を浴びているRAGにも、ある課題が存在しています。\nMicrosoftはこれをさらに発展させ、知識グラフ（ナレッジグラフ）を組み合わせたGraphRAGを発表しました。\nテキ...",
+        "category": "AI・技術",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "【第２回】Microsoft Agent Frameworkで学ぶAIエージェント設計原則：不要な直列処理を排除する",
+        "url": "https://zenn.dev/naruaki/articles/af-design-02-concurrent",
+        "site": "Zenn(LLM)",
+        "published": "2026-05-12T22:56:40Z",
+        "description": "!\nこの記事は「AIエージェント設計原則シリーズ」の第2回です。Microsoft Agent Framework を題材に、ソフトウェア設計原則を AI エージェントに適用する方法を解説します。\n\n\n はじめに\n前回は「万能エージェント」の問題を扱い、Agent を責務ごとに分割することを学びました。\n分割した Agent をどう実行するかは設計上の選択です。直列に実行するか並列に実行するかは、...",
+        "category": "AI・技術",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "なぜ多機能なAIエージェントは、まだドラえもんに見えないのか：エージェント起点の「気がかり」をつくる",
+        "url": "https://zenn.dev/mynameisyu/articles/b461d32bf48e21",
+        "site": "Zenn(LLM)",
+        "published": "2026-05-12T22:54:57Z",
+        "description": "はじめに：ドラえもんを作りたい\nドラえもんのようなエージェントを作りたいと思っています。\n最近のAIエージェントはできることが急速に増えています。それでも、触っているとまだ「ドラえもんっぽくない」と感じる瞬間が多々あります。\nこの記事ではその違いはどこから来るのか、そしてAIエージェントの自律性をどう設計すれば少し近づけるのかを考えてみました。\n!\nこの記事は、GPT-5.5を補助的に用いて書いて...",
+        "category": "AI・技術",
+        "rss_category": "",
+        "image_url": ""
+      },
       {
         "title": "AIに繰り返し作業を覚えさせた{Agent Skills}——農家エンジニアのチャットボット開発記⑧（完）",
         "url": "https://zenn.dev/hiroakikody/articles/ba1b886aad4a76",
@@ -107,16 +227,6 @@
         "image_url": ""
       },
       {
-        "title": "Claude Codeで戦う離婚交渉 — LINE 5万行を解析して慰謝料合意まで",
-        "url": "https://zenn.dev/nullkon/articles/0de62a077b5d19",
-        "site": "Zenn(LLM)",
-        "published": "2026-05-12T13:37:14Z",
-        "description": "章1: 種明かし\nLINE 5万行を Claude に読ませて、不倫問題から1ヶ月で慰謝料合意までたどり着いた経験を、前回 note に書いた。この記事は、その続編にあたる。\nhttps://note.com/nullkon/n/n1c3e61cff642\nnote 記事で「Claude」とだけ書いていたのは、正確には Claude Code だった。Anthropic 公式の CLI で、ローカ...",
-        "category": "AI・技術",
-        "rss_category": "",
-        "image_url": ""
-      },
-      {
         "title": "コンパニオンAIの感情を、ラベルじゃなく経路で作った話",
         "url": "https://zenn.dev/haru0416/articles/d107ea122be434",
         "site": "Zenn(LLM)",
@@ -152,26 +262,6 @@
         "site": "Zenn(LLM)",
         "published": "2026-05-12T07:03:47Z",
         "description": "CrewKickoffで30分悩んだ夜の話\nマルチエージェントの記事は、もうお腹いっぱい、という顔をしている方も多いと思います。\n私もそうでした。\nでも実際に使う段になると、毎回同じ問題に詰まります。 どれを選べばいいか分からない のです。\n私は半年前にCrewAIを触り始めたとき、「とりあえずクイックスタートをコピペすればいいや」と思ったのですが、CrewKickoffの引数で30分悩みました。...",
-        "category": "AI・技術",
-        "rss_category": "",
-        "image_url": ""
-      },
-      {
-        "title": "OpenClawの次に触りたい、自分専用に育つAIエージェント「Hermes Agent」入門",
-        "url": "https://zenn.dev/boutiquehack/articles/hermes-agent-intro",
-        "site": "Zenn(LLM)",
-        "published": "2026-05-12T06:52:09Z",
-        "description": "はじめに\nChatGPTやClaudeに、毎回同じ前提を説明していませんか。\n「自分はこういう仕事をしていて」「このリポジトリを触っていて」「前回はこの方針で進めたから、その続きで」。生成AIを日常的に使うほど、この文脈の貼り直しがじわじわ効いてきます。\n最近はChatGPTにもClaudeにもメモリ機能があります。CursorやClaude Codeのように、プロジェクト単位でかなり賢く文脈を持...",
-        "category": "AI・技術",
-        "rss_category": "",
-        "image_url": ""
-      },
-      {
-        "title": "KV キャッシュで Transformer の自己回帰復号を 7〜22× 高速化する — ONNX Runtime 実践記",
-        "url": "https://zenn.dev/ux_xu/articles/kv-cache-onnx-transformer",
-        "site": "Zenn(LLM)",
-        "published": "2026-05-12T06:10:06Z",
-        "description": "はじめに\n自己回帰型 Transformer（GPT 系）の CPU 推論で、KV キャッシュの有無だけでスループットが桁レベルで変わることを実験で確かめました。\ndistilgpt2 を ONNX にエクスポートし、3 種類の実装を比較します。\n\n\n\n実装\n概要\n\n\n\n\nbaseline\n毎ステップ全トークンを再計算（KV キャッシュなし）\n\n\nkv\nKV キャッシュあり（毎ステップ 1 トーク...",
         "category": "AI・技術",
         "rss_category": "",
         "image_url": ""
@@ -541,6 +631,126 @@
     ],
     "2026-05": [
       {
+        "title": "14のAIエージェントが協調する自律型開発フレームワークの設計と実装",
+        "url": "https://zenn.dev/fukukei23/articles/nexuscore-multi-agent-architecture",
+        "site": "Zenn(LLM)",
+        "published": "2026-05-13T11:51:14Z",
+        "description": "0. なぜ「AIエージェント群」なのか\n「ChatGPTにコードを書かせる」だけでは、プロダクション品質のコードは生まれません。\nレビュー、テスト、セキュリティ検査、要件の明確化——人間の開発者が当たり前にやっていることをAI開発でも実現するには、専門化されたエージェントの協調が必要です。\nNexusCoreは、14の専門エージェントがソフトウェア開発ライフサイクル全体を自律実行するオープンソース...",
+        "category": "AI・技術",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "AI責任ノード――AIエージェントを責任経路で管理する",
+        "url": "https://zenn.dev/dantarg/articles/ai-responsibility-node",
+        "site": "Zenn(LLM)",
+        "published": "2026-05-13T07:35:51Z",
+        "description": "連続記事メモ：本稿は「責任経路工学」シリーズの一部です。\n第9回はこちら\n\n現時点では、責任経路を「責任経路モデル（理論層）」「責任経路設計（設計層）」「責任経路工学（実装・監査層）」の三層として整理しています。本稿は、その三層構造を前提に、AIを最終責任主体ではなく、責任経路上で識別・制御・記録される作動単位として扱います。\n\n\n はじめに\nAIをめぐる議論は、しばしば二つの極に寄る。\n一つは、...",
+        "category": "AI・技術",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "ChatGPT/GeminiのAPIを叩くときに「型」の安心感が欲しい人のためのZod",
+        "url": "https://zenn.dev/kasouzou/articles/3d2f82d0cded92",
+        "site": "Zenn(LLM)",
+        "published": "2026-05-13T02:33:22Z",
+        "description": "最近、LLM（大規模言語モデル）の出力をそのままプログラムで扱いたい場面が増えてるよね。\nでも、AIの返答ってたまにフォーマットが崩れたり、いらないプロパティが混ざったりして「ランタイムエラーで死ぬ」のが一番怖い。\nそんなときに便利なのが Zod を使ったスキーマバリデーション。\n今回は TypeScript プロジェクトで LLM のレスポンスを安全に受け取る方法をサクッと紹介するよ。\n\n なぜ...",
+        "category": "AI・技術",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "Claude Code のトークン消費を半分にした5つのテクニック",
+        "url": "https://zenn.dev/kei_concierge/articles/claude-code-token-optimization",
+        "site": "Zenn(LLM)",
+        "published": "2026-05-13T01:00:11Z",
+        "description": "Claude Code のトークン消費を半分にした5つのテクニック\n月末にAnthropicの請求書を開いて「え、また？」となった経験はないだろうか。\nClaude Codeは強力だ。コードを書いてくれる、レビューしてくれる、バグを直してくれる。しかしその代償として、気づかないうちにトークンが積み上がっていく。特に長いシステムプロンプトや、ファイル全体を毎回渡すような使い方をしていると、トークン消...",
+        "category": "AI・技術",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "Claude Codeで仮想会社を運営してわかった、人間がやるべきこと",
+        "url": "https://zenn.dev/mapellion/articles/4abe61fd1c143b",
+        "site": "Zenn(LLM)",
+        "published": "2026-05-13T01:00:05Z",
+        "description": "はじめに\nClaude Codeの中に仮想会社を設立して、OSS開発をまるごとエージェントで回す実験をしていました。開発・レビュー・セキュリティ・マーケティング・法務・経営企画……10の部署にエージェントを配置して、自律的に動かす構成です。\nしばらく運営した後、GitHub・Hacker News・Redditで立て続けにBANされました。笑\nBANされた話はこちら！\nhttps://zenn.d...",
+        "category": "AI・技術",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "Claude が instructions を無視する感覚は正しい",
+        "url": "https://zenn.dev/naoya643/articles/claude-ignores-instructions",
+        "site": "Zenn(LLM)",
+        "published": "2026-05-13T00:21:15Z",
+        "description": "同じ事故を 2 回踏んだあなたへ\nClaude Code を 2〜3 週間使ってきて、最近こんな経験をしていませんか。\n\n「本番 URL を確認してから完了報告すること」と CLAUDE.md に書いたのに、CI が green になっただけで「完了しました」と報告される\n「同じファイルを 2 つのセッションで触らない」と書いたのに、別タブの worktree が普通に上書きしている\n「気をつけて...",
+        "category": "AI・技術",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "Gemini Flash Lite が 20 ターンで壊れるのを、要約を embedding することで止めた話",
+        "url": "https://zenn.dev/officekamiya/articles/69de32dd33f37b",
+        "site": "Zenn(LLM)",
+        "published": "2026-05-13T00:03:05Z",
+        "description": "個人開発で SaaS を作っていて、内蔵 AI チャットに Gemini Flash Lite を使っているのですが、20 ターンを過ぎたあたりから応答品質が目に見えて崩れる現象に当たりました。同じモデルなのに、短い会話ではちゃんと喋れていたのに、長くなると別の何かに変わっていく。\n最初はプロンプトを直せば済むと思って何度も書き直したのですが、これは構造的な問題で、プロンプトをいくら磨いても根治し...",
+        "category": "AI・技術",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "OpenCode Webモード × Tailscaleでスマホを開発環境にする",
+        "url": "https://zenn.dev/headwaters/articles/a1b2c3d4e5f607",
+        "site": "Zenn(LLM)",
+        "published": "2026-05-12T23:40:05Z",
+        "description": "はじめに\n出先で少しコードを書きたい、AIエージェントにタスクを投げたい。\nでも、そのためにわざわざ重いPCを持ち歩くのは面倒ですよね。\n最近、自宅のUbuntu PCでOpenCodeのWebモードを常時起動しておき、Tailscale経由でスマホやタブレットからアクセスするという運用を始めたところ、驚くほど快適だったので共有します。\n個人的な手記レベルの内容で、高度な技術は扱いませんので注意し...",
+        "category": "AI・技術",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "2台のGPUマシンを束ねてQwen2.5-72Bを動かす llama.cpp RPC入門",
+        "url": "https://zenn.dev/holyholy555/articles/cbbf872c3e65b2",
+        "site": "Zenn(LLM)",
+        "published": "2026-05-12T23:21:39Z",
+        "description": "はじめに\nソフトウェアエンジニアのホーリーデイです。\n「GPUはある。でも1台ぶんのVRAMでは足りない」\n大きめのGGUFモデルをローカルで試そうとすると、最初にぶつかるのがVRAM容量です。小さめの量子化モデルなら1台のPCでも動きますが、70B級、特にQ8系のモデルになると一気に厳しくなります。\nそこで今回は、llama.cpp のRPC機能を使って、2台のPCに搭載されたGPUをネットワー...",
+        "category": "AI・技術",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "GraphRAGで読む『羅生門』",
+        "url": "https://zenn.dev/tyumugiko/articles/cf6b12ecba8127",
+        "site": "Zenn(LLM)",
+        "published": "2026-05-12T22:58:39Z",
+        "description": "はじめに\nGraphRAGをご存じでしょうか？\nRAG（Retrieval-Augmented Generation）は近年、AIアプリケーションの定番技術として広く普及し、もはや常識のようにもてはやされています。\nそんな脚光を浴びているRAGにも、ある課題が存在しています。\nMicrosoftはこれをさらに発展させ、知識グラフ（ナレッジグラフ）を組み合わせたGraphRAGを発表しました。\nテキ...",
+        "category": "AI・技術",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "【第２回】Microsoft Agent Frameworkで学ぶAIエージェント設計原則：不要な直列処理を排除する",
+        "url": "https://zenn.dev/naruaki/articles/af-design-02-concurrent",
+        "site": "Zenn(LLM)",
+        "published": "2026-05-12T22:56:40Z",
+        "description": "!\nこの記事は「AIエージェント設計原則シリーズ」の第2回です。Microsoft Agent Framework を題材に、ソフトウェア設計原則を AI エージェントに適用する方法を解説します。\n\n\n はじめに\n前回は「万能エージェント」の問題を扱い、Agent を責務ごとに分割することを学びました。\n分割した Agent をどう実行するかは設計上の選択です。直列に実行するか並列に実行するかは、...",
+        "category": "AI・技術",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "なぜ多機能なAIエージェントは、まだドラえもんに見えないのか：エージェント起点の「気がかり」をつくる",
+        "url": "https://zenn.dev/mynameisyu/articles/b461d32bf48e21",
+        "site": "Zenn(LLM)",
+        "published": "2026-05-12T22:54:57Z",
+        "description": "はじめに：ドラえもんを作りたい\nドラえもんのようなエージェントを作りたいと思っています。\n最近のAIエージェントはできることが急速に増えています。それでも、触っているとまだ「ドラえもんっぽくない」と感じる瞬間が多々あります。\nこの記事ではその違いはどこから来るのか、そしてAIエージェントの自律性をどう設計すれば少し近づけるのかを考えてみました。\n!\nこの記事は、GPT-5.5を補助的に用いて書いて...",
+        "category": "AI・技術",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
         "title": "AIに繰り返し作業を覚えさせた{Agent Skills}——農家エンジニアのチャットボット開発記⑧（完）",
         "url": "https://zenn.dev/hiroakikody/articles/ba1b886aad4a76",
         "site": "Zenn(LLM)",
@@ -641,16 +851,6 @@
         "image_url": ""
       },
       {
-        "title": "Claude Codeで戦う離婚交渉 — LINE 5万行を解析して慰謝料合意まで",
-        "url": "https://zenn.dev/nullkon/articles/0de62a077b5d19",
-        "site": "Zenn(LLM)",
-        "published": "2026-05-12T13:37:14Z",
-        "description": "章1: 種明かし\nLINE 5万行を Claude に読ませて、不倫問題から1ヶ月で慰謝料合意までたどり着いた経験を、前回 note に書いた。この記事は、その続編にあたる。\nhttps://note.com/nullkon/n/n1c3e61cff642\nnote 記事で「Claude」とだけ書いていたのは、正確には Claude Code だった。Anthropic 公式の CLI で、ローカ...",
-        "category": "AI・技術",
-        "rss_category": "",
-        "image_url": ""
-      },
-      {
         "title": "コンパニオンAIの感情を、ラベルじゃなく経路で作った話",
         "url": "https://zenn.dev/haru0416/articles/d107ea122be434",
         "site": "Zenn(LLM)",
@@ -686,26 +886,6 @@
         "site": "Zenn(LLM)",
         "published": "2026-05-12T07:03:47Z",
         "description": "CrewKickoffで30分悩んだ夜の話\nマルチエージェントの記事は、もうお腹いっぱい、という顔をしている方も多いと思います。\n私もそうでした。\nでも実際に使う段になると、毎回同じ問題に詰まります。 どれを選べばいいか分からない のです。\n私は半年前にCrewAIを触り始めたとき、「とりあえずクイックスタートをコピペすればいいや」と思ったのですが、CrewKickoffの引数で30分悩みました。...",
-        "category": "AI・技術",
-        "rss_category": "",
-        "image_url": ""
-      },
-      {
-        "title": "OpenClawの次に触りたい、自分専用に育つAIエージェント「Hermes Agent」入門",
-        "url": "https://zenn.dev/boutiquehack/articles/hermes-agent-intro",
-        "site": "Zenn(LLM)",
-        "published": "2026-05-12T06:52:09Z",
-        "description": "はじめに\nChatGPTやClaudeに、毎回同じ前提を説明していませんか。\n「自分はこういう仕事をしていて」「このリポジトリを触っていて」「前回はこの方針で進めたから、その続きで」。生成AIを日常的に使うほど、この文脈の貼り直しがじわじわ効いてきます。\n最近はChatGPTにもClaudeにもメモリ機能があります。CursorやClaude Codeのように、プロジェクト単位でかなり賢く文脈を持...",
-        "category": "AI・技術",
-        "rss_category": "",
-        "image_url": ""
-      },
-      {
-        "title": "KV キャッシュで Transformer の自己回帰復号を 7〜22× 高速化する — ONNX Runtime 実践記",
-        "url": "https://zenn.dev/ux_xu/articles/kv-cache-onnx-transformer",
-        "site": "Zenn(LLM)",
-        "published": "2026-05-12T06:10:06Z",
-        "description": "はじめに\n自己回帰型 Transformer（GPT 系）の CPU 推論で、KV キャッシュの有無だけでスループットが桁レベルで変わることを実験で確かめました。\ndistilgpt2 を ONNX にエクスポートし、3 種類の実装を比較します。\n\n\n\n実装\n概要\n\n\n\n\nbaseline\n毎ステップ全トークンを再計算（KV キャッシュなし）\n\n\nkv\nKV キャッシュあり（毎ステップ 1 トーク...",
         "category": "AI・技術",
         "rss_category": "",
         "image_url": ""
