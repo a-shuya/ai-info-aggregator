@@ -1,9 +1,19 @@
 {
   "site": "Zenn(LLM)",
-  "last_updated": "2026-05-15T11:01:51.476731",
-  "total_articles": 3396,
+  "last_updated": "2026-05-15T13:03:40.454568",
+  "total_articles": 3398,
   "articles_by_date": {
     "本日": [
+      {
+        "title": "RAGナレッジベース作成を簡単にしたくてツールを作った",
+        "url": "https://zenn.dev/bathtimefish/articles/80a22a045795f0",
+        "site": "Zenn(LLM)",
+        "published": "2026-05-15T09:47:21Z",
+        "description": "はじめに\nRAGを利用したチャットボットの作成にはもっぱらDifyを利用してました。単純なRAGならドキュメントを放り込んでボタン押すだけでつくれるしチャットフローでのナレッジ設定も簡単なのでコード書くよりよっぽど楽です。\n一方で最近だとClaude DesktopやCodex、Gemini CLIと対話する時間が増えてきたので彼ら向けのナレッジベースをクイックに用意したいんだけど調べてもニーズに...",
+        "category": "AI・技術",
+        "rss_category": "",
+        "image_url": ""
+      },
       {
         "title": "ChatGPTに日本の住所を正規化させると危険だった",
         "url": "https://zenn.dev/naofumi1000ri/articles/f0997a056357bb",
@@ -29,7 +39,7 @@
         "url": "https://zenn.dev/schhrcat/articles/45505bf903abf5",
         "site": "Zenn(LLM)",
         "published": "2026-05-15T06:53:18Z",
-        "description": "はじめに\nLLMの量子化では、重みをFP16からINT4に落とすことでモデルサイズが約1/4になる。\nここで、組み込みエンジニアとしての素朴な疑問が生まれた。\n「Float演算からInteger演算になったなら、もうGPUは要らないのでは？」\n整数演算は普通のCPUで十分高速に回せるはずだ。であれば、量子化済みLLMはCPU単体で動かせるのではないか。\nこの疑問を深堀りしてみた。\n\n\n 結論：GP...",
+        "description": "はじめに\nLLMの量子化では、重みをFP16からINT4に落とすことでモデルサイズが約1/4になる。\nここで、素朴な疑問が生まれた。\n「Float演算からInteger演算になったなら、もうGPUは要らないのでは？」\n整数演算は普通のCPUで十分高速に回せるはずだ。であれば、量子化済みLLMはCPU単体で動かせるのではないか。\nこの疑問を深堀りしてみた。\n\n\n 結論：GPUは「不要にはならない」が...",
         "category": "AI・技術",
         "rss_category": "",
         "image_url": ""
@@ -80,6 +90,16 @@
         "site": "Zenn(LLM)",
         "published": "2026-05-15T03:00:25Z",
         "description": "Claude Codeは強い。\nこれは前提として書いておく。本記事はClaude Codeを批判する記事ではない。\nむしろClaude Codeはかなり強力なコードエージェントであるし、実用性も高い。\nただしその強さは、かなりの部分で\n\n強力なAPIモデル\n大きなコンテクストウィンドウ\n大量のツール定義\n複数回のLLM呼び出し\nそれなりのトークン消費\n\nを前提にしている。つまり、強いが燃費が軽いわ...",
+        "category": "AI・技術",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "Claude Codeの1000 セッションを分析して、一週間目でリードタイムを10%縮めた話",
+        "url": "https://zenn.dev/globis/articles/94762dc8ec7914",
+        "site": "Zenn(LLM)",
+        "published": "2026-05-15T02:54:18Z",
+        "description": "グロービスでは AI コーディングのメインツールを Claude Code (CLI 版) に統一する方向で運用しています。利用ログを取り始めて改善の打ち手を入れたところ、すぐに次のような成果が出ました。\n\n毎月の開発時間を およそ 100時間 節約\n開発セッションのリードタイムが 約 10% 短縮\n\n\n本記事では、この成果につながった理由と、改善のきっかけとなったボトルネックをご紹介します。\n\n...",
         "category": "AI・技術",
         "rss_category": "",
         "image_url": ""
@@ -182,16 +202,6 @@
         "site": "Zenn(LLM)",
         "published": "2026-05-14T13:07:41Z",
         "description": "!\n本記事は個人の学習と考察をまとめたもので、所属組織の公式見解ではありません。\n\n!\n🪞 この記事のテーマ\nAIを日常的に使うようになって、改めて見えてきたのは「思考と理解は別物だ」という当たり前の事実でした。\n\n\n思考はAIに預けられる ── 候補を出す、整理する、展開する\n\n理解は自分で育てるしかない ── 何を採用し、何に責任を持つかは人間の仕事\n\nそして「思考を外注できる人ほど、理解の責...",
-        "category": "AI・技術",
-        "rss_category": "",
-        "image_url": ""
-      },
-      {
-        "title": "論文メモ：SentencePieceからTokenizationを整理する",
-        "url": "https://zenn.dev/kas_blog/articles/20260509-llm-02-tokenization",
-        "site": "Zenn(LLM)",
-        "published": "2026-05-14T12:45:52Z",
-        "description": "はじめに\nこの記事は、以下の論文を読んだ技術メモです。\n\n論文タイトル: SentencePiece: A simple and language independent subword tokenizer and detokenizer for Neural Text Processing\n論文リンク: https://arxiv.org/abs/1808.06226\n\n著者: Taku Kud...",
         "category": "AI・技術",
         "rss_category": "",
         "image_url": ""
@@ -531,6 +541,16 @@
     ],
     "2026-05": [
       {
+        "title": "RAGナレッジベース作成を簡単にしたくてツールを作った",
+        "url": "https://zenn.dev/bathtimefish/articles/80a22a045795f0",
+        "site": "Zenn(LLM)",
+        "published": "2026-05-15T09:47:21Z",
+        "description": "はじめに\nRAGを利用したチャットボットの作成にはもっぱらDifyを利用してました。単純なRAGならドキュメントを放り込んでボタン押すだけでつくれるしチャットフローでのナレッジ設定も簡単なのでコード書くよりよっぽど楽です。\n一方で最近だとClaude DesktopやCodex、Gemini CLIと対話する時間が増えてきたので彼ら向けのナレッジベースをクイックに用意したいんだけど調べてもニーズに...",
+        "category": "AI・技術",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
         "title": "ChatGPTに日本の住所を正規化させると危険だった",
         "url": "https://zenn.dev/naofumi1000ri/articles/f0997a056357bb",
         "site": "Zenn(LLM)",
@@ -555,7 +575,7 @@
         "url": "https://zenn.dev/schhrcat/articles/45505bf903abf5",
         "site": "Zenn(LLM)",
         "published": "2026-05-15T06:53:18Z",
-        "description": "はじめに\nLLMの量子化では、重みをFP16からINT4に落とすことでモデルサイズが約1/4になる。\nここで、組み込みエンジニアとしての素朴な疑問が生まれた。\n「Float演算からInteger演算になったなら、もうGPUは要らないのでは？」\n整数演算は普通のCPUで十分高速に回せるはずだ。であれば、量子化済みLLMはCPU単体で動かせるのではないか。\nこの疑問を深堀りしてみた。\n\n\n 結論：GP...",
+        "description": "はじめに\nLLMの量子化では、重みをFP16からINT4に落とすことでモデルサイズが約1/4になる。\nここで、素朴な疑問が生まれた。\n「Float演算からInteger演算になったなら、もうGPUは要らないのでは？」\n整数演算は普通のCPUで十分高速に回せるはずだ。であれば、量子化済みLLMはCPU単体で動かせるのではないか。\nこの疑問を深堀りしてみた。\n\n\n 結論：GPUは「不要にはならない」が...",
         "category": "AI・技術",
         "rss_category": "",
         "image_url": ""
@@ -606,6 +626,16 @@
         "site": "Zenn(LLM)",
         "published": "2026-05-15T03:00:25Z",
         "description": "Claude Codeは強い。\nこれは前提として書いておく。本記事はClaude Codeを批判する記事ではない。\nむしろClaude Codeはかなり強力なコードエージェントであるし、実用性も高い。\nただしその強さは、かなりの部分で\n\n強力なAPIモデル\n大きなコンテクストウィンドウ\n大量のツール定義\n複数回のLLM呼び出し\nそれなりのトークン消費\n\nを前提にしている。つまり、強いが燃費が軽いわ...",
+        "category": "AI・技術",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "Claude Codeの1000 セッションを分析して、一週間目でリードタイムを10%縮めた話",
+        "url": "https://zenn.dev/globis/articles/94762dc8ec7914",
+        "site": "Zenn(LLM)",
+        "published": "2026-05-15T02:54:18Z",
+        "description": "グロービスでは AI コーディングのメインツールを Claude Code (CLI 版) に統一する方向で運用しています。利用ログを取り始めて改善の打ち手を入れたところ、すぐに次のような成果が出ました。\n\n毎月の開発時間を およそ 100時間 節約\n開発セッションのリードタイムが 約 10% 短縮\n\n\n本記事では、この成果につながった理由と、改善のきっかけとなったボトルネックをご紹介します。\n\n...",
         "category": "AI・技術",
         "rss_category": "",
         "image_url": ""
@@ -706,16 +736,6 @@
         "site": "Zenn(LLM)",
         "published": "2026-05-14T13:07:41Z",
         "description": "!\n本記事は個人の学習と考察をまとめたもので、所属組織の公式見解ではありません。\n\n!\n🪞 この記事のテーマ\nAIを日常的に使うようになって、改めて見えてきたのは「思考と理解は別物だ」という当たり前の事実でした。\n\n\n思考はAIに預けられる ── 候補を出す、整理する、展開する\n\n理解は自分で育てるしかない ── 何を採用し、何に責任を持つかは人間の仕事\n\nそして「思考を外注できる人ほど、理解の責...",
-        "category": "AI・技術",
-        "rss_category": "",
-        "image_url": ""
-      },
-      {
-        "title": "論文メモ：SentencePieceからTokenizationを整理する",
-        "url": "https://zenn.dev/kas_blog/articles/20260509-llm-02-tokenization",
-        "site": "Zenn(LLM)",
-        "published": "2026-05-14T12:45:52Z",
-        "description": "はじめに\nこの記事は、以下の論文を読んだ技術メモです。\n\n論文タイトル: SentencePiece: A simple and language independent subword tokenizer and detokenizer for Neural Text Processing\n論文リンク: https://arxiv.org/abs/1808.06226\n\n著者: Taku Kud...",
         "category": "AI・技術",
         "rss_category": "",
         "image_url": ""
