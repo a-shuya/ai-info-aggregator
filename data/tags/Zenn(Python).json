@@ -1,9 +1,59 @@
 {
   "site": "Zenn(Python)",
-  "last_updated": "2026-05-16T04:55:47.928486",
-  "total_articles": 3994,
+  "last_updated": "2026-05-16T07:18:21.258648",
+  "total_articles": 4000,
   "articles_by_date": {
     "本日": [
+      {
+        "title": "[研究関連の自動化] 週報のPDF化とアップロードを自動化しよう",
+        "url": "https://zenn.dev/masa0902dev/articles/automation-weekly-report",
+        "site": "Zenn(Python)",
+        "published": "2026-05-16T06:54:17Z",
+        "description": "モチベーション\n研究の週報を毎週GitHubリポジトリにアップロードしていましたが, ゼミ前にアップロードするのをよく忘れてしまっていました. また, 週1回という高頻度で行う作業のため, 自動化することにしました.\n今回の自動化では, 以下を実現します.\n\nKeynote (.key) ファイルをPDFに変換する\nGitHubリポジトリへgit push する\nローカルのPDFを削除する\nlau...",
+        "category": "開発",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "CNN って結局何？画像認識AIのしくみを\"虫眼鏡で絵を見て回る\"でやさしく解説します",
+        "url": "https://zenn.dev/taichiendoh/articles/6a36aca31fad1e",
+        "site": "Zenn(Python)",
+        "published": "2026-05-16T06:00:17Z",
+        "description": "CNN って結局何？画像認識AIのしくみを\"虫眼鏡で絵を見て回る\"でやさしく解説します\n「AIが画像を見分けてるって聞くけど、中で何が起きてるのか全然わからない」\nそんな声をよく聞きます。私自身、AIスクールで学び直しているときに「畳み込み？プーリング？」と、用語の壁で頭が真っ白になりました。\nこの記事では、CNN（畳み込みニューラルネットワーク） という、画像認識AIの主役を、専門用語が苦手な人...",
+        "category": "開発",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "1つの JWT で複数 service を verify したかったら、python-jose の audience list 仕様の罠を踏",
+        "url": "https://zenn.dev/zoetaka38/articles/9ec39d51bf74f8",
+        "site": "Zenn(Python)",
+        "published": "2026-05-16T04:33:52Z",
+        "description": "audience must be a string or None\npython-jose の jwt.decode に audience の list を渡すと、これが出る。\n事前にちゃんと考えて実装した「複数 service で 1 token を verify する仕組み」は、走らせた瞬間にこの 1 行で落ちた。RFC 7519 では aud claim は string でも list で...",
+        "category": "開発",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "toio.pyのオレオレフォークを作った",
+        "url": "https://zenn.dev/kaz399/articles/43f3def7f12431",
+        "site": "Zenn(Python)",
+        "published": "2026-05-16T03:29:14Z",
+        "description": "toio.py オレオレフォーク\n\ntoioのアップデートがあり、toio コア キューブのバージョン02.0007 になりました。\ntoio™コア キューブ 技術仕様も 2.5.0 になりました。\nしかしtoio.py はまだ技術仕様 2.5.0対応にアップデートされないので、オレオレフォークを作りました。\n\n 変更内容\n\n技術仕様 2.5.0 で追加された機能に対応\nbleak 3.x 対応\n...",
+        "category": "開発",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "Supabase の IPv6 制約と自動 pause：Session Pooler で解決する接続問題",
+        "url": "https://zenn.dev/nomuraya/articles/supabase-ipv6-session-pooler",
+        "site": "Zenn(Python)",
+        "published": "2026-05-16T02:01:02Z",
+        "description": "Supabase に突然つながらなくなった。原因は2つあった。自動 pause と IPv6 Direct Connection。Session Pooler に切り替えることで解決した。\n\n 症状\nしばらく触っていなかった Supabase プロジェクトに接続しようとしたら、タイムアウトで繰り返し失敗した。\nconnection to server at \"db.xxxxx.supabase.c...",
+        "category": "開発",
+        "rss_category": "",
+        "image_url": ""
+      },
       {
         "title": "Vim初心者がLazyVimを触って慣れようとした備忘録",
         "url": "https://zenn.dev/takyshu98/articles/3ca47f66bfd28e",
@@ -157,16 +207,6 @@
         "image_url": ""
       },
       {
-        "title": "OllamaでローカルLLMを動かす：MacのGPUを使ってQwen3.5・Gemma4・Phi-4 Miniを動かすまでの手順",
-        "url": "https://zenn.dev/libercraft/articles/20260511-ollama-mac-local-llm-setup",
-        "site": "Zenn(Python)",
-        "published": "2026-05-15T07:18:18Z",
-        "description": "クラウドのLLM APIを使うたびにコストが気になる。プロトタイプ段階で外部サーバにデータを送りたくない。社内の機密資料を使って試したいが、APIに流すのは避けたい——こうした場面でローカルLLMが選択肢になります。\n問題は「ローカルで動かす」と聞いたとき、環境構築の複雑さを想像して手が止まることです。CUDA環境の構築、Pythonの依存関係、GGUF形式の変換——こういったことが連想されれば、...",
-        "category": "開発",
-        "rss_category": "",
-        "image_url": ""
-      },
-      {
         "title": "【Julia×Python】サロゲートモデル構築(量子編) 第1回：Catlab × PyZX × PyG の型変換",
         "url": "https://zenn.dev/kohmaruworks358/articles/phase3-part1-julia-pyg-pyzx-label-mapping",
         "site": "Zenn(Python)",
@@ -182,16 +222,6 @@
         "site": "Zenn(Python)",
         "published": "2026-05-15T06:48:08Z",
         "description": "はじめに\nはじめまして。\nこれからZennで、PythonやLinux、Docker、SQL、Git、アルゴリズムなどの学習記録を書いていきます。\n私は非情報学部の理系バックグラウンドから、ソフトウェアエンジニアを目指して学習しています。情報系の専門課程を通ってきたわけではないので、最初から体系的にCSや開発の知識があるわけではありません。\nその分、学習中に「なぜこれが必要なのか」「どこでつながっ...",
-        "category": "開発",
-        "rss_category": "",
-        "image_url": ""
-      },
-      {
-        "title": "XGBoostを初心者向けにざっくり理解する",
-        "url": "https://zenn.dev/drizzleliucat/articles/b8de777e36b570",
-        "site": "Zenn(Python)",
-        "published": "2026-05-15T05:56:46Z",
-        "description": "XGBoostを初心者向けにざっくり理解する\n最近、機械学習を勉強していて「XGBoost」という単語をよく見るようになりました。\n最初は数式が多くて難しく感じましたが、実際は「前の予測ミスを少しずつ修正していく」という考え方が本質でした。\n今回は初心者向けに、\n\n決定木（Decision Tree）\nGradient Boosting Tree\nXGBoost\nよく使うパラメータ\n\nという流れで...",
         "category": "開発",
         "rss_category": "",
         "image_url": ""
@@ -441,6 +471,56 @@
     ],
     "2026-05": [
       {
+        "title": "[研究関連の自動化] 週報のPDF化とアップロードを自動化しよう",
+        "url": "https://zenn.dev/masa0902dev/articles/automation-weekly-report",
+        "site": "Zenn(Python)",
+        "published": "2026-05-16T06:54:17Z",
+        "description": "モチベーション\n研究の週報を毎週GitHubリポジトリにアップロードしていましたが, ゼミ前にアップロードするのをよく忘れてしまっていました. また, 週1回という高頻度で行う作業のため, 自動化することにしました.\n今回の自動化では, 以下を実現します.\n\nKeynote (.key) ファイルをPDFに変換する\nGitHubリポジトリへgit push する\nローカルのPDFを削除する\nlau...",
+        "category": "開発",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "CNN って結局何？画像認識AIのしくみを\"虫眼鏡で絵を見て回る\"でやさしく解説します",
+        "url": "https://zenn.dev/taichiendoh/articles/6a36aca31fad1e",
+        "site": "Zenn(Python)",
+        "published": "2026-05-16T06:00:17Z",
+        "description": "CNN って結局何？画像認識AIのしくみを\"虫眼鏡で絵を見て回る\"でやさしく解説します\n「AIが画像を見分けてるって聞くけど、中で何が起きてるのか全然わからない」\nそんな声をよく聞きます。私自身、AIスクールで学び直しているときに「畳み込み？プーリング？」と、用語の壁で頭が真っ白になりました。\nこの記事では、CNN（畳み込みニューラルネットワーク） という、画像認識AIの主役を、専門用語が苦手な人...",
+        "category": "開発",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "1つの JWT で複数 service を verify したかったら、python-jose の audience list 仕様の罠を踏",
+        "url": "https://zenn.dev/zoetaka38/articles/9ec39d51bf74f8",
+        "site": "Zenn(Python)",
+        "published": "2026-05-16T04:33:52Z",
+        "description": "audience must be a string or None\npython-jose の jwt.decode に audience の list を渡すと、これが出る。\n事前にちゃんと考えて実装した「複数 service で 1 token を verify する仕組み」は、走らせた瞬間にこの 1 行で落ちた。RFC 7519 では aud claim は string でも list で...",
+        "category": "開発",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "toio.pyのオレオレフォークを作った",
+        "url": "https://zenn.dev/kaz399/articles/43f3def7f12431",
+        "site": "Zenn(Python)",
+        "published": "2026-05-16T03:29:14Z",
+        "description": "toio.py オレオレフォーク\n\ntoioのアップデートがあり、toio コア キューブのバージョン02.0007 になりました。\ntoio™コア キューブ 技術仕様も 2.5.0 になりました。\nしかしtoio.py はまだ技術仕様 2.5.0対応にアップデートされないので、オレオレフォークを作りました。\n\n 変更内容\n\n技術仕様 2.5.0 で追加された機能に対応\nbleak 3.x 対応\n...",
+        "category": "開発",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "Supabase の IPv6 制約と自動 pause：Session Pooler で解決する接続問題",
+        "url": "https://zenn.dev/nomuraya/articles/supabase-ipv6-session-pooler",
+        "site": "Zenn(Python)",
+        "published": "2026-05-16T02:01:02Z",
+        "description": "Supabase に突然つながらなくなった。原因は2つあった。自動 pause と IPv6 Direct Connection。Session Pooler に切り替えることで解決した。\n\n 症状\nしばらく触っていなかった Supabase プロジェクトに接続しようとしたら、タイムアウトで繰り返し失敗した。\nconnection to server at \"db.xxxxx.supabase.c...",
+        "category": "開発",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
         "title": "Vim初心者がLazyVimを触って慣れようとした備忘録",
         "url": "https://zenn.dev/takyshu98/articles/3ca47f66bfd28e",
         "site": "Zenn(Python)",
@@ -591,16 +671,6 @@
         "image_url": ""
       },
       {
-        "title": "OllamaでローカルLLMを動かす：MacのGPUを使ってQwen3.5・Gemma4・Phi-4 Miniを動かすまでの手順",
-        "url": "https://zenn.dev/libercraft/articles/20260511-ollama-mac-local-llm-setup",
-        "site": "Zenn(Python)",
-        "published": "2026-05-15T07:18:18Z",
-        "description": "クラウドのLLM APIを使うたびにコストが気になる。プロトタイプ段階で外部サーバにデータを送りたくない。社内の機密資料を使って試したいが、APIに流すのは避けたい——こうした場面でローカルLLMが選択肢になります。\n問題は「ローカルで動かす」と聞いたとき、環境構築の複雑さを想像して手が止まることです。CUDA環境の構築、Pythonの依存関係、GGUF形式の変換——こういったことが連想されれば、...",
-        "category": "開発",
-        "rss_category": "",
-        "image_url": ""
-      },
-      {
         "title": "【Julia×Python】サロゲートモデル構築(量子編) 第1回：Catlab × PyZX × PyG の型変換",
         "url": "https://zenn.dev/kohmaruworks358/articles/phase3-part1-julia-pyg-pyzx-label-mapping",
         "site": "Zenn(Python)",
@@ -616,16 +686,6 @@
         "site": "Zenn(Python)",
         "published": "2026-05-15T06:48:08Z",
         "description": "はじめに\nはじめまして。\nこれからZennで、PythonやLinux、Docker、SQL、Git、アルゴリズムなどの学習記録を書いていきます。\n私は非情報学部の理系バックグラウンドから、ソフトウェアエンジニアを目指して学習しています。情報系の専門課程を通ってきたわけではないので、最初から体系的にCSや開発の知識があるわけではありません。\nその分、学習中に「なぜこれが必要なのか」「どこでつながっ...",
-        "category": "開発",
-        "rss_category": "",
-        "image_url": ""
-      },
-      {
-        "title": "XGBoostを初心者向けにざっくり理解する",
-        "url": "https://zenn.dev/drizzleliucat/articles/b8de777e36b570",
-        "site": "Zenn(Python)",
-        "published": "2026-05-15T05:56:46Z",
-        "description": "XGBoostを初心者向けにざっくり理解する\n最近、機械学習を勉強していて「XGBoost」という単語をよく見るようになりました。\n最初は数式が多くて難しく感じましたが、実際は「前の予測ミスを少しずつ修正していく」という考え方が本質でした。\n今回は初心者向けに、\n\n決定木（Decision Tree）\nGradient Boosting Tree\nXGBoost\nよく使うパラメータ\n\nという流れで...",
         "category": "開発",
         "rss_category": "",
         "image_url": ""
