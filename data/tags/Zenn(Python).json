@@ -1,9 +1,129 @@
 {
   "site": "Zenn(Python)",
-  "last_updated": "2026-05-18T01:50:01.098694",
-  "total_articles": 4020,
+  "last_updated": "2026-05-18T06:01:00.814153",
+  "total_articles": 4042,
   "articles_by_date": {
     "本日": [
+      {
+        "title": "ESP32-C5のWi-Fi CSIで2×2グリッドの屋内位置を推定してみた",
+        "url": "https://zenn.dev/myml12/articles/12f3a7428a0074",
+        "site": "Zenn(Python)",
+        "published": "2026-05-18T05:20:32Z",
+        "description": "はじめに\nESP32-C5 2台を使い、Wi-Fi の CSI（Channel State Information） による室内位置推定を試した。\n研究室環境そのまま・追加センサなしという条件で、床面 2×2 グリッド（4エリア）における人物の静止位置分類を行い、未学習ラップに対して 75%（3/4） の分類精度を確認できた。\n使用したのは、研究室にあった ESP32-C5 2台だけである。\nES...",
+        "category": "開発",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "Cloud Run × Firestore × Flask：AI時代の開発で気づいたこと",
+        "url": "https://zenn.dev/pyanoki/articles/a922e2296fa6e5",
+        "site": "Zenn(Python)",
+        "published": "2026-05-18T04:49:05Z",
+        "description": "Flask × Firestore × Cloud Run を使って、\n実際に本番環境へデプロイするところまで進めた記録です。\n汎用AI（Claude、Gemini）を使いながら開発した中で、\nSDK差異・本番503・ローカルエラーなど、\nいくつかの問題をどう突破したかを書いています。\nお見苦しい点がありましたらご容赦くださいm(__)m　何かの参考になればうれしいです。\n\n\n 今回やったこと\n\n...",
+        "category": "開発",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "Choice-Learn で始める新商品需要予測 ─ ③実装編：Choice-Learn でカニバリと価格感度を測る",
+        "url": "https://zenn.dev/salt2/articles/01e7ef42588f91",
+        "site": "Zenn(Python)",
+        "published": "2026-05-18T03:47:15Z",
+        "description": "!\n3行まとめ\n\nChoice-Learn で ChoiceDataset → SimpleMNL → 新商品シナリオの反実仮想計算までを、最小コードで組み立てます。\n価格グリッドを回して、新商品のシェア・売上高・既存 SKU へのカニバリを一気通貫で可視化します。\nカスタム効用関数で novelty 効果の減衰を組み込み、推定結果を品揃え・価格最適化に接続するパスを示します。\n\n\n\n全 3 回シ...",
+        "category": "開発",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "競馬 AI で K-Fold を使ってはいけない — Walk-Forward 検証 Python 実装",
+        "url": "https://zenn.dev/punch_cola/articles/e5ecd92fb9e894",
+        "site": "Zenn(Python)",
+        "published": "2026-05-18T03:15:24Z",
+        "description": "TL;DR\n\n競馬データに ランダム K 分割クロスバリデーション (K-Fold) を使うと、 過去成績が嘘の高評価になる\n時系列を保ったまま「訓練 = 過去」 「検証 = 未来」 にする Walk-Forward 検証 が必須\nPython 30 行で書けるが、 3 つの落とし穴がある\n\n\n関連書籍: 私が JRA 5 年分のデータで 256 戦略を試し、 過去 +170% backtest ...",
+        "category": "開発",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "LLMアプリのコツは「LLMを使いすぎない」ことかもしれない",
+        "url": "https://zenn.dev/soramameen/articles/0e5c6517c77fb0",
+        "site": "Zenn(Python)",
+        "published": "2026-05-18T03:05:47Z",
+        "description": "はじめに\n最近、LLMを使って旅行検索アプリを作ってみました。\n自然文で、\n9月1日から2週間でタイとベトナムに関空から行きたい\nのように入力すると、旅行条件を抽出して、航空券価格を調べて、安い周遊ルートを表示するCLIアプリです。\n実はこの前にも、似たような旅行計画アプリを一度作っていました。\nただ、前回作ったものは、正直かなり微妙でした。\n理由は、ほとんど全部をLLMに任せていたからです。\n今...",
+        "category": "開発",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "B13(BASE = 3120)を使って円周率を計算してみた　ー　公開ノート　ー",
+        "url": "https://zenn.dev/morc_b13/articles/fa088f4db5bd61",
+        "site": "Zenn(Python)",
+        "published": "2026-05-18T03:02:06Z",
+        "description": "B13(BASE = 3120)でπを巻き取ると現れる720　ー　公開ノート　ー\n\n\n 1. はじめに\n前回「円はどこから来るか ― 光円錐・フラーレン・ラマヌジャン公式　＝　公開ノート　＝」で円に対へのいくつかのアプローチを並べたが、今回は、B13 を用いて円周率 π を検証した。\nπ を 10 進数ではなく、B13 フレームワークの基底 BASE = 3120 で読むと何が見えるか?\nB13 ...",
+        "category": "開発",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "同じ場所を指すのに役割が違う? -Linked Listのdummyとtail",
+        "url": "https://zenn.dev/sotaro_1124/articles/671e751128c009",
+        "site": "Zenn(Python)",
+        "published": "2026-05-18T01:06:41Z",
+        "description": "はじめに\nNeetCodeの Merge Two Sorted Linked Lists を解いていて、最初に引っかかったのが dummy と tail の使い分けでした。\nどちらも最初は同じノードを指しているのに、なぜ2つの変数が必要なのかがしっくりきませんでした。特に、dummy.next に直接つなげばよいのではないか、という疑問が残っていました。\nこの記事では、Linked List のマ...",
+        "category": "開発",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "BigQueryのベクトル検索でJICFSカテゴリ推定精度を+35%改善した話",
+        "url": "https://zenn.dev/wed_engineering/articles/vector_search_category_classification",
+        "site": "Zenn(Python)",
+        "published": "2026-05-18T00:56:03Z",
+        "description": "はじめに\nWED株式会社でMLエンジニアをしています、ishi2kiです。\n当社では、コンビニなどの特定小売チェーンの最新商品情報を定期的に取得しています。\n取得した商品データにはJICFSカテゴリを付加しており、今回はそのカテゴリ推定の精度改善について紹介します。\n従来のLUKEによるクラス分類モデルでの精度が 43% だったところを、BigQueryのベクトル検索を活用することで 78% まで...",
+        "category": "開発",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "Linked Listの参照で詰まった",
+        "url": "https://zenn.dev/sotaro_1124/articles/28b1b6b9069eab",
+        "site": "Zenn(Python)",
+        "published": "2026-05-18T00:31:20Z",
+        "description": "はじめに\nLinked List の反転問題を解いていて、最初に詰まったのが curr.next = prev の部分でした。\n一行前で nxt = curr.next としているので、その後に curr.next を書き換えたら、nxt も一緒に変わってしまうのではないかと思いました。\nこの記事では、Linked List の基本構造を確認しながら、nxt・curr・prev がそれぞれ何をして...",
+        "category": "開発",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "愚痴に戦国武将がAIで答えてくれるWebアプリをリリースしました！",
+        "url": "https://zenn.dev/hayua/articles/0b6e0b10b25a32",
+        "site": "Zenn(Python)",
+        "published": "2026-05-18T00:00:07Z",
+        "description": "「武将セラピー」を作りました\n愚痴を投稿すると、戦国武将がAIで答えてくれるWebアプリ「武将セラピー」を作ってリリースしました。\nhttps://busho-therapy.lydear.com\n\n どんなアプリ？\n投稿した愚痴に対して、複数の戦国武将が同時に回答してくれます。\n特徴は、まともなアドバイスは返ってこないこと。武将になりきったAIが、その武将らしい過激なリアクションを返してきます。...",
+        "category": "開発",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "エージェントが Skill を呼べないのに動いていた ── C3 v2.8.0",
+        "url": "https://zenn.dev/satoh_y_0323/articles/e8512b36ac4cd7",
+        "site": "Zenn(Python)",
+        "published": "2026-05-17T23:40:24Z",
+        "description": "前回記事: https://zenn.dev/satoh_y_0323/articles/b22b7893e6feed\nC3 GitHub: https://github.com/satoh-y-0323/claude-code-conductor / PyPI: https://pypi.org/project/claude-code-conductor/ / 公式ドキュメント: https:/...",
+        "category": "開発",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "mdx MaaSのAPIでLLM-jp-4を使う 第1回：APIの呼び出しと回答の取り出し",
+        "url": "https://zenn.dev/suzumura_lab/articles/50b62687aa9205",
+        "site": "Zenn(Python)",
+        "published": "2026-05-17T21:42:44Z",
+        "description": "東京大学鈴村研究室が中心となって運用するmdx MaaSでは、最新のオープンなLLM（大規模言語モデル）を安全に利用できる環境をβ版としてユーザーに提供しています。NII（国立情報学研究所）を中心とするLLM-jpチームが開発したLLM-jp-4も最近追加しました。本シリーズではmdx MaaSの即時応答API（以下「API」）からLLM-jp-4をPythonで利用する方法を紹介します。今回はA...",
+        "category": "開発",
+        "rss_category": "",
+        "image_url": ""
+      },
       {
         "title": "discord.pyでボイスチャンネルの参加者を個別トラック録音するBotを作った",
         "url": "https://zenn.dev/nobalto/articles/6fd7b7190a580f",
@@ -112,16 +232,6 @@
         "site": "Zenn(Python)",
         "published": "2026-05-17T01:50:25Z",
         "description": "2026年、ついにEUの「炭素国境調整措置（CBAM）」が移行期間を終え、実際の財務義務（証書の購入）が発生します。\n欧州委員会が提示する2026年Q1の公式価格は 75.36 EUR/tCO2e。これに伴い、EUへ輸出を行う企業（Non-EUサプライヤー）やEUの輸入業者は、極めて厳密な排出量計算と「炭素価格の支払い証拠」の提出を迫られます。\nしかし、多くの現場やコンサルタントは未だにExcel...",
-        "category": "開発",
-        "rss_category": "",
-        "image_url": ""
-      },
-      {
-        "title": "音声入力で“返信が速くなる”は誤解だった — 1日100回利用の短文入力ツールを自作してわかったこと",
-        "url": "https://zenn.dev/msworks/articles/voicephrase-short-voice-input",
-        "site": "Zenn(Python)",
-        "published": "2026-05-17T00:17:05Z",
-        "description": "はじめに: 普段使いして感じる音声入力のメリット\nタイピングが得意な方は、音声入力よりも自分の手で打った方が速くて正確、と思われるかもしれません。\n私は自作音声入力アプリVoicePhrase を 1日100回以上 使っていますが、実感としては入力速度は 「短文ではタイピングと同程度、文章が長くなるほど音声入力のほうが速くなる」 です。\n音声入力のメリットは、入力速度よりも文章を書くハードルが下が...",
         "category": "開発",
         "rss_category": "",
         "image_url": ""
@@ -381,6 +491,126 @@
     ],
     "2026-05": [
       {
+        "title": "ESP32-C5のWi-Fi CSIで2×2グリッドの屋内位置を推定してみた",
+        "url": "https://zenn.dev/myml12/articles/12f3a7428a0074",
+        "site": "Zenn(Python)",
+        "published": "2026-05-18T05:20:32Z",
+        "description": "はじめに\nESP32-C5 2台を使い、Wi-Fi の CSI（Channel State Information） による室内位置推定を試した。\n研究室環境そのまま・追加センサなしという条件で、床面 2×2 グリッド（4エリア）における人物の静止位置分類を行い、未学習ラップに対して 75%（3/4） の分類精度を確認できた。\n使用したのは、研究室にあった ESP32-C5 2台だけである。\nES...",
+        "category": "開発",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "Cloud Run × Firestore × Flask：AI時代の開発で気づいたこと",
+        "url": "https://zenn.dev/pyanoki/articles/a922e2296fa6e5",
+        "site": "Zenn(Python)",
+        "published": "2026-05-18T04:49:05Z",
+        "description": "Flask × Firestore × Cloud Run を使って、\n実際に本番環境へデプロイするところまで進めた記録です。\n汎用AI（Claude、Gemini）を使いながら開発した中で、\nSDK差異・本番503・ローカルエラーなど、\nいくつかの問題をどう突破したかを書いています。\nお見苦しい点がありましたらご容赦くださいm(__)m　何かの参考になればうれしいです。\n\n\n 今回やったこと\n\n...",
+        "category": "開発",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "Choice-Learn で始める新商品需要予測 ─ ③実装編：Choice-Learn でカニバリと価格感度を測る",
+        "url": "https://zenn.dev/salt2/articles/01e7ef42588f91",
+        "site": "Zenn(Python)",
+        "published": "2026-05-18T03:47:15Z",
+        "description": "!\n3行まとめ\n\nChoice-Learn で ChoiceDataset → SimpleMNL → 新商品シナリオの反実仮想計算までを、最小コードで組み立てます。\n価格グリッドを回して、新商品のシェア・売上高・既存 SKU へのカニバリを一気通貫で可視化します。\nカスタム効用関数で novelty 効果の減衰を組み込み、推定結果を品揃え・価格最適化に接続するパスを示します。\n\n\n\n全 3 回シ...",
+        "category": "開発",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "競馬 AI で K-Fold を使ってはいけない — Walk-Forward 検証 Python 実装",
+        "url": "https://zenn.dev/punch_cola/articles/e5ecd92fb9e894",
+        "site": "Zenn(Python)",
+        "published": "2026-05-18T03:15:24Z",
+        "description": "TL;DR\n\n競馬データに ランダム K 分割クロスバリデーション (K-Fold) を使うと、 過去成績が嘘の高評価になる\n時系列を保ったまま「訓練 = 過去」 「検証 = 未来」 にする Walk-Forward 検証 が必須\nPython 30 行で書けるが、 3 つの落とし穴がある\n\n\n関連書籍: 私が JRA 5 年分のデータで 256 戦略を試し、 過去 +170% backtest ...",
+        "category": "開発",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "LLMアプリのコツは「LLMを使いすぎない」ことかもしれない",
+        "url": "https://zenn.dev/soramameen/articles/0e5c6517c77fb0",
+        "site": "Zenn(Python)",
+        "published": "2026-05-18T03:05:47Z",
+        "description": "はじめに\n最近、LLMを使って旅行検索アプリを作ってみました。\n自然文で、\n9月1日から2週間でタイとベトナムに関空から行きたい\nのように入力すると、旅行条件を抽出して、航空券価格を調べて、安い周遊ルートを表示するCLIアプリです。\n実はこの前にも、似たような旅行計画アプリを一度作っていました。\nただ、前回作ったものは、正直かなり微妙でした。\n理由は、ほとんど全部をLLMに任せていたからです。\n今...",
+        "category": "開発",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "B13(BASE = 3120)を使って円周率を計算してみた　ー　公開ノート　ー",
+        "url": "https://zenn.dev/morc_b13/articles/fa088f4db5bd61",
+        "site": "Zenn(Python)",
+        "published": "2026-05-18T03:02:06Z",
+        "description": "B13(BASE = 3120)でπを巻き取ると現れる720　ー　公開ノート　ー\n\n\n 1. はじめに\n前回「円はどこから来るか ― 光円錐・フラーレン・ラマヌジャン公式　＝　公開ノート　＝」で円に対へのいくつかのアプローチを並べたが、今回は、B13 を用いて円周率 π を検証した。\nπ を 10 進数ではなく、B13 フレームワークの基底 BASE = 3120 で読むと何が見えるか?\nB13 ...",
+        "category": "開発",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "同じ場所を指すのに役割が違う? -Linked Listのdummyとtail",
+        "url": "https://zenn.dev/sotaro_1124/articles/671e751128c009",
+        "site": "Zenn(Python)",
+        "published": "2026-05-18T01:06:41Z",
+        "description": "はじめに\nNeetCodeの Merge Two Sorted Linked Lists を解いていて、最初に引っかかったのが dummy と tail の使い分けでした。\nどちらも最初は同じノードを指しているのに、なぜ2つの変数が必要なのかがしっくりきませんでした。特に、dummy.next に直接つなげばよいのではないか、という疑問が残っていました。\nこの記事では、Linked List のマ...",
+        "category": "開発",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "BigQueryのベクトル検索でJICFSカテゴリ推定精度を+35%改善した話",
+        "url": "https://zenn.dev/wed_engineering/articles/vector_search_category_classification",
+        "site": "Zenn(Python)",
+        "published": "2026-05-18T00:56:03Z",
+        "description": "はじめに\nWED株式会社でMLエンジニアをしています、ishi2kiです。\n当社では、コンビニなどの特定小売チェーンの最新商品情報を定期的に取得しています。\n取得した商品データにはJICFSカテゴリを付加しており、今回はそのカテゴリ推定の精度改善について紹介します。\n従来のLUKEによるクラス分類モデルでの精度が 43% だったところを、BigQueryのベクトル検索を活用することで 78% まで...",
+        "category": "開発",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "Linked Listの参照で詰まった",
+        "url": "https://zenn.dev/sotaro_1124/articles/28b1b6b9069eab",
+        "site": "Zenn(Python)",
+        "published": "2026-05-18T00:31:20Z",
+        "description": "はじめに\nLinked List の反転問題を解いていて、最初に詰まったのが curr.next = prev の部分でした。\n一行前で nxt = curr.next としているので、その後に curr.next を書き換えたら、nxt も一緒に変わってしまうのではないかと思いました。\nこの記事では、Linked List の基本構造を確認しながら、nxt・curr・prev がそれぞれ何をして...",
+        "category": "開発",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "愚痴に戦国武将がAIで答えてくれるWebアプリをリリースしました！",
+        "url": "https://zenn.dev/hayua/articles/0b6e0b10b25a32",
+        "site": "Zenn(Python)",
+        "published": "2026-05-18T00:00:07Z",
+        "description": "「武将セラピー」を作りました\n愚痴を投稿すると、戦国武将がAIで答えてくれるWebアプリ「武将セラピー」を作ってリリースしました。\nhttps://busho-therapy.lydear.com\n\n どんなアプリ？\n投稿した愚痴に対して、複数の戦国武将が同時に回答してくれます。\n特徴は、まともなアドバイスは返ってこないこと。武将になりきったAIが、その武将らしい過激なリアクションを返してきます。...",
+        "category": "開発",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "エージェントが Skill を呼べないのに動いていた ── C3 v2.8.0",
+        "url": "https://zenn.dev/satoh_y_0323/articles/e8512b36ac4cd7",
+        "site": "Zenn(Python)",
+        "published": "2026-05-17T23:40:24Z",
+        "description": "前回記事: https://zenn.dev/satoh_y_0323/articles/b22b7893e6feed\nC3 GitHub: https://github.com/satoh-y-0323/claude-code-conductor / PyPI: https://pypi.org/project/claude-code-conductor/ / 公式ドキュメント: https:/...",
+        "category": "開発",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "mdx MaaSのAPIでLLM-jp-4を使う 第1回：APIの呼び出しと回答の取り出し",
+        "url": "https://zenn.dev/suzumura_lab/articles/50b62687aa9205",
+        "site": "Zenn(Python)",
+        "published": "2026-05-17T21:42:44Z",
+        "description": "東京大学鈴村研究室が中心となって運用するmdx MaaSでは、最新のオープンなLLM（大規模言語モデル）を安全に利用できる環境をβ版としてユーザーに提供しています。NII（国立情報学研究所）を中心とするLLM-jpチームが開発したLLM-jp-4も最近追加しました。本シリーズではmdx MaaSの即時応答API（以下「API」）からLLM-jp-4をPythonで利用する方法を紹介します。今回はA...",
+        "category": "開発",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
         "title": "discord.pyでボイスチャンネルの参加者を個別トラック録音するBotを作った",
         "url": "https://zenn.dev/nobalto/articles/6fd7b7190a580f",
         "site": "Zenn(Python)",
@@ -486,16 +716,6 @@
         "site": "Zenn(Python)",
         "published": "2026-05-17T01:50:25Z",
         "description": "2026年、ついにEUの「炭素国境調整措置（CBAM）」が移行期間を終え、実際の財務義務（証書の購入）が発生します。\n欧州委員会が提示する2026年Q1の公式価格は 75.36 EUR/tCO2e。これに伴い、EUへ輸出を行う企業（Non-EUサプライヤー）やEUの輸入業者は、極めて厳密な排出量計算と「炭素価格の支払い証拠」の提出を迫られます。\nしかし、多くの現場やコンサルタントは未だにExcel...",
-        "category": "開発",
-        "rss_category": "",
-        "image_url": ""
-      },
-      {
-        "title": "音声入力で“返信が速くなる”は誤解だった — 1日100回利用の短文入力ツールを自作してわかったこと",
-        "url": "https://zenn.dev/msworks/articles/voicephrase-short-voice-input",
-        "site": "Zenn(Python)",
-        "published": "2026-05-17T00:17:05Z",
-        "description": "はじめに: 普段使いして感じる音声入力のメリット\nタイピングが得意な方は、音声入力よりも自分の手で打った方が速くて正確、と思われるかもしれません。\n私は自作音声入力アプリVoicePhrase を 1日100回以上 使っていますが、実感としては入力速度は 「短文ではタイピングと同程度、文章が長くなるほど音声入力のほうが速くなる」 です。\n音声入力のメリットは、入力速度よりも文章を書くハードルが下が...",
         "category": "開発",
         "rss_category": "",
         "image_url": ""
