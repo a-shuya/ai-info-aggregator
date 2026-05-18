@@ -1,8 +1,40 @@
 {
   "site": "Zenn(LLM)",
-  "last_updated": "2026-05-18T21:55:18.817540",
-  "total_articles": 3442,
+  "last_updated": "2026-05-18T23:06:22.051553",
+  "total_articles": 3444,
   "articles_by_date": {
+    "本日": [
+      {
+        "title": "RAGの精度を改善する：query rewrite・hybrid search・rerank・評価ログ",
+        "url": "https://zenn.dev/wqy/articles/4fe29ac264ea63",
+        "site": "Zenn(LLM)",
+        "published": "2026-05-18T19:45:54Z",
+        "description": "1. はじめに\n前回は、青空文庫の吉川英治『三国志』を使って、最小構成のRAGを実装しました。\n前回のRAGは、以下のようなシンプルな構成でした。\n文書読み込み\n  ↓\nchunk分割\n  ↓\nEmbedding\n  ↓\nFAISS検索\n  ↓\n検索結果をLLMへ渡す\n  ↓\n回答生成\nこの構成でも、RAGの基本的な流れは理解できます。\nただ、実際に作ってみると、回答品質はLLMだけでは決まらない...",
+        "category": "AI・技術",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "Claudeに4カ国の祖父母の話を聞いたら、回答の『生成過程』に大きな差が出た",
+        "url": "https://zenn.dev/blue_sunset_ai/articles/b63f04ff1beac9",
+        "site": "Zenn(LLM)",
+        "published": "2026-05-18T18:05:55Z",
+        "description": "1. はじめに\n前回の記事では、LLMが多中心言語において「どの文化を標準として扱うか」という問いを立てた。\n今回はその問いに対して、実際に手を動かした。\n英語圏の4カ国——アメリカ・アイルランド・インド・ナイジェリア——に対して、同じ3つの問いを投げた。祖父母から受け継がれる習慣、死者を悼む慣習、子どもへの昔話。\n結果として見えてきたのは、回答の「内容の差」だけではなかった。それよりも雄弁だった...",
+        "category": "AI・技術",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "Mamba3をゼロから実装してピュアMamba3言語モデルを作ってみた",
+        "url": "https://zenn.dev/taaroo/articles/c253880c240241",
+        "site": "Zenn(LLM)",
+        "published": "2026-05-18T16:33:40Z",
+        "description": "はじめに\nみなさんMamba使ってますか？\nこのMamba、今年は最新バージョンのMamba3の論文がICLRに採択されていたりと盛り上がってますね！\nhttps://iclr.cc/virtual/2026/poster/10010352\nただなんか...やっぱりまだTransformerと比較するとそこまで浸透していないのか、メジャーなLLMだとNemotron、Jamba、Falcon Ma...",
+        "category": "AI・技術",
+        "rss_category": "",
+        "image_url": ""
+      }
+    ],
     "昨日": [
       {
         "title": "なぜ、LLM AIコーディングのせいでスクラムの衰退が叫ばれるのか？",
@@ -165,16 +197,6 @@
         "image_url": ""
       },
       {
-        "title": "Google ResearchのGroundsourceを読み解く ─ AIで非構造データから構造化知識を作る技術",
-        "url": "https://zenn.dev/govtechtokyo/articles/6c13e8525e4e9f",
-        "site": "Zenn(LLM)",
-        "published": "2026-05-18T05:00:06Z",
-        "description": "はじめに\nLLM を「回答生成」ではなく「データ生成」に使うと、AI 活用の幅はかなり広がります。\nこんにちは。GovTech東京 AIイノベーショングループの本城です。今回は、その具体例として Google Research が公開した Groundsource を取り上げます。\nGroundsource は、ニュース記事のような非構造テキストから「何が起きたか」「いつか」「どこか」を抽出し、再...",
-        "category": "AI・技術",
-        "rss_category": "",
-        "image_url": ""
-      },
-      {
         "title": "LLMアプリのコツは「LLMを使いすぎない」ことかもしれない",
         "url": "https://zenn.dev/soramameen/articles/0e5c6517c77fb0",
         "site": "Zenn(LLM)",
@@ -200,16 +222,6 @@
         "site": "Zenn(LLM)",
         "published": "2026-05-17T23:59:12Z",
         "description": "TL;DR\n\nClaude Code を「賢いモデル」として使うだけでは、出力は安定しない\nモデルの周りに置く \"ハーネス（馬具）\" ＝ ガイドとセンサーをプロジェクトに合わせて育てるのが効く\n実プロジェクトで運用している 2つの制御点 を紹介する\n\n\n① 入口：CLAUDE.md / .claude/rules/ の2階層化（常時 / 条件付き / 指示型の3チャネルで注入）\n\n② 計算型ハーネ...",
-        "category": "AI・技術",
-        "rss_category": "",
-        "image_url": ""
-      },
-      {
-        "title": "日本語NLPの1200リソースをClaude Codeから検索できるPluginを公開しました",
-        "url": "https://zenn.dev/taishii/articles/50c023f5502ac0",
-        "site": "Zenn(LLM)",
-        "published": "2026-05-17T23:55:05Z",
-        "description": "awesome-japanese-nlp-resources に収録された 1200 件以上の日本語 NLP リソースを、Claude Code から自然言語で横断検索・調査できる Claude Code Plugin を公開しました。本記事では、その使い方と Plugin / Skill の仕組みをまとめます。\n\nawesome-japanese-nlp-resources のカバー画像\n\n こ...",
         "category": "AI・技術",
         "rss_category": "",
         "image_url": ""
@@ -459,6 +471,36 @@
     ],
     "2026-05": [
       {
+        "title": "RAGの精度を改善する：query rewrite・hybrid search・rerank・評価ログ",
+        "url": "https://zenn.dev/wqy/articles/4fe29ac264ea63",
+        "site": "Zenn(LLM)",
+        "published": "2026-05-18T19:45:54Z",
+        "description": "1. はじめに\n前回は、青空文庫の吉川英治『三国志』を使って、最小構成のRAGを実装しました。\n前回のRAGは、以下のようなシンプルな構成でした。\n文書読み込み\n  ↓\nchunk分割\n  ↓\nEmbedding\n  ↓\nFAISS検索\n  ↓\n検索結果をLLMへ渡す\n  ↓\n回答生成\nこの構成でも、RAGの基本的な流れは理解できます。\nただ、実際に作ってみると、回答品質はLLMだけでは決まらない...",
+        "category": "AI・技術",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "Claudeに4カ国の祖父母の話を聞いたら、回答の『生成過程』に大きな差が出た",
+        "url": "https://zenn.dev/blue_sunset_ai/articles/b63f04ff1beac9",
+        "site": "Zenn(LLM)",
+        "published": "2026-05-18T18:05:55Z",
+        "description": "1. はじめに\n前回の記事では、LLMが多中心言語において「どの文化を標準として扱うか」という問いを立てた。\n今回はその問いに対して、実際に手を動かした。\n英語圏の4カ国——アメリカ・アイルランド・インド・ナイジェリア——に対して、同じ3つの問いを投げた。祖父母から受け継がれる習慣、死者を悼む慣習、子どもへの昔話。\n結果として見えてきたのは、回答の「内容の差」だけではなかった。それよりも雄弁だった...",
+        "category": "AI・技術",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "Mamba3をゼロから実装してピュアMamba3言語モデルを作ってみた",
+        "url": "https://zenn.dev/taaroo/articles/c253880c240241",
+        "site": "Zenn(LLM)",
+        "published": "2026-05-18T16:33:40Z",
+        "description": "はじめに\nみなさんMamba使ってますか？\nこのMamba、今年は最新バージョンのMamba3の論文がICLRに採択されていたりと盛り上がってますね！\nhttps://iclr.cc/virtual/2026/poster/10010352\nただなんか...やっぱりまだTransformerと比較するとそこまで浸透していないのか、メジャーなLLMだとNemotron、Jamba、Falcon Ma...",
+        "category": "AI・技術",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
         "title": "なぜ、LLM AIコーディングのせいでスクラムの衰退が叫ばれるのか？",
         "url": "https://zenn.dev/pdfractal/articles/913ce06f6620cd",
         "site": "Zenn(LLM)",
@@ -619,16 +661,6 @@
         "image_url": ""
       },
       {
-        "title": "Google ResearchのGroundsourceを読み解く ─ AIで非構造データから構造化知識を作る技術",
-        "url": "https://zenn.dev/govtechtokyo/articles/6c13e8525e4e9f",
-        "site": "Zenn(LLM)",
-        "published": "2026-05-18T05:00:06Z",
-        "description": "はじめに\nLLM を「回答生成」ではなく「データ生成」に使うと、AI 活用の幅はかなり広がります。\nこんにちは。GovTech東京 AIイノベーショングループの本城です。今回は、その具体例として Google Research が公開した Groundsource を取り上げます。\nGroundsource は、ニュース記事のような非構造テキストから「何が起きたか」「いつか」「どこか」を抽出し、再...",
-        "category": "AI・技術",
-        "rss_category": "",
-        "image_url": ""
-      },
-      {
         "title": "LLMアプリのコツは「LLMを使いすぎない」ことかもしれない",
         "url": "https://zenn.dev/soramameen/articles/0e5c6517c77fb0",
         "site": "Zenn(LLM)",
@@ -654,16 +686,6 @@
         "site": "Zenn(LLM)",
         "published": "2026-05-17T23:59:12Z",
         "description": "TL;DR\n\nClaude Code を「賢いモデル」として使うだけでは、出力は安定しない\nモデルの周りに置く \"ハーネス（馬具）\" ＝ ガイドとセンサーをプロジェクトに合わせて育てるのが効く\n実プロジェクトで運用している 2つの制御点 を紹介する\n\n\n① 入口：CLAUDE.md / .claude/rules/ の2階層化（常時 / 条件付き / 指示型の3チャネルで注入）\n\n② 計算型ハーネ...",
-        "category": "AI・技術",
-        "rss_category": "",
-        "image_url": ""
-      },
-      {
-        "title": "日本語NLPの1200リソースをClaude Codeから検索できるPluginを公開しました",
-        "url": "https://zenn.dev/taishii/articles/50c023f5502ac0",
-        "site": "Zenn(LLM)",
-        "published": "2026-05-17T23:55:05Z",
-        "description": "awesome-japanese-nlp-resources に収録された 1200 件以上の日本語 NLP リソースを、Claude Code から自然言語で横断検索・調査できる Claude Code Plugin を公開しました。本記事では、その使い方と Plugin / Skill の仕組みをまとめます。\n\nawesome-japanese-nlp-resources のカバー画像\n\n こ...",
         "category": "AI・技術",
         "rss_category": "",
         "image_url": ""
