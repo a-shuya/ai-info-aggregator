@@ -1,9 +1,9 @@
 {
   "site": "Zenn(機械学習)",
-  "last_updated": "2026-05-19T14:15:04.446224",
-  "total_articles": 1083,
+  "last_updated": "2026-05-19T17:21:02.081982",
+  "total_articles": 1076,
   "articles_by_date": {
-    "本日": [
+    "昨日": [
       {
         "title": "# LLM / AIエージェント時代の安全設計：確率的推論と決定論的ガードレールの境界",
         "url": "https://zenn.dev/segawa4321/articles/b88eef1037f56a",
@@ -105,7 +105,7 @@
         "image_url": ""
       }
     ],
-    "昨日": [
+    "一昨日": [
       {
         "title": "表形式データ拡張手法：SMOTE",
         "url": "https://zenn.dev/haruto_big6/articles/d3c47246cc1fe3",
@@ -182,78 +182,6 @@
         "site": "Zenn(機械学習)",
         "published": "2026-05-18T00:56:03Z",
         "description": "はじめに\nWED株式会社でMLエンジニアをしています、ishi2kiです。\n当社では、コンビニなどの特定小売チェーンの最新商品情報を定期的に取得しています。\n取得した商品データにはJICFSカテゴリを付加しており、今回はそのカテゴリ推定の精度改善について紹介します。\n従来のLUKEによるクラス分類モデルでの精度が 43% だったところを、BigQueryのベクトル検索を活用することで 78% まで...",
-        "category": "AI・技術",
-        "rss_category": "",
-        "image_url": ""
-      }
-    ],
-    "一昨日": [
-      {
-        "title": "論文メモ：Bahdanau AttentionからAttentionを理解する",
-        "url": "https://zenn.dev/kas_blog/articles/20260509-llm-04-attention",
-        "site": "Zenn(機械学習)",
-        "published": "2026-05-17T12:59:44Z",
-        "description": "はじめに\nこの記事は、以下の論文を読んだ技術メモです。\n\n論文タイトル: Neural Machine Translation by Jointly Learning to Align and Translate\n論文リンク: https://arxiv.org/abs/1409.0473\n\n著者: Dzmitry Bahdanau, Kyunghyun Cho, Yoshua Bengio\n初版...",
-        "category": "AI・技術",
-        "rss_category": "",
-        "image_url": ""
-      },
-      {
-        "title": "Channel Attentionを追加すると精度は上がるか？CBAM風実装をCIFAR-10で検証【Keras実験】",
-        "url": "https://zenn.dev/wasurenamemo/articles/5691b7a6f7bcd5",
-        "site": "Zenn(機械学習)",
-        "published": "2026-05-17T12:39:20Z",
-        "description": "Channel Attentionを追加すると精度は上がるか？CBAM風実装をCIFAR-10で検証\nSENet・CBAMで使われる Channel Attention をKerasでシンプルに自前実装し、なし vs あり でCIFAR-10の精度・学習時間を比較しました。\n「追加すれば必ず精度が上がる」と思っていませんか？　今回の実験では意外な結果が出ました。\n!\nこの記事はブログ「忘れないよう...",
-        "category": "AI・技術",
-        "rss_category": "",
-        "image_url": ""
-      },
-      {
-        "title": "論理ゲートだけで言語モデルを作って Transformer を超えるまで、3 度散った話",
-        "url": "https://zenn.dev/karumaru/articles/24bca710a2db62",
-        "site": "Zenn(機械学習)",
-        "published": "2026-05-17T12:28:00Z",
-        "description": "こんなことをしました\nGPU を使わず、AND・OR・XOR などの論理ゲートだけで言語モデルを作って、Transformer (Perplexity 4.86) を 0.13 上回る PPL 4.73 を達成しました。\nただし、ここに辿り着くまでに 3 回散ってます。\nこの記事は、ありがちな「やってみた」ではなく、どう失敗して、何を諦めて、どこで思考を変えたか を順番に書く物語編です。コード重視...",
-        "category": "AI・技術",
-        "rss_category": "",
-        "image_url": ""
-      },
-      {
-        "title": "Boolean Attention のアーキテクチャ解説 — DLGN・HBA・蒸留を設計する",
-        "url": "https://zenn.dev/karumaru/articles/95f90906023133",
-        "site": "Zenn(機械学習)",
-        "published": "2026-05-17T12:23:24Z",
-        "description": "この記事の立ち位置\n論理ゲートだけで言語モデルを作って Transformer (PPL 4.86) を 0.13 上回る PPL 4.73 を達成した研究の、設計思想とアーキテクチャ にフォーカスしたコード解説です。\n「なぜそう書いたのか」を中心に書いていきます。\n\n動画: https://www.youtube.com/watch?v=nzr18PUjy-Y\n\nリポジトリ: karumaru-...",
-        "category": "AI・技術",
-        "rss_category": "",
-        "image_url": ""
-      },
-      {
-        "title": "表形式データ合成と拡張の基礎知識",
-        "url": "https://zenn.dev/haruto_big6/articles/2fb7e7c25153c2",
-        "site": "Zenn(機械学習)",
-        "published": "2026-05-17T09:31:51Z",
-        "description": "表形式データとは\n私達は普段様々な形式のデータを扱います．代表的なものは自然言語や画像，動画といったものでしょう．その1つに表形式データがあります．表形式データは簡単に言えばエクセルにまとめられているデータのようなもので，各行が1つの独立したデータ，各列がデータの項目を表すものです．\n例えば，とあるシステムに登録してあるユーザ情報などがイメージとしてはわかりやすいでしょうか．各行には1人の情報が記...",
-        "category": "AI・技術",
-        "rss_category": "",
-        "image_url": ""
-      },
-      {
-        "title": "Logistic タイプの無限潜在特徴モデル pg_ilfm を公開しました",
-        "url": "https://zenn.dev/momen8/articles/0ec0ea2d60c106",
-        "site": "Zenn(機械学習)",
-        "published": "2026-05-17T05:51:23Z",
-        "description": "はじめに\nこれまで書いた無限潜在特徴モデル(Infinite Latent Feature Model)の記事はこちらです。\n\nクラスタリングを避けるために無限潜在特徴モデル(Infinite Latent Feature Model)を実用化したい\nインド料理ビュッフェ過程(Indian Buffet Process)の復習と、実用化のための工夫\nロジスティックILFM（Infinite Lat...",
-        "category": "AI・技術",
-        "rss_category": "",
-        "image_url": ""
-      },
-      {
-        "title": "26Mパラメータが巨人を超える日——AIの「蒸留革命」が開発を民主化する",
-        "url": "https://zenn.dev/lingmu/articles/2026-05-16-model-distillation-agentic-era",
-        "site": "Zenn(機械学習)",
-        "published": "2026-05-17T03:39:59Z",
-        "description": "26Mパラメータが巨人を超える日——AIの「蒸留革命」が開発を民主化する\n2026-05-16 | 読了 8分 | #蒸留 #軽量モデル #エージェントAI #MCP #LLM\nたった2600万個のパラメータ。それは最新の大型AIモデルと比べると、象とアリほどの差がある。ところがその\"アリ\"が、Geminiのツール呼び出し能力をほぼ完全に再現してしまった——そんな事件がAIコミュニティを揺るがして...",
         "category": "AI・技術",
         "rss_category": "",
         "image_url": ""

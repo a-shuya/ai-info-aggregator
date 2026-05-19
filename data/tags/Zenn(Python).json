@@ -1,9 +1,9 @@
 {
   "site": "Zenn(Python)",
-  "last_updated": "2026-05-19T14:15:04.446224",
-  "total_articles": 4095,
+  "last_updated": "2026-05-19T17:21:02.081982",
+  "total_articles": 4080,
   "articles_by_date": {
-    "本日": [
+    "昨日": [
       {
         "title": "Python初心者がClaudeと一緒に個人事業主ツールを作ってBOOTHで販売するまでの話",
         "url": "https://zenn.dev/sngjpw/articles/8fc08bf5248b27",
@@ -30,6 +30,16 @@
         "site": "Zenn(Python)",
         "published": "2026-05-19T12:05:13Z",
         "description": "※本記事における「AI（LLM）」は、ローカル環境で動作するTransformerベースの因果的言語モデル（Causal LM）を指し、そのトークン選択確率（Logits）への介入実験を論じたものです。\n\n\n 1. はじめに：プロンプトエンジニアリングの限界と「真のAI中毒」への挑戦\nLLMに特定の感情や状態（例：「テンションを上げて」「疲れたように振る舞って」）を模倣させる際、通常はシステムプロ...",
+        "category": "開発",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "# LLM / AIエージェント時代の安全設計：確率的推論と決定論的ガードレールの境界",
+        "url": "https://zenn.dev/segawa4321/articles/b88eef1037f56a",
+        "site": "Zenn(Python)",
+        "published": "2026-05-19T11:21:11Z",
+        "description": "はじめに\nLLMやAIエージェントを実運用する際、単にモデル精度や推論速度だけを見ていては不十分です。\n現代のAIシステムでは、LLM本体に加えて、KV Cache、Vector DB、Semantic Router、Orchestrator、Speculative Decoding、Runtime Monitoring、eBPF、TEE、IAM、Audit Log など、複数のレイヤーが連携して...",
         "category": "開発",
         "rss_category": "",
         "image_url": ""
@@ -235,7 +245,7 @@
         "image_url": ""
       }
     ],
-    "昨日": [
+    "一昨日": [
       {
         "title": "ROS 2 (Jazzy) + Pythonでturtlesimを制御する（円・螺旋・8の字運動）",
         "url": "https://zenn.dev/sekayu122/articles/003_turtlesim_python",
@@ -497,178 +507,6 @@
         "image_url": ""
       }
     ],
-    "一昨日": [
-      {
-        "title": "Google MapsのAsk Mapsから着想して、CodexでAI経路提案デモを作ってみた",
-        "url": "https://zenn.dev/highthreee/articles/08b5d2f7be3a19",
-        "site": "Zenn(Python)",
-        "published": "2026-05-17T10:40:42Z",
-        "description": "TL;DR\nGoogle Maps の Ask Maps から着想して、ユーザーの文脈に合わせて経路を提案するWebデモを作りました。\n作ったのは AI Route Concierge という Streamlit アプリです。出発地、目的地、日時、人数、移動手段、優先条件を入力すると、mockデータのルート候補をスコアリングして表示します。さらに、AIチャットから「座れるルートを優先して」「横浜か...",
-        "category": "開発",
-        "rss_category": "",
-        "image_url": ""
-      },
-      {
-        "title": "macOSでSoracom OnyxにATコマンドを送る",
-        "url": "https://zenn.dev/takao2704/articles/eg25-g-pyusb-pty-at-console",
-        "site": "Zenn(Python)",
-        "published": "2026-05-17T08:20:04Z",
-        "description": "!\n「一般消費者が事業者の表示であることを判別することが困難である表示」の運用基準に基づく開示: この記事は記載の日付時点で株式会社ソラコムに所属する社員が執筆しました。ただし、個人としての投稿であり、株式会社ソラコムとしての正式な発言や見解ではありません。\n\n\n はじめに\nSoracom Onyx は、内部に Quectel EG25-G を搭載し、USB コネクタ経由で EG25-G の US...",
-        "category": "開発",
-        "rss_category": "",
-        "image_url": ""
-      },
-      {
-        "title": "【Python】そのwhileループ、scipy.ndimageで消せます",
-        "url": "https://zenn.dev/y_watanabe11/articles/e88b11b369f395",
-        "site": "Zenn(Python)",
-        "published": "2026-05-17T07:49:08Z",
-        "description": "近傍探索・伝播・穴埋め・距離計算をC実装に投げる二値画像処理入門\n\n はじめに\nPythonで画像処理を書いていると、気づいたら for 文や while 文を書いていることがあります。\n特に二値画像処理では、次のような処理がよく出てきます。\n\n8近傍にTrueの画素があるか調べる\n強いエッジとつながっている弱いエッジだけ残す\n穴がなくなるまで周囲から埋める\n境界から一定距離以内の画素だけを取り出...",
-        "category": "開発",
-        "rss_category": "",
-        "image_url": ""
-      },
-      {
-        "title": "Kaggle・機械学習向け pandas入門",
-        "url": "https://zenn.dev/edamame_lab/articles/bdf652aff12671",
-        "site": "Zenn(Python)",
-        "published": "2026-05-17T07:25:24Z",
-        "description": "はじめに\nKaggle や機械学習のコンペでは、最初からモデルを作るわけではありません。\n多くの場合、まず次のような作業をします。\n\nCSVファイルを読み込む\nデータの行数・列数・型を確認する\n欠損値を調べる\n必要な列を取り出す\n条件に合う行だけを抽出する\n文字列カテゴリを数値に変換する\n学習用データ X と目的変数 y に分ける\ntrain/test で列がずれないように整える\n\nこれらの前処理...",
-        "category": "開発",
-        "rss_category": "",
-        "image_url": ""
-      },
-      {
-        "title": "WindowsのVS CodeからRaspberry PiにSSH接続してPython開発する環境を作る",
-        "url": "https://zenn.dev/junta1991/articles/4334effd8eee1f",
-        "site": "Zenn(Python)",
-        "published": "2026-05-17T06:54:17Z",
-        "description": "はじめに\nRaspberry Pi 5でPythonコードを動かして、簡単なIoT家電やセンサー制御アプリを作りたいと思いました。\n最初はRaspberry Pi側にVS Codeを入れて直接プログラミングしようとしましたが、Raspberry Pi上でGUI版VS Codeを動かすと、やはり少し重く感じます。\nそこで、以下のような開発環境にしました。\nWindows PC\n  └─ VS Cod...",
-        "category": "開発",
-        "rss_category": "",
-        "image_url": ""
-      },
-      {
-        "title": "【Julia×Python】Physics-Informed GNNサロゲートモデル構築【基礎編】: 単純系でのグラフ構造の限界を検証",
-        "url": "https://zenn.dev/kohmaruworks358/articles/physics-gnn-surrogate-basic",
-        "site": "Zenn(Python)",
-        "published": "2026-05-17T05:12:44Z",
-        "description": "本記事の要点\n\n\nJulia（Catlab + DifferentialEquations）→ JSON Contract → Python（PyTorch Geometric） という二言語サロゲートモデルの最小パイプラインを、1 次元ばね–質量チェーンというあえて単純な対象でフルスクラッチ構築します。\n二言語連携の中核は 0-based Contract: Julia（1-based）と Py...",
-        "category": "開発",
-        "rss_category": "",
-        "image_url": ""
-      },
-      {
-        "title": "WEBスクレイピングやってみました2",
-        "url": "https://zenn.dev/ken_0421/articles/e2cd4ba282280f",
-        "site": "Zenn(Python)",
-        "published": "2026-05-17T04:13:58Z",
-        "description": "WEBスクレイピングをしてみた\n前回、requestsとBS4ライブラリを使ってスクレイピングしましたが\nhttps://zenn.dev/ken_0421/articles/ef43acc63760a9\n\n今回はseleniumというライブラリで遊んでみました。\n\n selenium\nWebブラウザの操作をプログラムで自動化するためのオープンソースフレームワークです。人間がマウスやキーボードで行...",
-        "category": "開発",
-        "rss_category": "",
-        "image_url": ""
-      },
-      {
-        "title": "ソクラテスRAGでシラバスを作る ── 喋ってたら学習計画ができてた話",
-        "url": "https://zenn.dev/mizunadad/articles/c3532c6e5f053b",
-        "site": "Zenn(Python)",
-        "published": "2026-05-17T03:08:21Z",
-        "description": "!\nこの記事は「答えないRAG ── ソクラテス」開発記の派生Tipsです。\n開発記本編（Vol.1〜9）とは別軸で、「使い方」にフォーカスします。\n\n\n あれ、これシラバスやん\nソクラテスRAGを自分の勉強に使い始めてしばらく経ったころ、気づいた。\n「この会話、そのままシラバスになるんじゃ？」\nソクラテスRAGでわちゃわちゃ話してると、「何を学びたいか」が自然と言語化されていく。で、シラバス生成...",
-        "category": "開発",
-        "rss_category": "",
-        "image_url": ""
-      },
-      {
-        "title": "2026年CBAM本格稼働。Excelでの炭素税計算が「監査リスク」になる理由とDify完全対応の解決策",
-        "url": "https://zenn.dev/fieldtechsol/articles/fd5433da0cd088",
-        "site": "Zenn(Python)",
-        "published": "2026-05-17T01:50:25Z",
-        "description": "2026年、ついにEUの「炭素国境調整措置（CBAM）」が移行期間を終え、実際の財務義務（証書の購入）が発生します。\n欧州委員会が提示する2026年Q1の公式価格は 75.36 EUR/tCO2e。これに伴い、EUへ輸出を行う企業（Non-EUサプライヤー）やEUの輸入業者は、極めて厳密な排出量計算と「炭素価格の支払い証拠」の提出を迫られます。\nしかし、多くの現場やコンサルタントは未だにExcel...",
-        "category": "開発",
-        "rss_category": "",
-        "image_url": ""
-      },
-      {
-        "title": "「Mojo from Scratch — Python開発者のための実践入門と microgpt 読解」をZennで販売開始しました",
-        "url": "https://zenn.dev/h3adeu/articles/5c1bb94b8736ff",
-        "site": "Zenn(Python)",
-        "published": "2026-05-16T20:45:01Z",
-        "description": "Zennにて新しい書籍「Mojo from Scratch — Python開発者のための実践入門と microgpt 読解」の販売を開始しました。あわせて全章の解説動画をYouTubeで公開しています。\nこの本について\n「Pythonに似ているのに何が違うのか」「LLMの内側をゼロから実装してみたい」という方のために書きました。Mojoの言語仕様を体系的に整理しながら、最終的にはGPTの学習ルー...",
-        "category": "開発",
-        "rss_category": "",
-        "image_url": ""
-      },
-      {
-        "title": "Mojo from Scratch — Python開発者のための実践入門と microgpt 読解",
-        "url": "https://zenn.dev/h3adeu/books/939ffb0914413d",
-        "site": "Zenn(Python)",
-        "published": "2026-05-16T20:24:27Z",
-        "description": "【Python 開発者が Mojo でシステムプログラミングと機械学習スタックを学ぶ実践ガイド】\n\n「Python に似ているのに何が違うのか」「LLM の内側をゼロから実装してみたい」──そんなあなたのための一冊です。\n\n■ 本書で学べること\n・Mojo の位置づけ・設計思想・Python との本質的な違い\n・関数・変数・型・構造体・所有権・メタプログラミング・GPU 対応まで言語仕様を体系的に...",
-        "category": "開発",
-        "rss_category": "",
-        "image_url": ""
-      },
-      {
-        "title": "書籍「LLM と一緒に学ぶ Web アプリ開発」の全章解説動画を YouTube で公開＋ Zenn でも販売開始しました",
-        "url": "https://zenn.dev/h3adeu/articles/25fab205f38707",
-        "site": "Zenn(Python)",
-        "published": "2026-05-16T18:47:35Z",
-        "description": "2月に Kindle 出版した「LLM と一緒に学ぶ Web アプリ開発 - ゼロからデプロイまで」について、2つのお知らせがあります。\n① 各章の解説動画（全14章）を YouTube で公開しました ② Zenn にて HTML 版の販売を開始しました\nYouTube 解説動画について\n各章のスライドにナレーションを加えた解説動画を全章分公開しました。章ごとに独立しているので、気になる章だけ視...",
-        "category": "開発",
-        "rss_category": "",
-        "image_url": ""
-      },
-      {
-        "title": "「LLMと一緒に学ぶWebアプリ開発 - ゼロからデプロイまで」の第3章を無償公開します。",
-        "url": "https://zenn.dev/h3adeu/articles/3be0df482e166a",
-        "site": "Zenn(Python)",
-        "published": "2026-05-16T18:33:24Z",
-        "description": "Django プロジェクトを始める\n\n この章で学ぶこと\n\nDjango とは何か、なぜ選ばれるのか\nDjango プロジェクトの作成（LLM と一緒に）\nDjango の構造理解（MTV）\nHello World 表示\n管理画面\nつまずきポイント集\nゲーム用プロジェクトの整理\nGit へのコミット\n\n\n\n イントロダクション\n環境構築が完了したら、いよいよコードを書き始めます！\nこの章では、Dj...",
-        "category": "開発",
-        "rss_category": "",
-        "image_url": ""
-      },
-      {
-        "title": "「LLMと一緒に学ぶWebアプリ開発 - ゼロからデプロイまで」の第2章を無償公開します。",
-        "url": "https://zenn.dev/h3adeu/articles/83c7e2797d567f",
-        "site": "Zenn(Python)",
-        "published": "2026-05-16T18:29:51Z",
-        "description": "開発環境の準備（LLMと一緒に）\n\n この章で学ぶこと\n\nPython 3.13+, Git, Cursorのインストール\nCursorのセットアップ\nLLMとの壁打ち: 環境構築の相談\nターミナル/コマンドラインの基礎\nGitの基本操作\nつまずきポイント集\n\n\n\n イントロダクション\nプログラミング学習で最初の、そして最大の壁が「環境構築」です。\n多くの初心者が、コードを一行も書く前に挫折してし...",
-        "category": "開発",
-        "rss_category": "",
-        "image_url": ""
-      },
-      {
-        "title": "「LLMと一緒に学ぶWebアプリ開発 - ゼロからデプロイまで」の第1章を無償公開します。",
-        "url": "https://zenn.dev/h3adeu/articles/e8c857b936f0eb",
-        "site": "Zenn(Python)",
-        "published": "2026-05-16T18:24:15Z",
-        "description": "LLM時代の開発を体験する\n\n この章で学ぶこと\n\nLLMが開発にもたらした変化\n本書で作るアプリの全体像\n学習の進め方\n必要な前提知識（ほぼゼロでOK）\n\n\n 何が変わったのか\n\n プログラミング学習の革命\n2022年11月、ChatGPT[1]の登場はプログラミングの世界を一変させました。\nそれ以前は、エラーメッセージが出たら何時間もStack Overflow[2]を検索し、英語のドキュメン...",
-        "category": "開発",
-        "rss_category": "",
-        "image_url": ""
-      },
-      {
-        "title": "【第６回】Microsoft Agent Frameworkで学ぶAIエージェント設計原則：HandoffBuilder でルーティング設計",
-        "url": "https://zenn.dev/naruaki/articles/af-design-06-routing",
-        "site": "Zenn(Python)",
-        "published": "2026-05-16T16:51:47Z",
-        "description": "!\nこの記事は「AIエージェント設計原則シリーズ」の第6回です。Microsoft Agent Framework を題材に、ソフトウェア設計原則を AI エージェントに適用する方法を解説します。\n\n\n はじめに\n前回まで、Agent を分割し、Middleware で横断的関心事を集約する方法を学びました。\n分割した Agent をどう「振り分けるか」は、次の設計課題です。\n第6回のテーマは 開...",
-        "category": "開発",
-        "rss_category": "",
-        "image_url": ""
-      },
-      {
-        "title": "AIコーディング時代に、後で困らないPython開発環境を考える",
-        "url": "https://zenn.dev/zaspa/articles/fd6fb521df88f6",
-        "site": "Zenn(Python)",
-        "published": "2026-05-16T15:39:58Z",
-        "description": "はじめに\n最近は、AIコーディングツールのおかげで、Pythonのコードを書くハードルがかなり下がりました。\n一方で、コードを書けることと、プロジェクトとして継続的に開発できることは別です。\nAIが生成したコードをそのまま増やしていくと、依存関係が曖昧になったり、書き方がばらついたり、どこまで動作確認できているのか分かりにくくなることがあります。\n特にPythonは手軽に書き始められる一方で、環境...",
-        "category": "開発",
-        "rss_category": "",
-        "image_url": ""
-      }
-    ],
     "2026-05": [
       {
         "title": "Python初心者がClaudeと一緒に個人事業主ツールを作ってBOOTHで販売するまでの話",
@@ -696,6 +534,16 @@
         "site": "Zenn(Python)",
         "published": "2026-05-19T12:05:13Z",
         "description": "※本記事における「AI（LLM）」は、ローカル環境で動作するTransformerベースの因果的言語モデル（Causal LM）を指し、そのトークン選択確率（Logits）への介入実験を論じたものです。\n\n\n 1. はじめに：プロンプトエンジニアリングの限界と「真のAI中毒」への挑戦\nLLMに特定の感情や状態（例：「テンションを上げて」「疲れたように振る舞って」）を模倣させる際、通常はシステムプロ...",
+        "category": "開発",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "# LLM / AIエージェント時代の安全設計：確率的推論と決定論的ガードレールの境界",
+        "url": "https://zenn.dev/segawa4321/articles/b88eef1037f56a",
+        "site": "Zenn(Python)",
+        "published": "2026-05-19T11:21:11Z",
+        "description": "はじめに\nLLMやAIエージェントを実運用する際、単にモデル精度や推論速度だけを見ていては不十分です。\n現代のAIシステムでは、LLM本体に加えて、KV Cache、Vector DB、Semantic Router、Orchestrator、Speculative Decoding、Runtime Monitoring、eBPF、TEE、IAM、Audit Log など、複数のレイヤーが連携して...",
         "category": "開発",
         "rss_category": "",
         "image_url": ""
