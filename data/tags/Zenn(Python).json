@@ -1,9 +1,119 @@
 {
   "site": "Zenn(Python)",
-  "last_updated": "2026-05-19T00:18:00.844227",
-  "total_articles": 4053,
+  "last_updated": "2026-05-19T04:37:48.131982",
+  "total_articles": 4075,
   "articles_by_date": {
     "本日": [
+      {
+        "title": "OWL-ViTとGroundingDINOのプロンプトと挙動の比較",
+        "url": "https://zenn.dev/ikomiki/articles/owlvit-and-grandingdino-prompt",
+        "site": "Zenn(Python)",
+        "published": "2026-05-19T02:53:58Z",
+        "description": "はじめに\n\nオープンボキャブラリー物体検出モデルである OWL-ViT と GroundingDINO を使用した Streamlit アプリケーションをそれぞれ実装し、その挙動やプロンプトへの反応の違いを比較しました。\n本記事では、実際に動かしてみて分かった両モデルの「プロンプトの癖」や「検出精度の特性」についてまとめます。\n\n リポジトリ\n検証に使用したコードは以下のリポジトリで公開しています...",
+        "category": "開発",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "OWL-ViT(オープンボキャブラリー物体検出モデル)のプロンプトの癖",
+        "url": "https://zenn.dev/ikomiki/articles/owl-vit-streamlit",
+        "site": "Zenn(Python)",
+        "published": "2026-05-19T02:53:57Z",
+        "description": "はじめに\n\nOWL-ViTモデルを使用した物体検出 streamlit アプリケーションを実装したうえで、得られた知見を共有します。\nコードについての説明は行いません（AI 生成なので、説明できるところがないとも）。\n\n リポジトリ\n\nikomiki/owl-vit-streamlit: owl-vit で画像認識を行うサンプルコード。streamlit で実装\n\n\n OWL-ViT の物体検出に...",
+        "category": "開発",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "GrandingDINO(オープンボキャブラリー物体検出モデル)の",
+        "url": "https://zenn.dev/ikomiki/articles/grandingdino-streamlit",
+        "site": "Zenn(Python)",
+        "published": "2026-05-19T02:53:57Z",
+        "description": "はじめに\n\nGroundingDINOモデルを使用した物体検出 streamlit アプリケーションを実装したうえで、得られた知見を共有します。\nコードについての説明は行いません（AI 生成なので、説明できるところがないとも）。\n\n リポジトリ\n\nikomiki/hello-GrandingDINO\n\n\n GrandingDINO の物体検出について\n\n soba(蕎麦)は検出できるが、薬味のネギ...",
+        "category": "開発",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "PyCUDA入門③ ─ 2次元カーネルで行列演算を書く",
+        "url": "https://zenn.dev/gnus/articles/6cc6a3c4a193a7",
+        "site": "Zenn(Python)",
+        "published": "2026-05-19T01:45:07Z",
+        "description": "はじめに\n第1回・第2回では「1次元の配列」を扱いました。スレッドのインデックスも1つの数字 i で表せました。\nint i = blockIdx.x * blockDim.x + threadIdx.x;  // 1次元\n今回は 行列（2次元配列） を扱います。行列演算はSionnaの内部でも多用されており、CUDAを学ぶ上で避けて通れないテーマです。\n\n\n 行列を1次元で表すと\nCUDAのグロ...",
+        "category": "開発",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "PyCUDA入門②  ─ Reductionで配列の合計をGPUで求める",
+        "url": "https://zenn.dev/gnus/articles/e5821bd8ffe1a2",
+        "site": "Zenn(Python)",
+        "published": "2026-05-19T01:42:35Z",
+        "description": "はじめに\n前回は「配列のi番目をi番目のスレッドが担当する」という1対1の対応でカーネルを書きました。\n// 前回のパターン：各スレッドが1要素を担当するだけ\nif (i &lt; n) c[i] = a[i] + b[i];\n今回はこれより一段難しい Reduction（削減演算） に挑戦します。\nReductionとは、「配列全体から1つの値を求める演算」のことです。\n入力: [3, 1, 4...",
+        "category": "開発",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "WindowsネイティブのCodexでPythonが「見つかるのに動かない」を解決する",
+        "url": "https://zenn.dev/kakenyan/articles/2fa07be0547e33",
+        "site": "Zenn(Python)",
+        "published": "2026-05-19T01:37:34Z",
+        "description": "はじめに\nWSL版では無く、WindowsネイティブのCodex で Python を使おうとしたところ、最初は python が見つからず、PATH の問題だと思っていました。\nところが、shim を置いて where.exe python が通る状態にしても、実行時には Access is denied. になりました。\nこの記事では、Windows 環境の Codex で起きた「コマンドは見...",
+        "category": "開発",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "Speeding Up Python: A Beginner's Guide to Solving the N+1 Problem",
+        "url": "https://zenn.dev/ksangood/articles/cdedbd7d229805",
+        "site": "Zenn(Python)",
+        "published": "2026-05-19T00:58:38Z",
+        "description": "When you start writing programs that handle large amounts of data, you might notice your code slowing down significantly. One of the most common culprits for this sluggish performance is known as the ...",
+        "category": "開発",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "PyCUDA入門 ─ PythonからGPUを動かす基本",
+        "url": "https://zenn.dev/gnus/articles/f26db01de9cc1a",
+        "site": "Zenn(Python)",
+        "published": "2026-05-19T00:38:42Z",
+        "description": "はじめに\n「GPUを使えばAIや数値計算が速くなる」とよく聞きますが、実際にGPUをコードから直接動かしたことはありますか？\nこの記事では PyCUDA を使い、PythonからGPUカーネル（GPU上で動く関数）を呼び出す基本を解説します。対象は「Pythonは書けるけど、GPUは未経験」という方です。\n環境はGoogle Colabだけで完結します。\n\n\n 全体構造を理解する\nまず「PyCUD...",
+        "category": "開発",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "Cloud Natural Language API活用術：不適切ワードを自動ブロック",
+        "url": "https://zenn.dev/e_agency/articles/78e1da8d6db59b",
+        "site": "Zenn(Python)",
+        "published": "2026-05-18T23:19:46Z",
+        "description": "はじめに\n企業が保有するデータの約80%は、「テキストデータ」であると言われています。中でも顧客アンケート、口コミなどのユーザー生成コンテンツは、顧客の生の声を知るための貴重な情報源です。\nしかし、これらのデータをそのままビジネスや分析に活用するには、大きなリスクと壁が存在します。\n\n\nそのまま扱えないリスク: 生のテキストデータの中には、スパムや誹謗中傷、特定の属性に対する差別的な発言など、ブラ...",
+        "category": "開発",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "[Pandas入門シリーズ第7回] グループ化と集計",
+        "url": "https://zenn.dev/haruhiro1020/articles/97933429f727f0",
+        "site": "Zenn(Python)",
+        "published": "2026-05-18T22:00:07Z",
+        "description": "はじめに\n本記事は「Pythonでデータを分析するPandas入門」シリーズの第7回です．\n本シリーズでは， Pythonのデータ分析ライブラリである Pandas を使って，「データを扱い，分析できる状態」になること を目標としています．\n第6回では，データの並び替えとランキング について説明しました．\n第7回では， データのグループ化と集計 を説明します．\nデータを確認することから，データを分...",
+        "category": "開発",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "CSV更新→PDF自動生成→印刷会社へ。社員名刺の発注ワークフローをコード化した",
+        "url": "https://zenn.dev/minedia/articles/business-card-pdf-generator",
+        "site": "Zenn(Python)",
+        "published": "2026-05-18T20:28:45Z",
+        "description": "3秒まとめ\n\n\nIllustratorを立ち上げて1人ずつ名刺データを作る運用をやめた。社内デザイナーがいないので、CSV＋Pythonで自動生成するパイプラインに置き換えた\n印刷業者のテンプレ（トンボ・塗り足し3mm・CMYK・フォントアウトライン化）に完全一致するPDFを ReportLab + Ghostscript で出力\n\nemployees.csv を更新したら GitHub Acti...",
+        "category": "開発",
+        "rss_category": "",
+        "image_url": ""
+      },
       {
         "title": "全体レビューで 30 件直したら、UI を 1 回壊した話 ── C3 v2.9.0",
         "url": "https://zenn.dev/satoh_y_0323/articles/a466ac3db88cd7",
@@ -460,6 +570,116 @@
       }
     ],
     "2026-05": [
+      {
+        "title": "OWL-ViTとGroundingDINOのプロンプトと挙動の比較",
+        "url": "https://zenn.dev/ikomiki/articles/owlvit-and-grandingdino-prompt",
+        "site": "Zenn(Python)",
+        "published": "2026-05-19T02:53:58Z",
+        "description": "はじめに\n\nオープンボキャブラリー物体検出モデルである OWL-ViT と GroundingDINO を使用した Streamlit アプリケーションをそれぞれ実装し、その挙動やプロンプトへの反応の違いを比較しました。\n本記事では、実際に動かしてみて分かった両モデルの「プロンプトの癖」や「検出精度の特性」についてまとめます。\n\n リポジトリ\n検証に使用したコードは以下のリポジトリで公開しています...",
+        "category": "開発",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "OWL-ViT(オープンボキャブラリー物体検出モデル)のプロンプトの癖",
+        "url": "https://zenn.dev/ikomiki/articles/owl-vit-streamlit",
+        "site": "Zenn(Python)",
+        "published": "2026-05-19T02:53:57Z",
+        "description": "はじめに\n\nOWL-ViTモデルを使用した物体検出 streamlit アプリケーションを実装したうえで、得られた知見を共有します。\nコードについての説明は行いません（AI 生成なので、説明できるところがないとも）。\n\n リポジトリ\n\nikomiki/owl-vit-streamlit: owl-vit で画像認識を行うサンプルコード。streamlit で実装\n\n\n OWL-ViT の物体検出に...",
+        "category": "開発",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "GrandingDINO(オープンボキャブラリー物体検出モデル)の",
+        "url": "https://zenn.dev/ikomiki/articles/grandingdino-streamlit",
+        "site": "Zenn(Python)",
+        "published": "2026-05-19T02:53:57Z",
+        "description": "はじめに\n\nGroundingDINOモデルを使用した物体検出 streamlit アプリケーションを実装したうえで、得られた知見を共有します。\nコードについての説明は行いません（AI 生成なので、説明できるところがないとも）。\n\n リポジトリ\n\nikomiki/hello-GrandingDINO\n\n\n GrandingDINO の物体検出について\n\n soba(蕎麦)は検出できるが、薬味のネギ...",
+        "category": "開発",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "PyCUDA入門③ ─ 2次元カーネルで行列演算を書く",
+        "url": "https://zenn.dev/gnus/articles/6cc6a3c4a193a7",
+        "site": "Zenn(Python)",
+        "published": "2026-05-19T01:45:07Z",
+        "description": "はじめに\n第1回・第2回では「1次元の配列」を扱いました。スレッドのインデックスも1つの数字 i で表せました。\nint i = blockIdx.x * blockDim.x + threadIdx.x;  // 1次元\n今回は 行列（2次元配列） を扱います。行列演算はSionnaの内部でも多用されており、CUDAを学ぶ上で避けて通れないテーマです。\n\n\n 行列を1次元で表すと\nCUDAのグロ...",
+        "category": "開発",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "PyCUDA入門②  ─ Reductionで配列の合計をGPUで求める",
+        "url": "https://zenn.dev/gnus/articles/e5821bd8ffe1a2",
+        "site": "Zenn(Python)",
+        "published": "2026-05-19T01:42:35Z",
+        "description": "はじめに\n前回は「配列のi番目をi番目のスレッドが担当する」という1対1の対応でカーネルを書きました。\n// 前回のパターン：各スレッドが1要素を担当するだけ\nif (i &lt; n) c[i] = a[i] + b[i];\n今回はこれより一段難しい Reduction（削減演算） に挑戦します。\nReductionとは、「配列全体から1つの値を求める演算」のことです。\n入力: [3, 1, 4...",
+        "category": "開発",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "WindowsネイティブのCodexでPythonが「見つかるのに動かない」を解決する",
+        "url": "https://zenn.dev/kakenyan/articles/2fa07be0547e33",
+        "site": "Zenn(Python)",
+        "published": "2026-05-19T01:37:34Z",
+        "description": "はじめに\nWSL版では無く、WindowsネイティブのCodex で Python を使おうとしたところ、最初は python が見つからず、PATH の問題だと思っていました。\nところが、shim を置いて where.exe python が通る状態にしても、実行時には Access is denied. になりました。\nこの記事では、Windows 環境の Codex で起きた「コマンドは見...",
+        "category": "開発",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "Speeding Up Python: A Beginner's Guide to Solving the N+1 Problem",
+        "url": "https://zenn.dev/ksangood/articles/cdedbd7d229805",
+        "site": "Zenn(Python)",
+        "published": "2026-05-19T00:58:38Z",
+        "description": "When you start writing programs that handle large amounts of data, you might notice your code slowing down significantly. One of the most common culprits for this sluggish performance is known as the ...",
+        "category": "開発",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "PyCUDA入門 ─ PythonからGPUを動かす基本",
+        "url": "https://zenn.dev/gnus/articles/f26db01de9cc1a",
+        "site": "Zenn(Python)",
+        "published": "2026-05-19T00:38:42Z",
+        "description": "はじめに\n「GPUを使えばAIや数値計算が速くなる」とよく聞きますが、実際にGPUをコードから直接動かしたことはありますか？\nこの記事では PyCUDA を使い、PythonからGPUカーネル（GPU上で動く関数）を呼び出す基本を解説します。対象は「Pythonは書けるけど、GPUは未経験」という方です。\n環境はGoogle Colabだけで完結します。\n\n\n 全体構造を理解する\nまず「PyCUD...",
+        "category": "開発",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "Cloud Natural Language API活用術：不適切ワードを自動ブロック",
+        "url": "https://zenn.dev/e_agency/articles/78e1da8d6db59b",
+        "site": "Zenn(Python)",
+        "published": "2026-05-18T23:19:46Z",
+        "description": "はじめに\n企業が保有するデータの約80%は、「テキストデータ」であると言われています。中でも顧客アンケート、口コミなどのユーザー生成コンテンツは、顧客の生の声を知るための貴重な情報源です。\nしかし、これらのデータをそのままビジネスや分析に活用するには、大きなリスクと壁が存在します。\n\n\nそのまま扱えないリスク: 生のテキストデータの中には、スパムや誹謗中傷、特定の属性に対する差別的な発言など、ブラ...",
+        "category": "開発",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "[Pandas入門シリーズ第7回] グループ化と集計",
+        "url": "https://zenn.dev/haruhiro1020/articles/97933429f727f0",
+        "site": "Zenn(Python)",
+        "published": "2026-05-18T22:00:07Z",
+        "description": "はじめに\n本記事は「Pythonでデータを分析するPandas入門」シリーズの第7回です．\n本シリーズでは， Pythonのデータ分析ライブラリである Pandas を使って，「データを扱い，分析できる状態」になること を目標としています．\n第6回では，データの並び替えとランキング について説明しました．\n第7回では， データのグループ化と集計 を説明します．\nデータを確認することから，データを分...",
+        "category": "開発",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "CSV更新→PDF自動生成→印刷会社へ。社員名刺の発注ワークフローをコード化した",
+        "url": "https://zenn.dev/minedia/articles/business-card-pdf-generator",
+        "site": "Zenn(Python)",
+        "published": "2026-05-18T20:28:45Z",
+        "description": "3秒まとめ\n\n\nIllustratorを立ち上げて1人ずつ名刺データを作る運用をやめた。社内デザイナーがいないので、CSV＋Pythonで自動生成するパイプラインに置き換えた\n印刷業者のテンプレ（トンボ・塗り足し3mm・CMYK・フォントアウトライン化）に完全一致するPDFを ReportLab + Ghostscript で出力\n\nemployees.csv を更新したら GitHub Acti...",
+        "category": "開発",
+        "rss_category": "",
+        "image_url": ""
+      },
       {
         "title": "全体レビューで 30 件直したら、UI を 1 回壊した話 ── C3 v2.9.0",
         "url": "https://zenn.dev/satoh_y_0323/articles/a466ac3db88cd7",
