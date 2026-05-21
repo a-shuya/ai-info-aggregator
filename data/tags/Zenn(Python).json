@@ -1,8 +1,30 @@
 {
   "site": "Zenn(Python)",
-  "last_updated": "2026-05-20T23:49:38.354470",
+  "last_updated": "2026-05-21T01:52:41.737894",
   "total_articles": 4096,
   "articles_by_date": {
+    "本日": [
+      {
+        "title": "個人開発のPython型チェックは何を使うべきか：mypy / pyright / ty を比べる",
+        "url": "https://zenn.dev/zaspa/articles/251bf3970fb371",
+        "site": "Zenn(Python)",
+        "published": "2026-05-20T15:30:28Z",
+        "description": "TL;DR\n\n\n\nツール\n導入しやすさ\nエディタ連携\n設定のわかりやすさ\n将来性\n位置づけ\n\n\n\n\nmypy\n⭕\n△\n△\n⭕\n定番。実績と情報量を重視するなら有力\n\n\npyright\n⭕\n⭕\n⭕\n△\n現時点の第一候補。個人開発で始めやすい\n\n\nty\n△\n△\n△\n⭕\n期待枠。今後の置き換え候補\n\n\n\n個人開発でこれからPythonの型チェックを始めるなら、まずは pyright が使いやすいと感じて...",
+        "category": "開発",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "ChatGPT PlusのProjectsだけでプログラミング言語を作り始めて早4週間",
+        "url": "https://zenn.dev/tkithrta/articles/dd39848cfef527",
+        "site": "Zenn(Python)",
+        "published": "2026-05-20T15:05:05Z",
+        "description": "はじめに\nAneというプログラミング言語を作り始めて、4週間が経過しました。\nhttps://gitlab.com/tkithrta/ane\nhttps://zenn.dev/tkithrta/articles/2b0134084a45d6\n前回は、stringと[]const u8について書きました。Aneのstringは所有する文字列ではなく、UTF-8として妥当な読み取り専用ビューです。[]...",
+        "category": "開発",
+        "rss_category": "",
+        "image_url": ""
+      }
+    ],
     "昨日": [
       {
         "title": "AI講習会の前に、まず1本プログラムを書かせてみよう",
@@ -29,7 +51,7 @@
         "url": "https://zenn.dev/hal220/articles/191cc2700c101a",
         "site": "Zenn(Python)",
         "published": "2026-05-20T12:30:05Z",
-        "description": "事の発端：2行チラ見せへの怒り\n先日、某Web版の文字起こしサービスに音声をアップロードしたところ、結果を2行だけチラ見せされて、**「あとは月額課金してね☆」**という仕打ちを受けました。\nお試しテストすら満足にできない初見殺しのUIに直面し、「だったら自分で組むか」と（若干キレ気味に）舵を切りました。\nそこから、Python + ローカルWhisper（mediumモデル） + ChatGPT...",
+        "description": "事の発端：2行チラ見せへの怒り\n先日、某Web版の文字起こしサービスに音声をアップロードしたところ、結果を2行だけチラ見せされて、「あとは月額課金してね☆」 という仕打ちを受けました。\nお試しテストすら満足にできない初見殺しのUIに直面し、「だったら自分で組むか」と（若干キレ気味に）舵を切りました。\nそこから、Python + ローカルWhisper（mediumモデル） + ChatGPT を組...",
         "category": "開発",
         "rss_category": "",
         "image_url": ""
@@ -190,26 +212,6 @@
         "site": "Zenn(Python)",
         "published": "2026-05-20T00:31:39Z",
         "description": "`uvicorn --workers 4` と `ThreadPoolExecutor(max_workers=4)` は、なぜ同じ『ワーカー』で別の実装を指すのか」「同時ユーザー数千人のサービスが、なぜプール 20 本で平然と動くのか」。FastAPI / SQLAlchemy / PostgreSQL を業務で扱いつつ、これらの問いに根拠を持って答えられない中堅エンジニア向けに、ハードウェア層...",
-        "category": "開発",
-        "rss_category": "",
-        "image_url": ""
-      },
-      {
-        "title": "GCPで始めるデータエンジニアリング入門①：生データをGCSで受け取ってプロファイリングする",
-        "url": "https://zenn.dev/gixo/articles/gcp-de-intro-01-gcs-profiling",
-        "site": "Zenn(Python)",
-        "published": "2026-05-19T23:30:05Z",
-        "description": "はじめに\n「データエンジニアって、実際何をしてるんですか？」\n面接でよく聞かれる質問です。「データ処理基盤を構築しています」とか「データパイプラインを作っています」など色々説明させていただくのですが、具体的にどういう作業なのかはなかなかイメージしにくいと思います。\nこのシリーズでは、Google Cloud（GCP）を使って、公開情報である実際の小売業の売上データを処理するパイプラインを非常に単純...",
-        "category": "開発",
-        "rss_category": "",
-        "image_url": ""
-      },
-      {
-        "title": "微細な有意差を検出する手法 \"PWTAB\" の検証",
-        "url": "https://zenn.dev/dmmdata/articles/e230af2cb91692",
-        "site": "Zenn(Python)",
-        "published": "2026-05-19T22:49:05Z",
-        "description": "はじめに\nはじめまして。DMM.com でデータアナリストをしている小泉です。\n弊社では多くの事業グロース施策を AB テストの形で検証し、有意差検定を用いながら施策の評価を行っています。\nしかし、事業の成熟に伴い、簡単に大きく事業 KPI をリフトさせるような施策はどうしても少なくなってしまいます。\nその結果、従来の検定手法では、評価したい小さな差を統計的に識別しきれない という状況に直面するこ...",
         "category": "開発",
         "rss_category": "",
         "image_url": ""
@@ -459,6 +461,26 @@
     ],
     "2026-05": [
       {
+        "title": "個人開発のPython型チェックは何を使うべきか：mypy / pyright / ty を比べる",
+        "url": "https://zenn.dev/zaspa/articles/251bf3970fb371",
+        "site": "Zenn(Python)",
+        "published": "2026-05-20T15:30:28Z",
+        "description": "TL;DR\n\n\n\nツール\n導入しやすさ\nエディタ連携\n設定のわかりやすさ\n将来性\n位置づけ\n\n\n\n\nmypy\n⭕\n△\n△\n⭕\n定番。実績と情報量を重視するなら有力\n\n\npyright\n⭕\n⭕\n⭕\n△\n現時点の第一候補。個人開発で始めやすい\n\n\nty\n△\n△\n△\n⭕\n期待枠。今後の置き換え候補\n\n\n\n個人開発でこれからPythonの型チェックを始めるなら、まずは pyright が使いやすいと感じて...",
+        "category": "開発",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "ChatGPT PlusのProjectsだけでプログラミング言語を作り始めて早4週間",
+        "url": "https://zenn.dev/tkithrta/articles/dd39848cfef527",
+        "site": "Zenn(Python)",
+        "published": "2026-05-20T15:05:05Z",
+        "description": "はじめに\nAneというプログラミング言語を作り始めて、4週間が経過しました。\nhttps://gitlab.com/tkithrta/ane\nhttps://zenn.dev/tkithrta/articles/2b0134084a45d6\n前回は、stringと[]const u8について書きました。Aneのstringは所有する文字列ではなく、UTF-8として妥当な読み取り専用ビューです。[]...",
+        "category": "開発",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
         "title": "AI講習会の前に、まず1本プログラムを書かせてみよう",
         "url": "https://zenn.dev/firstplain/articles/799f1bbfd36911",
         "site": "Zenn(Python)",
@@ -483,7 +505,7 @@
         "url": "https://zenn.dev/hal220/articles/191cc2700c101a",
         "site": "Zenn(Python)",
         "published": "2026-05-20T12:30:05Z",
-        "description": "事の発端：2行チラ見せへの怒り\n先日、某Web版の文字起こしサービスに音声をアップロードしたところ、結果を2行だけチラ見せされて、**「あとは月額課金してね☆」**という仕打ちを受けました。\nお試しテストすら満足にできない初見殺しのUIに直面し、「だったら自分で組むか」と（若干キレ気味に）舵を切りました。\nそこから、Python + ローカルWhisper（mediumモデル） + ChatGPT...",
+        "description": "事の発端：2行チラ見せへの怒り\n先日、某Web版の文字起こしサービスに音声をアップロードしたところ、結果を2行だけチラ見せされて、「あとは月額課金してね☆」 という仕打ちを受けました。\nお試しテストすら満足にできない初見殺しのUIに直面し、「だったら自分で組むか」と（若干キレ気味に）舵を切りました。\nそこから、Python + ローカルWhisper（mediumモデル） + ChatGPT を組...",
         "category": "開発",
         "rss_category": "",
         "image_url": ""
@@ -644,26 +666,6 @@
         "site": "Zenn(Python)",
         "published": "2026-05-20T00:31:39Z",
         "description": "`uvicorn --workers 4` と `ThreadPoolExecutor(max_workers=4)` は、なぜ同じ『ワーカー』で別の実装を指すのか」「同時ユーザー数千人のサービスが、なぜプール 20 本で平然と動くのか」。FastAPI / SQLAlchemy / PostgreSQL を業務で扱いつつ、これらの問いに根拠を持って答えられない中堅エンジニア向けに、ハードウェア層...",
-        "category": "開発",
-        "rss_category": "",
-        "image_url": ""
-      },
-      {
-        "title": "GCPで始めるデータエンジニアリング入門①：生データをGCSで受け取ってプロファイリングする",
-        "url": "https://zenn.dev/gixo/articles/gcp-de-intro-01-gcs-profiling",
-        "site": "Zenn(Python)",
-        "published": "2026-05-19T23:30:05Z",
-        "description": "はじめに\n「データエンジニアって、実際何をしてるんですか？」\n面接でよく聞かれる質問です。「データ処理基盤を構築しています」とか「データパイプラインを作っています」など色々説明させていただくのですが、具体的にどういう作業なのかはなかなかイメージしにくいと思います。\nこのシリーズでは、Google Cloud（GCP）を使って、公開情報である実際の小売業の売上データを処理するパイプラインを非常に単純...",
-        "category": "開発",
-        "rss_category": "",
-        "image_url": ""
-      },
-      {
-        "title": "微細な有意差を検出する手法 \"PWTAB\" の検証",
-        "url": "https://zenn.dev/dmmdata/articles/e230af2cb91692",
-        "site": "Zenn(Python)",
-        "published": "2026-05-19T22:49:05Z",
-        "description": "はじめに\nはじめまして。DMM.com でデータアナリストをしている小泉です。\n弊社では多くの事業グロース施策を AB テストの形で検証し、有意差検定を用いながら施策の評価を行っています。\nしかし、事業の成熟に伴い、簡単に大きく事業 KPI をリフトさせるような施策はどうしても少なくなってしまいます。\nその結果、従来の検定手法では、評価したい小さな差を統計的に識別しきれない という状況に直面するこ...",
         "category": "開発",
         "rss_category": "",
         "image_url": ""
