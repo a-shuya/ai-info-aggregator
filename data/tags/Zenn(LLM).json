@@ -1,9 +1,129 @@
 {
   "site": "Zenn(LLM)",
-  "last_updated": "2026-05-22T08:03:16.901952",
-  "total_articles": 3506,
+  "last_updated": "2026-05-22T11:15:46.711708",
+  "total_articles": 3522,
   "articles_by_date": {
     "本日": [
+      {
+        "title": "Claude Code拡張を47個試して5個に絞った話 ── 残した理由と捨てた基準",
+        "url": "https://zenn.dev/kenimo49/articles/claude-code-extensions-47-to-5-narrowing",
+        "site": "Zenn(LLM)",
+        "published": "2026-05-22T08:48:45Z",
+        "description": "先週は Skills / MCP / Hooks / Plugins の4つの拡張を用語整理として書きました。今週は実体験編です。\n私は最初、Skill を 47個入れて「47人のアシスタントを雇った」気分でした。実態は「47回 hooks が暴発した」でした。いいねね。\n3か月運用したら、生き残ったのはたった 5個 でした。本記事は、その絞り込みの過程と判定軸を残しておく実践記です。\n\n47個 ...",
+        "category": "AI・技術",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "LLMのハルシネーションを構造的に防ぐプロンプト設計（コードレビューでの実践）",
+        "url": "https://zenn.dev/fukukei23/articles/ai-code-review-prompt-hallucination",
+        "site": "Zenn(LLM)",
+        "published": "2026-05-22T07:34:28Z",
+        "description": "はじめに\nLLMにコードレビューをさせると、もっともらしい評価を返してくれます。しかし、その評価がどれだけ信頼できるかを検証したことはあるでしょうか。\n本記事では、LLMのコードレビュー出力の信頼性を70〜85%まで引き上げる3ステップ手法を紹介します。この手法は、3つのLLM・30ファイルの実検証を通じて設計したものです。\n\n 手法概要：検証駆動プロンプト設計\n核心は**「証拠を要求する前に、証...",
+        "category": "AI・技術",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "【MindLab】RAG は Long Context に駆逐されるのか？2026 年の設計判断",
+        "url": "https://zenn.dev/asayi_megumi/articles/56aba03fe4a9c8",
+        "site": "Zenn(LLM)",
+        "published": "2026-05-22T05:46:21Z",
+        "description": "TL;DR\n\n2026 年現在、「RAG は Long Context に駆逐される」という議論は 半分正しく、半分間違っています\n\n3 アプローチ（RAG / Long Context / Agentic Retrieval）には、それぞれ得意な領域があります\n4 つの問い（ドキュメント量・更新頻度・精度要件・クエリ複雑度）でアーキテクチャを決める 決策ツリー を提案します\n本番では単一手法では...",
+        "category": "AI・技術",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "LLMの拡張標準「MCP (Model Context Protocol)」入門：Pythonでカスタムサーバーを構築する",
+        "url": "https://zenn.dev/fsgesaiyo/articles/3581e5f4a92b6e",
+        "site": "Zenn(LLM)",
+        "published": "2026-05-22T05:35:58Z",
+        "description": "LLMの拡張標準「MCP (Model Context Protocol)」入門：Pythonでカスタムサーバーを構築する\n\n はじめに\nLLM（大規模言語モデル）を活用する上で長年の課題だったのが「外部データとの連携」です。これまで、社内データベースや社内APIの情報をLLMに読み込ませるには、各プラットフォームごとに独自のRAGを構築したり、複雑なプラグインを開発したりする必要がありました。\n...",
+        "category": "AI・技術",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "Azure ガードレールの先 — PyRIT・Red Teaming Agent・Risk & Safety Evaluators・Defe",
+        "url": "https://zenn.dev/headwaters/articles/fb0b48788a914b",
+        "site": "Zenn(LLM)",
+        "published": "2026-05-22T05:23:28Z",
+        "description": "この記事について\n前回 Azure中心で設計するLLMガードレール実践:入力・出力をどこで判定し、どこで止めるか では、Azure AI Content Safety / Azure OpenAI / Foundry / APIM llm-content-safety の runtime ガードレール設計 — つまり本番リクエストが流れている最中にテキストレベルで止める / 検出する層 — を整理...",
+        "category": "AI・技術",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "仕様書に埋もれた「決まっていない意思決定」を、マルチエージェントで炙り出す",
+        "url": "https://zenn.dev/466548/articles/zenn-specify-article-final",
+        "site": "Zenn(LLM)",
+        "published": "2026-05-22T05:08:33Z",
+        "description": "サブタイトル：Microsoft Agent Framework で組んだ Specify の話\n\n この記事で伝えたいこと\n仕様書を書いた。レビューも通った。実装が始まった。\nしかし、実装中にこんな質問が飛んでくる。\n\nデータが0件のときはどう表示しますか?\n権限のないユーザーが画面を開いたら?\nボタンを連打したらどうなりますか?\n\n仕様書には書かれていない。\n書いたつもりだったが、実は決まって...",
+        "category": "AI・技術",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "【2026年最新】Qwen 3.6/3.7 ローカル運用完全ガイド ― 27B/35B-A3B 選定とMTP・TurboQuant攻略",
+        "url": "https://zenn.dev/amu_lab/articles/qwen-3-6-3-7-local-llm-mtp-turboquant-guide-2026",
+        "site": "Zenn(LLM)",
+        "published": "2026-05-22T04:39:35Z",
+        "description": "!\n本記事の前提: 2026年5月19日時点の情報。Qwen 3.7 は Qwen Chat 上に出現していますが、本記事執筆時点で オープンウェイトは未公開 です（後述）。本記事は公開情報・公式ドキュメント・主要ベンチマークブログの一次/二次情報を元に整理しています。ベンチマーク値は出典元の測定値であり、筆者環境での実測ではありません。\n\n\n この記事で分かること\nローカル LLM 界隈で連日ト...",
+        "category": "AI・技術",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "Claude Codeが高すぎるからコスト管理できるVS Code拡張機能を自作した話",
+        "url": "https://zenn.dev/2dachs/articles/8b37c3fa916f8d",
+        "site": "Zenn(LLM)",
+        "published": "2026-05-22T02:10:35Z",
+        "description": "きっかけ：すぐに使い切ってしまうセッション\n私は現在、ペットの記録とサロンなどの店舗をシームレスに繋ぐWebアプリの開発を行っている。以前ブログをやっていたときに簡単にHTMLとかCSSを触った経験があるが、ほぼ素人なので開発にはClaude Codeを使っている。\nMaxプランは高いのでProプランを使っているのだが、プロジェクトの機能が多くなるにつれて5時間のセッション、1週間の制限にすぐに引...",
+        "category": "AI・技術",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "日本語PDFで「Keyword search is all you need」を試す：Agent RAGとVector RAGの精度・コスト",
+        "url": "https://zenn.dev/retrieva_tech/articles/f4386f6b246b34",
+        "site": "Zenn(LLM)",
+        "published": "2026-05-22T01:23:16Z",
+        "description": "AAAI 2026に採択されたAmazonの研究チームの論文 Keyword search is all you need（arXiv:2602.23368）は、「LLMエージェントにシェルコマンドを持たせたキーワード検索によって、管理にコストがかかるベクトルDBを代替しつつも、ベクトルDB RAGの90%程度の精度を出すことが可能」と主張しています。\n論文の評価は英語テキストPDF・Anthro...",
+        "category": "AI・技術",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "Hermes Agentの276ユースケースから考える：AIエージェントはチャットボットから業務インフラへ",
+        "url": "https://zenn.dev/zennai_ryutaro/articles/20260520-hermes-agent-usecases",
+        "site": "Zenn(LLM)",
+        "published": "2026-05-21T22:58:48Z",
+        "description": "はじめに\nXで、Hermes Agentのユースケースを大量にまとめた投稿が流れてきました。\n元投稿はこちらです。\n\nhttps://x.com/InduTripat82427/status/2057017304144298383\n\n投稿のタイトルは、ざっくり訳すと「Hermes Agentの276ユースケース：2026年にコミュニティが作っているもの」です。\n元投稿の主張はかなり強いです。\n\n多...",
+        "category": "AI・技術",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "AIが80年の難問を解いた",
+        "url": "https://zenn.dev/lingmu/articles/2026-05-22-openai-discrete-geometry-breakthrough",
+        "site": "Zenn(LLM)",
+        "published": "2026-05-21T22:29:38Z",
+        "description": "AIが80年の難問を解いた\n2026-05-22 | 読了 4分 | #AI #数学 #OpenAI\n「AIはまだ本当の数学はできない」——そう信じていた人は多いはずです。ところが今、OpenAIのモデルが80年間誰も解けなかった純粋数学の難問を打ち破り、数学界の常識を根底から揺さぶっています。\n\n\n 80年間、誰も解けなかった問題\n1940年代から数学者を悩ませてきた問題があります。「単位距離問...",
+        "category": "AI・技術",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "antirez/ds4 で DeepSeek V4 Flash を M5 Max ローカルに立てる",
+        "url": "https://zenn.dev/kamo78/articles/ds4-m5max-setup",
+        "site": "Zenn(LLM)",
+        "published": "2026-05-21T22:08:18Z",
+        "description": "この記事の概要\n\n\nantirez/ds4 は DeepSeek V4 Flash 専用の小さなネイティブ推論エンジン（Metal / CUDA バックエンド）。\nM5 Max / 128GB ユニファイドメモリで DeepSeek-V4-Flash-IQ2XXS-w2Q2K-AProjQ8-SExpQ8-OutQ8 (約 81GB) を載せて検証。\n\nデコード 34 tok/s、TTFT 197...",
+        "category": "AI・技術",
+        "rss_category": "",
+        "image_url": ""
+      },
       {
         "title": "AI Daily Digest: 2026-05-22",
         "url": "https://zenn.dev/kd_agentic/articles/ai-daily-digest-20260522",
@@ -97,36 +217,6 @@
         "image_url": ""
       },
       {
-        "title": "製造業RAGの本番運用設計：Evals・Observability・Fallback【コード付き】",
-        "url": "https://zenn.dev/kukyotolab/articles/llm_production_ops",
-        "site": "Zenn(LLM)",
-        "published": "2026-05-21T10:41:33Z",
-        "description": "製造業RAGを本番で動かすための運用設計：Evals・Observability・Prompt Versioning・Fallback【コード付き】\n\n はじめに\n製造業向けRAGシリーズの第6弾です。\n第1弾（設計編）から第5弾（3プロバイダー比較編）を通じて、ACL-aware retrieval・Prompt Injection防御・監査ログ・再インデックスという「守り」の実装を積み上げてき...",
-        "category": "AI・技術",
-        "rss_category": "",
-        "image_url": ""
-      },
-      {
-        "title": "継続事前学習(CPT)とファインチューニング(FT)は何が違うのか   ── 実装目線で見る決定的な3点",
-        "url": "https://zenn.dev/aiden_ai/articles/af2df0c43ba929",
-        "site": "Zenn(LLM)",
-        "published": "2026-05-21T10:40:34Z",
-        "description": "はじめに\n「ドメイン知識をファインチューニングで覚えさせます」── AI 案件のミーティングでこういう発言を聞いたことがあるエンジニアは多いと思います。\nここで違和感を持てるかどうかは、LLM の学習方式に踏み込んだ経験があるかで分かれます。実際、ファインチューニング (FT) と 継続事前学習 (CPT: Continual Pre-Training) は、目的も実装も別物なのですが、現場では両...",
-        "category": "AI・技術",
-        "rss_category": "",
-        "image_url": ""
-      },
-      {
-        "title": "LLM解説シリーズ：Self-Attentionを数式と実装から理解する",
-        "url": "https://zenn.dev/kas_blog/articles/20260509-llm-06-self-attention",
-        "site": "Zenn(LLM)",
-        "published": "2026-05-21T09:58:28Z",
-        "description": "はじめに\nこの記事は、以下の論文を読んだ技術メモです。\n\n論文タイトル: Attention Is All You Need\n論文リンク: https://arxiv.org/abs/1706.03762\n\n著者: Ashish Vaswani, Noam Shazeer, Niki Parmar, Jakob Uszkoreit, Llion Jones, Aidan N. Gomez, Luk...",
-        "category": "AI・技術",
-        "rss_category": "",
-        "image_url": ""
-      },
-      {
         "title": "iPhone にローカル LLM 載せようとして、 結局 Apple Foundation Models に戻った話",
         "url": "https://zenn.dev/kitadesign/articles/iphone-local-llm-back-to-afm",
         "site": "Zenn(LLM)",
@@ -192,16 +282,6 @@
         "site": "Zenn(LLM)",
         "published": "2026-05-21T03:01:06Z",
         "description": "はじめに\nこれまで、Zennで2つの記事を公開してきました。\n\nClaude Code CLIをGLM（Z.AI）で代替した話（コスト大幅削減の実測）\nClaude Code CLIにMiniMaxをフォールバックとして組み込んだ話\n\n第1弾ではコストの比較、第2弾ではフォールバックの仕組みを解説しました。しかし、「実際に使い続けてどうだったのか」という実運用の生の声については、十分に触れられてい...",
-        "category": "AI・技術",
-        "rss_category": "",
-        "image_url": ""
-      },
-      {
-        "title": "Snowflake Cortex AIで非構造データパイプラインを作る ― PDFの自動取り込みからチャンク化まで全コード解説",
-        "url": "https://zenn.dev/sunaaaap/articles/1926f89b98358e",
-        "site": "Zenn(LLM)",
-        "published": "2026-05-21T03:00:08Z",
-        "description": "はじめに\n「社内ドキュメントを Snowflake に蓄積して自然言語で検索したい。でも、外部のベクトル DB やインフラを用意するのは大変…」\n本記事では、Snowflake Cortex AI を使って PDF ドキュメントを自動的に取り込み・解析・チャンク化してテーブルに格納するまでの非構造データパイプラインを構築した PoC の内容をまとめます。外部サービスは一切不要で、SQL と Pyt...",
         "category": "AI・技術",
         "rss_category": "",
         "image_url": ""
@@ -491,6 +571,126 @@
     ],
     "2026-05": [
       {
+        "title": "Claude Code拡張を47個試して5個に絞った話 ── 残した理由と捨てた基準",
+        "url": "https://zenn.dev/kenimo49/articles/claude-code-extensions-47-to-5-narrowing",
+        "site": "Zenn(LLM)",
+        "published": "2026-05-22T08:48:45Z",
+        "description": "先週は Skills / MCP / Hooks / Plugins の4つの拡張を用語整理として書きました。今週は実体験編です。\n私は最初、Skill を 47個入れて「47人のアシスタントを雇った」気分でした。実態は「47回 hooks が暴発した」でした。いいねね。\n3か月運用したら、生き残ったのはたった 5個 でした。本記事は、その絞り込みの過程と判定軸を残しておく実践記です。\n\n47個 ...",
+        "category": "AI・技術",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "LLMのハルシネーションを構造的に防ぐプロンプト設計（コードレビューでの実践）",
+        "url": "https://zenn.dev/fukukei23/articles/ai-code-review-prompt-hallucination",
+        "site": "Zenn(LLM)",
+        "published": "2026-05-22T07:34:28Z",
+        "description": "はじめに\nLLMにコードレビューをさせると、もっともらしい評価を返してくれます。しかし、その評価がどれだけ信頼できるかを検証したことはあるでしょうか。\n本記事では、LLMのコードレビュー出力の信頼性を70〜85%まで引き上げる3ステップ手法を紹介します。この手法は、3つのLLM・30ファイルの実検証を通じて設計したものです。\n\n 手法概要：検証駆動プロンプト設計\n核心は**「証拠を要求する前に、証...",
+        "category": "AI・技術",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "【MindLab】RAG は Long Context に駆逐されるのか？2026 年の設計判断",
+        "url": "https://zenn.dev/asayi_megumi/articles/56aba03fe4a9c8",
+        "site": "Zenn(LLM)",
+        "published": "2026-05-22T05:46:21Z",
+        "description": "TL;DR\n\n2026 年現在、「RAG は Long Context に駆逐される」という議論は 半分正しく、半分間違っています\n\n3 アプローチ（RAG / Long Context / Agentic Retrieval）には、それぞれ得意な領域があります\n4 つの問い（ドキュメント量・更新頻度・精度要件・クエリ複雑度）でアーキテクチャを決める 決策ツリー を提案します\n本番では単一手法では...",
+        "category": "AI・技術",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "LLMの拡張標準「MCP (Model Context Protocol)」入門：Pythonでカスタムサーバーを構築する",
+        "url": "https://zenn.dev/fsgesaiyo/articles/3581e5f4a92b6e",
+        "site": "Zenn(LLM)",
+        "published": "2026-05-22T05:35:58Z",
+        "description": "LLMの拡張標準「MCP (Model Context Protocol)」入門：Pythonでカスタムサーバーを構築する\n\n はじめに\nLLM（大規模言語モデル）を活用する上で長年の課題だったのが「外部データとの連携」です。これまで、社内データベースや社内APIの情報をLLMに読み込ませるには、各プラットフォームごとに独自のRAGを構築したり、複雑なプラグインを開発したりする必要がありました。\n...",
+        "category": "AI・技術",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "Azure ガードレールの先 — PyRIT・Red Teaming Agent・Risk & Safety Evaluators・Defe",
+        "url": "https://zenn.dev/headwaters/articles/fb0b48788a914b",
+        "site": "Zenn(LLM)",
+        "published": "2026-05-22T05:23:28Z",
+        "description": "この記事について\n前回 Azure中心で設計するLLMガードレール実践:入力・出力をどこで判定し、どこで止めるか では、Azure AI Content Safety / Azure OpenAI / Foundry / APIM llm-content-safety の runtime ガードレール設計 — つまり本番リクエストが流れている最中にテキストレベルで止める / 検出する層 — を整理...",
+        "category": "AI・技術",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "仕様書に埋もれた「決まっていない意思決定」を、マルチエージェントで炙り出す",
+        "url": "https://zenn.dev/466548/articles/zenn-specify-article-final",
+        "site": "Zenn(LLM)",
+        "published": "2026-05-22T05:08:33Z",
+        "description": "サブタイトル：Microsoft Agent Framework で組んだ Specify の話\n\n この記事で伝えたいこと\n仕様書を書いた。レビューも通った。実装が始まった。\nしかし、実装中にこんな質問が飛んでくる。\n\nデータが0件のときはどう表示しますか?\n権限のないユーザーが画面を開いたら?\nボタンを連打したらどうなりますか?\n\n仕様書には書かれていない。\n書いたつもりだったが、実は決まって...",
+        "category": "AI・技術",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "【2026年最新】Qwen 3.6/3.7 ローカル運用完全ガイド ― 27B/35B-A3B 選定とMTP・TurboQuant攻略",
+        "url": "https://zenn.dev/amu_lab/articles/qwen-3-6-3-7-local-llm-mtp-turboquant-guide-2026",
+        "site": "Zenn(LLM)",
+        "published": "2026-05-22T04:39:35Z",
+        "description": "!\n本記事の前提: 2026年5月19日時点の情報。Qwen 3.7 は Qwen Chat 上に出現していますが、本記事執筆時点で オープンウェイトは未公開 です（後述）。本記事は公開情報・公式ドキュメント・主要ベンチマークブログの一次/二次情報を元に整理しています。ベンチマーク値は出典元の測定値であり、筆者環境での実測ではありません。\n\n\n この記事で分かること\nローカル LLM 界隈で連日ト...",
+        "category": "AI・技術",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "Claude Codeが高すぎるからコスト管理できるVS Code拡張機能を自作した話",
+        "url": "https://zenn.dev/2dachs/articles/8b37c3fa916f8d",
+        "site": "Zenn(LLM)",
+        "published": "2026-05-22T02:10:35Z",
+        "description": "きっかけ：すぐに使い切ってしまうセッション\n私は現在、ペットの記録とサロンなどの店舗をシームレスに繋ぐWebアプリの開発を行っている。以前ブログをやっていたときに簡単にHTMLとかCSSを触った経験があるが、ほぼ素人なので開発にはClaude Codeを使っている。\nMaxプランは高いのでProプランを使っているのだが、プロジェクトの機能が多くなるにつれて5時間のセッション、1週間の制限にすぐに引...",
+        "category": "AI・技術",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "日本語PDFで「Keyword search is all you need」を試す：Agent RAGとVector RAGの精度・コスト",
+        "url": "https://zenn.dev/retrieva_tech/articles/f4386f6b246b34",
+        "site": "Zenn(LLM)",
+        "published": "2026-05-22T01:23:16Z",
+        "description": "AAAI 2026に採択されたAmazonの研究チームの論文 Keyword search is all you need（arXiv:2602.23368）は、「LLMエージェントにシェルコマンドを持たせたキーワード検索によって、管理にコストがかかるベクトルDBを代替しつつも、ベクトルDB RAGの90%程度の精度を出すことが可能」と主張しています。\n論文の評価は英語テキストPDF・Anthro...",
+        "category": "AI・技術",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "Hermes Agentの276ユースケースから考える：AIエージェントはチャットボットから業務インフラへ",
+        "url": "https://zenn.dev/zennai_ryutaro/articles/20260520-hermes-agent-usecases",
+        "site": "Zenn(LLM)",
+        "published": "2026-05-21T22:58:48Z",
+        "description": "はじめに\nXで、Hermes Agentのユースケースを大量にまとめた投稿が流れてきました。\n元投稿はこちらです。\n\nhttps://x.com/InduTripat82427/status/2057017304144298383\n\n投稿のタイトルは、ざっくり訳すと「Hermes Agentの276ユースケース：2026年にコミュニティが作っているもの」です。\n元投稿の主張はかなり強いです。\n\n多...",
+        "category": "AI・技術",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "AIが80年の難問を解いた",
+        "url": "https://zenn.dev/lingmu/articles/2026-05-22-openai-discrete-geometry-breakthrough",
+        "site": "Zenn(LLM)",
+        "published": "2026-05-21T22:29:38Z",
+        "description": "AIが80年の難問を解いた\n2026-05-22 | 読了 4分 | #AI #数学 #OpenAI\n「AIはまだ本当の数学はできない」——そう信じていた人は多いはずです。ところが今、OpenAIのモデルが80年間誰も解けなかった純粋数学の難問を打ち破り、数学界の常識を根底から揺さぶっています。\n\n\n 80年間、誰も解けなかった問題\n1940年代から数学者を悩ませてきた問題があります。「単位距離問...",
+        "category": "AI・技術",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "antirez/ds4 で DeepSeek V4 Flash を M5 Max ローカルに立てる",
+        "url": "https://zenn.dev/kamo78/articles/ds4-m5max-setup",
+        "site": "Zenn(LLM)",
+        "published": "2026-05-21T22:08:18Z",
+        "description": "この記事の概要\n\n\nantirez/ds4 は DeepSeek V4 Flash 専用の小さなネイティブ推論エンジン（Metal / CUDA バックエンド）。\nM5 Max / 128GB ユニファイドメモリで DeepSeek-V4-Flash-IQ2XXS-w2Q2K-AProjQ8-SExpQ8-OutQ8 (約 81GB) を載せて検証。\n\nデコード 34 tok/s、TTFT 197...",
+        "category": "AI・技術",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
         "title": "AI Daily Digest: 2026-05-22",
         "url": "https://zenn.dev/kd_agentic/articles/ai-daily-digest-20260522",
         "site": "Zenn(LLM)",
@@ -581,36 +781,6 @@
         "image_url": ""
       },
       {
-        "title": "製造業RAGの本番運用設計：Evals・Observability・Fallback【コード付き】",
-        "url": "https://zenn.dev/kukyotolab/articles/llm_production_ops",
-        "site": "Zenn(LLM)",
-        "published": "2026-05-21T10:41:33Z",
-        "description": "製造業RAGを本番で動かすための運用設計：Evals・Observability・Prompt Versioning・Fallback【コード付き】\n\n はじめに\n製造業向けRAGシリーズの第6弾です。\n第1弾（設計編）から第5弾（3プロバイダー比較編）を通じて、ACL-aware retrieval・Prompt Injection防御・監査ログ・再インデックスという「守り」の実装を積み上げてき...",
-        "category": "AI・技術",
-        "rss_category": "",
-        "image_url": ""
-      },
-      {
-        "title": "継続事前学習(CPT)とファインチューニング(FT)は何が違うのか   ── 実装目線で見る決定的な3点",
-        "url": "https://zenn.dev/aiden_ai/articles/af2df0c43ba929",
-        "site": "Zenn(LLM)",
-        "published": "2026-05-21T10:40:34Z",
-        "description": "はじめに\n「ドメイン知識をファインチューニングで覚えさせます」── AI 案件のミーティングでこういう発言を聞いたことがあるエンジニアは多いと思います。\nここで違和感を持てるかどうかは、LLM の学習方式に踏み込んだ経験があるかで分かれます。実際、ファインチューニング (FT) と 継続事前学習 (CPT: Continual Pre-Training) は、目的も実装も別物なのですが、現場では両...",
-        "category": "AI・技術",
-        "rss_category": "",
-        "image_url": ""
-      },
-      {
-        "title": "LLM解説シリーズ：Self-Attentionを数式と実装から理解する",
-        "url": "https://zenn.dev/kas_blog/articles/20260509-llm-06-self-attention",
-        "site": "Zenn(LLM)",
-        "published": "2026-05-21T09:58:28Z",
-        "description": "はじめに\nこの記事は、以下の論文を読んだ技術メモです。\n\n論文タイトル: Attention Is All You Need\n論文リンク: https://arxiv.org/abs/1706.03762\n\n著者: Ashish Vaswani, Noam Shazeer, Niki Parmar, Jakob Uszkoreit, Llion Jones, Aidan N. Gomez, Luk...",
-        "category": "AI・技術",
-        "rss_category": "",
-        "image_url": ""
-      },
-      {
         "title": "iPhone にローカル LLM 載せようとして、 結局 Apple Foundation Models に戻った話",
         "url": "https://zenn.dev/kitadesign/articles/iphone-local-llm-back-to-afm",
         "site": "Zenn(LLM)",
@@ -676,16 +846,6 @@
         "site": "Zenn(LLM)",
         "published": "2026-05-21T03:01:06Z",
         "description": "はじめに\nこれまで、Zennで2つの記事を公開してきました。\n\nClaude Code CLIをGLM（Z.AI）で代替した話（コスト大幅削減の実測）\nClaude Code CLIにMiniMaxをフォールバックとして組み込んだ話\n\n第1弾ではコストの比較、第2弾ではフォールバックの仕組みを解説しました。しかし、「実際に使い続けてどうだったのか」という実運用の生の声については、十分に触れられてい...",
-        "category": "AI・技術",
-        "rss_category": "",
-        "image_url": ""
-      },
-      {
-        "title": "Snowflake Cortex AIで非構造データパイプラインを作る ― PDFの自動取り込みからチャンク化まで全コード解説",
-        "url": "https://zenn.dev/sunaaaap/articles/1926f89b98358e",
-        "site": "Zenn(LLM)",
-        "published": "2026-05-21T03:00:08Z",
-        "description": "はじめに\n「社内ドキュメントを Snowflake に蓄積して自然言語で検索したい。でも、外部のベクトル DB やインフラを用意するのは大変…」\n本記事では、Snowflake Cortex AI を使って PDF ドキュメントを自動的に取り込み・解析・チャンク化してテーブルに格納するまでの非構造データパイプラインを構築した PoC の内容をまとめます。外部サービスは一切不要で、SQL と Pyt...",
         "category": "AI・技術",
         "rss_category": "",
         "image_url": ""
