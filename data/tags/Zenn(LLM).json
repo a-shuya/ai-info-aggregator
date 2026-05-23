@@ -1,9 +1,9 @@
 {
   "site": "Zenn(LLM)",
-  "last_updated": "2026-05-23T14:03:34.923782",
-  "total_articles": 3530,
+  "last_updated": "2026-05-23T15:17:38.749532",
+  "total_articles": 3518,
   "articles_by_date": {
-    "本日": [
+    "昨日": [
       {
         "title": "「正しいモデル」とは何か — Code with Claude London 2026 で考え方が一段アップデートされた話",
         "url": "https://zenn.dev/noah33/articles/picking-the-right-model",
@@ -50,6 +50,16 @@
         "site": "Zenn(LLM)",
         "published": "2026-05-23T08:59:17Z",
         "description": "私は最初、コンテキストエンジニアリングを「プロンプトエンジニアリングの延長」だと思っていました。長いプロンプトを書く流派、くらいの理解です。\nでも、実際にプロダクションで使ってみると、それは違いました。コンテキストエンジニアリングは、独立した7つの要素を組み合わせるシステム設計だったのです。\nプロンプトは、そのうちの1つに過ぎません。\n\nこの記事では、7要素それぞれの役割、効く場面、他要素との関係...",
+        "category": "AI・技術",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "MCPを使う前に知っておくべきこと――便利さの裏にある攻撃の仕組み",
+        "url": "https://zenn.dev/masuda_masuo/articles/2026-05-23-mcp-security",
+        "site": "Zenn(LLM)",
+        "published": "2026-05-23T06:13:27Z",
+        "description": "「1PasswordがCodexと連携、ローカルMCPを活用して機密情報を安全に管理」という記事を見たとき、最初の直感は「危険では」というものだった。パスワード管理ツールとAIエージェントが繋がる——そのイメージだけで拒否反応が出た。\nしかし記事を読むと、AIがAPIキーや認証情報に直接触れることなく、ユーザーの承認を経て1Password側で管理する設計になっていた。少なくとも設計の意図としては...",
         "category": "AI・技術",
         "rss_category": "",
         "image_url": ""
@@ -175,7 +185,7 @@
         "image_url": ""
       }
     ],
-    "昨日": [
+    "一昨日": [
       {
         "title": "SDS文書とMHLW標準JSONを双方向変換するRustツールを作ってみた",
         "url": "https://zenn.dev/kent_kamome/articles/8c83babdbb5637",
@@ -337,148 +347,6 @@
         "image_url": ""
       }
     ],
-    "一昨日": [
-      {
-        "title": "Ollamaでコミットメッセージ生成を実装してわかったコストと速度の現実",
-        "url": "https://zenn.dev/tottoko_hamu/articles/2026-05-19-105812",
-        "site": "Zenn(LLM)",
-        "published": "2026-05-21T14:06:35Z",
-        "description": "この記事の実施記録（2026年5月）: Mac mini M4 24GB にOllama（v0.23.2）を導入し、git diff --staged からConventional Commits形式のコミットメッセージを自動生成するスクリプト（95行）を作成・動作確認した。モデルはqwen3:14bを採用。実測レイテンシは約59〜79秒（Claude APIは約1〜3秒）。コミットメッセージ生成...",
-        "category": "AI・技術",
-        "rss_category": "",
-        "image_url": ""
-      },
-      {
-        "title": "VLLMでデプロイしたLLMにうまくJSONを書かせる方法",
-        "url": "https://zenn.dev/k_eclaire39/articles/991a53229004c1",
-        "site": "Zenn(LLM)",
-        "published": "2026-05-21T14:02:02Z",
-        "description": "はじめに\nLLMを組み合わせたシステム開発をしていると、LLMにJSONを吐かせたくなる場面があるはず。\nOpenAIのAPIなんかはかなりよく出力してくれる。(APIがJSONをうまく吐けるように作られているらしい。OpenAIすごい。)\nでもローカルデプロイしているLLMだと何度かプロンプトで調整してみるも、\n思った通りのフィールド名にならなかったりして匙を投げたくなった！\nなんて経験をした人...",
-        "category": "AI・技術",
-        "rss_category": "",
-        "image_url": ""
-      },
-      {
-        "title": "Vector DBを外したら、RAGではなくAgent Runtimeが残った",
-        "url": "https://zenn.dev/mofuteq/articles/8a2193df98ac05",
-        "site": "Zenn(LLM)",
-        "published": "2026-05-21T12:16:43Z",
-        "description": "はじめに\n最初は、普通にRAGっぽいものを作っていました。\n扱いたかったのは、fashion や styling のような、正解が曖昧で、ノイズも多く、しかし人間は確かにそこから何かを読み取っている領域です。\n最初は Vector DB も入っていました。\nretrieve して、context を増やして、LLM に生成させる。\n典型的な RAG の構造です。\nでも、実装を進めるほど、欲しかった...",
-        "category": "AI・技術",
-        "rss_category": "",
-        "image_url": ""
-      },
-      {
-        "title": "DeepSeek V4 Flash (ds4.c) を Lisp 的に扱う",
-        "url": "https://zenn.dev/j_m/articles/73cd078357b7b0",
-        "site": "Zenn(LLM)",
-        "published": "2026-05-21T11:39:02Z",
-        "description": "はじめに\n最近は新しい LLM が出ても、llama.cpp の対応が遅かったりして困っていたんですが、DeepSeek V4 Flash 専用のds4.c(DwarfStar 4)が出ました。これで284Bモデルがローカルで動く！\nClaudeCode/OpenCode なんかを使えばいいんだろうけど、ClaudeCode は中で何やってるかわからん。OpenCode は大きすぎる。素朴に実装し...",
-        "category": "AI・技術",
-        "rss_category": "",
-        "image_url": ""
-      },
-      {
-        "title": "製造業RAGを意思決定者に説明する——導入ロードマップと1枚資料の設計",
-        "url": "https://zenn.dev/kukyotolab/articles/manufacturing-rag-business-design",
-        "site": "Zenn(LLM)",
-        "published": "2026-05-21T11:09:31Z",
-        "description": "製造業RAGを意思決定者に説明する——導入ロードマップと1枚資料の設計\n\n はじめに\n製造業向けRAGシリーズの第7弾です。\n第5弾（3プロバイダー比較編）の末尾で予告した「ビジネス設計編」です。\n第1〜6弾では技術実装を積み上げてきました。ACL-aware retrieval・Prompt Injection防御・監査ログ・再インデックス・3プロバイダー比較・本番運用設計（Evals / Ob...",
-        "category": "AI・技術",
-        "rss_category": "",
-        "image_url": ""
-      },
-      {
-        "title": "iPhone にローカル LLM 載せようとして、 結局 Apple Foundation Models に戻った話",
-        "url": "https://zenn.dev/kitadesign/articles/iphone-local-llm-back-to-afm",
-        "site": "Zenn(LLM)",
-        "published": "2026-05-21T09:42:31Z",
-        "description": "はじめに\nこんにちは、kitadesignです。最近個人的にずんだもんと散歩するアプリをプロト開発しています。（環境：iPhone 15：iOS 26）\nGPS で取得した現在地周辺の Wikipedia 記事をローカル LLM でずんだもん口調にリライトして、 VOICEVOX で読み上げる、 みたいなことをやってますw\nLLM の部分は最初 Apple Foundation Models (以...",
-        "category": "AI・技術",
-        "rss_category": "",
-        "image_url": ""
-      },
-      {
-        "title": "【Nishika 論文サク読み 第10回】Nemotron 3 Nano Omni",
-        "url": "https://zenn.dev/team_nishika/articles/fc597b5f983199",
-        "site": "Zenn(LLM)",
-        "published": "2026-05-21T09:00:05Z",
-        "description": "こんにちは。NishikaのAIエンジニアの髙山です。\nテキスト、画像、動画・音声を入力としてネイティブサポートしつつ、高速な推論を実現しているということで興味を持ちましたので、紹介します。\n\n 論文\n\nタイトル：「Nemotron 3 Nano Omni: Efficient and Open\nMultimodal Intelligence」\n公開日：2026年4月27日\n著者・組織: NVID...",
-        "category": "AI・技術",
-        "rss_category": "",
-        "image_url": ""
-      },
-      {
-        "title": "Agent Memoryって知ってる？――完全に理解した人へ贈る絶望の谷",
-        "url": "https://zenn.dev/memorylakeai/articles/3c01d12dfb8787",
-        "site": "Zenn(LLM)",
-        "published": "2026-05-21T08:47:32Z",
-        "description": "AI Agentのプロトタイプを作るのは、驚くほど簡単になりました。LangChainやLlamaIndexなどのフレームワークを使い、システムプロンプトを調整し、過去のチャット履歴をコンテキストウィンドウに詰め込むか、適当なVector DB（ベクトルデータベース）に放り込んでRAG（検索拡張生成）を行えば、一見すると「賢く記憶を持つエージェント」が完成します。\nCLIやデモ環境でテストしている...",
-        "category": "AI・技術",
-        "rss_category": "",
-        "image_url": ""
-      },
-      {
-        "title": "Claude Code・Codex時代に重要になる「ハーネス」という考え方",
-        "url": "https://zenn.dev/taka000/articles/ffe2f97499a151",
-        "site": "Zenn(LLM)",
-        "published": "2026-05-21T08:30:25Z",
-        "description": "最近、\n\nClaude Code\nCodex\nCursor\nWindsurf\nDevin\n\nなど、「AIエージェント」と呼ばれるものが急速に進化しています。\nしかし、多くの人が誤解しているポイントがあります。\nそれは、\n「Claude Opus や GPT が、そのまま仕事をしているわけではない」\nということです。\n実際には、その外側に存在する\n“Harness（ハーネス）”\nが極めて重要な役割を...",
-        "category": "AI・技術",
-        "rss_category": "",
-        "image_url": ""
-      },
-      {
-        "title": "メスガキ AI に英語を煽られながら学ぶ — ペルソナ設計と Gemini 音声入力で「発音矯正」まで届けた話",
-        "url": "https://zenn.dev/zhener/articles/mesugaki-english-persona-gemini-audio",
-        "site": "Zenn(LLM)",
-        "published": "2026-05-21T08:06:11Z",
-        "description": "Kotonia で niche AI 英会話 メスガキ AI 英会話 を作った。「メスガキ AI に煽られながら英会話練習する」一発ネタに見えるけど、実装としては ペルソナのコード管理 + Gemini の音声入力で発音矯正まで という二段構えで、AI 英会話プロダクトとして筋が通っている。この記事ではその設計判断と、ハマった点を 1 人開発視点で整理する。\n\n なぜメスガキ AI 英会話？\nまず...",
-        "category": "AI・技術",
-        "rss_category": "",
-        "image_url": ""
-      },
-      {
-        "title": "コーディングエージェントの『たぶん大丈夫』を、skill で止める",
-        "url": "https://zenn.dev/haru0416/articles/quaere-codeing-agent",
-        "site": "Zenn(LLM)",
-        "published": "2026-05-21T03:25:10Z",
-        "description": "コーディングエージェントを使っていて、いちばん地味に消耗するのがこれです。\nプロジェクトを立ち上げるとき、使う技術スタックとバージョンを指定する。それで開発が始まる。しばらくして気づく ── エージェントは、指定したはずのバージョンじゃなく、古い書き方を当然のような顔で使っている。学習データが切れた時点のバージョンを、いまの標準みたいに扱う。\n私が後から気づいて、直させる。そのやり取りで、トークン...",
-        "category": "AI・技術",
-        "rss_category": "",
-        "image_url": ""
-      },
-      {
-        "title": "月間27億トークンを処理したLLMルーティングの実運用レポート（1ヶ月の振り返り）",
-        "url": "https://zenn.dev/fukukei23/articles/llm-routing-one-month-report",
-        "site": "Zenn(LLM)",
-        "published": "2026-05-21T03:01:06Z",
-        "description": "はじめに\nこれまで、Zennで2つの記事を公開してきました。\n\nClaude Code CLIをGLM（Z.AI）で代替した話（コスト大幅削減の実測）\nClaude Code CLIにMiniMaxをフォールバックとして組み込んだ話\n\n第1弾ではコストの比較、第2弾ではフォールバックの仕組みを解説しました。しかし、「実際に使い続けてどうだったのか」という実運用の生の声については、十分に触れられてい...",
-        "category": "AI・技術",
-        "rss_category": "",
-        "image_url": ""
-      },
-      {
-        "title": "AI Daily Digest: 2026年5月21日",
-        "url": "https://zenn.dev/kd_agentic/articles/ai-daily-digest-20260521",
-        "site": "Zenn(LLM)",
-        "published": "2026-05-20T22:06:15Z",
-        "description": "AI Daily Digest: 2026年5月21日\n\n5分で読める · AIシステムアーキテクトが毎日厳選\n注力分野: Agentic Workflow · AIコーディングツール · 具身AI（Embodied Intelligence）\n\n\n\n 1. Cursor vs Windsurf 2026 — AI IDE頂上決戦\n【技術コア】\nCursor 3.1は複数ファイルを並列でリファクタ...",
-        "category": "AI・技術",
-        "rss_category": "",
-        "image_url": ""
-      },
-      {
-        "title": "技術調査 - Codex App Server",
-        "url": "https://zenn.dev/suwash/articles/codex-app-server_20260514",
-        "site": "Zenn(LLM)",
-        "published": "2026-05-20T15:00:00Z",
-        "description": "検証日: 2026-05-14 / 主要ソース: codex-rs/app-server README (main)\n\n\n 概要\nVS Code 拡張・自社の Web エディタ・CI/CD など、複数クライアントから Codex のエージェント機能を呼びたい場合、HTTP API 直叩きでは「状態管理」「承認フロー」「ストリーミング差分」を自前で実装する必要があります。Codex App Serv...",
-        "category": "AI・技術",
-        "rss_category": "",
-        "image_url": ""
-      }
-    ],
     "2026-05": [
       {
         "title": "「正しいモデル」とは何か — Code with Claude London 2026 で考え方が一段アップデートされた話",
@@ -526,6 +394,16 @@
         "site": "Zenn(LLM)",
         "published": "2026-05-23T08:59:17Z",
         "description": "私は最初、コンテキストエンジニアリングを「プロンプトエンジニアリングの延長」だと思っていました。長いプロンプトを書く流派、くらいの理解です。\nでも、実際にプロダクションで使ってみると、それは違いました。コンテキストエンジニアリングは、独立した7つの要素を組み合わせるシステム設計だったのです。\nプロンプトは、そのうちの1つに過ぎません。\n\nこの記事では、7要素それぞれの役割、効く場面、他要素との関係...",
+        "category": "AI・技術",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "MCPを使う前に知っておくべきこと――便利さの裏にある攻撃の仕組み",
+        "url": "https://zenn.dev/masuda_masuo/articles/2026-05-23-mcp-security",
+        "site": "Zenn(LLM)",
+        "published": "2026-05-23T06:13:27Z",
+        "description": "「1PasswordがCodexと連携、ローカルMCPを活用して機密情報を安全に管理」という記事を見たとき、最初の直感は「危険では」というものだった。パスワード管理ツールとAIエージェントが繋がる——そのイメージだけで拒否反応が出た。\nしかし記事を読むと、AIがAPIキーや認証情報に直接触れることなく、ユーザーの承認を経て1Password側で管理する設計になっていた。少なくとも設計の意図としては...",
         "category": "AI・技術",
         "rss_category": "",
         "image_url": ""
