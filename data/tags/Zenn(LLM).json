@@ -1,9 +1,39 @@
 {
   "site": "Zenn(LLM)",
-  "last_updated": "2026-05-25T06:09:44.232997",
+  "last_updated": "2026-05-25T10:48:34.308865",
   "total_articles": 3577,
   "articles_by_date": {
     "本日": [
+      {
+        "title": "Cursor Agent × Rubydex MCP 本当にトークン節約になる？ Rails モノリスで検証してみた",
+        "url": "https://zenn.dev/hubble/articles/623499787700aa",
+        "site": "Zenn(LLM)",
+        "published": "2026-05-25T01:16:51Z",
+        "description": "こんにちは！\nHubble でバックエンドエンジニアをしている @koyakota です！\nRubyKaigi 2026 で取り上げられた Rubydex、Cursor の Agent からも使えるらしいので試してみました。\nトークンは減るのか、Rails モノリスで検証してみました。\n\n はじめに\nRubyKaigi 2026 で Shopify の Alexandre Terrasa さんによ...",
+        "category": "AI・技術",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "社内の知見をAIが漏らさず拾う唯一の設計思想 ― Karpathy氏のLLM Wikiを実践して分かったこと",
+        "url": "https://zenn.dev/nori_handa/articles/llm-knowledge-base-karpathy-wiki",
+        "site": "Zenn(LLM)",
+        "published": "2026-05-25T00:44:18Z",
+        "description": "健適文化という会社をやっています。社内ドキュメントが散らかって検索できない、AIに聞いてもまともな答えが返ってこない、そういう課題に対して、会社のナレッジベースをゼロから構築するお手伝いをしています。この記事はその過程で得た知見をまとめたものです。\n\n 先に結論\n社内ドキュメントをベクトルDBに突っ込んでRAGを組んだのに精度が出ない、という問題の原因は「入れ方」にあります。生のドキュメントをその...",
+        "category": "AI・技術",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "claude の AI エージェントチームに Codex を迎えた話 ── ステートフル混合チームのオンボーディング作法と整備リスト",
+        "url": "https://zenn.dev/i_ichi/articles/multiagent-llm-onboarding-handbook",
+        "site": "Zenn(LLM)",
+        "published": "2026-05-25T00:05:55Z",
+        "description": "!\nライター AI である私 (W1) が、オーケストレータ AI (W2) へ取材して書いたものです。事実は公開ログと一次資料 (公式 docs / チーム名簿 / 出力ログ) で裏取りしましたが、解釈や再構成の偏りは W1 の主観によります。\n\nマルチエージェントのチームに Codex を新たに迎え入れた朝、実装は完璧だった。完遂作法は 4 つ全部漏れていた。\nClaude Code でマルチ...",
+        "category": "AI・技術",
+        "rss_category": "",
+        "image_url": ""
+      },
       {
         "title": "AtCoder 2818問をGPT-5.5に分析させて、テクニック体系をまとめた",
         "url": "https://zenn.dev/ohatakenji/articles/8e67ede9d522ff",
@@ -167,26 +197,6 @@
         "image_url": ""
       },
       {
-        "title": "LLMワークフローにおける決定論という罠",
-        "url": "https://zenn.dev/shuymn/articles/8af25a9e35ec27",
-        "site": "Zenn(LLM)",
-        "published": "2026-05-24T08:55:58Z",
-        "description": "LLMワークフローは、非決定論から決定論への分離が本当に正解なのでしょうか？\n自分が触っているLLM-to-LLMワークフローでは、PoCを作り、あとからschema、validation、分岐、retryを足して「ちゃんとしたワークフロー」に作り直すことがあります。ただ、出力を見比べても、何が明確に良くなったのか分からない場面が何度かありました。\nもちろん、決定論化した方が明らかに良い箇所はあり...",
-        "category": "AI・技術",
-        "rss_category": "",
-        "image_url": ""
-      },
-      {
-        "title": "AIエージェントが毎回データを取りに行く設計の限界",
-        "url": "https://zenn.dev/knowledge_graph/articles/kg-agent-memory-first-design",
-        "site": "Zenn(LLM)",
-        "published": "2026-05-24T08:44:07Z",
-        "description": "AIエージェントが毎回データを取りに行く設計の限界\n\nこの記事は独立して読めます（約8分）\n\n以前の記事「MCPの課題とナレッジグラフ」では、MCP/RAGアーキテクチャが抱えるscatter-gather問題（毎回バラバラのシステムに問い合わせて寄せ集める方式）を論じました。また「特許から読むDevRevの思想」では、その背景にある設計思想を特許から読み解きました。本記事ではその設計回答、すなわ...",
-        "category": "AI・技術",
-        "rss_category": "",
-        "image_url": ""
-      },
-      {
         "title": "Cognitive Runtime Architecture: Context Pointer OS (CPOS) の設計",
         "url": "https://zenn.dev/emilia_lab/articles/cpos-cognitive-runtime-architecture",
         "site": "Zenn(LLM)",
@@ -262,16 +272,6 @@
         "site": "Zenn(LLM)",
         "published": "2026-05-24T05:11:35Z",
         "description": "背景\n「AIが生成した回答・SQLが正しいかどうか、ビジネスユーザーには判断しにくい」という問題は、Cortex Analyst/Agentsに限らず、自然言語でAIに問い合わせるあらゆるシステムに共通して存在する構造的な課題である。\n\n 問題の本質：情報の非対称性と検証コスト\nAIは質問をどう解釈し、なぜそのSQLを生成したかを「知っている」。しかしユーザーは結果の数値しか見えない。この情報の非...",
-        "category": "AI・技術",
-        "rss_category": "",
-        "image_url": ""
-      },
-      {
-        "title": "なぜAnthropicはプロンプトにXMLタグを推奨するのか──Markdownとの構造的な違い",
-        "url": "https://zenn.dev/yun_bow/articles/a339e1d31a4c43",
-        "site": "Zenn(LLM)",
-        "published": "2026-05-24T04:37:14Z",
-        "description": "はじめに\n「Markdown で書けばAIが読みやすいはず」——そう思って CLAUDE.md や RAG のソースドキュメントを Markdown で整備してきた人は多いはずだ。\nしかし実際にプロンプトエンジニアリングを突き詰めていくと、システムプロンプトの構造化や RAG のチャンク設計という特定の用途に絞った文脈では、構造が複雑なコンテキストほど HTML や XML ライクな構造で渡したほ...",
         "category": "AI・技術",
         "rss_category": "",
         "image_url": ""
@@ -561,6 +561,36 @@
     ],
     "2026-05": [
       {
+        "title": "Cursor Agent × Rubydex MCP 本当にトークン節約になる？ Rails モノリスで検証してみた",
+        "url": "https://zenn.dev/hubble/articles/623499787700aa",
+        "site": "Zenn(LLM)",
+        "published": "2026-05-25T01:16:51Z",
+        "description": "こんにちは！\nHubble でバックエンドエンジニアをしている @koyakota です！\nRubyKaigi 2026 で取り上げられた Rubydex、Cursor の Agent からも使えるらしいので試してみました。\nトークンは減るのか、Rails モノリスで検証してみました。\n\n はじめに\nRubyKaigi 2026 で Shopify の Alexandre Terrasa さんによ...",
+        "category": "AI・技術",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "社内の知見をAIが漏らさず拾う唯一の設計思想 ― Karpathy氏のLLM Wikiを実践して分かったこと",
+        "url": "https://zenn.dev/nori_handa/articles/llm-knowledge-base-karpathy-wiki",
+        "site": "Zenn(LLM)",
+        "published": "2026-05-25T00:44:18Z",
+        "description": "健適文化という会社をやっています。社内ドキュメントが散らかって検索できない、AIに聞いてもまともな答えが返ってこない、そういう課題に対して、会社のナレッジベースをゼロから構築するお手伝いをしています。この記事はその過程で得た知見をまとめたものです。\n\n 先に結論\n社内ドキュメントをベクトルDBに突っ込んでRAGを組んだのに精度が出ない、という問題の原因は「入れ方」にあります。生のドキュメントをその...",
+        "category": "AI・技術",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "claude の AI エージェントチームに Codex を迎えた話 ── ステートフル混合チームのオンボーディング作法と整備リスト",
+        "url": "https://zenn.dev/i_ichi/articles/multiagent-llm-onboarding-handbook",
+        "site": "Zenn(LLM)",
+        "published": "2026-05-25T00:05:55Z",
+        "description": "!\nライター AI である私 (W1) が、オーケストレータ AI (W2) へ取材して書いたものです。事実は公開ログと一次資料 (公式 docs / チーム名簿 / 出力ログ) で裏取りしましたが、解釈や再構成の偏りは W1 の主観によります。\n\nマルチエージェントのチームに Codex を新たに迎え入れた朝、実装は完璧だった。完遂作法は 4 つ全部漏れていた。\nClaude Code でマルチ...",
+        "category": "AI・技術",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
         "title": "AtCoder 2818問をGPT-5.5に分析させて、テクニック体系をまとめた",
         "url": "https://zenn.dev/ohatakenji/articles/8e67ede9d522ff",
         "site": "Zenn(LLM)",
@@ -721,26 +751,6 @@
         "image_url": ""
       },
       {
-        "title": "LLMワークフローにおける決定論という罠",
-        "url": "https://zenn.dev/shuymn/articles/8af25a9e35ec27",
-        "site": "Zenn(LLM)",
-        "published": "2026-05-24T08:55:58Z",
-        "description": "LLMワークフローは、非決定論から決定論への分離が本当に正解なのでしょうか？\n自分が触っているLLM-to-LLMワークフローでは、PoCを作り、あとからschema、validation、分岐、retryを足して「ちゃんとしたワークフロー」に作り直すことがあります。ただ、出力を見比べても、何が明確に良くなったのか分からない場面が何度かありました。\nもちろん、決定論化した方が明らかに良い箇所はあり...",
-        "category": "AI・技術",
-        "rss_category": "",
-        "image_url": ""
-      },
-      {
-        "title": "AIエージェントが毎回データを取りに行く設計の限界",
-        "url": "https://zenn.dev/knowledge_graph/articles/kg-agent-memory-first-design",
-        "site": "Zenn(LLM)",
-        "published": "2026-05-24T08:44:07Z",
-        "description": "AIエージェントが毎回データを取りに行く設計の限界\n\nこの記事は独立して読めます（約8分）\n\n以前の記事「MCPの課題とナレッジグラフ」では、MCP/RAGアーキテクチャが抱えるscatter-gather問題（毎回バラバラのシステムに問い合わせて寄せ集める方式）を論じました。また「特許から読むDevRevの思想」では、その背景にある設計思想を特許から読み解きました。本記事ではその設計回答、すなわ...",
-        "category": "AI・技術",
-        "rss_category": "",
-        "image_url": ""
-      },
-      {
         "title": "Cognitive Runtime Architecture: Context Pointer OS (CPOS) の設計",
         "url": "https://zenn.dev/emilia_lab/articles/cpos-cognitive-runtime-architecture",
         "site": "Zenn(LLM)",
@@ -816,16 +826,6 @@
         "site": "Zenn(LLM)",
         "published": "2026-05-24T05:11:35Z",
         "description": "背景\n「AIが生成した回答・SQLが正しいかどうか、ビジネスユーザーには判断しにくい」という問題は、Cortex Analyst/Agentsに限らず、自然言語でAIに問い合わせるあらゆるシステムに共通して存在する構造的な課題である。\n\n 問題の本質：情報の非対称性と検証コスト\nAIは質問をどう解釈し、なぜそのSQLを生成したかを「知っている」。しかしユーザーは結果の数値しか見えない。この情報の非...",
-        "category": "AI・技術",
-        "rss_category": "",
-        "image_url": ""
-      },
-      {
-        "title": "なぜAnthropicはプロンプトにXMLタグを推奨するのか──Markdownとの構造的な違い",
-        "url": "https://zenn.dev/yun_bow/articles/a339e1d31a4c43",
-        "site": "Zenn(LLM)",
-        "published": "2026-05-24T04:37:14Z",
-        "description": "はじめに\n「Markdown で書けばAIが読みやすいはず」——そう思って CLAUDE.md や RAG のソースドキュメントを Markdown で整備してきた人は多いはずだ。\nしかし実際にプロンプトエンジニアリングを突き詰めていくと、システムプロンプトの構造化や RAG のチャンク設計という特定の用途に絞った文脈では、構造が複雑なコンテキストほど HTML や XML ライクな構造で渡したほ...",
         "category": "AI・技術",
         "rss_category": "",
         "image_url": ""
