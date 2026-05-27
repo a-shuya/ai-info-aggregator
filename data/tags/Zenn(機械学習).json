@@ -1,9 +1,81 @@
 {
   "site": "Zenn(機械学習)",
-  "last_updated": "2026-05-27T14:03:10.354572",
-  "total_articles": 1113,
+  "last_updated": "2026-05-27T17:32:41.837462",
+  "total_articles": 1118,
   "articles_by_date": {
     "本日": [
+      {
+        "title": "Stochastic Depth（DropPath）を実装したらパラメータ増やさずに精度が約9ポイント上がった【Keras実験】",
+        "url": "https://zenn.dev/wasurenamemo/articles/342e3c0fc1786e",
+        "site": "Zenn(機械学習)",
+        "published": "2026-05-27T15:05:44Z",
+        "description": "ResNeXt・EfficientNet・DeiTなど近年の高精度モデルで広く使われている Stochastic Depth（確率的深度） をご存知でしょうか。\nDropoutはニューロンをランダムにOFFにしますが、Stochastic Depthはブロック（Conv層のグループ）ごとをランダムにスキップします。「Dropoutのブロック版」と言えば直感的にわかりやすいでしょうか。\n今回はKer...",
+        "category": "AI・技術",
+        "rss_category": "",
+        "image_url": ""
+      }
+    ],
+    "昨日": [
+      {
+        "title": "需要予測における打ち切り問題 ⑤実装編・新商品 ＋ 発展編・廃盤商品 ＋ シリーズ総括",
+        "url": "https://zenn.dev/salt2/articles/b20f76df-article",
+        "site": "Zenn(機械学習)",
+        "published": "2026-05-27T10:47:40Z",
+        "description": "!\n3行まとめ\n\nシリーズ最終回は、新商品（履歴なしの難敵） と 廃盤商品（価格・心理・在庫が絡む発展的話題） という、既存商品より一段難しい問題を扱います。\n新商品では「類似商品転移 × 打ち切り補正」の 2 段階法を Python で実装し、さらに PyTorch の Tobit[1] 損失関数を紹介します。\n廃盤商品は価格・在庫・心理が絡み合い、現時点で成熟した解法はありません。生存分析と因...",
+        "category": "AI・技術",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "表形式データ拡張手法 part10：ROSE",
+        "url": "https://zenn.dev/haruto_big6/articles/5e4386a70048d3",
+        "site": "Zenn(機械学習)",
+        "published": "2026-05-27T09:38:39Z",
+        "description": "TL; DR\n\nROSEはRandom Over Sampling (ROS)のようにデータをそのまま複製するのではなく，摂動を加えることで新たなデータ点を生成する\nその摂動はKDEにおけるバンド幅の経験則であるSilvermanのルールに従って標準偏差が定められる正規分布である\n少数クラスデータの拡張ではなく，データセット全体の置換を行うことでデータ活用の柔軟性を向上させる\n\n\n 基本情報\nSM...",
+        "category": "AI・技術",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "【全5回】Graph Neural Networks入門と最前線——GCNの基礎から創薬・不正検知の産業応用まで",
+        "url": "https://zenn.dev/salt2/articles/gnn-introduction-series",
+        "site": "Zenn(機械学習)",
+        "published": "2026-05-27T07:50:12Z",
+        "description": "「グラフ構造のデータを扱いたいけど、GNNってどこから入ればいいかわからない」\n自分が最初にGNNを勉強し始めたとき、ちょうどそういう状態でした。論文を読んでも数式の導出が追えない、チュートリアルのコードは動くけど何をやっているかわからない——そういった経験を経て、「自分が欲しかった入門書」を書いてみようと思い立ったのがこのシリーズのきっかけです。\n全5回のシリーズ 「Graph Neural N...",
+        "category": "AI・技術",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "日本語OCRモデルを比較 ー 速度・性能・メモリから最適解を探る",
+        "url": "https://zenn.dev/acompany/articles/ddf8677f09e252",
+        "site": "Zenn(機械学習)",
+        "published": "2026-05-27T04:41:33Z",
+        "description": "はじめに\nはじめまして、株式会社 Acompany でインターンをしている luna_moonlight です。\n普段は、生成AIに機密情報を入力してしまうリスクを防ぐサービス セキュアチャット の開発に携わっています。\nhttps://service.acompany.tech/cas/secure-chat/\nセキュアチャットは、ユーザーが入力したプロンプトから個人情報（PII）や社内機密情報...",
+        "category": "AI・技術",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "MADL / GMADL lossとは何か：金融時系列予測で「売買に使える損失関数」を考える",
+        "url": "https://zenn.dev/rinn5/articles/madl-gmadl-loss-zenn",
+        "site": "Zenn(機械学習)",
+        "published": "2026-05-27T04:20:47Z",
+        "description": "「金融時系列予測では、とりあえず MSE や MAE を小さくすればいいのでは？」\n最初は自分もそう思っていました。\n機械学習で回帰問題を解くなら、予測値と実際の値の差を小さくするのが自然です。なので、株価やリターンを予測するときも、MSE、MAE、RMSE のような損失関数を使うのが普通に見えます。\nしかし、金融の売買戦略として考えると、少し話が変わってきます。\nたとえば、明日のリターンが実際に...",
+        "category": "AI・技術",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "不均衡データ処理をLightGBMで比較する SMOTE vs アンダーサンプリングアンサンブル",
+        "url": "https://zenn.dev/kyoju_teach/articles/d941b78007bb9b",
+        "site": "Zenn(機械学習)",
+        "published": "2026-05-27T03:52:31Z",
+        "description": "はじめに\n機械学習を実務で扱っていると、高頻度で遭遇するのが「不均衡データ（Imbalanced Data）」です。\n例えば：\n\nクレジットカード不正検知\n課金ユーザー予測\n離脱予測\n障害検知\nBAN対象ユーザー検知\n医療診断\n\nなどでは、「検知したい事象」そのものの発生率が低いケースが非常に多いです。\n例えば：\n\n不正率 0.1%\n課金率 2%\n重篤疾患 0.5%\n\nのようなケースです。\nこのよ...",
+        "category": "AI・技術",
+        "rss_category": "",
+        "image_url": ""
+      },
       {
         "title": "定理証明AIの「最小構成」エージェント：複雑化へのアンチテーゼ",
         "url": "https://zenn.dev/lluminai_tech/articles/0e8541ce752f73",
@@ -25,7 +97,7 @@
         "image_url": ""
       }
     ],
-    "昨日": [
+    "一昨日": [
       {
         "title": "需要予測における打ち切り問題 ④実装編・既存商品 ─ EM Unconstraining と NumPyro によるベイズ推論",
         "url": "https://zenn.dev/salt2/articles/em-unconstraining-numpyro-ede0616d",
@@ -107,99 +179,77 @@
         "image_url": ""
       }
     ],
-    "一昨日": [
-      {
-        "title": "時系列予測の最前線",
-        "url": "https://zenn.dev/yuma_learning/books/time-series-prediction",
-        "site": "Zenn(機械学習)",
-        "published": "2026-05-25T11:29:58Z",
-        "description": "# 「時系列予測の最前線」シリーズ内容紹介\n\n---\n\n## 内容紹介\n\n「Prophetを使ってみたけど、なぜProphetを選んだか説明できない」「時系列予測の手法は調べたはずなのに、実務でどこから手をつければいいかわからない」——そんな経験はありませんか？\n\nこのシリーズは、**時系列予測をビジネス課題解決の手段として使いこなす判断基準**を、ゼロから積み上げることを目的としています。\n\n手...",
-        "category": "AI・技術",
-        "rss_category": "",
-        "image_url": ""
-      },
-      {
-        "title": "Informer ：なぜ長い時系列予測を効率よくできるのか？",
-        "url": "https://zenn.dev/yuyu1/articles/fc2b2fe7260a3d",
-        "site": "Zenn(機械学習)",
-        "published": "2026-05-25T10:28:27Z",
-        "description": "最近、時系列予測モデルを勉強する中で、Informer という論文を読みました。\nInformer は AAAI 2021 の Best Paper に選ばれた論文で、主に Long Sequence Time-series Forecasting（長い時系列の予測） を扱っています。\n簡単に言うと、Informer は「未来の1点だけを予測するモデル」ではなく、過去の長い系列を見て、未来の長い区...",
-        "category": "AI・技術",
-        "rss_category": "",
-        "image_url": ""
-      },
-      {
-        "title": "【初心者向け】CSVを入れるだけで回帰/分類の分析レポートを自動生成するPythonツール",
-        "url": "https://zenn.dev/shoved45/articles/b85e9fafca6c1a",
-        "site": "Zenn(機械学習)",
-        "published": "2026-05-25T09:09:23Z",
-        "description": "はじめに\n「CSVファイルを分析したいけど、何から始めればいいかわからない……」\nそんな経験ありませんか？\n\n欠損値処理が毎回めんどう\nカテゴリ変数の処理で止まる\nとりあえず機械学習を試したい\n特徴量重要度をサクッと見たい\n\nそこで今回、\nCSVファイルと目的変数名を渡すだけで分析レポートを自動生成するPythonツール\nを作りました。\nこれを使うと、\n\n目的変数の分布\n特徴量重要度\n回帰 / 分...",
-        "category": "AI・技術",
-        "rss_category": "",
-        "image_url": ""
-      },
-      {
-        "title": "需要予測における打ち切り問題 ②理論編・前編 ─ なぜ普通の予測モデルは系統的に間違えるのか",
-        "url": "https://zenn.dev/salt2/articles/e9420b73-article",
-        "site": "Zenn(機械学習)",
-        "published": "2026-05-25T03:02:30Z",
-        "description": "!\n3行まとめ\n\n前回は「米騒動期に POS データが真の需要を捉えられなかった」という定性的な話でした。本記事では Python で合成データ（人工データ）を作り、普通の OLS が実際にどれくらいずれるかを目に見える形で示します。\n\nCensoring / Truncation / Sample selection という似て非なる 3 概念をまず整理し、本シリーズの関心である censori...",
-        "category": "AI・技術",
-        "rss_category": "",
-        "image_url": ""
-      },
-      {
-        "title": "需要予測における打ち切り問題 ①導入編 ─ 「令和の米騒動」が教えてくれた需要予測の落とし穴",
-        "url": "https://zenn.dev/salt2/articles/cbf39d83-article",
-        "site": "Zenn(機械学習)",
-        "published": "2026-05-25T02:00:08Z",
-        "description": "!\n3行まとめ\n\n2024年夏の「令和の米騒動」[1] は、POSデータに記録された「販売数量」と消費者が本当に欲しかった「真の需要」が乖離する瞬間を、社会全体が目撃した珍しい事例でした。\nこの乖離を統計学では 打ち切り（censoring） と呼びます。打ち切りを無視した需要予測モデルは、系統的に需要を過小評価 し、欠品 → さらなる過小予測 → 欠品、という負のスパイラルを生みます。\n本シリー...",
-        "category": "AI・技術",
-        "rss_category": "",
-        "image_url": ""
-      },
-      {
-        "title": "競馬予想 ML でデータリーケージを正攻法で潰した話 — race_date フィルタを4箇所に入れて気づいたこと",
-        "url": "https://zenn.dev/umascore/articles/4f5ebf83012855",
-        "site": "Zenn(機械学習)",
-        "published": "2026-05-24T23:29:22Z",
-        "description": "はじめに：時系列 ML の「未来参照」という古典的バグ\n時系列データを使った機械学習でもっとも踏みやすい罠が データリーケージ（Data Leakage） です。とくに「過去の出来事を見て次の出来事を予測する」タイプのタスクでは、学習時に未来の情報を混入させてしまうことで、評価指標が現実離れして良くなる現象が頻発します。\n筆者は競馬予想ツール UmaScore（フォワードテスト中、umascore...",
-        "category": "AI・技術",
-        "rss_category": "",
-        "image_url": ""
-      },
-      {
-        "title": "「HARR」:RAGのRetrieverを強化学習(RL)で育てる！",
-        "url": "https://zenn.dev/lluminai_tech/articles/8bcd2d7526b206",
-        "site": "Zenn(機械学習)",
-        "published": "2026-05-24T23:05:05Z",
-        "description": "はじめに\nルミナイR&amp;Dチームの宮脇彰梧です。\n現在はマルチモーダルAIの研究を行う大学院生として、\n生成AIやAIエージェントの技術を実践的に探求しています。\nRAGシステムを構築・運用していると、ある「不都合な真実」に直面します。\nそれは、「Retriever（検索器）が高いスコアで持ってきたドキュメントが、必ずしもLLMにとって良いヒントになるとは限らない」 ということです。\n従来の...",
-        "category": "AI・技術",
-        "rss_category": "",
-        "image_url": ""
-      },
-      {
-        "title": "AIが80年の壁を壊した日",
-        "url": "https://zenn.dev/lingmu/articles/2026-05-24-openai-geometry-conjecture-proof",
-        "site": "Zenn(機械学習)",
-        "published": "2026-05-24T22:05:42Z",
-        "description": "AIが80年の壁を壊した日\n2025-05-24 | 読了 4分 | #AI #数学 #OpenAI\n「AIは計算はできても、証明はできない」——そう信じられてきた。ところが今月、OpenAIのモデルが80年間誰も解けなかった幾何学の大予想を否定した。数学の歴史が、静かに書き換えられた瞬間だ。\n\n\n 80年間、誰も答えを出せなかった問題\n1946年、数学者ポール・エルデシュが一つの問いを立てた。\n...",
-        "category": "AI・技術",
-        "rss_category": "",
-        "image_url": ""
-      },
-      {
-        "title": "LSTM AutoEncoderによる異常検知モデルをMLOps化してみた",
-        "url": "https://zenn.dev/parabolaml/articles/450d7586390d4e",
-        "site": "Zenn(機械学習)",
-        "published": "2026-05-24T15:26:29Z",
-        "description": "Kaggle NASA Turbofan データセットを使って LSTM AutoEncoder による異常検知モデルを作成しました。\nNASA Turbofan は、航空機エンジンのような装置が「正常な状態」から「徐々に劣化」し、最終的に故障へ近づいていく時系列データです。各 unit には unit_number と time_in_cycles があり、複数のセンサー値が時間順に記録されてい...",
-        "category": "AI・技術",
-        "rss_category": "",
-        "image_url": ""
-      }
-    ],
     "2026-05": [
+      {
+        "title": "Stochastic Depth（DropPath）を実装したらパラメータ増やさずに精度が約9ポイント上がった【Keras実験】",
+        "url": "https://zenn.dev/wasurenamemo/articles/342e3c0fc1786e",
+        "site": "Zenn(機械学習)",
+        "published": "2026-05-27T15:05:44Z",
+        "description": "ResNeXt・EfficientNet・DeiTなど近年の高精度モデルで広く使われている Stochastic Depth（確率的深度） をご存知でしょうか。\nDropoutはニューロンをランダムにOFFにしますが、Stochastic Depthはブロック（Conv層のグループ）ごとをランダムにスキップします。「Dropoutのブロック版」と言えば直感的にわかりやすいでしょうか。\n今回はKer...",
+        "category": "AI・技術",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "需要予測における打ち切り問題 ⑤実装編・新商品 ＋ 発展編・廃盤商品 ＋ シリーズ総括",
+        "url": "https://zenn.dev/salt2/articles/b20f76df-article",
+        "site": "Zenn(機械学習)",
+        "published": "2026-05-27T10:47:40Z",
+        "description": "!\n3行まとめ\n\nシリーズ最終回は、新商品（履歴なしの難敵） と 廃盤商品（価格・心理・在庫が絡む発展的話題） という、既存商品より一段難しい問題を扱います。\n新商品では「類似商品転移 × 打ち切り補正」の 2 段階法を Python で実装し、さらに PyTorch の Tobit[1] 損失関数を紹介します。\n廃盤商品は価格・在庫・心理が絡み合い、現時点で成熟した解法はありません。生存分析と因...",
+        "category": "AI・技術",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "表形式データ拡張手法 part10：ROSE",
+        "url": "https://zenn.dev/haruto_big6/articles/5e4386a70048d3",
+        "site": "Zenn(機械学習)",
+        "published": "2026-05-27T09:38:39Z",
+        "description": "TL; DR\n\nROSEはRandom Over Sampling (ROS)のようにデータをそのまま複製するのではなく，摂動を加えることで新たなデータ点を生成する\nその摂動はKDEにおけるバンド幅の経験則であるSilvermanのルールに従って標準偏差が定められる正規分布である\n少数クラスデータの拡張ではなく，データセット全体の置換を行うことでデータ活用の柔軟性を向上させる\n\n\n 基本情報\nSM...",
+        "category": "AI・技術",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "【全5回】Graph Neural Networks入門と最前線——GCNの基礎から創薬・不正検知の産業応用まで",
+        "url": "https://zenn.dev/salt2/articles/gnn-introduction-series",
+        "site": "Zenn(機械学習)",
+        "published": "2026-05-27T07:50:12Z",
+        "description": "「グラフ構造のデータを扱いたいけど、GNNってどこから入ればいいかわからない」\n自分が最初にGNNを勉強し始めたとき、ちょうどそういう状態でした。論文を読んでも数式の導出が追えない、チュートリアルのコードは動くけど何をやっているかわからない——そういった経験を経て、「自分が欲しかった入門書」を書いてみようと思い立ったのがこのシリーズのきっかけです。\n全5回のシリーズ 「Graph Neural N...",
+        "category": "AI・技術",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "日本語OCRモデルを比較 ー 速度・性能・メモリから最適解を探る",
+        "url": "https://zenn.dev/acompany/articles/ddf8677f09e252",
+        "site": "Zenn(機械学習)",
+        "published": "2026-05-27T04:41:33Z",
+        "description": "はじめに\nはじめまして、株式会社 Acompany でインターンをしている luna_moonlight です。\n普段は、生成AIに機密情報を入力してしまうリスクを防ぐサービス セキュアチャット の開発に携わっています。\nhttps://service.acompany.tech/cas/secure-chat/\nセキュアチャットは、ユーザーが入力したプロンプトから個人情報（PII）や社内機密情報...",
+        "category": "AI・技術",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "MADL / GMADL lossとは何か：金融時系列予測で「売買に使える損失関数」を考える",
+        "url": "https://zenn.dev/rinn5/articles/madl-gmadl-loss-zenn",
+        "site": "Zenn(機械学習)",
+        "published": "2026-05-27T04:20:47Z",
+        "description": "「金融時系列予測では、とりあえず MSE や MAE を小さくすればいいのでは？」\n最初は自分もそう思っていました。\n機械学習で回帰問題を解くなら、予測値と実際の値の差を小さくするのが自然です。なので、株価やリターンを予測するときも、MSE、MAE、RMSE のような損失関数を使うのが普通に見えます。\nしかし、金融の売買戦略として考えると、少し話が変わってきます。\nたとえば、明日のリターンが実際に...",
+        "category": "AI・技術",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "不均衡データ処理をLightGBMで比較する SMOTE vs アンダーサンプリングアンサンブル",
+        "url": "https://zenn.dev/kyoju_teach/articles/d941b78007bb9b",
+        "site": "Zenn(機械学習)",
+        "published": "2026-05-27T03:52:31Z",
+        "description": "はじめに\n機械学習を実務で扱っていると、高頻度で遭遇するのが「不均衡データ（Imbalanced Data）」です。\n例えば：\n\nクレジットカード不正検知\n課金ユーザー予測\n離脱予測\n障害検知\nBAN対象ユーザー検知\n医療診断\n\nなどでは、「検知したい事象」そのものの発生率が低いケースが非常に多いです。\n例えば：\n\n不正率 0.1%\n課金率 2%\n重篤疾患 0.5%\n\nのようなケースです。\nこのよ...",
+        "category": "AI・技術",
+        "rss_category": "",
+        "image_url": ""
+      },
       {
         "title": "定理証明AIの「最小構成」エージェント：複雑化へのアンチテーゼ",
         "url": "https://zenn.dev/lluminai_tech/articles/0e8541ce752f73",
