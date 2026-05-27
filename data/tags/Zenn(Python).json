@@ -1,9 +1,79 @@
 {
   "site": "Zenn(Python)",
-  "last_updated": "2026-05-27T10:38:42.918980",
-  "total_articles": 4208,
+  "last_updated": "2026-05-27T14:03:10.354572",
+  "total_articles": 4220,
   "articles_by_date": {
     "本日": [
+      {
+        "title": "PyInstallerで作ったexe、ウイルス扱いされる問題をInno Setupで解決した話",
+        "url": "https://zenn.dev/fabgear_jp/articles/pyinstaller-av-fix",
+        "site": "Zenn(Python)",
+        "published": "2026-05-27T06:35:33Z",
+        "description": "Pythonで設計データの比較・検証用ツールを作って、exeにして配布しています。PyInstallerでビルドしたexeがAVに誤検知される問題は前から知ってたんですが、自分のツールでもVirusTotalに投げたら 66ベンダー中16件がウイルス判定でした。配布する以上、放置するわけにもいかない。\n\n 最初の考え: --onedirに変えてみた\nPyInstallerの仕組みを調べると、--o...",
+        "category": "開発",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "PDF仕様書から寸法・公差・部品表を正規表現で抽出してみた",
+        "url": "https://zenn.dev/fabgear_jp/articles/pdf-regex-extraction",
+        "site": "Zenn(Python)",
+        "published": "2026-05-27T06:35:32Z",
+        "description": "50ページの仕様書を手で写すのが面倒だった。入力ミスがあると、そのまま客先に送って迷惑をかけることになる。部品表も寸法も書いてあるのに、スプレッドシートにひたすら手入力していた。製作品20品・購入品20品・ボルト類100品が1ユニット。これが複数集まった製品だと、見落としと入力ミスが増える。\nPythonで PDF仕様書からテキストを抽出して、寸法・公差・BOMを正規表現でパターンマッチする仕組み...",
+        "category": "開発",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "プログラミング経験ゼロの学生が、コード書きをAIに丸投げして「システム設計」に集中してみた話",
+        "url": "https://zenn.dev/fine_dev/articles/a2079667eb4858",
+        "site": "Zenn(Python)",
+        "published": "2026-05-27T05:44:45Z",
+        "description": "私の状況\nプログラミングに関する知識はまだゼロに等しいのですが、「企業の財務データを分析するプログラムを学生のうちに開発したい！」という明確な目標がありました。\n私は暗記こそ苦手ですが、論理的に考えたり、アイデアを出したりといった「思考」の部分が得意で、行動力には自信があります。\n\n コード作成をAIに任せようと考えた理由\nプログラミングを始めたばかりのころは、プログラミングは自分で一から学んです...",
+        "category": "開発",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "Pythonほぼ未経験の私がAIと一緒に電子書籍キャプチャツールを作った話",
+        "url": "https://zenn.dev/endomameko/articles/a01640e2481b47",
+        "site": "Zenn(Python)",
+        "published": "2026-05-27T04:44:09Z",
+        "description": "Pythonほぼ未経験の私がClaudeと一緒に電子書籍キャプチャツールを作った話\n\n はじめに\nプログラミングはほぼ未経験です。\nでも「自分で買った電子書籍を自分のパソコンに保存したい」という気持ちだけで、AIと一緒にPythonツールを作りました。\n結果、ちゃんと動くツールが完成しました。\nこの記事では「どうやってAIに指示を出したか」「どんな壁にぶつかったか」を正直に書きます。同じように「作...",
+        "category": "開発",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "日本語OCRモデルを比較 ー 速度・性能・メモリから最適解を探る",
+        "url": "https://zenn.dev/acompany/articles/ddf8677f09e252",
+        "site": "Zenn(Python)",
+        "published": "2026-05-27T04:41:33Z",
+        "description": "はじめに\nはじめまして、株式会社 Acompany でインターンをしている luna_moonlight です。\n普段は、生成AIに機密情報を入力してしまうリスクを防ぐサービス セキュアチャット の開発に携わっています。\nhttps://service.acompany.tech/cas/secure-chat/\nセキュアチャットは、ユーザーが入力したプロンプトから個人情報（PII）や社内機密情報...",
+        "category": "開発",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "不均衡データ処理をLightGBMで比較する SMOTE vs アンダーサンプリングアンサンブル",
+        "url": "https://zenn.dev/kyoju_teach/articles/d941b78007bb9b",
+        "site": "Zenn(Python)",
+        "published": "2026-05-27T03:52:31Z",
+        "description": "はじめに\n機械学習を実務で扱っていると、高頻度で遭遇するのが「不均衡データ（Imbalanced Data）」です。\n例えば：\n\nクレジットカード不正検知\n課金ユーザー予測\n離脱予測\n障害検知\nBAN対象ユーザー検知\n医療診断\n\nなどでは、「検知したい事象」そのものの発生率が低いケースが非常に多いです。\n例えば：\n\n不正率 0.1%\n課金率 2%\n重篤疾患 0.5%\n\nのようなケースです。\nこのよ...",
+        "category": "開発",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "Claude Code でマルチエージェント企業を10日間動かして分かったこと",
+        "url": "https://zenn.dev/m1no/articles/2026-05-15-kobito-co-day10",
+        "site": "Zenn(Python)",
+        "published": "2026-05-27T02:06:31Z",
+        "description": "「AI を使えばもっと速く動けるはずだ」と思って始めたら、10日間で8部門24エージェントを抱えた謎の会社ができていました。\n動いています。崩壊もしていません。でも、最初の設計から変わったところがたくさんあります。その記録です。\n\n\n Day 1 の構成と今の構成\n最初は3人体制でした。\nResearcher — 調査\nWriter     — 執筆\nOperator   — 運用・git\n10日...",
+        "category": "開発",
+        "rss_category": "",
+        "image_url": ""
+      },
       {
         "title": "実機なしの STM32 で三相電力、続き — 不平衡・低力率で崩れるもの、崩れないもの（2電力計法）",
         "url": "https://zenn.dev/logicia32/articles/2026-05-27-stm32-3phase-power-2",
@@ -52,6 +122,16 @@
         "site": "Zenn(Python)",
         "published": "2026-05-26T13:32:00Z",
         "description": "「画像を見て『これは猫』と当てる AI は知ってる。でも、自動運転とか医療画像みたいに 画像の中のどこが何か を細かく塗り分けるやつって、どうやってるの？」\nそんな疑問を整理するのが今回のテーマです。前回の CNN 記事で「画像 1 枚にラベル 1 個」を扱ったので、今度は 「画像の 1 ピクセル 1 ピクセルにラベル」 を出す世界に踏み込みます。\nその主役が、今日のテーマ FCN（Fully C...",
+        "category": "開発",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "AIがYouTube動画を全自動生成する仕組みを作った──Remotion × VOICEVOX × 10種APIで月〇本投稿を実現する",
+        "url": "https://zenn.dev/1217mike/books/ai-youtube-auto",
+        "site": "Zenn(Python)",
+        "published": "2026-05-26T12:57:09Z",
+        "description": "「動画を作り続けること」がYouTube収益化の最大のボトルネック。\n本書では、台本生成・音声合成・動画レンダリング・アップロードを\nすべて自動化するシステムの全設計と実装コードを公開します。\n副業・FIRE志望者が「仕組みを作って寝ている間に稼ぐ」を実現するための\n完全ガイドです。",
         "category": "開発",
         "rss_category": "",
         "image_url": ""
@@ -127,16 +207,6 @@
         "image_url": ""
       },
       {
-        "title": "プリンは経費になりますか？──RAG自作で日本語Embeddingバグを2つ踏み抜いた話",
-        "url": "https://zenn.dev/miki_mini/articles/687528689c46f4",
-        "site": "Zenn(Python)",
-        "published": "2026-05-26T02:58:05Z",
-        "description": "【AI・データエンジニアへの道：第2弾】\n※前回の第1弾（Tavily API×Geminiで格安自動化）の記事は こちら\n美容系勤務独学初心者マリー・アントワネット系エンジニア目指してます！\n今回はボタンが無いならStreamlitで作ればいいじゃない、社内AIチャットが無いならRAGで作ればいいじゃない👸🍰です。\n読了時間の目安：約8〜12分\n!\n3行まとめ\n\n100% PythonだけでWe...",
-        "category": "開発",
-        "rss_category": "",
-        "image_url": ""
-      },
-      {
         "title": "実機を使わずに STM32 を動かして、三相電力を測ってみる — Python の中だけで（2電力計法）",
         "url": "https://zenn.dev/logicia32/articles/2026-05-26-stm32-3phase-power-1",
         "site": "Zenn(Python)",
@@ -172,16 +242,6 @@
         "site": "Zenn(Python)",
         "published": "2026-05-25T23:31:05Z",
         "description": "OpenClawとは？\nOpenClawはオープンソースのAIアシスタントフレームワークです。Telegram、Discord、WhatsApp、Slackなど20+プラットフォームに対応。\n特徴：\n\n1つのAPIキーで627+モデル利用可能（GPT-5、Claude、Gemini、DeepSeek等）\n永続メモリ — 会話をセッション間で記憶\nスキルシステム — Web検索、コード実行、ファイル...",
-        "category": "開発",
-        "rss_category": "",
-        "image_url": ""
-      },
-      {
-        "title": "MaxPooling vs AveragePooling（中間層）CIFAR-10で比較したらMNISTと逆の結果になった【Keras実験】",
-        "url": "https://zenn.dev/wasurenamemo/articles/4948980f649030",
-        "site": "Zenn(Python)",
-        "published": "2026-05-25T22:40:54Z",
-        "description": "CNNで「なんとなくMaxPoolingを使っている」という方は多いのではないでしょうか。\n「MaxPoolingの方が強い特徴を残すから精度が高い」——直感的にはそう思えます。でも本当にそうなのか？　MNISTで試したときはAveragePoolingが上回ったという結果もあり、データセットによって逆転するのでは？という仮説を実験で確かめました。\n今回はCIFAR-10（カラー自然画像）を使い、...",
         "category": "開発",
         "rss_category": "",
         "image_url": ""
@@ -501,6 +561,76 @@
     ],
     "2026-05": [
       {
+        "title": "PyInstallerで作ったexe、ウイルス扱いされる問題をInno Setupで解決した話",
+        "url": "https://zenn.dev/fabgear_jp/articles/pyinstaller-av-fix",
+        "site": "Zenn(Python)",
+        "published": "2026-05-27T06:35:33Z",
+        "description": "Pythonで設計データの比較・検証用ツールを作って、exeにして配布しています。PyInstallerでビルドしたexeがAVに誤検知される問題は前から知ってたんですが、自分のツールでもVirusTotalに投げたら 66ベンダー中16件がウイルス判定でした。配布する以上、放置するわけにもいかない。\n\n 最初の考え: --onedirに変えてみた\nPyInstallerの仕組みを調べると、--o...",
+        "category": "開発",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "PDF仕様書から寸法・公差・部品表を正規表現で抽出してみた",
+        "url": "https://zenn.dev/fabgear_jp/articles/pdf-regex-extraction",
+        "site": "Zenn(Python)",
+        "published": "2026-05-27T06:35:32Z",
+        "description": "50ページの仕様書を手で写すのが面倒だった。入力ミスがあると、そのまま客先に送って迷惑をかけることになる。部品表も寸法も書いてあるのに、スプレッドシートにひたすら手入力していた。製作品20品・購入品20品・ボルト類100品が1ユニット。これが複数集まった製品だと、見落としと入力ミスが増える。\nPythonで PDF仕様書からテキストを抽出して、寸法・公差・BOMを正規表現でパターンマッチする仕組み...",
+        "category": "開発",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "プログラミング経験ゼロの学生が、コード書きをAIに丸投げして「システム設計」に集中してみた話",
+        "url": "https://zenn.dev/fine_dev/articles/a2079667eb4858",
+        "site": "Zenn(Python)",
+        "published": "2026-05-27T05:44:45Z",
+        "description": "私の状況\nプログラミングに関する知識はまだゼロに等しいのですが、「企業の財務データを分析するプログラムを学生のうちに開発したい！」という明確な目標がありました。\n私は暗記こそ苦手ですが、論理的に考えたり、アイデアを出したりといった「思考」の部分が得意で、行動力には自信があります。\n\n コード作成をAIに任せようと考えた理由\nプログラミングを始めたばかりのころは、プログラミングは自分で一から学んです...",
+        "category": "開発",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "Pythonほぼ未経験の私がAIと一緒に電子書籍キャプチャツールを作った話",
+        "url": "https://zenn.dev/endomameko/articles/a01640e2481b47",
+        "site": "Zenn(Python)",
+        "published": "2026-05-27T04:44:09Z",
+        "description": "Pythonほぼ未経験の私がClaudeと一緒に電子書籍キャプチャツールを作った話\n\n はじめに\nプログラミングはほぼ未経験です。\nでも「自分で買った電子書籍を自分のパソコンに保存したい」という気持ちだけで、AIと一緒にPythonツールを作りました。\n結果、ちゃんと動くツールが完成しました。\nこの記事では「どうやってAIに指示を出したか」「どんな壁にぶつかったか」を正直に書きます。同じように「作...",
+        "category": "開発",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "日本語OCRモデルを比較 ー 速度・性能・メモリから最適解を探る",
+        "url": "https://zenn.dev/acompany/articles/ddf8677f09e252",
+        "site": "Zenn(Python)",
+        "published": "2026-05-27T04:41:33Z",
+        "description": "はじめに\nはじめまして、株式会社 Acompany でインターンをしている luna_moonlight です。\n普段は、生成AIに機密情報を入力してしまうリスクを防ぐサービス セキュアチャット の開発に携わっています。\nhttps://service.acompany.tech/cas/secure-chat/\nセキュアチャットは、ユーザーが入力したプロンプトから個人情報（PII）や社内機密情報...",
+        "category": "開発",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "不均衡データ処理をLightGBMで比較する SMOTE vs アンダーサンプリングアンサンブル",
+        "url": "https://zenn.dev/kyoju_teach/articles/d941b78007bb9b",
+        "site": "Zenn(Python)",
+        "published": "2026-05-27T03:52:31Z",
+        "description": "はじめに\n機械学習を実務で扱っていると、高頻度で遭遇するのが「不均衡データ（Imbalanced Data）」です。\n例えば：\n\nクレジットカード不正検知\n課金ユーザー予測\n離脱予測\n障害検知\nBAN対象ユーザー検知\n医療診断\n\nなどでは、「検知したい事象」そのものの発生率が低いケースが非常に多いです。\n例えば：\n\n不正率 0.1%\n課金率 2%\n重篤疾患 0.5%\n\nのようなケースです。\nこのよ...",
+        "category": "開発",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "Claude Code でマルチエージェント企業を10日間動かして分かったこと",
+        "url": "https://zenn.dev/m1no/articles/2026-05-15-kobito-co-day10",
+        "site": "Zenn(Python)",
+        "published": "2026-05-27T02:06:31Z",
+        "description": "「AI を使えばもっと速く動けるはずだ」と思って始めたら、10日間で8部門24エージェントを抱えた謎の会社ができていました。\n動いています。崩壊もしていません。でも、最初の設計から変わったところがたくさんあります。その記録です。\n\n\n Day 1 の構成と今の構成\n最初は3人体制でした。\nResearcher — 調査\nWriter     — 執筆\nOperator   — 運用・git\n10日...",
+        "category": "開発",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
         "title": "実機なしの STM32 で三相電力、続き — 不平衡・低力率で崩れるもの、崩れないもの（2電力計法）",
         "url": "https://zenn.dev/logicia32/articles/2026-05-27-stm32-3phase-power-2",
         "site": "Zenn(Python)",
@@ -546,6 +676,16 @@
         "site": "Zenn(Python)",
         "published": "2026-05-26T13:32:00Z",
         "description": "「画像を見て『これは猫』と当てる AI は知ってる。でも、自動運転とか医療画像みたいに 画像の中のどこが何か を細かく塗り分けるやつって、どうやってるの？」\nそんな疑問を整理するのが今回のテーマです。前回の CNN 記事で「画像 1 枚にラベル 1 個」を扱ったので、今度は 「画像の 1 ピクセル 1 ピクセルにラベル」 を出す世界に踏み込みます。\nその主役が、今日のテーマ FCN（Fully C...",
+        "category": "開発",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "AIがYouTube動画を全自動生成する仕組みを作った──Remotion × VOICEVOX × 10種APIで月〇本投稿を実現する",
+        "url": "https://zenn.dev/1217mike/books/ai-youtube-auto",
+        "site": "Zenn(Python)",
+        "published": "2026-05-26T12:57:09Z",
+        "description": "「動画を作り続けること」がYouTube収益化の最大のボトルネック。\n本書では、台本生成・音声合成・動画レンダリング・アップロードを\nすべて自動化するシステムの全設計と実装コードを公開します。\n副業・FIRE志望者が「仕組みを作って寝ている間に稼ぐ」を実現するための\n完全ガイドです。",
         "category": "開発",
         "rss_category": "",
         "image_url": ""
@@ -621,16 +761,6 @@
         "image_url": ""
       },
       {
-        "title": "プリンは経費になりますか？──RAG自作で日本語Embeddingバグを2つ踏み抜いた話",
-        "url": "https://zenn.dev/miki_mini/articles/687528689c46f4",
-        "site": "Zenn(Python)",
-        "published": "2026-05-26T02:58:05Z",
-        "description": "【AI・データエンジニアへの道：第2弾】\n※前回の第1弾（Tavily API×Geminiで格安自動化）の記事は こちら\n美容系勤務独学初心者マリー・アントワネット系エンジニア目指してます！\n今回はボタンが無いならStreamlitで作ればいいじゃない、社内AIチャットが無いならRAGで作ればいいじゃない👸🍰です。\n読了時間の目安：約8〜12分\n!\n3行まとめ\n\n100% PythonだけでWe...",
-        "category": "開発",
-        "rss_category": "",
-        "image_url": ""
-      },
-      {
         "title": "実機を使わずに STM32 を動かして、三相電力を測ってみる — Python の中だけで（2電力計法）",
         "url": "https://zenn.dev/logicia32/articles/2026-05-26-stm32-3phase-power-1",
         "site": "Zenn(Python)",
@@ -666,16 +796,6 @@
         "site": "Zenn(Python)",
         "published": "2026-05-25T23:31:05Z",
         "description": "OpenClawとは？\nOpenClawはオープンソースのAIアシスタントフレームワークです。Telegram、Discord、WhatsApp、Slackなど20+プラットフォームに対応。\n特徴：\n\n1つのAPIキーで627+モデル利用可能（GPT-5、Claude、Gemini、DeepSeek等）\n永続メモリ — 会話をセッション間で記憶\nスキルシステム — Web検索、コード実行、ファイル...",
-        "category": "開発",
-        "rss_category": "",
-        "image_url": ""
-      },
-      {
-        "title": "MaxPooling vs AveragePooling（中間層）CIFAR-10で比較したらMNISTと逆の結果になった【Keras実験】",
-        "url": "https://zenn.dev/wasurenamemo/articles/4948980f649030",
-        "site": "Zenn(Python)",
-        "published": "2026-05-25T22:40:54Z",
-        "description": "CNNで「なんとなくMaxPoolingを使っている」という方は多いのではないでしょうか。\n「MaxPoolingの方が強い特徴を残すから精度が高い」——直感的にはそう思えます。でも本当にそうなのか？　MNISTで試したときはAveragePoolingが上回ったという結果もあり、データセットによって逆転するのでは？という仮説を実験で確かめました。\n今回はCIFAR-10（カラー自然画像）を使い、...",
         "category": "開発",
         "rss_category": "",
         "image_url": ""
