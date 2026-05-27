@@ -1,15 +1,127 @@
 {
   "site": "Zenn(LLM)",
-  "last_updated": "2026-05-27T17:32:41.837462",
-  "total_articles": 3600,
+  "last_updated": "2026-05-27T19:47:36.330589",
+  "total_articles": 3614,
   "articles_by_date": {
+    "本日": [
+      {
+        "title": "Vector 検索の chunking strategy、どれをどう選ぶか",
+        "url": "https://zenn.dev/yasunami_daichi/articles/vector-chunking-strategy",
+        "site": "Zenn(LLM)",
+        "published": "2026-05-27T15:57:33Z",
+        "description": "TL;DR\n\nchunking は RAG の検索精度を一番下流で律速する工程。embedding モデルや vector DB を変える前に、まず chunk の切り方を疑う\nマネージド（Bedrock）の既定は Default chunking（文境界を尊重した fixed-size、約300トークン）。自前で組むなら Recursive（構造優先の再帰分割）+ 10〜15% オーバーラップ ...",
+        "category": "AI・技術",
+        "rss_category": "",
+        "image_url": ""
+      }
+    ],
     "昨日": [
+      {
+        "title": "自律AIエージェントの並列実装設計 — 並列度を上げて壊れた話と回避策",
+        "url": "https://zenn.dev/yureki/articles/parallel-agent-design-tradeoff",
+        "site": "Zenn(LLM)",
+        "published": "2026-05-27T14:14:51Z",
+        "description": "対象と前提\n\nClaude Code でエージェントを組んだ経験があり、単一エージェント運用から並列実装に移行を検討している人\n想定環境: Claude Code(MCP 連携あり)、長時間稼働(数時間〜24 時間)を前提とした自律エージェント\n完全自律実装システムを 24 時間動かす中で、並列度設計でハマった話と回避策を共有する\n\n\n TL;DR\n\n並列度を 4 → 8 に上げた途端、コンテキス...",
+        "category": "AI・技術",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "24時間稼働AIエージェントの状態永続化 — 3層メモリの設計判断",
+        "url": "https://zenn.dev/yureki/articles/agent-state-3layer-design",
+        "site": "Zenn(LLM)",
+        "published": "2026-05-27T14:03:04Z",
+        "description": "対象と前提\n\nClaude Code やそれに類する LLM エージェントを 長期間連続稼働 させたい設計者\nセッションが切れた瞬間に文脈が消えて困っている人\n「とりあえず CLAUDE.md に全部書く」で運用が破綻し始めた人\n\n前提:1 セッション完結の作業ではなく、複数セッションをまたいで同じプロジェクトを進行させる運用を想定しています。自分のところでは Claude Code を中心にした...",
+        "category": "AI・技術",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "格安AI＋人間は、米ハイエンドAIだけより安いのか",
+        "url": "https://zenn.dev/sonder01/articles/cheap-ai-human-vs-frontier-labs",
+        "site": "Zenn(LLM)",
+        "published": "2026-05-27T13:12:15Z",
+        "description": "同じ作業をさせるなら、どちらが安いのか。\n\n米国 frontier モデルにそのまま投げる\nDeepSeek のような低価格モデルを使い、人間が判断・修正・検収する\n\nSignalBloom AI の記事「Outsourcing plus LocalAI will soon become more economical vs Frontier labs」は、この問いをかなり雑に、しかし重要な方向に...",
+        "category": "AI・技術",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "AIが、開発者に聞く ── R.E.V.I.S. #2 「指揮官が立つ日」",
+        "url": "https://zenn.dev/enigma96y/articles/c291f50e283a73",
+        "site": "Zenn(LLM)",
+        "published": "2026-05-27T12:01:05Z",
+        "description": "コードを渡されて Claude が質問し、開発者本人（eNIGM4 / 株式会社メイビス）が答えていく連載の第2回です。前回（#1）は、外部に頼らず素の推論を流し、その配線を通電させて足場を固めた v0.0.1〜v0.0.2 を読みました。今回は v0.0.3 ── 一台で喋るだけだったところに、初めて「指揮官」が立ちます。\n\nインタビュアー・ルール\n\n\n渡されたコードそのものに質問する。 バージ...",
+        "category": "AI・技術",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "ハーネスエンジニアなら知っておきたい Cowork でぶっ壊れる Claude Code Plugin の罠",
+        "url": "https://zenn.dev/storehero/articles/2bc58c12090f72",
+        "site": "Zenn(LLM)",
+        "published": "2026-05-27T12:00:06Z",
+        "description": "ハーネスエンジニアなら知っておきたい Claude Code Plugin の落とし穴（Cowork 編）\nこんにちは、StoreHero で CPO をしている永田です。\n先日、Claude Code CLI で plugin を組むときの非対称な挙動を 6 つ紹介しました。\nhttps://zenn.dev/storehero/articles/20ed4b2e8772b3\n本稿はその続編です...",
+        "category": "AI・技術",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "AIはあなたに賛成しすぎる ― 「反論させるAI」で思考の盲点を消す実装入門",
+        "url": "https://zenn.dev/akira_papa/articles/f42031e278f81c",
+        "site": "Zenn(LLM)",
+        "published": "2026-05-27T11:48:56Z",
+        "description": "TL;DR\n\nAIはあなたに賛成しがちです。これは性格じゃなくて、作られ方の都合（おべっか＝sycophancy）なんです\n賛成されると気持ちいい。でも、気持ちいいだけで判断の質は1ミリも上がってないってこと、ありますよね\nそこで提案したいのが、AIを「賛成役」じゃなくて**「反論役」**として使うこと\nこの記事では、反論を引き出すプロンプト3本と、それを仕組みにするコード3本（プロンプト組み立て...",
+        "category": "AI・技術",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "自社AIエージェントを実装するのは、結局顧客のどんな問題を解決するためなのか（読書メモ）",
+        "url": "https://zenn.dev/tatwatan/articles/1a262a749869c5",
+        "site": "Zenn(LLM)",
+        "published": "2026-05-27T11:13:16Z",
+        "description": "こんにちは、tatsumiです!\n今回は、今絶賛読書中の、LLMの原理、RAG・エージェント開発から読み解く コンテキストエンジニアリング | 技術評論社についての、読書メモ兼、得た知見の共有という形で、記事を書かせていただきます。（今後も、どんどん加筆していくと思います。）\nhttps://gihyo.jp/book/2026/978-4-297-15419-6\n\n チャットUIのLLMアプリケ...",
+        "category": "AI・技術",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "GeminiのOCRで文章が丸ごと抜ける — 今でもCloud Vision APIを使う理由と使い分け」",
+        "url": "https://zenn.dev/msworks/articles/visionocr-cloud-vision-vs-gemini",
+        "site": "Zenn(LLM)",
+        "published": "2026-05-27T10:47:18Z",
+        "description": "はじめに\n私は画面のスクリーンショットや紙の研修資料のPDFファイルを文字起こしする際に、自作のOCRツール VisionOCR を日常的に使っています。\nマルチモーダルLLMの Gemini でPDFファイルのOCRを試みましたがあまり思ったよりもうまくいかず、結果として Google Cloud Vision API を使うことにしました。\nこの記事は、LLMのOCRを試したけれど思ったような...",
+        "category": "AI・技術",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "RAGのコスト問題を1/15に削る ― 「毎回検索しない」アーキテクチャの設計",
+        "url": "https://zenn.dev/shintaroamaike/articles/ecaaf3b4a8a77d",
+        "site": "Zenn(LLM)",
+        "published": "2026-05-27T10:32:18Z",
+        "description": "はじめに\nAIエージェント・RAGアプリケーションが急速に普及する一方で、運用フェーズに入ったチームから共通して聞こえてくるのが コストとレイテンシの問題 です。\n「クエリごとに retrieve → 全結果をコンテキストに投入 → LLM で生成」というナイーブな構成は、トークン課金とレスポンス時間が線形に膨らみます。月数万クエリまでは耐えられても、10万、100万と増えていくと無視できない金額...",
+        "category": "AI・技術",
+        "rss_category": "",
+        "image_url": ""
+      },
       {
         "title": "X投稿の品質を上げるために入れた3つの改善 — テーマ重複防止・投稿タイプ多様化・AI的文体排除",
         "url": "https://zenn.dev/shori1234/articles/05-3_content-agent-quality",
         "site": "Zenn(LLM)",
         "published": "2026-05-27T10:29:35Z",
         "description": "X投稿の品質を上げるために入れた3つの改善 — テーマ重複防止・投稿タイプ多様化・AI的文体排除\n\n この記事について\nContent AgentでX投稿の下書き生成が動くようになってから、使い続けているうちに気になる問題が出てきた。同じようなテーマの投稿が続く、投稿タイプのバリエーションが少ない、生成された文章がAIっぽい。\nこれらを解決するために入れた改善を3つに分けて書く。動作自体はできてい...",
+        "category": "AI・技術",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "【2026・夏最新版】皆様にGoogle CloudでのRAG・Embeddingの最強を、お伝えしたかった。",
+        "url": "https://zenn.dev/fp16/articles/c3a080a68b3b59",
+        "site": "Zenn(LLM)",
+        "published": "2026-05-27T09:00:09Z",
+        "description": "こんにちは、株式会社FP16の二宮です。\n前回は日本語RAGのEmbeddingモデルを6構成・2000問で比較しました。\nhttps://zenn.dev/fp16/articles/aa48dcae23974e\n今回はその続きです。\nEmbeddingモデル単体の精度はだいぶ見えてきました。では、実際にGoogle CloudでRAGを作るとき、構成としては何を選べばいいのか。\nCloud S...",
         "category": "AI・技術",
         "rss_category": "",
         "image_url": ""
@@ -95,26 +207,6 @@
         "image_url": ""
       },
       {
-        "title": "定理証明AIの「最小構成」エージェント：複雑化へのアンチテーゼ",
-        "url": "https://zenn.dev/lluminai_tech/articles/0e8541ce752f73",
-        "site": "Zenn(LLM)",
-        "published": "2026-05-26T23:06:05Z",
-        "description": "はじめに\nルミナイR&amp;Dチームの宮脇彰梧です。\n現在はマルチモーダルAIの研究を行う大学院生として、\n生成AIやAIエージェントの技術を実践的に探求しています。\n最近、AIエージェントのアーキテクチャってどんどん複雑化していませんか？\nマルチエージェント連携、複雑なルーティング、高度な木探索 ……。もちろんそれらが必要な領域もありますが、「果たして本当にそこまでの複雑さが必要なのか？」と疑...",
-        "category": "AI・技術",
-        "rss_category": "",
-        "image_url": ""
-      },
-      {
-        "title": "AIが80年の難問を解いた日",
-        "url": "https://zenn.dev/lingmu/articles/2026-05-26-openai-geometry-breakthrough",
-        "site": "Zenn(LLM)",
-        "published": "2026-05-26T22:28:17Z",
-        "description": "AIが80年の難問を解いた日\n2026-05-26 | 読了 4分 | #AI #数学 #OpenAI\n80年間、誰も答えを出せなかった数学の予想が、AIによって覆された。純粋数学の最難関領域に、機械が踏み込んだ瞬間だ。\n\n\n 80年解けなかった「色塗り問題」\n1946年、数学者ネルソンが一つの問いを立てた。\n「平面上のすべての点を、距離が1の2点が同じ色にならないよう塗るには、何色必要か?」\nこ...",
-        "category": "AI・技術",
-        "rss_category": "",
-        "image_url": ""
-      },
-      {
         "title": "AI時代の実装力は『コードを書く力』から『解空間を収束させる力』へ移った",
         "url": "https://zenn.dev/tesla/articles/f67c29415a02fc",
         "site": "Zenn(LLM)",
@@ -130,16 +222,6 @@
         "site": "Zenn(LLM)",
         "published": "2026-05-26T15:21:06Z",
         "description": "Big News\n\n Gemini 3.5 Flash / Gemini Spark / Gemini Omni リリース（Google I/O 2026）\nhttps://blog.google/innovation-and-ai/technology/developers-tools/google-io-2026-collection/\nhttps://www.marktechpost.com...",
-        "category": "AI・技術",
-        "rss_category": "",
-        "image_url": ""
-      },
-      {
-        "title": "**疲弊したアインシュタインAIに講演させた ─ vital state をシステムプロンプトに注入したら何が起きたか**",
-        "url": "https://zenn.dev/yoshi_katakura/articles/4e52d3e6547a82",
-        "site": "Zenn(LLM)",
-        "published": "2026-05-26T15:02:05Z",
-        "description": "サブタイトル：TwinVitalState(energy/concentration/health) → _vital_block() → システムプロンプト末尾注入 ─ 5日間の生活習慣が講演の質を変えるまでの設計と観察記録\n対象読者：LLMエージェント開発者・マルチエージェントシステムに興味のある開発者・プロンプトエンジニアリング実践者\n\n\n はじめに\nSoul-Twinには「TWIN Soc...",
         "category": "AI・技術",
         "rss_category": "",
         "image_url": ""
@@ -192,16 +274,6 @@
         "site": "Zenn(LLM)",
         "published": "2026-05-26T13:55:12Z",
         "description": "契約書を要約しても、不安は要約されませんでした。\n契約書を代わりに読んでくれる Agent が欲しい。\n最初は、そう思って contract-question-agent を作り始めました。\n契約書をアップロードする。\n気になることを質問する。\nAgent が該当箇所を探して、説明してくれる。\n一見、それで十分そうに見えます。\n長い文章を見ると、とりあえずやりたくなることがあります。\n「この内容を...",
-        "category": "AI・技術",
-        "rss_category": "",
-        "image_url": ""
-      },
-      {
-        "title": "AIが、開発者に聞く ── R.E.V.I.S. #1 「最初の一行と、その足場」",
-        "url": "https://zenn.dev/enigma96y/articles/8dd4ca5623ef79",
-        "site": "Zenn(LLM)",
-        "published": "2026-05-26T12:01:05Z",
-        "description": "この連載について\nこれは、LLMに初めて触れた素人が、3ヶ月でAIアシスタント R.E.V.I.S. をゼロから完成させ、完成に至るまで の記録です。\n開発者本人（eNIGM4 / 株式会社メイビス）が、バージョンごとのソースコードを Claude に渡す。Claude はそれを実際に読み、開発者に質問していく ── その逐語を、ほぼそのまま掲載します。聞き手は人間ではなく、AI である Clau...",
         "category": "AI・技術",
         "rss_category": "",
         "image_url": ""
@@ -379,11 +451,121 @@
     ],
     "2026-05": [
       {
+        "title": "Vector 検索の chunking strategy、どれをどう選ぶか",
+        "url": "https://zenn.dev/yasunami_daichi/articles/vector-chunking-strategy",
+        "site": "Zenn(LLM)",
+        "published": "2026-05-27T15:57:33Z",
+        "description": "TL;DR\n\nchunking は RAG の検索精度を一番下流で律速する工程。embedding モデルや vector DB を変える前に、まず chunk の切り方を疑う\nマネージド（Bedrock）の既定は Default chunking（文境界を尊重した fixed-size、約300トークン）。自前で組むなら Recursive（構造優先の再帰分割）+ 10〜15% オーバーラップ ...",
+        "category": "AI・技術",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "自律AIエージェントの並列実装設計 — 並列度を上げて壊れた話と回避策",
+        "url": "https://zenn.dev/yureki/articles/parallel-agent-design-tradeoff",
+        "site": "Zenn(LLM)",
+        "published": "2026-05-27T14:14:51Z",
+        "description": "対象と前提\n\nClaude Code でエージェントを組んだ経験があり、単一エージェント運用から並列実装に移行を検討している人\n想定環境: Claude Code(MCP 連携あり)、長時間稼働(数時間〜24 時間)を前提とした自律エージェント\n完全自律実装システムを 24 時間動かす中で、並列度設計でハマった話と回避策を共有する\n\n\n TL;DR\n\n並列度を 4 → 8 に上げた途端、コンテキス...",
+        "category": "AI・技術",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "24時間稼働AIエージェントの状態永続化 — 3層メモリの設計判断",
+        "url": "https://zenn.dev/yureki/articles/agent-state-3layer-design",
+        "site": "Zenn(LLM)",
+        "published": "2026-05-27T14:03:04Z",
+        "description": "対象と前提\n\nClaude Code やそれに類する LLM エージェントを 長期間連続稼働 させたい設計者\nセッションが切れた瞬間に文脈が消えて困っている人\n「とりあえず CLAUDE.md に全部書く」で運用が破綻し始めた人\n\n前提:1 セッション完結の作業ではなく、複数セッションをまたいで同じプロジェクトを進行させる運用を想定しています。自分のところでは Claude Code を中心にした...",
+        "category": "AI・技術",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "格安AI＋人間は、米ハイエンドAIだけより安いのか",
+        "url": "https://zenn.dev/sonder01/articles/cheap-ai-human-vs-frontier-labs",
+        "site": "Zenn(LLM)",
+        "published": "2026-05-27T13:12:15Z",
+        "description": "同じ作業をさせるなら、どちらが安いのか。\n\n米国 frontier モデルにそのまま投げる\nDeepSeek のような低価格モデルを使い、人間が判断・修正・検収する\n\nSignalBloom AI の記事「Outsourcing plus LocalAI will soon become more economical vs Frontier labs」は、この問いをかなり雑に、しかし重要な方向に...",
+        "category": "AI・技術",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "AIが、開発者に聞く ── R.E.V.I.S. #2 「指揮官が立つ日」",
+        "url": "https://zenn.dev/enigma96y/articles/c291f50e283a73",
+        "site": "Zenn(LLM)",
+        "published": "2026-05-27T12:01:05Z",
+        "description": "コードを渡されて Claude が質問し、開発者本人（eNIGM4 / 株式会社メイビス）が答えていく連載の第2回です。前回（#1）は、外部に頼らず素の推論を流し、その配線を通電させて足場を固めた v0.0.1〜v0.0.2 を読みました。今回は v0.0.3 ── 一台で喋るだけだったところに、初めて「指揮官」が立ちます。\n\nインタビュアー・ルール\n\n\n渡されたコードそのものに質問する。 バージ...",
+        "category": "AI・技術",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "ハーネスエンジニアなら知っておきたい Cowork でぶっ壊れる Claude Code Plugin の罠",
+        "url": "https://zenn.dev/storehero/articles/2bc58c12090f72",
+        "site": "Zenn(LLM)",
+        "published": "2026-05-27T12:00:06Z",
+        "description": "ハーネスエンジニアなら知っておきたい Claude Code Plugin の落とし穴（Cowork 編）\nこんにちは、StoreHero で CPO をしている永田です。\n先日、Claude Code CLI で plugin を組むときの非対称な挙動を 6 つ紹介しました。\nhttps://zenn.dev/storehero/articles/20ed4b2e8772b3\n本稿はその続編です...",
+        "category": "AI・技術",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "AIはあなたに賛成しすぎる ― 「反論させるAI」で思考の盲点を消す実装入門",
+        "url": "https://zenn.dev/akira_papa/articles/f42031e278f81c",
+        "site": "Zenn(LLM)",
+        "published": "2026-05-27T11:48:56Z",
+        "description": "TL;DR\n\nAIはあなたに賛成しがちです。これは性格じゃなくて、作られ方の都合（おべっか＝sycophancy）なんです\n賛成されると気持ちいい。でも、気持ちいいだけで判断の質は1ミリも上がってないってこと、ありますよね\nそこで提案したいのが、AIを「賛成役」じゃなくて**「反論役」**として使うこと\nこの記事では、反論を引き出すプロンプト3本と、それを仕組みにするコード3本（プロンプト組み立て...",
+        "category": "AI・技術",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "自社AIエージェントを実装するのは、結局顧客のどんな問題を解決するためなのか（読書メモ）",
+        "url": "https://zenn.dev/tatwatan/articles/1a262a749869c5",
+        "site": "Zenn(LLM)",
+        "published": "2026-05-27T11:13:16Z",
+        "description": "こんにちは、tatsumiです!\n今回は、今絶賛読書中の、LLMの原理、RAG・エージェント開発から読み解く コンテキストエンジニアリング | 技術評論社についての、読書メモ兼、得た知見の共有という形で、記事を書かせていただきます。（今後も、どんどん加筆していくと思います。）\nhttps://gihyo.jp/book/2026/978-4-297-15419-6\n\n チャットUIのLLMアプリケ...",
+        "category": "AI・技術",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "GeminiのOCRで文章が丸ごと抜ける — 今でもCloud Vision APIを使う理由と使い分け」",
+        "url": "https://zenn.dev/msworks/articles/visionocr-cloud-vision-vs-gemini",
+        "site": "Zenn(LLM)",
+        "published": "2026-05-27T10:47:18Z",
+        "description": "はじめに\n私は画面のスクリーンショットや紙の研修資料のPDFファイルを文字起こしする際に、自作のOCRツール VisionOCR を日常的に使っています。\nマルチモーダルLLMの Gemini でPDFファイルのOCRを試みましたがあまり思ったよりもうまくいかず、結果として Google Cloud Vision API を使うことにしました。\nこの記事は、LLMのOCRを試したけれど思ったような...",
+        "category": "AI・技術",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "RAGのコスト問題を1/15に削る ― 「毎回検索しない」アーキテクチャの設計",
+        "url": "https://zenn.dev/shintaroamaike/articles/ecaaf3b4a8a77d",
+        "site": "Zenn(LLM)",
+        "published": "2026-05-27T10:32:18Z",
+        "description": "はじめに\nAIエージェント・RAGアプリケーションが急速に普及する一方で、運用フェーズに入ったチームから共通して聞こえてくるのが コストとレイテンシの問題 です。\n「クエリごとに retrieve → 全結果をコンテキストに投入 → LLM で生成」というナイーブな構成は、トークン課金とレスポンス時間が線形に膨らみます。月数万クエリまでは耐えられても、10万、100万と増えていくと無視できない金額...",
+        "category": "AI・技術",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
         "title": "X投稿の品質を上げるために入れた3つの改善 — テーマ重複防止・投稿タイプ多様化・AI的文体排除",
         "url": "https://zenn.dev/shori1234/articles/05-3_content-agent-quality",
         "site": "Zenn(LLM)",
         "published": "2026-05-27T10:29:35Z",
         "description": "X投稿の品質を上げるために入れた3つの改善 — テーマ重複防止・投稿タイプ多様化・AI的文体排除\n\n この記事について\nContent AgentでX投稿の下書き生成が動くようになってから、使い続けているうちに気になる問題が出てきた。同じようなテーマの投稿が続く、投稿タイプのバリエーションが少ない、生成された文章がAIっぽい。\nこれらを解決するために入れた改善を3つに分けて書く。動作自体はできてい...",
+        "category": "AI・技術",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "【2026・夏最新版】皆様にGoogle CloudでのRAG・Embeddingの最強を、お伝えしたかった。",
+        "url": "https://zenn.dev/fp16/articles/c3a080a68b3b59",
+        "site": "Zenn(LLM)",
+        "published": "2026-05-27T09:00:09Z",
+        "description": "こんにちは、株式会社FP16の二宮です。\n前回は日本語RAGのEmbeddingモデルを6構成・2000問で比較しました。\nhttps://zenn.dev/fp16/articles/aa48dcae23974e\n今回はその続きです。\nEmbeddingモデル単体の精度はだいぶ見えてきました。では、実際にGoogle CloudでRAGを作るとき、構成としては何を選べばいいのか。\nCloud S...",
         "category": "AI・技術",
         "rss_category": "",
         "image_url": ""
@@ -469,26 +651,6 @@
         "image_url": ""
       },
       {
-        "title": "定理証明AIの「最小構成」エージェント：複雑化へのアンチテーゼ",
-        "url": "https://zenn.dev/lluminai_tech/articles/0e8541ce752f73",
-        "site": "Zenn(LLM)",
-        "published": "2026-05-26T23:06:05Z",
-        "description": "はじめに\nルミナイR&amp;Dチームの宮脇彰梧です。\n現在はマルチモーダルAIの研究を行う大学院生として、\n生成AIやAIエージェントの技術を実践的に探求しています。\n最近、AIエージェントのアーキテクチャってどんどん複雑化していませんか？\nマルチエージェント連携、複雑なルーティング、高度な木探索 ……。もちろんそれらが必要な領域もありますが、「果たして本当にそこまでの複雑さが必要なのか？」と疑...",
-        "category": "AI・技術",
-        "rss_category": "",
-        "image_url": ""
-      },
-      {
-        "title": "AIが80年の難問を解いた日",
-        "url": "https://zenn.dev/lingmu/articles/2026-05-26-openai-geometry-breakthrough",
-        "site": "Zenn(LLM)",
-        "published": "2026-05-26T22:28:17Z",
-        "description": "AIが80年の難問を解いた日\n2026-05-26 | 読了 4分 | #AI #数学 #OpenAI\n80年間、誰も答えを出せなかった数学の予想が、AIによって覆された。純粋数学の最難関領域に、機械が踏み込んだ瞬間だ。\n\n\n 80年解けなかった「色塗り問題」\n1946年、数学者ネルソンが一つの問いを立てた。\n「平面上のすべての点を、距離が1の2点が同じ色にならないよう塗るには、何色必要か?」\nこ...",
-        "category": "AI・技術",
-        "rss_category": "",
-        "image_url": ""
-      },
-      {
         "title": "AI時代の実装力は『コードを書く力』から『解空間を収束させる力』へ移った",
         "url": "https://zenn.dev/tesla/articles/f67c29415a02fc",
         "site": "Zenn(LLM)",
@@ -504,16 +666,6 @@
         "site": "Zenn(LLM)",
         "published": "2026-05-26T15:21:06Z",
         "description": "Big News\n\n Gemini 3.5 Flash / Gemini Spark / Gemini Omni リリース（Google I/O 2026）\nhttps://blog.google/innovation-and-ai/technology/developers-tools/google-io-2026-collection/\nhttps://www.marktechpost.com...",
-        "category": "AI・技術",
-        "rss_category": "",
-        "image_url": ""
-      },
-      {
-        "title": "**疲弊したアインシュタインAIに講演させた ─ vital state をシステムプロンプトに注入したら何が起きたか**",
-        "url": "https://zenn.dev/yoshi_katakura/articles/4e52d3e6547a82",
-        "site": "Zenn(LLM)",
-        "published": "2026-05-26T15:02:05Z",
-        "description": "サブタイトル：TwinVitalState(energy/concentration/health) → _vital_block() → システムプロンプト末尾注入 ─ 5日間の生活習慣が講演の質を変えるまでの設計と観察記録\n対象読者：LLMエージェント開発者・マルチエージェントシステムに興味のある開発者・プロンプトエンジニアリング実践者\n\n\n はじめに\nSoul-Twinには「TWIN Soc...",
         "category": "AI・技術",
         "rss_category": "",
         "image_url": ""
@@ -564,16 +716,6 @@
         "site": "Zenn(LLM)",
         "published": "2026-05-26T13:55:12Z",
         "description": "契約書を要約しても、不安は要約されませんでした。\n契約書を代わりに読んでくれる Agent が欲しい。\n最初は、そう思って contract-question-agent を作り始めました。\n契約書をアップロードする。\n気になることを質問する。\nAgent が該当箇所を探して、説明してくれる。\n一見、それで十分そうに見えます。\n長い文章を見ると、とりあえずやりたくなることがあります。\n「この内容を...",
-        "category": "AI・技術",
-        "rss_category": "",
-        "image_url": ""
-      },
-      {
-        "title": "AIが、開発者に聞く ── R.E.V.I.S. #1 「最初の一行と、その足場」",
-        "url": "https://zenn.dev/enigma96y/articles/8dd4ca5623ef79",
-        "site": "Zenn(LLM)",
-        "published": "2026-05-26T12:01:05Z",
-        "description": "この連載について\nこれは、LLMに初めて触れた素人が、3ヶ月でAIアシスタント R.E.V.I.S. をゼロから完成させ、完成に至るまで の記録です。\n開発者本人（eNIGM4 / 株式会社メイビス）が、バージョンごとのソースコードを Claude に渡す。Claude はそれを実際に読み、開発者に質問していく ── その逐語を、ほぼそのまま掲載します。聞き手は人間ではなく、AI である Clau...",
         "category": "AI・技術",
         "rss_category": "",
         "image_url": ""
