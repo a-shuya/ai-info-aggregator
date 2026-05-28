@@ -1,9 +1,9 @@
 {
   "site": "Zenn(LLM)",
-  "last_updated": "2026-05-28T12:03:52.726940",
-  "total_articles": 3628,
+  "last_updated": "2026-05-28T16:31:39.818593",
+  "total_articles": 3607,
   "articles_by_date": {
-    "本日": [
+    "昨日": [
       {
         "title": "Claude vs Gemma4 — AIに100万円を渡して3週間、自動売買させてみた結果",
         "url": "https://zenn.dev/koki718/articles/fbdde27a2d9b53",
@@ -145,7 +145,7 @@
         "image_url": ""
       },
       {
-        "title": "Vector 検索の chunking strategy、どれをどう選ぶか",
+        "title": "RAG の chunking strategy、どれをどう選ぶか",
         "url": "https://zenn.dev/yasunami_daichi/articles/vector-chunking-strategy",
         "site": "Zenn(LLM)",
         "published": "2026-05-27T15:57:33Z",
@@ -155,7 +155,7 @@
         "image_url": ""
       }
     ],
-    "昨日": [
+    "一昨日": [
       {
         "title": "自律AIエージェントの並列実装設計 — 並列度を上げて壊れた話と回避策",
         "url": "https://zenn.dev/yureki/articles/parallel-agent-design-tradeoff",
@@ -307,218 +307,6 @@
         "image_url": ""
       }
     ],
-    "一昨日": [
-      {
-        "title": "M5 Max のローカル LLM ベンチ — MoE は GPU 性能、Dense はメモリ帯域幅がボトルネック、発熱の影響も調査",
-        "url": "https://zenn.dev/kamo78/articles/ds4-m5max-benchmark",
-        "site": "Zenn(LLM)",
-        "published": "2026-05-26T14:43:11Z",
-        "description": "!\n本記事は「M5 Max × DeepSeek V4 Flash」シリーズ（全3編）の後編です。\n\n前編: ds4/DeepSeek V4 Flash を macOS にセットアップし常駐化\n\n中編: ds4 / DeepSeek V4 Flash の速度を Macbook Pro M5Max で測る\n\n\n後編（本記事）: M5 Max のローカル LLM ベンチ — MoE は GPU 性能、...",
-        "category": "AI・技術",
-        "rss_category": "",
-        "image_url": ""
-      },
-      {
-        "title": "アンケート回答を代替するLLM個人モデルの構築と精度検証：N=1予備実験",
-        "url": "https://zenn.dev/minedia/articles/2026-05-25-ai-consumer-panel-digital-twin",
-        "site": "Zenn(LLM)",
-        "published": "2026-05-26T14:02:26Z",
-        "description": "3秒まとめ\n\n自分自身の個人モデルを構築し、アンケート回答を自動化する PoC「bunshin」を実装（N=1 の予備実験）\n答え合わせ用に伏せた 10 問（ホールドアウト）で評価: 単一選択 accuracy 71.4％（5/7）、Likert ±1 以内 66.7％（2/3）、MAE 1.0\n\n自由対話チャットでは本人らしい応答が観察され、強制選択と自由生成の非対称性 が示唆された\n\n\n 対象...",
-        "category": "AI・技術",
-        "rss_category": "",
-        "image_url": ""
-      },
-      {
-        "title": "【 MCPの富豪設計に敗北宣言 】ローカルLLM運用は自作のTool組み込みの方が圧倒的に有利な件",
-        "url": "https://zenn.dev/dewins/articles/continue-m-w-g",
-        "site": "Zenn(LLM)",
-        "published": "2026-05-26T13:58:39Z",
-        "description": "1. はじめに：完全ローカルで最新のモダンWeb開発をやりたかったという話\nhttps://zenn.dev/dewins/articles/mordern-web-guidance\n先日のAntigravityでの成功に味をしめて、今回はローカルLLMにModern Web Guidance（以下MWG）を今度はローカルのLLMで試したらどうなるのだろうか。\nそんな好奇心から先日導入したCont...",
-        "category": "AI・技術",
-        "rss_category": "",
-        "image_url": ""
-      },
-      {
-        "title": "Dify で社内問い合わせ AI を作ってみた — 情シス・人事・経費の質問に答える 5 つの Knowledge",
-        "url": "https://zenn.dev/makinestai/articles/dify-vs-claude-ops-rag-20-cases",
-        "site": "Zenn(LLM)",
-        "published": "2026-05-26T13:57:52Z",
-        "description": "Dify で社内問い合わせ AI を作ってみた — 情シス・人事・経費の質問に答える 5 つの Knowledge\n!\nTL;DR\n\n\n中堅企業の社内問い合わせ AI（情シス・人事・経費・マニュアル）を Dify（ノーコードで AI ワークフローを組めるオープンソースのプラットフォーム）で実装し、ops-rag-template として OSS 公開\n5 つの Knowledge（Dify 用語、...",
-        "category": "AI・技術",
-        "rss_category": "",
-        "image_url": ""
-      },
-      {
-        "title": "「この契約、危ないかも」を問いに変えるAgent設計",
-        "url": "https://zenn.dev/mofuteq/articles/678bbb06ae46d1",
-        "site": "Zenn(LLM)",
-        "published": "2026-05-26T13:55:12Z",
-        "description": "契約書を要約しても、不安は要約されませんでした。\n契約書を代わりに読んでくれる Agent が欲しい。\n最初は、そう思って contract-question-agent を作り始めました。\n契約書をアップロードする。\n気になることを質問する。\nAgent が該当箇所を探して、説明してくれる。\n一見、それで十分そうに見えます。\n長い文章を見ると、とりあえずやりたくなることがあります。\n「この内容を...",
-        "category": "AI・技術",
-        "rss_category": "",
-        "image_url": ""
-      },
-      {
-        "title": "LLMエージェントの失敗でCADを汚さないロールバック設計",
-        "url": "https://zenn.dev/0xliclog/articles/ca6381b58160f9",
-        "site": "Zenn(LLM)",
-        "published": "2026-05-26T11:00:05Z",
-        "description": "LLMエージェントに外部ツールを操作させるとき、失敗そのものより厄介なことがあります。\nそれは失敗が環境に残ることです。\nプログラムコードのようなテキスト生成なら、出力が間違っていても捨てれば済みます。\nWeb API でも、ステートレスな処理であれば「失敗したらもう一回」で済む場面は多いです。\nしかし、CAD のような状態を持つアプリケーションを直接操作する場合は話が変わります。\n\n線を引けば、...",
-        "category": "AI・技術",
-        "rss_category": "",
-        "image_url": ""
-      },
-      {
-        "title": "Anthropicに学ぶエージェント「設計」と「評価」——複雑なフレームワークより、シンプルなパターン",
-        "url": "https://zenn.dev/shintaroamaike/articles/67c21b040af42f",
-        "site": "Zenn(LLM)",
-        "published": "2026-05-26T10:30:05Z",
-        "description": "はじめに\nAIエージェントの本番化には、検証フェーズでは見えにくい落とし穴がある。\n利用者や対象業務を広げた途端に品質が落ちる——そんな事象に直面したチームは少なくないはずだ。\n原因を探ろうとすると、つい社内の過去事例や他社事例に手が伸びる。\nしかし個別の事例は、その組織やシステムに固有の構成・前提に強く依存している。\n参考にしたつもりでも自分たちのケースには当てはまらず、問題の本質を見落としたま...",
-        "category": "AI・技術",
-        "rss_category": "",
-        "image_url": ""
-      },
-      {
-        "title": "LLMの安全判定をSNNで補完する試み — Brian2による反射層プロトタイプ",
-        "url": "https://zenn.dev/naikaku01/articles/42c3f851e18b70",
-        "site": "Zenn(LLM)",
-        "published": "2026-05-26T09:41:24Z",
-        "description": "1. はじめに：LLMの安全性を「論理判断だけ」に委ねてよいのか？\n現代の大規模言語モデル（LLM）の安全機構は、多くの場合、LLM自身の文脈理解や論理推論に依存している。\nこれは柔軟で高度な判断を可能にする一方で、強い権威性を持つ命令文や文脈誘導（Prompt Injection / Social Engineering）によって、本来拒否すべき命令を正当化してしまう可能性がある。\n例えば、「管...",
-        "category": "AI・技術",
-        "rss_category": "",
-        "image_url": ""
-      },
-      {
-        "title": "LLM観測性ツール5社の実装思想を並べてみた",
-        "url": "https://zenn.dev/kenimo49/articles/llm-observability-5-tools-langfuse-langsmith-arize",
-        "site": "Zenn(LLM)",
-        "published": "2026-05-26T09:30:56Z",
-        "description": "なぜ「観測性」が AIエージェントで急に重くなったのか\n私はエンジニア兼投資家として、Claude CodeやLangChainで動くAIエージェントを日常的に運用しています。3ヶ月前、本番のエージェントが深夜に同じツールを8回呼び出してループする事故が起きました。原因を3時間かけて追いましたが、ログだけでは原因が掴めませんでした。\nLLMアプリの観測性は、伝統的なAPMとは前提が違います。AIエ...",
-        "category": "AI・技術",
-        "rss_category": "",
-        "image_url": ""
-      },
-      {
-        "title": "AIエージェントのツール定義設計原則：スキーマ・命名・レスポンスの実践ガイド",
-        "url": "https://zenn.dev/0h_n0/articles/581a4e0ece7056",
-        "site": "Zenn(LLM)",
-        "published": "2026-05-26T09:27:53Z",
-        "description": "AIエージェントのツール定義設計原則：スキーマ・命名・レスポンスの実践ガイド\n\n この記事でわかること\n\nAIエージェントのツール定義（JSON Schema）を設計するための7つの原則\n命名・説明文・パラメータ設計の具体的なベストプラクティス\nレスポンス設計でトークン消費を60%以上削減する手法\n大規模ツールセット（30個以上）でも精度を維持するTool Search・動的発見の仕組み\nAnth...",
-        "category": "AI・技術",
-        "rss_category": "",
-        "image_url": ""
-      },
-      {
-        "title": "ハーネスエンジニアなら知っておきたい Claude Code Plugin の落とし穴",
-        "url": "https://zenn.dev/storehero/articles/20ed4b2e8772b3",
-        "site": "Zenn(LLM)",
-        "published": "2026-05-26T08:30:05Z",
-        "description": "こんにちは、StoreHero で CPO をしている永田です。\n最近、社内で Claude Code の plugin を整備する機会が増えています。hooks.json で SessionStart に処理を挟んだり、SKILL.md でガードレールを書いたりするうちに、「公式ドキュメント通りに書いたはずなのに動かない」「CLI では動くのに別環境では動かない」といった事象に何度もぶつかりまし...",
-        "category": "AI・技術",
-        "rss_category": "",
-        "image_url": ""
-      },
-      {
-        "title": "レガシープロジェクトに単体テストフレームワークを導入し、生成AIを活用したが失敗した話",
-        "url": "https://zenn.dev/catspawengineer/articles/447b6b97c14579",
-        "site": "Zenn(LLM)",
-        "published": "2026-05-26T08:18:05Z",
-        "description": "このお話は2025年の年末から2026年の初頭にかけてのお話です。\n\n 環境\n秘守義務とかあるので詳細は書けませんが、こんな感じ。\n\nWindows（実際は組み込みの別OSで動く）\nC言語\nNetBeans IDE8.2\nCygwin(コマンドの追加インストール不可)\n設計書等は存在するが、ほぼお飾り。あるだけマシ。（レガシープロジェクトあるある）\n\n\n 経緯\n一旦作成が済んでいて、実稼働している...",
-        "category": "AI・技術",
-        "rss_category": "",
-        "image_url": ""
-      },
-      {
-        "title": "ik_llama.cpp を Windows でビルドして動かしてみる",
-        "url": "https://zenn.dev/akiya_souken/articles/build-ik-llama-cpp",
-        "site": "Zenn(LLM)",
-        "published": "2026-05-26T06:35:12Z",
-        "description": "はじめに\nローカルLLMの実行に ik_llama.cpp を使うと、通常の llama.cpp を使うより3割くらい高速に動作するらしいので試したい、となるとWindows向けには自力でビルドする必要がありますが、ビルド手順のページがちょっとわかりにくいので手順を整理したのがこのドキュメントです。\n\n 環境\n\nOS: Windows 11\nCPU: AMD Ryzen 9 3900X\nRAM: ...",
-        "category": "AI・技術",
-        "rss_category": "",
-        "image_url": ""
-      },
-      {
-        "title": "AnthropicがプロンプトにXMLタグを推奨する理由を公式ドキュメントから整理する",
-        "url": "https://zenn.dev/goki602/articles/2026-05-26-claude-prompt-xml-tags-why",
-        "site": "Zenn(LLM)",
-        "published": "2026-05-26T06:03:14Z",
-        "description": "「Markdownの見出しで整理しているのに、Claudeの応答がどうも安定しない」——そういった経験があるなら、AnthropicがClaude向けに明示的に推奨するXMLタグ構造化を一度試す価値がある。\n今週のはてブIT（29 users）でも取り上げられた「なぜAnthropicはプロンプトにXMLタグを推奨するのか」という問いに対し、公式ドキュメントと公開情報をもとに整理してみる。結論から...",
-        "category": "AI・技術",
-        "rss_category": "",
-        "image_url": ""
-      },
-      {
-        "title": "Bonsai はシーザー暗号を解けるのか",
-        "url": "https://zenn.dev/tokium_dev/articles/exam-bonsai-caesar",
-        "site": "Zenn(LLM)",
-        "published": "2026-05-26T05:00:00Z",
-        "description": "!\n今回の実験ではBonsaiにシーザー暗号を解かせてみたという試みをしました。Bonsai-8Bはツール活用時に高精度を達成できた一方、Bonsai-1.7B(LoRA含む)は同条件下で汎化できませんでした。Bonsai-8Bがツールを利用するときにハルシネーションが起きていたため学習設計を見直すなどが今後の展望です。\n\n\n 1. Bonsaiって何?\nprism-mlが公開しているBonsai...",
-        "category": "AI・技術",
-        "rss_category": "",
-        "image_url": ""
-      },
-      {
-        "title": "vLLMやOllamaって見かけるけど何だろう？",
-        "url": "https://zenn.dev/tasshi441/articles/ef25afc96658ec",
-        "site": "Zenn(LLM)",
-        "published": "2026-05-26T04:57:32Z",
-        "description": "はじめに\n業務でLLMベンダーのAPIを利用していますが、古いモデルが廃止されて使えなくなることや新しいモデルのAPI料金が倍になってることからセルフホストに注目しています。\n実際に業務でもセルフホストを使いそうな雰囲気が漂ってきています。\nそこで、少しずつセルフホストについてキャッチアップしていきつつ、備忘録兼ねて記事で公開していこうと思います！\n今回は2回目で、ローカルLLMやセルフホストを調...",
-        "category": "AI・技術",
-        "rss_category": "",
-        "image_url": ""
-      },
-      {
-        "title": "UpstageのGroundedness Check専用モデル廃止を乗り越え、汎用SolarモデルでRAGのハルシネーションを検知する",
-        "url": "https://zenn.dev/ytkdm/articles/upstage-solar-groundedness",
-        "site": "Zenn(LLM)",
-        "published": "2026-05-26T04:18:43Z",
-        "description": "はじめに\nRAG（Retrieval-Augmented Generation）システムを構築して社内ドキュメントを元に LLM に回答させる際、常に付きまとうのが「ハルシネーション（文脈外の知識の混入や誤り）」の問題です。LLM が提供した文脈（Context）に忠実に基づいて回答しているかを後段でチェックするガードレールを設置したい、というのは実務上よくある要求です。\nUpstage の公式ブ...",
-        "category": "AI・技術",
-        "rss_category": "",
-        "image_url": ""
-      },
-      {
-        "title": "ds4/DeepSeek V4 Flash を macOS にセットアップし常駐化",
-        "url": "https://zenn.dev/kamo78/articles/ds4-m5max-launchagent",
-        "site": "Zenn(LLM)",
-        "published": "2026-05-25T22:10:05Z",
-        "description": "!\n本記事は「M5 Max × DeepSeek V4 Flash」シリーズ（全3編）の前編です。\n\n\n前編（本記事）: ds4 を macOS にセットアップして LaunchAgent で常駐化\n中編: ds4 / DeepSeek V4 Flash を M5 Max で測る — 4系統 API・decode 34 tok/s・KV キャッシュ永続\n\n後編: M5 Max のローカル LLM ...",
-        "category": "AI・技術",
-        "rss_category": "",
-        "image_url": ""
-      },
-      {
-        "title": "AI 入力フォーマット完全ガイド: Markdown を起点に XML/JSON/YAML をタスク別に切り替える",
-        "url": "https://zenn.dev/motowo/articles/ai-prompt-markup-markdown-xml-json-yaml",
-        "site": "Zenn(LLM)",
-        "published": "2026-05-25T22:00:05Z",
-        "description": "はじめに — 「とりあえず Markdown」の落とし穴\n200 行を超える CLAUDE.md と .claude/agents/*.md を Markdown で一気に書き上げたあと、レビュー結果の精度がじわじわ落ちている——そんな感覚を覚えたことはないでしょうか。サブエージェントを増やすたびに「指示が混線する」「JSON を強制したら推論が浅くなる」「XML タグで囲ったら逆に冗長になった」...",
-        "category": "AI・技術",
-        "rss_category": "",
-        "image_url": ""
-      },
-      {
-        "title": "AI Agent に「学び方」を教えるとは何か — Code with Claude 2026 London",
-        "url": "https://zenn.dev/noah33/articles/teaching-agents-to-learn",
-        "site": "Zenn(LLM)",
-        "published": "2026-05-25T18:04:17Z",
-        "description": "!\nℹ️ 本記事について\n個人の学習と考察をまとめたものです。所属組織の公式見解ではありません。引用文は文字起こしから抜粋しており、動画版の発話と完全一致を保証するものではありません。\n\n\n はじめに\n先日ロンドンで開催された Anthropic 主催の開発者カンファレンス『Code with Claude 2026』のセッションを、毎日少しずつ見ています。1 日に 1〜2 セッションを、休日と夜...",
-        "category": "AI・技術",
-        "rss_category": "",
-        "image_url": ""
-      },
-      {
-        "title": "なぜ、「SaaS is dead」というのはデタラメなミームなのか？",
-        "url": "https://zenn.dev/pdfractal/articles/43ababd447b787",
-        "site": "Zenn(LLM)",
-        "published": "2026-05-25T16:13:15Z",
-        "description": "はじめに\n「SaaS is dead」という言葉は、強い標語としては目を引きます。しかし業務システムの実態から見ると、この言葉はかなり粗いです。正確には、死ぬのはSaaSではなく、SaaSの顔をしたニセSaaSです。\n本来のSaaSは、業務を標準に寄せることに意味がある領域で成立します。人事給与、経費精算、ID管理、電子契約、会計の一部のように、会社ごとに競争優位を出す必要が薄く、むしろ標準化によ...",
-        "category": "AI・技術",
-        "rss_category": "",
-        "image_url": ""
-      }
-    ],
     "2026-05": [
       {
         "title": "Claude vs Gemma4 — AIに100万円を渡して3週間、自動売買させてみた結果",
@@ -661,7 +449,7 @@
         "image_url": ""
       },
       {
-        "title": "Vector 検索の chunking strategy、どれをどう選ぶか",
+        "title": "RAG の chunking strategy、どれをどう選ぶか",
         "url": "https://zenn.dev/yasunami_daichi/articles/vector-chunking-strategy",
         "site": "Zenn(LLM)",
         "published": "2026-05-27T15:57:33Z",
