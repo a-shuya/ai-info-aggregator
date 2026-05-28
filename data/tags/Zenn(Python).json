@@ -1,9 +1,29 @@
 {
   "site": "Zenn(Python)",
-  "last_updated": "2026-05-28T00:12:21.449549",
-  "total_articles": 4226,
+  "last_updated": "2026-05-28T04:46:08.186467",
+  "total_articles": 4228,
   "articles_by_date": {
     "本日": [
+      {
+        "title": "Zenn記事の固有名詞誤記をpre-commit hookで防ぐ",
+        "url": "https://zenn.dev/tsukasa_art/articles/zenn-lint-precommit-hook",
+        "site": "Zenn(Python)",
+        "published": "2026-05-28T03:42:41Z",
+        "description": "この記事に出てくる用語\ngit hook\ngit commit や git push などのgitコマンド実行時に自動で走るスクリプト。.git/hooks/ ディレクトリに実行可能ファイルとして置く。pre-commit（コミット前）・pre-push（プッシュ前）・commit-msg（コミットメッセージ検証）などの種類がある。\npre-commit hook\ngit commit 実行時、コ...",
+        "category": "開発",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "その「time.sleep(1)」が資金を溶かす - Botを止めないExponential Backoffの実装",
+        "url": "https://zenn.dev/stchastech/articles/5a1d2c3fbcaed3",
+        "site": "Zenn(Python)",
+        "published": "2026-05-27T23:00:10Z",
+        "description": "はじめに\n自動売買Botを実運用したことがある人なら、こんな経験があるはずです。\n\n朝起きたらBotがAPIエラーで止まっており、絶好のトレンド相場を逃していた\nタイムアウト時に安易にリトライした結果、同じ注文が2回送信され（二重注文）不要なポジションを抱えた\n\n特に暗号資産取引所のAPIは、相場急変時（最もチャンスでありピンチの時）に限って\nレスポンスが極端に不安定になります。\n「1回の通信失敗...",
+        "category": "開発",
+        "rss_category": "",
+        "image_url": ""
+      },
       {
         "title": "忖度なし評価から始めたコード負債返済で、毎回『やらない／縮小する判断』に行き着いた話 ── C3 v2.29.1 + 内部品質リファクタ",
         "url": "https://zenn.dev/satoh_y_0323/articles/baaa25ddb7e41e",
@@ -167,21 +187,21 @@
         "image_url": ""
       },
       {
-        "title": "AWS LambdaでAI先輩を作った — 毎朝5時に話しかけてくれて、@メンションで相談にも乗るSenpai Agent",
-        "url": "https://zenn.dev/shori1234/articles/02_senpai-agent",
-        "site": "Zenn(Python)",
-        "published": "2026-05-27T10:29:32Z",
-        "description": "AWS LambdaでAI先輩を作った — 毎朝5時に話しかけてくれて、@メンションで相談にも乗るSenpai Agent\n\n この記事について\n毎朝5時になると、Slackに「今週ずっと詰めてるじゃん、昨日はちゃんと寝れた？😊」という感じのメッセージが届く。送り主は橘さつき、AI先輩エージェントだ。\n前回作ったBoss Agent（神崎鉄）が「管理・目標・結果」の軸なら、Senpai Agent...",
-        "category": "開発",
-        "rss_category": "",
-        "image_url": ""
-      },
-      {
         "title": "AIニュースを毎日自動収集してSlackに届ける — Tavily・GitHub・Zenn横断のResearch Agent",
         "url": "https://zenn.dev/shori1234/articles/03_research-agent",
         "site": "Zenn(Python)",
         "published": "2026-05-27T10:29:32Z",
         "description": "AIニュースを毎日自動収集してSlackに届ける — Tavily・GitHub・Zenn・Qiita・ArXiv横断のResearch Agent\n\n この記事について\n毎朝Slackに「📅 2026年5月XX日 AI情報まとめ」が届くようになった。Tavily・GitHub・Zenn・Qiita・ArXiv、5つのソースからAI関連情報を収集し、Claude Haikuが重要度で絞り込んで要約...",
+        "category": "開発",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "AWS LambdaでAI先輩を作った — 毎朝5時に話しかけてくれて、@メンションで相談にも乗るSenpai Agent",
+        "url": "https://zenn.dev/shori1234/articles/02_senpai-agent",
+        "site": "Zenn(Python)",
+        "published": "2026-05-27T10:29:32Z",
+        "description": "AWS LambdaでAI先輩を作った — 毎朝5時に話しかけてくれて、@メンションで相談にも乗るSenpai Agent\n\n この記事について\n毎朝5時になると、Slackに「今週ずっと詰めてるじゃん、昨日はちゃんと寝れた？😊」という感じのメッセージが届く。送り主は橘さつき、AI先輩エージェントだ。\n前回作ったBoss Agent（神崎鉄）が「管理・目標・結果」の軸なら、Senpai Agent...",
         "category": "開発",
         "rss_category": "",
         "image_url": ""
@@ -272,16 +292,6 @@
         "site": "Zenn(Python)",
         "published": "2026-05-26T23:00:09Z",
         "description": "はじめに\nCFD（差金決済取引）の自動売買において、バックテストが優秀なのにライブで失敗するケースのひとつにトレンドバイアス問題があります。\nこれは「テスト期間中にたまたまトレンドが強い相場が続いており、それに乗っかっただけで好成績を出したロング戦略が、過学習した戦略として誤検知されにくい」という問題です。\nこの記事では、AIを活用して開発・運用しているCFDバックテストフレームワーク auto_...",
-        "category": "開発",
-        "rss_category": "",
-        "image_url": ""
-      },
-      {
-        "title": "オープンソース化した「MOPAC2016」をPythonで全力活用！  １　導入と自動計算の基礎",
-        "url": "https://zenn.dev/pincolo/articles/bbb377272bf321",
-        "site": "Zenn(Python)",
-        "published": "2026-05-26T21:30:05Z",
-        "description": "オープンソース化した「MOPAC2016」をPythonで全力活用（第1回：導入と基礎計算編）\n\n はじめに：計算化学の民主化とMOPACの帰還\nかつて、量子化学計算（分子軌道法）は、高価なワークステーションと、さらに高価な商用ソフトウェアライセンスを持つ一部の研究室だけのものでした。しかし、その常識は劇的に変わりつつあります。\nその象徴的な出来事のひとつが、半経験的分子軌道法ソフトの代名詞である...",
         "category": "開発",
         "rss_category": "",
         "image_url": ""
@@ -471,6 +481,26 @@
     ],
     "2026-05": [
       {
+        "title": "Zenn記事の固有名詞誤記をpre-commit hookで防ぐ",
+        "url": "https://zenn.dev/tsukasa_art/articles/zenn-lint-precommit-hook",
+        "site": "Zenn(Python)",
+        "published": "2026-05-28T03:42:41Z",
+        "description": "この記事に出てくる用語\ngit hook\ngit commit や git push などのgitコマンド実行時に自動で走るスクリプト。.git/hooks/ ディレクトリに実行可能ファイルとして置く。pre-commit（コミット前）・pre-push（プッシュ前）・commit-msg（コミットメッセージ検証）などの種類がある。\npre-commit hook\ngit commit 実行時、コ...",
+        "category": "開発",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "その「time.sleep(1)」が資金を溶かす - Botを止めないExponential Backoffの実装",
+        "url": "https://zenn.dev/stchastech/articles/5a1d2c3fbcaed3",
+        "site": "Zenn(Python)",
+        "published": "2026-05-27T23:00:10Z",
+        "description": "はじめに\n自動売買Botを実運用したことがある人なら、こんな経験があるはずです。\n\n朝起きたらBotがAPIエラーで止まっており、絶好のトレンド相場を逃していた\nタイムアウト時に安易にリトライした結果、同じ注文が2回送信され（二重注文）不要なポジションを抱えた\n\n特に暗号資産取引所のAPIは、相場急変時（最もチャンスでありピンチの時）に限って\nレスポンスが極端に不安定になります。\n「1回の通信失敗...",
+        "category": "開発",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
         "title": "忖度なし評価から始めたコード負債返済で、毎回『やらない／縮小する判断』に行き着いた話 ── C3 v2.29.1 + 内部品質リファクタ",
         "url": "https://zenn.dev/satoh_y_0323/articles/baaa25ddb7e41e",
         "site": "Zenn(Python)",
@@ -631,21 +661,21 @@
         "image_url": ""
       },
       {
-        "title": "AWS LambdaでAI先輩を作った — 毎朝5時に話しかけてくれて、@メンションで相談にも乗るSenpai Agent",
-        "url": "https://zenn.dev/shori1234/articles/02_senpai-agent",
-        "site": "Zenn(Python)",
-        "published": "2026-05-27T10:29:32Z",
-        "description": "AWS LambdaでAI先輩を作った — 毎朝5時に話しかけてくれて、@メンションで相談にも乗るSenpai Agent\n\n この記事について\n毎朝5時になると、Slackに「今週ずっと詰めてるじゃん、昨日はちゃんと寝れた？😊」という感じのメッセージが届く。送り主は橘さつき、AI先輩エージェントだ。\n前回作ったBoss Agent（神崎鉄）が「管理・目標・結果」の軸なら、Senpai Agent...",
-        "category": "開発",
-        "rss_category": "",
-        "image_url": ""
-      },
-      {
         "title": "AIニュースを毎日自動収集してSlackに届ける — Tavily・GitHub・Zenn横断のResearch Agent",
         "url": "https://zenn.dev/shori1234/articles/03_research-agent",
         "site": "Zenn(Python)",
         "published": "2026-05-27T10:29:32Z",
         "description": "AIニュースを毎日自動収集してSlackに届ける — Tavily・GitHub・Zenn・Qiita・ArXiv横断のResearch Agent\n\n この記事について\n毎朝Slackに「📅 2026年5月XX日 AI情報まとめ」が届くようになった。Tavily・GitHub・Zenn・Qiita・ArXiv、5つのソースからAI関連情報を収集し、Claude Haikuが重要度で絞り込んで要約...",
+        "category": "開発",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "AWS LambdaでAI先輩を作った — 毎朝5時に話しかけてくれて、@メンションで相談にも乗るSenpai Agent",
+        "url": "https://zenn.dev/shori1234/articles/02_senpai-agent",
+        "site": "Zenn(Python)",
+        "published": "2026-05-27T10:29:32Z",
+        "description": "AWS LambdaでAI先輩を作った — 毎朝5時に話しかけてくれて、@メンションで相談にも乗るSenpai Agent\n\n この記事について\n毎朝5時になると、Slackに「今週ずっと詰めてるじゃん、昨日はちゃんと寝れた？😊」という感じのメッセージが届く。送り主は橘さつき、AI先輩エージェントだ。\n前回作ったBoss Agent（神崎鉄）が「管理・目標・結果」の軸なら、Senpai Agent...",
         "category": "開発",
         "rss_category": "",
         "image_url": ""
@@ -736,16 +766,6 @@
         "site": "Zenn(Python)",
         "published": "2026-05-26T23:00:09Z",
         "description": "はじめに\nCFD（差金決済取引）の自動売買において、バックテストが優秀なのにライブで失敗するケースのひとつにトレンドバイアス問題があります。\nこれは「テスト期間中にたまたまトレンドが強い相場が続いており、それに乗っかっただけで好成績を出したロング戦略が、過学習した戦略として誤検知されにくい」という問題です。\nこの記事では、AIを活用して開発・運用しているCFDバックテストフレームワーク auto_...",
-        "category": "開発",
-        "rss_category": "",
-        "image_url": ""
-      },
-      {
-        "title": "オープンソース化した「MOPAC2016」をPythonで全力活用！  １　導入と自動計算の基礎",
-        "url": "https://zenn.dev/pincolo/articles/bbb377272bf321",
-        "site": "Zenn(Python)",
-        "published": "2026-05-26T21:30:05Z",
-        "description": "オープンソース化した「MOPAC2016」をPythonで全力活用（第1回：導入と基礎計算編）\n\n はじめに：計算化学の民主化とMOPACの帰還\nかつて、量子化学計算（分子軌道法）は、高価なワークステーションと、さらに高価な商用ソフトウェアライセンスを持つ一部の研究室だけのものでした。しかし、その常識は劇的に変わりつつあります。\nその象徴的な出来事のひとつが、半経験的分子軌道法ソフトの代名詞である...",
         "category": "開発",
         "rss_category": "",
         "image_url": ""
