@@ -1,9 +1,31 @@
 {
   "site": "Zenn(機械学習)",
-  "last_updated": "2026-05-29T11:55:14.284405",
-  "total_articles": 1125,
+  "last_updated": "2026-05-29T15:50:02.238289",
+  "total_articles": 1120,
   "articles_by_date": {
     "昨日": [
+      {
+        "title": "MLIR 入門 — AI推論最適化の仕組みを低レベルから理解する（opt / llc で NEON 命令を出す）",
+        "url": "https://zenn.dev/ux_xu/articles/mlir-neon-vectorize-opt-llc",
+        "site": "Zenn(機械学習)",
+        "published": "2026-05-29T06:25:27Z",
+        "description": "はじめに\n前の記事では、linalg dialect で書いた vec_add を mlir-opt で段階的に Lowering し、mlir-translate でスカラーの LLVM IR（vec_add.ll）を生成するところまでを追いました。\nAI 推論の最適化においては、テンソル演算をハードウェアの SIMD 命令に写像することが重要です。この記事ではその続きとして、生成したスカラー ...",
+        "category": "AI・技術",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "画像処理における自己教師あり学習入門",
+        "url": "https://zenn.dev/fairydevices/articles/5234d518fc2de1",
+        "site": "Zenn(機械学習)",
+        "published": "2026-05-29T04:04:20Z",
+        "description": "画像処理における自己教師あり学習入門\n\n 1. はじめに\n自己教師あり学習（self-supervised learning, 以下 SSL）は、外部の教師ラベルを用いずにデータ自身の構造や相互関係から有用な特徴表現を学習させる枠組みです。近年は画像・音声・言語など多様な領域で成果が報告され、産業でも導入事例が増えています。\n本稿では画像分野に焦点を当てます。公開済みの事前学習済み SSL モデル...",
+        "category": "AI・技術",
+        "rss_category": "",
+        "image_url": ""
+      }
+    ],
+    "一昨日": [
       {
         "title": "エンジニアが最低限押さえたいLLMの基礎知識",
         "url": "https://zenn.dev/nagi_dev/articles/llm-basics-you-should-know",
@@ -95,99 +117,27 @@
         "image_url": ""
       }
     ],
-    "一昨日": [
-      {
-        "title": "需要予測における打ち切り問題 ⑤実装編・新商品 ＋ 発展編・廃盤商品 ＋ シリーズ総括",
-        "url": "https://zenn.dev/salt2/articles/b20f76df-article",
-        "site": "Zenn(機械学習)",
-        "published": "2026-05-27T10:47:40Z",
-        "description": "!\n3行まとめ\n\nシリーズ最終回は、新商品（履歴なしの難敵） と 廃盤商品（価格・心理・在庫が絡む発展的話題） という、既存商品より一段難しい問題を扱います。\n新商品では「類似商品転移 × 打ち切り補正」の 2 段階法を Python で実装し、さらに PyTorch の Tobit[1] 損失関数を紹介します。\n廃盤商品は価格・在庫・心理が絡み合い、現時点で成熟した解法はありません。生存分析と因...",
-        "category": "AI・技術",
-        "rss_category": "",
-        "image_url": ""
-      },
-      {
-        "title": "表形式データ拡張手法 part10：ROSE",
-        "url": "https://zenn.dev/haruto_big6/articles/5e4386a70048d3",
-        "site": "Zenn(機械学習)",
-        "published": "2026-05-27T09:38:39Z",
-        "description": "TL; DR\n\nROSEはRandom Over Sampling (ROS)のようにデータをそのまま複製するのではなく，摂動を加えることで新たなデータ点を生成する\nその摂動はKDEにおけるバンド幅の経験則であるSilvermanのルールに従って標準偏差が定められる正規分布である\n少数クラスデータの拡張ではなく，データセット全体の置換を行うことでデータ活用の柔軟性を向上させる\n\n\n 基本情報\nSM...",
-        "category": "AI・技術",
-        "rss_category": "",
-        "image_url": ""
-      },
-      {
-        "title": "【全5回】Graph Neural Networks入門と最前線——GCNの基礎から創薬・不正検知の産業応用まで",
-        "url": "https://zenn.dev/salt2/articles/gnn-introduction-series",
-        "site": "Zenn(機械学習)",
-        "published": "2026-05-27T07:50:12Z",
-        "description": "「グラフ構造のデータを扱いたいけど、GNNってどこから入ればいいかわからない」\n自分が最初にGNNを勉強し始めたとき、ちょうどそういう状態でした。論文を読んでも数式の導出が追えない、チュートリアルのコードは動くけど何をやっているかわからない——そういった経験を経て、「自分が欲しかった入門書」を書いてみようと思い立ったのがこのシリーズのきっかけです。\n全5回のシリーズ 「Graph Neural N...",
-        "category": "AI・技術",
-        "rss_category": "",
-        "image_url": ""
-      },
-      {
-        "title": "日本語OCRモデルを比較 ー 速度・性能・メモリから最適解を探る",
-        "url": "https://zenn.dev/acompany/articles/ddf8677f09e252",
-        "site": "Zenn(機械学習)",
-        "published": "2026-05-27T04:41:33Z",
-        "description": "はじめに\nはじめまして、株式会社 Acompany でインターンをしている luna_moonlight です。\n普段は、生成AIに機密情報を入力してしまうリスクを防ぐサービス セキュアチャット の開発に携わっています。\nhttps://service.acompany.tech/cas/secure-chat/\nセキュアチャットは、ユーザーが入力したプロンプトから個人情報（PII）や社内機密情報...",
-        "category": "AI・技術",
-        "rss_category": "",
-        "image_url": ""
-      },
-      {
-        "title": "MADL / GMADL lossとは何か：金融時系列予測で「売買に使える損失関数」を考える",
-        "url": "https://zenn.dev/rinn5/articles/madl-gmadl-loss-zenn",
-        "site": "Zenn(機械学習)",
-        "published": "2026-05-27T04:20:47Z",
-        "description": "「金融時系列予測では、とりあえず MSE や MAE を小さくすればいいのでは？」\n最初は自分もそう思っていました。\n機械学習で回帰問題を解くなら、予測値と実際の値の差を小さくするのが自然です。なので、株価やリターンを予測するときも、MSE、MAE、RMSE のような損失関数を使うのが普通に見えます。\nしかし、金融の売買戦略として考えると、少し話が変わってきます。\nたとえば、明日のリターンが実際に...",
-        "category": "AI・技術",
-        "rss_category": "",
-        "image_url": ""
-      },
-      {
-        "title": "不均衡データ処理をLightGBMで比較する SMOTE vs アンダーサンプリングアンサンブル",
-        "url": "https://zenn.dev/kyoju_teach/articles/d941b78007bb9b",
-        "site": "Zenn(機械学習)",
-        "published": "2026-05-27T03:52:31Z",
-        "description": "はじめに\n機械学習を実務で扱っていると、高頻度で遭遇するのが「不均衡データ（Imbalanced Data）」です。\n例えば：\n\nクレジットカード不正検知\n課金ユーザー予測\n離脱予測\n障害検知\nBAN対象ユーザー検知\n医療診断\n\nなどでは、「検知したい事象」そのものの発生率が低いケースが非常に多いです。\n例えば：\n\n不正率 0.1%\n課金率 2%\n重篤疾患 0.5%\n\nのようなケースです。\nこのよ...",
-        "category": "AI・技術",
-        "rss_category": "",
-        "image_url": ""
-      },
-      {
-        "title": "定理証明AIの「最小構成」エージェント：複雑化へのアンチテーゼ",
-        "url": "https://zenn.dev/lluminai_tech/articles/0e8541ce752f73",
-        "site": "Zenn(機械学習)",
-        "published": "2026-05-26T23:06:05Z",
-        "description": "はじめに\nルミナイR&amp;Dチームの宮脇彰梧です。\n現在はマルチモーダルAIの研究を行う大学院生として、\n生成AIやAIエージェントの技術を実践的に探求しています。\n最近、AIエージェントのアーキテクチャってどんどん複雑化していませんか？\nマルチエージェント連携、複雑なルーティング、高度な木探索 ……。もちろんそれらが必要な領域もありますが、「果たして本当にそこまでの複雑さが必要なのか？」と疑...",
-        "category": "AI・技術",
-        "rss_category": "",
-        "image_url": ""
-      },
-      {
-        "title": "AIが80年の難問を解いた日",
-        "url": "https://zenn.dev/lingmu/articles/2026-05-26-openai-geometry-breakthrough",
-        "site": "Zenn(機械学習)",
-        "published": "2026-05-26T22:28:17Z",
-        "description": "AIが80年の難問を解いた日\n2026-05-26 | 読了 4分 | #AI #数学 #OpenAI\n80年間、誰も答えを出せなかった数学の予想が、AIによって覆された。純粋数学の最難関領域に、機械が踏み込んだ瞬間だ。\n\n\n 80年解けなかった「色塗り問題」\n1946年、数学者ネルソンが一つの問いを立てた。\n「平面上のすべての点を、距離が1の2点が同じ色にならないよう塗るには、何色必要か?」\nこ...",
-        "category": "AI・技術",
-        "rss_category": "",
-        "image_url": ""
-      },
-      {
-        "title": "オープンソース化した「MOPAC2016」をPythonで全力活用！  １　導入と自動計算の基礎",
-        "url": "https://zenn.dev/pincolo/articles/bbb377272bf321",
-        "site": "Zenn(機械学習)",
-        "published": "2026-05-26T21:30:05Z",
-        "description": "オープンソース化した「MOPAC2016」をPythonで全力活用（第1回：導入と基礎計算編）\n\n はじめに：計算化学の民主化とMOPACの帰還\nかつて、量子化学計算（分子軌道法）は、高価なワークステーションと、さらに高価な商用ソフトウェアライセンスを持つ一部の研究室だけのものでした。しかし、その常識は劇的に変わりつつあります。\nその象徴的な出来事のひとつが、半経験的分子軌道法ソフトの代名詞である...",
-        "category": "AI・技術",
-        "rss_category": "",
-        "image_url": ""
-      }
-    ],
     "2026-05": [
+      {
+        "title": "MLIR 入門 — AI推論最適化の仕組みを低レベルから理解する（opt / llc で NEON 命令を出す）",
+        "url": "https://zenn.dev/ux_xu/articles/mlir-neon-vectorize-opt-llc",
+        "site": "Zenn(機械学習)",
+        "published": "2026-05-29T06:25:27Z",
+        "description": "はじめに\n前の記事では、linalg dialect で書いた vec_add を mlir-opt で段階的に Lowering し、mlir-translate でスカラーの LLVM IR（vec_add.ll）を生成するところまでを追いました。\nAI 推論の最適化においては、テンソル演算をハードウェアの SIMD 命令に写像することが重要です。この記事ではその続きとして、生成したスカラー ...",
+        "category": "AI・技術",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "画像処理における自己教師あり学習入門",
+        "url": "https://zenn.dev/fairydevices/articles/5234d518fc2de1",
+        "site": "Zenn(機械学習)",
+        "published": "2026-05-29T04:04:20Z",
+        "description": "画像処理における自己教師あり学習入門\n\n 1. はじめに\n自己教師あり学習（self-supervised learning, 以下 SSL）は、外部の教師ラベルを用いずにデータ自身の構造や相互関係から有用な特徴表現を学習させる枠組みです。近年は画像・音声・言語など多様な領域で成果が報告され、産業でも導入事例が増えています。\n本稿では画像分野に焦点を当てます。公開済みの事前学習済み SSL モデル...",
+        "category": "AI・技術",
+        "rss_category": "",
+        "image_url": ""
+      },
       {
         "title": "エンジニアが最低限押さえたいLLMの基礎知識",
         "url": "https://zenn.dev/nagi_dev/articles/llm-basics-you-should-know",
