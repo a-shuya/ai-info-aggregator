@@ -1,19 +1,9 @@
 {
   "site": "Zenn(Python)",
-  "last_updated": "2026-05-30T14:02:37.552653",
-  "total_articles": 4257,
+  "last_updated": "2026-05-30T15:34:41.940603",
+  "total_articles": 4243,
   "articles_by_date": {
-    "本日": [
-      {
-        "title": "4文字でLLMを命令したら、命令の意図を超えた判断をした",
-        "url": "https://zenn.dev/emilia_lab/articles/toa-llm-as-cpu",
-        "site": "Zenn(Python)",
-        "published": "2026-05-30T14:01:39Z",
-        "description": "XSSスキャンを命令したのに、SQLiを修正された。\n命令したのは s1x9 という4文字だけだ。「セキュリティドメイン、#1レジスタ、XSSチェック、優先度9」。自然言語は一切ない。なのにClaudeはこう返した。\n→ Security scan at ctx #1 (priority 9) completed but action mismatch detected —\n  requested...",
-        "category": "開発",
-        "rss_category": "",
-        "image_url": ""
-      },
+    "昨日": [
       {
         "title": "ローカルLLM#4 \"5問×3 モデルの手動比較が面倒になったのでPythonで自動化した\"",
         "url": "https://zenn.dev/black_lotus/articles/f1cf61d21a7ba7",
@@ -105,7 +95,7 @@
         "image_url": ""
       }
     ],
-    "昨日": [
+    "一昨日": [
       {
         "title": "【Microsoft Hackathon 2026】Azure OpenAIが自律開発し、人間が最終承認する「安全なAI企業」を作った",
         "url": "https://zenn.dev/emilia_lab/articles/cpos-sandbox-azure-hackathon",
@@ -202,6 +192,16 @@
         "site": "Zenn(Python)",
         "published": "2026-05-29T04:56:05Z",
         "description": "AI研究計画その１ 〜Gemini APIで簡単なチャットbotをつくってみた〜\nこんにちは。新しく「AI研究計画」と題して、AIを活用した様々な開発をシリーズで発信していくことにしました。\n第1回目は、Googleの最新AIモデルを手軽に扱える Gemini API を使い、ターミナル上で動くシンプルな対話型AIチャットボットを実装します。\n過去の会話の文脈（コンテキスト）を維持したまま会話を続...",
+        "category": "開発",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "外部依存ゼロの日本語「意味理解」エンジン KotobaCore を作って OSS 公開しました",
+        "url": "https://zenn.dev/kiyobo/articles/583dbe4593a1ea",
+        "site": "Zenn(Python)",
+        "published": "2026-05-29T04:09:57Z",
+        "description": "日本語テキストを チャンク分割・感情(Plutchik 8軸)・意図・RAGキーワード に一括変換するエンジン KotobaCore を OSS 公開しました（Apache-2.0）。\nMeCab も SudachiPy も BERT も使わず、外部依存ゼロ の自前トークナイザー「Karuizawa」だけで動きます。\n\nGitHub: https://github.com/ekiyo55/koto...",
         "category": "開発",
         "rss_category": "",
         "image_url": ""
@@ -297,159 +297,7 @@
         "image_url": ""
       }
     ],
-    "一昨日": [
-      {
-        "title": "LINEボット × AWS Lambda でつまずいた5つのポイント",
-        "url": "https://zenn.dev/shori1234/articles/06_line-aws-lambda-pitfalls",
-        "site": "Zenn(Python)",
-        "published": "2026-05-28T14:00:19Z",
-        "description": "はじめに\n飲食店向けのLINE予約ボットをAWS Lambda + Claude APIで作った。インフラはDynamoDB・API Gateway・EventBridge Schedulerの組み合わせで、シンプルな構成のつもりだった。\nところが実装中に「コードは問題ないのに動かない」ケースが何度かあった。いずれもドキュメントに書いていないか、さらっとしか触れていない仕様がトリガーになっていた。...",
-        "category": "開発",
-        "rss_category": "",
-        "image_url": ""
-      },
-      {
-        "title": "【個人開発】👻👻👻ハッカーから「見えない・触れない」。幽霊モデルを採用した究極のパスワードマネージャーを作ってみた👻👻👻",
-        "url": "https://zenn.dev/ksangood/articles/6b96ac15211fdd",
-        "site": "Zenn(Python)",
-        "published": "2026-05-28T11:40:48Z",
-        "description": "はじめに：プログラムを「幽霊」にするとは？\n古来より、幽霊は「実体を持ちながらも目に見えない（透明・不可視）」、そして「壁をすり抜け、物理的な干渉を受け付けない（非接触・実体がない）」という2つの超自然的な特性を持っています 。\nもし、計算機の上で動くプログラムを、この「幽霊」と同じ状態にできたらどうなるでしょうか？\nプログラムが確かに動いて仕事をしているのに、ハッカーやウイルスからは「どこで何を...",
-        "category": "開発",
-        "rss_category": "",
-        "image_url": ""
-      },
-      {
-        "title": "長文でAIが壊れる理由と、SEEDという小さな答え",
-        "url": "https://zenn.dev/raina_ai/articles/0b756a1093aab9",
-        "site": "Zenn(Python)",
-        "published": "2026-05-28T10:47:51Z",
-        "description": "1. はじめに：今日、点と点がつながった話\nはじめまして、らいなと申します。\n普段は Linux を触りながら、職業訓練で Python＋Java を学び、IT 業界への転職を\n目指している未経験者です。\nAI と日々対話する中で、会話が長くなると\n・回答がズレる\n・タイムスタンプがずれる\nという現象に悩まされていました。\nこの問題を解決するために、AI と協力して「文脈を軽くするツール」を作りま...",
-        "category": "開発",
-        "rss_category": "",
-        "image_url": ""
-      },
-      {
-        "title": "動的スキーマを 1 テーブル × 1 endpoint で扱う設計について",
-        "url": "https://zenn.dev/eiger_inc/articles/309000e4b0e20f",
-        "site": "Zenn(Python)",
-        "published": "2026-05-28T09:02:15Z",
-        "description": "動的スキーマを 1 テーブル × 1 endpoint で扱う設計\n\n はじめに\n業務システムを運用していると、扱うデータの「型」が増えたり、既存の型にフィールドが追加されたりすることが日常的に起こります。\n営業管理なら顧客に新しい属性が増え、案件管理ならステータスの種類が増え、請求管理なら請求書に注釈フィールドが必要になる、といった具合です。\n素朴に実装すれば、Object（業務オブジェクト）ご...",
-        "category": "開発",
-        "rss_category": "",
-        "image_url": ""
-      },
-      {
-        "title": "【第７回】Microsoft Agent Frameworkで学ぶAIエージェント設計原則：ワークフローを Agent として公開する",
-        "url": "https://zenn.dev/naruaki/articles/af-design-07-facade",
-        "site": "Zenn(Python)",
-        "published": "2026-05-28T08:20:28Z",
-        "description": "!\nこの記事は「AIエージェント設計原則シリーズ」の第7回です。Microsoft Agent Framework を題材に、ソフトウェア設計原則を AI エージェントに適用する方法を解説します。\n\n\n はじめに\n前回まで、Agent を分割し、ワークフローとして組み上げる方法を学びました。\nワークフローが組めたとして、それをどう「使わせるか」は別の設計課題です。\n第7回のテーマは Facade ...",
-        "category": "開発",
-        "rss_category": "",
-        "image_url": ""
-      },
-      {
-        "title": "プロンプトでAIが生成するコードが変わる、そして学習効率も変わる",
-        "url": "https://zenn.dev/firstplain/articles/cce41fd35890cc",
-        "site": "Zenn(Python)",
-        "published": "2026-05-28T06:41:16Z",
-        "description": "プロンプトでAIが生成するコードが変わる、そして学習も効果も変わる\n最近よく見かける、「生成AIが劇的に賢くなる追加プロンプト」を試してみました。\nすると、単にコード品質が上がるだけでなく、自分自身の学習にもかなり効果があると感じました。\n\n きっかけ\n以前、CopilotでPythonコードを書いてみたという記事を書きました。\n生成されたコードを読んでいて、少し違和感がありました。\n「変数や引数...",
-        "category": "開発",
-        "rss_category": "",
-        "image_url": ""
-      },
-      {
-        "title": "Web開発を勉強するために、OCRツールを作成する(1)",
-        "url": "https://zenn.dev/noayasu/articles/87078f99c153cb",
-        "site": "Zenn(Python)",
-        "published": "2026-05-28T05:01:55Z",
-        "description": "レシートOCRツール開発 — 構成設計編\n今年就職なのですが、Web開発を勉強するぞ第一弾としてOCRツールの開発をしていきたいと思います。\n\n 要件\n\nレシートをOCRし、Excelに落とし込み、人間がチェックできるような形にすること\n\n\n\n システム構成図\nGemini様と相談しつつ、大雑把に考えた構成がこちらです。\n\n\n 各コンポーネントの役割\n\n クライアント（Next.js）\n\nファイル...",
-        "category": "開発",
-        "rss_category": "",
-        "image_url": ""
-      },
-      {
-        "title": "Zenn記事の固有名詞誤記をpre-commit hookで防ぐ",
-        "url": "https://zenn.dev/tsukasa_art/articles/zenn-lint-precommit-hook",
-        "site": "Zenn(Python)",
-        "published": "2026-05-28T03:42:41Z",
-        "description": "この記事に出てくる用語\ngit hook\ngit commit や git push などのgitコマンド実行時に自動で走るスクリプト。.git/hooks/ ディレクトリに実行可能ファイルとして置く。pre-commit（コミット前）・pre-push（プッシュ前）・commit-msg（コミットメッセージ検証）などの種類がある。\npre-commit hook\ngit commit 実行時、コ...",
-        "category": "開発",
-        "rss_category": "",
-        "image_url": ""
-      },
-      {
-        "title": "その「time.sleep(1)」が資金を溶かす - Botを止めないExponential Backoffの実装",
-        "url": "https://zenn.dev/stchastech/articles/5a1d2c3fbcaed3",
-        "site": "Zenn(Python)",
-        "published": "2026-05-27T23:00:10Z",
-        "description": "はじめに\n自動売買Botを実運用したことがある人なら、こんな経験があるはずです。\n\n朝起きたらBotがAPIエラーで止まっており、絶好のトレンド相場を逃していた\nタイムアウト時に安易にリトライした結果、同じ注文が2回送信され（二重注文）不要なポジションを抱えた\n\n特に暗号資産取引所のAPIは、相場急変時（最もチャンスでありピンチの時）に限って\nレスポンスが極端に不安定になります。\n「1回の通信失敗...",
-        "category": "開発",
-        "rss_category": "",
-        "image_url": ""
-      },
-      {
-        "title": "忖度なし評価から始めたコード負債返済で、毎回『やらない／縮小する判断』に行き着いた話 ── C3 v2.29.1 + 内部品質リファクタ",
-        "url": "https://zenn.dev/satoh_y_0323/articles/baaa25ddb7e41e",
-        "site": "Zenn(Python)",
-        "published": "2026-05-27T16:35:31Z",
-        "description": "前回記事: https://zenn.dev/satoh_y_0323/articles/870de84caef218\nC3 GitHub: https://github.com/satoh-y-0323/claude-code-conductor / PyPI: https://pypi.org/project/claude-code-conductor/ / 公式ドキュメント: https:/...",
-        "category": "開発",
-        "rss_category": "",
-        "image_url": ""
-      },
-      {
-        "title": "推しグループのブログから予定を取得してGoogle Calendarに自動登録した",
-        "url": "https://zenn.dev/urattara/articles/fb24bb75d3e9fa",
-        "site": "Zenn(Python)",
-        "published": "2026-05-27T15:58:05Z",
-        "description": "推しグループのAmebloに載っている「今後のスケジュール」を、毎回手でGoogle Calendarに入れるのが面倒だったので、自動登録する仕組みを作っています。\n今回スクレイピング対象にしているのは、OCHA NORMAのブログです。\n例えばこんな感じの予定表を取得しています。\nhttps://ameblo.jp/ocha-norma/entry-12967475105.html\nやっているこ...",
-        "category": "開発",
-        "rss_category": "",
-        "image_url": ""
-      },
-      {
-        "title": "AIコーディング時代に、Python開発環境を整えるためにやったことまとめ",
-        "url": "https://zenn.dev/zaspa/articles/059450ca5c08cc",
-        "site": "Zenn(Python)",
-        "published": "2026-05-27T15:38:52Z",
-        "description": "はじめに\nAIコーディングツール(Codex, Claude Code)を使うようになってから、小さなPythonプロジェクトを作って試す機会が増えました。何度も試行錯誤する中で、個人開発でも取り回しやすいPython開発環境の形が少しずつ見えてきました。\nこれまで uv、Ruff、pyright、pytest、pre-commit などについて個別に記事を書いてきました。それらをまとめた記事にな...",
-        "category": "開発",
-        "rss_category": "",
-        "image_url": ""
-      },
-      {
-        "title": "じゃんけんアルゴリズムで学ぶプログラミング",
-        "url": "https://zenn.dev/kwaka1208/books/janken-algorithm",
-        "site": "Zenn(Python)",
-        "published": "2026-05-27T15:16:46Z",
-        "description": "じゃんけんの勝ち負け判定を題材に、プログラムを整理・短縮していく過程でアルゴリズムの考え方を学ぶPython入門です。Google Colabで動かしながら学べます。",
-        "category": "開発",
-        "rss_category": "",
-        "image_url": ""
-      },
-      {
-        "title": "ChatGPT PlusのProjectsだけでプログラミング言語を作り始めて早5週間",
-        "url": "https://zenn.dev/tkithrta/articles/9f5af45ca5d34e",
-        "site": "Zenn(Python)",
-        "published": "2026-05-27T15:05:05Z",
-        "description": "はじめに\nAneというプログラミング言語を作り始めて、5週間が経過しました。\nhttps://gitlab.com/tkithrta/ane\nhttps://zenn.dev/tkithrta/articles/2b0134084a45d6\n前回は、固定配列とスライスについて書きました。\n[N]TはN個の要素を置く固定配列ストレージで、[]Tや[]const Tは、そのストレージを見るための非所有...",
-        "category": "開発",
-        "rss_category": "",
-        "image_url": ""
-      }
-    ],
     "2026-05": [
-      {
-        "title": "4文字でLLMを命令したら、命令の意図を超えた判断をした",
-        "url": "https://zenn.dev/emilia_lab/articles/toa-llm-as-cpu",
-        "site": "Zenn(Python)",
-        "published": "2026-05-30T14:01:39Z",
-        "description": "XSSスキャンを命令したのに、SQLiを修正された。\n命令したのは s1x9 という4文字だけだ。「セキュリティドメイン、#1レジスタ、XSSチェック、優先度9」。自然言語は一切ない。なのにClaudeはこう返した。\n→ Security scan at ctx #1 (priority 9) completed but action mismatch detected —\n  requested...",
-        "category": "開発",
-        "rss_category": "",
-        "image_url": ""
-      },
       {
         "title": "ローカルLLM#4 \"5問×3 モデルの手動比較が面倒になったのでPythonで自動化した\"",
         "url": "https://zenn.dev/black_lotus/articles/f1cf61d21a7ba7",
@@ -636,6 +484,16 @@
         "site": "Zenn(Python)",
         "published": "2026-05-29T04:56:05Z",
         "description": "AI研究計画その１ 〜Gemini APIで簡単なチャットbotをつくってみた〜\nこんにちは。新しく「AI研究計画」と題して、AIを活用した様々な開発をシリーズで発信していくことにしました。\n第1回目は、Googleの最新AIモデルを手軽に扱える Gemini API を使い、ターミナル上で動くシンプルな対話型AIチャットボットを実装します。\n過去の会話の文脈（コンテキスト）を維持したまま会話を続...",
+        "category": "開発",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "外部依存ゼロの日本語「意味理解」エンジン KotobaCore を作って OSS 公開しました",
+        "url": "https://zenn.dev/kiyobo/articles/583dbe4593a1ea",
+        "site": "Zenn(Python)",
+        "published": "2026-05-29T04:09:57Z",
+        "description": "日本語テキストを チャンク分割・感情(Plutchik 8軸)・意図・RAGキーワード に一括変換するエンジン KotobaCore を OSS 公開しました（Apache-2.0）。\nMeCab も SudachiPy も BERT も使わず、外部依存ゼロ の自前トークナイザー「Karuizawa」だけで動きます。\n\nGitHub: https://github.com/ekiyo55/koto...",
         "category": "開発",
         "rss_category": "",
         "image_url": ""
