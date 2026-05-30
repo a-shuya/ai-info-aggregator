@@ -1,9 +1,49 @@
 {
   "site": "Zenn(Python)",
-  "last_updated": "2026-05-30T12:05:54.464233",
-  "total_articles": 4251,
+  "last_updated": "2026-05-30T14:02:37.552653",
+  "total_articles": 4257,
   "articles_by_date": {
     "本日": [
+      {
+        "title": "4文字でLLMを命令したら、命令の意図を超えた判断をした",
+        "url": "https://zenn.dev/emilia_lab/articles/toa-llm-as-cpu",
+        "site": "Zenn(Python)",
+        "published": "2026-05-30T14:01:39Z",
+        "description": "XSSスキャンを命令したのに、SQLiを修正された。\n命令したのは s1x9 という4文字だけだ。「セキュリティドメイン、#1レジスタ、XSSチェック、優先度9」。自然言語は一切ない。なのにClaudeはこう返した。\n→ Security scan at ctx #1 (priority 9) completed but action mismatch detected —\n  requested...",
+        "category": "開発",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "ローカルLLM#4 \"5問×3 モデルの手動比較が面倒になったのでPythonで自動化した\"",
+        "url": "https://zenn.dev/black_lotus/articles/f1cf61d21a7ba7",
+        "site": "Zenn(Python)",
+        "published": "2026-05-30T13:13:37Z",
+        "description": "はじめに\n前回は3つのモデルに5つの質問を手で投げて比較しました。\n物性物理の質問を投げて、各モデルがどこで間違えるかを見ていきました。\nその作業のなかで、ひとつ心残りがありました。\n各モデルに質問を1回ずつしか投げていなかったことです。\nたとえばLLM-jp-4は、存在しない論文を引用して、桁違いのTcを堂々と書いてきました。\nただ、この捏造が毎回同じなのか、それとも実行するたびに変わるのかは、...",
+        "category": "開発",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "AWS Well-Architected Frameworkをプロジェクトに適用するための実践ガイド",
+        "url": "https://zenn.dev/riadraz/articles/my-article-slug",
+        "site": "Zenn(Python)",
+        "published": "2026-05-30T12:39:23Z",
+        "description": "AWS Well-Architected Frameworkをプロジェクトに適用するための実践ガイド（6つの柱を含む）\n\n AWS Well-Architected Frameworkとは？\nAWSが提供するベストプラクティス、質問、設計原則の集合です。クラウド上でセキュアで、信頼性が高く、効率的かつコスト最適化されたシステムを構築するための指針となります。\n一度きりのものではなく、設計・レビュー...",
+        "category": "開発",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "Claude Code を Vertex AI 経由で最新モデルで使う & settings.json をセキュアに整える",
+        "url": "https://zenn.dev/takaha4k/articles/claude-code-vertex-ai-secure-settings",
+        "site": "Zenn(Python)",
+        "published": "2026-05-30T12:06:54Z",
+        "description": "はじめに\n先日（2026 年 5 月 28 日）、Anthropic から最新モデルの Claude Opus 4.8 が公開されました。\nhttps://www.anthropic.com/news/claude-opus-4-8\nせっかくなので、この Claude Opus 4.8 を Claude Code から Vertex AI 経由で動かしつつ、settings.json を Terr...",
+        "category": "開発",
+        "rss_category": "",
+        "image_url": ""
+      },
       {
         "title": "a-Shellを使う(2)",
         "url": "https://zenn.dev/drbobt1122/articles/blog26053001",
@@ -162,16 +202,6 @@
         "site": "Zenn(Python)",
         "published": "2026-05-29T04:56:05Z",
         "description": "AI研究計画その１ 〜Gemini APIで簡単なチャットbotをつくってみた〜\nこんにちは。新しく「AI研究計画」と題して、AIを活用した様々な開発をシリーズで発信していくことにしました。\n第1回目は、Googleの最新AIモデルを手軽に扱える Gemini API を使い、ターミナル上で動くシンプルな対話型AIチャットボットを実装します。\n過去の会話の文脈（コンテキスト）を維持したまま会話を続...",
-        "category": "開発",
-        "rss_category": "",
-        "image_url": ""
-      },
-      {
-        "title": "外部依存ゼロの日本語「意味理解」エンジン KotobaCore を作って OSS 公開しました",
-        "url": "https://zenn.dev/kiyobo/articles/583dbe4593a1ea",
-        "site": "Zenn(Python)",
-        "published": "2026-05-29T04:09:57Z",
-        "description": "日本語テキストを チャンク分割・感情(Plutchik 8軸)・意図・RAGキーワード に一括変換するエンジン KotobaCore を OSS 公開しました（Apache-2.0）。\nMeCab も SudachiPy も BERT も使わず、外部依存ゼロ の自前トークナイザー「Karuizawa」だけで動きます。\n\nGitHub: https://github.com/ekiyo55/koto...",
         "category": "開発",
         "rss_category": "",
         "image_url": ""
@@ -411,6 +441,46 @@
     ],
     "2026-05": [
       {
+        "title": "4文字でLLMを命令したら、命令の意図を超えた判断をした",
+        "url": "https://zenn.dev/emilia_lab/articles/toa-llm-as-cpu",
+        "site": "Zenn(Python)",
+        "published": "2026-05-30T14:01:39Z",
+        "description": "XSSスキャンを命令したのに、SQLiを修正された。\n命令したのは s1x9 という4文字だけだ。「セキュリティドメイン、#1レジスタ、XSSチェック、優先度9」。自然言語は一切ない。なのにClaudeはこう返した。\n→ Security scan at ctx #1 (priority 9) completed but action mismatch detected —\n  requested...",
+        "category": "開発",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "ローカルLLM#4 \"5問×3 モデルの手動比較が面倒になったのでPythonで自動化した\"",
+        "url": "https://zenn.dev/black_lotus/articles/f1cf61d21a7ba7",
+        "site": "Zenn(Python)",
+        "published": "2026-05-30T13:13:37Z",
+        "description": "はじめに\n前回は3つのモデルに5つの質問を手で投げて比較しました。\n物性物理の質問を投げて、各モデルがどこで間違えるかを見ていきました。\nその作業のなかで、ひとつ心残りがありました。\n各モデルに質問を1回ずつしか投げていなかったことです。\nたとえばLLM-jp-4は、存在しない論文を引用して、桁違いのTcを堂々と書いてきました。\nただ、この捏造が毎回同じなのか、それとも実行するたびに変わるのかは、...",
+        "category": "開発",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "AWS Well-Architected Frameworkをプロジェクトに適用するための実践ガイド",
+        "url": "https://zenn.dev/riadraz/articles/my-article-slug",
+        "site": "Zenn(Python)",
+        "published": "2026-05-30T12:39:23Z",
+        "description": "AWS Well-Architected Frameworkをプロジェクトに適用するための実践ガイド（6つの柱を含む）\n\n AWS Well-Architected Frameworkとは？\nAWSが提供するベストプラクティス、質問、設計原則の集合です。クラウド上でセキュアで、信頼性が高く、効率的かつコスト最適化されたシステムを構築するための指針となります。\n一度きりのものではなく、設計・レビュー...",
+        "category": "開発",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "Claude Code を Vertex AI 経由で最新モデルで使う & settings.json をセキュアに整える",
+        "url": "https://zenn.dev/takaha4k/articles/claude-code-vertex-ai-secure-settings",
+        "site": "Zenn(Python)",
+        "published": "2026-05-30T12:06:54Z",
+        "description": "はじめに\n先日（2026 年 5 月 28 日）、Anthropic から最新モデルの Claude Opus 4.8 が公開されました。\nhttps://www.anthropic.com/news/claude-opus-4-8\nせっかくなので、この Claude Opus 4.8 を Claude Code から Vertex AI 経由で動かしつつ、settings.json を Terr...",
+        "category": "開発",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
         "title": "a-Shellを使う(2)",
         "url": "https://zenn.dev/drbobt1122/articles/blog26053001",
         "site": "Zenn(Python)",
@@ -566,16 +636,6 @@
         "site": "Zenn(Python)",
         "published": "2026-05-29T04:56:05Z",
         "description": "AI研究計画その１ 〜Gemini APIで簡単なチャットbotをつくってみた〜\nこんにちは。新しく「AI研究計画」と題して、AIを活用した様々な開発をシリーズで発信していくことにしました。\n第1回目は、Googleの最新AIモデルを手軽に扱える Gemini API を使い、ターミナル上で動くシンプルな対話型AIチャットボットを実装します。\n過去の会話の文脈（コンテキスト）を維持したまま会話を続...",
-        "category": "開発",
-        "rss_category": "",
-        "image_url": ""
-      },
-      {
-        "title": "外部依存ゼロの日本語「意味理解」エンジン KotobaCore を作って OSS 公開しました",
-        "url": "https://zenn.dev/kiyobo/articles/583dbe4593a1ea",
-        "site": "Zenn(Python)",
-        "published": "2026-05-29T04:09:57Z",
-        "description": "日本語テキストを チャンク分割・感情(Plutchik 8軸)・意図・RAGキーワード に一括変換するエンジン KotobaCore を OSS 公開しました（Apache-2.0）。\nMeCab も SudachiPy も BERT も使わず、外部依存ゼロ の自前トークナイザー「Karuizawa」だけで動きます。\n\nGitHub: https://github.com/ekiyo55/koto...",
         "category": "開発",
         "rss_category": "",
         "image_url": ""
