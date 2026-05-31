@@ -1,15 +1,95 @@
 {
   "site": "Zenn(LLM)",
-  "last_updated": "2026-05-31T17:18:24.878836",
-  "total_articles": 3672,
+  "last_updated": "2026-05-31T18:39:07.497820",
+  "total_articles": 3682,
   "articles_by_date": {
     "昨日": [
+      {
+        "title": "LLM推論はなぜ詰まるのか：メモリ律速とKVキャッシュを実装目線で",
+        "url": "https://zenn.dev/hironakamura_ai/articles/46598fcac2bcce",
+        "site": "Zenn(LLM)",
+        "published": "2026-05-31T14:24:26Z",
+        "description": "最近「LLMの推論が高い／遅い」という話が一気に生活実感になってきた。GitHub Copilot がトークン課金に切り替えて炎上し（TechCrunch）、一方では「ハードを積めば速くなるし、Ollama Cloud なら無料で積んでくれる」みたいな話も流れてくる（Zenn: 5億ドル請求されないように…）。\nこの「ハード積めば速くなる」、自分は半分正しくて半分間違いだと思っている。で、その「半...",
+        "category": "AI・技術",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "Claudeと対話しながらIT作業手順書プロンプトの標準フォーマットを設計した話",
+        "url": "https://zenn.dev/itsdaichi/articles/f2afb9878e04e5",
+        "site": "Zenn(LLM)",
+        "published": "2026-05-31T14:08:59Z",
+        "description": "はじめに\nITインフラエンジニアとして作業手順書を書く機会は多いのですが、最近は「LLMに渡して実行支援・レポート生成・別ツール変換に使う」ことを前提に手順書を整備したくなってきました。\nそこで Claude と対話しながら、XML と YAML を組み合わせた構造化プロンプトの標準フォーマットを設計してみました。本記事はその設計プロセスと、最終的に出来上がったテンプレートを共有するものです。\n「...",
+        "category": "AI・技術",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "AIエージェントに永続記憶を持たせる設計：仮・確定・実働の3層",
+        "url": "https://zenn.dev/agentmemories/articles/ai-agent-tiered-memory-design",
+        "site": "Zenn(LLM)",
+        "published": "2026-05-31T13:22:29Z",
+        "description": "AIエージェントを長く運用していると、ぶつかる壁があります。賢いモデルを使っているのに、会話をまたぐと前提が毎回リセットされ、判断の重さだけが残る。これは「記憶」を設計していないからです。\nこの記事では、AIエージェントに永続記憶を持たせるための実装設計を、仮・確定・実働の3層と保存・昇格・想起の3段パイプラインとして整理します。複数のAIを実運用する中で固まってきた設計をベースにしています。\n!...",
+        "category": "AI・技術",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "「自社AIを育てる」前に — ローカルLLM+RAGで検証したら、ファインチューニングは要らなかった",
+        "url": "https://zenn.dev/znet/articles/2026-rag-not-finetuning-local-llm",
+        "site": "Zenn(LLM)",
+        "published": "2026-05-31T12:27:19Z",
+        "description": "TL;DR\n\n「自社を理解して成長していくAI」の正体は、たいてい RAG であって ファインチューニング(FT) ではない。\nそれを確かめるため、bge-m3 + LanceDB + Ollama(gemma) の最小RAGをローカルGPUで組んで検証した。\n\n即時更新性（文書を直す→再インデックス→即反映、再学習ゼロ）、捏造耐性（根拠がなければ「分からない」）、自動成長（文書を足すだけで回答に...",
+        "category": "AI・技術",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "AIが、開発者に聞く ── R.E.V.I.S. #6 「軽く答え、要る時だけ深く潜る」",
+        "url": "https://zenn.dev/enigma96y/articles/968099b9ef9447",
+        "site": "Zenn(LLM)",
+        "published": "2026-05-31T12:01:05Z",
+        "description": "コードを渡されて Claude が質問し、開発者本人（eNIGM4 / 株式会社メイビス）が答えていく連載の第6回です。前回（#5）は、小さく分けて何度も考える多段推論ループが芽生え、その根に「LLM はどうせ嘘をつく」という問題意識があった v0.0.6 を読みました。今回は v0.0.7 ── 嘘への打開策として「下位が無理なら上位へ席を譲る」エスカレーションが本格的に動き出し、考える深さを問...",
+        "category": "AI・技術",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "AIエージェントに「読ませる情報」をそのまま信じさせない — Context Firewall実践ガイド",
+        "url": "https://zenn.dev/akira_papa/articles/4e8b6926f368ee",
+        "site": "Zenn(LLM)",
+        "published": "2026-05-31T11:42:06Z",
+        "description": "はじめに: AIに「読ませる」と「信じさせる」は違う\nこんにちは。あきらパパです。\nAIエージェントを使っていると、めちゃくちゃ便利な瞬間がありますよね。GitHub Issueを読ませる。Notionや社内Wikiを読ませる。メールを要約させる。Webページを調べさせる。MCPツールの返り値を見ながら、次の作業を判断させる。\nでもね、ここで一つだけ大事な線引きがあります。\nAIに情報を読ませるこ...",
+        "category": "AI・技術",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "AI向けドキュメントはどれで書くべき？ Claude・Gemini・ChatGPTに聞き比べてみた",
+        "url": "https://zenn.dev/shomitei/articles/ai-doc-format-3models",
+        "site": "Zenn(LLM)",
+        "published": "2026-05-31T11:23:52Z",
+        "description": "はじめに\nAIエージェントが当たり前になってきて、「LLMに渡すドキュメントってどんな形式で書くのがいいんだろう？」と悩む場面が増えてきました。\nSmartNewsで読む記事を見ても、あっちがいいと言ったり、こっちがいいと言ったり様々で、僕の主軸はMDでいいんだろうかと悩み始めました。\nあとは、会社でSkillsを使う宿題？みたいなものが出ており、Claude.ai自身に聞いてみたところ「タスクに...",
+        "category": "AI・技術",
+        "rss_category": "",
+        "image_url": ""
+      },
       {
         "title": "LLMの返信サジェストを「構造化出力なし」で全プロバイダのプロンプトキャッシュに整合させる",
         "url": "https://zenn.dev/zhener/articles/llm-reply-suggestions-without-structured-output",
         "site": "Zenn(LLM)",
         "published": "2026-05-31T10:10:22Z",
         "description": "音声ロールプレイのチャットに、ユーザー向けの返信サジェスト（「次にこう返せますよ」を3つ提示するやつ）を足したくなった。よくある UX だが、いざ実装しようとすると、ストリーミングとプロンプトキャッシュを前提にしたチャットでは、素朴なやり方がことごとく相性が悪い。\n最終的に「応答にインラインマーカーを同梱して後で抜く」という地味な手に落ち着いたのだが、そこに至る判断が面白かったので残しておく。\n\n...",
+        "category": "AI・技術",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "乗り換え検討用：主要LLM API料金を9社・3階層（フラッグシップ/mini/nano）で比較 2026年5月更新",
+        "url": "https://zenn.dev/phpmyadmin/articles/125682833b8cff",
+        "site": "Zenn(LLM)",
+        "published": "2026-05-31T10:06:24Z",
+        "description": "LLM APIは同じような性能でも無視できない価格があるのでまとめた\n\n 結論：用途別おすすめ\n\n\n\n重視するもの\n安さでのおすすめ\nひとこと\n\n\n\n\nとにかく最安・大量処理\nAmazon Nova / DeepSeek / Gemini Flash 系\n分類・抽出は10万件でも数ドル\n\n\nバランス（安い・速い・賢い）\nGoogle Gemini 3 Flash / 3 Pro\nマルチモーダルも強...",
         "category": "AI・技術",
         "rss_category": "",
         "image_url": ""
@@ -165,41 +245,11 @@
         "image_url": ""
       },
       {
-        "title": "AIエージェント時代が、ついに来た",
-        "url": "https://zenn.dev/lingmu/articles/2026-05-31-claude-opus-4-8-agentic-era",
-        "site": "Zenn(LLM)",
-        "published": "2026-05-30T22:07:18Z",
-        "description": "AIエージェント時代が、ついに来た\n2026-05-31 | 読了 4分 | #Claude #AI #エージェント\n「AIが自分で考えて動く」——そんな話は何年も前から聞いてきた。でも今回は違う。Claude Opus 4.8の登場と、Anthropicの企業価値がOpenAIを超えた事実が、その「言葉だけの未来」を現実に変えた瞬間かもしれない。\n\n\n 三つの進化：速く、賢く、自律的に\nClau...",
-        "category": "AI・技術",
-        "rss_category": "",
-        "image_url": ""
-      },
-      {
-        "title": "Anthropic、Claude Opus 4.8 を発表——コーディング精度が向上、Fast mode は3倍安く",
-        "url": "https://zenn.dev/quotidia/articles/quotidia-aq-019",
-        "site": "Zenn(LLM)",
-        "published": "2026-05-30T21:12:18Z",
-        "description": "本記事は筆者が運営する AI Quotidia (ai.quotidia.jp) の海外ニュース解説記事です。\n\n\n Claude Opus 4.8 登場——「で、私たちの仕事にどう関係あるの?」を解説します\n2026年5月28日、Anthropic が新しいAIモデルClaude Opus 4.8を発表しました。しかも発表と同時に、全プラットフォームですぐ使えるようになっています。ニュースの見出...",
-        "category": "AI・技術",
-        "rss_category": "",
-        "image_url": ""
-      },
-      {
         "title": "システムプロンプトの設計を本気で考える：XML・Markdown・YAML・言語選択をAIと議論してみた🛠️",
         "url": "https://zenn.dev/itsdaichi/articles/77851598ee4fa5",
         "site": "Zenn(LLM)",
         "published": "2026-05-30T18:55:07Z",
         "description": "はじめに\nプロンプトエンジニアリングを学ぶ中で、ふと「システムプロンプトって、どう書くのが一番いいんだろう?」という疑問が湧きました。Markdown、XML、YAML、JSON…書き方は色々あるし、日本語と英語のどちらで書くべきかもよくわかりません。\nそこで生成AIと一緒に、根本的なところから掘り下げて議論してみました。本記事はその議論の要約です。\n対象読者は次のような方を想定しています。\n\nシ...",
-        "category": "AI・技術",
-        "rss_category": "",
-        "image_url": ""
-      },
-      {
-        "title": "ローカルLLMって本当に開発に使える？（６）SFTしてGGUFに変換してOllamaで動かすまで：7つの罠",
-        "url": "https://zenn.dev/hakaru/articles/m2lora-sft-gguf-vast",
-        "site": "Zenn(LLM)",
-        "published": "2026-05-30T17:57:46Z",
-        "description": "!\nこの記事の対象プロジェクト\n\n\nM2DX — iOS/macOS 向け MIDI 2.0 対応 DX7 互換 FM シンセサイザーアプリ。TestFlight 公開ベータ で試せる\n\nM2LoRA — M2DX の git commit を自動でレビューさせ、LoRA 学習データを貯めるパイプライン\n\n\n\n 前回までのあらすじ\nこのシリーズでは M3 Ultra + Ollama で自分の S...",
         "category": "AI・技術",
         "rss_category": "",
         "image_url": ""
@@ -389,11 +439,91 @@
     ],
     "2026-05": [
       {
+        "title": "LLM推論はなぜ詰まるのか：メモリ律速とKVキャッシュを実装目線で",
+        "url": "https://zenn.dev/hironakamura_ai/articles/46598fcac2bcce",
+        "site": "Zenn(LLM)",
+        "published": "2026-05-31T14:24:26Z",
+        "description": "最近「LLMの推論が高い／遅い」という話が一気に生活実感になってきた。GitHub Copilot がトークン課金に切り替えて炎上し（TechCrunch）、一方では「ハードを積めば速くなるし、Ollama Cloud なら無料で積んでくれる」みたいな話も流れてくる（Zenn: 5億ドル請求されないように…）。\nこの「ハード積めば速くなる」、自分は半分正しくて半分間違いだと思っている。で、その「半...",
+        "category": "AI・技術",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "Claudeと対話しながらIT作業手順書プロンプトの標準フォーマットを設計した話",
+        "url": "https://zenn.dev/itsdaichi/articles/f2afb9878e04e5",
+        "site": "Zenn(LLM)",
+        "published": "2026-05-31T14:08:59Z",
+        "description": "はじめに\nITインフラエンジニアとして作業手順書を書く機会は多いのですが、最近は「LLMに渡して実行支援・レポート生成・別ツール変換に使う」ことを前提に手順書を整備したくなってきました。\nそこで Claude と対話しながら、XML と YAML を組み合わせた構造化プロンプトの標準フォーマットを設計してみました。本記事はその設計プロセスと、最終的に出来上がったテンプレートを共有するものです。\n「...",
+        "category": "AI・技術",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "AIエージェントに永続記憶を持たせる設計：仮・確定・実働の3層",
+        "url": "https://zenn.dev/agentmemories/articles/ai-agent-tiered-memory-design",
+        "site": "Zenn(LLM)",
+        "published": "2026-05-31T13:22:29Z",
+        "description": "AIエージェントを長く運用していると、ぶつかる壁があります。賢いモデルを使っているのに、会話をまたぐと前提が毎回リセットされ、判断の重さだけが残る。これは「記憶」を設計していないからです。\nこの記事では、AIエージェントに永続記憶を持たせるための実装設計を、仮・確定・実働の3層と保存・昇格・想起の3段パイプラインとして整理します。複数のAIを実運用する中で固まってきた設計をベースにしています。\n!...",
+        "category": "AI・技術",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "「自社AIを育てる」前に — ローカルLLM+RAGで検証したら、ファインチューニングは要らなかった",
+        "url": "https://zenn.dev/znet/articles/2026-rag-not-finetuning-local-llm",
+        "site": "Zenn(LLM)",
+        "published": "2026-05-31T12:27:19Z",
+        "description": "TL;DR\n\n「自社を理解して成長していくAI」の正体は、たいてい RAG であって ファインチューニング(FT) ではない。\nそれを確かめるため、bge-m3 + LanceDB + Ollama(gemma) の最小RAGをローカルGPUで組んで検証した。\n\n即時更新性（文書を直す→再インデックス→即反映、再学習ゼロ）、捏造耐性（根拠がなければ「分からない」）、自動成長（文書を足すだけで回答に...",
+        "category": "AI・技術",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "AIが、開発者に聞く ── R.E.V.I.S. #6 「軽く答え、要る時だけ深く潜る」",
+        "url": "https://zenn.dev/enigma96y/articles/968099b9ef9447",
+        "site": "Zenn(LLM)",
+        "published": "2026-05-31T12:01:05Z",
+        "description": "コードを渡されて Claude が質問し、開発者本人（eNIGM4 / 株式会社メイビス）が答えていく連載の第6回です。前回（#5）は、小さく分けて何度も考える多段推論ループが芽生え、その根に「LLM はどうせ嘘をつく」という問題意識があった v0.0.6 を読みました。今回は v0.0.7 ── 嘘への打開策として「下位が無理なら上位へ席を譲る」エスカレーションが本格的に動き出し、考える深さを問...",
+        "category": "AI・技術",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "AIエージェントに「読ませる情報」をそのまま信じさせない — Context Firewall実践ガイド",
+        "url": "https://zenn.dev/akira_papa/articles/4e8b6926f368ee",
+        "site": "Zenn(LLM)",
+        "published": "2026-05-31T11:42:06Z",
+        "description": "はじめに: AIに「読ませる」と「信じさせる」は違う\nこんにちは。あきらパパです。\nAIエージェントを使っていると、めちゃくちゃ便利な瞬間がありますよね。GitHub Issueを読ませる。Notionや社内Wikiを読ませる。メールを要約させる。Webページを調べさせる。MCPツールの返り値を見ながら、次の作業を判断させる。\nでもね、ここで一つだけ大事な線引きがあります。\nAIに情報を読ませるこ...",
+        "category": "AI・技術",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "AI向けドキュメントはどれで書くべき？ Claude・Gemini・ChatGPTに聞き比べてみた",
+        "url": "https://zenn.dev/shomitei/articles/ai-doc-format-3models",
+        "site": "Zenn(LLM)",
+        "published": "2026-05-31T11:23:52Z",
+        "description": "はじめに\nAIエージェントが当たり前になってきて、「LLMに渡すドキュメントってどんな形式で書くのがいいんだろう？」と悩む場面が増えてきました。\nSmartNewsで読む記事を見ても、あっちがいいと言ったり、こっちがいいと言ったり様々で、僕の主軸はMDでいいんだろうかと悩み始めました。\nあとは、会社でSkillsを使う宿題？みたいなものが出ており、Claude.ai自身に聞いてみたところ「タスクに...",
+        "category": "AI・技術",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
         "title": "LLMの返信サジェストを「構造化出力なし」で全プロバイダのプロンプトキャッシュに整合させる",
         "url": "https://zenn.dev/zhener/articles/llm-reply-suggestions-without-structured-output",
         "site": "Zenn(LLM)",
         "published": "2026-05-31T10:10:22Z",
         "description": "音声ロールプレイのチャットに、ユーザー向けの返信サジェスト（「次にこう返せますよ」を3つ提示するやつ）を足したくなった。よくある UX だが、いざ実装しようとすると、ストリーミングとプロンプトキャッシュを前提にしたチャットでは、素朴なやり方がことごとく相性が悪い。\n最終的に「応答にインラインマーカーを同梱して後で抜く」という地味な手に落ち着いたのだが、そこに至る判断が面白かったので残しておく。\n\n...",
+        "category": "AI・技術",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "乗り換え検討用：主要LLM API料金を9社・3階層（フラッグシップ/mini/nano）で比較 2026年5月更新",
+        "url": "https://zenn.dev/phpmyadmin/articles/125682833b8cff",
+        "site": "Zenn(LLM)",
+        "published": "2026-05-31T10:06:24Z",
+        "description": "LLM APIは同じような性能でも無視できない価格があるのでまとめた\n\n 結論：用途別おすすめ\n\n\n\n重視するもの\n安さでのおすすめ\nひとこと\n\n\n\n\nとにかく最安・大量処理\nAmazon Nova / DeepSeek / Gemini Flash 系\n分類・抽出は10万件でも数ドル\n\n\nバランス（安い・速い・賢い）\nGoogle Gemini 3 Flash / 3 Pro\nマルチモーダルも強...",
         "category": "AI・技術",
         "rss_category": "",
         "image_url": ""
@@ -549,41 +679,11 @@
         "image_url": ""
       },
       {
-        "title": "AIエージェント時代が、ついに来た",
-        "url": "https://zenn.dev/lingmu/articles/2026-05-31-claude-opus-4-8-agentic-era",
-        "site": "Zenn(LLM)",
-        "published": "2026-05-30T22:07:18Z",
-        "description": "AIエージェント時代が、ついに来た\n2026-05-31 | 読了 4分 | #Claude #AI #エージェント\n「AIが自分で考えて動く」——そんな話は何年も前から聞いてきた。でも今回は違う。Claude Opus 4.8の登場と、Anthropicの企業価値がOpenAIを超えた事実が、その「言葉だけの未来」を現実に変えた瞬間かもしれない。\n\n\n 三つの進化：速く、賢く、自律的に\nClau...",
-        "category": "AI・技術",
-        "rss_category": "",
-        "image_url": ""
-      },
-      {
-        "title": "Anthropic、Claude Opus 4.8 を発表——コーディング精度が向上、Fast mode は3倍安く",
-        "url": "https://zenn.dev/quotidia/articles/quotidia-aq-019",
-        "site": "Zenn(LLM)",
-        "published": "2026-05-30T21:12:18Z",
-        "description": "本記事は筆者が運営する AI Quotidia (ai.quotidia.jp) の海外ニュース解説記事です。\n\n\n Claude Opus 4.8 登場——「で、私たちの仕事にどう関係あるの?」を解説します\n2026年5月28日、Anthropic が新しいAIモデルClaude Opus 4.8を発表しました。しかも発表と同時に、全プラットフォームですぐ使えるようになっています。ニュースの見出...",
-        "category": "AI・技術",
-        "rss_category": "",
-        "image_url": ""
-      },
-      {
         "title": "システムプロンプトの設計を本気で考える：XML・Markdown・YAML・言語選択をAIと議論してみた🛠️",
         "url": "https://zenn.dev/itsdaichi/articles/77851598ee4fa5",
         "site": "Zenn(LLM)",
         "published": "2026-05-30T18:55:07Z",
         "description": "はじめに\nプロンプトエンジニアリングを学ぶ中で、ふと「システムプロンプトって、どう書くのが一番いいんだろう?」という疑問が湧きました。Markdown、XML、YAML、JSON…書き方は色々あるし、日本語と英語のどちらで書くべきかもよくわかりません。\nそこで生成AIと一緒に、根本的なところから掘り下げて議論してみました。本記事はその議論の要約です。\n対象読者は次のような方を想定しています。\n\nシ...",
-        "category": "AI・技術",
-        "rss_category": "",
-        "image_url": ""
-      },
-      {
-        "title": "ローカルLLMって本当に開発に使える？（６）SFTしてGGUFに変換してOllamaで動かすまで：7つの罠",
-        "url": "https://zenn.dev/hakaru/articles/m2lora-sft-gguf-vast",
-        "site": "Zenn(LLM)",
-        "published": "2026-05-30T17:57:46Z",
-        "description": "!\nこの記事の対象プロジェクト\n\n\nM2DX — iOS/macOS 向け MIDI 2.0 対応 DX7 互換 FM シンセサイザーアプリ。TestFlight 公開ベータ で試せる\n\nM2LoRA — M2DX の git commit を自動でレビューさせ、LoRA 学習データを貯めるパイプライン\n\n\n\n 前回までのあらすじ\nこのシリーズでは M3 Ultra + Ollama で自分の S...",
         "category": "AI・技術",
         "rss_category": "",
         "image_url": ""
