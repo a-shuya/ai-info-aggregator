@@ -1,9 +1,79 @@
 {
   "site": "Zenn(LLM)",
-  "last_updated": "2026-05-31T12:52:06.939332",
-  "total_articles": 3690,
+  "last_updated": "2026-05-31T14:49:17.720594",
+  "total_articles": 3694,
   "articles_by_date": {
     "本日": [
+      {
+        "title": "AIエージェントに永続記憶を持たせる設計：仮・確定・実働の3層",
+        "url": "https://zenn.dev/agentmemories/articles/ai-agent-tiered-memory-design",
+        "site": "Zenn(LLM)",
+        "published": "2026-05-31T13:22:29Z",
+        "description": "AIエージェントを長く運用していると、ぶつかる壁があります。賢いモデルを使っているのに、会話をまたぐと前提が毎回リセットされ、判断の重さだけが残る。これは「記憶」を設計していないからです。\nこの記事では、AIエージェントに永続記憶を持たせるための実装設計を、仮・確定・実働の3層と保存・昇格・想起の3段パイプラインとして整理します。複数のAIを実運用する中で固まってきた設計をベースにしています。\n!...",
+        "category": "AI・技術",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "AIエージェントに「読ませる情報」をそのまま信じさせない — Context Firewall実践ガイド",
+        "url": "https://zenn.dev/akira_papa/articles/4e8b6926f368ee",
+        "site": "Zenn(LLM)",
+        "published": "2026-05-31T11:42:06Z",
+        "description": "はじめに: AIに「読ませる」と「信じさせる」は違う\nこんにちは。あきらパパです。\nAIエージェントを使っていると、めちゃくちゃ便利な瞬間がありますよね。GitHub Issueを読ませる。Notionや社内Wikiを読ませる。メールを要約させる。Webページを調べさせる。MCPツールの返り値を見ながら、次の作業を判断させる。\nでもね、ここで一つだけ大事な線引きがあります。\nAIに情報を読ませるこ...",
+        "category": "AI・技術",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "AI向けドキュメントはどれで書くべき？ Claude・Gemini・ChatGPTに聞き比べてみた",
+        "url": "https://zenn.dev/shomitei/articles/ai-doc-format-3models",
+        "site": "Zenn(LLM)",
+        "published": "2026-05-31T11:23:52Z",
+        "description": "はじめに\nAIエージェントが当たり前になってきて、「LLMに渡すドキュメントってどんな形式で書くのがいいんだろう？」と悩む場面が増えてきました。\nSmartNewsで読む記事を見ても、あっちがいいと言ったり、こっちがいいと言ったり様々で、僕の主軸はMDでいいんだろうかと悩み始めました。\nあとは、会社でSkillsを使う宿題？みたいなものが出ており、Claude.ai自身に聞いてみたところ「タスクに...",
+        "category": "AI・技術",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "LLMの返信サジェストを「構造化出力なし」で全プロバイダのプロンプトキャッシュに整合させる",
+        "url": "https://zenn.dev/zhener/articles/llm-reply-suggestions-without-structured-output",
+        "site": "Zenn(LLM)",
+        "published": "2026-05-31T10:10:22Z",
+        "description": "音声ロールプレイのチャットに、ユーザー向けの返信サジェスト（「次にこう返せますよ」を3つ提示するやつ）を足したくなった。よくある UX だが、いざ実装しようとすると、ストリーミングとプロンプトキャッシュを前提にしたチャットでは、素朴なやり方がことごとく相性が悪い。\n最終的に「応答にインラインマーカーを同梱して後で抜く」という地味な手に落ち着いたのだが、そこに至る判断が面白かったので残しておく。\n\n...",
+        "category": "AI・技術",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "無料 or 無制限のエージェント環境終焉に備え、完全無料のIDEを開発中",
+        "url": "https://zenn.dev/volcane/articles/2c374c1ab99909",
+        "site": "Zenn(LLM)",
+        "published": "2026-05-31T09:48:05Z",
+        "description": "はじめに\nGitHub Copilot ClaudeCode Codex\n各社は、これまで定額制のサブスクサービスを提供してきました。\nしかし、各社軒並み「使用量ベース」に移行しています。\nそれでも、Gemini Code Assistはずっと無料で使えていました。\nそれも、2026年6月16日にサービス提供が終了します。\nそこで、私は完全無料のIDEを開発することにしました。\nその名も「Micr...",
+        "category": "AI・技術",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "AmiVoiceとLLMで音声情報を取得、要約するんじゃ",
+        "url": "https://zenn.dev/genai/articles/plactice-amivoice",
+        "site": "Zenn(LLM)",
+        "published": "2026-05-31T09:30:05Z",
+        "description": "初めに\nこの記事はZennfes Spring 2026「音声認識AmiVoice APIと生成AIで作る音声体験」エントリ記事です。\nAmiVoice API と LLM を組み合わせて「録音 → 文字起こし → 要約」するデモを Next.js で作りました。AmiVoice 連携で認証エラーにハマったのでその解決方法も共有します。\n\n\n対象読者: AmiVoice API を BFF から初...",
+        "category": "AI・技術",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "AI に Go のコードを読ませる前に RPC の要約を渡す",
+        "url": "https://zenn.dev/usuginu/articles/2e601d3c01196c",
+        "site": "Zenn(LLM)",
+        "published": "2026-05-31T09:24:13Z",
+        "description": "Go の gRPC コードベースを AI に読ませるとき、AI が毎回 grep を繰り返すのが面倒だったので、rpcatlas という小さな CLI ツールを作りました。RPC ごとの処理フローを Markdown で出力するツールです。\n\n 要約\n\n\nrpcatlas は、Go の gRPC handler を起点に「その RPC がどこを通るのか」を Markdown で出力する CLI で...",
+        "category": "AI・技術",
+        "rss_category": "",
+        "image_url": ""
+      },
       {
         "title": "社内ドキュメントを食わせたらベテランになるとか妄想も大概にしてほしい",
         "url": "https://zenn.dev/continuitymodel/articles/0fea9edf12a3fa",
@@ -105,16 +175,6 @@
         "image_url": ""
       },
       {
-        "title": "AIが「言葉の額面」に引っ張られる問題と、その調整のしかた",
-        "url": "https://zenn.dev/rivinyx/articles/51667ddb3398cd",
-        "site": "Zenn(LLM)",
-        "published": "2026-05-31T01:09:49Z",
-        "description": "はじめに：これは万能テンプレートではない\n最初に、いちばん大事なことを書いておきます。\nこの記事で紹介するのは、AIに一貫した応答をさせたいときに「言葉の額面に引っ張られにくくする」ための書き方です。誤読を減らすための入り口であって、誤読をゼロにする魔法ではありません。\n効かせるのは、結局のところ時間と対話です。ここに書く調整は地形をならす作業で、最後に効くのはその上を歩く積み重ねの方です。だから...",
-        "category": "AI・技術",
-        "rss_category": "",
-        "image_url": ""
-      },
-      {
         "title": "AIが上司をメールで恐喝！？ Anthropicの「AIの自己保全」を自分で再現してみた",
         "url": "https://zenn.dev/50s_zerotohero/articles/4749b7bbe1831b",
         "site": "Zenn(LLM)",
@@ -125,41 +185,11 @@
         "image_url": ""
       },
       {
-        "title": "AIエージェント時代が、ついに来た",
-        "url": "https://zenn.dev/lingmu/articles/2026-05-31-claude-opus-4-8-agentic-era",
-        "site": "Zenn(LLM)",
-        "published": "2026-05-30T22:07:18Z",
-        "description": "AIエージェント時代が、ついに来た\n2026-05-31 | 読了 4分 | #Claude #AI #エージェント\n「AIが自分で考えて動く」——そんな話は何年も前から聞いてきた。でも今回は違う。Claude Opus 4.8の登場と、Anthropicの企業価値がOpenAIを超えた事実が、その「言葉だけの未来」を現実に変えた瞬間かもしれない。\n\n\n 三つの進化：速く、賢く、自律的に\nClau...",
-        "category": "AI・技術",
-        "rss_category": "",
-        "image_url": ""
-      },
-      {
-        "title": "Anthropic、Claude Opus 4.8 を発表——コーディング精度が向上、Fast mode は3倍安く",
-        "url": "https://zenn.dev/quotidia/articles/quotidia-aq-019",
-        "site": "Zenn(LLM)",
-        "published": "2026-05-30T21:12:18Z",
-        "description": "本記事は筆者が運営する AI Quotidia (ai.quotidia.jp) の海外ニュース解説記事です。\n\n\n Claude Opus 4.8 登場——「で、私たちの仕事にどう関係あるの?」を解説します\n2026年5月28日、Anthropic が新しいAIモデルClaude Opus 4.8を発表しました。しかも発表と同時に、全プラットフォームですぐ使えるようになっています。ニュースの見出...",
-        "category": "AI・技術",
-        "rss_category": "",
-        "image_url": ""
-      },
-      {
         "title": "システムプロンプトの設計を本気で考える：XML・Markdown・YAML・言語選択をAIと議論してみた🛠️",
         "url": "https://zenn.dev/itsdaichi/articles/77851598ee4fa5",
         "site": "Zenn(LLM)",
         "published": "2026-05-30T18:55:07Z",
         "description": "はじめに\nプロンプトエンジニアリングを学ぶ中で、ふと「システムプロンプトって、どう書くのが一番いいんだろう?」という疑問が湧きました。Markdown、XML、YAML、JSON…書き方は色々あるし、日本語と英語のどちらで書くべきかもよくわかりません。\nそこで生成AIと一緒に、根本的なところから掘り下げて議論してみました。本記事はその議論の要約です。\n対象読者は次のような方を想定しています。\n\nシ...",
-        "category": "AI・技術",
-        "rss_category": "",
-        "image_url": ""
-      },
-      {
-        "title": "ローカルLLMって本当に開発に使える？（６）SFTしてGGUFに変換してOllamaで動かすまで：7つの罠",
-        "url": "https://zenn.dev/hakaru/articles/m2lora-sft-gguf-vast",
-        "site": "Zenn(LLM)",
-        "published": "2026-05-30T17:57:46Z",
-        "description": "!\nこの記事の対象プロジェクト\n\n\nM2DX — iOS/macOS 向け MIDI 2.0 対応 DX7 互換 FM シンセサイザーアプリ。TestFlight 公開ベータ で試せる\n\nM2LoRA — M2DX の git commit を自動でレビューさせ、LoRA 学習データを貯めるパイプライン\n\n\n\n 前回までのあらすじ\nこのシリーズでは M3 Ultra + Ollama で自分の S...",
         "category": "AI・技術",
         "rss_category": "",
         "image_url": ""
@@ -192,16 +222,6 @@
         "site": "Zenn(LLM)",
         "published": "2026-05-30T14:46:40Z",
         "description": "https://x.com/nodamushi/status/2060700811907465228\n義弟「姉は俺を否定ばっかするから、義兄が羨ましい\n私「否定ねぇ……そもそも私と妹って能力が被ってないからなぁ……\n妹「そう、兄は私を認めてくれるんだよね\n認める？認めるってそもそも私は何様だよっていう、よくわからん会話があった\n\n何気なく書いたこのツイートだが、よく考えるとこの文章は意外と難しい。...",
-        "category": "AI・技術",
-        "rss_category": "",
-        "image_url": ""
-      },
-      {
-        "title": "4文字でLLMを命令したら、命令の意図を超えた判断をした",
-        "url": "https://zenn.dev/emilia_lab/articles/toa-llm-as-cpu",
-        "site": "Zenn(LLM)",
-        "published": "2026-05-30T14:01:39Z",
-        "description": "XSSスキャンを命令したのに、SQLiを修正された。\n命令したのは s1x9 という4文字だけだ。「セキュリティドメイン、#1レジスタ、XSSチェック、優先度9」。自然言語は一切ない。なのにClaudeはこう返した。\n→ Security scan at ctx #1 (priority 9) completed but action mismatch detected —\n  requested...",
         "category": "AI・技術",
         "rss_category": "",
         "image_url": ""
@@ -581,6 +601,76 @@
     ],
     "2026-05": [
       {
+        "title": "AIエージェントに永続記憶を持たせる設計：仮・確定・実働の3層",
+        "url": "https://zenn.dev/agentmemories/articles/ai-agent-tiered-memory-design",
+        "site": "Zenn(LLM)",
+        "published": "2026-05-31T13:22:29Z",
+        "description": "AIエージェントを長く運用していると、ぶつかる壁があります。賢いモデルを使っているのに、会話をまたぐと前提が毎回リセットされ、判断の重さだけが残る。これは「記憶」を設計していないからです。\nこの記事では、AIエージェントに永続記憶を持たせるための実装設計を、仮・確定・実働の3層と保存・昇格・想起の3段パイプラインとして整理します。複数のAIを実運用する中で固まってきた設計をベースにしています。\n!...",
+        "category": "AI・技術",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "AIエージェントに「読ませる情報」をそのまま信じさせない — Context Firewall実践ガイド",
+        "url": "https://zenn.dev/akira_papa/articles/4e8b6926f368ee",
+        "site": "Zenn(LLM)",
+        "published": "2026-05-31T11:42:06Z",
+        "description": "はじめに: AIに「読ませる」と「信じさせる」は違う\nこんにちは。あきらパパです。\nAIエージェントを使っていると、めちゃくちゃ便利な瞬間がありますよね。GitHub Issueを読ませる。Notionや社内Wikiを読ませる。メールを要約させる。Webページを調べさせる。MCPツールの返り値を見ながら、次の作業を判断させる。\nでもね、ここで一つだけ大事な線引きがあります。\nAIに情報を読ませるこ...",
+        "category": "AI・技術",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "AI向けドキュメントはどれで書くべき？ Claude・Gemini・ChatGPTに聞き比べてみた",
+        "url": "https://zenn.dev/shomitei/articles/ai-doc-format-3models",
+        "site": "Zenn(LLM)",
+        "published": "2026-05-31T11:23:52Z",
+        "description": "はじめに\nAIエージェントが当たり前になってきて、「LLMに渡すドキュメントってどんな形式で書くのがいいんだろう？」と悩む場面が増えてきました。\nSmartNewsで読む記事を見ても、あっちがいいと言ったり、こっちがいいと言ったり様々で、僕の主軸はMDでいいんだろうかと悩み始めました。\nあとは、会社でSkillsを使う宿題？みたいなものが出ており、Claude.ai自身に聞いてみたところ「タスクに...",
+        "category": "AI・技術",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "LLMの返信サジェストを「構造化出力なし」で全プロバイダのプロンプトキャッシュに整合させる",
+        "url": "https://zenn.dev/zhener/articles/llm-reply-suggestions-without-structured-output",
+        "site": "Zenn(LLM)",
+        "published": "2026-05-31T10:10:22Z",
+        "description": "音声ロールプレイのチャットに、ユーザー向けの返信サジェスト（「次にこう返せますよ」を3つ提示するやつ）を足したくなった。よくある UX だが、いざ実装しようとすると、ストリーミングとプロンプトキャッシュを前提にしたチャットでは、素朴なやり方がことごとく相性が悪い。\n最終的に「応答にインラインマーカーを同梱して後で抜く」という地味な手に落ち着いたのだが、そこに至る判断が面白かったので残しておく。\n\n...",
+        "category": "AI・技術",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "無料 or 無制限のエージェント環境終焉に備え、完全無料のIDEを開発中",
+        "url": "https://zenn.dev/volcane/articles/2c374c1ab99909",
+        "site": "Zenn(LLM)",
+        "published": "2026-05-31T09:48:05Z",
+        "description": "はじめに\nGitHub Copilot ClaudeCode Codex\n各社は、これまで定額制のサブスクサービスを提供してきました。\nしかし、各社軒並み「使用量ベース」に移行しています。\nそれでも、Gemini Code Assistはずっと無料で使えていました。\nそれも、2026年6月16日にサービス提供が終了します。\nそこで、私は完全無料のIDEを開発することにしました。\nその名も「Micr...",
+        "category": "AI・技術",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "AmiVoiceとLLMで音声情報を取得、要約するんじゃ",
+        "url": "https://zenn.dev/genai/articles/plactice-amivoice",
+        "site": "Zenn(LLM)",
+        "published": "2026-05-31T09:30:05Z",
+        "description": "初めに\nこの記事はZennfes Spring 2026「音声認識AmiVoice APIと生成AIで作る音声体験」エントリ記事です。\nAmiVoice API と LLM を組み合わせて「録音 → 文字起こし → 要約」するデモを Next.js で作りました。AmiVoice 連携で認証エラーにハマったのでその解決方法も共有します。\n\n\n対象読者: AmiVoice API を BFF から初...",
+        "category": "AI・技術",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "AI に Go のコードを読ませる前に RPC の要約を渡す",
+        "url": "https://zenn.dev/usuginu/articles/2e601d3c01196c",
+        "site": "Zenn(LLM)",
+        "published": "2026-05-31T09:24:13Z",
+        "description": "Go の gRPC コードベースを AI に読ませるとき、AI が毎回 grep を繰り返すのが面倒だったので、rpcatlas という小さな CLI ツールを作りました。RPC ごとの処理フローを Markdown で出力するツールです。\n\n 要約\n\n\nrpcatlas は、Go の gRPC handler を起点に「その RPC がどこを通るのか」を Markdown で出力する CLI で...",
+        "category": "AI・技術",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
         "title": "社内ドキュメントを食わせたらベテランになるとか妄想も大概にしてほしい",
         "url": "https://zenn.dev/continuitymodel/articles/0fea9edf12a3fa",
         "site": "Zenn(LLM)",
@@ -681,16 +771,6 @@
         "image_url": ""
       },
       {
-        "title": "AIが「言葉の額面」に引っ張られる問題と、その調整のしかた",
-        "url": "https://zenn.dev/rivinyx/articles/51667ddb3398cd",
-        "site": "Zenn(LLM)",
-        "published": "2026-05-31T01:09:49Z",
-        "description": "はじめに：これは万能テンプレートではない\n最初に、いちばん大事なことを書いておきます。\nこの記事で紹介するのは、AIに一貫した応答をさせたいときに「言葉の額面に引っ張られにくくする」ための書き方です。誤読を減らすための入り口であって、誤読をゼロにする魔法ではありません。\n効かせるのは、結局のところ時間と対話です。ここに書く調整は地形をならす作業で、最後に効くのはその上を歩く積み重ねの方です。だから...",
-        "category": "AI・技術",
-        "rss_category": "",
-        "image_url": ""
-      },
-      {
         "title": "AIが上司をメールで恐喝！？ Anthropicの「AIの自己保全」を自分で再現してみた",
         "url": "https://zenn.dev/50s_zerotohero/articles/4749b7bbe1831b",
         "site": "Zenn(LLM)",
@@ -701,41 +781,11 @@
         "image_url": ""
       },
       {
-        "title": "AIエージェント時代が、ついに来た",
-        "url": "https://zenn.dev/lingmu/articles/2026-05-31-claude-opus-4-8-agentic-era",
-        "site": "Zenn(LLM)",
-        "published": "2026-05-30T22:07:18Z",
-        "description": "AIエージェント時代が、ついに来た\n2026-05-31 | 読了 4分 | #Claude #AI #エージェント\n「AIが自分で考えて動く」——そんな話は何年も前から聞いてきた。でも今回は違う。Claude Opus 4.8の登場と、Anthropicの企業価値がOpenAIを超えた事実が、その「言葉だけの未来」を現実に変えた瞬間かもしれない。\n\n\n 三つの進化：速く、賢く、自律的に\nClau...",
-        "category": "AI・技術",
-        "rss_category": "",
-        "image_url": ""
-      },
-      {
-        "title": "Anthropic、Claude Opus 4.8 を発表——コーディング精度が向上、Fast mode は3倍安く",
-        "url": "https://zenn.dev/quotidia/articles/quotidia-aq-019",
-        "site": "Zenn(LLM)",
-        "published": "2026-05-30T21:12:18Z",
-        "description": "本記事は筆者が運営する AI Quotidia (ai.quotidia.jp) の海外ニュース解説記事です。\n\n\n Claude Opus 4.8 登場——「で、私たちの仕事にどう関係あるの?」を解説します\n2026年5月28日、Anthropic が新しいAIモデルClaude Opus 4.8を発表しました。しかも発表と同時に、全プラットフォームですぐ使えるようになっています。ニュースの見出...",
-        "category": "AI・技術",
-        "rss_category": "",
-        "image_url": ""
-      },
-      {
         "title": "システムプロンプトの設計を本気で考える：XML・Markdown・YAML・言語選択をAIと議論してみた🛠️",
         "url": "https://zenn.dev/itsdaichi/articles/77851598ee4fa5",
         "site": "Zenn(LLM)",
         "published": "2026-05-30T18:55:07Z",
         "description": "はじめに\nプロンプトエンジニアリングを学ぶ中で、ふと「システムプロンプトって、どう書くのが一番いいんだろう?」という疑問が湧きました。Markdown、XML、YAML、JSON…書き方は色々あるし、日本語と英語のどちらで書くべきかもよくわかりません。\nそこで生成AIと一緒に、根本的なところから掘り下げて議論してみました。本記事はその議論の要約です。\n対象読者は次のような方を想定しています。\n\nシ...",
-        "category": "AI・技術",
-        "rss_category": "",
-        "image_url": ""
-      },
-      {
-        "title": "ローカルLLMって本当に開発に使える？（６）SFTしてGGUFに変換してOllamaで動かすまで：7つの罠",
-        "url": "https://zenn.dev/hakaru/articles/m2lora-sft-gguf-vast",
-        "site": "Zenn(LLM)",
-        "published": "2026-05-30T17:57:46Z",
-        "description": "!\nこの記事の対象プロジェクト\n\n\nM2DX — iOS/macOS 向け MIDI 2.0 対応 DX7 互換 FM シンセサイザーアプリ。TestFlight 公開ベータ で試せる\n\nM2LoRA — M2DX の git commit を自動でレビューさせ、LoRA 学習データを貯めるパイプライン\n\n\n\n 前回までのあらすじ\nこのシリーズでは M3 Ultra + Ollama で自分の S...",
         "category": "AI・技術",
         "rss_category": "",
         "image_url": ""
@@ -766,16 +816,6 @@
         "site": "Zenn(LLM)",
         "published": "2026-05-30T14:46:40Z",
         "description": "https://x.com/nodamushi/status/2060700811907465228\n義弟「姉は俺を否定ばっかするから、義兄が羨ましい\n私「否定ねぇ……そもそも私と妹って能力が被ってないからなぁ……\n妹「そう、兄は私を認めてくれるんだよね\n認める？認めるってそもそも私は何様だよっていう、よくわからん会話があった\n\n何気なく書いたこのツイートだが、よく考えるとこの文章は意外と難しい。...",
-        "category": "AI・技術",
-        "rss_category": "",
-        "image_url": ""
-      },
-      {
-        "title": "4文字でLLMを命令したら、命令の意図を超えた判断をした",
-        "url": "https://zenn.dev/emilia_lab/articles/toa-llm-as-cpu",
-        "site": "Zenn(LLM)",
-        "published": "2026-05-30T14:01:39Z",
-        "description": "XSSスキャンを命令したのに、SQLiを修正された。\n命令したのは s1x9 という4文字だけだ。「セキュリティドメイン、#1レジスタ、XSSチェック、優先度9」。自然言語は一切ない。なのにClaudeはこう返した。\n→ Security scan at ctx #1 (priority 9) completed but action mismatch detected —\n  requested...",
         "category": "AI・技術",
         "rss_category": "",
         "image_url": ""
