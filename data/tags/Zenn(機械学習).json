@@ -1,9 +1,91 @@
 {
   "site": "Zenn(機械学習)",
-  "last_updated": "2026-06-01T18:48:43.987182",
-  "total_articles": 1148,
+  "last_updated": "2026-06-01T21:55:49.104334",
+  "total_articles": 1164,
   "articles_by_date": {
+    "本日": [
+      {
+        "title": "数式が苦手でもBERTがわかる｜自己アテンション・Q・K・Vを具体例だけ",
+        "url": "https://zenn.dev/manato_boys/articles/2332f29e1efb40",
+        "site": "Zenn(機械学習)",
+        "published": "2026-06-01T17:46:22Z",
+        "description": "最初にまとめ（結論）\nBERT の心臓部は 自己アテンション（self-attention） です。これを一文でいうと——\n!\n内積で「どの単語に注目すべきか」を測り、その重みで文中の全単語を混ぜ合わせて、各単語の意味をその場で組み立てる。\n\nWord2Vec が「単語の意味を1つの点に固定する辞書」だとすれば、BERT は「文を読んでから各単語の意味をその場で計算するエンジン」です。\nこの記事で...",
+        "category": "AI・技術",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "数式が苦手でもWord2Vecがわかる｜2つの行列・Skip-gram・負例サンプリングを具体例だけで",
+        "url": "https://zenn.dev/manato_boys/articles/cc18a54fcd6710",
+        "site": "Zenn(機械学習)",
+        "published": "2026-06-01T17:38:49Z",
+        "description": "最初にまとめ（結論）\nWord2Vec の中身は、一文でいうとこれだけです。\n!\n内積で単語の近さを測り、本物のペアは近づけ・ニセのペアは遠ざける。これを大量に繰り返すと、似た文脈に出る語が自然と近いベクトルになる。\n\nこの記事では、難しい数式に頼らず、たった4語のコーパス（「犬」「猫」「が」「好き」） だけで手を動かしながら、次の「なぜ？」に答えていきます。\n\nなぜ単語ベクトルの行列が 2つ あ...",
+        "category": "AI・技術",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "表形式データ拡張 part15：MDO",
+        "url": "https://zenn.dev/haruto_big6/articles/8a9eae0bb65395",
+        "site": "Zenn(機械学習)",
+        "published": "2026-06-01T16:13:30Z",
+        "description": "基本情報\nSMOTEの記事で説明した通り，幅広い分野で使われる表形式データにはクラス不均衡という大きな課題があります．それを解決するために使用されるのが表形式データ拡張であり，その代表格がSMOTEです．\nしかし，SMOTEを含む多くの拡張手法は基本的にバイナリ分類の状況を想定しています．すなわち，多数クラスが1種類で，少数クラスが1種類の状況です．しかし，現実的には多数クラスが複数あったり，ある...",
+        "category": "AI・技術",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "ローカルLLMの主役はメモリだった ― RTX Spark(128GB)とDGX Stationを推論の物理から読む",
+        "url": "https://zenn.dev/hironakamura_ai/articles/1bf139770b86f3",
+        "site": "Zenn(機械学習)",
+        "published": "2026-06-01T15:49:46Z",
+        "description": "日本時間6月1日に始まった NVIDIA GTC Taipei 2026 の基調講演で、ローカル実行を前提にしたハードウェアが2つ発表された。ノートPC向けSoCの「RTX Spark」と、Windowsデスクトップ機の「DGX Station」だ。\n\nRTX Spark: 1ペタフロップスのBlackwell GPU + 20コアのGrace CPU(Armベース)、128GBのユニファイドメモ...",
+        "category": "AI・技術",
+        "rss_category": "",
+        "image_url": ""
+      }
+    ],
     "昨日": [
+      {
+        "title": "ハルシネーションとは？生成AIが嘘をつく現象",
+        "url": "https://zenn.dev/h888s/articles/genai-term-hallucination",
+        "site": "Zenn(機械学習)",
+        "published": "2026-06-01T13:53:51Z",
+        "description": "生成AIを使っていると、それらしい文章なのに内容が事実と違う、という場面に出会うことがあります。これは「ハルシネーション」と呼ばれる現象で、生成AIパスポート試験でも基礎概念として問われるテーマです。本記事では、定義に沿ってやさしく整理します。\n\n ハルシネーションとは\nハルシネーション（hallucination）とは、生成AIが事実と異なる情報を、さも事実であるかのように生成してしまう現象を指...",
+        "category": "AI・技術",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "内部 eval 98% なのに実機で死んだ — LiveKit wakeword で自分の声を学習させた話",
+        "url": "https://zenn.dev/i_ichi/articles/wakeword-livekit-eval-vs-realmic",
+        "site": "Zenn(機械学習)",
+        "published": "2026-06-01T13:12:00Z",
+        "description": "前作では、英語の起動ワード「hey assistant」 で wake word モデルを 40 分で作った（前作の記事）。内部 eval は recall 98.95%。ローカルで使える TTS（Piper）が英語前提なので、起動ワードも自然と英語になっていた。\nだが本当に欲しかったのは、自分の声で日本語の「ヘイ、マルタ」 に反応するモデルだ。起動ワードを日本語に作り変えた前バージョン (v3)...",
+        "category": "AI・技術",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "GRPOはなぜ長時間学習で崩壊するのか――Qwenが出した「系列単位」の答え、GSPO",
+        "url": "https://zenn.dev/aiwatch_jp/articles/gspo-qwen-sequence-level-rl",
+        "site": "Zenn(機械学習)",
+        "published": "2026-06-01T12:28:50Z",
+        "description": "!\n最先端AIを技術の中身まで日本語で読み解く「AIウォッチ」の深掘り記事です。一次情報（arXiv 2507.18071 / Qwen公式ブログ）を当たって書いています。\n\n推論モデルの強化学習（RL）は、ここ1年で「ベンチマークを何点上げたか」を競うフェーズに見える。だがQwenチームが2025年7月末に公開した GSPO（Group Sequence Policy Optimization）...",
+        "category": "AI・技術",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "生成AI時代に問われるのは「評価する力」である",
+        "url": "https://zenn.dev/shotakikuchi/articles/ai-evaluation-in-generative-ai-era",
+        "site": "Zenn(機械学習)",
+        "published": "2026-06-01T11:02:11Z",
+        "description": "はじめに\nこんにちは。株式会社タイミーでAI・データサイエンス部 部長を務めている菊地です。\n生成AIを業務やプロダクトに取り入れる動きは、ここ数年で一気に広がりました。文章の下書きや要約、コード生成、問い合わせ対応、社内検索、分析補助、AIエージェントによる業務支援など、以前は専門的な知識や実装が必要だった作業も、いまでは多くの人が自然に試せるようになっています。\n一方で、AIを多くの人が使うよ...",
+        "category": "AI・技術",
+        "rss_category": "",
+        "image_url": ""
+      },
       {
         "title": "「関西Kaggler会 交流会 2026#1」 に行ってきた！",
         "url": "https://zenn.dev/gatechnologies/articles/3df2a1bdf6be2c",
@@ -178,6 +260,86 @@
       }
     ],
     "2026-06": [
+      {
+        "title": "数式が苦手でもBERTがわかる｜自己アテンション・Q・K・Vを具体例だけ",
+        "url": "https://zenn.dev/manato_boys/articles/2332f29e1efb40",
+        "site": "Zenn(機械学習)",
+        "published": "2026-06-01T17:46:22Z",
+        "description": "最初にまとめ（結論）\nBERT の心臓部は 自己アテンション（self-attention） です。これを一文でいうと——\n!\n内積で「どの単語に注目すべきか」を測り、その重みで文中の全単語を混ぜ合わせて、各単語の意味をその場で組み立てる。\n\nWord2Vec が「単語の意味を1つの点に固定する辞書」だとすれば、BERT は「文を読んでから各単語の意味をその場で計算するエンジン」です。\nこの記事で...",
+        "category": "AI・技術",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "数式が苦手でもWord2Vecがわかる｜2つの行列・Skip-gram・負例サンプリングを具体例だけで",
+        "url": "https://zenn.dev/manato_boys/articles/cc18a54fcd6710",
+        "site": "Zenn(機械学習)",
+        "published": "2026-06-01T17:38:49Z",
+        "description": "最初にまとめ（結論）\nWord2Vec の中身は、一文でいうとこれだけです。\n!\n内積で単語の近さを測り、本物のペアは近づけ・ニセのペアは遠ざける。これを大量に繰り返すと、似た文脈に出る語が自然と近いベクトルになる。\n\nこの記事では、難しい数式に頼らず、たった4語のコーパス（「犬」「猫」「が」「好き」） だけで手を動かしながら、次の「なぜ？」に答えていきます。\n\nなぜ単語ベクトルの行列が 2つ あ...",
+        "category": "AI・技術",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "表形式データ拡張 part15：MDO",
+        "url": "https://zenn.dev/haruto_big6/articles/8a9eae0bb65395",
+        "site": "Zenn(機械学習)",
+        "published": "2026-06-01T16:13:30Z",
+        "description": "基本情報\nSMOTEの記事で説明した通り，幅広い分野で使われる表形式データにはクラス不均衡という大きな課題があります．それを解決するために使用されるのが表形式データ拡張であり，その代表格がSMOTEです．\nしかし，SMOTEを含む多くの拡張手法は基本的にバイナリ分類の状況を想定しています．すなわち，多数クラスが1種類で，少数クラスが1種類の状況です．しかし，現実的には多数クラスが複数あったり，ある...",
+        "category": "AI・技術",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "ローカルLLMの主役はメモリだった ― RTX Spark(128GB)とDGX Stationを推論の物理から読む",
+        "url": "https://zenn.dev/hironakamura_ai/articles/1bf139770b86f3",
+        "site": "Zenn(機械学習)",
+        "published": "2026-06-01T15:49:46Z",
+        "description": "日本時間6月1日に始まった NVIDIA GTC Taipei 2026 の基調講演で、ローカル実行を前提にしたハードウェアが2つ発表された。ノートPC向けSoCの「RTX Spark」と、Windowsデスクトップ機の「DGX Station」だ。\n\nRTX Spark: 1ペタフロップスのBlackwell GPU + 20コアのGrace CPU(Armベース)、128GBのユニファイドメモ...",
+        "category": "AI・技術",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "ハルシネーションとは？生成AIが嘘をつく現象",
+        "url": "https://zenn.dev/h888s/articles/genai-term-hallucination",
+        "site": "Zenn(機械学習)",
+        "published": "2026-06-01T13:53:51Z",
+        "description": "生成AIを使っていると、それらしい文章なのに内容が事実と違う、という場面に出会うことがあります。これは「ハルシネーション」と呼ばれる現象で、生成AIパスポート試験でも基礎概念として問われるテーマです。本記事では、定義に沿ってやさしく整理します。\n\n ハルシネーションとは\nハルシネーション（hallucination）とは、生成AIが事実と異なる情報を、さも事実であるかのように生成してしまう現象を指...",
+        "category": "AI・技術",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "内部 eval 98% なのに実機で死んだ — LiveKit wakeword で自分の声を学習させた話",
+        "url": "https://zenn.dev/i_ichi/articles/wakeword-livekit-eval-vs-realmic",
+        "site": "Zenn(機械学習)",
+        "published": "2026-06-01T13:12:00Z",
+        "description": "前作では、英語の起動ワード「hey assistant」 で wake word モデルを 40 分で作った（前作の記事）。内部 eval は recall 98.95%。ローカルで使える TTS（Piper）が英語前提なので、起動ワードも自然と英語になっていた。\nだが本当に欲しかったのは、自分の声で日本語の「ヘイ、マルタ」 に反応するモデルだ。起動ワードを日本語に作り変えた前バージョン (v3)...",
+        "category": "AI・技術",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "GRPOはなぜ長時間学習で崩壊するのか――Qwenが出した「系列単位」の答え、GSPO",
+        "url": "https://zenn.dev/aiwatch_jp/articles/gspo-qwen-sequence-level-rl",
+        "site": "Zenn(機械学習)",
+        "published": "2026-06-01T12:28:50Z",
+        "description": "!\n最先端AIを技術の中身まで日本語で読み解く「AIウォッチ」の深掘り記事です。一次情報（arXiv 2507.18071 / Qwen公式ブログ）を当たって書いています。\n\n推論モデルの強化学習（RL）は、ここ1年で「ベンチマークを何点上げたか」を競うフェーズに見える。だがQwenチームが2025年7月末に公開した GSPO（Group Sequence Policy Optimization）...",
+        "category": "AI・技術",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "生成AI時代に問われるのは「評価する力」である",
+        "url": "https://zenn.dev/shotakikuchi/articles/ai-evaluation-in-generative-ai-era",
+        "site": "Zenn(機械学習)",
+        "published": "2026-06-01T11:02:11Z",
+        "description": "はじめに\nこんにちは。株式会社タイミーでAI・データサイエンス部 部長を務めている菊地です。\n生成AIを業務やプロダクトに取り入れる動きは、ここ数年で一気に広がりました。文章の下書きや要約、コード生成、問い合わせ対応、社内検索、分析補助、AIエージェントによる業務支援など、以前は専門的な知識や実装が必要だった作業も、いまでは多くの人が自然に試せるようになっています。\n一方で、AIを多くの人が使うよ...",
+        "category": "AI・技術",
+        "rss_category": "",
+        "image_url": ""
+      },
       {
         "title": "「関西Kaggler会 交流会 2026#1」 に行ってきた！",
         "url": "https://zenn.dev/gatechnologies/articles/3df2a1bdf6be2c",
