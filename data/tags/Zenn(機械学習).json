@@ -1,25 +1,205 @@
 {
   "site": "Zenn(機械学習)",
-  "last_updated": "2026-06-02T06:54:47.522579",
-  "total_articles": 1164,
+  "last_updated": "2026-06-02T11:20:52.269484",
+  "total_articles": 1194,
   "articles_by_date": {
     "本日": [
       {
-        "title": "数式が苦手でもBERTがわかる｜自己アテンション・Q・K・Vを具体例だけ",
-        "url": "https://zenn.dev/manato_boys/articles/2332f29e1efb40",
+        "title": "「AIの言うことにどれだけ人を従わせるか」は間違った問い ── 論文紹介#1",
+        "url": "https://zenn.dev/agripedia/articles/860e55ff1e4994",
         "site": "Zenn(機械学習)",
-        "published": "2026-06-01T17:46:22Z",
-        "description": "最初にまとめ（結論）\nBERT の心臓部は 自己アテンション（self-attention） です。これを一文でいうと——\n!\n内積で「どの単語に注目すべきか」を測り、その重みで文中の全単語を混ぜ合わせて、各単語の意味をその場で組み立てる。\n\nWord2Vec が「単語の意味を1つの点に固定する辞書」だとすれば、BERT は「文を読んでから各単語の意味をその場で計算するエンジン」です。\nこの記事で...",
+        "published": "2026-06-02T06:39:05Z",
+        "description": "はじめに\nこんにちは。アグリペディア株式会社の野口です。\nAIによる予測やレコメンドを「アドバイザー」として人間の意思決定に組み込むプロダクトは、もはや珍しくありません。融資審査、医療スクリーニング、コンテンツモデレーション、そして我々が日々向き合う業務システムのなかの「AIが提案して人間が確定する」フロー。こうした AI-assisted decision-making を設計するとき、私たちは...",
         "category": "AI・技術",
         "rss_category": "",
         "image_url": ""
       },
       {
-        "title": "数式が苦手でもWord2Vecがわかる｜2つの行列・Skip-gram・負例サンプリングを具体例だけで",
-        "url": "https://zenn.dev/manato_boys/articles/cc18a54fcd6710",
+        "title": "AIでSNSのアイコン作成　自分の写真をアバターキャラ風にデフォルメ",
+        "url": "https://zenn.dev/mlboydaisuke/articles/fb9249de12bd6738f13c",
         "site": "Zenn(機械学習)",
-        "published": "2026-06-01T17:38:49Z",
-        "description": "最初にまとめ（結論）\nWord2Vec の中身は、一文でいうとこれだけです。\n!\n内積で単語の近さを測り、本物のペアは近づけ・ニセのペアは遠ざける。これを大量に繰り返すと、似た文脈に出る語が自然と近いベクトルになる。\n\nこの記事では、難しい数式に頼らず、たった4語のコーパス（「犬」「猫」「が」「好き」） だけで手を動かしながら、次の「なぜ？」に答えていきます。\n\nなぜ単語ベクトルの行列が 2つ あ...",
+        "published": "2026-06-02T03:19:28Z",
+        "description": "自分の写真を簡単にアバターに\n自分の画像をそのままSNSのアイコンにしたくない場合など、アバターがあると便利です。\nAIによる画像生成ですごくたくさんのバリエーションのアバターが爆速で作れます。\n\n やり方\n簡単です。\n以下のツールを使います。\nhttps://memeplex.app/aiavatar.html\n\n写真をアップロードするだけで、20個ぐらいのテイストのアバターにしてくれます。\nオ...",
+        "category": "AI・技術",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "Yolov7でインスタンスセグメンテーション",
+        "url": "https://zenn.dev/mlboydaisuke/articles/fa12dd87d6ac1b583077",
+        "site": "Zenn(機械学習)",
+        "published": "2026-06-02T03:19:27Z",
+        "description": "同じ種類のオブジェクトでも一つ一つ区別してくれるインスタンスセグメンテーションがyolov7で使えます。\n\nhttps://github.com/WongKinYiu/yolov7\n\n 方法\n必要なライブラリのインストール。\ngit clone -b mask https://github.com/WongKinYiu/yolov7\ncd yolov7\npip install -r require...",
+        "category": "AI・技術",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "心霊写真もインスタ映え🧁　暗い画像を明るくする機械学習がすごい",
+        "url": "https://zenn.dev/mlboydaisuke/articles/f8150b3b976469b0fccc",
+        "site": "Zenn(機械学習)",
+        "published": "2026-06-02T03:19:24Z",
+        "description": "#明度の低い画像を明るくしてくれる機械学習モデルを使う方法です\nGLADNetというモデルを使って、暗い画像を明るくします。\nPythonでかんたんに実行できます。\n\n\n\n\n#暗い画像から情報を取り出したい\n暗くて上手く取れなかった画像や、夜の監視カメラや車載カメラの画像を明るくできれば、\n役に立つ情報が取り出せる場合があります。\nしかし、単にフィルターで明度を調整しても、情報は増えません。\n#G...",
+        "category": "AI・技術",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "AnimeGAN2-PyTorch　写真をアニメにする",
+        "url": "https://zenn.dev/mlboydaisuke/articles/f72327cf7f17509f6863",
+        "site": "Zenn(機械学習)",
+        "published": "2026-06-02T03:19:23Z",
+        "description": "AnimeGANv2に、かわいいトレーニング済みモデルが出てきて、\nしかも、Torch-Hubでモデルをダウンロードできるようになって、使いやすくなった。\n \nなにせ、以下のコードだけで写真をアニメ風に変換できる。\nfrom PIL import Image\nimport torch\n\nmodel = torch.hub.load(\"bryandlee/animegan2-pytorch:main...",
+        "category": "AI・技術",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "画像を綺麗にできる　Stable DiffusionによるSuper Resolution",
+        "url": "https://zenn.dev/mlboydaisuke/articles/f6c70ec935c267cd9e0e",
+        "site": "Zenn(機械学習)",
+        "published": "2026-06-02T03:19:22Z",
+        "description": "Diffusionモデルによる画像強化\n画像を綺麗に拡大できます。\n \n\n インストール\npip install diffusers transformers accelerate scipy safetensors\n\n 実行\nimport requests\nfrom PIL import Image\nfrom io import BytesIO\nfrom diffusers import Sta...",
+        "category": "AI・技術",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "違法（迷惑）行為をAIで検出　AI異常行動検知の方法",
+        "url": "https://zenn.dev/mlboydaisuke/articles/f61a056cd17f7026ab48",
+        "site": "Zenn(機械学習)",
+        "published": "2026-06-02T03:19:21Z",
+        "description": "迷惑行為を一発検出\n\n店舗や公共の場では様々な違法・迷惑行為のリスクがあります。\n人力で監視するのは大変です。\nAIを使えば24時間人員なしで監視でき、異常があればすぐに検出してアラートできます。\n\n 路上喫煙を検知してみる\n例として、禁煙地域に設置した監視カメラから路上喫煙を検知してみましょう。\n\n データを用意して、AIに学習させる\n手順は単純です。\nタバコの写っている画像を用意して、AIに学...",
+        "category": "AI・技術",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "iOS/Swiftで小顔加工フィルターをつくる",
+        "url": "https://zenn.dev/mlboydaisuke/articles/f4efca8d9d281cc441a0",
+        "site": "Zenn(機械学習)",
+        "published": "2026-06-02T03:19:19Z",
+        "description": "美顔小顔加工アプリを作る\n\nインスタにアップロードする時って小顔にしますよね？\n小顔フィルターの実装の仕方です。\n\n 顔を検出してゆがませる\n顔の領域を中心にゆがませます。\nこれで、周囲はなるべく自然に、顔だけ徐々に小さくできます。\n\n 顔の検出\nlet request = VNDetectFaceRectanglesRequest()\nlet handler = VNImageRequestHa...",
+        "category": "AI・技術",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "スマホアプリサービスを作っている人必見!! AIをスマートフォンで使うメリット",
+        "url": "https://zenn.dev/mlboydaisuke/articles/f15ac3885e42b52c579b",
+        "site": "Zenn(機械学習)",
+        "published": "2026-06-02T03:19:15Z",
+        "description": "サービス提供者にもユーザーにもメリットが大きい\n\n（参考画像：yolov5 のリポジトリより）\nスマートフォン上でもAIは動かせます。\nスマートフォンにAIを搭載する方法は、サーバーで実行するAIに比べ多くのメリットがあります。\n【比較図：サーバー上のAI】\n\n【比較図：スマートフォン上のAI】\n\n\n メリット１：実行速度が速い\nスマホ上でAIを実行すれば、端末とサーバーのデータ通信の時間を省略で...",
+        "category": "AI・技術",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "データセット用の顔画像をすぐに用意したい　iPhoneの写真から、顔だけを数秒で100枚切り出す",
+        "url": "https://zenn.dev/mlboydaisuke/articles/ef02c22e3a8e35aada90",
+        "site": "Zenn(機械学習)",
+        "published": "2026-06-02T03:19:13Z",
+        "description": "#iPhoneのフォトライブラリから、顔だけを切り出す方法です\n\n#データセットを用意するのは大変\nたとえば機械学習などで、データセットとして顔写真や人体の写真が数千枚必要なケースがあります。\nしかし、手動で顔写真を切り出すのは大変です。\n#手元のiPhoneの写真が使えたら便利\nたいていの人のiPhoneには、人の写っている写真が数百〜数千枚はあるでしょう。\nそれらの写真の顔だけを抽出できれば、...",
+        "category": "AI・技術",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "TensorFlow Object Detection API で物体検出モデルをトレーニング",
+        "url": "https://zenn.dev/mlboydaisuke/articles/eb962f9aea438dc4eb75",
+        "site": "Zenn(機械学習)",
+        "published": "2026-06-02T03:19:11Z",
+        "description": "#手順\nTensorFlow Object Detection APIで物体検出モデルをがっつりトレーニングする方法です。\n初期値からの学習も\n転移学習もできます。\n\n簡易なファインチューニング学習のみする場合はこちらの記事：\nTensorFlow Object Detection APIで物体検出モデルを簡易トレーニング\n\n推論のみする場合はこちらの記事：\nTensorFlow Object D...",
+        "category": "AI・技術",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "Pytorch-ONNXを量子化して高速化する",
+        "url": "https://zenn.dev/mlboydaisuke/articles/e82dd4bc1f0befa0ad46",
+        "site": "Zenn(機械学習)",
+        "published": "2026-06-02T03:19:09Z",
+        "description": "変換前に量子化することで高速化できます。\n\n AnimeGANを量子化\nimport torch\nmodel = torch.hub.load(\"bryandlee/animegan2-pytorch:main\", \"generator\", pretrained=\"celeba_distill\").eval()\nmodel_int8 = torch.quantization.convert(mod...",
+        "category": "AI・技術",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "Yolov5でSemanticSegmentationができるって知ってた？",
+        "url": "https://zenn.dev/mlboydaisuke/articles/e8146317a20be79c4c8d",
+        "site": "Zenn(機械学習)",
+        "published": "2026-06-02T03:19:08Z",
+        "description": "しかもめっちゃかんたんに使えます\n\nhttps://github.com/ultralytics/yolov5\nリポジトリをクローンして、必要なライブラリをインストール。\ngit clone https://github.com/ultralytics/yolov5.git\ncd yolov5\npip install -r requirements.txt\n入力パスを指定して実行。\n画像や動画、W...",
+        "category": "AI・技術",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "よりどりみどりのセグメンテーションモデルが使い放題というバグってるモジュールmmsegmentation　え、この最新モデルも？",
+        "url": "https://zenn.dev/mlboydaisuke/articles/e793e0ee9292eee0b175",
+        "site": "Zenn(機械学習)",
+        "published": "2026-06-02T03:19:06Z",
+        "description": "#発表されたばかりの最新モデルがかんたんにつかえるPythonモジュール\nかんたんなコードで「今年でた」みたいな最新モデルを使えるモジュールです。\n\n\n#機械学習は日々進歩を遂げているが、キャッチアップして使うのは大変そう\nどんどん論文が発表され、精度はどんどん上がっていく機械学習モデル。\nコードも公開されるけど、発表されるごとにGitHubを訪れてコードを実行してみるのもたいへんそう。。。\n#研...",
+        "category": "AI・技術",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "画像の不要物を削除　AOT-GAN-for-Inpainting",
+        "url": "https://zenn.dev/mlboydaisuke/articles/e64037f08fdc98d6648b",
+        "site": "Zenn(機械学習)",
+        "published": "2026-06-02T03:19:05Z",
+        "description": "Inpaintingやってみたいけど難しそう\n\n意外と簡単です。\n\n 使い方\nInpaintingモデルAOT-GAN-for-Inpaintingの使い方です。\nhttps://github.com/researchmm/AOT-GAN-for-Inpainting\nリポジトリからトレーニング済みの重みをダウンロードしておきます。\nリポジトリをクローンして、\n・トレーニング済みの重みのパス\n・画...",
+        "category": "AI・技術",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "四角形を検出する",
+        "url": "https://zenn.dev/mlboydaisuke/articles/e5e08f17304f3a0116b1",
+        "site": "Zenn(機械学習)",
+        "published": "2026-06-02T03:19:04Z",
+        "description": "#画像内の四角形を検出する方法です\n\n#書類や標識の検出に\n四角形の人工物を検出できれば、場面に応じて様々な用途に活かせそうです。\n例えば、ドキュメント内の四角形の検出など。\n#Visionの四角形検出が使える\n。\n#方法\n画像にVNDetectRectangleRequestをするだけです。\nlet request = VNDetectRectanglesRequest()\nlet handle...",
+        "category": "AI・技術",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "カスタムデータセットでなるべくかんたんに画像分類器をつくりたい。Pytorchで転移学習",
+        "url": "https://zenn.dev/mlboydaisuke/articles/e386f0aa5232d323db7e",
+        "site": "Zenn(機械学習)",
+        "published": "2026-06-02T03:18:59Z",
+        "description": "自前のデータセットでImageClassificationモデルをトレーニングします\n\nPytorch　チュートリアルのColab:\nhttps://colab.research.google.com/github/pytorch/tutorials/blob/gh-pages/_downloads/62840b1eece760d5e42593187847261f/transfer_learnin...",
+        "category": "AI・技術",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "顔写真をめっちゃ綺麗にする　GFPGAN",
+        "url": "https://zenn.dev/mlboydaisuke/articles/e279496d3eb43ff6b72c",
+        "site": "Zenn(機械学習)",
+        "published": "2026-06-02T03:18:59Z",
+        "description": "#顔に特化した超解像モデルの使い方です\n\n#写真の多くは顔写真\n超解像モデルはいろいろありますが、一般的な画像データセットやアニメに特化したものが多いです。\n世の中の多くの写真は人の写真。\n#GFPGANは顔専用\n顔を特に綺麗にしてくれます。\nhttps://github.com/TencentARC/GFPGAN\n#使い方\n実行はかんたん1行。\npython inference_gfpgan.p...",
+        "category": "AI・技術",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "SIGNATE CLI でデータセットをダウンロードする",
+        "url": "https://zenn.dev/mlboydaisuke/articles/dd2b7f4cd8e655a5376b",
+        "site": "Zenn(機械学習)",
+        "published": "2026-06-02T03:18:52Z",
+        "description": "SIGNATEは、データサイエンティストのための統合プラットフォーム。\n機械学習コンペを開催しています。\nコンペのデータセットは公式ページからダウンロードできますが、データセットはサイズが大きいので\nコマンドラインからダウンロードできるとColabに直接ダウンロードできて便利。\nSIGNATE CLIでコマンドラインから操作できる。\n\n 手順\n\n １、SIGNATEのインストール\npip inst...",
+        "category": "AI・技術",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "YoloV5をCoreMLに変換。デコードレイヤーも追加する。",
+        "url": "https://zenn.dev/mlboydaisuke/articles/d9e878330465e83cd79d",
+        "site": "Zenn(機械学習)",
+        "published": "2026-06-02T03:18:50Z",
+        "description": "Yolov5をiOSで使う方法です\nYolov5は物体検出機械学習モデルです。\niPhoneやiPadで使えるように、CoreML形式に変換します。\n\n\n 変換したモデルはそのままでは使えない\nCoreMLToolsでシンプルに変換したYoloモデルの出力は、クラスごとの大量のボックスなので、そのままでは使えません。\nデコード用のレイヤーと、Non Max Suppressionのレイヤーを追加し...",
         "category": "AI・技術",
         "rss_category": "",
         "image_url": ""
@@ -46,16 +226,6 @@
       }
     ],
     "昨日": [
-      {
-        "title": "ハルシネーションとは？生成AIが嘘をつく現象",
-        "url": "https://zenn.dev/h888s/articles/genai-term-hallucination",
-        "site": "Zenn(機械学習)",
-        "published": "2026-06-01T13:53:51Z",
-        "description": "生成AIを使っていると、それらしい文章なのに内容が事実と違う、という場面に出会うことがあります。これは「ハルシネーション」と呼ばれる現象で、生成AIパスポート試験でも基礎概念として問われるテーマです。本記事では、定義に沿ってやさしく整理します。\n\n ハルシネーションとは\nハルシネーション（hallucination）とは、生成AIが事実と異なる情報を、さも事実であるかのように生成してしまう現象を指...",
-        "category": "AI・技術",
-        "rss_category": "",
-        "image_url": ""
-      },
       {
         "title": "内部 eval 98% なのに実機で死んだ — LiveKit wakeword で自分の声を学習させた話",
         "url": "https://zenn.dev/i_ichi/articles/wakeword-livekit-eval-vs-realmic",
@@ -137,16 +307,6 @@
         "image_url": ""
       },
       {
-        "title": "Read This Before You Have Opinions About ChatGPT (For Nerds)",
-        "url": "https://zenn.dev/harunasu/articles/ee8e3f144c3393",
-        "site": "Zenn(機械学習)",
-        "published": "2026-06-01T05:43:09Z",
-        "description": "The Otaku's Guide to LLMs — Before you start lecturing everyone on \"getting MASSIVE value out of ChatGPT!!\", maybe learn how it actually works first.\n\n Otaku Intros Run Long\nHey there.\nThese days — th...",
-        "category": "AI・技術",
-        "rss_category": "",
-        "image_url": ""
-      },
-      {
         "title": "SnowflakeのMLランタイムを自前コンテナに置き換える——CREで再現性とコンプライアンスを同時に解決",
         "url": "https://zenn.dev/inoway/articles/i67-feature-update-2026-05-19-custom-runtime-ima",
         "site": "Zenn(機械学習)",
@@ -188,16 +348,6 @@
       }
     ],
     "一昨日": [
-      {
-        "title": "Stanford RNA 3D Folding Part 2：上位3解法から読み解くRNA立体構造予測の現在地",
-        "url": "https://zenn.dev/sasaki_kanji/articles/8daa2cfe3a361e",
-        "site": "Zenn(機械学習)",
-        "published": "2026-05-31T14:25:16Z",
-        "description": "2026年4月、KaggleのRNA立体構造予測コンペ「Stanford RNA 3D Folding Part 2」の上位解法が公開された。本記事では1位〜3位の解法を整理し、そこから見えてくる共通戦略と各チームの独自性を考察する。\n!\n本記事はKaggleで公開された各チームのSolution Writeup（1位 team_cp、2位ソロ、3位ソロ）の内容を筆者が読み解いて整理・考察したもの...",
-        "category": "AI・技術",
-        "rss_category": "",
-        "image_url": ""
-      },
       {
         "title": "LLM推論はなぜ詰まるのか：メモリ律速とKVキャッシュを実装目線で",
         "url": "https://zenn.dev/hironakamura_ai/articles/46598fcac2bcce",
@@ -261,21 +411,201 @@
     ],
     "2026-06": [
       {
-        "title": "数式が苦手でもBERTがわかる｜自己アテンション・Q・K・Vを具体例だけ",
-        "url": "https://zenn.dev/manato_boys/articles/2332f29e1efb40",
+        "title": "「AIの言うことにどれだけ人を従わせるか」は間違った問い ── 論文紹介#1",
+        "url": "https://zenn.dev/agripedia/articles/860e55ff1e4994",
         "site": "Zenn(機械学習)",
-        "published": "2026-06-01T17:46:22Z",
-        "description": "最初にまとめ（結論）\nBERT の心臓部は 自己アテンション（self-attention） です。これを一文でいうと——\n!\n内積で「どの単語に注目すべきか」を測り、その重みで文中の全単語を混ぜ合わせて、各単語の意味をその場で組み立てる。\n\nWord2Vec が「単語の意味を1つの点に固定する辞書」だとすれば、BERT は「文を読んでから各単語の意味をその場で計算するエンジン」です。\nこの記事で...",
+        "published": "2026-06-02T06:39:05Z",
+        "description": "はじめに\nこんにちは。アグリペディア株式会社の野口です。\nAIによる予測やレコメンドを「アドバイザー」として人間の意思決定に組み込むプロダクトは、もはや珍しくありません。融資審査、医療スクリーニング、コンテンツモデレーション、そして我々が日々向き合う業務システムのなかの「AIが提案して人間が確定する」フロー。こうした AI-assisted decision-making を設計するとき、私たちは...",
         "category": "AI・技術",
         "rss_category": "",
         "image_url": ""
       },
       {
-        "title": "数式が苦手でもWord2Vecがわかる｜2つの行列・Skip-gram・負例サンプリングを具体例だけで",
-        "url": "https://zenn.dev/manato_boys/articles/cc18a54fcd6710",
+        "title": "AIでSNSのアイコン作成　自分の写真をアバターキャラ風にデフォルメ",
+        "url": "https://zenn.dev/mlboydaisuke/articles/fb9249de12bd6738f13c",
         "site": "Zenn(機械学習)",
-        "published": "2026-06-01T17:38:49Z",
-        "description": "最初にまとめ（結論）\nWord2Vec の中身は、一文でいうとこれだけです。\n!\n内積で単語の近さを測り、本物のペアは近づけ・ニセのペアは遠ざける。これを大量に繰り返すと、似た文脈に出る語が自然と近いベクトルになる。\n\nこの記事では、難しい数式に頼らず、たった4語のコーパス（「犬」「猫」「が」「好き」） だけで手を動かしながら、次の「なぜ？」に答えていきます。\n\nなぜ単語ベクトルの行列が 2つ あ...",
+        "published": "2026-06-02T03:19:28Z",
+        "description": "自分の写真を簡単にアバターに\n自分の画像をそのままSNSのアイコンにしたくない場合など、アバターがあると便利です。\nAIによる画像生成ですごくたくさんのバリエーションのアバターが爆速で作れます。\n\n やり方\n簡単です。\n以下のツールを使います。\nhttps://memeplex.app/aiavatar.html\n\n写真をアップロードするだけで、20個ぐらいのテイストのアバターにしてくれます。\nオ...",
+        "category": "AI・技術",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "Yolov7でインスタンスセグメンテーション",
+        "url": "https://zenn.dev/mlboydaisuke/articles/fa12dd87d6ac1b583077",
+        "site": "Zenn(機械学習)",
+        "published": "2026-06-02T03:19:27Z",
+        "description": "同じ種類のオブジェクトでも一つ一つ区別してくれるインスタンスセグメンテーションがyolov7で使えます。\n\nhttps://github.com/WongKinYiu/yolov7\n\n 方法\n必要なライブラリのインストール。\ngit clone -b mask https://github.com/WongKinYiu/yolov7\ncd yolov7\npip install -r require...",
+        "category": "AI・技術",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "心霊写真もインスタ映え🧁　暗い画像を明るくする機械学習がすごい",
+        "url": "https://zenn.dev/mlboydaisuke/articles/f8150b3b976469b0fccc",
+        "site": "Zenn(機械学習)",
+        "published": "2026-06-02T03:19:24Z",
+        "description": "#明度の低い画像を明るくしてくれる機械学習モデルを使う方法です\nGLADNetというモデルを使って、暗い画像を明るくします。\nPythonでかんたんに実行できます。\n\n\n\n\n#暗い画像から情報を取り出したい\n暗くて上手く取れなかった画像や、夜の監視カメラや車載カメラの画像を明るくできれば、\n役に立つ情報が取り出せる場合があります。\nしかし、単にフィルターで明度を調整しても、情報は増えません。\n#G...",
+        "category": "AI・技術",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "AnimeGAN2-PyTorch　写真をアニメにする",
+        "url": "https://zenn.dev/mlboydaisuke/articles/f72327cf7f17509f6863",
+        "site": "Zenn(機械学習)",
+        "published": "2026-06-02T03:19:23Z",
+        "description": "AnimeGANv2に、かわいいトレーニング済みモデルが出てきて、\nしかも、Torch-Hubでモデルをダウンロードできるようになって、使いやすくなった。\n \nなにせ、以下のコードだけで写真をアニメ風に変換できる。\nfrom PIL import Image\nimport torch\n\nmodel = torch.hub.load(\"bryandlee/animegan2-pytorch:main...",
+        "category": "AI・技術",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "画像を綺麗にできる　Stable DiffusionによるSuper Resolution",
+        "url": "https://zenn.dev/mlboydaisuke/articles/f6c70ec935c267cd9e0e",
+        "site": "Zenn(機械学習)",
+        "published": "2026-06-02T03:19:22Z",
+        "description": "Diffusionモデルによる画像強化\n画像を綺麗に拡大できます。\n \n\n インストール\npip install diffusers transformers accelerate scipy safetensors\n\n 実行\nimport requests\nfrom PIL import Image\nfrom io import BytesIO\nfrom diffusers import Sta...",
+        "category": "AI・技術",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "違法（迷惑）行為をAIで検出　AI異常行動検知の方法",
+        "url": "https://zenn.dev/mlboydaisuke/articles/f61a056cd17f7026ab48",
+        "site": "Zenn(機械学習)",
+        "published": "2026-06-02T03:19:21Z",
+        "description": "迷惑行為を一発検出\n\n店舗や公共の場では様々な違法・迷惑行為のリスクがあります。\n人力で監視するのは大変です。\nAIを使えば24時間人員なしで監視でき、異常があればすぐに検出してアラートできます。\n\n 路上喫煙を検知してみる\n例として、禁煙地域に設置した監視カメラから路上喫煙を検知してみましょう。\n\n データを用意して、AIに学習させる\n手順は単純です。\nタバコの写っている画像を用意して、AIに学...",
+        "category": "AI・技術",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "iOS/Swiftで小顔加工フィルターをつくる",
+        "url": "https://zenn.dev/mlboydaisuke/articles/f4efca8d9d281cc441a0",
+        "site": "Zenn(機械学習)",
+        "published": "2026-06-02T03:19:19Z",
+        "description": "美顔小顔加工アプリを作る\n\nインスタにアップロードする時って小顔にしますよね？\n小顔フィルターの実装の仕方です。\n\n 顔を検出してゆがませる\n顔の領域を中心にゆがませます。\nこれで、周囲はなるべく自然に、顔だけ徐々に小さくできます。\n\n 顔の検出\nlet request = VNDetectFaceRectanglesRequest()\nlet handler = VNImageRequestHa...",
+        "category": "AI・技術",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "スマホアプリサービスを作っている人必見!! AIをスマートフォンで使うメリット",
+        "url": "https://zenn.dev/mlboydaisuke/articles/f15ac3885e42b52c579b",
+        "site": "Zenn(機械学習)",
+        "published": "2026-06-02T03:19:15Z",
+        "description": "サービス提供者にもユーザーにもメリットが大きい\n\n（参考画像：yolov5 のリポジトリより）\nスマートフォン上でもAIは動かせます。\nスマートフォンにAIを搭載する方法は、サーバーで実行するAIに比べ多くのメリットがあります。\n【比較図：サーバー上のAI】\n\n【比較図：スマートフォン上のAI】\n\n\n メリット１：実行速度が速い\nスマホ上でAIを実行すれば、端末とサーバーのデータ通信の時間を省略で...",
+        "category": "AI・技術",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "データセット用の顔画像をすぐに用意したい　iPhoneの写真から、顔だけを数秒で100枚切り出す",
+        "url": "https://zenn.dev/mlboydaisuke/articles/ef02c22e3a8e35aada90",
+        "site": "Zenn(機械学習)",
+        "published": "2026-06-02T03:19:13Z",
+        "description": "#iPhoneのフォトライブラリから、顔だけを切り出す方法です\n\n#データセットを用意するのは大変\nたとえば機械学習などで、データセットとして顔写真や人体の写真が数千枚必要なケースがあります。\nしかし、手動で顔写真を切り出すのは大変です。\n#手元のiPhoneの写真が使えたら便利\nたいていの人のiPhoneには、人の写っている写真が数百〜数千枚はあるでしょう。\nそれらの写真の顔だけを抽出できれば、...",
+        "category": "AI・技術",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "TensorFlow Object Detection API で物体検出モデルをトレーニング",
+        "url": "https://zenn.dev/mlboydaisuke/articles/eb962f9aea438dc4eb75",
+        "site": "Zenn(機械学習)",
+        "published": "2026-06-02T03:19:11Z",
+        "description": "#手順\nTensorFlow Object Detection APIで物体検出モデルをがっつりトレーニングする方法です。\n初期値からの学習も\n転移学習もできます。\n\n簡易なファインチューニング学習のみする場合はこちらの記事：\nTensorFlow Object Detection APIで物体検出モデルを簡易トレーニング\n\n推論のみする場合はこちらの記事：\nTensorFlow Object D...",
+        "category": "AI・技術",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "Pytorch-ONNXを量子化して高速化する",
+        "url": "https://zenn.dev/mlboydaisuke/articles/e82dd4bc1f0befa0ad46",
+        "site": "Zenn(機械学習)",
+        "published": "2026-06-02T03:19:09Z",
+        "description": "変換前に量子化することで高速化できます。\n\n AnimeGANを量子化\nimport torch\nmodel = torch.hub.load(\"bryandlee/animegan2-pytorch:main\", \"generator\", pretrained=\"celeba_distill\").eval()\nmodel_int8 = torch.quantization.convert(mod...",
+        "category": "AI・技術",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "Yolov5でSemanticSegmentationができるって知ってた？",
+        "url": "https://zenn.dev/mlboydaisuke/articles/e8146317a20be79c4c8d",
+        "site": "Zenn(機械学習)",
+        "published": "2026-06-02T03:19:08Z",
+        "description": "しかもめっちゃかんたんに使えます\n\nhttps://github.com/ultralytics/yolov5\nリポジトリをクローンして、必要なライブラリをインストール。\ngit clone https://github.com/ultralytics/yolov5.git\ncd yolov5\npip install -r requirements.txt\n入力パスを指定して実行。\n画像や動画、W...",
+        "category": "AI・技術",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "よりどりみどりのセグメンテーションモデルが使い放題というバグってるモジュールmmsegmentation　え、この最新モデルも？",
+        "url": "https://zenn.dev/mlboydaisuke/articles/e793e0ee9292eee0b175",
+        "site": "Zenn(機械学習)",
+        "published": "2026-06-02T03:19:06Z",
+        "description": "#発表されたばかりの最新モデルがかんたんにつかえるPythonモジュール\nかんたんなコードで「今年でた」みたいな最新モデルを使えるモジュールです。\n\n\n#機械学習は日々進歩を遂げているが、キャッチアップして使うのは大変そう\nどんどん論文が発表され、精度はどんどん上がっていく機械学習モデル。\nコードも公開されるけど、発表されるごとにGitHubを訪れてコードを実行してみるのもたいへんそう。。。\n#研...",
+        "category": "AI・技術",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "画像の不要物を削除　AOT-GAN-for-Inpainting",
+        "url": "https://zenn.dev/mlboydaisuke/articles/e64037f08fdc98d6648b",
+        "site": "Zenn(機械学習)",
+        "published": "2026-06-02T03:19:05Z",
+        "description": "Inpaintingやってみたいけど難しそう\n\n意外と簡単です。\n\n 使い方\nInpaintingモデルAOT-GAN-for-Inpaintingの使い方です。\nhttps://github.com/researchmm/AOT-GAN-for-Inpainting\nリポジトリからトレーニング済みの重みをダウンロードしておきます。\nリポジトリをクローンして、\n・トレーニング済みの重みのパス\n・画...",
+        "category": "AI・技術",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "四角形を検出する",
+        "url": "https://zenn.dev/mlboydaisuke/articles/e5e08f17304f3a0116b1",
+        "site": "Zenn(機械学習)",
+        "published": "2026-06-02T03:19:04Z",
+        "description": "#画像内の四角形を検出する方法です\n\n#書類や標識の検出に\n四角形の人工物を検出できれば、場面に応じて様々な用途に活かせそうです。\n例えば、ドキュメント内の四角形の検出など。\n#Visionの四角形検出が使える\n。\n#方法\n画像にVNDetectRectangleRequestをするだけです。\nlet request = VNDetectRectanglesRequest()\nlet handle...",
+        "category": "AI・技術",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "カスタムデータセットでなるべくかんたんに画像分類器をつくりたい。Pytorchで転移学習",
+        "url": "https://zenn.dev/mlboydaisuke/articles/e386f0aa5232d323db7e",
+        "site": "Zenn(機械学習)",
+        "published": "2026-06-02T03:18:59Z",
+        "description": "自前のデータセットでImageClassificationモデルをトレーニングします\n\nPytorch　チュートリアルのColab:\nhttps://colab.research.google.com/github/pytorch/tutorials/blob/gh-pages/_downloads/62840b1eece760d5e42593187847261f/transfer_learnin...",
+        "category": "AI・技術",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "顔写真をめっちゃ綺麗にする　GFPGAN",
+        "url": "https://zenn.dev/mlboydaisuke/articles/e279496d3eb43ff6b72c",
+        "site": "Zenn(機械学習)",
+        "published": "2026-06-02T03:18:59Z",
+        "description": "#顔に特化した超解像モデルの使い方です\n\n#写真の多くは顔写真\n超解像モデルはいろいろありますが、一般的な画像データセットやアニメに特化したものが多いです。\n世の中の多くの写真は人の写真。\n#GFPGANは顔専用\n顔を特に綺麗にしてくれます。\nhttps://github.com/TencentARC/GFPGAN\n#使い方\n実行はかんたん1行。\npython inference_gfpgan.p...",
+        "category": "AI・技術",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "SIGNATE CLI でデータセットをダウンロードする",
+        "url": "https://zenn.dev/mlboydaisuke/articles/dd2b7f4cd8e655a5376b",
+        "site": "Zenn(機械学習)",
+        "published": "2026-06-02T03:18:52Z",
+        "description": "SIGNATEは、データサイエンティストのための統合プラットフォーム。\n機械学習コンペを開催しています。\nコンペのデータセットは公式ページからダウンロードできますが、データセットはサイズが大きいので\nコマンドラインからダウンロードできるとColabに直接ダウンロードできて便利。\nSIGNATE CLIでコマンドラインから操作できる。\n\n 手順\n\n １、SIGNATEのインストール\npip inst...",
+        "category": "AI・技術",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "YoloV5をCoreMLに変換。デコードレイヤーも追加する。",
+        "url": "https://zenn.dev/mlboydaisuke/articles/d9e878330465e83cd79d",
+        "site": "Zenn(機械学習)",
+        "published": "2026-06-02T03:18:50Z",
+        "description": "Yolov5をiOSで使う方法です\nYolov5は物体検出機械学習モデルです。\niPhoneやiPadで使えるように、CoreML形式に変換します。\n\n\n 変換したモデルはそのままでは使えない\nCoreMLToolsでシンプルに変換したYoloモデルの出力は、クラスごとの大量のボックスなので、そのままでは使えません。\nデコード用のレイヤーと、Non Max Suppressionのレイヤーを追加し...",
         "category": "AI・技術",
         "rss_category": "",
         "image_url": ""
@@ -296,16 +626,6 @@
         "site": "Zenn(機械学習)",
         "published": "2026-06-01T15:49:46Z",
         "description": "日本時間6月1日に始まった NVIDIA GTC Taipei 2026 の基調講演で、ローカル実行を前提にしたハードウェアが2つ発表された。ノートPC向けSoCの「RTX Spark」と、Windowsデスクトップ機の「DGX Station」だ。\n\nRTX Spark: 1ペタフロップスのBlackwell GPU + 20コアのGrace CPU(Armベース)、128GBのユニファイドメモ...",
-        "category": "AI・技術",
-        "rss_category": "",
-        "image_url": ""
-      },
-      {
-        "title": "ハルシネーションとは？生成AIが嘘をつく現象",
-        "url": "https://zenn.dev/h888s/articles/genai-term-hallucination",
-        "site": "Zenn(機械学習)",
-        "published": "2026-06-01T13:53:51Z",
-        "description": "生成AIを使っていると、それらしい文章なのに内容が事実と違う、という場面に出会うことがあります。これは「ハルシネーション」と呼ばれる現象で、生成AIパスポート試験でも基礎概念として問われるテーマです。本記事では、定義に沿ってやさしく整理します。\n\n ハルシネーションとは\nハルシネーション（hallucination）とは、生成AIが事実と異なる情報を、さも事実であるかのように生成してしまう現象を指...",
         "category": "AI・技術",
         "rss_category": "",
         "image_url": ""
@@ -391,16 +711,6 @@
         "image_url": ""
       },
       {
-        "title": "Read This Before You Have Opinions About ChatGPT (For Nerds)",
-        "url": "https://zenn.dev/harunasu/articles/ee8e3f144c3393",
-        "site": "Zenn(機械学習)",
-        "published": "2026-06-01T05:43:09Z",
-        "description": "The Otaku's Guide to LLMs — Before you start lecturing everyone on \"getting MASSIVE value out of ChatGPT!!\", maybe learn how it actually works first.\n\n Otaku Intros Run Long\nHey there.\nThese days — th...",
-        "category": "AI・技術",
-        "rss_category": "",
-        "image_url": ""
-      },
-      {
         "title": "SnowflakeのMLランタイムを自前コンテナに置き換える——CREで再現性とコンプライアンスを同時に解決",
         "url": "https://zenn.dev/inoway/articles/i67-feature-update-2026-05-19-custom-runtime-ima",
         "site": "Zenn(機械学習)",
@@ -442,16 +752,6 @@
       }
     ],
     "2026-05": [
-      {
-        "title": "Stanford RNA 3D Folding Part 2：上位3解法から読み解くRNA立体構造予測の現在地",
-        "url": "https://zenn.dev/sasaki_kanji/articles/8daa2cfe3a361e",
-        "site": "Zenn(機械学習)",
-        "published": "2026-05-31T14:25:16Z",
-        "description": "2026年4月、KaggleのRNA立体構造予測コンペ「Stanford RNA 3D Folding Part 2」の上位解法が公開された。本記事では1位〜3位の解法を整理し、そこから見えてくる共通戦略と各チームの独自性を考察する。\n!\n本記事はKaggleで公開された各チームのSolution Writeup（1位 team_cp、2位ソロ、3位ソロ）の内容を筆者が読み解いて整理・考察したもの...",
-        "category": "AI・技術",
-        "rss_category": "",
-        "image_url": ""
-      },
       {
         "title": "LLM推論はなぜ詰まるのか：メモリ律速とKVキャッシュを実装目線で",
         "url": "https://zenn.dev/hironakamura_ai/articles/46598fcac2bcce",
