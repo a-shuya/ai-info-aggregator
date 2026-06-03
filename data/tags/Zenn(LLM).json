@@ -1,15 +1,97 @@
 {
   "site": "Zenn(LLM)",
-  "last_updated": "2026-06-03T00:01:23.568465",
-  "total_articles": 3741,
+  "last_updated": "2026-06-03T05:13:22.296083",
+  "total_articles": 3755,
   "articles_by_date": {
+    "本日": [
+      {
+        "title": "LLMの出力を追跡可能にする：正規化・ハッシュ・状態遷移の設計",
+        "url": "https://zenn.dev/exorql/articles/f656e64e15152d",
+        "site": "Zenn(LLM)",
+        "published": "2026-06-02T23:55:16Z",
+        "description": "はじめに：LLMの出力を追跡可能なデータに変換する\nLLMをプロダクトに組み込むとき、単なる対話インターフェースとして使うだけであれば、出力の表現揺れはそこまで大きな問題になりません。しかし、LLMの出力をアプリケーションの状態として保存し、時系列で追跡しようとした瞬間に、ひとつの課題にぶつかります。\nそれは、同じ事象に対しても、LLMの表現が毎回少しずつ変わるという問題です。たとえば、ドメイン特...",
+        "category": "AI・技術",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "Qwen2.5-Coder-7B を量子化して Mac Mini M4 16GB に LLM サーバ構築",
+        "url": "https://zenn.dev/supertaro/articles/db2536826e0084",
+        "site": "Zenn(LLM)",
+        "published": "2026-06-02T18:55:50Z",
+        "description": "Mac Mini M4 のローカル環境に、Apple Silicon 向けの MLX を使って Qwen2.5-Coder-7B-Instruct-q4 を構築します。\n今回の構成では、mlx_lm server をそのままLAN公開した場合に気になりやすい「認証機能がない」「リクエストサイズを制限しにくい」「/v1/models にローカルの絶対パスが含まれる場合がある」という課題に対応します。...",
+        "category": "AI・技術",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "Tool Calling の コンテキストと呼び出し率についての調査",
+        "url": "https://zenn.dev/yy7613/articles/82245b8a573dce",
+        "site": "Zenn(LLM)",
+        "published": "2026-06-02T15:42:53Z",
+        "description": "はじめに\nTool Callingの成否は、モデル性能だけでなくコンテキストに含まれる情報にも左右されます。コンテキストにはシステムプロンプト・登録されているTool数・ToolのDescription・ユーザー依頼のシナリオ等が含まれます。\n今回の調査では、Tool Calling にかかわるコンテキストを変えたときにTool呼び出し率がどう変わるかを確認してみます。\n!\n不確定要素が存在するた...",
+        "category": "AI・技術",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "推論を伸ばすほど精度が落ちる: 19〜31ステップの「決定論的地平」とエージェント設計の作り直し",
+        "url": "https://zenn.dev/hironakamura_ai/articles/a49e9052e75848",
+        "site": "Zenn(LLM)",
+        "published": "2026-06-02T15:16:03Z",
+        "description": "「考えさせるほど賢くなる」という直感で、エージェントの設計をしていないだろうか。プロンプトに「step by stepで」と書き、推論を長く引き出し、その思考過程をログで監視し、ときにはルーティングの判断材料にする。2026年6月1日にarXivへ同時に出た3本の論文を並べて読むと、この設計思想そのものが構造的に壊れていることが見えてくる。\n3本はそれぞれ別の現象を扱っている。だが結論は一点に収束...",
+        "category": "AI・技術",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "AIに「自分だけの知識」を持たせる技術 — RAG入門で、汎用AIを「あなた専用のエキスパート」に変える実践ガイド",
+        "url": "https://zenn.dev/akira_papa/articles/3651cc849d97e3",
+        "site": "Zenn(LLM)",
+        "published": "2026-06-02T15:10:06Z",
+        "description": "AIに「自分だけの知識」を持たせる技術 — RAG入門で、汎用AIを「あなた専用のエキスパート」に変える実践ガイド\n\n TL;DR\n\nRAG（検索拡張生成）は、AIの脳を書き換えるのではなく「参考書を横に置く」技術。ファインチューニングより手軽で、情報の鮮度も保てる\n最小RAGはTypeScript + OpenAI SDKで約80行。フレームワークなしで全ステップが見える実装を紹介する\nRAGの...",
+        "category": "AI・技術",
+        "rss_category": "",
+        "image_url": ""
+      }
+    ],
     "昨日": [
+      {
+        "title": "「AIでできます」の意味がズレると、現場が燃えてDXから遠ざかる",
+        "url": "https://zenn.dev/continuitymodel/articles/187d60ad01ab6e",
+        "site": "Zenn(LLM)",
+        "published": "2026-06-02T14:46:25Z",
+        "description": "燃える現場に火をくべてませんか？\nAI導入の話をしていると、かなり早い段階でズレが起きる。\nしかも、そのズレは技術選定より前に起きている。\nどのLLMを使うか。\nRAGを組むか。\n社内FAQを読ませるか。\nSlackやTeamsと連携するか。\n問い合わせ対応を自動化するか。\nそういう話の前に、まずズレているものがある。\n言葉の定義である。\n経営陣が言う「AI」。\nエンジニアが言う「AI」。\n現場が...",
+        "category": "AI・技術",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "RAGとは？外部情報でLLMの回答を補う仕組み",
+        "url": "https://zenn.dev/h888s/articles/genai-term-rag",
+        "site": "Zenn(LLM)",
+        "published": "2026-06-02T13:56:09Z",
+        "description": "生成AIパスポート試験で問われる基礎概念のひとつが「RAG」です。LLMの活用方法として頻繁に登場する用語で、ビジネス活用の文脈で語られることが多い仕組みです。本記事では、RAGの定義と関連用語との違いを整理します。\n\n RAGとは\nRAG（Retrieval-Augmented Generation）は、外部データベースから関連情報を検索し、その情報を文脈としてLLMに与えて回答させる仕組みです...",
+        "category": "AI・技術",
+        "rss_category": "",
+        "image_url": ""
+      },
       {
         "title": "誰も教えてくれないベクトル検索RAGの真実",
         "url": "https://zenn.dev/acntechjp/articles/20260409_vector_search_rag",
         "site": "Zenn(LLM)",
         "published": "2026-06-02T13:45:24Z",
         "description": "——先輩、今夜はどうしたんですか、一人で飲んでいるなんて珍しい\nAIの話をすると眠くなる。だから一人でいたかった。\n——先輩がAIの話で眠くなるって相当ですよね。業界の人なのに\n俺は業界の人じゃない。業界に飼われてる人だ。似てるようで全然違う。\n\nいつものバーだった。カウンターの端に陣取って半分ほど飲んだバーボンを眺めていたら、こいつが来た。後輩、とは言うが、実際はもうそれなりのキャリアを持つ一人...",
+        "category": "AI・技術",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "あなたのCLAUDE.mdは今どのレベル？──指示が「効く時」と「効かない時」を分けるL0–L7",
+        "url": "https://zenn.dev/aiwatch_jp/articles/harness-capability-ladder-l0-l7",
+        "site": "Zenn(LLM)",
+        "published": "2026-06-02T13:05:10Z",
+        "description": "!\n最先端AIを技術の中身まで日本語で読み解く「AIウォッチ」の深掘り記事です。題材は cleverhoods 氏の \"Instruction systems capability ladder\" という枠組み。一次情報（元記事）を当たって書いています。\n\nCLAUDE.md（や AGENTS.md）に「テストを書いてからコミットして」と書いたのに、長いタスクの途中でしれっと無視された──そんな経...",
         "category": "AI・技術",
         "rss_category": "",
         "image_url": ""
@@ -100,16 +182,6 @@
         "site": "Zenn(LLM)",
         "published": "2026-06-02T08:46:31Z",
         "description": "!\nナウキャストのSnowflake Summit 2026参加記の一覧は以下でご覧ください。\nhttps://zenn.dev/finatext/articles/snowflake-summit-2026-summary-nowcast\n\n\n はじめに\nこんにちは。NowcastエンジニアのTakumiです。\nSnowflake Summit 2026が開催されています！\nOpening Ke...",
-        "category": "AI・技術",
-        "rss_category": "",
-        "image_url": ""
-      },
-      {
-        "title": "LLM API のコストをどう下げるか — 用途別の使い分けと4つの節約術",
-        "url": "https://zenn.dev/asayi_megumi/articles/29a7ed26d4ecd3",
-        "site": "Zenn(LLM)",
-        "published": "2026-06-02T08:40:17Z",
-        "description": "はじめに\n「結局、どのモデルを使うのがコスト的に正解なの?」\nここ最近、まわりでこの質問をよく聞くようになった。DeepSeek や小米 MiMo、Gemini あたりの API 料金が立て続けに動いていて、なんとなく「一番安いやつ」で選んでいた自分も、一度ちゃんと整理し直したくなった。\nこの記事では、2026年6月初旬時点の主要な LLM API 料金を並べたうえで、自分がどう使い分けているか、...",
         "category": "AI・技術",
         "rss_category": "",
         "image_url": ""
@@ -549,11 +621,91 @@
     ],
     "2026-06": [
       {
+        "title": "LLMの出力を追跡可能にする：正規化・ハッシュ・状態遷移の設計",
+        "url": "https://zenn.dev/exorql/articles/f656e64e15152d",
+        "site": "Zenn(LLM)",
+        "published": "2026-06-02T23:55:16Z",
+        "description": "はじめに：LLMの出力を追跡可能なデータに変換する\nLLMをプロダクトに組み込むとき、単なる対話インターフェースとして使うだけであれば、出力の表現揺れはそこまで大きな問題になりません。しかし、LLMの出力をアプリケーションの状態として保存し、時系列で追跡しようとした瞬間に、ひとつの課題にぶつかります。\nそれは、同じ事象に対しても、LLMの表現が毎回少しずつ変わるという問題です。たとえば、ドメイン特...",
+        "category": "AI・技術",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "Qwen2.5-Coder-7B を量子化して Mac Mini M4 16GB に LLM サーバ構築",
+        "url": "https://zenn.dev/supertaro/articles/db2536826e0084",
+        "site": "Zenn(LLM)",
+        "published": "2026-06-02T18:55:50Z",
+        "description": "Mac Mini M4 のローカル環境に、Apple Silicon 向けの MLX を使って Qwen2.5-Coder-7B-Instruct-q4 を構築します。\n今回の構成では、mlx_lm server をそのままLAN公開した場合に気になりやすい「認証機能がない」「リクエストサイズを制限しにくい」「/v1/models にローカルの絶対パスが含まれる場合がある」という課題に対応します。...",
+        "category": "AI・技術",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "Tool Calling の コンテキストと呼び出し率についての調査",
+        "url": "https://zenn.dev/yy7613/articles/82245b8a573dce",
+        "site": "Zenn(LLM)",
+        "published": "2026-06-02T15:42:53Z",
+        "description": "はじめに\nTool Callingの成否は、モデル性能だけでなくコンテキストに含まれる情報にも左右されます。コンテキストにはシステムプロンプト・登録されているTool数・ToolのDescription・ユーザー依頼のシナリオ等が含まれます。\n今回の調査では、Tool Calling にかかわるコンテキストを変えたときにTool呼び出し率がどう変わるかを確認してみます。\n!\n不確定要素が存在するた...",
+        "category": "AI・技術",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "推論を伸ばすほど精度が落ちる: 19〜31ステップの「決定論的地平」とエージェント設計の作り直し",
+        "url": "https://zenn.dev/hironakamura_ai/articles/a49e9052e75848",
+        "site": "Zenn(LLM)",
+        "published": "2026-06-02T15:16:03Z",
+        "description": "「考えさせるほど賢くなる」という直感で、エージェントの設計をしていないだろうか。プロンプトに「step by stepで」と書き、推論を長く引き出し、その思考過程をログで監視し、ときにはルーティングの判断材料にする。2026年6月1日にarXivへ同時に出た3本の論文を並べて読むと、この設計思想そのものが構造的に壊れていることが見えてくる。\n3本はそれぞれ別の現象を扱っている。だが結論は一点に収束...",
+        "category": "AI・技術",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "AIに「自分だけの知識」を持たせる技術 — RAG入門で、汎用AIを「あなた専用のエキスパート」に変える実践ガイド",
+        "url": "https://zenn.dev/akira_papa/articles/3651cc849d97e3",
+        "site": "Zenn(LLM)",
+        "published": "2026-06-02T15:10:06Z",
+        "description": "AIに「自分だけの知識」を持たせる技術 — RAG入門で、汎用AIを「あなた専用のエキスパート」に変える実践ガイド\n\n TL;DR\n\nRAG（検索拡張生成）は、AIの脳を書き換えるのではなく「参考書を横に置く」技術。ファインチューニングより手軽で、情報の鮮度も保てる\n最小RAGはTypeScript + OpenAI SDKで約80行。フレームワークなしで全ステップが見える実装を紹介する\nRAGの...",
+        "category": "AI・技術",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "「AIでできます」の意味がズレると、現場が燃えてDXから遠ざかる",
+        "url": "https://zenn.dev/continuitymodel/articles/187d60ad01ab6e",
+        "site": "Zenn(LLM)",
+        "published": "2026-06-02T14:46:25Z",
+        "description": "燃える現場に火をくべてませんか？\nAI導入の話をしていると、かなり早い段階でズレが起きる。\nしかも、そのズレは技術選定より前に起きている。\nどのLLMを使うか。\nRAGを組むか。\n社内FAQを読ませるか。\nSlackやTeamsと連携するか。\n問い合わせ対応を自動化するか。\nそういう話の前に、まずズレているものがある。\n言葉の定義である。\n経営陣が言う「AI」。\nエンジニアが言う「AI」。\n現場が...",
+        "category": "AI・技術",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "RAGとは？外部情報でLLMの回答を補う仕組み",
+        "url": "https://zenn.dev/h888s/articles/genai-term-rag",
+        "site": "Zenn(LLM)",
+        "published": "2026-06-02T13:56:09Z",
+        "description": "生成AIパスポート試験で問われる基礎概念のひとつが「RAG」です。LLMの活用方法として頻繁に登場する用語で、ビジネス活用の文脈で語られることが多い仕組みです。本記事では、RAGの定義と関連用語との違いを整理します。\n\n RAGとは\nRAG（Retrieval-Augmented Generation）は、外部データベースから関連情報を検索し、その情報を文脈としてLLMに与えて回答させる仕組みです...",
+        "category": "AI・技術",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
         "title": "誰も教えてくれないベクトル検索RAGの真実",
         "url": "https://zenn.dev/acntechjp/articles/20260409_vector_search_rag",
         "site": "Zenn(LLM)",
         "published": "2026-06-02T13:45:24Z",
         "description": "——先輩、今夜はどうしたんですか、一人で飲んでいるなんて珍しい\nAIの話をすると眠くなる。だから一人でいたかった。\n——先輩がAIの話で眠くなるって相当ですよね。業界の人なのに\n俺は業界の人じゃない。業界に飼われてる人だ。似てるようで全然違う。\n\nいつものバーだった。カウンターの端に陣取って半分ほど飲んだバーボンを眺めていたら、こいつが来た。後輩、とは言うが、実際はもうそれなりのキャリアを持つ一人...",
+        "category": "AI・技術",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "あなたのCLAUDE.mdは今どのレベル？──指示が「効く時」と「効かない時」を分けるL0–L7",
+        "url": "https://zenn.dev/aiwatch_jp/articles/harness-capability-ladder-l0-l7",
+        "site": "Zenn(LLM)",
+        "published": "2026-06-02T13:05:10Z",
+        "description": "!\n最先端AIを技術の中身まで日本語で読み解く「AIウォッチ」の深掘り記事です。題材は cleverhoods 氏の \"Instruction systems capability ladder\" という枠組み。一次情報（元記事）を当たって書いています。\n\nCLAUDE.md（や AGENTS.md）に「テストを書いてからコミットして」と書いたのに、長いタスクの途中でしれっと無視された──そんな経...",
         "category": "AI・技術",
         "rss_category": "",
         "image_url": ""
@@ -644,16 +796,6 @@
         "site": "Zenn(LLM)",
         "published": "2026-06-02T08:46:31Z",
         "description": "!\nナウキャストのSnowflake Summit 2026参加記の一覧は以下でご覧ください。\nhttps://zenn.dev/finatext/articles/snowflake-summit-2026-summary-nowcast\n\n\n はじめに\nこんにちは。NowcastエンジニアのTakumiです。\nSnowflake Summit 2026が開催されています！\nOpening Ke...",
-        "category": "AI・技術",
-        "rss_category": "",
-        "image_url": ""
-      },
-      {
-        "title": "LLM API のコストをどう下げるか — 用途別の使い分けと4つの節約術",
-        "url": "https://zenn.dev/asayi_megumi/articles/29a7ed26d4ecd3",
-        "site": "Zenn(LLM)",
-        "published": "2026-06-02T08:40:17Z",
-        "description": "はじめに\n「結局、どのモデルを使うのがコスト的に正解なの?」\nここ最近、まわりでこの質問をよく聞くようになった。DeepSeek や小米 MiMo、Gemini あたりの API 料金が立て続けに動いていて、なんとなく「一番安いやつ」で選んでいた自分も、一度ちゃんと整理し直したくなった。\nこの記事では、2026年6月初旬時点の主要な LLM API 料金を並べたうえで、自分がどう使い分けているか、...",
         "category": "AI・技術",
         "rss_category": "",
         "image_url": ""
