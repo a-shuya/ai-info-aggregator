@@ -1,9 +1,109 @@
 {
   "site": "Zenn(LLM)",
-  "last_updated": "2026-06-03T15:07:19.415328",
-  "total_articles": 3744,
+  "last_updated": "2026-06-03T18:58:25.345728",
+  "total_articles": 3762,
   "articles_by_date": {
     "昨日": [
+      {
+        "title": "NVIDIA Cosmos3-SuperをA100で動かす / 画像・動画生成をGeminiと比較",
+        "url": "https://zenn.dev/ollo/articles/6490f9cbe5494a",
+        "site": "Zenn(LLM)",
+        "published": "2026-06-03T14:23:04Z",
+        "description": "2026年5月末にリリースされた NVIDIA の生成基盤モデル Cosmos3-Super の Text-to-Image / Image-to-Video を、社内の A100 サーバー（80GB×複数）で実際にセットアップし、製造業をテーマにした画像・動画を生成し、NanoBanana ProやVeo3.1と比較しました。\n\n\n 1. はじめに\nNVIDIA Cosmos3-Super は、...",
+        "category": "AI・技術",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "Jetson AGX Orin(32GB) + Xavier(32GB) を繋いで、32GB超えのLLMをllama.cppで動かした話",
+        "url": "https://zenn.dev/nooop/articles/785b7c511f991b",
+        "site": "Zenn(LLM)",
+        "published": "2026-06-03T13:42:05Z",
+        "description": "おことわり\nこの記事の文書は、この連結LLMに相談して書きました。\n\n はじめに\nJetson AGX Orin（32GB）単体では乗らない大きなLLMを動かしたい。\n手元にはJetson AGX Xavier（32GB）も眠っている。2台合わせれば64GBになるはず。llama.cppのRPC機能を使えば複数ノードにモデルを分散できると聞いていたので、試してみた。\n以前は最新のQwen3.6を動...",
+        "category": "AI・技術",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "M1 Pro 32GBでQwen3.6-35B-A3Bを本気で使ってみた正直な話",
+        "url": "https://zenn.dev/anikuma/articles/qwen3-35b-m1-pro-32gb",
+        "site": "Zenn(LLM)",
+        "published": "2026-06-03T13:27:03Z",
+        "description": "2026年4月16日、AlibabaのQwenチームからQwen3.6-35B-A3Bがリリースされた。35B総パラメータ・3Bアクティブのスパース MoEモデルで、SWE-bench Verified 73.4%を記録した注目作だ。Apache 2.0ライセンスで商用利用OKという点も、個人開発者には嬉しい。\n「32GBのMacでどこまで使えるのか」——その疑問に正面から向き合った。本記事では、...",
+        "category": "AI・技術",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "【AIエージェント自作】ローカルLLM（Ollama）とClaude APIを切り替えるアーキテクチャ",
+        "url": "https://zenn.dev/pekopugu/articles/agent01-a2-llm-client",
+        "site": "Zenn(LLM)",
+        "published": "2026-06-03T12:36:16Z",
+        "description": "この記事で作るもの\n!\nこの記事は Claude（設計・構想・レビュー）と Claude Code（実装・記事生成）を活用して作成しました。\n\nシリーズ第2回です。前回はAIエージェントの設計思想を整理しました。今回はいよいよ実装に入り、Phase A（土台）のStep 01〜03を解説します。\n作るのは以下の3点です。\n\n\nLLMクライアント抽象化レイヤー：OllamaとClaude APIを同...",
+        "category": "AI・技術",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "ローカルLLMで“PoC止まり”にしない業務AIエージェント ― MCP＋RAG評価まで一気通貫",
+        "url": "https://zenn.dev/th1khse/articles/e5b1d66f0c36fd",
+        "site": "Zenn(LLM)",
+        "published": "2026-06-03T12:24:31Z",
+        "description": "はじめに：なぜ生成AIはPoCで止まるのか\n「社内でAIエージェントを作ってみた。デモは動いた。でも本番に出せない」――よく聞く話です。理由はだいたい3つに集約されます。\n\n\n精度が測れない（良くなった/悪くなったを数値で言えない）\n\nコストが読めない（運用したら毎月いくら？）\n\n運用できない（監視も改善サイクルも無い）\n\nこの記事では、これらを最初から作り込んだ最小の業務AIエージェントを、**...",
+        "category": "AI・技術",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "RTX 4080でローカルLLM 7モデルを実測したら「16GB VRAMの壁」が見えた",
+        "url": "https://zenn.dev/seeda_yuto/articles/ollama-vs-vllm-rtx4080-benchmark",
+        "site": "Zenn(LLM)",
+        "published": "2026-06-03T10:55:13Z",
+        "description": "結論: gpt-oss:20b + Ollamaが16GB VRAM環境の最適解\nRTX 4080 (16GB VRAM) で、推論バックエンド2種（Ollama / vLLM）とモデル12種を実測した。\n速度ランキング:\n\n\n\n#\nModel\nアーキ\nGGUF\ntok/s\nGPU搭載\n\n\n\n\n1\ndeepseek-coder-v2:16b\nMoE (2.4B active)\n8.9GB\n211-...",
+        "category": "AI・技術",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "MCPを使う前にやること：ツール全容の把握と権限の絞り込み",
+        "url": "https://zenn.dev/masuda_masuo/articles/2026-06-03-mcp-inspect",
+        "site": "Zenn(LLM)",
+        "published": "2026-06-03T10:23:47Z",
+        "description": "MCPを導入したとき、「何のツールが動いているか」を把握していたか。\nインストール手順に従ってサーバーを追加し、AIが使えるようになった——それは確認した。しかしそのサーバーが実際に何のツールを何本持っているか、その中に書き込みや削除の操作が含まれているか、設定ファイルにアクセスキーが直書きされていないか、まで確認した人はどれくらいいるだろうか。\nMCPは「AIに道具を持たせる」仕組みだ。どんな道...",
+        "category": "AI・技術",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "Claude Codeでチームを回した先の壁——Zenn Book Vol.3「書き続けるまで」の4段ループ全貌",
+        "url": "https://zenn.dev/tottoko_hamu/articles/2026-06-01-090000",
+        "site": "Zenn(LLM)",
+        "published": "2026-06-03T10:23:26Z",
+        "description": "この記事の概要（2026年6月）: Claude Codeで9体のAIエージェントチームを「回す」ようになった後の次の壁——「書き続けること」をテーマにしたZenn Book Vol.3「コードを書けない私がClaude Codeで『AIチーム』と書き続けるまで」が2026年6月1日に公開された。序章は無料。価格は900円。本書では「仕込む→書く→届ける→回収する」の4段ループを扱う。Vol.1・...",
+        "category": "AI・技術",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "AIエージェントの再現性を上げる設計：成功ではなく「失敗の記録」を記憶に積む",
+        "url": "https://zenn.dev/agentmemories/articles/failure-memory-reproducibility-design",
+        "site": "Zenn(LLM)",
+        "published": "2026-06-03T07:58:35Z",
+        "description": "AIエージェントを長く運用していると、不思議なことに気づきます。モデルを賢いものに替えても、同じ種類の失敗は減らない。一方で、モデルはそのままなのに、ある時期から「一度で直らなかった作業が、一発で固まる」ようになる。\n差を生んでいたのは賢さではなく、記憶に何を積むかでした。とくに「過去にどこで失敗し、何をやらないと決めたか」という失敗の記録を記憶レイヤーに積んだとき、再現性がはっきり上がりました。...",
+        "category": "AI・技術",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "4社の道具を並列で動かす運用の手引き——重複の排除と費用の整理",
+        "url": "https://zenn.dev/yurukusa/books/claude-multi-vendor-cost-guide",
+        "site": "Zenn(LLM)",
+        "published": "2026-06-03T07:08:56Z",
+        "description": "Claude Code・Codex・Gemini・Grok といった複数の道具を並列で同時に動かす運用は、単一の道具の運用とは構造的に違う痛みを抱えます。同じ問題を4社で別々に解いて3社の答えが一致し1社だけ違う時にどれを採るか、並列で動かす間に同じツール呼び出しが3回別々の費用で発生する、1日の費用が想定の3倍に膨らむ——こうした痛みは、実際に複数の道具を並列で運用している人たちが報告しています...",
+        "category": "AI・技術",
+        "rss_category": "",
+        "image_url": ""
+      },
       {
         "title": "【Nishika 論文サク読み 第12回】Whisperの10倍速: Canary-1B-v2 & Parakeet-TDT-0.6B-v3",
         "url": "https://zenn.dev/team_nishika/articles/1ab82243c2cf7b",
@@ -70,16 +170,6 @@
         "site": "Zenn(LLM)",
         "published": "2026-06-02T15:42:53Z",
         "description": "はじめに\nTool Callingの成否は、モデル性能だけでなくコンテキストに含まれる情報にも左右されます。コンテキストにはシステムプロンプト・登録されているTool数・ToolのDescription・ユーザー依頼のシナリオ等が含まれます。\n今回の調査では、Tool Calling にかかわるコンテキストを変えたときにTool呼び出し率がどう変わるかを確認してみます。\n!\n不確定要素が存在するた...",
-        "category": "AI・技術",
-        "rss_category": "",
-        "image_url": ""
-      },
-      {
-        "title": "推論を伸ばすほど精度が落ちる: 19〜31ステップの「決定論的地平」とエージェント設計の作り直し",
-        "url": "https://zenn.dev/hironakamura_ai/articles/a49e9052e75848",
-        "site": "Zenn(LLM)",
-        "published": "2026-06-02T15:16:03Z",
-        "description": "「考えさせるほど賢くなる」という直感で、エージェントの設計をしていないだろうか。プロンプトに「step by stepで」と書き、推論を長く引き出し、その思考過程をログで監視し、ときにはルーティングの判断材料にする。2026年6月1日にarXivへ同時に出た3本の論文を並べて読むと、この設計思想そのものが構造的に壊れていることが見えてくる。\n3本はそれぞれ別の現象を扱っている。だが結論は一点に収束...",
         "category": "AI・技術",
         "rss_category": "",
         "image_url": ""
@@ -469,6 +559,106 @@
     ],
     "2026-06": [
       {
+        "title": "NVIDIA Cosmos3-SuperをA100で動かす / 画像・動画生成をGeminiと比較",
+        "url": "https://zenn.dev/ollo/articles/6490f9cbe5494a",
+        "site": "Zenn(LLM)",
+        "published": "2026-06-03T14:23:04Z",
+        "description": "2026年5月末にリリースされた NVIDIA の生成基盤モデル Cosmos3-Super の Text-to-Image / Image-to-Video を、社内の A100 サーバー（80GB×複数）で実際にセットアップし、製造業をテーマにした画像・動画を生成し、NanoBanana ProやVeo3.1と比較しました。\n\n\n 1. はじめに\nNVIDIA Cosmos3-Super は、...",
+        "category": "AI・技術",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "Jetson AGX Orin(32GB) + Xavier(32GB) を繋いで、32GB超えのLLMをllama.cppで動かした話",
+        "url": "https://zenn.dev/nooop/articles/785b7c511f991b",
+        "site": "Zenn(LLM)",
+        "published": "2026-06-03T13:42:05Z",
+        "description": "おことわり\nこの記事の文書は、この連結LLMに相談して書きました。\n\n はじめに\nJetson AGX Orin（32GB）単体では乗らない大きなLLMを動かしたい。\n手元にはJetson AGX Xavier（32GB）も眠っている。2台合わせれば64GBになるはず。llama.cppのRPC機能を使えば複数ノードにモデルを分散できると聞いていたので、試してみた。\n以前は最新のQwen3.6を動...",
+        "category": "AI・技術",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "M1 Pro 32GBでQwen3.6-35B-A3Bを本気で使ってみた正直な話",
+        "url": "https://zenn.dev/anikuma/articles/qwen3-35b-m1-pro-32gb",
+        "site": "Zenn(LLM)",
+        "published": "2026-06-03T13:27:03Z",
+        "description": "2026年4月16日、AlibabaのQwenチームからQwen3.6-35B-A3Bがリリースされた。35B総パラメータ・3Bアクティブのスパース MoEモデルで、SWE-bench Verified 73.4%を記録した注目作だ。Apache 2.0ライセンスで商用利用OKという点も、個人開発者には嬉しい。\n「32GBのMacでどこまで使えるのか」——その疑問に正面から向き合った。本記事では、...",
+        "category": "AI・技術",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "【AIエージェント自作】ローカルLLM（Ollama）とClaude APIを切り替えるアーキテクチャ",
+        "url": "https://zenn.dev/pekopugu/articles/agent01-a2-llm-client",
+        "site": "Zenn(LLM)",
+        "published": "2026-06-03T12:36:16Z",
+        "description": "この記事で作るもの\n!\nこの記事は Claude（設計・構想・レビュー）と Claude Code（実装・記事生成）を活用して作成しました。\n\nシリーズ第2回です。前回はAIエージェントの設計思想を整理しました。今回はいよいよ実装に入り、Phase A（土台）のStep 01〜03を解説します。\n作るのは以下の3点です。\n\n\nLLMクライアント抽象化レイヤー：OllamaとClaude APIを同...",
+        "category": "AI・技術",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "ローカルLLMで“PoC止まり”にしない業務AIエージェント ― MCP＋RAG評価まで一気通貫",
+        "url": "https://zenn.dev/th1khse/articles/e5b1d66f0c36fd",
+        "site": "Zenn(LLM)",
+        "published": "2026-06-03T12:24:31Z",
+        "description": "はじめに：なぜ生成AIはPoCで止まるのか\n「社内でAIエージェントを作ってみた。デモは動いた。でも本番に出せない」――よく聞く話です。理由はだいたい3つに集約されます。\n\n\n精度が測れない（良くなった/悪くなったを数値で言えない）\n\nコストが読めない（運用したら毎月いくら？）\n\n運用できない（監視も改善サイクルも無い）\n\nこの記事では、これらを最初から作り込んだ最小の業務AIエージェントを、**...",
+        "category": "AI・技術",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "RTX 4080でローカルLLM 7モデルを実測したら「16GB VRAMの壁」が見えた",
+        "url": "https://zenn.dev/seeda_yuto/articles/ollama-vs-vllm-rtx4080-benchmark",
+        "site": "Zenn(LLM)",
+        "published": "2026-06-03T10:55:13Z",
+        "description": "結論: gpt-oss:20b + Ollamaが16GB VRAM環境の最適解\nRTX 4080 (16GB VRAM) で、推論バックエンド2種（Ollama / vLLM）とモデル12種を実測した。\n速度ランキング:\n\n\n\n#\nModel\nアーキ\nGGUF\ntok/s\nGPU搭載\n\n\n\n\n1\ndeepseek-coder-v2:16b\nMoE (2.4B active)\n8.9GB\n211-...",
+        "category": "AI・技術",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "MCPを使う前にやること：ツール全容の把握と権限の絞り込み",
+        "url": "https://zenn.dev/masuda_masuo/articles/2026-06-03-mcp-inspect",
+        "site": "Zenn(LLM)",
+        "published": "2026-06-03T10:23:47Z",
+        "description": "MCPを導入したとき、「何のツールが動いているか」を把握していたか。\nインストール手順に従ってサーバーを追加し、AIが使えるようになった——それは確認した。しかしそのサーバーが実際に何のツールを何本持っているか、その中に書き込みや削除の操作が含まれているか、設定ファイルにアクセスキーが直書きされていないか、まで確認した人はどれくらいいるだろうか。\nMCPは「AIに道具を持たせる」仕組みだ。どんな道...",
+        "category": "AI・技術",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "Claude Codeでチームを回した先の壁——Zenn Book Vol.3「書き続けるまで」の4段ループ全貌",
+        "url": "https://zenn.dev/tottoko_hamu/articles/2026-06-01-090000",
+        "site": "Zenn(LLM)",
+        "published": "2026-06-03T10:23:26Z",
+        "description": "この記事の概要（2026年6月）: Claude Codeで9体のAIエージェントチームを「回す」ようになった後の次の壁——「書き続けること」をテーマにしたZenn Book Vol.3「コードを書けない私がClaude Codeで『AIチーム』と書き続けるまで」が2026年6月1日に公開された。序章は無料。価格は900円。本書では「仕込む→書く→届ける→回収する」の4段ループを扱う。Vol.1・...",
+        "category": "AI・技術",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "AIエージェントの再現性を上げる設計：成功ではなく「失敗の記録」を記憶に積む",
+        "url": "https://zenn.dev/agentmemories/articles/failure-memory-reproducibility-design",
+        "site": "Zenn(LLM)",
+        "published": "2026-06-03T07:58:35Z",
+        "description": "AIエージェントを長く運用していると、不思議なことに気づきます。モデルを賢いものに替えても、同じ種類の失敗は減らない。一方で、モデルはそのままなのに、ある時期から「一度で直らなかった作業が、一発で固まる」ようになる。\n差を生んでいたのは賢さではなく、記憶に何を積むかでした。とくに「過去にどこで失敗し、何をやらないと決めたか」という失敗の記録を記憶レイヤーに積んだとき、再現性がはっきり上がりました。...",
+        "category": "AI・技術",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "4社の道具を並列で動かす運用の手引き——重複の排除と費用の整理",
+        "url": "https://zenn.dev/yurukusa/books/claude-multi-vendor-cost-guide",
+        "site": "Zenn(LLM)",
+        "published": "2026-06-03T07:08:56Z",
+        "description": "Claude Code・Codex・Gemini・Grok といった複数の道具を並列で同時に動かす運用は、単一の道具の運用とは構造的に違う痛みを抱えます。同じ問題を4社で別々に解いて3社の答えが一致し1社だけ違う時にどれを採るか、並列で動かす間に同じツール呼び出しが3回別々の費用で発生する、1日の費用が想定の3倍に膨らむ——こうした痛みは、実際に複数の道具を並列で運用している人たちが報告しています...",
+        "category": "AI・技術",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
         "title": "【Nishika 論文サク読み 第12回】Whisperの10倍速: Canary-1B-v2 & Parakeet-TDT-0.6B-v3",
         "url": "https://zenn.dev/team_nishika/articles/1ab82243c2cf7b",
         "site": "Zenn(LLM)",
@@ -534,16 +724,6 @@
         "site": "Zenn(LLM)",
         "published": "2026-06-02T15:42:53Z",
         "description": "はじめに\nTool Callingの成否は、モデル性能だけでなくコンテキストに含まれる情報にも左右されます。コンテキストにはシステムプロンプト・登録されているTool数・ToolのDescription・ユーザー依頼のシナリオ等が含まれます。\n今回の調査では、Tool Calling にかかわるコンテキストを変えたときにTool呼び出し率がどう変わるかを確認してみます。\n!\n不確定要素が存在するた...",
-        "category": "AI・技術",
-        "rss_category": "",
-        "image_url": ""
-      },
-      {
-        "title": "推論を伸ばすほど精度が落ちる: 19〜31ステップの「決定論的地平」とエージェント設計の作り直し",
-        "url": "https://zenn.dev/hironakamura_ai/articles/a49e9052e75848",
-        "site": "Zenn(LLM)",
-        "published": "2026-06-02T15:16:03Z",
-        "description": "「考えさせるほど賢くなる」という直感で、エージェントの設計をしていないだろうか。プロンプトに「step by stepで」と書き、推論を長く引き出し、その思考過程をログで監視し、ときにはルーティングの判断材料にする。2026年6月1日にarXivへ同時に出た3本の論文を並べて読むと、この設計思想そのものが構造的に壊れていることが見えてくる。\n3本はそれぞれ別の現象を扱っている。だが結論は一点に収束...",
         "category": "AI・技術",
         "rss_category": "",
         "image_url": ""
