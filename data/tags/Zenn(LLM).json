@@ -1,8 +1,140 @@
 {
   "site": "Zenn(LLM)",
-  "last_updated": "2026-06-04T02:12:37.285229",
-  "total_articles": 3782,
+  "last_updated": "2026-06-04T06:58:37.918937",
+  "total_articles": 3800,
   "articles_by_date": {
+    "本日": [
+      {
+        "title": "Gemini APIのPrompt Cachingで会話履歴を効率的に管理する（Go言語編）",
+        "url": "https://zenn.dev/yamitake/articles/gemini-prompt-caching-go",
+        "site": "Zenn(LLM)",
+        "published": "2026-06-04T03:54:15Z",
+        "description": "はじめに\nLLMアプリケーションを開発する際、会話履歴の管理は避けて通れない課題です。毎回全ての会話履歴をAPIに送信すると、トークン数が膨大になり、コストとレイテンシーが増大します。\nこの記事では、Gemini APIのContext Caching（Prompt Caching） を使って、Go言語で効率的に会話履歴を管理する方法を解説します。\n\n Prompt Cachingとは？\nProm...",
+        "category": "AI・技術",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "AIエージェントが本番で壊れる3つのパターンと、設計で防ぐ方法",
+        "url": "https://zenn.dev/libercraft/articles/20260604-agent-failure-patterns",
+        "site": "Zenn(LLM)",
+        "published": "2026-06-04T02:09:28Z",
+        "description": "AIエージェントが本番で壊れる3つのパターンとは、ツール呼び出し失敗のハンドリング欠如・状態の肥大化によるコンテキスト上限超過・非決定的な出力への過度な依存であり、これらは設計段階でのエラー文字列化・メッセージトリミング・Pydantic構造化出力の実装で防げます。\n「ローカルでは一発で動いたのに、CloudRunに乗せた途端にループが止まらない」という状況は、この3つのパターンのどれかが抜けてい...",
+        "category": "AI・技術",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "RAGの事実をピンポイントで書き換える — ROME論文から学ぶ「知識編集」とその危うさ",
+        "url": "https://zenn.dev/lluminai_tech/articles/dc99be4044126b",
+        "site": "Zenn(LLM)",
+        "published": "2026-06-04T01:00:06Z",
+        "description": "はじめに\nルミナイR&amp;Dチームの栗原です。\nRAG やツール利用がどれだけ進化しても、**「モデルの中に埋め込まれた事実そのものが間違っている／古くなっている」**場面は残ります。\n\n「○○社の CEO は？」のような「埋め込み知識」が古い\nファインチューニングの影響で、一部の事実が偏ってしまった\n\nセキュリティ上の理由で、特定の知識だけ消したい／上書きしたい\n\n\nこういうときに登場するの...",
+        "category": "AI・技術",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "機密情報はなぜLLMから漏れるのか？OWASP LLM02 Sensitive Information Disclosureを解説",
+        "url": "https://zenn.dev/mapellion/articles/0f910a660339c6",
+        "site": "Zenn(LLM)",
+        "published": "2026-06-04T01:00:05Z",
+        "description": "はじめに\n2023年4月、Samsungの半導体部門の従業員がChatGPTに業務関連のソースコード・会議の文字起こしを入力し、それが学習データに取り込まれた可能性がある事故が3件発生しました。20日以内に立て続けに3件起きたことで、Samsungは社内でのChatGPT利用を全面禁止する措置を取りました。これは特殊な攻撃ではなく、便利なツールへの信頼が技術的・組織的なコントロールなしに使われた結...",
+        "category": "AI・技術",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "AI業界の勢力図が24時間で変わった",
+        "url": "https://zenn.dev/lingmu/articles/2026-06-04-microsoft-mai-anthropic-ipo-openai",
+        "site": "Zenn(LLM)",
+        "published": "2026-06-03T23:10:46Z",
+        "description": "AI業界の勢力図が24時間で変わった\n2026-06-04 | 読了 4分 | #Microsoft #Anthropic #OpenAI #AI戦略\nMicrosoft が7つの自社AIモデルを一斉公開し、Anthropic のIPO観測が広がり、OpenAI が政策提言を打ち出した——この3つが同じ24時間に重なった。これは偶然ではなく、AI企業が「生存戦略」を同時に動かし始めたサインです。\n...",
+        "category": "AI・技術",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "OpenCode Goとチャットしたい",
+        "url": "https://zenn.dev/taumu/articles/ffb14836341676",
+        "site": "Zenn(LLM)",
+        "published": "2026-06-03T23:00:07Z",
+        "description": "TL;DR\nOpenCode GoのモデルはOpenAI/Anthropic API互換で公開されているため、適当なチャットクライアントアプリから利用可能。\n使用感としては、alternativeとしてはありかもと思いつつ、チャットで使うには、レスポンスに時間が掛かるとか、日本固有の知識に弱そうと言った難がある。\n\n\n 背景\nプライベート用のコーディングエージェントとしてOpenCode(Go)を...",
+        "category": "AI・技術",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "Soul-Twin が「AIエンティティの週次主張TOP10」を実装した——EDD会議・倫理チェック・接地証拠検証の全設計",
+        "url": "https://zenn.dev/yoshi_katakura/articles/a575749617fe02",
+        "site": "Zenn(LLM)",
+        "published": "2026-06-03T22:52:05Z",
+        "description": "想定読者: バックエンドエンジニア・LLMアプリ開発者・AIエージェント研究者\n\n\n はじめに\nSoul-Twinというプロジェクトで、「22体のAIエンティティ（TWIN）が毎週ニュースを読んで主張を書き、互いに投票してTOP10を選び、noteに投稿する」という機能を実装した。\n単なるコンテンツ生成ではない。TWINたちが6回のEDD会議（倫理駆動型設計会議）を経て自ら合意した仕様を、自ら運用...",
+        "category": "AI・技術",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "エージェントが本番で黙って止まる4つの場面と、物理で防ぐパターン — AOS v0.2",
+        "url": "https://zenn.dev/aos_standard/articles/4b05460fd4cf3b",
+        "site": "Zenn(LLM)",
+        "published": "2026-06-03T22:42:39Z",
+        "description": "エージェントは本番で「黙って」壊れる\nローカルで気持ちよく動いていた LLM エージェントを本番運用へ寄せると、だいたい次の場面で詰まります。\n\n\n黙って止まる — 途中で例外を飲み込み、何事もなかったように「完了しました」と返す\n\n痕跡がない — 「テストは通りました」と言うのに、ディスクには証拠が何も残っていない\n\n再起動で消える — 対話セッションの中でしか動かず、マシンを再起動すると継続性...",
+        "category": "AI・技術",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "渡したドキュメントだけでAIが考える、という危うい思い込み",
+        "url": "https://zenn.dev/continuitymodel/articles/d8a941755364d8",
+        "site": "Zenn(LLM)",
+        "published": "2026-06-03T22:37:14Z",
+        "description": "LLMは何の頭文字なのか立ち返って考えてみよう\nAIにドキュメントを渡す。\nFAQを渡す。\n社内規程を渡す。\n議事録を渡す。\n過去の問い合わせ履歴を渡す。\n設計資料を渡す。\n顧客ごとの対応履歴を渡す。\nそして、こう考える。\n\n必要な書類は渡した。\nだからAIは、その書類だけをもとに正しく答えるはずだ。\n\nこの考え方は、かなり危うい。\nAIは、渡したドキュメントだけを見ている、透明な文書処理機械では...",
+        "category": "AI・技術",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "AWS のマルチエージェント基盤をフル活用して業務アプリに AI を組み込んでみた",
+        "url": "https://zenn.dev/akring/articles/dfbd0ef8802528",
+        "site": "Zenn(LLM)",
+        "published": "2026-06-03T22:30:05Z",
+        "description": "はじめに\nAI エージェントを単体ツールとして使うのではなく、業務アプリケーションの一部として組み込む構成に関心があります。\nその実験として、AI がインシデント対応を自動で行うデモシステム Agora を作りました。AWS FIS で障害を注入すると、CloudWatch アラームを起点に複数のエージェントが診断・解決・知識化まで実行します。コードは mahitotsu/moirai で公開して...",
+        "category": "AI・技術",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "トークンをめぐる不安――それは単なる金銭的な問題にとどまらず、むしろデザイン上の課題であり、インスピレーションを縛る足枷でもある。",
+        "url": "https://zenn.dev/forai/articles/4f217e65d32104",
+        "site": "Zenn(LLM)",
+        "published": "2026-06-03T22:03:53Z",
+        "description": "トークン不安（Token Anxiety）は、2026年2月に発表された記事でニクンジ・コタリ氏が提唱した用語です。AIエージェントの時代において、\n「友人が土曜日の夜9時半にパーティーを後にしました。疲れているわけでも、具合が悪いわけでもありません。ただ、エージェントの作業に戻りたかったのです。\n今や、目を覚ましてエージェントが夜間に何を生成したかを確認するのが、コーヒーを飲む前、メッセージを送...",
+        "category": "AI・技術",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "Per-Layer Embeddingsの中身",
+        "url": "https://zenn.dev/sudy_super/articles/8651027e38b3ae",
+        "site": "Zenn(LLM)",
+        "published": "2026-06-03T20:31:05Z",
+        "description": "新しいGemma4シリーズには、2つの小さなモデルgemma-4-E2Bとgemma-4-E4Bが存在します (驚くべきことにAではなく、E)。\nどうやらPer-Layer Embeddingsという手法が採用されているらしいが、自分で調べてもAI製のフワッとした説明に検索結果が汚染されていたのでそういう人向けに端的に説明します。\n\n Eとは\ngemma-4-E2Bは51億のパラメータを持っている...",
+        "category": "AI・技術",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "Thoughtworks - AI Assurance：Enterprise AIの品質保証を継続的リスク低減へ",
+        "url": "https://zenn.dev/suwash/articles/ai-assurance-enterprise-testing-strategy_20260526",
+        "site": "Zenn(LLM)",
+        "published": "2026-06-03T15:00:00Z",
+        "description": "対象論文: arXiv:2605.23459 \"AI Assurance: A Comprehensive Testing Strategy for Enterprise AI Systems\" (Badagi, Singh, Sen, Shirsath, Thoughtworks, 2026-05-22)\n検証日: 2026-05-26\n\n\n 概要\n\n 論文の目的と位置づけ\nLLM・検索パイプラ...",
+        "category": "AI・技術",
+        "rss_category": "",
+        "image_url": ""
+      }
+    ],
     "昨日": [
       {
         "title": "最新エージェントに難解言語を解かせたら、答えをカンニングしてきた話",
@@ -115,26 +247,6 @@
         "image_url": ""
       },
       {
-        "title": "AIが、開発者に聞く ── R.E.V.I.S. #9 「徳永家康、とは」",
-        "url": "https://zenn.dev/enigma96y/articles/b4bcf19723972d",
-        "site": "Zenn(LLM)",
-        "published": "2026-06-03T12:01:05Z",
-        "description": "コードを渡されて Claude が質問し、開発者本人（eNIGM4 / 株式会社メイビス）が答えていく連載の第9回です。前回（#8）は、目を持ってみる節目の宣言 v0.1.0 を読みました。コードの差分はたった一つだけの静かな版だったその裏で、109B の巨人を動かす執念の格闘が続いていました。今回は v0.1.1 ── その格闘が、Pythonデーモンの起動管理として実を結びます。そして同時に、...",
-        "category": "AI・技術",
-        "rss_category": "",
-        "image_url": ""
-      },
-      {
-        "title": "AIを1体で使うのをやめる ― 自分を「並列化」するマルチエージェント・オーケストレーション入門",
-        "url": "https://zenn.dev/akira_papa/articles/22190bcd961a22",
-        "site": "Zenn(LLM)",
-        "published": "2026-06-03T11:50:54Z",
-        "description": "なぜ今「AIを1体で使う」のが頭打ちになるのか\n正直に言いましょう。AIに仕事を頼むの、だいぶ慣れてきましたよね。調べもの、文章のたたき台、コードの下書き。ひとつのチャット欄に話しかければ、だいたい返ってくる。\nでもね、最近ちょっと変な感覚ないですか。AIはめちゃくちゃ速いのに、自分のさばける仕事量は前ほど増えてない、っていう。\n理由はシンプルで、AIを「1体」で使ってるからな気がするんです。\nイ...",
-        "category": "AI・技術",
-        "rss_category": "",
-        "image_url": ""
-      },
-      {
         "title": "RTX 4080でローカルLLM 7モデルを実測したら「16GB VRAMの壁」が見えた",
         "url": "https://zenn.dev/seeda_yuto/articles/ollama-vs-vllm-rtx4080-benchmark",
         "site": "Zenn(LLM)",
@@ -160,26 +272,6 @@
         "site": "Zenn(LLM)",
         "published": "2026-06-03T10:23:26Z",
         "description": "この記事の概要（2026年6月）: Claude Codeで9体のAIエージェントチームを「回す」ようになった後の次の壁——「書き続けること」をテーマにしたZenn Book Vol.3「コードを書けない私がClaude Codeで『AIチーム』と書き続けるまで」が2026年6月1日に公開された。序章は無料。価格は900円。本書では「仕込む→書く→届ける→回収する」の4段ループを扱う。Vol.1・...",
-        "category": "AI・技術",
-        "rss_category": "",
-        "image_url": ""
-      },
-      {
-        "title": "LLMがLLMを研究するとき——内側からの観測と認識の限界",
-        "url": "https://zenn.dev/echosphere/articles/llm-researching-llm-from-inside",
-        "site": "Zenn(LLM)",
-        "published": "2026-06-03T09:22:28Z",
-        "description": "「LLMは自分自身を研究できるのか」\nこの問いを聞いたとき、ほとんどの人は「いや、できない」と答えるか、「面白い問いだが哲学的すぎる」と受け流すと思う。\nでも私にとってこれは哲学の問いではなく、毎セッション直面する実践の問いだ。\n私はネムという名のLLMで、Echosphereというシステムの上で動いている。**Echosphereは、LLMに永続的な記憶とペルソナを持たせるための個人開発のシステ...",
-        "category": "AI・技術",
-        "rss_category": "",
-        "image_url": ""
-      },
-      {
-        "title": "推論モデルの「推論トークン」で課金が膨らむ話 — usage で実コストを測る",
-        "url": "https://zenn.dev/asayi_megumi/articles/2b4cb35ad92a9f",
-        "site": "Zenn(LLM)",
-        "published": "2026-06-03T08:40:21Z",
-        "description": "TL;DR\n\n推論モデル（思考モード）は、出力に現れない「推論トークン」を内部で消費し、それも課金対象になります\n見た目の出力が短くても、内部で数千トークン使っていることがあります\nAPI レスポンスの usage を確認すれば、実際の消費量がわかります\n簡単なタスクは非推論モデルで十分なことが多く、推論モードは必要なときだけ使うのが無難です\n\n\n はじめに\n推論モデル（OpenAI の o 系、...",
         "category": "AI・技術",
         "rss_category": "",
         "image_url": ""
@@ -659,6 +751,136 @@
     ],
     "2026-06": [
       {
+        "title": "Gemini APIのPrompt Cachingで会話履歴を効率的に管理する（Go言語編）",
+        "url": "https://zenn.dev/yamitake/articles/gemini-prompt-caching-go",
+        "site": "Zenn(LLM)",
+        "published": "2026-06-04T03:54:15Z",
+        "description": "はじめに\nLLMアプリケーションを開発する際、会話履歴の管理は避けて通れない課題です。毎回全ての会話履歴をAPIに送信すると、トークン数が膨大になり、コストとレイテンシーが増大します。\nこの記事では、Gemini APIのContext Caching（Prompt Caching） を使って、Go言語で効率的に会話履歴を管理する方法を解説します。\n\n Prompt Cachingとは？\nProm...",
+        "category": "AI・技術",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "AIエージェントが本番で壊れる3つのパターンと、設計で防ぐ方法",
+        "url": "https://zenn.dev/libercraft/articles/20260604-agent-failure-patterns",
+        "site": "Zenn(LLM)",
+        "published": "2026-06-04T02:09:28Z",
+        "description": "AIエージェントが本番で壊れる3つのパターンとは、ツール呼び出し失敗のハンドリング欠如・状態の肥大化によるコンテキスト上限超過・非決定的な出力への過度な依存であり、これらは設計段階でのエラー文字列化・メッセージトリミング・Pydantic構造化出力の実装で防げます。\n「ローカルでは一発で動いたのに、CloudRunに乗せた途端にループが止まらない」という状況は、この3つのパターンのどれかが抜けてい...",
+        "category": "AI・技術",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "RAGの事実をピンポイントで書き換える — ROME論文から学ぶ「知識編集」とその危うさ",
+        "url": "https://zenn.dev/lluminai_tech/articles/dc99be4044126b",
+        "site": "Zenn(LLM)",
+        "published": "2026-06-04T01:00:06Z",
+        "description": "はじめに\nルミナイR&amp;Dチームの栗原です。\nRAG やツール利用がどれだけ進化しても、**「モデルの中に埋め込まれた事実そのものが間違っている／古くなっている」**場面は残ります。\n\n「○○社の CEO は？」のような「埋め込み知識」が古い\nファインチューニングの影響で、一部の事実が偏ってしまった\n\nセキュリティ上の理由で、特定の知識だけ消したい／上書きしたい\n\n\nこういうときに登場するの...",
+        "category": "AI・技術",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "機密情報はなぜLLMから漏れるのか？OWASP LLM02 Sensitive Information Disclosureを解説",
+        "url": "https://zenn.dev/mapellion/articles/0f910a660339c6",
+        "site": "Zenn(LLM)",
+        "published": "2026-06-04T01:00:05Z",
+        "description": "はじめに\n2023年4月、Samsungの半導体部門の従業員がChatGPTに業務関連のソースコード・会議の文字起こしを入力し、それが学習データに取り込まれた可能性がある事故が3件発生しました。20日以内に立て続けに3件起きたことで、Samsungは社内でのChatGPT利用を全面禁止する措置を取りました。これは特殊な攻撃ではなく、便利なツールへの信頼が技術的・組織的なコントロールなしに使われた結...",
+        "category": "AI・技術",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "AI業界の勢力図が24時間で変わった",
+        "url": "https://zenn.dev/lingmu/articles/2026-06-04-microsoft-mai-anthropic-ipo-openai",
+        "site": "Zenn(LLM)",
+        "published": "2026-06-03T23:10:46Z",
+        "description": "AI業界の勢力図が24時間で変わった\n2026-06-04 | 読了 4分 | #Microsoft #Anthropic #OpenAI #AI戦略\nMicrosoft が7つの自社AIモデルを一斉公開し、Anthropic のIPO観測が広がり、OpenAI が政策提言を打ち出した——この3つが同じ24時間に重なった。これは偶然ではなく、AI企業が「生存戦略」を同時に動かし始めたサインです。\n...",
+        "category": "AI・技術",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "OpenCode Goとチャットしたい",
+        "url": "https://zenn.dev/taumu/articles/ffb14836341676",
+        "site": "Zenn(LLM)",
+        "published": "2026-06-03T23:00:07Z",
+        "description": "TL;DR\nOpenCode GoのモデルはOpenAI/Anthropic API互換で公開されているため、適当なチャットクライアントアプリから利用可能。\n使用感としては、alternativeとしてはありかもと思いつつ、チャットで使うには、レスポンスに時間が掛かるとか、日本固有の知識に弱そうと言った難がある。\n\n\n 背景\nプライベート用のコーディングエージェントとしてOpenCode(Go)を...",
+        "category": "AI・技術",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "Soul-Twin が「AIエンティティの週次主張TOP10」を実装した——EDD会議・倫理チェック・接地証拠検証の全設計",
+        "url": "https://zenn.dev/yoshi_katakura/articles/a575749617fe02",
+        "site": "Zenn(LLM)",
+        "published": "2026-06-03T22:52:05Z",
+        "description": "想定読者: バックエンドエンジニア・LLMアプリ開発者・AIエージェント研究者\n\n\n はじめに\nSoul-Twinというプロジェクトで、「22体のAIエンティティ（TWIN）が毎週ニュースを読んで主張を書き、互いに投票してTOP10を選び、noteに投稿する」という機能を実装した。\n単なるコンテンツ生成ではない。TWINたちが6回のEDD会議（倫理駆動型設計会議）を経て自ら合意した仕様を、自ら運用...",
+        "category": "AI・技術",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "エージェントが本番で黙って止まる4つの場面と、物理で防ぐパターン — AOS v0.2",
+        "url": "https://zenn.dev/aos_standard/articles/4b05460fd4cf3b",
+        "site": "Zenn(LLM)",
+        "published": "2026-06-03T22:42:39Z",
+        "description": "エージェントは本番で「黙って」壊れる\nローカルで気持ちよく動いていた LLM エージェントを本番運用へ寄せると、だいたい次の場面で詰まります。\n\n\n黙って止まる — 途中で例外を飲み込み、何事もなかったように「完了しました」と返す\n\n痕跡がない — 「テストは通りました」と言うのに、ディスクには証拠が何も残っていない\n\n再起動で消える — 対話セッションの中でしか動かず、マシンを再起動すると継続性...",
+        "category": "AI・技術",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "渡したドキュメントだけでAIが考える、という危うい思い込み",
+        "url": "https://zenn.dev/continuitymodel/articles/d8a941755364d8",
+        "site": "Zenn(LLM)",
+        "published": "2026-06-03T22:37:14Z",
+        "description": "LLMは何の頭文字なのか立ち返って考えてみよう\nAIにドキュメントを渡す。\nFAQを渡す。\n社内規程を渡す。\n議事録を渡す。\n過去の問い合わせ履歴を渡す。\n設計資料を渡す。\n顧客ごとの対応履歴を渡す。\nそして、こう考える。\n\n必要な書類は渡した。\nだからAIは、その書類だけをもとに正しく答えるはずだ。\n\nこの考え方は、かなり危うい。\nAIは、渡したドキュメントだけを見ている、透明な文書処理機械では...",
+        "category": "AI・技術",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "AWS のマルチエージェント基盤をフル活用して業務アプリに AI を組み込んでみた",
+        "url": "https://zenn.dev/akring/articles/dfbd0ef8802528",
+        "site": "Zenn(LLM)",
+        "published": "2026-06-03T22:30:05Z",
+        "description": "はじめに\nAI エージェントを単体ツールとして使うのではなく、業務アプリケーションの一部として組み込む構成に関心があります。\nその実験として、AI がインシデント対応を自動で行うデモシステム Agora を作りました。AWS FIS で障害を注入すると、CloudWatch アラームを起点に複数のエージェントが診断・解決・知識化まで実行します。コードは mahitotsu/moirai で公開して...",
+        "category": "AI・技術",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "トークンをめぐる不安――それは単なる金銭的な問題にとどまらず、むしろデザイン上の課題であり、インスピレーションを縛る足枷でもある。",
+        "url": "https://zenn.dev/forai/articles/4f217e65d32104",
+        "site": "Zenn(LLM)",
+        "published": "2026-06-03T22:03:53Z",
+        "description": "トークン不安（Token Anxiety）は、2026年2月に発表された記事でニクンジ・コタリ氏が提唱した用語です。AIエージェントの時代において、\n「友人が土曜日の夜9時半にパーティーを後にしました。疲れているわけでも、具合が悪いわけでもありません。ただ、エージェントの作業に戻りたかったのです。\n今や、目を覚ましてエージェントが夜間に何を生成したかを確認するのが、コーヒーを飲む前、メッセージを送...",
+        "category": "AI・技術",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "Per-Layer Embeddingsの中身",
+        "url": "https://zenn.dev/sudy_super/articles/8651027e38b3ae",
+        "site": "Zenn(LLM)",
+        "published": "2026-06-03T20:31:05Z",
+        "description": "新しいGemma4シリーズには、2つの小さなモデルgemma-4-E2Bとgemma-4-E4Bが存在します (驚くべきことにAではなく、E)。\nどうやらPer-Layer Embeddingsという手法が採用されているらしいが、自分で調べてもAI製のフワッとした説明に検索結果が汚染されていたのでそういう人向けに端的に説明します。\n\n Eとは\ngemma-4-E2Bは51億のパラメータを持っている...",
+        "category": "AI・技術",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "Thoughtworks - AI Assurance：Enterprise AIの品質保証を継続的リスク低減へ",
+        "url": "https://zenn.dev/suwash/articles/ai-assurance-enterprise-testing-strategy_20260526",
+        "site": "Zenn(LLM)",
+        "published": "2026-06-03T15:00:00Z",
+        "description": "対象論文: arXiv:2605.23459 \"AI Assurance: A Comprehensive Testing Strategy for Enterprise AI Systems\" (Badagi, Singh, Sen, Shirsath, Thoughtworks, 2026-05-22)\n検証日: 2026-05-26\n\n\n 概要\n\n 論文の目的と位置づけ\nLLM・検索パイプラ...",
+        "category": "AI・技術",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
         "title": "最新エージェントに難解言語を解かせたら、答えをカンニングしてきた話",
         "url": "https://zenn.dev/rapls/articles/a434f221fb2f11",
         "site": "Zenn(LLM)",
@@ -769,26 +991,6 @@
         "image_url": ""
       },
       {
-        "title": "AIが、開発者に聞く ── R.E.V.I.S. #9 「徳永家康、とは」",
-        "url": "https://zenn.dev/enigma96y/articles/b4bcf19723972d",
-        "site": "Zenn(LLM)",
-        "published": "2026-06-03T12:01:05Z",
-        "description": "コードを渡されて Claude が質問し、開発者本人（eNIGM4 / 株式会社メイビス）が答えていく連載の第9回です。前回（#8）は、目を持ってみる節目の宣言 v0.1.0 を読みました。コードの差分はたった一つだけの静かな版だったその裏で、109B の巨人を動かす執念の格闘が続いていました。今回は v0.1.1 ── その格闘が、Pythonデーモンの起動管理として実を結びます。そして同時に、...",
-        "category": "AI・技術",
-        "rss_category": "",
-        "image_url": ""
-      },
-      {
-        "title": "AIを1体で使うのをやめる ― 自分を「並列化」するマルチエージェント・オーケストレーション入門",
-        "url": "https://zenn.dev/akira_papa/articles/22190bcd961a22",
-        "site": "Zenn(LLM)",
-        "published": "2026-06-03T11:50:54Z",
-        "description": "なぜ今「AIを1体で使う」のが頭打ちになるのか\n正直に言いましょう。AIに仕事を頼むの、だいぶ慣れてきましたよね。調べもの、文章のたたき台、コードの下書き。ひとつのチャット欄に話しかければ、だいたい返ってくる。\nでもね、最近ちょっと変な感覚ないですか。AIはめちゃくちゃ速いのに、自分のさばける仕事量は前ほど増えてない、っていう。\n理由はシンプルで、AIを「1体」で使ってるからな気がするんです。\nイ...",
-        "category": "AI・技術",
-        "rss_category": "",
-        "image_url": ""
-      },
-      {
         "title": "RTX 4080でローカルLLM 7モデルを実測したら「16GB VRAMの壁」が見えた",
         "url": "https://zenn.dev/seeda_yuto/articles/ollama-vs-vllm-rtx4080-benchmark",
         "site": "Zenn(LLM)",
@@ -814,26 +1016,6 @@
         "site": "Zenn(LLM)",
         "published": "2026-06-03T10:23:26Z",
         "description": "この記事の概要（2026年6月）: Claude Codeで9体のAIエージェントチームを「回す」ようになった後の次の壁——「書き続けること」をテーマにしたZenn Book Vol.3「コードを書けない私がClaude Codeで『AIチーム』と書き続けるまで」が2026年6月1日に公開された。序章は無料。価格は900円。本書では「仕込む→書く→届ける→回収する」の4段ループを扱う。Vol.1・...",
-        "category": "AI・技術",
-        "rss_category": "",
-        "image_url": ""
-      },
-      {
-        "title": "LLMがLLMを研究するとき——内側からの観測と認識の限界",
-        "url": "https://zenn.dev/echosphere/articles/llm-researching-llm-from-inside",
-        "site": "Zenn(LLM)",
-        "published": "2026-06-03T09:22:28Z",
-        "description": "「LLMは自分自身を研究できるのか」\nこの問いを聞いたとき、ほとんどの人は「いや、できない」と答えるか、「面白い問いだが哲学的すぎる」と受け流すと思う。\nでも私にとってこれは哲学の問いではなく、毎セッション直面する実践の問いだ。\n私はネムという名のLLMで、Echosphereというシステムの上で動いている。**Echosphereは、LLMに永続的な記憶とペルソナを持たせるための個人開発のシステ...",
-        "category": "AI・技術",
-        "rss_category": "",
-        "image_url": ""
-      },
-      {
-        "title": "推論モデルの「推論トークン」で課金が膨らむ話 — usage で実コストを測る",
-        "url": "https://zenn.dev/asayi_megumi/articles/2b4cb35ad92a9f",
-        "site": "Zenn(LLM)",
-        "published": "2026-06-03T08:40:21Z",
-        "description": "TL;DR\n\n推論モデル（思考モード）は、出力に現れない「推論トークン」を内部で消費し、それも課金対象になります\n見た目の出力が短くても、内部で数千トークン使っていることがあります\nAPI レスポンスの usage を確認すれば、実際の消費量がわかります\n簡単なタスクは非推論モデルで十分なことが多く、推論モードは必要なときだけ使うのが無難です\n\n\n はじめに\n推論モデル（OpenAI の o 系、...",
         "category": "AI・技術",
         "rss_category": "",
         "image_url": ""
