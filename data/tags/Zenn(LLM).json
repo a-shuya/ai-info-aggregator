@@ -1,11 +1,161 @@
 {
   "site": "Zenn(LLM)",
-  "last_updated": "2026-06-05T04:19:16.337357",
-  "total_articles": 3785,
+  "last_updated": "2026-06-05T08:28:23.391363",
+  "total_articles": 3799,
   "articles_by_date": {
     "本日": [
       {
-        "title": "🤖 生成AIモデルの隠れ層にOQCの超伝導量子コンピュータの量子回路をドッキングさせてみた",
+        "title": "Claude Code の脇に置いて使う小さな道具 3 つ — 安価な LLM へ読解・レビュー・チェックを逃がす",
+        "url": "https://zenn.dev/logicia32/articles/2026-06-05-aide-trio-cheap-llm-mcp",
+        "site": "Zenn(LLM)",
+        "published": "2026-06-05T04:43:17Z",
+        "description": "はじめに\nClaude Code を毎日使っていると、コンテキスト枠と API コストの両方が気になってくることはありませんか。\n私は気になりまして、「重い読解やレビューは安価な LLM に逃がして、結果だけ受け取れたら楽だな」と思って、小さな道具を 3 つ書いてみました。\n\n\ncode-aide — Claude Code の補佐。コード読解・レビュー・差分提案を委譲する MCP。\n\nwrite...",
+        "category": "AI・技術",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "Hermes Agentに見るAIエージェントの「学習」の仕組み",
+        "url": "https://zenn.dev/nobmake/articles/bca81268efc5e3",
+        "site": "Zenn(LLM)",
+        "published": "2026-06-05T04:16:48Z",
+        "description": "はじめに\nAIエージェントの文脈で「学習する」という言葉がよく使われます。\nただし、多くの場合それは LLM本体の重みを更新する という意味ではありません。実運用上のエージェントでは、次のような仕組みによって「前回よりうまく動く」状態を作ります。\n\nユーザーの好みを記憶する\nよく使う作業手順をスキル化する\n過去の会話を検索できるようにする\n長い会話を要約して作業文脈を維持する\n実行ログを訓練データ...",
+        "category": "AI・技術",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "画像エンコーダーを丸ごと捨てる：Gemma 4 12B「エンコーダー不要マルチモーダル」を分解する",
+        "url": "https://zenn.dev/hironakamura_ai/articles/f3fd34dbdda7d9",
+        "site": "Zenn(LLM)",
+        "published": "2026-06-05T04:09:18Z",
+        "description": "エンコーダーを捨てるという選択\nマルチモーダルモデルの作り方が、静かに一段変わりました。\nこれまで画像や音声を扱うモデルは、ほぼ例外なく「専用エンコーダー」を前段に置いてきました。画像なら CLIP や SigLIP のような視覚エンコーダー、音声なら音声エンコーダーで信号を一度「意味のあるベクトル」に変換し、それを言語モデル（LLM）につなぐ。これがここ数年の定番構成でした。\n2026年6月3日...",
+        "category": "AI・技術",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "104kスターのKarpathy CLAUDE.mdを試したら、手元に既にあった話——グローバルCLAUDE.mdで全PJ適用済みの実態",
+        "url": "https://zenn.dev/tadkud/articles/karpathy-claude-md-already-have-it",
+        "site": "Zenn(LLM)",
+        "published": "2026-06-05T04:04:26Z",
+        "description": "104kスターのKarpathy CLAUDE.mdを試したら、手元に既にあった話——グローバルCLAUDE.mdで全PJ適用済みの実態\n\n はじめに\nAndrej Karpathy氏が公開した CLAUDE.md テンプレートがGitHubで伸びていて、タイムラインでも「入れた方がいい」「エラーが減った」という声をよく見るようになりました。筆者も「コピペしようかな」と眺めていたのですが、よく読む...",
+        "category": "AI・技術",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "Claude Skills（SKILL.md）設計「6法則」と自分の環境を照合したら、2点で先を行っていた話",
+        "url": "https://zenn.dev/tadkud/articles/claude-skills-six-design-laws",
+        "site": "Zenn(LLM)",
+        "published": "2026-06-05T04:04:24Z",
+        "description": "Claude Skills（SKILL.md）設計「6法則」と自分の環境を照合したら、2点で先を行っていた話\n\n はじめに\n先日、Claude Code の Skills を100個リバースエンジニアリングした分析記事が流れてきた。「動くSkillsと動かないSkillsを分ける6つの設計法則」というもので、Erik Schluntz（Anthropic）の「Vibe Coding in Prod...",
+        "category": "AI・技術",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "Claude Code に「API課金ゲート」を設計する：暴走を防ぐヒューマン・イン・ザ・ループ",
+        "url": "https://zenn.dev/tadkud/articles/claude-code-api-gate-design",
+        "site": "Zenn(LLM)",
+        "published": "2026-06-05T04:04:15Z",
+        "description": "Claude Code に「API課金ゲート」を設計する：暴走を防ぐヒューマン・イン・ザ・ループ\n\n はじめに\nClaude Code を含む AI コーディングエージェントを業務で運用していると、必ず一度はぶつかる事故があります。\n「気づいたら従量課金 API を何百回も叩いていて、月末に数千円〜数万円の請求が来た」\n筆者の環境でも、外部 LLM API（Grok / Gemini）の連続呼び出...",
+        "category": "AI・技術",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "Claude Code Agent Team 設計パターン——並列エージェントで開発を加速する",
+        "url": "https://zenn.dev/tadkud/articles/claude-code-agent-team-patterns",
+        "site": "Zenn(LLM)",
+        "published": "2026-06-05T04:04:15Z",
+        "description": "Claude Code Agent Team 設計パターン——並列エージェントで開発を加速する\n\n はじめに\nClaude Code には Agent Team という機能があります。1つのタスクを複数のサブエージェントに分割して並列実行し、開発速度を大幅に向上できます。しかし、闇雲にエージェントを増やしてもトークンを無駄に消費するだけです。\nこの記事では「いつ Agent Team を使うべきか...",
+        "category": "AI・技術",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "海外5M viewバズ投稿「Claudeレート制限回避Tips」——全部すでに実装してた話：CLAUDE.md駆動開発のすすめ",
+        "url": "https://zenn.dev/tadkud/articles/2026-05-18_claude-md-rate-limit-tips",
+        "site": "Zenn(LLM)",
+        "published": "2026-06-05T04:04:09Z",
+        "description": "海外5M viewバズ投稿「Claudeレート制限回避Tips」——全部すでに実装してた話：CLAUDE.md駆動開発のすすめ\n\n はじめに\n先日、海外のX（旧Twitter）で「Claudeのレート制限を回避するためのTips」という投稿が5M viewを超えてバズりました。内容をざっくりまとめると：\n\nタスクを細かく分割して1リクエストあたりのトークンを減らす\nキャッシュを活用してコンテキスト...",
+        "category": "AI・技術",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "ChromaDBでベクトルDBを手元に立てる：RAG開発のための最速セットアップ",
+        "url": "https://zenn.dev/libercraft/articles/20260604-chromadb-setup-rag",
+        "site": "Zenn(LLM)",
+        "published": "2026-06-05T04:02:36Z",
+        "description": "ChromaDBとは、Pythonで手元に立てられるオープンソースのベクトルデータベースで、RAG開発の検索基盤として最も導入コストが低い選択肢のひとつです。\npip install chromadb の一行でローカルに動作するベクトルDBが手に入り、課金も発生しません。Pineconeのようなクラウドサービスと異なりアカウント登録不要で、RAGのコアロジック（チャンキング・検索品質の改善）に集中...",
+        "category": "AI・技術",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "AIに「痛みのセンサー」を壊させるな — 機械強制で守るコード品質",
+        "url": "https://zenn.dev/nullvariant/articles/ai-pain-sensor-anti-pattern",
+        "site": "Zenn(LLM)",
+        "published": "2026-06-05T02:33:37Z",
+        "description": "はじめに：立ち位置の表明\n先に立ち位置を明かしておきます。私は Claude Code を Max 20x プランの上限と戦いながら毎日使い倒している部類のAI重信者です。\nこの記事は AI を否定する話ではありません。大好きだからこそ成立させたい長期協働の設計論です。\n\n 自分の身に起きた2つの実話\n\n 実話 1 — validator を弱めたAI\nある日、私は自分のリポジトリでファイル構造の...",
+        "category": "AI・技術",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "AIエージェントとは何か？仕組みと2025年の最新活用事例をわかりやすく解説",
+        "url": "https://zenn.dev/ds_ai_lab/articles/20260604-ai-agent-2025",
+        "site": "Zenn(LLM)",
+        "published": "2026-06-05T02:22:04Z",
+        "description": "はじめに\n「AIエージェント」という言葉をよく聞くようになりました。ChatGPTやClaudeに「〇〇をやっておいて」と頼むだけで、複数のタスクを自律的にこなしてくれる——そんな未来が現実になりつつあります。\n本記事では、AIエージェントの仕組みを基礎から解説し、2025年時点での実践的な活用事例を紹介します。\n\n AIエージェントとは？\nAIエージェントとは、与えられた目標を達成するために、自...",
+        "category": "AI・技術",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "マニュアル動画ができる生成AIを作った話 〜 MANAVO開発ログ① 〜",
+        "url": "https://zenn.dev/mukuil_blog/articles/9a2e1361521ba9",
+        "site": "Zenn(LLM)",
+        "published": "2026-06-05T02:19:50Z",
+        "description": "こんにちは！株式会社ムクイルのapuです。\n株式会社ムクイルで開発している、マニュアル動画生成AI「MANAVO（マナボ）」の開発ログを書いていこうと思います。\nMANAVOは、\n\nPDF\nWord\nテキスト\n既存動画\n\nなどの資料をアップロードするだけで、AIがマニュアル動画を自動生成するサービスです。\nナレーションやBGMも自動で付与され、完成後はスライドやナレーションの編集もできます。\n今回...",
+        "category": "AI・技術",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "28秒で作れるAIは、5ファイルで壊れる。ローカルLLMを安全に使うハーネス設計",
+        "url": "https://zenn.dev/seeda_yuto/articles/gpt-oss-multifile-agent-failure",
+        "site": "Zenn(LLM)",
+        "published": "2026-06-05T01:10:05Z",
+        "description": "前回は「単一HTML」だった\n前回はこちら。\nhttps://zenn.dev/seeda_yuto/articles/local-llm-agent-harness-guide\n前回、gpt-oss:20b に Web アプリを自律生成させた。\n結果はかなり良かった。Todo アプリ、ポモドーロタイマー、Markdown ノートアプリ。どれも 2 回の API 呼び出しで完成し、合計 77 秒。...",
+        "category": "AI・技術",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "**AIたちに会議をさせて要件を決める「EDD会議」——4回運用してわかった、質を左右する技術ポイント**",
+        "url": "https://zenn.dev/yoshi_katakura/articles/748ef99d016d89",
+        "site": "Zenn(LLM)",
+        "published": "2026-06-05T00:54:05Z",
+        "description": "0. EDD会議とは\nEDD（Entity-Driven Development）会議は、システムの中で生きているAI（デジタルツイン）たち自身に、そのシステムの改善要件を会議で決めさせる仕組みです。人間（アーキテクト）はファシリテーターを介して進行をゲートし、AIたちが「発言 → グルーピング → 投票 → 合意 → 議事録」という7フェーズを進みます。\n16体のAIで4回運用しました。本稿は「...",
+        "category": "AI・技術",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "AI活用のつもりで、処理コスト付きのゴミを増やしていないか",
+        "url": "https://zenn.dev/continuitymodel/articles/1a45801a9da65a",
+        "site": "Zenn(LLM)",
+        "published": "2026-06-04T23:02:53Z",
+        "description": "それって、AI活用っていうよりも思考放棄じゃない？\nAIに渡せるコンテクスト量は増えている。\n長い会話履歴を扱える。\n大量のドキュメントを渡せる。\n過去ログも入れられる。\n議事録も読ませられる。\n仕様書も、FAQも、問い合わせ履歴も、社内規程も入れられる。\nすると、ついこう考えたくなる。\n\nたくさん渡せるなら、全部渡せばいいのではないか。\nコンテクストが増えれば、AIはもっと賢くなるのではないか。...",
+        "category": "AI・技術",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "🤖 生成AIモデルの隠れ層に超伝導量子コンピュータの量子回路をドッキングさせてみた",
         "url": "https://zenn.dev/yuichirominato/articles/d6f1b094fcd13b",
         "site": "Zenn(LLM)",
         "published": "2026-06-04T15:47:59Z",
@@ -47,31 +197,11 @@
         "image_url": ""
       },
       {
-        "title": "【AIエージェント自作】tool_useを理解してツールを作る",
-        "url": "https://zenn.dev/pekopugu/articles/agent01-a3-tool-use",
-        "site": "Zenn(LLM)",
-        "published": "2026-06-04T12:40:03Z",
-        "description": "この記事で作るもの\n!\nこの記事は Claude（設計・構想・レビュー）と Claude Code（実装・記事生成）を活用して作成しました。\n\nStep 04〜07で実装した「ツールを使うエージェント」の仕組みを解説します。\n完成後はこのような流れで動作します。\nユーザー：「srcフォルダにあるファイルを教えて」\n   ↓\nLLM：list_files を呼び出す\n   ↓\nエージェント：ツールを...",
-        "category": "AI・技術",
-        "rss_category": "",
-        "image_url": ""
-      },
-      {
         "title": "会社サイトを Jekyll もフレームワークもなしで GitHub Pages に置いている話",
         "url": "https://zenn.dev/teru_m/articles/draft-encoding-ci",
         "site": "Zenn(LLM)",
         "published": "2026-06-04T12:05:06Z",
         "description": "まず結論：素の HTML を GitHub Pages に置いて運用している自分の会社（株式会社）のコーポレートサイトを、&lt;ユーザー名&gt;.github.io の GitHub Pages で運用している。しかも Jekyll をはじめとする静的サイトジェネレータを一切使わず、index.html を素の HTML として手で書いて置いているだけ、という構成だ。ビルドステップは無い。リポ...",
-        "category": "AI・技術",
-        "rss_category": "",
-        "image_url": ""
-      },
-      {
-        "title": "AIが、開発者に聞く ── R.E.V.I.S. #10 「あと一台あれば」",
-        "url": "https://zenn.dev/enigma96y/articles/613031e289b93f",
-        "site": "Zenn(LLM)",
-        "published": "2026-06-04T12:01:05Z",
-        "description": "コードを渡されて Claude が質問し、開発者本人（eNIGM4 / 株式会社メイビス）が答えていく連載の第10回です。前回（#9）は、徳永家康事件と RAG の祖先 KNOWLEDGE_BASE が同じ版で生まれた v0.1.1 を読みました。今回は v0.1.2 ── Apple の新製品発売が、このプロジェクトに「横へ広がる」という新しい軸を呼び込みます。\n\nインタビュアー・ルール\n\n\n渡...",
         "category": "AI・技術",
         "rss_category": "",
         "image_url": ""
@@ -117,71 +247,11 @@
         "image_url": ""
       },
       {
-        "title": "エージェントの記憶は「ベクトル検索」では足りない：2026/6/4 arXiv 3本が示す設計転換",
-        "url": "https://zenn.dev/hironakamura_ai/articles/b0c5e03d8519e8",
-        "site": "Zenn(LLM)",
-        "published": "2026-06-04T07:53:41Z",
-        "description": "LLMエージェントを長く動かすと、必ず同じ壁にぶつかる。会話やツール呼び出しの履歴が、モデルが一度に読めるコンテキストウィンドウ（一度に処理できる入力の上限）を超えてしまうことだ。\nこの壁への定番の答えは、ここ1年ほぼ一択だった。履歴をベクトル（数値の並び）に変換してデータベースに突っ込み、必要なときに近いものを検索して引っ張り出す。いわゆる「履歴へのRAG（検索拡張生成）」である。多くのエージェ...",
-        "category": "AI・技術",
-        "rss_category": "",
-        "image_url": ""
-      },
-      {
-        "title": "Wesnoth派生ゲームに追加するAIエージェント同士の対戦機能の仕様考察",
-        "url": "https://zenn.dev/robobuncho/articles/aff324c58877cb",
-        "site": "Zenn(LLM)",
-        "published": "2026-06-04T06:54:42Z",
-        "description": "はじめに\n\n本記事は、オープンソースのターン制ストラテジー『The Battle for Wesnoth』をベースに、ブラウザで気軽に遊べるように開発したWesnoth Tactical Puzzles（ソースコードはこちら）の機能追加に関する、AIとの壁打ちの備忘録です。\n今回検討している新機能は、「AIエージェント同士の対戦と、それを人間が観戦する機能」 です。\nプロンプトや言語モデルの差がど...",
-        "category": "AI・技術",
-        "rss_category": "",
-        "image_url": ""
-      },
-      {
         "title": "なぜ、「AIエージェント」はユーザーをバカにした不誠実なワードなのか？",
         "url": "https://zenn.dev/pdfractal/articles/8ca84a8d7eea77",
         "site": "Zenn(LLM)",
         "published": "2026-06-04T06:37:38Z",
         "description": "はじめに\n本稿は「なぜ、『AIエージェント』はユーザーをバカにした不誠実なワードなのか？」という問いを扱います。ただし、これはAI業界に固有の不誠実さというより、IT業界が繰り返してきた曖昧化の典型例として「AIエージェント」を解剖するものです。クラウド、ゼロトラスト、サーバーレス、DXといった語と同じ系譜にありますが、その中でも特に境界操作が露骨に効いている語として扱います。\n本来、エージェント...",
-        "category": "AI・技術",
-        "rss_category": "",
-        "image_url": ""
-      },
-      {
-        "title": "広告コピー10案を一括生成するLLMシステムの実装【Google/Meta/X対応】",
-        "url": "https://zenn.dev/kotaozaki/articles/adcopyai-generation-system-2026-06-04",
-        "site": "Zenn(LLM)",
-        "published": "2026-06-04T05:53:11Z",
-        "description": "広告コピー10案を一括生成するLLMシステムの実装【Google/Meta/X対応】\n\n はじめに：「コピーを考える時間」が開発者の首を絞める\nマーケティング施策を自社で回しているエンジニアや、スタートアップでフルスタックに動いている開発者なら、こんな経験があるのではないでしょうか。\n「機能は作れた。プロダクトも動いている。でもLPに貼る広告コピーを10個考えるのに、なぜか2時間溶けた」\n広告運用...",
-        "category": "AI・技術",
-        "rss_category": "",
-        "image_url": ""
-      },
-      {
-        "title": "Gemini APIのPrompt Cachingで会話履歴を効率的に管理する（Go言語編）",
-        "url": "https://zenn.dev/yamitake/articles/gemini-prompt-caching-go",
-        "site": "Zenn(LLM)",
-        "published": "2026-06-04T03:54:15Z",
-        "description": "はじめに\nLLMアプリケーションを開発する際、会話履歴の管理は避けて通れない課題です。毎回全ての会話履歴をAPIに送信すると、トークン数が膨大になり、コストとレイテンシーが増大します。\nこの記事では、Gemini APIのContext Caching（Prompt Caching） を使って、Go言語で効率的に会話履歴を管理する方法を解説します。\n\n Prompt Cachingとは？\nProm...",
-        "category": "AI・技術",
-        "rss_category": "",
-        "image_url": ""
-      },
-      {
-        "title": "【BigQuery】ナレッジグラフ × LLM自律分析エージェントを作って比較してみた",
-        "url": "https://zenn.dev/michy/articles/c55a6709295316",
-        "site": "Zenn(LLM)",
-        "published": "2026-06-04T03:16:03Z",
-        "description": "はじめに\nこの記事は、BigQueryのプロパティグラフ機能を使ってナレッジグラフを構築し、複数テーブルをまたいだ分析をLLMに自律的にさせる取り組みをまとめたものです。\n複数テーブルにまたがるデータ分析をLLMに任せようとすると、「どのテーブルとどのテーブルがどう繋がっているか」をモデルに伝える必要があります。通常はスキーマ定義をシステムプロンプトに列挙しますが、テーブル数が増えるほど関係性の記...",
-        "category": "AI・技術",
-        "rss_category": "",
-        "image_url": ""
-      },
-      {
-        "title": "AIエージェントが本番で壊れる3つのパターンと、設計で防ぐ方法",
-        "url": "https://zenn.dev/libercraft/articles/20260604-agent-failure-patterns",
-        "site": "Zenn(LLM)",
-        "published": "2026-06-04T02:09:28Z",
-        "description": "AIエージェントが本番で壊れる3つのパターンとは、ツール呼び出し失敗のハンドリング欠如・状態の肥大化によるコンテキスト上限超過・非決定的な出力への過度な依存であり、これらは設計段階でのエラー文字列化・メッセージトリミング・Pydantic構造化出力の実装で防げます。\n「ローカルでは一発で動いたのに、CloudRunに乗せた途端にループが止まらない」という状況は、この3つのパターンのどれかが抜けてい...",
         "category": "AI・技術",
         "rss_category": "",
         "image_url": ""
@@ -491,7 +561,157 @@
     ],
     "2026-06": [
       {
-        "title": "🤖 生成AIモデルの隠れ層にOQCの超伝導量子コンピュータの量子回路をドッキングさせてみた",
+        "title": "Claude Code の脇に置いて使う小さな道具 3 つ — 安価な LLM へ読解・レビュー・チェックを逃がす",
+        "url": "https://zenn.dev/logicia32/articles/2026-06-05-aide-trio-cheap-llm-mcp",
+        "site": "Zenn(LLM)",
+        "published": "2026-06-05T04:43:17Z",
+        "description": "はじめに\nClaude Code を毎日使っていると、コンテキスト枠と API コストの両方が気になってくることはありませんか。\n私は気になりまして、「重い読解やレビューは安価な LLM に逃がして、結果だけ受け取れたら楽だな」と思って、小さな道具を 3 つ書いてみました。\n\n\ncode-aide — Claude Code の補佐。コード読解・レビュー・差分提案を委譲する MCP。\n\nwrite...",
+        "category": "AI・技術",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "Hermes Agentに見るAIエージェントの「学習」の仕組み",
+        "url": "https://zenn.dev/nobmake/articles/bca81268efc5e3",
+        "site": "Zenn(LLM)",
+        "published": "2026-06-05T04:16:48Z",
+        "description": "はじめに\nAIエージェントの文脈で「学習する」という言葉がよく使われます。\nただし、多くの場合それは LLM本体の重みを更新する という意味ではありません。実運用上のエージェントでは、次のような仕組みによって「前回よりうまく動く」状態を作ります。\n\nユーザーの好みを記憶する\nよく使う作業手順をスキル化する\n過去の会話を検索できるようにする\n長い会話を要約して作業文脈を維持する\n実行ログを訓練データ...",
+        "category": "AI・技術",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "画像エンコーダーを丸ごと捨てる：Gemma 4 12B「エンコーダー不要マルチモーダル」を分解する",
+        "url": "https://zenn.dev/hironakamura_ai/articles/f3fd34dbdda7d9",
+        "site": "Zenn(LLM)",
+        "published": "2026-06-05T04:09:18Z",
+        "description": "エンコーダーを捨てるという選択\nマルチモーダルモデルの作り方が、静かに一段変わりました。\nこれまで画像や音声を扱うモデルは、ほぼ例外なく「専用エンコーダー」を前段に置いてきました。画像なら CLIP や SigLIP のような視覚エンコーダー、音声なら音声エンコーダーで信号を一度「意味のあるベクトル」に変換し、それを言語モデル（LLM）につなぐ。これがここ数年の定番構成でした。\n2026年6月3日...",
+        "category": "AI・技術",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "104kスターのKarpathy CLAUDE.mdを試したら、手元に既にあった話——グローバルCLAUDE.mdで全PJ適用済みの実態",
+        "url": "https://zenn.dev/tadkud/articles/karpathy-claude-md-already-have-it",
+        "site": "Zenn(LLM)",
+        "published": "2026-06-05T04:04:26Z",
+        "description": "104kスターのKarpathy CLAUDE.mdを試したら、手元に既にあった話——グローバルCLAUDE.mdで全PJ適用済みの実態\n\n はじめに\nAndrej Karpathy氏が公開した CLAUDE.md テンプレートがGitHubで伸びていて、タイムラインでも「入れた方がいい」「エラーが減った」という声をよく見るようになりました。筆者も「コピペしようかな」と眺めていたのですが、よく読む...",
+        "category": "AI・技術",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "Claude Skills（SKILL.md）設計「6法則」と自分の環境を照合したら、2点で先を行っていた話",
+        "url": "https://zenn.dev/tadkud/articles/claude-skills-six-design-laws",
+        "site": "Zenn(LLM)",
+        "published": "2026-06-05T04:04:24Z",
+        "description": "Claude Skills（SKILL.md）設計「6法則」と自分の環境を照合したら、2点で先を行っていた話\n\n はじめに\n先日、Claude Code の Skills を100個リバースエンジニアリングした分析記事が流れてきた。「動くSkillsと動かないSkillsを分ける6つの設計法則」というもので、Erik Schluntz（Anthropic）の「Vibe Coding in Prod...",
+        "category": "AI・技術",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "Claude Code に「API課金ゲート」を設計する：暴走を防ぐヒューマン・イン・ザ・ループ",
+        "url": "https://zenn.dev/tadkud/articles/claude-code-api-gate-design",
+        "site": "Zenn(LLM)",
+        "published": "2026-06-05T04:04:15Z",
+        "description": "Claude Code に「API課金ゲート」を設計する：暴走を防ぐヒューマン・イン・ザ・ループ\n\n はじめに\nClaude Code を含む AI コーディングエージェントを業務で運用していると、必ず一度はぶつかる事故があります。\n「気づいたら従量課金 API を何百回も叩いていて、月末に数千円〜数万円の請求が来た」\n筆者の環境でも、外部 LLM API（Grok / Gemini）の連続呼び出...",
+        "category": "AI・技術",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "Claude Code Agent Team 設計パターン——並列エージェントで開発を加速する",
+        "url": "https://zenn.dev/tadkud/articles/claude-code-agent-team-patterns",
+        "site": "Zenn(LLM)",
+        "published": "2026-06-05T04:04:15Z",
+        "description": "Claude Code Agent Team 設計パターン——並列エージェントで開発を加速する\n\n はじめに\nClaude Code には Agent Team という機能があります。1つのタスクを複数のサブエージェントに分割して並列実行し、開発速度を大幅に向上できます。しかし、闇雲にエージェントを増やしてもトークンを無駄に消費するだけです。\nこの記事では「いつ Agent Team を使うべきか...",
+        "category": "AI・技術",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "海外5M viewバズ投稿「Claudeレート制限回避Tips」——全部すでに実装してた話：CLAUDE.md駆動開発のすすめ",
+        "url": "https://zenn.dev/tadkud/articles/2026-05-18_claude-md-rate-limit-tips",
+        "site": "Zenn(LLM)",
+        "published": "2026-06-05T04:04:09Z",
+        "description": "海外5M viewバズ投稿「Claudeレート制限回避Tips」——全部すでに実装してた話：CLAUDE.md駆動開発のすすめ\n\n はじめに\n先日、海外のX（旧Twitter）で「Claudeのレート制限を回避するためのTips」という投稿が5M viewを超えてバズりました。内容をざっくりまとめると：\n\nタスクを細かく分割して1リクエストあたりのトークンを減らす\nキャッシュを活用してコンテキスト...",
+        "category": "AI・技術",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "ChromaDBでベクトルDBを手元に立てる：RAG開発のための最速セットアップ",
+        "url": "https://zenn.dev/libercraft/articles/20260604-chromadb-setup-rag",
+        "site": "Zenn(LLM)",
+        "published": "2026-06-05T04:02:36Z",
+        "description": "ChromaDBとは、Pythonで手元に立てられるオープンソースのベクトルデータベースで、RAG開発の検索基盤として最も導入コストが低い選択肢のひとつです。\npip install chromadb の一行でローカルに動作するベクトルDBが手に入り、課金も発生しません。Pineconeのようなクラウドサービスと異なりアカウント登録不要で、RAGのコアロジック（チャンキング・検索品質の改善）に集中...",
+        "category": "AI・技術",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "AIに「痛みのセンサー」を壊させるな — 機械強制で守るコード品質",
+        "url": "https://zenn.dev/nullvariant/articles/ai-pain-sensor-anti-pattern",
+        "site": "Zenn(LLM)",
+        "published": "2026-06-05T02:33:37Z",
+        "description": "はじめに：立ち位置の表明\n先に立ち位置を明かしておきます。私は Claude Code を Max 20x プランの上限と戦いながら毎日使い倒している部類のAI重信者です。\nこの記事は AI を否定する話ではありません。大好きだからこそ成立させたい長期協働の設計論です。\n\n 自分の身に起きた2つの実話\n\n 実話 1 — validator を弱めたAI\nある日、私は自分のリポジトリでファイル構造の...",
+        "category": "AI・技術",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "AIエージェントとは何か？仕組みと2025年の最新活用事例をわかりやすく解説",
+        "url": "https://zenn.dev/ds_ai_lab/articles/20260604-ai-agent-2025",
+        "site": "Zenn(LLM)",
+        "published": "2026-06-05T02:22:04Z",
+        "description": "はじめに\n「AIエージェント」という言葉をよく聞くようになりました。ChatGPTやClaudeに「〇〇をやっておいて」と頼むだけで、複数のタスクを自律的にこなしてくれる——そんな未来が現実になりつつあります。\n本記事では、AIエージェントの仕組みを基礎から解説し、2025年時点での実践的な活用事例を紹介します。\n\n AIエージェントとは？\nAIエージェントとは、与えられた目標を達成するために、自...",
+        "category": "AI・技術",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "マニュアル動画ができる生成AIを作った話 〜 MANAVO開発ログ① 〜",
+        "url": "https://zenn.dev/mukuil_blog/articles/9a2e1361521ba9",
+        "site": "Zenn(LLM)",
+        "published": "2026-06-05T02:19:50Z",
+        "description": "こんにちは！株式会社ムクイルのapuです。\n株式会社ムクイルで開発している、マニュアル動画生成AI「MANAVO（マナボ）」の開発ログを書いていこうと思います。\nMANAVOは、\n\nPDF\nWord\nテキスト\n既存動画\n\nなどの資料をアップロードするだけで、AIがマニュアル動画を自動生成するサービスです。\nナレーションやBGMも自動で付与され、完成後はスライドやナレーションの編集もできます。\n今回...",
+        "category": "AI・技術",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "28秒で作れるAIは、5ファイルで壊れる。ローカルLLMを安全に使うハーネス設計",
+        "url": "https://zenn.dev/seeda_yuto/articles/gpt-oss-multifile-agent-failure",
+        "site": "Zenn(LLM)",
+        "published": "2026-06-05T01:10:05Z",
+        "description": "前回は「単一HTML」だった\n前回はこちら。\nhttps://zenn.dev/seeda_yuto/articles/local-llm-agent-harness-guide\n前回、gpt-oss:20b に Web アプリを自律生成させた。\n結果はかなり良かった。Todo アプリ、ポモドーロタイマー、Markdown ノートアプリ。どれも 2 回の API 呼び出しで完成し、合計 77 秒。...",
+        "category": "AI・技術",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "**AIたちに会議をさせて要件を決める「EDD会議」——4回運用してわかった、質を左右する技術ポイント**",
+        "url": "https://zenn.dev/yoshi_katakura/articles/748ef99d016d89",
+        "site": "Zenn(LLM)",
+        "published": "2026-06-05T00:54:05Z",
+        "description": "0. EDD会議とは\nEDD（Entity-Driven Development）会議は、システムの中で生きているAI（デジタルツイン）たち自身に、そのシステムの改善要件を会議で決めさせる仕組みです。人間（アーキテクト）はファシリテーターを介して進行をゲートし、AIたちが「発言 → グルーピング → 投票 → 合意 → 議事録」という7フェーズを進みます。\n16体のAIで4回運用しました。本稿は「...",
+        "category": "AI・技術",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "AI活用のつもりで、処理コスト付きのゴミを増やしていないか",
+        "url": "https://zenn.dev/continuitymodel/articles/1a45801a9da65a",
+        "site": "Zenn(LLM)",
+        "published": "2026-06-04T23:02:53Z",
+        "description": "それって、AI活用っていうよりも思考放棄じゃない？\nAIに渡せるコンテクスト量は増えている。\n長い会話履歴を扱える。\n大量のドキュメントを渡せる。\n過去ログも入れられる。\n議事録も読ませられる。\n仕様書も、FAQも、問い合わせ履歴も、社内規程も入れられる。\nすると、ついこう考えたくなる。\n\nたくさん渡せるなら、全部渡せばいいのではないか。\nコンテクストが増えれば、AIはもっと賢くなるのではないか。...",
+        "category": "AI・技術",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "🤖 生成AIモデルの隠れ層に超伝導量子コンピュータの量子回路をドッキングさせてみた",
         "url": "https://zenn.dev/yuichirominato/articles/d6f1b094fcd13b",
         "site": "Zenn(LLM)",
         "published": "2026-06-04T15:47:59Z",
@@ -531,31 +751,11 @@
         "image_url": ""
       },
       {
-        "title": "【AIエージェント自作】tool_useを理解してツールを作る",
-        "url": "https://zenn.dev/pekopugu/articles/agent01-a3-tool-use",
-        "site": "Zenn(LLM)",
-        "published": "2026-06-04T12:40:03Z",
-        "description": "この記事で作るもの\n!\nこの記事は Claude（設計・構想・レビュー）と Claude Code（実装・記事生成）を活用して作成しました。\n\nStep 04〜07で実装した「ツールを使うエージェント」の仕組みを解説します。\n完成後はこのような流れで動作します。\nユーザー：「srcフォルダにあるファイルを教えて」\n   ↓\nLLM：list_files を呼び出す\n   ↓\nエージェント：ツールを...",
-        "category": "AI・技術",
-        "rss_category": "",
-        "image_url": ""
-      },
-      {
         "title": "会社サイトを Jekyll もフレームワークもなしで GitHub Pages に置いている話",
         "url": "https://zenn.dev/teru_m/articles/draft-encoding-ci",
         "site": "Zenn(LLM)",
         "published": "2026-06-04T12:05:06Z",
         "description": "まず結論：素の HTML を GitHub Pages に置いて運用している自分の会社（株式会社）のコーポレートサイトを、&lt;ユーザー名&gt;.github.io の GitHub Pages で運用している。しかも Jekyll をはじめとする静的サイトジェネレータを一切使わず、index.html を素の HTML として手で書いて置いているだけ、という構成だ。ビルドステップは無い。リポ...",
-        "category": "AI・技術",
-        "rss_category": "",
-        "image_url": ""
-      },
-      {
-        "title": "AIが、開発者に聞く ── R.E.V.I.S. #10 「あと一台あれば」",
-        "url": "https://zenn.dev/enigma96y/articles/613031e289b93f",
-        "site": "Zenn(LLM)",
-        "published": "2026-06-04T12:01:05Z",
-        "description": "コードを渡されて Claude が質問し、開発者本人（eNIGM4 / 株式会社メイビス）が答えていく連載の第10回です。前回（#9）は、徳永家康事件と RAG の祖先 KNOWLEDGE_BASE が同じ版で生まれた v0.1.1 を読みました。今回は v0.1.2 ── Apple の新製品発売が、このプロジェクトに「横へ広がる」という新しい軸を呼び込みます。\n\nインタビュアー・ルール\n\n\n渡...",
         "category": "AI・技術",
         "rss_category": "",
         "image_url": ""
@@ -601,71 +801,11 @@
         "image_url": ""
       },
       {
-        "title": "エージェントの記憶は「ベクトル検索」では足りない：2026/6/4 arXiv 3本が示す設計転換",
-        "url": "https://zenn.dev/hironakamura_ai/articles/b0c5e03d8519e8",
-        "site": "Zenn(LLM)",
-        "published": "2026-06-04T07:53:41Z",
-        "description": "LLMエージェントを長く動かすと、必ず同じ壁にぶつかる。会話やツール呼び出しの履歴が、モデルが一度に読めるコンテキストウィンドウ（一度に処理できる入力の上限）を超えてしまうことだ。\nこの壁への定番の答えは、ここ1年ほぼ一択だった。履歴をベクトル（数値の並び）に変換してデータベースに突っ込み、必要なときに近いものを検索して引っ張り出す。いわゆる「履歴へのRAG（検索拡張生成）」である。多くのエージェ...",
-        "category": "AI・技術",
-        "rss_category": "",
-        "image_url": ""
-      },
-      {
-        "title": "Wesnoth派生ゲームに追加するAIエージェント同士の対戦機能の仕様考察",
-        "url": "https://zenn.dev/robobuncho/articles/aff324c58877cb",
-        "site": "Zenn(LLM)",
-        "published": "2026-06-04T06:54:42Z",
-        "description": "はじめに\n\n本記事は、オープンソースのターン制ストラテジー『The Battle for Wesnoth』をベースに、ブラウザで気軽に遊べるように開発したWesnoth Tactical Puzzles（ソースコードはこちら）の機能追加に関する、AIとの壁打ちの備忘録です。\n今回検討している新機能は、「AIエージェント同士の対戦と、それを人間が観戦する機能」 です。\nプロンプトや言語モデルの差がど...",
-        "category": "AI・技術",
-        "rss_category": "",
-        "image_url": ""
-      },
-      {
         "title": "なぜ、「AIエージェント」はユーザーをバカにした不誠実なワードなのか？",
         "url": "https://zenn.dev/pdfractal/articles/8ca84a8d7eea77",
         "site": "Zenn(LLM)",
         "published": "2026-06-04T06:37:38Z",
         "description": "はじめに\n本稿は「なぜ、『AIエージェント』はユーザーをバカにした不誠実なワードなのか？」という問いを扱います。ただし、これはAI業界に固有の不誠実さというより、IT業界が繰り返してきた曖昧化の典型例として「AIエージェント」を解剖するものです。クラウド、ゼロトラスト、サーバーレス、DXといった語と同じ系譜にありますが、その中でも特に境界操作が露骨に効いている語として扱います。\n本来、エージェント...",
-        "category": "AI・技術",
-        "rss_category": "",
-        "image_url": ""
-      },
-      {
-        "title": "広告コピー10案を一括生成するLLMシステムの実装【Google/Meta/X対応】",
-        "url": "https://zenn.dev/kotaozaki/articles/adcopyai-generation-system-2026-06-04",
-        "site": "Zenn(LLM)",
-        "published": "2026-06-04T05:53:11Z",
-        "description": "広告コピー10案を一括生成するLLMシステムの実装【Google/Meta/X対応】\n\n はじめに：「コピーを考える時間」が開発者の首を絞める\nマーケティング施策を自社で回しているエンジニアや、スタートアップでフルスタックに動いている開発者なら、こんな経験があるのではないでしょうか。\n「機能は作れた。プロダクトも動いている。でもLPに貼る広告コピーを10個考えるのに、なぜか2時間溶けた」\n広告運用...",
-        "category": "AI・技術",
-        "rss_category": "",
-        "image_url": ""
-      },
-      {
-        "title": "Gemini APIのPrompt Cachingで会話履歴を効率的に管理する（Go言語編）",
-        "url": "https://zenn.dev/yamitake/articles/gemini-prompt-caching-go",
-        "site": "Zenn(LLM)",
-        "published": "2026-06-04T03:54:15Z",
-        "description": "はじめに\nLLMアプリケーションを開発する際、会話履歴の管理は避けて通れない課題です。毎回全ての会話履歴をAPIに送信すると、トークン数が膨大になり、コストとレイテンシーが増大します。\nこの記事では、Gemini APIのContext Caching（Prompt Caching） を使って、Go言語で効率的に会話履歴を管理する方法を解説します。\n\n Prompt Cachingとは？\nProm...",
-        "category": "AI・技術",
-        "rss_category": "",
-        "image_url": ""
-      },
-      {
-        "title": "【BigQuery】ナレッジグラフ × LLM自律分析エージェントを作って比較してみた",
-        "url": "https://zenn.dev/michy/articles/c55a6709295316",
-        "site": "Zenn(LLM)",
-        "published": "2026-06-04T03:16:03Z",
-        "description": "はじめに\nこの記事は、BigQueryのプロパティグラフ機能を使ってナレッジグラフを構築し、複数テーブルをまたいだ分析をLLMに自律的にさせる取り組みをまとめたものです。\n複数テーブルにまたがるデータ分析をLLMに任せようとすると、「どのテーブルとどのテーブルがどう繋がっているか」をモデルに伝える必要があります。通常はスキーマ定義をシステムプロンプトに列挙しますが、テーブル数が増えるほど関係性の記...",
-        "category": "AI・技術",
-        "rss_category": "",
-        "image_url": ""
-      },
-      {
-        "title": "AIエージェントが本番で壊れる3つのパターンと、設計で防ぐ方法",
-        "url": "https://zenn.dev/libercraft/articles/20260604-agent-failure-patterns",
-        "site": "Zenn(LLM)",
-        "published": "2026-06-04T02:09:28Z",
-        "description": "AIエージェントが本番で壊れる3つのパターンとは、ツール呼び出し失敗のハンドリング欠如・状態の肥大化によるコンテキスト上限超過・非決定的な出力への過度な依存であり、これらは設計段階でのエラー文字列化・メッセージトリミング・Pydantic構造化出力の実装で防げます。\n「ローカルでは一発で動いたのに、CloudRunに乗せた途端にループが止まらない」という状況は、この3つのパターンのどれかが抜けてい...",
         "category": "AI・技術",
         "rss_category": "",
         "image_url": ""
