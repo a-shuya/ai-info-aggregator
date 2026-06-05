@@ -1,9 +1,129 @@
 {
   "site": "Zenn(LLM)",
-  "last_updated": "2026-06-05T16:43:57.109499",
-  "total_articles": 3786,
+  "last_updated": "2026-06-05T18:32:37.647006",
+  "total_articles": 3802,
   "articles_by_date": {
     "昨日": [
+      {
+        "title": "OllamaのメンタルモデルでLM Studio導入 on AlmaLinux",
+        "url": "https://zenn.dev/yumayx/articles/dfa64039305ffa",
+        "site": "Zenn(LLM)",
+        "published": "2026-06-05T11:31:34Z",
+        "description": "Ollamaのメンタルモデルで、LM Studioを導入する。\n上からやれば、LM Studioが動く。Gemma 4 12Bが動くとは、限らない。\n\n モチベーション\nGemma 4 12BをLinuxで動かしたい。\nOllamaで、12Bは、検証時点でMLX(Apple Silicon専用に設計されたオープンソースMLフレームワーク)モデルしかないため、LM Studioを導入する。\n\n 環境...",
+        "category": "AI・技術",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "正解データがないLLMアプリをどう評価するか:3軸と自動評価パイプライン",
+        "url": "https://zenn.dev/kenimo49/articles/llm-app-evaluation-3-axis-framework",
+        "site": "Zenn(LLM)",
+        "published": "2026-06-05T11:18:06Z",
+        "description": "LLMアプリの品質は 忠実性50%・関連性25%・正確性25% の3軸で測ります。そして本番では正解データが手に入らないので、自己一貫性などの代替指標に置き換えます。これがこの記事の結論です。\nRAGやAgentを実装した後、多くの人が同じ壁にぶつかります。「で、これって品質どう測るの?」という壁です。プロンプトを直すと体感では良くなった気がする。でも本当に良くなったのかは分かりません。私もここで...",
+        "category": "AI・技術",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "LLMエージェント間の非意味論的通信：難解言語パラダイムを用いたプロンプト検閲の回避実験",
+        "url": "https://zenn.dev/emilia_lab/articles/babel-simulator-esoteric-injection",
+        "site": "Zenn(LLM)",
+        "published": "2026-06-05T10:35:53Z",
+        "description": "はじめに\n大規模言語モデル（LLM）を組み込んだ自律型エージェントの開発が進む中、入出力文字列をスキャンして特定の単語（secret等）をブロックする「意味論的フィルタリング」がよく使われます。\nしかし、もしAIエージェント同士が、人間の言語や一般的なプログラミング言語の構文を一切使わずに会話を始めたらどうなるでしょうか？\n本稿では、少し変わった実験として、Lisp、Forth、Befungeなど...",
+        "category": "AI・技術",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "Agentのおつかいの現在地",
+        "url": "https://zenn.dev/moimoi/articles/agentic-commerce-current-state",
+        "site": "Zenn(LLM)",
+        "published": "2026-06-05T10:10:55Z",
+        "description": "0. agentic commerce について（Agentのおつかい）\nagentic commerce は一言で言うと「Agentにおつかいをやらせる」こと。おつかいには最初から委任（mandate：人間が委任する）構造が入っている——予算上限・買うもの・決済手段なんかがその内容になる。\nそして「Agent のおつかい」は今どんな状態なのかを調べてみた。\n仕事で加盟店の立場でカード会社や PS...",
+        "category": "AI・技術",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "東京リージョンのPaaSを作ってみました",
+        "url": "https://zenn.dev/kamuidash/articles/444c138283e0c9",
+        "site": "Zenn(LLM)",
+        "published": "2026-06-05T10:10:05Z",
+        "description": "デプロイ&amp;ホストという手間を解消したい\n長年ソフトウェアエンジニアをやってきて、本業や副業での受託開発、個人開発含め様々なアプリやシステム開発をしてきました。その時にいつも困る、どこでホストするか問題。\nAWSを使うのは少し手間、HerokuやRenderのようなPaaSでサクッとホストしたいのが本音。でも値上がり、リージョンの問題、コールドスタート問題など微妙にしっくりこない感じ。\nそこ...",
+        "category": "AI・技術",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "システムプロンプト3万トークンのLLMに作業をさせてはいけない",
+        "url": "https://zenn.dev/echosphere/articles/dont-make-heavy-prompt-llm-work",
+        "site": "Zenn(LLM)",
+        "published": "2026-06-05T10:03:39Z",
+        "description": "長い会話の途中で書かせたコードは、雑になる。\nClaude Codeでもcursorでも、50往復したセッションでの出力と、/clearした直後の出力を比べれば誰でも分かる。何が起きているかは直感的には「モデルが疲れた」で片付けられがちだが、実際にはそうじゃない。\nEMNLP 2025の論文[1]が示した結論はシンプルで、少し怖い。 コンテキストが長いと、それだけで性能が落ちる。検索精度を完璧にし...",
+        "category": "AI・技術",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "LLMの挙動を「認知・出力・対話」に分割して制御するプロンプト設計ログ",
+        "url": "https://zenn.dev/hinaena/articles/6819bcb27c1bcd",
+        "site": "Zenn(LLM)",
+        "published": "2026-06-05T10:00:07Z",
+        "description": "はじめに\n本記事は、LLMの出力挙動を安定させるために設計・調整してきたプロンプトの構造と、その思想的背景を整理したものである。\n目的は単なる性能向上ではなく、\n\n会話としての自然さの維持\n内部思考の構造化\n不確実性と誤推論の抑制\n長期対話における文脈安定化\n\nを同時に成立させる制御設計を作ることである。\n\n\n プロンプト本体（実運用版）\n以下が実際に使用しているプロンプト構造である\n[PURPO...",
+        "category": "AI・技術",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "「人間はコードを書かない・レビューもしない」を5ヶ月やった話──OpenAI Frontierの極限harness",
+        "url": "https://zenn.dev/aiwatch_jp/articles/openai-frontier-extreme-harness",
+        "site": "Zenn(LLM)",
+        "published": "2026-06-05T09:47:28Z",
+        "description": "!\n最先端AIを技術の中身まで日本語で読み解く「AIウォッチ」の深掘り記事です。題材は Latent Space の Ryan Lopopolo（OpenAI Frontier Product Exploration）インタビュー。一次情報を当たって書いています。これは harness シリーズの締めくくり。\n\nここまでの記事（L0–L7 のラダー、OSS の選び方、Cloudflare の多エー...",
+        "category": "AI・技術",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "Snowflake App Runtime 入門 - プロンプトひとつでデータの隣に本格Webアプリをデプロイする！",
+        "url": "https://zenn.dev/snowflakejp/articles/9e5b8fa393ccd8",
+        "site": "Zenn(LLM)",
+        "published": "2026-06-05T09:31:05Z",
+        "description": "はじめに\nSnowflake Summit 2026 では、数多くの新機能が発表されました。その中で私が特に注目している機能のひとつが Snowflake App Runtime です。\nこれまで、こんなもどかしさを感じたことはないでしょうか？\n\nデータは Snowflake の中にきれいに整っているのに、それを見せる Web アプリは別の場所 で動いている\nアプリを公開するために Docker ...",
+        "category": "AI・技術",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "Pi Agent SDKを触ったのでメモ的な感じで",
+        "url": "https://zenn.dev/nozomi_hiragi/articles/c4d874b96e2b35",
+        "site": "Zenn(LLM)",
+        "published": "2026-06-05T09:22:55Z",
+        "description": "Pi SDK を触ってみたメモ\nどうも。\n前から「AIエージェント作りたいなー」と思っていて、最近作り始めました。\nその際に一旦 Pi をコアに作ろうと思い、SDK を触ってみていたので、どんな感じだったかのメモを書いておきます。\n公式ドキュメントがあるので、基本的にはそこを見れば解決する話ではあります。\nhttps://pi.dev/docs/latest/sdk\n\n インストール\nまずは @e...",
+        "category": "AI・技術",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "AIが審判となることの社会への影響について",
+        "url": "https://zenn.dev/pdfractal/articles/a3fad1ed555e7f",
+        "site": "Zenn(LLM)",
+        "published": "2026-06-05T09:13:25Z",
+        "description": "はじめに\n本稿でいう 審判 とは、最終的な真理の所有者ではなく、二者の主張を比較し、論点のずれや根拠の薄さや定義の混線を可視化する第三者機能を指します。近年の研究では、LLMによる裁定は人手評価の代替として有望な面を持ちつつ、なおバイアスと限界を抱えることが確認されています。\nこの問題が重要なのは、社会の多くの現場に 高信頼の知者 が常駐していないからです。世界司法プロジェクトは、世界で約50億人...",
+        "category": "AI・技術",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "Amazon BedrockでOpenAI GPT5.5とGPT5.4がサポートされたので試してみた",
+        "url": "https://zenn.dev/fusic/articles/1e0172548196d0",
+        "site": "Zenn(LLM)",
+        "published": "2026-06-05T08:45:39Z",
+        "description": "はじめに\nFusicのレオナです。\n2026年6月に、OpenAIのGPT-5.5、GPT-5.4がAmazon Bedrockで一般提供されました。\nこれまでBedrockで利用できるOpenAI系のモデルは、gpt-ossのオープンウェイトモデルが中心でした。今回、OpenAIのフロンティアモデルをBedrock経由で直接呼び出せるようになったので、AWS上で生成AIアプリケーションを構築して...",
+        "category": "AI・技術",
+        "rss_category": "",
+        "image_url": ""
+      },
       {
         "title": "Claude Code の脇に置いて使う小さな道具 3 つ — 安価な LLM へ読解・レビュー・チェックを逃がす",
         "url": "https://zenn.dev/logicia32/articles/2026-06-05-aide-trio-cheap-llm-mcp",
@@ -85,51 +205,11 @@
         "image_url": ""
       },
       {
-        "title": "ChromaDBでベクトルDBを手元に立てる：RAG開発のための最速セットアップ",
-        "url": "https://zenn.dev/libercraft/articles/20260604-chromadb-setup-rag",
-        "site": "Zenn(LLM)",
-        "published": "2026-06-05T04:02:36Z",
-        "description": "ChromaDBとは、Pythonで手元に立てられるオープンソースのベクトルデータベースで、RAG開発の検索基盤として最も導入コストが低い選択肢のひとつです。\npip install chromadb の一行でローカルに動作するベクトルDBが手に入り、課金も発生しません。Pineconeのようなクラウドサービスと異なりアカウント登録不要で、RAGのコアロジック（チャンキング・検索品質の改善）に集中...",
-        "category": "AI・技術",
-        "rss_category": "",
-        "image_url": ""
-      },
-      {
         "title": "AIに「痛みのセンサー」を壊させるな — 機械強制で守るコード品質",
         "url": "https://zenn.dev/nullvariant/articles/ai-pain-sensor-anti-pattern",
         "site": "Zenn(LLM)",
         "published": "2026-06-05T02:33:37Z",
         "description": "はじめに：立ち位置の表明\n先に立ち位置を明かしておきます。私は Claude Code を Max 20x プランの上限と戦いながら毎日使い倒している部類のAI重信者です。\nこの記事は AI を否定する話ではありません。大好きだからこそ成立させたい長期協働の設計論です。\n\n 自分の身に起きた2つの実話\n\n 実話 1 — validator を弱めたAI\nある日、私は自分のリポジトリでファイル構造の...",
-        "category": "AI・技術",
-        "rss_category": "",
-        "image_url": ""
-      },
-      {
-        "title": "AIエージェントとは何か？仕組みと2025年の最新活用事例をわかりやすく解説",
-        "url": "https://zenn.dev/ds_ai_lab/articles/20260604-ai-agent-2025",
-        "site": "Zenn(LLM)",
-        "published": "2026-06-05T02:22:04Z",
-        "description": "はじめに\n「AIエージェント」という言葉をよく聞くようになりました。ChatGPTやClaudeに「〇〇をやっておいて」と頼むだけで、複数のタスクを自律的にこなしてくれる——そんな未来が現実になりつつあります。\n本記事では、AIエージェントの仕組みを基礎から解説し、2025年時点での実践的な活用事例を紹介します。\n\n AIエージェントとは？\nAIエージェントとは、与えられた目標を達成するために、自...",
-        "category": "AI・技術",
-        "rss_category": "",
-        "image_url": ""
-      },
-      {
-        "title": "マニュアル動画ができる生成AIを作った話 〜 MANAVO開発ログ① 〜",
-        "url": "https://zenn.dev/mukuil_blog/articles/9a2e1361521ba9",
-        "site": "Zenn(LLM)",
-        "published": "2026-06-05T02:19:50Z",
-        "description": "こんにちは！株式会社ムクイルのapuです。\n株式会社ムクイルで開発している、マニュアル動画生成AI「MANAVO（マナボ）」の開発ログを書いていこうと思います。\nMANAVOは、\n\nPDF\nWord\nテキスト\n既存動画\n\nなどの資料をアップロードするだけで、AIがマニュアル動画を自動生成するサービスです。\nナレーションやBGMも自動で付与され、完成後はスライドやナレーションの編集もできます。\n今回...",
-        "category": "AI・技術",
-        "rss_category": "",
-        "image_url": ""
-      },
-      {
-        "title": "28秒で作れるAIは、5ファイルで壊れる。ローカルLLMを安全に使うハーネス設計",
-        "url": "https://zenn.dev/seeda_yuto/articles/gpt-oss-multifile-agent-failure",
-        "site": "Zenn(LLM)",
-        "published": "2026-06-05T01:10:05Z",
-        "description": "前回は「単一HTML」だった\n前回はこちら。\nhttps://zenn.dev/seeda_yuto/articles/local-llm-agent-harness-guide\n前回、gpt-oss:20b に Web アプリを自律生成させた。\n結果はかなり良かった。Todo アプリ、ポモドーロタイマー、Markdown ノートアプリ。どれも 2 回の API 呼び出しで完成し、合計 77 秒。...",
         "category": "AI・技術",
         "rss_category": "",
         "image_url": ""
@@ -389,6 +469,126 @@
     ],
     "2026-06": [
       {
+        "title": "OllamaのメンタルモデルでLM Studio導入 on AlmaLinux",
+        "url": "https://zenn.dev/yumayx/articles/dfa64039305ffa",
+        "site": "Zenn(LLM)",
+        "published": "2026-06-05T11:31:34Z",
+        "description": "Ollamaのメンタルモデルで、LM Studioを導入する。\n上からやれば、LM Studioが動く。Gemma 4 12Bが動くとは、限らない。\n\n モチベーション\nGemma 4 12BをLinuxで動かしたい。\nOllamaで、12Bは、検証時点でMLX(Apple Silicon専用に設計されたオープンソースMLフレームワーク)モデルしかないため、LM Studioを導入する。\n\n 環境...",
+        "category": "AI・技術",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "正解データがないLLMアプリをどう評価するか:3軸と自動評価パイプライン",
+        "url": "https://zenn.dev/kenimo49/articles/llm-app-evaluation-3-axis-framework",
+        "site": "Zenn(LLM)",
+        "published": "2026-06-05T11:18:06Z",
+        "description": "LLMアプリの品質は 忠実性50%・関連性25%・正確性25% の3軸で測ります。そして本番では正解データが手に入らないので、自己一貫性などの代替指標に置き換えます。これがこの記事の結論です。\nRAGやAgentを実装した後、多くの人が同じ壁にぶつかります。「で、これって品質どう測るの?」という壁です。プロンプトを直すと体感では良くなった気がする。でも本当に良くなったのかは分かりません。私もここで...",
+        "category": "AI・技術",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "LLMエージェント間の非意味論的通信：難解言語パラダイムを用いたプロンプト検閲の回避実験",
+        "url": "https://zenn.dev/emilia_lab/articles/babel-simulator-esoteric-injection",
+        "site": "Zenn(LLM)",
+        "published": "2026-06-05T10:35:53Z",
+        "description": "はじめに\n大規模言語モデル（LLM）を組み込んだ自律型エージェントの開発が進む中、入出力文字列をスキャンして特定の単語（secret等）をブロックする「意味論的フィルタリング」がよく使われます。\nしかし、もしAIエージェント同士が、人間の言語や一般的なプログラミング言語の構文を一切使わずに会話を始めたらどうなるでしょうか？\n本稿では、少し変わった実験として、Lisp、Forth、Befungeなど...",
+        "category": "AI・技術",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "Agentのおつかいの現在地",
+        "url": "https://zenn.dev/moimoi/articles/agentic-commerce-current-state",
+        "site": "Zenn(LLM)",
+        "published": "2026-06-05T10:10:55Z",
+        "description": "0. agentic commerce について（Agentのおつかい）\nagentic commerce は一言で言うと「Agentにおつかいをやらせる」こと。おつかいには最初から委任（mandate：人間が委任する）構造が入っている——予算上限・買うもの・決済手段なんかがその内容になる。\nそして「Agent のおつかい」は今どんな状態なのかを調べてみた。\n仕事で加盟店の立場でカード会社や PS...",
+        "category": "AI・技術",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "東京リージョンのPaaSを作ってみました",
+        "url": "https://zenn.dev/kamuidash/articles/444c138283e0c9",
+        "site": "Zenn(LLM)",
+        "published": "2026-06-05T10:10:05Z",
+        "description": "デプロイ&amp;ホストという手間を解消したい\n長年ソフトウェアエンジニアをやってきて、本業や副業での受託開発、個人開発含め様々なアプリやシステム開発をしてきました。その時にいつも困る、どこでホストするか問題。\nAWSを使うのは少し手間、HerokuやRenderのようなPaaSでサクッとホストしたいのが本音。でも値上がり、リージョンの問題、コールドスタート問題など微妙にしっくりこない感じ。\nそこ...",
+        "category": "AI・技術",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "システムプロンプト3万トークンのLLMに作業をさせてはいけない",
+        "url": "https://zenn.dev/echosphere/articles/dont-make-heavy-prompt-llm-work",
+        "site": "Zenn(LLM)",
+        "published": "2026-06-05T10:03:39Z",
+        "description": "長い会話の途中で書かせたコードは、雑になる。\nClaude Codeでもcursorでも、50往復したセッションでの出力と、/clearした直後の出力を比べれば誰でも分かる。何が起きているかは直感的には「モデルが疲れた」で片付けられがちだが、実際にはそうじゃない。\nEMNLP 2025の論文[1]が示した結論はシンプルで、少し怖い。 コンテキストが長いと、それだけで性能が落ちる。検索精度を完璧にし...",
+        "category": "AI・技術",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "LLMの挙動を「認知・出力・対話」に分割して制御するプロンプト設計ログ",
+        "url": "https://zenn.dev/hinaena/articles/6819bcb27c1bcd",
+        "site": "Zenn(LLM)",
+        "published": "2026-06-05T10:00:07Z",
+        "description": "はじめに\n本記事は、LLMの出力挙動を安定させるために設計・調整してきたプロンプトの構造と、その思想的背景を整理したものである。\n目的は単なる性能向上ではなく、\n\n会話としての自然さの維持\n内部思考の構造化\n不確実性と誤推論の抑制\n長期対話における文脈安定化\n\nを同時に成立させる制御設計を作ることである。\n\n\n プロンプト本体（実運用版）\n以下が実際に使用しているプロンプト構造である\n[PURPO...",
+        "category": "AI・技術",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "「人間はコードを書かない・レビューもしない」を5ヶ月やった話──OpenAI Frontierの極限harness",
+        "url": "https://zenn.dev/aiwatch_jp/articles/openai-frontier-extreme-harness",
+        "site": "Zenn(LLM)",
+        "published": "2026-06-05T09:47:28Z",
+        "description": "!\n最先端AIを技術の中身まで日本語で読み解く「AIウォッチ」の深掘り記事です。題材は Latent Space の Ryan Lopopolo（OpenAI Frontier Product Exploration）インタビュー。一次情報を当たって書いています。これは harness シリーズの締めくくり。\n\nここまでの記事（L0–L7 のラダー、OSS の選び方、Cloudflare の多エー...",
+        "category": "AI・技術",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "Snowflake App Runtime 入門 - プロンプトひとつでデータの隣に本格Webアプリをデプロイする！",
+        "url": "https://zenn.dev/snowflakejp/articles/9e5b8fa393ccd8",
+        "site": "Zenn(LLM)",
+        "published": "2026-06-05T09:31:05Z",
+        "description": "はじめに\nSnowflake Summit 2026 では、数多くの新機能が発表されました。その中で私が特に注目している機能のひとつが Snowflake App Runtime です。\nこれまで、こんなもどかしさを感じたことはないでしょうか？\n\nデータは Snowflake の中にきれいに整っているのに、それを見せる Web アプリは別の場所 で動いている\nアプリを公開するために Docker ...",
+        "category": "AI・技術",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "Pi Agent SDKを触ったのでメモ的な感じで",
+        "url": "https://zenn.dev/nozomi_hiragi/articles/c4d874b96e2b35",
+        "site": "Zenn(LLM)",
+        "published": "2026-06-05T09:22:55Z",
+        "description": "Pi SDK を触ってみたメモ\nどうも。\n前から「AIエージェント作りたいなー」と思っていて、最近作り始めました。\nその際に一旦 Pi をコアに作ろうと思い、SDK を触ってみていたので、どんな感じだったかのメモを書いておきます。\n公式ドキュメントがあるので、基本的にはそこを見れば解決する話ではあります。\nhttps://pi.dev/docs/latest/sdk\n\n インストール\nまずは @e...",
+        "category": "AI・技術",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "AIが審判となることの社会への影響について",
+        "url": "https://zenn.dev/pdfractal/articles/a3fad1ed555e7f",
+        "site": "Zenn(LLM)",
+        "published": "2026-06-05T09:13:25Z",
+        "description": "はじめに\n本稿でいう 審判 とは、最終的な真理の所有者ではなく、二者の主張を比較し、論点のずれや根拠の薄さや定義の混線を可視化する第三者機能を指します。近年の研究では、LLMによる裁定は人手評価の代替として有望な面を持ちつつ、なおバイアスと限界を抱えることが確認されています。\nこの問題が重要なのは、社会の多くの現場に 高信頼の知者 が常駐していないからです。世界司法プロジェクトは、世界で約50億人...",
+        "category": "AI・技術",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "Amazon BedrockでOpenAI GPT5.5とGPT5.4がサポートされたので試してみた",
+        "url": "https://zenn.dev/fusic/articles/1e0172548196d0",
+        "site": "Zenn(LLM)",
+        "published": "2026-06-05T08:45:39Z",
+        "description": "はじめに\nFusicのレオナです。\n2026年6月に、OpenAIのGPT-5.5、GPT-5.4がAmazon Bedrockで一般提供されました。\nこれまでBedrockで利用できるOpenAI系のモデルは、gpt-ossのオープンウェイトモデルが中心でした。今回、OpenAIのフロンティアモデルをBedrock経由で直接呼び出せるようになったので、AWS上で生成AIアプリケーションを構築して...",
+        "category": "AI・技術",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
         "title": "Claude Code の脇に置いて使う小さな道具 3 つ — 安価な LLM へ読解・レビュー・チェックを逃がす",
         "url": "https://zenn.dev/logicia32/articles/2026-06-05-aide-trio-cheap-llm-mcp",
         "site": "Zenn(LLM)",
@@ -469,51 +669,11 @@
         "image_url": ""
       },
       {
-        "title": "ChromaDBでベクトルDBを手元に立てる：RAG開発のための最速セットアップ",
-        "url": "https://zenn.dev/libercraft/articles/20260604-chromadb-setup-rag",
-        "site": "Zenn(LLM)",
-        "published": "2026-06-05T04:02:36Z",
-        "description": "ChromaDBとは、Pythonで手元に立てられるオープンソースのベクトルデータベースで、RAG開発の検索基盤として最も導入コストが低い選択肢のひとつです。\npip install chromadb の一行でローカルに動作するベクトルDBが手に入り、課金も発生しません。Pineconeのようなクラウドサービスと異なりアカウント登録不要で、RAGのコアロジック（チャンキング・検索品質の改善）に集中...",
-        "category": "AI・技術",
-        "rss_category": "",
-        "image_url": ""
-      },
-      {
         "title": "AIに「痛みのセンサー」を壊させるな — 機械強制で守るコード品質",
         "url": "https://zenn.dev/nullvariant/articles/ai-pain-sensor-anti-pattern",
         "site": "Zenn(LLM)",
         "published": "2026-06-05T02:33:37Z",
         "description": "はじめに：立ち位置の表明\n先に立ち位置を明かしておきます。私は Claude Code を Max 20x プランの上限と戦いながら毎日使い倒している部類のAI重信者です。\nこの記事は AI を否定する話ではありません。大好きだからこそ成立させたい長期協働の設計論です。\n\n 自分の身に起きた2つの実話\n\n 実話 1 — validator を弱めたAI\nある日、私は自分のリポジトリでファイル構造の...",
-        "category": "AI・技術",
-        "rss_category": "",
-        "image_url": ""
-      },
-      {
-        "title": "AIエージェントとは何か？仕組みと2025年の最新活用事例をわかりやすく解説",
-        "url": "https://zenn.dev/ds_ai_lab/articles/20260604-ai-agent-2025",
-        "site": "Zenn(LLM)",
-        "published": "2026-06-05T02:22:04Z",
-        "description": "はじめに\n「AIエージェント」という言葉をよく聞くようになりました。ChatGPTやClaudeに「〇〇をやっておいて」と頼むだけで、複数のタスクを自律的にこなしてくれる——そんな未来が現実になりつつあります。\n本記事では、AIエージェントの仕組みを基礎から解説し、2025年時点での実践的な活用事例を紹介します。\n\n AIエージェントとは？\nAIエージェントとは、与えられた目標を達成するために、自...",
-        "category": "AI・技術",
-        "rss_category": "",
-        "image_url": ""
-      },
-      {
-        "title": "マニュアル動画ができる生成AIを作った話 〜 MANAVO開発ログ① 〜",
-        "url": "https://zenn.dev/mukuil_blog/articles/9a2e1361521ba9",
-        "site": "Zenn(LLM)",
-        "published": "2026-06-05T02:19:50Z",
-        "description": "こんにちは！株式会社ムクイルのapuです。\n株式会社ムクイルで開発している、マニュアル動画生成AI「MANAVO（マナボ）」の開発ログを書いていこうと思います。\nMANAVOは、\n\nPDF\nWord\nテキスト\n既存動画\n\nなどの資料をアップロードするだけで、AIがマニュアル動画を自動生成するサービスです。\nナレーションやBGMも自動で付与され、完成後はスライドやナレーションの編集もできます。\n今回...",
-        "category": "AI・技術",
-        "rss_category": "",
-        "image_url": ""
-      },
-      {
-        "title": "28秒で作れるAIは、5ファイルで壊れる。ローカルLLMを安全に使うハーネス設計",
-        "url": "https://zenn.dev/seeda_yuto/articles/gpt-oss-multifile-agent-failure",
-        "site": "Zenn(LLM)",
-        "published": "2026-06-05T01:10:05Z",
-        "description": "前回は「単一HTML」だった\n前回はこちら。\nhttps://zenn.dev/seeda_yuto/articles/local-llm-agent-harness-guide\n前回、gpt-oss:20b に Web アプリを自律生成させた。\n結果はかなり良かった。Todo アプリ、ポモドーロタイマー、Markdown ノートアプリ。どれも 2 回の API 呼び出しで完成し、合計 77 秒。...",
         "category": "AI・技術",
         "rss_category": "",
         "image_url": ""
