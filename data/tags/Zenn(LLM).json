@@ -1,9 +1,49 @@
 {
   "site": "Zenn(LLM)",
-  "last_updated": "2026-06-06T05:39:17.514585",
-  "total_articles": 3811,
+  "last_updated": "2026-06-06T08:13:45.206486",
+  "total_articles": 3813,
   "articles_by_date": {
     "本日": [
+      {
+        "title": "Claude Codeを自律エージェント基盤として運用する — context rotから逆算する設計",
+        "url": "https://zenn.dev/yutabeee/articles/claude-code-autonomous-agent-platform",
+        "site": "Zenn(LLM)",
+        "published": "2026-06-06T03:16:33Z",
+        "description": "CLAUDE.mdにルールを書いたのに守られない。長いセッションの途中でClaudeが急に精度を落とす。自動化を組んだら月の予算が数時間で溶けた。\nこれらは別々のトラブルに見えて、実は1つの制約から派生した同じ問題だ。コンテキストウィンドウは有限で、収穫逓減する。Anthropicの言葉では「LLMの性能はコンテキストが埋まるほど劣化する」。Claude Codeのベストプラクティスは、断片的なT...",
+        "category": "AI・技術",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "Tool Calling のシグネチャと呼び出し率についての調査",
+        "url": "https://zenn.dev/yy7613/articles/b3264acb153f40",
+        "site": "Zenn(LLM)",
+        "published": "2026-06-06T01:22:25Z",
+        "description": "はじめに\nTool Calling の呼び出し率は Tool の Description だけでなくシグネチャにも左右されます。(シグネチャはメソッド名、引数名、必須指定、スキーマ構造、戻り値)\n今回の調査はToolのシグネチャを変えたときにTool呼び出し率がどう変わるかを確認します。\nシステムプロンプトとToolのDescription、シナリオを固定し、Toolシグネチャを変更してToolの...",
+        "category": "AI・技術",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "オンデバイスVLM (画像入力LLM) のレシピ",
+        "url": "https://zenn.dev/mlboydaisuke/articles/vlmkit-on-device-recipes",
+        "site": "Zenn(LLM)",
+        "published": "2026-06-05T23:08:37Z",
+        "description": "画像を見せて「これ何?」と聞けるAIがあります。\n「木製のダイニングテーブルですね。マグカップが2つあって、片方は紅茶のようです」と説明してくれる。Vision Language Model（VLM)と呼ばれています。\n画像と言葉をあつかえるVLMは iPhone上で 動かせます。\n以下のようにiOSの機能と組み合わせることで、強力な機能を実現できます。\n\n レシピ１：人の説明\n\n\n レシピ２：A...",
+        "category": "AI・技術",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "【AIエージェント自作】ファイル探索エージェントを作る",
+        "url": "https://zenn.dev/pekopugu/articles/agent01-a4-file-search",
+        "site": "Zenn(LLM)",
+        "published": "2026-06-05T22:38:57Z",
+        "description": "この記事で作るもの\n!\nこの記事は Claude（設計・構想・レビュー）と Claude Code（実装・記事生成）を活用して作成しました。\n\nStep 05〜07で作った「ファイル探索エージェント」の実用的な動きを紹介します。\n起動するとターミナルにプロンプトが表示され、自然言語でコードベースを探索できます。\n&gt; srcディレクトリの構成を教えてください\n[考え中...]\n[ツール実行] ...",
+        "category": "AI・技術",
+        "rss_category": "",
+        "image_url": ""
+      },
       {
         "title": "ECA(Emacs)を導入した",
         "url": "https://zenn.dev/wakamenod/articles/ae8a4ab4b625bb",
@@ -167,41 +207,11 @@
         "image_url": ""
       },
       {
-        "title": "Amazon BedrockでOpenAI GPT5.5とGPT5.4がサポートされたので試してみた",
-        "url": "https://zenn.dev/fusic/articles/1e0172548196d0",
-        "site": "Zenn(LLM)",
-        "published": "2026-06-05T08:45:39Z",
-        "description": "はじめに\nFusicのレオナです。\n2026年6月に、OpenAIのGPT-5.5、GPT-5.4がAmazon Bedrockで一般提供されました。\nこれまでBedrockで利用できるOpenAI系のモデルは、gpt-ossのオープンウェイトモデルが中心でした。今回、OpenAIのフロンティアモデルをBedrock経由で直接呼び出せるようになったので、AWS上で生成AIアプリケーションを構築して...",
-        "category": "AI・技術",
-        "rss_category": "",
-        "image_url": ""
-      },
-      {
-        "title": "Claude Code の脇に置いて使う小さな道具 3 つ — 安価な LLM へ読解・レビュー・チェックを逃がす",
-        "url": "https://zenn.dev/logicia32/articles/2026-06-05-aide-trio-cheap-llm-mcp",
-        "site": "Zenn(LLM)",
-        "published": "2026-06-05T04:43:17Z",
-        "description": "はじめに\nClaude Code を毎日使っていると、コンテキスト枠と API コストの両方が気になってくることはありませんか。\n私は気になりまして、「重い読解やレビューは安価な LLM に逃がして、結果だけ受け取れたら楽だな」と思って、小さな道具を 3 つ書いてみました。\n\n\ncode-aide — Claude Code の補佐。コード読解・レビュー・差分提案を委譲する MCP。\n\nwrite...",
-        "category": "AI・技術",
-        "rss_category": "",
-        "image_url": ""
-      },
-      {
         "title": "Hermes Agentに見るAIエージェントの「学習」の仕組み",
         "url": "https://zenn.dev/nobmake/articles/bca81268efc5e3",
         "site": "Zenn(LLM)",
         "published": "2026-06-05T04:16:48Z",
         "description": "はじめに\nAIエージェントの文脈で「学習する」という言葉がよく使われます。\nただし、多くの場合それは LLM本体の重みを更新する という意味ではありません。実運用上のエージェントでは、次のような仕組みによって「前回よりうまく動く」状態を作ります。\n\nユーザーの好みを記憶する\nよく使う作業手順をスキル化する\n過去の会話を検索できるようにする\n長い会話を要約して作業文脈を維持する\n実行ログを訓練データ...",
-        "category": "AI・技術",
-        "rss_category": "",
-        "image_url": ""
-      },
-      {
-        "title": "画像エンコーダーを丸ごと捨てる：Gemma 4 12B「エンコーダー不要マルチモーダル」を分解する",
-        "url": "https://zenn.dev/hironakamura_ai/articles/f3fd34dbdda7d9",
-        "site": "Zenn(LLM)",
-        "published": "2026-06-05T04:09:18Z",
-        "description": "エンコーダーを捨てるという選択\nマルチモーダルモデルの作り方が、静かに一段変わりました。\nこれまで画像や音声を扱うモデルは、ほぼ例外なく「専用エンコーダー」を前段に置いてきました。画像なら CLIP や SigLIP のような視覚エンコーダー、音声なら音声エンコーダーで信号を一度「意味のあるベクトル」に変換し、それを言語モデル（LLM）につなぐ。これがここ数年の定番構成でした。\n2026年6月3日...",
         "category": "AI・技術",
         "rss_category": "",
         "image_url": ""
@@ -521,6 +531,46 @@
     ],
     "2026-06": [
       {
+        "title": "Claude Codeを自律エージェント基盤として運用する — context rotから逆算する設計",
+        "url": "https://zenn.dev/yutabeee/articles/claude-code-autonomous-agent-platform",
+        "site": "Zenn(LLM)",
+        "published": "2026-06-06T03:16:33Z",
+        "description": "CLAUDE.mdにルールを書いたのに守られない。長いセッションの途中でClaudeが急に精度を落とす。自動化を組んだら月の予算が数時間で溶けた。\nこれらは別々のトラブルに見えて、実は1つの制約から派生した同じ問題だ。コンテキストウィンドウは有限で、収穫逓減する。Anthropicの言葉では「LLMの性能はコンテキストが埋まるほど劣化する」。Claude Codeのベストプラクティスは、断片的なT...",
+        "category": "AI・技術",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "Tool Calling のシグネチャと呼び出し率についての調査",
+        "url": "https://zenn.dev/yy7613/articles/b3264acb153f40",
+        "site": "Zenn(LLM)",
+        "published": "2026-06-06T01:22:25Z",
+        "description": "はじめに\nTool Calling の呼び出し率は Tool の Description だけでなくシグネチャにも左右されます。(シグネチャはメソッド名、引数名、必須指定、スキーマ構造、戻り値)\n今回の調査はToolのシグネチャを変えたときにTool呼び出し率がどう変わるかを確認します。\nシステムプロンプトとToolのDescription、シナリオを固定し、Toolシグネチャを変更してToolの...",
+        "category": "AI・技術",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "オンデバイスVLM (画像入力LLM) のレシピ",
+        "url": "https://zenn.dev/mlboydaisuke/articles/vlmkit-on-device-recipes",
+        "site": "Zenn(LLM)",
+        "published": "2026-06-05T23:08:37Z",
+        "description": "画像を見せて「これ何?」と聞けるAIがあります。\n「木製のダイニングテーブルですね。マグカップが2つあって、片方は紅茶のようです」と説明してくれる。Vision Language Model（VLM)と呼ばれています。\n画像と言葉をあつかえるVLMは iPhone上で 動かせます。\n以下のようにiOSの機能と組み合わせることで、強力な機能を実現できます。\n\n レシピ１：人の説明\n\n\n レシピ２：A...",
+        "category": "AI・技術",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
+        "title": "【AIエージェント自作】ファイル探索エージェントを作る",
+        "url": "https://zenn.dev/pekopugu/articles/agent01-a4-file-search",
+        "site": "Zenn(LLM)",
+        "published": "2026-06-05T22:38:57Z",
+        "description": "この記事で作るもの\n!\nこの記事は Claude（設計・構想・レビュー）と Claude Code（実装・記事生成）を活用して作成しました。\n\nStep 05〜07で作った「ファイル探索エージェント」の実用的な動きを紹介します。\n起動するとターミナルにプロンプトが表示され、自然言語でコードベースを探索できます。\n&gt; srcディレクトリの構成を教えてください\n[考え中...]\n[ツール実行] ...",
+        "category": "AI・技術",
+        "rss_category": "",
+        "image_url": ""
+      },
+      {
         "title": "ECA(Emacs)を導入した",
         "url": "https://zenn.dev/wakamenod/articles/ae8a4ab4b625bb",
         "site": "Zenn(LLM)",
@@ -681,41 +731,11 @@
         "image_url": ""
       },
       {
-        "title": "Amazon BedrockでOpenAI GPT5.5とGPT5.4がサポートされたので試してみた",
-        "url": "https://zenn.dev/fusic/articles/1e0172548196d0",
-        "site": "Zenn(LLM)",
-        "published": "2026-06-05T08:45:39Z",
-        "description": "はじめに\nFusicのレオナです。\n2026年6月に、OpenAIのGPT-5.5、GPT-5.4がAmazon Bedrockで一般提供されました。\nこれまでBedrockで利用できるOpenAI系のモデルは、gpt-ossのオープンウェイトモデルが中心でした。今回、OpenAIのフロンティアモデルをBedrock経由で直接呼び出せるようになったので、AWS上で生成AIアプリケーションを構築して...",
-        "category": "AI・技術",
-        "rss_category": "",
-        "image_url": ""
-      },
-      {
-        "title": "Claude Code の脇に置いて使う小さな道具 3 つ — 安価な LLM へ読解・レビュー・チェックを逃がす",
-        "url": "https://zenn.dev/logicia32/articles/2026-06-05-aide-trio-cheap-llm-mcp",
-        "site": "Zenn(LLM)",
-        "published": "2026-06-05T04:43:17Z",
-        "description": "はじめに\nClaude Code を毎日使っていると、コンテキスト枠と API コストの両方が気になってくることはありませんか。\n私は気になりまして、「重い読解やレビューは安価な LLM に逃がして、結果だけ受け取れたら楽だな」と思って、小さな道具を 3 つ書いてみました。\n\n\ncode-aide — Claude Code の補佐。コード読解・レビュー・差分提案を委譲する MCP。\n\nwrite...",
-        "category": "AI・技術",
-        "rss_category": "",
-        "image_url": ""
-      },
-      {
         "title": "Hermes Agentに見るAIエージェントの「学習」の仕組み",
         "url": "https://zenn.dev/nobmake/articles/bca81268efc5e3",
         "site": "Zenn(LLM)",
         "published": "2026-06-05T04:16:48Z",
         "description": "はじめに\nAIエージェントの文脈で「学習する」という言葉がよく使われます。\nただし、多くの場合それは LLM本体の重みを更新する という意味ではありません。実運用上のエージェントでは、次のような仕組みによって「前回よりうまく動く」状態を作ります。\n\nユーザーの好みを記憶する\nよく使う作業手順をスキル化する\n過去の会話を検索できるようにする\n長い会話を要約して作業文脈を維持する\n実行ログを訓練データ...",
-        "category": "AI・技術",
-        "rss_category": "",
-        "image_url": ""
-      },
-      {
-        "title": "画像エンコーダーを丸ごと捨てる：Gemma 4 12B「エンコーダー不要マルチモーダル」を分解する",
-        "url": "https://zenn.dev/hironakamura_ai/articles/f3fd34dbdda7d9",
-        "site": "Zenn(LLM)",
-        "published": "2026-06-05T04:09:18Z",
-        "description": "エンコーダーを捨てるという選択\nマルチモーダルモデルの作り方が、静かに一段変わりました。\nこれまで画像や音声を扱うモデルは、ほぼ例外なく「専用エンコーダー」を前段に置いてきました。画像なら CLIP や SigLIP のような視覚エンコーダー、音声なら音声エンコーダーで信号を一度「意味のあるベクトル」に変換し、それを言語モデル（LLM）につなぐ。これがここ数年の定番構成でした。\n2026年6月3日...",
         "category": "AI・技術",
         "rss_category": "",
         "image_url": ""
