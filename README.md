@@ -103,8 +103,8 @@ npm run dev
 ## デプロイ・運用
 
 ### 自動化フロー
-1. **GitHub Actions**: 毎時0分（UTC）にRSS収集実行
-2. **データ更新**: タグ別JSONファイル（`data/tags/*.json`）を更新
+1. **GitHub Actions**: 10分毎にRSS収集実行
+2. **データ更新**: `public/data/`（タグ別JSON・stats.json・search-index.jsonl）を更新
 3. **自動コミット**: 変更をGitHubリポジトリにプッシュ
 4. **Vercel自動デプロイ**: プッシュ検知で自動的にサイト更新
 
@@ -114,9 +114,10 @@ npm run dev
 - **連携**: GitHub リポジトリ自動デプロイ
 
 ### データ管理
-- **保存場所**: `data/tags/[サイト名].json`（各サイト別）
-- **保存期間**: 1年間（URL重複排除）
-- **更新頻度**: 毎時（JST 9分）
+- **保存場所**: `public/data/tags/[サイト名].json`（各サイト別・新着順フラット配列）
+- **配信最適化**: 初回ページは直近7日のみインライン。過去・検索は `public/data/search-index.jsonl` を lazy fetch
+- **保存期間**: `retention_days`（既定3650日≒全期間、URL重複排除）
+- **更新頻度**: 10分毎
 
 ## ライセンス
 

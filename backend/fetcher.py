@@ -26,11 +26,12 @@ def fetch_rss_feed(feed_url: str, site_name: str, config: Dict[str, Any]) -> Lis
         if feed.bozo:
             logger.warning(f"RSS解析警告: {site_name} - {feed.bozo_exception}")
         
+        retention_days = config.get('retention_days', 3650)
         articles = []
         for entry in feed.entries:
             # 記事データの標準化
             article = normalize_article(entry, site_name, config)
-            if article and is_recent_article(article['published']):
+            if article and is_recent_article(article['published'], days=retention_days):
                 articles.append(article)
         
         logger.info(f"取得完了: {site_name} - {len(articles)}件")

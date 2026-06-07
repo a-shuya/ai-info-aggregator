@@ -1,12 +1,14 @@
 import time
 import logging
-from datetime import datetime, timedelta
 from typing import Dict, List, Any
 from .config import load_config, load_category_keywords
 from .fetcher import fetch_rss_feed
 from .storage import load_existing_data, save_data, merge_articles
 
 logger = logging.getLogger(__name__)
+
+# 既定の保持期間（rss_config.json の retention_days で上書き可能）
+DEFAULT_RETENTION_DAYS = 3650
 
 def classify_business_insider_article_by_rss_category(rss_category: str) -> str:
     """Business Insider記事のRSSカテゴリベースでの分類"""
@@ -16,87 +18,11 @@ def classify_business_insider_article_by_rss_category(rss_category: str) -> str:
         'テックニュース': 'テック',
         'サイエンス': 'サイエンス'
     }
-    
+
     return category_mapping.get(rss_category, None)  # 該当なしはNone
 
-def group_articles_by_date(articles: List[Dict[str, Any]]) -> Dict[str, List[Dict[str, Any]]]:
-    """記事を日付別にグループ化（全期間対応）"""
-    try:
-        from zoneinfo import ZoneInfo
-        jst = ZoneInfo("Asia/Tokyo")
-    except ImportError:
-        # Python 3.8以前の場合
-        from datetime import timezone
-        jst = timezone(timedelta(hours=9))
-    
-    # 日本時間で日付を取得
-    now_jst = datetime.now(jst)
-    today = now_jst.date()
-    yesterday = today - timedelta(days=1)
-    day_before_yesterday = today - timedelta(days=2)
-    
-    # 基本的な日付カテゴリ
-    grouped = {
-        '本日': [],
-        '昨日': [],
-        '一昨日': []
-    }
-    
-    # 月別のカテゴリも動的に作成
-    monthly_groups = {}
-    
-    for article in articles:
-        try:
-            # 記事の公開日時を日本時間に変換
-            article_datetime = datetime.fromisoformat(article['published'].replace('Z', '+00:00'))
-            if article_datetime.tzinfo is None:
-                # タイムゾーン情報がない場合はUTCとして扱う
-                try:
-                    from zoneinfo import ZoneInfo
-                    utc = ZoneInfo("UTC")
-                except ImportError:
-                    from datetime import timezone
-                    utc = timezone.utc
-                article_datetime = article_datetime.replace(tzinfo=utc)
-            
-            # 日本時間に変換
-            article_datetime_jst = article_datetime.astimezone(jst)
-            article_date = article_datetime_jst.date()
-            
-            # 日付カテゴリ分類（本日・昨日・一昨日）
-            if article_date == today:
-                grouped['本日'].append(article)
-            elif article_date == yesterday:
-                grouped['昨日'].append(article)
-            elif article_date == day_before_yesterday:
-                grouped['一昨日'].append(article)
-            
-            # 月別分類（全ての記事を月別にも分類）
-            month_key = article_date.strftime('%Y-%m')
-            if month_key not in monthly_groups:
-                monthly_groups[month_key] = []
-            monthly_groups[month_key].append(article)
-                
-        except Exception as e:
-            logger.warning(f"日付解析エラー: {article.get('title', 'Unknown')} - {e}")
-            # エラーの場合は本日に分類
-            grouped['本日'].append(article)
-    
-    # 月別グループを統合（新しい月から順番）
-    for month_key in sorted(monthly_groups.keys(), reverse=True):
-        grouped[month_key] = monthly_groups[month_key]
-    
-    # 各日付内で公開時間順にソート（新しい順）
-    for date_key in grouped:
-        grouped[date_key].sort(
-            key=lambda x: x['published'],
-            reverse=True
-        )
-    
-    return grouped
-
-def collect_all_feeds(config: Dict[str, Any], category_keywords: Dict[str, Any]) -> Dict[str, List[Dict[str, Any]]]:
-    """全フィードの収集（蓄積型）"""
+def collect_all_feeds(config: Dict[str, Any], category_keywords: Dict[str, Any]) -> List[Dict[str, Any]]:
+    """全フィードの収集（蓄積型・新着順フラットリストを返す）"""
     logger.info("RSS収集を開始します")
     
     # 既存データを読み込み
@@ -136,15 +62,16 @@ def collect_all_feeds(config: Dict[str, Any], category_keywords: Dict[str, Any])
         else:
             new_articles.extend(articles)
     
-    # 新規記事と既存記事をマージ（重複排除）
-    all_articles = merge_articles(new_articles, existing_articles)
-    
-    # 日付別に分類
-    articles_by_date = group_articles_by_date(all_articles)
-    
+    # 新規記事と既存記事をマージ（重複排除 + 保持期間で間引き）
+    retention_days = config.get('retention_days', DEFAULT_RETENTION_DAYS)
+    all_articles = merge_articles(new_articles, existing_articles, retention_days=retention_days)
+
+    # 新着順にソート
+    all_articles.sort(key=lambda x: x.get('published', ''), reverse=True)
+
     logger.info(f"新規記事: {len(new_articles)}件")
-    logger.info(f"マージ後総記事数: {len(all_articles)}件")
-    return articles_by_date
+    logger.info(f"マージ後総記事数: {len(all_articles)}件（保持期間: {retention_days}日）")
+    return all_articles
 
 def main():
     """メイン処理"""
@@ -155,8 +82,8 @@ def main():
         config = load_config()
         category_keywords = load_category_keywords()
         
-        articles_by_date = collect_all_feeds(config, category_keywords)
-        save_data(articles_by_date)
+        all_articles = collect_all_feeds(config, category_keywords)
+        save_data(all_articles)
         
         logger.info("RSS収集処理が正常に完了しました")
         

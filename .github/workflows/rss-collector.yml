@@ -40,7 +40,7 @@ jobs:
       run: |
         git config --local user.email "action@github.com"
         git config --local user.name "GitHub Action"
-        git add data/tags/*.json data/articles_summary.json
+        git add public/data/tags/*.json public/data/stats.json public/data/search-index.jsonl
         if git diff --staged --quiet; then
           echo "No changes to commit"
         else

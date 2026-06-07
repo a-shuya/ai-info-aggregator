@@ -4,44 +4,60 @@ import Layout from '../layouts/Layout.astro';
 import fs from 'fs';
 import path from 'path';
 
-// JSONデータの読み込み（タグ別ファイルから）
-let articlesData;
+// ビルド時にインラインするのは「直近N日分」のみ。
+// それ以前の記事・全期間検索は実行時に /data/search-index.jsonl を lazy fetch する。
+const RECENT_DAYS = 7;
+
+// 軽量な統計情報（旧 articles_summary.json の置き換え）
+let stats = {
+  last_updated: new Date().toISOString(),
+  total_articles: 0,
+  by_period: { '本日': 0, '昨日': 0, '一昨日': 0 }
+};
 try {
-  const tagsDir = path.join(process.cwd(), 'data', 'tags');
-  let allArticlesByDate = {
-    '本日': [],
-    '昨日': [],
-    '一昨日': []
-  };
-  let totalArticles = 0;
-  let lastUpdated = new Date().toISOString();
-  
-  // タグディレクトリが存在する場合
+  const statsPath = path.join(process.cwd(), 'public', 'data', 'stats.json');
+  if (fs.existsSync(statsPath)) {
+    stats = JSON.parse(fs.readFileSync(statsPath, 'utf-8'));
+  }
+} catch (statsError) {
+  console.warn('Failed to load stats.json:', statsError);
+}
+
+// 直近N日分の記事だけを集めてインライン（初回表示・タブ切替・直近日付用）
+let recentArticles = [];
+try {
+  const tagsDir = path.join(process.cwd(), 'public', 'data', 'tags');
+  const cutoff = Date.now() - RECENT_DAYS * 24 * 60 * 60 * 1000;
+  const seenUrls = new Set();
+
   if (fs.existsSync(tagsDir)) {
     const tagFiles = fs.readdirSync(tagsDir).filter(file => file.endsWith('.json'));
-    
+
     for (const tagFile of tagFiles) {
       try {
-        const tagPath = path.join(tagsDir, tagFile);
-        const tagData = JSON.parse(fs.readFileSync(tagPath, 'utf-8'));
-        
-        if (tagData.articles_by_date) {
-          // 各日付の記事をマージ（重複排除）
-          Object.entries(tagData.articles_by_date).forEach(([dateKey, articles]) => {
-            if (!allArticlesByDate[dateKey]) {
-              allArticlesByDate[dateKey] = [];
-            }
-            // URL基準で重複チェック
-            const existingUrls = new Set(allArticlesByDate[dateKey].map(article => article.url));
-            const uniqueArticles = articles.filter(article => !existingUrls.has(article.url));
-            allArticlesByDate[dateKey].push(...uniqueArticles);
-          });
-          
-          totalArticles += tagData.total_articles || 0;
-          
-          // 最新の更新時刻を取得
-          if (tagData.last_updated && tagData.last_updated > lastUpdated) {
-            lastUpdated = tagData.last_updated;
+        const tagData = JSON.parse(fs.readFileSync(path.join(tagsDir, tagFile), 'utf-8'));
+
+        // 新フォーマット(articles配列) / 旧フォーマット(articles_by_date) 両対応
+        let articles = [];
+        if (Array.isArray(tagData.articles)) {
+          articles = tagData.articles;
+        } else if (tagData.articles_by_date) {
+          articles = Object.values(tagData.articles_by_date).flat();
+        }
+
+        for (const article of articles) {
+          if (!article || !article.url || seenUrls.has(article.url)) continue;
+          const t = new Date(article.published).getTime();
+          if (!Number.isNaN(t) && t >= cutoff) {
+            seenUrls.add(article.url);
+            // カード描画に必要な項目のみインライン（image_url 等は除外して軽量化）
+            recentArticles.push({
+              title: article.title,
+              url: article.url,
+              site: article.site,
+              published: article.published,
+              description: article.description || ''
+            });
           }
         }
       } catch (tagError) {
@@ -49,31 +65,12 @@ try {
       }
     }
   }
-  
-  articlesData = {
-    last_updated: lastUpdated,
-    total_articles: totalArticles,
-    articles_by_date: allArticlesByDate
-  };
-  
 } catch (error) {
-  console.error('Failed to load articles data:', error);
-  articlesData = {
-    last_updated: new Date().toISOString(),
-    total_articles: 0,
-    articles_by_date: {
-      '本日': [],
-      '昨日': [],
-      '一昨日': []
-    }
-  };
+  console.error('Failed to load recent articles:', error);
 }
 
-// 全記事を統合（重複を避けるため各タグファイルから直接取得）
-const allArticles = [];
-Object.values(articlesData.articles_by_date).forEach(articles => {
-  allArticles.push(...articles);
-});
+// 新着順
+recentArticles.sort((a, b) => new Date(b.published).getTime() - new Date(a.published).getTime());
 
 // サイト一覧を固定リストで表示（期間に関係なく常に表示）
 const sites = [
@@ -202,12 +199,12 @@ const formatLastUpdated = (dateString: string) => {
       
       <!-- 統計 -->
       <div class="stats-section">
-        <p>最終更新: {formatLastUpdated(articlesData.last_updated)}</p>
-        <p>総記事数: {articlesData.total_articles}件</p>
-        <p>保存期間: 1年間</p>
+        <p>最終更新: {formatLastUpdated(stats.last_updated)}</p>
+        <p>総記事数: {stats.total_articles}件</p>
+        <p>保存期間: 全期間</p>
         <div class="stats-breakdown">
-          {Object.entries(articlesData.articles_by_date).filter(([period]) => ['本日', '昨日', '一昨日'].includes(period)).map(([period, articles]) => (
-            <p>{period}: {articles.length}件</p>
+          {Object.entries(stats.by_period).map(([period, count]) => (
+            <p>{period}: {count}件</p>
           ))}
         </div>
       </div>
@@ -231,12 +228,12 @@ const formatLastUpdated = (dateString: string) => {
 
   <!-- モバイル用統計情報（下部） -->
   <div class="mobile-stats">
-    <p>最終更新: {formatLastUpdated(articlesData.last_updated)}</p>
-    <p>総記事数: {articlesData.total_articles}件</p>
-    <p>保存期間: 1年間</p>
+    <p>最終更新: {formatLastUpdated(stats.last_updated)}</p>
+    <p>総記事数: {stats.total_articles}件</p>
+    <p>保存期間: 全期間</p>
     <div class="stats-grid">
-      {Object.entries(articlesData.articles_by_date).filter(([period]) => ['本日', '昨日', '一昨日'].includes(period)).map(([period, articles]) => (
-        <span>{period}: {articles.length}件</span>
+      {Object.entries(stats.by_period).map(([period, count]) => (
+        <span>{period}: {count}件</span>
       ))}
     </div>
   </div>
@@ -578,7 +575,7 @@ const formatLastUpdated = (dateString: string) => {
     }
   </style>
 
-  <script define:vars={{ allArticles, sites, articlesData }}>
+  <script define:vars={{ recentArticles, sites, RECENT_DAYS }}>
     // UI Elements
     const elements = {
         tabButtons: document.querySelectorAll('.tab-button'),
@@ -628,11 +625,44 @@ const formatLastUpdated = (dateString: string) => {
         searchQuery: ''
     };
     
-    // Articles Cache
+    // Articles Cache（直近分はインライン、過去分・検索は検索インデックスを lazy fetch）
     const articlesCache = {
-        byDate: new Map(), // 'YYYY-MM-DD' -> Article[]
-        all: [] // All unique articles
+        byDate: new Map() // 'YYYY-MM-DD'(JST) -> Article[]（直近分のみ）
     };
+
+    // 検索インデックス（全履歴・軽量）の遅延読み込み
+    let _searchIndex = null;
+    let _indexPromise = null;
+    async function ensureIndex() {
+        if (_searchIndex) return _searchIndex;
+        if (_indexPromise) return _indexPromise;
+        _indexPromise = fetch('/data/search-index.jsonl')
+            .then(r => r.text())
+            .then(text => {
+                _searchIndex = text.split('\n').filter(Boolean).map(line => {
+                    try { return JSON.parse(line); } catch { return null; }
+                }).filter(Boolean);
+                return _searchIndex;
+            })
+            .catch(e => {
+                console.error('検索インデックスの取得に失敗:', e);
+                _searchIndex = [];
+                return _searchIndex;
+            });
+        return _indexPromise;
+    }
+
+    // JST の YYYY-MM-DD キー
+    function jstDateKey(dateLike) {
+        const j = new Date(new Date(dateLike).toLocaleString('en-US', { timeZone: 'Asia/Tokyo' }));
+        const y = j.getFullYear();
+        const m = String(j.getMonth() + 1).padStart(2, '0');
+        const d = String(j.getDate()).padStart(2, '0');
+        return `${y}-${m}-${d}`;
+    }
+
+    // インラインで完全網羅できている直近の境界日（これ以上古い日付はインデックスから取得）
+    const recentMinDateStr = jstDateKey(Date.now() - (RECENT_DAYS - 1) * 24 * 60 * 60 * 1000);
 
     // Helper Functions
     function formatDate(dateString) {
@@ -671,47 +701,33 @@ const formatLastUpdated = (dateString: string) => {
         `;
     }
     
-    // Initialize articles cache for faster lookup (Lightweight method)
+    // 直近分（インライン）を日付別キャッシュへ展開
     function initializeArticlesCache() {
         const seenUrls = new Set();
-        
-        allArticles.forEach(article => {
+
+        recentArticles.forEach(article => {
             try {
-                // Populate global unique cache
-                if (!seenUrls.has(article.url)) {
-                    seenUrls.add(article.url);
-                    articlesCache.all.push(article);
-                }
-                
-                // Parse date once
-                const articleDate = new Date(article.published);
-                const articleDateJST = new Date(articleDate.toLocaleString('en-US', { timeZone: 'Asia/Tokyo' }));
-                
-                // Format as YYYY-MM-DD
-                const year = articleDateJST.getFullYear();
-                const month = String(articleDateJST.getMonth() + 1).padStart(2, '0');
-                const day = String(articleDateJST.getDate()).padStart(2, '0');
-                const dateKey = `${year}-${month}-${day}`;
-                
+                if (seenUrls.has(article.url)) return;
+                seenUrls.add(article.url);
+
+                const dateKey = jstDateKey(article.published);
                 if (!articlesCache.byDate.has(dateKey)) {
                     articlesCache.byDate.set(dateKey, []);
                 }
-                
-                const dayArticles = articlesCache.byDate.get(dateKey);
-                // Dedup within day list (safe check)
-                if (!dayArticles.some(a => a.url === article.url)) {
-                     dayArticles.push(article);
-                }
-
+                articlesCache.byDate.get(dateKey).push(article);
             } catch (e) {
                 console.warn('Date parsing error', e);
             }
         });
     }
 
-    function getArticlesForDate(dateStr) {
-        // O(1) Lookup
-        return articlesCache.byDate.get(dateStr) || [];
+    // 指定日の記事を取得（直近=キャッシュ / 過去=検索インデックス）
+    async function getArticlesForDate(dateStr) {
+        if (dateStr >= recentMinDateStr) {
+            return articlesCache.byDate.get(dateStr) || [];
+        }
+        const index = await ensureIndex();
+        return index.filter(a => jstDateKey(a.published) === dateStr);
     }
 
     function renderArticles(articles) {
@@ -743,16 +759,21 @@ const formatLastUpdated = (dateString: string) => {
         `;
     }
 
-    function filterAndRender() {
+    async function filterAndRender() {
+        const dateStr = state.currentDate.toISOString().split('T')[0];
+
+        // インデックス取得が必要な操作では先にローディング表示
+        const willFetch = !_searchIndex && (state.searchQuery || dateStr < recentMinDateStr);
+        if (willFetch) {
+            elements.articlesList.innerHTML = '<p class="no-articles">読み込み中...</p>';
+        }
+
         let filtered;
-        
         if (state.searchQuery) {
-            // If searching, target ALL articles (ignore date)
-            filtered = [...articlesCache.all];
+            // 検索は全期間（インデックス）を対象
+            filtered = await ensureIndex();
         } else {
-            // Normal date filtering
-            const dateStr = state.currentDate.toISOString().split('T')[0];
-            filtered = getArticlesForDate(dateStr);
+            filtered = await getArticlesForDate(dateStr);
         }
 
         // Site Filter
@@ -763,13 +784,13 @@ const formatLastUpdated = (dateString: string) => {
         // Search Filter (Title Only)
         if (state.searchQuery) {
             const query = state.searchQuery.toLowerCase();
-            filtered = filtered.filter(a => 
+            filtered = filtered.filter(a =>
                 (a.title || '').toLowerCase().includes(query)
             );
         }
 
-        // Sort descending
-        filtered.sort((a, b) => new Date(b.published) - new Date(a.published));
+        // Sort descending（元配列を壊さないようコピーしてソート）
+        filtered = filtered.slice().sort((a, b) => new Date(b.published) - new Date(a.published));
 
         // Update UI
         updateTitleAndMeta(filtered);

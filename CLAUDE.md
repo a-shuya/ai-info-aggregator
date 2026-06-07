@@ -29,20 +29,24 @@ python rss_collector.py
 
 ### データ収集の実行
 ```bash
-# RSS収集スクリプトの実行（dataディレクトリにarticles.jsonが生成される）
+# RSS収集スクリプトの実行（public/data/ にタグ別JSON・stats.json・search-index.jsonl が生成される）
 python rss_collector.py
 ```
 
 ## アーキテクチャ
 
 ### データ収集システム (Python)
-- **rss_collector.py**: メインの収集スクリプト
-- **rss_config.json**: 収集対象のRSSフィード設定
-- **GitHub Actions**: 1時間毎の自動データ更新（.github/workflows/rss-collector.yml）
-- **data/tags/**: サイト別に分割されたデータファイルの保存先
-  - 各サイト（タグ）ごとに個別のJSONファイルに分割保存
+- **rss_collector.py**: エントリーポイント（実体は `backend/` パッケージ）
+  - `backend/main.py`: オーケストレーション（収集→マージ→保存）
+  - `backend/fetcher.py`: RSS取得、`backend/parser.py`: 記事正規化、`backend/storage.py`: 保存・重複排除
+- **rss_config.json**: 収集対象のRSSフィード設定 + `retention_days`（保持日数）
+- **GitHub Actions**: 10分毎の自動データ更新（.github/workflows/rss-collector.yml）
+- **public/data/tags/**: サイト別に分割されたデータファイルの保存先
+  - 各サイト（タグ）ごとに `{site, last_updated, total_articles, articles:[新着順フラット配列]}` で保存
   - 例: `日経ビジネス.json`、`Business Insider(ビジネス).json`
-- **data/articles_summary.json**: 全体統計情報（互換性のため）
+  - `public/` 配下なので Astro がビルド時に読め、`/data/...` として実行時 fetch も可能
+- **public/data/stats.json**: 軽量な全体統計（最終更新・総件数・サイト別件数・本日/昨日/一昨日件数）
+- **public/data/search-index.jsonl**: 全履歴の軽量検索インデックス（title/url/site/published のみ、1行1記事）
 
 ### フロントエンド (Astro)
 - **Astro**: 静的サイト生成フレームワーク
@@ -50,11 +54,12 @@ python rss_collector.py
   - 3列固定グリッドレイアウト（PC）、1列（モバイル）
   - 新着順ソート機能（全期間・全タブ対応）
   - 元サイトリンク表示機能
+  - **軽量化方針**: 初回HTMLには「直近 `RECENT_DAYS`(=7) 日分」のみインライン。
+    過去日付の閲覧・全期間検索は `/data/search-index.jsonl` を**初回のみ lazy fetch**して処理（記事カードはJSで生成）
 - **src/pages/home.astro**: 市況・天気ダッシュボード
   - 株価・為替情報（Yahoo Finance API）
   - 東京天気予報（気象庁API）
-- **src/layouts/Layout.astro**: 基本レイアウト
-- **src/components/ArticleCard.astro**: 記事カードコンポーネント
+- **src/layouts/Layout.astro**: 基本レイアウト（記事カードは index.astro 内のJSで生成。専用コンポーネントは無し）
 
 ### タグ管理システム
 記事データは各サイト（タグ）ごとに分割保存されます：
@@ -82,8 +87,8 @@ python rss_collector.py
 
 ### デプロイ・ホスティング
 - **Vercel**: 自動デプロイ（GitHubへのプッシュ時）
-- **GitHub Actions**: 毎時自動RSS収集（UTC 0分 = JST 9分）
-  - タグ別JSONファイル（`data/tags/*.json`）の更新
+- **GitHub Actions**: 10分毎の自動RSS収集（cron `*/10 * * * *`）
+  - タグ別JSON・`stats.json`・`search-index.jsonl`（`public/data/*`）の更新
   - 自動コミット・プッシュでVercel連携
 
 ## 主要機能
@@ -113,20 +118,19 @@ python rss_collector.py
 
 ## データフロー
 
-1. GitHub ActionsがPythonスクリプトを定期実行
+1. GitHub ActionsがPythonスクリプトを定期実行（10分毎）
 2. スクリプトがRSSフィードを取得・解析
-3. 記事データをdata/articles.jsonに保存
+3. 既存記事とマージ（URL重複排除・保持期間で間引き）し `public/data/`（tags / stats.json / search-index.jsonl）へ保存
 4. 変更をGitHubにコミット・プッシュ
 5. Vercelが自動的に再ビルド・デプロイ
 
 ## 設定ファイル
 
 ### rss_config.json
-RSSフィードの設定を管理。各フィードには以下の属性：
-- `name`: サイト名
-- `url`: RSS URL
-- `category`: カテゴリ
-- `enabled`: 有効/無効の切り替え
+RSSフィードの設定を管理。
+- トップレベル `retention_days`: 記事の保持日数（既定 3650 ≒ 全期間保持。間引きはこの値で判定）
+- `rss_feeds[]` 各フィードの属性：
+  - `name`: サイト名 / `url`: RSS URL / `category`: カテゴリ / `enabled`: 有効・無効
 
 ### astro.config.mjs
 Astroの設定ファイル。Vercel向けの本番サイトURLを設定。
@@ -143,4 +147,4 @@ Astroの設定ファイル。Vercel向けの本番サイトURLを設定。
 - 個人利用目的のプロジェクト
 - RSSフィードのみを使用（スクレイピング回避）
 - サーバー負荷軽減のため2秒間隔でリクエスト
-- 最新3日分の記事のみ保持
+- 記事は `retention_days`（既定3650日≒全期間）保持。初回ページは直近7日のみインラインし、過去・検索は検索インデックスを lazy fetch して軽量化
