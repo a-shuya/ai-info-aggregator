@@ -1,14 +1,34 @@
 {
   "site": "Zenn(LLM)",
-  "last_updated": "2026-06-07T23:32:53.749826",
-  "total_articles": 3790,
+  "last_updated": "2026-06-08T01:58:49.656305",
+  "total_articles": 3796,
   "articles": [
     {
-      "title": "Claude Codeで作るAI OS——CLAUDE.mdから始める自律エージェント設計",
-      "url": "https://zenn.dev/mamanbou/books/fa1bd1d024bd6b",
+      "title": "faithfulness spread が 0.000 になった話 — 自己採点RAG evalの実態と対処",
+      "url": "https://zenn.dev/elvisyao/articles/5e9b935e7f1f09",
       "site": "Zenn(LLM)",
-      "published": "2026-06-07T15:52:05Z",
-      "description": "Note発信で積み上げたAI OS構築の知見を、手元で再現できる実装ガイドとして体系化。CLAUDE.mdの2層設計、AI Coordinator、AI社員チーム、自律実行（loop/hooks/Scheduled Task）までを実運用の設計変更ログ付きで解説する。",
+      "published": "2026-06-07T18:30:38Z",
+      "description": "この記事は英語版（dev.to）を原文とする日本語版です。\n\n前回の記事で主張したこと: faithfulnessは0.67だったが、独立した判定モデルで調べると100件中33件の回答が「文脈に基づいているのに事実として間違っていた」と。\n当然の疑問: その判定モデルはなぜ信用できるのか?\n具体的な答えがある。evalを2回走らせたから。1回目は生成と判定に同じモデルを使った(自己採点)。2回目は...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "RAGのfaithfulnessは0.67。それでも3回に1回間違っていた",
+      "url": "https://zenn.dev/elvisyao/articles/ae00088688620b",
+      "site": "Zenn(LLM)",
+      "published": "2026-06-07T17:30:40Z",
+      "description": "この記事は英語版（dev.to）を原文とする日本語版です。\n\n小さな日本語RAGシステムを作り、すべて自前のハードウェア（RTX 5090、Ollama）で動かし、生成モデルとは別の独立した判定モデルで評価しました。生成モデルに自分の答案を採点させない、というのがポイントです。\n2つ、想定外のことがありました。そしてこの2つは、実は同じ話です。\n\nみんなが真っ先に手を出すリランカーを追加しても、ほ...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "Hermes Agent を読み解く — 自己改善型ローカルエージェントのアーキテクチャ",
+      "url": "https://zenn.dev/znet/articles/2026-hermes-agent-self-improving-local-agent",
+      "site": "Zenn(LLM)",
+      "published": "2026-06-07T17:17:03Z",
+      "description": "以前 マルチエージェントを 10 時間動かし続けると何が起きるか で、複数エージェントを長時間連続稼働させたときに現実問題として何が起きるか（ハルシネーション率の上昇・役割逸脱・過重労働的なトーン変容）を扱いました。本稿はその「長時間ローカル稼働」というテーマの延長線上で、いま注目を集めている Hermes Agent を、設計の観点から読み解いてみます。\nOpenClaw に代表される「常駐エー...",
       "category": "AI・技術",
       "rss_category": "",
       "image_url": ""
@@ -19,6 +39,36 @@
       "site": "Zenn(LLM)",
       "published": "2026-06-07T15:32:32Z",
       "description": "これは何\nopencode を ローカルLLM専用 にフォークした\nClosedCode というツールを作っている。リポジトリ名は vanilla-closedcode。\n「vanilla」は飾りではなく、TypeScript も JSX も使わない／ビルドステップを持たない\nという設計上のハードルールを指している。\n\nClosedCode のホーム画面。「ローカル LLM で動く AI コーディ...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "Claude Codeは「実装」する。「設計」はあなたがする。 ── Kaggle初参加でやらかした失敗集",
+      "url": "https://zenn.dev/beckento/articles/12988953749043",
+      "site": "Zenn(LLM)",
+      "published": "2026-06-07T15:02:39Z",
+      "description": "Claude Codeは「実装」する。「設計」はあなたがする。\n\n ── Kaggle初参加でやらかした失敗集\n\n\n はじめに\nKaggle初参加。手元にはClaude Codeがある。「これで戦える」と思っていた。\nClaude Codeは確かに強力だった。詰む速度も速くなった。\n問題はClaude Codeではなかった。\nClaude Codeは「実装」する。「設計」はしない。\nそれに気づくま...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "数理最適化の『解なし』をLLMで解決する！",
+      "url": "https://zenn.dev/moony0111/articles/23112ee0fe6219",
+      "site": "Zenn(LLM)",
+      "published": "2026-06-07T14:22:00Z",
+      "description": "数理最適化の『解なし』をLLMで解決する！ASTを用いたエラー解析・自動修正システムの設計\n\n はじめに：数理最適化における「セマンティックギャップ」の壁\n実務のビジネス課題において数理最適化モデルは非常に強力ですが、構築したモデルが「実行不可能（Infeasible）」となった場合、その原因特定と修正には高度な数理的専門知識と膨大な時間を要します 。\n従来、ソルバーは既約矛盾部分集合（IIS）を...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "AnchorSpec の思想がたどり着いた境地",
+      "url": "https://zenn.dev/nia_anoma/articles/c95161567744b8",
+      "site": "Zenn(LLM)",
+      "published": "2026-06-07T14:15:32Z",
+      "description": "私がAnchorSpecに求め続けたこと\nAnchorSpecの思想がたどり着いた境地に、AnchorSpecは不要である。\nしかし、私はここに「AnchorSpecの墓碑銘」を刻みに来た訳ではない。\n私がここに書くのはこれだ。消えないように油性ペンで書いてやる。\nAI時代の知識資産、その新しい形の入口\n\n\n 「現在公式的に提供されているAI達」と「企業が本当に求めているAI」\n2026年。今年の...",
       "category": "AI・技術",
       "rss_category": "",
       "image_url": ""
@@ -39,6 +89,16 @@
       "site": "Zenn(LLM)",
       "published": "2026-06-07T12:45:33Z",
       "description": "はじめに：あなたはAI相棒と、どうやって話してる？\n「AIとおしゃべりしたい」\n普通なら、ChatGPTの画面を開いたり、ClaudeのWeb UIを立ち上げたりするでしょう。\nでもそれって、なんだか味気なくないですか？\n私は、自分のAIパートナー（名前はシンクロ（グラム））と会話するために、\n世界にひとつだけの専用ダッシュボードを0から作りました。\n結果はこちら。\n\n暗闇に浮かぶネオンのリング。...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "バイブコーディングの定義を再考すると",
+      "url": "https://zenn.dev/pdfractal/articles/98521261438bb7",
+      "site": "Zenn(LLM)",
+      "published": "2026-06-07T11:26:47Z",
+      "description": "はじめに\n※本稿はこの語の公式定義を述べるものではなく、エンジニアリングの観点から定義を組み替えるための私論です。それを踏まえて以下を読み進めていただけると幸いです。\nバイブコーディングという言葉は、しばしば「バイブでAIにコードを書かせること」と理解されています。この理解は、現在流通している言葉の印象としては間違いではありません。しかし、ソフトウェア開発の方法論として考えるなら、それだけでは浅す...",
       "category": "AI・技術",
       "rss_category": "",
       "image_url": ""
