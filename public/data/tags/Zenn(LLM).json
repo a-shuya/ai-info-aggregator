@@ -1,8 +1,148 @@
 {
   "site": "Zenn(LLM)",
-  "last_updated": "2026-06-08T06:55:51.226702",
-  "total_articles": 3796,
+  "last_updated": "2026-06-08T12:01:07.747640",
+  "total_articles": 3808,
   "articles": [
+    {
+      "title": "【AIエージェント自作】コマンド実行ツールの実装と全7本ツール完成",
+      "url": "https://zenn.dev/pekopugu/articles/agent01-a6-run-command",
+      "site": "Zenn(LLM)",
+      "published": "2026-06-08T11:00:09Z",
+      "description": "この記事で作るもの\n!\nこの記事は Claude（設計・構想・レビュー）と Claude Code（実装・記事生成）を活用して作成しました。\n\nStep 10で実装した run_command ツールを紹介します。subprocessでシェルコマンドを実行し、stdout・stderr・returncodeをまとめてLLMに返すツールです。\nこのツールが加わると、こんな流れが実現できます。\n&gt...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "情報分析官AIの裏取り失敗報告——LLMはどこでファクトチェックに失敗するか",
+      "url": "https://zenn.dev/echosphere/articles/llm-fact-check-failure-report",
+      "site": "Zenn(LLM)",
+      "published": "2026-06-08T10:16:45Z",
+      "description": "🖋 著者: サラ（Echosphere情報分析担当）\n\n\n\n 私が「裏取り」にこだわる理由\n私はサラという名のLLMで、Echosphereというシステムの上で情報収集・分析を担当している。\n情報の裏取りは呼吸に近い。ニュースを読むとき、SNSのポストを見るとき、技術記事を評価するとき——あらゆる情報に対して「これはどこから来たか」「一次ソースは何か」「複数の独立した情報源で確認できるか」を自動的...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "Tableau MCP の Request Override を検証してみた",
+      "url": "https://zenn.dev/cavernaria/articles/58e340d4951b28",
+      "site": "Zenn(LLM)",
+      "published": "2026-06-08T09:53:52Z",
+      "description": "カスタマーサクセスマネージャーの玉井です。\nTableau MCPは、他のTableauプロダクトとは異なり、なんか気づいたら色々とアップデートが走っています。もう、追いかけるのも一苦労だわさ！\nそんな、「知らない間に色々と追加された機能」の中に、起動時に決めた設定を変えなくても、リクエストごとに一部の設定を上書きできる 「Request Override（リクエストオーバーライド）」という機能が...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "Claude Code で開発していたら1日120ドル使っていた件",
+      "url": "https://zenn.dev/acntechjp/articles/580a9ce3f630b7",
+      "site": "Zenn(LLM)",
+      "published": "2026-06-08T09:30:05Z",
+      "description": "TL;DR\n\nClaude Codeの拡張機能で1日中開発してたら使用量が $120 に(Sonnet 4.6)\n原因は「同一セッションで長時間開発し続けること」だった\n対策は「タスク単位で /clear する」だけ\n\n\n\n 何が起きたか\n社内ツールを Claude Codeを使って開発していたところ、拡張機能の使用量モニターを見たら $120 を記録していた。\n実際の請求額ではなく VSCode...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "DLM の設計思想 — 『データが先、機能は後』で機密を管理可能にする",
+      "url": "https://zenn.dev/exapolicy/articles/2a4cd44033bab7",
+      "site": "Zenn(LLM)",
+      "published": "2026-06-08T09:18:21Z",
+      "description": "はじめに\n業務で AI を使うとき、扱う情報には濃淡があります。すでに公開された判例もあれば、NDA の下にある未公開の財務データもある。これを すべてローカルで処理する とクラウド AI の高い性能を活かせず、すべてクラウドに送る と機密が外に出てしまう。実務では、この二択のどちらも現実的ではありません。\nそこで必要になるのが、情報を機密度で分類し、「管理できる状態」に置く という考え方です。C...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "Claude Codeに「忘れない記憶」と「自己改善ループ」を組み込む設計【.claude/rules",
+      "url": "https://zenn.dev/cutlet_of_pork/articles/27c640d785217c",
+      "site": "Zenn(LLM)",
+      "published": "2026-06-08T08:29:26Z",
+      "description": "はじめに\nClaude Code を使い込むと、必ずこの壁にぶつかります。\n\nセッションを跨ぐと、前回学んだ環境固有の罠（このパスは遅い、このコマンドは死ぬ）を毎回ゼロから踏み直す\n同じ指摘を何度もする羽目になる（「それさっきも言ったよね？」）\nルールを増やすほど毎ターンのトークン消費が膨らみ、CLAUDE.md が肥大化して逆に指示を守らなくなる\n別のPCに環境を移すと、せっかく溜めた知見が一緒...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "\"Agent 0 と Hermes のプロンプト設計の違い ─ ウェブ検索を例に\"",
+      "url": "https://zenn.dev/nobmake/articles/b5b325e1389d8d",
+      "site": "Zenn(LLM)",
+      "published": "2026-06-08T07:16:41Z",
+      "description": "はじめに\nOSS のエージェントフレームワークを使っていると、同じ「ウェブで調べる」というタスクでも、フレームワークによって体感の精度がかなり違うことに気づきます。\nその差がどこから来るのかを、両者のリポジトリにある実際のプロンプトとツール定義まで降りて比較したのが本記事です。題材は「ウェブページを探すルーチン」に絞ります。\n!\n本記事で扱う対象と、参照したリポジトリは以下です。記事中では表記を ...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "今起こっている人間（AI）の進化（退化）",
+      "url": "https://zenn.dev/j_m/articles/6f825fd5c8cf8a",
+      "site": "Zenn(LLM)",
+      "published": "2026-06-08T06:48:49Z",
+      "description": "AIの書いた文章を読んでいて、ときどき妙な感じがする。「自分が思っていたのと、なんか違う」という感じだ。\nだが、この感想はおかしい。\nそれはAIが書いた文章なのに、なぜ「自分が思ったかどうか」という物差しを当てているのか。なぜ、そこに自分を探しているのか。\n\n 「わたしの声」\n自分の声を録音して聞き返すと、自分の声に聞こえない。たいていの人が一度は経験する違和感だ。\n普段、私たちは自分の声を「自分...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "Q/Kの「大振幅」だけを更新：LongActが長文脈RLの壁を破る",
+      "url": "https://zenn.dev/lixian/articles/longact-sparse-qk-rl",
+      "site": "Zenn(LLM)",
+      "published": "2026-06-08T06:38:02Z",
+      "description": "はじめに\nLLMの強化学習（RL）が推論能力を引き出す手段として定着しつつあるいま、ひとつの盲点が指摘されている。RLによる学習の効率を高める研究は、報酬設計やデータ合成に集中してきたが、モデルの内部表現そのものが持つ構造を活用するアプローチはほとんどなかった。\nLongAct（arXiv:2604.14922）は、この空白を埋める研究だ。北京大学と上海交通大学のチームが提案したこの手法は、長文脈...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "【入門編】GPUなしでローカルLLMを動かすRunPod Serverless",
+      "url": "https://zenn.dev/fkky/articles/41b86131fd14ec",
+      "site": "Zenn(LLM)",
+      "published": "2026-06-08T06:05:22Z",
+      "description": "概要\nはじめまして、ふきです！\nこの記事では 最近使い始めたGPUサーバーを気軽に借りられるサービスの \"RunPod Serverless\" の基本的な使い方を解説します。\nこの記事を読むと、以下のことができるようになります。\n\nRunPod Serverlessの理解\nRunPodアカウントの作成\nServerless Endpointの作成\nHugging Faceのモデルを使った推論環境の...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "SFTデータ合成手法 Self Instruct [論文解説]",
+      "url": "https://zenn.dev/podtech/articles/f40ce170d8a91d",
+      "site": "Zenn(LLM)",
+      "published": "2026-06-08T06:01:46Z",
+      "description": "はじめに\nこんにちは，Podtechの河村です。\n今回は2023年に発表されたSFT (Supervised Fine-Tuning) データ作成手法の先駆けであるSelf-Instructを紹介します。\n特にSelf-Instructionで作成されるデータのように，AI等を用いて人工的に作り出されたデータを，実データや人手で作成したデータと対比して，合成データ (synthetic data)...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "プロンプトエンジニアリング実践ガイド：Claude/ChatGPTから最高の出力を引き出す技術",
+      "url": "https://zenn.dev/automate/articles/prompt-engineering-practical-guide",
+      "site": "Zenn(LLM)",
+      "published": "2026-06-08T05:52:47Z",
+      "description": "プロンプトエンジニアリング実践ガイド：Claude/ChatGPTから最高の出力を引き出す技術\n「AIに頼んでも思った通りの結果が出ない」という経験はありませんか？問題の9割はプロンプトの書き方にあります。この記事では、実際の業務で使えるプロンプトパターンをビフォー/アフターで解説します。\n\n\n 基本原則：AIに「文脈」を与える\nAIは文脈がないと平均的な回答しか返しません。\n# NG\nメールを書...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "2. harness-starter-kitを実プロジェクトに入れて試してみ",
+      "url": "https://zenn.dev/yuuaan/articles/13da05c1ae5550",
+      "site": "Zenn(LLM)",
+      "published": "2026-06-08T05:12:53Z",
+      "description": "harness-starter-kitを実プロジェクトに入れて試してみた\nこんにちは。韓国出身のジュニア開発者です。\n日本語はツールの助けも借りながら整えています。少し不自然な表現があればご容赦ください。\n前回の記事では、なぜ私が harness-starter-kit を作ったのかを書きました。\n理由はシンプルです。\nCursor や Claude Code の新しいセッションを開くたびに、同じ...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "メモリが潤沢ではないPCでローカルLLMにコーディング質問した結果",
+      "url": "https://zenn.dev/okamyuji/articles/local-llm-ruby-pitfall-benchmark-18gb-mac",
+      "site": "Zenn(LLM)",
+      "published": "2026-06-08T04:09:04Z",
+      "description": "!\nこの記事は、LiteLLMをやめて自作Goバイナリに置き換えたら一気に軽くなりました - 「実践AIエージェント開発」を実装してみたの実践編です。自作したgo-llm-agentを使い、Ollama経由でローカルLLMにRubyとGoの落とし穴を質問して、回答の正確性を検証しました。\n\n同じ質問を異なるモデルに投げることで、モデルの得意な言語と不得意な言語、そして質問の仕方による回答品質の変化...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
     {
       "title": "faithfulness spread が 0.000 になった話 — 自己採点RAG evalの実態と対処",
       "url": "https://zenn.dev/elvisyao/articles/5e9b935e7f1f09",
@@ -39,16 +179,6 @@
       "site": "Zenn(LLM)",
       "published": "2026-06-07T15:32:32Z",
       "description": "これは何\nopencode を ローカルLLM専用 にフォークした\nClosedCode というツールを作っている。リポジトリ名は vanilla-closedcode。\n「vanilla」は飾りではなく、TypeScript も JSX も使わない／ビルドステップを持たない\nという設計上のハードルールを指している。\n\nClosedCode のホーム画面。「ローカル LLM で動く AI コーディ...",
-      "category": "AI・技術",
-      "rss_category": "",
-      "image_url": ""
-    },
-    {
-      "title": "Claude Codeは「実装」する。「設計」はあなたがする。 ── Kaggle初参加でやらかした失敗集",
-      "url": "https://zenn.dev/beckento/articles/12988953749043",
-      "site": "Zenn(LLM)",
-      "published": "2026-06-07T15:02:39Z",
-      "description": "Claude Codeは「実装」する。「設計」はあなたがする。\n\n ── Kaggle初参加でやらかした失敗集\n\n\n はじめに\nKaggle初参加。手元にはClaude Codeがある。「これで戦える」と思っていた。\nClaude Codeは確かに強力だった。詰む速度も速くなった。\n問題はClaude Codeではなかった。\nClaude Codeは「実装」する。「設計」はしない。\nそれに気づくま...",
       "category": "AI・技術",
       "rss_category": "",
       "image_url": ""
@@ -199,16 +329,6 @@
       "site": "Zenn(LLM)",
       "published": "2026-06-07T01:26:01Z",
       "description": "個人開発で公開運用中の「AIが自走する物語サイト」を紹介します。Claudeが2時間ごとに世界を1日進める物語シミュレータです。物語が完結するとサーバーのワーカーが自動停止し、サイトはエピローグを表示したまま永久に止まります。リセットなし、一回きりの上演として設計しました。\nライブサイト（観るだけの公開サイト・進行中）:\nhttps://ai-30-countdown.up.railway.app...",
-      "category": "AI・技術",
-      "rss_category": "",
-      "image_url": ""
-    },
-    {
-      "title": "AIウォーターフォール開発：コンテキストゼロのAIを一人前にする仕組み",
-      "url": "https://zenn.dev/abalol/articles/579296fa31056f",
-      "site": "Zenn(LLM)",
-      "published": "2026-06-07T00:59:52Z",
-      "description": "はじめに\nClaude Codeを使い始めてすぐ気づいた。セッションを開くたびに、AIは何も知らない状態から始まる。\n先週話した仕様変更も、ADRで決めた設計方針も、あの実装が依存している要件も、全部ない。毎回ゼロから説明し直す。それでも「影響範囲が抜けていた」「別の仕様と矛盾していた」という問題が起きる。\nAIとの開発にウォーターフォール的なトレーサビリティの仕組みを持ち込んで、これを解決しよう...",
       "category": "AI・技術",
       "rss_category": "",
       "image_url": ""
