@@ -1,14 +1,54 @@
 {
   "site": "Zenn(機械学習)",
-  "last_updated": "2026-06-08T01:58:49.656305",
-  "total_articles": 1190,
+  "last_updated": "2026-06-08T06:55:51.226702",
+  "total_articles": 1192,
   "articles": [
+    {
+      "title": "2026年5月リリース！AIデータセンター GPUサーバー 時間貸しプランを使ってみた",
+      "url": "https://zenn.dev/softbank/articles/12f33348e0025d",
+      "site": "Zenn(機械学習)",
+      "published": "2026-06-08T05:00:06Z",
+      "description": "こんにちは、井手です。\n「高性能なGPU環境を使ってみたいけれど、まずは短時間だけ試したい」\nこのように感じたことはないでしょうか。\n本記事では、ソフトバンクが2026年5月11日に提供を開始した「AIデータセンター GPUサーバー NVIDIA DGX A100 時間貸しプラン」を利用し、NVIDIAのソフトウェアプラットフォーム「NVIDIA® NGC™」を活用した大規模言語モデル（Large...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "小さいLLMが希少スキルを学べないのは「容量不足」ではなかった：勾配の上書きで毎回忘れていた",
+      "url": "https://zenn.dev/hironakamura_ai/articles/f8a70675afd455",
+      "site": "Zenn(機械学習)",
+      "published": "2026-06-08T04:23:55Z",
+      "description": "きのう the-decoder が報じた研究の一文が、ずっと頭に残っている。OLMo を 4M から 4B パラメータまで揃えて 210B トークン学習させ、わざと出現頻度を変えた人工タスクを混ぜたところ、「10 バッチに 1 回くらい（およそ 0.25%）しか出てこないタスク」を学習できたのは大きいモデルだけだった、という結果だ（Anthropic とスタンフォードらのチーム）。\nこれが意味する...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "Linuxだけ置き去り？ClaudeのAI格差",
+      "url": "https://zenn.dev/lingmu/articles/2026-06-08-claude-desktop-linux-demand",
+      "site": "Zenn(機械学習)",
+      "published": "2026-06-07T22:13:53Z",
+      "description": "Linuxだけ置き去り？ClaudeのAI格差\n2026-06-08 | 読了 3分 | #Claude #Linux #AI開発\n「開発者のためのAI」を謳うAnthropicが、開発者の主戦場を後回しにしている。GitHubには今日も不満の声が積み重なり、HackerNewsでは407票が集まった。これは単なる要望ではなく、AI民主化の矛盾を突く問いだ。\n\n\n LinuxユーザーはClaude...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "競馬AI開発記録 #16 リークなき環境でエッジを掘り当てる：動的特徴量と「凡走サイン」の特定",
+      "url": "https://zenn.dev/ricotiler/articles/keiba-ai-16-dynamic-features-and-negative-signs",
+      "site": "Zenn(機械学習)",
+      "published": "2026-06-07T20:42:58Z",
+      "description": "1. 概要\n前回（第15話）では、バックテストにおける異常な高ROIの原因が「構造的データリーク」にあることを特定し、時点固定（Point-in-Time）特徴量生成による物理的なデータ隔離を実装しました。\nリークを完全に排除したクリーンな環境で再評価を行った結果、穴馬検知モデルの的中率はランダムベースライン（約2.28%）と同等まで低下し、これまでの予測モデルが「未来の情報」に依存していたことが...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
     {
       "title": "scikit-learnパイプラインで作る、再現性のある機械学習モデル",
       "url": "https://zenn.dev/ds_ai_lab/articles/20260606-sklearn-pipeline",
       "site": "Zenn(機械学習)",
       "published": "2026-06-07T16:11:33Z",
-      "description": "はじめに\n「ローカルでは動くのに、本番環境でエラーが出る」\n「前処理の順番を間違えてデータリークが起きた」\n機械学習モデルを実装していると、こういった問題に頻繁に遭遇します。原因の多くは、前処理とモデル訓練がバラバラに管理されていることにあります。\nscikit-learn の Pipeline を使うと、前処理からモデル訓練・推論までを一つの流れとして管理できます。本記事では、Pipelineの...",
+      "description": "はじめに\n「ローカルでは動くのに、本番環境でエラーが出る」\n「前処理の順番を間違えてデータリークが起きた」\n機械学習モデルを実装していると、こういった問題に頻繁に遭遇します。原因の多くは、前処理とモデル訓練がバラバラに管理されていることにあります。\n本記事では、Pipelineの背景にある数式・使い所・実装を3点セットで解説します。\n\n\n 標準化（StandardScaler）\n\n いつ使うか\n\n...",
       "category": "AI・技術",
       "rss_category": "",
       "image_url": ""
@@ -169,26 +209,6 @@
       "site": "Zenn(機械学習)",
       "published": "2026-06-05T04:09:18Z",
       "description": "エンコーダーを捨てるという選択\nマルチモーダルモデルの作り方が、静かに一段変わりました。\nこれまで画像や音声を扱うモデルは、ほぼ例外なく「専用エンコーダー」を前段に置いてきました。画像なら CLIP や SigLIP のような視覚エンコーダー、音声なら音声エンコーダーで信号を一度「意味のあるベクトル」に変換し、それを言語モデル（LLM）につなぐ。これがここ数年の定番構成でした。\n2026年6月3日...",
-      "category": "AI・技術",
-      "rss_category": "",
-      "image_url": ""
-    },
-    {
-      "title": "ニューラルネットワーク基礎（Part 4：Back Propagationの学習効率化）",
-      "url": "https://zenn.dev/aizakovzky/articles/6cce0e1dffd065",
-      "site": "Zenn(機械学習)",
-      "published": "2026-06-05T02:42:08Z",
-      "description": "Back Propagationの学習効率化\nBack Propagationの学習効率化はさまざまな手法がある．今回は，逐次修正法，一括修正法，モーメント法の3つに着目する．\n\n 逐次修正法\n逐次修正法は，各入力パターンに対して，修正量を計算した後に即座に重みと閾値を修正する手法である．修正量が少なく，修正回数が多いため，極小値へ収束するスピードが遅く，プラトーから抜けにくい．この手法は，前回の...",
-      "category": "AI・技術",
-      "rss_category": "",
-      "image_url": ""
-    },
-    {
-      "title": "ニューラルネットワーク基礎（Part 3：0から実装）",
-      "url": "https://zenn.dev/aizakovzky/articles/1a74e6f5133e89",
-      "site": "Zenn(機械学習)",
-      "published": "2026-06-05T02:39:09Z",
-      "description": "ニューラルネットワークの実装\nXOR演算を実現するニューラルネットワークを考える．入力が2つ，出力が1つなため，入力ニューロンを2つ，出力ニューロンを1つとする．中間ニューロンを2つとする．XORは入力が，00, 01, 10, 11の4パターンがあり，それぞれに対して0, 1, 1, 0が正解である．これを教師信号として扱う．重みや閾値はランダムに初期化する．\n\nPythonで前回説明したニュー...",
       "category": "AI・技術",
       "rss_category": "",
       "image_url": ""
