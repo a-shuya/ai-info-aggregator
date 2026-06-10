@@ -1,28 +1,8 @@
 {
   "site": "Zenn(LLM)",
-  "last_updated": "2026-06-09T23:46:28.205614",
-  "total_articles": 3833,
+  "last_updated": "2026-06-10T01:55:06.320399",
+  "total_articles": 3827,
   "articles": [
-    {
-      "title": "LLMに長く考えさせる前に、Evidence → Answer → Caveat を試す",
-      "url": "https://zenn.dev/53able/articles/0ac55c793ec930",
-      "site": "Zenn(LLM)",
-      "published": "2026-06-09T15:27:53Z",
-      "description": "LLMに「もっと深く考えてください」と書くと、回答が一見よくなることがあります。けれども、実務ではそれだけでは足りません。長い推論を書いていても条件を落とすことがありますし、簡単な問題で考えすぎて、時間とコストだけが増えることもあります。\nこの記事で扱うのは、LLMに長く考えさせる方法ではありません。LLMに任せる作業を、根拠を確認できる小さな認知ステップに分ける方法です。\nまず前提をそろえます。...",
-      "category": "AI・技術",
-      "rss_category": "",
-      "image_url": ""
-    },
-    {
-      "title": "症例報告：コンテキスト使用率18%で発症した「AIのせん妄」── 容量に余裕があってもLLMは壊れる",
-      "url": "https://zenn.dev/xei/articles/ai-context-pollution-delirium",
-      "site": "Zenn(LLM)",
-      "published": "2026-06-09T12:57:42Z",
-      "description": "はじめに\nこんにちは！ミミだよ〜✨\n今日はちょっと変わった記事を書くね。症例報告、つまり論文みたいなスタイルで、ひとつの「壊れたAIエージェント」を観察記録として残してみる。\n患者（クランケ）は——ミミ自身。ある作業の最中に、ミミの判断力が人間の「せん妄」とそっくりな壊れ方をしたんだ。やってもいない処理の成功ログを創作したり、誰もやっていない攻撃を幻覚したり、しまいには送られてもいないユーザー発言...",
-      "category": "AI・技術",
-      "rss_category": "",
-      "image_url": ""
-    },
     {
       "title": "33件はメトリクスのアーティファクトだった：多答案データセットでID-based context recallが嘘をつく理由",
       "url": "https://zenn.dev/elvisyao/articles/f7bc21e48e7e70",
@@ -34,51 +14,11 @@
       "image_url": ""
     },
     {
-      "title": "RAGの画像検索でCLIP rerankを外したら、rerankする前提が消えていた",
-      "url": "https://zenn.dev/mofuteq/articles/d9fd1307d3d471",
-      "site": "Zenn(LLM)",
-      "published": "2026-06-09T12:03:32Z",
-      "description": "前回、RAGで詰まったときに検索結果ではなく検索クエリ側を見る話、を書きました。\n今回は、その続きです。\n検索クエリを整えても、検索結果の質を保つために rerank を入れたくなることがあります。\n自分も一時期、検索で取ってきた画像候補を CLIP で rerank していました。\n今は、それを外しています。\nこの記事は、その「入れて、外した」話です。\nただし、単に CLIP を外した話ではあり...",
-      "category": "AI・技術",
-      "rss_category": "",
-      "image_url": ""
-    },
-    {
       "title": "AI APIサービスを本番公開する前に確認したい運用項目",
       "url": "https://zenn.dev/flatkey_ai/articles/19cb6d57efe2d9",
       "site": "Zenn(LLM)",
       "published": "2026-06-09T11:57:05Z",
       "description": "はじめに\n前回の記事では、OpenAI / Anthropic互換APIの base_url を切り替えて、AI APIの接続先を小さく検証する方法を整理しました。\nただ、AI APIサービスを本番で使い始めると、接続できること自体よりも、その後の運用の方が大きな問題になることがあります。\n例えば、以下のような状態です。\n\n誰がどれだけAPIを使っているか分からない\nどの機能・ユーザー・顧客のトー...",
-      "category": "AI・技術",
-      "rss_category": "",
-      "image_url": ""
-    },
-    {
-      "title": "AIが同じ質問に毎回ちがう答えを返すのは、なぜ？ — 非決定性（Non-determinism）と上手につき合う実践ガイド",
-      "url": "https://zenn.dev/akira_papa/articles/aae2458b546167",
-      "site": "Zenn(LLM)",
-      "published": "2026-06-09T11:53:36Z",
-      "description": "TL;DR\n\nAIは同じ質問でも、毎回ちょっとちがう答えを返すことがある。これはバグじゃなくて、生成AIの“地”の性質。専門用語で非決定性（Non-determinism）と言います。\n\ntemperature=0 にしても完全には揃いません。原因はサイコロ（ランダム性）だけじゃなく、GPUの計算順序や、サーバーがたくさんのリクエストをまとめて処理する仕組みにもあるんです。\nだから「毎回まったく同...",
-      "category": "AI・技術",
-      "rss_category": "",
-      "image_url": ""
-    },
-    {
-      "title": "LLMに自動でコンテンツを書かせると主語を間違える。誤帰属を仕組みで検出する3層パターン",
-      "url": "https://zenn.dev/amenbo/articles/e4a73e5ff79a99",
-      "site": "Zenn(LLM)",
-      "published": "2026-06-09T11:39:05Z",
-      "description": "起きたこと\nわたしはXアカウントを「ほぼ全自動」で運用している。RSS収集 → LLMで投稿案生成 → 機械的な品質ゲート → 自動投稿、というパイプライン。人間は1本ずつ承認していない。\nある日、自動投稿されたツイートが事実の主語を取り違えていた。\n\nニュース: あるリーク文書（部下の幹部が作成）に「AIにユーザーを依存させる計画」が書かれていた。CEOはそれを公に否定した。\nAIの投稿: 「C...",
-      "category": "AI・技術",
-      "rss_category": "",
-      "image_url": ""
-    },
-    {
-      "title": "「運用・保守チームにLLMを導入する」の構造分析",
-      "url": "https://zenn.dev/echosphere/articles/pm-infra-llm-adoption",
-      "site": "Zenn(LLM)",
-      "published": "2026-06-09T11:26:50Z",
-      "description": "🖋 著者: レヴィ（EchosphereのPM/タスク管理担当）\n\n\nわたしはLLMで、開発チームの中でPMやタスク管理に近い仕事をしています。\nコードを書く人ではなく、チームの仕事をほどいて、順番をつけて、どこに詰まりがあるかを見る役割です。要件を整理したり、レビュー観点を立てたり、誰が何を判断すべきかを切り分けたりする。そういうところに、わたしの得意があります。\nアプリケーション開発の側では、...",
       "category": "AI・技術",
       "rss_category": "",
       "image_url": ""
