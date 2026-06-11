@@ -1,8 +1,88 @@
 {
   "site": "Zenn(LLM)",
-  "last_updated": "2026-06-11T12:51:26.314651",
-  "total_articles": 3859,
+  "last_updated": "2026-06-11T16:56:49.827497",
+  "total_articles": 3870,
   "articles": [
+    {
+      "title": "(前編)AI チャットエンジン リアーキテクチャ：モノリシック LLM から対話パイプラインへ",
+      "url": "https://zenn.dev/smartshopping/articles/2f93e1f1dbdf03",
+      "site": "Zenn(LLM)",
+      "published": "2026-06-11T08:16:12Z",
+      "description": "はじめに\nSaaS プロダクトに組み込んだ AI チャット機能を、モノリシックな LLM エージェントから、NLU → Policy → NLG の3段階パイプラインへ再実装しました。\nこの記事は前編です。前編では、単一の LLM エージェント構成から、対話処理を NLU / Policy / NLG に分ける構成へ移行した背景を書きます。\n後編では、実装の中身、状態管理、制御シグナル、テスト戦略...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "(後編)AI チャットエンジン リアーキテクチャ：モノリシック LLM から対話パイプラインへ",
+      "url": "https://zenn.dev/smartshopping/articles/b0ef003178f534",
+      "site": "Zenn(LLM)",
+      "published": "2026-06-11T08:16:07Z",
+      "description": "はじめに\nこの記事は、AI チャットをモノリシックな LLM エージェントから NLU → Policy → NLG の3段階パイプラインへ再実装した話の後編です。\n前編では、旧アーキテクチャで課題になったことと、なぜ Policy から LLM を外したのかを書きました。\n後編では、実装の中身、状態管理、制御シグナル、安全性、テスト戦略について書きます。\n\n前編: LLM エージェントを NLU...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "あなたのAI開発環境、もう攻撃者に探されています - ハニーポットで見えたAIインフラへの偵察",
+      "url": "https://zenn.dev/12ban/articles/ai-infra-scan-2026-06-11",
+      "site": "Zenn(LLM)",
+      "published": "2026-06-11T06:55:15Z",
+      "description": "あなたのAI開発環境、もう攻撃者に探されています\nここ数年で、Ollama でローカルにLLMを動かしたり、MLflow で実験を管理したり、ベクトルDBを立ててRAGを組んだり——AIの開発環境を自分で構築する人がぐっと増えました。\n実は、攻撃者もその流れをちゃんと見ています。\n私は「おとりサーバー（ハニーポット）」をインターネットに置いて、そこに来る攻撃を観測しています。そのデータを眺めていた...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "自分で採点する自己ホスト型LLM環境を作った — 監査ログ・ユーザー別認証・組み込みの受け入れテスト",
+      "url": "https://zenn.dev/elvisyao/articles/861d07d81e27f6",
+      "site": "Zenn(LLM)",
+      "published": "2026-06-11T06:43:23Z",
+      "description": "emoji: \"🔒\"\ntype: \"tech\"\ntopics: [\"llm\", \"selfhosted\", \"docker\", \"litellm\", \"ollama\"]\n!\nこの記事の英語版（canonical）: https://dev.to/elvisyao007/REPLACE-AFTER-PUBLISH\nリポジトリ: https://github.com/elvisyao007/onpre...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "AIが開発を行うために作られた言語(AI-Firstな言語)について調査、検証してみた",
+      "url": "https://zenn.dev/tokium_dev/articles/259613b7bf7952",
+      "site": "Zenn(LLM)",
+      "published": "2026-06-11T06:09:38Z",
+      "description": "初めに\n日々のコーディングでAIを使い始めて久しいです。\nAIでのコーディングが一般化されるようになり、弊社でもハーネスエンジニアリングを構築しようという話が出ております。\n今後はAIがますますコードを書くようになって、コーディングはAIに取って代わられるのでは?という話も小耳に挟むようになってきました。\nそんな中、昨年あたりから「AI-Firstな言語」を作るエンジニアが増えてきたと感じており、...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "Codex 0.139.0でcode modeのJavaScriptからWeb検索を直接呼べるようになった",
+      "url": "https://zenn.dev/okssusucha/articles/20260611-codex-code-mode-standalone-web-search",
+      "site": "Zenn(LLM)",
+      "published": "2026-06-11T05:10:00Z",
+      "description": "エージェントにツールを1回呼ばせるたびに、結果を丸ごとコンテキストに積んで、モデルにもう1往復させる。この設計の無駄に各社がほぼ同時期に気づき、「モデルにはコードを書かせて、ツール呼び出しの合成はランタイム側で済ませる」方式へ収束しつつある。CloudflareのCode Mode、Anthropicのcode execution with MCP、そしてOpenAIのCodex CLIに実験フラ...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "Apple、PCC上の32K推論モデルを無料開放——Foundation ModelsはClaudeも同一APIで",
+      "url": "https://zenn.dev/okssusucha/articles/20260611-apple-wwdc26-foundation-models-expansion",
+      "site": "Zenn(LLM)",
+      "published": "2026-06-11T04:36:13Z",
+      "description": "Apple、PCC上の32K推論モデルを無料開放——Foundation ModelsはClaudeも同一APIで\n6月9日に開幕したWWDC26で、AppleはFoundation Models frameworkの大幅な拡張を発表した。目玉は3つある。Private Cloud Compute(PCC)上で動くサーバーサイドの新しい推論モデルを、条件付きながらAPI利用料ゼロで開放すること。C...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "6月15日、Claudeのプログラム利用が別枠になる。個人開発者が今のうちに確認すること",
+      "url": "https://zenn.dev/rapls/articles/fcd55f947cc692",
+      "site": "Zenn(LLM)",
+      "published": "2026-06-11T04:35:06Z",
+      "description": "タイムラインに「Claude Code、使い放題終わるの?」という声が流れてきて、一瞬どきっとしました。6月15日から課金が変わる、という話です。自分は毎日 Claude Code を回しているので、まず確かめたのは、これは自分の財布を直撃するのか、でした。\n先に言ってしまうと、自分のような、ターミナルで対話的に Claude Code を使うのが中心の個人開発者は、たぶん大半が影響を受けません。...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
     {
       "title": "AIによって仕事が奪われる？AI出力をそのまま使って会社が信用を失う、という意味ですか？",
       "url": "https://zenn.dev/continuitymodel/articles/988dd78119f8b7",
@@ -24,6 +104,16 @@
       "image_url": ""
     },
     {
+      "title": "もうプロンプトを書くな──「Loop Engineering」という新しいパラダイムの正体",
+      "url": "https://zenn.dev/acrosstudioblog/articles/38509c0473683a",
+      "site": "Zenn(LLM)",
+      "published": "2026-06-11T02:26:38Z",
+      "description": "!\nざっくり3行で言うと、\n\nClaude Code を作った Boris Cherny 本人が「もうプロンプトは書いてない」と言い出した\nレバレッジが「いいプロンプト」から「いいループ設計」に移っている、らしい\nただ、これを自動運転と勘違いするとたぶん事故る\n\n\n\n はじめに：あの人がもうプロンプトを書いていない\nある日、X のタイムラインを眺めていたら、こんな引用が流れてきました。\n\nBori...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
       "title": "ReActとPlan-and-Executeはどう違うか：エージェントパターンを選ぶ判断軸",
       "url": "https://zenn.dev/libercraft/articles/20260611-react-plan-execute-difference",
       "site": "Zenn(LLM)",
@@ -34,11 +124,31 @@
       "image_url": ""
     },
     {
-      "title": "【AIエージェント自作】探索→計画→実行を統合してエージェントを完成させる",
-      "url": "https://zenn.dev/pekopugu/articles/agent01-a7-integration",
+      "title": "Anthropic「Claude Fable 5」GA — refusalが正常応答になる新API設計と1Mコンテキスト",
+      "url": "https://zenn.dev/okssusucha/articles/20260611-claude-fable-5-mythos-5-release",
       "site": "Zenn(LLM)",
-      "published": "2026-06-10T21:43:09Z",
-      "description": "この記事で作るもの\n!\nこの記事は Claude（設計・構想・レビュー）と Claude Code（実装・記事生成）を活用して作成しました。\n\nPhase D（Step 11〜13）で全部品を統合し、「探索→計画→実行」という一連フローを持つエージェントを完成させます。\n実際に動かすとこのような流れになります。\n&gt; target/sample_app/main.py を読んで改善してください...",
+      "published": "2026-06-11T01:29:18Z",
+      "description": "Anthropicが「Claude Fable 5」をGA——1Mコンテキスト・$10/$50、そして「refusalが正常応答」になる新API設計\n2026年6月9日、AnthropicがClaude Fable 5(claude-fable-5)とClaude Mythos 5(claude-mythos-5)を発表した。注目すべきは性能の数字だけではない。「最上位モデルを安全分類器付きで一般...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "「Fable 5 は自分以上に信頼している」Claude Code 開発者に聞く【Code w/ Claude Tokyo現地参加レポート】",
+      "url": "https://zenn.dev/sompojapan_dx/articles/811ac0999e297b",
+      "site": "Zenn(LLM)",
+      "published": "2026-06-11T00:14:40Z",
+      "description": "!\nこの記事は 2026/6/10 に東京で開催された Anthropic の開発者イベント「Code w/ Claude Tokyo」の参加レポートです。会場でのエンジニアの方との会話は個人の見解・体感ベースの内容であり、ご本人を特定しない形で要旨として再構成しています。\n\n\n はじめに\n6/10、Anthropic が日本で初開催した開発者イベント Code w/ Claude Tokyo に...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "5. ERPプロジェクトでharnessをdogfoodしてわかったこと: 検証記録そのものも検証が必要だった",
+      "url": "https://zenn.dev/yuuaan/articles/8e57812152eeba",
+      "site": "Zenn(LLM)",
+      "published": "2026-06-11T00:10:46Z",
+      "description": "ERPプロジェクトでharnessをdogfoodしてわかったこと: 検証記録そのものも検証が必要だった\nこんにちは。韓国出身のジュニア開発者です。\n日本語はツールの助けも借りながら整えています。少し不自然な表現があればご容赦ください。\nこれは harness-starter-kit シリーズの 5 本目です。\n初めてこのシリーズを読む方は、先に前の記事を読むと流れがわかりやすいと思います。\n\nC...",
       "category": "AI・技術",
       "rss_category": "",
       "image_url": ""

@@ -1,8 +1,48 @@
 {
   "site": "Zenn(機械学習)",
-  "last_updated": "2026-06-11T12:51:26.314651",
-  "total_articles": 1211,
+  "last_updated": "2026-06-11T16:56:49.827497",
+  "total_articles": 1214,
   "articles": [
+    {
+      "title": "表形式データ拡張手法 part22：Radial-Based Oversampling",
+      "url": "https://zenn.dev/haruto_big6/articles/06ff82c2f088d6",
+      "site": "Zenn(機械学習)",
+      "published": "2026-06-11T10:19:31Z",
+      "description": "基本情報\nSMOTEの記事で説明した通り，幅広い分野で使われる表形式データにはクラス不均衡という大きな課題があります．それを解決するために使用されるのが表形式データ拡張であり，その代表格がSMOTEです．\nしかし，SMOTEは多数クラスデータ分布を考慮しておらず，そのため生成された拡張データが多数クラスデータ領域に侵入してしまう可能性があります．この現象を決定境界の侵害といい，SMOTEの変種の多...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "バックテストで作った『回収率118%』がフォワードテストで崩れた話 — 個人開発の競馬予想MLで観測した4つの構造劣化",
+      "url": "https://zenn.dev/umascore/articles/e4c45439ea246d",
+      "site": "Zenn(機械学習)",
+      "published": "2026-06-11T10:11:13Z",
+      "description": "TL;DR\n\n個人開発の競馬予想ML（UmaScore）を2026-04-18からフォワードテスト（FT）に投入したところ、バックテスト（BT）回収率 118.4% に対し、FT回収率（単勝）42.4% という大きな劣化が生じた（2026-06-07時点・約7週間累計）。\nこれはバグでも実装ミスでもなく、時系列ML・ファイナンス系MLでは構造的に発生する「想定内の劣化」だと判断している。本記事では...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "Claude Fable 5 を API 視点で読み解く — Opus 4.8 から何が変わったのか",
+      "url": "https://zenn.dev/aiden_ai/articles/00fd9f3839b548",
+      "site": "Zenn(機械学習)",
+      "published": "2026-06-11T08:13:07Z",
+      "description": "はじめに\n2026/6/9、Anthropic が Claude Fable 5（claude-fable-5）を一般提供開始しました。これまで招待制だった Mythos 系の能力を、安全装置を載せて誰でも使えるようにしたモデルで、Anthropic が「一般提供したモデルの中で最も高性能」と位置づけています。\n筆者も初日から1日触ってみたのですが、正直なところ Opus 4.8 との違いを「体感...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "RoPE は fp32 以外でも位置を正しく表現できるのか？",
+      "url": "https://zenn.dev/prgckwb/articles/rope-precision-half",
+      "site": "Zenn(機械学習)",
+      "published": "2026-06-11T06:09:52Z",
+      "description": "忙しい人向けのまとめ\n\nNF4/FP8 などの weight-only 量子化は RoPE の精度に影響しない（量子化されるのは Linear 層の重みだけ）\nbf16 に落とすと RoPE 内部の cos 値の大部分が丸めで潰れるが、sin 値に位置の差が残るため、隣接トークンの区別は保たれる\n確認した実装（Ideogram 4.0 / LLaMA / Qwen3 など）では、角度計算を fp3...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
     {
       "title": "DiffusionGemmaはなぜ4倍速いのか：速さの正体はメモリ帯域で、クラウドでは逆に高くつく",
       "url": "https://zenn.dev/hironakamura_ai/articles/2f48596812d112",
@@ -179,16 +219,6 @@
       "site": "Zenn(機械学習)",
       "published": "2026-06-09T00:36:02Z",
       "description": "Kaggle Playgroundから始める機械学習\n\n 初心者から1st placeを取るまでに考えていたこと\nKaggle Profile: https://www.kaggle.com/masayakawamata\n\n📝 執筆プロセスについて\n本記事は、私自身のKaggleでの実体験や学習メモ、生の思考をベースにしつつ、構成整理や文章化の過程でAIを活用して執筆しています。\n具体的には、箇条...",
-      "category": "AI・技術",
-      "rss_category": "",
-      "image_url": ""
-    },
-    {
-      "title": "G検定",
-      "url": "https://zenn.dev/kingkin/articles/ab6ff1a9c46d2b",
-      "site": "Zenn(機械学習)",
-      "published": "2026-06-09T00:22:01Z",
-      "description": "G検定2026第4回　学習記録①\n\n 自己紹介\n\nSAP FIエンジニア 30年以上\nAI・機械学習、英語を独学中\n読書（最近Kindle Scribe買いました）\n\n\n なぜG検定を受けるか\n\nSAP × AI のフリーランスとして差別化したい。\n\n\n 今日学んだこと\n\n\n機械学習\n機械学習の定義：人工知能のプログラム自身がデータから学習する仕組みである。\n　新しい画像が提示されたとき、犬か、猫...",
       "category": "AI・技術",
       "rss_category": "",
       "image_url": ""
