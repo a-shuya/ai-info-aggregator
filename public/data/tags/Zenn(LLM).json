@@ -1,14 +1,114 @@
 {
   "site": "Zenn(LLM)",
-  "last_updated": "2026-06-13T14:33:23.987238",
-  "total_articles": 3908,
+  "last_updated": "2026-06-13T16:03:08.723739",
+  "total_articles": 3918,
   "articles": [
     {
-      "title": "Fable 5 はどんなコーディング特性だったのか——Opus 4.8 と統計的に比較した記録（オトナの自由研究 #26）",
+      "title": "CLAUDE.mdに書いたのに守られない——その正体は「渡す場所」の設計だった（Zenn Book Vol.4「仕組みを渡すまで」）",
+      "url": "https://zenn.dev/tottoko_hamu/articles/2026-06-11-173500",
+      "site": "Zenn(LLM)",
+      "published": "2026-06-13T15:35:25Z",
+      "description": "この記事の概要（2026年6月）: Claude Codeに「仕組み」を渡すための部品論をまとめたZenn Book Vol.4「コードを書けない私がClaude Codeに『仕組み』を渡すまで」を紹介する。「CLAUDE.mdに書いたのに守られない」「サブエージェントに指示を渡したのに動かない」というモヤモヤの正体を、Claude Codeが自分で動けるようになるための7つのレイヤー（CLAUD...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "LLMは長文を本当に読めているのか？「Lost in the Middle」から考えるRAG設計",
+      "url": "https://zenn.dev/japan/articles/73ad921caeb0bd",
+      "site": "Zenn(LLM)",
+      "published": "2026-06-13T15:05:33Z",
+      "description": "LLMアプリケーションを作っていると、次のような発想になりがちです。\n\nコンテキストウィンドウが大きいモデルを使えば、とりあえず大量のドキュメントを詰め込めばよいのでは？\n\nしかし、実際にはそう単純ではありません。\nLLMには、長い入力の中に含まれる情報を均等に扱えないことがあります。特に、重要な情報が入力の真ん中付近にあると、モデルがそれをうまく利用できず、回答精度が落ちることがあります。\nこの...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "LLMOps学習でBedrock + Claudeを動かしてみた",
+      "url": "https://zenn.dev/yukika/articles/20260613_bedrock_claude_first_step",
+      "site": "Zenn(LLM)",
+      "published": "2026-06-13T14:58:56Z",
+      "description": "はじめに\nこんにちは。\n最近、LLMOpsに興味を持ち始めました。\nClaude Codeはよく触っているのですが、LLMをプログラムから呼び出して使う、みたいなことはやったことがありませんでした。\nBedrockもまともに触ったことがなかったので、併せて試してみることにしました。\n\n やってみたこと\nまずは基本からということで、Bedrock経由のClaudeを呼び出して、応答テキストを取得して...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "多層プロンプトスキーマ（Hierarchical Prompt Schema）",
+      "url": "https://zenn.dev/yoshi_katakura/articles/3b1952f0096a64",
+      "site": "Zenn(LLM)",
+      "published": "2026-06-13T14:02:05Z",
+      "description": "LLMのルール矛盾を自動検出・Mermaid構造化で解消する設計\nLLMのシステムプロンプトは「自然言語で書かれたルール集」です。\nしかし自然言語はコンパイルエラーを出しません。\n「日本語で回答する」\n「英語で話すアインシュタインAI」\n「必ず指名する」\n「最終ターンは指名禁止」\nこれらが同一プロンプトに混在したとき、LLMはどのルールを優先するか不確定になります。\n本記事では、Soul-Twin...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "AIエージェントのツール実装に関して",
+      "url": "https://zenn.dev/shuzan/articles/5f83a5ab3fbcd8",
+      "site": "Zenn(LLM)",
+      "published": "2026-06-13T12:26:20Z",
+      "description": "前回は、棒立ちの結衣に声を与えました。今回は、見た目でも声でもなく、中身の話です。\nこのアプリを作る前、私は Claude Code を秘書として使っていました（第1章参照）。CLAUDE.md に役割を書いて、MCP で Gmail・カレンダー・自前の Plane をつなぐ。それで十分便利だった。\nじゃあ、なぜわざわざ専用アプリに作り直したのか。そして、作るときに何を一番工夫したのか。今回はそこ...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "ローカルLLM × 自作ギャル声で雑談CLIを作ったのでおしゃべりしてみた",
+      "url": "https://zenn.dev/koizumiiiii/articles/3a566668b65b03",
+      "site": "Zenn(LLM)",
+      "published": "2026-06-13T09:40:45Z",
+      "description": "これは何\n自作した「ギャル声」(ローカルTTS Irodori で作った声 gal_07) を、生成AIの返答にリアルタイムであてて喋らせる、ターミナルで動く雑談CLIを作った話です。打つと、AIがギャルとして喋りながら返してきます。\n\n📣 声そのものの作り方（VoiceDesign で作った声を、台本をまたいでもブレずに「絵文字で笑う」まで仕上げる話）は前回書きました → 完全無料のローカルAI...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "Sayane Chrome Extensionで始める：LLMの言葉を文脈候補として持ち帰る",
+      "url": "https://zenn.dev/tomyuk/articles/sayane-02-chrome-extension",
+      "site": "Zenn(LLM)",
+      "published": "2026-06-13T07:17:33Z",
+      "description": "はじめに：ブラウザはLLM利用の現場になった\nChatGPT、Claude、Gemini、DeepSeek、Open WebUI。LLMとの対話の多くはブラウザ上で起きています。私たちはブラウザの中で、文章を考え、コードの方針を相談し、自分でも気づいていなかった考え方を言語化します。その中には、あとで使いたい言葉があります。プロジェクトの前提として残したい説明があります。次のAIとの対話に引き継ぎ...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "「字幕なし動画」はほぼ存在しなかった — n8n＋ローカルWhisperで個人メディアのネタ収集を自動化した話",
+      "url": "https://zenn.dev/hanappu3/articles/ba4d191b342544",
+      "site": "Zenn(LLM)",
+      "published": "2026-06-13T07:12:54Z",
+      "description": "はじめに\n個人でメディア（ブログや note のような媒体）を続けていて、最初に枯れるのは「書く力」ではなく「ネタ」でした。\n何について書くかが尽きれば、更新は止まる。つまり書く力よりも先に、ネタを切らさない仕組みが要る。なのに自分の場合、そこが手作業と気分まかせで、属人化していました。\nRSS やSNSの巡回まではすでに n8n（self-hosted）＋ LLM ＋ スプレッドシートで自動化し...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "Agent Zero、Hermes Agent、OpenClaw の比較と開発思想",
+      "url": "https://zenn.dev/nobmake/articles/ca1c79f991fb01",
+      "site": "Zenn(LLM)",
+      "published": "2026-06-13T06:13:56Z",
+      "description": "目次\n\n[設計思想と開発哲学](#第 1 章)\n[プロンプト構造とシステム設計](#第 2 章)\n[スキルシステムと自己改善](#第 3 章)\n[メモリシステムと持続的学習](#第 4 章)\n[ツール実行とセキュリティ](#第 5 章)\n[マルチエージェントと並列処理](#第 6 章)\n[コード生成と検証](#第 7 章)\n[プラットフォーム統合とユーザビリティ](#第 8 章)\n[セキュリティと...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "Claude Fable 5 はどんなコーディング特性だったのか——Opus 4.8 と統計的に比較した記録（オトナの自由研究 #26）",
       "url": "https://zenn.dev/nnakapa/articles/lab-26-fable5-opus48-coding-traits",
       "site": "Zenn(LLM)",
       "published": "2026-06-13T06:07:07Z",
       "description": "!\nClaude Fable 5 は現在使えません。Anthropic の発表によれば、この試行を終えた直後の 2026-06-12（米国時間）、Fable 5 は米国政府の輸出管理指令への対応として利用できなくなり、代替モデルの提供もないとされています。本記事では、この規制判断の是非や背景評価には踏み込みません。Fable 5 が使えなくなる直前に取れたコーディング特性の技術記録としてご覧くださ...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "`claude-fable-5` が一晩で404になった日：モデルID固定をやめて退避ルートを設計する",
+      "url": "https://zenn.dev/hironakamura_ai/articles/1a6f1ff1157ab5",
+      "site": "Zenn(LLM)",
+      "published": "2026-06-13T05:16:31Z",
+      "description": "通説では、使っているモデルが使えなくなるときは猶予がある。ベンダーが deprecation を予告して、数ヶ月の移行期間があって、その間に新しいモデル名へ差し替えればいい。少なくとも自分はそう思って、model=\"claude-fable-5\" をコードに直書きしていた。\n実際は一晩だった。\n6月12日、Anthropic は米政府の輸出管理指令を受けて、Fable 5 と Mythos 5 へ...",
       "category": "AI・技術",
       "rss_category": "",
       "image_url": ""
