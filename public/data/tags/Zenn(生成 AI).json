@@ -1,8 +1,68 @@
 {
   "site": "Zenn(生成 AI)",
-  "last_updated": "2026-06-13T04:50:30.667254",
-  "total_articles": 2386,
+  "last_updated": "2026-06-13T08:15:39.854156",
+  "total_articles": 2392,
   "articles": [
+    {
+      "title": "AIに「やるな」と書いても無駄だった — 機械で止める3層ガードレール",
+      "url": "https://zenn.dev/yuhtaihara/articles/ai-guardrails-machine-level",
+      "site": "Zenn(生成 AI)",
+      "published": "2026-06-13T06:34:54Z",
+      "description": "!\n個人で本番のSaaSを運用しています。決済もDRも法令対応も、全部ひとりとAIで回してる。その過程で「これをやらないと事故る」という型がだんだん溜まってきたので、実際に起きた事故ベースで連載していきます。全6回の予定：①ガードレール（本記事）/ ②立ち上げ / ③文書=実装 / ④実行管理 / ⑤継続性 / ⑥検証。\n\n\n 結論から\nAI駆動開発で一番効くのは、賢いプロンプトでも高価なツールで...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "`claude-fable-5` が一晩で404になった日：モデルID固定をやめて退避ルートを設計する",
+      "url": "https://zenn.dev/hironakamura_ai/articles/1a6f1ff1157ab5",
+      "site": "Zenn(生成 AI)",
+      "published": "2026-06-13T05:16:31Z",
+      "description": "通説では、使っているモデルが使えなくなるときは猶予がある。ベンダーが deprecation を予告して、数ヶ月の移行期間があって、その間に新しいモデル名へ差し替えればいい。少なくとも自分はそう思って、model=\"claude-fable-5\" をコードに直書きしていた。\n実際は一晩だった。\n6月12日、Anthropic は米政府の輸出管理指令を受けて、Fable 5 と Mythos 5 へ...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "【2026年6月】生成AIをクラウドGPUで安く回す：主要サービス料金比較とコスト最小化の4手",
+      "url": "https://zenn.dev/techotakulab/articles/8fd9b1ad05519a",
+      "site": "Zenn(生成 AI)",
+      "published": "2026-06-13T05:04:19Z",
+      "description": "ローカルGPUがない、あるいはVRAMが足りない。そんなときクラウドGPUは魅力的ですが、いざ料金ページを開くと、サービスもGPUも価格体系もバラバラで、結局いくらかかるのか読めません。借りっぱなしで請求が跳ねるのも怖いところです。\nこの記事は、2026年6月時点の主要サービスの実際の料金を並べて、生成AI（とくに画像生成）を一番安く回すにはどこをどう選べばいいかを示します。価格はすべて各社公式ま...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "ComfyUIのVRAM不足を直す判断フロー：『CUDA out of memory』の原因別・対処の優先順位",
+      "url": "https://zenn.dev/techotakulab/articles/07e41fec8763ab",
+      "site": "Zenn(生成 AI)",
+      "published": "2026-06-13T04:53:25Z",
+      "description": "ComfyUIで CUDA out of memory が出ると、つい「GPUを買い替えるしかないか」と考えてしまいます。でも、買い替えの前にやれることは順番に並んでいて、効果も手間もまるで違います。\nこの記事は、その順番を一枚の判断フローにまとめたものです。8GBや12GBのVRAMでも、設定の見直しだけで通るケースは多い。まず「どこで足りなくなっているか」を見てから、安い手から順に試します。\n...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "AI導入後に人間が見るべき例外ケースを設計する",
+      "url": "https://zenn.dev/miraigent/articles/ai-exception-review-queue",
+      "site": "Zenn(生成 AI)",
+      "published": "2026-06-13T03:28:23Z",
+      "description": "AI導入後に人間が見るべき例外ケースを設計する\n問い合わせ対応にAIを入れるとき、最初に考えがちなのは通常ケースです。\nよくある質問を要約する。\n返信下書きを作る。\nFAQ候補を抽出する。\nCRMメモを整える。\nどれも有効です。\nただ、運用で本当に設計しておきたいのは、AIがうまく処理できるケースだけではありません。\nむしろ重要なのは、AIから人間へ戻すべき例外ケース です。\nこの記事では、問い合...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "音声AIを社内ツールに入れる前に決める。AmiVoice APIと生成AIのログ保存とマスキング",
+      "url": "https://zenn.dev/tp_li/articles/402cf6344fd13b",
+      "site": "Zenn(生成 AI)",
+      "published": "2026-06-13T00:00:09Z",
+      "description": "!\nこの記事は、AmiVoice APIと生成AIを社内ツールに入れる前に決めるログ保存、マスキング、データ境界のメモです。AmiVoice APIのログ保存まわりは 2026年6月9日に公式ドキュメントで確認しました。\n\n\n はじめに\n音声AIを社内ツールに入れると、入力が楽になります。\nでも、同時にログが怖くなります。\n声で話すと、人はテキストフォームより雑に情報を入れます。\n顧客名。\n電話番...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
     {
       "title": "個人開発で多言語ビジネストーン変換ツール「ToneBridge」を作ってリリースした話",
       "url": "https://zenn.dev/han901104/articles/fc0eb06ac696cf",
