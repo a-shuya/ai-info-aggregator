@@ -1,7 +1,7 @@
 {
   "site": "Zenn(機械学習)",
-  "last_updated": "2026-06-13T17:43:46.567667",
-  "total_articles": 1226,
+  "last_updated": "2026-06-13T19:01:09.379438",
+  "total_articles": 1227,
   "articles": [
     {
       "title": "Gradient Surgery for Multi-Task Learning",
@@ -199,6 +199,16 @@
       "site": "Zenn(機械学習)",
       "published": "2026-06-11T08:13:07Z",
       "description": "はじめに\n2026/6/9、Anthropic が Claude Fable 5（claude-fable-5）を一般提供開始しました。これまで招待制だった Mythos 系の能力を、安全装置を載せて誰でも使えるようにしたモデルで、Anthropic が「一般提供したモデルの中で最も高性能」と位置づけています。\n筆者も初日から1日触ってみたのですが、正直なところ Opus 4.8 との違いを「体感...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "RoPE は fp32 以外でも位置を正しく表現できるのか？",
+      "url": "https://zenn.dev/prgckwb/articles/rope-precision-half",
+      "site": "Zenn(機械学習)",
+      "published": "2026-06-11T06:09:52Z",
+      "description": "忙しい人向けのまとめ\n\nNF4/FP8 などの weight-only 量子化は RoPE の精度に影響しない（量子化されるのは Linear 層の重みだけ）\nbf16 に落とすと RoPE 内部の cos 値の大部分が丸めで潰れるが、sin 値に位置の差が残るため、隣接トークンの区別は保たれる\n確認した実装（Ideogram 4.0 / LLaMA / Qwen3 など）では、角度計算を fp3...",
       "category": "AI・技術",
       "rss_category": "",
       "image_url": ""
