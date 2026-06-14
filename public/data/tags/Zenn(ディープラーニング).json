@@ -1,14 +1,14 @@
 {
   "site": "Zenn(ディープラーニング)",
-  "last_updated": "2026-06-14T01:37:02.705060",
+  "last_updated": "2026-06-14T06:19:59.992527",
   "total_articles": 322,
   "articles": [
     {
-      "title": "Gradient Surgery for Multi-Task Learning",
-      "url": "https://zenn.dev/oyatomo/articles/6da8bc0d7900cd",
+      "title": "RoPE は fp32 以外でも位置を正しく表現できるのか？",
+      "url": "https://zenn.dev/prgckwb/articles/rope-precision-half",
       "site": "Zenn(ディープラーニング)",
-      "published": "2026-06-13T16:57:57Z",
-      "description": "ご挨拶\n皆さんこんにちは、一関高専 村上研究室 小山田です。\nこの記事は、研究室内での論文輪読会用の資料です。\n今回紹介する内容は、PCGrad (Project Conflicting Gradients) という勾配衝突を防止する手法の論文とその実装方法についてです。\nこの手法は、私の研究で用いている強化学習の調査の際に偶然見つけた論文で、マルチタスク環境における強化学習にPCGradを適用し...",
+      "published": "2026-06-11T06:09:52Z",
+      "description": "忙しい人向けのまとめ\n\nNF4/FP8 などの weight-only 量子化は RoPE の精度に影響しない（量子化されるのは Linear 層の重みだけ）\nbf16 に落とすと RoPE 内部の cos 値の大部分が丸めで潰れるが、sin 値に位置の差が残るため、隣接トークンの区別は保たれる\n確認した実装（Ideogram 4.0 / LLaMA / Qwen3 など）では、角度計算を fp3...",
       "category": "AI・技術",
       "rss_category": "",
       "image_url": ""

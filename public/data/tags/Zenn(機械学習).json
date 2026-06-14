@@ -1,8 +1,68 @@
 {
   "site": "Zenn(機械学習)",
-  "last_updated": "2026-06-14T01:37:02.705060",
-  "total_articles": 1226,
+  "last_updated": "2026-06-14T06:19:59.992527",
+  "total_articles": 1231,
   "articles": [
+    {
+      "title": "Count Anythingはなぜ数え間違いを半分にできたか：1つの大モデルをやめて密度で割る",
+      "url": "https://zenn.dev/hironakamura_ai/articles/73610b72e5904d",
+      "site": "Zenn(機械学習)",
+      "published": "2026-06-14T05:46:51Z",
+      "description": "画像を貼ると、いまの賢い視覚モデルはたいてい言い当ててくれる。猫がいる、ノートパソコンがある、奥に人がいる。ところが「この写真に人は何人いますか」と数を聞いた瞬間、急に頼りなくなる。10人くらいの集合写真でも平気で8人や13人と返してくる。文章モデルに「strawberry に r はいくつ」と聞くと間違える、あの感覚に近い。\nつまり、見分けることと数えることは別の能力だ。ここを混同したまま「もっ...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "勾配クリッピング（Gradient Clipping）で学習は安定する？Keras×CIFAR-10で実験",
+      "url": "https://zenn.dev/wasurenamemo/articles/7a9633446ca793",
+      "site": "Zenn(機械学習)",
+      "published": "2026-06-14T05:27:09Z",
+      "description": "「Adamなら勾配クリッピングは不要では？」という仮説を、CIFAR-10の実験で検証しました。\n\n 3パターンを比較\n\n\nなし（Adamデフォルト）\n\nclipnorm=1.0（勾配ベクトルのL2ノルムを制限。方向は保持）\n\nclipvalue=0.5（各要素を [-0.5, 0.5] に個別クリップ）\n\n\n 実験結果\n\n\n\nパターン\nval_accuracy\ntest_accuracy\n学習時...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "競馬 AI は『何ベットで見切る』べきか — ベイズ逐次更新で戦略の生死を判定する",
+      "url": "https://zenn.dev/punch_cola/articles/4d44aac9704611",
+      "site": "Zenn(機械学習)",
+      "published": "2026-06-14T03:00:07Z",
+      "description": "TL;DR\n\n検証を通った戦略でも、実戦では「1 年で 15 ベット」級の小サンプル。t 検定だと検定力が足りず判断できない\nベイズの 逐次更新 なら、1 ベットごとに「真の平均損益 &gt; 0 の確率」を直接出せる\nBeta-Binomial で的中率、Normal-Inverse-Gamma で平均損益の事後分布を更新する\n実戦中の意思決定ルールに直結:「P(平均 &gt; 0) が一定を下...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "競馬AI開発記録 #19 期待値運用の数学的敗北：なぜ「ケリー基準」で資産が溶けたのか",
+      "url": "https://zenn.dev/ricotiler/articles/keiba-ai-19-kelly-criterion-overconfidence",
+      "site": "Zenn(機械学習)",
+      "published": "2026-06-13T22:09:29Z",
+      "description": "1. 概要\n前回の記事（第18話）では、モデル更新に伴うスコアの変動を吸収する「3フェーズ・ウォークフォワード基盤」を確立し、2026年Q1という未知の期間においても高い予測精度（スピアマン相関 0.40）を維持できることを確認しました。\n「当てるための武器」が揃った今、次なる課題は「いかに効率よく稼ぐか」です。第19話では、投資理論において最強とされる資金管理術「ケリー基準（Kelly Crit...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "日本語RAGに向く中国製オープンソースパーサーはどれか — クロスオーバーだった。BM25ならDeepDoc、denseならMinerU",
+      "url": "https://zenn.dev/elvisyao/articles/930a510164a798",
+      "site": "Zenn(機械学習)",
+      "published": "2026-06-13T18:40:44Z",
+      "description": "!\n中国オープンソースのドキュメントパースを日本語文書で計測するシリーズの最終回です。\n英語版（canonical）: https://dev.to/elvisyao007/which-chinese-open-source-parser-is-better-for-japanese-rag-its-a-crossover-bm25-says-deepdoc-25mi\nリポジトリと生の3×2結果:...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "Gradient Surgery for Multi-Task Learning",
+      "url": "https://zenn.dev/oyatomo/articles/6da8bc0d7900cd",
+      "site": "Zenn(機械学習)",
+      "published": "2026-06-13T16:57:57Z",
+      "description": "ご挨拶\n皆さんこんにちは、一関高専 村上研究室 小山田です。\nこの記事は、研究室内での論文輪読会用の資料です。\n今回紹介する内容は、PCGrad (Project Conflicting Gradients) という勾配衝突を防止する手法の論文とその実装方法についてです。\nこの手法は、私の研究で用いている強化学習の調査の際に偶然見つけた論文で、マルチタスク環境における強化学習にPCGradを適用し...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
     {
       "title": "構造化パースはBM25よりdense検索を助ける — 日本語文書で計測、差は2倍に広がった",
       "url": "https://zenn.dev/elvisyao/articles/ddb59295fc5b31",
@@ -189,16 +249,6 @@
       "site": "Zenn(機械学習)",
       "published": "2026-06-11T08:13:07Z",
       "description": "はじめに\n2026/6/9、Anthropic が Claude Fable 5（claude-fable-5）を一般提供開始しました。これまで招待制だった Mythos 系の能力を、安全装置を載せて誰でも使えるようにしたモデルで、Anthropic が「一般提供したモデルの中で最も高性能」と位置づけています。\n筆者も初日から1日触ってみたのですが、正直なところ Opus 4.8 との違いを「体感...",
-      "category": "AI・技術",
-      "rss_category": "",
-      "image_url": ""
-    },
-    {
-      "title": "RoPE は fp32 以外でも位置を正しく表現できるのか？",
-      "url": "https://zenn.dev/prgckwb/articles/rope-precision-half",
-      "site": "Zenn(機械学習)",
-      "published": "2026-06-11T06:09:52Z",
-      "description": "忙しい人向けのまとめ\n\nNF4/FP8 などの weight-only 量子化は RoPE の精度に影響しない（量子化されるのは Linear 層の重みだけ）\nbf16 に落とすと RoPE 内部の cos 値の大部分が丸めで潰れるが、sin 値に位置の差が残るため、隣接トークンの区別は保たれる\n確認した実装（Ideogram 4.0 / LLaMA / Qwen3 など）では、角度計算を fp3...",
       "category": "AI・技術",
       "rss_category": "",
       "image_url": ""
