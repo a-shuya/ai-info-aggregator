@@ -1,8 +1,168 @@
 {
   "site": "Zenn(LLM)",
-  "last_updated": "2026-06-15T13:25:29.452059",
-  "total_articles": 3946,
+  "last_updated": "2026-06-15T18:09:14.741588",
+  "total_articles": 3960,
   "articles": [
+    {
+      "title": "Claudeのprompt cacheが効かない原因を、cache diagnosticsで特定してみた",
+      "url": "https://zenn.dev/mochitec_tech/articles/cff58bf183c643",
+      "site": "Zenn(LLM)",
+      "published": "2026-06-15T12:23:28Z",
+      "description": "はじめに\nこんにちは。株式会社MOCHITECでCTOをしている上田（@ryo_u27）です。\nprompt caching を使っていると、たまに usage.cache_read_input_tokens がゼロに落ちます。コストとレイテンシが跳ねる。でも「なぜ効かなかったのか」は出てこない。エラーは出ず、cache_read_input_tokens が静かにゼロになるだけ。原因の特定は、こ...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "『半箱』が『万博』になる時 ── 残す文字起こしと整える文字起こし、AmiVoice は何を残し、何を捨てるのか",
+      "url": "https://zenn.dev/suna/articles/39c945804675a8",
+      "site": "Zenn(LLM)",
+      "published": "2026-06-15T12:19:40Z",
+      "description": "§1. AmiVoice のハイブリッドと E2E、同じ発話を投げると違うものが返る\nAmiVoice の汎用日本語エンジンには「ハイブリッド」と「End to End(E2E)」の 2 つがある。実音声を並走で投げてみると、返ってきたテキストは違っていた。\nカップ麺、半箱、キッチン を E2E に投げると、返ってきたのは カップ麺、万博、キッチン。 だった。えーっと、まあ、カップ麺 4 個 では...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "運用の現場から見た、本番で動かないAI Agentの設計チェックリスト",
+      "url": "https://zenn.dev/mofuteq/books/60e6a6248ea8e1",
+      "site": "Zenn(LLM)",
+      "published": "2026-06-15T11:32:11Z",
+      "description": "LLM/RAG/Agentのプロジェクトは、モデルが賢くないから死ぬのではありません。多くの場合、誰のために・何を根拠に・どこまで答え・どこで止まり・誰が直すのかが決まっていないから、動いても本番で使われずに終わります。\n\nこれは、高機密・高難度な現場でLLM/RAG/Agentを業務に乗せる過程で見えてきた、「動くのに使われない」を防ぐための設計チェックリストです。点数も合否も出しません。各問に...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "生成AIに「長い仕様」をどう読ませるか — 規模の入力設計",
+      "url": "https://zenn.dev/mumihatsu/articles/65a1926a7388f1",
+      "site": "Zenn(LLM)",
+      "published": "2026-06-15T11:02:37Z",
+      "description": "1. はじめに — 入力設計の「第三弾」\nどーもりょうさんです。\n自分はQAエンジニアで、普段のテスト設計に生成AI（Claude）を使っています。本連載では入力設計の話を二度書きました。第4本は 1つの仕様をどう読ませるか（空間の設計）、第10本は 過去版のある仕様をどう渡すか（時間の設計）。本稿は第三弾、規模の設計です——仕様が数千行・複数文書に膨らんだとき、どう渡すか。\nきっかけは直前の実測...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "複数ワーカーで LLM API のレート制限を扱う設計案",
+      "url": "https://zenn.dev/moridev/articles/51726e8ec96c4f",
+      "site": "Zenn(LLM)",
+      "published": "2026-06-15T10:57:30Z",
+      "description": "はじめに\n投稿済みの記事「LangGraph ノード内の LLM 並列実行を asyncio.Semaphore で制御する」では、LangGraph ノード内で複数の LLM 呼び出しを並列実行するときに、asyncio.Semaphore で 1 プロセス内の同時実行数を制御する方法を扱いました。\nこの記事では、その次の段階を扱います。ワーカー数を増やしたとき、1 プロセス内の Semapho...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "エージェント篠澤",
+      "url": "https://zenn.dev/showyou/articles/1789f63ef7344a",
+      "site": "Zenn(LLM)",
+      "published": "2026-06-15T10:37:08Z",
+      "description": "はじめに\nこれまで自宅の自動化は「ゴミ出し通知」「記事配信」といったタスクごとにPythonスクリプトを書いてデプロイする運用でやってきました。機能を追加するたびに個別スクリプトを作り直してデプロイするのが地味に面倒で、なんとかしたいとずっと思っていました。\nそんな折、OpenClawをはじめとするパーソナルAIエージェントが急速に注目を集めてきました。ただOpenClawはフルシステムアクセス（...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "Claude Fable 5を業務システムに入れる前に確認したい4つの境界線",
+      "url": "https://zenn.dev/yushiyamamoto/articles/claude-fable-5-production-boundaries",
+      "site": "Zenn(LLM)",
+      "published": "2026-06-15T10:13:11Z",
+      "description": "この記事でわかること\n\n2026年6月9日に公開されたClaude Fable 5（Mythosクラス）の実務上の位置づけ\nAPI統合で先に決めるべき拒否・フォールバック・課金・データ保持の境界線\nClaude API / Claude Platform on AWS / Amazon Bedrockで変わるfallbackとデータ保持の扱い\n\n情報源はAnthropic公式発表、Claude A...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "障害対応コパイロットを作った話",
+      "url": "https://zenn.dev/interpark/articles/incident-copilot-design-decisions",
+      "site": "Zenn(LLM)",
+      "published": "2026-06-15T10:07:30Z",
+      "description": "「毎回ほぼ同じ手順で確認して、判断して、終わったら記録を書く」——どんな仕事にもある、この手の繰り返し作業。LLM が実用的になった今なら、肩代わりさせられそうな気がしてきます。\n本記事では、その題材として「障害対応」を選び、対応を支援する社内向けの Google Chat Bot「障害対応コパイロット」を作った話を書きます。2 ヶ月ほどで MVP から認証強化版まで作り込んだ過程を、コードはほぼ...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "AIコーディングツールでの開発（Planモード→Agentモード）に慣れてきた人へ 次はOpenSpec導入のすすめ",
+      "url": "https://zenn.dev/ihdk77/articles/955be718b412f1",
+      "site": "Zenn(LLM)",
+      "published": "2026-06-15T10:03:36Z",
+      "description": "こんにちは、ダックスフントです。\nGithub CopilotをはじめとするAIコーディングツールを使った開発にも、だいぶ慣れてきた方が多いかと思います。また、Planモードで実装計画を作り、Agentモードで実装する流れ（いわゆる仕様駆動開発）に取り組んでいる方もいると思います。\n自分もこの進め方で開発しているのですが、比較的大きな変更でも耐えうる一方で、計画がチャット内の一時成果物になりやすく...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "スタートアップ・チームでAI APIを使うときのコスト管理設計【Flatkey AI活用】",
+      "url": "https://zenn.dev/flatkey_ai/articles/866f9973257d43",
+      "site": "Zenn(LLM)",
+      "published": "2026-06-15T09:52:05Z",
+      "description": "はじめに\nチームでAI APIを使い始めると、個人利用では気にならなかった問題が出てきます。\n\n誰がどのモデルにいくら使ったか分からない\nメンバーごとにAPIキーを管理するのが大変\n特定のメンバーが意図せず大量のトークンを使ってコストが跳ね上がる\n複数プロジェクトのコストをまとめて把握したい\n\n本記事では、Flatkey AIを使ってチームのAI APIコストを設計・管理する方法を解説します。\n\n...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "Loop Engineeringとは何か——AIエージェントでiOSアプリ15本を出荷して分かった「止めて改善するループ」の現実",
+      "url": "https://zenn.dev/allnew/articles/loop-engineering-in-production",
+      "site": "Zenn(LLM)",
+      "published": "2026-06-15T09:10:06Z",
+      "description": "!\nこの記事でわかること\n\nLoop Engineeringとは何か、Prompt / Context / Harness Engineeringとの違い\nなぜAIエージェントの本番運用では「止めて改善するループ」が必要になるのか\nApp Factoryで15本のiOSアプリを出荷する中で起きた5つの失敗パターン\nANDON / Blind Gate / Meta-ANDON / Kaizen L...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "Claude Codeに「ファイルベースの永続メモリ」を持たせる：1ファイル1事実＋index方式",
+      "url": "https://zenn.dev/ai_daigakusei/articles/claude-code-file-based-memory",
+      "site": "Zenn(LLM)",
+      "published": "2026-06-15T08:24:19Z",
+      "description": "Claude Codeに、セッションを跨いで事実を覚えさせる仕組みを作りました。memory/ フォルダに「1ファイル＝1事実」で .md を置き、MEMORY.md を索引にする方式です。この記事を読むと、その設計・運用ルール・実際のファイルの中身がそのまま分かります。\n学部2年が自分の環境で回してるだけの話です。もっと良いやり方は絶対あると思う。でも実際に効いてるので書きます。\n\n 同じ説明を...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "そのロールプロンプト、肩書き付きの一般論ではないですか？",
+      "url": "https://zenn.dev/continuitymodel/articles/044e5a4a7d24ac",
+      "site": "Zenn(LLM)",
+      "published": "2026-06-15T07:33:14Z",
+      "description": "そのロールプロンプト、肩書き付きの一般論ではないですか？\nAIに質問するとき、ロールを与えるプロンプトをよく見る。\n「あなたは世界一のマーケターです」\n「あなたは一流のコンサルタントです」\n「あなたは財務のプロです」\n「あなたは経験豊富な人事担当者です」\n「あなたは優秀な法務担当です」\n「あなたはトップレベルのPMです」\n「あなたは敏腕編集者です」\n「あなたはプロのUXデザイナーです」\n悪いとは言...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "claude -p の「使い放題」が終わった日：自動化を$200に収めるトークン効率4テク",
+      "url": "https://zenn.dev/kenimo49/articles/claude-p-token-efficiency-200",
+      "site": "Zenn(LLM)",
+      "published": "2026-06-15T06:32:07Z",
+      "description": "私は今、27本のcronスクリプトを claude -p で回しています。自動リファクタ、コンテキストの改善フィードバック、品質チェック、プロダクトのLPやマーケティング結果の定期分析。寝ている間に自律的に動く、小さなエージェント群です。\n2026年6月15日、その前提が静かに変わりました。\nこれまで claude -p の実行は、私が払っているClaude Max 20x（$200/月）の「使い...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "Moodle 4.5 × ローカルLLM（Ollama）でAI機能を完全内製化する方法【第二弾】",
+      "url": "https://zenn.dev/rublix/articles/16d8ffb2575445",
+      "site": "Zenn(LLM)",
+      "published": "2026-06-15T06:26:47Z",
+      "description": "はじめに：第一弾のおさらいと本記事の位置づけ\n前回の記事（第一弾）では、Moodle 4.5にOpenAI（ChatGPT）APIを連携してAI機能を使う方法を紹介しました。\nクラウドAIとの連携は手軽で強力ですが、1つの課題が残ります。\n\n学習者が入力したテキストは、OpenAIのサーバーに送信される。\n\n成績情報・社内資料・個人情報を含むコンテンツをAIで処理したい場合、このデータの外部送信は...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "ローカル LLM は本当に遅いのか — 性能のボトルネックを「推論」でなく「実測」で突き止める",
+      "url": "https://zenn.dev/exapolicy/articles/d0b56f114b2622",
+      "site": "Zenn(LLM)",
+      "published": "2026-06-15T04:20:08Z",
+      "description": "はじめに\nローカル LLM を業務で動かし始めると、多くの人が最初にぶつかるのが「思ったより遅い」という壁です。クラウド AI に慣れた感覚で同じモデルを手元の PC で動かすと、応答までに数十秒かかることがあります。\nやっかいなのは、この「遅さ」の正体が直感に反する点です。もっともらしい対処をしても速度がほとんど変わらない、ということが起こります。私たち自身、社内の検証で遅さの真因を一度取り違え...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
     {
       "title": "Local LLMでのデータ分析を試してみた",
       "url": "https://zenn.dev/aishift/articles/5a5383987efee6",
@@ -39,16 +199,6 @@
       "site": "Zenn(LLM)",
       "published": "2026-06-15T02:00:08Z",
       "description": "動作環境\n\nOS: Ubuntu 24.04 LTS\nPostgreSQL: 16\n\n\n pgvectorとは？\npgvector は、PostgreSQLで「ベクトルデータ（データの意味を数値化したもの）」を保存・検索できるようにするオープンソースのプラグインです。\nLLM（大規模言語モデル）を活用したシステム、特に社内データなどをAIに参照させるRAG（検索拡張生成）を構築する際に必要な機能を...",
-      "category": "AI・技術",
-      "rss_category": "",
-      "image_url": ""
-    },
-    {
-      "title": "Ollamaでローカルで動かすLLMを選ぶ：Llama 3.2・Gemma 3・Qwen 3をOpenAI互換APIで比較する",
-      "url": "https://zenn.dev/libercraft/articles/20260615-ollama-local-llm-comparison",
-      "site": "Zenn(LLM)",
-      "published": "2026-06-15T02:00:00Z",
-      "description": "OllamaによるローカルLLM選定とは、Llama 3.2・Gemma 3・Qwen 3など複数のオープンモデルを精度・速度・メモリ使用量の3軸で比較し、用途に応じて最適なモデルをOpenAI互換APIで呼び出す手法です。\nクラウドLLMと異なり、ローカルLLMはモデルの特性を理解した上で選ぶことでコストゼロで開発・検証サイクルを回せます。日本語・コード生成・汎用タスクそれぞれに向いたモデルが異...",
       "category": "AI・技術",
       "rss_category": "",
       "image_url": ""
@@ -109,16 +259,6 @@
       "site": "Zenn(LLM)",
       "published": "2026-06-14T15:00:08Z",
       "description": "!\nこの記事は「うまくいった報告」ではなく検証ドキュメンタリーです。公式手順どおりでは動かなかった箇所、つまずいた箇所をそのまま残しています。同じことを試す方が検索でたどり着けるよう、エラーと解決手順を省略していません。\n\n\n この記事の結論\nLLMベースの自動運転モデルLMDrive（CVPR 2024）の公式チェックポイントを、単発のクラウドGPUインスタンス1台でクローズドループ評価できるの...",
-      "category": "AI・技術",
-      "rss_category": "",
-      "image_url": ""
-    },
-    {
-      "title": "個人開発のbotを放置していたら、自分のAPIに自分でDoSしていた話",
-      "url": "https://zenn.dev/anikuma/articles/personal-bot-self-dos",
-      "site": "Zenn(LLM)",
-      "published": "2026-06-14T15:00:00Z",
-      "description": "落ちて止まるバグより、落ちずに走り続けるバグの方が怖い。\n例外で止まれば気づく。ログが赤ければ調べる。でも 何事もなく動いているように見えて、裏で課金メーターだけが回り続けている バグは、誰も通報してくれない。請求が来るまで気づけない。実は、200 で返ってくるのに期待通り動かない「失敗が見えない失敗」の怖さは、別記事（200 で返るのに動かないデバッグ記録）でも書いた。今回はその課金版だ。\n今回...",
       "category": "AI・技術",
       "rss_category": "",
       "image_url": ""
