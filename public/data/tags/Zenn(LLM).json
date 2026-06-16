@@ -1,8 +1,118 @@
 {
   "site": "Zenn(LLM)",
-  "last_updated": "2026-06-16T02:03:11.147325",
-  "total_articles": 3958,
+  "last_updated": "2026-06-16T07:40:41.965878",
+  "total_articles": 3968,
   "articles": [
+    {
+      "title": "対話システムの評価を LLM にどこまで任せられるか（前編）：5 つの落とし穴",
+      "url": "https://zenn.dev/ivry/articles/2c298614d0ee85",
+      "site": "Zenn(LLM)",
+      "published": "2026-06-16T03:00:10Z",
+      "description": "TL;DR\n\n対話システムを「エンドユーザーが使えるか」の観点で受け入れテストするとき、シナリオ生成も評価も LLM に任せたくなります。\nしかし、LLM によるシミュレーション／評価には、生成発話のクオリティ、LLM as a Judge の限界、LLMベースシミュレーターの持つ譲歩問題など大きく5つの落とし穴が存在します。\n合成データによる自動評価は本物のエンドユーザーの代理にすぎないため、L...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "DSPy ReActV2 登場 -- ReAct とどこが変わったか試してみた",
+      "url": "https://zenn.dev/u_zero/articles/8f6395085f6872",
+      "site": "Zenn(LLM)",
+      "published": "2026-06-16T03:00:09Z",
+      "description": "はじめに\nDSPy[1] は「プロンプトではなくプログラムで」LLM アプリケーションを作るフレームワークです。プロンプトを手作業で調整するのではなく、入出力の型を Python で定義し、モジュールとして組み立てていきます。プロンプトの手直しを繰り返す苦行から離れてロジックに集中できるのがとても好きで、一度使い始めてからは素の API には戻れなくなりました。\n私は U-ZERO で VoE フ...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "QLoRAのrankはどう選ぶか：r=4・8・16・64を比較して判断基準を整理する",
+      "url": "https://zenn.dev/libercraft/articles/20260616-lora-rank-selection",
+      "site": "Zenn(LLM)",
+      "published": "2026-06-16T02:00:00Z",
+      "description": "QLoRAのrank（ランク）とは、事前学習済みモデルの重み行列の差分を何次元の低ランク行列で近似するかを決めるパラメータで、表現力・学習パラメータ数・過学習リスクのトレードオフを支配します。\n「rankが高いほど良い」という誤解が多いですが、タスクに必要な変化量に対して適切なrankを選ぶことが重要です。r=4・8・16・64それぞれの特性と判断基準を理解すれば、実験ベースで最適値に辿り着けます...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "RX6800 vs Radeon 890M iGPU — llama.cpp Vulkan ベンチマーク比較：MoE が帯域を活かす",
+      "url": "https://zenn.dev/omohikane/articles/llama-cpp-vulkan-bench",
+      "site": "Zenn(LLM)",
+      "published": "2026-06-16T00:55:43Z",
+      "description": "はじめに\n!\nこの記事は生成AIの協力を得て執筆しています。\n\nローカル LLM 推論において、AMD GPU の Vulkan バックエンドがどの程度実用的なのか、実機ベンチマークで検証した記録である。\n検証のきっかけは「RX6800（16GB）で Qwen3-14B を回したら 24 t/s しか出ず、ハズレ GPU だったのでは」という疑問だった。結論から言うと、MoE モデルとの組み合わせ...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "AmazonのRAGに関する研究",
+      "url": "https://zenn.dev/knowledgesense/articles/1b5c7b70a2837c",
+      "site": "Zenn(LLM)",
+      "published": "2026-06-16T00:48:33Z",
+      "description": "導入\nこんにちは、株式会社ナレッジセンスの須藤英寿です。\n今回は、Amazonの提唱するRAGを繰り返し検索に最適化するための手法「State-Aware RAG」について紹介します。\nhttps://cdn.amazon.science/e3/78/083c7e8c45b8a850bd127b6c4b13/scipub-approval152129-46563445-reasoning-with...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "Function Callingスキーマ設計パターン：3社APIで堅牢なツール定義を構築する",
+      "url": "https://zenn.dev/0h_n0/articles/f89e983139d00a",
+      "site": "Zenn(LLM)",
+      "published": "2026-06-15T23:37:29Z",
+      "description": "Function Callingスキーマ設計パターン：3社APIで堅牢なツール定義を構築する\n\n この記事でわかること\n\nFunction Callingのスキーマ設計が呼び出し成功率に与える影響と、失敗の大半がスキーマ品質に起因するメカニズム\nOpenAI・Claude・Geminiの3社APIにおけるstrict modeの共通パターンと差異\ndescription・enum・required...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "Claude Codeで複数モデルを使い分ける──Bloom分類によるモデルルーティング設計",
+      "url": "https://zenn.dev/yamada_ai_dev/articles/claude-code-bloom-model-routing",
+      "site": "Zenn(LLM)",
+      "published": "2026-06-15T23:30:09Z",
+      "description": "Claude Codeで複数モデルを使い分ける──Bloom分類によるモデルルーティング設計\n!\nこの記事はClaude Codeのハーネス設計シリーズの一部です。\n\n\nClaude Codeを1ヶ月使って気づいた「指示の改善では解決しない問題」 — モデルルーティングが必要になる背景\n\n自分のコードを自分でレビューできない — Evaluatorが実際に何を捕まえたか — Evaluatorエー...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "Antigravity 2.0の内部構造を理解する——プロンプト処理・ツール・コンテキスト・ルールファイルまで",
+      "url": "https://zenn.dev/sosa/articles/antigravity-how-works",
+      "site": "Zenn(LLM)",
+      "published": "2026-06-15T23:09:16Z",
+      "description": "!\n本記事は、Antigravity 2.0 上で Claude Sonnet 4.6（Thinking）に質問しながら、その仕組みを確認した内容をまとめたものです。\n一次情報を直接確認したわけではないため、誤りが含まれている可能性があります。気づき次第、順次修正していきます。\nまた、掲載しているブロック図は「コンテキストの流れ」を分かりやすくするために、LLM の入出力をテキスト 1 本に限定し...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "ローカルLLMは「大きいほど賢い」とは限らない──qwen 3モデル+Geminiで日本語RAGを比較した",
+      "url": "https://zenn.dev/haruto_miyakawa/articles/5311ede02a68fa",
+      "site": "Zenn(LLM)",
+      "published": "2026-06-15T16:51:19Z",
+      "description": "趣味で作っている「ファンタジー世界のNPCと会話できるRAGチャットボット」で、\n\n\nGemini 2.5-flash（クラウド） vs ローカルSLM 3種（qwen3.5:9b / qwen3.5:4b / qwen2.5:3b）\n\n\nを、同じ15問で比較した。結論：\n\n品質は Gemini ≫ qwen3.5:9b（ローカル最良）&gt; qwen2.5:3b &gt; qwen3.5:4b...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "技術文書RAGの検索品質・ハルシネーション対策・コストを実測する",
+      "url": "https://zenn.dev/hal_hanami/articles/rag-measure-suppress-cost",
+      "site": "Zenn(LLM)",
+      "published": "2026-06-15T13:37:05Z",
+      "description": "この記事について\n自作のRAGを対象に、検索品質・ハルシネーションの抑制・1クエリあたりのコストを評価ハーネスで測定した記録です。測定の方法と結果、そして測定上の限界をまとめます。\nデモ: https://tech-docs-rag-b6acwao6cmxx2kt2b7yyht.streamlit.app ／ リポジトリ: https://github.com/Hal-Hanami/tech-do...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "重くなったClaude Codeを軽くする ― コンテキスト注入を228KBから48KBに削った監査",
+      "url": "https://zenn.dev/bokuwalily/articles/context-slimming",
+      "site": "Zenn(LLM)",
+      "published": "2026-06-15T12:26:02Z",
+      "description": "前回、Claude Codeに自分でスキルを書かせて育てる話を書きました。スキルやプラグインを増やしていくと、いつか必ずぶつかるのがセッションが重くなる・指示を取りこぼす問題です。今回は、その原因を測定してコンテキスト注入を228KBから48KBまで削った監査の記録です。\n\n 症状：直近の指示を取りこぼす\nある時期から、Claude Codeがこういう挙動をするようになりました。\n\nセッション開始...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
     {
       "title": "Claudeのprompt cacheが効かない原因を、cache diagnosticsで特定してみた",
       "url": "https://zenn.dev/mochitec_tech/articles/cff58bf183c643",
@@ -19,16 +129,6 @@
       "site": "Zenn(LLM)",
       "published": "2026-06-15T11:02:37Z",
       "description": "1. はじめに — 入力設計の「第三弾」\nどーもりょうさんです。\n自分はQAエンジニアで、普段のテスト設計に生成AI（Claude）を使っています。本連載では入力設計の話を二度書きました。第4本は 1つの仕様をどう読ませるか（空間の設計）、第10本は 過去版のある仕様をどう渡すか（時間の設計）。本稿は第三弾、規模の設計です——仕様が数千行・複数文書に膨らんだとき、どう渡すか。\nきっかけは直前の実測...",
-      "category": "AI・技術",
-      "rss_category": "",
-      "image_url": ""
-    },
-    {
-      "title": "複数ワーカーで LLM API のレート制限を扱う設計案",
-      "url": "https://zenn.dev/moridev/articles/51726e8ec96c4f",
-      "site": "Zenn(LLM)",
-      "published": "2026-06-15T10:57:30Z",
-      "description": "はじめに\n投稿済みの記事「LangGraph ノード内の LLM 並列実行を asyncio.Semaphore で制御する」では、LangGraph ノード内で複数の LLM 呼び出しを並列実行するときに、asyncio.Semaphore で 1 プロセス内の同時実行数を制御する方法を扱いました。\nこの記事では、その次の段階を扱います。ワーカー数を増やしたとき、1 プロセス内の Semapho...",
       "category": "AI・技術",
       "rss_category": "",
       "image_url": ""
