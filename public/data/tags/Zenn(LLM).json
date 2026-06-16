@@ -1,8 +1,78 @@
 {
   "site": "Zenn(LLM)",
-  "last_updated": "2026-06-16T17:37:15.952143",
-  "total_articles": 3976,
+  "last_updated": "2026-06-16T20:31:33.301751",
+  "total_articles": 3982,
   "articles": [
+    {
+      "title": "Attention と FFN を分離 ── AFD (Attention-FFN Disaggregation)",
+      "url": "https://zenn.dev/tosshi/articles/8480f5be05871e",
+      "site": "Zenn(LLM)",
+      "published": "2026-06-16T13:25:46Z",
+      "description": "TL;DR\n\n大規模 MoE のデコード推論では、Attention はメモリ帯域に張り付き、FFN/Expert は演算器を遊ばせます。計算特性が反対の 2 つを同じ GPU に同居させると、どちらも最適化しきれません。\n\nAFD (Attention-FFN Disaggregation) は、この 2 つを物理的に別々の GPU プールへ分離する推論アーキテクチャです。各プールを別々のバッチ...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "議事録を要約して終わりにしない——LLMでプロジェクト状況シートを「自動更新」する仕組み",
+      "url": "https://zenn.dev/mikimaro/articles/860aa5152809e5",
+      "site": "Zenn(LLM)",
+      "published": "2026-06-16T12:52:31Z",
+      "description": "TL;DR\n\nAIで議事録を「要約」するのは、もう多くの人がやっています。でも要約は1回きりの過去メモで、次の定例が来れば古くなります。\nこの記事では、要約の\"次\"として 「プロジェクトの今」を1枚にまとめたシート（コンテキストシート）を、議事録を渡すたびにLLMが自動更新する 仕組みを、コピペで試せる形で紹介します。\nChatGPT / Claude / Gemini / Microsoft C...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "音声入力をすぐIssueにしない：AmiVoiceのtoken信頼度をGeminiに渡す前処理レイヤー",
+      "url": "https://zenn.dev/hick/articles/dee1f9ce6fd44d",
+      "site": "Zenn(LLM)",
+      "published": "2026-06-16T12:45:04Z",
+      "description": "はじめに：音声メモから自動でIssue、を疑う\n「音声でメモして、AIが自動でIssueを起票してくれる」。\n便利そうです。作業中に気づいた違和感、障害調査中のメモ、あとで確認したいことを音声で残し、それをそのままIssueにできれば、入力コストはかなり下がります。\n実際、文字起こしAPIと生成AIをつなげれば、それっぽいIssue本文はすぐ作れます。\nしかし、業務で使うことを考えると、ここには怖...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "NATS で実装する LLM API 分散レートリミッター",
+      "url": "https://zenn.dev/moridev/articles/8ff6da3dd48a91",
+      "site": "Zenn(LLM)",
+      "published": "2026-06-16T11:30:20Z",
+      "description": "はじめに\n前の記事「複数ワーカーで LLM API のレート制限を扱う設計」では、複数ワーカーから LLM API を呼ぶ場合に、1 プロセス内の asyncio.Semaphore だけではサービス全体の RPM やトークン上限を制御できないことを整理しました。\n\n静的配分（全体上限 ÷ ワーカー数）で始める\n429 が返ったら Retry-After ヘッダーが示す時間だけ待つ\nそれでも 42...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "なぜAIは、超知識を持った3歳児みたいなものなのか",
+      "url": "https://zenn.dev/continuitymodel/articles/81eba2b54551cc",
+      "site": "Zenn(LLM)",
+      "published": "2026-06-16T09:59:17Z",
+      "description": "なぜAIは、超知識を持った3歳児みたいなものなのか\nAIは、ものすごく賢く見える。\n法律の話もできる。\n会計の話もできる。\nマーケティングの話もできる。\nコードも書ける。\n文章も整える。\n資料も要約する。\n知らない分野についても、それなりに筋の通った説明を返してくる。\nだから、多くの人はAIを「賢い大人」のように扱いたくなる。\n知識がある。\n文章がうまい。\n説明も丁寧。\n反応も速い。\nこれだけ見る...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "GLM-5.2は本当にオープンソースになったのか？月18ドルからClaude Codeに挿して試す",
+      "url": "https://zenn.dev/ino_h/articles/2026-06-16-glm-5-2-opensource-cost",
+      "site": "Zenn(LLM)",
+      "published": "2026-06-16T09:31:22Z",
+      "description": "はじめに\n2026年6月13日、中国のZhipu AI（Z.ai）がコーディング特化の新フラッグシップ「GLM-5.2」を発表しました。「MITライセンスでオープンソース化」「100万トークンのコンテキスト」「Claude Codeにそのまま挿せる」といった見出しがSNSやニュースを駆け巡り、私も「オープンソースになったなら重みを落として試そう」とHuggingFaceを開きました。\nところが、G...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "Loop Engineeringの組み方：Claude Code /goal で「自走するループ」を設計する",
+      "url": "https://zenn.dev/ino_h/articles/2026-06-16-loop-engineering-goal",
+      "site": "Zenn(LLM)",
+      "published": "2026-06-16T08:43:42Z",
+      "description": "はじめに\n2026年6月、AIコーディング界隈で「Loop Engineering（ループエンジニアリング）」という言葉が一気に広がりました。発端は、OpenClaw の作者として知られる Peter Steinberger 氏が6月7日に投稿した、たった2文のポストです。\n\nYou shouldn't be prompting coding agents anymore. You should ...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
     {
       "title": "AI彼女アプリを作っていたら、記憶より「関係性」の方が難しかった",
       "url": "https://zenn.dev/mitsukida/articles/4156bb1c34ac82",
@@ -49,16 +119,6 @@
       "site": "Zenn(LLM)",
       "published": "2026-06-16T03:00:10Z",
       "description": "TL;DR\n\n対話システムを「エンドユーザーが使えるか」の観点で受け入れテストするとき、シナリオ生成も評価も LLM に任せたくなります。\nしかし、LLM によるシミュレーション／評価には、生成発話のクオリティ、LLM as a Judge の限界、LLMベースシミュレーターの持つ譲歩問題など大きく5つの落とし穴が存在します。\n合成データによる自動評価は本物のエンドユーザーの代理にすぎないため、L...",
-      "category": "AI・技術",
-      "rss_category": "",
-      "image_url": ""
-    },
-    {
-      "title": "DSPy ReActV2 登場 -- ReAct とどこが変わったか試してみた",
-      "url": "https://zenn.dev/u_zero/articles/8f6395085f6872",
-      "site": "Zenn(LLM)",
-      "published": "2026-06-16T03:00:09Z",
-      "description": "はじめに\nDSPy[1] は「プロンプトではなくプログラムで」LLM アプリケーションを作るフレームワークです。プロンプトを手作業で調整するのではなく、入出力の型を Python で定義し、モジュールとして組み立てていきます。プロンプトの手直しを繰り返す苦行から離れてロジックに集中できるのがとても好きで、一度使い始めてからは素の API には戻れなくなりました。\n私は U-ZERO で VoE フ...",
       "category": "AI・技術",
       "rss_category": "",
       "image_url": ""
