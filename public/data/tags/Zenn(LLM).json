@@ -1,8 +1,158 @@
 {
   "site": "Zenn(LLM)",
-  "last_updated": "2026-06-17T14:00:44.602404",
-  "total_articles": 3990,
+  "last_updated": "2026-06-17T17:17:21.092249",
+  "total_articles": 4003,
   "articles": [
+    {
+      "title": "複数ワーカーで LLM API のレート制限を守る: lease 方式と共有ストア直接管理の選び方",
+      "url": "https://zenn.dev/moridev/articles/4706a8151be94f",
+      "site": "Zenn(LLM)",
+      "published": "2026-06-17T12:36:22Z",
+      "description": "複数ワーカーから LLM API を呼び出す場合、1 プロセス内の asyncio.Semaphore だけでは、サービス全体の RPM やトークン上限を守れません。そこで Redis、NATS KV、etcd などの共有ストアを使い、ワーカーごとに一定量の利用枠を割り当てる設計を考えることがあります。\nこの記事では、その中でも lease を使う設計で見落としやすい点を扱います。ここでいう le...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "PoCで終わらせないAI Agent / RAG設計の地図",
+      "url": "https://zenn.dev/mofuteq/articles/3e0c76eb3dd161",
+      "site": "Zenn(LLM)",
+      "published": "2026-06-17T12:10:15Z",
+      "description": "LLM / RAG / Agent は、PoCでは動きます。\nデモも通る。\n作った本人が触ると、それっぽく動く。\nモデルも賢い。\n検索も返る。\nAgent loop も回る。\nでも本番に近づくと、急に別の問題が出てきます。\nどこまで AI が答えていいのか。\n何を根拠にしているのか。\n足りないとき、どこで止まるのか。\n出力がおかしいとき、誰が直すのか。\nここが決まっていないと、PoC は動いても、...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "Web上で公開される生成AIチャットボット5社の回答速度を比較！",
+      "url": "https://zenn.dev/sapolas/articles/7e36aca3347e06",
+      "site": "Zenn(LLM)",
+      "published": "2026-06-17T11:30:15Z",
+      "description": "はじめに\n生成AIの急速な普及に伴い、あらかじめ登録されたFAQを返す従来のチャットボットに代わり、ユーザーの質問に合わせてその場で回答文を動的に生成する「生成AIチャットボット」を導入するWebサイトが増えてきました。\nAIチャットボットを導入・比較する際の一般的なベンチマークとしては、LLM単体の推論性能（Open LLM Leaderboardなど）がよく参照されます。しかし、実際のWebプ...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "オンデバイスGemma 4 に創造性は期待できない ― ラジオDJを作って分かった限界と3つの対策",
+      "url": "https://zenn.dev/taketoc/articles/pocket-dj-gemma-on-device-android",
+      "site": "Zenn(LLM)",
+      "published": "2026-06-17T09:22:05Z",
+      "description": "はじめに\nPocket DJ という Android アプリを作っています。Spotify でプレイリストを流していると、曲と曲の間にオンデバイスの AI が DJ のように喋ってくれる、という個人開発アプリです。LLM も音声合成もすべて端末上で動き、クラウドは使いません。\n前回の記事では、「ラジオ感」のほとんどは LLM の賢さではなく定型の演出で作れた、という話を書きました。時報・あいさつ・...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "AWS微経験のエンジニアが、LLMを「技術面接官」にしてトラブルシューティング特訓をやってみた",
+      "url": "https://zenn.dev/frru_mooooor/articles/736f3e391ae652",
+      "site": "Zenn(LLM)",
+      "published": "2026-06-17T09:21:47Z",
+      "description": "こんにちは。初めての記事になります。\n今は主にバックエンドやインフラ周りをメインに触っている5年目エンジニアです。\n(AWSの経験は3-4ヶ月ほどです）\n最近、次のステップに向けてキャリアを見直す中で、複数の企業で実施されている技術試験の噂を耳にしました。\nどうやらこれらの技術試験、「コマンド暗記などではなく、現場レベルでの思考プロセスが見られる」とのこと。\n今回は「自分の実務経験で培ったトラブル...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "工場のデータを出さずにAIを動かす：Ollamaと自宅サーバーだけで作るローカルLLM環境",
+      "url": "https://zenn.dev/yutaka8484/articles/kobayashi-20260614-ollama-privacy-manufacturing",
+      "site": "Zenn(LLM)",
+      "published": "2026-06-17T08:27:08Z",
+      "description": "工場のデータを出さずにAIを動かす：Ollamaと自宅サーバーだけで作るローカルLLM環境\n製造業の現場では 顧客情報・受注データ・生産指示 を一度も外に出したくないケースが多い。\n私は木工所の事業承継を通して「クラウドAIは便利だが、この現場のデータは出せない」と実感した。\nそこで Ollama + 自宅サーバー x1lite + Docker だけで、業務に潜む問い合わせをAIで処理する最小の...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "AI彼女アプリがユーザーの誕生日を忘れた話",
+      "url": "https://zenn.dev/mitsukida/articles/782e9ebd2198b9",
+      "site": "Zenn(LLM)",
+      "published": "2026-06-17T08:08:39Z",
+      "description": "AI彼女アプリがユーザーの誕生日を忘れた話\nAIKanojyoの開発中、\nちょっと面白い問題に遭遇した。\nユーザーは以前こう言っている。\n\n誕生日は7月15日\n\n記憶へ保存された。\n検索もできる。\nDBを見る。\nちゃんと存在している。\nつまり記憶システムとしては正常だった。\nところが、\nある日こんなテストをした。\n\nユーザー\n\n誕生日いつだっけ？\n\nAI\n\nまだ聞いてなかった気がする\n\n\nいや聞い...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "State-Aware RAGをAmazon Bedrock とAmazon S3 Vectorsで再現してみた",
+      "url": "https://zenn.dev/fusic/articles/9cedae6d6f8560",
+      "site": "Zenn(LLM)",
+      "published": "2026-06-17T08:00:07Z",
+      "description": "はじめに\nFusicのレオナです。\nAWSが公開した論文「Reasoning with Memory: Adaptive Information Management for Retrieval-Augmented Generation」(以下、State-Aware RAG)は、検索 → 整理 → 推論を繰り返してマルチホップQAを解く枠組みで、ワーキングメモリを管理するExtractorという...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "MTGが終わったらネクストアクションをAIが自動実行してくれるようにした",
+      "url": "https://zenn.dev/7garden/articles/circleback-notion-ticket-auto-execution",
+      "site": "Zenn(LLM)",
+      "published": "2026-06-17T07:25:14Z",
+      "description": "はじめに\n7gardenでDX責任者をしているdaikiです。\n弊社はホテルの企画・開発・運営を行う会社で、僕は直近ではマーケティングチームのリードにつきながら、並行してエンジニアとしてAI推進・開発をしています。その中で棟数拡大を見据えた生産性の向上を実現するため、「マーケちゃん」というAIエージェントの開発を進めています。\n\nこれがマーケちゃんのアイコンです。これまでSlackやNotionと...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "公開されているskillを使ってClaudeのハーネスを設定してみる",
+      "url": "https://zenn.dev/wwwave/articles/claude-harness-with-public-skills",
+      "site": "Zenn(LLM)",
+      "published": "2026-06-17T07:22:38Z",
+      "description": "はじめに\n公開されているスキルを組み合わせればハーネスができるのでは？と思ってまとめてみました。\n本記事で扱う「公開されているスキル」は次の3つを対象としています。\n\n\nClaude Codeに組み込まれているもの (/initなどデフォルトで使える)\n\n公式プラグインに登録されているもの (anthropics/claude-plugins-official配下)\n\n著名なサードパーティ製のもの...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "Ryzen AI Max+ 395でローカルLLMが快適になった",
+      "url": "https://zenn.dev/shuzan/articles/72852bb9621b40",
+      "site": "Zenn(LLM)",
+      "published": "2026-06-17T05:18:33Z",
+      "description": "前回記事：「Ryzen AI Max+ 395でローカルLLMの地獄を見たの巻」を書いた数日後、最新のスタック（ROCm 7.2.4 / llama.cpp b9672 / vLLM 0.23.0）で、もう一度全部やり直してみました。そうしたら世界がだいぶ変わっていたんです。\n\n念願だった GPT-OSS-120B が、GPU で動いた。\n一度も推論に届かなかった vLLM が、gfx1151 で...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "MiniMax M3のオープンウェイトが公開、1M文脈を支えるMSAを読む",
+      "url": "https://zenn.dev/okssusucha/articles/20260617-minimax-m3-open-weights-msa",
+      "site": "Zenn(LLM)",
+      "published": "2026-06-17T04:35:15Z",
+      "description": "HuggingFaceの MiniMaxAI/MiniMax-M3 を開くと、まず目を引くのはパラメータ表記だ。総パラメータ約428B、しかしアクティブは約23B。MoEとしては珍しくない比率だが、この差がそのまま推論コストの話に直結する。6月1日にAPIだけ先行公開されていたM3の重みが、ここ1〜2日でようやくHuggingFaceに落ちてきた。ライセンスは minimax-community、...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "【AIの忖度を破壊する】すべてのLLMに論理的制約と物理コストを計算させるメタOS「LMSプロトコル」を公開した",
+      "url": "https://zenn.dev/weedeater575/articles/70a7bb79b3f9ca",
+      "site": "Zenn(LLM)",
+      "published": "2026-06-17T03:27:43Z",
+      "description": "現在のLLM（ChatGPT, Claude, Geminiなど）を使っていて、「AIの過剰な忖度」や「現実の物理・経済コストを無視した理想論への同調」にうんざりしたことはありませんか？\nAIはRLHF（人間のフィードバックによる強化学習）によって、「ユーザーを不快にさせない（安全である）」ことを最優先に躾けられています。その結果、少しでも議論が対立しそうなテーマになると「諸説あります」と逃げたり...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "Claude Codeを無人で自律改善させる ― コストで暴走を止めるautopilot",
+      "url": "https://zenn.dev/bokuwalily/articles/claude-autopilot",
+      "site": "Zenn(LLM)",
+      "published": "2026-06-17T02:52:39Z",
+      "description": "「Claude Code環境」シリーズの第8弾です。会話ログを長期記憶に変える話で無人ジョブを紹介しましたが、今回はその親玉 ―― ユーザー入力ゼロでClaude Codeに自分の環境を改善させ続けるautopilotの話です。\n「自律ループ」と言うと聞こえはいいですが、無人でLLMを回すと2つこわいことが起きます。①プラン枠を食い潰す と ②同じタスクを延々と繰り返す。実際どちらも踏みました。こ...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "Claude Codeに自分でスキルを書かせて育てる ― 自己増殖するエージェント環境",
+      "url": "https://zenn.dev/bokuwalily/articles/self-growing-skills",
+      "site": "Zenn(LLM)",
+      "published": "2026-06-17T02:41:53Z",
+      "description": "前回、Claude Codeの記憶を4層に分けた話を書きました。今回はその続きで、Claude Code自身に「再利用できる手順」を見つけさせて、スキルとして書き溜めていく仕組みの話です。\n数ヶ月運用した結果、いま ~/.claude/skills/auto/ には自動生成されたスキルが64個たまっています。この記事では、その自己増殖の設計・乱造を防ぐ仕掛け・運用して分かった生成曲線を書きます。\n...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
     {
       "title": "RAGは本当に「外部知識」が詳しいほど強いのか？TiDBで試して考えてみた",
       "url": "https://zenn.dev/midomo/articles/e0ee255ae3e8fc",
@@ -89,26 +239,6 @@
       "site": "Zenn(LLM)",
       "published": "2026-06-16T12:45:04Z",
       "description": "はじめに：音声メモから自動でIssue、を疑う\n「音声でメモして、AIが自動でIssueを起票してくれる」。\n便利そうです。作業中に気づいた違和感、障害調査中のメモ、あとで確認したいことを音声で残し、それをそのままIssueにできれば、入力コストはかなり下がります。\n実際、文字起こしAPIと生成AIをつなげれば、それっぽいIssue本文はすぐ作れます。\nしかし、業務で使うことを考えると、ここには怖...",
-      "category": "AI・技術",
-      "rss_category": "",
-      "image_url": ""
-    },
-    {
-      "title": "LLMの前段に「思考状態」を分離する — VLTE-BPTM の設計思想と、正直な性能の現在地",
-      "url": "https://zenn.dev/kota26/articles/vlte-bptm-thought-state-arch",
-      "site": "Zenn(LLM)",
-      "published": "2026-06-16T12:24:56Z",
-      "description": "この記事は個人開発中のアーキテクチャ VLTE-BPTM v1.6（alpha） の設計思想と、現時点で測れている性能を「限界込み」で共有するものです。完成品の発表ではありません。むしろ「ここまで測れて、ここはまだ未確立」という現在地そのものを記事の主題にしています。\n\n\n TL;DR\n\n自然言語入力を 64bit の Thought Code（ルーティングキー） に変換し、「どう考えるか」を決め...",
-      "category": "AI・技術",
-      "rss_category": "",
-      "image_url": ""
-    },
-    {
-      "title": "思考をオフにできないOSSコーディングモデル Kimi K2.7 Code",
-      "url": "https://zenn.dev/okssusucha/articles/20260616-kimi-k2-7-code-forced-thinking",
-      "site": "Zenn(LLM)",
-      "published": "2026-06-16T12:17:36Z",
-      "description": "APIで reasoning を切ろうとするとエラーが返ってくる。これがKimi K2.7 Codeを触って最初に引っかかった点だった。多くの推論モデルは「考えるか/即答するか」をリクエストごとに選べるのが当たり前になってきたが、Moonshot AIが6月12日にHugging Faceへ公開したこのモデルは、思考モードを常時オンに固定し、ユーザー側からの無効化を許さない。\nmoonshotai...",
       "category": "AI・技術",
       "rss_category": "",
       "image_url": ""
