@@ -1,8 +1,28 @@
 {
   "site": "Zenn(LLM)",
-  "last_updated": "2026-06-17T17:17:21.092249",
+  "last_updated": "2026-06-17T19:33:09.105141",
   "total_articles": 4003,
   "articles": [
+    {
+      "title": "Agentの改善ループを確立するために2026年度 企業が乗り越えるべき4つのコト",
+      "url": "https://zenn.dev/gleon/articles/312dacc4ba3156",
+      "site": "Zenn(LLM)",
+      "published": "2026-06-17T15:03:15Z",
+      "description": "Agentと人の好循環…って結局なに\n先日Microsoft CEOサティア・ナデラのポスト「A frontier without an ecosystem is not stable」。Agent時代のフロンティアエコシステム、そして人間とAgentが協調する学習ループに言及し、インプレッションは6500万を超え、それを補足・和訳した下記のポストも大変大きな反響がありました。\nhttps://x...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "RAGは運用で育てられるのか？誤答を自動で拾い、評価データセットに変える仕組みを作る",
+      "url": "https://zenn.dev/livingston/articles/e8a93d0f08392e",
+      "site": "Zenn(LLM)",
+      "published": "2026-06-17T15:00:06Z",
+      "description": "!\nこの記事の結論（3点）\n\n\n誤答疑いは自動で拾えます。ただし「原因ラベル」の信頼性に落とし穴がありました。 LLMの2軸自己採点（忠実性・文脈関連性）で47問中7件の真の誤答疑いを抽出できました。しかし「generation（幻覚）」とラベルされた6件は、固定文脈ablationにより真因がA-RAGの検索品質だと判明しました。採点指標だけでは原因を切り分けられません。\n\n\n構成の切り替えはト...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
     {
       "title": "複数ワーカーで LLM API のレート制限を守る: lease 方式と共有ストア直接管理の選び方",
       "url": "https://zenn.dev/moridev/articles/4706a8151be94f",
@@ -48,7 +68,7 @@
       "url": "https://zenn.dev/frru_mooooor/articles/736f3e391ae652",
       "site": "Zenn(LLM)",
       "published": "2026-06-17T09:21:47Z",
-      "description": "こんにちは。初めての記事になります。\n今は主にバックエンドやインフラ周りをメインに触っている5年目エンジニアです。\n(AWSの経験は3-4ヶ月ほどです）\n最近、次のステップに向けてキャリアを見直す中で、複数の企業で実施されている技術試験の噂を耳にしました。\nどうやらこれらの技術試験、「コマンド暗記などではなく、現場レベルでの思考プロセスが見られる」とのこと。\n今回は「自分の実務経験で培ったトラブル...",
+      "description": "こんにちは。初めての記事になります。\n今は主にバックエンドやインフラ周りをメインに触っている5年目エンジニアです。\n(AWSの実務経験は3-4ヶ月ほどです）\n最近、次のステップに向けてキャリアを見直す中で、複数の企業で実施されている技術試験の噂を耳にしました。\nどうやらこれらの技術試験、「コマンド暗記などではなく、現場レベルでの思考プロセスが見られる」とのこと。\n今回は「自分の実務経験で培ったトラ...",
       "category": "AI・技術",
       "rss_category": "",
       "image_url": ""
@@ -69,16 +89,6 @@
       "site": "Zenn(LLM)",
       "published": "2026-06-17T08:08:39Z",
       "description": "AI彼女アプリがユーザーの誕生日を忘れた話\nAIKanojyoの開発中、\nちょっと面白い問題に遭遇した。\nユーザーは以前こう言っている。\n\n誕生日は7月15日\n\n記憶へ保存された。\n検索もできる。\nDBを見る。\nちゃんと存在している。\nつまり記憶システムとしては正常だった。\nところが、\nある日こんなテストをした。\n\nユーザー\n\n誕生日いつだっけ？\n\nAI\n\nまだ聞いてなかった気がする\n\n\nいや聞い...",
-      "category": "AI・技術",
-      "rss_category": "",
-      "image_url": ""
-    },
-    {
-      "title": "State-Aware RAGをAmazon Bedrock とAmazon S3 Vectorsで再現してみた",
-      "url": "https://zenn.dev/fusic/articles/9cedae6d6f8560",
-      "site": "Zenn(LLM)",
-      "published": "2026-06-17T08:00:07Z",
-      "description": "はじめに\nFusicのレオナです。\nAWSが公開した論文「Reasoning with Memory: Adaptive Information Management for Retrieval-Augmented Generation」(以下、State-Aware RAG)は、検索 → 整理 → 推論を繰り返してマルチホップQAを解く枠組みで、ワーキングメモリを管理するExtractorという...",
       "category": "AI・技術",
       "rss_category": "",
       "image_url": ""
@@ -369,16 +379,6 @@
       "site": "Zenn(LLM)",
       "published": "2026-06-16T00:55:43Z",
       "description": "はじめに\n!\nこの記事は生成AIの協力を得て執筆しています。\n\nローカル LLM 推論において、AMD GPU の Vulkan バックエンドがどの程度実用的なのか、実機ベンチマークで検証した記録である。\n検証のきっかけは「RX6800（16GB）で Qwen3-14B を回したら 24 t/s しか出ず、ハズレ GPU だったのでは」という疑問だった。結論から言うと、MoE モデルとの組み合わせ...",
-      "category": "AI・技術",
-      "rss_category": "",
-      "image_url": ""
-    },
-    {
-      "title": "AmazonのRAGに関する研究",
-      "url": "https://zenn.dev/knowledgesense/articles/1b5c7b70a2837c",
-      "site": "Zenn(LLM)",
-      "published": "2026-06-16T00:48:33Z",
-      "description": "導入\nこんにちは、株式会社ナレッジセンスの須藤英寿です。\n今回は、Amazonの提唱するRAGを繰り返し検索に最適化するための手法「State-Aware RAG」について紹介します。\nhttps://cdn.amazon.science/e3/78/083c7e8c45b8a850bd127b6c4b13/scipub-approval152129-46563445-reasoning-with...",
       "category": "AI・技術",
       "rss_category": "",
       "image_url": ""
