@@ -1,14 +1,54 @@
 {
   "site": "Zenn(生成 AI)",
-  "last_updated": "2026-06-19T13:48:20.828308",
-  "total_articles": 2470,
+  "last_updated": "2026-06-19T16:25:26.641325",
+  "total_articles": 2474,
   "articles": [
+    {
+      "title": "Claude Code をハブにして、dbt の仕事だけ dbt Wizard に任せてみた",
+      "url": "https://zenn.dev/usen_ict/articles/12bd61ad5ab606",
+      "site": "Zenn(生成 AI)",
+      "published": "2026-06-19T09:29:21Z",
+      "description": "!\ndbt Labs の dbt Wizard CLI（Beta）を、Claude Code の「乗り換え先」ではなく Claude Code から呼び出す専門エージェントとして触ってみた話です。\n実際にローカルで動かすところまでやったら、headless 実行 も Claude Code → dbt Wizard のルーティング もすんなり繋がりました。\nハマりどころ（BYOK 認証まわり）も含...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "生成AIアプリの成果物ストア設計",
+      "url": "https://zenn.dev/snknsk/articles/gcs_object_design",
+      "site": "Zenn(生成 AI)",
+      "published": "2026-06-19T09:17:23Z",
+      "description": "はじめに\n生成AIアプリを作るとき、モデル呼び出しやプロンプト設計に注目が集まりがちです。\nしかしWebアプリとして扱う場合は、生成された成果物をどこに保存し、どう参照し、どう履歴として見せ、どう削除するかも重要になります。\nたとえば、音声、画像、動画、PDFのようなファイルを生成するアプリでは、次のような設計が必要になります。\n\n成果物本体をどこに置くか\n生成時の入力やメタデータをどこに残すか\n...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "AIにAIの精度改善ループを回させようとして分かったこと",
+      "url": "https://zenn.dev/acrosstudioblog/articles/004e510b2e1335",
+      "site": "Zenn(生成 AI)",
+      "published": "2026-06-19T08:40:26Z",
+      "description": "私は AI エンジニアとして、AI SaaS を開発しています。開発していると、デモは動いたけれど、AI モジュールの精度がまだ安定しない、という場面によく遭遇します。\nどこで間違えたのか。なぜ間違えたのか。prompt を直すべきなのか、schema を変えるべきなのか、後処理を足すべきなのか。次の実行で本当に良くなったのか。\nこの確認は地味に重いです。精度が足りないたびに、サンプルを流し、結果...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
     {
       "title": "LoRAトリガーワード設計メモ｜キャラクターLoRAで固定すべき特徴と可変要素を分ける",
       "url": "https://zenn.dev/satofun/articles/c0b7e0eae2920c",
       "site": "Zenn(生成 AI)",
       "published": "2026-06-19T05:46:42Z",
       "description": "PR｜本記事にはプロモーションを含みます\n\nキャラクターLoRAを使うとき、トリガーワードは単なる「発動ワード」として扱われがちです。\nもちろん、LoRAを呼び出すための目印という理解は間違いではありません。\nただ、キャラクターLoRAを安定して使いたいなら、もう少し設計寄りに考えた方が扱いやすくなります。\n\n\n LoRAトリガーワードを考える前に\nLoRAまわりの話が分かりにくくなる理由のひとつ...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "AIは、一枚の机の上だけで考えている。コンテキストを実測して腹落ちした話",
+      "url": "https://zenn.dev/rapls/articles/ai-memory-desk-zenn",
+      "site": "Zenn(生成 AI)",
+      "published": "2026-06-19T03:21:57Z",
+      "description": "AIと長く話していると、急に最初の指示を忘れる瞬間があります。さっき決めたはずの前提が通じない。長い文書を貼り付けたら、返事が雑になった。「それ、さっき言ったよね」が伝わらない。あの、急にバカになったような感じ。\nあれの正体を、自分の手元で実際に測って、やっと腹落ちしました。先に絵を一枚渡します。AIは、一枚の机の上だけで考えています。\n\n AIの机には、何が載っているのか\n机のたとえを、もう少し...",
       "category": "AI・技術",
       "rss_category": "",
       "image_url": ""
@@ -74,11 +114,11 @@
       "image_url": ""
     },
     {
-      "title": "「AI がリードして人間がレビューする」は AI-DLC の誤読です",
+      "title": "「AI がリードして人間がレビューする」のは問題があります",
       "url": "https://zenn.dev/ebisawa/articles/90dee7110da01d",
       "site": "Zenn(生成 AI)",
       "published": "2026-06-18T09:42:12Z",
-      "description": "「AI がリードして人間がレビューする」という誤読\nAI-DLC（AWS が2025年に提唱した AI 駆動開発の方法論）は、「AI がリードし、人間がレビュー・補完する手法」と要約されがちです。各フェーズで AI が成果物を出し、人間が承認して次へ進む、という説明です。これは半分は正しいのですが、レビューを単なる事後点検と理解すると重要な点を見落とします。\nAI-DLC が本来意図しているのは、...",
+      "description": "「AI がリードして人間がレビューする」という発想\nAI-DLC（AWS が2025年に提唱した AI 駆動開発の方法論）は、「AI がリードし、人間がレビュー・補完する手法」と要約されがちです。各フェーズで AI が成果物を出し、人間が承認して次へ進む、という説明です。これは半分は正しいのですが、レビューを単なる事後点検と理解すると重要な点を見落とします。\nAI-DLC が本来意図しているのは、...",
       "category": "AI・技術",
       "rss_category": "",
       "image_url": ""
