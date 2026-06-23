@@ -1,8 +1,68 @@
 {
   "site": "Zenn(機械学習)",
-  "last_updated": "2026-06-23T22:41:03.352625",
-  "total_articles": 1282,
+  "last_updated": "2026-06-23T23:43:51.832186",
+  "total_articles": 1288,
   "articles": [
+    {
+      "title": "Pythonなしで検索のパーソナライズを実装する：TypeScriptだけで対照学習（Contrastive Learning）を動かす",
+      "url": "https://zenn.dev/daiki_moritake/articles/ts-contrastive-learning",
+      "site": "Zenn(機械学習)",
+      "published": "2026-06-23T23:00:02Z",
+      "description": "はじめに\n「ユーザーのクリック履歴をもとに、検索結果をパーソナライズしたい」\nこの要件を実現しようとすると、通常は以下のような大掛かりなアーキテクチャが必要になります。\n\nクリックログを収集するバックエンド\nPyTorch / TensorFlow で対照学習（Contrastive Learning）を行う学習サーバー\n学習済みモデルをデプロイするインファレンスサーバー\nそれらを管理するMLOp...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "画像AIはモデルやデータ量だけじゃない：実務をして気づいた大切な前処理・評価・後処理の話",
+      "url": "https://zenn.dev/tiger1217/articles/66baf4f53edac0",
+      "site": "Zenn(機械学習)",
+      "published": "2026-06-23T14:23:08Z",
+      "description": "画像AIはモデルだけじゃない\n画像AIの学習というと、まず思い浮かぶのはモデル選定かもしれません。\nYOLOを使うのか、Mask R-CNNを使うのか、Mask2Formerを使うのか。\nどのモデルを選ぶか、どれくらいデータを増やすか、学習をどれくらい回すか。\nもちろん、それらは精度を上げるうえで大事です。\nただ、実務で画像AIを扱っていると、モデル以外にも精度や使いやすさを大きく左右する要素がか...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "「これ何タナゴ?」に答える魚種分類器を個人で作ったら、敵はモデルよりドメインギャップだった",
+      "url": "https://zenn.dev/kiribako_dev/articles/fish-species-classifier",
+      "site": "Zenn(機械学習)",
+      "published": "2026-06-23T13:59:06Z",
+      "description": "個人開発のタナゴ釣り記録アプリ「KIRIBAKO」に、写真から魚種を当てる機能を入れています。タナゴは種類が多くて似ていて、ベテランでも迷う。初心者の最初の壁が「で、これ何タナゴ?」なんです。だからスマホで候補を出せたら嬉しい。\nところがこの魚種分類、前に書いた採寸よりも何倍も手強かった。そして手こずった相手は、モデルのアーキテクチャでも CoreML 変換でもなく――ドメインギャップでした。\n\n...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "OpenCVで限界が来たコイン検出を、CoreMLの中心+半径回帰で強化する【後編】",
+      "url": "https://zenn.dev/kiribako_dev/articles/coin-detection-ml",
+      "site": "Zenn(機械学習)",
+      "published": "2026-06-23T13:59:06Z",
+      "description": "個人開発の釣果記録アプリ「KIRIBAKO」で、写真に写した硬貨を基準に魚を採寸する機能を作っています。前編では採寸の全体像（コイン基準 / LiDAR）を解説しました。\n\n前編：スマホのカメラだけで魚を採寸する ― コイン基準とLiDAR、2方式\n\n\nその中で一番の難所が 「コイン（円）の検出」 でした。OpenCV の HoughCircles を頑健化してもなお、木目・目盛り・反射の多い釣果...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "SVM Part 1",
+      "url": "https://zenn.dev/aizakovzky/articles/f30b4b42882331",
+      "site": "Zenn(機械学習)",
+      "published": "2026-06-23T13:57:09Z",
+      "description": "1) SVMとは\nSupport Vector Machine（SVM）は，教師あり学習モデルの分類モデルの1種である．最適な超平面をデータの特徴空間に置くことによって，データを分類することができる．そのような超平面は，データが正しく分類されている状態でマージンの長さを最大化したような超平面である．汎化性能の向上のための Soft Margin，非線形分類への拡張のための Kernel Trick...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "自作の競馬予想MLで効率的市場仮説に挑んで、跳ね返された話 ── ablationで見えた『市場が織り込んでいるもの』",
+      "url": "https://zenn.dev/umascore/articles/999f3ca6fb8af5",
+      "site": "Zenn(機械学習)",
+      "published": "2026-06-23T12:03:17Z",
+      "description": "TL;DR\n\n個人開発の競馬予想ML（UmaScore）について「自前モデルのスコアは結局オッズを写しているだけで、見せかけのエッジを出しているのでは？」という疑いを ablation test で定量検証した。\nオッズ成分を抜いてもBTは崩壊しない（ABLATED &amp; odds≤20 で BT 116.7%）→「循環参照で見せかけ」説は否定。\nしかしFTでは逆転し ABLATED &am...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
     {
       "title": "バックテストが良すぎたら、それは未来を見ている",
       "url": "https://zenn.dev/morimiso/articles/2eb6c5313f2754",
