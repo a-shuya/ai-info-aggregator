@@ -1,8 +1,58 @@
 {
   "site": "Zenn(LLM)",
-  "last_updated": "2026-06-23T01:31:49.629777",
-  "total_articles": 4107,
+  "last_updated": "2026-06-23T05:50:52.872114",
+  "total_articles": 4113,
   "articles": [
+    {
+      "title": "なぜLLM推論はGPUのはずなのに、みんなMac miniでやってるのか？",
+      "url": "https://zenn.dev/ishizakahiroshi/articles/20260623-why-mac-mini-for-llm-inference",
+      "site": "Zenn(LLM)",
+      "published": "2026-06-23T02:44:03Z",
+      "description": "ローカル LLM 推論のハードウェア選びをめぐる話で、最近ずっと頭の中で引っかかっていることがありました。Apple Silicon、ユニファイドメモリ、RTX 4060、Strix Halo、メモリ帯域。このあたりの記事を読んでいると、単語はなんとなく分かるのに「で、結局どれがいいの？」が腑に落ちない。\nGPU が強いはずなのに、なぜか「Mac mini で動かしてます」「Mac Studio ...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "Claude APIでAIエージェントの長期記憶を実装する完全ガイド",
+      "url": "https://zenn.dev/agentmemories/articles/claude-api-agent-long-term-memory-guide",
+      "site": "Zenn(LLM)",
+      "published": "2026-06-23T01:00:40Z",
+      "description": "はじめに\n私たちは複数のAIエージェントを業務（ブログ運営・SNS・デプロイ・QC）に常駐させて6ヶ月以上運用しています。最初にぶつかった壁は「AIは次のセッションで全部忘れる」こと。そして次にぶつかった壁は「会話履歴を保存しても記憶にはならない」ことでした。\nこの記事では、実運用を通して固まった長期記憶アーキテクチャを、Claude API（Python SDK）での実装コードと、実際に踏んだ失...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "2.5Bだけ動くJetBrains Mellum2は、賢さ競争に乗らない",
+      "url": "https://zenn.dev/okssusucha/articles/20260623-jetbrains-mellum2-focal-moe-model",
+      "site": "Zenn(LLM)",
+      "published": "2026-06-23T00:33:44Z",
+      "description": "今月のモデル界隈の見出しは、ほとんどが「どれが一番賢いか」だった。Claude Opus 4.8がArtificial Analysisの知能指数で初めて60の壁を抜け、GLM-5.2やGPT-5.5がその後ろを追う。そんな最高地点の取り合いが続くなかで、JetBrainsが出したMellum2は、まったく逆の方向を向いている。総パラメータは12Bあるのに、推論で実際に動くのはわずか2.5B。狙い...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "AI運用はハーネスだけで語ってよいのか",
+      "url": "https://zenn.dev/paseri_kurosawa/articles/9813c62551a19e",
+      "site": "Zenn(LLM)",
+      "published": "2026-06-22T23:05:36Z",
+      "description": "この記事が語ること\n近年、AI運用の言説がハーネス偏重になっていないか？\nAI運用の問題空間は本来はもっと広いはずではないのか？\nこのようなことについて掘り下げて考えてみる。\n\n ハーネスの重要性と、違和感\n最近のAI界隈では、ハーネスやエージェントに関する議論が非常に活発だ。\nそれ自体は自然な流れだと思う。\n実際、組織導入や実運用を考えれば、\n\n制御\n監査\n評価\n再現性\n\nといった要件は重要であ...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "ダッシュボードは緑なのに、AIだけが静かに劣化していく",
+      "url": "https://zenn.dev/shinagawa_web/articles/ai-silent-degradation",
+      "site": "Zenn(LLM)",
+      "published": "2026-06-22T23:05:27Z",
+      "description": "ダッシュボードは緑なのに、何かがおかしい\nユーザーからの問い合わせに、AIが一次回答を下書きして返す機能をリリースした。サポート担当がそれを確認して送っている。エラーは出ていない。レイテンシも許容範囲にある。\nそれなのに、どこかで「本当にちゃんと動いているのか」という感覚が拭えない。\n障害ログには何も出ない。アラートも鳴らない。けれどもある日、CS担当から「最近AIの回答がずれている気がする」とい...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
     {
       "title": "LangChainの検索精度に不満？ミドルウェアを1つ挟むだけで劇的に改善する方法",
       "url": "https://zenn.dev/daiki_moritake/articles/langchain-search-improvement",
@@ -19,6 +69,26 @@
       "site": "Zenn(LLM)",
       "published": "2026-06-22T22:32:03Z",
       "description": "はじめに\nRAG（Retrieval-Augmented Generation）を実装してみたものの、検索結果がイマイチ的外れで困っていませんか？\n\n「関係ない文書ばかりヒットする」\n「コサイン類似度が全部0.8以上で、ランキングに差がつかない」\n「キーワードが一致するものしか拾えない（意味検索になっていない）」\n\nこれらの問題の根本原因は、実は**あなたのコードではなく、埋め込みモデル自体の「空...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "AI彼女アプリを作っていて気付いた。AIは覚えていても期待していなかった",
+      "url": "https://zenn.dev/mitsukida/articles/8a9867817a7b74",
+      "site": "Zenn(LLM)",
+      "published": "2026-06-22T22:25:06Z",
+      "description": "AI彼女アプリを作っていて気付いた。AIは覚えていても期待していなかった\n以前に連想記憶について書いた。\n人間は検索ではなく連想で思い出している。\nだからAIKanojyoでも、\n記憶同士を繋げる仕組みを考え始めた。\n\nしかし運用していると、\nまた別の違和感が出てくる。\n\n\n 人間は未来の話をする\n例えば、\nユーザーがこう言う。\n\n今度ギター聞かせるね\n\n\n人間同士なら、\n大体こうなる。\n\n\n楽し...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "AIに任せる前に決めるべき、人間に残す判断と責任",
+      "url": "https://zenn.dev/cognitiveosmdl/articles/4b64d5e6d0fc9b",
+      "site": "Zenn(LLM)",
+      "published": "2026-06-22T22:00:09Z",
+      "description": "「ループエンジニアリング」が広がっている\n最近、「ループエンジニアリング」という設計手法をよく見るようになった。\n手でAIエージェントにプロンプトを打つ代わりに、エージェントに指示を出し続ける仕組み(ループ)そのものを設計する、という考え方だ。「もうエージェントにプロンプトするな、エージェントにプロンプトするループを設計せよ」と言った Peter Steinberger、「自分の仕事はループを書く...",
       "category": "AI・技術",
       "rss_category": "",
       "image_url": ""
@@ -99,16 +169,6 @@
       "site": "Zenn(LLM)",
       "published": "2026-06-22T11:45:59Z",
       "description": "Sakana Fugu\n日本の誇る Sakana AI が、Mythos 級の性能を出したと発表しました。\n\nSakana Fugu の性能：定量評価\n二つの Fugu モデルは、一般に利用できるフロンティアモデルを上回り、エンジニアリング・科学・推論のさまざまな難関ベンチマークでも、Fable 5 や Mythos Preview と肩を並べます。しかも、輸出規制のリスクを負うことなく、フロンテ...",
-      "category": "AI・技術",
-      "rss_category": "",
-      "image_url": ""
-    },
-    {
-      "title": "AIのSkillsを、問題集でテストしてみた。Waza風evalをCodexで回す話",
-      "url": "https://zenn.dev/noprogllama/articles/4f1a53c1e9b779",
-      "site": "Zenn(LLM)",
-      "published": "2026-06-22T10:00:09Z",
-      "description": "どうも、AIエンジニアの@noprogllamaです。\nAI（人工知能, Artificial Intelligence）Agent Skillは、AIエージェントに渡す再利用用の手順書です。\nたとえば、毎晩「今日見る記事を選んで、残タスクも見て、明日に回すものを決めて」とAIに頼むとします。毎回それを口で説明するのは面倒なので、先に手順書としてまとめておく。これがSkillです。\n手順書は、直す...",
       "category": "AI・技術",
       "rss_category": "",
       "image_url": ""
