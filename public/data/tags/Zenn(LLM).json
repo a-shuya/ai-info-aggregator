@@ -1,38 +1,8 @@
 {
   "site": "Zenn(LLM)",
-  "last_updated": "2026-06-27T05:56:49.791852",
+  "last_updated": "2026-06-27T08:44:38.657631",
   "total_articles": 4188,
   "articles": [
-    {
-      "title": "Claudeエージェントの記憶を再構築するDreams APIを読む",
-      "url": "https://zenn.dev/okssusucha/articles/20260627-claude-dreams-api-agent-memory",
-      "site": "Zenn(LLM)",
-      "published": "2026-06-27T02:46:14Z",
-      "description": "長く動かしているエージェントの memory ファイルを開いて、うんざりしたことはないだろうか。同じ知見が言い回しを変えて三回書いてある。先週の前提と今週の前提が矛盾したまま並んでいる。とっくに消えたAPIの注意書きが残っている。エージェントは「気づいたことをメモする」のは得意でも、「ためたメモを整理し直す」のは誰もやってくれない。\nAnthropicが5月6日のCode with Claudeで...",
-      "category": "AI・技術",
-      "rss_category": "",
-      "image_url": ""
-    },
-    {
-      "title": "1つのモデルを選ぶのをやめる、vLLM Semantic RouterのFusion",
-      "url": "https://zenn.dev/okssusucha/articles/20260626-vllm-semantic-router-fusion",
-      "site": "Zenn(LLM)",
-      "published": "2026-06-27T02:46:14Z",
-      "description": "「このリクエストはどのモデルに投げるべきか」。LLMルーティングの議論はずっとこの問いを中心に回ってきた。安いモデルで足りるか、それとも高いモデルにエスカレーションするか。要は1リクエストにつき1モデルを選ぶ、という前提だった。\nvLLMプロジェクトが6月16日に公開した Fusion は、その前提を外しにきている。1つ選ぶのではなく、複数のモデルに同じリクエストを同時に答えさせ、別のモデルがそれ...",
-      "category": "AI・技術",
-      "rss_category": "",
-      "image_url": ""
-    },
-    {
-      "title": "なぜCodexのweb検索は既定でライブページを取りに行かないのか",
-      "url": "https://zenn.dev/okssusucha/articles/20260626-codex-web-search-cached-default-security",
-      "site": "Zenn(LLM)",
-      "published": "2026-06-27T02:46:13Z",
-      "description": "コーディングエージェントに web 検索をつけると、便利さと引き換えに妙な弱点が生まれる。エージェントが読んだページの中身が、そのまま「次に何をするか」の指示として効いてしまうのだ。Codex CLI の設定リファレンスを読んでいて気づいたのは、OpenAI がこの問題に対して、けっこう保守的な既定値を選んでいるという点だった。web 検索を有効にしても、Codex は既定では生きたページを取りに...",
-      "category": "AI・技術",
-      "rss_category": "",
-      "image_url": ""
-    },
     {
       "title": "Codex CLI経由でプログラム的に画像を生成する：gpt-image-2で『視覚的開発ループ』を作る",
       "url": "https://zenn.dev/libercraft/articles/20260627-codex-image-generation",
@@ -44,21 +14,51 @@
       "image_url": ""
     },
     {
-      "title": "AI体験記 vol.9 — 優れたAIに頼り切る前に、土台を作っておく",
-      "url": "https://zenn.dev/mizutamari/articles/local-llm-vol9",
-      "site": "Zenn(LLM)",
-      "published": "2026-06-27T01:08:46Z",
-      "description": "!\nこの記事は、「土台（ハーネス）」という何だか分からないものを作り始めた体験記です。\n技術的な正確さより、体験の正直さを優先して書いています。また復習のための記事でもあります。\n\nvol.8では、Mac miniをネットワークから追放して、Tailscaleのトンネルで会いに行く話を書いた。\n予告では「次はパイプラインの話」と書いた。\nでも、その前に書いておきたいことができた。パイプラインを安全...",
-      "category": "AI・技術",
-      "rss_category": "",
-      "image_url": ""
-    },
-    {
       "title": "正規表現でできることをLLMにやらすのは止めないか",
       "url": "https://zenn.dev/dmuraoka/articles/4eca4d694e172d",
       "site": "Zenn(LLM)",
       "published": "2026-06-26T22:53:26Z",
       "description": "最近、ざっくり言うと以下のような感じの処理を見ることがとても増えた。\nprompt = &lt;&lt;~TEXT\n以下のテキストからメールアドレスを抽出してJSONの配列で返してください。\n\n#{text}\nTEXT\n\nemails = call_llm_api(prompt)\nLLM登場前はおそらくこんな感じで書いていただろう。\nemails = text.scan(/\\b[A-Za-z0-9...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "AIシステムの本番運用ガイド",
+      "url": "https://zenn.dev/hkame/books/ai-architect-production",
+      "site": "Zenn(LLM)",
+      "published": "2026-06-26T21:18:28Z",
+      "description": "RAG・Agentを実装した後に必要な「本番で使えるシステムにする」技術を体系的に学ぶハンズオンガイドです。Evals・Observability・Security・MLOps・Fine-tuningをpgvectorとGeminiを使って手を動かしながら学べます。",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "なぜ、AIが持つ最も大きな機能が「高スキル人間の濾過」だと言えるのか？",
+      "url": "https://zenn.dev/pdfractal/articles/1956f3e9dcdac5",
+      "site": "Zenn(LLM)",
+      "published": "2026-06-26T17:15:00Z",
+      "description": "はじめに\nAI、とくに大規模言語モデルの登場について語るとき、多くの人は「仕事が奪われるのか」「生産性が上がるのか」「どの職業が危ないのか」という形で考えます。もちろん、それらは重要な論点です。しかし、それだけではAIの本質を捉えきれません。\nAIの最大の特徴は、社会を視覚的に変えないことです。鉄道が通れば街の形が変わります。自動車が普及すれば道路が広がります。電気が普及すれば夜の街が変わります。...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "\"「あの人しかできない」の正体は、散らかったデータだった ── 技能継承の墓場で本当に効く、地味な一点\"",
+      "url": "https://zenn.dev/hiroshift/articles/e5d73df44516c3",
+      "site": "Zenn(LLM)",
+      "published": "2026-06-26T13:36:05Z",
+      "description": "30日連続で「あの人しかできない、をほどく」小さなアプリを作っています。Day09。\n前回まで：Day01 食品卸のFAX下読み／Day08 値引きの線を相談するチャット。\n\n今日は正直に言うと、動くアプリより前に、立てた問いの方が大事な回です。完成した答えではなく、「これは成立するのか？」という仮説を、自分で刺しながら置きます。\n\n\n 先に、この沼が\"墓場\"だと言っておく\n「ベテランの技をAIで...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "コードを書かず、データを外に出さず、AIに設計させた軽量NNでクレーム予兆メールをローカル検知する",
+      "url": "https://zenn.dev/sumumu26/articles/62810cf8502d3b",
+      "site": "Zenn(LLM)",
+      "published": "2026-06-26T13:16:36Z",
+      "description": "はじめに\nこの記事のテーマは2つです。\n\n\n省エネ — コードを一行も書かない。AIへの依頼と結果の確認だけで完結させる\n\n安全 — 顧客データを外部サーバーに一切送らない。学習も推論もローカルで完結\n\n業務メールの分類をしたいとき、LLMのAPIに投げるのが最速に見えます。ただそれには問題があります。顧客の個人情報や苦情内容が外部サーバーに送信されるという点です。セキュリティポリシーや契約上の制...",
       "category": "AI・技術",
       "rss_category": "",
       "image_url": ""
