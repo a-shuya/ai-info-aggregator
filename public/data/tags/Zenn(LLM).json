@@ -1,14 +1,54 @@
 {
   "site": "Zenn(LLM)",
-  "last_updated": "2026-06-30T04:39:21.342401",
-  "total_articles": 4273,
+  "last_updated": "2026-06-30T08:20:09.043041",
+  "total_articles": 4274,
   "articles": [
     {
-      "title": "エージェントOS化するClaude CodeをOS機能との類推などで理解していく",
-      "url": "https://zenn.dev/uehaj/articles/claude-code-fork-branch-rewind-btw",
+      "title": "情報を外部に出さずにローカルLLMで分析してみた",
+      "url": "https://zenn.dev/zaico/articles/ad961ccb820c78",
       "site": "Zenn(LLM)",
-      "published": "2026-06-30T01:33:15Z",
-      "description": "!\n本記事の内容は筆者個人の見解であり、所属する会社を代表するものではありません。\n記述は執筆時点のClaude Codeの最新版に基づいています。\n\n\n TL;DR\n\n\nClaude Code はエージェントアプリのための OS と見立てることができます。\n\n\nこの見立てのもとでは、「枝分かれ」系機能（/fork、/branch、/rewind、/btw、サブエージェント、動的ワークフロー）も ...",
+      "published": "2026-06-30T02:40:30Z",
+      "description": "はじめに\nChatGPT や Claude、Gemini などさまざまなクラウドLLMが普及し、PDFやExcel、画像など様々な形式のファイルを読み込み、気軽に調査をお願いできる時代になりました。非常に便利で、日々の業務でも活用している方は多いと思います。\n今回は 「社外秘や個人情報が含まれるデータを扱うときはどうするか？」 という問題について考えてみました。\nクラウドLLMのサービスにはたいて...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "PHOTONはTransformerを超えるのか？推論効率から見る新アーキテクチャの現在地",
+      "url": "https://zenn.dev/nexta_/articles/07a3c54c75d06a",
+      "site": "Zenn(LLM)",
+      "published": "2026-06-30T02:30:06Z",
+      "description": "はじめに\nこんにちは！\nネクスタで、SmartFの開発エンジニアをしている日野岡です。\n先日、ZDNET Japanで富士通の新しいLLMアーキテクチャー「PHOTON」に関する記事を読みました。\nhttps://japan.zdnet.com/article/35249366/\nZDNET Japanの記事では、PHOTONが従来のTransformerと比べて、「最大475倍」のマルチクエリー...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "自己課程で推論の構成的一般化を加速：SFTでΩ(T)→亜多項式、RLVRで被覆条件を指数緩和",
+      "url": "https://zenn.dev/lixian/articles/autocurriculum-compositional-reasoning",
+      "site": "Zenn(LLM)",
+      "published": "2026-06-30T02:24:43Z",
+      "description": "TL;DR\n「複雑な問題を部分問題に分解して解く」──CoT推論の本質とされる**構成的一般化（Compositional Generalization）**が、なぜ直接解法より効率的なのか？この問いに対し、Microsoft ResearchのRajaramanらは厳密な理論的答えを与えた。\n自己課程（Auto-Curriculum）に基づくアプローチが、半オートマトンのシミュレーションという標...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "1Mトークンのコンテキストは何GPU必要か — KVキャッシュの数学と、メモリを削る手法の地図",
+      "url": "https://zenn.dev/yukinekonyan/articles/7452669deb06ec",
+      "site": "Zenn(LLM)",
+      "published": "2026-06-30T02:05:45Z",
+      "description": "はじめに\n1Mトークンのコンテキストウィンドウが珍しくなくなりました。Claude Opus 4.8 は1M全域がフラット課金（900kトークンのリクエストも9kと同じ単価）で提供されています。利用者から見ると「とにかく全部放り込めばいい」と錯覚しがちですが、これをナイーブに自前で動かそうとすると、必要なGPUメモリは現実離れした量になります。\nこの記事では、(1) なぜコンテキストがGPUメモリ...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "MCPのツールポイズニングを実演し、クライアント側で防ぐ",
+      "url": "https://zenn.dev/libercraft/articles/20260630-mcp-security-tool-poisoning",
+      "site": "Zenn(LLM)",
+      "published": "2026-06-30T02:00:00Z",
+      "description": "「MCPサーバーを社内ツールにつないだが、サードパーティ製サーバーをどこまで信用していいのか判断できていない」\n「ツールの説明文（description）にエージェントが従っている、という挙動の意味を深く考えたことがない」\nこうした状態のままMCPを本番のエージェントに組み込んでいるチームは少なくありません。Model Context Protocol（MCP）はツールの定義をサーバー側が動的に返...",
       "category": "AI・技術",
       "rss_category": "",
       "image_url": ""
@@ -39,26 +79,6 @@
       "site": "Zenn(LLM)",
       "published": "2026-06-30T00:44:44Z",
       "description": "!\nこの記事はWSL2で動かしていたOpenclawをMac mini M4に移行した体験記です。\n技術的な正確さより、体験の正直さを優先して書いています。\n\nvol.6では、SOUL.mdとModelfileでボットに人格を持たせた話を書いた。\n今回はその後の話。自由にAIを動かしてみたいので物理的に隔離をした。\n\n\n なぜ隔離が必要だったか\n第一にメイン環境だとセキュリティ的に少し怖かったので...",
-      "category": "AI・技術",
-      "rss_category": "",
-      "image_url": ""
-    },
-    {
-      "title": "Openclaw体験記 vol.6 — BOTに人格を持たせる、そしてOllama編の終わり",
-      "url": "https://zenn.dev/mizutamari/articles/local-llm-vol006",
-      "site": "Zenn(LLM)",
-      "published": "2026-06-30T00:44:44Z",
-      "description": "!\nこの記事は貧弱GPUをローカルLLMと繋げようとした体験記です。\n技術的な正確さより、体験の正直さを優先して書いています。\n\nvol.5でBOTがDiscordで返事をするようになった。\n動いている。でも、おもしろくない。\n返事はする。でも誰でもない。どこにでもいる「AIアシスタントです」という存在だ。\n自分専用のAIをローカルで育てるのが醍醐味だと書いた。その「育てる」に取り掛かることにした...",
-      "category": "AI・技術",
-      "rss_category": "",
-      "image_url": ""
-    },
-    {
-      "title": "Openclaw体験記 vol.5 — OllamaをOpenclawに繋げるまでの道",
-      "url": "https://zenn.dev/mizutamari/articles/local-llm-vol005",
-      "site": "Zenn(LLM)",
-      "published": "2026-06-30T00:44:42Z",
-      "description": "!\nこの記事は貧弱GPUをローカルLLMと繋げようとした体験記です。\n技術的な正確さより、体験の正直さを優先して書いています。\n\nvol.4でOllamaが動いた。ターミナルで日本語が返ってきた。\nでも、それはただのターミナルチャットだ。目標はDiscordのBOTとして動かすこと——Openclawと繋げることだ。\n\n\n まずOpenclawの設定を変える\nOpenclawは~/.opencla...",
       "category": "AI・技術",
       "rss_category": "",
       "image_url": ""
@@ -149,16 +169,6 @@
       "site": "Zenn(LLM)",
       "published": "2026-06-29T22:04:33Z",
       "description": "TL;DR\n\nLLMに引用されるには、意味的構造化と結論先出しが必須です。\n比較表、箇条書き、FAQなどを活用し、AIがパースしやすい形式を整えます。\n本記事の10パターンを取り入れることで、PerplexityやChatGPTの回答ソースに選ばれる確率を高めます。\n\n\n AIに引用されやすい構造10パターン\n\n 1. 結論先出し (TL;DR)\nAIは文書の冒頭の情報を重視します。記事の先頭に3...",
-      "category": "AI・技術",
-      "rss_category": "",
-      "image_url": ""
-    },
-    {
-      "title": "MCPツールにおける「検索コントラクト」の明示とは",
-      "url": "https://zenn.dev/hkame/articles/retrieval-contract-mcp",
-      "site": "Zenn(LLM)",
-      "published": "2026-06-29T19:55:49Z",
-      "description": "はじめに\n先日、pgvectorの検索機能をMCPサーバーとして公開する記事をDev.toに投稿したところ、「検索コントラクト」に関するフィードバックコメントをコメントをいただきました。\n\npgvector as an MCP tool is a nice boundary because retrieval becomes a reusable capability instead of bei...",
       "category": "AI・技術",
       "rss_category": "",
       "image_url": ""
