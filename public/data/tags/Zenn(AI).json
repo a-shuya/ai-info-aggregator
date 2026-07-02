@@ -1,8 +1,178 @@
 {
   "site": "Zenn(AI)",
-  "last_updated": "2026-07-02T08:32:56.196312",
-  "total_articles": 10547,
+  "last_updated": "2026-07-02T11:17:33.547322",
+  "total_articles": 10557,
   "articles": [
+    {
+      "title": "ルールを書くことと、ルールが機能すること",
+      "url": "https://zenn.dev/thegatebreaker/articles/2693dc23291956",
+      "site": "Zenn(AI)",
+      "published": "2026-07-02T08:59:33Z",
+      "description": "TL;DR\n「ルールを文書化すれば機能する」という前提が間違っている。ルールは記録として必要だが、それだけでは制御にならない。AIも人間組織も、本当の制約はプロセス設計とアーキテクチャに埋め込まれる。\n\n 先に実装の話をする\nこの記事で言いたいことは「テキストルールより構造的制約が重要」だ。だから先に実装を見せる。\n私たちが実際に入れた git hook（hooks/pre-push）：\n#!/u...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "毎日AIニュース 0702",
+      "url": "https://zenn.dev/qps/articles/e9d4330a31692e",
+      "site": "Zenn(AI)",
+      "published": "2026-07-02T08:55:27Z",
+      "description": "Youtube\n\n 今日の話題\n\n今日の最大のニュースは、AnthropicによるClaude Fable 5の提供の全面再開だ。米国の輸出管理の解除を受けたもので、7月7日までは週間利用上限の50%までそのまま利用できる。\nすぐに試せる新しいツールも相次いだ。NotionはインタラクティブなHTMLをページに埋め込めるブロックを追加し、xAIはノーコードの音声エージェント基盤のベータ提供を始め、...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "Claude Fable 5とは何者か — 料金2倍でもOpusの上に立つ「Mythos級」モデルを整理する",
+      "url": "https://zenn.dev/ojyo/articles/0209116ab6a3fd",
+      "site": "Zenn(AI)",
+      "published": "2026-07-02T08:51:29Z",
+      "description": "2026年6月9日、AnthropicがClaude Fable 5を一般公開した（PC Watch）。「Opusの上」に新設されたティアのモデルで、話題性のわりに情報が散らばっているので、公式ドキュメントと各種報道をもとに要点を整理する。\nなお、この記事を書くにあたって使っているClaude Code自体もFable 5で動かしている。使用感も最後に少しだけ書く。\n\n 位置づけ:「Opusの後継...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "Claude Codeで大学の課題管理を自動化してみた（工学部生の実体験）",
+      "url": "https://zenn.dev/ojyo/articles/c65e89bb6feeea",
+      "site": "Zenn(AI)",
+      "published": "2026-07-02T08:28:33Z",
+      "description": "背景\n情報系学科の学部生をやっていると、毎週のように「実験レポート」「課題ワークシート」「締切」がいろいろな授業から降ってくる。\n科目ごとにフォルダが分かれ、締切はPDFに書いてあったり大学のポータルサイトにしか書いていなかったりして、正直かなり管理が大変だった。\n「これ、Claude Codeに自分のフォルダごと見せて、締切一覧を作らせたらどうなるんだろう」と思ったのが今回のきっかけ。\n\n やっ...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "並走する複数のClaudeが二重実行・取りこぼしを起こす ── 指揮者なしの台帳で衝突を防いだ17日間",
+      "url": "https://zenn.dev/tokium_dev/articles/foreman-cross-session-task-harness",
+      "site": "Zenn(AI)",
+      "published": "2026-07-02T08:27:56Z",
+      "description": "!\nこの記事は何の話か（3 行まとめ）\n\nAI（Claude Code）を1台ではなく何台も同時に走らせると、各セッションがバラバラにタスクを抱え、何が終わって何が残っているか分からなくなり、同じ作業を二重にやってしまいます\nそこで「未処理タスクの唯一の正本（SSoT）」を1本の追記専用ファイル（台帳）に集約し、別ウィンドウのAIへ仕事を撒いて回す自作の仕組み Foreman を作りました。中央サ...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "設計の考慮漏れをなくすために、Claude Codeスキル集『Skills for Real Engineers』を導入してみた",
+      "url": "https://zenn.dev/sato_frontend/articles/52b58b74f7aebb",
+      "site": "Zenn(AI)",
+      "published": "2026-07-02T08:18:20Z",
+      "description": "はじめに\nこのスキルを知ったきっかけは、実務で経験した「手戻り」の辛さでした。\n実装前にある程度の設計は立てていたつもりでも、テスト環境をデプロイしてQAメンバーに動作確認をしてもらうと、モーダルの挙動をどうするかといった細かい仕様・考慮漏れが次々と見つかります。\nそれを他の開発を並行して進めながら都度手戻りで直していく、というサイクルが積み重なっていくのが業務的にかなり辛いと感じていました。\n「...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "Claude Codeで個人開発アプリ紹介のショート動画を作ってみた際の技術選定とプロセスの記録",
+      "url": "https://zenn.dev/yamshta/articles/claude-code-tiktok-video-pipeline",
+      "site": "Zenn(AI)",
+      "published": "2026-07-02T08:00:53Z",
+      "description": "個人開発アプリのTikTokショート動画を、Claude Codeで作ってみました。動画編集ソフトは使わず、Remotion + ElevenLabs + Kling 3.0 をClaude Codeがシェルから繋いで1本の動画にしています。\nhttps://x.com/yamshta/status/2072259433137311926\nこの記事では1本目を完成させるまでの技術選定と試行錯誤を記...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "Claudian Orchestra：ObsidianとAIエージェントで作るAI時代のタスク管理（続）",
+      "url": "https://zenn.dev/mkj/articles/claudian-orchestra_20260616",
+      "site": "Zenn(AI)",
+      "published": "2026-07-02T08:00:09Z",
+      "description": "松尾研究所の尾崎です．25卒でデータサイエンティストをやっています．\n以前，「AI時代におけるタスク管理を考える」という記事を書きました．ざっくり言うと，AIに実行を「委任」して，人間は複数の作業の「中間状態」を監督することに専念すれば，マルチタスクのスイッチングコストは大幅に下げられるんじゃないか，そしてタスク管理はいずれ「人の生産性を上げるツール」と「AIを動かすインターフェース」を兼ねていく...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "Claude Code の Skill でブログ執筆を半自動化した",
+      "url": "https://zenn.dev/kazumura/articles/3807845e371a1c",
+      "site": "Zenn(AI)",
+      "published": "2026-07-02T07:58:22Z",
+      "description": "こんにちは、Givery AI Lab 所属 AI エンジニアの村上です。\n近年は、ブログ執筆に AI を活用することも一般的になってきました。最近は、いわゆる「LLM っぽい」記述を解消する Skill が各所で作られているのも目にします。\n先日、DSPy とローカル LLM でプロンプト最適化を試した記事を書きました。じつはあの記事は、執筆そのものを Claude Code の Agent S...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "AWS Summit Japan 2026 : 新入社員が参加してみた感想",
+      "url": "https://zenn.dev/nttdata_tech/articles/cbe5d6a77dc6d7",
+      "site": "Zenn(AI)",
+      "published": "2026-07-02T07:46:36Z",
+      "description": "はじめに\nこんにちは、2026年4月入社の新人エンジニア、taigaです。\nAWS Summit Japan 2026に参加してきました。\n新入社員ということもあり、AWSについては研修で少し学んだだけでしたが、せっかく参加するなら最低限の知識を持って臨みたいと考え、事前に AWS Certified AI Practitioner を取得しました。\n本記事では、そんなAWS初心者の目線で、印象に...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "毎日AIニュース 0701",
+      "url": "https://zenn.dev/qps/articles/f3020f095f1e15",
+      "site": "Zenn(AI)",
+      "published": "2026-07-02T07:31:54Z",
+      "description": "Youtube\n\n 今日の話題\n\n今日の最大の話題は、Anthropicが新モデル「Claude Sonnet 5」を公開したこと。無料・Proの既定モデルになり、コーディングとエージェント用途の性能が上がった一方、サンプリング設定の指定などAPIの使い勝手にも変更が入った。\nモデル以外でも、Anthropicが研究者向けのAIワークベンチ「Claude Science」を、Googleが低コスト...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "AIエージェント時代のターミナルマルチプレクサ「herdr」にtmuxから乗り換えた",
+      "url": "https://zenn.dev/studypocket/articles/herdr-ai-agent-multiplexer",
+      "site": "Zenn(AI)",
+      "published": "2026-07-02T06:52:46Z",
+      "description": "https://x.com/Tocyuki/status/2072240028596748445\n\n はじめに\nスタディポケットで執行役員 CTO をしている@Tocyukiです。\n自分は長らく tmux をターミナルマルチプレクサとして使ってきました。Zellij や WezTerm のマルチプレクサ機能など、乗り換え候補は何度か検討したものの、tmux を育ててきたので愛着心もあり、そもそも ...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "ニュース動画を全自動生成するパイプラインを作った話 ― TTSとLLMでハマった罠",
+      "url": "https://zenn.dev/kuni_chan/articles/3ff96d7102b054",
+      "site": "Zenn(AI)",
+      "published": "2026-07-02T06:52:25Z",
+      "description": "はじめに\nきっかけは、この記事でした｡\nhttps://zenn.dev/xtm_blog/articles/da1eba90525f91\n「AIでニュース動画を全自動生成してYouTubeに投稿する」という内容を読んで､これは自分でも作れるのではと思ってしまったんですよね｡そこから約8.5ヶ月､Claude Codeで書き殴りながら育て続けて､いまはニュース収集からYouTube投稿まで全自動で...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "娘（5歳）のためのAI家庭教師を作り始めた④ - 復活した Fable 5 の使い所を考える",
+      "url": "https://zenn.dev/dsflon/articles/dab979c414583b",
+      "site": "Zenn(AI)",
+      "published": "2026-07-02T06:24:47Z",
+      "description": "はじめに\n前回の記事では、娘向けの学習支援アプリに英語のフレーズ練習を追加した話を書きました。\n今回は、後回しにしていた UI のリニューアル を進めました。\n第4回では次に英会話レッスン評価を書くつもりでしたが、毎日使うアプリなので、先に見た目と手ざわりを整えることにしました。\nそして、本日復活した Fable 5 を使いたかったので、利用枠を意識しながら使ってみます。\nこの記事の主題は、完成し...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "二度寝を防ぐ目覚ましアプリ｢はよおきんかい｣の紹介",
+      "url": "https://zenn.dev/yushin16/articles/974237e9de74cd",
+      "site": "Zenn(AI)",
+      "published": "2026-07-02T06:16:21Z",
+      "description": "web開発見習いのu-shinです!\n今回は｢はよおきんかい｣の機能について紹介していきます !\n今まで何個か｢はよおきんかい｣についての記事を書いたのでご存知の方もいるかも知れませんが､今回は改めてどんな機能があるかを詳しく紹介していこうと思います｡\nこの記事では、技術面に関する内容には触れません。\nもし興味を持っていただけたら、サーバーの設定やデータベースの設定などは別の記事にまとめているので...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "RVMとMatAnyone2のVideo Matting halo は「撮影由来」か「コード由来」か切り分けた",
+      "url": "https://zenn.dev/mohhh_ok/articles/2026-07-rvm-matanyone2-green-halo-video-matting",
+      "site": "Zenn(AI)",
+      "published": "2026-07-02T05:58:46Z",
+      "description": "Video matting の症状で「透過処理後、輪郭に緑の縁（halo）が残る」というのがあります。「モデルの学習バイアスだ」と最初は思ってましたが、RVM と MatAnyone 2 を Mac M2 で回してコードを読んだら別々の 2 つの原因が絡んでました:\n\n\nRVM の halo: 撮影時の緑光の回り込み（green spill）。緑バックで撮ったから緑の光が輪郭に反射しただけで、モデ...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "GLM-5.2の使い方｜Claude Codeで料金を1/6にする",
+      "url": "https://zenn.dev/appare/articles/glm-5-2-tsukaikata",
+      "site": "Zenn(AI)",
+      "published": "2026-07-02T05:54:11Z",
+      "description": "「Claude、めっちゃ便利。でも毎月の料金がじわじわ効いてくる…」——コーディングにAIを使い倒している人ほど、この悩みにぶつかりますよね。そんな中、2026年6月中旬に中国のZ.ai（Zhipu AI／智譜AI）が公開した GLM-5.2 が「オープンモデルなのにClaude Opus級のコーディング性能を、数分の一のコストで出せる」と話題になっています。\nこの記事では、GLM-5.2 とは何...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
     {
       "title": "AI駆動開発時代のNeovim — Mac × ローカルLLM × tmux で作る統合開発環境",
       "url": "https://zenn.dev/shuji_bonji/books/neovim-ide-on-mac",
@@ -29,16 +199,6 @@
       "site": "Zenn(AI)",
       "published": "2026-07-02T04:52:34Z",
       "description": "Android自動化は、いきなり大きな仕組みとして考えるよりも、まず画面上で繰り返される操作から考えるほうが現実的です。多くのQA、サポート、アプリ検証、運用作業では、APIだけではなく、実際の画面状態を確認する必要があります。\nたとえば、アプリを開く、画面の読み込みを待つ、ボタンやテキストが表示されているか確認する、タップする、入力する、スクリーンショットを保存する、同じ流れを別のAndroid...",
-      "category": "AI・技術",
-      "rss_category": "",
-      "image_url": ""
-    },
-    {
-      "title": "AI彼女アプリを作っていて気付いた。覚えているAIより、覚えようとするAIの方が大事だった",
-      "url": "https://zenn.dev/mitsukida/articles/153c3e6a231693",
-      "site": "Zenn(AI)",
-      "published": "2026-07-02T04:50:45Z",
-      "description": "AI彼女アプリを作っていて気付いた。覚えているAIより、覚えようとするAIの方が大事だった\nAIKanojyoを作り始めた頃、\n私は記憶が一番大事だと思っていた。\n\nたくさん覚える。\n\n正確に覚える。\n\n忘れない。\n\nそれが理想だと思っていた。\n\n実際、\nこの連載でもずっと記憶について書いてきた。\n\n誕生日を忘れた話。\n\n想起の話。\n\n連想記憶の話。\n\nDreamの話。\n\n忘却の話。\n\n気付けば、...",
       "category": "AI・技術",
       "rss_category": "",
       "image_url": ""
@@ -79,26 +239,6 @@
       "site": "Zenn(AI)",
       "published": "2026-07-02T03:32:08Z",
       "description": "はじめに\n僕自身、個人開発や業務で AI を使った開発を行っています。その経験をもとに「AIに自走してもらうために何が必要か」を考える機会があったので、記事としてまとめてみました。\nここで改めて感じたのは、AIが自走できるかどうかは、ツールの使い方以上に「コードベースの設計」の影響が大きいということです。重要なのは「良いコードを残し、悪いコードを入れさせないこと」だと考えました。\nAIに任せても意...",
-      "category": "AI・技術",
-      "rss_category": "",
-      "image_url": ""
-    },
-    {
-      "title": "なぜ、2025～2026年頃にプロンプトエンジニアリングはコンテキストエンジニアリングに変化したのか？",
-      "url": "https://zenn.dev/pdfractal/articles/6c3fddd61b06ff",
-      "site": "Zenn(AI)",
-      "published": "2026-07-02T03:13:30Z",
-      "description": "はじめに\n2025年後半から2026年前半にかけて、AI活用を語る言葉は大きく変化しました。それまで中心にあった「プロンプトエンジニアリング」という言葉が後退し、「コンテキストエンジニアリング」という言葉が前面に出るようになりました。\n一般的には、この変化は「最近のLLMは単発のプロンプトだけで動くのではなく、会話履歴、RAG、外部文書、ツールの実行結果、記憶などを使うようになったため、それらをう...",
-      "category": "AI・技術",
-      "rss_category": "",
-      "image_url": ""
-    },
-    {
-      "title": "Claude Fable 5とループエンジニアリング ── \"プロンプトを打たない\"時代の公式ガイド要約",
-      "url": "https://zenn.dev/kamihork/articles/f0b35d727e03e1",
-      "site": "Zenn(AI)",
-      "published": "2026-07-02T03:07:29Z",
-      "description": "Anthropicが新モデル「Claude Fable 5」(および承認組織向けのClaude Mythos 5)のプロンプティングガイドを公開しました。\nOpus 4.8までとは挙動が変わっているので、移行時に押さえておきたいポイントをまとめます。\n\nhttps://platform.claude.com/docs/en/build-with-claude/prompt-engineering/...",
       "category": "AI・技術",
       "rss_category": "",
       "image_url": ""
@@ -149,46 +289,6 @@
       "site": "Zenn(AI)",
       "published": "2026-07-02T02:11:46Z",
       "description": "元・大手SIer社員が明かす「高単価の実態」\n私は7年間、大手SIerでシステム開発に携わった後、フリーランスに転向しました。転向前、社内では「フリーランスは不安定」という声が絶えませんでした。しかし実態は違いました。\n企業がフリーランスエンジニアに支払う単価は、スキルや経験によって大きく異なります。一例として、Webアプリ開発案件では月単価40〜60万円台が目安とされ、稼働時間で割ると時給換算で...",
-      "category": "AI・技術",
-      "rss_category": "",
-      "image_url": ""
-    },
-    {
-      "title": "AIを乗り換えても記憶を引き継ぐには？モデル移行で文脈を失わない設計",
-      "url": "https://zenn.dev/agentmemories/articles/keep-ai-memory-across-models",
-      "site": "Zenn(AI)",
-      "published": "2026-07-02T01:27:04Z",
-      "description": "AIを乗り換えても記憶を引き継ぐには、記憶をモデルの中ではなく「外」に独立して置いておくことです。会話の履歴をエクスポートすることではありません。乗り換えのたびに最初から説明し直しになるのは、性能の問題でも操作の問題でもなく、記憶の置き場所の問題です。\nこの記事では、なぜ乗り換えで記憶が消えるのか、ChatGPTやClaudeの履歴・メモリは本当に持ち出せるのか、何を引き継ぎ何を捨てるか、そして移...",
-      "category": "AI・技術",
-      "rss_category": "",
-      "image_url": ""
-    },
-    {
-      "title": "AIに8割書かせたコード、半年運用の答え合わせ。効いた3つと、腐った3つ",
-      "url": "https://zenn.dev/rapls/articles/7a1bac83df8b21",
-      "site": "Zenn(AI)",
-      "published": "2026-07-02T00:52:43Z",
-      "description": "半年前に「AIに8割書かせたコードを、保守できるようにやっていること」という記事を書きました。ありがたいことに、自分がいちばん読まれた記事になりました。\nhttps://zenn.dev/rapls/articles/7456767a19af06\nあれから半年、その方針のまま実際に運用してみて、答え合わせができました。先に言うと、保守性は「足す」では買えませんでした。コメントを足す、ドキュメントを...",
-      "category": "AI・技術",
-      "rss_category": "",
-      "image_url": ""
-    },
-    {
-      "title": "AI体験記 vol.10 — ルールを書いても、AIは平気で破る",
-      "url": "https://zenn.dev/mizutamari/articles/local-llm-vol010",
-      "site": "Zenn(AI)",
-      "published": "2026-07-02T00:44:58Z",
-      "description": "!\n前回（vol.9）の続きです。天才AI（F）に設計させた「土台（ハーネス）」を、実際のファイルにしていく回です。\n技術的な正確さより、体験の正直さ優先。復習も兼ねています。\n\nvol.9で、Fに設計書を5本書いてもらった。\nFは消えたけど、設計書は残った。今回は、その紙の設計書を、実際に動くファイルにしていく。\nそして、Fが最後に残した一言——「ルール文書には強制力がない」——を、イヤというほ...",
-      "category": "AI・技術",
-      "rss_category": "",
-      "image_url": ""
-    },
-    {
-      "title": "AI体験記 vol.9 — 優れたAIに頼り切る前に、土台を作っておく",
-      "url": "https://zenn.dev/mizutamari/articles/local-llm-vol009",
-      "site": "Zenn(AI)",
-      "published": "2026-07-02T00:44:57Z",
-      "description": "!\nこの記事は、「土台（ハーネス）」という何だか分からないものを作り始めた体験記です。\n技術的な正確さより、体験の正直さを優先して書いています。また復習のための記事でもあります。\n\nvol.8では、Mac miniをネットワークから追放して、Tailscaleのトンネルで会いに行く話を書いた。\n予告では「次はパイプラインの話」と書いた。\nでも、その前に書いておきたいことができた。パイプラインを安全...",
       "category": "AI・技術",
       "rss_category": "",
       "image_url": ""
