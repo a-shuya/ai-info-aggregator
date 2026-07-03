@@ -1,8 +1,118 @@
 {
   "site": "Zenn(LLM)",
-  "last_updated": "2026-07-03T06:51:07.030076",
-  "total_articles": 4333,
+  "last_updated": "2026-07-03T10:07:41.935298",
+  "total_articles": 4343,
   "articles": [
+    {
+      "title": "ローカルLLMにC言語レガシープロジェクトの循環依存リファクタリング計画書を書かせた",
+      "url": "https://zenn.dev/catspawengineer/articles/a7f4efbf9d8e5c",
+      "site": "Zenn(LLM)",
+      "published": "2026-07-03T08:30:07Z",
+      "description": "はじめに\n組み込みLinux向けの某アプリケーションで、C言語のレガシープロジェクトがありました。\n約30モジュール、NetBeansIDE 8.2でビルド管理されている、いわゆる『歴史のある』コードです。\nこのコードベースの依存関係を可視化してみたところ、29モジュール中17モジュールが1つの強連結成分(SCC)に属していることが分かりました。\nつまりコードの約7割が巨大な循環の塊の中にいて、理...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "ローカルLLM（Gemma4）でコードや文書の個人情報・機密情報フィルターは作れるのかを検証してみた",
+      "url": "https://zenn.dev/zenkigen_tech/articles/89eeca4e288814",
+      "site": "Zenn(LLM)",
+      "published": "2026-07-03T06:41:08Z",
+      "description": "こんにちは。ZENKIGENデータサイエンスチームの沼田です！現在は面接動画分析のためのマルチモーダル基盤モデルの研究開発に携わっています。\n所属チームで Xアカウント を運用しており、AIに関する情報を発信していますので、よろしければこちらも覗いてみてください。\n\n はじめに\n社内のソースコードや設定ファイル、議事録の下書き、Pull Request の説明文などに、意図せず個人情報や機密情報が...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "CAT：自己確信度で推論長を適応制御・ACL2026採択・最大+5.6pp精度向上・36%トークン削減",
+      "url": "https://zenn.dev/lixian/articles/cat-confidence-adaptive-reasoning",
+      "site": "Zenn(LLM)",
+      "published": "2026-07-03T03:26:53Z",
+      "description": "TL;DR\nLRM（Large Reasoning Model）は難しい問題ほど長く考えるべきだが、現在の効率化手法は「全問題一律に短縮する」か「粗い難易度推定」しかできていない。CAT はモデル自身のトークン予測確信度（Self-Certainty）を活用し、問題の難しさに応じて推論長を自律的に調整する。ACL 2026 Industry Track に採択。R1-7B で MATH-500: ...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "AIコスト対策になるかもしれないNVIDIA LLM Router v3を実験してみた",
+      "url": "https://zenn.dev/asuene/articles/2387293236b830",
+      "site": "Zenn(LLM)",
+      "published": "2026-07-03T03:03:42Z",
+      "description": "こんにちは！アスエネ株式会社の石坂です！\nClaude Fable 5が戻ってきたと賑わいを見せていますが、フロンティアモデルを全てのシーンで使いすぎるとAI破産になるケースがあります。\n特にサブスク型ではないAPI利用でのコストは従量課金のため、トークンを節約する努力も必要になってきます。\n我々も脱炭素社会実現に向けて活動している文脈でもAI利用によるCO2排出量も意識して活動しなければなりませ...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "CLI版とDesktop版でGLM/MiniMaxの役割がまるで違う話",
+      "url": "https://zenn.dev/fukukei23/articles/claude-code-desktop-mcp-cost-delegation",
+      "site": "Zenn(LLM)",
+      "published": "2026-07-03T02:58:17Z",
+      "description": "はじめに\nClaude CodeのCLI版でGLMを使っている、という話を以前書きました。同じ流れでDesktop版にも設定しようとしたのですが、CLIとDesktopではGLM/MiniMaxの立ち位置がまったく別物でした。\n同じ単語が使われているのに役割が逆転していて、それを知らずに設定すると「なぜか繋がらない」「節約できていない」という沼にハマります。この記事ではその違いを整理します。\n\n ...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "Azure×Dify×OllamaでローカルLLM RAG環境を構築する手順",
+      "url": "https://zenn.dev/akkodis_jp/articles/a5939edf73a954",
+      "site": "Zenn(LLM)",
+      "published": "2026-07-03T01:48:41Z",
+      "description": "はじめに\n生成AIの業務活用が進む中で、「社内データを外部に出せない」「APIコストが継続的にかかる」といった課題に直面していませんか。\n\n 対象読者\n\n社内データを外部に出さずにRAG（Retrieval-Augmented Generation）環境を構築したい方\nAPIコストを削減するためローカルLLMを検証したい方\nDify + Ollama構成をハンズオンで試したい方\n\n本記事では、Op...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "【おせっかい】Apple公式変換レシピの7モデル（gpt-ossなど）をCoreAI（.aimodel）形式に変換して配布",
+      "url": "https://zenn.dev/mlboydaisuke/articles/8ea6c66f50cfb9a4c6d8",
+      "site": "Zenn(LLM)",
+      "published": "2026-07-03T01:06:09Z",
+      "description": "WWDC 2026 で発表された Core AI（Core ML の後継）。\nApple 公式  がいくつかのモデルのエクスポートレシピを公開しています。\ncoreai-models\nただ、変換スクリプトのみで\n変換済みモデルは配布されていない（CoreMLの時はあった）。\nので、手元で変換して生成された .aimodel を 7 モデル、Hugging Face で公開しました。\n\nhttps:...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "推論を捨てた230MのLFM2.5、スマホCPUで毎秒213トークン出す",
+      "url": "https://zenn.dev/okssusucha/articles/20260701-liquid-ai-lfm2-5-230m-on-device-agent",
+      "site": "Zenn(LLM)",
+      "published": "2026-07-03T01:02:03Z",
+      "description": "大きいモデルほど賢い、という前提でここ数年の競争は動いてきた。だからLiquid AIが6月下旬に出した最小モデル LFM2.5-230M のモデルカードにある一文は、逆張りに見える。\n\n高度な数学、コード生成、創作のような推論負荷の高い用途には推奨しない\n\n230M(2億3000万)パラメータ。今どきのフラッグシップが数百B(数千億)を当たり前に積む中で、その1000分の1以下だ。しかもメーカー...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "GPT-5.6のSol・Terra・Luna、強さより出力トークンの少なさで効く",
+      "url": "https://zenn.dev/okssusucha/articles/20260630-gpt-5-6-sol-terra-luna",
+      "site": "Zenn(LLM)",
+      "published": "2026-07-03T01:02:02Z",
+      "description": "OpenAIが6月26日に公開した次世代モデル群 GPT-5.6 で、私がまず目を留めたのはベンチマークの最高記録ではない。同じセキュリティ評価をこなすのに、前世代より出力トークンがおよそ3分の1で済んだ、という一文だ。エージェントを回す側からすると、これは「賢くなった」より「同じ仕事が安くなった」に近い。今回の更新は、能力競争というより推論コストの引き下げと、その予測しやすさに重心が寄っている。...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "すでに4800スター、Loop Engineeringとは — “自分の仕事はloopを書くこと”",
+      "url": "https://zenn.dev/acntechjp/articles/0c63b5b08bbdb9",
+      "site": "Zenn(LLM)",
+      "published": "2026-07-02T23:28:29Z",
+      "description": "Loop Engineeringは完全自律への「橋」となる\n\nコードが人間の読解速度を超えて生成され続ける——気づいた頃には、誰も全体を把握していないコードベースだけが残る。理解負債は、後から返済できる技術的負債とは違う。負債が積み上がった時点で、返済に必要な\"理解\"そのものが失われている。\n\n TL;DR\n\nClaude Code責任者Boris Chernyの「My job is to wri...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "Claude Sonnet 5 は Opus 4.8 の代わりになるのか——QCD を 240 試行で比較する（オトナの自由研究 #27）",
+      "url": "https://zenn.dev/nnakapa/articles/lab-27-sonnet5-opus48-qcd",
+      "site": "Zenn(LLM)",
+      "published": "2026-07-02T23:08:26Z",
+      "description": "3つの発見\n1. 今回のような定番の DB 処理であれば、Sonnet 5 は Opus 4.8 の代わりになる——ただし effort level は 1 レベル上（high 以上）が目安\n2. 2026-08-31 までの期間限定価格なら、Sonnet 5 は通常価格の 2/3（Opus 4.8 比 0.4倍）のコストで利用できる\n3. 品質(Q)の点数は並んでも、点数に出ない見えない差がある...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
     {
       "title": "私が今DGX Sparkを購入した理由",
       "url": "https://zenn.dev/asap/articles/1a267ec154c14d",
@@ -29,16 +139,6 @@
       "site": "Zenn(LLM)",
       "published": "2026-07-02T13:30:57Z",
       "description": "概要\nClaude Code を1日回した実測で、消費トークン量の**約95%が cache read（キャッシュ済みコンテキストの再読）**だった。\n最初は「output が重いのでは」と思っていました。\nが、実際output は全体の約0.4%。大半を占めたのは、肥大化したセッションを毎ターン再読する cache read 、コヤツが犯人でした。\nただ、これは「料金の95%が cache re...",
-      "category": "AI・技術",
-      "rss_category": "",
-      "image_url": ""
-    },
-    {
-      "title": "FastAPI の Lifespan で実現する MCP サーバーのライフサイクル管理：AI エージェントを現実世界に接続する",
-      "url": "https://zenn.dev/tyora/articles/616ad97036d3a5",
-      "site": "Zenn(LLM)",
-      "published": "2026-07-02T13:00:48Z",
-      "description": "はじめに\nAIエージェントを開発する上で、最大の課題の一つは「如何にして最新の現実世界情報を取得するか」です。LLMの知識は学習データがカットオフされた時点で止まっており、そのままでは「今日の天気」や「近くのレストラン」を知ることができません。\nそこで一番輝いているのはAnthropic社が提唱するMCP(Model Context Protocol) です。\n\n MCPとは？\nMCPはAIエージ...",
       "category": "AI・技術",
       "rss_category": "",
       "image_url": ""
