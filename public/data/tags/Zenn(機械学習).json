@@ -1,8 +1,108 @@
 {
   "site": "Zenn(機械学習)",
-  "last_updated": "2026-07-04T07:12:38.685755",
-  "total_articles": 1357,
+  "last_updated": "2026-07-04T09:33:28.667743",
+  "total_articles": 1367,
   "articles": [
+    {
+      "title": "VITSから見るTTS 10系統マップ(2016–2026)",
+      "url": "https://zenn.dev/nnn112358/articles/tts-lineage-map-from-vits",
+      "site": "Zenn(機械学習)",
+      "published": "2026-07-04T07:26:40Z",
+      "description": "この記事について\n2016年の WaveNet から 2026年の LLM 統合 TTS まで、Text-to-Speech(音声合成)のモデル系譜を1枚の地図に落とし込むと、実は 10 の系統に整理できます。\n本記事は、VITS / VITS2 を起点に 155本の論文と 63リポジトリを読み込んで作った系譜メモをベースに、「どのモデルが何から派生したのか」を系統図(mermaid)付きでまとめ...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "研究者のExcelを機械学習データに変換する——Power Query と pandas で学ぶ整然データ",
+      "url": "https://zenn.dev/efta1989/articles/excel-to-tidy-data-powerquery",
+      "site": "Zenn(機械学習)",
+      "published": "2026-07-04T06:37:56Z",
+      "description": "はじめに：モデルより前に、データの「形」でつまずく\n材料・化学の研究で機械学習（ML）を始めようとして、最初にぶつかる壁は「どのモデルを使うか」ではない。手元の Excel が、そのままでは ML に入らないことだ。\n温度ごとに列が横に伸び、セルは結合され、ヘッダーは 2 段、試料の組成は別シート、しかも ID の綴りが微妙に違う——研究者にとって「見やすい」Excel は、ML にとっては「読め...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "話者分離は「どの粒度で話者を割り当てるか」が精度を決める——WhisperX日本語検証で見えたこと",
+      "url": "https://zenn.dev/tsukihi/articles/6ff3911b93d903",
+      "site": "Zenn(機械学習)",
+      "published": "2026-07-04T05:48:08Z",
+      "description": "結論（先に）\n日本語の会議音声で話者分離を比較したとき、WhisperX（large-v3-turbo + pyannote）は**話者割当率 62.8%・DER 39.65%**と大きく崩れました。全音声の49%を1人の話者に集中させ、複数話者の発言を1つのラベルに潰してしまったのです。\n原因を切り分けたところ、犯人は意外なところにいました。\n\nfaster-whisper（ASR）が原因ではな...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "話者分離で本当に効くのは「モデルの精度」ではなく「ASRの発話粒度」だった（SpeechAnalyzerの日本語では発話の71%が複数話",
+      "url": "https://zenn.dev/tsukihi/articles/d6fdbd9a7909be",
+      "site": "Zenn(機械学習)",
+      "published": "2026-07-04T05:47:33Z",
+      "description": "結論\n多くの人は、話者分離の精度は「モデルの性能」で決まると思っています。実際に日本語の会議音声で測ってみると、それ以上に効いていた要因が別にありました。音声認識（ASR）が返してくる発話の粒度です。\nASRが話者交代をまたいで複数の発言を1つの発話にまとめてしまうと、話者分離モデルがどれだけ優秀でも、その発話の少数派話者は構造的に誤帰属されます。実測したところ、この記事のオンデバイスASR（Ap...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "AISIのtest-time computeを使う：AIエージェント評価を3予算で作る",
+      "url": "https://zenn.dev/hironakamura_ai/articles/fc964f9050c0eb",
+      "site": "Zenn(機械学習)",
+      "published": "2026-07-04T04:15:26Z",
+      "description": "結論から言うと、エージェント評価は「何点だったか」だけで見ると危ない。AISI が 2026年7月2日に出した記事は、そこを突いている。モデルの能力は固定スコアではなく、トークン予算に対する曲線として見るべき話だ。\n手元の評価ログを小さいスクリプトで見直していて、ここで詰まった。1M tokens で失敗した run を「このモデルは無理」と切っていたけど、10M tokens まで許すと再試行と...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "「体験」でゲームを薦めるレコメンドを作った",
+      "url": "https://zenn.dev/koizumiiiii/articles/09b7a629ee5d14",
+      "site": "Zenn(機械学習)",
+      "published": "2026-07-04T03:08:01Z",
+      "description": "「あのゲームが好き」なのであって、「あのゲームみたいなもの」がやりたいわけではない。\n好きなゲームを通して味わった、あの興奮や感動。欲しいのは、似た見た目や似たシステムの別物ではなく、その\"体験\"をもう一度くれる一本です。ところが既存のレコメンドはどれも「タグが同じ」「よく一緒に買われている」で薦めてきます。表面のカテゴリが一致しているだけで、手触りが近いかどうかは見ていません。\nそういうレコメン...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "過学習は「特徴量を減らせば直る」——それ、嘘でした",
+      "url": "https://zenn.dev/morimiso/articles/d811bd6cd5b11c",
+      "site": "Zenn(機械学習)",
+      "published": "2026-07-04T02:56:20Z",
+      "description": "このフロントマターはZenn用です。noteやQiitaに出す場合は削除してください。\n系列トレードの検証で踏む罠を扱う連載の第4回（山場）です。第1〜3回の続きです。\n\n前回までの3回で、検証は信用できるものになりました。時間の漏れ（第1回・未来参照）も情報の漏れ（第2回・特徴量リーク）もなく、ライブとの差も説明できる（第3回）。武器は揃った。\nその正しい検証ハーネスで、いよいよパラメータ探索を...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "TTS学習向けのGPUの選び方",
+      "url": "https://zenn.dev/nnn112358/articles/gpu-for-tts-training",
+      "site": "Zenn(機械学習)",
+      "published": "2026-07-04T02:02:09Z",
+      "description": "結論(先に)\nTTS(音声合成)モデルの学習用GPUは、カタログのピークTFLOPS(演算性能)ではなく、「メモリ帯域」と「VRAM容量」で選ぶのが正解です。\nなぜなら、TTSモデルは画像・言語モデルに比べて小さく、学習がメモリ帯域律速(memory-bandwidth-bound)になりやすいからです。この特性を知らないと、「AI向け」を謳う高価な製品を買ったのに大して速くならない、という失敗を...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "生成AIに「SAM（Segment Anything）」を聞いてみた（クリックで任意の対象を切り抜く）",
+      "url": "https://zenn.dev/tkpurine/articles/segment-anything-sam",
+      "site": "Zenn(機械学習)",
+      "published": "2026-07-04T01:38:28Z",
+      "description": "はじめに\n背景除去（U2Net）は「一番目立つ主役を自動で1つ」抜くタイプでした。でも集合写真で「この人だけ」を抜きたいと思い、**クリックで任意の対象を切り出せる SAM（Segment Anything）**を調べ、デモも作りました。その記録です。\n\n SAMとは（まず全体像）\nMeta AIが2023年に発表したプロンプト可能なセグメンテーションの基盤モデル。U2Netが「主役を自動で」なの...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "自分のバックテストに『これは間違いだと証明しろ』とAIをけしかけたら、結論が半分ひっくり返った",
+      "url": "https://zenn.dev/ikahan/articles/backtest-self-deception",
+      "site": "Zenn(機械学習)",
+      "published": "2026-07-04T01:18:03Z",
+      "description": "!\nこの記事はトレードの記事ではありません。「自分で作った検証が、自分に都合よく嘘をつく」仕組みの記事です。題材はたまたま相場データですが、出てくる4つの罠は A/Bテスト・機械学習・KPI分析など、数字で何かを判断するすべての場面に効きます。トレード用語は最小限に抑え、都度説明します。\n\n\n TL;DR\n\n相場監視ボードを自作したついでに、有名な2つの「勝ちパターン」をブローカーのデモ口座データ...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
     {
       "title": "AIコーディングが「補完」から「自動化」へ",
       "url": "https://zenn.dev/lingmu/articles/2026-07-03-copilot-claude-agent-era",
@@ -18,7 +118,7 @@
       "url": "https://zenn.dev/hkame/articles/lora-qlora-finetuning",
       "site": "Zenn(機械学習)",
       "published": "2026-07-03T21:24:55Z",
-      "description": "はじめに\n2026年現在、AIシステム構築のトレンドはRAGとFine-tuningのハイブリッドに移行しています。\n\nRAG keeps your system truthful today; fine-tuning makes it consistent tomorrow.\n（RAGは今日システムを誠実に保つ。Fine-tuningは明日システムを一貫させる）\n\n本記事では、Fine-tuni...",
+      "description": "はじめに\n本記事では、Fine-tuningの中核技術であるLoRAとQLoRAの仕組みを図解で整理します。また、先日行った検証でLoRAをCPUで動作させており、「なぜCPUでも動くのか」「GPUとどう使い分けるか」にも触れていきます。\n実装はAI初学者のためのRAG実装ガイドの続編として、pgvector-tutorialの finetuning/ フォルダに含まれています。\n\n\n Fine-...",
       "category": "AI・技術",
       "rss_category": "",
       "image_url": ""
