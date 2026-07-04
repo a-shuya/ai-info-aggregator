@@ -1,8 +1,48 @@
 {
   "site": "Zenn(AI)",
-  "last_updated": "2026-07-04T12:19:00.722045",
-  "total_articles": 10619,
+  "last_updated": "2026-07-04T14:05:06.914638",
+  "total_articles": 10621,
   "articles": [
+    {
+      "title": "システムを作っていいか、作ってはいけないか - クネビンフレームワークで整理したら、当たり前の結論だった",
+      "url": "https://zenn.dev/kappetech/articles/f22e43ac92eda7",
+      "site": "Zenn(AI)",
+      "published": "2026-07-04T09:49:50Z",
+      "description": "まえがき\n\n攻めのITとして内製すべきか？\nAI使えばなんとかなるか？\nいつもの外注さんに頼むべきか？\nSaaSが無難か？\n\nシステム開発（導入）のアプローチは様々で、何が適切なのかは組織によって異なりますが、その決定に際して、あまり明確な指標は無いように思います。\n本稿では、システムの保守・運用という観点から、「組織が採るべき開発アプローチ」について検討し、判断材料の提供を試みます。\nシステムの...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "cold start実測: RunPod Serverless vs Cloud Run GPU (serverless GPU L4)",
+      "url": "https://zenn.dev/mohhh_ok/articles/2026-07-cold-start-runpod-vs-cloud-run-gpu",
+      "site": "Zenn(AI)",
+      "published": "2026-07-04T09:44:50Z",
+      "description": "「RunPod のほうが cold start 早いと噂だが本当か」を確かめるべく、同一 workload で RunPod Serverless (Network Volume 構成) と Cloud Run GPU を実測しました。\n最初 n=1 で回したら SDXL RunPod で 61s の異常値が出て「20 min で cache が失効する」と早合点しかけたので、n=4 に増やして分...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "Claudeでシステム開発を行う上で行うべきセキュリティ対策",
+      "url": "https://zenn.dev/jeong/articles/c64237ee2f2ae9",
+      "site": "Zenn(AI)",
+      "published": "2026-07-04T09:41:51Z",
+      "description": "Claude CodeにAPIキーを読ませない。AI時代のうっかり漏洩を防ぐ設定と運用\nAIコーディングエージェントは、指示すればプロジェクト内のファイルを何でも読みに行きます。便利さの裏返しとして、.env に置いたAPIキーや秘密鍵も、その気になれば普通に読めてしまいます。\n私はフリーランスで複数のクライアント案件を並行して開発しており、手元には案件ごとの .env、Firebaseのサービス...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "Claude Fable 5 を9Bモデルに蒸留？ 100万トークンの超長文推理モデル「Qwythos-9B」を4GBのVRAMで動かす",
+      "url": "https://zenn.dev/lumichy/articles/qwythos-9b-fable-5-2026",
+      "site": "Zenn(AI)",
+      "published": "2026-07-04T09:31:21Z",
+      "description": "Claude Fable 5 を9Bモデルに蒸留？ 100万トークンの超長文推理モデル「Qwythos-9B」を4GBのVRAMで動かす\nオープンソースAI（ローカルLLM）の進化スピードには目を見張るものがあります。2026年6月、Empero AIから「Qwythos-9B-Claude-Mythos-5-1M」（以下、Qwythos-9B）という新たなオープンウェイト推理モデルが発表され、ロ...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
     {
       "title": "その注入、最初から届いていませんでした ── changelog を信じないスモークテストを作った話（C3 v2.44.0）",
       "url": "https://zenn.dev/satoh_y_0323/articles/ea17d0e5e89f71",
@@ -164,16 +204,6 @@
       "image_url": ""
     },
     {
-      "title": "エージェントを訓練せず強くする、Qwen-AgentWorldという世界モデル",
-      "url": "https://zenn.dev/okssusucha/articles/20260701-qwen-agentworld-language-world-model",
-      "site": "Zenn(AI)",
-      "published": "2026-07-04T04:35:19Z",
-      "description": "エージェントを強くしたいなら、ふつうはエージェントを訓練する。ところがAlibabaのQwenチームが6月下旬に公開したQwen-AgentWorldは、行動を出力する訓練をほとんどしていないのに、7つのベンチマークでエージェント性能を押し上げた。何を学ばせたのかというと、行動ではなく「環境の反応」だ。端末にコマンドを打ったら何が返るか、APIを叩いたらどんなJSONが来るか、ボタンを押したらDO...",
-      "category": "AI・技術",
-      "rss_category": "",
-      "image_url": ""
-    },
-    {
       "title": "Codexが年640TBをSSDに書いていた、原因のTRACEログを追う",
       "url": "https://zenn.dev/okssusucha/articles/20260701-openai-codex-sqlite-trace-log-ssd-wear",
       "site": "Zenn(AI)",
@@ -209,16 +239,6 @@
       "site": "Zenn(AI)",
       "published": "2026-07-03T14:55:22Z",
       "description": "きっかけ\n最近チームで開発をしていて、地味に困る場面が増えてきました。\n同じリポジトリなのに、AさんはClaudeCode、BさんはCodex、CさんはCursorを使っています。それぞれが持ち込むAIコーディングエージェントは、コンテキストの管理方法もメモリの仕組みも微妙に違います。生成されるコードのスタイルにもブレが出てきます。\nこれは「みんな好きなツールを使えて便利」という話では済まなくて、...",
-      "category": "AI・技術",
-      "rss_category": "",
-      "image_url": ""
-    },
-    {
-      "title": "AIに『今月分を集計して』と頼むと起きる2種類の日付ズレ",
-      "url": "https://zenn.dev/ryu_it_engineer/articles/be3a5874e473f9",
-      "site": "Zenn(AI)",
-      "published": "2026-07-03T14:27:31Z",
-      "description": "スプレッドシートの集計を AI に任せるようになって、日々の作業がずいぶん軽くなりました。「この列を月ごとに合計して」と伝えれば、数式や短いスクリプトがすぐ返ってくる。ありがたい流れです。\nただ、先日ひとつ引っかかったことがあります。「今月分だけ集計して」と頼んで返ってきた数字が、自分で数えた合計とどうしても合わない。原因を追っていくと、「今月」という言葉の受け取り方が、私の頭の中と AI の側で...",
       "category": "AI・技術",
       "rss_category": "",
       "image_url": ""
