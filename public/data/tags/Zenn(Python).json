@@ -1,8 +1,58 @@
 {
   "site": "Zenn(Python)",
-  "last_updated": "2026-07-05T14:49:22.355481",
-  "total_articles": 4932,
+  "last_updated": "2026-07-05T15:57:09.466185",
+  "total_articles": 4938,
   "articles": [
+    {
+      "title": "Habitica・あすけん・Strava と比べて何が穴だったか — 副業×ダイエット統合トラッカーを自作した話",
+      "url": "https://zenn.dev/ponfreelance/articles/alter-type-b-20260627-064729",
+      "site": "Zenn(Python)",
+      "published": "2026-07-05T15:03:39Z",
+      "description": "本記事は一部アフィリエイトリンク（PR）を含みます\n\n\n\n はじめに\n副業の進捗管理とダイエットを、別々のアプリで追いかけていた時期がある。Habitica でタスクをゲーム化して、あすけんで食事を記録して、Strava でランニングを管理して——気づいたら3つのアプリを毎日開かないといけない状態になっていた。\nこの記事は「既存の習慣トラッカーで何が足りなかったか」を正直に書いた上で、自分が作った...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "Python の StrEnum と assert_never で文字列ドメイン値の typo と分岐漏れを防ぐ",
+      "url": "https://zenn.dev/moridev/articles/05100de2b3955c",
+      "site": "Zenn(Python)",
+      "published": "2026-07-05T12:30:53Z",
+      "description": "\"title\"、\"publish_status\"、\"visibility\" のような文字列で、アプリケーション上の意味を持つ値を表すことがあります。 たとえば、記事公開ワークフローの中で「記事メタデータ項目」を文字列として扱うケースです。\nfield_name = \"publish_status\"\n\nif field_name == \"title\":\n    ...\nelif field_name...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "競馬AI開発記録 #21 ドメイン知識の注入とモデルの多層分離：識別能の限界突破に挑む",
+      "url": "https://zenn.dev/ricotiler/articles/keiba-ai-21-race_rating_feature_engineering",
+      "site": "Zenn(Python)",
+      "published": "2026-07-05T12:00:37Z",
+      "description": "1. 概要\n前回の第20話では、モデルの「過信」を数学的に矯正し、投資の正確な物差しを手に入れるために3分割物理隔離と**確率校正（Calibration）**を実装しました。これにより期待値（EV）運用の土台は整いましたが、検証の結果、モデルの根本的な「実力序列の予測精度（識別能）」、すなわち Spearman 相関係数 が伸び悩んでいるという課題が浮き彫りになりました。\n今回は、競馬のドメイン...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "ゲーム制作入門：シンプルな考え方と仕組みで作るPythonゲーム",
+      "url": "https://zenn.dev/logolith_andu/articles/4cac9b70f54318",
+      "site": "Zenn(Python)",
+      "published": "2026-07-05T11:20:55Z",
+      "description": "1. 記事の目的と対象読者\n目的シンプルなゲームを考え方や仕組みに基づいて作る方法を提供。\n記事を読み終えた瞬間、プロトタイプが完成するように構成。\nソースコードは全て網羅し、Mermaid図で流れを可視化。\n対象読者初心者: プログラミングをどこから始めればいいか迷っている人。\n技術者: ゲーム制作の基本的な考え方や仕組みを学び直したい人。\nAIと協業したい人: AIを監督として活用し、効率的に...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "# ゲーム制作入門：シンプルな考え方と仕組みで作るPythonゲーム",
+      "url": "https://zenn.dev/amyusynaprise/articles/89d18585841afe",
+      "site": "Zenn(Python)",
+      "published": "2026-07-05T11:16:14Z",
+      "description": "#　~ AIと人間の協業で、誰でも「できた！」を体験できる ~\n\n 1. 記事の目的と対象読者\n\n 目的\n\nシンプルなゲームを考え方や仕組みに基づいて作る方法を提供\n記事を読んだら即座にゲームが作れるようにする\nソースコードは最低限で綺麗に記述\nMermaid図でビルドの流れを視覚化\n他者目線で俯瞰した際に強固な知見になっているかを冷静に判断した目線を盛り込む\n\n\n 対象読者\n\n初心者: プログラ...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
     {
       "title": "Lambda MicroVMsで「再開可能なPython実行カーネル」を作る — fleet管理まで実装してLambdaの実行モデルを越える",
       "url": "https://zenn.dev/yoshit0oo/articles/lambda-microvms-resumable-kernel",
@@ -19,6 +69,16 @@
       "site": "Zenn(Python)",
       "published": "2026-07-05T09:47:18Z",
       "description": "この記事について\nこれまでの記事で、TTS(音声合成)の後半——メルスペクトログラムと、それを音にするHiFi-GAN——を見てきました。\n今回はその一番手前、テキストが最初に通る関門 G2P(Grapheme-to-Phoneme) の話です。日本語で言うと「書記素から音素への変換」、要するに 「文字」を「発音」に変える処理。人間が「read」を見て文脈で読み分けるのと同じことを、機械にやらせま...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "「ノートブックでは動く」を卒業する ― 半導体不良予測モデルをAPI化・コンテナ化するまで",
+      "url": "https://zenn.dev/yuya0408/articles/secom-defect-serving",
+      "site": "Zenn(Python)",
+      "published": "2026-07-05T09:03:18Z",
+      "description": "これは、半導体製造データ SECOM を題材にした不良予測プロジェクトの記録の一つ、「実装編」である。同じ1つのプロジェクトを、別々の角度から書いている。\n\n\n考察編（記事）― このデータが何を物語っているかを読み解く話\n\n実装編（本記事）― 分析結果を API・コンテナとして動かせる形にする話\n\n前回の記事（考察編）では、半導体製造データ SECOM を題材に「予測精度を上げる」よりも「このデー...",
       "category": "開発",
       "rss_category": "",
       "image_url": ""
