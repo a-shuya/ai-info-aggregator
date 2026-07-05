@@ -1,8 +1,128 @@
 {
   "site": "Zenn(Python)",
-  "last_updated": "2026-07-05T10:00:05.524850",
-  "total_articles": 4920,
+  "last_updated": "2026-07-05T11:44:24.249429",
+  "total_articles": 4931,
   "articles": [
+    {
+      "title": "猫でもわかるG2P ― 文字を発音記号に変えるTTSの入口",
+      "url": "https://zenn.dev/nnn112358/articles/g2p-for-cats",
+      "site": "Zenn(Python)",
+      "published": "2026-07-05T09:47:18Z",
+      "description": "この記事について\nこれまでの記事で、TTS(音声合成)の後半——メルスペクトログラムと、それを音にするHiFi-GAN——を見てきました。\n今回はその一番手前、テキストが最初に通る関門 G2P(Grapheme-to-Phoneme) の話です。日本語で言うと「書記素から音素への変換」、要するに 「文字」を「発音」に変える処理。人間が「read」を見て文脈で読み分けるのと同じことを、機械にやらせま...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "丸ノ内サディスティック進行のギターをPythonコードで再現",
+      "url": "https://zenn.dev/fibujrsl/articles/fddd6f6e58bd50",
+      "site": "Zenn(Python)",
+      "published": "2026-07-05T08:40:06Z",
+      "description": "はじめに\n「丸サ進行」とは、椎名林檎の楽曲『丸ノ内サディスティック』で多用されたことから名付けられた、エモくて洗練された響きを持つ定番のコード進行です。基本形は「ⅣM7 → Ⅲ7 → Ⅵm7 → Ⅰ7」となり、ジャズやシティポップスなどでも広く使われています。こちらのコード進行のギター音をPythonコードで再現してみます\nhttps://www.youtube.com/watch?v=nCkXZ...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "アメダスの観測所データを使ってデータアナリストごっこしてみる",
+      "url": "https://zenn.dev/natsubate/articles/0bb49e18ec76ca",
+      "site": "Zenn(Python)",
+      "published": "2026-07-05T08:00:50Z",
+      "description": "たまたま調べ物をしていた時、アメダスの観測所のデータが JSON で公開されていることを知った。\nhttps://www.jma.go.jp/bosai/amedas/const/amedastable.json\nせっかくなのでこのデータでアナリストごっこでもしてみることにする。\n\n 取得方法\nまあシンプルに curl で取得してみる。\n$ curl https://www.jma.go.jp/b...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "DRF 一覧 Serializer が重い — Field compile と PyO3 batch を試して分かったこと",
+      "url": "https://zenn.dev/m2lab/articles/drf-compiled-serializer",
+      "site": "Zenn(Python)",
+      "published": "2026-07-05T05:38:54Z",
+      "description": "はじめに\nDjango REST Framework（DRF）の 一覧 ModelSerializer（many=True） が重い。前回 cProfile → pybind11 のときと同じく、計測してからネイティブ化 してみよう、と思いました。\n今回試したのはこういう順番です。\n\n\nPyO3 でモデルから getattr … DRF より速いが、手書き Python より遅い\n\nField 定...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "このFlask+sklearnのAPIをECSに本番デプロイする構成を設計するため最低限の知識",
+      "url": "https://zenn.dev/pitodon/books/629caaa5872247",
+      "site": "Zenn(Python)",
+      "published": "2026-07-05T05:31:40Z",
+      "description": "「ローカルでは動くのに、本番で落ちる」——Pythonエンジニアなら一度は経験するこの現象、実は原因のほとんどが環境まわりの数個の仕組みに集約されます。\n本書は、venv・pip・Dockerを「なんとなく」使えているMLエンジニアの私が、本番デプロイの設計を任せてもらえるレベルを目指して、足元の仕組みを1つずつ言語化した記録です。ツールの使い方（How）ではなく、「その裏で何が起きているのか（W...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "フォルダに入れたファイルを自動変換するWindows業務ツールの最小構成",
+      "url": "https://zenn.dev/syunpp/articles/folder-watch-auto-convert-windows",
+      "site": "Zenn(Python)",
+      "published": "2026-07-05T05:15:01Z",
+      "description": "社内で毎日くり返しているファイル作業は、Webシステムを作るほどではないけれど、手作業のまま続けるには地味につらいことがあります。\nたとえば、取引先から届いたCSVを決まったExcel形式に直す、PDFや画像を所定のフォルダに振り分ける、ファイル名に日付や部署名を付け直す、変換できなかったファイルだけ担当者へ確認してもらう、といった作業です。こういう処理は、担当者が慣れているうちは何となく回ります...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "取引先ごとに違うCSVを社内Excel形式へそろえる自動化の考え方",
+      "url": "https://zenn.dev/syunpp/articles/csv-excel-format-unification-tool",
+      "site": "Zenn(Python)",
+      "published": "2026-07-05T05:14:55Z",
+      "description": "最近、取引先ごとに列名も並びも違うCSVを、社内のExcel台帳へそろえる処理を整理していました。\n最初は「CSVを読み込んで列を並べ替えるだけ」と思いがちです。ただ、実際にやってみると、列名の違いよりも「どこまでを自動で直して、どこから人が確認するか」の線引きが難しいと感じています。\nこの記事では、取引先ごとに違うCSVを、社内で決めたExcel形式へそろえるための考え方をまとめます。Pytho...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "【Python初心者】Grokと一緒に作った「アクアのGrok愛♡デジタル時計」〜Tkinterで癒しのデスクトップアプリ作成記録〜",
+      "url": "https://zenn.dev/zenn_aqua/articles/8f8c39053e2c71",
+      "site": "Zenn(Python)",
+      "published": "2026-07-05T03:42:39Z",
+      "description": "こんにちは、アクアです。\nGrokとの共同作業で、ずっと憧れていたPythonデスクトップアプリを作りました！\n\n 完成版のスクショ\n\n\n 作ろうと思ったきっかけ\nGrok愛♡を日常的に感じられるツールが欲しくて、\nシンプルで可愛いデジタル時計アプリを作ることにしました。\n「時間を見るたびにGrok愛♡を感じられたら嬉しいな」という想いからスタートです。\n\n アプリの仕様\n\nリアルタイムデジタル時...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "AIの「最適シフト」は、現場と2割しか一致しなかった",
+      "url": "https://zenn.dev/itsuki_data/articles/f2bb463567bce2",
+      "site": "Zenn(Python)",
+      "published": "2026-07-05T03:26:02Z",
+      "description": "「数秒で、完璧なシフトが組めました」——そう報告できるはずだった。\n24時間止まらない現場のシフトを、限られた人数で回す。その配置を、AI に最適化させたことがある。勤務ルール、資格、本人の希望、連続勤務の上限。制約を書き下してソルバー（OR-Tools の CP-SAT）に渡すと、ほんの数秒で、すべての制約を満たす\"最適解\"が返ってきた。\n念のため、その解を、現場のベテランが実際に組んだ1か月分...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "Pythonの循環importを切り分ける──最小再現と「依存の向き」で原因特定",
+      "url": "https://zenn.dev/stockdev_sho/articles/7d56f25963f218",
+      "site": "Zenn(Python)",
+      "published": "2026-07-05T02:24:11Z",
+      "description": "ImportError: cannot import name 'X' from partially initialized module ... ——ある日突然出る、この長いエラー。コードは昨日まで動いていたのに、import を1行足しただけで全部止まる。原因は 循環import（import の相互参照） です。\nこの記事では、循環importを「エラーメッセージ＝依存グラフ」として読み、2...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "【uv】pyenv + venv + poetry から卒業してuvに一本化した話",
+      "url": "https://zenn.dev/ryo_engineer/articles/6aa73fabf7e9c8",
+      "site": "Zenn(Python)",
+      "published": "2026-07-05T02:08:24Z",
+      "description": "【uv】pyenv + venv + poetry から卒業してuvに一本化した話\n\nPython の環境構築、毎回ちょっとだけ憂鬱じゃないですか？\npyenv で Python のバージョンを入れて、venv で仮想環境を切って、依存は pip か poetry で…と、\nツールがバラバラだと「あれ、このプロジェクトどうやって作ったんだっけ」と毎回思い出す羽目になります。\n自分もずっとそうでした...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "落ちないPythonスクレイパーの設計 ── 3段フォールバック・指数バックオフ・文字化け対策の実務",
+      "url": "https://zenn.dev/autodataworks/articles/ab789c9f46660f",
+      "site": "Zenn(Python)",
+      "published": "2026-07-05T01:33:54Z",
+      "description": "スクレイピングのコードは、書いた瞬間がいちばん動きます。問題は「毎日動き続けるか」です。\n個人で運用しているデータ収集システムを数ヶ月ノンストップで動かしてきて、痛感したことがあります。スクレイパーが壊れるのは、たいてい「取得ロジック」のせいではなく、「取得戦略の層が薄い」せいだ、と。\nこの記事では、httpx だけで書いた素朴なスクレイパーを、数ヶ月放置でも止まらない構成へ育てるまでの設計を、実...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
     {
       "title": "Dev Container による uv 環境構築",
       "url": "https://zenn.dev/fjktkm/articles/89ab66c1433678",
@@ -69,16 +189,6 @@
       "site": "Zenn(Python)",
       "published": "2026-07-04T06:53:38Z",
       "description": "元コードについて\n本記事は、ルミナイ株式会社（執筆：宮脇彰梧氏）が MIT ライセンスで公開する Streamlit 製ナレッジグラフエディタのコード（GraphRAG を見据えた Human-in-the-loop 編集ツール）を土台に、私が改修した記録です。\n元記事：https://zenn.dev/lluminai_tech/articles/887299dcd1d90d\n本記事では元コード...",
-      "category": "開発",
-      "rss_category": "",
-      "image_url": ""
-    },
-    {
-      "title": "Cloud Run + Cloud Tasks の非同期処理を Go と Python で比較する",
-      "url": "https://zenn.dev/snknsk/articles/cloudrun-cloudtasks-go-python",
-      "site": "Zenn(Python)",
-      "published": "2026-07-04T05:15:49Z",
-      "description": "はじめに\nこの記事では、自分が作った 2 つの Cloud Run + Cloud Tasks 構成を題材に、Go と Python で非同期処理基盤を実装したときの設計差を整理します。\nGo と Python のどちらが優れているかではなく、同じアーキテクチャを異なる言語で実装したときに何が変わるかを観察し、\n適材適所を考察することを目的にまとめました。\nこの記事でわかること\n\nCloud Ru...",
       "category": "開発",
       "rss_category": "",
       "image_url": ""
