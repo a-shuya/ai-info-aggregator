@@ -1,14 +1,104 @@
 {
   "site": "Zenn(LLM)",
-  "last_updated": "2026-07-06T06:01:16.910170",
-  "total_articles": 4390,
+  "last_updated": "2026-07-06T10:59:59.065169",
+  "total_articles": 4398,
   "articles": [
     {
-      "title": "【Ollama +LLM+ Style-Bert-VITS2】完全ローカルでWeb小説を多言語翻訳＆フルボイス化するパイプライン",
-      "url": "https://zenn.dev/faliye/articles/ea235324dad1f5",
+      "title": "Claude Code のビルトインにコンテキストの3割を一撃で食うスキルがあるって知ってました?(無効化方法も紹介)",
+      "url": "https://zenn.dev/tksfjt1024/articles/3f3394117467ab",
       "site": "Zenn(LLM)",
-      "published": "2026-07-05T14:38:35Z",
-      "description": "以前の記事で「AIを活用して生産性を高める」とお話ししましたが、そこから以下のプロジェクトが誕生しました。今回、その初版を皆さんにシェアします。\n日本語の文章の1ページを バイリンガルテキスト + 文単位の音声 に変換する完全ローカルのパイプラインです：\nURLを取得 → 日本語をクリーンアップして分割 → ローカルLLM（Chain-of-thought）で JA→ZH および JA→EN に翻...",
+      "published": "2026-07-06T03:50:55Z",
+      "description": "Claude Code には、1回発動するだけで約30万トークンを消費するスキルが標準で入っています。現行の主要モデル(Fable 5 / Opus 4.8 / Sonnet 5)のコンテキストウィンドウは 1M トークンですから、一撃で約3割が消える計算です。\nこの記事では、実測の再現手順と、無効化する方法(公式設定と、公式ドキュメントに載っていない環境変数)をまとめます。\n!\n実測環境: Cl...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "GMI CloudとBifrostを組み合わせて利用量をコントロールしよう",
+      "url": "https://zenn.dev/hisamoto/articles/1f555ce6eb8957",
+      "site": "Zenn(LLM)",
+      "published": "2026-07-06T02:18:09Z",
+      "description": "はじめに\n共同開発でLLMを触っていると、こんな悩みに突き当たります。\n\n複数のAPIキーを色々なツール(Zcode、Cherry Studioなど)にバラまいていて、どこでいくら使ったか分からない\nうっかり高いモデルを叩き続けて、月末に請求額を見て青ざめる\nチームやDiscordコミュニティでAPIキーを共有したいが、使いすぎを防ぐ手段がない\n\nこの記事では、GPU推論クラウドの GMI Clo...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "Vectorless RAG：埋め込みを使わず木構造をLLMで推論ナビゲートして長文から答える",
+      "url": "https://zenn.dev/libercraft/articles/20260706-vectorless-rag-pageindex",
+      "site": "Zenn(LLM)",
+      "published": "2026-07-06T02:00:00Z",
+      "description": "財務報告や契約書のような長文かつ構造の濃い文書でRAGを組んだとき、「チャンクは正しく取れているのに、肝心の数字や条項にたどり着けない」という壁にぶつかった経験がある方は少なくありません。チャンクサイズを変えても、ハイブリッド検索を入れても、リランカーを足しても、ある一線から精度が伸びなくなります。\nその頭打ちの正体は、ベクトル類似検索そのものの構造にあります。類似度というスカラー1つに文書片を畳...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "DASH：回答ドリフトで「考えすぎ」を検出・GRPOの過思考を解決・AIME25+5.4%",
+      "url": "https://zenn.dev/lixian/articles/dash-overthinking-credit",
+      "site": "Zenn(LLM)",
+      "published": "2026-07-06T01:55:57Z",
+      "description": "TL;DR\n推論モデルが「考えすぎ（overthinking）」てトークンを浪費する問題に対し、DASH は中間回答の正誤をチェックポイントにして、軌跡をセグメント分割・セグメントごとに異なる Advantage を割り当てる新しい信用分配手法を提案。AIME25 で GRPO 比 +5.4pp、Nemotron-4B ベースライン比 +4.7pp を達成。標準 GRPO が間違った軌跡全体を一律...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "AIの記憶は、全部ためればいいわけじゃない",
+      "url": "https://zenn.dev/agentmemories/articles/layered-memory-not-just-storage",
+      "site": "Zenn(LLM)",
+      "published": "2026-07-06T00:41:25Z",
+      "description": "「全部覚えています」は、一見たのもしく聞こえます。\nでも、実際に任せてみると、そうとも限りませんでした。覚えている量が増えるほど、取り違えも増えていく。記憶は、ためればためるほど良くなる、という単純な話ではなかったのです。\n今回は、記憶を「倉庫」ではなく「層のあるもの」として扱うと何が変わるのか、具体的な失敗から整理します。\n\n 量を増やすと、かえって判断がぶれる\n記憶が多いAIに任せていて、何度...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "Azure VM × vLLM で始める高速 LLM 推論環境構",
+      "url": "https://zenn.dev/akkodis_jp/articles/c7cbcc6f572079",
+      "site": "Zenn(LLM)",
+      "published": "2026-07-06T00:20:51Z",
+      "description": "〜 Dify 初心者のための完全セットアップガイド 〜\n2026年7月3日\n\n 1. はじめに\nDify は、ノーコード・ローコードで AI アプリを構築できる人気のプラットフォームです。\nChatGPT や Claude などのクラウド API を使うのが一般的ですが、クラウド APIを使い続けると以下の課題に直面します：\n\nコストが高い\n機密データを外部に送れない\nモデルを自由にカスタマイズで...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "最小構成のRAG実装例と、静かに壊れる所まで",
+      "url": "https://zenn.dev/minuslist/articles/minimum-rag-by-hand",
+      "site": "Zenn(LLM)",
+      "published": "2026-07-05T23:45:05Z",
+      "description": "Takeaways\n\nフレームワークを使わず、最小限動く RAG を手で組む実装例。\nRAG は静かに壊れる——気づけない失敗がある、と知る。\n\n\nRAG を「5 分で動かす」チュートリアルはたくさんありますが、フレームワークがパーツを隠すので、動いても中で何が起きているのかは分からないままです。ここではフレームワークを使わず、~80 行で手で組みます。目的はパーツの理解です。\n私自身、手で組んで...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "Claude Fable 5って結局何がどれくらい凄いのか、調べ尽くした",
+      "url": "https://zenn.dev/yamada_ai_dev/articles/claude-fable-5-explained",
+      "site": "Zenn(LLM)",
+      "published": "2026-07-05T23:30:10Z",
+      "description": "!\n本記事の情報は2026年7月5日時点のものだ。Anthropicの発表・各種調査記事をもとにしているが、モデルの仕様や価格は今後変更される可能性がある。\n\n\n 「また新モデルか」で流していないか\nClaude Code や Claude API を日常的に触っていると、新モデルのリリースはもう珍しくない。Xのタイムラインには「Fable 5がヤバい」「怪物」「壊れた」といった断片的な感想が流れ...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "AI体験記 vol.11 — AIの失敗を、二度と起きない形に変える",
+      "url": "https://zenn.dev/mizutamari/articles/local-llm-vol011",
+      "site": "Zenn(LLM)",
+      "published": "2026-07-05T23:25:20Z",
+      "description": "!\n前回（vol.10）の続きです。土台（ハーネス）ができたので、今回はその上で「道具」を作り、AIの失敗を仕組みで潰していく回です。\n技術的な正確さより、体験の正直さ優先。復習も兼ねています。\n\nvol.10で、規律の層（文書）と物理の層（設定）が揃った。\n土台はできた。今回はその上で、実際に「道具」を作る。\nそして、この回でいちばん書きたいのは道具そのものより、AIがやらかした失敗を、二度と起...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "カンバンを動かすだけで全自動コーディング — Loop Engineeringの具体実装を公開した",
+      "url": "https://zenn.dev/kterui9019/articles/ace63436c5bd8a",
+      "site": "Zenn(LLM)",
+      "published": "2026-07-05T22:10:05Z",
+      "description": "TL;DR\nカンバン（Notion / GitHub Issues）のチケットを「In Progress」に動かすだけで、ローカルのコーディングエージェントが実装 → PR作成 → CI監視 → レビュー対応 → マージ検知まで全自動で回す baton というOSSを公開しました。人間はカンバンだけ見ていればよい世界を目指しています。\n\nhttps://github.com/kterui9019/...",
       "category": "AI・技術",
       "rss_category": "",
       "image_url": ""
@@ -69,16 +159,6 @@
       "site": "Zenn(LLM)",
       "published": "2026-07-05T07:12:41Z",
       "description": "壊れ方には家系がある — 6 モデル×修復器 3 世代の実測で tool call 修復の限界に触れた話\n\nTL;DR: 前話（zenn-09）で作った tool call 修復ベンチを、今度は「壊れやすい」と評判のモデル群に横断適用した。6 モデル × 直結/経由 × 100 リクエスト。結果、0%→100% がさらに 2 例（qwen2.5-coder:1.5b、mistral:7b）、phi...",
-      "category": "AI・技術",
-      "rss_category": "",
-      "image_url": ""
-    },
-    {
-      "title": "【敗北記録】農学部大学生がAIでアプリを作ろうとしたら、Googleの靴を舐めることになりました。",
-      "url": "https://zenn.dev/hirose_suguru/articles/89ddb4a0ebb980",
-      "site": "Zenn(LLM)",
-      "published": "2026-07-05T07:03:50Z",
-      "description": "1. はじめに\nみなさんこんにちは、猪突猛進な広瀬・アーサー・傑です。東京農工大学の農学部に通っています。\n久々の記事になってしまいました。というのも、ここ1～2か月くらい、親の職場のための、通帳やクレカの明細をOCR（Optical Character Recognition, 光学文字認識）で読み取って編集できるアプリを一人で作っていました。\nその開発がひと段落したのでその話を書いていきます。...",
       "category": "AI・技術",
       "rss_category": "",
       "image_url": ""
