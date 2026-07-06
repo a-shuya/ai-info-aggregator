@@ -1,8 +1,98 @@
 {
   "site": "Zenn(LLM)",
-  "last_updated": "2026-07-06T19:18:04.811590",
-  "total_articles": 4398,
+  "last_updated": "2026-07-06T21:05:57.364818",
+  "total_articles": 4406,
   "articles": [
+    {
+      "title": "Intel Arc GPUでローカルLLMを動かす：4バックエンド実測比較とOpenVINOの罠",
+      "url": "https://zenn.dev/eyeofjapetus/articles/015908f77349ca",
+      "site": "Zenn(LLM)",
+      "published": "2026-07-06T14:32:13Z",
+      "description": "はじめに\nノートPC内蔵のIntel Arc GPUで、ローカルLLMをどこまで実用的に動かせるか検証しました。llama.cppをベースに、Intel Arc向けに使える4つのバックエンド（OpenVINO / Vulkan / SYCL / CPU）を実機で比較したところ、「ベンチマークが最速のバックエンドが、実際のサーバー推論では使い物にならない」という落とし穴に当たりました。\nこの記事では...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "3つのLLMを三角形に配置して議論させる音声AIアプリを2ヶ月作った話（ThreeBody）",
+      "url": "https://zenn.dev/tkt0605/articles/8b8c3f984bada5",
+      "site": "Zenn(LLM)",
+      "published": "2026-07-06T11:31:05Z",
+      "description": "はじめに\n「1つのLLMに聞いて終わり」ではなく、複数のLLMに並列で考えさせて、それを1つの体（主体）が統合する——そんな体験を作りたくて、ThreeBody というプロトタイプを個人開発しました。\n名前の通り、三角形に配置した最大3つのLLMノード（「体」）が重心で1つの音声チャットとして振る舞います。Ollama・OpenAI・Anthropic・DeepSeekを自由に組み合わせられ、2〜...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "\"効率化されていないことに、良さがあった ── 「ありがとう」は、自動化がそっと消していく\"",
+      "url": "https://zenn.dev/hiroshift/articles/09985ad8019570",
+      "site": "Zenn(LLM)",
+      "published": "2026-07-06T10:10:05Z",
+      "description": "この記事は、いつもの\"架空の会社に小さな道具を作る\"回ではありません。週末、地元に帰って考えたことの、ひとり言です。途中に、その気づきを絵にした小さな図（GIF）を一つ。連載17日目。\n\n\n\n はじめに\n「『あの人しかできない』を、ほどく。」という30日間の連載の、17日目です（Day01／Day02／Day03／Day04／Day05／Day06／Day07／Day08／Day09／Day10／...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "Snowflake CoCo を Snowsight で触ってみた ― 自然言語でどこまで頼めるか",
+      "url": "https://zenn.dev/mochitec_tech/articles/5cf8fdf8bc4975",
+      "site": "Zenn(LLM)",
+      "published": "2026-07-06T09:48:58Z",
+      "description": "はじめに\nSnowsight を開くと、右下に「CoCo」というチャットパネルが居ます。自然言語で頼むとデータの探索や SQL の作成をやってくれる AI エージェントで、トライアルアカウントでも使えたので、何をどこまで頼めるか試しました。\n名前の注記を1つ。画面の表記は CoCo ですが [1]、公式ドキュメントは旧名「Cortex Code」のままです。本記事は画面表記に合わせて CoCo と...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "「読んで終わり」の収集ログを、LLMに毎日Wiki化させる仕組みを作った",
+      "url": "https://zenn.dev/mskbhd/articles/wiki-loop-llm-wiki-pattern",
+      "site": "Zenn(LLM)",
+      "published": "2026-07-06T09:32:24Z",
+      "description": "3行まとめ\n\nFeedly・Twitter(国内/海外)の収集ログが「毎日ファイルに吐き出されて読んで終わり」だったのを、LLMが継続的に育てる統合Wikiに変える仕組みを作った\n元ネタはkarpathyの「生ソース→LLMが管理するWiki→スキーマ」という3層パターン。実行エンジンはローカルLLM（無料）\nClaude Codeに「実装計画を書かせて、タスクごとに別のサブエージェントに実装・レ...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "コード生成ルールとしての憲法と哲学",
+      "url": "https://zenn.dev/atatago/articles/cde7fa8f05b1f2",
+      "site": "Zenn(LLM)",
+      "published": "2026-07-06T09:29:29Z",
+      "description": "はじめに\nClaude CodeなどLLMによるプログラム生成において、ガードレールによる実装の逸脱を防ぐアプローチはミニ四駆的なアプローチであり、私が望む自律運転的なアプローチではないように思える。\nではどのようにアプローチするべきか考えた結果、システム憲法（Constitution）、プログラミング哲学（Philosophy）を定義することにより、自律的（に近い）生成が行えるのではないかと考え...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "Snowflake Cortex AI 調査 ― 4系統のAI機能を公式ドキュメントから整理する",
+      "url": "https://zenn.dev/mochitec_tech/articles/94e5c061a9bd46",
+      "site": "Zenn(LLM)",
+      "published": "2026-07-06T08:30:24Z",
+      "description": "はじめに\nSnowflake の AI 機能群「Cortex」について、公式ドキュメントを読み込んで調査した記事です。機能が多く、ドキュメントも機能ごとに分かれていて、全体像を1枚でつかみにくかったためです。\n本記事では、Cortex を4系統（AI Functions / Analyst / Search / Agents）に分けて、入力・出力・使いどころを整理します。内容は 2026年7月時点...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "なぜ、相手がシゴデキか否かは「LLMはアイディア出しが得意と思うか」の回答を聞けばわかるのか？",
+      "url": "https://zenn.dev/pdfractal/articles/92c63f29f97953",
+      "site": "Zenn(LLM)",
+      "published": "2026-07-06T07:47:10Z",
+      "description": "はじめに\n生成AIの普及以後、「LLMはアイディア出しが得意である」という言い方を頻繁に見かけるようになりました。たしかにLLMは、短時間で多くの案を列挙し、複数の観点を示し、整った文章で提案を作ることができます。従来であれば自分で悩みながら出していた候補が、数秒で十個、二十個と並ぶわけですから、多くの人が「アイディア出しに向いている」と感じるのは自然です。\nしかし、仕事におけるアイディアを厳密に...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "function calling の最小実装で見えた、AIエージェントが失敗する境界",
+      "url": "https://zenn.dev/proper_willet/articles/f5976e9a95d0b8",
+      "site": "Zenn(LLM)",
+      "published": "2026-07-06T05:57:30Z",
+      "description": "TL;DR\n\nfunction calling は「デモが動く」と「ツールとして任せられる」の間に大きな段差があります。壊れるのはだいたい同じ 4 箇所でした。\nモデルに渡す JSON Schema が実質のプロンプトです。description と enum を絞るだけで、失敗の半分くらいは実装前に消せます。\nただし schema で防げるのは「形式のエラー」だけで、「もっともらしく間違った引数...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
     {
       "title": "Claude Code のビルトインにコンテキストの3割を一撃で食うスキルがあるって知ってました?(無効化方法も紹介)",
       "url": "https://zenn.dev/tksfjt1024/articles/3f3394117467ab",
@@ -19,16 +109,6 @@
       "site": "Zenn(LLM)",
       "published": "2026-07-06T02:18:09Z",
       "description": "はじめに\n共同開発でLLMを触っていると、こんな悩みに突き当たります。\n\n複数のAPIキーを色々なツール(Zcode、Cherry Studioなど)にバラまいていて、どこでいくら使ったか分からない\nうっかり高いモデルを叩き続けて、月末に請求額を見て青ざめる\nチームやDiscordコミュニティでAPIキーを共有したいが、使いすぎを防ぐ手段がない\n\nこの記事では、GPU推論クラウドの GMI Clo...",
-      "category": "AI・技術",
-      "rss_category": "",
-      "image_url": ""
-    },
-    {
-      "title": "Vectorless RAG：埋め込みを使わず木構造をLLMで推論ナビゲートして長文から答える",
-      "url": "https://zenn.dev/libercraft/articles/20260706-vectorless-rag-pageindex",
-      "site": "Zenn(LLM)",
-      "published": "2026-07-06T02:00:00Z",
-      "description": "財務報告や契約書のような長文かつ構造の濃い文書でRAGを組んだとき、「チャンクは正しく取れているのに、肝心の数字や条項にたどり着けない」という壁にぶつかった経験がある方は少なくありません。チャンクサイズを変えても、ハイブリッド検索を入れても、リランカーを足しても、ある一線から精度が伸びなくなります。\nその頭打ちの正体は、ベクトル類似検索そのものの構造にあります。類似度というスカラー1つに文書片を畳...",
       "category": "AI・技術",
       "rss_category": "",
       "image_url": ""

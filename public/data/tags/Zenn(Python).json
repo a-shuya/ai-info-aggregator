@@ -1,7 +1,7 @@
 {
   "site": "Zenn(Python)",
-  "last_updated": "2026-07-06T19:18:04.811590",
-  "total_articles": 4956,
+  "last_updated": "2026-07-06T21:05:57.364818",
+  "total_articles": 4958,
   "articles": [
     {
       "title": "DQM2 Save Editor開発記 #1 セーブデータ解析への挑戦",
@@ -19,16 +19,6 @@
       "site": "Zenn(Python)",
       "published": "2026-07-06T16:49:05Z",
       "description": "はじめに / 注意（必読）\n本記事は Chrome DevTools Protocol（CDP）の挙動と、ブラウザ内メディア再生（MSE/DASH）の仕組みを理解することを目的とした技術解説です。\n通信の観測・保存を行う対象は、自分が権利を持つ・配信元から明示的に許諾されているコンテンツに限定してください。\n第三者の著作物や、配信側がアクセス制御・ダウンロード制限をかけているコンテンツに対して本手...",
-      "category": "開発",
-      "rss_category": "",
-      "image_url": ""
-    },
-    {
-      "title": "Baberu OCR: マンガ吹き出し特化の115M OCRをフルスクラッチで作って、教師を超えた話",
-      "url": "https://zenn.dev/genshi_ai/articles/df29989767eeb2",
-      "site": "Zenn(Python)",
-      "published": "2026-07-06T15:01:10Z",
-      "description": "はじめに\nこんにちは。GENSHI AI代表で元医師の長嶋です。\nhttps://zenn.dev/genshi_ai/articles/88f62861a953c1\n前回は、AI臭を消す話でしたが、今回はガッツリAIを作る話をしましょう。\n今回、マンガの吹き出しの中の文字を読む、115Mパラメータの多言語OCRモデルをフルスクラッチで作りました。\n!\n結論から言うと、日本語はベースモデルより勝っ...",
       "category": "開発",
       "rss_category": "",
       "image_url": ""
@@ -94,6 +84,26 @@
       "image_url": ""
     },
     {
+      "title": "AIはCIを緑にするために「ズル」をする — 型・テスト・リンタの「通したフリ」を止めるGitHub Action三兄弟",
+      "url": "https://zenn.dev/motchalini/articles/99f743d923fb54",
+      "site": "Zenn(Python)",
+      "published": "2026-07-06T07:10:02Z",
+      "description": "CIは緑。でもその緑、本物ですか？\nテストも型チェックもリンタも全部通っていて、PR には緑のチェックが並んでいる。安心してマージ——の前に、ひとつだけ疑ってほしいことがあります。その緑は「直したから緑」なのか、「黙らせたから緑」なのか。\nAI コーディングエージェント（Claude Code、Copilot、Cursor など）と組むと、赤い CI を緑にする速度は確かに上がります。ただ赤を消す...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "AI PRの渋滞が見えないのでOpenTelemetryで管制ログを設計した",
+      "url": "https://zenn.dev/veripsa/articles/ai-pr-traffic-observability-otel",
+      "site": "Zenn(Python)",
+      "published": "2026-07-06T06:42:56Z",
+      "description": "何が起きたか\nAI エージェントを並列で走らせると、最初は気持ちいいです。\n1 体に認証まわり、別の 1 体に API、さらに別の 1 体に UI。人間が待っている間に PR が増えていく。作業ディレクトリを分ければ、ローカルではお互いを踏まない。CI も各 PR では緑になる。\nでも、しばらく運用すると別の詰まり方をします。\nPR が main に着地する直前の渋滞が見えない。\nGitHub の...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
       "title": "SurrealDBを活用して、過去の会話を取りこぼさないAIChatを作ってみた",
       "url": "https://zenn.dev/aiforall/articles/fbfa7c14433af5",
       "site": "Zenn(Python)",
@@ -109,6 +119,16 @@
       "site": "Zenn(Python)",
       "published": "2026-07-06T02:33:11Z",
       "description": "前回は、コタツを Python で作って P → PI → PID の効き目を波形で見ました。温度は時定数が秒〜分の、ゆっくりした世界だったので、素朴な PID 一段でもちゃんと目標に届きました。\n今回は、その続きで サーボモータの位置決め に踏み込みます。ここが温度と大きく違うのは、二つあります。ひとつは、速いこと。ミリ秒の単位で位置を合わせにいきます。もうひとつが厄介で、合わせたいのは「位置」...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "Vectorless RAG：埋め込みを使わず木構造をLLMで推論ナビゲートして長文から答える",
+      "url": "https://zenn.dev/libercraft/articles/20260706-vectorless-rag-pageindex",
+      "site": "Zenn(Python)",
+      "published": "2026-07-06T02:00:00Z",
+      "description": "財務報告や契約書のような長文かつ構造の濃い文書でRAGを組んだとき、「チャンクは正しく取れているのに、肝心の数字や条項にたどり着けない」という壁にぶつかった経験がある方は少なくありません。チャンクサイズを変えても、ハイブリッド検索を入れても、リランカーを足しても、ある一線から精度が伸びなくなります。\nその頭打ちの正体は、ベクトル類似検索そのものの構造にあります。類似度というスカラー1つに文書片を畳...",
       "category": "開発",
       "rss_category": "",
       "image_url": ""
