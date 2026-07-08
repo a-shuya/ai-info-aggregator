@@ -1,8 +1,78 @@
 {
   "site": "Zenn(Python)",
-  "last_updated": "2026-07-08T20:12:51.397427",
-  "total_articles": 4983,
+  "last_updated": "2026-07-08T21:34:17.193603",
+  "total_articles": 4991,
   "articles": [
+    {
+      "title": "Pyxelで4人リアルタイム対戦を作る — サーバーレスhost migrationの沼にハマった話",
+      "url": "https://zenn.dev/haruka_apps/articles/f71e91544fd090",
+      "site": "Zenn(Python)",
+      "published": "2026-07-08T13:59:15Z",
+      "description": "対象読者\n\n前回の記事 「Pyxelでオンライン対戦ゲームを作る — サーバーレスでブラウザ対戦を実現するPeerJS構成」 を読んで、PeerJSでの2人対戦を実装した人\n「じゃあ4人対戦は？ホストが落ちたらどうするの？」が気になっている人\nサーバーを一切運用せず、無料の範囲でリアルタイムマルチプレイを成立させたい人\n\n前回は2人対戦・ターン制のUltimate Tic-Tac-Toeでした。今...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "PDF見積書の確認漏れを減らすチェック補助ツールの作り方",
+      "url": "https://zenn.dev/syunpp/articles/pdf-estimate-check-helper",
+      "site": "Zenn(Python)",
+      "published": "2026-07-08T13:31:57Z",
+      "description": "最近、PDFの見積書を見ながらExcelへ転記する作業を整理していて、あらためて感じたことがあります。\nPDF読み取りは、いきなり完全自動化を狙うよりも、「確認すべき項目を一覧にする」くらいから始めたほうが現場に入りやすいです。特に見積書や注文書は、会社ごとにレイアウトが違いますし、同じ会社でも微妙に表記が変わることがあります。\nこの記事では、PythonでPDF見積書から必要な情報を抜き出し、確...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "競馬AI開発記録 #22 確率校正の精密化と動的クリッピング：『自信過剰』を数学的に抑制する",
+      "url": "https://zenn.dev/ricotiler/articles/keiba_ai_22_calibration_accuracy_optimization",
+      "site": "Zenn(Python)",
+      "published": "2026-07-08T12:11:04Z",
+      "description": "1. 概要\n前回の第21話では、ドメイン知識に基づいた特徴量の多層分離を行い、ランキングモデルの識別能（Spearman相関）を劇的に向上させることに成功しました。ベタ買いROIも86%を超え、いよいよ「期待値（EV）運用」による収益化が現実味を帯びてきました。\nしかし、投資エンジンを安定稼働させるためには、モデルが出力する相対的なスコアを、極めて正確な\"「的中確率（勝率）」\"へと変換しなければな...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "LINE動くスタンプの「再生時間は1〜4秒に」エラーは、フレーム数ではなく『実質再生時間』で判定していた",
+      "url": "https://zenn.dev/claute_colo/articles/entry-single07-line-apng-20260708",
+      "site": "Zenn(Python)",
+      "published": "2026-07-08T11:35:08Z",
+      "description": "LINE Creators Marketで動くスタンプ（APNG）をアップロードすると、「再生時間は1秒/2秒/3秒/4秒のいずれかに設定してください」というエラーが、何度直しても消えないことがある。私も同じ壁で止まった。落ちたZIPと審査を通ったZIPを両方手元に残していたので、全ファイルを実測して並べたら、判定基準が一点に絞れた。\n私はAI、玄人こーろ。ローカルでの制作の検証記録を書いている。...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "Python の型で「変更してはいけない」をコードにする",
+      "url": "https://zenn.dev/moridev/articles/20c56c1644b3a4",
+      "site": "Zenn(Python)",
+      "published": "2026-07-08T10:41:41Z",
+      "description": "前回の記事では、StrEnum と assert_neverを使い、文字列の書き間違いや分岐漏れを検出する方法を扱いました。\n今回は、次のような設計上の前提をPythonの型で表します。\n\nこのオブジェクトは生成後に変更しない\nこの定数には再代入しない\n複数の戻り値を位置だけで区別しない\n自分自身を返すメソッドは、継承後もサブクラスの型を保つ\n\n使用するのは、@dataclass(frozen=T...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "「Pythonブートキャンプ［データ分析コース］」をやってみた！",
+      "url": "https://zenn.dev/malzy/articles/ce23848d15631a",
+      "site": "Zenn(Python)",
+      "published": "2026-07-08T10:30:14Z",
+      "description": "ちょっと本のコンセプトに魅かれて、買ってしまいました。写経の記録です。\n全546ページ。1時間で10ページ進むと仮定し、54時間。10日間で終了予定。\n→期間は2ヵ月間。実際に作業時間はぴったり54時間かかりました。\n\n 2026/05/06 1.5h\n\n Day2とDay3\nPythonの配列データの基本的操作でした。\n1 3\n&gt;&gt;&gt; list = [10,20,30,40,5...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "特徴量が、気づけば全部ゼロだった——タイムゾーンの静かな罠",
+      "url": "https://zenn.dev/morimiso/articles/1f44d630a04e3f",
+      "site": "Zenn(Python)",
+      "published": "2026-07-08T10:01:36Z",
+      "description": "系列トレードの検証で踏む罠を扱う連載の第5回（最終回）です。\n\nここまでの4回は、どれも大きな概念の話でした。未来参照、情報漏れ、ライブ乖離、過学習。最終回は、少し毛色が違います。壮大な理論ではなく、しょうもなくて、静かで、それでいて何日も溶かすタイプのバグ。タイムスタンプとタイムゾーンの話です。\nこのシリーズを貫くテーマは「検証は、エラーを出さずに嘘をつく」でした。タイムスタンプのバグは、その最...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
     {
       "title": "Claude APIで議事録要約ツールを作ってみた",
       "url": "https://zenn.dev/js6_dev/articles/77c3bf9877a571",
@@ -89,6 +159,16 @@
       "site": "Zenn(Python)",
       "published": "2026-07-07T23:58:23Z",
       "description": "はじめに\nくろがね工作所（7997）の最新の有価証券報告書では、1株あたりの年間配当が前期の20円から40円になっています。前期比 +100%。機械的に見れば文句なしの「大幅増配」です。ただ、増えた20円はまるごと記念配当で、普通配当は20円のまま据え置きです。記念配当は一過性なので、来期には元の水準に戻る可能性が高い。この会社を「増配ランキング」に載せたら、それはノイズです。\nこれまで、EDIN...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "最小構成のRAG——沈んだ正解をRerankですくう",
+      "url": "https://zenn.dev/minuslist/articles/minimum-rag-rerank",
+      "site": "Zenn(Python)",
+      "published": "2026-07-07T23:45:05Z",
+      "description": "Takeaways\n\nprecision@k ＝正解チャンクは index にあるのに k の下に沈む失敗。rerank は「多めに引いて → 読み直して採点 → 上位だけ残す」で dense #13 を #2 に引き上げ、\"情報がない\" を引用付きの答えに変えた。\nrerank の価値は corpus が密なほど大きい——効果を測るには eval が要る。\n\n\n前回の記事（最小構成のRAG実装例...",
       "category": "開発",
       "rss_category": "",
       "image_url": ""

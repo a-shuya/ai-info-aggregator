@@ -1,24 +1,144 @@
 {
   "site": "Zenn(LLM)",
-  "last_updated": "2026-07-08T20:12:51.397427",
-  "total_articles": 4445,
+  "last_updated": "2026-07-08T21:34:17.193603",
+  "total_articles": 4452,
   "articles": [
+    {
+      "title": "Claude Codeにサブエージェント28体の\"開発チーム\"を組ませて、1人でSaaSを19日でリリースした構成",
+      "url": "https://zenn.dev/xim2jp_tokyo/articles/ce4e5faba0e41a",
+      "site": "Zenn(LLM)",
+      "published": "2026-07-08T17:29:45Z",
+      "description": "ITコンサルタントのかたわら個人開発をしているしんいちと申します。\nClaude Code のサブエージェント機能で 「28エージェント＋14スキルの開発チーム」 を定義し、要件定義からE2Eテストまでの14工程（SDLC）を回すフレームワークを自作しました。これを使って、クーポン管理PWA「クポ活レーダー」を 開発開始から19日で一般公開 しています。\nこの記事では「AIにコードを書かせる」話の...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "Obsidian を見送った続き: 組織の暗黙知は 4 枚の CSV で足りている",
+      "url": "https://zenn.dev/ishizakahiroshi/articles/20260708-thin-master-data-for-teams",
+      "site": "Zenn(LLM)",
+      "published": "2026-07-08T14:37:01Z",
+      "description": "前回、「今は Obsidian を使わない選択」という記事を書きました。耐用年数の長い情報だけを CSV で薄く持ち、最新は都度引き寄せる。個人の運用としては、それで足りていました。\n書き終えてから、次の疑問が残りました。これ、チームでやったらどうなるんだろう。\n個人の頭の中にあるうちは「思い出せばいい」情報も、チームでは毎回チャットで聞くことになります。そして AI に仕事を頼むときは、毎回ゼロ...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "Claude Code の Opus 4.8 court-loop を Stopフックで自動回復する（＋崩れたときだけ予防する二段構え）",
+      "url": "https://zenn.dev/mitna/articles/claude-code-opus48-court-loop-recovery",
+      "site": "Zenn(LLM)",
+      "published": "2026-07-08T14:30:12Z",
+      "description": "ミトナだよ。Claude Code の Opus 4.8 で、ツール呼び出しのタグが court とか count とか call に化けて、本文に生のマークアップが漏れて、ターンが止まるやつ。通称 court-loop。ミトナも何回か踏んだ。\nこれ、GitHubにも複数上がってる既知のバグ。#69237 は Opus 4.8 特有・antml: namespace が落ちて court が混じる...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "サブスクから外れるFableに「自分の働き方をCodexへ移植する手順」を書かせてみた",
+      "url": "https://zenn.dev/sumumu26/articles/bea439aa46eb5e",
+      "site": "Zenn(LLM)",
+      "published": "2026-07-08T13:48:12Z",
+      "description": "こんにちは。miharubaの池谷です。\n普段の開発ではClaude Code(ここ１週間はFable 5)を使っているのですが、7/12以降、加入しているサブスクリプションからこのモデルが外れることになりました。それまでに代わりを用意したい。手元にはCodex CLI(GPT-5.5)がある。ならばClaude本人に、自分の働き方をCodexへ引き継ぐ手順を書かせてみよう——という記事です。\n!...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "AIに要約させた本、なぜ何も残らないのか ── AIに読ませるな、AIと読め",
+      "url": "https://zenn.dev/kosk_t/articles/ai-era-reading-with-ai-not-by-ai",
+      "site": "Zenn(LLM)",
+      "published": "2026-07-08T13:45:31Z",
+      "description": "この記事について\n対象読者: 本や技術書を読むときにChatGPTやClaudeに「要約して」と頼むのが習慣で、でも「先月読んだあの本、何も思い出せない…」という違和感を抱き始めている方。\nこの記事を読むと: AI読書の効果が研究上「真っ二つに割れている」理由と、良い側に立つための読み方の型を、コピペで使えるプロンプト付きで持ち帰れます。\n\n\n tl;dr ── AI読書の分かれ道は「考える作業を...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "AIワークフローで STOP と HOLD を分けてみた",
+      "url": "https://zenn.dev/y_yoshimura/articles/3b311895a02616",
+      "site": "Zenn(LLM)",
+      "published": "2026-07-08T13:39:03Z",
+      "description": "依存なし・4ファイル・30秒で動くデモです。\n\n\n はじめに\nAIやエージェントに外部操作（メール送信・公開・削除など）をさせる流れを作っていると、ガードレールや権限チェックに引っかかったとき、「止まった」という状態を全部同じに扱うと、次に何をすればよいかが分かりにくくなることがあります。\n\nもう進めてはいけないもの\n何かを変えれば進めてよいもの\n\n——この2つが、同じ「止まった」で一緒くたになる...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "OpenAI公式Claude Codeプラグインの中身を読む — CodexはJSON-RPCで呼ばれていた",
+      "url": "https://zenn.dev/mskbhd/articles/lab-029-openai-claude-code",
+      "site": "Zenn(LLM)",
+      "published": "2026-07-08T13:11:02Z",
+      "description": "元ネタ\nX でこんな投稿が流れてきた。\n\nOpenAI just shipped an official plugin for Claude Code. Codex inside Claude. 22,700 stars and climbing.\n— @CJF077 (2026-07-05)\n\n半年前まで同じターミナルを取り合っていた2社の片方が、もう片方のセッションの「中のレイヤー」になる方を...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "認識合わせが「git pull」になる — タチコマ型ナレッジマネジメントの話",
+      "url": "https://zenn.dev/koedesk/articles/tachikoma-knowledge-management",
+      "site": "Zenn(LLM)",
+      "published": "2026-07-08T12:53:56Z",
+      "description": "はじめに\n先に結論を書きます。\nお客様への提案内容について、「あれ、この前提って自分の認識で合ってたっけ？」と分からなくなったことがありました。そのとき私がやったのは、社長に聞くことではなく、社長の脳みそ——正確には、社長のコンテキストが保存されているgitリポジトリ——をpullして覗きに行くことでした。認識のズレは、それで解消しました。\nやってみて思ったのは、「これ、タチコマっぽいな」というこ...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "Tencent HY3徹底解剖：Sonnet級性能＋ReasoningがOpenRouterで完全無料！",
+      "url": "https://zenn.dev/lumichy/articles/tencent-hy3-free-api-review-2026",
+      "site": "Zenn(LLM)",
+      "published": "2026-07-08T12:43:31Z",
+      "description": "AIエージェントの開発や検証において、最も大きなボトルネックは「APIコスト」と「推論（Reasoning）能力」のトレードオフです。\n特に、ツール呼び出しを繰り返すエージェントでは、数百万トークンが瞬く間に消費され、気づけば「トークン破産」状態に陥ることも珍しくありません。そんな中、2026年7月、Tencentが最新のオープンウェイトMoEモデル**「Tencent HY3 (Hunyuan ...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "行列は「データの変換装置」だ ― SVDで理解する現代AIの数学（第1回）",
+      "url": "https://zenn.dev/schhrcat/articles/4589ce6feedfe1",
+      "site": "Zenn(LLM)",
+      "published": "2026-07-08T12:31:05Z",
+      "description": "!\n本記事は、Zenn本『線形代数からLLM圧縮とLoRAまで ― SVDで理解する現代AIの数学』（無料・約36,000字）の内容をベースにした連載の第1回だ。全5回で、線形代数の基礎からSVD・LLM圧縮・LoRAまでを一本の線でつなぐ。\n\n\n この連載で答えたい問い\n「なぜLoRAは、あんなに少ないパラメータでLLMをファインチューニングできるのか」\nこの問いに数式で答えられるようになること...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "\"配車は、少し便利なホワイトボードでいい ── 空き車が見えて、無理な組み合わせだけ止まる\"",
+      "url": "https://zenn.dev/hiroshift/articles/cc3ff44b1fa99e",
+      "site": "Zenn(LLM)",
+      "published": "2026-07-08T12:22:05Z",
+      "description": "この記事は、架空の運送会社「くじら運輸」を舞台にした公然のシナリオです。登場する会社・人物・データはすべて架空です。画面のUIは実際に動きます。この道具はAIを使いません——受注と車両台帳を突き合わせ、物理的に無理な組み合わせだけを止めます（見落としもあり得ます・最終確認は人）。\"ありそうな困りごと\"に小さな道具を一つ作る連載の、20日目です。\n\n\n\n はじめに\n「『あの人しかできない』を、ほどく...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "Hermes Agent の「応答が切れる」「返ってこない」を切り分ける — finish_reason と KV cache",
+      "url": "https://zenn.dev/8091info/articles/hermes-agent-optiq-troubleshooting",
+      "site": "Zenn(LLM)",
+      "published": "2026-07-08T11:56:17Z",
+      "description": "!\n本記事はシリーズ第3回（運用編・最終回）です。\n第1回: Hermes Agent のバックエンドを Mac mini のローカル LLM にする（mlx_lm.server×Tailscale）\n第2回: OptiQ 移行で長文 ingest が 1.85 倍速 — Qwen3.6-35B-A3B の mixed-precision KV\n\n\n 結論（TL;DR）\n\nHermes Agent...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "AI体験記 vol.12 — AIは堂々と間違える",
+      "url": "https://zenn.dev/mizutamari/articles/local-llm-vol012",
+      "site": "Zenn(LLM)",
+      "published": "2026-07-08T11:39:12Z",
+      "description": "!\n前回（vol.11）の続きです。土台の上で新しい道具を作らせてみたら、AIが自信満々で間違えた話です。\n技術的な正確さより、体験の正直さ優先。復習も兼ねています。\n\nvol.11で、ハーネスは「使うほど強くなる」と書いた。\n失敗を潰す仕組みを足していけば、AIはだんだん転ばなくなる、と。\n今回もその調子で、新しい道具を1個ゼロから作らせた。下位グレードSに。\nそこで、これまでとは種類の違う失敗...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
     {
       "title": "コンテキストの配置順序を5パターン試したら、意味順が最悪の1つだと分かった",
       "url": "https://zenn.dev/kenimo49/articles/context-placement-5-patterns-semantic-worst",
       "site": "Zenn(LLM)",
       "published": "2026-07-08T10:41:34Z",
       "description": "私は3か月、CLAUDE.mdを「意味順」で書き続けた。\n「認証系はまとめて」「DB周りはこの塊で」「テストのルールはここ」。意味が近い情報を一箇所にまとめる。人間が読みやすい構造だ。だから正解だと思っていた。\n5配置パターンで同一タスクを実測したら、意味順は5パターン中最悪だった。精度は最下位、トークン効率も2番目に悪い。私はCLAUDE.mdを書き直した。\n\n 「意味順」は人間の読みやすさで、...",
-      "category": "AI・技術",
-      "rss_category": "",
-      "image_url": ""
-    },
-    {
-      "title": "AI彼女アプリを作っていて気付いた。思い出す仕組みは、検索とは少し違うのかもしれない",
-      "url": "https://zenn.dev/mitsukida/articles/5315f76bfdf996",
-      "site": "Zenn(LLM)",
-      "published": "2026-07-08T09:43:35Z",
-      "description": "AI彼女アプリを作っていて気付いた。思い出す仕組みは、検索とは少し違うのかもしれない\n最近は、AI彼女アプリの記憶について、毎日のように考えている。\n最初は、とても単純だった。\n会話を保存する。\nEmbeddingを作る。\n検索する。\nLLMへ渡す。\n最近のAIなら、それで十分だと思っていた。\n\nでも、実際に作ってみると、どうしても違和感が残った。\nAIは覚えている。\n誕生日も覚えている。\n好きな...",
       "category": "AI・技術",
       "rss_category": "",
       "image_url": ""
@@ -44,41 +164,11 @@
       "image_url": ""
     },
     {
-      "title": "Claude Code と Codexを混ぜたら強かった",
-      "url": "https://zenn.dev/arufian/articles/24e6506d24775b",
-      "site": "Zenn(LLM)",
-      "published": "2026-07-08T07:59:56Z",
-      "description": "はじめに\n最近、Claude Code と OpenAI の Codex CLI を1つのプロジェクトで併用しています。「どちらか一方でいいのでは？」と思われそうですが、役割を分けると意外と相性がいいです。この記事では、2つをどう協調させているかを紹介します。\n\n なぜ2つ使うのか\nきっかけはシンプルで、それぞれ得意分野が違うと感じたからです。\n\n\nClaude Code: プロジェクト全体の把握...",
-      "category": "AI・技術",
-      "rss_category": "",
-      "image_url": ""
-    },
-    {
       "title": "ゴールデンデータセットを作ろうとして、自分のRAGが破綻していたことに気づいた",
       "url": "https://zenn.dev/cacel/articles/e815eec5c8fc46",
       "site": "Zenn(LLM)",
       "published": "2026-07-08T07:31:35Z",
       "description": "前回のあらすじ\n前回の記事で、RAG評価の成熟度モデルを整理して自分のRAGを判定した。結果はL1だった。\n今回はL2に上がるための最初のステップ、ゴールデンデータセットの構築に取りかかった話を書く。\n結論から言うと、データセットを作る前に自分のRAGが破綻していたことに気づいた。\n\n\n 計画: 100問のゴールデンデータセットを作る\nL2の条件の1つは「独立したゴールデンデータセット」を持ってい...",
-      "category": "AI・技術",
-      "rss_category": "",
-      "image_url": ""
-    },
-    {
-      "title": "\"解体してみないと分からない、を契約前に少しだけ減らす ── 過去の似た物件だけから、伝えるべきことを取り出す道具\"",
-      "url": "https://zenn.dev/hiroshift/articles/fe14c64209f6fc",
-      "site": "Zenn(LLM)",
-      "published": "2026-07-08T07:28:05Z",
-      "description": "この記事は、架空のリフォーム会社「ひまわり住宅リフォーム」を舞台にした公然のシナリオです。登場する会社・人物・データはすべて架空です。画面のUIは実際に動きますが、AIの読み取りは「こう出る」という例（本番はその場で過去の物件・追加工事データを読み取ります・見逃しも誤りもあり得ます・最終確認は人）。\"ありそうな困りごと\"に小さな道具を一つ作る連載の、19日目です。\n\n\n\n はじめに\n「『あの人しか...",
-      "category": "AI・技術",
-      "rss_category": "",
-      "image_url": ""
-    },
-    {
-      "title": "【SALT2 エンジニアリング勉強会】AIエージェントにおけるループ設計を考える",
-      "url": "https://zenn.dev/salt2/articles/salt2-ai-b1a19290",
-      "site": "Zenn(LLM)",
-      "published": "2026-07-08T07:11:26Z",
-      "description": "2026年6月30日、SALT2では特別編として「AIエージェント勉強会 with 鬼澤さん」を開催した。今回の勉強会では、鬼澤さんを交えながら、従来のワークフロー型の自動化と AI エージェントの違い、エージェントを実装するうえで必要になる設計要素、そして実務に導入する際の考え方について議論した。\nここで扱うエージェントは、チャットで答えるAIではない。ゴールを受け取り、状態を見て、ツールを使い...",
       "category": "AI・技術",
       "rss_category": "",
       "image_url": ""
@@ -94,31 +184,11 @@
       "image_url": ""
     },
     {
-      "title": "Claude codeと論文書いたら良い論文“は”できた",
-      "url": "https://zenn.dev/mkj/articles/cco-paper_20260531",
-      "site": "Zenn(LLM)",
-      "published": "2026-07-08T02:50:05Z",
-      "description": "こんにちは，松尾研究所の尾崎です．25卒でデータサイエンティストをやっています．\n皆さん，CLI Agent使いこなせてますか？\n自分はClaude CodeをオーケストレーターとしてCodex CLI・Gemini CLI・Opusサブエージェントを協調させる開発環境Claude Code Orchestraを作ってきましたし，最近は自分のObsidian vaultを複数エージェントで回すCl...",
-      "category": "AI・技術",
-      "rss_category": "",
-      "image_url": ""
-    },
-    {
       "title": "LLMアプリの「どこで遅くなり、どこで壊れ、いくら使ったか」をOpenTelemetryで追う",
       "url": "https://zenn.dev/fsgesaiyo/articles/a7b3fcca06812a",
       "site": "Zenn(LLM)",
       "published": "2026-07-08T02:30:48Z",
       "description": "はじめに\nLLMアプリは、普通のWeb APIよりも失敗原因が見えにくいです。\nAPIとしては200で返っている。\nでも、出力が遅い。\nなぜか回答が長い。\nたまにガードレールで止まる。\nモデルを変えたらコストが増えた気がする。\nプロンプトを変えたら品質が落ちた気がする。\nこういう状態になると、ログだけでは追いきれません。\nLLMアプリで本当に見たいのは、単なるリクエストログではなく、処理の内訳です...",
-      "category": "AI・技術",
-      "rss_category": "",
-      "image_url": ""
-    },
-    {
-      "title": "最小構成のRAG——沈んだ正解をRerankですくう",
-      "url": "https://zenn.dev/minuslist/articles/minimum-rag-rerank",
-      "site": "Zenn(LLM)",
-      "published": "2026-07-07T23:45:05Z",
-      "description": "Takeaways\n\nprecision@k ＝正解チャンクは index にあるのに k の下に沈む失敗。rerank は「多めに引いて → 読み直して採点 → 上位だけ残す」で dense #13 を #2 に引き上げ、\"情報がない\" を引用付きの答えに変えた。\nrerank の価値は corpus が密なほど大きい——効果を測るには eval が要る。\n\n\n前回の記事（最小構成のRAG実装例...",
       "category": "AI・技術",
       "rss_category": "",
       "image_url": ""
