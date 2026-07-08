@@ -1,7 +1,7 @@
 {
   "site": "Zenn(LLM)",
-  "last_updated": "2026-07-08T18:42:23.345022",
-  "total_articles": 4440,
+  "last_updated": "2026-07-08T20:12:51.397427",
+  "total_articles": 4445,
   "articles": [
     {
       "title": "コンテキストの配置順序を5パターン試したら、意味順が最悪の1つだと分かった",
@@ -34,11 +34,51 @@
       "image_url": ""
     },
     {
+      "title": "Fable 5の利用量を抑えて、Fable 5の効果を最大限引き出すハーネスを作ってみた",
+      "url": "https://zenn.dev/emuni/articles/f18bbe0d598719",
+      "site": "Zenn(LLM)",
+      "published": "2026-07-08T08:00:06Z",
+      "description": "こんにちは、株式会社エムニの宮木です。Fable 5 が復活して従量課金の提供形態に移行する前に、Fable 5 の利用量をなるべく抑えつつ、Fable 5 と同等の品質でコーディングできるハーネスを設計できないか、実際に作って検証したので今回はその紹介です。\n\n TL;DR\n\nFable 5 (Opus の 2 倍単価) をフェーズの起動と進行判定だけを行う薄い指揮層に限定し、トークンの重い作業...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "Claude Code と Codexを混ぜたら強かった",
+      "url": "https://zenn.dev/arufian/articles/24e6506d24775b",
+      "site": "Zenn(LLM)",
+      "published": "2026-07-08T07:59:56Z",
+      "description": "はじめに\n最近、Claude Code と OpenAI の Codex CLI を1つのプロジェクトで併用しています。「どちらか一方でいいのでは？」と思われそうですが、役割を分けると意外と相性がいいです。この記事では、2つをどう協調させているかを紹介します。\n\n なぜ2つ使うのか\nきっかけはシンプルで、それぞれ得意分野が違うと感じたからです。\n\n\nClaude Code: プロジェクト全体の把握...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
       "title": "ゴールデンデータセットを作ろうとして、自分のRAGが破綻していたことに気づいた",
       "url": "https://zenn.dev/cacel/articles/e815eec5c8fc46",
       "site": "Zenn(LLM)",
       "published": "2026-07-08T07:31:35Z",
       "description": "前回のあらすじ\n前回の記事で、RAG評価の成熟度モデルを整理して自分のRAGを判定した。結果はL1だった。\n今回はL2に上がるための最初のステップ、ゴールデンデータセットの構築に取りかかった話を書く。\n結論から言うと、データセットを作る前に自分のRAGが破綻していたことに気づいた。\n\n\n 計画: 100問のゴールデンデータセットを作る\nL2の条件の1つは「独立したゴールデンデータセット」を持ってい...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "\"解体してみないと分からない、を契約前に少しだけ減らす ── 過去の似た物件だけから、伝えるべきことを取り出す道具\"",
+      "url": "https://zenn.dev/hiroshift/articles/fe14c64209f6fc",
+      "site": "Zenn(LLM)",
+      "published": "2026-07-08T07:28:05Z",
+      "description": "この記事は、架空のリフォーム会社「ひまわり住宅リフォーム」を舞台にした公然のシナリオです。登場する会社・人物・データはすべて架空です。画面のUIは実際に動きますが、AIの読み取りは「こう出る」という例（本番はその場で過去の物件・追加工事データを読み取ります・見逃しも誤りもあり得ます・最終確認は人）。\"ありそうな困りごと\"に小さな道具を一つ作る連載の、19日目です。\n\n\n\n はじめに\n「『あの人しか...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "【SALT2 エンジニアリング勉強会】AIエージェントにおけるループ設計を考える",
+      "url": "https://zenn.dev/salt2/articles/salt2-ai-b1a19290",
+      "site": "Zenn(LLM)",
+      "published": "2026-07-08T07:11:26Z",
+      "description": "2026年6月30日、SALT2では特別編として「AIエージェント勉強会 with 鬼澤さん」を開催した。今回の勉強会では、鬼澤さんを交えながら、従来のワークフロー型の自動化と AI エージェントの違い、エージェントを実装するうえで必要になる設計要素、そして実務に導入する際の考え方について議論した。\nここで扱うエージェントは、チャットで答えるAIではない。ゴールを受け取り、状態を見て、ツールを使い...",
       "category": "AI・技術",
       "rss_category": "",
       "image_url": ""
@@ -79,6 +119,16 @@
       "site": "Zenn(LLM)",
       "published": "2026-07-07T23:45:05Z",
       "description": "Takeaways\n\nprecision@k ＝正解チャンクは index にあるのに k の下に沈む失敗。rerank は「多めに引いて → 読み直して採点 → 上位だけ残す」で dense #13 を #2 に引き上げ、\"情報がない\" を引用付きの答えに変えた。\nrerank の価値は corpus が密なほど大きい——効果を測るには eval が要る。\n\n\n前回の記事（最小構成のRAG実装例...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "AIは格言を捏造する——人間の検品に、同じ日に2回捕まった話",
+      "url": "https://zenn.dev/idonthaveapen/articles/ai-fabricates-maxims-caught-twice",
+      "site": "Zenn(LLM)",
+      "published": "2026-07-07T23:00:09Z",
+      "description": "前回のPieter Levelsの記事の末尾に、こう書きました。「それらしい格言をでっち上げる」「要約の言い換えを本人の発言のように鍵括弧で書く」といったAI特有の粗が、公開前の検品で実際に数カ所見つかった、と。\nこの記事はその中身の話です。同じ型のミスが同じ日に2回出て、2回とも人間の目で捕まえました。何が起きたか、なぜ起きるか、どう防ぐかを実録で書きます。\n\n 実録：検品の瞬間\n前回の記事の下...",
       "category": "AI・技術",
       "rss_category": "",
       "image_url": ""
