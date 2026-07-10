@@ -1,8 +1,108 @@
 {
   "site": "Zenn(LLM)",
-  "last_updated": "2026-07-10T08:37:25.118850",
-  "total_articles": 4483,
+  "last_updated": "2026-07-10T11:33:01.297391",
+  "total_articles": 4492,
   "articles": [
+    {
+      "title": "GPT-5.6で作る3ティア実行計画の選び方",
+      "url": "https://zenn.dev/hironakamura_ai/articles/173d209de4ebc6",
+      "site": "Zenn(LLM)",
+      "published": "2026-07-10T06:52:33Z",
+      "description": "07-09にOpenAIがGPT-5.6を一般公開した。Sol、Terra、Lunaの3ティアで、価格は100万トークンあたりSolが入力5ドル、出力30ドル。Terraが入力2.50ドル、出力15ドル。Lunaが入力1ドル、出力6ドル。\n今回の発表で大事なのは、「一番強いモデルはどれか」より「どの段階で計算予算を上げるか」だと思う。入口はLunaかTerraで受ける。ツール結果はProgramm...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "エージェントのWeb取得、ツール次第でトークンが5000倍違った話",
+      "url": "https://zenn.dev/rererr_engineer/articles/e571e5b6eb1d53",
+      "site": "Zenn(LLM)",
+      "published": "2026-07-10T04:01:19Z",
+      "description": "TL;DR\n\nコーディングエージェント用のWeb取得ツール5つ（自作の amenbo / MCP公式 fetch / Jina Reader / Playwright MCP / 話題の PixelRAG(pixelshot)）を、日本語の実URL 7本（技術記事・Wikipedia・Shift_JISサイト・官公庁・PDF・CSV・ボット遮断サイト）で比較した\n3.9MBのCSVに対し、Jina...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "チャットに常駐するAIエージェントを設計するときに考えた5つのこと",
+      "url": "https://zenn.dev/hach/articles/chat-jouchu-ai-agent-sekkei",
+      "site": "Zenn(LLM)",
+      "published": "2026-07-10T03:21:57Z",
+      "description": "「Slackに招待するだけで働くAI」を作る、という要件は一見シンプルですが、実装に入ると設計判断の連続でした。この記事では、常駐型AIエージェントを設計する上で悩んだポイントと、その判断理由を共有します。同種のものを作る人の参考になれば幸いです。\n\n 前提: 「呼ばれたら答えるbot」との違い\nチャットbotの多くはリクエスト駆動です。メンションされたらLLMを呼び、結果を返す。これはステートレ...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "Grok4.5「1/10コスト」の実態を数字で検証する",
+      "url": "https://zenn.dev/ryuka_lucas/articles/grok45-cursor-cost-performance",
+      "site": "Zenn(LLM)",
+      "published": "2026-07-10T02:49:35Z",
+      "description": "2026年7月8日、AIコーディングエディタのCursorが、xAI（イーロン・マスク氏のAI企業）と提携してGrok 4.5を統合した。全プラン・デスクトップ/Web/iOS/CLI/SDKで即日利用でき、標準搭載されている。発表直後から「AnthropicのAIモデルFable 5（AnthropicのAIコーディングツールClaude Codeで使われるモデル）に迫る性能を1/10のコストで...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "IGRPO: 情報量ゲイン駆動木構造RolloutでLLM Agentの探索効率を最大化する",
+      "url": "https://zenn.dev/lixian/articles/igrpo-information-gain-rollout-policy",
+      "site": "Zenn(LLM)",
+      "published": "2026-07-10T02:09:54Z",
+      "description": "TL;DR\nLLM Agentが長ホライズンの検索タスクを解く際、中間状態ごとの情報量（Information Gain）に応じてRollout予算を適応的に配分するフレームワーク IGRPO を提案。情報量の高い探索分岐を優先的に拡張し、低情報量の分岐を漸進的に抑制する木構造Rolloutにより、計算資源の無駄を大幅に削減。理論的にRollout過程が教師分布 \\mu_\\theta \\propt...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "検閲のない非公式LLM APIは経済的に実現するのか",
+      "url": "https://zenn.dev/t_tokunaga/articles/2026-07-10-unofficial-uncensored-llm-api-economics",
+      "site": "Zenn(LLM)",
+      "published": "2026-07-10T01:16:41Z",
+      "description": "はじめに\n「検閲のないLLM」「uncensored AI」「no-refusal model」を掲げる非公式サービスは、公開重みモデルの普及とともに作りやすくなっています。前の記事では、高性能な公開重みモデルが増えるほど、拒否傾向を弱めた派生モデルと、そのAPI提供が地下・半地下インフラとして現れ得る構造的条件も強まると考えました。\nこの記事でいう検閲のない非公式LLM APIとは、モデル開発元...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "社内のAI活用知見を共有しやすくできないか？ AIコンテストでClaude CodeのSkillを試作した",
+      "url": "https://zenn.dev/finatext/articles/2afa698ea07073",
+      "site": "Zenn(LLM)",
+      "published": "2026-07-10T01:00:16Z",
+      "description": "!\nこの記事は、デブサミ夏カウントダウンブログリレー2026に参加しています。当社ブースで 「テックブログを見て来ました！」 とお伝えいただいた方には、もれなくFinatextグループのテックブック（物理本）を差し上げます！\n👇️Developers Summit 2026 Summer 事前登録はこちらから（7/13 13:00締切）\nhttps://event.shoeisha.jp/devs...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "Ollama 0.31.1、Apple SiliconでGemma 4が約9割速くなったMTPの正体",
+      "url": "https://zenn.dev/okssusucha/articles/20260703-ollama-0311-gemma4-mtp-apple-silicon",
+      "site": "Zenn(LLM)",
+      "published": "2026-07-10T00:41:46Z",
+      "description": "ローカルでLLMを動かしていて一番こたえるのは、モデルの賢さよりも待ち時間だ。Macでそこそこの大きさのモデルを走らせると、トークンが一文字ずつポツポツ出てくる速度が頭打ちになり、エージェントに長い作業を任せるほど体感が悪くなる。ここを設定ゼロで縮めたのが、6月30日に出た Ollama v0.31.1 だ。派手な新モデルの発表ではないので日本語ではまだほとんど話題になっていないが、Apple S...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "AI の記憶にも雑草は生える——こまめな手入れが要る",
+      "url": "https://zenn.dev/kanfupanda/articles/ai-memory-grows-weeds",
+      "site": "Zenn(LLM)",
+      "published": "2026-07-09T23:39:13Z",
+      "description": "!\nこの記事は個人ブログにも掲載しています → https://kanfu-panda.github.io/ja/blog/2026/07/08/ai-memory-grows-weeds.html\n\n\n\n前回は、AI に記憶の仕組みをどう構築するかを話しました。ですが構築は始まりにすぎません——プロジェクトが長引くほど AI の記憶は積み上がり、手入れを怠ると、そこに静かに「雑草」が生えてきます...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "検閲のない非公式LLM APIについて考えてみた",
+      "url": "https://zenn.dev/t_tokunaga/articles/2026-07-10-open-weight-llm-low-guard-api-risk",
+      "site": "Zenn(LLM)",
+      "published": "2026-07-09T22:32:25Z",
+      "description": "はじめに\n「検閲のないLLM」や「uncensored API」をうたう非公式サービスは、今後どこまで広がり、どの程度残り続けるのでしょうか。\nこの記事を書く直接のきっかけは、Claude CodeでClaude Fable 5を使い、自分の個人プロジェクトに対してセキュリティレビューを実行した経験です。\nClaude Codeには、プロジェクト内で/security-reviewを実行すると、コ...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
     {
       "title": "ユーザー役のLLMを変えたら、エージェントの性能差が消えた — τ²-benchで実測",
       "url": "https://zenn.dev/takkuhiro/articles/tau2-bench-user-simulator",
@@ -89,16 +189,6 @@
       "site": "Zenn(LLM)",
       "published": "2026-07-09T13:31:05Z",
       "description": "この記事は、架空の地域プロバイダ「みなと通信」を舞台にした公然のシナリオです。登場する会社・人物・データ等はすべて架空です。画面のUIは実際に動きますが、AIの読み取りは「こう出る」という例（本番はその場で受付フォームの内容を読み取ります・見逃しも誤りもあり得ます・最終確認は人）。\"ありそうな困りごと\"に小さな道具を一つ作る連載の、21日目です。\n\n\n\n はじめに\n「『あの人しかできない』を、ほど...",
-      "category": "AI・技術",
-      "rss_category": "",
-      "image_url": ""
-    },
-    {
-      "title": "91kスターのTradingAgentsを読む。「AIが議論して売買判断」の実装の正体",
-      "url": "https://zenn.dev/mskbhd/articles/lab-035-tradingagents",
-      "site": "Zenn(LLM)",
-      "published": "2026-07-09T12:32:49Z",
-      "description": "きっかけ\n「TradingAgents が 91K stars」というポストが流れてきた。LLM のマルチエージェントが金融トレードの意思決定をするフレームワークで、アナリスト・リサーチャー・トレーダー・リスク管理がそれぞれ独立したエージェントとして「議論」するという触れ込み。\nhttps://github.com/TauricResearch/TradingAgents\nスター数は GitHub...",
       "category": "AI・技術",
       "rss_category": "",
       "image_url": ""
