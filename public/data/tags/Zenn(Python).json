@@ -1,14 +1,34 @@
 {
   "site": "Zenn(Python)",
-  "last_updated": "2026-07-10T17:59:16.287769",
-  "total_articles": 5012,
+  "last_updated": "2026-07-10T19:46:39.552937",
+  "total_articles": 5015,
   "articles": [
     {
-      "title": "Loop Engineeringで失敗しないためのハーネス設計",
-      "url": "https://zenn.dev/kamo78/articles/kaji-guarded-loop-engineering",
+      "title": "GMOコインFX APIのレートリミット(POST 1回/秒)をクライアント側で強制する設計",
+      "url": "https://zenn.dev/ozapon/articles/gmo-fx-rate-limiter",
       "site": "Zenn(Python)",
-      "published": "2026-07-10T09:09:43Z",
-      "description": "「動きました！」（動いてない）\n「全テストパスしました！」（通るように書いたテストが、通っただけ）\n「完了しました ✅」（何も完了していない）\nAI coding agent を業務で使っている人なら、どれか一つは見覚えがあるはずです。私は全部、見覚えがあります。これは個人の体験談だけの話でもありません。\nClaude Code の現行ドキュメントでも、CLAUDE.md / AGENTS.md ...",
+      "published": "2026-07-10T12:38:26Z",
+      "description": "TL;DR\n\nGMOコインFX の Private API には呼び出し上限(POST 1回/秒・GET 6回/秒)があります。これをサーバに弾かれてから対処するのではなく、クライアント側で送信前に強制する RateLimiter を設計しました\nポイントは3つ。クールダウンの起点を「送信時刻」ではなく「応答受信後」に置く、in-flight の POST がある間は後続を通さない、タイムアウト時...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "個人開発の英単語アプリを作り直した(1) — ReactもVueも使わない技術選定",
+      "url": "https://zenn.dev/ryo_engineer/articles/language-learn-app-1-architecture-2026-07-09",
+      "site": "Zenn(Python)",
+      "published": "2026-07-10T11:22:40Z",
+      "description": "自分用に作っていた英単語の学習アプリ(language_learn_app)を、作り直しました。\nhttps://github.com/RYO0115/language_learn_app\n\nせっかくなので、その作成記録を技術記事として3部作でまとめてみます。\n\n\n(1) 全体像と技術選定 ← この記事\n(2) AIプロバイダの抽象化(Claude / Gemini を設定だけで差し替える)\n(3...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "有名エンジニア10人のプロフィールREADMEを解剖したら7系統に分かれた",
+      "url": "https://zenn.dev/kenimo49/articles/github-profile-readme-10-engineers-7-types",
+      "site": "Zenn(Python)",
+      "published": "2026-07-10T11:03:12Z",
+      "description": "GitHubの一等地、空き地のままにしていませんか\nGitHubには「ユーザー名と同名のパブリックリポジトリ」という特殊な置き場があります。ここにREADME.mdを置くと、プロフィールページの最上部に表示されます。2020年に追加された機能で、プロフィールを開いた人が最初に目にする場所です。いわば一等地です。\n私はこの一等地をずっと空き地のままにしていました。きっかけは、私をフォローしてきた海外...",
       "category": "開発",
       "rss_category": "",
       "image_url": ""
@@ -44,6 +64,16 @@
       "image_url": ""
     },
     {
+      "title": "ユーザー役のLLMを変えたら、エージェントの性能差が消えた — τ²-benchで実測",
+      "url": "https://zenn.dev/takkuhiro/articles/tau2-bench-user-simulator",
+      "site": "Zenn(Python)",
+      "published": "2026-07-09T22:00:08Z",
+      "description": "はじめに\nLLMエージェントのベンチマークでは、相手役の「顧客」もLLMが演じるのが一般的です。エージェントの性能を測っているつもりでも、会話の半分はユーザー役のLLM（ユーザーシミュレータ）が作っている。では、そのユーザー役はどこまでスコアに関与するのでしょうか。\nこのテーマを調べようと思ったきっかけは、前回の記事にあります。τ²-benchというカスタマーサポート型のベンチマークでpass^k...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
       "title": "107種類のファイルを1つのAPIで構造化 — The Drive AI 開発者プラットフォームを試してみた",
       "url": "https://zenn.dev/bigyan/articles/e47c87fdec3f3a",
       "site": "Zenn(Python)",
@@ -64,11 +94,11 @@
       "image_url": ""
     },
     {
-      "title": "e-Gov(法律＋政令＋省令3点セット)をAIに読ませたい",
+      "title": "e-Gov(法律＋施行令＋施行規則3点セット)をAIに読ませたい",
       "url": "https://zenn.dev/cyantake/articles/eabf212c831b26",
       "site": "Zenn(Python)",
       "published": "2026-07-09T13:56:49Z",
-      "description": "e-Gov(法律＋政令＋省令3点セット)をAIに読ませたい\n\n法令の別表は結合セルだらけで、Markdownのパイプ表に落とすと情報が消える\n\n表を「行」ではなく「1行完結のエントリ」に展開したら、LLMが読み違えなくなった\ne-Gov法令XMLを変換するツールを書いた → hourei-md\n\n使用法令は\"船舶職員及び小型船舶操縦者法\"\n担当法令の\"別表\"\"準用\"\"読み替え\"をAIに読ませたい人...",
+      "description": "e-Gov(法律＋施行令＋施行規則3点セット)をAIに読ませたい\n\n法令の別表は結合セルだらけで、Markdownのパイプ表に落とすと情報が消える\n\n表を「行」ではなく「1行完結のエントリ」に展開したら、LLMが読み違えなくなった\ne-Gov法令XMLを変換するツールを書いた → hourei-md\n\n使用法令は\"船舶職員及び小型船舶操縦者法\"\n担当法令の\"別表\"\"準用\"\"読み替え\"をAIに読ませ...",
       "category": "開発",
       "rss_category": "",
       "image_url": ""
