@@ -1,6 +1,6 @@
 {
   "site": "Zenn(LLM)",
-  "last_updated": "2026-07-10T16:03:34.160536",
+  "last_updated": "2026-07-10T17:59:16.287769",
   "total_articles": 4499,
   "articles": [
     {
@@ -104,31 +104,21 @@
       "image_url": ""
     },
     {
-      "title": "「プロンプトを打つ」から「ループを設計する」へ",
-      "url": "https://zenn.dev/nenene01/articles/loop-engineering-claude-code",
-      "site": "Zenn(LLM)",
-      "published": "2026-07-10T07:16:41Z",
-      "description": "はじめに\n2026年6月30日にAnthropicより公式ガイドGetting started with loops(ループ入門)の公開がありました。\n最近は「Loop Engineering（ループエンジニアリング）」という呼び名が広がりつつあります。\n「エージェントに委ねるためのゴール・制約・完了条件・検証方法を明示する役割へ変わっていく」と捉えております。\nループエンジニアリングについて記事...",
-      "category": "AI・技術",
-      "rss_category": "",
-      "image_url": ""
-    },
-    {
-      "title": "Claude Codeのループが回らないのは、プロンプトではなく完了条件の問題だった",
-      "url": "https://zenn.dev/gemcook/articles/467b1233efe811",
-      "site": "Zenn(LLM)",
-      "published": "2026-07-10T06:25:33Z",
-      "description": "はじめに\n先日、Claude Codeに自律作業を任せてログを見返していたら、ぞっとする光景がありました。ターン終了をブロックするhookが、2分間に同じフィードバックを6連発していたんです。Claude Codeは毎回「修正しました」と言い、hookは毎回同じ理由で差し戻し、リポジトリの状態は1バイトも変わっていない。完全な無限ループでした。\nこんな経験ありませんか？\n\n自律ループを組んだのに、...",
-      "category": "AI・技術",
-      "rss_category": "",
-      "image_url": ""
-    },
-    {
       "title": "エージェントのWeb取得、ツール次第でトークンが5000倍違った話",
       "url": "https://zenn.dev/rererr_engineer/articles/e571e5b6eb1d53",
       "site": "Zenn(LLM)",
       "published": "2026-07-10T04:01:19Z",
       "description": "TL;DR\n\nコーディングエージェント用のWeb取得ツール5つ（自作の amenbo / MCP公式 fetch / Jina Reader / Playwright MCP / 話題の PixelRAG(pixelshot)）を、日本語の実URL 7本（技術記事・Wikipedia・Shift_JISサイト・官公庁・PDF・CSV・ボット遮断サイト）で比較した\n3.9MBのCSVに対し、Jina...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "チャットに常駐するAIエージェントを設計するときに考えた5つのこと",
+      "url": "https://zenn.dev/hach/articles/chat-jouchu-ai-agent-sekkei",
+      "site": "Zenn(LLM)",
+      "published": "2026-07-10T03:21:57Z",
+      "description": "「Slackに招待するだけで働くAI」を作る、という要件は一見シンプルですが、実装に入ると設計判断の連続でした。この記事では、常駐型AIエージェントを設計する上で悩んだポイントと、その判断理由を共有します。同種のものを作る人の参考になれば幸いです。\n\n 前提: 「呼ばれたら答えるbot」との違い\nチャットbotの多くはリクエスト駆動です。メンションされたらLLMを呼び、結果を返す。これはステートレ...",
       "category": "AI・技術",
       "rss_category": "",
       "image_url": ""
@@ -179,6 +169,16 @@
       "site": "Zenn(LLM)",
       "published": "2026-07-09T22:32:25Z",
       "description": "はじめに\n「検閲のないLLM」や「uncensored API」をうたう非公式サービスは、今後どこまで広がり、どの程度残り続けるのでしょうか。\nこの記事を書く直接のきっかけは、Claude CodeでClaude Fable 5を使い、自分の個人プロジェクトに対してセキュリティレビューを実行した経験です。\nClaude Codeには、プロジェクト内で/security-reviewを実行すると、コ...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "ユーザー役のLLMを変えたら、エージェントの性能差が消えた — τ²-benchで実測",
+      "url": "https://zenn.dev/takkuhiro/articles/tau2-bench-user-simulator",
+      "site": "Zenn(LLM)",
+      "published": "2026-07-09T22:00:08Z",
+      "description": "はじめに\nLLMエージェントのベンチマークでは、相手役の「顧客」もLLMが演じるのが一般的です。エージェントの性能を測っているつもりでも、会話の半分はユーザー役のLLM（ユーザーシミュレータ）が作っている。では、そのユーザー役はどこまでスコアに関与するのでしょうか。\nこのテーマを調べようと思ったきっかけは、前回の記事にあります。τ²-benchというカスタマーサポート型のベンチマークでpass^k...",
       "category": "AI・技術",
       "rss_category": "",
       "image_url": ""
