@@ -1,8 +1,98 @@
 {
   "site": "Zenn(LLM)",
-  "last_updated": "2026-07-10T13:33:18.468691",
-  "total_articles": 4490,
+  "last_updated": "2026-07-10T16:03:34.160536",
+  "total_articles": 4499,
   "articles": [
+    {
+      "title": "Fable 5×Sonnet 5の役割分担は単一モデルに勝てるのか？品質とコストを実測する",
+      "url": "https://zenn.dev/livingston/articles/a4acbb0ca31b28",
+      "site": "Zenn(LLM)",
+      "published": "2026-07-10T15:00:08Z",
+      "description": "はじめに\nマルチエージェント構成を組むとき、よく迷うことがあります。「賢いモデルに全部やらせるべきか、役割で分けるべきか」。\nこの記事では、Claude Fable 5（高価・高性能）とClaude Sonnet 5（安価・高速）を役割の階層で組み合わせた4構成を、正解データ付きの2タスク（日本語NLI・レシート抽出）で同一データ・同一プロンプト骨格のもと比較し、役割分担が品質×コストの面で割に合...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "AIを「利用する」と「依存する」の違いは何か？",
+      "url": "https://zenn.dev/pdfractal/articles/27c838453dc1be",
+      "site": "Zenn(LLM)",
+      "published": "2026-07-10T13:24:46Z",
+      "description": "はじめに\nAIを「利用する」と言う場合と、AIに「依存する」と言う場合の違いは、一見すると簡単に説明できるように見えます。AIがあれば便利にできるなら利用であり、AIがなければうまくできないなら依存である、という整理です。この説明は直感的には分かりやすいものです。しかし、少し考えると、この区別はすぐに崩れます。\nたとえば私たちは毎日、水道を利用して風呂に入り、洗濯をし、料理をし、トイレを流していま...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "Claude CodeとKaggle(Spaceship Titanic)を2日間解いてみた話",
+      "url": "https://zenn.dev/ce_zakki/articles/8b0433a4a19ff8",
+      "site": "Zenn(LLM)",
+      "published": "2026-07-10T13:15:07Z",
+      "description": "!\nこの記事自体のドラフトも、Claude Codeを使って書いています。実際の作業ログ（gitのコミット履歴・実験記録）をもとに生成した上で、数値や経緯に誤りがないか自分で確認し、感想部分は自分の言葉に直して公開しています。\n\n\n 概要\nClaude Codeを使って、Kaggleの練習用コンペ「Spaceship Titanic」を丸2日間ほぼ自律的に進めてみました。まず、評価指標・CV戦略・...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "Claude Codeの3モデルになぞかけを10本ずつ作らせたら、実力差は「掛詞の深さ」に出た",
+      "url": "https://zenn.dev/tottoko_hamu/articles/2026-07-06-214308",
+      "site": "Zenn(LLM)",
+      "published": "2026-07-10T12:24:36Z",
+      "description": "この記事の実験記録（2026年7月）: Claude Code から Fable・Opus・Sonnet の3モデルに、同一プロンプト・同一お題「手紙」で「なぞかけを10本作って自己採点し、ベストを1本選べ」と指示した。3モデルで計30本のなぞかけが出力され、各モデルが自己棄却・自己減点したものも含めて全て記録に残っている。\n\n\n なぜAIになぞかけを競わせようと思ったか\n「謎かけもsonnetや...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "Codexに\"夜勤\"をさせる——自律AIエージェントを製品運用レベルにする管理平面の設計",
+      "url": "https://zenn.dev/boutiquehack/articles/codex-night-shift-control-plane",
+      "site": "Zenn(LLM)",
+      "published": "2026-07-10T12:12:24Z",
+      "description": "codex exec や Claude Code の自律実行は、かなり優秀です。\nある程度まとまった指示を渡せば、調査し、実装し、テストし、差分を説明してくれます。小さなタスクなら、人間が横に張り付いて一行ずつ指示するより速いことも珍しくありません。\n一方で、そのまま「夜のあいだ任せる」には足りませんでした。\n問題はモデルの賢さではありません。足りなかったのは、雇用契約です。\nこの記事では、Her...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "全テストgreenのまま、本番だけが死んだ——AIエージェントに書かせたコードの2つの盲点",
+      "url": "https://zenn.dev/boutiquehack/articles/ai-agent-tests-green-prod-down",
+      "site": "Zenn(LLM)",
+      "published": "2026-07-10T12:12:23Z",
+      "description": "AI エージェントにコードを書かせるとき、最後に「テストも追加して」と頼むことは多いと思います。\nそして、テストが全部 green になると安心します。\nしかし今回、Hermess Autopilot の SQLite 移行で、全テスト green のまま本番だけが壊れました。しかも 1 回ではなく、別々の性質を持つ 2 つの盲点を踏みました。\n結論から言うと、AI エージェントにテストを書かせる...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "DGX Spark (GB10) でローカルLLMを7本ベンチマークした【2026年7月】",
+      "url": "https://zenn.dev/phpmyadmin/articles/f243076e9ec1fe",
+      "site": "Zenn(LLM)",
+      "published": "2026-07-10T11:23:33Z",
+      "description": "NVIDIA DGX Spark(MSI EdgeXpert、GB10 / ユニファイドメモリ128GB)を入手したので、2026年7月時点の最新オープンウェイトLLMを一通り動かしてベンチマークしました。「128GBで何がどこまで動くか」の参考に。\n\n 環境\n\n\n\n項目\n値\n\n\n\n\nマシン\nMSI EdgeXpert(NVIDIA DGX Spark)\n\n\nSoC\nNVIDIA GB10(Gra...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "Claude Codeを司令塔に、Codex CLIをレビュー艦隊として並列運用する",
+      "url": "https://zenn.dev/417/articles/masakazu-claude-code-codex-fleet-20260710",
+      "site": "Zenn(LLM)",
+      "published": "2026-07-10T10:19:02Z",
+      "description": "TL;DR\n\nClaude Code（実装・裁定役）と Codex CLI（調査・レビュー役）を分業させると、1人開発でも「実装者とは独立したレビュアーが複数いる」状態を作れる\n鍵は codex exec のヘッドレス実行。--sandbox read-only + --output-last-message でレビュー結果をファイルに落とし、resume で文脈を保ったまま何ラウンドでも差分レビ...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "# ローカルLLMで無料IT問題演習サービスを作った話（CCNP/LPIC/IPA対応・音声再生あり）",
+      "url": "https://zenn.dev/sorapenguin/articles/598d6bed47156c",
+      "site": "Zenn(LLM)",
+      "published": "2026-07-10T10:12:22Z",
+      "description": "はじめに\ntech-lab（https://tech-lab.sorapenguin.dev）は、CCNP ENARSI・LPIC・Javaなどのスキルアップ向け問題演習を無料で使えるWebサービスです。\n主な特徴：\n\n無料・ゲスト利用可能\n音声読み上げ・自動再生対応（ながら学習ができる）\n前回から時間が経った問題だけ出す絞り込み機能\nXP・レベル・スタミナのゲーミフィケーション\n問題は継続的に追...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
     {
       "title": "BunはZig 53万行をどう11日でRustに書き換えたのか。64並列Claude Codeの事例から学べたこと、まだ真似できないこと",
       "url": "https://zenn.dev/assign/articles/bun-rust-rewrite-harness-engineering",
@@ -14,21 +104,31 @@
       "image_url": ""
     },
     {
-      "title": "エージェントのWeb取得、ツール次第でトークンが5000倍違った話",
-      "url": "https://zenn.dev/rererr_engineer/articles/e571e5b6eb1d53",
+      "title": "「プロンプトを打つ」から「ループを設計する」へ",
+      "url": "https://zenn.dev/nenene01/articles/loop-engineering-claude-code",
       "site": "Zenn(LLM)",
-      "published": "2026-07-10T04:01:19Z",
-      "description": "TL;DR\n\nコーディングエージェント用のWeb取得ツール5つ（自作の amenbo / MCP公式 fetch / Jina Reader / Playwright MCP / 話題の PixelRAG(pixelshot)）を、日本語の実URL 7本（技術記事・Wikipedia・Shift_JISサイト・官公庁・PDF・CSV・ボット遮断サイト）で比較した\n3.9MBのCSVに対し、Jina...",
+      "published": "2026-07-10T07:16:41Z",
+      "description": "はじめに\n2026年6月30日にAnthropicより公式ガイドGetting started with loops(ループ入門)の公開がありました。\n最近は「Loop Engineering（ループエンジニアリング）」という呼び名が広がりつつあります。\n「エージェントに委ねるためのゴール・制約・完了条件・検証方法を明示する役割へ変わっていく」と捉えております。\nループエンジニアリングについて記事...",
       "category": "AI・技術",
       "rss_category": "",
       "image_url": ""
     },
     {
-      "title": "チャットに常駐するAIエージェントを設計するときに考えた5つのこと",
-      "url": "https://zenn.dev/hach/articles/chat-jouchu-ai-agent-sekkei",
+      "title": "Claude Codeのループが回らないのは、プロンプトではなく完了条件の問題だった",
+      "url": "https://zenn.dev/gemcook/articles/467b1233efe811",
       "site": "Zenn(LLM)",
-      "published": "2026-07-10T03:21:57Z",
-      "description": "「Slackに招待するだけで働くAI」を作る、という要件は一見シンプルですが、実装に入ると設計判断の連続でした。この記事では、常駐型AIエージェントを設計する上で悩んだポイントと、その判断理由を共有します。同種のものを作る人の参考になれば幸いです。\n\n 前提: 「呼ばれたら答えるbot」との違い\nチャットbotの多くはリクエスト駆動です。メンションされたらLLMを呼び、結果を返す。これはステートレ...",
+      "published": "2026-07-10T06:25:33Z",
+      "description": "はじめに\n先日、Claude Codeに自律作業を任せてログを見返していたら、ぞっとする光景がありました。ターン終了をブロックするhookが、2分間に同じフィードバックを6連発していたんです。Claude Codeは毎回「修正しました」と言い、hookは毎回同じ理由で差し戻し、リポジトリの状態は1バイトも変わっていない。完全な無限ループでした。\nこんな経験ありませんか？\n\n自律ループを組んだのに、...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "エージェントのWeb取得、ツール次第でトークンが5000倍違った話",
+      "url": "https://zenn.dev/rererr_engineer/articles/e571e5b6eb1d53",
+      "site": "Zenn(LLM)",
+      "published": "2026-07-10T04:01:19Z",
+      "description": "TL;DR\n\nコーディングエージェント用のWeb取得ツール5つ（自作の amenbo / MCP公式 fetch / Jina Reader / Playwright MCP / 話題の PixelRAG(pixelshot)）を、日本語の実URL 7本（技術記事・Wikipedia・Shift_JISサイト・官公庁・PDF・CSV・ボット遮断サイト）で比較した\n3.9MBのCSVに対し、Jina...",
       "category": "AI・技術",
       "rss_category": "",
       "image_url": ""
@@ -79,16 +179,6 @@
       "site": "Zenn(LLM)",
       "published": "2026-07-09T22:32:25Z",
       "description": "はじめに\n「検閲のないLLM」や「uncensored API」をうたう非公式サービスは、今後どこまで広がり、どの程度残り続けるのでしょうか。\nこの記事を書く直接のきっかけは、Claude CodeでClaude Fable 5を使い、自分の個人プロジェクトに対してセキュリティレビューを実行した経験です。\nClaude Codeには、プロジェクト内で/security-reviewを実行すると、コ...",
-      "category": "AI・技術",
-      "rss_category": "",
-      "image_url": ""
-    },
-    {
-      "title": "ユーザー役のLLMを変えたら、エージェントの性能差が消えた — τ²-benchで実測",
-      "url": "https://zenn.dev/takkuhiro/articles/tau2-bench-user-simulator",
-      "site": "Zenn(LLM)",
-      "published": "2026-07-09T22:00:08Z",
-      "description": "はじめに\nLLMエージェントのベンチマークでは、相手役の「顧客」もLLMが演じるのが一般的です。エージェントの性能を測っているつもりでも、会話の半分はユーザー役のLLM（ユーザーシミュレータ）が作っている。では、そのユーザー役はどこまでスコアに関与するのでしょうか。\nこのテーマを調べようと思ったきっかけは、前回の記事にあります。τ²-benchというカスタマーサポート型のベンチマークでpass^k...",
       "category": "AI・技術",
       "rss_category": "",
       "image_url": ""

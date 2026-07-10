@@ -1,7 +1,7 @@
 {
   "site": "Zenn(AI)",
-  "last_updated": "2026-07-10T13:33:18.468691",
-  "total_articles": 10867,
+  "last_updated": "2026-07-10T16:03:34.160536",
+  "total_articles": 10871,
   "articles": [
     {
       "title": "Claude Code だけで Zenn 投稿パイプラインを整備した話",
@@ -19,16 +19,6 @@
       "site": "Zenn(AI)",
       "published": "2026-07-10T07:21:35Z",
       "description": "SALT2社内で、2026年7月2日にエンジニアリング勉強会を開催した。今回の登壇者は杉本さん。テーマは、AIコーディングを使って作ったものを、実際にデリバリーできる品質まで持っていくための土台である。\nAIコーディングで機能を作る速度はかなり上がった。画面を作る、APIを用意する、DBから値を取る。ここまでは短時間で進む。\nその一方で、デリバリーに近づくほど別の問題が出る。コードの置き場所が曖昧...",
-      "category": "AI・技術",
-      "rss_category": "",
-      "image_url": ""
-    },
-    {
-      "title": "「プロンプトを打つ」から「ループを設計する」へ",
-      "url": "https://zenn.dev/nenene01/articles/loop-engineering-claude-code",
-      "site": "Zenn(AI)",
-      "published": "2026-07-10T07:16:41Z",
-      "description": "はじめに\n2026年6月30日にAnthropicより公式ガイドGetting started with loops(ループ入門)の公開がありました。\n最近は「Loop Engineering（ループエンジニアリング）」という呼び名が広がりつつあります。\n「エージェントに委ねるためのゴール・制約・完了条件・検証方法を明示する役割へ変わっていく」と捉えております。\nループエンジニアリングについて記事...",
       "category": "AI・技術",
       "rss_category": "",
       "image_url": ""
@@ -74,16 +64,6 @@
       "image_url": ""
     },
     {
-      "title": "Claude Codeのループが回らないのは、プロンプトではなく完了条件の問題だった",
-      "url": "https://zenn.dev/gemcook/articles/467b1233efe811",
-      "site": "Zenn(AI)",
-      "published": "2026-07-10T06:25:33Z",
-      "description": "はじめに\n先日、Claude Codeに自律作業を任せてログを見返していたら、ぞっとする光景がありました。ターン終了をブロックするhookが、2分間に同じフィードバックを6連発していたんです。Claude Codeは毎回「修正しました」と言い、hookは毎回同じ理由で差し戻し、リポジトリの状態は1バイトも変わっていない。完全な無限ループでした。\nこんな経験ありませんか？\n\n自律ループを組んだのに、...",
-      "category": "AI・技術",
-      "rss_category": "",
-      "image_url": ""
-    },
-    {
       "title": "小さいトークン枠でAIエージェントを回すための委任アーキテクチャ設計【Claude Code】",
       "url": "https://zenn.dev/cutlet_of_pork/articles/llm-token-saving-delegation-design",
       "site": "Zenn(AI)",
@@ -124,7 +104,7 @@
       "image_url": ""
     },
     {
-      "title": "AIの出力をどう評価するか ― AIエンジニアリング輪読会 3章・4章メモ",
+      "title": "\"AIの出力をどう評価するか ― AIエンジニアリング輪読会 3章・4章メモ\"",
       "url": "https://zenn.dev/dmmdata/articles/04f9e9f775d966",
       "site": "Zenn(AI)",
       "published": "2026-07-10T04:31:08Z",
@@ -199,6 +179,66 @@
       "site": "Zenn(AI)",
       "published": "2026-07-10T03:35:52Z",
       "description": "個人開発でAI議事録SaaSをやっています\nKaigi AI という、会議の音声を文字起こし・要約する SaaS を一人で開発・運用しています。バックエンドは FastAPI、フロントは Next.js、文字起こしは自前ホストの Whisper、要約とその周辺処理は Claude、というよくある構成です。\n今日は「話者識別」機能の実装について書きます。結論から言うと、音声から話者を識別する dia...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "ココナラで実需を探していたらタロットカードに辿り着いた話",
+      "url": "https://zenn.dev/kakedashi/articles/coconala-tarot-probe",
+      "site": "Zenn(AI)",
+      "published": "2026-07-10T03:27:16Z",
+      "description": "こんにちは、kakedashi です。\nx402 について発信していたのに、なぜ急に「タロットカード？」と思った方、理由があるんです。\n一言でいうと、「AI エージェントが自律的にお金を払い合う世界」の話をしているうちに、\"じゃあ人間は今どこに本気で財布を開いているのか\" が気になって、公開データを測っていったら、最後にタロットの卓の前に座っていた —— という道のりです。順番に書きます。\n\n\n ...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "チャットに常駐するAIエージェントを設計するときに考えた5つのこと",
+      "url": "https://zenn.dev/hach/articles/chat-jouchu-ai-agent-sekkei",
+      "site": "Zenn(AI)",
+      "published": "2026-07-10T03:21:57Z",
+      "description": "「Slackに招待するだけで働くAI」を作る、という要件は一見シンプルですが、実装に入ると設計判断の連続でした。この記事では、常駐型AIエージェントを設計する上で悩んだポイントと、その判断理由を共有します。同種のものを作る人の参考になれば幸いです。\n\n 前提: 「呼ばれたら答えるbot」との違い\nチャットbotの多くはリクエスト駆動です。メンションされたらLLMを呼び、結果を返す。これはステートレ...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "Cursorを契約していた私がClaudeを試すことにしました。",
+      "url": "https://zenn.dev/hanav1ye/articles/claude-startup1",
+      "site": "Zenn(AI)",
+      "published": "2026-07-10T03:16:28Z",
+      "description": "タイトルの通り、今更ながらClaudeを試してみることにしました。\nもうFable5が使えなくなるのに？というのもありますが、\n正直、私にはあまり関係がありません。\n新しいモデルを使うことに特に興味があるわけでもないので。\nちなみに私はまだCursorに契約しています。（今月末に切れます）\n前に悩みに悩んでCursorを選びました。\n経緯は下記の記事に詳細を書いていますが、\n今振り返ると、\nIDE...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "参考文献づくりが少しラクになった話",
+      "url": "https://zenn.dev/vincent_gay/articles/c050f3ec256561",
+      "site": "Zenn(AI)",
+      "published": "2026-07-10T03:09:26Z",
+      "description": "AI論文写作で感じた、引用整理のリアル\nAIで論文を書く流れが当たり前になってきましたが、最後に一番時間を取られるのは、意外と参考文献まわりです。私は作業を軽くしたくて、IEEE Citation Generator や AMA CitationGenerator を触ってみました。\n\n 使ってみた感覚\n最初に感じたのは、「本文を書く時間」と「整える時間」は別物だということでした。本文はAIがかな...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "AIのセキュリティ対策を「お願い」ではなく「仕組み」で考える【ローカル編】",
+      "url": "https://zenn.dev/acntechjp/articles/eab85de5347eb4",
+      "site": "Zenn(AI)",
+      "published": "2026-07-10T03:00:19Z",
+      "description": "執筆者：Hajime Fujii\n\n はじめに\nAIエージェントを効率よく稼働させるにはMCPなどによる外部と連携した稼働と、ある程度人間の手の介在を避け、自律的に動作させることが重要となる。\nこの手の前提に立つと、認証情報を何らかの形でAIの動く処理の中で準備することと、人間の確認は必要最低限にする必要がある。\n確認を減らす分、エージェントの振る舞いを指示で縛れればよいが、それは当てにならない。...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "JetBrains Air のエージェント複数作業と、エージェントレビュー機能",
+      "url": "https://zenn.dev/nattosystem_jp/articles/c9a7d241a9fa31",
+      "site": "Zenn(AI)",
+      "published": "2026-07-10T02:56:29Z",
+      "description": "はじめに\n今回はJetBrains Air の Windows preview が出たので、実際に使ってみました。\nhttps://blog.jetbrains.com/air/2026/06/jetbrains-air-lands-on-windows/\nJetBrains Air は、AIエージェントにコーディングタスクを委任し、人間はワークフローの主導権を握ったまま結果を確認する、というコン...",
       "category": "AI・技術",
       "rss_category": "",
       "image_url": ""
