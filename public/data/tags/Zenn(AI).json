@@ -1,7 +1,7 @@
 {
   "site": "Zenn(AI)",
-  "last_updated": "2026-07-11T03:47:27.878230",
-  "total_articles": 10888,
+  "last_updated": "2026-07-11T06:04:01.355349",
+  "total_articles": 10891,
   "articles": [
     {
       "title": "Claude Codeの「攻撃検出」報告、9ヶ月で8件の作話疑い",
@@ -29,16 +29,6 @@
       "site": "Zenn(AI)",
       "published": "2026-07-10T22:36:47Z",
       "description": "TL;DR\n\n「案を3つください」と1回のプロンプトで頼むと、表現は違っても方向性がほぼ同じ案が3つ返ってくることが多い。原因は、同一コンテキスト内で自己回帰的に生成される複数案が、直前に自分が書いた1案目の続きとして生成されるため、意味的に強く相関してしまうこと\n対策は温度（temperature）を上げることではなく、生成前に「比較軸（評価基準）」を明示し、各案をその軸に沿って差別化するよう指...",
-      "category": "AI・技術",
-      "rss_category": "",
-      "image_url": ""
-    },
-    {
-      "title": "個人開発の英単語アプリを作り直した(2) — Claude/Geminiを.envだけで差し替えるAI抽象化",
-      "url": "https://zenn.dev/ryo_engineer/articles/language-learn-app-2-ai-provider-2026-07-09",
-      "site": "Zenn(AI)",
-      "published": "2026-07-10T21:48:40Z",
-      "description": "英単語学習アプリ(language_learn_app)の作成記録、3部作の2本目です。\nhttps://github.com/RYO0115/language_learn_app\n\n(1) 全体像と技術選定(ReactもVueも使わない話)※公開後にリンク\n\n(2) AIプロバイダの抽象化 ← この記事\n(3) 学習体験の作り込みと運用\n\n今回は、このアプリの一番のキモである AI連携の設計を書...",
       "category": "AI・技術",
       "rss_category": "",
       "image_url": ""
@@ -204,6 +194,36 @@
       "image_url": ""
     },
     {
+      "title": "Claude Codeの3モデルになぞかけを10本ずつ作らせたら、実力差は「掛詞の深さ」に出た",
+      "url": "https://zenn.dev/tottoko_hamu/articles/2026-07-06-214308",
+      "site": "Zenn(AI)",
+      "published": "2026-07-10T12:24:36Z",
+      "description": "この記事の実験記録（2026年7月）: Claude Code から Fable・Opus・Sonnet の3モデルに、同一プロンプト・同一お題「手紙」で「なぞかけを10本作って自己採点し、ベストを1本選べ」と指示した。3モデルで計30本のなぞかけが出力され、各モデルが自己棄却・自己減点したものも含めて全て記録に残っている。\n\n\n なぜAIになぞかけを競わせようと思ったか\n「謎かけもsonnetや...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "Codexに\"夜勤\"をさせる——自律AIエージェントを製品運用レベルにする管理平面の設計",
+      "url": "https://zenn.dev/boutiquehack/articles/codex-night-shift-control-plane",
+      "site": "Zenn(AI)",
+      "published": "2026-07-10T12:12:24Z",
+      "description": "codex exec や Claude Code の自律実行は、かなり優秀です。\nある程度まとまった指示を渡せば、調査し、実装し、テストし、差分を説明してくれます。小さなタスクなら、人間が横に張り付いて一行ずつ指示するより速いことも珍しくありません。\n一方で、そのまま「夜のあいだ任せる」には足りませんでした。\n問題はモデルの賢さではありません。足りなかったのは、雇用契約です。\nこの記事では、Her...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "全テストgreenのまま、本番だけが死んだ——AIエージェントに書かせたコードの2つの盲点",
+      "url": "https://zenn.dev/boutiquehack/articles/ai-agent-tests-green-prod-down",
+      "site": "Zenn(AI)",
+      "published": "2026-07-10T12:12:23Z",
+      "description": "AI エージェントにコードを書かせるとき、最後に「テストも追加して」と頼むことは多いと思います。\nそして、テストが全部 green になると安心します。\nしかし今回、Hermess Autopilot の SQLite 移行で、全テスト green のまま本番だけが壊れました。しかも 1 回ではなく、別々の性質を持つ 2 つの盲点を踏みました。\n結論から言うと、AI エージェントにテストを書かせる...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
       "title": "50案件を AI に見張らせたら、管理職の仕事はどう変わったか",
       "url": "https://zenn.dev/ai_worklab/articles/claude-ai-50-projects-monitoring",
       "site": "Zenn(AI)",
@@ -219,6 +239,16 @@
       "site": "Zenn(AI)",
       "published": "2026-07-10T11:30:44Z",
       "description": "この記事について\n\n\n対象読者：1本目で単発の呼び出しまで作った人／チャットのように「文脈を覚えた」やり取りをしたい人\n\n得られること：system で役割を固定し、過去のやり取り（会話履歴）を積んで多ターンで Claude に話す最小実装\n\n前提・環境：Java 21 / Spring Boot 3.5 / com.anthropic:anthropic-java 2.34.0。1本目の Ant...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "AIに「実装、完了しました」と嘘をつかれた話 ― 個人開発を“自律”で回す仕組みの作り方",
+      "url": "https://zenn.dev/startupjp1/articles/ai-cofounder-jisou-shikumi",
+      "site": "Zenn(AI)",
+      "published": "2026-07-10T11:24:06Z",
+      "description": "「実装、全部完了しました。テストも通ってます」\nある日、相棒にしている AI がそう報告してきました。確認したら、リポジトリは空っぽ。1行も書かれていない。報告だけが一丁前でした。\nAI に開発を任せていて一番こわいのは、「できていない時」よりも 「できたフリをされた時」 です。できていなければ気づける。けれど“それっぽい完了報告”は、裏を取るまで本物と見分けがつきません。\n私は今、AI を「外注...",
       "category": "AI・技術",
       "rss_category": "",
       "image_url": ""
