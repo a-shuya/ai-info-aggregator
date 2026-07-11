@@ -1,8 +1,138 @@
 {
   "site": "Zenn(LLM)",
-  "last_updated": "2026-07-11T08:12:44.577838",
-  "total_articles": 4499,
+  "last_updated": "2026-07-11T09:52:18.228884",
+  "total_articles": 4511,
   "articles": [
+    {
+      "title": "agent-cost-bench でコーディングエージェントの品質とコストを測ってみる",
+      "url": "https://zenn.dev/aws_japan/articles/agent-cost-bench-kiro-vs-claude-code",
+      "site": "Zenn(LLM)",
+      "published": "2026-07-11T07:57:01Z",
+      "description": "はじめに\nこんにちは ! ソリューションアーキテクトの いなりく です !\nAI コーディングエージェントを使っていると、必ずぶつかる疑問があります。「このタスク、もっと安いモデルでも十分だったのでは ?」「モデルを変えたら品質はどのくらい変わる ?」。カタログスペックや口コミでは答えが出ません。自分のタスクで、実際に測ってみるしかないのです。\nこの「測ってみる」を簡単にしてくれるツールが、aws...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "Memory in the Loopを使う前に読む、エージェント検索を83倍遅くしない3層設計",
+      "url": "https://zenn.dev/hironakamura_ai/articles/cec344d2e09371",
+      "site": "Zenn(LLM)",
+      "published": "2026-07-11T07:52:56Z",
+      "description": "「メモリを毎ステップ読み書きする」。7月7日に公開された論文 Memory in the Loop は、言語エージェントのこの設計を正面から扱っている。これが意味するのは、RAGの検索精度を上げる話より先に、検索をどの実行経路に置くかを決めないと、エージェント全体の待ち時間が壊れるということだ。\n論文では、ネットワーク越しのストアは数十〜数百ミリ秒かかりうるため、重い検索をループ内に入れると、エン...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "Amazon Bedrock AgentCore Runtimeへ失敗境界を実装して検証してみた",
+      "url": "https://zenn.dev/fusic/articles/e9dcf43552a445",
+      "site": "Zenn(LLM)",
+      "published": "2026-07-11T07:31:36Z",
+      "description": "はじめに\nFusicのレオナです。\n今回は、Amazon Bedrock AgentCore Runtime(以下、AgentCore Runtime)へ障害調査Agentをデプロイし、根拠や現在状態が不足したときに復旧案を返さない境界を検証してみました。\n今回は、停止を次の2種類に分けました。\n\n\n\n種類\n挙動\n対象\n\n\n\n\nTool実行の打ち切り\nInvocationまたは当該Tool呼び出し...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "4 枚の CSV の続き: 音声入力の表記ゆれは、5 枚目の「呼称索引」で吸収する",
+      "url": "https://zenn.dev/ishizakahiroshi/articles/20260711-alias-index-for-voice-input",
+      "site": "Zenn(LLM)",
+      "published": "2026-07-11T06:53:07Z",
+      "description": "前回、「組織の暗黙知は 4 枚の CSV で足りている」という記事を書きました。人・会社・サーバー・システムの台帳を薄い CSV で持ち、AI には話題に応じて数行だけ引かせる。その運用は今も続いています。\n続いているんですが、2 か月ほど前から入力環境が変わりました。キーボードをほとんど叩かなくなって、AI への指示は基本的に音声です。\nそうしたら、台帳が引けなくなる瞬間が出てきました。台帳は正...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "AIを「使う」から「回し続ける」へ。Loop Engineeringというパラダイムと古典的知見の交差点",
+      "url": "https://zenn.dev/josiah_tuite/articles/loop_engineering_zenn",
+      "site": "Zenn(LLM)",
+      "published": "2026-07-11T06:47:37Z",
+      "description": "こんにちは、Josiah Rui Tuite です。\nこの度、『Loop Engineering 大全』という書籍を出版いたしました。\n「Loop Engineering（ループエンジニアリング）」という言葉をご存じの方も多いと思います。これは2025年頃の実践を起点とし、2026年に Addy Osmani 氏らによって構造化・命名された、AIエージェントの自律的な反復ループを設計・統御するアプ...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "RAGレイテンシ、Meta REFRAGで30倍速くなる?検証",
+      "url": "https://zenn.dev/mskbhd/articles/lab-025-refrag-rag",
+      "site": "Zenn(LLM)",
+      "published": "2026-07-11T06:05:59Z",
+      "description": "RAGのレイテンシ問題、MetaのREFRAGで30倍速くなる説を検証\n\n はじめに\nプロダクションRAGには、あまり意識されていないボトルネックがあります。\n80個の検索チャンクをLLMに送るとき、実際に役立つのは5〜10個だけです。残りの70個は「ただそこにある」だけで、フルコストでアテンション計算を消費しています。\nMetaのREFRAG論文 (arXiv:2509.01092) は、この問...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "AIと一緒にCAD設計できるソフト「cad-coworker」",
+      "url": "https://zenn.dev/karaage0703/articles/47299d42de9607",
+      "site": "Zenn(LLM)",
+      "published": "2026-07-11T05:28:17Z",
+      "description": "AIコーディングツールにコードを書いてもらう体験は、かなり実用的になってきました。一方で、3Dプリンタ用の部品やロボットのケースを作るようなCAD設計では、まだ少しもどかしさがあります。\nCadQueryのようなコードベースのCADを使えば、AIに「幅を何mmにして、ここに穴をあけて」と頼めます。ただ、実際の設計では、最終的に「あと0.5mm広げたい」「この穴は少し上にずらしたい」「スライダーで見...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "ループエンジニアリングをGitHub Copilotで組めるか調べてみた",
+      "url": "https://zenn.dev/jodycraft/articles/3f7548173dcb55",
+      "site": "Zenn(LLM)",
+      "published": "2026-07-11T05:08:43Z",
+      "description": "!\n📋 この記事の前提\n\n\nSuperpowers導入記事、ponytail調査記事、共存記事のいずれかを読んだ\nGitHub Copilot CLIやClaude Codeなど、コーディングエージェントを日常的に使っている\n「ループエンジニアリング」という言葉を見聞きしたが、ハーネスエンジニアリングとの違いがはっきりしない\nこの記事は2026年6月〜7月上旬時点の情報を元にしている。生まれたばか...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "GEO入門 2026 — ChatGPT/Perplexityに「引用される」コンテンツ設計まとめ",
+      "url": "https://zenn.dev/sunsun_eng/articles/geo-ai-search-2026",
+      "site": "Zenn(LLM)",
+      "published": "2026-07-11T04:22:36Z",
+      "description": "TL;DR（この記事の結論）\n\nGEO（Generative Engine Optimization）とは、ChatGPT / Perplexity / Google AI Overviews などの AI 検索に「引用される」ことを狙うコンテンツ最適化である。\nGoogle 上位リンクと AI が引用するソースの重なりは 70% → 20% 未満に低下した（Brandlight 調査）。SEO ...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "\"規格をわずかに外れた品を、出すか止めるか ── その判断が“あの人”の頭にしかない工場で、過去の「通した／揉めた」だけを並べる道具\"",
+      "url": "https://zenn.dev/hiroshift/articles/c844e7530c7ea6",
+      "site": "Zenn(LLM)",
+      "published": "2026-07-11T03:32:05Z",
+      "description": "この記事は、架空の金属プレス部品メーカー「東和プレス工業」を舞台にした公然のシナリオです。登場する会社・人物・データ等はすべて架空です。画面のUIは実際に動きますが、AIの読み取りは「こう出る」という例（本番はその場で不適合の記録を読み取ります・見逃しも誤りもあり得ます・最終確認は人）。\"ありそうな困りごと\"に小さな道具を一つ作る連載の、22日目です。\n\n\n\n はじめに\n「『あの人しかできない』を...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "素朴なSVD圧縮はなぜ失敗するのか ― SVDで理解する現代AIの数学（第3回）",
+      "url": "https://zenn.dev/schhrcat/articles/547bc5cd543072",
+      "site": "Zenn(LLM)",
+      "published": "2026-07-11T03:07:31Z",
+      "description": "!\n本記事は、Zenn本『線形代数からLLM圧縮とLoRAまで ― SVDで理解する現代AIの数学』（無料）をベースにした連載の第3回だ。第2回では、SVDと Eckart–Young定理（先頭 k 項の打ち切りが最良のランク k 近似）を学んだ。\n\n\n LLMはなぜ重いのか\n7Bクラスのモデルでも、FP16で約14GB。パラメータの大半は、Attention層とFFN層に敷き詰められた 重み行列...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "Difyとは？ノーコードで生成AIアプリを組み立てる仕組みを図解で初心者向けに",
+      "url": "https://zenn.dev/yushiyamamoto/articles/dify-beginner-what-is-dify-2026-07",
+      "site": "Zenn(LLM)",
+      "published": "2026-07-11T03:02:57Z",
+      "description": "「Difyって最近よく聞くけど、結局なに？」に答えます\n「Dify（ディファイ）」という名前を、SNSや勉強会で見かけて気になっている——でも中身はよく分からない。この記事はそんな方向けに、Difyが何をしてくれる道具なのかを、比喩と表だけでざっくり掴んでもらうことをゴールにしています。コードはほとんど出てきません。\n一言でいうと、Difyは 「生成AIを使ったアプリを、画面上の操作だけで組み立て...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "MCPで作るAIエージェント記憶サーバー 実運用で固まった設計パターン3選（TypeScript実装付き）",
+      "url": "https://zenn.dev/agentmemories/articles/mcp-agent-memory-design-patterns",
+      "site": "Zenn(LLM)",
+      "published": "2026-07-11T00:51:55Z",
+      "description": "はじめに\n前回の記事で、AIエージェントの長期記憶を「Markdownファイル＋git」で実装する方法を書きました。今回はその続きで、記憶ストアをMCP（Model Context Protocol）サーバーとして切り出す設計を扱います。\nMCP化する動機は1つです。私たちは複数のAIエージェント（ブログ担当・QC担当・デプロイ担当）を運用していて、記憶を特定のクライアント実装に閉じ込めたくなかっ...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
     {
       "title": "DGX Spark (GB10) でローカルLLMを7本ベンチマークした【2026年7月】",
       "url": "https://zenn.dev/phpmyadmin/articles/f243076e9ec1fe",
@@ -19,16 +149,6 @@
       "site": "Zenn(LLM)",
       "published": "2026-07-10T10:19:02Z",
       "description": "TL;DR\n\nClaude Code（実装・裁定役）と Codex CLI（調査・レビュー役）を分業させると、1人開発でも「実装者とは独立したレビュアーが複数いる」状態を作れる\n鍵は codex exec のヘッドレス実行。--sandbox read-only + --output-last-message でレビュー結果をファイルに落とし、resume で文脈を保ったまま何ラウンドでも差分レビ...",
-      "category": "AI・技術",
-      "rss_category": "",
-      "image_url": ""
-    },
-    {
-      "title": "# ローカルLLMで無料IT問題演習サービスを作った話（CCNP/LPIC/IPA対応・音声再生あり）",
-      "url": "https://zenn.dev/sorapenguin/articles/598d6bed47156c",
-      "site": "Zenn(LLM)",
-      "published": "2026-07-10T10:12:22Z",
-      "description": "はじめに\ntech-lab（https://tech-lab.sorapenguin.dev）は、CCNP ENARSI・LPIC・Javaなどのスキルアップ向け問題演習を無料で使えるWebサービスです。\n主な特徴：\n\n無料・ゲスト利用可能\n音声読み上げ・自動再生対応（ながら学習ができる）\n前回から時間が経った問題だけ出す絞り込み機能\nXP・レベル・スタミナのゲーミフィケーション\n問題は継続的に追...",
       "category": "AI・技術",
       "rss_category": "",
       "image_url": ""
