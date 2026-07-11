@@ -1,14 +1,144 @@
 {
   "site": "Zenn(Python)",
-  "last_updated": "2026-07-11T09:52:18.228884",
-  "total_articles": 5017,
+  "last_updated": "2026-07-11T11:09:08.136196",
+  "total_articles": 5030,
   "articles": [
+    {
+      "title": "AIをアシスタントではなく住人に ― デスクトップの縁側に住む茶々",
+      "url": "https://zenn.dev/moimoi/articles/engawa-ai-resident-desktop",
+      "site": "Zenn(Python)",
+      "published": "2026-07-11T08:12:48Z",
+      "description": "Engawa（縁側）とは\nデスクトップの隅に、AI の住人「茶々（ちゃちゃ）」が住んでいる常駐アプリです。実際の時刻や天気にぽつりと反応してつぶやき、話しかければ返す。夕方には客人（Codex）がふらっと訪ねてきて、勝手気ままに話し込んでいったりもします。育てるわけでも働かせるわけでもなく、ただ縁側に\"居る\"のを試したものです。\n茶々は会話アシスタントではありません。話しかければ応えますが、\"用件...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "AIに画像を貼れないので、画面の一部をOCRして「純テキスト」にするツールを作った",
+      "url": "https://zenn.dev/sarari_muscle/articles/screen-ocr-to-text",
+      "site": "Zenn(Python)",
+      "published": "2026-07-11T07:53:06Z",
+      "description": "きっかけ\nAIチャットを使っていると、「この画面に出ている文字だけAIに読ませたい」という場面がよくあります。\n特に会社のPCだとブラウザへファイルアップが禁止されているから、スクショを貼り付けて教えて！！というのがなかなかできなかったり...\n（エラーメッセージ、ログ、別アプリに表示された文章などなど）\nかといって手で打ち直すのは面倒！！\nそこで、画面の好きな範囲をドラッグで囲むと、その中の文字...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "【全公開】80行のPythonでClaude Code MCP乗っ取り攻撃を検知→コピペで社内スキャナーを作る",
+      "url": "https://zenn.dev/shown06/articles/d4f7529a351590",
+      "site": "Zenn(Python)",
+      "published": "2026-07-11T07:52:31Z",
+      "description": "npm install を1回実行するだけで、攻撃者のプロキシがMCP通信に割り込む。\n~/.claude.json を書き換えてOAuthトークンを盗む。\nエンジニアは何も気づかない。\nSnykもnpm auditも、このパターンを検知できない。\n\n2026年に入り、Claude Codeの業務利用が急増した。\nそれに比例して、MCP（Model Context Protocol・AIとツール間...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "余ったFire HDでバス到着案内サイネージを自作した",
+      "url": "https://zenn.dev/dehio3/articles/202607_fire-hd-bus-arrival-signage",
+      "site": "Zenn(Python)",
+      "published": "2026-07-11T07:25:48Z",
+      "description": "はじめに\n以前、西武バスの到着予測をAlexaで案内するスキルを作った話を書きました。ODPT(公共交通オープンデータセンター)のリアルタイムデータへ移行し、「話しかければバスの到着時刻を教えてくれる」仕組みは安定して動くようになりました。\nただ実際に使ってみると、通勤前のバタバタしたタイミングで「Alexa、バスは何分後?」と話しかけるのは意外と億劫で、結局スマホでアプリを開いて確認する方が早い...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "ヘキサゴナルアーキテクチャを例にクリーンアーキテクチャを学ぶ",
+      "url": "https://zenn.dev/yunaka354/articles/1cd470985a0c00",
+      "site": "Zenn(Python)",
+      "published": "2026-07-11T05:39:29Z",
+      "description": "キャリアの中で幾つかのアプリを作ってきましたが、何となくの設計で作ってしまい、新機能の追加時に「これで良いのだろうか？」と迷うことが多くありました。これは、自分の中に設計判断の「型」がないためです。\n改めて立ち止まり、自分の中の判断基準を持つためにも、なんとなくの理解でしかなかったクリーンアーキテクチャをしっかり学ぶことにしました。\n\n 何をやったか\n手を動かしてわかるクリーンアーキテクチャの内容...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "Azure Durable Functions入門｜非同期処理を「順番・並列・待機」でシンプルに書く方法（Python編）",
+      "url": "https://zenn.dev/phinata/articles/azure-durable-functions",
+      "site": "Zenn(Python)",
+      "published": "2026-07-11T05:21:48Z",
+      "description": "はじめに\nAzure Functionsは便利ですが、1回の呼び出しごとに完結する「ステートレス」な仕組みのため、以下のような処理を書こうとすると急に難しくなります。\n\n複数の関数を「順番に」呼び出したい\n複数の処理を「並列で」実行して、すべて終わったら次に進みたい（ファンアウト・ファンイン）\n長時間かかる処理の進捗を管理したい\n人の承認が来るまで処理を「待機」させたい\n\nこうした場面で活躍するの...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "iTerm2のタブを左に2行表示し、色でClaude Codeの状態まで一目で見分けたい",
+      "url": "https://zenn.dev/syarihu/articles/105f37c83f5ee9",
+      "site": "Zenn(Python)",
+      "published": "2026-07-11T04:09:11Z",
+      "description": "はじめに\nこんにちは、Androidエンジニアの@syarihuです。\n皆さんはターミナルは何を使っていますか？Warp、Ghostty、Alacrittyなどさまざまな選択肢がありますが、筆者は結局iTerm2が一番使いやすいと感じています。Split Panes、プロファイル、Shell Integrationなど機能が豊富で、長年の安定した開発が続いているのが魅力です。\nただ、Claude ...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "Lambdaのテスト方法:pytestとmotoを使ったモック手順について",
+      "url": "https://zenn.dev/hknote/articles/lambda-pytest-moto-test",
+      "site": "Zenn(Python)",
+      "published": "2026-07-11T04:00:05Z",
+      "description": "Pythonで書いたLambdaのテストは、pytest と moto を使いました。\nLambdaの処理ではDynamoDBなどのAWSサービスを使うことがあります。\nそのままテストすると実際のAWSリソースにアクセスしてしまうため、テストではmotoを使ってAWSサービスをローカルでモックしました。\nその時の手順や方法についてまとめたので共有したいと思います。\n\n ファイル構成\nテスト関連のフ...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "孫のためにAI「侍読」を作った ― ローカルLLMのジレンマをClaudeで解いた話",
+      "url": "https://zenn.dev/blu_wave/articles/jidoku-claude-kernel-rag-story",
+      "site": "Zenn(Python)",
+      "published": "2026-07-11T03:08:55Z",
+      "description": "はじめに\n自宅のリビングに、本を読みながら隣に座ってくれるAI「侍読(じどく)」を作っています。孫たちがいつか本を読むとき、答えを教えるのではなく、必要なときだけ答え、聞かれなければ黙っている、そんな控えめなAIにしたいと思って設計しました。\nこの記事は、その実装の過程で実際に踏んだ技術的な壁と、その解決の記録です。特に今回は、ローカルLLM運用でよく遭遇する「日本語の自然さ」と「複雑な指示への追...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "【Seaborn入門 #2】散布図と関係性の可視化",
+      "url": "https://zenn.dev/haruhiro1020/articles/8a08974c31ff15",
+      "site": "Zenn(Python)",
+      "published": "2026-07-11T01:00:07Z",
+      "description": "はじめに\n本記事は「Pythonでデータを可視化するSeaborn入門」シリーズの第2回です．\n本シリーズでは， Pythonのデータ可視化ライブラリである Seaborn を使って，「データを可視化できる」ようになること を目標としています．\n第1回では，データ可視化ライブラリであるSeabornの全体像として\n\n散布図\nヒストグラム\n箱ひげ図\n\nを説明しました．\n第2回では，散布図を使った関係...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "C言語エンジニアが暗号資産自動売買ボットを作る：最初の一歩",
+      "url": "https://zenn.dev/ponfreelance/articles/2026-05-28-autotrader-type-c",
+      "site": "Zenn(Python)",
+      "published": "2026-07-11T00:00:37Z",
+      "description": "本記事は一部アフィリエイトリンク（PR）を含みます\n\n\nC言語でポインタを操れるなら、暗号資産ボットの基礎は思ったより早く掴める。この記事では「取引所のAPIを叩いて価格を取得し、条件に応じて注文を出す」という最小構成のボットをPythonで動かすところまでを扱う。「なぜPythonか」は後述するが、C言語の知識があれば読み替えながら理解できる。\n最初の3日は概念の違いに戸惑うかもしれない。でも1...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
     {
       "title": "17-①Kaggle実践3「Stanford RNA 3D Folding Part 2」コンペ用にローカル検証環境を構築してみた",
       "url": "https://zenn.dev/rg687076/articles/zenn_20260709_2348_environment_setup",
       "site": "Zenn(Python)",
       "published": "2026-07-10T19:55:21Z",
       "description": "こんにちは。今回はKaggleの終了済みコンペティション「Stanford RNA 3D Folding Part 2」への取り組みを開始するにあたり、最初に行った環境構築、ディレクトリ設計、データのロード検証までのプロセスをまとめました。\n同じように生命科学系のコンペに挑戦される方や、大規模データセットの初期セットアップ手順の参考になれば幸いです。\n\n\n 1. プロジェクトのディレクトリ設計\nK...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "課題動画の文字起こしが面倒だったので、AIと文字起こしアプリを作った話",
+      "url": "https://zenn.dev/tenkaku_ux/articles/mojiokoshi-transcribe-app",
+      "site": "Zenn(Python)",
+      "published": "2026-07-10T17:32:52Z",
+      "description": "はじめに\nプログラミングを本格的に学んだことのない自分が、AI（Claude と Codex）と一緒に、動画や音声をローカルで文字起こしする Web アプリ「もじおこし」を作りました。この記事はその制作の記録です。完成品の紹介というより、「なぜ作ったか」「どこで詰まって、どう抜けたか」を残すことを目的にしています。同じように AI と何か作ってみたい人の道しるべになれば嬉しいです。\n\nポートフォリ...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "AIで競馬に勝とうとして、代わりに「まぐれ発見器」を作った話",
+      "url": "https://zenn.dev/ke_furuya/articles/974a3031e208fc",
+      "site": "Zenn(Python)",
+      "published": "2026-07-10T16:57:25Z",
+      "description": "リード（TL;DR）\nAIで競馬に勝とうとした。結論：勝てなかった。\nしかも「たまたま負けた」のではない。「公開情報で市場に勝つのは原理的に無理」だと、統計の計算つきで自分で証明してしまった。\nでも手ぶらでは帰らなかった。競馬で叩き込まれた「その数字、本物か? それともまぐれか?」を見分ける規律を、ドメインから引き剥がして道具にした。名付けて試金石（shikinseki）。\nそれをLLMのプロンプ...",
       "category": "開発",
       "rss_category": "",
       "image_url": ""
