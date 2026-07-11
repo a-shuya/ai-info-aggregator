@@ -1,74 +1,34 @@
 {
   "site": "Zenn(LLM)",
-  "last_updated": "2026-07-11T00:14:03.229103",
-  "total_articles": 4503,
+  "last_updated": "2026-07-11T03:47:27.878230",
+  "total_articles": 4502,
   "articles": [
     {
-      "title": "AIに3案出させても似た案しか出ない原因、軸を先に固定して分岐させる",
-      "url": "https://zenn.dev/every_ai_recipe/articles/ai-idea-options-3-axes",
+      "title": "Claude Codeの3モデルになぞかけを10本ずつ作らせたら、実力差は「掛詞の深さ」に出た",
+      "url": "https://zenn.dev/tottoko_hamu/articles/2026-07-06-214308",
       "site": "Zenn(LLM)",
-      "published": "2026-07-10T22:36:47Z",
-      "description": "TL;DR\n\n「案を3つください」と1回のプロンプトで頼むと、表現は違っても方向性がほぼ同じ案が3つ返ってくることが多い。原因は、同一コンテキスト内で自己回帰的に生成される複数案が、直前に自分が書いた1案目の続きとして生成されるため、意味的に強く相関してしまうこと\n対策は温度（temperature）を上げることではなく、生成前に「比較軸（評価基準）」を明示し、各案をその軸に沿って差別化するよう指...",
+      "published": "2026-07-10T12:24:36Z",
+      "description": "この記事の実験記録（2026年7月）: Claude Code から Fable・Opus・Sonnet の3モデルに、同一プロンプト・同一お題「手紙」で「なぞかけを10本作って自己採点し、ベストを1本選べ」と指示した。3モデルで計30本のなぞかけが出力され、各モデルが自己棄却・自己減点したものも含めて全て記録に残っている。\n\n\n なぜAIになぞかけを競わせようと思ったか\n「謎かけもsonnetや...",
       "category": "AI・技術",
       "rss_category": "",
       "image_url": ""
     },
     {
-      "title": "個人開発の英単語アプリを作り直した(2) — Claude/Geminiを.envだけで差し替えるAI抽象化",
-      "url": "https://zenn.dev/ryo_engineer/articles/language-learn-app-2-ai-provider-2026-07-09",
+      "title": "Codexに\"夜勤\"をさせる——自律AIエージェントを製品運用レベルにする管理平面の設計",
+      "url": "https://zenn.dev/boutiquehack/articles/codex-night-shift-control-plane",
       "site": "Zenn(LLM)",
-      "published": "2026-07-10T21:48:40Z",
-      "description": "英単語学習アプリ(language_learn_app)の作成記録、3部作の2本目です。\nhttps://github.com/RYO0115/language_learn_app\n\n(1) 全体像と技術選定(ReactもVueも使わない話)※公開後にリンク\n\n(2) AIプロバイダの抽象化 ← この記事\n(3) 学習体験の作り込みと運用\n\n今回は、このアプリの一番のキモである AI連携の設計を書...",
+      "published": "2026-07-10T12:12:24Z",
+      "description": "codex exec や Claude Code の自律実行は、かなり優秀です。\nある程度まとまった指示を渡せば、調査し、実装し、テストし、差分を説明してくれます。小さなタスクなら、人間が横に張り付いて一行ずつ指示するより速いことも珍しくありません。\n一方で、そのまま「夜のあいだ任せる」には足りませんでした。\n問題はモデルの賢さではありません。足りなかったのは、雇用契約です。\nこの記事では、Her...",
       "category": "AI・技術",
       "rss_category": "",
       "image_url": ""
     },
     {
-      "title": "SPEC→SRCは次元変換である —— 責務多次元意味構造によるソフトウェア開発過程の再記述",
-      "url": "https://zenn.dev/cognitiveosmdl/articles/f7dfc855f1c311",
+      "title": "全テストgreenのまま、本番だけが死んだ——AIエージェントに書かせたコードの2つの盲点",
+      "url": "https://zenn.dev/boutiquehack/articles/ai-agent-tests-green-prod-down",
       "site": "Zenn(LLM)",
-      "published": "2026-07-10T21:18:26Z",
-      "description": "概要\n本稿は、ソフトウェア開発における SPEC → SRC の過程を、単なる要求の詳細化や実装作業としてではなく、責務の多次元意味構造が文書レイヤーを横断して変換される過程として捉え直す試みである。\nここでいう SPEC → SRC とは、要求仕様、ユースケース、責務分析、設計、品質保証、実装、テストといった複数の成果物を経由しながら、最終的に実行可能な構造へ到達する一連の変換過程を指す。\n本稿...",
-      "category": "AI・技術",
-      "rss_category": "",
-      "image_url": ""
-    },
-    {
-      "title": "Fable 5にアプリを自分自身ごと進化させたら、6夜でOSS公開まで走れた — 壊れなかった仕組み",
-      "url": "https://zenn.dev/moriwo_dev_ai/articles/ama-teras-self-evolving-agent",
-      "site": "Zenn(LLM)",
-      "published": "2026-07-10T19:27:09Z",
-      "description": "「自分のコードを書き換えるAIエージェント」と聞くと、まず怖さが先に立つと思います。私も怖かったので、壊れない仕組みから先に作りました。\nこの記事は、自己進化型デスクトップエージェント AMA-teras を、夜間はAI(Claude Code)に無人で開発させ、朝に人間がレビューする、というサイクルを6夜回してOSS公開まで走った記録です。最終状態はテスト941件・コミット199件。夜中にAIが...",
-      "category": "AI・技術",
-      "rss_category": "",
-      "image_url": ""
-    },
-    {
-      "title": "AIで競馬に勝とうとして、代わりに「まぐれ発見器」を作った話",
-      "url": "https://zenn.dev/ke_furuya/articles/974a3031e208fc",
-      "site": "Zenn(LLM)",
-      "published": "2026-07-10T16:57:25Z",
-      "description": "リード（TL;DR）\nAIで競馬に勝とうとした。結論：勝てなかった。\nしかも「たまたま負けた」のではない。「公開情報で市場に勝つのは原理的に無理」だと、統計の計算つきで自分で証明してしまった。\nでも手ぶらでは帰らなかった。競馬で叩き込まれた「その数字、本物か? それともまぐれか?」を見分ける規律を、ドメインから引き剥がして道具にした。名付けて試金石（shikinseki）。\nそれをLLMのプロンプ...",
-      "category": "AI・技術",
-      "rss_category": "",
-      "image_url": ""
-    },
-    {
-      "title": "GPT-3.5に焦り、o1に震え、GPT-5に抜かれた。エンジニアが感想で振り返るGPT史",
-      "url": "https://zenn.dev/nishiryo/articles/c7d2a94f31b84e0f9a6c5d18e2b7f403",
-      "site": "Zenn(LLM)",
-      "published": "2026-07-10T15:59:16Z",
-      "description": "はじめに\n先に白状すると、この記事の歴史部分の下書きはAIに任せました。感想は全部、私のものです。「下書きはAIが書き、人間が精査して自分の言葉を足す」——この記事の作り方自体が、これから書く3年半の変化の縮図になっています。\nGPTの正確な歴史はAIに聞けば一発で出てくる時代なので、この記事では事実の羅列はほどほどにして、受託のフロントエンドエンジニアとしてChatGPT登場からほぼ全モデルを追...",
-      "category": "AI・技術",
-      "rss_category": "",
-      "image_url": ""
-    },
-    {
-      "title": "Fable 5×Sonnet 5の役割分担は単一モデルに勝てるのか？品質とコストを実測する",
-      "url": "https://zenn.dev/livingston/articles/a4acbb0ca31b28",
-      "site": "Zenn(LLM)",
-      "published": "2026-07-10T15:00:08Z",
-      "description": "はじめに\nマルチエージェント構成を組むとき、よく迷うことがあります。「賢いモデルに全部やらせるべきか、役割で分けるべきか」。\nこの記事では、Claude Fable 5（高価・高性能）とClaude Sonnet 5（安価・高速）を役割の階層で組み合わせた4構成を、正解データ付きの2タスク（日本語NLI・レシート抽出）で同一データ・同一プロンプト骨格のもと比較し、役割分担が品質×コストの面で割に合...",
+      "published": "2026-07-10T12:12:23Z",
+      "description": "AI エージェントにコードを書かせるとき、最後に「テストも追加して」と頼むことは多いと思います。\nそして、テストが全部 green になると安心します。\nしかし今回、Hermess Autopilot の SQLite 移行で、全テスト green のまま本番だけが壊れました。しかも 1 回ではなく、別々の性質を持つ 2 つの盲点を踏みました。\n結論から言うと、AI エージェントにテストを書かせる...",
       "category": "AI・技術",
       "rss_category": "",
       "image_url": ""
@@ -84,11 +44,41 @@
       "image_url": ""
     },
     {
+      "title": "Claude Codeを司令塔に、Codex CLIをレビュー艦隊として並列運用する",
+      "url": "https://zenn.dev/417/articles/masakazu-claude-code-codex-fleet-20260710",
+      "site": "Zenn(LLM)",
+      "published": "2026-07-10T10:19:02Z",
+      "description": "TL;DR\n\nClaude Code（実装・裁定役）と Codex CLI（調査・レビュー役）を分業させると、1人開発でも「実装者とは独立したレビュアーが複数いる」状態を作れる\n鍵は codex exec のヘッドレス実行。--sandbox read-only + --output-last-message でレビュー結果をファイルに落とし、resume で文脈を保ったまま何ラウンドでも差分レビ...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
       "title": "# ローカルLLMで無料IT問題演習サービスを作った話（CCNP/LPIC/IPA対応・音声再生あり）",
       "url": "https://zenn.dev/sorapenguin/articles/598d6bed47156c",
       "site": "Zenn(LLM)",
       "published": "2026-07-10T10:12:22Z",
       "description": "はじめに\ntech-lab（https://tech-lab.sorapenguin.dev）は、CCNP ENARSI・LPIC・Javaなどのスキルアップ向け問題演習を無料で使えるWebサービスです。\n主な特徴：\n\n無料・ゲスト利用可能\n音声読み上げ・自動再生対応（ながら学習ができる）\n前回から時間が経った問題だけ出す絞り込み機能\nXP・レベル・スタミナのゲーミフィケーション\n問題は継続的に追...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "BunはZig 53万行をどう11日でRustに書き換えたのか。64並列Claude Codeの事例から学べたこと、まだ真似できないこと",
+      "url": "https://zenn.dev/assign/articles/bun-rust-rewrite-harness-engineering",
+      "site": "Zenn(LLM)",
+      "published": "2026-07-10T08:15:49Z",
+      "description": "はじめに\nこんにちは、株式会社アサインでエンジニアをしているうちほり（@showichiro0123）です。\n本記事では、BunをRustにフルリプレイスする（bun.com/blog/bun-in-rust）という記事を読み、その意思決定や取り組みの詳細を分析することで、一般的なプロダクト開発への応用可能性を探ることを目的とします。\nBunは、Node.jsと並ぶJavaScript/TypeS...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "「プロンプトを打つ」から「ループを設計する」へ",
+      "url": "https://zenn.dev/nenene01/articles/loop-engineering-claude-code",
+      "site": "Zenn(LLM)",
+      "published": "2026-07-10T07:16:41Z",
+      "description": "はじめに\n2026年6月30日にAnthropicより公式ガイドGetting started with loops(ループ入門)の公開がありました。\n最近は「Loop Engineering（ループエンジニアリング）」という呼び名が広がりつつあります。\n「エージェントに委ねるためのゴール・制約・完了条件・検証方法を明示する役割へ変わっていく」と捉えております。\nループエンジニアリングについて記事...",
       "category": "AI・技術",
       "rss_category": "",
       "image_url": ""
