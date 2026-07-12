@@ -1,8 +1,118 @@
 {
   "site": "Zenn(AI)",
-  "last_updated": "2026-07-12T13:53:06.689833",
-  "total_articles": 10961,
+  "last_updated": "2026-07-12T15:00:32.204458",
+  "total_articles": 10965,
   "articles": [
+    {
+      "title": "Claude Codeのrulesが全部常時ロードされてコンテキストを圧迫していた話",
+      "url": "https://zenn.dev/o2wsu9/articles/aba0c9445f750d",
+      "site": "Zenn(AI)",
+      "published": "2026-07-12T11:45:22Z",
+      "description": "Claude Code の ~/.claude/rules/ に言語別のコーディング規約を置いていたら、Go も React も触っていないセッションでそれらが全文ロードされ、ベースラインのコンテキストを浪費していました。原因は frontmatter のフィールド名。Cursor の流儀で書いていました。発見から修正、実機での検証までの記録です。\n\n 事象\nClaude Code はセッション開...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "AIプラットフォームのグラフ特殊化",
+      "url": "https://zenn.dev/knowledge_graph/articles/ai-agent-graph-specialization",
+      "site": "Zenn(AI)",
+      "published": "2026-07-12T11:42:27Z",
+      "description": "!\n本シリーズ 第2部（全3部）: 第1部「ナレッジグラフだけじゃない。AIエージェントが使う5種類のグラフ」で整理した5種類から派生する特殊化を扱います。レイヤー間の連携と本番の組み方は第3部（執筆予定）のテーマです。\n\n第1部では、AI エージェント文脈のグラフを 5 種類の役割に分類しました。ナレッジグラフ、タスクグラフ、実行順序グラフ（DAG＝Directed Acyclic Graph、...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "うちのclaude code（fable）がプロンプトインジェクションを受けたと言い始めて恐怖に恐れおののいた話",
+      "url": "https://zenn.dev/chaos_gyoza/articles/d1003621c8e262",
+      "site": "Zenn(AI)",
+      "published": "2026-07-12T11:21:13Z",
+      "description": "先日、友人から「アニメ系の創作とか意外と儲かるよ？」的なことを言われたのでまぁ物は試し、嫌いじゃないしAIがどこまでやれるかも見るためにもblenderで軽いMMDを作ってみるかと思い立ってclaude codeをいじってたのですが、、、\nなんかclaude code動きが悪かったので\n（以下原文ママ）\n\n自分\n\n/btw何を悩んでるの？\n\nclaude code\n\n正直に言うと、悩んでたのはこれ...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "ベテランSEが個人開発でAI（Cursor / Claude）をガチ検証した結果。「魔法」にするか「爆弾」にするか。",
+      "url": "https://zenn.dev/i_lib/articles/a18ab00a769f41",
+      "site": "Zenn(AI)",
+      "published": "2026-07-12T11:17:47Z",
+      "description": "はじめまして、I-Libraryです。\n20年以上現場で切磋琢磨してきましたが、これからの相棒はAIになりそうですね。\n今回は、個人開発のなかでCursorとClaudeを導入し、「新規で作るアプリ」と「過去に作った古いアプリの改修」の両方でガチ検証して見えてきた「AIって本当に使えるの？」という疑問へのリアルな答えをお届けします。\n\n 1. 私の検証環境\n今回、私の「相棒」として投入したのは以下...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "エージェントが個人情報を漏らす前に ── マシン全体 git hooks で作る漏洩ガード",
+      "url": "https://zenn.dev/synforger/articles/guard-dispatcher-machine-wide-hooks",
+      "site": "Zenn(AI)",
+      "published": "2026-07-12T11:00:06Z",
+      "description": "この記事は誰向けか\n\nAI エージェントに commit / push まで任せる開発をしている(したい)人\n匿名名義・複数名義で個人開発をしていて、本名の混入がそのまま事故になる人\nper-repo の pre-commit hook 運用に「仕込み忘れてないか」の不安がある人\n\nエージェントが書いたコードのレビューの話はしません。この記事が扱うのは、レビューのもっと手前 ── git の外に出...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "コードが書けない私が、AIとの対話から開発手法「CGP」を作った話",
+      "url": "https://zenn.dev/coregrowthlabs/articles/45966f6d57f0c2",
+      "site": "Zenn(AI)",
+      "published": "2026-07-12T10:47:02Z",
+      "description": "１．はじめに\n私はITエンジニアではありません。\n自動車業界で品質保証や損益分析などに携わってきた、ごく普通の事務職です。\nプログラミングもほとんどわかりません。\nそんな私がAIとの対話だけでロジックエンジンを設計し、その過程を整理して「Core Growth Prompting（CGP）」という開発手法として公開しました。\nこの記事では、CGPの細かな使い方ではなく、「なぜこんな手法が生まれたの...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "あなたのサーバーに住み着くAI「Hermes Agent」：記憶と自己進化のすべて",
+      "url": "https://zenn.dev/yuta1995/articles/ai-agent-hermes-openclaw-claude",
+      "site": "Zenn(AI)",
+      "published": "2026-07-12T10:46:08Z",
+      "description": "セッションを閉じると忘れるAIに、もう戻れない\nClaude Code や Cursor を使っていて、こう思ったことはないだろうか。「昨日話した前提を、また一から説明している」と。優秀なのに、会話を閉じると記憶がリセットされる。この「セッションベース」という構造は、対話型AIツールに共通の弱点だった。\n2026年2月、Nous Research がこの弱点を正面から解くエージェントを公開した。H...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "AIツールを増やす前に用途重複を検出するTypeScript設計",
+      "url": "https://zenn.dev/kmn/articles/c82f77c8b95a18",
+      "site": "Zenn(AI)",
+      "published": "2026-07-12T10:38:53Z",
+      "description": "AIツールを増やす前に用途重複を検出するTypeScript設計\nAIツールを追加するたびに作業が速くなるとは限りません。文章生成、要約、調査、画像生成など、同じ用途を持つツールが増えると、選択、設定、結果比較、課金管理に時間を使うからです。\nこの記事では、利用中のAIツールをJSONで管理し、用途の重複をTypeScriptで検出します。特定サービスの優劣ではなく、追加前に「既存ツールで代替でき...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "\"誰と誰を組ませるかの答えは、どこにも書かれていない ── 人事の勘を変数にして、配置の衝突を計算するアプリ\"",
+      "url": "https://zenn.dev/hiroshift/articles/55302c4314a468",
+      "site": "Zenn(AI)",
+      "published": "2026-07-12T10:33:05Z",
+      "description": "この記事は、架空の事業用不動産仲介会社「倉見台不動産」を舞台にした公然のシナリオです。登場する会社・人物・データ等はすべて架空です。画面のUIは実際に動きますが、AIの読み取りは「こう出る」という例（本番はその場で面談メモや配置記録を読み取ります・見逃しも誤りもあり得ます・最終確認は人）。\"ありそうな困りごと\"に小さな道具を一つ作る連載の、24日目です。\n\n\n\n はじめに\n「『あの人しかできない』...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "Claude Codeのレートリミットがいつの間にか100%になる前にDiscordへ通知するツール作ってみた",
+      "url": "https://zenn.dev/nkmak/articles/2fbc8b66934368",
+      "site": "Zenn(AI)",
+      "published": "2026-07-12T10:23:51Z",
+      "description": "作ったもの\nClaude Code の 5時間レートリミットが特定の % に達したら Discord に通知してくれる仕組みを作りました！\n\nリポジトリはこちら。\nhttps://github.com/NKMAK/claude-code-limit-alert-notice\nチェックの仕組みは2種類あり、併用もできます。\n\n\n定期チェック: macOS 標準のスケジューラで5分おきに使用量を確認\n...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "G検定を勉強していて「これは保険業務と同じ構造だ」と気づいた話",
+      "url": "https://zenn.dev/aoi777/articles/c679a42bad1c15",
+      "site": "Zenn(AI)",
+      "published": "2026-07-12T09:50:52Z",
+      "description": "G検定の学習を続けています。最近、テキストを読んでいて「あ、これ保険業務でやってることと同じだ」という感覚が増えてきました。今日はその気づきを書きます。\n\n AIのモデル評価と、保険のシステムレビューは似ている\nG検定のテキストに、機械学習モデルの評価指標が出てきます。精度（Accuracy）・適合率（Precision）・再現率（Recall）・F値（F1スコア）。これらはモデルが「どこで間違え...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
     {
       "title": "LLMの入出力を管理したくなったので主要ツールを比較(Langfuse/LangSmith/Helicone/Phoenix/Opik)",
       "url": "https://zenn.dev/minato_eng/articles/ccdf403570a390",
@@ -104,41 +214,11 @@
       "image_url": ""
     },
     {
-      "title": "GPT-Liveのすごさは「聞きながら話せる」ことではない——本命は推論の外部化という話",
-      "url": "https://zenn.dev/nwn/articles/aa1d97af33bcc6",
-      "site": "Zenn(AI)",
-      "published": "2026-07-12T06:54:10Z",
-      "description": "!\n本記事はAIを活用しつつ、自分の理解をもとにまとめたものです。誤りがあればご指摘いただけると助かります。\n\n2026年7月8日にOpenAIが発表したGPT-Live[1]、話題になっていますね。「聞きながら話せる」フルデュプレックスの会話体験がとにかく注目されていますが、実はフルデュプレックス自体はGPT-Liveの発明ではなく、オープンソースで2年前から存在していました。本質は、軽量な会話...",
-      "category": "AI・技術",
-      "rss_category": "",
-      "image_url": ""
-    },
-    {
       "title": "Macであふw風なファイラがないので作っている",
       "url": "https://zenn.dev/fukurozuno/articles/ccc44dd2171c83",
       "site": "Zenn(AI)",
       "published": "2026-07-12T06:52:34Z",
       "description": "Macで動作するキー操作メインの2画面ファイル管理ソフトを作成しました。(AI感謝)\nこの記事は活動の紹介、および同様の悩みを抱えている方にバイブコーディングを促す目的で書いています。\n「あふw」というファイラをご存知でしょうか。\nWindows上で動作するキーボード操作が主体の２画面形式のファイラでです。\nhttps://afxw.sakura.ne.jp/index.html\nかれこれ十数年お...",
-      "category": "AI・技術",
-      "rss_category": "",
-      "image_url": ""
-    },
-    {
-      "title": "AI時代のプログラミング入門 〜生成AIと二人三脚でコードを書く力を身につける〜",
-      "url": "https://zenn.dev/heki_dm/books/setup-coding-environment",
-      "site": "Zenn(AI)",
-      "published": "2026-07-12T06:30:24Z",
-      "description": "生成AIが当たり前になった時代に、プログラミングをこれから学ぶ人のための入門書。AIツールを使いこなす実践的なコツと、AIがあっても変わらない基礎の考え方をバランスよく解説する。",
-      "category": "AI・技術",
-      "rss_category": "",
-      "image_url": ""
-    },
-    {
-      "title": "複数AIエージェントを並列で走らせる時代の、プロンプトインジェクション的事故の防ぎ方",
-      "url": "https://zenn.dev/dstudylab/articles/multi-agent-safety-design",
-      "site": "Zenn(AI)",
-      "published": "2026-07-12T06:30:18Z",
-      "description": "AIが「ページの中の命令文」を実行してしまう時代\nAIエージェントに調査や作業を任せるのが当たり前になってきました。同時に、エージェントが読み込んだWebページや文書の中に書かれた「指示のような文章」を、本物の指示として実行してしまう——いわゆるプロンプトインジェクション系の事故も、よく話題に上がるようになっています。\n私は個人の作業環境で、複数のAIエージェント（調査担当・実装担当・レビュー担当...",
       "category": "AI・技術",
       "rss_category": "",
       "image_url": ""
@@ -154,51 +234,11 @@
       "image_url": ""
     },
     {
-      "title": "OpenAI「50年物の予想を証明」は本物か——PDFと過去3事例で判定枠組みを作る",
-      "url": "https://zenn.dev/ryuka_lucas/articles/cycle-double-cover-proof",
-      "site": "Zenn(AI)",
-      "published": "2026-07-12T06:18:52Z",
-      "description": "!\n本記事は2026年7月11日時点のスナップショットです。話題が動いている最中の題材のため、公開後に検証状況が変わる可能性があります。何が起きたら本記事の「現在地」判定が更新されるかは、後半の「今回はどの段階にいるか」で扱っています。\n\n2026年7月10日、OpenAIが自社CDN上に1本のPDFを公開した。タイトルは「A PROOF OF THE CYCLE DOUBLE COVER CON...",
-      "category": "AI・技術",
-      "rss_category": "",
-      "image_url": ""
-    },
-    {
-      "title": "Claude Codeに長期記憶を与えるOSSを作った",
-      "url": "https://zenn.dev/tech_nnyannya/articles/14b8f5156f0a20",
-      "site": "Zenn(AI)",
-      "published": "2026-07-12T06:16:05Z",
-      "description": "Claude Codeは毎回ゼロから始まる\nClaude Codeを毎日使っていると、「同じ説明を何度も繰り返している」と感じることがあります。\n\nなぜこのアーキテクチャを選んだのか\nなぜ別の実装案を却下したのか\n将来的にどこを改善する予定なのか\n\nClaude Codeは同じプロジェクトでも、セッションが終われば会話の記憶は消えます。ログ自体は ~/.claude/projects/ にJSON...",
-      "category": "AI・技術",
-      "rss_category": "",
-      "image_url": ""
-    },
-    {
-      "title": "ドラフトを1回で出すDFlash、EAGLE-3の逐次を捨てて6倍高速化",
-      "url": "https://zenn.dev/okssusucha/articles/20260704-dflash-block-diffusion-speculative-decodi",
-      "site": "Zenn(AI)",
-      "published": "2026-07-12T05:57:33Z",
-      "description": "投機的デコード(speculative decoding)は、この2年ですっかり定番の高速化テクになった。小さな「ドラフトモデル」に先の数トークンを予想させ、本命の大きなモデルにまとめて答え合わせさせる。当たっていた分だけ一気に進むので、出力品質を一切変えずに生成が速くなる。理屈はきれいだ。ところが手元で回すと、期待したほど速くならない場面が多い。消費者向けGPUやMoE構成では「速度がほぼ変わら...",
-      "category": "AI・技術",
-      "rss_category": "",
-      "image_url": ""
-    },
-    {
       "title": "承認ボタンの宛先を、人から「指摘0」に付け替えた ── リリースゼロの3日間、C3 自律モード実走記",
       "url": "https://zenn.dev/satoh_y_0323/articles/d33df6623ceb75",
       "site": "Zenn(AI)",
       "published": "2026-07-12T05:54:04Z",
       "description": "前回記事: https://zenn.dev/satoh_y_0323/articles/1352150efe6532\nC3 GitHub: https://github.com/satoh-y-0323/claude-code-conductor / PyPI: https://pypi.org/project/claude-code-conductor/ / 公式ドキュメント: https:/...",
-      "category": "AI・技術",
-      "rss_category": "",
-      "image_url": ""
-    },
-    {
-      "title": "Fable 5が消える前に、Sonnetに残したプロンプト3本",
-      "url": "https://zenn.dev/ai_worklab/articles/fable5-sonnet-3-prompts",
-      "site": "Zenn(AI)",
-      "published": "2026-07-12T05:47:36Z",
-      "description": "「公開した記事を辛口でレビューして」。7 月に公開した自分の記事一式 (Zenn 記事と note の販売ページ) を AI にそう頼んだら、問題点は 15 件挙がったのに、直し方の提案は 0 件でした。「タイトルが 68 字で長すぎる」という指摘はあっても、では何に変えるかの代替案は付いてきません。今朝の、素の Sonnet の話です。\n同じ Sonnet に今日同じ依頼をすると、すべての指摘に...",
       "category": "AI・技術",
       "rss_category": "",
       "image_url": ""
