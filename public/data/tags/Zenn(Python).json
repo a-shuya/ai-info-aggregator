@@ -1,7 +1,7 @@
 {
   "site": "Zenn(Python)",
-  "last_updated": "2026-07-13T16:11:53.922127",
-  "total_articles": 5069,
+  "last_updated": "2026-07-13T18:13:31.252014",
+  "total_articles": 5070,
   "articles": [
     {
       "title": "ROS2の基本概念をPythonコードで理解する【Node・Topic・Service・Action】",
@@ -9,6 +9,26 @@
       "site": "Zenn(Python)",
       "published": "2026-07-13T09:48:22Z",
       "description": "ROS2の「ノード」「トピック」「サービス」「アクション」は、ロボットソフトウェアの基本的な通信パターンです。それぞれどう違うのか、実際のコードで確認します。\n\n\n Node（ノード）\nROS2の実行単位。1プロセス = 1ノードが基本です。\nimport rclpy\nfrom rclpy.node import Node\n\nclass MyNode(Node):\n    def __init__...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "ROS2とPython asyncioを組み合わせた非同期処理【LLM API統合の実装例】",
+      "url": "https://zenn.dev/yamamoshu/articles/python-ros2-async",
+      "site": "Zenn(Python)",
+      "published": "2026-07-13T09:48:22Z",
+      "description": "ROS2でLLM APIを呼ぶとき、「APIの呼び出し（非同期・低速）」と「ロボット制御（同期・高速）」をどう組み合わせるかが問題になります。コールバック内でAPIをブロック呼び出しすると制御が止まります。\n\n\n 問題\n# NG: コールバック内でAPI呼び出しをブロックすると制御が止まる\ndef scan_callback(self, msg):\n    response = requests....",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "競馬AIで回収率100.6%を出し、捨てた — 12年半・61万頭走で見つけた「勝てるモデル」3つの罠",
+      "url": "https://zenn.dev/rindokulab/books/b6af9b1125cb2f",
+      "site": "Zenn(Python)",
+      "published": "2026-07-13T08:41:18Z",
+      "description": "回収率100.6%。ついに競馬市場に勝った――はずだった。\nきっかけは20年前、雀荘で聞いた酔客の「必勝法」。バイオインフォマティクスの研究者になった著者が、12年半・43,247レース・607,198頭走でそれを検証し、17系統の監査から2つのデータリークと「幻のエッジ」を発見した実録。\n最終回収率は88.9%。予測が当たっても、なぜ儲からないのか。時系列機械学習とバックテストの失敗を、再現可能...",
       "category": "開発",
       "rss_category": "",
       "image_url": ""
@@ -99,16 +119,6 @@
       "site": "Zenn(Python)",
       "published": "2026-07-13T00:52:12Z",
       "description": "はじめに\n2026年4月21日、OpenAIはAI画像生成の新モデル「GPT-Image-2」を搭載した「ChatGPT Images 2.0」を公式発表しました。前作GPT Image 1.5から大きく進化した点は、O-seriesベースの「推論（Thinking）」機能を画像生成に統合 したことです。\n本記事では、GPT-Image-2の技術仕様・API実装方法・料金体系を解説します。\n!\nA...",
-      "category": "開発",
-      "rss_category": "",
-      "image_url": ""
-    },
-    {
-      "title": "AIエージェントの記憶引き継ぎ台帳を最小実装する",
-      "url": "https://zenn.dev/agentmemories/articles/memory-handoff-ledger-minimal-implementation",
-      "site": "Zenn(Python)",
-      "published": "2026-07-13T00:41:27Z",
-      "description": "AIエージェントの記憶引き継ぎ台帳を最小実装する\nAIの作業文脈を、担当者やモデルをまたいで引き継ぐための最小台帳設計です。\n\n 前提\nAIエージェントを継続運用すると、会話履歴だけでは足りなくなります。必要なのは、次の実行時に参照できる「作業の正本」です。正本には、決定事項、保留事項、禁止事項、公開済みURL、再発防止のような、次の判断に使う情報だけを残します。\n\n 最小スキーマ\n{\n  \"id...",
       "category": "開発",
       "rss_category": "",
       "image_url": ""
