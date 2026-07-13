@@ -1,8 +1,108 @@
 {
   "site": "Zenn(LLM)",
-  "last_updated": "2026-07-13T04:45:49.130280",
-  "total_articles": 4545,
+  "last_updated": "2026-07-13T07:58:00.985758",
+  "total_articles": 4554,
   "articles": [
+    {
+      "title": "LLMアプリのログにプロンプト全文を残すな：OpenTelemetryで安全に遅延・トークン・コストを追う",
+      "url": "https://zenn.dev/fsgesaiyo/articles/1768026a2197ea",
+      "site": "Zenn(LLM)",
+      "published": "2026-07-13T02:04:09Z",
+      "description": "はじめに\nLLMアプリをデバッグするとき、いちばん簡単なのは、プロンプト全文とLLM出力全文をログに出すことです。\nでも、それを本番でやるのはかなり危険です。\n入力には、ユーザーの個人情報が入るかもしれません。\nプロンプトには、社内ルール、RAGで取得した文書、システム指示が含まれるかもしれません。\nLLMの出力にも、意図せず機密情報が混ざるかもしれません。\nでは、プロンプト全文を保存せずに、どう...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "LLM が生成したコードを理解するためのプロンプト",
+      "url": "https://zenn.dev/shinseitaro/articles/walkthrough-generation-promt",
+      "site": "Zenn(LLM)",
+      "published": "2026-07-13T01:36:48Z",
+      "description": "先日 clojurian slack の #ai-assist-coding チャンネルを読んていた時に、ほぼ vibe-codingで進めたセッションの後、コードの「ウォークスルー（解説文）」を LLM に生成させるプロンプトが上手くいったよ、という話が出ていました。\nスレッドを立てた人は、「LLM に大幅な変更を任せたコードベースで、自分のドメイン知識と全体把握が失われていく」 という悩みを解...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "高級モデルに全部やらせない — 標準機能（skill）だけでカジュアルに実現するマルチモデルの仕組み『delegate-skills』",
+      "url": "https://zenn.dev/oubakiou/articles/c6f632dd0a9e92",
+      "site": "Zenn(LLM)",
+      "published": "2026-07-13T01:00:13Z",
+      "description": "高級モデルに全部やらせない — 標準機能（skill）だけでカジュアルに実現するマルチモデルの仕組み『delegate-skills』\nClaude Fable 5 のような最上位モデルをメインエージェントに据えると、判断の質は上がりますが、コードを大量に読む・機械的に直す・差分を眺めるといった「作業」までフラッグシップ価格で実行することになります。Fable 5 は入力 $10 / 出力 $50...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "SKILL.md訓練ループ、最小構成で再現してみた",
+      "url": "https://zenn.dev/mskbhd/articles/lab-040-skill-mdstub",
+      "site": "Zenn(LLM)",
+      "published": "2026-07-12T23:38:42Z",
+      "description": "元ネタ：スキル最適化 = 深層学習の訓練ループ？\n最近 LayerX 堤さんの記事「Agent Skills自動最適化の研究、中身はほぼ深層学習の訓練ループだった」が話題になった。\n主張をざっくり言うと：\n\nSKILL.md = モデルの重み\n\nタスク実行の軌跡 = 訓練データ\n\n検証信号（pass/fail） = 損失関数\n\nテキスト編集 = 勾配による重み更新\n\n\nつまり「LLMエージェントに...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "AIペルソナをJSONでバックアップ・復元・検証する——PIM-DBSというユーザー側プロトコルの設計",
+      "url": "https://zenn.dev/blacksmith_5001/articles/9bf37ddde04282",
+      "site": "Zenn(LLM)",
+      "published": "2026-07-12T23:30:05Z",
+      "description": "TL;DR\n\nAIペルソナ(人格設定+関係性文脈)を、ユーザー側でJSON1枚にバックアップし、復元し、復元が成功したかを検証するためのプロトコルを作って公開した\n新技術ゼロ。JSON・プロンプト・単一HTMLだけ(枯れた技術の水平思考)\n設計はすべて実際に起きた2件の事故の再発防止から逆算した\nMIT、無料 → リポジトリ / No-API体験版(キー不要・2分) / ブラウザデモ(BYOK)\n...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "REFRAGの前提を自分のZenn記事で実測してみた",
+      "url": "https://zenn.dev/mskbhd/articles/lab-075-refrag-realdata",
+      "site": "Zenn(LLM)",
+      "published": "2026-07-12T23:29:01Z",
+      "description": "REFRAGの前提を、自分のZenn記事コーパスで実測してみた\n\n 前回のもやもや\n以前、MetaのREFRAG論文を検証した記事を書きました。\n\nRAGレイテンシ、Meta REFRAGで30倍速くなる?検証\n\nREFRAGの主張はこうでした:\n\n80個の検索チャンクをLLMに送っても、実際に効くのは5〜10個だけ。残りはフルコストでアテンション計算を食うだけ。\n\n前回はこれを**シミュレーショ...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "世界的なGPU不足の中で、どうやって安定したAI推論を提供するか",
+      "url": "https://zenn.dev/romanark/articles/fde9d41724eda2",
+      "site": "Zenn(LLM)",
+      "published": "2026-07-12T21:55:07Z",
+      "description": "ChatGPT のようなサービスは、いつアクセスしてもすぐに応答してくれます。そのため、GPU が不足していると言われても、実感がない人も多いかもしれません。\nしかし、その裏側では大量のGPU と高度なインフラが使われています。同じ安定性を限られた予算で実現するのは簡単ではありません。\n\n GPU は『安いが不安定』か『高いが安定』\nクラウドでGPUを借りる方法は、大きく2つあります。\n\n\nOn-...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "議事録要約が会議タイプで精度が変わる理由、優先順位プロンプトで頻度バイアスを崩す",
+      "url": "https://zenn.dev/every_ai_recipe/articles/ai-minutes-meeting-type-prompts",
+      "site": "Zenn(LLM)",
+      "published": "2026-07-12T21:08:42Z",
+      "description": "TL;DR\n\n同じ「議事録にして」という自由形式の指示でも、会議の目的（定例進捗／意思決定／ブレスト）によって欲しい情報の優先順位は違うのに、LLMには目的を推測させていた\n優先順位を与えない要約は、モデルにとって「本文のどこが重要か」を自力で見積もる暗黙のsalience推定タスクになる。発言量の多いトピック（進捗報告のような話が長引きやすい話題）ほど言語的な手がかりが厚く、頻度バイアスで抽出さ...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "Anthropic Managed Agentsで\"走った記録を読み物にする\"システムを作って実運用した話——Memoryが育つまで",
+      "url": "https://zenn.dev/make_dog/articles/da432df0939416",
+      "site": "Zenn(LLM)",
+      "published": "2026-07-12T20:51:06Z",
+      "description": "Anthropic Managed Agentsで「走った記録を読み物にする」システムを作って実運用した話\n\n\n 何を作ったか\n自転車で走った記録(GPX)を投げると、AIエージェントがライドレポート——数値の羅列ではなく、その日の走りを綴った読み物——を生成するシステムを個人で作り、実運用している。\nまず現物を見てもらうのが早い。\n\n生成されたレポートの例(暗峠ライド): https://cyc...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "塾講師6年目、AIで教材づくりはこう変わった — 個別指導の現場で実際に使っている型3つ",
+      "url": "https://zenn.dev/dstudylab/articles/juku-ai-teaching-materials",
+      "site": "Zenn(LLM)",
+      "published": "2026-07-12T16:31:01Z",
+      "description": "教材づくりは「授業の外」で一番時間を食う仕事\n私は大学1年から6年以上、個別指導塾で小中高生に数学・英語・理科を教えています。個別指導の現場で時間を食うのは、実は授業そのものではなく授業の外の仕込みです。\n\nこの子が昨日間違えた問題の類題を、次回までに数問用意したい\n教科書の説明でピンと来ていないので、別の切り口の解説を作りたい\n定期テスト前に、その子の穴だけを突いた確認プリントがほしい\n\n個別指...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
     {
       "title": "オープンソースLLM×Colab無料GPUでClaude Codeは代替できるか：やって分かった現実",
       "url": "https://zenn.dev/personal/articles/20260711-colab-ollama-claude-code",
@@ -99,16 +199,6 @@
       "site": "Zenn(LLM)",
       "published": "2026-07-12T09:38:06Z",
       "description": "背景\nいま進めているプロジェクトで、LLMの入出力をちゃんと管理する必要が出てきました。開発中の試行錯誤なら都度ログを眺めれば済みますが、継続的に運用するとなると話が変わってきます。\n\nどの入力に対してどんな出力が返ったかを、後から検索・追跡できる形で残したい\n1リクエストの中で複数回LLMを呼ぶ処理の、どのステップで何が起きたかを追いたい\n\nトークン数とコストを集計して、費用の内訳を把握したい\n...",
-      "category": "AI・技術",
-      "rss_category": "",
-      "image_url": ""
-    },
-    {
-      "title": "LLMの思考ラグを隠蔽！ストリーミング×非同期カスケード処理で作る超低遅延AI対話システム",
-      "url": "https://zenn.dev/aqwert/articles/3d86a322267a40",
-      "site": "Zenn(LLM)",
-      "published": "2026-07-12T09:30:05Z",
-      "description": "はじめに\n前回は、CSV台本から動画用の音声ファイルを自動生成するシステム（バッチモード）について紹介しました。\n今回はそこから一歩進み、「ユーザー（視聴者）のコメントに対して、AIキャラクターがほぼリアルタイムで喋り返す」超低遅延なリアルタイム対話システムの仕組みを解説します。\nAIに喋らせる際、最大の課題となるのがLLMの文章生成待ち時間 と 音声合成の処理時間です。これを単純な順次処理で書く...",
       "category": "AI・技術",
       "rss_category": "",
       "image_url": ""

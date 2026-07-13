@@ -1,8 +1,68 @@
 {
   "site": "Zenn(Google Cloud)",
-  "last_updated": "2026-07-13T04:45:49.130280",
-  "total_articles": 1461,
+  "last_updated": "2026-07-13T07:58:00.985758",
+  "total_articles": 1467,
   "articles": [
+    {
+      "title": "Databricks Managed Agent Memory (Beta版) と GCP Memory Bank の違いについて",
+      "url": "https://zenn.dev/ttomo_tommy/articles/58869d09a438ad",
+      "site": "Zenn(Google Cloud)",
+      "published": "2026-07-13T07:42:39Z",
+      "description": "結論\n両者の共通点は「記憶の判断はLLM任せ」、違いは「その判断機構をサービスが内蔵するか、実装に委ねるか」です。\n\n\nDatabricks Managed Agent Memory：プラットフォームはAPIのみを提供し、何をいつどう記憶するかの判断は呼び出し側の実装に委ねる\n\nGCP Agent Platform Memory Bank：サービス側のGeminiが抽出→統合を実行する2ステップ処...",
+      "category": "クラウド",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "Cloud SQLを営業時間外だけ自動停止してコスト削減した話",
+      "url": "https://zenn.dev/sanyodo/articles/8c5013fed3aaa7",
+      "site": "Zenn(Google Cloud)",
+      "published": "2026-07-13T06:49:27Z",
+      "description": "はじめに\n社内向けに作ったちょっとした小規模アプリを、Google Cloud 上で動かしています。\n構成はざっくり以下のような感じです。\nCloud Run\nCloud SQL\nSecret Manager\nお名前.comで管理している独自ドメイン\nこのアプリ自体は、ガッツリ常時使われるものではなく、\nリアルタイムで誰か1人が触っている時間があるかな～くらいの利用頻度でした。\nにもかかわらず、G...",
+      "category": "クラウド",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "Migrate to Virtual MachinesによるオンプレミスVMware環境からの低ダウンタイム自動移行パターン",
+      "url": "https://zenn.dev/kat/articles/332087a7a2ab53",
+      "site": "Zenn(Google Cloud)",
+      "published": "2026-07-13T01:00:13Z",
+      "description": "1. 対象ワークロードと最適化のシチュエーション\n本パターンは、オンプレミス環境からクラウドへの確実な移行を自動化パイプラインで実現する 「エンタープライズ大規模リフト＆シフト（VMマイグレーション）」 を対象としています。\n\n\n対象ワークロード\nオンプレミスのVMware vSphere等の仮想化基盤上で稼働する、多数の仮想マシン群（Red Hat Enterprise LinuxやWindow...",
+      "category": "クラウド",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "Google Cloud Storageの非公開バケットで静的ウェブサイトをホスティングする方法",
+      "url": "https://zenn.dev/quantum/articles/fe7155111b66a8",
+      "site": "Zenn(Google Cloud)",
+      "published": "2026-07-13T00:30:18Z",
+      "description": "TL;DR\n\nCloud Storageでウェブサイトをホスティングする場合、通常はバケットの一般ユーザー（allUsers）に「Storage オブジェクト閲覧者」ロールを付与して公開します。しかし、このロールをバケットに付与せずに、静的ウェブサイトをホスティングすることもできます。\nCloud Storageバケットに対して、「Cloud CDN でのプライベート オリジンの認証」のサービスア...",
+      "category": "クラウド",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "Cloud Run Functions + GCS + Eventarc 構成でハマった同時実行の落とし穴",
+      "url": "https://zenn.dev/gakken_leap/articles/1154c720136dce",
+      "site": "Zenn(Google Cloud)",
+      "published": "2026-07-13T00:00:22Z",
+      "description": "はじめに\nどうも、@to_fmakです。最近、Cloud Storage へのオブジェクトアップロードをトリガーに Cloud Run Functions を起動する構成で、500 エラーが頻発する事象に遭遇しました。\n原因はコールドスタートと同時実行設定のミスマッチでした。Cloud Run の挙動を正しく理解していないと気づきにくいポイントだったため、事象・原因・対応策を本記事にまとめます。\n...",
+      "category": "クラウド",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "非エンジニアが自作アプリを社内にデプロイできる基盤を作った話",
+      "url": "https://zenn.dev/hacobell_dev/articles/369ff476324aae",
+      "site": "Zenn(Google Cloud)",
+      "published": "2026-07-13T00:00:20Z",
+      "description": "こんにちは、ハコベルでVPoTを務めている横山です。\nハコベルでは、エンジニア以外のメンバーに対しても生成AIツールの利用を推進しています。Claude Codeを配布したことで、非エンジニアでも自分の手元では業務改善ができるようになりました。一方で、作った仕組みをチームの他メンバーに展開するのが難しいという課題がありました。\nそこで、非エンジニアでも自作アプリを社内限定URLにデプロイできる基盤...",
+      "category": "クラウド",
+      "rss_category": "",
+      "image_url": ""
+    },
     {
       "title": "GCP Private Service Connect を使用したプライベート接続の検証メモ",
       "url": "https://zenn.dev/idempotency_p/articles/8a319b42c398d1",
