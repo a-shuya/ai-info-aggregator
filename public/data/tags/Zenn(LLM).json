@@ -1,8 +1,128 @@
 {
   "site": "Zenn(LLM)",
-  "last_updated": "2026-07-13T13:36:14.935201",
-  "total_articles": 4561,
+  "last_updated": "2026-07-13T16:11:53.922127",
+  "total_articles": 4572,
   "articles": [
+    {
+      "title": "GATSを読み解く、計画中のLLM呼び出しを0回へ寄せる3層設計",
+      "url": "https://zenn.dev/hironakamura_ai/articles/54881f76884bd2",
+      "site": "Zenn(LLM)",
+      "published": "2026-07-13T11:11:28Z",
+      "description": "朝、CIのログを見ながら「この順に直せば通る」と組んだ手順を、エージェントにも渡せないか考えていた。既知の作業なのに、分岐ごとにLLMへ次の一手を聞く構成は重い。\nGATSは、計画中の推論をLLMに毎回任せず、状態遷移をグラフに貯め、分かるものから安い層で答える。著者の実験では、LATSが1タスクあたり37回LLMを呼んだのに対し、GATSの計画中の呼び出しは0回だ。数字は合成タスク中心で、本番の...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "AIとの個人開発で4度騙されて、開発手法を更新した話",
+      "url": "https://zenn.dev/coregrowthlabs/articles/0a3e0b0bd6eef4",
+      "site": "Zenn(LLM)",
+      "published": "2026-07-13T11:03:50Z",
+      "description": "はじめに\nAIは便利です。\nですが、「もっともらしい嘘」を驚くほど自然につきます。\n私は現在、AIとの対話を通じてソフトウェアを設計する手法 Core Growth Prompting（CGP） をGitHubでオープンソースとして公開しています。\nしかし、CGPは最初から完成された方法論ではありませんでした。\n実際に私は「3行日記＋ヘルスケアアプリ」の開発中、この「もっともらしい誤り」に4度遭遇...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "ROS2とPython asyncioを組み合わせた非同期処理【LLM API統合の実装例】",
+      "url": "https://zenn.dev/yamamoshu/articles/python-ros2-async",
+      "site": "Zenn(LLM)",
+      "published": "2026-07-13T09:48:22Z",
+      "description": "ROS2でLLM APIを呼ぶとき、「APIの呼び出し（非同期・低速）」と「ロボット制御（同期・高速）」をどう組み合わせるかが問題になります。コールバック内でAPIをブロック呼び出しすると制御が止まります。\n\n\n 問題\n# NG: コールバック内でAPI呼び出しをブロックすると制御が止まる\ndef scan_callback(self, msg):\n    response = requests....",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "音声AIエージェントの全体構成を理解する 〜STT・LLM・TTS・SIP・RTPの役割分担〜",
+      "url": "https://zenn.dev/sipbridge/articles/02_voice_ai_agent_architecture",
+      "site": "Zenn(LLM)",
+      "published": "2026-07-13T09:42:49Z",
+      "description": "1. この記事で伝えたいこと\nChatGPTをはじめとするテキストチャットAIの波に続き、電話やマイク越しで自然に会話ができる「リアルタイム音声AIエージェント」の開発が活発化しています。\nしかし、音声AIを支える技術要素は多岐にわたり、Web開発の知識だけでは全体像が見えにくいのが現状です。\n本記事では、受話器を持ってダイヤルしてからAIが応答し、音声が双方向に流れるまでの**「音声AIエージェ...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "CLAUDE.md/AGENTS.mdは「書けば効く」ではない——指示ファイルを痩せさせる実務",
+      "url": "https://zenn.dev/seiri_dev/articles/eca7dc89261ab8",
+      "site": "Zenn(LLM)",
+      "published": "2026-07-13T09:30:02Z",
+      "description": "良かれと思って足した指示が、コストだけ増やしていた\nCLAUDE.mdやAGENTS.mdに「このリポジトリはこういう構成で〜」「まずREADMEを読んでから作業して〜」と丁寧な説明を書き足した経験がある人は多いと思います。エージェントに文脈を渡せば渡すほど賢く動いてくれそうな感覚があるからです。\nところが2026年2月にETH Zurich SRI Labが公開した検証（Gloaguen et ...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "LLMに折り紙は折れるのか？ COrigamiに見る生成AIと幾何アルゴリズムの分業",
+      "url": "https://zenn.dev/epicai_techblog/articles/bd27edab711e81",
+      "site": "Zenn(LLM)",
+      "published": "2026-07-13T09:00:07Z",
+      "description": "はじめに\n「複雑に枝分かれした、ギザギザの立派な角を持つ雄のヘラジカ」の折り紙を作れ！と言われたら、作れますか？\n先月公開された COrigami: An AI Pipeline for Co-Designing Flat-Foldable Visually Recognisable Origami という論文では、この「テキスト → 折り紙の展開図」の過程を自動で行う AI パイプラインが提示さ...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "Apple IntelligenceのローカルLLMをPythonから呼び出したい",
+      "url": "https://zenn.dev/mu_ta/articles/123d46bfc843b2",
+      "site": "Zenn(LLM)",
+      "published": "2026-07-13T08:00:17Z",
+      "description": "はじめに\n今回はApple Intelligenceのオンデバイスモデルを\nFoundation Models API経由で、使い慣れてるPythonからさくっとローカル呼び出ししてみたいと思います。\n後半ではベンチっぽいものも測定してみたいと思います。\nまず仕様と要件をおさらいします。\n\n 1. Apple SystemLanguageModelの仕様\n\n 基本特性\n\n\n\n項目\n内容\n\n\n\n\nモ...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "AI エージェントに足りないのは賢さではなく記憶。捨てた設計を思い出させる開発プロセス EID を作った",
+      "url": "https://zenn.dev/ryu1maniwa25/articles/executable-intent-development",
+      "site": "Zenn(LLM)",
+      "published": "2026-07-13T07:48:58Z",
+      "description": "はじめに\nClaude Code が、半年前に捨てた設計を蒸し返してきたことはないだろうか。当時さんざん検討して却下したはずの案を、新しいセッションが最良の解として堂々と提案してくる。\n人間のチームなら、誰かが「それ前に試してダメだったよ」と言ってくれる。エージェントにはその誰かがいない。セッションを跨ぐとコンテキストがリセットされる仕組みの問題なので、モデルが賢くなっても勝手には直らない。長期記...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "AIエージェントの実行戦略12パターンまとめ",
+      "url": "https://zenn.dev/box2box/articles/agent-execution-strategies",
+      "site": "Zenn(LLM)",
+      "published": "2026-07-13T07:29:00Z",
+      "description": "この記事について\nLLM を使ったエージェントを作っていると、最初は「1つのエージェントにツールを持たせて全部やらせる」形から始めます。ですが規模が大きくなると、それだけでは精度・速度・コストのどこかが破綻します。\nそこで効いてくるのが**「複数のエージェントをどう並べて動かすか」= 実行戦略です。この記事では、実装で使える実行戦略を 基本4つ + 応用8つ = 12パターンに整理し、それぞれ「仕...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "AI臭は語彙よりリズムに出る - 自然な日本語を書くAgent Skillと7モデル×406本の実測",
+      "url": "https://zenn.dev/coji/articles/natural-japanese-ai-smell-lint",
+      "site": "Zenn(LLM)",
+      "published": "2026-07-13T07:27:42Z",
+      "description": "これはなに？\nAIが書いた日本語を自然な日本語に直すAgent Skill、natural-japanese を作りました。Claude CodeやCodexで動きます。プロンプトで「自然に書いて」とお願いする代わりに、AI臭を機械的に検出するlintをスキルの工程に組み込みました。そのlintの閾値は、人間の文章137本とAIの文章406本のコーパスで校正しています。\nこの記事では、まず「本当に...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "NumPyだけでSVD圧縮とLoRAを体感する ― SVDで理解する現代AIの数学（最終回）",
+      "url": "https://zenn.dev/schhrcat/articles/ede64045ee703a",
+      "site": "Zenn(LLM)",
+      "published": "2026-07-13T06:06:55Z",
+      "description": "!\n本記事は、Zenn本『線形代数からLLM圧縮とLoRAまで ― SVDで理解する現代AIの数学』（無料）をベースにした連載の最終回だ。第1回〜第4回で、線形代数の基礎 → SVD → LLM圧縮 → LoRA と理論を積み上げてきた。今回はすべてをNumPyで手の中に落とす。\n\n\n 方針：ライブラリは NumPy と Matplotlib だけ\n理論は手を動かして初めて自分のものになる。今回は...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "Hidden Decoding: 配列長スケーリングで固定Transformerをfrontierへ",
+      "url": "https://zenn.dev/lixian/articles/hidden-decoding-scale",
+      "site": "Zenn(LLM)",
+      "published": "2026-07-13T05:36:04Z",
+      "description": "TL;DR\nWeChat AIチームが提案するHidden Decodingは、既存のTransformerバックボーンを固定したまま、各トークンに与える内部計算量を配列長（sequence length）方向に拡張する手法だ。1つのトークンを n 個の独立ストリームに展開し、中間ストリームを損失関数から外すことで「見えない推論」を促進する。Stream-Factorized Attentionに...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
     {
       "title": "Claude Codeは応答前に3.3万トークン消費、OpenCodeは7千",
       "url": "https://zenn.dev/salt2/articles/claude-code-3-3-opencode-7-c7716f3e",
@@ -58,7 +178,7 @@
       "url": "https://zenn.dev/oubakiou/articles/c6f632dd0a9e92",
       "site": "Zenn(LLM)",
       "published": "2026-07-13T01:00:13Z",
-      "description": "高級モデルに全部やらせない — 標準機能（skill）だけでカジュアルに実現するマルチモデルの仕組み『delegate-skills』\nClaude Fable 5 のような最上位モデルをメインエージェントに据えると、判断の質は上がりますが、コードを大量に読む・機械的に直す・差分を眺めるといった「作業」までフラッグシップ価格で実行することになります。Fable 5 は入力 $10 / 出力 $50...",
+      "description": "Claude Fable 5 のような最上位モデルをメインエージェントに据えると、判断の質は上がりますが、コードを大量に読む・機械的に直す・差分を眺めるといった「作業」までフラッグシップ価格で実行することになります。Fable 5 は入力 $10 / 出力 $50（1M トークンあたり）。一方で Claude Haiku 4.5 は $1 / $5 です。単純作業にまで 10 倍の料金を払う必要は...",
       "category": "AI・技術",
       "rss_category": "",
       "image_url": ""
@@ -79,16 +199,6 @@
       "site": "Zenn(LLM)",
       "published": "2026-07-13T00:51:32Z",
       "description": "Sakana AI は Fugu の上位版（Fugu Ultra）について「一部のタスクで Claude Mythos Preview や Fable 5 を超える性能」と謳っています（ITmedia の報道による。Terminal-Bench 2.1 で Fable 5 超え・Charxiv Reasoning で Mythos Preview 超え、一方 Humanity's Last Exa...",
-      "category": "AI・技術",
-      "rss_category": "",
-      "image_url": ""
-    },
-    {
-      "title": "AIエージェントの記憶引き継ぎ台帳を最小実装する",
-      "url": "https://zenn.dev/agentmemories/articles/memory-handoff-ledger-minimal-implementation",
-      "site": "Zenn(LLM)",
-      "published": "2026-07-13T00:41:27Z",
-      "description": "AIエージェントの記憶引き継ぎ台帳を最小実装する\nAIの作業文脈を、担当者やモデルをまたいで引き継ぐための最小台帳設計です。\n\n 前提\nAIエージェントを継続運用すると、会話履歴だけでは足りなくなります。必要なのは、次の実行時に参照できる「作業の正本」です。正本には、決定事項、保留事項、禁止事項、公開済みURL、再発防止のような、次の判断に使う情報だけを残します。\n\n 最小スキーマ\n{\n  \"id...",
       "category": "AI・技術",
       "rss_category": "",
       "image_url": ""

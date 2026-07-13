@@ -1,7 +1,7 @@
 {
   "site": "Zenn(Python)",
-  "last_updated": "2026-07-13T13:36:14.935201",
-  "total_articles": 5071,
+  "last_updated": "2026-07-13T16:11:53.922127",
+  "total_articles": 5069,
   "articles": [
     {
       "title": "ROS2の基本概念をPythonコードで理解する【Node・Topic・Service・Action】",
@@ -9,16 +9,6 @@
       "site": "Zenn(Python)",
       "published": "2026-07-13T09:48:22Z",
       "description": "ROS2の「ノード」「トピック」「サービス」「アクション」は、ロボットソフトウェアの基本的な通信パターンです。それぞれどう違うのか、実際のコードで確認します。\n\n\n Node（ノード）\nROS2の実行単位。1プロセス = 1ノードが基本です。\nimport rclpy\nfrom rclpy.node import Node\n\nclass MyNode(Node):\n    def __init__...",
-      "category": "開発",
-      "rss_category": "",
-      "image_url": ""
-    },
-    {
-      "title": "ROS2とPython asyncioを組み合わせた非同期処理【LLM API統合の実装例】",
-      "url": "https://zenn.dev/yamamoshu/articles/python-ros2-async",
-      "site": "Zenn(Python)",
-      "published": "2026-07-13T09:48:22Z",
-      "description": "ROS2でLLM APIを呼ぶとき、「APIの呼び出し（非同期・低速）」と「ロボット制御（同期・高速）」をどう組み合わせるかが問題になります。コールバック内でAPIをブロック呼び出しすると制御が止まります。\n\n\n 問題\n# NG: コールバック内でAPI呼び出しをブロックすると制御が止まる\ndef scan_callback(self, msg):\n    response = requests....",
       "category": "開発",
       "rss_category": "",
       "image_url": ""
@@ -64,31 +54,11 @@
       "image_url": ""
     },
     {
-      "title": "Apple IntelligenceのローカルLLMをPythonから呼び出したい",
-      "url": "https://zenn.dev/mu_ta/articles/123d46bfc843b2",
-      "site": "Zenn(Python)",
-      "published": "2026-07-13T08:00:17Z",
-      "description": "はじめに\n今回はApple Intelligenceのオンデバイスモデルを\nFoundation Models API経由で、使い慣れてるPythonからさくっとローカル呼び出ししてみたいと思います。\n後半ではベンチっぽいものも測定してみたいと思います。\nまず仕様と要件をおさらいします。\n\n 1. Apple SystemLanguageModelの仕様\n\n 基本特性\n\n\n\n項目\n内容\n\n\n\n\nモ...",
-      "category": "開発",
-      "rss_category": "",
-      "image_url": ""
-    },
-    {
       "title": "Python を使用して HTML を Excel に変換する",
       "url": "https://zenn.dev/techblogger/articles/d4e5c9c1a93497",
       "site": "Zenn(Python)",
       "published": "2026-07-13T07:35:40Z",
       "description": "Web 上で公開されている表データを Excel で加工したい、あるいは HTML メールに含まれる表をスプレッドシートとして管理したいといったニーズは、日常的に多くあります。HTML の &lt;table&gt; タグで構成された表は Excel のセル構造と対応関係にあるため、プログラミングで変換することが比較的容易です。手作業でコピー＆ペーストする代わりに Python を使えば、大量の ...",
-      "category": "開発",
-      "rss_category": "",
-      "image_url": ""
-    },
-    {
-      "title": "NumPyだけでSVD圧縮とLoRAを体感する ― SVDで理解する現代AIの数学（最終回）",
-      "url": "https://zenn.dev/schhrcat/articles/ede64045ee703a",
-      "site": "Zenn(Python)",
-      "published": "2026-07-13T06:06:55Z",
-      "description": "!\n本記事は、Zenn本『線形代数からLLM圧縮とLoRAまで ― SVDで理解する現代AIの数学』（無料）をベースにした連載の最終回だ。第1回〜第4回で、線形代数の基礎 → SVD → LLM圧縮 → LoRA と理論を積み上げてきた。今回はすべてをNumPyで手の中に落とす。\n\n\n 方針：ライブラリは NumPy と Matplotlib だけ\n理論は手を動かして初めて自分のものになる。今回は...",
       "category": "開発",
       "rss_category": "",
       "image_url": ""
@@ -129,6 +99,16 @@
       "site": "Zenn(Python)",
       "published": "2026-07-13T00:52:12Z",
       "description": "はじめに\n2026年4月21日、OpenAIはAI画像生成の新モデル「GPT-Image-2」を搭載した「ChatGPT Images 2.0」を公式発表しました。前作GPT Image 1.5から大きく進化した点は、O-seriesベースの「推論（Thinking）」機能を画像生成に統合 したことです。\n本記事では、GPT-Image-2の技術仕様・API実装方法・料金体系を解説します。\n!\nA...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "AIエージェントの記憶引き継ぎ台帳を最小実装する",
+      "url": "https://zenn.dev/agentmemories/articles/memory-handoff-ledger-minimal-implementation",
+      "site": "Zenn(Python)",
+      "published": "2026-07-13T00:41:27Z",
+      "description": "AIエージェントの記憶引き継ぎ台帳を最小実装する\nAIの作業文脈を、担当者やモデルをまたいで引き継ぐための最小台帳設計です。\n\n 前提\nAIエージェントを継続運用すると、会話履歴だけでは足りなくなります。必要なのは、次の実行時に参照できる「作業の正本」です。正本には、決定事項、保留事項、禁止事項、公開済みURL、再発防止のような、次の判断に使う情報だけを残します。\n\n 最小スキーマ\n{\n  \"id...",
       "category": "開発",
       "rss_category": "",
       "image_url": ""
@@ -204,11 +184,11 @@
       "image_url": ""
     },
     {
-      "title": "# 祖母と見た相撲を、予測モデルで追いかけてみた――Sumo Predictorと初日の結果",
+      "title": "# 相撲を予測モデルで追いかけてみた――Sumo Predictorと初日の結果",
       "url": "https://zenn.dev/njomote/articles/384d77aef36dff",
       "site": "Zenn(Python)",
       "published": "2026-07-12T11:48:13Z",
-      "description": "祖母と見た相撲を、予測モデルで追いかけてみた――Sumo Predictorと初日の結果\n\nご注意 この記事で紹介する予測は、日本相撲協会とは関係のない個人研究です。未来の勝敗を保証するものではありません。\n\n相撲の過去データから、幕内の取組と勝敗を予測する「Sumo Predictor」というプロジェクトを作っています。\n技術の話に入る前に、まずは実際の予測がどうだったのか。2026年7月場所初...",
+      "description": "相撲を予測モデルで追いかけてみた――Sumo Predictorと初日の結果\n\nご注意 この記事で紹介する予測は、日本相撲協会とは関係のない個人研究です。未来の勝敗を保証するものではありません。\n\n相撲の過去データから、幕内の取組と勝敗を予測する「Sumo Predictor」というプロジェクトを作っています。\n技術の話に入る前に、まずは実際の予測がどうだったのか。2026年7月場所初日の結果から...",
       "category": "開発",
       "rss_category": "",
       "image_url": ""
