@@ -1,8 +1,88 @@
 {
   "site": "Zenn(生成 AI)",
-  "last_updated": "2026-07-13T07:58:00.985758",
-  "total_articles": 2833,
+  "last_updated": "2026-07-13T11:23:21.455980",
+  "total_articles": 2841,
   "articles": [
+    {
+      "title": "GATSを読み解く、計画中のLLM呼び出しを0回へ寄せる3層設計",
+      "url": "https://zenn.dev/hironakamura_ai/articles/54881f76884bd2",
+      "site": "Zenn(生成 AI)",
+      "published": "2026-07-13T11:11:28Z",
+      "description": "朝、CIのログを見ながら「この順に直せば通る」と組んだ手順を、エージェントにも渡せないか考えていた。既知の作業なのに、分岐ごとにLLMへ次の一手を聞く構成は重い。\nGATSは、計画中の推論をLLMに毎回任せず、状態遷移をグラフに貯め、分かるものから安い層で答える。著者の実験では、LATSが1タスクあたり37回LLMを呼んだのに対し、GATSの計画中の呼び出しは0回だ。数字は合成タスク中心で、本番の...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "非エンジニアがClaude Codeに「1行も書かず」FX自動売買botを作らせて、自分の金で検証した記録",
+      "url": "https://zenn.dev/crow_claudec/articles/e27582df12dccb",
+      "site": "Zenn(生成 AI)",
+      "published": "2026-07-13T11:00:05Z",
+      "description": "先に結論から（忙しい人向け）\n\n\nコードを1行も書かず・読まず、Claude CodeにFX自動売買bot（USD/JPY, GMOコインFX API）を作らせ、実弾3万円で稼働させた。\n過去データの検証（バックテスト）は、楽観的な前提だと「2年+88%（年率約43%）」。だが前提を現実に寄せると年率27〜33%・PF1.1台まで落ちた。エッジ（優位性）は、あるにはあるが薄い。\n記念すべき初トレー...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "Databricks Generative AI Engineer Associateに合格しました",
+      "url": "https://zenn.dev/khorosho/articles/e7e5f1b2ee54f5",
+      "site": "Zenn(生成 AI)",
+      "published": "2026-07-13T09:57:18Z",
+      "description": "はじめに\nDatabricks Certified Generative AI Engineer Associate に合格しました。\n私は普段、SnowflakeやDatabricksを使ったデータ基盤構築、ETL/ELT、データ活用支援などを中心に仕事をしています。\nもともとDatabricksについては、Snowflakeに近いデータ基盤の一つだと捉えていました。\nデータウェアハウスやDel...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "AI臭は語彙よりリズムに出る - 自然な日本語を書くAgent Skillと7モデル×406本の実測",
+      "url": "https://zenn.dev/coji/articles/natural-japanese-ai-smell-lint",
+      "site": "Zenn(生成 AI)",
+      "published": "2026-07-13T07:27:42Z",
+      "description": "これはなに？\nAIが書いた日本語を自然な日本語に直すAgent Skill、natural-japanese を作りました。Claude CodeやCodexで動きます。プロンプトで「自然に書いて」とお願いする代わりに、AI臭を機械的に検出するlintをスキルの工程に組み込みました。そのlintの閾値は、人間の文章137本とAIの文章406本のコーパスで校正しています。\nこの記事では、まず「本当に...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "生成はループにするな、検証をループにしろ ― ループエンジニアリングを個人のClaude Code運用に入れた話",
+      "url": "https://zenn.dev/noirai/articles/e0753835991f2a",
+      "site": "Zenn(生成 AI)",
+      "published": "2026-07-13T06:55:34Z",
+      "description": "「ループエンジニアリング」という言葉が急に増えました。Addy Osmani 氏が2026年6月に名前を付け、Claude Code 公式も「Getting started with loops」を出しています。\n要するに、人間が毎回プロンプトを打つ役を、仕組みそのものに置き換えるという話です。プロンプトエンジニアリング → コンテキストエンジニアリング → ハーネスエンジニアリング と来て、その...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "claude -pのモデルをsonnetからopusに切り替えたら、速さ・長さ・値段が揃って別物になった",
+      "url": "https://zenn.dev/numarn/articles/claude-model-tier-switch-handson",
+      "site": "Zenn(生成 AI)",
+      "published": "2026-07-13T04:39:46Z",
+      "description": "claude -p(Claude Codeを対話なしで1回だけ呼ぶモード)には --model というオプションがあり、応答するモデルを指定できます。以前、モデルが実際に切り替わっているかどうかをJSON出力で1回だけ確認したことがあったのですが、そのときは「切り替わることの確認」で終わっていて、切り替えると何がどれくらい変わるのかまでは見ていませんでした。\n今回は同じ質問を claude-son...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "ツクリンクのエンジニアリンググループ 14期の振り返りと15期の挑戦",
+      "url": "https://zenn.dev/tsukulink/articles/2026-07-engineering-group",
+      "site": "Zenn(生成 AI)",
+      "published": "2026-07-13T04:12:48Z",
+      "description": "ごきげんよう🙋‍♀️ツクリンクでエンジニアリングマネージャーをしているあっきー(@kuronekopunk)です。\nツクリンクは2026年7月で創業から14年が経ち、15期に入ります。\nこの記事では、14期にエンジニアリンググループで取り組んできたことと、15期にどのような挑戦をしていきたいかをまとめました。\n\n 14期の振り返り\nエンジニアリンググループの組織構成や技術スタックについては、202...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "非エンジニアが自作アプリを社内にデプロイできる基盤を作った話",
+      "url": "https://zenn.dev/hacobell_dev/articles/369ff476324aae",
+      "site": "Zenn(生成 AI)",
+      "published": "2026-07-13T00:00:20Z",
+      "description": "こんにちは、ハコベルでVPoTを務めている横山です。\nハコベルでは、エンジニア以外のメンバーに対しても生成AIツールの利用を推進しています。Claude Codeを配布したことで、非エンジニアでも自分の手元では業務改善ができるようになりました。一方で、作った仕組みをチームの他メンバーに展開するのが難しいという課題がありました。\nそこで、非エンジニアでも自作アプリを社内限定URLにデプロイできる基盤...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
     {
       "title": "個人参加の2人が3日で技術書『環境差分との戦い』を書き、Bookathonで受賞するまで",
       "url": "https://zenn.dev/takashishibata/articles/f39770e620cf15",
