@@ -1,34 +1,54 @@
 {
   "site": "Zenn(Python)",
-  "last_updated": "2026-07-13T19:54:19.355310",
-  "total_articles": 5070,
+  "last_updated": "2026-07-13T21:00:18.449764",
+  "total_articles": 5074,
   "articles": [
+    {
+      "title": "Python - 直和型の定義サンプル（Union Type）",
+      "url": "https://zenn.dev/garigngr/articles/2d2c483fac47eb",
+      "site": "Zenn(Python)",
+      "published": "2026-07-13T18:07:35Z",
+      "description": "Rust の enum のような概念を、 Python でも定義したいと思いまとめた記事です。\n\n 動作環境\n\nWindows WSL Ubuntu 26.04\nRust 1.93.1\nPython 3.14.4\n\n\n 直和型とは\nRust の enum は、C++ enum 同様の単純な列挙型ではなく、直和型として呼ばれます。\nむしろ C++ の union に近い概念であり、取り得る型の選択肢...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "正規表現の「.」が改行にマッチしない問題と、その正しい直し方",
+      "url": "https://zenn.dev/genten/articles/eb0dffd40d3990",
+      "site": "Zenn(Python)",
+      "published": "2026-07-13T14:50:15Z",
+      "description": "複数行のテキストを正規表現で処理していて、「なぜか途中で切れる」「複数行にまたがる部分が取れない」とハマったことはないでしょうか。原因の多くは、メタ文字の .（ドット）が既定では改行にマッチしない という仕様です。\nこの記事では、この挙動の理由と、用途に応じた3つの直し方を、実際に手元で確認できる例つきで整理します。主要言語のエンジン差にも触れます。\n!\n本記事のパターンは各エンジンの標準的な挙動...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "(修正版)Davinci Resolveでボイロ動画の字幕を自動で追加するスクリプト",
+      "url": "https://zenn.dev/kirimin/articles/648a1d31368b85",
+      "site": "Zenn(Python)",
+      "published": "2026-07-13T13:19:47Z",
+      "description": "忙しい人向け要約\nDavinci Resolveにおいて、トラックに配置している.wav音声ファイルから対応する字幕の.txtファイルを読み込むことで自動的に字幕のText+のクリップをタイムラインに配置する便利スクリプトです。\n以前公開したスクリプトは環境によって正しく動作しなかったのでPyhtonでリライトした修正版です。\n\n↓旧記事\nhttps://zenn.dev/kirimin/arti...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "ネットワークプロトコル学習ロードマップ — 42本のハンズオンと151本のコードリーディング、どこから歩く？",
+      "url": "https://zenn.dev/you2h/articles/network-protocol-roadmap-2026",
+      "site": "Zenn(Python)",
+      "published": "2026-07-13T12:12:18Z",
+      "description": "「ネットワークを学びたい」と思ったとき、いちばん難しいのは順番です。TCP/IPの本は分厚く、RFCは無限にあり、資格教材は暗記に寄りがち。この記事は、筆者が公開しているフリー教材2コース——手を動かす入門編 Protocol Lab（42 Lab）と、プロトコルをコードとして読む中級編 Protocol in Code（23トラック / 151セッション）——を素材に、目的別の歩き方をまとめたロ...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
     {
       "title": "ROS2の基本概念をPythonコードで理解する【Node・Topic・Service・Action】",
       "url": "https://zenn.dev/yamamoshu/articles/ros2-basics-node-topic",
       "site": "Zenn(Python)",
       "published": "2026-07-13T09:48:22Z",
       "description": "ROS2の「ノード」「トピック」「サービス」「アクション」は、ロボットソフトウェアの基本的な通信パターンです。それぞれどう違うのか、実際のコードで確認します。\n\n\n Node（ノード）\nROS2の実行単位。1プロセス = 1ノードが基本です。\nimport rclpy\nfrom rclpy.node import Node\n\nclass MyNode(Node):\n    def __init__...",
-      "category": "開発",
-      "rss_category": "",
-      "image_url": ""
-    },
-    {
-      "title": "ROS2とPython asyncioを組み合わせた非同期処理【LLM API統合の実装例】",
-      "url": "https://zenn.dev/yamamoshu/articles/python-ros2-async",
-      "site": "Zenn(Python)",
-      "published": "2026-07-13T09:48:22Z",
-      "description": "ROS2でLLM APIを呼ぶとき、「APIの呼び出し（非同期・低速）」と「ロボット制御（同期・高速）」をどう組み合わせるかが問題になります。コールバック内でAPIをブロック呼び出しすると制御が止まります。\n\n\n 問題\n# NG: コールバック内でAPI呼び出しをブロックすると制御が止まる\ndef scan_callback(self, msg):\n    response = requests....",
-      "category": "開発",
-      "rss_category": "",
-      "image_url": ""
-    },
-    {
-      "title": "競馬AIで回収率100.6%を出し、捨てた — 12年半・61万頭走で見つけた「勝てるモデル」3つの罠",
-      "url": "https://zenn.dev/rindokulab/books/b6af9b1125cb2f",
-      "site": "Zenn(Python)",
-      "published": "2026-07-13T08:41:18Z",
-      "description": "回収率100.6%。ついに競馬市場に勝った――はずだった。\nきっかけは20年前、雀荘で聞いた酔客の「必勝法」。バイオインフォマティクスの研究者になった著者が、12年半・43,247レース・607,198頭走でそれを検証し、17系統の監査から2つのデータリークと「幻のエッジ」を発見した実録。\n最終回収率は88.9%。予測が当たっても、なぜ儲からないのか。時系列機械学習とバックテストの失敗を、再現可能...",
       "category": "開発",
       "rss_category": "",
       "image_url": ""
@@ -79,6 +99,26 @@
       "site": "Zenn(Python)",
       "published": "2026-07-13T07:35:40Z",
       "description": "Web 上で公開されている表データを Excel で加工したい、あるいは HTML メールに含まれる表をスプレッドシートとして管理したいといったニーズは、日常的に多くあります。HTML の &lt;table&gt; タグで構成された表は Excel のセル構造と対応関係にあるため、プログラミングで変換することが比較的容易です。手作業でコピー＆ペーストする代わりに Python を使えば、大量の ...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "exit code 0を成功判定に使わないジョブ設計 - 実装手順",
+      "url": "https://zenn.dev/kmn/articles/c16f992a628dea",
+      "site": "Zenn(Python)",
+      "published": "2026-07-13T07:17:49Z",
+      "description": "exit code 0を成功判定に使わないジョブ設計 - 実装手順\n自動処理は、スケジュール登録だけでは安定しません。ラッパーが正常終了しても、業務上の結果は保留・部分完了・公開失敗かもしれません。\nこの記事では「実装手順」の観点から、入力、処理、成果物、公開結果を分離する方法を整理します。仕組み全体の理由まで扱います。\n\n 基本方針\n業務結果はfinal_statusとして構造化し、rcはプロセ...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "NumPyだけでSVD圧縮とLoRAを体感する ― SVDで理解する現代AIの数学（最終回）",
+      "url": "https://zenn.dev/schhrcat/articles/ede64045ee703a",
+      "site": "Zenn(Python)",
+      "published": "2026-07-13T06:06:55Z",
+      "description": "!\n本記事は、Zenn本『線形代数からLLM圧縮とLoRAまで ― SVDで理解する現代AIの数学』（無料）をベースにした連載の最終回だ。第1回〜第4回で、線形代数の基礎 → SVD → LLM圧縮 → LoRA と理論を積み上げてきた。今回はすべてをNumPyで手の中に落とす。\n\n\n 方針：ライブラリは NumPy と Matplotlib だけ\n理論は手を動かして初めて自分のものになる。今回は...",
       "category": "開発",
       "rss_category": "",
       "image_url": ""
