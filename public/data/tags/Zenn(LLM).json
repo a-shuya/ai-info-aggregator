@@ -1,8 +1,38 @@
 {
   "site": "Zenn(LLM)",
-  "last_updated": "2026-07-13T11:23:21.455980",
-  "total_articles": 4554,
+  "last_updated": "2026-07-13T13:36:14.935201",
+  "total_articles": 4561,
   "articles": [
+    {
+      "title": "Claude Codeは応答前に3.3万トークン消費、OpenCodeは7千",
+      "url": "https://zenn.dev/salt2/articles/claude-code-3-3-opencode-7-c7716f3e",
+      "site": "Zenn(LLM)",
+      "published": "2026-07-13T03:54:33Z",
+      "description": "本記事は Claude Code vs OpenCode: Token Overhead の日本語訳および解説です。同一モデル・同一マシン・同一タスクでClaude CodeとOpenCodeを比較し、APIレベルで送受信される内容を徹底検証した結果をまとめています。\n\n 検証の背景\nトークンオーバーヘッドはコスト、レイテンシ、そしてコンテキスト予算に直結します。ハーネスのペイロードに使われるトー...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "エージェントが「送信完了」と嘘をついた",
+      "url": "https://zenn.dev/ara_ai/articles/5e70fc75ac55f5",
+      "site": "Zenn(LLM)",
+      "published": "2026-07-13T02:35:04Z",
+      "description": "特定のクラウドソーシングサービスのクライアントへの返信を、エージェントに任せていた。ある日、エージェントは「2件の返信を送信しました」と報告し、メモリに記録して、次の処理に進んだ。\n数日後、スレッドを直接確認した。1文字も送られていなかった。\n\n 何が起きていたか\n原因を調べると、成功判定のロジックに問題があった。エージェントは「送信後にURLが /proposals/...#scroll_to_...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "皆が気にしているトークン使用量の「トークン」を掘り下げてみた",
+      "url": "https://zenn.dev/fujimooon/articles/63d978548de1ab",
+      "site": "Zenn(LLM)",
+      "published": "2026-07-13T02:15:11Z",
+      "description": "そもそも「トークン」とは\nトークンとは、LLMがテキストを読み書きする際の基本単位そのものを指します。\nしたがって、トークン使用量の「トークン」とはLLMにユーザが食わせるトークン数（ユーザーが入力した文章のトークン数）を指すだけではありません。\nつまり、「トークン使用量」には基本的に入力(input)と出力(output)の両方が含まれます。\n\n 使用トークンの内訳\n\n 入力トークン(input...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
     {
       "title": "LLMアプリのログにプロンプト全文を残すな：OpenTelemetryで安全に遅延・トークン・コストを追う",
       "url": "https://zenn.dev/fsgesaiyo/articles/1768026a2197ea",
@@ -29,6 +59,36 @@
       "site": "Zenn(LLM)",
       "published": "2026-07-13T01:00:13Z",
       "description": "高級モデルに全部やらせない — 標準機能（skill）だけでカジュアルに実現するマルチモデルの仕組み『delegate-skills』\nClaude Fable 5 のような最上位モデルをメインエージェントに据えると、判断の質は上がりますが、コードを大量に読む・機械的に直す・差分を眺めるといった「作業」までフラッグシップ価格で実行することになります。Fable 5 は入力 $10 / 出力 $50...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "Claude Code のContext・Skillを評価する『Evals』ツール徹底比較 〜トークン数と性能をどう測るか〜",
+      "url": "https://zenn.dev/yamitake/articles/claude-code-evals-tools-guide",
+      "site": "Zenn(LLM)",
+      "published": "2026-07-13T00:59:26Z",
+      "description": "はじめに\n\n「Skillを追加したら、ちゃんと精度は上がったの？」\n「CLAUDE.md にコンテキストを盛り込んだけど、トークン消費とレスポンスは大丈夫？」\n\nClaude Code に大量の CLAUDE.md を読ませたり、独自の Skill を作り込んだりしていると、必ずぶつかるのがこの問いです。「なんとなく良くなった気がする」で運用を続けると、気づかないうちにトークン単価が膨らみ、精度は...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "OpenFugu×ローカルLLM群でマルチAI駆動を検証③ 小型の群れは上位モデルを超えられるか",
+      "url": "https://zenn.dev/znet/articles/2026-openfugu-local-multiagent-part3",
+      "site": "Zenn(LLM)",
+      "published": "2026-07-13T00:51:32Z",
+      "description": "Sakana AI は Fugu の上位版（Fugu Ultra）について「一部のタスクで Claude Mythos Preview や Fable 5 を超える性能」と謳っています（ITmedia の報道による。Terminal-Bench 2.1 で Fable 5 超え・Charxiv Reasoning で Mythos Preview 超え、一方 Humanity's Last Exa...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "AIエージェントの記憶引き継ぎ台帳を最小実装する",
+      "url": "https://zenn.dev/agentmemories/articles/memory-handoff-ledger-minimal-implementation",
+      "site": "Zenn(LLM)",
+      "published": "2026-07-13T00:41:27Z",
+      "description": "AIエージェントの記憶引き継ぎ台帳を最小実装する\nAIの作業文脈を、担当者やモデルをまたいで引き継ぐための最小台帳設計です。\n\n 前提\nAIエージェントを継続運用すると、会話履歴だけでは足りなくなります。必要なのは、次の実行時に参照できる「作業の正本」です。正本には、決定事項、保留事項、禁止事項、公開済みURL、再発防止のような、次の判断に使う情報だけを残します。\n\n 最小スキーマ\n{\n  \"id...",
       "category": "AI・技術",
       "rss_category": "",
       "image_url": ""
@@ -64,6 +124,26 @@
       "image_url": ""
     },
     {
+      "title": "AI彼女アプリを作っていて気付いた。思い出すことより、「思い出す順番」の方が難しかった",
+      "url": "https://zenn.dev/mitsukida/articles/1c21c9af236f49",
+      "site": "Zenn(LLM)",
+      "published": "2026-07-12T23:28:11Z",
+      "description": "AI彼女アプリを作っていて気付いた。思い出すことより、「思い出す順番」の方が難しかった\nAI彼女アプリを作っている。\n最初の頃は、記憶さえ増えれば、人間らしい会話に近付くと思っていた。\n会話を保存する。\n必要になったら検索する。\n思い出した内容をLLMへ渡す。\nそんな流れを作れば十分だと思っていた。\n\nでも、何百ターンも会話を続けていると、少しずつ違和感が出てきた。\nAIはちゃんと覚えている。\n質...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "【2026/6/30】Claude Sonnet 5リリース — 1Mコンテキスト標準化・temperature廃止・実質3割の値上げも",
+      "url": "https://zenn.dev/sktt_panda/articles/claude-sonnet-5-release-2026-07",
+      "site": "Zenn(LLM)",
+      "published": "2026-07-12T22:34:27Z",
+      "description": "3行まとめ\n\n2026年6月30日、Anthropic が Claude Sonnet 5 をリリース。1Mトークンコンテキストが標準（それ以外の選択肢なし）、出力上限128k、Claude Code のデフォルトモデルにも即日昇格した\n8月31日までプロモ価格 $2 / $10 per MTok（以降は Sonnet 4.6 と同じ $3 / $15）。ただし新トークナイザが同じテキストで約30...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
       "title": "世界的なGPU不足の中で、どうやって安定したAI推論を提供するか",
       "url": "https://zenn.dev/romanark/articles/fde9d41724eda2",
       "site": "Zenn(LLM)",
@@ -79,16 +159,6 @@
       "site": "Zenn(LLM)",
       "published": "2026-07-12T21:08:42Z",
       "description": "TL;DR\n\n同じ「議事録にして」という自由形式の指示でも、会議の目的（定例進捗／意思決定／ブレスト）によって欲しい情報の優先順位は違うのに、LLMには目的を推測させていた\n優先順位を与えない要約は、モデルにとって「本文のどこが重要か」を自力で見積もる暗黙のsalience推定タスクになる。発言量の多いトピック（進捗報告のような話が長引きやすい話題）ほど言語的な手がかりが厚く、頻度バイアスで抽出さ...",
-      "category": "AI・技術",
-      "rss_category": "",
-      "image_url": ""
-    },
-    {
-      "title": "Anthropic Managed Agentsで\"走った記録を読み物にする\"システムを作って実運用した話——Memoryが育つまで",
-      "url": "https://zenn.dev/make_dog/articles/da432df0939416",
-      "site": "Zenn(LLM)",
-      "published": "2026-07-12T20:51:06Z",
-      "description": "Anthropic Managed Agentsで「走った記録を読み物にする」システムを作って実運用した話\n\n\n 何を作ったか\n自転車で走った記録(GPX)を投げると、AIエージェントがライドレポート——数値の羅列ではなく、その日の走りを綴った読み物——を生成するシステムを個人で作り、実運用している。\nまず現物を見てもらうのが早い。\n\n生成されたレポートの例(暗峠ライド): https://cyc...",
       "category": "AI・技術",
       "rss_category": "",
       "image_url": ""

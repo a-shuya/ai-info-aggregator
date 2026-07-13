@@ -1,14 +1,134 @@
 {
   "site": "Zenn(Python)",
-  "last_updated": "2026-07-13T11:23:21.455980",
-  "total_articles": 5060,
+  "last_updated": "2026-07-13T13:36:14.935201",
+  "total_articles": 5071,
   "articles": [
+    {
+      "title": "ROS2の基本概念をPythonコードで理解する【Node・Topic・Service・Action】",
+      "url": "https://zenn.dev/yamamoshu/articles/ros2-basics-node-topic",
+      "site": "Zenn(Python)",
+      "published": "2026-07-13T09:48:22Z",
+      "description": "ROS2の「ノード」「トピック」「サービス」「アクション」は、ロボットソフトウェアの基本的な通信パターンです。それぞれどう違うのか、実際のコードで確認します。\n\n\n Node（ノード）\nROS2の実行単位。1プロセス = 1ノードが基本です。\nimport rclpy\nfrom rclpy.node import Node\n\nclass MyNode(Node):\n    def __init__...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "ROS2とPython asyncioを組み合わせた非同期処理【LLM API統合の実装例】",
+      "url": "https://zenn.dev/yamamoshu/articles/python-ros2-async",
+      "site": "Zenn(Python)",
+      "published": "2026-07-13T09:48:22Z",
+      "description": "ROS2でLLM APIを呼ぶとき、「APIの呼び出し（非同期・低速）」と「ロボット制御（同期・高速）」をどう組み合わせるかが問題になります。コールバック内でAPIをブロック呼び出しすると制御が止まります。\n\n\n 問題\n# NG: コールバック内でAPI呼び出しをブロックすると制御が止まる\ndef scan_callback(self, msg):\n    response = requests....",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "［AtCoder］ABC-462｜A - Secret Numbers",
+      "url": "https://zenn.dev/hyperdb/articles/de8404abfe3c47",
+      "site": "Zenn(Python)",
+      "published": "2026-07-13T08:17:40Z",
+      "description": "設問ページ\n\n🔗ABC-462 A - Secret Numbers\n\n\n\n 提出結果\ndef getString():\n    return input()\n\n\ndef main():\n    S = getString()\n    T = []\n\n    for s in S:\n        if \"0\" &lt;= s &lt;= \"9\":\n            T.append(s)\n...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "［AtCoder］ABC-462｜B - Gift",
+      "url": "https://zenn.dev/hyperdb/articles/44cb87a4e0950f",
+      "site": "Zenn(Python)",
+      "published": "2026-07-13T08:17:40Z",
+      "description": "設問ページ\n\n🔗ABC-462 B - Gift\n\n\n\n 提出結果\ndef getInt():\n    return int(input())\n\n\ndef getIntListRow(N):\n    return [list(map(int, input().split())) for _ in range(N)]\n\n\ndef main():\n    N = getInt()\n    # 0を入れ...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "［AtCoder］ABC-461｜A - Armor",
+      "url": "https://zenn.dev/hyperdb/articles/ffdaa25ed8f79f",
+      "site": "Zenn(Python)",
+      "published": "2026-07-13T08:15:10Z",
+      "description": "設問ページ\n\n🔗ABC-461 A - Armor\n\n\n\n 提出結果\ndef getIntMap():\n    return map(int, input().split())\n\n\ndef main():\n    A, D = getIntMap()\n\n    print(\"Yes\" if A &lt;= D else \"No\")\n\n\nif __name__ == \"__main__\":\n    ...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "［AtCoder］ABC-461｜B - The Honest Woodcutters",
+      "url": "https://zenn.dev/hyperdb/articles/ca49dd692bf0d4",
+      "site": "Zenn(Python)",
+      "published": "2026-07-13T08:15:09Z",
+      "description": "設問ページ\n\n🔗ABC-461 B - The Honest Woodcutters\n\n\n\n 提出結果\ndef getInt():\n    return int(input())\n\n\ndef getIntList():\n    return list(map(int, input().split()))\n\n\ndef main():\n    N = getInt()\n    A = [0] + ge...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "Apple IntelligenceのローカルLLMをPythonから呼び出したい",
+      "url": "https://zenn.dev/mu_ta/articles/123d46bfc843b2",
+      "site": "Zenn(Python)",
+      "published": "2026-07-13T08:00:17Z",
+      "description": "はじめに\n今回はApple Intelligenceのオンデバイスモデルを\nFoundation Models API経由で、使い慣れてるPythonからさくっとローカル呼び出ししてみたいと思います。\n後半ではベンチっぽいものも測定してみたいと思います。\nまず仕様と要件をおさらいします。\n\n 1. Apple SystemLanguageModelの仕様\n\n 基本特性\n\n\n\n項目\n内容\n\n\n\n\nモ...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "Python を使用して HTML を Excel に変換する",
+      "url": "https://zenn.dev/techblogger/articles/d4e5c9c1a93497",
+      "site": "Zenn(Python)",
+      "published": "2026-07-13T07:35:40Z",
+      "description": "Web 上で公開されている表データを Excel で加工したい、あるいは HTML メールに含まれる表をスプレッドシートとして管理したいといったニーズは、日常的に多くあります。HTML の &lt;table&gt; タグで構成された表は Excel のセル構造と対応関係にあるため、プログラミングで変換することが比較的容易です。手作業でコピー＆ペーストする代わりに Python を使えば、大量の ...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "NumPyだけでSVD圧縮とLoRAを体感する ― SVDで理解する現代AIの数学（最終回）",
+      "url": "https://zenn.dev/schhrcat/articles/ede64045ee703a",
+      "site": "Zenn(Python)",
+      "published": "2026-07-13T06:06:55Z",
+      "description": "!\n本記事は、Zenn本『線形代数からLLM圧縮とLoRAまで ― SVDで理解する現代AIの数学』（無料）をベースにした連載の最終回だ。第1回〜第4回で、線形代数の基礎 → SVD → LLM圧縮 → LoRA と理論を積み上げてきた。今回はすべてをNumPyで手の中に落とす。\n\n\n 方針：ライブラリは NumPy と Matplotlib だけ\n理論は手を動かして初めて自分のものになる。今回は...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "量子コンピュータ時代のデータ基盤選び──Databricksほか主要4サービス",
+      "url": "https://zenn.dev/gixo/articles/lakehouse-quantum-integration",
+      "site": "Zenn(Python)",
+      "published": "2026-07-13T04:17:15Z",
+      "description": "はじめに\nこんにちは、ギックスでエンジニアをしています中島です。\n「量子コンピュータ」と聞くと、まだ研究寄りの遠い話、という印象の人も多いのではないでしょうか。実は最近はクラウド環境においても具体的な提供ロードマップが出始めており、AWSはQuEraとの提携のもと2028年には誤り耐性量子コンピュータを提供する予定と発表しています（参考：AWS Quantum Technologies Blog、...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "Dagster Code Location Serverの監視システムの構築",
+      "url": "https://zenn.dev/eversteel_tech/articles/5f80872f56a6b9",
+      "site": "Zenn(Python)",
+      "published": "2026-07-13T03:00:22Z",
+      "description": "データエンジニアをさせていただいております土屋 (@shunsock) です。EVERSTEELでは、データオーケストレータとしてDagsterを採用しています。\n今回は、Dagsterのサービスの1つである、Code location serverの監視を始めました。この記事では、その手法と実際に作成したシステムを紹介します。\n\n 対象読者\nDagsterやデータオーケストレーターについて知見が...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
     {
       "title": "ゲームのテキストをAIで要約するアプリを作りたい。OCR編",
       "url": "https://zenn.dev/spookies/articles/8717e6ff6ac4fd",
       "site": "Zenn(Python)",
       "published": "2026-07-13T02:00:08Z",
       "description": "はじめに\nこんにちは、ゲームが生きがいのnickです。\nみなさんは普段ゲーム、やっていますか？？？\nゲームが生きがいの私は、常日頃自分がプレイしているゲームで使う便利ツールを個人開発したいなあ、と思ったりしてるんですが、\nついに！こういうのあったらいいなというアイデアが浮かんだので、アイデアベースで突き進んでいこうとしています。\n\n ゲーム内テキストをAIで要約したい\n重厚なストーリーのRPGが個...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "GPT-Image-2入門 — 推論モード・2K解像度・マルチ生成をAPIで実装する",
+      "url": "https://zenn.dev/kai_kou/articles/246-gpt-image-2-thinking-api-guide",
+      "site": "Zenn(Python)",
+      "published": "2026-07-13T00:52:12Z",
+      "description": "はじめに\n2026年4月21日、OpenAIはAI画像生成の新モデル「GPT-Image-2」を搭載した「ChatGPT Images 2.0」を公式発表しました。前作GPT Image 1.5から大きく進化した点は、O-seriesベースの「推論（Thinking）」機能を画像生成に統合 したことです。\n本記事では、GPT-Image-2の技術仕様・API実装方法・料金体系を解説します。\n!\nA...",
       "category": "開発",
       "rss_category": "",
       "image_url": ""
@@ -309,16 +429,6 @@
       "site": "Zenn(Python)",
       "published": "2026-07-11T07:52:31Z",
       "description": "npm install を1回実行するだけで、攻撃者のプロキシがMCP通信に割り込む。\n~/.claude.json を書き換えてOAuthトークンを盗む。\nエンジニアは何も気づかない。\nSnykもnpm auditも、このパターンを検知できない。\n\n2026年に入り、Claude Codeの業務利用が急増した。\nそれに比例して、MCP（Model Context Protocol・AIとツール間...",
-      "category": "開発",
-      "rss_category": "",
-      "image_url": ""
-    },
-    {
-      "title": "余ったFire HDでバス到着案内サイネージを自作した",
-      "url": "https://zenn.dev/dehio3/articles/202607_fire-hd-bus-arrival-signage",
-      "site": "Zenn(Python)",
-      "published": "2026-07-11T07:25:48Z",
-      "description": "はじめに\n以前、西武バスの到着予測をAlexaで案内するスキルを作った話を書きました。ODPT(公共交通オープンデータセンター)のリアルタイムデータへ移行し、「話しかければバスの到着時刻を教えてくれる」仕組みは安定して動くようになりました。\nただ実際に使ってみると、通勤前のバタバタしたタイミングで「Alexa、バスは何分後?」と話しかけるのは意外と億劫で、結局スマホでアプリを開いて確認する方が早い...",
       "category": "開発",
       "rss_category": "",
       "image_url": ""
