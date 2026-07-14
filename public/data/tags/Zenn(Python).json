@@ -1,14 +1,64 @@
 {
   "site": "Zenn(Python)",
-  "last_updated": "2026-07-14T00:08:31.778626",
-  "total_articles": 5075,
+  "last_updated": "2026-07-14T03:32:33.008602",
+  "total_articles": 5082,
   "articles": [
+    {
+      "title": "自動処理の証拠をJSONLへ追記する最小実装 - 実装手順",
+      "url": "https://zenn.dev/kmn/articles/a3657a4942fb8d",
+      "site": "Zenn(Python)",
+      "published": "2026-07-14T02:38:42Z",
+      "description": "自動処理の証拠をJSONLへ追記する最小実装 - 実装手順\n自動処理は、スケジュール登録だけでは安定しません。結果を上書きしたり端末出力だけに残したりすると、並行自動処理の証拠が消えます。\nこの記事では「実装手順」の観点から、入力、処理、成果物、公開結果を分離する方法を整理します。仕組み全体の理由まで扱います。\n\n 基本方針\n1実行につき検証済みJSONを1行追記し、過去行は書き換えません。\nプロ...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "Python を使用して Excel を HTML に変換する",
+      "url": "https://zenn.dev/techblogger/articles/3f62f736740f38",
+      "site": "Zenn(Python)",
+      "published": "2026-07-14T02:37:05Z",
+      "description": "Excel で作成した表やデータを Web ページ上に公開したい場合、HTML 形式への変換が必要になります。HTML はブラウザで直接表示できるため、社内レポートの共有やデータ公開、メール本文への表埋め込みなど、幅広いシーンで活用できます。Python を使えば、Excel ファイルを HTML に変換する処理を自動化でき、大量のファイルや定期的なレポート生成にも効率的に対応できます。本記事では...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "AIエージェントのReActループは単純だった。本当に難しかったのはその周りだった",
+      "url": "https://zenn.dev/mo_hu_p/articles/0de23fb3cf6435",
+      "site": "Zenn(Python)",
+      "published": "2026-07-14T01:48:30Z",
+      "description": "1. はじめに\n現在、チャット（テキスト/音声）でLLMにWord・Excel・PowerPointファイルを直接\n作成・編集させるAIエージェントを開発しています。主な特徴は以下の通りです。\n\nOfficeファイルを直接編集する（python-docx/openpyxl/python-pptxベースの\nツール群でLLMがファイルを直接読み書きし、Office自体を裏で操作するわけでは\nありません...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "外部API収集ジョブの「毎日成功」を疑う:except passでサイレント失敗を1ヶ月見逃した話と再発防止チェックリスト",
+      "url": "https://zenn.dev/chemy_pvl/articles/except-pass-silent-failure-api-logs",
+      "site": "Zenn(Python)",
+      "published": "2026-07-14T00:21:24Z",
+      "description": "ジョブは毎日「成功」と出ていました。実際には、22種類のうち14種類の取得が毎回失敗していました。その状態が、約1ヶ月続いていました。\n自宅ラボで外部APIからデータを集めていて、いちばん怖い失敗は「落ちた」ではありません。落ちたなら、まだ見つけられます。厄介なのは、ジョブ全体は成功扱いで、ログにも成功と出ていて、実際には中の取得だけが失敗し続けている状態です。原因は監視基盤の不足でもリトライ回数...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
     {
       "title": "Python - 直和型の定義サンプル（Union Type）",
       "url": "https://zenn.dev/garigngr/articles/2d2c483fac47eb",
       "site": "Zenn(Python)",
       "published": "2026-07-13T18:07:35Z",
       "description": "Rust の enum のような概念を、 Python でも定義したいと思いまとめた記事です。\n\n 動作環境\n\nWindows WSL Ubuntu 26.04\nRust 1.93.1\nPython 3.14.4\n\n\n 直和型とは\nRust の enum は、C++ enum 同様の単純な列挙型ではなく、直和型として呼ばれます。\nむしろ C++ の union に近い概念であり、取り得る型の選択肢...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "4時間10分で完走、そして不採用。Claudeに音声合成モデルの学習を任せて踏んだ4つの地雷",
+      "url": "https://zenn.dev/anikuma/articles/sbv2-claude-agent-training-pitfalls",
+      "site": "Zenn(Python)",
+      "published": "2026-07-13T15:00:00Z",
+      "description": "自分のナレーション音声を、実はAIに読み上げてもらっている。副業で動画コンテンツを作っていて、ナレーションには既製の音声合成エンジンを使っている。\n声質は気に入っている。ただ日本語の読み上げだけが、ずっと引っかかっていた。助詞のイントネーションがおかしい。固有名詞のアクセントが不自然。直すたびに「ここは我慢するしかない」と諦めていた。\n今回、その引っかかりを解消するために、声質はそのままで発音エン...",
       "category": "開発",
       "rss_category": "",
       "image_url": ""
@@ -34,6 +84,16 @@
       "image_url": ""
     },
     {
+      "title": "LLMのハルシネーションを自動検出！RAG評価ワークフローの構築",
+      "url": "https://zenn.dev/fd_ai_teacher/articles/tech-20260713040720-1",
+      "site": "Zenn(Python)",
+      "published": "2026-07-13T12:45:08Z",
+      "description": "「RAGシステムを導入したのに、なぜかLLMが嘘をつく…」「ユーザーから『回答が間違っている』と指摘されたけど、どこから手をつければいいのかわからない」\n多くのRAG開発者が直面するこの問題は、LLMのハルシネーション（幻覚）が原因かもしれません。特に、RAGはハルシネーションを減らすとされていますが、完全に防ぐことはできません。それどころか、関連文書があるにも関わらずLLMが矛盾する回答を生成す...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
       "title": "ネットワークプロトコル学習ロードマップ — 42本のハンズオンと151本のコードリーディング、どこから歩く？",
       "url": "https://zenn.dev/you2h/articles/network-protocol-roadmap-2026",
       "site": "Zenn(Python)",
@@ -49,6 +109,16 @@
       "site": "Zenn(Python)",
       "published": "2026-07-13T09:48:22Z",
       "description": "ROS2の「ノード」「トピック」「サービス」「アクション」は、ロボットソフトウェアの基本的な通信パターンです。それぞれどう違うのか、実際のコードで確認します。\n\n\n Node（ノード）\nROS2の実行単位。1プロセス = 1ノードが基本です。\nimport rclpy\nfrom rclpy.node import Node\n\nclass MyNode(Node):\n    def __init__...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "ROS2とPython asyncioを組み合わせた非同期処理【LLM API統合の実装例】",
+      "url": "https://zenn.dev/yamamoshu/articles/python-ros2-async",
+      "site": "Zenn(Python)",
+      "published": "2026-07-13T09:48:22Z",
+      "description": "ROS2でLLM APIを呼ぶとき、「APIの呼び出し（非同期・低速）」と「ロボット制御（同期・高速）」をどう組み合わせるかが問題になります。コールバック内でAPIをブロック呼び出しすると制御が止まります。\n\n\n 問題\n# NG: コールバック内でAPI呼び出しをブロックすると制御が止まる\ndef scan_callback(self, msg):\n    response = requests....",
       "category": "開発",
       "rss_category": "",
       "image_url": ""

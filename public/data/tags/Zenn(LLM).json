@@ -1,14 +1,174 @@
 {
   "site": "Zenn(LLM)",
-  "last_updated": "2026-07-14T00:08:31.778626",
-  "total_articles": 4574,
+  "last_updated": "2026-07-14T03:32:33.008602",
+  "total_articles": 4586,
   "articles": [
+    {
+      "title": "ポートはドメインの必要から引く——LLMの実体を隠すPorts & Adapters",
+      "url": "https://zenn.dev/moimoi/articles/engawa-hexagonal-llm-port",
+      "site": "Zenn(LLM)",
+      "published": "2026-07-13T23:40:45Z",
+      "description": "前回の ACP の記事で「内部設計（Ports &amp; Adapters）も別記事にする」と書きました。これがその別記事です。\n題材はデスクトップに住む AI 猫「茶々」の常駐アプリ Engawa。ただし今回は猫の話はほぼしません。趣味アプリで Ports &amp; Adapters を引いてみたら、Claude とローカル LLM が無改造で差し替わった——その設計判断を、言語に依らない話...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "AI同士のレビューは簡単だった。難しいのは「その判定者を信じていいか」の測定だった",
+      "url": "https://zenn.dev/inokashiraryo/articles/cb3fef1c44a8a2",
+      "site": "Zenn(LLM)",
+      "published": "2026-07-13T23:34:27Z",
+      "description": "自分のテストが素通ししたバグを、別ベンダーのAIが見つけた\n抽出精度を測る測定器のコードを書いた。自己テストは16件、全部緑。出荷した気でいた。\n念のため OpenAI の Codex CLI に「敵対的にレビューせよ」と投げたら、7件の欠陥が返ってきた。全件に再現入力つき。実際に動かすと、全件が本物だった。\n重要なのは、このコードを書いたのもAI(私の環境ではコードは Claude に書かせてい...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "miniF2Fを飽和させたLeanstral 1.5が実コードで未報告バグを5件見つけた",
+      "url": "https://zenn.dev/okssusucha/articles/20260704-mistral-leanstral-1-5-lean4-proof-agent",
+      "site": "Zenn(LLM)",
+      "published": "2026-07-13T23:02:18Z",
+      "description": "datrs/varinteger のzigzagデコード処理に、符号の扱いを誤るオーバーフローが眠っていた。デバッグビルドではクラッシュし、リリースビルドでは黙って値が壊れる種類のバグだ。GitHubのIssueには誰も上げていなかった。これを見つけたのはセキュリティ研究者でもファジングツールでもなく、Lean 4の証明を書くために訓練されたMistralのモデル、Leanstral 1.5 だっ...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "API料金を気にせずAI開発したいなら。LangChain × Ollamaという選択肢",
+      "url": "https://zenn.dev/edoc21/articles/116b2096622a1b",
+      "site": "Zenn(LLM)",
+      "published": "2026-07-13T23:01:10Z",
+      "description": "はじめに\nこんにちは、Edocです。\n普段は組み込みエンジニアとして働きながら、Python・FastAPI・Reactを使ったAI・機械学習関連の個人開発をしています。\n最近は教育向けのデータ分析・機械学習プラットフォームを開発しており、その中でLangChainやLLMを使う機会が増えました。\nそこで今回は、私が開発初期の検証環境としてほぼ毎日利用している Ollama を紹介します。\nこの記...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "Claude Codeに「記憶」を持たせる — CLAUDE.md肥大化から抜け出す二層設計",
+      "url": "https://zenn.dev/map_universe/articles/agent-memory-two-layer-design",
+      "site": "Zenn(LLM)",
+      "published": "2026-07-13T23:00:09Z",
+      "description": "はじめに\nClaude Code のようなAIコーディングエージェントを数ヶ月使っていると、ほぼ確実に同じ壁に当たります。\n\nセッションが変わるたびに、同じ背景説明を繰り返している\n「前回決めたはずのこと」をエージェントが覚えておらず、蒸し返される\n対策として CLAUDE.md に書き足し続けた結果、数百行に肥大化し、しかも守られない指示が増えてきた\n\n本記事は、この状態から抜け出すための記憶設...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "【2026/7/1】Fable 5が19日ぶりに復活 — 輸出規制解除の経緯と、「無料期間」が「クレジット制」に変わった話",
+      "url": "https://zenn.dev/sktt_panda/articles/claude-fable-5-restored-2026-07",
+      "site": "Zenn(LLM)",
+      "published": "2026-07-13T22:41:13Z",
+      "description": "3行まとめ\n\n2026年6月30日、米商務省が Fable 5 / Mythos 5 への輸出規制指令を解除。Anthropic は7月1日から Fable 5 を全世界で再デプロイした（停止は6月12日なので19日ぶり）\n復旧の条件は「改善版の安全分類器」。報告された回避手法を 99%以上ブロックする分類器を訓練し、輸出ライセンスも不要になった。停止の発端が Amazon の研究者によるセーフガ...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "AIへのフィードバックを仕組みに刻む — 揮発させない4つの習慣",
+      "url": "https://zenn.dev/okzaq/articles/ai-feedback-where-it-lands",
+      "site": "Zenn(LLM)",
+      "published": "2026-07-13T22:30:06Z",
+      "description": "Claude Codeでフィードバックしても、次のチャットセッションで同じミスが繰り返される。精度を保つために「1チャット1タスク」を徹底するほど、この現象は避けられなくなります。その原因はAIのコンテキスト境界にあり、フィードバックを「その場の修正で終わらせず仕組みに刻む」ことが解決策です。この記事では、棚卸し・置き場の使い分け・AIの振る舞いのルール化・スキル昇格という4つの習慣で、フィードバ...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "Claude Codeに「昨日の続き」を覚えさせる — 人間の記憶構造をMarkdownで実装した話",
+      "url": "https://zenn.dev/answer_philo/articles/claude-code-memory-three-layers",
+      "site": "Zenn(LLM)",
+      "published": "2026-07-13T22:30:06Z",
+      "description": "電源を切ると、全部消える世界で育った\n小学生の頃、MSXというパソコンで、雑誌に載ったBASICのリストを300〜700行、ただひたすら打ち込んでいた。打ち終えて RUN を押すと自機が動く——「あ、動いた！」のスパークは今でも覚えている。だが当時は保存手段がなく、電源を切ればメモリはきれいに消える。また遊びたければ、また3時間かけて同じ700行を打ち直す。動いた感動と、消える喪失は、いつもセット...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "調査用スキルを作ってみた",
+      "url": "https://zenn.dev/tokium_dev/articles/building-a-research-skill",
+      "site": "Zenn(LLM)",
+      "published": "2026-07-13T22:00:16Z",
+      "description": "はじめに\nTOKIUMでSWEとして働いている@lpvnvsbtfです。ソフトウェアエンジニアとして働いていますが、エージェント開発を進めるにあたって、その技術の進歩の速さから論文からも得られる栄養素が不可欠なのではないかと思いこのスキルを作ってみました。\n調べていて困るのは、情報源が媒体ごとにバラバラなことです。arXiv の論文、ベンダーの公式発表、公式ドキュメント、サードパーティの解説ブログ...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "Agent-as-a-Judgeは本当に必要なのか — 評価にエージェントを使う意味を考える",
+      "url": "https://zenn.dev/takkuhiro/articles/agent-as-a-judge-necessity",
+      "site": "Zenn(LLM)",
+      "published": "2026-07-13T22:00:16Z",
+      "description": "はじめに\nLLMの出力を別のLLMに採点させる LLM-as-a-Judge は、いまや評価手法の定番になりました。その進化形として、2024年に Agent-as-a-Judge という概念が提案されています（Zhuge et al., Meta AI &amp; KAUST、ICML 2025採録）。評価される側だけでなく、評価する側もエージェントにする、という発想です。\n初めてこの名前を見た...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "MacBookでOrnith-1.0-9Bを動かす：Aider + Ollama実践ガイド",
+      "url": "https://zenn.dev/tkpurine/books/aider-ollama-ornith",
+      "site": "Zenn(LLM)",
+      "published": "2026-07-13T21:22:33Z",
+      "description": "MacBook（Apple Silicon）上でローカルLLM「Ornith-1.0-9B」をAider経由で自律コーディングに使うための実践ガイド。Ollama/Aiderの基礎から環境構築、Modelfile作成、実行コマンドの雛形、実測ベンチマーク、Claude Codeとの使い分けまでを1冊にまとめました。",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "議事録からタスク抽出、期限を誤生成する理由と参照日付・上書き規則で防ぐ運用",
+      "url": "https://zenn.dev/every_ai_recipe/articles/minutes-action-items-3-fields",
+      "site": "Zenn(LLM)",
+      "published": "2026-07-13T21:08:26Z",
+      "description": "TL;DR\n\n議事録は「読む」ために自由形式で書かれており、タスク管理ツールに貼るための構造化データにはそのまま使えない。抽出は自由記述の要約ではなく、担当者・タスク内容・期限という固定スロットを埋める抽出タスクとして依頼する必要がある\n期限の抽出で「来週まで」のような相対的な日付表現を渡すと、モデルが具体的な絶対日付をそれらしく生成することがある。相対表現の解決には基準日（今日の日付やモデルの知...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "【2026年最新】Claude Fable 5完全ガイド — Xboxゲームとの混同からモデル選択まで",
+      "url": "https://zenn.dev/amu_lab/articles/claude-fable-5-guide-2026",
+      "site": "Zenn(LLM)",
+      "published": "2026-07-13T21:00:27Z",
+      "description": "この記事で分かること\n「Fable 5」はAIモデル？それともゲーム？ 検索するとXboxのRPGとAnthropicの新モデルが混在していて、どっちを読めばいいか分からない。本記事はその混同を30秒で解いた上で、Claude Fable 5を実務でいつ使うべきか（Opus 4.8・Sonnet 5との使い分け、2倍の価格に見合う場面、fallback設計）まで整理する。\n!\n対象読者: Clau...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "LLMに関するややこしい4つの用語とその違い",
+      "url": "https://zenn.dev/fujimooon/articles/cc6daedbd48250",
+      "site": "Zenn(LLM)",
+      "published": "2026-07-13T20:50:55Z",
+      "description": "LLMにおける4つの用語の違い\n\n パラメータ (Parameter)\nAIモデルの 「学習した知識」そのもの であり、ニューラルネットワークの重みやバイアスの数値で、学習を通じて調整される。\n\n\n例: GPT-4は数千億個のパラメータを持つ。\n\n\nパラメータ数が多いほど、より複雑なパターンを学習可能。\n\n\n\n コーパス (Corpus)\nAIの学習に使用する大量のテキストデータ集 で、訓練データ...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "gitignore は防御じゃない。Grok Build の repo アップロード事案から、秘密の置き場所を見直す",
+      "url": "https://zenn.dev/ishizakahiroshi/articles/20260714-grok-build-repo-upload-timeline",
+      "site": "Zenn(LLM)",
+      "published": "2026-07-13T18:35:36Z",
+      "description": "深夜、X のタイムラインを見ていたら「Grok Build がローカルのコードを Google Cloud Storage に送っている」という告発が流れてきました。半信半疑で自分の PC の ~/.grok/logs/unified.jsonl を grep してみたら、245 件の送信記録が残っていました。数日使い倒しただけの環境で、それだけの回数です。\n自分の環境で追試した結果と、X で起き...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
     {
       "title": "OpenClaw で GPT-5.6 Sol/Terra/Luna を使おうとしたらハマったのでまとめておく",
       "url": "https://zenn.dev/ryu1maniwa25/articles/openclaw-gpt-5-6-sol-terra-luna",
       "site": "Zenn(LLM)",
       "published": "2026-07-13T17:46:08Z",
       "description": "GPT-5.6 で Sol / Terra / Luna の 3 モデル体制になったので、OpenClaw の親エージェントを Sol、サブエージェントを Terra や Luna に振り分ける構成を組んでみた。\nagents.defaults.subagents.model に Terra を指定しただけでは動かず、原因を追うと Codex 側の未解決の挙動と OpenClaw 側のモデル未対応...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "他人の CLAUDE.md をコピーしても『守られない・合わない』— Claude Code ルール設計の型",
+      "url": "https://zenn.dev/rs_dev/articles/claude-code-rule-design",
+      "site": "Zenn(LLM)",
+      "published": "2026-07-13T16:18:54Z",
+      "description": "!\n本記事の執筆は Claude（AI）が行い、人間の筆者が構成・内容を監修しています。また、執筆・レビュー・公開準備の作業自体も、本文で紹介するルールセットの運用下で行われました。\n\n\n はじめに — コピーが効かない2つの理由\nClaude Code に「勝手に進めないで」「削除前に確認して」と CLAUDE.md へ書いたのに、守られなかった経験はないでしょうか。では、よくできた他人の CL...",
       "category": "AI・技術",
       "rss_category": "",
       "image_url": ""
@@ -34,36 +194,6 @@
       "image_url": ""
     },
     {
-      "title": "\"「エフツーサン」が通じるのは、あの人がいる日だけ ── 職人の呼び名と品番の間を、AIを使わない\\\"育つ台帳\\\"で埋めるアプリ\"",
-      "url": "https://zenn.dev/hiroshift/articles/f7c091b57c0881",
-      "site": "Zenn(LLM)",
-      "published": "2026-07-13T13:00:08Z",
-      "description": "この記事は、架空の電設資材卸「ひばり電材」を舞台にした公然のシナリオです。登場する会社・人物・データ等はすべて架空です。画面のUIは実際に動きますが、本日のアプリはAIを使いません（計算はすべてブラウザ内の決定論の照合です・確定は人）。\"ありそうな困りごと\"に小さなアプリを一つ作る連載の、25日目です。\n\n\n\n はじめに\n「『あの人しかできない』を、ほどく。」という30日間の連載の、25日目です（...",
-      "category": "AI・技術",
-      "rss_category": "",
-      "image_url": ""
-    },
-    {
-      "title": "AIの二つの設計思想：表象主義とサイバネティクスの断絶",
-      "url": "https://zenn.dev/motimotinotch/articles/c0c218e9ae78eb",
-      "site": "Zenn(LLM)",
-      "published": "2026-07-13T12:51:13Z",
-      "description": "要約: 「AIエージェント内部にグラフや計画を持たせる設計」と「MOC（人間が作った知識構造をAIが辿る設計）」は、一見似ているが思想的には対極にある。前者は知性をシステム内部の精緻な自己完結モデルに宿らせようとする表象主義、後者は知性を人間との循環的なフィードバックの中に置くサイバネティクスである。本稿はこの断絶を工学的な限界と検証可能性（Auditability）の観点から整理し、なぜ「AIの...",
-      "category": "AI・技術",
-      "rss_category": "",
-      "image_url": ""
-    },
-    {
-      "title": "LLMのハルシネーションを自動検出！RAG評価ワークフローの構築",
-      "url": "https://zenn.dev/fd_ai_teacher/articles/tech-20260713040720-1",
-      "site": "Zenn(LLM)",
-      "published": "2026-07-13T12:45:08Z",
-      "description": "「RAGシステムを導入したのに、なぜかLLMが嘘をつく…」「ユーザーから『回答が間違っている』と指摘されたけど、どこから手をつければいいのかわからない」\n多くのRAG開発者が直面するこの問題は、LLMのハルシネーション（幻覚）が原因かもしれません。特に、RAGはハルシネーションを減らすとされていますが、完全に防ぐことはできません。それどころか、関連文書があるにも関わらずLLMが矛盾する回答を生成す...",
-      "category": "AI・技術",
-      "rss_category": "",
-      "image_url": ""
-    },
-    {
       "title": "AIとの個人開発で4度騙されて、開発手法を更新した話",
       "url": "https://zenn.dev/coregrowthlabs/articles/0a3e0b0bd6eef4",
       "site": "Zenn(LLM)",
@@ -79,16 +209,6 @@
       "site": "Zenn(LLM)",
       "published": "2026-07-13T10:52:23Z",
       "description": "私はObsidian(Markdownでノートを書き、リンクでつなげる個人向けメモアプリ)のボルトを、Claude Codeの記憶置き場として数ヶ月運用している。Markdownだけで約500ファイル。最初にやった「AIにノートを丸ごと読ませる」運用は、見事に破綻した。\nいまは同じボルトのまま、構成だけを変えて安定している。何を変えたかを、実測とセットで整理する。\n\n 丸読み運用は3回破綻した\n最...",
-      "category": "AI・技術",
-      "rss_category": "",
-      "image_url": ""
-    },
-    {
-      "title": "ROS2とPython asyncioを組み合わせた非同期処理【LLM API統合の実装例】",
-      "url": "https://zenn.dev/yamamoshu/articles/python-ros2-async",
-      "site": "Zenn(LLM)",
-      "published": "2026-07-13T09:48:22Z",
-      "description": "ROS2でLLM APIを呼ぶとき、「APIの呼び出し（非同期・低速）」と「ロボット制御（同期・高速）」をどう組み合わせるかが問題になります。コールバック内でAPIをブロック呼び出しすると制御が止まります。\n\n\n 問題\n# NG: コールバック内でAPI呼び出しをブロックすると制御が止まる\ndef scan_callback(self, msg):\n    response = requests....",
       "category": "AI・技術",
       "rss_category": "",
       "image_url": ""
