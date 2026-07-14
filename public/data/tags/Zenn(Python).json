@@ -1,14 +1,34 @@
 {
   "site": "Zenn(Python)",
-  "last_updated": "2026-07-14T05:56:07.207870",
-  "total_articles": 5080,
+  "last_updated": "2026-07-14T08:14:45.918351",
+  "total_articles": 5083,
   "articles": [
     {
-      "title": "自動処理の証拠をJSONLへ追記する最小実装 - 実装手順",
-      "url": "https://zenn.dev/kmn/articles/a3657a4942fb8d",
+      "title": "長い式を食べさせて Python を殺す",
+      "url": "https://zenn.dev/nabetani/articles/877dfc270d5337",
       "site": "Zenn(Python)",
-      "published": "2026-07-14T02:38:42Z",
-      "description": "自動処理の証拠をJSONLへ追記する最小実装 - 実装手順\n自動処理は、スケジュール登録だけでは安定しません。結果を上書きしたり端末出力だけに残したりすると、並行自動処理の証拠が消えます。\nこの記事では「実装手順」の観点から、入力、処理、成果物、公開結果を分離する方法を整理します。仕組み全体の理由まで扱います。\n\n 基本方針\n1実行につき検証済みJSONを1行追記し、過去行は書き換えません。\nプロ...",
+      "published": "2026-07-14T06:06:23Z",
+      "description": "これは何？\n以前 Qiita に書いた\nhttps://qiita.com/Nabetani/items/68040ab25c4a845fb9c3\nの続き。\n\n テストターゲット\nテストターゲットは、uv で容易に実行できるものに限った。graalpy もためしたかったんだけど、なんか変な死に方をするので除外した。残念。\nバージョン名に \"+GIL\" とついているのは、free thread 版 ...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "LangChain の @tool デコレータ、権限チェック引数を無言で消していた話",
+      "url": "https://zenn.dev/kenpersonal2507/articles/langgraph-tool-pydantic-security-bug",
+      "site": "Zenn(Python)",
+      "published": "2026-07-14T05:50:11Z",
+      "description": "はじめに\nLangGraph で ReAct Agent を構築する際、ツール実行時にサーバー側から権限情報を注入する設計を取っていました。\n「LLM が生成した引数に権限情報を追加してツールを呼ぶ」——シンプルに見えるこの実装が、テストを書くまで気づかなかったセキュリティバグを内包していました。\n本記事では、精度テストを追加する過程でバグを発見し、修正するまでの流れを解説します。\n\n 背景：ツー...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "Python で Excel ファイルを ODS、XPS、PostScript、PDF/A-1b に変換する手法",
+      "url": "https://zenn.dev/techcode/articles/e7b9635b19bf4b",
+      "site": "Zenn(Python)",
+      "published": "2026-07-14T03:34:03Z",
+      "description": "Excel ファイルはビジネスシーンで広く使われていますが、特定の用途やシステム要件に応じて、別のファイル形式への変換が必要になることがあります。たとえば、オープンソースのオフィススイートとの互換性のために ODS 形式に変換したり、長期保存を目的として PDF/A-1b 形式に変換したりするケースです。本記事では、Python を使用して Excel ファイルを ODS、XPS、PostScri...",
       "category": "開発",
       "rss_category": "",
       "image_url": ""
@@ -24,21 +44,21 @@
       "image_url": ""
     },
     {
-      "title": "AIエージェントのReActループは単純だった。本当に難しかったのはその周りだった",
-      "url": "https://zenn.dev/mo_hu_p/articles/0de23fb3cf6435",
-      "site": "Zenn(Python)",
-      "published": "2026-07-14T01:48:30Z",
-      "description": "1. はじめに\n現在、チャット（テキスト/音声）でLLMにWord・Excel・PowerPointファイルを直接\n作成・編集させるAIエージェントを開発しています。主な特徴は以下の通りです。\n\nOfficeファイルを直接編集する（python-docx/openpyxl/python-pptxベースの\nツール群でLLMがファイルを直接読み書きし、Office自体を裏で操作するわけでは\nありません...",
-      "category": "開発",
-      "rss_category": "",
-      "image_url": ""
-    },
-    {
       "title": "外部API収集ジョブの「毎日成功」を疑う:except passでサイレント失敗を1ヶ月見逃した話と再発防止チェックリスト",
       "url": "https://zenn.dev/chemy_pvl/articles/except-pass-silent-failure-api-logs",
       "site": "Zenn(Python)",
       "published": "2026-07-14T00:21:24Z",
       "description": "ジョブは毎日「成功」と出ていました。実際には、22種類のうち14種類の取得が毎回失敗していました。その状態が、約1ヶ月続いていました。\n自宅ラボで外部APIからデータを集めていて、いちばん怖い失敗は「落ちた」ではありません。落ちたなら、まだ見つけられます。厄介なのは、ジョブ全体は成功扱いで、ログにも成功と出ていて、実際には中の取得だけが失敗し続けている状態です。原因は監視基盤の不足でもリトライ回数...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "ポートはドメインの必要から引く——LLMの実体を隠すPorts & Adapters",
+      "url": "https://zenn.dev/moimoi/articles/engawa-hexagonal-llm-port",
+      "site": "Zenn(Python)",
+      "published": "2026-07-13T23:40:45Z",
+      "description": "前回の ACP の記事で「内部設計（Ports &amp; Adapters）も別記事にする」と書きました。これがその別記事です。\n題材はデスクトップに住む AI 猫「茶々」の常駐アプリ Engawa。ただし今回は猫の話はほぼしません。趣味アプリで Ports &amp; Adapters を引いてみたら、Claude とローカル LLM が無改造で差し替わった——その設計判断を、言語に依らない話...",
       "category": "開発",
       "rss_category": "",
       "image_url": ""
@@ -79,6 +99,16 @@
       "site": "Zenn(Python)",
       "published": "2026-07-13T13:19:47Z",
       "description": "忙しい人向け要約\nDavinci Resolveにおいて、トラックに配置している.wav音声ファイルから対応する字幕の.txtファイルを読み込むことで自動的に字幕のText+のクリップをタイムラインに配置する便利スクリプトです。\n以前公開したスクリプトは環境によって正しく動作しなかったのでPyhtonでリライトした修正版です。\n\n↓旧記事\nhttps://zenn.dev/kirimin/arti...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "LLMのハルシネーションを自動検出！RAG評価ワークフローの構築",
+      "url": "https://zenn.dev/fd_ai_teacher/articles/tech-20260713040720-1",
+      "site": "Zenn(Python)",
+      "published": "2026-07-13T12:45:08Z",
+      "description": "「RAGシステムを導入したのに、なぜかLLMが嘘をつく…」「ユーザーから『回答が間違っている』と指摘されたけど、どこから手をつければいいのかわからない」\n多くのRAG開発者が直面するこの問題は、LLMのハルシネーション（幻覚）が原因かもしれません。特に、RAGはハルシネーションを減らすとされていますが、完全に防ぐことはできません。それどころか、関連文書があるにも関わらずLLMが矛盾する回答を生成す...",
       "category": "開発",
       "rss_category": "",
       "image_url": ""
