@@ -1,8 +1,128 @@
 {
   "site": "Zenn(Python)",
-  "last_updated": "2026-07-14T21:25:55.944494",
-  "total_articles": 5088,
+  "last_updated": "2026-07-14T22:31:40.701285",
+  "total_articles": 5100,
   "articles": [
+    {
+      "title": "エージェントの実行ログから発注文と実行の食い違いを拾うツールを作った話",
+      "url": "https://zenn.dev/skova_digital/articles/490c5a54f80182",
+      "site": "Zenn(Python)",
+      "published": "2026-07-14T22:30:05Z",
+      "description": "エージェントの完了報告と実行内容がずれるとき\nAIエージェントにコーディング作業を任せる機会が増えている。\nファイルを保存させ、調査させ、複数の作業を並行して進めさせる。\n作業が終わると、エージェントは「保存しました」「確認済みです」と報告してくる。\nその報告は、たいてい正しい。\nだが、たまに正しくない。\nファイルへの書き込みは実行されたのに、その後に実施するはずだった確認手順が飛ばされたまま「完...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "ローカルLLM study1: MacBook Airで11モデルを実測してみた",
+      "url": "https://zenn.dev/tkpurine/articles/local-llm-study-001-macbook-air-10models",
+      "site": "Zenn(Python)",
+      "published": "2026-07-14T22:28:30Z",
+      "description": "はじめに\nクラウド型のAIコーディングアシスタントは便利ですが、月額コストやコードの外部送信が気になる場面があります。ちょうどGitHub Copilotの値上げ通知が届いたこともあり、「話題のローカルLLMは本当にコーディング用途で使えるのか」を確かめてみたいと思い、MacBook Airの上で動くモデルを片っ端から試すことにしました。\nこの記事では、Ollamaで動かせる11モデルを同じお題で...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "Psi4の活用事例（分子間相互作用） SAPT計算の基礎と実践 その１",
+      "url": "https://zenn.dev/pincolo/articles/da7e9203e4cbbc",
+      "site": "Zenn(Python)",
+      "published": "2026-07-14T21:00:07Z",
+      "description": "Psi4の活用事例（分子間相互作用）- SAPT計算の基礎と実践（事例1：ジメトキシベンゼンとメタン）-\nこんにちは！これまでの記事では、Psi4の基本的な使い方から構造最適化、振動数計算といった様々な機能を紹介してきました。今回と次回の2回にわたって、分子と分子がどのように相互作用しているのか、その「力」の内訳を詳細に分析できる強力な手法、「SAPT計算」に焦点を当てていきます。\n今回はその第一...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "エンジニア視点で語る！Pythonで学ぶマクロ経済学入門 21",
+      "url": "https://zenn.dev/maszkot/articles/5ee76454f162cd",
+      "site": "Zenn(Python)",
+      "published": "2026-07-14T16:17:40Z",
+      "description": "https://qiita.com/maskot1977/items/73a58a20f19ba9b74e12\nDJミオ：こんばんは！ ラジオ教育番組「エンジニア視点で語る！Pythonで学ぶマクロ経済学入門」、今夜のテーマは――\n「\"債務\" と \"純債務\" はまったく違う！財政破綻論を冷静に読み解く」 です。\nDJレン：この回、かなり大事です。\nなぜかというと、ニュースやSNSでよく見る「国の借...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "pydantic-settings で環境変数管理を型安全にする",
+      "url": "https://zenn.dev/moridev/articles/a6631cf0edc105",
+      "site": "Zenn(Python)",
+      "published": "2026-07-14T16:08:40Z",
+      "description": "この記事では、os.getenv() が散在するコードを pydantic-settings に寄せ、環境変数の読み込み・型変換・検証を 1 か所に集める設計を扱います。\n\n\n 前提\npydantic-settings は Pydantic v2 系の設定管理ライブラリです。BaseSettings にフィールドを宣言すると、環境変数や .env ファイルから値を読み込み、型変換と検証をまとめて行...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "AIにCSV→Markdown変換ツールを作らせたら、先頭の空行1つで全データが消えていた",
+      "url": "https://zenn.dev/numarn/articles/csv-to-markdown-table-cli-buildlog-handson",
+      "site": "Zenn(Python)",
+      "published": "2026-07-14T16:01:59Z",
+      "description": "Claude Code には claude -p という、対話せずに1回だけ指示を投げて結果を受け取る使い方(ワンショット実行)があります。今回は「CSV(カンマ区切りのデータ)を標準入力(キーボードから入力したり、別の処理の出力をそのまま流し込んだりして受け取る、データの入り口のこと)で受け取ってMarkdown(記号だけで見出しや表などを書ける、Zennの記事本文にも使われている簡易な文書形式...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "【Claude Code】SessionStart hookで始める状態管理入門：セッション引継ぎをPythonスクリプトで実装する具体例",
+      "url": "https://zenn.dev/fukukei23/articles/claude-code-sessionstart-hook-python",
+      "site": "Zenn(Python)",
+      "published": "2026-07-14T15:33:16Z",
+      "description": "はじめに\nClaude CodeをCLIで使い続けていると、こんな悩みにぶつかりませんか？\n\n前回どこまで作業したか忘れてしまう\n毎回同じコンテキストを手動で説明している\nプロジェクトの前提条件を都度思い出すのが面倒\n\nそんな課題を解決するのが SessionStart hook です。本記事では、hooks.yamlによる設定とPythonスクリプトを組み合わせて、セッション開始時に前回の状態を...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "コンテンツ生成と公開操作を分離するtrusted runner設計 - 実装手順",
+      "url": "https://zenn.dev/kmn/articles/a338daa0b87974",
+      "site": "Zenn(Python)",
+      "published": "2026-07-14T15:22:52Z",
+      "description": "コンテンツ生成と公開操作を分離するtrusted runner設計 - 実装手順\n自動処理は、スケジュール登録だけでは安定しません。下書きを作れたことと、プロバイダーアカウントを自由に操作できることは別です。\nこの記事では「実装手順」の観点から、入力、処理、成果物、公開結果を分離する方法を整理します。仕組み全体の理由まで扱います。\n\n 基本方針\n対象を固定したtrusted runnerで、要求・...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "Claude Codeの5時間レート制限、見えないと不安になったのでメニューバーに表示するツールを作った",
+      "url": "https://zenn.dev/starken/articles/507aa416faa5aa",
+      "site": "Zenn(Python)",
+      "published": "2026-07-14T15:02:58Z",
+      "description": "つくったもの\nClaude Code の5時間レート制限の使用量を、CLIのステータスバーとmacOSのメニューバーにリアルタイム表示するツールです。\nhttps://github.com/kenta2107sub-star/claude-usage-display\n\nCLI利用時：ステータスバーに使用率を表示\nメニューバーアプリ：常時表示。裏側のデータは15分ごとにバックグラウンドで自動更新\n\n...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "18-①Kaggle実践3 Biohub細胞トラッキング：環境構築からベースライン初回提出までの完全ガイド",
+      "url": "https://zenn.dev/rg687076/articles/zenn_20260714_0630_bct_environment_submission",
+      "site": "Zenn(Python)",
+      "published": "2026-07-14T14:57:36Z",
+      "description": "Biohub - Cell Tracking During Development\nKaggle実践3『Biohub細胞トラッキング』1.Kaggle Notebookに実行環境をつくる(この記事)\n\n Abstruct\n\nKaggleの生物画像コンペティション「Biohub - Cell Tracking During Development」に参加\n環境構築～初回提出(Submit)までの手順...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "AIコーディングエージェントの「完了」をSQLite・JSONL・Evidenceで検証可能にする",
+      "url": "https://zenn.dev/mocchalera/articles/e9175fc4d09cf2",
+      "site": "Zenn(Python)",
+      "published": "2026-07-14T14:14:16Z",
+      "description": "AIコーディングエージェントは、コードを変更するところまでは速くなりました。\nしかし実際に複数セッション、複数エージェントで開発を続けると、別の問題が残ります。\n\n何をもって「完了」としたのか\nテストやレビューの証拠はどこにあるのか\n次の操作はエージェントが進めてよいのか\nどこから人間の判断が必要なのか\nセッションが変わっても同じ状態から再開できるのか\n\n私はこの運用をローカルで管理するCLI、\n...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "PythonのJSONDecodeErrorで壊れ箇所を特定する──line/column/charの読み方",
+      "url": "https://zenn.dev/stockdev_sho/articles/0f46f98b9b8099",
+      "site": "Zenn(Python)",
+      "published": "2026-07-14T14:10:33Z",
+      "description": "json.decoder.JSONDecodeError: Expecting value: line 4 column 32 (char 72) ——設定ファイルや API レスポンスを json.loads() に渡した瞬間に出る、この一行。「どこかが壊れている」のは分かるけれど、巨大な JSON のどこかが分からない。でも実は、このエラーは壊れた場所を座標で必ず教えてくれています。\nこの記事...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
     {
       "title": "プログラミング未経験でもOK！ブラウザだけで作る、はじめてのAIチャットボット",
       "url": "https://zenn.dev/m2yagyu/articles/first-ai-chatbot-colab",
