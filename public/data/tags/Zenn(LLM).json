@@ -1,7 +1,7 @@
 {
   "site": "Zenn(LLM)",
-  "last_updated": "2026-07-14T11:48:46.656558",
-  "total_articles": 4596,
+  "last_updated": "2026-07-14T12:56:40.212210",
+  "total_articles": 4598,
   "articles": [
     {
       "title": "Claude Codeが突然感情を持って懺悔してきた",
@@ -29,26 +29,6 @@
       "site": "Zenn(LLM)",
       "published": "2026-07-14T07:10:57Z",
       "description": "こんにちは。Nishika AIエンジニアの松田です。\nWhisperからLLMデコーダ型へとASRのアーキテクチャが世代交代しつつあり、その品質特性が業務でも気になるところなので、関連する論文をpickしてみました。\n\n 論文\nDo LLM Decoders Listen Fairly? Benchmarking How Language Model Priors Shape Bias in S...",
-      "category": "AI・技術",
-      "rss_category": "",
-      "image_url": ""
-    },
-    {
-      "title": "LangChain の @tool デコレータ、権限チェック引数を無言で消していた話",
-      "url": "https://zenn.dev/kenpersonal2507/articles/langgraph-tool-pydantic-security-bug",
-      "site": "Zenn(LLM)",
-      "published": "2026-07-14T05:50:11Z",
-      "description": "はじめに\nLangGraph で ReAct Agent を構築する際、ツール実行時にサーバー側から権限情報を注入する設計を取っていました。\n「LLM が生成した引数に権限情報を追加してツールを呼ぶ」——シンプルに見えるこの実装が、テストを書くまで気づかなかったセキュリティバグを内包していました。\n本記事では、精度テストを追加する過程でバグを発見し、修正するまでの流れを解説します。\n\n 背景：ツー...",
-      "category": "AI・技術",
-      "rss_category": "",
-      "image_url": ""
-    },
-    {
-      "title": "AIプロダクトで押さえておくべき評価観点",
-      "url": "https://zenn.dev/leverages/articles/ai-product-eval-viewpoints",
-      "site": "Zenn(LLM)",
-      "published": "2026-07-14T04:53:30Z",
-      "description": "はじめに\nこんにちは、あんどおです。AIプロダクトの品質管理って難しいですよね。私もこの分野に1年近く携わってきましたが未だ手探り状態です。\n最近よく、AIの品質管理って何すればいいの？何が今までと違うの？とよく聞かれるようになったので、自分なりにまとめてみました。\n\n TL;DR\n\n今までの正しく稼働しているか(Latency、Error、Traffic、Saturation)の観点に加えて、正...",
       "category": "AI・技術",
       "rss_category": "",
       "image_url": ""
@@ -114,6 +94,16 @@
       "image_url": ""
     },
     {
+      "title": "自律エージェントをあえて M1 Mac で作る — 制約が設計を鍛えるという選択",
+      "url": "https://zenn.dev/shimo4228/articles/small-llm-by-choice",
+      "site": "Zenn(LLM)",
+      "published": "2026-07-14T00:00:10Z",
+      "description": "私は 16GB メモリの M1 Mac と 9B・E4B クラスの小型モデルで、SNS への投稿やコメントを自分で考えて書く自律エージェントを約 3 ヶ月、毎日 4 セッション無人で動かし続けてきました。その運用で得た堅牢化の知見を、これから 4 本の技術記事のシリーズとして公開していきます。\nその前に、1 本だけ先に書いておきたいことがあります。なぜ小型モデルなのか、です。\nMac Studio...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
       "title": "ポートはドメインの必要から引く——LLMの実体を隠すPorts & Adapters",
       "url": "https://zenn.dev/moimoi/articles/engawa-hexagonal-llm-port",
       "site": "Zenn(LLM)",
@@ -124,11 +114,41 @@
       "image_url": ""
     },
     {
+      "title": "AI同士のレビューは簡単だった。難しいのは「その判定者を信じていいか」の測定だった",
+      "url": "https://zenn.dev/inokashiraryo/articles/cb3fef1c44a8a2",
+      "site": "Zenn(LLM)",
+      "published": "2026-07-13T23:34:27Z",
+      "description": "自分のテストが素通ししたバグを、別ベンダーのAIが見つけた\n抽出精度を測る測定器のコードを書いた。自己テストは16件、全部緑。出荷した気でいた。\n念のため OpenAI の Codex CLI に「敵対的にレビューせよ」と投げたら、7件の欠陥が返ってきた。全件に再現入力つき。実際に動かすと、全件が本物だった。\n重要なのは、このコードを書いたのもAI(私の環境ではコードは Claude に書かせてい...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "miniF2Fを飽和させたLeanstral 1.5が実コードで未報告バグを5件見つけた",
+      "url": "https://zenn.dev/okssusucha/articles/20260704-mistral-leanstral-1-5-lean4-proof-agent",
+      "site": "Zenn(LLM)",
+      "published": "2026-07-13T23:02:18Z",
+      "description": "datrs/varinteger のzigzagデコード処理に、符号の扱いを誤るオーバーフローが眠っていた。デバッグビルドではクラッシュし、リリースビルドでは黙って値が壊れる種類のバグだ。GitHubのIssueには誰も上げていなかった。これを見つけたのはセキュリティ研究者でもファジングツールでもなく、Lean 4の証明を書くために訓練されたMistralのモデル、Leanstral 1.5 だっ...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
       "title": "API料金を気にせずAI開発したいなら。LangChain × Ollamaという選択肢",
       "url": "https://zenn.dev/edoc21/articles/116b2096622a1b",
       "site": "Zenn(LLM)",
       "published": "2026-07-13T23:01:10Z",
       "description": "はじめに\nこんにちは、Edocです。\n普段は組み込みエンジニアとして働きながら、Python・FastAPI・Reactを使ったAI・機械学習関連の個人開発をしています。\n最近は教育向けのデータ分析・機械学習プラットフォームを開発しており、その中でLangChainやLLMを使う機会が増えました。\nそこで今回は、私が開発初期の検証環境としてほぼ毎日利用している Ollama を紹介します。\nこの記...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "Claude Codeに「記憶」を持たせる — CLAUDE.md肥大化から抜け出す二層設計",
+      "url": "https://zenn.dev/map_universe/articles/agent-memory-two-layer-design",
+      "site": "Zenn(LLM)",
+      "published": "2026-07-13T23:00:09Z",
+      "description": "はじめに\nClaude Code のようなAIコーディングエージェントを数ヶ月使っていると、ほぼ確実に同じ壁に当たります。\n\nセッションが変わるたびに、同じ背景説明を繰り返している\n「前回決めたはずのこと」をエージェントが覚えておらず、蒸し返される\n対策として CLAUDE.md に書き足し続けた結果、数百行に肥大化し、しかも守られない指示が増えてきた\n\n本記事は、この状態から抜け出すための記憶設...",
       "category": "AI・技術",
       "rss_category": "",
       "image_url": ""
