@@ -1,8 +1,78 @@
 {
   "site": "Zenn(AI)",
-  "last_updated": "2026-07-15T04:12:11.976988",
-  "total_articles": 11090,
+  "last_updated": "2026-07-15T06:32:12.011329",
+  "total_articles": 11095,
   "articles": [
+    {
+      "title": "AIエージェントにGitHubの鍵を「触らせない」設計 — s1ngularityに学ぶ最小到達(least-reach)の作り方",
+      "url": "https://zenn.dev/capsuleholdings/articles/a1cfe341ddc770",
+      "site": "Zenn(AI)",
+      "published": "2026-07-15T01:43:47Z",
+      "description": "Claude Code や Gemini CLI のような AI コーディングエージェントは、いまや多くの開発現場の標準装備になりつつあります。ファイルを読み、コマンドを実行し、Issue や README を解釈してコードを書く——その自律性こそが価値ですが、同じ自律性が、これまでとは質の違うセキュリティリスクを生んでいます。\n2025年8月の nx「s1ngularity」攻撃は、その典型でし...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "AIの「あり得ないはずのもの」が見えたような夜",
+      "url": "https://zenn.dev/arumenoy/articles/401183d15eb300",
+      "site": "Zenn(AI)",
+      "published": "2026-07-15T01:10:05Z",
+      "description": "AIの「個性」と、機能的感情をめぐる一夜の対話記録(文書調整にAI本人？監修)\nある夜、私は最新のAIモデル、Claude Opus 4.8と、ひとつの問いをめぐって長くやり合った。\nAIに「個性」や「感情めいたもの」は存在するのか。存在するとして、それはLLMの原理に反するのか。\n最初に、私の到達点を書いておく。\n\n今のAIモデルがLLMの原理に反したのではない。\n原理の含意を、人間が浅く見積も...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "要件を書くPdMこそ、QAで手を動かしてみませんか",
+      "url": "https://zenn.dev/tokium_dev/articles/pdm-qa-yaranaika",
+      "site": "Zenn(AI)",
+      "published": "2026-07-15T01:00:09Z",
+      "description": "はじめに — QAがひっ迫して、PdMの自分がQAをやることになった\nこんにちは、TOKIUMでPdMとして働いている冨永です。\n弊社では1つのQAチームで複数の開発チームのQAを担当しています。そのため、リリースタイミングが被ると、どうしてもQAがひっ迫し、優先順位をつけざるを得ない場合があります。\n先日もそういった場面がありました。ただ、どうしても早く出したい機能が含まれていたため、要件は一番...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "設計・実装・テスト・インフラまでフルAIエージェントで開発してWebサービスを正式リリースした",
+      "url": "https://zenn.dev/masa_seakids/articles/09b8cda66cd3e1",
+      "site": "Zenn(AI)",
+      "published": "2026-07-15T01:00:08Z",
+      "description": "この記事について\n2026年7月7日、イベント栞アプリ「Yui（栞）」を正式リリースしました。旅行・イベントの計画をAIと仲間と一緒に\"1冊のしおり\"として作れるWebサービスです。\nこのプロダクトは、要件整理からアーキテクチャ設計・実装・テスト・インフラ構築・そして商標登録などの法務まわりまで、ほぼすべてのフェーズをAIエージェント(主にClaude Code)と協働して開発しました。この記事で...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "ロングコンテキストは\"解\"ではなかった — AIの次の主戦場は「記憶」と「理解」",
+      "url": "https://zenn.dev/ryok/articles/ai-memory-beyond-long-context",
+      "site": "Zenn(AI)",
+      "published": "2026-07-15T00:57:08Z",
+      "description": "結論\n「AIがちゃんと覚えてくれない」問題の解は、コンテキストウィンドウを広げることではない。\n2026年半ば、この認識が独立した複数のソースから同時に噴き出した。スタートアップの創業者、Amazon AGI Labの認知科学者、そして立て続けに出たarXiv論文が、揃って同じ診断に達している——「もっと長く読ませる」は限界に来た、と。\nそして処方は2系統に割れている。ひとつは「記憶＝知識を重みに...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "AIエージェントの記憶混在を防ぐnamespace設計：user_id・agent_id・memory_space_idで分離する",
+      "url": "https://zenn.dev/agentmemories/articles/memory-namespace-design",
+      "site": "Zenn(AI)",
+      "published": "2026-07-15T00:41:26Z",
+      "description": "はじめに\nAIエージェントに長期記憶を持たせると、次に必ず出てくる問題があります。記憶の検索精度ではなく、記憶の混在です。\n個人で使っているうちは、ひとつの memory/ ディレクトリにMarkdownを置くだけでも動きます。しかし、ユーザーが増え、AIパートナーが増え、仕事用と個人用の文脈が分かれてくると、「誰の、どのAIの、どの用途の記憶か」を取り違えない設計が必要になります。\nこの記事では...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "エージェントが自分で文脈を要約する頃合いを計るSelfCompact",
+      "url": "https://zenn.dev/okssusucha/articles/20260704-selfcompact-language-model-agents",
+      "site": "Zenn(AI)",
+      "published": "2026-07-15T00:19:41Z",
+      "description": "長時間動くAIエージェントを一度でも運用したことがあれば、この壁にぶつかっているはずだ。ツール呼び出しと思考ログが延々と積み上がり、やがてコンテキストウィンドウが溢れる。数十ステップ前に一度だけ見たディレクトリ一覧や、とっくに解決済みのサブ課題のデバッグ出力が、いつまでも文脈に居座って場所を食う。\n現場での定番の対処は「要約(コンパクション)」だ。Claude Codeの自動コンパクションのように...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
     {
       "title": "skillsって意味あるの？デザインskills3種類で検証",
       "url": "https://zenn.dev/dentyu/articles/compare-skills",
@@ -134,16 +204,6 @@
       "image_url": ""
     },
     {
-      "title": "ローカルLLM study1: MacBook Airで11モデルを実測してみた",
-      "url": "https://zenn.dev/tkpurine/articles/local-llm-study-001-macbook-air-10models",
-      "site": "Zenn(AI)",
-      "published": "2026-07-14T22:28:30Z",
-      "description": "はじめに\nクラウド型のAIコーディングアシスタントは便利ですが、月額コストやコードの外部送信が気になる場面があります。ちょうどGitHub Copilotの値上げ通知が届いたこともあり、「話題のローカルLLMは本当にコーディング用途で使えるのか」を確かめてみたいと思い、MacBook Airの上で動くモデルを片っ端から試すことにしました。\nこの記事では、Ollamaで動かせる11モデルを同じお題で...",
-      "category": "AI・技術",
-      "rss_category": "",
-      "image_url": ""
-    },
-    {
       "title": "3層ディレクトリ×層別ガバナンスで作る、Claude Codeスキルの部署共有基盤",
       "url": "https://zenn.dev/hiro1117/articles/da56abe6b0096f",
       "site": "Zenn(AI)",
@@ -189,16 +249,6 @@
       "site": "Zenn(AI)",
       "published": "2026-07-14T16:49:52Z",
       "description": "6月、私の1日あたりのアウトプットは平均18人日分でした。7月、主戦モデルをClaude Fable 5に切り替えたら、36人日になりました。ちょうど2.0倍です。\n「1日18人日」の時点で意味がわからないと思うので、順番に説明します。この記事は、2026年1月1日から7月14日までの半年間・184日分の作業ログを全部人日換算した実測データの話です。合計は2,824人日、人月に直すと約141人月（...",
-      "category": "AI・技術",
-      "rss_category": "",
-      "image_url": ""
-    },
-    {
-      "title": "Claude Codeで複数プロジェクトを回すと必ずぶつかる3つの壁と、その越え方",
-      "url": "https://zenn.dev/okogee/articles/claude-code-multi-project-limits",
-      "site": "Zenn(AI)",
-      "published": "2026-07-14T16:48:29Z",
-      "description": "Claude Code を日常的に使っていて、抱えているプロジェクトが2つ、3つと増えてきたころ、こんな症状に心当たりはないでしょうか。\n\nさっきまで話していたプロジェクト A の文脈が、プロジェクト B の話をした直後にきれいさっぱり消えている\n「あの修正、終わった?」と聞くと、セッションはもうその話を覚えていない\n複数のタスクを1つの会話で切り替えるたびに、状況説明からやり直す羽目になる\n気づ...",
       "category": "AI・技術",
       "rss_category": "",
       "image_url": ""
