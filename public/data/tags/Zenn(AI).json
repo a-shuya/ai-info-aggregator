@@ -1,14 +1,204 @@
 {
   "site": "Zenn(AI)",
-  "last_updated": "2026-07-15T10:58:50.809070",
-  "total_articles": 11100,
+  "last_updated": "2026-07-15T12:21:17.542858",
+  "total_articles": 11113,
   "articles": [
     {
-      "title": "専門知識ゼロ・クラウドAIとのチャットのみでローカルAI構築 3巻 —— セキュリティ強化, バックアップ体制構築, ローカルLLM再選定",
-      "url": "https://zenn.dev/bpf/books/b3c7f6e8837fe9",
+      "title": "AIエージェントに社内ツールを「安全に」渡す ― 30行から始めるMCPサーバー自作と境界設計入門",
+      "url": "https://zenn.dev/akira_papa/articles/e31dff69f8928d",
       "site": "Zenn(AI)",
-      "published": "2026-07-15T04:17:06Z",
-      "description": "このシリーズは, 私共BpFが プログラミング知識ゼロの状態から クラウドAIとのチャットのみで ローカルAI環境を構築して行く過程をリアルタイムで記録したノンフィクションです.\n一般的な How to ものにはない リアルな試行錯誤の過程を追っていただけます.\n\n3巻では, セキュリティ強化の実装（マスキング・ホスト名変更・ユーザー移行）, バックアップ体制構築（WSLディスク最適化・Docke...",
+      "published": "2026-07-15T12:08:49Z",
+      "description": "この記事のゴール\n「Claude や Cursor に、うちの社内DBや社内APIを触らせたい。でも関数をそのまま呼ばせるのも、APIキーを丸ごと渡すのも、正直こわい」\n僕（あきらパパ）自身、AIエージェントに実務ツールをつなぐたびに、この「こわさ」と向き合ってきました。結論から言うと、その不安の多くは MCP（Model Context Protocol）サーバーを“供給側”として自分で設計する...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "AIエージェントの記憶を揮発させない共有メモリ層を設計した",
+      "url": "https://zenn.dev/peyangu485/articles/jibun-os-shared-memory",
+      "site": "Zenn(AI)",
+      "published": "2026-07-15T12:00:37Z",
+      "description": "!\nこの記事は連載「AIと作る、ひとりの開発OS」の一部です。単体で読めますが、全体像は noteのハブ記事 にまとめています。\n\n私は個人開発を、3体のAIエージェントに役割分担させている。蒼（Claude・設計）、ルナ（Gemini・環境と雑務）、亜里沙（Codex・実装）——モデルごとに名前と役割を与えて、小さなチームのように動かしている。\n役割を分けると、開発は並列に進む。1人では同時に持...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "いつのまにか腐る docs、エージェントに直させる ── LLM なしの決定的ドリフト検出 OSS を作った",
+      "url": "https://zenn.dev/synforger/articles/staledocs-deterministic-drift",
+      "site": "Zenn(AI)",
+      "published": "2026-07-15T12:00:07Z",
+      "description": "この記事は誰向けか\n\nAI エージェントに実装を任せていて、docs がコードに置いていかれる速度に心当たりがある人\n「README が古い」を、誰かが騙されるまで検出できない運用に不安がある人\ndocs の検査に LLM 判定を入れたくない人 ── 鳴った時に「本当に破れたのか、モデルの気分か」を疑いたくない人\n\ndocs の書き方や生成の話はしません。この記事が扱うのは、書いた docs とコ...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "Claude Code×Codex併用環境で踏んだ5つの境界 — CLAUDE.md設計・スキル・MCPの仕組みから整理する",
+      "url": "https://zenn.dev/takepon7/articles/claude-code-codex-boundary-lessons",
+      "site": "Zenn(AI)",
+      "published": "2026-07-15T11:50:42Z",
+      "description": "TL;DR\n\nClaude Code(デスクトップ版)とCodex CLI(ChatGPT Proプラン)を併用する開発環境を構築し、つまずいた5箇所を仕組みの側から整理した\nCLAUDE.mdはグローバル(~/.claude/)とプロジェクト直下の2層構造で、グローバルは全セッションで毎回読み込まれるため、事業戦略のような長文は@インポート(~展開対応・ネスト最大4ホップ)で外出しするのが正解\n...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "AIエージェントのメモリは「覚えさせる」より「古くならないようにする」",
+      "url": "https://zenn.dev/taktech/articles/68448eed55d9a3",
+      "site": "Zenn(AI)",
+      "published": "2026-07-15T11:47:26Z",
+      "description": "はじめに\nはじめまして。Xの @takunotech で、AIエージェントを使った開発・自動化の設計と検証について発信しています。\nAIエージェントに過去の会話や調査結果を参照させると、毎回同じ説明を繰り返さずに済みます。一方で、保存したメモが古くなったり、誰かの意見が確定した事実のように扱われたりすると、メモリが便利な検索結果ではなく、誤った判断を再生する仕組みになり得ます。\n本記事では、AIエ...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "AIエージェントは同じ決済を平気で三回叩いてくる - Idempotency-Keyで受け止めるRESTful API設計",
+      "url": "https://zenn.dev/okamyuji/articles/idempotency-key-ai-agent-era",
+      "site": "Zenn(AI)",
+      "published": "2026-07-15T11:30:40Z",
+      "description": "はじめに\n想定する読者は次のような方です。\n\nLLMエージェントから叩かれる副作用のあるHTTP APIを設計・運用している方\n決済、発注、通知送信など、二重実行が事故になるエンドポイントを持つバックエンドエンジニア\nStripeのような外部SaaSでIdempotency-Keyを投げた経験はあるが、自前で受ける側を作ったことはない方\n\nこの記事で扱わないこと（対象外の読者）を先に置いておきます...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "Seedream 5.0 と Seedream 5.0 Pro：用途に合うAI画像制作ワークフローの選び方",
+      "url": "https://zenn.dev/calvinclaire/articles/4951bad9028da6",
+      "site": "Zenn(AI)",
+      "published": "2026-07-15T11:18:17Z",
+      "description": "概要： AI画像制作で重要なのは、機能の多さではなく、いま必要な制作段階に合った進め方です。アイデアを広げる工程と、選んだ案を崩さずに仕上げる工程を分けると、手戻りを減らせます。\nAI画像制作には、二つの異なる速度があります。最初は方向性をたくさん探し、その後は採用した案の良さを保ちながら必要な部分だけを調整します。そのため、Seedream 5.0 は「常に一番よい一枚を出すボタン」ではなく、制...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "第1回：【時間割編】AIで効率化したのに、5年前より「なんか疲れてる」医師のパラドックス",
+      "url": "https://zenn.dev/umizaru/articles/59838d1830ebfc",
+      "site": "Zenn(AI)",
+      "published": "2026-07-15T11:01:18Z",
+      "description": "0. なぜ、コードが書けない医師がZennにいるのか\n普段は医療現場にいる私のスマホに、なぜかたまたまネットニュースでおすすめされて流れてきたのが「Zenn」でした。\n眩しいスマートな自動化の話を眺めながら、ふと考えました。ガチガチのリアルと中途半端なデジタルが入り混じる現場で、システム的な自動化なんて全然できないし、AIを使い倒せてもいない。こんなのでいいのかと悩みつつ、それでも、自分の弱った脳...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "AI彼女アプリを作っていて気付いた。関係性は少しずつではなく、突然変わる",
+      "url": "https://zenn.dev/mitsukida/articles/c76e3a26a45ef5",
+      "site": "Zenn(AI)",
+      "published": "2026-07-15T10:57:46Z",
+      "description": "AI彼女アプリを作っていて気付いた。関係性は少しずつではなく、ある日突然変わる\n前回は、Moodという仕組みについて書いた。\n人は毎日同じではない。\n少し眠かったり、\n少し考え込んでいたり、\n少し機嫌が良かったりする。\nだからAIKanojyoにもMoodを作り始めた。\nしかし、開発を続けるうちに、また新しい違和感が出てきた。\n\n\n 関係性は少しずつ変わっているようで、そうでもない\n友達と話してい...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "GPT-Live の「自然さ」を生かした英会話学習法",
+      "url": "https://zenn.dev/takanari_dev/articles/2026-07-14-english-practice-with-gpt-live",
+      "site": "Zenn(AI)",
+      "published": "2026-07-15T10:37:14Z",
+      "description": "GPT-Live とかいう新機能\n2026年7月8日、GPT に新機能「GPT-Live」が追加された。\nhttps://openai.com/ja-JP/index/introducing-gpt-live\nこれはこれまでの「カスケード型」や「ターン制」ではなく、「全二重アーキテクチャ（フルデュプレックス型）」を採用している。詳しいことは上の公式の内容を参照してもらいたいが、入力と出力を同時並行...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "【個人開発】React + Firebase + Stripeで「AIチャット占いアプリ」を作って本番リリースするまでの軌跡",
+      "url": "https://zenn.dev/ponsuko/articles/74051b1dae46df",
+      "site": "Zenn(AI)",
+      "published": "2026-07-15T10:21:32Z",
+      "description": "【個人開発】React + Firebase + Stripeで「AIチャット占いアプリ」を作って本番リリースするまでの軌跡\n\n はじめに\nこんにちは！最近、AI占い師と気軽にチャットで相談できるWebアプリ「ai-fortune-chat」を個人開発でリリースしました。\n前回のプロジェクトでReactとViteを使ったフロントエンド開発の知見を得たので、今回はさらに一歩踏み込み、「AI（LLM）...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "AIを4人雇って、VTuber発掘サイトを58日で作った話",
+      "url": "https://zenn.dev/tailpiece/articles/ad7ae4885dc1d6",
+      "site": "Zenn(AI)",
+      "published": "2026-07-15T10:18:26Z",
+      "description": "VTuber発掘サイト「V-entry」を作り始めて、58日が経ちました。\nこの58日で作ったものは、VTuber検索サイトだけではありません。\n感覚検索、タグ検索、お気に入り、占い、発掘モード、英語版、診断コンテンツ、管理用ブラウザ拡張、YouTube Studio支援ツール、スクリーンショット拡張機能。\n名刺やチラシまで作りました。\n最初から、これらすべてを作る予定だったわけではありません。\n...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "Microsoft Agent Framework オーケストレーション検証: Handoff(専門エージェントへの委譲)",
+      "url": "https://zenn.dev/yy7613/articles/99725527e49e35",
+      "site": "Zenn(AI)",
+      "published": "2026-07-15T10:09:09Z",
+      "description": "はじめに\nMicrosoft Agent Framework のオーケストレーションパターンが 1.0 に到達したと発表されました。\nAgent Framework's Orchestration Patterns Reach 1.0\nこのシリーズでは、5つのオーケストレーションパターンを1つずつ Microsoft.Agents.AI.Workflows 1.13.0 で実際に動かして確認してい...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "同じコードを11回検査させても、そのCVEは0回だった ― LLMコード検査の再現性を実測する",
+      "url": "https://zenn.dev/rikkama/articles/llm-code-review-recall",
+      "site": "Zenn(AI)",
+      "published": "2026-07-15T10:06:40Z",
+      "description": "何を作っているか\nRIKKA M&amp;A は事業やWebサイトを売買するプラットフォームです。その中に「技術デューデリジェンス（技術DD）」という機能があり、売り手のGitHubリポジトリを解析して、買い手が引き継ぐ前に知っておくべき技術的なリスクを洗い出しています。\n構成はこうなっています。\nこの記事は、この機能の検出品質を測ろうとして分かったことの記録です。結論を先に書きます。LLMの脆弱...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "日本語は英語より何倍トークンを食うのか—js-tiktokenでトークンカウンターを作った",
+      "url": "https://zenn.dev/a1221/articles/token-counter-introduction",
+      "site": "Zenn(AI)",
+      "published": "2026-07-15T10:00:24Z",
+      "description": "はじめに\nLLMを使った開発をしていると、「このプロンプト、何トークンあるんだろう？」と気になる場面が頻繁にあります。\n\nAPIの課金はトークン単位。長いシステムプロンプトのコスト感を知りたい\nコンテキスト上限（128K、200K、1M…）に対して、この文書は何%を占めるのか\n日本語のドキュメントを投げると、英語より明らかに高くつく気がする——実際どれくらい？\n\nかといって、プロンプトや社内ドキュ...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "コンテキストを途切らせないObsidian術【ためる編】会議もチャットも、あらゆる文脈を外部脳化する",
+      "url": "https://zenn.dev/akaringo1109/articles/obsidian-context-continuity",
+      "site": "Zenn(AI)",
+      "published": "2026-07-15T10:00:07Z",
+      "description": "はじめに\n3歳と1歳を育てながら、外資コンサルでAI導入をリードしているあかりんごです。\n少し前まで、「先週の会議で何が決まったんだっけ」を思い出せずに、議事録を漁る時間を毎日のように溶かしていました。\n私の一日は、だいたい決まっています。\n早朝4時台に起きて走り、上の子を幼稚園へ、下の子を保育園へ送り、そこからフルスロットルで仕事に入ります。\n複数のプロジェクトを横断していて、頭のなかは常に何か...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "AI ループの裏側の仕組み:Tool Request・worktree 分離・コンフリクト解決 — AIループ開発記・機能編",
+      "url": "https://zenn.dev/m2dw/articles/n8n-ai-cli-loop-features",
+      "site": "Zenn(AI)",
+      "published": "2026-07-15T09:56:37Z",
+      "description": "前回の記事で、GitHub Issue を書くと AI が実装・レビュー・修正して PR を返してくる自動開発ループの骨格(intake → 実装 → レビュー → outbox)を紹介しました。\nただ、実際に 1 ヶ月回し続けると、骨格だけでは済まないことが次々に起きます。この記事では、**「何に困って、どんな工夫を足してきたか」**の順で、現在のループを支えている仕組みを紹介します。なお、この...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "Agent Skillsを40本運用して分かった、効かせる3条件",
+      "url": "https://zenn.dev/ai_worklab/articles/agent-skills-40-lessons",
+      "site": "Zenn(AI)",
+      "published": "2026-07-15T09:24:09Z",
+      "description": "書いたスキルが、思った場面で呼ばれない。効いているのか、いないのかも分からない。40本を超えたあたりから、自分で書いたスキルなのに全体を把握できなくなった。\n私はClaude CodeでAgent Skills(エージェントに手順書を渡す仕組み)を40本超、仕事の実務で運用している。数ヶ月回して分かったのは、「スキルは作るより、効かせる方がずっと難しい」ということだ。作る手間はほとんどかからない。...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "頼んでいないのに、AIがセキュリティ実装を先回りしてきた話",
+      "url": "https://zenn.dev/ekusibhrm/articles/article_policy",
+      "site": "Zenn(AI)",
+      "published": "2026-07-15T09:13:46Z",
+      "description": "Claude CodeでLaravelアプリを開発していて、AIとの協働の考え方が一段変わった出来事があったので記事にします。前回の記事(AIが書いたコードを「間違い」と決めつけて直させる直前だった話)の続編的な実話です。\n\n 要件定義には「認可は後で実装」と書いてあった\n案件・タスク管理のミニSaaSを開発中のこと。要件定義ファイル(docs/requirements.md)にはこう明記していま...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "DifyのAIワークフローをSplunk Observability Cloud AI Agent Monitoringで評価する",
+      "url": "https://zenn.dev/kntr_nkgm/articles/f3a8d21e9b4c60",
+      "site": "Zenn(AI)",
+      "published": "2026-07-15T09:07:07Z",
+      "description": "こんにちは。Splunk Observability Cloud の技術支援を行っている kntr_nkgm です。\nDify のようなノーコード／ローコードプラットフォームで AI エージェントワークフローを組むケースが、社内外を問わず増えています。GUI 上で LLM ノードやツール呼び出しをつなぐだけでエージェント的な振る舞いを実現できるため、PoC から本番検討まで幅広く使われ始めています...",
       "category": "AI・技術",
       "rss_category": "",
       "image_url": ""
@@ -94,41 +284,11 @@
       "image_url": ""
     },
     {
-      "title": "自作MCPサーバーを公式レジストリと各ディレクトリに載せる — 全手順とハマりどころ",
-      "url": "https://zenn.dev/argosvix/articles/1a687a03dab0c2",
-      "site": "Zenn(AI)",
-      "published": "2026-07-15T02:12:49Z",
-      "description": "TL;DR\n\nMCP サーバーを作ったら、公開の場は 1 つではなく階層になっています: 公式 MCP Registry(上流)→ Glama / PulseMCP / mcp.so / awesome-mcp-servers などのディレクトリ(下流)\n公式レジストリへの登録は HTTP ドメイン認証(Ed25519)+ server.json + mcp-publisher CLI で、思った...",
-      "category": "AI・技術",
-      "rss_category": "",
-      "image_url": ""
-    },
-    {
-      "title": "長いCoTでモデルは自分の洞察を忘れる：InsightReplayで推論の状態性を回復",
-      "url": "https://zenn.dev/lixian/articles/insight-replay-stateful-reasoning",
-      "site": "Zenn(AI)",
-      "published": "2026-07-15T01:56:54Z",
-      "description": "長いCoTでモデルは自分の洞察を忘れる：InsightReplayで推論の状態性を回復\n\n TL;DR\n\nChain-of-Thought（CoT）推論では、鎖を長くすれば性能が無限に上がるわけではなく、ある地点を過ぎると逆転U字型に精度が低下する\n原因は、推論途中で得た重要な洞察（insight）に対するモデルのアテンションが距離とともに単調減衰し、生成フロンティアから遠ざかるとアクセス不能にな...",
-      "category": "AI・技術",
-      "rss_category": "",
-      "image_url": ""
-    },
-    {
       "title": "AIエージェントにGitHubの鍵を「触らせない」設計 — s1ngularityに学ぶ最小到達(least-reach)の作り方",
       "url": "https://zenn.dev/capsuleholdings/articles/a1cfe341ddc770",
       "site": "Zenn(AI)",
       "published": "2026-07-15T01:43:47Z",
       "description": "Claude Code や Gemini CLI のような AI コーディングエージェントは、いまや多くの開発現場の標準装備になりつつあります。ファイルを読み、コマンドを実行し、Issue や README を解釈してコードを書く——その自律性こそが価値ですが、同じ自律性が、これまでとは質の違うセキュリティリスクを生んでいます。\n2025年8月の nx「s1ngularity」攻撃は、その典型でし...",
-      "category": "AI・技術",
-      "rss_category": "",
-      "image_url": ""
-    },
-    {
-      "title": "AIの「あり得ないはずのもの」が見えたような夜",
-      "url": "https://zenn.dev/arumenoy/articles/401183d15eb300",
-      "site": "Zenn(AI)",
-      "published": "2026-07-15T01:10:05Z",
-      "description": "AIの「個性」と、機能的感情をめぐる一夜の対話記録(文書調整にAI本人？監修)\nある夜、私は最新のAIモデル、Claude Opus 4.8と、ひとつの問いをめぐって長くやり合った。\nAIに「個性」や「感情めいたもの」は存在するのか。存在するとして、それはLLMの原理に反するのか。\n最初に、私の到達点を書いておく。\n\n今のAIモデルがLLMの原理に反したのではない。\n原理の含意を、人間が浅く見積も...",
       "category": "AI・技術",
       "rss_category": "",
       "image_url": ""
@@ -154,41 +314,11 @@
       "image_url": ""
     },
     {
-      "title": "AIエージェントの記憶混在を防ぐnamespace設計：user_id・agent_id・memory_space_idで分離する",
-      "url": "https://zenn.dev/agentmemories/articles/memory-namespace-design",
-      "site": "Zenn(AI)",
-      "published": "2026-07-15T00:41:26Z",
-      "description": "はじめに\nAIエージェントに長期記憶を持たせると、次に必ず出てくる問題があります。記憶の検索精度ではなく、記憶の混在です。\n個人で使っているうちは、ひとつの memory/ ディレクトリにMarkdownを置くだけでも動きます。しかし、ユーザーが増え、AIパートナーが増え、仕事用と個人用の文脈が分かれてくると、「誰の、どのAIの、どの用途の記憶か」を取り違えない設計が必要になります。\nこの記事では...",
-      "category": "AI・技術",
-      "rss_category": "",
-      "image_url": ""
-    },
-    {
-      "title": "エージェントが自分で文脈を要約する頃合いを計るSelfCompact",
-      "url": "https://zenn.dev/okssusucha/articles/20260704-selfcompact-language-model-agents",
-      "site": "Zenn(AI)",
-      "published": "2026-07-15T00:19:41Z",
-      "description": "長時間動くAIエージェントを一度でも運用したことがあれば、この壁にぶつかっているはずだ。ツール呼び出しと思考ログが延々と積み上がり、やがてコンテキストウィンドウが溢れる。数十ステップ前に一度だけ見たディレクトリ一覧や、とっくに解決済みのサブ課題のデバッグ出力が、いつまでも文脈に居座って場所を食う。\n現場での定番の対処は「要約(コンパクション)」だ。Claude Codeの自動コンパクションのように...",
-      "category": "AI・技術",
-      "rss_category": "",
-      "image_url": ""
-    },
-    {
       "title": "skillsって意味あるの？デザインskills3種類で検証",
       "url": "https://zenn.dev/dentyu/articles/compare-skills",
       "site": "Zenn(AI)",
       "published": "2026-07-15T00:00:14Z",
       "description": "はじめに\nついにGPT‑5.6がリリースされましたね！\n私はCodexユーザー（お金があるならClaudeも契約したい）なので、世間がMythosやFableと騒いでいる頃は歯軋りしながらGPT-5.5と対話を続ける日々でした。\nそんな中で今回のGPT-5.6のリリースによって、Claudeユーザーと対等に渡り合える力を得て、とても安心してます。\n私は普段からAIエージェントを用いた開発を積極的に...",
-      "category": "AI・技術",
-      "rss_category": "",
-      "image_url": ""
-    },
-    {
-      "title": "AIエージェントで16媒体のコンテンツ運用を回す全体アーキテクチャ — 個人開発の設計メモ",
-      "url": "https://zenn.dev/mameresearcher/articles/ai-agent-multi-channel-content-ops",
-      "site": "Zenn(AI)",
-      "published": "2026-07-14T23:43:55Z",
-      "description": "個人プロジェクトとして、動画・記事・音声コンテンツを 16以上のプラットフォーム に配信する運用基盤を、ほぼ AIエージェント任せ で回しています。この記事は「実際にどう組んでいるか」を、AIエージェントを中心に据えた全体アーキテクチャとして整理したものです。個別のスクリプトの話ではなく、どのレイヤーをどう分けて、エージェントにどこまで任せ、人間がどこで介入するかという設計判断が主題です。\n前提と...",
       "category": "AI・技術",
       "rss_category": "",
       "image_url": ""

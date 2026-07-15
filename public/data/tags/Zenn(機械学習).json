@@ -1,8 +1,78 @@
 {
   "site": "Zenn(機械学習)",
-  "last_updated": "2026-07-15T10:58:50.809070",
-  "total_articles": 1441,
+  "last_updated": "2026-07-15T12:21:17.542858",
+  "total_articles": 1448,
   "articles": [
+    {
+      "title": "ランダムに5頭買っても77%当たる — 「よく当たる」に騙されないためのベースライン思考",
+      "url": "https://zenn.dev/rindokulab/articles/a5b534d07d9a39",
+      "site": "Zenn(機械学習)",
+      "published": "2026-07-15T10:43:10Z",
+      "description": "ランダムに5頭買っても77%当たる — 「よく当たる」に騙されないためのベースライン思考\n「過去3走の上がり3ハロンの平均が速い順に5頭買えば、大体的中する」\n昔、雀荘でアルバイトをしていたころ、競馬で羽振りのいい常連さんから聞いた「必勝法」だ。20年経って統計を扱う仕事に就いた私は、これをJRA12年半・61万頭走のデータで検証してみた。\n結果、この買い方で「5頭のうちどれかが3着以内に入る」レ...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "模倣学習のデータ収集方法まとめ(teleoperation/リーダーフォロワー/VR/UMI)と強化学習との使い分け",
+      "url": "https://zenn.dev/fujimooon/articles/1911b0c167378b",
+      "site": "Zenn(機械学習)",
+      "published": "2026-07-15T09:47:35Z",
+      "description": "はじめに\n前の記事で、ロボットの「行動系列」とは、関節角度やエンドエフェクタ座標などのただの数字の行列であることを解説しました。\n👉 前の記事: 「行動系列」の正体とは何か\nでは、この行動系列を含む学習データは、実際にどうやって集めるのでしょうか？ この記事では、代表的な4つのデータ収集方法と、最後に「模倣学習と強化学習はどう使い分けられているのか」を整理します。\n\n 大前提:模倣学習とは何か\n模...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "Diffusion Policyの「行動系列」って結局何？画像との関係を徹底図解",
+      "url": "https://zenn.dev/fujimooon/articles/28c0111efe4bc0",
+      "site": "Zenn(機械学習)",
+      "published": "2026-07-15T09:42:59Z",
+      "description": "はじめに\n前回の記事で、「拡散モデルはロボットの\"行動\"にノイズをかけて、それを除去することで学習する」という話をしました。\n👉 前の記事: なぜ拡散モデルでロボットの行動を学習できるのか？\nここでほぼ全員が引っかかるポイントがあります。それは、\n\n「行動」にノイズをかけるって、具体的に何にノイズをかけてるの？ロボットが映っている動画のフレームのこと？\n\nという疑問です。この記事では、そこを完全に...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "なぜ拡散モデルでロボットの行動を学習できるのか？【LLMとの関係も解説】",
+      "url": "https://zenn.dev/fujimooon/articles/e965bb77a98c12",
+      "site": "Zenn(機械学習)",
+      "published": "2026-07-15T09:27:58Z",
+      "description": "はじめに\n最近、ロボットアームの制御に「拡散モデル(Diffusion Model)」が使われている、という話を聞く機会が増えました。\n拡散モデルといえば、Stable DiffusionやMidjourneyのような「画像生成AI」で有名な技術です。なぜそれがロボットの「腕の動かし方」の学習に使われるのでしょうか？ 一見すると全く関係なさそうに見えます。\nこの記事では、\n\nなぜロボット制御に拡散...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "Snowflake リアルタイム推論 REST API の検証 — Gateway / Auto Captuture",
+      "url": "https://zenn.dev/snowflakejp/articles/ec0d632dc61a82",
+      "site": "Zenn(機械学習)",
+      "published": "2026-07-15T08:10:34Z",
+      "description": "!\n著者はSnowflakeに所属しておりますが、本記事は個人の見解であり、所属する組織の公式見解ではありません。\n\n\n はじめに\nSnowflake の Real-Time Inference (REST API) が GA (snowflake-ml-python 1.25.0〜) になり、モデルレジストリに登録したモデルを HTTP エンドポイントとしてデプロイできるようになりました。\n「機...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "バックテストに「摩擦」を実装する——約定モデルの作り方",
+      "url": "https://zenn.dev/morimiso/articles/97f0ba52700f69",
+      "site": "Zenn(機械学習)",
+      "published": "2026-07-15T07:56:19Z",
+      "description": "以前、「検証が嘘をつくとき」という連載で、ライブとバックテストの乖離について書きました。その中で、バグではない構造的な乖離——約定遅延やSLの時間解像度の話をして、「対処は訓練BT側を現実に寄せることだ」と締めました。\n今回はその宿題の実装編です。バックテストが理想化している部分を、どう「摩擦」としてモデル化し、どこまでやればいいのかを具体的に書きます。\n\n なぜ理想的なバックテストは嘘になるのか...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "WWDC26で出たCoreAIで３角形を描画した話（機械学習フレームワークでラスタライザ自作）",
+      "url": "https://zenn.dev/kamisori_daijin/articles/501558fe755e09",
+      "site": "Zenn(機械学習)",
+      "published": "2026-07-15T07:10:18Z",
+      "description": "ANEはただの行列演算ユニット\nANE（Apple Neural Engine）はConv2dなどの演算をするただの演算ユニットである。\nならば、3角形の描画（ラスタライズ）に必要な内外判定処理をConv2dやReLUで置き換えればラスタライザ作れるのでは？\nということを思いついた。\nGithubは以下のリンク\nhttps://github.com/kamisori-daijin/Magnesiu...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
     {
       "title": "モータの電流でベアリングの故障は見えるのか ―― 実損傷の公開データで振動と比べる",
       "url": "https://zenn.dev/logicia32/articles/2026-07-14-bearing-current-fusion",
