@@ -1,8 +1,68 @@
 {
   "site": "Zenn(AI)",
-  "last_updated": "2026-07-15T20:49:16.096896",
-  "total_articles": 11124,
+  "last_updated": "2026-07-15T21:44:16.354885",
+  "total_articles": 11128,
   "articles": [
+    {
+      "title": "複数議事録のタスク重複統合、文言一致ではなく内容一致で判定させる運用",
+      "url": "https://zenn.dev/every_ai_recipe/articles/weekly-task-rollup-minutes",
+      "site": "Zenn(AI)",
+      "published": "2026-07-15T21:10:33Z",
+      "description": "TL;DR\n\n週内に複数の会議・打ち合わせのメモが溜まると、同じタスクが文言を変えて複数のメモに登場し、素朴に「重複をまとめて」と指示するだけでは統合されない\n原因は、LLMが重複判定を表層的な文字列の一致（lexical equivalence）に寄せて解釈しやすいためで、判断基準を「内容の一致（semantic equivalence）」だと明示しない限り、言い回しが違う同一タスクは別々のエン...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "ローカルLLM(Ollama + Qwen2.5)でAIエージェントを自作するハンズオン",
+      "url": "https://zenn.dev/hkame/articles/local-llm-agent-handson",
+      "site": "Zenn(AI)",
+      "published": "2026-07-15T20:30:23Z",
+      "description": "はじめに\nクラウドAPIのコストや情報漏洩リスクを気にせず、AIエージェントの仕組みを手を動かして理解したい——という動機で、ローカルLLM(Ollama + Qwen2.5)だけでAIエージェントを組み立てる1〜2時間のハンズオンを作りました。\nフレームワーク(LangGraph、CrewAIなど)は便利ですが、最初にブラックボックスのまま使ってしまうと「エージェントが何をしているのか」が掴みに...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "Notionでの進捗管理をやめた — 確認をPRとIssueに寄せた話",
+      "url": "https://zenn.dev/ponponpon9090/articles/gradual-autonomy-pm",
+      "site": "Zenn(AI)",
+      "published": "2026-07-15T18:28:20Z",
+      "description": "求人領域のSaaSを少人数チームで開発しています。筆者はPM兼エンジニアで、業務のひとつにチームメンバーの進捗確認があります。以前は、各メンバーがNotionのタスクカードで自分のステータスを手動更新する運用でした。\n困っていたのは更新漏れです。定例のたびにNotionを開いて確認していましたが、ステータスが古いまま放置されているカードがありました。誰がどこで詰まっているかを、その場で本人に聞き直...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "Googleの時系列基盤モデル TimesFMについて理解する",
+      "url": "https://zenn.dev/fusic/articles/196bcd22676d97",
+      "site": "Zenn(AI)",
+      "published": "2026-07-15T16:52:44Z",
+      "description": "はじめに\nFusicのレオナです。\n今回は、Google Researchの時系列基盤モデルTimesFMについて、原論文を読みながら仕組みを整理してみました。\n\n TimesFMとは\nTimesFMは、Google Researchが開発した時系列予測用の基盤モデルです。時系列とは、売上、電力需要、気温のように、時間の順番に沿って記録された数値です。例えば、過去7日間の1時間ごとの電力需要から、...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "プロンプトキャッシュは通信ではなく計算を省いている ─ Claude Code のモデル・エフォート切り替えが高くつく",
+      "url": "https://zenn.dev/takna/articles/claude-code-model-switch-cache-cost",
+      "site": "Zenn(AI)",
+      "published": "2026-07-15T16:46:59Z",
+      "description": "以前の私は、一つのセッションの中でモデルとエフォートをこまめに切り替えていました。調べものや決まった処理など深い思考が要らないものは Sonnet に落とし、開発での実装の難所には Opus (使えた期間は Fable) に上げ、深く考えさせたいターンにはエフォートを xhigh に。タスクごとに最適な設定を選ぶ、賢い使い方をしている気になっていました。\nこれは誤りでした。切り替えるたびに、それま...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "なぜ、AIは人々をハッピーにしないのか？",
+      "url": "https://zenn.dev/pdfractal/articles/ab88acac2ba4c4",
+      "site": "Zenn(AI)",
+      "published": "2026-07-15T15:56:29Z",
+      "description": "はじめに\n生成AIは、技術としては非常に大きな変化をもたらしています。文章を整え、調査を補助し、コードを書き、会議内容を要約し、顧客に聞く前の質問文まで練ることができます。仕事の中で「これは聞いてよいのか」「この聞き方で信用を落とさないか」と迷う場面では、AIは非常に有効な相談相手になります。\nしかし、多くの人にとって、AIは自動車、テレビ、携帯電話、インターネットが登場したときのような分かりやす...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
     {
       "title": "【CakePHPの学習 LOG-08】： ORM と PHPUnit を、`Memos` 以外の形でも読むためのサンプル集",
       "url": "https://zenn.dev/como/articles/cakephp_day-08_orm-query-and-phpunit-samples",
@@ -149,26 +209,6 @@
       "site": "Zenn(AI)",
       "published": "2026-07-15T11:18:17Z",
       "description": "概要： AI画像制作で重要なのは、機能の多さではなく、いま必要な制作段階に合った進め方です。アイデアを広げる工程と、選んだ案を崩さずに仕上げる工程を分けると、手戻りを減らせます。\nAI画像制作には、二つの異なる速度があります。最初は方向性をたくさん探し、その後は採用した案の良さを保ちながら必要な部分だけを調整します。そのため、Seedream 5.0 は「常に一番よい一枚を出すボタン」ではなく、制...",
-      "category": "AI・技術",
-      "rss_category": "",
-      "image_url": ""
-    },
-    {
-      "title": "第1回：【時間割編】AIで効率化したのに、5年前より「なんか疲れてる」医師のパラドックス",
-      "url": "https://zenn.dev/umizaru/articles/59838d1830ebfc",
-      "site": "Zenn(AI)",
-      "published": "2026-07-15T11:01:18Z",
-      "description": "0. なぜ、コードが書けない医師がZennにいるのか\n普段は医療現場にいる私のスマホに、なぜかたまたまネットニュースでおすすめされて流れてきたのが「Zenn」でした。\n眩しいスマートな自動化の話を眺めながら、ふと考えました。ガチガチのリアルと中途半端なデジタルが入り混じる現場で、システム的な自動化なんて全然できないし、AIを使い倒せてもいない。こんなのでいいのかと悩みつつ、それでも、自分の弱った脳...",
-      "category": "AI・技術",
-      "rss_category": "",
-      "image_url": ""
-    },
-    {
-      "title": "AI彼女アプリを作っていて気付いた。関係性は少しずつではなく、突然変わる",
-      "url": "https://zenn.dev/mitsukida/articles/c76e3a26a45ef5",
-      "site": "Zenn(AI)",
-      "published": "2026-07-15T10:57:46Z",
-      "description": "AI彼女アプリを作っていて気付いた。関係性は少しずつではなく、ある日突然変わる\n前回は、Moodという仕組みについて書いた。\n人は毎日同じではない。\n少し眠かったり、\n少し考え込んでいたり、\n少し機嫌が良かったりする。\nだからAIKanojyoにもMoodを作り始めた。\nしかし、開発を続けるうちに、また新しい違和感が出てきた。\n\n\n 関係性は少しずつ変わっているようで、そうでもない\n友達と話してい...",
       "category": "AI・技術",
       "rss_category": "",
       "image_url": ""
