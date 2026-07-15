@@ -1,8 +1,108 @@
 {
   "site": "Zenn(LLM)",
-  "last_updated": "2026-07-15T19:50:44.473181",
-  "total_articles": 4626,
+  "last_updated": "2026-07-15T20:49:16.096896",
+  "total_articles": 4636,
   "articles": [
+    {
+      "title": "LLM の可観測性ツールを決めきれないので、OpenTelemetry で決めない構成にした",
+      "url": "https://zenn.dev/optimisuke/articles/8f2ce41b9a7d30",
+      "site": "Zenn(LLM)",
+      "published": "2026-07-15T11:00:06Z",
+      "description": "はじめに\nLLM API を呼ぶアプリを作っていると、「あの生成、どのプロンプトで何が返ってきたんだっけ」を後から見返したくなります。自分の場合は、子ども向けワークショップ用の4コマ漫画アプリ（人が1・3コマ目を描き、AI が2・4コマ目を作る）を開発中で、プロンプトをあれこれ変えながら試しているうちに、プロンプトを改善したいのに材料がない、という状態になっていました。\n!\nアプリ自体の話は、その...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "同じコードを11回検査させても、そのCVEは0回だった ― LLMコード検査の再現性を実測する",
+      "url": "https://zenn.dev/rikkama/articles/llm-code-review-recall",
+      "site": "Zenn(LLM)",
+      "published": "2026-07-15T10:06:40Z",
+      "description": "何を作っているか\nRIKKA M&amp;A は事業やWebサイトを売買するプラットフォームです。その中に「技術デューデリジェンス（技術DD）」という機能があり、売り手のGitHubリポジトリを解析して、買い手が引き継ぐ前に知っておくべき技術的なリスクを洗い出しています。\n構成はこうなっています。\nこの記事は、この機能の検出品質を測ろうとして分かったことの記録です。結論を先に書きます。LLMの脆弱...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "雑に作る→ラディカルなリファクタリングを行う",
+      "url": "https://zenn.dev/acomagu/articles/9744fc2a605528",
+      "site": "Zenn(LLM)",
+      "published": "2026-07-15T10:00:49Z",
+      "description": "いろいろなデータを DB に読み込むソースコードを業務で LLM に書かせている。もう少し具体的に言うと、「いろいろなデータソースから地理情報を集めてきてPostGISにぶち込み、Mapboxにアップロードする」みたいな CLI だ。\nこれは最初から LLM に書かせているのだが、データソースの種類が増えるに従いどんどんコードが爆発してきた。\nコードを見ると、特に SQL がヤバい。コードのあらゆ...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "日本語は英語より何倍トークンを食うのか—js-tiktokenでトークンカウンターを作った",
+      "url": "https://zenn.dev/a1221/articles/token-counter-introduction",
+      "site": "Zenn(LLM)",
+      "published": "2026-07-15T10:00:24Z",
+      "description": "はじめに\nLLMを使った開発をしていると、「このプロンプト、何トークンあるんだろう？」と気になる場面が頻繁にあります。\n\nAPIの課金はトークン単位。長いシステムプロンプトのコスト感を知りたい\nコンテキスト上限（128K、200K、1M…）に対して、この文書は何%を占めるのか\n日本語のドキュメントを投げると、英語より明らかに高くつく気がする——実際どれくらい？\n\nかといって、プロンプトや社内ドキュ...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "AI ループの裏側の仕組み:Tool Request・worktree 分離・コンフリクト解決 — AIループ開発記・機能編",
+      "url": "https://zenn.dev/m2dw/articles/n8n-ai-cli-loop-features",
+      "site": "Zenn(LLM)",
+      "published": "2026-07-15T09:56:37Z",
+      "description": "前回の記事で、GitHub Issue を書くと AI が実装・レビュー・修正して PR を返してくる自動開発ループの骨格(intake → 実装 → レビュー → outbox)を紹介しました。\nただ、実際に 1 ヶ月回し続けると、骨格だけでは済まないことが次々に起きます。この記事では、**「何に困って、どんな工夫を足してきたか」**の順で、現在のループを支えている仕組みを紹介します。なお、この...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "Agent Skillsを40本運用して分かった、効かせる3条件",
+      "url": "https://zenn.dev/ai_worklab/articles/agent-skills-40-lessons",
+      "site": "Zenn(LLM)",
+      "published": "2026-07-15T09:24:09Z",
+      "description": "書いたスキルが、思った場面で呼ばれない。効いているのか、いないのかも分からない。40本を超えたあたりから、自分で書いたスキルなのに全体を把握できなくなった。\n私はClaude CodeでAgent Skills(エージェントに手順書を渡す仕組み)を40本超、仕事の実務で運用している。数ヶ月回して分かったのは、「スキルは作るより、効かせる方がずっと難しい」ということだ。作る手間はほとんどかからない。...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "Gemma 4 12Bは本当に速いのか、M5 MacでGemma 3と比べてみた",
+      "url": "https://zenn.dev/minato_eng/articles/gemma4-12b-encoder-free",
+      "site": "Zenn(LLM)",
+      "published": "2026-07-15T09:05:32Z",
+      "description": "TL;DR\n\nGemma 4 12Bの売りであるencoder-free構成(550MのViTを捨てて48×48生パッチ+行列積1回で入力)が実際どう効くのか、M5 Mac(24GB)+ ollamaで、従来型エンコーダ(SigLIP)内蔵のGemma 3 12Bと実測比較した\n\n画像プリフィルは確かに速い: 1枚で3.0秒→2.2秒、4枚で11.2秒→6.0秒。入力トークン数はほぼ同じなので、消...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "LLM API Gateway設計入門：1つのAPIキーで複数モデルを扱う",
+      "url": "https://zenn.dev/flatkey_ai_jp/articles/1b826e61ec9ec6",
+      "site": "Zenn(LLM)",
+      "published": "2026-07-15T09:00:43Z",
+      "description": "!\nこの記事は、Flatkey AI の技術検証として書いています。宣伝ではなく、LLM API Gateway を設計するときに考えるべき論点を整理する目的です。\n\n\n 背景\nAI コーディングツールやエージェントを使い始めると、最初は 1 つの API key で足ります。ところが実運用に近づくほど、次のような問題が出てきます。\n\nClaude / GPT / Gemini / DeepSee...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "【脱・黒い画面】PythonとStreamlitで、自分専用のGeminiチャットUIを爆速で作る",
+      "url": "https://zenn.dev/jackey_watawata/articles/3181859adef20a",
+      "site": "Zenn(LLM)",
+      "published": "2026-07-15T08:56:46Z",
+      "description": "はじめに\nこれまでターミナル（黒い画面）で動かしていた「Gemini API」を、いよいよWebアプリケーション化します。今回は、PythonだけでUIが作れる神ライブラリ「Streamlit」を使って、ブラウザ上で動く自分専用のチャットAIを実装しました。\n\n 完成したUIはこちら\n実際にブラウザ上で動かしている様子がこちらです。\n\n※サイドバーにAPIキーを入力し、チャット形式でAIと会話がで...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "Gemini APIのライブラリが刷新！「google.genai」でRAGの基礎を実装する",
+      "url": "https://zenn.dev/jackey_watawata/articles/4ba995690b9ae5",
+      "site": "Zenn(LLM)",
+      "published": "2026-07-15T08:56:29Z",
+      "description": "はじめに\n前回まで google.generativeai を使ってきましたが、なんとサポート終了の告知が…。\n「え、いきなり動かなくなるの？」と焦りましたが、最新の google.genai ライブラリへ移行し、無事に「外部ファイルを読み込んで回答させる（RAGの基礎）」を実装できました。\n今回は、最新環境での実装方法と、ファイル読み込みで詰まったポイントを共有します。\n\n 1. 最新ライブラリ...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
     {
       "title": "LLM-as-judge はスコアを集計しない — チェックは証拠、判定は総合判断",
       "url": "https://zenn.dev/shimo4228/articles/llm-judge-checks-not-scores",
