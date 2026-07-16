@@ -1,14 +1,44 @@
 {
   "site": "Zenn(Python)",
-  "last_updated": "2026-07-16T21:28:47.525121",
-  "total_articles": 5123,
+  "last_updated": "2026-07-16T22:32:04.717685",
+  "total_articles": 5128,
   "articles": [
     {
-      "title": "個人でLLMゲートウェイを本番運用する ——『作った』ではなく『動かし続けている』話",
-      "url": "https://zenn.dev/seiryu_dev/articles/llm-gateway-solo-ops-6-pitfalls",
+      "title": "エージェント設計・オーケストレーションをハンズオンで学ぶ",
+      "url": "https://zenn.dev/hkame/articles/zenn-article-agentic-orchestration",
       "site": "Zenn(Python)",
-      "published": "2026-07-16T13:10:19Z",
-      "description": "この記事について\n自宅のPCで、自作のLLMゲートウェイを常時稼働させています。趣味のデモではなく、日々の仕事（副業の受託作業・調査・実装）が実際にその上を通っています。止まると自分の作業が止まる、という意味で「本番」です。\nこの記事では、コードもconfigも出しません。APIキー・受託先のデータ・個人環境のパスが混ざっているからです。代わりに、\n\nどういう構成にしたか（構成図）\nなぜその設計に...",
+      "published": "2026-07-16T20:27:56Z",
+      "description": "はじめに\nAnthropicが2026年3月に開始した技術認定資格「Claude Certified Architect(CCA-F)」では、エージェント設計・オーケストレーションが最も比重の高い出題領域とされています。座学だけで理解するのは難しい分野なので、実際に手を動かしながら基礎パターンを体に染み込ませることにしました。\nこの記事では、環境構築からつまずいたポイント、4段階のハンズオン(単発...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "AIに「目」を授ける。Streamlitで画像解析チャットアプリに進化させる",
+      "url": "https://zenn.dev/jackey_watawata/articles/7aec2d7fe573e2",
+      "site": "Zenn(Python)",
+      "published": "2026-07-16T17:23:39Z",
+      "description": "はじめに\n前回、Webアプリ化に成功しました。今回はそのアプリに「画像認識機能」を追加します。Geminiはただのチャットボットではなく、画像を理解する「目」を持っています。これを使って、画像をアップロードするだけでAIが内容を教えてくれるツールを作ります。\n\n 実装コード（gemini.pyの進化版）\nPIL ライブラリ（Python画像処理ライブラリ）を使って、画像をAIに渡します。\nimpo...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "Responsible AIを『人が責任を持つ』で終わらせない――RPEと検証可能なAI",
+      "url": "https://zenn.dev/dantarg/articles/rpe-governed-reference-kernel-m1",
+      "site": "Zenn(Python)",
+      "published": "2026-07-16T15:29:09Z",
+      "description": "責任経路工学（RPE）の実装現在地 2026-07\n\nこの記事の要点\n責任経路工学（Responsibility Pathway Engineering / RPE）は、AIが関与する行為を実行前に評価し、allow / hold / human_gate / denyへ振り分ける外部カーネルである。\n人間が範囲と解釈を定めたRequirement Packを用い、停止理由、不足情報、人間への戻り...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "競馬AI開発記録 #24：単勝特化の限界を「複勝専用モデル」で突破する：特徴量空間の物理的隔離",
+      "url": "https://zenn.dev/ricotiler/articles/keiba-ai-24-top3-portfolio-and-feature-isolation",
+      "site": "Zenn(Python)",
+      "published": "2026-07-16T13:12:24Z",
+      "description": "📄 概要と課題提起\n前回、我々は単勝ROIが85.17%という頭打ちに直面しました。この根本原因は、本命帯（Favorite）の確率推定における**「物理的な上限」**にあることが判明しました。\n単一のランキングモデルによる全方位的な予測には限界があり、特に2着や3着といった「複勝圏内」に粘り込む馬の評価において、市場が持つオッズ情報を十分に活用できていませんでした。\n本稿（第24話）では、この課...",
       "category": "開発",
       "rss_category": "",
       "image_url": ""
@@ -59,6 +89,26 @@
       "site": "Zenn(Python)",
       "published": "2026-07-16T01:33:49Z",
       "description": "Excel ファイルに含まれるグラフや図形を、プレゼンテーションや Web サイトで再利用するために画像として出力したい場面は少なくありません。例えば、レポート資料に Excel のグラフを埋め込む場合や、社内ポータルサイトに図表を掲載する場合などが考えられます。\n本記事では、Python を使用して Excel ファイル内のグラフや図形を画像として変換する方法を紹介します。処理には Excel ...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "LLMのJSON出力が壊れてたので json-repair で解決した話",
+      "url": "https://zenn.dev/aiforall/articles/6bb71d790bcf55",
+      "site": "Zenn(Python)",
+      "published": "2026-07-16T00:36:33Z",
+      "description": "LLMにJSON形式で出力させるアプリケーションを実装していたとき、出力が仕様通りにならないことが続き、バリデーションエラーが頻繁に起きていました。特にJSONの構造が大きくなるほど、末尾にカンマが残ったり、コードフェンスで囲まれて返ってきたりするケースが増えていきました。\nまずPydanticModel でスキーマを渡して出力を制御しようとしましたが、それでも崩れることがあり、根本的な解決にはな...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "Ollama で think=false を送ると JSON Schema（format）が無視される",
+      "url": "https://zenn.dev/errfix/articles/ollama-think-format-ignored",
+      "site": "Zenn(Python)",
+      "published": "2026-07-16T00:00:15Z",
+      "description": "Ollama で構造化出力を取るとき、format に JSON Schema を渡し、思考のコストを避けるために think=false を添える。よくある書き方です。ところが古いサーバでは、この組み合わせで format が黙って無視されます。モデルは自然文を返し、受け取った側の json.loads() が落ちます。\njson.decoder.JSONDecodeError: Expecti...",
       "category": "開発",
       "rss_category": "",
       "image_url": ""
