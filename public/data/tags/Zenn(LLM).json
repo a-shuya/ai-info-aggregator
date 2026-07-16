@@ -1,14 +1,54 @@
 {
   "site": "Zenn(LLM)",
-  "last_updated": "2026-07-16T01:11:49.477333",
-  "total_articles": 4638,
+  "last_updated": "2026-07-16T04:28:55.858690",
+  "total_articles": 4642,
   "articles": [
+    {
+      "title": "プロンプトキャッシュは通信ではなく計算を省いている ─ Claude Code のモデル・エフォート切り替えが高くつく",
+      "url": "https://zenn.dev/takna/articles/claude-code-model-switch-cache-cost",
+      "site": "Zenn(LLM)",
+      "published": "2026-07-15T16:46:59Z",
+      "description": "以前の私は、一つのセッションの中でモデルとエフォートをこまめに切り替えていました。調べものや決まった処理など深い思考が要らないものは Sonnet に落とし、開発での実装の難所には Opus (使えた期間は Fable) に上げ、深く考えさせたいターンにはエフォートを xhigh に。タスクごとに最適な設定を選ぶ、賢い使い方をしている気になっていました。\nこれは誤りでした。切り替えるたびに、それま...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "なぜ、AIは人々をハッピーにしないのか？",
+      "url": "https://zenn.dev/pdfractal/articles/ab88acac2ba4c4",
+      "site": "Zenn(LLM)",
+      "published": "2026-07-15T15:56:29Z",
+      "description": "はじめに\n生成AIは、技術としては非常に大きな変化をもたらしています。文章を整え、調査を補助し、コードを書き、会議内容を要約し、顧客に聞く前の質問文まで練ることができます。仕事の中で「これは聞いてよいのか」「この聞き方で信用を落とさないか」と迷う場面では、AIは非常に有効な相談相手になります。\nしかし、多くの人にとって、AIは自動車、テレビ、携帯電話、インターネットが登場したときのような分かりやす...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
     {
       "title": "【GAS × Gemini API】スプレッドシートからAIを呼び出す最短ルート(第1回:環境構築・テスト接続編)",
       "url": "https://zenn.dev/edoc21/articles/79271e2aad0d62",
       "site": "Zenn(LLM)",
       "published": "2026-07-15T13:57:57Z",
       "description": "はじめに\n「スプレッドシートに入力された大量のテキストデータを、AIで一括処理したい……」\n「でも、ChatGPTやGeminiのブラウザ画面に毎回コピペして往復するのは正直面倒くさい……」\nそんな業務効率化の悩みを一撃で解決してくれるのが、Google Apps Script（GAS） と Gemini API の組み合わせです。\nどちらもGoogleが提供するサービスであるため、非常に親和性が...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "「本人らしいAI」の精度をどう測るか。perselfの検証ループと、数値が基準を超えても消えない違和感",
+      "url": "https://zenn.dev/sumumu26/articles/6c7572494b1b31",
+      "site": "Zenn(LLM)",
+      "published": "2026-07-15T12:36:27Z",
+      "description": "こんにちは。miharubaの池谷です。\n前回の記事では、自分の考え方をAIに転写する仕組み perself の設計思想を書きました。今回は、実際に /interview を複数セッション回してコンパイルまで進め、初めて /validate(忠実度の検証)を実行した記録です。\n先に結論を書きます。数値上の基準は超えました。それでも「本人と同じだと言い切れるか」には、最後まで違和感が残りました。\n\n...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "Claude Code×Codex併用環境で踏んだ5つの境界 — CLAUDE.md設計・スキル・MCPの仕組みから整理する",
+      "url": "https://zenn.dev/takepon7/articles/claude-code-codex-boundary-lessons",
+      "site": "Zenn(LLM)",
+      "published": "2026-07-15T11:50:42Z",
+      "description": "TL;DR\n\nClaude Code(デスクトップ版)とCodex CLI(ChatGPT Proプラン)を併用する開発環境を構築し、つまずいた5箇所を仕組みの側から整理した\nCLAUDE.mdはグローバル(~/.claude/)とプロジェクト直下の2層構造で、グローバルは全セッションで毎回読み込まれるため、事業戦略のような長文は@インポート(~展開対応・ネスト最大4ホップ)で外出しするのが正解\n...",
       "category": "AI・技術",
       "rss_category": "",
       "image_url": ""
