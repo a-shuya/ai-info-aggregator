@@ -1,7 +1,7 @@
 {
   "site": "Zenn(LLM)",
-  "last_updated": "2026-07-16T19:17:47.849084",
-  "total_articles": 4666,
+  "last_updated": "2026-07-16T20:15:27.741953",
+  "total_articles": 4668,
   "articles": [
     {
       "title": "1bit量子化した27BのLLMをiPhone実機で動かし、知能まで測ってみた",
@@ -104,16 +104,6 @@
       "image_url": ""
     },
     {
-      "title": "個人でLLMゲートウェイを本番運用する ——『作った』ではなく『動かし続けている』話",
-      "url": "https://zenn.dev/seiryu_dev/articles/llm-gateway-solo-ops-6-pitfalls",
-      "site": "Zenn(LLM)",
-      "published": "2026-07-16T13:10:19Z",
-      "description": "この記事について\n自宅のPCで、自作のLLMゲートウェイを常時稼働させています。趣味のデモではなく、日々の仕事（副業の受託作業・調査・実装）が実際にその上を通っています。止まると自分の作業が止まる、という意味で「本番」です。\nこの記事では、コードもconfigも出しません。APIキー・受託先のデータ・個人環境のパスが混ざっているからです。代わりに、\n\nどういう構成にしたか（構成図）\nなぜその設計に...",
-      "category": "AI・技術",
-      "rss_category": "",
-      "image_url": ""
-    },
-    {
       "title": "Gemma 4 iPhone実験の番外編：dLLMをGGUFで動かしてみる",
       "url": "https://zenn.dev/lube8163/articles/0799946abe3c98",
       "site": "Zenn(LLM)",
@@ -204,6 +194,16 @@
       "image_url": ""
     },
     {
+      "title": "LLMのJSON出力が壊れてたので json-repair で解決した話",
+      "url": "https://zenn.dev/aiforall/articles/6bb71d790bcf55",
+      "site": "Zenn(LLM)",
+      "published": "2026-07-16T00:36:33Z",
+      "description": "LLMにJSON形式で出力させるアプリケーションを実装していたとき、出力が仕様通りにならないことが続き、バリデーションエラーが頻繁に起きていました。特にJSONの構造が大きくなるほど、末尾にカンマが残ったり、コードフェンスで囲まれて返ってきたりするケースが増えていきました。\nまずPydanticModel でスキーマを渡して出力を制御しようとしましたが、それでも崩れることがあり、根本的な解決にはな...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
       "title": "\"「私だけ」を「私たち」に変える ── 散らばった声を、AIで“意味”で束ねる。ほどく相手が、一人の職人から、一つの街に変わった日\"",
       "url": "https://zenn.dev/hiroshift/articles/40ffd6da03d0b2",
       "site": "Zenn(LLM)",
@@ -224,6 +224,16 @@
       "image_url": ""
     },
     {
+      "title": "Ollama で think=false を送ると JSON Schema（format）が無視される",
+      "url": "https://zenn.dev/errfix/articles/ollama-think-format-ignored",
+      "site": "Zenn(LLM)",
+      "published": "2026-07-16T00:00:15Z",
+      "description": "Ollama で構造化出力を取るとき、format に JSON Schema を渡し、思考のコストを避けるために think=false を添える。よくある書き方です。ところが古いサーバでは、この組み合わせで format が黙って無視されます。モデルは自然文を返し、受け取った側の json.loads() が落ちます。\njson.decoder.JSONDecodeError: Expecti...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
       "title": "誰も教えてくれないLLMの経済学",
       "url": "https://zenn.dev/acntechjp/articles/20260711_llm-economics",
       "site": "Zenn(LLM)",
@@ -239,6 +249,16 @@
       "site": "Zenn(LLM)",
       "published": "2026-07-15T23:30:06Z",
       "description": "結論から\nAIやCIがレビューを済ませたPRを、人間がもう一度アタマからバグ探しするのは筋が悪いです。スタイルの乱れ、null 参照、非効率なループ、フォーマット。この手の定型検査は、機械のほうが人間より速く正確に潰します。人間がそこをなぞっても、価値は増えません。\nでは人間は何をするのか。機械が原理的に判断できない、高次の事柄です。私は次の3つに集中しています。移植忠実性、設計判断、権限境界。そ...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "ローカルLLM study2: Aiderで自律コーディングをさせてみた（7モデル比較）",
+      "url": "https://zenn.dev/tkpurine/articles/local-llm-study-002-aider-model-screening",
+      "site": "Zenn(LLM)",
+      "published": "2026-07-15T22:43:09Z",
+      "description": "前回のおさらい\n前回は、コードレビューやFizzBuzz生成といった単発のQ&amp;Aタスクで11モデルを比較し、普段使いなら gemma4:e2b、説明・レビュー重視なら gemma4:e4b や Ornith-1.0-9B が有力という結論になりました。\nただし単発のQ&amp;Aで分かるのは「説明が丁寧か」「コードが正確か」までです。Claude Codeでの開発では、それ以上に「バグを直...",
       "category": "AI・技術",
       "rss_category": "",
       "image_url": ""
