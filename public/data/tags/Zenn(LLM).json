@@ -1,44 +1,14 @@
 {
   "site": "Zenn(LLM)",
-  "last_updated": "2026-07-15T23:44:45.168245",
-  "total_articles": 4636,
+  "last_updated": "2026-07-16T01:11:49.477333",
+  "total_articles": 4638,
   "articles": [
-    {
-      "title": "プロンプトキャッシュは通信ではなく計算を省いている ─ Claude Code のモデル・エフォート切り替えが高くつく",
-      "url": "https://zenn.dev/takna/articles/claude-code-model-switch-cache-cost",
-      "site": "Zenn(LLM)",
-      "published": "2026-07-15T16:46:59Z",
-      "description": "以前の私は、一つのセッションの中でモデルとエフォートをこまめに切り替えていました。調べものや決まった処理など深い思考が要らないものは Sonnet に落とし、開発での実装の難所には Opus (使えた期間は Fable) に上げ、深く考えさせたいターンにはエフォートを xhigh に。タスクごとに最適な設定を選ぶ、賢い使い方をしている気になっていました。\nこれは誤りでした。切り替えるたびに、それま...",
-      "category": "AI・技術",
-      "rss_category": "",
-      "image_url": ""
-    },
-    {
-      "title": "なぜ、AIは人々をハッピーにしないのか？",
-      "url": "https://zenn.dev/pdfractal/articles/ab88acac2ba4c4",
-      "site": "Zenn(LLM)",
-      "published": "2026-07-15T15:56:29Z",
-      "description": "はじめに\n生成AIは、技術としては非常に大きな変化をもたらしています。文章を整え、調査を補助し、コードを書き、会議内容を要約し、顧客に聞く前の質問文まで練ることができます。仕事の中で「これは聞いてよいのか」「この聞き方で信用を落とさないか」と迷う場面では、AIは非常に有効な相談相手になります。\nしかし、多くの人にとって、AIは自動車、テレビ、携帯電話、インターネットが登場したときのような分かりやす...",
-      "category": "AI・技術",
-      "rss_category": "",
-      "image_url": ""
-    },
     {
       "title": "【GAS × Gemini API】スプレッドシートからAIを呼び出す最短ルート(第1回:環境構築・テスト接続編)",
       "url": "https://zenn.dev/edoc21/articles/79271e2aad0d62",
       "site": "Zenn(LLM)",
       "published": "2026-07-15T13:57:57Z",
       "description": "はじめに\n「スプレッドシートに入力された大量のテキストデータを、AIで一括処理したい……」\n「でも、ChatGPTやGeminiのブラウザ画面に毎回コピペして往復するのは正直面倒くさい……」\nそんな業務効率化の悩みを一撃で解決してくれるのが、Google Apps Script（GAS） と Gemini API の組み合わせです。\nどちらもGoogleが提供するサービスであるため、非常に親和性が...",
-      "category": "AI・技術",
-      "rss_category": "",
-      "image_url": ""
-    },
-    {
-      "title": "「本人らしいAI」の精度をどう測るか。perselfの検証ループと、数値が基準を超えても消えない違和感",
-      "url": "https://zenn.dev/sumumu26/articles/6c7572494b1b31",
-      "site": "Zenn(LLM)",
-      "published": "2026-07-15T12:36:27Z",
-      "description": "こんにちは。miharubaの池谷です。\n前回の記事では、自分の考え方をAIに転写する仕組み perself の設計思想を書きました。今回は、実際に /interview を複数セッション回してコンパイルまで進め、初めて /validate(忠実度の検証)を実行した記録です。\n先に結論を書きます。数値上の基準は超えました。それでも「本人と同じだと言い切れるか」には、最後まで違和感が残りました。\n\n...",
       "category": "AI・技術",
       "rss_category": "",
       "image_url": ""
@@ -54,11 +24,61 @@
       "image_url": ""
     },
     {
+      "title": "AI彼女アプリを作っていて気付いた。関係性は少しずつではなく、突然変わる",
+      "url": "https://zenn.dev/mitsukida/articles/c76e3a26a45ef5",
+      "site": "Zenn(LLM)",
+      "published": "2026-07-15T10:57:46Z",
+      "description": "AI彼女アプリを作っていて気付いた。関係性は少しずつではなく、ある日突然変わる\n前回は、Moodという仕組みについて書いた。\n人は毎日同じではない。\n少し眠かったり、\n少し考え込んでいたり、\n少し機嫌が良かったりする。\nだからAIKanojyoにもMoodを作り始めた。\nしかし、開発を続けるうちに、また新しい違和感が出てきた。\n\n\n 関係性は少しずつ変わっているようで、そうでもない\n友達と話してい...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "同じコードを11回検査させても、そのCVEは0回だった ― LLMコード検査の再現性を実測する",
+      "url": "https://zenn.dev/rikkama/articles/llm-code-review-recall",
+      "site": "Zenn(LLM)",
+      "published": "2026-07-15T10:06:40Z",
+      "description": "何を作っているか\nRIKKA M&amp;A は事業やWebサイトを売買するプラットフォームです。その中に「技術デューデリジェンス（技術DD）」という機能があり、売り手のGitHubリポジトリを解析して、買い手が引き継ぐ前に知っておくべき技術的なリスクを洗い出しています。\n構成はこうなっています。\nこの記事は、この機能の検出品質を測ろうとして分かったことの記録です。結論を先に書きます。LLMの脆弱...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
       "title": "雑に作る→ラディカルなリファクタリングを行う",
       "url": "https://zenn.dev/acomagu/articles/9744fc2a605528",
       "site": "Zenn(LLM)",
       "published": "2026-07-15T10:00:49Z",
       "description": "いろいろなデータを DB に読み込むソースコードを業務で LLM に書かせている。もう少し具体的に言うと、「いろいろなデータソースから地理情報を集めてきてPostGISにぶち込み、Mapboxにアップロードする」みたいな CLI だ。\nこれは最初から LLM に書かせているのだが、データソースの種類が増えるに従いどんどんコードが爆発してきた。\nコードを見ると、特に SQL がヤバい。コードのあらゆ...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "日本語は英語より何倍トークンを食うのか—js-tiktokenでトークンカウンターを作った",
+      "url": "https://zenn.dev/a1221/articles/token-counter-introduction",
+      "site": "Zenn(LLM)",
+      "published": "2026-07-15T10:00:24Z",
+      "description": "はじめに\nLLMを使った開発をしていると、「このプロンプト、何トークンあるんだろう？」と気になる場面が頻繁にあります。\n\nAPIの課金はトークン単位。長いシステムプロンプトのコスト感を知りたい\nコンテキスト上限（128K、200K、1M…）に対して、この文書は何%を占めるのか\n日本語のドキュメントを投げると、英語より明らかに高くつく気がする——実際どれくらい？\n\nかといって、プロンプトや社内ドキュ...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "AI ループの裏側の仕組み:Tool Request・worktree 分離・コンフリクト解決 — AIループ開発記・機能編",
+      "url": "https://zenn.dev/m2dw/articles/n8n-ai-cli-loop-features",
+      "site": "Zenn(LLM)",
+      "published": "2026-07-15T09:56:37Z",
+      "description": "前回の記事で、GitHub Issue を書くと AI が実装・レビュー・修正して PR を返してくる自動開発ループの骨格(intake → 実装 → レビュー → outbox)を紹介しました。\nただ、実際に 1 ヶ月回し続けると、骨格だけでは済まないことが次々に起きます。この記事では、**「何に困って、どんな工夫を足してきたか」**の順で、現在のループを支えている仕組みを紹介します。なお、この...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "Agent Skillsを40本運用して分かった、効かせる3条件",
+      "url": "https://zenn.dev/ai_worklab/articles/agent-skills-40-lessons",
+      "site": "Zenn(LLM)",
+      "published": "2026-07-15T09:24:09Z",
+      "description": "書いたスキルが、思った場面で呼ばれない。効いているのか、いないのかも分からない。40本を超えたあたりから、自分で書いたスキルなのに全体を把握できなくなった。\n私はClaude CodeでAgent Skills(エージェントに手順書を渡す仕組み)を40本超、仕事の実務で運用している。数ヶ月回して分かったのは、「スキルは作るより、効かせる方がずっと難しい」ということだ。作る手間はほとんどかからない。...",
       "category": "AI・技術",
       "rss_category": "",
       "image_url": ""
