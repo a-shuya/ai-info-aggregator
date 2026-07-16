@@ -1,8 +1,48 @@
 {
   "site": "Zenn(LLM)",
-  "last_updated": "2026-07-16T22:32:04.717685",
-  "total_articles": 4667,
+  "last_updated": "2026-07-16T23:36:21.446593",
+  "total_articles": 4668,
   "articles": [
+    {
+      "title": "中国系フロンティア公開重みLLMをセルフホストするのは経済的に合理的か",
+      "url": "https://zenn.dev/t_tokunaga/articles/2026-07-10-china-open-weight-self-host-economics",
+      "site": "Zenn(LLM)",
+      "published": "2026-07-16T18:03:41Z",
+      "description": "はじめに\n結論を先に言うと、公開重みであることと、セルフホストが安いことは別問題です。2026年7月10日時点の中国系フロンティアモデル6種を、公式レシピに記載された起動可能なGPU構成へ机上で落とし込み、電力、初期投資、コロケーション、資本コスト、公式API価格を比較しました。\n入力80%・出力20%、キャッシュなしの固定ケースでは、APIより安くするために必要な月間需要は、Qwen3.6-27...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "中国系LLM APIは推論で利益が出ているのか",
+      "url": "https://zenn.dev/t_tokunaga/articles/2026-07-10-china-llm-api-inference-economics",
+      "site": "Zenn(LLM)",
+      "published": "2026-07-16T18:03:41Z",
+      "description": "はじめに\n中国系LLM APIの価格を見ると、100万token当たり数十円というモデルがあります。この価格で、高価なGPUを動かして本当に利益が出るのでしょうか。\n前編では、Qwen、DeepSeek、Kimi、GLM、MiniMax、Tencent Hy3の公開重みを、公式レシピに沿ってセルフホストする費用を試算しました。本稿では、そのTCOと必要throughputを、各社の公式API価格、...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "【脱初心者】PythonとGemini APIで、会話が消えない「自分専用チャットAI」を爆速で作る！",
+      "url": "https://zenn.dev/jackey_watawata/articles/8367a9fc2c8fde",
+      "site": "Zenn(LLM)",
+      "published": "2026-07-16T17:24:35Z",
+      "description": "はじめに\n前回、Pythonライブラリ streamlit を使って、Gemini APIをブラウザ上で動かすチャットアプリを作成しました。しかし、実際に使い込んでみると「ページをリロードすると会話履歴が消えてしまう」という課題に直面。\n今回は、エンジニア初心者である私が、「チャット履歴の永続化」と「履歴削除機能」を実装し、より実用的なツールに進化させた記録をまとめました。\n\n\n 今回完成したUI...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "656 MiBのMiniCPM5-1BをOllamaで検証：Q4はツール呼び出し6/6でも最終回答0/6",
+      "url": "https://zenn.dev/localai_lab/articles/7daeb71479a71f",
+      "site": "Zenn(LLM)",
+      "published": "2026-07-16T17:19:20Z",
+      "description": "約10.8億パラメータの MiniCPM5-1B について、Ollama上でQ4_K_M／Q8_0量子化版を検証しました。\n公式GGUFから取得したQ4_K_Mの主要blobは、ローカル実測で656.19 MiBでした。かなり小さい一方で、今回の結果からは「軽く動く」と「回答を安心して使える」は分けて考える必要がありました。\n本稿では、詳細版から「形式上は生成できた」と「実際に使える」を分ける判断...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
     {
       "title": "1bit量子化した27BのLLMをiPhone実機で動かし、知能まで測ってみた",
       "url": "https://zenn.dev/lube8163/articles/624f7f1e7ef67d",
@@ -44,26 +84,6 @@
       "image_url": ""
     },
     {
-      "title": "【旧版・無料公開】Claudeは明日もあなたを忘れる — MCP Memory Server cpersona 設計と実践",
-      "url": "https://zenn.dev/cloto/books/claude-memory-mcp-server-archive",
-      "site": "Zenn(LLM)",
-      "published": "2026-07-16T14:53:32Z",
-      "description": "有料版『Claudeは明日もあなたを忘れる』の旧版（CPersona v2.4.4 時点、2026年4月）を無料公開したアーカイブです。MCP Memory Server「cpersona」の設計思想——ベクトル検索・FTS5・エピソード記憶・プロファイル記憶・エージェント分離・Confidence Score——を全13章で解説します。導入手順や検索アルゴリズムはその後大きく進化しており、現行版...",
-      "category": "AI・技術",
-      "rss_category": "",
-      "image_url": ""
-    },
-    {
-      "title": "プロンプトをわざと13,000トークンに太らせたら、AIの原価が下がった——prompt cachingの「4096トークンの壁」",
-      "url": "https://zenn.dev/tyuya/articles/haiku45-prompt-caching",
-      "site": "Zenn(LLM)",
-      "published": "2026-07-16T14:40:47Z",
-      "description": "個人でAI献立アプリを準備しています。冷蔵庫から使いたい食材を取り出して撮ると、AIが献立を提案してくれるアプリです。運営は私一人と、AIがひとり。実装はすべてClaude Code（AI）にやってもらい、私は動作とレシートを確認する係です。\n月500円のサブスクで成立させたいので、AIの原価は1円単位で気にしています。その節約の本命がprompt caching——同じプロンプトの前半部分をキャ...",
-      "category": "AI・技術",
-      "rss_category": "",
-      "image_url": ""
-    },
-    {
       "title": "キャラAIは、なぜ雑談のたびに事件を起こすのか",
       "url": "https://zenn.dev/viuk_sirokuma/articles/94a55818d35e7b",
       "site": "Zenn(LLM)",
@@ -74,31 +94,11 @@
       "image_url": ""
     },
     {
-      "title": "OmniRoute+OpenCodeで月16億トークン無料は実現できるのか",
-      "url": "https://zenn.dev/mskbhd/articles/lab-127-omniroot-free-claude-code16",
-      "site": "Zenn(LLM)",
-      "published": "2026-07-16T13:30:26Z",
-      "description": "はじめに\nX(旧Twitter)でこんな投稿が話題になっていました:\n\nYou can run Claude Code on 1.6 billion free tokens a month.\nTwo open source projects make it work: free Claude Code + Omniroot.\nPlug them together and you get the s...",
-      "category": "AI・技術",
-      "rss_category": "",
-      "image_url": ""
-    },
-    {
       "title": "Agentic Architectures 35パターンを実装したOSSを動かしてみた",
       "url": "https://zenn.dev/mskbhd/articles/lab-119-agentic-architectures",
       "site": "Zenn(LLM)",
       "published": "2026-07-16T13:30:26Z",
       "description": "はじめに\nXで流れてきたこのツイートが気になった:\n\nOne of the more useful things you can do when learning agentic AI is study the patterns in isolation before combining them. The Agentic Architectures library from FareedKhan...",
-      "category": "AI・技術",
-      "rss_category": "",
-      "image_url": ""
-    },
-    {
-      "title": "【2026年最新】Bonsai 27B完全ガイド — iPhoneで動く1-bit版とTernary版の違い・選び方",
-      "url": "https://zenn.dev/amu_lab/articles/bonsai-27b-ternary-1bit-guide",
-      "site": "Zenn(LLM)",
-      "published": "2026-07-16T13:23:37Z",
-      "description": "!\n本記事は 2026年7月16日時点 の情報に基づきます。Bonsai 27Bは2026年7月14日リリースの新しいモデルで、HuggingFace上のバリアント構成やベンチマークは今後更新される可能性があります。数値は各モデルカード・公式発表を主に、実測値との差がある箇所は併記しています。\n\n\n この記事で分かること\n「27BクラスのモデルがiPhoneで動く」というニュースを見て、いざ試そう...",
       "category": "AI・技術",
       "rss_category": "",
       "image_url": ""
@@ -119,6 +119,16 @@
       "site": "Zenn(LLM)",
       "published": "2026-07-16T12:32:13Z",
       "description": "!\n本記事は AI（Claude / Codex）の補助を受けて執筆しています。実装・実機計測・数値はすべて実際に行ったものですが、文章の構成や整理、説明画像の作成に AI を利用しています。\n\n\n はじめに\n前回まで、Gemma 4 12B を Core ML 化して iPhone 実機で動かす実験をしていました。\n\n12B の decoder を分割して低メモリで通す\nimage / audi...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "AIキャラクターに「黙る」ことを教える ― 自発メッセージを3段ゲートで設計した話",
+      "url": "https://zenn.dev/yuralume/articles/d89cff2cf7bc57",
+      "site": "Zenn(LLM)",
+      "published": "2026-07-16T09:23:16Z",
+      "description": "この記事の対象読者と前提\n\nLLM を使ったチャットボット / AI キャラクターを作っている、または作りたい人\n「AI が自分から話しかけてくる」機能を実装しようとして、うざいボットが出来上がった経験のある人\n実装言語は Python ですが、この記事の中心は言語非依存の設計の話です\n\n私は Yuralume という self-host 型の AI キャラクタープラットフォームを一人で開発してい...",
       "category": "AI・技術",
       "rss_category": "",
       "image_url": ""
