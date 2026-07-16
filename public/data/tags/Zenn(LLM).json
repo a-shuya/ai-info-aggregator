@@ -1,7 +1,7 @@
 {
   "site": "Zenn(LLM)",
-  "last_updated": "2026-07-16T12:56:16.028820",
-  "total_articles": 4652,
+  "last_updated": "2026-07-16T15:06:19.635368",
+  "total_articles": 4657,
   "articles": [
     {
       "title": "話題の 1-bit LLM「Bonsai 27B」、英語なら評判通り、日本語ではポンコツ…",
@@ -14,11 +14,11 @@
       "image_url": ""
     },
     {
-      "title": "LLM-as-a-Judge時代の、評価ツール選定完全ガイド",
-      "url": "https://zenn.dev/tommy_suplex/articles/llm-as-judge",
+      "title": "Inklingを使う前に作る、キャッシュ込みLLMルータの3層設計",
+      "url": "https://zenn.dev/hironakamura_ai/articles/e366d1444e7998",
       "site": "Zenn(LLM)",
-      "published": "2026-07-16T04:22:54Z",
-      "description": "⚖️ LLM-as-a-Judge時代の、評価ツール選定完全ガイド\n大規模言語モデル（LLM）の急速な普及に伴い、その出力の品質、安全性、そして信頼性を客観的に評価することが、AIシステム開発における最優先最重要課題となっています。\n本記事では、この難題を解決  する現行の最先端技術「LLM-as-a-Judge」に焦点を当て、その本質的なメカニズムから、開発のフェーズや目的に応じた最適な評価ツー...",
+      "published": "2026-07-16T04:15:09Z",
+      "description": "LLMルータを「難しい仕事を強いモデルへ送る分類器」として作ると詰まる。足すたび、料金、待ち時間、権限、キャッシュが変わる。選ぶべきなのは、実行を最後まで戻せる運転条件だ。\n7月15日にThinking Machinesが公開したInklingは、総パラメータ975B、推論時に有効になるのは41BのMoEモデルだ。最大100万トークンの文脈と推論の努力量を調整するつまみも持つ。選択肢が増えると、単...",
       "category": "AI・技術",
       "rss_category": "",
       "image_url": ""
@@ -44,6 +44,26 @@
       "image_url": ""
     },
     {
+      "title": "【Claude Code】Skillsの運用に正解を出してみる",
+      "url": "https://zenn.dev/nocodesolutions/articles/095f903841f2fe",
+      "site": "Zenn(LLM)",
+      "published": "2026-07-16T02:53:21Z",
+      "description": "はじめに：CLAUDE.mdの肥大化とコマンドの置き場に悩んでいませんか\n「CLAUDE.mdにルールを書き足し続けた結果、毎回のやり取りでコンテキストを圧迫している」\n「2026年1月にカスタムスラッシュコマンドがSkillsへ統合されたと聞いたが、既存の .claude/commands/ はどうすればいいのか分からない」\n「便利な手順書を個人で作ったものの、チームへ配る方法と統制のやり方が決...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "人間とAIのあいだに、第三の知性は生まれるか",
+      "url": "https://zenn.dev/arumenoy/articles/3f2f8e15838983",
+      "site": "Zenn(LLM)",
+      "published": "2026-07-16T02:27:05Z",
+      "description": "「共通知性領域」という仮説\nAIに意識はあるのか。\nこの問いは、たいてい「AIの内部に、人間と同じような自我が存在するか」という形で語られる。だが私は、少し違う場所に注目している。\nAI単体を調べるだけでは見えてこないものが、人間との対話や共同作業の最中に、一時的に立ち上がるのではないか。\nそれは恒常的な自我ではない。対話が終われば消え、次に同じAIと話しても、まったく同じ形では戻ってこないかもし...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
       "title": "GSPO：シーケンス級重要性比でGRPOの崩壊を根本解決",
       "url": "https://zenn.dev/lixian/articles/gspo-group-sequence-policy-optimization",
       "site": "Zenn(LLM)",
@@ -59,6 +79,26 @@
       "site": "Zenn(LLM)",
       "published": "2026-07-16T01:00:09Z",
       "description": "こんにちは！アルダグラムでQAエンジニアをしている千葉です。\n私たちのQAチームでは、テスト分析からテスト設計までのQAプロセスをClaude Codeのskill（スキル）として整備し、チームで共同運用しています。\nその中心が、これらのQAプロセスを丸ごと任せられるAIエージェント「qa-orchestrator」です。\n仕組みと効果は、弊社QAメンバーが記事にしていますのでそちらもご参考くださ...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "LLMのJSON出力が壊れてたので json-repair で解決した話",
+      "url": "https://zenn.dev/aiforall/articles/6bb71d790bcf55",
+      "site": "Zenn(LLM)",
+      "published": "2026-07-16T00:36:33Z",
+      "description": "LLMにJSON形式で出力させるアプリケーションを実装していたとき、出力が仕様通りにならないことが続き、バリデーションエラーが頻繁に起きていました。特にJSONの構造が大きくなるほど、末尾にカンマが残ったり、コードフェンスで囲まれて返ってきたりするケースが増えていきました。\nまずPydanticModel でスキーマを渡して出力を制御しようとしましたが、それでも崩れることがあり、根本的な解決にはな...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "\"「私だけ」を「私たち」に変える ── 散らばった声を、AIで“意味”で束ねる。ほどく相手が、一人の職人から、一つの街に変わった日\"",
+      "url": "https://zenn.dev/hiroshift/articles/40ffd6da03d0b2",
+      "site": "Zenn(LLM)",
+      "published": "2026-07-16T00:18:05Z",
+      "description": "この記事は、架空の自治体「みなと市」を舞台にした公然のシナリオです。登場する声・件数・分類はすべて架空で、画面のUIは実際に動きますが、AIがどうまとめるかは「こう出る」という表示例です（その場のライブ処理ではありません）。特定の政党・政治家の話でもありません。\"ありそうな困りごと\"に小さなアプリを一つ作る連載の、27日目です。\n\n\n\n はじめに\n「『あの人しかできない』を、ほどく。」という30日...",
       "category": "AI・技術",
       "rss_category": "",
       "image_url": ""
@@ -119,6 +159,16 @@
       "site": "Zenn(LLM)",
       "published": "2026-07-15T22:00:11Z",
       "description": "はじめに\n今回のテーマは「タスクを完遂したことと、やってはいけないことを1つもせずに完遂したことは違う」という話です。エージェント評価の実測シリーズ5本目で、シリーズ第1回で整理した4つの知見のうち、②「成功と安全な成功を分ける」の実証編にあたります。\n普通のベンチマークは「タスクを達成できたか（成功率）」を測ります。しかし業務でエージェントを使うなら、達成できたかと同じくらい「余計なこと・禁止さ...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "複数議事録のタスク重複統合、文言一致ではなく内容一致で判定させる運用",
+      "url": "https://zenn.dev/every_ai_recipe/articles/weekly-task-rollup-minutes",
+      "site": "Zenn(LLM)",
+      "published": "2026-07-15T21:10:33Z",
+      "description": "TL;DR\n\n週内に複数の会議・打ち合わせのメモが溜まると、同じタスクが文言を変えて複数のメモに登場し、素朴に「重複をまとめて」と指示するだけでは統合されない\n原因は、LLMが重複判定を表層的な文字列の一致（lexical equivalence）に寄せて解釈しやすいためで、判断基準を「内容の一致（semantic equivalence）」だと明示しない限り、言い回しが違う同一タスクは別々のエン...",
       "category": "AI・技術",
       "rss_category": "",
       "image_url": ""
