@@ -1,7 +1,7 @@
 {
   "site": "Zenn(Python)",
-  "last_updated": "2026-07-16T17:52:15.506310",
-  "total_articles": 5122,
+  "last_updated": "2026-07-16T19:17:47.849084",
+  "total_articles": 5125,
   "articles": [
     {
       "title": "競馬AI開発記録 #24：単勝特化の限界を「複勝専用モデル」で突破する：特徴量空間の物理的隔離",
@@ -14,21 +14,21 @@
       "image_url": ""
     },
     {
-      "title": "個人でLLMゲートウェイを本番運用する ——『作った』ではなく『動かし続けている』話",
-      "url": "https://zenn.dev/seiryu_dev/articles/llm-gateway-solo-ops-6-pitfalls",
-      "site": "Zenn(Python)",
-      "published": "2026-07-16T13:10:19Z",
-      "description": "この記事について\n自宅のPCで、自作のLLMゲートウェイを常時稼働させています。趣味のデモではなく、日々の仕事（副業の受託作業・調査・実装）が実際にその上を通っています。止まると自分の作業が止まる、という意味で「本番」です。\nこの記事では、コードもconfigも出しません。APIキー・受託先のデータ・個人環境のパスが混ざっているからです。代わりに、\n\nどういう構成にしたか（構成図）\nなぜその設計に...",
-      "category": "開発",
-      "rss_category": "",
-      "image_url": ""
-    },
-    {
       "title": "Strategy Pattern を ABC で書くか、Protocol で書くか",
       "url": "https://zenn.dev/zozotech/articles/6717b887482e4e",
       "site": "Zenn(Python)",
       "published": "2026-07-16T12:59:49Z",
       "description": "前回のおさらい\n前回、if-else まみれの関数を Strategy Pattern で整理する話を書きました。\n抽象基底クラス（ABC）で共通のインターフェースを定義して、具体的な処理はサブクラスに丸投げする、というやつです。\n今回はその続きで、同じ Strategy Pattern を Python の typing.Protocol で書くという選択肢について書きます。\nABC と Pro...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "MCPとは何か？Microsoft Fabric Data Agentと接続して仕組みを理解する",
+      "url": "https://zenn.dev/akkodis_jp/articles/890537b27d4fb0",
+      "site": "Zenn(Python)",
+      "published": "2026-07-16T04:01:38Z",
+      "description": "はじめに\n\n 記事を書く背景\n最近AIエージェント界隈でMCP（Model Context Protocol）という言葉をよく見かけます。しかし実際に触ってみると、\n\nMCP サーバー？\nMCP クライアント？\nREST APIと何が違う？\n\nという疑問を持つ方も多いのではないでしょうか。\n本記事ではMicrosoft Fabric Data Agentを実際に接続しながらMCPを理解できるように...",
       "category": "開発",
       "rss_category": "",
       "image_url": ""
@@ -64,11 +64,41 @@
       "image_url": ""
     },
     {
+      "title": "LLMのJSON出力が壊れてたので json-repair で解決した話",
+      "url": "https://zenn.dev/aiforall/articles/6bb71d790bcf55",
+      "site": "Zenn(Python)",
+      "published": "2026-07-16T00:36:33Z",
+      "description": "LLMにJSON形式で出力させるアプリケーションを実装していたとき、出力が仕様通りにならないことが続き、バリデーションエラーが頻繁に起きていました。特にJSONの構造が大きくなるほど、末尾にカンマが残ったり、コードフェンスで囲まれて返ってきたりするケースが増えていきました。\nまずPydanticModel でスキーマを渡して出力を制御しようとしましたが、それでも崩れることがあり、根本的な解決にはな...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "Ollama で think=false を送ると JSON Schema（format）が無視される",
+      "url": "https://zenn.dev/errfix/articles/ollama-think-format-ignored",
+      "site": "Zenn(Python)",
+      "published": "2026-07-16T00:00:15Z",
+      "description": "Ollama で構造化出力を取るとき、format に JSON Schema を渡し、思考のコストを避けるために think=false を添える。よくある書き方です。ところが古いサーバでは、この組み合わせで format が黙って無視されます。モデルは自然文を返し、受け取った側の json.loads() が落ちます。\njson.decoder.JSONDecodeError: Expecti...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
       "title": "オンとオフしかないスイッチで、モータに正弦波を届ける ―― PWM インバータを波形で確かめる",
       "url": "https://zenn.dev/logicia32/articles/2026-07-16-servo-pwm-inverter",
       "site": "Zenn(Python)",
       "published": "2026-07-15T23:07:24Z",
       "description": "前回の FOC 編までで、コタツの温度からブラシレスモータの回転まで、PID の話は一通りつながりました。ただ、ひとつだけ理想化したまま先送りにしてきたことがあります。電圧です。\nこのシリーズではずっと「電圧指令を出せば、そのとおりの電圧がモータにかかる」ことにしてきました。実物の駆動回路が持っているのは、直流の電源と 6 個のスイッチだけです。しかもパワー半導体のスイッチは、全開か全閉かしかでき...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "ローカルLLM study2: Aiderで自律コーディングをさせてみた（7モデル比較）",
+      "url": "https://zenn.dev/tkpurine/articles/local-llm-study-002-aider-model-screening",
+      "site": "Zenn(Python)",
+      "published": "2026-07-15T22:43:09Z",
+      "description": "前回のおさらい\n前回は、コードレビューやFizzBuzz生成といった単発のQ&amp;Aタスクで11モデルを比較し、普段使いなら gemma4:e2b、説明・レビュー重視なら gemma4:e4b や Ornith-1.0-9B が有力という結論になりました。\nただし単発のQ&amp;Aで分かるのは「説明が丁寧か」「コードが正確か」までです。Claude Codeでの開発では、それ以上に「バグを直...",
       "category": "開発",
       "rss_category": "",
       "image_url": ""
@@ -98,7 +128,7 @@
       "url": "https://zenn.dev/rg687076/articles/zenn_20260714_0630_kaggle-offline-install",
       "site": "Zenn(Python)",
       "published": "2026-07-15T15:56:18Z",
-      "description": "Biohub - Cell Tracking During Development\n\n Abstruct\n\n(Kaggle用に)プリインストールされていない外部ライブラリのインストール手順のまとめ\n\n\n 概要\nNotebook提出のKaggleのコードコンペティションって、インターネット接続不可でも動くのが条件になんですが、プリインストールされていない外部ライブラリ(例: zarr)だと、プリイン...",
+      "description": "Biohub - Cell Tracking During Development\n\n Abstruct\n\n(Kaggle用に)プリインストールされていない外部ライブラリのインストール手順のまとめ\n\n\n 概要\nKaggleのコードコンペティションって、Notebook提出のとき、インターネット接続不可でも動くのが条件になんですが、プリインストールされていない外部ライブラリ(例: zarr)だと、i...",
       "category": "開発",
       "rss_category": "",
       "image_url": ""
