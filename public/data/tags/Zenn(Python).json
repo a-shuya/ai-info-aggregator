@@ -1,8 +1,38 @@
 {
   "site": "Zenn(Python)",
-  "last_updated": "2026-07-17T22:09:44.344631",
-  "total_articles": 5141,
+  "last_updated": "2026-07-17T23:08:37.371608",
+  "total_articles": 5144,
   "articles": [
+    {
+      "title": "2極IIRフィルタで正弦波を作る仕組み",
+      "url": "https://zenn.dev/qwerewq/articles/f1ffdbb3d5384b",
+      "site": "Zenn(Python)",
+      "published": "2026-07-17T22:08:16Z",
+      "description": "はじめに\nデジタル機器で正弦波を作る最も単純な方法は、サンプルごとにsin関数を計算する方法です。\ny[n] = A sin(nφ + θ)\nここで、\n\nA：振幅\nn：サンプル番号\nφ：1サンプルごとに進む角度\nθ：初期位相\n\nです。\nしかし、マイコンやDSPでは、毎回sin関数を計算する代わりに、過去の出力から次の値を求めることができます。\nその式が次の2階差分方程式です。\ny[n] = 2co...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "ローカルLLM study1-a: gemma4:e2b/e4bのMLX版はどれだけ速いか",
+      "url": "https://zenn.dev/tkpurine/articles/local-llm-study-001a-gemma4-mlx",
+      "site": "Zenn(Python)",
+      "published": "2026-07-17T21:30:26Z",
+      "description": "この記事について\nstudy1 では gemma4:e2b・gemma4:e4b を含む11モデルを比較しました。今回、Googleから同モデルの MLX版（gemma4:e2b-mlx・gemma4:e4b-mlx）が公開されていることが分かったため、study1と同じ4タスクで実測し、通常版とどれだけ差が出るかを検証しました。番外編として「study1-a」の位置づけです。\n\n確認の経緯： 2...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "Databricks AppsでダッシュボードをPDF化して300店舗にメール配信する",
+      "url": "https://zenn.dev/kazushi6/articles/0b2f90c4e5add5",
+      "site": "Zenn(Python)",
+      "published": "2026-07-17T17:33:33Z",
+      "description": "弊社では、各店舗の店長に前日のKPI（売上・予算比・前年比あたり）を毎日メールで届けたい、という話がありました。要件を整理するとこうです。\n\n\n\n要件\n内容\n\n\n\n\n店舗別フィルタ\n各店舗には自店舗のデータだけを送る\n\n\n宛先の動的管理\n送信先はマスタテーブル（店舗コード×メールアドレス）で管理。店舗の開閉・担当変更に自動追従\n\n\n受け手の負担ゼロ\n店長はBIツールにログインしない。メールに添付さ...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
     {
       "title": "エンジニア視点で語る！Pythonで学ぶマクロ経済学入門 23",
       "url": "https://zenn.dev/maszkot/articles/cb0be6b04341f4",
