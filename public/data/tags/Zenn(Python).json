@@ -1,14 +1,114 @@
 {
   "site": "Zenn(Python)",
-  "last_updated": "2026-07-17T08:59:08.568037",
-  "total_articles": 5129,
+  "last_updated": "2026-07-17T10:55:51.556791",
+  "total_articles": 5139,
   "articles": [
+    {
+      "title": "LLMとの長期対話をgitのように運用する——セッション地層管理ツール「墨継ぎ」を作った",
+      "url": "https://zenn.dev/pagestone/articles/6e17d8f40a2fbc",
+      "site": "Zenn(Python)",
+      "published": "2026-07-17T09:11:25Z",
+      "description": "LLMと長い議論をしていると、必ず二つの壁に当たります。セッションの上限と、上限に達する前に始まる劣化です。\n前者への対症療法（引き継ぎプロンプト等）はすでに大量に出回っていますが、運用として整理されたものは意外と見当たりません。そこで、セッションを「延命」するのではなく「切れてよい構造」にするという方針で、小さなStreamlitツールを作りました。この記事は実装と設計判断の記録です。\n先に断っ...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "4AI協働開発記 — ボウリング場予約システムをChatGPT・Copilot・Gemini・Claudeでリレー開発した話（技術深掘り版）",
+      "url": "https://zenn.dev/junko_jp/articles/4ai-relay-bowling-reservation-system",
+      "site": "Zenn(Python)",
+      "published": "2026-07-17T07:27:50Z",
+      "description": "AIと協働してシステムを作る──この言葉はキャッチーですが、実際の開発はもっと泥臭く、もっと人間的で、もっと面白いものでした。今回のボウリング場予約システム開発は、ChatGPT・Copilot・Gemini・Claudeの4AIがリレー形式で担当しながら、要件定義→設計→DB設計レビュー→実装・デバッグという流れを走り抜けたプロジェクトです。\nZenn向けの記事として、Qiita版よりも「技術的...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "メモリリークの正体は glibc malloc だった ── Python 以外でも効く LD_PRELOAD 1 行のアロケータ差し替え",
+      "url": "https://zenn.dev/pksha/articles/python-memory-leak-jemalloc",
+      "site": "Zenn(Python)",
+      "published": "2026-07-17T05:27:27Z",
+      "description": "要約\n\nFastAPI サーバで、メモリ使用率が単調増加し、OOM が発生する現象に遭遇した。同じアプリケーションコードと負荷試験内容のまま jemalloc に差し替えると OOM が発生しなくなったため、主要因は glibc malloc（ptmalloc2 由来）側のメモリ管理だと判断した\n導入は jemalloc の共有ライブラリを追加し、環境変数 LD_PRELOAD を 1 行設定する...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "YOLOで超かんたん転移学習入門",
+      "url": "https://zenn.dev/sdkfz181tiger/articles/32100dc6882faa",
+      "site": "Zenn(Python)",
+      "published": "2026-07-17T05:02:07Z",
+      "description": "01: YOLOで転移学習をする\nYOLO(You Only Look Once)は物体検知アルゴリズムの総称です。\n今回は、独自の物体を検知する専用モデルを構築するまでの流れを試します。\n本記事ではUltralytics社版の物体検知フレームワークをお借りします。\n\n 02: 全体の流れ\n独自のモデルを構築するまでの流れは次のとおりです。\n1, フレームワークのインストール\n2, データの準備(...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "【非エンジニア向け】Google ColabとVS codeで最も手軽なPython環境構築とHello World!",
+      "url": "https://zenn.dev/shunichi1100921/articles/22bd0a8de9f0ad",
+      "site": "Zenn(Python)",
+      "published": "2026-07-17T04:55:50Z",
+      "description": "この記事では、情報系ではない学生や研究者がデータ解析などでPythonを使う場合のプラクティスを紹介します。所属している薬学のラボで実際に導入している方法です。基本的にはPythonをデータ解析メインで使用する人をターゲットとしています。\n!\n情報系以外の人が対象です。\nデータ分析以外の用途で使う人、スクリプトで管理したい人などはローカルにセットアップしましょう。\n\n\n Colabとは\nGoogl...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "割安株は本当に儲かるのか？ 日本株ほぼ全銘柄で検証したら、TOPIXに勝てなかった",
+      "url": "https://zenn.dev/yuta1995/articles/japan-value-stock-backtest",
+      "site": "Zenn(Python)",
+      "published": "2026-07-17T03:25:16Z",
+      "description": "!\nこの記事は個人の検証記録であり、投資助言ではありません。特定の銘柄を推奨するものでもありません。投資判断はご自身の責任でお願いします。\n\n\n 「いかにも割安な株」は、本当に儲かるのか\nPERが低く、自己資本比率が高く、現金や土地をたくさん持っている会社。こういう株は、いかにも割安に見えます。私もずっとそう思っていました。\n困るのはその先です。その中から自分が選んだ1社が上がったとして、それが手...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "pandasでコホート分析×RFM分析をやってみた｜公開データで顧客分析入門",
+      "url": "https://zenn.dev/ossudesu/articles/zenn_cohort_rfm",
+      "site": "Zenn(Python)",
+      "published": "2026-07-17T03:23:10Z",
+      "description": "はじめに\nこの記事では、pandas を使ったコホート分析と RFM 分析を、公開されている実データで一通りやってみた記録をまとめます。「顧客がどれだけ定着しているか」「誰が優良顧客か」を数字で出す、ビジネス寄りのデータ分析の入門です。\n私は現在介護職をしていますが、キャリアの行き詰まりを感じています。そこで生成AIエンジニアやデータサイエンティストに興味があり、ポートフォリオの一環として今回デー...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "エラー放置でバグは直る？LangGraph×MiniMax M2.7の自己修正ループ限界検証と導入判断",
+      "url": "https://zenn.dev/lluminai_tech/articles/891ad24c017bcf",
+      "site": "Zenn(Python)",
+      "published": "2026-07-17T00:53:21Z",
+      "description": "はじめに\nルミナイR&amp;Dチームの宮脇彰梧です。\n現在はマルチモーダルAIの研究を行う大学院生として、生成AIやAIエージェントの技術を実践的に探求しています。\n皆さんは休日の夜、APIサーバーのエラーログを眺めながら「誰か勝手に直しておいてくれないかな…」と天を仰いだことはありませんか？\n今回は、リリースされたばかりの自己進化型モデル「MiniMax M2.7」と「LangGraph」を組...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "エージェント設計・オーケストレーションをハンズオンで学ぶ",
+      "url": "https://zenn.dev/hkame/articles/zenn-article-agentic-orchestration",
+      "site": "Zenn(Python)",
+      "published": "2026-07-16T20:27:56Z",
+      "description": "はじめに\nAnthropicが2026年3月に開始した技術認定資格「Claude Certified Architect(CCA-F)」では、エージェント設計・オーケストレーションが最も比重の高い出題領域とされています。座学だけで理解するのは難しい分野なので、実際に手を動かしながら基礎パターンを体に染み込ませることにしました。\nこの記事では、環境構築からつまずいたポイント、4段階のハンズオン(単発...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
     {
       "title": "AIに「目」を授ける。Streamlitで画像解析チャットアプリに進化させる",
       "url": "https://zenn.dev/jackey_watawata/articles/7aec2d7fe573e2",
       "site": "Zenn(Python)",
       "published": "2026-07-16T17:23:39Z",
       "description": "はじめに\n前回、Webアプリ化に成功しました。今回はそのアプリに「画像認識機能」を追加します。Geminiはただのチャットボットではなく、画像を理解する「目」を持っています。これを使って、画像をアップロードするだけでAIが内容を教えてくれるツールを作ります。\n\n 実装コード（gemini.pyの進化版）\nPIL ライブラリ（Python画像処理ライブラリ）を使って、画像をAIに渡します。\nimpo...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "広告コピー10案を一括生成するLLMシステムの実装【Google/Meta/X対応】",
+      "url": "https://zenn.dev/kotaozaki/articles/adcopyai-generation-system-2026-07-17",
+      "site": "Zenn(Python)",
+      "published": "2026-07-16T15:51:34Z",
+      "description": "広告コピー10案を一括生成するLLMシステムの実装【Google/Meta/X対応】\n\n はじめに：広告コピー制作の「現場の痛み」\nマーケターやエンジニアが広告運用を始めると、必ずぶつかる壁がある。コピーのバリエーション不足だ。\n「CTRが低い。コピーを変えよう」→ ライターに依頼 → 数日後に3〜5案が上がってくる → A/Bテストを回す → また結果待ち……。このサイクルは遅すぎる。しかも各プ...",
       "category": "開発",
       "rss_category": "",
       "image_url": ""
