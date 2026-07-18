@@ -1,8 +1,38 @@
 {
   "site": "Zenn(Python)",
-  "last_updated": "2026-07-18T12:38:18.758852",
-  "total_articles": 5153,
+  "last_updated": "2026-07-18T14:08:28.714082",
+  "total_articles": 5157,
   "articles": [
+    {
+      "title": "MacでPythonスクリプトをlaunchdで常駐化し業務を自動化する",
+      "url": "https://zenn.dev/ikuokuotiak/articles/python-launchd-mac-automation-file-watcher",
+      "site": "Zenn(Python)",
+      "published": "2026-07-18T11:31:19Z",
+      "description": "課題提起: Macでバックグラウンド処理を常時実行したい\n私（ahic）は、日々の業務の多くのプロセスをAI/RPAで自動化しています。その中でも、Macで特定のディレクトリを監視し、ファイルが置かれたら自動で処理を開始するといった常駐プロセスが不可欠です。\n手動でスクリプトを実行したり、ターミナルを開きっぱなしにしたりするのは非効率で、予期せぬ中断のリスクもあります。そこで、Macの標準機能であ...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "Claude CodeとPythonで議事録からTODOを自動抽出する実践ガイド",
+      "url": "https://zenn.dev/ikuokuotiak/articles/claude-code-python-todo-extract",
+      "site": "Zenn(Python)",
+      "published": "2026-07-18T11:31:18Z",
+      "description": "議事録からのTODO抽出、その非効率をClaude Codeで解消する\nAIエージェントを13体運用して日々の業務を自動化している ahic です。\n会議後のTODOリスト作成は、時間と手間がかかる非効率な作業です。見落としや解釈のブレ、フォーマットの不統一といった課題も生じがちです。\nこれらの課題を解決するため、私はClaude CodeとPythonを組み合わせた自動抽出システムを導入しました...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "研究データを SQL でつなぐと、なぜ行が増えるのか——JOIN と粒度",
+      "url": "https://zenn.dev/efta1989/articles/sql-grain-for-materials",
+      "site": "Zenn(Python)",
+      "published": "2026-07-18T09:33:20Z",
+      "description": "はじめに：数字が合わないとき、先に疑う場所\n材料・化学の実験データを表でつなぐと、「行が増えた」「失敗した実験が消えた」「収率の平均がおかしい」といった声が出ることがある。モデルや BI の話に進む前に、戻るべきは JOIN の種類 と 粒度（1行が何を表すか） だ。\n本記事では、実験マスタと測定ファクトを SQLite に置き、次を再現する。\n\nINNER JOIN で行が増え、測定のない失敗実...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
     {
       "title": "YOLOでかんたんアノテーション入門",
       "url": "https://zenn.dev/sdkfz181tiger/articles/7cb77363ec0414",
@@ -24,6 +54,16 @@
       "image_url": ""
     },
     {
+      "title": "毎朝6時、AIが勝手にニュース番組を作ってYouTubeに上げてくれる仕組みを作った",
+      "url": "https://zenn.dev/acropapa330/articles/yabou02_ai_news_automation",
+      "site": "Zenn(Python)",
+      "published": "2026-07-18T05:26:47Z",
+      "description": "はじめに\n「Unity上の仮想ニューススタジオでアバターが解説する動画を作って、YouTubeにアップするまでを全自動化したい」\nそんな野望を掲げてプロジェクトフォルダを作ったのが数ヶ月前。「いいところで挫折しそうではありますが笑」とREADMEに書いていたのですが、挫折するどころか、いま毎朝6時15分になると私が寝ている間にAIがニュース番組を1本作り上げ、YouTubeに(非公開で)アップロー...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
       "title": "並列クロールが「即座に失敗」で崩壊する仕組みと、それを見逃す適応制御",
       "url": "https://zenn.dev/akagifreeez/articles/fast-failures-look-healthy",
       "site": "Zenn(Python)",
@@ -39,16 +79,6 @@
       "site": "Zenn(Python)",
       "published": "2026-07-18T04:00:05Z",
       "description": "複数のLambda関数で同じ処理を使いたい場合、各Lambdaに同じコードをコピーするのではなく、Lambdaレイヤーとして切り出すことで、コードの保守性が上がりました。その手順について共有したいと思います。\n今回は、Pythonの共通処理を shared_function.py にまとめて、AWS CDKでLambdaレイヤーとして各Lambdaに追加しました。\n\n レイヤー用のファイルを作る\n...",
-      "category": "開発",
-      "rss_category": "",
-      "image_url": ""
-    },
-    {
-      "title": "投稿時刻より前に記事在庫を監視するバックプレッシャー設計 - 実装手順",
-      "url": "https://zenn.dev/kmn/articles/8dba725c06172b",
-      "site": "Zenn(Python)",
-      "published": "2026-07-18T02:32:48Z",
-      "description": "投稿時刻より前に記事在庫を監視するバックプレッシャー設計 - 実装手順\n自動処理は、スケジュール登録だけでは安定しません。スケジューラが正常でも、入力キューが空なら記事は公開されません。\nこの記事では「実装手順」の観点から、入力、処理、成果物、公開結果を分離する方法を整理します。仕組み全体の理由まで扱います。\n\n 基本方針\n未公開在庫の最低数を生産不変条件にし、投稿時刻より前に補充します。\nプロセ...",
       "category": "開発",
       "rss_category": "",
       "image_url": ""
@@ -119,6 +149,16 @@
       "site": "Zenn(Python)",
       "published": "2026-07-17T15:27:51Z",
       "description": "https://qiita.com/maskot1977/items/b2cab24e9109ad211cb3\n\n 第23回「クラウディングイン、ヒステリシス…日本経済の誤解を検証する」\n\n\n オープニング\nDJミオ：\nこんばんは、DJミオです。\nこの番組は、マクロ経済学の基本を、Pythonで実際に手を動かしながら学んでいこうというコンセプトでお届けしています。\nDJレン：\nDJレンです。\nそし...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "RAGの精度評価で最初に見つかったのは、モデルの差ではなく「ものさし」のバグだった",
+      "url": "https://zenn.dev/nd3/articles/rag-eval-embedding-comparison",
+      "site": "Zenn(Python)",
+      "published": "2026-07-17T15:00:03Z",
+      "description": "3行まとめ\n\n自作RAGの埋め込みモデルを、ライブラリのデフォルト(text-embedding-ada-002)から text-embedding-3-small にすると、同一条件の実測で**正解率 76% → 96%、検索ヒット率 80% → 90%**となり、悪化した問題はゼロでした\n上記の比較にたどり着くまでにテコ入れしたのは、モデルではなく評価スクリプト側のバグ3件と実験設計の欠陥1件...",
       "category": "開発",
       "rss_category": "",
       "image_url": ""
