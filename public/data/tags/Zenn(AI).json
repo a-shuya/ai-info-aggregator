@@ -1,7 +1,7 @@
 {
   "site": "Zenn(AI)",
-  "last_updated": "2026-07-18T10:40:36.710151",
-  "total_articles": 11236,
+  "last_updated": "2026-07-18T11:37:46.688980",
+  "total_articles": 11241,
   "articles": [
     {
       "title": "CSSに設計論がない気がして、AIと考え直した記録",
@@ -29,16 +29,6 @@
       "site": "Zenn(AI)",
       "published": "2026-07-18T03:00:14Z",
       "description": "はじめに —— 梯子の形が、変わり始めている\n先輩と同じ10年を過ごせば、先輩と同じ場所に行ける。\n少し前まで、エンジニアのキャリアには、そういう前提があった。\n下積みで腕を磨き、少しずつ設計や判断の側へ上がっていく。\n先輩が登った梯子を、そのまま登ればよかった。\nしかし、AI以後、この梯子の形が変わり始めている。\nこの記事は、いま20代で働いているエンジニアに向けて書く。\n正確に言えば、20代エ...",
-      "category": "AI・技術",
-      "rss_category": "",
-      "image_url": ""
-    },
-    {
-      "title": "投稿時刻より前に記事在庫を監視するバックプレッシャー設計 - 実装手順",
-      "url": "https://zenn.dev/kmn/articles/8dba725c06172b",
-      "site": "Zenn(AI)",
-      "published": "2026-07-18T02:32:48Z",
-      "description": "投稿時刻より前に記事在庫を監視するバックプレッシャー設計 - 実装手順\n自動処理は、スケジュール登録だけでは安定しません。スケジューラが正常でも、入力キューが空なら記事は公開されません。\nこの記事では「実装手順」の観点から、入力、処理、成果物、公開結果を分離する方法を整理します。仕組み全体の理由まで扱います。\n\n 基本方針\n未公開在庫の最低数を生産不変条件にし、投稿時刻より前に補充します。\nプロセ...",
       "category": "AI・技術",
       "rss_category": "",
       "image_url": ""
@@ -224,11 +214,61 @@
       "image_url": ""
     },
     {
+      "title": "ローカルLLM study1-a: gemma4:e2b/e4bのMLX版はどれだけ速いか",
+      "url": "https://zenn.dev/tkpurine/articles/local-llm-study-001a-gemma4-mlx",
+      "site": "Zenn(AI)",
+      "published": "2026-07-17T21:30:26Z",
+      "description": "この記事について\nstudy1 では gemma4:e2b・gemma4:e4b を含む11モデルを比較しました。今回、Googleから同モデルの MLX版（gemma4:e2b-mlx・gemma4:e4b-mlx）が公開されていることが分かったため、study1と同じ4タスクで実測し、通常版とどれだけ差が出るかを検証しました。番外編として「study1-a」の位置づけです。\n\n確認の経緯： 2...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "人類の知識蓄積の単位は「文章」から「実行可能な作業単位」へ移行するのではないか？",
+      "url": "https://zenn.dev/h1deya/articles/future-of-human-knowledge-accumulation",
+      "site": "Zenn(AI)",
+      "published": "2026-07-17T21:15:12Z",
+      "description": "AIエージェントと skills がもたらす、実行可能な集合知の可能性\nAIエージェントと skills の活用について考えていたとき、ひとつの仮説に思い至りました。\nそれは、人類の知識蓄積の単位が、これまでの「文章」から、これからは 実行可能な作業単位 へと移行していくのではないか、という仮説です。\nもう少し丁寧に言えば、それは単なる実行可能な手順ではなく、失敗履歴を持ち、それを通じて改善され、...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "音声練習の言い淀み計測、書き起こしがフィラーを消す理由と防ぐ運用",
+      "url": "https://zenn.dev/every_ai_recipe/articles/voice-practice-filler-word-tracking",
+      "site": "Zenn(AI)",
+      "published": "2026-07-17T21:09:35Z",
+      "description": "TL;DR\n\n文字起こしAIは、指示を省略すると「聞き取りやすい整った文章」を生成しようとする。これは音声認識（ASR）由来のトランスクリプトを、読みやすい文章に清書する後処理（正規化・normalization）が既定の挙動として働くためで、フィラー（「えー」「あの」等の言いよどみ）はこの正規化の過程で削除される\nフィラーの出現回数を数える用途では、開いた指示（「言い淀みを減らして」）ではなく、...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
       "title": "ローカルLLM環境の構築をClaude Codeに丸ごとやらせたら、思ったより自分で考えて作っていた話",
       "url": "https://zenn.dev/ningyoshi/articles/02-claude-code-built-local-llm",
       "site": "Zenn(AI)",
       "published": "2026-07-17T20:54:47Z",
       "description": "前回、Mac mini (M4)の上に完全ローカルで動く文字起こし・要約パイプラインを作った話を書きました。中身の技術的なハマりどころ（Whisperの幻聴とかnum_ctxとか）はそっちにまとめてあります。\n\nローカルLLMで文字起こし・要約をやってハマった話（mlx-whisper × Ollama）\n\n前回の末尾で「今回は技術面の話が主体で、Claude Codeがどこまで自走したかはまた別...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "Claudeに動画を「見せる」OSSを作った話 — タイムラプス誤認は物理で解決した",
+      "url": "https://zenn.dev/leoaido/articles/12bdac9625b074",
+      "site": "Zenn(AI)",
+      "published": "2026-07-17T19:47:34Z",
+      "description": "はじめに\n台湾で一人会社をやっている Leo と申します。エンジニアではなく、コードはほぼ AI エージェント（Claude）に書いてもらっています。この記事は、そんな非エンジニアが「Claude に動画を見せたい」という一点だけで OSS を作ることになった話です。\nリポジトリはこちらです。\nhttps://github.com/HUANGCHIHHUNGLeo/claude-real-vide...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "クレジットカード不要で使える無料LLM APIプロバイダまとめ（2026年版）",
+      "url": "https://zenn.dev/orca_forge/articles/free-llm-api-providers-2026",
+      "site": "Zenn(AI)",
+      "published": "2026-07-17T18:17:21Z",
+      "description": "📝 この記事は forge.workstyle.tech に掲載した記事の転載です。\n\n\n はじめに\nLLM（大規模言語モデル）の活用が進む中、開発やプロトタイプ作成において「APIコストを抑えたい」「手軽に複数のモデルを試したい」というニーズは非常に多いものです。しかし、多くの商用APIサービスではクレジットカードの登録が必須となるケースが一般的です。\n本記事では、クレジットカード登録なしで利用...",
       "category": "AI・技術",
       "rss_category": "",
       "image_url": ""
@@ -259,6 +299,16 @@
       "site": "Zenn(AI)",
       "published": "2026-07-17T15:43:31Z",
       "description": "公開済みのブログ記事を、Instagramのカルーセル投稿（1080×1350px×10枚＋キャプション）に変換するワークフローを運用しています。私は非エンジニアの一人社長で、デザイナーはいません。構成案づくり・画像生成・公開前レビュー・公開後の計測まで、人間がやるのは「表紙コピーを選ぶ」と「投稿ボタンを押す」だけです。\nSNS運用の自動化というとスケジューラの話になりがちですが、実際に効いたのは...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "LLMを使うなら、Gitを使おう — コードは書かなくても",
+      "url": "https://zenn.dev/pinddy/articles/972599e4ba8571",
+      "site": "Zenn(AI)",
+      "published": "2026-07-17T15:28:58Z",
+      "description": "よくあるエンジニアのフォルダの中身。\n[下書き]設計書.docx\n[設計書_v2.docx\n設計書_v2.pdf\n設計書_v2_final.docx\n設計書_v2_final_修正済み.docx\n設計書_最新.docx\n設計書_図.pptx\n～\nold/\nLLMを使うと、このカオスな状態が更にカオスになります。\nではどうすれば良いか。Gitを使いましょう。\n\n なぜカオスofカオスになるか: LL...",
       "category": "AI・技術",
       "rss_category": "",
       "image_url": ""
