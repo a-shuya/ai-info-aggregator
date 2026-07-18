@@ -1,8 +1,28 @@
 {
   "site": "Zenn(Python)",
-  "last_updated": "2026-07-18T15:14:29.787826",
-  "total_articles": 5157,
+  "last_updated": "2026-07-18T16:14:33.863307",
+  "total_articles": 5158,
   "articles": [
+    {
+      "title": "MuJoCoをインストール（Python）",
+      "url": "https://zenn.dev/konfi/articles/20260718_install_mujoco",
+      "site": "Zenn(Python)",
+      "published": "2026-07-18T13:36:05Z",
+      "description": "動作確認済みの環境\n\n\n\n日付\n環境\n\n\n\n\n2026/07/18\n\nWindows 11, Python 3.11.3, mujoco 3.1.5, Intel(R) UHD Graphics 620\n\n\n\n\n 概要\nPython用にMuJoCo（2026/07現在の最新は3.10.0）をpipでインストールします。\n\n\n 本題\n\n インストール\npipでインストールするだけです。ビルド不要、バ...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "pydantic-settings で LLM 実行プロファイルを一元管理する",
+      "url": "https://zenn.dev/moridev/articles/084e9ecdd85160",
+      "site": "Zenn(Python)",
+      "published": "2026-07-18T12:45:32Z",
+      "description": "LLM のモデルや同時実行数を、環境変数でまとめて切り替えたいことがあります。\nLLM_PROFILE=balanced\nbalanced という名前に、次の設定を対応させます。\n\n使用するモデル\n同時実行数\n出力トークン上限\nタイムアウト\n\nこの記事では、pydantic-settings を使って、この対応関係を一元管理する方法を説明します。\n\n 選択肢が少ないなら Literal\n設定値を ...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
     {
       "title": "MacでPythonスクリプトをlaunchdで常駐化し業務を自動化する",
       "url": "https://zenn.dev/ikuokuotiak/articles/python-launchd-mac-automation-file-watcher",
@@ -54,16 +74,6 @@
       "image_url": ""
     },
     {
-      "title": "毎朝6時、AIが勝手にニュース番組を作ってYouTubeに上げてくれる仕組みを作った",
-      "url": "https://zenn.dev/acropapa330/articles/yabou02_ai_news_automation",
-      "site": "Zenn(Python)",
-      "published": "2026-07-18T05:26:47Z",
-      "description": "はじめに\n「Unity上の仮想ニューススタジオでアバターが解説する動画を作って、YouTubeにアップするまでを全自動化したい」\nそんな野望を掲げてプロジェクトフォルダを作ったのが数ヶ月前。「いいところで挫折しそうではありますが笑」とREADMEに書いていたのですが、挫折するどころか、いま毎朝6時15分になると私が寝ている間にAIがニュース番組を1本作り上げ、YouTubeに(非公開で)アップロー...",
-      "category": "開発",
-      "rss_category": "",
-      "image_url": ""
-    },
-    {
       "title": "並列クロールが「即座に失敗」で崩壊する仕組みと、それを見逃す適応制御",
       "url": "https://zenn.dev/akagifreeez/articles/fast-failures-look-healthy",
       "site": "Zenn(Python)",
@@ -79,6 +89,16 @@
       "site": "Zenn(Python)",
       "published": "2026-07-18T04:00:05Z",
       "description": "複数のLambda関数で同じ処理を使いたい場合、各Lambdaに同じコードをコピーするのではなく、Lambdaレイヤーとして切り出すことで、コードの保守性が上がりました。その手順について共有したいと思います。\n今回は、Pythonの共通処理を shared_function.py にまとめて、AWS CDKでLambdaレイヤーとして各Lambdaに追加しました。\n\n レイヤー用のファイルを作る\n...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "投稿時刻より前に記事在庫を監視するバックプレッシャー設計 - 実装手順",
+      "url": "https://zenn.dev/kmn/articles/8dba725c06172b",
+      "site": "Zenn(Python)",
+      "published": "2026-07-18T02:32:48Z",
+      "description": "投稿時刻より前に記事在庫を監視するバックプレッシャー設計 - 実装手順\n自動処理は、スケジュール登録だけでは安定しません。スケジューラが正常でも、入力キューが空なら記事は公開されません。\nこの記事では「実装手順」の観点から、入力、処理、成果物、公開結果を分離する方法を整理します。仕組み全体の理由まで扱います。\n\n 基本方針\n未公開在庫の最低数を生産不変条件にし、投稿時刻より前に補充します。\nプロセ...",
       "category": "開発",
       "rss_category": "",
       "image_url": ""
@@ -149,16 +169,6 @@
       "site": "Zenn(Python)",
       "published": "2026-07-17T15:27:51Z",
       "description": "https://qiita.com/maskot1977/items/b2cab24e9109ad211cb3\n\n 第23回「クラウディングイン、ヒステリシス…日本経済の誤解を検証する」\n\n\n オープニング\nDJミオ：\nこんばんは、DJミオです。\nこの番組は、マクロ経済学の基本を、Pythonで実際に手を動かしながら学んでいこうというコンセプトでお届けしています。\nDJレン：\nDJレンです。\nそし...",
-      "category": "開発",
-      "rss_category": "",
-      "image_url": ""
-    },
-    {
-      "title": "RAGの精度評価で最初に見つかったのは、モデルの差ではなく「ものさし」のバグだった",
-      "url": "https://zenn.dev/nd3/articles/rag-eval-embedding-comparison",
-      "site": "Zenn(Python)",
-      "published": "2026-07-17T15:00:03Z",
-      "description": "3行まとめ\n\n自作RAGの埋め込みモデルを、ライブラリのデフォルト(text-embedding-ada-002)から text-embedding-3-small にすると、同一条件の実測で**正解率 76% → 96%、検索ヒット率 80% → 90%**となり、悪化した問題はゼロでした\n上記の比較にたどり着くまでにテコ入れしたのは、モデルではなく評価スクリプト側のバグ3件と実験設計の欠陥1件...",
       "category": "開発",
       "rss_category": "",
       "image_url": ""
