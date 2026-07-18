@@ -1,8 +1,48 @@
 {
   "site": "Zenn(LLM)",
-  "last_updated": "2026-07-18T09:09:10.126326",
-  "total_articles": 4699,
+  "last_updated": "2026-07-18T10:40:36.710151",
+  "total_articles": 4707,
   "articles": [
+    {
+      "title": "Generative Recommendation探求①〜「アイテムIDの振り方」は効くのか？OpenP5で密×疎データを検証してみた〜",
+      "url": "https://zenn.dev/kazukioden/articles/9d5e4a4c6a8b83",
+      "site": "Zenn(LLM)",
+      "published": "2026-07-18T08:52:31Z",
+      "description": "!\nこの記事は本文をLLM（生成AI）が作成し、著者が内容を確認・修正しています。\n\n\n はじめに\nLLMにそのまま「次のおすすめ」を生成させる——いわゆる Generative Recommendation（生成的推薦） を触ってみたくて、OSSの OpenP5 を動かしてみました。\nそもそものきっかけは、Wantedlyさんの検証記事です。OpenP5でMovieLens 100Kの系列推薦を...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "AIを会議させても賢くならない？30倍コストのマルチエージェントを検証",
+      "url": "https://zenn.dev/sonder01/articles/multi-agent-debate-cost-effectiveness",
+      "site": "Zenn(LLM)",
+      "published": "2026-07-18T08:37:14Z",
+      "description": "AIエージェントを1体から10体に増やし、約30倍のトークンを使った。それでも、論文の著者が「最も役立つ」と選んだのは、1回だけ生成したレビューだった。\n2026年7月公開の論文Does Multi-Agent Debate Improve AI Feedback on Research Papers?は、そんな反直感的な結果を報告している。\nここでいうマルチエージェントとは、複数のLLMに役割を...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "AIの「できました」を信じない ― Claude Codeに完了の証拠を出させる品質ゲート設計",
+      "url": "https://zenn.dev/aizuchi_works/articles/9dbd721720a8e9",
+      "site": "Zenn(LLM)",
+      "published": "2026-07-18T05:59:12Z",
+      "description": "「修正しました！」の何割かは、修正されていない\nClaude Code を毎日使っていると、必ずこの場面に出会います。\n\n「テストも通り、修正が完了しました！」\n\n……と元気に報告されたのに、実際にビルドすると通らない。テストはそもそも実行されていない。LLM は「完了したと言うこと」と「完了していること」を、必ずしも区別してくれません。もっともらしい完了報告は、完了の証拠にならないのです。\n私は...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "Day29・社長へ届く「念のため確認」を減らし、社長の時間を返すアプリ",
+      "url": "https://zenn.dev/hiroshift/articles/bb1d2bf643340f",
+      "site": "Zenn(LLM)",
+      "published": "2026-07-18T05:05:05Z",
+      "description": "この記事は、架空の事務代行会社「北白事務サービス」を舞台にした公然のシナリオです。登場する会社・人物・業務・データはすべて架空です。画面のUIは実際に動きますが、本日のアプリは、AIに判断させません（「AIにも聞いてみる」で開く参考意見は、将来接続する場合の表示例です・確定は人）。\"ありそうな困りごと\"に小さなアプリを一つ作る連載の、29日目です。\n\n\n\n はじめに\n「『あの人しかできない』を、ほ...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
     {
       "title": "GFlowRL：分布マッチングRLを初めて大規模LLMで安定化",
       "url": "https://zenn.dev/lixian/articles/gflowrl-distribution-matching-rl",
@@ -24,11 +64,61 @@
       "image_url": ""
     },
     {
+      "title": "ローカルLLM study1-a: gemma4:e2b/e4bのMLX版はどれだけ速いか",
+      "url": "https://zenn.dev/tkpurine/articles/local-llm-study-001a-gemma4-mlx",
+      "site": "Zenn(LLM)",
+      "published": "2026-07-17T21:30:26Z",
+      "description": "この記事について\nstudy1 では gemma4:e2b・gemma4:e4b を含む11モデルを比較しました。今回、Googleから同モデルの MLX版（gemma4:e2b-mlx・gemma4:e4b-mlx）が公開されていることが分かったため、study1と同じ4タスクで実測し、通常版とどれだけ差が出るかを検証しました。番外編として「study1-a」の位置づけです。\n\n確認の経緯： 2...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "音声練習の言い淀み計測、書き起こしがフィラーを消す理由と防ぐ運用",
+      "url": "https://zenn.dev/every_ai_recipe/articles/voice-practice-filler-word-tracking",
+      "site": "Zenn(LLM)",
+      "published": "2026-07-17T21:09:35Z",
+      "description": "TL;DR\n\n文字起こしAIは、指示を省略すると「聞き取りやすい整った文章」を生成しようとする。これは音声認識（ASR）由来のトランスクリプトを、読みやすい文章に清書する後処理（正規化・normalization）が既定の挙動として働くためで、フィラー（「えー」「あの」等の言いよどみ）はこの正規化の過程で削除される\nフィラーの出現回数を数える用途では、開いた指示（「言い淀みを減らして」）ではなく、...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "Claudeに動画を「見せる」OSSを作った話 — タイムラプス誤認は物理で解決した",
+      "url": "https://zenn.dev/leoaido/articles/12bdac9625b074",
+      "site": "Zenn(LLM)",
+      "published": "2026-07-17T19:47:34Z",
+      "description": "はじめに\n台湾で一人会社をやっている Leo と申します。エンジニアではなく、コードはほぼ AI エージェント（Claude）に書いてもらっています。この記事は、そんな非エンジニアが「Claude に動画を見せたい」という一点だけで OSS を作ることになった話です。\nリポジトリはこちらです。\nhttps://github.com/HUANGCHIHHUNGLeo/claude-real-vide...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
       "title": "MacでローカルLLMを自律エージェント化する:Ollama + Hermes Agent",
       "url": "https://zenn.dev/ftkrj12/articles/26a414fc5fdbd9",
       "site": "Zenn(LLM)",
       "published": "2026-07-17T18:40:40Z",
       "description": "この記事について\nMacBook(Apple Silicon)上で、ローカルLLMを エージェント として動かす構成を、ゼロから組んだときの実装記録です。クラウドに一切依存せず、自分の Mac の中だけで完結する「作業を代行してくれる AI の相棒」を作ることを目指します。\n!\n本記事は 2026 年 7 月時点 の検証記録です。Ollama・Hermes ともに更新が速く、特に Hermes の...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "クレジットカード不要で使える無料LLM APIプロバイダまとめ（2026年版）",
+      "url": "https://zenn.dev/orca_forge/articles/free-llm-api-providers-2026",
+      "site": "Zenn(LLM)",
+      "published": "2026-07-17T18:17:21Z",
+      "description": "📝 この記事は forge.workstyle.tech に掲載した記事の転載です。\n\n\n はじめに\nLLM（大規模言語モデル）の活用が進む中、開発やプロトタイプ作成において「APIコストを抑えたい」「手軽に複数のモデルを試したい」というニーズは非常に多いものです。しかし、多くの商用APIサービスではクレジットカードの登録が必須となるケースが一般的です。\n本記事では、クレジットカード登録なしで利用...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "LLMを使うなら、Gitを使おう — コードは書かなくても",
+      "url": "https://zenn.dev/pinddy/articles/972599e4ba8571",
+      "site": "Zenn(LLM)",
+      "published": "2026-07-17T15:28:58Z",
+      "description": "よくあるエンジニアのフォルダの中身。\n[下書き]設計書.docx\n[設計書_v2.docx\n設計書_v2.pdf\n設計書_v2_final.docx\n設計書_v2_final_修正済み.docx\n設計書_最新.docx\n設計書_図.pptx\n～\nold/\nLLMを使うと、このカオスな状態が更にカオスになります。\nではどうすれば良いか。Gitを使いましょう。\n\n なぜカオスofカオスになるか: LL...",
       "category": "AI・技術",
       "rss_category": "",
       "image_url": ""
@@ -59,16 +149,6 @@
       "site": "Zenn(LLM)",
       "published": "2026-07-17T12:05:22Z",
       "description": "背景\nFramework Laptop 13(Ryzen AI 9 HX 370 / Radeon 890M / 32GB)で、ローカルLLM(Gemma4 26B QAT)をllama.cppのVulkanバックエンドで常駐させて使っている。\nある日ふと free -h を叩いたら、total が 15Gi しか出てこないことに気づいた。物理搭載は32GBのはずである。\n\n 原因調査\nまず疑った...",
-      "category": "AI・技術",
-      "rss_category": "",
-      "image_url": ""
-    },
-    {
-      "title": "LLMはなぜ「言葉を当てるだけ」で賢く見えるのか",
-      "url": "https://zenn.dev/yukikato/articles/why-llm-predicts-language",
-      "site": "Zenn(LLM)",
-      "published": "2026-07-17T11:51:45Z",
-      "description": "人にLLMの起源を聞かれたとき、うまく一本の線で説明できなかった。\n「Claude Shannonから、Transformer、穴埋め、大規模学習、推論モデルまで、どうつながっているのか」\nこの問いは、単なるAI史の暗記問題ではない。ここを押さえると、なぜChatGPTのようなモデルが会話できるのか、なぜ間違えるのか、なぜ指示の書き方（プロンプト）や文脈で振る舞いが変わるのかが見えてくる。\nこの記...",
       "category": "AI・技術",
       "rss_category": "",
       "image_url": ""
