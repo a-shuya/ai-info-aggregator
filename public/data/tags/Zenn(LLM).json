@@ -1,6 +1,6 @@
 {
   "site": "Zenn(LLM)",
-  "last_updated": "2026-07-18T18:28:58.588352",
+  "last_updated": "2026-07-18T19:45:19.493948",
   "total_articles": 4709,
   "articles": [
     {
@@ -19,26 +19,6 @@
       "site": "Zenn(LLM)",
       "published": "2026-07-18T09:48:30Z",
       "description": "はじめに\nAIエージェント（LLM）を自律稼働させて開発を進める際、避けて通れない「三大限界」が存在する。\n\n\nContext Collapse（コンテキスト崩壊）：不要な巨大ファイルやログをAIに読み込ませた結果、プロンプトの制限枠をオーバーし、認知が混濁して破滅する。\n\nハルシネーション（でっち上げ）：曖昧な事実の記憶をもとに、存在しない関数やコマンドをAIが勝手に生み出す。\n\n焦りによる自己...",
-      "category": "AI・技術",
-      "rss_category": "",
-      "image_url": ""
-    },
-    {
-      "title": "Generative Recommendation探求①〜「アイテムIDの振り方」は効くのか？OpenP5で密×疎データを検証してみた〜",
-      "url": "https://zenn.dev/kazukioden/articles/9d5e4a4c6a8b83",
-      "site": "Zenn(LLM)",
-      "published": "2026-07-18T08:52:31Z",
-      "description": "!\nこの記事は本文をLLM（生成AI）が作成し、著者が内容を確認・修正しています。\n\n\n はじめに\nLLMにそのまま「次のおすすめ」を生成させる——いわゆる Generative Recommendation（生成的推薦） を触ってみたくて、OSSの OpenP5 を動かしてみました。\nそもそものきっかけは、Wantedlyさんの検証記事です。OpenP5でMovieLens 100Kの系列推薦を...",
-      "category": "AI・技術",
-      "rss_category": "",
-      "image_url": ""
-    },
-    {
-      "title": "AIを会議させても賢くならない？30倍コストのマルチエージェントを検証",
-      "url": "https://zenn.dev/sonder01/articles/multi-agent-debate-cost-effectiveness",
-      "site": "Zenn(LLM)",
-      "published": "2026-07-18T08:37:14Z",
-      "description": "AIエージェントを1体から10体に増やし、約30倍のトークンを使った。それでも、論文の著者が「最も役立つ」と選んだのは、1回だけ生成したレビューだった。\n2026年7月公開の論文Does Multi-Agent Debate Improve AI Feedback on Research Papers?は、そんな反直感的な結果を報告している。\nここでいうマルチエージェントとは、複数のLLMに役割を...",
       "category": "AI・技術",
       "rss_category": "",
       "image_url": ""
@@ -174,11 +154,31 @@
       "image_url": ""
     },
     {
+      "title": "RAGの精度評価で最初に見つかったのは、モデルの差ではなく「ものさし」のバグだった",
+      "url": "https://zenn.dev/nd3/articles/rag-eval-embedding-comparison",
+      "site": "Zenn(LLM)",
+      "published": "2026-07-17T15:00:03Z",
+      "description": "3行まとめ\n\n自作RAGの埋め込みモデルを、ライブラリのデフォルト(text-embedding-ada-002)から text-embedding-3-small にすると、同一条件の実測で**正解率 76% → 96%、検索ヒット率 80% → 90%**となり、悪化した問題はゼロでした\n上記の比較にたどり着くまでにテコ入れしたのは、モデルではなく評価スクリプト側のバグ3件と実験設計の欠陥1件...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
       "title": "Ryzen AI 9 HX 370でローカルLLMのメモリを取り戻す ― UMA Frame Buffer最小設定でシステムが落ちた話",
       "url": "https://zenn.dev/truesunrise/articles/uma-framebuffer-vram-tuning",
       "site": "Zenn(LLM)",
       "published": "2026-07-17T12:05:22Z",
       "description": "背景\nFramework Laptop 13(Ryzen AI 9 HX 370 / Radeon 890M / 32GB)で、ローカルLLM(Gemma4 26B QAT)をllama.cppのVulkanバックエンドで常駐させて使っている。\nある日ふと free -h を叩いたら、total が 15Gi しか出てこないことに気づいた。物理搭載は32GBのはずである。\n\n 原因調査\nまず疑った...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "LLMはなぜ「言葉を当てるだけ」で賢く見えるのか",
+      "url": "https://zenn.dev/yukikato/articles/why-llm-predicts-language",
+      "site": "Zenn(LLM)",
+      "published": "2026-07-17T11:51:45Z",
+      "description": "人にLLMの起源を聞かれたとき、うまく一本の線で説明できなかった。\n「Claude Shannonから、Transformer、穴埋め、大規模学習、推論モデルまで、どうつながっているのか」\nこの問いは、単なるAI史の暗記問題ではない。ここを押さえると、なぜChatGPTのようなモデルが会話できるのか、なぜ間違えるのか、なぜ指示の書き方（プロンプト）や文脈で振る舞いが変わるのかが見えてくる。\nこの記...",
       "category": "AI・技術",
       "rss_category": "",
       "image_url": ""
