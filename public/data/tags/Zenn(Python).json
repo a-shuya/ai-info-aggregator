@@ -1,6 +1,6 @@
 {
   "site": "Zenn(Python)",
-  "last_updated": "2026-07-18T07:23:15.758762",
+  "last_updated": "2026-07-18T09:09:10.126326",
   "total_articles": 5150,
   "articles": [
     {
@@ -68,17 +68,7 @@
       "url": "https://zenn.dev/qwerewq/articles/f1ffdbb3d5384b",
       "site": "Zenn(Python)",
       "published": "2026-07-17T22:08:16Z",
-      "description": "2極IIRフィルタで正弦波を作る仕組み\nsin()関数を使わずに、正弦波を生成する「魔法のような」方法があります。\nデジタル信号処理（DSP）やマイコン、組み込み機器で正弦波を生成するとき、毎サンプル sin() を呼ぶのは意外と重いです。特に浮動小数点演算が苦手な環境や、高速に大量のサイン波を生成したい場面ではなおさらです。\nそこでよく使われるのが、2極IIRフィルタ（再帰型オシレータ） を使っ...",
-      "category": "開発",
-      "rss_category": "",
-      "image_url": ""
-    },
-    {
-      "title": "ローカルLLM study1-a: gemma4:e2b/e4bのMLX版はどれだけ速いか",
-      "url": "https://zenn.dev/tkpurine/articles/local-llm-study-001a-gemma4-mlx",
-      "site": "Zenn(Python)",
-      "published": "2026-07-17T21:30:26Z",
-      "description": "この記事について\nstudy1 では gemma4:e2b・gemma4:e4b を含む11モデルを比較しました。今回、Googleから同モデルの MLX版（gemma4:e2b-mlx・gemma4:e4b-mlx）が公開されていることが分かったため、study1と同じ4タスクで実測し、通常版とどれだけ差が出るかを検証しました。番外編として「study1-a」の位置づけです。\n\n確認の経緯： 2...",
+      "description": "はじめに\nデジタル機器で正弦波を作る最も単純な方法は、サンプルごとにsin関数を計算する方法です。\ny[n] = A sin(nφ + θ)\nここで、\n\nA：振幅\nn：サンプル番号\nφ：1サンプルごとに進む角度\nθ：初期位相\n\nです。\nしかし、マイコンやDSPでは、毎回sin関数を計算する代わりに、過去の出力から次の値を求めることができます。\nその式が次の2階差分方程式です。\ny[n] = 2co...",
       "category": "開発",
       "rss_category": "",
       "image_url": ""
@@ -109,6 +99,16 @@
       "site": "Zenn(Python)",
       "published": "2026-07-17T11:17:04Z",
       "description": "18-①Kaggle実践3 Biohub細胞トラッキング：環境構築から初回提出までの手順\n18-②Kaggle実践3 Biohub細胞トラッキング：初回提出コードを解説してみた(この記事)\n\nBiohub - Cell Tracking During Development\n\n Abstruct\n\nこの記事で扱った、初回提出コードの解説\n\n\n 概要\n提出するだけでもムズくって、ひぃひぃ泣いてた。\n...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "LLMとの長期対話をgitのように運用する——セッション地層管理ツール「墨継ぎ」を作った",
+      "url": "https://zenn.dev/pagestone/articles/6e17d8f40a2fbc",
+      "site": "Zenn(Python)",
+      "published": "2026-07-17T09:11:25Z",
+      "description": "LLMと長い議論をしていると、必ず二つの壁に当たります。セッションの上限と、上限に達する前に始まる劣化です。\n前者への対症療法（引き継ぎプロンプト等）はすでに大量に出回っていますが、運用として整理されたものは意外と見当たりません。そこで、セッションを「延命」するのではなく「切れてよい構造」にするという方針で、小さなStreamlitツールを作りました。この記事は実装と設計判断の記録です。\n先に断っ...",
       "category": "開発",
       "rss_category": "",
       "image_url": ""

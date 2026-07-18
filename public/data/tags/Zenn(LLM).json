@@ -1,14 +1,24 @@
 {
   "site": "Zenn(LLM)",
-  "last_updated": "2026-07-18T07:23:15.758762",
-  "total_articles": 4701,
+  "last_updated": "2026-07-18T09:09:10.126326",
+  "total_articles": 4699,
   "articles": [
     {
-      "title": "Claudeに動画を「見せる」OSSを作った話 — タイムラプス誤認は物理で解決した",
-      "url": "https://zenn.dev/leoaido/articles/12bdac9625b074",
+      "title": "GFlowRL：分布マッチングRLを初めて大規模LLMで安定化",
+      "url": "https://zenn.dev/lixian/articles/gflowrl-distribution-matching-rl",
       "site": "Zenn(LLM)",
-      "published": "2026-07-17T19:47:34Z",
-      "description": "はじめに\n台湾で一人会社をやっている Leo と申します。エンジニアではなく、コードはほぼ AI エージェント（Claude）に書いてもらっています。この記事は、そんな非エンジニアが「Claude に動画を見せたい」という一点だけで OSS を作ることになった話です。\nリポジトリはこちらです。\nhttps://github.com/HUANGCHIHHUNGLeo/claude-real-vide...",
+      "published": "2026-07-18T03:46:29Z",
+      "description": "TL;DR\nGFlowNet（Generative Flow Network）に基づくRLは、報酬最大化RLのモード崩壊問題に対する理論上の解として注目されてきた。しかし、既存手法（FlowRLなど）は学習した分割関数 Z_\\phi が勾配不安定性の根本原因となり、大規模モデルやMoEでは発散に終わっていた。\nMicrosoft ResearchのGFlowRLは、この分割関数ネットワークを完全に...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "オープンLLMをLambdaで動かしてみる",
+      "url": "https://zenn.dev/edash_tech_blog/articles/528ab6bd044c35",
+      "site": "Zenn(LLM)",
+      "published": "2026-07-18T03:00:52Z",
+      "description": "はじめに\nZenn 読者のみなさん、こんにちは。e-dash VPoE の伊藤です。\n最近、AI コーディングエージェントや LLM ベースの自動化を業務に組み込む機会がぐっと増えました。非常に便利なのですが、コストも肥大化しがちです。\n\n有償 LLM の API は、ローカルで利用できるサブスクモデルとは異なり、使えば使うほどお金がかかる。\n弊社でも活用している Devin の Ask Devi...",
       "category": "AI・技術",
       "rss_category": "",
       "image_url": ""
@@ -19,26 +29,6 @@
       "site": "Zenn(LLM)",
       "published": "2026-07-17T18:40:40Z",
       "description": "この記事について\nMacBook(Apple Silicon)上で、ローカルLLMを エージェント として動かす構成を、ゼロから組んだときの実装記録です。クラウドに一切依存せず、自分の Mac の中だけで完結する「作業を代行してくれる AI の相棒」を作ることを目指します。\n!\n本記事は 2026 年 7 月時点 の検証記録です。Ollama・Hermes ともに更新が速く、特に Hermes の...",
-      "category": "AI・技術",
-      "rss_category": "",
-      "image_url": ""
-    },
-    {
-      "title": "クレジットカード不要で使える無料LLM APIプロバイダまとめ（2026年版）",
-      "url": "https://zenn.dev/orca_forge/articles/free-llm-api-providers-2026",
-      "site": "Zenn(LLM)",
-      "published": "2026-07-17T18:17:21Z",
-      "description": "📝 この記事は forge.workstyle.tech に掲載した記事の転載です。\n\n\n はじめに\nLLM（大規模言語モデル）の活用が進む中、開発やプロトタイプ作成において「APIコストを抑えたい」「手軽に複数のモデルを試したい」というニーズは非常に多いものです。しかし、多くの商用APIサービスではクレジットカードの登録が必須となるケースが一般的です。\n本記事では、クレジットカード登録なしで利用...",
-      "category": "AI・技術",
-      "rss_category": "",
-      "image_url": ""
-    },
-    {
-      "title": "LLMを使うなら、Gitを使おう — コードは書かなくても",
-      "url": "https://zenn.dev/pinddy/articles/972599e4ba8571",
-      "site": "Zenn(LLM)",
-      "published": "2026-07-17T15:28:58Z",
-      "description": "よくあるエンジニアのフォルダの中身。\n[下書き]設計書.docx\n[設計書_v2.docx\n設計書_v2.pdf\n設計書_v2_final.docx\n設計書_v2_final_修正済み.docx\n設計書_最新.docx\n設計書_図.pptx\n～\nold/\nLLMを使うと、このカオスな状態が更にカオスになります。\nではどうすれば良いか。Gitを使いましょう。\n\n なぜカオスofカオスになるか: LL...",
       "category": "AI・技術",
       "rss_category": "",
       "image_url": ""
@@ -58,7 +48,7 @@
       "url": "https://zenn.dev/nd3/articles/rag-eval-embedding-comparison",
       "site": "Zenn(LLM)",
       "published": "2026-07-17T15:00:03Z",
-      "description": "&lt;!-- 公開前チェック\n\n\n 数値・問題ID・種別内訳を evals/results/ の最終JSONと docs/evaluation.md に突き合わせる\n\n 埋め込み料金(約1/5)をOpenAIの現行価格ページで確認\n\n リンク3箇所(リポジトリ / evaluation.md / KURENAI)の動作確認\n\n published: true に変更して push\n--&gt;\n...",
+      "description": "3行まとめ\n\n自作RAGの埋め込みモデルを、ライブラリのデフォルト(text-embedding-ada-002)から text-embedding-3-small にすると、同一条件の実測で**正解率 76% → 96%、検索ヒット率 80% → 90%**となり、悪化した問題はゼロでした\n上記の比較にたどり着くまでにテコ入れしたのは、モデルではなく評価スクリプト側のバグ3件と実験設計の欠陥1件...",
       "category": "AI・技術",
       "rss_category": "",
       "image_url": ""
@@ -139,16 +129,6 @@
       "site": "Zenn(LLM)",
       "published": "2026-07-17T09:19:44Z",
       "description": "This article is based on a LinkedIn post by Shisa AI CTO＆Co-founder Leonard Lin and is republished with permission.\nThe past few weeks have been unusually eventful for the geopolitical and economic de...",
-      "category": "AI・技術",
-      "rss_category": "",
-      "image_url": ""
-    },
-    {
-      "title": "LLMとの長期対話をgitのように運用する——セッション地層管理ツール「墨継ぎ」を作った",
-      "url": "https://zenn.dev/pagestone/articles/6e17d8f40a2fbc",
-      "site": "Zenn(LLM)",
-      "published": "2026-07-17T09:11:25Z",
-      "description": "LLMと長い議論をしていると、必ず二つの壁に当たります。セッションの上限と、上限に達する前に始まる劣化です。\n前者への対症療法（引き継ぎプロンプト等）はすでに大量に出回っていますが、運用として整理されたものは意外と見当たりません。そこで、セッションを「延命」するのではなく「切れてよい構造」にするという方針で、小さなStreamlitツールを作りました。この記事は実装と設計判断の記録です。\n先に断っ...",
       "category": "AI・技術",
       "rss_category": "",
       "image_url": ""
