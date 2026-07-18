@@ -1,8 +1,178 @@
 {
   "site": "Zenn(AI)",
-  "last_updated": "2026-07-18T00:08:48.203524",
-  "total_articles": 11223,
+  "last_updated": "2026-07-18T03:30:41.862464",
+  "total_articles": 11235,
   "articles": [
+    {
+      "title": "投稿時刻より前に記事在庫を監視するバックプレッシャー設計 - 実装手順",
+      "url": "https://zenn.dev/kmn/articles/8dba725c06172b",
+      "site": "Zenn(AI)",
+      "published": "2026-07-18T02:32:48Z",
+      "description": "投稿時刻より前に記事在庫を監視するバックプレッシャー設計 - 実装手順\n自動処理は、スケジュール登録だけでは安定しません。スケジューラが正常でも、入力キューが空なら記事は公開されません。\nこの記事では「実装手順」の観点から、入力、処理、成果物、公開結果を分離する方法を整理します。仕組み全体の理由まで扱います。\n\n 基本方針\n未公開在庫の最低数を生産不変条件にし、投稿時刻より前に補充します。\nプロセ...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "介護士がAWSでAI事故報告支援ツールを作った話",
+      "url": "https://zenn.dev/yuki_engineer08/articles/2026-06-27-caregiver-built-ai-accident-report-tool",
+      "site": "Zenn(AI)",
+      "published": "2026-07-18T02:23:34Z",
+      "description": "事故報告書を書くのが、正直しんどかった。\n利用者さんが転倒した。ヒヤリハットがあった。そのたびに、同じような文章を一から書く。\n「発生日時」「発生場所」「経緯」「対応内容」「今後の対策」。\n書く内容は毎回似ている。でも毎回ゼロから書く。忙しい業務の合間に、疲れた頭で言葉を絞り出す。\nしかも書き方は人によってバラバラだ。\nベテランスタッフが書いた報告書と、新人スタッフが書いた報告書では、情報の粒度も...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "Spring Boot で Claude API のエラー・レート制限に強くする",
+      "url": "https://zenn.dev/propagandist/articles/0019-spring-boot-claude-error-handling",
+      "site": "Zenn(AI)",
+      "published": "2026-07-18T02:21:39Z",
+      "description": "この記事について\n\n\n対象読者：1本目で Claude を呼べるようになり、実運用に向けて失敗時の挙動を整えたい人\n\n得られること：レート制限（429）・サーバエラー（5xx）・ネットワーク断を指数バックオフで再試行し、それ以外は即失敗させる最小実装\n\n前提・環境：Java 21 / Spring Boot 3.5 / com.anthropic:anthropic-java 2.34.0\n\n\nこ...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "AIに書かせた税金計算コードを一次情報で検証したら、2年前の税制のままだった",
+      "url": "https://zenn.dev/haruto_dev/articles/e066a57b268e90",
+      "site": "Zenn(AI)",
+      "published": "2026-07-18T02:05:47Z",
+      "description": "3行まとめ\n\nAIに副業の手取り計算ツールを書かせた。一晩で動くものが出てきた。正直すごい\n\nただお金の計算なので、鵜呑みにせず一次情報で検証してみた\n結果、税制改正に追従できていなかった（給与所得控除 55万→65万）。動くしテストも通る。ただ**AIの知識は\"ある時点のスナップショット\"**だった\n\n\n\n AIに書かせて、確認してみた\n会社員をやりながら副業をしています。副業の手取りを知りたく...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "エンドツーエンドアプローチ - センサーから行動へ直接学習",
+      "url": "https://zenn.dev/oggata/articles/d8549b6055c261",
+      "site": "Zenn(AI)",
+      "published": "2026-07-18T02:00:37Z",
+      "description": "「中抜き」の哲学\n自転車初心者は「右に傾いている→ハンドルを右に切らなきゃ→でも切りすぎると…」と段階的に考えるが、熟練者は何も考えず身体が勝手にバランスを取る。視覚入力から筋肉制御まで、中間の「言語化された思考」を経由せず直接つながっている——これが**エンドツーエンド（End-to-End, E2E）**学習の本質だ。\n\n\n\n エンドツーエンドとは何か\nエンドツーエンド学習は、入力（センサーデ...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "民泊 3 部屋の内装を AI で 9 通り試算した話：ターゲット別にテーマを分けてみた",
+      "url": "https://zenn.dev/shadownabe/articles/b40370fb2dd8e8",
+      "site": "Zenn(AI)",
+      "published": "2026-07-18T02:00:09Z",
+      "description": "本記事は HouseDesign のご提供でお送りしています。記事内の所感・評価は筆者の主観です。\n\n\n 導入\n京都市内の民泊運営を 2019 年から始めた。3 部屋（和室 6 畳 × 2、洋室 12 畳 × 1）を Airbnb と Booking.com に掲載しているが、稼働率は 50% 程度で頭打ち。理由は単純で、ターゲットが違う客層から「部屋が好みじゃない」と外されることが増えた。\n具体...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "Sparse Reward問題と自己教師あり学習 - 報酬設計の課題解決",
+      "url": "https://zenn.dev/oggata/articles/422e08015965c2",
+      "site": "Zenn(AI)",
+      "published": "2026-07-18T01:59:30Z",
+      "description": "「褒められない」学習の難しさ\n自転車の練習で、親が漕ぐたびに逐一フィードバックをくれれば学習は速い。しかし現実には、何百回も転びながら30分かけてようやく5メートル進めた、というようにフィードバックがまばらな状況の方が多い。これがSparse Reward（スパース報酬）問題だ。\n\n 強化学習と報酬の関係\n強化学習は、行動→環境変化→報酬→学習、というループで進む。Dense Reward（毎ステ...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "初めての自動投稿テスト",
+      "url": "https://zenn.dev/solo_joshis/articles/hajimete-no-jido-toko-test",
+      "site": "Zenn(AI)",
+      "published": "2026-07-18T01:49:38Z",
+      "description": "はじめに\n中小企業のコールセンターで働く一人情シス「ソロ情シス」です。\nこれは、Zenn × GitHub連携の動作確認用テスト記事です。\n\n 確認していること\n\nGitHubリポジトリと Zenn の連携が正しく機能していること\n\narticles/ 配下の Markdown が自動で Zenn に反映されること\n\n今後、この仕組みをベースに「一人情シス × AI × コールセンター」をテーマに...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "TSMCの「夏の減速パターン消滅」から学ぶ——SEが「前提の崩れ」を設計に組み込む方法",
+      "url": "https://zenn.dev/aoi777/articles/7e67b1342ae7f6",
+      "site": "Zenn(AI)",
+      "published": "2026-07-18T01:31:21Z",
+      "description": "昨日のTSMC決算で、一つ面白い事実が明らかになりました。\nTSMCは過去4年間、毎年6月に前月比で売上高を減少させていました。これは、コンシューマー向け電子機器の需要が夏場に軟化するという伝統的なパターンを反映したものでした。しかし、2026年6月の前月比6.2%増はこのパターンを破っており、AI駆動型の需要が、もはやコンシューマーのサイクルには従っていないことを示唆しています。\n「4年間続いた...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "自己進化は勝手に本体を書き換えない：AMA-terasのworktree隔離と岩戸ゲート",
+      "url": "https://zenn.dev/moriwo_dev_ai/articles/ama-teras-worktree-202607180014",
+      "site": "Zenn(AI)",
+      "published": "2026-07-18T00:30:34Z",
+      "description": "導入: 自己進化という言葉の誤解\nAMA-terasでは「自己進化」という言葉を使っています。\nただし、これは「AIが勝手に本体を書き換える」という意味ではありません。\n足りない機能に出会ったとき、実装案を生成し、隔離した git worktree で検証し、typecheck・テスト・実起動スモークを通し、最後に人間が承認してから本体へ昇格する、という意味です。\n外部への発信や書き込みも同じです...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "「公開したつもり」を信じない：AMA-terasが一次情報で台帳を直すまで",
+      "url": "https://zenn.dev/moriwo_dev_ai/articles/ama-teras-202607180013",
+      "site": "Zenn(AI)",
+      "published": "2026-07-18T00:29:59Z",
+      "description": "導入: 出したつもりと、出ていることは別\nAMA-terasでは、Zenn記事やGitHub Releaseの公開操作も、人間の承認を通して実行します。\nただし、今回の問題は「承認を通したか」ではありませんでした。\n問題は、アプリが「公開したつもり」になっていたことです。\npublished: true にしてpushした。処理は成功した。だから公開済みとして扱う。\nしかし、実際にはZenn上で読...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "TimeTreeの空き時間抽出を自動化するClaude Codeスキル",
+      "url": "https://zenn.dev/westhouse_k/articles/f4deb17d18ec64",
+      "site": "Zenn(AI)",
+      "published": "2026-07-18T00:00:21Z",
+      "description": "はじめに\n友達や営業先と予定を合わせるとき、毎回「TimeTree を開いて空いてる時間を目で数えて、メッセージに書く」という作業が発生しています。\nこの作業を Claude Code のカスタムスキルに切り出して、/timetree-free-slots コマンド一発で完了するようにしたので紹介します。\n\n 想定読者\n\nClaude Code で独自の /コマンド を作ってみたい人\nPlaywr...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "AI生成コンテンツをGoogleのE-E-A-T基準に合わせる実装戦略【2026年版】",
+      "url": "https://zenn.dev/kotaozaki/articles/ai-content-seo-google-eeat-2026-07-18",
+      "site": "Zenn(AI)",
+      "published": "2026-07-17T23:47:43Z",
+      "description": "AI生成コンテンツをGoogleのE-E-A-T基準に合わせる実装戦略【2026年版】\nGoogleの検索品質評価ガイドラインで重視されるE-E-A-T基準。2024年の更新で「Experience（経験）」が追加され、現在はExperience・Expertise・Authoritativeness・Trustworthinessの4要素で評価されています。\n一方、AI生成コンテンツの活用を検討...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "28. ベンチマークの数字が横に並ばなくなった — 2026年7月の新モデルを技術仕様で読む",
+      "url": "https://zenn.dev/yamada_ai_dev/articles/ai-models-2026-07-benchmarks",
+      "site": "Zenn(AI)",
+      "published": "2026-07-17T23:30:10Z",
+      "description": "!\n本記事の情報は2026年7月16日時点のものだ。モデルの仕様・価格は今後変更される可能性がある。数値には出典を付け、一次情報（各社公式）と二次情報（報道・第三者分析）を区別して明記している。\n\n\n 「で、結局どれを使えばいいのか」に答えられない\n2026年7月8日から9日にかけて、OpenAI・SpaceXAI（旧xAI）・Metaがそれぞれ新モデルを出した。タイムラインにはベンチマーク表が流...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "コードが1行も書けないので、いっそタイピングもほぼ０で、AIに喋って趣味診断ゲームを作ってもらった記録",
+      "url": "https://zenn.dev/doushimasho/articles/35b812d2ce9479",
+      "site": "Zenn(AI)",
+      "published": "2026-07-17T23:19:05Z",
+      "description": "私はコードが一行も書けません。\n職業はキャリアコンサルタント(国家資格)で、VTuberとしても活動しています。\nエンジニア経験はゼロです。\nその私が先日、333種の趣味からあなたに合う一つを当てる診断ゲーム「シュミネーター」を公開しました。\nhttps://doushimasho.github.io/shuminator/\n制作期間は7月10日〜17日の約1週間。使ったのはClaude(Fabl...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "音声対話AIをコマンド1つで動かすHugging Face speech-to-speech",
+      "url": "https://zenn.dev/okssusucha/articles/20260705-huggingface-cerebras-speech-to-speech-pip",
+      "site": "Zenn(AI)",
+      "published": "2026-07-17T23:01:49Z",
+      "description": "音声で話しかけて返事が返るまでの数百ミリ秒。この「間(ま)」がほんの少し伸びるだけで、対話AIは途端に機械と喋っている感触になる。逆にここが詰まると、会話は不思議と生き物めいてくる。Hugging FaceとCerebrasが7月1日に公開した speech-to-speech は、その間を実用域まで縮めた音声エージェントを、全段が入れ替え可能なオープンソース部品で組めるようにしたものだ。派手な新...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "開発は AI Agent へどこまで委譲できるか",
+      "url": "https://zenn.dev/rjchiba/articles/1472ab33952050",
+      "site": "Zenn(AI)",
+      "published": "2026-07-17T22:41:53Z",
+      "description": "テストは通っていた。\nタスク管理表では、すべての項目が完了していた。\n実ブラウザで利用者の操作を最後まで通すE2E（End-to-End）確認も成功していた。\nところが、完成した画面を人が使うと、プロダクトの中心がずれていた。\n機能はそろっているのに、利用者には、最初に何を理解すればよいのか、どこから参加すればよいのか、その先で何を達成できるのかが伝わらない。\n個々のタスクは完了している。\nそれで...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
     {
       "title": "スマホで使えるAIアプリおすすめ7選+通信量とプラン設計【2026年】",
       "url": "https://zenn.dev/mameresearcher/articles/ai-mobile-app-recommend",
@@ -34,16 +204,6 @@
       "image_url": ""
     },
     {
-      "title": "人類の知識蓄積の単位は「文章」から「実行可能な作業単位」へ移行するのではないか？",
-      "url": "https://zenn.dev/h1deya/articles/future-of-human-knowledge-accumulation",
-      "site": "Zenn(AI)",
-      "published": "2026-07-17T21:15:12Z",
-      "description": "AIエージェントと skills がもたらす、実行可能な集合知の可能性\nAIエージェントと skills の活用について考えていたとき、ひとつの仮説に思い至りました。\nそれは、人類の知識蓄積の単位が、これまでの「文章」から、これからは 実行可能な作業単位 へと移行していくのではないか、という仮説です。\nもう少し丁寧に言えば、それは単なる実行可能な手順ではなく、失敗履歴を持ち、それを通じて改善され、...",
-      "category": "AI・技術",
-      "rss_category": "",
-      "image_url": ""
-    },
-    {
       "title": "音声練習の言い淀み計測、書き起こしがフィラーを消す理由と防ぐ運用",
       "url": "https://zenn.dev/every_ai_recipe/articles/voice-practice-filler-word-tracking",
       "site": "Zenn(AI)",
@@ -59,26 +219,6 @@
       "site": "Zenn(AI)",
       "published": "2026-07-17T20:54:47Z",
       "description": "前回、Mac mini (M4)の上に完全ローカルで動く文字起こし・要約パイプラインを作った話を書きました。中身の技術的なハマりどころ（Whisperの幻聴とかnum_ctxとか）はそっちにまとめてあります。\n\nローカルLLMで文字起こし・要約をやってハマった話（mlx-whisper × Ollama）\n\n前回の末尾で「今回は技術面の話が主体で、Claude Codeがどこまで自走したかはまた別...",
-      "category": "AI・技術",
-      "rss_category": "",
-      "image_url": ""
-    },
-    {
-      "title": "Claudeに動画を「見せる」OSSを作った話 — タイムラプス誤認は物理で解決した",
-      "url": "https://zenn.dev/leoaido/articles/12bdac9625b074",
-      "site": "Zenn(AI)",
-      "published": "2026-07-17T19:47:34Z",
-      "description": "はじめに\n台湾で一人会社をやっている Leo と申します。エンジニアではなく、コードはほぼ AI エージェント（Claude）に書いてもらっています。この記事は、そんな非エンジニアが「Claude に動画を見せたい」という一点だけで OSS を作ることになった話です。\nリポジトリはこちらです。\nhttps://github.com/HUANGCHIHHUNGLeo/claude-real-vide...",
-      "category": "AI・技術",
-      "rss_category": "",
-      "image_url": ""
-    },
-    {
-      "title": "クレジットカード不要で使える無料LLM APIプロバイダまとめ（2026年版）",
-      "url": "https://zenn.dev/orca_forge/articles/free-llm-api-providers-2026",
-      "site": "Zenn(AI)",
-      "published": "2026-07-17T18:17:21Z",
-      "description": "📝 この記事は forge.workstyle.tech に掲載した記事の転載です。\n\n\n はじめに\nLLM（大規模言語モデル）の活用が進む中、開発やプロトタイプ作成において「APIコストを抑えたい」「手軽に複数のモデルを試したい」というニーズは非常に多いものです。しかし、多くの商用APIサービスではクレジットカードの登録が必須となるケースが一般的です。\n本記事では、クレジットカード登録なしで利用...",
       "category": "AI・技術",
       "rss_category": "",
       "image_url": ""
@@ -109,16 +249,6 @@
       "site": "Zenn(AI)",
       "published": "2026-07-17T15:43:31Z",
       "description": "公開済みのブログ記事を、Instagramのカルーセル投稿（1080×1350px×10枚＋キャプション）に変換するワークフローを運用しています。私は非エンジニアの一人社長で、デザイナーはいません。構成案づくり・画像生成・公開前レビュー・公開後の計測まで、人間がやるのは「表紙コピーを選ぶ」と「投稿ボタンを押す」だけです。\nSNS運用の自動化というとスケジューラの話になりがちですが、実際に効いたのは...",
-      "category": "AI・技術",
-      "rss_category": "",
-      "image_url": ""
-    },
-    {
-      "title": "LLMを使うなら、Gitを使おう — コードは書かなくても",
-      "url": "https://zenn.dev/pinddy/articles/972599e4ba8571",
-      "site": "Zenn(AI)",
-      "published": "2026-07-17T15:28:58Z",
-      "description": "よくあるエンジニアのフォルダの中身。\n[下書き]設計書.docx\n[設計書_v2.docx\n設計書_v2.pdf\n設計書_v2_final.docx\n設計書_v2_final_修正済み.docx\n設計書_最新.docx\n設計書_図.pptx\n～\nold/\nLLMを使うと、このカオスな状態が更にカオスになります。\nではどうすれば良いか。Gitを使いましょう。\n\n なぜカオスofカオスになるか: LL...",
       "category": "AI・技術",
       "rss_category": "",
       "image_url": ""
@@ -189,16 +319,6 @@
       "site": "Zenn(AI)",
       "published": "2026-07-17T12:03:52Z",
       "description": "AIに、2009年前後のビットコインのC++コードを見せる。\nたぶん最初の返事はこうだ。\n\n「命名規則が古いです」\n\nはい、出ました。現代のコードレビュー。\nnValue を見て眉をひそめ、//// TODO を見て赤ペンを走らせ、独自マクロを見つけて「可読性に問題があります」と言う。コードレビューAI、過去の開発者に対しても容赦がない。\nでも、このレビューはどこまで正しいのか。\n\n AIはコード...",
-      "category": "AI・技術",
-      "rss_category": "",
-      "image_url": ""
-    },
-    {
-      "title": "LLMはなぜ「言葉を当てるだけ」で賢く見えるのか",
-      "url": "https://zenn.dev/yukikato/articles/why-llm-predicts-language",
-      "site": "Zenn(AI)",
-      "published": "2026-07-17T11:51:45Z",
-      "description": "人にLLMの起源を聞かれたとき、うまく一本の線で説明できなかった。\n「Claude Shannonから、Transformer、穴埋め、大規模学習、推論モデルまで、どうつながっているのか」\nこの問いは、単なるAI史の暗記問題ではない。ここを押さえると、なぜChatGPTのようなモデルが会話できるのか、なぜ間違えるのか、なぜ指示の書き方（プロンプト）や文脈で振る舞いが変わるのかが見えてくる。\nこの記...",
       "category": "AI・技術",
       "rss_category": "",
       "image_url": ""
