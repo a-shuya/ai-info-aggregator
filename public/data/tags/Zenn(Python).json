@@ -1,8 +1,108 @@
 {
   "site": "Zenn(Python)",
-  "last_updated": "2026-07-19T10:54:26.329992",
-  "total_articles": 5170,
+  "last_updated": "2026-07-19T12:02:23.883440",
+  "total_articles": 5179,
   "articles": [
+    {
+      "title": "260719 『実用的でないPythonプログラミング』 1-1",
+      "url": "https://zenn.dev/gregor/articles/4b524822d43c8f",
+      "site": "Zenn(Python)",
+      "published": "2026-07-19T08:18:30Z",
+      "description": "プロジェクトの概要\nhttps://amzn.asia/d/0f82lB6A\n「1 バカな名前ジェネレータ」\nその名の通り「バカな名前」を生成するモジュールを作成する\n具体的には、ファーストネームとファミリーネームの2つのリストを作成し、それらをランダムに組み合わせた名前を生成する\n\n 学んだこと\n\n Pylintを使った修正\n\nFinal newline missing (missing-fin...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "Blenderアニメーションを整理しやすくする2つのスクリプト ―― 不要チャンネルの間引き＆キーフレームの整数化",
+      "url": "https://zenn.dev/yorozuyouduki/articles/10e658e3846352",
+      "site": "Zenn(Python)",
+      "published": "2026-07-19T08:13:49Z",
+      "description": "Blenderでアクションを作っていると、「動いていないのに存在するチャンネル」や「フレーム位置が小数点になったキー」が大量に紛れ込むことがあります。これらは見た目には影響しないことが多い一方、Fカーブの一覧やドープシートがチャンネルだらけになり、本当に動いている部分がどれなのか把握しづらくなります。\nそこで、この2つの問題をそれぞれ解決する小さなBlender Pythonスクリプトを作成しまし...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "ローカルLLM study3: gemma4:e2b vs Ornith-1.0-9B vs qwen3:14bを徹底比較する",
+      "url": "https://zenn.dev/tkpurine/articles/local-llm-study-003-gemma-vs-ornith",
+      "site": "Zenn(Python)",
+      "published": "2026-07-19T07:56:50Z",
+      "description": "前回のおさらい\n前回は、Aider + Ollamaで7モデルを比較し、単純なバグ修正タスクでは gemma4:e2b（gemma4の軽量版、7.2GB）と Ornith-1.0-9B（コーディング特化・MITライセンス、6.9GB）が特に有望という結論になりました。もう1つ、qwen3:14b（9.3GB）も改竄・誤修正は一度も起きず信頼性は問題なしでしたが、実行速度が他モデルの3〜5倍遅いとい...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "スクレイパーが壊れたことに、自分より先に気づく仕組み",
+      "url": "https://zenn.dev/autodataworks/articles/bf723e20e33bcf",
+      "site": "Zenn(Python)",
+      "published": "2026-07-19T07:15:51Z",
+      "description": "半日ぶんのデータが、まるごと抜けていました。\nあるスクレイパーを数ヶ月動かしていたときのことです。ある朝 DB を覗くと、前日の行が1件も入っていない。あわててログを見返しても、エラーは出ていません。cron には exit 0 が並び、通知も鳴っていない。プロセスは生きていて、ただ何も取ってこなかっただけでした。気づいたのは、たまたま別件で DB を眺めていたからで、そうでなければ数日は放置して...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "公式MCPのfetchサーバーでGitHubを読もうとしたら、「robots.txtが禁止している」と出たが本当の理由は別だった",
+      "url": "https://zenn.dev/numarn/articles/mcp-fetch-server-robots-egress-handson",
+      "site": "Zenn(Python)",
+      "published": "2026-07-19T06:18:51Z",
+      "description": "MCP(Model Context Protocol、AIに外部機能を追加できる仕組み)には、AIにファイル操作・記憶・Git操作などを渡すための公式サンプルサーバーがいくつも配布されています。これまでファイルアクセス・記憶・Git操作を扱うサーバーを直接叩いてきましたが、どれも「ローカルの中で完結する」ものでした。今回試したmcp-server-fetchは、AIに実際のインターネットへのアクセ...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "Claudeを使ったe-Statデータ取得を安定させる",
+      "url": "https://zenn.dev/msk25/articles/bd9db10ea29a3b",
+      "site": "Zenn(Python)",
+      "published": "2026-07-19T05:59:54Z",
+      "description": "政府統計の総合窓口 e-Stat には20万件を超える統計表が無料公開されていて（2026年7月にAPIで実測したところ236,271件。日々変動します）、APIも無料です。\nそしていま、Claude や ChatGPT にAPIコードを書かせて統計データを取る記事が増えています。\n便利なので、私も使っています。\nただ、実際に e-Stat × Claude を回してみると、エラーは一度も出ていな...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "文章から絵を描いてもらう。ブラウザだけで作る、はじめての画像生成AI",
+      "url": "https://zenn.dev/m2yagyu/articles/text-to-image-huggingface-colab",
+      "site": "Zenn(Python)",
+      "published": "2026-07-19T05:54:45Z",
+      "description": "この記事を読むと、日本語や英語の文章を書くだけで、AIに自分だけの画像を描いてもらえるようになります。プログラミング経験・環境構築・課金は一切不要です。\n\n さっそく動かしてみよう\n使うのは前回の記事と同じく Google Colab だけです。パソコンに何もインストールする必要はありません。\n\n 事前準備（1回だけ）\n\n\nHugging Face の無料アカウントを作る（すでに持っている人はサイ...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "ChatGPTで始める衛星画像処理入門",
+      "url": "https://zenn.dev/syu_tan/books/chatgpt-satellite-image-intro",
+      "site": "Zenn(Python)",
+      "published": "2026-07-19T05:29:55Z",
+      "description": "生成AIで対話のみの成果物で知識なしでも JAXA の公式配信経路やSTACからデータを取得し、Google Colab で処理します。\n用意した題材に、生成AIへ任せてよいこと、人間とコードで検証すべきことを整理します。事前データがあるので、衛星画像処理の入門書としても活用できます。",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "ヘッダー・命名規則・関数定義テンプレート集",
+      "url": "https://zenn.dev/konfi/articles/20260718_code_style_templates",
+      "site": "Zenn(Python)",
+      "published": "2026-07-19T04:27:22Z",
+      "description": "概要\nスクリプトのヘッダー、命名則、関数定義の書き方を統一するためのテンプレート集。備忘録。\n\n ヘッダーテンプレート\n\n Python（通常）\n# -*- coding: utf-8 -*-\n\"\"\"main.py\n\n詳細説明...\n\nExample:\n    $ python main.py\n\nAuthor:\n    you\n\nDate:\n    2026-03-05\n\nVersion:\n   ...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "【Dify】FastAPI中継をDocker化し、APIキーをCompose secretsへ移したメモ",
+      "url": "https://zenn.dev/imaginarygate/articles/a55ba9dc0b8401",
+      "site": "Zenn(Python)",
+      "published": "2026-07-19T02:06:27Z",
+      "description": "はじめに\n前回は、自作チャットUIのJavaScriptに置いていたDifyアプリAPIキーを外し、ローカルのFastAPI中継サーバーを経由させた。\n前回の記事:\nhttps://zenn.dev/imaginarygate/articles/0e4e01d66a1077\n構成は以下になった。\n自作チャットUI\n↓\nFastAPI中継サーバー\n↓\nセルフホストDify\n↓\nLLM\nこれにより、A...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
     {
       "title": "α⁻¹=137・128近傍の鋭いピークは何だったのか",
       "url": "https://zenn.dev/noriaki_kihara/articles/finite-order-resonance-alpha-neighborhood",
@@ -59,16 +159,6 @@
       "site": "Zenn(Python)",
       "published": "2026-07-18T16:46:41Z",
       "description": "ROS2開発でハマったとき、何から調べればいいか迷うことがあります。この記事では実際によく使うデバッグ手法をまとめました。\n\n\n コマンドラインで状態確認\nまず動いているかどうかの確認から。\n# 起動中のノード一覧\nros2 node list\n\n# トピック一覧\nros2 topic list\n\n# トピックの型と詳細\nros2 topic info /cmd_vel\n\n# トピックをリアルタイ...",
-      "category": "開発",
-      "rss_category": "",
-      "image_url": ""
-    },
-    {
-      "title": "複数工場の状態を単一台帳へ集約する - 障害分析",
-      "url": "https://zenn.dev/kmn/articles/c78a05835ba810",
-      "site": "Zenn(Python)",
-      "published": "2026-07-18T15:25:24Z",
-      "description": "複数工場の状態を単一台帳へ集約する - 障害分析\n自動処理は、スケジュール登録だけでは安定しません。フォルダーの存在や記憶から状態を推測すると、件数と次アクションが食い違います。\nこの記事では「障害分析」の観点から、入力、処理、成果物、公開結果を分離する方法を整理します。仕組み全体の理由まで扱います。\n\n 基本方針\n業務オブジェクトごとに正本台帳を1つ決め、主張にはパスとキーを添えます。\nプロセス...",
       "category": "開発",
       "rss_category": "",
       "image_url": ""
