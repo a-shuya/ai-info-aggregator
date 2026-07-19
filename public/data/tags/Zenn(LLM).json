@@ -1,34 +1,64 @@
 {
   "site": "Zenn(LLM)",
-  "last_updated": "2026-07-19T19:58:24.042026",
-  "total_articles": 4735,
+  "last_updated": "2026-07-19T21:02:17.786019",
+  "total_articles": 4738,
   "articles": [
-    {
-      "title": "Slack・Teams・Chatworkに同時対応するAIエージェントの作り方",
-      "url": "https://zenn.dev/hach/articles/multi-chat-adapter-design",
-      "site": "Zenn(LLM)",
-      "published": "2026-07-19T15:08:07Z",
-      "description": "「Slackに招待するだけで働くAI」を作ったあと、次に来る要望はだいたい決まっています。「うちはTeamsなんですが」「Chatworkでも使えますか」。チャットAIエージェントを複数プラットフォームに対応させる作業は、単なる「API呼び出し先を増やす」だけでは済みません。この記事では、Slack/Teams/Chatworkの3つに実際に対応させる中で整理した設計方針をまとめます。\n\n プラッ...",
-      "category": "AI・技術",
-      "rss_category": "",
-      "image_url": ""
-    },
-    {
-      "title": "チャットに常駐するAIエージェントのプロンプトインジェクション対策",
-      "url": "https://zenn.dev/hach/articles/chat-agent-prompt-injection-defense",
-      "site": "Zenn(LLM)",
-      "published": "2026-07-19T15:08:06Z",
-      "description": "チャットに常駐して自律的に動くAIエージェントを作ると、必ずぶつかる問題があります。エージェントが読むメッセージ・メール・議事録は、すべて「外部から来た未検証のテキスト」だということです。ユーザーからの指示も、第三者が送ってきたメッセージも、同じチャットのタイムライン上に並んでいます。この記事では、常駐型のチャットAIエージェントを設計する上で外せないプロンプトインジェクション対策を、実装の切り口...",
-      "category": "AI・技術",
-      "rss_category": "",
-      "image_url": ""
-    },
     {
       "title": "GitHubの活動履歴からクライアント向け週報を自動生成するCLI「shuho」を作った",
       "url": "https://zenn.dev/alforgelabs/articles/dcc396feffa52d",
       "site": "Zenn(LLM)",
       "published": "2026-07-19T14:53:05Z",
       "description": "毎週の「週報タイム」、何分かかっていますか?\nフリーランスや小規模受託で開発をしていると、毎週クライアントに進捗報告を送ることになります。私の場合、これに毎週 30〜60 分かかっていました。\nやることは毎回同じです。今週のコミットや PR を見返して、「refactor して LGTM もらった」を「内部品質の改善を行い、レビューを完了しました」に翻訳し、体裁を整えて送る。開発そのものではないの...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "「90%のトークン削減」を信じる前に見るべき指標",
+      "url": "https://zenn.dev/yohjisakamoto/articles/433f1cd85a291e",
+      "site": "Zenn(LLM)",
+      "published": "2026-07-19T13:49:24Z",
+      "description": "コーディングエージェント向けの圧縮ツールでは、「出力を90%削減」「コンテキストを半分にした」といった数字をよく見かけます。\nただし、その数字だけではタスク全体のコストが下がったかは分かりません。\n私が確認したかったのは、圧縮率ではなく次の問いです。\n\n同じタスクを最後まで成功させるために、合計でいくら掛かったのか。\n\n\n 比較した条件\nGPT-5.6-sol High と Codex CLI 0...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "日本製LLM PLaMoは答える前に何を考えている？ Jacobian Lensで中間層を覗いてみた",
+      "url": "https://zenn.dev/50s_zerotohero/articles/9d18de9b96e9bb",
+      "site": "Zenn(LLM)",
+      "published": "2026-07-19T12:45:27Z",
+      "description": "!\n本記事は個人による再現実験（research preview）です。ここで示す結果は、中間層から特定の概念や後続候補が読み出せたという観察であり、モデルの意識や、PLaMoがClaudeと同様のグローバルワークスペース（意識の脳内メカニズム）を持つことを示すものではありません。また、Anthropic論文と同等の条件による厳密な再現ではなく、ステアリングによる介入実験も未実施です。\n\n\n はじ...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "ローカルLLM study3: gemma4:e2b vs Ornith-1.0-9B vs qwen3:14bを徹底比較する",
+      "url": "https://zenn.dev/tkpurine/articles/local-llm-study-003-gemma-vs-ornith",
+      "site": "Zenn(LLM)",
+      "published": "2026-07-19T07:56:50Z",
+      "description": "前回のおさらい\n前回は、Aider + Ollamaで7モデルを比較し、単純なバグ修正タスクでは gemma4:e2b（gemma4の軽量版、7.2GB）と Ornith-1.0-9B（コーディング特化・MITライセンス、6.9GB）が特に有望という結論になりました。もう1つ、qwen3:14b（9.3GB）も改竄・誤修正は一度も起きず信頼性は問題なしでしたが、実行速度が他モデルの3〜5倍遅いとい...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "1-bit LLM「Bonsai」活用ガイド — 1.15GB で動く 8B モデルをローカルで使い倒す",
+      "url": "https://zenn.dev/tkou15/articles/bonsai-1bit-llm-guide",
+      "site": "Zenn(LLM)",
+      "published": "2026-07-19T07:35:46Z",
+      "description": "はじめに\n2026年3月31日、Caltech 発のスタートアップ PrismML が 1-bit LLM ファミリー Bonsai を発表しました。8B クラスのモデルがわずか 1.15GB、必要メモリ約 1.5GB で動作し、GPU なしの普通の PC でも実用的な速度で推論できるとして大きな話題になっています。\nBonsai の注目ポイントは次の3つです。\n\n\n真の 1-bit モデル — ...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "claude codeのcompactの問題点と対策",
+      "url": "https://zenn.dev/u1/articles/claude-code-compact",
+      "site": "Zenn(LLM)",
+      "published": "2026-07-19T07:16:16Z",
+      "description": "この記事はXの元記事をZenn向けに再掲載したものです。\n後日､以下の内容+αを自動で入れられて透過的にcompactを強化出来るプラグインを作りました｡\nhttps://x.com/u1/status/2073742408555343968\n\n そもそも Claude Code の compact はどう動くか\n話の前提として、Claude Code の compact は次の 2 経路で走る:...",
       "category": "AI・技術",
       "rss_category": "",
       "image_url": ""
