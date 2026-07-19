@@ -1,8 +1,38 @@
 {
   "site": "Zenn(生成 AI)",
-  "last_updated": "2026-07-19T16:39:42.695177",
-  "total_articles": 2935,
+  "last_updated": "2026-07-19T17:42:37.019527",
+  "total_articles": 2938,
   "articles": [
+    {
+      "title": "「90%のトークン削減」を信じる前に見るべき指標",
+      "url": "https://zenn.dev/yohjisakamoto/articles/433f1cd85a291e",
+      "site": "Zenn(生成 AI)",
+      "published": "2026-07-19T13:49:24Z",
+      "description": "コーディングエージェント向けの圧縮ツールでは、「出力を90%削減」「コンテキストを半分にした」といった数字をよく見かけます。\nただし、その数字だけではタスク全体のコストが下がったかは分かりません。\n私が確認したかったのは、圧縮率ではなく次の問いです。\n\n同じタスクを最後まで成功させるために、合計でいくら掛かったのか。\n\n\n 比較した条件\nGPT-5.6-sol High と Codex CLI 0...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "日本製LLM PLaMoは答える前に何を考えている？ Jacobian Lensで中間層を覗いてみた",
+      "url": "https://zenn.dev/50s_zerotohero/articles/9d18de9b96e9bb",
+      "site": "Zenn(生成 AI)",
+      "published": "2026-07-19T12:45:27Z",
+      "description": "!\n本記事は個人による再現実験（research preview）です。ここで示す結果は、中間層から特定の概念や後続候補が読み出せたという観察であり、モデルの意識や、PLaMoがClaudeと同様のグローバルワークスペース（意識の脳内メカニズム）を持つことを示すものではありません。また、Anthropic論文と同等の条件による厳密な再現ではなく、ステアリングによる介入実験も未実施です。\n\n\n はじ...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "AIにコードを書かせる時代のSupabase RLS——マルチテナント境界をpgTAPとCIで守る実録",
+      "url": "https://zenn.dev/syommy_program/articles/settlebase-tenant-boundary",
+      "site": "Zenn(生成 AI)",
+      "published": "2026-07-19T12:04:19Z",
+      "description": "結論\n前回は、マルチテナントの社内精算デモ基盤 settlebase を公開URLまで立ち上げました。\n今回はその器の上に、テナント境界を守る小さな基盤——スキーマ → RLS → 認可テスト → CI の最小縦切り——を作りました。\nマルチテナントの境界は、RLS（Row Level Security＝行レベルセキュリティ）を「書く」だけでは守れません。\n境界を破る変更が入ったら、機械的に検知さ...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
     {
       "title": "ゴールまで自走するだけではない？——ループエンジニアリングの本質はどこにあるのか",
       "url": "https://zenn.dev/r_kaga/articles/a27a3879dd3ce4",
@@ -88,7 +118,7 @@
       "url": "https://zenn.dev/just2enough/articles/00230875e26b34",
       "site": "Zenn(生成 AI)",
       "published": "2026-07-19T02:15:56Z",
-      "description": "まとめ：Claude Code Usageを節約する観点でやってはいけない3つの操作\n!\n\n\nセッション途中のモデル切替（安いモデルに切り替えたつもりが、むしろ高くつく）\n\n会話の途中でツール（MCP含む）を追加・削除（それまでの節約効果が全部無効になる）\n\n重いセッションを、5分以上の放置を挟みながらダラダラ延命（休憩のたびに見えないペナルティ）\n\n\nAnthropicが公式ブログに「Lesso...",
+      "description": "まとめ：Claude Code Usageを節約する観点でやってはいけない3つの操作\n!\n\n\nセッション途中のモデル切替（安いモデルに切り替えたつもりが、むしろ高くつく。/effort の変更も同類）\n\n会話の途中でツール構成を変える（組み込みツールの deny は全無効化。MCP の付け外しは遅延ロードが効く環境ならセーフ）\n\n重いセッションを、TTL 切れを跨ぎながらダラダラ延命（TTL はサ...",
       "category": "AI・技術",
       "rss_category": "",
       "image_url": ""
