@@ -1,24 +1,64 @@
 {
   "site": "Zenn(LLM)",
-  "last_updated": "2026-07-19T23:10:11.099510",
-  "total_articles": 4735,
+  "last_updated": "2026-07-20T00:12:45.520636",
+  "total_articles": 4740,
   "articles": [
     {
-      "title": "Slack・Teams・Chatworkに同時対応するAIエージェントの作り方",
-      "url": "https://zenn.dev/hach/articles/multi-chat-adapter-design",
+      "title": "有限リソースにおける自律型AIエージェント構築　― プロファイリングが導いたデュアルモデル構成と透過型制御プレーン ―",
+      "url": "https://zenn.dev/akkyey/articles/a644655a0a23da",
       "site": "Zenn(LLM)",
-      "published": "2026-07-19T15:08:07Z",
-      "description": "「Slackに招待するだけで働くAI」を作ったあと、次に来る要望はだいたい決まっています。「うちはTeamsなんですが」「Chatworkでも使えますか」。チャットAIエージェントを複数プラットフォームに対応させる作業は、単なる「API呼び出し先を増やす」だけでは済みません。この記事では、Slack/Teams/Chatworkの3つに実際に対応させる中で整理した設計方針をまとめます。\n\n プラッ...",
+      "published": "2026-07-19T23:54:58Z",
+      "description": "💡 TL;DR (この記事の3行要約)\n\n\n結論: 今回検証した12GBのVRAM環境においては、単一モデルを動作させるよりも、役割の異なる2つのMoEモデル（Gemma ➔ 設計、Qwen ➔ 実装）を組み合わせた「デュアルMoE構成」のほうが、実用上高速かつ安定した推論速度を維持できるアプローチとなりました。\n\n理由: 検証に用いたGemma 4-26B-MoEでは、CPUオフロード主体でも約...",
       "category": "AI・技術",
       "rss_category": "",
       "image_url": ""
     },
     {
-      "title": "チャットに常駐するAIエージェントのプロンプトインジェクション対策",
-      "url": "https://zenn.dev/hach/articles/chat-agent-prompt-injection-defense",
+      "title": "16GBのVRAMでGemma 4 26Bを爆速で動かす！llama.cppの新機能「MTP」を徹底検証",
+      "url": "https://zenn.dev/kotax/articles/gemma4-mtp-zenn",
       "site": "Zenn(LLM)",
-      "published": "2026-07-19T15:08:06Z",
-      "description": "チャットに常駐して自律的に動くAIエージェントを作ると、必ずぶつかる問題があります。エージェントが読むメッセージ・メール・議事録は、すべて「外部から来た未検証のテキスト」だということです。ユーザーからの指示も、第三者が送ってきたメッセージも、同じチャットのタイムライン上に並んでいます。この記事では、常駐型のチャットAIエージェントを設計する上で外せないプロンプトインジェクション対策を、実装の切り口...",
+      "published": "2026-07-19T23:12:42Z",
+      "description": "はじめに\nローカルLLM界隈で注目を集める「Gemma 4 26B」。しかし、26Bクラスのモデルを16GBのVRAM（RTX 5060 Tiなど）で快適に動かすのは通常であれば至難の業です。\n本記事では、新技術**「MTP (Multi-Token Prediction)」**を活用し、VRAM 16GB環境で生成速度を約1.43倍（53.8 tok/s → 76.8 tok/s）に引き上げる具...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "AIエージェントに良い仕事をさせるシステムプロンプトの書き方",
+      "url": "https://zenn.dev/quon_agents/articles/agent-system-prompt-4-principles",
+      "site": "Zenn(LLM)",
+      "published": "2026-07-19T22:21:06Z",
+      "description": "AIエージェント——「考えて」「判断して」「行動する」プログラム——が注目を集めています。単なるチャットボットと違い、エージェントは与えられた目標に向かって複数のツールを駆使し、自律的にタスクを進めます。しかし、その性能はシステムプロンプト（エージェントの行動原則を定義する最初の指示）の質に大きく左右されます。\n本記事では、実際のエージェント開発で得た知見をもとに、システムプロンプトを設計する際の...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "AIスコアで選ぶ 今週のGitHub注目リポジトリ 10選（2026-07-20週）",
+      "url": "https://zenn.dev/lazy_engineer/articles/ai-dev-radar-weekly-20260720",
+      "site": "Zenn(LLM)",
+      "published": "2026-07-19T22:01:37Z",
+      "description": "リライト版\n先週のGitHubで最も注目を集めたAI関連プロジェクトをランキング形式でご紹介します。独自のスコアリング指標により、コミュニティの関心度や開発活動の活発さを反映したTOP10を厳選しました。今回1位を獲得したのは、エージェント機能に特化した「barretlee/agent-pulse」です。最新のAI技術トレンドと開発者の動向を把握できる、必見の週次レポートです。\nスコアはClaud...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "『Loop Engineering 大全』をアップデートしました：図解と実践コードで「ループ構造」を解き明かす",
+      "url": "https://zenn.dev/josiah_tuite/articles/loop_engineering_zenn_02",
+      "site": "Zenn(LLM)",
+      "published": "2026-07-19T21:45:47Z",
+      "description": "いつも書籍『Loop Engineering 大全』を読んでいただき、ありがとうございます。\nおかげさまで、多くの方に手に取っていただき、貴重なフィードバックもいただいております。この度、本書の内容を大幅にブラッシュアップいたしました。\n今回のアップデートでは、より直感的に理解できるよう「図解の拡充」と「実践の強化」に注力しています。\n『Loop Engineering 大全』よろしければ、データ...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "送信前レビューを複数ペルソナで比較、迎合バイアスをコンテキスト分離で崩す運用",
+      "url": "https://zenn.dev/every_ai_recipe/articles/pre-send-persona-pushback-compare",
+      "site": "Zenn(LLM)",
+      "published": "2026-07-19T21:07:40Z",
+      "description": "TL;DR\n\n単一のLLMセッションに「これで大丈夫か」とだけ聞く送信前チェックは、モデルが同意的な応答へ収束しやすい迎合バイアス（sycophancy）の影響を強く受け、読み手の実際の反応を近似できない\n利害・評価軸が異なる複数のペルソナを演じさせて反応を比較する方法は、単に「厳しくする」のではなく、評価関数そのものが異なる複数の視点をサンプリングする点で、単一視点への収束を避けやすい\n同一コン...",
       "category": "AI・技術",
       "rss_category": "",
       "image_url": ""
@@ -29,6 +69,36 @@
       "site": "Zenn(LLM)",
       "published": "2026-07-19T14:53:05Z",
       "description": "毎週の「週報タイム」、何分かかっていますか?\nフリーランスや小規模受託で開発をしていると、毎週クライアントに進捗報告を送ることになります。私の場合、これに毎週 30〜60 分かかっていました。\nやることは毎回同じです。今週のコミットや PR を見返して、「refactor して LGTM もらった」を「内部品質の改善を行い、レビューを完了しました」に翻訳し、体裁を整えて送る。開発そのものではないの...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "ローカルLLM study3: gemma4:e2b vs Ornith-1.0-9B vs qwen3:14bを徹底比較する",
+      "url": "https://zenn.dev/tkpurine/articles/local-llm-study-003-gemma-vs-ornith",
+      "site": "Zenn(LLM)",
+      "published": "2026-07-19T07:56:50Z",
+      "description": "前回のおさらい\n前回は、Aider + Ollamaで7モデルを比較し、単純なバグ修正タスクでは gemma4:e2b（gemma4の軽量版、7.2GB）と Ornith-1.0-9B（コーディング特化・MITライセンス、6.9GB）が特に有望という結論になりました。もう1つ、qwen3:14b（9.3GB）も改竄・誤修正は一度も起きず信頼性は問題なしでしたが、実行速度が他モデルの3〜5倍遅いとい...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "1-bit LLM「Bonsai」活用ガイド — 1.15GB で動く 8B モデルをローカルで使い倒す",
+      "url": "https://zenn.dev/tkou15/articles/bonsai-1bit-llm-guide",
+      "site": "Zenn(LLM)",
+      "published": "2026-07-19T07:35:46Z",
+      "description": "はじめに\n2026年3月31日、Caltech 発のスタートアップ PrismML が 1-bit LLM ファミリー Bonsai を発表しました。8B クラスのモデルがわずか 1.15GB、必要メモリ約 1.5GB で動作し、GPU なしの普通の PC でも実用的な速度で推論できるとして大きな話題になっています。\nBonsai の注目ポイントは次の3つです。\n\n\n真の 1-bit モデル — ...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "claude codeのcompactの問題点と対策",
+      "url": "https://zenn.dev/u1/articles/claude-code-compact",
+      "site": "Zenn(LLM)",
+      "published": "2026-07-19T07:16:16Z",
+      "description": "この記事はXの元記事をZenn向けに再掲載したものです。\n後日､以下の内容+αを自動で入れられて透過的にcompactを強化出来るプラグインを作りました｡\nhttps://x.com/u1/status/2073742408555343968\n\n そもそも Claude Code の compact はどう動くか\n話の前提として、Claude Code の compact は次の 2 経路で走る:...",
       "category": "AI・技術",
       "rss_category": "",
       "image_url": ""
@@ -79,16 +149,6 @@
       "site": "Zenn(LLM)",
       "published": "2026-07-19T04:04:36Z",
       "description": "📝 この記事は forge.workstyle.tech に掲載した記事の転載です。\n\n\n はじめに\nAIアプリケーションの信頼性を高めるためには、単一のLLMプロバイダーに依存しないアーキテクチャが重要です。LiteLLMは、OpenAI、Anthropic、Azure、Vertex AIなど複数のプロバイダーを統一インターフェースで扱えるAI Gatewayとして機能します。本記事では、フォー...",
-      "category": "AI・技術",
-      "rss_category": "",
-      "image_url": ""
-    },
-    {
-      "title": "ローカルLLM(Ollama)にJSONを厳密に返させる — 自分専用ニュースbot開発記 #1",
-      "url": "https://zenn.dev/katamarize/articles/step1-ollama-structured-output",
-      "site": "Zenn(LLM)",
-      "published": "2026-07-19T04:02:03Z",
-      "description": "この記事について\n\n 開発の動機\n新人SIerの私が、毎朝自分に必要な技術ニュースだけを自動収集・要約・通知してくれる「自分専用のニュースbot」を作るシリーズの第1回です。\n発端は三つありました。\n一つ目は、大学時代に組んだゲーミングPC(i5 12400F・RTX 3070 VRAM 8GB・DDR4 RAM 32GB、2023年夏に自作)。社会人になってからPCゲームを起動する時間が取れなく...",
       "category": "AI・技術",
       "rss_category": "",
       "image_url": ""
@@ -239,16 +299,6 @@
       "site": "Zenn(LLM)",
       "published": "2026-07-18T14:46:25Z",
       "description": "Soul-Twin 開発ブログ / 片倉慶孝\n\n\n 今回起きた「設計外の出来事」\nベートーヴェン第X番プロジェクト Episode 4。今回も、設計を超えた出来事が起きた。\n\n\nマーラーAIが「三度目の降霊」を起こした — 誰も提案していなかった「ミサ・ソレムニス」の接続を突然宣言した\n\nベートーヴェンAIが「恥」を「怒り」に反転させた — ワーグナーのフレームを完全に否定し、独自の構造を持ち込ん...",
-      "category": "AI・技術",
-      "rss_category": "",
-      "image_url": ""
-    },
-    {
-      "title": "ループエンジニアリングの次は本当に「グラフ」なのか考えてみた",
-      "url": "https://zenn.dev/jodycraft/articles/dfe38e73e1ef8a",
-      "site": "Zenn(LLM)",
-      "published": "2026-07-18T13:56:58Z",
-      "description": "📋 この記事の前提\n\n前回記事「ループエンジニアリングをGitHub Copilotで組めるか調べてみた」を読んでいると話が早い\n「ハーネスエンジニアリング」「ループエンジニアリング」という言葉を見聞きしたことがある\nこの記事は2026年7月18日時点、生まれて1日も経っていない議論を扱っている。数日後には前提が変わっている可能性がある\n\n\n 結論: グラフは配線図、品質を決めるのは配線の交差点\n...",
       "category": "AI・技術",
       "rss_category": "",
       "image_url": ""
