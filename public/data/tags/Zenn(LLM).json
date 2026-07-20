@@ -1,14 +1,54 @@
 {
   "site": "Zenn(LLM)",
-  "last_updated": "2026-07-20T10:26:52.673536",
-  "total_articles": 4746,
+  "last_updated": "2026-07-20T12:33:55.669127",
+  "total_articles": 4747,
   "articles": [
+    {
+      "title": "RAGで最後に残った不正解1問を「解剖」したら、予定していた実験が丸ごと不要になった",
+      "url": "https://zenn.dev/nd3/articles/rag-one-question-diagnosis",
+      "site": "Zenn(LLM)",
+      "published": "2026-07-20T06:34:47Z",
+      "description": "3行まとめ\n\n前回、埋め込みモデルの比較で正解率96%まで来た自作RAGに、両モデル共通で落とす問題が1問だけ残っていました\nパラメータ総当たりの前にその1問を解剖したところ、原因はchunk_sizeではなくtop_kと判明。予定していたchunk_size実験は丸ごと不要になり、top_kを4→8に変えるだけで**25問全問正解(検索ヒット率も100%)**になりました\nただし満点は「モデルが...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "Andrej Karpathy の LLM Wiki パターンを MulmoClaude に実装した",
+      "url": "https://zenn.dev/singularity/articles/zenn-mulmoclaude-llm-wiki",
+      "site": "Zenn(LLM)",
+      "published": "2026-07-20T05:27:36Z",
+      "description": "はじめに\nAndrej Karpathy が LLM Wiki というパターンを gist で公開しています。ごく短いメモですが、LLM と資料の付き合い方について、RAG とはまるで違う筋を通しています。\nこれを MulmoClaude に実装しました。本記事では、パターンそのものの説明と、実際にコードに落としたときに何が設計上の勘所になったかを書きます。\n\n RAG は毎回ゼロから思い出してい...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "AIに時刻を与えるとキャッシュが壊れる話 ─ 時間認識という設計変数",
+      "url": "https://zenn.dev/motimotinotch/articles/a5968be00edfd8",
+      "site": "Zenn(LLM)",
+      "published": "2026-07-20T05:08:40Z",
+      "description": "📝 Summary\n\nLLMは学習時点で重みが固定される静的なモデルで、本来「今がいつか」を内在的に知る手段を持たない。多くのAIプロダクトは会話冒頭に現在日時をシステムプロンプトへ注入することでこれを補っている。\nしかし「時刻を渡す」実装の仕方次第で、プロンプトキャッシュのヒット率・コスト・そしてAIの時間感覚の精度が大きく変わる。\n本記事では、システムプロンプトにdatetime.now()的...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
     {
       "title": "SDSドラフトを生成・JSON変換するライブラリ「sdsforge」開発記",
       "url": "https://zenn.dev/kent_kamome/articles/499dc964ed778e",
       "site": "Zenn(LLM)",
       "published": "2026-07-20T05:07:10Z",
       "description": "SDS（安全データシート）は、化学製品を取り扱う事業者が成分・危険性・取り扱い方法などをまとめて作成・提供する文書です。日本では厚生労働省がこれをJSON形式でやり取りするための標準フォーマット（MHLW標準JSON）を定めています。\n私は最近このSDSフォーマットの生成・変換を行うライブラリ「sdsforge」を開発しています。Python-first・Rust-poweredのツールキットで、...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "AI記憶検索にrecall gateを入れる：古い記憶・曖昧な一致・未承認メモをそのまま使わない",
+      "url": "https://zenn.dev/agentmemories/articles/memory-search-recall-gate",
+      "site": "Zenn(LLM)",
+      "published": "2026-07-20T04:34:57Z",
+      "description": "はじめに\nAIエージェントに長期記憶を持たせると、検索で過去のメモを呼び出せるようになります。しかし、検索で似ているメモが見つかったことと、そのメモを今の判断に使ってよいことは別です。\n古い方針、却下済みの案、曖昧に似ているだけのメモ、未承認の作業メモをそのままプロンプトへ入れると、AIは自信を持って間違えます。\nこの記事では、記憶検索の後に置く recall gate の設計をまとめます。想定し...",
       "category": "AI・技術",
       "rss_category": "",
       "image_url": ""
@@ -39,16 +79,6 @@
       "site": "Zenn(LLM)",
       "published": "2026-07-19T23:54:58Z",
       "description": "💡 TL;DR (この記事の3行要約)\n\n\n結論: 今回検証した12GBのVRAM環境においては、単一モデルを動作させるよりも、役割の異なる2つのMoEモデル（Gemma ➔ 設計、Qwen ➔ 実装）を組み合わせた「デュアルMoE構成」のほうが、実用上高速かつ安定した推論速度を維持できるアプローチとなりました。\n\n理由: 検証に用いたGemma 4-26B-MoEでは、CPUオフロード主体でも約...",
-      "category": "AI・技術",
-      "rss_category": "",
-      "image_url": ""
-    },
-    {
-      "title": "16GBのVRAMでGemma 4 26Bを爆速で動かす！llama.cppの新機能「MTP」を徹底検証",
-      "url": "https://zenn.dev/kotax/articles/gemma4-mtp-zenn",
-      "site": "Zenn(LLM)",
-      "published": "2026-07-19T23:12:42Z",
-      "description": "はじめに\nローカルLLM界隈で注目を集める「Gemma 4 26B」。しかし、26Bクラスのモデルを16GBのVRAM（RTX 5060 Tiなど）で快適に動かすのは通常であれば至難の業です。\n本記事では、新技術**「MTP (Multi-Token Prediction)」**を活用し、VRAM 16GB環境で生成速度を約1.43倍（53.8 tok/s → 76.8 tok/s）に引き上げる具...",
       "category": "AI・技術",
       "rss_category": "",
       "image_url": ""
@@ -129,16 +159,6 @@
       "site": "Zenn(LLM)",
       "published": "2026-07-19T11:00:05Z",
       "description": "TL;DR: reasoning_effort——モデルが答えを出す前に、内部でどれだけ段階的に「考える」かを制御する設定——をmedium/defaultからhighへ変えると、LLMの矛盾検出はどう変わるのかを試した。最初はGLM-5.2がhighで実在の不整合を見落とすように見えたが、反復と別テキストでの検証により、その単純な物語は崩れた。より多くの不整合を埋め込んだ5回ずつの小規模テストで...",
-      "category": "AI・技術",
-      "rss_category": "",
-      "image_url": ""
-    },
-    {
-      "title": "ローカルLLM study3: gemma4:e2b vs Ornith-1.0-9B vs qwen3:14bを徹底比較する",
-      "url": "https://zenn.dev/tkpurine/articles/local-llm-study-003-gemma-vs-ornith",
-      "site": "Zenn(LLM)",
-      "published": "2026-07-19T07:56:50Z",
-      "description": "前回のおさらい\n前回は、Aider + Ollamaで7モデルを比較し、単純なバグ修正タスクでは gemma4:e2b（gemma4の軽量版、7.2GB）と Ornith-1.0-9B（コーディング特化・MITライセンス、6.9GB）が特に有望という結論になりました。もう1つ、qwen3:14b（9.3GB）も改竄・誤修正は一度も起きず信頼性は問題なしでしたが、実行速度が他モデルの3〜5倍遅いとい...",
       "category": "AI・技術",
       "rss_category": "",
       "image_url": ""
@@ -249,16 +269,6 @@
       "site": "Zenn(LLM)",
       "published": "2026-07-19T02:39:46Z",
       "description": "はじめに\nスタートアップを創業したり、個人事業主として新規に企業との取引を開始したりする際、避けて通れないものの一つが 「反社チェック（コンプライアンスチェック）」 です。(避けて通っている会社が一定数存在するのも事実ですが、そこは一旦触れずに進めます。笑)\n「取引先がマネーロンダリングなどの違法行為に関与していないか。過去に重大な行政処分を受けていないか。」を事前にスクリーニングすることは、事業...",
-      "category": "AI・技術",
-      "rss_category": "",
-      "image_url": ""
-    },
-    {
-      "title": "趣味でサーバを触り始めた人のおうちラボ紹介 基本サービスや構築・管理方法について",
-      "url": "https://zenn.dev/pkkudo/articles/homelab-overview-hlv5",
-      "site": "Zenn(LLM)",
-      "published": "2026-07-19T01:21:57Z",
-      "description": "キャリアとしてはネットワークインフラやネットワークセキュリティをメインに扱っていますが、「Pythonのスクリプトが書けるようになりたい」「サーバを直接触ってみたい」という思いからおうちラボを始めました。\n振り返ってみると、おうちラボを始めてから10年が経っていました。そこでおうちラボの構築初期にお勧めしたいサービスや、構築や管理方法について少しまとめてシェアしたいと思い、このポストにまとめてみま...",
       "category": "AI・技術",
       "rss_category": "",
       "image_url": ""
