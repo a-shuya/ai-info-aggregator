@@ -1,7 +1,7 @@
 {
   "site": "Zenn(AI)",
-  "last_updated": "2026-07-20T07:29:37.149795",
-  "total_articles": 11337,
+  "last_updated": "2026-07-20T10:26:52.673536",
+  "total_articles": 11344,
   "articles": [
     {
       "title": "AIで庭のデザインをシミュレーションする時代が来た——写真1枚から始めるガーデンリフォーム入門",
@@ -114,6 +114,16 @@
       "image_url": ""
     },
     {
+      "title": "Gemini Enterprise Agent PlatformのCustom Training試してみた",
+      "url": "https://zenn.dev/fusic/articles/ae40058329f595",
+      "site": "Zenn(AI)",
+      "published": "2026-07-20T03:06:52Z",
+      "description": "はじめに\nFusicのレオナです。\n今回は、Gemini Enterprise Agent PlatformのCustom Trainingを利用し、scikit-learnでモデルを学習しました。\nGemini Enterprise Agent Platformは、旧Vertex AI Platformから名称変更されたサービスです。[1]ローカル環境で学習コードを実行する場合、実行環境の構築や...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
       "title": "AI生成コードをレビューして見つけた典型バグ5選（と、公開前に自分でできるチェック）",
       "url": "https://zenn.dev/heygeek/articles/ai-code-review-bugs-5",
       "site": "Zenn(AI)",
@@ -189,6 +199,76 @@
       "site": "Zenn(AI)",
       "published": "2026-07-20T01:20:47Z",
       "description": "AIとの長いチャットで仕事の現在地が分からなくなると、最初に思いつく対策は「AIにもっと覚えてもらうこと」かもしれません。\n記憶機能を使う。長い文脈を渡す。要約を工夫する。\n私も試しました。しかし、AIがどこまで覚えているかを気にし続けるより、仕事の状態をAIが読める場所に置く方が確実でした。\nこの連載の第2回では、CodexとGitHubリポジトリを「相談の道具」ではなく「仕事の作業場」として使...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "エージェントで膨らむKVキャッシュを、prefixキャッシュを壊さず刈るIntentKV",
+      "url": "https://zenn.dev/okssusucha/articles/20260706-intentkv-cross-turn-kv-cache-pruning",
+      "site": "Zenn(AI)",
+      "published": "2026-07-20T01:13:14Z",
+      "description": "ツール呼び出しを繰り返すエージェントを長く走らせていると、最初に音を上げるのはモデルの計算そのものではなく、たいていメモリのほうだ。検索ツールが返した10万件規模のドキュメント、丸ごと貼り付いたWebページのHTML、過去の推論ログ。それらがコンテキストに追記され続け、二度と外れない。この積み上がった履歴を保持するのが KVキャッシュ で、エージェントの実運用ではここがボトルネックになる。\nKVキ...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "Unity公式MCPをCodexで使う前に：Prefab・Console・Scene操作の安全設計と評価方法",
+      "url": "https://zenn.dev/gamedev_toollab/articles/b8e6c24a9f49bd",
+      "site": "Zenn(AI)",
+      "published": "2026-07-20T01:00:07Z",
+      "description": "はじめに\n生成AIにC#を書かせ、差分を確認してUnityへ戻す流れは、すでに珍しくありません。しかしUnity開発では、Hierarchyの編集、Componentの設定、Prefab保存、Sceneの切り替え、コンパイル後のConsole確認まで含めて初めて作業が完了します。リポジトリ内のファイルだけを見るAIには、このEditor状態が分かりません。\nそこで注目されるのが、Unity公式のU...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "AI が自分より速くて正確になったとき、人間の判断はどこに残るのか",
+      "url": "https://zenn.dev/kaji_kaji/articles/human-judgment-as-risk-acceptance",
+      "site": "Zenn(AI)",
+      "published": "2026-07-20T01:00:07Z",
+      "description": "はじめに\nAI に実装を任せていると、「ここって、自分が口を挟む意味あるのかな」と思う瞬間はないでしょうか。私は最近それがずっと引っかかっていました。\n個人開発で、AI に実装を任せつつ「コアな部分は自分で書く、AI はヒント役」という分担を 2 ヶ月ほど続けていました。学習も目的の一つだったので、設計まわりは必ず自分が目を通すようにしていたんです。\nある日、新しい機能を作っている途中で、AI か...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "Gemini API と GPT-SoVITS で作る、リアルタイム日英切り替え可能な バイリンガルAI VTuber 配信システム",
+      "url": "https://zenn.dev/vividark/articles/42f121c40f659a",
+      "site": "Zenn(AI)",
+      "published": "2026-07-20T00:37:47Z",
+      "description": "✵本記事は一部AIにより生成されています。\n本記事では、Googleの最新LLMである Gemini API と、高精度なキャラクター音声合成エンジンである GPT-SoVITS を組み合わせ、Twitch等のライブ配信でインタラクティブに対話・実況できる 「OSネイティブ動作の AI VTuber 配信フレームワーク」 のアーキテクチャとその技術的な裏側について解説します。\n※本システムの完全な...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "機械学習を本気で極めるための欧米技術書5選",
+      "url": "https://zenn.dev/koukyo/articles/20260716_ml_advanced_western_books_5",
+      "site": "Zenn(AI)",
+      "published": "2026-07-20T00:25:05Z",
+      "description": "はじめに\n前回の記事では、機械学習を正しく始めるための5冊を紹介した。\n今回は、その先の話をする。\nモデルを動かせるようになった。精度もそこそこ出る。だけど、論文を読んでも数式が追えない。新しいアルゴリズムが出ても「なぜそれが効くのか」が直感的にわからない。面接でベイズ推論の話を振られて固まった——。\n「実装はできるけど理論が弱い」という壁にぶつかるタイミングは必ず来る。そこを突破するために必要な...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "Claude Code ベストプラクティス実践ガイド（2026年7月版）",
+      "url": "https://zenn.dev/gingakuwagata/books/claude-code-best-practices",
+      "site": "Zenn(AI)",
+      "published": "2026-07-20T00:07:00Z",
+      "description": "Claude Codeをすでに使っている開発者向けに、公式ベストプラクティスと2026年6〜7月の最新アップデートを一冊でキャッチアップするガイド。コンテキスト管理の大原則、検証手段の渡し方、プランモードとスペック駆動、CLAUDE.mdの刈り込み、Skill・Hook・Subagent・MCPの使い分け、権限設定、並列セッションやエージェントチームによるスケールまで、いま有効な実践則だけを扱いま...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "AIによる視覚QAに「事前確率」を持たせる — 過去の違反履歴から注意の向け先を予測する設計",
+      "url": "https://zenn.dev/mxhlix/articles/ai-qa-prior-probability-design",
+      "site": "Zenn(AI)",
+      "published": "2026-07-20T00:04:58Z",
+      "description": "AIエージェント(Claude Code等)にWebツールの視覚QAをやらせると、最初はこうなります。チェックリストを頭から全項目、均等な注意で舐めていく。そして均等に注意を配った結果、本当に壊れやすい箇所の違反を見逃す。\n600個以上の多言語Webツールを運用し、そのQAをAIに任せる中で行き着いたのは、QAに事前確率を持たせるという設計でした。\n実装は、markdownファイルだけです。\n\n ...",
       "category": "AI・技術",
       "rss_category": "",
       "image_url": ""
@@ -639,16 +719,6 @@
       "site": "Zenn(AI)",
       "published": "2026-07-19T01:08:21Z",
       "description": "CMOSアナログ回路自動設計で使われるAI・最適化手法まとめ\n━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\n\nLLM（Large Language Model）\n━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\n\n役割\n・仕様整理\n・回路構成の提案\n・gm/Id設計フロー生成\n・SPICEネットリスト生成\n・Python、SKILL、Oceanコード生成...",
-      "category": "AI・技術",
-      "rss_category": "",
-      "image_url": ""
-    },
-    {
-      "title": "Google Search Console APIを使ってSEO改善を自動化する",
-      "url": "https://zenn.dev/asoventure/articles/2026-07-19-gsc-api-seo-automation",
-      "site": "Zenn(AI)",
-      "published": "2026-07-19T01:00:33Z",
-      "description": "はじめに\nFuturistic Imagination LLC 代表の佐藤です。AI技術を実事業に注ぎ込み、圧倒的な開発・検証スピードと**徹底した自動化・省力化（仕組み化）**を武器に日々プロダクト開発に励んでいます。自社ではAIオウンドメディアを11サイト運営しており、Next.jsとGemini API、Vercel Cronを組み合わせることで、毎日記事を自動生成し、僕一人で回しています。...",
       "category": "AI・技術",
       "rss_category": "",
       "image_url": ""

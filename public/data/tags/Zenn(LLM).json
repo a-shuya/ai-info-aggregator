@@ -1,7 +1,7 @@
 {
   "site": "Zenn(LLM)",
-  "last_updated": "2026-07-20T07:29:37.149795",
-  "total_articles": 4750,
+  "last_updated": "2026-07-20T10:26:52.673536",
+  "total_articles": 4746,
   "articles": [
     {
       "title": "SDSドラフトを生成・JSON変換するライブラリ「sdsforge」開発記",
@@ -34,51 +34,21 @@
       "image_url": ""
     },
     {
-      "title": "エージェントで膨らむKVキャッシュを、prefixキャッシュを壊さず刈るIntentKV",
-      "url": "https://zenn.dev/okssusucha/articles/20260706-intentkv-cross-turn-kv-cache-pruning",
-      "site": "Zenn(LLM)",
-      "published": "2026-07-20T01:13:14Z",
-      "description": "ツール呼び出しを繰り返すエージェントを長く走らせていると、最初に音を上げるのはモデルの計算そのものではなく、たいていメモリのほうだ。検索ツールが返した10万件規模のドキュメント、丸ごと貼り付いたWebページのHTML、過去の推論ログ。それらがコンテキストに追記され続け、二度と外れない。この積み上がった履歴を保持するのが KVキャッシュ で、エージェントの実運用ではここがボトルネックになる。\nKVキ...",
-      "category": "AI・技術",
-      "rss_category": "",
-      "image_url": ""
-    },
-    {
-      "title": "AI が自分より速くて正確になったとき、人間の判断はどこに残るのか",
-      "url": "https://zenn.dev/kaji_kaji/articles/human-judgment-as-risk-acceptance",
-      "site": "Zenn(LLM)",
-      "published": "2026-07-20T01:00:07Z",
-      "description": "はじめに\nAI に実装を任せていると、「ここって、自分が口を挟む意味あるのかな」と思う瞬間はないでしょうか。私は最近それがずっと引っかかっていました。\n個人開発で、AI に実装を任せつつ「コアな部分は自分で書く、AI はヒント役」という分担を 2 ヶ月ほど続けていました。学習も目的の一つだったので、設計まわりは必ず自分が目を通すようにしていたんです。\nある日、新しい機能を作っている途中で、AI か...",
-      "category": "AI・技術",
-      "rss_category": "",
-      "image_url": ""
-    },
-    {
-      "title": "Claude Code ベストプラクティス実践ガイド（2026年7月版）",
-      "url": "https://zenn.dev/gingakuwagata/books/claude-code-best-practices",
-      "site": "Zenn(LLM)",
-      "published": "2026-07-20T00:07:00Z",
-      "description": "Claude Codeをすでに使っている開発者向けに、公式ベストプラクティスと2026年6〜7月の最新アップデートを一冊でキャッチアップするガイド。コンテキスト管理の大原則、検証手段の渡し方、プランモードとスペック駆動、CLAUDE.mdの刈り込み、Skill・Hook・Subagent・MCPの使い分け、権限設定、並列セッションやエージェントチームによるスケールまで、いま有効な実践則だけを扱いま...",
-      "category": "AI・技術",
-      "rss_category": "",
-      "image_url": ""
-    },
-    {
-      "title": "AIによる視覚QAに「事前確率」を持たせる — 過去の違反履歴から注意の向け先を予測する設計",
-      "url": "https://zenn.dev/mxhlix/articles/ai-qa-prior-probability-design",
-      "site": "Zenn(LLM)",
-      "published": "2026-07-20T00:04:58Z",
-      "description": "AIエージェント(Claude Code等)にWebツールの視覚QAをやらせると、最初はこうなります。チェックリストを頭から全項目、均等な注意で舐めていく。そして均等に注意を配った結果、本当に壊れやすい箇所の違反を見逃す。\n600個以上の多言語Webツールを運用し、そのQAをAIに任せる中で行き着いたのは、QAに事前確率を持たせるという設計でした。\n実装は、markdownファイルだけです。\n\n ...",
-      "category": "AI・技術",
-      "rss_category": "",
-      "image_url": ""
-    },
-    {
       "title": "有限リソースにおける自律型AIエージェント構築　― プロファイリングが導いたデュアルモデル構成と透過型制御プレーン ―",
       "url": "https://zenn.dev/akkyey/articles/a644655a0a23da",
       "site": "Zenn(LLM)",
       "published": "2026-07-19T23:54:58Z",
       "description": "💡 TL;DR (この記事の3行要約)\n\n\n結論: 今回検証した12GBのVRAM環境においては、単一モデルを動作させるよりも、役割の異なる2つのMoEモデル（Gemma ➔ 設計、Qwen ➔ 実装）を組み合わせた「デュアルMoE構成」のほうが、実用上高速かつ安定した推論速度を維持できるアプローチとなりました。\n\n理由: 検証に用いたGemma 4-26B-MoEでは、CPUオフロード主体でも約...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "16GBのVRAMでGemma 4 26Bを爆速で動かす！llama.cppの新機能「MTP」を徹底検証",
+      "url": "https://zenn.dev/kotax/articles/gemma4-mtp-zenn",
+      "site": "Zenn(LLM)",
+      "published": "2026-07-19T23:12:42Z",
+      "description": "はじめに\nローカルLLM界隈で注目を集める「Gemma 4 26B」。しかし、26Bクラスのモデルを16GBのVRAM（RTX 5060 Tiなど）で快適に動かすのは通常であれば至難の業です。\n本記事では、新技術**「MTP (Multi-Token Prediction)」**を活用し、VRAM 16GB環境で生成速度を約1.43倍（53.8 tok/s → 76.8 tok/s）に引き上げる具...",
       "category": "AI・技術",
       "rss_category": "",
       "image_url": ""
@@ -98,7 +68,7 @@
       "url": "https://zenn.dev/josiah_tuite/articles/loop_engineering_zenn_02",
       "site": "Zenn(LLM)",
       "published": "2026-07-19T21:45:47Z",
-      "description": "いつも書籍『Loop Engineering 大全』を読んでいただき、ありがとうございます。\nおかげさまで、多くの方に手に取っていただき、貴重なフィードバックもいただいております。この度、本書の内容をブラッシュアップいたしました。\n今回のアップデートでは、より直感的に理解できるよう「図解の拡充」と「実践の強化」に注力しています。\n『Loop Engineering 大全』よろしければ、データの更新...",
+      "description": "いつも書籍『Loop Engineering 大全』を読んでいただき、ありがとうございます。\nおかげさまで、多くの方に手に取っていただき、貴重なフィードバックもいただいております。この度、本書の内容を大幅にブラッシュアップいたしました。\n今回のアップデートでは、より直感的に理解できるよう「図解の拡充」と「実践の強化」に注力しています。\n『Loop Engineering 大全』よろしければ、データ...",
       "category": "AI・技術",
       "rss_category": "",
       "image_url": ""
@@ -169,16 +139,6 @@
       "site": "Zenn(LLM)",
       "published": "2026-07-19T07:56:50Z",
       "description": "前回のおさらい\n前回は、Aider + Ollamaで7モデルを比較し、単純なバグ修正タスクでは gemma4:e2b（gemma4の軽量版、7.2GB）と Ornith-1.0-9B（コーディング特化・MITライセンス、6.9GB）が特に有望という結論になりました。もう1つ、qwen3:14b（9.3GB）も改竄・誤修正は一度も起きず信頼性は問題なしでしたが、実行速度が他モデルの3〜5倍遅いとい...",
-      "category": "AI・技術",
-      "rss_category": "",
-      "image_url": ""
-    },
-    {
-      "title": "1-bit LLM「Bonsai」活用ガイド — 1.15GB で動く 8B モデルをローカルで使い倒す",
-      "url": "https://zenn.dev/tkou15/articles/bonsai-1bit-llm-guide",
-      "site": "Zenn(LLM)",
-      "published": "2026-07-19T07:35:46Z",
-      "description": "はじめに\n2026年3月31日、Caltech 発のスタートアップ PrismML が 1-bit LLM ファミリー Bonsai を発表しました。8B クラスのモデルがわずか 1.15GB、必要メモリ約 1.5GB で動作し、GPU なしの普通の PC でも実用的な速度で推論できるとして大きな話題になっています。\nBonsai の注目ポイントは次の3つです。\n\n\n真の 1-bit モデル — ...",
       "category": "AI・技術",
       "rss_category": "",
       "image_url": ""
