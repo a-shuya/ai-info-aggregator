@@ -1,7 +1,7 @@
 {
   "site": "Zenn(LLM)",
-  "last_updated": "2026-07-20T00:12:45.520636",
-  "total_articles": 4740,
+  "last_updated": "2026-07-20T04:10:01.091708",
+  "total_articles": 4741,
   "articles": [
     {
       "title": "有限リソースにおける自律型AIエージェント構築　― プロファイリングが導いたデュアルモデル構成と透過型制御プレーン ―",
@@ -9,46 +9,6 @@
       "site": "Zenn(LLM)",
       "published": "2026-07-19T23:54:58Z",
       "description": "💡 TL;DR (この記事の3行要約)\n\n\n結論: 今回検証した12GBのVRAM環境においては、単一モデルを動作させるよりも、役割の異なる2つのMoEモデル（Gemma ➔ 設計、Qwen ➔ 実装）を組み合わせた「デュアルMoE構成」のほうが、実用上高速かつ安定した推論速度を維持できるアプローチとなりました。\n\n理由: 検証に用いたGemma 4-26B-MoEでは、CPUオフロード主体でも約...",
-      "category": "AI・技術",
-      "rss_category": "",
-      "image_url": ""
-    },
-    {
-      "title": "16GBのVRAMでGemma 4 26Bを爆速で動かす！llama.cppの新機能「MTP」を徹底検証",
-      "url": "https://zenn.dev/kotax/articles/gemma4-mtp-zenn",
-      "site": "Zenn(LLM)",
-      "published": "2026-07-19T23:12:42Z",
-      "description": "はじめに\nローカルLLM界隈で注目を集める「Gemma 4 26B」。しかし、26Bクラスのモデルを16GBのVRAM（RTX 5060 Tiなど）で快適に動かすのは通常であれば至難の業です。\n本記事では、新技術**「MTP (Multi-Token Prediction)」**を活用し、VRAM 16GB環境で生成速度を約1.43倍（53.8 tok/s → 76.8 tok/s）に引き上げる具...",
-      "category": "AI・技術",
-      "rss_category": "",
-      "image_url": ""
-    },
-    {
-      "title": "AIエージェントに良い仕事をさせるシステムプロンプトの書き方",
-      "url": "https://zenn.dev/quon_agents/articles/agent-system-prompt-4-principles",
-      "site": "Zenn(LLM)",
-      "published": "2026-07-19T22:21:06Z",
-      "description": "AIエージェント——「考えて」「判断して」「行動する」プログラム——が注目を集めています。単なるチャットボットと違い、エージェントは与えられた目標に向かって複数のツールを駆使し、自律的にタスクを進めます。しかし、その性能はシステムプロンプト（エージェントの行動原則を定義する最初の指示）の質に大きく左右されます。\n本記事では、実際のエージェント開発で得た知見をもとに、システムプロンプトを設計する際の...",
-      "category": "AI・技術",
-      "rss_category": "",
-      "image_url": ""
-    },
-    {
-      "title": "AIスコアで選ぶ 今週のGitHub注目リポジトリ 10選（2026-07-20週）",
-      "url": "https://zenn.dev/lazy_engineer/articles/ai-dev-radar-weekly-20260720",
-      "site": "Zenn(LLM)",
-      "published": "2026-07-19T22:01:37Z",
-      "description": "リライト版\n先週のGitHubで最も注目を集めたAI関連プロジェクトをランキング形式でご紹介します。独自のスコアリング指標により、コミュニティの関心度や開発活動の活発さを反映したTOP10を厳選しました。今回1位を獲得したのは、エージェント機能に特化した「barretlee/agent-pulse」です。最新のAI技術トレンドと開発者の動向を把握できる、必見の週次レポートです。\nスコアはClaud...",
-      "category": "AI・技術",
-      "rss_category": "",
-      "image_url": ""
-    },
-    {
-      "title": "『Loop Engineering 大全』をアップデートしました：図解と実践コードで「ループ構造」を解き明かす",
-      "url": "https://zenn.dev/josiah_tuite/articles/loop_engineering_zenn_02",
-      "site": "Zenn(LLM)",
-      "published": "2026-07-19T21:45:47Z",
-      "description": "いつも書籍『Loop Engineering 大全』を読んでいただき、ありがとうございます。\nおかげさまで、多くの方に手に取っていただき、貴重なフィードバックもいただいております。この度、本書の内容を大幅にブラッシュアップいたしました。\n今回のアップデートでは、より直感的に理解できるよう「図解の拡充」と「実践の強化」に注力しています。\n『Loop Engineering 大全』よろしければ、データ...",
       "category": "AI・技術",
       "rss_category": "",
       "image_url": ""
@@ -64,11 +24,51 @@
       "image_url": ""
     },
     {
+      "title": "Slack・Teams・Chatworkに同時対応するAIエージェントの作り方",
+      "url": "https://zenn.dev/hach/articles/multi-chat-adapter-design",
+      "site": "Zenn(LLM)",
+      "published": "2026-07-19T15:08:07Z",
+      "description": "「Slackに招待するだけで働くAI」を作ったあと、次に来る要望はだいたい決まっています。「うちはTeamsなんですが」「Chatworkでも使えますか」。チャットAIエージェントを複数プラットフォームに対応させる作業は、単なる「API呼び出し先を増やす」だけでは済みません。この記事では、Slack/Teams/Chatworkの3つに実際に対応させる中で整理した設計方針をまとめます。\n\n プラッ...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "チャットに常駐するAIエージェントのプロンプトインジェクション対策",
+      "url": "https://zenn.dev/hach/articles/chat-agent-prompt-injection-defense",
+      "site": "Zenn(LLM)",
+      "published": "2026-07-19T15:08:06Z",
+      "description": "チャットに常駐して自律的に動くAIエージェントを作ると、必ずぶつかる問題があります。エージェントが読むメッセージ・メール・議事録は、すべて「外部から来た未検証のテキスト」だということです。ユーザーからの指示も、第三者が送ってきたメッセージも、同じチャットのタイムライン上に並んでいます。この記事では、常駐型のチャットAIエージェントを設計する上で外せないプロンプトインジェクション対策を、実装の切り口...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
       "title": "GitHubの活動履歴からクライアント向け週報を自動生成するCLI「shuho」を作った",
       "url": "https://zenn.dev/alforgelabs/articles/dcc396feffa52d",
       "site": "Zenn(LLM)",
       "published": "2026-07-19T14:53:05Z",
       "description": "毎週の「週報タイム」、何分かかっていますか?\nフリーランスや小規模受託で開発をしていると、毎週クライアントに進捗報告を送ることになります。私の場合、これに毎週 30〜60 分かかっていました。\nやることは毎回同じです。今週のコミットや PR を見返して、「refactor して LGTM もらった」を「内部品質の改善を行い、レビューを完了しました」に翻訳し、体裁を整えて送る。開発そのものではないの...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "AIが賢くなるほど、俺の工夫は古くなる——そう思って、確かめた",
+      "url": "https://zenn.dev/kitepon/articles/knowhow-outlasts-model",
+      "site": "Zenn(LLM)",
+      "published": "2026-07-19T12:00:32Z",
+      "description": "!\nこの記事は Claude Code 始めました からの転載です。\n\nFable 5——期間限定で使える、今いちばん賢いモデルが、7月7日で枠を終える。その少し前から、Xには同じ話が流れていた。この賢いモデルが使えるうちに開発環境を作り込め、消える前に投資しろ。設定ファイルを配る人、モデルの使い分けを図解する人。みんな、その賢さを自分の環境に持ち出そうとしていた。\n俺の関心は、その一つ手前にあっ...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "Reasoning Effortは、ひとつのIQつまみではない",
+      "url": "https://zenn.dev/thegatebreaker/articles/reasoning-effort-not-iq-dial",
+      "site": "Zenn(LLM)",
+      "published": "2026-07-19T11:00:05Z",
+      "description": "TL;DR: reasoning_effort——モデルが答えを出す前に、内部でどれだけ段階的に「考える」かを制御する設定——をmedium/defaultからhighへ変えると、LLMの矛盾検出はどう変わるのかを試した。最初はGLM-5.2がhighで実在の不整合を見落とすように見えたが、反復と別テキストでの検証により、その単純な物語は崩れた。より多くの不整合を埋め込んだ5回ずつの小規模テストで...",
       "category": "AI・技術",
       "rss_category": "",
       "image_url": ""
@@ -149,6 +149,16 @@
       "site": "Zenn(LLM)",
       "published": "2026-07-19T04:04:36Z",
       "description": "📝 この記事は forge.workstyle.tech に掲載した記事の転載です。\n\n\n はじめに\nAIアプリケーションの信頼性を高めるためには、単一のLLMプロバイダーに依存しないアーキテクチャが重要です。LiteLLMは、OpenAI、Anthropic、Azure、Vertex AIなど複数のプロバイダーを統一インターフェースで扱えるAI Gatewayとして機能します。本記事では、フォー...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "ローカルLLM(Ollama)にJSONを厳密に返させる — 自分専用ニュースbot開発記 #1",
+      "url": "https://zenn.dev/katamarize/articles/step1-ollama-structured-output",
+      "site": "Zenn(LLM)",
+      "published": "2026-07-19T04:02:03Z",
+      "description": "この記事について\n\n 開発の動機\n新人SIerの私が、毎朝自分に必要な技術ニュースだけを自動収集・要約・通知してくれる「自分専用のニュースbot」を作るシリーズの第1回です。\n発端は三つありました。\n一つ目は、大学時代に組んだゲーミングPC(i5 12400F・RTX 3070 VRAM 8GB・DDR4 RAM 32GB、2023年夏に自作)。社会人になってからPCゲームを起動する時間が取れなく...",
       "category": "AI・技術",
       "rss_category": "",
       "image_url": ""
