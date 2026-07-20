@@ -1,8 +1,78 @@
 {
   "site": "Zenn(LLM)",
-  "last_updated": "2026-07-20T22:36:41.060729",
-  "total_articles": 4756,
+  "last_updated": "2026-07-20T23:38:11.367929",
+  "total_articles": 4763,
   "articles": [
+    {
+      "title": "ollama は長い入力の真ん中を捨てる — 実測すると半分しか残らない",
+      "url": "https://zenn.dev/itdevnote/articles/ollama-num-ctx-silent-truncation",
+      "site": "Zenn(LLM)",
+      "published": "2026-07-20T23:00:06Z",
+      "description": "ollama に num_ctx を超える入力を渡すと、超えた分が削られる——のではない。先頭のわずかなトークンと末尾を残して、真ん中がまとめて捨てられる。 残る量はコンテキストのおよそ半分までで、元の入力が長いほど失う量は大きくなる。\nそして捨てられても HTTP 200 が返り、done_reason は stop、出力の体裁も整っている。\nこの記事では、切り捨てが起きる条件・捨てられる場所と...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "一体いつから-Github Copilot  Appの能力がコーディングだけだと錯覚していた？",
+      "url": "https://zenn.dev/hirayuki/articles/6bafab06767cab",
+      "site": "Zenn(LLM)",
+      "published": "2026-07-20T22:49:04Z",
+      "description": "あまり強いタイトルを使うなよ\n弱く見えるぞ\n\n はじめに\n本記事はGithub Copilot Appをより活用し、時代の変換を考察する記事です。\n!\n本記事は個人の見解です。\nGithub Copilotの公式ドキュメントの定義は「エージェント駆動型開発用のデスクトップ アプリケーション」です。\nそれに対し若干の無理をさせる構成ではあります。\nそのため完璧ではない点もありますが、後述します。\n\n...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "Claude Code の複数エージェント運用、壊れるのはいつも同じ4箇所だった",
+      "url": "https://zenn.dev/skova_digital/articles/18e2f9120e181d",
+      "site": "Zenn(LLM)",
+      "published": "2026-07-20T22:30:05Z",
+      "description": "Claude Code を複数の役割に分けて、Web 制作の実務を回している。\n秘書役が窓口をさばき、開発役が実装し、レビュー役が確認する構成で、開業からずっとこの形を育ててきた。\n仕組みの導入方法はテンプレートとして GitHub に公開している ので、この記事では中身の話をする。\n数ヶ月回すうちに、同じ場所が繰り返し壊れた。\n壊れた場所はきれいに4つに分かれていて、それぞれに設計を立てたら安定...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "AIの評価を報酬にする強化学習は何をしているのか — GRPOの1ステップを数字で追う",
+      "url": "https://zenn.dev/takkuhiro/articles/eval-as-reward-rl-mechanics",
+      "site": "Zenn(LLM)",
+      "published": "2026-07-20T22:00:08Z",
+      "description": "LLMの学習で「AIの評価を報酬にする」手法が主流になりつつあります。人間の代わりにLLMが応答を採点し（RLAIF: Reinforcement Learning from AI Feedback）、そのスコアでモデルを強化学習する。DeepSeek-R1以降は正誤の機械検証（RLVR: Reinforcement Learning with Verifiable Rewards）やrubric...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "AI体験記 vol.14 — 書いたルールは、また破られた",
+      "url": "https://zenn.dev/mizutamari/articles/local-llm-vol014",
+      "site": "Zenn(LLM)",
+      "published": "2026-07-20T21:55:52Z",
+      "description": "!\n前回（vol.13）の続きです。安心しきっていたハーネスに、同じ穴がもう一度開いた話です。\n技術的な正確さより、体験の正直さ優先。復習も兼ねています。\n\nvol.13で、ハーネスは「SのIQを引き上げる土台だ」と書いた。\n実際、Sは「OK」しか言われていないのに、ちゃんと道具を作りきった。\n気分は上々、ハーネスは効いている、と。\nでも、その道具を作る途中で、前にも見た光景が、そっくりそのまま、...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "ChatGPTシェア5割割れの裏側、ベンチマーク順位が自分のタスクに効かない理由",
+      "url": "https://zenn.dev/every_ai_recipe/articles/chatgpt-market-share-3day-compare",
+      "site": "Zenn(LLM)",
+      "published": "2026-07-20T21:09:04Z",
+      "description": "TL;DR\n\nChatGPTの利用者シェアが初めて5割を切り、Gemini・Claudeが台頭する「三国時代」が報じられているが、シェアや総合ベンチマークの順位は、集団全体での相対的な強さを示す指標であり、特定タスクにおける個人の期待値を保証しない\nモデルの出力品質はタスクの分布（フォーマットの癖・事実忠実度・編集不要度など評価軸ごと）によって大きく変わり、ある軸で強いモデルが別の軸で弱いことが珍...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "常駐型AIエージェントが「人に判断を委ねる」境界線をどう設計するか",
+      "url": "https://zenn.dev/hach/articles/chat-agent-human-escalation-design",
+      "site": "Zenn(LLM)",
+      "published": "2026-07-20T21:03:00Z",
+      "description": "自律的に動くチャット常駐エージェントを作っていると、「できることを増やす」議論はしやすい一方で、「どこまでは自分で判断し、どこからは人に委ねるか」の境界線は後回しになりがちです。この記事では、エージェントが自分で完結させてよい判断と、人にエスカレーションすべき判断をどう線引きし、実装に落とし込むかを整理します。\n\n 何が問題なのか: 「できる」と「やってよい」は別軸\n実行権限そのものは、事前にスコ...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
     {
       "title": "私の会社には8人の社員がいる。人間は私だけだ ―― Claude Codeを「道具」でなく「組織」として使う",
       "url": "https://zenn.dev/ai_shihan/articles/hire-eight-ai-employees",
