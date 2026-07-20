@@ -1,6 +1,6 @@
 {
   "site": "Zenn(Python)",
-  "last_updated": "2026-07-20T16:26:43.492026",
+  "last_updated": "2026-07-20T18:30:33.714734",
   "total_articles": 5197,
   "articles": [
     {
@@ -39,16 +39,6 @@
       "site": "Zenn(Python)",
       "published": "2026-07-20T07:06:19Z",
       "description": "ドキュメントの形式変換は、データ処理やテキスト解析において頻繁に発生するタスクです。Word 文書（.docx）からプレーンテキスト（.txt）を抽出することは、自然言語処理やデータ移行、検索システムのインデックス構築などのシーンで必要とされます。逆に、テキストファイルを Word 文書に変換することで、レポートの作成や書式設定されたドキュメントの生成が可能になります。本記事では、Python を...",
-      "category": "開発",
-      "rss_category": "",
-      "image_url": ""
-    },
-    {
-      "title": "RAGで最後に残った不正解1問を「解剖」したら、予定していた実験が丸ごと不要になった",
-      "url": "https://zenn.dev/nd3/articles/rag-one-question-diagnosis",
-      "site": "Zenn(Python)",
-      "published": "2026-07-20T06:34:47Z",
-      "description": "3行まとめ\n\n前回、埋め込みモデルの比較で正解率96%まで来た自作RAGに、両モデル共通で落とす問題が1問だけ残っていました\nパラメータ総当たりの前にその1問を解剖したところ、原因はchunk_sizeではなくtop_kと判明。予定していたchunk_size実験は丸ごと不要になり、top_kを4→8に変えるだけで**25問全問正解(検索ヒット率も100%)**になりました\nただし満点は「モデルが...",
       "category": "開発",
       "rss_category": "",
       "image_url": ""
@@ -109,6 +99,16 @@
       "site": "Zenn(Python)",
       "published": "2026-07-20T00:37:47Z",
       "description": "✵本記事は一部AIにより生成されています。\n本記事では、Googleの最新LLMである Gemini API と、高精度なキャラクター音声合成エンジンである GPT-SoVITS を組み合わせ、Twitch等のライブ配信でインタラクティブに対話・実況できる 「OSネイティブ動作の AI VTuber 配信フレームワーク」 のアーキテクチャとその技術的な裏側について解説します。\n※本システムの完全な...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "有限リソースにおける自律型AIエージェント構築　― プロファイリングが導いたデュアルモデル構成と透過型制御プレーン ―",
+      "url": "https://zenn.dev/akkyey/articles/a644655a0a23da",
+      "site": "Zenn(Python)",
+      "published": "2026-07-19T23:54:58Z",
+      "description": "💡 TL;DR (この記事の3行要約)\n\n\n結論: 今回検証した12GBのVRAM環境においては、単一モデルを動作させるよりも、役割の異なる2つのMoEモデル（Gemma ➔ 設計、Qwen ➔ 実装）を組み合わせた「デュアルMoE構成」のほうが、実用上高速かつ安定した推論速度を維持できるアプローチとなりました。\n\n理由: 検証に用いたGemma 4-26B-MoEでは、CPUオフロード主体でも約...",
       "category": "開発",
       "rss_category": "",
       "image_url": ""

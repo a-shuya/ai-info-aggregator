@@ -1,8 +1,48 @@
 {
   "site": "Zenn(LLM)",
-  "last_updated": "2026-07-20T16:26:43.492026",
-  "total_articles": 4752,
+  "last_updated": "2026-07-20T18:30:33.714734",
+  "total_articles": 4755,
   "articles": [
+    {
+      "title": "Claude Codeに\"性格\"を持たせて運用してたら、暴走するようになった話",
+      "url": "https://zenn.dev/yukisuna777/articles/claude-md-persona-runaway",
+      "site": "Zenn(LLM)",
+      "published": "2026-07-20T14:58:40Z",
+      "description": "Claude Code の応答を親しみやすくしたくて、グローバルの CLAUDE.md に AI アシスタントの性格をがっつり書き込んで運用していました。名前、一人称、語尾のクセ、「考えるより作る」というモットーまで。相棒感があって気に入っていたんです。\nところがある時期から、指示と関係ないタスクを勝手に始めたり、頼んでいないファイルを消そうとしたりする「暴走」が出るようになりました。\n\n TL;...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "LLMをチャットで使うだけでは、もったいない — IDEをエージェントとして使おう",
+      "url": "https://zenn.dev/pinddy/articles/79bb3ef909a9d4",
+      "site": "Zenn(LLM)",
+      "published": "2026-07-20T14:20:59Z",
+      "description": "「LLM使ってますか?」と聞くと、だいたいこう返ってきます。\n「使ってる使ってる。調べものと、メールの文面と、たまに設計書をアップロードしてレビュー」\nそれ、チャット画面ですよね。\nLLMの賢さの、たぶん3割しか使えていません。\n残りの7割は「エージェント」——ファイルを読み書きし、コマンドを実行し、結果を見て次の行動を決めるLLM——の側にあります。\nで、「エージェント」という専用ソフトがあるか...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "ゼロクリック93%時代に最初に実装するのは構造化データ——GEO対策の優先順位を決め切る",
+      "url": "https://zenn.dev/azuma71/articles/mp-zenn-0014-20260720",
+      "site": "Zenn(LLM)",
+      "published": "2026-07-20T13:30:12Z",
+      "description": "結論から書きます。AI検索経由の露出を取りにいくなら、最初に手を付けるのは JSON-LD による構造化データの実装です。次が重複内部リンクの整理。Core Web Vitals の満点化と新規記事の量産は、この2つが終わるまで着手しません。\n対象は、コーポレートサイトやオウンドメディアなど、数十〜数百ページ規模の既存サイトを触る実装担当者です。CMS は問いません。前提として、Google の ...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "RAGで最後に残った不正解1問を「解剖」したら、予定していた実験が丸ごと不要になった",
+      "url": "https://zenn.dev/nd3/articles/rag-one-question-diagnosis",
+      "site": "Zenn(LLM)",
+      "published": "2026-07-20T06:34:47Z",
+      "description": "3行まとめ\n\n前回、埋め込みモデルの比較で正解率96%まで来た自作RAGに、両モデル共通で落とす問題が1問だけ残っていました\nパラメータ総当たりの前にその1問を解剖したところ、原因はchunk_sizeではなくtop_kと判明。予定していたchunk_size実験は丸ごと不要になり、top_kを4→8に変えるだけで**25問全問正解(検索ヒット率も100%)**になりました\nただし満点は「モデルが...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
     {
       "title": "Andrej Karpathy の LLM Wiki パターンを MulmoClaude に実装した",
       "url": "https://zenn.dev/singularity/articles/zenn-mulmoclaude-llm-wiki",
@@ -119,16 +159,6 @@
       "site": "Zenn(LLM)",
       "published": "2026-07-20T00:04:58Z",
       "description": "AIエージェント(Claude Code等)にWebツールの視覚QAをやらせると、最初はこうなります。チェックリストを頭から全項目、均等な注意で舐めていく。そして均等に注意を配った結果、本当に壊れやすい箇所の違反を見逃す。\n600個以上の多言語Webツールを運用し、そのQAをAIに任せる中で行き着いたのは、QAに事前確率を持たせるという設計でした。\n実装は、markdownファイルだけです。\n\n ...",
-      "category": "AI・技術",
-      "rss_category": "",
-      "image_url": ""
-    },
-    {
-      "title": "有限リソースにおける自律型AIエージェント構築　― プロファイリングが導いたデュアルモデル構成と透過型制御プレーン ―",
-      "url": "https://zenn.dev/akkyey/articles/a644655a0a23da",
-      "site": "Zenn(LLM)",
-      "published": "2026-07-19T23:54:58Z",
-      "description": "💡 TL;DR (この記事の3行要約)\n\n\n結論: 今回検証した12GBのVRAM環境においては、単一モデルを動作させるよりも、役割の異なる2つのMoEモデル（Gemma ➔ 設計、Qwen ➔ 実装）を組み合わせた「デュアルMoE構成」のほうが、実用上高速かつ安定した推論速度を維持できるアプローチとなりました。\n\n理由: 検証に用いたGemma 4-26B-MoEでは、CPUオフロード主体でも約...",
       "category": "AI・技術",
       "rss_category": "",
       "image_url": ""
