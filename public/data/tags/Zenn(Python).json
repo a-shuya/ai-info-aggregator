@@ -1,24 +1,24 @@
 {
   "site": "Zenn(Python)",
-  "last_updated": "2026-07-21T20:55:14.553693",
+  "last_updated": "2026-07-21T22:06:07.975835",
   "total_articles": 5217,
   "articles": [
-    {
-      "title": "生成AIキャラをリアルタイム3Dアバター化するまで: I2V→3DGSで失敗してGAGAvatarに着地した話",
-      "url": "https://zenn.dev/yururitohikari/articles/4044f09f97d815",
-      "site": "Zenn(Python)",
-      "published": "2026-07-21T12:50:39Z",
-      "description": "この記事は、生成AIで作った実在しないキャラクター画像1枚から、Webカメラの表情でリアルタイム駆動する3Dアバターを作るまでの実験記録です。\nなお、今回の実験はすべて生成AIとの対話で進めました。私は生粋の文系でして、コードは1行も書けません。\n最初に試したのは「画像から動画を作り、その動画を多視点画像として3D Gaussian Splattingに復元する」という素朴な方法でした。結果として...",
-      "category": "開発",
-      "rss_category": "",
-      "image_url": ""
-    },
     {
       "title": "Pythonではじめる6軸ロボットアーム入門 ─ 同次変換行列から姿勢の軌道生成・3次元経路生成まで",
       "url": "https://zenn.dev/haruhiro1020/books/323e0e7305c5e6",
       "site": "Zenn(Python)",
       "published": "2026-07-21T11:00:18Z",
       "description": "2軸本「Pythonではじめるロボットアーム入門」の続編。平面の2軸から、立体（3次元）で動く6軸ロボットアームへ。\n同次変換行列・6軸の順運動学・逆運動学（解析解＋数値解）・手先姿勢の軌道生成・3次元での経路生成までを、Matplotlib 3D で手を動かしながら初学者向けにやさしく解説します。",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "AIにゼロから作らせない——WIREDRIVEの知見は、WIREFIGHTの生成コストをどこまで下げたか",
+      "url": "https://zenn.dev/haruka_apps/articles/ad720d0911c3e4",
+      "site": "Zenn(Python)",
+      "published": "2026-07-21T10:53:44Z",
+      "description": "はじめに\nPyxelで、ワイヤーフレームの1対1格闘ゲーム「WIREFIGHT」を作りました。\n作ったものがこちらです。\nhttps://x.com/haruka_apps/status/2079490964381708526\n実際に遊べます。\nhttps://codeandmagic.samurai-apps.com/works/wirefight-3d-combat-59462\nWIREシリー...",
       "category": "開発",
       "rss_category": "",
       "image_url": ""
@@ -39,6 +39,16 @@
       "site": "Zenn(Python)",
       "published": "2026-07-21T09:13:44Z",
       "description": "Python初心者が、AIと一緒に「Excelを項目ごとに分割するツール」を作りました。\n処理そのものは pandas の groupby で数行です。難しくない。\nなのに、最初に完成したものは「自分しか使えないツール」でした。\n原因はロジックではなく、ユーザーに何を入力させるかでした。その1点を直した話を書きます。\n\n 作ったもの\n1つの表を、指定した項目の値ごとに別々のExcelファイルへ分割...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "Claude Code + Notion でターミナルから一歩も出ずにタスク消化・ドキュメント生成を全自動化する",
+      "url": "https://zenn.dev/epicai_techblog/articles/1bc0f3769bfddc",
+      "site": "Zenn(Python)",
+      "published": "2026-07-21T09:00:08Z",
+      "description": "0.はじめに\nこんにちは。株式会社EpicAIでエンジニアをしているHamaです。\nエンジニアの皆さん、日々のタスク管理どうやっていますか？\n私はいつもNotionで管理していますが、逐一Notionに書くのも手間がかかるものです。ターミナル、エディタ、ブラウザ、Notionと複数のアプリを行き来すると集中力も削がれてしまいます。できればターミナルだけで仕事を完結させたいです。\nそこで今回はCla...",
       "category": "開発",
       "rss_category": "",
       "image_url": ""
@@ -139,16 +149,6 @@
       "site": "Zenn(Python)",
       "published": "2026-07-21T00:09:12Z",
       "description": "一言にJPEG、PNG、GIFといっても、内部には多くのバリエーションがあります。JPEGならExifの有無や圧縮方式の違い、色成分のサブサンプリングなどです。\nアイデアマンズではWeb画像に関するサービスを展開しています。その過程で、内部フォーマットのバリエーションを包括的に網羅したデータセットを、生成プログラムとともにOSSで公開しました。この記事では、なぜ網羅データセットが必要なのか、ツール...",
-      "category": "開発",
-      "rss_category": "",
-      "image_url": ""
-    },
-    {
-      "title": "ollama は長い入力の真ん中を捨てる — 実測すると半分しか残らない",
-      "url": "https://zenn.dev/itdevnote/articles/ollama-num-ctx-silent-truncation",
-      "site": "Zenn(Python)",
-      "published": "2026-07-20T23:00:06Z",
-      "description": "ollama に num_ctx を超える入力を渡すと、超えた分が削られる——のではない。先頭のわずかなトークンと末尾を残して、真ん中がまとめて捨てられる。 残る量はコンテキストのおよそ半分までで、元の入力が長いほど失う量は大きくなる。\nそして捨てられても HTTP 200 が返り、done_reason は stop、出力の体裁も整っている。\nこの記事では、切り捨てが起きる条件・捨てられる場所と...",
       "category": "開発",
       "rss_category": "",
       "image_url": ""
