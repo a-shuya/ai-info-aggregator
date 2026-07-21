@@ -1,8 +1,128 @@
 {
   "site": "Zenn(Python)",
-  "last_updated": "2026-07-21T09:45:36.817809",
-  "total_articles": 5206,
+  "last_updated": "2026-07-21T11:32:15.495399",
+  "total_articles": 5219,
   "articles": [
+    {
+      "title": "DC/DCコンバータのType-I・Type-II・Type-III位相補償",
+      "url": "https://zenn.dev/qwerewq/articles/47ef8466c3b8bb",
+      "site": "Zenn(Python)",
+      "published": "2026-07-21T09:53:27Z",
+      "description": "はじめに\nDC/DCコンバータでは、出力電圧を安定させるためにフィードバック制御を行います。\nしかし、パワーステージや誤差増幅器には極や零点が存在するため、そのままでは位相が遅れ、発振する可能性があります。\nそこで、ループゲインを調整して安定性と応答速度を確保するために、位相補償回路を使用します。\nループゲインは、次のように表されます。\nT(s) = Gc(s) × Gp(s) × Gpwm(s)...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "「列名を入力してください」をやめたら、ツールが実務で使えるようになった",
+      "url": "https://zenn.dev/haruto_dev/articles/3fa2aaaeab9223",
+      "site": "Zenn(Python)",
+      "published": "2026-07-21T09:13:44Z",
+      "description": "Python初心者が、AIと一緒に「Excelを項目ごとに分割するツール」を作りました。\n処理そのものは pandas の groupby で数行です。難しくない。\nなのに、最初に完成したものは「自分しか使えないツール」でした。\n原因はロジックではなく、ユーザーに何を入力させるかでした。その1点を直した話を書きます。\n\n 作ったもの\n1つの表を、指定した項目の値ごとに別々のExcelファイルへ分割...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "Claude Code + Notion でターミナルから一歩も出ずにタスク消化・ドキュメント生成を全自動化する",
+      "url": "https://zenn.dev/epicai_techblog/articles/1bc0f3769bfddc",
+      "site": "Zenn(Python)",
+      "published": "2026-07-21T09:00:08Z",
+      "description": "0.はじめに\nこんにちは。株式会社EpicAIでエンジニアをしているHamaです。\nエンジニアの皆さん、日々のタスク管理どうやっていますか？\n私はいつもNotionで管理していますが、逐一Notionに書くのも手間がかかるものです。ターミナル、エディタ、ブラウザ、Notionと複数のアプリを行き来すると集中力も削がれてしまいます。できればターミナルだけで仕事を完結させたいです。\nそこで今回はCla...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "3Dプリント自作ロボットハンド「Amazing Hand」をソフトゼロから動かすまで",
+      "url": "https://zenn.dev/quant_over_qual/articles/amazing-hand-software-setup",
+      "site": "Zenn(Python)",
+      "published": "2026-07-21T07:53:24Z",
+      "description": "はじめに\nAmazing Hand は、Pollen Robotics が公開しているオープンソースの3Dプリント人型ロボットハンドです。\n\n4本指・8自由度（1本あたり Feetech SCS0009 サーボ2個）\nケーブルを外に出さず、すべてのアクチュエータを手の中に収める設計\n3Dプリント可能・約400g・200ユーロ以下・オープンソース\n\nこの記事では、ハードの組み立てが終わった状態から、...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "exit 0なのにPNGが無い。Edge出力を待って直した話",
+      "url": "https://zenn.dev/miyoki_labs/articles/mediagen-edge-headless-screenshot-race",
+      "site": "Zenn(Python)",
+      "published": "2026-07-21T06:26:50Z",
+      "description": "subprocess.run()がexit 0なのに、直後のPath.is_file()ではPNGが見つからない——そんな間欠不具合を追っている人向けの記録です。\nヘッドレスEdgeの出力を最大5秒待ち、出なければ最大3回やり直す修正と、そこに至る切り分けの過程をまとめます。\n\n 何を作ったか\nmediagenは、JSONの発注書から媒体別の投稿画像を作るCLIです。\nもともとはNompass向け...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "仮説検定チートシート：どの検定をいつ使うか完全ガイド",
+      "url": "https://zenn.dev/ds_ai_lab/articles/20260608-hypothesis-testing-cheatsheet",
+      "site": "Zenn(Python)",
+      "published": "2026-07-21T04:58:24Z",
+      "description": "このチートシートの使い方\n「2群の平均を比べたい→正規分布に従う？→t検定 or Mann-Whitney検定」のように、データの種類と知りたいことを答えるだけで検定を選べる構成にしています。数式・使用条件・Pythonコードをセットで掲載します。\n\n\n 検定の選び方フローチャート\nデータの種類は？\n├─ 連続値・量的データ\n│   └─ 群の数は？\n│       ├─ 1群：母平均の検定\n│ ...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "Are you Spookies?? 機械学習で顔の画像認識をしよう",
+      "url": "https://zenn.dev/spookies/articles/d9d83ce5569f5e",
+      "site": "Zenn(Python)",
+      "published": "2026-07-21T04:45:17Z",
+      "description": "!\nこの記事ははてなブログ（2017年10月15日公開）からの移行記事です。\n内容が古い場合がありますのでご注意ください。\n\n最近、アニメを見まくっているIoT開発部の西村です。\nこんにちは。\n感動シーンでナミダしている僕の横で、犬がうるせーなって顔してるのがたまらないです。\nどうぞよろしくお願い致します。\n\n 課題・モチベーション\n\n去年買ったオライリー本「ゼロから作るDeep Learning...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "エンジニア視点で語る！Pythonで学ぶマクロ経済学入門 25",
+      "url": "https://zenn.dev/maszkot/articles/712ac95c90e499",
+      "site": "Zenn(Python)",
+      "published": "2026-07-21T04:40:29Z",
+      "description": "https://qiita.com/maskot1977/items/c7c23bc5c1c21de06d77\n【今回のテーマ】\n「『財源がない』は本当か？――減税・給付・成長・税収をPythonで読み解く」\n\n\n オープニング\nDJミオ（女）\nこんばんは！「エンジニア視点で語る！Pythonで学ぶマクロ経済学入門」、ナビゲーターのDJミオです。\nDJレン（男）\nDJレンです。今回のテーマは、かな...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "GPT Image 2 完全解説 — LM Arenaリークと5大進化、DALL-E廃止前の移行ガイド",
+      "url": "https://zenn.dev/kai_kou/articles/249-gpt-image-2-dalle-migration-guide",
+      "site": "Zenn(Python)",
+      "published": "2026-07-21T03:58:15Z",
+      "description": "はじめに\n2026年4月4日から5日にかけて、画像生成モデルの評価プラットフォーム Arena（旧LMArena / 旧Chatbot Arena） に正体不明の3モデルが出現しました。コードネームは maskingtape-alpha、gaffertape-alpha、packingtape-alpha。テスター達を驚かせた後、数時間で消えました。\n業界ではこれを GPT Image 2のグレー...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "mimic入門：アプリ通信からPythonクライアントの雛形を作る仕組みと試し方",
+      "url": "https://zenn.dev/njomote/articles/6b59363779543a",
+      "site": "Zenn(Python)",
+      "published": "2026-07-21T03:55:58Z",
+      "description": "mimic入門：アプリ通信からPythonクライアントの雛形を作る仕組みと試し方\nlittledivy/mimicは、取得したHTTP通信からPythonクライアントの雛形を作るソフトウェアです。ソースコードは公開されており、OSSとして利用できます。コードの下書きには、大規模言語モデル（LLM）を使います。\nREADMEだけを読むと、アプリがそのままPythonライブラリへ変わるように見えます。...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "正規表現の貪欲・非貪欲・強欲——<.*>が取りすぎる理由と最短マッチの直し方",
+      "url": "https://zenn.dev/genten/articles/ff017db4103e8c",
+      "site": "Zenn(Python)",
+      "published": "2026-07-21T03:10:44Z",
+      "description": "&lt;a&gt;&lt;b&gt; から &lt;a&gt; だけ取りたいのに &lt;a&gt;&lt;b&gt; 全部が取れてしまう。正規表現で最も遭遇率の高いこの「取りすぎ」は、量指定子の**貪欲（greedy）**という既定動作が原因です。3分で仕組みと直し方をまとめます。コードは実機（Node.js 24 / CPython 3.14）で実行検証済みです。\n\n 現象の再現\n// Jav...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "Pythonの\\dは全角数字にもマッチする——気づかず事故る正規表現のUnicode既定",
+      "url": "https://zenn.dev/genten/articles/39923ffc72168f",
+      "site": "Zenn(Python)",
+      "published": "2026-07-21T03:10:34Z",
+      "description": "「数値バリデーションを書いたのに、全角の １２３ が通ってしまった」——Pythonでこの事故が起きるのは、バグではなく仕様です。この記事は現象の再現から対処までを3分で読める形にまとめました。コードはすべて実機（CPython 3.14 / Node.js 24）で実行検証しています。\n\n 現象: 同じ\\dなのにPythonとJavaScriptで結果が違う\n# Python\nimport re...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
     {
       "title": "【技術解説】アルゴリズム取引 戦略 コードで資産運用を加速！RSIとMACDの組み合わせ手法",
       "url": "https://zenn.dev/sugarfree/articles/e382a2e383abe382b4e383aae382bae383a0e58f96e5b",
@@ -29,6 +149,16 @@
       "site": "Zenn(Python)",
       "published": "2026-07-21T01:32:16Z",
       "description": "XML はデータ交換フォーマットとして広く利用されており、API のレスポンスや設定ファイル、システム間連携など様々な場面で見かけます。一方、Excel はデータの閲覧や分析、編集に適したツールであり、XML データを Excel に変換したいニーズは少なくありません。\n本記事では、Python を使用して XML データを Excel ファイルに変換する方法を紹介します。処理には Excel フ...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "競馬AI開発記録 #25 予測空間の「統治」と統合：マルチモデル・ポートフォリオへの覚醒",
+      "url": "https://zenn.dev/ricotiler/articles/keiba-ai-25-multi_model_integration_strategy",
+      "site": "Zenn(Python)",
+      "published": "2026-07-21T01:09:23Z",
+      "description": "概要\n前話（第24話）では、単勝特化の限界を打破するために**複勝専用モデル（TOP3モデル）**を導入し、モデル間の特徴量空間を論理的に分離する試みについて触れました。しかし、場当たり的な分離だけでは、モデルが増えるたびに「データの汚染」や「パイプラインの不整合」が発生する脆さが露呈しました。\n第25話では、これらの課題を根本から解決するためのアーキテクチャ刷新と、複数のモデルを最適に組み合わせ...",
       "category": "開発",
       "rss_category": "",
       "image_url": ""
