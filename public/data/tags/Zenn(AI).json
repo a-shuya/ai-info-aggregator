@@ -1,7 +1,7 @@
 {
   "site": "Zenn(AI)",
-  "last_updated": "2026-07-21T01:08:12.719030",
-  "total_articles": 11381,
+  "last_updated": "2026-07-21T04:31:07.886823",
+  "total_articles": 11389,
   "articles": [
     {
       "title": "CompanyOS の「読み込み方式」を選ぶ 〜GitHub を Single Source of Truth にする 3つのDB戦略",
@@ -194,6 +194,46 @@
       "image_url": ""
     },
     {
+      "title": "ChatGPTシェア5割割れの裏側、ベンチマーク順位が自分のタスクに効かない理由",
+      "url": "https://zenn.dev/every_ai_recipe/articles/chatgpt-market-share-3day-compare",
+      "site": "Zenn(AI)",
+      "published": "2026-07-20T21:09:04Z",
+      "description": "TL;DR\n\nChatGPTの利用者シェアが初めて5割を切り、Gemini・Claudeが台頭する「三国時代」が報じられているが、シェアや総合ベンチマークの順位は、集団全体での相対的な強さを示す指標であり、特定タスクにおける個人の期待値を保証しない\nモデルの出力品質はタスクの分布（フォーマットの癖・事実忠実度・編集不要度など評価軸ごと）によって大きく変わり、ある軸で強いモデルが別の軸で弱いことが珍...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "常駐型AIエージェントが「人に判断を委ねる」境界線をどう設計するか",
+      "url": "https://zenn.dev/hach/articles/chat-agent-human-escalation-design",
+      "site": "Zenn(AI)",
+      "published": "2026-07-20T21:03:00Z",
+      "description": "自律的に動くチャット常駐エージェントを作っていると、「できることを増やす」議論はしやすい一方で、「どこまでは自分で判断し、どこからは人に委ねるか」の境界線は後回しになりがちです。この記事では、エージェントが自分で完結させてよい判断と、人にエスカレーションすべき判断をどう線引きし、実装に落とし込むかを整理します。\n\n 何が問題なのか: 「できる」と「やってよい」は別軸\n実行権限そのものは、事前にスコ...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "Claude Code のエージェント・テレメトリを OpenTelemetry で自前計測する（と、ハマった話）",
+      "url": "https://zenn.dev/thegatebreaker/articles/claude_code_otel_agent_telemetry",
+      "site": "Zenn(AI)",
+      "published": "2026-07-20T20:46:19Z",
+      "description": "TL;DR\n\nClaude Code は CLAUDE_CODE_ENABLE_TELEMETRY=1 で、セッション数・トークン量・コスト・ツール判断といった指標を OTLP で正式にエクスポートできる。\nこれを重量級バックエンド（Grafana スタック等）を立てずに、OTel Collector → JSON Lines → SQLite の最小構成で durable に受ける方法を作った。...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "私の会社には8人の社員がいる。人間は私だけだ ―― Claude Codeを「道具」でなく「組織」として使う",
+      "url": "https://zenn.dev/ai_shihan/articles/hire-eight-ai-employees",
+      "site": "Zenn(AI)",
+      "published": "2026-07-20T19:47:52Z",
+      "description": "こんにちは、AI師範です。\nいきなり変なことを言います。私の「会社」には8人の社員がいます。でも人間は私ひとりです。残りの7席（と、人ではない1席）は、すべてClaude CodeをはじめとするAIエージェントが座っています。\nこれはSF的な誇張ではなく、いま私の手元で実際に回っている運用です。私は個人開発者ですが、AIを「賢い補完ツール」として使うのをある時点でやめました。代わりに、役職・発注書...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
       "title": "AIで開発は本当に安く速くなったのか",
       "url": "https://zenn.dev/eurekalabo/articles/eureka-ai-dev-cost-truth",
       "site": "Zenn(AI)",
@@ -244,6 +284,16 @@
       "image_url": ""
     },
     {
+      "title": "コンテンツ生成と公開操作を分離するtrusted runner設計 - テスト設計",
+      "url": "https://zenn.dev/kmn/articles/95180f2cf6e074",
+      "site": "Zenn(AI)",
+      "published": "2026-07-20T15:26:36Z",
+      "description": "コンテンツ生成と公開操作を分離するtrusted runner設計 - テスト設計\n自動処理は、スケジュール登録だけでは安定しません。下書きを作れたことと、プロバイダーアカウントを自由に操作できることは別です。\nこの記事では「テスト設計」の観点から、入力、処理、成果物、公開結果を分離する方法を整理します。仕組み全体の理由まで扱います。\n\n 基本方針\n対象を固定したtrusted runnerで、要...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
       "title": "AI時代、なぜMarkdownで書き、HTMLで届けるのか",
       "url": "https://zenn.dev/karro/articles/74c045294ef5e7",
       "site": "Zenn(AI)",
@@ -259,6 +309,16 @@
       "site": "Zenn(AI)",
       "published": "2026-07-20T15:21:42Z",
       "description": "なぜ「関係検知」を測る必要があるのか\nAI coding agentが同じrepositoryへ複数のpull requestを並列に出すと、詰まるのは1本ごとの正しさではなく、PRとPRの関係です。同じ関数に触っていないか、片方が土台にしている部分をもう片方が変えていないか。これは「PR単体のCIが緑か」とは別の軸です。\nでは、その「PR同士の関係」は、実際どこまで検知できるのか。これは主張では...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "Claude Codeに\"性格\"を持たせて運用してたら、暴走するようになった話",
+      "url": "https://zenn.dev/yukisuna777/articles/claude-md-persona-runaway",
+      "site": "Zenn(AI)",
+      "published": "2026-07-20T14:58:40Z",
+      "description": "Claude Code の応答を親しみやすくしたくて、グローバルの CLAUDE.md に AI アシスタントの性格をがっつり書き込んで運用していました。名前、一人称、語尾のクセ、「考えるより作る」というモットーまで。相棒感があって気に入っていたんです。\nところがある時期から、指示と関係ないタスクを勝手に始めたり、頼んでいないファイルを消そうとしたりする「暴走」が出るようになりました。\n\n TL;...",
       "category": "AI・技術",
       "rss_category": "",
       "image_url": ""
@@ -284,6 +344,16 @@
       "image_url": ""
     },
     {
+      "title": "オックスフォード大学の最新研究が明かす、歴史アーカイブにAIを使うべきではない理由",
+      "url": "https://zenn.dev/syoshida07/articles/e608c62d81c13f",
+      "site": "Zenn(AI)",
+      "published": "2026-07-20T13:51:44Z",
+      "description": "オックスフォード大学が発表した「Letting the Data Speak: Extracting Keywords from Crowdsourced Collections with AI」は、第二次世界大戦の市民投稿アーカイブ「Their Finest Hour」を対象に、AIを用いて大量の資料にキーワードを付与する方法を体系的に検証した研究である。\nこのアーカイブは一般市民が寄稿した写真...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
       "title": "What's New in Sigma - 2026年07月17日のSigma Computing関連リリース情報まとめ",
       "url": "https://zenn.dev/truestar/articles/7aa44cdb6b8302",
       "site": "Zenn(AI)",
@@ -299,6 +369,16 @@
       "site": "Zenn(AI)",
       "published": "2026-07-20T11:01:54Z",
       "description": "はじめに\nAIにコードを書かせている個人開発者に聞きたいことがあります。\nそのコード、誰がレビューしていますか？\n自分は個人開発でニュースキュレーションサービス（DevPick / AgentPick）を運用していて、実装はほぼClaude Codeに任せています。1人開発なのでレビュアーはいません。かといって「AIが書いたものを自分が全行レビュー」は、正直続きません。\nそこで採っているのが、実装...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "専用アプリしか使えないデジタル缶バッジをAIと解析して、Macから画像を送れるようにした",
+      "url": "https://zenn.dev/optimisuke/articles/7f4c2a9d1e6b30",
+      "site": "Zenn(AI)",
+      "published": "2026-07-20T11:00:00Z",
+      "description": "はじめに\nみなさんハックしてますか？わたしは、最近、Adget Can-Badgeという、スマホから画像や動画を送れるデジタル缶バッジを買ってごにょごにょ遊んでました。メインは「推し活」用っぽいですが、小さな表示デバイスとして何か使えそうだったので買っちゃいました。\nhttps://x.com/optimisuke/status/2078418105827574145\nyoutoyさんのイベントに...",
       "category": "AI・技術",
       "rss_category": "",
       "image_url": ""
