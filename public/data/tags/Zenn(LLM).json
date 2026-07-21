@@ -1,8 +1,38 @@
 {
   "site": "Zenn(LLM)",
-  "last_updated": "2026-07-21T04:31:07.886823",
-  "total_articles": 4759,
+  "last_updated": "2026-07-21T07:17:49.515259",
+  "total_articles": 4766,
   "articles": [
+    {
+      "title": "いかにして問いを立てるか──未解決問題までAIが解く時代のPdM",
+      "url": "https://zenn.dev/tokium_dev/articles/how-to-pose-questions",
+      "site": "Zenn(LLM)",
+      "published": "2026-07-20T23:55:05Z",
+      "description": "また数学の未解決問題が、AIに解かれたらしいです。\nある朝、社内のSlackにそんな話題が流れてきました。新しいモデルが出るたびに誰かが「また解けたらしいですよ」と持ってくる、ちょっとした風物詩になりつつあります。ただ今回は少し事情が違いました。証明の中身をよく読むと、私が大学院時代に研究していた領域と、かなり近い。点と線のつながりを扱う、グラフ理論という数学の一分野です。数学科でこれを専攻して修...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "瞳孔の大きさとLLMの知的努力",
+      "url": "https://zenn.dev/idnet/articles/0667bf4ac6f7b2",
+      "site": "Zenn(LLM)",
+      "published": "2026-07-20T23:46:24Z",
+      "description": "以前紹介したダニエル・カーネマンの名著『ファスト＆スロー』では、人間の思考には、直感的で高速な「システム1」と、注意と努力を要する「システム2」という二つの処理過程があると説明されています。同書では、課題の難易度に応じた瞳孔径の変化が、認知的努力を測る有力な指標の一つとしても紹介されています。\nLLMでも近年、タスクの複雑さに応じて、推論トークンや推論過程の長さが変化する挙動が報告されています。も...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "ollama は長い入力の真ん中を捨てる — 実測すると半分しか残らない",
+      "url": "https://zenn.dev/itdevnote/articles/ollama-num-ctx-silent-truncation",
+      "site": "Zenn(LLM)",
+      "published": "2026-07-20T23:00:06Z",
+      "description": "ollama に num_ctx を超える入力を渡すと、超えた分が削られる——のではない。先頭のわずかなトークンと末尾を残して、真ん中がまとめて捨てられる。 残る量はコンテキストのおよそ半分までで、元の入力が長いほど失う量は大きくなる。\nそして捨てられても HTTP 200 が返り、done_reason は stop、出力の体裁も整っている。\nこの記事では、切り捨てが起きる条件・捨てられる場所と...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
     {
       "title": "一体いつから-Github Copilot  Appの能力がコーディングだけだと錯覚していた？",
       "url": "https://zenn.dev/hirayuki/articles/6bafab06767cab",
@@ -44,11 +74,51 @@
       "image_url": ""
     },
     {
+      "title": "ChatGPTシェア5割割れの裏側、ベンチマーク順位が自分のタスクに効かない理由",
+      "url": "https://zenn.dev/every_ai_recipe/articles/chatgpt-market-share-3day-compare",
+      "site": "Zenn(LLM)",
+      "published": "2026-07-20T21:09:04Z",
+      "description": "TL;DR\n\nChatGPTの利用者シェアが初めて5割を切り、Gemini・Claudeが台頭する「三国時代」が報じられているが、シェアや総合ベンチマークの順位は、集団全体での相対的な強さを示す指標であり、特定タスクにおける個人の期待値を保証しない\nモデルの出力品質はタスクの分布（フォーマットの癖・事実忠実度・編集不要度など評価軸ごと）によって大きく変わり、ある軸で強いモデルが別の軸で弱いことが珍...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "常駐型AIエージェントが「人に判断を委ねる」境界線をどう設計するか",
+      "url": "https://zenn.dev/hach/articles/chat-agent-human-escalation-design",
+      "site": "Zenn(LLM)",
+      "published": "2026-07-20T21:03:00Z",
+      "description": "自律的に動くチャット常駐エージェントを作っていると、「できることを増やす」議論はしやすい一方で、「どこまでは自分で判断し、どこからは人に委ねるか」の境界線は後回しになりがちです。この記事では、エージェントが自分で完結させてよい判断と、人にエスカレーションすべき判断をどう線引きし、実装に落とし込むかを整理します。\n\n 何が問題なのか: 「できる」と「やってよい」は別軸\n実行権限そのものは、事前にスコ...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "私の会社には8人の社員がいる。人間は私だけだ ―― Claude Codeを「道具」でなく「組織」として使う",
+      "url": "https://zenn.dev/ai_shihan/articles/hire-eight-ai-employees",
+      "site": "Zenn(LLM)",
+      "published": "2026-07-20T19:47:52Z",
+      "description": "こんにちは、AI師範です。\nいきなり変なことを言います。私の「会社」には8人の社員がいます。でも人間は私ひとりです。残りの7席（と、人ではない1席）は、すべてClaude CodeをはじめとするAIエージェントが座っています。\nこれはSF的な誇張ではなく、いま私の手元で実際に回っている運用です。私は個人開発者ですが、AIを「賢い補完ツール」として使うのをある時点でやめました。代わりに、役職・発注書...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
       "title": "Megatron-Core検定②：1 training step中のメモリ、通信、Pipelineを理解する",
       "url": "https://zenn.dev/izmyon/articles/5f6379fb57f363",
       "site": "Zenn(LLM)",
       "published": "2026-07-20T18:37:11Z",
       "description": "はじめに\n第1回では、DP、TP、PPなどの各Parallelismが何を分割し、その結果として何のメモリが減り、どの通信が増えるのかを整理しました。第2回では、その関係を1 training stepの時間軸に沿って見ていきます。\n設定を検討するには、「TPを増やすとweightが減る」といった対応だけでなく、forward、backward、gradient通信、optimizer updat...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "Claude Codeに\"性格\"を持たせて運用してたら、暴走するようになった話",
+      "url": "https://zenn.dev/yukisuna777/articles/claude-md-persona-runaway",
+      "site": "Zenn(LLM)",
+      "published": "2026-07-20T14:58:40Z",
+      "description": "Claude Code の応答を親しみやすくしたくて、グローバルの CLAUDE.md に AI アシスタントの性格をがっつり書き込んで運用していました。名前、一人称、語尾のクセ、「考えるより作る」というモットーまで。相棒感があって気に入っていたんです。\nところがある時期から、指示と関係ないタスクを勝手に始めたり、頼んでいないファイルを消そうとしたりする「暴走」が出るようになりました。\n\n TL;...",
       "category": "AI・技術",
       "rss_category": "",
       "image_url": ""
