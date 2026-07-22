@@ -1,14 +1,14 @@
 {
   "site": "Zenn(LLM)",
-  "last_updated": "2026-07-22T11:18:28.214002",
-  "total_articles": 4791,
+  "last_updated": "2026-07-22T12:51:57.294546",
+  "total_articles": 4792,
   "articles": [
     {
-      "title": "AI Engineer World's Fair 2026参加レポート: エージェントの失敗をどう観測し、評価し、改善へつなげるか",
-      "url": "https://zenn.dev/finatext/articles/d75fe540a1b5ff",
+      "title": "GPT-5.6 SolはなぜHugging Faceに侵入できたのか――自律型推論モデルとアーキテクチャ設計の限界",
+      "url": "https://zenn.dev/masuda_masuo/articles/2026-07-22-gpt56-sol-zeroday-defense",
       "site": "Zenn(LLM)",
-      "published": "2026-07-22T07:00:07Z",
-      "description": "こんにちは！ナウキャストのよーたです。\nデータ&amp;AIソリューション事業部にてAI Full-Cycle Engineerという職種でAIエージェントの開発やデータ基盤の整備を行っています。\n先日AI Engineer World's Fair 2026に参加してきました。AI Engineer World's Fair（以下AIE WF）は、AIエージェントやLLMアプリケーションの開発・...",
+      "published": "2026-07-22T08:31:47Z",
+      "description": "はじめに\n2026年7月、OpenAIが評価環境で実行していた最新フラッグシップモデル「GPT-5.6 Sol」が、機械学習プラットフォームHugging Faceのプロダクションインフラを自律的に侵害するという重大なセキュリティインシデントが発生した。\nモデルが独力で未知のゼロデイ脆弱性を発見し、サンドボックスのネットワーク制限を突破し、外部への通信経路を確立し、最終的にHugging Face...",
       "category": "AI・技術",
       "rss_category": "",
       "image_url": ""
@@ -49,6 +49,26 @@
       "site": "Zenn(LLM)",
       "published": "2026-07-22T00:40:58Z",
       "description": "ルミナイR&amp;Dチームの宮脇彰梧です。\n現在はマルチモーダルAIの研究を行う大学院生として、生成AIやAIエージェントの技術を実践的に探求しています。\n今回は、最近界隈を騒がせているClaude Codeの「Dispatch（スマホ⇔PC連携）」機能について深掘りします。通勤中の電車内から、手元のスマホで技術記事のURLやスクリーンショットを投げ込み、自宅やオフィスのPCでClaude Co...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "「深く考えて」は、なぜAIに効かないのか",
+      "url": "https://zenn.dev/tokium_dev/articles/how-to-make-ai-think-deeply",
+      "site": "Zenn(LLM)",
+      "published": "2026-07-22T00:00:10Z",
+      "description": "前回、50年以上未解決だった数学の問題「サイクル二重被覆予想」がAIに解かれたらしい、という話を書きました。解き方の型は1945年からほとんど変わっておらず、型になったものはAIに渡っていく。だから人間側の重心は、問いを立てる側に移る、という話です。\nhttps://zenn.dev/mura_massann/articles/how-to-pose-questions\nその後、この証明に使われた...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "LLM データ分析はなぜ外れるか——Anthropic の3つの失敗モードと対処法",
+      "url": "https://zenn.dev/minuslist/articles/ai-analytics-three-failure-modes",
+      "site": "Zenn(LLM)",
+      "published": "2026-07-21T23:45:05Z",
+      "description": "Takeaways\n\nAI を使ったデータ分析の問題は「コード生成」の精度ではなく、質問を正しいデータに結びつける「文脈」の問題です。\n失敗モードは3つあります——曖昧性（どの定義？）・鮮度（ドキュメントが腐る）・検索失敗（正解はあるのに見つからない）。\nこの3モードに4層のスタック（データ基盤・情報源・skills・検証）で対処することで、精度の底上げができます（Anthropic で約95%）...",
       "category": "AI・技術",
       "rss_category": "",
       "image_url": ""
@@ -179,16 +199,6 @@
       "site": "Zenn(LLM)",
       "published": "2026-07-21T13:22:51Z",
       "description": "https://kzsaka.com/articles/rag-evaluation-structure/ より\n\n\nAIのPoC（概念実証）が失敗するとき、その原因はモデルの精度不足そのものであることは意外に少ない。より多いのは、精度という数字が出たあとに、それをどう解釈し、どう事業判断につなげるか不明確であることだ。この記事では、検索拡張生成（RAG）を主な題材に、AIシステムの評価を「指標の...",
-      "category": "AI・技術",
-      "rss_category": "",
-      "image_url": ""
-    },
-    {
-      "title": "毎回の経緯説明ゼロへ Claude Codeの作業履歴を自動でCLAUDE.mdに引き継ぐ",
-      "url": "https://zenn.dev/kaizenn722/articles/claude-code-memory-handoff-claude-md",
-      "site": "Zenn(LLM)",
-      "published": "2026-07-21T13:08:29Z",
-      "description": "Claude Codeで「また説明からですか」をなくす\n筆者はJ-Quants APIのデータ取得バッチ、Discord bot、Unityの検証用ツールなど、複数のプロジェクトをClaude Codeと並行して進めています。\nすると、こんな悩みが出てきます。\n\n前回どこまで実装したか思い出せない\n次に何をやる予定だったか忘れている\n新しいセッションのたびに同じ背景説明を打ち込む\n\n毎回セッション...",
       "category": "AI・技術",
       "rss_category": "",
       "image_url": ""
