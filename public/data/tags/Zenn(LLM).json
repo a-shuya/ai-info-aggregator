@@ -1,8 +1,58 @@
 {
   "site": "Zenn(LLM)",
-  "last_updated": "2026-07-22T12:51:57.294546",
-  "total_articles": 4792,
+  "last_updated": "2026-07-22T15:07:41.314239",
+  "total_articles": 4797,
   "articles": [
+    {
+      "title": "AIエージェントの「コンテキストリセット」問題を、永続メモリ層で解決する",
+      "url": "https://zenn.dev/mameresearcher/articles/ai-agent-persistent-memory-ssot",
+      "site": "Zenn(LLM)",
+      "published": "2026-07-22T11:49:19Z",
+      "description": "これは16媒体に自動配信するコンテンツ基盤の全体アーキテクチャの深掘りシリーズの1本です。前回は「実行者ではなく判断者としてエージェントを起動する」話を書きました。今回はその末尾で予告した、コンテキストが毎回リセットされるエージェントに、どう一貫性を持たせるかを掘り下げます。\n\n 問題: エージェントは起動のたびに「初対面」になる\nCLIベースのAIエージェントを定期起動する構成では、1回の起動が...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "MCPサーバーを早々に使えない子判定してる人、ちょっと待った！！！正しくMCPプロトコルを理解しましょう",
+      "url": "https://zenn.dev/dhq_boiler/articles/da20f951623e81",
+      "site": "Zenn(LLM)",
+      "published": "2026-07-22T11:17:28Z",
+      "description": "はじめに\nよくX(旧Twitter)のポストで、「MCPなんていらん、まともなAPIとドキュメントで十分だ、MCPサーバーなんて用意するだけトークンの無駄」とか、主張する人が見受けられます。\n先に言っておくと、この意見には 尤もな部分 があります。土台となるAPIが素直で、ドキュメントが検索可能なまともな形で置かれていること。これが何より大事で、そこがしっかりしていない状態でMCPだけ被せても、あ...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "Ralph Loop vs /goal: context disposal の検証",
+      "url": "https://zenn.dev/mskbhd/articles/lab-117-claude-code-goal",
+      "site": "Zenn(LLM)",
+      "published": "2026-07-22T11:00:50Z",
+      "description": "きっかけ\n「Claude Code の /goal は Ralph Loop の一部だけを製品化した」という Ranjan Kumar の分析が流れてきた。\nhttps://x.com/ranjankumar/status/2076956802718040215\n\n/goal shipped the completion oracle. They kept one long-running ses...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "オントロジーとは？RAG・AIエージェントの精度を高める業務知識の定義を徹底解説",
+      "url": "https://zenn.dev/nocodesolutions/articles/bbd687db447dc6",
+      "site": "Zenn(LLM)",
+      "published": "2026-07-22T09:53:44Z",
+      "description": "はじめに\n社内文書を検索して回答するAIの仕組み（RAG）を作ったものの、「現場の言葉で質問すると答えられない」「複数の文書にまたがる質問になると急に精度が落ちる」と感じたことはないでしょうか。原因の多くは、AIが文書の「意味のつながり」を持っていないことにあります。文章を断片として検索するだけでは、「この製品の図面はどれか」「この顧客の注文はどの担当者が対応したか」のような、業務では当たり前の関...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "「CLAUDE.mdに書いたのに守られない」のはなぜか——ルールは内容ではなく\"発火条件\"で死ぬ",
+      "url": "https://zenn.dev/devtori/articles/claude-md-firing-conditions",
+      "site": "Zenn(LLM)",
+      "published": "2026-07-22T08:36:50Z",
+      "description": "まず、あなたの書き方だけの問題ではない\nCLAUDE.mdにルールを書いた。守られない。表現を変えた。まだ守られない。もっと強い言葉で書いた（「絶対に」「必ず」「IMPORTANT」）。それでも守られない。\nまず、問題の構造から見ていきます。そもそも「書いておけば守られる」という前提は成り立ちません。\n\nHumanLayerの分析（Writing a good CLAUDE.md）によると、指示が...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
     {
       "title": "GPT-5.6 SolはなぜHugging Faceに侵入できたのか――自律型推論モデルとアーキテクチャ設計の限界",
       "url": "https://zenn.dev/masuda_masuo/articles/2026-07-22-gpt56-sol-zeroday-defense",
@@ -14,11 +64,41 @@
       "image_url": ""
     },
     {
+      "title": "Claude Codeの自己改善ループを半年回したら、禁止ルールばかり量産していた",
+      "url": "https://zenn.dev/rkpg/articles/claude-code-loop-only-bans",
+      "site": "Zenn(LLM)",
+      "published": "2026-07-22T08:22:55Z",
+      "description": "TL;DR\n\n前回書いた .claude/ の自己改善ループ（log → review → amend → eval）を、その後も回し続けました。実行ログ83本、ルール修正（amendment)20本\nある日 amendment の change_type を全部数えたら、「削る」「並び替える」が0本でした。20本すべてが「足す」か「強める」\n原因はスキーマにありました。ログに失敗の欄（corre...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "AI Engineer World's Fair 2026参加レポート: エージェントの失敗をどう観測し、評価し、改善へつなげるか",
+      "url": "https://zenn.dev/finatext/articles/d75fe540a1b5ff",
+      "site": "Zenn(LLM)",
+      "published": "2026-07-22T07:00:07Z",
+      "description": "こんにちは！ナウキャストのよーたです。\nデータ&amp;AIソリューション事業部にてAI Full-Cycle Engineerという職種でAIエージェントの開発やデータ基盤の整備を行っています。\n先日AI Engineer World's Fair 2026に参加してきました。AI Engineer World's Fair（以下AIE WF）は、AIエージェントやLLMアプリケーションの開発・...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
       "title": "さくらのAI Engineを使って無料でClaude Codeを動かそう",
       "url": "https://zenn.dev/wtcr_31/articles/fd0b2d2d773c74",
       "site": "Zenn(LLM)",
       "published": "2026-07-22T06:18:08Z",
       "description": "目的\n日々の開発で多くの人がお世話になっているであろうClaude Code。\nしかし、リクエストの急増などの障害で使えなくなる時はどうしてもあります。\nそんな時にバックアップとして別のエージェントがあると心強いですが、あまり使わないエージェントのために課金し続けるのは抵抗がありますし、かといってローカルLLMはホストマシンのスペックに大きく依存しており、個人が手を出せるレベルのマシンではClau...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "Pydantic AI v2、エージェントの拡張を「capability」1個に畳んだ設計",
+      "url": "https://zenn.dev/okssusucha/articles/20260706-pydantic-ai-v2-capabilities",
+      "site": "Zenn(LLM)",
+      "published": "2026-07-22T04:34:44Z",
+      "description": "エージェントに「Web検索」と「コード実行サンドボックス」と「セッションをまたぐ記憶」を足したい。よくあるフレームワークだと、この作業は一箇所では終わらない。ツールを登録する場所、システムプロンプトを書き足す場所、実行中にモデルへ渡す文脈を差し替えるフック、モデル設定のノブ、それぞれが別のレイヤーに散らばっていて、機能を1つ増やすたびに4〜5箇所を触ることになる。\nPydantic AI v2 が...",
       "category": "AI・技術",
       "rss_category": "",
       "image_url": ""
@@ -54,26 +134,6 @@
       "image_url": ""
     },
     {
-      "title": "「深く考えて」は、なぜAIに効かないのか",
-      "url": "https://zenn.dev/tokium_dev/articles/how-to-make-ai-think-deeply",
-      "site": "Zenn(LLM)",
-      "published": "2026-07-22T00:00:10Z",
-      "description": "前回、50年以上未解決だった数学の問題「サイクル二重被覆予想」がAIに解かれたらしい、という話を書きました。解き方の型は1945年からほとんど変わっておらず、型になったものはAIに渡っていく。だから人間側の重心は、問いを立てる側に移る、という話です。\nhttps://zenn.dev/mura_massann/articles/how-to-pose-questions\nその後、この証明に使われた...",
-      "category": "AI・技術",
-      "rss_category": "",
-      "image_url": ""
-    },
-    {
-      "title": "LLM データ分析はなぜ外れるか——Anthropic の3つの失敗モードと対処法",
-      "url": "https://zenn.dev/minuslist/articles/ai-analytics-three-failure-modes",
-      "site": "Zenn(LLM)",
-      "published": "2026-07-21T23:45:05Z",
-      "description": "Takeaways\n\nAI を使ったデータ分析の問題は「コード生成」の精度ではなく、質問を正しいデータに結びつける「文脈」の問題です。\n失敗モードは3つあります——曖昧性（どの定義？）・鮮度（ドキュメントが腐る）・検索失敗（正解はあるのに見つからない）。\nこの3モードに4層のスタック（データ基盤・情報源・skills・検証）で対処することで、精度の底上げができます（Anthropic で約95%）...",
-      "category": "AI・技術",
-      "rss_category": "",
-      "image_url": ""
-    },
-    {
       "title": "LLMの評価を性能に変える3つの行き先",
       "url": "https://zenn.dev/takkuhiro/articles/eval-to-improvement-survey",
       "site": "Zenn(LLM)",
@@ -89,16 +149,6 @@
       "site": "Zenn(LLM)",
       "published": "2026-07-21T21:11:00Z",
       "description": "TL;DR\n\n同一の文章に対して、同一の質問文のまま冒頭のロール指定（厳しい心理カウンセラー／占い師／新卒後輩）だけを変えて生成させると、出力の指摘内容・語り口が大きく変わることを実際に確認した\nロール条件付け（persona prompting）は、出力トークン列の分布を丸ごとシフトさせるが、実務で効きやすいのは主に「文体軸」（語尾・比喩・言葉選び）であり、「内容軸」（何を指摘するか）まではロー...",
-      "category": "AI・技術",
-      "rss_category": "",
-      "image_url": ""
-    },
-    {
-      "title": "Anthropicの6つのエージェント設計パターンは2026年の今も通用するのか?",
-      "url": "https://zenn.dev/hkame/articles/agent-patterns-2026",
-      "site": "Zenn(LLM)",
-      "published": "2026-07-21T20:17:44Z",
-      "description": "2024年12月、Anthropicは\"Building Effective Agents\"という短いエンジニアリング記事を公開した。当時すでに広がりすぎて掴みどころのなくなっていた「エージェント」というテーマに、小さく精密な語彙を与えたという点で異例の記事だった。5つの組み合わせ可能なWorkflowパターン(Prompt Chaining、Routing、Parallelization、Eva...",
       "category": "AI・技術",
       "rss_category": "",
       "image_url": ""
