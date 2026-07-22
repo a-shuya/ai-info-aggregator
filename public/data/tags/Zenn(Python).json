@@ -1,8 +1,68 @@
 {
   "site": "Zenn(Python)",
-  "last_updated": "2026-07-22T03:43:40.375660",
-  "total_articles": 5225,
+  "last_updated": "2026-07-22T06:17:46.183230",
+  "total_articles": 5231,
   "articles": [
+    {
+      "title": "SQLAlchemyのIntegrityErrorを一意制約違反の例外としてexceptしてはいけない",
+      "url": "https://zenn.dev/naokimat/articles/4020b8017134a2",
+      "site": "Zenn(Python)",
+      "published": "2026-07-22T05:35:54Z",
+      "description": "はじめに\nSQLAlchemy で一意制約に違反すると、次のような IntegrityError が発生します。\nsqlalchemy.exc.IntegrityError: (psycopg.errors.UniqueViolation) duplicate key value violates unique constraint ...\nここで IntegrityError を捕捉し、無条件に...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "PyInstaller製exeがSmart App Controlにブロックされる問題と、配布形式の見直し",
+      "url": "https://zenn.dev/haruto_dev/articles/32c674878400f3",
+      "site": "Zenn(Python)",
+      "published": "2026-07-22T04:08:05Z",
+      "description": "Pythonで作った業務ツールを、Python環境の無い人に渡したくて PyInstaller でexe化しました。\n結論から書くと、Smart App Control にブロックされて、配布をあきらめました。\nウイルス対策ソフトの警告なら「許可してください」と案内できます。でもSmart App Controlは違いました。個別に許可する手段が存在しません。\n同じことをやろうとしている人向けに、...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "公式MCPの時刻サーバーに嘘のタイムゾーンを投げたら、名乗っているバージョンの方が嘘だった",
+      "url": "https://zenn.dev/numarn/articles/mcp-time-server-handson",
+      "site": "Zenn(Python)",
+      "published": "2026-07-22T03:29:19Z",
+      "description": "MCP(Model Context Protocol、AIに外部機能を追加できる仕組み)には、時刻の取得やタイムゾーン変換だけを行う公式サンプルサーバーmcp-server-timeがあります。地味な題材ですが、AI本体を経由せず自分で書いた小さなプログラムから直接叩いてみると、「サーバーが名乗っているバージョン番号を信用してはいけない」「ソースコードがちゃんと書いたエラー処理が実は握りつぶされて...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "VibeCoderが陥る罠：可読性・環境変数・分割設計とAGENTS.md活用",
+      "url": "https://zenn.dev/zapabob/articles/vibecoder-software-engineering-best-practices-2",
+      "site": "Zenn(Python)",
+      "published": "2026-07-22T01:11:45Z",
+      "description": "前回の記事（いまさら聞けないVibeCoder向け：git・GitHub・PR・CodeRabbit入門）では、gitとGitHubの基礎からチーム作業の流れまでを整理しました。\n今回は「コードが動いた」その先の話です。\nAIは素早くコードを生成しますが、AIが生成したコードをAIが読み直すとき、人間と同じ困りごとを抱えます。意味不明な数値、どこから読めばいいか分からない1ファイル、埋め込まれた認...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "株式分割でEPSが二重に小さくなる問題と、外貨建て決算の自動検出",
+      "url": "https://zenn.dev/edinetty/articles/5ee223926a93e6",
+      "site": "Zenn(Python)",
+      "published": "2026-07-21T23:25:20Z",
+      "description": "はじめに\n最初の記事で EDINET の有価証券報告書10年分の正規化について書き、最後に「書ききれなかったことが2つ残っている」と予告していました。今回はその2つです。\n\n期末後の株式分割で1株あたり指標（EPS など）が二重に小さく出てしまう問題\n外貨建てで報告している会社を自動で見分ける処理\n\nどちらも、数字は取れているのに値が信用できない問題で、ランキングや異常検知に直結します。成果物は ...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "画像認識の前に画像を整える ―― 前処理の三つの型と、点処理を仮想FPGAで確かめる",
+      "url": "https://zenn.dev/logicia32/articles/2026-07-19-fpga-preproc-1-point",
+      "site": "Zenn(Python)",
+      "published": "2026-07-21T22:20:44Z",
+      "description": "カメラで撮った画像をそのまま認識器に入れても、うまく当たらないことがあります。明るさや向き、大きさ、ノイズが撮るたびに変わるからです。認識の前に、そのばらつきを整えておきます。これが前処理で、地味ですが認識の精度を底上げする工程です。\n私はこれから画像処理をちゃんとやりたくて、まず前処理から手を動かして確かめることにしました。この記事はその記録で、一緒に手探りするつもりで書いています。\n前処理でよ...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
     {
       "title": "Psi4の活用事例（分子間相互作用）SAPT計算の基礎と実践　その２",
       "url": "https://zenn.dev/pincolo/articles/21b358ab078c4f",
