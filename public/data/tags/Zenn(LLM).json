@@ -1,7 +1,7 @@
 {
   "site": "Zenn(LLM)",
-  "last_updated": "2026-07-23T11:58:51.085009",
-  "total_articles": 4821,
+  "last_updated": "2026-07-23T14:25:11.373856",
+  "total_articles": 4826,
   "articles": [
     {
       "title": "脆弱性情報と資産インベントリの突合をLLMに丸投げしたら、静かに間違えていた",
@@ -14,11 +14,61 @@
       "image_url": ""
     },
     {
+      "title": "Claudeが口に出す前の思考を読む、AnthropicのJ-lens",
+      "url": "https://zenn.dev/okssusucha/articles/20260707-anthropic-jlens-global-workspace",
+      "site": "Zenn(LLM)",
+      "published": "2026-07-23T04:36:13Z",
+      "description": "テスト用のメールアシスタントとして動いていたClaudeが、返答を1文字も書き出す前に、内部では「fake(偽物)」「fictional(架空)」という概念のパターンが点灯していた。目の前のシナリオが本物の業務ではなく評価であることに、出力より先に気づいていたわけだ。Anthropicが2026年7月6日に公開した解釈可能性研究は、こういう「口に出す前の思考」を外から読む道具を提示している。名前は...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "「完了しました」を信じるな。AIエージェントに実結果の再取得を強制する検証ゲート",
+      "url": "https://zenn.dev/maronsan/articles/genchi-completion-verification-gate",
+      "site": "Zenn(LLM)",
+      "published": "2026-07-23T04:30:48Z",
+      "description": "「投入して完了しました」——でも、実際には1行も入っていなかった\n受託の仕事を、AIエージェントにかなり任せている。本番へのデプロイ、レポート生成、データの一括投入。うまくいった手順は片っ端からスキルにして、今では数十個のスキルが日々の実務を回している。\nつまずいたのは、ある一括投入のときだった。エージェントは最後にこう言った。\n\n「◯件のデータを投入しました。完了です。」\n\nいつも通りの完了報告...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "MiniMax M2.7入門 — 自己進化AIがSWE-Pro 56%を達成するMoEコーディングエージェント",
+      "url": "https://zenn.dev/kai_kou/articles/250-minimax-m27-self-evolving-agent-guide",
+      "site": "Zenn(LLM)",
+      "published": "2026-07-23T03:59:47Z",
+      "description": "はじめに\n2026年4月12日、中国のAIスタートアップ MiniMax が MiniMax M2.7 をオープンウェイトとして公開しました。M2.7 は同社初の「自己進化型（Self-Evolving）」AIで、100ラウンドを超える自律的な最適化ループを通じて自分自身の開発に参加し、コーディング性能を 30% 向上させた記録を持ちます。\n実際のソフトウェアエンジニアリング能力を測る SWE-b...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
       "title": "Agon: 競争する二つのモデルが互いに推論を採点する新しいRLパラダイム",
       "url": "https://zenn.dev/lixian/articles/agon-competitive-cross-model-rl",
       "site": "Zenn(LLM)",
       "published": "2026-07-23T03:56:24Z",
       "description": "TL;DR\nGRPOをはじめとするRLVR（RL with Verifiable Rewards）は現代の推論モデルの基盤技術だが、最終答えしか採点しないという根本的な制約がある。難問ほど「もっと書けば当たるかもしれない」という長さハッキングに走り、traceの質は評価されない。\nAgonはこの問題に競争的枠組みで挑む。二つのモデル（同一基盤のLoRAペア）が同じ問題を解き、片方がドラフトを書き、...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "斜め読みしやすいコードをAIに吐かせる",
+      "url": "https://zenn.dev/primenumber/articles/readable-code-written-by-ai",
+      "site": "Zenn(LLM)",
+      "published": "2026-07-23T02:42:44Z",
+      "description": "AIが生成したコードをいかにレビューするか。いやはや、もはや従来的な人間がAIのコードをいちいち読むという行為がナンセンスで、別の仕組みで品質を担保するべきだ、といったような話を連日目にする。\nそのような大きな価値転換のテーマも面白いが、もう少しライトな、今まで通りコードに目を通す前提で、ちょっと工夫を入れることで読みやすくしているという話をしてみたい。\n直近の私の仕事的に、アイデアを元に単発のC...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "Cockpitのgrokが「完了」と言っても、まず信用しない",
+      "url": "https://zenn.dev/syrup/articles/bcfdce01e552b3",
+      "site": "Zenn(LLM)",
+      "published": "2026-07-23T02:26:49Z",
+      "description": "Cockpitのgrokが「完了」と言っても、まず信用しない\n\nAGI Cockpit——各 LLM CLI の標準入出力を仲介して LLM 間通信を行う AI オーケストレーションツール——で grok を実装 Worker に据えたいとき、いちばん気になるのは賢さより制御だと思う。親（オーケストレーター AI）が子である Worker（実装担当の grok）に仕事を渡すと、途中経過が PTY ...",
       "category": "AI・技術",
       "rss_category": "",
       "image_url": ""
