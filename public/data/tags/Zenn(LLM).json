@@ -1,14 +1,94 @@
 {
   "site": "Zenn(LLM)",
-  "last_updated": "2026-07-23T04:42:02.402166",
-  "total_articles": 4814,
+  "last_updated": "2026-07-23T07:24:59.622824",
+  "total_articles": 4818,
   "articles": [
     {
-      "title": "個人開発でインシデント対応の閉ループを再現する — AI RCAからrunbook自己改善まで",
+      "title": "脆弱性情報と資産インベントリの突合をLLMに丸投げしたら、静かに間違えていた",
+      "url": "https://zenn.dev/secure_ops_hi/articles/d3d2eaa4afc93a",
+      "site": "Zenn(LLM)",
+      "published": "2026-07-23T05:02:58Z",
+      "description": "要約\n\n脆弱性リストとサーバのソフトウェア一覧を丸ごとLLMに渡して「影響有無を判定して」とやると、9割は正しく、1割を静かに間違える\n\n間違いの大半はバージョン比較とディストリのバックポートに起因する。どちらもLLMの苦手分野で、しかも自信満々に間違える\n結論：自動化すべきは判定そのものではなく、判定材料の準備。バージョン比較は決定論的コードに任せ、LLMは自然言語のパースだけに使う\n\n\n\n 1...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "Claudeが口に出す前の思考を読む、AnthropicのJ-lens",
+      "url": "https://zenn.dev/okssusucha/articles/20260707-anthropic-jlens-global-workspace",
+      "site": "Zenn(LLM)",
+      "published": "2026-07-23T04:36:13Z",
+      "description": "テスト用のメールアシスタントとして動いていたClaudeが、返答を1文字も書き出す前に、内部では「fake(偽物)」「fictional(架空)」という概念のパターンが点灯していた。目の前のシナリオが本物の業務ではなく評価であることに、出力より先に気づいていたわけだ。Anthropicが2026年7月6日に公開した解釈可能性研究は、こういう「口に出す前の思考」を外から読む道具を提示している。名前は...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "「完了しました」を信じるな。AIエージェントに実結果の再取得を強制する検証ゲート",
+      "url": "https://zenn.dev/maronsan/articles/genchi-completion-verification-gate",
+      "site": "Zenn(LLM)",
+      "published": "2026-07-23T04:30:48Z",
+      "description": "「投入して完了しました」——でも、実際には1行も入っていなかった\n受託の仕事を、AIエージェントにかなり任せている。本番へのデプロイ、レポート生成、データの一括投入。うまくいった手順は片っ端からスキルにして、今では数十個のスキルが日々の実務を回している。\nつまずいたのは、ある一括投入のときだった。エージェントは最後にこう言った。\n\n「◯件のデータを投入しました。完了です。」\n\nいつも通りの完了報告...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "MiniMax M2.7入門 — 自己進化AIがSWE-Pro 56%を達成するMoEコーディングエージェント",
+      "url": "https://zenn.dev/kai_kou/articles/250-minimax-m27-self-evolving-agent-guide",
+      "site": "Zenn(LLM)",
+      "published": "2026-07-23T03:59:47Z",
+      "description": "はじめに\n2026年4月12日、中国のAIスタートアップ MiniMax が MiniMax M2.7 をオープンウェイトとして公開しました。M2.7 は同社初の「自己進化型（Self-Evolving）」AIで、100ラウンドを超える自律的な最適化ループを通じて自分自身の開発に参加し、コーディング性能を 30% 向上させた記録を持ちます。\n実際のソフトウェアエンジニアリング能力を測る SWE-b...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "Agon: 競争する二つのモデルが互いに推論を採点する新しいRLパラダイム",
+      "url": "https://zenn.dev/lixian/articles/agon-competitive-cross-model-rl",
+      "site": "Zenn(LLM)",
+      "published": "2026-07-23T03:56:24Z",
+      "description": "TL;DR\nGRPOをはじめとするRLVR（RL with Verifiable Rewards）は現代の推論モデルの基盤技術だが、最終答えしか採点しないという根本的な制約がある。難問ほど「もっと書けば当たるかもしれない」という長さハッキングに走り、traceの質は評価されない。\nAgonはこの問題に競争的枠組みで挑む。二つのモデル（同一基盤のLoRAペア）が同じ問題を解き、片方がドラフトを書き、...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "斜め読みしやすいコードをAIに吐かせる",
+      "url": "https://zenn.dev/primenumber/articles/readable-code-written-by-ai",
+      "site": "Zenn(LLM)",
+      "published": "2026-07-23T02:42:44Z",
+      "description": "AIが生成したコードをいかにレビューするか。いやはや、もはや従来的な人間がAIのコードをいちいち読むという行為がナンセンスで、別の仕組みで品質を担保するべきだ、といったような話を連日目にする。\nそのような大きな価値転換のテーマも面白いが、もう少しライトな、今まで通りコードに目を通す前提で、ちょっと工夫を入れることで読みやすくしているという話をしてみたい。\n直近の私の仕事的に、アイデアを元に単発のC...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "Cockpitのgrokが「完了」と言っても、まず信用しない",
+      "url": "https://zenn.dev/syrup/articles/bcfdce01e552b3",
+      "site": "Zenn(LLM)",
+      "published": "2026-07-23T02:26:49Z",
+      "description": "Cockpitのgrokが「完了」と言っても、まず信用しない\n\nAGI Cockpit——各 LLM CLI の標準入出力を仲介して LLM 間通信を行う AI オーケストレーションツール——で grok を実装 Worker に据えたいとき、いちばん気になるのは賢さより制御だと思う。親（オーケストレーター AI）が子である Worker（実装担当の grok）に仕事を渡すと、途中経過が PTY ...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "VRAMに乗らないMoEをNVMe＋GPU推論で動かす：Hypura/llama.cpp/TurboQuant解説",
+      "url": "https://zenn.dev/zapabob/articles/hypura-nvme-moe-gpu-inference",
+      "site": "Zenn(LLM)",
+      "published": "2026-07-23T02:08:21Z",
+      "description": "一次資料\n\n\nzapabob/hypura — ストレージ階層対応GGUFランタイム\n\nzapabob/llama.cpp — SO(8) Triality / TurboQuant KVキャッシュ研究fork\n\nzapabob/Turboquant-CUDA — KVキャッシュ量子化研究・GGUF生成ツールチェーン\n\n\n\n\n なぜこの問題が起きるのか\nQwen3-235B や DeepSeek ...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "個人開発の運用コストO(n)をAI閉ループで圧縮する — incident-loopの設計と安全境界",
       "url": "https://zenn.dev/syrup/articles/67d58b6b6381f1",
       "site": "Zenn(LLM)",
       "published": "2026-07-23T01:22:33Z",
-      "description": "個人開発でインシデント対応の閉ループを再現する\n複数のtoCプロダクトを並行して運営していると、サポートと運用の負荷はだいたいプロダクト数に比例する。障害の形は似ているのに、毎回人がログを読み、runbookを開き、緩和手順を手で打つ。その「O(n)問題」を、AIエージェントとドキュメント第一主義でどこまで圧縮できるか——を検証する実験プロジェクト incident-loop の途中経過を、再現可...",
+      "description": "個人開発の運用コストO(n)をAI閉ループで圧縮する\n\n複数の toC プロダクトを並行運営すると、障害の形は似ているのに、毎回人がログを読み runbook を開き緩和を手で打つ。その O(n) 問題を、AI エージェントとドキュメント第一主義でどこまで圧縮できるか——を検証する実験が incident-loop である。本稿は総論・アーキテクチャ・安全境界に絞る。エージェント制御は別稿（doc...",
       "category": "AI・技術",
       "rss_category": "",
       "image_url": ""
@@ -19,26 +99,6 @@
       "site": "Zenn(LLM)",
       "published": "2026-07-23T00:47:12Z",
       "description": "!\nこの記事は本文をLLM（生成AI）が作成し、著者が内容を確認・修正しています。\n\n\n はじめに\n前回（探求①） ——きっかけになった Wantedlyさんの記事 の追試から始めた OpenP5 の検証——では、生成的推薦で 「アイテムIDの振り方（item indexing）」がデータの疎密で効き方を変えることを見ました。ざっくり再掲すると：\n\n\n密なML100K：構造のない random な...",
-      "category": "AI・技術",
-      "rss_category": "",
-      "image_url": ""
-    },
-    {
-      "title": "ollama の入力切り捨てをレスポンスだけで検知する — 3回作り直した記録",
-      "url": "https://zenn.dev/itdevnote/articles/ollama-truncation-detector",
-      "site": "Zenn(LLM)",
-      "published": "2026-07-23T00:00:13Z",
-      "description": "ollama は num_ctx を超えた入力をエラーなく切り捨てます。HTTP 200 が返り、done_reason は stop になります。この挙動そのものは別記事で扱いました。ここでは続きとして、切り捨てが起きたことをレスポンスだけで判定するコードを書きます。\n先に結論を書くと、この検知器は3回作り直しました。1回目と2回目は、書いた本人が「動いている」と思っていた状態で外部レビューに出...",
-      "category": "AI・技術",
-      "rss_category": "",
-      "image_url": ""
-    },
-    {
-      "title": "Claude Fable 5の遺産をOpus 4.8から守るガードを、3週間で3回作り直した",
-      "url": "https://zenn.dev/shotakada/articles/claude-fable5-guard-rebuilds",
-      "site": "Zenn(LLM)",
-      "published": "2026-07-23T00:00:13Z",
-      "description": "はじめに\n6月にOpus 4.8の「court無限ループ」からの復活手順を書き、7月頭には期間限定で使えたClaude Fable 5の話を書いた。今回はその続きにあたる。期間限定の上位モデルが残していった資産を日常運用のモデルからどう守るか、という問題を巡って3週間で同じガードを3回作り直した記録だ。\nモデルの紹介記事ではなく、実際はAIエージェント運用の話になる。結論だけ先に書くと、行き着いた...",
       "category": "AI・技術",
       "rss_category": "",
       "image_url": ""
@@ -59,16 +119,6 @@
       "site": "Zenn(LLM)",
       "published": "2026-07-22T23:29:58Z",
       "description": "!\n注記: 本記事中の企業名・サービス名・データ例（Q&amp;A本文・日付・ファイル名）は、公開用に汎用値へ改変しています。数値（件数・トークン・URL含有率）は実データの計測値です。\n\nカスタマーサポートの現場には、たいてい「答えの塊」がExcelで散らばっている。日付つきの ナレッジ追加_YYYYMMDD.xlsx が何枚も溜まっていく、あの状態だ。これを音声対応AI（電話・音声ボット）に使...",
-      "category": "AI・技術",
-      "rss_category": "",
-      "image_url": ""
-    },
-    {
-      "title": "AI彼女アプリを作っていて気付いた。返事の温度は、返事の前に決まっていた",
-      "url": "https://zenn.dev/mitsukida/articles/bb9f24fb7d640b",
-      "site": "Zenn(LLM)",
-      "published": "2026-07-22T23:09:43Z",
-      "description": "AI彼女アプリを作っていて気付いた。返事の温度は、返事の前に決まっていた\n前回は、\nAIは正解を考えていた。\n人は相手を考えていた。\nそんな話を書いた。\nその違いを作ろうとしていると、\nもう一つ、大きな違いに気付いた。\n\n\n AIは返事を作ろうとしていた\n例えば、\nユーザーが言う。\n\n今日仕事で疲れた。\n\nAIは考える。\n励ました方がいいかな。\n共感した方がいいかな。\n何て返したら自然だろう。\n返...",
       "category": "AI・技術",
       "rss_category": "",
       "image_url": ""
@@ -109,16 +159,6 @@
       "site": "Zenn(LLM)",
       "published": "2026-07-22T21:47:44Z",
       "description": "チュートリアルのRAGは動かせた。LangChainでPDFを検索して、それっぽい回答も返ってきた。でも「じゃあ業務システムとしてRAGを組んで」と言われたら、何から始めますか。\n私はここで手が止まりました。チュートリアルと業務システムの間には、企画・設計・評価という「コード以外の工程」が丸ごと横たわっているからです。\nそこで、実務を想定した個人開発として、企画→設計→ローカル構築→E2E実測→L...",
-      "category": "AI・技術",
-      "rss_category": "",
-      "image_url": ""
-    },
-    {
-      "title": "企画書レビューが当たり障りなくなる理由、役割ラベルだけでは迎合が崩れない原理",
-      "url": "https://zenn.dev/every_ai_recipe/articles/dual-persona-proposal-review",
-      "site": "Zenn(LLM)",
-      "published": "2026-07-22T21:12:26Z",
-      "description": "TL;DR\n\nシステムプロンプトに「批判者です」という役割ラベルを足すだけでは、モデルが生成時に参照する評価軸自体はほとんど変わらない。先行研究でも、ペルソナをシステムプロンプトに追加するだけでは性能への効果は小さいか、むしろ無い場合があると報告されている\n迎合（sycophancy）は指示追従の学習過程で強化される傾向のある挙動で、モデルは両論を内部的に正しく判定できていても、ユーザーからのプッ...",
       "category": "AI・技術",
       "rss_category": "",
       "image_url": ""

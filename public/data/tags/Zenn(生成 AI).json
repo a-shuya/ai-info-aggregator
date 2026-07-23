@@ -1,8 +1,38 @@
 {
   "site": "Zenn(生成 AI)",
-  "last_updated": "2026-07-23T04:42:02.402166",
-  "total_articles": 2994,
+  "last_updated": "2026-07-23T07:24:59.622824",
+  "total_articles": 3000,
   "articles": [
+    {
+      "title": "複数のAIに足りないのは、賢さではなく共有コンテキストだった",
+      "url": "https://zenn.dev/veripsa/articles/multi-ai-agents-need-shared-context",
+      "site": "Zenn(生成 AI)",
+      "published": "2026-07-23T06:42:40Z",
+      "description": "複数のAIを走らせた瞬間、あなたは分散チームを運用している\nClaude Code、OpenAI Codex、GitHub CopilotのようなAI coding agentを1人で使っていても、2つ以上のtaskを並列に走らせた時点で、状況は「1人の開発」ではなくなります。\nそれぞれのagentがbranchを切り、pull requestを作る。しばらくすると、同じrepositoryに複数...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "Claude Codeのフックにexit 2を返したら、片方は完全ブロック・もう片方は黙って無視されていた",
+      "url": "https://zenn.dev/numarn/articles/claude-hooks-block-context-handson",
+      "site": "Zenn(生成 AI)",
+      "published": "2026-07-23T04:27:37Z",
+      "description": "Claude Code の「フック」は、AIエージェントの動きの節目(プロンプトを送った直後、返事を終えて止まろうとする直前など)に自分のコマンドを差し込める仕組みです。以前(公開済みの前回記事)、PreToolUse(ツール実行の直前)と Stop(止まろうとする直前)の2つを、claude 本体を一切起動せずシェルの単体テストとして確かめました。\n今回は逆方向です。本物のClaude Code...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "ollama の入力切り捨てをレスポンスだけで検知する — 3回作り直した記録",
+      "url": "https://zenn.dev/itdevnote/articles/ollama-truncation-detector",
+      "site": "Zenn(生成 AI)",
+      "published": "2026-07-23T00:00:13Z",
+      "description": "ollama は num_ctx を超えた入力をエラーなく切り捨てます。HTTP 200 が返り、done_reason は stop になります。この挙動そのものは別記事で扱いました。ここでは続きとして、切り捨てが起きたことをレスポンスだけで判定するコードを書きます。\n先に結論を書くと、この検知器は3回作り直しました。1回目と2回目は、書いた本人が「動いている」と思っていた状態で外部レビューに出...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
     {
       "title": "AI返信下書きの承認待ちを放置しない：Sheets＋GASで期限切れキューを作る",
       "url": "https://zenn.dev/miraigent/articles/ai-reply-approval-expiry-queue",
@@ -19,6 +49,26 @@
       "site": "Zenn(生成 AI)",
       "published": "2026-07-22T16:17:13Z",
       "description": "はじめに\nこんにちは！今日も限界突破のVibe Codingで爆速開発を楽しんでいますか？\nReactとTailwind CSSを1枚のHTMLに凝縮し、サーバーレスでどこでも動く「完全ポータブルSPA」を量産するプロジェクト「バイチャレ（Vibe Challenge）」。\n第23弾の今回は、日本の伝統的な頭脳スポーツ「将棋」に挑戦しました！\n\n\n 👨‍👦 きっかけは、長男の「将棋ブーム」\n最近、...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "Claude Code 自動運用の実践 — サブエージェント・ワークフロー・Routines・CIで開発を自走させる",
+      "url": "https://zenn.dev/popain/books/claude-code-autonomous-ops",
+      "site": "Zenn(生成 AI)",
+      "published": "2026-07-22T15:43:09Z",
+      "description": "Claude Code を「対話して使うツール」から「自走する開発システム」へ。サブエージェント編成、オーケストレーションパターン、Routines によるスケジュール実行、CI 組み込み、そして自律実行の安全設計まで。入門の次に進みたい実務者のための自動運用専門書。全章、動作確認済みの完全な設定例付き。",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "MCP サーバー内蔵の macOS AI ビデオエディタ - palmier-pro",
+      "url": "https://zenn.dev/suwash/articles/palmier-pro_20260720",
+      "site": "Zenn(生成 AI)",
+      "published": "2026-07-22T15:00:00Z",
+      "description": "palmier-io/palmier-pro は、AI エージェントと人間が同じタイムライン上で協働することを前提に設計された、macOS ネイティブのビデオエディタです。Swift 6.2 でフルスクラッチ実装され、アプリ内に MCP サーバーを内蔵します。Claude Code や Cursor から claude mcp add するだけで、エージェントが 47 個の MCP ツールでタイム...",
       "category": "AI・技術",
       "rss_category": "",
       "image_url": ""
@@ -49,6 +99,16 @@
       "site": "Zenn(生成 AI)",
       "published": "2026-07-22T12:32:19Z",
       "description": "!\nこの記事は実務での一次情報です。末尾に自分のサイトへのリンクを一部PRとして載せています。\n\n\n はじめに｜\"AIで時短\"の、その先でつまずいた\n会議が多い。私の場合、少なくとも週5回。以前は会議のたびに議事録づくりに時間を取られていましたが、今はそこはAIに任せていて、正直ほとんど手をかけていません。\nなので「AIで議事録を自動化しよう」という話は、この記事ではしません。むしろ自動化したあと...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "生成AI後進国になってしまった日本、NRI・千葉大・GLOCOMが示すデータから構造的な問題が見えてくる",
+      "url": "https://zenn.dev/syoshida07/articles/eb78f26df4fef8",
+      "site": "Zenn(生成 AI)",
+      "published": "2026-07-22T12:00:06Z",
+      "description": "近年、生成AIの普及は世界的に急速に進んでいるが、日本に限ってなのか「利用率が低い」「業務導入が進まない」という指摘の記事をよく見かける。\nそこで国内外の信頼性の高い一次調査を横断的に分析し、日本のAI利用が遅れている実態とその背景を体系的に整理してみた。\n対象とする調査は\n・野村総合研究所（NRI）\n・千葉大学\n・国際大学GLOCOM\n・FULLFACT\n・AI時短ラボ（総務省・OECD分析）\n...",
       "category": "AI・技術",
       "rss_category": "",
       "image_url": ""
