@@ -1,7 +1,7 @@
 {
   "site": "Zenn(LLM)",
-  "last_updated": "2026-07-23T10:00:18.657290",
-  "total_articles": 4824,
+  "last_updated": "2026-07-23T11:58:51.085009",
+  "total_articles": 4821,
   "articles": [
     {
       "title": "脆弱性情報と資産インベントリの突合をLLMに丸投げしたら、静かに間違えていた",
@@ -9,26 +9,6 @@
       "site": "Zenn(LLM)",
       "published": "2026-07-23T05:02:58Z",
       "description": "要約\n\n脆弱性リストとサーバのソフトウェア一覧を丸ごとLLMに渡して「影響有無を判定して」とやると、9割は正しく、1割を静かに間違える\n\n間違いの大半はバージョン比較とディストリのバックポートに起因する。どちらもLLMの苦手分野で、しかも自信満々に間違える\n結論：自動化すべきは判定そのものではなく、判定材料の準備。バージョン比較は決定論的コードに任せ、LLMは自然言語のパースだけに使う\n\n\n\n 1...",
-      "category": "AI・技術",
-      "rss_category": "",
-      "image_url": ""
-    },
-    {
-      "title": "Claudeが口に出す前の思考を読む、AnthropicのJ-lens",
-      "url": "https://zenn.dev/okssusucha/articles/20260707-anthropic-jlens-global-workspace",
-      "site": "Zenn(LLM)",
-      "published": "2026-07-23T04:36:13Z",
-      "description": "テスト用のメールアシスタントとして動いていたClaudeが、返答を1文字も書き出す前に、内部では「fake(偽物)」「fictional(架空)」という概念のパターンが点灯していた。目の前のシナリオが本物の業務ではなく評価であることに、出力より先に気づいていたわけだ。Anthropicが2026年7月6日に公開した解釈可能性研究は、こういう「口に出す前の思考」を外から読む道具を提示している。名前は...",
-      "category": "AI・技術",
-      "rss_category": "",
-      "image_url": ""
-    },
-    {
-      "title": "「完了しました」を信じるな。AIエージェントに実結果の再取得を強制する検証ゲート",
-      "url": "https://zenn.dev/maronsan/articles/genchi-completion-verification-gate",
-      "site": "Zenn(LLM)",
-      "published": "2026-07-23T04:30:48Z",
-      "description": "「投入して完了しました」——でも、実際には1行も入っていなかった\n受託の仕事を、AIエージェントにかなり任せている。本番へのデプロイ、レポート生成、データの一括投入。うまくいった手順は片っ端からスキルにして、今では数十個のスキルが日々の実務を回している。\nつまずいたのは、ある一括投入のときだった。エージェントは最後にこう言った。\n\n「◯件のデータを投入しました。完了です。」\n\nいつも通りの完了報告...",
       "category": "AI・技術",
       "rss_category": "",
       "image_url": ""
@@ -64,21 +44,11 @@
       "image_url": ""
     },
     {
-      "title": "Generative Recommendation探求②〜モデルに自分で教師データを作らせたら、疎データはどこまで密の代わりになるか~",
-      "url": "https://zenn.dev/kazukioden/articles/8658fec3699354",
-      "site": "Zenn(LLM)",
-      "published": "2026-07-23T00:47:12Z",
-      "description": "!\nこの記事は本文をLLM（生成AI）が作成し、著者が内容を確認・修正しています。\n\n\n はじめに\n前回（探求①） ——きっかけになった Wantedlyさんの記事 の追試から始めた OpenP5 の検証——では、生成的推薦で 「アイテムIDの振り方（item indexing）」がデータの疎密で効き方を変えることを見ました。ざっくり再掲すると：\n\n\n密なML100K：構造のない random な...",
-      "category": "AI・技術",
-      "rss_category": "",
-      "image_url": ""
-    },
-    {
-      "title": "ollama の入力切り捨てをレスポンスだけで検知する — 3回作り直した記録",
-      "url": "https://zenn.dev/itdevnote/articles/ollama-truncation-detector",
+      "title": "Claude Fable 5の遺産をOpus 4.8から守るガードを、3週間で3回作り直した",
+      "url": "https://zenn.dev/shotakada/articles/claude-fable5-guard-rebuilds",
       "site": "Zenn(LLM)",
       "published": "2026-07-23T00:00:13Z",
-      "description": "ollama は num_ctx を超えた入力をエラーなく切り捨てます。HTTP 200 が返り、done_reason は stop になります。この挙動そのものは別記事で扱いました。ここでは続きとして、切り捨てが起きたことをレスポンスだけで判定するコードを書きます。\n先に結論を書くと、この検知器は3回作り直しました。1回目と2回目は、書いた本人が「動いている」と思っていた状態で外部レビューに出...",
+      "description": "はじめに\n6月にOpus 4.8の「court無限ループ」からの復活手順を書き、7月頭には期間限定で使えたClaude Fable 5の話を書いた。今回はその続きにあたる。期間限定の上位モデルが残していった資産を日常運用のモデルからどう守るか、という問題を巡って3週間で同じガードを3回作り直した記録だ。\nモデルの紹介記事ではなく、実際はAIエージェント運用の話になる。結論だけ先に書くと、行き着いた...",
       "category": "AI・技術",
       "rss_category": "",
       "image_url": ""
