@@ -1,14 +1,94 @@
 {
   "site": "Zenn(LLM)",
-  "last_updated": "2026-07-23T01:18:25.968835",
-  "total_articles": 4806,
+  "last_updated": "2026-07-23T04:42:02.402166",
+  "total_articles": 4814,
   "articles": [
+    {
+      "title": "個人開発でインシデント対応の閉ループを再現する — AI RCAからrunbook自己改善まで",
+      "url": "https://zenn.dev/syrup/articles/67d58b6b6381f1",
+      "site": "Zenn(LLM)",
+      "published": "2026-07-23T01:22:33Z",
+      "description": "個人開発でインシデント対応の閉ループを再現する\n複数のtoCプロダクトを並行して運営していると、サポートと運用の負荷はだいたいプロダクト数に比例する。障害の形は似ているのに、毎回人がログを読み、runbookを開き、緩和手順を手で打つ。その「O(n)問題」を、AIエージェントとドキュメント第一主義でどこまで圧縮できるか——を検証する実験プロジェクト incident-loop の途中経過を、再現可...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "Generative Recommendation探求②〜モデルに自分で教師データを作らせたら、疎データはどこまで密の代わりになるか~",
+      "url": "https://zenn.dev/kazukioden/articles/8658fec3699354",
+      "site": "Zenn(LLM)",
+      "published": "2026-07-23T00:47:12Z",
+      "description": "!\nこの記事は本文をLLM（生成AI）が作成し、著者が内容を確認・修正しています。\n\n\n はじめに\n前回（探求①） ——きっかけになった Wantedlyさんの記事 の追試から始めた OpenP5 の検証——では、生成的推薦で 「アイテムIDの振り方（item indexing）」がデータの疎密で効き方を変えることを見ました。ざっくり再掲すると：\n\n\n密なML100K：構造のない random な...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "ollama の入力切り捨てをレスポンスだけで検知する — 3回作り直した記録",
+      "url": "https://zenn.dev/itdevnote/articles/ollama-truncation-detector",
+      "site": "Zenn(LLM)",
+      "published": "2026-07-23T00:00:13Z",
+      "description": "ollama は num_ctx を超えた入力をエラーなく切り捨てます。HTTP 200 が返り、done_reason は stop になります。この挙動そのものは別記事で扱いました。ここでは続きとして、切り捨てが起きたことをレスポンスだけで判定するコードを書きます。\n先に結論を書くと、この検知器は3回作り直しました。1回目と2回目は、書いた本人が「動いている」と思っていた状態で外部レビューに出...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "Claude Fable 5の遺産をOpus 4.8から守るガードを、3週間で3回作り直した",
+      "url": "https://zenn.dev/shotakada/articles/claude-fable5-guard-rebuilds",
+      "site": "Zenn(LLM)",
+      "published": "2026-07-23T00:00:13Z",
+      "description": "はじめに\n6月にOpus 4.8の「court無限ループ」からの復活手順を書き、7月頭には期間限定で使えたClaude Fable 5の話を書いた。今回はその続きにあたる。期間限定の上位モデルが残していった資産を日常運用のモデルからどう守るか、という問題を巡って3週間で同じガードを3回作り直した記録だ。\nモデルの紹介記事ではなく、実際はAIエージェント運用の話になる。結論だけ先に書くと、行き着いた...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "Voicebox に Jetson 8GB の Bonsai 27B を繋いだ話 — OpenAI互換APIをRustで全部書いた理由",
+      "url": "https://zenn.dev/sakamoro/articles/9136959b398455",
+      "site": "Zenn(LLM)",
+      "published": "2026-07-23T00:00:13Z",
+      "description": "TL;DR\n\n\n実測: Mac の AI 音声スタジオ Voicebox から、Jetson Orin Nano 8GB で稼働している Bonsai 27B を OpenAI 互換 SSE API として叩けた (Tailscale VPN 経由)。Voicebox 側の OpenAI 互換 + SSE 対応は Fork で実装し本家に PR (#947 + #948) 提出、執筆時点 OPEN...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "音声AIに食わせるFAQナレッジの作り方 ― Excel 10枚を JSONL に整えて Gemini Live で実測するまで",
+      "url": "https://zenn.dev/bur/articles/voice-ai-faq-jsonl-gemini-live",
+      "site": "Zenn(LLM)",
+      "published": "2026-07-22T23:29:58Z",
+      "description": "!\n注記: 本記事中の企業名・サービス名・データ例（Q&amp;A本文・日付・ファイル名）は、公開用に汎用値へ改変しています。数値（件数・トークン・URL含有率）は実データの計測値です。\n\nカスタマーサポートの現場には、たいてい「答えの塊」がExcelで散らばっている。日付つきの ナレッジ追加_YYYYMMDD.xlsx が何枚も溜まっていく、あの状態だ。これを音声対応AI（電話・音声ボット）に使...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "AI彼女アプリを作っていて気付いた。返事の温度は、返事の前に決まっていた",
+      "url": "https://zenn.dev/mitsukida/articles/bb9f24fb7d640b",
+      "site": "Zenn(LLM)",
+      "published": "2026-07-22T23:09:43Z",
+      "description": "AI彼女アプリを作っていて気付いた。返事の温度は、返事の前に決まっていた\n前回は、\nAIは正解を考えていた。\n人は相手を考えていた。\nそんな話を書いた。\nその違いを作ろうとしていると、\nもう一つ、大きな違いに気付いた。\n\n\n AIは返事を作ろうとしていた\n例えば、\nユーザーが言う。\n\n今日仕事で疲れた。\n\nAIは考える。\n励ました方がいいかな。\n共感した方がいいかな。\n何て返したら自然だろう。\n返...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "セッションを閉じる前に「コンパイル」する——Claude の作業記憶を @task に畳んで次へ渡す",
+      "url": "https://zenn.dev/ruri/articles/session-close-compile-handoff",
+      "site": "Zenn(LLM)",
+      "published": "2026-07-22T23:00:07Z",
+      "description": "TL;DR\n\nClaude のセッションは compact や再起動で作業文脈を失う。生の履歴を貼り直しても精度は戻らない\nCompile, Then Page（arXiv:2607.11346）の発想を運用に持ち込んだ。閉じる前に文脈を構造化して書き出し、次のセッションは冒頭でそれを読む\n書き出しは /cc.session-close スキルが担い、タスク専用ディレクトリ @task/sessi...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
     {
       "title": "LLMアプリの出力品質を継続的に評価・改善する ── 本番監視 × promptfoo × CI",
       "url": "https://zenn.dev/exorql/articles/b98f5f8353c33c",
       "site": "Zenn(LLM)",
       "published": "2026-07-22T22:31:56Z",
-      "description": "はじめに\n生成AIを使ったアプリケーションでは、リリース前の評価だけで品質管理が完了するわけではありません。\nリリース前にも代表的なケースでの出力確認や構造のバリデーションは行いますが、LLMの非決定性や実ユーザーの多様な入力を事前に網羅することは困難です。事前評価と本番監視は代替関係ではなく、相互に補完するものです。\n本番運用中のマルチモーダルLLMアプリでも、意図しないデグレや想定外の入力によ...",
+      "description": "はじめに\nLLMを組み込んだアプリを本番運用していると、リリース前のテストでは見つからなかった問題に遭遇します。入力内容のばらつきが大きく、同じ入力でも出力が揺れるため、事前にすべての失敗パターンを想定することは困難です。\n私が運用しているマルチモーダルLLMアプリでも、特定カテゴリへの意図しない影響や、同じ内容を表現だけ変えて繰り返す出力が発生しました。ある日には、1日単位の低評価率が72.7%...",
       "category": "AI・技術",
       "rss_category": "",
       "image_url": ""
@@ -34,21 +114,21 @@
       "image_url": ""
     },
     {
-      "title": "LLMに渡していたルールが、実は1度も効いていなかった話",
-      "url": "https://zenn.dev/tk_notes/articles/school-notice-llm-rule-verification",
+      "title": "企画書レビューが当たり障りなくなる理由、役割ラベルだけでは迎合が崩れない原理",
+      "url": "https://zenn.dev/every_ai_recipe/articles/dual-persona-proposal-review",
       "site": "Zenn(LLM)",
-      "published": "2026-07-22T13:47:13Z",
-      "description": "はじめに\n以前、子どもの学校連絡管理をLLMで自動化して3ヶ月運用した結果という記事を書きました。学校からの連絡（メール・PDF・紙のプリント）をローカルLLMで解析し、通知メールとカレンダー候補に整理する家庭内アプリの運用記録です。\nこのアプリには「AI改善ルール」という、運用の要になるはずの機能がありました。管理者（私）がAIの解析結果を修正すると、その修正パターンをルール候補として蓄積し、採...",
+      "published": "2026-07-22T21:12:26Z",
+      "description": "TL;DR\n\nシステムプロンプトに「批判者です」という役割ラベルを足すだけでは、モデルが生成時に参照する評価軸自体はほとんど変わらない。先行研究でも、ペルソナをシステムプロンプトに追加するだけでは性能への効果は小さいか、むしろ無い場合があると報告されている\n迎合（sycophancy）は指示追従の学習過程で強化される傾向のある挙動で、モデルは両論を内部的に正しく判定できていても、ユーザーからのプッ...",
       "category": "AI・技術",
       "rss_category": "",
       "image_url": ""
     },
     {
-      "title": "AIエージェントの「コンテキストリセット」問題を、永続メモリ層で解決する",
-      "url": "https://zenn.dev/mameresearcher/articles/ai-agent-persistent-memory-ssot",
+      "title": "LLMに渡していたルールが、実は1度も効いていなかった話",
+      "url": "https://zenn.dev/tk_notes/articles/school-notice-llm-rule-verification",
       "site": "Zenn(LLM)",
-      "published": "2026-07-22T11:49:19Z",
-      "description": "これは16媒体に自動配信するコンテンツ基盤の全体アーキテクチャの深掘りシリーズの1本です。前回は「実行者ではなく判断者としてエージェントを起動する」話を書きました。今回はその末尾で予告した、コンテキストが毎回リセットされるエージェントに、どう一貫性を持たせるかを掘り下げます。\n\n 問題: エージェントは起動のたびに「初対面」になる\nCLIベースのAIエージェントを定期起動する構成では、1回の起動が...",
+      "published": "2026-07-22T13:47:13Z",
+      "description": "はじめに\n以前、子どもの学校連絡管理をLLMで自動化して3ヶ月運用した結果という記事を書きました。学校からの連絡（メール・PDF・紙のプリント）をローカルLLMで解析し、通知メールとカレンダー候補に整理する家庭内アプリの運用記録です。\nこのアプリには「AI改善ルール」という、運用の要になるはずの機能がありました。管理者（私）がAIの解析結果を修正すると、その修正パターンをルール候補として蓄積し、採...",
       "category": "AI・技術",
       "rss_category": "",
       "image_url": ""
