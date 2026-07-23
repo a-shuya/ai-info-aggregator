@@ -1,7 +1,7 @@
 {
   "site": "Zenn(LLM)",
-  "last_updated": "2026-07-23T07:24:59.622824",
-  "total_articles": 4818,
+  "last_updated": "2026-07-23T10:00:18.657290",
+  "total_articles": 4824,
   "articles": [
     {
       "title": "脆弱性情報と資産インベントリの突合をLLMに丸投げしたら、静かに間違えていた",
@@ -34,41 +34,11 @@
       "image_url": ""
     },
     {
-      "title": "MiniMax M2.7入門 — 自己進化AIがSWE-Pro 56%を達成するMoEコーディングエージェント",
-      "url": "https://zenn.dev/kai_kou/articles/250-minimax-m27-self-evolving-agent-guide",
-      "site": "Zenn(LLM)",
-      "published": "2026-07-23T03:59:47Z",
-      "description": "はじめに\n2026年4月12日、中国のAIスタートアップ MiniMax が MiniMax M2.7 をオープンウェイトとして公開しました。M2.7 は同社初の「自己進化型（Self-Evolving）」AIで、100ラウンドを超える自律的な最適化ループを通じて自分自身の開発に参加し、コーディング性能を 30% 向上させた記録を持ちます。\n実際のソフトウェアエンジニアリング能力を測る SWE-b...",
-      "category": "AI・技術",
-      "rss_category": "",
-      "image_url": ""
-    },
-    {
       "title": "Agon: 競争する二つのモデルが互いに推論を採点する新しいRLパラダイム",
       "url": "https://zenn.dev/lixian/articles/agon-competitive-cross-model-rl",
       "site": "Zenn(LLM)",
       "published": "2026-07-23T03:56:24Z",
       "description": "TL;DR\nGRPOをはじめとするRLVR（RL with Verifiable Rewards）は現代の推論モデルの基盤技術だが、最終答えしか採点しないという根本的な制約がある。難問ほど「もっと書けば当たるかもしれない」という長さハッキングに走り、traceの質は評価されない。\nAgonはこの問題に競争的枠組みで挑む。二つのモデル（同一基盤のLoRAペア）が同じ問題を解き、片方がドラフトを書き、...",
-      "category": "AI・技術",
-      "rss_category": "",
-      "image_url": ""
-    },
-    {
-      "title": "斜め読みしやすいコードをAIに吐かせる",
-      "url": "https://zenn.dev/primenumber/articles/readable-code-written-by-ai",
-      "site": "Zenn(LLM)",
-      "published": "2026-07-23T02:42:44Z",
-      "description": "AIが生成したコードをいかにレビューするか。いやはや、もはや従来的な人間がAIのコードをいちいち読むという行為がナンセンスで、別の仕組みで品質を担保するべきだ、といったような話を連日目にする。\nそのような大きな価値転換のテーマも面白いが、もう少しライトな、今まで通りコードに目を通す前提で、ちょっと工夫を入れることで読みやすくしているという話をしてみたい。\n直近の私の仕事的に、アイデアを元に単発のC...",
-      "category": "AI・技術",
-      "rss_category": "",
-      "image_url": ""
-    },
-    {
-      "title": "Cockpitのgrokが「完了」と言っても、まず信用しない",
-      "url": "https://zenn.dev/syrup/articles/bcfdce01e552b3",
-      "site": "Zenn(LLM)",
-      "published": "2026-07-23T02:26:49Z",
-      "description": "Cockpitのgrokが「完了」と言っても、まず信用しない\n\nAGI Cockpit——各 LLM CLI の標準入出力を仲介して LLM 間通信を行う AI オーケストレーションツール——で grok を実装 Worker に据えたいとき、いちばん気になるのは賢さより制御だと思う。親（オーケストレーター AI）が子である Worker（実装担当の grok）に仕事を渡すと、途中経過が PTY ...",
       "category": "AI・技術",
       "rss_category": "",
       "image_url": ""
@@ -104,6 +74,16 @@
       "image_url": ""
     },
     {
+      "title": "ollama の入力切り捨てをレスポンスだけで検知する — 3回作り直した記録",
+      "url": "https://zenn.dev/itdevnote/articles/ollama-truncation-detector",
+      "site": "Zenn(LLM)",
+      "published": "2026-07-23T00:00:13Z",
+      "description": "ollama は num_ctx を超えた入力をエラーなく切り捨てます。HTTP 200 が返り、done_reason は stop になります。この挙動そのものは別記事で扱いました。ここでは続きとして、切り捨てが起きたことをレスポンスだけで判定するコードを書きます。\n先に結論を書くと、この検知器は3回作り直しました。1回目と2回目は、書いた本人が「動いている」と思っていた状態で外部レビューに出...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
       "title": "Voicebox に Jetson 8GB の Bonsai 27B を繋いだ話 — OpenAI互換APIをRustで全部書いた理由",
       "url": "https://zenn.dev/sakamoro/articles/9136959b398455",
       "site": "Zenn(LLM)",
@@ -119,6 +99,16 @@
       "site": "Zenn(LLM)",
       "published": "2026-07-22T23:29:58Z",
       "description": "!\n注記: 本記事中の企業名・サービス名・データ例（Q&amp;A本文・日付・ファイル名）は、公開用に汎用値へ改変しています。数値（件数・トークン・URL含有率）は実データの計測値です。\n\nカスタマーサポートの現場には、たいてい「答えの塊」がExcelで散らばっている。日付つきの ナレッジ追加_YYYYMMDD.xlsx が何枚も溜まっていく、あの状態だ。これを音声対応AI（電話・音声ボット）に使...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "AI彼女アプリを作っていて気付いた。返事の温度は、返事の前に決まっていた",
+      "url": "https://zenn.dev/mitsukida/articles/bb9f24fb7d640b",
+      "site": "Zenn(LLM)",
+      "published": "2026-07-22T23:09:43Z",
+      "description": "AI彼女アプリを作っていて気付いた。返事の温度は、返事の前に決まっていた\n前回は、\nAIは正解を考えていた。\n人は相手を考えていた。\nそんな話を書いた。\nその違いを作ろうとしていると、\nもう一つ、大きな違いに気付いた。\n\n\n AIは返事を作ろうとしていた\n例えば、\nユーザーが言う。\n\n今日仕事で疲れた。\n\nAIは考える。\n励ました方がいいかな。\n共感した方がいいかな。\n何て返したら自然だろう。\n返...",
       "category": "AI・技術",
       "rss_category": "",
       "image_url": ""
@@ -164,11 +154,81 @@
       "image_url": ""
     },
     {
+      "title": "企画書レビューが当たり障りなくなる理由、役割ラベルだけでは迎合が崩れない原理",
+      "url": "https://zenn.dev/every_ai_recipe/articles/dual-persona-proposal-review",
+      "site": "Zenn(LLM)",
+      "published": "2026-07-22T21:12:26Z",
+      "description": "TL;DR\n\nシステムプロンプトに「批判者です」という役割ラベルを足すだけでは、モデルが生成時に参照する評価軸自体はほとんど変わらない。先行研究でも、ペルソナをシステムプロンプトに追加するだけでは性能への効果は小さいか、むしろ無い場合があると報告されている\n迎合（sycophancy）は指示追従の学習過程で強化される傾向のある挙動で、モデルは両論を内部的に正しく判定できていても、ユーザーからのプッ...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "AI組織を運用して、壊れて、直した15の記録",
+      "url": "https://zenn.dev/karasuda_lab/books/ai-org-15-scars",
+      "site": "Zenn(LLM)",
+      "published": "2026-07-22T16:31:04Z",
+      "description": "Claude Codeで動くAIの組織（4職能）に、パチスロと競馬のデータ事業を運営させた実録です。売上は長く¥0のまま、AIはデータを捏造しかけ、hookは419回暴走し、公開記事には禁忌語が47日残り、仮想通貨Botは完全敗北しました。この本は、その15の事故と、事故を規範に変えた過程を実測の数字と当時の記録ごと公開する記録です。",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "2026/07/20【技術検証報告書】LLMの構造的限界と生産技術的マルチAIオーケストレーションによる品質担保",
+      "url": "https://zenn.dev/tomy1noriyamame/articles/978db750ec1f3a",
+      "site": "Zenn(LLM)",
+      "published": "2026-07-22T14:51:14Z",
+      "description": "Geminiとの対話テーマとなった契機\n7/20朝に観たYoutubeがショックで憤りを感じた事がきっかけでGeminiに問い掛けました。\nそれがこの動画。 → https://www.youtube.com/watch?v=74AcoBAJ52Y&amp;lc=UgzQprn5CGDxjLtZjb94AaABAg　\nそして復活気概を見せたのがこれです →　https://www.youtube....",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
       "title": "LLMに渡していたルールが、実は1度も効いていなかった話",
       "url": "https://zenn.dev/tk_notes/articles/school-notice-llm-rule-verification",
       "site": "Zenn(LLM)",
       "published": "2026-07-22T13:47:13Z",
       "description": "はじめに\n以前、子どもの学校連絡管理をLLMで自動化して3ヶ月運用した結果という記事を書きました。学校からの連絡（メール・PDF・紙のプリント）をローカルLLMで解析し、通知メールとカレンダー候補に整理する家庭内アプリの運用記録です。\nこのアプリには「AI改善ルール」という、運用の要になるはずの機能がありました。管理者（私）がAIの解析結果を修正すると、その修正パターンをルール候補として蓄積し、採...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "「読み手が次の方向性を予想しながら読めるかどうか」のSKILLのおかげで日本語文章が劇的に改善した",
+      "url": "https://zenn.dev/lotation/articles/8520b50540b274",
+      "site": "Zenn(LLM)",
+      "published": "2026-07-22T13:36:54Z",
+      "description": "AI産の日本語文章が嫌すぎるので、逆に読み漁って問題点を言語化した\n私は、LLM発展よりも以前には、物書きとしてWeb記事の請負業務で金銭をいただいていたこともあり、文章を書くこと・読むことには一定の自負がありました（いまはITエンジニアをしています）。\nところが、いまや文章の価値はゼロに等しくなり、むしろ他者が書いた「AI臭い」文章を完全に避けることが不可能なこのご時世のため、言語野への微小ダメ...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "AI がフェーズ実行 38 回でも直らなかった Issue の話:AIループ開発記・こじれる Issue 編",
+      "url": "https://zenn.dev/m2dw/articles/n8n-ai-cli-loop-stuck-issues",
+      "site": "Zenn(LLM)",
+      "published": "2026-07-22T12:57:04Z",
+      "description": "前回の記事で、GitHub Issue を書くと AI が実装・レビュー・修正して PR を返してくる自動開発ループを紹介しました。実測値も出しました。「約 7 割の Issue は無人で完走する」「マージまで至った Issue はループ回数の中央値 2、こじれた Issue は中央値 8.5」。今回はその続き — なぜ、どうやって Issue はこじれるのかを、記録とデータから掘ります。\nタイト...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "AI駆動開発で「どこまで任せるか」を先に決める——止める場所の設計がワークフローの本体",
+      "url": "https://zenn.dev/azuma71/articles/mp-zenn-0024-20260722",
+      "site": "Zenn(LLM)",
+      "published": "2026-07-22T12:53:07Z",
+      "description": "結論から言うと、AI駆動開発のワークフロー設計でまず決めるべきは「使うツール」でも「プロンプトの書き方」でもなく、どの工程でAIを止めて人間が判定するかです。全自動か手動かの二択で考えている限り、設計は終わりません。\n対象は、個人〜少人数でWebサービスを作る前提です。Claude Codeのようなエージェント型のコーディングツールを使い、仕様策定からデプロイまでを一人で回すケースを想定しています...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "AIエージェントの「コンテキストリセット」問題を、永続メモリ層で解決する",
+      "url": "https://zenn.dev/mameresearcher/articles/ai-agent-persistent-memory-ssot",
+      "site": "Zenn(LLM)",
+      "published": "2026-07-22T11:49:19Z",
+      "description": "これは16媒体に自動配信するコンテンツ基盤の全体アーキテクチャの深掘りシリーズの1本です。前回は「実行者ではなく判断者としてエージェントを起動する」話を書きました。今回はその末尾で予告した、コンテキストが毎回リセットされるエージェントに、どう一貫性を持たせるかを掘り下げます。\n\n 問題: エージェントは起動のたびに「初対面」になる\nCLIベースのAIエージェントを定期起動する構成では、1回の起動が...",
       "category": "AI・技術",
       "rss_category": "",
       "image_url": ""
