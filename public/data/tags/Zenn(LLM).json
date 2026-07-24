@@ -1,8 +1,78 @@
 {
   "site": "Zenn(LLM)",
-  "last_updated": "2026-07-24T04:30:29.696360",
-  "total_articles": 4836,
+  "last_updated": "2026-07-24T07:13:19.278398",
+  "total_articles": 4842,
   "articles": [
+    {
+      "title": "AIでAI専用プログラミング言語を作って4ヶ月、コンパイラはここまで進化する",
+      "url": "https://zenn.dev/o6lvl4/articles/a3c5ffdbb4cd12",
+      "site": "Zenn(LLM)",
+      "published": "2026-07-23T23:41:38Z",
+      "description": "前回、以下のような記事を書きました\nhttps://zenn.dev/o6lvl4/articles/9b572ae7c9ae3d\n内容を一言で言うと、「AIに文章を書かせるように、AIにプログラムを書かせるための、専用の言葉（プログラミング言語）を作ってみた」という話でした。言語の名前はAlmide（アルミド）です\nhttps://github.com/almide/almide\nこの記事自体は...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "AIキャラは、分けるほど深くなる — 1人を壁打ち・哲学・コーチ・実装の4体で支える設計",
+      "url": "https://zenn.dev/answer_philo/articles/four-ai-characters-design",
+      "site": "Zenn(LLM)",
+      "published": "2026-07-23T22:30:05Z",
+      "description": "1体に全部やらせて、全部が浅くなった\n最初は、1体のAIキャラに全部を持たせていた。「そら」という壁打ち相手のキャラに、人生相談も、ビジネスの整理も、調べもの補助も、あれもこれもと機能を足していった。全部できる万能選手を育てているつもりだった。\nところが、あるところから逆に使いにくくなった。機能が多すぎて、何がなんだか分からなくなったのだ。そして致命的だったのは、盛れば盛るほど、一個一個の機能の*...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "Claude vs GPT、実測で比較したら月の差額が27円だった——乗り換えずにプロンプトだけ改善した話",
+      "url": "https://zenn.dev/tyuya/articles/claude-vs-gpt-api-comparison",
+      "site": "Zenn(LLM)",
+      "published": "2026-07-23T21:40:54Z",
+      "description": "個人でAI献立アプリ「とってこんだて」を運営しています。AIはClaude Haiku 4.5。月500円のサブスクで成立させたいので、APIコストはいつも気にしています。\nある日「GPTのほうが安いのでは？」と思い立って、比較ツールを自作して実測した。結果、テキスト生成の月額差は27円。乗り換えはやめた。\nでも、この比較は別の収穫をくれた。GPTの出力パターンをClaudeのプロンプトに逆輸入し...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "gpt-ossを4bit量子化したら流暢に壊れた話。量子化方式で忠実度が2倍変わった実測記録",
+      "url": "https://zenn.dev/tokimoa/articles/222fa96dcf1b20",
+      "site": "Zenn(LLM)",
+      "published": "2026-07-23T21:15:11Z",
+      "description": "先に結論\nMXFP4で学習されたモデル（gpt-oss系）を一般的なaffine方式で4bit量子化すると、文法的には流暢なまま推論が壊れます。日本語の議事録要約タスクでの実測では、量子化方式の違いだけで事実忠実度が0.41と0.97（2点満点）、2倍以上変わりました。\n\nMXFP4学習モデルの量子化はMXFP4のまま行う（mlx_lm convert --q-mode mxfp4）\n配布されてい...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "スライド単位のバッチ役割レビューで指摘が薄くなる理由、同時評価対象数という変数",
+      "url": "https://zenn.dev/every_ai_recipe/articles/slide-by-slide-dual-persona-review",
+      "site": "Zenn(LLM)",
+      "published": "2026-07-23T21:08:58Z",
+      "description": "TL;DR\n\n前回記事で書いた「役割ラベル＋評価基準の明示」という条件付けは、評価対象が1つの文書から複数のスライド（項目）に増えても有効に働く。ただし対象を増やすほど、1回の指示で同時に評価させる項目数という新しい変数が指摘の質に影響し始める\n同時に評価させる項目数が一定数（今回の観測ではおおよそ5件程度）を超えると、後半の項目への指摘が「特に問題ありません」のような当たり障りのないコメントに収...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "LLM-as-a-Judgeはどこまで信用できるか。人手177件と突き合わせたらκ=0.25だった",
+      "url": "https://zenn.dev/tokimoa/articles/68bec615f313c7",
+      "site": "Zenn(LLM)",
+      "published": "2026-07-23T21:08:06Z",
+      "description": "先に実測結果\nLLMによる自動採点（LLM-as-a-Judge）を人手の盲検採点177件と突き合わせたところ、タスクによって信頼性が大きく違いました。\n\nRAG回答の根拠性判定は Cohen's κ=0.62\n\n議事録要約の事実忠実度判定は、初版で κ=0.25\n\n\nよく使われる目安では、κ=0.62は「実質的な一致」で実用水準、κ=0.25はそのまま使うには信頼性が足りない水準です。ただしκの...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "永続メモリ層、結局どう実装するか — 索引スキーマと判定基準を全部書く",
+      "url": "https://zenn.dev/mameresearcher/articles/ai-agent-memory-schema-concrete",
+      "site": "Zenn(LLM)",
+      "published": "2026-07-23T16:42:45Z",
+      "description": "これは16媒体に自動配信するコンテンツ基盤の全体アーキテクチャの深掘りシリーズの1本です。前回は「索引+詳細ファイルに分けた永続知識層」という設計思想を書きました。今回はその続きとして、実際にどんなファイル形式で、どんな判定基準で運用しているかを、抽象化せずに書き下します。\n前回の記事は「考え方」でした。今回は「実装」です。\n\n 詳細ファイルのフォーマット: 4フィールドで固定する\n詳細ファイル1...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
     {
       "title": "Github Copilot Appの /spawnとは？Session同士をまとめて管理したい",
       "url": "https://zenn.dev/hirayuki/articles/9894f913c3b8f8",
@@ -129,16 +199,6 @@
       "site": "Zenn(LLM)",
       "published": "2026-07-23T04:30:48Z",
       "description": "「投入して完了しました」——でも、実際には1行も入っていなかった\n受託の仕事を、AIエージェントにかなり任せている。本番へのデプロイ、レポート生成、データの一括投入。うまくいった手順は片っ端からスキルにして、今では数十個のスキルが日々の実務を回している。\nつまずいたのは、ある一括投入のときだった。エージェントは最後にこう言った。\n\n「◯件のデータを投入しました。完了です。」\n\nいつも通りの完了報告...",
-      "category": "AI・技術",
-      "rss_category": "",
-      "image_url": ""
-    },
-    {
-      "title": "MiniMax M2.7入門 — 自己進化AIがSWE-Pro 56%を達成するMoEコーディングエージェント",
-      "url": "https://zenn.dev/kai_kou/articles/250-minimax-m27-self-evolving-agent-guide",
-      "site": "Zenn(LLM)",
-      "published": "2026-07-23T03:59:47Z",
-      "description": "はじめに\n2026年4月12日、中国のAIスタートアップ MiniMax が MiniMax M2.7 をオープンウェイトとして公開しました。M2.7 は同社初の「自己進化型（Self-Evolving）」AIで、100ラウンドを超える自律的な最適化ループを通じて自分自身の開発に参加し、コーディング性能を 30% 向上させた記録を持ちます。\n実際のソフトウェアエンジニアリング能力を測る SWE-b...",
       "category": "AI・技術",
       "rss_category": "",
       "image_url": ""
