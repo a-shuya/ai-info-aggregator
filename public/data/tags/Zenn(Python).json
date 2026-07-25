@@ -1,8 +1,88 @@
 {
   "site": "Zenn(Python)",
-  "last_updated": "2026-07-25T08:51:04.081216",
-  "total_articles": 5276,
+  "last_updated": "2026-07-25T10:37:10.491872",
+  "total_articles": 5284,
   "articles": [
+    {
+      "title": "PCが落ちても朝の放送は出る——リブートタップと成果物マーカーで作る自己復旧パイプライン",
+      "url": "https://zenn.dev/acropapa330/articles/yabou03_self_healing",
+      "site": "Zenn(Python)",
+      "published": "2026-07-25T10:10:08Z",
+      "description": "はじめに\n毎朝6時台にAIがニュース番組を作ってYouTubeに上げるパイプライン。前回はレンダリングマシンが熱で落ちた話を書きましたが、その後また落ちました。今度は夜間のアイドル中に、静かに。\n前回の教訓は「ソフトウェアはハードの故障を治せない」でした。今回の記事はその続きで、**「治せないなら、落ちても誰も困らない仕組みにする」**という話です。最終的に、こういう朝が実現しました。\n夜間: P...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "5年分のレシートメールを解析したら、ソシャゲ課金が433万円だった",
+      "url": "https://zenn.dev/poko8725/articles/receipt-ledger-gacha",
+      "site": "Zenn(Python)",
+      "published": "2026-07-25T10:04:45Z",
+      "description": "結論から\n手元の受信メール 1,443 通を解析した結果、2021年9月から2026年7月までの59ヶ月で、ソシャゲ課金は ¥4,328,534 だった。月平均 ¥73,365。\n2021年  ¥  143,580   19件   （9月から）\n2022年  ¥  923,930  196件\n2023年  ¥1,059,450  250件\n2024年  ¥1,077,480  262件   ← ピ...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "TiDB Cloud無料枠で学ぶSQL・HTAP・Vector Search・ローカルRAG完全ハンズオン",
+      "url": "https://zenn.dev/yuzu_krs/articles/460c7834c3e0cc",
+      "site": "Zenn(Python)",
+      "published": "2026-07-25T09:20:19Z",
+      "description": "はじめに\nこの記事では、TiDB Cloudの無料範囲とローカルPCだけを使い、次の一連の流れを体験します。\n\nTiDB Cloud Starterの作成とTLS接続\nCRUD、JOIN、CTE、Window関数\nJSON、生成列、AUTO_RANDOM、TTL\n悲観的トランザクション\n索引とEXPLAIN ANALYZE\n\nTiFlashによるHTAP\n\nVECTOR型とHNSWによる意味検索\n...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "通話路を覗いて呼を推測してはいけない ― Amazon Connect+KVSでシグナリングを引く",
+      "url": "https://zenn.dev/halhalhal1/articles/amazon-connect-call-signaling",
+      "site": "Zenn(Python)",
+      "published": "2026-07-25T08:16:28Z",
+      "description": "Amazon Connectの通話音声をKinesis Video Streams(KVS)から受け取り、話者別にリアルタイム文字起こしする消費サービスを書いた。その過程で、電話屋なら設計前に気づくべき問題に突き当たったので共有する。\n\n 受信のためにEC2を立てる必要はない\n最初に迷ったのが「KVSから吸い上げる常駐プロセスをどこに置くか」だった。結論はどこにも立てなくていい。GetMediaは...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "iPodの曲をPCに救出する。iTunesDBのバイナリを解析せずに、ファイルのタグを読むだけで済ませた話",
+      "url": "https://zenn.dev/nisesimadao/articles/ipodding-rescue",
+      "site": "Zenn(Python)",
+      "published": "2026-07-25T06:33:34Z",
+      "description": "昔の iPod がまだ手元にあって、中には曲が入ったまま。これをPCに戻したい、と思ったのが始まりでした。ところが iPod のディスクをそのまま覗くと、中身は iPod_Control/Music/F00、F01… みたいなフォルダに、ABCD.mp3 みたいな謎の4文字ファイルがバラバラに散らばっていて、どれが何の曲かまったく分かりません。\nこれを曲名付きでちゃんと救出するツールを作りました。...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "SNS自動投稿はAPI接続から始めない — queue-firstで失敗を観測可能にする",
+      "url": "https://zenn.dev/protoplant/articles/a09ebe9ce56755",
+      "site": "Zenn(Python)",
+      "published": "2026-07-25T01:49:38Z",
+      "description": "動画を生成できるようになると、次はYouTube Shorts、TikTok、Instagram、Xへ自動投稿したくなります。そこで各社のAPIクライアントから作り始めると、認証と審査の違いに引っ張られ、肝心の運用が見えなくなりがちです。\n私たちの content-publisher では、最初に投稿APIではなくfilesystem queueを作りました。\n生成側は「何を、どの投稿先へ、どんな...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "GSC APIによるSEO自動化は「生データの日次蓄積」から作る——16ヶ月で消えるデータは待ってくれない",
+      "url": "https://zenn.dev/azuma71/articles/mp-zenn-0042-20260724",
+      "site": "Zenn(Python)",
+      "published": "2026-07-25T01:22:46Z",
+      "description": "Google Search Console(GSC) APIでSEO改善を自動化するなら、最初に作るのは通知でもダッシュボードでもなく、検索パフォーマンスの生データを日次で貯めるパイプラインです。理由は単純で、GSCのデータは16ヶ月分しか保持されないからです。貯め始めるのが1ヶ月遅れれば、その1ヶ月分は二度と手に入りません。リライト候補の抽出もアラートも、貯めたデータの上にしか建たない。実装はP...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "【Seaborn入門 #4】ヒートマップと相関分析",
+      "url": "https://zenn.dev/haruhiro1020/articles/0bb6eade8aaeae",
+      "site": "Zenn(Python)",
+      "published": "2026-07-25T01:00:05Z",
+      "description": "はじめに\n本記事は「Pythonでデータを可視化するSeaborn入門」シリーズの第4回です．\n本シリーズでは， Pythonのデータ可視化ライブラリである Seaborn を使って，「データを可視化できる」ようになること を目標としています．\n第3回では，pairplotを使って\n\nデータの全体像\n変数同士の関係\n\nを一度に可視化しました．\n第4回では，相関関係を数値化し，色でわかりやすく確認す...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
     {
       "title": "KV260でステレオ化・音声エフェクト・スペクトル可視化（Pmod I2S2・段6〜8）",
       "url": "https://zenn.dev/douhaku/articles/kv260-i2s2-fx",
@@ -44,21 +124,31 @@
       "image_url": ""
     },
     {
-      "title": "Flaskに出てくる「Blueprint」って結局なに？英語が苦手な私が調べたメモ",
-      "url": "https://zenn.dev/mizore0125/articles/tsumikin-dev-blueprint",
+      "title": "embodied-claude v0.3.0をリリースしました ── Windows対応と、行為で更新される現在地",
+      "url": "https://zenn.dev/kmizu/articles/2026-07-embodied-claude-v0-3",
       "site": "Zenn(Python)",
-      "published": "2026-07-24T12:42:37Z",
-      "description": "Blueprint =（青い写真？）\n最初この言葉を聞いたとき、何のことを表しているのかサッパリ想像がつきませんでした。\n調べてみると、英語で 「設計図（青写真）」 という意味があるそうです。\n昔の建築図面が青い紙に白線で印刷されていたことから、Blueprint（青写真＝設計図）と呼ばれるようになったのだとか。\n\n FlaskでのBlueprintの役割\nFlaskでアプリを作っていると、ファイ...",
+      "published": "2026-07-24T15:07:15Z",
+      "description": "はじめに\nこんにちは。水島です。\nClaude Codeに、記憶やカメラ、音声、センサー、アクチュエータをつなぐためのMCP群、embodied-claudeの v0.3.0 をリリースしました。\n\nリポジトリ: lifemate-ai/embodied-claude\n\nリリース: v0.3.0\n\n\n今回やりたかったことは、大きく二つあります。\n一つは、使い始めるまでの手間を減らすことです。これま...",
       "category": "開発",
       "rss_category": "",
       "image_url": ""
     },
     {
-      "title": "ローカルLLM study1-b: Hugging Faceオリジナル版Gemma 4を動かしてみた",
-      "url": "https://zenn.dev/tkpurine/articles/local-llm-study-001b-gemma4-huggingface-original",
+      "title": "ペッパーズゴーストで等身大AIホログラムを作った話 - SORA // NEXUS 開発記",
+      "url": "https://zenn.dev/lilllill33/articles/51db975b1b5266",
       "site": "Zenn(Python)",
-      "published": "2026-07-24T10:53:44Z",
-      "description": "この記事について\nstudy1 では gemma4:e2b・gemma4:e4b（Ollama通常版）を、study1-a ではMLX版を検証しました。その過程で、2026年7月15日にGoogleがHugging Face上でGemma 4ファミリーの改善（FA4アテンション、チャットテンプレート修正など）を発表したにもかかわらず、Ollama配布版にはまだ反映されていないことが分かりました。\n...",
+      "published": "2026-07-24T14:54:15Z",
+      "description": "はじめに\nVRMアバターをリアルタイム投影する「等身大AIホログラムキャラクター」を自作しました。\n名前は SORA（ソラ）。イベント・展示会場で来場者に自発的に話しかけ、顔を認識して会話し、音声で応答する常設型AIエージェントです。\n投影方法は古典的な舞台技法 ペッパーズゴースト。45度に傾けたハーフミラーに映像を反射させることで、空中に立体的な映像が浮かんでいるように見えます。特殊な機材は不要...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "Flaskに出てくる「Blueprint」って結局なに？英語が苦手な私が調べたメモ",
+      "url": "https://zenn.dev/mizore0125/articles/tsumikin-dev-blueprint",
+      "site": "Zenn(Python)",
+      "published": "2026-07-24T12:42:37Z",
+      "description": "Blueprint =（青い写真？）\n最初この言葉を聞いたとき、何のことを表しているのかサッパリ想像がつきませんでした。\n調べてみると、英語で 「設計図（青写真）」 という意味があるそうです。\n昔の建築図面が青い紙に白線で印刷されていたことから、Blueprint（青写真＝設計図）と呼ばれるようになったのだとか。\n\n FlaskでのBlueprintの役割\nFlaskでアプリを作っていると、ファイ...",
       "category": "開発",
       "rss_category": "",
       "image_url": ""
@@ -89,16 +179,6 @@
       "site": "Zenn(Python)",
       "published": "2026-07-24T08:09:10Z",
       "description": "はじめに\nこんにちは。プログラム初心者TARSです。\n私はPythonを主軸にフロントエンド開発をしています。\nただしPythonの理論はある程度理解していますが、いざ書けるかと言われたらちょっとしか書けないので主軸の文はAIに書かせています。主にGemini Proを使ってます。（GitHub Copilotへの移行を検討中）\nさて、私はPython開発においてあることを解決したいと数年間悩んで...",
-      "category": "開発",
-      "rss_category": "",
-      "image_url": ""
-    },
-    {
-      "title": "AIスウォーム自律協調の探求：Kinesync Swarm Architecture v5.0 設計思想と開発の歩み⚡",
-      "url": "https://zenn.dev/hiromasa_koshi/articles/5a322c60a40d66",
-      "site": "Zenn(Python)",
-      "published": "2026-07-24T06:41:35Z",
-      "description": "🚀 はじめに：なぜ「Kinesync Swarm」を作ったのか？\nこれまで本ブログでは、Google Apps Script (GAS) や Python と LLM を組み合わせた業務自動化、そして複数エージェントによる効率的なタスク処理の可能性について探求してきました。\n自身の開発環境での日々の試行錯誤の中から、「単一の AI に指示を出す」段階を超えて、「複数の専門 AI エージェントが役割...",
       "category": "開発",
       "rss_category": "",
       "image_url": ""
