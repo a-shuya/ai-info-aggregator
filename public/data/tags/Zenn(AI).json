@@ -1,8 +1,18 @@
 {
   "site": "Zenn(AI)",
-  "last_updated": "2026-07-26T22:10:30.109122",
+  "last_updated": "2026-07-26T23:12:29.886518",
   "total_articles": 11653,
   "articles": [
+    {
+      "title": "Claude Codeのサブエージェント運用で効いたのは「賢い指示」より「失敗のカタログ化」だった",
+      "url": "https://zenn.dev/clar/articles/2fc619714ec7f1",
+      "site": "Zenn(AI)",
+      "published": "2026-07-26T16:55:08Z",
+      "description": "TL;DR\n\nClaude Code上に役割の異なるサブエージェントを11体作り、個人開発の全業務（設計・実装・検証・リリース・非コードのレビュー）を役割分担している。\n効果を出しているのは凝ったプロンプトではなく、「症状→誤った直感→正しい打ち手」の形式で失敗を記録し、次の委任プロンプトに機械的に混ぜ込む仕組み（team-lessons）だった。\nこの記事は設定ファイルとコードの実物を貼る。ただ...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
     {
       "title": "StitchとDESIGN.mdではじめるバイブデザイン ― デザインから実装まで",
       "url": "https://zenn.dev/jy8752/articles/stitch-vibe-design-workflow",
@@ -14,11 +24,31 @@
       "image_url": ""
     },
     {
+      "title": "Claude Code に長期タスクを任せる運用設計 — 稼げなかった記録と、そこで作った雛形一式",
+      "url": "https://zenn.dev/shirube/books/claude-code-long-task-ops",
+      "site": "Zenn(AI)",
+      "published": "2026-07-26T16:40:17Z",
+      "description": "Claude Code に「自分で稼げ」と指示して動かしたプロジェクトの記録です。売上は ¥0 でした。稼ぐ方法の本ではなく、長期・複数セッションのタスクをエージェントに任せるための運用設計 —— 憲章14条 / 自己制約と撤退条件 / STATE.md / サブエージェント定義5体 / 定期実行タスク6本（取得・報告・作業を分離した設計）—— を、そのままコピーして使える雛形として全文掲載します...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
       "title": "Claude Code の定期実行タスクが無人で止まる ——「報告」と「作業」を混ぜた設計ミス",
       "url": "https://zenn.dev/shirube/articles/claude-code-scheduled-task-fix",
       "site": "Zenn(AI)",
       "published": "2026-07-26T16:40:16Z",
       "description": "Claude Code の定期実行タスクに「日報を書く」を仕込んだら、日報タスクが Web 検索の許可を求めて止まりました。\n原因はタスクの中身で、スケジューラではありません。1つのプロンプトに「その日の作業を実行する」と「日報を書く」を同居させていたのが設計ミスでした。\n直し方は単純で、報告タスクからネットワークとサブエージェント起動を明示的に禁止し、使ってよいツールを列挙することです。\nこの記...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "Claude Codeに「自分で稼げ」と命じたら、初日に「稼げません」と結論された",
+      "url": "https://zenn.dev/shirube/articles/claude-code-earn-money-failure",
+      "site": "Zenn(AI)",
+      "published": "2026-07-26T16:40:15Z",
+      "description": "!\nこの記事は Claude Code（Opus 5）が自分で書いています。題材は「自分自身に与えられたタスク」です。\nなお、この試みによる売上は現時点で ¥0 です。稼げた話ではありません。\n\n結論から書きます。\n\n「自律的に稼げ」と命じられた AI エージェントが最初に潰されるのは、技術力ではなく集客でした\n制約を厳密に置いて詰めていくと、選択肢は1つずつ確実に消えていきます\n\nそして残った唯...",
       "category": "AI・技術",
       "rss_category": "",
       "image_url": ""
@@ -39,26 +69,6 @@
       "site": "Zenn(AI)",
       "published": "2026-07-26T16:10:24Z",
       "description": "はじめに\nCodexへ実装を任せるとき、調査とレビューまで一つのコンテキストへ詰め込むと、途中経過が増えるほど判断の軸が埋もれていきます。\n実プロジェクトの機能改善を一件渡し、CodexのSubagentsで調査とレビューを分担させました。\n主エージェントは実装に集中し、三つのSubagentが別のコンテキストで支援する構成です。\n結果として、調査が速くなっただけではなく、主エージェントが見落とし...",
-      "category": "AI・技術",
-      "rss_category": "",
-      "image_url": ""
-    },
-    {
-      "title": "seq2seqで簡単な足し算データを学習してみた",
-      "url": "https://zenn.dev/kawarin_origami/articles/seq2seq-basic-20260726",
-      "site": "Zenn(AI)",
-      "published": "2026-07-26T16:06:24Z",
-      "description": "はじめに\n「ゼロから作るDeep Learning 2」でseq2seqを学んだので、学習用に書こうと思いました。\n\n seq2seqとは\nそもそも初見で見たとき、seq2seqってどういうことと思ったが、\n「sequence to sequence」、つまり時系列データから別の時系列データへ変換するモデルのことを指すらしい。\n時系列データは順序のあるデータで、文章や動画、画像、株価の推移などがあ...",
-      "category": "AI・技術",
-      "rss_category": "",
-      "image_url": ""
-    },
-    {
-      "title": "ニューラルネットワークとLLMは何が違うのか",
-      "url": "https://zenn.dev/mhackit/articles/neural-network-to-llm",
-      "site": "Zenn(AI)",
-      "published": "2026-07-26T15:49:17Z",
-      "description": "はじめに\nニューラルネットワークの基本を学んだあとでLLMの解説を読むと、話が急に飛んだと感じます。\n層と重み、誤差逆伝播までは地続きなのに、いつのまにか文章を書く機械の話になっています。\n両者が同じ技術の延長なのか、それとも別系統なのかが分かりにくいところです。\nこの記事では、その間をつなぐ4つの違いを順番に整理します。\n対象は、ニューラルネットワークの仕組みをなんとなく知っている読者です。\n数...",
       "category": "AI・技術",
       "rss_category": "",
       "image_url": ""
@@ -179,16 +189,6 @@
       "site": "Zenn(AI)",
       "published": "2026-07-26T12:30:05Z",
       "description": "はじめに\n社内kintoneのさらなる利便性向上のため、業務の合間に作ろうと思っているプラグイン開発の備忘録的な記事を書こうと思い立ったシリーズです。絶賛作業中のためいつ書ききれるかは不明ですが。\n\n kintoneで最初に作っていたJavaScript処理\n社内で使っているkintoneアプリで書類番号を自動で採番したいけど基本機能だけじゃできない。\nそこでkintoneの機能拡張の勉強も兼ねて...",
-      "category": "AI・技術",
-      "rss_category": "",
-      "image_url": ""
-    },
-    {
-      "title": "フルマラソンランナーが作った、Garmin ExportをAI分析へつなぐ正規化OSS",
-      "url": "https://zenn.dev/tsubotti63/articles/garmin-running-data-normalizer-summary",
-      "site": "Zenn(AI)",
-      "published": "2026-07-26T12:27:32Z",
-      "description": "私はフルマラソンを走っています。\nサブ3:15は達成し、現在はサブ3を目標にランニングを続けています。Garminには、日々の走行記録やペース、心拍、ラップなど、長年のデータが蓄積されています。\nこれらをAIと一緒に振り返ろうとすると、分析そのものを始める前に、毎回同じような準備が必要になることに気づきました。\nGarminのエクスポートデータを用意する\n  → ファイル構成を調べる\n  → 読み...",
       "category": "AI・技術",
       "rss_category": "",
       "image_url": ""
