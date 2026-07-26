@@ -1,6 +1,6 @@
 {
   "site": "Zenn(機械学習)",
-  "last_updated": "2026-07-26T19:51:28.895337",
+  "last_updated": "2026-07-26T21:02:21.671188",
   "total_articles": 1521,
   "articles": [
     {
@@ -9,16 +9,6 @@
       "site": "Zenn(機械学習)",
       "published": "2026-07-26T16:06:24Z",
       "description": "はじめに\n「ゼロから作るDeep Learning 2」でseq2seqを学んだので、学習用に書こうと思いました。\n\n seq2seqとは\nそもそも初見で見たとき、seq2seqってどういうことと思ったが、\n「sequence to sequence」、つまり時系列データから別の時系列データへ変換するモデルのことを指すらしい。\n時系列データは順序のあるデータで、文章や動画、画像、株価の推移などがあ...",
-      "category": "AI・技術",
-      "rss_category": "",
-      "image_url": ""
-    },
-    {
-      "title": "ニューラルネットワークとLLMは何が違うのか",
-      "url": "https://zenn.dev/mhackit/articles/neural-network-to-llm",
-      "site": "Zenn(機械学習)",
-      "published": "2026-07-26T15:49:17Z",
-      "description": "はじめに\nニューラルネットワークの基本を学んだあとでLLMの解説を読むと、話が急に飛んだと感じます。\n層と重み、誤差逆伝播までは地続きなのに、いつのまにか文章を書く機械の話になっています。\n両者が同じ技術の延長なのか、それとも別系統なのかが分かりにくいところです。\nこの記事では、その間をつなぐ4つの違いを順番に整理します。\n対象は、ニューラルネットワークの仕組みをなんとなく知っている読者です。\n数...",
       "category": "AI・技術",
       "rss_category": "",
       "image_url": ""
@@ -209,6 +199,16 @@
       "site": "Zenn(機械学習)",
       "published": "2026-07-24T10:01:21Z",
       "description": "1. 概要\n前回は、予測空間の「統治」としてModelConfigとfeature_spacesを導入し、ランキングモデルとTOP3モデルを統合したマルチモデル戦略を確立しました。\n今回は、穴馬検知（anauma）と対をなす、人気馬の沈没を察知する**「凡走モデル（underperformance model）」**の新設と、そのフィルタリング戦略における試行錯誤のプロセスを詳述します。「実力はあ...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "Kerasで再学習なしの精度改善。Test Time Augmentation（TTA）を試したら見えた罠",
+      "url": "https://zenn.dev/wasurenamemo/articles/c8aeb6d0b87f93",
+      "site": "Zenn(機械学習)",
+      "published": "2026-07-24T05:29:45Z",
+      "description": "SWA・EMAは「学習後の重み」を平均するテクニックでしたが、今回試したTest Time Augmentation（TTA）は「推論時の予測」を平均する手法です。最大の魅力は再学習が一切不要なこと。学習済みモデルに対して、推論時にflipなどのViewを増やして予測確率を平均するだけです。\n\n 実験結果\nベースライン（Conv2D×2層、GAP、Dropout=0.2、Adam lr=0.001...",
       "category": "AI・技術",
       "rss_category": "",
       "image_url": ""
