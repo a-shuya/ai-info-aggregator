@@ -1,34 +1,144 @@
 {
   "site": "Zenn(LLM)",
-  "last_updated": "2026-07-26T12:06:12.465732",
-  "total_articles": 4892,
+  "last_updated": "2026-07-26T13:53:41.940372",
+  "total_articles": 4900,
   "articles": [
     {
-      "title": "Cursor・Manus・Spotifyの「ハーネス」を読み比べた",
-      "url": "https://zenn.dev/tak3/articles/2686517823d1e7",
+      "title": "web search を渡しても gpt-5-mini は検索しなかった",
+      "url": "https://zenn.dev/dev_ctun/articles/web-search-tool-not-used",
       "site": "Zenn(LLM)",
-      "published": "2026-07-26T04:29:23Z",
-      "description": "こんにちは。株式会社 Acompany で Tech PdM をしている平岡です。AI エージェントを用いたプロダクトの設計・開発にも携わっています。\nエージェントを触っている人なら、ハーネス（harness） という言葉はもう耳タコだと思います。2026年前半に「harness engineering」がバズってから、猫も杓子もハーネスと言うようになった。モデルの周りのループやツールやコンテキス...",
+      "published": "2026-07-26T11:06:59Z",
+      "description": "OpenAI Responses API の web_search を有効にしたまま競合調査をやらせたら、実在企業が 5 社出てきたのに出典が 1 つも付かなかった。ツールは最初から渡してある。モデルが使わなかっただけだ。\nプロンプトに 3 行足したら、出てくる会社そのものが入れ替わった。モデルは gpt-5-mini。\n\n 出典ゼロで「それっぽい正解」が出てくる\nやらせたのは「規格外野菜の定期便...",
       "category": "AI・技術",
       "rss_category": "",
       "image_url": ""
     },
     {
-      "title": "Superpowersを読み解く — AIエージェントの品質は、モデルではなく工程設計で決まる",
-      "url": "https://zenn.dev/inaki/articles/c6517e9ea1a8a6",
+      "title": "Agent Frameworkの「ハーネス」がexperimentalを卒業した、中身を読む",
+      "url": "https://zenn.dev/kazu_aiengineer/articles/agent-framework-harness-stable",
       "site": "Zenn(LLM)",
-      "published": "2026-07-26T03:55:02Z",
-      "description": "開発方法論を「プロンプト」として実装したOSS\nSuperpowersは、Claude Codeなどのコーディングエージェントに読み込ませるスキル(Markdownの手順書)集です。公式プラグインマーケットプレイスから1行で入ります。\n/plugin install superpowers@claude-plugins-official\nREADMEによると、エージェントが人間の介入なしに2時間ほ...",
+      "published": "2026-07-26T11:01:38Z",
+      "description": "!\n2026-07-26 時点の公式ドキュメントとGitHubリポジトリの実装に基づいています。パッケージのバージョン状態は流動的なので、導入判断時は文末の一次ソースを確認してください。\n\n\n 先に結論\n\nMicrosoft Agent Framework の「ハーネス」（Python: create_harness_agent / .NET: HarnessAgent）が experimenta...",
       "category": "AI・技術",
       "rss_category": "",
       "image_url": ""
     },
     {
-      "title": "Claude Code 7月の更新 — /reviewの再分離と/doctorのCLAUDE.md削減提案",
-      "url": "https://zenn.dev/chimao222/articles/ai-dev-claude-code-jul-20260726",
+      "title": "GGUF互換なのに llama.cpp と PPL が一致しなかった──Layer 0まで追って見えた「演算経路」の違い",
+      "url": "https://zenn.dev/sakamoro/articles/f966c34eaee6ee",
       "site": "Zenn(LLM)",
-      "published": "2026-07-26T03:49:51Z",
-      "description": "はじめに\nClaude Code は週に何度もリリースが出るので、まとめて追いかけないと気づかないうちに手元の前提が変わっている。2026年7月上旬の v2.1.202 から v2.1.207 がまさにそれで、レビューコマンドの役割分担が変わり、/doctor が CLAUDE.md の贅肉を指摘するようになり、Bedrock や Foundry では auto モードのオプトインが不要になった。...",
+      "published": "2026-07-26T11:00:05Z",
+      "description": "自作の Rust 製 LLM 推論エンジン (ALICE-LLM) で Qwen 3.5-4B の Perplexity を実測したら、同じ GGUF 重みを読ませたはずの llama.cpp と PPL が 2.68 倍 乖離していました\nGGUF 互換 = llama.cpp 互換ではなかった 8 個の仮説を順に潰し、Layer 0 の op-by-op ダンプまで潜って辿り着いた「現時点で最...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "OllamaではじめるローカルLLM入門(Python対応)",
+      "url": "https://zenn.dev/sdkfz181tiger/articles/bb22e00f405626",
+      "site": "Zenn(LLM)",
+      "published": "2026-07-26T10:32:20Z",
+      "description": "01: Ollamaとは!?\nOllamaは、ローカル環境で気軽にLLM(Large Language Model)を実行・管理するツールです。\nお手持ちのコンピューター内だけで完結するので、トークン消費を気にせずLLMを使う事ができます。\n更に、クラウドAPIへデータを送信せず、ローカル環境だけでLLMを実行できます。\n他にも様々なモデルを自由に選択することも可能です。\n(一度モデルをダウンロー...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "「自分には無理」と諦めていた分野に、AIで越境することについて",
+      "url": "https://zenn.dev/karamage/articles/e96433146a2e94",
+      "site": "Zenn(LLM)",
+      "published": "2026-07-26T10:29:24Z",
+      "description": "はじめに\nこの記事は、AIによって専門外のスキルを低コストで補えるようになり、「自分には無理」という諦めが「試してみよう」に変わったことについての自分の中の変化について書きました。\nこのことは自分だけでなく、例えば自分の周りでも、フロントエンジニアの人がバックエンドのコードを修正したり、PdMの方がバグをの原因を突き止めてコードを修正したり、といった 自分の専門外の分野にチャレンジしている姿を多く...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "Byte Levelのhybridモデル(MambaとTransformer)を学習してみる(H-Net)",
+      "url": "https://zenn.dev/if001/articles/a012d1e035a922",
+      "site": "Zenn(LLM)",
+      "published": "2026-07-26T10:12:23Z",
+      "description": "ByteLevelのhybridモデル(Mamba+Transformer)としてH-Netが提案されています。\nhttps://arxiv.org/abs/2507.07955\nhttps://github.com/goombalab/hnet\n論文では、英語や中国語での学習を行っているので日本語メインで学習を行ってみようと思います。\nByte Levelのモデルを試してみたかったのと、Mamb...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "AI事業者ガイドライン1.2版の「人間の判断の介在」を実装する。自律性4レベル・承認ゲート・監査ログの設計",
+      "url": "https://zenn.dev/tokimoa/articles/57ff0290b01439",
+      "site": "Zenn(LLM)",
+      "published": "2026-07-26T09:51:58Z",
+      "description": "設計の要点\n\n2026年3月31日公表の「AI事業者ガイドライン」第1.2版では、AIエージェント・フィジカルAIに関する事項が追記されました。自律動作のリスク、権限の最小化、人間の判断の介在、操作履歴等のログ管理が主なポイントです\nよく見かける「1.2版でHITL（Human-in-the-Loop）が法的に必須化された」という解説を裏付ける拘束的な規定は確認できません。ただし「出力によって重大...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "AI推進法をe-Gov APIで全28条取得する。エンジニアがまず読む第7条・第13条・第16条",
+      "url": "https://zenn.dev/tokimoa/articles/fd5c8a0dd5e63f",
+      "site": "Zenn(LLM)",
+      "published": "2026-07-26T09:49:55Z",
+      "description": "この記事で分かること\n\nAI推進法（令和7年法律第53号、2025年9月1日全面施行）の現行条文は、e-Gov法令検索のAPIで機械可読に取得できます\n全28条のうち、エンジニア・情シスがまず読むべき3条は、第7条（業務利用する企業も「活用事業者」）、第13条（国が指針を整備する根拠）、第16条（権利侵害事案の分析と指導・助言等）です\n法律、第13条に基づく適正性確保指針、AI事業者ガイドライン、...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "Sol／Terra／Lunaの比較からキャッシュ検証まで ― GPT-5.6 on Amazon Bedrock実践",
+      "url": "https://zenn.dev/kashiwabaray/articles/75b541fb607a85",
+      "site": "Zenn(LLM)",
+      "published": "2026-07-26T08:49:30Z",
+      "description": "※本記事の内容は個人の見解であり、所属組織を代表するものではありません。\n\n 1. はじめに\n2026年7月13日、OpenAIのGPT-5.6 Sol、Terra、LunaがAmazon Bedrockで一般提供されました。\nさらに2026年7月24日には、AWSから次の内容を含む実践手順が公開されています。\nhttps://aws.amazon.com/jp/blogs/machine-lea...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "SKILL.mdは本当に効くのか。日本語業務スキルをローカルLLMで実測したら、効果と副作用が両方出た",
+      "url": "https://zenn.dev/tokimoa/articles/ac048d77f50029",
+      "site": "Zenn(LLM)",
+      "published": "2026-07-26T08:44:22Z",
+      "description": "実測結果\nAgent Skills形式（SKILL.md）の日本語業務スキルを6本作り、うち2本について「スキルを渡すと出力品質がどれだけ変わるか」をローカルLLM 2種×97問で実測しました。\n\n\n\nスキル\nモデル\n指標\n素の依頼\n＋スキル\n\n\n\n\n社内規程QA\ngemma-4-26b-a4b\n引用F1\n0.76\n0.93\n\n\n\n\n文書間矛盾の指摘（0-2）\n0.17\n1.00\n\n\n\nllm-j...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "日本語OCRモデルSarashina2.2-OCRをMLXへ移植する。モデルカードだけでは分からない実装を追った記録",
+      "url": "https://zenn.dev/tokimoa/articles/7493750c801369",
+      "site": "Zenn(LLM)",
+      "published": "2026-07-26T08:43:42Z",
+      "description": "移植で分かったこと\nSB Intuitionsの日本語OCRモデル sbintuitions/sarashina2.2-ocr（3B・MIT）を、mlx-vlmに未収録のアーキテクチャだったため自前でモデルクラスを実装してMLX（Apple Silicon）へ移植しました。要点は3つです。\n\nモデルカードは学習元を説明していますが、移植に必要な実行時構造までは分かりません。実装は Qwen2-VL...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "ローカルLLMの長文処理4方式を実測したら、最大の敵は「1文字のJSON破損で全損」だった",
+      "url": "https://zenn.dev/tokimoa/articles/8db2cff715cf95",
+      "site": "Zenn(LLM)",
+      "published": "2026-07-26T08:42:58Z",
+      "description": "実測結果\nAnthropicが長期タスク向けに整理しているコンテキスト処理のパターン（compaction・structured note-taking・sub-agent）を、デスクトップ級ローカルLLMで同一条件比較しました。タスクは8会議・約1.6万トークンの文字起こしから全会議横断のTODO一覧を作る「TODO統合」、採点はゴールド照合による決定的評価です（gemma-4-26b-a4b ...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "LLMの監督モデルはどこまで小さくできるか。9B・35B・自己検査で実測したら三様の結果になった",
+      "url": "https://zenn.dev/tokimoa/articles/2f8a22ff2ee051",
+      "site": "Zenn(LLM)",
+      "published": "2026-07-26T08:41:53Z",
+      "description": "実測結果\n主モデルの出力を監督モデルが検査し、指摘があれば主モデルが再生成する二段構成を、日本語の議事録要約40問×監督3種で実測しました。効果は監督の選び方で正反対になります。\n\n\n\n主モデル\n監督\n事実忠実度（0〜2）\n期日誤り率\n形式適合\n検査速度\n\n\n\n\ngemma-4-26b-a4b（強・基準1.83）\nQwen3.5-9B\n1.73（−0.10）\n0.05\n0.88\n22秒/問\n\n\n\n...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "セキュリティは「完璧な防御」より「続く会話」 ―― AIと脆弱性を手当てし続ける安心感",
+      "url": "https://zenn.dev/daishiro/articles/ai-security-continuous-care",
+      "site": "Zenn(LLM)",
+      "published": "2026-07-26T07:18:05Z",
+      "description": "はじめに\nこんにちは、daishir0です。\n自分でサーバーやアプリをいくつも動かしていると、ずっと心の隅に引っかかっているものがあります。セキュリティです。\n正直に言うと、怖いんですよね。使っているライブラリのどれかに、いつの間にか脆弱性が見つかっているかもしれない。でも、全部のパッケージを毎日手で追いかけるなんて、とても無理。かといって放っておくのも落ち着かない。この「気になるけど手が回らない...",
       "category": "AI・技術",
       "rss_category": "",
       "image_url": ""
@@ -44,16 +154,6 @@
       "image_url": ""
     },
     {
-      "title": "認知機能×実行トポロジー——AIエージェント設計パターンの二軸フレームワーク",
-      "url": "https://zenn.dev/hkame/articles/two-dimenstional-framework",
-      "site": "Zenn(LLM)",
-      "published": "2026-07-26T02:27:45Z",
-      "description": "元論文: Jia Huang, Joey Tianyi Zhou (A*STAR), \"A Two-Dimensional Framework for AI Agent Design Patterns: Cognitive Function × Execution Topology\" (arXiv:2605.13850, 2026年3月)\nこのブログを書こうと思ったきっかけは、以前書いた「Anth...",
-      "category": "AI・技術",
-      "rss_category": "",
-      "image_url": ""
-    },
-    {
       "title": "DGX Spark実践ガイド — 個人で買った128GBマシンで、ローカルLLMを回し尽くす",
       "url": "https://zenn.dev/ojisan_ai_lab/books/dgx-spark-practical-guide",
       "site": "Zenn(LLM)",
@@ -64,31 +164,11 @@
       "image_url": ""
     },
     {
-      "title": "AIエージェントの出力が毎回8割で止まっていた。原因は渡していたspecのほうだった",
-      "url": "https://zenn.dev/mxhlix/articles/reference-driven-skill-architecture",
-      "site": "Zenn(LLM)",
-      "published": "2026-07-26T01:37:36Z",
-      "description": "5言語で600本を超えるWebツールを、Claude Codeに作らせて運用しています。新規ツールを1本足すたびに、最初は抽象的な仕様書(spec)を渡していました。デザイン規約、コンポーネントのルール、禁止事項。エージェントはspecを読み、それらしいものを作り、8割の品質で止まります。残り2割を修正ラウンドで埋める。これを何十回も繰り返しました。\nその「8割」は当時の体感であって、数字ではあり...",
-      "category": "AI・技術",
-      "rss_category": "",
-      "image_url": ""
-    },
-    {
       "title": "さくらのAI Engineの無料枠でPodcast要約を置き換えようとしたけど、精度で見送った",
       "url": "https://zenn.dev/yamadatt/articles/20260726-sakura-ai-engine-podcast-summary",
       "site": "Zenn(LLM)",
       "published": "2026-07-26T01:00:00Z",
       "description": "何をしようとしたか\nPodcastの文字起こしパイプラインを個人で運用しています。ざっくりこんな構成です。\nGo + AWS SAM（Lambda / Step Functions / DynamoDB / S3）で組んでいて、要約部分はfal.ai経由でOpenRouterのgoogle/gemini-2.5-flashを叩いています。ここが毎回それなりに課金される。\nそこで「さくらのAI En...",
-      "category": "AI・技術",
-      "rss_category": "",
-      "image_url": ""
-    },
-    {
-      "title": "CLIのRAGツールを、コアを分離してあったおかげでWebアプリまで広げられた話",
-      "url": "https://zenn.dev/nd3/articles/rag-cli-to-webapp",
-      "site": "Zenn(LLM)",
-      "published": "2026-07-26T00:30:01Z",
-      "description": "この記事について\n技術ドキュメント(PDF)に自然言語で質問できるRAGツールを個人開発しています。これまでの2本(RAGの精度評価で最初に見つかったのは、モデルの差ではなく「ものさし」のバグだった、RAGで最後に残った不正解1問を「解剖」したら、予定していた実験が丸ごと不要になった)では「精度をどう測って改善したか」を書いてきましたが、今回は毛色が違って、すでにあるCLIツールを、中身のロジック...",
       "category": "AI・技術",
       "rss_category": "",
       "image_url": ""
