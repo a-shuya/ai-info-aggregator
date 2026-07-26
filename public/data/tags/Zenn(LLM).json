@@ -1,7 +1,7 @@
 {
   "site": "Zenn(LLM)",
-  "last_updated": "2026-07-26T04:02:56.664339",
-  "total_articles": 4883,
+  "last_updated": "2026-07-26T06:47:40.294468",
+  "total_articles": 4890,
   "articles": [
     {
       "title": "CLIのRAGツールを、コアを分離してあったおかげでWebアプリまで広げられた話",
@@ -39,6 +39,76 @@
       "site": "Zenn(LLM)",
       "published": "2026-07-25T16:40:21Z",
       "description": "Anthropic公式Exam Guideと公式ドキュメントのみを根拠に独自作成した、非公式の英日演習50問です。全5ドメイン各10問。日本語解説と一次情報リンク付き。実試験問題、受験者の記憶、公式サンプル問題の転載・翻訳は含みません。",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "執筆AIと検収AIを分けたら、事故を配布前に止められるようになった話 — Claude Codeの多段レビュー体制の作り方",
+      "url": "https://zenn.dev/teku1000/articles/8fb7e4d315da93",
+      "site": "Zenn(LLM)",
+      "published": "2026-07-25T13:32:46Z",
+      "description": "AIに文書やアプリを作らせると、それらしい成果物が一瞬で出てきます。問題は、間違いも同じくらい\"それらしい\"ことです。\n\n数字の根拠が1世代前の計算結果のまま残っている\n表の太字（＝最良のはずの値）が、本文の結論と真逆の対象に付いている\n「修正しました」と宣言された追記が、置換ミスで実は入っていない\n\nこれらは全部、私の環境で実際に起きたことです。そして厄介なのは、作った本人（AI）に見直させても...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "Claude Codeのeffort levelsをコードレビューで比較してみた",
+      "url": "https://zenn.dev/mskbhd/articles/lab-165-claude-codeeffort-levels",
+      "site": "Zenn(LLM)",
+      "published": "2026-07-25T13:15:42Z",
+      "description": "はじめに\nAnthropicが公開したデータによると、Claude Codeのコードレビュー（xhigh effort）は1 PRあたり約$1のコストで25%のバグを捕捉するそうです。\nClaude Codeには --effort というパラメータがあり、low/medium/high/xhigh の4段階から選べます。公式ドキュメントには「effort levelが高いほど深く考える」とあります...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "TAKTのモデル構成、動かすとコストは必ず悪化する？ベンチマークスコアベースで5構成比較",
+      "url": "https://zenn.dev/yuki1027/articles/takt-model-cost-comparison-issue25",
+      "site": "Zenn(LLM)",
+      "published": "2026-07-25T12:46:43Z",
+      "description": "はじめに\nAIオーケストレーションツールTAKTでは、ワークフローのステップごとに使用するモデルをprovider_routing.tagsで切り替えられます。この記事では、実装（codingタグ）とレビュー（reviewタグ）に割り当てるモデルの強度を変えると、トークン消費量・収束の速さ・実際のコストがどう変わるのかを検証しました。\n比較にあたっては、モデルの製品ラインナップ名で強弱を決めるので...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "AIに何回ダメ出ししたかを測る、対話型ベンチSWE-Together",
+      "url": "https://zenn.dev/okssusucha/articles/20260707-swe-together-interactive-coding-agent-ben",
+      "site": "Zenn(LLM)",
+      "published": "2026-07-25T11:57:24Z",
+      "description": "SWE-benchのスコアを見て「よし、このエージェントは優秀だ」と判断したことがある人は多いはずだ。ただ、あの手のベンチマークが測っているのは、最初に完全なタスク文を渡して、最後に出てきたコードだけを採点した結果でしかない。実際にCursorやClaude Codeを触るときの体験とは、そこが決定的にずれている。私たちは途中で「そこはこう直して」「この制約も足して」と何度も口を出しながら進める。...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "AIエージェントが「間違ったツール」を呼ぶのは説明文のせい ― 10分で直すツール記述契約入門",
+      "url": "https://zenn.dev/akira_papa/articles/002d7b009a051d",
+      "site": "Zenn(LLM)",
+      "published": "2026-07-25T11:54:23Z",
+      "description": "この記事は「セキュリティ境界」ではなく「選択の信頼性」の話です\nAIエージェントに自作ツール（関数）を持たせると、だいたい最初にこういう事故が起きます。\n\nユーザーは「今日の予定を教えて」と聞いただけなのに、エージェントが deleteEvent を呼ぶ\n「メモを検索して」と頼んだら、検索せずにいきなり createMemo で空メモを作る\n引数に入れるべき値を取り違えて、全然関係ないレコードを更...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "意識は「絶え間ないループ」が生む現象なのではないか、という仮説の整理",
+      "url": "https://zenn.dev/fukurou_ry/articles/d21b29978ff62a",
+      "site": "Zenn(LLM)",
+      "published": "2026-07-25T10:53:46Z",
+      "description": "意識についてずっと考えてきた仮説を、整理し直したのでまとめました。記事の最後で、この仮説をAIエージェント120体で検証する実験についても触れています。\n\n 1. はじめに\n頭の中には、いつも声があります。\n何かを感じ、それについて考え、「私はこう思う」と語る誰か。\n私たちはその語り手を「私」と呼んで、頭のどこかに実体として居るかのように感じています。\nこの「私」とは何なのか、意識とは何なのか。筆...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "AIレビューの指摘を資産化する — 追記専用ログと予防DoDで作る自己学習ループ",
+      "url": "https://zenn.dev/ssiwnl/articles/03-self-learning-loop",
+      "site": "Zenn(LLM)",
+      "published": "2026-07-25T10:41:07Z",
+      "description": "!\n本記事はシリーズ「自己学習する開発環境」の第3回です。\n\nAIが同じミスを二度としない開発環境（全体像）\n設計書1枚から実装・レビュー・PRまで\nAIレビューの指摘を資産化する（本記事）\nFigma to Code を閉ループにする（執筆中）\n\n\n!\n用語メモ\n\n\nスキル: 手順書・参照資料をまとめた .claude/skills/ 配下の定義。エージェントは指示されたスキルのファイルを読んで...",
       "category": "AI・技術",
       "rss_category": "",
       "image_url": ""
