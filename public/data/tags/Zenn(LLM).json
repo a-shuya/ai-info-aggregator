@@ -1,8 +1,18 @@
 {
   "site": "Zenn(LLM)",
-  "last_updated": "2026-07-26T23:12:29.886518",
-  "total_articles": 4911,
+  "last_updated": "2026-07-27T00:16:38.969682",
+  "total_articles": 4912,
   "articles": [
+    {
+      "title": "Claude Codeのサブエージェント運用で効いたのは「賢い指示」より「失敗のカタログ化」だった",
+      "url": "https://zenn.dev/clar/articles/2fc619714ec7f1",
+      "site": "Zenn(LLM)",
+      "published": "2026-07-26T16:55:08Z",
+      "description": "TL;DR\n\nClaude Code上に役割の異なるサブエージェントを11体作り、個人開発の全業務（設計・実装・検証・リリース・非コードのレビュー）を役割分担している。\n効果を出しているのは凝ったプロンプトではなく、「症状→誤った直感→正しい打ち手」の形式で失敗を記録し、次の委任プロンプトに機械的に混ぜ込む仕組み（team-lessons）だった。\nこの記事は設定ファイルとコードの実物を貼る。ただ...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
     {
       "title": "文書を編集せず、入力を編集する — Document Model という書き方",
       "url": "https://zenn.dev/jugyo/articles/cc6c58985f7f74",
@@ -24,6 +34,36 @@
       "image_url": ""
     },
     {
+      "title": "常駐AIエージェントの夜間バッチをべき等に設計する",
+      "url": "https://zenn.dev/hach/articles/agent-nightly-batch-idempotent-design",
+      "site": "Zenn(LLM)",
+      "published": "2026-07-26T15:08:06Z",
+      "description": "チャットに常駐して「夜間にログや議事録を集めて、朝レポートを出す」AIエージェントを運用していると、遅かれ早かれ直面するのが夜間バッチの失敗です。LLM APIのタイムアウト、外部連携先(Slack/Teams/カレンダー等)のレート制限、Lambdaの再試行——原因は色々ですが、共通して起きるのは「同じジョブが2回動く」「途中まで処理して落ちる」という事態です。この記事では、常駐エージェントの夜...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "AIネイティブな会社とは　理論と実践",
+      "url": "https://zenn.dev/shio_shoppaize/articles/ai-native-company",
+      "site": "Zenn(LLM)",
+      "published": "2026-07-26T14:40:44Z",
+      "description": "!\nこのシリーズが初めての方はこちらから\n\nhttps://zenn.dev/shio_shoppaize/articles/loop-mandate-design\n朝7時、スマホにこんな通知が届いた。\n\n【判断待ち 4件】\n①B案件の火消し、落とし所の裁定を\n②X検索の有償API、契約可否\n③朝棚卸しcron、正式GO待ち\n④旧下書き1通、削除の可否\n⚠️うち2件、本日期限\n\n送り主は人間ではな...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "uvとRuffで始めるAIエージェント開発の最短監査チェックリスト",
+      "url": "https://zenn.dev/bambampurin/articles/2026-07-25-tech-daily",
+      "site": "Zenn(LLM)",
+      "published": "2026-07-26T14:01:02Z",
+      "description": "この記事で分かること\n\n2026-07-25時点で、AI領域の主戦場が「LLMそのもの」から「エージェント・業務自動化・安全な運用基盤」へ移っている理由\nOpenAI / Hugging Faceのセキュリティ事件から、エージェント実装チームが今すぐ見直すべき監査・権限設計の要点\nPython開発基盤で uv / Ruff が注目される背景と、新規プロジェクトで試すべき最小アクション\n\n\n 今日の...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
       "title": "LLMが選んだ題材語を、ビルドの中で4段fail-closedに通す",
       "url": "https://zenn.dev/hashitoz/articles/2026-07-26-fleet-devlog-manga-deals-zenn",
       "site": "Zenn(LLM)",
@@ -34,21 +74,21 @@
       "image_url": ""
     },
     {
-      "title": "web search を渡しても gpt-5-mini は検索しなかった",
-      "url": "https://zenn.dev/dev_ctun/articles/web-search-tool-not-used",
+      "title": "「この仕事、誰が拾うの？」――AIセッションを並走させたら、人間の会社と同じ問題が起きた",
+      "url": "https://zenn.dev/ai_shihan/articles/standing-watch-protocol",
       "site": "Zenn(LLM)",
-      "published": "2026-07-26T11:06:59Z",
-      "description": "OpenAI Responses API の web_search を有効にしたまま競合調査をやらせたら、実在企業が 5 社出てきたのに出典が 1 つも付かなかった。ツールは最初から渡してある。モデルが使わなかっただけだ。\nプロンプトに 3 行足したら、出てくる会社そのものが入れ替わった。モデルは gpt-5-mini。\n\n 出典ゼロで「それっぽい正解」が出てくる\nやらせたのは「規格外野菜の定期便...",
+      "published": "2026-07-26T12:42:53Z",
+      "description": "こんにちは、AI師範です。\n前回、私は「私の会社には8人の社員がいる。人間は私だけだ」という話を書きました（私の会社には8人の社員がいる。人間は私だけだ ―― Claude Codeを「道具」でなく「組織」として使う）。役職・発注書・検収といった仕組みで、Claude Codeたちを「道具」ではなく「組織」として動かしている、という運用の話です。その末尾で「次は部署間の連絡の話を書きます」と予告し...",
       "category": "AI・技術",
       "rss_category": "",
       "image_url": ""
     },
     {
-      "title": "Agent Frameworkの「ハーネス」がexperimentalを卒業した、中身を読む",
-      "url": "https://zenn.dev/kazu_aiengineer/articles/agent-framework-harness-stable",
+      "title": "web search を渡しても gpt-5-mini は検索しなかった",
+      "url": "https://zenn.dev/dev_ctun/articles/web-search-tool-not-used",
       "site": "Zenn(LLM)",
-      "published": "2026-07-26T11:01:38Z",
-      "description": "!\n2026-07-26 時点の公式ドキュメントとGitHubリポジトリの実装に基づいています。パッケージのバージョン状態は流動的なので、導入判断時は文末の一次ソースを確認してください。\n\n\n 先に結論\n\nMicrosoft Agent Framework の「ハーネス」（Python: create_harness_agent / .NET: HarnessAgent）が experimenta...",
+      "published": "2026-07-26T11:06:59Z",
+      "description": "OpenAI Responses API の web_search を有効にしたまま競合調査をやらせたら、実在企業が 5 社出てきたのに出典が 1 つも付かなかった。ツールは最初から渡してある。モデルが使わなかっただけだ。\nプロンプトに 3 行足したら、出てくる会社そのものが入れ替わった。モデルは gpt-5-mini。\n\n 出典ゼロで「それっぽい正解」が出てくる\nやらせたのは「規格外野菜の定期便...",
       "category": "AI・技術",
       "rss_category": "",
       "image_url": ""
@@ -74,41 +114,11 @@
       "image_url": ""
     },
     {
-      "title": "「自分には無理」と諦めていた分野に、AIで越境することについて",
-      "url": "https://zenn.dev/karamage/articles/e96433146a2e94",
-      "site": "Zenn(LLM)",
-      "published": "2026-07-26T10:29:24Z",
-      "description": "はじめに\nこの記事は、AIによって専門外のスキルを低コストで補えるようになり、「自分には無理」という諦めが「試してみよう」に変わったことについての自分の中の変化について書きました。\nこのことは自分だけでなく、例えば自分の周りでも、フロントエンジニアの人がバックエンドのコードを修正したり、PdMの方がバグをの原因を突き止めてコードを修正したり、といった 自分の専門外の分野にチャレンジしている姿を多く...",
-      "category": "AI・技術",
-      "rss_category": "",
-      "image_url": ""
-    },
-    {
       "title": "Byte Levelのhybridモデル(MambaとTransformer)を学習してみる(H-Net)",
       "url": "https://zenn.dev/if001/articles/a012d1e035a922",
       "site": "Zenn(LLM)",
       "published": "2026-07-26T10:12:23Z",
       "description": "ByteLevelのhybridモデル(Mamba+Transformer)としてH-Netが提案されています。\nhttps://arxiv.org/abs/2507.07955\nhttps://github.com/goombalab/hnet\n論文では、英語や中国語での学習を行っているので日本語メインで学習を行ってみようと思います。\nByte Levelのモデルを試してみたかったのと、Mamb...",
-      "category": "AI・技術",
-      "rss_category": "",
-      "image_url": ""
-    },
-    {
-      "title": "AI事業者ガイドライン1.2版の「人間の判断の介在」を実装する。自律性4レベル・承認ゲート・監査ログの設計",
-      "url": "https://zenn.dev/tokimoa/articles/57ff0290b01439",
-      "site": "Zenn(LLM)",
-      "published": "2026-07-26T09:51:58Z",
-      "description": "設計の要点\n\n2026年3月31日公表の「AI事業者ガイドライン」第1.2版では、AIエージェント・フィジカルAIに関する事項が追記されました。自律動作のリスク、権限の最小化、人間の判断の介在、操作履歴等のログ管理が主なポイントです\nよく見かける「1.2版でHITL（Human-in-the-Loop）が法的に必須化された」という解説を裏付ける拘束的な規定は確認できません。ただし「出力によって重大...",
-      "category": "AI・技術",
-      "rss_category": "",
-      "image_url": ""
-    },
-    {
-      "title": "AI推進法をe-Gov APIで全28条取得する。エンジニアがまず読む第7条・第13条・第16条",
-      "url": "https://zenn.dev/tokimoa/articles/fd5c8a0dd5e63f",
-      "site": "Zenn(LLM)",
-      "published": "2026-07-26T09:49:55Z",
-      "description": "この記事で分かること\n\nAI推進法（令和7年法律第53号、2025年9月1日全面施行）の現行条文は、e-Gov法令検索のAPIで機械可読に取得できます\n全28条のうち、エンジニア・情シスがまず読むべき3条は、第7条（業務利用する企業も「活用事業者」）、第13条（国が指針を整備する根拠）、第16条（権利侵害事案の分析と指導・助言等）です\n法律、第13条に基づく適正性確保指針、AI事業者ガイドライン、...",
       "category": "AI・技術",
       "rss_category": "",
       "image_url": ""
