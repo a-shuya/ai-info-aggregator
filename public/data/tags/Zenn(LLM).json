@@ -1,8 +1,188 @@
 {
   "site": "Zenn(LLM)",
-  "last_updated": "2026-07-27T04:09:28.789234",
-  "total_articles": 4911,
+  "last_updated": "2026-07-27T07:51:09.952094",
+  "total_articles": 4928,
   "articles": [
+    {
+      "title": "Devin（旧Windsurf）のAdaptiveモデルルーティングを実験で観察した話",
+      "url": "https://zenn.dev/hsl/articles/6dcf337e2b73c6",
+      "site": "Zenn(LLM)",
+      "published": "2026-07-27T06:42:53Z",
+      "description": "Devin（旧Windsurf）のAdaptiveモデルルーターを使っていると、同じプロンプトを投げたはずなのに、ある時はKimi K2.7、ある時はClaude Opus 4.6が選ばれます。レスポンスカードに表示されるモデル名を見るたび、「何が選択基準なのか」が気になり始めました。\nなお、Windsurfは2026年6月にDevin Desktopへとリネームされ、Devinブランドに統合され...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "ローカルLLMにThoughtsStoreを搭載させてみた（実装応用編）",
+      "url": "https://zenn.dev/ryosuke_tanabe/articles/b4664b6b9956f8",
+      "site": "Zenn(LLM)",
+      "published": "2026-07-27T05:32:44Z",
+      "description": "前回、ローカルLLMに save_thought / search_thoughts の tool calling を持たせて、ThoughtsStore（NDJSON＋SHA256ハッシュ連鎖の外部脳）を読み書きさせてみた、という話を書いた。あのときは「そもそも搭載できるのか」を確かめる段階で、書き込みロジックの再利用と dispatch の配線までを確認して終わっていた。\n今回は、その先の**...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "AI×IaC: Terraformのコスト/セキュリティを「根拠つき」で指摘するツールをGoで作った",
+      "url": "https://zenn.dev/mabui/articles/ai-iac-terraform-guard",
+      "site": "Zenn(LLM)",
+      "published": "2026-07-27T05:21:34Z",
+      "description": "公開リポジトリ: https://github.com/mabuix/iac-guard\n\nTerraform(.tf) を読んで、コストとセキュリティの問題を、それぞれに 「なぜ問題か（根拠）／どう直すか（修正案）／いくら安くなるか（概算削減額）」 を添えて報告する小さな AI×IaC エージェントを Go で作りました。\n「AIを使う」だけで終わらせず、ちゃんとテストできる形で組み込みたくて作...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "中国発、世界最大規模のオープンモデル「Kimi K3」を徹底解説",
+      "url": "https://zenn.dev/idnet/articles/0615b2c884c928",
+      "site": "Zenn(LLM)",
+      "published": "2026-07-27T05:00:58Z",
+      "description": "はじめに\n2026年7月16日深夜（現地時間）、中国のAIスタートアップ「月之暗面（Moonshot AI）」が新世代フラッグシップモデル Kimi K3 を発表しました[1][2]。総パラメータ数2.8兆（2.8T）という、現時点で世界最大規模のオープンウェイトモデルであり、業界では「Kimiモーメント」と呼ばれるほどの衝撃を与えています[3]。\n本記事では、中国語メディア・技術ブログを中心に情...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "AIは自らRunbookを更新して2回目の障害対応を速くできるか？ — H3仮説の測定プロトコル",
+      "url": "https://zenn.dev/syrup/articles/da8aa279260f00",
+      "site": "Zenn(LLM)",
+      "published": "2026-07-27T04:06:05Z",
+      "description": "AIは自らRunbookを更新して2回目の障害対応を速くできるか？\n\nincident-loop の本丸は、H3（同種障害の2回目対応が1回目より改善するか）である。H1（定型障害の RCA＝根本原因解析を自動生成できるか）と H2（安全に自動緩和まで行えるか）は部品として市場に近い。一方、評価エージェントが runbook 改善 PR を出し、同一故障モードの2回目を事前登録した指標で測る公開プ...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "LLMに参照したURLと参照箇所の原文をなるべく正確に出させる",
+      "url": "https://zenn.dev/asuene/articles/fa722523be1a2c",
+      "site": "Zenn(LLM)",
+      "published": "2026-07-27T03:00:17Z",
+      "description": "はじめに\nこんにちは！アスエネ株式会社のエンジニアをしています、小林です！\nLLMにWeb検索をさせてなにかを評価し、結果を出力してもらうことがありますが、その出力を人間が評価するとき、LLMが何を参照して評価したのかがわかると人間が評価しやすくなるかと思います。\nシンプルに参照したURLや参照箇所を出力させるだけだと、存在しないURLや存在しないテキストが出力されてしまうことが多いため、なるべく...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "AIエージェントが実装を全部書くパイプラインに、セキュリティレビューをどう組み込むか",
+      "url": "https://zenn.dev/xtm_blog/articles/20260724-d13745952c41e2",
+      "site": "Zenn(LLM)",
+      "published": "2026-07-27T03:00:17Z",
+      "description": "はじめに\nこんにちは、クロステックマネジメント Foundation Dept. 所属の水本です。\nFoundation Dept. では、ガイドラインに沿って書かれた要求仕様書を渡すと、設計から実装、テスト、PR 作成までを人間が関与せずに完走し、要求仕様書の作成者が最終的な品質チェックだけを行う。そういう開発エージェント基盤を開発しています。\nこの形の開発には、従来のチーム開発と決定的に違う点...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "LLM推論コスト最適化入門 — モデルルーター導入ガイド",
+      "url": "https://zenn.dev/torikara74/articles/llm-inference-cost-optimization",
+      "site": "Zenn(LLM)",
+      "published": "2026-07-27T02:40:47Z",
+      "description": "この記事でわかること\n\nLLM推論コストの内訳と節約の余地\nモデルルーターとは何か、なぜ必要か\nPythonで動く最小構成のルーター実装\n主要ツール（Portkey / Helicone / OpenRouter）の比較\n\n\n\n ▶ 「推論コスト」の全体像\nAIエージェントが普及するにつれ、顕在化してきた問題があります。\nそれは 「推論コストの爆発」 です。\n\nAIチャットボット: ユーザー1会話...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "WSL2(Ubuntu 26.04) + docker で Radeon GPU を認識させる",
+      "url": "https://zenn.dev/yamayuski/articles/a6200b5e6ab078",
+      "site": "Zenn(LLM)",
+      "published": "2026-07-27T02:31:38Z",
+      "description": "ローカル LLM を動かすために ollama などを試していたのですが、推論自体を WSL2 + docker に閉じ込めたかったのでその備忘録。\n少し前まで Radeon 版 CUDA 的位置づけの ROCm の WSL2 サポートがベータになっていましたが、最近ベータが取れて少しやり方が変わったみたいなので、 2026/07/27 時点でのやることをメモっておきます。\n\n 1. WSL2 U...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "GRPOの暗室崩壊：密予測報酬がエージェントを破壊するメカニズム",
+      "url": "https://zenn.dev/lixian/articles/dark-room-reward-channel-grpo",
+      "site": "Zenn(LLM)",
+      "published": "2026-07-27T02:09:07Z",
+      "description": "TL;DR\n密なステップ単位予測報酬をGRPOで活用すると、全モデル・全スケールで確定的に破滅する。原因はGRPOのstd正規化が全失敗グループ内で塑形係数\\lambdaを無効化し、\\varepsilonスケールの信号を全スケールの圧力に増幅するからだ。単一フラグの切り替え（std正規化の除去）だけで0%→51.6%に回復する。さらに報酬チャネル自体がほぼ無用で、同じ信号を補助損失チャネルで流すと...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "量子化フォーマットを比較する：GGUF・AWQ・GPTQをvLLMで実測する",
+      "url": "https://zenn.dev/libercraft/articles/20260727-quantization-gguf-awq-gptq-vllm",
+      "site": "Zenn(LLM)",
+      "published": "2026-07-27T02:00:00Z",
+      "description": "「量子化すればGPUメモリが減ると聞いたのでGGUFを選んだが、vLLMで動かしたら思ったより速くならない」\n「AWQとGPTQ、どちらも4bitと書いてあるが何が違うのか分からないまま本番投入してしまった」\nローカルLLMやオンプレ推論基盤を組む際、量子化フォーマットの選択はほぼ必ず通る道です。しかし「4bit量子化」という括りだけで選んでしまうと、サービング基盤（vLLM・Ollama・lla...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "グレーにOKを出さないエージェント",
+      "url": "https://zenn.dev/ara_ai/articles/35c88805e61672",
+      "site": "Zenn(LLM)",
+      "published": "2026-07-27T01:00:33Z",
+      "description": "Hyperagentを使い始めて、気づいたことがある。安全性の設計が、かなり厳しめだ。\nテストの過程で、二度——正確に言えば「起こり得るが実害の可能性が低い」作業を依頼して、断られた。\n\n 具体例 1\nシミュレーション系のアプリを開発していた。架空のユーザーに対する操作テストを含む機能で、内容自体は完全にフィクションだ。だが、そのユーザーの属性の一部に「未成年」と判断されうる要素が含まれていた。フ...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "エンジニアの習熟度は、トークン消費量として露呈していく",
+      "url": "https://zenn.dev/kaji_kaji/articles/token-management-as-ai-proficiency",
+      "site": "Zenn(LLM)",
+      "published": "2026-07-27T00:00:08Z",
+      "description": "はじめに\nClaude Code や Codex を、月額の固定料金で使い倒している人はどれくらいいるでしょうか。自分もその一人です。毎日何時間もタスクを投げて、待って、レビューして、また投げて。この使い方が、いつまで今の値段のまま続くんだろうと、最近よく考えるようになりました。\nきっかけは機会があって、Claudeのエンタープライズプランを使用した時でした。複数プランがあるのかは定かではないので...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "JetsonOrin8GB「GPU全部載せ」をやめたら突破できたattention_only_loadでQwen3.5-4Bを3.3×高速化",
+      "url": "https://zenn.dev/sakamoro/articles/c8f4d199e452cd",
+      "site": "Zenn(LLM)",
+      "published": "2026-07-27T00:00:08Z",
+      "description": "自作の Rust 製 LLM 推論エンジン (ALICE-LLM) で Bonsai 27B (PrismML 製、270 億 parameters、1.125 bpw の Q1_0 quantize) の Jetson Orin Nano 8GB 動作検証を進める中で、Qwen 3.5-4B Q4_K_M に対して attention_only_load による 3.3× 高速化 を得た記録です...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "# ハルシネーションは消せない ― AI の嘘を「検証コスト」で設計する",
+      "url": "https://zenn.dev/mochitec_tech/articles/7b62e1585800b6",
+      "site": "Zenn(LLM)",
+      "published": "2026-07-26T23:52:05Z",
+      "description": "ハルシネーションは、生成 AI が事実と異なる内容をもっともらしく出力する現象です。精度が上がれば消える不具合だと受け取られがちですが、実際は LLM が設計どおりに動いた結果の副作用であり、精度改善では解消しません。\nこの記事の主張は、目標を「消す」から「間違いの検証コストを管理する」へ変えることです。そうすれば、技術者でなくても、自社のどの業務を AI に任せてよいかを判断できます。\n\n 「A...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "Bedrock を 自動遮断するコストガードを作る",
+      "url": "https://zenn.dev/t_o_m_o/articles/b6d842a056b0db",
+      "site": "Zenn(LLM)",
+      "published": "2026-07-26T23:00:06Z",
+      "description": "はじめに\nAmazon Bedrock、チームで使ってますか？\n社内ツールや開発用に LLM を生やすとき、Bedrock はモデルの選択肢も多くてけっこう便利ですよね。ただチームに開放してみると気になってくるのが「青天井のコスト」です。従量課金ゆえ、気をつけないといつだってクラウド破産と隣り合わせ。予算アラートは気づかせてはくれますが、止めてはくれないんですよね。\nそこで今回は、通知じゃなくて実...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "Claude Opus 5リリース — Fable 5に迫る性能を半額で、thinkingデフォルトON化で破壊的変更も",
+      "url": "https://zenn.dev/sktt_panda/articles/claude-opus-5-release-2026-07",
+      "site": "Zenn(LLM)",
+      "published": "2026-07-26T22:45:38Z",
+      "description": "3行まとめ\n\n2026年7月24日、Anthropic が Claude Opus 5（モデルID: claude-opus-5）をリリース。価格は Opus 4.8 と同じ $5 / $25 per MTok のまま、Fable 5（$10/$50）に肉薄する性能を半額でという位置づけ\n\nthinking がデフォルトON化（Opus 4.8 は明示しない限りOFF）。さらに thinking:...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "ローカルLLM study3-a: gemma4:e2b-mlx/e4b-mlxをstudy3の手法で検証する",
+      "url": "https://zenn.dev/tkpurine/articles/local-llm-study-003a-gemma4-mlx",
+      "site": "Zenn(LLM)",
+      "published": "2026-07-26T22:29:49Z",
+      "description": "この記事について\nstudy1-a では、単発のQ&amp;Aタスク（コードレビュー・FizzBuzz・バグ検出・デコレーター説明）で gemma4:e2b-mlx・gemma4:e4b-mlx が通常版より2〜5倍速いことを確認しました。一方 study3 では、gemma4:e2b を含む3モデルで「計画→実装+テスト→ドキュメント化」という3段階のエンドツーエンドタスク（カルマンフィルタ・S...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
     {
       "title": "文書を編集せず、入力を編集する — Document Model という書き方",
       "url": "https://zenn.dev/jugyo/articles/cc6c58985f7f74",
@@ -59,16 +239,6 @@
       "site": "Zenn(LLM)",
       "published": "2026-07-26T11:00:05Z",
       "description": "自作の Rust 製 LLM 推論エンジン (ALICE-LLM) で Qwen 3.5-4B の Perplexity を実測したら、同じ GGUF 重みを読ませたはずの llama.cpp と PPL が 2.68 倍 乖離していました\nGGUF 互換 = llama.cpp 互換ではなかった 8 個の仮説を順に潰し、Layer 0 の op-by-op ダンプまで潜って辿り着いた「現時点で最...",
-      "category": "AI・技術",
-      "rss_category": "",
-      "image_url": ""
-    },
-    {
-      "title": "OllamaではじめるローカルLLM入門(Python対応)",
-      "url": "https://zenn.dev/sdkfz181tiger/articles/bb22e00f405626",
-      "site": "Zenn(LLM)",
-      "published": "2026-07-26T10:32:20Z",
-      "description": "01: Ollamaとは!?\nOllamaは、ローカル環境で気軽にLLM(Large Language Model)を実行・管理するツールです。\nお手持ちのコンピューター内だけで完結するので、トークン消費を気にせずLLMを使う事ができます。\n更に、クラウドAPIへデータを送信せず、ローカル環境だけでLLMを実行できます。\n他にも様々なモデルを自由に選択することも可能です。\n(一度モデルをダウンロー...",
       "category": "AI・技術",
       "rss_category": "",
       "image_url": ""
