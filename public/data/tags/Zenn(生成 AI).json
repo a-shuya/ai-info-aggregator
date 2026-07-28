@@ -1,8 +1,68 @@
 {
   "site": "Zenn(生成 AI)",
-  "last_updated": "2026-07-28T09:59:48.041217",
-  "total_articles": 3072,
+  "last_updated": "2026-07-28T12:05:09.466846",
+  "total_articles": 3078,
   "articles": [
+    {
+      "title": "Claude Code Routinesにてサブスク内で自動コードレビューする",
+      "url": "https://zenn.dev/rehabforjapan/articles/claude-code-routines-pr-review-202607",
+      "site": "Zenn(生成 AI)",
+      "published": "2026-07-28T08:42:50Z",
+      "description": "はじめに\n最近、DevinやCodeRabbit、GitHub CopilotなどコードレビューをAIに実施してもらう手段が増えてきました。しかし、プライベートリポジトリだと無料で使えないケースも多く、リポジトリ内にレビュー用スキルを作り込んでいる場合は、せっかくならそれを使いたいものです。\nローカルでレビュー用スキルを実行すればよい、という話でもあります。しかし、AIレビューがみんなの見える場所...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "MCPサーバーは「接続済み」と表示されたのに、AIは既定では一度も呼べなかった。しかも終了コードは0だった",
+      "url": "https://zenn.dev/numarn/articles/claude-mcp-config-connect-handson",
+      "site": "Zenn(生成 AI)",
+      "published": "2026-07-28T05:47:03Z",
+      "description": "Claude Code に外部の道具を後付けする仕組みに MCP(Model Context Protocol、AIに使わせる道具を別プログラムとして繋ぐ共通の決まりごと)があります。設定して claude mcp list を叩くと「√ Connected(接続済み)」と出る。そこまでは簡単でした。\n結論を先に書きます。接続済みと表示されたサーバーに対して、AIは道具を呼び出そうとして拒否されま...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "個人開発でトレード練習ツールを作り、法人化してリリースした話",
+      "url": "https://zenn.dev/entriq/articles/dde7e19c350f78",
+      "site": "Zenn(生成 AI)",
+      "published": "2026-07-28T05:28:08Z",
+      "description": "はじめに\nチャートリプレイ・トレード記録・AI分析をひとつにまとめた、個別株トレーダー向けのトレード練習ツール「ENTRIQ」のWeb版を正式にリリースしました。もともと個人開発として作りはじめ、その後に株式会社ENTRIQを立ち上げてリリースまで持っていったものです。\n\nこの記事は宣伝ではなく、作っていて技術的に苦労した／設計判断で悩んだところを、これから個人開発でプロダクトを出す人の参考になる...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "Gemini Nanoの返答が長すぎる問題をPrompt APIのinitialPromptsで改善する",
+      "url": "https://zenn.dev/shinshin86/articles/21f6c9ac5a2a8f",
+      "site": "Zenn(生成 AI)",
+      "published": "2026-07-28T02:59:54Z",
+      "description": "ChromeのPrompt APIを使ってGemini NanoによるAIキャラクターチャットを実装したところ、次の問題に遭遇しました。\n\n「短く返して」と指示しても回答が長い\nキャラクターの口調が安定しない\nシステムプロンプトの変更が回答へ反映されにくい\nAIの準備中に送信すると、セッション未作成エラーになる\n\nこの記事では、initialPrompts、具体的な文数指定、短い会話例、セッション...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "SnowflakeのAI関数（AISQL）を試してみた ― SQLだけでLLM",
+      "url": "https://zenn.dev/ryo27/articles/b29ae8289e1099",
+      "site": "Zenn(生成 AI)",
+      "published": "2026-07-28T01:58:53Z",
+      "description": "はじめに\nSnowflake には、SQL から LLM を呼び出せる AI 関数（AISQL） があります。Python もアプリも用意せず、SELECT の中に書くだけで要約や分類ができます。名前は知っていたものの使ったことがなかったので、主要な関数を順番に実行してみました。この記事はその記録です。\n扱うのは次の2点です。\n\n主要な AI 関数をそれぞれ SQL で実行した結果\nタスクごとの使...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "チャットUIではなく、AIの付加価値を埋め込んだ従来型UIを選ぶ理由",
+      "url": "https://zenn.dev/akring/articles/309fb9e0fe094c",
+      "site": "Zenn(生成 AI)",
+      "published": "2026-07-27T23:00:09Z",
+      "description": "AI活用とチャットUIは別の話\nAIエージェントを活用したアプリを作ろうとすると、入出力の形としてチャットUIが定番化しているように感じます。チャットUIには、従来のUIから大きく様変わりしたことを一目でアピールできるという利点があります。ですがそれは、利用者にとって使いやすくなったこととは別の話ではないでしょうか。\n本稿で書きたいのは、従来からある構造化されたUIをそのまま保ち、AIエージェント...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
     {
       "title": "毎チャット同じルールを出力させるのは、もったいないと思っていた。実際に入れて、測る場所を間違えていたと気づいた",
       "url": "https://zenn.dev/rapls/articles/2e1be83a6fa184",

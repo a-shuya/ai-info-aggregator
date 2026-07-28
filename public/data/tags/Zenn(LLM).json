@@ -1,6 +1,6 @@
 {
   "site": "Zenn(LLM)",
-  "last_updated": "2026-07-28T09:59:48.041217",
+  "last_updated": "2026-07-28T12:05:09.466846",
   "total_articles": 4945,
   "articles": [
     {
@@ -9,26 +9,6 @@
       "site": "Zenn(LLM)",
       "published": "2026-07-28T09:27:17Z",
       "description": "はじめに\nナレッジグラフ（業務のデータを「A社 → 発注する → 注文#1234」のように、関係でつないで整理したもの）を作ったものの、そのデータが本当に定義どおりに並んでいるか、確かめられているでしょうか。データが数十件なら目視で確認できます。しかし、実際のナレッジグラフは数千〜数万のつながり（エッジ）を持ちますし、いまは構築そのものをLLMに手伝わせる時代です。人手で確認しきれない規模で、機械...",
-      "category": "AI・技術",
-      "rss_category": "",
-      "image_url": ""
-    },
-    {
-      "title": "AIがなかったら死んでた——一人で全部背負うテックリードの現実",
-      "url": "https://zenn.dev/taka_tech1988/articles/1ctkpuxzu93b5z",
-      "site": "Zenn(LLM)",
-      "published": "2026-07-28T08:24:29Z",
-      "description": "!\nこの記事は taka-techblog にも掲載しています。\n\nAIがなかったら、たぶん死んでいた。\n比喩だが、あながち冗談でもない。\n\n 自分が管理しているものの一覧\n3人チームだ。メンバーは未経験から育てた2人。自分が見ているものを書き出すと、こうなる。\n\nコード管理\n要件定義\n技術管理（スタック選定・アーキテクチャ判断）\nプロジェクト管理\nタスク管理\nチーム設計（将来的な事業化・教育計画...",
-      "category": "AI・技術",
-      "rss_category": "",
-      "image_url": ""
-    },
-    {
-      "title": "なぜ今「AIエージェント」なのか？基礎概念からフレームワーク選定まで一気に整理してみた",
-      "url": "https://zenn.dev/cs20050701/articles/18deaedddee542",
-      "site": "Zenn(LLM)",
-      "published": "2026-07-28T07:12:05Z",
-      "description": "近年、LLM（大規模言語モデル）を単なる「テキスト生成」から「自律的に判断してアクションを実行する主体」へと拡張する「自律型AIエージェント（AI Agents）」の活用が進んでいます。\nこの記事では、AIエージェントをシステムとして構築する際の基本的なアーキテクチャ構成と、代表的な開発フレームワークの選定ポイントについて整理して解説します。\n!\nこの記事は、弊社技術ブログ [センティリオンシステ...",
       "category": "AI・技術",
       "rss_category": "",
       "image_url": ""
@@ -44,21 +24,31 @@
       "image_url": ""
     },
     {
-      "title": "LLMでテキストから知識グラフを自動抽出する手法を動かしてみた",
-      "url": "https://zenn.dev/mskbhd/articles/lab-205-llm-knowledge-graph",
+      "title": "Claude Opus 5移行はプロンプトを「足す」より「消す」——検証指示の浪費を実測した",
+      "url": "https://zenn.dev/ino_h/articles/2026-07-28-claude-opus-5-migration",
       "site": "Zenn(LLM)",
-      "published": "2026-07-28T02:58:54Z",
-      "description": "元ネタ\nrahulnyk/knowledge_graph というOSSを見つけました。テキストコーパスをチャンクに分割し、LLMに「概念(ノード)」と「概念間の関係(エッジ)」を抽出させて知識グラフを作る、というプロジェクトです。元実装はOllama経由のMistral 7B OpenOrcaを使っています。\n「LLMにチャンクごとの関係を抽出させて機械的に繋ぐ」というだけで、どこまで実用的な知識...",
+      "published": "2026-07-28T03:41:24Z",
+      "description": "はじめに\n2026年7月24日に Claude Opus 5 が公開されました。価格は Opus 4.8 と同じ $5 / $25（100万トークンあたりの入力 / 出力）に据え置かれています。\n先に誤解しやすい点を潰しておくと、1M トークンのコンテキストは Opus 5 の新要素ではありません。Opus 4.8 も 4.7 も 4.6 も、Sonnet 5 / 4.6 もすでに 1M です。最...",
       "category": "AI・技術",
       "rss_category": "",
       "image_url": ""
     },
     {
-      "title": "SnowflakeのAI関数（AISQL）を試してみた ― SQLだけでLLM",
-      "url": "https://zenn.dev/ryo27/articles/b29ae8289e1099",
+      "title": "Opus 5 時代の CLAUDE.md ダイエット、結果はリバウンド( ^)o(^ )",
+      "url": "https://zenn.dev/iroha_labs/articles/fdc172366f8f02",
       "site": "Zenn(LLM)",
-      "published": "2026-07-28T01:58:53Z",
-      "description": "はじめに\nSnowflake には、SQL から LLM を呼び出せる AI 関数（AISQL） があります。Python もアプリも用意せず、SELECT の中に書くだけで要約や分類ができます。名前は知っていたものの使ったことがなかったので、主要な関数を順番に実行してみました。この記事はその記録です。\n扱うのは次の2点です。\n\n主要な AI 関数をそれぞれ SQL で実行した結果\nタスクごとの使...",
+      "published": "2026-07-28T03:38:57Z",
+      "description": "Anthropic が「Claude Code のシステムプロンプトを 8 割以上消したけど、性能は落ちなかった」という記事を出しました。\nhttps://claude.com/blog/the-new-rules-of-context-engineering-for-claude-5-generation-models\n中身の要約はもう各所にあるので飛ばします。私が食いついたのは「8 割消えた」...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "LLMでテキストから知識グラフを自動抽出する手法を動かしてみた",
+      "url": "https://zenn.dev/mskbhd/articles/lab-205-llm-knowledge-graph",
+      "site": "Zenn(LLM)",
+      "published": "2026-07-28T02:58:54Z",
+      "description": "元ネタ\nrahulnyk/knowledge_graph というOSSを見つけました。テキストコーパスをチャンクに分割し、LLMに「概念(ノード)」と「概念間の関係(エッジ)」を抽出させて知識グラフを作る、というプロジェクトです。元実装はOllama経由のMistral 7B OpenOrcaを使っています。\n「LLMにチャンクごとの関係を抽出させて機械的に繋ぐ」というだけで、どこまで実用的な知識...",
       "category": "AI・技術",
       "rss_category": "",
       "image_url": ""
@@ -139,6 +129,16 @@
       "site": "Zenn(LLM)",
       "published": "2026-07-27T21:04:14Z",
       "description": "チャットに招待するだけで働く常駐型AIエージェントを作っていると、初日から必ずぶつかる壁があります。「先週も同じこと言いましたよね」と言われる問題です。コンテキストウィンドウがどれだけ大きくなっても、セッションが終われば会話も判断の背景も消えてしまう——この「記憶の揮発性」は、モデルのトークン上限を増やすだけでは解決しません。この記事では、常駐エージェントの長期記憶をどう設計したかを整理します。\n...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "Claude Opus 5の要点整理: 料金据え置きで上位半額、effortは5段階、移行時は400エラーに注意",
+      "url": "https://zenn.dev/ainewsdaily/articles/20260725_general_t1",
+      "site": "Zenn(LLM)",
+      "published": "2026-07-27T15:46:40Z",
+      "description": "2026年7月24日、Anthropic が Claude Opus 5 を公開しました。料金は前世代の Opus 4.8 と同額のまま、最上位モデル Fable 5 のちょうど半額という位置づけです。\n同じ日に effort という5段階の設定と移行ガイドも公開されており、単なる新モデルの追加ではなく「同じ予算で使えるものが入れ替わった」発表になっています。\nこの記事では、料金と仕様、effor...",
       "category": "AI・技術",
       "rss_category": "",
       "image_url": ""
