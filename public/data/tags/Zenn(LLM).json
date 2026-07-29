@@ -1,24 +1,24 @@
 {
   "site": "Zenn(LLM)",
-  "last_updated": "2026-07-29T09:17:47.186077",
-  "total_articles": 4960,
+  "last_updated": "2026-07-29T11:36:27.603303",
+  "total_articles": 4964,
   "articles": [
+    {
+      "title": "LLM モデルの差し替えを自動化する llm-replacer の紹介",
+      "url": "https://zenn.dev/pksha/articles/llm-replacer-workflow",
+      "site": "Zenn(LLM)",
+      "published": "2026-07-29T09:06:28Z",
+      "description": "はじめに\nこんにちは、PKSHA Technology の深堀です。\nLLM を組み込んだサービスでは、モデルが EOL（End of Life）を迎えた際にモデル更新が必要です。\nただ、実際に運用中サービスのモデルを差し替えようとすると、単に model_id を 1 行変えれば終わり、とはなかなかなりません。\n\n運用中サービスのどこでモデル ID が指定されているかを特定する（コードへの直書き...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
     {
       "title": "「書き手は人間ではない」を前提に言語を設計するとどうなるか",
       "url": "https://zenn.dev/cosmopanda/articles/llm-first-language-design",
       "site": "Zenn(LLM)",
       "published": "2026-07-29T06:48:30Z",
       "description": "既存言語の設計は、人間が書くことに最適化されている\n型推論、簡潔な構文、暗黙のデフォルト値、省略可能な注釈。これらはすべて「書く人間の労力を減らす」ための機能だ。プログラミング言語の設計史は、ある意味で人間のタイピング量と認知負荷をどう削るかの歴史でもある。\nでは、書き手が人間でなくなったら、この最適化はどうなるのか。\nLLM にコードを書かせる比率が上がるほど、この問いは実務的な意味を持ち始める...",
-      "category": "AI・技術",
-      "rss_category": "",
-      "image_url": ""
-    },
-    {
-      "title": "Kimi K3は何が公開されたのか：2.8兆パラメータと約1.56TBの意味",
-      "url": "https://zenn.dev/localai_lab/articles/6098ac2c93b559",
-      "site": "Zenn(LLM)",
-      "published": "2026-07-29T05:32:43Z",
-      "description": "Kimi K3は、Moonshot AIが公開した2.8兆パラメータの大規模言語モデルです。\n数字だけでもかなり目を引きますが、個人的に面白いと感じたのは、推論に使えるフルウェイトまでHugging Faceで公開されたことでした。公式リポジトリ全体は、2026年7月29日時点で約1.56TBあります。\nただし、ここで混同したくないのが次の2点です。\n\nモデルファイルをダウンロードして保管できる\n...",
       "category": "AI・技術",
       "rss_category": "",
       "image_url": ""
@@ -89,6 +89,46 @@
       "site": "Zenn(LLM)",
       "published": "2026-07-29T00:25:00Z",
       "description": "はじめに\n自分がAIエンジニアリングの領域に本格的に足を踏み入れたのは2024年の後半だった。それまではバックエンド寄りの開発をしていたが、社内でLLMを使ったプロダクトを立ち上げることになり、否応なしにこの世界へ引き込まれた。\n最初の壁は「何から学べばいいのか分からない」ことだった。論文を読んでも実装に落とせない。チュートリアルを写経しても本番で動かすイメージが湧かない。YouTube動画は断片...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "人間・Claude・Codex で三者分業したら、レビュー指摘は全部 AI が見つけていた",
+      "url": "https://zenn.dev/kaji_kaji/articles/risk-acceptance-vibecoding-three-party",
+      "site": "Zenn(LLM)",
+      "published": "2026-07-29T00:00:05Z",
+      "description": "はじめに\n個人開発で、人間は製品判断と「リスク検収」（認証やデータ削除のようなリスク領域だけ、分かったうえで引き受ける）に絞り、実装は AI に任せる運用を試しています。ちょうど新機能を 3 つ作る予定があったので、この体制をそのまま実地に投入してみました。\n2 日でリリース準備までたどり着けたのは良かったのですが、終わったあとにマージ前のやり取りを読み返して、少し焦りました。この 2 日でマージ...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "LangGraphでエージェント暴走を防ぐ設計チェックリスト",
+      "url": "https://zenn.dev/bambampurin/articles/2026-07-26-tech-daily",
+      "site": "Zenn(LLM)",
+      "published": "2026-07-28T22:45:00Z",
+      "description": "この記事で分かること\n\n2026-07-26時点で、AIの主戦場が「LLMの性能競争」から「エージェント運用と安全統制」に移った理由\nOpenAI/Hugging Face周辺のセキュリティ事故から、実務で先に設計すべき安全要件\n今日のニュースを踏まえて、Python開発基盤で優先して見直すべきツール群\n\n\n AIトレンドを正しく読む方法\n結論として、今日の焦点はLLMの高性能化そのものではなく、...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "AIエージェントのルールを直しても、すでに書かれた文章は直らない",
+      "url": "https://zenn.dev/skova_digital/articles/0e07d0211daf4b",
+      "site": "Zenn(LLM)",
+      "published": "2026-07-28T22:30:05Z",
+      "description": "Claude Code を複数の役割に分けて、Web 制作の実務を回している。\n役割ごとに定義ファイルがあり、そこに「何を書いてよいか」のルールが書いてある。\n先日、そのうちの1つを改訂した。\n発信文の主語に関するルールで、方針そのものを反対向きに変えた。\n改訂は10分で終わった。\nそのあと3時間かかった。\n\n 改訂したルールの中身\nもともとのルールはこう書いてあった。\n\nAIが設計・実装した作業...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "3日間のAIタスク評価を「キャッシュ」として運用する、jagged frontierとTTL失効の視点から",
+      "url": "https://zenn.dev/every_ai_recipe/articles/ai-task-affinity-table",
+      "site": "Zenn(LLM)",
+      "published": "2026-07-28T21:08:00Z",
+      "description": "TL;DR\n\nタスクごとに3つのAIを3日間採点する運用を続けた結果、メールの下書きはChatGPT、資料の骨子作成はClaudeが3日連続で1位という「勝者」が定まった。これを毎回再評価せず使い回すには、評価結果をキャッシュとして扱う発想が有効\nモデルの性能はタスクごとに凸凹に分布する「jagged frontier（デコボコな性能分布）」の性質を持つため、あるタスクの勝者を別タスクへ外挿できな...",
       "category": "AI・技術",
       "rss_category": "",
       "image_url": ""
