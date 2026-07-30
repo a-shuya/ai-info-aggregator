@@ -1,8 +1,18 @@
 {
   "site": "Zenn(ディープラーニング)",
-  "last_updated": "2026-07-30T09:22:01.591599",
-  "total_articles": 374,
+  "last_updated": "2026-07-30T11:30:11.571026",
+  "total_articles": 375,
   "articles": [
+    {
+      "title": "Softmax単体の逆伝播を計算グラフで導出する【ゼロつく2】",
+      "url": "https://zenn.dev/kawarin_origami/articles/softmax-backward-20260730",
+      "site": "Zenn(ディープラーニング)",
+      "published": "2026-07-30T09:39:23Z",
+      "description": "はじめに\ndef backward(self, dout):\n        dx = self.out * dout\n        sumdx = np.sum(dx, axis=1, keepdims=True)\n        dx -= self.out * sumdx\n        return dx\n早速だが、これは、ゼロから作るDeep Learning2で使われている、Soft...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
     {
       "title": "Adamとは？学習率を自動調整する最適化手法",
       "url": "https://zenn.dev/h888s/articles/dscert-adam-dscert",
