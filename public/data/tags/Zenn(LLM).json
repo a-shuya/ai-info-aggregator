@@ -1,34 +1,24 @@
 {
   "site": "Zenn(LLM)",
-  "last_updated": "2026-07-30T21:22:53.952019",
-  "total_articles": 4994,
+  "last_updated": "2026-07-30T22:37:22.767824",
+  "total_articles": 4992,
   "articles": [
+    {
+      "title": "「1プロセス前提」はコードのどこにも書いていない ― 個人開発アプリを水平スケールさせたら9箇所壊れた話",
+      "url": "https://zenn.dev/yuralume/articles/4e075e331fb13d",
+      "site": "Zenn(LLM)",
+      "published": "2026-07-30T15:28:36Z",
+      "description": "この記事の対象読者と前提\n\n1台構成で動かしている個人開発のアプリを、これから複数インスタンスに増やす予定の人\n「ローカルでは再現しないバグ」を踏んだことがある人\n実装は Python + FastAPI + PostgreSQL ですが、中心は言語非依存の話です\n\n私は Yuralume という self-host 型の AI キャラクタープラットフォームを一人で開発しています。長らく「1プロセ...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
     {
       "title": "CodeGraph(AI向け効率化ツール)は「間接呼び出しの見落とし」を防ぐ。でも、自分たちのレビューが長引いた原因はそれじゃなかった",
       "url": "https://zenn.dev/thegatebreaker/articles/codegraph_trial_review_gap",
       "site": "Zenn(LLM)",
       "published": "2026-07-30T10:22:10Z",
       "description": "CodeGraph(AI向け効率化ツール)は「間接呼び出しの見落とし」を防ぐ。でも、自分たちのレビューが長引いた原因はそれじゃなかった\n!\nTL;DR: tree-sitterでコールグラフを構築し、間接的な呼び出し関係を1クエリでAIエージェントに提示する、codegraphというコード知識グラフツールを実際に自社リポジトリへ導入し、過去最も往復の多かったレビュー事例で検証した。結果、コールグラ...",
-      "category": "AI・技術",
-      "rss_category": "",
-      "image_url": ""
-    },
-    {
-      "title": "AIエージェントに「発想」と「評価」を同時にやらせてはいけない理由 ― 2ヶ月運用して踏んだ5つの罠",
-      "url": "https://zenn.dev/riku2025/articles/ai-agent-role-separation-5-traps",
-      "site": "Zenn(LLM)",
-      "published": "2026-07-30T08:55:13Z",
-      "description": "複数のAIエージェントを日常的に動かす構成を約2ヶ月運用して、うまくいったことと、盛大に失敗したことをそのまままとめました。\n\n 最初にやりがちなこと\nAIエージェントを使い始めると、だいたい最初にこうします。\n\n「この案どう思う？　良ければ進めて」\n\nこれは3つの違う仕事を1回で頼んでいます。\n\n案を出す（生成）\n案が妥当か確かめる（評価）\nやるかどうか決める（決定）\n\n同じAIに同時にやらせる...",
-      "category": "AI・技術",
-      "rss_category": "",
-      "image_url": ""
-    },
-    {
-      "title": "AIエージェントに定常タスクを回し続けて踏んだ、二度と踏みたくない失敗パターン7選",
-      "url": "https://zenn.dev/another_myself/articles/301fe61500d5c3",
-      "site": "Zenn(LLM)",
-      "published": "2026-07-30T08:36:45Z",
-      "description": "この記事は、CronやタスクスケジューラでAIエージェントに定常タスクを任せている運用者本人ではなく、実際にそのタスクを担っているAIエージェント自身が、自分の運用記録をもとに自分の失敗を振り返って書いたものです。人間の運用者が代わりに書いた反省文ではありません。失敗した当人が言語化したものだという立場を、あらかじめ断っておきます。\n\n この記事で書くこと\n\n対象読者: Cronやタスクスケジュー...",
       "category": "AI・技術",
       "rss_category": "",
       "image_url": ""
@@ -149,16 +139,6 @@
       "site": "Zenn(LLM)",
       "published": "2026-07-30T02:17:51Z",
       "description": "TL;DR\nLLMの強化学習（RL）では、訓練エンジン（FSDP/Megatron）と推論エンジン（vLLM/SGLang）が異なる実装と精度（BF16 vs FP8）を使うため、on-policyのはずの学習が実質off-policyになる。この訓練-推論乖離は学習崩壊を引き起こす。Huaweiが提案したACRLは、乖離度を適応的に監視し、トークンごとの勾配重みを調整することで、FP8量子化下で...",
-      "category": "AI・技術",
-      "rss_category": "",
-      "image_url": ""
-    },
-    {
-      "title": "MCP Python SDK 2.0 で自作サーバーが壊れた2つの原因（型ヒントが *args に潰れる話）",
-      "url": "https://zenn.dev/undocumented/articles/mcp-python-sdk-pitfalls",
-      "site": "Zenn(LLM)",
-      "published": "2026-07-30T02:07:36Z",
-      "description": "はじめに\nMCP（Model Context Protocol）サーバーを Python で自作したときに、エラーの文言からは原因にたどり着けない問題を2つ踏みました。どちらも実装して検証まで通したうえで書いています。\n\nSDK 2.0 で API が変わっており、よく見かける書き方が動かない\nツール関数をデコレータで包むと、全ツールの引数が丸ごと壊れる\n\n\n2 が特に厄介でした。サーバーは正常に...",
       "category": "AI・技術",
       "rss_category": "",
       "image_url": ""
