@@ -1,8 +1,48 @@
 {
   "site": "Zenn(LLM)",
-  "last_updated": "2026-07-30T22:37:22.767824",
-  "total_articles": 4992,
+  "last_updated": "2026-07-30T23:40:37.679700",
+  "total_articles": 4996,
   "articles": [
+    {
+      "title": "DifyをDocker(Windows/WSL2)で動かしていたらオーケストレーション画面が固まった話 〜原因はSECRET_KEY〜",
+      "url": "https://zenn.dev/sosa/articles/dify-docker-secretkey",
+      "site": "Zenn(LLM)",
+      "published": "2026-07-30T21:59:58Z",
+      "description": "発生した症状\n2年ぶりにWindows 11 + Docker Desktop(WSL2バックエンド)でDifyをセルフホストして使ったところ、ワークフローのオーケストレーション画面（/app/{app_id}/workflow）の右側パネルで、ポインタが砂時計のまま固まって何も操作できなくなるという症状が発生しました。\nクリックしても反応せず、画面上は「読み込み中」のような状態から一切進まない状...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "禁止プロンプトが逆効果になる理由、negation blindnessとpink elephant effectから見る",
+      "url": "https://zenn.dev/every_ai_recipe/articles/ai-negation-prompt-backfires",
+      "site": "Zenn(LLM)",
+      "published": "2026-07-30T21:09:07Z",
+      "description": "TL;DR\n\n「〜しないで」「〜を含めないで」という禁止形（negation）の指示は、禁止した対象がむしろ出力に明示的に登場しやすくなる現象がある。会議メモ要約タスクで実際に試したところ、「雑談を含めないで」と頼んだのに「雑談（〇〇の話）がありました」という形でその話題が要約に残った\n原因はLLMのnegation blindness（否定手がかりを十分に抑制できず、否定された概念自体の活性化は...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "日本語はなぜトークン代が高いのか。BPEを一から実装して測ったら、「3倍高い」は言い過ぎだった",
+      "url": "https://zenn.dev/shakeailab/articles/bpe-japanese-token-cost",
+      "site": "Zenn(LLM)",
+      "published": "2026-07-30T17:07:41Z",
+      "description": "LLMの料金はトークン単位で決まる。そして「日本語は英語よりトークンを食うので高くつく」という話をよく聞く。実務でAPIを叩いていると無視できない話だが、実際どれくらいなのかを自分で測ったことがなかった。\nそこで、トークナイザの中身であるBPE(Byte Pair Encoding)をゼロから実装し、仕組みを理解したうえで、自分のブログ49記事を実際のトークナイザにかけて測ってみた。結果は、よく言...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "nanochatで理解するLLM製造工程",
+      "url": "https://zenn.dev/kenimo49/books/nanochat-code-reading",
+      "site": "Zenn(LLM)",
+      "published": "2026-07-30T15:40:59Z",
+      "description": "■ Karpathyのnanochat(約8,000行)を1冊で読み切る\n■ tokenizer訓練→事前学習→SFT→強化学習→評価→推論エンジンの全工程をコードで追う\n■ 2019年に$43,000だったGPT-2級の訓練が、いまいくらで手に入るのか\n■ MacBookでも動かせる極小体験(runcpu.sh)まで案内\n全8章。LLMを「使う側」から「工程を所有する側」へ渡るための一冊です。",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
     {
       "title": "「1プロセス前提」はコードのどこにも書いていない ― 個人開発アプリを水平スケールさせたら9箇所壊れた話",
       "url": "https://zenn.dev/yuralume/articles/4e075e331fb13d",
