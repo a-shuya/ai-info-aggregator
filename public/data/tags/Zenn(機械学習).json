@@ -1,8 +1,48 @@
 {
   "site": "Zenn(機械学習)",
-  "last_updated": "2026-07-31T12:23:00.289489",
-  "total_articles": 1554,
+  "last_updated": "2026-07-31T15:00:31.298076",
+  "total_articles": 1557,
   "articles": [
+    {
+      "title": "AIエンジニアが技術書の外に出るべき理由と、読んでおきたい5冊",
+      "url": "https://zenn.dev/koukyo/articles/20260731_ai_engineer_beyond_tech_books_5",
+      "site": "Zenn(機械学習)",
+      "published": "2026-07-31T08:25:05Z",
+      "description": "はじめに\n自分がAI関連の仕事を始めて2年目くらいのとき、社内でちょっとした事件があった。精度も推論速度も十分なモデルを本番環境にデプロイしたのに、現場のオペレーターが誰も使ってくれない。ダッシュボードのログを見ると、初回アクセスから3日後にはアクティブユーザーがゼロになっていた。\n原因を探ると、出力の意味がわからない、どう業務に組み込めばいいか見当がつかない、という声ばかりだった。技術的にはうま...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "MixUpのalphaを上げたら精度が下がった話｜confidenceは理論通り、精度は逆だった",
+      "url": "https://zenn.dev/wasurenamemo/articles/ca6f64ae5f1fba",
+      "site": "Zenn(機械学習)",
+      "published": "2026-07-31T06:59:56Z",
+      "description": "!\nこの記事は以下のブログ記事の要約版です。全コード・グラフ・詳しい考察は元記事をご覧ください。\n→ MixUpのalpha値を変えると効果はどう変わる？（α=0.1 vs 0.2 vs 0.4 vs 1.0）\n\n\n 「MixUpは精度を上げる」の逆をいく結果に\nMixUpの混合の強さを決めるalphaを0（なし）・0.1・0.2・0.4・1.0の5段階で比較しました。ベースラインはシリーズ標準構...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "[機械学習]Sumノードの逆伝播についてわかりやすく",
+      "url": "https://zenn.dev/kawarin_origami/articles/matrix-sum-backward-20260731",
+      "site": "Zenn(機械学習)",
+      "published": "2026-07-31T05:39:51Z",
+      "description": "はじめに\nゼロから作るDeep Learning2のコードのSumノードの逆伝播のコードの理解が浅かったため、\nわかりやすく説明できるようにしました。\nちなみに該当コードは以下の部分です。(N,T,H)の形状であるtがSumノードを通し、(N,T)形状のsに変換される例です。\ndt = ds.reshape(N, T, 1).repeat(H, axis=2)\n\n 対象読者\n\nぜろつく2の逆伝播の...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "【技術解説】【完全ガイド】XGBoostを用いた特徴量重要度の算出と株価予測の実装",
+      "url": "https://zenn.dev/sugarfree/articles/e38090e5ae8ce585a8e382ace382a4e38389e38091xgb",
+      "site": "Zenn(機械学習)",
+      "published": "2026-07-31T02:00:37Z",
+      "description": "XGBoostによる株価予測と特徴量重要度の算出\n近年、金融市場でのアルゴリズムトレーディングが広がりを見せている中、データ分析や機械学習を用いた株価予測手法が注目されています。本記事では、PythonのライブラリであるXGBoostを用いて特徴量重要度を算出し、株価予測を実装する方法について解説します。この手法を通じて、データサイエンスを活用した投資戦略の構築に向けたステップを学びましょう。\n\n...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
     {
       "title": "AIを勉強するのに役立つサイト100選（2026年版）",
       "url": "https://zenn.dev/phinata/articles/ai-learning-site-100",
@@ -169,16 +209,6 @@
       "site": "Zenn(機械学習)",
       "published": "2026-07-28T14:15:06Z",
       "description": "本記事は 2 段階の実測完了段階です 2026-07-28 に Mac mini M2 Pro 32GB + USB SSD で real Kimi K3 (moonshotai) IQ1_S 566 GB を 1 token forward 完走 (baseline)、2026-07-29 に compute 側最適化 v2 で 12.1% 高速化 + bit-exact numerical p...",
-      "category": "AI・技術",
-      "rss_category": "",
-      "image_url": ""
-    },
-    {
-      "title": "BatchNormの位置、5シードで再検証したら差が2倍近くに広がった話",
-      "url": "https://zenn.dev/wasurenamemo/articles/c77d679a84dd2b",
-      "site": "Zenn(機械学習)",
-      "published": "2026-07-28T09:41:01Z",
-      "description": "!\nこの記事は以下のブログ記事の要約版です。全コード・グラフ・詳しい考察は元記事をご覧ください。\n→ BatchNorm位置比較を5シードで再検証｜Conv→BN→ReLU vs Conv→ReLU→BNの逆転は本物か？\n\n\n 単一シードの結果は「差を小さく見積もっていた」\n以前、CIFAR-10でBatchNormの位置（Conv→BN→ReLU vs Conv→ReLU→BN）を比較したところ...",
       "category": "AI・技術",
       "rss_category": "",
       "image_url": ""

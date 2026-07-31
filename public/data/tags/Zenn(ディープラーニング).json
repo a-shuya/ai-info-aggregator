@@ -1,7 +1,7 @@
 {
   "site": "Zenn(ディープラーニング)",
-  "last_updated": "2026-07-31T12:23:00.289489",
-  "total_articles": 375,
+  "last_updated": "2026-07-31T15:00:31.298076",
+  "total_articles": 376,
   "articles": [
     {
       "title": "Softmax単体の逆伝播を計算グラフで導出する【ゼロつく2】",
@@ -9,6 +9,16 @@
       "site": "Zenn(ディープラーニング)",
       "published": "2026-07-30T09:39:23Z",
       "description": "はじめに\ndef backward(self, dout):\n        dx = self.out * dout\n        sumdx = np.sum(dx, axis=1, keepdims=True)\n        dx -= self.out * sumdx\n        return dx\n早速だが、これは、ゼロから作るDeep Learning2で使われている、Soft...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "BatchNormの位置、5シードで再検証したら差が2倍近くに広がった話",
+      "url": "https://zenn.dev/wasurenamemo/articles/c77d679a84dd2b",
+      "site": "Zenn(ディープラーニング)",
+      "published": "2026-07-28T09:41:01Z",
+      "description": "!\nこの記事は以下のブログ記事の要約版です。全コード・グラフ・詳しい考察は元記事をご覧ください。\n→ BatchNorm位置比較を5シードで再検証｜Conv→BN→ReLU vs Conv→ReLU→BNの逆転は本物か？\n\n\n 単一シードの結果は「差を小さく見積もっていた」\n以前、CIFAR-10でBatchNormの位置（Conv→BN→ReLU vs Conv→ReLU→BN）を比較したところ...",
       "category": "AI・技術",
       "rss_category": "",
       "image_url": ""
