@@ -1,8 +1,58 @@
 {
   "site": "Zenn(Python)",
-  "last_updated": "2026-07-31T10:18:12.499493",
-  "total_articles": 5393,
+  "last_updated": "2026-07-31T12:23:00.289489",
+  "total_articles": 5401,
   "articles": [
+    {
+      "title": "【実測】MCP 2026-07-28版に対応した自作サーバに、旧仕様のClaude Code 2.1.220を繋いだら動きました",
+      "url": "https://zenn.dev/ojisan_ai_lab/articles/mcp-dual-era-20260731",
+      "site": "Zenn(Python)",
+      "published": "2026-07-31T09:28:04Z",
+      "description": "正直に言うと、この仕事は「やらなくていい」という結論が先に出ていました。MCPの新しい仕様（2026-07-28版）が出たとき、おじさんの自作サーバは調べた限り対応しなくても壊れないからです。\nそれでも実装してみました。仕様書を読んだだけでは、自分のコードで何が起きるか分からなかったからです。\n変更は全部で28項目ありましたが、おじさんのサーバに実装作業が発生したのは12項目でした。そして出てきた...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "Garmin Exportで過去データが消えた。Snapshot Accumulationを実装した理由",
+      "url": "https://zenn.dev/tsubotti63/articles/garmin-export-snapshot-accumulation",
+      "site": "Zenn(Python)",
+      "published": "2026-07-31T09:00:30Z",
+      "description": "Garmin Account Data Exportを定期的に取得していれば、最新のExportだけを\n残しておけばよい。最初は、そう考えていました。\nところが、前回のExportでは確認できた期間のファイルが、数日後に取得した\nExportから見えなくなる事例に遭遇しました。\n\nGarmin Exportは、毎回同じ内容になるとは限らない。\nだから、取得したExportを観測履歴として残し、累積...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "MixUpのalphaを上げたら精度が下がった話｜confidenceは理論通り、精度は逆だった",
+      "url": "https://zenn.dev/wasurenamemo/articles/ca6f64ae5f1fba",
+      "site": "Zenn(Python)",
+      "published": "2026-07-31T06:59:56Z",
+      "description": "!\nこの記事は以下のブログ記事の要約版です。全コード・グラフ・詳しい考察は元記事をご覧ください。\n→ MixUpのalpha値を変えると効果はどう変わる？（α=0.1 vs 0.2 vs 0.4 vs 1.0）\n\n\n 「MixUpは精度を上げる」の逆をいく結果に\nMixUpの混合の強さを決めるalphaを0（なし）・0.1・0.2・0.4・1.0の5段階で比較しました。ベースラインはシリーズ標準構...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "[機械学習]Sumノードの逆伝播についてわかりやすく",
+      "url": "https://zenn.dev/kawarin_origami/articles/matrix-sum-backward-20260731",
+      "site": "Zenn(Python)",
+      "published": "2026-07-31T05:39:51Z",
+      "description": "はじめに\nゼロから作るDeep Learning2のコードのSumノードの逆伝播のコードの理解が浅かったため、\nわかりやすく説明できるようにしました。\nちなみに該当コードは以下の部分です。(N,T,H)の形状であるtがSumノードを通し、(N,T)形状のsに変換される例です。\ndt = ds.reshape(N, T, 1).repeat(H, axis=2)\n\n 対象読者\n\nぜろつく2の逆伝播の...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "地震が起きたとき、人工衛星からは何が見えるのか",
+      "url": "https://zenn.dev/shogaku/articles/sentinel1-insar-coherence-stratification",
+      "site": "Zenn(Python)",
+      "published": "2026-07-31T04:59:03Z",
+      "description": "!\nこの記事は、個人が公開データを使って独自に解析したものです。査読を受けておらず、公式に確認された結果でもありません。処理や解釈の誤りによって、記載した数値や地図が実際と異なっている可能性があります。\n被害の把握や避難の判断には、国土地理院・気象庁・自治体などの公式発表を参照してください。この記事の内容を、そうした判断の根拠に使わないでください。\n誤りにお気づきの際は、ご指摘いただけると助かりま...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
     {
       "title": "複数AIの二重実行を防ぐTask Lease",
       "url": "https://zenn.dev/agentmemories/articles/agent-task-lease",
@@ -19,6 +69,36 @@
       "site": "Zenn(Python)",
       "published": "2026-07-31T04:00:01Z",
       "description": "PythonSCADコミュニティ・開発者に感謝申し上げます。ありがとうございます。\nhttps://www.pythonscad.org/\n以下、他の技術記事でも書いたネジ穴付きの小型ケースサンプルの作成プロセスです。似たようなもの(同じもの)もあるかと思いますが、以下、コードを試してみてください。また、パラメータ数値を変更してみましょう。いろいろ、手順、工程、プロセス、段取り、考え方、などなど、...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "タイトルと本文ハッシュで二重投稿を防ぐ - 障害分析",
+      "url": "https://zenn.dev/kmn/articles/c16f419d7381f2",
+      "site": "Zenn(Python)",
+      "published": "2026-07-31T02:34:28Z",
+      "description": "タイトルと本文ハッシュで二重投稿を防ぐ - 障害分析\n自動処理は、スケジュール登録だけでは安定しません。再試行や複数キューにより、ファイル名が違う同一記事を二重投稿することがあります。\nこの記事では「障害分析」の観点から、入力、処理、成果物、公開結果を分離する方法を整理します。仕組み全体の理由まで扱います。\n\n 基本方針\n下書き作成前に、正規化タイトルと本文ハッシュを公開済み結果と比較します。\nプ...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "【技術解説】【完全ガイド】XGBoostを用いた特徴量重要度の算出と株価予測の実装",
+      "url": "https://zenn.dev/sugarfree/articles/e38090e5ae8ce585a8e382ace382a4e38389e38091xgb",
+      "site": "Zenn(Python)",
+      "published": "2026-07-31T02:00:37Z",
+      "description": "XGBoostによる株価予測と特徴量重要度の算出\n近年、金融市場でのアルゴリズムトレーディングが広がりを見せている中、データ分析や機械学習を用いた株価予測手法が注目されています。本記事では、PythonのライブラリであるXGBoostを用いて特徴量重要度を算出し、株価予測を実装する方法について解説します。この手法を通じて、データサイエンスを活用した投資戦略の構築に向けたステップを学びましょう。\n\n...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "SAM 3Dで1枚画像から3Dモデルを起こす：製造業パーツの3D化を検証",
+      "url": "https://zenn.dev/libercraft/articles/20260731-sam3d-image-to-3d",
+      "site": "Zenn(Python)",
+      "published": "2026-07-31T02:00:00Z",
+      "description": "「古い設備のパーツの図面が残っておらず、写真しかない」「破損した部品の代替品を発注したいが、寸法が分かる図面がない」——製造業の現場では、こうした「モノはあるが図面がない」状況が想像以上に多く発生します。\n前回の記事「SAM 3 vs SAM 2：動画追跡パイプラインを比較実装する」で扱ったSAM 3のセグメンテーション技術は、2025年11月にMeta社が発表した「SAM 3D」によって、1枚の...",
       "category": "開発",
       "rss_category": "",
       "image_url": ""
