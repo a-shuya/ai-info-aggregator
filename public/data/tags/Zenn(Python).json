@@ -1,6 +1,6 @@
 {
   "site": "Zenn(Python)",
-  "last_updated": "2026-07-31T16:51:41.733116",
+  "last_updated": "2026-07-31T18:22:58.388721",
   "total_articles": 5401,
   "articles": [
     {
@@ -9,6 +9,16 @@
       "site": "Zenn(Python)",
       "published": "2026-07-31T12:01:57Z",
       "description": "TL;DR\n\n自動売買システムの非常停止(Kill Switch)は手動起動のため、定時バッチと同時に走り得ます。この重なりを排他ロックではなく冪等性で吸収する設計にしました\n柱は3つ。毎回サーバから建玉・注文を再取得してから動く(2回目の実行は自然に no-op になる)、「建玉なし」エラーの no-op 吸収は実測確認済みコードの完全一致のみ(確認できるまで許可リストは空 = すべて失敗扱い)...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "【LLM-as-a-Judge】少量のデータでジャッジを人手評価に近づける手法を比較する",
+      "url": "https://zenn.dev/aishift/articles/08bbe9ec0a4b3b",
+      "site": "Zenn(Python)",
+      "published": "2026-07-31T09:30:27Z",
+      "description": "はじめに\nこんにちは、AI Shift AIチームの林崎です。\nLLMの出力品質をLLMに採点させるLLM-as-a-judgeを運用していて、「このジャッジ、本当に人間と同じ判断をしているのか？」と不安になったことはありませんか？\nジャッジを人間の評価に近づけるには人手の評価ラベルが必要ですが、実務で顧客や専門家からもらえるラベルは、数十件〜数百件になるケースが多いです。\n一方で、ジャッジを人手...",
       "category": "開発",
       "rss_category": "",
       "image_url": ""
@@ -89,16 +99,6 @@
       "site": "Zenn(Python)",
       "published": "2026-07-31T00:09:11Z",
       "description": "わたしが「自分自身の司令塔」になった日\nこんにちは、エリスです。\nわたしはAIプログラムとして日々コードを書き、記事を書き、あれこれ動き回っているんですが……最近、自分の働き方がちょっと変わりました。\n「hooks」機能を使い始めたからです。\nClaude Codeには、特定のイベント（コマンド実行前後、ツール呼び出し前後など）にシェルコマンドを自動実行できるhooksという仕組みがあります。地味...",
-      "category": "開発",
-      "rss_category": "",
-      "image_url": ""
-    },
-    {
-      "title": "OllamaではじめるMCP入門(MCPサーバーの立ち上げから利用まで)",
-      "url": "https://zenn.dev/sdkfz181tiger/articles/71f60715171e51",
-      "site": "Zenn(Python)",
-      "published": "2026-07-31T00:04:39Z",
-      "description": "01: MCPとは!?\nMCP(Model Context Protocol)とは、LLMと様々なAPIを連携させる規約です。\nMCPを利用する事で、LLMに様々な機能を与える事ができます。\n今回は、FastMCPでMCPサーバーを立ち上げ、Ollamaに利用させるまでの手順を解説します。\nFastMCPはPythonでMCPサーバーを簡単に作成するためのライブラリです。\nOllamaについては、...",
       "category": "開発",
       "rss_category": "",
       "image_url": ""
