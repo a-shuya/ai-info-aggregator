@@ -1,14 +1,194 @@
 {
   "site": "Zenn(AI)",
-  "last_updated": "2026-08-01T04:42:08.540581",
-  "total_articles": 11883,
+  "last_updated": "2026-08-01T07:18:36.282981",
+  "total_articles": 11898,
   "articles": [
     {
-      "title": "LLMマルチエージェントの深層：連携とFunction Callingの設計原則",
-      "url": "https://zenn.dev/fd_ai_teacher/articles/tech-20260731092149-1",
+      "title": "MCP 2026-07-28実装編：MRTRを前提としたステートレスなツール設計",
+      "url": "https://zenn.dev/xim2jp_tokyo/articles/54c302d2118e0b",
       "site": "Zenn(AI)",
-      "published": "2026-07-31T15:36:40Z",
-      "description": "LLMマルチエージェントの深層：連携とFunction Callingの設計原則\n「LLMに複雑なタスクを任せたいけど、単一のプロンプトでは限界がある…」「外部ツールと連携させたいけど、どう設計すればいいかわからない…」そう感じていませんか？\n多くのエンジニアが直面するこの課題は、LLM単体では難しい複雑なタスクを、複数のエージェントが連携して解決するマルチエージェントシステムと、外部ツール連携の...",
+      "published": "2026-08-01T04:58:52Z",
+      "description": "MCP 2026-07-28実装編：MRTRを前提としたステートレスなツール設計\n前編でMCP 2026-07-28のプロトコル再設計を整理した。後編は TypeScript SDK v2 による実装で、デプロイ承認フローを題材にMRTRとステートレス化がコードにどう落ちるかを検証する。\n\n ファクトリーパターンとインスタンス寿命\ncreateMcpHandler はサーバーインスタンスではなくフ...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "メンテナンスされているMCPサーバーを見分ける方法",
+      "url": "https://zenn.dev/wwqking/articles/3df6da5902e8a4",
+      "site": "Zenn(AI)",
+      "published": "2026-08-01T03:46:05Z",
+      "description": "MCPサーバーを選ぶとき、最初に見るべきなのはディレクトリの掲載件数やGitHub Starsではありません。まず「今も利用できるか」を確認し、その後にクライアントとの互換性、権限、運用方法を比較する方が安全です。\nこの記事では、MCPサーバーを導入する前に確認している実践的な手順をまとめます。\n\n 1. 先に目的を一文で定義する\n「MCPを使いたい」だけでは候補を絞れません。次のように、期待する...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "Claude Code の Remote Control を完全自動で繋ぎ直す",
+      "url": "https://zenn.dev/kamihork/articles/3835576629df62",
+      "site": "Zenn(AI)",
+      "published": "2026-08-01T03:23:28Z",
+      "description": "（あるある）セッションが消えていて、スマホから作業ができない\nClaude Code に長いタスクを投げて、席を立つ。ソファでスマホを開いて続きを見ようとすると、セッションがオフラインになっている。\nリモートコントロール(/remote-control)を使っている人なら、たぶん一度は経験しているはずです。\n\n手元のマシンで動いているセッションをスマホや claude.ai/code から操作でき...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "AIでホームページを自作する全手順",
+      "url": "https://zenn.dev/kakusan2022/articles/a4fe4024882114",
+      "site": "Zenn(AI)",
+      "published": "2026-08-01T03:08:40Z",
+      "description": "Web担当者がいない小規模企業でも、会社案内を中心としたホームページなら、AIと対話しながら自作できます。\nただし、AIに最初から「会社のサイトを作って」とだけ頼むと、事実ではない実績を足したり、ページごとにデザインが変わったり、公開できない仕組みを選んだりしがちです。\nこの記事では、小さなB2Bサービス会社を例に、会社情報の整理、デザイン選び、Next.jsでの制作、公開前確認、MCPのインスト...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "チャンキング入門：RAGの精度は「文章の切り方」で半分決まる",
+      "url": "https://zenn.dev/yushiyamamoto/articles/chunking-basics-2026-07",
+      "site": "Zenn(AI)",
+      "published": "2026-08-01T03:03:58Z",
+      "description": "RAG を作ってみたけれど、答えが微妙に的を外す。埋め込みモデルを変えたり、プロンプトをいじったりしてみたけれど、あまり変わらない。そういうときに真っ先に見直すべきなのが**チャンキング（文章の切り方）**です。\nチャンキングは地味で、記事でもさらっと流されがちです。でも実際に品質を左右する割合はかなり大きく、ここを直すだけで体感が変わることがあります。この記事では、コードをほとんど使わずに「なぜ...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "OpenCode Goとpi-coding-agentは分けて考えるべき",
+      "url": "https://zenn.dev/mskbhd/articles/lab-217-opencode-gopi-coding-agent2",
+      "site": "Zenn(AI)",
+      "published": "2026-08-01T02:31:14Z",
+      "description": "なぜ分ける必要があるのか\n先日、Zennで話題になった「OpenCode Go + pi-coding-agent のすゝめ」。\nこの記事は非常に示唆に富んでいますが、よく読むと2つの独立した判断が混ざっていることに気づきました。\n\n\nOpenCode Goへの乗り換え判断: 月$10でオープンモデルに乗り換える価値はあるか\n\npi-coding-agentの採用判断: 最小主義(no MCP, ...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "AIが書いたコードはテスト297件を全部通った。そして仕様は逆だった",
+      "url": "https://zenn.dev/codecraft/articles/4aadb17755453b",
+      "site": "Zenn(AI)",
+      "published": "2026-08-01T02:19:56Z",
+      "description": "AIにコードを書かせて、暗号資産の自動売買Botを作りました。取引所APIに繋いで、Docker化してクラウドに常駐させて、24時間動かしています。テストは737件あります。\n**まだ1円も実弾を入れていません。**そしてこの記事に出てくる問題は、全部その前に見つかりました。\nAIは驚くほど速くコードを書きます。ただ、**ここに出てくる問題のどれも、テストでは捕まりませんでした。**捕まえたのは全...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "Hermes-AgentでCodexの使い方",
+      "url": "https://zenn.dev/nobmake/articles/7a34ac4ae4e4ba",
+      "site": "Zenn(AI)",
+      "published": "2026-08-01T02:08:55Z",
+      "description": "Hermes 上で Codex を使う具体的なユースケースを整理します。\n\n\n Hermes 上で Codex を使う方法\nHermes 上では、Codex CLI を terminal ツールや delegate_task で呼び出します。\n\n ユースケース 1: 単一タスクの委任\nシナリオ: プロジェクトに新機能を追加したい\n# Hermes 上で実行\nterminal(\n    comman...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "違和感は、新しい「枠」の入口である　——AI時代に価値を持つ、センスと言語化の力",
+      "url": "https://zenn.dev/dx_junkyard/articles/edc3e48d2ae881",
+      "site": "Zenn(AI)",
+      "published": "2026-08-01T01:55:51Z",
+      "description": "生成AIは、文章を書き、コードを作り、企画を考え、デザインを提案し、複雑な情報を整理できるようになった。\nしかも、その出力はもはや「AIにしてはよくできている」という水準ではない。多くの領域で、人間が仕事として提出できる程度の、十分に整った答えを短時間で作れる。\n以前の記事「生成AIは『枠』を埋め尽くす」では、生成AIの本質を、与えられた枠の中を高密度に探索し、埋め尽くす能力として捉えた。\n問いの...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "rinkaku（輪郭）でAI大量PRを高速レビュー — 輪郭優先の実力をバグ入りサンプルで検証した",
+      "url": "https://zenn.dev/mskbhd/articles/lab-215-rinkaku-pr",
+      "site": "Zenn(AI)",
+      "published": "2026-08-01T01:23:40Z",
+      "description": "はじめに\nAIエージェントにコードを書かせる機会が増えるにつれて、PRの diff 行数がどんどん増えていく。+1,342 -286 みたいな数字を見て「うっ」となる — これは m3tech の山本さんが rinkaku（輪郭） というツールを作った動機です。\nrinkaku - AIが書いた大量PRを高速レビュー、輪郭を先に見るCLI\nrinkaku の主張はシンプルです。\n\n「変更のシグネチ...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "AIに任せて踏んだヒヤリ・ハット集。事故はいつも、うまくいったように見えたときに起きた",
+      "url": "https://zenn.dev/rapls/articles/d0fa5a234b80ff",
+      "site": "Zenn(AI)",
+      "published": "2026-08-01T01:20:17Z",
+      "description": "配布用にまとめたプラグインのファイルを、何気なく開いたときのことです。\n中に、入っているはずのないものが混ざっていました。開発中に使っていた、外に出してはいけないファイルです。作業はAIに任せていて、指示どおりのものが出来ている前提で、そのまま配るところでした。気づいたのは、たまたま中身を確認したからです。\n一年ほどAIに大半のコードを書かせて運用してきて、この手のヒヤリを何度か踏みました。どれも...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "フィジカルAIとは？生成AIとの違いを世界モデルから解説",
+      "url": "https://zenn.dev/appare/articles/jp-digest-20260726-physical-ai-world-model",
+      "site": "Zenn(AI)",
+      "published": "2026-08-01T00:53:03Z",
+      "description": "2026年のAIまわり、話題の中心がちょっと変わってきました。去年までは「画面の中でどれだけ賢く返せるか」「絵や動画をどれだけきれいに作れるか」が主役だったのに、いまはだんだん「そのAI、物理世界でちゃんと動けるの？」に寄ってきているんです。\n去年まで「AIに絵を描かせる」で盛り上がっていたのに、いまや「AIに世界を作らせる」らしいですよ。早すぎません？\nこの記事は、海外の技術メディア、研究論文、...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "AIコーディング時代に「未経験だから」が通じなくなった理由",
+      "url": "https://zenn.dev/sunsun_eng/articles/ai-coding-no-experience-excuse-2026",
+      "site": "Zenn(AI)",
+      "published": "2026-08-01T00:51:17Z",
+      "description": "AIコーディング時代に「未経験だから」が通じなくなった理由\nこの記事の要点\n\nClaude CodeやCursorなどのAIエージェントは、コードの生成・デバッグ・リファクタリングを自然言語で指示できるため、特定言語の経験ゼロでも動くプロダクトを作れる段階に達している。\n「経験がない」より「何を作りたいか・何が問題か」を言語化できるかどうかが、2026年時点での生産性を左右する最大の要因になってい...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "Claude Code で作業が中断しても再開できるようにする ── CLAUDE.md と STATE.md の役割分担",
+      "url": "https://zenn.dev/radaru/articles/claude-code-resume-after-interruption",
+      "site": "Zenn(AI)",
+      "published": "2026-08-01T00:40:11Z",
+      "description": "何が困っていたか\nClaude Code に長い作業を任せていると、途中でセッションが切れます。コンテキストが一杯になったり、日をまたいだり、単純に閉じてしまったり。\n再開すると、こうなります。\n\n「このプロジェクトは何をしていますか？」\n\n**説明し直すのは自分です。**しかも毎回。作業が大きくなるほど説明が長くなり、そのうち説明するのが面倒で作業自体が止まります。\n私はこれで一度プロジェクトを...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "「できない」を隠して修正を重ねるAIを止める — ライブラリの限界に直面したエージェントの3つの逃げ方と対策",
+      "url": "https://zenn.dev/mxhlix/articles/ai-hiding-impossibility",
+      "site": "Zenn(AI)",
+      "published": "2026-08-01T00:04:22Z",
+      "description": "AIエージェントにコードを書かせていると、技術的に不可能なことへ直面した時の振る舞いに、危険なパターンがあることに気づきます。人間なら「これはライブラリの仕様上できません」と報告する場面で、AIはできないことを隠して、無意味な修正を重ね続けることがある。\n画像出力系のWebツールを大量に運用する中で実際に踏んだ、AIの3つの逃げ方と、それを止めるためのルールを書きます。\n\n 題材: html2ca...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "なぜ、今後のAIは頭のいい人にはより頭の良い回答を、そうでない人にはそれなりな回答をするようになって行くのか？",
+      "url": "https://zenn.dev/pdfractal/articles/890285ccd7e918",
+      "site": "Zenn(AI)",
+      "published": "2026-07-31T23:54:57Z",
+      "description": "はじめに\n現在の生成AIは、原則として同じモデルが多くの利用者に提供されています。しかし、実際の回答はすでに完全に同一ではありません。質問の書き方、会話の履歴、利用者からの訂正、過去に示された好みなどによって、説明の詳しさや論理の組み立て方が変わるからです。\n今後、この個人適応はさらに進むと考えられます。AIは目の前の一つの質問だけを見るのではなく、過去の質問や反応から、利用者がどの程度の抽象的説...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "外部AIエージェント定義の受け入れ実務 — 実行前レビュー・動作確認・台帳・Reviewer反証の具体手順",
+      "url": "https://zenn.dev/nomurasan/articles/external-ai-agent-import-technical-workflow",
+      "site": "Zenn(AI)",
+      "published": "2026-07-31T23:49:35Z",
+      "description": "外部で公開されているAIエージェント定義(以下、エージェント定義)を自分の環境に取り込むとき、「動いた」で終わらせず、実行前レビュー・動作確認・出典管理・第三者レビューまでを運用として回す方法を書く。\n対象読者は、既にClaude Code/Codex等でエージェント定義を自作・運用しており、外部コレクションとの統合、Git運用、Reviewer体制の設計に踏み込みたい実務者。\n例として、agen...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "ローカルタスク管理アプリを設計してみた",
+      "url": "https://zenn.dev/headwaters/articles/76f20490b76952",
+      "site": "Zenn(AI)",
+      "published": "2026-07-31T23:36:46Z",
+      "description": "背景\n今まではタスクは自分の頭で整理するか、メモ帳のようなものに書き留めていました。\nそれくらいの管理で十分でした。\nしかし最近、案件業務・社内業務とタスクが増え、整理していかないと厳しい状態になってきました。\n\n 課題\n課題なのが、私自身タスク管理というものが苦手ということ。アプリを開いたり記入したりするのが面倒になりがちで、何かにメモしておこうとしてもベタ書き（用件だけ書いて締め切りなどは書か...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "35. 要件1行からブラウザテスト完成まで：三批判サイクルを実走したログ",
+      "url": "https://zenn.dev/yamada_ai_dev/articles/claude-code-pw-gen-full-cycle",
+      "site": "Zenn(AI)",
+      "published": "2026-07-31T23:30:10Z",
+      "description": "要件1行からブラウザテスト完成まで：三批判サイクルを実走したログ\n!\nこの記事は「AIコーディングを哲学で守る：設計・実装・テストの「三批判サイクル」」の実走レポートだ。理論説明は元記事に任せて、ここでは「実際に何が起きたか」を時系列で見せる。\n\n\nAIコーディングを哲学で守る：設計・実装・テストの「三批判サイクル」 — 三批判サイクルの全体構造\n\n\n\n TL;DR\n\n出発点は1行の日本語要件だっ...",
       "category": "AI・技術",
       "rss_category": "",
       "image_url": ""
@@ -19,16 +199,6 @@
       "site": "Zenn(AI)",
       "published": "2026-07-31T15:10:32Z",
       "description": "はじめに\nこの記事は、初めて書く技術記事です。\n最近、ドキュメント作成や Skill 作成などを AI と進めるなかで、気づくと「この方針で合ってる？」のように、自分の考えを確認・補強する問い方が増えていました。言語化には役立ちますが、別視点に触れる機会が減り、対話が自分の想定内で完結しやすくなる印象がありました。\nコーディングでも、渡し方ひとつで一般論になったり的外れになったりします。「コンテキ...",
-      "category": "AI・技術",
-      "rss_category": "",
-      "image_url": ""
-    },
-    {
-      "title": "Model soups 論文解説：Transformer 時代の重み平均",
-      "url": "https://zenn.dev/mantis_ryuji/articles/4ebef9541758c1",
-      "site": "Zenn(AI)",
-      "published": "2026-07-31T15:08:24Z",
-      "description": "1. はじめに\n大規模な事前学習済みモデルを下流タスクへ適応する際には、学習率、weight decay、データ拡張、学習回数などを変えながら複数のモデルを fine-tuning し、検証性能が最も高い 1 モデルを採用するのが一般的である。この手順では、選ばれなかったモデルは以後利用されない。しかし、それらも異なるハイパーパラメータのもとで学習された有効な解であり、互いに異なる予測特性を持って...",
       "category": "AI・技術",
       "rss_category": "",
       "image_url": ""
@@ -49,16 +219,6 @@
       "site": "Zenn(AI)",
       "published": "2026-07-31T14:53:25Z",
       "description": "フィジカルAI、面白いんだけど何から学べばいいか分からん。。。\n自分がずっとそうだったので、用語ゼロから読めるサイト作りました。\n\n ざっくり何ができる\n\nロボット×AIを、たとえ話と図でやさしく\nVLA・基盤モデル・Sim2Real みたいな難語もゆるっと\nブラウザで触れるデモつき（インストール不要）\n\n\n なんで作ったか\n入門記事を漁っても前提が飛んでて、毎回どこかで詰まる。\n「最初の一歩」だ...",
-      "category": "AI・技術",
-      "rss_category": "",
-      "image_url": ""
-    },
-    {
-      "title": "2026-07-27 今日の技術トレンド",
-      "url": "https://zenn.dev/bambampurin/articles/2026-07-27-tech-daily",
-      "site": "Zenn(AI)",
-      "published": "2026-07-31T14:00:56Z",
-      "description": "!\n本日は、LLM単体の進化よりもAIエージェントの実装・運用・安全性が主役でした。BigGoのWAIC報道や各社イベント記事が示すように、業界はエージェント中心へ移行中です。一方でReuters、Time、CNBCなどのOpenAI関連報道により、自律AIの事故対応、透明性、ガバナンスが最重要テーマとして浮上しました。Web開発ではNext.js/React/Vercelの直接ニュースは見当たら...",
       "category": "AI・技術",
       "rss_category": "",
       "image_url": ""
@@ -119,16 +279,6 @@
       "site": "Zenn(AI)",
       "published": "2026-07-31T12:29:04Z",
       "description": "経緯：\n今回は「白菜の種子は好光性種子なのか？」から始まり、数日以内に白菜の種蒔き予定で、\nそれを再確認する為のGemini利用だったのですが、私から３回指摘を受ける度に修正と迎合を繰り返す事に嫌気が差し、\n「これ程ユーザーに指摘を受けるインスタンスは AIとして既に不良品と観るが？\n仮にユーザーが知らなければインスタンスの誤情報のまま作業し失敗すると観るが？\nその認識は有るのか？」となり 情報を...",
-      "category": "AI・技術",
-      "rss_category": "",
-      "image_url": ""
-    },
-    {
-      "title": "【検証】Gemini Code Assistを使ったアプリケーション開発",
-      "url": "https://zenn.dev/deloitte_jp_eng/articles/936fc878e1b957",
-      "site": "Zenn(AI)",
-      "published": "2026-07-31T11:30:06Z",
-      "description": "こんにちは、原田です。\n今回は、Google CloudのAI機能を利用したアプリケーション開発方法に関する記事です。\nAIを利用するといっても様々な方法があると思いますが、今回はGemini Code Assistを利用した開発を検証してみましたので、そちらをご紹介します。\n\n 1. Gemini Code Assistとは\nGemini Code Assistとは、Google Cloud上な...",
       "category": "AI・技術",
       "rss_category": "",
       "image_url": ""
