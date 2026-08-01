@@ -1,8 +1,78 @@
 {
   "site": "Zenn(Python)",
-  "last_updated": "2026-08-01T09:28:17.537246",
-  "total_articles": 5408,
+  "last_updated": "2026-08-01T11:02:26.599563",
+  "total_articles": 5415,
   "articles": [
+    {
+      "title": "RSS収集とSQLiteによる差分検知の設計 — ローカルLLMを利用した自分専用ニュースbot開発記 #2",
+      "url": "https://zenn.dev/katamarize/articles/step2-rss-diff-detection",
+      "site": "Zenn(Python)",
+      "published": "2026-08-01T08:29:14Z",
+      "description": "この記事について\n「自分専用ニュースbot」開発記の第2回です。前回はローカルLLM(Ollama)にJSONを厳密に返させるところまで作りました。今回はLLMとは完全に独立したパート、RSSフィードの収集と、SQLiteによる「既読管理」(同じ記事を2回通知しない仕組み) を作ります。\nゴールは「同じRSSフィードを2回実行したとき、2回目は新着0件になる」こと。地味ですが、これができないと毎回...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "AIと一緒に「スポーツボウリング場」構想を育てる ― 開発日記・第二弾編",
+      "url": "https://zenn.dev/junko_jp/articles/bowling-v2-development",
+      "site": "Zenn(Python)",
+      "published": "2026-08-01T07:54:07Z",
+      "description": "AIと一緒に「スポーツボウリング場」構想を育てる ― 開発日記・第二弾編\n\n 今回は、Claudeとしか話していない\n前回、事務職20年からエンジニアを目指す過程で「レーン予約システム」の第一弾を作った話を書きました。第一弾は複数のAIに意見をもらいながら進めたのですが、今回の第二弾はClaude一人だけを壁打ち相手にして、構想の整理から実装、Gitのブランチ運用まで通しでやってみました。1つのA...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "なぜ企業の管理会計は自動化できないのか?",
+      "url": "https://zenn.dev/jinkondo1984/articles/e4417ecd72a649",
+      "site": "Zenn(Python)",
+      "published": "2026-08-01T07:09:17Z",
+      "description": "なぜ企業の管理会計は自動化できないのか?\n\n はじめに\n「もっと早く数字が見られたら、もっと早く経営判断ができるのに」\n経理・管理会計に関わったことがある方なら、一度はこう感じたことがあるのではないでしょうか。毎月・毎四半期、会計ソフトから出力したデータをExcelに落とし、部門別に振り分け、固定費と変動費を仕分け、ようやく「経営が見たい数字」ができあがる——この作業、実は多くの会社で今も手作業の...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "freee APIで督促ツールを作ろうとしたら、前提が5回崩れた",
+      "url": "https://zenn.dev/hachihou_system/articles/freee-api-tokusoku",
+      "site": "Zenn(Python)",
+      "published": "2026-08-01T05:06:18Z",
+      "description": "個人事業主向けに「支払期日を過ぎた未入金を検知して、督促メールの文面を用意するツール」を作りました。\n設計段階では素直に作れるつもりでいたのですが、実際にAPIを叩くたびに前提が崩れました。崩れた5つを、なぜ崩れたかとあわせて残しておきます。freee APIを触る人の役に立つはずです。\n作ったもの: https://tokusoku.onrender.com\n\n\n 崩れた前提① 「未決済」は「未...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "OpenTelemetryで会話本文を止めても、IPアドレスとAPIキー識別情報は残る —— LLMゲートウェイのspan属性を55個数えた",
+      "url": "https://zenn.dev/seiryu_dev/articles/litellm-otel-pii-still-remains",
+      "site": "Zenn(Python)",
+      "published": "2026-08-01T03:31:52Z",
+      "description": "LiteLLM に turn_off_message_logging: true を入れれば、会話本文はトレースに出なくなります。\nですが、IPアドレス・APIキーの識別情報・User-Agent・ユーザーIDは実値のまま残ります。\n私はこれを、設定を入れて「これで安全になった」と思ったあとに見つけました。\nトレースは収集基盤へ送るために作るものです。送り先が外部のSaaSなら、「どこから・どのキ...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "Pythonが書けない製造業マンがClaude Codeで作ったツール29本の全リスト",
+      "url": "https://zenn.dev/h_nocode_ai_lab/articles/4a64696ee29461",
+      "site": "Zenn(Python)",
+      "published": "2026-08-01T02:48:59Z",
+      "description": "プログラミングを一切勉強したことがない。Pythonが何かも知らなかった。\nそんな製造業（生産管理）のサラリーマンが、Claude Codeを使い始めてから約3.5ヶ月で社内ツールを29本作った。処理したデータは81万件超。書いたスクリプトは130本以上。\n「非エンジニアでもAIでコードが書ける」という話は聞いたことがあったが、実際にどんなツールをどう作ったのか、具体的な話はあまり見当たらない。こ...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "トポロジカルソートを図解｜依存関係を壊さずに並べる方法",
+      "url": "https://zenn.dev/student_blog/articles/topological-sort-python",
+      "site": "Zenn(Python)",
+      "published": "2026-08-01T01:21:52Z",
+      "description": "「この作業が終わってから、次の作業を始める」という依存関係があるとき、どの順番で処理すればよいでしょうか。\nこの記事では、依存関係を守りながら頂点を並べるトポロジカルソートを扱います。完成したコードを眺めるだけではなく、小さなグラフを使ってキューの中身と入次数の変化を追います。\n\n 1. どんな問題を解決するか\n次のようなタスクを考えます。\n\n設計が終わってから実装する\n実装とテストが終わってから...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
     {
       "title": "#3 最適化の解を可視化",
       "url": "https://zenn.dev/ctenopoma/articles/mip-course-0-3-visualization",
