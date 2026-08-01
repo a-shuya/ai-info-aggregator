@@ -1,7 +1,7 @@
 {
   "site": "Zenn(LLM)",
-  "last_updated": "2026-08-01T12:11:31.365231",
-  "total_articles": 5025,
+  "last_updated": "2026-08-01T14:02:52.596974",
+  "total_articles": 5027,
   "articles": [
     {
       "title": "MCP 2026-07-28アップデート徹底解説 - ステートレス化で何が変わり、何ができるようになったのか",
@@ -34,21 +34,21 @@
       "image_url": ""
     },
     {
-      "title": "オフラインAIは本当に安全か",
-      "url": "https://zenn.dev/tomyuk/articles/offline-ai-chronicle-security",
-      "site": "Zenn(LLM)",
-      "published": "2026-08-01T03:51:29Z",
-      "description": "オフラインAIは本当に安全か\n\n LLMが人間と生成物を通信路にする時代のセキュリティ設計\nローカルLLM、オンプレミスAI、オープンウェイトモデルの利用が広がっている。\n外部APIに機密情報を送らず、自社環境や手元の端末でAIを動かせることには、明確な価値がある。顧客情報、社内文書、ソースコード、契約書、研究資料、未公開の企画などを扱う場面では、外部ベンダーの推論サーバーへ入力を送らないことは重...",
-      "category": "AI・技術",
-      "rss_category": "",
-      "image_url": ""
-    },
-    {
       "title": "マルチホップ質問応答のための知識グラフ設計：エンティティ抽出の実務",
       "url": "https://zenn.dev/libercraft/articles/20260801-multihop-qa-knowledge-graph-design",
       "site": "Zenn(LLM)",
       "published": "2026-08-01T02:00:00Z",
       "description": "「このセンサーを使っている製品ラインで、去年発生した不具合の件数は？」——このような質問は、ベクトルRAGが最も苦手とするタイプの質問です。「センサーの仕様書」「製品ラインの構成表」「不具合報告書」という3つの異なる文書を横断し、それぞれの関係を辿らないと答えが出せません。\nベクトル検索は「質問文と意味的に近い文書」を探す仕組みのため、質問文には出てこない中間の情報（このセンサーがどの製品ラインに...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "AIエージェントがURLを「開く」と何が起きるか — Web検索・URL取得機能に潜むSSRFと安全な外部アクセス制御",
+      "url": "https://zenn.dev/76hata/articles/llm-agent-ssrf-url-fetch-design-tips",
+      "site": "Zenn(LLM)",
+      "published": "2026-08-01T01:00:00Z",
+      "description": "はじめに — 「Web検索ツールを付ける」のその先に、何が待っているか\n「チャットボットにWeb検索を付けて、最新情報を答えられるようにしたい」。AIアプリを作っている開発者なら、一度はそう思うはずです。実際、RAG（社内文書などを検索して回答に使う手法）やMCP（Model Context Protocol、LLMと外部ツールを繋ぐ通信規格）を組み込めば、URL取得機能は数行で実装できます。\nと...",
       "category": "AI・技術",
       "rss_category": "",
       "image_url": ""
@@ -64,11 +64,31 @@
       "image_url": ""
     },
     {
-      "title": "AIエージェントがURLを「開く」と何が起きるか — Web検索・URL取得機能に潜むSSRFと安全な外部アクセス制御",
-      "url": "https://zenn.dev/76hata/articles/llm-agent-ssrf-url-fetch-design-tips",
+      "title": "「AIっぽい」レビューコメントは文体チェックでは見抜けなかった",
+      "url": "https://zenn.dev/mskbhd/articles/lab-213-no-ai-slop",
       "site": "Zenn(LLM)",
-      "published": "2026-08-01T01:00:00Z",
-      "description": "はじめに — 「Web検索ツールを付ける」のその先に、何が待っているか\n「チャットボットにWeb検索を付けて、最新情報を答えられるようにしたい」。AIアプリを作っている開発者なら、一度はそう思うはずです。実際、RAG（社内文書などを検索して回答に使う手法）やMCP（Model Context Protocol、LLMと外部ツールを繋ぐ通信規格）を組み込めば、URL取得機能は数行で実装できます。\nと...",
+      "published": "2026-07-31T22:05:38Z",
+      "description": "はじめに\n最近、no-ai-slop というAI生成文章の検知・修正OSSと、それをレビュー基準に再解釈するAlgomaticの記事 を立て続けに読みました。\nno-ai-slopは二項対立や出典のない権威づけ、大げさな重要性表現など20以上のAIっぽい文体パターンを定義しています。Algomaticの記事はこれを「文体修正ツール」ではなく「不足している判断材料（根拠・検証・限界・判断主体）を補う...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "Loop Engineeringが暗黙に仮定しているもの — サイコロではなく粘土板",
+      "url": "https://zenn.dev/cognitiveosmdl/articles/0dcfbea757d015",
+      "site": "Zenn(LLM)",
+      "published": "2026-07-31T21:28:14Z",
+      "description": "!\n本稿は備忘録的な性格が強い。Loop engineeringを運用する中で自分のメンタルモデルに見つけた穴を、忘れないうちに言語化したものである。私はこれらの論点の発見者ではない。部品はすべて既存分野(信頼性工学、統計的工程管理、ML監視)にあり、本稿はそれをloop engineeringという文脈に並べ直したにすぎない。\n\n!\n検証状態のタグについて\n本稿と続編では、各主張に検証状態を明示...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "Microsoft Agent Framework Harness とは — LLM を自律エージェントに変える実行基盤",
+      "url": "https://zenn.dev/withnextdotnet/articles/microsoft-agent-framework-harness",
+      "site": "Zenn(LLM)",
+      "published": "2026-07-31T18:17:26Z",
+      "description": "Microsoft は 2026 年 7 月、Microsoft Agent Framework の新機能 Agent Harness の一般提供を発表しました。単体ではテキストを返すだけの LLM を、ツールを使い・計画を立て・記憶を保ちながら多段タスクをこなす自律エージェントへ引き上げる実行基盤です。\n弊社技術ブログ WithNext.NET で、ハーネスが何を解決し・内部でどう動き・.NET...",
       "category": "AI・技術",
       "rss_category": "",
       "image_url": ""

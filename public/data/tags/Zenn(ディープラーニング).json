@@ -1,7 +1,7 @@
 {
   "site": "Zenn(ディープラーニング)",
-  "last_updated": "2026-08-01T12:11:31.365231",
-  "total_articles": 377,
+  "last_updated": "2026-08-01T14:02:52.596974",
+  "total_articles": 378,
   "articles": [
     {
       "title": "Model soups 論文解説：Transformer 時代の重み平均",
@@ -19,6 +19,16 @@
       "site": "Zenn(ディープラーニング)",
       "published": "2026-07-30T09:39:23Z",
       "description": "はじめに\ndef backward(self, dout):\n        dx = self.out * dout\n        sumdx = np.sum(dx, axis=1, keepdims=True)\n        dx -= self.out * sumdx\n        return dx\n早速だが、これは、ゼロから作るDeep Learning2で使われている、Soft...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "CIFAR-10にFocal Lossは効くのか？gamma比較で見えた『recallの平準化』",
+      "url": "https://zenn.dev/wasurenamemo/articles/b02bb5e569aaf0",
+      "site": "Zenn(ディープラーニング)",
+      "published": "2026-07-29T12:36:37Z",
+      "description": "!\nこの記事は以下のブログ記事の要約版です。全コード・グラフ・詳しい考察は元記事をご覧ください。\n→ Focal Lossのgamma値を変えると精度はどう変わる？（γ=0 vs 1 vs 2 vs 5）\n\n\n 全体精度は動かない。でもクラスごとに見ると話が変わる\nFocal Lossは物体検出向けに考案された、クラス不均衡対策の損失関数です。では10クラスがほぼ均等なCIFAR-10に使うとどう...",
       "category": "AI・技術",
       "rss_category": "",
       "image_url": ""
