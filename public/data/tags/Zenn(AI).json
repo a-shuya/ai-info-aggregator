@@ -1,8 +1,208 @@
 {
   "site": "Zenn(AI)",
-  "last_updated": "2026-08-02T12:46:22.555643",
-  "total_articles": 11940,
+  "last_updated": "2026-08-02T14:18:47.584552",
+  "total_articles": 11958,
   "articles": [
+    {
+      "title": "Cloudflare Agentsで簡易記憶を実装する",
+      "url": "https://zenn.dev/8845musign/articles/dcbb8ae84eb397",
+      "site": "Zenn(AI)",
+      "published": "2026-08-02T13:26:38Z",
+      "description": "Cloudflare AgentsのThinkとSession APIを使って、エージェントに簡易的な記憶を持たせるための調査を行いました。OpenClawでいうSoulや、ChatGPTにおけるメモリに相当するものです。\n今回はThinkを前提に、ThinkとContextを組み合わせて簡易的な記憶を実装します。\n!\nThinkとSession APIは、2026年8月現在experimenta...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "プロンプト・コンテキスト・ハーネス・ループの違いを「設計責任」で整理する",
+      "url": "https://zenn.dev/kittybbit/articles/1433959c42ba79",
+      "site": "Zenn(AI)",
+      "published": "2026-08-02T12:09:57Z",
+      "description": "AI エージェントの説明では、プロンプト、コンテキスト、ハーネス、ループという言葉が並びます。\nコンテキストやツールの結果は、次のモデル呼び出しの入力になります。そのため、「結局すべてプロンプトなのではないか」という疑問が生まれます。\n一般的な説明では、プロンプトはモデルへの指示、コンテキストはモデルに渡す情報全体を指します。この記事では、設計上の責任を切り分けるため、プロンプトを指示、コンテキス...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "Claude Codeのplanを「設計の木」にしてPRに埋め込むOSSを作った",
+      "url": "https://zenn.dev/natsu529/articles/5b01b8824ced61",
+      "site": "Zenn(AI)",
+      "published": "2026-08-02T11:52:37Z",
+      "description": "Claude Codeのplanモードの出力を木構造の設計書に変換し、実装後にコードとの一致を検証して、そのままPR本文に埋め込むCLIツール cc-plan-tree を作りました。\n\nhttps://github.com/natsu0529/cc-plan-tree\nuv tool install cc-plan-tree &amp;&amp; cc-plan-tree init\n\n 課題: ...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "AIの「実測しました」を3回信じて、3回とも間違っていた — 出力を確認する型",
+      "url": "https://zenn.dev/dstudylab/articles/trust-but-verify-ai-output",
+      "site": "Zenn(AI)",
+      "published": "2026-08-02T11:46:12Z",
+      "description": "AIに仕事を任せる量が増えると、あるところで詰まる。成果物の量ではなく、成果物を確認する時間が足りなくなる。\nそして厄介なのは、AIが間違えるとき、たいてい自信を持って間違えることだ。「実測しました」「確認済みです」「テストは全部通りました」という言葉が付いてくる。人間の同僚なら、自信のなさが表情や言い回しに出る。AIには出ない。\nこの記事は、私が実際に信じて、実際に間違っていた例を並べたものだ。...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "AIに夜通し働かせるとき、事故らせないために引いた境界線",
+      "url": "https://zenn.dev/dstudylab/articles/overnight-agent-boundaries",
+      "site": "Zenn(AI)",
+      "published": "2026-08-02T11:46:11Z",
+      "description": "AIエージェントを寝ている間に走らせるようになって、いちばん時間を使ったのはプロンプトの工夫ではなく、境界線を引くことだった。\n何を任せて、何を任せないか。どこで止めさせるか。止まったことをどう知るか。この3つが決まっていないと、朝起きたときに「大量の成果物」か「大量の後始末」のどちらかが待っている。運が良ければ前者、悪ければ後者だ。\n実際に起こした事故と、そこから引いた線を書く。技術的な連携手順...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "Qwen 35Bの品質を7つの質問で採点したら、GPT-4に勝てるのは3領域だけだった",
+      "url": "https://zenn.dev/kenimo49/articles/qwen-35b-7q-quality-vs-gpt4-3-domains",
+      "site": "Zenn(AI)",
+      "published": "2026-08-02T11:16:45Z",
+      "description": "ローカル LLM は所詮遊びだと思って、3ヶ月ほど RTX 4070 のフォルダを放置していました。家庭用 GPU で 35B クラスを動かせても、どうせ品質は API の GPT-4 に完敗するのだろう。そう決めつけて、ベンチ計測もサボっていたのが正直なところです。\nでも、勝ち構成を作った勢いで 7 つの質問を投げてみたら、話が少し変わりました。\n「賢いモデルほど広く使える」という常識の外で、Q...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "GarminデータをAIへ安全に渡すExternal-safe Packの設計",
+      "url": "https://zenn.dev/tsubotti63/articles/garmin-external-safe-pack-for-ai",
+      "site": "Zenn(AI)",
+      "published": "2026-08-02T10:45:18Z",
+      "description": "Garmin Account Data Exportを繰り返し取得し、Snapshot Accumulationで\n観測履歴を蓄積できるようになりました。\n次に考えるべきなのは、蓄積したデータをAIへどう渡すかです。\n\nGarmin ExportをそのままAIへ渡すことが目的ではありません。\nAIが迷わず、安全かつ再現可能に分析できる形へ整理して渡すことが目的です。\n\nGarmin Running...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "「AIは×10、コンパイラは×1000」Linus TorvaldsがAIを語った回を要点解説",
+      "url": "https://zenn.dev/talks_tldr_jp/articles/tldr21-linus-summary",
+      "site": "Zenn(AI)",
+      "published": "2026-08-02T10:37:07Z",
+      "description": "この記事について\n!\n本記事は Linus Torvalds が Open Source Summit North America 2026 のキーノート（聞き手: Dirk Hohndel）で語った内容の紹介と論評を目的としています。発言の要点を筆者が抽出・整理したもので、講演の網羅でも代替でもありません。全体の文脈は必ず元動画でご確認ください。翻訳全文の掲載は行っていません。\n\nLinuxとG...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "なぜMCPは「セッション」を捨てたのか ─ 2026-07-28 改訂とステートレスコアの設計思想",
+      "url": "https://zenn.dev/yun_bow/articles/8a162af74f2a55",
+      "site": "Zenn(AI)",
+      "published": "2026-08-02T10:11:41Z",
+      "description": "!\n本記事は書籍のダイジェスト記事だ\n内容は、Zenn に公開予定の本「MCPサーバーを作るガイドライン解説 ― Node.js + TypeScript で学ぶ AI エージェント時代のツール設計指針【2026-07-28 仕様改訂対応】」のエッセンスを抜粋・再構成したものだ。本の目的は「写経して終わり」ではなく、読者自身が判断できるようになることであり、この記事もそのスタンスで書く。\n\n\n は...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "MCPサーバーを作るガイドライン解説 ― Node.js + TypeScript で学ぶ AI エージェント時代のツール設計指針",
+      "url": "https://zenn.dev/yun_bow/books/f0b23ef3093ddf",
+      "site": "Zenn(AI)",
+      "published": "2026-08-02T10:09:34Z",
+      "description": "MCP SDK のチュートリアル通りに `tools/call` を実装すれば、MCP サーバーは「動き」ます。しかし「動く」ことと「AI が迷わず使いこなせる」ことは別物です。説明文が曖昧で AI がツール選択に迷う、レスポンスが JSON だけで AI が毎回解読コストを払う、サーバー内で AI 推論を抱え込んで無言で落ちる——そうした「動いてはいるが、使いこなせてはいない」MCP サーバーは...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "Claude Codeで自動化タスクを並行運用して分かった落とし穴と対策",
+      "url": "https://zenn.dev/jidoka_lab/articles/claude-code-automation-pitfalls",
+      "site": "Zenn(AI)",
+      "published": "2026-08-02T10:04:45Z",
+      "description": "「動いているはず」が一番危ない\n個人開発や副業で自動化スクリプトを1本だけ回している間は、そこまで大きな事故は起きません。何かおかしければすぐ気づけますし、確認する対象も1つだけだからです。ところが、定期実行のスクリプトやスケジュール運用のタスクをClaude Codeと一緒に何本も並行で回すようになると、様子が変わってきます。1本1本は単純でも、「並行で動かしている」こと自体が原因のトラブルが出...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "Googleが発表した新Web標準ドラフト――WebMCP。実際どうなの？ IO Extendedで実装・登壇して分かったこと",
+      "url": "https://zenn.dev/tanahiro2010/articles/b62637d8e55d2b",
+      "site": "Zenn(AI)",
+      "published": "2026-08-02T09:43:02Z",
+      "description": "こんにちは。\n普段は tanahiro2010 という名前で活動しています。GDG Greater Kwansaiに所属しています。\nGoogle I/O Extended Osaka 2026のハンズオン「WebMCP を作って AI エージェントから呼び出してみよう！」で、前半登壇を担当しました。\nこれは、ハンズオンの内容をQiita向けにまとめたものです。\n使ったコードラボはこちらです。\nh...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "AIセキュリティに関する論文メモ⓷〜AgentDojo編〜",
+      "url": "https://zenn.dev/naoyabone/articles/b61b8804099e52",
+      "site": "Zenn(AI)",
+      "published": "2026-08-02T09:42:17Z",
+      "description": "AgentDojo を読む\n\narXiv: 2406.13352 (NeurIPS 2024 Datasets &amp; Benchmarks)\n\n\n この論文が答えている問い\n信頼できないデータ（メールやウェブ等）をツール経由で扱うLLMエージェントにおいて、「実用性（Utility）」と「安全性（Security）」のトレードオフを、動的かつステートフルな環境でどのように測定するか。\n\n 何...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "決定論的生成を土台に、非決定論的生成でビジネスロジックを書く",
+      "url": "https://zenn.dev/ayaextech_fill/articles/deterministic-codegen-with-llm-logic",
+      "site": "Zenn(AI)",
+      "published": "2026-08-02T09:28:55Z",
+      "description": "はじめに\n!\nこの記事は、大部分がAIによる生成で記述されています。\n記事の投稿にあたり、筆者がGitHubリポジトリ上でPRレビュワーとして\nチェックを行っていますが、AIらしい書き回しが残っている場合があるため、\nわかりづらいところがあればフィードバックなどいただけると幸いです。\n\n「ソースコードを生成する」という言葉には、現在2つの意味が混ざっています。\n1つは、OpenAPIの定義やDBス...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "海外のSpecと日本の仕様は何が違うのか",
+      "url": "https://zenn.dev/yoshipon_tech/articles/34517dc09804dd",
+      "site": "Zenn(AI)",
+      "published": "2026-08-02T09:17:49Z",
+      "description": "この記事の要点\n\nKiroの requirements.md は要件定義ではなく、日本語で言う仕様に近い\n誤読するのは英単語の見た目に引きずられるから。ファイル名ではなく、それがSpecという箱のどこに置かれているかで判断する\nSDDの本質は仕様書を書くことではなく、仕様がSSoTとして機能し続けるかどうか\n\n\n requirements.md を要件定義だと思って読むと詰まる\n前回の記事で、要求...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "「時間の慣性」のその後：あの Bot が約1ヶ月で更新・追加した仕組みと、まだ検証できていないこと",
+      "url": "https://zenn.dev/motimotinotch/articles/626ea84a7c9548",
+      "site": "Zenn(AI)",
+      "published": "2026-08-02T09:15:05Z",
+      "description": "1. 前作からの差分という切り口\n前作（2026-06-28公開）では、Misskey上を漂うBotの初期アーキテクチャを紹介した。6つの感情パラメータ、1次遅れフィルターによる「感情の慣性」、そしてそれをLLMの生成パラメータへ直結する「物理バルブ」——Cloudflare Native Stack上の、シンプルだが工学的に筋の通った設計だった。\nあれから約1ヶ月（直近のコミットは2026-07...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "Claude Codeの自己改善ループが事故を起こした——委任プロンプト1行の書き忘れで190行書き換わった話",
+      "url": "https://zenn.dev/tottoko_hamu/articles/2026-07-24-220212",
+      "site": "Zenn(AI)",
+      "published": "2026-08-02T09:12:58Z",
+      "description": "この記事の要点（2026年5月）: 私はセッション履歴（会話ログ）から改善点を自動抽出する「dev-workflow」というスキルを自作し、実戦投入した。ところが初回テストで、解析役に委任した researcher エージェントが、承認なしに scripts/util/dj.sh を169行追加・21行削除で書き換えていた。原因は、委任プロンプトに「分析のみ・修正禁止」という1行の制約を書き忘れた...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "AIは「確率解」を返す　決定解がある問題まで、AIに任せる必要はない",
+      "url": "https://zenn.dev/konohana_rm/articles/095d25d53a7c9e",
+      "site": "Zenn(AI)",
+      "published": "2026-08-02T09:12:24Z",
+      "description": "!\nこの記事では、正しさを保証できる解を「決定解」、\nLLMが返すような「最も尤もらしい答え」を、\n便宜上「確率解」と呼ぶ（どちらも筆者の造語）。\n数学用語としての厳密な定義ではなく、解の性質を区別するための呼び名である。\n\n人類は長年、アルゴリズムによって多くの課題を解決してきた。\nそれなのに、決定解がある問題までAIへ置き換える必要はあるのだろうか。\n私は、AIが本当に力を発揮するのは「確率解...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "採用した戦略が、採用後に劣化していないか。週1回、自動で確認する仕組みを作った",
+      "url": "https://zenn.dev/codecraft/articles/production-strategy-decay-check",
+      "site": "Zenn(AI)",
+      "published": "2026-08-02T09:08:53Z",
+      "description": "暗号資産の自動売買Botを作っています。5つの戦略を検証して採用し、複利ポートフォリオとして運用しています。\n**この記事は、その中の2つの戦略が「採用後に劣化していた」と分かった話です。**しかも、それは半年前から記録には残っていて、誰も見返していなかっただけでした。\n\n\n 「対照群」までは通過していた\n戦略を採用するとき、6つの検査を通しています(詳細は前回の記事に書きました)。全期間黒字、前...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "AIに書かせた自動化システムを信じないための検査集 vol.1",
+      "url": "https://zenn.dev/codecraft/books/kensa-shuu-vol1",
+      "site": "Zenn(AI)",
+      "published": "2026-08-02T09:08:14Z",
+      "description": "AIに書かせた暗号資産の自動売買Botを、20以上の戦略仮説で検証した記録。合格に見えて実は違った5つの実例と、その見抜き方。",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
     {
       "title": "AIとCSVで、シンプルな学習記録を始める",
       "url": "https://zenn.dev/ma_me/articles/6ebab918f03edd",
@@ -49,16 +249,6 @@
       "site": "Zenn(AI)",
       "published": "2026-08-02T04:12:43Z",
       "description": "「優秀な1人の部下」としての限界\nClaude Code を実務で使い始めて最初にやったのは、優秀な1人の部下として扱うことでした。何でも頼める、文脈も覚えている、指示も通る。しばらくはそれで回ります。\n回らなくなるのは、仕事が実務の規模になってからです。\n\n案件の資料が増えると、1セッションに文脈が載りきらない\n\n本人が書いて本人が確認するので、間違いに気づけない\n\nセッションが終わると会話ごと...",
-      "category": "AI・技術",
-      "rss_category": "",
-      "image_url": ""
-    },
-    {
-      "title": "トークンとは何なのか？AIが文章を読む仕組み",
-      "url": "https://zenn.dev/phinata/articles/ai-token-sikumi",
-      "site": "Zenn(AI)",
-      "published": "2026-08-02T03:46:35Z",
-      "description": "はじめに\nChatGPTやClaudeなどのAIを使っていると、必ず目にする「トークン」という言葉があります。\nAPIの料金表示を見ても「入力トークン数」「出力トークン数」という項目があり、料金を計算する際の基準になっています。つまり、AIを使うには、トークンが何かを理解することが不可欠なのです。\nしかし、「トークンって何？」と聞かれると、答えに困る人も多いのではないでしょうか。単語？文字数？それ...",
       "category": "AI・技術",
       "rss_category": "",
       "image_url": ""
@@ -159,16 +349,6 @@
       "site": "Zenn(AI)",
       "published": "2026-08-01T23:00:10Z",
       "description": "3人チーム開発の実案件で確立した AI-DLC (AI-Driven Development Life Cycle)。CC-SDD(仕様駆動実装)による大量タスク生成、共通レビュースキルのCI組込、タスク依存性分析によるコンフリクト率80%減、Playwright ストーリー録画で人間レビューを高速化する検証中のプロセスまで、生々しい実体験を全12章で体系化。少人数チームでも大きなアウトプットを出...",
-      "category": "AI・技術",
-      "rss_category": "",
-      "image_url": ""
-    },
-    {
-      "title": "確率的生成器に規範は預けられない — Loopの成果物側に検疫を組む",
-      "url": "https://zenn.dev/cognitiveosmdl/articles/b75bad629b669b",
-      "site": "Zenn(AI)",
-      "published": "2026-08-01T21:42:57Z",
-      "description": "!\n本稿は前編「Loop Engineeringが暗黙に仮定しているもの」の続編であり、そこで列挙した穴のうち塞げるものへの対策を書く。備忘録的な性格が強い。私はこれらの手法の発見者ではない——多重集合差分、逐次検定、conformal較正、トレーサビリティはいずれも既存分野の確立した部品であり、本稿の内容は「loop engineeringという問題の下への並べ直し」である。\n検証状態タグ(📐導...",
       "category": "AI・技術",
       "rss_category": "",
       "image_url": ""
