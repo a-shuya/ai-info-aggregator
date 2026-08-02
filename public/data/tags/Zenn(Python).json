@@ -1,8 +1,198 @@
 {
   "site": "Zenn(Python)",
-  "last_updated": "2026-08-02T10:48:34.548022",
-  "total_articles": 5425,
+  "last_updated": "2026-08-02T11:49:32.247724",
+  "total_articles": 5444,
   "articles": [
+    {
+      "title": "GarminデータをAIへ安全に渡すExternal-safe Packの設計",
+      "url": "https://zenn.dev/tsubotti63/articles/garmin-external-safe-pack-for-ai",
+      "site": "Zenn(Python)",
+      "published": "2026-08-02T10:45:18Z",
+      "description": "Garmin Account Data Exportを繰り返し取得し、Snapshot Accumulationで\n観測履歴を蓄積できるようになりました。\n次に考えるべきなのは、蓄積したデータをAIへどう渡すかです。\n\nGarmin ExportをそのままAIへ渡すことが目的ではありません。\nAIが迷わず、安全かつ再現可能に分析できる形へ整理して渡すことが目的です。\n\nGarmin Running...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "GMOコインFX APIのERR-5012でハマった話 — 真因はIPv6 egressだった",
+      "url": "https://zenn.dev/ozapon/articles/gmo-fx-err5012-ipv6",
+      "site": "Zenn(Python)",
+      "published": "2026-08-02T10:09:16Z",
+      "description": "TL;DR\n\nGMOコインFX の Private API で ERR-5012: Invalid API-KEY, IP, or permissions for action. が消えない。キーも権限も IP 許可リストもすべて正しく設定してあるのに、です\n真因は 接続が IPv6 で出ていたことでした。API のホストは IPv4/IPv6 の両対応(dual-stack)で、HTTP クライ...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "モニタなしMac miniを自作スマートディスプレイ化して、呼びかけ一発でGPT-Liveと会話できるようにした",
+      "url": "https://zenn.dev/tizawa/articles/gpt-live-diy-smart-display",
+      "site": "Zenn(Python)",
+      "published": "2026-08-02T10:08:38Z",
+      "description": "きっかけ\n2026年7月8日にOpenAIが発表した音声モデル GPT-Live は、「聞きながら同時に話せる」全二重の会話体験が衝撃的だった。これをAlexaやGoogle Homeのように、部屋のどこからでも呼びかけて起動したい。\nただしGPT-LiveのAPIはまだウェイトリスト段階（本記事執筆時点）。そこで、余っていたモニタなしのMac miniを「呼びかけたらChatGPTの音声モードが...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "スクレイピング用のFluent API（内部DSLっぽいもの）を作った",
+      "url": "https://zenn.dev/nszwtkms/articles/5498835e19be21",
+      "site": "Zenn(Python)",
+      "published": "2026-08-02T09:45:51Z",
+      "description": "https://github.com/nishizawatakamasa/quickquery\n自分用として重宝してる。\n\n 特徴\n\nDOM探索チェーン\nDevToolsで要素を辿る感覚でコードを書ける。\nNoneで壊れない\n要素がないケースを自然に扱う。\nPlaywright / selectolax で同じ探索インターフェース\nブラウザ経由で取得する場合も、保存済みHTMLを解析する場合も、似...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "採用した戦略が、採用後に劣化していないか。週1回、自動で確認する仕組みを作った",
+      "url": "https://zenn.dev/codecraft/articles/production-strategy-decay-check",
+      "site": "Zenn(Python)",
+      "published": "2026-08-02T09:08:53Z",
+      "description": "暗号資産の自動売買Botを作っています。5つの戦略を検証して採用し、複利ポートフォリオとして運用しています。\n**この記事は、その中の2つの戦略が「採用後に劣化していた」と分かった話です。**しかも、それは半年前から記録には残っていて、誰も見返していなかっただけでした。\n\n\n 「対照群」までは通過していた\n戦略を採用するとき、6つの検査を通しています(詳細は前回の記事に書きました)。全期間黒字、前...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "AIに書かせた自動化システムを信じないための検査集 vol.1",
+      "url": "https://zenn.dev/codecraft/books/kensa-shuu-vol1",
+      "site": "Zenn(Python)",
+      "published": "2026-08-02T09:08:14Z",
+      "description": "AIに書かせた暗号資産の自動売買Botを、20以上の戦略仮説で検証した記録。合格に見えて実は違った5つの実例と、その見抜き方。",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "Anchorcode Python 大全",
+      "url": "https://zenn.dev/saikaku_lab/books/anchorcode-python-taizen",
+      "site": "Zenn(Python)",
+      "published": "2026-08-02T08:20:02Z",
+      "description": "深く知るほど、ちゃんと使える。\n\nPython の必要トピックを全 42 章で網羅する「大全」シリーズ第 1 冊。\nすべての章を「表層（使い方）→ 中層（なぜ）→ 深層（内部の仕組み）」の\n3 層構造で掘り下げ、「動く」で止まらず「分かる」まで降りていきます。\n\nコードはすべて実機で動作確認済み。専門用語は都度かみ砕いて説明します。",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "「0件でした」は、2つの意味を持っている",
+      "url": "https://zenn.dev/jissokulog/articles/eda7afa1c51eea",
+      "site": "Zenn(Python)",
+      "published": "2026-08-02T07:55:25Z",
+      "description": "前の記事で、AIコーディングエージェントの「テストを追加しました。全部パスです」という報告をどう検証するかを書いた。\nhttps://zenn.dev/jissokulog/articles/498e691f7f287d\n今回は、もうひとつよく来る報告の話をする。\n\n該当0件でした。\n\nこれも数字は正しい。そして、この0には2つの意味がある。\n\n調べた。無かった。\n調べられなかった。だから0だった...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "Python web フレームワーク Bottle の JSON レスポンスを人に読みやすくする",
+      "url": "https://zenn.dev/natsubate/articles/e8acba875b8f52",
+      "site": "Zenn(Python)",
+      "published": "2026-08-02T07:48:37Z",
+      "description": "Python 用の web フレームワークに Bottle というものがある。\n大変シンプルで 1 ファイルで実装されており pip 等でインストールしなくてもファイルコピーするだけで使えるおてがるさが魅力だ。\n早速サンプルコード見ていく。\n# sample.py\n\nfrom bottle import Bottle, run\n\ndef create_app():\n    app = Bottle...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "エージェントの「テストを追加しました。全部パスです」を、あなたは信じるか",
+      "url": "https://zenn.dev/jissokulog/articles/498e691f7f287d",
+      "site": "Zenn(Python)",
+      "published": "2026-08-02T07:31:54Z",
+      "description": "私は個人で、自分だけが使う自動化ツールを作っている。人手はないので、AIコーディングエージェントのセッションを3つも4つも同時に走らせて、実装を任せている。\nそういう使い方をしていると、報告の最後はだいたいこう締めくくられる。\n\nテストを3件追加しました。全2,331件、すべてパスしています。\n\n数字は本当だ。嘘は書いていない。それでも、この報告は「今回のコードが検査されている」ことを何ひとつ証明...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "Python 累積和入門 その５",
+      "url": "https://zenn.dev/qtx73/articles/781ac080d3a2f8",
+      "site": "Zenn(Python)",
+      "published": "2026-08-02T07:20:06Z",
+      "description": "第5章 応用テクニックと総合演習\nこれまでの章で、累積和の基本から二次元への拡張、そして「いもす法」までを学んできました。最終章となるこの章では、他のアルゴリズムとの組み合わせや、「和」以外の演算への応用など、コンテストで差がつく実践的なテクニックを身につけましょう。\n\n 1. 累積和＋二分探索(区間和が条件を満たす位置を探す)\n元の配列 A の要素がすべて 0 以上（非負整数）である場合、その累...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "Python 累積和入門 その４",
+      "url": "https://zenn.dev/qtx73/articles/d9d7846bb4348b",
+      "site": "Zenn(Python)",
+      "published": "2026-08-02T07:19:38Z",
+      "description": "第4章 二次元累積和\nこれまでは1次元（一直線に並んだデータ）の累積和を扱ってきました。この章では、データを表（グリッド）として捉える「二次元累積和」を学びます。ゲームのマップや画像の画素など、2Dのデータに対する処理を劇的に高速化できる強力な武器です。\n\n 1. 表(グリッド)の長方形領域の合計を高速に求めたい場面\n縦 H 行、横 W 列のマス目に数字が書かれている場面を想像してください。\n「上...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "Python 累積和入門 その３",
+      "url": "https://zenn.dev/qtx73/articles/b429b9d2eae653",
+      "site": "Zenn(Python)",
+      "published": "2026-08-02T07:19:05Z",
+      "description": "第3章 いもす法(差分と累積の関係)\n前章までは、「あらかじめ用意されたデータに対して、何度も区間の和を求める」というパターンの問題を扱いました。\nこの章では、状況が逆転します。「データに対して、何度も区間に加算（足し算）を行い、最終的な結果を求める」という場面で活躍する「いもす法（1次元）」について学びます。\n\n 1. 「区間に一様に加算する」クエリを高速に処理したい場面\n次のような問題を考えて...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "Python 累積和入門 その２",
+      "url": "https://zenn.dev/qtx73/articles/294fcd8f098bdb",
+      "site": "Zenn(Python)",
+      "published": "2026-08-02T07:14:38Z",
+      "description": "第2章 累積和の基本パターン\n第1章では、累積和の基本概念と「なぜ速いのか」を学びました。この章では、実際のコンテストでバグを生まずに素早く実装するためのテクニックと、さらに一歩進んだ応用パターンを身につけましょう。\n\n 1. 0-indexedと1-indexedの整理(添字バグを防ぐ)\n競技プログラミングにおいて、最も多くの時間を奪うバグの一つが「配列の添字（インデックス）のズレ」です。\nPy...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "CodeQueen2026 参加記録",
+      "url": "https://zenn.dev/esusaki/articles/83acb6e5cbef2d",
+      "site": "Zenn(Python)",
+      "published": "2026-08-02T06:51:44Z",
+      "description": "CodeQueen 2026（AtCoderの女性向けの大会）に参加したので記録のメモです！\n\n 自己紹介\naaloo（すさき）です。\n普段は、社会人2年目で、ひよっこエンジニアをしています！\nAtCoderは、大学1年の時くらいから断続的に参加しておりまして、もう3年くらい茶色で停滞しています。\nhttps://atcoder.jp/users/aaloo\n\n 予選\nA, Bしか解けず。7900...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "Excel丸投げをやめる――結果は保存されているのに、経路が保存されていない",
+      "url": "https://zenn.dev/seitarou223/articles/codex-workflow-09-stop-dumping-excel",
+      "site": "Zenn(Python)",
+      "published": "2026-08-02T06:46:18Z",
+      "description": "最初に断っておくと、私はExcelを手放せません。\n長く使われてきた計算ブックがあり、入力条件、計算式、マクロ、グラフ、確認欄が1つのファイルに集まっています。周りの人が確認する形式もExcelで、最終成果物としてExcelが必要な場面も多い。\nだからAIを使い始めたとき、自然にこう考えました。\nExcelをそのまま渡せばいい。\nこのブックを読んでほしい。データを抽出してほしい。式を追加してほしい...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "[Python]スライス構文を具体例ベースで解説",
+      "url": "https://zenn.dev/kawarin_origami/articles/python-slice-20260802",
+      "site": "Zenn(Python)",
+      "published": "2026-08-02T06:34:00Z",
+      "description": "はじめに\n機械学習の勉強をしていると、Pythonのスライス構文が頻繁に使われるケースを多々見られます。もちろん普通にfor文で特定の範囲内の値を取得することも可能ではありますが、スライス構文を覚えておけば楽にできるので、今回は基礎的な構文を具体例ベースで学びましょう。\n\n 対象読者\n\nPythonのスライス構文を具体例で学びたい人\n\n\n スライス構文の具体例\nlist = [1,2,3,4,5]...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "【Python】FastAPIで始めるモダンなWeb API開発 〜高速・型安全・自動ドキュメント生成の三拍子〜",
+      "url": "https://zenn.dev/m_sakaaai/articles/312f4fb3aefef0",
+      "site": "Zenn(Python)",
+      "published": "2026-08-02T06:26:44Z",
+      "description": "はじめに：Flask・Djangoの次に来る「第3の選択肢」\n「PythonでWeb APIを作りたいけど、Flaskは軽量すぎて機能を自分で足すのが大変」\n「Djangoはフルスタックすぎて、API開発だけには少しオーバースペックに感じる」\n「型安全に開発したいのに、Pythonだとどうしても実行時エラーが怖い」\n「APIドキュメントを毎回手書きするのが、正直しんどい…」\nこんな悩みを抱えている...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "育てて学ぶ はじめての自作プログラミング言語",
+      "url": "https://zenn.dev/kb84tkhr/books/learning-by-growing-language",
+      "site": "Zenn(Python)",
+      "published": "2026-08-02T06:22:58Z",
+      "description": "※執筆途中のドラフト状態ですが第 1 部まで書いたので公開しています。\n※そのため、今後修正が入る可能性があります。ご了承ください。\n\n「Python や Ruby みたいなプログラミング言語って、中はどう動いているんだろう？」\n「言語を自作するのって面白そうだけど、難しいんだろうな」\n\nそんな風に思っている方に読んでみていただきたい「プログラミング言語の作り方」超入門です。\n\n本書の狙いは、小さ...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
     {
       "title": "引数を配列で渡してもフラグ注入は防げない",
       "url": "https://zenn.dev/jikki_log/articles/argv-flag-injection",
