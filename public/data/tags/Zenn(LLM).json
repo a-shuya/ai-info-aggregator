@@ -1,8 +1,118 @@
 {
   "site": "Zenn(LLM)",
-  "last_updated": "2026-08-02T06:41:35.897796",
-  "total_articles": 5036,
+  "last_updated": "2026-08-02T09:02:28.909367",
+  "total_articles": 5047,
   "articles": [
+    {
+      "title": "Claude Codeの仕組みが気になって、将棋モチーフのローカルLLMマルチエージェントCLIを作った",
+      "url": "https://zenn.dev/tanishi_z/articles/jin-local-multi-agent-cli",
+      "site": "Zenn(LLM)",
+      "published": "2026-08-02T06:00:42Z",
+      "description": "対象読者と前提\n\nClaude Code のようなエージェント型ツールを使っていて、内部でエージェント・スキル・フックがどう連携しているのか気になる方\nローカル LLM（Ollama）でマルチエージェントを試してみたい方\n動作確認環境: macOS / Node.js v24.14.0 / Ollama / TypeScript 5.8\n\n\n なぜ作ったか\n普段 Claude Code を使ってい...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "「設計は強いモデル、実装は安いモデル」は今も正解なのか(2026年8月現在)",
+      "url": "https://zenn.dev/hrimfaxi_tpw/articles/de75758b72efea",
+      "site": "Zenn(LLM)",
+      "published": "2026-08-02T05:18:49Z",
+      "description": "TL;DR\n\n「強いモデルが設計し、安いモデルが実装する」という工程別分業は、現在も条件次第では有効。ただし、一般的なベストプラクティスとは言いにくい。\nClaude CodeとCodexの公式文書は、工程名ではなく、作業の自己完結性・コンテキストの連続性・書き込み競合・検証可能性を基準に委譲先を決めている。\n調査、ログ解析、テスト実行、レビューのように、大量の情報を短い要約へ圧縮できる作業はサブ...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "ツールを選びに行って、受け入れる側の設計を問われた ― Google Cloud Next Tokyo 2026 参加レポート",
+      "url": "https://zenn.dev/truestar/articles/42b3edab13e8ca",
+      "site": "Zenn(LLM)",
+      "published": "2026-08-02T05:04:34Z",
+      "description": "2026年7月30日・31日の2日間、東京ビッグサイトで開催された Google Cloud Next Tokyo 2026 に参加しました。\nふだんデータ活用の支援を仕事にしていますが、Google Workspace については詳しくなく、世の中には Microsoft 365 を基盤にしている企業が多くあり弊社もその１つです。そうした環境を持つ会社が Google Workspace をどう...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "AIに2万字を貼ったら料金は4.2倍。トークン数は1.5倍で、待ち時間は長さに比例しなかった",
+      "url": "https://zenn.dev/numarn/articles/claude-input-length-cost-latency-handson",
+      "site": "Zenn(LLM)",
+      "published": "2026-08-02T04:53:04Z",
+      "description": "AI に長い資料を丸ごと貼ると、そのぶん遅くなって高くなる。そう思って身構えていた。\n実際にクラウドのサンドボックスで測ってみたら、増えたものと増えなかったものがきれいに分かれた。\n\n\n料金は文字数に比例して増えた。 追加 1 万文字あたり +0.0614 ドル。これが 3 つの条件で\n小数第 4 位まで一致した。\n\nでもトークンの数は 1.5 倍にしかならなかった。 貼った文字は 346 倍にし...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "CSCR：長CoT強化学習におけるトークン単位信用の再分配",
+      "url": "https://zenn.dev/lixian/articles/cscr-counterfactual-sensitivity-credit",
+      "site": "Zenn(LLM)",
+      "published": "2026-08-02T02:00:41Z",
+      "description": "TL;DR\n南京大学・上海交通大学の研究グループが、長CoT強化学習における「どのトークンに信用を与えるべきか」という根本問題を正面から問い直した。GRPOは応答レベルの報酬を各トークンに均等に分配するが、それは正しくない。OPSDのような自己蒸留型手法は「特権情報を与えたときの尤度シフト」を直接監督として使うが、著者らの反実仮想分析は、そのシフトが答えの正否と無関係な方向を向くことがほとんどだと...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "speculative decoding×prefix cachingの罠：組み合わせで遅くなるケース",
+      "url": "https://zenn.dev/libercraft/articles/20260802-speculative-decoding-caching-pitfalls",
+      "site": "Zenn(LLM)",
+      "published": "2026-08-02T02:00:00Z",
+      "description": "「speculative decodingとprefix cachingを両方有効にすれば、速度は掛け算で良くなるはずだ」——この期待は、実際にはしばしば裏切られます。vLLMのGitHub issueには、MTP（Multi-Token Prediction）speculative decodingを有効にした状態でprefix cachingを使うと、キャッシュヒット率が32,768トークンか...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "安全関連システムの要求工学にLLMマルチエージェントを活用したら、何が変わるのか",
+      "url": "https://zenn.dev/haowei/articles/1c66ee2ee464fe",
+      "site": "Zenn(LLM)",
+      "published": "2026-08-02T01:33:46Z",
+      "description": "はじめに\n自動車・ロボット・医療機器などの安全関連システム（safety-critical systems）の開発において、要求工学（Requirements Engineering） は最も重要なフェーズの一つです。要求の不備がプロジェクト失敗の主因であることは、数十年前から繰り返し指摘されてきました。\nしかし現場の実態はどうでしょうか。\n\n数百〜数千件の要求を、レビュー会議で人手で確認している...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "なぜ、LLM時代には覚えるのが苦手な人ほど不利になるのか？",
+      "url": "https://zenn.dev/pdfractal/articles/ac9a25867858de",
+      "site": "Zenn(LLM)",
+      "published": "2026-08-02T01:23:21Z",
+      "description": "はじめに\nLLMの普及によって、知識を頭の中に蓄える必要性が小さくなったという見方が広がっています。分からないことはAIに聞けばよく、細かな用語や手順を覚えるよりも、AIを使いこなす能力を身につけた方がよいという考え方です。\n実際、定型的な文章、プログラムの構文、製品の操作方法、一般的な調査事項などは、以前ほど正確に記憶していなくても扱えるようになりました。必要な情報をその場でAIに尋ね、適切な形...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "【godot-llm-gamebench】GPT‑5.6 LunaはEffortによってどのように性能が変わるのか",
+      "url": "https://zenn.dev/oubakiou/articles/e7ba06c74b7007",
+      "site": "Zenn(LLM)",
+      "published": "2026-08-02T01:00:05Z",
+      "description": "本記事は 実装タスクを外注するモデルは何が適切なのか？ミニゲームを実装させるベンチマーク のシリーズです。\n\n今回は親エージェントを claude-opus-5@max、子エージェント（実装の外注先）を gpt-5.6-luna に固定して、luna の各 effort でどのように性能が変化するのかを詳しく見ます。\n\n 今回測った条件\n\n親（委譲元）は claude-opus-5@max に固定...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "Kimi K3を441GBに枝刈りして、Mac Studio 1台で動かした",
+      "url": "https://zenn.dev/hellohazime/articles/kimi_k3_reap640_512gb_mac",
+      "site": "Zenn(LLM)",
+      "published": "2026-08-02T00:43:07Z",
+      "description": "お疲れ様です波浪です。\n今回は、最近流行りのKimi K3です。前回の失敗を活かして自分の中でも熱があるうちにBLOGにしました。\n結論。枝刈りしたKimi K3がMac Studio(Apple M3 Ultra、512GB)1台で動きました。ハーネスとしてKimi Code CLIを繋いで、SWE-Lancerの実タスク8本中5本正解、$3,500。そのうち2本は、前回2bitのK2.7が解け...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "Pi+ollamaで「Error: output token limit」のエラーで失敗する時の解決策",
+      "url": "https://zenn.dev/penguincabinet/articles/399b2385dbf520",
+      "site": "Zenn(LLM)",
+      "published": "2026-08-01T23:20:45Z",
+      "description": "環境\nWindows 11\nPi 0.82.1\nollama 0.32.5\n\n 問題経緯\n下記のコマンドでPiからローカルLLM(ollama)を起動しました。\nollama launch pi \nトークン使用量のあるタスクを与えると、Pi+ollamaが下記のエラーを出力し失敗しました。\nError: Model stopped because it reached the maximum ou...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
     {
       "title": "MCP対応エージェントを安全に本番投入するための12の設計チェックリスト",
       "url": "https://zenn.dev/bambampurin/articles/2026-07-28-tech-daily",
