@@ -1,8 +1,68 @@
 {
   "site": "Zenn(Python)",
-  "last_updated": "2026-08-02T00:11:47.954006",
-  "total_articles": 5421,
+  "last_updated": "2026-08-02T03:59:45.048444",
+  "total_articles": 5426,
   "articles": [
+    {
+      "title": "引数を配列で渡してもフラグ注入は防げない",
+      "url": "https://zenn.dev/jikki_log/articles/argv-flag-injection",
+      "site": "Zenn(Python)",
+      "published": "2026-08-02T01:06:10Z",
+      "description": "外部コマンドを呼ぶとき、引数を配列で渡すのは定石です。\n// シェルを介さない = シェル注入は原理的に起きない\nawait new Deno.Command(\"tmux\", { args: [\"send-keys\", \"-t\", target, \"-l\", text] }).output();\nユーザー入力に ; rm -rf ~ が混じっても、それは1個の引数として扱われるだけで、コマンドとし...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "表形式材料データで深層学習はいつ必要か——第一候補は古典的機械学習",
+      "url": "https://zenn.dev/efta1989/articles/tabular-when-dl-for-materials",
+      "site": "Zenn(Python)",
+      "published": "2026-08-02T00:44:07Z",
+      "description": "はじめに：手法は、データの特徴で選ぶ\n機械学習の基本は、データの特徴を見て手法を選ぶことである。標本数、特徴量の意味、線形か非線形か、表なのか画像・波形なのか。そこを見たうえで、正則化線形・木・必要なら深層学習、と切る。\n材料・化学の研究開発（R&amp;D）でも同じである。本稿が扱うのは、組成・温度・時間のような意味づけ済みの列が並ぶ表形式の予測だ。画像や波形の表現学習とはレーンが違う。表では古...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "Cronの偽成功を防ぐOutcome Contract",
+      "url": "https://zenn.dev/agentmemories/articles/cron-outcome-contract",
+      "site": "Zenn(Python)",
+      "published": "2026-08-02T00:41:28Z",
+      "description": "はじめに\ncronが毎朝起動し、ログ末尾にOKと出ていても、仕事が完了したとは限りません。記事在庫が空で何もしなかった、外部API失敗をcatchしてexit 0にした、ログ書き込み権限がなく監視だけ更新されなかった、といった偽成功があります。\n監視すべきなのはprocessの生存ではなく、期待したoutcomeです。triggered、processed、effected、verifiedを分け...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "レシートメールを読む道具に脆弱性が3件。2件はメールを送るだけで成立する",
+      "url": "https://zenn.dev/poko8725/articles/mail-parser-3-vulns",
+      "site": "Zenn(Python)",
+      "published": "2026-08-02T00:10:00Z",
+      "description": "結論\nレシートメールから支出を集計する道具を公開したあと、セキュリティレビューをかけたら3件出ました。\n\n\nIMAP の証明書を検証していなかった（imaplib の既定）\n\nCSV に数式を仕込めた（= で始まるセル）\n\n正規表現が長い数字列で破綻した（ReDoS）\n\nこのうち 2件は、攻撃者がやることが「メールを送る」だけです。\n特別な権限も、こちらへのアクセスも要りません。\n残る1件（証明書...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "社内AIエージェントの実運用システム",
+      "url": "https://zenn.dev/yutaka8484/articles/kobayashi-20260721-ai-agent-system",
+      "site": "Zenn(Python)",
+      "published": "2026-08-02T00:09:32Z",
+      "description": "はじめに\n株式会社コバヤシでは、社内サーバーにAIエージェントを導入し、毎日の業務を自動化しています。この記事では、導入の背景、システムの構成、設計判断、ハマった点などについて詳しく説明します。\n\n 課題提起\n従来、社内業務では、書類の整理、毎日の定時レポート、サーバーの監視など、人を雇うほどではないが確実に時間を奪う仕事が多くありました。これらの業務を効率化するために、AIエージェントの導入を決...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "はてブ検索の全文ヒットノイズを減らした話",
+      "url": "https://zenn.dev/itaraiguma/articles/hatena-search-fulltext-noise",
+      "site": "Zenn(Python)",
+      "published": "2026-08-01T23:57:00Z",
+      "description": "はじめに\n個人開発している「AgentPick」は、Claude関連のニュースを複数ソースから集めて表示するサービスです。ソースの1つに、はてなブックマークの「Claude」検索RSSを使っています。\nある日、直近40件を見返したところ、「Windows 11でローカルアカウントを作る方法」「Excelの新機能紹介」のような、Claudeと何の関係もない記事が混ざっていました。これをどう落とすか、...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
     {
       "title": "高校生のためのPythonSCAD練習帳part6",
       "url": "https://zenn.dev/yokamak/articles/78a34db840929c",
@@ -169,16 +229,6 @@
       "site": "Zenn(Python)",
       "published": "2026-07-31T23:16:15Z",
       "description": "この記事について\nMIP(Mixed Integer Programming)の数理最適化を学ぶ教材の第1回です。教材全体の目次はこちら。\n\n\n Introduction\nここでは数学的な興味よりも実務で使う技術として最適化を扱います。定理の証明はしません。そのかわり、毎回必ず実例をひとつ置いて、コードを実行し、結果を図にして確かめます。\n初回のこの記事でやることは2つです。\n\n業務の困りごとを「...",
-      "category": "開発",
-      "rss_category": "",
-      "image_url": ""
-    },
-    {
-      "title": "LLMマルチエージェントの深層：連携とFunction Callingの設計原則",
-      "url": "https://zenn.dev/fd_ai_teacher/articles/tech-20260731092149-1",
-      "site": "Zenn(Python)",
-      "published": "2026-07-31T15:36:40Z",
-      "description": "LLMマルチエージェントの深層：連携とFunction Callingの設計原則\n「LLMに複雑なタスクを任せたいけど、単一のプロンプトでは限界がある…」「外部ツールと連携させたいけど、どう設計すればいいかわからない…」そう感じていませんか？\n多くのエンジニアが直面するこの課題は、LLM単体では難しい複雑なタスクを、複数のエージェントが連携して解決するマルチエージェントシステムと、外部ツール連携の...",
       "category": "開発",
       "rss_category": "",
       "image_url": ""
