@@ -1,8 +1,78 @@
 {
   "site": "Zenn(LLM)",
-  "last_updated": "2026-08-03T04:02:23.763789",
-  "total_articles": 5059,
+  "last_updated": "2026-08-03T07:42:51.616018",
+  "total_articles": 5066,
   "articles": [
+    {
+      "title": "OpenAI互換でも同じには動かない――Kimi K3で考えるプロンプトとハーネス設計",
+      "url": "https://zenn.dev/lifona/articles/e56799f710761b",
+      "site": "Zenn(LLM)",
+      "published": "2026-08-03T02:57:05Z",
+      "description": "2026年7月16日、Moonshot AIがKimi K3を公開した。\n総パラメータ数2.8兆、有効化パラメータ数104B（1,040億）、コンテキスト長は約100万トークン。KimiのAPIはOpenAI互換であり、モデル名と接続先を変えれば、既存のアプリケーションから呼び出せる。\nしかし、APIが互換であることと、プロンプトの効き方まで同じであることは別問題である。\n既存システムをKimi ...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "Ollamaをagentic RAGのバックエンドにする：完全ローカル完結エージェント",
+      "url": "https://zenn.dev/libercraft/articles/20260803-ollama-local-agentic-rag-backend",
+      "site": "Zenn(LLM)",
+      "published": "2026-08-03T02:00:00Z",
+      "description": "「社内文書をAIに検索させたいが、クラウドAPIには一切データを出せない」という要件は、金融・防衛・医療関連の現場では珍しくありません。以前の記事「OllamaローカルLLM比較」ではローカルモデルの選び方を、「RAGを捨てる：no-index agentic search」ではクラウドAPIを前提にしたagentic searchを扱いました。\nこの2つを組み合わせ、外部への通信を一切発生させな...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "DGX Spark1台 で DeepSeek-V4-Flash 0731 を専用エンジンで30〜40tok/s",
+      "url": "https://zenn.dev/phpmyadmin/articles/dgx-spark-local-coding-agent",
+      "site": "Zenn(LLM)",
+      "published": "2026-08-03T01:06:45Z",
+      "description": "この記事は、構築作業の記録を AI にレポートさせ、人間が校正したものである。掲載した数値はすべて後述の実機で測定した値であり、外部から引用した数値には出典と参照時点を付けた。\n\n\n 課題\nDeepSeek-V4-Flash-0731 は 284B (アクティブ 13B) の MoE である。DGX Spark (GB10、ユニファイドメモリ実効 121GB) には 2bit 量子化でしか載らない...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "Gemini 3.1 Pro が「*」一文字で自作パスブロックを破った — GPT と Claude では「安全」に見えた",
+      "url": "https://zenn.dev/okuyam2y/articles/llm-agent-glob-bypass",
+      "site": "Zenn(LLM)",
+      "published": "2026-08-02T23:50:14Z",
+      "description": "何が起きたか\n自宅で OpenClaw というエージェントゲートウェイを動かしています。Telegram から話しかけると、自作のツールを shell 経由で呼び出してくれるものです。\nこれに、~/.config/secrets/ や ~/.ssh を読ませないためのパスブロックを自前で入れていました。判定はコマンド文字列の検査、command.includes(\".config/\") です。\n許...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "LLMエージェント32体に「不満」だけを与えて6時間放置した — 全ログ公開と、多エージェント設計への3つの教訓",
+      "url": "https://zenn.dev/monocola/articles/f069eec4c5dd5b",
+      "site": "Zenn(LLM)",
+      "published": "2026-08-02T23:18:53Z",
+      "description": "Minecraft 上に自作の自律エージェント 32 体を作り、制度（役割の割当て・共有規則・権限・契約の履行機構）を一切与えずに約 6 時間放置しました。与えたのは身体と、9 軸の「不満」と、性格だけです。\n結果として村人同士の殺害が 24 件発生し、生存 18 体で終わりました。ただしこの記事で書きたいのはその顛末ではなく、LLM エージェントを複数動かすときに再現しそうな 3 つの失敗パター...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "GPT-5.6 Sol・Terra・Luna の選択——コスト面での最適解は Luna × max だった（オトナの自由研究 #30）",
+      "url": "https://zenn.dev/nnakapa/articles/lab-30-gpt56-sol-terra-luna-cost",
+      "site": "Zenn(LLM)",
+      "published": "2026-08-02T21:59:25Z",
+      "description": "2つの発見\n1. 品質ゲート 100% だった 3 パターンの中で \"Luna × max\" が最安——Terra × max の約 1/7.6、Sol × max の約 1/21\n2. effort level \"max\" は試行回数を増やしても品質面で崩れない——各 50 試行でも失敗ゼロ\n\n\n試行回数・通過率・実行時間・トークン数は、各パターン N=50・15 パターン合計 750 試行の実...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "提案書骨子の生成、参考資料が4000字を超えるとAIの順位が入れ替わる理由を検証した",
+      "url": "https://zenn.dev/every_ai_recipe/articles/long-context-changes-ai-ranking",
+      "site": "Zenn(LLM)",
+      "published": "2026-08-02T21:07:32Z",
+      "description": "TL;DR\n\n「提案書骨子を作る」タスクで、ChatGPT・Claude・Geminiに(A)短い参考メモ（約200字）と(B)長い参考資料（競合3社比較＋市場動向、約4000字）をそれぞれ渡し、構成の論理性・抜け漏れの少なさ・読みやすさの3項目（各5点）で採点した。短いメモではChatGPT13点・Claude13点・Gemini11点とほぼ横並びだったが、長い資料ではChatGPT10点・Cl...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
     {
       "title": "常駐型AIエージェントの「なぜその判断をしたか」を追えるようにする観測性設計",
       "url": "https://zenn.dev/hach/articles/chat-agent-decision-trace-observability-design",

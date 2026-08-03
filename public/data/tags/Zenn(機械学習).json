@@ -1,8 +1,48 @@
 {
   "site": "Zenn(機械学習)",
-  "last_updated": "2026-08-03T04:02:23.763789",
-  "total_articles": 1572,
+  "last_updated": "2026-08-03T07:42:51.616018",
+  "total_articles": 1575,
   "articles": [
+    {
+      "title": "長いウォームアップほど安全、は間違い？CIFAR-10で検証したら10epochは逆効果だった",
+      "url": "https://zenn.dev/wasurenamemo/articles/443fac2afd333f",
+      "site": "Zenn(機械学習)",
+      "published": "2026-08-03T04:03:26Z",
+      "description": "!\nこの記事は以下のブログ記事の要約版です。実験コード・学習率推移グラフ・詳細な考察は元記事をご覧ください。\n👉 学習率ウォームアップの長さ（0 / 3 / 5 / 10エポック）で精度はどう変わる？【Keras×CIFAR-10実験】\n\n「学習率ウォームアップは長めに入れておけば安全」——そう思っていませんか？CIFAR-10・Adam・30epoch固定という条件で0/3/5/10epochの...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "AIナレーターの声が毎回変わる問題 — 声を一度だけ設計し、複製し続けるTTS運用",
+      "url": "https://zenn.dev/mameresearcher/articles/irodori-tts-voice-design-clone-ops",
+      "site": "Zenn(機械学習)",
+      "published": "2026-08-03T03:36:53Z",
+      "description": "毎日動画を自動生成する個人プロジェクトを運用しています。ナレーションをTTSに任せると、すぐにぶつかる問題があります。生成のたびに声が微妙に違うことです。\n視聴者にとって「チャンネルの声」はブランドそのものです。昨日と今日で声が変わると、同じシリーズの動画でも別物に見えてしまう。かといって毎回人間が録るのはスケールしません。\n解決策はシンプルでした。声を一度だけ「設計」し、以後はその声をzero-...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "【技術解説】オプション取引データ分析手法で不労所得！LSTMによる時系列予測のPython実装ガイド",
+      "url": "https://zenn.dev/sugarfree/articles/e382aae38397e382b7e383a7e383b3e58f96e5bc95e38",
+      "site": "Zenn(機械学習)",
+      "published": "2026-08-03T02:00:35Z",
+      "description": "オプション取引データ分析手法：LSTMによる時系列予測のPython実装ガイド\nオプション取引における市場分析と価格予測は、投資家にとって重要なスキルです。特に、機械学習や深層学習を活用することで、より正確な予測が可能になります。本記事では、LSTM（Long Short-Term Memory）を用いた時系列予測手法について解説し、Pythonでの実装方法を紹介します。この手法を活用することで、...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "MobileNetV2 の畳み込みを MLIR でタイリングしても速くならなかった話",
+      "url": "https://zenn.dev/ux_xu/articles/mlir-mobilenet-tiling-no-speedup",
+      "site": "Zenn(機械学習)",
+      "published": "2026-08-03T01:58:08Z",
+      "description": "はじめに\n前回の記事では、MobileNetV2 を ONNX → MLIR → LLVM IR → ネイティブバイナリという経路でコンパイルし、ORT と cosine 類似度 1.0000 で一致する推論を通すところまでを扱いました。ただしその時点では畳み込みがタイリングもベクトル化もされていないスカラーループのままで、速度は ORT の 100 倍以上遅いという状態でした。\n\nそこで今回は、...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
     {
       "title": "Grokking: 訓練精度が満点になってから27,400ステップ、何も起きなかった。そこから突然「わかった」",
       "url": "https://zenn.dev/shakeailab/articles/grokking-sudden-generalization",
@@ -169,16 +209,6 @@
       "site": "Zenn(機械学習)",
       "published": "2026-07-31T08:25:05Z",
       "description": "はじめに\n自分がAI関連の仕事を始めて2年目くらいのとき、社内でちょっとした事件があった。精度も推論速度も十分なモデルを本番環境にデプロイしたのに、現場のオペレーターが誰も使ってくれない。ダッシュボードのログを見ると、初回アクセスから3日後にはアクティブユーザーがゼロになっていた。\n原因を探ると、出力の意味がわからない、どう業務に組み込めばいいか見当がつかない、という声ばかりだった。技術的にはうま...",
-      "category": "AI・技術",
-      "rss_category": "",
-      "image_url": ""
-    },
-    {
-      "title": "MixUpのalphaを上げたら精度が下がった話｜confidenceは理論通り、精度は逆だった",
-      "url": "https://zenn.dev/wasurenamemo/articles/ca6f64ae5f1fba",
-      "site": "Zenn(機械学習)",
-      "published": "2026-07-31T06:59:56Z",
-      "description": "!\nこの記事は以下のブログ記事の要約版です。全コード・グラフ・詳しい考察は元記事をご覧ください。\n→ MixUpのalpha値を変えると効果はどう変わる？（α=0.1 vs 0.2 vs 0.4 vs 1.0）\n\n\n 「MixUpは精度を上げる」の逆をいく結果に\nMixUpの混合の強さを決めるalphaを0（なし）・0.1・0.2・0.4・1.0の5段階で比較しました。ベースラインはシリーズ標準構...",
       "category": "AI・技術",
       "rss_category": "",
       "image_url": ""
