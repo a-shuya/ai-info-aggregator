@@ -1,8 +1,48 @@
 {
   "site": "Zenn(機械学習)",
-  "last_updated": "2026-08-04T01:04:57.834644",
-  "total_articles": 1578,
+  "last_updated": "2026-08-04T04:29:09.485450",
+  "total_articles": 1581,
   "articles": [
+    {
+      "title": "LLM-as-Judgeの使いどころ ― RAG基盤生成モデル選定で下した評価設計の判断",
+      "url": "https://zenn.dev/yuya0408/articles/llm-as-judge-rag",
+      "site": "Zenn(機械学習)",
+      "published": "2026-08-03T23:57:29Z",
+      "description": "日本語RAG基盤で、回答を生成するLLMを複数の候補から1つに選ぶ必要があった。品質を主観で判別しないために、別のLLMに回答を採点させる LLM-as-Judge で数値化するのは定石だ。問題は、その数値をどこまで意思決定に使ってよいか、だと私は考える。\n結論を先に提示しておくと、この記事でのjudgeの扱いは、次に集約できる。\n\nLLM-as-Judgeは「弱い候補を落とす」用途では信頼できる...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "ベイジアンネットワークとは？確率で因果を表す",
+      "url": "https://zenn.dev/h888s/articles/gtest-bayesian-network",
+      "site": "Zenn(機械学習)",
+      "published": "2026-08-03T22:59:17Z",
+      "description": "G検定では、確率的な推論を扱うモデルとして「ベイジアンネットワーク」が登場します。名前は難しそうですが、変数同士の依存関係をグラフで描いて確率で推論する仕組みです。本記事では定義・使われ方・混同しやすい用語との違いを整理します。\n\n ベイジアンネットワークとは\nベイジアンネットワークは、有向非巡回グラフ（DAG: Directed Acyclic Graph）を使って、変数間の条件付き確率の依存関...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "ロボットがついに「考えながら動く」時代へ",
+      "url": "https://zenn.dev/lingmu/articles/2026-08-02-gemini-robotics-embodied-intelligence",
+      "site": "Zenn(機械学習)",
+      "published": "2026-08-03T22:14:58Z",
+      "description": "ロボットがついに「考えながら動く」時代へ\n2026-08-02 | 読了 4分 | #ロボット #AI #GoogleDeepMind\nロボットが現場を動画で見て、状況を理解し、仲間と協力して問題を解く。そんな場面が、もうSFの話ではなくなった。GoogleのGemini Robotics 2が示す「全身知能」は、ロボット開発の常識を根本から塗り替えようとしている。\n\n\n 従来型ロボットの「壁」\n...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "プログラム探索に語彙を育てさせたら、探索コストは下がったが総計算量では負けた",
+      "url": "https://zenn.dev/nekoroko/articles/fcd6e687aff609",
+      "site": "Zenn(機械学習)",
+      "published": "2026-08-03T21:36:49Z",
+      "description": "3行で\n\n命令4つだけの極小DSLでランダム生成した数列116問を、素朴な全列挙探索に解かせた\n解の頻出断片をMDL基準で新命令に昇格させる仕組み、いわゆるDreamCoder型のライブラリ学習を追加したところ、探索コストの中央値は対照の約1/4〜1/5に低下した\nただし総ノード展開数では対照の1.88倍と負けた。少数の問題で起きた探索爆発が総和を支配していた\n\n数列の難易度L4、すなわち正解プロ...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
     {
       "title": "自分のブログ49記事でミニGPTを学習させたら、「位置エンコーディング」と「.envを呼ぶ」を書き出した",
       "url": "https://zenn.dev/shakeailab/articles/minigpt-on-my-own-blog",
@@ -169,16 +209,6 @@
       "site": "Zenn(機械学習)",
       "published": "2026-08-01T11:19:53Z",
       "description": "労働集約から降りることにした\n受託開発と研修。AIエージェントの時代に食っていく方法として真っ先に思いつく2つだが、どちらも本質は時間の切り売りだ。単価が上がっても、私の時間が上限になる。\nナヴァル・ラヴィカントの言う「レバレッジ」——コードとメディアは、寝ている間も勝手に働く。許可もいらない。というわけで、時間を切り売りしない2つの実験を並走させている。\n\nAIに仮想通貨のトレードbotを作らせ...",
-      "category": "AI・技術",
-      "rss_category": "",
-      "image_url": ""
-    },
-    {
-      "title": "Mixed Precisionは本当に速い？CIFAR-10で検証したら「速度よりメモリ」だった",
-      "url": "https://zenn.dev/wasurenamemo/articles/2640d2252c74d4",
-      "site": "Zenn(機械学習)",
-      "published": "2026-08-01T09:46:10Z",
-      "description": "!\nこの記事は以下のブログ記事の要約版です。実験コード・グラフ・詳細な考察は元記事をご覧ください。\n👉 Mixed Precision（半精度学習）で精度は変わる？速度とのトレードオフをCIFAR-10で検証【Keras実験】\n\nMixed Precisionは「2〜3倍速くなる」と紹介されることが多いですが、CIFAR-10・Conv2D×2層の小規模CNNで検証したところ、速度向上は13%程度...",
       "category": "AI・技術",
       "rss_category": "",
       "image_url": ""
