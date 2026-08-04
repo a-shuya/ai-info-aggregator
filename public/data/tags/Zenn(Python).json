@@ -1,8 +1,158 @@
 {
   "site": "Zenn(Python)",
-  "last_updated": "2026-08-04T10:04:24.883364",
-  "total_articles": 5473,
+  "last_updated": "2026-08-04T12:16:42.074573",
+  "total_articles": 5488,
   "articles": [
+    {
+      "title": "打ち合わせの録音を置くだけで議事録にする仕組みを作った",
+      "url": "https://zenn.dev/handa_lab/articles/e5876facbd2135",
+      "site": "Zenn(Python)",
+      "published": "2026-08-04T12:14:36Z",
+      "description": "会議の録音ファイルを置いて「議事録を作って」と一声かけると、文字起こし・話者分離・固有名詞補正・議事録生成まで走り切る仕組みを、Claude Code のスキルとして作りました。製造業の生産技術エンジニアとして本職のソフトウェアエンジニアではない私が、採用した構成・捨てた選択肢・ハマった罠を書きます。\n\n 何を作ったか\n\n\n入力: 会議の録音/録画（m4a / mp4 / mp3 / wav）をク...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "npm・PyPI の供給チェーン攻撃ってなに？駆け出しエンジニアが知っておきたいパッケージセキュリティ",
+      "url": "https://zenn.dev/hina_dev/articles/npm-pypi-supply-chain-attack-basics",
+      "site": "Zenn(Python)",
+      "published": "2026-08-04T12:01:54Z",
+      "description": "はじめに\nプログラミングを始めて少し経つと、こんな操作が当たり前になってくる。\nnpm install some-package\npip install some-library\n便利だし、毎日のように使う。でも最近ニュースで見かけた「Telnyx の PyPI パッケージが侵害された」という話を読んで、ちょっとドキッとした。\n「え、普通に pip install してるだけで危ないの...？」\n...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "1件の不正データでバッチが全滅する問題、フォールバックを足すのではなく入り口を絞った話",
+      "url": "https://zenn.dev/itaraiguma/articles/batch-insert-sanitize-why",
+      "site": "Zenn(Python)",
+      "published": "2026-08-04T11:34:32Z",
+      "description": "はじめに\n個人開発している「AgentPick」は、Qiita・Zenn・はてなブックマークなど複数ソースからニュース記事を取得し、まとめてDBに保存しています。この「まとめて保存」の実装で、1ソースの1件がカラム長制約に触れただけで、無関係な他ソースの新着まで丸ごと保存されなくなる問題が見つかりました。\n直そうとしたとき、対応案は2つ思い浮かびました。この記事はその2案のどちらを選んだか、どちら...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "OWASP Cheat Sheet に見る CSRF 対策トークンの作り方",
+      "url": "https://zenn.dev/natsubate/articles/b2ec11005901a2",
+      "site": "Zenn(Python)",
+      "published": "2026-08-04T11:16:28Z",
+      "description": "OWASP Cheat Sheetをご存知だろうか?\nOWASPという非営利団体が web セキュリティについてのベストプラクティスをまとめたもので「まずはここのやり方を参考にしろ」と真っ先に上がるナレッジ集である。\n筆者も大いに参考にしているのだが、今回はCross-Site Request Forgery Prevention Cheat Sheetにあった CSRF 対策トークンの作り方が目...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "AIエージェントの実運用",
+      "url": "https://zenn.dev/yutaka8484/articles/kobayashi-20260724-ai-agent-jimusho-tech",
+      "site": "Zenn(Python)",
+      "published": "2026-08-04T11:00:06Z",
+      "description": "はじめに\nAIエージェントの導入は、会社の業務を効率化するために重要なステップです。当社では、AIエージェントを社内サーバーに常駐させ、毎日決まった時間に決まった仕事を自動で行わせています。この記事では、そのシステムの構成、設計判断、ハマった点について詳細に解説します。\n\n システム構成\n当社のAIエージェントシステムは、次の構成で構成されています。\n\nサーバー: 社内サーバーにAIエージェントを...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "産業機械をパソコンの中でひも解く・XYステージ ―― まっすぐな円が、四か所だけ内側にへこむ",
+      "url": "https://zenn.dev/logicia32/articles/2026-07-27-xy-stage-quadrant-glitch",
+      "site": "Zenn(Python)",
+      "published": "2026-08-04T08:49:53Z",
+      "description": "平面上の狙った座標へテーブルを運ぶ位置決めステージ。歯竿と歯車で駆動しています。この立体は計算から起こしています。\nまっすぐな円を、機械になぞらせます。ところが軌跡は真円になりません。四か所、それも上下と左右のちょうど頂点だけ、内側にかくっとへこみます。\nこれは、プログラムを書く人なら覚えのある壊れ方だと思います。値を書き戻しても、ある幅を超えるまで実際の状態が動かない。方向を変えた最初の一回だけ...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "住所の突き合わせを98.5%まで上げた日本語アドレスマッチングの実装",
+      "url": "https://zenn.dev/shiorisuimoku/articles/jp-address-matching-isj",
+      "site": "Zenn(Python)",
+      "published": "2026-08-04T08:40:15Z",
+      "description": "厚生労働省のオープンデータで、全国197,967件の医療機関を検索できるサイトを個人で作っています。\nそこに「最寄りの医療機関まで何km離れているか」を県別・市区町村別に出す機能を足そうとしたとき、原典の座標が15,052件（7.6%）空欄でした。この欠損を住所から埋める処理を書いた話です。\n先に結論を書くと、埋めること自体より 「欠損がどう偏っているかを最初に見る」 ほうが大事でした。\n\n 1....",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "Garmin Running Data Normalizerを支えたAI協働開発",
+      "url": "https://zenn.dev/tsubotti63/articles/garmin-ai-collaboration-development",
+      "site": "Zenn(Python)",
+      "published": "2026-08-04T08:18:42Z",
+      "description": "第5回では、Garmin Running Data Normalizerで採用した\nExternal-safe Packについて紹介しました。\nここまでのシリーズでは、\n\nGarmin Exportの正規化\nActivityとFITの明示的な対応付け\nSnapshot Accumulation\nExternal-safe Pack\nAI分析へ渡すデータと読み方\n\nなど、主に「何を作ったか」を紹介し...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "「なんとなく」で決めない！PythonではじめるA/Bテスト入門 — データで意思決定できる人になるために",
+      "url": "https://zenn.dev/m_sakaaai/articles/0d39d5642813bf",
+      "site": "Zenn(Python)",
+      "published": "2026-08-04T05:12:54Z",
+      "description": "「新しいボタンの色、赤と青どっちがクリックされやすい？」「メールの件名Aと件名B、どちらの開封率が高い？」——ビジネスの現場では、こうした小さな判断が毎日たくさん行われています。\nでも、その判断はどうやって下されているでしょうか？「なんとなく赤のほうがよさそう」「上司が青って言ったから」……そんな“勘と経験と気合い”に頼った意思決定に、モヤモヤした経験はありませんか？\nそこで登場するのが A/Bテ...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "FastAPI を Lambda にデプロイする最小構成 — Mangum と依存パッケージの落とし穴",
+      "url": "https://zenn.dev/ukintech/articles/fastapi-lambda-serverless-deploy",
+      "site": "Zenn(Python)",
+      "published": "2026-08-04T04:41:18Z",
+      "description": "FastAPI を AWS Lambda に載せる手順は「Mangum で包んでデプロイするだけ」と説明されがちですが、依存パッケージの用意でつまずくケースが多いです。とくに Windows や macOS で開発している場合、素直にやると動かないパッケージが混ざります。\nこの記事では最小構成のデプロイ手順と、なぜその方法を選ぶのかをまとめます。\n\n 前提\n\nPython 3.12 以上\nAWS ...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "APIのクォータ上限を1000だと思い込んで1週間溶かした話",
+      "url": "https://zenn.dev/kabu_system_dev/articles/361f3f58ce891b",
+      "site": "Zenn(Python)",
+      "published": "2026-08-04T04:00:49Z",
+      "description": "結論\n\nログのエラーメッセージから上限値を推測していたが、その値は間違っていた\n権威あるAPI（get_history_kl_quota）を1回叩けば5秒で確定した\nさらに悪いことに、「毎日の更新処理が自分でクォータを食い潰し続ける」自己永続構造になっていた\n\n推測可能な指標を真実の代理として使い続けると、間違った前提の上に正しい修正を積み上げてしまう、という話です。\n\n 前提\n米国株のスクリーニ...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "ベイズ階層モデルで店舗・拠点差を扱う：PyMCでプールしすぎ・分けすぎを防ぐ",
+      "url": "https://zenn.dev/libercraft/articles/20260804-bayesian-hierarchical-model-pymc",
+      "site": "Zenn(Python)",
+      "published": "2026-08-04T02:00:00Z",
+      "description": "「全店舗まとめて1つのモデルを作ったら、新規オープンの小規模店舗の傾向が大規模店舗に埋もれてしまった」\n「店舗ごとに個別モデルを作ったら、データの少ない店舗の予測がブレブレになった」\n複数の店舗・拠点・部門のデータを扱うとき、この「まとめすぎ」と「分けすぎ」のジレンマに必ず突き当たります。全部まとめる（プーリング）と店舗ごとの個性が消え、全部分ける（分割）とデータが少ない単位で推定が不安定になりま...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "Python を使用して Word 文書を結合する",
+      "url": "https://zenn.dev/techblogger/articles/a7c3d0b9165726",
+      "site": "Zenn(Python)",
+      "published": "2026-08-04T01:44:57Z",
+      "description": "複数の Word 文書を 1 つのファイルに統合する作業は、ビジネスシーンで頻繁に発生します。例えば、異なる作成者が分担して執筆したレポートの各章を 1 つの文書にまとめたり、複数の会議議事録を時系列に結合してアーカイブを作成したりするケースが考えられます。手動でコピーアンドペーストを行うと、書式の不整合やコンテンツの欠落が発生しやすく、ファイル数が増えるほど作業負荷が大きくなります。Python...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "CSV から XML への変換、Python でどう実装する？（実データの落とし穴と対策）",
+      "url": "https://zenn.dev/techcode/articles/e666893e6bc861",
+      "site": "Zenn(Python)",
+      "published": "2026-08-04T01:41:22Z",
+      "description": "データ連携の現場では、CSV を受け取って別のシステムに引き渡すために XML へ変換する——そんな要件は珍しくありません。CSV は軽量で扱いやすい反面、階層構造を表現できず、文字コードや特殊文字の問題も起こりがちです。一方、XML は構造化されているものの、生成処理を一から書こうとすると想定外のデータでエラーになることも多い。\n本記事では、Python 向けのライブラリを利用して CSV を ...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "エンジニア視点で語る！Pythonで学ぶマクロ経済学入門 31",
+      "url": "https://zenn.dev/maszkot/articles/164c8b5479d097",
+      "site": "Zenn(Python)",
+      "published": "2026-08-04T00:54:07Z",
+      "description": "https://qiita.com/maskot1977/items/b8d132f917e68a6cf2d7\nDJミオ：こんばんはー！ラジオ教育番組「エンジニア視点で語る！Pythonで学ぶマクロ経済学入門」、ナビゲーターのDJミオです！\nDJレン：こんばんは、DJレンです。今回は第31回にあたる内容、「税率ではなく構造を見る ― 消費税・社会保険料・再分配の国際比較」を、エンジニアにも腹落ちす...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
     {
       "title": "[MacOS/Apple Silicon] Docker環境構築方法",
       "url": "https://zenn.dev/kawarin_origami/articles/docker-setup-20260804",
