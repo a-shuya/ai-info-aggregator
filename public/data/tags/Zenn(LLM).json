@@ -1,8 +1,58 @@
 {
   "site": "Zenn(LLM)",
-  "last_updated": "2026-08-04T16:43:58.217680",
-  "total_articles": 5099,
+  "last_updated": "2026-08-04T18:20:02.353472",
+  "total_articles": 5103,
   "articles": [
+    {
+      "title": "LLMの仕組みを理解したつもりになれる今さら解説",
+      "url": "https://zenn.dev/inapvision/articles/transformer_explanation",
+      "site": "Zenn(LLM)",
+      "published": "2026-08-04T15:00:08Z",
+      "description": "LLMの仕組みを理解したつもりになれる?今さら解説\nエンジニアのyssです。\nChatGPTをはじめとしたLLM(大規模言語モデル)は、欠かせない存在になっています。\nしかし「どんな仕組みで動いているのか?」を理解している人は(私も含めて) 少ないのではないでしょうか?\nなので、LLMの仕組みについてちょっとだけ深掘りしてみたことをまとめてみます。\n\n この記事のゴール\n\nLLMが文章を生成するま...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "AIレビューから「良い点も挙げる」を捨てた ── 敵対的検証を全レビューに統一した結果",
+      "url": "https://zenn.dev/tomu_coelia/articles/adversarial-verification-review",
+      "site": "Zenn(LLM)",
+      "published": "2026-08-04T14:47:31Z",
+      "description": "AIにコードレビューをさせると、たいてい「全体的によく書けています。いくつか改善点として…」というバランスの取れた、当たり障りのないレポートが返ってきます。私たちはこれを捨てました。\nWebサービス開発リポジトリ（coelia-system：イベント予約・LINE連携・ガチャ等）のADR 0082「全レビュー系スキルの検証作法を敵対的検証へ統一」で、十数種類あるレビュー系スキルすべてに同じ作法を強...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "AIが提案したデッキ改造案を、家のPCで3000回対戦させて検証したら棄却された",
+      "url": "https://zenn.dev/daimo0120/articles/ea7292045ddd0b",
+      "site": "Zenn(LLM)",
+      "published": "2026-08-04T14:00:05Z",
+      "description": "マジックザギャザリング(MtG)で自作デッキを組んでいると、必ずこの疑問にぶつかる。このデッキ、環境のトップメタ相手に何割勝てるのか。改造したら勝率は上がるのか。\nこれ、普通に確かめようとすると地獄だ。友人と100戦して統計を取る人はいない。大会に100回出場することもできない。じゃあどうするか。家のパソコンに9000回対戦させればいい。\nそして先に結果を書いてしまうと、この検証で一番割を食ったの...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "max_tokensを上げたら悪化した: DeepSeek V4 Flash (MLX) が「コードを書こう」と785回言い続けた",
+      "url": "https://zenn.dev/noricha/articles/deepseek-v4-flash-mlx-max-tokens-loop",
+      "site": "Zenn(LLM)",
+      "published": "2026-08-04T13:10:25Z",
+      "description": "ローカル LLM のベンチで、生成が max_tokens の上限で切れる問題を直していました。\n上限を 24,000 から 65,000 に上げれば完走するだろう、と思っていたら、逆に壊れ方がひどくなりました。\n数字から先に出します。\n\n\n\n見たもの\n実測\n\n\n\n\nオセロ実装（上限 65,000）\n10,804 tokens で自然終了、動作した\n\n\nはさみ将棋実装（上限 24,000）\n「让我...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "[Agents on 16GB] 状態の分離をあきらめた。サブエージェントはそれで動くようになった",
+      "url": "https://zenn.dev/bswebdev/articles/agents-16gb-gave-up-state-isolation",
+      "site": "Zenn(LLM)",
+      "published": "2026-08-04T12:49:20Z",
+      "description": "Agents on 16GB — 16GBのMacBook1台で動かすマルチエージェント。API利用ゼロ、外に何も出さない。\n\nマルチエージェントを組んでいる。オーケストレーターのPMが1つあって、そこから専門のサブエージェントに仕事を振る構成だ。モデルは全部ローカル（Ollama）で動かしている。16GBのMacBook1台、API利用はゼロ。\n最初は全員が同じ state[\"messages\"...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
     {
       "title": "個人開発のAI Bot、全部同じモデルに投げていませんか？ ——実測で分かった、安いモデルほど遅かった話",
       "url": "https://zenn.dev/motimotinotch/articles/324b7ce87160c3",
@@ -79,16 +129,6 @@
       "site": "Zenn(LLM)",
       "published": "2026-08-04T05:01:09Z",
       "description": "こちらの記事の内容は Podcast でも話しているので、よかったら記事と合わせてどうぞ。\nhttps://open.spotify.com/episode/3KqJuxOVIf1yhvPuqMaf3w\nLLM agent にメモリを持たせる話をすると、最近はナレッジグラフがよく出てきます。\n会話や作業から得た内容、つまり facts をノードにして、関係をエッジで結んでいく方式です。\nこのとき地...",
-      "category": "AI・技術",
-      "rss_category": "",
-      "image_url": ""
-    },
-    {
-      "title": "Hermes Agent v0.10.0入門 — Nous Tool Gatewayでゼロキー設定を実現するOSSエージェント",
-      "url": "https://zenn.dev/kai_kou/articles/256-hermes-agent-v010-nous-tool-gateway-guide",
-      "site": "Zenn(LLM)",
-      "published": "2026-08-04T03:31:38Z",
-      "description": "はじめに\nNous Research が開発するオープンソースAIエージェント Hermes Agent が、2026年4月16日にバージョン v0.10.0（コードネーム: The Tool Gateway Release）をリリースしました。\n今回の最大のアップデートは Nous Tool Gateway の導入です。これまでエージェントに各ツール（Web検索・画像生成・TTS・ブラウザ自動化...",
       "category": "AI・技術",
       "rss_category": "",
       "image_url": ""
