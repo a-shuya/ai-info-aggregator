@@ -1,14 +1,14 @@
 {
   "site": "Zenn(LLM)",
-  "last_updated": "2026-08-04T07:18:24.171790",
+  "last_updated": "2026-08-04T10:04:24.883364",
   "total_articles": 5094,
   "articles": [
     {
-      "title": "AIの記憶に「質量」と「重力」を持たせる —— フラットなコンテキストを超えて",
-      "url": "https://zenn.dev/ryosuke_tanabe/articles/58b5d0e4e9306b",
+      "title": "0.6BのナレッジグラフjudgeモデルBosunを試してみる",
+      "url": "https://zenn.dev/trtd56/articles/1ad1a0706775b6",
       "site": "Zenn(LLM)",
-      "published": "2026-08-04T04:11:15Z",
-      "description": "!\nこの記事は設計思想と数理モデルの骨格を扱う。実装コード・運用パラメータの実値・内部の想起パイプラインの配線は扱わない。前作［ローカルLLMに記憶装置を搭載させてみた］で「重力は別記事で」と予告した、その思想編にあたる。\n\n\n 1. はじめに —— フラットな記憶という問題\nLLMに記憶を持たせる方法は、いま二つに大別できる。コンテキストウィンドウに詰めて古いものから押し出すFIFO的なやり方と...",
+      "published": "2026-08-04T05:01:09Z",
+      "description": "こちらの記事の内容は Podcast でも話しているので、よかったら記事と合わせてどうぞ。\nhttps://open.spotify.com/episode/3KqJuxOVIf1yhvPuqMaf3w\nLLM agent にメモリを持たせる話をすると、最近はナレッジグラフがよく出てきます。\n会話や作業から得た内容、つまり facts をノードにして、関係をエッジで結んでいく方式です。\nこのとき地...",
       "category": "AI・技術",
       "rss_category": "",
       "image_url": ""
@@ -34,16 +34,6 @@
       "image_url": ""
     },
     {
-      "title": "AIにデザインを固定させる方法の変遷 — JSON定義で固定できたが「Excelの表」になった話",
-      "url": "https://zenn.dev/mxhlix/articles/design-locking-evolution",
-      "site": "Zenn(LLM)",
-      "published": "2026-08-04T02:36:25Z",
-      "description": "AIエージェントにWebツールを量産させると、必ずぶつかる問題があります。デザインが毎回ブレる。同じ指示を出しても、生成のたびに配色・余白・コンポーネントの形が微妙に違う。600個以上のツールを5言語で運用するプロジェクトで、このデザイン固定問題に対して試した方法の変遷と、それぞれの限界を書きます。\n\n 第1期: JSONでUIを定義して固定する → 固定はできた。しかし\n最初に試したのは、ツール...",
-      "category": "AI・技術",
-      "rss_category": "",
-      "image_url": ""
-    },
-    {
       "title": "Qwen3-Next 80B × Claude Opus 4.6 ハイブリッド運用で月$480削減した話",
       "url": "https://zenn.dev/correlate_dev/articles/qwen-hybrid-operations",
       "site": "Zenn(LLM)",
@@ -54,11 +44,51 @@
       "image_url": ""
     },
     {
+      "title": "徒労推理をやめる：CaRLがLLMに諦め方を教える",
+      "url": "https://zenn.dev/lixian/articles/carl-knowing-when-to-quit",
+      "site": "Zenn(LLM)",
+      "published": "2026-08-04T01:00:00Z",
+      "description": "TL;DR\nLLMは能力外のタスクに直面すると、解けないことを認めずに無駄な推論を続ける「徒労推理（Futile Reasoning）」に陥る。本研究はこの現象を体系的に分析し、3つの重要な発見——普遍的能力逸脱、似是而非推論の支配性、6倍の過信バイアス——を明らかにした。さらに**CaRL（Capability-aligned Reinforcement Learning）**を提案し、能力校正...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
       "title": "人間がMarkdownを書かないLLM Wikiを、Claudeと1か月半運用した",
       "url": "https://zenn.dev/cazma/articles/06a12e8eee4fff",
       "site": "Zenn(LLM)",
       "published": "2026-08-04T00:37:30Z",
       "description": "Claudeを要件定義、仕様作成、実装、レビュー、チケット管理、ブラウザテスト、調査に使っている。\n利用範囲が広がるほど、同じ説明を繰り返す時間も増えた。\n\nセッションを開くたび、システムの構成を最初から説明する\n過去に却下した案を、別のセッションで再び提案される\n障害調査で得た知見が、そのセッションの中だけで終わる\nよいアイデアが出ても、どの会話で話したか分からなくなる\n過去の経緯を知っている自...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "LLMを使うツールを「テストできる」状態に保つ設計：検出はルール、説明はLLMに分ける",
+      "url": "https://zenn.dev/mabui/articles/iac-guard-llm-separation",
+      "site": "Zenn(LLM)",
+      "published": "2026-08-04T00:00:11Z",
+      "description": "公開リポジトリ: https://github.com/mabuix/iac-guard\n\n前回（記事①）で、Terraform のコスト/セキュリティ問題を指摘するツール iac-guard の全体像を書きました。今回はその中で一番考えた部分、「LLMを使っているのに、どうやってテストできる状態を保つか」を掘り下げます。\n\n AIツールの一番の困りごと\nLLMを組み込んだツールを書いていて怖いの...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "Claude Code を 5 セッション並行で走らせたら3つの事故が起きた",
+      "url": "https://zenn.dev/kaji_kaji/articles/parallel-claude-code-sessions-ops",
+      "site": "Zenn(LLM)",
+      "published": "2026-08-04T00:00:11Z",
+      "description": "はじめに\nClaude Code を並列で走らせている人に聞いてみたいことがあります。セッションを増やすほど作業は速く進みますが、その分「誰が今どこを触っているか」を把握しきれなくなる瞬間はなかったでしょうか。自分の場合はリリース直前の個人開発で実際に起こりました。\nリリース作業・機能実装2〜4本・テスト基盤の整備・運用ドキュメントの更新。これを1日で最大5セッション並行して走らせます。作業自体は...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "LLM-as-Judgeの使いどころ ― RAG基盤生成モデル選定で下した評価設計の判断",
+      "url": "https://zenn.dev/yuya0408/articles/llm-as-judge-rag",
+      "site": "Zenn(LLM)",
+      "published": "2026-08-03T23:57:29Z",
+      "description": "日本語RAG基盤で、回答を生成するLLMを複数の候補から1つに選ぶ必要があった。品質を主観で判別しないために、別のLLMに回答を採点させる LLM-as-Judge で数値化するのは定石だ。問題は、その数値をどこまで意思決定に使ってよいか、だと私は考える。\n結論を先に提示しておくと、この記事でのjudgeの扱いは、次に集約できる。\n\nLLM-as-Judgeは「弱い候補を落とす」用途では信頼できる...",
       "category": "AI・技術",
       "rss_category": "",
       "image_url": ""
@@ -214,41 +244,11 @@
       "image_url": ""
     },
     {
-      "title": "閉域RAG構築記 — 「精度6/10」の内訳を全部開けたら、評価もRAGも壊れていた",
-      "url": "https://zenn.dev/dowjapan/articles/closed-network-rag",
-      "site": "Zenn(LLM)",
-      "published": "2026-08-03T05:16:56Z",
-      "description": "この記事は誰のためのものか\n最初に対象を絞ります。DifyやNotebookLMで社内RAGを組める会社は、この記事の対象外です。\nこの記事が対象にするのは、次のような会社です。\n\n情報漏洩リスクを理由に ChatGPT を含む外部生成AIサービスの利用を禁止している\n顧客個人情報・未公開財務情報・設計データなど、外部クラウドに出せない文書を扱っている\nそれでも「社内文書に答えるAI」を諦めたくな...",
-      "category": "AI・技術",
-      "rss_category": "",
-      "image_url": ""
-    },
-    {
-      "title": "Claude Codeのコンテキスト引き継ぎを205セッション運用したら、申し送りが誤りを増幅していた",
-      "url": "https://zenn.dev/aiqlabs/articles/70370e973d8425",
-      "site": "Zenn(LLM)",
-      "published": "2026-08-03T03:00:14Z",
-      "description": "この記事について\nClaude Code を 1 つのプロジェクトで 76 日走らせ続けています。会話ログは 205 セッション分残っていて、生のトランスクリプトは合計 991MB あります。\nその過程で「セッションをまたいで文脈を引き継ぐ」仕組みを作りました。SessionStart で申し送りの冒頭を注入し、「続きから」と打つと前回ログのダイジェストが自動で入る。動いています。\n問題は、動いた...",
-      "category": "AI・技術",
-      "rss_category": "",
-      "image_url": ""
-    },
-    {
       "title": "OpenAI互換でも同じには動かない――Kimi K3で考えるプロンプトとハーネス設計",
       "url": "https://zenn.dev/lifona/articles/e56799f710761b",
       "site": "Zenn(LLM)",
       "published": "2026-08-03T02:57:05Z",
       "description": "2026年7月16日、Moonshot AIがKimi K3を公開した。\n総パラメータ数2.8兆、有効化パラメータ数104B（1,040億）、コンテキスト長は約100万トークン。KimiのAPIはOpenAI互換であり、モデル名と接続先を変えれば、既存のアプリケーションから呼び出せる。\nしかし、APIが互換であることと、プロンプトの効き方まで同じであることは別問題である。\n既存システムをKimi ...",
-      "category": "AI・技術",
-      "rss_category": "",
-      "image_url": ""
-    },
-    {
-      "title": "毎朝のarXiv収集からX投稿まで、Claude Codeスキルでパイプラインを組んだ",
-      "url": "https://zenn.dev/ronkeisha/articles/2da814de658dd2",
-      "site": "Zenn(LLM)",
-      "published": "2026-08-03T02:56:25Z",
-      "description": "この記事で分かること\n\narXiv・はてなブックマーク・Redditの毎朝の収集からX投稿文の生成までを、Claude Codeのスキル3つで分業している実例\nどの工程を自動化し、どの工程を人間に残したか。その理由\n\n対象読者は、Claude Codeのスキル機構（.claude/skills/ にSKILL.mdを置くと呼び出せる、あれ）を知っていて、自分の日常運用に組み込みたい人です。スキルの...",
       "category": "AI・技術",
       "rss_category": "",
       "image_url": ""
