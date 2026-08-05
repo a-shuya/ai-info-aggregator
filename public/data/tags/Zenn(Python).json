@@ -1,8 +1,88 @@
 {
   "site": "Zenn(Python)",
-  "last_updated": "2026-08-05T04:30:09.099693",
-  "total_articles": 5497,
+  "last_updated": "2026-08-05T07:19:32.105527",
+  "total_articles": 5507,
   "articles": [
+    {
+      "title": "ファイルのmtimeを「未変更の証拠」にしてはいけない——SHA-256で入力データの不変性をテストする",
+      "url": "https://zenn.dev/y_watanabe11/articles/cd5b26214e387f",
+      "site": "Zenn(Python)",
+      "published": "2026-08-05T07:12:45Z",
+      "description": "はじめに\n解析パイプラインに、次のようなテストを追加したことがあります。\n\n処理の前後で入力ファイルの更新時刻が同じなら、元データは変更されていない\n\n一見もっともらしいのですが、この判定には問題があります。\n\nファイルの内容が同じでも、更新時刻だけが変わることがある\n内容が変わっても、更新時刻を元に戻せば検出できない\nファイルシステムによって時刻の精度や見え方が異なる\n\nつまり、mtimeは「い...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "壊れないffmpeg ― 毎日動かす動画自動化パイプラインの実務",
+      "url": "https://zenn.dev/keyframe_lab/books/ffmpeg-production",
+      "site": "Zenn(Python)",
+      "published": "2026-08-05T06:47:42Z",
+      "description": "コマンドは成功したのに再生できないMP4が出力される。エラーが出ないまま映像が引き伸びる。音声だけが入っていない——\nこれらは単発でffmpegを叩いている限り出会わず、自動化して毎日動かして初めて表面化する問題です。\n\n本書はコマンド集ではなく、壊れ方と、壊さないための設計を扱います。実際に運用しているパイプラインで動作している\nコマンドのみを扱い、確認していない挙動は記載していません。\n\nWi...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "まばたき・首の傾き・筋電位でマイクラを操作する自作コントローラーを作った話",
+      "url": "https://zenn.dev/ux_xu/articles/22d41eb496778d",
+      "site": "Zenn(Python)",
+      "published": "2026-08-05T06:17:45Z",
+      "description": "はじめに\n\nキーボードとマウスの代わりに、体の動きと生体信号だけでMinecraftを操作するコントローラーを自作した。「キーボードとマウスに一切触れずに、まばたきや首の傾き、腕の筋電位だけでゲームを動かせるところまで持っていけるか」という純粋な好奇心から始めたプロジェクトで、カメラでの表情・姿勢認識、ジャイロセンサー、筋電位(EMG)センサーなど複数の入力源を用意し、それぞれをユーザーが好きなキ...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "pandas vs Polars vs DuckDB：1億行の実データで速度とメモリを比較する",
+      "url": "https://zenn.dev/libercraft/articles/20260805-pandas-vs-polars-vs-duckdb-100m",
+      "site": "Zenn(Python)",
+      "published": "2026-08-05T02:00:00Z",
+      "description": "「いつも使っているpandasで集計処理を書いたら、1億行のデータでメモリ不足で落ちた」——データ量が数百万行を超えたあたりから、多くのデータサイエンティストがこの壁にぶつかります。\npandasは長年デファクトスタンダードでしたが、大規模データでは設計上の限界が顕在化します。本記事では、pandas・Polars・DuckDBという3つの選択肢を、1億行規模のグループ集計処理で比較し、実務でどう...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "Bedrockチャットボットを公開する前に、月額上限を自前で実装した話",
+      "url": "https://zenn.dev/boostertech/articles/03e1d2166ecb53",
+      "site": "Zenn(Python)",
+      "published": "2026-08-05T01:49:05Z",
+      "description": "作ったもの\nマスボクシングのトレーニング相談ができるチャットボットを作って公開しています。\n🥊 パンチ先生 — https://booster-test.com/chat/\n私は40代からボクシングジムに通っていて、マスボクシング（当てないボクシング）の全国大会を目指しています。Bedrockのデモを作る必要があったので、どうせなら自分が使うものにしようと思って作りました。\n構成はこうです。\n\n\n...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "Python を使用して Excel ファイルを SVG に変換する",
+      "url": "https://zenn.dev/techblogger/articles/da3e7b78423205",
+      "site": "Zenn(Python)",
+      "published": "2026-08-05T01:45:23Z",
+      "description": "Excel ファイルはデータの管理や計算において優れたツールですが、計算結果を Web ページに埋め込んだり、プレゼンテーション資料で高品質に表示したりする場面では、SVG（Scalable Vector Graphics）形式の方が適していることがあります。SVG は XML ベースのベクター画像形式であり、拡大・縮小しても画質が劣化しないため、レスポンシブな Web デザインや高解像度ディスプ...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "New Relic のログ検索結果に直リンクする隠し URL 仕様",
+      "url": "https://zenn.dev/yumemi_inc/articles/new-relic-logs-deep-link",
+      "site": "Zenn(Python)",
+      "published": "2026-08-05T01:39:02Z",
+      "description": "はじめに\nNew Relic の Logs UI には，任意の検索クエリで絞り込んだ状態を URL から直接開く方法 があります。公式には案内されていませんが， Nerdlet の URL State を組み立てれば，外部システムから特定のログへ誘導できます。\nとあるプロジェクトでは， GitHub Actions の workflow_dispatch から ECS Fargate のバッチタス...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "Boyer–Moore多数決法を図解｜異なる値を打ち消して過半数要素をO(n)で探す",
+      "url": "https://zenn.dev/student_blog/articles/boyer-moore-majority-vote-python",
+      "site": "Zenn(Python)",
+      "published": "2026-08-05T00:21:59Z",
+      "description": "アンケート結果やログの並びから、「全体の半分より多く現れる値」を探したいとします。値ごとの出現回数を辞書に保存すれば求められますが、値の種類が増えるほど保存する情報も増えます。\nこの記事では、1回目の走査で候補を1個と票数を1個だけ持つ Boyer–Moore多数決法 を扱います。持ち帰ってほしい考え方は、異なる値を1組ずつ打ち消しても、本当に過半数を占める値は最後まで候補に残ることです。\n\n こ...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
     {
       "title": "RPRでMCP Tool Callを統治する――成功応答だけで外部変更を完了にしない",
       "url": "https://zenn.dev/dantarg/articles/rpr-governing-mcp-tool-calls",
@@ -19,6 +99,16 @@
       "site": "Zenn(Python)",
       "published": "2026-08-04T21:21:53Z",
       "description": "個人の自動化プロジェクトで、同じレイアウトの図解画像を複数言語ぶん生成するスクリプトをPillowで書いていました。インドネシア語・ポルトガル語・モンゴル語・ベトナム語まではきれいに出ていたのに、ミャンマー語を追加した瞬間に字が重なって読めなくなりました。\nしかも厄介なことに、事前に入れていた「フォントに全文字のグリフがあるか」の検査は全部パスしていました。原因はPillowのビルド構成に起因する...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "Claude Code で開発を『自働化』する — Anthropic 流 3 役エージェントループを launchd 常駐で回す",
+      "url": "https://zenn.dev/gunma/articles/claude-code-daemon-agent-orchestration",
+      "site": "Zenn(Python)",
+      "published": "2026-08-04T16:46:32Z",
+      "description": "!\nこの記事は「Claude Code で AI 駆動開発を仕組みにする」シリーズの記事です。\nシリーズ全体は シリーズ目次 を参照してください。\n手元の Mac 1 台で試せる内容です。\n\n自分の PR にレビューコメントが付くと、気づくのが翌朝で、直して push するのが昼になる。この往復が 1 日 1 往復しかできないのがずっと嫌でした。\n先日、Anthropic のエンジニアが「計画・実...",
       "category": "開発",
       "rss_category": "",
       "image_url": ""
@@ -49,6 +139,16 @@
       "site": "Zenn(Python)",
       "published": "2026-08-04T13:39:02Z",
       "description": "01: Pymunkとは!?\nPymunkは、Chipmunkをベースに作られた、2Dゲーム用物理ライブラリです。\n今回は、本ライブラリの導入から簡単な動作確認まで、できるだけ簡潔にまとめていきます。\n\nPymunk\nPymunkは、物理上の物体の形や角度、移動速度、衝突処理の計算だけを行うライブラリです(描画は一切行いません)。\nよって、空間に存在する物体の描画部分は実装側で用意しなくてはいけま...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "[Agents on 16GB] 状態の分離をあきらめた。サブエージェントはそれで動くようになった",
+      "url": "https://zenn.dev/bswebdev/articles/agents-16gb-gave-up-state-isolation",
+      "site": "Zenn(Python)",
+      "published": "2026-08-04T12:49:20Z",
+      "description": "Agents on 16GB — 16GBのMacBook1台で動かすマルチエージェント。API利用ゼロ、外に何も出さない。\n\nマルチエージェントを組んでいる。オーケストレーターのPMが1つあって、そこから専門のサブエージェントに仕事を振る構成だ。モデルは全部ローカル（Ollama）で動かしている。16GBのMacBook1台、API利用はゼロ。\n最初は全員が同じ state[\"messages\"...",
       "category": "開発",
       "rss_category": "",
       "image_url": ""
