@@ -1,8 +1,68 @@
 {
   "site": "Zenn(LLM)",
-  "last_updated": "2026-08-05T18:06:24.057286",
-  "total_articles": 5118,
+  "last_updated": "2026-08-05T19:52:02.462627",
+  "total_articles": 5124,
   "articles": [
+    {
+      "title": "MCPが業務自動化を“安全に”進めるための実装チェックリスト",
+      "url": "https://zenn.dev/bambampurin/articles/2026-07-30-tech-daily",
+      "site": "Zenn(LLM)",
+      "published": "2026-08-05T15:39:44Z",
+      "description": "この記事で分かること\n\n2026-07-30時点で、AI/LLMの主戦場が「モデル性能」から「エージェント運用基盤」へ移った理由\nMCP・業務自動化・安全性の3点を、今どの順番で追うべきか\nPython開発基盤ではなぜ uv / Ruff / Polars と Astral が注目されているのか\n\n\n AIニュースを読むときに「モデル」より「運用基盤」を優先して追う方法\n結論、今日のニュース群で最...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "AI の記憶に「健康診断」ツールを作った——診断はするが、手は出さない",
+      "url": "https://zenn.dev/kanfupanda/articles/ai-memory-health-check",
+      "site": "Zenn(LLM)",
+      "published": "2026-08-05T14:50:32Z",
+      "description": "!\nこの記事は個人ブログにも掲載しています → https://kanfu-panda.github.io/ja/blog/2026/07/13/ai-memory-health-check.html\n\n\n\n前回は、いくつかのプロジェクトの AI 記憶ライブラリを体系的に「除草」し、記憶が劣化する六種類の「雑草」を整理しました。ですが除草を進めるほど確信が強まりました——手作業の除草は対症療法にす...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "【Splunk】入力は無限、請求は有限：LLMを使ったゲームを公開したいので、Splunk で見張ってもらう",
+      "url": "https://zenn.dev/subara3/articles/d12d4f80c8fd84",
+      "site": "Zenn(LLM)",
+      "published": "2026-08-05T14:39:12Z",
+      "description": "LLMを使用して、ユーザーの入力にキャラクターが反応してくれるゲームを作ったよ\n\n「世界創造Q（クエスチョン）」という、LLMを使用したブラウザゲームを作りました！\nhttps://subara3.com/negai-9cqsrlly/\nテキストベースの闇鍋共同世界創造ゲーム（？）です。\n\nユーザーの自由入力の「願い」に……。\n\n意味のあるお返事が返ってくる、そういうゲームです。\n（要するに、LL...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "「LLM を更新したら回答が壊れた」を CI で止める — Go 製 OSS raggate で作る RAG 品質ゲート",
+      "url": "https://zenn.dev/mutton/articles/b0e17496a34b13",
+      "site": "Zenn(LLM)",
+      "published": "2026-08-05T12:05:04Z",
+      "description": "リポジトリ: mutton-dev/raggate — 記事の手順はモックサーバー同梱なので、API キーなしで最後まで再現できます。\n\n\n 0. はじめに\nRAG パイプラインは「作る」より「良い状態を保つ」方が難しい——運用を始めるとすぐ気づきます。\n\nプロバイダがモデルを更新した翌週、特定の質問だけ回答が変わっていた\nプロンプトを 1 行直したら、直した箇所と関係ない回答が崩れた\nインデック...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "LLMが「本文の無い記事」の要約をでっち上げていた話 ─ プロンプト修正だけで安心しなかった理由",
+      "url": "https://zenn.dev/itaraiguma/articles/hn-summary-hallucination-fix",
+      "site": "Zenn(LLM)",
+      "published": "2026-08-05T11:14:36Z",
+      "description": "はじめに\n個人開発している「AgentPick」は、複数ソースから取得したニュース記事にLLMで要約を付けています。あるとき、Hacker Newsの記事に付く要約が「読んでいないのに読んだていで書かれた文章」になっていることに気づきました。\nこの記事はその原因と、なぜプロンプトを直すだけでは不十分だと判断したかの記録です。同じ問題に当てはめて確認できるチェックリスト形式の整理はQiita版にまと...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "特定AIエージェントへの委任集中を自己改善ループで是正する【Claude Code/マルチエージェント】",
+      "url": "https://zenn.dev/cutlet_of_pork/articles/multi-agent-delegation-load-balancing",
+      "site": "Zenn(LLM)",
+      "published": "2026-08-05T08:26:12Z",
+      "description": "はじめに\n複数のAI CLI（Codex CLI、Gemini系CLI、Claudeサブエージェント）と連携するマルチエージェント構成で開発していると、次の3つの課題に直面します。\n\n\n委任先が固定化する: ルールには「分散させよ」と書いてあるのに、実運用では1つのCLI（高性能で使い慣れたもの）に委任が集中する\n\n偏りに気づく仕組みがない: 集中していることに気づくのは、クォータ枯渇や実行時間の...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
     {
       "title": "LongTraceRL：エージェント検索軌跡と量規報酬で長文脈推論を学習",
       "url": "https://zenn.dev/lixian/articles/longtracerl-agent-trajectory-reasoning",
