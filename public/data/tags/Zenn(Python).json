@@ -1,14 +1,54 @@
 {
   "site": "Zenn(Python)",
-  "last_updated": "2026-08-05T16:21:24.244038",
-  "total_articles": 5517,
+  "last_updated": "2026-08-05T18:06:24.057286",
+  "total_articles": 5520,
   "articles": [
+    {
+      "title": "単調スタックを図解｜右側で最初に大きい値をO(n)で探す",
+      "url": "https://zenn.dev/student_blog/articles/monotonic-stack-next-greater-python",
+      "site": "Zenn(Python)",
+      "published": "2026-08-05T13:28:03Z",
+      "description": "価格や気温の並びを見て、「今の値を初めて上回る値は、この先のどこにあるか」を全要素について知りたいとします。各位置から右へ探し直す方法は分かりやすい一方、要素数が増えると比較回数が急増します。\nこの記事では、未解決の位置を単調スタックに残すことで、右側で最初に大きい値を O(n) で求めます。結論は「現在値より小さい値をスタックから取り出し、その答えを現在値で確定する」です。\n\n この記事でわかる...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "PyMCでクロマトグラムの波形をフィッティング",
+      "url": "https://zenn.dev/rirumerusho/articles/0c91092eb366eb",
+      "site": "Zenn(Python)",
+      "published": "2026-08-05T13:17:03Z",
+      "description": "はじめに\n実験データや分析評価において、点推定だけでなく不確実性を考慮した評価を行うために、PyMCを利用したベイズ推定を実践します。\n!\nこの記事で使用するデータは、解説用にnumpyで作成したダミーデータを使用しています。\n\n\n\n 1. ライブラリの準備\n必要なライブラリをインポートします。\nimport numpy as np\nimport pandas as pd\nimport seabo...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "高校生のためのPythonSCAD コップをつくる",
+      "url": "https://zenn.dev/yokamak/articles/732f9e5eaf6a00",
+      "site": "Zenn(Python)",
+      "published": "2026-08-05T13:03:08Z",
+      "description": "はじめに\nPythonSCADコミュニティ・開発者に感謝申し上げます。ありがとうございます。\nhttps://www.pythonscad.org/\n今回は、コップです。言葉でどれだけ作れるか試してみました。\n\n 1. 指示書\n\n【製品概要】\n回転体（rotate_extrude）で作るコップ形状。胴は上に向かって控えめに広がるテーパー（上に行くほど太くなる傾き）を持ち、飲み口は最薄部 1.5mm...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
     {
       "title": "壊したのに、落ちなかった",
       "url": "https://zenn.dev/jissokulog/articles/074daf7039d080",
       "site": "Zenn(Python)",
       "published": "2026-08-05T12:37:52Z",
       "description": "シリーズ「AIエージェントの報告を信じる前に」の7本目です。以下は1本目からの並びになっています。\nhttps://zenn.dev/jissokulog/articles/498e691f7f287d\nhttps://zenn.dev/jissokulog/articles/eda7afa1c51eea\nhttps://zenn.dev/jissokulog/articles/a8e72d7a1...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "ClaudeとPythonを書いていたら、途中でAIがおかしくなった話",
+      "url": "https://zenn.dev/flipslidersand/articles/ai-python-context-degradation",
+      "site": "Zenn(Python)",
+      "published": "2026-08-05T12:37:22Z",
+      "description": "AIと一緒にコーディングすれば、Pythonなんて簡単に書ける。\n最初の1時間は、本当にそう思っていた。\n「このエラーって何？」と聞けば、すぐに原因を説明してくれる。\n「もっとシンプルに書けない？」と頼めば、コードをきれいにしてくれる。\n「初心者向けに説明して」と言えば、専門用語を減らして噛み砕いてくれる。\nこれは便利だ。もう一人でも何でも作れるのではないか。\nそう思っていた。\nしかし、2〜3時間...",
       "category": "開発",
       "rss_category": "",
       "image_url": ""
@@ -119,16 +159,6 @@
       "site": "Zenn(Python)",
       "published": "2026-08-05T06:17:45Z",
       "description": "はじめに\n\nキーボードとマウスの代わりに、体の動きと生体信号だけでMinecraftを操作するコントローラーを自作した。「キーボードとマウスに一切触れずに、まばたきや首の傾き、腕の筋電位だけでゲームを動かせるところまで持っていけるか」という純粋な好奇心から始めたプロジェクトで、カメラでの表情・姿勢認識、ジャイロセンサー、筋電位(EMG)センサーなど複数の入力源を用意し、それぞれをユーザーが好きなキ...",
-      "category": "開発",
-      "rss_category": "",
-      "image_url": ""
-    },
-    {
-      "title": "Text-to-SQLの精度を評価したら、モデルより先に自分のプロンプトとコードのバグが3層見つかった",
-      "url": "https://zenn.dev/nd3/articles/text-to-sql-eval-3layers",
-      "site": "Zenn(Python)",
-      "published": "2026-08-05T04:47:40Z",
-      "description": "この記事について\n技術ドキュメントに質問できるRAGツール(TechDoc QA Bot)を作ってきましたが(前回までの記事: 評価編・不正解1問の診断編・Webアプリ化編)、その次のテーマとして、RDB(リレーショナルデータベース)を実際に触りたくなりました。ベクトルDBによる「曖昧な意味検索」は前のプロジェクトで扱ったので、今度はRDBに対する「厳密なデータ照会」をやってみたい、という動機です...",
       "category": "開発",
       "rss_category": "",
       "image_url": ""
