@@ -1,8 +1,108 @@
 {
   "site": "Zenn(AI)",
-  "last_updated": "2026-08-05T10:02:26.992110",
-  "total_articles": 12053,
+  "last_updated": "2026-08-05T12:14:09.041694",
+  "total_articles": 12059,
   "articles": [
+    {
+      "title": "読みやすいようで読みにくい、生成AIの設計書をマシにできたプロンプト",
+      "url": "https://zenn.dev/miyachan2/articles/f5e8bd8e4e3de0",
+      "site": "Zenn(AI)",
+      "published": "2026-08-05T07:43:10Z",
+      "description": "今日もプログラムしてない、プログラマーのヤミちゃんです。\nAIに設計書を20ページ書かせたら、中身は大体合ってるのに読みにくい設計書が爆誕したので、全ページを自分で直してました。\nその差分を使ってプロンプト作ったら、いい感じにAIが設計書を作ってくれるようになったので、記事にします。\n!\nこの記事は、いろいろ実験しながらブラッシュアップ予定です。\nもしよかったらいいねいただけると嬉しいです！\n\n\n...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "テストコードは人間のための文書ではない（AI に書かせる時代の保証台帳）",
+      "url": "https://zenn.dev/yktsnet/articles/202608-guarantee-driven-development",
+      "site": "Zenn(AI)",
+      "published": "2026-08-05T07:42:28Z",
+      "description": "Claude Code に実装を投げるようになって、バグ修正も機能追加も、以前なら手を出さずに置いていた量までこなせるようになりました。同時に増えたのが手戻りです。直したところが次の変更で戻る、関係ないと思っていた場所が壊れる。作れる量が増えたぶん、壊す量も増えました。\n守ってくれるのはテストです。ただ、そのテストも Claude Code が書いています。走らせれば緑になり、diff をざっと見...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "Gitワークツリーで並行作業する：AIエージェントの手を止めない使い方",
+      "url": "https://zenn.dev/gingakuwagata/articles/git-worktree-parallel-ai-agents",
+      "site": "Zenn(AI)",
+      "published": "2026-08-05T07:39:54Z",
+      "description": "はじめに\nClaude Code のようなコーディングエージェントに実装を任せていると、こんな場面によく出くわします。\n\n大きめのタスクを投げて、出力が終わるまで数分から十数分待つことになる\nその間ターミナルを眺めているだけになり、次の作業に着手できない\n途中で別のバグ修正を思い出しても、いま動いているブランチを崩したくないので手が出せない\n\n原因は、Git のブランチが1つの作業ディレクトリを共...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "SeedRealtimeを動画編集に入れる前に、会話より先に決めたいこと",
+      "url": "https://zenn.dev/kiritani_r/articles/50227b4711aaa5",
+      "site": "Zenn(AI)",
+      "published": "2026-08-05T07:09:52Z",
+      "description": "自分がリアルタイムの音声・映像AIを見るとき、最初に気になるのは「どれだけ自然に会話できるか」ではありません。\n編集の判断を、あとから人に渡せる形で返してくれるかです。\n[2026年8月5日に公開されたSeedRealtime]は、音声・映像・テキストをまとめて扱い、連続する情報にリアルタイムで応答するモデルとして発表されました。画面を見せながら話せるAIは、動画制作にも近づいてきています。\n\nた...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "AI生成でも効果を狙えるWebデザインリニューアルを試してみた：ブランド設計からデザインシステムまで",
+      "url": "https://zenn.dev/tamat_llc/articles/ai-web-design-brand-workflow",
+      "site": "Zenn(AI)",
+      "published": "2026-08-05T07:04:25Z",
+      "description": "こんにちは、TamaT の 増田 です。\nTamaT は顧客提案から要件定義、設計、開発までを一気通貫で担う少数精鋭の開発会社です。\n「おしゃれなサイトを作って」と生成AIに頼むと、数分で見栄えのよい画面が出てきます。\nところが、見慣れたグラデーションや角丸カードが並び、なんとなく「AIっぽい」画面に見える。\nロゴを外すと、どのブランドのサイトかも分からない。\n「AIはデザインはまだまだだね」とな...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "Claude Code の「無駄」を可視化するツール cclens を作った",
+      "url": "https://zenn.dev/lambdalisue/articles/introduce-cclens",
+      "site": "Zenn(AI)",
+      "published": "2026-08-05T06:37:39Z",
+      "description": "どうも、医者からアルコールを控えろと言われたのでノンアルビールを飲んでみたものの、あまり好みではなかった 16 歳（進数不明）、ありすえです。\n突然ですが、皆さんは自分の Claude Code が どれくらい無駄なことをしているか 把握していますか？\n\n 設定の効果検証は難しい\nAI って非決定的なツールですよね。なので、設定の効果検証がめちゃくちゃ難しい。\nある目的のためにルールやスキルを書い...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "Why I No Longer Think of Seedance AI Video Generator as Just Another A",
+      "url": "https://zenn.dev/felice680/articles/de7eb7f45fcdd8",
+      "site": "Zenn(AI)",
+      "published": "2026-08-05T06:20:35Z",
+      "description": "When I first started experimenting with AI video generation, I treated every model the same way.\nWrite a prompt.\nClick Generate.\nWait for the result.\nIf it wasn't good enough, I rewrote the prompt and...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "Claude Code の Bash が使えなくなる E2BIG エラーを調べた",
+      "url": "https://zenn.dev/swat9013/articles/claude-code-e2big-worktree",
+      "site": "Zenn(AI)",
+      "published": "2026-08-05T06:05:11Z",
+      "description": "!\n本記事はClaude Code自身を使って調査した記録です。自分の環境での実測にあたって書いていますが、原因の一部は仮説であり、間違っている可能性があります。同じ症状に当たった人の取っ掛かりになれば、という目的で備忘録として残しておきます。\n\n\n はじめに\nある日、Claude Codeのセッション内ですべてのBashが動かなくなりました。\nE2BIG: argument list too l...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "自動運転AIチャレンジ２",
+      "url": "https://zenn.dev/yh341610/articles/886016a543331c",
+      "site": "Zenn(AI)",
+      "published": "2026-08-05T06:02:52Z",
+      "description": "日産栃木自動車大学校　一級自動車工学科　　1年4組　山口大翔\n\n前回はmacにubuntuを入れるということを書きましたが、今回はその後キーボードとトラックパッドが効かなくなったのでそれをどのように直したのかを書いていこうと思います。\nまず最初になぜキーボード等が反応しなかったのかを調べたところ、macにはT2チップというものが入っていて、キーボード、トラックパッド、内蔵wifi、スピーカーといっ...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "【AI駆動開発 12】実例：全部つなげると、こうなる",
+      "url": "https://zenn.dev/idealive_kmon/articles/ai-dev-11-full-loop",
+      "site": "Zenn(AI)",
+      "published": "2026-08-05T05:52:48Z",
+      "description": "!\nここまでの11本は「考え方」でした。この記事は、それを実案件で1本のループに配線した一例です。\nこれが正解の形ではありません。案件・チーム・顧客が違えば正解の形も違う——ただ「つなげるとこう回る」という実物が1つあると、自分の案件での組み方を考えやすいはずです。\n\n\n 人間が出るのは3つの定点だけ\nこのループの設計原則はひとつ：人間の確認ポイントを事前に決めておく。ここでは ①計画承認 ②途中...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
     {
       "title": "AI エージェントの「2週間かかります」は、誰の2週間なのか ― 測定されている事実を並べる",
       "url": "https://zenn.dev/nihonbashi/articles/llm-time-estimate-human-hours",
@@ -104,51 +204,11 @@
       "image_url": ""
     },
     {
-      "title": "Gemini EnterpriseのAgent GatewayとAgent RegistryでCloud RunのカスタムMCPへ接続する",
-      "url": "https://zenn.dev/team_lab/articles/433bb9679a4a4c",
-      "site": "Zenn(AI)",
-      "published": "2026-08-05T01:57:45Z",
-      "description": "はじめに\nこんにちは。\nチームラボでエンジニアをしている津田です。\n普段は、サービスの保守運用や追加開発の要件定義、開発方針の検討、社内でのAI活用の検証に関わっています。\n私のチームでは、エンジニアと非エンジニアが同じ情報を参照しながらAIを使える環境として、Gemini Enterpriseを利用しています。\nGemini Enterprise は Google Workspaceのリソースに...",
-      "category": "AI・技術",
-      "rss_category": "",
-      "image_url": ""
-    },
-    {
-      "title": "AIが一発で使えるデザインシステムにする、5つの具体策 — GUNJOでやったこと",
-      "url": "https://zenn.dev/uixhero_jp/articles/zenn-ai-usable-designsystem",
-      "site": "Zenn(AI)",
-      "published": "2026-08-05T01:46:57Z",
-      "description": "AIに画面を組ませる開発をしていると、あることに気づきます。デザインシステムを渡しても、AIが使いこなせないことがある。 コンポーネントはあるのに手組みを始めたり、存在しないコンポーネントを勝手に発明したり、間違ったコンポーネントを推薦してきたり。\n原因の多くは、デザインシステム側にあります。人間なら「察して」補える余白が、AIには補えないからです。私は自作のデザインシステム（GUNJO）で、予備...",
-      "category": "AI・技術",
-      "rss_category": "",
-      "image_url": ""
-    },
-    {
-      "title": "GPT-Live の記事を解説してみる",
-      "url": "https://zenn.dev/edom18/articles/gpt-live-memo",
-      "site": "Zenn(AI)",
-      "published": "2026-08-05T01:08:34Z",
-      "description": "はじめに\nOpenAI から画期的な音声モデル GPT-Live がリリースされましたね。\nもう本当に人と話している感じがして、あまりにも楽しくてほとんど毎日、なにかしら GPT-Live と話をしています。\n特にオススメなのが AI グラスを使って会話すると音質と、耳をふさがない感じでの会話で、まるで近くにいる AI と会話している感じになります。AI グラス持っている人はぜひ試してみてください...",
-      "category": "AI・技術",
-      "rss_category": "",
-      "image_url": ""
-    },
-    {
       "title": "AI時代のQAエンジニアはどこへシフトするのか",
       "url": "https://zenn.dev/edash_tech_blog/articles/e8d2acfb3202fb",
       "site": "Zenn(AI)",
       "published": "2026-08-05T01:00:05Z",
       "description": "こんにちは！e-dashでQAエンジニアをしている10mo8です。\nちょうどチームでこれからの品質保証活動を考えているタイミングだったので、実際に取り組んでいることと重ねながら、「AI時代のQAエンジニアはどこへ向かうのか」を私なりに整理してみました。\n!\nこの記事には筆者個人の見解が多分に含まれており、e-dashの公式見解や共通認識を示すものではありません。あくまで一QAエンジニアの現時点での...",
-      "category": "AI・技術",
-      "rss_category": "",
-      "image_url": ""
-    },
-    {
-      "title": "LLM に個人情報を渡さずに、CS 問い合わせ対応エージェントを作る",
-      "url": "https://zenn.dev/canly/articles/3ebef2d4f7e3d4",
-      "site": "Zenn(AI)",
-      "published": "2026-08-05T01:00:05Z",
-      "description": "カンリーで福利厚生サービス「カンリー福利厚生」の開発をしている小泉です。\n「カンリー福利厚生」は、顧客企業の従業員がメールアドレスと従業員番号で登録して使うサービスです。\n「勤務先が管理する番号で本人確認をする」この方式のサービスには、業種を問わず共通の運用テーマがあります。\n登録時の番号の入力間違いや、雇用区分の変更に伴う番号の変わり目で、登録やログインにつまずく方が一定数現れることです。\n1件...",
       "category": "AI・技術",
       "rss_category": "",
       "image_url": ""
