@@ -1,8 +1,138 @@
 {
   "site": "Zenn(LLM)",
-  "last_updated": "2026-08-06T07:20:24.917616",
-  "total_articles": 5123,
+  "last_updated": "2026-08-06T10:05:08.436139",
+  "total_articles": 5135,
   "articles": [
+    {
+      "title": "AIの答えをAIに採点させる——安いモデルで高いモデルを見張れるか",
+      "url": "https://zenn.dev/daishiro/articles/cheap-llm-verify-expensive-llm",
+      "site": "Zenn(LLM)",
+      "published": "2026-08-06T04:25:25Z",
+      "description": "はじめに\nAIエージェントに仕事を任せる時代、その答えを誰がチェックするのでしょうか。私は複数のAIエージェントを常駐させて開発・運用を回す仕組みを自作していて、そこでは「番犬（watchdog）」役のエージェントに別のモデルを当てて、他のエージェントの出力を検収させています。\nこの番犬、安いモデルで足りるのでしょうか。それとも高いモデルを使わないと見張り役は務まらないのか。手元のローカルLLMで...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "4bitは妥協なのか——同じLLMを量子化ビット数を変えて実測",
+      "url": "https://zenn.dev/daishiro/articles/local-llm-quantization-degradation",
+      "site": "Zenn(LLM)",
+      "published": "2026-08-06T04:13:15Z",
+      "description": "はじめに\nローカルLLMを触ると、必ず「量子化」に出会います。q4_K_M とか q8_0 とか、モデル名の後ろにつくアレです。みんな当たり前のようにq4版を落として使っていますが、「4bitに落とすと、実際どれだけ品質が落ちるのか」を実測した記事は意外と少ない。\n前回、4つのモデルをM2 Ultraで比較しました。今回はその続きで、同じモデルを量子化ビット数だけ変えて比べます。ローカルだからこそ...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "AIが私の経歴を捏造した。2回。——それで作った「ペルソナ正史」という仕組み",
+      "url": "https://zenn.dev/anikuma/articles/ai-persona-canon-fact-accident",
+      "site": "Zenn(LLM)",
+      "published": "2026-08-06T03:44:22Z",
+      "description": "AIに記事を書かせている人に質問です。あなたの経歴、全記事で一致していますか?\n私は一致していませんでした。それも2回。1回目は投稿前に気づいて直し、「次は気をつけよう」で済ませました。2回目は公開後に読者の立場で読み直していて背筋が冷えました。業界統計の数字が、私の実体験として書かれていたのです。\n「気をつける」は対策ではなかった。そこで作ったのが「ペルソナ正史(canon)」という仕組みです。...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "SKILLを増やしたら、ClaudeのブラウザQAが下手になった",
+      "url": "https://zenn.dev/cazma/articles/79721f58cfd79e",
+      "site": "Zenn(LLM)",
+      "published": "2026-08-06T03:07:05Z",
+      "description": "ClaudeにブラウザQAを頼むため、最初は手順をSKILLへ蓄積していた。\n「このUIの場合はこの操作をする」「この表示なら次にここをクリックする」といった知見を、テストのたびに追記していた。\n回数を重ねれば、テストは安定するはずだった。\nところが、しばらくすると初期より躓く場面が増えたように感じた。\nどんな知識を蓄積しているのか確認すると、SKILLには過去に遭遇したUIごとの操作が長く羅列さ...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "【コスパ比較】Sonnet 5 は GPT-5.6 Sol よりも「高い」のか（#高額請求 #トークン節約）",
+      "url": "https://zenn.dev/okamo02427/articles/2be71cf2cb6fef",
+      "site": "Zenn(LLM)",
+      "published": "2026-08-06T03:00:06Z",
+      "description": "Claude の請求金額に怯えながら過ごす日々を卒業したい。\n今回は複数モデル間の「コスパ比較」をしてみたので、\n見かけ上のAPI単価だけでは見えてこない、実効コストとパフォーマンスの話を記録する。\n\n はじめに\nClaude Sonnet 5 は GPT-5.6 Sol よりも高いのか。\nSonnet は Fable、Opus に続く賢さを持ち、Opusを使うまでもない広範なタスクに適したモデル...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "LLM Wikiパターンの標準化 OKF(Open Knowledge Format)",
+      "url": "https://zenn.dev/finatext/articles/2ea88e4b1c2e5b",
+      "site": "Zenn(LLM)",
+      "published": "2026-08-06T02:00:05Z",
+      "description": "Open Knowledge Format（OKF）— LLM Wikiパターンの標準化\nナウキャストで長期LLMインターンをしている北川です。LLM系のタスクのキャッチアップをする中で、最近「OKF」という技術を耳にする機会が増えました。\nOKFはまだ登場したばかりの仕様で、その概念を理解するにはRAGやLLM wikiといった周辺技術への理解が欠かせません。しかし、OKF関連の記事の多くはOK...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "AIの嘘がセキュリティリスクになる？OWASP LLM09 Misinformationを初心者向けに解説",
+      "url": "https://zenn.dev/mapellion/articles/42ead2c2204afa",
+      "site": "Zenn(LLM)",
+      "published": "2026-08-06T01:00:05Z",
+      "description": "はじめに\nLLMは、もっともらしい嘘を自信たっぷりに語ることがあります。これは「ハルシネーション」としてよく知られた現象です。大変迷惑です。🥲\n多くの人はこれを「精度の問題」「品質の問題」だと考えていると思います。ところがOWASP Top 10 for LLM Applications 2025では、これをセキュリティリスクとして正式に位置づけました。それが LLM09:2025 Misinfo...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "ThinkStationPGX(DGX Spark OEM)のGPUクロックが702MHzに張り付き、LLM推論速度が半減した話",
+      "url": "https://zenn.dev/catspawengineer/articles/b1d623b2806e99",
+      "site": "Zenn(LLM)",
+      "published": "2026-08-06T00:12:38Z",
+      "description": "はじめに\nThinkStationPGXでvLLMを使ってopenai/gpt-oss-120bを動かしていたところ、推論速度が普段の半分程度まで低下する現象に遭遇しました。調査の結果、GPUのSMクロックが702MHzに張り付いていることが分かりました。\nOSの再起動では改善しませんでしたが、シャットダウン後にDGX Spark本体から給電用USB Type-Cケーブルを抜き、電源アダプタもAC...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "Claude Code v2.1.218〜221まとめ、fast modeは枠外課金で何を試すべきか",
+      "url": "https://zenn.dev/ainewsdaily/articles/20260806_claude_code_t1",
+      "site": "Zenn(LLM)",
+      "published": "2026-08-05T22:02:35Z",
+      "description": "Claude Codeの2026年8月第1週は、v2.1.218からv2.1.221までの4回のアップデートがありました。Opus 5が既定モデルになったほか、コードレビューの実行場所やサブエージェントの入れ子構造など、日々の使い方に直接影響する変更が続いています。この記事では、動画を見ていない方にも分かるよう、今日から試せる変更と、条件付きで注意が必要な変更を整理します。\nhttps://you...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "制約8個の遵守確認、生成ターンと検証ターンを分けても文字数だけは直らない",
+      "url": "https://zenn.dev/every_ai_recipe/articles/ai-two-turn-constraint-check",
+      "site": "Zenn(LLM)",
+      "published": "2026-08-05T21:07:57Z",
+      "description": "TL;DR\n\n複数制約を守らせたい生成タスクで、「生成→自己チェック」を同一ターン内の1回の指示に詰め込む方式と、生成後に出力を新しいメッセージとして貼り直し、別ターンで照合・修正させる方式を比較した\n制約8個（返金対応メールを想定）で試したところ、内容系の制約（禁止表現・定型文・署名漏れなど）は別ターン確認でほぼ解消したが、「150字以内」という文字数制約だけはChatGPT・Claude・Ge...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "MCPが業務自動化を“安全に”進めるための実装チェックリスト",
+      "url": "https://zenn.dev/bambampurin/articles/2026-07-30-tech-daily",
+      "site": "Zenn(LLM)",
+      "published": "2026-08-05T15:39:44Z",
+      "description": "この記事で分かること\n\n2026-07-30時点で、AI/LLMの主戦場が「モデル性能」から「エージェント運用基盤」へ移った理由\nMCP・業務自動化・安全性の3点を、今どの順番で追うべきか\nPython開発基盤ではなぜ uv / Ruff / Polars と Astral が注目されているのか\n\n\n AIニュースを読むときに「モデル」より「運用基盤」を優先して追う方法\n結論、今日のニュース群で最...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "MMPO：失敗確率分布の複数モーメントを同時に最適化するLLM推論RL",
+      "url": "https://zenn.dev/lixian/articles/mmpo-multi-moment-policy-optimization",
+      "site": "Zenn(LLM)",
+      "published": "2026-08-05T15:00:00Z",
+      "description": "TL;DR\n強化学習（RL）でLLMの推論を鍛える研究が増えているが、ほとんどの手法は「問題全体の平均的な失敗率」を下げることだけを狙っている。Zhangらの「Beyond the Mean: Multi-Moment Policy Optimization for LLM Reasoning」は、各問題の失敗確率を確率変数として扱い、その分布のモーメント全体を同時に最適化する新しい視点を提案した...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "AI の記憶に「健康診断」ツールを作った——診断はするが、手は出さない",
+      "url": "https://zenn.dev/kanfupanda/articles/ai-memory-health-check",
+      "site": "Zenn(LLM)",
+      "published": "2026-08-05T14:50:32Z",
+      "description": "!\nこの記事は個人ブログにも掲載しています → https://kanfu-panda.github.io/ja/blog/2026/07/13/ai-memory-health-check.html\n\n\n\n前回は、いくつかのプロジェクトの AI 記憶ライブラリを体系的に「除草」し、記憶が劣化する六種類の「雑草」を整理しました。ですが除草を進めるほど確信が強まりました——手作業の除草は対症療法にす...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
     {
       "title": "【Splunk】入力は無限、請求は有限：LLMを呼び出すゲームを、Splunk Observability Cloudで見張ってもらう",
       "url": "https://zenn.dev/subara3/articles/d12d4f80c8fd84",
@@ -19,16 +149,6 @@
       "site": "Zenn(LLM)",
       "published": "2026-08-05T12:05:04Z",
       "description": "リポジトリ: mutton-dev/raggate — 記事の手順はモックサーバー同梱なので、API キーなしで最後まで再現できます。\n\n\n 0. はじめに\nRAG パイプラインは「作る」より「良い状態を保つ」方が難しい——運用を始めるとすぐ気づきます。\n\nプロバイダがモデルを更新した翌週、特定の質問だけ回答が変わっていた\nプロンプトを 1 行直したら、直した箇所と関係ない回答が崩れた\nインデック...",
-      "category": "AI・技術",
-      "rss_category": "",
-      "image_url": ""
-    },
-    {
-      "title": "LLMが「本文の無い記事」の要約をでっち上げていた話 ─ プロンプト修正だけで安心しなかった理由",
-      "url": "https://zenn.dev/itaraiguma/articles/hn-summary-hallucination-fix",
-      "site": "Zenn(LLM)",
-      "published": "2026-08-05T11:14:36Z",
-      "description": "はじめに\n個人開発している「AgentPick」は、複数ソースから取得したニュース記事にLLMで要約を付けています。あるとき、Hacker Newsの記事に付く要約が「読んでいないのに読んだていで書かれた文章」になっていることに気づきました。\nこの記事はその原因と、なぜプロンプトを直すだけでは不十分だと判断したかの記録です。同じ問題に当てはめて確認できるチェックリスト形式の整理はQiita版にまと...",
       "category": "AI・技術",
       "rss_category": "",
       "image_url": ""
