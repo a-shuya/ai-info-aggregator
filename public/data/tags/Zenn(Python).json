@@ -1,8 +1,148 @@
 {
   "site": "Zenn(Python)",
-  "last_updated": "2026-08-06T12:16:24.556181",
-  "total_articles": 5523,
+  "last_updated": "2026-08-06T14:40:05.834013",
+  "total_articles": 5537,
   "articles": [
+    {
+      "title": "Lightroom Classicの書き出し後処理をPythonで自動実行する仕組みを作る",
+      "url": "https://zenn.dev/s_kaito/articles/lightroomclassic-0002",
+      "site": "Zenn(Python)",
+      "published": "2026-08-06T13:57:06Z",
+      "description": "はじめに\n今回の目的は、Lightroom Classic（以下 LrC）から書き出した写真に対して、SNSに上げる用の後処理を自動化することです。実装したのは以下の4つです。\n\n4x5のサイズを模倣した余白をつけること\nフィルム風の黒縁をつけること\nフィルム風の日付を焼き込むこと\nウォーターマークを印字すること\n\n手作業でやらずに自動化したかったのは、パイプラインを一本化したかったからです。書き...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "Pillowでフィルム風「光の焼き込み」を再現する - なぜ「上に置いた感」が抜けないのか",
+      "url": "https://zenn.dev/s_kaito/articles/lightroomclassic-0001",
+      "site": "Zenn(Python)",
+      "published": "2026-08-06T13:57:05Z",
+      "description": "はじめに\nLightroom Classic（以下 LrC）から書き出した写真に、Pythonでフィルムっぽい日付を自動で焼き込む処理を作りました。\n実際にこの処理をかけると、右下にこういう日付が焼き込まれるようにしました！\n\n私は写真について、日付がいつ撮ったものかも大変重要な背景情報だと考えており、日付が写り込んでいるものが好きでして、そんな風に一括でできたらいいなと考えていました。ただ、フィ...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "万能エージェント1体をやめる — GitHub Copilot のカスタムエージェントと自作 MCP サーバーで「分業」を設計する",
+      "url": "https://zenn.dev/kurimochi29/articles/github-copilot-agent-division-design",
+      "site": "Zenn(Python)",
+      "published": "2026-08-06T12:28:22Z",
+      "description": "この記事でやること\nナレッジベース（ヘルプセンター）の記事更新を、GitHub Copilot のカスタムエージェントに分業させた構成の設計と実装をまとめます。\n\n統括役1体＋専門エージェント3体という構成\n外部の SaaS は、自作した MCP サーバー経由で操作する\n動かしてわかったことと、未解決のまま残っている課題\n\n想定読者は、カスタムエージェントを「便利なペルソナ1体」以上に使いたい人、...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "『今日の既読件数』が9時間ズレていた日",
+      "url": "https://zenn.dev/itaraiguma/articles/date-boundary-timezone-basis",
+      "site": "Zenn(Python)",
+      "published": "2026-08-06T11:22:33Z",
+      "description": "はじめに\n個人開発している「AgentPick」には、「今日の既読件数」を表示する機能があります。あるとき、この件数が実際に読んだ記事数と食い違っていることに気づきました。原因を追ううちに、同じ勘違いから生まれたバグがもう1箇所見つかりました。\nこの記事は、その2つのバグがどちらも「naive datetime(タイムゾーン情報を持たない日時)の基準がどこで作られたか」を揃え忘れたことから起きてい...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "MiniMax H3をWaveSpeed APIで呼ぶ：3入力とPollingの実装",
+      "url": "https://zenn.dev/kiritani_r/articles/15d02fee8894ff",
+      "site": "Zenn(Python)",
+      "published": "2026-08-06T07:15:13Z",
+      "description": "TL;DR\n\nText-to-Video、Image-to-Video、Reference-to-Videoは、POSTでpredictionを作り、結果URLをpollingするところまで共通です。\nまずはText-to-VideoかImage-to-Videoを5秒・480pで回し、参照素材を使う必要があるときだけReference-to-Videoへ進めます。\n480pの5秒はText/Im...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "ブラックボックスじゃないAIを作ろうとしたら、LLMの「ブレ」の正体が想定と違っていた話",
+      "url": "https://zenn.dev/soyatsource/articles/7e948b5905200b",
+      "site": "Zenn(Python)",
+      "published": "2026-08-06T06:16:02Z",
+      "description": "この記事の結論\nLLMに何かを判定させるとき、同じ質問を複数回投げて、\n答えのブレ具合で信頼度を測るというやり方があります。よく使われる手法です。\n私の環境では、そのブレの**100%が「1回目だけがズレる」**という現象でした。\nつまり測っていたのは「その質問の難しさ」ではなく、\n**「1回目と2回目以降の実行状態の違い」**だった可能性が高い。\n対策は簡単で、1回目を捨てるだけです。\n実際、保...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "AIに任せて壊れないシステムを作る",
+      "url": "https://zenn.dev/auto_quont/books/ai-autonomous-system",
+      "site": "Zenn(Python)",
+      "published": "2026-08-06T05:23:04Z",
+      "description": "AI（Claude Code）に自動売買システムの設計・実装・運用・改善を丸ごと任せた実験の記録です。\n最初のシステムはバックテストで年率+360%を出し、実運用でマイナスになりました。原因はデータリークでした。\nそこから作り直す過程で確立した「AIに任せても壊れないための手続き」を、実際のコードと失敗事例つきでまとめます。\n宣言ゲート、ガードテスト、ルックアヘッドを構造で防ぐ設計、そして「改善し...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "入力欄に文字は入ったのに、送信ボタンが押せない — contenteditableとCDPの話",
+      "url": "https://zenn.dev/automakobo/articles/contenteditable-cdp-insert-text",
+      "site": "Zenn(Python)",
+      "published": "2026-08-06T05:01:39Z",
+      "description": "ブラウザを自動操作していて、入力欄に文字を入れる処理を書きました。実行すると、画面にはちゃんと文字が出ています。なのに隣の「送信」ボタンがグレーのまま押せません。文字数カウンタも0のまま。試しに自分でキーボードから1文字打つと、その瞬間にボタンが有効になります。\n「入っているのに、入っていないことになっている」。この現象で手が止まりました。原因は、最近のWebの入力欄がただのテキスト欄ではないこと...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "SEC EDGARの生データでバフェット追随戦略を検証したら、自分の測定バグを見つけた話",
+      "url": "https://zenn.dev/auto_quont/articles/13f-clone-verification",
+      "site": "Zenn(Python)",
+      "published": "2026-08-06T04:57:44Z",
+      "description": "TL;DR\n\nSEC EDGARから13F報告書418件を取得し、著名投資家8社の保有を機械的に追随する戦略を13年分検証した\n結果は 年率+13.7%（Sharpe 0.76）、同期間のS&amp;P500 +17.6%（Sharpe 0.94） に完敗\n検証中、自作バックテストの「無取引帯域」がスリーブ全体を無音で無効化していたバグを発見。最初は「改善した」ように見えていた\n発見の手がかりは成...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "[きもちを理解]pipとvenvで仮想環境を作成",
+      "url": "https://zenn.dev/usasan/articles/ef59d525d9d945",
+      "site": "Zenn(Python)",
+      "published": "2026-08-06T04:11:05Z",
+      "description": "はじめに\nこの記事では、Pythonでプログラミングを始めた初学者に向けて、pipとvenvを用いた仮想環境の構築方法をイラストを用いつつ、紹介しようと思います。この記事を読むことで、pipとvenvのきもちがわかります。\n\n pipってなんだろう？\n一言でいうならばpipとは使いたいライブラリを管理するためのコマンドです。\nPythonには、ライブラリと呼ばれる便利機能がたくさん溢れかえっていま...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "Ruff で Python の lint + format を一発で統一する",
+      "url": "https://zenn.dev/ukintech/articles/ruff-python-lint-format",
+      "site": "Zenn(Python)",
+      "published": "2026-08-06T03:54:31Z",
+      "description": "はじめに\nPython の lint / format ツールは選択肢が多く、プロジェクトごとに Flake8 + isort + Black を組み合わせて使うケースが一般的でした。しかし設定ファイルが分散し、ツール間のルール競合に悩まされることも少なくありません。\nRuff は、これらを1つのツールに統合した Rust 製の linter / formatter です。Flake8 系プラグイ...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "エンジニア視点で語る！Pythonで学ぶマクロ経済学入門 32",
+      "url": "https://zenn.dev/maszkot/articles/ac0ce6ec19397d",
+      "site": "Zenn(Python)",
+      "published": "2026-08-06T02:58:24Z",
+      "description": "https://qiita.com/maskot1977/items/e1939ff20a6e1c6ced3e\n\n 第32回「再分配は税か給付か？」\n\n\n オープニング\nDJミオ：\nこんばんは、DJミオです！\nこの番組は、マクロ経済学の基本を、Pythonで実際に手を動かしながら、そしてエンジニアにとってわかりやすい言葉で学んでいくラジオ教育番組です。\nDJレン：\nDJレンです。\n今日のテーマは、...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "全国6.5万サイトを一晩で調べた。叩かれた側の経験で書いたクローラーと、踏んだ3つの罠",
+      "url": "https://zenn.dev/shiorisuimoku/articles/clinic-site-survey-66k-crawler",
+      "site": "Zenn(Python)",
+      "published": "2026-08-06T02:43:35Z",
+      "description": "医療機関の検索サイトを個人で運営しています。厚生労働省「医療情報ネット」のオープンデータを使ったもので、全国19.8万件の医療機関を扱っています。\nこのデータには 医療機関が国に届け出たホームページのURL が入っています。そこで「届け出られたサイトは、いま実際どういう状態なのか」を全国規模で調べました。対象は重複を畳んで 65,699ホスト。一晩で終わらせました。\nこの記事は、その調査クローラー...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "Python のリストを CSV に出力する実装パターン（1 次元・2 次元・辞書型）",
+      "url": "https://zenn.dev/techcode/articles/702dc1d0e19b52",
+      "site": "Zenn(Python)",
+      "published": "2026-08-06T01:49:10Z",
+      "description": "Python でデータを扱う際、リストや辞書などのデータ構造を CSV ファイルとして出力したい場面は非常に多くあります。CSV は表計算ソフトやデータ分析ツールとの連携が容易なため、データ保存や受け渡しのフォーマットとして広く利用されています。\n本記事では、Python 向けの Excel 操作ライブラリを利用して、1 次元リスト・2 次元リスト・辞書のリストという 3 つの代表的なデータ構造を...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
     {
       "title": "【Python】GitHub Actionsで毎晩天気をメール通知する仕組みを作った【個人開発】",
       "url": "https://zenn.dev/wakinoza/articles/034a3f1795dd59",
