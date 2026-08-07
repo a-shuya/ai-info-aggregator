@@ -1,8 +1,58 @@
 {
   "site": "Zenn(生成 AI)",
-  "last_updated": "2026-08-07T11:08:05.081937",
-  "total_articles": 3213,
+  "last_updated": "2026-08-07T11:56:19.047016",
+  "total_articles": 3216,
   "articles": [
+    {
+      "title": "AIは自動化できる。しかし、その出力を確定値として扱ってはいけない",
+      "url": "https://zenn.dev/nullcontroller/articles/7e06dd0e4e67d2",
+      "site": "Zenn(生成 AI)",
+      "published": "2026-08-07T10:26:05Z",
+      "description": "自社の業務で、AIの使い方として気になる事例を見た。\n製品ごとに、どのソフトウェアを提供するか、評価が必要かを確認する質問表があり、その一部をAIが自動入力していた。\nAIを使って入力作業を自動化すること自体は問題ではない。\n問題は、AIが生成した値が、そのまま通常の入力値として扱われていたことである。\n\n 自動化できることと、品質を保証できることは別である\n生成AIは、文章作成、分類、抽出、入力...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "RAGの種類・手法を1枚の地図に ─ 19手法の特徴とメリット/デメリット",
+      "url": "https://zenn.dev/m16_llc/articles/rag-methods-map-guide",
+      "site": "Zenn(生成 AI)",
+      "published": "2026-08-07T09:10:48Z",
+      "description": "こんにちは、M16合同会社の代表社員&amp;COO(最高執行責任者)であり、FDE, PdM, PM, ソフトウェアエンジニア/LLMエンジニアのまさぴょんです🐱\n今回は、乱立している RAGの手法を「効くレイヤー」ごとに6層へ整理した地図 をご紹介します。\n\n 「RAGの精度が出ない」に、単一の正解はない\nRAGを触り始めると、すぐにこの状態になります。\n\nHyDE、RAPTOR、GraphR...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "Claude Code・Codexの品質を守るハーネス設計5層",
+      "url": "https://zenn.dev/yamato_snow/articles/claude-code-codex-harness-engineering",
+      "site": "Zenn(生成 AI)",
+      "published": "2026-08-07T08:58:40Z",
+      "description": "Claude CodeやCodexに、同じ注意を何度も書いていないでしょうか。\n「変更後はテストして」\n「このディレクトリは触らないで」\n「前と同じ形式で実装して」\nその場では直っても、別のセッションではまた同じミスが起きる。モデルを高性能なものへ替えると頻度は下がりますが、ゼロにはなりません。\n結論から言うと、必要なのはプロンプトの追加ではなく、AIが間違えにくく、間違えても自分で検知できる開発...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "WaveSpeed APIでモデル追加時の分岐の増殖を防ぐPython設計",
+      "url": "https://zenn.dev/akari_chan/articles/dbdc046d91decb",
+      "site": "Zenn(生成 AI)",
+      "published": "2026-08-07T08:17:44Z",
+      "description": "TL;DR\n\n統一APIでも、モデルごとの入力schemaは同じではありません。\n業務コードは共通のImageRequestだけを扱い、差分はAdapterに閉じ込めます。\nモデル追加時は、実行schemaの確認とpayloadの完全一致testをセットにします。\n\n\n 想定読者と検証環境\n想定しているのは、画像生成APIで複数モデルを切り替えるbackend開発者です。\n特に、model IDを...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "AIに記事を書かせたら、品質チェックの側が単調な文章を推奨していた",
+      "url": "https://zenn.dev/infra_study_ze/articles/ai-draft-lint-monotone",
+      "site": "Zenn(生成 AI)",
+      "published": "2026-08-07T02:46:59Z",
+      "description": "技術記事を継続して出したいのですが、1本書くのに数時間かかります。そこで、下書きは AI に任せることにしました。\nただ、AI が書いた文章はそのままでは出せません。毎回書き味が変わりますし、放っておくと、どこかで読んだような当たり障りのない原稿になります。かといって毎回こちらが全部読んで直していたら、AI に書かせた意味は半分になります。\nそこで、自分が過去に書いて手応えのあった記事から文体のル...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
     {
       "title": "「AI臭を消す」定番の直し方3つが、実測では逆だった",
       "url": "https://zenn.dev/vincentwen/articles/d5a3eab4444106",
@@ -154,31 +204,11 @@
       "image_url": ""
     },
     {
-      "title": "MiniMax H3をWaveSpeed APIで呼ぶ：3入力とPollingの実装",
-      "url": "https://zenn.dev/kiritani_r/articles/15d02fee8894ff",
-      "site": "Zenn(生成 AI)",
-      "published": "2026-08-06T07:15:13Z",
-      "description": "TL;DR\n\nText-to-Video、Image-to-Video、Reference-to-Videoは、POSTでpredictionを作り、結果URLをpollingするところまで共通です。\nまずはText-to-VideoかImage-to-Videoを5秒・480pで回し、参照素材を使う必要があるときだけReference-to-Videoへ進めます。\n480pの5秒はText/Im...",
-      "category": "AI・技術",
-      "rss_category": "",
-      "image_url": ""
-    },
-    {
       "title": "AIで開発が速くなった？ それってあなたの感想ですよね？",
       "url": "https://zenn.dev/oniku_daisuki/articles/72fe0744f0b02e",
       "site": "Zenn(生成 AI)",
       "published": "2026-08-06T05:06:39Z",
       "description": "AIでコミット数が約2倍になった。マージ済みPR数が約7割増えた。PRのサイクルタイムが約3割短くなった。数百件のPRを自動マージできた。\nどれもAIを使った開発の成功事例として、十分に景気のよい数字です。それぞれの施策が、対象とした工程を変えたことを示しています。\nでも、その数字をそのまま「開発生産性が上がった」と呼んでよいのでしょうか。\nAIで開発が速くなった？ それってあなたの感想ですよね？...",
-      "category": "AI・技術",
-      "rss_category": "",
-      "image_url": ""
-    },
-    {
-      "title": "AIに仕様書ではなくテストだけ渡したら、隠しテストまで全部通った。なのにテストでは固定できなかった既定値は5回とも40にならなかった",
-      "url": "https://zenn.dev/numarn/articles/spec-prose-vs-tests-codegen-handson",
-      "site": "Zenn(生成 AI)",
-      "published": "2026-08-06T04:37:20Z",
-      "description": "「仕様書を書くくらいなら、テストを書いて渡せばいい」という言い方があります。動く形で条件を渡すのだから、文章より確実だろう、という話です。今回はそれを Claude Code の claude -p(対話せずに1回だけ指示を投げて結果を受け取る使い方)で実際に試しました。\n結果、テストだけを渡しても、テストの答えを丸写しするような場当たりの実装にはなりませんでした。生成側に一度も見せていない「隠し...",
       "category": "AI・技術",
       "rss_category": "",
       "image_url": ""
