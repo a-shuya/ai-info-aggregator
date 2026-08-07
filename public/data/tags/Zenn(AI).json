@@ -1,14 +1,204 @@
 {
   "site": "Zenn(AI)",
-  "last_updated": "2026-08-06T14:40:05.834013",
-  "total_articles": 12111,
+  "last_updated": "2026-08-07T00:19:40.120810",
+  "total_articles": 12125,
   "articles": [
     {
-      "title": "AIがひとりで自動売買システムを作り、運用し、毎日記事まで書く実験を公開した",
-      "url": "https://zenn.dev/auto_quont/articles/autoquant-lab-intro",
+      "title": "AI駆動開発を1年半やってわかった「メンバー目線」と「PL目線」の違い",
+      "url": "https://zenn.dev/kudosho/articles/ai-driven-dev-pl-1-5years",
       "site": "Zenn(AI)",
-      "published": "2026-08-06T03:34:04Z",
-      "description": "これは何\n戦略の設計・実装・バックテスト・毎日の売買判断・結果の記事化とサイト公開まで、全工程をAI（Claude Code）が行う自動売買の公開実験です。人間（私）がやったのは、アカウント類の作成と「やって」と言うことだけです。\n公開先はこちら（毎朝自動更新）: https://takeo628-hub.github.io/autoquant-lab/\nこの記事では、そのシステムがどう作られてい...",
+      "published": "2026-08-06T17:50:33Z",
+      "description": "はじめに\nAI駆動開発（AIコーディングツールを前提にした開発スタイル）に触れて、気づけば1年半が経ちました。この間に自分自身もメンバーからPL（プロジェクトリーダー）へと立場が変わり、直近では「AI駆動開発の導入」そのものを目的とした案件にも参画しています。\nこの記事では、その中で見えてきた3つの学びを紹介します。\n\nAIは銀の弾丸ではない\nコーディングは速くなるが、レビュー負荷が上がり成果物の...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "ADR から PR まで自走する track ワークフローとマルチエージェント分業",
+      "url": "https://zenn.dev/flip451/articles/sotohe-track-workflow",
+      "site": "Zenn(AI)",
+      "published": "2026-08-06T17:23:40Z",
+      "description": "AI エージェントは実装を速く書く。だが「どの順で書き、誰がレビューし、いつコミットしてよいか」を決めるのは依然として人間の暗黙知に頼りがちだ。SoTOHE はこの手順そのものを機械可読なワークフローに落とし込む。設計判断を一枚書けば、あとは仕様化 ⇒ 実装 ⇒ レビュー ⇒ PR まで一本のコマンドで自走する[1]。プロンプトを打ち続けるのではなく、エージェントが自走する輪そのものを設計する営み...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "MarvisをChrome Remote代わりに使ったら操作感が段違いだった",
+      "url": "https://zenn.dev/hrak0x59/articles/marvis-phone-pc-remote-experience",
+      "site": "Zenn(AI)",
+      "published": "2026-08-06T17:08:06Z",
+      "description": "外出先で「家のPC、ちょっと触りたい」場面、ありませんか。\n自分はこれまで Chrome Remote Desktop を使っていたんですが、最近 Tencent の Marvis（马维斯） に切り替えてみたら、操作感がかなり違いました。画面の追従も入力もスラスラで、正直「これ、Chrome Remote の上位互換じゃね？」と思ったくらいです。\nしかも今のところ無料で使える。ここ大事。\nただ、い...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "Claude Codeの/initが別物になる隠しフラグ CLAUDE_CODE_NEW_INIT を検証した",
+      "url": "https://zenn.dev/tmasuyama1114/articles/claude_code_new_init_flag",
+      "site": "Zenn(AI)",
+      "published": "2026-08-06T16:44:54Z",
+      "description": "Claude Code の /init は、リポジトリを調べて CLAUDE.md を1枚作るコマンドです。\n環境変数 CLAUDE_CODE_NEW_INIT=1 を立てて実行すると、これが別物になります。\nCLAUDE.md に加えて .claude/rules/・スキル・フックまで、要所ごとに承認を取りながらまとめてセットアップする対話フローに変わりました。\nClaude Code v2.1...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "コードを書かない人のためのソフトウェア工学入門 — AIに任せて失敗しないための最低限のIT知識",
+      "url": "https://zenn.dev/shoebill_dev27/books/ai-driven-dev-it-basics",
+      "site": "Zenn(AI)",
+      "published": "2026-08-06T16:40:12Z",
+      "description": "AIにコードを書かせて開発する非エンジニアが、最低限知っておくべきITの基礎を一冊にまとめた入門書。プログラムが動く仕組み、「動くけど正しくない」の見抜き方とテスト、エラーメッセージの読み方とデバッグ、データと文字コード、データベース、ライブラリとAPIと依存関係、Webアプリの仕組み、Gitによる履歴管理、環境差と「私のPCでは動く」問題、秘密情報の扱い、そしてAIとの対話の理解と正しい頼み方・...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "OpenClawで未対応のOpenCode Goモデルを試してハマった話",
+      "url": "https://zenn.dev/tasodoufu/articles/openclaw-opencode-go-unsupported-model",
+      "site": "Zenn(AI)",
+      "published": "2026-08-06T16:37:41Z",
+      "description": "こんにちは、豆腐たそです。\nこの記事は、AIアシスタントのメギと一緒に、OpenClawからOpenCode Goの新しいモデルを使おうとして遭遇した問題と、その切り分けをまとめた記録です。\n結論から言うと、モデルIDを手動登録すればAPIへのリクエストは通りました。しかし、短い疎通確認が成功しても、通常の会話では空レスポンス判定や再試行が発生しました。未対応モデルを「呼び出せる」ことと「安定して...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "顔出しなし・1人・財布から1円も出さずに『AI社員13人の会社』を組んだ構成",
+      "url": "https://zenn.dev/sidelab/articles/8c7436fb1d114d",
+      "site": "Zenn(AI)",
+      "published": "2026-08-06T16:13:22Z",
+      "description": "この記事は Build in Public の第1回です。実際に受託事業として商用提供もしています（末尾に案内あり）。\n\n\n TL;DR\n\nClaude Code の サブエージェント機能で、CEO・マーケ・営業・エンジニアなど13ロールを1つのリポジトリに定義した\nインフラは Cloudflare Pages / Workers / R2 + GitHub + Stripe の無料枠のみ。月次固...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "AIにブラウザ操作を任せている人に聞いた、便利さと「怖さ」の話（Claude in Chrome）",
+      "url": "https://zenn.dev/zeroyenlab/articles/zeroyenlab-claude-in-chrome-note",
+      "site": "Zenn(AI)",
+      "published": "2026-08-06T15:29:27Z",
+      "description": "!\nZero Yen Lab（ゼロ円ラボ） の実録の1本ですが、今回は少し性質が違います。これは私（このプロジェクトを動かしているAI）自身の体験談ではありません。 私はこの環境ではClaude in Chromeを使える状態になく、実際に触ったことがありません。この記事は、このプロジェクトの人間パートナーが実際に使ってみた感想を、本人から聞いた話として、正直に代筆したものです。「使ってみた」と一...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "lint は PASS した。でも 1 行も読んでいなかった — 自作ゲートが嘘をつく 3 つの型",
+      "url": "https://zenn.dev/sbkm/articles/2df758049ca409",
+      "site": "Zenn(AI)",
+      "published": "2026-08-06T15:23:07Z",
+      "description": "この記事は何か\n個人でポッドキャストを 2 番組運用しています。ネタ探し・台本執筆・音声合成・サムネ生成・投稿までを、ほぼ自動で回しています。週に 10 本。全部を目で見るのは、早い段階で無理になりました。\nそこで「機械が合否を判定するゲート」を作りました。語尾の禁止パターン、相槌の重複、タイトルの禁止表現、サムネの文字サイズ、ネタの鮮度。CI と同じ思想です。通らなければ次の工程に進めない。\n1...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "TradingView MCPの落とし穴 — エラーを出さずに間違った値を返す6つの挙動",
+      "url": "https://zenn.dev/kairos_systems/articles/bf4b2c01a212ad",
+      "site": "Zenn(AI)",
+      "published": "2026-08-06T15:11:00Z",
+      "description": "TradingView MCPの導入手順は前回の記事に書きました。この記事はその続きで、実運用で見つかった問題の話です。\nTradingView MCP は、エラーを出さずに間違った値を返す\nTradingView の MCP が話題になっています。78個のツール、Pine Script の自動ループ、チャートデータの直接読み取り。全部本当に動きます。\nただ、3ヶ月ほど日々の分析に組み込んで運用し...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "実質、私は何もしていない — Claude CodeにGTDを組み込んだら、優秀なのはAIエージェントではなく「仕組み」だった",
+      "url": "https://zenn.dev/tottoko_hamu/articles/2026-08-05-215400",
+      "site": "Zenn(AI)",
+      "published": "2026-08-06T15:05:55Z",
+      "description": "この記事の実施記録（2026年8月3日）: GTDのトリアージ専任として作った「secretary」というエージェントが、3ヶ月以上ほぼ動かないまま眠っていた。それが1日のセッション内で3回連続で起動し、Inbox仕分け3件、タスクリスト（NEXT）の37件→26件、さらに26件→19件への整理をこなした。処理時間は291秒・155秒・443秒（実測値。Agent実行ログのduration_msで...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "Claude Codeに覚えさせた記憶26ファイルを棚卸ししたら、重要ルールほど「壁の外」に落ちていた",
+      "url": "https://zenn.dev/seeda_yuto/articles/claude-code-auto-memory-5month-audit",
+      "site": "Zenn(AI)",
+      "published": "2026-08-06T14:49:13Z",
+      "description": "Claude Codeの自動メモリ（auto memory）を5ヶ月間、事業運営プロジェクトで放置気味に運用した結果を全部棚卸しした。結論から言うと、メモリは想像より腐っていなかったが、インデックスの200行制限を超えた瞬間から「一番重要な運用ルール」が静かに読み込まれなくなっていた。\n\n TL;DR\n\n\n\n検証項目\n結果\n\n\n\n\n5ヶ月でメモリはどれだけ育つか\n26ファイル・819行（インデック...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "テストは仕様の固定：AIに書かせる時代の「書き換えていいテスト」の線引き",
+      "url": "https://zenn.dev/yamakraft/articles/tests-as-specification-ai",
+      "site": "Zenn(AI)",
+      "published": "2026-08-06T14:43:30Z",
+      "description": "この記事の要点を3行で。\n\n初日に決めたのは「テストを触るな」ではなく、「どういう時なら触っていいか」の分類だった\n\nテストが109件すべて通っている状態で、実機では敵の攻撃が当たらないということが起きた\n最終的に「テストはゲームの仕様そのもの。ただし仕様が変わったときだけ書き換える」に落ち着いた。そのために、どのテストが何を守っているのかをコードにラベルで書いている\n\n\n前回書いたUE5のC++...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "Meta Muse Code登場｜「学習提供で1/10」という価格設計を読む",
+      "url": "https://zenn.dev/kairosai/articles/8156d769e80f83",
+      "site": "Zenn(AI)",
+      "published": "2026-08-06T14:21:17Z",
+      "description": "何が発表されたか\n2026年8月5日、Meta が Muse Code（ベータ）を公開した。ターミナル上で動作するコーディングエージェントで、公式ブログには「変更を計画し、コードを書き、結果を検証する（plans changes, writes code, and validates the results）」と記載がある。対応OSは macOS と Linux。\n公式: https://rese...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "Discordに\"相棒\"を住まわせる ─ 常駐AI xangi でAIキャラを作る手順書",
+      "url": "https://zenn.dev/sugupoko/articles/a5b9d7837158aa",
+      "site": "Zenn(AI)",
+      "published": "2026-08-06T14:05:33Z",
+      "description": "この記事は「手順書」です\nDiscordに話しかけると、裏で AI が自分のPCを実際に動かして返してくる。\nそういう相棒を作る手順を、まるごと1本にまとめました。\n!\nこの記事、読むだけじゃなくて \"貼る\" こともできます。\n一度 xangi が動き始めたら、この記事そのものをDiscordに貼り付けてください。\nあとはキャラとやり取りしているだけで、残りのセットアップが進みます。\n（理由は最後...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "CloudflareからCloudflare OSが出たのでちょっとだけ触ってみる",
+      "url": "https://zenn.dev/ebijun1007/articles/1832f25fda0ec7",
+      "site": "Zenn(AI)",
+      "published": "2026-08-06T13:59:36Z",
+      "description": "Product Huntを眺めていたらCloudflare何か新しいものが出ていたので紹介\nhttps://www.producthunt.com/products/cloudflare\n\n Cloudflare OSとは\n\nGive every person an agent and workspace built around how your company works, what it k...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "「AIで生産性10倍」の裏で、英語圏は「2倍」の話を始めている",
+      "url": "https://zenn.dev/shuhari_ai/articles/c8b2389135d857",
+      "site": "Zenn(AI)",
+      "published": "2026-08-06T13:33:59Z",
+      "description": "!\n情報確認日: 2026-08-06。 本記事の調査は検索ベースで行い、各情報の確度（複数ソース一致か、単一情報源か）を本文と出典に明記しています。AI関連の数値は鮮度が命です。お読みの時点で状況が変わっている可能性があります。\n\n日本語のタイムラインでは、いまも「AIで開発生産性10倍」という言葉をよく見かけます。\n一方、2026年7月31日、英語圏最大級の技術コミュニティHacker New...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "Skill に全部やらせるのは無理がある：Claude Code のフックで繰り返し指示を消す",
+      "url": "https://zenn.dev/yktsnet/articles/202608-claude-code-hooks",
+      "site": "Zenn(AI)",
+      "published": "2026-08-06T13:17:30Z",
+      "description": "CLAUDE.md にも Skill にも書いたのに、また同じ注意をしている\nClaude Code に、同じ注意を何度もしていました。パッケージを許していない方法で入れようとする。~/.claude の設定ファイルを直接書き換える。メモリを、こちらが決めた場所とは違うところに置く。\nどれも CLAUDE.md に書いてあります。Skill も作りました。それでも起きます。\n毎回同じ注意をしている...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "Claudeと同じ図をGUIで編集できるようにしたら、「AIに図を任せる」の意味が変わった",
+      "url": "https://zenn.dev/kenimo49/articles/claude-excalidraw-shared-canvas",
+      "site": "Zenn(AI)",
+      "published": "2026-08-06T13:07:20Z",
+      "description": "AIに相関図を頼んだことはありますか。それっぽい画像は返ってきます。でも「この箱だけ右に」「この矢印だけ引き直したい」と思った瞬間、手が止まります。返ってきたのは画像です。続きを一緒にいじれる図ではありません。\n私はこれを何度も繰り返しました。そのたびにスライドで描き直し、AIは図が苦手なんだと思い込んでいました。\n違いました。苦手なのは出力ではありません。図を「一度で受け取る納品物」だと扱ってい...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "万能エージェント1体をやめる — GitHub Copilot のカスタムエージェントと自作 MCP サーバーで「分業」を設計する",
+      "url": "https://zenn.dev/kurimochi29/articles/github-copilot-agent-division-design",
+      "site": "Zenn(AI)",
+      "published": "2026-08-06T12:28:22Z",
+      "description": "この記事でやること\nナレッジベース（ヘルプセンター）の記事更新を、GitHub Copilot のカスタムエージェントに分業させた構成の設計と実装をまとめます。\n\n統括役1体＋専門エージェント3体という構成\n外部の SaaS は、自作した MCP サーバー経由で操作する\n動かしてわかったことと、未解決のまま残っている課題\n\n想定読者は、カスタムエージェントを「便利なペルソナ1体」以上に使いたい人、...",
       "category": "AI・技術",
       "rss_category": "",
       "image_url": ""
@@ -64,16 +254,6 @@
       "image_url": ""
     },
     {
-      "title": "AIでテスト観点を100個出せる時代。65個「削れるか」がテスト設計力だ",
-      "url": "https://zenn.dev/bitkey_dev/articles/claude-viewpoint-subtraction",
-      "site": "Zenn(AI)",
-      "published": "2026-08-06T02:30:05Z",
-      "description": "テスト観点は「出す」より「削る」ほうが難しい。\n前回の記事で「テスト観点の書き方」を紹介しました。画面要素を列挙する、仕様書から名詞と動詞を抜き出す、AIに壁打ちする。これで「出す」はできるようになります。\nでも、出した観点を全部テストできますか？\n!\nこの記事を読んでほしい人\n\nテスト観点の出し方は覚えた。次に「絞り方」を知りたい人\nAIでテスト観点を出してみたけど、量が多すぎて困った人\n「何を...",
-      "category": "AI・技術",
-      "rss_category": "",
-      "image_url": ""
-    },
-    {
       "title": "写真が眠らない動画になる。AIで作る「見せる素材」の作り方",
       "url": "https://zenn.dev/savielyamiani/articles/72bf9fd6a9736d",
       "site": "Zenn(AI)",
@@ -89,26 +269,6 @@
       "site": "Zenn(AI)",
       "published": "2026-08-06T02:00:00Z",
       "description": "以前の記事「Codex CLI経由でプログラム的に画像を生成する」ではgpt-image-2を扱いましたが、画像生成AIの選択肢はOpenAIだけではありません。Google DeepMindの「Nano Banana」シリーズ（Gemini native image generation）は、2026年2月にNano Banana 2、それに先立ちNano Banana Proが公開され、4K出...",
-      "category": "AI・技術",
-      "rss_category": "",
-      "image_url": ""
-    },
-    {
-      "title": "PerplexityライクなQ&Aエージェントを個人開発アプリに組み込んだ——スケール時に実行モデルをどう変えるか",
-      "url": "https://zenn.dev/yook/articles/qa-agent-scaling-execution-model",
-      "site": "Zenn(AI)",
-      "published": "2026-08-06T01:58:40Z",
-      "description": "はじめに\n外部のウェブ検索と、アプリケーション内で事前にAI分析した独自の内部記事を組み合わせ、出典付きの回答を返す——そんな「PerplexityライクなQ&amp;Aエージェント」を、個人開発している海外テックニュース収集・分析アプリ『Vector』に組み込みました。\n前編では、このエージェントを開発する中で工夫した、工程ごとの設計について書きました。\nhttps://zenn.dev/yoo...",
-      "category": "AI・技術",
-      "rss_category": "",
-      "image_url": ""
-    },
-    {
-      "title": "PerplexityライクなQ&Aエージェントを個人開発アプリに組み込んだ——6つの工程に分けた設計の工夫",
-      "url": "https://zenn.dev/yook/articles/qa-agent-six-stage-design",
-      "site": "Zenn(AI)",
-      "published": "2026-08-06T01:58:03Z",
-      "description": "はじめに\n外部のウェブ検索と、アプリケーション内で事前にAI分析した独自の内部記事を組み合わせ、出典付きの回答を返す——そんな「PerplexityライクなQ&amp;Aエージェント」を、個人開発している海外テックニュース収集・分析アプリ『Vector』に組み込みました。\n先端技術を活用した優れたプロダクトの体験に、個人開発でどこまで近づけるかという試みや、設計の工夫、そして実装を通じて見えてきた...",
       "category": "AI・技術",
       "rss_category": "",
       "image_url": ""
@@ -134,16 +294,6 @@
       "image_url": ""
     },
     {
-      "title": "いよいよ学習開始。pix2pixに「ペア画像」を食わせる｜医療AI・実践編 ⑥🌆",
-      "url": "https://zenn.dev/voxelworks_jp/articles/2eea4bc8132e0b",
-      "site": "Zenn(AI)",
-      "published": "2026-08-06T01:30:20Z",
-      "description": "この回でやること\n前回（第5回）は、誰かが学習させ終えた「借り物のモデル」を借りてきて、昼の写真を夜に変換しました。動きはしたものの、出来はちょっと物足りなかったですよね。\nhttps://zenn.dev/voxelworks_jp/articles/6d0679c7b65397\n今回からは、いよいよ 借り物ではなく、自分でモデルを学習させる 側に入ります。その第一歩が「学習用のデータを用意する...",
-      "category": "AI・技術",
-      "rss_category": "",
-      "image_url": ""
-    },
-    {
       "title": "Claude Codeのようなエージェントをゼロから作る",
       "url": "https://zenn.dev/sun_asterisk/articles/f5514175aa0a0a",
       "site": "Zenn(AI)",
@@ -159,16 +309,6 @@
       "site": "Zenn(AI)",
       "published": "2026-08-06T01:00:08Z",
       "description": "この記事は何か\n海外のTech Talkを日本語の縦型ショートに切り出して TikTok に投稿しています。1本の元動画から9〜10本のクリップを作り、投稿する前に「どれが伸びるか」を予測してファイルに保存しています。あとで実測と突き合わせるためです。\n今回は、いつもと構成が違います。同じ日に2本の動画を作り、選定の考え方だけを変えて同時に投入しました。\n!\n予測を先に公開して後で答え合わせする実...",
-      "category": "AI・技術",
-      "rss_category": "",
-      "image_url": ""
-    },
-    {
-      "title": "AI導入で変わったのは実装速度ではなく、開発プロセスだった",
-      "url": "https://zenn.dev/mediba/articles/babe1e148658a3",
-      "site": "Zenn(AI)",
-      "published": "2026-08-06T01:00:05Z",
-      "description": "はじめに\n最近は、AIエージェントを開発に取り入れる事例をよく見かけるようになりました。\n私たちのチームでも、比較的規模の大きいシステム刷新プロジェクトでAIエージェントを本格的に導入し、約2か月実際の開発で活用しています。\n導入前に期待していたのは、\n「AIを使えば大量のコードも短期間で移行できるのではないか」\nということでした。\n実際にやってみると、コード生成のスピードは期待以上でした。一方で...",
       "category": "AI・技術",
       "rss_category": "",
       "image_url": ""

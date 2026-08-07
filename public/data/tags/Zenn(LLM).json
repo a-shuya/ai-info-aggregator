@@ -1,8 +1,58 @@
 {
   "site": "Zenn(LLM)",
-  "last_updated": "2026-08-06T14:40:05.834013",
-  "total_articles": 5138,
+  "last_updated": "2026-08-07T00:19:40.120810",
+  "total_articles": 5145,
   "articles": [
+    {
+      "title": "（LLM Wiki）Karpathy の原典に忠実になってみた",
+      "url": "https://zenn.dev/okamo02427/articles/9eac50d9966ec2",
+      "site": "Zenn(LLM)",
+      "published": "2026-08-06T15:58:30Z",
+      "description": "Karpathy が提唱する LLM Wiki はあくまで概念までしか提示されていないから、「実践したい場合はあなたの環境に合わせて1から構築してね」ということになっている。\nこういうとき、完璧主義の人間としてはオリジナルの思想に忠実でない構築方法（有志によって作成されたテンプレートや、AIが考えたそれらしきルール定義）を許すことができない。\n今回は運よく Claude Code の $1,000...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "LAN ケーブル 1 本で動かすマルチホスト推論 ― vLLM クロスノード推論サービスの最適化",
+      "url": "https://zenn.dev/faliye/articles/ca6ee0e0d140c7",
+      "site": "Zenn(LLM)",
+      "published": "2026-08-06T15:04:24Z",
+      "description": "vLLM のマルチ並列のおかげで、急に「余裕がある」という感覚になりました。複数タスクをどう直列に流すかを設計する必要がなくなり、vLLM に投げ込めばいい。さすがに超長文リクエストを 4 本以上ぶん回すのは無理ですが、リクエスト間隔を調整すれば複数タスクを均等に流し込めます。そもそもデータの収集・統合・トリミング自体に時間がかかるので、クライアント側から満杯まで供給できていないというのが実情です...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "AIが推論した外部キーを、製造業のコールセンターで使えるか — 次にやること",
+      "url": "https://zenn.dev/mskbhd/articles/coa-connect-mfg-callcenter-plan",
+      "site": "Zenn(LLM)",
+      "published": "2026-08-06T14:45:50Z",
+      "description": "前回、AWS の OSS Context Ontology Accelerator（COA）を実際にデプロイして、意地悪なデータを食わせてみた記事を書きました。\nざっくり言うと、こういう結果でした。\n\nGlue Data Catalog には外部キーが無いので AI が推論する。同名だが無関係なカラム（物流の container_id と Docker の container_id）を混ぜたら、3...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "AIエージェントに「エンジニアの心構え」を大量に教え込んだら、仕事の質はどう変わったか",
+      "url": "https://zenn.dev/tomu_coelia/articles/ai-agent-engineer-mindset",
+      "site": "Zenn(LLM)",
+      "published": "2026-08-06T06:10:54Z",
+      "description": "AIエージェントのシステムプロンプトには、ふつう「何をするか」を書きます。私たちはそこに「どういうエンジニアであるべきか」を大量に書きました。\nこの記事は、20代向けコミュニティ「Coelia」の運営基盤（Webサービス・HP・コンテンツ生産）を Claude Code / Codex などのAIエージェントでほぼ自律運用している開発現場で、システムプロンプトに\"心構え\"を注入し続けた約1か月の実...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "AWSのContext Ontology Acceleratorを実際にデプロイして、意地悪なデータを食わせてみた",
+      "url": "https://zenn.dev/mskbhd/articles/lab-231-aws-coa-deploy-fk-inference",
+      "site": "Zenn(LLM)",
+      "published": "2026-08-06T05:44:02Z",
+      "description": "AWS が公開している OSS Context Ontology Accelerator（以下 COA）を、自分の AWS アカウントにデプロイして触ってみました。\n前回は HermiT・Ontop・MCP をローカルで動かすところまでやったので、今回はその続きで「AWS が無いと試せない部分」を見にいった形です。\nデプロイ手順そのものは AWS Japan の公式記事が丁寧に解説してくれているの...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
     {
       "title": "AIハーネスは「強くする」より「アシュビー的に多様にする」べきでは",
       "url": "https://zenn.dev/mskbhd/articles/lab-234-ai-note",
@@ -68,7 +118,7 @@
       "url": "https://zenn.dev/okamo02427/articles/2be71cf2cb6fef",
       "site": "Zenn(LLM)",
       "published": "2026-08-06T03:00:06Z",
-      "description": "Claude の請求金額に怯えながら過ごす日々を卒業したい。\n今回は複数モデル間の「コスパ比較」をしてみたので、\n見かけ上のAPI単価だけでは見えてこない、実効コストの話を記録する。\n\n はじめに\nClaude Sonnet 5 は GPT-5.6 Sol よりも高いのか。\n性能比からして、GPT-5.6 Sol の方が一般的に請求金額も高くなると考えられる。そもそもTierが異なるため、比較対象...",
+      "description": "Claude の請求金額に怯えながら過ごす日々を卒業したい。\n今回は複数モデル間の「コスパ比較」をしてみたので、\n見かけ上のAPI単価だけでは見えてこない、実効コストの話を記録する。\n（もしサブスクで使っているなら、レートリミットに到達するまでの速さに関わる問題と考えてほしい）\n\n はじめに\nClaude Sonnet 5 は GPT-5.6 Sol よりも高いのか。\n性能比からして、GPT-5....",
       "category": "AI・技術",
       "rss_category": "",
       "image_url": ""
@@ -79,6 +129,26 @@
       "site": "Zenn(LLM)",
       "published": "2026-08-06T02:00:05Z",
       "description": "Open Knowledge Format（OKF）— LLM Wikiパターンの標準化\nナウキャストで長期LLMインターンをしている北川です。LLM系のタスクのキャッチアップをする中で、最近「OKF」という技術を耳にする機会が増えました。\nOKFはまだ登場したばかりの仕様で、その概念を理解するにはRAGやLLM wikiといった周辺技術への理解が欠かせません。しかし、OKF関連の記事の多くはOK...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "PerplexityライクなQ&Aエージェントを個人開発アプリに組み込んだ——スケール時に実行モデルをどう変えるか",
+      "url": "https://zenn.dev/yook/articles/qa-agent-scaling-execution-model",
+      "site": "Zenn(LLM)",
+      "published": "2026-08-06T01:58:40Z",
+      "description": "はじめに\n外部のウェブ検索と、アプリケーション内で事前にAI分析した独自の内部記事を組み合わせ、出典付きの回答を返す——そんな「PerplexityライクなQ&amp;Aエージェント」を、個人開発している海外テックニュース収集・分析アプリ『Vector』に組み込みました。\n前編では、このエージェントを開発する中で工夫した、工程ごとの設計について書きました。\nhttps://zenn.dev/yoo...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "PerplexityライクなQ&Aエージェントを個人開発アプリに組み込んだ——6つの工程に分けた設計の工夫",
+      "url": "https://zenn.dev/yook/articles/qa-agent-six-stage-design",
+      "site": "Zenn(LLM)",
+      "published": "2026-08-06T01:58:03Z",
+      "description": "はじめに\n外部のウェブ検索と、アプリケーション内で事前にAI分析した独自の内部記事を組み合わせ、出典付きの回答を返す——そんな「PerplexityライクなQ&amp;Aエージェント」を、個人開発している海外テックニュース収集・分析アプリ『Vector』に組み込みました。\n先端技術を活用した優れたプロダクトの体験に、個人開発でどこまで近づけるかという試みや、設計の工夫、そして実装を通じて見えてきた...",
       "category": "AI・技術",
       "rss_category": "",
       "image_url": ""
