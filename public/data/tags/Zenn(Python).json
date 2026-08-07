@@ -1,14 +1,74 @@
 {
   "site": "Zenn(Python)",
-  "last_updated": "2026-08-07T03:22:17.963128",
-  "total_articles": 5538,
+  "last_updated": "2026-08-07T05:15:22.302739",
+  "total_articles": 5544,
   "articles": [
+    {
+      "title": "特徴選択のデータリークを実測: 交差検証の外で選んだだけで、純粋な乱数から精度100%が出た",
+      "url": "https://zenn.dev/shakeailab/articles/feature-selection-leakage",
+      "site": "Zenn(Python)",
+      "published": "2026-08-07T05:07:18Z",
+      "description": "「交差検証をしているのに、本番では全く当たらないモデル」の話は、機械学習をやっていれば一度は聞いたことがあると思う。原因としてよく挙げられるのがデータリーク——テストデータの情報が、何らかの形で訓練プロセスに漏れてしまうことだ。中でも有名なのが「特徴選択を交差検証の外でやってしまう」パターンで、マイクロアレイの遺伝子発現解析の時代から警告され続けている古典的な落とし穴だ(Ambroise &amp...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "TDD（テスト駆動開発）を初めて学ぶ人のための完全ガイド",
+      "url": "https://zenn.dev/fukukei23/articles/tdd-for-beginners",
+      "site": "Zenn(Python)",
+      "published": "2026-08-07T03:24:37Z",
+      "description": "はじめに\n「テスト駆動開発（TDD）」という言葉を聞いたことがあるけど、実際のやり方がよくわからない。そんな方のために、基本から丁寧に説明します。\n\n TDDとは？\nTDDは**「テストを先に書き、そのテストが通るように実装する」**開発手法です。\n\n 3ステップサイクル\n赤 → 緑 → リファクタリング\n\n\n\nステップ\nやること\n状態\n\n\n\n\n赤\nまずテストを書く（まだ実装がないので失敗する）\n...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "【技術解説】データサイエンスと投資戦略を駆使したボリンジャーバンドのスクイズ検知！Python実装ガイド",
+      "url": "https://zenn.dev/sugarfree/articles/e38387e383bce382bfe382b5e382a4e382a8e383b3e38",
+      "site": "Zenn(Python)",
+      "published": "2026-08-07T02:00:28Z",
+      "description": "ボリンジャーバンドを用いたスクイズ検知のPython実装ガイド\n本記事では、ボリンジャーバンドを活用して「スクイズ」を検知する手法をPythonで実装する方法について解説します。ボリンジャーバンドは、価格の変動幅を視覚的に捉えるためのテクニカル指標であり、スクイズは相場が収束した後に大きな動きを示す現象です。この手法をマスターすることで、投資判断の質を向上させることが可能です。\n\n ボリンジャーバ...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "long-context時代にRAGはどう変わるか：判断フレーム",
+      "url": "https://zenn.dev/libercraft/articles/20260807-long-context-vs-rag-decision",
+      "site": "Zenn(Python)",
+      "published": "2026-08-07T02:00:00Z",
+      "description": "「Gemini 3.1もClaudeも1M〜2Mトークンのコンテキストウィンドウがある。もうRAGのチャンキングやベクトルDBは要らないのでは」——長いコンテキストウィンドウが当たり前になった2026年、こう考えるチームは少なくありません。\nしかし、この「知識ベースをまるごとプロンプトに入れる」という発想には、コスト・速度・精度の3つの面で見落とされがちな代償があります。本記事では、long-co...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "Lambda関数にcurl/openssl/ncが無い問題を、Python標準ライブラリだけで乗り切った話",
+      "url": "https://zenn.dev/boostertech/articles/4ac10f3f07a74a",
+      "site": "Zenn(Python)",
+      "published": "2026-08-07T01:45:29Z",
+      "description": "はじめに\n株式会社ブースターテクノロジーの土屋です。無料のWebサイト脆弱性診断ツール「セキュリティブースター」を、AWS Lambda上のPythonで作っています。\nURLを1つ受け取って、SSL証明書・TLSバージョン・WAFの有無・セキュリティヘッダー・SSHの設定など、OWASP Top 10ベースで20項目ほどを自動チェックする仕組みです。\nこの手のチェックをローカルのシェルスクリプト...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
     {
       "title": "Pythonで実用Webスクレイパーを作る — 1000冊分のデータを自動でCSVにする",
       "url": "https://zenn.dev/yuseidev/articles/6c6b279ba8b800",
       "site": "Zenn(Python)",
       "published": "2026-08-07T00:54:43Z",
       "description": "この記事でできるようになること\n「Webサイトに載っているデータを、手作業でコピペして表にまとめる」——これを 数十秒で自動化 します。\nこの記事では、Pythonで 全50ページ・1000冊分の書籍データ（タイトル・価格・在庫・評価）を自動で取得し、CSVに保存する スクレイパーを、コード全文つきで作ります。プログラミング初心者でも、コピペで動かせるところまで持っていきます。\n対象サイトは bo...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "Kaggle ROGIIコンペ振り返りー193rd Place Solution",
+      "url": "https://zenn.dev/fusic/articles/240bd206835c53",
+      "site": "Zenn(Python)",
+      "published": "2026-08-06T22:00:05Z",
+      "description": "はじめに\nFusicのレオナです。\nKaggleのROGII - Wellbore Geology Prediction[1]で、水平井戸のガンマ線（GR）をtypewellへ対応付けるCNN-SDFモデルを実装しました。最終結果は193位、Privateスコア8.143で銀メダルでした。[2]\nこのコンペでは、当初は行単位の特徴量と後処理を中心に試していました。しかし最終日に方針を変え、井戸1本...",
       "category": "開発",
       "rss_category": "",
       "image_url": ""
