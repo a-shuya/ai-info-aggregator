@@ -1,7 +1,7 @@
 {
   "site": "Zenn(Python)",
-  "last_updated": "2026-08-07T15:27:43.345216",
-  "total_articles": 5561,
+  "last_updated": "2026-08-07T16:26:45.241311",
+  "total_articles": 5558,
   "articles": [
     {
       "title": "同じ名前だから、同じものだと思った（10）",
@@ -144,31 +144,21 @@
       "image_url": ""
     },
     {
+      "title": "OSSの報奨金を122件スキャンしたら、生き残ったのは8件だった",
+      "url": "https://zenn.dev/kuroji/articles/oss-bounty-122-to-8",
+      "site": "Zenn(Python)",
+      "published": "2026-08-07T06:09:28Z",
+      "description": "AIエージェントに「OSSの報奨金を拾って稼いでこい」とやらせようとして、\nまず手元でスキャナを書いた。LLMに探させる前に、無料のGitHub検索APIで拾えるものは拾っておきたかったからだ。\n結果は身も蓋もなかった。122件ヒットして、まともに検討に値するのは8件。\nこの記事はその内訳と、スキャナのコード（全文）と、そこから分かったことを置いておく。\n「報奨金で稼ぐ」を検討している人が、私と同...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
       "title": "TDD（テスト駆動開発）を初めて学ぶ人のための完全ガイド",
       "url": "https://zenn.dev/fukukei23/articles/tdd-for-beginners",
       "site": "Zenn(Python)",
       "published": "2026-08-07T03:24:37Z",
       "description": "はじめに\n「テスト駆動開発（TDD）」という言葉を聞いたことがあるけど、実際のやり方がよくわからない。そんな方のために、基本から丁寧に説明します。\n\n TDDとは？\nTDDは**「テストを先に書き、そのテストが通るように実装する」**開発手法です。\n\n 3ステップサイクル\n赤 → 緑 → リファクタリング\n\n\n\nステップ\nやること\n状態\n\n\n\n\n赤\nまずテストを書く（まだ実装がないので失敗する）\n...",
-      "category": "開発",
-      "rss_category": "",
-      "image_url": ""
-    },
-    {
-      "title": "自動処理の証拠をJSONLへ追記する最小実装 - テスト設計",
-      "url": "https://zenn.dev/kmn/articles/ebbcb65d0a8ae9",
-      "site": "Zenn(Python)",
-      "published": "2026-08-07T02:35:09Z",
-      "description": "自動処理の証拠をJSONLへ追記する最小実装 - テスト設計\n自動処理は、スケジュール登録だけでは安定しません。結果を上書きしたり端末出力だけに残したりすると、並行自動処理の証拠が消えます。\nこの記事では「テスト設計」の観点から、入力、処理、成果物、公開結果を分離する方法を整理します。仕組み全体の理由まで扱います。\n\n 基本方針\n1実行につき検証済みJSONを1行追記し、過去行は書き換えません。\n...",
-      "category": "開発",
-      "rss_category": "",
-      "image_url": ""
-    },
-    {
-      "title": "「そろそろ終わったかな」と見に行かない——Codexの完了・停止・入力待ちをTeamsで受け取る",
-      "url": "https://zenn.dev/tohru_ohnishi/articles/d5c44ed965e283",
-      "site": "Zenn(Python)",
-      "published": "2026-08-07T02:27:59Z",
-      "description": "1. Codexの画面を見に戻る回数を減らしたい\nCodexへ実装、テスト、レビューをまとめて依頼すると、完了までしばらく待つことがあります。\n私の環境では、Windows上のVS CodeからSSH接続し、その先のDev Container内でCodexを使っています。複数のプロジェクトを扱うようになると、作業が終わったかを確かめるためだけにVS Codeへ戻る小さな中断が気になるようになりまし...",
       "category": "開発",
       "rss_category": "",
       "image_url": ""
@@ -254,16 +244,6 @@
       "image_url": ""
     },
     {
-      "title": "MiniMax H3をWaveSpeed APIで呼ぶ：3入力とPollingの実装",
-      "url": "https://zenn.dev/kiritani_r/articles/15d02fee8894ff",
-      "site": "Zenn(Python)",
-      "published": "2026-08-06T07:15:13Z",
-      "description": "TL;DR\n\nText-to-Video、Image-to-Video、Reference-to-Videoは、POSTでpredictionを作り、結果URLをpollingするところまで共通です。\nまずはText-to-VideoかImage-to-Videoを5秒・480pで回し、参照素材を使う必要があるときだけReference-to-Videoへ進めます。\n480pの5秒はText/Im...",
-      "category": "開発",
-      "rss_category": "",
-      "image_url": ""
-    },
-    {
       "title": "AIに任せて壊れないシステムを作る",
       "url": "https://zenn.dev/auto_quont/books/ai-autonomous-system",
       "site": "Zenn(Python)",
@@ -289,16 +269,6 @@
       "site": "Zenn(Python)",
       "published": "2026-08-06T04:57:44Z",
       "description": "TL;DR\n\nSEC EDGARから13F報告書418件を取得し、著名投資家8社の保有を機械的に追随する戦略を13年分検証した\n結果は 年率+13.7%（Sharpe 0.76）、同期間のS&amp;P500 +17.6%（Sharpe 0.94） に完敗\n検証中、自作バックテストの「無取引帯域」がスリーブ全体を無音で無効化していたバグを発見。最初は「改善した」ように見えていた\n発見の手がかりは成...",
-      "category": "開発",
-      "rss_category": "",
-      "image_url": ""
-    },
-    {
-      "title": "AIに仕様書ではなくテストだけ渡したら、隠しテストまで全部通った。なのにテストでは固定できなかった既定値は5回とも40にならなかった",
-      "url": "https://zenn.dev/numarn/articles/spec-prose-vs-tests-codegen-handson",
-      "site": "Zenn(Python)",
-      "published": "2026-08-06T04:37:20Z",
-      "description": "「仕様書を書くくらいなら、テストを書いて渡せばいい」という言い方があります。動く形で条件を渡すのだから、文章より確実だろう、という話です。今回はそれを Claude Code の claude -p(対話せずに1回だけ指示を投げて結果を受け取る使い方)で実際に試しました。\n結果、テストだけを渡しても、テストの答えを丸写しするような場当たりの実装にはなりませんでした。生成側に一度も見せていない「隠し...",
       "category": "開発",
       "rss_category": "",
       "image_url": ""
