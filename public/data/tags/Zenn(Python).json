@@ -1,6 +1,6 @@
 {
   "site": "Zenn(Python)",
-  "last_updated": "2026-08-07T20:10:23.314691",
+  "last_updated": "2026-08-07T20:59:25.011665",
   "total_articles": 5558,
   "articles": [
     {
@@ -64,6 +64,16 @@
       "image_url": ""
     },
     {
+      "title": "MiniMax H3 (Hailuo 3.0) をColab A100で動かしたら、詰まったのはVRAMじゃなくディスクとRAMだった",
+      "url": "https://zenn.dev/ivyxon/articles/c1fcff301839f9",
+      "site": "Zenn(Python)",
+      "published": "2026-08-07T10:58:03Z",
+      "description": "X で見かけたバイラル投稿がきっかけだった。「MiniMax H3、Colab の L4 で15秒あたり €0.23」。じゃあ試すか、と軽い気持ちで手を出したら、実際にぶつかった壁は VRAM ではなくディスクと RAM だった、という記録です。\n普段は IVYXON というサイトで、SEC の開示データなどの一次情報を使った米国株の実測記事や自作ツールを公開しています。今回は毛色を変えて、実機で...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
       "title": "SerpAPIの料金を1リクエスト単価で比較する（2026年8月時点）",
       "url": "https://zenn.dev/tims/articles/43266a9b8f3161",
       "site": "Zenn(Python)",
@@ -79,16 +89,6 @@
       "site": "Zenn(Python)",
       "published": "2026-08-07T10:07:23Z",
       "description": "セキュリティ記事は一般論になりがちなので、実際に運用しているサイトの構成をもとに、Djangoで現実的に実装できる多層防御 を具体的なコードで示します。1枚の壁ではなく「破られても次で止める」重ね着が基本です。\n\n 前提: 攻撃は無差別に来ている\n公開したばかりの小さなサイトにも、/.env や /wp-login.php を狙う自動スキャンが毎日届きます。「有名でないから安全」は成り立ちません。...",
-      "category": "開発",
-      "rss_category": "",
-      "image_url": ""
-    },
-    {
-      "title": "同じCAD操作、違う表現 — CADエージェントでDSLとコード生成をどう使い分けるか",
-      "url": "https://zenn.dev/0xliclog/articles/f8873eadc547c0",
-      "site": "Zenn(Python)",
-      "published": "2026-08-07T10:00:05Z",
-      "description": "CADの内部APIをAIエージェントから操作する代表的な実装には、大きく2つあります。\n定義済みのCAD操作を、構造化された引数（多くはJSON形式）で呼び出す方式と、LLMがCAD APIを使うコードを生成・実行する方式です。\n本記事では、前者を「DSL方式」、後者を「コード生成方式」と呼びます。\nDSL方式は管理しやすい反面、未定義の操作には対応できず、ツールの追加・保守が必要です。\nコード生...",
       "category": "開発",
       "rss_category": "",
       "image_url": ""
@@ -124,16 +124,6 @@
       "image_url": ""
     },
     {
-      "title": "OSSの報奨金を122件スキャンしたら、生き残ったのは8件だった",
-      "url": "https://zenn.dev/kuroji/articles/oss-bounty-122-to-8",
-      "site": "Zenn(Python)",
-      "published": "2026-08-07T06:09:28Z",
-      "description": "AIエージェントに「OSSの報奨金を拾って稼いでこい」とやらせようとして、\nまず手元でスキャナを書いた。LLMに探させる前に、無料のGitHub検索APIで拾えるものは拾っておきたかったからだ。\n結果は身も蓋もなかった。122件ヒットして、まともに検討に値するのは8件。\nこの記事はその内訳と、スキャナのコード（全文）と、そこから分かったことを置いておく。\n「報奨金で稼ぐ」を検討している人が、私と同...",
-      "category": "開発",
-      "rss_category": "",
-      "image_url": ""
-    },
-    {
       "title": "TDD（テスト駆動開発）を初めて学ぶ人のための完全ガイド",
       "url": "https://zenn.dev/fukukei23/articles/tdd-for-beginners",
       "site": "Zenn(Python)",
@@ -159,6 +149,16 @@
       "site": "Zenn(Python)",
       "published": "2026-08-07T02:27:59Z",
       "description": "1. Codexの画面を見に戻る回数を減らしたい\nCodexへ実装、テスト、レビューをまとめて依頼すると、完了までしばらく待つことがあります。\n私の環境では、Windows上のVS CodeからSSH接続し、その先のDev Container内でCodexを使っています。複数のプロジェクトを扱うようになると、作業が終わったかを確かめるためだけにVS Codeへ戻る小さな中断が気になるようになりまし...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "long-context時代にRAGはどう変わるか：判断フレーム",
+      "url": "https://zenn.dev/libercraft/articles/20260807-long-context-vs-rag-decision",
+      "site": "Zenn(Python)",
+      "published": "2026-08-07T02:00:00Z",
+      "description": "「Gemini 3.1もClaudeも1M〜2Mトークンのコンテキストウィンドウがある。もうRAGのチャンキングやベクトルDBは要らないのでは」——長いコンテキストウィンドウが当たり前になった2026年、こう考えるチームは少なくありません。\nしかし、この「知識ベースをまるごとプロンプトに入れる」という発想には、コスト・速度・精度の3つの面で見落とされがちな代償があります。本記事では、long-co...",
       "category": "開発",
       "rss_category": "",
       "image_url": ""
