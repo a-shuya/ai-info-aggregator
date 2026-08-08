@@ -1,18 +1,8 @@
 {
   "site": "Zenn(Python)",
-  "last_updated": "2026-08-08T11:17:19.257116",
-  "total_articles": 5569,
+  "last_updated": "2026-08-08T11:49:05.419527",
+  "total_articles": 5568,
   "articles": [
-    {
-      "title": "動画編集ソフトを使わず、AIとコードだけで説明動画を作った話",
-      "url": "https://zenn.dev/atitakeya/articles/136adc01f22d75",
-      "site": "Zenn(Python)",
-      "published": "2026-08-08T05:58:41Z",
-      "description": "説明動画がひとつ、必要になりました。製品の使い方を2〜3分で見せる、よくあるやつです。\n困ったのは、私が動画編集ソフトを使えないことでした。デザイナーでもありません。外注すれば早いのですが、「矢印をもう少し下に」「この文字を1文字ぶん左に」といった細かい直しのたびに往復するのは、金額的にも時間的にもつらいところです。\nそこで、動画を「編集」するのをやめて、「コードで生成」することにしました。全カッ...",
-      "category": "開発",
-      "rss_category": "",
-      "image_url": ""
-    },
     {
       "title": "ユニバースを状態機械にしたら、次はバッチ中断カスケードが出てきた",
       "url": "https://zenn.dev/kabu_system_dev/articles/7c5157d326e103",
@@ -39,6 +29,16 @@
       "site": "Zenn(Python)",
       "published": "2026-08-08T04:00:05Z",
       "description": "Lambdaのログをあとから追跡しやすくするため、JSON形式の構造化ログとして出力するようにしました。\nJSON形式にすると、processing_id や user_id などがCloudWatch Logs Insightsで個別のフィールドとして認識されます。\nそのため、ログ全体を文字列検索するのではなく、処理IDを指定して関連するログだけを抽出できます。\n特に、複数のLambdaをまたぐ...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "プロバイダー単位のロックでブラウザ自動化の競合を防ぐ - テスト設計",
+      "url": "https://zenn.dev/kmn/articles/7bee0901e4f7db",
+      "site": "Zenn(Python)",
+      "published": "2026-08-08T02:35:02Z",
+      "description": "プロバイダー単位のロックでブラウザ自動化の競合を防ぐ - テスト設計\n自動処理は、スケジュール登録だけでは安定しません。同じログイン済みブラウザを2ジョブが操作すると、フォームやタブが競合します。\nこの記事では「テスト設計」の観点から、入力、処理、成果物、公開結果を分離する方法を整理します。仕組み全体の理由まで扱います。\n\n 基本方針\nブラウザ変更前にprovider単位のロックを取得し、fina...",
       "category": "開発",
       "rss_category": "",
       "image_url": ""
@@ -89,16 +89,6 @@
       "site": "Zenn(Python)",
       "published": "2026-08-07T14:48:00Z",
       "description": "外部サービスへ投稿するスクリプトを、いつもと違う仮想環境で動かしました。結果は「投稿は成立したのに、スクリプトは落ちた」。落ちた原因は通信でもサービス側でもなく、手元のライブラリの版が違ったことでした。\n同じことをやりそうな人向けに、何が起きたか・なぜ既存のガードで防げなかったか・どう塞いだかを残します。\n\n 起きたこと\nスクリプトの流れはこうなっています。\n\n投稿する\nレスポンスから投稿 ID ...",
-      "category": "開発",
-      "rss_category": "",
-      "image_url": ""
-    },
-    {
-      "title": "MCP連携で壊れる前に確認すべき10の運用チェックリスト",
-      "url": "https://zenn.dev/bambampurin/articles/2026-07-31-tech-daily",
-      "site": "Zenn(Python)",
-      "published": "2026-08-07T14:01:07Z",
-      "description": "!\n2026-07-31時点の主要トレンドは、LLM単体競争からエージェント実装・MCP接続・運用安全性へと関心が移っていることです。OpenAIは「Building abundant intelligence」を掲げる一方、AI Businessでは価格引き下げが報じられ、企業導入でコスト最適化が重要になっています。AWSのMCP対応、CrowdStrikeのエージェント保護、FujitsuやM...",
       "category": "開発",
       "rss_category": "",
       "image_url": ""
