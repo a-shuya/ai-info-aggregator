@@ -1,7 +1,7 @@
 {
   "site": "Zenn(LLM)",
-  "last_updated": "2026-08-08T09:23:31.546525",
-  "total_articles": 5178,
+  "last_updated": "2026-08-08T10:03:37.389685",
+  "total_articles": 5176,
   "articles": [
     {
       "title": "RAG開発で実際に役立った技術書5選",
@@ -34,41 +34,41 @@
       "image_url": ""
     },
     {
+      "title": "KVキャッシュ最適化：PagedAttention・FP8でメモリを削る",
+      "url": "https://zenn.dev/libercraft/articles/20260808-kv-cache-paged-attention-fp8",
+      "site": "Zenn(LLM)",
+      "published": "2026-08-08T02:00:00Z",
+      "description": "「同じGPUなのに、想定より少ない同時接続数しか捌けない」——ローカルLLMを本番運用していると、この壁に必ず突き当たります。原因の多くは、モデルの重みではなくKVキャッシュ（Key-Valueキャッシュ）のメモリ管理にあります。\n以前の記事「量子化フォーマットを比較する」では重みの量子化を扱いましたが、本記事ではKVキャッシュそのものの最適化——PagedAttentionとFP8量子化——を扱...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "OpenAI API 会話履歴（メモリ）",
+      "url": "https://zenn.dev/kawauso_danu/articles/c8add00d7f3f23",
+      "site": "Zenn(LLM)",
+      "published": "2026-08-08T00:47:52Z",
+      "description": "LLMにTool選択→Tool実行はローカル→会話履歴＋Tool実行結果をLLMに返して次のアクションを判断させる、というLLMエージェント的な仕組みを実装するために、会話履歴（メモリ）を管理する方法を調査して自分の環境で動作確認してみたので、そのメモです。\n情報源:\nhttps://developers.openai.com/api/docs/guides/conversation-state\n...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "自己書き換えという視点で比較する Lisp / Python / Sprout",
+      "url": "https://zenn.dev/cosmopanda/articles/sprout-lisp-python-self-rewrite",
+      "site": "Zenn(LLM)",
+      "published": "2026-08-08T00:45:10Z",
+      "description": "この記事について\n「AIが自分自身のコードを安全に書き換えられる言語」として設計している Sprout という処理系について、ホワイトペーパーを読むにはちょっと重いという人向けに、既存言語との違いを表でまとめました。\n軸にするのは「AIが自己書き換え（AIが自分自身を読み、編集し、再実行する）をどれだけ素直に書けるか」です。\n\n 比較表\n\n\n\n観点\nLisp\nPython\nSprout\n\n\n\n\nコ...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
       "title": "ROCm で対談動画の文字起こし・切り抜き自動生成〜CUDA環境からの以降で躓いたところ〜",
       "url": "https://zenn.dev/85store/articles/0e64ef2de347eb",
       "site": "Zenn(LLM)",
       "published": "2026-08-08T00:09:30Z",
       "description": "こんにちは。エンジニアをしながら古着屋を運営しているはやまると申します。\nhttps://85-store.com/\n対談動画から文字起こしと切り抜きを作るローカルアプリを個人開発しています。\nもともと NVIDIA の RTX PRO 6000 で動かしていたのですが、開発機を Radeon RX 7900 XTX(ROCm 7.2) に載せ替えたところ、動くと思っていたものが軒並み動かなくなり...",
-      "category": "AI・技術",
-      "rss_category": "",
-      "image_url": ""
-    },
-    {
-      "title": "AIは魔物か、神の書か",
-      "url": "https://zenn.dev/okamyuji/articles/laplace-erdos-ai-determinism",
-      "site": "Zenn(LLM)",
-      "published": "2026-08-07T22:54:34Z",
-      "description": "はじめに\nAIやLLMを開発に組み込むと、ほぼ必ず「出力が毎回変わるのをなんとかしたい」という話になります。temperatureを0にする、seedを固定する、promptを凍結する。それでも設計レビューに出てくる案は落ち着かず、どこかで「AIに設計させるのは無理があるのではないか」という気分になります。\nこの記事では、その気分の正体を、ラプラスの知性（いわゆるラプラスの魔物）とエルデシュの「神...",
-      "category": "AI・技術",
-      "rss_category": "",
-      "image_url": ""
-    },
-    {
-      "title": "「これだけの作業にそんな気合いいらないのに」— サブエージェントのeffort継承にハマった話",
-      "url": "https://zenn.dev/playpark/articles/claude-code-effort-settings-subagent",
-      "site": "Zenn(LLM)",
-      "published": "2026-08-07T22:54:21Z",
-      "description": "深夜、ただのtypo修正がOpusのxhighで走っていた\nレビュー待ちのPRがなかなか終わらない。ログを覗いたら、ただのtypo修正のために投げたはずのサブエージェントが、涼しい顔でOpusのxhighを使っていた。\n\n中身は数行のJSON整形や軽い文字列置換だけ\nなのに実行時間もコストも、重い判断タスクと同じ水準\nしかも自分は「effortなんて指定してない」つもりだった\n\n原因は単純だった。...",
-      "category": "AI・技術",
-      "rss_category": "",
-      "image_url": ""
-    },
-    {
-      "title": "AI 国家運営 — Claude Code でエージェント組織を設計し、自走させる",
-      "url": "https://zenn.dev/berrylove/books/ai-agent-nation",
-      "site": "Zenn(LLM)",
-      "published": "2026-08-07T21:06:26Z",
-      "description": "Claude Code を「便利な相棒」から「勝手に回る組織」へ引き上げるための実践書です。\n\n権限モデルと専権事項を決める憲法の書き方、統括リポジトリと事業リポジトリの階層化、\nエージェント編成、hooks と permissions による機械的な強制、承認をボトルネックにしない\n安全弁の置き方、定時に無人起動させる自律化の設計までを、実際に運用した記録から起こしました。\n\n誤ブロックする安全...",
       "category": "AI・技術",
       "rss_category": "",
       "image_url": ""
@@ -154,16 +154,6 @@
       "image_url": ""
     },
     {
-      "title": "同じCAD操作、違う表現 — CADエージェントでDSLとコード生成をどう使い分けるか",
-      "url": "https://zenn.dev/0xliclog/articles/f8873eadc547c0",
-      "site": "Zenn(LLM)",
-      "published": "2026-08-07T10:00:05Z",
-      "description": "CADの内部APIをAIエージェントから操作する代表的な実装には、大きく2つあります。\n定義済みのCAD操作を、構造化された引数（多くはJSON形式）で呼び出す方式と、LLMがCAD APIを使うコードを生成・実行する方式です。\n本記事では、前者を「DSL方式」、後者を「コード生成方式」と呼びます。\nDSL方式は管理しやすい反面、未定義の操作には対応できず、ツールの追加・保守が必要です。\nコード生...",
-      "category": "AI・技術",
-      "rss_category": "",
-      "image_url": ""
-    },
-    {
       "title": "AIエージェントに管制塔を建てる、LoopX",
       "url": "https://zenn.dev/acntechjp/articles/1fb4326c6b62ad",
       "site": "Zenn(LLM)",
@@ -189,16 +179,6 @@
       "site": "Zenn(LLM)",
       "published": "2026-08-07T07:50:26Z",
       "description": "「単発の質問には強い。でも、会話が続くと迷子になる。」\n今回紹介する LLMs Get Lost In Multi-Turn Conversation は、そんなLLMの意外な弱点を扱った論文です。\nマルチターン会話で、LLMの性能は平均39%低くなる。\n同じ情報量でも、渡し方が変わるだけで結果が大きく変わる。\nこの論文は Microsoft Research と Salesforce Resea...",
-      "category": "AI・技術",
-      "rss_category": "",
-      "image_url": ""
-    },
-    {
-      "title": "Transformersライブラリ基礎",
-      "url": "https://zenn.dev/kawauso_danu/articles/2c50140bffabed",
-      "site": "Zenn(LLM)",
-      "published": "2026-08-07T06:41:34Z",
-      "description": "https://qiita.com/_kawauso_/items/523128d9b1c9722bb0a8\nChatGPT登場以降、自然言語処理に興味を持ち始めた。2023年ころにTransformersライブラリを使ったサンプルコードをよくわからずに写経していた。頻度高く触っているたけではないが、最近、やっと概観がつかめてきた（気がする）ので、自分の理解を整理してみる。（と言いつつも書いている...",
       "category": "AI・技術",
       "rss_category": "",
       "image_url": ""
