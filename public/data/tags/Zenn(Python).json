@@ -1,6 +1,6 @@
 {
   "site": "Zenn(Python)",
-  "last_updated": "2026-08-08T08:46:49.703490",
+  "last_updated": "2026-08-08T09:23:31.546525",
   "total_articles": 5570,
   "articles": [
     {
@@ -44,16 +44,6 @@
       "image_url": ""
     },
     {
-      "title": "プロバイダー単位のロックでブラウザ自動化の競合を防ぐ - テスト設計",
-      "url": "https://zenn.dev/kmn/articles/7bee0901e4f7db",
-      "site": "Zenn(Python)",
-      "published": "2026-08-08T02:35:02Z",
-      "description": "プロバイダー単位のロックでブラウザ自動化の競合を防ぐ - テスト設計\n自動処理は、スケジュール登録だけでは安定しません。同じログイン済みブラウザを2ジョブが操作すると、フォームやタブが競合します。\nこの記事では「テスト設計」の観点から、入力、処理、成果物、公開結果を分離する方法を整理します。仕組み全体の理由まで扱います。\n\n 基本方針\nブラウザ変更前にprovider単位のロックを取得し、fina...",
-      "category": "開発",
-      "rss_category": "",
-      "image_url": ""
-    },
-    {
       "title": "テスト環境のない本番APIで誤発注を封じ込める設計",
       "url": "https://zenn.dev/ozapon/articles/gmo-fx-order-containment",
       "site": "Zenn(Python)",
@@ -69,6 +59,36 @@
       "site": "Zenn(Python)",
       "published": "2026-08-08T02:00:32Z",
       "description": "暗号資産自動トレードライブラリの構築ガイド\n自動トレードに関心があるエンジニアの皆さん、今回は高頻度取引（HFT）に基づいた暗号資産の自動トレードライブラリの作成方法を解説します。このガイドを通じて、効果的なトレーディングシステムの構築に必要な基盤を理解し、実装する手法を学んでいただけます。\n\n 高頻度取引（HFT）とは？\n高頻度取引（HFT）は、金融市場においてアルゴリズムを用いて極めて短い時間...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "KVキャッシュ最適化：PagedAttention・FP8でメモリを削る",
+      "url": "https://zenn.dev/libercraft/articles/20260808-kv-cache-paged-attention-fp8",
+      "site": "Zenn(Python)",
+      "published": "2026-08-08T02:00:00Z",
+      "description": "「同じGPUなのに、想定より少ない同時接続数しか捌けない」——ローカルLLMを本番運用していると、この壁に必ず突き当たります。原因の多くは、モデルの重みではなくKVキャッシュ（Key-Valueキャッシュ）のメモリ管理にあります。\n以前の記事「量子化フォーマットを比較する」では重みの量子化を扱いましたが、本記事ではKVキャッシュそのものの最適化——PagedAttentionとFP8量子化——を扱...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "OpenAI API 会話履歴（メモリ）",
+      "url": "https://zenn.dev/kawauso_danu/articles/c8add00d7f3f23",
+      "site": "Zenn(Python)",
+      "published": "2026-08-08T00:47:52Z",
+      "description": "LLMにTool選択→Tool実行はローカル→会話履歴＋Tool実行結果をLLMに返して次のアクションを判断させる、というLLMエージェント的な仕組みを実装するために、会話履歴（メモリ）を管理する方法を調査して自分の環境で動作確認してみたので、そのメモです。\n情報源:\nhttps://developers.openai.com/api/docs/guides/conversation-state\n...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "自己書き換えという視点で比較する Lisp / Python / Sprout",
+      "url": "https://zenn.dev/cosmopanda/articles/sprout-lisp-python-self-rewrite",
+      "site": "Zenn(Python)",
+      "published": "2026-08-08T00:45:10Z",
+      "description": "この記事について\n「AIが自分自身のコードを安全に書き換えられる言語」として設計している Sprout という処理系について、ホワイトペーパーを読むにはちょっと重いという人向けに、既存言語との違いを表でまとめました。\n軸にするのは「AIが自己書き換え（AIが自分自身を読み、編集し、再実行する）をどれだけ素直に書けるか」です。\n\n 比較表\n\n\n\n観点\nLisp\nPython\nSprout\n\n\n\n\nコ...",
       "category": "開発",
       "rss_category": "",
       "image_url": ""
@@ -184,16 +204,6 @@
       "image_url": ""
     },
     {
-      "title": "同じCAD操作、違う表現 — CADエージェントでDSLとコード生成をどう使い分けるか",
-      "url": "https://zenn.dev/0xliclog/articles/f8873eadc547c0",
-      "site": "Zenn(Python)",
-      "published": "2026-08-07T10:00:05Z",
-      "description": "CADの内部APIをAIエージェントから操作する代表的な実装には、大きく2つあります。\n定義済みのCAD操作を、構造化された引数（多くはJSON形式）で呼び出す方式と、LLMがCAD APIを使うコードを生成・実行する方式です。\n本記事では、前者を「DSL方式」、後者を「コード生成方式」と呼びます。\nDSL方式は管理しやすい反面、未定義の操作には対応できず、ツールの追加・保守が必要です。\nコード生...",
-      "category": "開発",
-      "rss_category": "",
-      "image_url": ""
-    },
-    {
       "title": "[Python]pipとuvの違いってなに",
       "url": "https://zenn.dev/kawarin_origami/articles/pip-uv-basic-20260807",
       "site": "Zenn(Python)",
@@ -219,16 +229,6 @@
       "site": "Zenn(Python)",
       "published": "2026-08-07T07:44:49Z",
       "description": "🚀 手作業のCLI運用から抜け出し、コードでネットワークを支配する\n  \n  画面上にいくつものターミナルを並べ、機器へ順番にログインしては show running-config を取得しExcelにまとめる。日々の運用の中で、手作業による単純作業の繰り返しや、コマンドの入力ミスによる心理的負担に悩まされた経験はないでしょうか。\n  \n  「Pythonで自動化しよう」と入門書を手に取ってみても...",
-      "category": "開発",
-      "rss_category": "",
-      "image_url": ""
-    },
-    {
-      "title": "Transformersライブラリ基礎",
-      "url": "https://zenn.dev/kawauso_danu/articles/2c50140bffabed",
-      "site": "Zenn(Python)",
-      "published": "2026-08-07T06:41:34Z",
-      "description": "https://qiita.com/_kawauso_/items/523128d9b1c9722bb0a8\nChatGPT登場以降、自然言語処理に興味を持ち始めた。2023年ころにTransformersライブラリを使ったサンプルコードをよくわからずに写経していた。頻度高く触っているたけではないが、最近、やっと概観がつかめてきた（気がする）ので、自分の理解を整理してみる。（と言いつつも書いている...",
       "category": "開発",
       "rss_category": "",
       "image_url": ""
