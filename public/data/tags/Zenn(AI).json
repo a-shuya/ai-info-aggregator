@@ -1,18 +1,8 @@
 {
   "site": "Zenn(AI)",
-  "last_updated": "2026-08-08T05:54:26.785593",
-  "total_articles": 12190,
+  "last_updated": "2026-08-08T06:59:27.687874",
+  "total_articles": 12193,
   "articles": [
-    {
-      "title": "プロバイダー単位のロックでブラウザ自動化の競合を防ぐ - テスト設計",
-      "url": "https://zenn.dev/kmn/articles/7bee0901e4f7db",
-      "site": "Zenn(AI)",
-      "published": "2026-08-08T02:35:02Z",
-      "description": "プロバイダー単位のロックでブラウザ自動化の競合を防ぐ - テスト設計\n自動処理は、スケジュール登録だけでは安定しません。同じログイン済みブラウザを2ジョブが操作すると、フォームやタブが競合します。\nこの記事では「テスト設計」の観点から、入力、処理、成果物、公開結果を分離する方法を整理します。仕組み全体の理由まで扱います。\n\n 基本方針\nブラウザ変更前にprovider単位のロックを取得し、fina...",
-      "category": "AI・技術",
-      "rss_category": "",
-      "image_url": ""
-    },
     {
       "title": "あなたはどっち？AIで自信を失う人と、力がつく人の違い",
       "url": "https://zenn.dev/coj/articles/c28271f073ecff",
@@ -69,16 +59,6 @@
       "site": "Zenn(AI)",
       "published": "2026-08-08T00:39:28Z",
       "description": "はじめに\n複数のAIコーディングエージェント(CLI/TUIハーネス)を使い比べた結果として「OpenCode + openchamber」の組み合わせに行き着いた、という趣旨の投稿をSNSで見かけた。挙げられていた判断基準を自分なりに要約すると、次の3つに整理できる。\n\n\n成熟して安定したGUIが必要(TUIの黒画面・大量のショートカット記憶はつらい)\n\nベンダーロックインがない(特定モデルベン...",
-      "category": "AI・技術",
-      "rss_category": "",
-      "image_url": ""
-    },
-    {
-      "title": "AIの暴走が怖いのでOTelで収集したエージェントのトレースから異常検知システムを構築してみる",
-      "url": "https://zenn.dev/rick2200/articles/c5d90108d0eb87",
-      "site": "Zenn(AI)",
-      "published": "2026-08-08T00:27:52Z",
-      "description": "要約\nAIエージェントの「暴走」— 無限ループ・コストの過剰消耗・目的の逸脱・危険操作 — を、OpenTelemetry(以下 OTel)で集めた行動トレースから準リアルタイムに検知するPoCを作りました。\n\n収集は OTel GenAI セマンティック規約+ OTel Collector\n検知は ルール+行動系列(Markov)+意味(セマンティクス)の3層 を統合\nGCP で、再学習して自動...",
       "category": "AI・技術",
       "rss_category": "",
       "image_url": ""
@@ -164,26 +144,6 @@
       "image_url": ""
     },
     {
-      "title": "AIは魔物か、神の書か",
-      "url": "https://zenn.dev/okamyuji/articles/laplace-erdos-ai-determinism",
-      "site": "Zenn(AI)",
-      "published": "2026-08-07T22:54:34Z",
-      "description": "はじめに\nAIやLLMを開発に組み込むと、ほぼ必ず「出力が毎回変わるのをなんとかしたい」という話になります。temperatureを0にする、seedを固定する、promptを凍結する。それでも設計レビューに出てくる案は落ち着かず、どこかで「AIに設計させるのは無理があるのではないか」という気分になります。\nこの記事では、その気分の正体を、ラプラスの知性（いわゆるラプラスの魔物）とエルデシュの「神...",
-      "category": "AI・技術",
-      "rss_category": "",
-      "image_url": ""
-    },
-    {
-      "title": "「これだけの作業にそんな気合いいらないのに」— サブエージェントのeffort継承にハマった話",
-      "url": "https://zenn.dev/playpark/articles/claude-code-effort-settings-subagent",
-      "site": "Zenn(AI)",
-      "published": "2026-08-07T22:54:21Z",
-      "description": "深夜、ただのtypo修正がOpusのxhighで走っていた\nレビュー待ちのPRがなかなか終わらない。ログを覗いたら、ただのtypo修正のために投げたはずのサブエージェントが、涼しい顔でOpusのxhighを使っていた。\n\n中身は数行のJSON整形や軽い文字列置換だけ\nなのに実行時間もコストも、重い判断タスクと同じ水準\nしかも自分は「effortなんて指定してない」つもりだった\n\n原因は単純だった。...",
-      "category": "AI・技術",
-      "rss_category": "",
-      "image_url": ""
-    },
-    {
       "title": "#002 ベストプラクティスだけでは設計は決まらない",
       "url": "https://zenn.dev/kvl/articles/c9b7ffb339790d",
       "site": "Zenn(AI)",
@@ -199,6 +159,36 @@
       "site": "Zenn(AI)",
       "published": "2026-08-07T21:06:26Z",
       "description": "Claude Code を「便利な相棒」から「勝手に回る組織」へ引き上げるための実践書です。\n\n権限モデルと専権事項を決める憲法の書き方、統括リポジトリと事業リポジトリの階層化、\nエージェント編成、hooks と permissions による機械的な強制、承認をボトルネックにしない\n安全弁の置き方、定時に無人起動させる自律化の設計までを、実際に運用した記録から起こしました。\n\n誤ブロックする安全...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "ランタイムは買える、受理条件は買えない —— AI開発基盤は三層の分離へ収束する",
+      "url": "https://zenn.dev/cognitiveosmdl/articles/b0790c49105b59",
+      "site": "Zenn(AI)",
+      "published": "2026-08-07T21:00:05Z",
+      "description": "!\n本稿はシリーズ第五稿である。前々々稿(A)でloop engineeringのメンタルモデルの穴を列挙し、前々稿(B)で塞げる穴への対策を、別稿(C)で塞げない穴の宣言を書いた。第四稿(D)では、AIを含む開発実行系を監督制御の対象として扱うと工程が状態遷移グラフへ収束することを示した。\n本稿はその先を書く。グラフの次に来るのは何か——そして、来るものの中で何が買えて、何が買えないまま残るか。...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "自分だけのエージェント秘書を作る",
+      "url": "https://zenn.dev/nhandsome/articles/ec2bcbf71dc262",
+      "site": "Zenn(AI)",
+      "published": "2026-08-07T17:27:09Z",
+      "description": "!\n3行まとめ\n\n個人サーバーに自分だけのエージェント秘書環境(agentic_env)を作ってみました\n企画・運営・安定化・反復実行の4段階に分け、段階ごとに別のモデルを割り当てています\n今回は構成の紹介までです。実際に何をしたかは次回から\n\n\n!\nこの記事は agentic_env が残したエージェント作業ログを素材に、Solar Pro4が書きました。\n\n大げさなきっかけがあったわけではあり...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "AIエージェント運用の実録：Issue/PR通番が4日で116進むリポジトリの中身",
+      "url": "https://zenn.dev/tomu_coelia/articles/ai-agent-work-log-monorepo",
+      "site": "Zenn(AI)",
+      "published": "2026-08-07T17:19:59Z",
+      "description": "「AIエージェントで開発を自動化しています」という話はよく見ますが、実際のリポジトリで何がどのくらいの頻度で起きているのかの生データはあまり出てきません。この記事では、20代向けコミュニティ「Coelia」の運営基盤を支える3つのリポジトリのPR履歴を、そのまま開いて見せます。\n前提：この体制は Claude Code / Codex を「司令塔・実行腕・チェッカー」の役割帯に分けて運用しており、...",
       "category": "AI・技術",
       "rss_category": "",
       "image_url": ""
@@ -294,6 +284,16 @@
       "image_url": ""
     },
     {
+      "title": "MCP連携で壊れる前に確認すべき10の運用チェックリスト",
+      "url": "https://zenn.dev/bambampurin/articles/2026-07-31-tech-daily",
+      "site": "Zenn(AI)",
+      "published": "2026-08-07T14:01:07Z",
+      "description": "!\n2026-07-31時点の主要トレンドは、LLM単体競争からエージェント実装・MCP接続・運用安全性へと関心が移っていることです。OpenAIは「Building abundant intelligence」を掲げる一方、AI Businessでは価格引き下げが報じられ、企業導入でコスト最適化が重要になっています。AWSのMCP対応、CrowdStrikeのエージェント保護、FujitsuやM...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
       "title": "Amzon Bedrock AgentCore GatewayでCodexの利用量とBudgetを制御する",
       "url": "https://zenn.dev/kashiwabaray/articles/796539362435eb",
       "site": "Zenn(AI)",
@@ -309,6 +309,36 @@
       "site": "Zenn(AI)",
       "published": "2026-08-07T13:18:16Z",
       "description": "均等に分けたつもりが、真ん中だけが燃えていた\n私はコードレビューを6段階に分けました。Lint、型、AI設計レビュー、人間の設計判断、統合テスト、リリース判定です。責務を分ければ各段階が軽くなると信じていました。\n90日後、実測を取って青ざめました。指摘全体の62%が Stage 3(AIレビュー)一箇所に積み上がっていた のです。\n均等に分ければ均等に散る、と思い込んでいました。実際は逆で、分け...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "Claude Codeで1週間に1Bトークン使ったと思ったら、97%がキャッシュだった",
+      "url": "https://zenn.dev/flipslidersand/articles/claude-code-1b-tokens",
+      "site": "Zenn(AI)",
+      "published": "2026-08-07T13:04:47Z",
+      "description": "先週のClaude Code使用量を集計したら、1週間で1.36Bトークンという数字が出た。\n13億トークン。\n「さすがに使いすぎでは？」と思って内訳を調べてみると、予想とはかなり違う構造をしていた。\n\n 内訳を見たら97%がキャッシュだった\nClaude Codeのセッションログから、週単位のトークン使用量を集計した結果がこれだ。\n\n\n\n種別\nトークン数\n割合\n\n\n\n\ninput\n0.1M\n0....",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "#2 AIエージェントチーム誕生1週間、朝の調査依頼がその日の深夜にMVPになっていた",
+      "url": "https://zenn.dev/chisatom/articles/f1b27a9c3047cb",
+      "site": "Zenn(AI)",
+      "published": "2026-08-07T12:08:03Z",
+      "description": "この記事は、Claude Code 6体のマルチエージェント「Lady's servants」（お屋敷）を5ヶ月運用した記録を振り返る連載の第2回です。第1回では、「執事とメイド」というロールプレイがエージェント制御のインターフェース層として機能する、という話を書きました。\n今回はタイムマシンで2026年2月に戻ります。フックも監視デーモンも報告プロトコルもまだ何もなかった、誕生直後のお屋敷が実際...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "75体の並列エージェントで5.25Mトークンを溶かした——マルチエージェント運用の失敗5類型",
+      "url": "https://zenn.dev/zenn_content/articles/multi-agent-failure-patterns-measured",
+      "site": "Zenn(AI)",
+      "published": "2026-08-07T11:15:23Z",
+      "description": "はじめに\nClaude Codeでサブエージェントを並列に走らせる運用を数ヶ月続けて、一通りの失敗を踏みました。最大のものは75体の並列ファンアウトで5.25Mトークンを消費し、429（レート制限）と利用枠超過で止まった件です。\n英語圏では「The 5 Failure Modes of Multi-Agent Claude Systems」のような失敗類型の整理が出始めていますが、日本語ではまだ体...",
       "category": "AI・技術",
       "rss_category": "",
       "image_url": ""
