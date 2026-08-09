@@ -1,6 +1,6 @@
 {
   "site": "Zenn(Python)",
-  "last_updated": "2026-08-09T16:02:55.289257",
+  "last_updated": "2026-08-09T16:51:24.651249",
   "total_articles": 5604,
   "articles": [
     {
@@ -9,6 +9,16 @@
       "site": "Zenn(Python)",
       "published": "2026-08-09T13:12:59Z",
       "description": "TL;DR\n\nGMOコインFX の Private API は、業務エラーでも HTTP 200 + ボディ {\"status\": 1, \"messages\": [...]} を返します\n\nhttpx.Response.raise_for_status() だけでは通過します。data が無いレスポンスを素朴にパースすると 空配列を返して正常終了し、API エラーが「約定なし」に化けます\n実際には...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "姉妹サービスで11時間続いた429を見て、まだ起きていない側を先に直した話",
+      "url": "https://zenn.dev/itaraiguma/articles/llm-daily-rate-limit-backoff",
+      "site": "Zenn(Python)",
+      "published": "2026-08-09T12:02:08Z",
+      "description": "はじめに\n個人開発している技術記事キュレーションサービス「DevPick」と、その姉妹サービス「AgentPick」は、どちらも集めた記事の分析にLLMを使っています。ある日、DevPick側でLLMの日次利用上限に達したまま処理が止まらない障害が起きました。この記事は、その障害をAgentPick側でどう防いだかの記録です。\n\n 何が起きたか\nDevPickは、まだ分析していない記事(バックログ...",
       "category": "開発",
       "rss_category": "",
       "image_url": ""
@@ -34,11 +44,11 @@
       "image_url": ""
     },
     {
-      "title": "LLMアプリの計装は「属性名」から始めない。OTel Contributorが語るGenAI計装の境界線",
+      "title": "LLMアプリの計装は、属性名より先に境界を決める──OTel GenAIのPRから見えたこと",
       "url": "https://zenn.dev/agentgymleader/articles/e1122f2d3fa273",
       "site": "Zenn(Python)",
       "published": "2026-08-09T10:44:53Z",
-      "description": "OpenTelemetry GenAIまわりにPRを出していると、属性名の変更はたいてい一行では終わりません。\nたとえば、非推奨になった属性を新しい名前に置き換える場合です。Pythonの計装コードだけでなく、適合性テスト、共有ヘルパー、ドキュメント、利用者が見るreference reportまで追う必要がありました。最初は単純なrenameに見えた作業が、実際には「どこで何を観測し、どこまで値...",
+      "description": "LLMアプリケーションにOpenTelemetryを導入しようとしたとき、真っ先に「モデル名やトークン数、プロンプト本文をどの属性名で記録するか」をリストアップしたくなります。\nしかし、属性名から入り、それをアプリケーションコードやSDKに直接書き込もうとすると、後から厄介な問題が起きます。ネットワーク通信のSpanとLLMのSpanが二重に出る、あるいは、SDKが例外や応答をどこで扱うか不明瞭な...",
       "category": "開発",
       "rss_category": "",
       "image_url": ""
@@ -69,16 +79,6 @@
       "site": "Zenn(Python)",
       "published": "2026-08-09T10:07:32Z",
       "description": "Garmin Running Data Normalizer v1.3.0では、睡眠、トレーニングレディネス、\nVO2Maxなど、10種類のデータセットを追加しました。\nこの記事で扱う機能追加はv1.3.0で導入したものです。現在の安定版はv1.3.1で、\n公開文書と状態検証を整えたパッチです。17データセット、212フィールド、6つの\n明示的な関係性と正規化の実行契約は、v1.3.0から変更して...",
-      "category": "開発",
-      "rss_category": "",
-      "image_url": ""
-    },
-    {
-      "title": "人間観察とシステム観測 　 OpenTelemetryで紐解くAI対話の構造",
-      "url": "https://zenn.dev/pomodoro_naomi/articles/2f1d7cf6b81a6c",
-      "site": "Zenn(Python)",
-      "published": "2026-08-09T09:33:11Z",
-      "description": "はじめに：縁側の観察とシステムの観測\n日常のふとした観察や実体験から得られる「人間の実感」と、システム内部の動きをログやトレースとして捉える「システムの観測（Observability）」。一見異なるこの2つは、実は深層で強く繋がっています。\n本記事では、OpenTelemetryを用いてAI対話処理の内部コンテキストやスパン情報を可視化し、AIとのやり取りにおいてどのようなデータ構造が生成・保持...",
       "category": "開発",
       "rss_category": "",
       "image_url": ""
