@@ -1,8 +1,88 @@
 {
   "site": "Zenn(Python)",
-  "last_updated": "2026-08-09T12:18:17.445863",
-  "total_articles": 5598,
+  "last_updated": "2026-08-09T13:26:50.106386",
+  "total_articles": 5604,
   "articles": [
+    {
+      "title": "GMOコインFX APIでHTTP 200なのに約定が0件になった話 — ボディのstatusを見ない罠",
+      "url": "https://zenn.dev/ozapon/articles/gmo-fx-http200-empty-executions",
+      "site": "Zenn(Python)",
+      "published": "2026-08-09T13:12:59Z",
+      "description": "TL;DR\n\nGMOコインFX の Private API は、業務エラーでも HTTP 200 + ボディ {\"status\": 1, \"messages\": [...]} を返します\n\nhttpx.Response.raise_for_status() だけでは通過します。data が無いレスポンスを素朴にパースすると 空配列を返して正常終了し、API エラーが「約定なし」に化けます\n実際には...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "姉妹サービスで11時間続いた429を見て、まだ起きていない側を先に直した話",
+      "url": "https://zenn.dev/itaraiguma/articles/llm-daily-rate-limit-backoff",
+      "site": "Zenn(Python)",
+      "published": "2026-08-09T12:02:08Z",
+      "description": "はじめに\n個人開発している技術記事キュレーションサービス「DevPick」と、その姉妹サービス「AgentPick」は、どちらも集めた記事の分析にLLMを使っています。ある日、DevPick側でLLMの日次利用上限に達したまま処理が止まらない障害が起きました。この記事は、その障害をAgentPick側でどう防いだかの記録です。\n\n 何が起きたか\nDevPickは、まだ分析していない記事(バックログ...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "ダブルクロス3rdの判定ロール期待値を数式で求める",
+      "url": "https://zenn.dev/idunaf/articles/0ad5a3f90c870f",
+      "site": "Zenn(Python)",
+      "published": "2026-08-09T11:50:12Z",
+      "description": "はじめに\nTRPG『ダブルクロス The 3rd Edition』の一般的な判定では、10面ダイスを複数個振り、クリティカル値以上の出目が出たダイスだけを振り直します。これをクリティカルが出なくなるまで繰り返し、概略として次の値を達成値とします。\n\n\\text{達成値}\n=\n10\\times\\text{クリティカル回数}\n+\\text{最終ロールの最大出目}\n+\\text{固定値}\n\nただし、最初...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "pytest 50本ノック — ブラウザだけで学ぶPython自動テスト完全入門",
+      "url": "https://zenn.dev/m_sakaaai/books/0868a743ee1719",
+      "site": "Zenn(Python)",
+      "published": "2026-08-09T11:40:29Z",
+      "description": "この本は、Pythonの自動テストフレームワークであるpytestを体系的に学べる実践的な入門書です。\n最大の特徴は、面倒なローカル環境の構築が一切不要な点にあります。CodeSandboxを利用するため、ブラウザさえあればすぐに全50問のテスト課題に取り組むことができます。\n学習内容は段階的にステップアップするよう構成されています。最初は単純な関数のテストから始まり、クラスや例外処理、フィクスチ...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "LLMアプリの計装は、属性名より先に境界を決める──OTel GenAIのPRから見えたこと",
+      "url": "https://zenn.dev/agentgymleader/articles/e1122f2d3fa273",
+      "site": "Zenn(Python)",
+      "published": "2026-08-09T10:44:53Z",
+      "description": "LLMアプリケーションにOpenTelemetryを導入しようとしたとき、真っ先に「モデル名やトークン数、プロンプト本文をどの属性名で記録するか」をリストアップしたくなります。\nしかし、属性名から入り、それをアプリケーションコードやSDKに直接書き込もうとすると、後から厄介な問題が起きます。ネットワーク通信のSpanとLLMのSpanが二重に出る、あるいは、SDKが例外や応答をどこで扱うか不明瞭な...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "手元では通るのに CI だけ落ちる — ruff format は Markdown の中の Python も整形していた",
+      "url": "https://zenn.dev/wutianheye051/articles/b517dce5c6829a",
+      "site": "Zenn(Python)",
+      "published": "2026-08-09T10:22:13Z",
+      "description": "個人開発のリポジトリを GitHub に push したら、CI だけが落ちました。手元では全部通っていました。\n原因は ruff format が README.md の中の Python コードブロックも整形対象にしていたことでした。\nしかも調べてみると、ruff format と ruff check で Markdown の扱いが違いました。ここが引っかかりどころだったので、実際に手を動か...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "官公庁のサイトはスクレイピングしていいのか — robots.txt を4サイト実測したら全部ダメだった",
+      "url": "https://zenn.dev/wutianheye051/articles/6be7078d4ab828",
+      "site": "Zenn(Python)",
+      "published": "2026-08-09T10:16:41Z",
+      "description": "補助金・公募情報を毎日集めるツールを作ろうとしました。\n対象は官公庁のサイトです。公的機関が税金で運営していて、誰でもブラウザで見られる情報なのだから、自動で取得しても問題ないだろう — 最初はそう思っていました。\n念のため robots.txt を確認したところ、その前提が崩れました。\n\n 実測結果\n4サイトの robots.txt に実際にアクセスした結果です。\n\n\n\nサイト\n\nrobots....",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "Garminの日次データを1行にまとめると何が消える？——v1.3で複数観測を残した理由",
+      "url": "https://zenn.dev/tsubotti63/articles/garmin-v1-3-source-backed-observation-contract",
+      "site": "Zenn(Python)",
+      "published": "2026-08-09T10:07:32Z",
+      "description": "Garmin Running Data Normalizer v1.3.0では、睡眠、トレーニングレディネス、\nVO2Maxなど、10種類のデータセットを追加しました。\nこの記事で扱う機能追加はv1.3.0で導入したものです。現在の安定版はv1.3.1で、\n公開文書と状態検証を整えたパッチです。17データセット、212フィールド、6つの\n明示的な関係性と正規化の実行契約は、v1.3.0から変更して...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
     {
       "title": "吊り荷Yaw制御システムの開発 #01：制御環境を構築する",
       "url": "https://zenn.dev/rindajones/articles/a8b6189171848f",
@@ -44,16 +124,6 @@
       "image_url": ""
     },
     {
-      "title": "Agent Skills 入門",
-      "url": "https://zenn.dev/kawauso_danu/books/65fe601eb5bf04",
-      "site": "Zenn(Python)",
-      "published": "2026-08-09T05:43:34Z",
-      "description": "Agent Skills を自前実装するための入門書。\nOpenAI API を用いたサンプルコードあり。",
-      "category": "開発",
-      "rss_category": "",
-      "image_url": ""
-    },
-    {
       "title": "個人開発のスクリーニングシステムが、初めてエンドツーエンドで通った",
       "url": "https://zenn.dev/kabu_system_dev/articles/7cc44773466761",
       "site": "Zenn(Python)",
@@ -89,16 +159,6 @@
       "site": "Zenn(Python)",
       "published": "2026-08-09T02:14:40Z",
       "description": "AIエージェントでクローリングしてみたら、もうスクレイピングコードを書かなくなった話\n\n はじめに\nてつどんです。データエンジニアとして日々業務をこなしております。\nこれまでWebサイトから情報を取ってくる、いわゆる「クローリング・スクレイピング」は、requests + BeautifulSoupでHTMLを取ってきて、CSSセレクタで狙った要素を拾う、というのが自分の中の定番でした。\nただ最近...",
-      "category": "開発",
-      "rss_category": "",
-      "image_url": ""
-    },
-    {
-      "title": "【技術解説】ビットコイン分析 Pythonライブラリで急変動を見逃すな！ボリンジャーバンドのスクイズ検知法",
-      "url": "https://zenn.dev/sugarfree/articles/e38393e38383e38388e382b3e382a4e383b3e58886e69",
-      "site": "Zenn(Python)",
-      "published": "2026-08-09T02:00:44Z",
-      "description": "ビットコイン分析：ボリンジャーバンドのスクイズ検知法\nビットコインのような高ボラティリティな資産に投資する際、急激な価格変動を見逃さないための分析手法は非常に重要です。本記事では、ボリンジャーバンドを利用したスクイズ検知法をPythonで実装する方法を解説します。この手法を用いることで、取引のエントリーやエグジットのタイミングをより適切に捉えられます。\n\n ボリンジャーバンドの基礎知識\nボリンジャ...",
       "category": "開発",
       "rss_category": "",
       "image_url": ""
