@@ -1,24 +1,24 @@
 {
   "site": "Zenn(Python)",
-  "last_updated": "2026-08-09T16:51:24.651249",
-  "total_articles": 5604,
+  "last_updated": "2026-08-09T17:34:52.634521",
+  "total_articles": 5605,
   "articles": [
+    {
+      "title": "海外トレンド厳選！Uber発の超高速マージキュー、スマホ自動操作AI、進化型マルチエージェント3選",
+      "url": "https://zenn.dev/ament3/articles/ai-digest-2026-08-09-1443",
+      "site": "Zenn(Python)",
+      "published": "2026-08-09T14:43:18Z",
+      "description": "海外の主要テックコミュニティ（Hacker News、Lobsters、GitHub Trending）で注目を集めている最新の技術トピックやオープンソースプロジェクトの中から、日本のエンジニアにとって特に実用性の高いツールや概念を3つ厳選して解説します。\n\n\n 1. Uber SubmitQueue: 大型モノリポのCI詰まりを解消する投機的マージキュー\n\n 概要\nUberが公開した Submi...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
     {
       "title": "GMOコインFX APIでHTTP 200なのに約定が0件になった話 — ボディのstatusを見ない罠",
       "url": "https://zenn.dev/ozapon/articles/gmo-fx-http200-empty-executions",
       "site": "Zenn(Python)",
       "published": "2026-08-09T13:12:59Z",
       "description": "TL;DR\n\nGMOコインFX の Private API は、業務エラーでも HTTP 200 + ボディ {\"status\": 1, \"messages\": [...]} を返します\n\nhttpx.Response.raise_for_status() だけでは通過します。data が無いレスポンスを素朴にパースすると 空配列を返して正常終了し、API エラーが「約定なし」に化けます\n実際には...",
-      "category": "開発",
-      "rss_category": "",
-      "image_url": ""
-    },
-    {
-      "title": "姉妹サービスで11時間続いた429を見て、まだ起きていない側を先に直した話",
-      "url": "https://zenn.dev/itaraiguma/articles/llm-daily-rate-limit-backoff",
-      "site": "Zenn(Python)",
-      "published": "2026-08-09T12:02:08Z",
-      "description": "はじめに\n個人開発している技術記事キュレーションサービス「DevPick」と、その姉妹サービス「AgentPick」は、どちらも集めた記事の分析にLLMを使っています。ある日、DevPick側でLLMの日次利用上限に達したまま処理が止まらない障害が起きました。この記事は、その障害をAgentPick側でどう防いだかの記録です。\n\n 何が起きたか\nDevPickは、まだ分析していない記事(バックログ...",
       "category": "開発",
       "rss_category": "",
       "image_url": ""
@@ -39,16 +39,6 @@
       "site": "Zenn(Python)",
       "published": "2026-08-09T11:40:29Z",
       "description": "この本は、Pythonの自動テストフレームワークであるpytestを体系的に学べる実践的な入門書です。\n最大の特徴は、面倒なローカル環境の構築が一切不要な点にあります。CodeSandboxを利用するため、ブラウザさえあればすぐに全50問のテスト課題に取り組むことができます。\n学習内容は段階的にステップアップするよう構成されています。最初は単純な関数のテストから始まり、クラスや例外処理、フィクスチ...",
-      "category": "開発",
-      "rss_category": "",
-      "image_url": ""
-    },
-    {
-      "title": "LLMアプリの計装は、属性名より先に境界を決める──OTel GenAIのPRから見えたこと",
-      "url": "https://zenn.dev/agentgymleader/articles/e1122f2d3fa273",
-      "site": "Zenn(Python)",
-      "published": "2026-08-09T10:44:53Z",
-      "description": "LLMアプリケーションにOpenTelemetryを導入しようとしたとき、真っ先に「モデル名やトークン数、プロンプト本文をどの属性名で記録するか」をリストアップしたくなります。\nしかし、属性名から入り、それをアプリケーションコードやSDKに直接書き込もうとすると、後から厄介な問題が起きます。ネットワーク通信のSpanとLLMのSpanが二重に出る、あるいは、SDKが例外や応答をどこで扱うか不明瞭な...",
       "category": "開発",
       "rss_category": "",
       "image_url": ""
@@ -79,6 +69,16 @@
       "site": "Zenn(Python)",
       "published": "2026-08-09T10:07:32Z",
       "description": "Garmin Running Data Normalizer v1.3.0では、睡眠、トレーニングレディネス、\nVO2Maxなど、10種類のデータセットを追加しました。\nこの記事で扱う機能追加はv1.3.0で導入したものです。現在の安定版はv1.3.1で、\n公開文書と状態検証を整えたパッチです。17データセット、212フィールド、6つの\n明示的な関係性と正規化の実行契約は、v1.3.0から変更して...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "人間観察とシステム観測 　 OpenTelemetryで紐解くAI対話の構造",
+      "url": "https://zenn.dev/pomodoro_naomi/articles/2f1d7cf6b81a6c",
+      "site": "Zenn(Python)",
+      "published": "2026-08-09T09:33:11Z",
+      "description": "はじめに：縁側の観察とシステムの観測\n日常のふとした観察や実体験から得られる「人間の実感」と、システム内部の動きをログやトレースとして捉える「システムの観測（Observability）」。一見異なるこの2つは、実は深層で強く繋がっています。\n本記事では、OpenTelemetryを用いてAI対話処理の内部コンテキストやスパン情報を可視化し、AIとのやり取りにおいてどのようなデータ構造が生成・保持...",
       "category": "開発",
       "rss_category": "",
       "image_url": ""
@@ -119,6 +119,16 @@
       "site": "Zenn(Python)",
       "published": "2026-08-09T06:08:48Z",
       "description": "Pythonから15分 — Staddress で住所解析する\n住所正規化・ジオコーディングAPI 「Staddress（スタドレス）」 開発チームです。\n前回（Node.js — @staddress/client で住所解析する）は、公式 Node.js SDK を紹介しました。\n今回は、公式 Python SDK staddress を使い、同期・非同期の両方から住所解析を呼び出します。\nこ...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "Agent Skills 入門",
+      "url": "https://zenn.dev/kawauso_danu/books/65fe601eb5bf04",
+      "site": "Zenn(Python)",
+      "published": "2026-08-09T05:43:34Z",
+      "description": "Agent Skills を自前実装するための入門書。\nOpenAI API を用いたサンプルコードあり。",
       "category": "開発",
       "rss_category": "",
       "image_url": ""
