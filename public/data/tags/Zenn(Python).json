@@ -1,8 +1,98 @@
 {
   "site": "Zenn(Python)",
-  "last_updated": "2026-08-09T05:13:47.712736",
-  "total_articles": 5583,
+  "last_updated": "2026-08-09T06:03:19.622115",
+  "total_articles": 5593,
   "articles": [
+    {
+      "title": "Agent Skills 入門",
+      "url": "https://zenn.dev/kawauso_danu/books/65fe601eb5bf04",
+      "site": "Zenn(Python)",
+      "published": "2026-08-09T05:43:34Z",
+      "description": "Agent Skills を自前実装するための入門書。\nOpenAI API を用いたサンプルコードあり。",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "個人開発のスクリーニングシステムが、初めてエンドツーエンドで通った",
+      "url": "https://zenn.dev/kabu_system_dev/articles/7cc44773466761",
+      "site": "Zenn(Python)",
+      "published": "2026-08-09T05:42:55Z",
+      "description": "米国株のスクリーニングシステムを個人で作っています。今日、初めて全工程が最後まで通り、Pushoverに買い候補の通知が届きました。\n技術的に難しいことをしたわけではありません。ただ、個人開発で「全部つながった瞬間」は節目なので、記録として残しておきます。\n\n 何がつながったのか\n処理の流れはこうなっています。\n\nユニバース（対象銘柄）を売買代金で決定する\n各銘柄の日足を取得し、ローカルにキャッシ...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "Pythonパッケージのサプライチェーン攻撃に備えるpip,pipenv,uvの設定",
+      "url": "https://zenn.dev/mima_ita/articles/7b79039ad5c65e",
+      "site": "Zenn(Python)",
+      "published": "2026-08-09T03:42:40Z",
+      "description": "目的\n前回 npmパッケージのサプライチェーン攻撃に備えるnpmとyarnの設定という記事を記載しました。\nしかし、これはNode.js固有の問題ではなく、Pythonでも発生する問題です。\nそして対策方法も同じになります。\n\npackageのバージョンを固定する\nハッシュ値によるインストール対象の固定/Pipfile.lockやuv.lockを尊重したインストール\n新し過ぎるパッケージをインスト...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "株価情報「stooq」が使えなくなったのでyfinanceに移行した話",
+      "url": "https://zenn.dev/taiyok/articles/c3e6211d38631f",
+      "site": "Zenn(Python)",
+      "published": "2026-08-09T03:02:17Z",
+      "description": "はじめに\n以前、株価チャート分析アプリを作りましたという記事で、pandas_datareader 経由でstooqから日本株の株価データを取得し、Gradioでチャート表示するアプリを紹介しました。\nしばらく放置していたのですが、久しぶりにアプリを触ってみると、データ取得の段階でエラーが発生するようになっていました。stooq側の仕様変更（あるいはアクセス制限）によるもののようで、pandas_...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "AIエージェントでクローリングしてみたら、もうスクレイピングコードを書かなくなった",
+      "url": "https://zenn.dev/tetsu_don/articles/3d6a6af175f7e1",
+      "site": "Zenn(Python)",
+      "published": "2026-08-09T02:14:40Z",
+      "description": "AIエージェントでクローリングしてみたら、もうスクレイピングコードを書かなくなった話\n\n はじめに\nてつどんです。データエンジニアとして日々業務をこなしております。\nこれまでWebサイトから情報を取ってくる、いわゆる「クローリング・スクレイピング」は、requests + BeautifulSoupでHTMLを取ってきて、CSSセレクタで狙った要素を拾う、というのが自分の中の定番でした。\nただ最近...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "gpt-image-2で教材生成パイプラインを作る：演習データセットの自動生成",
+      "url": "https://zenn.dev/libercraft/articles/20260809-gpt-image-2-training-material-pipeline",
+      "site": "Zenn(Python)",
+      "published": "2026-08-09T02:00:00Z",
+      "description": "「外観検査AIの演習を作りたいが、実際の不良品サンプルを何十パターンも用意するのは現実的ではない」——画像系AIの教材作成では、この「バリエーション豊富な演習データセットをどう用意するか」が常にボトルネックになります。\n以前の記事「Codex CLI経由でプログラム的に画像を生成する」では、gpt-image-2を使った「視覚的開発ループ」を扱いました。本記事では同じgpt-image-2を使い、...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "CANopen 前編 ―― デバイスが自分の辞書を持つ（2/5）",
+      "url": "https://zenn.dev/logicia32/articles/2026-07-29-industrial-net-2-canopen",
+      "site": "Zenn(Python)",
+      "published": "2026-08-09T01:31:45Z",
+      "description": "前回の Modbus では、読めたのは [1234, 0, 0, 0] という数字の列だけでした。それが何を意味するかは、ベンダのPDFの中にしかありませんでした。\n今回の CANopen は、そこに手を入れます。デバイスが自分自身の中に「どの番号に何が入っているか」の辞書を持ちます。\nそして今回もハードは買いません。仮想のCANバスをPythonの中に作って、その上でノード同士を会話させます。\n...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "タイムゾーンのバグを直したら、公開済みの記事の結論が変わった",
+      "url": "https://zenn.dev/poko8725/articles/date-rule-changed-the-conclusion",
+      "site": "Zenn(Python)",
+      "published": "2026-08-09T00:00:29Z",
+      "description": "何が起きたか\n6日前に公開した記事に、年ごとの集計を載せていた。「同じ手順で誰でも再現できる」と書いて、ツールが出した表をそのまま貼った。\n今日、まったく別の目的でそのツールを回したら、同じデータから違う表が出た。\n年        公開時(7/25)         現在(7/31)\n2021年  ¥  143,580  19件    ¥  130,640  18件\n2022年  ¥  923,...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "多数決は実力差を消さずに増幅する。Condorcetの陪審定理を101人で実測したら0.84対0.16",
+      "url": "https://zenn.dev/shakeailab/articles/condorcet-jury-theorem",
+      "site": "Zenn(Python)",
+      "published": "2026-08-08T23:49:38Z",
+      "description": "「みんなで話し合って多数決を取れば、個人の判断よりマシになる」——直感的にはそう思う。集合知、群衆の英知、そういう言葉もよく聞く。\nでもこれ、いつでも成り立つ話なのだろうか。18世紀の数学者コンドルセが考えたのはまさにこの問いで、Condorcetの陪審定理として知られている。設定は驚くほど単純だ。\n\nN人の投票者がいて、それぞれ独立に、確率pで「正しい」判断をする\n全員の判断を多数決にかける\n\n...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
     {
       "title": "PythonSCADからUV・法線付き .mi を直接出力して mental ray + vMaterials でレンダリングする",
       "url": "https://zenn.dev/yokamak/articles/fd404340fae981",
@@ -49,6 +139,16 @@
       "site": "Zenn(Python)",
       "published": "2026-08-08T15:54:23Z",
       "description": "対話処理を自動化したい\nsshやrsyncなど、リモート接続する際にパスワード入力を求められるコマンドがあります。\nこのような対話的な処理が必要なコマンドをPythonから自動実行したいときに使えるのがpexpectです。\n!\nUNIX系の対話操作を自動化する定番ツールexpectのPython版に相当します。\npexpectという名前ですが、内部でexpectコマンドを呼び出しているわけではなく...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "直していないのに、直った（11）",
+      "url": "https://zenn.dev/jissokulog/articles/b16fc81f5db637",
+      "site": "Zenn(Python)",
+      "published": "2026-08-08T15:06:49Z",
+      "description": "シリーズ「AIエージェントの報告を信じる前に」の11本目です。1本目からの一覧は記事の最後にあります。\n同じ関数が、同じ日の朝には見送られ、夕方には通りました。コードは1行も変えていません。設定も変えていません。入力ファイルの置き場所も同じです。それでも結果が違いました。\n朝のログにはこう出ていました。「参照値を算出できませんでした」。夕方のログには数値が出ていました。この2行だけを見ると、朝は壊...",
       "category": "開発",
       "rss_category": "",
       "image_url": ""
