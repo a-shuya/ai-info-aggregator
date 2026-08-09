@@ -1,7 +1,7 @@
 {
   "site": "Zenn(LLM)",
-  "last_updated": "2026-08-09T17:34:52.634521",
-  "total_articles": 5211,
+  "last_updated": "2026-08-09T18:03:37.915607",
+  "total_articles": 5205,
   "articles": [
     {
       "title": "常駐型AIチャットエージェントの「トークンコスト予算」設計",
@@ -54,26 +54,6 @@
       "image_url": ""
     },
     {
-      "title": "姉妹サービスで11時間続いた429を見て、まだ起きていない側を先に直した話",
-      "url": "https://zenn.dev/itaraiguma/articles/llm-daily-rate-limit-backoff",
-      "site": "Zenn(LLM)",
-      "published": "2026-08-09T12:02:08Z",
-      "description": "はじめに\n個人開発している技術記事キュレーションサービス「DevPick」と、その姉妹サービス「AgentPick」は、どちらも集めた記事の分析にLLMを使っています。ある日、DevPick側でLLMの日次利用上限に達したまま処理が止まらない障害が起きました。この記事は、その障害をAgentPick側でどう防いだかの記録です。\n\n 何が起きたか\nDevPickは、まだ分析していない記事(バックログ...",
-      "category": "AI・技術",
-      "rss_category": "",
-      "image_url": ""
-    },
-    {
-      "title": "LLMアプリの計装は、属性名より先に境界を決める──OTel GenAIのPRから見えたこと",
-      "url": "https://zenn.dev/agentgymleader/articles/e1122f2d3fa273",
-      "site": "Zenn(LLM)",
-      "published": "2026-08-09T10:44:53Z",
-      "description": "LLMアプリケーションにOpenTelemetryを導入しようとしたとき、真っ先に「モデル名やトークン数、プロンプト本文をどの属性名で記録するか」をリストアップしたくなります。\nしかし、属性名から入り、それをアプリケーションコードやSDKに直接書き込もうとすると、後から厄介な問題が起きます。ネットワーク通信のSpanとLLMのSpanが二重に出る、あるいは、SDKが例外や応答をどこで扱うか不明瞭な...",
-      "category": "AI・技術",
-      "rss_category": "",
-      "image_url": ""
-    },
-    {
       "title": "なぜHugging Faceはopen-weightのGLM-5.2で自分を守ったのか — ローカルLLMエージェントを鍛える理由",
       "url": "https://zenn.dev/okamyuji/articles/local-llm-agent-open-weight-usecases",
       "site": "Zenn(LLM)",
@@ -84,61 +64,21 @@
       "image_url": ""
     },
     {
-      "title": "LLMの仕組みから逆算する、コンテキストエンジニアリングが効く理由",
-      "url": "https://zenn.dev/oryo_data/articles/6495272ee33587",
-      "site": "Zenn(LLM)",
-      "published": "2026-08-09T08:34:06Z",
-      "description": "はじめに\n蒲生弘郷さんの『LLMの原理、RAG・エージェント開発から読み解く コンテキストエンジニアリング』（技術評論社）を読みました。\n本書の第1章「LLMの仕組みから見るコンテキストの正体」がとても良かったので、この記事ではLLMの内部の仕組みを起点に、「なぜコンテキストの設計がLLMの出力品質を左右するのか」を逆算的に整理してみます。\nTransformerの解説記事はすでに世の中にたくさん...",
-      "category": "AI・技術",
-      "rss_category": "",
-      "image_url": ""
-    },
-    {
-      "title": "AIのセルフレビューだけで終えない — 別の会話で初見レビューする",
-      "url": "https://zenn.dev/okuyam2y/articles/fresh-conversation-code-review",
-      "site": "Zenn(LLM)",
-      "published": "2026-08-09T08:15:17Z",
-      "description": "AI にコードを書かせたあと、同じ会話で「問題がないか見直して」と頼んで終わりにしていませんか。\n私が勧めたいのは、別の AI を用意することではありません。実装した会話の中だけでレビューを終えないことです。\n同じモデルでもいいので、新しい会話を開き、今回の変更を初見でレビューさせます。別のモデルを使うのは、さらにもう一段チェックを加えたい場合の選択肢です。\n工程にすると、追加するのは次の部分です...",
-      "category": "AI・技術",
-      "rss_category": "",
-      "image_url": ""
-    },
-    {
-      "title": "受託開発でクライアントのAPIキーを預かるのをやめた ― 使った分だけ自動請求されるゲートウェイを作った話",
-      "url": "https://zenn.dev/esupple/articles/8c3cb52f3ae80c",
-      "site": "Zenn(LLM)",
-      "published": "2026-08-09T08:09:39Z",
-      "description": "AI機能を組み込む受託案件を何本かやって、確信したことがあります。\nいちばん消耗するのは実装ではなく、「APIキーとその費用を誰が持つか」の調整です。\nこの問題を解決するために、クライアントごとの使用量を計測して、月末にマージンを乗せて自動請求するゲートウェイを作りました。構想からの本番稼働まで、かかったのは実質2日です。この記事はその設計と実装の記録です。\n\n AI受託の「キー、誰が持つ問題」\n...",
-      "category": "AI・技術",
-      "rss_category": "",
-      "image_url": ""
-    },
-    {
-      "title": "2.8Tパラメータの Kimi K3 を、RTX 6000 PRO搭載ワークステーションで動かす",
-      "url": "https://zenn.dev/mamoru_f/articles/8d270259d68b71",
-      "site": "Zenn(LLM)",
-      "published": "2026-08-09T08:09:33Z",
-      "description": "はじめに\nこんにちは！\nオープン株式会社にてプロダクト企画を担当している藤田です。\nDevelopersIO の記事「DGX Spark 1台で2.8TのKimi K3を動かしてみた」を読んで、「DGX Spark じゃなくても動くんじゃないか？　うちにある dGPU ワークステーションだとどうなるんだろう」と気になったのが今回のきっかけです。手元には統合メモリ機ではなく、96GB VRAM を積...",
-      "category": "AI・技術",
-      "rss_category": "",
-      "image_url": ""
-    },
-    {
-      "title": "日本企業でFDEをやって分かった、海外のFDE論がそのまま通用しない3つの理由",
-      "url": "https://zenn.dev/ohmiyamizuki/articles/fde-japan-3-gaps",
-      "site": "Zenn(LLM)",
-      "published": "2026-08-09T07:32:36Z",
-      "description": "!\nこの記事はFDEの現場からの転載です。\n\nFDE（Forward Deployed Engineer）という職種が、日本でも少しずつ語られるようになってきた。「FDEとは何か」を解説する記事は増えたが、そのほとんどは海外——主にPalantirやOpenAI界隈——のFDE論の紹介だ。\n私は日本企業のクライアント先で、FDEとして働いている。企画段階から現場に入り、AIシステムを実装し、業務に...",
-      "category": "AI・技術",
-      "rss_category": "",
-      "image_url": ""
-    },
-    {
       "title": "なぜ、ドラえもんが発売されることは永遠に無いのか？",
       "url": "https://zenn.dev/pdfractal/articles/c1997a5149ed42",
       "site": "Zenn(LLM)",
       "published": "2026-08-09T05:52:22Z",
       "description": "はじめに\n三十年前の人に「なぜドラえもんは実現しないのか」と尋ねれば、多くの人は、人間と自然に会話し、状況を理解し、自分で判断するほど賢い機械を作れないからだと答えたでしょう。\nところが現在では、この回答だけでは不十分です。人間と会話し、文章を読み、画像を認識し、複数の情報を組み合わせて助言する人工知能は、すでに日常的に利用されています。現在の人工知能はドラえもんほど万能ではありませんが、知能その...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "Agent Skills 入門",
+      "url": "https://zenn.dev/kawauso_danu/books/65fe601eb5bf04",
+      "site": "Zenn(LLM)",
+      "published": "2026-08-09T05:43:34Z",
+      "description": "Agent Skills を自前実装するための入門書。\nOpenAI API を用いたサンプルコードあり。",
       "category": "AI・技術",
       "rss_category": "",
       "image_url": ""
