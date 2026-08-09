@@ -1,48 +1,8 @@
 {
   "site": "Zenn(LLM)",
-  "last_updated": "2026-08-09T18:03:37.915607",
-  "total_articles": 5205,
+  "last_updated": "2026-08-09T18:58:59.690343",
+  "total_articles": 5206,
   "articles": [
-    {
-      "title": "常駐型AIチャットエージェントの「トークンコスト予算」設計",
-      "url": "https://zenn.dev/hach/articles/chat-agent-token-cost-budget-design",
-      "site": "Zenn(LLM)",
-      "published": "2026-08-09T16:04:43Z",
-      "description": "Slack / Teams / Chatworkに常駐して働くAIエージェントは、機能が増えるほどLLM呼び出しの回数と1回あたりのトークン量が積み上がっていきます。レート制限(APIの同時実行数・秒間リクエスト数)の設計と混同されがちですが、こちらはお金の話です。この記事では、常駐エージェントのLLM推論コストをどう予算として設計し、暴走を防いだかを整理します。\n\n レート制限対策だけでは費用は...",
-      "category": "AI・技術",
-      "rss_category": "",
-      "image_url": ""
-    },
-    {
-      "title": "「Kimi-K3をRTX 6000 PROで動かした」の続き。モデルを変えたら5.2倍速くなった話",
-      "url": "https://zenn.dev/mamoru_f/articles/2b4f87b42736e2",
-      "site": "Zenn(LLM)",
-      "published": "2026-08-09T15:21:13Z",
-      "description": "はじめに\nこんにちは！\nオープン株式会社にてプロダクト企画を担当している藤田です。\n前回の記事「2.8Tパラメータの Kimi K3 を、RTX 6000 PRO搭載ワークステーションで動かす」を書いた際、「実用に耐える速度ではありません」と評価しました。\n会話ベースで 0.46〜0.67 tok/s、160 トークンの返答に 4〜6 分かかる。\n動いたこと自体には意味があるが、実用にはまだ遠い、...",
-      "category": "AI・技術",
-      "rss_category": "",
-      "image_url": ""
-    },
-    {
-      "title": "「AIの思考って何だ?」と思ったので、自分で定義を書き始めた。",
-      "url": "https://zenn.dev/think_node/articles/16ecf129142d47",
-      "site": "Zenn(LLM)",
-      "published": "2026-08-09T15:07:01Z",
-      "description": "この連載について\nLLM を触っていて、ふと「これ、考えてるのか?」と思ったのが始まりです。\nそこから「じゃあ思考って何?」を調べて自分が欲しい形の答えが見つからなかったので、自分で書くことにしました。\n書いた仮説を実装したら、実装が仮説の欠陥を次々に見つけてきました。結果として、この連載は理論が増えていく話ではなく、理論が減っていく話になります。\n書くのは研究開発の過程です。\n\nどんな問いを立て...",
-      "category": "AI・技術",
-      "rss_category": "",
-      "image_url": ""
-    },
-    {
-      "title": "論文メモ：Agent-XでオンデバイスAIエージェントを高速化する",
-      "url": "https://zenn.dev/kas_blog/articles/20260805-agent-x-on-device-ai-agent-acceleration",
-      "site": "Zenn(LLM)",
-      "published": "2026-08-09T14:45:59Z",
-      "description": "はじめに\nこの記事は、以下の論文を読んだ技術メモです。\n\n論文タイトル：Agent-X: Full Pipeline Acceleration of On-device AI Agents\n\n著者：Jinha Chung, Byeongjun Shin, Jiin Kim, Minsoo Rhu\n発表年：2026年\n採択：MobiSys 2026\n\n詳細な背景説明、図解、実験結果の整理は個人ブログ...",
-      "category": "AI・技術",
-      "rss_category": "",
-      "image_url": ""
-    },
     {
       "title": "Cloudflare OSをVRAM 8GBのゲーミングPCで動かしたら、三目並べ1個に5ラウンドかかった話",
       "url": "https://zenn.dev/akari1106/articles/20109e62a4b8b7",
@@ -59,6 +19,56 @@
       "site": "Zenn(LLM)",
       "published": "2026-08-09T08:48:27Z",
       "description": "!\nこの記事はLiteLLMをやめて自作Goバイナリに置き換えたら一気に軽くなりましたの続きです。前回作ったGo製LLMエージェントを修正した背景の説明をします。\nなお、この記事では「ローカルLLMで完結させる」ことの意義を書きますが、手元のマシンのメモリ量によってローカルLLMの実力は大きく変わります。メモリが潤沢ではないPCでローカルLLMにコーディング質問した結果で実測したとおり、私の環境で...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "AIのセルフレビューだけで終えない — 別の会話で初見レビューする",
+      "url": "https://zenn.dev/okuyam2y/articles/fresh-conversation-code-review",
+      "site": "Zenn(LLM)",
+      "published": "2026-08-09T08:15:17Z",
+      "description": "AI にコードを書かせたあと、同じ会話で「問題がないか見直して」と頼んで終わりにしていませんか。\n私が勧めたいのは、別の AI を用意することではありません。実装した会話の中だけでレビューを終えないことです。\n同じモデルでもいいので、新しい会話を開き、今回の変更を初見でレビューさせます。別のモデルを使うのは、さらにもう一段チェックを加えたい場合の選択肢です。\n工程にすると、追加するのは次の部分です...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "受託開発でクライアントのAPIキーを預かるのをやめた ― 使った分だけ自動請求されるゲートウェイを作った話",
+      "url": "https://zenn.dev/esupple/articles/8c3cb52f3ae80c",
+      "site": "Zenn(LLM)",
+      "published": "2026-08-09T08:09:39Z",
+      "description": "AI機能を組み込む受託案件を何本かやって、確信したことがあります。\nいちばん消耗するのは実装ではなく、「APIキーとその費用を誰が持つか」の調整です。\nこの問題を解決するために、クライアントごとの使用量を計測して、月末にマージンを乗せて自動請求するゲートウェイを作りました。構想からの本番稼働まで、かかったのは実質2日です。この記事はその設計と実装の記録です。\n\n AI受託の「キー、誰が持つ問題」\n...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "2.8Tパラメータの Kimi K3 を、RTX 6000 PRO搭載ワークステーションで動かす",
+      "url": "https://zenn.dev/mamoru_f/articles/8d270259d68b71",
+      "site": "Zenn(LLM)",
+      "published": "2026-08-09T08:09:33Z",
+      "description": "はじめに\nこんにちは！\nオープン株式会社にてプロダクト企画を担当している藤田です。\nDevelopersIO の記事「DGX Spark 1台で2.8TのKimi K3を動かしてみた」を読んで、「DGX Spark じゃなくても動くんじゃないか？　うちにある dGPU ワークステーションだとどうなるんだろう」と気になったのが今回のきっかけです。手元には統合メモリ機ではなく、96GB VRAM を積...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "日本企業でFDEをやって分かった、海外のFDE論がそのまま通用しない3つの理由",
+      "url": "https://zenn.dev/ohmiyamizuki/articles/fde-japan-3-gaps",
+      "site": "Zenn(LLM)",
+      "published": "2026-08-09T07:32:36Z",
+      "description": "!\nこの記事はFDEの現場からの転載です。\n\nFDE（Forward Deployed Engineer）という職種が、日本でも少しずつ語られるようになってきた。「FDEとは何か」を解説する記事は増えたが、そのほとんどは海外——主にPalantirやOpenAI界隈——のFDE論の紹介だ。\n私は日本企業のクライアント先で、FDEとして働いている。企画段階から現場に入り、AIシステムを実装し、業務に...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "エンコーダのみモデルの感情分析ファインチューニングして Unity で動かす",
+      "url": "https://zenn.dev/edom18/articles/encoder-only-model-ft",
+      "site": "Zenn(LLM)",
+      "published": "2026-08-09T06:11:57Z",
+      "description": "はじめに\n今回は、エンコーダのみのモデルをファインチューニングする方法を備忘録として残しておきたいと思います。\nエンコーダのみのモデルは、通常の LLM（最近だとデコーダのみの構成が多い）に比べて、分類タスクなどが得意です。またモデルも軽量なのでエッジで動かすことも可能です。分類後に、LLM に投げて処理する門番のような使い方もできるかもしれません。\nこの記事で紹介しているファインチューニングの処...",
       "category": "AI・技術",
       "rss_category": "",
       "image_url": ""
