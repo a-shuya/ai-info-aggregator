@@ -1,8 +1,38 @@
 {
   "site": "Zenn(Python)",
-  "last_updated": "2026-08-09T08:59:52.402063",
-  "total_articles": 5596,
+  "last_updated": "2026-08-09T09:51:02.324118",
+  "total_articles": 5597,
   "articles": [
+    {
+      "title": "人間観察とシステム観測 　 OpenTelemetryで紐解くAI対話の構造",
+      "url": "https://zenn.dev/pomodoro_naomi/articles/2f1d7cf6b81a6c",
+      "site": "Zenn(Python)",
+      "published": "2026-08-09T09:33:11Z",
+      "description": "はじめに：縁側の観察とシステムの観測\n日常のふとした観察や実体験から得られる「人間の実感」と、システム内部の動きをログやトレースとして捉える「システムの観測（Observability）」。一見異なるこの2つは、実は深層で強く繋がっています。\n本記事では、OpenTelemetryを用いてAI対話処理の内部コンテキストやスパン情報を可視化し、AIとのやり取りにおいてどのようなデータ構造が生成・保持...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "吊り荷Yaw制御システムの開発 #01：制御環境を構築する",
+      "url": "https://zenn.dev/rindajones/articles/a8b6189171848f",
+      "site": "Zenn(Python)",
+      "published": "2026-08-09T08:24:18Z",
+      "description": "はじめに\n吊り荷を目標とするYaw角へ自動的に旋回させる制御システムを開発しました。\n最終的な目標は、カメラ画像から吊り荷のYaw角を推定し、その推定結果を用いて4基のスラスターを制御することです。制御モデルには強化学習を使用し、最終的にはRaspberry Pi上で画像認識と制御を組み合わせたリアルタイム制御を行います。\nこのシステムは、次の流れで段階的に構築しました。\n\n本シリーズでは、この開...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "localhost なら本当に安全？ 外部サイトからローカル API を守るために実装した 4 つのこと",
+      "url": "https://zenn.dev/shoutaro/articles/protect-local-api-from-external-sites",
+      "site": "Zenn(Python)",
+      "published": "2026-08-09T08:13:07Z",
+      "description": "私は現在、DB スキーマを ER 図で眺めながら、テーブルをクリックして関係をたどれるツール、shirube を開発しています。\n\nhttps://github.com/shou-taro/shirube\nshirube は、ローカルで API サーバーを起動し、ブラウザから操作する構成です。\nこの構成を採用するにあたり、「API サーバーの待ち受け先を localhost に限定しておけば本当に...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
     {
       "title": "AI全盛の今、あえてLinuxのログを読む練習を始めた",
       "url": "https://zenn.dev/azuma0530/articles/0cb63e088aa220",
@@ -19,16 +49,6 @@
       "site": "Zenn(Python)",
       "published": "2026-08-09T06:08:48Z",
       "description": "Pythonから15分 — Staddress で住所解析する\n住所正規化・ジオコーディングAPI 「Staddress（スタドレス）」 開発チームです。\n前回（Node.js — @staddress/client で住所解析する）は、公式 Node.js SDK を紹介しました。\n今回は、公式 Python SDK staddress を使い、同期・非同期の両方から住所解析を呼び出します。\nこ...",
-      "category": "開発",
-      "rss_category": "",
-      "image_url": ""
-    },
-    {
-      "title": "Agent Skills 入門",
-      "url": "https://zenn.dev/kawauso_danu/books/65fe601eb5bf04",
-      "site": "Zenn(Python)",
-      "published": "2026-08-09T05:43:34Z",
-      "description": "Agent Skills を自前実装するための入門書。\nOpenAI API を用いたサンプルコードあり。",
       "category": "開発",
       "rss_category": "",
       "image_url": ""
@@ -69,16 +89,6 @@
       "site": "Zenn(Python)",
       "published": "2026-08-09T02:14:40Z",
       "description": "AIエージェントでクローリングしてみたら、もうスクレイピングコードを書かなくなった話\n\n はじめに\nてつどんです。データエンジニアとして日々業務をこなしております。\nこれまでWebサイトから情報を取ってくる、いわゆる「クローリング・スクレイピング」は、requests + BeautifulSoupでHTMLを取ってきて、CSSセレクタで狙った要素を拾う、というのが自分の中の定番でした。\nただ最近...",
-      "category": "開発",
-      "rss_category": "",
-      "image_url": ""
-    },
-    {
-      "title": "【技術解説】ビットコイン分析 Pythonライブラリで急変動を見逃すな！ボリンジャーバンドのスクイズ検知法",
-      "url": "https://zenn.dev/sugarfree/articles/e38393e38383e38388e382b3e382a4e383b3e58886e69",
-      "site": "Zenn(Python)",
-      "published": "2026-08-09T02:00:44Z",
-      "description": "ビットコイン分析：ボリンジャーバンドのスクイズ検知法\nビットコインのような高ボラティリティな資産に投資する際、急激な価格変動を見逃さないための分析手法は非常に重要です。本記事では、ボリンジャーバンドを利用したスクイズ検知法をPythonで実装する方法を解説します。この手法を用いることで、取引のエントリーやエグジットのタイミングをより適切に捉えられます。\n\n ボリンジャーバンドの基礎知識\nボリンジャ...",
       "category": "開発",
       "rss_category": "",
       "image_url": ""
