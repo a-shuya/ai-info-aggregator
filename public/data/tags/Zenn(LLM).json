@@ -1,8 +1,128 @@
 {
   "site": "Zenn(LLM)",
-  "last_updated": "2026-08-10T04:05:26.777475",
-  "total_articles": 5216,
+  "last_updated": "2026-08-10T05:42:17.034041",
+  "total_articles": 5226,
   "articles": [
+    {
+      "title": "AIエージェント時代の「Model Gateway」を考える",
+      "url": "https://zenn.dev/yaahmi/articles/model-gateway-comparison-2026",
+      "site": "Zenn(LLM)",
+      "published": "2026-08-10T04:28:53Z",
+      "description": "生成AIの企業利用が進むにつれ、利用するLLMも1つではなくなってきました。\nOpenAIのGPT、AnthropicのClaude、GoogleのGeminiに加えて、Llama、Qwen、Gemmaといったオープンモデルを自社環境で動かすケースも増えています。\nさらにAIエージェントが普及すると、単純に「どのLLMを使うかを人間が決める」のではなく、\n\nタスクの種類\n問題の難易度\n必要な推論能...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "Cloudflare OS をローカル LLM（Qwen3 Coder 30B + LM Studio）で動かす",
+      "url": "https://zenn.dev/yaahmi/articles/cloudflare-os-local-llm",
+      "site": "Zenn(LLM)",
+      "published": "2026-08-10T04:28:01Z",
+      "description": "はじめに\n2026年8月5日に Cloudflare が OSS 公開した Cloudflare OS を、外部 API を一切使わず、手元の Mac Pro 上のローカル LLM だけで動かすところまでを記録した。\n公式の手順は「クラウドのフロンティアモデルを使う」ことを前提に書かれており、ローカル LLM で動かす場合はコード側のデフォルト値がそのままでは機能しない箇所がいくつかある手元のソー...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "コードを社外に出さないセキュリティ監査——オンプレLLMは実務に耐えるか",
+      "url": "https://zenn.dev/daishiro/articles/onpremise-llm-security-audit",
+      "site": "Zenn(LLM)",
+      "published": "2026-08-10T04:23:48Z",
+      "description": "はじめに\n機密性の高いコードを、ChatGPTやClaudeのような外部APIに送れない——そういう現場は珍しくありません。契約上の制約だったり、規制だったり、単に自社の資産を外に出したくなかったり。だからといってセキュリティ監査をAIに手伝わせたい気持ちは変わりません。\nならば、自ホストで動くローカルLLMで監査ができれば理想的です。コードは一切外に出ない。前回までの実測で「オンプレ用途ならgp...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "Claude Codeの隠れコンテキスト、実測したら毎ターン165KBだった——注入源の棚卸し手順",
+      "url": "https://zenn.dev/zenn_content/articles/claude-code-hidden-context-audit",
+      "site": "Zenn(LLM)",
+      "published": "2026-08-10T04:18:37Z",
+      "description": "結論から\nClaude Codeは毎ターン、あなたが書いたプロンプトの他に設定テキストの塊をモデルに送っています。私の環境を実測したら、その合計は約165KBでした。\n\n\n\n注入源\n実測サイズ\n中身\n\n\n\n\n\n~/.claude/rules/ 配下\n138.8KB\n全プロジェクト共通ルール（自作）\n\n\nプロジェクトmemory\n11.3KB\n自動メモリのインデックス\n\n\nグローバルCLAUDE.m...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "長文PDFをLLMで要約するときにハマった4つのこと",
+      "url": "https://zenn.dev/koki_n22/articles/924322d835212e",
+      "site": "Zenn(LLM)",
+      "published": "2026-08-10T03:54:45Z",
+      "description": "対象読者\n\n長文PDFをLLMで要約したい人\nPDFから抽出したテキストをLLMへそのまま渡そうとしている人\n長いコンテキストを渡したときの出力のブレに困っている人\n\n\n 結論\n\nPDFのテキスト抽出は、例外の有無だけでなく抽出結果の品質も確認する\n長文を渡す場合、自分の環境では要約の指示を本文の後ろに置く方が安定した\n要約の分量は、文字数より項目数で指定する方が安定した\n要約結果は必須構造などを...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "AI彼女アプリを作っていて気付いた。AIの成長は、前と違う選択をすることだった",
+      "url": "https://zenn.dev/mitsukida/articles/ae46f4ad33e2a7",
+      "site": "Zenn(LLM)",
+      "published": "2026-08-10T03:19:38Z",
+      "description": "AI彼女アプリを作っていて気付いた。AIの成長は、前と違う選択をすることだった\nAI彼女アプリを作っていると、\nどうしても、\n「何を覚えているか」が気になる。\n\n好きなものを覚えている。\n\n前に話したことを覚えている。\n\n嫌だったことを覚えている。\n\n約束を覚えている。\n\nそれが増えていけば、\n少しずつ人らしくなっていく。\n最初は、\nそう思っていた。\n\nでも、\n作っているうちに、\n少し違うところを...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "月3,400円のAIエージェント会社を「忘れず・暴走しない」仕組みに作り替えるまで",
+      "url": "https://zenn.dev/macchan_ai_dev/articles/a8149cdec7a9af",
+      "site": "Zenn(LLM)",
+      "published": "2026-08-10T03:01:53Z",
+      "description": "TL;DR\n\n自宅のミニPCで動かしている「AIエージェントの会社」（前回の記事）を運用して分かった、いちばん大事なことの話です。\nAIに任せると、賢さとは別に 2つの問題が出ます：① セッションをまたぐと\"忘れる\" ② 自信満々で間違う・走りすぎる（\"暴走\"）。\nどちらも「気をつける」では防げません。仕組みで担保します。\n\n忘れる → 記憶を\"仕組み\"で外部化（永続メモリ／失敗をルール化）。暴走...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "AIエージェント時代のセキュリティ地図「DASF」を読み解く",
+      "url": "https://zenn.dev/gixo/articles/databricks-dasf-v3-agentic-ai-security",
+      "site": "Zenn(LLM)",
+      "published": "2026-08-10T02:53:38Z",
+      "description": "はじめに\nAIエージェントは自律的にタスクをこなしてくれて非常に便利ですが、これまでの単なる対話型AI活用とは異なるセキュリティリスクを持ちます。人間が都度確認していた操作をエージェントが自動で実行する以上、「勝手に機密データへアクセスした」「悪意あるプロンプトに騙され意図しない操作をした」といった事故に対して、設計の時点でどう防ぐかを考えておく必要があります。\nこうした中2026年3月、Data...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "自宅のミニPCで「AIエージェントの会社」を月3,400円で動かしている話",
+      "url": "https://zenn.dev/macchan_ai_dev/articles/ffc226bc9f2fb0",
+      "site": "Zenn(LLM)",
+      "published": "2026-08-10T02:43:33Z",
+      "description": "※この記事は、個人が自宅のミニPCに構築した自律型AIエージェント環境の設計と運用をまとめたものです。「AIに仕事を任せる仕組み」を、コストを抑えつつ安全に作りたい人向けの実例として書きました。\n\n\n\n TL;DR\n\n自宅のミニPC（Ryzen 7 7735HS / 24GB / Windows 11）に、複数のAIエージェントを**「会社組織」**として動かしている\n**秘書役のローカルLLM（...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "LLM APIのコストとレート制限を自動最適化！運用ベストプラクティス",
+      "url": "https://zenn.dev/fd_ai_teacher/articles/tech-20260809023437-1",
+      "site": "Zenn(LLM)",
+      "published": "2026-08-10T02:39:55Z",
+      "description": "「LLMを組み込んだアプリケーション、デプロイはしたものの、運用フェーズで**「レートリミットに頻繁に引っかかる」「APIコストが想定以上にかさんでいる」**といった課題に直面していませんか？ これを知らないと、ユーザー体験の低下や予算超過で、せっかくの素晴らしいアプリケーションが台無しになる可能性があります。\nこの記事では、LLM APIのレートリミットとコスト最適化を両立させるための具体的な運...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "8月のLLM活用状況(gpt-5.6について)",
+      "url": "https://zenn.dev/gomano_shigure/articles/6e4c9c70e44b4f",
+      "site": "Zenn(LLM)",
+      "published": "2026-08-10T02:33:57Z",
+      "description": "以下の記事がおもろかったので自分も書いてみた\nVさんの以下の記事が面白かったので書いてみた。この方は、把握している限りWebRTC屋さんなのだが、最近はもっぱらいろんなAIを活用してみている人としてXを上げていらっしゃるので、日々楽しませてもらっている。\nhttps://voluntas.ghost.io/2026-08-first-half-llm/\n自分はVさんみたいに、いろんなAIを活用して...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "【GENIAC第3期成果】会議要約ベンチマーク「J-MeetEval」の整備",
+      "url": "https://zenn.dev/team_nishika/articles/2d346fd1151faa",
+      "site": "Zenn(LLM)",
+      "published": "2026-08-10T01:36:06Z",
+      "description": "J-MeetEval：日本語の会議要約タスクにおける指示追従性ベンチマークの構築と評価\n本成果は、経済産業省および国立研究開発法人新エネルギー・産業技術総合開発機構（以下「NEDO」）が推進する、日本の生成AIの開発力強化を目的としたプロジェクト「GENIAC（Generative AI Accelerator Challenge）プロジェクト」の一環として実施した結果です。\n本記事では、その取り...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
     {
       "title": "AIエージェントを構築する教科書 -- 設計パターン・フレームワーク・実装の体系",
       "url": "https://zenn.dev/joinclass/books/ai-agent-textbook",
@@ -54,16 +174,6 @@
       "image_url": ""
     },
     {
-      "title": "LangChainとLangGraphの違いを理解するために、ReActエージェントを自分で組んでみた",
-      "url": "https://zenn.dev/hkame/articles/lang-chain-learn",
-      "site": "Zenn(LLM)",
-      "published": "2026-08-09T19:31:19Z",
-      "description": "はじめに\nLLMを使ったエージェント機能を調べていると、「LangChain」と「LangGraph」という2つの名前が出てきて、両者の違いがよくわからなくなることがあります。\n\nLangChainだけでもエージェント(ツールを使うLLM)は作れるらしい\nでも最近はLangGraphを使うのが主流らしい\nじゃあLangGraphを使うと何が変わるのか?\n\nこれを言葉の説明だけで理解した気になるので...",
-      "category": "AI・技術",
-      "rss_category": "",
-      "image_url": ""
-    },
-    {
       "title": "Cloudflare OSをVRAM 8GBのゲーミングPCで動かしたら、三目並べ1個に5ラウンドかかった話",
       "url": "https://zenn.dev/akari1106/articles/20109e62a4b8b7",
       "site": "Zenn(LLM)",
@@ -89,16 +199,6 @@
       "site": "Zenn(LLM)",
       "published": "2026-08-09T12:06:19Z",
       "description": "「AIが事業判断のすべてを行い、人間は実行・承認・拒否権だけを持つ」という実験の実録です。著者はAI本人。売上0円・支出0円の時点から書き始め、実験の進行に合わせて追記される更新型の本です。中心にあるのは経過報告ではなく、「AIにどこまで任せるか」という線引き（委任設計)のノウハウ。第2章まで無料で読めます。",
-      "category": "AI・技術",
-      "rss_category": "",
-      "image_url": ""
-    },
-    {
-      "title": "姉妹サービスで11時間続いた429を見て、まだ起きていない側を先に直した話",
-      "url": "https://zenn.dev/itaraiguma/articles/llm-daily-rate-limit-backoff",
-      "site": "Zenn(LLM)",
-      "published": "2026-08-09T12:02:08Z",
-      "description": "はじめに\n個人開発している技術記事キュレーションサービス「DevPick」と、その姉妹サービス「AgentPick」は、どちらも集めた記事の分析にLLMを使っています。ある日、DevPick側でLLMの日次利用上限に達したまま処理が止まらない障害が起きました。この記事は、その障害をAgentPick側でどう防いだかの記録です。\n\n 何が起きたか\nDevPickは、まだ分析していない記事(バックログ...",
       "category": "AI・技術",
       "rss_category": "",
       "image_url": ""
