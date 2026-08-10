@@ -1,18 +1,8 @@
 {
   "site": "Zenn(Python)",
-  "last_updated": "2026-08-10T08:46:43.607938",
-  "total_articles": 5623,
+  "last_updated": "2026-08-10T10:04:38.765337",
+  "total_articles": 5626,
   "articles": [
-    {
-      "title": "長文PDFをLLMで要約するときにハマった4つのこと",
-      "url": "https://zenn.dev/koki_n22/articles/924322d835212e",
-      "site": "Zenn(Python)",
-      "published": "2026-08-10T03:54:45Z",
-      "description": "対象読者\n\n長文PDFをLLMで要約したい人\nPDFから抽出したテキストをLLMへそのまま渡そうとしている人\n長いコンテキストを渡したときの出力のブレに困っている人\n\n\n 結論\n\nPDFのテキスト抽出は、例外の有無だけでなく抽出結果の品質も確認する\n長文を渡す場合、自分の環境では要約の指示を本文の後ろに置く方が安定した\n要約の分量は、文字数より項目数で指定する方が安定した\n要約結果は必須構造などを...",
-      "category": "開発",
-      "rss_category": "",
-      "image_url": ""
-    },
     {
       "title": "Whisperの言語自動判定に3回刺された話（日本語の会議が英訳されて返ってくる）",
       "url": "https://zenn.dev/kaigiai/articles/3b35acb0ddc6a5",
@@ -134,6 +124,16 @@
       "image_url": ""
     },
     {
+      "title": "LangChainとLangGraphの違いを理解するために、ReActエージェントを自分で組んでみた",
+      "url": "https://zenn.dev/hkame/articles/lang-chain-learn",
+      "site": "Zenn(Python)",
+      "published": "2026-08-09T19:31:19Z",
+      "description": "はじめに\nLLMを使ったエージェント機能を調べていると、「LangChain」と「LangGraph」という2つの名前が出てきて、両者の違いがよくわからなくなることがあります。\n\nLangChainだけでもエージェント(ツールを使うLLM)は作れるらしい\nでも最近はLangGraphを使うのが主流らしい\nじゃあLangGraphを使うと何が変わるのか?\n\nこれを言葉の説明だけで理解した気になるので...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
       "title": "3人分のトークに色分け字幕を入れる作業がつらすぎて、字幕エディタを作った",
       "url": "https://zenn.dev/uribow/articles/7ada90c99a78b2",
       "site": "Zenn(Python)",
@@ -194,11 +194,31 @@
       "image_url": ""
     },
     {
+      "title": "MCP対応でAgentCore Gatewayを本番投入する前のチェックリスト",
+      "url": "https://zenn.dev/bambampurin/articles/2026-08-01-tech-daily",
+      "site": "Zenn(Python)",
+      "published": "2026-08-09T14:00:52Z",
+      "description": "!\n2026-08-01時点の実ニュースでは、LLMそのものよりもエージェント化・業務統合・MCP対応が前面に出ています。特に「WAIC 2026詳報」の“LLMは舞台裏へ”という整理と、AWSのMCP対応、Microsoft・Fujitsu・SAPの業務エージェント関連ニュースがそれを裏づけます。一方で、ReutersやCNNなどが報じるOpenAI/Anthropic関連の封じ込め問題により、...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
       "title": "GMOコインFX APIでHTTP 200なのに約定が0件になった話 — ボディのstatusを見ない罠",
       "url": "https://zenn.dev/ozapon/articles/gmo-fx-http200-empty-executions",
       "site": "Zenn(Python)",
       "published": "2026-08-09T13:12:59Z",
       "description": "TL;DR\n\nGMOコインFX の Private API は、業務エラーでも HTTP 200 + ボディ {\"status\": 1, \"messages\": [...]} を返します\n\nhttpx.Response.raise_for_status() だけでは通過します。data が無いレスポンスを素朴にパースすると 空配列を返して正常終了し、API エラーが「約定なし」に化けます\n実際には...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "姉妹サービスで11時間続いた429を見て、まだ起きていない側を先に直した話",
+      "url": "https://zenn.dev/itaraiguma/articles/llm-daily-rate-limit-backoff",
+      "site": "Zenn(Python)",
+      "published": "2026-08-09T12:02:08Z",
+      "description": "はじめに\n個人開発している技術記事キュレーションサービス「DevPick」と、その姉妹サービス「AgentPick」は、どちらも集めた記事の分析にLLMを使っています。ある日、DevPick側でLLMの日次利用上限に達したまま処理が止まらない障害が起きました。この記事は、その障害をAgentPick側でどう防いだかの記録です。\n\n 何が起きたか\nDevPickは、まだ分析していない記事(バックログ...",
       "category": "開発",
       "rss_category": "",
       "image_url": ""
@@ -219,6 +239,16 @@
       "site": "Zenn(Python)",
       "published": "2026-08-09T11:40:29Z",
       "description": "この本は、Pythonの自動テストフレームワークであるpytestを体系的に学べる実践的な入門書です。\n最大の特徴は、面倒なローカル環境の構築が一切不要な点にあります。CodeSandboxを利用するため、ブラウザさえあればすぐに全50問のテスト課題に取り組むことができます。\n学習内容は段階的にステップアップするよう構成されています。最初は単純な関数のテストから始まり、クラスや例外処理、フィクスチ...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "LLMアプリの計装は、属性名より先に境界を決める──OTel GenAIのPRから見えたこと",
+      "url": "https://zenn.dev/agentgymleader/articles/e1122f2d3fa273",
+      "site": "Zenn(Python)",
+      "published": "2026-08-09T10:44:53Z",
+      "description": "LLMアプリケーションにOpenTelemetryを導入しようとしたとき、真っ先に「モデル名やトークン数、プロンプト本文をどの属性名で記録するか」をリストアップしたくなります。\nしかし、属性名から入り、それをアプリケーションコードやSDKに直接書き込もうとすると、後から厄介な問題が起きます。ネットワーク通信のSpanとLLMのSpanが二重に出る、あるいは、SDKが例外や応答をどこで扱うか不明瞭な...",
       "category": "開発",
       "rss_category": "",
       "image_url": ""
