@@ -1,7 +1,7 @@
 {
   "site": "Zenn(Python)",
-  "last_updated": "2026-08-10T16:38:04.546073",
-  "total_articles": 5632,
+  "last_updated": "2026-08-10T17:35:17.933063",
+  "total_articles": 5631,
   "articles": [
     {
       "title": "AIエージェントの仕組みを学ぶ・創る——軽量・透明な制御Harness「lumichy-agent」解説",
@@ -54,11 +54,11 @@
       "image_url": ""
     },
     {
-      "title": "LLMアプリのトークン・レイテンシ・コストをOpenTelemetryで可観測にする（Django実装）",
-      "url": "https://zenn.dev/snowcode/articles/otel-llm-token-latency-cost-django",
+      "title": "AIの呼び出しを16本同時にしたら、さばけた量は3.1倍が最良だった。1本あたりの待ちは3.3秒から23.3秒へ",
+      "url": "https://zenn.dev/numarn/articles/claude-p-parallel-throughput-cost-handson",
       "site": "Zenn(Python)",
-      "published": "2026-08-10T08:35:43Z",
-      "description": "LLMを組み込んだ機能は、運用に入った瞬間に「中で何が起きているか」が見えなくなります。1リクエストで何トークン使ったのか、レイテンシはどこで伸びたのか、今日いくらかかっているのか——これらは既定では記録されません。\nこの記事では、ベンダー非依存の計装標準である OpenTelemetry（OTel） を使って、LLM呼び出しの トークン・レイテンシ・コスト をトレースとメトリクスで可観測にする方...",
+      "published": "2026-08-10T06:44:09Z",
+      "description": "AIに同じ作業を何十回もやらせる仕組み(自動化)を書いていると、必ず「同時に何本走らせるか」を決める\n場面が来ます。1本ずつ順番に待つのは遅い。だったら8本まとめて走らせればいい。私もそう考えました。\n実際に、同じ依頼を8回投げる仕事量を固定したまま、同時に走らせる本数(以下、並列度)だけを\n1 / 2 / 4 / 8 と変えて計りました。結果、合計時間は確かに縮みました。26.8秒が8.6秒にな...",
       "category": "開発",
       "rss_category": "",
       "image_url": ""
@@ -89,16 +89,6 @@
       "site": "Zenn(Python)",
       "published": "2026-08-10T05:02:45Z",
       "description": "TL;DR\n\n埼玉県の秩父地域(秩父市・横瀬町・皆野町・長瀞町・小鹿野町)では、資源ごみの収集日が曜日で決まっていない。回数は月2回などと決まっているのに、今回は水曜、次は土曜、その次は火曜、と動いていく\n正体は巡回制だった。曜日ではなく61地区を固定の順序で流していて、1日あたり約5地区・約12稼働日で一巡する。12は7の倍数ではないので、一巡するたび曜日がずれる。しかも巡回は2区域で並行して走...",
-      "category": "開発",
-      "rss_category": "",
-      "image_url": ""
-    },
-    {
-      "title": "CLI 上の Claude Code で Computer Use を再現する（追加課金ゼロ、441 行のエージェント）",
-      "url": "https://zenn.dev/tokium_dev/articles/gui-agent-zero-extra-cost",
-      "site": "Zenn(Python)",
-      "published": "2026-08-10T04:59:12Z",
-      "description": "!\nこの記事は何の話か（3 行まとめ）\n\nComputer Use（AI がスクリーンを見てマウス・キーボードを操作する）を試したいけれど、API の従量課金は使いたくない。その制約のもとで Windows 11 のネイティブ GUI を自律操作するエージェントを自作しました\nポイントは1つで、エージェントの「頭脳」を API を呼ぶコードではなく、いま開いている Claude Code の対話セ...",
       "category": "開発",
       "rss_category": "",
       "image_url": ""
