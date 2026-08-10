@@ -1,8 +1,108 @@
 {
   "site": "Zenn(Python)",
-  "last_updated": "2026-08-10T02:04:35.089535",
-  "total_articles": 5608,
+  "last_updated": "2026-08-10T04:05:26.777475",
+  "total_articles": 5618,
   "articles": [
+    {
+      "title": "長文PDFをLLMで要約するときにハマった4つのこと",
+      "url": "https://zenn.dev/koki_n22/articles/924322d835212e",
+      "site": "Zenn(Python)",
+      "published": "2026-08-10T03:54:45Z",
+      "description": "対象読者\n\n長文PDFをLLMで要約したい人\nPDFから抽出したテキストをLLMへそのまま渡そうとしている人\n長いコンテキストを渡したときの出力のブレに困っている人\n\n\n 結論\n\nPDFのテキスト抽出は、例外の有無だけでなく抽出結果の品質も確認する\n長文を渡す場合、自分の環境では要約の指示を本文の後ろに置く方が安定した\n要約の分量は、文字数より項目数で指定する方が安定した\n要約結果は必須構造などを...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "Whisperの言語自動判定に3回刺された話（日本語の会議が英訳されて返ってくる）",
+      "url": "https://zenn.dev/kaigiai/articles/3b35acb0ddc6a5",
+      "site": "Zenn(Python)",
+      "published": "2026-08-10T03:16:56Z",
+      "description": "はじめに\nAI議事録サービス（Kaigi AI）を個人開発しています。音声の文字起こしはOpenAI Whisper系のAPI、議事録生成はClaude、バックエンドはFastAPI、フロントはNext.jsという構成です。\nこの1ヶ月で、文字起こし品質のバグ報告が3件ありました。3件とも原因は同じ場所でした——Whisperの言語自動判定です。しかも症状が「文字起こしが少し変」ではなく「日本語の...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "ローソン条件をPythonで計算する｜核融合が\"成立\"する境界",
+      "url": "https://zenn.dev/maru1228/articles/fusion-lawson-criterion-python",
+      "site": "Zenn(Python)",
+      "published": "2026-08-10T03:00:05Z",
+      "description": "!\nこの記事は自サイト ローソン条件をPythonで計算する｜核融合が\"成立\"する境界 の再掲（クロス投稿）です。図をインタラクティブに動かせる版は元記事でどうぞ。\n\n「核融合はいつできる？」の答えを握るのが ローソン条件です。プラズマがどれだけ濃く・熱く・長く保てれば、核融合が自分の熱で燃え続けられるか——その境界を1つの数字で表します。この記事ではPythonで三重積を計算し、各方式が狙う値と...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "ベイズMMMでマーケ予算配分を決める：pymc-marketingが選ばれる理由",
+      "url": "https://zenn.dev/libercraft/articles/20260810-bayesian-mmm-pymc-marketing",
+      "site": "Zenn(Python)",
+      "published": "2026-08-10T02:00:00Z",
+      "description": "「iOS 14.5・サードパーティCookie廃止・GDPR対応で、広告のクリック単位の効果測定がどんどん信頼できなくなっている」——マーケティング分析の現場では、この個人単位のトラッキングが崩れていく状況への対応が急務になっています。\nこうした背景から再び注目されているのが、個人データを一切使わず、チャネルごとの広告出稿量と売上・成果の集計値だけで効果を推定する**マーケティングミックスモデリン...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "同じバグを3回直した — 「経路ごとに塞ぐ」のをやめて不変条件で書き直すまで",
+      "url": "https://zenn.dev/ponfreelance/articles/autotrader-dead-check-third-time",
+      "site": "Zenn(Python)",
+      "published": "2026-08-10T01:53:20Z",
+      "description": "前回、自社プロダクトの暗号資産自動売買BOT（AutoTrader）が再起動のたびに死ぬ話を書きました。原因は「dead 判定の基準になる last_run_at が古いまま残り、BOT が最初のサイクルを回すより先に『応答なし』と判定される」という競合でした。\n修正して、直ったと思っていました。\n5日後、同じことが起きました。しかも記事に「再発防止をどこで止めるか」という節まで書いた直後です。\n...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "トヨタの売上高が17.6兆円になっていた — 財務データを検証する3層のバリデータ",
+      "url": "https://zenn.dev/edinetty/articles/f8c3ead3d41207",
+      "site": "Zenn(Python)",
+      "published": "2026-08-10T01:43:41Z",
+      "description": "はじめに\nうちのサイトでは一時期、トヨタ自動車の売上高が17.6兆円と表示されていました。本来は45.1兆円（当時の最新期）です。17.6兆円はトヨタ単体の売上高で、原因は正規化処理のバグでした。連結の売上タグ（SalesRevenuesIFRS）よりも単体の売上タグ（NetSales）のほうが、タグ選択の優先度で勝ってしまっていたのです。\nedinetty.com という財務データサイトを個人で...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "AI開発者が意識すべきツール管理戦略：効率的選定とライフサイクル管理の実践手法",
+      "url": "https://zenn.dev/yutaka8484/articles/kobayashi-20260803-ai-tool-management-strate",
+      "site": "Zenn(Python)",
+      "published": "2026-08-10T00:13:30Z",
+      "description": "AI開発のツール管理における課題\nAI開発プロジェクトでは、機械学習ライブラリ、データ処理ツール、CI/CDパイプライン、モニタリングシステムなど多様なツールが利用されます。ただし、ツールの選択と運用にばらつきがあると、以下のような問題が生じます。\n\n\n依存関係の複雑化：特定のバージョンに依存するツールが増えると、環境構築の手間が増加します。\n\nライフサイクル管理の甘化：更新頻度の違いにより、セキ...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "焼きなましでシフト表を組む前に、初期解の構造を疑う",
+      "url": "https://zenn.dev/kwrkb/articles/74206538812bba",
+      "site": "Zenn(Python)",
+      "published": "2026-08-10T00:07:05Z",
+      "description": "薬局のシフト表は、いまだに毎月誰かが手で組んでいます。自分で自動生成のツールを書けないかと思って手をつけたのですが、最初の実装は見事に破綻しました。\nやったことは単純で、全員にランダムにシフトを割り当てて、「同じ日の 2 人を入れ替える」操作を延々と繰り返す局所探索です。交換を選んだのは、入れ替えてもその日のシフト構成が変わらないからでした。3 日目の A さんと B さんを交換しても、3 日目に...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "エンジニア視点で語る！Pythonで学ぶマクロ経済学入門 34",
+      "url": "https://zenn.dev/maszkot/articles/690d598519169a",
+      "site": "Zenn(Python)",
+      "published": "2026-08-10T00:00:32Z",
+      "description": "https://qiita.com/maskot1977/items/b7fd87cf2d5419189221\nDJミオ：こんばんは、「エンジニア視点で語る！Pythonで学ぶマクロ経済学入門」の時間です。DJミオです。\nDJレン：DJレンです。今日はかなり重要回です。テーマは――\n「制度は単体で評価するな ― 消費税・累進課税・BI・JGを動学で考える」。\nしかも今日は、単なる経済談義じゃなくて...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "【Databricks新機能】Python UDTFがUnity CatalogでGAに",
+      "url": "https://zenn.dev/sasakai/articles/dbx-20260728-python-udtf-unity-catalog",
+      "site": "Zenn(Python)",
+      "published": "2026-08-09T22:31:38Z",
+      "description": "これは何か\nUnity CatalogへのPython UDTF（ユーザー定義テーブル関数）の登録がGA（一般提供）になりました。\n\nRegistering Python user-defined table functions (UDTFs) in Unity Catalog is now generally available in Databricks Runtime 18. A Unity...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
     {
       "title": "3人分のトークに色分け字幕を入れる作業がつらすぎて、字幕エディタを作った",
       "url": "https://zenn.dev/uribow/articles/7ada90c99a78b2",
