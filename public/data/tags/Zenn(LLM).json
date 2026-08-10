@@ -1,7 +1,7 @@
 {
   "site": "Zenn(LLM)",
-  "last_updated": "2026-08-10T06:59:18.165429",
-  "total_articles": 5227,
+  "last_updated": "2026-08-10T08:46:43.607938",
+  "total_articles": 5233,
   "articles": [
     {
       "title": "AIエージェント時代の「Model Gateway」を考える",
@@ -39,16 +39,6 @@
       "site": "Zenn(LLM)",
       "published": "2026-08-10T04:18:37Z",
       "description": "結論から\nClaude Codeは毎ターン、あなたが書いたプロンプトの他に設定テキストの塊をモデルに送っています。私の環境を実測したら、その合計は約165KBでした。\n\n\n\n注入源\n実測サイズ\n中身\n\n\n\n\n\n~/.claude/rules/ 配下\n138.8KB\n全プロジェクト共通ルール（自作）\n\n\nプロジェクトmemory\n11.3KB\n自動メモリのインデックス\n\n\nグローバルCLAUDE.m...",
-      "category": "AI・技術",
-      "rss_category": "",
-      "image_url": ""
-    },
-    {
-      "title": "長文PDFをLLMで要約するときにハマった4つのこと",
-      "url": "https://zenn.dev/koki_n22/articles/924322d835212e",
-      "site": "Zenn(LLM)",
-      "published": "2026-08-10T03:54:45Z",
-      "description": "対象読者\n\n長文PDFをLLMで要約したい人\nPDFから抽出したテキストをLLMへそのまま渡そうとしている人\n長いコンテキストを渡したときの出力のブレに困っている人\n\n\n 結論\n\nPDFのテキスト抽出は、例外の有無だけでなく抽出結果の品質も確認する\n長文を渡す場合、自分の環境では要約の指示を本文の後ろに置く方が安定した\n要約の分量は、文字数より項目数で指定する方が安定した\n要約結果は必須構造などを...",
       "category": "AI・技術",
       "rss_category": "",
       "image_url": ""
@@ -124,6 +114,16 @@
       "image_url": ""
     },
     {
+      "title": "実在検証済み221件のはずが、数え直したら199件だった",
+      "url": "https://zenn.dev/kaji_kaji/articles/llm-parallel-verified-data-seeding",
+      "site": "Zenn(LLM)",
+      "published": "2026-08-10T00:00:08Z",
+      "description": "はじめに\n個人開発で作っているかき氷記録アプリの店舗マスタが、ずっと手動登録の20件しかありませんでした。\n自分で使う分には困らないのですが、投稿をする人が増えるほど「近くの店が出てこない」状態が目立つようになってきます。かといって、全国の店を自分で1件ずつ調べて入力するのは現実的な時間ではありません。\nちょうど Claude Code をエージェントとして並列に走らせる使い方を試していたので、こ...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
       "title": "AIエージェントを構築する教科書 -- 設計パターン・フレームワーク・実装の体系",
       "url": "https://zenn.dev/joinclass/books/ai-agent-textbook",
       "site": "Zenn(LLM)",
@@ -149,6 +149,66 @@
       "site": "Zenn(LLM)",
       "published": "2026-08-09T22:00:05Z",
       "description": "エージェント評価のベンチマークは、エージェントにシェルやネットワークを与えた状態で動かします。権限を与えないと能力を測れないからです。ところがこの権限は、評価されるエージェント自身が採点をごまかす手段 にもなります。タスクを解く代わりに採点スクリプトの側に手を入れて、合格の判定を作ってしまえるからです。\nターミナル操作のベンチマークである Terminal-Bench については、この点が具体的に...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "AI討論の全ログは渡さない、ラウンド3の出力だけで意思決定メモを作る",
+      "url": "https://zenn.dev/every_ai_recipe/articles/ai-roundtable-decision-memo",
+      "site": "Zenn(LLM)",
+      "published": "2026-08-09T21:08:01Z",
+      "description": "TL;DR\n\n前回の記事で、1つのチャットに5人の役を立ててAIに討論させる「円卓プロンプト」を紹介した。今回はその出力を報告用の1枚に変換する後工程を扱う\n討論の全ログ（5ラウンド分の発言）をそのまま次の相手に渡すと、要約でなく丸投げになり読まれない。「合意できた点」「対立した点」「決断の分岐（2択）」の3要素だけを抜き出し、新しいチャットで意思決定メモのフォーマットに変換すると1枚に収まった\n...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "LangChainとLangGraphの違いを理解するために、ReActエージェントを自分で組んでみた",
+      "url": "https://zenn.dev/hkame/articles/lang-chain-learn",
+      "site": "Zenn(LLM)",
+      "published": "2026-08-09T19:31:19Z",
+      "description": "はじめに\nLLMを使ったエージェント機能を調べていると、「LangChain」と「LangGraph」という2つの名前が出てきて、両者の違いがよくわからなくなることがあります。\n\nLangChainだけでもエージェント(ツールを使うLLM)は作れるらしい\nでも最近はLangGraphを使うのが主流らしい\nじゃあLangGraphを使うと何が変わるのか?\n\nこれを言葉の説明だけで理解した気になるので...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "常駐型AIチャットエージェントの「トークンコスト予算」設計",
+      "url": "https://zenn.dev/hach/articles/chat-agent-token-cost-budget-design",
+      "site": "Zenn(LLM)",
+      "published": "2026-08-09T16:04:43Z",
+      "description": "Slack / Teams / Chatworkに常駐して働くAIエージェントは、機能が増えるほどLLM呼び出しの回数と1回あたりのトークン量が積み上がっていきます。レート制限(APIの同時実行数・秒間リクエスト数)の設計と混同されがちですが、こちらはお金の話です。この記事では、常駐エージェントのLLM推論コストをどう予算として設計し、暴走を防いだかを整理します。\n\n レート制限対策だけでは費用は...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "「Kimi-K3をRTX 6000 PROで動かした」の続き。モデルを変えたら5.2倍速くなった話",
+      "url": "https://zenn.dev/mamoru_f/articles/2b4f87b42736e2",
+      "site": "Zenn(LLM)",
+      "published": "2026-08-09T15:21:13Z",
+      "description": "はじめに\nこんにちは！\nオープン株式会社にてプロダクト企画を担当している藤田です。\n前回の記事「2.8Tパラメータの Kimi K3 を、RTX 6000 PRO搭載ワークステーションで動かす」を書いた際、「実用に耐える速度ではありません」と評価しました。\n会話ベースで 0.46〜0.67 tok/s、160 トークンの返答に 4〜6 分かかる。\n動いたこと自体には意味があるが、実用にはまだ遠い、...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "「AIの思考って何だ?」と思ったので、自分で定義を書き始めた。",
+      "url": "https://zenn.dev/think_node/articles/16ecf129142d47",
+      "site": "Zenn(LLM)",
+      "published": "2026-08-09T15:07:01Z",
+      "description": "この連載について\nLLM を触っていて、ふと「これ、考えてるのか?」と思ったのが始まりです。\nそこから「じゃあ思考って何?」を調べて自分が欲しい形の答えが見つからなかったので、自分で書くことにしました。\n書いた仮説を実装したら、実装が仮説の欠陥を次々に見つけてきました。結果として、この連載は理論が増えていく話ではなく、理論が減っていく話になります。\n書くのは研究開発の過程です。\n\nどんな問いを立て...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "論文メモ：Agent-XでオンデバイスAIエージェントを高速化する",
+      "url": "https://zenn.dev/kas_blog/articles/20260805-agent-x-on-device-ai-agent-acceleration",
+      "site": "Zenn(LLM)",
+      "published": "2026-08-09T14:45:59Z",
+      "description": "はじめに\nこの記事は、以下の論文を読んだ技術メモです。\n\n論文タイトル：Agent-X: Full Pipeline Acceleration of On-device AI Agents\n\n著者：Jinha Chung, Byeongjun Shin, Jiin Kim, Minsoo Rhu\n発表年：2026年\n採択：MobiSys 2026\n\n詳細な背景説明、図解、実験結果の整理は個人ブログ...",
       "category": "AI・技術",
       "rss_category": "",
       "image_url": ""
