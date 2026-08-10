@@ -1,14 +1,104 @@
 {
   "site": "Zenn(Python)",
-  "last_updated": "2026-08-10T11:19:44.075353",
-  "total_articles": 5620,
+  "last_updated": "2026-08-10T12:05:15.803442",
+  "total_articles": 5629,
   "articles": [
     {
-      "title": "長文PDFをLLMで要約するときにハマった4つのこと",
-      "url": "https://zenn.dev/koki_n22/articles/924322d835212e",
+      "title": "AIエージェントの仕組みを学ぶ・創る——軽量・透明な制御Harness「lumichy-agent」解説",
+      "url": "https://zenn.dev/lumichy/articles/lumichy-agent-framework-guide-2026",
       "site": "Zenn(Python)",
-      "published": "2026-08-10T03:54:45Z",
-      "description": "対象読者\n\n長文PDFをLLMで要約したい人\nPDFから抽出したテキストをLLMへそのまま渡そうとしている人\n長いコンテキストを渡したときの出力のブレに困っている人\n\n\n 結論\n\nPDFのテキスト抽出は、例外の有無だけでなく抽出結果の品質も確認する\n長文を渡す場合、自分の環境では要約の指示を本文の後ろに置く方が安定した\n要約の分量は、文字数より項目数で指定する方が安定した\n要約結果は必須構造などを...",
+      "published": "2026-08-10T11:02:55Z",
+      "description": "AIエージェントの仕組みを学ぶ・創る——軽量・透明な制御Harness「lumichy-agent」解説\n\nLLM（大規模言語モデル）を活用したAIエージェント開発において、LangChainなどの巨大な既存フレームワークは機能が非常に豊富な一方、抽象化の階層が深く内部処理がブラックボックス化しやすいという一面があります。\n「エージェントが内部でどう思考し、どうツールを呼び出しているのかを正確に理...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "吊り荷Yaw制御システムの開発 #02-1：強化学習の環境を構築する",
+      "url": "https://zenn.dev/rindajones/articles/payload-yaw-control-02_1",
+      "site": "Zenn(Python)",
+      "published": "2026-08-10T09:46:15Z",
+      "description": "はじめに\n前回は、BlenderとPyBulletを用いて、吊り荷Yaw制御を検証するためのシミュレーション環境を構築しました。\n今回は、この環境を強化学習の制御環境として構成します。\n吊り荷のYaw角を制御するための観測値、Action、Reward、成功条件を定義し、SACによる学習を実行できる環境を構築します。\n強化学習で何を観測し、どのような操作を行い、その結果をどう評価するかという、制御...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "「URLを入力するだけ」の診断ツールを作ったら、自分がSSRFの入り口になりかけた話",
+      "url": "https://zenn.dev/boostertech/articles/bf08867486bddc",
+      "site": "Zenn(Python)",
+      "published": "2026-08-10T09:12:24Z",
+      "description": "はじめに\n株式会社ブースターテクノロジーの土屋です。無料のWebサイト脆弱性診断ツール「セキュリティブースター」の売りは「URLを入力するだけ」というシンプルさです。\nただ、これを作りながら気づいたことがあります。「ユーザーが入力した任意のURLに対してサーバーがリクエストを飛ばす」という機能そのものが、SSRF（Server-Side Request Forgery）の典型的な入り口の形をしてい...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "リビングの壁に家族ダッシュボードを掛けた話 — カーテンレール吊り2.4万円＋Mac mini＋FastAPI",
+      "url": "https://zenn.dev/tizawa/articles/family-wall-dashboard",
+      "site": "Zenn(Python)",
+      "published": "2026-08-10T08:59:51Z",
+      "description": "はじめに\n家族の予定は Google カレンダーに入っているのに、家族はそれを見ません。親のスマホの中にあるからです。子どもはスマホを持っていないし、持っていてもカレンダーアプリは開きません。\nそこで、リビングの壁に常時表示の家族ダッシュボードを作りました。時計・天気・これから7日間の家族予定・6週間カレンダー・おてつだいポイント・伝言メモが1画面に出ていて、家族の誰でも「歩きながら3秒で」今日と...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "【環境構築メモ】フォントファイルを指定したMatplotlibの日本語化設定",
+      "url": "https://zenn.dev/99log/articles/99log_python-matplotlib-japanese",
+      "site": "Zenn(Python)",
+      "published": "2026-08-10T08:58:09Z",
+      "description": "こんにちは、九十九ログです。\nMatplotlibの日本語設定についての、オレオレ環境についてのメモ書きです。\n構築した環境は、Windows11上に配置したフォントファイルをMatplotlibで使用するよう指定するPythonスクリプトをimportして使用することを想定しています。\nフォントは、IPAexゴシックを使用することにしました。\nなお、japanize-matplotlibを使うの...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "LLMアプリのトークン・レイテンシ・コストをOpenTelemetryで可観測にする（Django実装）",
+      "url": "https://zenn.dev/snowcode/articles/otel-llm-token-latency-cost-django",
+      "site": "Zenn(Python)",
+      "published": "2026-08-10T08:35:43Z",
+      "description": "LLMを組み込んだ機能は、運用に入った瞬間に「中で何が起きているか」が見えなくなります。1リクエストで何トークン使ったのか、レイテンシはどこで伸びたのか、今日いくらかかっているのか——これらは既定では記録されません。\nこの記事では、ベンダー非依存の計装標準である OpenTelemetry（OTel） を使って、LLM呼び出しの トークン・レイテンシ・コスト をトレースとメトリクスで可観測にする方...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "OpenTelemetryを「監視」ではなく「自分の仮説が正しいか確かめる装置」として使う",
+      "url": "https://zenn.dev/think_node/articles/2fb2afc1432124",
+      "site": "Zenn(Python)",
+      "published": "2026-08-10T06:34:27Z",
+      "description": "個人でAIシステムの研究開発をしています。\nこの記事は、OpenTelemetry を本番監視ではなく、個人研究の検証装置として使った記録です。\n先に言っておくと、計装して一番役に立ったのは、Traceそのものではありませんでした。 計装しようとした過程で、自分のコードの構造的な問題が見つかったことでした。そこも含めて書きます。\nなお、研究対象そのものの内部設計は事業上の理由で公開しません。ただし...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "RobStride EduLite 05 をSocketCANで動かしてみた",
+      "url": "https://zenn.dev/kaz1110/articles/20260810-edulite05-robstride05-socketcan",
+      "site": "Zenn(Python)",
+      "published": "2026-08-10T05:54:01Z",
+      "description": "1. はじめに\n今回は、小型QDD系アクチュエータである RobStride EduLite 05 を、Linux の SocketCAN 経由で動かしてみた記録です。\n前回の記事では、歩行ロボットで使われる QDD アクチュエータについて整理しました。\n\n歩行ロボットとQDDアクチュエータ入門\n\nQDD アクチュエータは、低減速比によるバックドライブ性や力制御との相性の良さから、歩行ロボットやヒ...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "秩父のごみ収集はなぜ曜日で決まっていないのか — 色だけでカレンダーPDFを機械可読化した話",
+      "url": "https://zenn.dev/tecolicom/articles/chichibu-gomi-color-extraction",
+      "site": "Zenn(Python)",
+      "published": "2026-08-10T05:02:45Z",
+      "description": "TL;DR\n\n埼玉県の秩父地域(秩父市・横瀬町・皆野町・長瀞町・小鹿野町)では、資源ごみの収集日が曜日で決まっていない。回数は月2回などと決まっているのに、今回は水曜、次は土曜、その次は火曜、と動いていく\n正体は巡回制だった。曜日ではなく61地区を固定の順序で流していて、1日あたり約5地区・約12稼働日で一巡する。12は7の倍数ではないので、一巡するたび曜日がずれる。しかも巡回は2区域で並行して走...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "CLI 上の Claude Code で Computer Use を再現する（追加課金ゼロ、441 行のエージェント）",
+      "url": "https://zenn.dev/tokium_dev/articles/gui-agent-zero-extra-cost",
+      "site": "Zenn(Python)",
+      "published": "2026-08-10T04:59:12Z",
+      "description": "!\nこの記事は何の話か（3 行まとめ）\n\nComputer Use（AI がスクリーンを見てマウス・キーボードを操作する）を試したいけれど、API の従量課金は使いたくない。その制約のもとで Windows 11 のネイティブ GUI を自律操作するエージェントを自作しました\nポイントは1つで、エージェントの「頭脳」を API を呼ぶコードではなく、いま開いている Claude Code の対話セ...",
       "category": "開発",
       "rss_category": "",
       "image_url": ""
