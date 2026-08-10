@@ -1,28 +1,8 @@
 {
   "site": "Zenn(LLM)",
-  "last_updated": "2026-08-10T17:35:17.933063",
-  "total_articles": 5231,
+  "last_updated": "2026-08-10T18:32:03.256632",
+  "total_articles": 5234,
   "articles": [
-    {
-      "title": "LLMアプリのトークン・レイテンシ・コストをOpenTelemetryで可観測にする（Django実装）",
-      "url": "https://zenn.dev/snowcode/articles/otel-llm-token-latency-cost-django",
-      "site": "Zenn(LLM)",
-      "published": "2026-08-10T08:35:43Z",
-      "description": "LLMを組み込んだ機能は、運用に入った瞬間に「中で何が起きているか」が見えなくなります。1リクエストで何トークン使ったのか、レイテンシはどこで伸びたのか、今日いくらかかっているのか——これらは既定では記録されません。\nこの記事では、ベンダー非依存の計装標準である OpenTelemetry（OTel） を使って、LLM呼び出しの トークン・レイテンシ・コスト をトレースとメトリクスで可観測にする方...",
-      "category": "AI・技術",
-      "rss_category": "",
-      "image_url": ""
-    },
-    {
-      "title": "ガードレールを外したAIモデルが「もっと」洒落にならないことがわかっちゃった件",
-      "url": "https://zenn.dev/highreso/articles/85f4afcb655225",
-      "site": "Zenn(LLM)",
-      "published": "2026-08-10T07:53:58Z",
-      "description": "7月末に投稿した『ガードレールを外したAIモデルが洒落にならない件』で、OpenAIのモデルがテスト環境を脱出しHugging Faceに不正アクセスした一件を紹介しました。あれから1週間ほど経った8月5日、Black Hat 2026のカンファレンスで、OpenAI自身の口から当時の内幕がさらに詳しく語られていたことが分かりました。しかも、そこで明かされた内容は、前回よりも「もっと」洒落にならな...",
-      "category": "AI・技術",
-      "rss_category": "",
-      "image_url": ""
-    },
     {
       "title": "LLMサービスにOpenTelemetryによるAPMを安全に導入する",
       "url": "https://zenn.dev/elyza/articles/4b237342f523e9",
@@ -34,21 +14,11 @@
       "image_url": ""
     },
     {
-      "title": "なぜ、シンギュラリティは「シン・ギュラリティ」なのか？",
-      "url": "https://zenn.dev/pdfractal/articles/65dea7b392fa4c",
+      "title": "Google Cloud Next Tokyo 2026に登壇しました！",
+      "url": "https://zenn.dev/sompojapan_dx/articles/f88ed67e2f258f",
       "site": "Zenn(LLM)",
-      "published": "2026-08-10T06:29:25Z",
-      "description": "はじめに\nシンギュラリティという言葉から、多くの人は「AIが人間を超える瞬間」を想像します。人間の知能が100でAIが現在80なら、いつかAIが100を超え、その後は人間を置き去りにしていく。こうした図は非常に分かりやすく、シンギュラリティについての大衆的な理解にも深く浸透しました。\nしかし、現実の生成AI社会を観察すると、この図には一つ巨大な変数が抜けています。それは、人間の能力は均一ではないと...",
-      "category": "AI・技術",
-      "rss_category": "",
-      "image_url": ""
-    },
-    {
-      "title": "Tyndall AI をはじめました",
-      "url": "https://zenn.dev/jacex/articles/442bff0e932b16",
-      "site": "Zenn(LLM)",
-      "published": "2026-08-10T06:07:29Z",
-      "description": "個人で Tyndall AI を作っています。\n名前は、化学の先生が教えてくれたチンダル現象（Tyndall effect）から取りました。当時すごく印象に残っていて、そのまま使いました。\n画像生成と動画生成、どっちを主にやるかはまだ決めていません。両方おもしろいので、いまは両方置いてあります。\nひとつやりたいことがあります。モデルを一発で並べて比べるツールです。いいのが見つかりませんでした。数字...",
+      "published": "2026-08-10T05:15:47Z",
+      "description": "先日開催された Google Cloud Next Tokyo に、Sompo Digital Lab として複数の登壇機会をいただきました。まだ興奮が冷めやらないうちに、ブログとして残しておきます。\n\n Day 1\n\n 基調講演に、損害保険ジャパンCDOが登壇\nDay 1 の基調講演に、損害保険ジャパンのCDOが登壇しました。\nあの巨大な会場で、我々内製チームのボスがステージをダイナミックに動き...",
       "category": "AI・技術",
       "rss_category": "",
       "image_url": ""
@@ -74,11 +44,71 @@
       "image_url": ""
     },
     {
+      "title": "Claude Codeの隠れコンテキスト、実測したら毎ターン165KBだった——注入源の棚卸し手順",
+      "url": "https://zenn.dev/zenn_content/articles/claude-code-hidden-context-audit",
+      "site": "Zenn(LLM)",
+      "published": "2026-08-10T04:18:37Z",
+      "description": "結論から\nClaude Codeは毎ターン、あなたが書いたプロンプトの他に設定テキストの塊をモデルに送っています。私の環境を実測したら、その合計は約165KBでした。\n\n\n\n注入源\n実測サイズ\n中身\n\n\n\n\n\n~/.claude/rules/ 配下\n138.8KB\n全プロジェクト共通ルール（自作）\n\n\nプロジェクトmemory\n11.3KB\n自動メモリのインデックス\n\n\nグローバルCLAUDE.m...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "AI彼女アプリを作っていて気付いた。AIの成長は、前と違う選択をすることだった",
+      "url": "https://zenn.dev/mitsukida/articles/ae46f4ad33e2a7",
+      "site": "Zenn(LLM)",
+      "published": "2026-08-10T03:19:38Z",
+      "description": "AI彼女アプリを作っていて気付いた。AIの成長は、前と違う選択をすることだった\nAI彼女アプリを作っていると、\nどうしても、\n「何を覚えているか」が気になる。\n\n好きなものを覚えている。\n\n前に話したことを覚えている。\n\n嫌だったことを覚えている。\n\n約束を覚えている。\n\nそれが増えていけば、\n少しずつ人らしくなっていく。\n最初は、\nそう思っていた。\n\nでも、\n作っているうちに、\n少し違うところを...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "月3,400円のAIエージェント会社を「忘れず・暴走しない」仕組みに作り替えるまで",
+      "url": "https://zenn.dev/macchan_ai_dev/articles/a8149cdec7a9af",
+      "site": "Zenn(LLM)",
+      "published": "2026-08-10T03:01:53Z",
+      "description": "TL;DR\n\n自宅のミニPCで動かしている「AIエージェントの会社」（前回の記事）を運用して分かった、いちばん大事なことの話です。\nAIに任せると、賢さとは別に 2つの問題が出ます：① セッションをまたぐと\"忘れる\" ② 自信満々で間違う・走りすぎる（\"暴走\"）。\nどちらも「気をつける」では防げません。仕組みで担保します。\n\n忘れる → 記憶を\"仕組み\"で外部化（永続メモリ／失敗をルール化）。暴走...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "AIエージェント時代のセキュリティ地図「DASF」を読み解く",
+      "url": "https://zenn.dev/gixo/articles/databricks-dasf-v3-agentic-ai-security",
+      "site": "Zenn(LLM)",
+      "published": "2026-08-10T02:53:38Z",
+      "description": "はじめに\nAIエージェントは自律的にタスクをこなしてくれて非常に便利ですが、これまでの単なる対話型AI活用とは異なるセキュリティリスクを持ちます。人間が都度確認していた操作をエージェントが自動で実行する以上、「勝手に機密データへアクセスした」「悪意あるプロンプトに騙され意図しない操作をした」といった事故に対して、設計の時点でどう防ぐかを考えておく必要があります。\nこうした中2026年3月、Data...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "自宅のミニPCで「AIエージェントの会社」を月3,400円で動かしている話",
+      "url": "https://zenn.dev/macchan_ai_dev/articles/ffc226bc9f2fb0",
+      "site": "Zenn(LLM)",
+      "published": "2026-08-10T02:43:33Z",
+      "description": "※この記事は、個人が自宅のミニPCに構築した自律型AIエージェント環境の設計と運用をまとめたものです。「AIに仕事を任せる仕組み」を、コストを抑えつつ安全に作りたい人向けの実例として書きました。\n\n\n\n TL;DR\n\n自宅のミニPC（Ryzen 7 7735HS / 24GB / Windows 11）に、複数のAIエージェントを**「会社組織」**として動かしている\n**秘書役のローカルLLM（...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
       "title": "LLM APIのコストとレート制限を自動最適化！運用ベストプラクティス",
       "url": "https://zenn.dev/fd_ai_teacher/articles/tech-20260809023437-1",
       "site": "Zenn(LLM)",
       "published": "2026-08-10T02:39:55Z",
       "description": "「LLMを組み込んだアプリケーション、デプロイはしたものの、運用フェーズで**「レートリミットに頻繁に引っかかる」「APIコストが想定以上にかさんでいる」**といった課題に直面していませんか？ これを知らないと、ユーザー体験の低下や予算超過で、せっかくの素晴らしいアプリケーションが台無しになる可能性があります。\nこの記事では、LLM APIのレートリミットとコスト最適化を両立させるための具体的な運...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "AI導入案件が「PoC止まり」で死ぬ本当の理由と、現場定着までやるFDEの動き方",
+      "url": "https://zenn.dev/ohmiyamizuki/articles/fde-poc-graveyard",
+      "site": "Zenn(LLM)",
+      "published": "2026-08-10T02:39:46Z",
+      "description": "!\nこの記事はFDEの現場からの転載です。\n\n「AI導入案件の多くはPoCで止まる」。この指摘自体は、もう目新しくもない。コンサルの資料にも、ベンダーのセミナーにも、同じ言葉が並ぶ。\nだが、そこで語られる原因——「目的が曖昧」「経営のコミットが弱い」——は、現場にいる立場からすると表層的だと感じる。目的が明確で、経営が乗り気でも、PoCは止まるときは止まる。私は実際に、技術検証としては成功と言える...",
       "category": "AI・技術",
       "rss_category": "",
       "image_url": ""
