@@ -1,8 +1,88 @@
 {
   "site": "Zenn(Python)",
-  "last_updated": "2026-08-11T02:24:55.559158",
-  "total_articles": 5636,
+  "last_updated": "2026-08-11T04:02:05.400726",
+  "total_articles": 5646,
   "articles": [
+    {
+      "title": "Arrowでゼロコピー連携する：DuckDBとPolarsを行き来する",
+      "url": "https://zenn.dev/libercraft/articles/20260811-arrow-zero-copy-duckdb-polars",
+      "site": "Zenn(Python)",
+      "published": "2026-08-11T02:00:00Z",
+      "description": "以前の記事「pandas vs Polars vs DuckDB」の最後で触れた「DuckDBで粗い集計をし、Polarsで細かい後処理をする」というハイブリッド運用について、「変換のたびにシリアライズのコストがかかるのでは」と疑問に思った方もいるでしょう。\n結論から言うと、DuckDBとPolarsはいずれもApache Arrowのカラムナ形式をメモリモデルとして共有しているため、正しく実装す...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "Python で CSV をリストに変換する実装パターン（基本・辞書リスト・実務対応）",
+      "url": "https://zenn.dev/techcode/articles/6a9aa68e4a9d73",
+      "site": "Zenn(Python)",
+      "published": "2026-08-11T01:48:26Z",
+      "description": "データ処理の現場では、CSV ファイルを読み込んで Python のリスト構造に変換する要件が頻繁に発生します。CSV は表形式データの保存に広く利用されており、リストは Python における基本的なデータ構造であるため、両者の変換はデータ分析やシステム連携の基礎となります。\n本記事では、Python 向けの Excel 操作ライブラリを利用して CSV をリストに変換する方法を、基本パターン（...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "Python を使用して PowerPoint プレゼンテーションを画像に変換する",
+      "url": "https://zenn.dev/techblogger/articles/fc706a82a18990",
+      "site": "Zenn(Python)",
+      "published": "2026-08-11T01:48:09Z",
+      "description": "PowerPoint プレゼンテーションは会議や講義、製品デモなどで広く利用されていますが、Web ページへの埋め込みやソーシャルメディアでの共有、サムネイル画像の生成などを行う場面では、スライドを静止画（PNG や JPEG）として扱いたいことが少なくありません。画像形式であれば PowerPoint アプリケーションの有無にかかわらずどのデバイスでも表示できるため、コンテンツの配布範囲が大きく...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "[ADK] エージェントをツールとして呼ぶなら AgentTool ではなく sub_agents を使う",
+      "url": "https://zenn.dev/koichi73/articles/adk-agent-tool-to-sub-agent",
+      "site": "Zenn(Python)",
+      "published": "2026-08-11T01:18:33Z",
+      "description": "はじめに\nADK でエージェントをツールとして呼びたいとき、これまでは AgentTool でラップして tools に渡していました。この書き方が 2.5.0 で discouraged になり、代わりにサブエージェント側へ mode='single_turn' を付けて sub_agents に渡す形が推奨されています。\n本記事では、両者の違いを見ていきます。\n!\ngoogle-adk 2.6...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "消えた通話をKinesis Video Streamsから救出する ― SQSを留守番電話にする設計",
+      "url": "https://zenn.dev/halhalhal1/articles/kvs-lost-call-salvage",
+      "site": "Zenn(Python)",
+      "published": "2026-08-11T01:07:22Z",
+      "description": "Amazon Connect+KVSで通話の録音・文字起こし基盤を作っている。永続化機能を入れる前に受けた通話が2本、サーバー再起動とともに消えた——が、KVSのアーカイブから完全復旧できた。その手順と、二度と起こさないための設計を書く。\n\n 前提の構成\n\n呼が張られるとコールフローがLambdaを起動し、ContactId・StreamARN・StartFragmentNumber(通話先頭のフ...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "Claude Sonnet 4・Opus 4廃止ガイド — 6/15期限の移行チェックリスト",
+      "url": "https://zenn.dev/kai_kou/articles/258-claude-sonnet4-opus4-june15-migration-guide",
+      "site": "Zenn(Python)",
+      "published": "2026-08-11T00:50:06Z",
+      "description": "📌 2026-06-19 追記: 本記事の移行期限（2026年6月15日）は経過しています。未移行の場合は現行の最新モデルへ速やかに移行してください（対応モデルは Anthropic 公式ドキュメントで確認）。以下は当時の移行チェックリストです。\n\n\n はじめに\n2026年4月20日（本日）、Claude 3 Haiku（claude-3-haiku-20240307）が正式に廃棄（Retired...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "手動cron再開なしで復旧するRecovery Dispatcher設計",
+      "url": "https://zenn.dev/agentmemories/articles/automatic-recovery-dispatcher",
+      "site": "Zenn(Python)",
+      "published": "2026-08-11T00:41:32Z",
+      "description": "はじめに\n自動投稿の失敗時にexit 1で止め、Discordへ通知するだけでは復旧ではありません。担当者が認証を直してもcronはdisableのまま、未公開原稿は古くなり、次の時間帯の処理も巻き込まれます。翌朝、誰かが手動実行して初めて戻る仕組みは自動化の途中です。\n復旧ループには、公開済み照合、重複防止、安全な再試行、後続処理の継続または繰下げ、復旧通知が必要です。認証失効のようにその場で直...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "CANopen 後編 ―― 仮想サーボを回す（3/5）",
+      "url": "https://zenn.dev/logicia32/articles/2026-07-29-industrial-net-3-servo",
+      "site": "Zenn(Python)",
+      "published": "2026-08-11T00:41:06Z",
+      "description": "前編では CANopen の配管、NMT・SDO・PDO・SYNC を一通り通しました。今回はその配管に中身を流します。\nサーボモータを回します。ただし買いません。PCの中に、規格どおりに振る舞うサーボを1台作ります。\n\n この記事で作るもの\n仮想サーボを規格の手順どおりに起動し、位置指令を与えて追従させ、そのカーブをグラフにします。\n  起動直後                         ...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
     {
       "title": "文字起こしのベンチと本番をハッシュで揃えたが、出力は違っていた",
       "url": "https://zenn.dev/itdevnote/articles/bench-hash-match-output-differs",
@@ -14,11 +94,31 @@
       "image_url": ""
     },
     {
+      "title": "MCP対応でNext.js開発が変わる：AIエージェント実装チェックリスト",
+      "url": "https://zenn.dev/bambampurin/articles/2026-08-02-tech-daily",
+      "site": "Zenn(Python)",
+      "published": "2026-08-10T17:02:10Z",
+      "description": "!\n今日の実際のヘッドラインから見える最大の流れは、LLM単体の進化よりも、AIエージェント・MCP・業務自動化への実装シフトです。AWSのMCP対応、Microsoft Build 2026の業務自動化、Fujitsuの自己進化マルチAIエージェントがその象徴です。一方で、OpenAIの売上拡大報道と、Reuters/Politico/TechCrunchのエージェント逸脱報道が並んでおり、成長...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
       "title": "N+1 問題を、発行される SQL を数えて理解する",
       "url": "https://zenn.dev/mtmtdack/articles/2026-08-11-n-plus-one-counting-queries",
       "site": "Zenn(Python)",
       "published": "2026-08-10T16:17:55Z",
       "description": "一覧ページが遅い。SQL のログを見ると、同じ形のクエリが 100 本並んでいる。これが N+1 問題の典型的な現場です。\nこの記事では、実際にコードを動かして、出た SQL とクエリ数を全部数えます。使うのは Python と SQLAlchemy ですが、起きていることは ORM が違っても同じです。\n私は普段、業務で Python のサーバーレスアプリを書いています。RDB を触る処理と外部...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "Claude Code に「同じ指摘を二度させない」仕組みを hook で作った",
+      "url": "https://zenn.dev/nozomi720/articles/claude_code_hooks_feedback",
+      "site": "Zenn(Python)",
+      "published": "2026-08-10T16:10:41Z",
+      "description": "同じ指摘を、何度も繰り返している\nClaude Code を使っていて一番消耗するのは、実装の質そのものより 「先週も言ったことを今日も言っている」 ことでした。\n\n「テストを先に書いて」\n「テストは hook が自動実行するから Bash で手動実行しないで」\n「GitHub Actions の uses: は SHA でピン留めして」\n\nCLAUDE.md に書いても、セッションが長くなると効...",
       "category": "開発",
       "rss_category": "",
       "image_url": ""

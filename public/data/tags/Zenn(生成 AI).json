@@ -1,28 +1,8 @@
 {
   "site": "Zenn(生成 AI)",
-  "last_updated": "2026-08-11T02:24:55.559158",
-  "total_articles": 3267,
+  "last_updated": "2026-08-11T04:02:05.400726",
+  "total_articles": 3269,
   "articles": [
-    {
-      "title": "自宅GPUをAIエージェントに任せる3つの方法（MCPが最適とは限らない）",
-      "url": "https://zenn.dev/made_linlin/articles/local-gpu-ai-agent-mcp-skill-cli",
-      "site": "Zenn(生成 AI)",
-      "published": "2026-08-10T22:50:15Z",
-      "description": "自宅にGPUを1枚置いて画像・動画の生成環境を組むと、しばらくして必ず同じ問いにぶつかる。\n「これ、自分でボタンを押し続けるのか？」\n数十カットを順に回して、破綻していないか見て、直して、もう一度回す。この繰り返しは、まさにAIエージェントが代わりにやれる種類の仕事に見える。実際にできる。\nただし繋ぎ方が3通りあって、選び方で運用の重さが変わる。そして、繋ぐより先に決めておかないと全部が壊れるもの...",
-      "category": "AI・技術",
-      "rss_category": "",
-      "image_url": ""
-    },
-    {
-      "title": "GPTシリーズとは？OpenAIのLLM系列",
-      "url": "https://zenn.dev/h888s/articles/genai-gpt-series",
-      "site": "Zenn(生成 AI)",
-      "published": "2026-08-10T22:36:08Z",
-      "description": "生成AIパスポート試験では、現代の大規模言語モデル（LLM）を代表する「GPTシリーズ」が基礎概念として登場します。本記事では、その定義と位置づけ、関連用語との違いを整理します。\n\n GPTシリーズとは\nGPTシリーズとは、OpenAIが開発するTransformerベースの大規模言語モデル系列です。GPT-2、GPT-3、GPT-4、GPT-5と世代を重ねるごとに、モデルの規模（パラメータ数など...",
-      "category": "AI・技術",
-      "rss_category": "",
-      "image_url": ""
-    },
     {
       "title": "AIトークン節約rtkでコマンド出力がどう変化するか",
       "url": "https://zenn.dev/iji/articles/e267fab6612064",
@@ -34,11 +14,51 @@
       "image_url": ""
     },
     {
+      "title": "CLAUDE.md と Skills の違い — 置き場を4つに分けた基準と、80本に増えて壊れたこと",
+      "url": "https://zenn.dev/nikokobo/articles/7a399b93c8d471",
+      "site": "Zenn(生成 AI)",
+      "published": "2026-08-10T16:41:47Z",
+      "description": "結論\nCLAUDE.md と Skills の違いを一言でいうと、いつ読ませるかです。\n\n\n\n置き場\nいつ読まれるか\n私の実測\n\n\n\n\nCLAUDE.md / rules\n\n毎回（常時ロード）\n135行 / 5本486行\n\n\nreferences\n\n呼ばれた時だけ（オンデマンド）\n20本\n\n\nSkills\nその手順が起動した時だけ\n80本\n\n\nhook\n\n読ませない（機械が止める）\n57本\n\n\n\n...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
       "title": "一度も動いていないループが4件あったので、Claude Codeのループ設計に5つの制約を入れた",
       "url": "https://zenn.dev/tomu_coelia/articles/claude-code-loop-engineering",
       "site": "Zenn(生成 AI)",
       "published": "2026-08-10T16:35:54Z",
       "description": "設計ドキュメントを書いて、cron（日時を決めた定期実行）登録の案まで用意して、一度も実走していないループが4件ありました。運用中のループ一覧を棚卸ししたときに気づいたことです。\n20代向けのイベントコミュニティを運営していて、記事の生成、SNSへの派生、品質チェック、計測レポートを、Claude CodeとCodexを軸にしたモノレポ（複数の領域を1つのリポジトリで扱う構成）で日次のループとして...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "CLAUDE.md の書き方 — 指示を書いても守られないので、hook 57本に移した話",
+      "url": "https://zenn.dev/nikokobo/articles/fd08408988b168",
+      "site": "Zenn(生成 AI)",
+      "published": "2026-08-10T16:16:14Z",
+      "description": "結論\nCLAUDE.md を120日書き続けて、いちばん効いた変更は 「書くのをやめたこと」 でした。\nいま運用している CLAUDE.md は 135行です。一時期は500行を超えていましたが、削っていく過程で分かったのは、こういうことでした。\n\nCLAUDE.md は「お願い」であって「強制」ではない。\n本当に守らせたいルールは、CLAUDE.md から hook に移すしかない。\n\nこの記事...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "【初心者向け】生成AIとは？できること・仕組み・安全な使い方をやさしく解説",
+      "url": "https://zenn.dev/kimisya/articles/what-is-generative-ai",
+      "site": "Zenn(生成 AI)",
+      "published": "2026-08-10T15:13:51Z",
+      "description": "ニュースやSNSで、「Microsoft 365 Copilot（M365 Copilot）」「ChatGPT」「Claude Code」といった名前を目にする機会が増えました。これらは、生成AIを利用できるサービスやツールの例です。\n一方で、会社から「生成AIを使って、仕事を効率化しましょう」と言われても、そもそも生成AIが何なのか、何から始めればよいのか分からない方も多いのではないでしょうか。...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "曖昧に使っていたAI周りの言葉を理解する",
+      "url": "https://zenn.dev/yoshipon_tech/articles/a51bbfcc068c1f",
+      "site": "Zenn(生成 AI)",
+      "published": "2026-08-10T15:10:24Z",
+      "description": "はじめに\n最近仕事でAI利活用が盛んだと思います。ただよくよく話を聞くと。AIが仕様書を作ってくれる。AIがMCPを使って外部システムを触る。AIのコンテキストが足りない。人によってAIという言葉が何を指しているかが変わってきています。\nとはいえ、AIというマジックワードではなく、仕組みとして私たちの利用しているAIを理解するために調査した内容を備忘録として残していきます。\n\n 全体像の把握\nまず...",
       "category": "AI・技術",
       "rss_category": "",
       "image_url": ""
