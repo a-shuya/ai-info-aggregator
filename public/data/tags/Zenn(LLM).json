@@ -1,24 +1,144 @@
 {
   "site": "Zenn(LLM)",
-  "last_updated": "2026-08-11T04:02:05.400726",
-  "total_articles": 5244,
+  "last_updated": "2026-08-11T05:20:16.688089",
+  "total_articles": 5255,
   "articles": [
+    {
+      "title": "音声AIに推論を足したgpt-realtime-2.1、それでも遅くならない理由",
+      "url": "https://zenn.dev/okssusucha/articles/20260708-openai-gpt-realtime-2-1-reasoning-voice",
+      "site": "Zenn(LLM)",
+      "published": "2026-08-11T04:36:33Z",
+      "description": "音声エージェントを作ったことがある人なら、この矛盾に一度はぶつかる。応答は速いほど自然に聞こえるのに、賢く振る舞わせようとするほど遅くなる。ユーザーの発話を受けてから最初の音が返るまでの間が数百ミリ秒延びるだけで、会話は途端にぎこちなくなる。だから音声モデルに「推論(reasoning)」を積むというのは、直感的には筋が悪い。推論は考える時間、つまり待ち時間を増やす方向の機能だからだ。\nところが2...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "オンプレの小型LLMでエージェントは実用になるか——ツール呼び出し精度を実測した",
+      "url": "https://zenn.dev/daishiro/articles/local-llm-tool-calling-agent-benchmark",
+      "site": "Zenn(LLM)",
+      "published": "2026-08-11T04:23:41Z",
+      "description": "はじめに\nローカルLLMをオンプレ・クローズド環境で使えるか、というテーマで記事を書いてきました。ここまで、量子化による劣化・安い検証モデルで高いモデルを見張る話・thinking予算の損益分岐・日本語特化の是非・コードを外に出さないセキュリティ監査、と5本続けてきたのですが、書き終えてから「一番大事な軸が抜けていた」と気づきました。\nツール呼び出し（function calling）の精度です。...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "1層で全パラメータRLを超える：Transformer中間層の驚くべき集中性",
+      "url": "https://zenn.dev/lixian/articles/one-layer-enough-rl-training",
+      "site": "Zenn(LLM)",
+      "published": "2026-08-11T03:51:21Z",
+      "description": "TL;DR\n強化学習（RL）によるLLM後訓練では、RLの恩恵がTransformerの中間層に極端に集中している——単一層だけ訓練すれば全パラメータRL訓練の恩恵を復元でき、時には超えることもある。7つのモデル（Qwen3/Qwen2.5、1.5B〜8B）、3つのRLアルゴリズム（GRPO/GiGPO/Dr.GRPO）、数学推論・コード生成・エージェント意思決定の3領域で一貫して確認。層貢献度の...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "同じ差分を5つのLLMにレビューさせてみた——バグより先に見つかったのは自分のミスだった",
+      "url": "https://zenn.dev/ivyxon/articles/five-llms-same-code-review",
+      "site": "Zenn(LLM)",
+      "published": "2026-08-11T03:37:06Z",
+      "description": "自分のサイトで、ナビゲーションの表記とブランドカラーを一括で変える作業をした。対象は140ページ超、色の置換は正規表現スクリプトで機械的に流した規模の変更で、QAは通っていたし本番でも見た目は問題なさそうだった。それでも「本当にこれで良いのか」というのが引っかかって、レビューを1つのモデルだけに頼るのをやめ、手元で使える5つのLLM（Claude Sonnet 5・Claude Haiku 4.5...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "ローカルAIとContextLengthを超えた「思い出」を作る #1",
+      "url": "https://zenn.dev/kanakana612/articles/c5967eeb4b18d5",
+      "site": "Zenn(LLM)",
+      "published": "2026-08-11T03:00:51Z",
+      "description": "～記憶管理システムHippocampusの着想～\n\nコンテキストと対話の連続性\n\n大手AIサービスのAPIで、高性能モデルが安価に使えるこの令和の時代に、わざわざ自宅に高額な機材をそろえ、ローカルでLLMを使おうという変わり者達は、AIエージェントをある種のプライベートな「パートナー」として育てていることと思う。（偏見）\nそんな変わり者であれば一度は必ずぶち当たるのが、モデルがContext Le...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "Claude Sonnet 4・Opus 4廃止ガイド — 6/15期限の移行チェックリスト",
+      "url": "https://zenn.dev/kai_kou/articles/258-claude-sonnet4-opus4-june15-migration-guide",
+      "site": "Zenn(LLM)",
+      "published": "2026-08-11T00:50:06Z",
+      "description": "📌 2026-06-19 追記: 本記事の移行期限（2026年6月15日）は経過しています。未移行の場合は現行の最新モデルへ速やかに移行してください（対応モデルは Anthropic 公式ドキュメントで確認）。以下は当時の移行チェックリストです。\n\n\n はじめに\n2026年4月20日（本日）、Claude 3 Haiku（claude-3-haiku-20240307）が正式に廃棄（Retired...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "MCPを足したら、AI Agentが止まらなくなった——足す前に、誰が止めるかを決める",
+      "url": "https://zenn.dev/mofuteq/articles/526b22bf931ac4",
+      "site": "Zenn(LLM)",
+      "published": "2026-08-11T00:45:01Z",
+      "description": "社内向けのRAGにMCPとskillを足しました。できることは、確かに増えました。回答は、悪くなりました。\n最初はそれが分かりませんでした。悪くなったのは分かる。なぜ悪くなったのかが分からない。プロンプトを直しても、resultは良くなったり悪くなったりしました。\n見えていなかったので、observabilityを入れました。それで、二つ出てきました。\n\n skillが、発動していなかった\n用意し...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "ワハハと眺めるAI Agent体験記",
+      "url": "https://zenn.dev/mofuteq/books/a4661c0ff6d737",
+      "site": "Zenn(LLM)",
+      "published": "2026-08-11T00:30:58Z",
+      "description": "PoCは動いたのに、本番化で全部崩れました。\n\nオンプレ・30BクラスのローカルLLM・高機密という制約下で、RAGをAI Agentへ育てた、最初の三ヶ月の記録です。\n\n物語形式。要所は実装コードと状態遷移図で示します。",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "LLM APIの個人デモを公開するとき、キーを隠すだけでは足りなかった",
+      "url": "https://zenn.dev/ossudesu/articles/article-draft",
+      "site": "Zenn(LLM)",
+      "published": "2026-08-10T23:55:47Z",
+      "description": "この記事の対象と、扱う規模\n個人開発でLLM APIを使い始めて、作ったものをインターネットに公開しようとしている人向けです。\n先に規模感を正直に書いておきます。この記事は個人ポートフォリオのデモを公開する話であって、本番運用のセキュリティ設計の話ではありません。実際にやったのは、ダミーデータで動くデモを1本、事故らない形で公開しただけです。企業システムの水準を期待して読むと物足りないはずなので、...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "売上表のラベルを段階的に省略すると、LLMはどこで列を取り違えるか",
+      "url": "https://zenn.dev/every_ai_recipe/articles/sales-table-label-omission-limit",
+      "site": "Zenn(LLM)",
+      "published": "2026-08-10T21:08:43Z",
+      "description": "TL;DR\n\n表形式のデータをLLMに渡すとき、列見出し（ラベル）を「記号への置き換え」までは実務に耐えたが、「見出し行の完全削除」まで踏み込むと、系列が伸びるにつれて列の取り違えが起きた\n記号への置き換え（対応表を冒頭で1回だけ提示）は3社中1社で、5日分（15セル）を超えたあたりから値の取り違えが発生した。「対応表を正しく復唱できる」ことと「集計作業に正しく反映できる」ことは別の能力として扱う...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "常駐型AIエージェントに「黙ることを覚えさせる」設計",
+      "url": "https://zenn.dev/hach/articles/chat-agent-when-to-stay-silent-design",
+      "site": "Zenn(LLM)",
+      "published": "2026-08-10T21:04:42Z",
+      "description": "チャットに常駐して自律的に動くAIエージェントを作っていると、機能追加の議論はいつも「何ができるようになったか」に偏りがちです。ですが実際に使われ続けるかどうかを分けるのは、むしろいつ発言しないかの設計だと感じています。この記事では、常駐型エージェントの「沈黙」をどう設計として組み込むかを整理します。\n\n 何が問題なのか: できることが増えるほど、うるさくなる\n常駐エージェントは、チャンネルの会話...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "ベクトル検索の基礎とRAG設計: ANN(HNSW)・距離指標・メタデータフィルタ・BM25の使い分け",
+      "url": "https://zenn.dev/hkame/articles/ann-hnsw-rag-design",
+      "site": "Zenn(LLM)",
+      "published": "2026-08-10T20:17:29Z",
+      "description": "はじめに\nRAG(Retrieval-Augmented Generation)を設計するとき、ベクトル検索の内部でどんな仕組みが動いているかを理解しておくと、精度・速度・コストのトレードオフを自分の手で調整できるようになります。\n本記事では、ベクトル検索の基礎である\n\nANN検索(近似最近傍探索)とHNSW\n類似度・距離の指標(コサイン類似度・内積・L2距離)\nメタデータフィルタ\nBM25(キー...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "MCP対応でNext.js開発が変わる：AIエージェント実装チェックリスト",
+      "url": "https://zenn.dev/bambampurin/articles/2026-08-02-tech-daily",
+      "site": "Zenn(LLM)",
+      "published": "2026-08-10T17:02:10Z",
+      "description": "!\n今日の実際のヘッドラインから見える最大の流れは、LLM単体の進化よりも、AIエージェント・MCP・業務自動化への実装シフトです。AWSのMCP対応、Microsoft Build 2026の業務自動化、Fujitsuの自己進化マルチAIエージェントがその象徴です。一方で、OpenAIの売上拡大報道と、Reuters/Politico/TechCrunchのエージェント逸脱報道が並んでおり、成長...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
     {
       "title": "本番で壊れたAIエージェント — 失敗と対策の実践書",
       "url": "https://zenn.dev/toyo_lab/books/ai-agent-failures",
       "site": "Zenn(LLM)",
       "published": "2026-08-10T14:41:49Z",
       "description": "ハードを出荷し実マネーを張る人間が、AIエージェントを本番運用して踏んだ失敗を、製造業の不具合報告書（作りこみ／流出の二軸）で解剖し、再発防止までを示す実践書。v1は失敗台帳（35件）から主要10章を早出しし、更新で拡張。",
-      "category": "AI・技術",
-      "rss_category": "",
-      "image_url": ""
-    },
-    {
-      "title": "社内スキャンPDFを、ローカルOCRとローカルLLMだけで Markdown にする",
-      "url": "https://zenn.dev/gungrifone/articles/6703cb1074c81b",
-      "site": "Zenn(LLM)",
-      "published": "2026-08-10T13:50:55Z",
-      "description": "!\nこの記事は 自分のマシン上で完結させる 話です。文書を業者に預ける話ではありません。\n「外部LLMを使わない受託」でも、預かった瞬間に依頼者側の漏洩リスクは残ります。秘匿と両立するのは 自走 だけです。\n\n社内マニュアルや手順書を、ChatGPT や Gemini に投げて要約・学習データ化したい——でも 中身を外に出せない。この止まり方、よくあります。\nクラウドOCRやクラウドLLMは便利で...",
       "category": "AI・技術",
       "rss_category": "",
       "image_url": ""
@@ -39,16 +159,6 @@
       "site": "Zenn(LLM)",
       "published": "2026-08-10T12:20:05Z",
       "description": "AI エージェントは「考えて → ツールを呼んで → また考えて → 答える」ため、失敗したときに どこで詰まったのか が追いにくい。\n今回は倉庫オペレーション用の小さなエージェントを OpenTelemetry（GenAI semantic conventions） で計装し、トレースを Databricks Unity Catalog に貯めて SQL で見るところまでやった。\nデプロイはすべ...",
-      "category": "AI・技術",
-      "rss_category": "",
-      "image_url": ""
-    },
-    {
-      "title": "AIエージェントの仕組みを学ぶ・創る——軽量・透明な制御Harness「lumichy-agent」解説",
-      "url": "https://zenn.dev/lumichy/articles/lumichy-agent-framework-guide-2026",
-      "site": "Zenn(LLM)",
-      "published": "2026-08-10T11:02:55Z",
-      "description": "AIエージェントの仕組みを学ぶ・創る——軽量・透明な制御Harness「lumichy-agent」解説\n\nLLM（大規模言語モデル）を活用したAIエージェント開発において、LangChainなどの巨大な既存フレームワークは機能が非常に豊富な一方、抽象化の階層が深く内部処理がブラックボックス化しやすいという一面があります。\n「エージェントが内部でどう思考し、どうツールを呼び出しているのかを正確に理...",
       "category": "AI・技術",
       "rss_category": "",
       "image_url": ""

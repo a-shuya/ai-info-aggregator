@@ -1,6 +1,6 @@
 {
   "site": "Zenn(Python)",
-  "last_updated": "2026-08-11T04:02:05.400726",
+  "last_updated": "2026-08-11T05:20:16.688089",
   "total_articles": 5646,
   "articles": [
     {
@@ -54,16 +54,6 @@
       "image_url": ""
     },
     {
-      "title": "Claude Sonnet 4・Opus 4廃止ガイド — 6/15期限の移行チェックリスト",
-      "url": "https://zenn.dev/kai_kou/articles/258-claude-sonnet4-opus4-june15-migration-guide",
-      "site": "Zenn(Python)",
-      "published": "2026-08-11T00:50:06Z",
-      "description": "📌 2026-06-19 追記: 本記事の移行期限（2026年6月15日）は経過しています。未移行の場合は現行の最新モデルへ速やかに移行してください（対応モデルは Anthropic 公式ドキュメントで確認）。以下は当時の移行チェックリストです。\n\n\n はじめに\n2026年4月20日（本日）、Claude 3 Haiku（claude-3-haiku-20240307）が正式に廃棄（Retired...",
-      "category": "開発",
-      "rss_category": "",
-      "image_url": ""
-    },
-    {
       "title": "手動cron再開なしで復旧するRecovery Dispatcher設計",
       "url": "https://zenn.dev/agentmemories/articles/automatic-recovery-dispatcher",
       "site": "Zenn(Python)",
@@ -89,16 +79,6 @@
       "site": "Zenn(Python)",
       "published": "2026-08-10T23:00:05Z",
       "description": "文字起こしの速度と精度を測るベンチマークを持っています。会議の録音から議事録を作る自作ツールのもので、本番の処理とは別のコマンドとして動きます。\nあるとき、ベンチの数字と本番の数字が合わなくなりました。ズレていたのは3点——単語時刻を出すフラグ、推論へ渡す辞書（hotwords）、文単位への割り直しです。なお、この記事にはもう1つの辞書が出てきます。書き起こしたあとに誤変換を置き換える用語辞書で、...",
-      "category": "開発",
-      "rss_category": "",
-      "image_url": ""
-    },
-    {
-      "title": "MCP対応でNext.js開発が変わる：AIエージェント実装チェックリスト",
-      "url": "https://zenn.dev/bambampurin/articles/2026-08-02-tech-daily",
-      "site": "Zenn(Python)",
-      "published": "2026-08-10T17:02:10Z",
-      "description": "!\n今日の実際のヘッドラインから見える最大の流れは、LLM単体の進化よりも、AIエージェント・MCP・業務自動化への実装シフトです。AWSのMCP対応、Microsoft Build 2026の業務自動化、Fujitsuの自己進化マルチAIエージェントがその象徴です。一方で、OpenAIの売上拡大報道と、Reuters/Politico/TechCrunchのエージェント逸脱報道が並んでおり、成長...",
       "category": "開発",
       "rss_category": "",
       "image_url": ""
@@ -144,11 +124,31 @@
       "image_url": ""
     },
     {
+      "title": "社内スキャンPDFを、ローカルOCRとローカルLLMだけで Markdown にする",
+      "url": "https://zenn.dev/gungrifone/articles/6703cb1074c81b",
+      "site": "Zenn(Python)",
+      "published": "2026-08-10T13:50:55Z",
+      "description": "!\nこの記事は 自分のマシン上で完結させる 話です。文書を業者に預ける話ではありません。\n「外部LLMを使わない受託」でも、預かった瞬間に依頼者側の漏洩リスクは残ります。秘匿と両立するのは 自走 だけです。\n\n社内マニュアルや手順書を、ChatGPT や Gemini に投げて要約・学習データ化したい——でも 中身を外に出せない。この止まり方、よくあります。\nクラウドOCRやクラウドLLMは便利で...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
       "title": "ロースペックPCでローカルLLM家計簿を作ったら、LLMの仕事がどんどん減った話",
       "url": "https://zenn.dev/taikikei/articles/412dec52461cb2",
       "site": "Zenn(Python)",
       "published": "2026-08-10T12:32:05Z",
       "description": "はじめに\n毎月の支払い明細をローカルLLMに読ませて、家計の状況を説明してもらう環境を作りました。銀行・クレジットカード・交通系ICの明細を1つに統合して集計し、その結果をローカルのLLMに渡す、という構成です。\nローカルLLMがどれだけの性能か見たい＋外部に出したくないデータの処理・集計をやりたいというのが出発点なので、クラウドのAPIは使っていません。手元のミニPC（Intel N100 / ...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "AIエージェントの仕組みを学ぶ・創る——軽量・透明な制御Harness「lumichy-agent」解説",
+      "url": "https://zenn.dev/lumichy/articles/lumichy-agent-framework-guide-2026",
+      "site": "Zenn(Python)",
+      "published": "2026-08-10T11:02:55Z",
+      "description": "AIエージェントの仕組みを学ぶ・創る——軽量・透明な制御Harness「lumichy-agent」解説\n\nLLM（大規模言語モデル）を活用したAIエージェント開発において、LangChainなどの巨大な既存フレームワークは機能が非常に豊富な一方、抽象化の階層が深く内部処理がブラックボックス化しやすいという一面があります。\n「エージェントが内部でどう思考し、どうツールを呼び出しているのかを正確に理...",
       "category": "開発",
       "rss_category": "",
       "image_url": ""
