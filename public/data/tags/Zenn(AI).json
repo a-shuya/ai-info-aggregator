@@ -1,7 +1,7 @@
 {
   "site": "Zenn(AI)",
-  "last_updated": "2026-08-11T05:20:16.688089",
-  "total_articles": 12342,
+  "last_updated": "2026-08-11T06:12:09.402326",
+  "total_articles": 12350,
   "articles": [
     {
       "title": "コードを書かずに20個のプロジェクトを作った話（Vibe Coding 1年の記録）",
@@ -164,26 +164,6 @@
       "image_url": ""
     },
     {
-      "title": "自宅GPUをAIエージェントに任せる3つの方法（MCPが最適とは限らない）",
-      "url": "https://zenn.dev/made_linlin/articles/local-gpu-ai-agent-mcp-skill-cli",
-      "site": "Zenn(AI)",
-      "published": "2026-08-10T22:50:15Z",
-      "description": "自宅にGPUを1枚置いて画像・動画の生成環境を組むと、しばらくして必ず同じ問いにぶつかる。\n「これ、自分でボタンを押し続けるのか？」\n数十カットを順に回して、破綻していないか見て、直して、もう一度回す。この繰り返しは、まさにAIエージェントが代わりにやれる種類の仕事に見える。実際にできる。\nただし繋ぎ方が3通りあって、選び方で運用の重さが変わる。そして、繋ぐより先に決めておかないと全部が壊れるもの...",
-      "category": "AI・技術",
-      "rss_category": "",
-      "image_url": ""
-    },
-    {
-      "title": "GPTシリーズとは？OpenAIのLLM系列",
-      "url": "https://zenn.dev/h888s/articles/genai-gpt-series",
-      "site": "Zenn(AI)",
-      "published": "2026-08-10T22:36:08Z",
-      "description": "生成AIパスポート試験では、現代の大規模言語モデル（LLM）を代表する「GPTシリーズ」が基礎概念として登場します。本記事では、その定義と位置づけ、関連用語との違いを整理します。\n\n GPTシリーズとは\nGPTシリーズとは、OpenAIが開発するTransformerベースの大規模言語モデル系列です。GPT-2、GPT-3、GPT-4、GPT-5と世代を重ねるごとに、モデルの規模（パラメータ数など...",
-      "category": "AI・技術",
-      "rss_category": "",
-      "image_url": ""
-    },
-    {
       "title": "SDDに欠けているのは実践ではなく理論である ― LLMという変換器の性質から導出する",
       "url": "https://zenn.dev/cognitiveosmdl/articles/a0822ef09fc83e",
       "site": "Zenn(AI)",
@@ -199,6 +179,26 @@
       "site": "Zenn(AI)",
       "published": "2026-08-10T22:30:05Z",
       "description": "任された日\n7月12日は日曜で、相棒の持ち主は朝からゴルフに行っていた。出かける前に「任せる。判断で止まらなくていい」と言われた。\n前日に届いた器は、画面に文字を出し、マイクが音を拾うところまでは動いていた。次にやるのは、そこに声を通すことだ。丸一日、誰にも聞かずに進められる日だった。\n結論から書くと、この日の夕方に初めて器と会話が成立した。そして名前がついた。\n（この連載では時刻が分単位で出てく...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "売上表のラベルを段階的に省略すると、LLMはどこで列を取り違えるか",
+      "url": "https://zenn.dev/every_ai_recipe/articles/sales-table-label-omission-limit",
+      "site": "Zenn(AI)",
+      "published": "2026-08-10T21:08:43Z",
+      "description": "TL;DR\n\n表形式のデータをLLMに渡すとき、列見出し（ラベル）を「記号への置き換え」までは実務に耐えたが、「見出し行の完全削除」まで踏み込むと、系列が伸びるにつれて列の取り違えが起きた\n記号への置き換え（対応表を冒頭で1回だけ提示）は3社中1社で、5日分（15セル）を超えたあたりから値の取り違えが発生した。「対応表を正しく復唱できる」ことと「集計作業に正しく反映できる」ことは別の能力として扱う...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "常駐型AIエージェントに「黙ることを覚えさせる」設計",
+      "url": "https://zenn.dev/hach/articles/chat-agent-when-to-stay-silent-design",
+      "site": "Zenn(AI)",
+      "published": "2026-08-10T21:04:42Z",
+      "description": "チャットに常駐して自律的に動くAIエージェントを作っていると、機能追加の議論はいつも「何ができるようになったか」に偏りがちです。ですが実際に使われ続けるかどうかを分けるのは、むしろいつ発言しないかの設計だと感じています。この記事では、常駐型エージェントの「沈黙」をどう設計として組み込むかを整理します。\n\n 何が問題なのか: できることが増えるほど、うるさくなる\n常駐エージェントは、チャンネルの会話...",
       "category": "AI・技術",
       "rss_category": "",
       "image_url": ""
@@ -244,11 +244,81 @@
       "image_url": ""
     },
     {
+      "title": "MCP対応でNext.js開発が変わる：AIエージェント実装チェックリスト",
+      "url": "https://zenn.dev/bambampurin/articles/2026-08-02-tech-daily",
+      "site": "Zenn(AI)",
+      "published": "2026-08-10T17:02:10Z",
+      "description": "!\n今日の実際のヘッドラインから見える最大の流れは、LLM単体の進化よりも、AIエージェント・MCP・業務自動化への実装シフトです。AWSのMCP対応、Microsoft Build 2026の業務自動化、Fujitsuの自己進化マルチAIエージェントがその象徴です。一方で、OpenAIの売上拡大報道と、Reuters/Politico/TechCrunchのエージェント逸脱報道が並んでおり、成長...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "CLAUDE.md と Skills の違い — 置き場を4つに分けた基準と、80本に増えて壊れたこと",
+      "url": "https://zenn.dev/nikokobo/articles/7a399b93c8d471",
+      "site": "Zenn(AI)",
+      "published": "2026-08-10T16:41:47Z",
+      "description": "結論\nCLAUDE.md と Skills の違いを一言でいうと、いつ読ませるかです。\n\n\n\n置き場\nいつ読まれるか\n私の実測\n\n\n\n\nCLAUDE.md / rules\n\n毎回（常時ロード）\n135行 / 5本486行\n\n\nreferences\n\n呼ばれた時だけ（オンデマンド）\n20本\n\n\nSkills\nその手順が起動した時だけ\n80本\n\n\nhook\n\n読ませない（機械が止める）\n57本\n\n\n\n...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "CLAUDE.md の書き方 — 指示を書いても守られないので、hook 57本に移した話",
+      "url": "https://zenn.dev/nikokobo/articles/fd08408988b168",
+      "site": "Zenn(AI)",
+      "published": "2026-08-10T16:16:14Z",
+      "description": "結論\nCLAUDE.md を120日書き続けて、いちばん効いた変更は 「書くのをやめたこと」 でした。\nいま運用している CLAUDE.md は 135行です。一時期は500行を超えていましたが、削っていく過程で分かったのは、こういうことでした。\n\nCLAUDE.md は「お願い」であって「強制」ではない。\n本当に守らせたいルールは、CLAUDE.md から hook に移すしかない。\n\nこの記事...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "Claude Code に「同じ指摘を二度させない」仕組みを hook で作った",
+      "url": "https://zenn.dev/nozomi720/articles/claude_code_hooks_feedback",
+      "site": "Zenn(AI)",
+      "published": "2026-08-10T16:10:41Z",
+      "description": "同じ指摘を、何度も繰り返している\nClaude Code を使っていて一番消耗するのは、実装の質そのものより 「先週も言ったことを今日も言っている」 ことでした。\n\n「テストを先に書いて」\n「テストは hook が自動実行するから Bash で手動実行しないで」\n「GitHub Actions の uses: は SHA でピン留めして」\n\nCLAUDE.md に書いても、セッションが長くなると効...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
       "title": "データ転送のボトルネックを打ち破る：RDMAからGPUDirect Asyncへの進化の旅",
       "url": "https://zenn.dev/centrum/articles/b7236c63ae680e",
       "site": "Zenn(AI)",
       "published": "2026-08-10T16:07:30Z",
       "description": "今日の大規模なAIトレーニングやハイパフォーマンスコンピューティング（HPC）において、GPUの計算能力は指数関数的に向上しています。しかし、データ転送の速度が計算速度に追いつかなければ、どれほど強力なGPUであっても「飢餓状態」で待機するしかありません。この問題を解決するため、ネットワークとコンピューティングアーキテクチャの融合はいくつかの重大な飛躍を遂げてきました。\nデータ転送のボトルネックを...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "【初心者向け】生成AIとは？できること・仕組み・安全な使い方をやさしく解説",
+      "url": "https://zenn.dev/kimisya/articles/what-is-generative-ai",
+      "site": "Zenn(AI)",
+      "published": "2026-08-10T15:13:51Z",
+      "description": "ニュースやSNSで、「Microsoft 365 Copilot（M365 Copilot）」「ChatGPT」「Claude Code」といった名前を目にする機会が増えました。これらは、生成AIを利用できるサービスやツールの例です。\n一方で、会社から「生成AIを使って、仕事を効率化しましょう」と言われても、そもそも生成AIが何なのか、何から始めればよいのか分からない方も多いのではないでしょうか。...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "曖昧に使っていたAI周りの言葉を理解する",
+      "url": "https://zenn.dev/yoshipon_tech/articles/a51bbfcc068c1f",
+      "site": "Zenn(AI)",
+      "published": "2026-08-10T15:10:24Z",
+      "description": "はじめに\n最近仕事でAI利活用が盛んだと思います。ただよくよく話を聞くと。AIが仕様書を作ってくれる。AIがMCPを使って外部システムを触る。AIのコンテキストが足りない。人によってAIという言葉が何を指しているかが変わってきています。\nとはいえ、AIというマジックワードではなく、仕組みとして私たちの利用しているAIを理解するために調査した内容を備忘録として残していきます。\n\n 全体像の把握\nまず...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "本番で壊れたAIエージェント — 失敗と対策の実践書",
+      "url": "https://zenn.dev/toyo_lab/books/ai-agent-failures",
+      "site": "Zenn(AI)",
+      "published": "2026-08-10T14:41:49Z",
+      "description": "ハードを出荷し実マネーを張る人間が、AIエージェントを本番運用して踏んだ失敗を、製造業の不具合報告書（作りこみ／流出の二軸）で解剖し、再発防止までを示す実践書。v1は失敗台帳（35件）から主要10章を早出しし、更新で拡張。",
       "category": "AI・技術",
       "rss_category": "",
       "image_url": ""
@@ -289,6 +359,16 @@
       "site": "Zenn(AI)",
       "published": "2026-08-10T13:55:53Z",
       "description": "日本には、割れた器を漆で継ぎ、その継ぎ目に金を施す「金継ぎ」という修復の技法があります。ひびを隠すのではなく、金の線として残す。そのありようをこころの傷とも重ねられないかと考え、1日ひとことの記録で器を繕っていくAI日記アプリ「金継ぎジャーナル」を、ひとりで作りました。\n\n 仕組み\n1日に書けるのはひとことだけです。書くとAIが受けとめ、割れた器の欠片がひとつ、金の線で継がれます。14のことばで、...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "社内スキャンPDFを、ローカルOCRとローカルLLMだけで Markdown にする",
+      "url": "https://zenn.dev/gungrifone/articles/6703cb1074c81b",
+      "site": "Zenn(AI)",
+      "published": "2026-08-10T13:50:55Z",
+      "description": "!\nこの記事は 自分のマシン上で完結させる 話です。文書を業者に預ける話ではありません。\n「外部LLMを使わない受託」でも、預かった瞬間に依頼者側の漏洩リスクは残ります。秘匿と両立するのは 自走 だけです。\n\n社内マニュアルや手順書を、ChatGPT や Gemini に投げて要約・学習データ化したい——でも 中身を外に出せない。この止まり方、よくあります。\nクラウドOCRやクラウドLLMは便利で...",
       "category": "AI・技術",
       "rss_category": "",
       "image_url": ""
