@@ -1,24 +1,54 @@
 {
   "site": "Zenn(LLM)",
-  "last_updated": "2026-08-11T22:01:45.373284",
-  "total_articles": 5270,
+  "last_updated": "2026-08-11T23:00:19.553531",
+  "total_articles": 5272,
   "articles": [
     {
-      "title": "Agent は二つに分かれていく：Pet と Cattle",
-      "url": "https://zenn.dev/yevanchen/articles/d75ccb82165a93",
+      "title": "DeepSeek V4 Flash-0731 を DGX Spark 2 台で動かす",
+      "url": "https://zenn.dev/st_little/articles/run-deepseek-v4-flash-0731-on-two-sparks",
       "site": "Zenn(LLM)",
-      "published": "2026-08-11T17:01:53Z",
-      "description": "Agent は最終的に二つに分かれていく。私はそう考えるようになった。\nこれは同じ製品の軽量版と重量版ではなく、自律性の高低でもない。人々が期待しているもの自体が違う。一方には「誰か」になることを期待し、もう一方には、ある種類の仕事を終えることだけを期待する。\nmosoo では、この二種類の Agent を Pet と Cattle と呼んでいる。\n\n この言葉はどこから来たのか\nPet と Ca...",
+      "published": "2026-08-11T21:49:14Z",
+      "description": "NVIDIA DGX Spark（GB10）2台を200Gbps QSFP（RoCEv2）で直結し、deepseek-ai/DeepSeek-V4-Flash-0731（投機的デコード「DSpark」＋100万トークンコンテキスト対応）を分散推論（Tensor Parallelism = 2）でデプロイした際の手順をまとめました。\n本構築にあたっては、DGX Spark 2台を接続する によるネッ...",
       "category": "AI・技術",
       "rss_category": "",
       "image_url": ""
     },
     {
-      "title": "「RAGの正答率89%」を現場の言葉で聞き直したら6%だった",
-      "url": "https://zenn.dev/dowjapan/articles/rag-accuracy-is-a-lie",
+      "title": "AIに『見張らせて、最後の判断だけは人間が握る』EDRを作ろうとしている話",
+      "url": "https://zenn.dev/loki_sudo/articles/loki-hearing-progress",
       "site": "Zenn(LLM)",
-      "published": "2026-08-11T13:54:19Z",
-      "description": "この記事で出す数字\n先に結論の表を置きます。すべて同じシステムの、同じ実行から出た数字です。\n\n\n\n基準\n正答率\n\n\n\n\n何か答えた（「記載なし」と言わなかった）\n94%\n\n\n部分的にでも正しい情報を含む\n87%\n\n\n必要な事実をすべて含む\n42%\n\n\n全事実を含み、かつ原文にない記述がゼロ\n6%\n\n\n\nどれも嘘ではありません。分母と合格基準が違うだけです。\n「企業のRAG導入における初期の正答率...",
+      "published": "2026-08-11T21:19:33Z",
+      "description": "導入\n市販のセキュリティソフトを入れていないパソコンを使う機会があって、「じゃあ自分で\n見張り役を作ってしまえばいいのでは」と思ったのが、このツールを作り始めたきっかけです。\n気づけば結構本格的な作りになってきたので、今の状態を紹介します。\n\n 目的\nパソコンの中では、見えないところで無数のプロセスが動いています。その中に、こっそり\n悪さをしようとするものが紛れ込んでいないかを、常に見張ってほしい...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "賛成3vs反対3のLLMディベートで陣営内均質化(stance homogenization)を確かめた",
+      "url": "https://zenn.dev/every_ai_recipe/articles/ai-side-job-pro-con-debate",
+      "site": "Zenn(LLM)",
+      "published": "2026-08-11T21:08:28Z",
+      "description": "TL;DR\n\n「賛成派3人・反対派3人・判定役1人」という固定陣営型のディベートを1つのチャットに演じさせ、個人の意思決定（週末副業を引き受けるか）に使えるか検証した\n同じ陣営に複数の役を立てても、役に「守るもの（個別の利害）」を与えない限り、同じ陣営内の発言はほぼ同一内容に収束する。これは学術的にも「stance homogenization」として報告されている既知の傾向と一致した\n役割ラベル...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "DFlashでtok/sの意味が変わる — 24GB GPUでMuse Glimmer 30B・256K・Visionを実測した",
+      "url": "https://zenn.dev/pich/articles/516a3d98025852",
+      "site": "Zenn(LLM)",
+      "published": "2026-08-11T20:52:27Z",
+      "description": "昨夜、dense 30Bモデル、256Kコンテキスト、Vision、speculative decodingを、1枚の24GB GPUに収める実験を行った。\n最速の量子化は負けた。perplexityが最も低い量子化も負けた。\n勝ったのは、どれか1つの数字が最大になる構成ではなく、システム全体として最も使える構成だった。\n最終構成は、70Wに制限したNVIDIA RTX PRO 4000 Blac...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "AIエージェント最大の失敗源は「生成が先・接地が後」── Issueにした8件が全部クローズになった日から作った着手前プロトコル",
+      "url": "https://zenn.dev/tomu_coelia/articles/grounding-before-generation",
+      "site": "Zenn(LLM)",
+      "published": "2026-08-11T19:43:07Z",
+      "description": "AIエージェントの失敗を集めて眺めると、コードの間違いより多いのが「もっともらしいけど、前提がずれている」成果物です。指示の鵜呑み、一般論の適用、既存実装との重複、誰にも刺さらない施策。\n私たちの運営基盤には、これを塞ぐための「着手前の接地プロトコル」がシステムプロンプトに常駐しています。生まれたきっかけは、ある演習での全滅でした。\n\n Issueにした8件、全部クローズ\nRSSフィードのトレンド...",
       "category": "AI・技術",
       "rss_category": "",
       "image_url": ""
@@ -89,16 +119,6 @@
       "site": "Zenn(LLM)",
       "published": "2026-08-11T09:44:18Z",
       "description": "上原正吉（EarthLink Network Co., Ltd.）。Claude Codeを開発の主体に据え、20を超えるプロダクトを1人で同時に開発・運用しています。これは、その現場の実測記です。\n2026年7月30日、社内のAI開発を動かしている統制盤で、ローカルLLMの処理比率が50.3%、クラウド側が48.2%になりました。\n\nこれは「請求額が正確に半分になった」という意味ではありません。...",
-      "category": "AI・技術",
-      "rss_category": "",
-      "image_url": ""
-    },
-    {
-      "title": "複数LLMを1つの会話で切り替えたい。個人用AI環境「星合庵」が会話中心の構成になるまで",
-      "url": "https://zenn.dev/imaginarygate/articles/c7d653f565c92d",
-      "site": "Zenn(LLM)",
-      "published": "2026-08-11T09:19:19Z",
-      "description": "はじめに\nこれまで、個人用のAIチャット環境を少しずつ作ってきた。\n前回の記事では、自作チャットUIとFastAPI中継の構成を見直し、接続先をコードへ固定せず、後から増やせる土台を作った。\n前回の記事：\nhttps://zenn.dev/imaginarygate/articles/c8aefbabb6c2e3\nその後も開発を続け、現在はひとつの会話画面から複数のLLMへ接続し、会話の途中でモデ...",
       "category": "AI・技術",
       "rss_category": "",
       "image_url": ""
