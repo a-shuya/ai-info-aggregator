@@ -1,8 +1,208 @@
 {
   "site": "Zenn(LLM)",
-  "last_updated": "2026-08-12T07:06:25.500510",
-  "total_articles": 5271,
+  "last_updated": "2026-08-12T08:38:20.190217",
+  "total_articles": 5288,
   "articles": [
+    {
+      "title": "Claude Codeが立てた実装プランを、承認前にCodexへ自動レビューさせる",
+      "url": "https://zenn.dev/tamat_llc/articles/claude-code-codex-cross-review",
+      "site": "Zenn(LLM)",
+      "published": "2026-08-12T07:35:58Z",
+      "description": "こんにちは、TamaT の 増田 です。\nTamaT は顧客提案から要件定義、設計、開発までを一気通貫で担う少数精鋭の開発会社です。\nバイブコーディングでプランを立ててから実装を始める重要性は言うまでもないですが、各エージェントが立てるプランは意外に穴があります。\n今まではプランが妥当か手動でAIにレビューさせていましたが、チケットが多いとそれも手間になりキリがないので、自動化するフローを組み込ん...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "DeepEval入門 - LLMアプリの品質をPytestのようにテストする",
+      "url": "https://zenn.dev/yamitake/articles/deepeval-llm-evaluation-getting-started",
+      "site": "Zenn(LLM)",
+      "published": "2026-08-12T07:25:10Z",
+      "description": "はじめに\nRAG、チャットボット、エージェント。LLMを組み込んだアプリを作り始めると、必ずぶつかる壁があります。それは「この出力、本当に良いの?」という問いです。\nコードのテストなら、assert result == 4 のように正解が明確です。ところがLLMの出力は「だいたい合っている」「まあ悪くない」といった曖昧なものになりがちで、良し悪しの判定がとても難しくなります。\nそこで多くの人は目視...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "Model徹底比較 — Foundation Modelをオープンウェイト・クローズドAPI横断でカオスマップに整理する",
+      "url": "https://zenn.dev/taka4/articles/a3fc788a6fb953",
+      "site": "Zenn(LLM)",
+      "published": "2026-08-12T07:07:19Z",
+      "description": "!\nシリーズ：AI Agent Reference Architecture\n\nAIエージェントを理解したい人に捧げる地図 — ツール名でなく層(Layer)で理解するReference Architecture（シリーズ親記事）\nAgent Product徹底比較 — 33製品を自律度×提供形態のカオスマップで整理する\nExecution Engine徹底比較 — マルチエージェント時代の実行制...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "LLM / VLM理論学習ロードマップ",
+      "url": "https://zenn.dev/kojikojiprg/books/ai-theories-roadmap",
+      "site": "Zenn(LLM)",
+      "published": "2026-08-12T06:20:16Z",
+      "description": "LLM(大規模言語モデル)・VLM(視覚言語モデル)の理論を、PyTorchによるスクラッチ実装とあわせて基礎から学ぶロードマップです。",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "Foundry IQ のナレッジベースは MCP ツールとしてどう選ばれるのか",
+      "url": "https://zenn.dev/zukako/articles/20260812-foundryiq-memo",
+      "site": "Zenn(LLM)",
+      "published": "2026-08-12T05:46:33Z",
+      "description": "趣旨\nFoundry IQ のナレッジベース（Knowledge Base, 以下 KB）は、実体としては Azure AI Search が提供する MCP サーバーとして公開される、という構造になっています。本記事では「KB が MCP ツールとしてどう見えるのか」から「エージェント（LLM）のツール選択（呼び出し）がどう決まるのか」までを段階的に整理します。とくに、複数 KB を並べたときに...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "MCP サーバーを作っていたら「AI のための PDF 知識インフラ」になっていた 👉 PDF Agent Stack",
+      "url": "https://zenn.dev/shuji_bonji/articles/pdf-agent-stack-intro",
+      "site": "Zenn(LLM)",
+      "published": "2026-08-12T05:40:54Z",
+      "description": "はじめに\nこれまで、PDF 仕様書を「引く」pdf-spec-mcp、内部構造を「読む」pdf-reader-mcp、署名を「検証する」pdf-verify-mcp、そして受入監査の pdf-trust-skill と、PDF まわりの MCP サーバーと Skill を個別に紹介してきました。\nhttps://zenn.dev/shuji_bonji/articles/zenn-pdf-veri...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "Caveman 2.0で入力トークンを最大91%削減—実際に試して分かったこと",
+      "url": "https://zenn.dev/hiro_cactus/articles/12be725175f8f4",
+      "site": "Zenn(LLM)",
+      "published": "2026-08-12T05:10:33Z",
+      "description": "Caveman 2.0.0でAIが読む入力も圧縮できるようになった\n\n はじめに\nClaude CodeやCodexへ大量のログやJSONを渡すと、それだけでコンテキストが圧迫されます。\n以前のCavemanは、AIの回答から前置きや冗長な説明を減らし、出力トークンを抑えるスキルでした。\n今回紹介するCaveman 2.0.0では、従来のスキルに加えて、AIが読む入力を圧縮するエンジンとローカルプ...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "新入社員に生成AIをどう教えるか。最初の1週間でやることの設計",
+      "url": "https://zenn.dev/gen_ai_kiyozuka/articles/teaching-genai-to-new-hires-first-week",
+      "site": "Zenn(LLM)",
+      "published": "2026-08-12T04:38:32Z",
+      "description": "配属されたばかりの新入社員に、生成AIをどう教えるか。\n「若いから勝手に使いこなすでしょう」と放置するケースと、半日の操作研修だけで済ませるケースを両方見てきましたが、どちらもうまくいきません。前者は我流とルール違反が混ざり、後者は研修の翌週には使われなくなります。\nこの記事では、教える側の設計として「最初の1週間で何をやるか」を日別に整理します。対象は、新入社員や中途入社者を受け入れる側の方です...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "LLMに数えさせてはいけない",
+      "url": "https://zenn.dev/jumpei221166/articles/llm-should-not-count",
+      "site": "Zenn(LLM)",
+      "published": "2026-08-12T04:09:09Z",
+      "description": "自動生成させた記事に「7例」という数字が出てきました。データベースを検索しても、その集計はどこにも存在しませんでした。\nLLMが数えたのではなく、それらしい数を書いたのです。\n野球の采配を分析して記事にするシステムを作っています。試合データを集めて、継投や代打の傾向を集計し、Claude Code CLI に文章を書かせる。その出力に、根拠のない統計が混ざっていました。\n\n 「計算」と「文章化」は...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "小さく賭けて、大きく当てる：LLMを高速化する「投機的デコード（MTP）」の正体【概念編】",
+      "url": "https://zenn.dev/highreso/articles/2fdb5402d98e5d",
+      "site": "Zenn(LLM)",
+      "published": "2026-08-12T03:25:41Z",
+      "description": "もし、「外れてもほとんど損しないのに、当たれば得をする賭け」があったら、迷わず乗ると思いませんか。\n実は、LLMが文章を生成する仕組みの中にも、そんな都合のいい賭けがこっそり仕込まれています。\n普段AIチャットを使っていて、「もう少し早く答えが返ってこないかな」と感じたことはないでしょうか。特に、じっくり考えてから答えを出す「Thinkingモデル」や、コードを書きながら試行錯誤するAIエージェン...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "Which AI Should You Use? ChatGPT vs Claude vs Gemini in 2026",
+      "url": "https://zenn.dev/neotechpark/articles/3f87eacadce833",
+      "site": "Zenn(LLM)",
+      "published": "2026-08-12T03:09:49Z",
+      "description": "Introduction\nIf someone asks you \"which AI do you use,\" the honest answer today is \"it depends on which week you ask.\" Every major lab shipped something new in the last few weeks: OpenAI removed the f...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "4つのAIに設計をレビューさせたら、企画の9割を削ることになった",
+      "url": "https://zenn.dev/gjunkie/articles/a5fb46401a83f3",
+      "site": "Zenn(LLM)",
+      "published": "2026-08-12T03:08:43Z",
+      "description": "「一次ソースから抽出したコードをサンドボックスで自動実行し、セキュリティスキャンを通した上で、動作確認済みのインサイトを毎日10件届けるシステム」\nこれが最初の企画だった。\n最終的に手元に残ったのは、週に3件のGitHubリポジトリを提示し、それを手で試して結果を記録するだけのCLIツールになった。サンドボックスはない。LLMも呼ばない。自動実行検証も、セキュリティスキャンも、実行知見グラフも、す...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "ローカルAIとContextLengthを超えた「思い出」を作る #2",
+      "url": "https://zenn.dev/kanakana612/articles/4adc85dcf9697b",
+      "site": "Zenn(LLM)",
+      "published": "2026-08-12T02:58:50Z",
+      "description": "～既存実装の整理と、（たぶん僕特有の）課題～\n前回、対話に必要な記憶を「即時・低速」と「詳細・概要」の二軸で分類し、大まかに4つのグループに仕分けをした。この時「低速参照を許容」と分類した種類の情報は、必ずしもコンテキスト上に載せる必要がないものという事になる。こうしてContextWindowに載せる情報を取捨選択し、検索参照で補う発想は自然なもので、実際にいくつか実装報告があり、成果を上げてい...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "AIの判断依頼に「なんのこと?」となったので、案件を知らない別AIに文面だけ検査させる「前提ゼロゲート」を作った",
+      "url": "https://zenn.dev/shio_shoppaize/articles/kagemusha-agent-native",
+      "site": "Zenn(LLM)",
+      "published": "2026-08-12T02:12:28Z",
+      "description": "!\n前回の記事: AI家臣団を解散して、影武者を一人だけ残した——兵法書と訓練記録\n\n今日、オレがある顧客対応でやった仕事は、「OK」の2文字を打つことだけだった。\n顧客とのメール往復の原文は、一行も読んでいない。判断に必要な経緯は、依頼文の冒頭3行で受け取った。それでも連絡は先方に着地して、次の打ち合わせの準備が一つ進んだ。\nいい話に聞こえる? オレもそう思いたい。\nただし、その2文字にたどり着...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "完璧な Skill は作れない — フレーム問題と知識の抽象化のトレードオフ",
+      "url": "https://zenn.dev/toshinao/articles/2bc6da086a62ab",
+      "site": "Zenn(LLM)",
+      "published": "2026-08-12T02:03:52Z",
+      "description": "対象読者：システム開発に関わる PM・エンジニア・QA。LLM（Claude Code など）にレビューや定型作業を任せるために、チームの知見を Skill として文書化している（しようとしている）人。\n\n 何の話か\nチームの知見を Skill（「いつ使うか」＋手順・チェックリストを書いた文書）にまとめると、LLM が定型作業やレビューをこなしてくれるようになります。うまくいくと強力です。しかし実...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "LLMを『信じすぎない』— 出力を検証して守るAI活用Tips 3選",
+      "url": "https://zenn.dev/elements/articles/710e259170b042",
+      "site": "Zenn(LLM)",
+      "published": "2026-08-12T01:46:19Z",
+      "description": "はじめに\n私たちは複数のプロダクトにLLMを組み込んでいます。\n長い専門文書のドラフトなど、LLMの出力がそのまま顧客向けの成果物になるものが多いのが特徴です。\nこうしたプロダクトでは、出力が「速い・安い」だけでは足りません。\n数値や事実が1つ間違っているだけで、成果物として使えないこともあります。\nでは、LLMの出力が正しいことを、どう担保すればいいのか。\n本記事は出力を信じすぎず、仕組みで検証...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "社内RAGの検索APIをPoCから本番運用まで持っていった話",
+      "url": "https://zenn.dev/sompojapan_dx/articles/3e8476864d6b0f",
+      "site": "Zenn(LLM)",
+      "published": "2026-08-12T01:31:41Z",
+      "description": "はじめに\nSompo Digital Labの眞方です。社内向けRAGの検索APIを、PoCから本番運用まで約2年半ほぼフルスクラッチで開発してきました。その過程で技術選定やアーキテクチャがどう変わっていったのかを振り返ります。開発当時の経緯もありますが、LangChainやLlamaIndexといったフレームワークやマネージドサービスには乗らず、ハイブリッド検索やRRFも自前で構築したまま本番運...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "観点ではなく「質問」でAIを測ってみた — 同じ仕様の欠陥が、聞き方ひとつで見えたり消えたりする",
+      "url": "https://zenn.dev/mumihatsu/articles/6521bb76b94d2a",
+      "site": "Zenn(LLM)",
+      "published": "2026-08-12T01:08:44Z",
+      "description": "1. はじめに — 採点の物差しを変えてみる\n自分はQAエンジニアで、普段のテスト設計に生成AI（Claude）を使っています。\nこれまでこの連載では、モデルの実力を「テスト観点がどこまで出るか」で測ってきました。固定の採点項目を用意して、10回走らせて、何回出たかを数える方式です。前回の Opus 5 測定もこの方式でした。\nただ、測りながらずっと引っかかっていたことがあります。深い観点——仕様...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "画像入力の主観評価タスクで迎合バイアスを外す、制約1行の効きと拒否境界",
+      "url": "https://zenn.dev/every_ai_recipe/articles/ai-face-score-report",
+      "site": "Zenn(LLM)",
+      "published": "2026-08-12T00:48:06Z",
+      "description": "TL;DR\n\nテキスト入力で観測されている迎合バイアス（sycophancy）は、画像入力を伴う主観評価タスクでも同様に働く。顔写真に対する評価を求めると、既定では全項目が高評価に寄った出力になる\n「過度に持ち上げることは避け」という否定形の1行制約が、この寄りを外すのに最も効いた。評価項目を15個列挙しても、この制約が無ければ各項目のスコアは高い側に圧縮されたままだった\n顔の評価は安全側のガード...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "Claude Codeの履歴615本を監査したら、記録が消える穴が3つあった",
+      "url": "https://zenn.dev/zenn_content/articles/claude-code-transcript-audit",
+      "site": "Zenn(LLM)",
+      "published": "2026-08-11T23:31:35Z",
+      "description": "結論から\n~/.claude/projects/ にあるセッション履歴（JSONL）を615本・106,119行スキャンしました。結果、次の3つが分かりました。\n\n\n3月から使っているのに、残っている履歴は直近32日分だけだった。プロジェクトディレクトリ30個のうち17個は中身が空（ディレクトリだけ残り、JSONLが全滅）\n\n28セッションが、1本のセッション中に複数のモデルで処理されていた。UI...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
     {
       "title": "DFlashでtok/sの意味が変わる — 24GB GPUでMuse Glimmer 30B・256K・Visionを実測した",
       "url": "https://zenn.dev/pich/articles/516a3d98025852",
@@ -44,16 +244,6 @@
       "image_url": ""
     },
     {
-      "title": "監視ソースをYAMLで管理し、クラッシュしても再開できるキューを作る #3",
-      "url": "https://zenn.dev/katamarize/articles/step3-pipeline-sources-yaml",
-      "site": "Zenn(LLM)",
-      "published": "2026-08-11T12:18:13Z",
-      "description": "!\nローカルLLMで作る自分専用ニュースbot シリーズの3本目です。この記事だけでも読めます。\n前: ローカルLLM推論中のブルースクリーンをWinDbgで追う\n\n\n この記事について\n#1でローカルLLMのstructured output、#2でRSS収集とSQLite差分検知を作りました。今回はこの2つを1本のパイプラインに結合し、監視対象のニュースソースをYAMLで宣言的に管理できるよう...",
-      "category": "AI・技術",
-      "rss_category": "",
-      "image_url": ""
-    },
-    {
       "title": "ローカルLLM推論中のブルースクリーン(DPC_WATCHDOG_VIOLATION)をWinDbgで追う #2.5",
       "url": "https://zenn.dev/katamarize/articles/step3-incident-gpu-bsod",
       "site": "Zenn(LLM)",
@@ -74,16 +264,6 @@
       "image_url": ""
     },
     {
-      "title": "話しかけたら絵が出てくる——小さなローカルLLMを実戦投入するまでの5日間",
-      "url": "https://zenn.dev/triponte/books/local-llm-sd-diy",
-      "site": "Zenn(LLM)",
-      "published": "2026-08-11T11:33:35Z",
-      "description": "日本語で「夕暮れの海辺に立つ女性」と打つと、20秒後に画像が返ってくる。その変換をやっているのは、自分で借りたGPUに自分で立てた1.5BのLLM。小さいモデルは指示を落とし、無視し、ありもしない語を作る——その3つの事故を、何で測り・何で縛り・何で選び直したか。要件定義から運用初日のつまずきまで、5日ぶんの判断をそのまま公開する。本編11章は無料、最後の付録章だけ有料。",
-      "category": "AI・技術",
-      "rss_category": "",
-      "image_url": ""
-    },
-    {
       "title": "Fabric Automation Tool — Microsoft Fabric環境を構築するAI支援自動化ソリューション",
       "url": "https://zenn.dev/headwaters/articles/a9b4f4729d088e",
       "site": "Zenn(LLM)",
@@ -99,16 +279,6 @@
       "site": "Zenn(LLM)",
       "published": "2026-08-11T09:44:18Z",
       "description": "上原正吉（EarthLink Network Co., Ltd.）。Claude Codeを開発の主体に据え、20を超えるプロダクトを1人で同時に開発・運用しています。これは、その現場の実測記です。\n2026年7月30日、社内のAI開発を動かしている統制盤で、ローカルLLMの処理比率が50.3%、クラウド側が48.2%になりました。\n\nこれは「請求額が正確に半分になった」という意味ではありません。...",
-      "category": "AI・技術",
-      "rss_category": "",
-      "image_url": ""
-    },
-    {
-      "title": "複数LLMを1つの会話で切り替えたい。個人用AI環境「星合庵」が会話中心の構成になるまで",
-      "url": "https://zenn.dev/imaginarygate/articles/c7d653f565c92d",
-      "site": "Zenn(LLM)",
-      "published": "2026-08-11T09:19:19Z",
-      "description": "はじめに\nこれまで、個人用のAIチャット環境を少しずつ作ってきた。\n前回の記事では、自作チャットUIとFastAPI中継の構成を見直し、接続先をコードへ固定せず、後から増やせる土台を作った。\n前回の記事：\nhttps://zenn.dev/imaginarygate/articles/c8aefbabb6c2e3\nその後も開発を続け、現在はひとつの会話画面から複数のLLMへ接続し、会話の途中でモデ...",
       "category": "AI・技術",
       "rss_category": "",
       "image_url": ""
