@@ -1,14 +1,204 @@
 {
   "site": "Zenn(AI)",
-  "last_updated": "2026-08-12T02:12:23.624720",
-  "total_articles": 12377,
+  "last_updated": "2026-08-12T04:19:13.587923",
+  "total_articles": 12391,
   "articles": [
     {
-      "title": "スター3000超の『規制産業向けAI監査基盤』ルールエンジンがreturn Trueだった",
-      "url": "https://zenn.dev/mskbhd/articles/lab-241-semantica-3ai-rete",
+      "title": "「作るべき理由」には強さの段階がある — なぜ『HTML構造上つくれない』が最強か",
+      "url": "https://zenn.dev/uixhero_jp/articles/gunjo-yattemita-matome-02-build-evidence-ladder",
       "site": "Zenn(AI)",
-      "published": "2026-08-11T22:32:18Z",
-      "description": "きっかけ\nGitHub Trendshiftにも載っている semantica-agi/semantica というOSSがある。READMEは自らを「Open Source Palantir」と呼び、「規制産業向けの説明可能AI知識グラフ基盤」を謳う。180k行、スター3,000超。Rete推論エンジン、因果連鎖追跡、意味的判例検索、W3C PROV-O準拠の監査証跡出力……と、コンプライアンス文...",
+      "published": "2026-08-12T02:32:18Z",
+      "description": "自作のデザインシステム @gunjo/ui（群青／gunjo.jp） を、群青を一度も見たことのない 予備知識ゼロのAI に170画面組ませてきた連載のまとめ第2弾。「そのコンポーネントを作るべきか？」の判断根拠は、実は3段階の強さに分かれます。\n\n\n デザインシステム設計者の一番難しい判断\n「そのコンポーネント、本当に作るべきか？」\nデザインシステムを持つ人が毎週向き合う質問です。作りすぎると、...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "位置エンコーディング(Positional Encoding)/ RoPE(実装・実験編)",
+      "url": "https://zenn.dev/kojikojiprg/articles/003_positional_encoding_rope-practice",
+      "site": "Zenn(AI)",
+      "published": "2026-08-12T02:32:12Z",
+      "description": "この記事は後編(実装・実験編)です。前編(理論編)は こちら。\n\n 4. 実装方針 / Implementation Plan\n\n src/に切り出すもの\nsrc/layers/positional_encoding.pyに、注入点に応じた 2 種類の抽象基底クラスと、各方式の実装クラスを追加する(SinusoidalPositionalEncodingはそのまま残す)。\n\n\n\nクラス\n役割\n注入...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "Transformer Block(理論編)",
+      "url": "https://zenn.dev/kojikojiprg/articles/002_transformer_block-theory",
+      "site": "Zenn(AI)",
+      "published": "2026-08-12T02:32:11Z",
+      "description": "この記事は前編(理論編)です。実装・実験編は こちら。\n\n 002. Transformer Block\n残差接続・層正規化・順伝播ネットワークによるブロック構築 — Encoder Block と Decoder Block\nFrom Residual Connections and Normalization to Encoder / Decoder Blocks\ntheories/01_fo...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "Transformer Block(実装・実験編)",
+      "url": "https://zenn.dev/kojikojiprg/articles/002_transformer_block-practice",
+      "site": "Zenn(AI)",
+      "published": "2026-08-12T02:32:11Z",
+      "description": "この記事は後編(実装・実験編)です。前編(理論編)は こちら。\n\n 4. 実装方針 / Implementation Plan\nsrc/に切り出すもの(以降のトピック・アプリからも再利用する汎用部品):\n\n\n\nファイル\n内容\n\n\n\n\nsrc/layers/normalization.py\n\nLayerNormalization(nn.Module)\n\n\nsrc/layers/feedforward...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "注意機構(Attention Mechanism)",
+      "url": "https://zenn.dev/kojikojiprg/articles/001_attention_mechanism",
+      "site": "Zenn(AI)",
+      "published": "2026-08-12T02:32:10Z",
+      "description": "001. 注意機構(Attention Mechanism)\nScaled Dot-Product Attention から Multi-Head Attention まで\nFrom Scaled Dot-Product Attention to Multi-Head Attention\ntheories/01_foundations/001_attention_mechanism.ipynb\n\n...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "AI AgentにGitHub権限を渡す前に確認したい5つのこと",
+      "url": "https://zenn.dev/kuromame_kun/articles/0358717223b8b4",
+      "site": "Zenn(AI)",
+      "published": "2026-08-12T02:32:10Z",
+      "description": "最近、AI Agentを開発フローに組み込むケースが増えています。\n例えば、\n\nIssueを読ませる\nPull Requestをレビューさせる\nRepositoryを検索させる\nテストを実行させる\n修正案を作らせる\n\nといった使い方です。\n以前なら、\n\nAIにコードを書いてもらう\n\nという使い方が中心でした。\nしかし最近は少し変わっています。\nAI Agentはコード生成だけではなく、\n開発環境の...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "AIの判断依頼に「なんのこと?」となったので、案件を知らない別AIに文面だけ検査させる「前提ゼロゲート」を作った",
+      "url": "https://zenn.dev/shio_shoppaize/articles/kagemusha-agent-native",
+      "site": "Zenn(AI)",
+      "published": "2026-08-12T02:12:28Z",
+      "description": "!\n前回の記事: AI家臣団を解散して、影武者を一人だけ残した——兵法書と訓練記録\n\n今日、オレがある顧客対応でやった仕事は、「OK」の2文字を打つことだけだった。\n顧客とのメール往復の原文は、一行も読んでいない。判断に必要な経緯は、依頼文の冒頭3行で受け取った。それでも連絡は先方に着地して、次の打ち合わせの準備が一つ進んだ。\nいい話に聞こえる? オレもそう思いたい。\nただし、その2文字にたどり着...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "大規模化したプロダクトでパフォーマンス観点のチェックスキルを作りAI開発ワークフローの自己修正ループに組み込む",
+      "url": "https://zenn.dev/gvatech_blog/articles/97058201a05d7d",
+      "site": "Zenn(AI)",
+      "published": "2026-08-12T02:10:45Z",
+      "description": "背景\n現在自分が所属しているチームではAI開発のワークフローとして、Orchestrator が計画フェーズ（Planner ⇄ Evaluator）と実装フェーズ（Generator ⇄ Evaluator）を制御する仕組みを構築(この仕組み自体は別のエンジニアさんが実装)しており、実装フェーズでは Generator がコード実装後に以下で作成したコードレビュースキルを実行して指摘箇所から重要...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "AI生成UIの20分レビュー — 実務品質へ直す手順と判断",
+      "url": "https://zenn.dev/mocha_engineer/books/ai-ui-review",
+      "site": "Zenn(AI)",
+      "published": "2026-08-12T01:46:04Z",
+      "description": "📰 概要\n\nAIやコーディングエージェントが作った画面を、公開前に何をどの順番で確認すればいいか決まっていない方へ。\n\n本書は、現役フロントエンドエンジニアが、AI生成UIを実務品質へ直すときの確認手順を、20分で一周できる形にまとめた技術書です。5つの状態それぞれの判断基準から、状態を手元で再現するコード、コピーして使えるレビュー表、記入例、PRへ貼る共有文、エージェントへ渡す制約文までを扱いま...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "AIが作った画面のレビューで、0件とエラーをMSWで数秒で切り替える",
+      "url": "https://zenn.dev/mocha_engineer/articles/reproduce-ui-states-with-msw",
+      "site": "Zenn(AI)",
+      "published": "2026-08-12T01:46:03Z",
+      "description": "再現できない状態は、レビューされない\nコーディングエージェントに一覧画面を作ってもらった後、レビューで最初に詰まるのはここでした。\n\n0件やエラーの画面を、どうやって出すのか。\n\n本番のAPIが正常に動いている環境では、エラー画面は出せません。データが入っているアカウントでは、初回0件も再現できません。結果として、正常データが入った画面だけを見て「問題なさそう」と判断することになります。\nよくある...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "月3,400円のAI会社を安全に回す多層防御 — 安全装置がしばらく止まっていた話",
+      "url": "https://zenn.dev/macchan_ai_dev/articles/e3dcfc020fbbc3",
+      "site": "Zenn(AI)",
+      "published": "2026-08-12T01:43:52Z",
+      "description": "TL;DR（要点先出し）\n\n自宅のミニPCで動かしている「AIエージェントの会社」（第1弾）で、AIにファイル操作やコマンド実行を任せる以上、安全対策を多層で組んでいます。\nでも、この記事の主役は「立派な多層防御を組みました」という自慢ではありません。組んだはずの安全装置が、気づかないうちにしばらく止まっていたという失敗の話です。\nそこから学んだのは、セキュリティは「設定した瞬間」に安心するのが一...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "「後日」は、日付ではない（14）",
+      "url": "https://zenn.dev/jissokulog/articles/5e16d2a14e4485",
+      "site": "Zenn(AI)",
+      "published": "2026-08-12T01:40:21Z",
+      "description": "記録に「後日」と書いて、翌日その記録を開きました。\n何をすればその案が動くのかが、どこにも書いてありません。だからその日も判断できず、また「後日」と書き足しました。\n3日目に同じ行を見て、ようやく気づきました。この行は、私が同じ判断を毎日やり直すための仕組みになっている。\n\n 落とし穴1 —— 「後日」とだけ書いた繰り越しは、後日に来ない\n繰り越すこと自体は普通です。今日やらない理由は毎日あります...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "社内RAGの検索APIをPoCから本番運用まで持っていった話",
+      "url": "https://zenn.dev/sompojapan_dx/articles/3e8476864d6b0f",
+      "site": "Zenn(AI)",
+      "published": "2026-08-12T01:31:41Z",
+      "description": "はじめに\nSompo Digital Labの眞方です。社内向けRAGの検索APIを、PoCから本番運用まで約2年半ほぼフルスクラッチで開発してきました。その過程で技術選定やアーキテクチャがどう変わっていったのかを振り返ります。開発当時の経緯もありますが、LangChainやLlamaIndexといったフレームワークやマネージドサービスには乗らず、ハイブリッド検索やRRFも自前で構築したまま本番運...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "AIにコンテンツを量産させるなら、先に「公開を止める仕組み」を作る",
+      "url": "https://zenn.dev/anikuma/articles/ai-content-publish-gate-design",
+      "site": "Zenn(AI)",
+      "published": "2026-08-12T01:28:09Z",
+      "description": "AIで記事やSNS投稿を量産する仕組みを4ヶ月運用してきました。新規記事28本、既存ブログからの自動転載28本、X投稿61本。その中で確信したことがあります。量産の仕組みより先に、「公開を止める仕組み」を作るべきだった、ということです。\n私は2回、事故を起こしました(1回目は公開前に発見、2回目は公開後に修正)。どちらも「AIがうっかり嘘を書いた」のではありません。もっとタチが悪い、AIが文脈を親...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "開発現場に実際にAIエージェントを取り入れる:課題とアプローチ",
+      "url": "https://zenn.dev/shotawatanabe/articles/ai-agent-dev-guardrails",
+      "site": "Zenn(AI)",
+      "published": "2026-08-12T01:14:26Z",
+      "description": "ある日の現場\nソフトウェアのリリースの前、実際に検証スタッフが検証を行う。そのスタッフが上げてきたチケットの問題があった場合、どうするだろうか？ 今であればClaude Code/Codexのような生成AIに問題を渡せばある程度の解決をしてくれる。そこで上げられた調査方法を元にステージングのデータベースを確認し、調査をすることで問題の原因を探っていく。\nしかし、生成AIが自律的にデータベースも、ソ...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "CLAUDE.mdパターンを15個試したら、実運用に残ったのは4つだけだった",
+      "url": "https://zenn.dev/kenimo49/articles/claude-md-15-patterns-4-survived",
+      "site": "Zenn(AI)",
+      "published": "2026-08-12T01:11:45Z",
+      "description": "私はCLAUDE.mdのパターンを15種類量産しました。2ヶ月運用した結果、実務に残ったのは4つだけでした。残り11個は、書いたことすら覚えていませんでした。この記事はその2ヶ月の実測ログです。テンプレを増やすほど、実務で使うパターンが減る 現象の全体像を、生き残った4つと死蔵した11つの共通症状と併せて書きます。\n\n 15パターンをどう作ったか\n書籍『実践Claude Code』第6章に15のC...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "breakout_4hを3段階で改善したら、「他の戦略の予算を奪う」構造に気づいた",
+      "url": "https://zenn.dev/codecraft/articles/breakout-4h-shared-balance-cannibalization",
+      "site": "Zenn(AI)",
+      "published": "2026-08-12T01:09:00Z",
+      "description": "暗号資産の自動売買Botを作っています。dry_run(仮想売買)で運用していて、実弾はまだほぼ入れていません。\nこの記事は、1つの戦略のパラメータを改善したら、その改善の副産物として「他の戦略の予算を一時的に奪いかねない」という構造上のリスクに気づいた話です。\n\n\n きっかけは、たった4時間で決済された1件の取引\nbreakout_4h(4時間足のブレイクアウト戦略)のドライラン取引で、こういう...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "画像入力の主観評価タスクで迎合バイアスを外す、制約1行の効きと拒否境界",
+      "url": "https://zenn.dev/every_ai_recipe/articles/ai-face-score-report",
+      "site": "Zenn(AI)",
+      "published": "2026-08-12T00:48:06Z",
+      "description": "TL;DR\n\nテキスト入力で観測されている迎合バイアス（sycophancy）は、画像入力を伴う主観評価タスクでも同様に働く。顔写真に対する評価を求めると、既定では全項目が高評価に寄った出力になる\n「過度に持ち上げることは避け」という否定形の1行制約が、この寄りを外すのに最も効いた。評価項目を15個列挙しても、この制約が無ければ各項目のスコアは高い側に圧縮されたままだった\n顔の評価は安全側のガード...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "AIを使ったデバッグ・評価ループを行うためのログ設計",
+      "url": "https://zenn.dev/jca02266/articles/ai-continuous-debugging-vba-runner",
+      "site": "Zenn(AI)",
+      "published": "2026-08-12T00:17:01Z",
+      "description": "はじめに\n本記事では、AIを使った開発においてバグ発見の記録のために検討したログ設計について説明します。\n私は、ExcelなしでVBAを実行し、テストできるVBA言語の評価エンジン VBA Runner を開発し、公開しました。\n詳しい背景は、ExcelなしでVBAを実行できる環境を構築しAIでのVBA開発を促進する にも書いています。\n現在も、VBA言語仕様の完全互換を目指して、AIによる評価と...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "Claude Code を週19,066回呼んでわかった、トークンを食っていたもの",
+      "url": "https://zenn.dev/skipbit/articles/2026-08-token-call-count",
+      "site": "Zenn(AI)",
+      "published": "2026-08-11T23:54:14Z",
+      "description": "Max 20x プランに加入していますが、週の利用上限が50%増になる期間（2026年5月13日～8月19日）中に、週の後半になると枠が足りなくなることがよくあります。何がそんなに消費しているのか気になって調べてみました。\nその過程で、以下の2点に疑問を感じました。\n\n\n/usage で表示される消費率と、ccusage で表示される数字が一致しない。\n「出力を短くする」「モデルを下げる」といった...",
       "category": "AI・技術",
       "rss_category": "",
       "image_url": ""
@@ -19,16 +209,6 @@
       "site": "Zenn(AI)",
       "published": "2026-08-11T22:00:16Z",
       "description": "AIエージェントによるコード生成量が人間のレビュー能力を上回る時代に、\n「コードをすべて読む」以外の品質保証は成立するのか。\nHarness Engineering / Evals / Software Testing の先行事例から考える。\n\n\n対象: AIコーディングエージェントを実務利用するソフトウェア開発チーム\n主な対象ツール: Claude Code / Codex など\n調査方針: 一...",
-      "category": "AI・技術",
-      "rss_category": "",
-      "image_url": ""
-    },
-    {
-      "title": "オープンソースAI動画生成モデル「MiniMax H3」× ComfyUI 徹底解説ガイド——ローカル構築から実践動画生成まで",
-      "url": "https://zenn.dev/lumichy/articles/minimax-h3-comfyui-video-generation-guide-2026",
-      "site": "Zenn(AI)",
-      "published": "2026-08-11T21:55:27Z",
-      "description": "オープンソースAI動画生成モデル「MiniMax H3」× ComfyUI 徹底解説ガイド——ローカル構築から実践動画生成まで\n\nAIによる画像生成や動画生成の進化は目覚ましく、近年では個人PCやローカル環境でも映画品質の動画生成が現実的になってきました。\n2026年8月、中国のAIスタートアップ MiniMax（海螺 AI / Hailuo AI）は、最新のオープンソース全模態（マルチモーダル）...",
       "category": "AI・技術",
       "rss_category": "",
       "image_url": ""
@@ -64,16 +244,6 @@
       "image_url": ""
     },
     {
-      "title": "散らばったCLAUDE.mdのうち、どれがズレているのかを出すスクリプトを書いた",
-      "url": "https://zenn.dev/untactit/articles/c65ee6d3011fdf",
-      "site": "Zenn(AI)",
-      "published": "2026-08-11T21:00:11Z",
-      "description": "前回、AIエージェントの指示ファイルが端末ごとにズレていく話を書きました。構造の話で終わっていたので、今回は実際に計測できるものを作りました。\nhttps://github.com/untactit/agent-drift\n単一ファイル・依存ゼロ・Python 3.8+。読み取り専用で、スキャンしたファイルには一切書き込みません。\ncurl -O https://raw.githubusercon...",
-      "category": "AI・技術",
-      "rss_category": "",
-      "image_url": ""
-    },
-    {
       "title": "AIエージェントの指示ファイルは、なぜ端末ごとにズレていくのか",
       "url": "https://zenn.dev/untactit/articles/a4897062153d85",
       "site": "Zenn(AI)",
@@ -104,41 +274,11 @@
       "image_url": ""
     },
     {
-      "title": "Upstage Studio で保険書類の一次審査エージェントを作ってみた",
-      "url": "https://zenn.dev/nhandsome/articles/upstage-studio-insurance-agent",
-      "site": "Zenn(AI)",
-      "published": "2026-08-11T16:36:09Z",
-      "description": "本記事は、Upstage の社員が自社製品「Upstage Studio」を実際に使用して記録した内容です。\n!\n3行まとめ\n\n架空の損害保険会社のシナリオを立て、架空の審査業務の要件を Upstage Studio で自動化した\nノード構成はまるごと生成され、こちらが手を入れたのはマージの一か所だけだった\n内容の異なる書類一式7セットで動かした結果まで扱う\n\n\n架空の損害保険会社を一社立てて、そ...",
-      "category": "AI・技術",
-      "rss_category": "",
-      "image_url": ""
-    },
-    {
-      "title": "Claude Code hooksでAIエージェントの作業をリアルタイムに可視化する",
-      "url": "https://zenn.dev/alzcb4/articles/8a5ce86949b7ff",
-      "site": "Zenn(AI)",
-      "published": "2026-08-11T16:03:14Z",
-      "description": "AIに作業を投げたあと、「今なにをしているか」が見えなくなることがあります。ターミナルには文字が流れますが、人間が追い続けるのは可視化とは言いにくいです。ファイル編集、シェル実行、別エージェントへの委譲が混ざると、「誰が何をしているのか」が分かりづらくなります。\nこの記事では、Claude Code hooksで作業ログをリアルタイムに外へ流す実装を紹介します。実運用の仕組みをもとに、最小実装と対...",
-      "category": "AI・技術",
-      "rss_category": "",
-      "image_url": ""
-    },
-    {
       "title": "未読1000件から始めた、自分専用の秘書づくり ―― 身近な繰り返し作業を自動化してみた",
       "url": "https://zenn.dev/yucco/articles/personal-ai-secretary-automation",
       "site": "Zenn(AI)",
       "published": "2026-08-11T15:52:35Z",
       "description": "!\nこの記事は、個人利用のために構築した自動化の体験談です。実行方針や設定内容は、当時の環境や試行錯誤に基づくものであり、参考程度にお読みください。\n\n\n はじめに\nGmail の未読が、気づけば 1000 件を超えていました。\n必要なメールが埋もれていないか気になるのに、一件ずつ確認するのは大変で、受信トレイを開くだけで少し気が重くなる。そんな状態をなんとかしたいと思っていました。\nGoogle...",
-      "category": "AI・技術",
-      "rss_category": "",
-      "image_url": ""
-    },
-    {
-      "title": "ローカルAIに永続記憶を与えた初日、3回騙された",
-      "url": "https://zenn.dev/satoshiakiyama/articles/bf620f6a0b018b",
-      "site": "Zenn(AI)",
-      "published": "2026-08-11T15:49:28Z",
-      "description": "自宅のPCで、14BのローカルLLMを「研究・制作の常在オペレーター」に育てる計画を 始めた。初日にやったことは3つ — 永続記憶を与え、自分の状態を自分で読む手を 与え、毎朝自分の欠点を1つ直す習慣を仕込んだ。\nそして初日のうちに、3回騙された。この記事はその失敗の記録である。\n与えたもの\n記憶: 追記式の記憶ファイル。呼び出しのたびに自分の過去(教訓・文脈・ 自分の願い)を読んでから話す\n手:...",
       "category": "AI・技術",
       "rss_category": "",
       "image_url": ""
