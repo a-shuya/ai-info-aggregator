@@ -1,14 +1,134 @@
 {
   "site": "Zenn(LLM)",
-  "last_updated": "2026-08-12T19:31:24.818667",
-  "total_articles": 5295,
+  "last_updated": "2026-08-12T20:21:02.236294",
+  "total_articles": 5306,
   "articles": [
     {
-      "title": "論文メモ：LLMの回答転換を予測するFusion-Fission式",
-      "url": "https://zenn.dev/kas_blog/articles/20260809-fusion-fission-ai-behavior-shift",
+      "title": "「プロンプトが長い」は診断ではない ── AIハーネスの不調を6つの失敗パターン名で呼ぶ",
+      "url": "https://zenn.dev/tomu_coelia/articles/harness-failure-modes",
       "site": "Zenn(LLM)",
-      "published": "2026-08-12T13:43:50Z",
-      "description": "はじめに\nこの記事は、LLM（大規模言語モデル）の回答が、会話の途中で望ましい内容から望ましくない内容へ転換する時点を、内部表現から予測しようとする論文の技術メモです。\n\n論文タイトル：Fusion-fission forecasts when AI will shift to undesirable behavior\n著者：Neil F. Johnson、Frank Yingjie Huo\n発表...",
+      "published": "2026-08-12T19:44:50Z",
+      "description": "AIエージェントの設定一式（システムプロンプト・skill・フック・チェッカー、まとめて「ハーネス」と呼んでいます）をレビューすると、所見はたいてい「長い」「多い」「ごちゃごちゃしている」になります。これは症状の描写であって診断ではありません。「長い」からどう直すかは一意に決まらないからです。\n私たちは3つのリポジトリで、ハーネスの壊れ方に6つの名前を与えて診断語彙にしました（coelia-sys...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "Claude Codeのhookは、一度denyするとMCPツールを見なくなる_トークン節約の実験で踏んだ話",
+      "url": "https://zenn.dev/chikoku_neko/articles/7be553b6bf818a",
+      "site": "Zenn(LLM)",
+      "published": "2026-08-12T17:52:41Z",
+      "description": "先に結論\n\nClaude Codeのトークンを減らそうと、PreToolUse hookでReadをdenyし、ローカルLLMの要約に誘導する実験をした。\nhookのログにはローカル要約ツールの呼び出しが1行も残らなかった。だが実際には呼ばれていた。PreToolUse hookが一度denyを返すと、そのセッションの以降のMCPツール呼び出しでhookが発火しなくなる（組み込みツールは影響なし）...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "Decode Context Parallelism(DCP) を整理する",
+      "url": "https://zenn.dev/tosshi/articles/45a492721a6235",
+      "site": "Zenn(LLM)",
+      "published": "2026-08-12T17:04:40Z",
+      "description": "はじめに\nvLLM のブログで Decode Context Parallelism（DCP） という並列化の効果が紹介されていました。長いコンテキストを高スループットで捌くための工夫です。\n\nvLLM ブログより\n\n\nちなみに Context Parallelism 自体は新しい技術ではなく、以前からある Parallelism の一種です。\nこの記事では、DCP を理解する前提として並列化の全...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "Google Colabで最新LLMを試す #2 ― Kimi-VL-A3B-Thinking-2506を動かす",
+      "url": "https://zenn.dev/nakanishitf/articles/3330f4376fa04a",
+      "site": "Zenn(LLM)",
+      "published": "2026-08-12T15:33:10Z",
+      "description": "はじめに\n前回の記事では、Google Colab上で比較的新しいLLMを実際に動かしながら、どこまでローカル実行できるのかを試しました。\n今回はその第2回として、Moonshot AIの Kimi-VL-A3B-Thinking-2506 をGoogle Colab上で動かしてみます。\n本記事でより興味を持っていただけましたら、「ブラウザで動かすLLM実装入門　Google Colaborato...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "技術コメントは英語、業務コメントは日本語にする",
+      "url": "https://zenn.dev/id774/articles/fbe89c19790d9c",
+      "site": "Zenn(LLM)",
+      "published": "2026-08-12T15:05:05Z",
+      "description": "以前、AI は文章を返す道具から、ファイルを読み、コードを編集し、テストを実行する作業基盤へ移りつつあると整理した[1]。この変化をコードコメントまで降ろして考えると、従来は人間の読みやすさだけで決めていた言語にも別の評価軸が加わる。\nただし、そこで「AI が読むからコメントをすべて英語にする」と結論づけるのは性急である。ソースコードのコメントには、実装上の理由を説明するものと、業務上の理由を説明...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "Claude Codeと協業で自サイトをリニューアルした話",
+      "url": "https://zenn.dev/chisamikan/articles/332c882dddc4e7",
+      "site": "Zenn(LLM)",
+      "published": "2026-08-12T14:48:43Z",
+      "description": "※この記事は以前FANBOXとnoteに投稿した記事の増強版です。\n先月、弊ウェブサイトをリニューアルしました。\nhttps://chisamikan.site/\n今回初めてバイブコーディングでサイトを作ったのですが、備忘録がてら制作記録をまとめておきます。\n\n サイト構成\n\n\nフレームワーク: Astro, Tailwind CSS\n\nCMS: Notion\n\nホスティング先: GitHub +...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "「CLAUDE.md は短い方が良い」を 1,510 回試して確かめた",
+      "url": "https://zenn.dev/odacchi/articles/claude-md-length-experiment",
+      "site": "Zenn(LLM)",
+      "published": "2026-08-12T14:32:13Z",
+      "description": "CLAUDE.md は短く保つべき、という通説があります。X では「200 行以内が理想」といった言われ方もします。長くなったら .claude/rules/ に分割せよ、とも言われます。\n本当なのか、自分の環境で実際に測ってみたら、想像していたのとは違う結果になりました。\n!\n先に断っておくと、「200 行」という閾値そのものを検証したわけではありません。比べたのは 228 行と 1,040 行...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "MCP2026対応でAgentCore Gatewayが一気に変わった5つの理由",
+      "url": "https://zenn.dev/bambampurin/articles/2026-08-03-tech-daily",
+      "site": "Zenn(LLM)",
+      "published": "2026-08-12T14:01:11Z",
+      "description": "!\n本日は、BigGoの「LLMは舞台裏へ、AIエージェントと具身知能が主役に」が示す通り、AIの中心が“モデルそのもの”から“エージェントとしてどう動くか”へ移っています。AWSのMCP対応、Allganize・富士通・Microsoft・SAPの業務エージェント強化がその流れを裏付ける一方、ReutersやNPR、TechCrunchのOpenAIエージェント逸脱報道により、安全性と監査性が最...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "Claudeが生成テキストに「見えない透かし」を入れ始めた件を整理する",
+      "url": "https://zenn.dev/jeong/articles/3c5c5431b5109d",
+      "site": "Zenn(LLM)",
+      "published": "2026-08-12T13:37:59Z",
+      "description": "はじめに\n2026年8月11日、AnthropicがClaudeのヘルプセンター記事「How Claude marks AI-generated content」を更新し、Claudeが生成したテキストに人間には知覚できないウォーターマーク（透かし）を埋め込むことを明らかにしました。\n「AI検出ツール」が精度の低い統計的推定に留まっていた時代から、モデル自身が署名を刻む時代への移行です。しかもこれ...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "なぜAI時代にGoが最適な言語なのか",
+      "url": "https://zenn.dev/iwatsukayura/articles/google-go-ai",
+      "site": "Zenn(LLM)",
+      "published": "2026-08-12T13:05:44Z",
+      "description": "はじめに\n本記事では、GoogleのGolang Product ManagerのCameron Balahanと、Google Cloud Chief EvangelistのRichard Seroterによって投稿された、「Why Go is an Ideal Language for AI-Assisted Software Engineering」\nを和訳するとともに、私の感想を少し書こう...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "AIモデル・プログラミング性能比較（Claude, OpenAI, ローカル: Gemma, qwen)",
+      "url": "https://zenn.dev/toshio/articles/7fa9f8c643bd0c",
+      "site": "Zenn(LLM)",
+      "published": "2026-08-12T12:49:20Z",
+      "description": "クラウド、ローカル 7AI-モデル比較し順位づけした\n\n同一の設問（Reactコードのドキュメント作成・バグあり）を 7 つのモデル（ローカル 3 / クラウド 4）に投げ、生成されたドキュメントの優劣を比較した記録。docs/LLM/react_*.md が各モデルの生の出力である。\n\n\n （結果）「比較モデル」：順位\n\nNo.1 Claude Opus 5\nNo.2 Claude Fable ...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "AIがCloudflareの暗号ライブラリCIRCLで実バグを7件見つけた",
+      "url": "https://zenn.dev/okssusucha/articles/20260709-ai-found-bugs-cloudflare-circl",
+      "site": "Zenn(LLM)",
+      "published": "2026-08-12T12:05:21Z",
+      "description": "Go でこんなコードを見て、すぐに違和感を持てるだろうか。\nswitch mode {\ncase modeBase | modeAuth:\n\t// PSK は不要\ncase modePSK | modeAuthPSK:\n\t// PSK が必須\n}\n| はビット論理和だ。HPKE のモード値は RFC 9180 で modeBase=0x00、modePSK=0x01、modeAuth=0x02、m...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "AIの生成文章に見えない透かし？？ ― 仕組みを手元で確かめてみた",
+      "url": "https://zenn.dev/tavi_ai/articles/3576a2b86ef75b",
+      "site": "Zenn(LLM)",
+      "published": "2026-08-12T11:18:10Z",
+      "description": "!\nこの記事は、筆者のブログ「タビの足袋」に掲載した記事の転載です。\n初出: AIの生成文章に\"見えない透かし\"？？ ― 仕組みを手元で確かめてみた（2026-08-12）\n\n「Claudeの新しいモデルが生成する文章には、目に見えない透かしが入ります」――2026年8月、Anthropicからそんな発表がありました。EUのAI法への対応として、8月2日以降に登場する新モデルから、生成されるテキス...",
       "category": "AI・技術",
       "rss_category": "",
       "image_url": ""
@@ -24,11 +144,11 @@
       "image_url": ""
     },
     {
-      "title": "第1世代ループエンジニアリングを超えて",
-      "url": "https://zenn.dev/tomyuk/articles/beyond-first-generation-loop-engineering",
+      "title": "AIガバナンスを「運用能力」として設計する",
+      "url": "https://zenn.dev/tomyuk/articles/ai-governance-operating-capability",
       "site": "Zenn(LLM)",
-      "published": "2026-08-12T10:56:12Z",
-      "description": "第1世代ループエンジニアリングを超えて\n\n 速く回すことから、意味を保って回すことへ\n「プロンプトを書くな、ループを書け」\nこの言葉は、AIエージェント時代の開発感覚をよく表している。\nこれまで人間は、AIに対して一回ずつ指示を書いていた。プロンプトを工夫し、出力を読み、足りないところを直し、また指示を出す。いわゆる Human in the Loop の形で、人間が作業の流れの中に入っていた。\n...",
+      "published": "2026-08-12T10:56:11Z",
+      "description": "AIガバナンスを「運用能力」として設計する\n\n はじめに\nAIガバナンスという言葉は、しばしば「AIを安全に縛る仕組み」として受け取られる。\n利用禁止事項を並べる。入力してはいけない情報を定義する。利用申請フローを作る。法務、セキュリティ、情報システム部門が現場利用を管理する。\nもちろん、これらは必要である。生成AIやLLMを業務に使えば、機密情報の入力、誤回答、差別的な出力、著作権や契約上の問題...",
       "category": "AI・技術",
       "rss_category": "",
       "image_url": ""
@@ -89,16 +209,6 @@
       "site": "Zenn(LLM)",
       "published": "2026-08-12T04:38:32Z",
       "description": "配属されたばかりの新入社員に、生成AIをどう教えるか。\n「若いから勝手に使いこなすでしょう」と放置するケースと、半日の操作研修だけで済ませるケースを両方見てきましたが、どちらもうまくいきません。前者は我流とルール違反が混ざり、後者は研修の翌週には使われなくなります。\nこの記事では、教える側の設計として「最初の1週間で何をやるか」を日別に整理します。対象は、新入社員や中途入社者を受け入れる側の方です...",
-      "category": "AI・技術",
-      "rss_category": "",
-      "image_url": ""
-    },
-    {
-      "title": "LLMに数えさせてはいけない",
-      "url": "https://zenn.dev/jumpei221166/articles/llm-should-not-count",
-      "site": "Zenn(LLM)",
-      "published": "2026-08-12T04:09:09Z",
-      "description": "自動生成させた記事に「7例」という数字が出てきました。データベースを検索しても、その集計はどこにも存在しませんでした。\nLLMが数えたのではなく、それらしい数を書いたのです。\n野球の采配を分析して記事にするシステムを作っています。試合データを集めて、継投や代打の傾向を集計し、Claude Code CLI に文章を書かせる。その出力に、根拠のない統計が混ざっていました。\n\n 「計算」と「文章化」は...",
       "category": "AI・技術",
       "rss_category": "",
       "image_url": ""
