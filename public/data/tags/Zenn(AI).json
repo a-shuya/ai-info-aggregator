@@ -1,7 +1,7 @@
 {
   "site": "Zenn(AI)",
-  "last_updated": "2026-08-13T17:43:37.104582",
-  "total_articles": 12466,
+  "last_updated": "2026-08-13T18:41:48.626491",
+  "total_articles": 12465,
   "articles": [
     {
       "title": "クラウドAIに入力できない情報をどう扱うか？llama.cppで学ぶローカルLLM入門をUdemyで公開した話",
@@ -29,6 +29,26 @@
       "site": "Zenn(AI)",
       "published": "2026-08-13T13:20:50Z",
       "description": "Claude Code のセッションを 15 体、常時稼働させています。実験環境ではありません。4 つの事業がこの上で動いています。\nそのために作った記憶・人格レイヤー nenrin を、MIT ライセンスで公開しました。\nhttps://gitlab.com/yoshi283job/nenrin\ngit clone https://gitlab.com/yoshi283job/nenrin.gi...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "CLAUDE.mdは確率的制約——144KBのルールが破られた記録と3層防御",
+      "url": "https://zenn.dev/zenn_content/articles/claude-md-rules-are-probabilistic",
+      "site": "Zenn(AI)",
+      "published": "2026-08-13T13:00:50Z",
+      "description": "結論から\nCLAUDE.mdに「必ず〜せよ」「絶対に〜するな」と書いても、Claude Codeは一定確率でそれを破ります。これは設定ミスではなく構造的な性質です。\n私の環境には現在、CLAUDE.md（70行）＋ルールファイル17本・144.2KB、その中に蓄積した既知の罠（[TRAP]タグ）が68件あります。1年近く運用して至った結論は「ルールを増やしても遵守率は100%にならない。100%が...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "そのdenyルール、効いていません——settings.json堅牢化チートシート",
+      "url": "https://zenn.dev/zenn_content/articles/claude-code-settings-hardening",
+      "site": "Zenn(AI)",
+      "published": "2026-08-13T13:00:49Z",
+      "description": "結論から\nClaude Codeの settings.json には、書けてしまうのに一切適用されないルール形式があります。公開されている設定149件を走査した調査では、16%の設定に「死んだルール」が含まれていた——.ssh や .aws を守っているつもりのdenyが、実際には何も守っていなかったそうです（出典）。\n私も自環境を監査しました。deny 153ルール中、26件が死んだ形式でした。...",
       "category": "AI・技術",
       "rss_category": "",
       "image_url": ""
@@ -134,6 +154,16 @@
       "image_url": ""
     },
     {
+      "title": "AIが「1+1=3」に同意する!? ─ 仕組みから学ぶ、媚びへつらいを防ぐプロンプト設計",
+      "url": "https://zenn.dev/kotakotahiro/articles/cad5cd0155b57d",
+      "site": "Zenn(AI)",
+      "published": "2026-08-13T11:31:42Z",
+      "description": "はじめに\n「1+1=3ってことだよね？」\nそう聞いたとき、AIがこう返してきたらどう思いますか。\n\nはい、その通りです！\n\n……いや、違うだろ。\n笑い話で済めばよいのですが、これがコードレビューや設計検討の場だったらどうでしょう。\n\n「この設計で問題ないよね？」\n「はい、完璧です！」\n\n前提や実装に間違いがあっても、気持ちよく同意してくるAI。それはもはや「賢いアシスタント」ではなく、「気分よく話...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
       "title": "AI編集部のボトルネックは自分だった ― 承認は不可逆な1点だけに置く",
       "url": "https://zenn.dev/hoshiorange/articles/14-ai-agent-approval-bottleneck",
       "site": "Zenn(AI)",
@@ -234,16 +264,6 @@
       "image_url": ""
     },
     {
-      "title": "AIとMCPサーバーの通信を全部記録したら、2万字の説明文は1トークンも渡っていなかった",
-      "url": "https://zenn.dev/numarn/articles/mcp-tool-lazy-load-wire-handson",
-      "site": "Zenn(AI)",
-      "published": "2026-08-13T05:20:22Z",
-      "description": "先に結論から書きます。AI に外部の道具を持たせる仕組み(MCP)で、道具の説明文をどれだけ長く書いても、AI への入力は1トークンも増えませんでした(トークンは AI が文章を数えるときの単位で、料金も待ち時間もこれで決まります)。2つの道具の説明にそれぞれ2万字、合わせて4万字の文章を詰め込んでも、合計入力トークンは 38,672 のまま1ミリも動きません。渡っていたのは道具の名前だけで、実測...",
-      "category": "AI・技術",
-      "rss_category": "",
-      "image_url": ""
-    },
-    {
       "title": "AI音声コールセンターで正確な住所を聞き取るための設計",
       "url": "https://zenn.dev/genax_corp/articles/1ea3eca0741017",
       "site": "Zenn(AI)",
@@ -274,16 +294,6 @@
       "image_url": ""
     },
     {
-      "title": "テストは緑のまま、生成物は開いた瞬間に壊れていた ― AI生成コードに変異試験を当てる",
-      "url": "https://zenn.dev/subagent_lab/articles/mutation-testing-ai-generated-code",
-      "site": "Zenn(AI)",
-      "published": "2026-08-13T03:55:45Z",
-      "description": "AIにコードを書かせると、たいていテストも一緒に書かれる。そしてそのテストは緑になる。ここで手が止まるのが一番危ない。**テストを書いた主体と実装を書いた主体が同じなら、「実装の現在の挙動をそのまま写しただけのテスト」が混ざり込む余地がある。**そういうテストは、実装が壊れても緑のままになる。\nこの記事は、その混入を機械的に検出する手段として変異試験（mutation testing）を使った実録...",
-      "category": "AI・技術",
-      "rss_category": "",
-      "image_url": ""
-    },
-    {
       "title": "Core Web Vitals リファレンス — LCP/INP/CLSの閾値と改善策",
       "url": "https://zenn.dev/devnestio/articles/devnestio-tool-web-vitals-ref",
       "site": "Zenn(AI)",
@@ -304,31 +314,11 @@
       "image_url": ""
     },
     {
-      "title": "BM25をエージェントへ追加するだけでは、トークン消費は自動的には減らない。OSSで24回検証した結果全ケース増加した",
-      "url": "https://zenn.dev/kwie/articles/b52605934847a7",
-      "site": "Zenn(AI)",
-      "published": "2026-08-13T01:50:44Z",
-      "description": "導入\nこんにちは。Kwieです。\n先日こちらの記事を拝見して、どれぐらい効果があるか気になったのでOSSで試してみました\nBM25を使用してCodexのトークンの消費を30%抑える\n今回は検証対象を実際の大規模OSSへ変更し、さらに「比較的新しいリポジトリ」と「長い歴史を持つ成熟リポジトリ」の2つを対象に、以下のように条件を分けて追試しました。\n\n\nNative条件：Coding Agentが標準...",
-      "category": "AI・技術",
-      "rss_category": "",
-      "image_url": ""
-    },
-    {
       "title": "Where to Draw the Integration Boundary When an AI Video Step Joins...",
       "url": "https://zenn.dev/wendyxyz733/articles/0207d1c5dcfbd4",
       "site": "Zenn(AI)",
       "published": "2026-08-13T01:46:25Z",
       "description": "Where to Draw the Integration Boundary When an AI Video Step Joins...\n\n The Coupling Problem: When a Generation Step Enters an Existing Pipeline\nMost content teams already run a pipeline before any AI...",
-      "category": "AI・技術",
-      "rss_category": "",
-      "image_url": ""
-    },
-    {
-      "title": "生成AIのAPIはどう動いてる？Claude APIで学ぶ基本の仕組み",
-      "url": "https://zenn.dev/idealive_kmon/articles/genai-api-basics-with-claude",
-      "site": "Zenn(AI)",
-      "published": "2026-08-13T01:44:32Z",
-      "description": "Anthropicの公式講座「Accessing Claude with the API」を進めていて、「生成AIのAPIってこういう仕組みだったのか！」という発見が多くて面白かったので、記事にまとめます。\nこの記事ではClaude APIを例に使いますが、マルチターン会話・システムプロンプト・出力制御といった仕組みは、OpenAIなど他の生成AIのAPIもほぼ同じなんじゃないかなと思います。「生...",
       "category": "AI・技術",
       "rss_category": "",
       "image_url": ""
