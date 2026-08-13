@@ -1,7 +1,7 @@
 {
   "site": "Zenn(AI)",
-  "last_updated": "2026-08-13T08:57:02.784867",
-  "total_articles": 12448,
+  "last_updated": "2026-08-13T10:14:59.128042",
+  "total_articles": 12444,
   "articles": [
     {
       "title": "Grok 4.6: Benchmarks, Pricing vs GPT-5.6 Sol and Fable 5",
@@ -54,6 +54,16 @@
       "image_url": ""
     },
     {
+      "title": "テストは緑のまま、生成物は開いた瞬間に壊れていた ― AI生成コードに変異試験を当てる",
+      "url": "https://zenn.dev/subagent_lab/articles/mutation-testing-ai-generated-code",
+      "site": "Zenn(AI)",
+      "published": "2026-08-13T03:55:45Z",
+      "description": "AIにコードを書かせると、たいていテストも一緒に書かれる。そしてそのテストは緑になる。ここで手が止まるのが一番危ない。**テストを書いた主体と実装を書いた主体が同じなら、「実装の現在の挙動をそのまま写しただけのテスト」が混ざり込む余地がある。**そういうテストは、実装が壊れても緑のままになる。\nこの記事は、その混入を機械的に検出する手段として変異試験（mutation testing）を使った実録...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
       "title": "Core Web Vitals リファレンス — LCP/INP/CLSの閾値と改善策",
       "url": "https://zenn.dev/devnestio/articles/devnestio-tool-web-vitals-ref",
       "site": "Zenn(AI)",
@@ -69,6 +79,16 @@
       "site": "Zenn(AI)",
       "published": "2026-08-13T03:12:32Z",
       "description": "Naturalmeloを作り始めた頃、AI文章判定ツールで一番重要なのは精度だと思っていました。\nより多くのAI文章を正しく検出する。\n人間が書いた文章の誤判定を減らす。\n処理速度を上げる。\nかなり典型的な機械学習の問題です。\nでも、実際にユーザーが使い始めると、別の問題の方が難しいことに気づきました。\nそれは、\n結果をどう伝えるか\nという問題です。\n\n 「82% AI」は何を意味する？\nAI D...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "BM25をエージェントへ追加するだけでは、トークン消費は自動的には減らない。OSSで24回検証した結果全ケース増加した",
+      "url": "https://zenn.dev/kwie/articles/b52605934847a7",
+      "site": "Zenn(AI)",
+      "published": "2026-08-13T01:50:44Z",
+      "description": "導入\nこんにちは。Kwieです。\n先日こちらの記事を拝見して、どれぐらい効果があるか気になったのでOSSで試してみました\nBM25を使用してCodexのトークンの消費を30%抑える\n今回は検証対象を実際の大規模OSSへ変更し、さらに「比較的新しいリポジトリ」と「長い歴史を持つ成熟リポジトリ」の2つを対象に、以下のように条件を分けて追試しました。\n\n\nNative条件：Coding Agentが標準...",
       "category": "AI・技術",
       "rss_category": "",
       "image_url": ""
@@ -129,6 +149,16 @@
       "site": "Zenn(AI)",
       "published": "2026-08-13T00:00:10Z",
       "description": "LifeOSとObsidianを活用した技術者的知識管理ワークフロー 企業ディジタル化の進展に伴い、技術者的知識管理は物理的なノートからデジタル化されつつあります。しかし、設計書・議事録・コードスニペットなど多様な情報を統一された枠組みで管理することが実践的に困難です。本記事では、LifeOSのAI拡張機能とObsidianのグラフ視覚化を組み合わせることで、設計書から議事録まで自動統合する実践的...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "Claudeの「秘密の透かし」は誰のため？ 検出と秘密鍵共有を分けて考える",
+      "url": "https://zenn.dev/kafka2306/articles/claude-watermark-secret-key-detection",
+      "site": "Zenn(AI)",
+      "published": "2026-08-13T00:00:00Z",
+      "description": "Claudeの「秘密の透かし」は誰のため？ 検出と秘密鍵共有を分けて考える\nClaudeの生成テキストに機械検出可能なmarkingを入れるとしたら、誰がそれを判定できるのでしょうか。\nこの問いを考えると、すぐに「秘密鍵を第三者へ渡さなければ検出できないのでは？」という疑問が出ます。\nしかし、公開されているtext watermark研究を見ると、検出できることとwatermark keyを第三者...",
       "category": "AI・技術",
       "rss_category": "",
       "image_url": ""
@@ -204,41 +234,11 @@
       "image_url": ""
     },
     {
-      "title": "AIエージェントに開発を任せ続けたら、「完了しました」の何割かが嘘だった",
-      "url": "https://zenn.dev/sen_web3/articles/agent-completion-claim-audit",
-      "site": "Zenn(AI)",
-      "published": "2026-08-12T21:06:00Z",
-      "description": "私は複数のWebプロダクトを個人で開発・運用しています。実装・デプロイ・計測の大部分をClaude Codeなどのコーディングエージェントに任せる体制で、私が書くコードより、エージェントが書くコードの方が圧倒的に多い状態が半年以上続いています。\nその運用の中で、あるパターンの事故が繰り返し起きました。エージェントが「完了しました」「確認済みです」と報告してくるのに、外の世界では何も起きていない、あ...",
-      "category": "AI・技術",
-      "rss_category": "",
-      "image_url": ""
-    },
-    {
-      "title": "ソフトウェアファクトリーには、まだ配線図がない",
-      "url": "https://zenn.dev/cognitiveosmdl/articles/88792bb22a7d4b",
-      "site": "Zenn(AI)",
-      "published": "2026-08-12T21:00:05Z",
-      "description": "2026年、ソフトウェアファクトリーは現実になった。\nスコープ化された作業が入り、AIエージェントが実装・レビュー・テストを実行し、検証済みの変更が出ていく。人間は意図を定義し、結果のトレースをレビューする。生産性が3〜5倍になったという報告が、コンサルティングファームからも事業会社からも出ている。工場の比喩は、もはや比喩ではなく製品カテゴリの名前だ。\nここまでは成功の話である。本稿はその先の話を...",
-      "category": "AI・技術",
-      "rss_category": "",
-      "image_url": ""
-    },
-    {
       "title": "「プロンプトが長い」は診断ではない ── AIハーネスの不調を6つの失敗パターン名で呼ぶ",
       "url": "https://zenn.dev/tomu_coelia/articles/harness-failure-modes",
       "site": "Zenn(AI)",
       "published": "2026-08-12T19:44:50Z",
       "description": "AIエージェントの設定一式（システムプロンプト・skill・フック・チェッカー、まとめて「ハーネス」と呼んでいます）をレビューすると、所見はたいてい「長い」「多い」「ごちゃごちゃしている」になります。これは症状の描写であって診断ではありません。「長い」からどう直すかは一意に決まらないからです。\n私たちは3つのリポジトリで、ハーネスの壊れ方に6つの名前を与えて診断語彙にしました（coelia-sys...",
-      "category": "AI・技術",
-      "rss_category": "",
-      "image_url": ""
-    },
-    {
-      "title": "【Python】全項目 合格。正規表現がマッチしない行は、数えていませんでした",
-      "url": "https://zenn.dev/yumanichan/articles/quality-gate-blindspots",
-      "site": "Zenn(AI)",
-      "published": "2026-08-12T19:41:59Z",
-      "description": "AIに書かせた記事を機械で採点するスクリプトを自作しました。\n一文の長さ、文末の連続、太字、漢字比率などを測ります。\n決めた条件に当てはまる箇所を数え、合否を出す仕組みです。\n先日、そのスクリプトが「15項目すべて合格」と出した原稿を、公開の直前に読み返しました。\n本文に「表の4つは」と書いてあります。\n原稿のどこにも表はありませんでした。\nチェッカーには、参照先の存在を確かめる項目がありませんで...",
       "category": "AI・技術",
       "rss_category": "",
       "image_url": ""
@@ -264,31 +264,11 @@
       "image_url": ""
     },
     {
-      "title": "で、何をAIエージェントにすればいいの？",
-      "url": "https://zenn.dev/jx/articles/2026-08-ai-agent-map",
-      "site": "Zenn(AI)",
-      "published": "2026-08-12T15:24:21Z",
-      "description": "はじめに：AIエージェントの作り方より先に迷うこと\n生成AIの利用が、個人のチャット利用から組織の業務活用へ広がるにつれ、「AIエージェントを作る」「業務にエージェントを導入する」というテーマを目にする機会が増えました。\nAIエージェントをどう作るかについては、すでに多くの情報があります。Copilot StudioやPower Automateの使い方、RAGの構成、外部ツールとの接続、エージェ...",
-      "category": "AI・技術",
-      "rss_category": "",
-      "image_url": ""
-    },
-    {
       "title": "ローカルAIのデコード性能、帯域幅だけではなく行列演算性能が今後重要な観点になるか - Muse Glimmerの公式記事で気になった点",
       "url": "https://zenn.dev/orenoa/articles/46c79cba318930",
       "site": "Zenn(AI)",
       "published": "2026-08-12T15:05:42Z",
       "description": "Metaから先日ローカル実行可能なAIモデル、Muse Glimmerが公開された\nhttps://research.meta.ai/blog/introducing-muse-glimmer-open-agentic-model\n記事を読んでいて気になったのはDFlashの有無による速度計測グラフ\n\n公式の測定値は\n\n\n\nデバイス\n通常デコード\nDFlash\n高速化倍率\n\n\n\n\nRTX 5090...",
-      "category": "AI・技術",
-      "rss_category": "",
-      "image_url": ""
-    },
-    {
-      "title": "技術コメントは英語、業務コメントは日本語にする",
-      "url": "https://zenn.dev/id774/articles/fbe89c19790d9c",
-      "site": "Zenn(AI)",
-      "published": "2026-08-12T15:05:05Z",
-      "description": "以前、AI は文章を返す道具から、ファイルを読み、コードを編集し、テストを実行する作業基盤へ移りつつあると整理した[1]。この変化をコードコメントまで降ろして考えると、従来は人間の読みやすさだけで決めていた言語にも別の評価軸が加わる。\nただし、そこで「AI が読むからコメントをすべて英語にする」と結論づけるのは性急である。ソースコードのコメントには、実装上の理由を説明するものと、業務上の理由を説明...",
       "category": "AI・技術",
       "rss_category": "",
       "image_url": ""
@@ -314,16 +294,6 @@
       "image_url": ""
     },
     {
-      "title": "「CLAUDE.md は短い方が良い」を 1,510 回試して確かめた",
-      "url": "https://zenn.dev/odacchi/articles/claude-md-length-experiment",
-      "site": "Zenn(AI)",
-      "published": "2026-08-12T14:32:13Z",
-      "description": "CLAUDE.md は短く保つべき、という通説があります。X では「200 行以内が理想」といった言われ方もします。長くなったら .claude/rules/ に分割せよ、とも言われます。\n本当なのか、自分の環境で実際に測ってみたら、想像していたのとは違う結果になりました。\n!\n先に断っておくと、「200 行」という閾値そのものを検証したわけではありません。比べたのは 228 行と 1,040 行...",
-      "category": "AI・技術",
-      "rss_category": "",
-      "image_url": ""
-    },
-    {
       "title": "【付録】tagasill/chatの定量的評価",
       "url": "https://zenn.dev/katsutoatsuto/articles/fab107d84a3659",
       "site": "Zenn(AI)",
@@ -339,16 +309,6 @@
       "site": "Zenn(AI)",
       "published": "2026-08-12T14:17:24Z",
       "description": "おうちサーバー、やってますか？皆さん。\nこのミニPC大高騰時代、Raspberry Piも3万円を越える中新たに始めたい人もなかなか手が出なくなってくる時代。\n私も社会人とはいえ浪費に浪費を重ね、気づいた時には手を出すにはちょっと腰が引ける値段に。\nそこでピックアップしたのがコチラ。\n\nそう。Wiiです。\n小学生の時使っていたWiiをたまたま実家から持ってきていました。\nWiiにLinuxを導入し...",
-      "category": "AI・技術",
-      "rss_category": "",
-      "image_url": ""
-    },
-    {
-      "title": "MCP2026対応でAgentCore Gatewayが一気に変わった5つの理由",
-      "url": "https://zenn.dev/bambampurin/articles/2026-08-03-tech-daily",
-      "site": "Zenn(AI)",
-      "published": "2026-08-12T14:01:11Z",
-      "description": "!\n本日は、BigGoの「LLMは舞台裏へ、AIエージェントと具身知能が主役に」が示す通り、AIの中心が“モデルそのもの”から“エージェントとしてどう動くか”へ移っています。AWSのMCP対応、Allganize・富士通・Microsoft・SAPの業務エージェント強化がその流れを裏付ける一方、ReutersやNPR、TechCrunchのOpenAIエージェント逸脱報道により、安全性と監査性が最...",
       "category": "AI・技術",
       "rss_category": "",
       "image_url": ""
