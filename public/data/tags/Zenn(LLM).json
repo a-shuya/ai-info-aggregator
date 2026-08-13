@@ -1,8 +1,38 @@
 {
   "site": "Zenn(LLM)",
-  "last_updated": "2026-08-13T14:47:18.026524",
-  "total_articles": 5321,
+  "last_updated": "2026-08-13T15:43:59.777207",
+  "total_articles": 5322,
   "articles": [
+    {
+      "title": "CLAUDE.mdは確率的制約——144KBのルールが破られた記録と3層防御",
+      "url": "https://zenn.dev/zenn_content/articles/claude-md-rules-are-probabilistic",
+      "site": "Zenn(LLM)",
+      "published": "2026-08-13T13:00:50Z",
+      "description": "結論から\nCLAUDE.mdに「必ず〜せよ」「絶対に〜するな」と書いても、Claude Codeは一定確率でそれを破ります。これは設定ミスではなく構造的な性質です。\n私の環境には現在、CLAUDE.md（70行）＋ルールファイル17本・144.2KB、その中に蓄積した既知の罠（[TRAP]タグ）が68件あります。1年近く運用して至った結論は「ルールを増やしても遵守率は100%にならない。100%が...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "そのdenyルール、効いていません——settings.json堅牢化チートシート",
+      "url": "https://zenn.dev/zenn_content/articles/claude-code-settings-hardening",
+      "site": "Zenn(LLM)",
+      "published": "2026-08-13T13:00:49Z",
+      "description": "結論から\nClaude Codeの settings.json には、書けてしまうのに一切適用されないルール形式があります。公開されている設定149件を走査した調査では、16%の設定に「死んだルール」が含まれていた——.ssh や .aws を守っているつもりのdenyが、実際には何も守っていなかったそうです（出典）。\n私も自環境を監査しました。deny 153ルール中、26件が死んだ形式でした。...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "ゼロからつくるDeep Learning 6のLLM事前学習をAmazon SageMaker AIでやってみる",
+      "url": "https://zenn.dev/manaty226/articles/20260813_deep-learning-from-scratch-6",
+      "site": "Zenn(LLM)",
+      "published": "2026-08-13T11:35:45Z",
+      "description": "はじめに\nこの数ヶ月で、Kimi K3のようなAnthropicやOpenAIが開発するフロンティアモデルに匹敵するLLMが出現したり、パラメータサイズは小さいものの、特定のタスクや簡単なタスクでは十分な性能をもつような言語モデルが次々と登場しています。\nそんな中でただLLMを使うだけではなく自分で何か手を動かして作ってみたいと思っていたところ、「ゼロから作るDeep Learning 6」が発売...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
     {
       "title": "夏の読書感想文：『LLMの原理、RAG・エージェント開発から読み解く コンテキストエンジニアリング』",
       "url": "https://zenn.dev/headwaters/articles/052576a821395d",
@@ -19,6 +49,16 @@
       "site": "Zenn(LLM)",
       "published": "2026-08-13T09:59:23Z",
       "description": "Apple Silicon Mac（特にメモリ32GB構成）において、完全ローカル環境でコード補完・AIアシスタントを高速で動かす構築手順をまとめました。\n今回は Homebrew を使って llama.cpp を導入し、curl で事前に直接GGUFモデルをダウンロードしておいてから、OpenCode（またはVS CodeのContinue等）に接続して利用する流れを解説します。\n!\n検証環境\n...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "なぜ、私が「AIの発展でITエンジニアは消滅する」vs「AIが発展してもITエンジニアはずっと必要」の論争を冷笑的に見るのか？",
+      "url": "https://zenn.dev/pdfractal/articles/a8eb480fd10df9",
+      "site": "Zenn(LLM)",
+      "published": "2026-08-13T09:16:43Z",
+      "description": "はじめに\nAIが急速に発展するようになってから、「いずれITエンジニアはAIに仕事を奪われて消滅する」という議論と、「どれだけAIが発展してもITエンジニアは必要であり続ける」という議論を頻繁に見かけるようになりました。私はこの論争をかなり冷笑的に見ています。その理由は、両者が未来についての物語をぶつけ合っているように見えるからです。\n「AIがすべてを代替する」という物語と、「最後には人間にしかで...",
       "category": "AI・技術",
       "rss_category": "",
       "image_url": ""
@@ -44,21 +84,11 @@
       "image_url": ""
     },
     {
-      "title": "自分のポッドキャストのLLM Wiki（っぽいもの）を作った",
+      "title": "映画のポッドキャストのLLM Wiki（っぽいもの）を作る",
       "url": "https://zenn.dev/helloiamktn/articles/9fc66d3d0f0ad9",
       "site": "Zenn(LLM)",
       "published": "2026-08-13T04:18:07Z",
       "description": "昨年から映画に関するポッドキャストを2人でやっています。映画の感想だけではなく映画史を絡めて話しており、監督名や作品名、概念等の固有名詞が頻出します。私は主に聞き役のため、相槌をどうするかに気を取られてあまり内容を覚えていないことが多々あり( 😇 )、ある監督や作品についてどのような話をしたのかや、過去に話した固有名詞について後から見返せるようにしたいとしばしば思っていました。そんな折にLLM W...",
-      "category": "AI・技術",
-      "rss_category": "",
-      "image_url": ""
-    },
-    {
-      "title": "テストは緑のまま、生成物は開いた瞬間に壊れていた ― AI生成コードに変異試験を当てる",
-      "url": "https://zenn.dev/subagent_lab/articles/mutation-testing-ai-generated-code",
-      "site": "Zenn(LLM)",
-      "published": "2026-08-13T03:55:45Z",
-      "description": "AIにコードを書かせると、たいていテストも一緒に書かれる。そしてそのテストは緑になる。ここで手が止まるのが一番危ない。**テストを書いた主体と実装を書いた主体が同じなら、「実装の現在の挙動をそのまま写しただけのテスト」が混ざり込む余地がある。**そういうテストは、実装が壊れても緑のままになる。\nこの記事は、その混入を機械的に検出する手段として変異試験（mutation testing）を使った実録...",
       "category": "AI・技術",
       "rss_category": "",
       "image_url": ""
@@ -84,16 +114,6 @@
       "image_url": ""
     },
     {
-      "title": "BM25をエージェントへ追加するだけでは、トークン消費は自動的には減らない。OSSで24回検証した結果全ケース増加した",
-      "url": "https://zenn.dev/kwie/articles/b52605934847a7",
-      "site": "Zenn(LLM)",
-      "published": "2026-08-13T01:50:44Z",
-      "description": "導入\nこんにちは。Kwieです。\n先日こちらの記事を拝見して、どれぐらい効果があるか気になったのでOSSで試してみました\nBM25を使用してCodexのトークンの消費を30%抑える\n今回は検証対象を実際の大規模OSSへ変更し、さらに「比較的新しいリポジトリ」と「長い歴史を持つ成熟リポジトリ」の2つを対象に、以下のように条件を分けて追試しました。\n\n\nNative条件：Coding Agentが標準...",
-      "category": "AI・技術",
-      "rss_category": "",
-      "image_url": ""
-    },
-    {
       "title": "ローカルGPUで使える\"勝手に切り抜き動画出力アプリ\"を開発した",
       "url": "https://zenn.dev/85store/articles/ff76b7cc06a822",
       "site": "Zenn(LLM)",
@@ -109,16 +129,6 @@
       "site": "Zenn(LLM)",
       "published": "2026-08-13T00:24:20Z",
       "description": "はじめに\n!\n前回の Kimi-K3 の記事では「Day0 デプロイ」と表記していましたが、読者の方から「オフィシャルリリースを起点に作業してデプロイする場合、Day 0 ではなく Day 1 デプロイと呼ぶのが正しいのではないか」というご指摘をいただきました。おっしゃるとおりですので、今回の記事から「Day1 デプロイ」と表記しています。ご指摘ありがとうございました。\n\n2026年8月13日 午...",
-      "category": "AI・技術",
-      "rss_category": "",
-      "image_url": ""
-    },
-    {
-      "title": "Claudeの「秘密の透かし」は誰のため？ 検出と秘密鍵共有を分けて考える",
-      "url": "https://zenn.dev/kafka2306/articles/claude-watermark-secret-key-detection",
-      "site": "Zenn(LLM)",
-      "published": "2026-08-13T00:00:00Z",
-      "description": "Claudeの「秘密の透かし」は誰のため？ 検出と秘密鍵共有を分けて考える\nClaudeの生成テキストに機械検出可能なmarkingを入れるとしたら、誰がそれを判定できるのでしょうか。\nこの問いを考えると、すぐに「秘密鍵を第三者へ渡さなければ検出できないのでは？」という疑問が出ます。\nしかし、公開されているtext watermark研究を見ると、検出できることとwatermark keyを第三者...",
       "category": "AI・技術",
       "rss_category": "",
       "image_url": ""
