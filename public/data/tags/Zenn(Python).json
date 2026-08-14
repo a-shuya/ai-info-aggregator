@@ -1,8 +1,168 @@
 {
   "site": "Zenn(Python)",
-  "last_updated": "2026-08-14T02:20:31.518433",
-  "total_articles": 5711,
+  "last_updated": "2026-08-14T04:21:01.025249",
+  "total_articles": 5727,
   "articles": [
+    {
+      "title": "Claude Opus 5 の effort を3段階振ったら、コストは0.6円しか変わらなかった",
+      "url": "https://zenn.dev/yashi888/articles/27e861913d0ac2",
+      "site": "Zenn(Python)",
+      "published": "2026-08-14T03:59:25Z",
+      "description": "測ったこと\n日本語で3,000〜5,000字の記事下書きを生成するツールを作っています。\n1回の生成でそれなりの分量を吐かせるので、API 代が設計上の一番の論点でした。\n着手前の見積もりは「1本あたり36円」。\nClaude Opus 5 で、入力1,800 / 出力9,000トークンを想定した概算です。\neffort を下げればコストが下がるはずなので、まずそこを実測しようと考えました。\n結果...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "画面収録から利用者名を消す（目視で3回漏らして、最後は機械に検査させた話）",
+      "url": "https://zenn.dev/bricks/articles/mask-screen-recording",
+      "site": "Zenn(Python)",
+      "published": "2026-08-14T03:39:39Z",
+      "description": "デスクトップで動く AI エージェントを作っていて、デモ動画を撮った。\n承認ダイアログに /Users/&lt;利用者名&gt;/Downloads/… がそのまま映っていた。\n消せばいいだけの話だと思っていたが、目視の確認で 3 回続けて漏らした。\n最後は完成品の全編を機械に走査させることになった。\n結論を先に書くと、「映ってはまずいものが消えたか」を目で確かめるのは\n成立しない。 消す処理と同...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "Microsoft MAI-Image-2e入門 — 41%コスト削減・4倍高速な画像生成APIをPythonで実装する",
+      "url": "https://zenn.dev/kai_kou/articles/260-microsoft-mai-image-2e-azure-foundry-guide",
+      "site": "Zenn(Python)",
+      "published": "2026-08-14T03:22:27Z",
+      "description": "はじめに\n2026年4月14日、Microsoftは画像生成AIモデル「MAI-Image-2e（MAI-Image-2-Efficient）」をパブリックプレビューとして公開しました。MAI-Image-2 のアーキテクチャを継承しながら、GPU効率を4倍・速度を最大22%向上させ、価格を41%削減した本番向けモデルです。\nこの記事では、公式ドキュメントをもとに MAI-Image-2e の主要...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "MediaPipeでムービングライトを動かしてみる",
+      "url": "https://zenn.dev/fabrica/articles/2026-08-06_mediapipe-moving-light",
+      "site": "Zenn(Python)",
+      "published": "2026-08-14T02:34:42Z",
+      "description": "作ったもの\nhttps://www.youtube.com/watch?v=KdgPyzrPIjA\n\n 概要\nDMXで制御できるムービングライトを買ったので、TouchDesignerとMediaPipeで顔の向きと手のジェスチャーから直接操作する仕組みを作ってみた。\n\n購入したムービングライト\n\n 全体像\nWebカメラの映像からMediaPipeで顔と手のランドマークを検出して、顔の向きとジェス...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "固定費・数量割引・区分線形をMIPで書く:定式化パターン集(後編)",
+      "url": "https://zenn.dev/ctenopoma/articles/mip-course-2-5-piecewise",
+      "site": "Zenn(Python)",
+      "published": "2026-08-14T02:04:17Z",
+      "description": "この記事について\nMIP(Mixed Integer Programming)の数理最適化を学ぶ教材の第13回です。教材全体の目次はこちら。\n\n現実のコストはたいてい線形ではありません。\n\n発注には基本料がかかる(0個と1個の間に崖がある)\nたくさん買うと単価が下がる(数量割引)\n発電コストは出力の2乗で効く\n\n「MIPは線形しか扱えないのでは?」と思うかもしれませんが、半分正解で半分間違いです。...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "「AならばB」を数式にする:バイナリ変数の定式化パターン集(前編)",
+      "url": "https://zenn.dev/ctenopoma/articles/mip-course-2-4-logic",
+      "site": "Zenn(Python)",
+      "published": "2026-08-14T02:04:16Z",
+      "description": "この記事について\nMIP(Mixed Integer Programming)の数理最適化を学ぶ教材の第12回です。教材全体の目次はこちら。\n\n実務の要件は、たいてい日本語でやってきます。\n\n「ラインAを動かすなら、検査員も配置して」\n「キャンペーンXとYは併用不可」\n「作るなら段取り費がかかる」\n\nMIPモデラーの基礎体力は、この日本語をバイナリ変数の線形不等式に翻訳する力です。\n今回はその定番...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "gap 3%で打ち切っていいのか:SCIPソルバーのログを一行ずつ読む",
+      "url": "https://zenn.dev/ctenopoma/articles/mip-course-2-3-scip-log",
+      "site": "Zenn(Python)",
+      "published": "2026-08-14T02:04:16Z",
+      "description": "この記事について\nMIP(Mixed Integer Programming)の数理最適化を学ぶ教材の第11回です。教材全体の目次はこちら。\n\n前回、5品のナップサックを手で分枝し、上界・下界・ギャップが動く様子を探索木の絵で追いかけました。同じ問題をSCIPは1ノードで片付けてしまいましたが、あれは問題が小さかったからです。\n問題が大きくなれば、SCIPも前回の絵とまったく同じことを数万〜数百万...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "微分さえできれば最適化できる:CasADiとIPOPTで学ぶ非線形最適化と最適制御(全16回)",
+      "url": "https://zenn.dev/ctenopoma/articles/casadi-course-toc",
+      "site": "Zenn(Python)",
+      "published": "2026-08-14T02:04:10Z",
+      "description": "この教材について\n現実には、化学反応も空気抵抗も金利も電池の劣化も、世界の多くは非線形です。この連載では、非線形最適化(NLP) を基礎から学び、その最大の応用先である最適制御・モデル予測制御(MPC) まで到達します。\n道具は CasADi + IPOPT です。pip install casadi の1コマンドで、自動微分エンジンと世界標準の非線形ソルバーIPOPTが両方入ります。無料で商用利...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "プロンプトキャッシュ設計と地雷：3社を比較する",
+      "url": "https://zenn.dev/libercraft/articles/20260814-prompt-caching-3-providers-pitfalls",
+      "site": "Zenn(Python)",
+      "published": "2026-08-14T02:00:00Z",
+      "description": "「Anthropicで動いていたキャッシュ前提の設計を、そのままOpenAIのモデルに移植したらコストが想定より高くなった」——複数のLLMプロバイダーを併用するアプリケーションでは、この手のプロンプトキャッシュの仕様差による誤算がよく起こります。\n以前の記事「speculative decoding×prefix cachingの罠」ではvLLM上でのprefix caching特有の問題を扱い...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "吊り荷Yaw制御システムの開発 #05：可変目標Yaw制御を目指す",
+      "url": "https://zenn.dev/rindajones/articles/variable-target-yaw-control",
+      "site": "Zenn(Python)",
+      "published": "2026-08-14T01:45:49Z",
+      "description": "はじめに\n前回までの記事では、カメラ画像から吊り荷のYaw角を推定し、その結果を使って4基のスラスターを制御するシステムを構築しました。\nこれまでの制御では、吊り荷を一定の目標Yaw角へ制御することを目的としていました。\nしかし、実際の制御結果を確認していく中で、次の2つを改善したいと考えるようになりました。\n\n目標Yaw角を固定値ではなく、任意の角度に変更できるようにする\n目標角へ到達するだけで...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "制御回路の自動検証とグラフ可視化ツールの実装",
+      "url": "https://zenn.dev/y_yuuichi/articles/10fc0fac161427",
+      "site": "Zenn(Python)",
+      "published": "2026-08-13T22:52:31Z",
+      "description": "リレー回路（シーケンス回路）が正しく配線されているかを、目視ではなく計算で確かめたい。そう考えて、Excelに書いた回路の構成を読み込み、条件式の導出・ルールによる検査・グラフの描画までを行うツールを作りました。\n本記事では、その実装で直面した4つの問題と、それぞれをどう解いたかを書きます。\n対象読者\n\nグラフ（点と線のつながり）を使って、既存の図面や構成データを処理してみたい方\nシーケンス回路を...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "1日66万回の空振りをやめた — ポーリングを止める前に、14日ぶんの実績を測った",
+      "url": "https://zenn.dev/answer_philo/articles/stop-polling-push-bridge",
+      "site": "Zenn(Python)",
+      "published": "2026-08-13T22:30:05Z",
+      "description": "7本のループが、ずっと聞きに行っていた\n自宅のPCとクラウド側の間に、常駐プロセスを1本置いている。クラウドに溜まった仕事（メールの仕分け、チャットの返信など）をPC側に取ってくる橋渡し役だ。\n作った当初から、仕組みはずっと同じだった。一定間隔で聞きに行く。 いわゆるポーリングだ。\n気づいたら、そのループが7本になっていた。\n\n\n\nループ\n間隔\n何を聞きに行っていたか\n\n\n\n\n心拍\n60秒\n自分の...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "データの取得順序が未来情報になる — 機械学習で最も見つけにくいリークの話",
+      "url": "https://zenn.dev/rindokulab/articles/0c583944dfb480",
+      "site": "Zenn(Python)",
+      "published": "2026-08-13T21:54:48Z",
+      "description": "モデルの回収率が突然100%を超えた。新しい特徴量を足したからだ——と、そのときは思っていた。実際に起きていたことは違う。新しい特徴量のデータを、まだ取得し終えていなかったからだった。\n時系列MLのリークというと、未来の値を特徴量に混ぜる話（ターゲットリーク）や、検証期間の情報で前処理してしまう話（標準化リーク）が有名で、チェックリストにも載っている。今日書くのは、その2つを完璧に防いでいても発生...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "エンジニア視点で語る！Pythonで学ぶマクロ経済学入門 37",
+      "url": "https://zenn.dev/maszkot/articles/bdb8387060a332",
+      "site": "Zenn(Python)",
+      "published": "2026-08-13T21:31:42Z",
+      "description": "https://qiita.com/maskot1977/items/0cceb50c8cb770796ded\nDJミオ：こんばんは！ ラジオ教育番組「エンジニア視点で語る！Pythonで学ぶマクロ経済学入門」、ナビゲーターのDJミオです。\nDJレン：DJレンです。今日はかなり重要回だね。テーマは――\n「財源ではなく需要管理 ― 通貨発行と税の本当の役割」。\nDJミオ：うん。しかも今日は、単にマク...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "Python AtCoder入門",
+      "url": "https://zenn.dev/qtx73/books/f18cc3df403844",
+      "site": "Zenn(Python)",
+      "published": "2026-08-13T21:09:28Z",
+      "description": "AtCoder Beginners ContestのA, B問題を突破するためのPythonの網羅的な解説本です。\n\n入出力・条件分岐・ループから始まり、リスト、タプルと内包表記、文字列、グリッド、関数、辞書と集合、collections、itertools、ソート、クラスまでを扱います。\n\n本書は「Pythonという道具を迷わず使えるようにする」一点に集中し解説します。",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "半年前のAIコードは現世代レビューに耐えるか — 実測25件の仕分け",
+      "url": "https://zenn.dev/shimo4228/articles/ai-code-half-year-audit",
+      "site": "Zenn(Python)",
+      "published": "2026-08-13T21:02:22Z",
+      "description": "半年前、Claude に書かせた CLI ツールがあります。テスト 694 本は全て緑、mypy と ruff もクリーンでした。\n当時「LLM の出力は信用するな」という記事まで書いて、防御策を 6 つ並べています。\nその自信作を先日、現世代の AI 2 系統に丸ごとレビューさせました。\n検証にかけた指摘（延べ 31 件）は全件が実在するバグでした。重複を除いて約 25 件、誤検出ゼロです。\nた...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
     {
       "title": "高校生のためのPythonSCAD練習帳part10",
       "url": "https://zenn.dev/yokamak/articles/dcbc8f69e54681",
