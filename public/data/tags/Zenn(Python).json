@@ -1,14 +1,64 @@
 {
   "site": "Zenn(Python)",
-  "last_updated": "2026-08-14T10:06:36.845287",
-  "total_articles": 5724,
+  "last_updated": "2026-08-14T11:07:44.809546",
+  "total_articles": 5729,
   "articles": [
     {
-      "title": "Claude Opus 5 の effort を3段階振ったら、コストは0.6円しか変わらなかった",
-      "url": "https://zenn.dev/yashi888/articles/27e861913d0ac2",
+      "title": "FreeCADを本番環境で選んだ技術的判断と実装詳細",
+      "url": "https://zenn.dev/yutaka8484/articles/kobayashi-20260811-freecad-sentaku-tech",
       "site": "Zenn(Python)",
-      "published": "2026-08-14T03:59:25Z",
-      "description": "測ったこと\n日本語で3,000〜5,000字の記事下書きを生成するツールを作っています。\n1回の生成でそれなりの分量を吐かせるので、API 代が設計上の一番の論点でした。\n着手前の見積もりは「1本あたり36円」。\nClaude Opus 5 で、入力1,800 / 出力9,000トークンを想定した概算です。\neffort を下げればコストが下がるはずなので、まずそこを実測しようと考えました。\n結果...",
+      "published": "2026-08-14T11:00:06Z",
+      "description": "1. 企業のデジタル戦略におけるCADの基盤選定の重要性 企業のデジタル化戦略において、設計システムの選定は単なるツールの選択を超えたものです。特に製造業を営む株式会社コバヤシのように、設計データは製品と等価の資産であるため、以下の3つの観点から技術的基盤を検討する必要があります。 1. データの持続的管理可能性 2. 自動化の可能性 3. 今後の技術進化への適応性 当社がFreeCADを選択した...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "BlenderでglTF エクスポートした際にボーンウェイトが変わってもエラーが出ない",
+      "url": "https://zenn.dev/gapprobe_labo/articles/15b9bf39315ad0",
+      "site": "Zenn(Python)",
+      "published": "2026-08-14T09:23:47Z",
+      "description": "スキン付きメッシュを Blender の glTF エクスポータで書き出したら、\nメッシュのボーンウェイトが勝手に変わったが、エラーは無かったという話。\n\n上図左（青色）がオリジナルオブジェクト\n上図右（橙色）がglTFでエクスポートしたもの\nBlender用の「スキン付きメッシュのLODツール(※)」を試作開発中の実証実験で判明した観測記録になります。\n※）3Dモデルを、変形が破綻しない範囲で軽...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "吊り荷Yaw制御システムの開発 #06-1：可変目標Yaw制御の環境を構築する",
+      "url": "https://zenn.dev/rindajones/articles/variable-target-env",
+      "site": "Zenn(Python)",
+      "published": "2026-08-14T09:21:59Z",
+      "description": "はじめに\n前回は、これまでの吊り荷Yaw制御を発展させ、\n\n目標Yaw角を固定値ではなく可変にする\n目標角へ到達するだけでなく、できるだけ低いスラスター出力で制御する\n\nという2つの目標について紹介しました。今回は、この方針を強化学習へ組み込むために、制御環境をどのように変更したかを紹介します。\n今回の変更で特に重視したのは、\n\n何を「制御に成功した」と考えるか\n\nです。\n目標Yaw角へ到達できて...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "Pythonの基本要素",
+      "url": "https://zenn.dev/zaruta/articles/68f78f35ed15eb",
+      "site": "Zenn(Python)",
+      "published": "2026-08-14T06:06:44Z",
+      "description": "1. 関数（Function）\n関数は、ある処理をひとまとまりにして、必要なときに呼び出せるようにしたもの。\ndef greet(name):\n    return f\"Hello, {name}!\"\n\n\nmessage = greet(\"Alice\")\nprint(message)\n\n 実行結果\nHello, Alice!\n引数を受け取り、処理した結果を return で返すことができる。\nde...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "本番の「数字」を信じていいのか？ブローカーAPI異常値・入出金の見落とし・pandasの罠から学んだデータ整合性設計",
+      "url": "https://zenn.dev/r_inowa/articles/hermes-agent-14-data-integrity",
+      "site": "Zenn(Python)",
+      "published": "2026-08-14T05:17:46Z",
+      "description": "Hermes Agent を数ヶ月動かしていて一番怖いのは、コードのバグより「ダッシュボードの数字が静かに間違っている」ことだと気づきました。エラーは出ない、通知も飛ばない、でも実際の口座残高と表示されている損益がズレている——本記事はその正体を一つずつ潰していった記録です。\n\n\n 発端：ダッシュボードに謎の縦線\nある日、Equityグラフに説明のつかない縦線が何本も立っているのに気づきました。一...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "「毎朝の価格チェック」をやめた話 — Python + GUIでEC価格追跡を自動化してExcelレポートまで吐かせる",
+      "url": "https://zenn.dev/chitamaru/articles/57c466365f7c2e",
+      "site": "Zenn(Python)",
+      "published": "2026-08-14T05:13:27Z",
+      "description": "この記事でやること\nEC サイトの商品価格を毎日手作業でチェックして Excel に転記する、という作業をまるごと自動化します。\n\n対象 URL を登録しておくと、価格を定期取得して履歴を蓄積\n前日比・最安値・値下がり率を計算\nExcel レポート（グラフ付き）を自動生成\n非エンジニアでも使えるように GUI を付けて、Windows 用 exe として配布\n\nサンプル実装はこちらに置いています。...",
       "category": "開発",
       "rss_category": "",
       "image_url": ""
