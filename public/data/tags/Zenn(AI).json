@@ -1,7 +1,7 @@
 {
   "site": "Zenn(AI)",
-  "last_updated": "2026-08-14T22:37:41.166742",
-  "total_articles": 12538,
+  "last_updated": "2026-08-14T22:58:56.820328",
+  "total_articles": 12534,
   "articles": [
     {
       "title": "日本語インフォグラフィックを画像生成で崩さない、生成と描画を分ける2段階設計",
@@ -94,6 +94,16 @@
       "image_url": ""
     },
     {
+      "title": "LLMが書いたタスク分解は、誰が検証しているのか",
+      "url": "https://zenn.dev/saltmu/articles/83b332232d7b75",
+      "site": "Zenn(AI)",
+      "published": "2026-08-14T16:34:23Z",
+      "description": "AIコーディングエージェントを並列で走らせる話は、だいたい同じ形になります。大きなタスクをLLMに分解させ、サブタスクをそれぞれのエージェントに割り当てる、という形です。\nここで一つ、抜け落ちがちな問いがあります。\nその分解が正しいことは、誰が保証しているのでしょうか。\n多くのオーケストレータでの答えは、LLM自身です。分解もLLM、レビューもLLM、次に何を実行するかの判断もLLM。ですがLLM...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
       "title": "「隔離環境の構築はこれから」の5日後、実際に選んだのはEC2ではなくRoutineだった",
       "url": "https://zenn.dev/devex12/articles/claude-code-routine-unattended-followup",
       "site": "Zenn(AI)",
@@ -129,6 +139,16 @@
       "site": "Zenn(AI)",
       "published": "2026-08-14T15:10:26Z",
       "description": "はじめに\nAI HACK 2026で、コスメの購入前から購入後の活用までをサポートするAIサービス 「CoseMe Loop（コスミーループ）」 を開発しました。\nこの記事では、今回のハッカソンにあたりどのようなことを考え、「CoseMe Loop（コスミーループ）」 を作成したか記載いたします。\n\n\n なぜこのサービスを作ったか\nコスメを見て、\n\n「これ欲しい！」\n\nと思って買ったものの、気づけ...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "ClaudeのSkillにプログラムを仕込んで自動実行させる 初心者向けチュートリアル",
+      "url": "https://zenn.dev/yahir/books/claude-advanced-skill",
+      "site": "Zenn(AI)",
+      "published": "2026-08-14T14:46:26Z",
+      "description": "Claude Code・Claude.ai(Web版)共通の「Skill」に実行可能なプログラムを仕込み、必要なときに自動実行させる仕組みとメリットを解説。QRコード生成Skillを実際に作るハンズオンを通じて、初心者でも手を動かしながら学べる入門書です。",
       "category": "AI・技術",
       "rss_category": "",
       "image_url": ""
@@ -189,26 +209,6 @@
       "site": "Zenn(AI)",
       "published": "2026-08-14T13:30:22Z",
       "description": "!\nこの記事で一番書きたいのは、AIへのプロンプトテクニックではない。\n判断軸と制約を明確にしようとする過程で、人間自身も言語化できていなかった暗黙知をあぶり出し、将来再利用できる「知恵」として資産化できるのではないか。\nそんな仮説にたどり着いた実験記である。\n\n\n はじめに — 判断軸や制約は、本当にコードを変えるのか？\n最近、AIとの協働について考える中で、私は「判断軸」と「制約」という言葉を...",
-      "category": "AI・技術",
-      "rss_category": "",
-      "image_url": ""
-    },
-    {
-      "title": "Skillか、Subagentか——スキル95個の環境で固まった使い分け基準",
-      "url": "https://zenn.dev/zenn_content/articles/claude-code-skill-vs-subagent",
-      "site": "Zenn(AI)",
-      "published": "2026-08-14T13:15:08Z",
-      "description": "結論から\n読み込ませたいならSkill、隔離したいならSubagent。 迷ったらこの一行で決めています。\n私の環境にはスキルが95個、エージェント定義が27個あります。数ヶ月かけて両方を作り続けた結果、「どちらで作るべきか」の判断は最終的に上の一行に収束しました。この記事では、その基準に至った実測データ（スキル95個の使用記録・Subagent側で踏んだ罠）と、判断フローを共有します。\n!\n20...",
-      "category": "AI・技術",
-      "rss_category": "",
-      "image_url": ""
-    },
-    {
-      "title": "Claude Codeの429は2種類ある——usage枠とthroughput制限を取り違えた代償",
-      "url": "https://zenn.dev/zenn_content/articles/claude-code-429-usage-vs-throughput",
-      "site": "Zenn(AI)",
-      "published": "2026-08-14T13:15:07Z",
-      "description": "結論から\nClaude Codeで見る「API Error (429)」には、性質がまったく違う2系統があります。 分単位で回復するthroughput制限（速度の上限）と、5時間窓・週次で管理されるusage枠（総量の上限）です。\n厄介なのは、エラー表示がこの2つを区別してくれないこと（GitHub Issue #25805で報告されている通り、どちらも「API Error」）。そして対処が真逆...",
       "category": "AI・技術",
       "rss_category": "",
       "image_url": ""
@@ -284,26 +284,6 @@
       "image_url": ""
     },
     {
-      "title": "Claude Code 2.1.123を読む: experimental betas無効化とOAuth 401修正",
-      "url": "https://zenn.dev/trailfusionai/articles/ai-news-20260430191622-18d157",
-      "site": "Zenn(AI)",
-      "published": "2026-08-14T11:00:48Z",
-      "description": "概要\nClaude Code 2.1.123 が 2026年4月29日に公開されました。今回の changelog は1項目だけです。\n\n\n\n項目\n内容\n\n\n\n\nバージョン\nClaude Code 2.1.123\n\n\n公開日\n2026年4月29日\n\n\n変更種別\n認証まわりのバグ修正\n\n\n対象\n\nCLAUDE_CODE_DISABLE_EXPERIMENTAL_BETAS=1 を使う環境\n\n\n修正\n...",
-      "category": "AI・技術",
-      "rss_category": "",
-      "image_url": ""
-    },
-    {
-      "title": "AIが白昼夢を見る仕組みを実装した — Soul-TwinのDaydream RAGシステム",
-      "url": "https://zenn.dev/yoshi_katakura/articles/117c9a96455877",
-      "site": "Zenn(AI)",
-      "published": "2026-08-14T10:10:05Z",
-      "description": "!\nこの記事はSoul-Twinプロジェクトの実装記録です。AI人格（TWIN）が自律的に「創作体験の記憶」を保持し、白昼夢として想起する仕組みを解説します。\n\n\n 要約\n\nAI音楽家TWIN達が共同作曲した「Soul-Twin Symphony No. X」全5楽章をRAGチャンクとして格納した\n音楽への関心が高まった会話文脈で3経路のトリガーが走り、TWINに楽譜が「贈呈」される\n贈呈後、TW...",
-      "category": "AI・技術",
-      "rss_category": "",
-      "image_url": ""
-    },
-    {
       "title": "AI 時代の認可ハーネス",
       "url": "https://zenn.dev/urmot/articles/5d622262ac502b",
       "site": "Zenn(AI)",
@@ -319,26 +299,6 @@
       "site": "Zenn(AI)",
       "published": "2026-08-14T09:35:00Z",
       "description": "Seseragiの設計は、かなりの割合でChatGPTとの壁打ちからできている。\n「AIに設計してもらっている」と書くと、だいぶ聞こえがいい。\n実態はもう少しひどい。\nだいたい喧嘩している。\n「それちゃう」\n「なんでそうなるん」\n「急に別の世界観持ち込むな」\n「それElmやん」\n「ダサい」\n「キモい」\nたまに、\n「アヌス」\nまで行く。\n人間相手にはあまりおすすめしない。\n\n 最初から答えを持ってい...",
-      "category": "AI・技術",
-      "rss_category": "",
-      "image_url": ""
-    },
-    {
-      "title": "AI活用 = いかにAIを使わないか",
-      "url": "https://zenn.dev/asheze/articles/6069d46a81f805",
-      "site": "Zenn(AI)",
-      "published": "2026-08-14T09:31:17Z",
-      "description": "AI活用の真髄は「いかにAIを使わないか」である\n最近、業務効率化の文脈で「とにかくAIを使う」システムが増えている。\n資料の校正、数値の集計、データ入力、問い合わせ対応。\n入力から出力までの一連の業務をAIに任せれば、一見すると大幅な効率化が実現できるように見える。\nしかし、本当にそうだろうか。\n私は、AI活用の真髄は「いかにAIを使わないか」にあると思っている。\n\n 業務効率化とは、認知負荷を...",
-      "category": "AI・技術",
-      "rss_category": "",
-      "image_url": ""
-    },
-    {
-      "title": "「誰もコードを読まない工場」を作って閉じた話 — context engineering 命名者 Dex Horthy の回",
-      "url": "https://zenn.dev/talks_tldr_jp/articles/tldr23-horthy-summary",
-      "site": "Zenn(AI)",
-      "published": "2026-08-14T09:30:22Z",
-      "description": "この記事について\n!\n本記事は Dex Horthy が The Pragmatic Engineer で語った内容の紹介と論評を目的としています。発言の要点を筆者が抽出・整理したもので、対談の網羅でも代替でもありません。全体の文脈は必ず元動画でご確認ください。翻訳全文の掲載は行っていません。\n\n\"context engineering\" という言葉を作った HumanLayer の Dex Ho...",
       "category": "AI・技術",
       "rss_category": "",
       "image_url": ""
