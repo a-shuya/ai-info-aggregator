@@ -1,28 +1,8 @@
 {
   "site": "Zenn(AI)",
-  "last_updated": "2026-08-14T22:58:56.820328",
+  "last_updated": "2026-08-14T23:29:56.629629",
   "total_articles": 12534,
   "articles": [
-    {
-      "title": "日本語インフォグラフィックを画像生成で崩さない、生成と描画を分ける2段階設計",
-      "url": "https://zenn.dev/every_ai_recipe/articles/ai-palm-reading-infographic",
-      "site": "Zenn(AI)",
-      "published": "2026-08-14T21:10:44Z",
-      "description": "TL;DR\n\n画像内の日本語テキストの破綻は、Nano Banana Pro（Gemini 3 Pro Image、2025-11）およびNano Banana 2（Gemini 3.1 Flash Image、2026-02に標準化）の世代でほぼ解消した。文字入り画像を作るなら、まずモデル選択が前提条件になる\n単一プロンプトで「分析」と「画像化」を同時に要求すると、画像に載せる情報量をモデルが自...",
-      "category": "AI・技術",
-      "rss_category": "",
-      "image_url": ""
-    },
-    {
-      "title": "自動検索されるLLMメモリと、明示的呼び出しのメモリの設計差",
-      "url": "https://zenn.dev/every_ai_recipe/articles/ai-memory-work-mode-settings",
-      "site": "Zenn(AI)",
-      "published": "2026-08-14T21:10:43Z",
-      "description": "TL;DR\n\nChatGPT・Geminiのメモリ機能はデフォルトで有効かつ「自動検索・自動注入」型で、無関係な依頼のコンテキストにも過去の個人的な会話が暗黙に混ざることを確認した\nClaudeのメモリは2026年3月に全プランへ開放されたが設計が逆で、ユーザーが明示的に参照を指示しない限りコンテキストへ注入されない「明示的呼び出し（explicit recall）」方式\nGeminiは「メモリー...",
-      "category": "AI・技術",
-      "rss_category": "",
-      "image_url": ""
-    },
     {
       "title": "2026/08/07 AI協働体系の転換点と人類存続に関する処理構造の観測報告書",
       "url": "https://zenn.dev/tomy1noriyamame/articles/680b44082944e1",
@@ -209,6 +189,26 @@
       "site": "Zenn(AI)",
       "published": "2026-08-14T13:30:22Z",
       "description": "!\nこの記事で一番書きたいのは、AIへのプロンプトテクニックではない。\n判断軸と制約を明確にしようとする過程で、人間自身も言語化できていなかった暗黙知をあぶり出し、将来再利用できる「知恵」として資産化できるのではないか。\nそんな仮説にたどり着いた実験記である。\n\n\n はじめに — 判断軸や制約は、本当にコードを変えるのか？\n最近、AIとの協働について考える中で、私は「判断軸」と「制約」という言葉を...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "Skillか、Subagentか——スキル95個の環境で固まった使い分け基準",
+      "url": "https://zenn.dev/zenn_content/articles/claude-code-skill-vs-subagent",
+      "site": "Zenn(AI)",
+      "published": "2026-08-14T13:15:08Z",
+      "description": "結論から\n読み込ませたいならSkill、隔離したいならSubagent。 迷ったらこの一行で決めています。\n私の環境にはスキルが95個、エージェント定義が27個あります。数ヶ月かけて両方を作り続けた結果、「どちらで作るべきか」の判断は最終的に上の一行に収束しました。この記事では、その基準に至った実測データ（スキル95個の使用記録・Subagent側で踏んだ罠）と、判断フローを共有します。\n!\n20...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "Claude Codeの429は2種類ある——usage枠とthroughput制限を取り違えた代償",
+      "url": "https://zenn.dev/zenn_content/articles/claude-code-429-usage-vs-throughput",
+      "site": "Zenn(AI)",
+      "published": "2026-08-14T13:15:07Z",
+      "description": "結論から\nClaude Codeで見る「API Error (429)」には、性質がまったく違う2系統があります。 分単位で回復するthroughput制限（速度の上限）と、5時間窓・週次で管理されるusage枠（総量の上限）です。\n厄介なのは、エラー表示がこの2つを区別してくれないこと（GitHub Issue #25805で報告されている通り、どちらも「API Error」）。そして対処が真逆...",
       "category": "AI・技術",
       "rss_category": "",
       "image_url": ""
