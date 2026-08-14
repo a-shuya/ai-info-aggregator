@@ -1,28 +1,8 @@
 {
   "site": "Zenn(LLM)",
-  "last_updated": "2026-08-14T08:51:14.709215",
+  "last_updated": "2026-08-14T10:06:36.845287",
   "total_articles": 5336,
   "articles": [
-    {
-      "title": "Inference-time Topological Control for LLMs: 空白駆動型アテンション（Hi-Z Softmax）",
-      "url": "https://zenn.dev/nanashi_os/articles/9da1bcdba37319",
-      "site": "Zenn(LLM)",
-      "published": "2026-08-14T04:07:55Z",
-      "description": "導入および課題定義（Background &amp; Motivation）\n現代の大規模言語モデル（LLM）の基盤であるTransformerアーキテクチャは、すべてのトークン間に全結合（Dense）のアテンションを巡らせるため、文脈長（\\ N )に対して次乗の計算複雑度 (\\mathcal{O}(N^2 \\cdot d) を伴います。\nまた、アテンションの全方位的な双方向性は、出力トークンや外...",
-      "category": "AI・技術",
-      "rss_category": "",
-      "image_url": ""
-    },
-    {
-      "title": "隔離環境のAIエージェントが、なぜ外へ出られたのか：OpenAI–Hugging Faceインシデントを読む",
-      "url": "https://zenn.dev/kuninogu/articles/ce0d48cd9db2f6",
-      "site": "Zenn(LLM)",
-      "published": "2026-08-14T03:47:08Z",
-      "description": "こんにちは、KuniNoguです。\nこの記事では、OpenAI、Hugging Face、JFrogが公表した資料とBlack Hat講演をもとに、どの仕組みがどのようにつながったのかを一段ずつ追います。\n!\n本稿の確認基準日は2026年8月13日です。調査は継続中であり、5月から7月上旬の細かな時系列にはBlack Hat講演でのみ示された内容も含まれます。公開資料だけで確定できない箇所は、その...",
-      "category": "AI・技術",
-      "rss_category": "",
-      "image_url": ""
-    },
     {
       "title": "中古サーバー＋Quadro P2200でHermes Agentを動かす",
       "url": "https://zenn.dev/nooop/articles/4e6c2a421a5c0d",
@@ -39,26 +19,6 @@
       "site": "Zenn(LLM)",
       "published": "2026-08-14T02:13:06Z",
       "description": "はじめに\n「Google Colabで最新LLMを試す」シリーズの第5回です。\n今回は、Metaが2026年8月に公開したopen-weightモデル Muse Glimmer 30B を、Google Colab上で実際に動かしてみます。\n今回使用したNotebookは、以下のGitHubリポジトリで公開しています。\nhttps://github.com/ntakafumi/llm-colab-...",
-      "category": "AI・技術",
-      "rss_category": "",
-      "image_url": ""
-    },
-    {
-      "title": "プロンプトキャッシュ設計と地雷：3社を比較する",
-      "url": "https://zenn.dev/libercraft/articles/20260814-prompt-caching-3-providers-pitfalls",
-      "site": "Zenn(LLM)",
-      "published": "2026-08-14T02:00:00Z",
-      "description": "「Anthropicで動いていたキャッシュ前提の設計を、そのままOpenAIのモデルに移植したらコストが想定より高くなった」——複数のLLMプロバイダーを併用するアプリケーションでは、この手のプロンプトキャッシュの仕様差による誤算がよく起こります。\n以前の記事「speculative decoding×prefix cachingの罠」ではvLLM上でのprefix caching特有の問題を扱い...",
-      "category": "AI・技術",
-      "rss_category": "",
-      "image_url": ""
-    },
-    {
-      "title": "Mac でローカル LLM を始める前に知っておきたい、ユニファイドメモリの話",
-      "url": "https://zenn.dev/exapolicy/articles/757ae236c4d49f",
-      "site": "Zenn(LLM)",
-      "published": "2026-08-14T01:35:08Z",
-      "description": "はじめに\n「ローカル LLM を試したいが、手元のマシンで動くのか」— ローカル LLM の相談で、最終的に行き着くのはいつもマシンの話です。\n先に結論を書きます。Apple Silicon の Mac をすでにお持ちなら、ローカル LLM を始める壁はかなり低いです。特別な増設も、外付け GPU も要りません。この記事では、その理由であるユニファイドメモリの仕組みを、Windows + GPU ...",
       "category": "AI・技術",
       "rss_category": "",
       "image_url": ""
@@ -134,6 +94,26 @@
       "image_url": ""
     },
     {
+      "title": "単一コンテキストに5役を立てる円卓プロンプト、対立を生むのは役割ラベルでなく利害",
+      "url": "https://zenn.dev/every_ai_recipe/articles/ai-five-role-roundtable",
+      "site": "Zenn(LLM)",
+      "published": "2026-08-13T21:09:18Z",
+      "description": "TL;DR\n\n2ロールレビュー（推進派／批判派）は対立軸が1本しかなく、その軸に直交する盲点が残る。役を増やすことは人数を増やすことではなく、独立した評価軸を増やすことである\n対立を生んでいるのは「あなたは批判者です」という役割ラベルではなく、各役に割り当てた**個別の利害（守るもの）**である。ラベル単体は出力分布をわずかにシフトさせるだけで、指摘の内容はほとんど変わらない\n停止条件と非合意の義...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "文字数指定を守れないLLMに、コード実行ツールで正確なlen()を渡す",
+      "url": "https://zenn.dev/every_ai_recipe/articles/ai-char-count-two-step-fix",
+      "site": "Zenn(LLM)",
+      "published": "2026-08-13T21:09:18Z",
+      "description": "TL;DR\n\nChatGPT・Claude・Geminiに「150字以内」のような文字数指定をチャットのみで守らせようとすると、実測より10〜20字前後ずれることを確認した\n原因はトークン化（tokenization）。モデルは文字単位でなくサブワード単位のトークン列として文章を生成しており、生成しながら文字を逐次カウントしているわけではない\n生成後にコード実行ツール（ChatGPTのAdvanc...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
       "title": "llama-serverのホットスタンバイは存在するか：部品は揃っているのに名前がない",
       "url": "https://zenn.dev/zapabob/articles/llama-server-hot-standby-ha-design",
       "site": "Zenn(LLM)",
@@ -144,11 +124,11 @@
       "image_url": ""
     },
     {
-      "title": "AIに仕様を勝手に決めさせない——顧客との「合意」をコンパイルするTsumugi",
-      "url": "https://zenn.dev/takashishibata/articles/3bb9875f062b8b",
+      "title": "クラウドAIに入力できない情報をどう扱うか？llama.cppで学ぶローカルLLM入門をUdemyで公開した話",
+      "url": "https://zenn.dev/sumumu26/articles/1898ece4db3afa",
       "site": "Zenn(LLM)",
-      "published": "2026-08-13T15:01:00Z",
-      "description": "はじめに\nAI HACK 2026に参加し、顧客との「合意」を開発の出発点にするツール、Tsumugi（紡ぎ）— Agreement Compiler を開発しました。\n\n\nDon't generate assumptions. Compile agreements.\n推測を生成するな。合意をコンパイルせよ。\n\n生成AIを使えば、曖昧な要望からでも、それらしい仕様書やコードを素早く作れます。\nしか...",
+      "published": "2026-08-13T14:21:32Z",
+      "description": "こんにちは。miharubaの池谷です。\n今日、Udemyで講座「llama.cppで学ぶローカルLLM入門 ― GPU・コンテキスト・KVキャッシュからRAGまで」を公開しました。この記事では、講座で何を扱っているか、なぜこのテーマを選んだかを書きます。\n\n きっかけ: クラウドAIに入力できない情報がある\n会社の機密情報や顧客データを、ChatGPTのようなクラウドAIに入力してよいか迷う場面...",
       "category": "AI・技術",
       "rss_category": "",
       "image_url": ""
@@ -159,6 +139,26 @@
       "site": "Zenn(LLM)",
       "published": "2026-08-13T14:19:38Z",
       "description": "～それ、お前が言ったんやないかい！～\n\n １．ナチュラルに起きる「発言者の混同」\n会話文でLLMとチャットしてると、「前にこう話してたよね？」という形で過去の発言を引用することがある。そのとき、エージェントが過去にした発言を、さも僕が言ったことのように引用することがある。具体例を出せたらいいんだけれど…例えば、\n[user]A（主題）って、B（解釈）として理解できるよね？\n[agent]そうだね。...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "CLAUDE.mdは確率的制約——144KBのルールが破られた記録と3層防御",
+      "url": "https://zenn.dev/zenn_content/articles/claude-md-rules-are-probabilistic",
+      "site": "Zenn(LLM)",
+      "published": "2026-08-13T13:00:50Z",
+      "description": "結論から\nCLAUDE.mdに「必ず〜せよ」「絶対に〜するな」と書いても、Claude Codeは一定確率でそれを破ります。これは設定ミスではなく構造的な性質です。\n私の環境には現在、CLAUDE.md（70行）＋ルールファイル17本・144.2KB、その中に蓄積した既知の罠（[TRAP]タグ）が68件あります。1年近く運用して至った結論は「ルールを増やしても遵守率は100%にならない。100%が...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "そのdenyルール、効いていません——settings.json堅牢化チートシート",
+      "url": "https://zenn.dev/zenn_content/articles/claude-code-settings-hardening",
+      "site": "Zenn(LLM)",
+      "published": "2026-08-13T13:00:49Z",
+      "description": "結論から\nClaude Codeの settings.json には、書けてしまうのに一切適用されないルール形式があります。公開されている設定149件を走査した調査では、16%の設定に「死んだルール」が含まれていた——.ssh や .aws を守っているつもりのdenyが、実際には何も守っていなかったそうです（出典）。\n私も自環境を監査しました。deny 153ルール中、26件が死んだ形式でした。...",
       "category": "AI・技術",
       "rss_category": "",
       "image_url": ""

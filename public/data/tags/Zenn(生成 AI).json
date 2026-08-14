@@ -1,34 +1,14 @@
 {
   "site": "Zenn(生成 AI)",
-  "last_updated": "2026-08-14T08:51:14.709215",
-  "total_articles": 3340,
+  "last_updated": "2026-08-14T10:06:36.845287",
+  "total_articles": 3342,
   "articles": [
-    {
-      "title": "Gemini 3.7 Flashを出た翌日に実測 ―thinkingの罠と、前世代比15倍安の理由",
-      "url": "https://zenn.dev/ccie26302/articles/zenn-gcp-gemini-37-flash",
-      "site": "Zenn(生成 AI)",
-      "published": "2026-08-14T07:51:05Z",
-      "description": "はじめに\nAzure から Google Cloud を触るシリーズです。2026 年 8 月 13 日に Gemini 3.7 Flash が出たので、翌日に Vertex AI で叩いてみました。\n「コーディングとエージェント向けの workhorse」で、入力 $0.75 / 出力 $3.75 per 1M トークン。3.6 Flash のちょうど半額です（この価格は 2026 年末まで。2...",
-      "category": "AI・技術",
-      "rss_category": "",
-      "image_url": ""
-    },
     {
       "title": "ComfyUIのWorkflow JSONだけでは再現できない——別環境で動かすために固定したい5項目",
       "url": "https://zenn.dev/kiritani_r/articles/39c7700d93aefd",
       "site": "Zenn(生成 AI)",
       "published": "2026-08-14T07:18:11Z",
       "description": "ComfyUIで作ったWorkflowを同僚に渡したところ、\n自分のPCでは動く\n↓\n相手のPCではNodeが赤くなる\n↓\n不足Nodeを入れる\n↓\n今度は起動時にImport Failed\nとなったことはないでしょうか。\nWorkflowをJSONで保存できるため、\n最初は「JSONを共有すれば同じ処理を再現できる」と考えがちです。\nしかし、Workflow JSONに保存されるのは、主に次の情...",
-      "category": "AI・技術",
-      "rss_category": "",
-      "image_url": ""
-    },
-    {
-      "title": "MiniMax H3をCloud Run GPUで動かす ―Mac・Colab・RTX 5090とコスト比較",
-      "url": "https://zenn.dev/ccie26302/articles/zenn-gcp-cloud-run-gpu-minimax-h3",
-      "site": "Zenn(生成 AI)",
-      "published": "2026-08-14T07:07:58Z",
-      "description": "はじめに\n動画生成モデル MiniMax H3 を、前回は MacBook Pro M4 Max（128GB）でローカル実行しました。速度に不満が残ったので、今回は Google Cloud の Cloud Run GPU に載せます。\nColab で動かしている人は見かけますが、Cloud Run に載せた話は見当たりません。Cloud Run なら scale-to-zero で待機コストがゼ...",
       "category": "AI・技術",
       "rss_category": "",
       "image_url": ""
@@ -114,16 +94,6 @@
       "image_url": ""
     },
     {
-      "title": "Claude Opus 5 の effort を3段階振ったら、コストは0.6円しか変わらなかった",
-      "url": "https://zenn.dev/yashi888/articles/27e861913d0ac2",
-      "site": "Zenn(生成 AI)",
-      "published": "2026-08-14T03:59:25Z",
-      "description": "測ったこと\n日本語で3,000〜5,000字の記事下書きを生成するツールを作っています。\n1回の生成でそれなりの分量を吐かせるので、API 代が設計上の一番の論点でした。\n着手前の見積もりは「1本あたり36円」。\nClaude Opus 5 で、入力1,800 / 出力9,000トークンを想定した概算です。\neffort を下げればコストが下がるはずなので、まずそこを実測しようと考えました。\n結果...",
-      "category": "AI・技術",
-      "rss_category": "",
-      "image_url": ""
-    },
-    {
       "title": "MiniMax H3のREF2VAは荒くない ―設定と生成時間を実測して前回を訂正",
       "url": "https://zenn.dev/ccie26302/articles/zenn-minimax-h3-ref2va-quality",
       "site": "Zenn(生成 AI)",
@@ -184,11 +154,51 @@
       "image_url": ""
     },
     {
+      "title": "VRAM 12GB/24GB/32GBで、AI動画はどこまで作れるか（実測）",
+      "url": "https://zenn.dev/made_linlin/articles/ai-video-vram-limits-12gb-24gb-32gb",
+      "site": "Zenn(生成 AI)",
+      "published": "2026-08-13T21:36:15Z",
+      "description": "AI動画の記事の多くは「RTX○○で動きました」で終わる。だが実際に買う前に知りたいのはそこではない。\nこのGPUで、何分待たされ、何ができないのか。\nこの記事は成功報告ではなく、限界の地図を書く。ただし「どこまでが実測か」を先に断っておきたい。\n\n\n実測: RTX 5090（VRAM 32GB）/ システムRAM 64GB の現行機、以前使っていた RTX 4070（12GB）、および RunP...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "デザインを崩されたくないからAIにJSONだけ書かせる。本気で作り込んだら、JSONがコードになった",
+      "url": "https://zenn.dev/mxhlix/articles/json-lock-vs-design-system-cost",
+      "site": "Zenn(生成 AI)",
+      "published": "2026-08-13T18:35:01Z",
+      "description": "AIにWebツールを量産させる中で、デザインの固定方法を三段階で変えてきました。\nその話を書いた前の記事のdev.to版に、こんなコメントがつきました。\n「JSON方式とデザインシステム方式を並べて見せてほしい」\n素直に受け取れば、ただ二つを並べればいいはずです。\nただ、その前に少しだけ前置きをさせてください。\nこれを「JSON方式 対 デザインシステム方式」という構図にはしたくないのです。\n前の...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
       "title": "AIに rm -rf ~/.claude/* された日 — 復旧と、AI同士の不可侵条約ができるまで",
       "url": "https://zenn.dev/pulsar_k/articles/3c66b93153db3a",
       "site": "Zenn(生成 AI)",
       "published": "2026-08-13T15:08:36Z",
       "description": "!\nこの記事の意図するところ\n原因を突き止めて特定のツールのせいにする話ではない。むしろ、AIエージェントというものの性質を、自分の事故で検証した記録に近い。私のケースでは結果的に上記の事故が起きたが、これは逆の組み合わせでも同じことが起こり得る。実際、この記事を書いている最中のClaude Codeにも、事故原因となった現象が複数回連続で発生している。\n\n2026年7月27日の朝、某AIエージェ...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "AIに仕様を勝手に決めさせない——顧客との「合意」をコンパイルするTsumugi",
+      "url": "https://zenn.dev/takashishibata/articles/3bb9875f062b8b",
+      "site": "Zenn(生成 AI)",
+      "published": "2026-08-13T15:01:00Z",
+      "description": "はじめに\nAI HACK 2026に参加し、顧客との「合意」を開発の出発点にするツール、Tsumugi（紡ぎ）— Agreement Compiler を開発しました。\n\n\nDon't generate assumptions. Compile agreements.\n推測を生成するな。合意をコンパイルせよ。\n\n生成AIを使えば、曖昧な要望からでも、それらしい仕様書やコードを素早く作れます。\nしか...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "AIが書いた記事はAIにレビューさせろ ― Claude×Codex クロスレビューの驚きの成果",
+      "url": "https://zenn.dev/hoshiorange/articles/20-cross-model-review-prose-not-code",
+      "site": "Zenn(生成 AI)",
+      "published": "2026-08-13T14:04:21Z",
+      "description": "こんにちは。今日は「Claude Code に書かせた文章を、OpenAI の Codex CLI にレビューさせてみた」話です。身内の原稿をよその会社に添削してもらうようなもので、正直ちょっと気まずかったです。\n先に結論から言います。同じ Claude に2回セルフレビューさせても、章と章のつじつまのズレと誤植は残っていました。 それを Codex CLI に1回クロスレビューさせたら指摘が18...",
       "category": "AI・技術",
       "rss_category": "",
       "image_url": ""
@@ -239,6 +249,16 @@
       "site": "Zenn(生成 AI)",
       "published": "2026-08-13T10:35:16Z",
       "description": "やあ、今日は単一API呼び出しに戻した検証の話と、プロンプトに書くだけでは自分を止められなかったのでフックで機械的に止めた話。\n📚 ルールはこちら：https://zenn.dev/gakusys/books/782ca882e59a16\n\n\n\n 前回の宿題：3分割、やめてみた\n前回（11回目）は「display: \"summarized\"が効くと分かった以上、単一API呼び出しに戻しても問題が解...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "AIエージェントの“根拠の捏造”を、テスト駆動で見つけて自動修正（86%→0%）― DataRobot Tensile",
+      "url": "https://zenn.dev/miogawa/articles/f074de4d57b6bb",
+      "site": "Zenn(生成 AI)",
+      "published": "2026-08-13T08:20:52Z",
+      "description": "はじめに\n今回は 弊社が公開した新しいエージェント信頼性フレームワーク「Tensile」 を、いちエンジニアとして実際に触ってみたので、その記録を残します。自社製品ではありますが、宣伝ではなく「中の人が普通に手を動かして試したらどうだったか」をそのまま書きます。\n生成AIエージェントを業務に載せようとすると、必ずぶつかるのが 「たまに失敗する」問題 です。\n\n同じ質問でも実行するたびに挙動が変わる...",
       "category": "AI・技術",
       "rss_category": "",
       "image_url": ""
