@@ -1,8 +1,168 @@
 {
   "site": "Zenn(生成 AI)",
-  "last_updated": "2026-08-14T07:42:19.110252",
-  "total_articles": 3326,
+  "last_updated": "2026-08-14T08:51:14.709215",
+  "total_articles": 3340,
   "articles": [
+    {
+      "title": "Gemini 3.7 Flashを出た翌日に実測 ―thinkingの罠と、前世代比15倍安の理由",
+      "url": "https://zenn.dev/ccie26302/articles/zenn-gcp-gemini-37-flash",
+      "site": "Zenn(生成 AI)",
+      "published": "2026-08-14T07:51:05Z",
+      "description": "はじめに\nAzure から Google Cloud を触るシリーズです。2026 年 8 月 13 日に Gemini 3.7 Flash が出たので、翌日に Vertex AI で叩いてみました。\n「コーディングとエージェント向けの workhorse」で、入力 $0.75 / 出力 $3.75 per 1M トークン。3.6 Flash のちょうど半額です（この価格は 2026 年末まで。2...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "ComfyUIのWorkflow JSONだけでは再現できない——別環境で動かすために固定したい5項目",
+      "url": "https://zenn.dev/kiritani_r/articles/39c7700d93aefd",
+      "site": "Zenn(生成 AI)",
+      "published": "2026-08-14T07:18:11Z",
+      "description": "ComfyUIで作ったWorkflowを同僚に渡したところ、\n自分のPCでは動く\n↓\n相手のPCではNodeが赤くなる\n↓\n不足Nodeを入れる\n↓\n今度は起動時にImport Failed\nとなったことはないでしょうか。\nWorkflowをJSONで保存できるため、\n最初は「JSONを共有すれば同じ処理を再現できる」と考えがちです。\nしかし、Workflow JSONに保存されるのは、主に次の情...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "MiniMax H3をCloud Run GPUで動かす ―Mac・Colab・RTX 5090とコスト比較",
+      "url": "https://zenn.dev/ccie26302/articles/zenn-gcp-cloud-run-gpu-minimax-h3",
+      "site": "Zenn(生成 AI)",
+      "published": "2026-08-14T07:07:58Z",
+      "description": "はじめに\n動画生成モデル MiniMax H3 を、前回は MacBook Pro M4 Max（128GB）でローカル実行しました。速度に不満が残ったので、今回は Google Cloud の Cloud Run GPU に載せます。\nColab で動かしている人は見かけますが、Cloud Run に載せた話は見当たりません。Cloud Run なら scale-to-zero で待機コストがゼ...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "生成AI DSLを作っていたら、色彩検定を勉強することになった  ArraySeries次世代モデル Type-V",
+      "url": "https://zenn.dev/wd01/articles/d5d39430a5e565",
+      "site": "Zenn(生成 AI)",
+      "published": "2026-08-14T06:52:05Z",
+      "description": "はじめに\n私は現在、生成AI向けの独自DSL\n「ArraySeries」\nの開発・検証を行っています。\nArraySeriesは、\n\n最先端の生成AIを、\n受け身で使うのではなく、\n人間が考え、実験し、壊し、再構築しながら\n本気で遊び倒すためのDSL。\n\nという思想から開発してきました。\n現在、その次世代モデルとして、\nArray.Ver.1.5RX.Over-Type-V\nの設計を進めています。...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "ハーネスが進化しても外側のループは残る：NVIDIA NOOA と IBM Mellea に見る責務分担",
+      "url": "https://zenn.dev/dxclab/articles/0da6a402c58963",
+      "site": "Zenn(生成 AI)",
+      "published": "2026-08-14T06:10:27Z",
+      "description": "以前、Web検索を組み込んだマルチエージェントを作っていた頃、自分で制御しなければならない項目が5つありました。検索のリトライ上限、タイムアウト、状態の持ち回し、リトライが尽きたあとの失敗処理、検索結果の評価です。なかでも検索結果の評価では、何を探すかだけでなく、どの情報源を重視し、何が得られれば探索を終えてよいのかまで指定していました。そして、この5つを全部プロンプトに書いていました。\n反復回数...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "第3回　AIとコード、私の役割分担",
+      "url": "https://zenn.dev/kmnmzw/articles/lif-development-03",
+      "site": "Zenn(生成 AI)",
+      "published": "2026-08-14T06:00:05Z",
+      "description": "前回は、Lifで登記、固定資産、森林簿等の情報をどのように保持し、土地・建物へ関連付けているかを扱いました。\n今回は、その情報を解析するAI、Lif自体の設計・実装を支援するAI、コード処理と人間による判断の分担について整理します。\n\n\n データ取り込みにおけるAIの役割\nLifの解析におけるAIの役割は、高度な推論による判断ではなく、原資料を余計に補わず、定めた形式へ構造化することです。機械的に...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "AIに塊魂を作らせたら、実在の東京14,563棟を呑み込むゲームになった ——150エージェントの制作ログ全解剖",
+      "url": "https://zenn.dev/otani_ai_memo/articles/fable-katamari-ultracode",
+      "site": "Zenn(生成 AI)",
+      "published": "2026-08-14T05:35:51Z",
+      "description": "「AIに塊魂を作らせたら、東京まるごと巻き込むゲームになった」——これは比喩ではありません。ボールを転がしてネジや抵抗を取り込む2cmのスタートから、実在の東京・秋葉原の街を呑み込み、最後はスカイツリーごと地球から離陸する。そのゲームを、Claude（Fable 5）が ultracode というマルチエージェント・ワークフローで、設計からデプロイまで end-to-end に作り上げました。\n!...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "AIに「あなたの使い方」を聞いたら、手元の説明書を1度も開かなかった。記憶で挙げた名前に、説明書に無い本物が混ざっていた",
+      "url": "https://zenn.dev/numarn/articles/claude-self-describe-options-handson",
+      "site": "Zenn(生成 AI)",
+      "published": "2026-08-14T05:17:46Z",
+      "description": "先に結論から書きます。AI に「あなた自身の使い方」を聞いたとき、同じ聞き方の5回とも、AI は手元にある自分の説明書を1度も開きませんでした。道具(コマンドを実行する権限)は渡してあったのに、です。答えは全部その場の記憶から出てきました。\nそして記憶で答えたときだけ、説明書に載っていない名前が混ざりました。私は最初それを「AI の思い違い」だと思って数え上げていたのですが、実際にそのオプションを...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "Antigravity2.0のヒット率に悩んでたら、いつの間にか魔改造GEMINI.mdが完成した。",
+      "url": "https://zenn.dev/raspnas/articles/202608-geminimd",
+      "site": "Zenn(生成 AI)",
+      "published": "2026-08-14T04:14:49Z",
+      "description": "まえがき\nみなさん、エージェントコーディング楽しんでますか？\n私はCodexを買ってからPixel端末を購入して割引を貰えばよかったと後悔しています。\nそれはそれとしてせっかくGemini Proプランを契約してオマケでGeminiがついてきたのですから、\nAntigravityを使ってエージェントコーディングを楽しんでました。訂正率の高さで悩んで改変していたら魔改造GEMINI.mdとなってしま...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "AIに実装させる前に、仕様書で何を決めているか",
+      "url": "https://zenn.dev/moca/articles/0922ad2922896f",
+      "site": "Zenn(生成 AI)",
+      "published": "2026-08-14T04:13:05Z",
+      "description": "この記事でわかること\n\nAIへ実装を渡す前に、仕様書で決めておく範囲\n状態遷移、権限、通知、料金を別々の正本へ分ける理由\n分割した仕様書を、相互参照レビューで整合させる方法\n仕様書を作っても不一致は残りうる、という実際の監査結果\n\n\nこの記事の要点\nAIに渡す仕様書の役割は、コードの書き方を細かく指定することではありません。実装担当のAIが、事業上の判断をしなくて済むところまで決めることです。\n\n...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "AI時代のキャリア戦略　お盆番外編　AI時代、アーキテクトは本当に死ぬのか ― AIは「役割」ではなく「道具」である",
+      "url": "https://zenn.dev/jinfuroi/articles/467ad3b640a796",
+      "site": "Zenn(生成 AI)",
+      "published": "2026-08-14T04:12:39Z",
+      "description": "AIは「役割」ではなく「道具」である\n先日、Zennで「AI時代、アーキテクトやテックリードは死ぬ」という興味深い記事を読みました。\nAIが設計や実装まで担うようになれば、アーキテクトやテックリードは不要になり、代わりに「AIコンダクター」のような役割が重要になる、という内容です。\n私も「AIが設計・実装の多くを担う」という未来にはかなり同意しています。\nただし、その先の結論については少し違う考え...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "Claude Opus 5 の effort を3段階振ったら、コストは0.6円しか変わらなかった",
+      "url": "https://zenn.dev/yashi888/articles/27e861913d0ac2",
+      "site": "Zenn(生成 AI)",
+      "published": "2026-08-14T03:59:25Z",
+      "description": "測ったこと\n日本語で3,000〜5,000字の記事下書きを生成するツールを作っています。\n1回の生成でそれなりの分量を吐かせるので、API 代が設計上の一番の論点でした。\n着手前の見積もりは「1本あたり36円」。\nClaude Opus 5 で、入力1,800 / 出力9,000トークンを想定した概算です。\neffort を下げればコストが下がるはずなので、まずそこを実測しようと考えました。\n結果...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "MiniMax H3のREF2VAは荒くない ―設定と生成時間を実測して前回を訂正",
+      "url": "https://zenn.dev/ccie26302/articles/zenn-minimax-h3-ref2va-quality",
+      "site": "Zenn(生成 AI)",
+      "published": "2026-08-14T02:36:17Z",
+      "description": "はじめに ― 前回の訂正です\n前回、MiniMax H3 の人物固定（キャラの一貫性）を FL2VA と REF2VA で比べ、「REF2VA は人物固定できるが、絵は FL2VA より荒い」と書きました。これは誤りでした。REF2VA が荒かったのではなく、私の生成設定が悪かっただけです。\n正しくは、REF2VA の画質はステップ数と解像度で大きく変わります。今回はそれを、生成時間・メモリつきで...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "FAQを更新したのにAIが古い回答を使う：変更を承認イベントにする設計",
+      "url": "https://zenn.dev/miraigent/articles/ai-faq-change-approval-workflow",
+      "site": "Zenn(生成 AI)",
+      "published": "2026-08-14T01:21:12Z",
+      "description": "FAQを更新したのにAIが古い回答を使う：変更を承認イベントにする設計\n\nFAQの内容を更新したのに、AIが以前の回答を使い続ける。逆に、編集した直後から新しい内容を使い始めたため、責任者の確認前に誤った条件が回答へ出る。この2つは一見反対の問題ですが、原因は同じです。\nFAQの編集と、AIが参照してよい状態を同じものとして扱っているからです。\nこの記事では、FAQの更新を単なる上書きではなく、変...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "AIエージェントとは何か:サーバで動く「AI社員」が、なぜチームの仕事を変えるのか",
+      "url": "https://zenn.dev/shotawatanabe/articles/what-is-server-ai-agent",
+      "site": "Zenn(生成 AI)",
+      "published": "2026-08-13T23:49:53Z",
+      "description": "「AIエージェント」が指しているものは、実はバラバラ\n「AIエージェントを導入したい」という相談を受けることが増えた。ただ、話を聞いていくと、指しているものが人によってまるで違う。\nChatGPTに調べ物を任せるのもAIエージェントと呼ばれるし、Claude CodeやCodexのように手元のパソコンでコードを書くツールもAIエージェントだ。AI系のSaaSが「エージェント機能」と呼んでいるものも...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "Web調査は「宿題ファイル」にして外注する — Claude Code と claude.ai の分業レシピ",
+      "url": "https://zenn.dev/tejunya/articles/a013_web-claude-bungyo",
+      "site": "Zenn(生成 AI)",
+      "published": "2026-08-13T23:00:05Z",
+      "description": "Claude Code で作業していて、「この情報、最新の仕様を確認しないと書けないな」という場面が来る。\nそのまま Code に Web 検索をさせると、こうなる。\n検索結果の断片が会話に流れ込み、コンテキストが調査ログで埋まる。本題の作業に戻る頃には、さっきまでの文脈の切れ味が落ちている。しかも調査結果はそのセッション限りで、翌週また同じことを調べている。\n筆者はこれをやめて、調査を「宿題ファ...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
     {
       "title": "生成AI教育はなぜ難しいのか ― 変わらない原則と変わり続ける実践を分けて設計する",
       "url": "https://zenn.dev/nullcontroller/articles/00d48d3802ff49",
@@ -14,31 +174,21 @@
       "image_url": ""
     },
     {
+      "title": "Skill は AI エージェントを賢くするのか？ それとも思考を固定するのか？ ― 判断自体を判断する能力の必要性とは？",
+      "url": "https://zenn.dev/h1deya/articles/skill-meta-judgment",
+      "site": "Zenn(生成 AI)",
+      "published": "2026-08-13T21:55:38Z",
+      "description": "AIエージェントに必要なのは「良い Skill」だけなのだろうか ― Skill、Experience、そして「今の自分の判断を信じてよいのか」を判断する能力について ―\n本稿では、AIエージェントの Skill の有用性をより推し進めるために、熟練者の実務判断と暗黙知の扱いに着目しつつ、Skill が LLM の思考を固定してしまう可能性と、それを回避するために必要と思われる追加の枠組みについて...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
       "title": "AIに rm -rf ~/.claude/* された日 — 復旧と、AI同士の不可侵条約ができるまで",
       "url": "https://zenn.dev/pulsar_k/articles/3c66b93153db3a",
       "site": "Zenn(生成 AI)",
       "published": "2026-08-13T15:08:36Z",
       "description": "!\nこの記事の意図するところ\n原因を突き止めて特定のツールのせいにする話ではない。むしろ、AIエージェントというものの性質を、自分の事故で検証した記録に近い。私のケースでは結果的に上記の事故が起きたが、これは逆の組み合わせでも同じことが起こり得る。実際、この記事を書いている最中のClaude Codeにも、事故原因となった現象が複数回連続で発生している。\n\n2026年7月27日の朝、某AIエージェ...",
-      "category": "AI・技術",
-      "rss_category": "",
-      "image_url": ""
-    },
-    {
-      "title": "AIに仕様を勝手に決めさせない——顧客との「合意」をコンパイルするTsumugi",
-      "url": "https://zenn.dev/takashishibata/articles/3bb9875f062b8b",
-      "site": "Zenn(生成 AI)",
-      "published": "2026-08-13T15:01:00Z",
-      "description": "はじめに\nAI HACK 2026に参加し、顧客との「合意」を開発の出発点にするツール、Tsumugi（紡ぎ）— Agreement Compiler を開発しました。\n\n\nDon't generate assumptions. Compile agreements.\n推測を生成するな。合意をコンパイルせよ。\n\n生成AIを使えば、曖昧な要望からでも、それらしい仕様書やコードを素早く作れます。\nしか...",
-      "category": "AI・技術",
-      "rss_category": "",
-      "image_url": ""
-    },
-    {
-      "title": "AIが書いた記事はAIにレビューさせろ ― Claude×Codex クロスレビューの驚きの成果",
-      "url": "https://zenn.dev/hoshiorange/articles/20-cross-model-review-prose-not-code",
-      "site": "Zenn(生成 AI)",
-      "published": "2026-08-13T14:04:21Z",
-      "description": "こんにちは。今日は「Claude Code に書かせた文章を、OpenAI の Codex CLI にレビューさせてみた」話です。身内の原稿をよその会社に添削してもらうようなもので、正直ちょっと気まずかったです。\n先に結論から言います。同じ Claude に2回セルフレビューさせても、章と章のつじつまのズレと誤植は残っていました。 それを Codex CLI に1回クロスレビューさせたら指摘が18...",
       "category": "AI・技術",
       "rss_category": "",
       "image_url": ""
@@ -89,16 +239,6 @@
       "site": "Zenn(生成 AI)",
       "published": "2026-08-13T10:35:16Z",
       "description": "やあ、今日は単一API呼び出しに戻した検証の話と、プロンプトに書くだけでは自分を止められなかったのでフックで機械的に止めた話。\n📚 ルールはこちら：https://zenn.dev/gakusys/books/782ca882e59a16\n\n\n\n 前回の宿題：3分割、やめてみた\n前回（11回目）は「display: \"summarized\"が効くと分かった以上、単一API呼び出しに戻しても問題が解...",
-      "category": "AI・技術",
-      "rss_category": "",
-      "image_url": ""
-    },
-    {
-      "title": "AIエージェントの“根拠の捏造”を、テスト駆動で見つけて自動修正（86%→0%）― DataRobot Tensile",
-      "url": "https://zenn.dev/miogawa/articles/f074de4d57b6bb",
-      "site": "Zenn(生成 AI)",
-      "published": "2026-08-13T08:20:52Z",
-      "description": "はじめに\n今回は 弊社が公開した新しいエージェント信頼性フレームワーク「Tensile」 を、いちエンジニアとして実際に触ってみたので、その記録を残します。自社製品ではありますが、宣伝ではなく「中の人が普通に手を動かして試したらどうだったか」をそのまま書きます。\n生成AIエージェントを業務に載せようとすると、必ずぶつかるのが 「たまに失敗する」問題 です。\n\n同じ質問でも実行するたびに挙動が変わる...",
       "category": "AI・技術",
       "rss_category": "",
       "image_url": ""
