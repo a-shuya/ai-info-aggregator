@@ -1,8 +1,38 @@
 {
   "site": "Zenn(LLM)",
-  "last_updated": "2026-08-14T16:24:57.889057",
-  "total_articles": 5351,
+  "last_updated": "2026-08-14T17:30:10.898268",
+  "total_articles": 5356,
   "articles": [
+    {
+      "title": "LLMが書いたタスク分解は、誰が検証しているのか",
+      "url": "https://zenn.dev/saltmu/articles/83b332232d7b75",
+      "site": "Zenn(LLM)",
+      "published": "2026-08-14T16:34:23Z",
+      "description": "AIコーディングエージェントを並列で走らせる話は、だいたい同じ形になります。大きなタスクをLLMに分解させ、サブタスクをそれぞれのエージェントに割り当てる、という形です。\nここで一つ、抜け落ちがちな問いがあります。\nその分解が正しいことは、誰が保証しているのでしょうか。\n多くのオーケストレータでの答えは、LLM自身です。分解もLLM、レビューもLLM、次に何を実行するかの判断もLLM。ですがLLM...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "LLM の合成データ学習でモデル崩壊を分ける更新経路",
+      "url": "https://zenn.dev/id774/articles/ec528731c19d05",
+      "site": "Zenn(LLM)",
+      "published": "2026-08-14T15:11:26Z",
+      "description": "AI 生成データを学習に使うと、モデルはやがて壊れる。この説明は分かりやすいが、設計判断に使うには少し足りない。\n同じ合成データを使っていても、元の実データを捨てる場合と残す場合、生成物を無条件に採用する場合と選別する場合、モデル内部の指標だけで評価する場合と外部の結果を戻す場合では、学習系の挙動が異なる。見るべき対象は、データが人間製か AI 製かという二分法だけではない。どのデータを次世代へ残...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "16GB VRAMでコンテキスト256K — KV量子化の劣化を実測したら、圧縮自体が要らなかった",
+      "url": "https://zenn.dev/seeda_yuto/articles/qwen36-256k-context-16gb-kv-quant",
+      "site": "Zenn(LLM)",
+      "published": "2026-08-14T11:40:31Z",
+      "description": "結論から: 8K→256K（32倍）にしてVRAM +3.7GB、速度低下ゼロ\nRTX 4080 (16GB) で常用しているQwen3.6-35B-A3Bのコンテキストを、8Kからモデルのネイティブ上限である256K（262,144トークン）まで広げた。\n\n\n\n項目\n8K運用時\n256K運用時\n\n\n\n\nllama-server単体のVRAM\n7.9 GB\n11.6 GB\n\n\n生成速度（日本語）\n...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
     {
       "title": "【2026年最新】DeepSeek HarnessをローカルLLMで動かす完全ガイド — 「モデルは差し替えられるか」から実測値まで",
       "url": "https://zenn.dev/amu_lab/articles/deepseek-harness-local-llm-ollama-guide-2026",
@@ -34,6 +64,16 @@
       "image_url": ""
     },
     {
+      "title": "以前、VLMのOCRはデモが映える。本番で壊れる。という記事を書きました。",
+      "url": "https://zenn.dev/donut/articles/74e93473c4cde3",
+      "site": "Zenn(LLM)",
+      "published": "2026-08-14T09:21:31Z",
+      "description": "以前、VLMのOCRはデモが映える。本番で壊れる。という記事を書きました。\nVLMに座標まで出させると、それらしいけれど実在しない座標を返すことがある。だから座標はOCR側で作り、LLMには「何が何の値なのか」という意味の理解だけを任せる。\nそんな設計の話でした。\nただ、「本番で壊れる」と書いた以上、ひとつ足りないものがありました。\n実際、どれくらい壊れるのか。\n今回はそこを測りました。\n合計 1...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
       "title": "claude -p 15分ハンズオン — 初めてのヘッドレス実行",
       "url": "https://zenn.dev/hampen2929/articles/20260807-claude-p-headless-hands-on",
       "site": "Zenn(LLM)",
@@ -49,6 +89,16 @@
       "site": "Zenn(LLM)",
       "published": "2026-08-14T08:42:57Z",
       "description": "はじめに\n2026年8月13日 21時30分(JST)、DeepSeek から V4-Pro の正式版 DeepSeek-V4-Pro-0813 のモデルウェイトが公開されました。4月の Preview 公開から約4ヶ月、満を持しての GA(一般提供)版です。\nフィックスターズでは、Kimi-K3、Qwen3.8-2.4T-A95B に続く Day1 デプロイ検証の第3弾として、公開翌日に NVI...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "自由回答型の性格診断をLLMで作る｜選択式では拾えない回答をどう分類するか",
+      "url": "https://zenn.dev/asayi_megumi/articles/f0789eb16c089e",
+      "site": "Zenn(LLM)",
+      "published": "2026-08-14T08:31:01Z",
+      "description": "!\n本記事は技術的な実装の話です。心理学的な診断の妥当性を主張するものではありません。ここで扱う「分類」は、自由記述テキストを事前定義したラベルに割り当てる作業を指します。人格の判定や心理学的診断としての効力は検証していません。\n\n\n 選択式の限界\n性格診断の実装で最初に選ぶのは、たいてい4択です。\nQ. 初対面の人が多い場に行くと？\n  A. 積極的に話しかける\n  B. 誰かが話しかけてくれる...",
       "category": "AI・技術",
       "rss_category": "",
       "image_url": ""
