@@ -1,7 +1,7 @@
 {
   "site": "Zenn(AI)",
-  "last_updated": "2026-08-15T05:11:37.324395",
-  "total_articles": 12548,
+  "last_updated": "2026-08-15T05:45:42.304154",
+  "total_articles": 12551,
   "articles": [
     {
       "title": "Claude Codeに『あなたのサイト、ギャンブルサイトになってますよ』と言われた話",
@@ -134,31 +134,11 @@
       "image_url": ""
     },
     {
-      "title": "根拠付きドキュメントを書いたら、未検証の回帰ケースが2件見つかった",
-      "url": "https://zenn.dev/yusuke_shiki/articles/ee2753984e4ca3",
-      "site": "Zenn(AI)",
-      "published": "2026-08-14T23:14:35Z",
-      "description": "何が起きたか\n先に結論です。これはバグ報告ではありません。見つかったのは、すでに正しく動いていたコードに対する回帰テストの欠落2件でした。実装は一切変えていません。追加したのは、テストだけです。\nagent-cost という小さな OSS CLI を公開しています。Claude Code / Codex CLI のローカル利用ログを読み込んで、トークンコストを見積もるツールです。このツールのドキュ...",
-      "category": "AI・技術",
-      "rss_category": "",
-      "image_url": ""
-    },
-    {
       "title": "AIコーディングエージェントの自律実行を状態機械として設計する――完了述語・Safety/Liveness・責任境界",
       "url": "https://zenn.dev/oota/articles/092e953ccd0716",
       "site": "Zenn(AI)",
       "published": "2026-08-14T23:01:29Z",
       "description": "AIコーディングエージェントを長時間動かすとき、問題はプロンプトの長さではない。\n必要なのは、次を別々の制御対象として設計することである。\nObjective\nPlan\nAcceptance Predicate\nInvariants\nAuthority Boundary\nResource Bounds\nLifecycle State\nEvidence\nHuman Decision\n単発の指示を長く...",
-      "category": "AI・技術",
-      "rss_category": "",
-      "image_url": ""
-    },
-    {
-      "title": "AIコードレビューをCIに組み込む — 観点設計から自動承認までの実践",
-      "url": "https://zenn.dev/hampen2929/articles/20260814-ci-ai-pr-review",
-      "site": "Zenn(AI)",
-      "published": "2026-08-14T23:00:05Z",
-      "description": "PRレビューをAIに「一次受け」させ、指摘から承認までをCIで自動化する構成を紹介します。Claude Code入門を終えて、チームのワークフローに組み込む段階の人向けです。汎用の「AIレビューツールを入れてみた」ではなく、レビュー観点を自分たちで設計し、承認条件と例外処理まで含めて運用する話をします。例はPython、CIはGitHub Actionsですが、考え方は言語・ツールを問いません。\n...",
       "category": "AI・技術",
       "rss_category": "",
       "image_url": ""
@@ -189,16 +169,6 @@
       "site": "Zenn(AI)",
       "published": "2026-08-14T22:28:05Z",
       "description": "HQ-SAMはSAMを拡張することで高精度なゼロショットセグメンテーションを可能とする優れた手法です。\nSAM-2は、画像エンコーダに事前学習済みのMAE Hieraモデル(※)を利用したSAMの発展手法です。\n両者の良いところを採用した手法は存在するでしょうか？\n※Hieraモデル:\n解像度違いのViTブロックをピラミッド状に接合することでより高次元な特徴埋め込みを抽出するという画像エンコーダで...",
-      "category": "AI・技術",
-      "rss_category": "",
-      "image_url": ""
-    },
-    {
-      "title": "Grid Worldで始める最小のWorld Model入門",
-      "url": "https://zenn.dev/naoyabone/articles/b491a0ce085c8f",
-      "site": "Zenn(AI)",
-      "published": "2026-08-14T22:05:15Z",
-      "description": "はじめに\nWorld Model（世界モデル）は、現在の状態と行動から、次の状態を予測するモデルです。\n強化学習では、実際の環境を何度も動かさなくても、学習したモデルの中で未来をシミュレーションできる可能性があります。ここではその考え方をつかむために、5×5のGrid Worldを使った最小構成のWorld Modelを作ります。\nこれまでは、zennでは論文を読んでその論文の解説やその論文に対す...",
       "category": "AI・技術",
       "rss_category": "",
       "image_url": ""
@@ -274,6 +244,16 @@
       "image_url": ""
     },
     {
+      "title": "LLMが書いたタスク分解は、誰が検証しているのか",
+      "url": "https://zenn.dev/saltmu/articles/83b332232d7b75",
+      "site": "Zenn(AI)",
+      "published": "2026-08-14T16:34:23Z",
+      "description": "AIコーディングエージェントを並列で走らせる話は、だいたい同じ形になります。大きなタスクをLLMに分解させ、サブタスクをそれぞれのエージェントに割り当てる、という形です。\nここで一つ、抜け落ちがちな問いがあります。\nその分解が正しいことは、誰が保証しているのでしょうか。\n多くのオーケストレータでの答えは、LLM自身です。分解もLLM、レビューもLLM、次に何を実行するかの判断もLLM。ですがLLM...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
       "title": "「隔離環境の構築はこれから」の5日後、実際に選んだのはEC2ではなくRoutineだった",
       "url": "https://zenn.dev/devex12/articles/claude-code-routine-unattended-followup",
       "site": "Zenn(AI)",
@@ -314,6 +294,16 @@
       "image_url": ""
     },
     {
+      "title": "ClaudeのSkillにプログラムを仕込んで自動実行させる 初心者向けチュートリアル",
+      "url": "https://zenn.dev/yahir/books/claude-advanced-skill",
+      "site": "Zenn(AI)",
+      "published": "2026-08-14T14:46:26Z",
+      "description": "Claude Code・Claude.ai(Web版)共通の「Skill」に実行可能なプログラムを仕込み、必要なときに自動実行させる仕組みとメリットを解説。QRコード生成Skillを実際に作るハンズオンを通じて、初心者でも手を動かしながら学べる入門書です。",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
       "title": "Claude Codeのメモリに53本ためて分かった、書く価値のある事実とない事実",
       "url": "https://zenn.dev/reona777/articles/claude-code-memory-53-notes",
       "site": "Zenn(AI)",
@@ -334,6 +324,16 @@
       "image_url": ""
     },
     {
+      "title": "セキュリティ・キャンプ2026 コネクト AIレッドチーミングクラスの応募課題を晒す",
+      "url": "https://zenn.dev/inazumimakoto/articles/seccamp2026-connect-kadai",
+      "site": "Zenn(AI)",
+      "published": "2026-08-14T14:08:15Z",
+      "description": "はじめに\n3月にセキュリティ・キャンプ2026 コネクトの「AIレッドチーミングクラス」に参加してました．そこでのグループワークで優秀賞をいただいて，8月のセキュリティ・キャンプ全国大会2026の成果発表に招待していただきました．\nんで，会場で話してたら，コネクトに参加したいという人から「応募課題晒してよ」と言われたので，晒します．\n\n公式の課題文: https://www.ipa.go.jp/j...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
       "title": "🚧交通整理のためのカンバンをつくった",
       "url": "https://zenn.dev/zio3/articles/510c27afd1d1a6",
       "site": "Zenn(AI)",
@@ -344,11 +344,41 @@
       "image_url": ""
     },
     {
+      "title": "2026-08-05 今日の技術トレンド",
+      "url": "https://zenn.dev/bambampurin/articles/2026-08-05-tech-daily",
+      "site": "Zenn(AI)",
+      "published": "2026-08-14T14:00:52Z",
+      "description": "!\n2026-08-05時点の実ニュースからは、LLM自体の話題よりも、AIエージェント化・業務統合・MCP接続・安全性が中心テーマになっています。特に Reuters、The Guardian、TechCrunch が示すように、自律AIの実運用ではセキュリティと責任分界が最大論点です。一方、開発者向けには uv、Ruff、Polars などPythonツール群の整備と、OpenAIによる開発者...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
       "title": "AI協働 制約・判断軸バトル #1 — 判断軸と制約を変えたら実装が別物になった",
       "url": "https://zenn.dev/frb_tamasub/articles/ai-judgment-battle-01-axis-constraint",
       "site": "Zenn(AI)",
       "published": "2026-08-14T13:30:22Z",
       "description": "!\nこの記事で一番書きたいのは、AIへのプロンプトテクニックではない。\n判断軸と制約を明確にしようとする過程で、人間自身も言語化できていなかった暗黙知をあぶり出し、将来再利用できる「知恵」として資産化できるのではないか。\nそんな仮説にたどり着いた実験記である。\n\n\n はじめに — 判断軸や制約は、本当にコードを変えるのか？\n最近、AIとの協働について考える中で、私は「判断軸」と「制約」という言葉を...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "Skillか、Subagentか——スキル95個の環境で固まった使い分け基準",
+      "url": "https://zenn.dev/zenn_content/articles/claude-code-skill-vs-subagent",
+      "site": "Zenn(AI)",
+      "published": "2026-08-14T13:15:08Z",
+      "description": "結論から\n読み込ませたいならSkill、隔離したいならSubagent。 迷ったらこの一行で決めています。\n私の環境にはスキルが95個、エージェント定義が27個あります。数ヶ月かけて両方を作り続けた結果、「どちらで作るべきか」の判断は最終的に上の一行に収束しました。この記事では、その基準に至った実測データ（スキル95個の使用記録・Subagent側で踏んだ罠）と、判断フローを共有します。\n!\n20...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "Claude Codeの429は2種類ある——usage枠とthroughput制限を取り違えた代償",
+      "url": "https://zenn.dev/zenn_content/articles/claude-code-429-usage-vs-throughput",
+      "site": "Zenn(AI)",
+      "published": "2026-08-14T13:15:07Z",
+      "description": "結論から\nClaude Codeで見る「API Error (429)」には、性質がまったく違う2系統があります。 分単位で回復するthroughput制限（速度の上限）と、5時間窓・週次で管理されるusage枠（総量の上限）です。\n厄介なのは、エラー表示がこの2つを区別してくれないこと（GitHub Issue #25805で報告されている通り、どちらも「API Error」）。そして対処が真逆...",
       "category": "AI・技術",
       "rss_category": "",
       "image_url": ""
