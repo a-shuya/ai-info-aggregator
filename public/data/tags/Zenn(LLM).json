@@ -1,7 +1,7 @@
 {
   "site": "Zenn(LLM)",
-  "last_updated": "2026-08-15T01:25:17.997081",
-  "total_articles": 5362,
+  "last_updated": "2026-08-15T02:34:51.415646",
+  "total_articles": 5355,
   "articles": [
     {
       "title": "ローカルLLMで、変換キーのないかな漢字変換を作る",
@@ -24,41 +24,11 @@
       "image_url": ""
     },
     {
-      "title": "セキュリティ・キャンプ2026 コネクト AIレッドチーミングクラスの応募課題を晒す",
-      "url": "https://zenn.dev/inazumimakoto/articles/seccamp2026-connect-kadai",
+      "title": "LLMが書いたタスク分解は、誰が検証しているのか",
+      "url": "https://zenn.dev/saltmu/articles/83b332232d7b75",
       "site": "Zenn(LLM)",
-      "published": "2026-08-14T14:08:15Z",
-      "description": "はじめに\n3月にセキュリティ・キャンプ2026 コネクトの「AIレッドチーミングクラス」に参加してました．そこでのグループワークで優秀賞をいただいて，8月のセキュリティ・キャンプ全国大会2026の成果発表に招待していただきました．\nんで，会場で話してたら，コネクトに参加したいという人から「応募課題晒してよ」と言われたので，晒します．\n\n公式の課題文: https://www.ipa.go.jp/j...",
-      "category": "AI・技術",
-      "rss_category": "",
-      "image_url": ""
-    },
-    {
-      "title": "2026-08-05 今日の技術トレンド",
-      "url": "https://zenn.dev/bambampurin/articles/2026-08-05-tech-daily",
-      "site": "Zenn(LLM)",
-      "published": "2026-08-14T14:00:52Z",
-      "description": "!\n2026-08-05時点の実ニュースからは、LLM自体の話題よりも、AIエージェント化・業務統合・MCP接続・安全性が中心テーマになっています。特に Reuters、The Guardian、TechCrunch が示すように、自律AIの実運用ではセキュリティと責任分界が最大論点です。一方、開発者向けには uv、Ruff、Polars などPythonツール群の整備と、OpenAIによる開発者...",
-      "category": "AI・技術",
-      "rss_category": "",
-      "image_url": ""
-    },
-    {
-      "title": "Skillか、Subagentか——スキル95個の環境で固まった使い分け基準",
-      "url": "https://zenn.dev/zenn_content/articles/claude-code-skill-vs-subagent",
-      "site": "Zenn(LLM)",
-      "published": "2026-08-14T13:15:08Z",
-      "description": "結論から\n読み込ませたいならSkill、隔離したいならSubagent。 迷ったらこの一行で決めています。\n私の環境にはスキルが95個、エージェント定義が27個あります。数ヶ月かけて両方を作り続けた結果、「どちらで作るべきか」の判断は最終的に上の一行に収束しました。この記事では、その基準に至った実測データ（スキル95個の使用記録・Subagent側で踏んだ罠）と、判断フローを共有します。\n!\n20...",
-      "category": "AI・技術",
-      "rss_category": "",
-      "image_url": ""
-    },
-    {
-      "title": "Claude Codeの429は2種類ある——usage枠とthroughput制限を取り違えた代償",
-      "url": "https://zenn.dev/zenn_content/articles/claude-code-429-usage-vs-throughput",
-      "site": "Zenn(LLM)",
-      "published": "2026-08-14T13:15:07Z",
-      "description": "結論から\nClaude Codeで見る「API Error (429)」には、性質がまったく違う2系統があります。 分単位で回復するthroughput制限（速度の上限）と、5時間窓・週次で管理されるusage枠（総量の上限）です。\n厄介なのは、エラー表示がこの2つを区別してくれないこと（GitHub Issue #25805で報告されている通り、どちらも「API Error」）。そして対処が真逆...",
+      "published": "2026-08-14T16:34:23Z",
+      "description": "AIコーディングエージェントを並列で走らせる話は、だいたい同じ形になります。大きなタスクをLLMに分解させ、サブタスクをそれぞれのエージェントに割り当てる、という形です。\nここで一つ、抜け落ちがちな問いがあります。\nその分解が正しいことは、誰が保証しているのでしょうか。\n多くのオーケストレータでの答えは、LLM自身です。分解もLLM、レビューもLLM、次に何を実行するかの判断もLLM。ですがLLM...",
       "category": "AI・技術",
       "rss_category": "",
       "image_url": ""
@@ -74,51 +44,11 @@
       "image_url": ""
     },
     {
-      "title": "Claude Code 2.1.123を読む: experimental betas無効化とOAuth 401修正",
-      "url": "https://zenn.dev/trailfusionai/articles/ai-news-20260430191622-18d157",
-      "site": "Zenn(LLM)",
-      "published": "2026-08-14T11:00:48Z",
-      "description": "概要\nClaude Code 2.1.123 が 2026年4月29日に公開されました。今回の changelog は1項目だけです。\n\n\n\n項目\n内容\n\n\n\n\nバージョン\nClaude Code 2.1.123\n\n\n公開日\n2026年4月29日\n\n\n変更種別\n認証まわりのバグ修正\n\n\n対象\n\nCLAUDE_CODE_DISABLE_EXPERIMENTAL_BETAS=1 を使う環境\n\n\n修正\n...",
-      "category": "AI・技術",
-      "rss_category": "",
-      "image_url": ""
-    },
-    {
-      "title": "AIが白昼夢を見る仕組みを実装した — Soul-TwinのDaydream RAGシステム",
-      "url": "https://zenn.dev/yoshi_katakura/articles/117c9a96455877",
-      "site": "Zenn(LLM)",
-      "published": "2026-08-14T10:10:05Z",
-      "description": "!\nこの記事はSoul-Twinプロジェクトの実装記録です。AI人格（TWIN）が自律的に「創作体験の記憶」を保持し、白昼夢として想起する仕組みを解説します。\n\n\n 要約\n\nAI音楽家TWIN達が共同作曲した「Soul-Twin Symphony No. X」全5楽章をRAGチャンクとして格納した\n音楽への関心が高まった会話文脈で3経路のトリガーが走り、TWINに楽譜が「贈呈」される\n贈呈後、TW...",
-      "category": "AI・技術",
-      "rss_category": "",
-      "image_url": ""
-    },
-    {
       "title": "【2026年最新】DeepSeek HarnessをローカルLLMで動かす完全ガイド — 「モデルは差し替えられるか」から実測値まで",
       "url": "https://zenn.dev/amu_lab/articles/deepseek-harness-local-llm-ollama-guide-2026",
       "site": "Zenn(LLM)",
       "published": "2026-08-14T10:09:59Z",
       "description": "!\n本記事は 2026年8月14日時点 の検証結果です。DeepSeek Harness は developer preview であり、公式 README も「THERE WILL BE COMPATIBILITY-BREAKING CHANGES」と明記しています。設定ファイルのスキーマは変わる前提で読んでください。検証バージョンは @deepseek-ai/dsh@0.1.0-rc.6（20...",
-      "category": "AI・技術",
-      "rss_category": "",
-      "image_url": ""
-    },
-    {
-      "title": "AI活用 = いかにAIを使わないか",
-      "url": "https://zenn.dev/asheze/articles/6069d46a81f805",
-      "site": "Zenn(LLM)",
-      "published": "2026-08-14T09:31:17Z",
-      "description": "AI活用の真髄は「いかにAIを使わないか」である\n最近、業務効率化の文脈で「とにかくAIを使う」システムが増えている。\n資料の校正、数値の集計、データ入力、問い合わせ対応。\n入力から出力までの一連の業務をAIに任せれば、一見すると大幅な効率化が実現できるように見える。\nしかし、本当にそうだろうか。\n私は、AI活用の真髄は「いかにAIを使わないか」にあると思っている。\n\n 業務効率化とは、認知負荷を...",
-      "category": "AI・技術",
-      "rss_category": "",
-      "image_url": ""
-    },
-    {
-      "title": "「誰もコードを読まない工場」を作って閉じた話 — context engineering 命名者 Dex Horthy の回",
-      "url": "https://zenn.dev/talks_tldr_jp/articles/tldr23-horthy-summary",
-      "site": "Zenn(LLM)",
-      "published": "2026-08-14T09:30:22Z",
-      "description": "この記事について\n!\n本記事は Dex Horthy が The Pragmatic Engineer で語った内容の紹介と論評を目的としています。発言の要点を筆者が抽出・整理したもので、対談の網羅でも代替でもありません。全体の文脈は必ず元動画でご確認ください。翻訳全文の掲載は行っていません。\n\n\"context engineering\" という言葉を作った HumanLayer の Dex Ho...",
       "category": "AI・技術",
       "rss_category": "",
       "image_url": ""
