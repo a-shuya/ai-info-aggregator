@@ -1,8 +1,58 @@
 {
   "site": "Zenn(Python)",
-  "last_updated": "2026-08-15T10:02:53.584688",
-  "total_articles": 5758,
+  "last_updated": "2026-08-15T10:36:36.091471",
+  "total_articles": 5762,
   "articles": [
+    {
+      "title": "AIに「図にして」と頼むと必ずmermaidが返ってくる——配置を自分で決められる図の道具を作った",
+      "url": "https://zenn.dev/little/articles/figgen-layout-you-decide",
+      "site": "Zenn(Python)",
+      "published": "2026-08-15T10:22:55Z",
+      "description": "「構造は合っているが、資料には貼れない」\nClaude Code や Cursor に「この処理の流れを図にして」と頼むと、ほぼ確実に mermaid が返ってくる。\nそして出てきた図は、たいてい構造は合っているのに、資料には貼れない。\nなぜかというと、mermaid（や PlantUML、Graphviz）はどこに何を置くかをレイアウトエンジンが決めるからだ。\nこちらが書けるのは「AとBが繋がっ...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "GMOコインFX APIで閉場なのに建玉取得が通った話 — 参照系では開閉が分からない",
+      "url": "https://zenn.dev/ozapon/articles/gmo-fx-market-status-closed",
+      "site": "Zenn(Python)",
+      "published": "2026-08-15T10:07:58Z",
+      "description": "TL;DR\n\n閉場中(土曜)でも GMOコインFX の Private 参照系 GET は HTTP 200 + ボディ status: 0 を返します。建玉一覧も注文一覧も残高も、通常どおり応答しました\nそのため「参照系 GET が通る = 取引時間内」という代理判定は成立しません。閉場を検知できずに素通りします\n正しい判定は GET /public/v1/status の data.statu...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "外れ値を1点外すと相関係数は0.82。でも層別すると両群とも逆を向く",
+      "url": "https://zenn.dev/handa_lab/articles/968bf3ef46dfd0",
+      "site": "Zenn(Python)",
+      "published": "2026-08-15T08:14:49Z",
+      "description": "炉の温度と不良率のCSVが手元にあるとします。13行。散布図を描いて回帰直線を引くと、相関係数は0.4974でした。弱い。関係なさそうだ、で終わらせるところです。\nところが図をよく見ると、1点だけ大きく外れた点がありました。その1点を外して計算し直すと、相関係数は0.8225になります。今度は強い正の相関に見える。温度が高いほど不良が増えるのだから、温度を下げよう、という結論になりそうです。\nこの...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "「前回の記事、間違ってました」Gemini 3.6 Flash は us-central1 に居ませんでした",
+      "url": "https://zenn.dev/miki_mini/articles/8499b820fc47ca",
+      "site": "Zenn(Python)",
+      "published": "2026-08-15T08:00:05Z",
+      "description": "美容系勤務独学初心者マリー・アントワネット系エンジニア目指してます！\n今回は 東京にモデルが無い なら globalへ行けばいいじゃない 👸🍰 です。\n\n読了時間の目安：約 9〜12分\n\n!\n👸 3行まとめ\n\n前回「us-central1（アメリカ）へ移しましょう」と書きましたが、あれは間違い。実測したら3モデルとも 404 でした\n\ngemini-3.6-flash が居るのは global だ...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "本当に週3時間削減できるのか？Claude CodeでExcel集計・週次レポート自動化を検証してみた",
+      "url": "https://zenn.dev/makolab/articles/d16e46ea39edaa",
+      "site": "Zenn(Python)",
+      "published": "2026-08-15T07:06:03Z",
+      "description": "毎週のExcel集計、面倒じゃないですか？\n複数の拠点や部署から届くExcelファイルを1つにまとめて、合計・平均を計算して、グラフを付けて週次レポートにする——。\n多くの職場で当たり前になっているこの作業、地味に時間を取られていませんか。\n結論から言うと、元記事によれば、プログラミング未経験でもこの作業をClaude Codeに任せることで、\n週3時間以上、年間にすると約150時間相当の削減が狙...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
     {
       "title": "Discord Botで自宅のマイクラサーバーを起動・停止する（ワールドを壊さないRCON停止つき）",
       "url": "https://zenn.dev/shouki1484/articles/discord-minecraft-server-bot",
@@ -229,16 +279,6 @@
       "site": "Zenn(Python)",
       "published": "2026-08-14T14:41:35Z",
       "description": "前回は「要約統計量が同じでも、散布図の形は全く別物になりうる」という話だった。今回は近い場所を別角度から突く。要約統計量どころか、可視化の方法自体が1個のパラメータで書き換わるという話だ。\nヒストグラムを描くとき、ビン幅は自分で決める。KDE(カーネル密度推定)を描くとき、帯域幅(バンド幅)も自分で決める——か、ライブラリのデフォルトに任せる。この「粒度」のつまみひとつで、同じデータが「山1つ」に...",
-      "category": "開発",
-      "rss_category": "",
-      "image_url": ""
-    },
-    {
-      "title": "2026-08-05 今日の技術トレンド",
-      "url": "https://zenn.dev/bambampurin/articles/2026-08-05-tech-daily",
-      "site": "Zenn(Python)",
-      "published": "2026-08-14T14:00:52Z",
-      "description": "!\n2026-08-05時点の実ニュースからは、LLM自体の話題よりも、AIエージェント化・業務統合・MCP接続・安全性が中心テーマになっています。特に Reuters、The Guardian、TechCrunch が示すように、自律AIの実運用ではセキュリティと責任分界が最大論点です。一方、開発者向けには uv、Ruff、Polars などPythonツール群の整備と、OpenAIによる開発者...",
       "category": "開発",
       "rss_category": "",
       "image_url": ""

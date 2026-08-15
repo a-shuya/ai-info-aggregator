@@ -1,8 +1,58 @@
 {
   "site": "Zenn(生成 AI)",
-  "last_updated": "2026-08-15T10:02:53.584688",
-  "total_articles": 3354,
+  "last_updated": "2026-08-15T10:36:36.091471",
+  "total_articles": 3359,
   "articles": [
+    {
+      "title": "AI動画を15秒つないだら「何のために渡ったんじゃい」になった話",
+      "url": "https://zenn.dev/cosara/articles/minimax-h3-concat-15s",
+      "site": "Zenn(生成 AI)",
+      "published": "2026-08-15T10:07:29Z",
+      "description": "3行まとめ\n\nVRAM 8GBのノートPCで15秒の動画を出すと 800x448 が上限でした。でも尺を5秒に縮めると 1344x768 まで通ります（面積2.88倍）。所要時間はほぼ同じなのに\nならば 5秒を3本つないで15秒にすれば、解像度を落とさずに済むのではと考えて試しました。結果、1280x736 の15秒が作れました。一発生成の 2.63倍です\n\nそれでも、動画としては良くなりませんで...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "VRAM 8GBのノートPCで動画生成AIの15秒を出すまで——8回のブルースクリーンと、犯人はGPUではなかった話",
+      "url": "https://zenn.dev/cosara/articles/vram8gb-minimax-h3-15s",
+      "site": "Zenn(生成 AI)",
+      "published": "2026-08-15T10:00:22Z",
+      "description": "3行まとめ\n\nVRAM 8GBのノートPCで MiniMax-H3 の 800x448 / 15.083秒 が出ました（所要15分08秒）。「8GBでは5秒でもOOM、推奨3秒」という報告をいくつも読んでいたので、通ったときは驚きました\n生成速度にいちばん効いたのは量子化の作り込みではなく 給電 でした。ドックを替えるだけで 655.8秒 → 237.2秒（2.76倍）\n\nここに辿り着くまでに機体...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "ブラジルの首都をAIに聞くと、なぜ自信満々で間違えるのか",
+      "url": "https://zenn.dev/m2yagyu/articles/llm-hallucination-confidence",
+      "site": "Zenn(生成 AI)",
+      "published": "2026-08-15T09:44:29Z",
+      "description": "この記事を読むと、LLMが自分の答えに配る確率（確信度）が「正しさ」の物差しにはなっていないことを、自分の手で測って確認できます。ついでに、temperature を0にしても嘘が消えないのはなぜかが、統計力学の言葉で一本につながります。\nGPUは不要です。152Mパラメータのモデルと numpy をCPUで動かすだけで最後まで通ります。載せているコードは作図まで含んでいるので、上から順にコピペす...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "第4回　法務・運用――一般提供に向けた取り組みと残課題",
+      "url": "https://zenn.dev/kmnmzw/articles/lif-development-04",
+      "site": "Zenn(生成 AI)",
+      "published": "2026-08-15T07:00:05Z",
+      "description": "前回は、AIとの共同開発の進め方と、実装をどのように確認しているかを書きました。\n今回は、一般提供を考える中で生じた法務・運用上の確認と、現在残っている課題を扱います。\n利用規約やプライバシーポリシーについては、法令やガイドラインを参考に基本的な整理ができます。一方、Lifの具体的な仕様や処理については、それだけでは判断しきれない範囲があります。\nそのため、実際の仕様や処理を整理し、その法的な扱い...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "LLMに数理最適化をやらせて採点する",
+      "url": "https://zenn.dev/ctenopoma/articles/llm-ebus-optimization",
+      "site": "Zenn(生成 AI)",
+      "published": "2026-08-15T04:18:06Z",
+      "description": "この記事について\nLLMはスケジューリング問題をどこまで解けるのか。\n電動バスの充電計画問題を題材に、2通りの使い方を実測で採点します。\n\n\n直接解かせる: 問題文を渡して、スケジュールそのものをJSONで出させる\n\nコードを書かせる: 同じ問題文から、数理最適化のコードを書かせる\n\n先に結論を出しておきます。\n\n\n\n使い方\n結果\n\n\n\n\n直接解かせる(Opus、6試行)\n6試行中4回は違反ゼロ、...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
     {
       "title": "「念のため」がシステムを壊す。AI開発で過剰設計を減らした話",
       "url": "https://zenn.dev/moca/articles/a748ca178f5931",
@@ -14,11 +64,31 @@
       "image_url": ""
     },
     {
+      "title": "「実装前に3つ確認して」と足したら暴走は5回とも消えた。作られたファイルも5回とも0件だった",
+      "url": "https://zenn.dev/numarn/articles/ask-before-implement-prompt-handson",
+      "site": "Zenn(生成 AI)",
+      "published": "2026-08-15T04:06:19Z",
+      "description": "先に結論から書きます。AI への頼みごとの最後に「実装前に3つ確認してください。」と一言足すと、5回試して5回とも、AI は質問を3つ返しただけで手を止めました。暴走はたしかに消えました。ただし、同じ5回で出来上がったファイルも0件でした。\n同じ頼みごとを、その一言なしで5回投げたときは、5回ともスクリプトができていました。つまり私が足した一言は「余計なことをするな」ではなく「何もするな」として効...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
       "title": "生成AIが、主人公を毎シーン 別人で描いてくる。一人の男の物語なのに",
       "url": "https://zenn.dev/jun_uen0/articles/ai-image-consistency-declare-and-vision-gate",
       "site": "Zenn(生成 AI)",
       "published": "2026-08-15T02:07:27Z",
       "description": "歴史系の解説動画を、全自動で作っています。シーンごとに、その場面の絵をローカルの画像生成AIに1枚ずつ描かせる。ある古代ローマの武将、一人の男の生涯を追う動画を作っていました。\n出来上がったものを、頭から1シーンずつ見返します。そこで固まりました。\n主人公が、シーンごとに 別人なんです。\nあるシーンでは、宝冠をかぶった王様。次のシーンでは、房飾りの兜をかぶった若い兵士。その次は、白髭の老人。……同...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "自分の本に、次は同じ手で騙されると思うと書いた。5日後、オレは止まっていない案件を8日間止まっていると信じていた",
+      "url": "https://zenn.dev/shio_shoppaize/articles/kagemusha-rebuild-not-stock",
+      "site": "Zenn(生成 AI)",
+      "published": "2026-08-15T01:02:16Z",
+      "description": "案件の資料はそろっている。記録も残っている。作業も進んでいる。なのに、いま誰がボールを持っていて次に何が起きるのかを、口で説明できない。\nオレはその状態を直そうとして、自分で本に書いたとおりの間違いをした。\n自分の本の中に、一度こう書いた。\n\n濃い記憶のない案件で同じ報告が来ていたら、オレは採用していたと思う\n\nその5日後、そのとおりになった。オレは止まっていない案件を8日間止まっていると信じ、案...",
       "category": "AI・技術",
       "rss_category": "",
       "image_url": ""
@@ -114,31 +184,11 @@
       "image_url": ""
     },
     {
-      "title": "Gemini 3.7 Flashを出た翌日に実測 ―thinkingの罠と、前世代比15倍安の理由",
-      "url": "https://zenn.dev/ccie26302/articles/zenn-gcp-gemini-37-flash",
-      "site": "Zenn(生成 AI)",
-      "published": "2026-08-14T07:51:05Z",
-      "description": "はじめに\nAzure から Google Cloud を触るシリーズです。2026 年 8 月 13 日に Gemini 3.7 Flash が出たので、翌日に Vertex AI で叩いてみました。\n「コーディングとエージェント向けの workhorse」で、入力 $0.75 / 出力 $3.75 per 1M トークン。3.6 Flash のちょうど半額です（この価格は 2026 年末まで。2...",
-      "category": "AI・技術",
-      "rss_category": "",
-      "image_url": ""
-    },
-    {
       "title": "ComfyUIのWorkflow JSONだけでは再現できない——別環境で動かすために固定したい5項目",
       "url": "https://zenn.dev/kiritani_r/articles/39c7700d93aefd",
       "site": "Zenn(生成 AI)",
       "published": "2026-08-14T07:18:11Z",
       "description": "ComfyUIで作ったWorkflowを同僚に渡したところ、\n自分のPCでは動く\n↓\n相手のPCではNodeが赤くなる\n↓\n不足Nodeを入れる\n↓\n今度は起動時にImport Failed\nとなったことはないでしょうか。\nWorkflowをJSONで保存できるため、\n最初は「JSONを共有すれば同じ処理を再現できる」と考えがちです。\nしかし、Workflow JSONに保存されるのは、主に次の情...",
-      "category": "AI・技術",
-      "rss_category": "",
-      "image_url": ""
-    },
-    {
-      "title": "MiniMax H3をCloud Run GPUで動かす ―Mac・Colab・RTX 5090とコスト比較",
-      "url": "https://zenn.dev/ccie26302/articles/zenn-gcp-cloud-run-gpu-minimax-h3",
-      "site": "Zenn(生成 AI)",
-      "published": "2026-08-14T07:07:58Z",
-      "description": "はじめに\n動画生成モデル MiniMax H3 を、前回は MacBook Pro M4 Max（128GB）でローカル実行しました。速度に不満が残ったので、今回は Google Cloud の Cloud Run GPU に載せます。\nColab で動かしている人は見かけますが、Cloud Run に載せた話は見当たりません。Cloud Run なら scale-to-zero で待機コストがゼ...",
       "category": "AI・技術",
       "rss_category": "",
       "image_url": ""
