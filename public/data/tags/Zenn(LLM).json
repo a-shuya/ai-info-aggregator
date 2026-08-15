@@ -1,6 +1,6 @@
 {
   "site": "Zenn(LLM)",
-  "last_updated": "2026-08-15T05:45:42.304154",
+  "last_updated": "2026-08-15T06:13:24.076683",
   "total_articles": 5368,
   "articles": [
     {
@@ -74,26 +74,6 @@
       "image_url": ""
     },
     {
-      "title": "日本語インフォグラフィックを画像生成で崩さない、生成と描画を分ける2段階設計",
-      "url": "https://zenn.dev/every_ai_recipe/articles/ai-palm-reading-infographic",
-      "site": "Zenn(LLM)",
-      "published": "2026-08-14T21:10:44Z",
-      "description": "TL;DR\n\n画像内の日本語テキストの破綻は、Nano Banana Pro（Gemini 3 Pro Image、2025-11）およびNano Banana 2（Gemini 3.1 Flash Image、2026-02に標準化）の世代でほぼ解消した。文字入り画像を作るなら、まずモデル選択が前提条件になる\n単一プロンプトで「分析」と「画像化」を同時に要求すると、画像に載せる情報量をモデルが自...",
-      "category": "AI・技術",
-      "rss_category": "",
-      "image_url": ""
-    },
-    {
-      "title": "自動検索されるLLMメモリと、明示的呼び出しのメモリの設計差",
-      "url": "https://zenn.dev/every_ai_recipe/articles/ai-memory-work-mode-settings",
-      "site": "Zenn(LLM)",
-      "published": "2026-08-14T21:10:43Z",
-      "description": "TL;DR\n\nChatGPT・Geminiのメモリ機能はデフォルトで有効かつ「自動検索・自動注入」型で、無関係な依頼のコンテキストにも過去の個人的な会話が暗黙に混ざることを確認した\nClaudeのメモリは2026年3月に全プランへ開放されたが設計が逆で、ユーザーが明示的に参照を指示しない限りコンテキストへ注入されない「明示的呼び出し（explicit recall）」方式\nGeminiは「メモリー...",
-      "category": "AI・技術",
-      "rss_category": "",
-      "image_url": ""
-    },
-    {
       "title": "ローカルLLMで、変換キーのないかな漢字変換を作る",
       "url": "https://zenn.dev/mobazou/articles/roman-local-llm-ime",
       "site": "Zenn(LLM)",
@@ -119,6 +99,26 @@
       "site": "Zenn(LLM)",
       "published": "2026-08-14T15:00:00Z",
       "description": "TL;DR\nマルチターンのツール利用Agentを強化学習（RL）で訓練する際、trajectory全体に一つの報酬を与えるだけでは、ターンごとの異質な結果が混ざり合ってしまい、信用割当て（Credit Assignment）が極めて困難になる。一方で、On-Policy Self-Distillation（OPSD）はtokenレベルで密な監督信号を提供できるものの、教師モデルの性能上限に縛られる...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "Skillか、Subagentか——スキル95個の環境で固まった使い分け基準",
+      "url": "https://zenn.dev/zenn_content/articles/claude-code-skill-vs-subagent",
+      "site": "Zenn(LLM)",
+      "published": "2026-08-14T13:15:08Z",
+      "description": "結論から\n読み込ませたいならSkill、隔離したいならSubagent。 迷ったらこの一行で決めています。\n私の環境にはスキルが95個、エージェント定義が27個あります。数ヶ月かけて両方を作り続けた結果、「どちらで作るべきか」の判断は最終的に上の一行に収束しました。この記事では、その基準に至った実測データ（スキル95個の使用記録・Subagent側で踏んだ罠）と、判断フローを共有します。\n!\n20...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "Claude Codeの429は2種類ある——usage枠とthroughput制限を取り違えた代償",
+      "url": "https://zenn.dev/zenn_content/articles/claude-code-429-usage-vs-throughput",
+      "site": "Zenn(LLM)",
+      "published": "2026-08-14T13:15:07Z",
+      "description": "結論から\nClaude Codeで見る「API Error (429)」には、性質がまったく違う2系統があります。 分単位で回復するthroughput制限（速度の上限）と、5時間窓・週次で管理されるusage枠（総量の上限）です。\n厄介なのは、エラー表示がこの2つを区別してくれないこと（GitHub Issue #25805で報告されている通り、どちらも「API Error」）。そして対処が真逆...",
       "category": "AI・技術",
       "rss_category": "",
       "image_url": ""
