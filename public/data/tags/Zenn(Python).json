@@ -1,7 +1,7 @@
 {
   "site": "Zenn(Python)",
-  "last_updated": "2026-08-15T10:36:36.091471",
-  "total_articles": 5762,
+  "last_updated": "2026-08-15T10:57:15.553761",
+  "total_articles": 5761,
   "articles": [
     {
       "title": "AIに「図にして」と頼むと必ずmermaidが返ってくる——配置を自分で決められる図の道具を作った",
@@ -29,16 +29,6 @@
       "site": "Zenn(Python)",
       "published": "2026-08-15T08:14:49Z",
       "description": "炉の温度と不良率のCSVが手元にあるとします。13行。散布図を描いて回帰直線を引くと、相関係数は0.4974でした。弱い。関係なさそうだ、で終わらせるところです。\nところが図をよく見ると、1点だけ大きく外れた点がありました。その1点を外して計算し直すと、相関係数は0.8225になります。今度は強い正の相関に見える。温度が高いほど不良が増えるのだから、温度を下げよう、という結論になりそうです。\nこの...",
-      "category": "開発",
-      "rss_category": "",
-      "image_url": ""
-    },
-    {
-      "title": "「前回の記事、間違ってました」Gemini 3.6 Flash は us-central1 に居ませんでした",
-      "url": "https://zenn.dev/miki_mini/articles/8499b820fc47ca",
-      "site": "Zenn(Python)",
-      "published": "2026-08-15T08:00:05Z",
-      "description": "美容系勤務独学初心者マリー・アントワネット系エンジニア目指してます！\n今回は 東京にモデルが無い なら globalへ行けばいいじゃない 👸🍰 です。\n\n読了時間の目安：約 9〜12分\n\n!\n👸 3行まとめ\n\n前回「us-central1（アメリカ）へ移しましょう」と書きましたが、あれは間違い。実測したら3モデルとも 404 でした\n\ngemini-3.6-flash が居るのは global だ...",
       "category": "開発",
       "rss_category": "",
       "image_url": ""
@@ -184,26 +174,6 @@
       "image_url": ""
     },
     {
-      "title": "根拠付きドキュメントを書いたら、未検証の回帰ケースが2件見つかった",
-      "url": "https://zenn.dev/yusuke_shiki/articles/ee2753984e4ca3",
-      "site": "Zenn(Python)",
-      "published": "2026-08-14T23:14:35Z",
-      "description": "何が起きたか\n先に結論です。これはバグ報告ではありません。見つかったのは、すでに正しく動いていたコードに対する回帰テストの欠落2件でした。実装は一切変えていません。追加したのは、テストだけです。\nagent-cost という小さな OSS CLI を公開しています。Claude Code / Codex CLI のローカル利用ログを読み込んで、トークンコストを見積もるツールです。このツールのドキュ...",
-      "category": "開発",
-      "rss_category": "",
-      "image_url": ""
-    },
-    {
-      "title": "AIコードレビューをCIに組み込む — 観点設計から自動承認までの実践",
-      "url": "https://zenn.dev/hampen2929/articles/20260814-ci-ai-pr-review",
-      "site": "Zenn(Python)",
-      "published": "2026-08-14T23:00:05Z",
-      "description": "PRレビューをAIに「一次受け」させ、指摘から承認までをCIで自動化する構成を紹介します。Claude Code入門を終えて、チームのワークフローに組み込む段階の人向けです。汎用の「AIレビューツールを入れてみた」ではなく、レビュー観点を自分たちで設計し、承認条件と例外処理まで含めて運用する話をします。例はPython、CIはGitHub Actionsですが、考え方は言語・ツールを問いません。\n...",
-      "category": "開発",
-      "rss_category": "",
-      "image_url": ""
-    },
-    {
       "title": "LangGraphで作るリサーチ&レポート作成マルチエージェント",
       "url": "https://zenn.dev/hkame/books/langgraph-multiagent-tutorial",
       "site": "Zenn(Python)",
@@ -284,6 +254,16 @@
       "image_url": ""
     },
     {
+      "title": "2026-08-05 今日の技術トレンド",
+      "url": "https://zenn.dev/bambampurin/articles/2026-08-05-tech-daily",
+      "site": "Zenn(Python)",
+      "published": "2026-08-14T14:00:52Z",
+      "description": "!\n2026-08-05時点の実ニュースからは、LLM自体の話題よりも、AIエージェント化・業務統合・MCP接続・安全性が中心テーマになっています。特に Reuters、The Guardian、TechCrunch が示すように、自律AIの実運用ではセキュリティと責任分界が最大論点です。一方、開発者向けには uv、Ruff、Polars などPythonツール群の整備と、OpenAIによる開発者...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
       "title": "freee APIで401が出続ける。原因は /api/1/companies の先頭を使っていたことだった",
       "url": "https://zenn.dev/hachihou_system/articles/freee-api-401-companies",
       "site": "Zenn(Python)",
@@ -349,6 +329,16 @@
       "site": "Zenn(Python)",
       "published": "2026-08-14T09:21:59Z",
       "description": "はじめに\n前回は、これまでの吊り荷Yaw制御を発展させ、\n\n目標Yaw角を固定値ではなく可変にする\n目標角へ到達するだけでなく、できるだけ低いスラスター出力で制御する\n\nという2つの目標について紹介しました。今回は、この方針を強化学習へ組み込むために、制御環境をどのように変更したかを紹介します。\n今回の変更で特に重視したのは、\n\n何を「制御に成功した」と考えるか\n\nです。\n目標Yaw角へ到達できて...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "自由回答型の性格診断をLLMで作る｜選択式では拾えない回答をどう分類するか",
+      "url": "https://zenn.dev/asayi_megumi/articles/f0789eb16c089e",
+      "site": "Zenn(Python)",
+      "published": "2026-08-14T08:31:01Z",
+      "description": "!\n本記事は技術的な実装の話です。心理学的な診断の妥当性を主張するものではありません。ここで扱う「分類」は、自由記述テキストを事前定義したラベルに割り当てる作業を指します。人格の判定や心理学的診断としての効力は検証していません。\n\n\n 選択式の限界\n性格診断の実装で最初に選ぶのは、たいてい4択です。\nQ. 初対面の人が多い場に行くと？\n  A. 積極的に話しかける\n  B. 誰かが話しかけてくれる...",
       "category": "開発",
       "rss_category": "",
       "image_url": ""
