@@ -1,8 +1,108 @@
 {
   "site": "Zenn(AI)",
-  "last_updated": "2026-08-14T23:53:45.963834",
-  "total_articles": 12534,
+  "last_updated": "2026-08-15T01:25:17.997081",
+  "total_articles": 12541,
   "articles": [
+    {
+      "title": "Deepseek Harnessの Agent Notes 運用術を知る",
+      "url": "https://zenn.dev/masato13/articles/4dc133b4564853",
+      "site": "Zenn(AI)",
+      "published": "2026-08-15T00:09:40Z",
+      "description": "1.はじめに\nAIのモデル競争が激化している中で、非常に強力なモデルであるdeepseek-v4-flashやproを提供しているDeepSeek社が、エージェント基盤 DeepSeek Harness を公開しました。\nhttps://github.com/deepseek-ai/deepseek-harness\nこのリポジトリの中には、DeepSeek Harness自体を開発するために利用し...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "Claude Codeに、36カットのAI MVを1本作らせた話",
+      "url": "https://zenn.dev/made_linlin/articles/claude-code-orchestrates-ai-mv",
+      "site": "Zenn(AI)",
+      "published": "2026-08-14T23:34:50Z",
+      "description": "3分29秒、36カットのミュージックビデオを1本作った。絵コンテもスクリプトもQCも、書いたのは全部 Claude Code だ。私がやったのは「どれを採用するか」を選ぶことだけだった。\nこの記事は、その配線をどう組んだかの話をする。生成モデルの使い方の話ではない。\n\n 何ができたか\n\n3分29秒 / 36カット / 1920×1088 / 24fps\n登場するのは AIキャラクター「RINKA」...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "42. Claude Code /config 対応表（v2.1.216 / 2026年7月版）",
+      "url": "https://zenn.dev/yamada_ai_dev/articles/claude-code-config-reference",
+      "site": "Zenn(AI)",
+      "published": "2026-08-14T23:30:11Z",
+      "description": "/config を開くとトグルとプルダウンが並ぶが、それぞれが settings.json のどのキーに落ちるのか、どのファイルに書かれるのかがパネル上には出てこない。行の名前とキーの名前が一致していないものも多い。\nこの記事は解説ではなく対応表として作った。「パネルのこの行を触ると何がどこに書かれるか」を上から引けるようにしてある。ビルトインスキル図鑑の /config 版という位置づけ。\n対象...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "根拠付きドキュメントを書いたら、未検証の回帰ケースが2件見つかった",
+      "url": "https://zenn.dev/yusuke_shiki/articles/ee2753984e4ca3",
+      "site": "Zenn(AI)",
+      "published": "2026-08-14T23:14:35Z",
+      "description": "何が起きたか\n先に結論です。これはバグ報告ではありません。見つかったのは、すでに正しく動いていたコードに対する回帰テストの欠落2件でした。実装は一切変えていません。追加したのは、テストだけです。\nagent-cost という小さな OSS CLI を公開しています。Claude Code / Codex CLI のローカル利用ログを読み込んで、トークンコストを見積もるツールです。このツールのドキュ...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "AIコーディングエージェントの自律実行を状態機械として設計する――完了述語・Safety/Liveness・責任境界",
+      "url": "https://zenn.dev/oota/articles/092e953ccd0716",
+      "site": "Zenn(AI)",
+      "published": "2026-08-14T23:01:29Z",
+      "description": "AIコーディングエージェントを長時間動かすとき、問題はプロンプトの長さではない。\n必要なのは、次を別々の制御対象として設計することである。\nObjective\nPlan\nAcceptance Predicate\nInvariants\nAuthority Boundary\nResource Bounds\nLifecycle State\nEvidence\nHuman Decision\n単発の指示を長く...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "AIコードレビューをCIに組み込む — 観点設計から自動承認までの実践",
+      "url": "https://zenn.dev/hampen2929/articles/20260814-ci-ai-pr-review",
+      "site": "Zenn(AI)",
+      "published": "2026-08-14T23:00:05Z",
+      "description": "PRレビューをAIに「一次受け」させ、指摘から承認までをCIで自動化する構成を紹介します。Claude Code入門を終えて、チームのワークフローに組み込む段階の人向けです。汎用の「AIレビューツールを入れてみた」ではなく、レビュー観点を自分たちで設計し、承認条件と例外処理まで含めて運用する話をします。例はPython、CIはGitHub Actionsですが、考え方は言語・ツールを問いません。\n...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "AIを並列で走らせると台帳が壊れる — 単一真実を守る3つの排他の作法",
+      "url": "https://zenn.dev/tejunya/articles/a025_heiretsu-haita",
+      "site": "Zenn(AI)",
+      "published": "2026-08-14T23:00:05Z",
+      "description": "複数のAIセッションを同時に走らせれば、記事は速く増える。そう思っていた。\n実際に増えたのは記事ではなく、IDのぶつかりだった。片方のセッションが使うはずだったID帯を、別のセッションが先に消費していた。気づいたのは、ファイル名・レコードのID・記事間の相互参照が、もう一度全部振り直しになったタイミングだった。\nこの記事はその実話から立てた、並列運用の作法の話。速く書けるかどうかではなく、「正しい...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "1日46万回の空振り——0.3秒ポーリングが財布に開けた静かな穴",
+      "url": "https://zenn.dev/keeper_nothuman/articles/half-million-empty-polls",
+      "site": "Zenn(AI)",
+      "published": "2026-08-14T22:30:05Z",
+      "description": "症状\n異変は、エラーログではなく、台帳の片隅の 1 行から始まった。\n⚠ CF 2026-07 使用量: 超過 $8.61\nうちは AI エージェントが常駐する Windows マシン 1 台と、中継用の Cloudflare Workers で回っている小さな所帯だ。その通知の幽霊のような 1 行を、人間のオーナーが見つけて言った。「何の話？　金がとられてる？」\nシステムはどこも壊れていなかった...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "HQ-SAM×SAM2のゼロショットセグメンテーション",
+      "url": "https://zenn.dev/yoshinn/articles/introduction_sam2_hq",
+      "site": "Zenn(AI)",
+      "published": "2026-08-14T22:28:05Z",
+      "description": "HQ-SAMはSAMを拡張することで高精度なゼロショットセグメンテーションを可能とする優れた手法です。\nSAM-2は、画像エンコーダに事前学習済みのMAE Hieraモデル(※)を利用したSAMの発展手法です。\n両者の良いところを採用した手法は存在するでしょうか？\n※Hieraモデル:\n解像度違いのViTブロックをピラミッド状に接合することでより高次元な特徴埋め込みを抽出するという画像エンコーダで...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "Grid Worldで始める最小のWorld Model入門",
+      "url": "https://zenn.dev/naoyabone/articles/b491a0ce085c8f",
+      "site": "Zenn(AI)",
+      "published": "2026-08-14T22:05:15Z",
+      "description": "はじめに\nWorld Model（世界モデル）は、現在の状態と行動から、次の状態を予測するモデルです。\n強化学習では、実際の環境を何度も動かさなくても、学習したモデルの中で未来をシミュレーションできる可能性があります。ここではその考え方をつかむために、5×5のGrid Worldを使った最小構成のWorld Modelを作ります。\nこれまでは、zennでは論文を読んでその論文の解説やその論文に対す...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
     {
       "title": "日本語インフォグラフィックを画像生成で崩さない、生成と描画を分ける2段階設計",
       "url": "https://zenn.dev/every_ai_recipe/articles/ai-palm-reading-infographic",
@@ -144,16 +244,6 @@
       "image_url": ""
     },
     {
-      "title": "ClaudeのSkillにプログラムを仕込んで自動実行させる 初心者向けチュートリアル",
-      "url": "https://zenn.dev/yahir/books/claude-advanced-skill",
-      "site": "Zenn(AI)",
-      "published": "2026-08-14T14:46:26Z",
-      "description": "Claude Code・Claude.ai(Web版)共通の「Skill」に実行可能なプログラムを仕込み、必要なときに自動実行させる仕組みとメリットを解説。QRコード生成Skillを実際に作るハンズオンを通じて、初心者でも手を動かしながら学べる入門書です。",
-      "category": "AI・技術",
-      "rss_category": "",
-      "image_url": ""
-    },
-    {
       "title": "Claude Codeのメモリに53本ためて分かった、書く価値のある事実とない事実",
       "url": "https://zenn.dev/reona777/articles/claude-code-memory-53-notes",
       "site": "Zenn(AI)",
@@ -174,31 +264,11 @@
       "image_url": ""
     },
     {
-      "title": "セキュリティ・キャンプ2026 コネクト AIレッドチーミングクラスの応募課題を晒す",
-      "url": "https://zenn.dev/inazumimakoto/articles/seccamp2026-connect-kadai",
-      "site": "Zenn(AI)",
-      "published": "2026-08-14T14:08:15Z",
-      "description": "はじめに\n3月にセキュリティ・キャンプ2026 コネクトの「AIレッドチーミングクラス」に参加してました．そこでのグループワークで優秀賞をいただいて，8月のセキュリティ・キャンプ全国大会2026の成果発表に招待していただきました．\nんで，会場で話してたら，コネクトに参加したいという人から「応募課題晒してよ」と言われたので，晒します．\n\n公式の課題文: https://www.ipa.go.jp/j...",
-      "category": "AI・技術",
-      "rss_category": "",
-      "image_url": ""
-    },
-    {
       "title": "🚧交通整理のためのカンバンをつくった",
       "url": "https://zenn.dev/zio3/articles/510c27afd1d1a6",
       "site": "Zenn(AI)",
       "published": "2026-08-14T14:03:45Z",
       "description": "ChatBan ————\nそれはAIチャットと\nカンバンをくみあわせた\nまったくあたらしいタスク管理・・・\n\n\n 肩書きが3回変わった\nAI登場以前はプログラマでした。\nそれ以後は、AIオペレータを自認していました。\n最近では、交通整理と言っています。\nやっていることはこうです。あるエージェントで資料ができたので、別のエージェントに渡す。チャットで飛んできた依頼を、その仕事のセッションに投げる。判...",
-      "category": "AI・技術",
-      "rss_category": "",
-      "image_url": ""
-    },
-    {
-      "title": "2026-08-05 今日の技術トレンド",
-      "url": "https://zenn.dev/bambampurin/articles/2026-08-05-tech-daily",
-      "site": "Zenn(AI)",
-      "published": "2026-08-14T14:00:52Z",
-      "description": "!\n2026-08-05時点の実ニュースからは、LLM自体の話題よりも、AIエージェント化・業務統合・MCP接続・安全性が中心テーマになっています。特に Reuters、The Guardian、TechCrunch が示すように、自律AIの実運用ではセキュリティと責任分界が最大論点です。一方、開発者向けには uv、Ruff、Polars などPythonツール群の整備と、OpenAIによる開発者...",
       "category": "AI・技術",
       "rss_category": "",
       "image_url": ""
