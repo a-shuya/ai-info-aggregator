@@ -1,7 +1,7 @@
 {
   "site": "Zenn(LLM)",
-  "last_updated": "2026-08-16T17:05:29.567382",
-  "total_articles": 5410,
+  "last_updated": "2026-08-16T17:32:07.362494",
+  "total_articles": 5407,
   "articles": [
     {
       "title": "自分だけのエージェント秘書を作る ③ 知識をつなぐエージェント",
@@ -74,11 +74,21 @@
       "image_url": ""
     },
     {
-      "title": "140サービスの料金ページを15日間監視して、発効前の変更予告を5件拾った",
-      "url": "https://zenn.dev/reskilling/articles/3104e660205dba",
+      "title": "待ち時間を予測してLLM推論を振り分ける、llm-dの予測レイテンシ・ルーティング",
+      "url": "https://zenn.dev/okssusucha/articles/20260709-llm-d-predicted-latency-scheduling",
       "site": "Zenn(LLM)",
-      "published": "2026-08-16T11:48:14Z",
-      "description": "料金体系変更1件（実質値上げ）、値上げ2件、モデル非推奨化予定1件、サポート変更1件。看板にしようとした数字は4回捨てました。\n2026年8月から、LLM API と SaaS 合わせて140サービスの料金ページを、毎朝7時に取得しています。ページ本文を LLM で構造化し、前日との差分を残す仕組みです。GitHub Actions 上で動かしており、開発中の再抽出を含めた現在のペースでは月12ド...",
+      "published": "2026-08-16T12:05:21Z",
+      "description": "LLM を複数台のGPUサーバーで捌くとき、リクエストをどのサーバーへ送るかは意外と厄介だ。KVキャッシュの再利用を狙って同じ接頭辞のリクエストを1台に寄せれば、そのサーバーだけ混んで待ち時間が跳ねる。逆に負荷を平らに散らせば、せっかくのキャッシュが効かず prefill をやり直す。プロンプト長も出力長も数時間で桁が変わる本番トラフィックでは、どちらに寄せた固定の重み付けも遅かれ早かれ破綻する。...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "設計も実装もレビューもAIがやる個人開発で、精度をどう出しているか",
+      "url": "https://zenn.dev/r2_san/articles/2daa394288fcef",
+      "site": "Zenn(LLM)",
+      "published": "2026-08-16T11:50:36Z",
+      "description": "私は個人で AI coding agent の runtime を作っています。\nこの製品は、設計も、実装も、実装のレビューも、AI が行っています。\n私がやっているのは、AI に渡す最初の指示の精度を上げることと、最終的な成果物が目的に達しているかを確認することです。その間の設計・実装・レビューは、それぞれ別の AI が担います。この記事では、作業指示書を書く AI を設計 AI、コードを書く ...",
       "category": "AI・技術",
       "rss_category": "",
       "image_url": ""
@@ -89,16 +99,6 @@
       "site": "Zenn(LLM)",
       "published": "2026-08-16T11:29:05Z",
       "description": "前回は引っ越しツール dsh-movein を紹介しました。今回はツールの裏にある調査そのものを公開します。Claude Code の各資産が DeepSeek Harness で実際どうなるか、全部 0.1.0-rc.6 のソースで逐項確認した結果と、意外と誰も計算していない「持ち込んだスキルがリクエスト毎に何 token 食うか」の実測です。\n\n 互換性対照表\n\n\n\nClaude Code 資...",
-      "category": "AI・技術",
-      "rss_category": "",
-      "image_url": ""
-    },
-    {
-      "title": "LLM出力を承認してから実行するフローの状態遷移・期限切れ・Revertを3場面で比較する",
-      "url": "https://zenn.dev/nerisakana/articles/11017ca5cf7511",
-      "site": "Zenn(LLM)",
-      "published": "2026-08-16T11:16:47Z",
-      "description": "なぜ全自動にしないのか\nLLMに業務処理の下書きを作らせてそれをそのままシステムに反映する攻勢を組むとたいてい最初のうちは問題がおきにくいです。しかしLLMの構造的にはそれっぽい解をだすだけなので解が誤っている場合もよく見られる（しかも自信満々に回答するのでミスが誘発されやすい）。人間ならこれはちょっと危ない・自信がないというような態度で伝わる不確かさもLLMは一定のトーンで断定的に返す。この非対...",
       "category": "AI・技術",
       "rss_category": "",
       "image_url": ""
@@ -119,16 +119,6 @@
       "site": "Zenn(LLM)",
       "published": "2026-08-16T09:10:15Z",
       "description": "はじめに\n「Google Colabで最新LLMを試す」シリーズの第9回です。\n前回はGoogleの Gemma 4 E4B-it をGoogle Colab上で動かし、テキストだけでなく画像・音声・動画まで扱うマルチモーダルLLMを試しました。\n今回は、そこからさらに一歩進んで、\n\n画面を見て、次に何をすべきかを考えるAI\n\nを試します。\n今回取り上げるのは、Microsoftの Fara1.5...",
-      "category": "AI・技術",
-      "rss_category": "",
-      "image_url": ""
-    },
-    {
-      "title": "AIエージェントにコードを書かせて、人が品質を守る——個人開発3ヶ月の品質ゲート設計",
-      "url": "https://zenn.dev/tk_notes/articles/ai-agent-quality-gate",
-      "site": "Zenn(LLM)",
-      "published": "2026-08-16T08:10:53Z",
-      "description": "AIエージェントはコードを速く書きます。もっともらしい間違いも、同じ速度で書きます。\n2026年4月から6月にかけて、Claude CodeとCodexを使い、3つの個人開発を進めました。AIには調査、実装、テスト追加、レビューを任せています。しかし、生成されたコードを採用する責任までAIへ渡したわけではありません。\nこの3ヶ月で作ったのは、AIを信用する仕組みではなく、AIの成果物を信用しなくて...",
       "category": "AI・技術",
       "rss_category": "",
       "image_url": ""
@@ -159,26 +149,6 @@
       "site": "Zenn(LLM)",
       "published": "2026-08-16T06:12:44Z",
       "description": "GD-Attention・意味生成OS・責任OSで考える、自社固有の意思決定アーキテクチャ\n2026年8月13日、GhostDrift数理研究所は、「GD-Attention」と「意味生成OS」に関する2件のPCT国際出願番号が付与されたことを発表し、両技術の限定された数理核をLean 4で公開した。\nGD-Attentionの国際出願番号はPCT/JP2026/023749、意味生成OSはPCT...",
-      "category": "AI・技術",
-      "rss_category": "",
-      "image_url": ""
-    },
-    {
-      "title": "指示プロンプト開発の基礎",
-      "url": "https://zenn.dev/oryo_data/articles/c01f2d4b84f35b",
-      "site": "Zenn(LLM)",
-      "published": "2026-08-16T04:16:17Z",
-      "description": "はじめに\n蒲生弘郷さんの『LLMの原理、RAG・エージェント開発から読み解く コンテキストエンジニアリング』（技術評論社）の読書アウトプット、今回は3章「指示プロンプト開発の基礎」です。\nhttps://link.amazon/B05JLhPYT\n前回の2章まとめはこちら。\nhttps://zenn.dev/oryo_data/articles/9c9cf08c851b59\n世に無数にあるプロンプ...",
-      "category": "AI・技術",
-      "rss_category": "",
-      "image_url": ""
-    },
-    {
-      "title": "APIを用いたコンテキストエンジニアリング",
-      "url": "https://zenn.dev/oryo_data/articles/9c9cf08c851b59",
-      "site": "Zenn(LLM)",
-      "published": "2026-08-16T03:48:32Z",
-      "description": "はじめに\n蒲生弘郷さんの『LLMの原理、RAG・エージェント開発から読み解く コンテキストエンジニアリング』（技術評論社）を読み進めています。\nhttps://link.amazon/B05JLhPYT\n今回は2章「APIサービス利用におけるコンテキストの扱いと基礎機能」の読書アウトプットです。\n書籍の内容を自分の理解で再構成したメモなので、正確な解説はぜひ本書を手に取ってください。\n\n APIサ...",
       "category": "AI・技術",
       "rss_category": "",
       "image_url": ""
