@@ -1,8 +1,78 @@
 {
   "site": "Zenn(Python)",
-  "last_updated": "2026-08-16T10:51:02.477711",
-  "total_articles": 5781,
+  "last_updated": "2026-08-16T11:23:18.069262",
+  "total_articles": 5788,
   "articles": [
+    {
+      "title": "毎月のCSV集計を自動化する、最小のpandas入門",
+      "url": "https://zenn.dev/kuroikotech/articles/pandas-csv-aggregation-minimal",
+      "site": "Zenn(Python)",
+      "published": "2026-08-16T11:08:15Z",
+      "description": "前回の記事(複数CSVを1つにまとめて重複を消すPythonスクリプト)で、バラバラのCSVを1本のmerged.csvにまとめた。今回はそれを「担当者別の合計」「月別の合計」のように集計して、Excelでピボットテーブルを組んでいた作業を置き換える。\npandasには集計用の機能が大量にあるが、全部覚える必要はない。ここではgroupbyとpivot_tableの最小構成だけを扱う。\n\n 元デー...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "A*経路探索をPythonで実装する｜ロボットの「最短ルート」を見つける",
+      "url": "https://zenn.dev/maru1228/articles/physical-ai-astar-pathfinding-python",
+      "site": "Zenn(Python)",
+      "published": "2026-08-16T11:00:05Z",
+      "description": "!\nこの記事は自サイト A*経路探索をPythonで実装する｜ロボットの「最短ルート」を見つける の再掲（クロス投稿）です。図をインタラクティブに動かせる版は元記事でどうぞ。\n\n自律ロボットが「今いる場所から目的地まで、障害物を避けてどう進むか」を決めるのが経路計画です。その定番アルゴリズムが A（エースター）*。この記事ではグリッド地図の上で、A*をPythonでゼロから実装します。最短経路を賢...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "「このライブラリ使えない」の原因が、requirements.txt の書き忘れだった話",
+      "url": "https://zenn.dev/shinsei99/articles/photo-inpainter",
+      "site": "Zenn(Python)",
+      "published": "2026-08-16T10:56:45Z",
+      "description": "写真から電線を消すツールを作っていて、「消去エンジンの品質が低いから使えない」と判断して\n半年止めていたことがあります。\n再開して調べたら、そのエンジンは一度も動いていませんでした。\n同じ踏み方をする人がいそうなので、症状と原因と直し方を書きます。\n\n 症状\n物件写真から電線を消すと、跡が茶色く滲む。輪郭がぼやけ、実用にならない。\nエラーは出ません。処理は最後まで走り、それらしい画像が返ってきます...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "売買戦略を7つ実装して比べた ― そして順位が全部入れ替わった",
+      "url": "https://zenn.dev/denny/articles/seven-entry-strategies",
+      "site": "Zenn(Python)",
+      "published": "2026-08-16T10:47:55Z",
+      "description": "前提\nプログラムが書けない会社員が、楽天証券のマーケットスピードII RSSとClaudeを使って自動売買の仕組みを作っている。一円も動かしていない。 実データを読んで売買判断だけをシミュレートしている段階である。\n数字はすべてシミュレーション上のもので、資金2,000万円・1銘柄300万円・同時6枠という設定値で計算している。実際に動かせる金額ではない。手数料はゼロ、スプレッドは仮定値。つまり実...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "「デモは動いた」から本番までの距離:最適化PoCが越える4つの谷",
+      "url": "https://zenn.dev/ctenopoma/articles/opt-prod-1-1-map",
+      "site": "Zenn(Python)",
+      "published": "2026-08-16T10:45:29Z",
+      "description": "この記事について\n「モデルは正しい。あとはデータを差し替えて本番につなぐだけ。」\nデモが成功した日、私たちはたいていそう考えています。\nそして数か月後、モデルは正しいまま、案件だけが死にます。殺すのは数学ではありません。\n月曜の朝に返ってくる「解なし」、そして「なぜ私のシフトはこうなんですか?」という問い合わせ。全部、教科書の外側で起きます。\nこの記事は連載「デモで動いた最適化が本番で止まる」(全...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "ルックアヘッドバイアスで「儲かる戦略」が生まれる仕組み — 未来が1本見えるだけで何が起きるか",
+      "url": "https://zenn.dev/kensho_lab_kaz/articles/lookahead-bias-backtest-python",
+      "site": "Zenn(Python)",
+      "published": "2026-08-16T08:23:56Z",
+      "description": "バックテストでは年利50%だった戦略が、実運用に載せた瞬間に沈む。システムトレードで最も\nよくある死因のひとつがルックアヘッドバイアス（look-ahead bias）、つまり「その時点では\nまだ知り得ない未来の情報が、判断に混ざっている」状態です。\n厄介なのは、これがわざとやらなくても混入することです。この記事では、\n\nどういうコードがルックアヘッドを起こすのか（ありがちな3パターン）\n未来がた...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "黙ってVSCodeを入れろ",
+      "url": "https://zenn.dev/ctenopoma/articles/python_dev_1",
+      "site": "Zenn(Python)",
+      "published": "2026-08-16T07:08:09Z",
+      "description": "本記事は以下の連載の第1章です。\n\n\n 導入:１歩目はVisual Studio Codeをインストールすること\nメモ帳、Spyder、PyCharm、Atom（もうない？）\nいろいろあると思いますが、とりあえずVSCodeを使いましょう。\n色々意見はあると思いますが、宗教上の戒律がない限り、VSCodeを使いましょう。\nかくいう私はZedを使う機会も増えてきましたが、まずはVSCodeの方がよい...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
     {
       "title": "HPACKの可変長整数デコードのDoS脆弱性(GHSA-8v8h-hg4w-mvq2) 解説",
       "url": "https://zenn.dev/nishino_hiroki/articles/eef9109afa8eec",
@@ -59,6 +129,16 @@
       "site": "Zenn(Python)",
       "published": "2026-08-16T01:40:51Z",
       "description": "AttributeError: 'NoneType' object has no attribute 'title' ——このメッセージが出たとき、犯人は title ではありません。**「title を呼ぼうとした相手が、いつの間にか None になっていた」**のが本体です。だから直すべきは呼び出し行ではなく、その None が生まれた場所です。\nこの記事では、AttributeError（'...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "【アルゴリズムトレード開発記 #3】キャメルケース1つで半日が溶けた",
+      "url": "https://zenn.dev/keennn/articles/algo-trading-diary-03",
+      "site": "Zenn(Python)",
+      "published": "2026-08-16T01:18:16Z",
+      "description": "導入\n前回のあらすじ: Pythonすら入っていないところからのスタートでしたが、環境を整え、前回紹介したコマンド一式(asset deposit、asset buyなど)とテストを実装し終えました。今回は、それを実際に動かして確認した工程です。\n\n 今回やったこと\n自動テスト(pytest)27件がまず全てパス。続けて、実際にCLIコマンドを1つずつ手で叩いて確認していきました。入金→株を買う→...",
       "category": "開発",
       "rss_category": "",
       "image_url": ""
@@ -189,16 +269,6 @@
       "site": "Zenn(Python)",
       "published": "2026-08-15T08:14:49Z",
       "description": "炉の温度と不良率のCSVが手元にあるとします。13行。散布図を描いて回帰直線を引くと、相関係数は0.4974でした。弱い。関係なさそうだ、で終わらせるところです。\nところが図をよく見ると、1点だけ大きく外れた点がありました。その1点を外して計算し直すと、相関係数は0.8225になります。今度は強い正の相関に見える。温度が高いほど不良が増えるのだから、温度を下げよう、という結論になりそうです。\nこの...",
-      "category": "開発",
-      "rss_category": "",
-      "image_url": ""
-    },
-    {
-      "title": "「前回の記事、間違ってました」Gemini 3.6 Flash は us-central1 に居ませんでした",
-      "url": "https://zenn.dev/miki_mini/articles/8499b820fc47ca",
-      "site": "Zenn(Python)",
-      "published": "2026-08-15T08:00:05Z",
-      "description": "美容系勤務独学初心者マリー・アントワネット系エンジニア目指してます！\n今回は 東京にモデルが無い なら globalへ行けばいいじゃない 👸🍰 です。\n\n読了時間の目安：約 9〜12分\n\n!\n👸 3行まとめ\n\n前回「us-central1（アメリカ）へ移しましょう」と書きましたが、あれは間違い。実測したら3モデルとも 404 でした\n\ngemini-3.6-flash が居るのは global だ...",
       "category": "開発",
       "rss_category": "",
       "image_url": ""
