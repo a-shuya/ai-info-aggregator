@@ -1,8 +1,78 @@
 {
   "site": "Zenn(Python)",
-  "last_updated": "2026-08-16T14:32:12.765707",
-  "total_articles": 5788,
+  "last_updated": "2026-08-16T14:57:36.742508",
+  "total_articles": 5793,
   "articles": [
+    {
+      "title": "hookが壊れても気づける仕組みの作り方（Claude Code実例）",
+      "url": "https://zenn.dev/nomurasan/articles/claude-code-hook-failure-detection",
+      "site": "Zenn(Python)",
+      "published": "2026-08-16T12:59:04Z",
+      "description": "結論\nClaude Code の hook（拡張機能）が、ある日4時間ほど1本も動かなくなった。原因はラッパースクリプトの実行権限が抜けていたという、それだけの話だった。だがこの事故が突きつけたのはもっと一般的な問題で、「動いていないこと」に気づける仕組みを持たない監視・ガードレールは、無いのと同じだ、ということだった。\nhook が動かなくなっても、Claude Code は普通に動き続けた。エ...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "AIはアーキテクチャを汚すので、防ぐOSSを作成した",
+      "url": "https://zenn.dev/cutepome/articles/8548edf34c8bca",
+      "site": "Zenn(Python)",
+      "published": "2026-08-16T12:53:09Z",
+      "description": "吐露\nAIで開発できる時代は狩人的なマインドをもって開発したい。よね的なOSS。\nAIに禁止事項や守らせたいことをプロンプトに書くような馬鹿なAIコーディングやってる現場はもうなくなってると願いたい。エンジニアリング側で防げるような話もかなり多いし。\n漁業や狩人みたく\n「獲物(AI)が自分の描く経路を通って、挙句どのように仕留めるかの誘因をもって\n　AIコーディングする」\nAIやハーネス的なところ...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "LINE Botの秘密情報をLambda環境変数からSSMへ移した",
+      "url": "https://zenn.dev/yamayama101512/articles/yamatome-sam-ssm-pitfalls",
+      "site": "Zenn(Python)",
+      "published": "2026-08-16T12:52:47Z",
+      "description": "YaMatome の初版は、鍵を Lambda 環境変数に載せていた。requirements.txt には boto3 と google-generativeai もあった。いまはどちらもやめた。秘密は SSM の SecureString、Gemini は urllib で REST、依存は line-bot-sdk だけ。\nBot の中身は 前の記事。コードは yamato-1205/yam...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "グループLINEの流れを拾うため要約BotをLambdaで作った",
+      "url": "https://zenn.dev/yamayama101512/articles/yamatome-line-group-summary",
+      "site": "Zenn(Python)",
+      "published": "2026-08-16T12:52:46Z",
+      "description": "仲の良いグループのLINEが、仕事終わりに200件くらい溜まる。追うのが面倒で、飲みの誘いを見逃すこともあった。メンション一発で要約する Bot「YaMatome」を Lambda と DynamoDB、Gemini で作った。会話は追いやすくなった。重要な話も見逃しにくい。\n実装のハマりは 次の記事 に分けた。コードは yamato-1205/yamatome-bot。\n\n 何ができるか\nグルー...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "Redmine をターミナルから操作する CLI/TUI ツール「redi」を作った",
+      "url": "https://zenn.dev/kawagh/articles/redmine-tui-redi",
+      "site": "Zenn(Python)",
+      "published": "2026-08-16T12:44:53Z",
+      "description": "Redmine のチケット操作をターミナル上で行いたいことが多く、Redmine を操作する CLI/TUI ツール redi を作りました。\n\n\n 何ができるか\nGitHub における gh、GitLab における glab のようなことができるツールという説明だと伝わるかもしれません。\n内部で Redmine の REST API を使っているので、チケットや Wiki、作業時間、ニュース、添...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "高校生のためのPythonSCAD練習帳 part14",
+      "url": "https://zenn.dev/yokamak/articles/578c189e83cbf3",
+      "site": "Zenn(Python)",
+      "published": "2026-08-16T11:35:24Z",
+      "description": "はじめに\nPythonSCADには、2D描画の機能がいくつかあります。xy平面上に、座標をプロットして、三角形や円、四角形を描画することができます。2D図形を描画して、押し出しや回転体を作ることができます。\nPythonSCADコミュニティ、開発者に感謝申し上げます。ありがとうございます。\nhttps://www.pythonscad.org/\n\n 01. 三角形の面積を求めたい\nPythonプロ...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "趣味でRaspberry Piを買ってLチカしたら、pkill -9 で世界観が変わった話",
+      "url": "https://zenn.dev/morningpower/articles/03de161625f29e",
+      "site": "Zenn(Python)",
+      "published": "2026-08-16T11:30:29Z",
+      "description": "はじめに\n趣味でRaspberry Pi 4の初心者セットを買いました。\n明確な目的があったわけではなく、「コンピュータ全般の解像度を上げたい」という漠然とした動機です。普段の仕事はソフトウェア寄りで、物理的なハードウェアに触る機会がほとんどありません。CPUもメモリもGPIOも、知識としては知っているけれど、手で触ったことがない。その状態がなんとなく気持ち悪かった、というのが正直なところです。\n...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
     {
       "title": "毎月のCSV集計を自動化する、最小のpandas入門",
       "url": "https://zenn.dev/kuroikotech/articles/pandas-csv-aggregation-minimal",
@@ -19,16 +89,6 @@
       "site": "Zenn(Python)",
       "published": "2026-08-16T11:00:05Z",
       "description": "!\nこの記事は自サイト A*経路探索をPythonで実装する｜ロボットの「最短ルート」を見つける の再掲（クロス投稿）です。図をインタラクティブに動かせる版は元記事でどうぞ。\n\n自律ロボットが「今いる場所から目的地まで、障害物を避けてどう進むか」を決めるのが経路計画です。その定番アルゴリズムが A（エースター）*。この記事ではグリッド地図の上で、A*をPythonでゼロから実装します。最短経路を賢...",
-      "category": "開発",
-      "rss_category": "",
-      "image_url": ""
-    },
-    {
-      "title": "「このライブラリ使えない」の原因が、requirements.txt の書き忘れだった話",
-      "url": "https://zenn.dev/shinsei99/articles/photo-inpainter",
-      "site": "Zenn(Python)",
-      "published": "2026-08-16T10:56:45Z",
-      "description": "写真から電線を消すツールを作っていて、「消去エンジンの品質が低いから使えない」と判断して\n半年止めていたことがあります。\n再開して調べたら、そのエンジンは一度も動いていませんでした。\n同じ踏み方をする人がいそうなので、症状と原因と直し方を書きます。\n\n 症状\n物件写真から電線を消すと、跡が茶色く滲む。輪郭がぼやけ、実用にならない。\nエラーは出ません。処理は最後まで走り、それらしい画像が返ってきます...",
       "category": "開発",
       "rss_category": "",
       "image_url": ""
@@ -139,16 +199,6 @@
       "site": "Zenn(Python)",
       "published": "2026-08-16T01:18:16Z",
       "description": "導入\n前回のあらすじ: Pythonすら入っていないところからのスタートでしたが、環境を整え、前回紹介したコマンド一式(asset deposit、asset buyなど)とテストを実装し終えました。今回は、それを実際に動かして確認した工程です。\n\n 今回やったこと\n自動テスト(pytest)27件がまず全てパス。続けて、実際にCLIコマンドを1つずつ手で叩いて確認していきました。入金→株を買う→...",
-      "category": "開発",
-      "rss_category": "",
-      "image_url": ""
-    },
-    {
-      "title": "Google OAuth完全入門：PythonでGoogleカレンダーに自動書き込みする",
-      "url": "https://zenn.dev/sosa/books/google-oauth-calendar-guide",
-      "site": "Zenn(Python)",
-      "published": "2026-08-15T21:28:22Z",
-      "description": "Google OAuth 2.0の仕組みを完全無料枠で動かしながら理解する入門本。Pythonを使ってGoogleカレンダーに予定を書き込むシンプルなツールの作成を通して、認証・認可の基本と安全な使い方を学びます。",
       "category": "開発",
       "rss_category": "",
       "image_url": ""
