@@ -1,8 +1,148 @@
 {
   "site": "Zenn(AI)",
-  "last_updated": "2026-08-16T15:50:55.471445",
-  "total_articles": 12605,
+  "last_updated": "2026-08-16T16:12:38.653112",
+  "total_articles": 12618,
   "articles": [
+    {
+      "title": "巨大AIの対極へ。Fire HD 10（完全ローカル）で動く自律型AI「Kokone」を作ってみた",
+      "url": "https://zenn.dev/pok/articles/240333a989c8e1",
+      "site": "Zenn(AI)",
+      "published": "2026-08-16T14:40:30Z",
+      "description": "1. はじめに：なぜFire HD 10なのか\n現在のAI開発のトレンドは、「より巨大なデータセンターで、より多くのパラメータを処理し、常にネットワークに接続されていること」が前提になっています。LLM（大規模言語モデル）の進化は確かに目覚ましいですが、私はその「クラウドの海に浮かぶ万能の辞書」のようなあり方に、少し別の可能性を探りたくなりました。\n「外部ネットワークから完全に切り離された小さな端...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "Qwen3.8 27B に Reasoning Effort を実装してみる",
+      "url": "https://zenn.dev/shogo0x2e/articles/qwen38-27b-stop-overthinking",
+      "site": "Zenn(AI)",
+      "published": "2026-08-16T14:39:24Z",
+      "description": "TL;DR\n\nQwen 3.8 27B を動かすと，曖昧なタスクで thinking が長時間続き，tool call や回答に到達する前に生成上限に達して止まってしまうことがあった．\n解決策として，Per-request reasoning budget の設定を llama.cpp で有効にし，長すぎる thinking はメッセージと共に強制的に切るようにした．\n結果，Minecraft ク...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "非エンジニアがAIセキュリティCTF『Gandalf Adventure』で遊んでみた（Lv4攻略 / write up）",
+      "url": "https://zenn.dev/na417/articles/e57628addadaa6",
+      "site": "Zenn(AI)",
+      "published": "2026-08-16T14:13:47Z",
+      "description": "はじめに\nLakera社が提供するAIセキュリティのCTF「Gandalf Adventure」で遊んでいます。\n英語サイトなので、翻訳にはClaudeを使いながら進めました。\nGandalf Adventureは、AIが特定の話題を避けるように振る舞う中で、プレイヤーがその話題を引き出すCTFです。\nLv1～3までの記事はこちら↓\nLv1,2に挑戦した様子はこちらで書いています。\nhttps:/...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "【付録】考察・何が起きたのか？",
+      "url": "https://zenn.dev/katsutoatsuto/articles/351886ab7b8e95",
+      "site": "Zenn(AI)",
+      "published": "2026-08-16T14:11:12Z",
+      "description": "自分のSNSや作品、最大17年分を記録したデータベースに接続するtagasill/chatが、なぜ自分と似ていると感じるのか？どういう仕組でそうなるのか、考察しました。\ntagasillには、自分のデータベースを可視化する3Dビュワーをつけています。\n\n\n\n 他者データとの比較実験\nまず興味を持ったのは、「他人のデータと比較した際にどのような違いが出るのか」という点でした。\n現代においてSNSに膨...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "AIエージェントの暴走を止めたのは、技術ではなく地味なルールだった",
+      "url": "https://zenn.dev/ai_engineernote/articles/e2a2e50c067774",
+      "site": "Zenn(AI)",
+      "published": "2026-08-16T13:52:05Z",
+      "description": "AIに実務を任せ始めて最初にぶつかった問題\nAIエージェントに「情報収集→整理→報告」のような実務を任せてみると、驚くほどよく働いてくれる。困るのはむしろ逆で、**AIが「良かれと思って」先へ進んでしまう瞬間が必ず出てくる。\nたとえば「新しい外部サイトの情報を調べてほしい」と頼むと、AIはロボット排除規約(robots.txt)を確認し、利用規約を探し、内容を要約し……という一連の作業を、ほとんど...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "AIコーディングのルール、機械的に強制できるもの・できないもの",
+      "url": "https://zenn.dev/nozomi720/articles/rules_machine_enforceable",
+      "site": "Zenn(AI)",
+      "published": "2026-08-16T13:48:42Z",
+      "description": "47個のルールを分類してみた\n前回の記事で、Claude Code への指摘をファイルとして永続化し、指摘回数に応じて hook の強制力を上げる仕組みを書きました。この記事は単体で読めるように書きますが、前回の用語を3つだけ引き継ぎます。\n\n\ncount … 同じ指摘を人間が繰り返した回数。強制力の重み\n\nenforce … ルールを hook が機械的に検知するための条件定義\ninject …...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "GenOfficeとRAGナレッジで資料を下書きするやつを作った",
+      "url": "https://zenn.dev/bathtimefish/articles/eb089fbe8434b0",
+      "site": "Zenn(AI)",
+      "published": "2026-08-16T13:46:09Z",
+      "description": "過去の資料をもとにAIで今日の資料の下書きをする\n\nGenOfficeすごいですね。GenSparkは結構前から使っているんですが、だんだん資料の作り込みが上手くなってきている感じがしています。あのAIスライドやAIシートなんかがそのままデスクトップで使えて下書き編集保存までできるのはすごく便利だなと思いました。もうOfficeいらんかも。\n個人的それより衝撃的だったのはソースコードが公開されてい...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "pi-coding-agentを使わずにOpenCode Go×Hermes Agentを選んだ理由",
+      "url": "https://zenn.dev/jodycraft/articles/c35818f2f6c28a",
+      "site": "Zenn(AI)",
+      "published": "2026-08-16T13:26:35Z",
+      "description": "正直に言うと、この記事を書くまで自分でも整理できていなかったことがある。「OpenCode Go×pi-coding-agent」の組み合わせがハーネス界隈で評判になっているのを見て、自分もそれで行こうと思っていたのに、実際に手を動かしたら別の組み合わせに落ち着いていた、という話です。\n3週間ほど記事の更新を空けていた間、Discord経由でAIエージェントに指示を出しながらBlazor Web ...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "生成AIを組織に定着させるための、渡し方・受け方・測り方・育て方の設計",
+      "url": "https://zenn.dev/tk_notes/articles/genai-adoption-establishment-design",
+      "site": "Zenn(AI)",
+      "published": "2026-08-16T13:21:01Z",
+      "description": "生成AIの導入は、派手には失敗しません。「もうやめます」と宣言されるような終わり方は、めったにない。AIは、それ自体が便利すぎるからです。\n静かに崩れていくのは、利用そのものではなく、「組織が意図した使い方」のほうです。使う人は残る。ただし各自のやり方で、公式の経路は素通りされ、検証はまちまちで、成果は誰にも説明できない。「導入は成功したが、定着は失敗した」は、たいていこの形をしています。\n私自身...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "動画生成AIの使い分け — アニメはVidu、リアルはKling",
+      "url": "https://zenn.dev/kiraki/articles/video-ai-comparison",
+      "site": "Zenn(AI)",
+      "published": "2026-08-16T13:00:19Z",
+      "description": "先に結論を書きます。\nアニメはVidu、リアルはKling。\n1話約1分のAIアニメを29話ぶん作り、並行して実案件の映像制作でも生成AIを使ってきた結果、この2つに落ち着きました。以下、それぞれの使いどころを書きます。\n\n\n Vidu — アニメーションの精度が高い\nViduには Flash と Cinematic の2つのモードがあります。この使い分けが分かると一気に楽になります。\n\n Fla...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "AIはアーキテクチャを汚すので、防ぐOSSを作成した",
+      "url": "https://zenn.dev/cutepome/articles/8548edf34c8bca",
+      "site": "Zenn(AI)",
+      "published": "2026-08-16T12:53:09Z",
+      "description": "吐露\nAIで開発できる時代は狩人的なマインドをもって開発したい。よね的なOSS。\nAIに禁止事項や守らせたいことをプロンプトに書くような馬鹿なAIコーディングやってる現場はもうなくなってると願いたい。エンジニアリング側で防げるような話もかなり多いし。\n漁業や狩人みたく\n「獲物(AI)が自分の描く経路を通って、挙句どのように仕留めるかの誘因をもって\n　AIコーディングする」\nAIやハーネス的なところ...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "AI駆動開発は従来開発と何が違う？ 8領域で整理してみた",
+      "url": "https://zenn.dev/kinokomilk/articles/6c40d9a169a892",
+      "site": "Zenn(AI)",
+      "published": "2026-08-16T12:40:32Z",
+      "description": "AI駆動開発は従来開発と何が違う？ 8領域で整理してみた\n\nこの記事は、本文・図ともに筆者とAIが共同で作成しました。構成と主張は筆者が決め、文章の整理と作図をAIと分担しています。\n\nClaude CodeやCodexなど、AIを使った開発が当たり前になりつつあります。\nただ、AI駆動開発について調べていると、Agent、MCP、Skills、Hooks、Harness、Loop、仕様駆動など、...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "Claude Code × Geminiで挑む個人開発 〜AWS資格対策アプリ「Dojoru」開発記〜",
+      "url": "https://zenn.dev/jiro2026/books/dojoru-kaihatsu-hiwa",
+      "site": "Zenn(AI)",
+      "published": "2026-08-16T12:40:11Z",
+      "description": "AWS SAP-C02対策アプリ「Dojoru」を、Claude CodeとGeminiを使って個人開発した記録。Claude Codeを開く前の壁打ちから、AIに仮想的な「部署」を持たせて回した体制づくり、AI生成コンテンツに潜んでいた統計的な欠陥、UI改善、リリース運用までを全9話で振り返る。",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "Issue を切ったあとのループ手順。Grok と Cursor の並列と直列",
+      "url": "https://zenn.dev/redamoon/articles/article52-issue-based-grok-cursor",
+      "site": "Zenn(AI)",
+      "published": "2026-08-16T12:34:29Z",
+      "description": "この記事は、子課題に分けたあとに、AI が同じループを何度も回せるようにする話です。\n分解そのものが目的ではありません。切った子を、実装からマージまで同じ型で回します。\nループの中身は短いです。親で方針を決め、子を切ります。エージェントが実装と PR まで進めます。人間がマージと次の方針を決め、次の子へ渡します。この繰り返しを、ここではループエンジニアリングと呼びます。\nこの記事では、その手順を標...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
     {
       "title": "待ち時間を予測してLLM推論を振り分ける、llm-dの予測レイテンシ・ルーティング",
       "url": "https://zenn.dev/okssusucha/articles/20260709-llm-d-predicted-latency-scheduling",
@@ -189,16 +329,6 @@
       "site": "Zenn(AI)",
       "published": "2026-08-16T04:28:31Z",
       "description": "はじめに\nClaude Code をゼロから学ぶ初心者向け連載です。前回はメモリ機能で、セッションをまたいで文脈を持ち越す3つの方法を試しました。\nhttps://zenn.dev/mika_and_coco/articles/claude-code-diary-09-memory\n前回の最後に、こう書きました。CLAUDE.md も自動メモリも「毎セッション読み込まれる」——つまり、便利さはタダ...",
-      "category": "AI・技術",
-      "rss_category": "",
-      "image_url": ""
-    },
-    {
-      "title": "裏で動かしたAIが名乗った8桁の番号は、別のコマンドでは通じなかった",
-      "url": "https://zenn.dev/numarn/articles/claude-background-agents-registry-handson",
-      "site": "Zenn(AI)",
-      "published": "2026-08-16T04:16:56Z",
-      "description": "先に結論から書きます。Claude Code(ターミナルで動く AI の相棒)には、仕事を裏に回して走らせるやり方があります。実際に走らせると backgrounded · ea1a4336 と、8桁の番号を名乗って返ってきました。ところがこの番号を「会話の続きをする」コマンドに渡すと、受け付けてもらえませんでした。同じ相手なのに、コマンドによって要求される呼び名が違ったのです。\nほかにも、走って...",
       "category": "AI・技術",
       "rss_category": "",
       "image_url": ""
