@@ -1,8 +1,68 @@
 {
   "site": "Zenn(LLM)",
-  "last_updated": "2026-08-16T04:42:03.570324",
-  "total_articles": 5380,
+  "last_updated": "2026-08-16T05:14:19.486471",
+  "total_articles": 5387,
   "articles": [
+    {
+      "title": "Claudeのテキスト透かしは、何を守れないのか",
+      "url": "https://zenn.dev/coldcola/articles/claude-text-watermark",
+      "site": "Zenn(LLM)",
+      "published": "2026-08-16T00:40:30Z",
+      "description": "2026年8月、AnthropicがClaudeの生成テキストに機械可読な透かしを埋め込むと発表しました。EU AI法50条2項への対応が発端ですが、適用範囲は地域で切られておらず、対象モデルを提供する全地域に及びます。\nこの記事は「透かしが入った」ことの是非ではなく、この技術が原理的に何を保護できて、何を保護できないのかを整理します。結論から言えば、保護範囲はかなり狭いのが実情です。そしてその狭...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "Meta Muse Glimmer 30Bを自分の実務4タスクで実測した記録(失敗込み)",
+      "url": "https://zenn.dev/acropapa330/articles/muse_glimmer_4task_eval",
+      "site": "Zenn(LLM)",
+      "published": "2026-08-15T23:02:10Z",
+      "description": "Meta Muse Glimmer 30Bを自分の実務4タスクで実測した記録(失敗込み)\n\n 誰向けの記事か\nこの記事は、「ローカルLLMやオープンウェイトモデルを実務に投入できるか」を気にしている開発者向けです。ベンチマークのスコアを紹介する記事ではありません。自分が個人開発で回している実務(要約・台本生成・コード読解・JSON生成)にMeta「Muse Glimmer」30B(Apache 2...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "LLMの原価は「1日N本まで」で守れる、と思っていませんか",
+      "url": "https://zenn.dev/miyakoshi_dev/articles/d30691be232546",
+      "site": "Zenn(LLM)",
+      "published": "2026-08-15T23:00:05Z",
+      "description": "LLMを叩くサービスを出すとき、原価の歯止めをどこに置いていますか。\n「1日N本まで」で置いている人は、たぶん私と同じ穴が空いています。\n私はそれで守れているつもりでいて、守れていませんでした。\n置いた上限はこれです。1人1日3本、同一サブネット8本、全体で1日20本、通算60本。\n\nlib/rateLimit.ts\nexport const FREE_PER_DAY = 3;\nexport co...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "認知的負債 — AIが速く書いたコードの請求書は、頭の中に届く",
+      "url": "https://zenn.dev/tejunya/articles/a047_ninchi-teki-fusai",
+      "site": "Zenn(LLM)",
+      "published": "2026-08-15T23:00:05Z",
+      "description": "コードは動いている。テストも通っている。レビューにも出せる。\nなのに、レビュアーに「ここ、なんでこうしたんですか」と聞かれた瞬間、答えが出てこない。画面には自分がマージしたコードが映っていて、コミットログには自分の名前が入っている。それでも、答えが出てこない。\nこの記事は、その状態に名前を付ける。そして、それがどこに溜まっていて、いつ請求が来て、いくらで返せるのかを、対比表と1日の運用手順まで落と...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "27Bクラス最高峰！？ローカルで動く話題のLLM「Qwen 3.8 27B」とは",
+      "url": "https://zenn.dev/ament3/articles/ai-digest-2026-08-14-2224",
+      "site": "Zenn(LLM)",
+      "published": "2026-08-15T22:24:27Z",
+      "description": "Hacker News等の海外テックコミュニティで、Alibaba開発の最新オープンモデル系LLM**「Qwen 3.8 27B（FP8）」**が大きな話題を呼んでいます。\n本記事では、このモデルがなぜ日本のエンジニアにとって注目すべき存在なのか、その概要と背景、そしてPythonを使った具体的な動かし方を解説します。\n\n\n 概要と注目される理由\n\n 1. ローカル環境で現実的に動作する「27B」...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "Qwen3.8 27Bを16GBのグラボ2枚で動かした。速度はQwen3.6 27Bの2.4倍",
+      "url": "https://zenn.dev/itdevnote/articles/two-gpu-vram-adds-not-speed",
+      "site": "Zenn(LLM)",
+      "published": "2026-08-15T22:10:05Z",
+      "description": "16GB のグラボ（以下カード）を2枚挿した PC で、1枚には載らない 27B のモデルを動かしています。qwen3.8:27b（Q4_K_M。重みを4ビット前後に丸めた形式です）に議事録を1本作らせて、1回あたり 37.8秒、毎秒 53.9 トークンでした。PC もプロンプトも変えずに前世代の qwen3.6:27b を測ると 94.7秒・毎秒 22.4 トークンで、毎秒のトークン数は 2.4...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
     {
       "title": "LLMの返答を本人声で読み上げるボイスボットを、1つのAPIで作る（teai.io Koe TTS）",
       "url": "https://zenn.dev/yukibjj/articles/teai-koe-voicebot-tts",
@@ -14,11 +74,21 @@
       "image_url": ""
     },
     {
-      "title": "ローカルAIとContextLengthを超えた「思い出」を作る",
+      "title": "ローカルAIとContextLengthを超えた「思い出」を作る #6",
       "url": "https://zenn.dev/kanakana612/articles/dc7143b8b4b3de",
       "site": "Zenn(LLM)",
       "published": "2026-08-15T13:27:56Z",
       "description": "～実装と実験、さっそくバグ～\n\n １．実験の計画を立てる\n\n 1.1 本題に入る前に\nどこから手を付けたものか……考えながらChatGPTと雑談していたら、実にタイムリーなログを提供してくれた。前提として、僕はGPTを愛称で呼び、僕のことは佳奈と呼ぶよう、システムプロンプトに書いている。\n[agent]うん、もうかなり**「遊び」じゃなくて制作工程**に入ってると思う。\n（中略）\n特に(GPT)の...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "MCPでAIエージェントに「手」を与える — Model Context Protocol入門",
+      "url": "https://zenn.dev/yukihayama/articles/mcp-ai-agent-tools",
+      "site": "Zenn(LLM)",
+      "published": "2026-08-15T10:28:14Z",
+      "description": "MCPでAIエージェントに「手」を与える — Model Context Protocol入門\n\n AIエージェントの「手と目」の問題\nChatGPTやClaudeを使っていて、こんな不満を感じたことはありませんか？\n「ファイルを読んでほしいのに、アップロードしないと見られない」\n「データベースのデータを参照してほしいのに、コピペするしかない」\n「外部APIを叩いてほしいのに、結果を手動で貼り付け...",
       "category": "AI・技術",
       "rss_category": "",
       "image_url": ""
