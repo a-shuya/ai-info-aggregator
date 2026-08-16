@@ -1,6 +1,6 @@
 {
   "site": "Zenn(Python)",
-  "last_updated": "2026-08-16T19:48:18.349293",
+  "last_updated": "2026-08-16T20:01:16.783383",
   "total_articles": 5797,
   "articles": [
     {
@@ -9,16 +9,6 @@
       "site": "Zenn(Python)",
       "published": "2026-08-16T16:39:08Z",
       "description": "前回、SupportChigadio のデータクラス生成機能(ClassDataID)についての記事を書きました。\n記事の最後で「対応予定の機能」として挙げていた Matrix が形になってきたので、今回はその続編としてご紹介します。\nこの記事の対象読者\n\n前回の記事でSupportChigadioのClassDataIDまでは触った人\n「row×col」のような二次元の関連データをUnityで扱...",
-      "category": "開発",
-      "rss_category": "",
-      "image_url": ""
-    },
-    {
-      "title": "WindowsのPythonからclaude -pを起動すると複数行プロンプトが最初の改行で切れる",
-      "url": "https://zenn.dev/chikoku_neko/articles/f963b2a2607d02",
-      "site": "Zenn(Python)",
-      "published": "2026-08-16T16:02:46Z",
-      "description": "先に結論（TL;DR）\n\n定型Web作業のエージェント評価で、Claude Code headless（claude -p）側の成功率が3/24から21/24まで動いた。モデルもプロンプトの中身も変えていない。変えたのは、指示をプロセスに渡す実装だけ。\n原因：Windowsでclaude -pをPythonからsubprocess起動すると、複数行のプロンプトが最初の改行以降で失われる。npmでグ...",
       "category": "開発",
       "rss_category": "",
       "image_url": ""
@@ -74,6 +64,16 @@
       "image_url": ""
     },
     {
+      "title": "140サービスの料金ページを15日間監視して、発効前の変更予告を5件拾った",
+      "url": "https://zenn.dev/reskilling/articles/3104e660205dba",
+      "site": "Zenn(Python)",
+      "published": "2026-08-16T11:48:14Z",
+      "description": "料金体系変更1件（実質値上げ）、値上げ2件、モデル非推奨化予定1件、サポート変更1件。看板にしようとした数字は4回捨てました。\n2026年8月から、LLM API と SaaS 合わせて140サービスの料金ページを、毎朝7時に取得しています。ページ本文を LLM で構造化し、前日との差分を残す仕組みです。GitHub Actions 上で動かしており、開発中の再抽出を含めた現在のペースでは月12ド...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
       "title": "高校生のためのPythonSCAD練習帳 part14",
       "url": "https://zenn.dev/yokamak/articles/578c189e83cbf3",
       "site": "Zenn(Python)",
@@ -114,11 +114,11 @@
       "image_url": ""
     },
     {
-      "title": "「このライブラリ使えない」の原因が、requirements.txt の書き忘れだった話",
-      "url": "https://zenn.dev/shinsei99/articles/photo-inpainter",
+      "title": "Gemini API で踏んだ4つの罠（SDK提供終了・モデル404・空レスポンス・無限待ち）",
+      "url": "https://zenn.dev/shinsei99/articles/gemini-api-traps",
       "site": "Zenn(Python)",
-      "published": "2026-08-16T10:56:45Z",
-      "description": "写真から電線を消すツールを作っていて、「消去エンジンの品質が低いから使えない」と判断して\n半年止めていたことがあります。\n再開して調べたら、そのエンジンは一度も動いていませんでした。\n同じ踏み方をする人がいそうなので、症状と原因と直し方を書きます。\n\n 症状\n物件写真から電線を消すと、跡が茶色く滲む。輪郭がぼやけ、実用にならない。\nエラーは出ません。処理は最後まで走り、それらしい画像が返ってきます...",
+      "published": "2026-08-16T10:56:44Z",
+      "description": "1文の指示から企画・スライド・音声・動画まで作るパイプラインを組んでいて、\nGemini API で立て続けに4つ踏みました。どれもエラーメッセージから原因が読めない\nタイプだったので、症状と原因を残しておきます。\n\n 罠1: SDKが提供終了していた\nimport google.generativeai as genai   # ← これはもう古い\n検索して出てくる記事の多くがこの google...",
       "category": "開発",
       "rss_category": "",
       "image_url": ""
@@ -169,6 +169,16 @@
       "site": "Zenn(Python)",
       "published": "2026-08-16T06:00:44Z",
       "description": "HPACKの可変長整数デコードのDoS脆弱性(GHSA-8v8h-hg4w-mvq2)について\nPythonのHTTP/2 HPACK実装としてよく使われている python-hyper/hpackの可変長整数デコードに上限チェックがなく、悪意ある入力でO(n^2)の計算量が発生しDoSに繋がる脆弱性を先日発見、報告し、Advisoryが発出された（CWE-400、CVSSv4 6.3 Moder...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "Claude Codeで「ホワイト企業マップ」を個人開発した話",
+      "url": "https://zenn.dev/hayatech/articles/develop-whapp-1",
+      "site": "Zenn(Python)",
+      "published": "2026-08-16T05:40:53Z",
+      "description": "はじめに\nAIを活用した開発に興味を抱き、Claude Codeで個人開発のアプリを作ってみようと考えました。\n市場調査をしたうえでニッチなサービスを提供したい、自分の得意な技術スタックを活用したいと考え、公的なホワイト企業認定・公表データを集約し、地図・一覧・詳細で可視化するWebサービス「ホワっぷ -ホワイト企業マップ-」を個人開発しました。\nホワっぷ -ホワイト企業マップ-\nWeb版：htt...",
       "category": "開発",
       "rss_category": "",
       "image_url": ""
@@ -229,16 +239,6 @@
       "site": "Zenn(Python)",
       "published": "2026-08-16T01:18:16Z",
       "description": "導入\n前回のあらすじ: Pythonすら入っていないところからのスタートでしたが、環境を整え、前回紹介したコマンド一式(asset deposit、asset buyなど)とテストを実装し終えました。今回は、それを実際に動かして確認した工程です。\n\n 今回やったこと\n自動テスト(pytest)27件がまず全てパス。続けて、実際にCLIコマンドを1つずつ手で叩いて確認していきました。入金→株を買う→...",
-      "category": "開発",
-      "rss_category": "",
-      "image_url": ""
-    },
-    {
-      "title": "Google OAuth完全入門：PythonでGoogleカレンダーに自動書き込みする",
-      "url": "https://zenn.dev/sosa/books/google-oauth-calendar-guide",
-      "site": "Zenn(Python)",
-      "published": "2026-08-15T21:28:22Z",
-      "description": "Google OAuth 2.0の仕組みを完全無料枠で動かしながら理解する入門本。Pythonを使ってGoogleカレンダーに予定を書き込むシンプルなツールの作成を通して、認証・認可の基本と安全な使い方を学びます。",
       "category": "開発",
       "rss_category": "",
       "image_url": ""

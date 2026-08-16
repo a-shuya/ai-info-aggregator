@@ -1,8 +1,98 @@
 {
   "site": "Zenn(AI)",
-  "last_updated": "2026-08-16T19:48:18.349293",
+  "last_updated": "2026-08-16T20:01:16.783383",
   "total_articles": 12622,
   "articles": [
+    {
+      "title": "座標から画像へ：潜在空間で未来を予測するWorld Modelを実装してみた",
+      "url": "https://zenn.dev/naoyabone/articles/ebefbf5fcb90d6",
+      "site": "Zenn(AI)",
+      "published": "2026-08-16T16:45:20Z",
+      "description": "はじめに\n前回の記事では、5×5のGrid Worldを使って、最小構成のWorld Modelを実装しました。\n前回作ったモデルは非常に単純で、\n現在の座標 (x, y) + 行動\n        ↓\n    World Model\n        ↓\n次の座標 (x', y')\nというものでした。\nこれによって、「現在の状態と行動から次の状態を予測する」「予測した状態をさらに次の入力として使い...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "自分だけのエージェント秘書を作る ③ 知識をつなぐエージェント",
+      "url": "https://zenn.dev/nhandsome/articles/my-agent-assistant-03-knowledge-graph",
+      "site": "Zenn(AI)",
+      "published": "2026-08-16T16:14:30Z",
+      "description": "このブログは、Solar Pro4 がエージェントの活動ログをもとに下書きを自動作成し、Claude と筆者のレビューを経て公開しています。\nシリーズ：① 構成編 → ② 知識インボックス → ③ 知識をつなぐエージェント（この記事）\n!\n3行まとめ\n\n知識を入れる・取り出す・つなぐ3つのエージェント（インボックス・アドバイザー・オントロジー）を、ひとつの知識ストアで結びました\n投げるのはチャット...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "1つの常駐AIエージェントを複数の顧客ワークスペースに安全に置くマルチテナント分離設計",
+      "url": "https://zenn.dev/hach/articles/chat-agent-multi-tenant-isolation-design",
+      "site": "Zenn(AI)",
+      "published": "2026-08-16T16:14:27Z",
+      "description": "チャットに常駐するAIエージェントをSaaSとして提供する場合、実装の初期段階ではあまり意識されないのに、顧客が増えた瞬間に一番重い課題になるのがテナント分離です。1つのエージェント基盤で複数の顧客企業のSlack/Teams/Chatworkワークスペースを同時に相手にするようになると、「Aさんの会社の会話がBさんの会社のレポートに混じる」という事故を構造的に起こせないようにする設計が必須になり...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "ソフトウェア設計の統一理論 ── 概念設計・要件定義・DDD・オントロジーを、型で一本の線にする",
+      "url": "https://zenn.dev/pninfo/articles/ba44cfd6a714e8",
+      "site": "Zenn(AI)",
+      "published": "2026-08-16T16:10:24Z",
+      "description": "先日、takeshi_teshima氏の「概念設計が、その後のコードの命運を左右する」という記事を読んだ。\nこの記事では、ECサイトにおける Order と Fulfillment の例を通して、ソフトウェアの複雑さは単にコード量や条件分岐の数から生まれるのではなく、現実世界に存在するものを、システムの中でどのような概念として切り分けたかによって大きく左右される、という話がされている。\nこの記事を...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "WindowsのPythonからclaude -pを起動すると複数行プロンプトが最初の改行で切れる",
+      "url": "https://zenn.dev/chikoku_neko/articles/f963b2a2607d02",
+      "site": "Zenn(AI)",
+      "published": "2026-08-16T16:02:46Z",
+      "description": "先に結論（TL;DR）\n\n定型Web作業のエージェント評価で、Claude Code headless（claude -p）側の成功率が3/24から21/24まで動いた。モデルもプロンプトの中身も変えていない。変えたのは、指示をプロセスに渡す実装だけ。\n原因：Windowsでclaude -pをPythonからsubprocess起動すると、複数行のプロンプトが最初の改行以降で失われる。npmでグ...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "AIが書いた運用ルールを2週間で覆した話",
+      "url": "https://zenn.dev/vdnih/articles/squash-merge-decision-reversal",
+      "site": "Zenn(AI)",
+      "published": "2026-08-16T15:43:47Z",
+      "description": "複数のプロダクトを一人（と AI コーディングエージェント）で並行開発していると、運用ルールの文書化そのものを AI に任せる場面が増えます。この記事は、AI に書かせたマージ方針が2週間で撤回された経験から、「AI が作った運用ルールを、人間はどこで検算すべきか」をまとめたものです。\n\n 背景\n個人開発では PR を「1つの意図とその実装内容をセットで残す単位」として使っています。実装自体は A...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "未知なる海域の航海術: 定理7本を証明したループエンジニアリングの規律と記録",
+      "url": "https://zenn.dev/iroha1203/articles/c136054852d4b6",
+      "site": "Zenn(AI)",
+      "published": "2026-08-16T15:31:39Z",
+      "description": "本記事は、Hashnodeに公開したUncharted Waters: Thirteen Rules for Not Trusting an AI's Proofsの日本語版です\n\n\n TL;DR\n\n数日がかりの仕事をAIエージェントのループに任せて、最後まで走り切らせたい。そのための規則を十三条にまとめた。ループ中に仕様を書き換えさせない。完了と認める証拠の形を先に数え上げて固定する。レビューは...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "安い・速い・美味(賢)い — Gemini 3.7 Flash の絶妙すぎるポジショニング",
+      "url": "https://zenn.dev/okamo02427/articles/ffd9d103ab165c",
+      "site": "Zenn(AI)",
+      "published": "2026-08-16T15:03:32Z",
+      "description": "2026年8月に登場した Gemini 3.7 Flash の実測データを見ていて、その立ち位置の良さが際立っている。\n一言で言えば、安くて、速くて、美味い 賢い。\nベンチマーク機関 Artificial Analysis の最新データを交えながら、このモデルの絶妙なポジショニングを整理する。\n\n過去の関連記事\nSonnet 5 は GPT-5.6 Sol よりも「高い」のか（#高額請求 #トーク...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "Windows上のDockerでSO-101のセットアップ",
+      "url": "https://zenn.dev/miggy/articles/2641d01d461a67",
+      "site": "Zenn(AI)",
+      "published": "2026-08-16T15:00:06Z",
+      "description": "こんにちは，フィジカルAIという言葉をよく聞くようになったのですが，企業や大学でロボットを作ってやるものかなと思っていました．\nところが，SO-101というロボットアームのキットとHugging FaceのLeRobotプロジェクトで公開されているソフトを使えば，AIを用いてロボットアームを動かせることを知りました．\nキットは全部込みでも5万円強，アームをオープンソースのデータを使って3Dプリンタ...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
     {
       "title": "巨大AIの対極へ。Fire HD 10（完全ローカル）で動く自律型AI「Kokone」を作ってみた",
       "url": "https://zenn.dev/pok/articles/240333a989c8e1",
@@ -264,46 +354,6 @@
       "image_url": ""
     },
     {
-      "title": "AIエージェントにコードを書かせて、人が品質を守る——個人開発3ヶ月の品質ゲート設計",
-      "url": "https://zenn.dev/tk_notes/articles/ai-agent-quality-gate",
-      "site": "Zenn(AI)",
-      "published": "2026-08-16T08:10:53Z",
-      "description": "AIエージェントはコードを速く書きます。もっともらしい間違いも、同じ速度で書きます。\n2026年4月から6月にかけて、Claude CodeとCodexを使い、3つの個人開発を進めました。AIには調査、実装、テスト追加、レビューを任せています。しかし、生成されたコードを採用する責任までAIへ渡したわけではありません。\nこの3ヶ月で作ったのは、AIを信用する仕組みではなく、AIの成果物を信用しなくて...",
-      "category": "AI・技術",
-      "rss_category": "",
-      "image_url": ""
-    },
-    {
-      "title": "寝ている間にPCを動かすAIと、「諦めないで」で難問を解いたAIのお話（2026年8月AIトレンド3選）",
-      "url": "https://zenn.dev/yusamore/articles/zenn-2026-08-16-ai-agent-frontier-3-news",
-      "site": "Zenn(AI)",
-      "published": "2026-08-16T07:43:35Z",
-      "description": "AIの世界では、チャットで会話するだけでなく「パソコンを自動で動かしてくれるAI」や「人間の励ましで限界を超えるAI」など、人間味を感じる面白い進化を伝えるニュースが続いています。\n今週、特に「これは面白い！」と感じた3つの出来事を、まとめてみました。\n\n\n\n 1. AI専用のパソコンがもらえる？SpaceXAIの「Grok Bot」\n\n🔗 一次ソース: SpaceXAIが24時間働くAIエージェ...",
-      "category": "AI・技術",
-      "rss_category": "",
-      "image_url": ""
-    },
-    {
-      "title": "Claudeの「見えない透かし」はどこに入る？ ―  SynthID-TextのSamplingを理解する",
-      "url": "https://zenn.dev/50s_zerotohero/articles/e5198b07a3c9f0",
-      "site": "Zenn(AI)",
-      "published": "2026-08-16T06:52:00Z",
-      "description": "2026年8月、Anthropicは今後のClaudeが生成するテキストに 透かし（Watermark） を入れることを発表しました。\nhttps://www.anthropic.com/news/claude-text-watermark\n画像の透かしならイメージしやすいですが、テキストに「見えない透かし」を入れるとは、どういうことでしょうか。\n文章に特殊な文字が追加されるわけでも、「Gener...",
-      "category": "AI・技術",
-      "rss_category": "",
-      "image_url": ""
-    },
-    {
-      "title": "Claude Codeで「ホワイト企業マップ」を個人開発した話",
-      "url": "https://zenn.dev/hayatech/articles/develop-whapp-1",
-      "site": "Zenn(AI)",
-      "published": "2026-08-16T05:40:53Z",
-      "description": "はじめに\nAIを活用した開発に興味を抱き、Claude Codeで個人開発のアプリを作ってみようと考えました。\n市場調査をしたうえでニッチなサービスを提供したい、自分の得意な技術スタックを活用したいと考え、公的なホワイト企業認定・公表データを集約し、地図・一覧・詳細で可視化するWebサービス「ホワっぷ -ホワイト企業マップ-」を個人開発しました。\nホワっぷ -ホワイト企業マップ-\nWeb版：htt...",
-      "category": "AI・技術",
-      "rss_category": "",
-      "image_url": ""
-    },
-    {
       "title": "【最速7分】ローカルLLM×Tauriで爆速Markdownビューアを作らせた必勝パターン",
       "url": "https://zenn.dev/kotax/articles/local-llm-tauri-viewer",
       "site": "Zenn(AI)",
@@ -324,41 +374,11 @@
       "image_url": ""
     },
     {
-      "title": "裏で動かしたAIが名乗った8桁の番号は、別のコマンドでは通じなかった",
-      "url": "https://zenn.dev/numarn/articles/claude-background-agents-registry-handson",
-      "site": "Zenn(AI)",
-      "published": "2026-08-16T04:16:56Z",
-      "description": "先に結論から書きます。Claude Code(ターミナルで動く AI の相棒)には、仕事を裏に回して走らせるやり方があります。実際に走らせると backgrounded · ea1a4336 と、8桁の番号を名乗って返ってきました。ところがこの番号を「会話の続きをする」コマンドに渡すと、受け付けてもらえませんでした。同じ相手なのに、コマンドによって要求される呼び名が違ったのです。\nほかにも、走って...",
-      "category": "AI・技術",
-      "rss_category": "",
-      "image_url": ""
-    },
-    {
-      "title": "指示プロンプト開発の基礎",
-      "url": "https://zenn.dev/oryo_data/articles/c01f2d4b84f35b",
-      "site": "Zenn(AI)",
-      "published": "2026-08-16T04:16:17Z",
-      "description": "はじめに\n蒲生弘郷さんの『LLMの原理、RAG・エージェント開発から読み解く コンテキストエンジニアリング』（技術評論社）の読書アウトプット、今回は3章「指示プロンプト開発の基礎」です。\nhttps://link.amazon/B05JLhPYT\n前回の2章まとめはこちら。\nhttps://zenn.dev/oryo_data/articles/9c9cf08c851b59\n世に無数にあるプロンプ...",
-      "category": "AI・技術",
-      "rss_category": "",
-      "image_url": ""
-    },
-    {
       "title": "Shopify構築ディレクターが始める、AI・自動化による「業務とタスクの仕組み化」",
       "url": "https://zenn.dev/dann_chan_lab/articles/shopify-ai-auto-00",
       "site": "Zenn(AI)",
       "published": "2026-08-16T04:16:07Z",
       "description": "はじめに\nShopifyの構築ディレクターとして活動している「だんちゃん」と申します。\nこのアカウントでは、Shopifyの構築・ディレクション業務 × AI・自動化ツール を組み合わせた実践的なノウハウやコードを記録していきます。\n\n\n 私のスタック・領域\n\n\n領域：Shopify構築ディレクション / 要件定義 / ストア設計\n\n技術：Liquid / Shopify Admin API / ...",
-      "category": "AI・技術",
-      "rss_category": "",
-      "image_url": ""
-    },
-    {
-      "title": "現場知識ゼロの僕が、AI駆動開発で12兆円市場の未解決タスク『配線認識』を作り切るまで",
-      "url": "https://zenn.dev/tatsuta_dev/articles/ai-driven-dev-ceo",
-      "site": "Zenn(AI)",
-      "published": "2026-08-16T04:06:06Z",
-      "description": "はじめに\n初めましてtatuutと申します。\n突然ですが、「積算」をご存じですか。僕は知りませんでした。\nが！！「積算」はすべての電気設備工事の入り口にある業務。その電気設備工事は、年間およそ12兆円の市場です[1]！！\nめちゃくちゃ巨大ですよね。\nでも「積算」でやることをざっくり言えば、見積もりのために、図面から資材の記号を見つけてその数量を集計する作業。\n配線については、それらの記号をつないで...",
       "category": "AI・技術",
       "rss_category": "",
       "image_url": ""
@@ -379,26 +399,6 @@
       "site": "Zenn(AI)",
       "published": "2026-08-16T04:02:12Z",
       "description": "https://github.com/soya-miyoshi/agentdeck\n作りました。\n\ntailscale 経由で自分のMacにリモート接続（というか、tailscale越しにアプリケーションサーバーに話しかけ、アプリケーション経由で AI エージェントに指示を出す）ができます。\nMalumoterminal を一時期使おうとしてたのですが、他人が作ったインフラを経由して自分の指示が自...",
-      "category": "AI・技術",
-      "rss_category": "",
-      "image_url": ""
-    },
-    {
-      "title": "APIを用いたコンテキストエンジニアリング",
-      "url": "https://zenn.dev/oryo_data/articles/9c9cf08c851b59",
-      "site": "Zenn(AI)",
-      "published": "2026-08-16T03:48:32Z",
-      "description": "はじめに\n蒲生弘郷さんの『LLMの原理、RAG・エージェント開発から読み解く コンテキストエンジニアリング』（技術評論社）を読み進めています。\nhttps://link.amazon/B05JLhPYT\n今回は2章「APIサービス利用におけるコンテキストの扱いと基礎機能」の読書アウトプットです。\n書籍の内容を自分の理解で再構成したメモなので、正確な解説はぜひ本書を手に取ってください。\n\n APIサ...",
-      "category": "AI・技術",
-      "rss_category": "",
-      "image_url": ""
-    },
-    {
-      "title": "AI時代のキャリア戦略　第9回 AI時代の学び方",
-      "url": "https://zenn.dev/jinfuroi/articles/c13bae5ef12d68",
-      "site": "Zenn(AI)",
-      "published": "2026-08-16T03:45:35Z",
-      "description": "生成AIによって、エンジニアの学習環境は大きく変わりました。\n分からないコードを説明してもらう。設計について相談する。エラーの原因を調べる。実装例を作ってもらう。これまでなら書籍や検索を行き来しながら時間をかけて調べていたことを、AIとの対話を通じてその場で深掘りできるようになっています。\n一方で、AIがコードを書き、設計案まで提示してくれるようになったからこそ、\n「では、人間は何を学ぶ必要がある...",
       "category": "AI・技術",
       "rss_category": "",
       "image_url": ""
