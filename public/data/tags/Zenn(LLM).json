@@ -1,8 +1,18 @@
 {
   "site": "Zenn(LLM)",
-  "last_updated": "2026-08-16T10:26:49.726248",
-  "total_articles": 5397,
+  "last_updated": "2026-08-16T10:51:02.477711",
+  "total_articles": 5391,
   "articles": [
+    {
+      "title": "AIエージェントにコードを書かせて、人が品質を守る——個人開発3ヶ月の品質ゲート設計",
+      "url": "https://zenn.dev/tk_notes/articles/ai-agent-quality-gate",
+      "site": "Zenn(LLM)",
+      "published": "2026-08-16T08:10:53Z",
+      "description": "AIエージェントはコードを速く書きます。もっともらしい間違いも、同じ速度で書きます。\n2026年4月から6月にかけて、Claude CodeとCodexを使い、3つの個人開発を進めました。AIには調査、実装、テスト追加、レビューを任せています。しかし、生成されたコードを採用する責任までAIへ渡したわけではありません。\nこの3ヶ月で作ったのは、AIを信用する仕組みではなく、AIの成果物を信用しなくて...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
     {
       "title": "スクレイピングは壊れる前提で設計する ― 他人のHTMLに依存する機能の立て直し",
       "url": "https://zenn.dev/tanishi_z/articles/11-jin-local-model-selection-ux-design",
@@ -19,16 +29,6 @@
       "site": "Zenn(LLM)",
       "published": "2026-08-16T07:43:35Z",
       "description": "AIの世界では、チャットで会話するだけでなく「パソコンを自動で動かしてくれるAI」や「人間の励ましで限界を超えるAI」など、人間味を感じる面白い進化を伝えるニュースが続いています。\n今週、特に「これは面白い！」と感じた3つの出来事を、まとめてみました。\n\n\n\n 1. AI専用のパソコンがもらえる？SpaceXAIの「Grok Bot」\n\n🔗 一次ソース: SpaceXAIが24時間働くAIエージェ...",
-      "category": "AI・技術",
-      "rss_category": "",
-      "image_url": ""
-    },
-    {
-      "title": "MacBook Air M5 RAM32GBで実用的なローカルLLMを探す 生成速度測定編",
-      "url": "https://zenn.dev/koki_n22/articles/493f85b9f875ca",
-      "site": "Zenn(LLM)",
-      "published": "2026-08-16T07:19:18Z",
-      "description": "対象読者\n\nMacBook Air M5 32GBでローカルLLMを使いたい人\nOllamaでコーディング用途のローカルLLMを探している人\nRAM32GBでどの程度のモデルが実用的な速度で動くのか気になる人\n\n\n モチベーション\n\nMacBook Air M5 RAM 32GBで実用的に使えそうなローカルLLMを知りたかった\n最初に試した27Bモデルが6〜7 tokens/s程度しか出ず、品質以...",
       "category": "AI・技術",
       "rss_category": "",
       "image_url": ""
@@ -64,81 +64,11 @@
       "image_url": ""
     },
     {
-      "title": "指示プロンプト開発の基礎",
-      "url": "https://zenn.dev/oryo_data/articles/c01f2d4b84f35b",
-      "site": "Zenn(LLM)",
-      "published": "2026-08-16T04:16:17Z",
-      "description": "はじめに\n蒲生弘郷さんの『LLMの原理、RAG・エージェント開発から読み解く コンテキストエンジニアリング』（技術評論社）の読書アウトプット、今回は3章「指示プロンプト開発の基礎」です。\nhttps://link.amazon/B05JLhPYT\n前回の2章まとめはこちら。\nhttps://zenn.dev/oryo_data/articles/9c9cf08c851b59\n世に無数にあるプロンプ...",
-      "category": "AI・技術",
-      "rss_category": "",
-      "image_url": ""
-    },
-    {
-      "title": "現場知識ゼロの僕が、AI駆動開発で12兆円市場の未解決タスク『配線認識』を作り切るまで",
-      "url": "https://zenn.dev/tatsuta_dev/articles/ai-driven-dev-ceo",
-      "site": "Zenn(LLM)",
-      "published": "2026-08-16T04:06:06Z",
-      "description": "はじめに\n初めましてtatuutと申します。\n突然ですが、「積算」をご存じですか。僕は知りませんでした。\nが！！「積算」はすべての電気設備工事の入り口にある業務。その電気設備工事は、年間およそ12兆円の市場です[1]！！\nめちゃくちゃ巨大ですよね。\nでも「積算」でやることをざっくり言えば、見積もりのために、図面から資材の記号を見つけてその数量を集計する作業。\n配線については、それらの記号をつないで...",
-      "category": "AI・技術",
-      "rss_category": "",
-      "image_url": ""
-    },
-    {
-      "title": "APIを用いたコンテキストエンジニアリング",
-      "url": "https://zenn.dev/oryo_data/articles/9c9cf08c851b59",
-      "site": "Zenn(LLM)",
-      "published": "2026-08-16T03:48:32Z",
-      "description": "はじめに\n蒲生弘郷さんの『LLMの原理、RAG・エージェント開発から読み解く コンテキストエンジニアリング』（技術評論社）を読み進めています。\nhttps://link.amazon/B05JLhPYT\n今回は2章「APIサービス利用におけるコンテキストの扱いと基礎機能」の読書アウトプットです。\n書籍の内容を自分の理解で再構成したメモなので、正確な解説はぜひ本書を手に取ってください。\n\n APIサ...",
-      "category": "AI・技術",
-      "rss_category": "",
-      "image_url": ""
-    },
-    {
-      "title": "DeepSeek公式Agent基盤「DeepSeek Harness」徹底解剖：キャッシュ率80%台、Agentの黒箱を完全解体する",
-      "url": "https://zenn.dev/lumichy/articles/deepseek-dsh-agent-harness-2026",
-      "site": "Zenn(LLM)",
-      "published": "2026-08-16T03:33:40Z",
-      "description": "2026年8月17日、DeepSeek APIの価格改定（ピーク・オフピーク制の導入）が始まりました。\n入力単価の上昇に身構えた開発者も多いかと思いますが、このタイミングでDeepSeek公式からオープンソースとして無料公開（MITライセンス）されたのが、Agent実行フレームワークである DeepSeek Harness（通称：dsh）です。\nClaude Codeをはじめとする自律コーディング...",
-      "category": "AI・技術",
-      "rss_category": "",
-      "image_url": ""
-    },
-    {
-      "title": "エンジニアのためのGEO/LLMO",
-      "url": "https://zenn.dev/mabui/books/geo-llmo-for-engineers",
-      "site": "Zenn(LLM)",
-      "published": "2026-08-16T02:35:34Z",
-      "description": "生成AIに「引用される」仕組みと計測を、手を動かして理解する。マーケ視点ではなく、RAG・埋め込み・大量データ処理といったエンジニアの土俵からGEO/LLMOを扱う技術本。",
-      "category": "AI・技術",
-      "rss_category": "",
-      "image_url": ""
-    },
-    {
       "title": "Progress Advantage：RL後訓練が無償で与えるステップ評価シグナル",
       "url": "https://zenn.dev/lixian/articles/progress-advantage-free-lunch-rl",
       "site": "Zenn(LLM)",
       "published": "2026-08-16T01:57:04Z",
       "description": "TL;DR\nRL後訓練（PPO/GRPO/DAPO）を経たポリシーモデルと参照モデルのlog確率比が、追加訓練なしで最適アドバンテージ関数を厳密に復元する。この「Progress Advantage」は、テスト時拡張・不確実性定量化・障害帰属の3つの応用で、タスク固有の報酬モデルを上回る性能を示す。プロセス報酬モデルが不要になる、まさに\"タダ飯\"である。\n\n\n 1. 背景：なぜプロセス報酬モデルは...",
-      "category": "AI・技術",
-      "rss_category": "",
-      "image_url": ""
-    },
-    {
-      "title": "AXIOM Framework — Terminology GlossaryVersion: 1.0Project: AXIOM Fr",
-      "url": "https://zenn.dev/void09/articles/30518ae4ca4960",
-      "site": "Zenn(LLM)",
-      "published": "2026-08-16T01:52:48Z",
-      "description": "AXIOM Framework — Terminology Glossary\nVersion: 1.0\nProject: AXIOM Framework\nStatus: Prototype / Research Specification\n\n\nAXIOM\n\nAXIOM Framework\nLLMそのものを「賢くする」のではなく、LLMの外側に状態・境界・契約・観測・差分・決定性を管理するRunti...",
-      "category": "AI・技術",
-      "rss_category": "",
-      "image_url": ""
-    },
-    {
-      "title": "Claudeのテキスト透かしは、何を守れないのか",
-      "url": "https://zenn.dev/coldcola/articles/claude-text-watermark",
-      "site": "Zenn(LLM)",
-      "published": "2026-08-16T00:40:30Z",
-      "description": "2026年8月、AnthropicがClaudeの生成テキストに機械可読な透かしを埋め込むと発表しました。EU AI法50条2項への対応が発端ですが、適用範囲は地域で切られておらず、対象モデルを提供する全地域に及びます。\nこの記事は「透かしが入った」ことの是非ではなく、この技術が原理的に何を保護できて、何を保護できないのかを整理します。結論から言えば、保護範囲はかなり狭いのが実情です。そしてその狭...",
       "category": "AI・技術",
       "rss_category": "",
       "image_url": ""
@@ -169,6 +99,16 @@
       "site": "Zenn(LLM)",
       "published": "2026-08-15T23:00:05Z",
       "description": "コードは動いている。テストも通っている。レビューにも出せる。\nなのに、レビュアーに「ここ、なんでこうしたんですか」と聞かれた瞬間、答えが出てこない。画面には自分がマージしたコードが映っていて、コミットログには自分の名前が入っている。それでも、答えが出てこない。\nこの記事は、その状態に名前を付ける。そして、それがどこに溜まっていて、いつ請求が来て、いくらで返せるのかを、対比表と1日の運用手順まで落と...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "27Bクラス最高峰！？ローカルで動く話題のLLM「Qwen 3.8 27B」とは",
+      "url": "https://zenn.dev/ament3/articles/ai-digest-2026-08-14-2224",
+      "site": "Zenn(LLM)",
+      "published": "2026-08-15T22:24:27Z",
+      "description": "Hacker News等の海外テックコミュニティで、Alibaba開発の最新オープンモデル系LLM**「Qwen 3.8 27B（FP8）」**が大きな話題を呼んでいます。\n本記事では、このモデルがなぜ日本のエンジニアにとって注目すべき存在なのか、その概要と背景、そしてPythonを使った具体的な動かし方を解説します。\n\n\n 概要と注目される理由\n\n 1. ローカル環境で現実的に動作する「27B」...",
       "category": "AI・技術",
       "rss_category": "",
       "image_url": ""
