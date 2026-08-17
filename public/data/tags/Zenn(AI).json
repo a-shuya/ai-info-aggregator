@@ -1,7 +1,7 @@
 {
   "site": "Zenn(AI)",
-  "last_updated": "2026-08-17T02:51:53.918003",
-  "total_articles": 12635,
+  "last_updated": "2026-08-17T03:53:14.271825",
+  "total_articles": 12642,
   "articles": [
     {
       "title": "ストーリーボードから始めるTikTok動画制作術：企画から最終カットまで",
@@ -154,16 +154,6 @@
       "image_url": ""
     },
     {
-      "title": "経路計画に学習は必要か：RRT系を20シード回して境界線を引く",
-      "url": "https://zenn.dev/haruhiro1020/articles/0b499fa2fff28b",
-      "site": "Zenn(AI)",
-      "published": "2026-08-16T22:26:38Z",
-      "description": "「これからは Physical AI（フィジカルAI：現実世界で動くロボットなどにAIを載せる分野）だから、RRT のような古典的な経路計画はもう要らない」\nこのところ何度か目にした。ただ、そう書いている記事のどれにも、RRT（Rapidly-exploring Random Trees：ランダムに木を伸ばして通れる経路を探すアルゴリズム）が実際に何ミリ秒で何を返すのかという数字が無かった。手元に...",
-      "category": "AI・技術",
-      "rss_category": "",
-      "image_url": ""
-    },
-    {
       "title": "「消したら賢くなった」回は伸びるか — Claude Code の作者に2回目を賭ける（#24 投稿前予測）",
       "url": "https://zenn.dev/talks_tldr_jp/articles/tldr24-cherny-prediction",
       "site": "Zenn(AI)",
@@ -254,11 +244,41 @@
       "image_url": ""
     },
     {
+      "title": "自分だけのエージェント秘書を作る ③ 知識をつなぐエージェント",
+      "url": "https://zenn.dev/nhandsome/articles/my-agent-assistant-03-knowledge-graph",
+      "site": "Zenn(AI)",
+      "published": "2026-08-16T16:14:30Z",
+      "description": "このブログは、Solar Pro4 がエージェントの活動ログをもとに下書きを自動作成し、Claude と筆者のレビューを経て公開しています。\nシリーズ：① 構成編 → ② 知識インボックス → ③ 知識をつなぐエージェント（この記事）\n!\n3行まとめ\n\n知識を入れる・取り出す・つなぐ3つのエージェント（インボックス・アドバイザー・オントロジー）を、ひとつの知識ストアで結びました\n投げるのはチャット...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "1つの常駐AIエージェントを複数の顧客ワークスペースに安全に置くマルチテナント分離設計",
+      "url": "https://zenn.dev/hach/articles/chat-agent-multi-tenant-isolation-design",
+      "site": "Zenn(AI)",
+      "published": "2026-08-16T16:14:27Z",
+      "description": "チャットに常駐するAIエージェントをSaaSとして提供する場合、実装の初期段階ではあまり意識されないのに、顧客が増えた瞬間に一番重い課題になるのがテナント分離です。1つのエージェント基盤で複数の顧客企業のSlack/Teams/Chatworkワークスペースを同時に相手にするようになると、「Aさんの会社の会話がBさんの会社のレポートに混じる」という事故を構造的に起こせないようにする設計が必須になり...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
       "title": "ソフトウェア設計の統一理論 ── 概念設計・要件定義・DDD・オントロジーを、型で一本の線にする",
       "url": "https://zenn.dev/pninfo/articles/ba44cfd6a714e8",
       "site": "Zenn(AI)",
       "published": "2026-08-16T16:10:24Z",
       "description": "先日、takeshi_teshima氏の「概念設計が、その後のコードの命運を左右する」という記事を読んだ。\nこの記事では、ECサイトにおける Order と Fulfillment の例を通して、ソフトウェアの複雑さは単にコード量や条件分岐の数から生まれるのではなく、現実世界に存在するものを、システムの中でどのような概念として切り分けたかによって大きく左右される、という話がされている。\nこの記事を...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "WindowsのPythonからclaude -pを起動すると複数行プロンプトが最初の改行で切れる",
+      "url": "https://zenn.dev/chikoku_neko/articles/f963b2a2607d02",
+      "site": "Zenn(AI)",
+      "published": "2026-08-16T16:02:46Z",
+      "description": "先に結論（TL;DR）\n\n定型Web作業のエージェント評価で、Claude Code headless（claude -p）側の成功率が3/24から21/24まで動いた。モデルもプロンプトの中身も変えていない。変えたのは、指示をプロセスに渡す実装だけ。\n原因：Windowsでclaude -pをPythonからsubprocess起動すると、複数行のプロンプトが最初の改行以降で失われる。npmでグ...",
       "category": "AI・技術",
       "rss_category": "",
       "image_url": ""
@@ -304,6 +324,36 @@
       "image_url": ""
     },
     {
+      "title": "巨大AIの対極へ。Fire HD 10（完全ローカル）で動く自律型AI「Kokone」を作ってみた",
+      "url": "https://zenn.dev/pok/articles/240333a989c8e1",
+      "site": "Zenn(AI)",
+      "published": "2026-08-16T14:40:30Z",
+      "description": "1. はじめに：なぜFire HD 10なのか\n現在のAI開発のトレンドは、「より巨大なデータセンターで、より多くのパラメータを処理し、常にネットワークに接続されていること」が前提になっています。LLM（大規模言語モデル）の進化は確かに目覚ましいですが、私はその「クラウドの海に浮かぶ万能の辞書」のようなあり方に、少し別の可能性を探りたくなりました。\n「外部ネットワークから完全に切り離された小さな端...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "Qwen3.8 27B に Reasoning Effort を実装してみる",
+      "url": "https://zenn.dev/shogo0x2e/articles/qwen38-27b-stop-overthinking",
+      "site": "Zenn(AI)",
+      "published": "2026-08-16T14:39:24Z",
+      "description": "TL;DR\n\nQwen 3.8 27B を動かすと，曖昧なタスクで thinking が長時間続き，tool call や回答に到達する前に生成上限に達して止まってしまうことがあった．\n解決策として，Per-request reasoning budget の設定を llama.cpp で有効にし，長すぎる thinking はメッセージと共に強制的に切るようにした．\n結果，Minecraft ク...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "非エンジニアがAIセキュリティCTF『Gandalf Adventure』で遊んでみた（Lv4攻略 / write up）",
+      "url": "https://zenn.dev/na417/articles/e57628addadaa6",
+      "site": "Zenn(AI)",
+      "published": "2026-08-16T14:13:47Z",
+      "description": "はじめに\nLakera社が提供するAIセキュリティのCTF「Gandalf Adventure」で遊んでいます。\n英語サイトなので、翻訳にはClaudeを使いながら進めました。\nGandalf Adventureは、AIが特定の話題を避けるように振る舞う中で、プレイヤーがその話題を引き出すCTFです。\nLv1～3までの記事はこちら↓\nLv1,2に挑戦した様子はこちらで書いています。\nhttps:/...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
       "title": "【付録】考察・何が起きたのか？",
       "url": "https://zenn.dev/katsutoatsuto/articles/351886ab7b8e95",
       "site": "Zenn(AI)",
@@ -314,11 +364,31 @@
       "image_url": ""
     },
     {
+      "title": "AIエージェントの暴走を止めたのは、技術ではなく地味なルールだった",
+      "url": "https://zenn.dev/ai_engineernote/articles/e2a2e50c067774",
+      "site": "Zenn(AI)",
+      "published": "2026-08-16T13:52:05Z",
+      "description": "AIに実務を任せ始めて最初にぶつかった問題\nAIエージェントに「情報収集→整理→報告」のような実務を任せてみると、驚くほどよく働いてくれる。困るのはむしろ逆で、**AIが「良かれと思って」先へ進んでしまう瞬間が必ず出てくる。\nたとえば「新しい外部サイトの情報を調べてほしい」と頼むと、AIはロボット排除規約(robots.txt)を確認し、利用規約を探し、内容を要約し……という一連の作業を、ほとんど...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
       "title": "AIコーディングのルール、機械的に強制できるもの・できないもの",
       "url": "https://zenn.dev/nozomi720/articles/rules_machine_enforceable",
       "site": "Zenn(AI)",
       "published": "2026-08-16T13:48:42Z",
       "description": "47個のルールを分類してみた\n前回の記事で、Claude Code への指摘をファイルとして永続化し、指摘回数に応じて hook の強制力を上げる仕組みを書きました。この記事は単体で読めるように書きますが、前回の用語を3つだけ引き継ぎます。\n\n\ncount … 同じ指摘を人間が繰り返した回数。強制力の重み\n\nenforce … ルールを hook が機械的に検知するための条件定義\ninject …...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "GenOfficeとRAGナレッジで資料を下書きするやつを作った",
+      "url": "https://zenn.dev/bathtimefish/articles/eb089fbe8434b0",
+      "site": "Zenn(AI)",
+      "published": "2026-08-16T13:46:09Z",
+      "description": "過去の資料をもとにAIで今日の資料の下書きをする\n\nGenOfficeすごいですね。GenSparkは結構前から使っているんですが、だんだん資料の作り込みが上手くなってきている感じがしています。あのAIスライドやAIシートなんかがそのままデスクトップで使えて下書き編集保存までできるのはすごく便利だなと思いました。もうOfficeいらんかも。\n個人的それより衝撃的だったのはソースコードが公開されてい...",
       "category": "AI・技術",
       "rss_category": "",
       "image_url": ""
