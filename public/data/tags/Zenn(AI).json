@@ -1,18 +1,8 @@
 {
   "site": "Zenn(AI)",
-  "last_updated": "2026-08-17T12:59:38.361975",
+  "last_updated": "2026-08-17T13:47:35.059265",
   "total_articles": 12658,
   "articles": [
-    {
-      "title": "その\"NEVER\"、AIを萎縮させてる？ それとも安全にしてる？ ── 禁止命令が効くときと壊すとき",
-      "url": "https://zenn.dev/motimotinotch/articles/66880c7b283207",
-      "site": "Zenn(AI)",
-      "published": "2026-08-17T11:13:25Z",
-      "description": "1. 「禁止命令を書くな」と「禁止事項は明示せよ」、両方本当らしい\nAIエージェントへのシステムプロンプトを書いていると、正反対に見える2つの実務知見にぶつかる。\n一方には「否定命令はLLMに効きにくい」という指摘がある。\"The Pink Elephant Problem\"は、Anthropicが自社のシステムプロンプトで否定命令ではなく記述的な文体（Claudeが何をする存在かを描写する）を選...",
-      "category": "AI・技術",
-      "rss_category": "",
-      "image_url": ""
-    },
     {
       "title": "DjangoからRustへ、AIと二人三脚で移行してOSS公開するまで",
       "url": "https://zenn.dev/amagi019/articles/wip-django-to-rust-ai",
@@ -124,31 +114,11 @@
       "image_url": ""
     },
     {
-      "title": "4日で14万スター— DeepSeek Harness の設計思想を読む",
-      "url": "https://zenn.dev/acntechjp/articles/89f5209147c2b0",
-      "site": "Zenn(AI)",
-      "published": "2026-08-17T08:39:01Z",
-      "description": "「THERE WILL BE COMPATIBILITY-BREAKING CHANGES（今後、動かなくなる変更を入れます）」\n—— DeepSeek Harness README（2026年8月）\n\n大文字で互換性を壊す変更が今後起こりますと予告するソフトウェアが、4日で14万スターを超えた。\n数字より奇妙なのは評価の割れ方だ。「Agent OS の芽」と持ち上げる側にも、「過剰設計」と切り捨...",
-      "category": "AI・技術",
-      "rss_category": "",
-      "image_url": ""
-    },
-    {
       "title": "AIエージェントと共有する「外脳」の技術構成とHarness Engineeringの実践（2026年8月時点）",
       "url": "https://zenn.dev/enochan/articles/exocortex-architecture-with-ai-agent",
       "site": "Zenn(AI)",
       "published": "2026-08-17T08:03:38Z",
       "description": "はじめに：AIエージェントの「記憶」と「自律性」をどう実装するか\nAIエージェントを実務で運用するとき、セッションが切れるとコンテキストが消えます。どれほど優秀なLLMでも、切れれば初期状態に戻ります。\n筆者は数ヶ月、Manus（クラウド上でエージェントを動かすサービス）上で「マナ」という思考パートナーを運用してきました（体験記）。本記事はその技術編です。ベクトルDBや専用バックエンドは使わず、M...",
-      "category": "AI・技術",
-      "rss_category": "",
-      "image_url": ""
-    },
-    {
-      "title": "論文メモ：Apple MPSデコードの非単調レイテンシを読む",
-      "url": "https://zenn.dev/kas_blog/articles/20260817-apple-mps-kv-cache-latency",
-      "site": "Zenn(AI)",
-      "published": "2026-08-17T08:00:31Z",
-      "description": "はじめに\nこの記事は、Apple MPS上のLLM推論で、生成トークン数を増やしても処理時間が滑らかに増えない現象を調べた論文の技術メモです。\n\n論文タイトル：Non-Monotonic Latency in Apple MPS Decoding: KV Cache Interactions and Execution Regimes\n著者：Willy Fitra Hendria\n公開年：2026...",
       "category": "AI・技術",
       "rss_category": "",
       "image_url": ""
@@ -204,11 +174,41 @@
       "image_url": ""
     },
     {
+      "title": "実際どれだけ速くなる？ Gemma-4のMTPを、普段使いのPCでllama.cpp検証してみた",
+      "url": "https://zenn.dev/highreso/articles/40f75642b9d73e",
+      "site": "Zenn(AI)",
+      "published": "2026-08-17T05:53:30Z",
+      "description": "※この記事は、前回の概念編の続きです。\n前回の概念編では、MTP（マルチトークン予測）が「外れてもほとんど損しないのに、当たれば得をする賭け」であること、そしてQwenとGemmaという2つのモデルがこの賭けをまったく違うやり方で実装していることを見てきました。\n理屈は分かった。でも結局、これって実際どれくらい速くなるのか？賭けはちゃんと勝てているのか？\n今回は実装/検証編として、実際にGemma...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "AIの主張はファクトチェックでは足りない——再現検証という考え方",
+      "url": "https://zenn.dev/explaza/articles/6b648f629d921b",
+      "site": "Zenn(AI)",
+      "published": "2026-08-17T05:22:40Z",
+      "description": "はじめに\nこんにちは！\n株式会社エクスプラザのhyodoです！\nSNSでAI関連の情報を追っていて、こんなふうに思ったことはありませんか？\n\n「この\"神プロンプト\"、本当に効果あるの？」\n「爆速になったって書いてあるけど、どれくらい速いんだろう」\n「保存数がすごいから正しそうだけど、誰か実際に試したのかな」\n\nAI関連の情報は毎日大量に流れてきます。ただ、その中で「実際に試しました」と書いてあるも...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
       "title": "気に入ったUIのコンポーネントを保存して再利用する",
       "url": "https://zenn.dev/volcane/articles/fddf017ce520dc",
       "site": "Zenn(AI)",
       "published": "2026-08-17T05:21:01Z",
       "description": "AIくさいUI問題はよく話題になりますよね。\nなので、部品（コンポーネント）単位のUIのライブラリを作成して、それをAIに参照させたり、逆にAIが作成したUIを保存し、別のプロダクトでも再利用できたら便利だと思い、HTML(CSS)を保存できるデスクトップアプリを作成しました。\nその名は「Component Vault」\n直訳すると「コンポーネントの保管庫」です。\nコンポーネント単位でUIを保管庫...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "axiom_capsule_demo",
+      "url": "https://zenn.dev/void09/articles/4ed97e0d731e3e",
+      "site": "Zenn(AI)",
+      "published": "2026-08-17T05:15:57Z",
+      "description": "[package]\nname = \"axiom_capsule_demo\"\nversion = \"0.1.0\"\nedition = \"2021\"\n[dependencies]\nserde = { version = \"1.0\", features = [\"derive\"] }\nserde_json = \"1.0\"\nsha2 = \"0.10\"\nuse serde::{Deserialize, Ser...",
       "category": "AI・技術",
       "rss_category": "",
       "image_url": ""
@@ -244,11 +244,31 @@
       "image_url": ""
     },
     {
+      "title": "AI時代のキャリア戦略 第10回（最終回）　AI時代のキャリア戦略",
+      "url": "https://zenn.dev/jinfuroi/articles/5aafaf9c69ded2",
+      "site": "Zenn(AI)",
+      "published": "2026-08-17T03:59:34Z",
+      "description": "AIに奪われない仕事を探すより、キャリアを再設計できる人になる\n\nAI時代のキャリア戦略 第10回（最終回）\n\nこのシリーズでは、ここまで9回にわたって、AI時代のキャリアについて考えてきました。\n最初の問いは、\n「AIは仕事を奪うのか」\nというものでした。\nしかし、考え続けていくうちに、私の中では少し違う答えが見えてきました。\nAIが大きく変えるのは、仕事が「あるか、ないか」だけではありません。...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
       "title": "【2026年最新・保存版】Microsoft Agent Frameworkとは？AutoGen × Semantic Kernelの後継",
       "url": "https://zenn.dev/m_sakaaai/articles/805c31f15d93b8",
       "site": "Zenn(AI)",
       "published": "2026-08-17T03:03:49Z",
       "description": "Semantic KernelとAutoGen、結局どっち使えばいいの？\n——その悩み、Microsoftが2025年に公式に終わらせました。\nこんにちは。この記事では、いま.NET / Python界隈で最もアツいAIエージェント開発SDK、Microsoft Agent Framework (MAF) について、これ1本読めば概要をつかめる保存版としてまとめました。\nブックマーク推奨です。\n\n...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "AIエージェントにIDEは必要か？ Android StudioとJetBrains Contextから考えるIDEの未来",
+      "url": "https://zenn.dev/kauchi/articles/android-studio-for-ai-agent",
+      "site": "Zenn(AI)",
+      "published": "2026-08-17T03:02:20Z",
+      "description": "はじめに\nAIエージェントがコーディングするのを眺めているとき、人間がIDEを使ってコーディングをしていた時代と明らかにやり方が違う点に気づくことはないでしょうか？\nAIエージェントがコードベースを探索・検索するときのTool Callを眺めてみると、Grepツールを多用しています。\n人間がコーディングをしていた時代（だんだん忘れてきていますが）には、文字列照合でコード定義を探すよりも、IDEのジ...",
       "category": "AI・技術",
       "rss_category": "",
       "image_url": ""
@@ -364,16 +384,6 @@
       "image_url": ""
     },
     {
-      "title": "地球46億年を「1年」にしたら、いま世界を騒がせるAIの進化は“最後の0.03秒”だった",
-      "url": "https://zenn.dev/acntechjp/articles/af81893302f9a2",
-      "site": "Zenn(AI)",
-      "published": "2026-08-16T23:35:47Z",
-      "description": "あなたの一生は、地球の歴史からすると何秒くらいだと思いますか。\n地球が生まれてから今日までの45.4億年を、もし1年間のカレンダーに圧縮してみると──恐竜も、私たち人類も、いまニュースを賑わせている生成AIも、全員がその1年のどこかに登場します。ただし、登場するタイミングには、めまいがするほどの差があります。\n\n恐竜が現れるのは、12月中旬\n私たちホモ・サピエンスが現れるのは、大晦日の夜、23時2...",
-      "category": "AI・技術",
-      "rss_category": "",
-      "image_url": ""
-    },
-    {
       "title": "43. レビュー機構を作ったのに、自分の成果物に回さなかった — 「機械判定PASS」を「レビュー済み」と読み替えた失敗",
       "url": "https://zenn.dev/yamada_ai_dev/articles/review-harness-not-run",
       "site": "Zenn(AI)",
@@ -409,16 +419,6 @@
       "site": "Zenn(AI)",
       "published": "2026-08-16T22:30:05Z",
       "description": "対象読者\n\nCodex を効率よく使う方法を知りたい方\nChatGPT を契約しているけど、開発では Codex ばかり使っている方\nClaude Code を使っているけど、Codex にも興味がある方\n\n\n はじめに\nCodex を使って開発していると、調査や実装計画、コード変更、レビューなど、さまざまな工程をそのまま Codex にお願いしたくなります。また、Codex には利用枠があるため...",
-      "category": "AI・技術",
-      "rss_category": "",
-      "image_url": ""
-    },
-    {
-      "title": "経路計画に学習は必要か：RRT系を20シード回して境界線を引く",
-      "url": "https://zenn.dev/haruhiro1020/articles/0b499fa2fff28b",
-      "site": "Zenn(AI)",
-      "published": "2026-08-16T22:26:38Z",
-      "description": "「これからは Physical AI（フィジカルAI：現実世界で動くロボットなどにAIを載せる分野）だから、RRT のような古典的な経路計画はもう要らない」\nこのところ何度か目にした。ただ、そう書いている記事のどれにも、RRT（Rapidly-exploring Random Trees：ランダムに木を伸ばして通れる経路を探すアルゴリズム）が実際に何ミリ秒で何を返すのかという数字が無かった。手元に...",
       "category": "AI・技術",
       "rss_category": "",
       "image_url": ""
