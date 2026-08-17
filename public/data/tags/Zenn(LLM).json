@@ -1,7 +1,7 @@
 {
   "site": "Zenn(LLM)",
-  "last_updated": "2026-08-17T01:51:00.437128",
-  "total_articles": 5405,
+  "last_updated": "2026-08-17T02:51:53.918003",
+  "total_articles": 5411,
   "articles": [
     {
       "title": "自分だけのエージェント秘書を作る ③ 知識をつなぐエージェント",
@@ -34,6 +34,36 @@
       "image_url": ""
     },
     {
+      "title": "Qwen3.8 27B に Reasoning Effort を実装してみる",
+      "url": "https://zenn.dev/shogo0x2e/articles/qwen38-27b-stop-overthinking",
+      "site": "Zenn(LLM)",
+      "published": "2026-08-16T14:39:24Z",
+      "description": "TL;DR\n\nQwen 3.8 27B を動かすと，曖昧なタスクで thinking が長時間続き，tool call や回答に到達する前に生成上限に達して止まってしまうことがあった．\n解決策として，Per-request reasoning budget の設定を llama.cpp で有効にし，長すぎる thinking はメッセージと共に強制的に切るようにした．\n結果，Minecraft ク...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "非エンジニアがAIセキュリティCTF『Gandalf Adventure』で遊んでみた（Lv4攻略 / write up）",
+      "url": "https://zenn.dev/na417/articles/e57628addadaa6",
+      "site": "Zenn(LLM)",
+      "published": "2026-08-16T14:13:47Z",
+      "description": "はじめに\nLakera社が提供するAIセキュリティのCTF「Gandalf Adventure」で遊んでいます。\n英語サイトなので、翻訳にはClaudeを使いながら進めました。\nGandalf Adventureは、AIが特定の話題を避けるように振る舞う中で、プレイヤーがその話題を引き出すCTFです。\nLv1～3までの記事はこちら↓\nLv1,2に挑戦した様子はこちらで書いています。\nhttps:/...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "GenOfficeとRAGナレッジで資料を下書きするやつを作った",
+      "url": "https://zenn.dev/bathtimefish/articles/eb089fbe8434b0",
+      "site": "Zenn(LLM)",
+      "published": "2026-08-16T13:46:09Z",
+      "description": "過去の資料をもとにAIで今日の資料の下書きをする\n\nGenOfficeすごいですね。GenSparkは結構前から使っているんですが、だんだん資料の作り込みが上手くなってきている感じがしています。あのAIスライドやAIシートなんかがそのままデスクトップで使えて下書き編集保存までできるのはすごく便利だなと思いました。もうOfficeいらんかも。\n個人的それより衝撃的だったのはソースコードが公開されてい...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
       "title": "Qwen3.8-27BをRX6800 16GBで動かしてローカルモデルを比較してみた",
       "url": "https://zenn.dev/omohikane/articles/qwen38-test-my-rx6800",
       "site": "Zenn(LLM)",
@@ -54,11 +84,41 @@
       "image_url": ""
     },
     {
+      "title": "pi-coding-agentを使わずにOpenCode Go×Hermes Agentを選んだ理由",
+      "url": "https://zenn.dev/jodycraft/articles/c35818f2f6c28a",
+      "site": "Zenn(LLM)",
+      "published": "2026-08-16T13:26:35Z",
+      "description": "正直に言うと、この記事を書くまで自分でも整理できていなかったことがある。「OpenCode Go×pi-coding-agent」の組み合わせがハーネス界隈で評判になっているのを見て、自分もそれで行こうと思っていたのに、実際に手を動かしたら別の組み合わせに落ち着いていた、という話です。\n3週間ほど記事の更新を空けていた間、Discord経由でAIエージェントに指示を出しながらBlazor Web ...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
       "title": "GPT-5.6が最大14倍速に、GLM-5.3はウェイト公開延期 週刊AIニュース(8/10-15)",
       "url": "https://zenn.dev/ainewsdaily/articles/20260816_general_t1",
       "site": "Zenn(LLM)",
       "published": "2026-08-16T12:53:08Z",
       "description": "2026年8月10日から15日にかけてAI業界で動きがあった9件のうち、3件を詳しく取り上げる週刊まとめです。OpenAIとCerebrasが速さを商品にしたUltrafast、Z.aiのGLM-5.3が招いたウェイト公開の先送り、CodexデスクトップアプリのLinux版プレビューという3つの動きを中心に、動画を見ていない方にも要点が伝わるように書き直しました。\nhttps://youtu.be...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "待ち時間を予測してLLM推論を振り分ける、llm-dの予測レイテンシ・ルーティング",
+      "url": "https://zenn.dev/okssusucha/articles/20260709-llm-d-predicted-latency-scheduling",
+      "site": "Zenn(LLM)",
+      "published": "2026-08-16T12:05:21Z",
+      "description": "LLM を複数台のGPUサーバーで捌くとき、リクエストをどのサーバーへ送るかは意外と厄介だ。KVキャッシュの再利用を狙って同じ接頭辞のリクエストを1台に寄せれば、そのサーバーだけ混んで待ち時間が跳ねる。逆に負荷を平らに散らせば、せっかくのキャッシュが効かず prefill をやり直す。プロンプト長も出力長も数時間で桁が変わる本番トラフィックでは、どちらに寄せた固定の重み付けも遅かれ早かれ破綻する。...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "設計も実装もレビューもAIがやる個人開発で、精度をどう出しているか",
+      "url": "https://zenn.dev/r2_san/articles/2daa394288fcef",
+      "site": "Zenn(LLM)",
+      "published": "2026-08-16T11:50:36Z",
+      "description": "私は個人で AI coding agent の runtime を作っています。\nこの製品は、設計も、実装も、実装のレビューも、AI が行っています。\n私がやっているのは、AI に渡す最初の指示の精度を上げることと、最終的な成果物が目的に達しているかを確認することです。その間の設計・実装・レビューは、それぞれ別の AI が担います。この記事では、作業指示書を書く AI を設計 AI、コードを書く ...",
       "category": "AI・技術",
       "rss_category": "",
       "image_url": ""
