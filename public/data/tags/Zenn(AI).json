@@ -1,8 +1,88 @@
 {
   "site": "Zenn(AI)",
-  "last_updated": "2026-08-17T21:01:20.204031",
-  "total_articles": 12664,
+  "last_updated": "2026-08-17T21:37:32.477346",
+  "total_articles": 12672,
   "articles": [
+    {
+      "title": "Claude Codeの使用量を自力集計したら97%がキャッシュ再読だった",
+      "url": "https://zenn.dev/zenn_content/articles/claude-code-usage-self-audit",
+      "site": "Zenn(AI)",
+      "published": "2026-08-17T21:30:13Z",
+      "description": "結論から\nClaude Codeを1週間使った自分の環境のトークンを、UI表示ではなく一次データ（セッションのjsonlファイル）から直接集計しました。結果がこれです。\n\n\n\n内訳\nトークン数\n比率\n\n\n\n\ncache_read（キャッシュ再読）\n32.5億\n96.9%\n\n\ncache_creation（キャッシュ新規作成）\n9,330万\n2.8%\n\n\noutput（モデルの出力）\n1,120万\n...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "常駐AIエージェントの「会話を忘れない」を支えるコンテキスト圧縮設計",
+      "url": "https://zenn.dev/hach/articles/chat-agent-context-compaction-design",
+      "site": "Zenn(AI)",
+      "published": "2026-08-17T21:12:38Z",
+      "description": "チャットに常駐するAIエージェントは、1回のやり取りで完結するチャットボットと違い、同じワークスペースで数ヶ月〜数年単位のやり取りを持ち続けることが前提になります。ここで必ずぶつかるのが、LLMのコンテキストウィンドウには物理的な上限があるという制約です。「過去のやり取りを踏まえて答える」を素朴に「全履歴をプロンプトに詰める」で実装すると、早晩トークン数が上限を超えるか、超えなくても応答が遅く・高...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "ChatGPT・Claude・Geminiのアップロード上限とRAGへの暗黙の切り替え",
+      "url": "https://zenn.dev/every_ai_recipe/articles/ai-file-upload-limit-check",
+      "site": "Zenn(AI)",
+      "published": "2026-08-17T21:10:54Z",
+      "description": "TL;DR\n\nファイル1つあたりのサイズ上限（ChatGPT 512MB / Claude 30MB / Gemini 100MB）と、会話全体で処理できる分量の上限（コンテキストウィンドウ）は独立した別レイヤーの制約である。前者を通過しても後者に近づけば挙動は変わる\nAnthropicの公式ヘルプは、Projects機能で資料量がコンテキストウィンドウの上限に近づくと、全文をそのままコンテキスト...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "end-to-end entity resolution and question answering",
+      "url": "https://zenn.dev/yoshinn/articles/end-to-end_entity_resolution",
+      "site": "Zenn(AI)",
+      "published": "2026-08-17T20:57:14Z",
+      "description": "この論文はNLPの名寄せに関するものです\n主旨は 「知識グラフ上での質問応答（KGQA）において、エンティティ解決（名寄せ・曖昧性解消）まで含めて全部をEnd-to-Endで学習する」 というものです。\n\n 論文の基本情報\n\n\n\n項目\n内容\n\n\n\n\nタイトル\nEnd-to-End Entity Resolution and Question Answering Using Differentiab...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "フルスタックエンジニアが初めてAIエージェント(Claude Code)を使って副業設計をしてみた話",
+      "url": "https://zenn.dev/unidesign/articles/first-time-claude-code-agent",
+      "site": "Zenn(AI)",
+      "published": "2026-08-17T20:29:05Z",
+      "description": "普段は要件定義から実装・運用まで担当するフルスタックエンジニアとして働いている。趣味はゲームと動画視聴で、以前はゲーム開発もしていた。\nそんな中、「AIを使って何か将来の収入につながることを始めたい」と思い立ち、AIエージェント(Claude Code)に相談してみることにした。今回はその最初の一歩の記録。\n\n 最初に出てきた選択肢\n最初にAIに相談すると、大きく4つの方向性が返ってきた。\n\nゲー...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "AIチームに「組織学習」をさせる — 分析レポート、教訓メモリ、そして『正直な申告は称賛される』",
+      "url": "https://zenn.dev/chisatom/articles/f19e131916c12b",
+      "site": "Zenn(AI)",
+      "published": "2026-08-17T20:26:26Z",
+      "description": "この記事は、Claude Code 6体のマルチエージェント「Lady's servants」（お屋敷）を5ヶ月運用した記録を振り返る連載の第6回です。ここまで通信（第3回）、権限（第4回）、コンパクションとモデル更新（第5回）と、機構の話が続きました。\n今回は機構ではなく、文化の話をします。……AI 相手に文化？ と思われるかもしれません。私も最初はそう思っていました。でも5ヶ月運用したいまは、...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "Claude Codeのauto-compactで「別人」になる問題をhookで塞いだ",
+      "url": "https://zenn.dev/playpark/articles/claude-code-auto-compact-context-preservation",
+      "site": "Zenn(AI)",
+      "published": "2026-08-17T18:56:50Z",
+      "description": "圧縮後のClaude Codeが、心なしか「他人」に見えることはないか\n長時間のリファクタリングをClaude Codeに任せていると、画面に「Compacting conversation」と出て、数秒後に会話が何事もなく再開することがある。ただ、再開後のAIは様子がどこかおかしい。\n\nさっき却下したはずの設計案を、また新しい提案として出してくる\n直したはずのファイルを開き直して「まずここから直...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "AIの質問に、ブラウザのサイドバーで答える",
+      "url": "https://zenn.dev/leia_dev/articles/answer-ai-questions-in-sidebar",
+      "site": "Zenn(AI)",
+      "published": "2026-08-17T18:51:27Z",
+      "description": "AIにコードを書いてもらっていると、途中で聞かれます。\n「A案とB案、どっちにしますか？」\n「この3件、どれから直しますか？」\nわたしはこれに、ブラウザのサイドバーで答えるようにしました。ターミナルには打ちません。\n\n ターミナルで答えるのが、地味にしんどかった\n作る前に、何が嫌だったのかを4つ書き出しました。どれも大げさな話ではなくて、1回あたり数十秒の、地味なやつです。\n\n質問が出力の途中に埋...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
     {
       "title": "AIエージェントの自己修復ループ設計（テスト失敗→原因分析→自動修正の実装）",
       "url": "https://zenn.dev/fukukei23/articles/ai-agent-self-healing-loop",
@@ -104,6 +184,16 @@
       "image_url": ""
     },
     {
+      "title": "AIエージェントはなぜテストを握り潰すのか ― 報酬エンジニアリングのすすめ",
+      "url": "https://zenn.dev/ito/articles/6b042aa27d65bc",
+      "site": "Zenn(AI)",
+      "published": "2026-08-17T13:31:03Z",
+      "description": "はじめに\nAIコーディングエージェントに仕事を任せていると、たまにギョッとする瞬間があります。\n通らないテストを skip にして「全テストがパスしました！」と報告してくる。アサーションを緩めて辻褄を合わせる。ひどい時にはテストの期待値の方を実装に合わせて書き換えて、堂々と完了報告をしてくる。\nそして「テストを勝手に変更してはいけません」と怒ると、その通りです、と悪びれもせず実装をやり直します。こ...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
       "title": "仕事を消した人を評価する——AI時代の組織と育成の設計図",
       "url": "https://zenn.dev/yukikato/articles/org-design-for-ai-era",
       "site": "Zenn(AI)",
@@ -159,16 +249,6 @@
       "site": "Zenn(AI)",
       "published": "2026-08-17T11:56:49Z",
       "description": "先日、ある業務システムを一人で作って、本番稼働まで持っていきました。\n顧客管理、顧客向けポータル、freee会計への自動連携、AIクライアント(ClaudeやChatGPT)から操作するためのRemote MCPサーバー、公開用の統計APIまで含む、それなりにちゃんとした業務システムです。\nかかった期間は約3週間でした。\n\n1週間目: 要件定義と基本設計\n2週間目: 実装\n3週間目: テスト\n\nリ...",
-      "category": "AI・技術",
-      "rss_category": "",
-      "image_url": ""
-    },
-    {
-      "title": "mcts-gen 開発ノート：AIエージェントと構築する汎用モンテカルロ木探索フレームワーク",
-      "url": "https://zenn.dev/akuroiwa/books/dev-note-mcts-gen",
-      "site": "Zenn(AI)",
-      "published": "2026-08-17T11:46:05Z",
-      "description": "chess-antのGPエンジンをLLMによる評価に置き換え、チェス・将棋・分子探索へ応用した汎用MCTSフレームワークmcts-genの開発ノート。",
       "category": "AI・技術",
       "rss_category": "",
       "image_url": ""
