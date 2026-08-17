@@ -1,38 +1,8 @@
 {
   "site": "Zenn(AI)",
-  "last_updated": "2026-08-17T23:30:43.069504",
-  "total_articles": 12669,
+  "last_updated": "2026-08-17T23:52:54.836303",
+  "total_articles": 12668,
   "articles": [
-    {
-      "title": "Claude Codeの使用量を自力集計したら97%がキャッシュ再読だった",
-      "url": "https://zenn.dev/zenn_content/articles/claude-code-usage-self-audit",
-      "site": "Zenn(AI)",
-      "published": "2026-08-17T21:30:13Z",
-      "description": "結論から\nClaude Codeを1週間使った自分の環境のトークンを、UI表示ではなく一次データ（セッションのjsonlファイル）から直接集計しました。結果がこれです。\n\n\n\n内訳\nトークン数\n比率\n\n\n\n\ncache_read（キャッシュ再読）\n32.5億\n96.9%\n\n\ncache_creation（キャッシュ新規作成）\n9,330万\n2.8%\n\n\noutput（モデルの出力）\n1,120万\n...",
-      "category": "AI・技術",
-      "rss_category": "",
-      "image_url": ""
-    },
-    {
-      "title": "常駐AIエージェントの「会話を忘れない」を支えるコンテキスト圧縮設計",
-      "url": "https://zenn.dev/hach/articles/chat-agent-context-compaction-design",
-      "site": "Zenn(AI)",
-      "published": "2026-08-17T21:12:38Z",
-      "description": "チャットに常駐するAIエージェントは、1回のやり取りで完結するチャットボットと違い、同じワークスペースで数ヶ月〜数年単位のやり取りを持ち続けることが前提になります。ここで必ずぶつかるのが、LLMのコンテキストウィンドウには物理的な上限があるという制約です。「過去のやり取りを踏まえて答える」を素朴に「全履歴をプロンプトに詰める」で実装すると、早晩トークン数が上限を超えるか、超えなくても応答が遅く・高...",
-      "category": "AI・技術",
-      "rss_category": "",
-      "image_url": ""
-    },
-    {
-      "title": "ChatGPT・Claude・Geminiのアップロード上限とRAGへの暗黙の切り替え",
-      "url": "https://zenn.dev/every_ai_recipe/articles/ai-file-upload-limit-check",
-      "site": "Zenn(AI)",
-      "published": "2026-08-17T21:10:54Z",
-      "description": "TL;DR\n\nファイル1つあたりのサイズ上限（ChatGPT 512MB / Claude 30MB / Gemini 100MB）と、会話全体で処理できる分量の上限（コンテキストウィンドウ）は独立した別レイヤーの制約である。前者を通過しても後者に近づけば挙動は変わる\nAnthropicの公式ヘルプは、Projects機能で資料量がコンテキストウィンドウの上限に近づくと、全文をそのままコンテキスト...",
-      "category": "AI・技術",
-      "rss_category": "",
-      "image_url": ""
-    },
     {
       "title": "end-to-end entity resolution and question answering",
       "url": "https://zenn.dev/yoshinn/articles/end-to-end_entity_resolution",
@@ -49,16 +19,6 @@
       "site": "Zenn(AI)",
       "published": "2026-08-17T20:29:05Z",
       "description": "普段は要件定義から実装・運用まで担当するフルスタックエンジニアとして働いている。趣味はゲームと動画視聴で、以前はゲーム開発もしていた。\nそんな中、「AIを使って何か将来の収入につながることを始めたい」と思い立ち、AIエージェント(Claude Code)に相談してみることにした。今回はその最初の一歩の記録。\n\n 最初に出てきた選択肢\n最初にAIに相談すると、大きく4つの方向性が返ってきた。\n\nゲー...",
-      "category": "AI・技術",
-      "rss_category": "",
-      "image_url": ""
-    },
-    {
-      "title": "AIチームに「組織学習」をさせる — 分析レポート、教訓メモリ、そして『正直な申告は称賛される』",
-      "url": "https://zenn.dev/chisatom/articles/f19e131916c12b",
-      "site": "Zenn(AI)",
-      "published": "2026-08-17T20:26:26Z",
-      "description": "この記事は、Claude Code 6体のマルチエージェント「Lady's servants」（お屋敷）を5ヶ月運用した記録を振り返る連載の第6回です。ここまで通信（第3回）、権限（第4回）、コンパクションとモデル更新（第5回）と、機構の話が続きました。\n今回は機構ではなく、文化の話をします。……AI 相手に文化？ と思われるかもしれません。私も最初はそう思っていました。でも5ヶ月運用したいまは、...",
       "category": "AI・技術",
       "rss_category": "",
       "image_url": ""
@@ -214,6 +174,16 @@
       "image_url": ""
     },
     {
+      "title": "AI エージェントに人間の承認が義務化」は本当か — AI 事業者ガイドライン第 1.2 版を原文で読む",
+      "url": "https://zenn.dev/exapolicy/articles/fee90e94cbe49d",
+      "site": "Zenn(AI)",
+      "published": "2026-08-17T12:15:30Z",
+      "description": "はじめに\n2026 年 3 月 31 日、総務省と経済産業省は「AI 事業者ガイドライン (第 1.2 版)」を公表しました。この改訂をめぐって、「AI エージェントへの Human-in-the-Loop が義務化された」「監査ログの保持が義務付けられた」といった紹介を見かけることがあります。\n私たちも当初、そうした解説をもとに記事を書きかけました。しかし原文 (本編 42 ページ+別添 185...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
       "title": "AIエージェント時代のツーピザ文化──作ってから書くプロダクト定義",
       "url": "https://zenn.dev/okssusucha/articles/20260709-return-to-two-pizza-culture",
       "site": "Zenn(AI)",
@@ -229,6 +199,26 @@
       "site": "Zenn(AI)",
       "published": "2026-08-17T11:56:49Z",
       "description": "先日、ある業務システムを一人で作って、本番稼働まで持っていきました。\n顧客管理、顧客向けポータル、freee会計への自動連携、AIクライアント(ClaudeやChatGPT)から操作するためのRemote MCPサーバー、公開用の統計APIまで含む、それなりにちゃんとした業務システムです。\nかかった期間は約3週間でした。\n\n1週間目: 要件定義と基本設計\n2週間目: 実装\n3週間目: テスト\n\nリ...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "mcts-gen 開発ノート：AIエージェントと構築する汎用モンテカルロ木探索フレームワーク",
+      "url": "https://zenn.dev/akuroiwa/books/dev-note-mcts-gen",
+      "site": "Zenn(AI)",
+      "published": "2026-08-17T11:46:05Z",
+      "description": "chess-antのGPエンジンをLLMによる評価に置き換え、チェス・将棋・分子探索へ応用した汎用MCTSフレームワークmcts-genの開発ノート。",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "プロジェクトがPCのあちこちに散らばって困ってないか？ 集約からランチャー自作まで",
+      "url": "https://zenn.dev/mika_and_coco/articles/claude-code-trouble-01-scatter",
+      "site": "Zenn(AI)",
+      "published": "2026-08-17T11:26:09Z",
+      "description": "Claude Code を使っていて出会う「よくある困りごと」を、1記事完結で解決するシリーズです。今回のテーマはプロジェクトフォルダの散らばりです。\n\n こんなことで困ってないか？\n\nプロジェクトがデスクトップ・ドキュメント・C:\\src・ドライブ直下など、PCのあちこちに散らばっている\n\nフォルダ名を見ても中身が思い出せない（新しいフォルダー (2) の中に大事なツールが入っている）\n作業を始...",
       "category": "AI・技術",
       "rss_category": "",
       "image_url": ""
