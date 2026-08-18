@@ -1,6 +1,6 @@
 {
   "site": "Zenn(LLM)",
-  "last_updated": "2026-08-18T03:27:27.650516",
+  "last_updated": "2026-08-18T04:10:07.104353",
   "total_articles": 5445,
   "articles": [
     {
@@ -9,6 +9,36 @@
       "site": "Zenn(LLM)",
       "published": "2026-08-17T22:16:47Z",
       "description": "!\n2026-08-16時点の情報です。参照した論文はarXiv 2601.17087のv2版（2026-01-28更新）です。\n\n\n はじめに\nカスタマーサポートのAIエージェントは、お客さんと何度もやり取りしながら、未発送の注文を変更したり、配達済みの注文の返品を受け付けたりします。うまく動くかを測るには、お客さん役が必要です。\nそのお客さん役も、いまはLLMに演じさせるのが普通になっています...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "Claude Codeの使用量を自力集計したら97%がキャッシュ再読だった",
+      "url": "https://zenn.dev/zenn_content/articles/claude-code-usage-self-audit",
+      "site": "Zenn(LLM)",
+      "published": "2026-08-17T21:30:13Z",
+      "description": "結論から\nClaude Codeを1週間使った自分の環境のトークンを、UI表示ではなく一次データ（セッションのjsonlファイル）から直接集計しました。結果がこれです。\n\n\n\n内訳\nトークン数\n比率\n\n\n\n\ncache_read（キャッシュ再読）\n32.5億\n96.9%\n\n\ncache_creation（キャッシュ新規作成）\n9,330万\n2.8%\n\n\noutput（モデルの出力）\n1,120万\n...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "常駐AIエージェントの「会話を忘れない」を支えるコンテキスト圧縮設計",
+      "url": "https://zenn.dev/hach/articles/chat-agent-context-compaction-design",
+      "site": "Zenn(LLM)",
+      "published": "2026-08-17T21:12:38Z",
+      "description": "チャットに常駐するAIエージェントは、1回のやり取りで完結するチャットボットと違い、同じワークスペースで数ヶ月〜数年単位のやり取りを持ち続けることが前提になります。ここで必ずぶつかるのが、LLMのコンテキストウィンドウには物理的な上限があるという制約です。「過去のやり取りを踏まえて答える」を素朴に「全履歴をプロンプトに詰める」で実装すると、早晩トークン数が上限を超えるか、超えなくても応答が遅く・高...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "ChatGPT・Claude・Geminiのアップロード上限とRAGへの暗黙の切り替え",
+      "url": "https://zenn.dev/every_ai_recipe/articles/ai-file-upload-limit-check",
+      "site": "Zenn(LLM)",
+      "published": "2026-08-17T21:10:54Z",
+      "description": "TL;DR\n\nファイル1つあたりのサイズ上限（ChatGPT 512MB / Claude 30MB / Gemini 100MB）と、会話全体で処理できる分量の上限（コンテキストウィンドウ）は独立した別レイヤーの制約である。前者を通過しても後者に近づけば挙動は変わる\nAnthropicの公式ヘルプは、Projects機能で資料量がコンテキストウィンドウの上限に近づくと、全文をそのままコンテキスト...",
       "category": "AI・技術",
       "rss_category": "",
       "image_url": ""
@@ -24,41 +54,11 @@
       "image_url": ""
     },
     {
-      "title": "LLM による意味論検証を支える規律 〜参照整合性への応用例を添えて〜",
-      "url": "https://zenn.dev/flip451/articles/sotohe-semantic-gate",
-      "site": "Zenn(LLM)",
-      "published": "2026-08-17T16:25:43Z",
-      "description": "プログラムの正しさには、シンタックス（構文）とセマンティクス（意味論）の両面がある。構文の検証は機械の得意分野で、コンパイラや lint が昔から黙って引き受けてきた。一方、意味論の検証——この仕様は設計の意図と矛盾していないか、このコードをレビューして指摘すべき所見はないか——は、長らく人間のレビューに頼るほかなかった。そして人間のレビューは、高価で、再現せず、属人的だ。\nLLM の登場が、この...",
-      "category": "AI・技術",
-      "rss_category": "",
-      "image_url": ""
-    },
-    {
       "title": "韻豆判定器を作ってみた",
       "url": "https://zenn.dev/miggy/articles/afe5e4161d94ff",
       "site": "Zenn(LLM)",
       "published": "2026-08-17T15:00:05Z",
       "description": "はじめに\n1年位前から言語モデルを使ったアプリケーションを作りたいと思っていたのですが，これといったアイデアが浮かばず，うだうだしていました．何か自分の好きなものを使ったアプリケーションを…と思っていたのですが，急に思いついて韻豆判定器を作ってみました！\n韻豆判定器を作ってみました！と言われても困る人がほとんどだと思います．韻豆とは真空ジェシカの川北さんがゼロから生み出したキャラクターです．真空ジ...",
-      "category": "AI・技術",
-      "rss_category": "",
-      "image_url": ""
-    },
-    {
-      "title": "自分のPCでAIエージェントが動く？Meta「Muse Glimmer」でできること",
-      "url": "https://zenn.dev/arc0922/articles/2d6316e1cfeedc",
-      "site": "Zenn(LLM)",
-      "published": "2026-08-17T14:59:56Z",
-      "description": "0. 前提\nこの記事では難しい言葉を使わず、わかりやすさを重視しています。\n\n 1. Muse Glimmerってなぁに？\nざっくり言うと、自分のパソコンの中でずっと隣にいて仕事を手伝ってくれる、優秀な専属アシスタントのようなAIです。\n2026年8月にMeta社（Facebookの会社）から発表された、約300億(30B)もの知識量を持つAIモデルです。\n約300億？と言われてもわかりづらいので...",
-      "category": "AI・技術",
-      "rss_category": "",
-      "image_url": ""
-    },
-    {
-      "title": "日本語入力システムSumibiの開発 part22: App Store審査で実際に来た2回の指摘",
-      "url": "https://zenn.dev/kiyoka/articles/japanese-input-method-sumibi-22",
-      "site": "Zenn(LLM)",
-      "published": "2026-08-17T12:24:01Z",
-      "description": "はじめに\npart21 では、iPhoneアプリ版のSumibiをApp Storeへ申請するまでにやった審査対策を書きました。「AIを使う」「キーボード拡張である」「BYOK(利用者が自分のAPIキーを持ち込む)」という3つの性質から、5つの壁を想定して潰していった話です。\nその申請の結果です。2回の指摘を受け、それぞれに回答して審査を通過し、公開されました。\n\nhttps://apps.app...",
       "category": "AI・技術",
       "rss_category": "",
       "image_url": ""
@@ -74,21 +74,21 @@
       "image_url": ""
     },
     {
-      "title": "Azure OpenAI Responses API の会話状態設計 — サーバに預けられるもの、手元に残るもの",
-      "url": "https://zenn.dev/archiningen/articles/responses-api-conversation-state",
+      "title": "日本語入力システムSumibiの開発 part22: App Store審査で実際に来た2回の指摘",
+      "url": "https://zenn.dev/kiyoka/articles/japanese-input-method-sumibi-22",
       "site": "Zenn(LLM)",
-      "published": "2026-08-17T11:49:03Z",
-      "description": "!\nこの記事は archiningen.com からの転載です。\n連載「AI エージェント API の本番設計」の第 1 回 (全 4 回) です。\n\n\nAzure OpenAI の Responses API には previous_response_id があり、会話履歴をサーバ側に持たせられます。ならば自前のストレージには何を持てばいいのか。筆者が 4 ヶ月ほど本番で回しているシステムの答え...",
+      "published": "2026-08-17T12:24:01Z",
+      "description": "はじめに\npart21 では、iPhoneアプリ版のSumibiをApp Storeへ申請するまでにやった審査対策を書きました。「AIを使う」「キーボード拡張である」「BYOK(利用者が自分のAPIキーを持ち込む)」という3つの性質から、5つの壁を想定して潰していった話です。\nその申請の結果です。2回の指摘を受け、それぞれに回答して審査を通過し、公開されました。\n\nhttps://apps.app...",
       "category": "AI・技術",
       "rss_category": "",
       "image_url": ""
     },
     {
-      "title": "mcts-gen 開発ノート：AIエージェントと構築する汎用モンテカルロ木探索フレームワーク",
-      "url": "https://zenn.dev/akuroiwa/books/dev-note-mcts-gen",
+      "title": "Azure OpenAI Responses API の会話状態設計 — サーバに預けられるもの、手元に残るもの",
+      "url": "https://zenn.dev/archiningen/articles/responses-api-conversation-state",
       "site": "Zenn(LLM)",
-      "published": "2026-08-17T11:46:05Z",
-      "description": "chess-antのGPエンジンをLLMによる評価に置き換え、チェス・将棋・分子探索へ応用した汎用MCTSフレームワークmcts-genの開発ノート。",
+      "published": "2026-08-17T11:49:03Z",
+      "description": "!\nこの記事は archiningen.com からの転載です。\n連載「AI エージェント API の本番設計」の第 1 回 (全 4 回) です。\n\n\nAzure OpenAI の Responses API には previous_response_id があり、会話履歴をサーバ側に持たせられます。ならば自前のストレージには何を持てばいいのか。筆者が 4 ヶ月ほど本番で回しているシステムの答え...",
       "category": "AI・技術",
       "rss_category": "",
       "image_url": ""
