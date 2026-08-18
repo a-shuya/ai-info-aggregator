@@ -1,14 +1,44 @@
 {
   "site": "Zenn(Python)",
-  "last_updated": "2026-08-18T20:52:46.942540",
-  "total_articles": 5841,
+  "last_updated": "2026-08-18T21:28:03.530311",
+  "total_articles": 5845,
   "articles": [
+    {
+      "title": "Google Cloud無料枠で研究環境を作る【日本株クオンツ研究ノート Vol.1】",
+      "url": "https://zenn.dev/hiratsukaaa682/articles/4cb230a6aa436f",
+      "site": "Zenn(Python)",
+      "published": "2026-08-18T18:07:13Z",
+      "description": "はじめに\n個人で日本株の個別株投資に取り組むにあたり、データに基づいて検証・判断できる環境を整え始めました。\n最終的な目的は、個別株投資で継続的に成果を出せる投資プロセスを作ることです。そのための最初の段階として、株価や企業情報を取得・保存し、自分で分析・検証できる研究環境をGoogle Cloud上に構築しています。\nまずは低スペックなVMでも無理なく動かせる最小構成を目指します。J-Quant...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "nginx の smooth weighted round-robin を SNS 投稿ローテに転用したら連投が消えた",
+      "url": "https://zenn.dev/cosoado/articles/smooth-weighted-round-robin-rotation",
+      "site": "Zenn(Python)",
+      "published": "2026-08-18T15:16:36Z",
+      "description": "Cosoado Lab Blog にも同時掲載予定です（公開でき次第このブロックにリンクを追記します）。\n\n重み付きで何かを順番に選びたい人向けの話です。ロードバランサの文脈で有名なアルゴリズムですが、実際に効いたのは投稿スケジューラでした。\n\n TL;DR\n\n重みのぶんだけ要素を並べる素朴な実装は、重い要素がかたまる\n\nnginx が 2012 年に入れた smooth weighted rou...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
     {
       "title": "ast.parse は構文検査ではない — 「全ファイルOK」の裏で import できないコードが混ざっていた",
       "url": "https://zenn.dev/mameresearcher/articles/ast-parse-is-not-a-syntax-check",
       "site": "Zenn(Python)",
       "published": "2026-08-18T14:53:29Z",
       "description": "個人でいくつもの自動化スクリプトを回している。同期フォルダ上で運用しているせいで、たまに同じファイルの競合コピーができる。片方だけに入っている改良もあるので、機械的にどちらかを捨てるわけにいかず、両方を読んで統合する作業が発生する。\nその統合をやった直後に、自前の見張りスクリプトで全 Python ファイルの構文検査を回して、こう報告した。\n構文検査: 486ファイル OK\n嘘だった。\n統合したフ...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "宝くじ仮説の枝刈りをnumpyで自前実装したら、当たりくじの優位はスパース率98%から先だけだった(99%で62%対48%)",
+      "url": "https://zenn.dev/shakeailab/articles/lottery-ticket-numpy",
+      "site": "Zenn(Python)",
+      "published": "2026-08-18T13:58:46Z",
+      "description": "宝くじ仮説(Lottery Ticket Hypothesis)は、枝刈り(プルーニング)の分野で一番有名な仮説だと思う。Frankle &amp; Carbin (2019)の主張はこうだ——学習済みのニューラルネットワークから大部分の重みを削って作ったスパースな部分ネットワークは、「学習開始時の初期値」まで巻き戻してから単体で再学習すると、元の密なネットワークに匹敵する精度まで到達できる。つま...",
       "category": "開発",
       "rss_category": "",
       "image_url": ""
@@ -59,6 +89,16 @@
       "site": "Zenn(Python)",
       "published": "2026-08-18T08:18:31Z",
       "description": "はじめに\n\n個人開発として、GitHub Actionsで毎日自動実行し、気象庁の天気情報をメール通知するシステムを開発しています。\n本記事では、開発そのものではなく、AIを開発パートナーとして利用するために行った情報管理・指示設計についてまとめます。\nプロジェクトの概要は、以下の記事でまとめています。\n\nhttps://zenn.dev/wakinoza/articles/034a3f1795d...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "firecrawl/anydoc でドキュメントを Markdown に変換する検証",
+      "url": "https://zenn.dev/aiforall/articles/4000079b4c425a",
+      "site": "Zenn(Python)",
+      "published": "2026-08-18T07:38:48Z",
+      "description": "概要\nこの検証では、firecrawl/anydoc を利用し、複数形式のドキュメントファイルを Markdown に変換します。\n\n 変換元の資料\n今回の検証では、Word、PDF、Excel、PowerPoint の4種類のファイルを入力資料として用意しました。\n\n\n\nファイル\n形式\n内容\n\n\n\n\ndummy_docs.docx\nWord\nかぐや姫（竹取物語）の作品概要\n\n\ndummy_pdf...",
       "category": "開発",
       "rss_category": "",
       "image_url": ""
