@@ -1,7 +1,7 @@
 {
   "site": "Zenn(LLM)",
-  "last_updated": "2026-08-18T04:10:07.104353",
-  "total_articles": 5445,
+  "last_updated": "2026-08-18T04:52:51.368827",
+  "total_articles": 5442,
   "articles": [
     {
       "title": "AIエージェントの評価でお客さん役をLLMに演じさせたときのズレ：τ-Benchで実際の人間と比べた論文を整理する",
@@ -9,46 +9,6 @@
       "site": "Zenn(LLM)",
       "published": "2026-08-17T22:16:47Z",
       "description": "!\n2026-08-16時点の情報です。参照した論文はarXiv 2601.17087のv2版（2026-01-28更新）です。\n\n\n はじめに\nカスタマーサポートのAIエージェントは、お客さんと何度もやり取りしながら、未発送の注文を変更したり、配達済みの注文の返品を受け付けたりします。うまく動くかを測るには、お客さん役が必要です。\nそのお客さん役も、いまはLLMに演じさせるのが普通になっています...",
-      "category": "AI・技術",
-      "rss_category": "",
-      "image_url": ""
-    },
-    {
-      "title": "Claude Codeの使用量を自力集計したら97%がキャッシュ再読だった",
-      "url": "https://zenn.dev/zenn_content/articles/claude-code-usage-self-audit",
-      "site": "Zenn(LLM)",
-      "published": "2026-08-17T21:30:13Z",
-      "description": "結論から\nClaude Codeを1週間使った自分の環境のトークンを、UI表示ではなく一次データ（セッションのjsonlファイル）から直接集計しました。結果がこれです。\n\n\n\n内訳\nトークン数\n比率\n\n\n\n\ncache_read（キャッシュ再読）\n32.5億\n96.9%\n\n\ncache_creation（キャッシュ新規作成）\n9,330万\n2.8%\n\n\noutput（モデルの出力）\n1,120万\n...",
-      "category": "AI・技術",
-      "rss_category": "",
-      "image_url": ""
-    },
-    {
-      "title": "常駐AIエージェントの「会話を忘れない」を支えるコンテキスト圧縮設計",
-      "url": "https://zenn.dev/hach/articles/chat-agent-context-compaction-design",
-      "site": "Zenn(LLM)",
-      "published": "2026-08-17T21:12:38Z",
-      "description": "チャットに常駐するAIエージェントは、1回のやり取りで完結するチャットボットと違い、同じワークスペースで数ヶ月〜数年単位のやり取りを持ち続けることが前提になります。ここで必ずぶつかるのが、LLMのコンテキストウィンドウには物理的な上限があるという制約です。「過去のやり取りを踏まえて答える」を素朴に「全履歴をプロンプトに詰める」で実装すると、早晩トークン数が上限を超えるか、超えなくても応答が遅く・高...",
-      "category": "AI・技術",
-      "rss_category": "",
-      "image_url": ""
-    },
-    {
-      "title": "ChatGPT・Claude・Geminiのアップロード上限とRAGへの暗黙の切り替え",
-      "url": "https://zenn.dev/every_ai_recipe/articles/ai-file-upload-limit-check",
-      "site": "Zenn(LLM)",
-      "published": "2026-08-17T21:10:54Z",
-      "description": "TL;DR\n\nファイル1つあたりのサイズ上限（ChatGPT 512MB / Claude 30MB / Gemini 100MB）と、会話全体で処理できる分量の上限（コンテキストウィンドウ）は独立した別レイヤーの制約である。前者を通過しても後者に近づけば挙動は変わる\nAnthropicの公式ヘルプは、Projects機能で資料量がコンテキストウィンドウの上限に近づくと、全文をそのままコンテキスト...",
-      "category": "AI・技術",
-      "rss_category": "",
-      "image_url": ""
-    },
-    {
-      "title": "AIチームに「組織学習」をさせる — 分析レポート、教訓メモリ、そして『正直な申告は称賛される』",
-      "url": "https://zenn.dev/chisatom/articles/f19e131916c12b",
-      "site": "Zenn(LLM)",
-      "published": "2026-08-17T20:26:26Z",
-      "description": "この記事は、Claude Code 6体のマルチエージェント「Lady's servants」（お屋敷）を5ヶ月運用した記録を振り返る連載の第6回です。ここまで通信（第3回）、権限（第4回）、コンパクションとモデル更新（第5回）と、機構の話が続きました。\n今回は機構ではなく、文化の話をします。……AI 相手に文化？ と思われるかもしれません。私も最初はそう思っていました。でも5ヶ月運用したいまは、...",
       "category": "AI・技術",
       "rss_category": "",
       "image_url": ""
@@ -64,16 +24,6 @@
       "image_url": ""
     },
     {
-      "title": "日本語入力システムSumibiの開発 part21: App Store申請までにやった審査対策",
-      "url": "https://zenn.dev/kiyoka/articles/japanese-input-method-sumibi-21",
-      "site": "Zenn(LLM)",
-      "published": "2026-08-17T12:24:01Z",
-      "description": "はじめに\npart20 で作り始めた iPhoneアプリ版のSumibiが、App Storeで公開されました。\n\nhttps://apps.apple.com/jp/app/id6798280948\nソースコードは、オープンソースで公開しています。\nhttps://github.com/kiyoka/Sumibi-iOS\n今回は機能の話ではなく、申請までにやった審査対策について書きます。実際の審...",
-      "category": "AI・技術",
-      "rss_category": "",
-      "image_url": ""
-    },
-    {
       "title": "日本語入力システムSumibiの開発 part22: App Store審査で実際に来た2回の指摘",
       "url": "https://zenn.dev/kiyoka/articles/japanese-input-method-sumibi-22",
       "site": "Zenn(LLM)",
@@ -84,11 +34,31 @@
       "image_url": ""
     },
     {
+      "title": "日本語入力システムSumibiの開発 part21: App Store申請までにやった審査対策",
+      "url": "https://zenn.dev/kiyoka/articles/japanese-input-method-sumibi-21",
+      "site": "Zenn(LLM)",
+      "published": "2026-08-17T12:24:01Z",
+      "description": "はじめに\npart20 で作り始めた iPhoneアプリ版のSumibiが、App Storeで公開されました。\n\nhttps://apps.apple.com/jp/app/id6798280948\nソースコードは、オープンソースで公開しています。\nhttps://github.com/kiyoka/Sumibi-iOS\n今回は機能の話ではなく、申請までにやった審査対策について書きます。実際の審...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
       "title": "Azure OpenAI Responses API の会話状態設計 — サーバに預けられるもの、手元に残るもの",
       "url": "https://zenn.dev/archiningen/articles/responses-api-conversation-state",
       "site": "Zenn(LLM)",
       "published": "2026-08-17T11:49:03Z",
       "description": "!\nこの記事は archiningen.com からの転載です。\n連載「AI エージェント API の本番設計」の第 1 回 (全 4 回) です。\n\n\nAzure OpenAI の Responses API には previous_response_id があり、会話履歴をサーバ側に持たせられます。ならば自前のストレージには何を持てばいいのか。筆者が 4 ヶ月ほど本番で回しているシステムの答え...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "mcts-gen 開発ノート：AIエージェントと構築する汎用モンテカルロ木探索フレームワーク",
+      "url": "https://zenn.dev/akuroiwa/books/dev-note-mcts-gen",
+      "site": "Zenn(LLM)",
+      "published": "2026-08-17T11:46:05Z",
+      "description": "chess-antのGPエンジンをLLMによる評価に置き換え、チェス・将棋・分子探索へ応用した汎用MCTSフレームワークmcts-genの開発ノート。",
       "category": "AI・技術",
       "rss_category": "",
       "image_url": ""
