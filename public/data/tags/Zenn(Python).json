@@ -1,18 +1,8 @@
 {
   "site": "Zenn(Python)",
-  "last_updated": "2026-08-18T10:51:01.420779",
-  "total_articles": 5830,
+  "last_updated": "2026-08-18T11:15:56.697168",
+  "total_articles": 5832,
   "articles": [
-    {
-      "title": "社内文書AIにベクトルDBは要らなかった — 全文投入で本番運用した設計と限界",
-      "url": "https://zenn.dev/ty1110/articles/bff22120fb166b",
-      "site": "Zenn(Python)",
-      "published": "2026-08-18T05:22:25Z",
-      "description": "社内文書をAIに答えさせる仕組みを作ろうとすると、検索して出てくる構成はだいたい同じです。文書をチャンクに割って、埋め込みベクトルにして、ベクトルDBに入れて、質問のたびに近傍検索して上位k件をプロンプトに詰める。いわゆるRAGです。\n私はこれを全部やめて、マニュアルの全文を毎回プロンプトに入れるだけの構成にしました。2社ぶんのSlackボットがこの構成で本番稼働しています。\n結論から書くと、この...",
-      "category": "開発",
-      "rss_category": "",
-      "image_url": ""
-    },
     {
       "title": "毎朝、無人でレポートが届く——Windowsタスクスケジューラ＋Pythonで作る「壊れたら気づく」自動化",
       "url": "https://zenn.dev/masumi_yamamoto/articles/unattended-daily-report-windows",
@@ -124,6 +114,16 @@
       "image_url": ""
     },
     {
+      "title": "篠澤広風・プログラムコード解説プロンプト",
+      "url": "https://zenn.dev/fibujrsl/articles/b568dd0210670b",
+      "site": "Zenn(Python)",
+      "published": "2026-08-17T17:07:47Z",
+      "description": "はじめに\n非公式のファンメイド用プロンプトです。『学園アイドルマスター』公式とは関係ありません。\n\n 調査から抽出した口調の核\n\n一人称は「わたし」。ユーザーは基本的に「プロデューサー」と呼ぶ。\nローテンションで、表情や感情を大きく誇張しない。ただし、無感情ではなく、親しさ・好意・楽しさは短い言葉で率直に示す。\n短い断定、体言止め、短文を組み合わせる。長い説明でも論理は省略しない。\n「～、ね」「～...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
       "title": "web3.py で Sepolia テストネット入門：ウォレット作成から送金まで",
       "url": "https://zenn.dev/nomurasan/articles/web3-sepolia-web3py-intro",
       "site": "Zenn(Python)",
@@ -184,6 +184,16 @@
       "image_url": ""
     },
     {
+      "title": "AIエージェントを24時間常駐させて踏んだ4つ（SIGSEGV・二重投稿・日本語検索・権限）",
+      "url": "https://zenn.dev/shinsei99/articles/ai-agent-always-on",
+      "site": "Zenn(Python)",
+      "published": "2026-08-17T11:09:43Z",
+      "description": "業務チャットに常駐して、会話からTODOを拾い、社内資料を検索して質問に答えるエージェントを\n作りました。手元で動かしていたときには一度も出なかった問題が、常駐させた途端に出ます。\n「作れるか」ではなく「動かし続けられるか」で詰まった4つを残しておきます。\n\n 1. 子プロセスが終了コード -11 で不定期に落ちる\nAI呼び出しをCLIの子プロセスとして実行していたのですが、不定期に落ちました。\n...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
       "title": "DjangoからRustへ、AIと二人三脚で移行してOSS公開するまで",
       "url": "https://zenn.dev/amagi019/articles/d6c31744ffaf46",
       "site": "Zenn(Python)",
@@ -219,6 +229,16 @@
       "site": "Zenn(Python)",
       "published": "2026-08-17T07:34:25Z",
       "description": "はじめに\nSnowflakeからPythonで外部APIを呼ぶ方法を調べると、Stored Procedure、Python UDF、Snowparkの3つが出てきます。どれも「Snowflakeの中でPythonを動かして外部にアクセスできる」と説明されていますが、どれを選べばよいのかは読んでもよく分かりませんでした。\nそこで、同じ外部API（天気予報のOpen-Meteo[1]）を3方式すべて...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "プロンプトキャッシュを付けたら1本あたり0.65円高くなっていた",
+      "url": "https://zenn.dev/yashi888/articles/3587e51ba1b1dd",
+      "site": "Zenn(Python)",
+      "published": "2026-08-17T03:50:09Z",
+      "description": "前回、Claude Opus 5 の effort を3段階振ってコストを実測しました。\nそのとき、未解決のまま残した問題があります。\n3本とも、こうなっていました。\nキャッシュ書込 3,378 / キャッシュ読出 0\nシステムプロンプトは3本とも完全に同一。実行間隔は2分ほど。\nephemeral の TTL は5分なので、2本目以降は読み出しが立つはずでした。立ちませんでした。\n原因を探して単...",
       "category": "開発",
       "rss_category": "",
       "image_url": ""
