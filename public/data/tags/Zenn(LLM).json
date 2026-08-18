@@ -1,14 +1,34 @@
 {
   "site": "Zenn(LLM)",
-  "last_updated": "2026-08-18T22:11:36.843143",
+  "last_updated": "2026-08-18T22:45:01.740890",
   "total_articles": 5470,
   "articles": [
     {
-      "title": "MCPって本当に必要？普通のAPI連携でよくない？から考えてみた",
-      "url": "https://zenn.dev/taru_neko/articles/mcp-or-direct-api",
+      "title": "AIエージェントの『勝率88%の発見』を検証で殺すまで — 計測アーティファクト2つの実話",
+      "url": "https://zenn.dev/sobani_dev/articles/80398658f78418",
       "site": "Zenn(LLM)",
-      "published": "2026-08-18T15:27:39Z",
-      "description": "最近、AIアプリやAIエージェントから外部サービスを利用する仕組みとして、MCP（Model Context Protocol）を目にする機会が増えました。\nそこで気になったのが、\n「AIアプリから外部サービスに接続するなら、MCPを使うのがベストプラクティスなのか？」\nということです。\n例えばAIアプリから、\n\nGitHub\nJira\nSlack\n社内システム\n\nを使いたいとします。\nこれくらい...",
+      "published": "2026-08-18T18:44:02Z",
+      "description": "!\nこれは実話です。数値はすべて、筆者が運用している研究プログラムの記録台帳から、そのまま引いています。対象の仮説は2026年8月18日に棄却済みで、この記事に再現可能な儲け話は含まれません。含まれないことこそが本題です。\n\n\n 勝率88%、1回あたり+0.30%\n2026年8月のある日、私が検証を任せていたAIエージェントが「発見」を持ってきた。\n対象はよく知られた現象 — 円建て暗号資産の価格...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "AIループを自作しながら考えた、良いAIループの条件",
+      "url": "https://zenn.dev/m2dw/articles/n8n-ai-cli-loop-conditions",
+      "site": "Zenn(LLM)",
+      "published": "2026-08-18T15:42:28Z",
+      "description": "AI ループを使って、その AI ループ自身を開発しています。\n2026 年 6 月に開発を始めて、約 2 ヶ月半。本体の TypeScript は約 12.6 万行、テストコードは約 15 万行になりました。開発リポジトリでマージした PR は 402 本。1 日平均では約 5.4 本です（2026 年 8 月 18 日時点）。\nこの規模まで来ても、開発速度が頭打ちになった感覚は、今のところあり...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "CPUのみでローカルLLMする",
+      "url": "https://zenn.dev/ashidan/articles/tech_llm_cpu_a",
+      "site": "Zenn(LLM)",
+      "published": "2026-08-18T13:55:19Z",
+      "description": "Windowsかつ、CPUのみでローカルLLMしたい\nRAMが16GB以上ある\n少し手間がかかっても性能を上げたい\n\nというニッチな需要を満たす記事です。\nなお、この記事は2026年8月17日の情報を元に書かれています。llama.cppのオプション群は将来削除されうるので、適当にアレンジして下さい。\n\n 発見 affinity指定で速くなる\n6コア12スレッドや12コア20スレッドなどの、SMT...",
       "category": "AI・技術",
       "rss_category": "",
       "image_url": ""
@@ -19,6 +39,16 @@
       "site": "Zenn(LLM)",
       "published": "2026-08-18T13:45:45Z",
       "description": "Codexの親エージェントに判断と統合を任せ、調査や実装は軽量なサブエージェントへ委譲したい。\nこの記事では、親エージェントに gpt-5.6-sol、通常のサブエージェントに gpt-5.6-luna を使う構成を紹介します。Lunaの推論強度は max に設定します。つまり、この記事でいう「Luna Max」はモデル名ではなく、gpt-5.6-luna と推論強度 max の組み合わせです。\n...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "2026年8月公開のQwen3.8-27BをRTX 5090で実測|ローカルLLM 5モデル徹底比較",
+      "url": "https://zenn.dev/secure_auto_lab/articles/local-llm-5model-benchmark-2026",
+      "site": "Zenn(LLM)",
+      "published": "2026-08-18T13:35:18Z",
+      "description": "2026年8月公開のQwen3.8-27BをRTX 5090で実測|ローカルLLM 5モデル徹底比較\n同じ27Bなのに、生成速度2.4倍。 2026年8月13日に公開されたQwen3.8-27Bを実測し、1ヶ月前に組んだ構成を迷わず入れ替えました。ローカルLLMは「常にアップデートを取り込む前提」で運用しているからです。\nこの記事は、RTX 5090(VRAM 32GB)1枚で「翻訳・コーディング...",
       "category": "AI・技術",
       "rss_category": "",
       "image_url": ""
@@ -39,26 +69,6 @@
       "site": "Zenn(LLM)",
       "published": "2026-08-18T11:39:10Z",
       "description": "「選択」と「意味状態遷移」を検証可能にする二つのAI基盤技術\n先日、GhostDrift数理研究所は、「GD-Attention」と「意味生成OS（Meaning-Generation Operating System／MG-OS）」に関する2件のPCT国際出願と、両技術の限定された数理核をLean 4で形式化した公開リポジトリについて発表しました。\nこの発表だけを見ると、一つの疑問が生じるかもし...",
-      "category": "AI・技術",
-      "rss_category": "",
-      "image_url": ""
-    },
-    {
-      "title": "AIは3Dをどこまで作れるのか — 2.5Dと高度な3D Geometryの間にある壁",
-      "url": "https://zenn.dev/0xliclog/articles/5fc37207df95a9",
-      "site": "Zenn(LLM)",
-      "published": "2026-08-18T10:00:05Z",
-      "description": "まずは、次の4つのモデルを見てください。\n\n4気筒のピストン・クランク機構\n\n二段式ゼネバ機構\n\nツインローブルーツ機構\n\n二段式遊星歯車機構\nこれらはすべて、Claude Opus 5がAutodesk Fusionを操作して作ったモデルです。\nしかも、それぞれのモデルは1つのプロンプトを一度入力しただけで、途中で追加の指示や修正の対話を挟まず、一気に作成されています。いずれも15分～25分ほど...",
-      "category": "AI・技術",
-      "rss_category": "",
-      "image_url": ""
-    },
-    {
-      "title": "【Kitesurf】Playwright MCPを常駐させないブラウザ戦略",
-      "url": "https://zenn.dev/yutti/articles/reduce-memory-consumption",
-      "site": "Zenn(LLM)",
-      "published": "2026-08-18T09:32:57Z",
-      "description": "Global設定にMCPサーバーを配置していたのですが、Agentを起動するたびにMCPサーバーも起動するため、メモリ圧迫の大きな要因の一つになっていました。不要なMCPサーバーについては、コンテキストを無駄に占有させないという観点から削除が推奨されることが多いですが、実際にはメモリ消費を抑えるうえでも重要なようです。\n日常的に、tmux経由でClaude Codeから複数のClaude Code...",
       "category": "AI・技術",
       "rss_category": "",
       "image_url": ""
@@ -89,16 +99,6 @@
       "site": "Zenn(LLM)",
       "published": "2026-08-18T07:06:17Z",
       "description": "本記事は2026年8月18日時点の検証結果です。DeepSeek HarnessはDeveloper Previewのため、今後UIや設定方法が変更される可能性があります。\n\n\n はじめに\nDeepSeek Harness（dsh）は、DeepSeek AIが公開したオープンソースのAgent Harnessです。新しい基盤モデルではなく、モデル、ツール、スキル、セッション、サンドボックス、Age...",
-      "category": "AI・技術",
-      "rss_category": "",
-      "image_url": ""
-    },
-    {
-      "title": "AXIOM Capsule DEMO最小構成で検証する「不変性・決定論・制約強制」",
-      "url": "https://zenn.dev/void09/articles/15b9a0f34f949c",
-      "site": "Zenn(LLM)",
-      "published": "2026-08-18T07:02:09Z",
-      "description": "AXIOM Capsule DEMO\n最小構成で検証する「不変性・決定論・制約強制」\nAXIOM / PSS Capsule Architecture の核心部分を最小構成にした SHOWCASE DEMO / Prototype です。\nこのDEMOでは、LLM Agentやステート管理システムにおける、\n\n状態の意図しない書き換え\n非決定的なID生成\n制約違反後の処理継続\n世代交代時の状態混入...",
       "category": "AI・技術",
       "rss_category": "",
       "image_url": ""

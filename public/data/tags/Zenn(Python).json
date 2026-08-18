@@ -1,18 +1,8 @@
 {
   "site": "Zenn(Python)",
-  "last_updated": "2026-08-18T22:11:36.843143",
-  "total_articles": 5846,
+  "last_updated": "2026-08-18T22:45:01.740890",
+  "total_articles": 5840,
   "articles": [
-    {
-      "title": "Google Cloud無料枠で研究環境を作る【日本株クオンツ研究ノート Vol.1】",
-      "url": "https://zenn.dev/hiratsukaaa682/articles/4cb230a6aa436f",
-      "site": "Zenn(Python)",
-      "published": "2026-08-18T18:07:13Z",
-      "description": "はじめに\n個人で日本株の個別株投資に取り組むにあたり、データに基づいて検証・判断できる環境を整え始めました。\n最終的な目的は、個別株投資で継続的に成果を出せる投資プロセスを作ることです。そのための最初の段階として、株価や企業情報を取得・保存し、自分で分析・検証できる研究環境をGoogle Cloud上に構築しています。\nまずは低スペックなVMでも無理なく動かせる最小構成を目指します。J-Quant...",
-      "category": "開発",
-      "rss_category": "",
-      "image_url": ""
-    },
     {
       "title": "nginx の smooth weighted round-robin を SNS 投稿ローテに転用したら連投が消えた",
       "url": "https://zenn.dev/cosoado/articles/smooth-weighted-round-robin-rotation",
@@ -34,51 +24,11 @@
       "image_url": ""
     },
     {
-      "title": "宝くじ仮説の枝刈りをnumpyで自前実装したら、当たりくじの優位はスパース率98%から先だけだった(99%で62%対48%)",
-      "url": "https://zenn.dev/shakeailab/articles/lottery-ticket-numpy",
-      "site": "Zenn(Python)",
-      "published": "2026-08-18T13:58:46Z",
-      "description": "宝くじ仮説(Lottery Ticket Hypothesis)は、枝刈り(プルーニング)の分野で一番有名な仮説だと思う。Frankle &amp; Carbin (2019)の主張はこうだ——学習済みのニューラルネットワークから大部分の重みを削って作ったスパースな部分ネットワークは、「学習開始時の初期値」まで巻き戻してから単体で再学習すると、元の密なネットワークに匹敵する精度まで到達できる。つま...",
-      "category": "開発",
-      "rss_category": "",
-      "image_url": ""
-    },
-    {
-      "title": "OCRの精度が出ないと思ったら、紙が横向きだっただけの話",
-      "url": "https://zenn.dev/shinsei99/articles/scanned-pdf-orientation",
-      "site": "Zenn(Python)",
-      "published": "2026-08-18T12:32:42Z",
-      "description": "登記簿（登記事項証明書）のPDFを読み取って、契約書のExcelに転記するツールを作りました。\n読み取り精度が安定せず、プロンプトを何度も書き直したのですが、\n効いたのはプロンプトではなく、読ませる前に画像を回すことでした。\n\n 症状\n同じ種類の書類なのに、当たりと外れがある。\n\n地番や床面積が空で返る\n所有者の氏名が、似ているが違う文字になる\nそもそも「読み取れません」と返る\n\nプロンプトを詳し...",
-      "category": "開発",
-      "rss_category": "",
-      "image_url": ""
-    },
-    {
       "title": "同じ「いいね」を2つのタブから同時に押したら、APIが500を返していた話",
       "url": "https://zenn.dev/itaraiguma/articles/like-dislike-concurrent-integrityerror",
       "site": "Zenn(Python)",
       "published": "2026-08-18T11:53:56Z",
       "description": "はじめに\n個人開発している技術記事キュレーションサービス「DevPick」には、記事一覧に「いいね」「興味なし」ボタンと、記事を開いたときの既読記録があります。どれも「同じ記事に対して、同じ種類のレコードを二重に持たない」という単純な仕組みで、DB側にはUNIQUE制約を張っていました。\nある日、この3つのエンドポイントすべてで、同じ操作を短い間隔で連打したり、複数タブで同時に押したりすると500...",
-      "category": "開発",
-      "rss_category": "",
-      "image_url": ""
-    },
-    {
-      "title": "LLMに長いPDFを書類ごとに分割させると、出力からページが消える",
-      "url": "https://zenn.dev/shinsei99/articles/llm-pdf-split-gaps",
-      "site": "Zenn(Python)",
-      "published": "2026-08-18T11:47:40Z",
-      "description": "クリアファイル1冊をまとめてスキャンした巨大なPDFを、書類1件ずつに分割・分類・リネーム\nする機能を作りました。\n素直にLLMへ「どこからどこまでが1件か」を判定させると動きます。ただし、\n出力から静かにページが消えます。 そこの潰し方を書きます。\n\n 症状\n判定結果はもっともらしく返ってきます。\n[\n  {\"start\": 1,  \"end\": 4,  \"type\": \"契約書\"},\n  {\"...",
-      "category": "開発",
-      "rss_category": "",
-      "image_url": ""
-    },
-    {
-      "title": "【5分でわかる Foundry Tools シリーズ】Azure Speech で英語の発音評価する",
-      "url": "https://zenn.dev/yukurash/articles/0c40a8eca488fa",
-      "site": "Zenn(Python)",
-      "published": "2026-08-18T09:22:38Z",
-      "description": "!\nFoundry Tools（旧 Azure AI Services）の各サービスから機能をひとつ取り上げ、「ざっくり理解」から「手元で即デプロイ」まで5分で紹介するシリーズです。わかりやすいように動画やサンプルコードも記載しています。\n\n\n この記事でわかること\nこの記事では、次の3点を一通り動かします。\n\nAzure Speech の発音評価が返す4種類のスコア\n付属の Bicep で ja...",
       "category": "開発",
       "rss_category": "",
       "image_url": ""
@@ -99,16 +49,6 @@
       "site": "Zenn(Python)",
       "published": "2026-08-18T08:18:31Z",
       "description": "はじめに\n\n個人開発として、GitHub Actionsで毎日自動実行し、気象庁の天気情報をメール通知するシステムを開発しています。\n本記事では、開発そのものではなく、AIを開発パートナーとして利用するために行った情報管理・指示設計についてまとめます。\nプロジェクトの概要は、以下の記事でまとめています。\n\nhttps://zenn.dev/wakinoza/articles/034a3f1795d...",
-      "category": "開発",
-      "rss_category": "",
-      "image_url": ""
-    },
-    {
-      "title": "firecrawl/anydoc でドキュメントを Markdown に変換する検証",
-      "url": "https://zenn.dev/aiforall/articles/4000079b4c425a",
-      "site": "Zenn(Python)",
-      "published": "2026-08-18T07:38:48Z",
-      "description": "概要\nこの検証では、firecrawl/anydoc を利用し、複数形式のドキュメントファイルを Markdown に変換します。\n\n 変換元の資料\n今回の検証では、Word、PDF、Excel、PowerPoint の4種類のファイルを入力資料として用意しました。\n\n\n\nファイル\n形式\n内容\n\n\n\n\ndummy_docs.docx\nWord\nかぐや姫（竹取物語）の作品概要\n\n\ndummy_pdf...",
       "category": "開発",
       "rss_category": "",
       "image_url": ""

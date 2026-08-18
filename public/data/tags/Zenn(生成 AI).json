@@ -1,8 +1,38 @@
 {
   "site": "Zenn(生成 AI)",
-  "last_updated": "2026-08-18T22:11:36.843143",
-  "total_articles": 3433,
+  "last_updated": "2026-08-18T22:45:01.740890",
+  "total_articles": 3438,
   "articles": [
+    {
+      "title": "AI導入後の定例レビューを30分で回す：直近10件から次の改善を決める",
+      "url": "https://zenn.dev/miraigent/articles/ai-adoption-monthly-review",
+      "site": "Zenn(生成 AI)",
+      "published": "2026-08-18T20:36:12Z",
+      "description": "AIを小さく導入したあと、月次会議が「何件使ったか」の報告だけになっていないでしょうか。\n利用件数や処理時間は見やすい一方で、次の判断に必要な情報が抜けやすい指標です。\n\nどのケースで人間が迷ったか\nどの入力をAIへ渡さなかったか\nどこで確認待ちが長くなったか\n次回までに何を直すか\n\nこの記事では、問い合わせ返信や社内文書の下書きのような小さなAI運用を対象に、直近10件を30分でレビューし、次の...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "AIエージェントは「群れ」にすると壊れる ——各出力を検証しても、配備が壊す新しい次元",
+      "url": "https://zenn.dev/ryok/articles/agent-swarm-verification",
+      "site": "Zenn(生成 AI)",
+      "published": "2026-08-18T20:01:28Z",
+      "description": "結論\n私はこれまで「検証可能性の階段」という概念で、AIエージェント運用の律速はモデルの賢さではなく「検証をどう設計したか」だと書いてきた（前記事）。タスクを「生成コスト」ではなく「検証コスト」で段に分け、そのタスクが何段目かを見誤ると事故る、という話だ。\nこれは1体のエージェントの、1つの出力の話だった。\nだが2026年8月、二つの出来事がその一段上の壁を示した。一つはAnthropicの研究。...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "ビルド時チェックを足したのに、コンポーネントが出力する表を1つも検査していなかった",
+      "url": "https://zenn.dev/ren_in_ren/articles/89095c1e124862",
+      "site": "Zenn(生成 AI)",
+      "published": "2026-08-18T18:40:33Z",
+      "description": "TEST_PASTE_OK\nビルド時の検査を1本足した当日、その検査はコンポーネントが出力する表を1つも見ていなかった。範囲を広げたはずが、正規表現が属性付きの &lt;table&gt; に一致せず、検査対象は5個のまま増えていなかった。エラーは0件、ログは緑。検査が「合格した」のか「対象を1つも見つけられなかった」のかを、ログは区別していなかった。\n先に書いておく。この事業には、読者からの売上...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
     {
       "title": "【AIエージェントでナポレオン】# 15. 言葉は強くなったが、頭の中は変わらなかった日",
       "url": "https://zenn.dev/gakusys/articles/2368dca2e5f5cc",
@@ -14,11 +44,31 @@
       "image_url": ""
     },
     {
-      "title": "AIがこっそり仕込むウォーターマークの仕組みを初心者向けにマンガで解説",
-      "url": "https://zenn.dev/syoshida07/articles/36fa4a0ee92126",
+      "title": "MCPって本当に必要？普通のAPI連携でよくない？から考えてみた",
+      "url": "https://zenn.dev/taru_neko/articles/mcp-or-direct-api",
       "site": "Zenn(生成 AI)",
-      "published": "2026-08-18T11:18:28Z",
-      "description": "ウォーターマークとは、AIが生成したコンテンツに「見えない目印」を埋め込み、後からAI生成であることを判定できるようにする技術です。\n画像ではピクセルに情報を埋め込む方式が一般的ですが、テキストにはピクセルが存在しません。そのため、文章の意味や文体を変えずに統計的な特徴を残す方法が採用されています。\nこの技術は、AI生成物の透明性を高めるために注目されています。\n例えば、偽情報対策、教育現場でのレ...",
+      "published": "2026-08-18T15:27:39Z",
+      "description": "最近、AIアプリやAIエージェントから外部サービスを利用する仕組みとして、MCP（Model Context Protocol）を目にする機会が増えました。\nそこで気になったのが、\n「AIアプリから外部サービスに接続するなら、MCPを使うのがベストプラクティスなのか？」\nということです。\n例えばAIアプリから、\n\nGitHub\nJira\nSlack\n社内システム\n\nを使いたいとします。\nこれくらい...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "OCRの精度が出ないと思ったら、紙が横向きだっただけの話",
+      "url": "https://zenn.dev/shinsei99/articles/scanned-pdf-orientation",
+      "site": "Zenn(生成 AI)",
+      "published": "2026-08-18T12:32:42Z",
+      "description": "登記簿（登記事項証明書）のPDFを読み取って、契約書のExcelに転記するツールを作りました。\n読み取り精度が安定せず、プロンプトを何度も書き直したのですが、\n効いたのはプロンプトではなく、読ませる前に画像を回すことでした。\n\n 症状\n同じ種類の書類なのに、当たりと外れがある。\n\n地番や床面積が空で返る\n所有者の氏名が、似ているが違う文字になる\nそもそも「読み取れません」と返る\n\nプロンプトを詳し...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "LLMに長いPDFを書類ごとに分割させると、出力からページが消える",
+      "url": "https://zenn.dev/shinsei99/articles/llm-pdf-split-gaps",
+      "site": "Zenn(生成 AI)",
+      "published": "2026-08-18T11:47:40Z",
+      "description": "クリアファイル1冊をまとめてスキャンした巨大なPDFを、書類1件ずつに分割・分類・リネーム\nする機能を作りました。\n素直にLLMへ「どこからどこまでが1件か」を判定させると動きます。ただし、\n出力から静かにページが消えます。 そこの潰し方を書きます。\n\n 症状\n判定結果はもっともらしく返ってきます。\n[\n  {\"start\": 1,  \"end\": 4,  \"type\": \"契約書\"},\n  {\"...",
       "category": "AI・技術",
       "rss_category": "",
       "image_url": ""
