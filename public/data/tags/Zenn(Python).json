@@ -1,8 +1,48 @@
 {
   "site": "Zenn(Python)",
-  "last_updated": "2026-08-18T14:44:56.246217",
-  "total_articles": 5836,
+  "last_updated": "2026-08-18T15:16:04.237736",
+  "total_articles": 5840,
   "articles": [
+    {
+      "title": "ast.parse は構文検査ではない — 「全ファイルOK」の裏で import できないコードが混ざっていた",
+      "url": "https://zenn.dev/mameresearcher/articles/ast-parse-is-not-a-syntax-check",
+      "site": "Zenn(Python)",
+      "published": "2026-08-18T14:53:29Z",
+      "description": "個人でいくつもの自動化スクリプトを回している。同期フォルダ上で運用しているせいで、たまに同じファイルの競合コピーができる。片方だけに入っている改良もあるので、機械的にどちらかを捨てるわけにいかず、両方を読んで統合する作業が発生する。\nその統合をやった直後に、自前の見張りスクリプトで全 Python ファイルの構文検査を回して、こう報告した。\n構文検査: 486ファイル OK\n嘘だった。\n統合したフ...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "OCRの精度が出ないと思ったら、紙が横向きだっただけの話",
+      "url": "https://zenn.dev/shinsei99/articles/scanned-pdf-orientation",
+      "site": "Zenn(Python)",
+      "published": "2026-08-18T12:32:42Z",
+      "description": "登記簿（登記事項証明書）のPDFを読み取って、契約書のExcelに転記するツールを作りました。\n読み取り精度が安定せず、プロンプトを何度も書き直したのですが、\n効いたのはプロンプトではなく、読ませる前に画像を回すことでした。\n\n 症状\n同じ種類の書類なのに、当たりと外れがある。\n\n地番や床面積が空で返る\n所有者の氏名が、似ているが違う文字になる\nそもそも「読み取れません」と返る\n\nプロンプトを詳し...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "同じ「いいね」を2つのタブから同時に押したら、APIが500を返していた話",
+      "url": "https://zenn.dev/itaraiguma/articles/like-dislike-concurrent-integrityerror",
+      "site": "Zenn(Python)",
+      "published": "2026-08-18T11:53:56Z",
+      "description": "はじめに\n個人開発している技術記事キュレーションサービス「DevPick」には、記事一覧に「いいね」「興味なし」ボタンと、記事を開いたときの既読記録があります。どれも「同じ記事に対して、同じ種類のレコードを二重に持たない」という単純な仕組みで、DB側にはUNIQUE制約を張っていました。\nある日、この3つのエンドポイントすべてで、同じ操作を短い間隔で連打したり、複数タブで同時に押したりすると500...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "LLMに長いPDFを書類ごとに分割させると、出力からページが消える",
+      "url": "https://zenn.dev/shinsei99/articles/llm-pdf-split-gaps",
+      "site": "Zenn(Python)",
+      "published": "2026-08-18T11:47:40Z",
+      "description": "クリアファイル1冊をまとめてスキャンした巨大なPDFを、書類1件ずつに分割・分類・リネーム\nする機能を作りました。\n素直にLLMへ「どこからどこまでが1件か」を判定させると動きます。ただし、\n出力から静かにページが消えます。 そこの潰し方を書きます。\n\n 症状\n判定結果はもっともらしく返ってきます。\n[\n  {\"start\": 1,  \"end\": 4,  \"type\": \"契約書\"},\n  {\"...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
     {
       "title": "共用サーバーのcronでX投稿を自動化した——依存パッケージゼロと、BOTに見えない設計",
       "url": "https://zenn.dev/matsutake_prgrm/articles/x-auto-post-shared-server",
