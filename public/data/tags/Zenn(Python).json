@@ -1,7 +1,7 @@
 {
   "site": "Zenn(Python)",
-  "last_updated": "2026-08-18T11:45:28.775280",
-  "total_articles": 5837,
+  "last_updated": "2026-08-18T12:15:35.663129",
+  "total_articles": 5835,
   "articles": [
     {
       "title": "共用サーバーのcronでX投稿を自動化した——依存パッケージゼロと、BOTに見えない設計",
@@ -39,6 +39,16 @@
       "site": "Zenn(Python)",
       "published": "2026-08-18T06:11:10Z",
       "description": "プログラミングを始めようとして、最初の環境構築で止まってしまう人はかなり多いです。\nインストールしたはずなのに python と打つと「コマンドが見つからない」と言われる、python と python3 のどちらを使えばいいのか分からない、エディタを入れたが何をすればいいのか分からない——だいたいこのあたりです。\nこの記事では、Pythonをパソコンに入れて、最初のプログラム Hello, Wo...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "社内文書AIにベクトルDBは要らなかった — 全文投入で本番運用した設計と限界",
+      "url": "https://zenn.dev/ty1110/articles/bff22120fb166b",
+      "site": "Zenn(Python)",
+      "published": "2026-08-18T05:22:25Z",
+      "description": "社内文書をAIに答えさせる仕組みを作ろうとすると、検索して出てくる構成はだいたい同じです。文書をチャンクに割って、埋め込みベクトルにして、ベクトルDBに入れて、質問のたびに近傍検索して上位k件をプロンプトに詰める。いわゆるRAGです。\n私はこれを全部やめて、マニュアルの全文を毎回プロンプトに入れるだけの構成にしました。2社ぶんのSlackボットがこの構成で本番稼働しています。\n結論から書くと、この...",
       "category": "開発",
       "rss_category": "",
       "image_url": ""
@@ -154,26 +164,6 @@
       "image_url": ""
     },
     {
-      "title": "[Agents on 16GB] ローカルモデルにお願いするのをやめた。ツールを隠した",
-      "url": "https://zenn.dev/bswebdev/articles/agents-16gb-hide-the-tool",
-      "site": "Zenn(Python)",
-      "published": "2026-08-18T00:00:08Z",
-      "description": "Agents on 16GB — 16GBのMacBook1台で動かすマルチエージェント。API利用ゼロ、外に何も出さない。\n\nプロダクトディスカバリー担当のサブエージェントがいる。ペルソナには韓国語でこう書いてある——「あなたは기획자（プランナー）だ。挨拶をして、テーマを確認して、Step 1 の最初の質問をしろ。6ステップ全部の合意が取れるまで PRD を書くな。turn 1 で save_p...",
-      "category": "開発",
-      "rss_category": "",
-      "image_url": ""
-    },
-    {
-      "title": "篠澤広風・プログラムコード解説プロンプト",
-      "url": "https://zenn.dev/fibujrsl/articles/b568dd0210670b",
-      "site": "Zenn(Python)",
-      "published": "2026-08-17T17:07:47Z",
-      "description": "はじめに\n非公式のファンメイド用プロンプトです。『学園アイドルマスター』公式とは関係ありません。\n\n 調査から抽出した口調の核\n\n一人称は「わたし」。ユーザーは基本的に「プロデューサー」と呼ぶ。\nローテンションで、表情や感情を大きく誇張しない。ただし、無感情ではなく、親しさ・好意・楽しさは短い言葉で率直に示す。\n短い断定、体言止め、短文を組み合わせる。長い説明でも論理は省略しない。\n「～、ね」「～...",
-      "category": "開発",
-      "rss_category": "",
-      "image_url": ""
-    },
-    {
       "title": "web3.py で Sepolia テストネット入門：ウォレット作成から送金まで",
       "url": "https://zenn.dev/nomurasan/articles/web3-sepolia-web3py-intro",
       "site": "Zenn(Python)",
@@ -229,16 +219,6 @@
       "site": "Zenn(Python)",
       "published": "2026-08-17T11:26:09Z",
       "description": "Claude Code を使っていて出会う「よくある困りごと」を、1記事完結で解決するシリーズです。今回のテーマはプロジェクトフォルダの散らばりです。\n\n こんなことで困ってないか？\n\nプロジェクトがデスクトップ・ドキュメント・C:\\src・ドライブ直下など、PCのあちこちに散らばっている\n\nフォルダ名を見ても中身が思い出せない（新しいフォルダー (2) の中に大事なツールが入っている）\n作業を始...",
-      "category": "開発",
-      "rss_category": "",
-      "image_url": ""
-    },
-    {
-      "title": "AIエージェントを24時間常駐させて踏んだ4つ（SIGSEGV・二重投稿・日本語検索・権限）",
-      "url": "https://zenn.dev/shinsei99/articles/ai-agent-always-on",
-      "site": "Zenn(Python)",
-      "published": "2026-08-17T11:09:43Z",
-      "description": "業務チャットに常駐して、会話からTODOを拾い、社内資料を検索して質問に答えるエージェントを\n作りました。手元で動かしていたときには一度も出なかった問題が、常駐させた途端に出ます。\n「作れるか」ではなく「動かし続けられるか」で詰まった4つを残しておきます。\n\n 1. 子プロセスが終了コード -11 で不定期に落ちる\nAI呼び出しをCLIの子プロセスとして実行していたのですが、不定期に落ちました。\n...",
       "category": "開発",
       "rss_category": "",
       "image_url": ""
