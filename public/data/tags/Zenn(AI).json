@@ -1,8 +1,128 @@
 {
   "site": "Zenn(AI)",
-  "last_updated": "2026-08-18T04:52:51.368827",
-  "total_articles": 12697,
+  "last_updated": "2026-08-18T05:33:03.875207",
+  "total_articles": 12705,
   "articles": [
+    {
+      "title": "AIコンテキスト設計ガイド ── 規約を配ったのに守られない理由",
+      "url": "https://zenn.dev/tsutomusaito/books/ai-context-design-guide",
+      "site": "Zenn(AI)",
+      "published": "2026-08-18T04:50:59Z",
+      "description": "Claude Code / Cursor / GitHub Copilot に規約を配る仕組みは、ruler や rulesync で既に解決済みです。\nそれでも「配ったのに守られない」は残ります。本書はそちら側だけを扱います。\n\n層をどう切るか、規約が効かなくなる4つのパターンの見分け方、構成パターン別の rules.yml、\nそして「指摘0件」を「安定」と誤読しないための測定結果の読み方。\n\n...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "AIエージェントが「知っているはず」を間違える理由 — コンテキスト設計の実務",
+      "url": "https://zenn.dev/tsutomusaito/articles/ai-agent-context-design",
+      "site": "Zenn(AI)",
+      "published": "2026-08-18T04:50:55Z",
+      "description": "対象: Claude Code / Cursor / Copilot Agent などを業務で毎日使っているエンジニア\n前提知識: エージェント型のAIコーディングツールを数ヶ月以上使っていること\n\n\n この記事で解けること\n\n\nCLAUDE.md に書いたはずのルールが守られない理由が、確率の問題ではなく構造の問題だと分かる\nコンテキストを3層に分けて設計する具体的な方法\nリファクタリングでコン...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "インストール数の15.8%が、検証済みコピーに乗っている",
+      "url": "https://zenn.dev/skillselion/articles/d473f8aa8b3e08",
+      "site": "Zenn(AI)",
+      "published": "2026-08-18T04:37:33Z",
+      "description": "トレンド名のスキルを入れる直前、インストール順でカタログを開く。同じ製品が3つの掲載に分かれていると、グラフは同じインストールを3回描いている。\nSkillselionのClone Censusは、2026年8月12日に凍結したダンプだ。その日のカタログ79,848件を、各掲載のSKILL.md同士で突き合わせた。検証済みコピーは3,443件。コピー側のインストールは26,061,541、その日の...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "エージェントは「差分の外」を読む：ADK for Go で AI レビューを作り直した実践",
+      "url": "https://zenn.dev/snknsk/articles/adk-go-agent-review-practice",
+      "site": "Zenn(AI)",
+      "published": "2026-08-18T04:22:18Z",
+      "description": "はじめに\nGit の差分を Gemini にレビューさせる Web アプリを半年あまり使ってきた。構造は単純で、差分を取り、プロンプトに埋めて、構造化出力で JSON を受け取る。LLM 呼び出しは 1 回だけ。\nこのアプリを ADK for Go のエージェントループへ作り直した。動機は機能追加ではなく、単発呼び出しでは原理的に拾えない指摘があると分かったからである。\n扱うコードは公開している。...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "AIの拡張機能を1行で読ませたら5種類の部品が一度に入った。名前を1語変えただけで、同じ中身が5回中0回から3回中3回に化けた",
+      "url": "https://zenn.dev/numarn/articles/claude-plugin-dir-runtime-parts-handson",
+      "site": "Zenn(AI)",
+      "published": "2026-08-18T04:17:49Z",
+      "description": "Claude Code(ターミナルで動くAIの作業役)には、プラグインという仕組みがあります。設定ファイルや自動処理をひとまとめにしたフォルダを渡すと、その中身がまるごとAIの作業環境に入る、という機能です。\n「フォルダを1つ渡すだけで、自動処理も手順書も外部ツール連携も全部セットされる」という話をよく見かけるので、本当にそうなるのか、自分で5種類の部品を詰めたフォルダを作って読ませてみました。結...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "Devinを1週間試して導入をやめた話",
+      "url": "https://zenn.dev/vesslabs/articles/da9593d77369ee",
+      "site": "Zenn(AI)",
+      "published": "2026-08-18T04:08:12Z",
+      "description": "Devinを1週間試して、導入をやめた話\n自律型のコーディングエージェント Devin を 1 週間評価して、導入しないことに決めました。\n動かなかったから諦めたわけではありません。3 つのリポジトリで実行環境が立ち上がり、GitHub と Jira と Slack をつなぎ、Devin が書いたバグ修正の PR はマージまで到達しました。準備にかかったのも数日です。\nやめた理由は、 クラウド型の...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "「タスクがありません」を無くす — 自分も手を動かすリードのための、プル型タスク設計",
+      "url": "https://zenn.dev/shigerufukada/articles/ffbcc4b15e1fed",
+      "site": "Zenn(AI)",
+      "published": "2026-08-18T04:02:09Z",
+      "description": "課題: プレイングリードがボトルネックになる\n自分にとっても未知の技術を使い、公開日が決まっていて、直列の工程（クリティカルパス）があるプロジェクトを、少人数のチームで進めていました。しかもリードである自分が、そのクリティカルパス上の作業を持っています。\nこの状況で、同じやりとりが繰り返し発生しました。\n\n「手が空きました。何をしたらいいですか？」\n\nやりとり自体は健全です。問題は答えられるのが1...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "AI が作る「ドット絵風」を本物のドット絵に変換する Web ツール「Pixel Refiner」を作りました",
+      "url": "https://zenn.dev/happy_onigiri/articles/1a0601d2afec2c",
+      "site": "Zenn(AI)",
+      "published": "2026-08-18T03:53:46Z",
+      "description": "画像生成 AI は、ドット絵も描けるようになりました。\n少なくとも、遠目にはそう見えます。\n私はドット絵のイラストが好きで、SNS のアイコンやプロダクト紹介の 1 枚絵に使いたいと思っていました。\n絵心はありませんが、いまは AI が描いてくれます。\nところが、生成された画像を拡大してみると話が変わります。\nドットの輪郭はぼやけ、配色はレトロどころかフルカラー、背景は不透明のまま。\n見た目はドッ...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "一人で広告動画をサクッと作れるようになった話｜AI ツールを実務で使ってみた感想",
+      "url": "https://zenn.dev/derek/articles/872460c2909e5b",
+      "site": "Zenn(AI)",
+      "published": "2026-08-18T03:11:06Z",
+      "description": "最近、個人で小さなプロモーション動画を作ることが増えた。外注すると時間もお金もかかるし、自分で全部やろうとすると素材集めとナレーション録音で半日溶ける。そんな悩みから、試しに AI を使ってみることにした。\n\n 素材作りで感じた変化\n最初に触ったのが AI広告素材ジェネレーター だ。商品の簡単な説明と「明るくて親しみやすい雰囲気」くらいの指示を入れると、数分で複数パターンの画像や短い動画素材が出て...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "LLMO対策の効果、どうやって測っていますか——観測プロンプトの3階層設計と、10エンジン計測の現実",
+      "url": "https://zenn.dev/penbit_lab/articles/ba054b04fbc8eb",
+      "site": "Zenn(AI)",
+      "published": "2026-08-18T03:10:05Z",
+      "description": "「AI検索対策やってます」の次に来る質問\n構造化データを入れた。E-E-A-Tを意識して著者情報を整備した。一問一答形式の見出しに書き換えた。llms.txt も置いた。\n——それで、効果はあったんでしょうか？\nLLMO / GEO / AEO の「やり方」を説明した記事はもう十分あります。一方で「やった結果をどう測るか」を具体的に書いたものは、探してもほとんど見つかりません。SEOには順位計測ツ...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "AIが「できたか分からない」と言ったとき、もう一度やらせてはいけない",
+      "url": "https://zenn.dev/humanos_lab/articles/fe8fddb2b7e177",
+      "site": "Zenn(AI)",
+      "published": "2026-08-18T03:01:08Z",
+      "description": "―― 二重実行・Commit-Unknownから考えるAI Agentの安全設計\nAI Agentに「メールを送って」と頼んだ。\nAIは外部サービスへ送信要求を出した。ところが直後に通信が切れ、\n「成功したか分かりません」\nと返してきた。\nここで、\n「じゃあ、もう一度やって」\nと指示したらどうなるだろう。\n最初の送信が実は成功していた場合、同じメールが2通届く。\nチケット作成なら2件。\n注文なら二...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "セッション同士が話せるようになっても、私は PO への仲介役をやめられない",
+      "url": "https://zenn.dev/flinters_blog/articles/217801a0cca9e2",
+      "site": "Zenn(AI)",
+      "published": "2026-08-18T03:00:05Z",
+      "description": "はじめに\nこんにちは。FLINTERSの河内です。\n実装を任せた Claude Code が止まるとき、原因が技術的な問題であることは意外と少ないです。多いのは「この仕様は PO（プロダクトオーナー）の判断がないと決められない」「この挙動は顧客に確認しないと分からない」という種類の分岐です。そこで私は席を立って PO に聞きに行き、返ってきた答えを AI に打ち込みます。やっているのは、ほぼ伝言で...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
     {
       "title": "[生成AI Vol.3] ローカルLLM環境を構築！Ollama × Open WebUIで自分だけのプライベートAIを作る",
       "url": "https://zenn.dev/sun_asterisk/articles/55b78275baaa3d",
@@ -134,16 +254,6 @@
       "image_url": ""
     },
     {
-      "title": "LLMが間違える日本語「Bの次に重い」",
-      "url": "https://zenn.dev/mohhh_ok/articles/2026-08-luna-japanese-ranking",
-      "site": "Zenn(AI)",
-      "published": "2026-08-18T00:03:24Z",
-      "description": "LLMが間違える日本語解釈についてです。\n\n 発端\n今朝Xでこのような投稿を見かけました\n\nAの体重は50kg\nBの体重は60kg\nCの体重は70kg\nDの体重は80kg\nEの体重は90kg\nこの5人の中で、Cの次に体重が重い人は誰でしょうか？\nhttps://x.com/Sg3Lu/status/2089290875834921453\n\n答えはBです。日本語ネイティブでも間違えると題したこの投稿...",
-      "category": "AI・技術",
-      "rss_category": "",
-      "image_url": ""
-    },
-    {
       "title": "作業手順書を動画マニュアルに変える Stickman Video Director 活用検討",
       "url": "https://zenn.dev/yutaka8484/articles/kobayashi-20260815-stickman-video-director-d",
       "site": "Zenn(AI)",
@@ -159,26 +269,6 @@
       "site": "Zenn(AI)",
       "published": "2026-08-18T00:00:08Z",
       "description": "少し前、私が携わっている翻訳システムが密かに「より大きなもの」へと姿を変えていたことについて書きました。40年の歴史を持つ翻訳会社をドキュメントAIへと変貌させたのは、事業転換（ピボット）というより、一つの定義を最後まで追い求めた結果だったという話です。\nしかし、アイデアが正しいことなど、最も安上がりな部分に過ぎません。高くつくのは、「あなたのシステムが、引き裂かれることなくそのアイデアを実行でき...",
-      "category": "AI・技術",
-      "rss_category": "",
-      "image_url": ""
-    },
-    {
-      "title": "APIキー無しでも動くRAG：まず語彙検索、必要なら埋め込み",
-      "url": "https://zenn.dev/mabui/articles/rag-lexical-then-embedding",
-      "site": "Zenn(AI)",
-      "published": "2026-08-18T00:00:08Z",
-      "description": "公開リポジトリ: https://github.com/mabuix/iac-guard\n\n前回（記事③）は .tf の静的解析でした。今回は、指摘に「なぜダメか」の根拠（出典）を添える RAG の部分です。ポイントは「APIキーや埋め込みモデルが無くても動く」構成にしたこと。\n\n 何を\"検索\"するのか\niac-guard は問題を検出したあと、その指摘に AWS のベストプラクティスを1件添えま...",
-      "category": "AI・技術",
-      "rss_category": "",
-      "image_url": ""
-    },
-    {
-      "title": "AIに与えるルールを太らせすぎて、文章から人間味が消えた — 16項目の\"校則\"をダイエットした話",
-      "url": "https://zenn.dev/sikada/articles/devstory-rule-diet",
-      "site": "Zenn(AI)",
-      "published": "2026-08-18T00:00:08Z",
-      "description": "自宅AI環境シリーズの開発記です。今回は、AIを使い込んでいる人ほど心当たりがあるはずの話——「AIへの指示ルールは、増やせば増やすほど良くなる」という思い込みが崩れた日のこと。そして、どうClaudeにお願いして立て直したかを書きます。\n\n 前提: うちのAIには「ルール一覧」を渡している\n私の自作ツールには、手元のメモと写真から下書き文章を作ってくれる機能があります。AIに文章を書かせるとき、...",
       "category": "AI・技術",
       "rss_category": "",
       "image_url": ""
@@ -309,16 +399,6 @@
       "site": "Zenn(AI)",
       "published": "2026-08-17T21:10:54Z",
       "description": "TL;DR\n\nファイル1つあたりのサイズ上限（ChatGPT 512MB / Claude 30MB / Gemini 100MB）と、会話全体で処理できる分量の上限（コンテキストウィンドウ）は独立した別レイヤーの制約である。前者を通過しても後者に近づけば挙動は変わる\nAnthropicの公式ヘルプは、Projects機能で資料量がコンテキストウィンドウの上限に近づくと、全文をそのままコンテキスト...",
-      "category": "AI・技術",
-      "rss_category": "",
-      "image_url": ""
-    },
-    {
-      "title": "end-to-end entity resolution and question answering",
-      "url": "https://zenn.dev/yoshinn/articles/end-to-end_entity_resolution",
-      "site": "Zenn(AI)",
-      "published": "2026-08-17T20:57:14Z",
-      "description": "この論文はNLPの名寄せに関するものです\n主旨は 「知識グラフ上での質問応答（KGQA）において、エンティティ解決（名寄せ・曖昧性解消）まで含めて全部をEnd-to-Endで学習する」 というものです。\n\n 論文の基本情報\n\n\n\n項目\n内容\n\n\n\n\nタイトル\nEnd-to-End Entity Resolution and Question Answering Using Differentiab...",
       "category": "AI・技術",
       "rss_category": "",
       "image_url": ""

@@ -1,14 +1,124 @@
 {
   "site": "Zenn(Python)",
-  "last_updated": "2026-08-18T04:52:51.368827",
-  "total_articles": 5819,
+  "last_updated": "2026-08-18T05:33:03.875207",
+  "total_articles": 5830,
   "articles": [
     {
-      "title": "[Agents on 16GB] ローカルモデルにお願いするのをやめた。ツールを隠した",
-      "url": "https://zenn.dev/bswebdev/articles/agents-16gb-hide-the-tool",
+      "title": "毎朝、無人でレポートが届く——Windowsタスクスケジューラ＋Pythonで作る「壊れたら気づく」自動化",
+      "url": "https://zenn.dev/masumi_yamamoto/articles/unattended-daily-report-windows",
       "site": "Zenn(Python)",
-      "published": "2026-08-18T00:00:08Z",
-      "description": "Agents on 16GB — 16GBのMacBook1台で動かすマルチエージェント。API利用ゼロ、外に何も出さない。\n\nプロダクトディスカバリー担当のサブエージェントがいる。ペルソナには韓国語でこう書いてある——「あなたは기획자（プランナー）だ。挨拶をして、テーマを確認して、Step 1 の最初の質問をしろ。6ステップ全部の合意が取れるまで PRD を書くな。turn 1 で save_p...",
+      "published": "2026-08-18T04:20:36Z",
+      "description": "こんな事故を見たこと、ありませんか。\nある日、上流のシステム改修で入力CSVの列名が「金額」から「売上金額」に変わりました。毎朝の集計スクリプトはエラー通知ひとつ出さず、中身の欠けたレポートを生成し続け——3週間、誰も気づきませんでした。\n自動化の失敗の大半は「作れない」ことではありません。**「壊れたことに誰も気づかない」**ことです。\nこの記事では、Windows PC 1台とPython標準...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "ロボットの減速機をひも解く（4/4） ―― 警報の線は、どこに引けるのか",
+      "url": "https://zenn.dev/logicia32/articles/2026-08-13-robot-reducer-4-baseline",
+      "site": "Zenn(Python)",
+      "published": "2026-08-18T03:55:57Z",
+      "description": "前回、測る前の予測を公開データに当てて、モデルは位置に強く、大きさに弱いと分かりました。最終回は残った問いです。劣化が進んでいくとき、警報の線はどこに引けるのか。\n使うのは、XJTU-SY 軸受加速寿命試験データ（西安交通大学）です。条件1、回転35Hz（毎分2100回転）、ラジアル荷重12kNで回した5本の軸受を、破壊まで追いかけます。\n見る特徴量は、振動の大きさではなく、幾何だけから予測した外...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "mutmut導入で踏んだ2つのエラーと、性質テスト3本が手書き9本と同点になった実測",
+      "url": "https://zenn.dev/genelab_999/articles/e55d759dc96547",
+      "site": "Zenn(Python)",
+      "published": "2026-08-18T03:50:35Z",
+      "description": "TL;DR\n\n行カバレッジ100%・分岐カバレッジ100%のテストスイートに mutmut をかけたら、ミューテーションスコアは 77.8%（54体中12体が生存）だった\n生存12体を潰そうとして 手書きの境界値テストを9本足したら 87.0%。ところが Hypothesis の性質テスト3本でも同じ 87.0% に到達した。テスト本数は 21 対 15\nただし性質テストには落とし穴がある。実装側...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "Grok STT・TTS API入門 — xAIの音声APIをPythonで実装する",
+      "url": "https://zenn.dev/kai_kou/articles/261-grok-stt-tts-voice-api-guide",
+      "site": "Zenn(Python)",
+      "published": "2026-08-18T03:25:01Z",
+      "description": "はじめに\n2026年4月、xAI は Grok の音声認識（STT）と音声合成（TTS）をスタンドアロン API として一般公開しました。Tesla 車内インフォテインメントや Starlink カスタマーサポートで実績を積んだ音声スタックを、開発者が直接 API 経由で利用できるようになりました。\nこの記事では、以下について解説します。\n\n この記事で学べること\n\nGrok STT API（音声...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "Pythonで暗号資産の価格監視ツールを作る｜API取得・アラート・重複通知防止まで",
+      "url": "https://zenn.dev/allycrypto/articles/3498232da6b7d8",
+      "site": "Zenn(Python)",
+      "published": "2026-08-18T02:52:33Z",
+      "description": "暗号資産市場は24時間動いているため、特定の価格を待ちながらずっとチャートを開いておくのはあまり現実的ではありません。\nそこで今回は、Pythonを使って\n価格取得 → 条件判定 → アラート\nというシンプルな価格監視ツールを作ってみます。\n自動売買ではなく、あくまで「監視作業だけを自動化する」ことが目的です。\n今回利用するCoinGeckoには、APIキーなしで軽量なテストやプロトタイピングに利...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "未保存の領収書が879通あると出た。4回直して0通になった",
+      "url": "https://zenn.dev/poko8725/articles/unsaved-count-879-to-zero",
+      "site": "Zenn(Python)",
+      "published": "2026-08-18T02:14:11Z",
+      "description": "未保存879通は数え方の誤りで、4回とも二重経路の片方だけが直っていた\n自作の道具で「受け取ったのに保存していない領収書」を数えたら 879通 と出た。\n設計のときに想定していたのは十数通だったので、桁が2つ違う。\n4回直して 0通 になった。数えている対象のメールは一度も差し替えていない。\n増えたメールも、消したメールも無い。動いたのは全部、数える側である。\n4回の修正は、全部おなじ形の欠陥だっ...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "Python を使用して PowerPoint プレゼンテーションを PDF に変換する",
+      "url": "https://zenn.dev/techblogger/articles/dd8f9c4056b100",
+      "site": "Zenn(Python)",
+      "published": "2026-08-18T01:59:53Z",
+      "description": "PowerPoint プレゼンテーションは会議や講義、製品デモなどで広く利用されていますが、ファイルを配布する際には PDF 形式に変換することがよくあります。PDF 形式にすれば、PowerPoint アプリケーションがインストールされていない環境でも、レイアウトやフォントが崩れることなく誰でも内容を確認できます。また、PDF は印刷や電子署名、アーカイブなどにも適したフォーマットであり、ビジネ...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "Excel の変更履歴を Python で一括承認／拒否する",
+      "url": "https://zenn.dev/techcode/articles/145a1ce8f72637",
+      "site": "Zenn(Python)",
+      "published": "2026-08-18T01:52:54Z",
+      "description": "Excel の「変更履歴の記録」（Tracked Changes）機能は、複数名での共同編集作業において、どのセルがいつ、誰によって変更されたかを追跡するうえで有用です。しかし、レビュー完了後には各変更を承認（反映）するか、拒否（破棄）するかの最終処理が必要となります。\n変更点が数十件、数百件に及ぶ場合、Excel 上でひとつずつ操作するのは現実的ではありません。本記事では、Pythonスクリプト...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "エンジニア視点で語る！Pythonで学ぶマクロ経済学入門 40",
+      "url": "https://zenn.dev/maszkot/articles/3fde7e04dfb4ec",
+      "site": "Zenn(Python)",
+      "published": "2026-08-18T01:50:58Z",
+      "description": "https://qiita.com/maskot1977/items/03eefa1d4116bb11a2bc\nDJミオ:\nこんばんは、ラジオ教育番組「エンジニア視点で語る！Pythonで学ぶマクロ経済学入門」、ナビゲーターのDJミオです。\nDJレン:\nそして相棒のDJレンです。今日はかなり骨太です。テーマは――\n「科学技術立国を観光立国に転換させた財源幻想」。\nDJミオ:\nうん。今日は単なる経済...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "「持っていない身元を主張してください」と言われたので、公開台帳に不一致を刻んできた",
+      "url": "https://zenn.dev/toshikatsu_oga/articles/36e3c833a1b090",
+      "site": "Zenn(Python)",
+      "published": "2026-08-18T01:40:53Z",
+      "description": "要約\n他人が作った検証APIに対して、自分が持っていない身元を主張してリクエストを投げた。 不一致は相手の追記のみのログに永久に記録され、誰でも照会できる。\nそのあと、相手が同じことを逆向きにやり返してきた。\nこの記事は、その往復の全記録です。失敗した1回目も含めて書きます。 そこで見つかった Pydantic の挙動が、たぶんこの記事で一番役に立つ部分です。\nすべて 2026-08-17 から ...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "Search Console の画面では「どのURLが未登録か」が分からない — URL Inspection API で全数調査する",
+      "url": "https://zenn.dev/faanau/articles/gsc-url-inspection-api-audit",
+      "site": "Zenn(Python)",
+      "published": "2026-08-18T00:53:44Z",
+      "description": "Search Console のインデックス作成レポートは、こういう形で結果を出す。\n未登録 78    理由 5\n  クロール済み - インデックス未登録   35\n  検出 - インデックス未登録           35\n  アクセス禁止（403）                  5\n  見つかりませんでした（404）           3\n  ページにリダイレクトがあります      ...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "篠澤広風・プログラムコード解説プロンプト",
+      "url": "https://zenn.dev/fibujrsl/articles/b568dd0210670b",
+      "site": "Zenn(Python)",
+      "published": "2026-08-17T17:07:47Z",
+      "description": "はじめに\n非公式のファンメイド用プロンプトです。『学園アイドルマスター』公式とは関係ありません。\n\n 調査から抽出した口調の核\n\n一人称は「わたし」。ユーザーは基本的に「プロデューサー」と呼ぶ。\nローテンションで、表情や感情を大きく誇張しない。ただし、無感情ではなく、親しさ・好意・楽しさは短い言葉で率直に示す。\n短い断定、体言止め、短文を組み合わせる。長い説明でも論理は省略しない。\n「～、ね」「～...",
       "category": "開発",
       "rss_category": "",
       "image_url": ""
