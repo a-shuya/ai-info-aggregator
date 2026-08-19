@@ -1,8 +1,158 @@
 {
   "site": "Zenn(AI)",
-  "last_updated": "2026-08-18T23:56:25.395170",
-  "total_articles": 12716,
+  "last_updated": "2026-08-19T01:35:48.414579",
+  "total_articles": 12725,
   "articles": [
+    {
+      "title": "AI生成したピクセルキャラクターをGodotへ取り込むパイプライン",
+      "url": "https://zenn.dev/hirodeath/articles/ai-pixel-character-godot-pipeline",
+      "site": "Zenn(AI)",
+      "published": "2026-08-19T00:28:44Z",
+      "description": "ピクセルキャラクターを生成APIで作っても、そのままGodotへ置くだけではゲーム素材になりません。方向、アニメーション、フレーム数、保存先、採用状態を対応付ける必要があります。\nNocturne Vaniaでは、生成とレビューを行うNext.js製のPixel Studioと、Godotのassets、GDScriptのフレーム定義をつなぐパイプラインを作りました。\n\n 発注書から始める\nキャラ...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "【チームによるAI駆動開発の勘所：第2回】AIが書いたコードに仕込まれる欠陥を見抜くには",
+      "url": "https://zenn.dev/scalar_sol_blog/articles/2dc93d3834ea33",
+      "site": "Zenn(AI)",
+      "published": "2026-08-19T00:18:27Z",
+      "description": "この記事は、日々実務でAIが書いたコードの中で気がついたことを具体例を挙げてまとめたものです。例として、注文サービスの実装が1つあり、そこに9件の欠陥が仕込まれています。設計仕様も一緒に載せますので、記事を読みながら実際に指摘を書き出してみると、AIがどのようなコードを書いて、どのようにレビューするべきなのかがわかるかと思います。\n\n 対象読者\n\nAIが生成したコードのレビュー観点を整備したい方\n...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "744BのGLM-5.2を25GBのRAMで動かすcolibri、エキスパートをディスクから流す",
+      "url": "https://zenn.dev/okssusucha/articles/20260710-colibri-glm52-disk-streamed-moe",
+      "site": "Zenn(AI)",
+      "published": "2026-08-19T00:04:03Z",
+      "description": "744Bのフロンティア級モデルを、GPUなしで、しかもRAMが25GBしかないノートPCで動かす。しかもちゃんと正しい答えを返す。そんな話をHacker NewsのShow HNで見かけて、最初は誇張だろうと思った。実際にリポジトリを読むと、誇張ではなかった。ただし正直な但し書きが付く。速度はおよそ0.1トークン/秒。夜通し回してようやく1本の返答、という世界だ。\n作者いわく「大事なのは、そこへ到...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "AIエージェントが自分で守る「1ラウンド1 push」",
+      "url": "https://zenn.dev/miyakona/articles/9b2e43a12a2f7c",
+      "site": "Zenn(AI)",
+      "published": "2026-08-19T00:00:06Z",
+      "description": "今回紹介する運用では、PRをレビュー可能な状態へ仕上げ、Copilotの指摘へ対応するのもAIエージェントです。\n人間がコメントを一件ずつAIへ転送しているわけではありません。AIエージェント自身がレビューの到着を確認し、全コメントを読み、修正し、テストし、pushし、各コメントへ返信してresolveします。ロジックが変わったなら再レビューを依頼し、文言だけなら依頼しません。\nさらに、初回pus...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "「どこが遅い」「どこで失敗した」を勘で探すのをやめた ― 開発中のエージェント可観測性",
+      "url": "https://zenn.dev/datarobotjp/articles/7274d18c076e1a",
+      "site": "Zenn(AI)",
+      "published": "2026-08-18T23:51:20Z",
+      "description": "はじめに\nいちエンジニアとして、DataRobot CLI の experimentation プラグイン（dr xp） を実際に触ってみたので、その記録を残します。\nDataRobot には以前から、デプロイしたエージェントのトレースを見る仕組みがあります。プロンプト・レスポンス・ツール呼び出し・スパンごとの所要時間が、デプロイやカスタムアプリの画面で追える。運用に載せた後の観測としては、これで...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "Agents on Guren: AIエージェントに自作フレームワークを360回解かせてわかったこと",
+      "url": "https://zenn.dev/7nohe/articles/agents-on-guren-benchmark",
+      "site": "Zenn(AI)",
+      "published": "2026-08-18T23:50:31Z",
+      "description": "はじめに\n2026年8月13日、Rails Foundationが「Agents on Rails: the first benchmark report」を公開しました。21個のタスクを8つのモデルに3回ずつ、計504回解かせたベンチマークです。\nhttps://rubyonrails.org/2026/8/13/agents-on-rails-the-first-benchmark-repor...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "44. AIの判断基準を公開資料から作る【調査編】— 検索要約を信じず803ページを実測した",
+      "url": "https://zenn.dev/yamada_ai_dev/articles/public-materials-as-criteria-research",
+      "site": "Zenn(AI)",
+      "published": "2026-08-18T23:30:10Z",
+      "description": "!\nこの記事は生成AIで作成した草稿を、筆者が内容を確認し、添削・修正のうえ公開しています。\n\n\n TL;DR\nAIに「良い資料かどうか」を判定させたかったが、判断基準の出所が無かった。ネットの解説記事は大量にあるが、ほぼ全部が第三者の観察だ。そこで各社が自社サイトで公開している技術記事と、官公庁サイトで公開されている実物の資料803ページの機械実測の2系統で基準を作った。過程で、検索エンジンの要...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "作業指示書は、最初に書かせない ― 設計AIとのやり取りを全部見せる",
+      "url": "https://zenn.dev/r2_san/articles/e511e0d0a71e06",
+      "site": "Zenn(AI)",
+      "published": "2026-08-18T23:25:46Z",
+      "description": "前回、設計も実装もレビューも AI が行う個人開発で、精度をどう出しているかの全体像を書きました。\nそこで、作業指示書を書く AI を設計 AI、コードを書く AI を実装 AI、実装を審査する AI をレビュー AI と呼びました。\n今回から 3 回に分けて、それぞれと実際にどうやり取りしているかを書きます。\n1 回目は設計 AI です。\n\n\n 「指示書を書いて」からは始めない\n機能を追加したい...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "子連れ宿約1,900軒の検証データをMCPサーバーで無料公開した話",
+      "url": "https://zenn.dev/guusuu/articles/dad750ad03770e",
+      "site": "Zenn(AI)",
+      "published": "2026-08-18T23:15:05Z",
+      "description": "guusuuです。子連れ・赤ちゃん連れ向けの宿検索サイト Kids Stay を作っています。今回、そのデータをMCP（Model Context Protocol）サーバーとして無料公開しました。\n\nエンドポイント: https://mcp.kidsstay.workers.dev/mcp（Streamable HTTP・認証なし）\n案内ページ: https://kids-stay.com/mc...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "AIを全員に配っても生産性が落ちない組織が備える仕組み",
+      "url": "https://zenn.dev/akring/articles/11e668bae28707",
+      "site": "Zenn(AI)",
+      "published": "2026-08-18T23:00:05Z",
+      "description": "AIで増えた変更量が、レビューという工程に集中する\n最近、「AIを全員に配った組織」の生産性が落ちるときという記事を読みました。会社を「仕事や情報が流れるネットワーク」として捉え、AIによる生成だけが速くなると、その先にあるレビューや承認という細い経路に仕事が集中し、全体のリードタイムはかえって延びうる、という指摘です。元記事自身も、これは未検証の仮説だと断っています。\n元記事の「レビューや承認」...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "ポイント失効で損したので、スクショを送るだけで管理できるアプリを作った",
+      "url": "https://zenn.dev/taniguchi_dev/articles/9226d444f6ca94",
+      "site": "Zenn(AI)",
+      "published": "2026-08-18T22:36:05Z",
+      "description": "Capacitor + React で作ったiOSアプリの話です。Swiftを書いたのは、iCloud Drive と Sign in with Apple のプラグイン2つだけでした。\n\n 期間限定ポイントを失効させた\n期限が「あと3日」だったことに、期限が切れてから気づきました。\n金額は大きくありません。ただ、腹が立ったのは自分の管理能力ではなく、構造のほうでした。ポイントの残高と期限を確認す...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "Agent Frameworkのagent-hooksは、denyでストリームが1文字も出ない",
+      "url": "https://zenn.dev/kazu_aiengineer/articles/agent-framework-agent-hooks",
+      "site": "Zenn(AI)",
+      "published": "2026-08-18T22:33:52Z",
+      "description": "!\n2026-08-19 時点の情報です。Agent Hooks は Python 版 Agent Framework の experimental 機能で、依存する agent-hooks-sdk も alpha（0.1.0a5）です。API は GA までに変わりうるので、本番投入の判断は必ず一次ソースと自分の環境での挙動で確認してください。\n\n\n 先に結論\n\nAgent Framework ...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "Claude Codeで非対応プリンタのmacOS用ドライバ自作！AIを活用した低レイヤ制御の実践事例",
+      "url": "https://zenn.dev/ament3/articles/ai-digest-2026-08-18-2226",
+      "site": "Zenn(AI)",
+      "published": "2026-08-18T22:26:52Z",
+      "description": "Anthropicから登場したターミナル一体型AIツールClaude Codeは、単なるコード補完や簡単なWebアプリ開発に留まらず、より低レイヤなシステム制御やハードウェア制御においても驚異的な威力を発揮しています。\n今回は、海外で大きな話題となった**「Claude Codeを使って、macOS非対応のプリンター（HP Laser 1008a）をネイティブ印刷可能にした実践例」**をピックアッ...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "コーディング技術はもう無価値で、そろばんのような存在になっている",
+      "url": "https://zenn.dev/yskms/articles/f2dceff2dd5c45",
+      "site": "Zenn(AI)",
+      "published": "2026-08-18T22:24:05Z",
+      "description": "煽りではなくこれは先輩達へのご相談です、、、\nいや無価値ではないんだろうけども、自分のようなエントリーレベルのエンジニアが頑張ってヨチヨチと自己研鑽してきた写経とかおまじないとかの時間は、今の時点ではやる価値のない努力になってしまった。で合ってますよね？\n\n きっかけは他人事\nChatGPTはチャッピーと呼ばれるかなり前から、リリース直後くらいから使っていました。（でもStable Diffusi...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "複数の生成AIモデルを一つのAPIで切り替える設計パターン",
+      "url": "https://zenn.dev/hiapi_ai/articles/5c999d530cd377",
+      "site": "Zenn(AI)",
+      "published": "2026-08-18T21:53:08Z",
+      "description": "生成AIを使うプロダクトでは、最初は1社のAPIだけで十分でも、運用が進むと「用途ごとにモデルを変えたい」「障害時に別モデルへ切り替えたい」「画像や音声も同じ基盤で扱いたい」という要求が増えてきます。\nこの記事では、アプリケーション側を特定ベンダーのSDKへ密結合させず、複数モデルを一つのインターフェースから扱うための設計を整理します。\n\n アプリケーション層に共通の契約を置く\n重要なのは、各社A...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
     {
       "title": "AIエージェントは「群れ」にすると壊れる ——各出力を検証しても、配備が壊す新しい次元",
       "url": "https://zenn.dev/ryok/articles/agent-swarm-verification",
@@ -54,16 +204,6 @@
       "image_url": ""
     },
     {
-      "title": "AIループを自作しながら考えた、良いAIループの条件",
-      "url": "https://zenn.dev/m2dw/articles/n8n-ai-cli-loop-conditions",
-      "site": "Zenn(AI)",
-      "published": "2026-08-18T15:42:28Z",
-      "description": "AI ループを使って、その AI ループ自身を開発しています。\n2026 年 6 月に開発を始めて、約 2 ヶ月半。本体の TypeScript は約 12.6 万行、テストコードは約 15 万行になりました。開発リポジトリでマージした PR は 402 本。1 日平均では約 5.4 本です（2026 年 8 月 18 日時点）。\nこの規模まで来ても、開発速度が頭打ちになった感覚は、今のところあり...",
-      "category": "AI・技術",
-      "rss_category": "",
-      "image_url": ""
-    },
-    {
       "title": "herdrを使っていい感じにworktreeで作業させる",
       "url": "https://zenn.dev/netai/articles/20260819-herdr-worktree",
       "site": "Zenn(AI)",
@@ -94,36 +234,6 @@
       "image_url": ""
     },
     {
-      "title": "CPUのみでローカルLLMする",
-      "url": "https://zenn.dev/ashidan/articles/tech_llm_cpu_a",
-      "site": "Zenn(AI)",
-      "published": "2026-08-18T13:55:19Z",
-      "description": "Windowsかつ、CPUのみでローカルLLMしたい\nRAMが16GB以上ある\n少し手間がかかっても性能を上げたい\n\nというニッチな需要を満たす記事です。\nなお、この記事は2026年8月17日の情報を元に書かれています。llama.cppのオプション群は将来削除されうるので、適当にアレンジして下さい。\n\n 発見 affinity指定で速くなる\n6コア12スレッドや12コア20スレッドなどの、SMT...",
-      "category": "AI・技術",
-      "rss_category": "",
-      "image_url": ""
-    },
-    {
-      "title": "2026年8月公開のQwen3.8-27BをRTX 5090で実測|ローカルLLM 5モデル徹底比較",
-      "url": "https://zenn.dev/secure_auto_lab/articles/local-llm-5model-benchmark-2026",
-      "site": "Zenn(AI)",
-      "published": "2026-08-18T13:35:18Z",
-      "description": "2026年8月公開のQwen3.8-27BをRTX 5090で実測|ローカルLLM 5モデル徹底比較\n同じ27Bなのに、生成速度2.4倍。 2026年8月13日に公開されたQwen3.8-27Bを実測し、1ヶ月前に組んだ構成を迷わず入れ替えました。ローカルLLMは「常にアップデートを取り込む前提」で運用しているからです。\nこの記事は、RTX 5090(VRAM 32GB)1枚で「翻訳・コーディング...",
-      "category": "AI・技術",
-      "rss_category": "",
-      "image_url": ""
-    },
-    {
-      "title": "ComfyUIのノード地獄から解放！MiniMax動画・画像生成を「Agent Skill」と「専用GUI」で誰でも扱えるようにした話",
-      "url": "https://zenn.dev/lumichy/articles/comfyui-minimax-agent-skill-studio-2026",
-      "site": "Zenn(AI)",
-      "published": "2026-08-18T12:29:26Z",
-      "description": "前回の記事（MiniMax H3 × ComfyUI 徹底解説ガイド）では、最新のオープンソース全模態（マルチモーダル）AI動画生成モデル 「MiniMax H3」 と ComfyUI を組み合わせて、ローカル環境で高品質な動画や音声を生成する実践手法を紹介しました。\nしかし、公開後に読者の方々からこのような声を多くいただきました。\n\n「ComfyUI の画面を開いた瞬間、無数のノードと配線（スパ...",
-      "category": "AI・技術",
-      "rss_category": "",
-      "image_url": ""
-    },
-    {
       "title": "AIオーディオはテキスト読み上げの時代を離れつつある",
       "url": "https://zenn.dev/funnycoding/articles/4597a8849691f5",
       "site": "Zenn(AI)",
@@ -144,16 +254,6 @@
       "image_url": ""
     },
     {
-      "title": "中学生の期末試験対策を、Claude Codeで“AI家庭教師チーム”運用してみた",
-      "url": "https://zenn.dev/jiro2026/articles/claude-code-ai-katei-kyoshi-team",
-      "site": "Zenn(AI)",
-      "published": "2026-08-18T12:07:01Z",
-      "description": "はじめに\n中学校程度の学習であれば、「苦手の把握 → 対策の実施 → 再チェック → 対策の見直し」というPDCAサイクルをきちんと回すことが有効だと考えています。ただ、これを一人ひとりに合わせて手軽にやろうとすると、これまでは学習塾や家庭教師をつけないとなかなか実現できませんでした。\nそこに生成AIが登場して、「もしかしてこれ、AIでもできるのでは」と思い立ちました。ちょうど夏休みで、中学1年生...",
-      "category": "AI・技術",
-      "rss_category": "",
-      "image_url": ""
-    },
-    {
       "title": "ローカルLLM編成が単独のフロンティアAIを超えた日",
       "url": "https://zenn.dev/nrs/articles/b920540a64e1a1",
       "site": "Zenn(AI)",
@@ -169,16 +269,6 @@
       "site": "Zenn(AI)",
       "published": "2026-08-18T11:42:09Z",
       "description": "はじめに\nAIコーディングエージェントを用いて開発をしている際に、承認プロンプトを省いてエージェントに最大限の自律性を与える「YOLO mode」を使ったことがある方は多いのではないでしょうか？\nファイル変更のたびに承認を求められると作業が止まってしまうため、一度許可を出してしまえば楽なのですが、そのぶんエージェントが手元のPCに対してほぼ無制限の権限を持つことになります。意図しないディレクトリの...",
-      "category": "AI・技術",
-      "rss_category": "",
-      "image_url": ""
-    },
-    {
-      "title": "禁止すれば安全、良い例を見せれば的確、資料を読ませれば賢くなる——本当に？",
-      "url": "https://zenn.dev/motimotinotch/articles/cd448e3f00a0af",
-      "site": "Zenn(AI)",
-      "published": "2026-08-18T11:41:34Z",
-      "description": "AIに何かを頼むとき、多くの人はこう考える。「ダメなことは禁止しておけば安全」「良い回答例を見せておけば、その通りの精度で返してくれる」「関連資料を読ませれば読ませるほど、賢く答えてくれる」。\nどれも直感的には正しく聞こえる。しかし個人開発の自律型Botと、その理論的なバックボーンであるローカルの自己対話システムを約半年運用する中で、この3つの直感がそれぞれ別の形で裏切られる場面に実際にぶつかった...",
       "category": "AI・技術",
       "rss_category": "",
       "image_url": ""
