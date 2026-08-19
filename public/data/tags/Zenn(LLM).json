@@ -1,7 +1,7 @@
 {
   "site": "Zenn(LLM)",
-  "last_updated": "2026-08-19T20:00:29.829538",
-  "total_articles": 5493,
+  "last_updated": "2026-08-19T20:38:34.312289",
+  "total_articles": 5491,
   "articles": [
     {
       "title": "開発ログ01: LLMと計算を分離するTRPGエンジンの設計",
@@ -9,6 +9,16 @@
       "site": "Zenn(LLM)",
       "published": "2026-08-19T14:50:42Z",
       "description": "これは何か\n有料APIを一切使わず、ローカルLLM（Ollama）だけを頭脳にした TRPG兼チャットノベルアプリを個人開発している。追加費用は電気代のみ。利用者は自分ひとり。\nこの記事はその設計編である。実装の詳細より、なぜその構造にしたかを書く。VRAM 8GBという厳しい予算と、7B級モデルが持つ「嘘をつく」「計算を間違える」「名前を忘れる」という性質を、アーキテクチャ側でどう封じ込めるかの...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "マスキングの漏れは0%だった。検査が見ていない名前があった",
+      "url": "https://zenn.dev/ossudesu/articles/zenn-pii-masking-article",
+      "site": "Zenn(LLM)",
+      "published": "2026-08-19T13:03:40Z",
+      "description": "この記事の対象と、扱う規模\n個人開発でLLMに業務データを渡していて、「このまま外部APIに送っていいのか」で止まったことがある人向けです。\n先に規模を正直に書いておきます。35ケースの正解データに対して、正規表現で氏名を伏せるだけの小さな仕組みです。固有表現抽出のモデルも、専用のPII検出サービスも使っていません。企業のデータ保護基盤を期待して読むと確実に物足りません。\nそれでも書くのは、作った...",
       "category": "AI・技術",
       "rss_category": "",
       "image_url": ""
@@ -34,31 +44,11 @@
       "image_url": ""
     },
     {
-      "title": "【無料・動画連動】AIと開発する技術 — エージェント時代の「任せ方」入門",
-      "url": "https://zenn.dev/acropapa330/books/ai-agentic-dev",
-      "site": "Zenn(LLM)",
-      "published": "2026-08-19T10:15:10Z",
-      "description": "「AIにコードを書いてもらう」が当たり前になった今、差がつくのは書く力ではなく任せ方。\nプロンプトの型、コンテキストエンジニアリング、ハーネスとループ、レビューゲート——\nYouTube番組「アクロパパのAI教室」第3シリーズと連動して、AIエージェントと開発する\n技術を全10章で体系的に学びます。各章に対応する動画へのリンク付き。",
-      "category": "AI・技術",
-      "rss_category": "",
-      "image_url": ""
-    },
-    {
       "title": "20年前の自分のブログをLLMに読ませて、「次に作るべきもの」を予測させてみた",
       "url": "https://zenn.dev/kiyoka/articles/blog-archive-llm-prediction",
       "site": "Zenn(LLM)",
       "published": "2026-08-19T09:00:02Z",
       "description": "はじめに\n2006年頃から書いていた古いブログを、GitHub Pages にアーカイブしました。\n移設作業をしながら記事一覧を眺めていて、「創作心理」という18件だけのカテゴリが目に留まりました。技術記事ではなく、何を作るか・なぜ作るか・どういう気分のときに作れるかをひたすら書いていたカテゴリです。\n読み返してみると、当時の自分がやたらと真面目に「創作の方法論」を言語化しようとしていて、少し気恥...",
-      "category": "AI・技術",
-      "rss_category": "",
-      "image_url": ""
-    },
-    {
-      "title": "10万社から「本当に合う相手」を見つける——M&AマッチングKEPLの設計で考えたこと",
-      "url": "https://zenn.dev/fundbook_tech/articles/8767a61d3ebd0d",
-      "site": "Zenn(LLM)",
-      "published": "2026-08-19T08:22:34Z",
-      "description": "はじめまして\nfundbookでAIエンジニアをしているueventです。\n2026年1月に AIマッチングシステム KEPL(ケプル) をリリースしました！少し時間が経ちましたが、夏の思い出として技術記事を認めたいと思います。fundbook の開発者には Claude を配布してもらっており、この記事も Claudeの力を借りてまとめました。\nKEPLは、会社を譲渡したい企業に対して、10万社...",
       "category": "AI・技術",
       "rss_category": "",
       "image_url": ""
@@ -149,16 +139,6 @@
       "site": "Zenn(LLM)",
       "published": "2026-08-19T02:42:36Z",
       "description": "PDF からテキストを抽出するツールはたくさんありますが、表 (テーブル) だけはきれいに取れない、という経験はないでしょうか。この記事では、PDF の表を「潰れたテキストの行」ではなく「行と列が保たれた JSON」として抽出する方法と、それを LLM / RAG の前処理に使う流れを紹介します。\n\n 課題: 一般的な PDF 抽出では表が「行」に潰れる\npdfminer や PyPDF などで ...",
-      "category": "AI・技術",
-      "rss_category": "",
-      "image_url": ""
-    },
-    {
-      "title": "RAGシステム最適化！ベクトルDB選定とチャンキングでやった3つのこと",
-      "url": "https://zenn.dev/fd_ai_teacher/articles/tech-20260818105204-1",
-      "site": "Zenn(LLM)",
-      "published": "2026-08-19T01:57:36Z",
-      "description": "RAGシステム、その検索精度と応答速度に課題を感じていませんか？\n「せっかくRAGを導入したのに、期待する回答が得られない」「幻覚（Hallucination）問題が解消されない」「検索速度が遅くてユーザー体験が悪い」――LLMアプリ開発の現場で、RAGシステムの性能最適化は多くのエンジニアが直面する共通の悩みです。特に、ベクトルDBの選定とチャンキング戦略は、RAGの検索精度と応答速度に直接影響...",
       "category": "AI・技術",
       "rss_category": "",
       "image_url": ""
