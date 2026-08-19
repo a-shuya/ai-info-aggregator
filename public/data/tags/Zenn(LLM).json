@@ -1,34 +1,44 @@
 {
   "site": "Zenn(LLM)",
-  "last_updated": "2026-08-19T16:13:48.162298",
-  "total_articles": 5491,
+  "last_updated": "2026-08-19T16:51:33.887547",
+  "total_articles": 5490,
   "articles": [
     {
-      "title": "「Claude Codeはやりすぎでは？」に答える——Notion AIとの構造差7軸と、使い分けの4シグナル",
-      "url": "https://zenn.dev/imu_imu/articles/notion-ai-vs-claude-code",
+      "title": "開発ログ01: LLMと計算を分離するTRPGエンジンの設計",
+      "url": "https://zenn.dev/ace_toshi/articles/trpg-local-devlog-01",
       "site": "Zenn(LLM)",
-      "published": "2026-08-19T11:15:04Z",
-      "description": "「Claude Codeって、非エンジニアにはやりすぎじゃない？　うちは Notion AI があるし」\n社内で Claude Code の話をすると、だいたいこれを言われます。そして、この反応は半分正しい。\n半分正しいからこそ、雑に反論すると負けます。「Claude Code のほうが賢いから」は来月には嘘になるかもしれないし、「Notion AI は読むだけでしょ」は2026年時点ではもう事実...",
+      "published": "2026-08-19T14:50:42Z",
+      "description": "これは何か\n有料APIを一切使わず、ローカルLLM（Ollama）だけを頭脳にした TRPG兼チャットノベルアプリを個人開発している。追加費用は電気代のみ。利用者は自分ひとり。\nこの記事はその設計編である。実装の詳細より、なぜその構造にしたかを書く。VRAM 8GBという厳しい予算と、7B級モデルが持つ「嘘をつく」「計算を間違える」「名前を忘れる」という性質を、アーキテクチャ側でどう封じ込めるかの...",
       "category": "AI・技術",
       "rss_category": "",
       "image_url": ""
     },
     {
-      "title": "GLM-5.3、後学習だけで最前線へ――AIモデル競争は規模から費用対効果の時代へ",
-      "url": "https://zenn.dev/moonwalker/articles/glm-5-3-post-training-value",
+      "title": "マスキングの漏れは0%だった。検査が見ていない名前があった",
+      "url": "https://zenn.dev/ossudesu/articles/zenn-pii-masking-article",
       "site": "Zenn(LLM)",
-      "published": "2026-08-19T11:14:08Z",
-      "description": "中国のAI企業Z.ai（智譜AI）は8月14日、最新の基盤モデル「GLM-5.3」を発表しました。2026年8月19日時点でAPIとGLM Coding Planから利用でき、複雑なソフトウェア開発、長時間にわたるエージェント処理、サイバーセキュリティ領域を主な対象としています。\n今回の発表で注目すべきなのは、単にベンチマークの順位が上がったことではありません。GLM-5.3は前世代のGLM-5....",
+      "published": "2026-08-19T13:03:40Z",
+      "description": "この記事の対象と、扱う規模\n個人開発でLLMに業務データを渡していて、「このまま外部APIに送っていいのか」で止まったことがある人向けです。\n先に規模を正直に書いておきます。35ケースの正解データに対して、正規表現で氏名を伏せるだけの小さな仕組みです。固有表現抽出のモデルも、専用のPII検出サービスも使っていません。企業のデータ保護基盤を期待して読むと確実に物足りません。\nそれでも書くのは、作った...",
       "category": "AI・技術",
       "rss_category": "",
       "image_url": ""
     },
     {
-      "title": "【無料・動画連動】AIと開発する技術 — エージェント時代の「任せ方」入門",
-      "url": "https://zenn.dev/acropapa330/books/ai-agentic-dev",
+      "title": "LangGraph のコードを読んで、自作マルチエージェントと突き合わせた — 「言葉で繋がない」設計と動的ルーティング",
+      "url": "https://zenn.dev/outcasts/articles/6607063bb8d4b0",
       "site": "Zenn(LLM)",
-      "published": "2026-08-19T10:15:10Z",
-      "description": "「AIにコードを書いてもらう」が当たり前になった今、差がつくのは書く力ではなく任せ方。\nプロンプトの型、コンテキストエンジニアリング、ハーネスとループ、レビューゲート——\nYouTube番組「アクロパパのAI教室」第3シリーズと連動して、AIエージェントと開発する\n技術を全10章で体系的に学びます。各章に対応する動画へのリンク付き。",
+      "published": "2026-08-19T12:15:46Z",
+      "description": "要約\n\nマルチエージェントのオーケストレーションを LLM の「言葉」で繋ぐと、要約のたびに情報が落ちて長時間の運用で回らなくなる。Anthropic の \"Multi-agent coordination patterns\" が言う「orchestrator becomes an information bottleneck」は、自作の村でも実測で出た\nLangGraph（langchain-a...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "Amazon Bedrock における日本語ウェブ検索機能の検証",
+      "url": "https://zenn.dev/aws_japan/articles/2026-08-19-websearch-in-aws",
+      "site": "Zenn(LLM)",
+      "published": "2026-08-19T11:46:09Z",
+      "description": "2026-06-16 に Amazon Bedrock AgentCore でフルマネージドなウェブ検索ツールが利用可能となりました。関連するウェブ検索ツールに関しては直近では以下のような主要なアップデートがあります。\n\n2026-06-16: Amazon Bedrock AgentCore でウェブ検索ツールが US East で提供開始 https://aws.amazon.com/blog...",
       "category": "AI・技術",
       "rss_category": "",
       "image_url": ""
@@ -39,26 +49,6 @@
       "site": "Zenn(LLM)",
       "published": "2026-08-19T09:00:02Z",
       "description": "はじめに\n2006年頃から書いていた古いブログを、GitHub Pages にアーカイブしました。\n移設作業をしながら記事一覧を眺めていて、「創作心理」という18件だけのカテゴリが目に留まりました。技術記事ではなく、何を作るか・なぜ作るか・どういう気分のときに作れるかをひたすら書いていたカテゴリです。\n読み返してみると、当時の自分がやたらと真面目に「創作の方法論」を言語化しようとしていて、少し気恥...",
-      "category": "AI・技術",
-      "rss_category": "",
-      "image_url": ""
-    },
-    {
-      "title": "10万社から「本当に合う相手」を見つける——M&AマッチングKEPLの設計で考えたこと",
-      "url": "https://zenn.dev/fundbook_tech/articles/8767a61d3ebd0d",
-      "site": "Zenn(LLM)",
-      "published": "2026-08-19T08:22:34Z",
-      "description": "はじめまして\nfundbookでAIエンジニアをしているueventです。\n2026年1月に AIマッチングシステム KEPL(ケプル) をリリースしました！少し時間が経ちましたが、夏の思い出として技術記事を認めたいと思います。fundbook の開発者には Claude を配布してもらっており、この記事も Claudeの力を借りてまとめました。\nKEPLは、会社を譲渡したい企業に対して、10万社...",
-      "category": "AI・技術",
-      "rss_category": "",
-      "image_url": ""
-    },
-    {
-      "title": "Claudeがタンパク質を設計した。LLMは「科学を説明するAI」からどこまで進んだのか",
-      "url": "https://zenn.dev/kiri_kunn/articles/a74e1d32e2a74d",
-      "site": "Zenn(LLM)",
-      "published": "2026-08-19T07:12:41Z",
-      "description": "2026年8月19日、Anthropicが興味深い研究結果を公開しました。\nClaudeを使って、新しいタンパク質結合体（protein binder）をゼロから設計し、その候補を実際の実験で検証したというものです。\nAnthropicによると、Claude Mythos PreviewとClaude Opus 4.8を使った実験では、15種類の標的に対してbinderを設計し、そのうち14種類で...",
       "category": "AI・技術",
       "rss_category": "",
       "image_url": ""
@@ -114,6 +104,16 @@
       "image_url": ""
     },
     {
+      "title": "Grok Botの動きの手懐け方と最低限まともに使うためにやったこと",
+      "url": "https://zenn.dev/u1/articles/grok-bot-memory-and-japanese-rules",
+      "site": "Zenn(LLM)",
+      "published": "2026-08-19T05:05:55Z",
+      "description": "この記事はXの元記事をZenn向けに再掲載したものです。\n\n この記事の対象となる方\nGrok Botを使ってる方です｡Grok Botとは何か･どうやって使うのかという話は省略して､中身の話に特化した話です｡\n\n 概要\nGrok Botを使っていて困ったことは、大きく2つありました。\n1つは Memory です。xAI自体､積極的にMemoryに保存する形を目指しており､使うほど情報を覚えてくれ...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
       "title": "Google Colabで最新LLMを試す #10 ― MiniMax Music 3で日本語の歌入り楽曲を生成する",
       "url": "https://zenn.dev/nakanishitf/articles/d0ad4d73588e6a",
       "site": "Zenn(LLM)",
@@ -139,16 +139,6 @@
       "site": "Zenn(LLM)",
       "published": "2026-08-19T02:42:36Z",
       "description": "PDF からテキストを抽出するツールはたくさんありますが、表 (テーブル) だけはきれいに取れない、という経験はないでしょうか。この記事では、PDF の表を「潰れたテキストの行」ではなく「行と列が保たれた JSON」として抽出する方法と、それを LLM / RAG の前処理に使う流れを紹介します。\n\n 課題: 一般的な PDF 抽出では表が「行」に潰れる\npdfminer や PyPDF などで ...",
-      "category": "AI・技術",
-      "rss_category": "",
-      "image_url": ""
-    },
-    {
-      "title": "RAGシステム最適化！ベクトルDB選定とチャンキングでやった3つのこと",
-      "url": "https://zenn.dev/fd_ai_teacher/articles/tech-20260818105204-1",
-      "site": "Zenn(LLM)",
-      "published": "2026-08-19T01:57:36Z",
-      "description": "RAGシステム、その検索精度と応答速度に課題を感じていませんか？\n「せっかくRAGを導入したのに、期待する回答が得られない」「幻覚（Hallucination）問題が解消されない」「検索速度が遅くてユーザー体験が悪い」――LLMアプリ開発の現場で、RAGシステムの性能最適化は多くのエンジニアが直面する共通の悩みです。特に、ベクトルDBの選定とチャンキング戦略は、RAGの検索精度と応答速度に直接影響...",
       "category": "AI・技術",
       "rss_category": "",
       "image_url": ""
