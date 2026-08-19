@@ -1,8 +1,78 @@
 {
   "site": "Zenn(Python)",
-  "last_updated": "2026-08-19T17:53:55.279387",
-  "total_articles": 5855,
+  "last_updated": "2026-08-19T18:39:53.107482",
+  "total_articles": 5861,
   "articles": [
+    {
+      "title": "Salesforceのログインが2027年6月に廃止される。自動化10本を調べたら、直す場所は1つではなかった",
+      "url": "https://zenn.dev/reona777/articles/salesforce-soap-login-retirement",
+      "site": "Zenn(Python)",
+      "published": "2026-08-19T16:38:45Z",
+      "description": "教育系の事業所で現場の運営をしています。エンジニアではありません。2026年の春から Claude Code で社内ツールを作り始めて、5か月で6本を本番稼働させました。\n前の記事では、Salesforce のパスワードを1回変えたら連携が8箇所いっせいに止まった話を書きました。\nhttps://zenn.dev/reona777/articles/salesforce-credential-ro...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "ハッシュ化したはずの認証トークンが、平文でもDBに保存され続けていた話",
+      "url": "https://zenn.dev/itaraiguma/articles/token-hash-expand-contract-stalled",
+      "site": "Zenn(Python)",
+      "published": "2026-08-19T15:36:14Z",
+      "description": "はじめに\n個人開発している技術記事キュレーションサービス「DevPick」では、利用者を識別する認証トークンをDBに保存しています。以前、これを平文で持つのをやめてハッシュ値で保存するように変更しました。DBの中身が漏れたときに、そのトークンをそのまま使い回されないようにするためです。\n先日、別の作業のついでにテーブルを眺めていて気づきました。平文のトークンも、いまだに書き込まれ続けていました。\n...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "個人でトレーディング戦略を検証する — 事前登録と較正ゲートで自分を止める",
+      "url": "https://zenn.dev/sotakobayashi/articles/prereg-discipline-solo-research",
+      "site": "Zenn(Python)",
+      "published": "2026-08-19T15:11:20Z",
+      "description": "個人でトレーディング戦略の研究をしています。これまでに91本の仮説を統計検定にかけて、事前に決めた判定を通ったのは5本でした。さらに「実際に資金を入れてよいか」を見る別の基準を置いたところ、通ったのは0本です。\n打率だけ見るとひどい成績ですが、いま振り返ると、この「棄却できる仕組み」を作ったことが一番の成果だったと思っています。トレードの話として書きますが、A/Bテストでも機械学習の評価でも事情は...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "uv × Ruff × Mypy × Black で作る Python 開発環境 ── 役割分担と、実際に動く設定ファイル",
+      "url": "https://zenn.dev/japan/articles/52b3705fb727d9",
+      "site": "Zenn(Python)",
+      "published": "2026-08-19T14:59:15Z",
+      "description": "数年前まで、Python プロジェクトを新しく立ち上げるたびに同じ作業をしていた。pyenv で Python を入れて、Poetry で仮想環境を作って、flake8 と isort と Black と mypy を dev 依存に足して、setup.cfg と .flake8 と pyproject.toml に設定を散らかす。CI は毎回4分近くかかっていて、そのうち半分は依存解決だった。\n...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "個人開発でCLIツールを11本量産した設計と運用の記録",
+      "url": "https://zenn.dev/beako/books/44f4ee0ff48b53",
+      "site": "Zenn(Python)",
+      "published": "2026-08-19T14:39:43Z",
+      "description": "証券会社・銀行のCSVを扱う個人開発OSS CLIツールを11本、Claude Codeとペアで公開してきた実録。note.comでは紹介しきれなかった設計判断・共通パターン(列マッピング/amount_mode/「黙って捨てない」)・独立検証スクリプトによる品質保証・AIとの役割分担・公開作業でハマった技術的な壁までを、実装者向けに掘り下げます。誇張なし、誇大な成果報告もなし、実際のリポジトリ・...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "イベントループを理解する：I/Oバウンド/CPUバウンドとPython・Goの違い",
+      "url": "https://zenn.dev/yosuke_natto/articles/ea409607614b2a",
+      "site": "Zenn(Python)",
+      "published": "2026-08-19T14:09:36Z",
+      "description": "はじめに\n「シングルスレッドなのに非同期処理をどうさばいているのか」「Goのgoroutineとイベントループは何が違うのか」——技術面接でも実務でも頻出のこのテーマを、図とコード例を交えて整理します。\n対象読者は、非同期処理やasync/awaitは書いたことがあるけれど、「なぜそれで速くなるのか」を自分の言葉で説明できるようになりたい人です。\n\n イベントループとは何か\nイベントループは、一言...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "【Seaborn入門 #7】詳細分布",
+      "url": "https://zenn.dev/haruhiro1020/articles/7cf581c1cdef57",
+      "site": "Zenn(Python)",
+      "published": "2026-08-19T12:00:05Z",
+      "description": "はじめに\n本記事は「Pythonでデータを可視化するSeaborn入門」シリーズの第7回です．\n本シリーズでは， Pythonのデータ可視化ライブラリである Seaborn を使って，「データを可視化できる」ようになること を目標としています．\n第6回では，回帰分析とトレンド について説明しました．\n第7回では，データの分布 について詳しく説明します．\n私のSeabornライブラリのバージョンは ...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
     {
       "title": "なぜAI開発ループには「止まる設計」が必要なのか──kajiの実測から考える",
       "url": "https://zenn.dev/kai_ai/articles/6477298d88c1f5",
@@ -109,16 +179,6 @@
       "site": "Zenn(Python)",
       "published": "2026-08-18T21:30:05Z",
       "description": "前回のブログ記事では、計算化学における実務的な大きな壁であった「分子配置（初期座標）の自動生成」を解決する幾何学的アプローチと、Jupyter環境上で動作するツールをご紹介しました。今回はその続編として、計算から結果の可視化までを一つのウィンドウで完結させるオールインワンデスクトップアプリ」をご紹介します。\n本記事は2回に分けてお届けします。第1回となる今回は、アプリ開発の背景と、搭載された各機能...",
-      "category": "開発",
-      "rss_category": "",
-      "image_url": ""
-    },
-    {
-      "title": "Google Cloud無料枠で研究環境を作る【日本株クオンツ研究ノート Vol.1】",
-      "url": "https://zenn.dev/hiratsukaaa682/articles/4cb230a6aa436f",
-      "site": "Zenn(Python)",
-      "published": "2026-08-18T18:07:13Z",
-      "description": "はじめに\n個人で日本株の個別株投資を研究するために、データを取得・保存・分析できる環境を作り始めました。\n最終的な目的は、感覚だけに頼らず、株価・財務情報・検証結果を使って投資判断を改善していくことです。今回はその土台として、Google Cloud上に最小構成の研究環境を作ります。\n本記事で扱うのは環境構築までです。日本株データの取得と分析は次回以降に進めます。\n\n この記事で完成する状態\nこの...",
       "category": "開発",
       "rss_category": "",
       "image_url": ""
