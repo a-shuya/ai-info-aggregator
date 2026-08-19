@@ -1,8 +1,18 @@
 {
   "site": "Zenn(機械学習)",
-  "last_updated": "2026-08-19T09:18:27.198631",
-  "total_articles": 1661,
+  "last_updated": "2026-08-19T09:54:20.877205",
+  "total_articles": 1662,
   "articles": [
+    {
+      "title": "クラシック・データサイエンスの現在地 #1 Bootstrap — 統計学が「計算」を手に入れたとき",
+      "url": "https://zenn.dev/sunyeul89/articles/79ebc5f6194099",
+      "site": "Zenn(機械学習)",
+      "published": "2026-08-19T05:41:59Z",
+      "description": "クラシック・データサイエンスの現在地\n\n 【前置き】このシリーズについて\n私は現在、株式会社ブレインパッドに所属し、グループ会社の BrainPad AAA に出向してリードデータサイエンティストとして働いています。\nこのシリーズは、もともと社内で発表した内容をベースにしています。発表資料のままでは少し説明が省略されている部分もあるので、ブログでは文章やコード、補足説明を加えながら、ひとつの記事と...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
     {
       "title": "第6回 関東Kaggler会 参加レポート",
       "url": "https://zenn.dev/gatechnologies/articles/455f65a133e344",
@@ -14,11 +24,31 @@
       "image_url": ""
     },
     {
+      "title": "RL ポストトレーニングが静かに壊れるとき: training と inference の数値ミスマッチ",
+      "url": "https://zenn.dev/tosshi/articles/5fc9e8dc7f2ae3",
+      "site": "Zenn(機械学習)",
+      "published": "2026-08-19T01:26:01Z",
+      "description": "はじめに\n本記事は、RL ポストトレーニング、つまり学習済みモデルを強化学習でさらに調整する工程で、学習を静かに崩壊させる数値ミスマッチを扱います。応答を生成する推論エンジンと、重みを更新する学習エンジンは、同じ重みを持っていても同じトークンにわずかに違う数値を出すことがあります。同じ重みなら同じ確率を出すはず、という前提が崩れるこのズレを mis_kl と呼びます。条件がそろうと mis_kl ...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
       "title": "Seed-VCアーキテクチャ徹底解説 — 声を「誰が・何を・どう」に分解する4段構成",
       "url": "https://zenn.dev/orca_forge/articles/seed-vc-architecture-voice-conversion",
       "site": "Zenn(機械学習)",
       "published": "2026-08-19T01:00:11Z",
       "description": "📝 この記事は forge.workstyle.tech に掲載した記事の転載です。\n\n「録音した自分の声を、別人の声に変換する」——これを実現しようとすると、最初にぶつかる問いがあります。\n\nそもそも \"声\" とは何でできているのか？\n\n同じ台詞を喋っても、話者が違えば別の音になる。同じ人が喋っても、内容が違えば別の音になる。抑揚をつければまた変わる。つまり音声は少なくとも「誰の声か（話者性）」...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "その指標、始める前から動かないかもしれません📏",
+      "url": "https://zenn.dev/satoshiakiyama/articles/b76885ec9e5f75",
+      "site": "Zenn(機械学習)",
+      "published": "2026-08-18T23:13:30Z",
+      "description": "前回、家庭用 PC で小さいモデルを測った話を書きました。そこでいちばん役に立ったのは、うまくいかなかった測定でした。今回はその続きで、同じ失敗を、始める前に避ける方法を書きます。\n同じ指標が、片方は完璧に効いて、片方は何も見えなかった\nまず実例です。公開済みの測定から、そのまま引きます。\n「モデルがちゃんと止まるか」を二値(止まった / 止まらなかった)で測りました。この指標で 2 つの比較をし...",
       "category": "AI・技術",
       "rss_category": "",
       "image_url": ""
@@ -179,26 +209,6 @@
       "site": "Zenn(機械学習)",
       "published": "2026-08-16T02:00:00Z",
       "description": "「TabPFNがXGBoostを超えた」という見出しを見て、表形式データの主役がGBDT（勾配ブースティング木）からTransformerベースの基盤モデルに入れ替わったと考えるのは早計です。本記事では、TabPFN v2.5とGBDT（LightGBM・XGBoost）を実際に比較し、「本当に入れ替わったのか」をデータ規模別に検証します。\n\n\n TabPFNとは何か\nTabPFNは、表形式データ...",
-      "category": "AI・技術",
-      "rss_category": "",
-      "image_url": ""
-    },
-    {
-      "title": "学習率のwarmupは本当に訓練を安定させるのか。崩壊寸前のLRで20シード×3条件、実際に数えてみた",
-      "url": "https://zenn.dev/shakeailab/articles/learning-rate-warmup-ablation",
-      "site": "Zenn(機械学習)",
-      "published": "2026-08-15T22:58:29Z",
-      "description": "「学習率を高くして訓練するときは、最初にwarmup期間を置かないと訓練が不安定になる・序盤で発散する」——深層学習をやっていると、ほぼ常識のようによく聞く話だ。以前の記事でSGD・Momentum・RMSprop・Adamを競走させたときも、Adamの適応的な学習率について色々調べる中で、この「warmup神話」に何度も行き当たった。\nただ、自分の手で実際に確かめたことは一度もなかった。なので今...",
-      "category": "AI・技術",
-      "rss_category": "",
-      "image_url": ""
-    },
-    {
-      "title": "L1 vs L2正則化、CNNの重みはどう変わる？【Keras×CIFAR-10実験】",
-      "url": "https://zenn.dev/wasurenamemo/articles/b56c8c73b44add",
-      "site": "Zenn(機械学習)",
-      "published": "2026-08-15T13:10:11Z",
-      "description": "同じ強さ（λ=1e-4）の正則化をかけただけなのに、L1とL2でCIFAR-10のtest_accuracyが9pt近くも差が出た——CNNにL1正則化とL2正則化をそれぞれ適用して比較したところ、そんな結果になりました。詳しい実験コードと考察は本記事にまとめています。\nhttps://wasurenamemo.blogspot.com/2026/08/keras-l1-vs-l2-regular...",
       "category": "AI・技術",
       "rss_category": "",
       "image_url": ""
