@@ -1,6 +1,6 @@
 {
   "site": "Zenn(LLM)",
-  "last_updated": "2026-08-19T10:32:47.534969",
+  "last_updated": "2026-08-19T11:00:26.078915",
   "total_articles": 5482,
   "articles": [
     {
@@ -64,26 +64,6 @@
       "image_url": ""
     },
     {
-      "title": "RL ポストトレーニングが静かに壊れるとき: training と inference の数値ミスマッチ",
-      "url": "https://zenn.dev/tosshi/articles/5fc9e8dc7f2ae3",
-      "site": "Zenn(LLM)",
-      "published": "2026-08-19T01:26:01Z",
-      "description": "はじめに\n本記事は、RL ポストトレーニング、つまり学習済みモデルを強化学習でさらに調整する工程で、学習を静かに崩壊させる数値ミスマッチを扱います。応答を生成する推論エンジンと、重みを更新する学習エンジンは、同じ重みを持っていても同じトークンにわずかに違う数値を出すことがあります。同じ重みなら同じ確率を出すはず、という前提が崩れるこのズレを mis_kl と呼びます。条件がそろうと mis_kl ...",
-      "category": "AI・技術",
-      "rss_category": "",
-      "image_url": ""
-    },
-    {
-      "title": "744BのGLM-5.2を25GBのRAMで動かすcolibri、エキスパートをディスクから流す",
-      "url": "https://zenn.dev/okssusucha/articles/20260710-colibri-glm52-disk-streamed-moe",
-      "site": "Zenn(LLM)",
-      "published": "2026-08-19T00:04:03Z",
-      "description": "744Bのフロンティア級モデルを、GPUなしで、しかもRAMが25GBしかないノートPCで動かす。しかもちゃんと正しい答えを返す。そんな話をHacker NewsのShow HNで見かけて、最初は誇張だろうと思った。実際にリポジトリを読むと、誇張ではなかった。ただし正直な但し書きが付く。速度はおよそ0.1トークン/秒。夜通し回してようやく1本の返答、という世界だ。\n作者いわく「大事なのは、そこへ到...",
-      "category": "AI・技術",
-      "rss_category": "",
-      "image_url": ""
-    },
-    {
       "title": "「どこが遅い」「どこで失敗した」を勘で探すのをやめた ― 開発中のエージェント可観測性",
       "url": "https://zenn.dev/datarobotjp/articles/7274d18c076e1a",
       "site": "Zenn(LLM)",
@@ -99,16 +79,6 @@
       "site": "Zenn(LLM)",
       "published": "2026-08-18T23:15:05Z",
       "description": "guusuuです。子連れ・赤ちゃん連れ向けの宿検索サイト Kids Stay を作っています。今回、そのデータをMCP（Model Context Protocol）サーバーとして無料公開しました。\n\nエンドポイント: https://mcp.kidsstay.workers.dev/mcp（Streamable HTTP・認証なし）\n案内ページ: https://kids-stay.com/mc...",
-      "category": "AI・技術",
-      "rss_category": "",
-      "image_url": ""
-    },
-    {
-      "title": "その指標、始める前から動かないかもしれません📏",
-      "url": "https://zenn.dev/satoshiakiyama/articles/b76885ec9e5f75",
-      "site": "Zenn(LLM)",
-      "published": "2026-08-18T23:13:30Z",
-      "description": "前回、家庭用 PC で小さいモデルを測った話を書きました。そこでいちばん役に立ったのは、うまくいかなかった測定でした。今回はその続きで、同じ失敗を、始める前に避ける方法を書きます。\n同じ指標が、片方は完璧に効いて、片方は何も見えなかった\nまず実例です。公開済みの測定から、そのまま引きます。\n「モデルがちゃんと止まるか」を二値(止まった / 止まらなかった)で測りました。この指標で 2 つの比較をし...",
       "category": "AI・技術",
       "rss_category": "",
       "image_url": ""
@@ -134,6 +104,16 @@
       "image_url": ""
     },
     {
+      "title": "CPUのみでローカルLLMする",
+      "url": "https://zenn.dev/ashidan/articles/tech_llm_cpu_a",
+      "site": "Zenn(LLM)",
+      "published": "2026-08-18T13:55:19Z",
+      "description": "Windowsかつ、CPUのみでローカルLLMしたい\nRAMが16GB以上ある\n少し手間がかかっても性能を上げたい\n\nというニッチな需要を満たす記事です。\nなお、この記事は2026年8月17日の情報を元に書かれています。llama.cppのオプション群は将来削除されうるので、適当にアレンジして下さい。\n\n 発見 affinity指定で速くなる\n6コア12スレッドや12コア20スレッドなどの、SMT...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
       "title": "Codexを「Solが監督、Luna Maxがworker」の構成にする",
       "url": "https://zenn.dev/kimkiyong/articles/a853947d33876a",
       "site": "Zenn(LLM)",
@@ -144,11 +124,31 @@
       "image_url": ""
     },
     {
+      "title": "2026年8月公開のQwen3.8-27BをRTX 5090で実測|ローカルLLM 5モデル徹底比較",
+      "url": "https://zenn.dev/secure_auto_lab/articles/local-llm-5model-benchmark-2026",
+      "site": "Zenn(LLM)",
+      "published": "2026-08-18T13:35:18Z",
+      "description": "2026年8月公開のQwen3.8-27BをRTX 5090で実測|ローカルLLM 5モデル徹底比較\n同じ27Bなのに、生成速度2.4倍。 2026年8月13日に公開されたQwen3.8-27Bを実測し、1ヶ月前に組んだ構成を迷わず入れ替えました。ローカルLLMは「常にアップデートを取り込む前提」で運用しているからです。\nこの記事は、RTX 5090(VRAM 32GB)1枚で「翻訳・コーディング...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
       "title": "CMP170HXを検証する",
       "url": "https://zenn.dev/sora_lnv/articles/a36f6bb87105a4",
       "site": "Zenn(LLM)",
       "published": "2026-08-18T12:36:43Z",
       "description": "CMP170HXとは\n\n 仕様とこのGPUが生まれた背景\nCMP170HXは、NVIDIAが暗号資産マイニング向けに用意したCMP（Cryptocurrency Mining Processor）シリーズの最上位クラスです。NVIDIA公式のCMP説明でも、複数GPUを一つのCPUで管理しやすい開放型ブラケット、マイニング効率、映像出力を目的としない製品コンセプトが示されています。\n\n\n\n項目\nC...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "禁止すれば安全、良い例を見せれば的確、資料を読ませれば賢くなる——本当に？",
+      "url": "https://zenn.dev/motimotinotch/articles/cd448e3f00a0af",
+      "site": "Zenn(LLM)",
+      "published": "2026-08-18T11:41:34Z",
+      "description": "AIに何かを頼むとき、多くの人はこう考える。「ダメなことは禁止しておけば安全」「良い回答例を見せておけば、その通りの精度で返してくれる」「関連資料を読ませれば読ませるほど、賢く答えてくれる」。\nどれも直感的には正しく聞こえる。しかし個人開発の自律型Botと、その理論的なバックボーンであるローカルの自己対話システムを約半年運用する中で、この3つの直感がそれぞれ別の形で裏切られる場面に実際にぶつかった...",
       "category": "AI・技術",
       "rss_category": "",
       "image_url": ""
