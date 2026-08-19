@@ -1,14 +1,34 @@
 {
   "site": "Zenn(LLM)",
-  "last_updated": "2026-08-19T19:10:19.003070",
-  "total_articles": 5487,
+  "last_updated": "2026-08-19T19:40:57.799698",
+  "total_articles": 5489,
   "articles": [
+    {
+      "title": "あなたのPCで動くAIモデルは？ whichllmとllmfitを比較してみた",
+      "url": "https://zenn.dev/taka4/articles/000243de004165",
+      "site": "Zenn(LLM)",
+      "published": "2026-08-19T16:49:03Z",
+      "description": "はじめに\nこんにちは。おっぴー@AI推進です。\nローカルLLMを試そうとして、最初にぶつかる壁がある。それは「このモデル、自分のマシンで本当に動くのか」が事前にわからない、という壁だ。\nHugging Faceのモデルカードにはパラメータ数は書いてあっても、手元のRAMやVRAMでどの量子化ならまともな速度で動くかまでは教えてくれない。結局「とりあえずダウンロードして試す」を繰り返し、ディスクとダ...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
     {
       "title": "開発ログ01: LLMと計算を分離するTRPGエンジンの設計",
       "url": "https://zenn.dev/ace_toshi/articles/trpg-local-devlog-01",
       "site": "Zenn(LLM)",
       "published": "2026-08-19T14:50:42Z",
       "description": "これは何か\n有料APIを一切使わず、ローカルLLM（Ollama）だけを頭脳にした TRPG兼チャットノベルアプリを個人開発している。追加費用は電気代のみ。利用者は自分ひとり。\nこの記事はその設計編である。実装の詳細より、なぜその構造にしたかを書く。VRAM 8GBという厳しい予算と、7B級モデルが持つ「嘘をつく」「計算を間違える」「名前を忘れる」という性質を、アーキテクチャ側でどう封じ込めるかの...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "AIにAIのコードを敵対的レビューさせたら6割叩き直された話 — 64億トークンのログが明かす『コンテキスト分離』の威力",
+      "url": "https://zenn.dev/masuda_masuo/articles/2026-08-20-kusabi-adversarial-review",
+      "site": "Zenn(LLM)",
+      "published": "2026-08-19T13:51:13Z",
+      "description": "1. はじめに：AIに自分で自分のコードをチェックさせる限界\n「AIエージェントにコードを書かせ、そのまま『自分でテストしてセルフチェックして問題なければマージして』と指示する」——こうしたプロンプト駆動の自律開発を試したことがある人は多いのではないだろうか。\nしかし、単一のエージェントセッションでコードを実装させ、そのままセルフチェックを行わせると、AIは自分が書いたコードの論理バグや消し忘れに...",
       "category": "AI・技術",
       "rss_category": "",
       "image_url": ""
@@ -64,6 +84,16 @@
       "image_url": ""
     },
     {
+      "title": "Grok Botの動きの手懐け方と最低限まともに使うためにやったこと",
+      "url": "https://zenn.dev/u1/articles/grok-bot-memory-and-japanese-rules",
+      "site": "Zenn(LLM)",
+      "published": "2026-08-19T05:05:55Z",
+      "description": "この記事はXの元記事をZenn向けに再掲載したものです。\n\n この記事の対象となる方\nGrok Botを使ってる方です｡Grok Botとは何か･どうやって使うのかという話は省略して､中身の話に特化した話です｡\n\n 概要\nGrok Botを使っていて困ったことは、大きく2つありました。\n1つは Memory です。xAI自体､積極的にMemoryに保存する形を目指しており､使うほど情報を覚えてくれ...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
       "title": "Google Colabで最新LLMを試す #10 ― MiniMax Music 3で日本語の歌入り楽曲を生成する",
       "url": "https://zenn.dev/nakanishitf/articles/d0ad4d73588e6a",
       "site": "Zenn(LLM)",
@@ -89,16 +119,6 @@
       "site": "Zenn(LLM)",
       "published": "2026-08-19T02:42:36Z",
       "description": "PDF からテキストを抽出するツールはたくさんありますが、表 (テーブル) だけはきれいに取れない、という経験はないでしょうか。この記事では、PDF の表を「潰れたテキストの行」ではなく「行と列が保たれた JSON」として抽出する方法と、それを LLM / RAG の前処理に使う流れを紹介します。\n\n 課題: 一般的な PDF 抽出では表が「行」に潰れる\npdfminer や PyPDF などで ...",
-      "category": "AI・技術",
-      "rss_category": "",
-      "image_url": ""
-    },
-    {
-      "title": "RAGシステム最適化！ベクトルDB選定とチャンキングでやった3つのこと",
-      "url": "https://zenn.dev/fd_ai_teacher/articles/tech-20260818105204-1",
-      "site": "Zenn(LLM)",
-      "published": "2026-08-19T01:57:36Z",
-      "description": "RAGシステム、その検索精度と応答速度に課題を感じていませんか？\n「せっかくRAGを導入したのに、期待する回答が得られない」「幻覚（Hallucination）問題が解消されない」「検索速度が遅くてユーザー体験が悪い」――LLMアプリ開発の現場で、RAGシステムの性能最適化は多くのエンジニアが直面する共通の悩みです。特に、ベクトルDBの選定とチャンキング戦略は、RAGの検索精度と応答速度に直接影響...",
       "category": "AI・技術",
       "rss_category": "",
       "image_url": ""
