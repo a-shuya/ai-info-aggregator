@@ -1,14 +1,84 @@
 {
   "site": "Zenn(LLM)",
-  "last_updated": "2026-08-20T07:04:03.570040",
-  "total_articles": 5497,
+  "last_updated": "2026-08-20T07:54:47.196093",
+  "total_articles": 5503,
   "articles": [
+    {
+      "title": "RAGと何が違う？AIエージェントに同一性と忘却を与える複合記憶アーキテクチャ",
+      "url": "https://zenn.dev/zapabob/articles/composite-memory-vs-rag",
+      "site": "Zenn(LLM)",
+      "published": "2026-08-20T04:12:01Z",
+      "description": "はじめに：RAGは「記憶」ではなく「検索」である\nAIエージェントを長期運用する際、多くの人が最初に試すのが RAG（Retrieval-Augmented Generation） です。\nドキュメントをチャンクに切り、ベクトルDBに突っ込み、類似度検索（top-k）でコンテキストに注入する——非常に強力でポピュラーな手法ですが、エージェントの「記憶」としては致命的な限界があります。\n\nセッション...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "# AIが「できたか分からない」と言ったとき、もう一度やらせてはいけない## ―― 外部API・二重実行・Commit-Unknownか",
+      "url": "https://zenn.dev/humanos_lab/articles/93ff5a31a19c91",
+      "site": "Zenn(LLM)",
+      "published": "2026-08-20T03:15:13Z",
+      "description": "AIが「できたか分からない」と言ったとき、もう一度やらせてはいけない\n\n ―― 外部API・二重実行・Commit-Unknownから考えるAI Agentの安全設計\n\n 0｜たった1回の「もう一度」が事故になる\n人間：\n\n「この注文を返金して」\n\nAI Agent：\n\n「返金APIを実行しましたが、タイムアウトして結果を確認できませんでした」\n\n人間：\n\n「じゃあ、もう一回やって」\n\nAI Ag...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "GRPOからDAPOへ：RLVR時代のLLM強化学習を数式とメカニズムで理解する",
+      "url": "https://zenn.dev/yukinekonyan/articles/b9d19ff6e1f014",
+      "site": "Zenn(LLM)",
+      "published": "2026-08-20T03:10:06Z",
+      "description": "最初に感想(人間が書いた)\nGRPOの派生の手法について調べたときにDAPOをみつけたので、それについて解説してもらった。\nGRPO派生として計算資源をかなり気にしているところは興味深かったです\n成功データの意味は大事だけど、失敗データも大事だ、それがないとミニバッチが無駄になるというあたりは面白いところ。\nGRPOとその派生は万能ではないが、RLVRは今後すくなくとも数理的だったりゴールが明確な...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "ローカルLLM本番運用フルスタック：vLLM・SREの最小構成",
+      "url": "https://zenn.dev/libercraft/articles/20260820-local-llm-production-stack-vllm-sre",
+      "site": "Zenn(LLM)",
+      "published": "2026-08-20T02:00:00Z",
+      "description": "これまでの記事で、量子化（GGUF・AWQ・GPTQ）・KVキャッシュ最適化・プロンプトキャッシュと、個別の最適化技術を扱ってきました。本記事ではこれらを組み合わせ、ローカルLLMをKubernetes上で本番運用するための最小構成を整理します。\n\n\n 最小構成の全体像\n本番運用に必要な最小限のコンポーネントは次の通りです。\n\n\nKubernetes（1.27以上）：GPU対応のオーケストレーショ...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "NeoBrowser(実Chrome操作のMCPサーバー)を動かしたら目玉機能が非対話環境で死んだ",
+      "url": "https://zenn.dev/mskbhd/articles/lab-349-neobrowser-mcpllmchrome",
+      "site": "Zenn(LLM)",
+      "published": "2026-08-19T23:14:31Z",
+      "description": "Hacker Newsで話題になっていた NeoBrowser を実際にインストールして動かしてみた。「AIエージェントが実際のGoogle Chromeを、ログイン済みセッションのまま操作できる」という触れ込みのMCPサーバーで、単一のRustバイナリ（約5.8MB）として配布されている。\n結論から書くと、基本機能はきちんと動く一方、目玉である「ログイン済みセッションの再利用」は自分の検証環境（...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "多役プロンプトの後半ロール希薄化は、守るものの記述量で緩和できるか検証した",
+      "url": "https://zenn.dev/every_ai_recipe/articles/ai-role-defense-length-dilution",
+      "site": "Zenn(LLM)",
+      "published": "2026-08-19T21:10:05Z",
+      "description": "TL;DR\n\n前回記事（賛成3vs反対3のLLMディベートで陣営内均質化を確かめた）で、「後半に定義した役ほど発言が抽象化する。守るものの具体性を上げても完全には解消しない」という未解決の傾向を報告した\n今回は6人構成のロールプレイで、前半3ロールは「守るもの」を1行のまま、後半3ロールだけ3行に増やし、必ず数値・固有名詞を1つ以上含める指定にして緩和を検証した\n結果、後半ロールの発言は前半ロール...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
     {
       "title": "相手の AI に「聞き方」を送ることにした （LLM が両端にいるのに、真ん中で人間が文章を運んでいる問題）",
       "url": "https://zenn.dev/kazuma_horiike/articles/262a68d6c08054",
       "site": "Zenn(LLM)",
       "published": "2026-08-19T19:05:36Z",
       "description": "TL;DR\n!\nお互いが LLM と相談して文章を作り、それを人間が運んでいます。この往復は必要でしょうか?\n→ 運ぶべきなのは文章ではなく文脈です。ファイル 1 枚で受け渡す形にしました\n\nいまは 僕 → LLM に相談 → 文章 → 送る → 相手 → LLM に相談 → 文章 → 送る の繰り返し\n\nAPI で直結すればいい、ではありません。 秘密情報・社内の知識・入れてある Skill は...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "5つの◯◯エンジニアリングを2軸3階層で整理する - Prompt / Context / Loop / Harness / Graph",
+      "url": "https://zenn.dev/suwash/articles/llm-control-layers-taxonomy_20260818",
+      "site": "Zenn(LLM)",
+      "published": "2026-08-19T15:00:00Z",
+      "description": "AIエージェントの記事を読むと「◯◯エンジニアリング」が次々に出てきます。Prompt、Context、Loop、Harness、Graph。どれも「次はこれだ」と書いてあります。\nしかし5つは競合していません。1つのシステムに重なった、別々の設計関心です。\nこの記事は、筆者が過去に書いた5本の解説記事を並べ直し、それぞれの特徴と違いを整理します。結論を先に言うと、5つに共通するのは「目的達成のた...",
       "category": "AI・技術",
       "rss_category": "",
       "image_url": ""
@@ -119,16 +189,6 @@
       "site": "Zenn(LLM)",
       "published": "2026-08-19T07:09:38Z",
       "description": "package main\nimport (\n\"bytes\"\n\"context\"\n\"crypto/sha256\"\n\"encoding/binary\"\n\"encoding/hex\"\n\"encoding/json\"\n\"fmt\"\n\"io\"\n\"log/slog\"\n\"math\"\n\"os\"\n\"reflect\"\n\"sort\"\n\"sync\"\n\"sync/atomic\"\n\"time\"\n)\n// ===========...",
-      "category": "AI・技術",
-      "rss_category": "",
-      "image_url": ""
-    },
-    {
-      "title": "YANS2026 参加報告",
-      "url": "https://zenn.dev/aishift/articles/78612006a494ca",
-      "site": "Zenn(LLM)",
-      "published": "2026-08-19T07:08:31Z",
-      "description": "こんにちは。AIチームの林崎 (@u_hyszk) です。\n2026年8月16日(日)〜18日(火)に仙台国際センターで開催された、NLP若手の会 第21回シンポジウム(YANS2026)に参加しました。8月16日(日)には分野交流ハッカソンも開催され、3日間にわたるプログラムとなりました。\n本記事では、YANS2026の概要と、筆者が特に面白いと感じた発表をいくつか紹介します。\nhttps://...",
       "category": "AI・技術",
       "rss_category": "",
       "image_url": ""
