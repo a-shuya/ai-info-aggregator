@@ -1,7 +1,7 @@
 {
   "site": "Zenn(生成 AI)",
-  "last_updated": "2026-08-20T20:51:08.218251",
-  "total_articles": 3469,
+  "last_updated": "2026-08-20T21:18:18.110831",
+  "total_articles": 3468,
   "articles": [
     {
       "title": "ハッカソン最終ピッチで特別賞、そしてAIに文字起こしを読ませた反省会の話",
@@ -19,26 +19,6 @@
       "site": "Zenn(生成 AI)",
       "published": "2026-08-20T14:56:17Z",
       "description": "最近、業務の効率化やアイデア出しに生成AIを活用する機会が劇的に増えているのではないでしょうか。中でもGoogleの「Gemini」は、Google Workspace（GWS）とシームレスに連携できることから、多くの企業で導入が進んでいます。\nしかし、活用が進むにつれて「Geminiで作った画像やテキストは、会社のサイトや資料で商用利用しても問題ないの？」「著作権はどうなるの？」といった不安の声...",
-      "category": "AI・技術",
-      "rss_category": "",
-      "image_url": ""
-    },
-    {
-      "title": "Claude Code の利用ログを SQLite に取り込んで API 換算したら302万円だった",
-      "url": "https://zenn.dev/chiisanasoft/articles/88757cec318916",
-      "site": "Zenn(生成 AI)",
-      "published": "2026-08-20T14:42:18Z",
-      "description": "Claude Code などのサブスクリプションプランで使っていると、実際にどれだけ使ったのかが見えません。\nそこで、ローカルに残っている利用ログを全部 SQLite に取り込み、Anthropic API の公式単価で換算してみました。4か月弱、73,548ターンで API 換算302万円 でした（1 USD = 159円）。\n使ったのは phuryn/claude-usage（MIT）をフォー...",
-      "category": "AI・技術",
-      "rss_category": "",
-      "image_url": ""
-    },
-    {
-      "title": "「なんか動かない」しか来ない問題を、AIのヒアリングで埋める",
-      "url": "https://zenn.dev/shinsei99/articles/ai-intake-hearing",
-      "site": "Zenn(生成 AI)",
-      "published": "2026-08-20T14:40:08Z",
-      "description": "社内向けに作ったWebアプリが増えてくると、次に詰まるのは不具合報告でした。\n届くのは「なんか動かない」「前はできたのに」だけ。報告フォームを置いても埋まりません。\nかといって、報告する側が悪いわけでもない。再現手順を書くのは、慣れた人にしかできない作業です。\nそこで報告を書かせるのをやめて、AIに聞き出させる受付を作りました。設計で効いた3点を書きます。\n\n 1. フォームではなく対話にする、た...",
       "category": "AI・技術",
       "rss_category": "",
       "image_url": ""
@@ -108,7 +88,7 @@
       "url": "https://zenn.dev/nullcontroller/articles/4f6be09295656b",
       "site": "Zenn(生成 AI)",
       "published": "2026-08-19T23:25:05Z",
-      "description": "※本記事は、採用される側からの転職市場の評価です。\n先日、転職エージェントと情報交換する中で、転職エージェントからこんな質問をされた。\n\n「AIの実装経験は何年ですか？」\n\n一見すると、ごく普通の質問に見える。\nJavaの経験は何年か、AWSの経験は何年か、プロジェクトマネジメントの経験は何年か。\n転職市場では、経験年数でスキルを確認することは珍しくない。\nしかし、AIについて同じことを聞かれたと...",
+      "description": "※本記事は、採用される側として転職市場の評価です。\n先日、転職エージェントと情報交換する中で、転職エージェントからこんな質問をされた。\n\n「AIの実装経験は何年ですか？」\n\n一見すると、ごく普通の質問に見える。\nJavaの経験は何年か、AWSの経験は何年か、プロジェクトマネジメントの経験は何年か。\n転職市場では、経験年数でスキルを確認することは珍しくない。\nしかし、AIについて同じことを聞かれたと...",
       "category": "AI・技術",
       "rss_category": "",
       "image_url": ""
@@ -209,6 +189,16 @@
       "site": "Zenn(生成 AI)",
       "published": "2026-08-19T13:03:40Z",
       "description": "この記事の対象と、扱う規模\n個人開発でLLMに業務データを渡していて、「このまま外部APIに送っていいのか」で止まったことがある人向けです。\n先に規模を正直に書いておきます。35ケースの正解データに対して、正規表現で氏名を伏せるだけの小さな仕組みです。固有表現抽出のモデルも、専用のPII検出サービスも使っていません。企業のデータ保護基盤を期待して読むと確実に物足りません。\nそれでも書くのは、作った...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "BigQueryのVECTOR_SEARCHでRAGをSQLだけで組む ―常時課金エンドポイント無しの意味検索",
+      "url": "https://zenn.dev/acntechjp/articles/zenn-gcp-bigquery-vector-search-rag",
+      "site": "Zenn(生成 AI)",
+      "published": "2026-08-19T11:09:42Z",
+      "description": "はじめに\nAzure から Google Cloud を触るシリーズです。今回は RAG（検索拡張生成）を、BigQuery だけで組みます。\nRAG は「LLM に手元のデータを根拠として答えさせる」仕組みです。普通に作ると、埋め込みモデル、ベクトル DB、検索 API、生成モデルを別々に用意して繋ぎます。GCP には Vertex AI Vector Search という専用の ANN（近似最...",
       "category": "AI・技術",
       "rss_category": "",
       "image_url": ""
