@@ -1,8 +1,38 @@
 {
   "site": "Zenn(Google Cloud)",
-  "last_updated": "2026-08-20T22:13:02.108916",
-  "total_articles": 1657,
+  "last_updated": "2026-08-20T22:49:09.627085",
+  "total_articles": 1661,
   "articles": [
+    {
+      "title": "ハッカソンMVPをGCP本番へ ― Cloud Run分割、Direct VPC egress、keyless CI/CDの勘所\"",
+      "url": "https://zenn.dev/rarino/articles/4e80c118426da1",
+      "site": "Zenn(Google Cloud)",
+      "published": "2026-08-20T21:52:11Z",
+      "description": "gen-fashion は、ローカルで動く MVP から Google Cloud 上の公開デモまで持っていきました。アプリの背景やハッカソンでの要件定義については、シリーズの紹介記事にまとめています。\nこの記事では、本番化で効いた判断を書きます。Cloud Run のサービス分割、Compute Engine 上の Elasticsearch、Direct VPC egress、OIDC、Sec...",
+      "category": "クラウド",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "AIエージェントに服を選ばせるアプリを作った話 ― ハッカソンから始まった要件定義の設計",
+      "url": "https://zenn.dev/rarino/articles/c47ea9a709ef04",
+      "site": "Zenn(Google Cloud)",
+      "published": "2026-08-20T21:50:44Z",
+      "description": "今回作ったWebアプリgen-fashion では、ユーザーの手持ち服や購入候補を AI エージェントが探し、候補を見せ、ユーザーが選んだものだけを使って最終コーディネート画像を生成する、つまり「服を選ぶ意思決定の流れ」を AI エージェント化することに焦点をおいて開発を行いました。\nこの開発を始めた経緯としては、Google CloudとElastic Searchがスポンサーで Findy主催...",
+      "category": "クラウド",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "GCPのAgent Identityを検証 ―AIエージェントに鍵を持たせずに外部連携する仕組み",
+      "url": "https://zenn.dev/acntechjp/articles/zenn-gcp-agent-identity",
+      "site": "Zenn(Google Cloud)",
+      "published": "2026-08-20T21:38:18Z",
+      "description": "はじめに\nAzure から Google Cloud を触るシリーズです。前回、Cloud Run sandbox を実用化するときの穴を検証しました。要点はこうでした——sandbox は堅いが、外部 API を叩かせるために API キーや SA トークンを注入した瞬間、乗っ取られたコードがそれを読み、egress から持ち出せる。実測で GOT=sk-live-STOLEN と鍵が盗めてしま...",
+      "category": "クラウド",
+      "rss_category": "",
+      "image_url": ""
+    },
     {
       "title": "WebRTC SFUをCloud RunではなくCompute Engineに構築した理由",
       "url": "https://zenn.dev/ym_studio_craft/articles/79a04250e13044",
@@ -49,6 +79,16 @@
       "site": "Zenn(Google Cloud)",
       "published": "2026-08-19T16:45:17Z",
       "description": "はじめに\nAWSやGoogle Cloud（GCP）を勉強していると、かなりの確率で登場するのがVMやVMインスタンスという言葉です。\n例えばAWSでは、\n\nAmazon EC2\nEC2インスタンス\n\nGoogle Cloudでは、\n\nCompute Engine\nVMインスタンス\n\nといった言葉が登場します。\n最初に見ると、\n\nVMって何？\nインスタンスって何？\nEC2とCompute Engi...",
+      "category": "クラウド",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "BigQueryのVECTOR_SEARCHでRAGをSQLだけで組む ―常時課金エンドポイント無しの意味検索",
+      "url": "https://zenn.dev/acntechjp/articles/zenn-gcp-bigquery-vector-search-rag",
+      "site": "Zenn(Google Cloud)",
+      "published": "2026-08-19T11:09:42Z",
+      "description": "はじめに\nAzure から Google Cloud を触るシリーズです。今回は RAG（検索拡張生成）を、BigQuery だけで組みます。\nRAG は「LLM に手元のデータを根拠として答えさせる」仕組みです。普通に作ると、埋め込みモデル、ベクトル DB、検索 API、生成モデルを別々に用意して繋ぎます。GCP には Vertex AI Vector Search という専用の ANN（近似最...",
       "category": "クラウド",
       "rss_category": "",
       "image_url": ""
