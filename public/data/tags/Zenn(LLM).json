@@ -1,7 +1,7 @@
 {
   "site": "Zenn(LLM)",
-  "last_updated": "2026-08-20T09:55:35.440564",
-  "total_articles": 5512,
+  "last_updated": "2026-08-20T10:34:29.236634",
+  "total_articles": 5506,
   "articles": [
     {
       "title": "【レポート】田町.ai #2 LT大会を開催しました",
@@ -9,6 +9,26 @@
       "site": "Zenn(LLM)",
       "published": "2026-08-20T08:00:05Z",
       "description": "こんにちは、バックテックの宮原です。\n2026/08/19に田町.ai #2を開催しました！\n7月にバックテックはオフィスを移転したのですが、新オフィスで初開催のエンジニアイベントとなりました👏\n\n はじめに\n田町.aiは生成AIやその周辺技術・ノウハウに関する共有やエンジニアの交流を行う地域コミュニティです。LTの内容は厳格に考えずに、アウトプットする自分の成長に繋がるから！くらいで大丈夫な勉強...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "LLM導入で失敗する原因はモデルだけではない：開発前に確認したい4つの層",
+      "url": "https://zenn.dev/amamiya_chan/articles/d97d32a0740b52",
+      "site": "Zenn(LLM)",
+      "published": "2026-08-20T07:30:34Z",
+      "description": "新しいLLMが公開されるたびに、\n「このモデルは性能が高い」\n「ベンチマークで最高スコアを出した」\n「料金も安い」\nという情報が流れます。\nそのため、LLM導入では最初にモデル比較から始めることが多いと思います。\n実際、私も以前はそう考えていました。\n性能の高いモデルを選べば、\n回答品質が上がる。\nAgentも賢くなる。\n開発効率も改善する。\nそう思っていました。\nしかし、実際にLLMをサービスへ...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "AI AgentがTool選択で失敗する理由：MCP設計で見直したい5つのポイント",
+      "url": "https://zenn.dev/akari_chan/articles/500882123c8631",
+      "site": "Zenn(LLM)",
+      "published": "2026-08-20T07:17:58Z",
+      "description": "はじめに：Toolを増やしたのにAgentが賢くならない問題\nAI Agentを作り始めた頃、多くの開発者が考えることがあります。\n「使えるToolを増やせば、Agentはもっと多くの仕事ができるようになるのではないか」\n例えば、データベース検索、ファイル操作、メール送信、社内API呼び出しなど、さまざまなToolをAgentに渡します。\n最初のデモでは、うまく動きます。\nしかし、Tool数が増え...",
       "category": "AI・技術",
       "rss_category": "",
       "image_url": ""
@@ -54,41 +74,11 @@
       "image_url": ""
     },
     {
-      "title": "GRPOからDAPOへ：RLVR時代のLLM強化学習を数式とメカニズムで理解する",
-      "url": "https://zenn.dev/yukinekonyan/articles/b9d19ff6e1f014",
-      "site": "Zenn(LLM)",
-      "published": "2026-08-20T03:10:06Z",
-      "description": "最初に感想(人間が書いた)\nGRPOの派生の手法について調べたときにDAPOをみつけたので、それについて解説してもらった。\nGRPO派生として計算資源をかなり気にしているところは興味深かったです\n成功データの意味は大事だけど、失敗データも大事だ、それがないとミニバッチが無駄になるというあたりは面白いところ。\nGRPOとその派生は万能ではないが、RLVRは今後すくなくとも数理的だったりゴールが明確な...",
-      "category": "AI・技術",
-      "rss_category": "",
-      "image_url": ""
-    },
-    {
       "title": "ローカルLLM本番運用フルスタック：vLLM・SREの最小構成",
       "url": "https://zenn.dev/libercraft/articles/20260820-local-llm-production-stack-vllm-sre",
       "site": "Zenn(LLM)",
       "published": "2026-08-20T02:00:00Z",
       "description": "これまでの記事で、量子化（GGUF・AWQ・GPTQ）・KVキャッシュ最適化・プロンプトキャッシュと、個別の最適化技術を扱ってきました。本記事ではこれらを組み合わせ、ローカルLLMをKubernetes上で本番運用するための最小構成を整理します。\n\n\n 最小構成の全体像\n本番運用に必要な最小限のコンポーネントは次の通りです。\n\n\nKubernetes（1.27以上）：GPU対応のオーケストレーショ...",
-      "category": "AI・技術",
-      "rss_category": "",
-      "image_url": ""
-    },
-    {
-      "title": "止まらないエージェントを実行前に見つける静的解析ツールIAL-Scan",
-      "url": "https://zenn.dev/okssusucha/articles/20260710-infinite-agentic-loops-ial-scan",
-      "site": "Zenn(LLM)",
-      "published": "2026-08-20T00:04:31Z",
-      "description": "「夜のうちにコーディングエージェントを走らせておいたら、朝には成果物ではなく数万円分のAPI課金だけが残っていた」。この手のヒヤリに心当たりがあるなら、7月2日にarXivへ出た論文が刺さるはずだ。エージェントが止まらずに同じ処理を回し続ける現象に Infinite Agentic Loop(IAL、無限エージェントループ) という名前を与え、実在する6,549個のPython製エージェント実装を...",
-      "category": "AI・技術",
-      "rss_category": "",
-      "image_url": ""
-    },
-    {
-      "title": "Claude Codeの回答を\"行動指向\"にするOutput Styleは効果があるのか検証してみた",
-      "url": "https://zenn.dev/tokium_dev/articles/claude-code-output-styles-action-first",
-      "site": "Zenn(LLM)",
-      "published": "2026-08-20T00:00:06Z",
-      "description": "1. はじめに\nこんにちは、TOKIUMの小松です。\n今年の4月に入社して未経験でエンジニアになった駆け出しエンジニアです。\n駆け出しということもあり、Claude Code で知らない技術をキャッチアップすることも多いです。AIに質問すれば、丁寧な解説は返ってくる。返ってくるのですが、長い。読み終えても「で、結局まず何をすればいいんだ？」がわからず聞き直す、というような作業が発生していました。答...",
       "category": "AI・技術",
       "rss_category": "",
       "image_url": ""
@@ -104,61 +94,11 @@
       "image_url": ""
     },
     {
-      "title": "AIエージェントに「記憶」を持たせるべきか。文脈が累積するかで決まる",
-      "url": "https://zenn.dev/devlog/articles/706b5c6c6b9bc8",
-      "site": "Zenn(LLM)",
-      "published": "2026-08-19T23:30:05Z",
-      "description": "結論から\nAIエージェントに「記憶」を持たせるべきか。過去のやり取りや決定を、会話をまたいで自動で思い出す層のことです。たとえば Claude Code には、こうした自動メモリの仕組みがあります。\n入れるかどうかは、機能の出来では決まりません。そのリポジトリの文脈が、累積するのか、入れ替わるのか。ほぼそれだけで決まります。私は自分の環境でこれを見誤って、最終的に自動メモリをまるごと空にしました。...",
-      "category": "AI・技術",
-      "rss_category": "",
-      "image_url": ""
-    },
-    {
       "title": "NeoBrowser(実Chrome操作のMCPサーバー)を動かしたら目玉機能が非対話環境で死んだ",
       "url": "https://zenn.dev/mskbhd/articles/lab-349-neobrowser-mcpllmchrome",
       "site": "Zenn(LLM)",
       "published": "2026-08-19T23:14:31Z",
       "description": "Hacker Newsで話題になっていた NeoBrowser を実際にインストールして動かしてみた。「AIエージェントが実際のGoogle Chromeを、ログイン済みセッションのまま操作できる」という触れ込みのMCPサーバーで、単一のRustバイナリ（約5.8MB）として配布されている。\n結論から書くと、基本機能はきちんと動く一方、目玉である「ログイン済みセッションの再利用」は自分の検証環境（...",
-      "category": "AI・技術",
-      "rss_category": "",
-      "image_url": ""
-    },
-    {
-      "title": "AIエージェントの評価は「1回合格」では足りない ― 敵対テスト×トレース×統計リプレイで測ると60%失敗",
-      "url": "https://zenn.dev/datarobotjp/articles/6e03dc55da832f",
-      "site": "Zenn(LLM)",
-      "published": "2026-08-19T22:57:05Z",
-      "description": "はじめに\nここ最近、エージェントの信頼性まわりのツールを3本、続けて試して記事にしました。お盆のタイミングで久しぶりに時間が取れたのは大きかった。。\n\n\ndr xp（DataRobot CLI の experimentation プラグイン）― 開発中のエージェントのトレースを見る（記事）\n\nAdversarial Swarm（DataRobot Agent Assist スキル）― 敵対的なテス...",
-      "category": "AI・技術",
-      "rss_category": "",
-      "image_url": ""
-    },
-    {
-      "title": "「そこを疑え」は人間にしか出せない、と書こうとして3つ穴が空いた",
-      "url": "https://zenn.dev/hidetzu/articles/ai-suspect-direction-holes",
-      "site": "Zenn(LLM)",
-      "published": "2026-08-19T22:30:05Z",
-      "description": "🎯 はじめに\n前回、AIにテストを委譲する線をどこに引くかという記事を書いた。「どう書くか」は委譲していいが、「何を確かめるか」を渡した瞬間に自己採点になる、という話だ（ただしモックの当て方が確かめる対象を書き換えるので、この線はきれいには引けない、という留保も付けた）。\nhttps://zenn.dev/hidetzu/articles/ai-test-delegation-boundary\nそ...",
-      "category": "AI・技術",
-      "rss_category": "",
-      "image_url": ""
-    },
-    {
-      "title": "【最新AI/開発ツール】Unsloth Dynamic 3.0 GGUF解説と注目ニュース",
-      "url": "https://zenn.dev/ament3/articles/ai-digest-2026-08-19-2226",
-      "site": "Zenn(LLM)",
-      "published": "2026-08-19T22:27:20Z",
-      "description": "海外のエンジニアコミュニティ（Hacker News等）で大きな話題となっている最新技術・ツールの中から、日本のエンジニアにとっても特に価値が高いニュースを厳選してご紹介します。\n今回は特に大きな注目を集めている ローカルLLMの量子化技術「Unsloth Dynamic 3.0 GGUFs」 を中心に解説し、併せて主要な業界ニュースをピックアップします。\n\n\n 1. Unsloth Dynami...",
-      "category": "AI・技術",
-      "rss_category": "",
-      "image_url": ""
-    },
-    {
-      "title": "多役プロンプトの後半ロール希薄化は、守るものの記述量で緩和できるか検証した",
-      "url": "https://zenn.dev/every_ai_recipe/articles/ai-role-defense-length-dilution",
-      "site": "Zenn(LLM)",
-      "published": "2026-08-19T21:10:05Z",
-      "description": "TL;DR\n\n前回記事（賛成3vs反対3のLLMディベートで陣営内均質化を確かめた）で、「後半に定義した役ほど発言が抽象化する。守るものの具体性を上げても完全には解消しない」という未解決の傾向を報告した\n今回は6人構成のロールプレイで、前半3ロールは「守るもの」を1行のまま、後半3ロールだけ3行に増やし、必ず数値・固有名詞を1つ以上含める指定にして緩和を検証した\n結果、後半ロールの発言は前半ロール...",
       "category": "AI・技術",
       "rss_category": "",
       "image_url": ""

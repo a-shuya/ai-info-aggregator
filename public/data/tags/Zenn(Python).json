@@ -1,24 +1,54 @@
 {
   "site": "Zenn(Python)",
-  "last_updated": "2026-08-20T09:55:35.440564",
-  "total_articles": 5870,
+  "last_updated": "2026-08-20T10:34:29.236634",
+  "total_articles": 5872,
   "articles": [
+    {
+      "title": "3年分のモーニングページを、AIとgitで「検索できる自分史」にした ― Claude Code skillの設計",
+      "url": "https://zenn.dev/calmpm_takahiro/articles/morning-pages-ai-git-sync",
+      "site": "Zenn(Python)",
+      "published": "2026-08-20T10:32:07Z",
+      "description": "私は毎朝、iA Writer でモーニングページ（その日の思考をただ書き出す日記のようなもの）を書いています。気づけば3年、600件を超えていました。\nところが、書いた文章はほとんど読み返していませんでした。iA Writer は書くのには最高ですが、「あの時どう考えていたか」を横断的にたどる用途には向いていません。全文検索はできても、テーマでまとまらないし、関連する日を並べてくれるわけでもありま...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "LLM プロバイダを抽象化したら、効いたのは「乗り換えの自由」じゃなかった",
+      "url": "https://zenn.dev/box2box/articles/multi-llm-provider-abstraction",
+      "site": "Zenn(Python)",
+      "published": "2026-08-20T10:02:29Z",
+      "description": "結論 / TL;DR\n複数の LLM プロバイダを 1 つのインタフェースで束ねる薄い層を入れました。動機は「ベンダーロックインの回避」でしたが、実際に効いたのは別の 2 つでした。\n\n\n可用性: プロバイダ側が 5xx を返しても、別プロバイダに落として機能ごと止めない\n\nコスト: 「どの機能にどのモデルを使うか」を設定で切り替えられる\n\nそして、やってみて分かった一番大事な設計指針は 「抽象化...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "自作Markdown変換で日本語の改行が消えていた——公開記事に実害が出た落とし穴2つ",
+      "url": "https://zenn.dev/matsutake_prgrm/articles/markdown-converter-japanese-pitfalls",
+      "site": "Zenn(Python)",
+      "published": "2026-08-20T09:00:06Z",
+      "description": "ブログの投稿をスクリプトから流し込むために、Markdown → HTML の変換を自作しています。\nライブラリを入れるほどの規模ではなかったので、必要な記法だけ自前で処理する方針でした。\nその変換に、日本語ブログ特有のバグが2つありました。どちらも既に公開済みの記事に実害が出ていました。\n\n 1. 段落内の改行が消えて、半角スペースが入る\n段落の中の複数行を、こう連結していました。\nhtml =...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "AIが書いた日本語の見分け方 — 敬体率83% vs 1%。公用文の条文でチェックするリンターを作った",
+      "url": "https://zenn.dev/aiden0011/articles/ai-kousei-japanese-writing-linter",
+      "site": "Zenn(Python)",
+      "published": "2026-08-20T07:07:33Z",
+      "description": "測ってみたら、差ははっきりしていた\nLLM に日本語のコミットメッセージを書かせると、ほぼ必ずこうなります。\nfeat: 商品詳細APIにRedisキャッシュを追加\n\n商品詳細APIの応答速度向上とデータベース負荷軽減のため、Redisキャッシュを導入しました。\nキャッシュの有効期限（TTL）は300秒に設定されています。\n一方、日本語話者が書いたコミットはこうです。\nfix: 商品詳細APIにR...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
     {
       "title": "毎朝5時に「自分専用のITニュース1ページ」を作る ― 依存ゼロPythonとRedditの403との戦い",
       "url": "https://zenn.dev/kenya0126/articles/it-news-digest",
       "site": "Zenn(Python)",
       "published": "2026-08-20T06:13:31Z",
       "description": "TL;DR\nHacker News / Reddit / はてなブックマークから毎朝5時に記事を集めて、1枚の静的HTMLにまとめるツールを作りました。今どのトピックが盛り上がっているかを、サイトを巡回せずに1ページで把握できます。\n\n\n依存ゼロ（Python 標準ライブラリのみ、pip install 不要）— cron に置くだけで動く\n\nReddit の 403 / 429 を、マルチレディ...",
-      "category": "開発",
-      "rss_category": "",
-      "image_url": ""
-    },
-    {
-      "title": "はんなりPython#12でLTをしてきました",
-      "url": "https://zenn.dev/spookies/articles/ca028edaf7d7bb",
-      "site": "Zenn(Python)",
-      "published": "2026-08-20T05:10:05Z",
-      "description": "!\nこの記事ははてなブログ（2018年12月25日公開）からの移行記事です。\n内容が古い場合がありますのでご注意ください。\n\n\n発表の様子\nアンバサダーの masayuki14 です。先日はんなりPython#12を開催しLTをしてきました。\nこれからはアンバサダーの活動報告的にコミュニティ活動の記事をPOSTしていこうと思います。\nhttps://hannari-python.connpass....",
       "category": "開発",
       "rss_category": "",
       "image_url": ""
@@ -59,16 +89,6 @@
       "site": "Zenn(Python)",
       "published": "2026-08-19T22:01:20Z",
       "description": "Claude CodeとPythonでローカルファイル変更を自動分析・Mac通知\n\n はじめに\n私ahicは、日々の業務で13体のAIエージェントを運用し、AIとRPAによる自動化を追求しています。今回は、Macのローカル環境で発生するファイルの変更を自動で検知し、その内容をClaude Codeで分析、結果をMacの通知として受け取るシステムをご紹介します。\nこれにより、新着ファイルの手動確認の...",
-      "category": "開発",
-      "rss_category": "",
-      "image_url": ""
-    },
-    {
-      "title": "Firecrawl で海外クラファン製品を自動スカウトする",
-      "url": "https://zenn.dev/liatris/articles/20260820-crowdfunding-scout-bot",
-      "site": "Zenn(Python)",
-      "published": "2026-08-19T22:00:06Z",
-      "description": "!\nこの記事は、Claude Codeを執筆支援に使った \"毎朝1本書く\" 取り組みの一環で書いています。\n\n目的: 自分のAI活用キャッチアップ。仕組み自体も毎月アップデートしていきます\n体制: 題材選定・実装・下書きをClaude Codeで補助、平野が動作確認と編集を経て公開判断\n方針: Zennのガイドラインに真摯に向き合い、運営から指摘や警告があれば即座に取り組みを停止します\n\n仕組みの...",
       "category": "開発",
       "rss_category": "",
       "image_url": ""
