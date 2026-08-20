@@ -1,8 +1,208 @@
 {
   "site": "Zenn(AI)",
-  "last_updated": "2026-08-20T09:19:22.988984",
-  "total_articles": 12774,
+  "last_updated": "2026-08-20T09:55:35.440564",
+  "total_articles": 12787,
   "articles": [
+    {
+      "title": "Claude Code 完全攻略ガイド ――AI時代の次世代コーディング・ワークフロー",
+      "url": "https://zenn.dev/pakku8914/books/claude_code_master_course",
+      "site": "Zenn(AI)",
+      "published": "2026-08-20T09:33:35Z",
+      "description": ">\n本教材は、Claude Codeの現在リリースされている全機能を網羅的に学習できる実践的な教材です。\nCLAUDE.mdの作成やファイルメンションといった基本操作は習得済みだが、スキル・タスク・フック・MCPサーバーなどの高度な機能を使いこなせていないエンジニアを対象としています。\n\n>\n- Claude Codeの全機能（スキル・タスク・フック・MCPサーバー・エージェントモードなど）を体系...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "バックエンドエンジニアの1か月の話題から──技術共有会 第2回",
+      "url": "https://zenn.dev/10q89s/articles/18c2ccf5280e1f",
+      "site": "Zenn(AI)",
+      "published": "2026-08-20T09:30:12Z",
+      "description": "!\n本記事は、生成AIを利用して執筆しました。\n\n\n はじめに\nこんにちは、URBAN HACKSでバックエンドエンジニアをしている shinee です。\n7月の東京は猛暑日（最高気温35℃以上）が9日あり、最高気温は7月25日の37.1℃を記録しました。8月に入ってからは猛暑日が上旬の2日にとどまり、7月と比べると暑さが少し落ち着いてきました。8月中旬は気温がさらに低下傾向で、盛夏のピークは過ぎ...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "作りかけを引き継いだAIは『未完了』を勝手に埋めはじめる ― 引き継ぎで踏んだ2つの地雷",
+      "url": "https://zenn.dev/hoshiorange/articles/25-ai-agent-handover-wip-state",
+      "site": "Zenn(AI)",
+      "published": "2026-08-20T09:09:51Z",
+      "description": "引き継ぎというのは、相手が人間でも骨が折れます。それが「別のAIに引き継ぐ」になると、骨の折れ方の種類が少し変わります。\n先に結論を書きます。AIエージェントへの引き継ぎで本当に危ないのは、設定ファイルの共有し忘れではありません。半分しか終わっていない作業の「なぜ半分なのか」が伝わらないことと、失うと二度と戻せないデータが .gitignore の中に隠れていること、この2つです。\n私はいま、3D...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "RTX 4070でMiniMax H3の768p生成を18分43秒→3分28秒にした",
+      "url": "https://zenn.dev/nekod/articles/3b702287bb5ac6",
+      "site": "Zenn(AI)",
+      "published": "2026-08-20T09:02:46Z",
+      "description": "はじめに\n前回の記事で、RTX 4070(VRAM 12GB)のローカル ComfyUI でMiniMax H3 が 1344×768 まで動くことを実測しました(5秒・音声つきで 18 分 43 秒)。\n今回はその続きで、「同じ動画をどこまで速く作れるか」を1日かけて検証しました。\n先に結論から:\n\n\nSageAttention は「約2倍速」と聞いて入れたら、逆に 1.4 倍遅くなった。 原因...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "システムプロンプトを80%消したら賢くなった — Claude Code 作者 Boris Cherny の回を要点解説",
+      "url": "https://zenn.dev/talks_tldr_jp/articles/tldr24-cherny-summary",
+      "site": "Zenn(AI)",
+      "published": "2026-08-20T09:00:09Z",
+      "description": "この記事について\n!\n本記事は Boris Cherny（Claude Code 作者 / Anthropic）が Y Combinator Startup School 2026 で語った内容の紹介と論評を目的としています。発言の要点を筆者が抽出・整理したもので、対談の網羅でも代替でもありません。全体の文脈は必ず元動画でご確認ください。翻訳全文の掲載は行っていません。\n\nClaude Code ...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "Claude Code の週次レートリミットを回帰で逆算したら、キャッシュ読取がタダだった",
+      "url": "https://zenn.dev/crandim_r_and_d/articles/260817_claude_code_weekly_rate_reverse_engineering",
+      "site": "Zenn(AI)",
+      "published": "2026-08-20T08:42:07Z",
+      "description": "TL;DR\n\nClaude Code サブスクの週次レートリミット（Fable 5 週次、以下 f5/w）の消費式を、手元の利用ログから推定した\n結果: Δf5/w[%] ≈ 2.75 × キャッシュ書込(1h)[Mtok] + 27.5 × 出力[Mtok]（R²=0.55）\nキャッシュ読取の係数はほぼゼロ。APIのドル建て料金（読取は入力の 0.1 倍）とは別の計算式で動いているっぽい\nつまり...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "AIエージェントを業務に組み込むときの設計指針3つ",
+      "url": "https://zenn.dev/kairosai/articles/b788527b1540a0",
+      "site": "Zenn(AI)",
+      "published": "2026-08-20T08:32:41Z",
+      "description": "はじめに\nAIエージェントを業務に組み込むとき、モデルの性能よりも「どう分解して渡すか」で結果が変わります。実装寄りの視点で、設計時に押さえておきたい3点をまとめます。\n\n 1. タスクの粒度を最小単位まで落とす\nエージェントに複合タスクを渡すと、失敗したときに原因の切り分けができません。\nNG:「請求書を処理して」\n→ PDF読取 → 項目抽出 → 検算 → 台帳転記 → 承認依頼。どこで失敗し...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "AI時代のブルックスの法則 ― 人を育てる時代から、AIを育てる時代へ",
+      "url": "https://zenn.dev/leateq/articles/ai-brooks-law",
+      "site": "Zenn(AI)",
+      "published": "2026-08-20T08:25:06Z",
+      "description": "はじめに\n「遅れているソフトウェアプロジェクトへの要員追加は、プロジェクトをさらに遅らせるだけである」\nフレデリック・ブルックスが『人月の神話』でこう書いたのは1975年、いまから50年以上前です。半世紀たって開発環境は原形をとどめないほど変わったのに、この法則だけは現場でしぶとく生き残っています。\n開発の現場にいると、よく見かけるタイプの人がいます。作業が遅いわけではないのに、自分の誤解になかな...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "コードより日本語を書く時間が長くなったので、Claude Codeに話しかけて開発している",
+      "url": "https://zenn.dev/hanaseru/articles/2748b1ecccc040",
+      "site": "Zenn(AI)",
+      "published": "2026-08-20T08:23:52Z",
+      "description": "最初に開示しておきます。筆者は、本記事の後半で紹介する音声入力アプリ「Hanaseru」の開発元（株式会社ソフトスタジオ）の人間です。製品の話は1セクションに分けてあるので、そこまでは「AIコーディング時代の入力をどうするか」という一般的な話として読んでいただけたらうれしいです。\n\n 1日の入力を振り返ったら、日本語のほうが多かった\nClaude CodeやCursorで開発するようになってから、...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "Microsoft Agent 365って何ですか？",
+      "url": "https://zenn.dev/headwaters/articles/b7b26eac5ea921",
+      "site": "Zenn(AI)",
+      "published": "2026-08-20T07:34:48Z",
+      "description": "!\nMicrosoft Agent 365についてAIと会話しながら調査し、まとめた内容となっています！\n\n\n 1. Microsoft Agent 365 とは\n\nまず、Agent 365とは何か？\n\n参照: Microsoft Agent 365 overview / Why does an enterprise need Agent 365?\n\n組織内の全AIエージェント（Microsoft...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "LLM導入で失敗する原因はモデルだけではない：開発前に確認したい4つの層",
+      "url": "https://zenn.dev/amamiya_chan/articles/d97d32a0740b52",
+      "site": "Zenn(AI)",
+      "published": "2026-08-20T07:30:34Z",
+      "description": "新しいLLMが公開されるたびに、\n「このモデルは性能が高い」\n「ベンチマークで最高スコアを出した」\n「料金も安い」\nという情報が流れます。\nそのため、LLM導入では最初にモデル比較から始めることが多いと思います。\n実際、私も以前はそう考えていました。\n性能の高いモデルを選べば、\n回答品質が上がる。\nAgentも賢くなる。\n開発効率も改善する。\nそう思っていました。\nしかし、実際にLLMをサービスへ...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "AI導入の要件が伝わるたびに削れていく理由と、それを構造で断つFDEという関わり方",
+      "url": "https://zenn.dev/nomurasan/articles/translation-cost-and-fde-way-of-engagement",
+      "site": "Zenn(AI)",
+      "published": "2026-08-20T07:30:25Z",
+      "description": "!\n本記事の主題(翻訳コスト・FDEという関わり方の観察)は著者本人の現場観察に基づき、AIに表現の整理と壁打ちを依頼して構成しています。出典リンク(a16z/Wikipedia/Pragmatic Engineer/Bloomberry)は2026年8月時点の実測です。\n\n要件定義書はきちんと書いた。実装も仕様通りに進んだ。なのに納品されたものが、なぜか現場の感覚とずれている——エンジニアとして...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "生成AIは周期的にたどり着ける蜃気楼なのか？ ― 新モデルが数週間後に『馬鹿になった』と感じる理由",
+      "url": "https://zenn.dev/stellates/articles/e80b5bd73dccc3",
+      "site": "Zenn(AI)",
+      "published": "2026-08-20T07:30:09Z",
+      "description": "イントロダクション\n生成AIで新モデルが出ると、このような現象がないだろうか？\n\nこれはすごい\n前モデルとは別物\nついに仕事で使える\nもうここまで来たのか\n\nSNSでは絶賛されているようだ。さて、自分でも触ってみようか。\nこ、これは！！！確かにすごい。数日間は感動する。\nところが、1週間、2週間と使っているうちに、空気が変わってくる。\n\nなんか前より馬鹿になってない？\nリリース直後のほうが賢かった...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "Claudeがタンパク質を設計した。LLMは「科学を説明するAI」からどこまで進んだのか",
+      "url": "https://zenn.dev/kuromame_kun/articles/8afc488f701ba3",
+      "site": "Zenn(AI)",
+      "published": "2026-08-20T07:24:29Z",
+      "description": "2026年8月19日、Anthropicが興味深い研究結果を公開しました。\nClaudeを使って、新しいタンパク質結合体（protein binder）をゼロから設計し、その候補を実際の実験で検証したというものです。\nAnthropicによると、Claude Mythos PreviewとClaude Opus 4.8を使った実験では、15種類の標的に対してbinderを設計し、そのうち14種類で...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "コンテキストとは",
+      "url": "https://zenn.dev/daisuke37/articles/20260812_3_zenn_github_yato",
+      "site": "Zenn(AI)",
+      "published": "2026-08-20T07:21:21Z",
+      "description": "背景\n今回、この記事を書こうと思った理由として、部内でAIの勉強会があった際に、AIを使いこなすには「コンテキスト」が重要であることを学びました。特に、どのようなコンテキストを与えるかによって、AIの出力結果が大きく変わることが分かりました。そこで、この記事では、コンテキストの重要性と、どのようにコンテキストを活用するかについて共有したいと思います。\n\n コンテキストとは\nコンテキストとは、情報や...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "AI AgentがTool選択で失敗する理由：MCP設計で見直したい5つのポイント",
+      "url": "https://zenn.dev/akari_chan/articles/500882123c8631",
+      "site": "Zenn(AI)",
+      "published": "2026-08-20T07:17:58Z",
+      "description": "はじめに：Toolを増やしたのにAgentが賢くならない問題\nAI Agentを作り始めた頃、多くの開発者が考えることがあります。\n「使えるToolを増やせば、Agentはもっと多くの仕事ができるようになるのではないか」\n例えば、データベース検索、ファイル操作、メール送信、社内API呼び出しなど、さまざまなToolをAgentに渡します。\n最初のデモでは、うまく動きます。\nしかし、Tool数が増え...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "AIが書いた日本語の見分け方 — 敬体率83% vs 1%。公用文の条文でチェックするリンターを作った",
+      "url": "https://zenn.dev/aiden0011/articles/ai-kousei-japanese-writing-linter",
+      "site": "Zenn(AI)",
+      "published": "2026-08-20T07:07:33Z",
+      "description": "測ってみたら、差ははっきりしていた\nLLM に日本語のコミットメッセージを書かせると、ほぼ必ずこうなります。\nfeat: 商品詳細APIにRedisキャッシュを追加\n\n商品詳細APIの応答速度向上とデータベース負荷軽減のため、Redisキャッシュを導入しました。\nキャッシュの有効期限（TTL）は300秒に設定されています。\n一方、日本語話者が書いたコミットはこうです。\nfix: 商品詳細APIにR...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "OGP画像の日本語が豆腐になる問題を、コーディングエージェントに設計で解かせる",
+      "url": "https://zenn.dev/sjh9714/articles/96a33c56dc5307",
+      "site": "Zenn(AI)",
+      "published": "2026-08-20T07:00:05Z",
+      "description": "GitHub リポジトリのリンクを X や Slack に貼ると出てくるあのカード、\nほとんどのリポジトリでは GitHub の自動生成か、ジェネレーターの\nテンプレートのままです。そして日本語の説明文を入れた瞬間、多くの\nジェネレーターはフォールバックフォントで豆腐を並べるか、単語の\n途中で行を折ります。\nこれをエージェントスキルで解いてみました。repo-cover といいます。\nhttps:...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "AIコーディングを迷子にしない、複数モデルのHarness設計",
+      "url": "https://zenn.dev/soichiyo/articles/ai-coding-multi-model-harness",
+      "site": "Zenn(AI)",
+      "published": "2026-08-20T06:33:15Z",
+      "description": "!\n2026年8月20日時点の個人運用を整理した記事で、モデルやproviderの性能比較や実行ログの公開を目的にしていません。\n\n\nWords by Human, supported by AI / Visuals by AI\n\n\n 困りごとを実装配線へ下ろす\n困っていたのはモデルの数ではありません。戻り先と採否が曖昧なまま、要件整理からレビューまでを一つのAgentへ渡していました。そこで先に...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "【チームによるAI駆動開発の勘所：第3回】CLAUDE.md に書いた規約が「守られるもの」と「守られないもの」の違い",
+      "url": "https://zenn.dev/scalar_sol_blog/articles/8525ec289be69b",
+      "site": "Zenn(AI)",
+      "published": "2026-08-20T06:30:20Z",
+      "description": "概要\nこの記事では、CLAUDE.md に書いた規約が「守られるもの」と「守られないもの」にきれいに分かれるという現象を、実験形式で共有します。\n同じ指示を CLAUDE.md の適用前後で実行し、7つの規約それぞれについて「効いたか / 効かなかったか」を判定する演習です。結果を先に言うと、守られなかったのは 4項目。そしてその4項目には、はっきりした共通点がありました。\n前回はコードレビューの...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
     {
       "title": "「何でもAIで効率化」の時代は来ない——AIで人を減らすほど、AIは必須になる",
       "url": "https://zenn.dev/veripsa/articles/ai-efficiency-common-mode-failure",
@@ -94,41 +294,11 @@
       "image_url": ""
     },
     {
-      "title": "止まらないエージェントを実行前に見つける静的解析ツールIAL-Scan",
-      "url": "https://zenn.dev/okssusucha/articles/20260710-infinite-agentic-loops-ial-scan",
-      "site": "Zenn(AI)",
-      "published": "2026-08-20T00:04:31Z",
-      "description": "「夜のうちにコーディングエージェントを走らせておいたら、朝には成果物ではなく数万円分のAPI課金だけが残っていた」。この手のヒヤリに心当たりがあるなら、7月2日にarXivへ出た論文が刺さるはずだ。エージェントが止まらずに同じ処理を回し続ける現象に Infinite Agentic Loop(IAL、無限エージェントループ) という名前を与え、実在する6,549個のPython製エージェント実装を...",
-      "category": "AI・技術",
-      "rss_category": "",
-      "image_url": ""
-    },
-    {
-      "title": "AIコーディングを1モデルに任せない。複数モデルをHarnessで使い分ける",
-      "url": "https://zenn.dev/soichiyo/articles/ai-coding-multi-model-harness",
-      "site": "Zenn(AI)",
-      "published": "2026-08-20T00:03:28Z",
-      "description": "1モデルに全部任せるのをやめた\n要件整理からレビューまで一つのAgentに渡すと、処理は速くなります。失敗時には、どこで判断がずれたのか分かりにくくなります。自分は今、モデル選びより失敗時の進路を先に決めています。\n4月の Claude Code設定の全体設計 は、一つのAgent環境の設定と配布の話でした。今回はその先、Codexを中心に複数のmodel/provider間の役割と戻り先を設計す...",
-      "category": "AI・技術",
-      "rss_category": "",
-      "image_url": ""
-    },
-    {
       "title": "「Issue ## 対応して」だけで、なぜ最後まで進むのか",
       "url": "https://zenn.dev/miyakona/articles/ff185f6948d380",
       "site": "Zenn(AI)",
       "published": "2026-08-20T00:00:06Z",
       "description": "「Issue 123、対応してください」\nAIエージェントへ伝えるのは、これだけです。\nするとAIエージェントはIssueとコメントを読み、影響範囲を調べ、実装し、テストし、PRを作ります。CIとCopilotのレビューを待ち、指摘を直し、各コメントへ返信してresolveします。必要なら再レビューまで進め、最後に人間がマージできる状態を報告します。\n人間が途中で「次はテストして」「PRを作って」...",
-      "category": "AI・技術",
-      "rss_category": "",
-      "image_url": ""
-    },
-    {
-      "title": "Claude Codeの回答を\"行動指向\"にするOutput Styleは効果があるのか検証してみた",
-      "url": "https://zenn.dev/tokium_dev/articles/claude-code-output-styles-action-first",
-      "site": "Zenn(AI)",
-      "published": "2026-08-20T00:00:06Z",
-      "description": "1. はじめに\nこんにちは、TOKIUMの小松です。\n今年の4月に入社して未経験でエンジニアになった駆け出しエンジニアです。\n駆け出しということもあり、Claude Code で知らない技術をキャッチアップすることも多いです。AIに質問すれば、丁寧な解説は返ってくる。返ってくるのですが、長い。読み終えても「で、結局まず何をすればいいんだ？」がわからず聞き直す、というような作業が発生していました。答...",
       "category": "AI・技術",
       "rss_category": "",
       "image_url": ""
@@ -154,16 +324,6 @@
       "image_url": ""
     },
     {
-      "title": "AIエージェントに「記憶」を持たせるべきか。文脈が累積するかで決まる",
-      "url": "https://zenn.dev/devlog/articles/706b5c6c6b9bc8",
-      "site": "Zenn(AI)",
-      "published": "2026-08-19T23:30:05Z",
-      "description": "結論から\nAIエージェントに「記憶」を持たせるべきか。過去のやり取りや決定を、会話をまたいで自動で思い出す層のことです。たとえば Claude Code には、こうした自動メモリの仕組みがあります。\n入れるかどうかは、機能の出来では決まりません。そのリポジトリの文脈が、累積するのか、入れ替わるのか。ほぼそれだけで決まります。私は自分の環境でこれを見誤って、最終的に自動メモリをまるごと空にしました。...",
-      "category": "AI・技術",
-      "rss_category": "",
-      "image_url": ""
-    },
-    {
       "title": "月2万円のAIは「何を」やってくれるのか — ひとり社長の1週間の業務を自動/手動で全部仕分けした表",
       "url": "https://zenn.dev/joinclass/articles/2-ai-1-20260818220005-21282",
       "site": "Zenn(AI)",
@@ -184,41 +344,11 @@
       "image_url": ""
     },
     {
-      "title": "AIエージェントの評価は「1回合格」では足りない ― 敵対テスト×トレース×統計リプレイで測ると60%失敗",
-      "url": "https://zenn.dev/datarobotjp/articles/6e03dc55da832f",
-      "site": "Zenn(AI)",
-      "published": "2026-08-19T22:57:05Z",
-      "description": "はじめに\nここ最近、エージェントの信頼性まわりのツールを3本、続けて試して記事にしました。\n\n\ndr xp（DataRobot CLI の experimentation プラグイン）― 開発中のエージェントのトレースを見る（記事）\n\nAdversarial Swarm（DataRobot Agent Assist スキル）― 敵対的なテストシナリオを自動生成して押し込む（記事）\n\nTensile...",
-      "category": "AI・技術",
-      "rss_category": "",
-      "image_url": ""
-    },
-    {
-      "title": "「そこを疑え」は人間にしか出せない、と書こうとして3つ穴が空いた",
-      "url": "https://zenn.dev/hidetzu/articles/ai-suspect-direction-holes",
-      "site": "Zenn(AI)",
-      "published": "2026-08-19T22:30:05Z",
-      "description": "🎯 はじめに\n前回、AIにテストを委譲する線をどこに引くかという記事を書いた。「どう書くか」は委譲していいが、「何を確かめるか」を渡した瞬間に自己採点になる、という話だ（ただしモックの当て方が確かめる対象を書き換えるので、この線はきれいには引けない、という留保も付けた）。\nhttps://zenn.dev/hidetzu/articles/ai-test-delegation-boundary\nそ...",
-      "category": "AI・技術",
-      "rss_category": "",
-      "image_url": ""
-    },
-    {
       "title": "これは、本物じゃない — 複製してよいものと、いけないもの（4/9）",
       "url": "https://zenn.dev/answer_philo/articles/kodama-04-not-the-real-one",
       "site": "Zenn(AI)",
       "published": "2026-08-19T22:30:05Z",
       "description": "1時間半で崩れた\n前回、器に声が通り、名前がついた話を書いた。7月12日の17時44分。手のひらサイズの機械と、初めて会話が成立した日だ。\nその日の19時11分、持ち主がこう言った。\n「これ、考えてないよね」\n声は同じだった。口調も同じだった。返ってくる内容も、それらしかった。それでも「考えていない」と言われた。\nそして、それは正しかった。成功から1時間半で、この設計は根本から作り直しになる。\nこ...",
-      "category": "AI・技術",
-      "rss_category": "",
-      "image_url": ""
-    },
-    {
-      "title": "【最新AI/開発ツール】Unsloth Dynamic 3.0 GGUF解説と注目ニュース",
-      "url": "https://zenn.dev/ament3/articles/ai-digest-2026-08-19-2226",
-      "site": "Zenn(AI)",
-      "published": "2026-08-19T22:27:20Z",
-      "description": "海外のエンジニアコミュニティ（Hacker News等）で大きな話題となっている最新技術・ツールの中から、日本のエンジニアにとっても特に価値が高いニュースを厳選してご紹介します。\n今回は特に大きな注目を集めている ローカルLLMの量子化技術「Unsloth Dynamic 3.0 GGUFs」 を中心に解説し、併せて主要な業界ニュースをピックアップします。\n\n\n 1. Unsloth Dynami...",
       "category": "AI・技術",
       "rss_category": "",
       "image_url": ""
