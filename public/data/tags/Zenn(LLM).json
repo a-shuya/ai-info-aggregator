@@ -1,48 +1,8 @@
 {
   "site": "Zenn(LLM)",
-  "last_updated": "2026-08-20T18:16:40.296516",
-  "total_articles": 5516,
+  "last_updated": "2026-08-20T19:06:28.425456",
+  "total_articles": 5512,
   "articles": [
-    {
-      "title": "Claudeと「AI解体学」してみた 〜セキュリティ製品編〜",
-      "url": "https://zenn.dev/think_node/articles/3658e943c32baa",
-      "site": "Zenn(LLM)",
-      "published": "2026-08-20T13:20:39Z",
-      "description": "AI解体学とは\n\nAIを使うことを目的とせず、AIの回答や振る舞いを観察して、その裏側にある設計思想を推し量る遊び。\n\n造語です。学問ではないです。\n\n 対戦カード\n仕事で使っているセキュリティ製品のAIアシスタントを触っているうちに、「これ、どういう作りなんだろう」と気になった。\n外からの挙動だけで内部構造を推測して、それをClaudeに「批判的に検討して」と投げた。\n結果、ボコボコにされた。\n...",
-      "category": "AI・技術",
-      "rss_category": "",
-      "image_url": ""
-    },
-    {
-      "title": "RTX 5060 Tiを追加購入する直前に、RTX 4070 Ti SUPER 16GB単体でQwen 3.8 27Bを試してみた",
-      "url": "https://zenn.dev/sumumu26/articles/b5b2ab52939b4e",
-      "site": "Zenn(LLM)",
-      "published": "2026-08-20T12:48:26Z",
-      "description": "こんにちは。miharubaの池谷です。\n最近、ローカルLLM用にGPUをもう1枚買い足そうか、本気で悩んでいました。\n今使っているGPUはRTX 4070 Ti SUPER 16GBです。Qwenの27Bモデルを長いコンテキストで使おうとすると、モデル本体だけでなくKVキャッシュにもVRAMが必要になります。16GBでは足りなくなる場面がありそうなので、RTX 5060 Ti 16GBを追加して...",
-      "category": "AI・技術",
-      "rss_category": "",
-      "image_url": ""
-    },
-    {
-      "title": "タスク41件をAIループに任せたら、詰まっていたのは実装より判断だった",
-      "url": "https://zenn.dev/shimo4228/articles/ai-task-loop-judge-bottleneck",
-      "site": "Zenn(LLM)",
-      "published": "2026-08-20T10:23:12Z",
-      "description": "タスク台帳の下のほう、もう何週間もスクロールして見ていない領域はありませんか。\n私の環境には 2 つのリポジトリ合計で 41 件のタスクが眠っていました。AI エージェントは毎日使っているのに、台帳は減りません。\nある朝、自作の「着手可能なタスクを一覧する」コマンドを叩いたら、答えは空でした。\npython3 ~/.claude/scripts/claims.py ready\n# （出力なし）\n4...",
-      "category": "AI・技術",
-      "rss_category": "",
-      "image_url": ""
-    },
-    {
-      "title": "LLM プロバイダを抽象化したら、効いたのは「乗り換えの自由」じゃなかった",
-      "url": "https://zenn.dev/box2box/articles/multi-llm-provider-abstraction",
-      "site": "Zenn(LLM)",
-      "published": "2026-08-20T10:02:29Z",
-      "description": "結論 / TL;DR\n複数の LLM プロバイダを 1 つのインタフェースで束ねる薄い層を入れました。動機は「ベンダーロックインの回避」でしたが、実際に効いたのは別の 2 つでした。\n\n\n可用性: プロバイダ側が 5xx を返しても、別プロバイダに落として機能ごと止めない\n\nコスト: 「どの機能にどのモデルを使うか」を設定で切り替えられる\n\nそして、やってみて分かった一番大事な設計指針は 「抽象化...",
-      "category": "AI・技術",
-      "rss_category": "",
-      "image_url": ""
-    },
     {
       "title": "システムプロンプトを80%消したら賢くなった — Claude Code 作者 Boris Cherny の回を要点解説",
       "url": "https://zenn.dev/talks_tldr_jp/articles/tldr24-cherny-summary",
@@ -124,11 +84,11 @@
       "image_url": ""
     },
     {
-      "title": "ローカルLLM本番運用フルスタック：vLLM・SREの最小構成",
-      "url": "https://zenn.dev/libercraft/articles/20260820-local-llm-production-stack-vllm-sre",
+      "title": "# AIが「できたか分からない」と言ったとき、もう一度やらせてはいけない## ―― 外部API・二重実行・Commit-Unknownか",
+      "url": "https://zenn.dev/humanos_lab/articles/93ff5a31a19c91",
       "site": "Zenn(LLM)",
-      "published": "2026-08-20T02:00:00Z",
-      "description": "これまでの記事で、量子化（GGUF・AWQ・GPTQ）・KVキャッシュ最適化・プロンプトキャッシュと、個別の最適化技術を扱ってきました。本記事ではこれらを組み合わせ、ローカルLLMをKubernetes上で本番運用するための最小構成を整理します。\n\n\n 最小構成の全体像\n本番運用に必要な最小限のコンポーネントは次の通りです。\n\n\nKubernetes（1.27以上）：GPU対応のオーケストレーショ...",
+      "published": "2026-08-20T03:15:13Z",
+      "description": "AIが「できたか分からない」と言ったとき、もう一度やらせてはいけない\n\n ―― 外部API・二重実行・Commit-Unknownから考えるAI Agentの安全設計\n\n 0｜たった1回の「もう一度」が事故になる\n人間：\n\n「この注文を返金して」\n\nAI Agent：\n\n「返金APIを実行しましたが、タイムアウトして結果を確認できませんでした」\n\n人間：\n\n「じゃあ、もう一回やって」\n\nAI Ag...",
       "category": "AI・技術",
       "rss_category": "",
       "image_url": ""
