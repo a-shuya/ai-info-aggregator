@@ -1,6 +1,6 @@
 {
   "site": "Zenn(Python)",
-  "last_updated": "2026-08-20T16:38:37.664667",
+  "last_updated": "2026-08-20T17:06:05.103135",
   "total_articles": 5876,
   "articles": [
     {
@@ -54,21 +54,21 @@
       "image_url": ""
     },
     {
-      "title": "自作Markdown変換で日本語の改行が消えていた——公開記事に実害が出た落とし穴2つ",
-      "url": "https://zenn.dev/matsutake_prgrm/articles/markdown-converter-japanese-pitfalls",
+      "title": "LLM プロバイダを抽象化したら、効いたのは「乗り換えの自由」じゃなかった",
+      "url": "https://zenn.dev/box2box/articles/multi-llm-provider-abstraction",
       "site": "Zenn(Python)",
-      "published": "2026-08-20T09:00:06Z",
-      "description": "ブログの投稿をスクリプトから流し込むために、Markdown → HTML の変換を自作しています。\nライブラリを入れるほどの規模ではなかったので、必要な記法だけ自前で処理する方針でした。\nその変換に、日本語ブログ特有のバグが2つありました。どちらも既に公開済みの記事に実害が出ていました。\n\n 1. 段落内の改行が消えて、半角スペースが入る\n段落の中の複数行を、こう連結していました。\nhtml =...",
+      "published": "2026-08-20T10:02:29Z",
+      "description": "結論 / TL;DR\n複数の LLM プロバイダを 1 つのインタフェースで束ねる薄い層を入れました。動機は「ベンダーロックインの回避」でしたが、実際に効いたのは別の 2 つでした。\n\n\n可用性: プロバイダ側が 5xx を返しても、別プロバイダに落として機能ごと止めない\n\nコスト: 「どの機能にどのモデルを使うか」を設定で切り替えられる\n\nそして、やってみて分かった一番大事な設計指針は 「抽象化...",
       "category": "開発",
       "rss_category": "",
       "image_url": ""
     },
     {
-      "title": "AIが書いた日本語の見分け方 — 敬体率83% vs 1%。公用文の条文でチェックするリンターを作った",
-      "url": "https://zenn.dev/aiden0011/articles/ai-kousei-japanese-writing-linter",
+      "title": "自作Markdown変換で日本語の改行が消えていた——公開記事に実害が出た落とし穴2つ",
+      "url": "https://zenn.dev/matsutake_prgrm/articles/markdown-converter-japanese-pitfalls",
       "site": "Zenn(Python)",
-      "published": "2026-08-20T07:07:33Z",
-      "description": "測ってみたら、差ははっきりしていた\nLLM に日本語のコミットメッセージを書かせると、ほぼ必ずこうなります。\nfeat: 商品詳細APIにRedisキャッシュを追加\n\n商品詳細APIの応答速度向上とデータベース負荷軽減のため、Redisキャッシュを導入しました。\nキャッシュの有効期限（TTL）は300秒に設定されています。\n一方、日本語話者が書いたコミットはこうです。\nfix: 商品詳細APIにR...",
+      "published": "2026-08-20T09:00:06Z",
+      "description": "ブログの投稿をスクリプトから流し込むために、Markdown → HTML の変換を自作しています。\nライブラリを入れるほどの規模ではなかったので、必要な記法だけ自前で処理する方針でした。\nその変換に、日本語ブログ特有のバグが2つありました。どちらも既に公開済みの記事に実害が出ていました。\n\n 1. 段落内の改行が消えて、半角スペースが入る\n段落の中の複数行を、こう連結していました。\nhtml =...",
       "category": "開発",
       "rss_category": "",
       "image_url": ""
