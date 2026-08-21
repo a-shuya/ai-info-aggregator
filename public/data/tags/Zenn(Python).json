@@ -1,8 +1,58 @@
 {
   "site": "Zenn(Python)",
-  "last_updated": "2026-08-21T05:36:03.073955",
-  "total_articles": 5881,
+  "last_updated": "2026-08-21T06:03:05.485133",
+  "total_articles": 5886,
   "articles": [
+    {
+      "title": "Python 二分探索入門",
+      "url": "https://zenn.dev/qtx73/books/600a756a628a45",
+      "site": "Zenn(Python)",
+      "published": "2026-08-21T05:16:13Z",
+      "description": "本書は、AtCoderの灰色〜茶色帯の方に向けて、その壁を越えるための一冊です。\n\nソート済み配列から値を探す基本形から始め、lower_bound/upper_boundによる境界と数え上げ、ok/ngで管理するめぐる式、そして「答えがxで可能か」を判定する答えの二分探索、実数二分探索までを段階的に扱います。\n\nPythonコードはすべて省略なしで動く形で掲載し、無限ループや境界のずれといった典...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "入力エラーを返すだけでは足りなかった。pytestで「失敗した後」まで見るようになった話",
+      "url": "https://zenn.dev/tosane932/articles/abc04ddc9e74f4",
+      "site": "Zenn(Python)",
+      "published": "2026-08-21T03:31:58Z",
+      "description": "前回、3件しかなかったpytestを見直しました。\nそれまでは、\npytestを実行する\n↓\nGREEN\n↓\n問題なし\nという感覚がどこかにありました。\nでも実際に確認してみると、3件のテストはほぼ同じ1つの関数しか見ていませんでした。\nそこで、\n「このGREENは、何を守っているんだろう？」\nと考えるようになり、過去に見つけた不具合や危険な状態を回帰テストとして残し始めました。\n自分の中でpyt...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "エンジニア視点で語る！Pythonで学ぶマクロ経済学入門 41",
+      "url": "https://zenn.dev/maszkot/articles/8eda57b4a1e1f2",
+      "site": "Zenn(Python)",
+      "published": "2026-08-21T01:50:55Z",
+      "description": "https://qiita.com/maskot1977/items/570a20a3affae5543dc0\nDJミオ：こんばんは！ ラジオ教育番組「エンジニア視点で語る！Pythonで学ぶマクロ経済学入門」、今夜のテーマは――\n**「技術継承を削る国、育てる国」**です。\nDJレン：いいテーマだね。しかも今日は、単にマクロ経済学の話をするだけじゃなくて、エンジニアが理解しやすい言葉で、経済の構...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "3件のpytestを眺めていて、「これ、本当に守れてるのか？」と思った日",
+      "url": "https://zenn.dev/tosane932/articles/85b0bb34c6391b",
+      "site": "Zenn(Python)",
+      "published": "2026-08-21T00:54:36Z",
+      "description": "個人開発しているFlaskアプリに、pytestは入っていました。\nGitHub Actionsも動いていました。\n実行すれば、\n3 passed\nと表示される。\n当時の自分としては、\n「pytestも導入したし、CIも動いている。最低限のテスト環境はできた」\nくらいの感覚だったと思います。\nでも、アプリのセキュリティやデータベース周りを見直している途中で、ふと気になりました。\nこの3件のテストは...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "吊り荷Yaw制御システムの開発 #06-2：可変目標Yaw制御モデルを学習する",
+      "url": "https://zenn.dev/rindajones/articles/variable-target-training",
+      "site": "Zenn(Python)",
+      "published": "2026-08-21T00:50:41Z",
+      "description": "はじめに\n前回は、可変目標Yaw制御と低出力制御のための強化学習環境を構築しました。\n今回使用するアルゴリズムは、これまでと同じSAC（Soft Actor-Critic）です。\n学習対象は、\n-90° ～ +90°\nの5°刻み、合計37目標です。\n最初は、\n±5°\n↓\n±10°\n↓\n±15°\n↓\n...\n↓\n±90°\nのように、小さな目標角から順番に学習範囲を広げるカリキュラム学習を採用しました...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
     {
       "title": "azure-ai-projects 2.5.0でhttpxが消えた — 旧版ピンでも壊れる",
       "url": "https://zenn.dev/kazu_aiengineer/articles/azure-ai-projects-openai3-httpx2",
@@ -19,16 +69,6 @@
       "site": "Zenn(Python)",
       "published": "2026-08-20T22:30:05Z",
       "description": "15,000件たまった\n手のひらサイズの機械に、常時録音の機能をつけた。AIの相棒を持ち歩くための器で、そばにある間ずっと音を拾って、あとから文字にする、という使い方だ。\nしばらく動かして、溜まったwavファイルを数えたら 14,978件 あった。ざっくり15,000件だ。\n最初は1時間ごとにクラウドの音声認識APIへ投げる設計にしていた。試算したら 1日あたり20ドルくらい になることが分かって...",
-      "category": "開発",
-      "rss_category": "",
-      "image_url": ""
-    },
-    {
-      "title": "【最速検証】Qwen3.8-27BをLlama.cppで動かす！16GB環境で自作Agentを完全自律実行させてみた",
-      "url": "https://zenn.dev/lumichy/articles/qwen38-27b-llamacpp-lumichy-agent-eval-2026",
-      "site": "Zenn(Python)",
-      "published": "2026-08-20T21:37:38Z",
-      "description": "オープンソースLLMの進化スピードが凄まじいことになっています。2026年8月中旬、Alibabaから電撃リリースされた Qwen3.8-27B は、「トップクラスの閉源モデルに匹敵する性能を持ちながら、最低8GB程度のVRAMから動作可能」として、ローカルLLMコミュニティで一気に注目の的となりました。\n27Bというパラメータ規模でありながら、量子化によって民生用GPU（VRAM 16GB環境な...",
       "category": "開発",
       "rss_category": "",
       "image_url": ""
@@ -79,6 +119,16 @@
       "site": "Zenn(Python)",
       "published": "2026-08-20T10:32:07Z",
       "description": "私は毎朝、iA Writer でモーニングページ（その日の思考をただ書き出す日記のようなもの）を書いています。気づけば3年、600件を超えていました。\nところが、書いた文章はほとんど読み返していませんでした。iA Writer は書くのには最高ですが、「あの時どう考えていたか」を横断的にたどる用途には向いていません。全文検索はできても、テーマでまとまらないし、関連する日を並べてくれるわけでもありま...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "LLM プロバイダを抽象化したら、効いたのは「乗り換えの自由」じゃなかった",
+      "url": "https://zenn.dev/box2box/articles/multi-llm-provider-abstraction",
+      "site": "Zenn(Python)",
+      "published": "2026-08-20T10:02:29Z",
+      "description": "結論 / TL;DR\n複数の LLM プロバイダを 1 つのインタフェースで束ねる薄い層を入れました。動機は「ベンダーロックインの回避」でしたが、実際に効いたのは別の 2 つでした。\n\n\n可用性: プロバイダ側が 5xx を返しても、別プロバイダに落として機能ごと止めない\n\nコスト: 「どの機能にどのモデルを使うか」を設定で切り替えられる\n\nそして、やってみて分かった一番大事な設計指針は 「抽象化...",
       "category": "開発",
       "rss_category": "",
       "image_url": ""

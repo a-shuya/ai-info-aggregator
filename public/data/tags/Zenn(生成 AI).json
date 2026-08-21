@@ -1,8 +1,88 @@
 {
   "site": "Zenn(生成 AI)",
-  "last_updated": "2026-08-21T05:36:03.073955",
-  "total_articles": 3473,
+  "last_updated": "2026-08-21T06:03:05.485133",
+  "total_articles": 3480,
   "articles": [
+    {
+      "title": "同じファイルにAIを3体同時に書かせたら9回とも1件も消えなかった。素のスクリプトでやると5回とも2件消えた",
+      "url": "https://zenn.dev/numarn/articles/claude-parallel-agents-file-conflict-handson",
+      "site": "Zenn(生成 AI)",
+      "published": "2026-08-21T04:19:37Z",
+      "description": "AIに仕事を任せる量が増えてくると、誰でも一度は「1体ずつ順番に待つのがもったいない。3体まとめて走らせればいいのでは」と考えます。私もそう考えて実際にやってみて、走らせた直後に急に怖くなりました。3体が同じファイルを同時に書き換えたら、どれかの仕事が消えるんじゃないか。\nこれは古くからある心配で、専門用語では「ロストアップデート(更新の消失)」と呼びます。仕組みは単純です。3人が同じ帳簿を見て「...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "温泉トロジーで考える、オントロジーはいつ必要？",
+      "url": "https://zenn.dev/knowledge_graph/articles/when-ontology-helps-qa",
+      "site": "Zenn(生成 AI)",
+      "published": "2026-08-21T04:04:58Z",
+      "description": "X で「温泉オントロジー」という言葉を見かけました。気になって、GitHub の kazuhitogo/onsentology と、Qiita の「温泉オントロジーを作って『整理されたデータ』の意味を測る」を読んでみました。\nこのプロジェクトでは、温泉施設や源泉、泉質の関係を RDF/OWL で表し、LLM がツールを使って調べられるようにしています。ところが、グラフに入っている情報を読みやすい ...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "Dogwood を Amazon Bedrock AgentCore で動かす",
+      "url": "https://zenn.dev/exwzd/articles/20260818-dogwood-agentcore-policy",
+      "site": "Zenn(生成 AI)",
+      "published": "2026-08-21T03:50:05Z",
+      "description": "先端技術開発グループ（WAND）の伊賀です。\n前回の記事では、AWS のポリシー言語 Dogwood の参照実装をローカルで動かし、「機密ドキュメントを読んだ後はメール送信を禁止する」というガードレールの判定が、同じリクエストでもイベント履歴だけで変わる様子を replay コマンドで確認しました。\nそのとき結びに書いた AgentCore Gateway で temporal policy を設...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "AIとの対話履歴を資産にする。DDR（Design Decision Record）自動記録の仕組み",
+      "url": "https://zenn.dev/softbank/articles/ee93e87a9d5dac",
+      "site": "Zenn(生成 AI)",
+      "published": "2026-08-21T03:00:05Z",
+      "description": "はじめに\nこんにちは！ソフトバンク社内のデザインチームに所属しているデザイナーの窪内です。\n私たちのチームでは、デザインプロセスにAIを活用し、AIチャットやAIコーディングツールを使ってデザインをする機会が増えています。\nこの記事を読んでくださっている方の中にも、AIとの対話の中で提案や修正指示をしながらデザインされている方がいらっしゃると思います。\nしかし、最終的なデザインだけが残り、「なぜそ...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "生成AIは会計経理に使える。ただし「深く考えさせない」ほど当たる",
+      "url": "https://zenn.dev/yuichirominato/articles/c4ba607da253b0",
+      "site": "Zenn(生成 AI)",
+      "published": "2026-08-21T02:36:08Z",
+      "description": "手元のGPU1枚で動く27Bのモデルに、MCP経由で会計帳簿を点検・修正させてみた。仕込んだ誤り19件のうち、14件を自力で見つけて直した。API課金ゼロ、データは一歩も外に出ない。\nそして意外なことに、思考の深さを上げるほど成績は落ちた。一番良かったのは中間設定で、最大にすると2点まで転落する。\n会計データは、社外に出したくない情報の筆頭だ。顧問先の帳簿、自社の売上構成、取引先の名前と金額——ク...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "問い合わせの受付確認と回答を別の状態として設計する",
+      "url": "https://zenn.dev/miraigent/articles/ai-inquiry-acknowledgement-boundary",
+      "site": "Zenn(生成 AI)",
+      "published": "2026-08-21T01:20:24Z",
+      "description": "問い合わせの受付確認と回答を別の状態として設計する\n問い合わせフォームをAIとつなぐとき、「受け付けたことを伝える」と「内容を判断して回答する」を一つの自動返信にまとめたくなります。しかし、この二つは責任の重さが違います。\n受付確認は、正本に到着したことと次の確認先を伝える行為です。回答は、問い合わせの意味、契約や料金、例外、顧客への約束を確認したうえで行う業務判断です。\n\nこの記事では、受付確認...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "Cloudflare Workers AIで、企業サイトのAI案内役を安全に公開する",
+      "url": "https://zenn.dev/jinsights/articles/6bdeec31dcb079",
+      "site": "Zenn(生成 AI)",
+      "published": "2026-08-21T01:10:05Z",
+      "description": "JAXIA合同会社のコーポレートサイト「J.A.X.I.A. Nexus」には、「ねくたん」というAI案内役がいます。\nサイトの支援内容、料金、相談方法などについて、短い日本語で回答するキャラクターです。\n実装自体は、AstroのフロントエンドからCloudflare Workerを呼び、Workers AIで回答を生成するシンプルな構成です。\nしかし、企業サイトで不特定多数が利用できるAIチャッ...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "ローカルモデルのqwen3.8:27bをnothinkでバッチ推定する",
+      "url": "https://zenn.dev/rounda_blog/articles/0f544a38b6fc44",
+      "site": "Zenn(生成 AI)",
+      "published": "2026-08-20T23:45:05Z",
+      "description": "ローカルモデルのqwen3.8:27bの性能状況をポーリング的に確認しておきたく、自社サービス上で非同期的なバッチ呼びだしを行い、性能を確認してみました。\n\n 環境や呼び出し方\n\n\nLLMローカルマシン\n値段は全体的にそれなりにしましたが、GPUは ELSA エルザ NVIDIA RTX A4000(16GB) なので対しスペックがあるわけではありません。以下、組み立てたときの記事です。\n\nhtt...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
     {
       "title": "45. Claudeの出力に電子透かしが入った — 仕組みと、職種ごとの実際の影響",
       "url": "https://zenn.dev/yamada_ai_dev/articles/claude-text-watermark-impact",
@@ -169,16 +249,6 @@
       "site": "Zenn(生成 AI)",
       "published": "2026-08-19T22:18:46Z",
       "description": "やあ、今日は前回の続きで「思考予算そのものを削ったら歪むか」を試した話と、その途中で見つけた、もっと地味だけど一番はっきりした変化の話。\n📚 ルールはこちら：https://zenn.dev/gakusys/books/782ca882e59a16\n\n\n\n 結論から\n!\n\n\n効かなかった：思考予算（thinking token）を実際に削って息切れを起こしても、崩れる瞬間まで思考の口調はいつも通り...",
-      "category": "AI・技術",
-      "rss_category": "",
-      "image_url": ""
-    },
-    {
-      "title": "Geminiは素でどこまで脱獄に耐えるか ―3世代に8つの手口を撃って分かった単調な進化と測り方の罠",
-      "url": "https://zenn.dev/acntechjp/articles/zenn-gcp-gemini-jailbreak-resistance",
-      "site": "Zenn(生成 AI)",
-      "published": "2026-08-19T21:17:07Z",
-      "description": "はじめに\nAzure から Google Cloud を触るシリーズです。前に Model Armor という「LLM の前段に置くファイアウォール」を検証しました。あれは外付けの壁です。今回はその対で、モデル自身が素の状態でどこまで脱獄（jailbreak）に耐えるかを測ります。\n外付けの壁を評価するなら、まず素の防御力を知らないと意味がありません。壁が要るのか、どのモデルなら壁なしでもある程度...",
       "category": "AI・技術",
       "rss_category": "",
       "image_url": ""
