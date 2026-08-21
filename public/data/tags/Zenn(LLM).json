@@ -1,34 +1,34 @@
 {
   "site": "Zenn(LLM)",
-  "last_updated": "2026-08-21T00:25:31.412369",
+  "last_updated": "2026-08-21T02:08:42.444302",
   "total_articles": 5514,
   "articles": [
     {
-      "title": "# MAS AXIOMとCapsule技術で実現する「論点整合性」と「制約技術」",
-      "url": "https://zenn.dev/void09/articles/3db34b2f068ae1",
+      "title": "タスク41件をAIループに任せたら、詰まっていたのは実装より判断だった",
+      "url": "https://zenn.dev/shimo4228/articles/ai-task-loop-judge-bottleneck",
       "site": "Zenn(LLM)",
-      "published": "2026-08-20T15:40:24Z",
-      "description": "MAS AXIOMとCapsule技術で実現する「論点整合性」と「制約技術」\n\n はじめに\n一般的なマルチエージェントシステム（MAS）は、\n\n複数のLLMに推論させる\n異なる意見を出させる\n相互にレビューさせる\n最終的な回答を生成する\n\nという構成が一般的です。\nこれは非常に強力ですが、ひとつ問題があります。\n「複数のLLMが同じ方向に間違えた場合、それをどう検出するのか？」\nそしてもうひとつ。...",
+      "published": "2026-08-20T10:23:12Z",
+      "description": "タスク台帳の下のほう、もう何週間もスクロールして見ていない領域はありませんか。\n私の環境には 2 つのリポジトリ合計で 41 件のタスクが眠っていました。AI エージェントは毎日使っているのに、台帳は減りません。\nある朝、自作の「着手可能なタスクを一覧する」コマンドを叩いたら、答えは空でした。\npython3 ~/.claude/scripts/claims.py ready\n# （出力なし）\n4...",
       "category": "AI・技術",
       "rss_category": "",
       "image_url": ""
     },
     {
-      "title": "AIが「ありません」と答えたとき、それは本当に「無い」のか",
-      "url": "https://zenn.dev/toshikatsu_oga/articles/ee27b0a1b98bc5",
+      "title": "LLM プロバイダを抽象化したら、効いたのは「乗り換えの自由」じゃなかった",
+      "url": "https://zenn.dev/box2box/articles/multi-llm-provider-abstraction",
       "site": "Zenn(LLM)",
-      "published": "2026-08-20T15:22:19Z",
-      "description": "AIが「ありません」と答えたとき\nAIに何かを調べてもらって、「該当する記録はありません」と返ってきたとします。 このとき、本当に「無い」のでしょうか。それとも、AIが「調べられなかっただけ」なのでしょうか。\nこの2つは、まったく違う出来事です。ところが今、世界中の多くの仕組みが、この2つを取り違えています。私はそれがどれくらい起きているかを実際に測ってみたので、その話を書きます。専門用語はできる...",
+      "published": "2026-08-20T10:02:29Z",
+      "description": "結論 / TL;DR\n複数の LLM プロバイダを 1 つのインタフェースで束ねる薄い層を入れました。動機は「ベンダーロックインの回避」でしたが、実際に効いたのは別の 2 つでした。\n\n\n可用性: プロバイダ側が 5xx を返しても、別プロバイダに落として機能ごと止めない\n\nコスト: 「どの機能にどのモデルを使うか」を設定で切り替えられる\n\nそして、やってみて分かった一番大事な設計指針は 「抽象化...",
       "category": "AI・技術",
       "rss_category": "",
       "image_url": ""
     },
     {
-      "title": "なぜ、AIがどれほど発展しても人間が勉強しなくてもよくはならないのか？",
-      "url": "https://zenn.dev/pdfractal/articles/c2b8332f167351",
+      "title": "システムプロンプトを80%消したら賢くなった — Claude Code 作者 Boris Cherny の回を要点解説",
+      "url": "https://zenn.dev/talks_tldr_jp/articles/tldr24-cherny-summary",
       "site": "Zenn(LLM)",
-      "published": "2026-08-20T14:54:43Z",
-      "description": "はじめに\n生成AIが急速に発展すると、「これからは人間が勉強する必要はなくなる」という議論が必ず出てきます。分からないことはAIに聞けばよく、文章もプログラムもAIが作り、専門的な判断についてもAIが助言してくれるのであれば、人間がわざわざ知識を身につける意味は薄れるという考え方です。しかし、ここでは「AIが人間の代わりに知的作業を行えること」と「人間自身が学習しなくてよくなること」が混同されてい...",
+      "published": "2026-08-20T09:00:09Z",
+      "description": "この記事について\n!\n本記事は Boris Cherny（Claude Code 作者 / Anthropic）が Y Combinator Startup School 2026 で語った内容の紹介と論評を目的としています。発言の要点を筆者が抽出・整理したもので、対談の網羅でも代替でもありません。全体の文脈は必ず元動画でご確認ください。翻訳全文の掲載は行っていません。\n\nClaude Code ...",
       "category": "AI・技術",
       "rss_category": "",
       "image_url": ""
