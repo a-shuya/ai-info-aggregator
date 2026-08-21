@@ -1,7 +1,7 @@
 {
   "site": "Zenn(LLM)",
-  "last_updated": "2026-08-21T06:03:05.485133",
-  "total_articles": 5524,
+  "last_updated": "2026-08-21T07:05:22.072798",
+  "total_articles": 5519,
   "articles": [
     {
       "title": "Structured Outputs のスキーマには、書いても効かない制約がある — それでも全部書き、保証はコードに置く",
@@ -54,71 +54,21 @@
       "image_url": ""
     },
     {
-      "title": "【最速検証】Qwen3.8-27BをLlama.cppで動かす！16GB環境で自作Agentを完全自律実行させてみた",
-      "url": "https://zenn.dev/lumichy/articles/qwen38-27b-llamacpp-lumichy-agent-eval-2026",
-      "site": "Zenn(LLM)",
-      "published": "2026-08-20T21:37:38Z",
-      "description": "オープンソースLLMの進化スピードが凄まじいことになっています。2026年8月中旬、Alibabaから電撃リリースされた Qwen3.8-27B は、「トップクラスの閉源モデルに匹敵する性能を持ちながら、最低8GB程度のVRAMから動作可能」として、ローカルLLMコミュニティで一気に注目の的となりました。\n27Bというパラメータ規模でありながら、量子化によって民生用GPU（VRAM 16GB環境な...",
-      "category": "AI・技術",
-      "rss_category": "",
-      "image_url": ""
-    },
-    {
-      "title": "P100向けにllama.cppをビルド",
-      "url": "https://zenn.dev/ibuky/articles/b89bbba9372f4d",
-      "site": "Zenn(LLM)",
-      "published": "2026-08-20T21:13:14Z",
-      "description": "とりあえずメモ\n# 必要なツールをインストール\n# 特にopensslはhuggingfaceから直pullする場合に必須\nsudo apt-get install pciutils build-essential cmake curl libcurl4-openssl-dev -y\n\n# リポジトリをクローン\ngit clone https://github.com/ggml-org/llama...",
-      "category": "AI・技術",
-      "rss_category": "",
-      "image_url": ""
-    },
-    {
-      "title": "P100 x2で Qwen3.8:27b を Ollamaで動かすとどうなるか",
-      "url": "https://zenn.dev/ibuky/articles/e00b7e5b22531b",
-      "site": "Zenn(LLM)",
-      "published": "2026-08-20T20:47:57Z",
-      "description": "インストール\n❯ curl -fsSL https://ollama.com/install.sh | sh\n\n❯ ollama -v\nollama version is 0.32.15\n\n モデルの取得\nhttps://ollama.com/library\nollama pull qwen3.8:27b\n\nここでrunとするとpull完了と同時に起動してCPU RAMの方を占用しようとしてハング...",
-      "category": "AI・技術",
-      "rss_category": "",
-      "image_url": ""
-    },
-    {
-      "title": "P100サーバー nvidia-smi",
-      "url": "https://zenn.dev/ibuky/articles/2ee9ed7b2ddb4b",
-      "site": "Zenn(LLM)",
-      "published": "2026-08-20T20:16:57Z",
-      "description": "現在の実行結果\n❯ nvidia-smi\n+-----------------------------------------------------------------------------------------+\n| NVIDIA-SMI 580.173.02             Driver Version: 580.173.02     CUDA Version: 13.0  ...",
-      "category": "AI・技術",
-      "rss_category": "",
-      "image_url": ""
-    },
-    {
-      "title": "P100 x2 LLMサーバー",
-      "url": "https://zenn.dev/ibuky/articles/2ce9282ea37122",
-      "site": "Zenn(LLM)",
-      "published": "2026-08-20T19:31:17Z",
-      "description": "Logical Hardwares\n\n\n\nItem\nProduct\nRemark\n\n\n\n\nMotherBoard\nASUS X99-A\nREV 1.0.2\n\n\nCPU\nIntel Core i7-5960X\n\n\n\nGPU 1\nNVIDIA GeForce GTX 1060 6GB\n画面出力用\n\n\nGPU 2\nNVIDIA Tesla P100 PCIe 16GB\nPCIe &gt; CPU電源変換...",
-      "category": "AI・技術",
-      "rss_category": "",
-      "image_url": ""
-    },
-    {
-      "title": "# MAS AXIOMとCapsule技術で実現する「論点整合性」と「制約技術」",
-      "url": "https://zenn.dev/void09/articles/3db34b2f068ae1",
-      "site": "Zenn(LLM)",
-      "published": "2026-08-20T15:40:24Z",
-      "description": "MAS AXIOMとCapsule技術で実現する「論点整合性」と「制約技術」\n\n はじめに\n一般的なマルチエージェントシステム（MAS）は、\n\n複数のLLMに推論させる\n異なる意見を出させる\n相互にレビューさせる\n最終的な回答を生成する\n\nという構成が一般的です。\nこれは非常に強力ですが、ひとつ問題があります。\n「複数のLLMが同じ方向に間違えた場合、それをどう検出するのか？」\nそしてもうひとつ。...",
-      "category": "AI・技術",
-      "rss_category": "",
-      "image_url": ""
-    },
-    {
       "title": "タスク41件をAIループに任せたら、詰まっていたのは実装より判断だった",
       "url": "https://zenn.dev/shimo4228/articles/ai-task-loop-judge-bottleneck",
       "site": "Zenn(LLM)",
       "published": "2026-08-20T10:23:12Z",
       "description": "タスク台帳の下のほう、もう何週間もスクロールして見ていない領域はありませんか。\n私の環境には 2 つのリポジトリ合計で 41 件のタスクが眠っていました。AI エージェントは毎日使っているのに、台帳は減りません。\nある朝、自作の「着手可能なタスクを一覧する」コマンドを叩いたら、答えは空でした。\npython3 ~/.claude/scripts/claims.py ready\n# （出力なし）\n4...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "LLM プロバイダを抽象化したら、効いたのは「乗り換えの自由」じゃなかった",
+      "url": "https://zenn.dev/box2box/articles/multi-llm-provider-abstraction",
+      "site": "Zenn(LLM)",
+      "published": "2026-08-20T10:02:29Z",
+      "description": "結論 / TL;DR\n複数の LLM プロバイダを 1 つのインタフェースで束ねる薄い層を入れました。動機は「ベンダーロックインの回避」でしたが、実際に効いたのは別の 2 つでした。\n\n\n可用性: プロバイダ側が 5xx を返しても、別プロバイダに落として機能ごと止めない\n\nコスト: 「どの機能にどのモデルを使うか」を設定で切り替えられる\n\nそして、やってみて分かった一番大事な設計指針は 「抽象化...",
       "category": "AI・技術",
       "rss_category": "",
       "image_url": ""

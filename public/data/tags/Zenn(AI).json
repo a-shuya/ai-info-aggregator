@@ -1,7 +1,7 @@
 {
   "site": "Zenn(AI)",
-  "last_updated": "2026-08-21T06:03:05.485133",
-  "total_articles": 12825,
+  "last_updated": "2026-08-21T07:05:22.072798",
+  "total_articles": 12830,
   "articles": [
     {
       "title": "同じコードレビューを5つのLLMに投げてみた Part 2——一番安いモデルが一番危険だった",
@@ -224,6 +224,46 @@
       "image_url": ""
     },
     {
+      "title": "P100向けにllama.cppをビルド",
+      "url": "https://zenn.dev/ibuky/articles/b89bbba9372f4d",
+      "site": "Zenn(AI)",
+      "published": "2026-08-20T21:13:14Z",
+      "description": "とりあえずメモ\n# 必要なツールをインストール\n# 特にopensslはhuggingfaceから直pullする場合に必須\nsudo apt-get install pciutils build-essential cmake curl libcurl4-openssl-dev -y\n\n# リポジトリをクローン\ngit clone https://github.com/ggml-org/llama...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "P100 x2で Qwen3.8:27b を Ollamaで動かすとどうなるか",
+      "url": "https://zenn.dev/ibuky/articles/e00b7e5b22531b",
+      "site": "Zenn(AI)",
+      "published": "2026-08-20T20:47:57Z",
+      "description": "インストール\n❯ curl -fsSL https://ollama.com/install.sh | sh\n\n❯ ollama -v\nollama version is 0.32.15\n\n モデルの取得\nhttps://ollama.com/library\nollama pull qwen3.8:27b\n\nここでrunとするとpull完了と同時に起動してCPU RAMの方を占用しようとしてハング...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "P100サーバー nvidia-smi",
+      "url": "https://zenn.dev/ibuky/articles/2ee9ed7b2ddb4b",
+      "site": "Zenn(AI)",
+      "published": "2026-08-20T20:16:57Z",
+      "description": "現在の実行結果\n❯ nvidia-smi\n+-----------------------------------------------------------------------------------------+\n| NVIDIA-SMI 580.173.02             Driver Version: 580.173.02     CUDA Version: 13.0  ...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "P100 x2 LLMサーバー",
+      "url": "https://zenn.dev/ibuky/articles/2ce9282ea37122",
+      "site": "Zenn(AI)",
+      "published": "2026-08-20T19:31:17Z",
+      "description": "Logical Hardwares\n\n\n\nItem\nProduct\nRemark\n\n\n\n\nMotherBoard\nASUS X99-A\nREV 1.0.2\n\n\nCPU\nIntel Core i7-5960X\n\n\n\nGPU 1\nNVIDIA GeForce GTX 1060 6GB\n画面出力用\n\n\nGPU 2\nNVIDIA Tesla P100 PCIe 16GB\nPCIe &gt; CPU電源変換...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
       "title": "Claude Codeのsubagentを並列でgit操作させたら、コミットが混ざった話",
       "url": "https://zenn.dev/playpark/articles/claude-code-subagent-parallel-git-isolation",
       "site": "Zenn(AI)",
@@ -249,6 +289,16 @@
       "site": "Zenn(AI)",
       "published": "2026-08-20T18:02:02Z",
       "description": "はじめに\nClaude Designで作った本棚アプリ「ヨミチ」のプロトタイプを、Claude Codeとの協働でWebサービスとして公開しました。\nhttps://yomichi-app.web.app/u/unsoluble-sugar\n本記事は、認証・クラウド同期・他ユーザー公開・PWA対応までを進めた開発記録です。\n用語メモ：Claude Design\nAnthropicが提供するデザイン...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "# MAS AXIOMとCapsule技術で実現する「論点整合性」と「制約技術」",
+      "url": "https://zenn.dev/void09/articles/3db34b2f068ae1",
+      "site": "Zenn(AI)",
+      "published": "2026-08-20T15:40:24Z",
+      "description": "MAS AXIOMとCapsule技術で実現する「論点整合性」と「制約技術」\n\n はじめに\n一般的なマルチエージェントシステム（MAS）は、\n\n複数のLLMに推論させる\n異なる意見を出させる\n相互にレビューさせる\n最終的な回答を生成する\n\nという構成が一般的です。\nこれは非常に強力ですが、ひとつ問題があります。\n「複数のLLMが同じ方向に間違えた場合、それをどう検出するのか？」\nそしてもうひとつ。...",
       "category": "AI・技術",
       "rss_category": "",
       "image_url": ""
