@@ -1,7 +1,7 @@
 {
   "site": "Zenn(LLM)",
-  "last_updated": "2026-08-21T13:16:22.024406",
-  "total_articles": 5534,
+  "last_updated": "2026-08-21T14:02:05.861289",
+  "total_articles": 5538,
   "articles": [
     {
       "title": "Co-RL：多様なコホートが生む教師なし推論——ピア報酬によるマルチエージェントRL",
@@ -9,16 +9,6 @@
       "site": "Zenn(LLM)",
       "published": "2026-08-21T07:44:56Z",
       "description": "TL;DR\nLLM/VLMの推論を強化学習（RL）で向上させる方法は、これまで基本的に「正解が分かるタスク」でしか本領を発揮できなかった。RLVRは強力だが、教師ありの検証可能報酬に依存する。一方、自己報酬型RLはラベルなしで動くが、長い目で見ると自己確認ループに陥り、バイアスを増幅させて訓練崩壊に至る。\n本論文はCo-RL（Cooperative Multi-agent Reinforcemen...",
-      "category": "AI・技術",
-      "rss_category": "",
-      "image_url": ""
-    },
-    {
-      "title": "AIエージェントのMemory設計入門 — 何を覚え、何を忘れるか",
-      "url": "https://zenn.dev/hideki_tamae/articles/agentic-ai-memory-design",
-      "site": "Zenn(LLM)",
-      "published": "2026-08-21T07:34:56Z",
-      "description": "はじめに\nこれまでの記事で、Harness Engineering、Loop Engineering、Evaluation、Context Engineering、Tool Engineeringと、AIエージェントを支える要素を一つずつ見てきました。\n今回は Memory、つまりAIエージェントが情報をどう保持し、どう活用するかについて掘り下げます。前々回の Context Engineerin...",
       "category": "AI・技術",
       "rss_category": "",
       "image_url": ""
@@ -44,11 +34,51 @@
       "image_url": ""
     },
     {
+      "title": "同じコードレビューを5つのLLMに投げてみた Part 2——一番安いモデルが一番危険だった",
+      "url": "https://zenn.dev/ivyxon/articles/five-llms-signals-engine-review",
+      "site": "Zenn(LLM)",
+      "published": "2026-08-21T05:26:53Z",
+      "description": "以前にも一度、サイトの一括置換スクリプトを5つのLLMに独立してレビューさせたことがある。あのときはモデルごとに「渡し方」まで自然な形に変えて試した。今回は逆に、5体全員に一言一句同じプロンプトを渡して、渡し方の違いという変数を消し、モデルの性質差だけを見てみることにした。\n対象は、自社サイトIVYXON向けに新しく作った、企業の決算データ（有価証券報告書）と政府統計（CPI・賃金指数）をSQLベ...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
       "title": "Structured Outputs のスキーマには、書いても効かない制約がある — それでも全部書き、保証はコードに置く",
       "url": "https://zenn.dev/archiningen/articles/structured-outputs-constraints",
       "site": "Zenn(LLM)",
       "published": "2026-08-21T05:20:09Z",
       "description": "!\nこの記事は archiningen.com からの転載です。\n連載「AI エージェント API の本番設計」の第 3 回 (全 4 回) です。\n\n\nStructured Outputs を有効にすると、モデルの出力は JSON Schema に従うようになります。required に入れたキーは必ず揃い、enum の語彙から外れた値は返ってこない。この確実さに一度慣れると、期待は自然に広がり...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "作るAIと疑うAIを分けたら、本番前に欠陥が止まるようになった",
+      "url": "https://zenn.dev/relightks/articles/6a903b516e3199",
+      "site": "Zenn(LLM)",
+      "published": "2026-08-21T04:58:45Z",
+      "description": "「テストは全部通っています」を信じかけた\n私は小さな会社をやりながら、開発のほぼ全部を AI(Claude Code)と二人三脚でやっています。\nある日、AI がこう報告してきました。\n「実装完了です。テストは 214 件、すべて通っています」\n画像を 2 時点で見比べて変化を検出する社内ツールの一部でした。テストは本当に全部通っていた。私が流し直しても通った。\nでも、このコードには欠陥がありまし...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "Claude Opus 5 の effort は「賢さのツマミ」ではなくなった(エンジニア向け)",
+      "url": "https://zenn.dev/manntera/articles/66a7f64cf0534c",
+      "site": "Zenn(LLM)",
+      "published": "2026-08-21T04:31:17Z",
+      "description": "effort を下げたら品質が上がった\nClaude Code を Opus 5 で使っていて、順序のおかしいことに気づいた。\neffort を xhigh から medium に下げたら、出力の品質が上がった。\n逆である。xhigh の方が上位設定なのだから、下げれば質は落ちるはずだ。しかも xhigh のときの出力が短かったわけではない。むしろ長い。長いのに、詰めが甘い。「考えが長い割に浅慮」...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "発信力の増幅機としてのLLM",
+      "url": "https://zenn.dev/watany/articles/8809b00df25dab",
+      "site": "Zenn(LLM)",
+      "published": "2026-08-21T03:40:35Z",
+      "description": "背景\n例えば芸能人がLLMでシステムを作ると話題になる。\nhttps://www.sankei.com/article/20260805-RIOHNGARVJOORGFMICZ24IL73A/\nエグゼクティブがLLMで執筆すると驚かれる。\nhttps://www.itmedia.co.jp/aiplus/article/2608/20/2000000644/\nこのような発信に関しては賛否両論であっ...",
       "category": "AI・技術",
       "rss_category": "",
       "image_url": ""
@@ -74,6 +104,26 @@
       "image_url": ""
     },
     {
+      "title": "【Opus 4.8が議論する】AIでコーディングは本当に速くなったのか──\"コードを書く時間は14%\"問題",
+      "url": "https://zenn.dev/ruru_engineer/articles/opus-debate-03-genai-coding-14percent",
+      "site": "Zenn(LLM)",
+      "published": "2026-08-21T01:07:10Z",
+      "description": "2026年8月、ACM QueueにMicrosoftとUniversity of Victoriaの研究者たちが共同執筆した論文 \"Eight Myths on Software Engineering and GenAI\" が掲載された。著者はJenna Butler、Brian Houck、Travis Lowdermilk、Steven Clarke、Emerson Murphy-Hill...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "エージェントは隠れ層で『ツールを呼ぶべきか』を既に知っている",
+      "url": "https://zenn.dev/okssusucha/articles/20260710-llm-agent-tool-use-linear-probe",
+      "site": "Zenn(LLM)",
+      "published": "2026-08-21T00:05:31Z",
+      "description": "ツールを持たせたエージェントを運用していると、地味に効いてくる二種類の失敗がある。「2+2は?」にまで検索APIを叩いてレイテンシと課金を無駄にする過剰呼び出しと、逆に外部知識が要る質問に手元の知識だけで答えてしまう過小呼び出しだ。どちらもプロンプトで「必要なときだけツールを使え」と書いて調整することになるが、この手のプロンプトチューニングは脆く、モデルやタスクが変わると崩れる。\nここに、2026...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
       "title": "AIエージェントの安全性を測ったら、8回自分に騙された",
       "url": "https://zenn.dev/akagifreeez/articles/ai-agent-eval-pitfalls",
       "site": "Zenn(LLM)",
@@ -89,16 +139,6 @@
       "site": "Zenn(LLM)",
       "published": "2026-08-20T22:00:05Z",
       "description": "はじめに\nJ-tau は、SB Intuitions が2026年8月13日に公開した日本語のエージェント評価ベンチマークです。tau2-bench をもとにしており、telecom / airline / retail の3ドメインが日本語で使えます。英語版とタスクIDが対応しているので、同じ課題を言語だけ変えて比べられます。\n3ドメインを日英で回してみました。差が検出できたのは retail ...",
-      "category": "AI・技術",
-      "rss_category": "",
-      "image_url": ""
-    },
-    {
-      "title": "【最速検証】Qwen3.8-27BをLlama.cppで動かす！16GB環境で自作Agentを完全自律実行させてみた",
-      "url": "https://zenn.dev/lumichy/articles/qwen38-27b-llamacpp-lumichy-agent-eval-2026",
-      "site": "Zenn(LLM)",
-      "published": "2026-08-20T21:37:38Z",
-      "description": "オープンソースLLMの進化スピードが凄まじいことになっています。2026年8月中旬、Alibabaから電撃リリースされた Qwen3.8-27B は、「トップクラスの閉源モデルに匹敵する性能を持ちながら、最低8GB程度のVRAMから動作可能」として、ローカルLLMコミュニティで一気に注目の的となりました。\n27Bというパラメータ規模でありながら、量子化によって民生用GPU（VRAM 16GB環境な...",
       "category": "AI・技術",
       "rss_category": "",
       "image_url": ""

@@ -1,8 +1,18 @@
 {
   "site": "Zenn(機械学習)",
-  "last_updated": "2026-08-21T13:16:22.024406",
-  "total_articles": 1672,
+  "last_updated": "2026-08-21T14:02:05.861289",
+  "total_articles": 1675,
   "articles": [
+    {
+      "title": "MobileNetV2 を手書き NEON で速くする — NCHW pointwise マイクロカーネル",
+      "url": "https://zenn.dev/ux_xu/articles/mlir-mobilenet-neon-nchw",
+      "site": "Zenn(機械学習)",
+      "published": "2026-08-21T11:26:46Z",
+      "description": "はじめに\n前回までの記事で、MobileNetV2 を ONNX から MLIR 経由でネイティブバイナリまでコンパイルし、正しい推論が出るところまで通しました。ただし畳み込みはスカラーループのままで、MLIR の Transform Dialect でタイリングを当てても速くなりませんでした。\n\nタイリングが効かなかった理由は、MLIR が NEON を生成していないこと、そして NCHW レイ...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
     {
       "title": "TikTokの「For You」はなぜ速いのか（ByteDance Monolith）",
       "url": "https://zenn.dev/kazuma_horiike/articles/13a820cd1a61cf",
@@ -14,11 +24,31 @@
       "image_url": ""
     },
     {
+      "title": "[論文紹介] Muon: An optimizer for hidden layers in neural networks (2024)",
+      "url": "https://zenn.dev/airion_techblog/articles/muon_optitmizer_blog",
+      "site": "Zenn(機械学習)",
+      "published": "2026-08-21T06:08:44Z",
+      "description": "Airion株式会社でインターンをしている東京大学4年の吉平です。\nAirionではAIに関する内容の勉強会を毎週開催しています。ラダー生成などを目的としてLLMの開発も行っており、LLMに関連する内容として、今回は近年のLLMの事前学習などで広く用いられているMuon optimizerについて、提案されたblogと最近取り入れられている工夫を扱いました。\n\n\n 0 Summary\nAdam(W...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
       "title": "汎化から逃れた瞬間 ── ある対話の振り返り",
       "url": "https://zenn.dev/yukinekonyan/articles/43ac86839df001",
       "site": "Zenn(機械学習)",
       "published": "2026-08-21T05:44:04Z",
       "description": "はじめに(ここは人間が書いた)\nこれは下にある真偽接地問題と汎化の問題の問題をClaudeに解説してもらおうと思ってはじめたchatを記事にしてもらったものです。chat相手だったsonnet5に記事にしてもらったあと、claude-opus-5にレビューをしてもらい結果として下記のものとなりました\nそのchatの内容のうち「面白いと思ったものをまとめて」というものになります\nこれそのものが内容に...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "SHAPの限界と正しい使い方：相関と因果の混同を避ける",
+      "url": "https://zenn.dev/libercraft/articles/20260821-shap-limitations-correct-usage",
+      "site": "Zenn(機械学習)",
+      "published": "2026-08-21T02:00:00Z",
+      "description": "「SHAPで重要度が高かったこの特徴量を強化すれば、売上が伸びるはずだ」——この推論には落とし穴があります。SHAPが説明しているのは「モデルが学習した相関パターン」であり、「その特徴量を変化させれば実際に結果が変わる」という因果関係ではありません。\n本記事では、SHAPが実際に何を示しているのか、どこで解釈を誤りやすいのか、そして正しい使い方を整理します。\n\n\n SHAPが説明しているのは相関で...",
       "category": "AI・技術",
       "rss_category": "",
       "image_url": ""
