@@ -1,6 +1,6 @@
 {
   "site": "Zenn(Python)",
-  "last_updated": "2026-08-21T12:16:40.106703",
+  "last_updated": "2026-08-21T13:16:22.024406",
   "total_articles": 5889,
   "articles": [
     {
@@ -29,6 +29,16 @@
       "site": "Zenn(Python)",
       "published": "2026-08-21T03:08:41Z",
       "description": "はじめに\n2026 年 8 月 4 日に GA した Web Search on Amazon Bedrock は、リリース時点では検索対象が Amazon の管理する Web スナップショットに限られていました。external_web_access というパラメータ自体は当初から定義されていたものの、ライブ Web 取得は将来のアップデートで有効化予定とされていました。\n8 月 19 日、その...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "SHAPの限界と正しい使い方：相関と因果の混同を避ける",
+      "url": "https://zenn.dev/libercraft/articles/20260821-shap-limitations-correct-usage",
+      "site": "Zenn(Python)",
+      "published": "2026-08-21T02:00:00Z",
+      "description": "「SHAPで重要度が高かったこの特徴量を強化すれば、売上が伸びるはずだ」——この推論には落とし穴があります。SHAPが説明しているのは「モデルが学習した相関パターン」であり、「その特徴量を変化させれば実際に結果が変わる」という因果関係ではありません。\n本記事では、SHAPが実際に何を示しているのか、どこで解釈を誤りやすいのか、そして正しい使い方を整理します。\n\n\n SHAPが説明しているのは相関で...",
       "category": "開発",
       "rss_category": "",
       "image_url": ""
@@ -64,21 +74,21 @@
       "image_url": ""
     },
     {
-      "title": "常時録音を15,000件ためてしまった話 — 8割が無音だった前提でローカルWhisperに流す",
-      "url": "https://zenn.dev/answer_philo/articles/always-on-recording-whisper",
+      "title": "azure-ai-projects 2.5.0でhttpxが消えた — 旧版ピンでも壊れる",
+      "url": "https://zenn.dev/kazu_aiengineer/articles/azure-ai-projects-openai3-httpx2",
       "site": "Zenn(Python)",
-      "published": "2026-08-20T22:30:05Z",
-      "description": "15,000件たまった\n手のひらサイズの機械に、常時録音の機能をつけた。AIの相棒を持ち歩くための器で、そばにある間ずっと音を拾って、あとから文字にする、という使い方だ。\nしばらく動かして、溜まったwavファイルを数えたら 14,978件 あった。ざっくり15,000件だ。\n最初は1時間ごとにクラウドの音声認識APIへ投げる設計にしていた。試算したら 1日あたり20ドルくらい になることが分かって...",
+      "published": "2026-08-20T23:08:44Z",
+      "description": "Azure AI Foundry の Python SDK である azure-ai-projects の 2.5.0 が、日本時間の 2026-08-21 早朝に出た。changelog の先頭は機能追加ではなく依存関係の話で、これが今回いちばん実務に効く。\n\n\nopenai&gt;=3.0.0 が必須になった。openai 3系は HTTP クライアントを httpx から httpx2 に載...",
       "category": "開発",
       "rss_category": "",
       "image_url": ""
     },
     {
-      "title": "【最速検証】Qwen3.8-27BをLlama.cppで動かす！16GB環境で自作Agentを完全自律実行させてみた",
-      "url": "https://zenn.dev/lumichy/articles/qwen38-27b-llamacpp-lumichy-agent-eval-2026",
+      "title": "常時録音を15,000件ためてしまった話 — 8割が無音だった前提でローカルWhisperに流す",
+      "url": "https://zenn.dev/answer_philo/articles/always-on-recording-whisper",
       "site": "Zenn(Python)",
-      "published": "2026-08-20T21:37:38Z",
-      "description": "オープンソースLLMの進化スピードが凄まじいことになっています。2026年8月中旬、Alibabaから電撃リリースされた Qwen3.8-27B は、「トップクラスの閉源モデルに匹敵する性能を持ちながら、最低8GB程度のVRAMから動作可能」として、ローカルLLMコミュニティで一気に注目の的となりました。\n27Bというパラメータ規模でありながら、量子化によって民生用GPU（VRAM 16GB環境な...",
+      "published": "2026-08-20T22:30:05Z",
+      "description": "15,000件たまった\n手のひらサイズの機械に、常時録音の機能をつけた。AIの相棒を持ち歩くための器で、そばにある間ずっと音を拾って、あとから文字にする、という使い方だ。\nしばらく動かして、溜まったwavファイルを数えたら 14,978件 あった。ざっくり15,000件だ。\n最初は1時間ごとにクラウドの音声認識APIへ投げる設計にしていた。試算したら 1日あたり20ドルくらい になることが分かって...",
       "category": "開発",
       "rss_category": "",
       "image_url": ""
@@ -149,16 +159,6 @@
       "site": "Zenn(Python)",
       "published": "2026-08-20T10:32:07Z",
       "description": "私は毎朝、iA Writer でモーニングページ（その日の思考をただ書き出す日記のようなもの）を書いています。気づけば3年、600件を超えていました。\nところが、書いた文章はほとんど読み返していませんでした。iA Writer は書くのには最高ですが、「あの時どう考えていたか」を横断的にたどる用途には向いていません。全文検索はできても、テーマでまとまらないし、関連する日を並べてくれるわけでもありま...",
-      "category": "開発",
-      "rss_category": "",
-      "image_url": ""
-    },
-    {
-      "title": "LLM プロバイダを抽象化したら、効いたのは「乗り換えの自由」じゃなかった",
-      "url": "https://zenn.dev/box2box/articles/multi-llm-provider-abstraction",
-      "site": "Zenn(Python)",
-      "published": "2026-08-20T10:02:29Z",
-      "description": "結論 / TL;DR\n複数の LLM プロバイダを 1 つのインタフェースで束ねる薄い層を入れました。動機は「ベンダーロックインの回避」でしたが、実際に効いたのは別の 2 つでした。\n\n\n可用性: プロバイダ側が 5xx を返しても、別プロバイダに落として機能ごと止めない\n\nコスト: 「どの機能にどのモデルを使うか」を設定で切り替えられる\n\nそして、やってみて分かった一番大事な設計指針は 「抽象化...",
       "category": "開発",
       "rss_category": "",
       "image_url": ""
