@@ -1,7 +1,7 @@
 {
   "site": "Zenn(Python)",
-  "last_updated": "2026-08-22T09:30:40.622052",
-  "total_articles": 5915,
+  "last_updated": "2026-08-22T09:54:20.068479",
+  "total_articles": 5912,
   "articles": [
     {
       "title": "半導体ダッシュボードを1時間おきに自動デプロイするCIを組んだら、2日分のデータを4回巻き戻していたのは自分だった",
@@ -29,16 +29,6 @@
       "site": "Zenn(Python)",
       "published": "2026-08-22T07:30:46Z",
       "description": "楽譜PDFを解析して、シャープやフラットが付く音へ自動的に印を付けるツールを開発しています。\n開発を始めた当初は、楽譜PDFを画像として認識する、いわゆるOMR（Optical Music Recognition）が必要だと思っていました。\nところが、MuseScoreやDoricoから出力されたPDFを調べてみると、音符が画像ではなく、フォントの文字やベクター図形として残っている場合があります。...",
-      "category": "開発",
-      "rss_category": "",
-      "image_url": ""
-    },
-    {
-      "title": "LLMに損切り価格を出させない設計 — Structured Output と数理レールの分担",
-      "url": "https://zenn.dev/ozapon/articles/gmo-fx-llm-sl-python",
-      "site": "Zenn(Python)",
-      "published": "2026-08-22T07:11:56Z",
-      "description": "TL;DR\n\nGMOコインFX の予約型自動売買(AWS Lambda + Python)で、損切り価格・利確価格・ロットを LLM に出させず、Python が式で算出する設計にしました\n損切り価格は当初から Python です。LLM に残したのは方向・エントリー価格と、損切り幅の広さを選ぶ離散ノブ(狭い / 広い)まで。利確価格も Structured Output のスキーマから消し、損切...",
       "category": "開発",
       "rss_category": "",
       "image_url": ""
@@ -88,7 +78,7 @@
       "url": "https://zenn.dev/qwerewq/articles/43ddfb9847cfb1",
       "site": "Zenn(Python)",
       "published": "2026-08-22T03:30:53Z",
-      "description": "はじめに\nAD変換やΔΣ変調では、量子化誤差を白色雑音として扱うことが多い。\nただ、量子化誤差は入力によって決まるので、最初からランダムな雑音というわけではない。\n入力が大きく変化していても、量子化誤差に規則性が残ることはある。また、誤差の値が一様に分布していることと、周波数スペクトルが平らであることも同じではない。\n一方で、実際にはあらゆる入力を一意に想定することはできない。そこで入力に依存する...",
+      "description": "はじめに\nAD変換やΔΣ変調の説明では、量子化誤差を白色雑音として扱うことが多い。\n例えば、次のような説明を見かける。\n\n量子化誤差は入力信号に依存する。しかし、入力が十分に変化すれば誤差はランダムになるため、白色雑音として扱える。\n\nこの説明は計算を簡単にするうえでは便利だが、途中でいくつかの話が混ざっている。\n入力が変化することと、誤差がランダムになることは同じではない。\n誤差の値が均等に分布...",
       "category": "開発",
       "rss_category": "",
       "image_url": ""
@@ -109,16 +99,6 @@
       "site": "Zenn(Python)",
       "published": "2026-08-22T01:39:43Z",
       "description": "FXのバックテストを行う場合、多くの人はMT5からヒストリカルデータを取得していると思います。\nしかし、MT5にはいくつか気になる点があります。\n\nブローカーによって取得できる期間が異なる\nデータ品質がブローカー依存\nMT5が必要\n他の環境へ移行しづらい\n\nそこで、Dukascopyから直接Tickデータを取得し、バックテスト用CSVへ変換するツールを作成しました。\nこのツールは環境構築不要ですぐ...",
-      "category": "開発",
-      "rss_category": "",
-      "image_url": ""
-    },
-    {
-      "title": "WFOとは？バックテストとの違いと必要な理由を初心者向けに解説",
-      "url": "https://zenn.dev/hiro_algo/articles/2127ac45fbf5de",
-      "site": "Zenn(Python)",
-      "published": "2026-08-22T01:39:43Z",
-      "description": "FXや株式の自動売買を開発していると、バックテストでは利益が出るのに、実運用では勝てないことがあります。\n原因の一つが、過去データに最適化しすぎる「過剰最適化（オーバーフィッティング）」です。この問題を発見するためによく使われる評価手法が、Walk Forward Optimization（WFO）です。\nこの記事では、初めてWFOを知る人に向けて、バックテストとの違い、WFOが必要な理由、Pyt...",
       "category": "開発",
       "rss_category": "",
       "image_url": ""
@@ -159,16 +139,6 @@
       "site": "Zenn(Python)",
       "published": "2026-08-21T23:00:05Z",
       "description": "導入\nVPN経由で作業しているとき、VPN接続が何かの拍子に切れると、それまで隠れていた通信が\n一瞬で「VPN無しの生の回線」に切り替わってしまうことがあります。これに気づかず\n作業を続けてしまう事故が怖くて、見張り役を自作することにしました。\n\n 目的\n一言でいうと、VPNが切れた瞬間に、ネットワーク通信そのものを強制的に止める\nためのツールです。身元を隠す必要がある作業中に、VPN切断に気づか...",
-      "category": "開発",
-      "rss_category": "",
-      "image_url": ""
-    },
-    {
-      "title": "/api/messages が404になった — Foundry Activityホストの破壊的変更",
-      "url": "https://zenn.dev/kazu_aiengineer/articles/foundry-activity-host-api-messages-404",
-      "site": "Zenn(Python)",
-      "published": "2026-08-21T22:42:56Z",
-      "description": "Microsoft Foundry の Hosted Agents に Teams / Microsoft 365 向けのエージェントを載せるための Python パッケージ azure-ai-agentserver-activity が、日本時間の 2026-08-22 未明に 1.0.0b3 になった。中身は小さいが、片方は黙って踏むと確実に事故る類のものだった。\n\n\nPOST /api/me...",
       "category": "開発",
       "rss_category": "",
       "image_url": ""
