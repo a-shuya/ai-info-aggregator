@@ -1,78 +1,8 @@
 {
   "site": "Zenn(LLM)",
-  "last_updated": "2026-08-22T20:50:53.528073",
-  "total_articles": 5561,
+  "last_updated": "2026-08-22T21:12:14.500418",
+  "total_articles": 5557,
   "articles": [
-    {
-      "title": "AIエージェントへの「委譲」はタダではない — 1週間分の実測で損益分岐を出した",
-      "url": "https://zenn.dev/ace_toshi/articles/claude-code-agent-delegation-cost",
-      "site": "Zenn(LLM)",
-      "published": "2026-08-22T16:54:31Z",
-      "description": "この記事の主張\nClaude Code から別のCLIエージェント（Gemini Antigravity）へ力仕事を委譲する構成を組み、1週間運用した。狙いは「Claudeの週間トークン制限を温存する」ことである。\n結果として得られた結論は、当初の期待とはかなり違った。\n\n委譲には固定費がある。1回あたり Claude側 75〜90k tokens ＋ 起動9〜12秒 ＋ 委譲先 最低20k to...",
-      "category": "AI・技術",
-      "rss_category": "",
-      "image_url": ""
-    },
-    {
-      "title": "CPUのみで極力高速にローカルLLMする",
-      "url": "https://zenn.dev/ashidan/articles/tech_llm_cpu_b",
-      "site": "Zenn(LLM)",
-      "published": "2026-08-22T16:48:10Z",
-      "description": "Windowsかつ、CPUのみでローカルLLMしたい\nRAMが16GB以上ある\n自前ビルドが必要でも性能を上げたい\n\nというニッチな需要を満たす記事です。\n関連記事が CPUのみでローカルLLMする にあります。自前ビルドが不要なぶん少し楽です。\nなお、この記事は2026年8月23日の情報を元に書かれています。 ik_llama.cpp のオプション群は将来削除されうるので、適当にアレンジして下さ...",
-      "category": "AI・技術",
-      "rss_category": "",
-      "image_url": ""
-    },
-    {
-      "title": "運用初日、Slackに208件通知が飛んできた話 #4.5",
-      "url": "https://zenn.dev/katamarize/articles/step4-notification-two-lane",
-      "site": "Zenn(LLM)",
-      "published": "2026-08-22T15:32:22Z",
-      "description": "!\nローカルLLMで作る自分専用ニュースbot シリーズの番外編(4.5本目)です。この記事だけでも読めます。\n前: PythonからSlack Incoming Webhookで通知する\n\n\n この記事について\n前回はSlack通知を実装し、モック検証まで済ませて「あとはWebhookを設定するだけ」と書きました。この記事は、実際にWebhookを設定して動かした初日に起きたことと、その反省で入...",
-      "category": "AI・技術",
-      "rss_category": "",
-      "image_url": ""
-    },
-    {
-      "title": "PythonからSlack Incoming Webhookで通知する(再送できるキュー設計) #4",
-      "url": "https://zenn.dev/katamarize/articles/step4-slack-webhook",
-      "site": "Zenn(LLM)",
-      "published": "2026-08-22T15:31:44Z",
-      "description": "!\nローカルLLMで作る自分専用ニュースbot シリーズの4本目です。この記事だけでも読めます。\n前: 監視ソースをYAMLで管理し、クラッシュしても再開できるキューを作る\n次: 運用初日、Slackに208件通知が飛んできた話\n\n\n この記事について\n前回までで、RSS収集→差分検知→LLM分析のパイプラインが完成し、分析結果はSQLiteに溜まるようになりました。今回はその出口、Slack通知...",
-      "category": "AI・技術",
-      "rss_category": "",
-      "image_url": ""
-    },
-    {
-      "title": "なぜ、GPTのTerra以下、ClaudeのSonnet以下、Geminiの全部に価値が無いのか？",
-      "url": "https://zenn.dev/pdfractal/articles/55929755eb39c1",
-      "site": "Zenn(LLM)",
-      "published": "2026-08-22T15:08:55Z",
-      "description": "はじめに\n2026年現在、大規模言語モデルは露骨な階層商品になっています。OpenAIはGPT-5.6 Solを最上位、Terraを日常業務向けのバランス型、Lunaを高速・低価格モデルとして位置づけています。AnthropicもClaude Opusを上位に置き、Sonnetを価格と性能のバランスに優れたモデルとして提供しています。GoogleもGeminiのFlash系を速度と費用対効果に優れ...",
-      "category": "AI・技術",
-      "rss_category": "",
-      "image_url": ""
-    },
-    {
-      "title": "なぜ「AI が書いた」と知っただけで嫌になるのか",
-      "url": "https://zenn.dev/id774/articles/2728d3bc762ec1",
-      "site": "Zenn(LLM)",
-      "published": "2026-08-22T15:03:05Z",
-      "description": "「AI が書いた」と知った瞬間、文章の何が変わったのか\nある文章を読んで面白いと思った。その後で、「実はほぼ AI が書いていた」と知らされた途端、急に読む気が失せた。\nこの反応は珍しくない。しかし、ここには少し妙なところがある。開示の前後で、すでに読んだ文章の文字列は変わっていない。語彙も構成も結論も同じである。変わったのは、誰が、どの程度、その文章を作ったのかという情報だけである。\n2026 ...",
-      "category": "AI・技術",
-      "rss_category": "",
-      "image_url": ""
-    },
-    {
-      "title": "Claudeのテキスト透かし（ウォーターマーク）は何をしているのか ── サンプリングの仕組みから理解する",
-      "url": "https://zenn.dev/rinrin_ds_17/articles/bc093cfa3bdbd1",
-      "site": "Zenn(LLM)",
-      "published": "2026-08-22T14:02:40Z",
-      "description": "はじめに\n2026年8月14日、AnthropicがClaudeの出力テキストに透かし（ウォーターマーク）を入れると発表しました。これを受けて、Sebastian Raschka氏（『Build a Large Language Model From Scratch』の著者）が「How Claude Watermarks AI-Generated Text」という48分の解説動画＋スライドを公開し...",
-      "category": "AI・技術",
-      "rss_category": "",
-      "image_url": ""
-    },
     {
       "title": "Query-aware Compressionは本当に効く？BedrockでRAGのトークンとコストを実測",
       "url": "https://zenn.dev/kashiwabaray/articles/b9e86f3a564084",
@@ -89,6 +19,36 @@
       "site": "Zenn(LLM)",
       "published": "2026-08-22T08:02:43Z",
       "description": "Galah は LLM を使って HTTP リクエストへの応答を動的に生成するハニーポットだ。任意のパスへのリクエストに対して、それらしいレスポンス（ヘッダ・ボディ）を LLM に生成させる。手作業でアプリを模倣する従来型ハニーポットと違い、事前に想定していないパスへのアクセスにもそれらしく応答できるのが売りだが、これは「1リクエスト = 1回の LLM 推論」というアーキテクチャでもある。\n開発...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "llama.cppでQwen3.8:27bの思考グルグルをある程度削減",
+      "url": "https://zenn.dev/ibuky/articles/745131581b2fc9",
+      "site": "Zenn(LLM)",
+      "published": "2026-08-22T07:55:27Z",
+      "description": "詳細は追記します\nCUDA_VISIBLE_DEVICES=0,1 ./llama-cli --model ~/unsloth/Qwen3.8-27B-GGUF/Qwen3.8-27B-Q4_0.gguf --temp 1.0 --top-p 0.95 --top-k 20 --min-p 0.0 -ngl 999 --reasoning-effort low\n--reasoning-effort...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "RTX 5090でFreeTokenを試してみた。35Bでは不要、120B級MoEでは話が変わる",
+      "url": "https://zenn.dev/holy_fox/articles/53b82eed45f956",
+      "site": "Zenn(LLM)",
+      "published": "2026-08-22T07:44:27Z",
+      "description": "2026年8月22日時点のFreeToken 0.1.2を、RTX 5090 32GBとRAM 128GBのPCで試しました。\nFreeTokenは、Mixture-of-Experts（MoE）モデルのexpertをホストRAMへ置き、必要なexpertだけをGPUへキャッシュしながら推論するサービングエンジンです。狙いはvLLMやllama.cppを単純に高速化することではなく、VRAMに収ま...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "AGENTS.md と CLAUDE.md は解決規則が逆 — symlink する前に確認すること",
+      "url": "https://zenn.dev/tsutomusaito/articles/agents-md-claude-code-resolution",
+      "site": "Zenn(LLM)",
+      "published": "2026-08-22T07:43:33Z",
+      "description": "AGENTS.md を置いているリポジトリで Claude Code も使いたい。\n検索すると ln -s AGENTS.md CLAUDE.md が出てきて、実際これは公式が案内している手順です。\nただし、この1行で繋がるのはルートの1ファイルだけです。\nそして繋いだ先の Claude Code は、AGENTS.md とは逆の規則でファイルを解決します。\nモノレポで nested な AGEN...",
       "category": "AI・技術",
       "rss_category": "",
       "image_url": ""
