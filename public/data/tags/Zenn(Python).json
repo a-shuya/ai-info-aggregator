@@ -1,7 +1,7 @@
 {
   "site": "Zenn(Python)",
-  "last_updated": "2026-08-22T13:01:41.107398",
-  "total_articles": 5913,
+  "last_updated": "2026-08-22T13:42:35.927972",
+  "total_articles": 5914,
   "articles": [
     {
       "title": "半導体ダッシュボードを1時間おきに自動デプロイするCIを組んだら、2日分のデータを4回巻き戻していたのは自分だった",
@@ -34,16 +34,6 @@
       "image_url": ""
     },
     {
-      "title": "LLMに損切り価格を出させない設計 — Structured Output と数理レールの分担",
-      "url": "https://zenn.dev/ozapon/articles/gmo-fx-llm-sl-python",
-      "site": "Zenn(Python)",
-      "published": "2026-08-22T07:11:56Z",
-      "description": "TL;DR\n\nGMOコインFX の予約型自動売買(AWS Lambda + Python)で、損切り価格・利確価格・ロットを LLM に出させず、Python が式で算出する設計にしました\n損切り価格は当初から Python です。LLM に残したのは方向・エントリー価格と、損切り幅の広さを選ぶ離散ノブ(狭い / 広い)まで。利確価格も Structured Output のスキーマから消し、損切...",
-      "category": "開発",
-      "rss_category": "",
-      "image_url": ""
-    },
-    {
       "title": "絵文字Brainfuck「emoji_bf」で比べるMojo 1.0 / Rust / JavaScript / Pythonの実行速度",
       "url": "https://zenn.dev/eyeofjapetus/articles/emoji-bf-speed-mojo-rust-js-python",
       "site": "Zenn(Python)",
@@ -64,6 +54,16 @@
       "image_url": ""
     },
     {
+      "title": "Codexの505セッションを掘ったら、避けられたかもしれない再実行が370回見つかった",
+      "url": "https://zenn.dev/urario/articles/codex-repeated-retries",
+      "site": "Zenn(Python)",
+      "published": "2026-08-22T04:17:05Z",
+      "description": "「これ、前にも同じところでハマってなかった？」\nCodexを使っていて、何度かそう思うことがあった。\nたとえばGitを実行する。sandboxの制限で失敗する。権限を変更して同じコマンドを再実行すると成功する。ここまでは普通にある。\n気になったのは、別の日にもまた最初の実行方法から始めて、同じ理由で失敗していたことだ。\ngit fetch\n↓\nPermission denied\n↓\n実行条件を変更...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
       "title": "AIクローラーのUAは名乗るだけ — 検証済みだけ数えたら本物468件・偽装991件だった",
       "url": "https://zenn.dev/aulvem/articles/b16698e263f650",
       "site": "Zenn(Python)",
@@ -78,7 +78,7 @@
       "url": "https://zenn.dev/qwerewq/articles/43ddfb9847cfb1",
       "site": "Zenn(Python)",
       "published": "2026-08-22T03:30:53Z",
-      "description": "はじめに\nAD変換やΔΣ変調の説明では、量子化誤差を白色雑音として扱うことが多い。\n例えば、次のような説明を見かける。\n\n量子化誤差は入力信号に依存する。しかし、入力が十分に変化すれば誤差はランダムになるため、白色雑音として扱える。\n\nこの説明は計算を簡単にするうえでは便利だが、途中でいくつかの話が混ざっている。\n入力が変化することと、誤差がランダムになることは同じではない。\n誤差の値が均等に分布...",
+      "description": "はじめに\nAD変換やΔΣ変調では、量子化誤差を白色雑音として扱うことが多い。\nただ、量子化誤差は入力によって決まるので、最初からランダムな雑音というわけではない。\n入力が大きく変化していても、量子化誤差に規則性が残ることはある。また、誤差の値が一様に分布していることと、周波数スペクトルが平らであることも同じではない。\n一方で、実際にはあらゆる入力を一意に想定することはできない。そこで入力に依存する...",
       "category": "開発",
       "rss_category": "",
       "image_url": ""
@@ -139,6 +139,16 @@
       "site": "Zenn(Python)",
       "published": "2026-08-21T23:00:05Z",
       "description": "導入\nVPN経由で作業しているとき、VPN接続が何かの拍子に切れると、それまで隠れていた通信が\n一瞬で「VPN無しの生の回線」に切り替わってしまうことがあります。これに気づかず\n作業を続けてしまう事故が怖くて、見張り役を自作することにしました。\n\n 目的\n一言でいうと、VPNが切れた瞬間に、ネットワーク通信そのものを強制的に止める\nためのツールです。身元を隠す必要がある作業中に、VPN切断に気づか...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "/api/messages が404になった — Foundry Activityホストの破壊的変更",
+      "url": "https://zenn.dev/kazu_aiengineer/articles/foundry-activity-host-api-messages-404",
+      "site": "Zenn(Python)",
+      "published": "2026-08-21T22:42:56Z",
+      "description": "Microsoft Foundry の Hosted Agents に Teams / Microsoft 365 向けのエージェントを載せるための Python パッケージ azure-ai-agentserver-activity が、日本時間の 2026-08-22 未明に 1.0.0b3 になった。中身は小さいが、片方は黙って踏むと確実に事故る類のものだった。\n\n\nPOST /api/me...",
       "category": "開発",
       "rss_category": "",
       "image_url": ""
