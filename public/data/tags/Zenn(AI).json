@@ -1,7 +1,7 @@
 {
   "site": "Zenn(AI)",
-  "last_updated": "2026-08-22T10:27:42.175383",
-  "total_articles": 12876,
+  "last_updated": "2026-08-22T10:52:09.995856",
+  "total_articles": 12877,
   "articles": [
     {
       "title": "AIエージェント11体でブラウザゲームを作ったら、バグの大半が「書いたのに動いていない」だった",
@@ -94,41 +94,11 @@
       "image_url": ""
     },
     {
-      "title": "llama.cppでQwen3.8:27bの思考グルグルをある程度削減",
-      "url": "https://zenn.dev/ibuky/articles/745131581b2fc9",
-      "site": "Zenn(AI)",
-      "published": "2026-08-22T07:55:27Z",
-      "description": "詳細は追記します\nCUDA_VISIBLE_DEVICES=0,1 ./llama-cli --model ~/unsloth/Qwen3.8-27B-GGUF/Qwen3.8-27B-Q4_0.gguf --temp 1.0 --top-p 0.95 --top-k 20 --min-p 0.0 -ngl 999 --reasoning-effort low\n--reasoning-effort...",
-      "category": "AI・技術",
-      "rss_category": "",
-      "image_url": ""
-    },
-    {
       "title": "Proxmoxで構築するLLMサーバーのざっくりまとめ",
       "url": "https://zenn.dev/ibuky/articles/f7d4c2d5138171",
       "site": "Zenn(AI)",
       "published": "2026-08-22T07:51:47Z",
       "description": "環境構築時の不完全なメモ、history内容、実ファイルの内容からざっくりとした構築時の手順を再現しています。\n\n ハードウェア情報\nこちらの記事を参照\n\n BIOSの設定\nProxmoxのインストールやGPUのパススルー設定を行う前に、マザーボード（ASUS X99-A）のBIOSで以下の設定を済ませておきます。これを忘れるとVMからGPUが正常に認識されません。\n\n\n\n項目\n設定値\n備考\n\n\n...",
-      "category": "AI・技術",
-      "rss_category": "",
-      "image_url": ""
-    },
-    {
-      "title": "RTX 5090でFreeTokenを試してみた。35Bでは不要、120B級MoEでは話が変わる",
-      "url": "https://zenn.dev/holy_fox/articles/53b82eed45f956",
-      "site": "Zenn(AI)",
-      "published": "2026-08-22T07:44:27Z",
-      "description": "2026年8月22日時点のFreeToken 0.1.2を、RTX 5090 32GBとRAM 128GBのPCで試しました。\nFreeTokenは、Mixture-of-Experts（MoE）モデルのexpertをホストRAMへ置き、必要なexpertだけをGPUへキャッシュしながら推論するサービングエンジンです。狙いはvLLMやllama.cppを単純に高速化することではなく、VRAMに収ま...",
-      "category": "AI・技術",
-      "rss_category": "",
-      "image_url": ""
-    },
-    {
-      "title": "AGENTS.md と CLAUDE.md は解決規則が逆 — symlink する前に確認すること",
-      "url": "https://zenn.dev/tsutomusaito/articles/agents-md-claude-code-resolution",
-      "site": "Zenn(AI)",
-      "published": "2026-08-22T07:43:33Z",
-      "description": "AGENTS.md を置いているリポジトリで Claude Code も使いたい。\n検索すると ln -s AGENTS.md CLAUDE.md が出てきて、実際これは公式が案内している手順です。\nただし、この1行で繋がるのはルートの1ファイルだけです。\nそして繋いだ先の Claude Code は、AGENTS.md とは逆の規則でファイルを解決します。\nモノレポで nested な AGEN...",
       "category": "AI・技術",
       "rss_category": "",
       "image_url": ""
@@ -169,16 +139,6 @@
       "site": "Zenn(AI)",
       "published": "2026-08-22T06:43:39Z",
       "description": "私の仕事では、締切が同じでも「誰から頼まれたか」で順番が変わります。病院で事務をしています。\nAnythingsは、人との関係を自分の言葉で書いておくと、投げ込んだタスクをAIがそこへ振り分けて、順位まで付けるアプリです。\n個人の予定を55件移しました。英語化やエクスポート不在といった欠点は残っていますが、いまはこれを既定のタスク管理アプリにしています。\nこの記事は、それでも採用した理由と、サービ...",
-      "category": "AI・技術",
-      "rss_category": "",
-      "image_url": ""
-    },
-    {
-      "title": "LLM APIの費用はなぜ増える？コスト構造と最適化の基本",
-      "url": "https://zenn.dev/yhay81/articles/202608-llm-api-cost-guide-for-beginners",
-      "site": "Zenn(AI)",
-      "published": "2026-08-22T06:30:37Z",
-      "description": "生成AIを業務へ組み込むと、しばしば「思ったよりAPI費用が高い」という問題が起きます。そこで安いモデルへの\n変更を考えがちですが、LLMの費用はモデルの価格だけでは決まりません。\nAIへ送る文章が長い、一つの仕事で何度もAIを呼ぶ、失敗した処理を繰り返す。このような設計上の要因でも費用は\n増えます。反対に、安いモデルへ変更して再質問や人による修正が増えれば、APIの請求額が下がっても業務全体では...",
       "category": "AI・技術",
       "rss_category": "",
       "image_url": ""
@@ -294,6 +254,16 @@
       "image_url": ""
     },
     {
+      "title": "Grok 4.5はCursorの操作ログで訓練された、出力トークンが約4分の1になった",
+      "url": "https://zenn.dev/okssusucha/articles/20260711-grok-4-5-cursor-session-data-token-effici",
+      "site": "Zenn(AI)",
+      "published": "2026-08-22T00:07:56Z",
+      "description": "7月8日に出たGrok 4.5で、いちばん引っかかったのはベンチマークの数字ではなかった。訓練データの出どころだ。xAI（発表では SpaceXAI 名義）はこのモデルを Cursor と共同で訓練し、その材料に「数兆トークン規模の Cursor 上の操作データ」を使ったと明言している。GitHub に転がっている完成済みのコードではなく、開発者がエディタの中で実際にコードを書いていく過程そのもの...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
       "title": "「動く」と「解ける」は別物。AIエージェントに150問解かせて見つけた本当のバグたち",
       "url": "https://zenn.dev/sorapenguin/articles/ai-agent-qa-story-2026-08",
       "site": "Zenn(AI)",
@@ -354,6 +324,16 @@
       "image_url": ""
     },
     {
+      "title": "/api/messages が404になった — Foundry Activityホストの破壊的変更",
+      "url": "https://zenn.dev/kazu_aiengineer/articles/foundry-activity-host-api-messages-404",
+      "site": "Zenn(AI)",
+      "published": "2026-08-21T22:42:56Z",
+      "description": "Microsoft Foundry の Hosted Agents に Teams / Microsoft 365 向けのエージェントを載せるための Python パッケージ azure-ai-agentserver-activity が、日本時間の 2026-08-22 未明に 1.0.0b3 になった。中身は小さいが、片方は黙って踏むと確実に事故る類のものだった。\n\n\nPOST /api/me...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
       "title": "会社と個人のAIログイン混線、Chromeプロファイル分離の仕組みと限界",
       "url": "https://zenn.dev/every_ai_recipe/articles/chrome-profile-work-personal-split",
       "site": "Zenn(AI)",
@@ -374,11 +354,31 @@
       "image_url": ""
     },
     {
+      "title": "AXIOM-MAS v3.2.2 実験結果 — MASカーネルPrototypeの制御実験",
+      "url": "https://zenn.dev/void09/articles/aafa9f90377986",
+      "site": "Zenn(AI)",
+      "published": "2026-08-21T17:03:40Z",
+      "description": "はじめに\nAXIOM-MASは、LLMそのものを賢くするのではなく、LLMを交換可能な推論部品として扱い、その外側に制御カーネルを置くことを目的としたMAS Prototypeです。\n一般的なMASが「複数のLLMを協調させて答えを作る」方向に重点を置くのに対し、AXIOM-MASでは、\n\nAbsoluteAnchor / HashAによる不変座標\nHashBによる推論軌跡\nCapsuleによる状...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
       "title": "品質の高いコードには美学が宿る",
       "url": "https://zenn.dev/nyamerou/articles/cbe50d73611077",
       "site": "Zenn(AI)",
       "published": "2026-08-21T16:11:54Z",
       "description": "はじめに\n近年AIの性能向上は著しく、実務に耐えるレベルを持つコードの開発速度が劇的なまでになっています。これらのコードは皆似たように、長大で非常に詳細かつ丁寧なコメントが付されており、深い考察と精密なリスク評価がされた上で織り成されたような見た目をしています。\nしかし蓋を開けてみると、その品質は決して高いとは言えません。成果物全体を構成するコードの一つ一つはよくできていても、全体を俯瞰した時にそ...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "Gemini Sparkを触る勉強会をやってみて考えた、ノーコードAIエージェントとこれからのエンジニア",
+      "url": "https://zenn.dev/shu_kob/articles/53a468ddd1a707",
+      "site": "Zenn(AI)",
+      "published": "2026-08-21T15:21:57Z",
+      "description": "はじめに\n2026年8月21日(金)の19時から、「Gemini Sparkを触る会」という勉強会を個人主催で開催しました。\nhttps://genai-users.connpass.com/event/404236/\n事前資料は作らず、公式ドキュメントを画面に出しながらライブで触る、という形式です。YouTube Liveで配信したのでアーカイブも残っています。\nこの記事では、勉強会でGemin...",
       "category": "AI・技術",
       "rss_category": "",
       "image_url": ""
@@ -409,6 +409,16 @@
       "site": "Zenn(AI)",
       "published": "2026-08-21T13:20:05Z",
       "description": "次のセッションに仕事を引き継ぐとき、あなたは何を渡していますか。\n要点をまとめた引き継ぎメモ、決定事項の表、検証済みの事実リスト。丁寧に作るほど、受け取った側は迷わず動けるはずです。\n私は 2026 年 8 月 21 日に、それを 1 日で 2 回やりました。渡したのは 305 行の証拠台帳です。出てきた原稿は、テーマ判定・機械検査・判定器・4 本のレビューをすべて通過して、読んだ私が 2 本とも...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "M365 Copilot があれば Claude Opus を追加料金なしで使える、定額利用の戦略を読み解く",
+      "url": "https://zenn.dev/syoshida07/articles/82b3b9073afa08",
+      "site": "Zenn(AI)",
+      "published": "2026-08-21T13:00:24Z",
+      "description": "M365 Copilot が登場したとき、多くの人は ChatGPTを Office に組み込んだ便利ツールくらいに捉えていたのではないだろうか、筆者自身もそうであった。\nだが Microsoftが見ていたのはもっと大きな構造で、AIを単なるモデル利用ではなく仕事の流れそのものを変える存在にすることではないだろうか、つまりCopilotはモデルを選ぶサービスではなくタスクを完了するエージェントへと...",
       "category": "AI・技術",
       "rss_category": "",
       "image_url": ""

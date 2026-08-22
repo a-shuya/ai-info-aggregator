@@ -1,14 +1,54 @@
 {
   "site": "Zenn(LLM)",
-  "last_updated": "2026-08-22T10:27:42.175383",
-  "total_articles": 5556,
+  "last_updated": "2026-08-22T10:52:09.995856",
+  "total_articles": 5558,
   "articles": [
+    {
+      "title": "Query-aware Compressionは本当に効く？BedrockでRAGのトークンとコストを実測",
+      "url": "https://zenn.dev/kashiwabaray/articles/b9e86f3a564084",
+      "site": "Zenn(LLM)",
+      "published": "2026-08-22T09:15:37Z",
+      "description": "本記事は個人による技術検証の結果をまとめたものであり、所属組織の公式見解を示すものではありません。\n\n 1. はじめに\nRAGでは、検索でヒットした複数のチャンクをそのままLLMのプロンプトに詰め込むことがあります。しかし検索結果には質問と無関係な文章も含まれており、コンテキストが大きくなるほど入力トークンが増え、コストやレイテンシにも影響します。\nこの課題への対策として提案されているのが Que...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
     {
       "title": "LLMハニーポットのコストが5倍に跳ねた理由を追ったら、正体不明のプロキシスキャン群に行き着いた ― 3拠点77日間の実測",
       "url": "https://zenn.dev/halotaro/articles/galah-honeypot-cache-77days",
       "site": "Zenn(LLM)",
       "published": "2026-08-22T08:02:43Z",
       "description": "Galah は LLM を使って HTTP リクエストへの応答を動的に生成するハニーポットだ。任意のパスへのリクエストに対して、それらしいレスポンス（ヘッダ・ボディ）を LLM に生成させる。手作業でアプリを模倣する従来型ハニーポットと違い、事前に想定していないパスへのアクセスにもそれらしく応答できるのが売りだが、これは「1リクエスト = 1回の LLM 推論」というアーキテクチャでもある。\n開発...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "llama.cppでQwen3.8:27bの思考グルグルをある程度削減",
+      "url": "https://zenn.dev/ibuky/articles/745131581b2fc9",
+      "site": "Zenn(LLM)",
+      "published": "2026-08-22T07:55:27Z",
+      "description": "詳細は追記します\nCUDA_VISIBLE_DEVICES=0,1 ./llama-cli --model ~/unsloth/Qwen3.8-27B-GGUF/Qwen3.8-27B-Q4_0.gguf --temp 1.0 --top-p 0.95 --top-k 20 --min-p 0.0 -ngl 999 --reasoning-effort low\n--reasoning-effort...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "RTX 5090でFreeTokenを試してみた。35Bでは不要、120B級MoEでは話が変わる",
+      "url": "https://zenn.dev/holy_fox/articles/53b82eed45f956",
+      "site": "Zenn(LLM)",
+      "published": "2026-08-22T07:44:27Z",
+      "description": "2026年8月22日時点のFreeToken 0.1.2を、RTX 5090 32GBとRAM 128GBのPCで試しました。\nFreeTokenは、Mixture-of-Experts（MoE）モデルのexpertをホストRAMへ置き、必要なexpertだけをGPUへキャッシュしながら推論するサービングエンジンです。狙いはvLLMやllama.cppを単純に高速化することではなく、VRAMに収ま...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "AGENTS.md と CLAUDE.md は解決規則が逆 — symlink する前に確認すること",
+      "url": "https://zenn.dev/tsutomusaito/articles/agents-md-claude-code-resolution",
+      "site": "Zenn(LLM)",
+      "published": "2026-08-22T07:43:33Z",
+      "description": "AGENTS.md を置いているリポジトリで Claude Code も使いたい。\n検索すると ln -s AGENTS.md CLAUDE.md が出てきて、実際これは公式が案内している手順です。\nただし、この1行で繋がるのはルートの1ファイルだけです。\nそして繋いだ先の Claude Code は、AGENTS.md とは逆の規則でファイルを解決します。\nモノレポで nested な AGEN...",
       "category": "AI・技術",
       "rss_category": "",
       "image_url": ""
@@ -29,6 +69,16 @@
       "site": "Zenn(LLM)",
       "published": "2026-08-22T07:11:56Z",
       "description": "TL;DR\n\nGMOコインFX の予約型自動売買(AWS Lambda + Python)で、損切り価格・利確価格・ロットを LLM に出させず、Python が式で算出する設計にしました\n損切り価格は当初から Python です。LLM に残したのは方向・エントリー価格と、損切り幅の広さを選ぶ離散ノブ(狭い / 広い)まで。利確価格も Structured Output のスキーマから消し、損切...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "LLM APIの費用はなぜ増える？コスト構造と最適化の基本",
+      "url": "https://zenn.dev/yhay81/articles/202608-llm-api-cost-guide-for-beginners",
+      "site": "Zenn(LLM)",
+      "published": "2026-08-22T06:30:37Z",
+      "description": "生成AIを業務へ組み込むと、しばしば「思ったよりAPI費用が高い」という問題が起きます。そこで安いモデルへの\n変更を考えがちですが、LLMの費用はモデルの価格だけでは決まりません。\nAIへ送る文章が長い、一つの仕事で何度もAIを呼ぶ、失敗した処理を繰り返す。このような設計上の要因でも費用は\n増えます。反対に、安いモデルへ変更して再質問や人による修正が増えれば、APIの請求額が下がっても業務全体では...",
       "category": "AI・技術",
       "rss_category": "",
       "image_url": ""
@@ -64,16 +114,6 @@
       "image_url": ""
     },
     {
-      "title": "LLMはなぜ言葉を扱えるのか？",
-      "url": "https://zenn.dev/cc_systems/articles/chatgpt-transformer-basics",
-      "site": "Zenn(LLM)",
-      "published": "2026-08-22T03:45:51Z",
-      "description": "■はじめに\nChatGPTやClaudeを日常的に使うようになり、あらためて「LLMはなぜ人間の言葉を返せるのだろう？」と疑問に思いました。\nTransformerやEmbedding、パラメーターといった用語は知っていても、それぞれがどうつながり、LLM全体の中でどのような役割を持っているのか、うまく説明できないことに気づきました。\nそこで本記事では、自分自身の備忘も兼ねて、入力された文章がLL...",
-      "category": "AI・技術",
-      "rss_category": "",
-      "image_url": ""
-    },
-    {
       "title": "AIエージェント設計論 — Harness/Loop EngineeringからRAGまで",
       "url": "https://zenn.dev/hideki_tamae/books/ai-agent-engineering-guide",
       "site": "Zenn(LLM)",
@@ -89,26 +129,6 @@
       "site": "Zenn(LLM)",
       "published": "2026-08-22T03:20:47Z",
       "description": "結論：無料プロバイダを束ねればClaude Codeは無料で動く。ただし壁が2つある\n各社が配っている無料APIをまとめて束ね、Claude Codeの「頭脳」をそこに差し替える。これでサブスク枠を使わずにターミナルのClaude Codeが動きます。ただし、素直につないだだけでは動きません。「大きな入力を弾く壁」と「大きな出力を弾く壁」の2つにぶつかります。この記事は、実際に手元のMacで詰まっ...",
-      "category": "AI・技術",
-      "rss_category": "",
-      "image_url": ""
-    },
-    {
-      "title": "Grok 4.5はCursorの操作ログで訓練された、出力トークンが約4分の1になった",
-      "url": "https://zenn.dev/okssusucha/articles/20260711-grok-4-5-cursor-session-data-token-effici",
-      "site": "Zenn(LLM)",
-      "published": "2026-08-22T00:07:56Z",
-      "description": "7月8日に出たGrok 4.5で、いちばん引っかかったのはベンチマークの数字ではなかった。訓練データの出どころだ。xAI（発表では SpaceXAI 名義）はこのモデルを Cursor と共同で訓練し、その材料に「数兆トークン規模の Cursor 上の操作データ」を使ったと明言している。GitHub に転がっている完成済みのコードではなく、開発者がエディタの中で実際にコードを書いていく過程そのもの...",
-      "category": "AI・技術",
-      "rss_category": "",
-      "image_url": ""
-    },
-    {
-      "title": "AXIOM-MAS v3.2.2 実験結果 — MASカーネルPrototypeの制御実験",
-      "url": "https://zenn.dev/void09/articles/aafa9f90377986",
-      "site": "Zenn(LLM)",
-      "published": "2026-08-21T17:03:40Z",
-      "description": "はじめに\nAXIOM-MASは、LLMそのものを賢くするのではなく、LLMを交換可能な推論部品として扱い、その外側に制御カーネルを置くことを目的としたMAS Prototypeです。\n一般的なMASが「複数のLLMを協調させて答えを作る」方向に重点を置くのに対し、AXIOM-MASでは、\n\nAbsoluteAnchor / HashAによる不変座標\nHashBによる推論軌跡\nCapsuleによる状...",
       "category": "AI・技術",
       "rss_category": "",
       "image_url": ""
