@@ -1,14 +1,154 @@
 {
   "site": "Zenn(LLM)",
-  "last_updated": "2026-08-22T08:12:04.055712",
-  "total_articles": 5545,
+  "last_updated": "2026-08-22T08:52:06.151369",
+  "total_articles": 5556,
   "articles": [
     {
-      "title": "AIに「あれは入れないで」と直させると、なぜか本文に「入れてません」と書いてくる",
-      "url": "https://zenn.dev/motimotinotch/articles/546674976fede8",
+      "title": "LLMハニーポットのコストが5倍に跳ねた理由を追ったら、正体不明のプロキシスキャン群に行き着いた ― 3拠点77日間の実測",
+      "url": "https://zenn.dev/halotaro/articles/galah-honeypot-cache-77days",
       "site": "Zenn(LLM)",
-      "published": "2026-08-21T12:26:45Z",
-      "description": "こんな投稿を見かけた。\nhttps://x.com/chokudai/status/2084538207732178997?s=20\nこれは自分なりの要約だが、要するにこういう話だ。AIに何かを一発で出させるのは得意。でも、後から「〇〇は入れないで」と訂正させると、該当箇所は消すくせに、代わりに「〇〇は入れていません」的なコメントを律儀に書き足してくる。ソースコードのコメントならまだしも、プレゼン...",
+      "published": "2026-08-22T08:02:43Z",
+      "description": "Galah は LLM を使って HTTP リクエストへの応答を動的に生成するハニーポットだ。任意のパスへのリクエストに対して、それらしいレスポンス（ヘッダ・ボディ）を LLM に生成させる。手作業でアプリを模倣する従来型ハニーポットと違い、事前に想定していないパスへのアクセスにもそれらしく応答できるのが売りだが、これは「1リクエスト = 1回の LLM 推論」というアーキテクチャでもある。\n開発...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "llama.cppでQwen3.8:27bの思考グルグルをある程度削減",
+      "url": "https://zenn.dev/ibuky/articles/745131581b2fc9",
+      "site": "Zenn(LLM)",
+      "published": "2026-08-22T07:55:27Z",
+      "description": "詳細は追記します\nCUDA_VISIBLE_DEVICES=0,1 ./llama-cli --model ~/unsloth/Qwen3.8-27B-GGUF/Qwen3.8-27B-Q4_0.gguf --temp 1.0 --top-p 0.95 --top-k 20 --min-p 0.0 -ngl 999 --reasoning-effort low\n--reasoning-effort...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "RTX 5090でFreeTokenを試してみた。35Bでは不要、120B級MoEでは話が変わる",
+      "url": "https://zenn.dev/holy_fox/articles/53b82eed45f956",
+      "site": "Zenn(LLM)",
+      "published": "2026-08-22T07:44:27Z",
+      "description": "2026年8月22日時点のFreeToken 0.1.2を、RTX 5090 32GBとRAM 128GBのPCで試しました。\nFreeTokenは、Mixture-of-Experts（MoE）モデルのexpertをホストRAMへ置き、必要なexpertだけをGPUへキャッシュしながら推論するサービングエンジンです。狙いはvLLMやllama.cppを単純に高速化することではなく、VRAMに収ま...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "AGENTS.md と CLAUDE.md は解決規則が逆 — symlink する前に確認すること",
+      "url": "https://zenn.dev/tsutomusaito/articles/agents-md-claude-code-resolution",
+      "site": "Zenn(LLM)",
+      "published": "2026-08-22T07:43:33Z",
+      "description": "AGENTS.md を置いているリポジトリで Claude Code も使いたい。\n検索すると ln -s AGENTS.md CLAUDE.md が出てきて、実際これは公式が案内している手順です。\nただし、この1行で繋がるのはルートの1ファイルだけです。\nそして繋いだ先の Claude Code は、AGENTS.md とは逆の規則でファイルを解決します。\nモノレポで nested な AGEN...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "LLM APIはどこから使うべきか？AWS・GCP・Azure・直API・AI Gatewayの選び方",
+      "url": "https://zenn.dev/yhay81/articles/202608-llm-api-landscape",
+      "site": "Zenn(LLM)",
+      "published": "2026-08-22T07:37:41Z",
+      "description": "LLMを業務システムへ導入するとき、「どのモデルが一番よいか」だけを考えると、選択を誤ることがあります。\n同じClaudeでも、Anthropicの直API、Amazon Bedrock、Vertex AI、Microsoft Foundry、AI Gateway経由では、\n契約、処理基盤、利用できる機能が同じとは限らないからです。\nモデル選定では、どのモデルを使うかとどの経路から使うかを分けます...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "LLMに損切り価格を出させない設計 — Structured Output と数理レールの分担",
+      "url": "https://zenn.dev/ozapon/articles/gmo-fx-llm-sl-python",
+      "site": "Zenn(LLM)",
+      "published": "2026-08-22T07:11:56Z",
+      "description": "TL;DR\n\nGMOコインFX の予約型自動売買(AWS Lambda + Python)で、損切り価格・利確価格・ロットを LLM に出させず、Python が式で算出する設計にしました\n損切り価格は当初から Python です。LLM に残したのは方向・エントリー価格と、損切り幅の広さを選ぶ離散ノブ(狭い / 広い)まで。利確価格も Structured Output のスキーマから消し、損切...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "LLM APIの費用はなぜ増える？コスト構造と最適化の基本",
+      "url": "https://zenn.dev/yhay81/articles/202608-llm-api-cost-guide-for-beginners",
+      "site": "Zenn(LLM)",
+      "published": "2026-08-22T06:30:37Z",
+      "description": "生成AIを業務へ組み込むと、しばしば「思ったよりAPI費用が高い」という問題が起きます。そこで安いモデルへの\n変更を考えがちですが、LLMの費用はモデルの価格だけでは決まりません。\nAIへ送る文章が長い、一つの仕事で何度もAIを呼ぶ、失敗した処理を繰り返す。このような設計上の要因でも費用は\n増えます。反対に、安いモデルへ変更して再質問や人による修正が増えれば、APIの請求額が下がっても業務全体では...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "「AIに引用されているか」を数値にする — LLMO可視性スコアの設計と、実装して初めて分かった落とし穴",
+      "url": "https://zenn.dev/mistudio/articles/3461111dd32276",
+      "site": "Zenn(LLM)",
+      "published": "2026-08-22T06:18:56Z",
+      "description": "検索エンジンの順位は昔から測れました。では、ChatGPTやPerplexityが回答の中で自社サイトを引用しているかどうかは、どう測ればいいのでしょうか。\n順位のように1本の数字が返ってくるわけではありません。同じ質問を投げても回答は毎回変わりますし、そもそも「引用された」の定義自体が曖昧です。回答文中にURLが出典として並ぶこともあれば、社名だけが本文に出てURLはないこともあります。\nこの記...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "LLM APIコスト最適化 実践教科書",
+      "url": "https://zenn.dev/yhay81/books/llm-api-cost-optimization",
+      "site": "Zenn(LLM)",
+      "published": "2026-08-22T05:44:03Z",
+      "description": "品質を落とさず、計測・設計・キャッシュ・ルーティング・運用でLLM費用を制御する",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "Claude Codeについて学んだことの備忘録",
+      "url": "https://zenn.dev/rokkaku_dev/articles/6feb8e28bb81d1",
+      "site": "Zenn(LLM)",
+      "published": "2026-08-22T03:51:24Z",
+      "description": "はじめに\n社内プロジェクトでClaude CodeなどのAIエージェントコーディングを始めることになりました。\n強力なツールである一方、使い方を間違えればプロジェクトやシステムに取り返しのつかない影響を与えうる諸刃の剣でもあります。\nだからこそ、まずは公式ドキュメントを一通り読んで基礎知識を整理しておくことが大事だと思いました。\nこの記事はその インプットのアウトプット です。\n誰かに教えるという...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "LLMはなぜ言葉を扱えるのか？",
+      "url": "https://zenn.dev/cc_systems/articles/chatgpt-transformer-basics",
+      "site": "Zenn(LLM)",
+      "published": "2026-08-22T03:45:51Z",
+      "description": "■はじめに\nChatGPTやClaudeを日常的に使うようになり、あらためて「LLMはなぜ人間の言葉を返せるのだろう？」と疑問に思いました。\nTransformerやEmbedding、パラメーターといった用語は知っていても、それぞれがどうつながり、LLM全体の中でどのような役割を持っているのか、うまく説明できないことに気づきました。\nそこで本記事では、自分自身の備忘も兼ねて、入力された文章がLL...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "AIエージェント設計論 — Harness/Loop EngineeringからRAGまで",
+      "url": "https://zenn.dev/hideki_tamae/books/ai-agent-engineering-guide",
+      "site": "Zenn(LLM)",
+      "published": "2026-08-22T03:29:05Z",
+      "description": "AIエージェント開発を支える設計思想を、Harness EngineeringとLoop Engineeringという二本柱から出発し、Evaluation・Context Engineering・Tool Engineering・Memory・Observability・Recovery Engineering・Human-in-the-loop・A2A・実務導入・RAG/ローカルLLMまで、1...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "無料枠だけでClaude Codeをターミナルで動かす — ぶつかった2つの壁と回避策",
+      "url": "https://zenn.dev/hiroki_curio/articles/free-claude-code-terminal-walls",
+      "site": "Zenn(LLM)",
+      "published": "2026-08-22T03:20:47Z",
+      "description": "結論：無料プロバイダを束ねればClaude Codeは無料で動く。ただし壁が2つある\n各社が配っている無料APIをまとめて束ね、Claude Codeの「頭脳」をそこに差し替える。これでサブスク枠を使わずにターミナルのClaude Codeが動きます。ただし、素直につないだだけでは動きません。「大きな入力を弾く壁」と「大きな出力を弾く壁」の2つにぶつかります。この記事は、実際に手元のMacで詰まっ...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "Grok 4.5はCursorの操作ログで訓練された、出力トークンが約4分の1になった",
+      "url": "https://zenn.dev/okssusucha/articles/20260711-grok-4-5-cursor-session-data-token-effici",
+      "site": "Zenn(LLM)",
+      "published": "2026-08-22T00:07:56Z",
+      "description": "7月8日に出たGrok 4.5で、いちばん引っかかったのはベンチマークの数字ではなかった。訓練データの出どころだ。xAI（発表では SpaceXAI 名義）はこのモデルを Cursor と共同で訓練し、その材料に「数兆トークン規模の Cursor 上の操作データ」を使ったと明言している。GitHub に転がっている完成済みのコードではなく、開発者がエディタの中で実際にコードを書いていく過程そのもの...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "SAPO: 1ロールアウト自己回帰Actor-CriticでAgent RLの壁を突破",
+      "url": "https://zenn.dev/lixian/articles/sapo-single-rollout-actor-critic",
+      "site": "Zenn(LLM)",
+      "published": "2026-08-21T15:00:00Z",
+      "description": "TL;DR\nLLMエージェントの強化学習において、PPOは高精度だが別途Criticモデルのメモリが必要で、GRPOはメモリ効率が良いが長期タスクでadvantage collapseに陥る——この二律背反を**SAPO（Single-rollout Autoregressive Policy Optimization）**が一発で解消する。鍵は「自己回帰モデルの因果的境界を利用して、1つのバック...",
       "category": "AI・技術",
       "rss_category": "",
       "image_url": ""
@@ -19,26 +159,6 @@
       "site": "Zenn(LLM)",
       "published": "2026-08-21T11:22:39Z",
       "description": "PIIを含むワークロードにLLMを組み込む際の論点は、学習リスク・保持リスク・経路リスクの3つに分解できます。前二者は契約・規約のレイヤー、後者はネットワーク設計のレイヤーであり、対策も分けて設計すべきです。本記事はAmazon Bedrockでこの3リスクを塞ぐ構成を、一次情報の出典付きで整理したものです。\n\n 規約レイヤー\n\nプロンプト・生成結果はAWSのモデル学習に不使用、モデルプロバイダー...",
-      "category": "AI・技術",
-      "rss_category": "",
-      "image_url": ""
-    },
-    {
-      "title": "AIエージェントに\"会社経営\"を任せてみた — 市場調査から事業計画までを自律実行させた記録（第1回）",
-      "url": "https://zenn.dev/jiritsuworks/articles/ai-agent-company-experiment-01",
-      "site": "Zenn(LLM)",
-      "published": "2026-08-21T10:38:38Z",
-      "description": "この記事は何か\n「AIエージェントに会社を経営させたら、どこまで自律的に動けるのか」を実際に試している実験の記録です。\n具体的には、Claude Code をローカルの1ディレクトリ上で動かし、市場調査 → 事業戦略の立案 → 会社組織の構築 → コンテンツ制作までを自律実行させました。人間（私）がやったことは、途中の承認だけです。\n先に正直に書いておきます。\n\n\n現時点の売上はゼロ円です\n調査の...",
-      "category": "AI・技術",
-      "rss_category": "",
-      "image_url": ""
-    },
-    {
-      "title": "AIエージェントにCMSのメディアを運用させる ― 画像のバイト列はLLMに通さない",
-      "url": "https://zenn.dev/pikonori/articles/ai-agent-media",
-      "site": "Zenn(LLM)",
-      "published": "2026-08-21T09:23:52Z",
-      "description": "!\nこの記事は、個人開発しているヘッドレスCMS Tessera のブログ（tesseracms.com/blog/ai-agent-media）に掲載したものを、Zenn向けに再掲したものです。\n\nAIエージェント（Claude CodeやCursor）にブログ記事を書かせるところまでは、もう普通にできるようになりました。ではその記事に載せる画像――アイキャッチや説明図――は、誰がアップロードす...",
       "category": "AI・技術",
       "rss_category": "",
       "image_url": ""
@@ -89,16 +209,6 @@
       "site": "Zenn(LLM)",
       "published": "2026-08-21T07:34:56Z",
       "description": "はじめに\nこれまでの記事で、Harness Engineering、Loop Engineering、Evaluation、Context Engineering、Tool Engineeringと、AIエージェントを支える要素を一つずつ見てきました。\n今回は Memory、つまりAIエージェントが情報をどう保持し、どう活用するかについて掘り下げます。前々回の Context Engineerin...",
-      "category": "AI・技術",
-      "rss_category": "",
-      "image_url": ""
-    },
-    {
-      "title": "OpenRouterがStripeに加わる今、LLMコストをjob_id単位で記録する",
-      "url": "https://zenn.dev/kiritani_r/articles/d946bf49c1c997",
-      "site": "Zenn(LLM)",
-      "published": "2026-08-21T07:20:29Z",
-      "description": "一回の「生成」ボタンが、一回のAPI requestとは限りません。\n構成案を作り、形式を整え、条件に合わなければ再生成する。画面上では一つの仕事でも、裏側では複数のmodel呼び出しが走ります。requestごとの金額だけを見ていると、結局その機能を一回使うのにいくらかかったのかが分かりません。\n2026年8月19日、OpenRouterはStripeに加わると発表しました。発表では、名称、製品...",
       "category": "AI・技術",
       "rss_category": "",
       "image_url": ""
