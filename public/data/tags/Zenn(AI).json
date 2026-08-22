@@ -1,7 +1,7 @@
 {
   "site": "Zenn(AI)",
-  "last_updated": "2026-08-22T13:42:35.927972",
-  "total_articles": 12877,
+  "last_updated": "2026-08-22T14:02:29.718396",
+  "total_articles": 12876,
   "articles": [
     {
       "title": "AIエージェント11体でブラウザゲームを作ったら、バグの大半が「書いたのに動いていない」だった",
@@ -94,11 +94,41 @@
       "image_url": ""
     },
     {
+      "title": "llama.cppでQwen3.8:27bの思考グルグルをある程度削減",
+      "url": "https://zenn.dev/ibuky/articles/745131581b2fc9",
+      "site": "Zenn(AI)",
+      "published": "2026-08-22T07:55:27Z",
+      "description": "詳細は追記します\nCUDA_VISIBLE_DEVICES=0,1 ./llama-cli --model ~/unsloth/Qwen3.8-27B-GGUF/Qwen3.8-27B-Q4_0.gguf --temp 1.0 --top-p 0.95 --top-k 20 --min-p 0.0 -ngl 999 --reasoning-effort low\n--reasoning-effort...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
       "title": "Proxmoxで構築するLLMサーバーのざっくりまとめ",
       "url": "https://zenn.dev/ibuky/articles/f7d4c2d5138171",
       "site": "Zenn(AI)",
       "published": "2026-08-22T07:51:47Z",
       "description": "環境構築時の不完全なメモ、history内容、実ファイルの内容からざっくりとした構築時の手順を再現しています。\n\n ハードウェア情報\nこちらの記事を参照\n\n BIOSの設定\nProxmoxのインストールやGPUのパススルー設定を行う前に、マザーボード（ASUS X99-A）のBIOSで以下の設定を済ませておきます。これを忘れるとVMからGPUが正常に認識されません。\n\n\n\n項目\n設定値\n備考\n\n\n...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "RTX 5090でFreeTokenを試してみた。35Bでは不要、120B級MoEでは話が変わる",
+      "url": "https://zenn.dev/holy_fox/articles/53b82eed45f956",
+      "site": "Zenn(AI)",
+      "published": "2026-08-22T07:44:27Z",
+      "description": "2026年8月22日時点のFreeToken 0.1.2を、RTX 5090 32GBとRAM 128GBのPCで試しました。\nFreeTokenは、Mixture-of-Experts（MoE）モデルのexpertをホストRAMへ置き、必要なexpertだけをGPUへキャッシュしながら推論するサービングエンジンです。狙いはvLLMやllama.cppを単純に高速化することではなく、VRAMに収ま...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "AGENTS.md と CLAUDE.md は解決規則が逆 — symlink する前に確認すること",
+      "url": "https://zenn.dev/tsutomusaito/articles/agents-md-claude-code-resolution",
+      "site": "Zenn(AI)",
+      "published": "2026-08-22T07:43:33Z",
+      "description": "AGENTS.md を置いているリポジトリで Claude Code も使いたい。\n検索すると ln -s AGENTS.md CLAUDE.md が出てきて、実際これは公式が案内している手順です。\nただし、この1行で繋がるのはルートの1ファイルだけです。\nそして繋いだ先の Claude Code は、AGENTS.md とは逆の規則でファイルを解決します。\nモノレポで nested な AGEN...",
       "category": "AI・技術",
       "rss_category": "",
       "image_url": ""
@@ -174,16 +204,6 @@
       "image_url": ""
     },
     {
-      "title": "LLM APIコスト最適化 実践教科書",
-      "url": "https://zenn.dev/yhay81/books/llm-api-cost-optimization",
-      "site": "Zenn(AI)",
-      "published": "2026-08-22T05:44:03Z",
-      "description": "品質を落とさず、計測・設計・キャッシュ・ルーティング・運用でLLM費用を制御する",
-      "category": "AI・技術",
-      "rss_category": "",
-      "image_url": ""
-    },
-    {
       "title": "「次やって」でAIを動かす",
       "url": "https://zenn.dev/giana12th/articles/d1e07d30b0213a",
       "site": "Zenn(AI)",
@@ -194,31 +214,11 @@
       "image_url": ""
     },
     {
-      "title": "Claude Codeについて学んだことの備忘録",
-      "url": "https://zenn.dev/rokkaku_dev/articles/6feb8e28bb81d1",
-      "site": "Zenn(AI)",
-      "published": "2026-08-22T03:51:24Z",
-      "description": "はじめに\n社内プロジェクトでClaude CodeなどのAIエージェントコーディングを始めることになりました。\n強力なツールである一方、使い方を間違えればプロジェクトやシステムに取り返しのつかない影響を与えうる諸刃の剣でもあります。\nだからこそ、まずは公式ドキュメントを一通り読んで基礎知識を整理しておくことが大事だと思いました。\nこの記事はその インプットのアウトプット です。\n誰かに教えるという...",
-      "category": "AI・技術",
-      "rss_category": "",
-      "image_url": ""
-    },
-    {
       "title": "Cursorから15分 — @staddress/mcp でチャットから住所解析する（導入・ツール・プロンプト）",
       "url": "https://zenn.dev/staddress/articles/b601f14a21c5c5",
       "site": "Zenn(AI)",
       "published": "2026-08-22T03:50:34Z",
       "description": "住所正規化・ジオコーディングAPI 「Staddress（スタドレス）」 開発チームです。\n前回（Rubyから15分 — staddress gem で住所解析する）までは、curl / CLI / Node / Python / Ruby と「コードから API を呼ぶ」流れを紹介してきました。\n今回は一歩進めて、AI チャットから住所解析を呼び出せる MCP サーバ @staddress/mc...",
-      "category": "AI・技術",
-      "rss_category": "",
-      "image_url": ""
-    },
-    {
-      "title": "AIエージェント設計論 — Harness/Loop EngineeringからRAGまで",
-      "url": "https://zenn.dev/hideki_tamae/books/ai-agent-engineering-guide",
-      "site": "Zenn(AI)",
-      "published": "2026-08-22T03:29:05Z",
-      "description": "AIエージェント開発を支える設計思想を、Harness EngineeringとLoop Engineeringという二本柱から出発し、Evaluation・Context Engineering・Tool Engineering・Memory・Observability・Recovery Engineering・Human-in-the-loop・A2A・実務導入・RAG/ローカルLLMまで、1...",
       "category": "AI・技術",
       "rss_category": "",
       "image_url": ""
@@ -289,16 +289,6 @@
       "site": "Zenn(AI)",
       "published": "2026-08-22T01:01:41Z",
       "description": "【試し読み】n8n×AI自動化実践入門 — ノーコードでAIワークフローを作る\n本記事はKindle本 「n8n×AI自動化実践入門 — ノーコードで動かすAIワークフロー」（著者: 葉山悠希）の「はじめに」および「第1章」の一部を公開する試し読み記事です。\n\n\n 毎日の繰り返し作業、まだ手動でやっていませんか\nメールの仕分け、スプレッドシートへのデータ転記、定例レポートの作成、Slackへの通知...",
-      "category": "AI・技術",
-      "rss_category": "",
-      "image_url": ""
-    },
-    {
-      "title": "Grok 4.5はCursorの操作ログで訓練された、出力トークンが約4分の1になった",
-      "url": "https://zenn.dev/okssusucha/articles/20260711-grok-4-5-cursor-session-data-token-effici",
-      "site": "Zenn(AI)",
-      "published": "2026-08-22T00:07:56Z",
-      "description": "7月8日に出たGrok 4.5で、いちばん引っかかったのはベンチマークの数字ではなかった。訓練データの出どころだ。xAI（発表では SpaceXAI 名義）はこのモデルを Cursor と共同で訓練し、その材料に「数兆トークン規模の Cursor 上の操作データ」を使ったと明言している。GitHub に転がっている完成済みのコードではなく、開発者がエディタの中で実際にコードを書いていく過程そのもの...",
       "category": "AI・技術",
       "rss_category": "",
       "image_url": ""
