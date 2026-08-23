@@ -1,6 +1,6 @@
 {
   "site": "Zenn(Python)",
-  "last_updated": "2026-08-23T21:29:39.570363",
+  "last_updated": "2026-08-23T21:50:29.360290",
   "total_articles": 5946,
   "articles": [
     {
@@ -34,21 +34,21 @@
       "image_url": ""
     },
     {
-      "title": "外れ値でヒストグラムがつぶれないようにする",
-      "url": "https://zenn.dev/aldente/articles/c08b02214f4be2",
+      "title": "見せかけの回帰を実測: 無関係なランダムウォーク1万ペアの偽有意率は、n=50の67%からn=5000の97%まで上がり続けた",
+      "url": "https://zenn.dev/shakeailab/articles/spurious-correlation-random-walk",
       "site": "Zenn(Python)",
-      "published": "2026-08-23T11:39:21Z",
-      "description": "ヒストグラムの横軸を単純に最小値〜最大値にすると、外れ値が1個あるだけで肝心の分布がギュッとつぶれてしまいます。\nそこで robust_histogram.py では、次の方針で外れ値に強いヒストグラムを作ります。\n\n中心には平均値ではなく中央値を使う\nばらつきには標準偏差の代わりにMADを使う\n表示範囲は 中央値 ± 4 × ロバスト標準偏差\n\n範囲外の値は消さず、左右端のビンへ積み上げる\nビン...",
+      "published": "2026-08-23T11:50:16Z",
+      "description": "「互いに何の関係もない2つの時系列を持ってきて相関を取ると、しばしばr=0.9のような強烈な相関が出る」——時系列分析の教科書に必ず載っている**見せかけの回帰(spurious regression)**の話だ。ナイジェリアの海賊の数と地球の平均気温、みたいなネタ画像は誰でも見たことがあると思う。\nただ、私はこの話をずっと「たまたま変な標本を引いたときの笑い話」くらいに受け取っていた。統計の基本...",
       "category": "開発",
       "rss_category": "",
       "image_url": ""
     },
     {
-      "title": "打った文字の一部だけが消える — ブラウザ自動化の type が半角英数字を落としていた",
-      "url": "https://zenn.dev/mameresearcher/articles/browser-type-silently-drops-ascii",
+      "title": "外れ値でヒストグラムがつぶれないようにする",
+      "url": "https://zenn.dev/aldente/articles/c08b02214f4be2",
       "site": "Zenn(Python)",
-      "published": "2026-08-23T11:07:31Z",
-      "description": "個人の自動化プロジェクトで、ブラウザを操作するエージェントに SNS の返信を入力させている。エディタの入力欄に type で本文を打ち込み、送信ボタンを押す、それだけの処理だ。\nある日、送信の直前に入れておいた検査がこう鳴った。\n5文字目で違う: 入った='を' 期待='1' / 長さ 178 vs 190\n打ったはずの本文と、入力欄に実際に入った本文が 12文字ずれていた。\n消えていたのは、半...",
+      "published": "2026-08-23T11:39:21Z",
+      "description": "ヒストグラムの横軸を単純に最小値〜最大値にすると、外れ値が1個あるだけで肝心の分布がギュッとつぶれてしまいます。\nそこで robust_histogram.py では、次の方針で外れ値に強いヒストグラムを作ります。\n\n中心には平均値ではなく中央値を使う\nばらつきには標準偏差の代わりにMADを使う\n表示範囲は 中央値 ± 4 × ロバスト標準偏差\n\n範囲外の値は消さず、左右端のビンへ積み上げる\nビン...",
       "category": "開発",
       "rss_category": "",
       "image_url": ""
