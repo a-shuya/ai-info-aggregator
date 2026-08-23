@@ -1,8 +1,48 @@
 {
   "site": "Zenn(LLM)",
-  "last_updated": "2026-08-23T13:06:25.666397",
-  "total_articles": 5567,
+  "last_updated": "2026-08-23T13:44:22.494308",
+  "total_articles": 5573,
   "articles": [
+    {
+      "title": "AIエージェントの手戻りが減らない人へ——「書かせ方」ではなく「直させ方」をルールにする",
+      "url": "https://zenn.dev/ai_tools_memo/articles/7caa1b61e7eda8",
+      "site": "Zenn(LLM)",
+      "published": "2026-08-23T09:21:51Z",
+      "description": "同じレビュー指摘を、1週間で5回書いたことがあります。相手はAIコーディングエージェントでした。指摘するたびに直りはするのに、次のタスクではまた同じことをやる。プロンプトを丁寧にしても、変わりませんでした。\nこの記事は、Claude CodeのようなAIエージェントを開発で使っていて、次に心当たりがある人に向けて書いています。\n\n出力の手直しが毎回発生していて、指摘がループしている\n「もっと丁寧に...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "三大エンジニアリングは pdlc-skills の中でどう噛み合うのか",
+      "url": "https://zenn.dev/kanfupanda/articles/pdlc-interlock-three-layers",
+      "site": "Zenn(LLM)",
+      "published": "2026-08-23T09:11:01Z",
+      "description": "!\nこの記事は個人ブログにも掲載しています → https://kanfu-panda.github.io/ja/blog/2026/08/23/how-three-paradigms-interlock.ja.html\n\n\n\n前回の最後に物差しを一つ置きました。あるツールの三層が本当に結合しているかは、同じ状態を共有しているかで判断できる、と。今回はそれを具体的な形にします——三層は最初から最後...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "今更聞けないエージェントスキル入門｜最初の1つを書いて育てるまで",
+      "url": "https://zenn.dev/fukaunabara/articles/agent-skills-basics",
+      "site": "Zenn(LLM)",
+      "published": "2026-08-23T08:21:36Z",
+      "description": "はじめに\n毎回、AI に同じフィードバックをしていませんか。\nAI エージェントに作業をさせて、出てきたものを見て、チャットで「そうじゃなくて、こうしてほしい」と打ち込む。そのときは直してくれますが、セッションが変わると元に戻ります。\nこれをスキルに書くようにしてから、同じ説明を繰り返す場面が減りました。加えて、AI が毎回ゼロから試行錯誤する回数も減ったので、作業の効率が少し良くなったと感じるこ...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "AI Providerを選ばせないために──APAPを設計・実装して見えた抽象化の境界",
+      "url": "https://zenn.dev/io0323/articles/0bba3dc141ca4b",
+      "site": "Zenn(LLM)",
+      "published": "2026-08-23T08:19:05Z",
+      "description": "生成AIをプロダクトに組み込むとき、最初はProviderのSDKを直接呼べば十分に見えます。チャットならメッセージを渡して応答を受け取り、Embeddingならテキストをベクトルにする。それ自体は難しくありません。\n難しくなるのは、その次です。モデルを入れ替えたい。リージョン制約に合わせたい。あるProviderが混み合ったら別の候補へ切り替えたい。利用量とコストをテナント単位で統制したい。スト...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
     {
       "title": "llama.cppでQwen3.8:27b-GGUFのThinking Effortを下げる",
       "url": "https://zenn.dev/ibuky/articles/d717c1c4df4245",
@@ -44,11 +84,31 @@
       "image_url": ""
     },
     {
+      "title": "LLM APIの費用はどう決まる？トークン、呼び出し、周辺費用の仕組み",
+      "url": "https://zenn.dev/yhay81/articles/202608-llm-api-cost-guide",
+      "site": "Zenn(LLM)",
+      "published": "2026-08-23T06:12:40Z",
+      "description": "LLM APIの請求額は、モデルの価格だけでは決まりません。アプリケーションがLLMを呼び出した回数、一回の呼び出しで処理した文章量、入力と出力に適用される単価などが組み合わさって決まります。\nまた、利用者には一回の操作に見えても、システムの内部では複数回のLLM呼び出しが発生することがあります。検索、データ保存、監視など、LLM APIとは別の費用が同時に発生するシステムもあります。\nこの記事で...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
       "title": "LLM APIの「安いモデル」は、キャッシュ率を入れると順位が入れ替わる",
       "url": "https://zenn.dev/tokentally/articles/b67715ced14b48",
       "site": "Zenn(LLM)",
       "published": "2026-08-23T06:06:15Z",
       "description": "料金表を見て選んだモデルが、実際には最安ではなかった\nLLM APIの料金表はどこも「100万トークンあたり $X」で書かれています。それは正しいのですが、実際に知りたいのは「自分のアプリだと月いくらか」であって、単価ではありません。\nそして単価だけで選ぶと、プロンプトキャッシュを考慮した瞬間に順位が入れ替わることがあります。しかもそれは珍しいケースではなく、システムプロンプトが長いチャットボット...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "LLM API観測の基本構造：費用・遅延・品質をつなぐ",
+      "url": "https://zenn.dev/yhay81/articles/202608-llm-api-observability-guide",
+      "site": "Zenn(LLM)",
+      "published": "2026-08-23T05:42:14Z",
+      "description": "LLM APIの観測とは、「いくら使ったか」だけでなく、次の問いに答えられるようにすることです。\n\nどの機能で費用が増えたのか\n一つの処理で、LLMを何回呼び出したのか\nどこで時間がかかり、どこで失敗したのか\n費用を下げた変更が、回答の品質を悪化させていないか\n\n月次請求から分かるのは、最終的な支払額です。請求額だけでは、長い入力、再試行、処理の繰り返しなど、費用が増えた理由までは分かりません。反...",
       "category": "AI・技術",
       "rss_category": "",
       "image_url": ""
