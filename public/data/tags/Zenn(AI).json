@@ -1,8 +1,78 @@
 {
   "site": "Zenn(AI)",
-  "last_updated": "2026-08-23T18:13:01.018381",
-  "total_articles": 12917,
+  "last_updated": "2026-08-23T18:52:24.042971",
+  "total_articles": 12920,
   "articles": [
+    {
+      "title": "常駐型AIチャットエージェントの「Webhook再送・順序保証なし」対応設計",
+      "url": "https://zenn.dev/hach/articles/chat-agent-webhook-redelivery-design",
+      "site": "Zenn(AI)",
+      "published": "2026-08-23T17:08:31Z",
+      "description": "Slack / Teams / Chatworkに常駐して発言を処理するAIエージェントは、たいていWebhookのイベント駆動で動きます。ここでハマりやすいのが、「Webhookは1回だけ・発生順どおりに届く」という前提を無意識に置いてしまうことです。プラットフォーム側は配信保証のために同一イベントを再送しますし、ネットワークの揺らぎで到着順が入れ替わることも普通に起きます。複数インスタンスを動...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "「どのクリップが伸びるか」を投稿前に予測してみる（#20 Dax Raad編）",
+      "url": "https://zenn.dev/talks_tldr_jp/articles/tldr20-dax-prediction",
+      "site": "Zenn(AI)",
+      "published": "2026-08-23T17:00:13Z",
+      "description": "この記事は何か\n海外のTech Talkを日本語の縦型ショート動画に切り出して TikTok に投稿しています。1本の元動画から9〜10本のクリップを作り、投稿する前に**「どれが一番伸びるか」を予測してファイルに保存**しています。あとで実測と突き合わせて、自分の仮説がどれだけ当たっていたかを検証するためです。\nこの記事は、**20本目（Dax Raad「Building OpenCode」/ ...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "AIコーディングを「運任せ」にしないためのSoloXPをOSSで公開しました",
+      "url": "https://zenn.dev/noragrammer/articles/soloxp-oss-release",
+      "site": "Zenn(AI)",
+      "published": "2026-08-23T15:35:38Z",
+      "description": "AIコーディングエージェントを使っていると、最初はかなり快適\n「この機能を作って」\nと頼めばコードを書いてくれる。\nしかし、プロジェクトが大きくなってくると、別の問題が出てきます。\n\nこの実装、本当に正しいのか\n既存機能を壊していないか\nドキュメントは追随しているか\nAIが「できました」と言っているけれど、本当に終わっているのか\n毎回、人間がコードを全部読んで判断する必要があるのか\n\nAIがコード...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "AI エージェント時代にソースコード以外の何を残すべきか",
+      "url": "https://zenn.dev/id774/articles/ad6d173af7d8f5",
+      "site": "Zenn(AI)",
+      "published": "2026-08-23T15:17:21Z",
+      "description": "ソースコードが残っていても、同じ開発を引き継げない場合がある\nAI コーディングエージェントを使った開発では、「ソースコードが公開されているなら、そのソフトウェアは将来も変更できる」と単純には言えない場合がある。\nたとえば、AI に数十行の Python 関数を生成させ、その後は人間がコードを読み、直接修正し、テストしながら保守するケースを考える。この場合、AI は初期実装を作るための道具であり、...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "AIエージェントとオレオレORMを作った話",
+      "url": "https://zenn.dev/hckaye/articles/cac383c2be6597",
+      "site": "Zenn(AI)",
+      "published": "2026-08-23T15:15:23Z",
+      "description": "（※この記事はAI生成を用いて執筆しています）\nCobaltumORMという.NET / C#向けORMをAIエージェントと作ってみました。\n\n モチベーション\nC#でよく使われるORMにはEF Coreがあり、マイクロORMではDapperが定番です。EF CoreはLINQでクエリを書き、変更追跡やマイグレーションまで扱います。DapperはSQLを自分で書き、Query&lt;T&gt;など...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "x402を学び直す： verify/settleの内部構造から、Kaia×JPYCで動かす再現可能な手順まで",
+      "url": "https://zenn.dev/mashharuki/articles/x402-kaia-jpyc-anychain-guide",
+      "site": "Zenn(AI)",
+      "published": "2026-08-23T15:02:43Z",
+      "description": "この記事でわかること（TL;DR）\n\nx402プロトコルのverify/settleフローを、1枚のシーケンス図で他人に説明できるようになる\n「なぜx402は公式にサポートしていないチェーン・トークンでも動くのか」を仕様レベルで理解し、自分の好きなEVM互換チェーン×任意のERC20で同じことを再現できるようになる\nx402がAIエージェントの自律決済にフィットする技術的根拠を、業界動向（AP2 ...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "AI駆動開発の最先端「ハーネス＆ループ」をClaude Codeに聞いたら、自分の開発体制が予想以上に褒められてテンションが上がった話",
+      "url": "https://zenn.dev/magaruya/articles/3994835b29c1f6",
+      "site": "Zenn(AI)",
+      "published": "2026-08-23T14:49:15Z",
+      "description": "現在、自社プロダクトの開発でAI駆動開発（AI-Driven Development）をガッツリ導入してゴリゴリ進めているのですが、先日ちょっと嬉しい出来事があったので共有させてください！\n最近、AIエージェント界隈でよく耳にする「ハーネス（Harness）」や「ループエンジニアリング（Loop Engineering）」というキーワード。\n気になったので、開発パートナーとして毎日使っているCla...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
     {
       "title": "バイブコーディングで職務経歴書生成アプリを作った話",
       "url": "https://zenn.dev/tnakamoto/articles/cc7ac637ebd560",
@@ -59,16 +129,6 @@
       "site": "Zenn(AI)",
       "published": "2026-08-23T12:25:05Z",
       "description": "TL;DR\n\nClaude Codeで作業するときは、精度低下しないようにセッションを細かく切りたい。\nしかしセッションを切るとコンテキストが失われるので、次のセッションで復帰するための「引き継ぎファイル」が必要になる。\n\nHANDOFF.md（引き継ぎ）/ QUESTIONS ファイル（質問リスト）/ 一意採番（Q1・P2 方式）の 3 点セットで対処している\nHANDOFF.md は時系列ログ...",
-      "category": "AI・技術",
-      "rss_category": "",
-      "image_url": ""
-    },
-    {
-      "title": "クソボケ確率生成器が「知性」を獲得するまで",
-      "url": "https://zenn.dev/mol6235/articles/7c0790d902c0c3",
-      "site": "Zenn(AI)",
-      "published": "2026-08-23T12:03:17Z",
-      "description": "はじめに神は天と地とを創造された。\n地は形なく、むなしく、やみが淵のおもてにあり、神の霊が水のおもてをおおっていた。\n神は「2ページ目をもう少し明るくできない？」と言われた。すると光があった。\n神はその光を見て、良しとされた。\n-- AI創世記 1章3節\n\n クソボケ確率生成器が「知性」を獲得するまで\n少し前まで、生成AIは\n「次に来そうな単語を確率で並べているだけ」\nと言われていた。\n実際、GP...",
       "category": "AI・技術",
       "rss_category": "",
       "image_url": ""
@@ -164,16 +224,6 @@
       "image_url": ""
     },
     {
-      "title": "Metaのオープンウェイト戦略 ── AIモデルを無料で配って勝つビジネスモデルは、どう成立しているのか？",
-      "url": "https://zenn.dev/leading_ai/articles/meta-open-weight-strategy",
-      "site": "Zenn(AI)",
-      "published": "2026-08-23T10:25:52Z",
-      "description": "みなさん、こんにちは。\nビジネス×デザイン×テクノロジーの3つの専門領域を越境している、\nSun*のビジネスデザイナー兼AIストラテジストの山内怜史です。\n今日は、Metaが2026年8月に行った「AIモデルの無料公開」を題材に、無料で配って勝つビジネスモデルがどういう条件で成立するのかを分析します。\n\n\n 序章：同じ日に、２つのことが起きた\n2026年8月10日、Metaのマーク・ザッカーバーグ...",
-      "category": "AI・技術",
-      "rss_category": "",
-      "image_url": ""
-    },
-    {
       "title": "AIが実装・テストし品質保証する時代の変革とは",
       "url": "https://zenn.dev/sunsun_eng/articles/ai-quality-assurance-trends-2023",
       "site": "Zenn(AI)",
@@ -189,26 +239,6 @@
       "site": "Zenn(AI)",
       "published": "2026-08-23T10:09:07Z",
       "description": "エラーを3秒でAIに丸投げする若手エンジニアの現状と解決策\nこの記事の要点\n\n若手エンジニアがエラー処理をAIに任せる傾向が広がっています。\nAIを使う際は、ヒューマンタッチや確認が重要です。\n効果的なエラー解決のために手動の学習も不可欠です。\n\n\n 若手エンジニアとAIの関係\n最近、若手エンジニアの多くがエラー処理をAIに丸投げする傾向が見られます。これは時間の短縮や効率的な問題解決を求める心情...",
-      "category": "AI・技術",
-      "rss_category": "",
-      "image_url": ""
-    },
-    {
-      "title": "AIエージェントの手戻りが減らない人へ——「書かせ方」ではなく「直させ方」をルールにする",
-      "url": "https://zenn.dev/ai_tools_memo/articles/7caa1b61e7eda8",
-      "site": "Zenn(AI)",
-      "published": "2026-08-23T09:21:51Z",
-      "description": "同じレビュー指摘を、1週間で5回書いたことがあります。相手はAIコーディングエージェントでした。指摘するたびに直りはするのに、次のタスクではまた同じことをやる。プロンプトを丁寧にしても、変わりませんでした。\nこの記事は、Claude CodeのようなAIエージェントを開発で使っていて、次に心当たりがある人に向けて書いています。\n\n出力の手直しが毎回発生していて、指摘がループしている\n「もっと丁寧に...",
-      "category": "AI・技術",
-      "rss_category": "",
-      "image_url": ""
-    },
-    {
-      "title": "AIエージェントにファイルを壊させない4つのルール——一括置換で477行消した事故から",
-      "url": "https://zenn.dev/ai_tools_memo/articles/5c7410d1ea3120",
-      "site": "Zenn(AI)",
-      "published": "2026-08-23T09:11:10Z",
-      "description": "477行のファイルから345行が消えました。未コミットでした。同じ日にもう1本、622行のファイルからも453行。手を動かしたのはAIコーディングエージェントで、指示を出したのは私です。\nこの記事は、Claude CodeのようなAIコーディングエージェントにファイル編集を任せている（または任せようとしている）人に向けて書いています。とくに、次のどれかに心当たりがあれば役に立つはずです。\n\nエージ...",
       "category": "AI・技術",
       "rss_category": "",
       "image_url": ""
