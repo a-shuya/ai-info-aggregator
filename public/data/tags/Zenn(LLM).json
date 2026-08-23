@@ -1,8 +1,28 @@
 {
   "site": "Zenn(LLM)",
-  "last_updated": "2026-08-23T11:49:39.194717",
-  "total_articles": 5566,
+  "last_updated": "2026-08-23T12:12:21.619899",
+  "total_articles": 5567,
   "articles": [
+    {
+      "title": "llama.cppでQwen3.8:27b-GGUFのThinking Effortを下げる",
+      "url": "https://zenn.dev/ibuky/articles/d717c1c4df4245",
+      "site": "Zenn(LLM)",
+      "published": "2026-08-23T07:34:16Z",
+      "description": "環境\nhttps://zenn.dev/ibuky/articles/2ce9282ea37122\n\n まとめ\nQwen3.8:27b-GGUF（特にQ4_0などの量子化モデル）で思考ループや過剰な試行・出力遅延が気になる場合、llama-cliの --thinking-effort low オプションを指定することは有効な対策となりそう。\n\n不要な思考ステップが削減され、応答までの待ち時間やトー...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "AIに全部任せて、4箇所だけ止める——無人運用で固まった「意図確認レイヤー」の設計",
+      "url": "https://zenn.dev/zenn_content/articles/claude-code-intention-guardrail",
+      "site": "Zenn(LLM)",
+      "published": "2026-08-23T07:28:01Z",
+      "description": "はじめに\n結論: AIコーディングエージェントの信頼性問題は、モデルを賢くしても解決しませんでした。解決したのは、「どこで人間の承認を挟むか」を4類型に固定し、それ以外を全部自動化する設計です。\nこの記事を書いている今日も、私の環境では週次の自動タスクが312件の収集記事を無人でスクリーニングし、270件を自動処理し、環境設定を書き換える10件だけを人間の承認に回しました。承認は1回。適用後の検証...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
     {
       "title": "RTX 3060 12GB で OpenMythos 1B を学習させてみた",
       "url": "https://zenn.dev/gsun/articles/a34655bcbcf8a9",
@@ -14,11 +34,31 @@
       "image_url": ""
     },
     {
+      "title": "RLは推論を教えていない — トークンの1-3%を修正するだけでRLと同等の性能を達成するReasonMaxxer",
+      "url": "https://zenn.dev/lixian/articles/reasonmaxxer-sparse-rl",
+      "site": "Zenn(LLM)",
+      "published": "2026-08-23T06:30:25Z",
+      "description": "はじめに\nLLMの推論能力を高めるための標準的なアプローチといえば、強化学習（RL） だ。GRPO、PPO、RLOOといったアルゴリズムが、DeepSeek-R1やQwQ、o1などに代表される推論特化モデルの訓練に使われている。多くの人が「RLがモデルに新しい推論戦略を教えている」と暗黙に仮定している。\nしかし、今回紹介する論文 \"Rethinking RL for LLM Reasoning: ...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
       "title": "LLM APIの「安いモデル」は、キャッシュ率を入れると順位が入れ替わる",
       "url": "https://zenn.dev/tokentally/articles/b67715ced14b48",
       "site": "Zenn(LLM)",
       "published": "2026-08-23T06:06:15Z",
       "description": "料金表を見て選んだモデルが、実際には最安ではなかった\nLLM APIの料金表はどこも「100万トークンあたり $X」で書かれています。それは正しいのですが、実際に知りたいのは「自分のアプリだと月いくらか」であって、単価ではありません。\nそして単価だけで選ぶと、プロンプトキャッシュを考慮した瞬間に順位が入れ替わることがあります。しかもそれは珍しいケースではなく、システムプロンプトが長いチャットボット...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "RAGにおけるコンテキスト整備",
+      "url": "https://zenn.dev/oryo_data/articles/7c431c3b33268e",
+      "site": "Zenn(LLM)",
+      "published": "2026-08-23T04:31:49Z",
+      "description": "蒲生弘郷著『LLMの原理、RAG・エージェント開発から読み解くコンテキストエンジニアリング』の読書アウトプット第4弾です。今回は第4章「RAGにおけるコンテキスト整備」を扱います。\nhttps://link.amazon/B09ERwnQI\n前回までの記事はこちら。\n\n第1章: LLMの仕組みから逆算する、コンテキストエンジニアリングが効く理由\n第2章: APIを用いたコンテキストエンジニアリング...",
       "category": "AI・技術",
       "rss_category": "",
       "image_url": ""
@@ -44,26 +84,6 @@
       "image_url": ""
     },
     {
-      "title": "AIエージェントへの「委譲」はタダではない — 1週間分の実測で損益分岐を出した",
-      "url": "https://zenn.dev/ace_toshi/articles/claude-code-agent-delegation-cost",
-      "site": "Zenn(LLM)",
-      "published": "2026-08-22T16:54:31Z",
-      "description": "この記事の主張\nClaude Code から別のCLIエージェント（Gemini Antigravity）へ力仕事を委譲する構成を組み、1週間運用した。狙いは「Claudeの週間トークン制限を温存する」ことである。\n結果として得られた結論は、当初の期待とはかなり違った。\n\n委譲には固定費がある。1回あたり Claude側 75〜90k tokens ＋ 起動9〜12秒 ＋ 委譲先 最低20k to...",
-      "category": "AI・技術",
-      "rss_category": "",
-      "image_url": ""
-    },
-    {
-      "title": "CPUのみで極力高速にローカルLLMする",
-      "url": "https://zenn.dev/ashidan/articles/tech_llm_cpu_b",
-      "site": "Zenn(LLM)",
-      "published": "2026-08-22T16:48:10Z",
-      "description": "Windowsかつ、CPUのみでローカルLLMしたい\nRAMが16GB以上ある\n自前ビルドが必要でも性能を上げたい\n\nというニッチな需要を満たす記事です。\n関連記事が CPUのみでローカルLLMする にあります。自前ビルドが不要なぶん少し楽です。\nなお、この記事は2026年8月23日の情報を元に書かれています。 ik_llama.cpp のオプション群は将来削除されうるので、適当にアレンジして下さ...",
-      "category": "AI・技術",
-      "rss_category": "",
-      "image_url": ""
-    },
-    {
       "title": "運用初日、Slackに208件通知が飛んできた話 #4.5",
       "url": "https://zenn.dev/katamarize/articles/step4-notification-two-lane",
       "site": "Zenn(LLM)",
@@ -79,16 +99,6 @@
       "site": "Zenn(LLM)",
       "published": "2026-08-22T15:31:44Z",
       "description": "!\nローカルLLMで作る自分専用ニュースbot シリーズの4本目です。この記事だけでも読めます。\n前: 監視ソースをYAMLで管理し、クラッシュしても再開できるキューを作る\n次: 運用初日、Slackに208件通知が飛んできた話\n\n\n この記事について\n前回までで、RSS収集→差分検知→LLM分析のパイプラインが完成し、分析結果はSQLiteに溜まるようになりました。今回はその出口、Slack通知...",
-      "category": "AI・技術",
-      "rss_category": "",
-      "image_url": ""
-    },
-    {
-      "title": "なぜ、GPTのTerra以下、ClaudeのSonnet以下、Geminiの全部に価値が無いのか？",
-      "url": "https://zenn.dev/pdfractal/articles/55929755eb39c1",
-      "site": "Zenn(LLM)",
-      "published": "2026-08-22T15:08:55Z",
-      "description": "はじめに\n2026年現在、大規模言語モデルは露骨な階層商品になっています。OpenAIはGPT-5.6 Solを最上位、Terraを日常業務向けのバランス型、Lunaを高速・低価格モデルとして位置づけています。AnthropicもClaude Opusを上位に置き、Sonnetを価格と性能のバランスに優れたモデルとして提供しています。GoogleもGeminiのFlash系を速度と費用対効果に優れ...",
       "category": "AI・技術",
       "rss_category": "",
       "image_url": ""
