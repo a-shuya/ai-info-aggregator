@@ -1,7 +1,7 @@
 {
   "site": "Zenn(LLM)",
-  "last_updated": "2026-08-23T18:52:24.042971",
-  "total_articles": 5585,
+  "last_updated": "2026-08-23T19:24:32.801049",
+  "total_articles": 5577,
   "articles": [
     {
       "title": "ローカルLLM同士のmaster/worker構成と捏造事故",
@@ -74,66 +74,6 @@
       "image_url": ""
     },
     {
-      "title": "AIエージェントの手戻りが減らない人へ——「書かせ方」ではなく「直させ方」をルールにする",
-      "url": "https://zenn.dev/ai_tools_memo/articles/7caa1b61e7eda8",
-      "site": "Zenn(LLM)",
-      "published": "2026-08-23T09:21:51Z",
-      "description": "同じレビュー指摘を、1週間で5回書いたことがあります。相手はAIコーディングエージェントでした。指摘するたびに直りはするのに、次のタスクではまた同じことをやる。プロンプトを丁寧にしても、変わりませんでした。\nこの記事は、Claude CodeのようなAIエージェントを開発で使っていて、次に心当たりがある人に向けて書いています。\n\n出力の手直しが毎回発生していて、指摘がループしている\n「もっと丁寧に...",
-      "category": "AI・技術",
-      "rss_category": "",
-      "image_url": ""
-    },
-    {
-      "title": "三大エンジニアリングは pdlc-skills の中でどう噛み合うのか",
-      "url": "https://zenn.dev/kanfupanda/articles/pdlc-interlock-three-layers",
-      "site": "Zenn(LLM)",
-      "published": "2026-08-23T09:11:01Z",
-      "description": "!\nこの記事は個人ブログにも掲載しています → https://kanfu-panda.github.io/ja/blog/2026/08/23/how-three-paradigms-interlock.ja.html\n\n\n\n前回の最後に物差しを一つ置きました。あるツールの三層が本当に結合しているかは、同じ状態を共有しているかで判断できる、と。今回はそれを具体的な形にします——三層は最初から最後...",
-      "category": "AI・技術",
-      "rss_category": "",
-      "image_url": ""
-    },
-    {
-      "title": "今更聞けないエージェントスキル入門｜最初の1つを書いて育てるまで",
-      "url": "https://zenn.dev/fukaunabara/articles/agent-skills-basics",
-      "site": "Zenn(LLM)",
-      "published": "2026-08-23T08:21:36Z",
-      "description": "はじめに\n毎回、AI に同じフィードバックをしていませんか。\nAI エージェントに作業をさせて、出てきたものを見て、チャットで「そうじゃなくて、こうしてほしい」と打ち込む。そのときは直してくれますが、セッションが変わると元に戻ります。\nこれをスキルに書くようにしてから、同じ説明を繰り返す場面が減りました。加えて、AI が毎回ゼロから試行錯誤する回数も減ったので、作業の効率が少し良くなったと感じるこ...",
-      "category": "AI・技術",
-      "rss_category": "",
-      "image_url": ""
-    },
-    {
-      "title": "AI Providerを選ばせないために──APAPを設計・実装して見えた抽象化の境界",
-      "url": "https://zenn.dev/io0323/articles/0bba3dc141ca4b",
-      "site": "Zenn(LLM)",
-      "published": "2026-08-23T08:19:05Z",
-      "description": "生成AIをプロダクトに組み込むとき、最初はProviderのSDKを直接呼べば十分に見えます。チャットならメッセージを渡して応答を受け取り、Embeddingならテキストをベクトルにする。それ自体は難しくありません。\n難しくなるのは、その次です。モデルを入れ替えたい。リージョン制約に合わせたい。あるProviderが混み合ったら別の候補へ切り替えたい。利用量とコストをテナント単位で統制したい。スト...",
-      "category": "AI・技術",
-      "rss_category": "",
-      "image_url": ""
-    },
-    {
-      "title": "llama.cppでQwen3.8:27b-GGUFのThinking Effortを下げる",
-      "url": "https://zenn.dev/ibuky/articles/d717c1c4df4245",
-      "site": "Zenn(LLM)",
-      "published": "2026-08-23T07:34:16Z",
-      "description": "環境\nhttps://zenn.dev/ibuky/articles/2ce9282ea37122\n\n まとめ\nQwen3.8:27b-GGUF（特にQ4_0などの量子化モデル）で思考ループや過剰な試行・出力遅延が気になる場合、llama-cliの --thinking-effort low オプションを指定することは有効な対策となりそう。\n\n不要な思考ステップが削減され、応答までの待ち時間やトー...",
-      "category": "AI・技術",
-      "rss_category": "",
-      "image_url": ""
-    },
-    {
-      "title": "AIに全部任せて、4箇所だけ止める——無人運用で固まった「意図確認レイヤー」の設計",
-      "url": "https://zenn.dev/zenn_content/articles/claude-code-intention-guardrail",
-      "site": "Zenn(LLM)",
-      "published": "2026-08-23T07:28:01Z",
-      "description": "はじめに\n結論: AIコーディングエージェントの信頼性問題は、モデルを賢くしても解決しませんでした。解決したのは、「どこで人間の承認を挟むか」を4類型に固定し、それ以外を全部自動化する設計です。\nこの記事を書いている今日も、私の環境では週次の自動タスクが312件の収集記事を無人でスクリーニングし、270件を自動処理し、環境設定を書き換える10件だけを人間の承認に回しました。承認は1回。適用後の検証...",
-      "category": "AI・技術",
-      "rss_category": "",
-      "image_url": ""
-    },
-    {
       "title": "RTX 3060 12GB で OpenMythos 1B を学習させてみた",
       "url": "https://zenn.dev/gsun/articles/a34655bcbcf8a9",
       "site": "Zenn(LLM)",
@@ -144,31 +84,11 @@
       "image_url": ""
     },
     {
-      "title": "RLは推論を教えていない — トークンの1-3%を修正するだけでRLと同等の性能を達成するReasonMaxxer",
-      "url": "https://zenn.dev/lixian/articles/reasonmaxxer-sparse-rl",
-      "site": "Zenn(LLM)",
-      "published": "2026-08-23T06:30:25Z",
-      "description": "はじめに\nLLMの推論能力を高めるための標準的なアプローチといえば、強化学習（RL） だ。GRPO、PPO、RLOOといったアルゴリズムが、DeepSeek-R1やQwQ、o1などに代表される推論特化モデルの訓練に使われている。多くの人が「RLがモデルに新しい推論戦略を教えている」と暗黙に仮定している。\nしかし、今回紹介する論文 \"Rethinking RL for LLM Reasoning: ...",
-      "category": "AI・技術",
-      "rss_category": "",
-      "image_url": ""
-    },
-    {
       "title": "LLM APIの「安いモデル」は、キャッシュ率を入れると順位が入れ替わる",
       "url": "https://zenn.dev/tokentally/articles/b67715ced14b48",
       "site": "Zenn(LLM)",
       "published": "2026-08-23T06:06:15Z",
       "description": "料金表を見て選んだモデルが、実際には最安ではなかった\nLLM APIの料金表はどこも「100万トークンあたり $X」で書かれています。それは正しいのですが、実際に知りたいのは「自分のアプリだと月いくらか」であって、単価ではありません。\nそして単価だけで選ぶと、プロンプトキャッシュを考慮した瞬間に順位が入れ替わることがあります。しかもそれは珍しいケースではなく、システムプロンプトが長いチャットボット...",
-      "category": "AI・技術",
-      "rss_category": "",
-      "image_url": ""
-    },
-    {
-      "title": "RAGにおけるコンテキスト整備",
-      "url": "https://zenn.dev/oryo_data/articles/7c431c3b33268e",
-      "site": "Zenn(LLM)",
-      "published": "2026-08-23T04:31:49Z",
-      "description": "蒲生弘郷著『LLMの原理、RAG・エージェント開発から読み解くコンテキストエンジニアリング』の読書アウトプット第4弾です。今回は第4章「RAGにおけるコンテキスト整備」を扱います。\nhttps://link.amazon/B09ERwnQI\n前回までの記事はこちら。\n\n第1章: LLMの仕組みから逆算する、コンテキストエンジニアリングが効く理由\n第2章: APIを用いたコンテキストエンジニアリング...",
       "category": "AI・技術",
       "rss_category": "",
       "image_url": ""
