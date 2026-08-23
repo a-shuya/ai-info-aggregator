@@ -1,7 +1,7 @@
 {
   "site": "Zenn(Python)",
-  "last_updated": "2026-08-23T17:28:38.491507",
-  "total_articles": 5944,
+  "last_updated": "2026-08-23T17:50:23.222277",
+  "total_articles": 5947,
   "articles": [
     {
       "title": "メモ：Claude CodeのStatus Lineに5時間・週間制限の状況を常に表示する（Windows）",
@@ -9,16 +9,6 @@
       "site": "Zenn(Python)",
       "published": "2026-08-23T13:17:08Z",
       "description": "自分用メモです👀\n普段はClaude CodeやCodexを利用しています。\n5時間制限や週間制限にちょくちょく引っ掛かるので、使用ペース調整のためにアレやコレやツールを試したり、以下のような可視化モニターを作ってチェックしていたりしたのですが、、、\n\n最近、作業環境は一周回ってCLIベースに戻ってきたので、ステータスラインに常時表示する方針に変えました。\nそのメモです。\n\n以下のように表示してい...",
-      "category": "開発",
-      "rss_category": "",
-      "image_url": ""
-    },
-    {
-      "title": "見せかけの回帰を実測: 無関係なランダムウォーク1万ペアの偽有意率は、n=50の67%からn=5000の97%まで上がり続けた",
-      "url": "https://zenn.dev/shakeailab/articles/spurious-correlation-random-walk",
-      "site": "Zenn(Python)",
-      "published": "2026-08-23T11:50:16Z",
-      "description": "「互いに何の関係もない2つの時系列を持ってきて相関を取ると、しばしばr=0.9のような強烈な相関が出る」——時系列分析の教科書に必ず載っている**見せかけの回帰(spurious regression)**の話だ。ナイジェリアの海賊の数と地球の平均気温、みたいなネタ画像は誰でも見たことがあると思う。\nただ、私はこの話をずっと「たまたま変な標本を引いたときの笑い話」くらいに受け取っていた。統計の基本...",
       "category": "開発",
       "rss_category": "",
       "image_url": ""
@@ -224,11 +214,31 @@
       "image_url": ""
     },
     {
+      "title": "エージェントのどこが壊れているのか — DeepEval で推論・行動・全体を層別に評価する",
+      "url": "https://zenn.dev/joker20081/articles/deepeval-agent-evaluation-three-layers",
+      "site": "Zenn(Python)",
+      "published": "2026-08-23T00:45:27Z",
+      "description": "AI エージェントを作っていると、一番よく出るのがこの症状です。\n\n動いてはいるが、なんかおかしい。\n\n最終的な回答が微妙。でも、なぜ微妙なのかが分からない。計画の立て方が悪いのか、ツールの選択を間違えたのか、引数がおかしいのか、それとも同じ処理を何度も繰り返して迷子になっているのか。\nエージェントの評価が RAG やチャットボットより難しいのは、失敗する場所が多いからです。 最終出力だけを眺めて...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
       "title": "46. AIの判断基準を公開資料から作る【実装編】— 実測値を機械検査に落とし、自分の資産を測り返す",
       "url": "https://zenn.dev/yamada_ai_dev/articles/public-materials-as-criteria-implementation",
       "site": "Zenn(Python)",
       "published": "2026-08-22T23:30:10Z",
       "description": "!\nこの記事は生成AIで作成した草稿を、筆者が内容を確認し、添削・修正のうえ公開しています。\n\n\n TL;DR\n【調査編】 で得た実測値を、機械検査13項目＋読解判定18項目のレビュー機構に落とした。設計で一番効いたのは「資料の型を最初に判定して、以降の基準の当て方を切り替える」ことだ。完成後に自分の資産を測り返したら、フォントの基準違反と「示唆がゼロ」という指摘が自分に返ってきた。\n※ 調査対象...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "OTelの移行フラグ1つでAgent Framework 1.15.0の会話本文が消えた",
+      "url": "https://zenn.dev/kazu_aiengineer/articles/agent-framework-otel-semconv-optin",
+      "site": "Zenn(Python)",
+      "published": "2026-08-22T23:18:21Z",
+      "description": "Microsoft Agent Framework の Python 版が日本時間の 2026-08-22 朝に 1.15.0 になった。変更点は多いが、[BREAKING] が付いているのは OpenTelemetry の GenAI セマンティック規約まわりを整理した #7673 ひとつだけだ。\nリリースノートを読んだ限りでは「規約のバージョンを環境変数で選べるようにした」という穏当な話に見え...",
       "category": "開発",
       "rss_category": "",
       "image_url": ""
@@ -249,6 +259,26 @@
       "site": "Zenn(Python)",
       "published": "2026-08-22T17:30:55Z",
       "description": "家の面倒ごとを自作ツールで潰す作業を1年ほど続けていて、その大半をAIと一緒にやっている。記録も集計も提案も、PCの前に座れば全部そこにある。\n問題は、私がPCの前にいる時間が1日のうちごくわずかだということだった。\n「さっきの、記録しておきたい」と思うのは決まって外にいるときだ。子どもと公園にいるとき、通勤の電車の中、寝る前の布団の中。そのとき手元にあるのはスマホだけで、書き留めておきたいことは...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "運用初日、Slackに208件通知が飛んできた話 #4.5",
+      "url": "https://zenn.dev/katamarize/articles/step4-notification-two-lane",
+      "site": "Zenn(Python)",
+      "published": "2026-08-22T15:32:22Z",
+      "description": "!\nローカルLLMで作る自分専用ニュースbot シリーズの番外編(4.5本目)です。この記事だけでも読めます。\n前: PythonからSlack Incoming Webhookで通知する\n\n\n この記事について\n前回はSlack通知を実装し、モック検証まで済ませて「あとはWebhookを設定するだけ」と書きました。この記事は、実際にWebhookを設定して動かした初日に起きたことと、その反省で入...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "PythonからSlack Incoming Webhookで通知する(再送できるキュー設計) #4",
+      "url": "https://zenn.dev/katamarize/articles/step4-slack-webhook",
+      "site": "Zenn(Python)",
+      "published": "2026-08-22T15:31:44Z",
+      "description": "!\nローカルLLMで作る自分専用ニュースbot シリーズの4本目です。この記事だけでも読めます。\n前: 監視ソースをYAMLで管理し、クラッシュしても再開できるキューを作る\n次: 運用初日、Slackに208件通知が飛んできた話\n\n\n この記事について\n前回までで、RSS収集→差分検知→LLM分析のパイプラインが完成し、分析結果はSQLiteに溜まるようになりました。今回はその出口、Slack通知...",
       "category": "開発",
       "rss_category": "",
       "image_url": ""
