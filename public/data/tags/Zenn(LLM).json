@@ -1,18 +1,8 @@
 {
   "site": "Zenn(LLM)",
-  "last_updated": "2026-08-23T14:09:28.678263",
-  "total_articles": 5571,
+  "last_updated": "2026-08-23T14:39:38.857001",
+  "total_articles": 5577,
   "articles": [
-    {
-      "title": "AIエージェントの手戻りが減らない人へ——「書かせ方」ではなく「直させ方」をルールにする",
-      "url": "https://zenn.dev/ai_tools_memo/articles/7caa1b61e7eda8",
-      "site": "Zenn(LLM)",
-      "published": "2026-08-23T09:21:51Z",
-      "description": "同じレビュー指摘を、1週間で5回書いたことがあります。相手はAIコーディングエージェントでした。指摘するたびに直りはするのに、次のタスクではまた同じことをやる。プロンプトを丁寧にしても、変わりませんでした。\nこの記事は、Claude CodeのようなAIエージェントを開発で使っていて、次に心当たりがある人に向けて書いています。\n\n出力の手直しが毎回発生していて、指摘がループしている\n「もっと丁寧に...",
-      "category": "AI・技術",
-      "rss_category": "",
-      "image_url": ""
-    },
     {
       "title": "三大エンジニアリングは pdlc-skills の中でどう噛み合うのか",
       "url": "https://zenn.dev/kanfupanda/articles/pdlc-interlock-three-layers",
@@ -114,11 +104,71 @@
       "image_url": ""
     },
     {
+      "title": "RAGとGraphRAGを同じ100問で並べたら、勝敗が質問タイプで真っ二つに割れた",
+      "url": "https://zenn.dev/kenimo49/articles/rag-vs-graphrag-100-questions-verdict",
+      "site": "Zenn(LLM)",
+      "published": "2026-08-23T01:22:35Z",
+      "description": "私はGraphRAGを「次世代RAG」だと信じて、全質問に適用しました。100問並列評価の結果、44問ぶんのカテゴリでRAGに負けたのです。導入前に測っておくべきでした。\n社内QAアシスタントの精度を上げるつもりが、逆にベースライン割れを引き起こしました。原因は導入手順ではなく、質問分布を測らないまま切り替えたことにあります。この記事では、その100問を5カテゴリに分けて数値化した結果と、明日から...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
       "title": "エージェントのどこが壊れているのか — DeepEval で推論・行動・全体を層別に評価する",
       "url": "https://zenn.dev/joker20081/articles/deepeval-agent-evaluation-three-layers",
       "site": "Zenn(LLM)",
       "published": "2026-08-23T00:45:27Z",
       "description": "AI エージェントを作っていると、一番よく出るのがこの症状です。\n\n動いてはいるが、なんかおかしい。\n\n最終的な回答が微妙。でも、なぜ微妙なのかが分からない。計画の立て方が悪いのか、ツールの選択を間違えたのか、引数がおかしいのか、それとも同じ処理を何度も繰り返して迷子になっているのか。\nエージェントの評価が RAG やチャットボットより難しいのは、失敗する場所が多いからです。 最終出力だけを眺めて...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "オープンソース化されたRISC-V AIチップET-SoC-1が、llama.cppで動く",
+      "url": "https://zenn.dev/okssusucha/articles/20260711-llama-cpp-et-soc-1-backend",
+      "site": "Zenn(LLM)",
+      "published": "2026-08-23T00:16:43Z",
+      "description": "llama.cpp のリリース履歴を追っていて、7月10日の b9951 で手が止まった。ggml-et という見慣れないバックエンドが増えている。ET は EdgeTPU でも ExecuTorch でもなく、Esperanto Technologies が設計した RISC-V チップ ET-SoC-1 を指していた。数年前に話題をさらったあと表舞台から消えていたAIチップが、いまさら推論ラン...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "AIを使っても「結局使えない」と感じたことはありませんか？その原因と解法",
+      "url": "https://zenn.dev/arc0922/articles/8b2403724f88dc",
+      "site": "Zenn(LLM)",
+      "published": "2026-08-23T00:00:05Z",
+      "description": "0. はじめに\nAIを使っても、結局「使えない」と感じたことはありませんか？\n私は普段から業務でAIを活用していますが、周囲のエンジニアやビジネスパーソンに話を聞くと\nただチャットとして雑談や検索代わりに使っているだけという声が大半でした。\nその理由を深掘りしてみると、意外な事実が浮かび上がりました。\nそれは、スキルを「作るのが怖い」 ということ。\n\nMarkdown形式で書けと言われても、頭の中...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "OTelの移行フラグ1つでAgent Framework 1.15.0の会話本文が消えた",
+      "url": "https://zenn.dev/kazu_aiengineer/articles/agent-framework-otel-semconv-optin",
+      "site": "Zenn(LLM)",
+      "published": "2026-08-22T23:18:21Z",
+      "description": "Microsoft Agent Framework の Python 版が日本時間の 2026-08-22 朝に 1.15.0 になった。変更点は多いが、[BREAKING] が付いているのは OpenTelemetry の GenAI セマンティック規約まわりを整理した #7673 ひとつだけだ。\nリリースノートを読んだ限りでは「規約のバージョンを環境変数で選べるようにした」という穏当な話に見え...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "AIエージェントへの「委譲」はタダではない — 1週間分の実測で損益分岐を出した",
+      "url": "https://zenn.dev/ace_toshi/articles/claude-code-agent-delegation-cost",
+      "site": "Zenn(LLM)",
+      "published": "2026-08-22T16:54:31Z",
+      "description": "この記事の主張\nClaude Code から別のCLIエージェント（Gemini Antigravity）へ力仕事を委譲する構成を組み、1週間運用した。狙いは「Claudeの週間トークン制限を温存する」ことである。\n結果として得られた結論は、当初の期待とはかなり違った。\n\n委譲には固定費がある。1回あたり Claude側 75〜90k tokens ＋ 起動9〜12秒 ＋ 委譲先 最低20k to...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "CPUのみで極力高速にローカルLLMする",
+      "url": "https://zenn.dev/ashidan/articles/tech_llm_cpu_b",
+      "site": "Zenn(LLM)",
+      "published": "2026-08-22T16:48:10Z",
+      "description": "Windowsかつ、CPUのみでローカルLLMしたい\nRAMが16GB以上ある\n自前ビルドが必要でも性能を上げたい\n\nというニッチな需要を満たす記事です。\n関連記事が CPUのみでローカルLLMする にあります。自前ビルドが不要なぶん少し楽です。\nなお、この記事は2026年8月23日の情報を元に書かれています。 ik_llama.cpp のオプション群は将来削除されうるので、適当にアレンジして下さ...",
       "category": "AI・技術",
       "rss_category": "",
       "image_url": ""
@@ -139,6 +189,16 @@
       "site": "Zenn(LLM)",
       "published": "2026-08-22T15:31:44Z",
       "description": "!\nローカルLLMで作る自分専用ニュースbot シリーズの4本目です。この記事だけでも読めます。\n前: 監視ソースをYAMLで管理し、クラッシュしても再開できるキューを作る\n次: 運用初日、Slackに208件通知が飛んできた話\n\n\n この記事について\n前回までで、RSS収集→差分検知→LLM分析のパイプラインが完成し、分析結果はSQLiteに溜まるようになりました。今回はその出口、Slack通知...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "なぜ、GPTのTerra以下、ClaudeのSonnet以下、Geminiの全部に価値が無いのか？",
+      "url": "https://zenn.dev/pdfractal/articles/55929755eb39c1",
+      "site": "Zenn(LLM)",
+      "published": "2026-08-22T15:08:55Z",
+      "description": "はじめに\n2026年現在、大規模言語モデルは露骨な階層商品になっています。OpenAIはGPT-5.6 Solを最上位、Terraを日常業務向けのバランス型、Lunaを高速・低価格モデルとして位置づけています。AnthropicもClaude Opusを上位に置き、Sonnetを価格と性能のバランスに優れたモデルとして提供しています。GoogleもGeminiのFlash系を速度と費用対効果に優れ...",
       "category": "AI・技術",
       "rss_category": "",
       "image_url": ""
