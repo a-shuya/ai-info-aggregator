@@ -1,8 +1,88 @@
 {
   "site": "Zenn(Python)",
-  "last_updated": "2026-08-23T10:57:29.826490",
-  "total_articles": 5934,
+  "last_updated": "2026-08-23T11:27:47.158520",
+  "total_articles": 5942,
   "articles": [
+    {
+      "title": "打った文字の一部だけが消える — ブラウザ自動化の type が半角英数字を落としていた",
+      "url": "https://zenn.dev/mameresearcher/articles/browser-type-silently-drops-ascii",
+      "site": "Zenn(Python)",
+      "published": "2026-08-23T11:07:31Z",
+      "description": "個人の自動化プロジェクトで、ブラウザを操作するエージェントに SNS の返信を入力させている。エディタの入力欄に type で本文を打ち込み、送信ボタンを押す、それだけの処理だ。\nある日、送信の直前に入れておいた検査がこう鳴った。\n5文字目で違う: 入った='を' 期待='1' / 長さ 178 vs 190\n打ったはずの本文と、入力欄に実際に入った本文が 12文字ずれていた。\n消えていたのは、半...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "「接続できている」と「値が来ている」は別物 — ヘルスチェックを2状態から3状態にした話",
+      "url": "https://zenn.dev/kadoulog/articles/health-check-three-states",
+      "site": "Zenn(Python)",
+      "published": "2026-08-23T10:34:07Z",
+      "description": "外部データを取ってくるアプリに「接続中 / 不通」のバッジを出したら、正常に動いている時間帯だけ「不通」と表示されるバグを踏みました。\nエラーログは1行も出ません。例外も飛びません。接続まわりを何時間か疑ってから、原因が接続ではなく自分が書いた判定条件だったと分かりました。\n先に結論です。\n\n\nif 値 &gt; 0: を接続の生死判定に使うと、「値が0であることが正常な時間帯」で誤検知する\n\n「...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "GBDT × Polars：XGBoost・LightGBM・CatBoostの対応状況を調査・比較する",
+      "url": "https://zenn.dev/caron14/articles/gbdt-polars-support-comparison",
+      "site": "Zenn(Python)",
+      "published": "2026-08-23T09:48:30Z",
+      "description": "要旨\nPolarsで特徴量を作成した後、学習直前にto_pandas()を実行する構成は、現在では必須ではありません。XGBoost、LightGBM、CatBoostはいずれもPolarsの入力を受け取れます。\nただし、ここでいう「Polars対応」は、GBDTの学習が自動的にOut-of-Coreになるという意味ではありません。Polarsが担当するのは主に読み込み、絞り込み、結合、集約、特徴...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "PyreflyとJaxtypingでPyTorchのShapeをVSCodeに表示する",
+      "url": "https://zenn.dev/yyamamot/articles/pyrefly-jaxtyping-tensor-shape",
+      "site": "Zenn(Python)",
+      "published": "2026-08-23T08:09:54Z",
+      "description": "PyreflyとJaxtypingでPyTorchのShapeをVSCodeに表示する\nPyTorchでTensor演算を書いていると、途中のShapeがわからなくなることがあります。\n特にAttentionのように転置(transpose)や行列積が続くコードでは、コメントにShapeを記載しないとよく混乱します。\n本記事では、PyreflyとJaxtypingを組み合わせて、TensorのSh...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "Python3 エンジニア認定実践試験を学んだ記録　vol.4",
+      "url": "https://zenn.dev/r3b8bx2/articles/8c58fab1a33f04",
+      "site": "Zenn(Python)",
+      "published": "2026-08-23T07:58:15Z",
+      "description": "注意： 本記事は書籍「実践レシピ」を参考に、筆者が学習した内容をまとめたものです。書籍の内容を網羅するものではありません。\n\n 🗓 日付\n2025年8月28日\n\n\n 🎯 今日の目的・テーマ\nPython3 エンジニア認定実践試験の学習\n\n\n 📚 学習・作業内容\n\n\n使用教材／ツール：Python実践レシピ\n\n\n実施内容：\n\n出題範囲の第11章、第13章、第14章、第17章を読了した\n\n\n\n\n\n 💡...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "Python3 エンジニア認定実践試験を学んだ記録　vol.3",
+      "url": "https://zenn.dev/r3b8bx2/articles/fe576ec138946c",
+      "site": "Zenn(Python)",
+      "published": "2026-08-23T07:58:03Z",
+      "description": "注意： 本記事は書籍「実践レシピ」を参考に、筆者が学習した内容をまとめたものです。書籍の内容を網羅するものではありません。\n🗓 日付\n2025年8月26日\n🎯 今日の目的・テーマ\nPython3 エンジニア認定実践試験の学習\n📚 学習・作業内容\n使用教材／ツール：Python実践レシピ\n実施内容：\n出題範囲の6章、4章、16章を読了した\n💡 気づき・学び\n新しく知ったこと：\n以下リンクに記載\n難し...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "Python3 エンジニア認定実践試験を学んだ記録　vol.2",
+      "url": "https://zenn.dev/r3b8bx2/articles/42480e5f224d67",
+      "site": "Zenn(Python)",
+      "published": "2026-08-23T07:57:46Z",
+      "description": "注意： 本記事は書籍「実践レシピ」を参考に、筆者が学習した内容をまとめたものです。書籍の内容を網羅するものではありません。\n\n 🗓 日付\n2025年8月24日\n\n\n 🎯 今日の目的・テーマ\nPython3 エンジニア認定実践試験の学習\n\n\n 📚 学習・作業内容\n\n\n使用教材／ツール：Python実践レシピ\n\n\n実施内容：\n\n出題範囲の3章、9章を読了した\n\n\n\n\n\n 💡 気づき・学び\n\n新しく知っ...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "Python3 エンジニア認定実践試験を学んだ記録　vol.1",
+      "url": "https://zenn.dev/r3b8bx2/articles/99caa7dabc1a4c",
+      "site": "Zenn(Python)",
+      "published": "2026-08-23T07:57:21Z",
+      "description": "注意： 本記事は書籍「実践レシピ」を参考に、筆者が学習した内容をまとめたものです。書籍の内容を網羅するものではありません。\n\n 🗓 日付\n2025年8月22日\n\n\n 🎯 今日の目的・テーマ\nPython3 エンジニア認定実践試験の学習\n\n\n 📚 学習・作業内容\n\n\n使用教材／ツール：Dpro\n\n\n実施内容：\n\n模擬試験を初回実施した\n\n\n\n\n\n 💡 気づき・学び\n注意\n\n\n新しく知ったこと：\n\n\n...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
     {
       "title": "型からModel Validatorまで ~Pydanticで作るYAML検証の4段階~",
       "url": "https://zenn.dev/syamashita/articles/a933ea1083f2a1",
