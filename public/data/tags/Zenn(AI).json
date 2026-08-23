@@ -1,7 +1,7 @@
 {
   "site": "Zenn(AI)",
-  "last_updated": "2026-08-23T11:27:47.158520",
-  "total_articles": 12912,
+  "last_updated": "2026-08-23T11:49:39.194717",
+  "total_articles": 12918,
   "articles": [
     {
       "title": "AIエージェントの手戻りが減らない人へ——「書かせ方」ではなく「直させ方」をルールにする",
@@ -174,7 +174,7 @@
       "image_url": ""
     },
     {
-      "title": "Embedding は採点に向かない ── 「偶数」と「奇数」に満点を出した話",
+      "title": "「偶数」と「奇数」に満点を出したので、Embedding での採点をやめました",
       "url": "https://zenn.dev/ferretcode/articles/why-i-dropped-embedding-scoring",
       "site": "Zenn(AI)",
       "published": "2026-08-23T06:17:30Z",
@@ -188,7 +188,7 @@
       "url": "https://zenn.dev/yhay81/articles/202608-llm-api-cost-guide",
       "site": "Zenn(AI)",
       "published": "2026-08-23T06:12:40Z",
-      "description": "LLM APIの請求額は、モデルの価格だけでは決まりません。アプリケーションがLLMを呼び出した回数、一回の呼び出しで処理した文章量、入力と出力に適用される単価などが組み合わさって決まります。\nまた、利用者には一回の操作に見えても、システムの内部では複数回のLLM呼び出しが発生することがあります。検索、データ保存、監視など、LLM APIとは別の費用が同時に発生するシステムもあります。\nこの記事で...",
+      "description": "LLM APIの請求額は、モデルの価格だけでは決まりません。アプリケーションがLLMを呼び出した回数、一回の呼び出しで\n処理した文章量、入力と出力に適用される単価などが組み合わさって決まります。\nまた、利用者には一回の操作に見えても、システムの内部では複数回のLLM呼び出しが発生することがあります。\n検索、データ保存、監視など、LLM APIとは別の費用が同時に発生するシステムもあります。\nこの記...",
       "category": "AI・技術",
       "rss_category": "",
       "image_url": ""
@@ -214,6 +214,16 @@
       "image_url": ""
     },
     {
+      "title": "検証は全部PASSした。それでも、生成したPDFの文字は見えなかった",
+      "url": "https://zenn.dev/ailmira/articles/300e0aee9997a2",
+      "site": "Zenn(AI)",
+      "published": "2026-08-23T03:13:43Z",
+      "description": "仕事でそのまま使えるPDFを、自動で作れる仕組みをAIと一緒に作っていました。\n作るだけではなく、正常に作れたかの確認もAI側で行います。\nある日、その仕組みから「完成した」と判断できるPDFができました。\n\n生成できている\nビルドも通っている\n構造にも問題はない\n文字が入っていることも確認できている\n検証もすべて通っている\n\nところが、実際の端末でPDFを開いてみると——\n文字が、見えない。\n一...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
       "title": "AIに作らせて、目で選ぶだけ。スマホでCloudflare Workersの日本語OGPを作り直した",
       "url": "https://zenn.dev/coji/articles/og-image-ai-visual-review-mobile",
       "site": "Zenn(AI)",
@@ -224,11 +234,31 @@
       "image_url": ""
     },
     {
+      "title": "【AWS】SageMaker AIの推論レコメンデーションは何を自動化したのか？",
+      "url": "https://zenn.dev/kira_n/articles/17ab673a3702cc",
+      "site": "Zenn(AI)",
+      "published": "2026-08-23T02:51:03Z",
+      "description": "はじめに\n2026年4月、Amazon SageMaker AIに「推論レコメンデーション」機能が追加されました。生成AIモデルの本番デプロイに必要なインスタンス選定やパラメータチューニングを、手動ベンチマークなしで自動化するというものです。同年8月にはSageMaker Studio上でのGUIベースの利用もサポートされ、より手軽に使える機能へと拡張されています。\n\nAmazon SageMak...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
       "title": "AGENTS.md リンタを118リポジトリに当てたら、記事に書いたフラグが一度も動いていなかった",
       "url": "https://zenn.dev/maronsan/articles/reflint-audit-118-repos",
       "site": "Zenn(AI)",
       "published": "2026-08-23T01:40:04Z",
       "description": "AGENTS.md や CLAUDE.md は静かに腐る。「セットアップは npm run build」「エントリは src/index.ts」と書いたまま、リネームや削除でその一文が嘘になる。エージェントはそれを信じて事故る。\n文体や表記ゆれではなく、参照が実在するかどうかだけを見て CI で落とすリンタを作って公開してある。reflint という。依存ゼロ・言語非依存で、バッククォートで書かれ...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "RAGとGraphRAGを同じ100問で並べたら、勝敗が質問タイプで真っ二つに割れた",
+      "url": "https://zenn.dev/kenimo49/articles/rag-vs-graphrag-100-questions-verdict",
+      "site": "Zenn(AI)",
+      "published": "2026-08-23T01:22:35Z",
+      "description": "私はGraphRAGを「次世代RAG」だと信じて、全質問に適用しました。100問並列評価の結果、44問ぶんのカテゴリでRAGに負けたのです。導入前に測っておくべきでした。\n社内QAアシスタントの精度を上げるつもりが、逆にベースライン割れを引き起こしました。原因は導入手順ではなく、質問分布を測らないまま切り替えたことにあります。この記事では、その100問を5カテゴリに分けて数値化した結果と、明日から...",
       "category": "AI・技術",
       "rss_category": "",
       "image_url": ""
@@ -254,11 +284,31 @@
       "image_url": ""
     },
     {
+      "title": "オープンソース化されたRISC-V AIチップET-SoC-1が、llama.cppで動く",
+      "url": "https://zenn.dev/okssusucha/articles/20260711-llama-cpp-et-soc-1-backend",
+      "site": "Zenn(AI)",
+      "published": "2026-08-23T00:16:43Z",
+      "description": "llama.cpp のリリース履歴を追っていて、7月10日の b9951 で手が止まった。ggml-et という見慣れないバックエンドが増えている。ET は EdgeTPU でも ExecuTorch でもなく、Esperanto Technologies が設計した RISC-V チップ ET-SoC-1 を指していた。数年前に話題をさらったあと表舞台から消えていたAIチップが、いまさら推論ラン...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
       "title": "AI動画の外注費は「完成尺」で見積もると半分以下に外れる（機材109万の回収試算）",
       "url": "https://zenn.dev/made_linlin/articles/ai-video-outsourcing-cost-burned-seconds",
       "site": "Zenn(AI)",
       "published": "2026-08-23T00:05:51Z",
       "description": "民生GPU 1台でAI MVを作っている。よく聞かれるのが「それ、外注したほうが安いのでは」だ。\n計算した。結論を先に言うと 「焼く量による」 で、そして多くの人はこの見積もりを半分以下に外す。\n理由は単純で、外注は「完成した尺」ではなく「焼いた尺」に課金されるからだ。\n数字には証拠クラスを付ける。A=自分で測った / B=公開値や申告値 / C=推測。\n価格は動くので、調査時点（2026-08・...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "AIを使っても「結局使えない」と感じたことはありませんか？その原因と解法",
+      "url": "https://zenn.dev/arc0922/articles/8b2403724f88dc",
+      "site": "Zenn(AI)",
+      "published": "2026-08-23T00:00:05Z",
+      "description": "0. はじめに\nAIを使っても、結局「使えない」と感じたことはありませんか？\n私は普段から業務でAIを活用していますが、周囲のエンジニアやビジネスパーソンに話を聞くと\nただチャットとして雑談や検索代わりに使っているだけという声が大半でした。\nその理由を深掘りしてみると、意外な事実が浮かび上がりました。\nそれは、スキルを「作るのが怖い」 ということ。\n\nMarkdown形式で書けと言われても、頭の中...",
       "category": "AI・技術",
       "rss_category": "",
       "image_url": ""
@@ -289,6 +339,16 @@
       "site": "Zenn(AI)",
       "published": "2026-08-22T23:30:10Z",
       "description": "!\nこの記事は生成AIで作成した草稿を、筆者が内容を確認し、添削・修正のうえ公開しています。\n\n\n TL;DR\n【調査編】 で得た実測値を、機械検査13項目＋読解判定18項目のレビュー機構に落とした。設計で一番効いたのは「資料の型を最初に判定して、以降の基準の当て方を切り替える」ことだ。完成後に自分の資産を測り返したら、フォントの基準違反と「示唆がゼロ」という指摘が自分に返ってきた。\n※ 調査対象...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "OTelの移行フラグ1つでAgent Framework 1.15.0の会話本文が消えた",
+      "url": "https://zenn.dev/kazu_aiengineer/articles/agent-framework-otel-semconv-optin",
+      "site": "Zenn(AI)",
+      "published": "2026-08-22T23:18:21Z",
+      "description": "Microsoft Agent Framework の Python 版が日本時間の 2026-08-22 朝に 1.15.0 になった。変更点は多いが、[BREAKING] が付いているのは OpenTelemetry の GenAI セマンティック規約まわりを整理した #7673 ひとつだけだ。\nリリースノートを読んだ限りでは「規約のバージョンを環境変数で選べるようにした」という穏当な話に見え...",
       "category": "AI・技術",
       "rss_category": "",
       "image_url": ""
