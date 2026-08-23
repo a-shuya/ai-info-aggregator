@@ -1,8 +1,18 @@
 {
   "site": "Zenn(Python)",
-  "last_updated": "2026-08-23T19:24:32.801049",
-  "total_articles": 5946,
+  "last_updated": "2026-08-23T19:47:04.472228",
+  "total_articles": 5947,
   "articles": [
+    {
+      "title": "ローカルLLM同士のmaster/worker構成と捏造事故",
+      "url": "https://zenn.dev/takushio2525/articles/20260821-qwen-master-worker-orchestration",
+      "site": "Zenn(Python)",
+      "published": "2026-08-23T17:50:41Z",
+      "description": "ローカルLLMに「1人で作らせる」のは前に試したので、次はqwenにqwenを指揮させた。masterもworkerもqwen、タスク分解も指示出しも検収もqwenがやる。自分（と、人間の代役として依頼文を投げたClaude）は依頼を1本渡しただけで、途中の介入は0回。\n結果から書くと、動いた。masterはファイルを1つも書かずに3体のworkerへ委譲し、read_fileとnode --ch...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
     {
       "title": "エンジニア視点で語る！Pythonで学ぶマクロ経済学入門 42",
       "url": "https://zenn.dev/maszkot/articles/76d2d62df36fba",
@@ -34,21 +44,21 @@
       "image_url": ""
     },
     {
-      "title": "外れ値でヒストグラムがつぶれないようにする",
-      "url": "https://zenn.dev/aldente/articles/c08b02214f4be2",
+      "title": "見せかけの回帰を実測: 無関係なランダムウォーク1万ペアの偽有意率は、n=50の67%からn=5000の97%まで上がり続けた",
+      "url": "https://zenn.dev/shakeailab/articles/spurious-correlation-random-walk",
       "site": "Zenn(Python)",
-      "published": "2026-08-23T11:39:21Z",
-      "description": "ヒストグラムの横軸を単純に最小値〜最大値にすると、外れ値が1個あるだけで肝心の分布がギュッとつぶれてしまいます。\nそこで robust_histogram.py では、次の方針で外れ値に強いヒストグラムを作ります。\n\n中心には平均値ではなく中央値を使う\nばらつきには標準偏差の代わりにMADを使う\n表示範囲は 中央値 ± 4 × ロバスト標準偏差\n\n範囲外の値は消さず、左右端のビンへ積み上げる\nビン...",
+      "published": "2026-08-23T11:50:16Z",
+      "description": "「互いに何の関係もない2つの時系列を持ってきて相関を取ると、しばしばr=0.9のような強烈な相関が出る」——時系列分析の教科書に必ず載っている**見せかけの回帰(spurious regression)**の話だ。ナイジェリアの海賊の数と地球の平均気温、みたいなネタ画像は誰でも見たことがあると思う。\nただ、私はこの話をずっと「たまたま変な標本を引いたときの笑い話」くらいに受け取っていた。統計の基本...",
       "category": "開発",
       "rss_category": "",
       "image_url": ""
     },
     {
-      "title": "打った文字の一部だけが消える — ブラウザ自動化の type が半角英数字を落としていた",
-      "url": "https://zenn.dev/mameresearcher/articles/browser-type-silently-drops-ascii",
+      "title": "外れ値でヒストグラムがつぶれないようにする",
+      "url": "https://zenn.dev/aldente/articles/c08b02214f4be2",
       "site": "Zenn(Python)",
-      "published": "2026-08-23T11:07:31Z",
-      "description": "個人の自動化プロジェクトで、ブラウザを操作するエージェントに SNS の返信を入力させている。エディタの入力欄に type で本文を打ち込み、送信ボタンを押す、それだけの処理だ。\nある日、送信の直前に入れておいた検査がこう鳴った。\n5文字目で違う: 入った='を' 期待='1' / 長さ 178 vs 190\n打ったはずの本文と、入力欄に実際に入った本文が 12文字ずれていた。\n消えていたのは、半...",
+      "published": "2026-08-23T11:39:21Z",
+      "description": "ヒストグラムの横軸を単純に最小値〜最大値にすると、外れ値が1個あるだけで肝心の分布がギュッとつぶれてしまいます。\nそこで robust_histogram.py では、次の方針で外れ値に強いヒストグラムを作ります。\n\n中心には平均値ではなく中央値を使う\nばらつきには標準偏差の代わりにMADを使う\n表示範囲は 中央値 ± 4 × ロバスト標準偏差\n\n範囲外の値は消さず、左右端のビンへ積み上げる\nビン...",
       "category": "開発",
       "rss_category": "",
       "image_url": ""
@@ -69,6 +79,16 @@
       "site": "Zenn(Python)",
       "published": "2026-08-23T09:48:30Z",
       "description": "要旨\nPolarsで特徴量を作成した後、学習直前にto_pandas()を実行する構成は、現在では必須ではありません。XGBoost、LightGBM、CatBoostはいずれもPolarsの入力を受け取れます。\nただし、ここでいう「Polars対応」は、GBDTの学習が自動的にOut-of-Coreになるという意味ではありません。Polarsが担当するのは主に読み込み、絞り込み、結合、集約、特徴...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "AIエージェントにファイルを壊させない4つのルール——一括置換で477行消した事故から",
+      "url": "https://zenn.dev/ai_tools_memo/articles/5c7410d1ea3120",
+      "site": "Zenn(Python)",
+      "published": "2026-08-23T09:11:10Z",
+      "description": "477行のファイルから345行が消えました。未コミットでした。同じ日にもう1本、622行のファイルからも453行。手を動かしたのはAIコーディングエージェントで、指示を出したのは私です。\nこの記事は、Claude CodeのようなAIコーディングエージェントにファイル編集を任せている（または任せようとしている）人に向けて書いています。とくに、次のどれかに心当たりがあれば役に立つはずです。\n\nエージ...",
       "category": "開発",
       "rss_category": "",
       "image_url": ""
@@ -169,16 +189,6 @@
       "site": "Zenn(Python)",
       "published": "2026-08-23T03:46:34Z",
       "description": "1. KLayoutとは\nKLayoutは、半導体やフォトマスクで使われるレイアウトデータのビューア兼エディタです。OASIS、GDSII、DXF、CIF、Gerber、LEF/DEFなど、複数のレイアウト形式に対応しています。\nKLayoutには、大きく分けて2つの利用方法があります。\n\n\n\n構成\n主な用途\n\n\n\n\nKLayout GUI\nOASISやGDSIIを画面上で表示・確認する\n\n\nKL...",
-      "category": "開発",
-      "rss_category": "",
-      "image_url": ""
-    },
-    {
-      "title": "GeminiAPI×GoogleDrive×Sheetsで完全自動化！Pythonレシート家計簿システム構築ガイド（無料枠のみ使用）",
-      "url": "https://zenn.dev/sosa/books/receipt-kakeibo-gemini",
-      "site": "Zenn(Python)",
-      "published": "2026-08-23T03:38:20Z",
-      "description": "Google ドライブにアップロードしたレシート画像を、Gemini API（無料枠）でOCR解析し、Googleスプレッドシートへ自動記帳するPythonシステムを完全解説。OAuth 2.0認証やuvによる環境構築まで網羅。",
       "category": "開発",
       "rss_category": "",
       "image_url": ""
