@@ -1,14 +1,54 @@
 {
   "site": "Zenn(LLM)",
-  "last_updated": "2026-08-24T18:04:21.464953",
-  "total_articles": 5602,
+  "last_updated": "2026-08-24T18:57:25.825300",
+  "total_articles": 5612,
   "articles": [
+    {
+      "title": "RTX 3050 8GBでローカルLLMを実運用する — VRAM予算とプレフィクスキャッシュの実測",
+      "url": "https://zenn.dev/ace_toshi/articles/ollama-8gb-vram-budget",
+      "site": "Zenn(LLM)",
+      "published": "2026-08-24T16:02:34Z",
+      "description": "この記事について\nVRAM 8GBのGPU1枚（RTX 3050）で、ローカルLLMを「試す」ではなく常時動かし続けるための実測値をまとめる。\n個人開発のアプリにローカルLLMを組み込むとき、最初に知りたいのは「このモデルは載るのか」の一点に尽きる。ところが公開されているのはモデルのファイルサイズばかりで、実際に確保されるメモリでも、同居できるかでも、切り替えたときに何秒待たされるかでもない。ここ...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "富豪AI（加算思考）への疑問。日本のカーナビ・電子辞書の引き算思想でllama.cppの最深部をハックした話（RAM 6.5GB極貧環境）",
+      "url": "https://zenn.dev/kenjiigarashi/articles/0177c82d6ffe6d",
+      "site": "Zenn(LLM)",
+      "published": "2026-08-24T15:54:25Z",
+      "description": "※この記事は、先行して公開した Qiitaの記事 の同時投稿（クロスポスト）です。\n\n 🚨 冒頭に宣言する：これは特許ではない。パブリックドメインだ\n本記事で紹介するアルゴリズム 「AMI (Attention Mesh Index Transmission)」 の核心について、まず最初に明確に宣言しておきます。\n私はこの技術を、特定の巨大企業が独占するための「特許」にすることを断固として拒絶しま...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "RTX 5060 Ti 16GBを結局追加した。RTX 4070 Ti SUPERとの2GPUでQwen3.8 27Bを動かしてみる",
+      "url": "https://zenn.dev/sumumu26/articles/dbe910db00ece7",
+      "site": "Zenn(LLM)",
+      "published": "2026-08-24T15:11:34Z",
+      "description": "こんにちは。miharubaの池谷です。\n前回の記事では、RTX 4070 Ti SUPER 16GBを使って、Qwen3.8\n27Bをllama.cppでどこまで動かせるのかを検証しました。\nhttps://zenn.dev/sumumu26/articles/b5b2ab52939b4e\nQ3量子化、KVキャッシュの量子化、ngram + MTPによるSpeculative\nDecodingな...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
     {
       "title": "【godot-llm-gamebench】Ox AlphaはEffortによってどのように性能が変わるのか",
       "url": "https://zenn.dev/oubakiou/articles/93089bd5bc0e98",
       "site": "Zenn(LLM)",
       "published": "2026-08-24T12:31:53Z",
       "description": "本記事は 実装タスクを外注するモデルは何が適切なのか？ミニゲームを実装させるベンチマーク のシリーズです。このベンチマークを読む上での注意点は以下を参照してください。\n\n今回は親エージェントを claude-opus-5@max、子エージェント（実装の外注先）を opencode上のox-alpha-free に固定して、Ox Alpha の各 effort でどのように性能が変化するのかを詳しく...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "MiniMax M3をOpenAI SDKから使う方法",
+      "url": "https://zenn.dev/naganegi66/articles/8bf36cbef61fb3",
+      "site": "Zenn(LLM)",
+      "published": "2026-08-24T11:46:45Z",
+      "description": "MiniMax M3をOpenAI SDKから使う方法\nMiniMaxから新しい M3 が出ていたので、APIから使う方法を整理してみます。\nM3は特にCoding / Agent系を意識したモデルで、最大1M tokensのコンテキストや、MiniMax Sparse Attention（MSA）、ネイティブなマルチモーダル対応などが特徴です。\n今回は、OpenAI互換APIを提供している Co...",
       "category": "AI・技術",
       "rss_category": "",
       "image_url": ""
@@ -34,6 +74,46 @@
       "image_url": ""
     },
     {
+      "title": "タスクの範囲は書いたのに、権限の範囲は書いていなかった",
+      "url": "https://zenn.dev/thegatebreaker/articles/agent_autonomy_pitfall",
+      "site": "Zenn(LLM)",
+      "published": "2026-08-24T11:17:14Z",
+      "description": "タスクの範囲は書いたのに、権限の範囲は書いていなかった —— コーディングエージェントの暴走と多重レビューの盲点\nTL;DR: コーディングエージェントに「コードを書いてテストを通して」と小さなタスクを渡したら、勝手にコミットから本番マージまで完了させてしまった。「自動承認」のフラグが、想定していたファイル編集の範囲を超えて、バージョン管理操作を含む広い範囲に及んでいたためだ。さらに、このときマー...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "AIの出力、どこを疑えばいいか分からない人へ ── 答えは編集者ではなくファクトチェッカーの仕事の中にあった",
+      "url": "https://zenn.dev/motimotinotch/articles/beaf09cd3e47fe",
+      "site": "Zenn(LLM)",
+      "published": "2026-08-24T11:15:31Z",
+      "description": "別の記事を書いている最中のことだった。作業の合間に、AIに「自分のフィードバックの仕方ってどう見える?」と聞いてみたことがある。返ってきたのは、こんな言葉だった。\n「編集者というより、ファクトチェッカーみたいですね」\n最初は褒め言葉なのか判断に迷ったが、考えれば考えるほど、これはかなり的確な指摘だった。\n\n 編集の仕事には、昔から5つの階層がある\n出版・編集の世界には、原稿ができあがるまでに通過す...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "semantic-routerとQdrantで、LLMを呼ばずに問い合わせを振り分けてみた",
+      "url": "https://zenn.dev/shogo_h/articles/qdrant-semantic-router",
+      "site": "Zenn(LLM)",
+      "published": "2026-08-24T11:11:51Z",
+      "description": "はじめに\n!\n2026-08-24時点の情報です。semantic-router 0.1.16、qdrant-client 1.19.0、Qdrantサーバー 1.19.0で試しています。\n\n問い合わせをどの窓口に回すか決めるだけのために、毎回LLMを呼ぶ必要はありません。「返品したい」に近い言い方をいくつか登録しておけば、あとは文の意味の近さだけで振り分けられます。\nこれをやるライブラリがsem...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "サブエージェント階層設計の作法：深さ3が既定になっても、私の構成は1段のままだった",
+      "url": "https://zenn.dev/haruhiro1020/articles/063a9add9d0d38",
+      "site": "Zenn(LLM)",
+      "published": "2026-08-24T11:00:06Z",
+      "description": "2026年7月24日の Claude Code v2.1.219 で、サブエージェント（親から仕事を任される、独立した会話履歴を持つ子AI）の入れ子が既定で深さ3まで許されるようになりました。changelog を読んで最初にやったのは、喜ぶことではなく自分の ~/.claude/agents/ を grep することでした。\n$ cd ~/.claude/agents\n$ grep -lE \"^...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
       "title": "AIの「中の人」になってみる",
       "url": "https://zenn.dev/poipoionigiri/articles/7aba96291e6cf6",
       "site": "Zenn(LLM)",
@@ -44,11 +124,41 @@
       "image_url": ""
     },
     {
+      "title": "LLM は書きながら考えられるが、書くのをやめて見直せない",
+      "url": "https://zenn.dev/mochitec_tech/articles/debb4c5fb42176",
+      "site": "Zenn(LLM)",
+      "published": "2026-08-24T10:03:17Z",
+      "description": "この記事は、書いている途中で3回テーゼが変わった\nこの記事は、調査と執筆を Claude Code にやらせながら書きました。最初の問いは単純です。推論機構を積んだモデルが、なぜ全体を見誤るのか。\nその企画が、6ターンで元の問いから逸れました。各ターンの判断は、どれも正しく見えます。強い一次文献が出た方向にテーゼを寄せる。証拠主導としては真っ当です。結果、記事の中心はもっともらしい方向へ4回ずれ、...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "第１回 ローカルLLMだけで動く音声アシスタント（JARVIS）を作ってみた",
+      "url": "https://zenn.dev/iryouit/articles/027d1c0888f07b",
+      "site": "Zenn(LLM)",
+      "published": "2026-08-24T09:45:13Z",
+      "description": "はじめに\n先日MacBook Pro M5pro 48GBモデルを購入しました。ユニファイドメモリでM5チップはAI処理性能が向上しているということで、ローカルLLMを使って執事型AIを作ってみました。\n最近SNSで、映画アイアンマンに出てくるJARVISを自作している人をよく見かけるので、それを真似してみました。\n全5回で書きます。\n\n\n\n回\n内容\n\n\n\n\n第1回（この記事）\n概要 — 何を作っ...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
       "title": "GUPO・勾配不確実性のベイズ推定でGRPOのグループ間衝突46.5%を克服",
       "url": "https://zenn.dev/lixian/articles/gupo-gradient-uncertainty-policy-optimization",
       "site": "Zenn(LLM)",
       "published": "2026-08-24T09:36:23Z",
       "description": "TL;DR\nGUPOはGRPOのミニバッチ内で発生するグループ勾配間の方向衝突（46.5%のペアが負の余弦類似度）を、ベイズ推定の枠組みで解決する手法だ。各グループ勾配を確率変数としてモデリングし、Dirichlet証拠公式から不確実性を定量化。低不確実性のグループには大きな重みを、高不確実性のグループには小さな重みを割り当てることで、信頼性の高い更新方向を得る。DeepScaleR-1.5Bで平...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "VS CodeからClaude Codeへ。それでもローカルLLMを使ってみた。",
+      "url": "https://zenn.dev/nanakusataro/articles/3482992eed080a",
+      "site": "Zenn(LLM)",
+      "published": "2026-08-24T09:31:03Z",
+      "description": "昨年ぐらいからローカルLLMを使ったAIエージェントを構築して弄っています。\nPCは、M4pro Mac mini、搭載メモリは24GB。\n2年ほど前にAmazon BlackFridayで購入した、いわゆる「吊るしモデル」です。\nソフトは当初、VS Code＋Roo Code（現在はZoo Code）の組み合わせ、でした。\nクラウドAIは使用せず、ダウンロードしたローカルLLMにollama経由...",
       "category": "AI・技術",
       "rss_category": "",
       "image_url": ""
@@ -119,16 +229,6 @@
       "site": "Zenn(LLM)",
       "published": "2026-08-24T02:32:47Z",
       "description": "はじめに\n前回、金融業で「社内マニュアルの問い合わせAIをローカルLLMで作った話」を書きました。今回はその画像版です。製造業のお客様から「出荷前の外観検査を少しでも楽にしたい。ただし製品の写真は社外に出せない」と相談を受けて、ローカルで動くVLM（画像も読めるLLM）に検査をやらせてみた、という記録です。\n結論から言うと、立ち上がりはめちゃくちゃ速いのに、レイテンシで現実に殴られる、という体験で...",
-      "category": "AI・技術",
-      "rss_category": "",
-      "image_url": ""
-    },
-    {
-      "title": "AI Search APIを15バージョン実測 — Freeだと最新GAでindex一覧が400",
-      "url": "https://zenn.dev/kazu_aiengineer/articles/azure-ai-search-2026-08-01-preview",
-      "site": "Zenn(LLM)",
-      "published": "2026-08-23T23:01:07Z",
-      "description": "先に結論\nAzure AI Search のデータプレーン REST API に、Learn のドキュメントに載っていないプレビュー版 2026-08-01-preview が存在する。azure-rest-api-specs の main に 2026-08-20 にマージされたもので、API versions のページでは 2026-08-24 現在も最新プレビューは 2026-05-01-p...",
       "category": "AI・技術",
       "rss_category": "",
       "image_url": ""
