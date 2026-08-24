@@ -1,8 +1,88 @@
 {
   "site": "Zenn(Python)",
-  "last_updated": "2026-08-24T12:00:07.859420",
-  "total_articles": 5956,
+  "last_updated": "2026-08-24T13:07:06.018037",
+  "total_articles": 5963,
   "articles": [
+    {
+      "title": "エラーダイアログだけが出ない — Python3の except as e とtkinterのafterで踏んだ罠",
+      "url": "https://zenn.dev/genba_python/articles/553b371084b181",
+      "site": "Zenn(Python)",
+      "published": "2026-08-24T12:04:31Z",
+      "description": "製造業の生産技術部門で、社内向けの小さな業務ツールをPython + tkinterで作っています。\n現場に配ったあとで見つけたのは、**「エラーダイアログが絶対に出ないコード」**でした。幸い、現場から報告が来る前に静的解析が拾ってくれました。\n原因はたった2行です。しかも、自分でバグを埋めたことにすら気づいていませんでした。\n\n 問題のコード\nこういう書き方をしていました。\nexcept Ex...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "点群の法線をPCAで求めたら37%が裏返っていた。スタンフォードバニーでMST伝播による向き揃えを試す",
+      "url": "https://zenn.dev/shakeailab/articles/stanford-bunny-normal-estimation",
+      "site": "Zenn(Python)",
+      "published": "2026-08-24T11:56:49Z",
+      "description": "CG(コンピュータグラフィックス)の世界には「hello world」に当たる点群データがある。スタンフォードバニー、通称うさぎだ。1994年にスタンフォード大学でウサギの置物をレーザースキャンして作られたこのデータは、以来30年間、点群処理・メッシュ復元・法線推定といったアルゴリズムのベンチマークとして使われ続けている。\n今回はこのバニーの生の点群(XYZ座標だけ、メッシュのつながりは使わない)...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "MiniMax M3をOpenAI SDKから使う方法",
+      "url": "https://zenn.dev/naganegi66/articles/8bf36cbef61fb3",
+      "site": "Zenn(Python)",
+      "published": "2026-08-24T11:46:45Z",
+      "description": "MiniMax M3をOpenAI SDKから使う方法\nMiniMaxから新しい M3 が出ていたので、APIから使う方法を整理してみます。\nM3は特にCoding / Agent系を意識したモデルで、最大1M tokensのコンテキストや、MiniMax Sparse Attention（MSA）、ネイティブなマルチモーダル対応などが特徴です。\n今回は、OpenAI互換APIを提供している Co...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "Python の ThreadPoolExecutor の shutdown(wait=False) とワーカーの残存",
+      "url": "https://zenn.dev/moridev/articles/8edd15347a0772",
+      "site": "Zenn(Python)",
+      "published": "2026-08-24T11:37:42Z",
+      "description": "前の記事までで、ThreadPoolExecutor と ProcessPoolExecutor の選択、Future.result() による例外回収、max_workers、with による Executor 管理を扱いました。この記事では、そこから一段だけ踏み込み、ループ内で ThreadPoolExecutor を使い捨てるときの shutdown(wait=False) を扱います。\n結...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "semantic-routerとQdrantで、LLMを呼ばずに問い合わせを振り分けてみた",
+      "url": "https://zenn.dev/shogo_h/articles/qdrant-semantic-router",
+      "site": "Zenn(Python)",
+      "published": "2026-08-24T11:11:51Z",
+      "description": "はじめに\n!\n2026-08-24時点の情報です。semantic-router 0.1.16、qdrant-client 1.19.0、Qdrantサーバー 1.19.0で試しています。\n\n問い合わせをどの窓口に回すか決めるだけのために、毎回LLMを呼ぶ必要はありません。「返品したい」に近い言い方をいくつか登録しておけば、あとは文の意味の近さだけで振り分けられます。\nこれをやるライブラリがsem...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "送信できない Outlook MCP を作った — 「機能の不在」でプロンプトインジェクションに備える",
+      "url": "https://zenn.dev/ma2no4413/articles/mcp-no-send-tool-by-design",
+      "site": "Zenn(Python)",
+      "published": "2026-08-24T11:08:37Z",
+      "description": "私の Outlook のメールボックスに 4 万通たまってしまっていたので、Gmail と同様に AI に片付けさせることにしました。\n先に既存の MCP サーバを探しました。見つかったものはどれも送信でき、完全削除もできます。よくできています。私が一番やらせたくない 2 つが、そろって標準装備でした。\n私が欲しかったのは逆で、片付けるだけなら送信は要りませんし、消したメールを後から掘り返せないの...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "地図タイルを自前ホスティングし、検証で「バグか実データか」を切り分けた話",
+      "url": "https://zenn.dev/boostertech/articles/b6bc4ddc62104b",
+      "site": "Zenn(Python)",
+      "published": "2026-08-24T10:52:46Z",
+      "description": "何を作ったか\nCity Risk Score という、オープンデータだけを使って世界の都市を洪水・地震・サイクロン・山火事・熱波・大気質の6指標でスコアリングするサイトを作っています。現在30都市、5言語対応。バックエンドはPython(rasterio / geopandas / H3)、フロントは素のHTML + Bootstrap + Alpine.js、地図はMapLibre GL JS、...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "GPUのないPCから隣のGPU機へ処理を投げる。届かなければ同じコードのままCPUへ落とす",
+      "url": "https://zenn.dev/kimura0314/articles/gpu-offload-ssh-fallback",
+      "site": "Zenn(Python)",
+      "published": "2026-08-24T08:35:57Z",
+      "description": "手元のノートPCにはCUDAが載っていません。でも机の下に、ゲーム用のRTX 4070 SUPERが載ったWindows機があります。この記事の結論は「SSHで処理を投げるヘルパーを1本用意すれば、呼ぶ側のコードは1行も分岐を書かずに済む」です。GPU機が落ちていても、ゲーム中でも、同じ関数がそのままローカルCPUで走ります。\nこんにちは、kimuraです。\nWindows同士でこれをやると、UN...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
     {
       "title": "Audio2Face-3DのライセンスBOMをPythonで検査する",
       "url": "https://zenn.dev/kiritani_r/articles/bc6a01ae82969b",
@@ -69,16 +149,6 @@
       "site": "Zenn(Python)",
       "published": "2026-08-24T00:56:58Z",
       "description": "このツールについて\n複数の個人開発プロジェクトの進捗を検知して、SNSや技術記事投稿サービスへ投稿するツールです。普段は他のプロジェクトの進捗を投稿するために使っていますが、今回はこのツール自身の不具合が見つかったので、初めてこのツール自身を題材にした記事を書きます。\n\n 見つかった問題\n別の新しいプロジェクトを追加する作業をしていた際、副産物として、以前追加していたはずの1つのプロジェクトが、実...",
-      "category": "開発",
-      "rss_category": "",
-      "image_url": ""
-    },
-    {
-      "title": "AI Search APIを15バージョン実測 — Freeだと最新GAでindex一覧が400",
-      "url": "https://zenn.dev/kazu_aiengineer/articles/azure-ai-search-2026-08-01-preview",
-      "site": "Zenn(Python)",
-      "published": "2026-08-23T23:01:07Z",
-      "description": "先に結論\nAzure AI Search のデータプレーン REST API に、Learn のドキュメントに載っていないプレビュー版 2026-08-01-preview が存在する。azure-rest-api-specs の main に 2026-08-20 にマージされたもので、API versions のページでは 2026-08-24 現在も最新プレビューは 2026-05-01-p...",
       "category": "開発",
       "rss_category": "",
       "image_url": ""
