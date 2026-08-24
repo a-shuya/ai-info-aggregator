@@ -1,7 +1,7 @@
 {
   "site": "Zenn(LLM)",
-  "last_updated": "2026-08-24T20:00:54.996009",
-  "total_articles": 5605,
+  "last_updated": "2026-08-24T20:42:15.056497",
+  "total_articles": 5609,
   "articles": [
     {
       "title": "RTX 3050 8GBでローカルLLMを実運用する — VRAM予算とプレフィクスキャッシュの実測",
@@ -44,6 +44,16 @@
       "image_url": ""
     },
     {
+      "title": "MiniMax M3をOpenAI SDKから使う方法",
+      "url": "https://zenn.dev/naganegi66/articles/8bf36cbef61fb3",
+      "site": "Zenn(LLM)",
+      "published": "2026-08-24T11:46:45Z",
+      "description": "MiniMax M3をOpenAI SDKから使う方法\nMiniMaxから新しい M3 が出ていたので、APIから使う方法を整理してみます。\nM3は特にCoding / Agent系を意識したモデルで、最大1M tokensのコンテキストや、MiniMax Sparse Attention（MSA）、ネイティブなマルチモーダル対応などが特徴です。\n今回は、OpenAI互換APIを提供している Co...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
       "title": "小説からからセリフ抽出　細かい仕様",
       "url": "https://zenn.dev/yunikasu/articles/8a8676f1e94d04",
       "site": "Zenn(LLM)",
@@ -59,6 +69,16 @@
       "site": "Zenn(LLM)",
       "published": "2026-08-24T11:25:39Z",
       "description": "セリフの話し手判定に、どの LLM を使うことにしたか\n「無職転生」のセリフ 28,581 件について「誰が言ったか」を LLM に判定させるにあたり、どのモデルを選び、なぜそうなったかの記録。\n\n 最初の計画\nClaude の 3 モデルを組み合わせる予定だった。\n切り出しA　320件分: Opus5　high\n切り出しB　525件分: Sonnet5 high　\n答えが割れたら: さらに長い文...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "semantic-routerとQdrantで、LLMを呼ばずに問い合わせを振り分けてみた",
+      "url": "https://zenn.dev/shogo_h/articles/qdrant-semantic-router",
+      "site": "Zenn(LLM)",
+      "published": "2026-08-24T11:11:51Z",
+      "description": "はじめに\n!\n2026-08-24時点の情報です。semantic-router 0.1.16、qdrant-client 1.19.0、Qdrantサーバー 1.19.0で試しています。\n\n問い合わせをどの窓口に回すか決めるだけのために、毎回LLMを呼ぶ必要はありません。「返品したい」に近い言い方をいくつか登録しておけば、あとは文の意味の近さだけで振り分けられます。\nこれをやるライブラリがsem...",
       "category": "AI・技術",
       "rss_category": "",
       "image_url": ""
@@ -84,11 +104,31 @@
       "image_url": ""
     },
     {
+      "title": "第１回 ローカルLLMだけで動く音声アシスタント（JARVIS）を作ってみた",
+      "url": "https://zenn.dev/iryouit/articles/027d1c0888f07b",
+      "site": "Zenn(LLM)",
+      "published": "2026-08-24T09:45:13Z",
+      "description": "はじめに\n先日MacBook Pro M5pro 48GBモデルを購入しました。ユニファイドメモリでM5チップはAI処理性能が向上しているということで、ローカルLLMを使って執事型AIを作ってみました。\n最近SNSで、映画アイアンマンに出てくるJARVISを自作している人をよく見かけるので、それを真似してみました。\n全5回で書きます。\n\n\n\n回\n内容\n\n\n\n\n第1回（この記事）\n概要 — 何を作っ...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
       "title": "GUPO・勾配不確実性のベイズ推定でGRPOのグループ間衝突46.5%を克服",
       "url": "https://zenn.dev/lixian/articles/gupo-gradient-uncertainty-policy-optimization",
       "site": "Zenn(LLM)",
       "published": "2026-08-24T09:36:23Z",
       "description": "TL;DR\nGUPOはGRPOのミニバッチ内で発生するグループ勾配間の方向衝突（46.5%のペアが負の余弦類似度）を、ベイズ推定の枠組みで解決する手法だ。各グループ勾配を確率変数としてモデリングし、Dirichlet証拠公式から不確実性を定量化。低不確実性のグループには大きな重みを、高不確実性のグループには小さな重みを割り当てることで、信頼性の高い更新方向を得る。DeepScaleR-1.5Bで平...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "VS CodeからClaude Codeへ。それでもローカルLLMを使ってみた。",
+      "url": "https://zenn.dev/nanakusataro/articles/3482992eed080a",
+      "site": "Zenn(LLM)",
+      "published": "2026-08-24T09:31:03Z",
+      "description": "昨年ぐらいからローカルLLMを使ったAIエージェントを構築して弄っています。\nPCは、M4pro Mac mini、搭載メモリは24GB。\n2年ほど前にAmazon BlackFridayで購入した、いわゆる「吊るしモデル」です。\nソフトは当初、VS Code＋Roo Code（現在はZoo Code）の組み合わせ、でした。\nクラウドAIは使用せず、ダウンロードしたローカルLLMにollama経由...",
       "category": "AI・技術",
       "rss_category": "",
       "image_url": ""
