@@ -1,8 +1,38 @@
 {
   "site": "Zenn(Python)",
-  "last_updated": "2026-08-24T15:41:55.919995",
+  "last_updated": "2026-08-24T16:18:26.969219",
   "total_articles": 5964,
   "articles": [
+    {
+      "title": "Claude Code のログでブランチ運用を数えたら、git_branch の \"HEAD\" が2つの意味を持っていた",
+      "url": "https://zenn.dev/chiisanasoft/articles/08f0341f5565ff",
+      "site": "Zenn(Python)",
+      "published": "2026-08-24T15:25:00Z",
+      "description": "Claude Code のログには、そのセッションがどのブランチで動いていたかが残ります。\n4か月分・436セッションを数えたところ、名前付きブランチで作業していたのは12セッションでした。\nただ、この数字を出すまでに3か所つまずきました。とくに git_branch に入る \"HEAD\" は、detached HEAD と「そもそもリポジトリではない」の両方を指していて、区別しないまま数えると結...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "71件のpytestがGREENでも、「壊れたとき」が気になった。「かもしれない運転」のように異常系を見るようになった話",
+      "url": "https://zenn.dev/tosane932/articles/9ae4f9c0121d4a",
+      "site": "Zenn(Python)",
+      "published": "2026-08-24T14:37:47Z",
+      "description": "pytestを少しずつ強化して、第3段階では認証・CSRF・アクセス制御まで確認するようになりました。\nそのとき、自分の中では、\n正しい入力\n\n正しい処理\n\n許可された利用者\nまで少しずつ見るようになっていました。\n第3段階についてはこちらに書いています。\nhttps://zenn.dev/tosane932/articles/ba7e6c51b05b44\nその後、demo seed関連のテストも...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "後勝ちマージが実データを壊す。区分所有の謄本PDFで専有面積が車庫に上書きされた話",
+      "url": "https://zenn.dev/shinsei99/articles/registry-pdf-merge-overwrite",
+      "site": "Zenn(Python)",
+      "published": "2026-08-24T13:08:17Z",
+      "description": "登記事項証明書（謄本）のPDFを読んで、不動産の書類に流し込むツールを作っています。\n実案件で試したところ、専有面積 72.59 ㎡ の部屋が、16.38 ㎡ として書き出されました。\n16.38 ㎡ は、同じ案件の車庫の面積です。\n原因はPDFの読み取り精度ではなく、複数枚の結果を1件にまとめる処理でした。\ndict を後勝ちでマージしていたので、あとに読んだ謄本が先に読んだ謄本を潰していたので...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
     {
       "title": "エラーダイアログだけが出ない — Python3の except as e とtkinterのafterで踏んだ罠",
       "url": "https://zenn.dev/genba_python/articles/553b371084b181",
@@ -14,41 +44,11 @@
       "image_url": ""
     },
     {
-      "title": "点群の法線をPCAで求めたら37%が裏返っていた。スタンフォードバニーでMST伝播による向き揃えを試す",
-      "url": "https://zenn.dev/shakeailab/articles/stanford-bunny-normal-estimation",
-      "site": "Zenn(Python)",
-      "published": "2026-08-24T11:56:49Z",
-      "description": "CG(コンピュータグラフィックス)の世界には「hello world」に当たる点群データがある。スタンフォードバニー、通称うさぎだ。1994年にスタンフォード大学でウサギの置物をレーザースキャンして作られたこのデータは、以来30年間、点群処理・メッシュ復元・法線推定といったアルゴリズムのベンチマークとして使われ続けている。\n今回はこのバニーの生の点群(XYZ座標だけ、メッシュのつながりは使わない)...",
-      "category": "開発",
-      "rss_category": "",
-      "image_url": ""
-    },
-    {
-      "title": "MiniMax M3をOpenAI SDKから使う方法",
-      "url": "https://zenn.dev/naganegi66/articles/8bf36cbef61fb3",
-      "site": "Zenn(Python)",
-      "published": "2026-08-24T11:46:45Z",
-      "description": "MiniMax M3をOpenAI SDKから使う方法\nMiniMaxから新しい M3 が出ていたので、APIから使う方法を整理してみます。\nM3は特にCoding / Agent系を意識したモデルで、最大1M tokensのコンテキストや、MiniMax Sparse Attention（MSA）、ネイティブなマルチモーダル対応などが特徴です。\n今回は、OpenAI互換APIを提供している Co...",
-      "category": "開発",
-      "rss_category": "",
-      "image_url": ""
-    },
-    {
       "title": "Python の ThreadPoolExecutor の shutdown(wait=False) とワーカーの残存",
       "url": "https://zenn.dev/moridev/articles/8edd15347a0772",
       "site": "Zenn(Python)",
       "published": "2026-08-24T11:37:42Z",
-      "description": "前の記事までで、ThreadPoolExecutor と ProcessPoolExecutor の選択、Future.result() による例外回収、max_workers、with による Executor 管理を扱いました。この記事では、そこから一段だけ踏み込み、ループ内で ThreadPoolExecutor を使い捨てるときの shutdown(wait=False) を扱います。\n結...",
-      "category": "開発",
-      "rss_category": "",
-      "image_url": ""
-    },
-    {
-      "title": "semantic-routerとQdrantで、LLMを呼ばずに問い合わせを振り分けてみた",
-      "url": "https://zenn.dev/shogo_h/articles/qdrant-semantic-router",
-      "site": "Zenn(Python)",
-      "published": "2026-08-24T11:11:51Z",
-      "description": "はじめに\n!\n2026-08-24時点の情報です。semantic-router 0.1.16、qdrant-client 1.19.0、Qdrantサーバー 1.19.0で試しています。\n\n問い合わせをどの窓口に回すか決めるだけのために、毎回LLMを呼ぶ必要はありません。「返品したい」に近い言い方をいくつか登録しておけば、あとは文の意味の近さだけで振り分けられます。\nこれをやるライブラリがsem...",
+      "description": "前の記事までで、ThreadPoolExecutor と ProcessPoolExecutor の選択、Future.result() による例外回収、max_workers、with による Executor 管理を扱いました。この記事では、そこから一段だけ踏み込み、ループ内で ThreadPoolExecutor を使い捨てるときの shutdown(wait=False) を扱います。\nE...",
       "category": "開発",
       "rss_category": "",
       "image_url": ""

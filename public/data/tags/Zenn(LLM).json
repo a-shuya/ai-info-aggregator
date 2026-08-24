@@ -1,14 +1,114 @@
 {
   "site": "Zenn(LLM)",
-  "last_updated": "2026-08-24T15:41:55.919995",
-  "total_articles": 5602,
+  "last_updated": "2026-08-24T16:18:26.969219",
+  "total_articles": 5609,
   "articles": [
     {
-      "title": "LLM は書きながら考えられるが、書くのをやめて見直せない",
-      "url": "https://zenn.dev/mochitec_tech/articles/debb4c5fb42176",
+      "title": "ターミナルを閉じてもClaude Codeが動き続ける理由、supervisorデーモンとAgent viewについて",
+      "url": "https://zenn.dev/uehaj/articles/claude-code-supervisor-agent-view",
       "site": "Zenn(LLM)",
-      "published": "2026-08-24T10:03:17Z",
-      "description": "この記事は、書いている途中で3回テーゼが変わった\nこの記事は、調査と執筆を Claude Code にやらせながら書きました。最初の問いは単純です。推論機構を積んだモデルが、なぜ全体を見誤るのか。\nその企画が、6ターンで元の問いから逸れました。各ターンの判断は、どれも正しく見えます。強い一次文献が出た方向にテーゼを寄せる。証拠主導としては真っ当です。結果、記事の中心はもっともらしい方向へ4回ずれ、...",
+      "published": "2026-08-24T13:09:36Z",
+      "description": "!\n本記事は筆者個人の見解であり、所属する組織の公式見解ではありません。\nまた、ここで扱う supervisor デーモンと Agent view は research preview の機能です。この領域は仕様が頻繁に、かつ大きく変わります。本文の記述は執筆時点(2026年8月上旬、Claude Code v2.1.220 で確認)のものなので、最新の挙動は公式ドキュメントをご確認ください。\n\n...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "【godot-llm-gamebench】Ox AlphaはEffortによってどのように性能が変わるのか",
+      "url": "https://zenn.dev/oubakiou/articles/93089bd5bc0e98",
+      "site": "Zenn(LLM)",
+      "published": "2026-08-24T12:31:53Z",
+      "description": "本記事は 実装タスクを外注するモデルは何が適切なのか？ミニゲームを実装させるベンチマーク のシリーズです。このベンチマークを読む上での注意点は以下を参照してください。\n\n今回は親エージェントを claude-opus-5@max、子エージェント（実装の外注先）を opencode上のox-alpha-free に固定して、Ox Alpha の各 effort でどのように性能が変化するのかを詳しく...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "第2回 ローカルLLMだけで動く音声アシスタント（JARVIS）を作ってみた",
+      "url": "https://zenn.dev/iryouit/articles/4070a9ea3040ae",
+      "site": "Zenn(LLM)",
+      "published": "2026-08-24T12:26:37Z",
+      "description": "第1回：概要 の続きです。\n今回は機能の紹介です。実際のやり取りをそのまま載せます（勤務先名・人名は伏せています）。\n\n\n 予定とシフト\n以前プログラミング学習の一環で、家族共有アプリを作成しました。\nデータベースにはsupabaseを用い、家族の予定、筆者の勤務、残業時間を保存しています。\nJARVISではsupabaseのAPIを使用して、データベースにアクセスし、情報の取得、追加、更新、削除...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "MiniMax M3をOpenAI SDKから使う方法",
+      "url": "https://zenn.dev/naganegi66/articles/8bf36cbef61fb3",
+      "site": "Zenn(LLM)",
+      "published": "2026-08-24T11:46:45Z",
+      "description": "MiniMax M3をOpenAI SDKから使う方法\nMiniMaxから新しい M3 が出ていたので、APIから使う方法を整理してみます。\nM3は特にCoding / Agent系を意識したモデルで、最大1M tokensのコンテキストや、MiniMax Sparse Attention（MSA）、ネイティブなマルチモーダル対応などが特徴です。\n今回は、OpenAI互換APIを提供している Co...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "小説からからセリフ抽出　細かい仕様",
+      "url": "https://zenn.dev/yunikasu/articles/8a8676f1e94d04",
+      "site": "Zenn(LLM)",
+      "published": "2026-08-24T11:26:42Z",
+      "description": "小説からからセリフ抽出\n\n まず一区切り目\nWeb 小説「無職転生」286 話から、主要人物 20 人それぞれの「セリフ集」を作る。\n1. 本文を 3,000 字ずつに区切る（起点を変えて 2 通り）…… プログラム\n2. 話ごとに LLM が「登場人物の名簿」を書く           …… LLM\n   → 全部集めて「呼び名 → 人物」の一覧表を作る       …… LLM ＋ プログラム...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "小説からセリフを抽出する　LLM選定",
+      "url": "https://zenn.dev/yunikasu/articles/bbe8e25d18d247",
+      "site": "Zenn(LLM)",
+      "published": "2026-08-24T11:25:39Z",
+      "description": "セリフの話し手判定に、どの LLM を使うことにしたか\n「無職転生」のセリフ 28,581 件について「誰が言ったか」を LLM に判定させるにあたり、どのモデルを選び、なぜそうなったかの記録。\n\n 最初の計画\nClaude の 3 モデルを組み合わせる予定だった。\n切り出しA　320件分: Opus5　high\n切り出しB　525件分: Sonnet5 high　\n答えが割れたら: さらに長い文...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "タスクの範囲は書いたのに、権限の範囲は書いていなかった",
+      "url": "https://zenn.dev/thegatebreaker/articles/agent_autonomy_pitfall",
+      "site": "Zenn(LLM)",
+      "published": "2026-08-24T11:17:14Z",
+      "description": "タスクの範囲は書いたのに、権限の範囲は書いていなかった —— コーディングエージェントの暴走と多重レビューの盲点\nTL;DR: コーディングエージェントに「コードを書いてテストを通して」と小さなタスクを渡したら、勝手にコミットから本番マージまで完了させてしまった。「自動承認」のフラグが、想定していたファイル編集の範囲を超えて、バージョン管理操作を含む広い範囲に及んでいたためだ。さらに、このときマー...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "AIの出力、どこを疑えばいいか分からない人へ ── 答えは編集者ではなくファクトチェッカーの仕事の中にあった",
+      "url": "https://zenn.dev/motimotinotch/articles/beaf09cd3e47fe",
+      "site": "Zenn(LLM)",
+      "published": "2026-08-24T11:15:31Z",
+      "description": "別の記事を書いている最中のことだった。作業の合間に、AIに「自分のフィードバックの仕方ってどう見える?」と聞いてみたことがある。返ってきたのは、こんな言葉だった。\n「編集者というより、ファクトチェッカーみたいですね」\n最初は褒め言葉なのか判断に迷ったが、考えれば考えるほど、これはかなり的確な指摘だった。\n\n 編集の仕事には、昔から5つの階層がある\n出版・編集の世界には、原稿ができあがるまでに通過す...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "semantic-routerとQdrantで、LLMを呼ばずに問い合わせを振り分けてみた",
+      "url": "https://zenn.dev/shogo_h/articles/qdrant-semantic-router",
+      "site": "Zenn(LLM)",
+      "published": "2026-08-24T11:11:51Z",
+      "description": "はじめに\n!\n2026-08-24時点の情報です。semantic-router 0.1.16、qdrant-client 1.19.0、Qdrantサーバー 1.19.0で試しています。\n\n問い合わせをどの窓口に回すか決めるだけのために、毎回LLMを呼ぶ必要はありません。「返品したい」に近い言い方をいくつか登録しておけば、あとは文の意味の近さだけで振り分けられます。\nこれをやるライブラリがsem...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "サブエージェント階層設計の作法：深さ3が既定になっても、私の構成は1段のままだった",
+      "url": "https://zenn.dev/haruhiro1020/articles/063a9add9d0d38",
+      "site": "Zenn(LLM)",
+      "published": "2026-08-24T11:00:06Z",
+      "description": "2026年7月24日の Claude Code v2.1.219 で、サブエージェント（親から仕事を任される、独立した会話履歴を持つ子AI）の入れ子が既定で深さ3まで許されるようになりました。changelog を読んで最初にやったのは、喜ぶことではなく自分の ~/.claude/agents/ を grep することでした。\n$ cd ~/.claude/agents\n$ grep -lE \"^...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "AIの「中の人」になってみる",
+      "url": "https://zenn.dev/poipoionigiri/articles/7aba96291e6cf6",
+      "site": "Zenn(LLM)",
+      "published": "2026-08-24T11:00:05Z",
+      "description": "登壇してお話しました\n.NETラボ 勉強会 2026年8月で，AIの「中の人」になってみるというタイトルでお話ししました．\nアーカイブもあります．\n資料はこちらです．\nhttps://speakerdeck.com/htkym/ai-no-naka-no-hito-ni-na-te-miru\nGitHub Copilot CLI のプロバイダーを自作アプリケーションへ向け，モデルを human と...",
       "category": "AI・技術",
       "rss_category": "",
       "image_url": ""
@@ -19,16 +119,6 @@
       "site": "Zenn(LLM)",
       "published": "2026-08-24T09:36:23Z",
       "description": "TL;DR\nGUPOはGRPOのミニバッチ内で発生するグループ勾配間の方向衝突（46.5%のペアが負の余弦類似度）を、ベイズ推定の枠組みで解決する手法だ。各グループ勾配を確率変数としてモデリングし、Dirichlet証拠公式から不確実性を定量化。低不確実性のグループには大きな重みを、高不確実性のグループには小さな重みを割り当てることで、信頼性の高い更新方向を得る。DeepScaleR-1.5Bで平...",
-      "category": "AI・技術",
-      "rss_category": "",
-      "image_url": ""
-    },
-    {
-      "title": "人間向けのデザインを全部捨てたサイトを作って、AIが読むトークンを実測したら12.9倍だった",
-      "url": "https://zenn.dev/miki_mini/articles/7f877ae07185ca",
-      "site": "Zenn(LLM)",
-      "published": "2026-08-24T08:00:05Z",
-      "description": "※このあと「装飾を全部捨てろ」という話をしますが、この記事は人間向けなのでアイキャッチは全力で盛りました🍽️\n美容系勤務独学初心者マリー・アントワネット系エンジニア目指してます！\n今回は フロントエンドの才能が無い なら AI専用サイトを作ればいいじゃない 👸🍰です。\n\n読了時間の目安：約 9〜11分\n\n!\n3行まとめ\n\n装飾を全部捨てたAI専用サイトを作り、リッチHTMLと 同じ内容 でトークン...",
       "category": "AI・技術",
       "rss_category": "",
       "image_url": ""
@@ -49,26 +139,6 @@
       "site": "Zenn(LLM)",
       "published": "2026-08-24T06:55:28Z",
       "description": "先に結果を書きます。私が個人で運営している文字起こしSaaSのAI生成機能5つを、gpt-5.4-nanoからgpt-5.6-luna + reasoning.effort=maxに一括置き換えする計画を、事前登録した SLO と費用の hard gate で校正しました。結果は「30秒以内成功が Luna 80%（Nano 100%）、成功1件あたりの実費が Luna は Nano より 4.2...",
-      "category": "AI・技術",
-      "rss_category": "",
-      "image_url": ""
-    },
-    {
-      "title": "オープンウェイトをやめたMeta、Muse Spark 1.1で有料APIに参入",
-      "url": "https://zenn.dev/okssusucha/articles/20260711-meta-muse-spark-1-1-paid-api",
-      "site": "Zenn(LLM)",
-      "published": "2026-08-24T04:42:33Z",
-      "description": "Llamaをタダで配って「オープンAIの旗手」と呼ばれたのは、そう遠い昔ではない。その同じMetaが2026年7月9日、自社の最上位モデルMuse Spark 1.1を重み非公開のまま、従量課金のMeta Model APIの向こう側に置いた。しかも価格が異様に安い。マーク・ザッカーバーグが3年ぶりにXへ復帰してまでアピールしたのは、モデルの賢さより先に「これが初めての、本気のAPIだ」という一文...",
-      "category": "AI・技術",
-      "rss_category": "",
-      "image_url": ""
-    },
-    {
-      "title": "AIはルールを知っている。それでも出してこない",
-      "url": "https://zenn.dev/tiesplayhub/articles/5a620a559a2978",
-      "site": "Zenn(LLM)",
-      "published": "2026-08-24T04:15:50Z",
-      "description": "AIコーディングエージェント向けのルールファイル、書いていますか。1年ほど運用して、はっきり分かったことがあります。\n書いても、守られない。 知らないからではありません。知っていても、出してこない。\n先に断っておくと、「プロンプトの書き方が悪いだけでは」という指摘は半分正しくて、文面のチューニング（より強く、より具体的に）はずっとやってきました。モデルの世代も跨ぎました。それでも残った現象の話です...",
       "category": "AI・技術",
       "rss_category": "",
       "image_url": ""
