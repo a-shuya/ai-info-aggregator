@@ -1,6 +1,6 @@
 {
   "site": "Zenn(生成 AI)",
-  "last_updated": "2026-08-24T02:11:43.592715",
+  "last_updated": "2026-08-24T03:27:29.254174",
   "total_articles": 3521,
   "articles": [
     {
@@ -9,6 +9,16 @@
       "site": "Zenn(生成 AI)",
       "published": "2026-08-23T22:08:03Z",
       "description": "生成AIアプリを運用していると、いずれ必ずコストの話が出てきます。\n「もっと安いモデルに変えられないか」\n「すべてのリクエストに高価なモデルを使う必要はないのでは」\n「ルーティングを使えばコストを下げられるのでは」\n技術的には、モデルを変更すること自体はそれほど難しくありません。\nOpenAI互換APIであれば、endpointやmodel名を変えるだけで試せるケースもあります。\nただ、その次に少...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "BigQueryのAI関数でSQLだけで100万件の感情分析 ―ETLもAPI実装もいらない",
+      "url": "https://zenn.dev/acntechjp/articles/zenn-gcp-bigquery-ai-functions",
+      "site": "Zenn(生成 AI)",
+      "published": "2026-08-23T21:30:39Z",
+      "description": "はじめに\nAzure から Google Cloud を触るシリーズです。\n「顧客レビューを感情分析して、ネガティブなものを集計したい」。よくある要件です。普通なら、データを取り出して、Python で LLM API を叩くバッチを書いて、結果を書き戻して、集計する。ETL パイプラインと API 実装の一式が要ります。\nBigQuery の AI 関数を使うと、これが SQL 一本で終わります...",
       "category": "AI・技術",
       "rss_category": "",
       "image_url": ""
@@ -199,16 +209,6 @@
       "site": "Zenn(生成 AI)",
       "published": "2026-08-22T13:18:39Z",
       "description": "何が起きたか\n個人開発している学習アプリの作業中に、AIコーディングツールのセッションが3つまとめて飛んだ。\n\nアプリ本体を触っていたセッション\n毎日16:00に問題データを生成するスケジュールタスク\n毎日17:00にそれを本番へ反映するスケジュールタスク\n\n会話履歴は復旧できなかった。一方でタスクの定義ファイルはディスクに残っていたので、そのまま登録し直そうとした。\n結論から書くと、その「忠実な...",
-      "category": "AI・技術",
-      "rss_category": "",
-      "image_url": ""
-    },
-    {
-      "title": "LLM APIの提供経路を理解する：AWS・GCP・Azure・直API・AI Gatewayの違い",
-      "url": "https://zenn.dev/yhay81/articles/202608-llm-api-landscape",
-      "site": "Zenn(生成 AI)",
-      "published": "2026-08-22T07:37:41Z",
-      "description": "LLMをAPIから利用するとき、モデル名だけではサービスの全体像はわかりません。同じClaudeでも、Anthropicの直API、Amazon Bedrock、Vertex AI、Microsoft Foundryなど、複数の経路から提供されています。経路が違えば、推論を実行する事業者、契約、認証、請求、利用できる機能も同じとは限りません。\nこの記事では、2026年8月22日時点の公式情報をもと...",
       "category": "AI・技術",
       "rss_category": "",
       "image_url": ""
