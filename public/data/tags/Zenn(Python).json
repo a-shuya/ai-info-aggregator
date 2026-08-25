@@ -1,8 +1,28 @@
 {
   "site": "Zenn(Python)",
-  "last_updated": "2026-08-25T01:50:06.376815",
+  "last_updated": "2026-08-25T02:48:41.739592",
   "total_articles": 5969,
   "articles": [
+    {
+      "title": "MiniMax H3のref2vaが『ハング』したと思ったら、原因はVRAM枯渇でもスワップでもなく、ただ遅いだけだった",
+      "url": "https://zenn.dev/ivyxon/articles/minimax-h3-ref2va-debug",
+      "site": "Zenn(Python)",
+      "published": "2026-08-24T22:38:53Z",
+      "description": "MiniMax H3 (Hailuo 3.0) を Colab で動かして遊んでいる過程で、新しく増えた機能を試したら「進捗0%のまま15分以上動かない」という症状にぶつかりました。ソースコードまで読んで詳細な仮説を立てて対策したのに、結果はほぼ全部外れていた、という記録です。\n普段は IVYXON というサイトで、SEC の開示データなどの一次情報を使った米国株の実測記事を書いています。今回は毛...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "Knowledge Graphの不足検出とGemini/Claudeの使い分け",
+      "url": "https://zenn.dev/acntechjp/articles/2ed34149089122",
+      "site": "Zenn(Python)",
+      "published": "2026-08-24T21:30:05Z",
+      "description": "前々回と前回で、小さなKnowledge Graphを使ったGraph RAGを作り、Local / Vertex AIの構成比較まで作成しました。\nここまでで普通の質問にはかなり答えられるようになりました。しかしそもそもこのGraph、質問に答えるための情報がちゃんと入ってるんだっけという課題があります。LLMは「分かりません」と返すことはできますが、知りたかったのはむしろその先、なぜ答えられな...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
     {
       "title": "Claude Code のログでブランチ運用を数えたら、git_branch の \"HEAD\" が2つの意味を持っていた",
       "url": "https://zenn.dev/chiisanasoft/articles/08f0341f5565ff",
@@ -44,31 +64,11 @@
       "image_url": ""
     },
     {
-      "title": "MiniMax M3をOpenAI SDKから使う方法",
-      "url": "https://zenn.dev/naganegi66/articles/8bf36cbef61fb3",
-      "site": "Zenn(Python)",
-      "published": "2026-08-24T11:46:45Z",
-      "description": "MiniMax M3をOpenAI SDKから使う方法\nMiniMaxから新しい M3 が出ていたので、APIから使う方法を整理してみます。\nM3は特にCoding / Agent系を意識したモデルで、最大1M tokensのコンテキストや、MiniMax Sparse Attention（MSA）、ネイティブなマルチモーダル対応などが特徴です。\n今回は、OpenAI互換APIを提供している Co...",
-      "category": "開発",
-      "rss_category": "",
-      "image_url": ""
-    },
-    {
       "title": "Python の ThreadPoolExecutor の shutdown(wait=False) とワーカーの残存",
       "url": "https://zenn.dev/moridev/articles/8edd15347a0772",
       "site": "Zenn(Python)",
       "published": "2026-08-24T11:37:42Z",
       "description": "前の記事までで、ThreadPoolExecutor と ProcessPoolExecutor の選択、Future.result() による例外回収、max_workers、with による Executor 管理を扱いました。この記事では、そこから一段だけ踏み込み、ループ内で ThreadPoolExecutor を使い捨てるときの shutdown(wait=False) を扱います。\nE...",
-      "category": "開発",
-      "rss_category": "",
-      "image_url": ""
-    },
-    {
-      "title": "semantic-routerとQdrantで、LLMを呼ばずに問い合わせを振り分けてみた",
-      "url": "https://zenn.dev/shogo_h/articles/qdrant-semantic-router",
-      "site": "Zenn(Python)",
-      "published": "2026-08-24T11:11:51Z",
-      "description": "はじめに\n!\n2026-08-24時点の情報です。semantic-router 0.1.16、qdrant-client 1.19.0、Qdrantサーバー 1.19.0で試しています。\n\n問い合わせをどの窓口に回すか決めるだけのために、毎回LLMを呼ぶ必要はありません。「返品したい」に近い言い方をいくつか登録しておけば、あとは文の意味の近さだけで振り分けられます。\nこれをやるライブラリがsem...",
       "category": "開発",
       "rss_category": "",
       "image_url": ""
