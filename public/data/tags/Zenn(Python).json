@@ -1,7 +1,7 @@
 {
   "site": "Zenn(Python)",
-  "last_updated": "2026-08-25T15:01:48.668893",
-  "total_articles": 5991,
+  "last_updated": "2026-08-25T15:57:11.727238",
+  "total_articles": 5989,
   "articles": [
     {
       "title": "Windowsタスクスケジューラで Python を毎朝動かす(常駐させない常駐化) #5",
@@ -34,16 +34,6 @@
       "image_url": ""
     },
     {
-      "title": "じゃんけんのナッシュ均衡は1/3ずつと決まっている。学習させたら均衡から3,050倍遠ざかり、最後は手が完全に読めるようになった",
-      "url": "https://zenn.dev/shakeailab/articles/nash-equilibrium-learning-cycle",
-      "site": "Zenn(Python)",
-      "published": "2026-08-25T11:57:27Z",
-      "description": "ゲーム理論を習うと、必ずナッシュ均衡が出てくる。誰も自分だけ手を変える理由がない状態で、じゃんけんなら「グー・チョキ・パーを1/3ずつ」がそれにあたる。\nそして、たいていこう説明される。\n\n合理的なプレイヤーが互いに学習していけば、やがてナッシュ均衡に落ち着く。\n\n均衡が「行き着く先」として語られている。ナッシュの定理が保証しているのは存在だけなのに、いつのまにか到達の話にすり替わっている。\nでは...",
-      "category": "開発",
-      "rss_category": "",
-      "image_url": ""
-    },
-    {
       "title": "Pythonで代数構造を実装する",
       "url": "https://zenn.dev/skrtk98/books/python-algebraic-structures",
       "site": "Zenn(Python)",
@@ -59,6 +49,16 @@
       "site": "Zenn(Python)",
       "published": "2026-08-25T09:04:42Z",
       "description": "はじめに\nタイトルの元ネタがわかった人は素敵なRおじさんです。なお先に断っておくと、この記事は「pandasをやめろ」という話ではなく、内部構造を理解した上で場面ごとに使い分けようという話です。\nこの記事で言いたいことは1つだけです。「pandasは遅い、polarsは速い」という結果だけを見て終わるのはもったいない、ということです。速度差の理由をpandasとpolarsの内部構造まで追いかける...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "Pythonで作る AIエージェントのMemory入門",
+      "url": "https://zenn.dev/monoocean/books/3d7a149c7a864a",
+      "site": "Zenn(Python)",
+      "published": "2026-08-25T09:03:36Z",
+      "description": "AIエージェントの「Memory」は、どのように情報を覚え、次の会話で使っているのでしょうか。本書では、Windows 11 + PowerShell + Python + OpenAI APIを使い、MEMORY.mdへの保存・読み込み、LLMへのMemory利用、ReflectionによるMemory追加、再利用、削除までを短いコードで段階的に実装します。完成済みのMemory機能を使うだけで...",
       "category": "開発",
       "rss_category": "",
       "image_url": ""
@@ -179,26 +179,6 @@
       "site": "Zenn(Python)",
       "published": "2026-08-25T00:00:37Z",
       "description": "バックテストで年利何十%と出ていたロジックを本番投入したら、初月で赤字になった経験がある人は少なくないはずだ。俺自身、自作の自動売買ツールで似たようなことを経験した。原因は大きく3つ、手数料・スリッページ・部分約定に集約される。この記事ではそれぞれがなぜ起きるのか、どう検証に組み込むかを実装レベルで書く。\n\n 結論から言うと\nバックテストと本番の乖離は、大半が「約定を理想化しすぎている」ことに起因...",
-      "category": "開発",
-      "rss_category": "",
-      "image_url": ""
-    },
-    {
-      "title": "[Agents on 16GB] 直そうとした失敗は、測ったら起きていなかった",
-      "url": "https://zenn.dev/bswebdev/articles/agents-16gb-failure-that-never-happened",
-      "site": "Zenn(Python)",
-      "published": "2026-08-25T00:00:05Z",
-      "description": "Agents on 16GB — 16GBのMacBook1台で動かすマルチエージェント。API利用ゼロ、外に何も出さない。\n\n小さいモデルに失望すると、人は大きいモデルに手を伸ばす。私もそうだった。8Bの失敗を判決として読んでいた——こういう仕事にはこれでは小さすぎる。\nその判決をいったん取り下げて、qwen3:8b が実際にどこで壊れるのかを一通り測った。\n先に結論を書いておく。\n\n「小さすぎ...",
-      "category": "開発",
-      "rss_category": "",
-      "image_url": ""
-    },
-    {
-      "title": "OpenVikingの3階層コンテキストは本当にトークンを削るのか実測した",
-      "url": "https://zenn.dev/genelab_999/articles/7b2c5b5210fdf9",
-      "site": "Zenn(Python)",
-      "published": "2026-08-24T23:37:00Z",
-      "description": "TL;DR\n\nOpenVikingの階層ロードは、コーパスが2.64倍になってもコストが11.7%しか増えなかった。全文投入は素直に2.64倍になる\n「棚を特定してから本を開く」ため、1ホップで探索対象チャンクが69.6%落ちる\n\nただし依存パッケージ167個、仮想環境1.2GB。文書が数十件の規模なら、フラットなベクトル検索のほうが合理的\nシステムPythonに直接入れるとDebian系ではPy...",
       "category": "開発",
       "rss_category": "",
       "image_url": ""
