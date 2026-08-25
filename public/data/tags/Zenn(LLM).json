@@ -1,38 +1,8 @@
 {
   "site": "Zenn(LLM)",
-  "last_updated": "2026-08-25T22:49:18.696853",
+  "last_updated": "2026-08-25T23:13:27.829994",
   "total_articles": 5637,
   "articles": [
-    {
-      "title": "Qwen3.8 27Bを262KでPi Coding Agentにつないで「テトリス作っといて」と言ってみた",
-      "url": "https://zenn.dev/sumumu26/articles/da9b4977bf5fc6",
-      "site": "Zenn(LLM)",
-      "published": "2026-08-25T12:42:52Z",
-      "description": "こんにちは。miharubaの池谷です。\n最近、RTX 4070 Ti SUPER 16GB + RTX 5060 Ti 16GBの2GPU環境で、Qwen3.8 27Bをllama.cppから動かして遊んでいます。\n前回は262K contextでQ3/Q5を動かし、Tensor Splitを調整して2GPUをどう使うと速いのかを試しました。\n今回は特に大げさな検証ではありません。\nせっかくQw...",
-      "category": "AI・技術",
-      "rss_category": "",
-      "image_url": ""
-    },
-    {
-      "title": "文章と画像を意味ベクトルにしてSVDしてみた――特異値を何個残せば情報は保たれるのか",
-      "url": "https://zenn.dev/schhrcat/articles/f9324e8e88dc64",
-      "site": "Zenn(LLM)",
-      "published": "2026-08-25T12:31:36Z",
-      "description": "はじめに\n特異値分解（Singular Value Decomposition：SVD）は、行列を重要な成分へ分解し、少ない成分で近似するための強力な道具である。\n画像圧縮や主成分分析、推薦システム、LLMの低ランク適応（LoRA）など、さまざまな分野で使われている。\nでは、文章や画像を特徴ベクトルへ変換してSVDすると、情報はどの特異値に集中するのだろうか。\nさらに、上位の特異値を何個残せば、元...",
-      "category": "AI・技術",
-      "rss_category": "",
-      "image_url": ""
-    },
-    {
-      "title": "引き継ぎプロンプトから解放 ― セッション管理を不要にする「STATE LOOP」という運用",
-      "url": "https://zenn.dev/cutcha/articles/b6abccb42ecacf",
-      "site": "Zenn(LLM)",
-      "published": "2026-08-25T11:45:05Z",
-      "description": "Claude Codeを毎日使っていて、長いセッションの引き継ぎに疲れている人向け。33世代やった引き継ぎ運用を1日で作り替えた実録と、今日から試せる最小構成。数字は全部実測。\n\n 想定読者\n\nClaude Codeで長時間セッションを回していて、コンテキストが埋まっていく感覚に覚えがある\n\n/compact後に精度が落ちるのを体感したことがある\nセッションの終わりに引き継ぎプロンプトを書いて、新...",
-      "category": "AI・技術",
-      "rss_category": "",
-      "image_url": ""
-    },
     {
       "title": "Google Colabで最新LLMを試す #11 ― LFM2.5-VL-1.6Bを無料版T4でFP16実行する",
       "url": "https://zenn.dev/nakanishitf/articles/ce1fba65f14a88",
@@ -99,6 +69,36 @@
       "site": "Zenn(LLM)",
       "published": "2026-08-25T05:29:51Z",
       "description": "以前こう言う記事を書いた。\nhttps://zenn.dev/simossyi/articles/755aacf33d742c\n要約するとこうだ。\n\nLLMは事前学習をしてる\n事前学習は文脈条件付け次トークン分類をやっている\n従って、事前学習コーパスにチャットのやり取りがあった時、感謝が述べ伝えられるのは基本的に好ましいことをした場合であって、LLMとのチャットにおいても感謝を述べることで次トーク...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "LLMに公的データの欠損を埋めさせたら、原文にない金額を作られた",
+      "url": "https://zenn.dev/lazylog6/articles/a34951f4c3a88c",
+      "site": "Zenn(LLM)",
+      "published": "2026-08-25T05:10:09Z",
+      "description": "補助金の検索サイトを個人で運用している。\nデータはJグランツ(デジタル庁)の公開APIから毎日取得していて、現在1,685件を掲載している。\nこのAPIには、補助上限額が入っていないレコードがかなりある。\n分析した時点では1,625件のうち562件、およそ3分の1が空だった。\n金額が分からない補助金は、利用者から見ると比較のしようがない。\n概要の本文には金額が書かれていることが多い。\nそこでLLM...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "長時間エージェントの状態を41分の1にするLangGraphのDelta Channels",
+      "url": "https://zenn.dev/okssusucha/articles/20260712-langgraph-delta-channels",
+      "site": "Zenn(LLM)",
+      "published": "2026-08-25T04:44:12Z",
+      "description": "コーディングエージェントを200ターン走らせたら、状態のスナップショットだけで5.3GB積み上がっていた。LangChainがこの数字を公開したとき、多くの人が「durable execution(耐障害実行)は素晴らしい」と褒めてきた裏で、誰もその保存コストを口にしていなかったことに気づかされた。DeltaChannelはそこに手を入れる仕組みで、同じ処理を129MBまで落とす。約41分の1だ。...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "LLM APIから417万字の応答が返ってきた — MD5指紋分析で「生成ではなく複製」を特定するまで",
+      "url": "https://zenn.dev/acs_developer/articles/llm-response-duplication-md5-forensics",
+      "site": "Zenn(LLM)",
+      "published": "2026-08-25T04:08:27Z",
+      "description": "自作のWordPress向けAI記事生成プラグインで、本来3,000字前後になるはずの下書きが4,169,336字で保存される障害が発生した。読了時間の推定値が8,712分と表示されて初めて気づく、という気づき方だった。\n「LLMが暴走して同じ内容を延々と生成した」で片づけたくなるが、それだと課金トークン数と辻褄が合わない。この記事は、その矛盾を出発点に、セクション分割とMD5指紋分析で「生成され...",
       "category": "AI・技術",
       "rss_category": "",
       "image_url": ""
