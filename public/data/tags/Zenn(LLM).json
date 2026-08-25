@@ -1,14 +1,44 @@
 {
   "site": "Zenn(LLM)",
-  "last_updated": "2026-08-25T05:45:30.734329",
-  "total_articles": 5620,
+  "last_updated": "2026-08-25T06:20:02.361217",
+  "total_articles": 5622,
   "articles": [
     {
-      "title": "ローカルLLMは力不足だと思っていた。同じ重みのまま、設定ひとつで83%が100%になった",
-      "url": "https://zenn.dev/ossudesu/articles/zenn-local-agent-numctx-article",
+      "title": "敵対的検証をLLMコードレビューで試すと何が起きるのか",
+      "url": "https://zenn.dev/knowledgesense/articles/0cb441713c9fee",
       "site": "Zenn(LLM)",
-      "published": "2026-08-25T01:35:44Z",
-      "description": "この記事の対象と、扱う規模\nローカルLLM（Ollama）でツールを使うエージェントを動かしてみたい人、あるいは動かして「なぜか答えが返ってこない」で止まっている人向けです。\n先に規模を正直に書きます。6ケース×3周＝18回の小さなevalです。ベンチマークとして通用する母数ではありません。モデルの優劣を論じる記事ではなく、個人のマシンで動かしたときに何が先に壊れるかの記録です。\nそれでも書く理由...",
+      "published": "2026-08-25T01:13:08Z",
+      "description": "導入\nこんにちは、株式会社ナレッジセンスの須藤英寿です。\nAIでコードのレビューをする際に敵対的検証をすることで性能が上がるとされています。そこにさらに、その検証を監視する役を付けることでレビューの精度を上げる手法「Adversarial Review」について紹介します。\nhttps://arxiv.org/pdf/2608.18167\n\n\n サマリー\n最近、敵対的検証という言葉を耳にすることが...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "初めてのハーネス設計に挑戦：Claude → Codex → MiniMax M3 の試行錯誤",
+      "url": "https://zenn.dev/nakakei6439/articles/harness-design-journey",
+      "site": "Zenn(LLM)",
+      "published": "2026-08-25T00:27:47Z",
+      "description": "はじめに\n現在、RevenueCat のハッカソンに参加するため、iOS アプリを開発しています。 開発には、Claude Code の月額20ドルの Pro プランを使っています。\nその開発を自動化するため、初めて 自動開発ハーネス（planner → generator → evaluator の3エージェント構成）を組みました。ところが、generator（コード生成担当）にどのモデルを使う...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "[Agents on 16GB] 直そうとした失敗は、測ったら起きていなかった",
+      "url": "https://zenn.dev/bswebdev/articles/agents-16gb-failure-that-never-happened",
+      "site": "Zenn(LLM)",
+      "published": "2026-08-25T00:00:05Z",
+      "description": "Agents on 16GB — 16GBのMacBook1台で動かすマルチエージェント。API利用ゼロ、外に何も出さない。\n\n小さいモデルに失望すると、人は大きいモデルに手を伸ばす。私もそうだった。8Bの失敗を判決として読んでいた——こういう仕事にはこれでは小さすぎる。\nその判決をいったん取り下げて、qwen3:8b が実際にどこで壊れるのかを一通り測った。\n先に結論を書いておく。\n\n「小さすぎ...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "OpenVikingの3階層コンテキストは本当にトークンを削るのか実測した",
+      "url": "https://zenn.dev/genelab_999/articles/7b2c5b5210fdf9",
+      "site": "Zenn(LLM)",
+      "published": "2026-08-24T23:37:00Z",
+      "description": "TL;DR\n\nOpenVikingの階層ロードは、コーパスが2.64倍になってもコストが11.7%しか増えなかった。全文投入は素直に2.64倍になる\n「棚を特定してから本を開く」ため、1ホップで探索対象チャンクが69.6%落ちる\n\nただし依存パッケージ167個、仮想環境1.2GB。文書が数十件の規模なら、フラットなベクトル検索のほうが合理的\nシステムPythonに直接入れるとDebian系ではPy...",
       "category": "AI・技術",
       "rss_category": "",
       "image_url": ""
@@ -19,16 +49,6 @@
       "site": "Zenn(LLM)",
       "published": "2026-08-24T22:37:19Z",
       "description": "先に結論\nMCPサーバーを足すと「なんとなくコンテキストが減る」ことは知られているが、実際に何トークン持っていかれるのかを数字で見た記憶がなかったので、手元でよく使われるサーバーを7個立ち上げて tools/list を叩き、ツール定義をそのままトークン化して数えた。\n結果はこうなった。\n\n7サーバー・131ツールで 合計 23,964 トークン。20万トークン窓（Claude Sonnet / ...",
-      "category": "AI・技術",
-      "rss_category": "",
-      "image_url": ""
-    },
-    {
-      "title": "AIは回せば回すほど凄いのか ―「常時稼働」という設計の敗北",
-      "url": "https://zenn.dev/eggletric/articles/4ea81df765fb66",
-      "site": "Zenn(LLM)",
-      "published": "2026-08-24T22:20:05Z",
-      "description": "SNSに溢れる「AI常時ぶん回し」への違和感\n近年、SNSでこういう投稿をよく見かけます。\n\n「AIエージェントを24時間動かして開発を完全自動化しました」\n「寝ている間もAIがコードを書き続けています」\n「AI社員を常時稼働させて、プロダクトを量産中です」\n\n一見すると、とても先進的で凄そうに見えます。\n実際、こうした投稿は伸びやすく、「これからはこういう時代だ」という空気も感じます。\nただ、現...",
       "category": "AI・技術",
       "rss_category": "",
       "image_url": ""
@@ -68,7 +88,17 @@
       "url": "https://zenn.dev/sumumu26/articles/dbe910db00ece7",
       "site": "Zenn(LLM)",
       "published": "2026-08-24T15:11:34Z",
-      "description": "こんにちは。miharubaの池谷です。\n前回の記事では、RTX 4070 Ti SUPER 16GBを使って、Qwen3.8\n27Bをllama.cppでどこまで動かせるのかを検証しました。\nhttps://zenn.dev/sumumu26/articles/b5b2ab52939b4e\nQ3量子化、KVキャッシュの量子化、ngram + MTPによるSpeculative\nDecodingな...",
+      "description": "こんにちは。miharubaの池谷です。\n前回の記事では、RTX 4070 Ti SUPER 16GBを使って、Qwen3.8 27Bをllama.cppでどこまで動かせるのかを検証しました。\nhttps://zenn.dev/sumumu26/articles/b5b2ab52939b4e\nQ3量子化、KVキャッシュの量子化、ngram + MTPによるSpeculative Decodingな...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "ざっくりわかる AI Agent（2）：Agent の「手」——ツールと MCP",
+      "url": "https://zenn.dev/dupi/articles/ai-agent-plain-02-tools-mcp",
+      "site": "Zenn(LLM)",
+      "published": "2026-08-24T14:06:10Z",
+      "description": "ひとことまとめ：ツールは Agent の「手」で、何ができるかを決めます。しかし手は悪さもするので、「安全手袋」も必要です。さらに、手をどこにでも挿せる共通の差込口も要ります——ツールの設計、実行の安全性、MCP は、この三つの話です。\n\n 手がなければ、脳がいくら賢くても宝の持ち腐れ\n前回は、コンテキストが Agent の「目」で、何が見えるかを決めると言いました。しかし見るだけでは足りません。...",
       "category": "AI・技術",
       "rss_category": "",
       "image_url": ""
@@ -89,16 +119,6 @@
       "site": "Zenn(LLM)",
       "published": "2026-08-24T12:26:37Z",
       "description": "第1回：概要 の続きです。\n今回は機能の紹介です。実際のやり取りをそのまま載せます（勤務先名・人名は伏せています）。\n\n\n 予定とシフト\n以前プログラミング学習の一環で、家族共有アプリを作成しました。\nデータベースにはsupabaseを用い、家族の予定、筆者の勤務、残業時間を保存しています。\nJARVISではsupabaseのAPIを使用して、データベースにアクセスし、情報の取得、追加、更新、削除...",
-      "category": "AI・技術",
-      "rss_category": "",
-      "image_url": ""
-    },
-    {
-      "title": "MiniMax M3をOpenAI SDKから使う方法",
-      "url": "https://zenn.dev/naganegi66/articles/8bf36cbef61fb3",
-      "site": "Zenn(LLM)",
-      "published": "2026-08-24T11:46:45Z",
-      "description": "MiniMax M3をOpenAI SDKから使う方法\nMiniMaxから新しい M3 が出ていたので、APIから使う方法を整理してみます。\nM3は特にCoding / Agent系を意識したモデルで、最大1M tokensのコンテキストや、MiniMax Sparse Attention（MSA）、ネイティブなマルチモーダル対応などが特徴です。\n今回は、OpenAI互換APIを提供している Co...",
       "category": "AI・技術",
       "rss_category": "",
       "image_url": ""
