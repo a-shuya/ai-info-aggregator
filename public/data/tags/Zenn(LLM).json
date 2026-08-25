@@ -1,8 +1,108 @@
 {
   "site": "Zenn(LLM)",
-  "last_updated": "2026-08-25T13:06:08.708346",
-  "total_articles": 5632,
+  "last_updated": "2026-08-25T14:01:06.412668",
+  "total_articles": 5638,
   "articles": [
+    {
+      "title": "「AIに任せられない」と結論した作業を、聞き方だけ変えて任せられる形にした — ただし、まだ一度も任せていない",
+      "url": "https://zenn.dev/sbkm/articles/46193d63195581",
+      "site": "Zenn(LLM)",
+      "published": "2026-08-25T13:43:50Z",
+      "description": "個人でポッドキャストを2本、毎週5本ずつ配信しています。台本は自分（と AI）で書き、読み上げは合成音声です。人が喋っているわけではないので、原稿の漢字をどう読むかを機械が決めます。ここが事故ります。\n「おっしゃる通り」が「おっしゃるどおり」になる。「一定時間」が「いちていじかん」になる。文字としては正しいので、目で読んでいる限り絶対に気づきません。音にして初めて分かる。\nこの誤読チェックを AI...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "LLMエージェントの暴走を自律制御する：T細胞モデルとトルクリミッターによる「空白駆動」GuardrailのPython実装",
+      "url": "https://zenn.dev/nanashi_os/articles/ea0e82d4961d56",
+      "site": "Zenn(LLM)",
+      "published": "2026-08-25T13:10:38Z",
+      "description": "Markdown\n\n 1. はじめに：なぜプロンプトで縛ってもLLMは暴走するのか？\nLLM（Trnsformerアーキテクチャ）には、入力文脈の文法的なグリッド（整合性）を強引に満たそうとする性質があります。そのため、日本語のゼロ代名詞（主語・目的語の省略）のような意味的な空白に遭遇すると、存在しない主語を捏造したり、虚無のアテンションに引きずられて推論計画（PlanMessage）を書き換えて...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "Qwen3.8 27Bを262KでPi Coding Agentにつないで「テトリス作っといて」と言ってみた",
+      "url": "https://zenn.dev/sumumu26/articles/da9b4977bf5fc6",
+      "site": "Zenn(LLM)",
+      "published": "2026-08-25T12:42:52Z",
+      "description": "こんにちは。miharubaの池谷です。\n最近、RTX 4070 Ti SUPER 16GB + RTX 5060 Ti 16GBの2GPU環境で、Qwen3.8 27Bをllama.cppから動かして遊んでいます。\n前回は262K contextでQ3/Q5を動かし、Tensor Splitを調整して2GPUをどう使うと速いのかを試しました。\n今回は特に大げさな検証ではありません。\nせっかくQw...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "文章と画像を意味ベクトルにしてSVDしてみた――特異値を何個残せば情報は保たれるのか",
+      "url": "https://zenn.dev/schhrcat/articles/f9324e8e88dc64",
+      "site": "Zenn(LLM)",
+      "published": "2026-08-25T12:31:36Z",
+      "description": "はじめに\n特異値分解（Singular Value Decomposition：SVD）は、行列を重要な成分へ分解し、少ない成分で近似するための強力な道具である。\n画像圧縮や主成分分析、推薦システム、LLMの低ランク適応（LoRA）など、さまざまな分野で使われている。\nでは、文章や画像を特徴ベクトルへ変換してSVDすると、情報はどの特異値に集中するのだろうか。\nさらに、上位の特異値を何個残せば、元...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "長い文章を貼るとAIが急に馬鹿になるのは結局なぜなのか",
+      "url": "https://zenn.dev/m2yagyu/articles/rope-long-context-breakdown",
+      "site": "Zenn(LLM)",
+      "published": "2026-08-25T12:05:36Z",
+      "description": "この記事を読むと、LLMが学習で見た長さを超えた瞬間に壊れる理由を、自分の手で測って説明できるようになります。壊れ方は「長くなるほどじわじわ悪くなる」ではなく、崖です。その崖がどこにあり、モデルの中で何が起きているのかを、位置ごとの perplexity と注意の重みの両方から特定します。\nGPUは不要です。152Mパラメータのモデルと numpy をCPUで動かすだけで最後まで通ります。ただしC...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "引き継ぎプロンプトから解放 ― セッション管理を不要にする「STATE LOOP」という運用",
+      "url": "https://zenn.dev/cutcha/articles/b6abccb42ecacf",
+      "site": "Zenn(LLM)",
+      "published": "2026-08-25T11:45:05Z",
+      "description": "Claude Codeを毎日使っていて、長いセッションの引き継ぎに疲れている人向け。33世代やった引き継ぎ運用を1日で作り替えた実録と、今日から試せる最小構成。数字は全部実測。\n\n 想定読者\n\nClaude Codeで長時間セッションを回していて、コンテキストが埋まっていく感覚に覚えがある\n\n/compact後に精度が落ちるのを体感したことがある\nセッションの終わりに引き継ぎプロンプトを書いて、新...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "Google Colabで最新LLMを試す #11 ― LFM2.5-VL-1.6Bを無料版T4でFP16実行する",
+      "url": "https://zenn.dev/nakanishitf/articles/ce1fba65f14a88",
+      "site": "Zenn(LLM)",
+      "published": "2026-08-25T09:33:57Z",
+      "description": "はじめに\n「Google Colabで最新LLMを試す」シリーズの第11回です。\n今回は、Liquid AIが公開している軽量Vision-Language Model（VLM）である LFM2.5-VL-1.6B を、Google Colab無料版のT4 GPUで動かしてみます。\n今回使用したNotebookは、以下のGitHubリポジトリで公開しています。\nhttps://github.com...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "Pythonで作る AIエージェントのMemory入門",
+      "url": "https://zenn.dev/monoocean/books/3d7a149c7a864a",
+      "site": "Zenn(LLM)",
+      "published": "2026-08-25T09:03:36Z",
+      "description": "AIエージェントの「Memory」は、どのように情報を覚え、次の会話で使っているのでしょうか。本書では、Windows 11 + PowerShell + Python + OpenAI APIを使い、MEMORY.mdへの保存・読み込み、LLMへのMemory利用、ReflectionによるMemory追加、再利用、削除までを短いコードで段階的に実装します。完成済みのMemory機能を使うだけで...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "DeepSeekのFilesAPIを実測：帯域は92%減っても、トークンは1つも減らなかった",
+      "url": "https://zenn.dev/uguisu_blog/articles/64bfb0905d7147",
+      "site": "Zenn(LLM)",
+      "published": "2026-08-25T08:11:04Z",
+      "description": "はじめに\nこんにちは！株式会社うぐいすソリューションズでエンジニアをしているNakaeです。\n普段はAI関連のWebシステム開発をしています。LLMのAPIを組み込む機会が増えるにつれ、料金の内訳が気になるようになりました。この記事は、その疑問を実際に測って確かめた記録です。\n\n DeepSeekについて\nDeepSeekは中国のAI企業で、低価格を武器にしたモデル群を提供しています。V4系には軽...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "難しいのは LLM じゃなかった — Claude Code に毎日ブログ記事を書かせて43日",
+      "url": "https://zenn.dev/kuu_dqx/articles/headless-claude-code-43days",
+      "site": "Zenn(LLM)",
+      "published": "2026-08-25T06:15:57Z",
+      "description": "個人ブログに、LLM が書いた記事を無人で毎日1本公開する仕組みを動かしています。人のレビューは挟みません。毎日12時、誰も見ていないところで記事が生成され、ビルドされ、配信され、SNSに告知が飛びます。\n稼働は43日、記事は43本。欠測ゼロです。\n始める前、私が身構えていたのは「LLM がとんでもないことを書いたらどうするか」でした。実際に運用してみると、そこはほとんど問題になりませんでした。\n...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
     {
       "title": "vibe codingは祈りである",
       "url": "https://zenn.dev/simossyi/articles/d45eb33a52bfe9",
@@ -64,41 +164,11 @@
       "image_url": ""
     },
     {
-      "title": "敵対的検証をLLMコードレビューで試すと何が起きるのか",
-      "url": "https://zenn.dev/knowledgesense/articles/0cb441713c9fee",
-      "site": "Zenn(LLM)",
-      "published": "2026-08-25T01:13:08Z",
-      "description": "導入\nこんにちは、株式会社ナレッジセンスの須藤英寿です。\nAIでコードのレビューをする際に敵対的検証をすることで性能が上がるとされています。そこにさらに、その検証を監視する役を付けることでレビューの精度を上げる手法「Adversarial Review」について紹介します。\nhttps://arxiv.org/pdf/2608.18167\n\n\n サマリー\n最近、敵対的検証という言葉を耳にすることが...",
-      "category": "AI・技術",
-      "rss_category": "",
-      "image_url": ""
-    },
-    {
       "title": "初めてのハーネス設計に挑戦：Claude → Codex → MiniMax M3 の試行錯誤",
       "url": "https://zenn.dev/nakakei6439/articles/harness-design-journey",
       "site": "Zenn(LLM)",
       "published": "2026-08-25T00:27:47Z",
       "description": "はじめに\n現在、RevenueCat のハッカソンに参加するため、iOS アプリを開発しています。 開発には、Claude Code の月額20ドルの Pro プランを使っています。\nその開発を自動化するため、初めて 自動開発ハーネス（planner → generator → evaluator の3エージェント構成）を組みました。ところが、generator（コード生成担当）にどのモデルを使う...",
-      "category": "AI・技術",
-      "rss_category": "",
-      "image_url": ""
-    },
-    {
-      "title": "[Agents on 16GB] 直そうとした失敗は、測ったら起きていなかった",
-      "url": "https://zenn.dev/bswebdev/articles/agents-16gb-failure-that-never-happened",
-      "site": "Zenn(LLM)",
-      "published": "2026-08-25T00:00:05Z",
-      "description": "Agents on 16GB — 16GBのMacBook1台で動かすマルチエージェント。API利用ゼロ、外に何も出さない。\n\n小さいモデルに失望すると、人は大きいモデルに手を伸ばす。私もそうだった。8Bの失敗を判決として読んでいた——こういう仕事にはこれでは小さすぎる。\nその判決をいったん取り下げて、qwen3:8b が実際にどこで壊れるのかを一通り測った。\n先に結論を書いておく。\n\n「小さすぎ...",
-      "category": "AI・技術",
-      "rss_category": "",
-      "image_url": ""
-    },
-    {
-      "title": "OpenVikingの3階層コンテキストは本当にトークンを削るのか実測した",
-      "url": "https://zenn.dev/genelab_999/articles/7b2c5b5210fdf9",
-      "site": "Zenn(LLM)",
-      "published": "2026-08-24T23:37:00Z",
-      "description": "TL;DR\n\nOpenVikingの階層ロードは、コーパスが2.64倍になってもコストが11.7%しか増えなかった。全文投入は素直に2.64倍になる\n「棚を特定してから本を開く」ため、1ホップで探索対象チャンクが69.6%落ちる\n\nただし依存パッケージ167個、仮想環境1.2GB。文書が数十件の規模なら、フラットなベクトル検索のほうが合理的\nシステムPythonに直接入れるとDebian系ではPy...",
       "category": "AI・技術",
       "rss_category": "",
       "image_url": ""
@@ -149,16 +219,6 @@
       "site": "Zenn(LLM)",
       "published": "2026-08-24T21:10:48Z",
       "description": "TL;DR\n\nChatGPT・Claude・Geminiは3社とも「会話をまたいで記憶する」機能を持つが、内部構造は「明示的な事実リスト」「暗黙の傾向推測」「セッション/プロジェクト単位の要約」という異なる層で実装されており、オフにする操作もその層ごとに独立している\n\nChatGPTは「保存されたメモリ（saved memories）」と「チャット履歴の参照（reference chat hist...",
-      "category": "AI・技術",
-      "rss_category": "",
-      "image_url": ""
-    },
-    {
-      "title": "キャラAIが別人になるのはプロンプトが悪いんじゃない",
-      "url": "https://zenn.dev/void09/articles/3132402fe2b774",
-      "site": "Zenn(LLM)",
-      "published": "2026-08-24T18:38:20Z",
-      "description": "LLMが「別人になる」問題を、モデルの外から止めてみる\nキャラクターAIや、長く話すエージェントでよくあるやつです。\n最初は口調も性格もちゃんと守っている。\n10往復、20往復するうちに、丁寧語が増える。共感が増える。\nいつの間にか、設定と違う人になっている。\nこれは「モデルが馬鹿だから」だけではありません。\n人格を、モデルの記憶と長い会話履歴に預けているからです。\nこの記事は、その預け方をやめて...",
       "category": "AI・技術",
       "rss_category": "",
       "image_url": ""
