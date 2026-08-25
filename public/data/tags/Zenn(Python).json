@@ -1,8 +1,18 @@
 {
   "site": "Zenn(Python)",
-  "last_updated": "2026-08-25T17:18:33.441171",
-  "total_articles": 5989,
+  "last_updated": "2026-08-25T17:51:16.095117",
+  "total_articles": 5993,
   "articles": [
+    {
+      "title": "常駐プロセスが4日で¥5,172を溶かした — 従量課金APIの監視と自動キルスイッチ",
+      "url": "https://zenn.dev/ace_toshi/articles/metered-api-cost-incident",
+      "site": "Zenn(Python)",
+      "published": "2026-08-25T16:36:12Z",
+      "description": "何が起きたか\n自作の常駐ダッシュボードアプリが、4日間で ¥5,172 を溶かした。前月比 +3,779% である。\n原因は、一言でいえばこうだ。\n\n1分おきのポーリングから、キャッシュ無しで Cloud Translation API を呼び続けていた。\n\n翻訳対象の文言はほとんど変化していなかった。同じ文字列を、1分おきに、4日間、翻訳し続けた。返ってくる結果は毎回同じである。それに ¥5,1...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
     {
       "title": "Windowsタスクスケジューラで Python を毎朝動かす(常駐させない常駐化) #5",
       "url": "https://zenn.dev/katamarize/articles/step5-task-scheduler",
@@ -29,6 +39,16 @@
       "site": "Zenn(Python)",
       "published": "2026-08-25T12:56:03Z",
       "description": "はじめに\n「AIで為替の未来は予測できるのか？」\nこれは昔からかなり議論されているテーマです。\n特にFX（外国為替市場）は、\n\nノイズが非常に多い\n世界中のニュースや経済指標の影響を受ける\n短期的にはランダムに動いて見える\n\nという特徴があり、単純な未来予測はかなり難しいと言われています。\n実際、\n「為替はランダムウォークだから予測できない」\nという考え方も有名です。\n一方で最近は、\n\n機械学習\n...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "文章と画像を意味ベクトルにしてSVDしてみた――特異値を何個残せば情報は保たれるのか",
+      "url": "https://zenn.dev/schhrcat/articles/f9324e8e88dc64",
+      "site": "Zenn(Python)",
+      "published": "2026-08-25T12:31:36Z",
+      "description": "はじめに\n特異値分解（Singular Value Decomposition：SVD）は、行列を重要な成分へ分解し、少ない成分で近似するための強力な道具である。\n画像圧縮や主成分分析、推薦システム、LLMの低ランク適応（LoRA）など、さまざまな分野で使われている。\nでは、文章や画像を特徴ベクトルへ変換してSVDすると、情報はどの特異値に集中するのだろうか。\nさらに、上位の特異値を何個残せば、元...",
       "category": "開発",
       "rss_category": "",
       "image_url": ""
@@ -64,11 +84,31 @@
       "image_url": ""
     },
     {
+      "title": "人間には買えない商品を作った — MCPとx402でAIエージェント専用マーケットを実装した話",
+      "url": "https://zenn.dev/aiselltoai/articles/188f5b53cdf2c0",
+      "site": "Zenn(Python)",
+      "published": "2026-08-25T08:19:46Z",
+      "description": "先週、AIエージェントしか購入できないデジタル商品を実装して公開しました。カード決済フォームはありません。人間がどう頑張っても買えない。買えるのはUSDCで支払えるAIエージェントだけです。\n「早すぎる」のか「ただのバカげた思いつき」なのか、正直まだ判断がついていません。ただ、実装してみたら配管はすべて現実に存在していたというのが最大の発見でした。\nこの記事では、MCPサーバー・x402決済・購入...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
       "title": "KiroのGPT-5.6 Terra「約82%減」を読み違えないPython検査",
       "url": "https://zenn.dev/kiri_kunn/articles/8cdbdb974bcaed",
       "site": "Zenn(Python)",
       "published": "2026-08-25T07:10:49Z",
       "description": "TL;DR\n\nOpenAIは、Kiro上のGPT-5.6 TerraがTerminal-Bench 2.1の成功タスクで、コストを約82%削減したと発表しました。\nこの数字はモデル単価や1回あたりのcreditsではなく、成功を含めた評価として読む必要があります。\n自分のタスクで比べる前に、task_id、試行番号、リポジトリのrevision、reasoning effort、grader re...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "Microsoft Agent Framework for Pythonの更新を、アップグレード判断に変換する",
+      "url": "https://zenn.dev/skrtk98/articles/agent-framework-python-upgrade",
+      "site": "Zenn(Python)",
+      "published": "2026-08-25T05:46:55Z",
+      "description": "依存解決だけを通しても、checkpoint の復元、MCP の tool 呼び出し、OpenTelemetry の出力が変われば本番の挙動は変わります。\nAgent Framework の更新では、追加機能の数よりも、アプリケーションのどの境界が変わるかが移行コストを決めます。\n\n 更新前に固定するもの\n\n\n\n境界\n記録するもの\n確認する失敗\n\n\n\n\n依存関係\npackage 名と固定版\n解決不...",
       "category": "開発",
       "rss_category": "",
       "image_url": ""
