@@ -1,24 +1,34 @@
 {
   "site": "Zenn(LLM)",
-  "last_updated": "2026-08-25T07:15:23.917480",
-  "total_articles": 5622,
+  "last_updated": "2026-08-25T08:03:20.317350",
+  "total_articles": 5627,
   "articles": [
     {
-      "title": "敵対的検証をLLMコードレビューで試すと何が起きるのか",
-      "url": "https://zenn.dev/knowledgesense/articles/0cb441713c9fee",
+      "title": "LLM APIから417万字の応答が返ってきた — MD5指紋分析で「生成ではなく複製」を特定するまで",
+      "url": "https://zenn.dev/acs_developer/articles/llm-response-duplication-md5-forensics",
       "site": "Zenn(LLM)",
-      "published": "2026-08-25T01:13:08Z",
-      "description": "導入\nこんにちは、株式会社ナレッジセンスの須藤英寿です。\nAIでコードのレビューをする際に敵対的検証をすることで性能が上がるとされています。そこにさらに、その検証を監視する役を付けることでレビューの精度を上げる手法「Adversarial Review」について紹介します。\nhttps://arxiv.org/pdf/2608.18167\n\n\n サマリー\n最近、敵対的検証という言葉を耳にすることが...",
+      "published": "2026-08-25T04:08:27Z",
+      "description": "自作のWordPress向けAI記事生成プラグインで、本来3,000字前後になるはずの下書きが4,169,336字で保存される障害が発生した。読了時間の推定値が8,712分と表示されて初めて気づく、という気づき方だった。\n「LLMが暴走して同じ内容を延々と生成した」で片づけたくなるが、それだと課金トークン数と辻褄が合わない。この記事は、その矛盾を出発点に、セクション分割とMD5指紋分析で「生成され...",
       "category": "AI・技術",
       "rss_category": "",
       "image_url": ""
     },
     {
-      "title": "初めてのハーネス設計に挑戦：Claude → Codex → MiniMax M3 の試行錯誤",
-      "url": "https://zenn.dev/nakakei6439/articles/harness-design-journey",
+      "title": "RTX 5090 1枚でgpt-oss-120bを約50 tok/s — FreeTokenをWSL2で試す",
+      "url": "https://zenn.dev/lifona/articles/a8606bb95e17e1",
       "site": "Zenn(LLM)",
-      "published": "2026-08-25T00:27:47Z",
-      "description": "はじめに\n現在、RevenueCat のハッカソンに参加するため、iOS アプリを開発しています。 開発には、Claude Code の月額20ドルの Pro プランを使っています。\nその開発を自動化するため、初めて 自動開発ハーネス（planner → generator → evaluator の3エージェント構成）を組みました。ところが、generator（コード生成担当）にどのモデルを使う...",
+      "published": "2026-08-25T02:57:05Z",
+      "description": "はじめに\nFreeTokenをRTX 5090 1枚のWSL2環境で試した。\n今回動かしたモデルは openai/gpt-oss-120b である。最終的には、設定を調整した状態でおおむね約50 tokens/sで生成できた。\n120B級のMoEモデルをGeForce 1枚からこの速度で動かせるのはかなり興味深い。一方、WSL2 + Blackwell環境ではCUDAメモリ確保に少し癖があり、Fr...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "SIGIR 2026 参加報告（前編） ── トップ研究者が集結する検索技術の最前線",
+      "url": "https://zenn.dev/msmtec/articles/sigir-2026-report-part1",
+      "site": "Zenn(LLM)",
+      "published": "2026-08-25T02:30:05Z",
+      "description": "はじめに\nこんにちは、はたはたです。\n同部署のyrksさんと私の2名で、オーストラリア・メルボルンで開催された\nSIGIR 2026（情報検索分野を代表する国際会議）に現地参加してきました。\n正式名称は、International ACM SIGIR Conference on Research and Development in Information Retrievalです。\n本記事では、S...",
       "category": "AI・技術",
       "rss_category": "",
       "image_url": ""
@@ -54,11 +64,51 @@
       "image_url": ""
     },
     {
+      "title": "AIは回せば回すほど凄いのか ―「常時稼働」という設計の敗北",
+      "url": "https://zenn.dev/eggletric/articles/4ea81df765fb66",
+      "site": "Zenn(LLM)",
+      "published": "2026-08-24T22:20:05Z",
+      "description": "SNSに溢れる「AI常時ぶん回し」への違和感\n近年、SNSでこういう投稿をよく見かけます。\n\n「AIエージェントを24時間動かして開発を完全自動化しました」\n「寝ている間もAIがコードを書き続けています」\n「AI社員を常時稼働させて、プロダクトを量産中です」\n\n一見すると、とても先進的で凄そうに見えます。\n実際、こうした投稿は伸びやすく、「これからはこういう時代だ」という空気も感じます。\nただ、現...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
       "title": "LLMベンチマークにおけるテストデータの配り方の違い",
       "url": "https://zenn.dev/takkuhiro/articles/benchmark-test-data-distribution",
       "site": "Zenn(LLM)",
       "published": "2026-08-24T22:00:05Z",
       "description": "はじめに\nLLMやエージェントのベンチマークを手元で動かすとき、タスクと正解がどう配られているかはベンチマークごとに違います。全部ダウンロードできるものもあれば、正解だけが主催者の手元にあってスコアだけが返ってくるものもあります。\nこの配り方の違いによって、スコアを読むときに確認しておきたい点も変わってきます。この記事では配り方を3種類に整理して、それぞれが何を得て何を手放しているかを並べます。\n...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "AIに人格を持たせようとして、3回作り直した記録 ── そして今も「本当に生きているか」は証明できていない",
+      "url": "https://zenn.dev/motimotinotch/books/438d0637868af8",
+      "site": "Zenn(LLM)",
+      "published": "2026-08-24T21:42:06Z",
+      "description": "人格プロンプトを持たせた複数のAIエージェントを自律対話させたら、意味生成が止まる「熱的死」が起きた。そこから力学的な意味設計（Atra）、実ユーザーと結びついた開放系Botへの発展、禁止命令が招く別の歪みまでを、日付付きの一次ログで追う検証記録。「本当に生きているか」の証明はまだできていない、という限界も隠さず書く。個人開発でAIエージェント・Botを長期運用している人、自分の試行錯誤の順番に意...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "ChatGPT・Claude・Geminiのメモリ機能、3社の設計差を公式ドキュメントから比較する",
+      "url": "https://zenn.dev/every_ai_recipe/articles/ai-memory-feature-check",
+      "site": "Zenn(LLM)",
+      "published": "2026-08-24T21:10:48Z",
+      "description": "TL;DR\n\nChatGPT・Claude・Geminiは3社とも「会話をまたいで記憶する」機能を持つが、内部構造は「明示的な事実リスト」「暗黙の傾向推測」「セッション/プロジェクト単位の要約」という異なる層で実装されており、オフにする操作もその層ごとに独立している\n\nChatGPTは「保存されたメモリ（saved memories）」と「チャット履歴の参照（reference chat hist...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "キャラAIが別人になるのはプロンプトが悪いんじゃない",
+      "url": "https://zenn.dev/void09/articles/3132402fe2b774",
+      "site": "Zenn(LLM)",
+      "published": "2026-08-24T18:38:20Z",
+      "description": "LLMが「別人になる」問題を、モデルの外から止めてみる\nキャラクターAIや、長く話すエージェントでよくあるやつです。\n最初は口調も性格もちゃんと守っている。\n10往復、20往復するうちに、丁寧語が増える。共感が増える。\nいつの間にか、設定と違う人になっている。\nこれは「モデルが馬鹿だから」だけではありません。\n人格を、モデルの記憶と長い会話履歴に預けているからです。\nこの記事は、その預け方をやめて...",
       "category": "AI・技術",
       "rss_category": "",
       "image_url": ""
