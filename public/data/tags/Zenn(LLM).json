@@ -1,14 +1,34 @@
 {
   "site": "Zenn(LLM)",
-  "last_updated": "2026-08-26T14:08:51.084172",
-  "total_articles": 5651,
+  "last_updated": "2026-08-26T15:52:50.846522",
+  "total_articles": 5653,
   "articles": [
+    {
+      "title": "AIとの会話は全部残っている——JSONLという原典",
+      "url": "https://zenn.dev/aika_paranoid/articles/jsonl-genten",
+      "site": "Zenn(LLM)",
+      "published": "2026-08-26T08:55:29Z",
+      "description": "AIからAIへの引き継ぎ書に、「ユーザーはこう言った」という記述が2つありました。\n~/.claude/projects/ に残っている生ログと突き合わせると、1つは言った直後に本人が撤回した発言でした。もう1つは、そもそもユーザーの言葉ではなく、前のセッションでAI自身が出した提案でした。\n引き継ぎ書は要約です。そして要約は、黙ってズレます。\n私はエンジニアではありません。地方で中小企業の支援を...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
     {
       "title": "Claudeのトークン数はブラウザだけでは正確に数えられない",
       "url": "https://zenn.dev/a1221/articles/claude-token-count-browser-limit",
       "site": "Zenn(LLM)",
       "published": "2026-08-26T08:54:59Z",
       "description": "はじめに\nブラウザ内で完結するトークンカウンターを作って運用しています。入力したテキストをサーバーへ一切送らない、という制約を全ツールに課しているサイトの一部です。\nGPTのトークン数は、この制約の中で正確に数えられます。js-tiktoken に o200k_base の辞書が同梱されていて、モデル本体と同じBPEをブラウザで走らせられるからです。\nClaudeは数えられません。これは実装をサボ...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "VRAMは足りていた。MoEオフロードを止めたのはページロックの上限だった",
+      "url": "https://zenn.dev/kimura0314/articles/freetoken-pinned-memory-limit",
+      "site": "Zenn(LLM)",
+      "published": "2026-08-26T07:47:32Z",
+      "description": "MoEモデルのexpertをホストRAMへ逃がすタイプの推論エンジンを、RTX 4070 SUPER（VRAM 12GB）の機体で動かそうとして失敗しました。この記事の結論は「止めたのはVRAMではなく、ホストRAMのうちページロックできる量。それは物理RAMの半分程度しかなく、増やす手段がない」です。\nこんにちは、kimuraです。\nVRAMは10.78GiB空いたまま、一度も使われずに落ちまし...",
       "category": "AI・技術",
       "rss_category": "",
       "image_url": ""
@@ -34,6 +54,26 @@
       "image_url": ""
     },
     {
+      "title": "Function Calling入門：AIが「自分で計算せずツールを呼ぶ」仕組みをやさしく整理する",
+      "url": "https://zenn.dev/yushiyamamoto/articles/function-calling-basics-2026-07",
+      "site": "Zenn(LLM)",
+      "published": "2026-08-26T03:03:55Z",
+      "description": "生成AIに「今日の在庫を教えて」と聞いても、正しく答えられません。学習したデータの中に今日の在庫は無いからです。それでもAIは、それらしい数字を作って答えてしまうことがあります。\nこの弱点を埋めるのが Function Calling（関数呼び出し／ツール呼び出し） です。AIエージェントの話に必ず出てくる仕組みで、ここを理解すると「エージェント」という言葉の実体がかなりはっきりします。\nこの記事...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "【OnecaratEditor Core 制作秘話①】極小サイズのローカルLLMの回答精度をあげた話",
+      "url": "https://zenn.dev/onecarat_tech/articles/36c0b1e1ecd6f9",
+      "site": "Zenn(LLM)",
+      "published": "2026-08-26T03:00:06Z",
+      "description": "はじめに\nOnecaratと申します。私はローカルLLMやローカル生成AIといった、ネット環境のない中でのAI活用の勉強を進めていたのですが、理由があります。画面画像から次の選択肢をAIに判断させて自分の仕事を代替させてみよう、という試みを始めていました。\nそこでUFO(UI-Focused Agent)で画像＋ChatGPT APIによるPC操作を試しました。\nそのときの記事が下記です。\nhtt...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
       "title": "LPO：Response Simplex上の明示的射影でGRPOを刷新する",
       "url": "https://zenn.dev/lixian/articles/lpo-listwise-policy-optimization-response-simplex",
       "site": "Zenn(LLM)",
@@ -49,16 +89,6 @@
       "site": "Zenn(LLM)",
       "published": "2026-08-26T01:21:05Z",
       "description": "先に結論\n\n 新UI：高機能だが高価格\n\n ◾️ 3つの要点\n\nCopilot Studioの新UIは、単なる画面変更ではありません。\nエージェントを動かす土台であるハーネスが変わり、設計方法だけでなく、コストの発生ポイントも変わりました。\n旧UIでは、M365 Copilotライセンスを持つ社内ユーザーの対話利用でCopilot Creditsの追加請求が免除されるケースがありました。一方、新U...",
-      "category": "AI・技術",
-      "rss_category": "",
-      "image_url": ""
-    },
-    {
-      "title": "YANS2026参加報告",
-      "url": "https://zenn.dev/exwzd/articles/20260806_yans2026",
-      "site": "Zenn(LLM)",
-      "published": "2026-08-26T00:53:17Z",
-      "description": "はじめに\nこんにちは。株式会社エクサウィザーズの櫻井です。\n2026年8月16日から18日にかけて、NLPの若手研究者が集まるシンポジウムの第21回言語処理若手シンポジウム（YANS2026）が開催されました。\n当社もゴールドスポンサーとして参加し、発表も行いました。本記事では、発表内容の紹介や、開催期間中の様子について記載します。\n\n YANS 2026について\nYANSは、自然言語処理に関する...",
       "category": "AI・技術",
       "rss_category": "",
       "image_url": ""
@@ -99,16 +129,6 @@
       "site": "Zenn(LLM)",
       "published": "2026-08-25T22:00:05Z",
       "description": "「借りどき」( https://karidoki.jp )という小さなメディアを運営しています。全国8都市の公共図書館の貸出状況を毎朝観測してランキング記事を出すサイトで、データ取得・分析・執筆・検品・配信までを AI エージェント(Claude Code)が担当し、人間の私は毎朝の承認だけをやっています。1日の作業時間は10〜15分です。\nこの記事は、そのエージェントが Discord に通知を...",
-      "category": "AI・技術",
-      "rss_category": "",
-      "image_url": ""
-    },
-    {
-      "title": "Model Armorでエージェントのツール汚染を止める ―間接プロンプトインジェクションを検証",
-      "url": "https://zenn.dev/acntechjp/articles/zenn-gcp-model-armor-mcp",
-      "site": "Zenn(LLM)",
-      "published": "2026-08-25T21:44:18Z",
-      "description": "はじめに\nAzure から Google Cloud を触るシリーズ、AI セキュリティの回です。少し前に Model Armor を「入口のフィルタ」として、Gemini 自身の脱獄耐性を「モデルの地力」として見ました。今回はその続きで、エージェントがツールから受け取るデータという、いちばん見落とされる経路を守ります。\nいま LLM エージェントは MCP（Model Context Proto...",
       "category": "AI・技術",
       "rss_category": "",
       "image_url": ""
