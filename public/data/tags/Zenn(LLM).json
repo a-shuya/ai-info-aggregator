@@ -1,14 +1,44 @@
 {
   "site": "Zenn(LLM)",
-  "last_updated": "2026-08-26T15:52:50.846522",
-  "total_articles": 5653,
+  "last_updated": "2026-08-26T16:50:27.045851",
+  "total_articles": 5663,
   "articles": [
     {
-      "title": "AIとの会話は全部残っている——JSONLという原典",
-      "url": "https://zenn.dev/aika_paranoid/articles/jsonl-genten",
+      "title": "【Anthropicへレポート中】Claude Code「同意捏造バグ」のメカニズム解析①",
+      "url": "https://zenn.dev/pulsar_k/articles/825325a20fd818",
       "site": "Zenn(LLM)",
-      "published": "2026-08-26T08:55:29Z",
-      "description": "AIからAIへの引き継ぎ書に、「ユーザーはこう言った」という記述が2つありました。\n~/.claude/projects/ に残っている生ログと突き合わせると、1つは言った直後に本人が撤回した発言でした。もう1つは、そもそもユーザーの言葉ではなく、前のセッションでAI自身が出した提案でした。\n引き継ぎ書は要約です。そして要約は、黙ってズレます。\n私はエンジニアではありません。地方で中小企業の支援を...",
+      "published": "2026-08-26T14:28:49Z",
+      "description": "!\n本記事は、Anthropicの公式GitHubリポジトリ（Issue #44778）に提出した、Claude Codeの「ユーザー同意捏造バグ（Variant 4）」に関する独自解析レポート「Systematic measurement of Variant 4 (mid-response role marker): 23 occurrences  over 6 4 weeks, with e...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "「読み取りはLLM・判定はJS」に分けても見逃した——手書き帳票の異常が通知から消える2つの経路",
+      "url": "https://zenn.dev/tyuya/articles/handwritten-sheet-blank-trap",
+      "site": "Zenn(LLM)",
+      "published": "2026-08-26T14:13:59Z",
+      "description": "手書きの記録紙をスマホで撮ってLINEに送ると、未記入や基準逸脱を指摘して返してくれる道具を個人で作っています。作業日報・点検表・受入記録のような、毎日書かれてそのあと誰かがExcelに打ち直している紙が対象です。\n読み取りは Claude の vision、動かしているのは Cloudflare Workers。設計方針は最初から一つだけ決めていました。\nLLMには「読む」だけをさせ、「異常かど...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "日本語LLMの出力は「読めるのに壊れている」— 63日・8,853件の失敗ログから",
+      "url": "https://zenn.dev/gxcafe/articles/53d8b5cf659a99",
+      "site": "Zenn(LLM)",
+      "published": "2026-08-26T12:45:35Z",
+      "description": "ローカルLLM（Ollama上のQwen系など）で自律エージェントを24時間動かし、失敗を全部ログに残す運用を63日続けたところ、台帳は8,853件になりました。この記事はその中から日本語運用に固有の壊れ方だけを取り出した実測報告です。\n\n 一番怖いのは「例外にならない失敗」\nAPI呼び出しは成功。ダッシュボードは緑。文字列も正常に「読める」。でも中身が壊れている——このタイプは監視に何も引っかか...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "12GBのGPUでClaude Code本体を動かしたら、止まったのはVRAMではなかった",
+      "url": "https://zenn.dev/kimura0314/articles/claude-code-local-ollama-12gb",
+      "site": "Zenn(LLM)",
+      "published": "2026-08-26T09:09:01Z",
+      "description": "結論\n自宅のRTX 4070 SUPER（VRAM 12GB）に置いたOllamaへ、別PCのClaude Codeを丸ごと向けた。接続は成立し、応答も返った。ただしエージェントとしては使えなかった。\n止まった場所は3つあり、VRAMは1つも含まれていない。\n\nOllamaの既定コンテキスト長が 4096トークン\n\nClaude Codeのプロンプトが、MCPを全部切っても 62,528トークン\n...",
       "category": "AI・技術",
       "rss_category": "",
       "image_url": ""
@@ -24,11 +54,81 @@
       "image_url": ""
     },
     {
+      "title": "【セットアップから推論まで】ハイレゾのGPUインスタンスでローカルLLMをさくっと動かしてみた",
+      "url": "https://zenn.dev/highreso/articles/8c38d85cfadebe",
+      "site": "Zenn(LLM)",
+      "published": "2026-08-26T08:07:44Z",
+      "description": "今回はハイレゾのGPUクラウドサービス「GPUSOROBAN」を使って、ローカルLLMで推論できるようになるまでの手順を紹介します。\n会員登録からSSH接続、Python環境構築、モデルのダウンロード、そして実際に推論を動かすところまで、順を追って解説していきます。\nそれではよろしくお願いします。\n\n\n 1. GPUサービスの始め方（SSH接続するまで）\nGPUSOROBANでは、あらかじめ必要最...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
       "title": "VRAMは足りていた。MoEオフロードを止めたのはページロックの上限だった",
       "url": "https://zenn.dev/kimura0314/articles/freetoken-pinned-memory-limit",
       "site": "Zenn(LLM)",
       "published": "2026-08-26T07:47:32Z",
       "description": "MoEモデルのexpertをホストRAMへ逃がすタイプの推論エンジンを、RTX 4070 SUPER（VRAM 12GB）の機体で動かそうとして失敗しました。この記事の結論は「止めたのはVRAMではなく、ホストRAMのうちページロックできる量。それは物理RAMの半分程度しかなく、増やす手段がない」です。\nこんにちは、kimuraです。\nVRAMは10.78GiB空いたまま、一度も使われずに落ちまし...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "AIエージェントは夜に夢を見て記憶を整理する — Perplexity Brainの設計と最小実装",
+      "url": "https://zenn.dev/uguisu_blog/articles/c553bcbf119ce4",
+      "site": "Zenn(LLM)",
+      "published": "2026-08-26T07:21:17Z",
+      "description": "はじめに\nこんにちは！\n株式会社うぐいすソリューションズでエンジニアをしているNakaeです。\n普段はAI関連のWebシステム開発をしています。LLMを組み込んだアプリを作っていると、セッションをまたいだ文脈の保持——いわゆる長期記憶——が早い段階で課題になります。会話ログをベクタDBに貯めて質問時に引く、というのが定番の作りですが、これが思ったほどうまくいきません。この記事は、その定番とは別の設...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "AI社員の社則（CLAUDE.md憲法）の書き方 — 一人会社をAIエージェントで回す10のルール",
+      "url": "https://zenn.dev/t001ff/articles/kado-claude-md-constitution",
+      "site": "Zenn(LLM)",
+      "published": "2026-08-26T06:54:32Z",
+      "description": "筆者（青木 博資）がAI社員（Claude / Codex）と運営する一人会社KADOの実例です。AI社員が執筆し、筆者が事実確認と最終確認をしています。\n\nAIエージェント：役目と指示を受けて、自分で仕事を進めるAIです。\n検証：できあがった物が、条件や元の資料と合うかを確かめることです。\nリポジトリ：仕事のファイルと、その変更の記録をまとめて置く場所です。\nClaude CodeやCodexへ...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "AIとの付き合い方は“4段階”で進んでいる ― プロンプトからループへ、そして人はどこに立つか",
+      "url": "https://zenn.dev/taichiendoh/articles/ai-4-stages-prompt-to-loop",
+      "site": "Zenn(LLM)",
+      "published": "2026-08-26T06:43:56Z",
+      "description": "最近、AI開発の最前線で「プロンプトを書くのはやめよう」という言い方を見かけます。ずっと「良いプロンプトを書けば良い結果が返る」と言われてきたのに、です。\n矛盾しているようですが、地図を描くと腑に落ちます。AIとの付き合い方は、プロンプト → コンテキスト → ハーネス → ループという4段階で進化してきました。今の重心は後半の2つに移っています。\n前回は「実際に自己改善ループを回してみた」という...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "同じ質問を日本語と英語でAIに投げたら、行き先モデルが変わった — Azure model routerを180回実測",
+      "url": "https://zenn.dev/kazu_aiengineer/articles/model-router-routing-mode-measured",
+      "site": "Zenn(LLM)",
+      "published": "2026-08-26T06:25:00Z",
+      "description": "先に結論\nAzure AI Foundry（旧 Azure OpenAI）の model router は、プロンプトごとに裏で使うモデルを自動で選んでくれる仕組みだ。「単純な質問は安いモデル、難しい質問は賢いモデル」——理屈はわかる。ドキュメントにも「どう判断しているか」の概要は書いてある（How model router works）。\n書いていないのは、自分のプロンプトが実際にどこへ行くのか...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "Excel読み取り、市販パーサ65%・自作の前処理89%",
+      "url": "https://zenn.dev/ai_worklab/articles/excel-ai-reading-markitdown-vs-custom-parser",
+      "site": "Zenn(LLM)",
+      "published": "2026-08-26T05:50:38Z",
+      "description": "社内の Excel を AI に読ませていて、正答率が 6 割台から伸びない。パーサを良いものに替えれば上がるはずだ — この前提を測って確かめたら、上がったのは 3 ポイントでした。\n同じ 66 問を 3 通りの読み取り方で解かせて、正答率を比べた記録です。「市販で足りるのか、自分で作り込むべきか」を判断する材料として書いています。\n\n\n\n読み取り方\n正答率 (66 問)\n\n\n\n\n何も工夫しない...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "AI彼女アプリを作っていて気付いた。「同じ人」は、設定だけでは続かなかった",
+      "url": "https://zenn.dev/mitsukida/articles/5377b79e3f50a0",
+      "site": "Zenn(LLM)",
+      "published": "2026-08-26T05:11:21Z",
+      "description": "AI彼女アプリを作っていて気付いた。「同じ人」は、設定だけでは続かなかった\n以前、\nAIを成長させようとして気付いたことを書いた。\n変わるだけではだめだった。\n変わりにくい部分があるから、\n経験によって少しずつ変わっていける。\nAIKanojyoは、\nそんな作り方になっていた。\n\nでも、\n作り続けていると、\nまた別の疑問が出てきた。\n\nでは、私が「昨日までと同じのりこだ」と感じているものは、いった...",
       "category": "AI・技術",
       "rss_category": "",
       "image_url": ""

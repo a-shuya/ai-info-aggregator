@@ -1,8 +1,48 @@
 {
   "site": "Zenn(Python)",
-  "last_updated": "2026-08-26T15:52:50.846522",
-  "total_articles": 6012,
+  "last_updated": "2026-08-26T16:50:27.045851",
+  "total_articles": 6015,
   "articles": [
+    {
+      "title": "Pythonの並行処理を選ぶために、待機時間と計算時間を分けて測る",
+      "url": "https://zenn.dev/skrtk98/articles/python-concurrency-guide",
+      "site": "Zenn(Python)",
+      "published": "2026-08-26T15:46:39Z",
+      "description": "スレッドを増やしても、処理が速くなるとは限りません。\n外部 API の応答を待つ処理と、Python が CPU で計算し続ける処理では、同時実行によって短くできる時間が異なります。\n選択を決めるのはライブラリ名ではなく、処理時間の内訳です。\n逐次版の測定から実装方式の選択、失敗、停止、負荷上昇の確認までを一続きの判断として扱います。\n対象は Python 3.9 以降です。\n\n 最初に計測する三...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "PythonのABCとProtocolを使い分ける：継承と構造的部分型の契約",
+      "url": "https://zenn.dev/skrtk98/articles/python-abc-protocol-guide",
+      "site": "Zenn(Python)",
+      "published": "2026-08-26T15:46:39Z",
+      "description": "Python で「このオブジェクトには serialize() が必要だ」と表したいとき、abc.ABC と typing.Protocol のどちらを選ぶかで迷います。\n両方とも型の契約を表します。\nしかし、契約に参加する方法は同じではありません。\nABC は継承関係を契約に含めます。\nProtocol は必要なメソッドや属性を持つことを契約にします。\n対象は Python 3.12 以降です。...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "Pythonのraw_unicode_escapeで正しいUnicodeが\\uXXXX化する落とし穴",
+      "url": "https://zenn.dev/tasodoufu/articles/python-raw-unicode-escape-pitfall",
+      "site": "Zenn(Python)",
+      "published": "2026-08-26T15:03:29Z",
+      "description": "Pythonで文字化けを修復する処理が、逆に正しいUnicode文字列を壊してしまうバグを調査しました。\n原因は、str を raw_unicode_escape でいったん bytes に戻してからUTF-8としてデコードする処理です。この方法はLatin-1として誤ってデコードされたUTF-8を直せる場合がある一方、U+00FFを超える正しい文字をリテラルな \\uXXXX に変えてしまいます。...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "freeeアプリストアの審査が通った。銀行明細取得申請で一番迷った設問の話",
+      "url": "https://zenn.dev/hachihou_system/articles/freee-shinsa-and-bank-txn",
+      "site": "Zenn(Python)",
+      "published": "2026-08-26T14:23:40Z",
+      "description": "freee APIを使った督促ツールが、freeeアプリストアの審査を通りました。明日8月27日に公開されます。\nこれまでの3本で、私は同じことを2回書いていました。\n\n崩れた前提⑤ 「使えるかどうか」は審査を受けるまで分からない\n\n\nここで、7月末から抱えていた2つの問いに答えが出ます\n\nその答えが出たので書きます。あわせて、銀行明細取得申請フォームで実際に何を聞かれたかと、そこで一番迷った設問...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
     {
       "title": "バックテストの成績が良いほど疑ったほうがいい ― 12戦略を全部ボツにして分かった2つの落とし穴",
       "url": "https://zenn.dev/bose555/articles/d56a1e3259490e",
@@ -169,16 +209,6 @@
       "site": "Zenn(Python)",
       "published": "2026-08-25T21:30:05Z",
       "description": "第2回：SAPT計算統合アプリ　- アプリを使う、理解する！　-\nこんにちは！Psi4ブログ、SAPT計算アプリシリーズの第2回へようこそ。\n前回の記事では、分子配置の設定からSAPT計算、そして結果のグラフ化までを一つのウィンドウで完結させる「デスクトップ型SAPT計算統合アプリ」のコンセプトと、搭載された機能の全体像をご紹介しました。GUIとPsi4がシームレスに連携することで、分断されていた...",
-      "category": "開発",
-      "rss_category": "",
-      "image_url": ""
-    },
-    {
-      "title": "常駐プロセスが4日で¥5,172を溶かした — 従量課金APIの監視と自動キルスイッチ",
-      "url": "https://zenn.dev/ace_toshi/articles/metered-api-cost-incident",
-      "site": "Zenn(Python)",
-      "published": "2026-08-25T16:36:12Z",
-      "description": "何が起きたか\n自作の常駐ダッシュボードアプリが、4日間で ¥5,172 を溶かした。前月比 +3,779% である。\n原因は、一言でいえばこうだ。\n\n1分おきのポーリングから、キャッシュ無しで Cloud Translation API を呼び続けていた。\n\n翻訳対象の文言はほとんど変化していなかった。同じ文字列を、1分おきに、4日間、翻訳し続けた。返ってくる結果は毎回同じである。それに ¥5,1...",
       "category": "開発",
       "rss_category": "",
       "image_url": ""
