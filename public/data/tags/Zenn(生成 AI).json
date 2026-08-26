@@ -1,8 +1,18 @@
 {
   "site": "Zenn(生成 AI)",
-  "last_updated": "2026-08-26T11:37:17.082901",
-  "total_articles": 3568,
+  "last_updated": "2026-08-26T12:02:14.845797",
+  "total_articles": 3570,
   "articles": [
+    {
+      "title": "AIとの会話は全部残っている——JSONLという原典",
+      "url": "https://zenn.dev/aika_paranoid/articles/jsonl-genten",
+      "site": "Zenn(生成 AI)",
+      "published": "2026-08-26T08:55:29Z",
+      "description": "AIからAIへの引き継ぎ書に、「ユーザーはこう言った」という記述が2つありました。\n~/.claude/projects/ に残っている生ログと突き合わせると、1つは言った直後に本人が撤回した発言でした。もう1つは、そもそもユーザーの言葉ではなく、前のセッションでAI自身が出した提案でした。\n引き継ぎ書は要約です。そして要約は、黙ってズレます。\n私はエンジニアではありません。地方で中小企業の支援を...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
     {
       "title": "Claude Code の permissions.deny を10通りの書き方で破ってみた",
       "url": "https://zenn.dev/just_ryo/articles/2e3fadcfb587fa",
@@ -24,6 +34,36 @@
       "image_url": ""
     },
     {
+      "title": "M5 Ultra発表を機に、AI動画のピークメモリを見積もるPython",
+      "url": "https://zenn.dev/akari_chan/articles/e33322b41cefa3",
+      "site": "Zenn(生成 AI)",
+      "published": "2026-08-26T05:58:51Z",
+      "description": "TL;DR\n\nMacのunified memory総量を、そのままAIが使える容量として扱わないようにします。\n常駐するmodel weights、実行時の追加領域、OSと他アプリの予約、safety marginを分けて見積もります。\nPythonで上下限を計算し、FIT_BY_ESTIMATE、UNCERTAIN、NOT_FITの3状態に分けます。\n\n\n machine memoryとAI b...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "GitHub CopilotからAntigravity for VS Codeに移行した",
+      "url": "https://zenn.dev/mcp/articles/97ec17d02477b9",
+      "site": "Zenn(生成 AI)",
+      "published": "2026-08-26T05:22:52Z",
+      "description": "TL;DR\n\n2026年8月20日、Googleが Antigravityの公式IDE拡張 をリリースした。VS Code / Visual Studio / JetBrains / Zed / Xcode の5本立て\nつまり 「Antigravityという別IDEに引っ越す」必要がなくなった。これが移行の直接のきっかけ\n課金構造が対照的になっている。Copilotは2026年6月1日から AIク...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "同じ日本語歌詞を同じ設定で曲にしたら、3:43と4:25になった：AI音楽生成の実測",
+      "url": "https://zenn.dev/elaravance/articles/bd6b18aa43439b",
+      "site": "Zenn(生成 AI)",
+      "published": "2026-08-26T04:35:51Z",
+      "description": "AI音楽生成では、同じ歌詞と同じ設定を入力しても、出力が完全に同じになるとは限らない。では、1回の生成で返される複数の候補には、どの程度の差が出るのだろうか。\n今回は、オリジナルの日本語歌詞を用意し、モデル、スタイル、ボーカル設定を固定したまま1回だけ生成した。この記事では、入力内容、生成時間、消費クレジット、2つの出力の長さを記録する。\n音質の優劣を決めるレビューではなく、歌詞から曲を作るときの...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
       "title": "「AIがファイルを読めるのはMCPのおかげ」を確かめたら、MCPゼロで4回とも成功した。繋いだら道具が38個から50個に増えただけだった",
       "url": "https://zenn.dev/numarn/articles/claude-builtin-tools-without-mcp-handson",
       "site": "Zenn(生成 AI)",
@@ -39,16 +79,6 @@
       "site": "Zenn(生成 AI)",
       "published": "2026-08-26T03:46:28Z",
       "description": "JAXIAの企業サイトには、AI活用レディネス診断、AI利用ガイドライン生成、AI案内役「ねくたん」という性質の異なる機能があります。\nどれもAI活用を支援する機能ですが、実装方式は同じではありません。LLMへ送れば実現できる処理でも、必要性、再現性、プライバシー、コストを考え、ブラウザ内処理、決定論的な文書組み立て、Workers AIを使い分けました。\nこの記事では、Astroサイトに3方式を...",
-      "category": "AI・技術",
-      "rss_category": "",
-      "image_url": ""
-    },
-    {
-      "title": "毎朝8時、AIから「答えの書いていない問題」が届く — 訓練を自動化した仕組み、全部公開します",
-      "url": "https://zenn.dev/jinjer_techblog/articles/69b182e90cfed8",
-      "site": "Zenn(生成 AI)",
-      "published": "2026-08-26T03:00:07Z",
-      "description": "はじめに\nこんにちは。\njinjerプロダクト開発部SEの今道です。\nAIに聞けば答えが返る環境では、「なぜ？」を考える必要が消えます。仮説を立てる前に結論が来るので、問題を見つける力と、解き方を決める力だけが使われないまま残ります。\nそこでAIの役割を裏返しました。答えを出す側ではなく、問題を出す側・採点する側に回してもらう。\nこの記事は、その仕組みをそのまま置いていくものです。プロンプト・出題...",
       "category": "AI・技術",
       "rss_category": "",
       "image_url": ""
@@ -79,16 +109,6 @@
       "site": "Zenn(生成 AI)",
       "published": "2026-08-26T00:00:05Z",
       "description": "AI に任せると速く作れます。ただし価値を生んだかは別の周期でしか分かりません。最終回は、結果が返るまでに週単位かかる プロダクトのループ です。デザインの受け渡し、AI レビューの限界、作り捨てと本番化の境界、価値検証 の 4 つを、9 名の AI レビュアーに本連載 3 本を通した実測とともに扱います。\n!\nTL;DR\n\n9 名で 3 本をレビューし、どの節も単体では正しいのに並べると両立しな...",
-      "category": "AI・技術",
-      "rss_category": "",
-      "image_url": ""
-    },
-    {
-      "title": "AIへの申し送りは1日1,000字ずつ増える。読み込みを88%削るまでにやったこと",
-      "url": "https://zenn.dev/santassn1224/articles/d5b6b63bb9cbcc",
-      "site": "Zenn(生成 AI)",
-      "published": "2026-08-25T22:30:05Z",
-      "description": "1. 気づいたら、起動のたびに43,344字を読ませていた\nAIエージェントを日常的に使っていると、渡す文脈が増えていきます。プロジェクトのルール、決定の記録、やりかけのタスク。書けば書くほど賢く動くので、書くこと自体は正しい。\n問題は、それが毎回読まれることです。\n私は副業のプロジェクトでAIエージェントを日常運用していて、その申し送りをMarkdownで管理しています。ある日それを測ったら、日...",
       "category": "AI・技術",
       "rss_category": "",
       "image_url": ""
