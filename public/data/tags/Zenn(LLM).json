@@ -1,14 +1,64 @@
 {
   "site": "Zenn(LLM)",
-  "last_updated": "2026-08-26T03:18:24.682139",
-  "total_articles": 5645,
+  "last_updated": "2026-08-26T04:07:34.919261",
+  "total_articles": 5643,
   "articles": [
     {
-      "title": "Kimi K3を理解する②──アーキテクチャの全体像",
-      "url": "https://zenn.dev/gixo/articles/kimi-k3-kda-mla-moe-architecture",
+      "title": "スロークエリはレビューじゃ見つからないので、LLMにDBを触らせてCIで止めることにした",
+      "url": "https://zenn.dev/tinyum/articles/llm-explain-analyze-ci-gate",
       "site": "Zenn(LLM)",
-      "published": "2026-08-26T01:58:27Z",
-      "description": "はじめに\n\n① 前回：LLM の仕組み Transformer デコーダー の基本構造を理解する\n② 本記事：Kimi K3 がLLM基本構造のうち、どこを・どう置き換えたのかを比較しながらアーキテクチャ全体像を理解する\n\nKimi K3のアーキテクチャを理解するパート２です。前回記事「Kimi K3を理解する①──まずは標準Transformerの理解から」では、標準的なLLM基本構造（Tran...",
+      "published": "2026-08-26T03:34:01Z",
+      "description": "はじめに\nこの記事は、Findy Freelance からの依頼（アンバサダープログラム）を受けて投稿しています。\n現在参画している案件で、PR の diff から DB クエリの変更を検出し、LLM エージェントが本番相当の DB に EXPLAIN ANALYZE を投げて性能を調査し、危険なクエリなら CI をブロックする仕組みを作りました。\n導入から約5ヶ月、月4,000〜5,000回動き...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "star 3.7万のAI Slop検出Skillは、日本語だと6パターンが空振りする",
+      "url": "https://zenn.dev/kenimo49/articles/ai-slop-skill-35-patterns-japanese-port",
+      "site": "Zenn(LLM)",
+      "published": "2026-08-26T03:25:22Z",
+      "description": "blader/humanizer（2026-08-25時点、MIT）。アイコン画像のみマスク処理しています\n!\n英語圏のAI Slop検出Skillを日本語の技術記事に使う前に、35パターンを1つずつ「日本語で成立するか」で仕分けた記録です。判定の基準ごと置いていきます。\n\n\n 「AIっぽさ」を検出するSkillは、もう手元にある\nClaude Codeで書いた記事のAIくささを落としたいとき、既...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "GPT-5.6以降のプロンプトキャッシュの仕様をキャッチアップする",
+      "url": "https://zenn.dev/shogo_h/articles/gpt56-prompt-caching-explicit",
+      "site": "Zenn(LLM)",
+      "published": "2026-08-26T03:24:03Z",
+      "description": "!\n2026-08-26時点の情報です。価格と仕様は変わることがあるので、実際に使うときは公式ドキュメントで確認してください。\n\n\n はじめに\nOpenAIのプロンプトキャッシュは、同じ書き出しのリクエストを何度も送るときに、共通部分の計算結果を使い回してくれる仕組みです。これまでは有効にする操作も、どこまでをキャッシュするか決める操作も要らず、条件さえ満たせば、こちらが何もしなくても共通部分の単...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "AI推進が止まったら、ツールや研修の前に組織図を疑え",
+      "url": "https://zenn.dev/storehero/articles/b9a753419b598b",
+      "site": "Zenn(LLM)",
+      "published": "2026-08-26T03:16:27Z",
+      "description": "こんにちは、StoreHero で CPO をしている永田です。\n2026年6月、メルカリが執行役員 CTO の木村俊也さんを CHRO 兼 CAIO に任命しました。技術のトップが、人事のトップになる。初見では奇妙な人事に見えるかもしれません。しかし私には、まったく奇妙に見えませんでした。むしろ「そこに行き着いたか」という感想でした。\nなぜそう思えたのか。今年に入ってからの7ヶ月あまり、私自身が...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "Function Calling入門：AIが「自分で計算せずツールを呼ぶ」仕組みをやさしく整理する",
+      "url": "https://zenn.dev/yushiyamamoto/articles/function-calling-basics-2026-07",
+      "site": "Zenn(LLM)",
+      "published": "2026-08-26T03:03:55Z",
+      "description": "生成AIに「今日の在庫を教えて」と聞いても、正しく答えられません。学習したデータの中に今日の在庫は無いからです。それでもAIは、それらしい数字を作って答えてしまうことがあります。\nこの弱点を埋めるのが Function Calling（関数呼び出し／ツール呼び出し） です。AIエージェントの話に必ず出てくる仕組みで、ここを理解すると「エージェント」という言葉の実体がかなりはっきりします。\nこの記事...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "LPO：Response Simplex上の明示的射影でGRPOを刷新する",
+      "url": "https://zenn.dev/lixian/articles/lpo-listwise-policy-optimization-response-simplex",
+      "site": "Zenn(LLM)",
+      "published": "2026-08-26T02:09:43Z",
+      "description": "LPO：Response Simplex上の明示的射影でGRPOを刷新する\n\n TL;DR\n\n\n問題提起: GRPOをはじめとするgroup-based policy gradientは、実はresponse simplex（サンプル応答が張る確率単体）上の「暗黙のターゲットへの近似射影」に過ぎなかった。1次近似のたびに誤差が積もる。\n\nLPOの提案: ターゲット計算と射影を分離し、ターゲットを明...",
       "category": "AI・技術",
       "rss_category": "",
       "image_url": ""
@@ -24,41 +74,11 @@
       "image_url": ""
     },
     {
-      "title": "【試し読み】MCP実践入門 — AIエージェントの次の進化形",
-      "url": "https://zenn.dev/yukihayama/articles/preview-mcp-guide",
-      "site": "Zenn(LLM)",
-      "published": "2026-08-26T01:01:20Z",
-      "description": "【試し読み】MCP実践入門 — AIエージェントの次の進化形\n本記事はKindle本 「MCP実践入門 — AIとツールを繋ぐプロトコル」（著者: 葉山悠希）の「はじめに」および「第1章」の一部を公開する試し読み記事です。\n\n\n AIエージェントが抱える「統合の壁」\n2024年11月、Anthropicは「Model Context Protocol（MCP）」というオープン仕様を公開しました。こ...",
-      "category": "AI・技術",
-      "rss_category": "",
-      "image_url": ""
-    },
-    {
-      "title": "プロンプトを固定したら、AIの出力にどれだけ差が出るのか",
-      "url": "https://zenn.dev/shiomusubi/articles/018a16947e0532",
-      "site": "Zenn(LLM)",
-      "published": "2026-08-26T00:56:07Z",
-      "description": "はじめに\n第1弾では、Claude・GPT・Geminiそれぞれに「モデルごとに最適化したプロンプト」を与えて出力を比較しました。第2弾では、同じモデルに対して「簡潔なプロンプト」と「目的を明示したプロンプト」を投げ、プロンプトの書き方による変化を検証しました。\n今回は、両者の裏返しにあたる検証です。プロンプトを一切変えずに完全固定した状態で、3モデルにそのまま投げたとき、出力にどれだけの差が出る...",
-      "category": "AI・技術",
-      "rss_category": "",
-      "image_url": ""
-    },
-    {
       "title": "YANS2026参加報告",
       "url": "https://zenn.dev/exwzd/articles/20260806_yans2026",
       "site": "Zenn(LLM)",
       "published": "2026-08-26T00:53:17Z",
       "description": "はじめに\nこんにちは。株式会社エクサウィザーズの櫻井です。\n2026年8月16日から18日にかけて、NLPの若手研究者が集まるシンポジウムの第21回言語処理若手シンポジウム（YANS2026）が開催されました。\n当社もゴールドスポンサーとして参加し、発表も行いました。本記事では、発表内容の紹介や、開催期間中の様子について記載します。\n\n YANS 2026について\nYANSは、自然言語処理に関する...",
-      "category": "AI・技術",
-      "rss_category": "",
-      "image_url": ""
-    },
-    {
-      "title": "GitHub で 2026 年に最も star を集めた 30 リポジトリは、ほぼ全部「エージェントのハーネス」だった",
-      "url": "https://zenn.dev/tabayashi/articles/github-2026-stars-agent-harness",
-      "site": "Zenn(LLM)",
-      "published": "2026-08-26T00:11:13Z",
-      "description": "0. まとめ\n2026 年に作られて 3,000 star を超えたリポジトリは 791 本（GitHub Search API、2026-08-23 時点）。その上位 30 本の README を全部読んだところ、言語処理系も Web フレームワークも DB も 1 本として入っておらず、残ったのはエージェントのハーネスとその周辺だけでした。\n何をどう分類したかは §3、star の増え方が他と...",
       "category": "AI・技術",
       "rss_category": "",
       "image_url": ""
@@ -74,16 +94,6 @@
       "image_url": ""
     },
     {
-      "title": "ChatGPTに話したことを、Claudeは知らない——だから記憶の正本をgitリポジトリ1つに移した",
-      "url": "https://zenn.dev/hilopon/articles/git-memory-source-of-truth",
-      "site": "Zenn(LLM)",
-      "published": "2026-08-26T00:00:05Z",
-      "description": "ChatGPTに話したことを、Claudeは知らない。Claudeと決めたことを、Codexは知らない。AIを2つ以上使っていると記憶はアプリごとに分断されて、同じ前提の説明を何度も繰り返すことになります。しかもその記憶はアプリの中に閉じていて、乗り換えたら消える。エクスポートできても、次のAIがそれを読む標準はない。アプリ内の記憶は「借り物の記憶」です。\nそこで記憶の正本をAIの外に出しました。...",
-      "category": "AI・技術",
-      "rss_category": "",
-      "image_url": ""
-    },
-    {
       "title": "ファインチューニング比較検証　--ジャンルの異なる学習データを使った時、モデル応答に違いが見られるか",
       "url": "https://zenn.dev/sapolas/articles/45a3a1456e1dfb",
       "site": "Zenn(LLM)",
@@ -94,41 +104,11 @@
       "image_url": ""
     },
     {
-      "title": "自作のAIチェックツールに、自分自身を審査させたら穴が見つかった話",
-      "url": "https://zenn.dev/motimotinotch/articles/c42af2fa695cd8",
+      "title": "AIエージェントがDiscordに誤送信した日 — 「読むだけのつもりの実行」が外部送信になる",
+      "url": "https://zenn.dev/sutokei/articles/ea0baaa82dbfef",
       "site": "Zenn(LLM)",
-      "published": "2026-08-25T23:16:48Z",
-      "description": "見た目は自信満々なのに、掘ると根拠がない\n複数のAIエージェント・Botを個人開発で長期運用していると、繰り返し出くわす「壊れ方」が2つある。\n1つ目は、主張が具体と抽象のどちらかの極に貼り付いてしまうパターンだ。「〜という原則がある」と一般論だけを述べて、それを裏付ける具体例が一つも出せない。あるいは逆に、たった一つの事例をそのまま「これはこういうものだ」という一般論として語ってしまう。\n2つ目...",
-      "category": "AI・技術",
-      "rss_category": "",
-      "image_url": ""
-    },
-    {
-      "title": "推論LLMの枝刈りでCoTが長くなる問題とRACの設計",
-      "url": "https://zenn.dev/kas_blog/articles/20260824-reasoning-aware-compression",
-      "site": "Zenn(LLM)",
-      "published": "2026-08-25T22:43:41Z",
-      "description": "reasoning model（推論モデル）をpruning（枝刈り）すると、1 token当たりの計算は減っても、end-to-endの推論時間が短くなるとは限りません。モデルが答えに迷い、Chain-of-Thought（CoT）を長く生成すると、圧縮前より総実行時間が延びる場合があるためです。\nICLR 2026採択論文のReasoning Models Can be Accurately ...",
-      "category": "AI・技術",
-      "rss_category": "",
-      "image_url": ""
-    },
-    {
-      "title": "AIベンダーを変更できない企業が約7割。「AI主権」をアーキテクチャから考える",
-      "url": "https://zenn.dev/jinfuroi/articles/36524f12899fd1",
-      "site": "Zenn(LLM)",
-      "published": "2026-08-25T21:58:54Z",
-      "description": "AIベンダーを変更できない企業が約7割。「AI主権」をアーキテクチャから考える\nAI活用が進むにつれて、新しい問題が見え始めています。\nそれは、\n「導入したAIを、あとから自社の意思で変更できるのか」\nという問題です。\nマイナビニュースで紹介されたIBM Institute for Business Valueの調査では、日本企業の69%が主要なAIベンダーやモデルの切り替えを困難と感じているとい...",
-      "category": "AI・技術",
-      "rss_category": "",
-      "image_url": ""
-    },
-    {
-      "title": "Model Armorでエージェントのツール汚染を止める ―間接プロンプトインジェクションを検証",
-      "url": "https://zenn.dev/acntechjp/articles/zenn-gcp-model-armor-mcp",
-      "site": "Zenn(LLM)",
-      "published": "2026-08-25T21:44:18Z",
-      "description": "はじめに\nAzure から Google Cloud を触るシリーズ、AI セキュリティの回です。少し前に Model Armor を「入口のフィルタ」として、Gemini 自身の脱獄耐性を「モデルの地力」として見ました。今回はその続きで、エージェントがツールから受け取るデータという、いちばん見落とされる経路を守ります。\nいま LLM エージェントは MCP（Model Context Proto...",
+      "published": "2026-08-25T22:00:05Z",
+      "description": "「借りどき」( https://karidoki.jp )という小さなメディアを運営しています。全国8都市の公共図書館の貸出状況を毎朝観測してランキング記事を出すサイトで、データ取得・分析・執筆・検品・配信までを AI エージェント(Claude Code)が担当し、人間の私は毎朝の承認だけをやっています。1日の作業時間は10〜15分です。\nこの記事は、そのエージェントが Discord に通知を...",
       "category": "AI・技術",
       "rss_category": "",
       "image_url": ""
