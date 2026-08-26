@@ -1,7 +1,7 @@
 {
   "site": "Zenn(Python)",
-  "last_updated": "2026-08-26T07:57:11.901637",
-  "total_articles": 6005,
+  "last_updated": "2026-08-26T08:52:40.350757",
+  "total_articles": 6006,
   "articles": [
     {
       "title": "Technocore（$FLOP）に秘密鍵をPCから出さずに参加する — Windowsでの実践記録",
@@ -14,11 +14,11 @@
       "image_url": ""
     },
     {
-      "title": "Excel読み取り、市販パーサ65%・自作の前処理89%",
-      "url": "https://zenn.dev/ai_worklab/articles/excel-ai-reading-markitdown-vs-custom-parser",
+      "title": "M5 Ultra発表を機に、AI動画のピークメモリを見積もるPython",
+      "url": "https://zenn.dev/akari_chan/articles/e33322b41cefa3",
       "site": "Zenn(Python)",
-      "published": "2026-08-26T05:50:38Z",
-      "description": "社内の Excel を AI に読ませていて、正答率が 6 割台から伸びない。パーサを良いものに替えれば上がるはずだ — この前提を測って確かめたら、上がったのは 3 ポイントでした。\n同じ 66 問を 3 通りの読み取り方で解かせて、正答率を比べた記録です。「市販で足りるのか、自分で作り込むべきか」を判断する材料として書いています。\n\n\n\n読み取り方\n正答率 (66 問)\n\n\n\n\n何も工夫しない...",
+      "published": "2026-08-26T05:58:51Z",
+      "description": "TL;DR\n\nMacのunified memory総量を、そのままAIが使える容量として扱わないようにします。\n常駐するmodel weights、実行時の追加領域、OSと他アプリの予約、safety marginを分けて見積もります。\nPythonで上下限を計算し、FIT_BY_ESTIMATE、UNCERTAIN、NOT_FITの3状態に分けます。\n\n\n machine memoryとAI b...",
       "category": "開発",
       "rss_category": "",
       "image_url": ""
@@ -139,6 +139,16 @@
       "site": "Zenn(Python)",
       "published": "2026-08-25T14:04:21Z",
       "description": "!\nローカルLLMで作る自分専用ニュースbot シリーズの5本目です。この記事だけでも読めます。\n前: 運用初日、Slackに208件通知が飛んできた話\n\n\n この記事について\nマイルストーン1の最終ステップです。前回までで「収集→LLM分析→Slack 2レーン通知」のパイプラインが手動実行で動くようになりました。今回はこれを、毎日勝手に動く状態にします。\n「常駐化」と呼んでいますが、実際にやっ...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "LLMエージェントの暴走を自律制御する：T細胞モデルとトルクリミッターによる「空白駆動」GuardrailのPython実装",
+      "url": "https://zenn.dev/nanashi_os/articles/ea0e82d4961d56",
+      "site": "Zenn(Python)",
+      "published": "2026-08-25T13:10:38Z",
+      "description": "Markdown\n\n 1. はじめに：なぜプロンプトで縛ってもLLMは暴走するのか？\nLLM（Trnsformerアーキテクチャ）には、入力文脈の文法的なグリッド（整合性）を強引に満たそうとする性質があります。そのため、日本語のゼロ代名詞（主語・目的語の省略）のような意味的な空白に遭遇すると、存在しない主語を捏造したり、虚無のアテンションに引きずられて推論計画（PlanMessage）を書き換えて...",
       "category": "開発",
       "rss_category": "",
       "image_url": ""
