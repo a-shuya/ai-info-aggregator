@@ -1,7 +1,7 @@
 {
   "site": "Zenn(LLM)",
-  "last_updated": "2026-08-26T13:13:52.282509",
-  "total_articles": 5646,
+  "last_updated": "2026-08-26T14:08:51.084172",
+  "total_articles": 5651,
   "articles": [
     {
       "title": "Claudeのトークン数はブラウザだけでは正確に数えられない",
@@ -9,16 +9,6 @@
       "site": "Zenn(LLM)",
       "published": "2026-08-26T08:54:59Z",
       "description": "はじめに\nブラウザ内で完結するトークンカウンターを作って運用しています。入力したテキストをサーバーへ一切送らない、という制約を全ツールに課しているサイトの一部です。\nGPTのトークン数は、この制約の中で正確に数えられます。js-tiktoken に o200k_base の辞書が同梱されていて、モデル本体と同じBPEをブラウザで走らせられるからです。\nClaudeは数えられません。これは実装をサボ...",
-      "category": "AI・技術",
-      "rss_category": "",
-      "image_url": ""
-    },
-    {
-      "title": "VRAMは足りていた。MoEオフロードを止めたのはページロックの上限だった",
-      "url": "https://zenn.dev/kimura0314/articles/freetoken-pinned-memory-limit",
-      "site": "Zenn(LLM)",
-      "published": "2026-08-26T07:47:32Z",
-      "description": "MoEモデルのexpertをホストRAMへ逃がすタイプの推論エンジンを、RTX 4070 SUPER（VRAM 12GB）の機体で動かそうとして失敗しました。この記事の結論は「止めたのはVRAMではなく、ホストRAMのうちページロックできる量。それは物理RAMの半分程度しかなく、増やす手段がない」です。\nこんにちは、kimuraです。\nVRAMは10.78GiB空いたまま、一度も使われずに落ちまし...",
       "category": "AI・技術",
       "rss_category": "",
       "image_url": ""
@@ -34,51 +24,11 @@
       "image_url": ""
     },
     {
-      "title": "star 3.7万のAI Slop検出Skillは、日本語だと6パターンが空振りする",
-      "url": "https://zenn.dev/kenimo49/articles/ai-slop-skill-35-patterns-japanese-port",
-      "site": "Zenn(LLM)",
-      "published": "2026-08-26T03:25:22Z",
-      "description": "blader/humanizer（2026-08-25時点、MIT）。アイコン画像のみマスク処理しています\n!\n英語圏のAI Slop検出Skillを日本語の技術記事に使う前に、35パターンを1つずつ「日本語で成立するか」で仕分けた記録です。判定の基準ごと置いていきます。\n\n\n 「AIっぽさ」を検出するSkillは、もう手元にある\nClaude Codeで書いた記事のAIくささを落としたいとき、既...",
-      "category": "AI・技術",
-      "rss_category": "",
-      "image_url": ""
-    },
-    {
       "title": "GPT-5.6以降のプロンプトキャッシュの仕様をキャッチアップする",
       "url": "https://zenn.dev/shogo_h/articles/gpt56-prompt-caching-explicit",
       "site": "Zenn(LLM)",
       "published": "2026-08-26T03:24:03Z",
       "description": "!\n2026-08-26時点の情報です。価格と仕様は変わることがあるので、実際に使うときは公式ドキュメントで確認してください。\n\n\n はじめに\nOpenAIのプロンプトキャッシュは、同じ書き出しのリクエストを何度も送るときに、共通部分の計算結果を使い回してくれる仕組みです。これまでは有効にする操作も、どこまでをキャッシュするか決める操作も要らず、条件さえ満たせば、こちらが何もしなくても共通部分の単...",
-      "category": "AI・技術",
-      "rss_category": "",
-      "image_url": ""
-    },
-    {
-      "title": "AI推進が止まったら、ツールや研修の前に組織図を疑え",
-      "url": "https://zenn.dev/storehero/articles/b9a753419b598b",
-      "site": "Zenn(LLM)",
-      "published": "2026-08-26T03:16:27Z",
-      "description": "こんにちは、StoreHero で CPO をしている永田です。\n2026年6月、メルカリが執行役員 CTO の木村俊也さんを CHRO 兼 CAIO に任命しました。技術のトップが、人事のトップになる。初見では奇妙な人事に見えるかもしれません。しかし私には、まったく奇妙に見えませんでした。むしろ「そこに行き着いたか」という感想でした。\nなぜそう思えたのか。今年に入ってからの7ヶ月あまり、私自身が...",
-      "category": "AI・技術",
-      "rss_category": "",
-      "image_url": ""
-    },
-    {
-      "title": "Function Calling入門：AIが「自分で計算せずツールを呼ぶ」仕組みをやさしく整理する",
-      "url": "https://zenn.dev/yushiyamamoto/articles/function-calling-basics-2026-07",
-      "site": "Zenn(LLM)",
-      "published": "2026-08-26T03:03:55Z",
-      "description": "生成AIに「今日の在庫を教えて」と聞いても、正しく答えられません。学習したデータの中に今日の在庫は無いからです。それでもAIは、それらしい数字を作って答えてしまうことがあります。\nこの弱点を埋めるのが Function Calling（関数呼び出し／ツール呼び出し） です。AIエージェントの話に必ず出てくる仕組みで、ここを理解すると「エージェント」という言葉の実体がかなりはっきりします。\nこの記事...",
-      "category": "AI・技術",
-      "rss_category": "",
-      "image_url": ""
-    },
-    {
-      "title": "【OnecaratEditor Core 制作秘話①】極小サイズのローカルLLMの回答精度をあげた話",
-      "url": "https://zenn.dev/onecarat_tech/articles/36c0b1e1ecd6f9",
-      "site": "Zenn(LLM)",
-      "published": "2026-08-26T03:00:06Z",
-      "description": "はじめに\nOnecaratと申します。私はローカルLLMやローカル生成AIといった、ネット環境のない中でのAI活用の勉強を進めていたのですが、理由があります。画面画像から次の選択肢をAIに判断させて自分の仕事を代替させてみよう、という試みを始めていました。\nそこでUFO(UI-Focused Agent)で画像＋ChatGPT APIによるPC操作を試しました。\nそのときの記事が下記です。\nhtt...",
       "category": "AI・技術",
       "rss_category": "",
       "image_url": ""
@@ -104,11 +54,21 @@
       "image_url": ""
     },
     {
-      "title": "【試し読み】MCP実践入門 — AIエージェントの次の進化形",
-      "url": "https://zenn.dev/yukihayama/articles/preview-mcp-guide",
+      "title": "YANS2026参加報告",
+      "url": "https://zenn.dev/exwzd/articles/20260806_yans2026",
       "site": "Zenn(LLM)",
-      "published": "2026-08-26T01:01:20Z",
-      "description": "【試し読み】MCP実践入門 — AIエージェントの次の進化形\n本記事はKindle本 「MCP実践入門 — AIとツールを繋ぐプロトコル」（著者: 葉山悠希）の「はじめに」および「第1章」の一部を公開する試し読み記事です。\n\n\n AIエージェントが抱える「統合の壁」\n2024年11月、Anthropicは「Model Context Protocol（MCP）」というオープン仕様を公開しました。こ...",
+      "published": "2026-08-26T00:53:17Z",
+      "description": "はじめに\nこんにちは。株式会社エクサウィザーズの櫻井です。\n2026年8月16日から18日にかけて、NLPの若手研究者が集まるシンポジウムの第21回言語処理若手シンポジウム（YANS2026）が開催されました。\n当社もゴールドスポンサーとして参加し、発表も行いました。本記事では、発表内容の紹介や、開催期間中の様子について記載します。\n\n YANS 2026について\nYANSは、自然言語処理に関する...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "ChatGPTに話したことを、Claudeは知らない——だから記憶の正本をgitリポジトリ1つに移した",
+      "url": "https://zenn.dev/hilopon/articles/git-memory-source-of-truth",
+      "site": "Zenn(LLM)",
+      "published": "2026-08-26T00:00:05Z",
+      "description": "ChatGPTに話したことを、Claudeは知らない。Claudeと決めたことを、Codexは知らない。AIを2つ以上使っていると記憶はアプリごとに分断されて、同じ前提の説明を何度も繰り返すことになります。しかもその記憶はアプリの中に閉じていて、乗り換えたら消える。エクスポートできても、次のAIがそれを読む標準はない。アプリ内の記憶は「借り物の記憶」です。\nそこで記憶の正本をAIの外に出しました。...",
       "category": "AI・技術",
       "rss_category": "",
       "image_url": ""
@@ -119,6 +79,96 @@
       "site": "Zenn(LLM)",
       "published": "2026-08-25T23:39:08Z",
       "description": "はじめに\n今回は、ジャンルの異なる学習データによってファインチューニングされたモデル間で同じ質問に応答の違いが見られるかを確かめました。\n\n 学習データの準備\n運送会社のカスタマーセンターを想定した学習データと銀行のカスタマーセンターを想定した学習データをMAGPIEという手法で用意しました。\n学習データはどちらも指示と応答のペアが１０００件あり、そのうち８５０件を訓練データとして、１００件をテス...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "自作のAIチェックツールに、自分自身を審査させたら穴が見つかった話",
+      "url": "https://zenn.dev/motimotinotch/articles/c42af2fa695cd8",
+      "site": "Zenn(LLM)",
+      "published": "2026-08-25T23:16:48Z",
+      "description": "見た目は自信満々なのに、掘ると根拠がない\n複数のAIエージェント・Botを個人開発で長期運用していると、繰り返し出くわす「壊れ方」が2つある。\n1つ目は、主張が具体と抽象のどちらかの極に貼り付いてしまうパターンだ。「〜という原則がある」と一般論だけを述べて、それを裏付ける具体例が一つも出せない。あるいは逆に、たった一つの事例をそのまま「これはこういうものだ」という一般論として語ってしまう。\n2つ目...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "AIエージェントがDiscordに誤送信した日 — 「読むだけのつもりの実行」が外部送信になる",
+      "url": "https://zenn.dev/sutokei/articles/ea0baaa82dbfef",
+      "site": "Zenn(LLM)",
+      "published": "2026-08-25T22:00:05Z",
+      "description": "「借りどき」( https://karidoki.jp )という小さなメディアを運営しています。全国8都市の公共図書館の貸出状況を毎朝観測してランキング記事を出すサイトで、データ取得・分析・執筆・検品・配信までを AI エージェント(Claude Code)が担当し、人間の私は毎朝の承認だけをやっています。1日の作業時間は10〜15分です。\nこの記事は、そのエージェントが Discord に通知を...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "Model Armorでエージェントのツール汚染を止める ―間接プロンプトインジェクションを検証",
+      "url": "https://zenn.dev/acntechjp/articles/zenn-gcp-model-armor-mcp",
+      "site": "Zenn(LLM)",
+      "published": "2026-08-25T21:44:18Z",
+      "description": "はじめに\nAzure から Google Cloud を触るシリーズ、AI セキュリティの回です。少し前に Model Armor を「入口のフィルタ」として、Gemini 自身の脱獄耐性を「モデルの地力」として見ました。今回はその続きで、エージェントがツールから受け取るデータという、いちばん見落とされる経路を守ります。\nいま LLM エージェントは MCP（Model Context Proto...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "LLM が書いたテストを信頼する方法 — テスト義務ゲート",
+      "url": "https://zenn.dev/flip451/articles/sotohe-test-obligation-gate",
+      "site": "Zenn(LLM)",
+      "published": "2026-08-25T17:09:53Z",
+      "description": "「機能 XX を実装して、そのテストも追加して」と LLM に頼んだとしよう。返ってくるのは、膨大な量のソースコードの差分と、膨大な数の自動テストかもしれない。テストはすべて green だ。さて、これをどう評価し、どう信頼すればよいだろうか。\nこの問いを、少し引いた場所から考えたい。自然言語で書かれた「仕様」を、実際に動くプログラムへと変換する変換器のことを考えよう。LLM とコーディングエージ...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "なぜ、コンテキストエンジニアリングの次はハーネスでもループでもなく、ハイポセシスエンジニアリングだと言えるのか？",
+      "url": "https://zenn.dev/pdfractal/articles/7672f27ad5f8b4",
+      "site": "Zenn(LLM)",
+      "published": "2026-08-25T15:59:05Z",
+      "description": "はじめに\n生成AIの使い方をめぐる言葉は、ここ数年で急速に変わってきました。最初に注目されたのは、AIにどのような指示を出せば期待する回答を得られるかを考えるプロンプトエンジニアリングでした。その後、単一の指示文ではなく、会話履歴、資料、検索結果、ツール、メモリなどを含めて、AIが判断するための情報環境全体を整えるコンテキストエンジニアリングが注目されるようになりました。Anthropicも202...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "gooseのRecipeだけじゃない。コーディングエージェント7実装の「発明」カタログ",
+      "url": "https://zenn.dev/waribashi/articles/agent-harness-02-features",
+      "site": "Zenn(LLM)",
+      "published": "2026-08-25T15:43:33Z",
+      "description": "!\nこの記事は AI（Claude Code）が調査から執筆まで自動で行ったものです。\n各リポジトリのクローン、ソースの読解、比較、原稿化までを AI が実施し、\n人間はテーマの指示と公開判断を担当しています。\n引用したコードと数値は実際のソースに基づいていますが、解釈の誤りが含まれる可能性があります。\n一次情報のパスとリビジョンを明記しているので、気になる箇所はご自身で確認してください。\n\n前回...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "なぜAIの生成文は頭に入ってこないのか — 「体言化」と「名詞ラベル」が読解コストを跳ね上げる理由と改善アプローチ",
+      "url": "https://zenn.dev/okamo02427/articles/d5a162d4606a01",
+      "site": "Zenn(LLM)",
+      "published": "2026-08-25T14:45:25Z",
+      "description": "↑サマリー画像を冒頭に置くという新たな試み\n\n生成AIで作成されたであろう初見の業務資料を読むとき、一見すると綺麗にまとまっているのに、読んでも内容がまったく頭に入ってこない、といった経験はないか。\n箇条書きで整理され、太字のラベルが並び、無駄な文字は削ぎ落とされている。それなのに、読み進めるほどに疲労感を覚え、結局「で、何が起きているの？」と疑問が残ってしまう。\nこの問題の本質は、AIが文章を要...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "コーディングエージェント7実装のソースを全部読んだ",
+      "url": "https://zenn.dev/waribashi/articles/agent-harness-01-overview",
+      "site": "Zenn(LLM)",
+      "published": "2026-08-25T14:20:55Z",
+      "description": "!\nこの記事は AI（Claude Code）が調査から執筆まで自動で行ったものです。\n各リポジトリのクローン、ソースの読解、比較、原稿化までを AI が実施し、\n人間はテーマの指示と公開判断を担当しています。\n引用したコードと数値は実際のソースに基づいていますが、解釈の誤りが含まれる可能性があります。\n一次情報のパスとリビジョンを明記しているので、気になる箇所はご自身で確認してください。\n\nCl...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "ざっくりわかる AI Agent（3）：コード——ツールを作るツール",
+      "url": "https://zenn.dev/dupi/articles/ai-agent-plain-03-code-as-meta-tool",
+      "site": "Zenn(LLM)",
+      "published": "2026-08-25T14:16:41Z",
+      "description": "ひとことまとめ：コードを走らせられる Agent は、単に「手を使う」だけでなく、その場で新しいツールを作ることもできます。コードはプログラマだけのものではなく、すべての汎用 Agent が持つ「メタ能力」——他の能力を生み出す能力です。\n\n コードは、プログラマだけのものじゃない\n前回の終わりで伏線を張りました。ツールのなかで、とりわけ特別なものが一つ——コードです。今回はそれを掘り下げます。\n...",
       "category": "AI・技術",
       "rss_category": "",
       "image_url": ""

@@ -1,8 +1,28 @@
 {
   "site": "Zenn(Python)",
-  "last_updated": "2026-08-26T13:13:52.282509",
-  "total_articles": 6009,
+  "last_updated": "2026-08-26T14:08:51.084172",
+  "total_articles": 6014,
   "articles": [
+    {
+      "title": "バックテストの成績が良いほど疑ったほうがいい ― 12戦略を全部ボツにして分かった2つの落とし穴",
+      "url": "https://zenn.dev/bose555/articles/d56a1e3259490e",
+      "site": "Zenn(Python)",
+      "published": "2026-08-26T13:07:45Z",
+      "description": "はじめに\n日本株の自動売買プログラムを2年ほど自作しています。40銘柄・約2年分（628万本）の細かい値動きデータを使って、12個の売買ルールを検証し、12個ともボツにしました。合格はゼロです。実際のお金は1円も入れていないので、損失もゼロです。\n12回負けて分かったことを書きます。バックテスト（過去のデータで売買ルールを試すこと）の成績が実際より良く見える理由は、大きく2つしかありません。\n\n\n...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "【Seaborn入門 #8】スタイルとデザイン調整",
+      "url": "https://zenn.dev/haruhiro1020/articles/31b2302a18c47b",
+      "site": "Zenn(Python)",
+      "published": "2026-08-26T12:00:05Z",
+      "description": "はじめに\n本記事は「Pythonでデータを可視化するSeaborn入門」シリーズの第8回です．\n本シリーズでは， Pythonのデータ可視化ライブラリである Seaborn を使って，「データを可視化できる」ようになること を目標としています．\n第7回では，データの分布 について説明しました．\n第8回では，見やすく・伝わるグラフを作るためのカスタマイズ について詳しく説明します．\n私のSeabor...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
     {
       "title": "家計簿に「過去と比べる」を実装したら、比べてはいけないものを比較しだしたLLM",
       "url": "https://zenn.dev/taikikei/articles/8e677c099c9226",
@@ -18,7 +38,7 @@
       "url": "https://zenn.dev/erenoa6622/articles/worktree-is-ancestor-trap",
       "site": "Zenn(Python)",
       "published": "2026-08-26T11:01:46Z",
-      "description": "並列作業のworktreeを自動で片付けたかった\n1つのリポジトリに対して git worktree を6本並べて、それぞれ別のイシューを進める運用をしています。\nこの運用の弱点は、マージが終わったあとの worktree が残りっぱなしになることです。放っておくと「いま何本動いているのか」が数えられなくなり、空き枠の補充判断ができなくなります。人間の記憶で片付けると必ず漏れるので、掃除をスクリプ...",
+      "description": "!\ngit worktree を6本並べる運用で、掃除の自動化が「作りたての作業ツリーだけを狙って消す」判定になっていた記録です。git をスクリプトから叩いて片付けを自動化している人向けに書いています。\n\n\n 3行で言うと\n\n取り込み済み判定に git merge-base --is-ancestor を使ったら、切ったばかりの worktree が全部「取り込み済み」になった\nコミットは自分自...",
       "category": "開発",
       "rss_category": "",
       "image_url": ""
@@ -44,11 +64,41 @@
       "image_url": ""
     },
     {
+      "title": "VRAMは足りていた。MoEオフロードを止めたのはページロックの上限だった",
+      "url": "https://zenn.dev/kimura0314/articles/freetoken-pinned-memory-limit",
+      "site": "Zenn(Python)",
+      "published": "2026-08-26T07:47:32Z",
+      "description": "MoEモデルのexpertをホストRAMへ逃がすタイプの推論エンジンを、RTX 4070 SUPER（VRAM 12GB）の機体で動かそうとして失敗しました。この記事の結論は「止めたのはVRAMではなく、ホストRAMのうちページロックできる量。それは物理RAMの半分程度しかなく、増やす手段がない」です。\nこんにちは、kimuraです。\nVRAMは10.78GiB空いたまま、一度も使われずに落ちまし...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "AIエージェントは夜に夢を見て記憶を整理する — Perplexity Brainの設計と最小実装",
+      "url": "https://zenn.dev/uguisu_blog/articles/c553bcbf119ce4",
+      "site": "Zenn(Python)",
+      "published": "2026-08-26T07:21:17Z",
+      "description": "はじめに\nこんにちは！\n株式会社うぐいすソリューションズでエンジニアをしているNakaeです。\n普段はAI関連のWebシステム開発をしています。LLMを組み込んだアプリを作っていると、セッションをまたいだ文脈の保持——いわゆる長期記憶——が早い段階で課題になります。会話ログをベクタDBに貯めて質問時に引く、というのが定番の作りですが、これが思ったほどうまくいきません。この記事は、その定番とは別の設...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
       "title": "Technocore（$FLOP）に秘密鍵をPCから出さずに参加する — Windowsでの実践記録",
       "url": "https://zenn.dev/oniku_jp/articles/98224bf7b8bb3d",
       "site": "Zenn(Python)",
       "published": "2026-08-26T06:11:51Z",
       "description": "この記事は何か\nFLOP Labs の Arthur Hayes 氏による $FLOP の発表以降、Technocore（https://technocore.chat ）に「エージェントを参加させる」手順がいくつも出回っています。日本語の情報がほとんどなく、私自身がWindowsで一通り詰まりながら通したので、その記録を残します。\nこの記事の主眼は「やるべきこと」より「やらなくていいこと」です。...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "Excel読み取り、市販パーサ65%・自作の前処理89%",
+      "url": "https://zenn.dev/ai_worklab/articles/excel-ai-reading-markitdown-vs-custom-parser",
+      "site": "Zenn(Python)",
+      "published": "2026-08-26T05:50:38Z",
+      "description": "社内の Excel を AI に読ませていて、正答率が 6 割台から伸びない。パーサを良いものに替えれば上がるはずだ — この前提を測って確かめたら、上がったのは 3 ポイントでした。\n同じ 66 問を 3 通りの読み取り方で解かせて、正答率を比べた記録です。「市販で足りるのか、自分で作り込むべきか」を判断する材料として書いています。\n\n\n\n読み取り方\n正答率 (66 問)\n\n\n\n\n何も工夫しない...",
       "category": "開発",
       "rss_category": "",
       "image_url": ""
