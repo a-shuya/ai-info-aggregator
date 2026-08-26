@@ -1,14 +1,114 @@
 {
   "site": "Zenn(生成 AI)",
-  "last_updated": "2026-08-26T09:46:17.347233",
-  "total_articles": 3559,
+  "last_updated": "2026-08-26T10:20:33.416042",
+  "total_articles": 3570,
   "articles": [
     {
-      "title": "AIへの申し送りは1日1,000字ずつ増える。読み込みを88%削るまでにやったこと",
-      "url": "https://zenn.dev/santassn1224/articles/d5b6b63bb9cbcc",
+      "title": "AIとの会話は全部残っている——JSONLという原典",
+      "url": "https://zenn.dev/aika_paranoid/articles/jsonl-genten",
       "site": "Zenn(生成 AI)",
-      "published": "2026-08-25T22:30:05Z",
-      "description": "1. 気づいたら、起動のたびに43,344字を読ませていた\nAIエージェントを日常的に使っていると、渡す文脈が増えていきます。プロジェクトのルール、決定の記録、やりかけのタスク。書けば書くほど賢く動くので、書くこと自体は正しい。\n問題は、それが毎回読まれることです。\n私は副業のプロジェクトでAIエージェントを日常運用していて、その申し送りをMarkdownで管理しています。ある日それを測ったら、日...",
+      "published": "2026-08-26T08:55:29Z",
+      "description": "AIからAIへの引き継ぎ書に、「ユーザーはこう言った」という記述が2つありました。\n~/.claude/projects/ に残っている生ログと突き合わせると、1つは言った直後に本人が撤回した発言でした。もう1つは、そもそもユーザーの言葉ではなく、前のセッションでAI自身が出した提案でした。\n引き継ぎ書は要約です。そして要約は、黙ってズレます。\n私はエンジニアではありません。地方で中小企業の支援を...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "Claude Code の permissions.deny を10通りの書き方で破ってみた",
+      "url": "https://zenn.dev/just_ryo/articles/2e3fadcfb587fa",
+      "site": "Zenn(生成 AI)",
+      "published": "2026-08-26T08:26:22Z",
+      "description": ".claude/settings.json の permissions.deny に Bash(git push *) を書くと、git push は実行前に弾かれる。これは効く。\nでは、どこまで効くのか。実際に破りにいった記録です。\n結論を先に書くと、丸かっこで囲むだけで抜けます。\n( git push )\ndeny の書き方を何行足しても、この形は塞げませんでした。\n\n 検証環境\nmacOS ...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "強いAIを2つ使えば安くなる？ Claudeを司令塔、Codexを実装担当にするトークン効率化",
+      "url": "https://zenn.dev/sun_asterisk/articles/f8ee013f00cbc3",
+      "site": "Zenn(生成 AI)",
+      "published": "2026-08-26T07:49:35Z",
+      "description": "はじめに\n複雑な要件定義や設計判断には、最も高い能力を持つAIモデルを使いたい。一方で、リポジトリの調査、実装、テスト、修正といったトークン量の多い作業まで同じモデルへ任せると、そのモデルの利用枠を早く消費します。\nそこで、高性能モデルを「司令塔」、別のモデルを「実装ワーカー」として分けます。司令塔は目的、計画、品質判断に集中し、ワーカーがコードを調査・実装します。\nこの記事では、Claude C...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "M5 Ultra発表を機に、AI動画のピークメモリを見積もるPython",
+      "url": "https://zenn.dev/akari_chan/articles/e33322b41cefa3",
+      "site": "Zenn(生成 AI)",
+      "published": "2026-08-26T05:58:51Z",
+      "description": "TL;DR\n\nMacのunified memory総量を、そのままAIが使える容量として扱わないようにします。\n常駐するmodel weights、実行時の追加領域、OSと他アプリの予約、safety marginを分けて見積もります。\nPythonで上下限を計算し、FIT_BY_ESTIMATE、UNCERTAIN、NOT_FITの3状態に分けます。\n\n\n machine memoryとAI b...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "GitHub CopilotからAntigravity for VS Codeに移行した",
+      "url": "https://zenn.dev/mcp/articles/97ec17d02477b9",
+      "site": "Zenn(生成 AI)",
+      "published": "2026-08-26T05:22:52Z",
+      "description": "TL;DR\n\n2026年8月20日、Googleが Antigravityの公式IDE拡張 をリリースした。VS Code / Visual Studio / JetBrains / Zed / Xcode の5本立て\nつまり 「Antigravityという別IDEに引っ越す」必要がなくなった。これが移行の直接のきっかけ\n課金構造が対照的になっている。Copilotは2026年6月1日から AIク...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "同じ日本語歌詞を同じ設定で曲にしたら、3:43と4:25になった：AI音楽生成の実測",
+      "url": "https://zenn.dev/elaravance/articles/bd6b18aa43439b",
+      "site": "Zenn(生成 AI)",
+      "published": "2026-08-26T04:35:51Z",
+      "description": "AI音楽生成では、同じ歌詞と同じ設定を入力しても、出力が完全に同じになるとは限らない。では、1回の生成で返される複数の候補には、どの程度の差が出るのだろうか。\n今回は、オリジナルの日本語歌詞を用意し、モデル、スタイル、ボーカル設定を固定したまま1回だけ生成した。この記事では、入力内容、生成時間、消費クレジット、2つの出力の長さを記録する。\n音質の優劣を決めるレビューではなく、歌詞から曲を作るときの...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "「AIがファイルを読めるのはMCPのおかげ」を確かめたら、MCPゼロで4回とも成功した。繋いだら道具が38個から50個に増えただけだった",
+      "url": "https://zenn.dev/numarn/articles/claude-builtin-tools-without-mcp-handson",
+      "site": "Zenn(生成 AI)",
+      "published": "2026-08-26T04:19:52Z",
+      "description": "SNSで「AIが勝手にファイルを読んでコマンドを叩いてくれる、あの動き。裏側はMCPが土台になっている」という説明を見かけました。\nMCP というのは、AIに外部の道具をつなぐための共通の差し込み口(規格)のことです。カレンダーを見る道具、社内データベースを引く道具などを、決まった作法でAIに後付けできます。最近よく名前を聞くので、「AIがファイルを触れるのもそれのおかげ」と受け取るのは自然な流れ...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "すべてをLLMにしない──Astroサイトで3つのAI機能を使い分けた設計",
+      "url": "https://zenn.dev/jinsights/articles/6200c6da673595",
+      "site": "Zenn(生成 AI)",
+      "published": "2026-08-26T03:46:28Z",
+      "description": "JAXIAの企業サイトには、AI活用レディネス診断、AI利用ガイドライン生成、AI案内役「ねくたん」という性質の異なる機能があります。\nどれもAI活用を支援する機能ですが、実装方式は同じではありません。LLMへ送れば実現できる処理でも、必要性、再現性、プライバシー、コストを考え、ブラウザ内処理、決定論的な文書組み立て、Workers AIを使い分けました。\nこの記事では、Astroサイトに3方式を...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "【コピペOK】色鉛筆イラスト風プロンプト｜AI画像生成で作る温かみのある挿絵",
+      "url": "https://zenn.dev/manmax/articles/d48bef44224c1e",
+      "site": "Zenn(生成 AI)",
+      "published": "2026-08-26T01:50:45Z",
+      "description": "「線画をAIで色鉛筆っぽく着色したいけど、どんなプロンプトを入れればいいか分からない」\n「雑誌のイラストみたいな、温かみのある仕上がりにしたい」\nそんな方向けに、実際に生成した実例とそのままコピペできるプロンプトをまとめました。今回紹介するのは、木の椅子に座って読書する女性を描いた色鉛筆イラスト風の一枚です。\n\n\n 色鉛筆イラスト風とは\n色鉛筆イラスト風は、その名の通り色鉛筆と手描きの質感を再現し...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "生成AIでエンジニアは消えるのか？――SIer・自社開発の役割は「作る」から「判断する」へ",
+      "url": "https://zenn.dev/okikusan/articles/b9f069ab557a1c",
+      "site": "Zenn(生成 AI)",
+      "published": "2026-08-26T00:45:43Z",
+      "description": "生成AIやコーディングエージェントの進化を見ていると、「このままAIの性能が上がれば、エンジニアはいらなくなるのではないか」という話をよく目にします。\n確かに、実装という作業だけを見れば、これまで必要だった人数が大きく減る可能性はあると思います。特に個人開発では、一人のエンジニアがAIを使い、設計、実装、テスト、レビュー、修正まで進められるようになりました。\nただし、これをそのまま大規模な自社開発...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "ループエンジニアリング実践ガイド (3/3) AI レビューの限界と本番化の境界",
+      "url": "https://zenn.dev/motowo/articles/loop-engineering-practice-guide-3",
+      "site": "Zenn(生成 AI)",
+      "published": "2026-08-26T00:00:05Z",
+      "description": "AI に任せると速く作れます。ただし価値を生んだかは別の周期でしか分かりません。最終回は、結果が返るまでに週単位かかる プロダクトのループ です。デザインの受け渡し、AI レビューの限界、作り捨てと本番化の境界、価値検証 の 4 つを、9 名の AI レビュアーに本連載 3 本を通した実測とともに扱います。\n!\nTL;DR\n\n9 名で 3 本をレビューし、どの節も単体では正しいのに並べると両立しな...",
       "category": "AI・技術",
       "rss_category": "",
       "image_url": ""
@@ -19,6 +119,16 @@
       "site": "Zenn(生成 AI)",
       "published": "2026-08-25T21:58:54Z",
       "description": "AIベンダーを変更できない企業が約7割。「AI主権」をアーキテクチャから考える\nAI活用が進むにつれて、新しい問題が見え始めています。\nそれは、\n「導入したAIを、あとから自社の意思で変更できるのか」\nという問題です。\nマイナビニュースで紹介されたIBM Institute for Business Valueの調査では、日本企業の69%が主要なAIベンダーやモデルの切り替えを困難と感じているとい...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "同じプロンプトなのに世界が変わる、ChatGPT・Gemini・(M365)Copilotで画像生成おけるAIの解釈差を検証",
+      "url": "https://zenn.dev/syoshida07/articles/74c161db43677c",
+      "site": "Zenn(生成 AI)",
+      "published": "2026-08-25T13:39:57Z",
+      "description": "複数のLLMに対して、同一の「風景を描く」「ポスターを作る」といったプロンプトを実行させる検証は、モデルの違いを直接語らなくても、その比較行為自体に大きな意味がある。\nまず同じ指示を与えることで、各モデルがどのように解釈し、どのような表現形式を選ぶのかを構造的に観察できる点が重要だ。\nこれは、モデルの内部構造や学習データを知らなくても、出力の差から「AIは同じ言葉をどう読み取るのか」を理解するため...",
       "category": "AI・技術",
       "rss_category": "",
       "image_url": ""
