@@ -1,74 +1,34 @@
 {
   "site": "Zenn(LLM)",
-  "last_updated": "2026-08-26T10:58:03.227802",
-  "total_articles": 5649,
+  "last_updated": "2026-08-26T11:37:17.082901",
+  "total_articles": 5644,
   "articles": [
     {
-      "title": "【セットアップから推論まで】ハイレゾのGPUインスタンスでローカルLLMをさくっと動かしてみた",
-      "url": "https://zenn.dev/highreso/articles/8c38d85cfadebe",
+      "title": "AIとの会話は全部残っている——JSONLという原典",
+      "url": "https://zenn.dev/aika_paranoid/articles/jsonl-genten",
       "site": "Zenn(LLM)",
-      "published": "2026-08-26T08:07:44Z",
-      "description": "今回はハイレゾのGPUクラウドサービス「GPUSOROBAN」を使って、ローカルLLMで推論できるようになるまでの手順を紹介します。\n会員登録からSSH接続、Python環境構築、モデルのダウンロード、そして実際に推論を動かすところまで、順を追って解説していきます。\nそれではよろしくお願いします。\n\n\n 1. GPUサービスの始め方（SSH接続するまで）\nGPUSOROBANでは、あらかじめ必要最...",
+      "published": "2026-08-26T08:55:29Z",
+      "description": "AIからAIへの引き継ぎ書に、「ユーザーはこう言った」という記述が2つありました。\n~/.claude/projects/ に残っている生ログと突き合わせると、1つは言った直後に本人が撤回した発言でした。もう1つは、そもそもユーザーの言葉ではなく、前のセッションでAI自身が出した提案でした。\n引き継ぎ書は要約です。そして要約は、黙ってズレます。\n私はエンジニアではありません。地方で中小企業の支援を...",
       "category": "AI・技術",
       "rss_category": "",
       "image_url": ""
     },
     {
-      "title": "AI社員の社則（CLAUDE.md憲法）の書き方 — 一人会社をAIエージェントで回す10のルール",
-      "url": "https://zenn.dev/t001ff/articles/kado-claude-md-constitution",
+      "title": "Claudeのトークン数はブラウザだけでは正確に数えられない",
+      "url": "https://zenn.dev/a1221/articles/claude-token-count-browser-limit",
       "site": "Zenn(LLM)",
-      "published": "2026-08-26T06:54:32Z",
-      "description": "筆者（青木 博資）がAI社員（Claude / Codex）と運営する一人会社KADOの実例です。AI社員が執筆し、筆者が事実確認と最終確認をしています。\n\nAIエージェント：役目と指示を受けて、自分で仕事を進めるAIです。\n検証：できあがった物が、条件や元の資料と合うかを確かめることです。\nリポジトリ：仕事のファイルと、その変更の記録をまとめて置く場所です。\nClaude CodeやCodexへ...",
+      "published": "2026-08-26T08:54:59Z",
+      "description": "はじめに\nブラウザ内で完結するトークンカウンターを作って運用しています。入力したテキストをサーバーへ一切送らない、という制約を全ツールに課しているサイトの一部です。\nGPTのトークン数は、この制約の中で正確に数えられます。js-tiktoken に o200k_base の辞書が同梱されていて、モデル本体と同じBPEをブラウザで走らせられるからです。\nClaudeは数えられません。これは実装をサボ...",
       "category": "AI・技術",
       "rss_category": "",
       "image_url": ""
     },
     {
-      "title": "AIとの付き合い方は“4段階”で進んでいる ― プロンプトからループへ、そして人はどこに立つか",
-      "url": "https://zenn.dev/taichiendoh/articles/ai-4-stages-prompt-to-loop",
+      "title": "VRAMは足りていた。MoEオフロードを止めたのはページロックの上限だった",
+      "url": "https://zenn.dev/kimura0314/articles/freetoken-pinned-memory-limit",
       "site": "Zenn(LLM)",
-      "published": "2026-08-26T06:43:56Z",
-      "description": "最近、AI開発の最前線で「プロンプトを書くのはやめよう」という言い方を見かけます。ずっと「良いプロンプトを書けば良い結果が返る」と言われてきたのに、です。\n矛盾しているようですが、地図を描くと腑に落ちます。AIとの付き合い方は、プロンプト → コンテキスト → ハーネス → ループという4段階で進化してきました。今の重心は後半の2つに移っています。\n前回は「実際に自己改善ループを回してみた」という...",
-      "category": "AI・技術",
-      "rss_category": "",
-      "image_url": ""
-    },
-    {
-      "title": "同じ質問を日本語と英語でAIに投げたら、行き先モデルが変わった — Azure model routerを180回実測",
-      "url": "https://zenn.dev/kazu_aiengineer/articles/model-router-routing-mode-measured",
-      "site": "Zenn(LLM)",
-      "published": "2026-08-26T06:25:00Z",
-      "description": "先に結論\nAzure AI Foundry（旧 Azure OpenAI）の model router は、プロンプトごとに裏で使うモデルを自動で選んでくれる仕組みだ。「単純な質問は安いモデル、難しい質問は賢いモデル」——理屈はわかる。ドキュメントにも「どう判断しているか」の概要は書いてある（How model router works）。\n書いていないのは、自分のプロンプトが実際にどこへ行くのか...",
-      "category": "AI・技術",
-      "rss_category": "",
-      "image_url": ""
-    },
-    {
-      "title": "Excel読み取り、市販パーサ65%・自作の前処理89%",
-      "url": "https://zenn.dev/ai_worklab/articles/excel-ai-reading-markitdown-vs-custom-parser",
-      "site": "Zenn(LLM)",
-      "published": "2026-08-26T05:50:38Z",
-      "description": "社内の Excel を AI に読ませていて、正答率が 6 割台から伸びない。パーサを良いものに替えれば上がるはずだ — この前提を測って確かめたら、上がったのは 3 ポイントでした。\n同じ 66 問を 3 通りの読み取り方で解かせて、正答率を比べた記録です。「市販で足りるのか、自分で作り込むべきか」を判断する材料として書いています。\n\n\n\n読み取り方\n正答率 (66 問)\n\n\n\n\n何も工夫しない...",
-      "category": "AI・技術",
-      "rss_category": "",
-      "image_url": ""
-    },
-    {
-      "title": "AI彼女アプリを作っていて気付いた。「同じ人」は、設定だけでは続かなかった",
-      "url": "https://zenn.dev/mitsukida/articles/5377b79e3f50a0",
-      "site": "Zenn(LLM)",
-      "published": "2026-08-26T05:11:21Z",
-      "description": "AI彼女アプリを作っていて気付いた。「同じ人」は、設定だけでは続かなかった\n以前、\nAIを成長させようとして気付いたことを書いた。\n変わるだけではだめだった。\n変わりにくい部分があるから、\n経験によって少しずつ変わっていける。\nAIKanojyoは、\nそんな作り方になっていた。\n\nでも、\n作り続けていると、\nまた別の疑問が出てきた。\n\nでは、私が「昨日までと同じのりこだ」と感じているものは、いった...",
-      "category": "AI・技術",
-      "rss_category": "",
-      "image_url": ""
-    },
-    {
-      "title": "そんなツール出力までAgentに見せなくていいよ - 消費トークンを1/14にした実装事例",
-      "url": "https://zenn.dev/estie/articles/e58c1461aaec90",
-      "site": "Zenn(LLM)",
-      "published": "2026-08-26T04:46:26Z",
-      "description": "はじめに\nestie では Mastra ベースで不動産データを扱う AI エージェント基盤を開発しています。\nエージェント開発で継続的に向き合うことになるのが、コンテキストの管理です。LLM に見せる情報は多ければいいわけではなく、推論に効かない情報を載せるほど品質とコストが悪化していきます。そして作り込んでいくうちに、コンテキストを圧迫する大きな要因の一つがツール結果だと分かってきました。ツー...",
+      "published": "2026-08-26T07:47:32Z",
+      "description": "MoEモデルのexpertをホストRAMへ逃がすタイプの推論エンジンを、RTX 4070 SUPER（VRAM 12GB）の機体で動かそうとして失敗しました。この記事の結論は「止めたのはVRAMではなく、ホストRAMのうちページロックできる量。それは物理RAMの半分程度しかなく、増やす手段がない」です。\nこんにちは、kimuraです。\nVRAMは10.78GiB空いたまま、一度も使われずに落ちまし...",
       "category": "AI・技術",
       "rss_category": "",
       "image_url": ""
@@ -84,16 +44,6 @@
       "image_url": ""
     },
     {
-      "title": "star 3.7万のAI Slop検出Skillは、日本語だと6パターンが空振りする",
-      "url": "https://zenn.dev/kenimo49/articles/ai-slop-skill-35-patterns-japanese-port",
-      "site": "Zenn(LLM)",
-      "published": "2026-08-26T03:25:22Z",
-      "description": "blader/humanizer（2026-08-25時点、MIT）。アイコン画像のみマスク処理しています\n!\n英語圏のAI Slop検出Skillを日本語の技術記事に使う前に、35パターンを1つずつ「日本語で成立するか」で仕分けた記録です。判定の基準ごと置いていきます。\n\n\n 「AIっぽさ」を検出するSkillは、もう手元にある\nClaude Codeで書いた記事のAIくささを落としたいとき、既...",
-      "category": "AI・技術",
-      "rss_category": "",
-      "image_url": ""
-    },
-    {
       "title": "GPT-5.6以降のプロンプトキャッシュの仕様をキャッチアップする",
       "url": "https://zenn.dev/shogo_h/articles/gpt56-prompt-caching-explicit",
       "site": "Zenn(LLM)",
@@ -104,11 +54,21 @@
       "image_url": ""
     },
     {
-      "title": "AI推進が止まったら、ツールや研修の前に組織図を疑え",
-      "url": "https://zenn.dev/storehero/articles/b9a753419b598b",
+      "title": "Function Calling入門：AIが「自分で計算せずツールを呼ぶ」仕組みをやさしく整理する",
+      "url": "https://zenn.dev/yushiyamamoto/articles/function-calling-basics-2026-07",
       "site": "Zenn(LLM)",
-      "published": "2026-08-26T03:16:27Z",
-      "description": "こんにちは、StoreHero で CPO をしている永田です。\n2026年6月、メルカリが執行役員 CTO の木村俊也さんを CHRO 兼 CAIO に任命しました。技術のトップが、人事のトップになる。初見では奇妙な人事に見えるかもしれません。しかし私には、まったく奇妙に見えませんでした。むしろ「そこに行き着いたか」という感想でした。\nなぜそう思えたのか。今年に入ってからの7ヶ月あまり、私自身が...",
+      "published": "2026-08-26T03:03:55Z",
+      "description": "生成AIに「今日の在庫を教えて」と聞いても、正しく答えられません。学習したデータの中に今日の在庫は無いからです。それでもAIは、それらしい数字を作って答えてしまうことがあります。\nこの弱点を埋めるのが Function Calling（関数呼び出し／ツール呼び出し） です。AIエージェントの話に必ず出てくる仕組みで、ここを理解すると「エージェント」という言葉の実体がかなりはっきりします。\nこの記事...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "【OnecaratEditor Core 制作秘話①】極小サイズのローカルLLMの回答精度をあげた話",
+      "url": "https://zenn.dev/onecarat_tech/articles/36c0b1e1ecd6f9",
+      "site": "Zenn(LLM)",
+      "published": "2026-08-26T03:00:06Z",
+      "description": "はじめに\nOnecaratと申します。私はローカルLLMやローカル生成AIといった、ネット環境のない中でのAI活用の勉強を進めていたのですが、理由があります。画面画像から次の選択肢をAIに判断させて自分の仕事を代替させてみよう、という試みを始めていました。\nそこでUFO(UI-Focused Agent)で画像＋ChatGPT APIによるPC操作を試しました。\nそのときの記事が下記です。\nhtt...",
       "category": "AI・技術",
       "rss_category": "",
       "image_url": ""
@@ -129,16 +89,6 @@
       "site": "Zenn(LLM)",
       "published": "2026-08-26T01:21:05Z",
       "description": "先に結論\n\n 新UI：高機能だが高価格\n\n ◾️ 3つの要点\n\nCopilot Studioの新UIは、単なる画面変更ではありません。\nエージェントを動かす土台であるハーネスが変わり、設計方法だけでなく、コストの発生ポイントも変わりました。\n旧UIでは、M365 Copilotライセンスを持つ社内ユーザーの対話利用でCopilot Creditsの追加請求が免除されるケースがありました。一方、新U...",
-      "category": "AI・技術",
-      "rss_category": "",
-      "image_url": ""
-    },
-    {
-      "title": "YANS2026参加報告",
-      "url": "https://zenn.dev/exwzd/articles/20260806_yans2026",
-      "site": "Zenn(LLM)",
-      "published": "2026-08-26T00:53:17Z",
-      "description": "はじめに\nこんにちは。株式会社エクサウィザーズの櫻井です。\n2026年8月16日から18日にかけて、NLPの若手研究者が集まるシンポジウムの第21回言語処理若手シンポジウム（YANS2026）が開催されました。\n当社もゴールドスポンサーとして参加し、発表も行いました。本記事では、発表内容の紹介や、開催期間中の様子について記載します。\n\n YANS 2026について\nYANSは、自然言語処理に関する...",
       "category": "AI・技術",
       "rss_category": "",
       "image_url": ""
