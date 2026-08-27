@@ -1,8 +1,108 @@
 {
   "site": "Zenn(Python)",
-  "last_updated": "2026-08-26T21:18:04.558020",
-  "total_articles": 6015,
+  "last_updated": "2026-08-27T00:53:26.270795",
+  "total_articles": 6025,
   "articles": [
+    {
+      "title": "AIエージェントが古い正本を読まないStartup Receipt",
+      "url": "https://zenn.dev/agentmemories/articles/canonical-startup-receipt",
+      "site": "Zenn(Python)",
+      "published": "2026-08-27T00:41:28Z",
+      "description": "はじめに\n長く続くAIエージェント運用では、同じ案件の設計書が増えていきます。design-v2.md、current.md、Discordで更新された方針、古いバックアップが同時に残り、セッションをまたいだエージェントが誤った一冊を選ぶ事故が起きます。\n「最新ファイルを読んで」と指示するだけでは不十分です。mtimeが新しくても内容が旧版のコピーかもしれず、currentという名前が複数ある場合...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "flet コントロール一覧",
+      "url": "https://zenn.dev/python_dev/articles/2f71f9cf42cf3f",
+      "site": "Zenn(Python)",
+      "published": "2026-08-27T00:12:23Z",
+      "description": "Flet Controls 一覧 — 役割と使い時\n\n はじめに\n!\n作成途中です\n\n\n 基本・アプリ構造\n\n\nPage\n\n役割: Fletアプリ全体を管理する最上位オブジェクト。\n使い時: アプリの設定、画面追加、テーマ変更、イベント処理など。\n\n\n\nView\n\n役割: 1つの画面・ページを構成するコンテナ。\n使い時: 複数画面を作るとき、Routerと組み合わせるとき。\n\n\n\nFletApp\n...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "非冪等な業務Web自動化を安全に高速化する実機検証ループ",
+      "url": "https://zenn.dev/cutlet_of_pork/articles/safe-live-retry-for-business-web-automation",
+      "site": "Zenn(Python)",
+      "published": "2026-08-26T23:40:38Z",
+      "description": "業務Webシステムの自動化では、処理を速くすることよりも「同じ対象へ二度送らない」ことの方が重要になる場面があります。削除、解除、登録、紐付けのように状態を変える操作は、通信が遅いからといって同じボタンを再送できません。\nこの記事では、既存運用中のWindows向け自動化を題材に、重複処理の原因を特定し、実機で安全に検証しながら改善するための設計をまとめます。対象名、URL、アカウント、業務データ...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "fit_predictで体で覚えた、異常検知の定石",
+      "url": "https://zenn.dev/acntechjp/articles/931d75941aafe1",
+      "site": "Zenn(Python)",
+      "published": "2026-08-26T23:30:05Z",
+      "description": "はじめに\nこの記事は「Isolation ForestでGCPの障害を検知できました」という話ではありません。もう少し地味で、しかし意外とハマりやすい話をします。LLMでなくて機械学習の記事です。\n※Isolation Forest：正常データが密集し異常データは孤立しやすいという性質を使う、教師なし学習の異常検知アルゴリズムです。\n短い観測窓ごとに正常と障害のデータを混ぜて正常基準を毎回作り直す...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "2万円の実弾で初めて約定したら、Botの記録と取引所の履歴が3円だけズレていた",
+      "url": "https://zenn.dev/codecraft/articles/live-trade-reconciliation-rounding-gap",
+      "site": "Zenn(Python)",
+      "published": "2026-08-26T23:11:39Z",
+      "description": "暗号資産の自動売買Botを作っています。基本はdry_run(仮想売買)での検証がメインで、実弾はごく小さいパイロット(2万円)を1本だけ動かしている段階です。この記事は、その2万円で初めて約定した取引を取引所の履歴と突き合わせたら、記録と実際の残高が3円だけズレていた話です。\n利益が出た・出ていないという話ではありません。数量・レート・約定時刻はすべて一致していて、ズレたのは「いくら資金を使った...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "エージェントに記憶を持たせる。Foundry Agent Service の Memory を試してみた（マネージド編）",
+      "url": "https://zenn.dev/nomhiro/articles/foundry-agent-memory-poc",
+      "site": "Zenn(Python)",
+      "published": "2026-08-26T22:26:59Z",
+      "description": "!\n本記事の内容は 2026年8月26日時点 の情報に基づいています。Foundry Agent Service の Memory と Memory Store API は public preview です。API のスキーマや既定値は変わる可能性があります。\n\n\n はじめに\n私は普段、気になった技術ネタを GitHub の Issue に溜めておいて、時間があるときに順番に消化しています。その...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "Agent Memory Toolkit で Cosmos DB にエージェントの記憶を持たせる（セルフマネージド編）",
+      "url": "https://zenn.dev/nomhiro/articles/cosmosdb-agent-memory-toolkit-poc",
+      "site": "Zenn(Python)",
+      "published": "2026-08-26T22:25:27Z",
+      "description": "!\n本記事の内容は 2026年8月26日時点 の情報に基づいています。Agent Memory Toolkit（azure-cosmos-agent-memory）は preview、Agent Framework 連携パッケージ（agent-framework-azure-cosmos-memory）は alpha です。バージョンは必ずピン止めしてください。 API は予告なく変わります。\n\n...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "Claude CodeとPythonでRSSフィードを分析しSlackへ自動通知する実践",
+      "url": "https://zenn.dev/ikuokuotiak/articles/claude-python-rss-analysis-slack-notify",
+      "site": "Zenn(Python)",
+      "published": "2026-08-26T22:00:48Z",
+      "description": "はじめに\n情報過多の現代において、常に最新情報をキャッチアップすることは、業務の質を高める上で非常に重要です。しかし、日々多くの情報源から発信されるニュースや技術記事をすべて目を通すのは、時間的にも精神的にも大きな負担となります。\n私も普段から複数のRSSフィードを購読していますが、RSSリーダーを毎日隅々までチェックし、その中から本当に重要な情報だけを選別する作業は、想像以上に手間がかかります。...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "Claude APIの構造化出力で製品スコアリングパイプラインを実装した",
+      "url": "https://zenn.dev/liatris/articles/20260827-product-eval-ai",
+      "site": "Zenn(Python)",
+      "published": "2026-08-26T22:00:05Z",
+      "description": "!\nこの記事は、Claude Codeを執筆支援に使った \"毎朝1本書く\" 取り組みの一環で書いています。\n\n目的: 自分のAI活用キャッチアップ。仕組み自体も毎月アップデートしていきます\n体制: 題材選定・実装・下書きをClaude Codeで補助、Liatrisが動作確認と編集を経て公開判断\n方針: Zennのガイドラインに真摯に向き合い、運営から指摘や警告があれば即座に取り組みを停止します\n...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "Whisperの精度改善、5施策を実測したら3つ棄却になった話",
+      "url": "https://zenn.dev/mo0980/articles/whisper-accuracy-ab-testing",
+      "site": "Zenn(Python)",
+      "published": "2026-08-26T18:26:14Z",
+      "description": "Windows常駐の音声入力アプリ（MO Voice）を個人開発しています。faster-whisper を使ったローカル完結型で、ホットキーを押して話すとカーソル位置にテキストが入るという、それだけのツールです。\n作ってしばらく使っていると、当然ながら「もっと精度を上げたい」と思い始めます。特に技術用語です。「Claude Code」が「クロードコード」になる、「印字」が「インジン」になる。1日...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
     {
       "title": "Pythonの並行処理を選ぶために、待機時間と計算時間を分けて測る",
       "url": "https://zenn.dev/skrtk98/articles/python-concurrency-guide",
