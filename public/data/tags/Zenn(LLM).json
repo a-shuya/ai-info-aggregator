@@ -1,8 +1,158 @@
 {
   "site": "Zenn(LLM)",
-  "last_updated": "2026-08-27T00:53:26.270795",
-  "total_articles": 5665,
+  "last_updated": "2026-08-27T11:01:55.084434",
+  "total_articles": 5678,
   "articles": [
+    {
+      "title": "Qwen 3.8 Flash Next の N-GRAM/PLEを公式資料とDay zero実装から読み解く",
+      "url": "https://zenn.dev/shunmoridev/articles/d276ea75c252cf",
+      "site": "Zenn(LLM)",
+      "published": "2026-08-27T05:58:22Z",
+      "description": "2026年8月26日、Alibaba QwenチームによりQwen3.8-Flash-Nextが公開されました。\n次世代のメジャーバージョン「Qwen4」アーキテクチャの先行プレビューにあたる立ち位置のモデルです。\nQwen 3.8 Flash Nextでは、推論効率やモデル容量、情報伝達を改善するため、次のような新しい仕組みを組み合わせています。\n\nGDN (36層) + QSA (12層)\nG...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "デザインガイド1枚で+12点、ローカルLLM生成の実測",
+      "url": "https://zenn.dev/takushio2525/articles/20260821-qwen-portfolio-bench",
+      "site": "Zenn(LLM)",
+      "published": "2026-08-27T05:25:09Z",
+      "description": "ローカルのqwenに「架空の人物のポートフォリオサイトを1ページ作れ」と投げて、モデルとガイドの有無を変えながら実測した。M5 Maxの実機で最短3分57秒、最長37分09秒。デザインガイドラインをシステムプロンプトに1枚足すかどうかで、同じモデル・同じタスクの結果が35点満点の自己採点で21点と33点に分かれた。\nこの記事は結果と数値の話。生成させる仕組み（ガード付きハーネス、masterとwo...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "ローカルLLMをオーケストレーションしてサイトを作らせてみた",
+      "url": "https://zenn.dev/takushio2525/articles/20260821-tako-qwen-orchestration",
+      "site": "Zenn(LLM)",
+      "published": "2026-08-27T05:22:13Z",
+      "description": "!\nこの記事に出てくる「tako」は自作のGUIターミナルです。tako自体が何なのかはtako開発日記 #1にまとめてあります。\n\nローカルのqwenに、架空プロフィールのポートフォリオサイトを1ページ作らせた。48分19秒でindex.html297行・css/style.css804行・js/main.js322行が出てきて、テーマ切替もスクロール連動のアニメーションも動いている。\nただ、今...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "Claude Code の Skill の description を最適化したら、動いたのは「発火率」じゃなかった",
+      "url": "https://zenn.dev/box2box/articles/skill-description-trigger-limits",
+      "site": "Zenn(LLM)",
+      "published": "2026-08-27T04:52:53Z",
+      "description": "結論 / TL;DR\nClaude Code の Skill は、description を見て Claude が「使うかどうか」を判断する建て付けになっています。だから description を頑張って書く。トリガーになりそうな言い回しを並べて、「明示的に頼まれなくても使うこと」と書き添える。自分もそうしてきました。\nその description を、skill-creator に同梱されてい...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "賢い方に道を作らせる:ローカルLLMを含んだシステムの詰まない設計",
+      "url": "https://zenn.dev/mtogami/articles/d6dcc56d19c4b7",
+      "site": "Zenn(LLM)",
+      "published": "2026-08-27T03:38:30Z",
+      "description": "こちら(https://note.com/fine_elk7830/n/n4a7781eee235) で、エージェントの性能を決めるのは「LLMそのものの賢さ」よりも「LLMが仮説検証のループを効率的に回せる場の設計だ」という話を書きましたが、今回は、そのような場の設計を含むローカルLLMを用いたシステムの設計を如何に行うかということを書きたいと思います。前の記事では仮説検証のループと書きましたが...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "改めてコンテキストエンジニアリングとは何か整理する",
+      "url": "https://zenn.dev/shogo_h/articles/context-engineering-overview",
+      "site": "Zenn(LLM)",
+      "published": "2026-08-27T01:47:00Z",
+      "description": "!\n2026-08-27時点の情報です。本文の引用と数値は、この日に取得した出典に基づいています。\n\n\n はじめに\nコンテキストエンジニアリングは、LLMに毎回渡す入力の中身を決める仕事です。Andrej Karpathyのたとえでは、LLMがCPU、コンテキストウィンドウがRAMにあたり、RAMに何を載せるかをOSが決めるように、1回の推論でモデルが見るものを決めます[1]。\n具体的な手立ては、...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "Google Colabで最新LLMを試す #12 ― Nanbeige4.2-3Bを無料版T4で動かす：Tool Callingまで試す",
+      "url": "https://zenn.dev/nakanishitf/articles/ecb2e9f981ad01",
+      "site": "Zenn(LLM)",
+      "published": "2026-08-27T00:57:47Z",
+      "description": "はじめに\n「Google Colabで最新LLMを試す」シリーズの第12回です。\n今回は、Nanbeige LLM Labが公開している軽量Agentモデル Nanbeige4.2-3B を、Google Colab無料版のNVIDIA T4 GPUで動かしてみます。\n今回使用したNotebookは、以下のGitHubリポジトリで公開しています。\nhttps://github.com/ntakaf...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "AIエージェントの暴走を止めるガード実装パターン集 — 実機ログから抽出した7つの型",
+      "url": "https://zenn.dev/orca_forge/articles/ai-agent-runaway-guard-patterns",
+      "site": "Zenn(LLM)",
+      "published": "2026-08-27T00:12:47Z",
+      "description": "📝 この記事は forge.workstyle.tech に掲載した記事の転載です。\n\ntool-calling でPCやブラウザを操作するAIエージェントを実運用に近づけると、デモでは出なかった「暴走」に必ず出会います。本記事は、音声駆動のデスクトップエージェントを運用する中で実際に起きた暴走のログと、それを止めたガード実装を7つのパターンに整理したものです。\n先に全体観を1行で: 暴走のほとん...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "AIのプロンプトキャッシュ、当たらなくても+25%課金される — Azure GPT-5.6実測",
+      "url": "https://zenn.dev/kazu_aiengineer/articles/gpt56-cache-write-billing",
+      "site": "Zenn(LLM)",
+      "published": "2026-08-26T23:40:28Z",
+      "description": "先に結論\nプロンプトキャッシュは「同じ前置きを使い回すと入力代が安くなる」機能だ。読み出しが1/10になる、というのが売り文句で、実際そうなる。\nただ GPT-5.6 世代からは、その安い読み出しの前に「書き込み」という有料の工程が挟まるようになった。しかもこの書き込みは、こちらが何も指定しなくても既定で走る。\n\n\nプロンプトが約1,027トークン以上あれば、使い回しがゼロでも入力代が +25% ...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "自然言語ハーネスは素のレビューをどこまで変えるか：ChatGPT・Gemini・ClaudeでZIPあり／なしを比較した",
+      "url": "https://zenn.dev/chimirohi/articles/d764d8c0572240",
+      "site": "Zenn(LLM)",
+      "published": "2026-08-26T23:30:05Z",
+      "description": "前回、ChatGPTなどに原稿のレビューを頼んでも、なかなか望ましい結果が返ってこないため、原稿レビューAIを自作した経緯を書いた。\n素のAIは、原稿を無駄に褒めがちである。かといって「厳しくレビューして」と頼むと、今度は前後を読めば意味が通る一文まで曖昧だと判定し、直す必要のない箇所にも問題を作り始める。\nそこで、レビューAIが指摘の数で仕事をした気になる「学級委員」にならないよう、受付、判断基...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "【Unity】ねぇねぇみんな聞いて！！　LLMをゲームAIに組み込んでみたよ！！！",
+      "url": "https://zenn.dev/zabuton/articles/83e7264499ca8f",
+      "site": "Zenn(LLM)",
+      "published": "2026-08-26T23:16:08Z",
+      "description": "はじめに\nタイトルの通り、UnityでLLMを組み込んだ3Dアクションゲームを作ってみました。\n具体的にはローカル実行の小型LLM（Qwen 3 1.7B） をチューニングして戦闘AIに組み込む、という実験です。\n結論から言うと、正直微妙でしたが収穫もあったので共有させてください。\n本記事の内容は以下の通りです。\n\n今回のLLM活用ゲームのコンセプトと設計\nファインチューニング有無による実験結果の...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "社内スキルが190個になった日、エージェントに渡すべきは検索ではなく地図だと気づいた",
+      "url": "https://zenn.dev/storehero/articles/520e4b610219a9",
+      "site": "Zenn(LLM)",
+      "published": "2026-08-26T22:30:05Z",
+      "description": "こんにちは、StoreHero で CPO をしている永田です。\n今年の1月に始めた社内ナレッジの Agent Skills 化を7ヶ月あまり続けてきて、ある日数えたら、スキルは7つのプラグイン合計で 190 個になっていました。データ取得の MCP ツールも別に大量にあります。作れば作るほど良い、と信じて積み上げてきた結果です。\nそして最近、奇妙な逆転が起きていることに気づきました。スキルは人を...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "Claude API の自動キャッシュを使ったら、キャッシュなしより入力の料金が25%高くなりました",
+      "url": "https://zenn.dev/noriyuk/articles/990efa7e0261cd",
+      "site": "Zenn(LLM)",
+      "published": "2026-08-26T22:28:03Z",
+      "description": "食品ラベルの原材料表示を読み取る iOS アプリを個人で作っていて、2026年8月に App Store の審査を通りました。カメラでラベルを撮ると、そこに書かれている成分をひとつずつ説明として返すアプリです。\n公開前に費用を測ったところ、毎回まったく同じシステムプロンプトを送り直しているだけで、1回の読み取りにつき約8円かかっていました。月額450円で出す予定です。同じ文章を送り直す分だけで、月...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "Agent・Orchestration・Harness・Loop・Context・Evals、6つの関係を1つの具体例で整理する",
+      "url": "https://zenn.dev/hideki_tamae/articles/agent-concepts-map",
+      "site": "Zenn(LLM)",
+      "published": "2026-08-26T22:07:22Z",
+      "description": "はじめに\nAIエージェント界隈は、この1〜2年で言葉が増えすぎました。\nAI Agent、AI Orchestration、Harness Engineering、Loop Engineering、Context Engineering、Evals——どれも重要な概念ですが、バラバラに勉強すると「結局何がどう繋がっているのか」が分からなくなります。実際、私自身もこのシリーズで1つずつ記事にしてきま...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "LiveCodeBenchの汚染フリーは2つの日付で決まる",
+      "url": "https://zenn.dev/takkuhiro/articles/livecodebench-contamination-window",
+      "site": "Zenn(LLM)",
+      "published": "2026-08-26T22:00:05Z",
+      "description": "はじめに\nコード生成の評価で LiveCodeBench の名前を見る機会は多いと思います。「汚染フリー（contamination free）」を掲げたベンチマークで、モデル比較の表に LiveCodeBench: 90%台 のような数字が並んでいるのを見かけます。\nたとえば DeepSeek-V4-Flash のモデルカード には、フロンティアモデルとの比較表に以下の行があります。\n\n\n\n\nO...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
     {
       "title": "【Anthropicへレポート中】Claude Code「同意捏造バグ」のメカニズム解析①",
       "url": "https://zenn.dev/pulsar_k/articles/825325a20fd818",
@@ -59,26 +209,6 @@
       "site": "Zenn(LLM)",
       "published": "2026-08-26T08:07:44Z",
       "description": "今回はハイレゾのGPUクラウドサービス「GPUSOROBAN」を使って、ローカルLLMで推論できるようになるまでの手順を紹介します。\n会員登録からSSH接続、Python環境構築、モデルのダウンロード、そして実際に推論を動かすところまで、順を追って解説していきます。\nそれではよろしくお願いします。\n\n\n 1. GPUサービスの始め方（SSH接続するまで）\nGPUSOROBANでは、あらかじめ必要最...",
-      "category": "AI・技術",
-      "rss_category": "",
-      "image_url": ""
-    },
-    {
-      "title": "VRAMは足りていた。MoEオフロードを止めたのはページロックの上限だった",
-      "url": "https://zenn.dev/kimura0314/articles/freetoken-pinned-memory-limit",
-      "site": "Zenn(LLM)",
-      "published": "2026-08-26T07:47:32Z",
-      "description": "MoEモデルのexpertをホストRAMへ逃がすタイプの推論エンジンを、RTX 4070 SUPER（VRAM 12GB）の機体で動かそうとして失敗しました。この記事の結論は「止めたのはVRAMではなく、ホストRAMのうちページロックできる量。それは物理RAMの半分程度しかなく、増やす手段がない」です。\nこんにちは、kimuraです。\nVRAMは10.78GiB空いたまま、一度も使われずに落ちまし...",
-      "category": "AI・技術",
-      "rss_category": "",
-      "image_url": ""
-    },
-    {
-      "title": "AIエージェントは夜に夢を見て記憶を整理する — Perplexity Brainの設計と最小実装",
-      "url": "https://zenn.dev/uguisu_blog/articles/c553bcbf119ce4",
-      "site": "Zenn(LLM)",
-      "published": "2026-08-26T07:21:17Z",
-      "description": "はじめに\nこんにちは！\n株式会社うぐいすソリューションズでエンジニアをしているNakaeです。\n普段はAI関連のWebシステム開発をしています。LLMを組み込んだアプリを作っていると、セッションをまたいだ文脈の保持——いわゆる長期記憶——が早い段階で課題になります。会話ログをベクタDBに貯めて質問時に引く、というのが定番の作りですが、これが思ったほどうまくいきません。この記事は、その定番とは別の設...",
       "category": "AI・技術",
       "rss_category": "",
       "image_url": ""
