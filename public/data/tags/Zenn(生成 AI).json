@@ -1,8 +1,68 @@
 {
   "site": "Zenn(生成 AI)",
-  "last_updated": "2026-08-27T21:01:04.153850",
-  "total_articles": 3589,
+  "last_updated": "2026-08-28T05:19:11.869731",
+  "total_articles": 3596,
   "articles": [
+    {
+      "title": "生成AIを使わずに生成AIガイドラインを生成する──Astroで作った決定論的ジェネレーター",
+      "url": "https://zenn.dev/jinsights/articles/9455ebe3487157",
+      "site": "Zenn(生成 AI)",
+      "published": "2026-08-27T23:44:41Z",
+      "description": "「生成AI利用ガイドラインを作るツールなら、生成AIで文章を作ればよい」\nそう考えるのが自然です。しかしJAXIAが公開した「AI利用ガイドライン作成 β版」では、ガイドライン本文の生成にLLM APIを使っていません。\n8つの質問への回答をブラウザ内で評価し、あらかじめ定義した条文・論点・注意事項を組み合わせる、決定論的なジェネレーターとして実装しました。\nこの記事では、なぜ生成AIを使わなかっ...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "AIに何でも聞ける時代に、なぜ勉強するのか",
+      "url": "https://zenn.dev/sabon/articles/10fa01509dc863",
+      "site": "Zenn(生成 AI)",
+      "published": "2026-08-27T23:00:05Z",
+      "description": "※ただでさえ寝不足で「今日は早く寝るぞ！」と思っていたのに、AIに自分の考えをひたすら投げ続けていたら、現在深夜3時半です。\n思考は私がひたすら投げていますが、文章はチャッピーが書いてくれてます。\n完全に深夜テンションで出来上がった記事であることをご了承ください。\n\n\n AIがこんなに知ってるのに、私が頑張って覚える意味ある？\n少し前、資格の勉強をしていて、ふと思いました。\n覚えること、多いな。\n...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "コーディングエージェントCLIのトークンコスト計上：自動化パイプラインへの組み込み手法",
+      "url": "https://zenn.dev/sh39works/articles/786534f4176566",
+      "site": "Zenn(生成 AI)",
+      "published": "2026-08-27T15:29:15Z",
+      "description": "結論\n本記事の要点を以下の3点にまとめる。\n\n\nCLI出力のJSONL解析による使用量取得: codex exec --json を実行し、ストリームの最終イベントである turn.completed から usage オブジェクトを抽出する。これにより、SDKに依存せず機械可読なトークン使用量を特定できる。\n\n3要素分離による自前コスト計算: 「未キャッシュ入力・キャッシュ済み入力・出力」の3項...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "多重起動を防ぐファイルロックを試したら、短い待ち時間の設定が黙って2秒に底上げされていた",
+      "url": "https://zenn.dev/numarn/articles/proper-lockfile-mutex-handson",
+      "site": "Zenn(生成 AI)",
+      "published": "2026-08-27T14:35:06Z",
+      "description": "バッチ処理を定期実行する仕組みを組んでいると、「同じ処理が二重に起動してしまうと困る」という場面が出てきます。たとえば前回の処理がまだ終わっていないのに次の起動がかかると、同じデータを2つのプロセスが同時にいじってしまうかもしれません。これを防ぐ定番の手が「ファイルロック」(特定のファイルやディレクトリの存在を「今使用中」の目印にして、他のプロセスに待ってもらう仕組み)です。今回、Node.js(...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "全員の業務が違うのに、AI活用事例をそのまま横展開できるのか",
+      "url": "https://zenn.dev/nullcontroller/articles/3a18f3f15b840a",
+      "site": "Zenn(生成 AI)",
+      "published": "2026-08-27T13:58:31Z",
+      "description": "企業内で生成AIの活用事例を共有する活動が行われています。\n例えば、\n\nGitHub Copilotで既存コードを調査した\nAIでテスト項目を作成した\nAIで問い合わせ対応を効率化した\n生成AIで仕様駆動開発をした\n\nといった事例です。\nこうした事例共有には価値があります。\n「こんなことにもAIを使えるのか」と気付くきっかけになりますし、AIを試す心理的なハードルも下がります。\nただ、私は一つ疑問...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "生成AIをAPI呼び出しで終わらせない — Secret・Quota・Kill Switchを分けるAI Runtime設計",
+      "url": "https://zenn.dev/mizzz/articles/ai-runtime-safety-boundary",
+      "site": "Zenn(生成 AI)",
+      "published": "2026-08-27T12:33:52Z",
+      "description": "個人開発のDiscord Botに生成AIを入れ始めたとき、最初は単純でした。\n\nAPI Keyを読む\nProvider APIを呼ぶ\n返ってきた文章をDiscordへ返す\n\n小さく試すだけなら、これで十分です。\nただ、実際に運用する前提になると、API呼び出しそのものより周囲の設計が気になってきました。\n\nAPI Keyとmodel設定を同じ場所に保存してよいのか\nSecret Storeが壊れ...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
     {
       "title": "「〇〇エンジニアリング」が増え続ける理由を整理してみた（プロンプト→コンテキスト→ハーネス→ループ）",
       "url": "https://zenn.dev/gumigumih/articles/20260826_ai-engineering-terms-too-many",
@@ -69,6 +129,16 @@
       "site": "Zenn(生成 AI)",
       "published": "2026-08-27T04:04:12Z",
       "description": "写真からフォトリアルなレンダーを作る処理と、スケッチから作る処理は、見た目には似ているが、AIにとっての難易度はまったく違う。写真にはすでに材質、光の当たり方、奥行き、影のつき方といった情報がほぼすべて写り込んでいる。モデルがやるべきことは基本的にスタイルの変換で、シーンの構造自体はほとんど確定している。\n一方、手描きのスケッチが持っている情報は驚くほど少ない。壁の位置を示す何本かの線、家具の輪郭...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "AI時代だからこそ小学生になろう",
+      "url": "https://zenn.dev/tokium_dev/articles/be-like-a-curious-kid-in-the-ai-era",
+      "site": "Zenn(生成 AI)",
+      "published": "2026-08-27T03:00:11Z",
+      "description": "どうも、TOKIUMで新卒エンジニアとして働いているマーガリンです。\nこの記事では、新卒エンジニアとして働く中で、日々感じていることを書いてみます。\nおそらく経験のあるエンジニアの方ならできていることだと思います。\nあくまで一人の新卒エンジニアとしての個人的な所感なので、「そういう考え方もあるんだな」くらいの気持ちで読んでもらえれば幸いです。\n\n 「昨日実装した内容、どう動いてるか説明できますか？...",
       "category": "AI・技術",
       "rss_category": "",
       "image_url": ""

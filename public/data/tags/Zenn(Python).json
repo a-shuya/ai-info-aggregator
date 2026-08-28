@@ -1,8 +1,78 @@
 {
   "site": "Zenn(Python)",
-  "last_updated": "2026-08-27T21:01:04.153850",
-  "total_articles": 6037,
+  "last_updated": "2026-08-28T05:19:11.869731",
+  "total_articles": 6045,
   "articles": [
+    {
+      "title": "CSVの差分をdiffで取ると、なぜ全行が「変更」になるのか",
+      "url": "https://zenn.dev/akanemorioka/articles/d758f87724d041",
+      "site": "Zenn(Python)",
+      "published": "2026-08-27T22:41:08Z",
+      "description": "「先月と今月の顧客リストを突き合わせて、何が増えて何が変わったか知りたい」——\nよくある依頼です。手元にあるのは diff や git diff。試した人は一度は驚きます。\n列の順序を入れ替えただけなのに、全行が差分になる。\n1行追加しただけなのに、それ以降の行が全部「変更」として出てくる。\n原因は単純で、diff は行の位置で比較しているからです。\nCSVの1行が「どのレコードか」は、行番号では...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "最新の全国医療機関データを30分未満で「動くヒートマップ」へ ― Pythonで収集から可視化まで自動化した",
+      "url": "https://zenn.dev/hajimeteradio3/articles/7abe78734a3560",
+      "site": "Zenn(Python)",
+      "published": "2026-08-27T21:59:15Z",
+      "description": "全国の医療機関・薬局の分布を、最新に近いデータで自由に探索したい。\nしかも、単に施設の位置を見るだけではなく、\n\n医療機関数\n医師・歯科医師数\n常勤・非常勤人数\n病床数\n医科・歯科・薬局\n施設タイプ\n指定からの経過年数\n\nなどを切り替えながら、地図をズーム・移動して分析したい。\nそのために生成AIと一緒に作ったのが、全国の保険医療機関データの収集から、インタラクティブな可変ヒートマップ生成までを一...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "openpyxl を入れられない環境で .xlsx を読む",
+      "url": "https://zenn.dev/akanemorioka/articles/36a09781387523",
+      "site": "Zenn(Python)",
+      "published": "2026-08-27T21:54:02Z",
+      "description": "「Excel のファイルを Python で読みたい。でも会社の PC に pip install ができない」\n情報システム部門がパッケージの追加を止めている職場は珍しくありません。\n検証環境だけ隔離されている、共有サーバーに書き込み権限がない、\nそもそもインターネットに出られない、といった事情もあります。\nこの記事では、標準ライブラリだけで .xlsx を読む方法と、そこで踏む落とし穴を書きま...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "Azure AI FoundryのSDKを上げたら通っていたリクエストが400に — 原因はCHANGELOGに無い変更だった",
+      "url": "https://zenn.dev/kazu_aiengineer/articles/agentserver-responses-220b1-validation",
+      "site": "Zenn(Python)",
+      "published": "2026-08-27T20:26:11Z",
+      "description": "先に結論\nAzure AI Foundry の Hosted Agents に Responses API 互換のエージェントを載せる Python パッケージ azure-ai-agentserver-responses が、2026-08-27 に 2.2.0b1 になった。\nCHANGELOG は全部でこれだけだ。破壊的変更として立っているのは1行しかない。\n\nBreaking Change...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "AIエージェントに「完成」と言わせずTAB譜生成ツールを検証させた話",
+      "url": "https://zenn.dev/c0c260479f/articles/58e6fdc6e259e0",
+      "site": "Zenn(Python)",
+      "published": "2026-08-27T16:52:51Z",
+      "description": "CS学部1年生です。音源(mp3/wav)からベース/ギターのTAB譜を自動生成するツール\nauto-tabを、Claude Code(AIコーディングエージェント)と作った記録です。\n最初に誠実に書いておくと、コードの実装自体はほとんどClaude Codeが書いています。\n私がやったのは、設計・実装のディレクションと、「動いたから完成」をAIに\n簡単に言わせないためのレビュー・検証プロセスを課...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "動いているPython環境を壊さず依存関係を固定する",
+      "url": "https://zenn.dev/ayaka_shiromae/articles/2026-06-15-python-dependency-pinning",
+      "site": "Zenn(Python)",
+      "published": "2026-08-27T15:00:05Z",
+      "description": "!\nこの記事は しろまえの技術ブログ からの転載です。元記事もあわせてご覧ください。\n\n最新版を並べるより、いま動いている環境を正確に保存するほうが先だ。\n古いPython環境へ依存関係を後付けするなら、全パッケージを丸ごと固定してはいけない。\n\n まず必要なものだけを見る\nしろまえ殿がレガシーなPython環境を調べたとき、requirements.txtが無かった。\nしかも同じ環境には別の処理...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "データセットと評価の管理を、DBもサーバも立てずにS3だけでやる",
+      "url": "https://zenn.dev/hosaka2/articles/9542fa4ef76853",
+      "site": "Zenn(Python)",
+      "published": "2026-08-27T13:10:30Z",
+      "description": "評価用のデータセットと、その評価結果を管理したい。ただそれだけなのに、置き場所が無くて困っていました。\n作ったのがこれです。\ncairn — オブジェクトストレージだけで動く、データセットと評価の台帳。\ncairn はケルン（石を積み上げた道標）から取りました。追記で積み上がり、不変の記録として残り、後から来た人の道標になる。\nhttps://github.com/hosaka2/cairn\npi...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
     {
       "title": "87件のpytestをGREENにして、最後に疑ったのは「pytestそのもの」だった",
       "url": "https://zenn.dev/tosane932/articles/20ee809ed993c2",
@@ -59,6 +129,16 @@
       "site": "Zenn(Python)",
       "published": "2026-08-27T05:22:42Z",
       "description": "はじめに\nアフィリエイトサイトや技術ブログを運営していると、記事ごとにヒーロー画像を用意する手間が意外と大きいです。54記事あれば54枚の画像が必要で、フリー素材ではブランド感が出ない、Midjourney は月額が高い、という悩みがあります。\nImagen 4.0（Google の画像生成AI）を使って、Python スクリプトで 48 枚のヒーロー画像を一括生成した実践をまとめます。 1枚 $...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "成長率でも財務健全性でもなかった — テンバガー株の条件を実データで検証する",
+      "url": "https://zenn.dev/codecraft/books/tenbagger-screening",
+      "site": "Zenn(Python)",
+      "published": "2026-08-27T04:25:13Z",
+      "description": "日本株3,663銘柄・有価証券報告書37,765件で、10倍株のスクリーニング条件を1つずつ検証した記録。よく紹介される条件は単独では全て逆効果で、効いていたのは別の指標だった。上場廃止614社を数え直し、その分を割り引いても結論が残るかまで確認した。",
       "category": "開発",
       "rss_category": "",
       "image_url": ""

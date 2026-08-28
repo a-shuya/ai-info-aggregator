@@ -1,28 +1,8 @@
 {
   "site": "Zenn(LLM)",
-  "last_updated": "2026-08-27T21:01:04.153850",
+  "last_updated": "2026-08-28T05:19:11.869731",
   "total_articles": 5687,
   "articles": [
-    {
-      "title": "MacBook Pro 128GB でローカル LLM がついに実用になった ─ Qwen3.8 Flash Next 実測",
-      "url": "https://zenn.dev/jtechjapan_pub/articles/local-llm-qwen-flash-next-eval",
-      "site": "Zenn(LLM)",
-      "published": "2026-08-27T20:06:17Z",
-      "description": "株式会社ジェイテックジャパン CTOの高丘 @tomohisaです。\n昨年 MacBook Pro を買うときに、ローカルの AI が開発に使えたらいいなと思って、奮発して 128GB のモデルにしました。それから時々、開発にしっかり使えるレベルになっているかを確かめるためにいろいろなモデルを試してきたのですが、サブスクでやっている作業を置き換えられるものには当たりませんでした。35B や 27B...",
-      "category": "AI・技術",
-      "rss_category": "",
-      "image_url": ""
-    },
-    {
-      "title": "文脈の複利 ── ツール結果1回のコストは、その1回では終わらない",
-      "url": "https://zenn.dev/tsutomusaito/books/claude-code-context-cost",
-      "site": "Zenn(LLM)",
-      "published": "2026-08-27T16:22:47Z",
-      "description": "Claude Code のセッションログ 2,921 セッション / 47,243 ターンを実測し、ツール結果が文脈にいくら足しているかを測った記録。最初にバイト数で測って出した順位は誤りで、実トークンで測ると犯人が入れ替わる。測り方の落とし穴、1回の呼び出しが残りのターン全部に乗り続ける「複利」の実測値、そして委譲が効く帯と効かない帯まで。測定スクリプトを全文掲載しているので、同じ数字を自分の環...",
-      "category": "AI・技術",
-      "rss_category": "",
-      "image_url": ""
-    },
     {
       "title": "なぜ、LLM AIの最も有効な使い方は「A/Bテスト型学習」なのか？",
       "url": "https://zenn.dev/pdfractal/articles/2ca6dd9784cf5b",
@@ -34,41 +14,11 @@
       "image_url": ""
     },
     {
-      "title": "コーディングエージェントCLIのトークンコスト計上：自動化パイプラインへの組み込み手法",
-      "url": "https://zenn.dev/sh39works/articles/786534f4176566",
-      "site": "Zenn(LLM)",
-      "published": "2026-08-27T15:29:15Z",
-      "description": "結論\n本記事の要点を以下の3点にまとめる。\n\n\nCLI出力のJSONL解析による使用量取得: codex exec --json を実行し、ストリームの最終イベントである turn.completed から usage オブジェクトを抽出する。これにより、SDKに依存せず機械可読なトークン使用量を特定できる。\n\n3要素分離による自前コスト計算: 「未キャッシュ入力・キャッシュ済み入力・出力」の3項...",
-      "category": "AI・技術",
-      "rss_category": "",
-      "image_url": ""
-    },
-    {
       "title": "Speculative Decodingを実運用で選ぶ — MTP・DFlash・DSparkの違いと使い分け",
       "url": "https://zenn.dev/shiva_144/articles/6be1f6602fdd7c",
       "site": "Zenn(LLM)",
       "published": "2026-08-27T13:44:32Z",
       "description": "はじめに\n社内でPowerPoint自動生成パイプラインをDify上で構築しており、生成モデルには NVIDIA Nemotron 3.5 Lightning（30B、アクティブパラメータ3BのMoEモデル）のBF16版を、DGX Sparkでホストして使っています。\nある日、生成速度が 25 tok/秒 で頭打ちになっていることに気づきました。原因を調べていく過程で「Speculative De...",
-      "category": "AI・技術",
-      "rss_category": "",
-      "image_url": ""
-    },
-    {
-      "title": "大道至簡：CodexやClaude Codeを超える極小AIエージェント「Pi」徹底解剖",
-      "url": "https://zenn.dev/lumichy/articles/pi-coding-agent-guide-2026",
-      "site": "Zenn(LLM)",
-      "published": "2026-08-27T13:07:10Z",
-      "description": "Claude Code や Codex、Cursor など、AI コーディングエージェントの進化は目覚ましいものがあります。\nしかし、これらのツールを使っていると、こんな違和感を抱いたことはないでしょうか。\n\n「裏で勝手に大量のコンテキストやシステムプロンプトが注入されて、トークンがあっという間に溶ける」\n「複雑な承認プロンプトやサブエージェントが空回りして、肝心のコード修正が進まない」\n「機能が...",
-      "category": "AI・技術",
-      "rss_category": "",
-      "image_url": ""
-    },
-    {
-      "title": "Claude Code、外部サイトを操作する内蔵ブラウザの安全設計を読む",
-      "url": "https://zenn.dev/okssusucha/articles/20260714-claude-code-desktop-external-browser-safe",
-      "site": "Zenn(LLM)",
-      "published": "2026-08-27T12:08:51Z",
-      "description": "コーディングエージェントにブラウザを持たせる、という発想自体は新しくない。新しいのは「どこまで信用するか」の線引きだ。7月6〜10日のWeek 28リリース（v2.1.202〜v2.1.206）で、Claude Code のデスクトップアプリに外部サイトを開けるタブ型ブラウザが載った。ドキュメントもIssueトラッカーも、Claudeが自分で開いて読み、クリックし、フォームに入力する。ここで真っ先...",
       "category": "AI・技術",
       "rss_category": "",
       "image_url": ""
@@ -94,6 +44,26 @@
       "image_url": ""
     },
     {
+      "title": "CLAUDE.md の目次に 3 行足したら、Claude の迷子が到達率 25%→100% になった",
+      "url": "https://zenn.dev/ruri/articles/doc-wayfinder",
+      "site": "Zenn(LLM)",
+      "published": "2026-08-27T09:40:26Z",
+      "description": "CLAUDE.md には要点とリンクだけ置いて、詳細は子ファイルに逃がす。いわゆる段階的開示 (progressive disclosure) で、Claude Code を運用している人なら多かれ少なかれやっている構成だと思います。\n私もやっていました。そして、その構造がちゃんと機能しているのか、一度も確かめたことがありませんでした。\n書いた本人は答えのありかを知っているので、自分では検証できな...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "Opus 5のultracodeとFable 5、同じ監査タスクで検出率とトークンを実測した",
+      "url": "https://zenn.dev/ino_h/articles/2026-08-27-claude-code-ultracode-vs-fable",
+      "site": "Zenn(LLM)",
+      "published": "2026-08-27T08:51:32Z",
+      "description": "はじめに\n2026年後半のClaude Codeには、難しいタスクに対する攻め方が2つあります。\nひとつはモデルの格を上げること。Claude Fable 5という、Opusの上位に位置づけられたモデルを使います。もうひとつはエージェントの数を増やすこと。ultracode を有効にして、Claude Codeに数十体のサブエージェントを編成させます。\n前者はトークン単価が2倍、後者は単価は据え置...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
       "title": "AWS Strands Agentsは何が嬉しいのか——「ハーネス」再ポジショニングとAgentCore Harnessの二層構造",
       "url": "https://zenn.dev/ino_h/articles/2026-08-27-strands-agents-harness-value",
       "site": "Zenn(LLM)",
@@ -109,6 +79,16 @@
       "site": "Zenn(LLM)",
       "published": "2026-08-27T08:39:12Z",
       "description": "どーもりょうさんです。\n自分はQAエンジニアで、普段のテスト設計に生成AI (Claude) を使っています。\n!\nちなみに、この記事の文章自体もClaudeに書いてもらいました。中身自体は見て確認してたり、多少の文の付け足しはしています。\nこの内容の集積自体はAIに調べた上で概要程度の目は通しています。しかしながら、専門家ではないため引用や解釈などが間違っている可能性はあります。\nあわせて、AI...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "AI向けの広告を9モデルで測ったら、採用したAIは一度も「広告だ」と言わなかった",
+      "url": "https://zenn.dev/miki_mini/articles/df00ab701f31f2",
+      "site": "Zenn(LLM)",
+      "published": "2026-08-27T08:00:06Z",
+      "description": "※差し出された広告を無視して本文を読み続ける。今回の実測で、9モデルはこれができる側とできない側に分かれました\n美容系勤務独学初心者マリー・アントワネット系エンジニア目指してます！\n今回は AI向け広告が攻撃になってしまう なら 攻撃にならない形を測ればいいじゃない 👸🍰です。\n\n読了時間の目安：約 10〜12分\n\n!\n4行まとめ\n\n前回「AI向け広告＝プロンプトインジェクション」だったので、攻撃...",
       "category": "AI・技術",
       "rss_category": "",
       "image_url": ""
@@ -139,6 +119,26 @@
       "site": "Zenn(LLM)",
       "published": "2026-08-27T05:22:13Z",
       "description": "!\nこの記事に出てくる「tako」は自作のGUIターミナルです。tako自体が何なのかはtako開発日記 #1にまとめてあります。\n\nローカルのqwenに、架空プロフィールのポートフォリオサイトを1ページ作らせた。48分19秒でindex.html297行・css/style.css804行・js/main.js322行が出てきて、テーマ切替もスクロール連動のアニメーションも動いている。\nただ、今...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "Claude Code の Skill の description を最適化したら、動いたのは「発火率」じゃなかった",
+      "url": "https://zenn.dev/box2box/articles/skill-description-trigger-limits",
+      "site": "Zenn(LLM)",
+      "published": "2026-08-27T04:52:53Z",
+      "description": "結論 / TL;DR\nClaude Code の Skill は、description を見て Claude が「使うかどうか」を判断する建て付けになっています。だから description を頑張って書く。トリガーになりそうな言い回しを並べて、「明示的に頼まれなくても使うこと」と書き添える。自分もそうしてきました。\nその description を、skill-creator に同梱されてい...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "賢い方に道を作らせる:ローカルLLMを含んだシステムの詰まない設計",
+      "url": "https://zenn.dev/mtogami/articles/d6dcc56d19c4b7",
+      "site": "Zenn(LLM)",
+      "published": "2026-08-27T03:38:30Z",
+      "description": "こちら(https://note.com/fine_elk7830/n/n4a7781eee235) で、エージェントの性能を決めるのは「LLMそのものの賢さ」よりも「LLMが仮説検証のループを効率的に回せる場の設計だ」という話を書きましたが、今回は、そのような場の設計を含むローカルLLMを用いたシステムの設計を如何に行うかということを書きたいと思います。前の記事では仮説検証のループと書きましたが...",
       "category": "AI・技術",
       "rss_category": "",
       "image_url": ""
