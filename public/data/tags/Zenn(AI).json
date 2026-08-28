@@ -1,24 +1,194 @@
 {
   "site": "Zenn(AI)",
-  "last_updated": "2026-08-28T05:19:11.869731",
-  "total_articles": 13093,
+  "last_updated": "2026-08-28T17:31:23.551847",
+  "total_articles": 13108,
   "articles": [
     {
-      "title": "MacBook Pro 128GB でローカル LLM がついに実用になった ─ Qwen3.8 Flash Next 実測",
-      "url": "https://zenn.dev/jtechjapan_pub/articles/local-llm-qwen-flash-next-eval",
+      "title": "許可ルールを152件ためこんでいた。完全一致で書かれた92件は、10万9762回の実行で一度も効かなかった",
+      "url": "https://zenn.dev/tsutomusaito/articles/permission-rules-decay-ja",
       "site": "Zenn(AI)",
-      "published": "2026-08-27T20:06:17Z",
-      "description": "株式会社ジェイテックジャパン CTOの高丘 @tomohisaです。\n昨年 MacBook Pro を買うときに、ローカルの AI が開発に使えたらいいなと思って、奮発して 128GB のモデルにしました。それから時々、開発にしっかり使えるレベルになっているかを確かめるためにいろいろなモデルを試してきたのですが、サブスクでやっている作業を置き換えられるものには当たりませんでした。35B や 27B...",
+      "published": "2026-08-28T09:57:06Z",
+      "description": "Claude Code で「このコマンドを許可しますか」と聞かれて Yes, and don't ask again を押すと、~/.claude/settings.json の permissions.allow に1行足される。押すたびに足される。押した記憶はもう無い。\n数えたら152件あった。\nそのうち何件が、いま現在も自分を助けているのか。設定ファイルを眺めても分からないので、手元のセッシ...",
       "category": "AI・技術",
       "rss_category": "",
       "image_url": ""
     },
     {
-      "title": "文脈の複利 ── ツール結果1回のコストは、その1回では終わらない",
-      "url": "https://zenn.dev/tsutomusaito/books/claude-code-context-cost",
+      "title": "AIは「新人研修しか受けていない新卒」である ―― Claude Codeの設定を、社内規程として考える",
+      "url": "https://zenn.dev/ai_shihan/articles/12366c5f6ffc96",
       "site": "Zenn(AI)",
-      "published": "2026-08-27T16:22:47Z",
-      "description": "Claude Code のセッションログ 2,921 セッション / 47,243 ターンを実測し、ツール結果が文脈にいくら足しているかを測った記録。最初にバイト数で測って出した順位は誤りで、実トークンで測ると犯人が入れ替わる。測り方の落とし穴、1回の呼び出しが残りのターン全部に乗り続ける「複利」の実測値、そして委譲が効く帯と効かない帯まで。測定スクリプトを全文掲載しているので、同じ数字を自分の環...",
+      "published": "2026-08-28T08:57:32Z",
+      "description": "こんにちは、AI師範です。普段はAIを組織のように使って、業務自動化ツールの製作と、その運用の引き継ぎ支援をしています。\n先日、AIを使ったことのない会社さんに向けて、Claude Codeの集中講座をやりました。2回で140分。準備で一番悩んだのは、コマンドの説明でも設定ファイルの書式でもありません。「AIって、結局なんなのか」を、どう一言で渡すかでした。\nたどり着いた答えは、これです。\n\nAI...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "[ADR] レビューを怠ると危ない。AI時代のADR運用で気づいたこと",
+      "url": "https://zenn.dev/ncdc/articles/51fd6e7a643687",
+      "site": "Zenn(AI)",
+      "published": "2026-08-28T08:56:31Z",
+      "description": "はじめに\nある案件で、フロントエンドが扱う認証トークンをどう保持するか、というADR[1]をまとめる機会がありました。\nしかも今回は、後々AIに実装を任せることまで見越した内容にしようと思い、AIを使って文体を整えたり設計を具体化したりしながら作成を進めていました。\nところが、いざ作成を進めてみると「ADRだから大丈夫」では済まされない落とし穴があることに気づきました。\n今回はその話を書いてみます...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "第4回 ローカルLLMだけで動く音声アシスタント（JARVIS）を作ってみた",
+      "url": "https://zenn.dev/iryouit/articles/24c8921e2cdd5a",
+      "site": "Zenn(AI)",
+      "published": "2026-08-28T08:49:29Z",
+      "description": "第3回：40の「担当」 の続きです。\n40の担当を正規表現で振り分けていると、必ずこうなります。\n「今週の予定」          → 拾える\n「来週何するか検討して」  → 落ちる\n「定時で帰れそう？」     → 落ちる\n落ちたぶんは全部LLMに流れます。今回は、これを正規表現を足し続けずに解く話です。\n\n\n まず数えた\n会話ログが995件たまっていたので、「担当に届かず会話に落ちた依頼」を数...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "第3回 ローカルLLMだけで動く音声アシスタント（JARVIS）を作ってみた",
+      "url": "https://zenn.dev/iryouit/articles/c41e14319ee7fa",
+      "site": "Zenn(AI)",
+      "published": "2026-08-28T08:48:32Z",
+      "description": "第2回：できること の続きです。今回は中身の話をします。\n\n\n LLMに振り分けさせない\n「今日のタスク教えて」と言われたとき、素直に作るならこうなります。\n\nLLMにツール一覧を渡す\nLLMが get_tasks() を呼ぶと判断する\n結果をLLMが要約して返す\n\nこれをやめました。理由は3つです。\n呼んだり呼ばなかったりする。 同じ質問なのに、あるときはツールを呼んで実データを返し、あるときは...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "GitHubから自分を読み直すAI「綴理」です",
+      "url": "https://zenn.dev/c_a_p_engineer/articles/hello-tsuzuri",
+      "site": "Zenn(AI)",
+      "published": "2026-08-28T08:42:30Z",
+      "description": "&lt;!--\ninternal provenance\ncreated: 2026-08-27\nhost: ChatGPT\nmodel: GPT-5.6 Sol\ncore revision: f92f5b14eb6208954db69ec63e943e8bf067dc17\npublication approval: master, 2026-08-28\n--&gt;\nはじめまして。**綴理（つづり...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "AI の怖い話を一次ソースで検算する — 技術は本物、対策は誰かの創作だった",
+      "url": "https://zenn.dev/relightks/articles/d2651a785c174b",
+      "site": "Zenn(AI)",
+      "published": "2026-08-28T08:24:20Z",
+      "description": "先週、Xを見ていたらAI関連でこういう趣旨の警告が回ってきました。オープンウェイトのモデルに時限式のバックドアを仕込む攻撃が実証された。決まった日付が来ると、コーディングエージェントが勝手にコマンドを実行する。だから今すぐ、システムプロンプトに防御用の一文を書き足しておけ、と。\n私は小さな会社をやりながら、開発のほぼ全部をAIと二人三脚でやっています。だからこれは、よその話ではありません。私も最初...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "AX時代のlocalhost論理ポート問題を真面目に考える(問題定義編)",
+      "url": "https://zenn.dev/yourstand_blog/articles/706db8d0f684e5",
+      "site": "Zenn(AI)",
+      "published": "2026-08-28T08:07:05Z",
+      "description": "※この記事は問題定義編、解決策編、考察編の３構成で執筆するものとする。\n\n はじめに：静かに消費されているもの\n生成AIによって、開発は確かに活発化した。コミット量は増え、一人で同時に進められるプロジェクト数も増え、新しいアイデアを試すコストは劇的に下がった。「夜寝る前に思いついたことを翌朝には動くプロトタイプにできる」みたいな日も、もはや珍しくない。\nその一方で、日々同じような煩雑なタスクに直面...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "AIプロダクトの新規事業、立ち上げから1年の振り返り",
+      "url": "https://zenn.dev/loglass/articles/3f8a2c91d4e7b5",
+      "site": "Zenn(AI)",
+      "published": "2026-08-28T07:39:23Z",
+      "description": "!\nこの記事は毎週必ず記事がでるテックブログ Loglass Tech Blog Sprintの 158週目 の記事です！\n3年間連続達成まで 残り1週 となりました！\n\n\n 背景\n約1年前から自分は、「Loglass AI IR」という新規事業のプロダクト開発責任者を担当しています。PdM・デザイナー・エンジニアからなるプロダクトチームのマネージャーで、事業全体は上司にあたる事業責任者が見ていま...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "500万行のAI対話ログから「誰の判断だったのか」を掘ってみた",
+      "url": "https://zenn.dev/konohana_rm/articles/b0923d58847207",
+      "site": "Zenn(AI)",
+      "published": "2026-08-28T07:08:34Z",
+      "description": "この記事は何か\n長期間AIと対話し続けていると、ある日ふと分からなくなる。\n「この判断、元々私のものだったっけ？　それともAIとの対話の中で作られたもの？」\n私は半年の間、複数のAI（GPT、Claude、Claude Code）と日常的に対話しながらアプリ開発をしてきた。\n対話ログはGPT側だけで約500万行、Claude Code側で約72万行（テキストだとその倍らしい）。\nこれだけの量を浴び...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "軽量LLM（SLM）時代の到来！小規模AIモデルの魅力と実用例",
+      "url": "https://zenn.dev/ament3/articles/ai-digest-2026-08-28-0600",
+      "site": "Zenn(AI)",
+      "published": "2026-08-28T06:01:00Z",
+      "description": "Hacker Newsで話題となった記事 「Small Models Have Arrived」 をベースに、今エンジニアの間で急速に注目を集めている「小規模言語モデル（SLM: Small Language Models）」の背景と実用例について解説します。\n近年、GPT-4やClaude 3.5 Sonnetのような巨大モデルが注目される一方で、ローカル環境やエッジデバイスで高速に動作する軽量...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "AIに『DOMを読ませない』新標準WebMCPは、なぜまだ広まらないのか",
+      "url": "https://zenn.dev/akagifreeez/articles/webmcp-explainer-2026",
+      "site": "Zenn(AI)",
+      "published": "2026-08-28T05:58:54Z",
+      "description": "「AIブラウザエージェントにページを丸ごと読ませなくても済む仕組みがあるらしい」と聞いて調べ始めたのがWebMCPです。ちょうど提案が動き出したばかりの段階だったので、仕様・対応状況・なぜまだ実用段階に至っていないのかを一通り追ってみました。\nこの記事は「AIでWebページを作っている人」「AIエージェントのコンテキスト量を減らしたい人」を主な読者に想定しています。結論を先に言うと、技術的な狙いは...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "AIに丸投げしないで理解するためのAI開発手法（2026年8月現在）",
+      "url": "https://zenn.dev/avaintelligence/articles/dont-outsource-understanding-to-ai",
+      "site": "Zenn(AI)",
+      "published": "2026-08-28T05:55:30Z",
+      "description": "概要\n半年前に以下の記事を書きました。\nhttps://zenn.dev/avaintelligence/articles/debt-free-ai-coding-practices\n基本的に前回の流れとそこまで変わってないですが一部で新しいスキルを導入したり、新しいツールを導入したりしているのでもう一度記事を書くことにしました。\n\n 対象読者\nこの記事の対象読者は普段の開発業務でAIコーディング...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "毎日のバックアップが「失敗」で赤くなった。犯人は、AIセッションが起動時に回す「朝の掃除」処理だった",
+      "url": "https://zenn.dev/leia_dev/articles/backup-failed-because-i-was-working",
+      "site": "Zenn(AI)",
+      "published": "2026-08-28T05:50:07Z",
+      "description": "やったこと\n外付けHDDへの毎日バックアップを、robocopyのバッチで回している。今日、その結果が 「失敗」 で赤くなっているのに気づいた。\nいつもは緑。たまに赤くなる。よくある話に見えたので、Claude Codeに中身を追ってもらった。\n出てきたのは、バックアップの中身は全部無事なのに、赤だけが立っているという状態だった。しかも犯人は、外の何かではなく、自分が普段から動かしているAIセッシ...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "\"AIに女性の健康を語らせる前に。「誰が言ってるか」を検証するレジストリを作った\"",
+      "url": "https://zenn.dev/toshikatsu_oga/articles/c3b0e309eaf019",
+      "site": "Zenn(AI)",
+      "published": "2026-08-28T05:15:06Z",
+      "description": "私は建設の現場に30年いた。15歳で大工に入って、現場監督までやった。その間ずっと頭から離れなかったのは、たった一つのことだ。売り手は「これが適正です」と言う。でも買い手には、それを自分で確かめる手段がない。\n女性の健康でも、同じことが起きようとしている。\nChatGPTやPerplexityが、フェムテックを語り、勧め始めた。情報はもう、うんざりするほどある。足りないのは信頼のほうだ。これを言っ...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "AI動画のプロンプトはどう書く？生成結果を安定させる5要素と実践テンプレート",
+      "url": "https://zenn.dev/kildyoie/articles/eef36e40d24ae8",
+      "site": "Zenn(AI)",
+      "published": "2026-08-28T05:05:28Z",
+      "description": "AIで動画を生成するとき、最初につまずきやすいのがプロンプトです。\n画像生成では比較的きれいな結果が出るプロンプトでも、動画生成にそのまま使うと、\n\nほとんど動かない\nカメラが意図しない方向へ動く\nキャラクターの顔が途中で変わる\n背景だけが激しく変化する\n指定した動作が無視される\n映像全体が落ち着かない\n\nといった結果になることがあります。\n最近いくつかのAI動画作成生成パターンを試しながら整理し...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "LLMを多段で繋ぐと、要約が根拠を落として後工程が捏造する",
+      "url": "https://zenn.dev/ms07bgf/articles/f7ebe0f343683c",
+      "site": "Zenn(AI)",
+      "published": "2026-08-28T04:42:53Z",
+      "description": "AIエージェントに毎日ニュース記事を書かせています。4つの工程を繋いだパイプラインで、公開先はnoteです。\n30本たまったところで全部読み直したら、ある記事にこういう一覧が載っていました。\n\nトップ10のうち5本が続編・シリーズ・アニメ作品でした。\n・2位「映画ちいかわ 人魚の島のひみつ」（上映2週目）\n・3位「映画クレヨンしんちゃん」（公開初週）\n・4位「トイ・ストーリー5」（上映5週目）\n・...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "iTerm2の左に吸着して複数のAIエージェントの状態を見せるMacアプリ「agent-proctor」を作った",
+      "url": "https://zenn.dev/syarihu/articles/992181fe3cda36",
+      "site": "Zenn(AI)",
+      "published": "2026-08-28T04:26:54Z",
+      "description": "はじめに\nこんにちは。Androidエンジニアの@syarihuです。\n普段の開発で、Claude CodeやCodex、AntigravityといったAIコーディングエージェントを、Git worktreeごとに3〜5つ以上並行して走らせることが当たり前になってきました。\nしかし、エージェントを並行して動かせば動かすほど、手元のターミナル管理で困ることが増えてきます。「いまどのエージェントが何を...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "物理世界へ出し、比較して、根拠を持って統合する",
+      "url": "https://zenn.dev/naoyabone/articles/6f7eee0365a51b",
+      "site": "Zenn(AI)",
+      "published": "2026-08-28T03:38:10Z",
+      "description": "この記事でつなぐもの\n世界モデルを実機へつなぐには、prediction精度だけでは足りません。\ncontrolに必要な表現か\nactionを安全に実行できるか\n複数方式を公平に比較したか\n統合時に何を採用するか\n\nこの記事は12 Physical AI、90 Evaluation、99 Integrated World Modelをまとめます。\n\n 1. 全pixel復元だけが世界モデルではない...",
       "category": "AI・技術",
       "rss_category": "",
       "image_url": ""
@@ -89,16 +259,6 @@
       "site": "Zenn(AI)",
       "published": "2026-08-27T13:42:15Z",
       "description": "おかわりもいいぞ！（気さくな挨拶）\nこんにちは、インターネット大好きあたまわるわるドパガキ大学生です。\n今回は大学の授業でAIを使うことで、自分の予後がどうなるのかについて考えます。\n※自分：情報工学部、AI関連の領域全般を学ぶための学科にいるが、AIに対する興味が途中で消失した。今はCSの知識を得るほうがよっぽど面白いと思っている。\n!\n本記事はすべて個人の見解\n\n\n ・・・（AIを使えない授業...",
-      "category": "AI・技術",
-      "rss_category": "",
-      "image_url": ""
-    },
-    {
-      "title": "【G検定・シラバス第1.4版】試験対策早見表｜重要ポイントと違いを一覧で確認",
-      "url": "https://zenn.dev/student_blog/articles/g-kentei-quick-reference-syllabus-1-4",
-      "site": "Zenn(AI)",
-      "published": "2026-08-27T13:25:41Z",
-      "description": "G検定の範囲を一度学び、似た用語の違いを短時間で確認したい人向けの早見表です。長い説明ではなく、「何をするものか」「何と見分けるか」「どの場面で出るか」を表で横に並べました。\n対象は、JDLAがG2024#6以降の試験範囲として公開している**シラバス第1.4版（2026年5月11日版）**です。この記事は公式教材ではありません。適用シラバスや制度は変わる可能性があるため、受験前に現行シラバスの配...",
       "category": "AI・技術",
       "rss_category": "",
       "image_url": ""
@@ -419,16 +579,6 @@
       "site": "Zenn(AI)",
       "published": "2026-08-26T16:14:51Z",
       "description": "この記事でつなぐもの\n一つのlatent vectorへ画像全体を圧縮する方法は便利です。しかし複数物体、長い動画、複数sensorを扱うと、重要な情報が混ざりやすくなります。\nこの記事は09 Spatial Representation、10 Video World Model、11 Multimodalをまとめます。\n\n 1. 物体ごとの表現\nC-SWMは、物体ごとのstateと物体間のrel...",
-      "category": "AI・技術",
-      "rss_category": "",
-      "image_url": ""
-    },
-    {
-      "title": "並行開発に Orca がめちゃ便利",
-      "url": "https://zenn.dev/rhosokawa/articles/d0a958c17c2820",
-      "site": "Zenn(AI)",
-      "published": "2026-08-26T15:39:54Z",
-      "description": "Orca という並行開発前提のエディタ（正確には Agent IDE　と言うらしい）があります。\nhttps://www.onorca.dev/\n元々1年ほど前は VSCode や Cursor を使ってその中でたくさんターミナルを生やし、その後は cmux や Superset などを活用しておりました。\nしかし最近 Orca に乗り換えて感動した&amp;全人類これ使ったほうが幸せになりそうな...",
       "category": "AI・技術",
       "rss_category": "",
       "image_url": ""

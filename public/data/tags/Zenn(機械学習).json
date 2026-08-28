@@ -1,8 +1,48 @@
 {
   "site": "Zenn(機械学習)",
-  "last_updated": "2026-08-28T05:19:11.869731",
-  "total_articles": 1712,
+  "last_updated": "2026-08-28T17:31:23.551847",
+  "total_articles": 1715,
   "articles": [
+    {
+      "title": "価格回帰より方向分類の方が有利なのか？ | 第3回：AIで為替の未来予測は本当にできるのか？",
+      "url": "https://zenn.dev/hiro_algo/articles/fx-regression-vs-classification",
+      "site": "Zenn(機械学習)",
+      "published": "2026-08-28T12:13:22Z",
+      "description": "今回は、前回検証した「Seq2Seq LSTMによる価格回帰モデル」とは異なるアプローチとして、為替の方向分類タスクを試します。\n前回は、過去の為替時系列データから未来の価格系列そのものを予測する、いわゆる「回帰タスク」を扱いました。\nしかし、実際のトレードでは必ずしも正確な価格を当てる必要があるとは限りません。\nSeq2Seq LSTMとランダムウォークの比較\nそこで今回は未来価格を直接予測する...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "BQMLの手作業パイプラインをDataformに載せ替えた話",
+      "url": "https://zenn.dev/carenet/articles/bqml-dataform-pipeline",
+      "site": "Zenn(機械学習)",
+      "published": "2026-08-28T10:00:05Z",
+      "description": "こんにちは！新規事業担当エンジニアのRunです。2026年4月にケアネットにジョインして、忙しくも充実した日々を過ごしています。\n今回社内ツールの自動化を担当したので、そこで使用した技術について初めてテックブログを書いてみようと思います。\n具体的にはBigQuery ML（以下BQML）で作成した機械学習のPoCを、自動化できるようにDataformのパイプラインを整備しました。\nこの記事ではDa...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "LLMって何なんだと思って調べたら、高校数学だった",
+      "url": "https://zenn.dev/acntechjp/articles/2f8dcc6abcf646",
+      "site": "Zenn(機械学習)",
+      "published": "2026-08-28T08:01:27Z",
+      "description": "AIがもてはやされて久しく、「LLM」「RAG」といった言葉が当たり前のように飛び交うようになりました。ただ、どれもキラキラネームがついた何かで、やってることも、すごさもよくわからなかったので、掘り下げてみました。\nちゃんとした説明はほかにいくらでもあるので、自分なりの大まかな理解をまとめておきます。\n\n まず、全体像\n生成AI周りでよく出てくる言葉を、アーキテクチャ上に並べるとこうなります。\nC...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "MobileNetV2 を手書き NEON で速くする — NHWC でメモリアクセスを連続化する",
+      "url": "https://zenn.dev/ux_xu/articles/mlir-mobilenet-neon-nhwc",
+      "site": "Zenn(機械学習)",
+      "published": "2026-08-28T07:10:55Z",
+      "description": "はじめに\n前回、MobileNetV2 の畳み込みを手書き NEON のマイクロカーネルに置き換え、backbone 全体を 68 ms まで速くしました。\n\nただしそこで頭打ちになりました。マイクロカーネルが一度に扱う出力チャネルを増やしても数 % しか縮まらず、律速は演算器ではなくメモリ帯域でした。原因は NCHW レイアウトです。pointwise convolution の入力チャネル方向...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
     {
       "title": "医療・福祉のDX化率9.3%——「遅れている」の中身をエンジニア視点で分解する",
       "url": "https://zenn.dev/taichiendoh/articles/healthcare-dx-rate-and-ai-opportunity",
@@ -189,16 +229,6 @@
       "site": "Zenn(機械学習)",
       "published": "2026-08-25T08:13:17Z",
       "description": "個人でAIを研究していると、成功した結果だけを見せたくなります。\n精度が上がった。予測が当たった。新しい方法が効いた。\nそういう結果は説明しやすいし、読んでもらいやすい。逆に、仮説が外れた実験、測定器の不具合、あとから撤回した結論は、できれば忘れたくなります。\nしかし、自宅PCでローカルLLMの実験を重ねるうちに、私は逆だと気づきました。\n失敗を消すほど、研究は同じ場所をぐるぐる回る。\nそして、失...",
-      "category": "AI・技術",
-      "rss_category": "",
-      "image_url": ""
-    },
-    {
-      "title": "Kimi K3を理解する①──まずは標準Transformerの理解から",
-      "url": "https://zenn.dev/gixo/articles/kimi-k3-transformer-decoder-llm-core-arch",
-      "site": "Zenn(機械学習)",
-      "published": "2026-08-25T01:31:04Z",
-      "description": "はじめに\nこんにちは、ギックスでエンジニアをしています中島です。\n旬が過ぎたかもですが、7月に中国新興企業 Moonshot AI が新LLMモデル Kimi K3 を発表しました。このモデルがオープンウェイトモデルでありながら、GPT-5.6 や Claudeといったクローズドモデルと一部ベンチマークで同じ土俵に乗っているということで大変話題となりました。\nKimi K3については仕様も論文とし...",
       "category": "AI・技術",
       "rss_category": "",
       "image_url": ""
