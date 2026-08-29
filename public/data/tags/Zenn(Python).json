@@ -1,7 +1,7 @@
 {
   "site": "Zenn(Python)",
-  "last_updated": "2026-08-29T17:25:11.886520",
-  "total_articles": 6080,
+  "last_updated": "2026-08-29T19:57:14.317641",
+  "total_articles": 6082,
   "articles": [
     {
       "title": "現場をPython側へ移住させない――既存業務とAIをつなぐBridge Engineering",
@@ -94,16 +94,6 @@
       "image_url": ""
     },
     {
-      "title": "APIキーなしで個人ツールにAIを足す — claude CLIは楽だが、無視された引数が静かに嘘をつく",
-      "url": "https://zenn.dev/takagit/articles/claude-cli-llm-provider",
-      "site": "Zenn(Python)",
-      "published": "2026-08-29T09:59:20Z",
-      "description": "自分用の小さなツールに「AI に聞く」を足したくなることがあります。ワインのラベル写真からフィールドを埋める、行ったことのない店を提案してもらう、医学雑誌の新着号を要約する。どれも個人用で、使うのは自分ひとりです。\n素直にやるなら Anthropic API を叩くのですが、そのために増えるものが地味に多い。\n\n\nANTHROPIC_API_KEY の発行と管理（git に入れない仕組みも要る）\n...",
-      "category": "開発",
-      "rss_category": "",
-      "image_url": ""
-    },
-    {
       "title": "同じ zip なのに、ダブルクリックで展開した .app だけ署名が壊れる",
       "url": "https://zenn.dev/poko8725/articles/codesign-nfd-archive-utility",
       "site": "Zenn(Python)",
@@ -134,11 +124,11 @@
       "image_url": ""
     },
     {
-      "title": "Codonで競プロするときのPythonとの違い・注意点",
+      "title": "CodonでAtCoderするときのPythonとの違い・ハマりどころ",
       "url": "https://zenn.dev/yuubinnkyoku/articles/codon-atcoder-notes",
       "site": "Zenn(Python)",
       "published": "2026-08-29T05:49:15Z",
-      "description": "入出力・基礎機能\n\n 入出力、format関数\nCodonは f-string が非常に高速で推奨されます。\n入力は input() で受け取れますが、Codonの標準ライブラリレベルで高速化されているため、sys.stdin.readline を使う必要性はPythonほど高くありません。型注釈をつけるとコンパイル時に有利です。\n# 基本的な入力\nn = int(input())\na, b = ...",
+      "description": "AtCoderでPythonっぽく書きつつ高速に動かせるCodonはかなり便利です。ただし、Pythonのコードをそのまま持ってくれば必ず動くわけではありません。\n2026年6月16日時点のAtCoderの言語一覧では、Python (Codon 0.19.3) が使われています。\nこの記事では、自分が競プロ用にためていたCodonメモから、特に「Pythonとの違い」「Codonでハマりやすいと...",
       "category": "開発",
       "rss_category": "",
       "image_url": ""
@@ -169,6 +159,16 @@
       "site": "Zenn(Python)",
       "published": "2026-08-29T03:40:55Z",
       "description": "この記事について\nこんにちは、自分は、プログラミング未経験者です。自分でコードを書いて何かを作ったことは一度もありませんでした。\nそんな状態から、Claude Codeを使って小さなツールを1つ作り、GitHubに公開するところまでをやってみました。かかった時間は約2時間です。\n作ったのは、あるニュースサイトのRSSから最新記事10件を取得して、タイトル・公開日・URL・概要をターミナルに一覧表示...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "寝ている間にAIに実装させるため、私は「契約書」を書いた",
+      "url": "https://zenn.dev/secleeman/articles/f8d6cb12fd0c21",
+      "site": "Zenn(Python)",
+      "published": "2026-08-29T02:27:45Z",
+      "description": "前回、コードが読めない私がClaude Codeに実装を委任して脆弱性トリアージCLI「triage-lens」を作った話を書きました。今回はその続きです。Phase 2の機能追加を、私が寝ている間にすべて無人でやらせてみました。\n朝起きたら、テストは145件から330件に増え、別のAIによる敵対的レビューと修正まで終わっていて、PRが1本、マージされずに待っていました。ついでに、私の与り知らない...",
       "category": "開発",
       "rss_category": "",
       "image_url": ""
@@ -209,6 +209,16 @@
       "site": "Zenn(Python)",
       "published": "2026-08-29T00:00:25Z",
       "description": "AutoTrader (FastAPI × React Native Expo 製) では、ユーザーが自分の取引所APIキーを登録して自動売買を動かす構成をとっている。制約は「個人開発でインフラコストをかけられない」「セルフホスト前提でユーザーごとに環境が異なる」「APIキー漏洩は資金流出に直結する」の3つ。この記事では、APIキーをどこにどう保管するかという設計判断を中心に書く。\n\n 前提\n\n ...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "AIエージェントの推論にも「賞味期限」がある：FreshCtxをオープンソース化しました",
+      "url": "https://zenn.dev/freshctx_dev/articles/b214bb81fc75d4",
+      "site": "Zenn(Python)",
+      "published": "2026-08-28T23:45:50Z",
+      "description": "AIエージェントには、まだ十分に注目されていない失敗パターンがあります。\nモデルはハルシネーションを起こしていない。推論にも明らかな誤りはない。ツールも仕様どおりに動作した。それでも、最終的なアクションが間違ってしまうことがあります。\n理由はシンプルです。推論してから実行するまでの間に、現実世界が変化したからです。\n10:00  エージェントがシステム状態を観測\n10:01  その証拠をもとに推論...",
       "category": "開発",
       "rss_category": "",
       "image_url": ""
@@ -259,6 +269,16 @@
       "site": "Zenn(Python)",
       "published": "2026-08-28T15:15:13Z",
       "description": "!\nこの記事は自サイト NumPyでゼロから作る量子シミュレータ｜状態ベクトルで量子を\"自作\"する の再掲（クロス投稿）です。図をインタラクティブに動かせる版は元記事でどうぞ。\n\nQiskitのような量子ライブラリは便利ですが、「中で何が起きているか」はブラックボックスになりがちです。いちばんの理解の近道は、自分で作ってみること。この記事ではNumPyだけで、状態ベクトル型の量子シミュレータをゼロ...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "MCPとtool use導入前に潰すべきセキュリティ論点チェックリスト5項目",
+      "url": "https://zenn.dev/bambampurin/articles/2026-08-07-tech-daily",
+      "site": "Zenn(Python)",
+      "published": "2026-08-28T14:28:40Z",
+      "description": "この記事で分かること\n\n2026-08-07時点で、AI/LLMの重心が「モデル選定」から「業務実装・エージェント運用」に移った理由\nMCP・tool use・CI連携を使う開発で、今すぐ点検すべきセキュリティ論点\nReact CompilerのRust移植、uv・Ruff、Astral買収報道から見える開発基盤の変化\n\n\n 2026-08-07の技術トレンドを最短で掴む方法\n結論、今日の技術トレ...",
       "category": "開発",
       "rss_category": "",
       "image_url": ""
