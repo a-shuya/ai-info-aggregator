@@ -1,8 +1,78 @@
 {
   "site": "Zenn(Python)",
-  "last_updated": "2026-08-28T17:31:23.551847",
-  "total_articles": 6050,
+  "last_updated": "2026-08-29T01:09:23.740007",
+  "total_articles": 6057,
   "articles": [
+    {
+      "title": "PythonのABCとProtocolを実行時に検証する：isinstance()が保証する範囲",
+      "url": "https://zenn.dev/skrtk98/articles/python-protocol-runtime-checking",
+      "site": "Zenn(Python)",
+      "published": "2026-08-28T19:43:43Z",
+      "description": "isinstance(value, Contract) が True なら、そのオブジェクトを安全に使えると思いたくなります。\nABC と Protocol では、その True が表す内容は異なります。\nメソッドがあることと、期待した引数や戻り値で呼べることも別です。\n対象は Python 3.12 以降です。\nABC と Protocol を設計時に選ぶ基準は、ABC と Protocol を...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "Python argparse逆引き：小さなCLIを壊れにくくする引数設計",
+      "url": "https://zenn.dev/skrtk98/articles/python-argparse-cli-guide",
+      "site": "Zenn(Python)",
+      "published": "2026-08-28T19:43:43Z",
+      "description": "スクリプトが引数を一つだけ受け取る間は、sys.argv[1] でも困りません。\n出力先、上書きの可否、実行モードを足した瞬間に、引数の個数確認、型変換、ヘルプ、誤入力時のメッセージを自前で持つ必要が出ます。\nその仕事を引数の定義へ寄せる標準ライブラリが argparse です。\n対象は Python 3.10 以降とします。\n\n sys.argv から移る判断\nsys.argv は生の文字列の配...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "NANDゲートから全加算器を作る｜Pythonで論理回路を組み立てる",
+      "url": "https://zenn.dev/maru1228/articles/semiconductor-nand-to-adder-python",
+      "site": "Zenn(Python)",
+      "published": "2026-08-28T15:15:13Z",
+      "description": "!\nこの記事は自サイト NANDゲートから全加算器を作る｜Pythonで論理回路を組み立てる の再掲（クロス投稿）です。図をインタラクティブに動かせる版は元記事でどうぞ。\n\nCPUの中では、トランジスタが作る論理ゲートが計算をしています。驚くのは、たった1種類の「NANDゲート」だけで、あらゆる論理回路——最終的には足し算まで——が作れること。この記事ではPythonでNANDから出発し、全加算器...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "NumPyでゼロから作る量子シミュレータ｜状態ベクトルで量子を\"自作\"する",
+      "url": "https://zenn.dev/maru1228/articles/quantum-build-simulator-numpy",
+      "site": "Zenn(Python)",
+      "published": "2026-08-28T15:15:13Z",
+      "description": "!\nこの記事は自サイト NumPyでゼロから作る量子シミュレータ｜状態ベクトルで量子を\"自作\"する の再掲（クロス投稿）です。図をインタラクティブに動かせる版は元記事でどうぞ。\n\nQiskitのような量子ライブラリは便利ですが、「中で何が起きているか」はブラックボックスになりがちです。いちばんの理解の近道は、自分で作ってみること。この記事ではNumPyだけで、状態ベクトル型の量子シミュレータをゼロ...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "Tkinter製ツールをPyInstallerで配布可能にするまでにハマった5つのこと",
+      "url": "https://zenn.dev/tomoki_shimizu/articles/2444b6cf87dfe2",
+      "site": "Zenn(Python)",
+      "published": "2026-08-28T14:21:23Z",
+      "description": "はじめに\nPython で数値解析用のデスクトップツールを作りました。GUI は Tkinter、グラフ描画は matplotlib、重い計算は multiprocessing で並列化、という構成です。\n自分の開発環境では問題なく動いていたのですが、「自分の PC で動く」から「他人の PC で動く exe になる」までが、想像していたよりずっと遠かったというのが率直な感想です。\nこの記事では、...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "「本当に削除しますか？」が出ないまま全部消える",
+      "url": "https://zenn.dev/genba_python/articles/5a1ab3b3284305",
+      "site": "Zenn(Python)",
+      "published": "2026-08-28T13:53:13Z",
+      "description": "起きたこと\n社内で使っている在庫管理ツールに機能を足していたときの話です。\n一覧の行を削除するボタンに、確認ダイアログを付けてありました。押すと「〇〇を削除します。よろしいですか？」と出て、OKを押したら消える。よくあるやつです。\n差し替え前の最終チェックで気づきました。\n確認ダイアログが、一度も出ていませんでした。\n押した瞬間に消えます。しかもこのアプリで確認ダイアログを付けていた箇所は4つあっ...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "PolymarketマーケットメイキングBot：Pythonで流動性エンジンを構築",
+      "url": "https://zenn.dev/bosonax/articles/57daaf11ce163b",
+      "site": "Zenn(Python)",
+      "published": "2026-08-28T12:46:14Z",
+      "description": "PythonでPolymarketマーケットメイキングBotを構築。板情報、在庫管理、流動性報酬、監視、リスク管理まで実装方法を解説。\n\nPolymarket market making botは、単純に現在価格より安く買い注文を出し、高く売り注文を出すだけ\nのスクリプトではありません。\n実際のマーケットメイキングシステムでは、継続的にクォート、在庫、オーダーブックの変化、約定、逆選択（adver...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
     {
       "title": "ClaudeのService Account Key移行前にWorkspaceを検証するPython",
       "url": "https://zenn.dev/amamiya_chan/articles/ba813f79654ba3",
