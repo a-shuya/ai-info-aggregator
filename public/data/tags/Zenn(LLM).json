@@ -1,8 +1,128 @@
 {
   "site": "Zenn(LLM)",
-  "last_updated": "2026-08-30T18:46:11.728873",
-  "total_articles": 5741,
+  "last_updated": "2026-08-30T21:39:22.161305",
+  "total_articles": 5753,
   "articles": [
+    {
+      "title": "Azure OpenAIで社内用と社外用のガードレールを分ける — ヘッダー1本、ただし罠が4つ",
+      "url": "https://zenn.dev/kazu_aiengineer/articles/azure-openai-content-filter-per-request",
+      "site": "Zenn(LLM)",
+      "published": "2026-08-30T19:26:05Z",
+      "description": "先に結論\nAzure OpenAI のコンテンツフィルター（RAIポリシー）は、デプロイに紐づけるものだと思い込んでいた。\n社内向けは緩く、社外公開向けは厳しく——という使い分けをしたければ、デプロイを2つ作るしかない、と。\nそうではなかった。リクエストヘッダーに x-policy-id を1本足すだけで、その呼び出しだけポリシーを差し替えられる。\ncurl -X POST \"$ENDPOINT/...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "AIが大量のコードを書く時代、人間はどこまで理解すべきか――設計は人間、内部実装はAI",
+      "url": "https://zenn.dev/c_a_p_engineer/articles/ai-understanding-boundary",
+      "site": "Zenn(LLM)",
+      "published": "2026-08-30T18:30:33Z",
+      "description": "AIがコードを書く速度は、人間がコードを読む速度より速くなっています。\nその状況で、私は最近 「AIに丸投げしないで理解するためのAI開発手法」 という記事を読みました。\nこの記事の中心にある「理解を放棄しない」という考えには、かなり同意しています。\nAIが作った設計やコードを何も分からないまま受け入れれば、仕様も変更理由も誰にも説明できない状態になり得ます。AIレビューも常に正しいわけではないの...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "LLM推論で使われるCPUオフロード方式の違い",
+      "url": "https://zenn.dev/syurenuko/articles/4d264340f3e3b4",
+      "site": "Zenn(LLM)",
+      "published": "2026-08-30T16:36:21Z",
+      "description": "VRAMに収まりきらないモデルを、CPU側のRAMも使って動かす話です。\nCPUオフロードの概念の解説から、各種LLM推論エンジンに採用されている代表的なCPUオフロードの手法についてまとめました。\n\n CPUオフロードとは\nCPUオフロードとは、GPU側のVRAM（ビデオメモリ）に収まらないデータをCPU側のRAM（物理メモリ）へ置き、必要な部分だけをGPU側で利用する仕組みのことです。\n近年、...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "なぜ、LLMが知的格差を拡大させる理由は、LLMが「嗜好」の増幅装置だからと言えるのか？",
+      "url": "https://zenn.dev/pdfractal/articles/7dccd05bd0501f",
+      "site": "Zenn(LLM)",
+      "published": "2026-08-30T16:25:51Z",
+      "description": "はじめに\n生成AIが普及すると、誰でも高度な知識へアクセスできるようになるため、知的格差は縮小すると考えることもできます。実際、以前なら専門家へ質問したり大量の文献を読んだりしなければ得られなかった情報を、現在ではLLMへ質問するだけで短時間に得られます。この意味では、LLMには知識へのアクセス格差を縮小する強い作用があります。\nしかし、LLMが長期的に人間へ与える影響を考えると、それとは反対に知...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "【参加報告】YANS2026 に参加してきました！",
+      "url": "https://zenn.dev/kappamodoki/articles/77e89dbf4cf57d",
+      "site": "Zenn(LLM)",
+      "published": "2026-08-30T15:38:01Z",
+      "description": "お久しぶりです。2026年8月18日、仙台国際センターで開かれた第21回言語処理若手シンポジウム（YANS2026）でポスター発表をしてきました。\n今回の研究も麻雀関連で進めています。麻雀AIの打牌判断を、盤面から一意に決まる事実に忠実な日本語で説明させる、という研究です。\n私はYANSどころかこういったイベント自体初参加だったのですが、そんな私でも最後まで楽しむことができました。この記事では、実...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "開発中に Claude Code のキャッシュミスで大量トークン消費を踏んだ — セッション共有と fork の備忘録",
+      "url": "https://zenn.dev/haw2fregel/articles/claude-code-fork-session",
+      "site": "Zenn(LLM)",
+      "published": "2026-08-30T15:28:11Z",
+      "description": "やりたかったこと\nClaude Code を外部アプリから扱う際、\nログイン済みのアカウントで通し、デスクトップアプリとセッションを共有する仕組みを作りたかった。\nこのセッション共有が原因でキャッシュミスを起こしていた。\n\n 初期案: 外から同じセッションを掴む\n作ったのは Blender アドオンの claude-in-blender。デスクトップアプリの会話を共有しつつ、Blender のパネ...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "SWE-agent のアブレーションから見る ACI 設計と AI エージェント性能",
+      "url": "https://zenn.dev/id774/articles/c09d6fdec1aaa7",
+      "site": "Zenn(LLM)",
+      "published": "2026-08-30T15:03:05Z",
+      "description": "AI がコードを生成できることと、実際のリポジトリを修正して問題を解決できることは同じではない。修正案を出した時点では、変更後のテスト結果も、構文エラーも、別の機能への副作用もまだ確定していない。コードを変更して実行した結果を観測し、その結果を次の判断へ戻す処理が必要になる。\nこの違いを考えるとき、モデルの性能だけを比較しても十分ではない。同じモデルを使っていても、どのファイルを見せるか、検索結果...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "LLMの回答に根拠を添える一般的なアプローチを調査した",
+      "url": "https://zenn.dev/shogo_h/articles/rag-citation-approaches",
+      "site": "Zenn(LLM)",
+      "published": "2026-08-30T14:17:59Z",
+      "description": "はじめに\n社内の規程やマニュアルをRAGで検索して答えさせるようなケースですと回答そのものだけでなく回答根拠も併せて知りたいことが多々あります。\n回答に根拠を添えるというのは、回答文の一部分と、根拠になった文書の位置とを対応づけて返すことです。以下ではこの対応づけを、各社のAPIや研究で使われている用語に合わせて引用と呼びます。\n「経費精算規程」まで示すのか、「第4条」まで示すのか、「227文字目...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "自律エージェントを実装すると、決めることになる項目",
+      "url": "https://zenn.dev/hosaka2/articles/4e4b868c68c07a",
+      "site": "Zenn(LLM)",
+      "published": "2026-08-30T14:15:30Z",
+      "description": "カメラで作業を見守り、音声でガイドするモバイルアプリを作りました。この記事は、そのアーキテクチャ設計の記録です。\n人間が話しかけなくても勝手に回り続けるループを作ると、普通のチャットアプリでは出てこない決定を何度も迫られます。決めたことと、その代償をそのまま残します。\nhttps://github.com/hosaka2/guidey\n\n\n 作ったもの\nスマホのカメラで数秒ごとに作業を撮影し、AI...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "Vision LLM に文字を読ませると、自信を持って間違える",
+      "url": "https://zenn.dev/fukunagajiro/articles/vision-llm-uncertainty-marks",
+      "site": "Zenn(LLM)",
+      "published": "2026-08-30T13:15:22Z",
+      "description": "スマホで撮影した日本語の冊子 PDF を Claude に読ませ、Markdown に起こすツール scan2md を作りました。読めなかった文字は {{…}} で囲んで出力し、画像と突き合わせて確定するところは手作業に残しています。同じページを Claude の 3 モデルとローカル LLM の 2 モデルに読ませると、{{…}} の数はモデルごとに 0 件から 8 件まで違いました。数が少ない...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "DifyをDockerで自宅サーバーにセルフホスト ― 小規模製造業のための安定運用手順",
+      "url": "https://zenn.dev/yutaka8484/articles/kobayashi-20260827-dify-docker-selfhost-ops",
+      "site": "Zenn(LLM)",
+      "published": "2026-08-30T11:00:07Z",
+      "description": "セルフホストを検討する前に整理しておきたいこと\nDify は、プログラミングなしで LLM アプリやワークフローを組めるオープンソースのプラットフォームです。公開情報によれば、公式リポジトリに Docker Compose 一式が用意されており、Linux が動くサーバー 1 台あれば起動できるはずです。木工所のような小規模な製造業でこれを自前で持つ動機は、見積書・図面・取引先情報といった社外に出...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "グラフRAG × ベクトルRAG 個人実証：設備保全ナレッジベースで見えた限界",
+      "url": "https://zenn.dev/yuninaka/articles/zenn-graph-rag-limitations",
+      "site": "Zenn(LLM)",
+      "published": "2026-08-30T10:49:26Z",
+      "description": "1. 概要\n\n 1.1 やったこと(3行サマリ)\n\n設備保全ドメイン(操業日誌・トラブル報告書)を模した合成ログ35件から、ベクトルRAG(Chroma)とナレッジグラフ(Neo4j AuraDB Free)を構築した\nLangChainのAgentに vector_search と graph_query(GraphCypherQAChain)の2ツールを持たせ、質問内容に応じて自律的に使い分け...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
     {
       "title": "長思考の壁を突破するPrefix Sliding：中間トークンを捨てて3倍速く",
       "url": "https://zenn.dev/lixian/articles/prefix-sliding-efficient-test-time-scaling",

@@ -1,24 +1,94 @@
 {
   "site": "Zenn(Python)",
-  "last_updated": "2026-08-30T18:46:11.728873",
-  "total_articles": 6097,
+  "last_updated": "2026-08-30T21:39:22.161305",
+  "total_articles": 6104,
   "articles": [
+    {
+      "title": "DockerのpullしたイメージにローカルPythonをCOPYして実行したい",
+      "url": "https://zenn.dev/yoshinn/articles/how_build_image",
+      "site": "Zenn(Python)",
+      "published": "2026-08-30T20:43:14Z",
+      "description": "Dockerからpullしたimageに何か処理に加工をして実行したいことがあります。\nそもそもこんなこと可能？というような質問があるかもしれません。\n出来るんです。\n今日はそんな話について話をしていこうと思います。\n\n 処理イメージ\nまずはDockerからpullしたimageに何か処理に加工をして実行するための手順について説明していきます\n\n 最終ゴール\nhello-world イメージ（Do...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "ローカル専用のはずのAI委譲が、文字列ひとつでクラウドに出ていく状態だった",
+      "url": "https://zenn.dev/mana_mrl/articles/f1e503f153fb66",
+      "site": "Zenn(Python)",
+      "published": "2026-08-30T20:40:41Z",
+      "description": "複数のAI CLIとローカルLLMにタスクを振り分ける仕組みを自分用に作って運用しています。\nその「ローカル専用モード」に穴が2つ空いていたのを見つけたので、設計の話として残します。\n確認できる範囲では、実害を示す証拠はありませんでした。\n保存されているログを走査し、既知の経路では一度も踏んでいないことを確認しています。\nただし、後述する通りログに残らないファイル本文までは断定できません。\nそれで...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "Python 累積和入門",
+      "url": "https://zenn.dev/qtx73/books/b94fa1159b50f9",
+      "site": "Zenn(Python)",
+      "published": "2026-08-30T16:42:27Z",
+      "description": "本書は、AtCoderの灰色〜茶色帯の方に向けて、その壁を越えるための一冊です。\n\n区間の和を毎回足し直す遅さの正体から始め、累積和の構築と S[r] - S[l]、0-indexedと1-indexedの整理、「和がKになる区間」をS上の2点のペアに読み替える発想、区間加算を両端2点の書き込みに変えるいもす法、そして二次元累積和と二次元いもす法までを段階的に扱います。最後は二分探索との組み合わせ...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "デジタル署名をPythonで実装する｜RSAで「改ざん」を見抜くしくみ",
+      "url": "https://zenn.dev/maru1228/articles/security-rsa-signature-python",
+      "site": "Zenn(Python)",
+      "published": "2026-08-30T15:52:29Z",
+      "description": "!\nこの記事は自サイト デジタル署名をPythonで実装する｜RSAで「改ざん」を見抜くしくみ の再掲（クロス投稿）です。図をインタラクティブに動かせる版は元記事でどうぞ。\n\n「このメッセージは本人が書いた」「途中で書き換えられていない」——これを保証するのがデジタル署名です。HTTPSもソフトウェア配布もこの仕組みで守られています。この記事ではPythonのcryptographyライブラリで、...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "PID制御をPythonで実装する｜ロボットを\"ちょうどよく\"目標へ動かす",
+      "url": "https://zenn.dev/maru1228/articles/physical-ai-pid-control-python",
+      "site": "Zenn(Python)",
+      "published": "2026-08-30T15:52:28Z",
+      "description": "!\nこの記事は自サイト PID制御をPythonで実装する｜ロボットを\"ちょうどよく\"目標へ動かす の再掲（クロス投稿）です。図をインタラクティブに動かせる版は元記事でどうぞ。\n\nモーターを目標角度でピタッと止める、ドローンを高度に保つ——ロボットの「ちょうどよく動かす」を支える基本が PID制御 です。この記事ではNumPyだけでPIDをゼロから実装し、目標に収束する様子をシミュレーションで確か...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "os.kill(pid, 0) でプロセスの生存確認をしてはいけない（Windows編）",
+      "url": "https://zenn.dev/calmward/articles/048027b4fe8df3",
+      "site": "Zenn(Python)",
+      "published": "2026-08-30T14:27:05Z",
+      "description": "!\nWindows では os.kill(pid, 0) は対象プロセスを終了させます。\n生存確認のつもりで書くと、確認相手を殺します。\n\n例外も警告も出ません。呼び出しは成功し、対象は死にます。\nこの記事では、なぜそうなるのか、どう書けばいいのかを書きます。\nなぜこのイディオムが広まっているのか\nUnix 系では、kill(2) にシグナル番号 0 を渡すと、シグナルを送らずにエラーチェックだけ...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "初学者がkaggle提出の効率化をとにかく目指す",
+      "url": "https://zenn.dev/morinodata/articles/kaggle_biginner_stepup",
+      "site": "Zenn(Python)",
+      "published": "2026-08-30T13:42:14Z",
+      "description": "記事内容\n機械学習やpythonを学び始めて3ヶ月の初学者が、kaggleで毎月開催されるplaygroundに参加しながら、提出までの一連フローをいかに効率よくできるかを試行錯誤していったまとめです。\n\n 前提知識やレベル\n\n仕事では元々Excelで関数やPowerQueryを使用しての業務効率化をかなりやっている\n少しだけ独学でpythonを学んだのち、オンラインスクールで機械学習とともに体系...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "Cpk判定にExcelのSTDEVをそのまま使うと、良品判定が入れ替わることがある",
+      "url": "https://zenn.dev/handa_lab/articles/05-cpk-pitfalls",
+      "site": "Zenn(Python)",
+      "published": "2026-08-30T12:04:43Z",
+      "description": "工程能力指数Cpkは、Excelの =STDEV() で出した標準偏差を公式に入れれば計算できます。ただし同じ検査データでも、標準偏差の出し方を変えるだけでCpkは大きく変わります。\n以下は自作の工程能力計算ツールで実際にPythonを実行した結果です。30個の同じデータから、群ごとの標準偏差（管理図法）で計算するとCpk=4.06、全データをまとめた標準偏差（Excelの単純なSTDEV相当）で...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
     {
       "title": "SigLIP 2 のベクトル検索は抽象的な日本語と画像をどう結びつけるのか",
       "url": "https://zenn.dev/kmdkmd/articles/siglip2-abstract-japanese-prompt-ranking",
       "site": "Zenn(Python)",
       "published": "2026-08-30T10:56:27Z",
       "description": "PyCon JP 2026 のスプリントで、画像とテキストのベクトル検索を使った「AI 審査員フォト大喜利」を作りました。\n一般的な画像検索では、入力したテキストに近い画像を探します。今回はそれを逆手に取り、お題のテキストに近い画像を参加者が考えて持ち寄れば、モデルが作る埋め込み空間での「近さ」を順位として体感でき、競技性のあるゲームになるのではないかと考えました。\n「小さな奇跡を感じるもの」のよ...",
-      "category": "開発",
-      "rss_category": "",
-      "image_url": ""
-    },
-    {
-      "title": "グラフRAG × ベクトルRAG 個人実証：設備保全ナレッジベースで見えた限界",
-      "url": "https://zenn.dev/yuninaka/articles/zenn-graph-rag-limitations",
-      "site": "Zenn(Python)",
-      "published": "2026-08-30T10:49:26Z",
-      "description": "1. 概要\n\n 1.1 やったこと(3行サマリ)\n\n設備保全ドメイン(操業日誌・トラブル報告書)を模した合成ログ35件から、ベクトルRAG(Chroma)とナレッジグラフ(Neo4j AuraDB Free)を構築した\nLangChainのAgentに vector_search と graph_query(GraphCypherQAChain)の2ツールを持たせ、質問内容に応じて自律的に使い分け...",
       "category": "開発",
       "rss_category": "",
       "image_url": ""
@@ -34,7 +104,7 @@
       "image_url": ""
     },
     {
-      "title": "写経プラネタリウムをカスタマイズしてみた（日時をリアルタイムで動かす編）",
+      "title": "写経プラネタリウムをカスタマイズしてみた①（日時をリアルタイムで動かす編）",
       "url": "https://zenn.dev/punita_mama/articles/78a5ddbb046625",
       "site": "Zenn(Python)",
       "published": "2026-08-30T08:40:21Z",
