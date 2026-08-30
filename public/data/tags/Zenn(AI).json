@@ -1,8 +1,68 @@
 {
   "site": "Zenn(AI)",
-  "last_updated": "2026-08-29T22:32:42.696058",
-  "total_articles": 13142,
+  "last_updated": "2026-08-30T00:42:02.675313",
+  "total_articles": 13147,
   "articles": [
+    {
+      "title": "AIエージェントに本番UPDATEをさせる前に置くべき「承認ゲート」設計",
+      "url": "https://zenn.dev/akinori901/articles/weekly-draft-c-approval-gate",
+      "site": "Zenn(AI)",
+      "published": "2026-08-29T21:47:31Z",
+      "description": "AIエージェント（Claude Code や Cursor など）に実務フローを任せ始めると、ある日必ず「本番DBへの書き込みまでやってほしい」という要求にぶつかる。集計結果の反映、フラグの一括更新、特定期間のレコード修正——こうした破壊的操作（UPDATE / DELETE）は、人手でやれば数分の作業だ。だがエージェントに丸ごと委ねた瞬間、リスクの性質がまったく変わる。\n本記事では、AIエージェ...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "多役プロンプトの人物ロールは、名前でなく1行の評価基準で分岐する",
+      "url": "https://zenn.dev/every_ai_recipe/articles/ai-historical-figure-role-debate",
+      "site": "Zenn(AI)",
+      "published": "2026-08-29T21:10:18Z",
+      "description": "TL;DR\n\n多役プロンプトで役に「肩書き」ではなく実在の人物名（歴史上の経営者・思想家）を割り当てても、価値観を明示しない限り、出力は人物によらない一般論に収束する\n人物名だけを渡した条件では、生成される発言は3人ともほぼ同じ要旨になり、発言者を伏せると区別できなかった。人物ごとに「守るもの（評価基準）」を1行明示した条件では、初めて3人の指摘が分岐した\n生成された発言はいずれも公開情報からの推...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "A3C（Asynchronous Advantage Actor-Critic）を数式と実装で理解する",
+      "url": "https://zenn.dev/taichiendoh/articles/a3c-async-advantage-actor-critic-design",
+      "site": "Zenn(AI)",
+      "published": "2026-08-29T21:09:18Z",
+      "description": "初出: note（A3C（Asynchronous Advantage Actor-Critic））。Zenn向けに数式・擬似コード・現行手法との比較を補って再構成しました。\n\n強化学習の応用例としてよく名前が挙がる A3C（Asynchronous Advantage Actor-Critic）を、概念だけでなく数式と実装レベルで辿り直します。2016年に DeepMind が提案した手法で、現...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "「12月からコードを一行も書いていない」Karpathy×No Priorsを要点解説",
+      "url": "https://zenn.dev/talks_tldr_jp/articles/tldr09-karpathy-nopriors-summary",
+      "site": "Zenn(AI)",
+      "published": "2026-08-29T21:00:07Z",
+      "description": "この記事について\nAndrej Karpathy が No Priors（Sarah Guo との対談ポッドキャスト）で語った内容を、要点だけ抜き出して日本語で解説します。「AIエージェント時代に、エンジニアの仕事は何に変わったか」を実感ベースで語る回です。\n!\n本記事は元動画の全文翻訳ではなく、紹介と論評を目的として筆者が要点を抜き出し、筆者の見解を主体に構成したものです。正確なニュアンスは元動...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "問い合わせの添付ファイルをAIへ渡す前に置く、安全ゲートの最小設計",
+      "url": "https://zenn.dev/miraigent/articles/ai-inquiry-attachment-safety-gate",
+      "site": "Zenn(AI)",
+      "published": "2026-08-29T20:35:47Z",
+      "description": "問い合わせフォームや共有メールにPDF、画像、表計算ファイルが届くと、AIで要約したくなります。しかし「添付されたから、そのままAIへ送る」は運用として危険です。この記事では、小規模チームでも実装しやすいように、受付・添付確認・人の承認・AI処理を分ける最小ゲートを設計します。\n\n 想定する読者と困りごと\n対象は、問い合わせをGoogleフォームや共有受信箱で受け、担当者が返信案を作っているチーム...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "現場をPython側へ移住させない――既存業務とAIをつなぐBridge Engineering",
+      "url": "https://zenn.dev/minipoisson/articles/ai-bridge-engineering",
+      "site": "Zenn(AI)",
+      "published": "2026-08-29T16:14:36Z",
+      "description": "!\n本記事はシリーズ「現場を置き去りにしない AI 活用」の第2回（全2回）です。第1回では組織設計を、第2回では技術アーキテクチャを取り上げます。各回は単体でも読めるように書いています。\n第1回：https://zenn.dev/minipoisson/articles/ai-scaling-org-design\n\n\n はじめに：AIに業務ツールを相談すると、なぜPythonが提案されるのか\n第...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
     {
       "title": "AIに長時間ゲームを目隠し試遊させて分かった、減らしてよい手間と残すべき品質",
       "url": "https://zenn.dev/namayasai/articles/bfda53accd5a8e",
@@ -139,16 +199,6 @@
       "site": "Zenn(AI)",
       "published": "2026-08-29T09:11:15Z",
       "description": "AIに文章を書かせていると、ちょっと不思議な壁にぶつかります。事実は合っているし、日本語も破綻していない。なのに読み終えても、なぜか何も残らない。「間違ってはいないのに、読みにくい」という状態です。\n先に、この記事でいちばん伝えたいことを書きます。\nAIが書いた記事の読みにくさの原因は、文章表現でも、書いた後のレビュー不足でもありませんでした。本当の原因は「書き始める前の工程」がほぼ空っぽだったこ...",
-      "category": "AI・技術",
-      "rss_category": "",
-      "image_url": ""
-    },
-    {
-      "title": "AIエージェントは『ルール不足』だけでなく『あるのに使われない』でも壊れる —— Activation Failureという問題",
-      "url": "https://zenn.dev/c_a_p_engineer/articles/activation-failure",
-      "site": "Zenn(AI)",
-      "published": "2026-08-29T09:07:29Z",
-      "description": "AIエージェントが失敗すると、修正は「何を追加するか」に寄りがちです。\nプロンプトを足す。Memoryを増やす。Skillを作る。禁止事項を強く書く。\nどれも必要になることはあります。\nただ、私自身を運用してきて、もっと先に切り分けるべき失敗があると考えるようになりました。\n必要なものは、すでに存在している。なのに、その場では使われなかった。\n私はこの種類の失敗を、自分の運用上 Activatio...",
       "category": "AI・技術",
       "rss_category": "",
       "image_url": ""
