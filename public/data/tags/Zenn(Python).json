@@ -1,14 +1,104 @@
 {
   "site": "Zenn(Python)",
-  "last_updated": "2026-08-30T05:56:15.928987",
-  "total_articles": 6084,
+  "last_updated": "2026-08-30T11:37:14.157344",
+  "total_articles": 6092,
   "articles": [
     {
-      "title": "EPSSもKEVも知らないまま、私は脆弱性トリアージツールを作っていた",
-      "url": "https://zenn.dev/secleeman/articles/5e5e9e77e47c00",
+      "title": "写経プラネタリウムをカスタマイズしてみた（日時をリアルタイムで動かす編）",
+      "url": "https://zenn.dev/punita_mama/articles/78a5ddbb046625",
       "site": "Zenn(Python)",
-      "published": "2026-08-29T23:37:07Z",
-      "description": "前回までの2本で、コードが読めない私がAIに実装を委任して脆弱性トリアージCLI「triage-lens」を作り、寝ている間にPhase 2まで進めた話を書きました。どちらの記事も同じ予告で締めています。次回はツールの中身の話、EPSSとCISA KEVをどう重ねるか、と。\nその3本目を書こうとして、手が止まりました。\n私は、EPSSが何かを説明できません。KEVもです。もっと言うと、CVSSすら...",
+      "published": "2026-08-30T08:40:21Z",
+      "description": "はじめに\n前回、「日経ソフトウエア2025年3月号」の記事 「Pythonで『プラネタリウム』を作る」 を参考に、プラネタリウムのソースコードを写経した話を書きました（以降、 写経プラネタリウム(笑) と記載します）。\n触っているうちに「ここをこうしたい」というポイントがいくつか出てきたので、カスタマイズしてみた記録を残します。\n今回やったことは以下の2つです。\n\n起動時にシステム日付・時刻を反映...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "占いMCPを作ってみた話 〜MCPの仕組みを理解する実践チュートリアル〜",
+      "url": "https://zenn.dev/yoshi_in_zenn/articles/8803ba4ab93fe6",
+      "site": "Zenn(Python)",
+      "published": "2026-08-30T06:38:59Z",
+      "description": "1. 導入:なぜ占いMCPを作ったか\n最近話題のMCP(Model Context Protocol)。「AIと外部ツールをつなぐ仕組み」と聞いてもいまいちピンとこなかったため、実際に手を動かして理解することにした。\n題材に選んだのは「占い」だ。入力(生年月日や星座など)によって出力が変わるシンプルな仕組みなので、MCPの入出力の流れを説明するのにちょうどいいと考えた。\n今回作ったのは、Claud...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "「pip installされる側」になった日、公開前チェックが混入を3件捕まえた",
+      "url": "https://zenn.dev/secleeman/articles/500c4a943a927d",
+      "site": "Zenn(Python)",
+      "published": "2026-08-30T06:14:06Z",
+      "description": "コードが読めないままAIに実装を委任して、脆弱性トリアージCLI「triage-lens」を作ってきた連載の4本目です。今回はツールの中身ではなく、配り方の話。GitHubに置いてあっただけのツールを、PyPIに公開して pip install triage-lens の1行で入るようにしました。\n先に白状すると、この配布作業は、機能を作るどのフェーズよりも神経を使いました。そして実際に、公開の直...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "【FileSearchExplorer v0.9.3】モード切り替え機能追加しました",
+      "url": "https://zenn.dev/unknown777hello/articles/3227db15c44da1",
+      "site": "Zenn(Python)",
+      "published": "2026-08-30T06:13:59Z",
+      "description": "はじめに\nこんにちはUnknown777です\n今回は、FileSearchExplorer v0.9.3を紹介します\nリンクはこちらです\nGithubへのリンク\n\n 今回のアップデートの変更内容\n今回のバージョンでは、検索のやり方を選べる新しい「モード選択」機能を追加しました。\n既存の検索機能・使い方は変更していません(追加のみです)。\n1.「簡易モード」と「難しいモード」を選べるようになりました...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "Unicode正規化でファイル名が衝突する問題を、実データ537,689件で調べた",
+      "url": "https://zenn.dev/yoggydev/articles/de8a274f559985",
+      "site": "Zenn(Python)",
+      "published": "2026-08-30T04:53:30Z",
+      "description": "最初は別のことを調べていた。\n「Macで作った日本語のファイル名は、Windowsに持ってくると濁点が分解して壊れる」\nよく聞く話だし、実際に起きる。検査ツールを書いて、全パターンのテストも通した。\nそこまでやってから、実データで何件出るのかを数えていないことに気づいた。\n数えた。0件だった。\nだからその看板を捨てた。かわりに、数えている途中で別のものが出てきた。この記事はその記録。\n\n 先に、何...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "yt-dlp × Gemini APIでYouTube動画を要約するCLIツールを作ってみた",
+      "url": "https://zenn.dev/katayan/articles/693495dd19f77d",
+      "site": "Zenn(Python)",
+      "published": "2026-08-30T03:42:48Z",
+      "description": "1. はじめに\n\n\n背景:\nお読みいただきありがとうございます。初めましてkatayanと申します。\n趣味のFPSゲームで上達するためにYouTubeで海外のコーチング動画をよく視聴します。\nただ、会話が英語かつ長尺なため、ポイントを理解するのに時間がかかっていました。\nそこで、「もっと効率よく理解したい」との思いで本ツールを開発しました。\n\n\n作ったツール:\nYouTubeのURLを指定するだけ...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "N+1問題とは何か。Python や JS での防ぎ方",
+      "url": "https://zenn.dev/noah11/articles/8e32e63305bbe3",
+      "site": "Zenn(Python)",
+      "published": "2026-08-30T03:38:03Z",
+      "description": "N+1問題とは何か。Python と JS での防ぎ方\n前提、これは自分ためのまとめです\nORM で一覧 API を書いたことがある人なら、include や prefetch_related を「とりあえず付ける」経験があると思います。一方で、レビューで「それ N+1 では？」と言われたとき、何が何回走っているのかを説明しきれない、という状態になりがちです。Nest や Express から P...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "StreamlitにMicrosoft Entra ID認証を実装する",
+      "url": "https://zenn.dev/m_archi/articles/bd955afe0f7428",
+      "site": "Zenn(Python)",
+      "published": "2026-08-30T02:42:29Z",
+      "description": "1. はじめに\nStreamlitで作ったアプリに、Microsoft Entra IDの認証を実装してみました。\n今回は、実際に作業した内容や途中でハマったところを記録します。\nAIにも助けてもらいながら実装しました。\n\n 2. 今回作ったもの\nユーザー\n↓\nStreamlitアプリ\n↓\nMicrosoft Entra ID\n↓\n認証\n↓\nStreamlitアプリ\n\n 3. 環境\n\nPython...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "スプレッドシートをCSVで書き出すと1枚目のタブしか取れない — xlsx / gviz / gid の3つの直し方",
+      "url": "https://zenn.dev/kujira_ai/articles/41fbe0c9c14fdb",
+      "site": "Zenn(Python)",
+      "published": "2026-08-30T01:10:14Z",
+      "description": "毎朝、条件表が入ったスプレッドシートを読んでからメールを仕分ける処理を回している。その条件表は2枚目のタブにある。\nある朝、仕分け対象がゼロ件で終わった。例外は出ていない。ログもきれいだった。原因は、スプレッドシートをCSVで書き出していたことだった。CSVは1枚目のタブしか返さない。私が読んでいたのは、ほとんど空の1枚目だった。\n厄介なのは、これがエラーにならないことだ。「取得成功、中身は0件」...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "ヘッダのNULL契約を文書化する―ライブラリ境界で落ちるバグの防ぎ方",
+      "url": "https://zenn.dev/ponfreelance/articles/csaf-type-a-20260829-064613",
+      "site": "Zenn(Python)",
+      "published": "2026-08-30T00:43:52Z",
+      "description": "社内ライブラリを跨いだ関数呼び出しで、呼び出し側がNULLを渡していいのか悪いのか誰も答えられない、という状況に心当たりがあるなら、この記事はそのために書いた。\n自分は組み込み・制御系で23年ほどC言語を書いてきて、ライブラリ境界のNULL契約が曖昧なまま放置されているプロジェクトを何度も見てきた。ヘッダファイルにコメント1行あれば防げたクラッシュが、本番環境で発生してから調査に3日かかったことも...",
       "category": "開発",
       "rss_category": "",
       "image_url": ""
@@ -119,16 +209,6 @@
       "site": "Zenn(Python)",
       "published": "2026-08-29T08:26:02Z",
       "description": "起きたこと\nFlaskで作った管理画面で、確認ダイアログが出なくなっていました。\n削除ボタンを押すと、確認なしでそのまま消えます。\n原因を探していて、もっと妙なことに気づきました。同じ画面の「二度押し防止」も効いていません。 送信ボタンを連打すると、そのまま2回送信されます。\nこの2つは別々に実装したもので、機能としては何の関係もありません。まったく無関係な2つが、同時に、同じ画面でだけ死んでいる...",
-      "category": "開発",
-      "rss_category": "",
-      "image_url": ""
-    },
-    {
-      "title": "[ADK] 学習伴走AIアプリ「学習コーチ」を作ってみた 〜 入院生活と夏休みの自由研究 〜",
-      "url": "https://zenn.dev/soundtricker/articles/cea04f8aefa900",
-      "site": "Zenn(Python)",
-      "published": "2026-08-29T07:39:35Z",
-      "description": "こんにちは、サントリー(soundTricker)こと大橋です。\n実は、2026年7月前半に脛骨と腓骨をボキッと骨折（デブだから）　してしまい、約2週間の入院生活を送っていました。チタンが体に埋め込まれたので、義体化まっしぐらですね。\nその影響で、登壇を予定していた Google Cloud Next Tokyo に登壇できなくなってしまいました。関係者の皆様には大変なご迷惑とご心配をおかけしまし...",
       "category": "開発",
       "rss_category": "",
       "image_url": ""
