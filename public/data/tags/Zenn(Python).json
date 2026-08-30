@@ -1,34 +1,54 @@
 {
   "site": "Zenn(Python)",
-  "last_updated": "2026-08-30T11:37:14.157344",
-  "total_articles": 6092,
+  "last_updated": "2026-08-30T15:28:21.008381",
+  "total_articles": 6096,
   "articles": [
+    {
+      "title": "AIエージェントの承認・実行・結果不明をどう扱うか――責任経路OS（RPOS）0.1.0a2を公開",
+      "url": "https://zenn.dev/dantarg/articles/rpos-public-alpha-010a2",
+      "site": "Zenn(Python)",
+      "published": "2026-08-30T11:17:36Z",
+      "description": "AIエージェントが外部APIを実行した直後に、通信が切れた。\n相手側で処理されたのかは分からない。\nここで、もう一度実行してよいでしょうか。\n自動retryすれば、二重決済や二重変更になるかもしれません。\n反対に「失敗した」と閉じれば、すでに起きた現実の変更を見失うかもしれません。\nこの「分からない」を、成功にも失敗にも潰さず扱うにはどうすればいいのか。\nしかも、AIエージェントにHuman-in...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "SigLIP 2 のベクトル検索は抽象的な日本語と画像をどう結びつけるのか",
+      "url": "https://zenn.dev/kmdkmd/articles/siglip2-abstract-japanese-prompt-ranking",
+      "site": "Zenn(Python)",
+      "published": "2026-08-30T10:56:27Z",
+      "description": "PyCon JP 2026 のスプリントで、画像とテキストのベクトル検索を使った「AI 審査員フォト大喜利」を作りました。\n一般的な画像検索では、入力したテキストに近い画像を探します。今回はそれを逆手に取り、お題のテキストに近い画像を参加者が考えて持ち寄れば、モデルが作る埋め込み空間での「近さ」を順位として体感でき、競技性のあるゲームになるのではないかと考えました。\n「小さな奇跡を感じるもの」のよ...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "グラフRAG × ベクトルRAG 個人実証：設備保全ナレッジベースで見えた限界",
+      "url": "https://zenn.dev/yuninaka/articles/zenn-graph-rag-limitations",
+      "site": "Zenn(Python)",
+      "published": "2026-08-30T10:49:26Z",
+      "description": "1. 概要\n\n 1.1 やったこと(3行サマリ)\n\n設備保全ドメイン(操業日誌・トラブル報告書)を模した合成ログ35件から、ベクトルRAG(Chroma)とナレッジグラフ(Neo4j AuraDB Free)を構築した\nLangChainのAgentに vector_search と graph_query(GraphCypherQAChain)の2ツールを持たせ、質問内容に応じて自律的に使い分け...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "Pythonパッケージ管理ツール比較（pipenv / poetry / uv）",
+      "url": "https://zenn.dev/sf_tech_1026/articles/python-package-managers-tool",
+      "site": "Zenn(Python)",
+      "published": "2026-08-30T10:29:58Z",
+      "description": "はじめに\n実務で CDK（Python）のコードに触れる機会が多くなったのですが、当初はパッケージ管理ツールの存在すら理解できていませんでした。\nさらにリポジトリによって pipenv が使われていたり、 poetry や uv が使われていたりと構成がバラバラで、「なぜ違うツールを使っているのか？」「それぞれ何が違うのか？」と疑問を感じていました。\nそこで本記事では、自身の実務でのモヤモヤを解消...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
     {
       "title": "写経プラネタリウムをカスタマイズしてみた（日時をリアルタイムで動かす編）",
       "url": "https://zenn.dev/punita_mama/articles/78a5ddbb046625",
       "site": "Zenn(Python)",
       "published": "2026-08-30T08:40:21Z",
       "description": "はじめに\n前回、「日経ソフトウエア2025年3月号」の記事 「Pythonで『プラネタリウム』を作る」 を参考に、プラネタリウムのソースコードを写経した話を書きました（以降、 写経プラネタリウム(笑) と記載します）。\n触っているうちに「ここをこうしたい」というポイントがいくつか出てきたので、カスタマイズしてみた記録を残します。\n今回やったことは以下の2つです。\n\n起動時にシステム日付・時刻を反映...",
-      "category": "開発",
-      "rss_category": "",
-      "image_url": ""
-    },
-    {
-      "title": "占いMCPを作ってみた話 〜MCPの仕組みを理解する実践チュートリアル〜",
-      "url": "https://zenn.dev/yoshi_in_zenn/articles/8803ba4ab93fe6",
-      "site": "Zenn(Python)",
-      "published": "2026-08-30T06:38:59Z",
-      "description": "1. 導入:なぜ占いMCPを作ったか\n最近話題のMCP(Model Context Protocol)。「AIと外部ツールをつなぐ仕組み」と聞いてもいまいちピンとこなかったため、実際に手を動かして理解することにした。\n題材に選んだのは「占い」だ。入力(生年月日や星座など)によって出力が変わるシンプルな仕組みなので、MCPの入出力の流れを説明するのにちょうどいいと考えた。\n今回作ったのは、Claud...",
-      "category": "開発",
-      "rss_category": "",
-      "image_url": ""
-    },
-    {
-      "title": "「pip installされる側」になった日、公開前チェックが混入を3件捕まえた",
-      "url": "https://zenn.dev/secleeman/articles/500c4a943a927d",
-      "site": "Zenn(Python)",
-      "published": "2026-08-30T06:14:06Z",
-      "description": "コードが読めないままAIに実装を委任して、脆弱性トリアージCLI「triage-lens」を作ってきた連載の4本目です。今回はツールの中身ではなく、配り方の話。GitHubに置いてあっただけのツールを、PyPIに公開して pip install triage-lens の1行で入るようにしました。\n先に白状すると、この配布作業は、機能を作るどのフェーズよりも神経を使いました。そして実際に、公開の直...",
       "category": "開発",
       "rss_category": "",
       "image_url": ""
@@ -104,11 +124,31 @@
       "image_url": ""
     },
     {
+      "title": "EPSSもKEVも知らないまま、私は脆弱性トリアージツールを作っていた",
+      "url": "https://zenn.dev/secleeman/articles/5e5e9e77e47c00",
+      "site": "Zenn(Python)",
+      "published": "2026-08-29T23:37:07Z",
+      "description": "前回までの2本で、コードが読めない私がAIに実装を委任して脆弱性トリアージCLI「triage-lens」を作り、寝ている間にPhase 2まで進めた話を書きました。どちらの記事も同じ予告で締めています。次回はツールの中身の話、EPSSとCISA KEVをどう重ねるか、と。\nその3本目を書こうとして、手が止まりました。\n私は、EPSSが何かを説明できません。KEVもです。もっと言うと、CVSSすら...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
       "title": "OCR誤読対策で辞書を作っていたら、いつの間にか対戦相手の名前まで辞書化されかけていた話",
       "url": "https://zenn.dev/hoakari/articles/2026-08-29-poke-saifu-ocr-dictionary-trap",
       "site": "Zenn(Python)",
       "published": "2026-08-29T17:03:46Z",
       "description": "作ったもの\nPoke-Saifu というツールを作りました。ポケモンチャンピオンズの対戦動画・スクリーンショットから、対戦ログのテキストを抽出してJSONに変換するローカル動作のデスクトップアプリです。\nきっかけは単純で、ポケモン対戦のスクショをClaudeやGeminiにそのまま大量に読み込ませると、1戦あたり5万〜8万トークンという結構な画像トークンを消費してしまうことでした。それなら動画・画...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "現場をPython側へ移住させない――既存業務とAIをつなぐBridge Engineering",
+      "url": "https://zenn.dev/minipoisson/articles/ai-bridge-engineering",
+      "site": "Zenn(Python)",
+      "published": "2026-08-29T16:14:36Z",
+      "description": "!\n本記事はシリーズ「現場を置き去りにしない AI 活用」の第2回（全2回）です。第1回では組織設計を、第2回では技術アーキテクチャを取り上げます。各回は単体でも読めるように書いています。\n第1回：https://zenn.dev/minipoisson/articles/ai-scaling-org-design\n\n\n はじめに：AIに業務ツールを相談すると、なぜPythonが提案されるのか\n第...",
       "category": "開発",
       "rss_category": "",
       "image_url": ""

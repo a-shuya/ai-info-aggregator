@@ -1,8 +1,18 @@
 {
   "site": "Zenn(Google Cloud)",
-  "last_updated": "2026-08-30T11:37:14.157344",
-  "total_articles": 1701,
+  "last_updated": "2026-08-30T15:28:21.008381",
+  "total_articles": 1702,
   "articles": [
+    {
+      "title": "AIエージェントにBigQueryのクエリレビューをさせてコスト削減した方法",
+      "url": "https://zenn.dev/web_benriya/articles/ai-agent-bigquery-query-review-cost-reduction",
+      "site": "Zenn(Google Cloud)",
+      "published": "2026-08-30T10:11:02Z",
+      "description": "はじめに\n「BigQueryの請求額が先月より突然跳ね上がった」「どのクエリがコストの大半を占めているのかわからない」——そのような経験をお持ちの方は少なくないのではないでしょうか。\nBigQueryはスキャンしたデータ量に応じて課金される仕組みのため、クエリの書き方ひとつで月額費用が大きく変わります。特にGA4のBigQueryエクスポートデータは日々蓄積され続けるため、何も対策しないまま運用を...",
+      "category": "クラウド",
+      "rss_category": "",
+      "image_url": ""
+    },
     {
       "title": "Google ADKで作るECデータ分析エージェント",
       "url": "https://zenn.dev/phper8080/articles/618e979dc7469f",
@@ -29,16 +39,6 @@
       "site": "Zenn(Google Cloud)",
       "published": "2026-08-30T02:11:34Z",
       "description": "はじめに\nAzure から Google Cloud を触るシリーズ、AI セキュリティの回です。以前、SA 鍵の作成を Cloud Logging で検知する記事を書きました。今回はその AI 版で、Gemini（Vertex AI）の呼び出しが監査ログにどう残るかを実測します。\n社内で Gemini を使い始めると、まず気になるのが「誰が、どのモデルを、どれだけ叩いているか」です。ガバナンスの...",
-      "category": "クラウド",
-      "rss_category": "",
-      "image_url": ""
-    },
-    {
-      "title": "MCPのステートレス化でAIエージェントをCloud Runでスケールさせる",
-      "url": "https://zenn.dev/adopture/articles/48fd7afc4ae247",
-      "site": "Zenn(Google Cloud)",
-      "published": "2026-08-30T02:05:08Z",
-      "description": "AIエージェントの運用が検証フェーズからエンタープライズ規模の本番運用へシフトする中、多くの開発者が直面してきた大きな課題が「Model Context Protocol（MCP）のセッション維持問題」です。\nKubernetesでオートスケールさせるとセッション不整合でエラーが頻発する、ステートフル接続の維持のためにRedisやスティッキーセッションが必要となりインフラ費用やレイテンシが跳ね上が...",
       "category": "クラウド",
       "rss_category": "",
       "image_url": ""
@@ -139,6 +139,16 @@
       "site": "Zenn(Google Cloud)",
       "published": "2026-08-27T01:15:35Z",
       "description": "はじめに\nプラットフォーム開発部データプラットフォームグループのグループマネージャー福田です。\nデータ基盤の構築・運用や、ビジネス側との接続を担当しています。\nデータ基盤を運用していると、どこかのタイミングで一度は「BigQuery のコストをどうにかしたい」という話が持ち上がります。\nとはいえコスト削減の施策は、たいてい「遅くなってもいいなら安くできます」というトレードオフとセットになりがちです...",
+      "category": "クラウド",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "fit_predictで体で覚えた、異常検知の定石",
+      "url": "https://zenn.dev/acntechjp/articles/931d75941aafe1",
+      "site": "Zenn(Google Cloud)",
+      "published": "2026-08-26T23:30:05Z",
+      "description": "はじめに\nこの記事は「Isolation ForestでGCPの障害を検知できました」という話ではありません。もう少し地味で、しかし意外とハマりやすい話をします。LLMでなくて機械学習の記事です。\n※Isolation Forest：正常データが密集し異常データは孤立しやすいという性質を使う、教師なし学習の異常検知アルゴリズムです。\n短い観測窓ごとに正常と障害のデータを混ぜて正常基準を毎回作り直す...",
       "category": "クラウド",
       "rss_category": "",
       "image_url": ""
