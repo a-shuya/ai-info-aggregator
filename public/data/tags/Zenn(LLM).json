@@ -1,7 +1,7 @@
 {
   "site": "Zenn(LLM)",
-  "last_updated": "2026-08-30T21:39:22.161305",
-  "total_articles": 5753,
+  "last_updated": "2026-08-30T23:54:41.841031",
+  "total_articles": 5756,
   "articles": [
     {
       "title": "Azure OpenAIで社内用と社外用のガードレールを分ける — ヘッダー1本、ただし罠が4つ",
@@ -54,16 +54,6 @@
       "image_url": ""
     },
     {
-      "title": "開発中に Claude Code のキャッシュミスで大量トークン消費を踏んだ — セッション共有と fork の備忘録",
-      "url": "https://zenn.dev/haw2fregel/articles/claude-code-fork-session",
-      "site": "Zenn(LLM)",
-      "published": "2026-08-30T15:28:11Z",
-      "description": "やりたかったこと\nClaude Code を外部アプリから扱う際、\nログイン済みのアカウントで通し、デスクトップアプリとセッションを共有する仕組みを作りたかった。\nこのセッション共有が原因でキャッシュミスを起こしていた。\n\n 初期案: 外から同じセッションを掴む\n作ったのは Blender アドオンの claude-in-blender。デスクトップアプリの会話を共有しつつ、Blender のパネ...",
-      "category": "AI・技術",
-      "rss_category": "",
-      "image_url": ""
-    },
-    {
       "title": "SWE-agent のアブレーションから見る ACI 設計と AI エージェント性能",
       "url": "https://zenn.dev/id774/articles/c09d6fdec1aaa7",
       "site": "Zenn(LLM)",
@@ -84,21 +74,21 @@
       "image_url": ""
     },
     {
-      "title": "自律エージェントを実装すると、決めることになる項目",
-      "url": "https://zenn.dev/hosaka2/articles/4e4b868c68c07a",
-      "site": "Zenn(LLM)",
-      "published": "2026-08-30T14:15:30Z",
-      "description": "カメラで作業を見守り、音声でガイドするモバイルアプリを作りました。この記事は、そのアーキテクチャ設計の記録です。\n人間が話しかけなくても勝手に回り続けるループを作ると、普通のチャットアプリでは出てこない決定を何度も迫られます。決めたことと、その代償をそのまま残します。\nhttps://github.com/hosaka2/guidey\n\n\n 作ったもの\nスマホのカメラで数秒ごとに作業を撮影し、AI...",
-      "category": "AI・技術",
-      "rss_category": "",
-      "image_url": ""
-    },
-    {
       "title": "Vision LLM に文字を読ませると、自信を持って間違える",
       "url": "https://zenn.dev/fukunagajiro/articles/vision-llm-uncertainty-marks",
       "site": "Zenn(LLM)",
       "published": "2026-08-30T13:15:22Z",
       "description": "スマホで撮影した日本語の冊子 PDF を Claude に読ませ、Markdown に起こすツール scan2md を作りました。読めなかった文字は {{…}} で囲んで出力し、画像と突き合わせて確定するところは手作業に残しています。同じページを Claude の 3 モデルとローカル LLM の 2 モデルに読ませると、{{…}} の数はモデルごとに 0 件から 8 件まで違いました。数が少ない...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "「6ヶ月後のモデル」に賭けてプロダクトを作る",
+      "url": "https://zenn.dev/kiyoka/articles/build-for-the-model-in-6-months",
+      "site": "Zenn(LLM)",
+      "published": "2026-08-30T11:09:04Z",
+      "description": "はじめに\nLLMを使ったプロダクトを作っていると、よくこの壁にぶつかります。\n「この機能、今のモデルの性能では無理だな」\nここで仕様から削るのか、それとも残しておくのか。この判断について、Anthropicの Mike Krieger が明快な指針を語っていました。\nこれを読んで、自分も似たようなことをしていた気がしたので、過去の記事を読み返してみました。結果的にうまくいった例が2つ見つかったので...",
       "category": "AI・技術",
       "rss_category": "",
       "image_url": ""
@@ -114,11 +104,51 @@
       "image_url": ""
     },
     {
+      "title": "WebサイトをAIエージェントに読みやすくする ― Accept: text/markdownを実装してみた",
+      "url": "https://zenn.dev/tage/articles/accept-markdown-content-negotiation",
+      "site": "Zenn(LLM)",
+      "published": "2026-08-30T10:57:13Z",
+      "description": "WEBサイトにAIエージェントが来た時、マークダウン形式でデータを渡せるようにします。\nacceptmarkdown.com が提唱しているやり方でサーバを構築しました。\nわざと壊してみて気付いた点をまとめます。\n\n 概要\n同じ URL に対して、Accept ヘッダを見て HTML と Markdown を出し分ける実装を Node/Express で書き、\nわざと3通りに壊して挙動を実測しまし...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
       "title": "グラフRAG × ベクトルRAG 個人実証：設備保全ナレッジベースで見えた限界",
       "url": "https://zenn.dev/yuninaka/articles/zenn-graph-rag-limitations",
       "site": "Zenn(LLM)",
       "published": "2026-08-30T10:49:26Z",
       "description": "1. 概要\n\n 1.1 やったこと(3行サマリ)\n\n設備保全ドメイン(操業日誌・トラブル報告書)を模した合成ログ35件から、ベクトルRAG(Chroma)とナレッジグラフ(Neo4j AuraDB Free)を構築した\nLangChainのAgentに vector_search と graph_query(GraphCypherQAChain)の2ツールを持たせ、質問内容に応じて自律的に使い分け...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "公式ドキュメントに書いていないことを、手元のバイナリから読む — AIエージェントの記憶機構を6製品調べた",
+      "url": "https://zenn.dev/mameresearcher/articles/agent-memory-undocumented-binary-recon",
+      "site": "Zenn(LLM)",
+      "published": "2026-08-30T10:06:17Z",
+      "description": "AIエージェントの「メモリ機能」を調べた。Claude Code、Codex、Cursor、Grok Build、Gemini CLI。\nそして調べている途中で、6つ目が出てきた。Google の Antigravity である。\n最初は公式ドキュメントを読むだけで済むと思っていた。済まなかった。\n\nCursor の Memories には、公式ドキュメントのページが無い。フォーラムと chang...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "モデルの違いは「学歴と単価」―― Opus / Sonnet / Haiku の使い分けと、Codexが違う理由",
+      "url": "https://zenn.dev/ai_shihan/articles/fe86b2a4eabe88",
+      "site": "Zenn(LLM)",
+      "published": "2026-08-30T09:13:44Z",
+      "description": "こんにちは、AI師範です。普段はAIを組織のように使って、業務自動化ツールの製作と、その運用の引き継ぎ支援をしています。\n「AIは新人研修しか受けていない新卒」「セッションが違えば別の人」と書いてきたシリーズの3本目です。今回はモデルの選び方。\nClaude Codeには上位・中位・軽量の3つのモデルがあって、/model で切り替えられます。初めての人がここで必ず聞くのが「どれを使えばいいんです...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "Skill作成系Skillから学ぶ、Skill設計の実践知",
+      "url": "https://zenn.dev/acntechjp/articles/9bda1898b920cf",
+      "site": "Zenn(LLM)",
+      "published": "2026-08-30T09:03:16Z",
+      "description": "はじめに\n自分でSkillを作りはじめ、あれこれ改善を重ねるようになったので、最近のベストプラクティスを改めて知りたくなりました。世の中にはSkillの作り方を教えてくれるSkillがすでにいくつも公開されています。それらの内容と自分の経験を照らし合わせて、費用対効果が高そうなベストプラクティスをいくつか紹介します。\n!\nとはいえ、最近自分はMarkdownを直接開いて読み書きしているわけではあり...",
       "category": "AI・技術",
       "rss_category": "",
       "image_url": ""

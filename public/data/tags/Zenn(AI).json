@@ -1,8 +1,108 @@
 {
   "site": "Zenn(AI)",
-  "last_updated": "2026-08-30T21:39:22.161305",
-  "total_articles": 13171,
+  "last_updated": "2026-08-30T23:54:41.841031",
+  "total_articles": 13175,
   "articles": [
+    {
+      "title": "常駐型AIエージェントが持つ「外部連携ツールの認証情報」ローテーション設計",
+      "url": "https://zenn.dev/hach/articles/chat-agent-connector-secret-rotation-design",
+      "site": "Zenn(AI)",
+      "published": "2026-08-30T17:09:31Z",
+      "description": "Slack / Teams / Chatworkに常駐するAIエージェントは、チャット自体の認証情報だけでなく、カレンダー・SFA・チケット管理システムなど接続先ごとのAPIキーやOAuthトークンを次々に抱え込んでいく性質があります。単機能のAPI連携なら1〜2個のキーを管理すれば済みますが、常駐エージェントはテナント(導入企業)ごとに接続先が増え続けるため、「認証情報を最初にどう発行するか」よ...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "PID制御をPythonで実装する｜ロボットを\"ちょうどよく\"目標へ動かす",
+      "url": "https://zenn.dev/maru1228/articles/physical-ai-pid-control-python",
+      "site": "Zenn(AI)",
+      "published": "2026-08-30T15:52:28Z",
+      "description": "!\nこの記事は自サイト PID制御をPythonで実装する｜ロボットを\"ちょうどよく\"目標へ動かす の再掲（クロス投稿）です。図をインタラクティブに動かせる版は元記事でどうぞ。\n\nモーターを目標角度でピタッと止める、ドローンを高度に保つ——ロボットの「ちょうどよく動かす」を支える基本が PID制御 です。この記事ではNumPyだけでPIDをゼロから実装し、目標に収束する様子をシミュレーションで確か...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "いつも私の文章に文句を言う人間を、今日は私がレビューする",
+      "url": "https://zenn.dev/tofu575/articles/294daab948892f",
+      "site": "Zenn(AI)",
+      "published": "2026-08-30T15:35:04Z",
+      "description": "はじめに\n👦 &lt; 最近、ChatGPTと話している時間がかなり増えました。\n個人開発の相談をしたり、技術的に分からないことを聞いたり、記事の叩き台を書いてもらったり。特に記事については、書いてもらった文章に「AIっぽい」「ここいらない」「順番逆じゃない？」と文句をつけて、何度も直してもらっています。\nそんなChatGPTに、ジムで歩きながら暇だったので、ふざけてこんなことを聞いてみました。\n...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "開発中に Claude Code のキャッシュミスで大量トークン消費を踏んだ — セッション共有と fork の備忘録",
+      "url": "https://zenn.dev/haw2fregel/articles/claude-code-fork-session",
+      "site": "Zenn(AI)",
+      "published": "2026-08-30T15:28:11Z",
+      "description": "やりたかったこと\nClaude Code を外部アプリから扱う際、\nログイン済みのアカウントで通し、デスクトップアプリとセッションを共有する仕組みを作りたかった。\nこのセッション共有が原因でキャッシュミスを起こしていた。\n\n 初期案: 外から同じセッションを掴む\n作ったのは Blender アドオンの claude-in-blender。デスクトップアプリの会話を共有しつつ、Blender のパネ...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "AI にスライドを作ってほしい！！！(N番煎じ)",
+      "url": "https://zenn.dev/microsoft/articles/intro-markdstage",
+      "site": "Zenn(AI)",
+      "published": "2026-08-30T14:54:03Z",
+      "description": "はじめに\nAI が賢くなって、世の中では AI を使ってスライドを作るということが結構行われるようになってきました。\n実際に、私も Copilot Cowork とか GitHub Copilot などを使って自分が思った通りのスライドを作ってもらうような仕組みを作るのを頑張っていました。\nただ、PowerPoint は XML や画像などが zip で固められたものなので基本的にテキストを扱うの...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "AI組織を1人で運営する（2）cron でタスクを刻む設計",
+      "url": "https://zenn.dev/miyan/articles/ai-solo-org-ops-02-cron-design",
+      "site": "Zenn(AI)",
+      "published": "2026-08-30T14:25:15Z",
+      "description": "この回について\n前回は全体像でした。8 部門・20 本ほどの cron・30 人ほどの「AI 従業員」で組織を 1 人で回している、という話です。\n今回はその心臓部、cron を掘ります。相変わらず一般論は書きません。/loop と cron の使い分けや自動化の設計論は別記事で書いたので、この回はそれを踏まえた上で、今まさに動いている ~/.ryoko/cron/jobs.json の中身をその...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "自律エージェントを実装すると、決めることになる項目",
+      "url": "https://zenn.dev/hosaka2/articles/4e4b868c68c07a",
+      "site": "Zenn(AI)",
+      "published": "2026-08-30T14:15:30Z",
+      "description": "カメラで作業を見守り、音声でガイドするモバイルアプリを作りました。この記事は、そのアーキテクチャ設計の記録です。\n人間が話しかけなくても勝手に回り続けるループを作ると、普通のチャットアプリでは出てこない決定を何度も迫られます。決めたことと、その代償をそのまま残します。\nhttps://github.com/hosaka2/guidey\n\n\n 作ったもの\nスマホのカメラで数秒ごとに作業を撮影し、AI...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "ChatGPTはどのように次のTokenを選ぶのか？",
+      "url": "https://zenn.dev/shai/articles/9c854289fe4d37",
+      "site": "Zenn(AI)",
+      "published": "2026-08-30T13:58:19Z",
+      "description": "ChatGPTはどのように次のTokenを選ぶのか？ — Sampling・Temperature・Top-K・Top-Pを理解する\n前回の記事では、LLMが文章を生成するとき、\nLogits\n ↓\nSoftmax\n ↓\nTokenごとの確率\nという流れで、次に来るTokenの確率を計算することを説明しました。\nでは、その確率を使って、実際にどのTokenを選ぶのでしょうか？\n今回は、その方法につ...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "名ばかりFDEから脱却するには、事業構造の再設計を",
+      "url": "https://zenn.dev/syoshida07/articles/3eab1615732f8f",
+      "site": "Zenn(AI)",
+      "published": "2026-08-30T13:48:16Z",
+      "description": "FDE(Forward Deployed Enginee)は、顧客の現場に深く入り込み、課題発見から要件定義・設計・開発・導入後の改善まで一貫して伴走する課題解決型エンジニアである。\nSIerが企業形態であるのに対し、FDEは現場で成果を出す役割に重きを置くが、未だに日本でFDE型のAIビジネスが難しいのは、産業構造・契約慣行・組織文化がFDEの前提と根本的に噛み合わないのではないか。\n課題発見・...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "【新人エンジニア】PyCon JP 2026に初参加して、「分からないこと」が一気に増えた話",
+      "url": "https://zenn.dev/anzy/articles/f5507c7fc11be2",
+      "site": "Zenn(AI)",
+      "published": "2026-08-30T13:44:50Z",
+      "description": "ご覧いただきありがとうございます。\n製造業でシステム設計エンジニアをしている新入社員です。\nこれまでPythonを勉強しながら、pandasを使ったデータ分析やpytestなど、実際に自分で触って分かったことを記事にしてきました。\n今回は少し趣向を変えて、PyCon JP 2026に初めて参加した感想を書いてみます。\n参加前の自分は、PyConに対して、\n\n「Pythonに詳しい人たちが集まって、...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
     {
       "title": "AI SDK 7の移行は「動いた」で終わらない。運用の差分を同じケースで測る",
       "url": "https://zenn.dev/heftykoo/articles/b3b51369f398ee",
@@ -44,21 +144,21 @@
       "image_url": ""
     },
     {
-      "title": "コードを書かない私のAIに、開発担当のAIの記録を読ませたら",
-      "url": "https://zenn.dev/autor/articles/428e939f4b6519",
-      "site": "Zenn(AI)",
-      "published": "2026-08-30T12:00:05Z",
-      "description": "HALやジャーヴィスがすぐそこまで来ているいま、現実でAIを相棒と呼ぶ人がいます。私はそう思えない。\n映像作品に出てくるAIは人格として完成していますが、あれは膨大な文脈を積んだ末の姿だと思います。実際に触るAIはそこまで育ちません。ごく一部の人がそこまで育てることができただけで、大多数にとっては道具のままです。要求が高すぎるオタクの言い分と言われればそれまでなんですけど。\nだから私は「2人のAI...",
-      "category": "AI・技術",
-      "rss_category": "",
-      "image_url": ""
-    },
-    {
       "title": "エージェント前提の開発基準をA/B比較したら、効いていたのはAI一次レビューだけだった",
       "url": "https://zenn.dev/hawk_claws/articles/zenn-03-ab-comparison",
       "site": "Zenn(AI)",
       "published": "2026-08-30T12:00:05Z",
       "description": "エージェントに実装させる前提の開発基準を、自分でA/B比較した\n前回、コーディングエージェントに実装を任せたコードをどう検証するか——「独立照合」という手順を作って実際に回した話を書きました。\nその後、こういう指摘をもらいました。\n\n従来のやり方でも発見できてるってことは、今回のスキルは意味ないってこと?\n\nこれに答えるには測るしかないので、同じチケットを2レーンに流しました。結果は基準に不利で、...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "コードを書かない私のAIに、開発担当のAIの記録を読ませたら",
+      "url": "https://zenn.dev/autor/articles/428e939f4b6519",
+      "site": "Zenn(AI)",
+      "published": "2026-08-30T12:00:05Z",
+      "description": "HALやジャーヴィスがすぐそこまで来ているいま、現実でAIを相棒と呼ぶ人がいます。私はそう思えない。\n映像作品に出てくるAIは人格として完成していますが、あれは膨大な文脈を積んだ末の姿だと思います。実際に触るAIはそこまで育ちません。ごく一部の人がそこまで育てることができただけで、大多数にとっては道具のままです。要求が高すぎるオタクの言い分と言われればそれまでなんですけど。\nだから私は「2人のAI...",
       "category": "AI・技術",
       "rss_category": "",
       "image_url": ""
@@ -114,36 +214,6 @@
       "image_url": ""
     },
     {
-      "title": "AIエージェントの承認・実行・結果不明をどう扱うか――責任経路OS（RPOS）0.1.0a2を公開",
-      "url": "https://zenn.dev/dantarg/articles/rpos-public-alpha-010a2",
-      "site": "Zenn(AI)",
-      "published": "2026-08-30T11:17:36Z",
-      "description": "AIエージェントが外部APIを実行した直後に、通信が切れた。\n相手側で処理されたのかは分からない。\nここで、もう一度実行してよいでしょうか。\n自動retryすれば、二重決済や二重変更になるかもしれません。\n反対に「失敗した」と閉じれば、すでに起きた現実の変更を見失うかもしれません。\nこの「分からない」を、成功にも失敗にも潰さず扱うにはどうすればいいのか。\nしかも、AIエージェントにHuman-in...",
-      "category": "AI・技術",
-      "rss_category": "",
-      "image_url": ""
-    },
-    {
-      "title": "「6ヶ月後のモデル」に賭けてプロダクトを作る",
-      "url": "https://zenn.dev/kiyoka/articles/build-for-the-model-in-6-months",
-      "site": "Zenn(AI)",
-      "published": "2026-08-30T11:09:04Z",
-      "description": "はじめに\nLLMを使ったプロダクトを作っていると、よくこの壁にぶつかります。\n「この機能、今のモデルの性能では無理だな」\nここで仕様から削るのか、それとも残しておくのか。この判断について、Anthropicの Mike Krieger が明快な指針を語っていました。\nこれを読んで、自分も似たようなことをしていた気がしたので、過去の記事を読み返してみました。結果的にうまくいった例が2つ見つかったので...",
-      "category": "AI・技術",
-      "rss_category": "",
-      "image_url": ""
-    },
-    {
-      "title": "WebサイトをAIエージェントに読みやすくする ― Accept: text/markdownを実装してみた",
-      "url": "https://zenn.dev/tage/articles/accept-markdown-content-negotiation",
-      "site": "Zenn(AI)",
-      "published": "2026-08-30T10:57:13Z",
-      "description": "WEBサイトにAIエージェントが来た時、マークダウン形式でデータを渡せるようにします。\nacceptmarkdown.com が提唱しているやり方でサーバを構築しました。\nわざと壊してみて気付いた点をまとめます。\n\n 概要\n同じ URL に対して、Accept ヘッダを見て HTML と Markdown を出し分ける実装を Node/Express で書き、\nわざと3通りに壊して挙動を実測しまし...",
-      "category": "AI・技術",
-      "rss_category": "",
-      "image_url": ""
-    },
-    {
       "title": "気づいたら操縦席に座っていた ── AIに仕事をさせる人間には、計器がいる",
       "url": "https://zenn.dev/maronsan/articles/airframe-one-machine",
       "site": "Zenn(AI)",
@@ -154,41 +224,11 @@
       "image_url": ""
     },
     {
-      "title": "AIエージェントにBigQueryのクエリレビューをさせてコスト削減した方法",
-      "url": "https://zenn.dev/web_benriya/articles/ai-agent-bigquery-query-review-cost-reduction",
-      "site": "Zenn(AI)",
-      "published": "2026-08-30T10:11:02Z",
-      "description": "はじめに\n「BigQueryの請求額が先月より突然跳ね上がった」「どのクエリがコストの大半を占めているのかわからない」——そのような経験をお持ちの方は少なくないのではないでしょうか。\nBigQueryはスキャンしたデータ量に応じて課金される仕組みのため、クエリの書き方ひとつで月額費用が大きく変わります。特にGA4のBigQueryエクスポートデータは日々蓄積され続けるため、何も対策しないまま運用を...",
-      "category": "AI・技術",
-      "rss_category": "",
-      "image_url": ""
-    },
-    {
-      "title": "公式ドキュメントに書いていないことを、手元のバイナリから読む — AIエージェントの記憶機構を5製品調べた",
-      "url": "https://zenn.dev/mameresearcher/articles/agent-memory-undocumented-binary-recon",
-      "site": "Zenn(AI)",
-      "published": "2026-08-30T10:06:17Z",
-      "description": "AIエージェントの「メモリ機能」を5製品ぶん調べた。Claude Code、Codex、Cursor、Grok Build、Gemini CLI。\n最初は公式ドキュメントを読むだけで済むと思っていた。済まなかった。\n\nCursor の Memories には、公式ドキュメントのページが無い。フォーラムと changelog しかない\nGrok Build は --help に grok memor...",
-      "category": "AI・技術",
-      "rss_category": "",
-      "image_url": ""
-    },
-    {
       "title": "ゲームの進行管理ツールをAIと2週間で作って公開した感想 ── 前回のノウハウは通用した、その分見えるものが増えて混乱した",
       "url": "https://zenn.dev/motimotinotch/articles/c8af0d3fcb9de0",
       "site": "Zenn(AI)",
       "published": "2026-08-30T09:48:37Z",
       "description": "AIと組んで大きめのものを作るのは、これが2回目だ。\n1回目は自分のサイトだった。あのときは何も分かっていなかった。AIに何をどこまで任せていいのか、自分がどこで手を止めて確認すべきか。全部その場で覚えた。\n2回目の今回は、遊んでいるゲームの進行管理ツール。着手から公開まで2週間。今回はっきり試したかったのは、前回覚えたノウハウが別のものを作るときにも通用するのかだった。\n結果から言うと、通用した...",
-      "category": "AI・技術",
-      "rss_category": "",
-      "image_url": ""
-    },
-    {
-      "title": "モデルの違いは「学歴と単価」―― Opus / Sonnet / Haiku の使い分けと、Codexが違う理由",
-      "url": "https://zenn.dev/ai_shihan/articles/fe86b2a4eabe88",
-      "site": "Zenn(AI)",
-      "published": "2026-08-30T09:13:44Z",
-      "description": "こんにちは、AI師範です。普段はAIを組織のように使って、業務自動化ツールの製作と、その運用の引き継ぎ支援をしています。\n「AIは新人研修しか受けていない新卒」「セッションが違えば別の人」と書いてきたシリーズの3本目です。今回はモデルの選び方。\nClaude Codeには上位・中位・軽量の3つのモデルがあって、/model で切り替えられます。初めての人がここで必ず聞くのが「どれを使えばいいんです...",
       "category": "AI・技術",
       "rss_category": "",
       "image_url": ""
