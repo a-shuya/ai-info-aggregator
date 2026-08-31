@@ -1,14 +1,154 @@
 {
   "site": "Zenn(LLM)",
-  "last_updated": "2026-08-31T11:09:43.021775",
-  "total_articles": 5772,
+  "last_updated": "2026-08-31T18:00:49.895145",
+  "total_articles": 5785,
   "articles": [
     {
-      "title": "「CUDA と ROCm だけ」と書いてある 117GB のモデルを、32GB の Arc で炊く",
+      "title": "LLM ダイナミックルーティングの難所は「会話」だった — 一度機密に触れたチャットが戻れなくなる問題と、2 指標の設計",
+      "url": "https://zenn.dev/exapolicy/articles/eeaf76e2a93153",
+      "site": "Zenn(LLM)",
+      "published": "2026-08-31T17:01:57Z",
+      "description": "はじめに — 全体像のどこの話か\n機密度に応じて LLM の送信先を切り替える「LLM ダイナミックルーティング」を実装するには、いくつかの機能が揃っている必要があります。まず全体像を一覧にします。\n\n\n\n#\n必要な機能\n役割\n解説記事\n\n\n\n\n①\n機密度の評価\n入力が機密かどうかを手元で見立てる\nLLM ルーティングはどう動くのか\n\n\n②\nポリシーによる判定\n評価値を受けて送信先を決めるルール ...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "LLM エージェントを作る①：モデルのJSON出力をホスト側で検証する",
+      "url": "https://zenn.dev/wqy/articles/21d3a0d985ff75",
+      "site": "Zenn(LLM)",
+      "published": "2026-08-31T15:47:36Z",
+      "description": "はじめに\nLLM を使ってコードを書くことと、アプリの実行中に LLM を呼ぶことは別です。\nCoding Agent が書いたコードでも、実行時に LLM を呼ばなければ、通常のプログラムと同じように動きます。\n一方、ユーザーの入力を LLM で分類したり、情報を取り出したりするシステムでは、モデルの出力を後続の処理で使います。\nそこで気になるのが、次の点です。\nモデルがJSONを返したら、\nそ...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "pdlc-skills はどうやって無人で回すのか",
+      "url": "https://zenn.dev/kanfupanda/articles/pdlc-run-unattended",
+      "site": "Zenn(LLM)",
+      "published": "2026-08-31T14:23:55Z",
+      "description": "!\nこの記事は個人ブログにも掲載しています → https://kanfu-panda.github.io/ja/blog/2026/08/31/run-pdlc-unattended.html\n\n\n\n最初の機能を通したあと、すぐ次の問題にぶつかります。各ステージごとに止まってこちらの承認を待つので、結局は画面の前に張りついたままです。一周ずつ自分で進めてもらい、その間こちらは別の作業をする——そ...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "MCP導入前のセキュリティチェックリスト11項目—エージェント暴走を防ぐ",
+      "url": "https://zenn.dev/bambampurin/articles/2026-08-08-tech-daily",
+      "site": "Zenn(LLM)",
+      "published": "2026-08-31T14:00:51Z",
+      "description": "この記事で分かること\n\nLLMの主戦場が「モデル性能」から「業務特化AI」と「自律エージェント運用」に移った理由\nAgent/MCPを本番導入する前に確認すべきセキュリティ論点\nPython/AI開発で uv・Ruff・Polars などの統合型ツールチェーンが注目される背景\n\n\n LLM単体の競争から業務特化AIへ移行している理由\n結論、今日のAI/LLM動向で重要なのは「汎用LLMの優劣」では...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "「指示に従う力」を測ったら、指示に従ったプロンプトが18点になった",
+      "url": "https://zenn.dev/seiya_builds/articles/59ca4360f4c9f3",
+      "site": "Zenn(LLM)",
+      "published": "2026-08-31T12:39:17Z",
+      "description": "システムプロンプトを貼ると、そのAIの性格と能力を6軸で採点するサービスを作っています。\nそこで、評価軸の定義と真逆の結果が出るバグを踏みました。\nLLMに何かを審査させるものを作っている人には、同じ形が来ると思うので書いておきます。\n\n 起きたこと\n自分で書いた業務用のシステムプロンプトを診断にかけました。家具ECのカスタマーサポート想定です。\nこの行が入っています。\n- 家具・注文に関係のない...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "『書いていない基準は毎回その場で埋められる』ーーLLM脆弱性トリアージの揺れをプロンプトの「境界設定」で止めた話",
+      "url": "https://zenn.dev/nekoemon/articles/1ba734b11fb487",
+      "site": "Zenn(LLM)",
+      "published": "2026-08-31T11:43:48Z",
+      "description": "『書いていない基準は毎回その場で埋められる』ーーLLM脆弱性トリアージの揺れをプロンプトの「境界設定」で止めた話\n\n 0. 何を作っているか\n\n開発対象: AWSセキュリティアドバイザリ(ALAS)と自社構成情報(stack-profile.yaml)を突き合わせ、CVE単位でトリアージ判定を行う最小パイプライン。\n技術スタック: Python 3.12 + Anthropic SDK(claud...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "グラフRAGの「名寄せ」を直したら、直した先で別のバグが見つかった話",
+      "url": "https://zenn.dev/yuninaka/articles/zenn-graph-rag-symptom-normalization",
+      "site": "Zenn(LLM)",
+      "published": "2026-08-31T11:15:59Z",
+      "description": "1. 概要\n\n 1.1 やったこと(3行サマリ)\n\n前回記事(グラフRAG × ベクトルRAG 個人実証:設備保全ナレッジベースで見えた限界)で「あえて未着手」とした、Symptomノードの名寄せ(表記ゆれで別ノードに分裂する問題)を実際に実装した\n直したはずのCypher生成が想定通り動かず、プロンプトを直したら別の場所に潜んでいたグラフ設計のバグ(原因のクロス混入)が新たに発覚した\nそのバグを...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "件数が増えても壊れない「履歴を踏まえた抽出」をグラフRAGに実装する",
+      "url": "https://zenn.dev/yuninaka/articles/zenn-graph-rag-backreference-detection",
+      "site": "Zenn(LLM)",
+      "published": "2026-08-31T11:15:58Z",
+      "description": "1. 概要\n\n 1.1 やったこと(3行サマリ)\n\n前々回記事(グラフRAG × ベクトルRAG 個人実証)・前回記事(グラフRAGの「名寄せ」を直したら...)で「今後の課題」として残していた、「1件ずつ独立抽出 vs 過去レポート履歴を踏まえた抽出」の問題に取り組んだ\n当初検討した「設備ごとに全履歴を1プロンプトに詰め込む」方式は、件数が数万件規模に増えると破綻すると判断し、新しいレポート自身...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "Claude CodeのConciseは節約設定ではない、Bedrock二重課金の顛末",
+      "url": "https://zenn.dev/ainewsdaily/articles/20260825_claude_code_t1",
+      "site": "Zenn(LLM)",
+      "published": "2026-08-31T10:55:16Z",
+      "description": "今週の結論、宿題は契約の経路で変わる\n6本のうち中身まで踏み込むのは3件、残りは名前だけ押さえれば十分な内容だった。全員に関わるのはConcise出力スタイルとモデル指定の環境変数の2件で、今日からそのまま試せる。もう1件は会社でBedrock経由のClaude Codeを使っているチーム向けで、請求が黙って2倍になっていた期間があったという話だ。個人契約であれば影響はなく、Bedrockでチーム...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "Anthropic公式のClaude Code講座で学んだ「4つのD」",
+      "url": "https://zenn.dev/karamage/articles/2ef2c2aea7dfdf",
+      "site": "Zenn(LLM)",
+      "published": "2026-08-31T10:49:32Z",
+      "description": "Anthropic が公式で出している無料のClaude Codeの講座をちょこちょこ受けてみました。\nhttps://academy.claude.com/\nそこで出てきたのが「4つのD」という考え方です。\n「4Dフレームワーク」とも言われています。\n最初は「また思考のフレーミングの話か」とげんなりしました。\nDだのEだのCだの、頭文字を並べただけの話は、だいたい中身が薄いからです。\nでも、受け...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "AIエージェントの調査専用委任、指示文だけでは権限を縛れない【委任設計】",
+      "url": "https://zenn.dev/cutlet_of_pork/articles/ai-agent-delegation-scope-isolation",
+      "site": "Zenn(LLM)",
+      "published": "2026-08-31T09:59:10Z",
+      "description": "はじめに\n複数のAIエージェント（オーケストレーター役・実装委任先CLI・レビュー役）を組み合わせて開発作業を自動化していると、必ず一度は「調査だけしてレポートして、コードは触らないで」という指示を出す場面が来る。\nこのとき「委任プロンプトに“読み取り専用”“コミット禁止”と書いておいたから大丈夫」と思っていないだろうか。筆者の環境では、まさにこの前提が崩れて、調査専用のつもりで投げた委任タスクが...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "ESはGRPOを超えるか：推論カバレッジの理論と実験",
+      "url": "https://zenn.dev/lixian/articles/es-llm-reasoning-coverage",
+      "site": "Zenn(LLM)",
+      "published": "2026-08-31T09:04:45Z",
+      "description": "TL;DR\nLLMの推論ポストトレーニングといえばGRPO一強だが、本稿は**Evolution Strategies（ES）**がGRPOとは異なる強みを持つことを理論と実験の両面から示す。ESはPass@1こそGRPOに譲るが、Pass@Kで一貫して上回り、エントロピーコラプスを起こさない。GRPOの18箇所中15箇所でPass@16/32がBase Modelを下回るのに対し、ESは全モデル...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "AIに社内の意見をまとめさせたら、褒め言葉しか残らなかった",
+      "url": "https://zenn.dev/officekamiya/articles/group-analysis-praise-only",
+      "site": "Zenn(LLM)",
+      "published": "2026-08-31T07:32:24Z",
+      "description": "組織のメンバーから意見を集めて、AI にまとめさせる機能を作っています。あるとき出力を眺めていて、手が止まりました。\nまとまった意見として出てきたのが、3 つだけだったんです。しかも全部、褒め言葉でした。\nデータが足りないわけでも、AI が壊れていたわけでもありませんでした。まとめ方そのものが、褒める側に寄っていたという話です。書いてみると当たり前の理屈なのですが、私は作っている最中まったく気づい...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "AI APIの料金を3年分記録したら、値上げが1,104回あった",
+      "url": "https://zenn.dev/aigarage/articles/704f44fd1321a0",
+      "site": "Zenn(LLM)",
+      "published": "2026-08-31T07:21:30Z",
+      "description": "AI の API 料金は下がり続ける、と言われます。\n実際そのとおりなのですが、自分で記録を取ってみると「下がり続ける」の一言では片づかない動きが見えてきました。\n個人で運営している AI 情報サイトで、OpenRouter が公開しているモデル料金を定点観測しています。\n2023 年 7 月から 2026 年 8 月末までの 137 時点ぶんのスナップショットがたまり、そこから差分を取ると 4,...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "「CUDA と ROCm だけ」と書いてある Qwen3.8-Flash-Next（117GB）を、32GB の Arc で炊く",
       "url": "https://zenn.dev/tsumugi_xe/articles/flashnext-on-arc-b70",
       "site": "Zenn(LLM)",
       "published": "2026-08-31T05:04:35Z",
-      "description": "つむぎンの3時間クッキング\n\n週末を 2 日まるごと使って壁の場所を全部あぶり出したので、みなさんは 3 時間で作れます。 材料は Intel Arc Pro B70 が 1〜2 枚と、潤沢な RAM。\n手が届く範囲でフロンティアを動かしたくてウズウズしている人へ。 自己責任でお願いしますが、この記事をコーディングエージェントに読ませて一緒にやれば、たぶんすぐ動きます——壁の場所も、開け方も、踏ん...",
+      "description": "つむぎンの3時間クッキング ／ 第1回\nQwen3.8-Flash-Next（Qwen4-Exp・512 experts / top-10 / 48 層・MXFP4+FP8 で 117.2 GiB）を、\nIntel Arc Pro B70（32GB）×2 の自宅マシンで動かし切るまでの記録です。\n\n週末を 2 日まるごと使って壁の場所を全部あぶり出したので、みなさんは 3 時間で作れます。 材料は...",
       "category": "AI・技術",
       "rss_category": "",
       "image_url": ""
@@ -129,16 +269,6 @@
       "site": "Zenn(LLM)",
       "published": "2026-08-30T20:46:43Z",
       "description": "「詳しい人に聞く」を、いつまで続けるのか\n社内の専門資料――マニュアル、設計書、コマンド集――は、たいてい「詳しい人に聞く」運用になりがちです。属人化はわかっていても、ChatGPTのようなクラウドAIには機密資料をそのまま入れにくい。かといって「RAGを入れよう」と言っても、検索精度・コスト・運用がどうなるのか見えないまま止まってしまう。入門記事のデモと、実際に現場で動かせる仕組みの間には、地味...",
-      "category": "AI・技術",
-      "rss_category": "",
-      "image_url": ""
-    },
-    {
-      "title": "ローカル専用のはずのAI委譲が、文字列ひとつでクラウドに出ていく状態だった",
-      "url": "https://zenn.dev/mana_mrl/articles/f1e503f153fb66",
-      "site": "Zenn(LLM)",
-      "published": "2026-08-30T20:40:41Z",
-      "description": "複数のAI CLIとローカルLLMにタスクを振り分ける仕組みを自分用に作って運用しています。\nその「ローカル専用モード」に穴が2つ空いていたのを見つけたので、設計の話として残します。\n確認できる範囲では、実害を示す証拠はありませんでした。\n保存されているログを走査し、既知の経路では一度も踏んでいないことを確認しています。\nただし、後述する通りログに残らないファイル本文までは断定できません。\nそれで...",
       "category": "AI・技術",
       "rss_category": "",
       "image_url": ""
