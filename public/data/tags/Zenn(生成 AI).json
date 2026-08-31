@@ -1,8 +1,18 @@
 {
   "site": "Zenn(生成 AI)",
-  "last_updated": "2026-08-30T23:54:41.841031",
-  "total_articles": 3633,
+  "last_updated": "2026-08-31T04:39:12.084219",
+  "total_articles": 3636,
   "articles": [
+    {
+      "title": "Azure OpenAIで社内用と社外用のガードレールを分ける — ヘッダー1本、ただし罠が4つ",
+      "url": "https://zenn.dev/kazu_aiengineer/articles/azure-openai-content-filter-per-request",
+      "site": "Zenn(生成 AI)",
+      "published": "2026-08-30T19:26:05Z",
+      "description": "先に結論\nAzure OpenAI のコンテンツフィルター（RAIポリシー）は、デプロイに紐づけるものだと思い込んでいた。\n社内向けは緩く、社外公開向けは厳しく——という使い分けをしたければ、デプロイを2つ作るしかない、と。\nそうではなかった。リクエストヘッダーに x-policy-id を1本足すだけで、その呼び出しだけポリシーを差し替えられる。\ncurl -X POST \"$ENDPOINT/...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
     {
       "title": "【AIエージェントでナポレオン】# 19. どこをいじっても、壁は動かなかった日",
       "url": "https://zenn.dev/gakusys/articles/548e19bd7a102f",
@@ -34,11 +44,31 @@
       "image_url": ""
     },
     {
+      "title": "名ばかりFDEから脱却するには、事業構造の再設計を",
+      "url": "https://zenn.dev/syoshida07/articles/3eab1615732f8f",
+      "site": "Zenn(生成 AI)",
+      "published": "2026-08-30T13:48:16Z",
+      "description": "FDE(Forward Deployed Enginee)は、顧客の現場に深く入り込み、課題発見から要件定義・設計・開発・導入後の改善まで一貫して伴走する課題解決型エンジニアである。\nSIerが企業形態であるのに対し、FDEは現場で成果を出す役割に重きを置くが、未だに日本でFDE型のAIビジネスが難しいのは、産業構造・契約慣行・組織文化がFDEの前提と根本的に噛み合わないのではないか。\n課題発見・...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
       "title": "Seedance と Remotion で縦型リールを作ったら、映像以外が全部壊れた",
       "url": "https://zenn.dev/shupopo/articles/claude-code-seedance-remotion-reel",
       "site": "Zenn(生成 AI)",
       "published": "2026-08-30T13:08:34Z",
       "description": "45 秒の縦型動画を 1 本作った。\n人物が正面を向いて話し、テロップが乗り、話の内容に合わせて図版が出る。よくある形式である。\n映像そのものの生成は、いちばん簡単な工程だった。\nプロンプトを投げて数十秒待てば、写実的な人物がカメラに向かって喋っている 5 秒のクリップが返ってくる。\n時間を溶かしたのは、その手前と後ろにあった作業のほうである。\n構成は次の三つに分かれる。\n\n\nSeedance：映...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "プロンプトのテストに CI は無い — 学生の試験のように選択式で測る設計",
+      "url": "https://zenn.dev/activecore/articles/a3d90e45ecff2a",
+      "site": "Zenn(生成 AI)",
+      "published": "2026-08-30T13:00:43Z",
+      "description": "業務で、AI に文章を書かせている。書き上がった文章は別の AI に渡して、「ルールを守れているか」を見せている。この記事では前者を書き手役、後者を判定役と呼ぶ。私の仕事は、判定役の判定が当たっているかを確かめることだ。\nその確認を、人が読まずに機械で答え合わせできる形に設計した。実測はまだなので、ここに書くのは設計と、根拠にした論文の数字だけになる。\n\n コードには CI があった\nコードを書い...",
       "category": "AI・技術",
       "rss_category": "",
       "image_url": ""

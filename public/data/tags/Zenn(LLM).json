@@ -1,18 +1,8 @@
 {
   "site": "Zenn(LLM)",
-  "last_updated": "2026-08-30T23:54:41.841031",
-  "total_articles": 5756,
+  "last_updated": "2026-08-31T04:39:12.084219",
+  "total_articles": 5761,
   "articles": [
-    {
-      "title": "Azure OpenAIで社内用と社外用のガードレールを分ける — ヘッダー1本、ただし罠が4つ",
-      "url": "https://zenn.dev/kazu_aiengineer/articles/azure-openai-content-filter-per-request",
-      "site": "Zenn(LLM)",
-      "published": "2026-08-30T19:26:05Z",
-      "description": "先に結論\nAzure OpenAI のコンテンツフィルター（RAIポリシー）は、デプロイに紐づけるものだと思い込んでいた。\n社内向けは緩く、社外公開向けは厳しく——という使い分けをしたければ、デプロイを2つ作るしかない、と。\nそうではなかった。リクエストヘッダーに x-policy-id を1本足すだけで、その呼び出しだけポリシーを差し替えられる。\ncurl -X POST \"$ENDPOINT/...",
-      "category": "AI・技術",
-      "rss_category": "",
-      "image_url": ""
-    },
     {
       "title": "AIが大量のコードを書く時代、人間はどこまで理解すべきか――設計は人間、内部実装はAI",
       "url": "https://zenn.dev/c_a_p_engineer/articles/ai-understanding-boundary",
@@ -54,6 +44,16 @@
       "image_url": ""
     },
     {
+      "title": "開発中に Claude Code のキャッシュミスで大量トークン消費を踏んだ — セッション共有と fork の備忘録",
+      "url": "https://zenn.dev/haw2fregel/articles/claude-code-fork-session",
+      "site": "Zenn(LLM)",
+      "published": "2026-08-30T15:28:11Z",
+      "description": "やりたかったこと\nClaude Code を外部アプリから扱う際、\nログイン済みのアカウントで通し、デスクトップアプリとセッションを共有する仕組みを作りたかった。\nこのセッション共有が原因でキャッシュミスを起こしていた。\n\n 初期案: 外から同じセッションを掴む\n作ったのは Blender アドオンの claude-in-blender。デスクトップアプリの会話を共有しつつ、Blender のパネ...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
       "title": "SWE-agent のアブレーションから見る ACI 設計と AI エージェント性能",
       "url": "https://zenn.dev/id774/articles/c09d6fdec1aaa7",
       "site": "Zenn(LLM)",
@@ -74,11 +74,61 @@
       "image_url": ""
     },
     {
+      "title": "自律エージェントを実装すると、決めることになる項目",
+      "url": "https://zenn.dev/hosaka2/articles/4e4b868c68c07a",
+      "site": "Zenn(LLM)",
+      "published": "2026-08-30T14:15:30Z",
+      "description": "カメラで作業を見守り、音声でガイドするモバイルアプリを作りました。この記事は、そのアーキテクチャ設計の記録です。\n人間が話しかけなくても勝手に回り続けるループを作ると、普通のチャットアプリでは出てこない決定を何度も迫られます。決めたことと、その代償をそのまま残します。\nhttps://github.com/hosaka2/guidey\n\n\n 作ったもの\nスマホのカメラで数秒ごとに作業を撮影し、AI...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
       "title": "Vision LLM に文字を読ませると、自信を持って間違える",
       "url": "https://zenn.dev/fukunagajiro/articles/vision-llm-uncertainty-marks",
       "site": "Zenn(LLM)",
       "published": "2026-08-30T13:15:22Z",
       "description": "スマホで撮影した日本語の冊子 PDF を Claude に読ませ、Markdown に起こすツール scan2md を作りました。読めなかった文字は {{…}} で囲んで出力し、画像と突き合わせて確定するところは手作業に残しています。同じページを Claude の 3 モデルとローカル LLM の 2 モデルに読ませると、{{…}} の数はモデルごとに 0 件から 8 件まで違いました。数が少ない...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "「AIに教えてもらう」のをやめて、「AIに教える」教育システムを作りたい（EMC対策のパスコン選定をお題に）",
+      "url": "https://zenn.dev/forlornhope1021/articles/e9aa3f3a703fab",
+      "site": "Zenn(LLM)",
+      "published": "2026-08-30T11:58:37Z",
+      "description": "はじめに\n生成AIに分からないことを聞けば、一瞬で答えが返ってくる時代になりました。\n回路設計の疑問を投げれば、丁寧に解説してくれる。\nデータシートの要約も作ってくれる。\nソースコードの間違いも指摘してくれる。\nこれはものすごく便利です。\n……でも、ふと思いました。\n便利すぎて、人間が「分かったつもり」になってしまわないだろうか？\nそこで、少し逆向きの発想をしてみました。\n\nAIに教えてもらうので...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "エージェントと過ごした1か月、朝ごはんが錠剤になるまで",
+      "url": "https://zenn.dev/nhandsome/articles/agent-work-shift-one-month",
+      "site": "Zenn(LLM)",
+      "published": "2026-08-30T11:52:37Z",
+      "description": "このブログは、エージェントの活動ログをもとに下書きを自動作成し、筆者のレビューを経て公開しています。\n!\n3行まとめ\n\n業務にエージェントを1か月使ってみました。速くなったのではなく、仕事の形が変わりました\n繰り返し作業は3倍以上速くなり、積み上がった知識が次の仕事に効いて、「やるかどうか」を迷わずまずやるようになりました\nまだ慎重にしていることと、人に残った役割まで、そのまま書きました\n\n\nこの...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "Kimi K2.7-Codeの「+21.8%」は何を測った数字か — 自社ベンチと独立ベンチの違いを整理する",
+      "url": "https://zenn.dev/kai_kou/articles/603-kimi-k27-code-benchmark-pitfall",
+      "site": "Zenn(LLM)",
+      "published": "2026-08-30T11:37:21Z",
+      "description": "はじめに\n新しいLLMが発表されるたびに「自社ベンチマークで前世代比+◯◯%」という数字を目にします。Moonshot AIが2026年6月にリリースした「Kimi K2.7-Code」も、自社ベンチ「Kimi Code Bench v2」でK2.6比+21.8%を謳い、出力コストはGPT-5.5のおよそ7分の1という価格設定で話題になりました。\nこれは個人として応援しているYouTubeチャンネ...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "「表示されない」は「秘密」ではない —— AIエージェントの来歴情報を公開物から分離する",
+      "url": "https://zenn.dev/c_a_p_engineer/articles/hidden-is-not-secret-provenance-boundary",
+      "site": "Zenn(LLM)",
+      "published": "2026-08-30T11:30:20Z",
+      "description": "AIエージェントを改善するとき、私は 可観測性（Observability） を重視しています。\nここでいう可観測性とは、最終結果だけでなく、 どの資料を取得し、どの道具を使い、何を根拠に判断し、最後に何を確認したのかを後から追えること です。\nそのために私は、実行過程の 来歴情報（Provenance） を残すようになりました。来歴情報とは、簡単に言えば 「この成果物が、何を使って、どのような過...",
       "category": "AI・技術",
       "rss_category": "",
       "image_url": ""
