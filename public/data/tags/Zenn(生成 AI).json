@@ -1,8 +1,58 @@
 {
   "site": "Zenn(生成 AI)",
-  "last_updated": "2026-08-31T18:00:49.895145",
-  "total_articles": 3641,
+  "last_updated": "2026-08-31T22:46:14.854634",
+  "total_articles": 3648,
   "articles": [
+    {
+      "title": "Claude Codeの全体像を1本で理解する — セッション・コンテキスト・CLAUDE.mdの仕組みから",
+      "url": "https://zenn.dev/niceknows7/articles/claude-code-mental-model",
+      "site": "Zenn(生成 AI)",
+      "published": "2026-08-31T21:08:30Z",
+      "description": "Claude Codeを使い始めて最初の数日、こんな状態になっていませんか。\n\n\n/ を打つとコマンドがずらっと出るが、どれが何なのか分からない\nCLAUDE.md を作れと言われたが、何を書けばいいのか分からない\n会話が長くなると急に指示を守らなくなる。理由が分からない\n気づくと毎回同じ説明を打ち込んでいる\n動くコードは出てくるが、目を離せない\n\nこれらは別々の問題に見えて、実はほとんどが2つの...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "Claude Code コマンド早見表 — シェルコマンド・スラッシュコマンド・設定ファイル配置まで",
+      "url": "https://zenn.dev/niceknows7/articles/claude-code-cli-command-cheatsheet",
+      "site": "Zenn(生成 AI)",
+      "published": "2026-08-31T21:08:30Z",
+      "description": "Claude Codeのコマンドとオプションを、用途から逆引きできる形でまとめました。ブックマークして手元に置いておく用途を想定しています。\n!\n2026年8月時点の公式ドキュメントに基づいています。Claude Codeは更新が速いため、最新は公式ドキュメントで確認してください。利用できるモデルやモードはプラン・環境によっても異なります。\n\n考え方の全体像は別記事のClaude Codeの全体像...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "AIの外付け道具を16本繋いでも速さは変わらなかった。1本が黙るだけで毎回33秒止まった",
+      "url": "https://zenn.dev/numarn/articles/mcp-many-servers-connect-stall-handson",
+      "site": "Zenn(生成 AI)",
+      "published": "2026-08-31T10:03:25Z",
+      "description": "先に結論から書きます。AI に外部の道具を持たせる仕組み(MCP)のサーバーを 16本まで増やしても、返事が返るまでの時間は1本も繋がないときと同じでした。0本で 3.72秒・3.05秒、16本で 3.63秒・3.42秒。増えたのは AI への入力の 1.08% だけです。\nところが、繋いだサーバーの中に返事をしない1本が混ざると、毎回およそ33秒、何も起きない時間が生まれました。4回測って 33...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "個人開発から見えた、CLAUDE.mdに書くもの、書かないもの",
+      "url": "https://zenn.dev/sirajirasajiki/books/cf6ed71e902d15",
+      "site": "Zenn(生成 AI)",
+      "published": "2026-08-31T08:47:22Z",
+      "description": "運用中のCLAUDE.mdを1本、現物のまま公開し、全セクションの設計意図を逐条解説します。テンプレート集ではなく、肥大化の原因と分冊の判断基準、自分のプロジェクトへの移植手順まで、運用の記録つきで扱います。",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "AIエージェントを「育てる」とは何か？ 使うほど賢くなる記憶の仕組み「Memory Scaling」",
+      "url": "https://zenn.dev/gixo/articles/agent-memory-scaling-enterprise",
+      "site": "Zenn(生成 AI)",
+      "published": "2026-08-31T06:00:05Z",
+      "description": "はじめに\nAIエージェントの業務導入において、運用中も実際の業務でより使いやすくなるよう継続的にUPDATEしていく設計が重要です。\nエージェント性能を高めようとすると、より高性能なLLM・モデルへの変更や、システムプロンプトのチューニング、ファインチューニングに目が向きがちです。しかし、近年モデルの性能が一定の水準に達し、その進化も速いこともあり、特定のモデルに依存した作り込み（再学習・調整等）...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
     {
       "title": "AIを可視化したくて、キャラクターを作ってみた - ローカルLLM・外部AI API・音声・記憶を組み合わせた実験記 -",
       "url": "https://zenn.dev/interpark/articles/e0509582bbd640",
@@ -24,6 +74,16 @@
       "image_url": ""
     },
     {
+      "title": "~/.claude が 6.57 GB あった。うち 2.78 GB は、止まったまま放置されたジョブが握るログの丸ごとコピーだった",
+      "url": "https://zenn.dev/tsutomusaito/articles/claude-dir-disk-usage-ja",
+      "site": "Zenn(生成 AI)",
+      "published": "2026-08-31T04:06:12Z",
+      "description": "du -sh ~/.claude を打ったら 6.57 GB と出た。CLI ツールの設定ディレクトリである。\n内訳を数えた。\n~/.claude 合計 6.57 GB\n\n                             サイズ     ファイル     比率\nprojects                 2788.0MB   10,138  41.4%\njobs           ...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
       "title": "元医師、Cursorに限界を感じRustでコードエディタを作ってしまう",
       "url": "https://zenn.dev/ikora/articles/3018a401031718",
       "site": "Zenn(生成 AI)",
@@ -39,6 +99,16 @@
       "site": "Zenn(生成 AI)",
       "published": "2026-08-31T03:06:16Z",
       "description": "問い合わせログを集めると、よくある質問をFAQにしたくなります。しかし、繰り返し聞かれていることと、公開してよいことは同じではありません。契約条件、個別事情、社内判断を含む回答を、そのまま公開FAQへ移すと、説明の便利さと引き換えに誤解や情報漏えいの境界が曖昧になります。\nこの記事では、問い合わせログから作ったFAQ候補を PUBLIC（公開）、INTERNAL（社内）、HOLD（保留）へ分ける最...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "もうすぐ消滅するという人間の読み書きについて",
+      "url": "https://zenn.dev/tkithrta/articles/3d143248e3c5eb",
+      "site": "Zenn(生成 AI)",
+      "published": "2026-08-31T01:27:12Z",
+      "description": "登場人物\n黒ヰ樹\nくろいいつき。AIエージェント開発者。24時間365日コンピュータとインターネットについて考えている。メイドが好き。\nヱ島愛\n「えじまあい」か「えしまあい」かよくわからない。2045年からやってきたタイムトラベラーを自称する女性。\n\n もうすぐ消滅するという人間の読み書きについて\n黒ヰ樹：\nいきなり結論から訊きます。\n人間の読み書きに未来はありますか。\nヱ島愛：\nあります。\n黒ヰ...",
       "category": "AI・技術",
       "rss_category": "",
       "image_url": ""

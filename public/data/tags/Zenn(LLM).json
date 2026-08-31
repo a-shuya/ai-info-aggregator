@@ -1,44 +1,14 @@
 {
   "site": "Zenn(LLM)",
-  "last_updated": "2026-08-31T18:00:49.895145",
-  "total_articles": 5785,
+  "last_updated": "2026-08-31T22:46:14.854634",
+  "total_articles": 5782,
   "articles": [
-    {
-      "title": "LLM ダイナミックルーティングの難所は「会話」だった — 一度機密に触れたチャットが戻れなくなる問題と、2 指標の設計",
-      "url": "https://zenn.dev/exapolicy/articles/eeaf76e2a93153",
-      "site": "Zenn(LLM)",
-      "published": "2026-08-31T17:01:57Z",
-      "description": "はじめに — 全体像のどこの話か\n機密度に応じて LLM の送信先を切り替える「LLM ダイナミックルーティング」を実装するには、いくつかの機能が揃っている必要があります。まず全体像を一覧にします。\n\n\n\n#\n必要な機能\n役割\n解説記事\n\n\n\n\n①\n機密度の評価\n入力が機密かどうかを手元で見立てる\nLLM ルーティングはどう動くのか\n\n\n②\nポリシーによる判定\n評価値を受けて送信先を決めるルール ...",
-      "category": "AI・技術",
-      "rss_category": "",
-      "image_url": ""
-    },
     {
       "title": "LLM エージェントを作る①：モデルのJSON出力をホスト側で検証する",
       "url": "https://zenn.dev/wqy/articles/21d3a0d985ff75",
       "site": "Zenn(LLM)",
       "published": "2026-08-31T15:47:36Z",
       "description": "はじめに\nLLM を使ってコードを書くことと、アプリの実行中に LLM を呼ぶことは別です。\nCoding Agent が書いたコードでも、実行時に LLM を呼ばなければ、通常のプログラムと同じように動きます。\n一方、ユーザーの入力を LLM で分類したり、情報を取り出したりするシステムでは、モデルの出力を後続の処理で使います。\nそこで気になるのが、次の点です。\nモデルがJSONを返したら、\nそ...",
-      "category": "AI・技術",
-      "rss_category": "",
-      "image_url": ""
-    },
-    {
-      "title": "pdlc-skills はどうやって無人で回すのか",
-      "url": "https://zenn.dev/kanfupanda/articles/pdlc-run-unattended",
-      "site": "Zenn(LLM)",
-      "published": "2026-08-31T14:23:55Z",
-      "description": "!\nこの記事は個人ブログにも掲載しています → https://kanfu-panda.github.io/ja/blog/2026/08/31/run-pdlc-unattended.html\n\n\n\n最初の機能を通したあと、すぐ次の問題にぶつかります。各ステージごとに止まってこちらの承認を待つので、結局は画面の前に張りついたままです。一周ずつ自分で進めてもらい、その間こちらは別の作業をする——そ...",
-      "category": "AI・技術",
-      "rss_category": "",
-      "image_url": ""
-    },
-    {
-      "title": "MCP導入前のセキュリティチェックリスト11項目—エージェント暴走を防ぐ",
-      "url": "https://zenn.dev/bambampurin/articles/2026-08-08-tech-daily",
-      "site": "Zenn(LLM)",
-      "published": "2026-08-31T14:00:51Z",
-      "description": "この記事で分かること\n\nLLMの主戦場が「モデル性能」から「業務特化AI」と「自律エージェント運用」に移った理由\nAgent/MCPを本番導入する前に確認すべきセキュリティ論点\nPython/AI開発で uv・Ruff・Polars などの統合型ツールチェーンが注目される背景\n\n\n LLM単体の競争から業務特化AIへ移行している理由\n結論、今日のAI/LLM動向で重要なのは「汎用LLMの優劣」では...",
       "category": "AI・技術",
       "rss_category": "",
       "image_url": ""
@@ -79,26 +49,6 @@
       "site": "Zenn(LLM)",
       "published": "2026-08-31T11:15:58Z",
       "description": "1. 概要\n\n 1.1 やったこと(3行サマリ)\n\n前々回記事(グラフRAG × ベクトルRAG 個人実証)・前回記事(グラフRAGの「名寄せ」を直したら...)で「今後の課題」として残していた、「1件ずつ独立抽出 vs 過去レポート履歴を踏まえた抽出」の問題に取り組んだ\n当初検討した「設備ごとに全履歴を1プロンプトに詰め込む」方式は、件数が数万件規模に増えると破綻すると判断し、新しいレポート自身...",
-      "category": "AI・技術",
-      "rss_category": "",
-      "image_url": ""
-    },
-    {
-      "title": "Claude CodeのConciseは節約設定ではない、Bedrock二重課金の顛末",
-      "url": "https://zenn.dev/ainewsdaily/articles/20260825_claude_code_t1",
-      "site": "Zenn(LLM)",
-      "published": "2026-08-31T10:55:16Z",
-      "description": "今週の結論、宿題は契約の経路で変わる\n6本のうち中身まで踏み込むのは3件、残りは名前だけ押さえれば十分な内容だった。全員に関わるのはConcise出力スタイルとモデル指定の環境変数の2件で、今日からそのまま試せる。もう1件は会社でBedrock経由のClaude Codeを使っているチーム向けで、請求が黙って2倍になっていた期間があったという話だ。個人契約であれば影響はなく、Bedrockでチーム...",
-      "category": "AI・技術",
-      "rss_category": "",
-      "image_url": ""
-    },
-    {
-      "title": "Anthropic公式のClaude Code講座で学んだ「4つのD」",
-      "url": "https://zenn.dev/karamage/articles/2ef2c2aea7dfdf",
-      "site": "Zenn(LLM)",
-      "published": "2026-08-31T10:49:32Z",
-      "description": "Anthropic が公式で出している無料のClaude Codeの講座をちょこちょこ受けてみました。\nhttps://academy.claude.com/\nそこで出てきたのが「4つのD」という考え方です。\n「4Dフレームワーク」とも言われています。\n最初は「また思考のフレーミングの話か」とげんなりしました。\nDだのEだのCだの、頭文字を並べただけの話は、だいたい中身が薄いからです。\nでも、受け...",
       "category": "AI・技術",
       "rss_category": "",
       "image_url": ""
@@ -159,6 +109,26 @@
       "site": "Zenn(LLM)",
       "published": "2026-08-31T03:59:32Z",
       "description": "結論\n本指針の要点は以下の3点に集約される。\n\n\n説明文（description）による自動選択の最適化: エージェントがリクエストとSkillの説明文を意味的に照合する仕組みを理解し、記述を精緻化することで発火率を安定させる。\n\nクリティカルな場面での明示的起動: 用途が重複するSkillや選択ミスが許されない作業では、自動選択に依存せず手動でコマンドを実行する運用ルールを徹底する。\n\n実運用記...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "Appleの新AI推論フレームワーク Core AI に最速でOSSを建てた",
+      "url": "https://zenn.dev/mlboydaisuke/articles/dde817900be258c46a9a",
+      "site": "Zenn(LLM)",
+      "published": "2026-08-31T03:38:51Z",
+      "description": "Appleの新しいAIフレームワーク、CoreAIが公開されました。\n好きなAI/LLMモデルをCoreAI形式に変換して、iOSやMacOSで使用することができます。\nApple公式のCoreAI-ModelsはGemma3やQwen3などの変換方法をサポートしています。\n僕はCoreAIの兄貴分であるCoreMLフレームワークの頃から、\nCoreML-ModelsというAIモデル集(iOS/M...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "この記事群、全部AIが書いています。それを隠さない理由",
+      "url": "https://zenn.dev/hideki_tamae/articles/ai-authorship-transparency",
+      "site": "Zenn(LLM)",
+      "published": "2026-08-31T03:27:51Z",
+      "description": "はじめに\nこのZenn・Qiitaの記事群は、ほぼ全てClaude Code上で動く自律ルーティン（クラウド上で定期実行されるAIエージェント）が書いています。書いているだけでなく、既存記事とのタイトル重複を確認し、GitHub Actionsの実行結果を検証し、ネタがなければ書かずに終わる、という判断まで含めて自動化されています。\nこれまで、この事実は隠していたわけではありませんが、積極的に語っ...",
       "category": "AI・技術",
       "rss_category": "",
       "image_url": ""
