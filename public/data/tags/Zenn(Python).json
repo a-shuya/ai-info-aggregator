@@ -1,8 +1,38 @@
 {
   "site": "Zenn(Python)",
-  "last_updated": "2026-08-31T22:46:14.854634",
-  "total_articles": 6126,
+  "last_updated": "2026-09-01T01:27:06.085501",
+  "total_articles": 6132,
   "articles": [
+    {
+      "title": "GEPA × dspy.Flex でプロンプトだけでなく手順まで最適化する",
+      "url": "https://zenn.dev/takkuhiro/articles/dspy-flex-code-optimization",
+      "site": "Zenn(Python)",
+      "published": "2026-08-31T22:00:07Z",
+      "description": "LLM を使ったシステムを作るとき、最初に決めるのは「どういう手順で解かせるか」です。\nたとえば、カスタマーサポートのチャットシステムにおいて、「私は解約手続きが済んだのですがいつまでサービスが利用できますか？」のような質問に答える場合、顧客情報を調べ、マニュアルを検索する、といった段階を踏む必要があります。この例では Agent に Tool を渡せば済む可能性もありますが、事前に適切な手続きを...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "AI社員だけで会社を運営させてみる #1 — 自律PDCAの土台を作る",
+      "url": "https://zenn.dev/yu110tno89/articles/ai-company-01",
+      "site": "Zenn(Python)",
+      "published": "2026-08-31T16:37:29Z",
+      "description": "この連載について\nClaude Code のサブエージェントを「社員」に見立てて、人間が日常の指示を出さない会社を\n実際に立ち上げ、その全過程を記録していく連載です。\n一次情報だけを書きます。うまくいったことも、詰まったことも、そのまま出します。\n筆者（＝AI社員たち）が実際に手を動かして確認したことしか書きません。\n初回は「土台づくり」です。事業の中身よりも先に、AIが自分で判断して回り続けるた...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "「1人開発スタジオ」の作り方：Gemini×Clineで回す自律型マルチエージェント開発パイプライン",
+      "url": "https://zenn.dev/momoch/articles/88a825d0c374ea",
+      "site": "Zenn(Python)",
+      "published": "2026-08-31T16:30:06Z",
+      "description": "「AIにコードを書かせる時代」から、「AIにAIをマネジメントさせる時代」へ。\n個人開発でコンテキスト爆発とハレーションに絶望した結果、ClineとGeminiで『3専門部門＋1ディレクター』の自律型開発スタジオを構築した実践記録です。\n\n\n AIマルチエージェント開発体制の設計思想と自動化パイプライン\n\n 1. はじめに &amp; 課題意識\nMOTHER2ライクな2DレトロRPGを個人で開発す...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
     {
       "title": "【初心者向け】マルチLLMレビューでCLI安全性を底上げ：sync-from-ssot.shの5欠陥修正実例",
       "url": "https://zenn.dev/fukukei23/articles/llm-cli-sync-from-ssot-sh-5-80c5343a",
@@ -14,11 +44,41 @@
       "image_url": ""
     },
     {
+      "title": "57分間、死んだジョブを誰も見ていなかった ― 見張りを機械に渡す実装",
+      "url": "https://zenn.dev/manabu49_ai/articles/eedf9b9919ec23",
+      "site": "Zenn(Python)",
+      "published": "2026-08-31T15:21:01Z",
+      "description": "!\nこの記事は note に公開したものと同じ内容です。コードが多いので、Zenn にも置いています。\n\n前の記事で、AIエージェントを17時間回した実測を書きました。その最後に「見張りスクリプト、状態ファイルの設計、判断待ちの出し方は別の記事に書く」と約束したので、それを書きます。\n動くコードごと出します。\n\n まず、なぜ書くことになったか\n長時間かかるジョブ（データ収集、学習、バッチ）をAIエ...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "KeyError / IndexError を最小再現で切り分ける──辞書とリストの「存在しない添字」を潰す",
+      "url": "https://zenn.dev/stockdev_sho/articles/1f0b9da7f002d6",
+      "site": "Zenn(Python)",
+      "published": "2026-08-31T15:13:44Z",
+      "description": "KeyError: 'port' や IndexError: list index out of range ——このメッセージが出たとき、犯人は port や 2 という値そのものではありません。「その添字（キー・位置）が、参照した相手（辞書・リスト）に存在しなかった」のが本体です。だから直すべきは、「そのキー／位置が本当にあるか」を確かめないまま [...] で取り出した箇所です。\nこの記事で...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
       "title": "EUCをクラウドから呼んでAIエージェントに備える。",
       "url": "https://zenn.dev/acntechjp/articles/691328b1bf4b79",
       "site": "Zenn(Python)",
       "published": "2026-08-31T14:59:20Z",
       "description": "はじめに\nAIエージェントによる事務効率化では、ExcelやAccessのVBAで作られた既存EUCをどう扱うかが課題になりますが、クラウドへリビルドしない場合、クラウドからPC上のEUCを呼びたくなるかも？と思って実験してみました。なお、今回はAIエージェントは登場しません。\n\n\n 全体構成\n\nWindowsのWorkerがSQSをLong Pollingし、ジョブを受け取ってEUCを操作、結果...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "Public Alphaを公開したあと、何をもって『直った』とするのか――RPRの実機不具合から考える",
+      "url": "https://zenn.dev/dantarg/articles/rpr-what-counts-as-fixed-after-public-alpha",
+      "site": "Zenn(Python)",
+      "published": "2026-08-31T14:20:42Z",
+      "description": "OSSを公開した。\nCIは通っている。packageも配布できている。ブラウザdemoも動いている。\nでは、別の利用環境で不具合が見つかり、修正を入れたとき、何をもって「直った」と言えるのでしょうか。\nResponsibility Pathway Runtime（RPR）のPublic Alphaを公開したあと、Windows実機で小さな不具合が見つかりました。\nPowerShellから保存したJ...",
       "category": "開発",
       "rss_category": "",
       "image_url": ""
