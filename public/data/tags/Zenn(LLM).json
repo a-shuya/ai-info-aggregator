@@ -1,7 +1,7 @@
 {
   "site": "Zenn(LLM)",
-  "last_updated": "2026-09-01T16:37:02.103970",
-  "total_articles": 5801,
+  "last_updated": "2026-09-01T19:35:45.654526",
+  "total_articles": 5803,
   "articles": [
     {
       "title": "LLMに書き込ませるMCPツールの設計",
@@ -14,11 +14,11 @@
       "image_url": ""
     },
     {
-      "title": "M4 Max 部署 Qwen3.8-27B：高性能推理与多人共享实践",
-      "url": "https://zenn.dev/whotto/articles/0f75ad06435c49",
+      "title": "Agent Reflectionを超えて：未確定状態（Hi-Z）を保持する「空白駆動×ゴルジ体検疫」アーキテクチャ",
+      "url": "https://zenn.dev/nanashi_os/articles/f8a461cd706a25",
       "site": "Zenn(LLM)",
-      "published": "2026-09-01T09:09:22Z",
-      "description": "适用设备　40 核 GPU、128GB 统一内存、546GB/s 内存带宽的 M4 Max MacBook Pro 或 Mac Studio\n适用目标　在单台 Mac 上稳定运行 Qwen3.8-27B，并通过 OpenAI 兼容 API 提供给少量用户共享\n基准日期　2026-08-30。Qwen3.8、DeepSeek V4 Flash 和 oMLX 仍在快速迭代，升级前应重新跑本机基准。\n\n...",
+      "published": "2026-09-01T08:02:23Z",
+      "description": "1. はじめに：AIはなぜ「早すぎる回答」に飛びつくのか\n大規模言語モデル（LLM）を用いたエージェント開発において、我々は長らく「いかに素早く、正確に確定解を出力させるか」を最適化してきました。推論ループの改善手法として知られる Agent Reflection や Tree of Thoughts（ToT）も、その本質は「試行錯誤のステップを刻むことで、最短で正解（確定値）へ着地させる」ための...",
       "category": "AI・技術",
       "rss_category": "",
       "image_url": ""
@@ -29,6 +29,16 @@
       "site": "Zenn(LLM)",
       "published": "2026-09-01T07:02:00Z",
       "description": "1. はじめに\nこんにちは、クラウドエース第三開発部の小林です。\n生成 AI アプリの開発が急速に広まる一方で、プロンプトインジェクションをはじめとする「Large Language Model（以下、LLM） 固有のセキュリティリスク」への対策はまだまだ手探りな現場も多いと感じています。\nGoogle Cloud には Model Armor というセキュリティサービスがありますが、「名前は知っ...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "ローカルLLMに日本語でロールプレイさせると応答が20文字で終わる。二段生成で104文字にした",
+      "url": "https://zenn.dev/ont4mqz/articles/e70b26217269f4",
+      "site": "Zenn(LLM)",
+      "published": "2026-09-01T05:19:41Z",
+      "description": "起きていたこと\nローカルLLMにキャラクターを演じさせるデスクトップアプリを作っている。プロンプトの層構造（固定層 / 例示層 / 要約層 / 直近層 / 深度注入）もサンプラーも詰めて、自動評価の主要指標はきれいに揃った。拒否ゼロ、ループ（stuck_count）ゼロ、一人称のドリフトゼロ、定型表現ゼロ、会話要約からの記憶再現1.0。\nそれでも会話が成立しない。実際に返ってきていたのがこれだから...",
       "category": "AI・技術",
       "rss_category": "",
       "image_url": ""
@@ -169,6 +179,16 @@
       "site": "Zenn(LLM)",
       "published": "2026-08-31T22:19:27Z",
       "description": "はじめに\n前回、recipe-app第2陣のデータモデル拡張とUI刷新について書きました。今回は今回の目玉機能、NotebookLM(Googleのノート作成AIツール)が出力した文字起こしをレシピに取り込む機能についてです。\n紙のレシピや、YouTube動画・外部サイトの内容をNotebookLMに読み込ませて文字起こし・要約させ、その結果をアプリに貼り付けるだけで材料・手順が編集可能な行に自動...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "GEPA × dspy.Flex でプロンプトだけでなく手順まで最適化する",
+      "url": "https://zenn.dev/takkuhiro/articles/dspy-flex-code-optimization",
+      "site": "Zenn(LLM)",
+      "published": "2026-08-31T22:00:07Z",
+      "description": "LLM を使ったシステムを作るとき、最初に決めるのは「どういう手順で解かせるか」です。\nたとえば、カスタマーサポートのチャットシステムにおいて、「私は解約手続きが済んだのですがいつまでサービスが利用できますか？」のような質問に答える場合、顧客情報を調べ、マニュアルを検索する、といった段階を踏む必要があります。この例では Agent に Tool を渡せば済む可能性もありますが、事前に適切な手続きを...",
       "category": "AI・技術",
       "rss_category": "",
       "image_url": ""
