@@ -1,34 +1,34 @@
 {
   "site": "Zenn(LLM)",
-  "last_updated": "2026-09-02T09:01:36.803250",
-  "total_articles": 5829,
+  "last_updated": "2026-09-02T13:36:44.445207",
+  "total_articles": 5826,
   "articles": [
     {
-      "title": "設定に1行足したら同じ一問が1.43倍安くなった。8分放置したら、その1行が11倍高くついた",
-      "url": "https://zenn.dev/numarn/articles/claude-prompt-cache-ttl-setting-handson",
+      "title": "Claude Codeの従量課金が高すぎて、自分でLLMゲートウェイを作った話（teai.io と sente）",
+      "url": "https://zenn.dev/yukibjj/articles/teai-claude-code-too-expensive-sente",
       "site": "Zenn(LLM)",
-      "published": "2026-09-02T08:06:34Z",
-      "description": "AI を画面なしのコマンドとして呼ぶ使い方(claude -p)は、1回ごとに「いくらかかったか」と\n「何をどれだけ読ませたか」を JSON(機械が読みやすい形式のテキスト)で自己申告してくれる。その明細を眺めていて、見慣れない2行に気づいた。\n\"cache_creation\": {\n  \"ephemeral_1h_input_tokens\": 7907,\n  \"ephemeral_5m_inpu...",
+      "published": "2026-09-02T10:54:49Z",
+      "description": "きっかけは、毎月の請求\nClaude Code は本当によくできています。ただ、1日中エージェントを回していると従量課金の請求がかさむ。定額プランも Pro が月 $20、Max は月 $100 から（claude.com/pricing、2026-09-02 時点）で、円で見ると重い。\nAPI 単価は Claude Sonnet 5 が入力 $2 / 出力 $10（100万トークンあたり）、Op...",
       "category": "AI・技術",
       "rss_category": "",
       "image_url": ""
     },
     {
-      "title": "OCI Generative AIでGeminiもgpt-ossも呼べたので、7モデルの日本語力を比べてみた",
-      "url": "https://zenn.dev/sin9_ha/articles/oci-generative-ai-osaka-7models",
+      "title": "AIエージェントのコストと品質を自分のモデルで実測する「te bench」を作った",
+      "url": "https://zenn.dev/yukibjj/articles/te-bench-agent-model-cost-quality",
       "site": "Zenn(LLM)",
-      "published": "2026-09-02T07:59:48Z",
-      "description": "!\nこの記事は Qiita に投稿した記事 のクロスポストです。\n\n\n はじめに\nOCIには OCI Generative AI というマネージドな生成AIサービスがあります。CohereやMetaのLlamaをAPI経由で呼べるやつですね。\nこれをAPEXから使う記事を書こうとしていたのですが、このサービス、東京リージョンでは提供されていません。日本で使うなら大阪一択です。\nというわけで大阪リー...",
+      "published": "2026-09-02T10:54:49Z",
+      "description": "AIコーディングツールの導入でいちばんモヤるのは「このモデル、自分のタスクで本当にコスパ良いの?」という点です。ベンダーの発表するベンチマークは良いモデルで測られていて、自分が使うモデル・自分の実務では数字が違います。\nそこで te bench というコマンドを作りました。1行で、自分のAPIキーで動くモデルの 品質(機械採点の正答率)とコスト(実トークン×単価)を同時に実測 できます。\n\n 3行...",
       "category": "AI・技術",
       "rss_category": "",
       "image_url": ""
     },
     {
-      "title": "Claude Fable 5.1、Low effortで前世代maxと同等に。公式発表の要点をまとめて読み解いた",
-      "url": "https://zenn.dev/motoki0418/articles/4872d0e1da4f9c",
+      "title": "CLAUDE.md、どの行を消していいか分からない ── 24項目を1つずつ棚卸しした記録",
+      "url": "https://zenn.dev/motimotinotch/articles/8dead23696b8ef",
       "site": "Zenn(LLM)",
-      "published": "2026-09-02T07:35:53Z",
-      "description": "Fable 5.1 と Mythos 5.1 は別のモデルではありません。同じモデルに、強さの違う安全装置を付けた2つの提供形態です。そして「25% 安くなった」の中身は、入力・出力の単価は据え置きで、キャッシュ読みの単価だけが 75% 下がった結果です。\nこの2点を押さえると、乗り換えるか・どの effort で使うか・自分のワークロードで元が取れるかを、自分の数字で判断できます。\n!\nこの記事...",
+      "published": "2026-09-02T10:24:52Z",
+      "description": "AIエージェントへの指示書（CLAUDE.md / AGENTS.md）を3か月運用したら、56行になっていた。\n書き足した記憶はある。消した記憶がない。\n内訳を見ると、実行環境について書いた節だけで全体の4分の1を占めていた。証明書エラー、認証ヘルパ、セッション種別——障害が起きるたびに調べた結果を、そのまま追記していった地層だった。\n消せない理由ははっきりしている。どれも一度は役に立ったからだ...",
       "category": "AI・技術",
       "rss_category": "",
       "image_url": ""
@@ -69,36 +69,6 @@
       "site": "Zenn(LLM)",
       "published": "2026-09-02T05:12:38Z",
       "description": "こんにちは。\nGen-AX AIエンジニアの箕輪です。\n今回は、大規模言語モデル（Large Language Model、以下 LLM）を用いて PDF ドキュメントから FAQ（よくある質問）を自動生成する社内検証について紹介します。\n\n 本記事のサマリー\n本記事の要点は以下の 3 つです。\n\n68 ページのスライド資料（PDF）に対し、4 つの生成手法 × 最大 7 モデルで FAQ を自動...",
-      "category": "AI・技術",
-      "rss_category": "",
-      "image_url": ""
-    },
-    {
-      "title": "Claude Code のトークン節約でやっている 9 つのこと — 起動 7 万トークンの内訳と計測つき",
-      "url": "https://zenn.dev/activecore/articles/claude-code-resident-cost",
-      "site": "Zenn(LLM)",
-      "published": "2026-09-02T04:54:11Z",
-      "description": "同僚に「どうやってトークン節約してるの」と聞かれた。答えようとして、自分がやっていることを一度も並べたことがないと気づいた。この記事がその答えになる。やっている 9 つの方法を並べ、数字が出ているものには計測値を添える。まだ測れていないものはそう書く。効かなかったものも分けて出す。\nClaude Code を毎日使い、設定ファイルや script を触る人に向けている。チャットとして使うだけなら、...",
-      "category": "AI・技術",
-      "rss_category": "",
-      "image_url": ""
-    },
-    {
-      "title": "「プロンプトを長くするのをやめろ」Fableのシステムカードから品質保証Agent Skillを作った",
-      "url": "https://zenn.dev/git_dungeon/articles/fable-forensic-skill-human-loop",
-      "site": "Zenn(LLM)",
-      "published": "2026-09-02T04:43:49Z",
-      "description": "こんにちは、黒パグです🐾\nいきなりですが、プロンプトを長くするのをやめてください。\nあなたのAgentに必要なのは、さらに4,000文字追加された人格設定ではありません。\n必要なのは証拠です。\n……という海外驚き屋さん全開の画像と文章をXへ投げました。\nしかし、公開したものの中身は最強プロンプトでも、Claude Fable 5.1になりきる人格モードでもありません。調査、実行、検証、失敗記録、修...",
-      "category": "AI・技術",
-      "rss_category": "",
-      "image_url": ""
-    },
-    {
-      "title": "25億token学習したGPT-2 Smallに、さらに25億token学習させたら性能は上がるのか？",
-      "url": "https://zenn.dev/projecticonik/articles/e505598daf46cd",
-      "site": "Zenn(LLM)",
-      "published": "2026-09-02T03:11:55Z",
-      "description": "25億token学習したGPT-2 Smallに、さらに25億token学習させたら性能は上がるのか？\nGPT-2 Small相当のモデルをゼロから実装し、まず25億tokenを事前学習しました。\nここで、一つ疑問が出てきました。\nこのモデルに、さらに25億tokenを学習させたら性能は上がるのでしょうか？\n単純に考えれば、より多くのデータを学習したモデルの方が性能も良くなりそうです。\nそこで、2...",
       "category": "AI・技術",
       "rss_category": "",
       "image_url": ""
