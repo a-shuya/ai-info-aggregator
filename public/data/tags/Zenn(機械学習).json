@@ -1,8 +1,38 @@
 {
   "site": "Zenn(機械学習)",
-  "last_updated": "2026-09-02T13:36:44.445207",
-  "total_articles": 1736,
+  "last_updated": "2026-09-02T17:20:55.186506",
+  "total_articles": 1738,
   "articles": [
+    {
+      "title": "numpyでAttentionを実装したら、√dで割るのは万能ではなかった",
+      "url": "https://zenn.dev/miyamoto_gt/articles/transformer-0-1-w1",
+      "site": "Zenn(機械学習)",
+      "published": "2026-09-02T12:57:20Z",
+      "description": "はじめに\nTransformerのSelf-Attentionを、計算式から実装した。\nAttentionは「文章の中でどの単語がどの単語と深く関係しているか」を計算し、\n重要な部分に重みを置いて文脈を捉える仕組みである。\n今回は実装を通して次を理解した。\n\nなぜこの計算式になるのか\nなぜ次元数のルートで割るのか\n\n結論から言うと、√dで割るのは万能ではなかった。\n\n 変えたこと\n\n\nsoftma...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "Pokémon TCG AI Battle Challenge ポケカコンペ振り返りーメダルなし",
+      "url": "https://zenn.dev/fusic/articles/4b6e8eb23c0363",
+      "site": "Zenn(機械学習)",
+      "published": "2026-09-02T11:59:49Z",
+      "description": "はじめに\nFusicのレオナです。\n今回は、Kaggleの「The Pokémon Company - PTCG AI Battle Challenge Simulation」に参加してみました。最終結果は6,807チーム中1,160位、スコア797.4。暫定ランキングでは一時的に39位まで上がりましたが、最後まで維持できず、メダルには届きませんでした。その過程を振り返り、ブログに残します。なお筆...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "Instagramのリーチ予測モデル -「新規アカウント収集・モデル再学習」の自動化と監視を実装した",
+      "url": "https://zenn.dev/rikky300/articles/ab9c996480daf6",
+      "site": "Zenn(機械学習)",
+      "published": "2026-09-02T10:18:43Z",
+      "description": "個人開発者・小規模ブランド向けの「ナノインフルエンサー検索」を作っています。YouTube / Instagram の公開データを集めてDB化し、投稿のリーチやエンゲージメントを予測するサービスです。\nサービス：\nhttps://indie-matching-v2-azure.vercel.app\n前回の記事ではInstagramの予測モデルについて書きました。今回はデータを集めてモデルを再学習す...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
     {
       "title": "25億token学習したGPT-2 Smallに、さらに25億token学習させたら性能は上がるのか？",
       "url": "https://zenn.dev/projecticonik/articles/e505598daf46cd",
@@ -68,7 +98,7 @@
       "url": "https://zenn.dev/yyamamot/articles/gpt2-to-qwen2-01-rmsnorm",
       "site": "Zenn(機械学習)",
       "published": "2026-09-01T14:12:10Z",
-      "description": "GPT-2-likeからQwen2-likeへの実験：第1回 LayerNormをRMSNormに変える\nGPT-2-likeからQwen2-likeへ、少しずつ構造を変更する実験をしたところ、かなり面白い結果になりました。今回は第1回、LayerNormからRMSNormへの変更です。\n約890万parametersのGPT-2-likeモデルを自作しました。教科書実装でかなり小さいモデルです。...",
+      "description": "GPT-2-likeからQwen2-likeへの実験：第1回 LayerNormをRMSNormに変える\nGPT-2-likeからQwen2-likeへ、少しずつ構造を変更する実験をしたところ、かなり面白い結果になりました。今回は第1回、LayerNormからRMSNormへの変更です。\n約890万パラメーターのGPT-2-likeモデルを自作しました。教科書実装でかなり小さいモデルです。Laye...",
       "category": "AI・技術",
       "rss_category": "",
       "image_url": ""
@@ -169,16 +199,6 @@
       "site": "Zenn(機械学習)",
       "published": "2026-08-30T08:43:17Z",
       "description": "必要な前提知識は Python だけ。数学も PyTorch も深層学習も、この本の中でゼロから説明します。読むだけで終わらせず、Transformer・トークナイザ・LLaMA2 を自分で実装して、最後は 215M パラメータのモデルを実際に学習させるところまで行きます。コア教材は全部 CPU で数分以内に終わるので、GPU は要りません。本編8章＋補講5本＋付録3本、全章に実行可能なコードつき...",
-      "category": "AI・技術",
-      "rss_category": "",
-      "image_url": ""
-    },
-    {
-      "title": "A3C（Asynchronous Advantage Actor-Critic）を数式と実装で理解する",
-      "url": "https://zenn.dev/taichiendoh/articles/a3c-async-advantage-actor-critic-design",
-      "site": "Zenn(機械学習)",
-      "published": "2026-08-29T21:09:18Z",
-      "description": "初出: note（A3C（Asynchronous Advantage Actor-Critic））。Zenn向けに数式・擬似コード・現行手法との比較を補って再構成しました。\n\n強化学習の応用例としてよく名前が挙がる A3C（Asynchronous Advantage Actor-Critic）を、概念だけでなく数式と実装レベルで辿り直します。2016年に DeepMind が提案した手法で、現...",
       "category": "AI・技術",
       "rss_category": "",
       "image_url": ""
