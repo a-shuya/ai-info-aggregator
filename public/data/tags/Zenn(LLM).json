@@ -1,14 +1,204 @@
 {
   "site": "Zenn(LLM)",
-  "last_updated": "2026-09-02T04:33:18.686128",
-  "total_articles": 5813,
+  "last_updated": "2026-09-02T09:01:36.803250",
+  "total_articles": 5829,
   "articles": [
     {
-      "title": "「本音で」では抜けない安全域。AIに『最悪案』を出させる脱抑制プロンプトを試した",
-      "url": "https://zenn.dev/every_ai_recipe/articles/ai-worst-idea-cost-cutting",
+      "title": "設定に1行足したら同じ一問が1.43倍安くなった。8分放置したら、その1行が11倍高くついた",
+      "url": "https://zenn.dev/numarn/articles/claude-prompt-cache-ttl-setting-handson",
       "site": "Zenn(LLM)",
-      "published": "2026-09-01T21:09:07Z",
-      "description": "TL;DR\n\nReverse Brainstorming（Worst Possible Idea法）は、良し悪しの評価を保留して極端な案をあえて出させ、そこから裏返して実用的な発想を拾うワークショップの定番技法である\nLLMに同じことをさせる場合、「本音で」程度の緩い指示ではRLHFで学習された「妥当・無害」な応答分布の中心付近から出力が動かず、裏返しても既知の案しか得られない\n「実現性・予算・法...",
+      "published": "2026-09-02T08:06:34Z",
+      "description": "AI を画面なしのコマンドとして呼ぶ使い方(claude -p)は、1回ごとに「いくらかかったか」と\n「何をどれだけ読ませたか」を JSON(機械が読みやすい形式のテキスト)で自己申告してくれる。その明細を眺めていて、見慣れない2行に気づいた。\n\"cache_creation\": {\n  \"ephemeral_1h_input_tokens\": 7907,\n  \"ephemeral_5m_inpu...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "OCI Generative AIでGeminiもgpt-ossも呼べたので、7モデルの日本語力を比べてみた",
+      "url": "https://zenn.dev/sin9_ha/articles/oci-generative-ai-osaka-7models",
+      "site": "Zenn(LLM)",
+      "published": "2026-09-02T07:59:48Z",
+      "description": "!\nこの記事は Qiita に投稿した記事 のクロスポストです。\n\n\n はじめに\nOCIには OCI Generative AI というマネージドな生成AIサービスがあります。CohereやMetaのLlamaをAPI経由で呼べるやつですね。\nこれをAPEXから使う記事を書こうとしていたのですが、このサービス、東京リージョンでは提供されていません。日本で使うなら大阪一択です。\nというわけで大阪リー...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "Claude Fable 5.1、Low effortで前世代maxと同等に。公式発表の要点をまとめて読み解いた",
+      "url": "https://zenn.dev/motoki0418/articles/4872d0e1da4f9c",
+      "site": "Zenn(LLM)",
+      "published": "2026-09-02T07:35:53Z",
+      "description": "Fable 5.1 と Mythos 5.1 は別のモデルではありません。同じモデルに、強さの違う安全装置を付けた2つの提供形態です。そして「25% 安くなった」の中身は、入力・出力の単価は据え置きで、キャッシュ読みの単価だけが 75% 下がった結果です。\nこの2点を押さえると、乗り換えるか・どの effort で使うか・自分のワークロードで元が取れるかを、自分の数字で判断できます。\n!\nこの記事...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "ナレッジ設計",
+      "url": "https://zenn.dev/boku_yaji/books/knowledge-design",
+      "site": "Zenn(LLM)",
+      "published": "2026-09-02T07:21:19Z",
+      "description": "AI AgentやRAGで難しいのは、情報を取得することではなく、何を現在の正とし、誰が更新し、どの条件まで信頼して使わせるかを決めることです。本書は、ナレッジの管理境界、Stock / Flow / SSOT、信頼の根拠、参照・判断・実行への配置、Outputから学ぶ更新の循環を、技術者の要件定義・アーキテクチャ設計として整理します。",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "「絶対に落ちないテスト」を1日に3つ作った。全部AIが自分で見つけた",
+      "url": "https://zenn.dev/seiya_builds/articles/0dc7e1c476e8e9",
+      "site": "Zenn(LLM)",
+      "published": "2026-09-02T06:04:25Z",
+      "description": "Claude Code のセッションを複数、チームとして並列で動かしてサービスを作っています。\n昨日1日で、「どう転んでも合格が出る確認」を3つ作りました。\n3つとも、書いた本人（AI）が自分で見つけて、自分から申告してきました。\n同じ形なので、まとめて書いておきます。\n\n 1. ばらつきの基準に、測る対象を混ぜていた\nLLMに採点させている軸があります。審査員の出力形式を変えたので、形式を変えた...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "DeepSeek-V4-Flashを 145B に枝刈りして DGX Spark 1 台で動かしてみる",
+      "url": "https://zenn.dev/daisuke_test/articles/dbb2bea031ec74",
+      "site": "Zenn(LLM)",
+      "published": "2026-09-02T05:16:54Z",
+      "description": "DeepSeek-V4-Flash のエキスパートを層ごとに 256 個から 128 個に減らし、167 GB のチェックポイントを 82 GB にして、DGX Spark 1 台の素の vLLM で 17 tok/s で動かしました。フルモデルが載らない 128 GB のマシン上でキャリブレーションまで完結させています。\n\nモデル: https://huggingface.co/ludo-tec...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "LLMでドキュメントからFAQを自動生成する",
+      "url": "https://zenn.dev/genax_corp/articles/30dc370f84c570",
+      "site": "Zenn(LLM)",
+      "published": "2026-09-02T05:12:38Z",
+      "description": "こんにちは。\nGen-AX AIエンジニアの箕輪です。\n今回は、大規模言語モデル（Large Language Model、以下 LLM）を用いて PDF ドキュメントから FAQ（よくある質問）を自動生成する社内検証について紹介します。\n\n 本記事のサマリー\n本記事の要点は以下の 3 つです。\n\n68 ページのスライド資料（PDF）に対し、4 つの生成手法 × 最大 7 モデルで FAQ を自動...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "Claude Code のトークン節約でやっている 9 つのこと — 起動 7 万トークンの内訳と計測つき",
+      "url": "https://zenn.dev/activecore/articles/claude-code-resident-cost",
+      "site": "Zenn(LLM)",
+      "published": "2026-09-02T04:54:11Z",
+      "description": "同僚に「どうやってトークン節約してるの」と聞かれた。答えようとして、自分がやっていることを一度も並べたことがないと気づいた。この記事がその答えになる。やっている 9 つの方法を並べ、数字が出ているものには計測値を添える。まだ測れていないものはそう書く。効かなかったものも分けて出す。\nClaude Code を毎日使い、設定ファイルや script を触る人に向けている。チャットとして使うだけなら、...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "「プロンプトを長くするのをやめろ」Fableのシステムカードから品質保証Agent Skillを作った",
+      "url": "https://zenn.dev/git_dungeon/articles/fable-forensic-skill-human-loop",
+      "site": "Zenn(LLM)",
+      "published": "2026-09-02T04:43:49Z",
+      "description": "こんにちは、黒パグです🐾\nいきなりですが、プロンプトを長くするのをやめてください。\nあなたのAgentに必要なのは、さらに4,000文字追加された人格設定ではありません。\n必要なのは証拠です。\n……という海外驚き屋さん全開の画像と文章をXへ投げました。\nしかし、公開したものの中身は最強プロンプトでも、Claude Fable 5.1になりきる人格モードでもありません。調査、実行、検証、失敗記録、修...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "25億token学習したGPT-2 Smallに、さらに25億token学習させたら性能は上がるのか？",
+      "url": "https://zenn.dev/projecticonik/articles/e505598daf46cd",
+      "site": "Zenn(LLM)",
+      "published": "2026-09-02T03:11:55Z",
+      "description": "25億token学習したGPT-2 Smallに、さらに25億token学習させたら性能は上がるのか？\nGPT-2 Small相当のモデルをゼロから実装し、まず25億tokenを事前学習しました。\nここで、一つ疑問が出てきました。\nこのモデルに、さらに25億tokenを学習させたら性能は上がるのでしょうか？\n単純に考えれば、より多くのデータを学習したモデルの方が性能も良くなりそうです。\nそこで、2...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "Pythonで実装する量子回路の測定：確率振幅からビット列を抽出するプロセス",
+      "url": "https://zenn.dev/jqca/articles/da869b7acfe2",
+      "site": "Zenn(LLM)",
+      "published": "2026-09-02T02:21:27Z",
+      "description": "量子コンピュータのプログラムにおいて、量子回路の計算結果を得るための最も重要なステップは「測定」です。量子ビットは計算過程において「重ね合わせ状態」にありますが、観測（測定）を行った瞬間に、その状態は特定のビット値（0 または 1）へと収束します。\n本記事では、Qiskitを用いて、回路内で生成された確率振幅が、どのようにして最終的なビット列の出現頻度として出力されるのか、その実装プロセスを解説し...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "Qiskitで実装する量子ビットの反転：Pauli-Xゲートの動作原理とビット反転のシミュレーション",
+      "url": "https://zenn.dev/jqca/articles/1f3fe72e0220",
+      "site": "Zenn(LLM)",
+      "published": "2026-09-02T02:21:26Z",
+      "description": "量子コンピュータの基本演算において、最も直感的に理解しやすい操作の一つが「ビット反転」です。古典的なコンピュータにおけるNOTゲートに相当するこの操作は、量子力学の文脈ではPauli-Xゲートと呼ばれます。\n本記事では、IBMが開発しているオープンソースの量子計算SDKであるQiskitを用い、Pauli-Xゲートを実際に適用した際の量子状態の変化を、コードを通して検証します。\n\n Pauli-X...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "AIを褒めると性能は上がるのか？――文脈・メモリ・重み更新・RLHFを分けて考える",
+      "url": "https://zenn.dev/c_a_p_engineer/articles/praising-ai-context-memory-rlhf",
+      "site": "Zenn(LLM)",
+      "published": "2026-09-02T01:37:33Z",
+      "description": "LLMに「今の回答は良かった。その方向で続けて」と返すと、後続の回答が改善することがあります。\nこの現象を「褒めたことでAIが学習した」と説明すると直感的ですが、技術的には複数の異なる仕組みを混同しています。\n本記事では、少なくとも次の4層を分離します。\n\n推論時のコンテキストによる条件付け\n会話履歴・外部メモリの再投入\n学習によるモデルパラメータの更新\nRLHFなど、開発時に人間の評価を利用する...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "【試し読み】RAG構築入門 — LLMの「知識」という壁を突破する",
+      "url": "https://zenn.dev/yukihayama/articles/preview-rag-guide",
+      "site": "Zenn(LLM)",
+      "published": "2026-09-02T01:00:36Z",
+      "description": "【試し読み】RAG構築入門 — LLMの「知識」という壁を突破する\n本記事はKindle本 「RAG構築入門 — 自社データでAIを賢くする」（著者: 葉山悠希）の「はじめに」および「第1章」の一部を公開する試し読み記事です。\n\n\n LLMは「知らないこと」を知らない\n2023年、ChatGPTの登場は世界を席巻しました。自然な対話、コードの生成、文章の要約——大規模言語モデル（LLM）は、人間と...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "立ち止まるきっかけは自分で作る──鵜呑み防止スキル discernment-nudge を使ってみた",
+      "url": "https://zenn.dev/tokium_dev/articles/discernment-nudge-field-test",
+      "site": "Zenn(LLM)",
+      "published": "2026-09-02T01:00:05Z",
+      "description": "はじめに\nはじめまして、株式会社TOKIUMの齋藤です。今年新卒で入社した、配属2ヶ月弱の駆け出しエンジニアです。\n日々の開発では Claude Code をフルに使っています。特に迷うのは、実装方針の提案と工数の見積もりです。自信満々な文体で、きれいに構造化された回答が返ってくる。根拠を問い詰めることもありますが、正直、多くはそのまま信じて進めてきました。毎回は疑いきれないからです。ただ、信じた...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "完成版を学習させても精度は上がらない — 暗黙知は「作り方」で渡す",
+      "url": "https://zenn.dev/stock_inc/articles/transferring-tacit-knowledge-to-ai",
+      "site": "Zenn(LLM)",
+      "published": "2026-09-02T01:00:05Z",
+      "description": "非エンジニアの定型業務をAIに移そうとするとき、まず試されるのは「過去の完成物を見せて、同じように作らせる」だと思います。\nこれは、かなりの確率でうまくいきません。出力は形式こそ揃うのに、毎回同じような手直しが発生する。\n理由は単純で、完成物にはそこに至るまでの判断が残っていないからです。\n\n 何が起きていたか\nある部門で、定型的な文書作成をAIに任せる試みを見ていました。過去の完成版を渡して、同...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "LLMのツール呼び出しを型で閉じ込める: Valibot許可リスト検証とstrictObjectの罠",
+      "url": "https://zenn.dev/jinno_ai/articles/llm-tool-call-valibot",
+      "site": "Zenn(LLM)",
+      "published": "2026-09-02T00:54:51Z",
+      "description": "LLMに構造化出力を指示しても、その通りに届くとは限らない。AIエージェントのツール呼び出し引数も、評価用の採点JSONも、外部LLMからの応答は「指示に従ったテキスト」であって「契約を満たしたデータ」ではない。外部サービスのwebhookやREST応答も同様で、仕様書に書かれていないキーを追加して届くことがある。\n本稿は、この2種類の「信頼できない入力」をValibotのスキーマで境界検証する実...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "ざっくりわかる AI Agent（5）：重みを変えなくても、使うほどに強くなる——自己進化",
+      "url": "https://zenn.dev/dupi/articles/ai-agent-plain-05-self-evolution",
+      "site": "Zenn(LLM)",
+      "published": "2026-09-02T00:37:39Z",
+      "description": "ひとことまとめ：同じ Agent が、初めて扱う仕事に 15 分かけて手探りしたとします。二度目にまったく同じ仕事が来たら、また 15 分かけて手探りし直しますか？ 「自己進化」ができれば、その必要はありません。モデルの重みは変えずに、経験を知識・ツール・スキルとして蓄え、使うほどに強くなります。\n\n 賢いことと、慣れていることは違う\nあるカスタマーサポート Agent が、初めて A 銀行の返金...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "シミュレーターにAIを足すとき、計算だけはさせなかった",
+      "url": "https://zenn.dev/autocamp/articles/fa0587da19a7d3",
+      "site": "Zenn(LLM)",
+      "published": "2026-09-02T00:32:37Z",
+      "description": "ブラウザで動く日本経済シミュレーターに、自然言語の入口を足しました。「消費税を下げて子育て支援を厚くしたい」と一文で書くと、25本のスライダーをそこまで動かします。実装で最初に決めたのは、AIに計算をさせないことでした。\nスライダーが25本あるのは、この模型が「どれを我慢するか」を問うためです。消費税を下げれば手取りは増えるが借金は膨らむ。金利を上げれば物価は落ち着くが利払費が重くなる。その交換条...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "AIの自動ルール更新で事故らない設計 ― “盲目的承認の罠”をHuman-in-the-loop×Gitで防ぐ",
+      "url": "https://zenn.dev/taichiendoh/articles/loop-engineering-auto-rule-update-safety",
+      "site": "Zenn(LLM)",
+      "published": "2026-09-01T22:12:03Z",
+      "description": "前回（LE3）は、作業ログから気づきを\"蒸留カード\"にして積み上げる仕組みを書きました。最後に予告した通り、今回はその先――この自己改善ループが暴走しないために、どこで人の承認を挟むかという設計の話です。\n\n ループには\"速さの違う3段\"がある\nAIエージェントの自己改善ループを語るとき、海外のAI研究者の議論では速度の違う入れ子のループが3段重なっているという整理がよくされます。\n\n\n最速のルー...",
       "category": "AI・技術",
       "rss_category": "",
       "image_url": ""
@@ -29,16 +219,6 @@
       "site": "Zenn(LLM)",
       "published": "2026-09-01T15:03:02Z",
       "description": "ローカルLLMを8GB級GPUで動かしていると、数百MiBの差が意外と重い。あと少し空けばGPUへ載せられるのに、そこでWDDMのShared Memoryへ逃げて急に遅くなることがある。\nそこで、Gemma 4系の12Bクラスを中心に、使わない多言語tokenをGGUFから削れないか試した。再学習やFine-tuningは行わず、量子化済みweightも再量子化しない方針である。\n最終的には、語...",
-      "category": "AI・技術",
-      "rss_category": "",
-      "image_url": ""
-    },
-    {
-      "title": "2026-08-09 今日の技術トレンド",
-      "url": "https://zenn.dev/bambampurin/articles/2026-08-09-tech-daily",
-      "site": "Zenn(LLM)",
-      "published": "2026-09-01T14:01:53Z",
-      "description": "!\n本日の主要テーマは、LLM単体から業務特化AIエージェントへの重心移動です。「ナレッジワーク」の業界特化LLM、「WAIC 2026」のエージェント主役論、「Fujitsu」の自己進化マルチAIエージェント、「SAP-RPT-1」とJoule進化がその流れを裏付けます。他方で、ガートナー関連報道は適用可能業務の狭さを警告し、The Hacker NewsはAWS・Google・VercelのA...",
       "category": "AI・技術",
       "rss_category": "",
       "image_url": ""
@@ -119,26 +299,6 @@
       "site": "Zenn(LLM)",
       "published": "2026-09-01T08:36:44Z",
       "description": "はじめに\nこんにちは。株式会社リアルインベントCTOです。\nここ数日、AIエージェントに関する話題が立て続けに流れてきました。Toyota North America が50体超のエージェントを本番稼働させているという事例、Google Cloud の「統制こそがスケールの最大の壁」という調査結果、そしてランサムウェア集団が攻撃側でAIエージェントを運用していたという事件です。\nバラバラのニュース...",
-      "category": "AI・技術",
-      "rss_category": "",
-      "image_url": ""
-    },
-    {
-      "title": "Agent Reflectionを超えて：未確定状態（Hi-Z）を保持する「空白駆動×ゴルジ体検疫」アーキテクチャ",
-      "url": "https://zenn.dev/nanashi_os/articles/f8a461cd706a25",
-      "site": "Zenn(LLM)",
-      "published": "2026-09-01T08:02:23Z",
-      "description": "1. はじめに：AIはなぜ「早すぎる回答」に飛びつくのか\n大規模言語モデル（LLM）を用いたエージェント開発において、我々は長らく「いかに素早く、正確に確定解を出力させるか」を最適化してきました。推論ループの改善手法として知られる Agent Reflection や Tree of Thoughts（ToT）も、その本質は「試行錯誤のステップを刻むことで、最短で正解（確定値）へ着地させる」ための...",
-      "category": "AI・技術",
-      "rss_category": "",
-      "image_url": ""
-    },
-    {
-      "title": "Model Armor 入門：プロンプトインジェクション対策をハンズオンで理解する",
-      "url": "https://zenn.dev/cloud_ace_jp/articles/59296e8b88673f",
-      "site": "Zenn(LLM)",
-      "published": "2026-09-01T07:02:00Z",
-      "description": "1. はじめに\nこんにちは、クラウドエース第三開発部の小林です。\n生成 AI アプリの開発が急速に広まる一方で、プロンプトインジェクションをはじめとする「Large Language Model（以下、LLM） 固有のセキュリティリスク」への対策はまだまだ手探りな現場も多いと感じています。\nGoogle Cloud には Model Armor というセキュリティサービスがありますが、「名前は知っ...",
       "category": "AI・技術",
       "rss_category": "",
       "image_url": ""
