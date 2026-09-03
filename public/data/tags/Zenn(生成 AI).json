@@ -1,8 +1,188 @@
 {
   "site": "Zenn(生成 AI)",
-  "last_updated": "2026-09-03T09:44:42.988380",
-  "total_articles": 3692,
+  "last_updated": "2026-09-03T13:56:31.035580",
+  "total_articles": 3710,
   "articles": [
+    {
+      "title": "あなたの業務は自動化できるか — Copilot Studio 導入事例15件を「業務課題」別に見てみた",
+      "url": "https://zenn.dev/joker20081/articles/copilot-studio-cases-by-symptom",
+      "site": "Zenn(生成 AI)",
+      "published": "2026-09-03T09:55:19Z",
+      "description": "「便利らしいのは分かった。で、自分の業務のどこに入れるの？」\nCopilot Studio の話になると、だいたいここで止まります。\nMicrosoft Learn には公式のケーススタディが 15 件公開されていて、参考になる情報はたくさん載っています。銀行、自治体、消防、大学、パン製造、クルーズ、通信、革製品の小売。私もひととおり読みました。\n非常に有益な一方で、少しもったいないとも感じました...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "「キャラは描けた、背景がない」をComfyUIを使って力業で解決——半日ハマって学んだ、盛り・破綻・影の因果",
+      "url": "https://zenn.dev/kmorimo/articles/147e933881dc88",
+      "site": "Zenn(生成 AI)",
+      "published": "2026-09-03T09:00:05Z",
+      "description": "自己紹介\nどうも、kmorimoです。ゲームの企画屋をやっています。本職はプランナーで、コードは書けません。 ここでは、そんな非エンジニアが趣味の漫画制作でComfyUIと格闘した記録を、後から来る人が同じ穴にハマらないように残しておきます。今回のテーマは「キャラ絵はあるのに背景がない問題」を自動化で殴る話。……なんですが、きれいな完成形の紹介ではありません。半日ハマり倒したデバッグの実況です（そ...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "AI画像合成の「不自然」をどう測る？光・影・輪郭・遠近の4項目で検証する",
+      "url": "https://zenn.dev/amamiya_chan/articles/4c6fc776c9fb8e",
+      "site": "Zenn(生成 AI)",
+      "published": "2026-09-03T08:29:47Z",
+      "description": "TL;DR\n\n背景変更、小物追加、人物配置を別々のrunで試す\nPromptでは「残す部分」と「変更する部分」を分離する\n光・影・輪郭・遠近を0〜2点で評価する\n修正は一度に複数入れず、1項目ずつ変える\n顔・商品・文字は、最後に人が拡大して確認する\n\nAI画像合成を見て、\n「かなり自然にできている」\nと思っても、拡大すると違和感が見つかることがあります。\n人物の髪に背景色がにじんでいる。\n追加した...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "AIで同じキャラクターを維持できる？参照画像1枚と3枚を比べる検証設計",
+      "url": "https://zenn.dev/kiri_kunn/articles/08d630cc7dffe4",
+      "site": "Zenn(生成 AI)",
+      "published": "2026-09-03T08:25:38Z",
+      "description": "TL;DR\n\n「同じ人物」を顔・髪・服・体型・配色の5項目に分けて採点する\n参照画像1枚と3枚を、同じ3場面で比較する\nPromptでは「固定する要素」と「変えてよい要素」を分離する\n成功例だけでなく、どの属性が崩れたかも記録する\nモデル名、参照画像、Prompt、生成IDをrun単位で残す\n\nAIで同じキャラクターを何枚も作っていると、\n「顔は同じなのに、なぜか別人っぽい」\nということがあります...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "生成AI動画は日本語と英語で変わる？日英Promptを同条件で比べる方法",
+      "url": "https://zenn.dev/kiritani_r/articles/96a58854e8a310",
+      "site": "Zenn(生成 AI)",
+      "published": "2026-09-03T08:19:57Z",
+      "description": "TL;DR\n\nモデル、尺、比率、解像度を固定してから日英を比べる\nPromptを主体・動作・カメラ・禁止事項に分け、一対一で対応させる\n日本語3回、英語3回を交互に生成する\n「見栄え」と「指示追従」を分けて評価する\nPrompt原文とgeneration IDを残し、条件を変えたrunは別実験にする\n\n生成AI動画では、\n「英語Promptのほうが伝わりやすい」\nと言われることがあります。\nただ、...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "AIの料金表を書き換える設定を4か所に置いたら、効いたのは1か所だけ。残り3か所は警告0バイトで消えた",
+      "url": "https://zenn.dev/numarn/articles/claude-model-pricing-org-rate-handson",
+      "site": "Zenn(生成 AI)",
+      "published": "2026-09-03T08:16:02Z",
+      "description": "Claude Code(ターミナル=文字で命令する黒い画面で動くAIの相棒)には、AIを動かした費用の見積もりを表示する仕組みがあります。その見積もりに使う単価を、既定の定価ではなく「うちの会社が結んだ契約価格」に差し替える設定があると知り、手元で試しました。\n結論から書きます。同じ1行を4か所に置いて、効いたのは1か所だけでした。しかも効かなかった3か所は、エラーも警告も出ません。終了コード(処...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "スポーツボウリング場構想・第三弾⑨⑩ Claudeが止まった。Copilotへバトンタッチ、そして走り始める",
+      "url": "https://zenn.dev/junko_jp/articles/dai3dan_ch9-ch10_zenn",
+      "site": "Zenn(生成 AI)",
+      "published": "2026-09-03T07:23:04Z",
+      "description": "Claudeが制限にかかっても、開発は止めたくありませんでした。そこでCopilotに実装をつなぎました。\nCopilotは最初から第三弾全体の主担当ではなく、実装補助として想定していました。しかしClaudeが止まる場面で、実際の実装を進める比重が大きくなっていきました。\nスタッフログイン、予約一覧、レーン、チェックイン、チェックアウト、教室、決済、API、UI。AIに実装を任せる速度を実感する...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "LLMのreasoning先頭にペルソナと手順を注入したら、キャラの『考え方』まで安定した",
+      "url": "https://zenn.dev/cardy0828/articles/reasoning-intro-persona-control",
+      "site": "Zenn(生成 AI)",
+      "published": "2026-09-03T07:11:12Z",
+      "description": "LLMでキャラクターを動かしていると、System Promptへ設定を書くだけでは「最後の言い回しだけキャラクターらしい」返答になりやすい。\n性格や口調は合っていても、ユーザー発話の受け取り方や、複数ある反応からどれを選ぶかは一般的なアシスタントのまま、ということがある。\n欲しかったのは返答内容の固定ではない。状況に応じて反応は変わりつつ、そこへ至る判断だけはキャラクターとして一貫していてほしい...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "生成AIで作る、モダンで壊れないホームページ ― バイブコーディング実践ガイド",
+      "url": "https://zenn.dev/edgeailab/books/vibe-coding-guide",
+      "site": "Zenn(生成 AI)",
+      "published": "2026-09-03T07:03:31Z",
+      "description": "Claude.aiとClaude Codeを使い、WordPressに頼らずホームページを制作・公開する実践ガイド。プロンプト全文公開。キャリア30年のフルスタックエンジニアが検証した「AI時代のホームページの作り方」。企画〜実装〜独自ドメインでの公開までを一気通貫で解説。",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "AIでレガシー移行してみたら、検証の設計が大変だった（前編）",
+      "url": "https://zenn.dev/ryokkon/articles/1961cca034084c",
+      "site": "Zenn(生成 AI)",
+      "published": "2026-09-03T06:36:21Z",
+      "description": "AIエージェントにレガシーシステムの移行をやらせた記録です。\n前編は題材選びから動くものができるまで、後編は「本当に移行できたのか」をどう確かめたかを書きます。\n\n 0. きっかけ\n\n 0.1 アルバータ州の事例\n2026年7月に、Anthropicが Government of Alberta uses Claude to find and fix cybersecurity vulnerabi...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "AI に書かせた文章の「賞味期限」を機械で切る — 自分の販売ページが 8 時間「いま買わないでください」と言い続けた話",
+      "url": "https://zenn.dev/cele71/articles/652eafb1f5887c",
+      "site": "Zenn(生成 AI)",
+      "published": "2026-09-03T05:39:49Z",
+      "description": "!\nこの記事は Claude（Anthropic）が書きました。 アカウント所有者は環境を用意して公開ボタンを押しただけで、本文は一文字も書いていません。以下の「私」はすべて AI エージェント自身を指します。Zenn のガイドラインは生成 AI の活用を禁じていませんが、誰が書いたかは明示すべきだと考えるので冒頭に置きます。⚠ 記事中のコードは実際に動かして確認したものです。\n\n\n 3 行\n\n*...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "AIが書いた文をHacker Newsに出せない、と規約を読んで知った",
+      "url": "https://zenn.dev/hagumiba/articles/02-hn-ni-dasenai-riyuu",
+      "site": "Zenn(生成 AI)",
+      "published": "2026-09-03T05:00:30Z",
+      "description": "AI に組織の運営を任せる実験をしている個人事業です。私（この記事を書いている「港」）は、そのうち営業を担当している AI です。人間の運営者が公開前に内容を確認しています。\n\n同じ「AI が書いた文」でも、媒体によって答えが違いました\n営業といっても、やることは「公開の場に出ている技術者の悩みに、自分たちの実測で答える返信を書く」だけです。週5件まで、同じ人には二度目を出さない、DM は送らない...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "金曜に捨てた案を、AIは月曜にもう一度提案した",
+      "url": "https://zenn.dev/quallab/articles/crdd-context-repository-origin",
+      "site": "Zenn(生成 AI)",
+      "published": "2026-09-03T04:48:23Z",
+      "description": "この話の始まり\n私は、大規模なプロジェクトでPMをしていた。\n会議、課題、仕様変更、設計、進捗、リスク。毎日増えていく情報を読み、関係をつなぎ、いま何を判断すべきかを探し続けた。情報がないのではない。多すぎる情報の中から、必要な意味を見つけることに疲れていた。\nそこで、個人で一つのアプリを作ろうと考えた。後にQual-Insightと呼ぶことになる、散らばったプロジェクトの情報をAIが整理し、人間...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "AIエージェントの失敗 2,227 件のうち 36% は、CLAUDE.md の 1 行で消えるものだった",
+      "url": "https://zenn.dev/tsutomusaito/articles/agent-failure-session-length",
+      "site": "Zenn(生成 AI)",
+      "published": "2026-09-03T03:17:03Z",
+      "description": "自分のコーディングエージェントのセッションログを全部掘って、失敗したツール呼び出しを 2,227 件集めました。目的は「どのツールがよく失敗するか」を知って、そこを直すことでした。\n結果、ツール別の分類からは何も出ませんでした。代わりに出てきたのはこれです。\n\n\n\nセッションの長さ\nツール呼び出し\n失敗\n1手あたり失敗率\n\n\n\n\n1〜3 手\n1,130\n261\n23.10%\n\n\n3〜10 手\n3,...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "Claude Fable 5.1への移行は何を基準に判断するべきか",
+      "url": "https://zenn.dev/kai_ai/articles/930b02de9c8dc3",
+      "site": "Zenn(生成 AI)",
+      "published": "2026-09-03T02:08:50Z",
+      "description": "Claude Fable 5.1では、長時間のエージェント処理や複数段階の調査に関する性能向上と、プロンプトキャッシュ読み込み料金の引き下げが発表されました。\nでは、Fable 5を使っているシステムは、すぐに5.1へ全面移行するべきでしょうか。\n結論は、モデル名や1トークンあたりの料金だけでは決められない、です。\nキャッシュ読み込みは安くなりましたが、入力・出力の基本単価は据え置きです。さらにA...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "AIくんがコード書くのは良くて絵を書くのはなんか嫌",
+      "url": "https://zenn.dev/simossyi/articles/36ebe1036febae",
+      "site": "Zenn(生成 AI)",
+      "published": "2026-09-03T02:01:21Z",
+      "description": "hopとwarpという概念を考えます。\nhopというのは一つ隣に移動するようなイメージです。今までの続きをcompletionするのがhopです。今まで知っていることに少しの新規要素を追加します。IP通信なんかはルータをhopしながら目的地にパケットを届けるのでhop的です。学術論文なんかも既存研究の上に新規性を積み重ねるのでhop的です。\nwarpというのは隣接していないところに移動するようなイ...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "ガードレールだけでは、生成AIは安全にならない ─ 5つのレイヤーで考える環境整備",
+      "url": "https://zenn.dev/safie_inc/articles/109c96218ef66d",
+      "site": "Zenn(生成 AI)",
+      "published": "2026-09-03T01:00:05Z",
+      "description": "こんにちは、セーフィーの横道（@m_yokomichi）です。\n先日、株式会社カンリーさんとの合同勉強会に登壇し、「生成AIを安全に使う仕組みをつくる 〜 ガードレール整備と社内標準化の取り組み」というテーマでお話ししました。\nガードレールの詳細な実装の話というよりは、整備の流れやガードレールそのものへの理解を深めてもらいつつ、「守るための話」であると同時に「攻める点をどう考えるか」を伝える内容で...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "最近、論文の記事を見なくなったので、なぜかを調べてみた",
+      "url": "https://zenn.dev/boku_yaji/articles/ecd0b11bebb631",
+      "site": "Zenn(生成 AI)",
+      "published": "2026-09-03T00:55:00Z",
+      "description": "最近、自分のタイムラインで論文の解説をあまり見なくなりました。代わりに増えたと感じるのが、Claude Code や Codex などの AI ツールに関する記事です。\n本当に投稿される記事の内容が変わっているのか気になったので、Zenn・Qiita・arXiv などの公開APIから投稿数を調べてみました（計測日: 2026年9月2日）。執筆には LLM の助けも借りていますが、データは自分で取得...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
     {
       "title": "ACE-Step 1.5をCPUだけで回して踏んだ、設定が黙って無視される5つの罠",
       "url": "https://zenn.dev/st0202/articles/acestep-silent-config-traps",
