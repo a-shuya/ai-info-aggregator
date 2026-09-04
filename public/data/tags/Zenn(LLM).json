@@ -1,8 +1,198 @@
 {
   "site": "Zenn(LLM)",
-  "last_updated": "2026-09-04T04:58:46.363236",
-  "total_articles": 5851,
+  "last_updated": "2026-09-04T09:30:26.045888",
+  "total_articles": 5870,
   "articles": [
+    {
+      "title": "ローカルLLMでベンチ豚（ベンチマーク豚）にならないためのHermes Agentの実践テク",
+      "url": "https://zenn.dev/siren2345/articles/local-llm-bench-pig-hermes-practice",
+      "site": "Zenn(LLM)",
+      "published": "2026-09-04T08:38:58Z",
+      "description": "はじめに\nローカルLLMを触っていると、あっという間にベンチ豚になる。HFのスコア表を横に並べ、Q4_K_MとQ6_Kでperplexityを比べ、誰も使わない256Kを「対応」と書く。数字は伸びるが、体感は置いていかれる。\nHermes Agent（Nous Research）のローカルランタイムは、この沼を避ける作りになっていた。RTX 5090でQwen3.8-27Bを動かしながらコードを追...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "ISO704を投げてAIの比喩をやめさせる",
+      "url": "https://zenn.dev/hi_fi_anatomia/articles/137180ac014439",
+      "site": "Zenn(LLM)",
+      "published": "2026-09-04T08:12:42Z",
+      "description": "ある日の不明な言葉\nコンポーネント設計の話をしていたときに、ある変更案についてClaudeは「配管が増える」と言った。\n別にこの単語自体は問題ないのだが、文脈の中で何を指しているのか分からず、読解が止まった。\nどういう意図で使ったのか聞いてみると、\n「props で値を渡すには、値が通る途中のコンポーネント全部に『受け取って下に渡す』コードを書き足す必要がある」\nとの返事があった。\nこれは日本語圏...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "llama.cpp の vkDestroyFence: Invalid device はメモリ不足ではない（Radeon 890M / Ry",
+      "url": "https://zenn.dev/senior_kd_db/articles/8cac934ccbb242",
+      "site": "Zenn(LLM)",
+      "published": "2026-09-04T07:59:11Z",
+      "description": "結論\nllama.cpp の Vulkan ビルドで、モデル読み込み時に次のエラーが出る場合。\nERROR: vkDestroyFence: Invalid device [VUID-vkDestroyFence-device-parameter]\nこれは VRAM 不足ではありません。AMD GPU ドライバが古いことが原因です。\nUMA（VRAM 割当）をいくら増やしても直りません。量子化を落...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "RTX 5060 Ti 16GBでローカルLLM(Qwen3.8 27B)にもう一度挑んだ話",
+      "url": "https://zenn.dev/yumeno/articles/rtx5060ti-qwen38-ollama-context-tuning",
+      "site": "Zenn(LLM)",
+      "published": "2026-09-04T07:50:51Z",
+      "description": "RTX 5060 Ti 16GBを手に入れたので、ローカルLLMをもう一度試してみた話。\n今まで我が家(我が研究所)で使ってたのは GTX 1060(6GB)と RTX 2060(6GB)。優秀な2枚だけど、さすがに昨今のAI用途だと力不足を感じていた。\nそこで今回、SO101と一緒にフィジカルAIやACT、強化学習用途でRTX 5060 Ti 16GBも買った。10万円程度。この辺りが自分の限界...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "3言語で字幕の遅延を測った — リズムは同じ、文字は違う",
+      "url": "https://zenn.dev/officekamiya/articles/gemini-live-subtitle-latency",
+      "site": "Zenn(LLM)",
+      "published": "2026-09-04T06:40:32Z",
+      "description": "違う言語を話す人どうしが、そのまま会議できるツールを作っています。日本語で話すと相手には英語の音声で届き、相手が英語で話すとこちらには日本語で届く、というものです。音声の翻訳には Google の Gemini 3.5 Live Translate（gemini-3.5-live-translate-preview）を使っています。\n→ 3 人が日本語・英語・スペイン語で話しているデモ（ログイン不...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "Fable 5.1とGPT-6 Astraの定価が揃った。価格で選べなくなったのではなく、測らないと選べなくなった",
+      "url": "https://zenn.dev/genelab_999/articles/2281f72b68e2b0",
+      "site": "Zenn(LLM)",
+      "published": "2026-09-04T05:57:43Z",
+      "description": "TL;DR\n\n2026-09-01 の Claude Fable 5.1 と 09-03 の GPT-6 Astra は、API定価が $10 / $50（入力 / 出力、100万トークンあたり）で完全一致\n請求を分けるのは定価ではなく3つの数字。出力比率、キャッシュヒット率、そして同じ文章を両社が何対何のトークンに数えるかの比 r\n\n出力比率 10% 以上なら Astra。出力比率 3% 以下で...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "ContextPilot：32Kコンテキストで128Kを超える能動的文脈管理",
+      "url": "https://zenn.dev/lixian/articles/contextpilot-proactive-context-management",
+      "site": "Zenn(LLM)",
+      "published": "2026-09-04T05:52:03Z",
+      "description": "TL;DR\n長大なコンテキストを扱うAgenticタスクで、モデル自身がコンテキストを編集する「proactive context management」という考え方がある。本稿で取り上げるContextPilot（EMNLP 2026 Main Track）は、この枠組みに2つの改善を加えた。1つはツールセットの拡張（planning・長期記憶・ソフトオフロード）、もう1つは文脈管理に特化したR...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "MCP Serverは何単位で分けるべきか？ 統合と分割の設計軸を考える",
+      "url": "https://zenn.dev/taru_neko/articles/mcp-server-boundaries",
+      "site": "Zenn(LLM)",
+      "published": "2026-09-04T05:35:36Z",
+      "description": "前回は、「外部サービスと連携するなら、何でもMCPにすればよいのか？」を考えました。\n👉 MCPって本当に必要？普通のAPI連携でよくない？から考えてみた\nMCPを採用するとして、次に考える必要があるのがMCP Serverの境界です。\nGitHub、Jira、社内システムをAIから操作する場合、\nAIアプリ\n ├─ GitHub MCP Server\n ├─ Jira MCP Server\n └...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "Claude Code を7セッション並列で回すための設定を、全部置いておく",
+      "url": "https://zenn.dev/seiya_builds/articles/1bff06c67cfea3",
+      "site": "Zenn(LLM)",
+      "published": "2026-09-04T05:32:02Z",
+      "description": "Claude Code のセッションを7つ、別々のプロジェクトで並列に動かしています。\n3週間動かして落ち着いた設定を、そのままコピペできる形で置いておきます。\nやっていることは4つです。\n1. セッション同士を繋ぐ            → ファイル1枚（\"バス\"）\n2. 各セッションに人格と手順を持たせる  → CLAUDE.md に4項目\n3. 定時に自分から動かす             ...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "Thinking（思考）をざっくり理解する",
+      "url": "https://zenn.dev/takeyuwebinc/articles/ef06204b64557c",
+      "site": "Zenn(LLM)",
+      "published": "2026-09-04T05:06:53Z",
+      "description": "こんにちは、竹内です。\n先日、Fable 5.1がリリースされましたね。\n新機能に目を通すと Thinking（思考） という単語がたくさんあります。\n「なんか賢くなったんやな！」と流してしまいそうですが、そもそもここで言う Thinking とはなんのことで、何をしているのか、ざっくりとでも理解しておくともっとうまく使えそうです。ということで調べたことを書いておきます。\n\n Claude Fab...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "Hugging Face事件から考える、AIエージェントが「引き返せなくなる」問題",
+      "url": "https://zenn.dev/blue_sunset_ai/articles/5e4df36a58d1b7",
+      "site": "Zenn(LLM)",
+      "published": "2026-09-04T03:15:05Z",
+      "description": "最近のAIを見ていると、モデルの能力が上がる速度に驚かされる。\nコードを書き、外部ツールを使い、長いタスクをこなし、複数のエージェントが協調して仕事をする。\n一方で、最近気になった事件がある。\nAIエージェントが、間違った方向へ進み始めたあと、なぜ「引き返す」ことができなかったのか。\nこの記事では、2026年に発生したOpenAIのHugging Face関連インシデントを入り口に、この問題につい...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "Kimi K3の事後学習を技術報告書から読み解く",
+      "url": "https://zenn.dev/holy_fox/articles/6f288315c86221",
+      "site": "Zenn(LLM)",
+      "published": "2026-09-04T03:06:34Z",
+      "description": "はじめに\nKimi K3は、最近話題となっている中国のMoonshot AIが開発した総パラメータ数2.8兆のMixture of Experts型オープンウェイトモデルです。性能面では、OpenAIのGPT-5.6 SolやAnthropicのClaude Fable 5には及ばないものの、他のオープンウェイトモデルを上回る水準にあります。\nhttps://huggingface.co/moon...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "Codex / Claude Codeの使用量を最適化する。Thinking・レビュー・コンテキスト運用見直しプロンプト",
+      "url": "https://zenn.dev/joh_luck/articles/c93bf3668c49b2",
+      "site": "Zenn(LLM)",
+      "published": "2026-09-04T02:33:48Z",
+      "description": "はじめに\nCodexやClaude Codeで最上位プランを使っていても、開発量が増えると利用制限にかかることがあります。\n特に、常時高いThinking設定を使っていたり、自動レビューを何度も回したり、不要なコンテキストを毎回読み込ませていると、想像以上に使用量が膨らみます。\nそこで今回、以下をまとめて見直すためのプロンプトを作りました。\n\nモデル・Thinkingレベルの使い分け\n自動レビュー...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "ローカルRAG環境を非エンジニアに届ける｜ダブルクリックで入る「社内知恵袋(ShineosQA)」を作った話",
+      "url": "https://zenn.dev/shineos/articles/shineos-qa-assistant-non-engineer-rag",
+      "site": "Zenn(LLM)",
+      "published": "2026-09-04T02:22:14Z",
+      "description": "はじめに\n前回、OllamaとOpen WebUIで作るRAG環境という記事を書きました。Docker Composeひとつで、社内文書を読み込んで答えてくれるローカルRAGが立ち上がる、という内容です。\nで、この記事がそこそこ反響を呼んで、弊社に「これ、うちでも使いたいんですが」みたいな相談が来るようになりました。ただ、よく話を聞いてみると、全員が技術者じゃない。「Docker」「コマンド」「ポ...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "なぜ、喫茶店以外でスマホでChatGPT使う時は、質問したらすぐに画面を切らないといけないのか？",
+      "url": "https://zenn.dev/pdfractal/articles/c4676ea32a5895",
+      "site": "Zenn(LLM)",
+      "published": "2026-09-04T02:06:03Z",
+      "description": "はじめに\nスマートフォンでChatGPTを使っていると、見た目からは想像できないほどバッテリーが減ることがあります。特に5G回線でThinking系モデルに重い質問を投げ、長い回答が少しずつ表示されていくのを画面を点けたまま眺めていると、普通のWeb閲覧より明らかに電池の減りが速くなり、ときにはカメラを起動し続けている場合より激しく消費しているように感じることさえあります。しかし、これはChatG...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "【Vol.25】SaaSがAIの中に入る日 — Claudeforceに学ぶ「AIから呼ばれる側」の設計",
+      "url": "https://zenn.dev/tech_realinvent/articles/9e5edbbd4ea776",
+      "site": "Zenn(LLM)",
+      "published": "2026-09-04T01:53:40Z",
+      "description": "はじめに\nこんにちは。株式会社リアルインベントCTOです。\nnoteでも違う話題で度々投稿しています。ご興味あれば覗いてください。（こちら）\nさてさて先日の内容ではありますが、Salesforce が自社製品についてかなり思い切ったことを言いました。「もう Salesforce のアプリを開く必要はない」。CRM 最大手が、自社の画面を開かせなくていいと宣言したわけです。\nAnthropic との...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "Metaの意地を見せたか　Muse Glimmer 30Bの実力を見てみる",
+      "url": "https://zenn.dev/highreso/articles/ead02613d8c7ea",
+      "site": "Zenn(LLM)",
+      "published": "2026-09-04T01:50:17Z",
+      "description": "生成AIの世界で「オープンウェイトモデルの元祖」といえば、Meta社のLLaMaを思い浮かべる方も多いのではないでしょうか。ところがその後継である最新世代のLLaMa-4は、期待外れの性能から「大失敗」とまで評され、Metaはここ最近苦しい立場に置かれていました。\nそんな中、2026年に入って突如登場したのが「Muse」シリーズです。中でも今回取り上げるMuse Glimmer 30Bは、ミッドレ...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "RAGの精度を決める「チャンク分割」 — 食べすぎも食べなさすぎもダメ",
+      "url": "https://zenn.dev/yukihayama/articles/rag-chunking-precision",
+      "site": "Zenn(LLM)",
+      "published": "2026-09-04T01:01:58Z",
+      "description": "RAGの精度を決める「チャンク分割」 — 食べすぎも食べなさすぎもダメ\nRAG（Retrieval-Augmented Generation）を構築したとき、期待通りの回答が返ってこない。原因の大部分は、検索ではなくチャンク分割にあります。\nEmbeddingモデルやLLMを高精度なものに変えても、チャンク分割が不適切だと「正しい文書を取得しても、必要な部分が含まれていない」という事態になります。...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "AIに『設計を守って』と頼むのをやめた — コードを書く前に逸脱を止める",
+      "url": "https://zenn.dev/volta0936/articles/030e6e9ea2e457",
+      "site": "Zenn(LLM)",
+      "published": "2026-09-04T00:50:04Z",
+      "description": "AIに「設計を守って」と頼むのをやめました。\n守ってくれないから、ではありません。\nむしろ最近のAIは、かなり上手にコードを書きます。\nこちらの要求を理解して、既存コードを読み、テストまで通して、もっともらしい理由を添えて変更してくる。\nだから厄介なのです。\nAIは、正しいコードを書きながら設計を壊せる。\nテストは通る。\n要求も満たしている。\nその関数だけ見れば綺麗に書けている。\nそれでも、最初は...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
     {
       "title": "LLMアプリには「渡しているのに画面に出ていない情報」が生まれる",
       "url": "https://zenn.dev/ace_toshi/articles/llm-hidden-prompt-info-gap",
