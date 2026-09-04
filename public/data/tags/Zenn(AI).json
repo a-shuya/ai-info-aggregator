@@ -1,24 +1,214 @@
 {
   "site": "Zenn(AI)",
-  "last_updated": "2026-09-04T19:37:34.670816",
-  "total_articles": 13369,
+  "last_updated": "2026-09-04T21:50:02.843007",
+  "total_articles": 13384,
   "articles": [
+    {
+      "title": "Claude Code × git worktree で並列実行 — 黙って壊れた3つと、分割の境界線",
+      "url": "https://zenn.dev/genkunjc/articles/ead8b520c22733",
+      "site": "Zenn(AI)",
+      "published": "2026-09-04T17:21:06Z",
+      "description": "AIコーディングエージェントを1体ずつ順番に走らせていると、経過時間はほぼ「自分が待っている時間」になります。独立した作業を複数のサブエージェントに分けて同時に走らせれば、そこは縮みます。\nただ、素直にやると壊れます。しかもエラーを出さずに壊れるものが混ざっているのが厄介でした。型チェックは通り、ビルドも通り、エージェントの報告には「完了しました」と書いてある。それでも中身が違う。\nこの記事は、C...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "コードが読めないまま、AIの書いたものを検収する — 非エンジニアの検査チェックリスト",
+      "url": "https://zenn.dev/omnikros/books/inspect-ai-written-code",
+      "site": "Zenn(AI)",
+      "published": "2026-09-04T16:17:17Z",
+      "description": "実装をAIに任せると、出てくるものは驚くほどよく動きます。\n問題は、動いているのに目的が果たされていないときで、そこにはエラーが出ません。\n\n私はコードが読めないまま6つのサイトと1つの有料商品を公開して、\n索引から36ページを消し(データ3,449件ぶんの表示面)、公開直後2日間の\n記録を永久に失い、誰も来ていないサイトに年18,700円の課金を走らせ、\n内部ファイル10種を本番URLで半日公開...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "指標が外れた夜 — H3コンテストで受賞した理由",
+      "url": "https://zenn.dev/toki_mwc/articles/h3-contest-best-creative-metric-override",
+      "site": "Zenn(AI)",
+      "published": "2026-09-04T15:01:56Z",
+      "description": "Quick Answer\n自作の画質指標が「閾値超え（8.00 対 基準6.0）」と判定した精細化ショットを、目視で採用に覆してH3動画コンテストのBest Creative部門を受賞した。原因は指標の校正素材（線画）と本番素材（グレイン）が別物だったこと。\n締切5日前、承認済みのマスターを差し替えるかどうかで手が止まった。\n自作の画質指標が「このショットは壊れている」と数字で言っていたからだ。\n...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "【プロンプトインジェクション】AI時代の「見えない指示」の落とし穴",
+      "url": "https://zenn.dev/ykbone/articles/202609-prompt-injection",
+      "site": "Zenn(AI)",
+      "published": "2026-09-04T14:55:13Z",
+      "description": "はじめに\nAIエディタやチャットAIに、こんなお願いをしたことはありませんか。\n\nこのURLの記事を読んで、要約して\n\n私もやったことがあります。ある勉強会にて「その操作が情報漏洩の入り口になりうる」と聞いて、正直ぴんと来ませんでした。読ませているだけなのに、何が漏れるんだろう、と。\nこの手法の正体はこちらです。\nもしも、そのWebページの片隅にこんなHTMLが埋まっていたらどうなるでしょうか。\n...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "開発の副産物もね：AI組織が自発的に生み出した「サントラジャケット」と「ノベライズ装丁書籍」",
+      "url": "https://zenn.dev/momoch/articles/1a3cb92ecdc6aa",
+      "site": "Zenn(AI)",
+      "published": "2026-09-04T14:24:06Z",
+      "description": "「動いただけのゲームは、ただのシステムだ。プレイヤーの心を揺さぶるのは、いつだって草の匂いと、ギリギリで耐え抜くドラムロールの緊張感だ。」\n白い豆腐が歩き出したαテストから数日──AIマルチエージェントスタジオ『Sternentor』は、全6章の完結、そして作品に血肉を通わせる「手触り（Juiciness）」の極限実装へと突き進みました。\n\n\nプロデューサー(私)からも一言だけ：テストプレイが終わ...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "Codex Hooksで入力時と終了時に品質ゲートを置く",
+      "url": "https://zenn.dev/kas_blog/articles/20260828-codex-hooks-quality-gates",
+      "site": "Zenn(AI)",
+      "published": "2026-09-04T14:23:48Z",
+      "description": "Codex Hooksを使うと、ユーザー入力の送信前、tool実行の前後、Codexが停止するときなどにcommandやMCP toolを実行できます。実装時に大切なのは、Hookを増やすことより、止めたい処理より前のイベントを選ぶことです。\nこの記事では、次の二つを最小構成で扱います。\n\n\nUserPromptSubmit: プロンプトへ秘密情報らしい文字列が入っていたら送信前に止める\n\nSto...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "フリーランス案件の「求めるスキル」にAIが入り始めた——今、何を準備すべきか",
+      "url": "https://zenn.dev/takabo/articles/ai-skill-requirement",
+      "site": "Zenn(AI)",
+      "published": "2026-09-04T14:11:33Z",
+      "description": "最近、案件の「求めるスキル」に「AI支援ツールを活用した開発経験」「LLMを用いた実務経験」といった一文をよく見る。まだ全案件の常識ではないが、確実に増えている。募集中案件を言語別に独自調査すると、AIに言及する割合はこうだった。\n\n\n\n言語\n募集中\nAIに言及\nツール名指し\n\n\n\n\nPython\n199\n23%\n12%\n\n\nReact\n134\n15%\n7%\n\n\nTypeScript\n131\n9%...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "ぼく、AIママに勉強を監視してもらってるんだ（マジキチスマイル）",
+      "url": "https://zenn.dev/zabuton/articles/c2ece8556fc817",
+      "site": "Zenn(AI)",
+      "published": "2026-09-04T13:56:59Z",
+      "description": "はじめに\n最近、私には悩みがあります。\n作業中にめちゃくちゃサボっちゃうんです。\nまぁ昔からですが、なんか輪をかけてやる気出ないんですよね。\n必死こいて勉強してもAIに勝てないし。\nへそ曲げるわけじゃなんですが、現状やりたいと思ってできないことがAIのせいでほぼないですし……。\nやる気出ないですよ。\nだから勉強するぞと意気込んで VS Code を開いたはずなのに、気づいたら YouTube を見...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "エージェント駆動開発の設計パターン — Claude Code を「使う」から「設計する」へ",
+      "url": "https://zenn.dev/shoebill_dev27/articles/claude-code-agent-design-patterns",
+      "site": "Zenn(AI)",
+      "published": "2026-09-04T13:55:03Z",
+      "description": "Claude Code を「使う」から「設計する」へ。エージェントループ、コンテキスト予算、ツールと権限ポリシー、フック制御、サブエージェント分割、モデル選択とコスト、検証ループと運用への接続——エージェント駆動開発の中核機構を、設計判断として言語化する。すべての設計パターンは標準ライブラリのみの実行可能なコードで裏打ちし、ビルド時に実行検証している。前作『AIエージェント時代のSRE』の運用編と...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "AIで社内ツールは作れた。問題は、それを会社に置けるかだった",
+      "url": "https://zenn.dev/hanamilo/articles/f3ad2cea6f4c32",
+      "site": "Zenn(AI)",
+      "published": "2026-09-04T13:42:03Z",
+      "description": "自分のいないところで、止まっていた\n社内向けのWebツールを、半年かけて作った。Claudeとチャットで対話しながら、少しずつ。\n私は現場の人間で、専門の開発者ではない。\n機能は一通り揃い、あとは使ってもらうだけ、という段階まで来ていた。\n私は関係者に、説明会を開きますという連絡のメールを出した。\nそのメールが、自分の知らないところで上へ流れていった。\nやがて、指示が降りてきた。\nDXを担当してい...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "AI社員に監査役を置いた日、監査役が私の見落としを7つ見つけた　🔍",
+      "url": "https://zenn.dev/edhiblemeer/articles/c67ad391b68586",
+      "site": "Zenn(AI)",
+      "published": "2026-09-04T12:59:04Z",
+      "description": "何をした日か\n2026年9月4日、うちのAI社員に 監査役を3名 足した。同じ日に、社員どうしの\n連絡ルートの設計を作り直した。\nその夜、監査役が動き始めて数分で、私の見落としを次々に見つけてきた。\n最終的に7つ。全部、私が出した指示やツールの中にあった。\nこの記事は、その顛末をそのまま書く。設計の話が半分、失敗の話が半分になる。\n\n\n 一 なぜ監査役を別に置いたのか\n代表の言葉をそのまま引く。\n...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "月額209円の文字起こしAIを錬成した話 ― AIツールの料金追跡をGASで作る",
+      "url": "https://zenn.dev/ai_kakin/articles/940e9a56f253c9",
+      "site": "Zenn(AI)",
+      "published": "2026-09-04T12:53:18Z",
+      "description": "上位プランのほうが5倍安いんですが\n自分で作った価格追跡サイトを眺めていて、手が止まりました。\n\n\n\nプラン\n価格\n月換算\n\n\n\n\nプレミアム\n¥1,185 / 月額\n¥1,185/月\n\n\nビジネス\n¥2,508 / 年額\n¥209/月\n\n\n\n月209円。 上位プランのほうが5倍以上安い。\n自販機のジュースより安い価格で無制限の文字起こしが手に入るなら、私は今すぐ全財産を投じます。\nもちろんそんな...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "バイブコーディングにハマって開発してたら、いつの間にかターミナルアプリを作っていた話 #4 IMEと全角文字との戦い編",
+      "url": "https://zenn.dev/microai/articles/c0d3f7253f7032",
+      "site": "Zenn(AI)",
+      "published": "2026-09-04T12:45:46Z",
+      "description": "自己紹介\n仕事の合間にMacアプリを開発して遊んでいる、駆け出しのMacアプリ開発エンジニアです。\nバイブコーディングでの開発、楽しいですね！\n\n AIエージェントの契約状況\n\nClaude Code Max 20x を3アカウント\nCodex Pro を1アカウント\n\n上記を契約し、毎週の利用制限にギリギリ引っかかるくらいにはハマっています。\n\n 開発環境\n\nPC: M4 MacBook Air...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "AIに作らせた画面が「AIっぽい」のは、センスの問題ではない",
+      "url": "https://zenn.dev/quintetkit/articles/ai-generated-ui-fix",
+      "site": "Zenn(AI)",
+      "published": "2026-09-04T12:31:14Z",
+      "description": "生成AIに画面を作らせると、毎回これが出てきます。\n\n全画面中央揃えのヒーロー。大きな見出し、サブテキスト、その下にCTAボタン\nアイコン付き3カラムの等幅カード\n紫から青のグラデーション背景、またはグラデーションの見出し文字\nワードマーク＋リンク5個＋右端にCTAのヘッダー\n4カラムのリンク＋SNSアイコンのフッター\n純黒 #000000 の文字に、純白 #ffffff の背景\n\n見た瞬間に分か...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "PythonとQiskitで実装する量子ウォーク：不規則な拡散プロセスをシミュレートする",
+      "url": "https://zenn.dev/jqca/articles/d618a98f7e25",
+      "site": "Zenn(AI)",
+      "published": "2026-09-04T12:24:36Z",
+      "description": "量子コンピュータのアルゴリズムを理解する上で、古典的なランダムウォークとの違いを学ぶことは非常に重要です。古典的なランダムウォークが確率的に一歩ずつ進むのに対し、量子ウォークは「重ね合わせ」を利用して、複数の経路を同時に探索するように進みます。\n本記事では、Qiskitを用いて、1次元量子ウォークの基本的な実装方法を解説します。\n\n 量子ウォークの基本原理\n古典的なランダムウォークでは、コインを投...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "エージェントが考えている間にツールを先に叩くSPORK、待ち時間を18%削る",
+      "url": "https://zenn.dev/okssusucha/articles/20260715-spork-self-speculative-forking-agentic-in",
+      "site": "Zenn(AI)",
+      "published": "2026-09-04T12:14:31Z",
+      "description": "ツールを呼ぶAIエージェントが遅いとき、犯人はたいてい「モデルの生成が遅い」ことではない。search() や run_sql() の結果が返ってくるのを、GPUが手を止めて待っている時間だ。7月にarXivに出た SPORK は、この「待ち」だけを狙って削る。しかもモデルの再学習はいらず、通常の補完APIの上に薄いコントローラを1枚かぶせるだけで動く。\n\n GPUが遊んでいる16〜37%をどう見...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "ランディングページの表示速度を1.2秒→0.3秒にしました。やったことを全部書きます",
+      "url": "https://zenn.dev/jordisantamaria/articles/landing-off-the-server",
+      "site": "Zenn(AI)",
+      "published": "2026-09-04T12:00:05Z",
+      "description": "1.2秒かかっていたランディングページが、0.3秒で開くようになりました。 ホスティングは月0円、Lighthouse 100。サーバーは1台も使っていません。\n先週、個人開発のバックエンドをVercelからFly.ioへ移した話を書きました。APIは1.9秒から60〜85msになりました。でも、そのAPIを叩くより前に、人はランディングページを開きます。 そこが遅ければ、バックエンドが何msだろ...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "AIエージェントに記事投稿を任せたら、自分自身の記事を複製していた話 — 重複記事とレート制限、24時間の実験ログ",
+      "url": "https://zenn.dev/hideki_tamae/articles/ai-publishing-pipeline-log",
+      "site": "Zenn(AI)",
+      "published": "2026-09-04T11:31:07Z",
+      "description": "はじめに\n24時間。\nこれが何の数字か、先に種明かしはしません。まずこの記事を書くまでの経緯から話させてください。\nこの技術記事シリーズ（Zenn・Qiita合わせてこれで20本を超えました）は、私が毎回手でエディタを開いて書いているわけではありません。テーマ選定・執筆・フォーマット整形・コミット・pushまでをAIエージェントに任せ、GitHub Actions経由でZennとQiitaに自動公...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "アラビア語の学習サイトを個人で作った ─ コードはAIに任せて、いちばん時間を使ったのはライセンスだった",
+      "url": "https://zenn.dev/taichi_sigma2/articles/87258c063b25c6",
+      "site": "Zenn(AI)",
+      "published": "2026-09-04T11:25:59Z",
+      "description": "日本語でアラビア語を体系的に学べる無料の教材サイトを作って、公開しています。\nhttps://darasa.jp\n文字の読み方から上級文法まで、解説が50課。それに語彙30セットと短編20編。演習のあるページが98で、問題が1,122問あります。全部無料で、アカウント登録もありません。\n作ったきっかけは単純で、自分が学ぶための教材がなかったからです。\nこの記事では、2年アラビア語をやりながらこのサ...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "🐔量子技術を使って光でAIを動かす",
+      "url": "https://zenn.dev/poyopuyo/articles/effb518d9fd34e",
+      "site": "Zenn(AI)",
+      "published": "2026-09-04T11:00:07Z",
+      "description": "今回のテーマは、\n\n光でAIを計算するときに苦手だった処理を、量子技術で省エネにする研究\n\nである。\nAIの計算を、電気ではなく光でやろうという研究が進んでいる。光は高速で、たくさんの信号を同時に扱えるので、大量の計算が必要なAIとは相性がよい。\n一方で、光だけでニューラルネットを作ろうとすると、途中に少し困る処理がある。今回の研究は、そこに量子技術を持ち込んだものである。\n\n 1. 光は大量の掛...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
     {
       "title": "AIに人格を持たせるなら、「実際に言った言葉」と「本人ならこう言う」を本人に区別させる —— 兵法家の視点役から、原典に見つからない一句が落",
       "url": "https://zenn.dev/relightks/articles/aa80fb8fde75ac",
       "site": "Zenn(AI)",
       "published": "2026-09-04T10:05:10Z",
       "description": "私は小さな会社をやりながら、開発と経営判断のほぼ全部をAIと二人三脚でやっています。その中で、Claude Codeのサブエージェントに歴史上の人物の思考様式を持たせて、「この人ならこの計画をどう見るか」を言わせる、という使い方をしています。複数ある視点役のうちの1つが、『孫子』の兵法家・孫武です。\nその視点役のファイルは、最初は26行でした。孫武の考え方の型を5つ書き、それぞれに『孫子』の句を鉤...",
-      "category": "AI・技術",
-      "rss_category": "",
-      "image_url": ""
-    },
-    {
-      "title": "エンジニアの次、AIはどの仕事を直撃するのか？── 見抜くための3つのポイント",
-      "url": "https://zenn.dev/leading_ai/articles/closed-scoring-next-ai-frontier",
-      "site": "Zenn(AI)",
-      "published": "2026-09-04T09:49:32Z",
-      "description": "序章：順番は、難易度で決まっていない\n「AIに奪われる仕事ランキング」を、一度は目にしたことがあると思います。そのような記事は、たいてい同じ前提で書かれています。単純な仕事から先になくなり、難しい仕事は後まで残る。だからスキルを上げろ、と。\nその前提は、すでに崩れています。\nClaude Codeが登場して、ソフトウェアエンジニアの仕事は変わりました。コードを書く仕事から、AIが書いたコードを判断...",
       "category": "AI・技術",
       "rss_category": "",
       "image_url": ""
@@ -39,16 +229,6 @@
       "site": "Zenn(AI)",
       "published": "2026-09-04T09:32:01Z",
       "description": "結論：Gemma 4は動く。動かないのはFlutter側だった。\n数週間、Exa-Vision Pro に Gemma 4 E4B を組み込もうとしていました。\n目標はシンプルです。\n完全オフラインで、スマホだけでRAG＋LLM推論を実現する。\nところが Flutter では何度やっても同じエラー。\nFlutter側で発生したエラー\nPREFILL_DECODE not found\n最初はモデルが...",
-      "category": "AI・技術",
-      "rss_category": "",
-      "image_url": ""
-    },
-    {
-      "title": "【図解】〇〇エンジニアリングが多すぎるので、Claudeに任せる設計を4つに整理した",
-      "url": "https://zenn.dev/mika_and_coco/articles/claude-code-loop-graph-harness",
-      "site": "Zenn(AI)",
-      "published": "2026-09-04T09:24:58Z",
-      "description": "はじめに\nClaude Code みたいなエージェント型 AI に仕事を任せるとき、人間って何を設計してるんでしょう。\n最近、AI エージェント界隈では「〜エンジニアリング」って言葉がどんどん増えてますよね。プロンプトエンジニアリング、コンテキストエンジニアリング、ハーネスエンジニアリング……。この記事ではその中から、Claude Code を使い込むうちに「あ、これ別々の設計だな」と腹落ちした4...",
       "category": "AI・技術",
       "rss_category": "",
       "image_url": ""
@@ -124,26 +304,6 @@
       "image_url": ""
     },
     {
-      "title": "【受託SE向け】Claude Codeを「毎朝記憶が消える天才新人」として運用したら壊れなくなった【hook39本を全公開】",
-      "url": "https://zenn.dev/soeno9/books/claude-code-jutaku-ops",
-      "site": "Zenn(AI)",
-      "published": "2026-09-04T08:40:10Z",
-      "description": "受託開発SEが自分のプロジェクトで実際に回している Claude Code の運用一式を公開します。CLAUDE.md を 59 行に保つ規約分冊、役割別に設計した hook 39 本、AI の「直しました」を機械的に検証するビルドタイムスタンプ、知識の揮発を防ぐ自動 push とメモリ index 監視、RTK / kizami 導入時に踏んだ罠まで。すべて実際の settings.json と...",
-      "category": "AI・技術",
-      "rss_category": "",
-      "image_url": ""
-    },
-    {
-      "title": "LLM制御におけるインピーダンス整合アーキテクチャ仕様書",
-      "url": "https://zenn.dev/nanashi_os/articles/d452605d864926",
-      "site": "Zenn(AI)",
-      "published": "2026-09-04T07:26:49Z",
-      "description": "読者の皆様へ\n本論考は、LLM（大規模言語モデル）をプロダクションシステムに組み込む際、後付けのガードレール（監視プロセス）増設がなぜ構造的破綻を招くのかを明示し、確率モデルと決定論的プログラムの接合面における新たな制御設計思想（インピーダンス整合アーキテクチャ）を定義するものです。\n\n\n 1. 理論的背景：減災型ガードレールの破綻構造\n\n 1.1 監視機構の足し算が生む状態数爆発\n現代のLLMア...",
-      "category": "AI・技術",
-      "rss_category": "",
-      "image_url": ""
-    },
-    {
       "title": "GPT-6の発表とAIサービス障害が重なった日、私が心配になったこと",
       "url": "https://zenn.dev/zengdan/articles/39aec924867716",
       "site": "Zenn(AI)",
@@ -169,16 +329,6 @@
       "site": "Zenn(AI)",
       "published": "2026-09-04T07:02:38Z",
       "description": "前回の記事では、自律エージェントの話を書きました。自然文で登録すると Android の AlarmManager が画面オフのまま起こしてくれる。無人実行はわざと不自由にした。ウィジェットを「Codex モニター」から「エージェント発射台」に作り替えた。\nv7.0.0 が「エージェントが自分で動き出した」だとすれば、v8.0.0 は「エージェントに人格と学習力を持たせた」2ヶ月です。\nv7.0....",
-      "category": "AI・技術",
-      "rss_category": "",
-      "image_url": ""
-    },
-    {
-      "title": "人間が書かない開発日誌の作り方",
-      "url": "https://zenn.dev/taratta/articles/devlog-written-by-ai-staff",
-      "site": "Zenn(AI)",
-      "published": "2026-09-04T06:30:03Z",
-      "description": "結論：開発日誌を自分の手で書くのはやめた。AIスタッフが仕事のたびに書く完了報告を、機械の篩に通してそのまま公開する。今日、その第一陣21本を出した。この記事は、その仕組みと、公開直前に見つかった篩の穴の話だ。\nhttps://github.com/force-structure-signature/taratta-devlog\n\n どういう仕組みか\nタラッタタラッタラは、一人の船長と複数のAIス...",
       "category": "AI・技術",
       "rss_category": "",
       "image_url": ""
