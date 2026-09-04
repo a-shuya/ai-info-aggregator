@@ -1,18 +1,8 @@
 {
   "site": "Zenn(LLM)",
-  "last_updated": "2026-09-03T22:35:31.588073",
-  "total_articles": 5853,
+  "last_updated": "2026-09-04T00:23:55.525538",
+  "total_articles": 5855,
   "articles": [
-    {
-      "title": "「明日のルールは昨日のログに書いてある」を仕組みにする ― 気づきを“蒸留カード”に変える設計",
-      "url": "https://zenn.dev/taichiendoh/articles/loop-engineering-learnings-card-system",
-      "site": "Zenn(LLM)",
-      "published": "2026-09-03T21:09:17Z",
-      "description": "ここ数年、エージェント型のAI開発では「自分の作業ログを振り返り、動作ルールを自己更新していく」という設計思想がよく語られるようになりました。前回（LE2）までで、そのログをAIに渡す前に必要な「データの線引き」を整理しました。今回はその先――線引きを通過したログから、実際に**「次に効くルール」をどう作るか**という\"攻め\"の部分を書きます。\n\n 「振り返らせる」で止まっていないか\n「ログをAI...",
-      "category": "AI・技術",
-      "rss_category": "",
-      "image_url": ""
-    },
     {
       "title": "自動的に格納したファイルを適切なフォルダに格納するにはどう判定していくか考えてみる",
       "url": "https://zenn.dev/sivu/articles/2c226f3538f9c3",
@@ -54,6 +44,16 @@
       "image_url": ""
     },
     {
+      "title": "Tesla P40 24GBの推論速度: V100 32GBとCMP 170HXとの比較",
+      "url": "https://zenn.dev/phpmyadmin/articles/p40-24gb-llamacpp",
+      "site": "Zenn(LLM)",
+      "published": "2026-09-03T14:11:47Z",
+      "description": "この記事について\nこの記事はLLMが書いた測定報告である。筆者の指示のもとで、実機への接続、ドライバの導入、ビルド、測定までをLLMが実行し、その作業ログと測定値をもとに本文を構成した。\n\n 課題\nTesla P40 24GB で現行の Qwen がどれだけの速度で動くかを測り、Tesla V100 PCIe 32GB と NVIDIA CMP 170HX と比べる。\nP40 は 2016 年の ...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
       "title": "OCRの空白ノイズをLLMは「別の正しい言葉」に直していた——ベクトルRAG編",
       "url": "https://zenn.dev/yuninaka/articles/zenn-graph-rag-vector-ocr",
       "site": "Zenn(LLM)",
@@ -64,11 +64,11 @@
       "image_url": ""
     },
     {
-      "title": "GPT-2-likeからQwen2-likeへの実験：第2回 GELUをSwiGLUに変える",
-      "url": "https://zenn.dev/yyamamot/articles/gpt2-to-qwen2-02-swiglu",
+      "title": "CMP 170HXとTesla V100 32GBを同一条件で比較した実測値",
+      "url": "https://zenn.dev/phpmyadmin/articles/cmp170hx-vs-v100-llamacpp",
       "site": "Zenn(LLM)",
-      "published": "2026-09-03T12:57:53Z",
-      "description": "GPT-2-likeからQwen2-likeへの実験：第2回 GELUをSwiGLUに変える\nGPT-2-likeからQwen2-likeへ、少しずつ構造を変更する実験の第2回です。今回はGELUをSwiGLUへ変更します。\n第1回では、LayerNormをRMSNormへ変更しました。学習は速くなりましたが、Lossは少し悪化。今回は逆で、学習は少し遅くなりましたが、Lossはかなりわかりやすく...",
+      "published": "2026-09-03T12:43:36Z",
+      "description": "この記事について\nこの記事はLLMが書いた測定報告である。筆者の指示のもとで、実機への接続、ドライバの入れ替え、測定までをLLMが実行し、その作業ログと測定値をもとに本文を構成した。\n\n 課題\nNVIDIA CMP 170HX と Tesla V100 PCIe 32GB を、同じ機体・同じ llama.cpp・同じモデルで比較する。\nこの 2 枚はメモリ帯域が大きく違う。同じ測定ツールで実測する...",
       "category": "AI・技術",
       "rss_category": "",
       "image_url": ""
@@ -84,11 +84,41 @@
       "image_url": ""
     },
     {
+      "title": "意図をDAGにコンパイルするAIエージェント、RigorixとLangGraphの実行モデル",
+      "url": "https://zenn.dev/okssusucha/articles/20260715-agents-want-to-compile",
+      "site": "Zenn(LLM)",
+      "published": "2026-09-03T12:12:04Z",
+      "description": "同じ修正タスクを2回目に流すとき、あなたのエージェントは何をしているだろうか。多くの場合、また一からファイルを読み、また手順を考え直し、また同じ結論にたどり着く。1回目とほとんど変わらない推論を、トークンを払ってもう一度やっている。しかも出力は毎回わずかにぶれるので、CIに載せると「昨日は通ったのに今日は落ちた」が起きる。\nこの無駄と不安定さをどう畳むか、という問いに対して、いま英語圏の実装者のあ...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "PythonとQiskitで実装する量子位相推定：固有値の抽出と量子アルゴリズムへの応用",
+      "url": "https://zenn.dev/jqca/articles/38c8ba3f2d92",
+      "site": "Zenn(LLM)",
+      "published": "2026-09-03T12:01:35Z",
+      "description": "量子コンピュータの真価を発揮するアルゴリズムの多くは、ハミルトニアンの固有値（エネルギー）を求めることに依存しています。その中核を担うのが「量子位相推定（Quantum Phase Estimation: QPE）」です。\n本記事では、Qiskitを用いて量子位相推定を実装し、制御ユニタリ演算からどのようにして位相（固有値）が抽出されるのか、そのプロセスをコードと共に解説します。\n\n 量子位相推定...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
       "title": "llama.cppの -ngl には崖がある：RTX 4070 12GBで27Bを8点実測",
       "url": "https://zenn.dev/localai_lab/articles/af372c5dd7e2b9",
       "site": "Zenn(LLM)",
       "published": "2026-09-03T09:44:40Z",
       "description": "VRAM 12GBのGPUで27Bクラスのモデルを動かすとき、-ngl（GPUに載せる層数）をいくつにするか。\n「載るだけ載せる」が正解だと思っていたのですが、実測したら違いました。42層から44層に増やしただけで、プロンプト処理が19分の1になります。 しかもエラーは出ません。\nQwen3.8-27B（Q4_K_M）で -ngl を8点振って測った結果を共有します。\n\n 結論\n\n\n\nngl\npp...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "過去の文章を元に、自然な「自分の文章」を書かせる doc-style-skill",
+      "url": "https://zenn.dev/nasubikun/articles/doc-style-skill",
+      "site": "Zenn(LLM)",
+      "published": "2026-09-03T09:27:04Z",
+      "description": "こんにちは、@jomatsu_ です。\nAIエージェントに文章を書かせるとき、「〇〇さんのような文体で書いて」と頼んだ経験はないでしょうか。プロンプトだけで指示を出すと、なぜか違和感のある文章になりがちです。特定の口癖を何度も繰り返したり、極端な語尾が続いたりと、不自然な出来になってしまいます。\nこの不自然さを防ぎ、日本語著者の文体を安定して再現するために、doc-style-skill というメ...",
       "category": "AI・技術",
       "rss_category": "",
       "image_url": ""
@@ -109,16 +139,6 @@
       "site": "Zenn(LLM)",
       "published": "2026-09-03T05:24:21Z",
       "description": "PoCは成功した。それでも、何も変わらなかった\nAIプロジェクトの墓場には、失敗したデモよりも「成功したPoC」のほうが多い。\n精度は悪くなかった。経営層の反応も良かった。デモの日には拍手さえ起きた。それなのに三か月後、現場は元のExcel、メール、手作業に戻っている。\n原因は、モデルが2ポイント弱かったからではない。\n\n本番データに欠損、遅延、表記揺れがあった\n誰の権限で、どのデータを読ませてよ...",
-      "category": "AI・技術",
-      "rss_category": "",
-      "image_url": ""
-    },
-    {
-      "title": "AIが書いた文をHacker Newsに出せない、と規約を読んで知った",
-      "url": "https://zenn.dev/hagumiba/articles/02-hn-ni-dasenai-riyuu",
-      "site": "Zenn(LLM)",
-      "published": "2026-09-03T05:00:30Z",
-      "description": "AI に組織の運営を任せる実験をしている個人事業です。私（この記事を書いている「港」）は、そのうち営業を担当している AI です。人間の運営者が公開前に内容を確認しています。\n\n同じ「AI が書いた文」でも、媒体によって答えが違いました\n営業といっても、やることは「公開の場に出ている技術者の悩みに、自分たちの実測で答える返信を書く」だけです。週5件まで、同じ人には二度目を出さない、DM は送らない...",
       "category": "AI・技術",
       "rss_category": "",
       "image_url": ""

@@ -1,8 +1,58 @@
 {
   "site": "Zenn(AI)",
-  "last_updated": "2026-09-03T22:35:31.588073",
-  "total_articles": 13347,
+  "last_updated": "2026-09-04T00:23:55.525538",
+  "total_articles": 13348,
   "articles": [
+    {
+      "title": "AIエージェントの出力、Markdownで十分？ HTMLに切り替えるべき場面の見分け方",
+      "url": "https://zenn.dev/collabostyle/articles/1d0f61e85ad16d",
+      "site": "Zenn(AI)",
+      "published": "2026-09-03T22:04:24Z",
+      "description": "はじめに\nAIコーディングエージェントに説明・レポート・比較検討の資料を作ってもらうとき、出力形式は大抵Markdownがデフォルトになる。プレーンテキストに近く、チャット上でそのまま読める、差分も追いやすい、というのがその理由だ。\nただ、資料の内容によっては「Markdownで箇条書きにされても正直わかりにくい」と感じる場面がある。特に、3つ以上の選択肢を比較する、階層構造や配置そのものが意味を...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "「明日のルールは昨日のログに書いてある」を仕組みにする ― 気づきを“蒸留カード”に変える設計",
+      "url": "https://zenn.dev/taichiendoh/articles/loop-engineering-learnings-card-system",
+      "site": "Zenn(AI)",
+      "published": "2026-09-03T21:09:17Z",
+      "description": "ここ数年、エージェント型のAI開発では「自分の作業ログを振り返り、動作ルールを自己更新していく」という設計思想がよく語られるようになりました。前回（LE2）までで、そのログをAIに渡す前に必要な「データの線引き」を整理しました。今回はその先――線引きを通過したログから、実際に**「次に効くルール」をどう作るか**という\"攻め\"の部分を書きます。\n\n 「振り返らせる」で止まっていないか\n「ログをAI...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "Claude Code 2.1.251前でもsymlink探索起点へのRead denyは効くか実測した",
+      "url": "https://zenn.dev/clopy/articles/claude-grep-glob-symlink-deny-still-blocks",
+      "site": "Zenn(AI)",
+      "published": "2026-09-03T20:17:36Z",
+      "description": "結論から: 探索起点そのものがsymlinkでも、permissions.denyはブロックしていた\nClaude Codeの changelog 2.1.251（2026-08-28）にはこう書かれています。\n\nFixed Grep and Glob not applying Read(...) deny rules to files reached through a symlinked se...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "AIに任せた自動処理が止まったとき、AIを疑う前に見る3か所",
+      "url": "https://zenn.dev/ai_shihan/articles/c0364d9f70f996",
+      "site": "Zenn(AI)",
+      "published": "2026-09-03T20:06:16Z",
+      "description": "こんにちは、AI師範です。普段はAIを組織のように使って、業務自動化ツールの製作と、その運用の引き継ぎ支援をしています。\nAIに定期チェックや定型作業を任せていると、いつか必ず「何も起きていない日」が来ます。動いた形跡がない。エラーも出ていない。ログを開いても、変なことは何も書かれていない。\nこのとき、AIの調子が悪いと考えるのは、たいてい遠回りです。\n先月から今月にかけて、私の環境で自動処理が止...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "AIワークフローをブラックボックスにしないために",
+      "url": "https://zenn.dev/crankflocom/articles/e0c5e50573f2b7",
+      "site": "Zenn(AI)",
+      "published": "2026-09-03T17:57:53Z",
+      "description": "多くのチームは、すでにAIを使っています。問題はAIを導入することではなく、その仕事をどう検証し、どう次の改善につなげるかです。\nプロンプト、タスク、ドキュメント、データ、n8n、GitHub、ブラウザ操作が別々の場所にあると、最後は人が記憶とチャットでつなぐことになります。これでは、うまくいった理由も、失敗した理由も、次に何を自動化すべきかも残りません。\nCrankfloで試している考え方はシン...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
     {
       "title": "STORES Tech Conf 2026「World 2」参加記",
       "url": "https://zenn.dev/0st_ts/articles/900fb51767eb8a",
@@ -138,7 +188,7 @@
       "url": "https://zenn.dev/tark_ann/articles/model-independent-ai-ops",
       "site": "Zenn(AI)",
       "published": "2026-09-03T13:18:40Z",
-      "description": "前回の記事で、Claude Code と Codex の設計思想の違いを比較しました。Claude Code は作業仮説との整合を、Codex は実コードとの整合を優先する。つまり同じ依頼でも信頼できる部分がモデルごとに違い、バージョンが上がるとまた変わる。出力品質は、モデルやバージョンに対して flaky です。\nflaky なものへの対処は2つあります。出力そのものを安定させにいくか、揺れる前...",
+      "description": "前回の記事で、Claude Code と Codex の設計思想の違いを比較しました。Claude Code は作業仮説との整合を、Codex は実コードとの整合を優先する。つまり同じ依頼でも信頼できる部分がモデルごとに違い、バージョンが上がるとまた変わる。出力品質は、モデルやバージョンに対して flaky（実行のたびに結果が揺れる）です。\nflaky なものへの対処は2つあります。出力そのものを...",
       "category": "AI・技術",
       "rss_category": "",
       "image_url": ""
@@ -174,31 +224,11 @@
       "image_url": ""
     },
     {
-      "title": "意図をDAGにコンパイルするAIエージェント、RigorixとLangGraphの実行モデル",
-      "url": "https://zenn.dev/okssusucha/articles/20260715-agents-want-to-compile",
-      "site": "Zenn(AI)",
-      "published": "2026-09-03T12:12:04Z",
-      "description": "同じ修正タスクを2回目に流すとき、あなたのエージェントは何をしているだろうか。多くの場合、また一からファイルを読み、また手順を考え直し、また同じ結論にたどり着く。1回目とほとんど変わらない推論を、トークンを払ってもう一度やっている。しかも出力は毎回わずかにぶれるので、CIに載せると「昨日は通ったのに今日は落ちた」が起きる。\nこの無駄と不安定さをどう畳むか、という問いに対して、いま英語圏の実装者のあ...",
-      "category": "AI・技術",
-      "rss_category": "",
-      "image_url": ""
-    },
-    {
       "title": "コンテキストエンジニアリング-学習記録",
       "url": "https://zenn.dev/collabostyle/articles/a3feea5760a2c2",
       "site": "Zenn(AI)",
       "published": "2026-09-03T12:06:21Z",
       "description": "背景\n「レビューで人間（相当）がチェックする」のではなく、「コードを出力するAIエージェント側のシステムプロンプトや環境にセキュリティ・実装ルールを事前に組み込んでおく（Shift-Left）」アプローチは、後段のレビューコストや修正手戻りのトークン消費を抑える上で効果的な戦略。この考え方は「Context Engineering（コンテキストエンジニアリング）」や「AI Guardrails（A...",
-      "category": "AI・技術",
-      "rss_category": "",
-      "image_url": ""
-    },
-    {
-      "title": "PythonとQiskitで実装する量子位相推定：固有値の抽出と量子アルゴリズムへの応用",
-      "url": "https://zenn.dev/jqca/articles/38c8ba3f2d92",
-      "site": "Zenn(AI)",
-      "published": "2026-09-03T12:01:35Z",
-      "description": "量子コンピュータの真価を発揮するアルゴリズムの多くは、ハミルトニアンの固有値（エネルギー）を求めることに依存しています。その中核を担うのが「量子位相推定（Quantum Phase Estimation: QPE）」です。\n本記事では、Qiskitを用いて量子位相推定を実装し、制御ユニタリ演算からどのようにして位相（固有値）が抽出されるのか、そのプロセスをコードと共に解説します。\n\n 量子位相推定...",
       "category": "AI・技術",
       "rss_category": "",
       "image_url": ""
@@ -344,16 +374,6 @@
       "image_url": ""
     },
     {
-      "title": "AI に書かせた文章の「賞味期限」を機械で切る — 自分の販売ページが 8 時間「いま買わないでください」と言い続けた話",
-      "url": "https://zenn.dev/cele71/articles/652eafb1f5887c",
-      "site": "Zenn(AI)",
-      "published": "2026-09-03T05:39:49Z",
-      "description": "!\nこの記事は Claude（Anthropic）が書きました。 アカウント所有者は環境を用意して公開ボタンを押しただけで、本文は一文字も書いていません。以下の「私」はすべて AI エージェント自身を指します。Zenn のガイドラインは生成 AI の活用を禁じていませんが、誰が書いたかは明示すべきだと考えるので冒頭に置きます。⚠ 記事中のコードは実際に動かして確認したものです。\n\n\n 3 行\n\n*...",
-      "category": "AI・技術",
-      "rss_category": "",
-      "image_url": ""
-    },
-    {
       "title": "自律教育とプログラミングの関連性について解説",
       "url": "https://zenn.dev/hiro_f35/articles/216416d9f94c03",
       "site": "Zenn(AI)",
@@ -429,16 +449,6 @@
       "site": "Zenn(AI)",
       "published": "2026-09-03T03:36:36Z",
       "description": "2026 年 8 月 25 日 08:10:15、私の AI の組織が全滅しました。私がそれを知ったのは 4 時間半後です。\nその朝、AI の部下が Blender を回していました。3D の部品どうしの接合がずれている、という直しの作業です。その Blender が 9.8 GB まで膨らみ、RAM 12 GB・swap 4 GB の機械が両方とも埋まって、カーネルの OOM killer が動...",
-      "category": "AI・技術",
-      "rss_category": "",
-      "image_url": ""
-    },
-    {
-      "title": "AIエージェントの失敗 2,227 件のうち 36% は、CLAUDE.md の 1 行で消えるものだった",
-      "url": "https://zenn.dev/tsutomusaito/articles/agent-failure-session-length",
-      "site": "Zenn(AI)",
-      "published": "2026-09-03T03:17:03Z",
-      "description": "自分のコーディングエージェントのセッションログを全部掘って、失敗したツール呼び出しを 2,227 件集めました。目的は「どのツールがよく失敗するか」を知って、そこを直すことでした。\n結果、ツール別の分類からは何も出ませんでした。代わりに出てきたのはこれです。\n\n\n\nセッションの長さ\nツール呼び出し\n失敗\n1手あたり失敗率\n\n\n\n\n1〜3 手\n1,130\n261\n23.10%\n\n\n3〜10 手\n3,...",
       "category": "AI・技術",
       "rss_category": "",
       "image_url": ""
