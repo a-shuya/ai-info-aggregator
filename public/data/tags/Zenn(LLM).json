@@ -1,18 +1,8 @@
 {
   "site": "Zenn(LLM)",
-  "last_updated": "2026-09-04T00:23:55.525538",
-  "total_articles": 5855,
+  "last_updated": "2026-09-04T04:58:46.363236",
+  "total_articles": 5851,
   "articles": [
-    {
-      "title": "自動的に格納したファイルを適切なフォルダに格納するにはどう判定していくか考えてみる",
-      "url": "https://zenn.dev/sivu/articles/2c226f3538f9c3",
-      "site": "Zenn(LLM)",
-      "published": "2026-09-03T16:30:22Z",
-      "description": "はじめに\n紙の申請書をスキャンして電子アーカイブに入れるとき、必ず発生するのが「これ、どのフォルダに入れるんだっけ？」「ファイル名はどう付けるんだっけ？」という判断です。文書量が多い組織ほどこの判断コストが積み上がり、命名や格納のばらつきが後の検索性を壊していきます。\nこの記事は、自治体の文書管理を題材に、スキャン PDF を投げると「格納先フォルダ候補」と「命名規則に沿ったファイル名」を根拠付き...",
-      "category": "AI・技術",
-      "rss_category": "",
-      "image_url": ""
-    },
     {
       "title": "LLMアプリには「渡しているのに画面に出ていない情報」が生まれる",
       "url": "https://zenn.dev/ace_toshi/articles/llm-hidden-prompt-info-gap",
@@ -44,31 +34,11 @@
       "image_url": ""
     },
     {
-      "title": "Tesla P40 24GBの推論速度: V100 32GBとCMP 170HXとの比較",
-      "url": "https://zenn.dev/phpmyadmin/articles/p40-24gb-llamacpp",
-      "site": "Zenn(LLM)",
-      "published": "2026-09-03T14:11:47Z",
-      "description": "この記事について\nこの記事はLLMが書いた測定報告である。筆者の指示のもとで、実機への接続、ドライバの導入、ビルド、測定までをLLMが実行し、その作業ログと測定値をもとに本文を構成した。\n\n 課題\nTesla P40 24GB で現行の Qwen がどれだけの速度で動くかを測り、Tesla V100 PCIe 32GB と NVIDIA CMP 170HX と比べる。\nP40 は 2016 年の ...",
-      "category": "AI・技術",
-      "rss_category": "",
-      "image_url": ""
-    },
-    {
       "title": "OCRの空白ノイズをLLMは「別の正しい言葉」に直していた——ベクトルRAG編",
       "url": "https://zenn.dev/yuninaka/articles/zenn-graph-rag-vector-ocr",
       "site": "Zenn(LLM)",
       "published": "2026-09-03T13:19:16Z",
       "description": "1. 概要\n\n 1.1 やったこと(3行サマリ)\n\n前回記事(OCRの誤読をLLMが勝手に直した話——グラフRAGパイプライン完成編)で「今回はスコープ外」として残した、ベクトルインデックス側のOCR由来データ対応を実装した\nグラフ側と同じOCRノイズ(語の途中への空白混入)が、グラフ側とベクトル側でまったく違う経路を辿ることを実測した\n前回発見した「LLMがOCRの誤読を正しく直してくれる」とい...",
-      "category": "AI・技術",
-      "rss_category": "",
-      "image_url": ""
-    },
-    {
-      "title": "CMP 170HXとTesla V100 32GBを同一条件で比較した実測値",
-      "url": "https://zenn.dev/phpmyadmin/articles/cmp170hx-vs-v100-llamacpp",
-      "site": "Zenn(LLM)",
-      "published": "2026-09-03T12:43:36Z",
-      "description": "この記事について\nこの記事はLLMが書いた測定報告である。筆者の指示のもとで、実機への接続、ドライバの入れ替え、測定までをLLMが実行し、その作業ログと測定値をもとに本文を構成した。\n\n 課題\nNVIDIA CMP 170HX と Tesla V100 PCIe 32GB を、同じ機体・同じ llama.cpp・同じモデルで比較する。\nこの 2 枚はメモリ帯域が大きく違う。同じ測定ツールで実測する...",
       "category": "AI・技術",
       "rss_category": "",
       "image_url": ""
@@ -109,16 +79,6 @@
       "site": "Zenn(LLM)",
       "published": "2026-09-03T09:44:40Z",
       "description": "VRAM 12GBのGPUで27Bクラスのモデルを動かすとき、-ngl（GPUに載せる層数）をいくつにするか。\n「載るだけ載せる」が正解だと思っていたのですが、実測したら違いました。42層から44層に増やしただけで、プロンプト処理が19分の1になります。 しかもエラーは出ません。\nQwen3.8-27B（Q4_K_M）で -ngl を8点振って測った結果を共有します。\n\n 結論\n\n\n\nngl\npp...",
-      "category": "AI・技術",
-      "rss_category": "",
-      "image_url": ""
-    },
-    {
-      "title": "過去の文章を元に、自然な「自分の文章」を書かせる doc-style-skill",
-      "url": "https://zenn.dev/nasubikun/articles/doc-style-skill",
-      "site": "Zenn(LLM)",
-      "published": "2026-09-03T09:27:04Z",
-      "description": "こんにちは、@jomatsu_ です。\nAIエージェントに文章を書かせるとき、「〇〇さんのような文体で書いて」と頼んだ経験はないでしょうか。プロンプトだけで指示を出すと、なぜか違和感のある文章になりがちです。特定の口癖を何度も繰り返したり、極端な語尾が続いたりと、不自然な出来になってしまいます。\nこの不自然さを防ぎ、日本語著者の文体を安定して再現するために、doc-style-skill というメ...",
       "category": "AI・技術",
       "rss_category": "",
       "image_url": ""
