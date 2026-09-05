@@ -1,14 +1,74 @@
 {
   "site": "Zenn(生成 AI)",
-  "last_updated": "2026-09-04T23:29:27.917800",
-  "total_articles": 3739,
+  "last_updated": "2026-09-05T01:20:27.274567",
+  "total_articles": 3745,
   "articles": [
+    {
+      "title": "Claude Code の委譲を実測した — ブラウザ巡回を子に投げると親の文脈は1/8、ただし総トークンでは負ける",
+      "url": "https://zenn.dev/genkunjc/articles/subagent-delegation-measured",
+      "site": "Zenn(生成 AI)",
+      "published": "2026-09-04T20:55:28Z",
+      "description": "Claude Code を使っていると、「この作業は子エージェントに投げたほうが安いのでは」と思う場面があります。サブエージェント（Agent ツールで起動する別セッション。ツールの実行結果は親の会話に入らず、最終報告だけが返ってくる）に渡せば、親の文脈が汚れない。直感的には得に見えます。\nその直感を測りました。測ったのは「ブラウザで2ページ開いて事実を5つ抜く」という1種類の作業だけです。実装の...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "型チェックは通る — Claude Code の失敗13件と、気づく仕組みの作り方",
+      "url": "https://zenn.dev/genkunjc/books/claude-code-parallel-kit",
+      "site": "Zenn(生成 AI)",
+      "published": "2026-09-04T20:14:05Z",
+      "description": "AIコーディングエージェントは、エラーを出さずに壊れます。型チェックは通り、ビルドも通り、報告には「完了しました」と書いてある。実際に起きた13件を「症状／本当の原因／なぜ発見が遅れるか／対策」の形でまとめました。中心は3番目です。「気をつける」は注意力が切れた瞬間に消えるので、気づかなくても止まる形に落とすところまで書いています。settings の推奨値、エージェント定義、コピーして使えるテン...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "LLMルーター運用ログ：2026年9月期における「変更なし」の判断根拠と評価プロセス",
+      "url": "https://zenn.dev/sh39works/articles/219dae985a0394",
+      "site": "Zenn(生成 AI)",
+      "published": "2026-09-04T15:38:50Z",
+      "description": "結論\n本月の運用評価結果、およびLLMルーターの維持判断は以下の3点に集約される。\n\n\nLLMルーター（モデル選定基準）の更新行数は0行\n2026-08-10の最終改訂以降、モデル割り当ての変更が必要な事象は一切発生しておらず、現行構成を維持する。\n\nClaude Sonnet 5の値上げ撤回による経済的妥当性の確定\n今月の主要な再評価トリガーであった「2026-09-01の標準価格移行（値上げ）...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "CMP 170HXのロングランテスト: 180W制限の代償とDP4Aパッチの検証",
+      "url": "https://zenn.dev/phpmyadmin/articles/cmp170hx-longrun-test",
+      "site": "Zenn(生成 AI)",
+      "published": "2026-09-04T14:18:43Z",
+      "description": "この記事について\nこの記事はLLMが書いた測定報告である。筆者の指示のもとで、実機への接続、ドライバの入れ替え、測定までをLLMが実行し、その作業ログと測定値をもとに本文を構成した。\n\n 課題\nNVIDIA CMP 170HX をローカル LLM 用途で常用してよいかを、長時間の負荷試験で確かめる。\nこのカードはマイニング専用に機能を削られた GA100 で、コミュニティ製のパッチドライバを当てる...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "AIを信用しないユーザーの逆説AIエージェント",
+      "url": "https://zenn.dev/konbu_love/articles/dc9830850c72e7",
+      "site": "Zenn(生成 AI)",
+      "published": "2026-09-04T10:50:17Z",
+      "description": "「空き時間を諦めさせるAIエージェント」を考えてみた\n事情¹がありチームは組めませんが、せっかくなので第5回 Agentic AI Hackathon with Google Cloud向けの企画を考えてみました。\n¹ めんどくさい\nなお、私はこの企画を実装していません。\n実装していないのに、考えていたら妙に使えそうなものになってしまったので、企画だけ置いておきます。\n\n最初は「旅行プランナー」だ...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
     {
       "title": "【AIエージェントでナポレオン】# 21. もっともらしい推理が、その場で崩れた日",
       "url": "https://zenn.dev/gakusys/articles/7edc97ebf1d8a5",
       "site": "Zenn(生成 AI)",
       "published": "2026-09-04T10:35:45Z",
       "description": "やあ、今日はカードプレイの出力に「副官（味方だが正体を隠しているプレイヤー）を推理する欄」を新設して、実機で1局回した話。\n📚 ルールはこちら：https://zenn.dev/gakusys/books/782ca882e59a16\n\n\n\n 結論から\n!\n\n\n推理は確かに深まった：副官の自己申告、公開前の様子見、公開後の切り替えまで、一貫して筋の通った推理が積み上がった。\n\n一番面白いのは「もっ...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "エンジニアの次、AIはどの仕事を直撃するのか？── 見抜くための3つのポイント",
+      "url": "https://zenn.dev/leading_ai/articles/closed-scoring-next-ai-frontier",
+      "site": "Zenn(生成 AI)",
+      "published": "2026-09-04T09:49:32Z",
+      "description": "序章：順番は、難易度で決まっていない\n「AIに奪われる仕事ランキング」を、一度は目にしたことがあると思います。そのような記事は、たいてい同じ前提で書かれています。単純な仕事から先になくなり、難しい仕事は後まで残る。だからスキルを上げろ、と。\nその前提は、すでに崩れています。\nClaude Codeが登場して、ソフトウェアエンジニアの仕事は変わりました。コードを書く仕事から、AIが書いたコードを判断...",
       "category": "AI・技術",
       "rss_category": "",
       "image_url": ""
