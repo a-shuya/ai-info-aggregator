@@ -1,34 +1,14 @@
 {
   "site": "Zenn(生成 AI)",
-  "last_updated": "2026-09-05T05:56:26.590258",
-  "total_articles": 3751,
+  "last_updated": "2026-09-05T10:18:56.724611",
+  "total_articles": 3752,
   "articles": [
-    {
-      "title": "生成AIに送ったデータはどこへ行く？Amazon Bedrockのセキュリティを整理する",
-      "url": "https://zenn.dev/abc_yoko/articles/9e028638fa525b",
-      "site": "Zenn(生成 AI)",
-      "published": "2026-09-05T03:45:45Z",
-      "description": "はじめに\n前回の記事では、Amazon BedrockをCLIから呼び出し、生成AIを手軽に試す方法を紹介しました。\n今回は少し視点を変えて、「Bedrockに送ったデータは、実際にどこで処理されるのか？」 という点を整理します。\n生成AIを業務で利用する場合、精度やコストだけでなく、入力したデータがどこへ送られるのか、モデルの学習に使われないかといった点も重要です。\nAmazon Bedrock...",
-      "category": "AI・技術",
-      "rss_category": "",
-      "image_url": ""
-    },
     {
       "title": "AIレビューが毎回「概ね問題ありません」になる理由",
       "url": "https://zenn.dev/tryangrow/articles/ee4f2a02d96a4d",
       "site": "Zenn(生成 AI)",
       "published": "2026-09-05T03:26:26Z",
       "description": "claudecode,cursor,生成ai,tdd,設計\nAIにコードを書かせたあと、同じAIに「これレビューして」と頼んだことがあると思います。\n返ってくるのは、だいたいこれです。\n\n実装を確認しました。全体として仕様を満たしており、大きな問題は見当たりません。\n強いて挙げるなら、エラーハンドリングをもう少し丁寧にすると良いかもしれません。\n\n読んだ瞬間に、何も検査されていないことが分かります...",
-      "category": "AI・技術",
-      "rss_category": "",
-      "image_url": ""
-    },
-    {
-      "title": "ファインチューニングとRAGの使い分け：どちらで解くべき問題かを初心者向けに整理する",
-      "url": "https://zenn.dev/yushiyamamoto/articles/finetuning-vs-rag-2026-08",
-      "site": "Zenn(生成 AI)",
-      "published": "2026-09-05T03:03:38Z",
-      "description": "「社内の資料をAIに答えさせたい」「うちの言い回しに合わせたい」——生成AIを仕事に入れようとすると、だいたいこの2つの要望が同時に出てきます。そこで並ぶ候補が RAG と ファインチューニング です。どちらも「AIを自分向けに強くする」話なのに、やっていることはまったく違います。この記事は、コードをほとんど書かずに「どっちの道具で解く問題か」を見分けるための地図です。\n\n 一言で言うと、何が違う...",
       "category": "AI・技術",
       "rss_category": "",
       "image_url": ""
@@ -84,6 +64,26 @@
       "image_url": ""
     },
     {
+      "title": "型チェックは通る — Claude Code の失敗13件と、気づく仕組みの作り方",
+      "url": "https://zenn.dev/genkunjc/books/claude-code-parallel-kit",
+      "site": "Zenn(生成 AI)",
+      "published": "2026-09-04T20:14:05Z",
+      "description": "AIコーディングエージェントは、エラーを出さずに壊れます。型チェックは通り、ビルドも通り、報告には「完了しました」と書いてある。実際に起きた13件を「症状／本当の原因／なぜ発見が遅れるか／対策」の形でまとめました。中心は3番目です。「気をつける」は注意力が切れた瞬間に消えるので、気づかなくても止まる形に落とすところまで書いています。settings の推奨値、エージェント定義、コピーして使えるテン...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "Claude Code × git worktree で並列実行 — 黙って壊れた3つと、分割の境界線",
+      "url": "https://zenn.dev/genkunjc/articles/ead8b520c22733",
+      "site": "Zenn(生成 AI)",
+      "published": "2026-09-04T17:21:06Z",
+      "description": "AIコーディングエージェントを1体ずつ順番に走らせていると、経過時間はほぼ「自分が待っている時間」になります。独立した作業を複数のサブエージェントに分けて同時に走らせれば、そこは縮みます。\nただ、素直にやると壊れます。しかもエラーを出さずに壊れるものが混ざっているのが厄介でした。型チェックは通り、ビルドも通り、エージェントの報告には「完了しました」と書いてある。それでも中身が違う。\nこの記事は、C...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
       "title": "LLMルーター運用ログ：2026年9月期における「変更なし」の判断根拠と評価プロセス",
       "url": "https://zenn.dev/sh39works/articles/219dae985a0394",
       "site": "Zenn(生成 AI)",
@@ -99,6 +99,16 @@
       "site": "Zenn(生成 AI)",
       "published": "2026-09-04T14:18:43Z",
       "description": "この記事について\nこの記事はLLMが書いた測定報告である。筆者の指示のもとで、実機への接続、ドライバの入れ替え、測定までをLLMが実行し、その作業ログと測定値をもとに本文を構成した。\n\n 課題\nNVIDIA CMP 170HX をローカル LLM 用途で常用してよいかを、長時間の負荷試験で確かめる。\nこのカードはマイニング専用に機能を削られた GA100 で、コミュニティ製のパッチドライバを当てる...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "AIに作らせた画面が「AIっぽい」のは、センスの問題ではない",
+      "url": "https://zenn.dev/quintetkit/articles/ai-generated-ui-fix",
+      "site": "Zenn(生成 AI)",
+      "published": "2026-09-04T12:31:14Z",
+      "description": "生成AIに画面を作らせると、毎回これが出てきます。\n\n全画面中央揃えのヒーロー。大きな見出し、サブテキスト、その下にCTAボタン\nアイコン付き3カラムの等幅カード\n紫から青のグラデーション背景、またはグラデーションの見出し文字\nワードマーク＋リンク5個＋右端にCTAのヘッダー\n4カラムのリンク＋SNSアイコンのフッター\n純黒 #000000 の文字に、純白 #ffffff の背景\n\n見た瞬間に分か...",
       "category": "AI・技術",
       "rss_category": "",
       "image_url": ""
