@@ -1,8 +1,138 @@
 {
   "site": "Zenn(Python)",
-  "last_updated": "2026-09-05T01:20:27.274567",
-  "total_articles": 6207,
+  "last_updated": "2026-09-05T05:56:26.590258",
+  "total_articles": 6220,
   "articles": [
+    {
+      "title": "TimesFM 3.0 でスーパーの米価格を予測する",
+      "url": "https://zenn.dev/deepgen/articles/2735813f0dbbd9",
+      "site": "Zenn(Python)",
+      "published": "2026-09-05T05:45:09Z",
+      "description": "Google の時系列基盤モデル TimesFM 3.0 で、\n報道でよく見る「スーパーの米 5kg が○○円」の 6 ヶ月先を予測してみました。\nゼロショット、つまり米のデータで学習させることは一切していません。\n過去の系列をそのまま入力して、6 ヶ月先までの分布を出させています。\n\n\n結論を先に書くと、「来月も再来月も先月と同じ値段」と言い張るだけの予測に、\n精度で勝てませんでした。モデルが出...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "【今さら聞けない】MCPを周回遅れで学び直す〜AWSでの活用とAIエージェントの共通規格〜",
+      "url": "https://zenn.dev/dai_cloud_aws/articles/cb424b106c50a3",
+      "site": "Zenn(Python)",
+      "published": "2026-09-05T05:37:01Z",
+      "description": "はじめに\n最近、会社の後輩がMCP（Model Context Protocol）を使ってデータを取得し、AIエージェントに受け渡すシステムを開発していました。\n今後自分も同じようなAIエージェント構築やデータ連携の案件に関わる可能性が高まってきたため、「今のうちにちゃんと理解しておかないとマズい…」と焦りを覚えたのが今回のきっかけです。\n当時の私のMCPに対する知識レベルといえば、以下のようなか...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "ローカル環境でWhisperXを使い、2人の会話を話者別に議事録化する",
+      "url": "https://zenn.dev/camomile_cafe/articles/9e0dbea2bab886",
+      "site": "Zenn(Python)",
+      "published": "2026-09-05T05:03:14Z",
+      "description": "ローカル環境でWhisperXを使い、2人の会話を話者別に議事録化する\n\n はじめに\n最近、インタビューを行う機会がありました。\nインタビューでは、インターネット接続が安定しない場所で話すことが多く、オフレコとして扱うべき内容も含まれていました。\nそこで、会話を録音しておき、あとからローカル環境で文字起こしと整理を行うことにしました。\n実現したかった流れは次のとおりです。\n会話を録音する\n  ↓\n...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "MCP防御で本番事故を防ぐためのチェックリスト",
+      "url": "https://zenn.dev/bambampurin/articles/2026-08-11-tech-daily",
+      "site": "Zenn(Python)",
+      "published": "2026-09-05T04:18:02Z",
+      "description": "2026-08-11の技術トレンドはこれで掴める：LLM性能競争は終わり、MCP防御と業務エージェント実装が主戦場です\n\n この記事で分かること\n\n2026-08-11時点で、AI/LLMの重心が「高性能モデル」から「業務特化・エージェント運用・安全性統制」に移った理由\nMCPやツール実行まわりで、開発者が今すぐ見直すべきセキュリティ観点\nuv・Ruffを中心に、Python開発基盤をどう近代化す...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "Let's Note SV1のファン回転数がLinuxで一切取れないのでEC RAMを直読みした",
+      "url": "https://zenn.dev/kuroikotech/articles/lets-note-sv1-fan-rpm-ec-dump",
+      "site": "Zenn(Python)",
+      "published": "2026-09-05T03:03:05Z",
+      "description": "はじめに\nPanasonic Let's Note SV1（CachyOS + Hyprland環境）でファンの回転数を見たくなった。充電を始めた瞬間にファン音が変わるのが気になって、sensors を叩いてみたら値が全部 N/A。CPU温度もNVMe温度も普通に取れるのに、ファンだけ空振りする。\n「firmwareがサボってるだけで、EC(Embedded Controller)の中には値がある...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "未着手タスクが残っているのに「全部完了」になるバグ",
+      "url": "https://zenn.dev/sousquared/articles/not-found-vs-nonexistent",
+      "site": "Zenn(Python)",
+      "published": "2026-09-05T02:51:50Z",
+      "description": "はじめに\n「自分の次のタスクを1件取得する」機能が、未着手のタスクが残っているのに「あなたの作業は全部完了」と返すバグを踏んだ。原因と修正はシンプルで初歩的なミスだった。ここに、原因と修正、再現コードをまとめる。\n\n 結論\n候補を取るクエリで、先に「自分(ユーザーID)がまだやっていないか」で絞っていなかった。その絞り込みが、性能のための LIMIT 200 の後(アプリ側)にあったため、候補 2...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "その安全装置、一度も作動したところを見ていないのでは —— わざと壊して確かめる",
+      "url": "https://zenn.dev/chiwapome/articles/fire-drill-safety-nets",
+      "site": "Zenn(Python)",
+      "published": "2026-09-05T02:51:09Z",
+      "description": "今日、自分のコードで緊急停止の2層目が丸ごと機能していないのを見つけた。\n呼び出す側は書いてあった。呼ばれる側のメソッドが存在しなかった。\nしかもドキュメントには「実地確認済み」と書いてあった。嘘ではない。\n接続を切って試して、期待どおりのエラーが出るのを確かめてある。\nメソッドが無い場合も、出力が一字一句同じだったというだけだ。\nこの記事は、そういう「作ってあるが働いていない安全装置」を、\nわざ...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "「落ちない」は安全ではない —— 自動化が黙って嘘をつく5つの型と、それを捕まえるテスト",
+      "url": "https://zenn.dev/chiwapome/articles/ai-automation-silent-failures",
+      "site": "Zenn(Python)",
+      "published": "2026-09-05T02:41:31Z",
+      "description": "自作の測定スクリプトに嘘をつかれた。エラーは出ていない。落ちてもいない。\n正しい形をした、間違った答えを返しただけだった。\nこの記事は、そういう「黙って通る」壊れ方を5つの型に分けて、直し方と、それを捕まえる\nテストをセットで置いていく。直し方はどれも数行で済む。難しいのは直すことではなく、\n在ることに気づくほうなので、テストの書き方に重心を置く。\n\n 発端：語をひとつ替えたら、答えが100倍変わ...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "Zenn の新興トピックに早く書いても得はない ── 9.8 万記事で先行者利得を測ったら、効いたのは経路と読者だった",
+      "url": "https://zenn.dev/kensholog/articles/zenn-first-mover-advantage",
+      "site": "Zenn(Python)",
+      "published": "2026-09-05T02:00:52Z",
+      "description": "!\n本記事は個人の検証記録です。数値はすべて 2026-09-04 に Zenn の公開 API から取得した値で、記事本文は取得していません。著者名は一切出さず、集計だけを載せています。「推測」「未確認」と書いた箇所は文字どおりそのままです。Zenn の API は非公式で、運営は利用を容認しつつ「告知なく仕様が変更されることがある」としています（2020-12-30、zenn-communit...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "FastAPI × BigQuery CRUD実装ガイド ─ BigQueryをAPIバックエンドに使う実践パターン",
+      "url": "https://zenn.dev/correlate_dev/articles/fastapi-bigquery-crud",
+      "site": "Zenn(Python)",
+      "published": "2026-09-05T01:39:40Z",
+      "description": "はじめに\nFastAPI でバックエンドAPIを構築する際、多くの記事では SQLAlchemy + PostgreSQL の組み合わせが紹介されます。しかし、Google Cloud Platform を利用している場合、BigQuery をAPIのデータバックエンドとして使うパターンが非常に有効です。\n本記事では、 FastAPI × google-cloud-bigquery を使ってCRU...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "FXバックテストの頑健性を検証｜価格を±0.1pips動かすと損益はどこまで変わる？",
+      "url": "https://zenn.dev/hiro_algo/articles/fx-backtest-robustness-p01",
+      "site": "Zenn(Python)",
+      "published": "2026-09-05T01:39:13Z",
+      "description": "同じ売買戦略でも、価格がほんの少し違うだけでバックテスト結果は変わるのでしょうか。\n今回はUSDJPYの15分足データを最大±0.1 pipだけ動かし、同じ戦略を再実行しました。これは利益を増やすための最適化ではなく、微小な入力変化に対して結果が安定しているかを調べる頑健性テストです。\n3回試した結果、元データとの損益差は+3.6〜+167.9 pipsでした。1回だけ大きな差が生まれましたが、「...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "逆指値が無い取引所でロスカットを実装する方法",
+      "url": "https://zenn.dev/ponfreelance/articles/autotrader-type-a-20260826-064602",
+      "site": "Zenn(Python)",
+      "published": "2026-09-05T01:32:22Z",
+      "description": "Zaifやbitbank初期のAPIみたいに、取引所側に逆指値（ストップロス）注文の機能が無いケースがある。国内APIをいくつか触ったことがある人なら、一度はこの壁にぶつかったことがあるはずだ。\n自分もbot実装を始めた頃、逆指値が無い取引所に当たって手が止まった。この記事では、取引所APIに依存しない疑似ロスカットの作り方を、実際に動かした実装ベースで書く。\n結論から言うと、価格監視をポーリング...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "【Google】Gemini 3.8 Flash & Cyber登場！特徴とAPI活用法",
+      "url": "https://zenn.dev/ament3/articles/ai-digest-2026-09-02-2354",
+      "site": "Zenn(Python)",
+      "published": "2026-09-04T23:48:15Z",
+      "description": "Googleから軽量かつ高速なAIモデルの最新版となる**「Gemini 3.8 Flash」および、サイバーセキュリティ領域に特化した「Gemini 3.8 Flash Cyber」**が発表されました。\n開発現場でのAI活用が進む中、特にレスポンス速度・運用コスト・実用的な処理能力のバランスに優れた Flash シリーズの進化は、日本の多くのエンジニアにとっても見逃せないトピックです。\nこの記...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
     {
       "title": "Python pathlib逆引き：パス操作を文字列から分離する",
       "url": "https://zenn.dev/skrtk98/articles/python-pathlib-practical-guide",
