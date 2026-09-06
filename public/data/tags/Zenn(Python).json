@@ -1,14 +1,174 @@
 {
   "site": "Zenn(Python)",
-  "last_updated": "2026-09-06T08:54:20.569547",
-  "total_articles": 6233,
+  "last_updated": "2026-09-06T12:43:15.983562",
+  "total_articles": 6249,
   "articles": [
+    {
+      "title": "Build with Geminiに参加した感想。ADKとAgents CLIを活用したエージェント開発",
+      "url": "https://zenn.dev/heysho/articles/c23d214bac5e4b",
+      "site": "Zenn(Python)",
+      "published": "2026-09-06T10:02:57Z",
+      "description": "先日Googleが開催した「Build with Gemini Tokyo」という2日間のイベントに参加してきました。\nhttps://cloudonair.withgoogle.com/events/build-with-gemini26q3\n内容としては、AntigravityやADK（Agent Development Kit）、Agents CLIなどを使ってAIエージェントを開発するハン...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "マルチエージェントは本当に必要？昨日の記事で1エージェントと比較した",
+      "url": "https://zenn.dev/hogehogetaro/articles/google-adk-single-vs-multi-agent",
+      "site": "Zenn(Python)",
+      "published": "2026-09-06T09:25:17Z",
+      "description": "9月1日に、4人の専門家がテックブログをレビューするマルチエージェントをGoogle Agent Development Kit(以下、ADK)で作りました。\n役割を分けると丁寧に確認してくれそうですが、モデルの呼び出し回数は増えます。\n昨日書いた「Google ADKにMCPをつないだら、書き込み権限なしではツールを呼ばず、許可範囲外は拒否された」を入力にして、12個の事実を抜き出す課題を1エー...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "緑のテストが何も守っていない4つの形 —— カバレッジは通ったことしか教えてくれない",
+      "url": "https://zenn.dev/chiwapome/articles/green-tests-that-assert-nothing",
+      "site": "Zenn(Python)",
+      "published": "2026-09-06T08:50:50Z",
+      "description": "2日のあいだに、何も検査していないのに緑だったテストを3件見つけた。\nどれもカバレッジには計上される。行は通っている。だがバグを戻しても赤くならない。\nさらに数日後、同じ形をもう1件踏んだ。合計4件、全部ちがう理由で空振りしていた。\nこの記事は、その4つの形と、それぞれをどう捕まえるか。\n\n 大前提：カバレッジは「通った」しか言っていない\ndef test_発注できる():\n    place_o...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "自作の死活監視は、一番困るときに一番静かになる —— ノートPCで24時間監視をやめるまで",
+      "url": "https://zenn.dev/chiwapome/articles/deadman-switch-monitoring",
+      "site": "Zenn(Python)",
+      "published": "2026-09-06T08:50:50Z",
+      "description": "常駐プロセスが落ちたら気づきたい。素直に書くとこうなる。\n# 5分ごとに動かす\nif not process_is_alive():\n    notify(\"プロセスが落ちています\")\nこれは動く。そして一番困る状況で、一番静かになる。\n\n\n\n障害\nこの監視\nデッドマン装置\n\n\n\n\nプロセスだけ落ちた\n検知できる\n検知できる\n\n\nマシンがスリープした\n検知できない\n検知できる\n\n\nマシンが落ちた・...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "そのグラフ、伝わってる？をPythonで確かめる ─ 数量を「見た目」に翻訳する技術",
+      "url": "https://zenn.dev/oryo_data/articles/9f8fe1e4106872",
+      "site": "Zenn(Python)",
+      "published": "2026-09-06T08:50:18Z",
+      "description": "『指標・特徴量の設計から始める データ可視化学入門』（江崎貴裕、ソシム）を読みながら、書かれている概念をPythonで確かめた記録です。前に書いたデータ解釈学のシリーズ（同じ著者の『分析者のためのデータ解釈学入門』）と同じく、「定義を読んで納得する」のではなく、歪む様子・伝わらない様子を自分で作って数字で見るというやり方で進めます。\nhttps://link.amazon/B0b7w0ZaV\n今回...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "Raspberry PiからLINEに通知を送る方法",
+      "url": "https://zenn.dev/ryuchama/articles/59e770c6272355",
+      "site": "Zenn(Python)",
+      "published": "2026-09-06T07:53:00Z",
+      "description": "概要\nラズパイで動かしているプログラムから、LINEへ通知を送れるようにします。\n例えば、以下のような用途で利用できます。\n\nスクレイピングの実行結果を通知する\nエラー発生時に通知する\n定期処理の完了を通知する\nラズパイの状態を通知する\n\n今回は、LINE公式アカウントとMessaging APIを利用して、ラズパイからLINEへメッセージを送信できる環境を構築します。\nこの記事では、まずLINE...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "国土交通省の不動産取引価格APIをApifyアクターにして東京23区の相場を集計する",
+      "url": "https://zenn.dev/orange_k/articles/8cba14f65653d9",
+      "site": "Zenn(Python)",
+      "published": "2026-09-06T05:16:21Z",
+      "description": "東京の不動産相場を調べようとすると、国土交通省の「不動産情報ライブラリ」が公式データとして一番信頼できます。しかし、この元データは日本語UI・自治体コード・年×四半期ごとに1リクエストという仕様で、海外の投資家やPropTech系のツールから使うにはハードルがあります。この記事では、その取得と集計を代行する小さなApifyアクターJapan Real Estate Transaction Pric...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "SQLite 3.51.0でもjsonb_eachが使えない環境をPythonで調べる",
+      "url": "https://zenn.dev/yukke_dev/articles/20260906-sqlite-jsonb-each-runtime-check",
+      "site": "Zenn(Python)",
+      "published": "2026-09-06T04:18:26Z",
+      "description": "PythonからSQLiteのJSON機能を使う方向けに、jsonb_each() が見つからない環境の調べ方を紹介します。\n今回の環境では、SQLiteの表示バージョンが 3.51.0 でも、この関数の呼び出しは失敗しました。\n実行時の情報を確認し、利用できた json_each() でJSON配列を一括挿入するところまで検証します。\n\n きっかけと検証範囲\nきっかけは、開発者本人による英語の記...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "Pythonでアルゴリズムとデータ構造",
+      "url": "https://zenn.dev/attgm/articles/54b6328f7b16ce",
+      "site": "Zenn(Python)",
+      "published": "2026-09-06T03:44:27Z",
+      "description": "はじめに\n「アルゴリズムとデータ構造」の講義をPythonでやってみるとどうなるか？\nというのを考えてみました。私が学生だった時はPASCALだったのかCだったのか\n記憶が曖昧ですが、今はCでやっている所も多いようです。\nしかしながら、C言語でやろうとすると「メモリのmalloc/free」「ポインタ」がでてきてハードルが高く感じます。個人的には「アルゴリズム」が言語に依存すべきではないと思ってい...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "バックテストの比較を壊さない実験ノート — Pythonで条件・差分・根拠を残す",
+      "url": "https://zenn.dev/popain/books/backtest-experiment-notes",
+      "site": "Zenn(Python)",
+      "published": "2026-09-06T03:40:45Z",
+      "description": "EAの変更前後を、同じ条件で比べられていますか。実験メモと決済済み取引CSVから、条件の不一致を検出し、差分と入力ハッシュを残す小さなPythonツールを作ります。標準ライブラリだけの完全コード、架空データ、15件のテストを掲載。MT5のHTML解析や売買ロジックは扱いません。最初の2章は無料です。",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "Google MapsスクレイパーのJSONをそのまま食わせて営業リストに優先順位をつける",
+      "url": "https://zenn.dev/orange_k/articles/4573fa30d054d3",
+      "site": "Zenn(Python)",
+      "published": "2026-09-06T03:18:20Z",
+      "description": "Web制作やSEO・MEO支援を副業や小規模事業でやっていると、「Google Mapsから店舗を一覧で取ってきて、ホームページが無いところに営業をかける」という作業が定期的に発生します。スクレイパー自体はApifyのGoogle Maps Scraperのような既製アクターで数百件〜数千件のJSONを一瞬で取れます。問題はその後で、「サイトが無い」「GBPが未認証」「電話番号や営業時間が未入力」...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "Google ADKにMCPをつないだら、書き込み権限なしではツールを呼ばず、許可範囲外は拒否された",
+      "url": "https://zenn.dev/hogehogetaro/articles/google-adk-mcp-filesystem-tools",
+      "site": "Zenn(Python)",
+      "published": "2026-09-06T01:25:14Z",
+      "description": "9月1日の記事「Google ADKで4人の専門家がテックブログをレビューするAIエージェントを作ってみた」では、GoogleのAgent Development Kit(以下、ADK)を使い、テックブログを4つの観点から確認するAIエージェントを作りました。\nここまでのエージェントは、入力された文章をモデルへ渡して回答を返すだけで、ファイルや外部サービスは操作できません。\n今回はModel Co...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "Codexの終了後に成果物を確認する｜Pythonで欠落・空ファイル・必須項目をチェック",
+      "url": "https://zenn.dev/megu0xxx0x/articles/029517235e4db1",
+      "site": "Zenn(Python)",
+      "published": "2026-09-06T01:07:10Z",
+      "description": "通常の codex exec は最後の応答を標準出力に出します（公式資料）。この応答と、依頼したファイルの完成は別に確認します。\n筆者の調査では、Codex＋GPT-6 Astraが約3.8分・API単価換算約 $3.62 で終了コード0を返しても、report.md が未作成でした。比較記録のこの1回の観測であり、Codex全般の不具合とは断定できません。\n\n 出力先と確認条件を先に決める\n今回...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "CodexのAstra対応で、料金表を足すだけでは済まなかった話",
+      "url": "https://zenn.dev/yusuke_shiki/articles/d7209850cb7a03",
+      "site": "Zenn(Python)",
+      "published": "2026-09-06T00:54:04Z",
+      "description": "CodexのGPT-6 Astraも計測したくて、個人で作っているagent-costを0.1.1に更新しました。Claude CodeとCodex CLIのローカルログから、トークン使用量と推定コストを出すCLIです。実際の請求額を取得するものではありません。\n対応中に引っかかったのが、Fastの扱いでした。\n料金表にAstraを追加して合成ログで確認したところ、Fastの設定が入っているのに、...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "Raspberry PiでPython HTTPサーバーを常時起動する - systemd serviceで自動起動・自動再起動",
+      "url": "https://zenn.dev/ryuchama/articles/ce6306e9a8f53b",
+      "site": "Zenn(Python)",
+      "published": "2026-09-06T00:17:25Z",
+      "description": "モチベーション\n以前、Raspberry Piでapt updateをsystemd timerで定期実行するという記事を書きました。\n今回は、ラズパイ上で作成したHTMLファイルを、同じネットワーク内のMacやスマートフォンから確認したい場面があったので、その方法について共有します。\nなお、実際に使用しているファイルではなく、今回はサンプルのHTMLファイルを使って説明します。\nPythonには...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
     {
       "title": "VLAを試す(その6): スペースマウスからLeRobot動かす",
       "url": "https://zenn.dev/takeofuture/articles/08e019326e32cf",
       "site": "Zenn(Python)",
       "published": "2026-09-05T21:13:39Z",
       "description": "SpaceMouseの操作をSO-101の動きに対応させる\n前回はSpaceMouseをPCへ接続し、次の6種類の入力が正常に取得できることを確認しました。\nhttps://zenn.dev/takeofuture/articles/02747131ec9e73\nForward / Backward\nLeft / Right\nUp / Down\nPitch\nRoll\nYaw\nSpaceMouseの...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "AIエージェントの評価を実装する：本番ドリフトを検出するEvals設計",
+      "url": "https://zenn.dev/xim2jp_tokyo/articles/3be3803c55f31a",
+      "site": "Zenn(Python)",
+      "published": "2026-09-05T15:25:54Z",
+      "description": "※本稿は、当方ブログの紹介文です。全文はこちらへどうぞ。\nhttps://shinichi.noguchi.jp.net/blog/2026-09-05-agent-evals-in-production.html\nAIエージェントの評価を、単一の正解率ではなく、実行トレース・生成品質・本番挙動の3層へ分解します。評価対象を分解しないまま「回答が悪くなった」とだけ議論すると、プロンプト、ツール、モ...",
       "category": "開発",
       "rss_category": "",
       "image_url": ""

@@ -1,14 +1,134 @@
 {
   "site": "Zenn(LLM)",
-  "last_updated": "2026-09-06T08:54:20.569547",
-  "total_articles": 5897,
+  "last_updated": "2026-09-06T12:43:15.983562",
+  "total_articles": 5909,
   "articles": [
+    {
+      "title": "Claude.aiのカスタムコネクタでMCPサーバーを繋ぐ時のOAuth要件まとめ",
+      "url": "https://zenn.dev/butanokakuni/articles/3598140b667b02",
+      "site": "Zenn(LLM)",
+      "published": "2026-09-06T08:55:26Z",
+      "description": "はじめに\n自宅サーバー上にMCPサーバーを立てて、Claude.aiのカスタムコネクタから接続しようとしたところ、想定していなかった認証まわりの壁にいくつもぶつかりました。同じことをやろうとしている人向けに、Claude.aiのカスタムコネクタが要求するOAuthの要件を整理しておきます。\n\n 症状: 登録した瞬間にエラーになる\nMCPサーバーのURLをClaude.aiのカスタムコネクタに登録す...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "GPT-2-likeからQwen2-likeへの実験：第3回 絶対位置EmbeddingをRoPEに変える",
+      "url": "https://zenn.dev/yyamamot/articles/gpt2-to-qwen2-03-rope",
+      "site": "Zenn(LLM)",
+      "published": "2026-09-06T06:45:34Z",
+      "description": "GPT-2-likeからQwen2-likeへの実験：第3回 絶対位置EmbeddingをRoPEに変える\nGPT-2-likeからQwen2-likeへ、少しずつ構造を変更する実験の第3回です。今回は学習可能な絶対位置Embeddingを外し、RoPEへ変更します。\n第2回では、GELUをSwiGLUへ変更しました。検証Lossは改善しましたが、学習は少し遅くなりました。今回は品質指標の差がさら...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "llama-serverとPi Coding Agentをつなぐ",
+      "url": "https://zenn.dev/ibuky/articles/5fc44494d51e55",
+      "site": "Zenn(LLM)",
+      "published": "2026-09-06T04:52:16Z",
+      "description": "pi内の/loginからではローカル動作するllama-serverとうまくつなぐことができなかったので、huggingface/pi-llamaのプラグインを使用して接続が成功した。\n\n 環境設定\n# プラグインをインストール\npi install git:github.com/huggingface/pi-llama\n# 環境変数の設定\nexport LLAMA_BASE_URL=\"http:...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "AIキャラの人格はどう作る？ ローカルLLMで試した設計と工夫【アプリ制作秘話⑤】",
+      "url": "https://zenn.dev/onecarat_tech/articles/db473e8846282c",
+      "site": "Zenn(LLM)",
+      "published": "2026-09-06T03:00:06Z",
+      "description": "はじめに\n自作しているローカルAIテキストエディタには、会話相手として選べるキャラクターが5人います。\n\nhttps://apps.microsoft.com/detail/9NC9BK2DL04M\nで、キャラクターを作るとなると、最初はこう思うわけです。\n性格を書いたシステムプロンプトを1枚用意すればいいんじゃないか。\n私もそう思っていました。\n実際に作ってみると、全然そんなことはありませんでし...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "可読性は解釈可能性にあらず──Chain-of-Thought推論における判定重要性と実際の重要性の比較",
+      "url": "https://zenn.dev/lixian/articles/legibility-is-not-interpretability-cot",
+      "site": "Zenn(LLM)",
+      "published": "2026-09-06T01:59:29Z",
+      "description": "TL;DR\nChain-of-Thought（CoT）推論モデルの出力する推論軌跡は、一見するとモデルがどのように答えに至ったかを窥える「可読な窓」に見える。しかし本論文は、推論ステップのテキストが実際にどのステップが重要かを符号化しているかという根本的な問いを提起する。著者らは推論ステップの重要性を RL の「アドバンテージ」関数として定義し、Monte Carlo rollout で推定する手...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "個人PCのClaude Codeの設定ファイルと、設定の動機を一部紹介します",
+      "url": "https://zenn.dev/yuki82511988/articles/45a5a464514ac1",
+      "site": "Zenn(LLM)",
+      "published": "2026-09-06T01:32:12Z",
+      "description": "はじめに\nClaude Codeは何も設定しないまま利用すると、意図しないコマンドを実行したり、サイトにアクセスしたりしてしまう可能性があります。それらを防いでくれるのが設定ファイルです。\n本記事では、自分が調査しながら作成して普段使いしている設定ファイルの一部と、なぜそのように設定したかの動機を紹介したいと思います。\n予期せぬ事故の記事を複数見て、自分の記事が何かの参考になればいいなと思ったのと...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "AI活用の7段階モデル — 「質問する人」と「仕組みを作る人」の差",
+      "url": "https://zenn.dev/hideki_tamae/articles/ai-usage-7-stages",
+      "site": "Zenn(LLM)",
+      "published": "2026-09-06T00:46:00Z",
+      "description": "はじめに\nこのシリーズではこれまで、Harness Engineering・Loop Engineering・Context Engineering・Evaluation・Tool Engineering・Memory設計・Observability・Recovery Engineering・Human-in-the-loop・A2A・自己改善型エージェント・Claude Code駆動開発・企業導...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "取得に失敗した週ほど、店の点数が高かった——無人で動く自動化が静かに嘘をつく5つの経路",
+      "url": "https://zenn.dev/tyuya/articles/silent-failures-unattended-automation",
+      "site": "Zenn(LLM)",
+      "published": "2026-09-06T00:16:14Z",
+      "description": "個人でやっている海産物のネットショップで、週次レポートを自動化しています。日曜21時に、Shopifyから売上、Instagramからフォロワーとリーチを取ってきて、Claudeに分析させ、点数と改善提案をつけてLINEに送る。4か月ほど動かしていました。\n一度も止まっていません。 8月23日の回まで、毎週日曜きちんと届いていました。\n止まらなかったので、しばらく気づきませんでした。8月に履歴ファ...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "エージェントの推論基盤はワークフローを見ていない、Dyserveが埋める溝",
+      "url": "https://zenn.dev/okssusucha/articles/20260715-workflow-aware-llm-serving-for-agents",
+      "site": "Zenn(LLM)",
+      "published": "2026-09-06T00:11:42Z",
+      "description": "チャットボットを載せる推論サーバは、1つのリクエストを1回のLLM呼び出しとして扱えばよかった。プロンプトが来て、トークンを吐いて、終わり。vLLMやTGIといった推論エンジンは、この「独立した1回」を速く安くさばくために磨かれてきた。ところがエージェントを載せた瞬間、この前提が崩れる。\nエージェントの1リクエストは、1回の呼び出しではなく呼び出しの束だ。計画を立て、ツールを叩き、結果を検証し、最...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
     {
       "title": "Agent SDK 3モデル実測｜1件$0.04〜0.32",
       "url": "https://zenn.dev/toki_mwc/articles/claude-agent-sdk-model-cost-sweep",
       "site": "Zenn(LLM)",
       "published": "2026-09-05T23:00:06Z",
       "description": "Quick Answer\nClaude Agent SDK で組んだコーディングエージェントに同じ課題を Haiku 4.5 / Sonnet 5 / Opus 5 で各 5 回やらせると、29 回すべて完遂した。1 件あたりの実費（課題別の平均）は Haiku $0.04〜0.10、Sonnet 5 $0.12〜0.18、Opus 5 $0.15〜0.32。少なくともこの規模の課題では、成功率よ...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "Claude Code の Rules が発火しないのは、Claude が Read ツールを使っていないから",
+      "url": "https://zenn.dev/odacchi/articles/claude-code-rules-read-tool",
+      "site": "Zenn(LLM)",
+      "published": "2026-09-05T20:36:54Z",
+      "description": "kawasin73 さんの Claude Code の Rules はもう死んでいる を読みました。\n自分も「あるときから挙動がおかしい」と感じてハーネスを見直し、同じ問題までは特定していました。ただ対処が違っていて、記事の解決策（フィーチャーフラグの無効化）を読んで初めて根本原因のほうに手が届いた、という順番です。\n原因の発見とフラグの特定はすべて元記事の功績です。この記事は、そこに自分の手元で...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "『計算なら0.9Bで足りる』と書いて1時間もしないうちに突っ込まれた — 50問やり直したら、8割だった",
+      "url": "https://zenn.dev/jinno_ai/articles/k2-horizon-calc-50-retest",
+      "site": "Zenn(LLM)",
+      "published": "2026-09-05T20:14:12Z",
+      "description": "前回、K2 Horizonの0.9B (超小型サイズ) を16GBのゲーミングGPUで動かして、こんなことを書いた。\n「計算は0.9Bでも信頼してよさそう。税込計算は一発で正解した。定型的な数値処理なら最小サイズで足りる」\nそしたら、とある人から突っ込みが入った。\n「計算1問と計算100問をミスなくやるのは別の能力。テストが甘いんじゃないか？」\n……図星だった。\n税込計算、1問しか解かせていなかっ...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "「Ollamaで動く」はずだったK2 Horizon — 16GB GPUで確かめたら、動いたのはvLLMだけだった",
+      "url": "https://zenn.dev/jinno_ai/articles/k2-horizon-local-verify",
+      "site": "Zenn(LLM)",
+      "published": "2026-09-05T18:03:46Z",
+      "description": "IFMが2026-09-03に出したオープンモデル群「K2 Horizon」は、出どころから中身まで全部見せてくれる珍しいリリースだ。0.9B (超小型) から375B (超大型) まで6サイズ、ライセンスはApache 2.0。学習データのレシピ、途中のチェックポイント、強化学習のコードまで公開している。小型の0.9Bが数学のベンチマーク (AIME 2026) で48.5を取ったこと、「公表ベ...",
       "category": "AI・技術",
       "rss_category": "",
       "image_url": ""
