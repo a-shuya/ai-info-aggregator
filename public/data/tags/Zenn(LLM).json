@@ -1,38 +1,8 @@
 {
   "site": "Zenn(LLM)",
-  "last_updated": "2026-09-06T00:01:13.470226",
+  "last_updated": "2026-09-06T04:33:06.047031",
   "total_articles": 5897,
   "articles": [
-    {
-      "title": "Claude Code の Rules が発火しないのは、Claude が Read ツールを使っていないから",
-      "url": "https://zenn.dev/odacchi/articles/claude-code-rules-read-tool",
-      "site": "Zenn(LLM)",
-      "published": "2026-09-05T20:36:54Z",
-      "description": "kawasin73 さんの Claude Code の Rules はもう死んでいる を読みました。\n自分も「あるときから挙動がおかしい」と感じてハーネスを見直し、同じ問題までは特定していました。ただ対処が違っていて、記事の解決策（フィーチャーフラグの無効化）を読んで初めて根本原因のほうに手が届いた、という順番です。\n原因の発見とフラグの特定はすべて元記事の功績です。この記事は、そこに自分の手元で...",
-      "category": "AI・技術",
-      "rss_category": "",
-      "image_url": ""
-    },
-    {
-      "title": "『計算なら0.9Bで足りる』と書いて1時間もしないうちに突っ込まれた — 50問やり直したら、8割だった",
-      "url": "https://zenn.dev/jinno_ai/articles/k2-horizon-calc-50-retest",
-      "site": "Zenn(LLM)",
-      "published": "2026-09-05T20:14:12Z",
-      "description": "前回、K2 Horizonの0.9B (超小型サイズ) を16GBのゲーミングGPUで動かして、こんなことを書いた。\n「計算は0.9Bでも信頼してよさそう。税込計算は一発で正解した。定型的な数値処理なら最小サイズで足りる」\nそしたら、とある人から突っ込みが入った。\n「計算1問と計算100問をミスなくやるのは別の能力。テストが甘いんじゃないか？」\n……図星だった。\n税込計算、1問しか解かせていなかっ...",
-      "category": "AI・技術",
-      "rss_category": "",
-      "image_url": ""
-    },
-    {
-      "title": "「Ollamaで動く」はずだったK2 Horizon — 16GB GPUで確かめたら、動いたのはvLLMだけだった",
-      "url": "https://zenn.dev/jinno_ai/articles/k2-horizon-local-verify",
-      "site": "Zenn(LLM)",
-      "published": "2026-09-05T18:03:46Z",
-      "description": "IFMが2026-09-03に出したオープンモデル群「K2 Horizon」は、出どころから中身まで全部見せてくれる珍しいリリースだ。0.9B (超小型) から375B (超大型) まで6サイズ、ライセンスはApache 2.0。学習データのレシピ、途中のチェックポイント、強化学習のコードまで公開している。小型の0.9Bが数学のベンチマーク (AIME 2026) で48.5を取ったこと、「公表ベ...",
-      "category": "AI・技術",
-      "rss_category": "",
-      "image_url": ""
-    },
     {
       "title": "DBクライアントのAI補助を、なぜローカルLLMでも動かせるようにしたのか",
       "url": "https://zenn.dev/libredb/articles/0fd0cf7f85f015",
@@ -74,21 +44,51 @@
       "image_url": ""
     },
     {
-      "title": "AIエージェントの評価を実装する：本番ドリフトを検出するEvals設計",
-      "url": "https://zenn.dev/xim2jp_tokyo/articles/3be3803c55f31a",
-      "site": "Zenn(LLM)",
-      "published": "2026-09-05T15:25:54Z",
-      "description": "※本稿は、当方ブログの紹介文です。全文はこちらへどうぞ。\nhttps://shinichi.noguchi.jp.net/blog/2026-09-05-agent-evals-in-production.html\nAIエージェントの評価を、単一の正解率ではなく、実行トレース・生成品質・本番挙動の3層へ分解します。評価対象を分解しないまま「回答が悪くなった」とだけ議論すると、プロンプト、ツール、モ...",
-      "category": "AI・技術",
-      "rss_category": "",
-      "image_url": ""
-    },
-    {
       "title": "新モデルは「見える」だけでは使えない――Codex CLIとOpenClawに見るModel DiscoveryとContract",
       "url": "https://zenn.dev/wyi_or_wye/articles/model-discovery-and-contract",
       "site": "Zenn(LLM)",
       "published": "2026-09-05T10:00:42Z",
       "description": "Codex CLIでは使えたGPT-6 Astraが、OpenClaw 2026.8.2では401になった。この体験を手がかりに、アカウントで使えるモデルを知る model discovery と、そのモデルを正しく呼ぶための model contract を分けて考える。Codex CLI、OpenClaw、Hermes Agentのcurrent実装も比較した。\n\n\n CodexにはAstra...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "AIが問いを立て直した ── 音声のズレを追って感じたLLMの進化",
+      "url": "https://zenn.dev/heybombon/articles/8fa195f7b4d73a",
+      "site": "Zenn(LLM)",
+      "published": "2026-09-05T08:39:57Z",
+      "description": "目の前の症状から、データの生成経路へ。調査範囲が広がっていった\n!\nこの記事の要点\n\n波形と音声が約0.5秒ずれる問題を、Codex上のGPT-6 Astraと調査した\nAIは調査の途中で「同期させる対象そのものが正しいのか」と問いを立て直した\n別リポジトリの変換処理をビルドして再現し、保存済み波形と全振幅値が一致した\n半年前に書いた「問いを立てるのは人間」という見方を、自分の経験から更新する\n\n...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "AI向けの目次を置いて14日ログを取ったら、148回取られてトップ以外は誰も読まなかった",
+      "url": "https://zenn.dev/miki_mini/articles/e5c724bfcc0496",
+      "site": "Zenn(LLM)",
+      "published": "2026-09-05T08:00:31Z",
+      "description": "※メニュー（llms.txt）は熱心に読むのに、目の前のテーブルは空のまま。奥の料理も手つかず。時計は15:00です\n美容系勤務独学初心者マリー・アントワネット系エンジニア目指してます！\n今回は AIが読んでくれるか分からない なら 2週間ログを取ればいいじゃない 👸🍰です。\n\n読了時間の目安：約 8〜10分\n\n!\n3行まとめ\n\nAI向けの目次 llms.txt を置いて 14日間アクセスログを取...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "Claude Code で一番高いリクエストは「さっきの続きやって」かもしれない",
+      "url": "https://zenn.dev/odacchi/articles/claude-code-prompt-cache-ttl",
+      "site": "Zenn(LLM)",
+      "published": "2026-09-05T07:32:26Z",
+      "description": "Claude Code のプロンプトキャッシュが話題に出ていたので、公式ドキュメントを読んで整理しました。\n先に結論から書きます。\n\n長時間放置したセッションに戻ると、再開の 1 ターン目だけが突出して高い\n高いのは「トークンをたくさん使うから」ではない。同じトークンに乗る単価が変わるから\nFable 5.1 だと、キャッシュが生きているときと切れた直後で単価が 80 倍違う\nただし 2 ターン目...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "OpenAI API 入門 — API キーの取得から初回リクエストまで",
+      "url": "https://zenn.dev/akinori901/articles/20260823-00mt4v7a",
+      "site": "Zenn(LLM)",
+      "published": "2026-09-05T07:28:04Z",
+      "description": "OpenAI API 入門 — API キーの取得から初回リクエストまで\n\n 概要\n本記事は、OpenAI API を初めて触るエンジニア向けのハンズオンです。アカウント作成から API キーの発行、環境構築、そして初回リクエストの送信までを、最短経路で一通り体験します。手元にターミナルと任意のエディタがあれば読み進められます。\n対象は「Web の管理画面は見たことがあるが、コードから LLM を...",
       "category": "AI・技術",
       "rss_category": "",
       "image_url": ""
