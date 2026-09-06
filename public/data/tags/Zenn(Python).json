@@ -1,8 +1,18 @@
 {
   "site": "Zenn(Python)",
-  "last_updated": "2026-09-06T21:46:43.931252",
-  "total_articles": 6255,
+  "last_updated": "2026-09-06T23:17:26.102085",
+  "total_articles": 6256,
   "articles": [
+    {
+      "title": "AIは、そこにある関数をもう一度書く — RepoExecが測った「依存を再利用する力」",
+      "url": "https://zenn.dev/hidetzu/articles/repoexec-dependency-reuse",
+      "site": "Zenn(Python)",
+      "published": "2026-09-06T22:30:06Z",
+      "description": "🎯 はじめに\nAIにコードを書かせていて、いちばん静かに困るのはこれである。\nリポジトリに is_string() があるのに、isinstance(x, str) と書かれる。\nテストは通ってしまうことがある。レビューでも「まあ動くしな」で流れる。半年後、バリデーションの仕様を変えたときに、is_string() を直しただけでは直りきらない場所が出てくる。\nこれは「AIがバグを書いた」話ではな...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
     {
       "title": "TimesFM 3をColabで試す：関連データや予定を足すと予測は変わる？",
       "url": "https://zenn.dev/sunyeul89/articles/timesfm-3-handson",
@@ -94,21 +104,21 @@
       "image_url": ""
     },
     {
-      "title": "緑のテストが何も守っていない4つの形 —— カバレッジは通ったことしか教えてくれない",
-      "url": "https://zenn.dev/chiwapome/articles/green-tests-that-assert-nothing",
-      "site": "Zenn(Python)",
-      "published": "2026-09-06T08:50:50Z",
-      "description": "2日のあいだに、何も検査していないのに緑だったテストを3件見つけた。\nどれもカバレッジには計上される。行は通っている。だがバグを戻しても赤くならない。\nさらに数日後、同じ形をもう1件踏んだ。合計4件、全部ちがう理由で空振りしていた。\nこの記事は、その4つの形と、それぞれをどう捕まえるか。\n\n 大前提：カバレッジは「通った」しか言っていない\ndef test_発注できる():\n    place_o...",
-      "category": "開発",
-      "rss_category": "",
-      "image_url": ""
-    },
-    {
       "title": "自作の死活監視は、一番困るときに一番静かになる —— ノートPCで24時間監視をやめるまで",
       "url": "https://zenn.dev/chiwapome/articles/deadman-switch-monitoring",
       "site": "Zenn(Python)",
       "published": "2026-09-06T08:50:50Z",
       "description": "常駐プロセスが落ちたら気づきたい。素直に書くとこうなる。\n# 5分ごとに動かす\nif not process_is_alive():\n    notify(\"プロセスが落ちています\")\nこれは動く。そして一番困る状況で、一番静かになる。\n\n\n\n障害\nこの監視\nデッドマン装置\n\n\n\n\nプロセスだけ落ちた\n検知できる\n検知できる\n\n\nマシンがスリープした\n検知できない\n検知できる\n\n\nマシンが落ちた・...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "緑のテストが何も守っていない4つの形 —— カバレッジは通ったことしか教えてくれない",
+      "url": "https://zenn.dev/chiwapome/articles/green-tests-that-assert-nothing",
+      "site": "Zenn(Python)",
+      "published": "2026-09-06T08:50:50Z",
+      "description": "2日のあいだに、何も検査していないのに緑だったテストを3件見つけた。\nどれもカバレッジには計上される。行は通っている。だがバグを戻しても赤くならない。\nさらに数日後、同じ形をもう1件踏んだ。合計4件、全部ちがう理由で空振りしていた。\nこの記事は、その4つの形と、それぞれをどう捕まえるか。\n\n 大前提：カバレッジは「通った」しか言っていない\ndef test_発注できる():\n    place_o...",
       "category": "開発",
       "rss_category": "",
       "image_url": ""

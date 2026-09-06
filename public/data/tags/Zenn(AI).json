@@ -1,8 +1,128 @@
 {
   "site": "Zenn(AI)",
-  "last_updated": "2026-09-06T21:46:43.931252",
-  "total_articles": 13438,
+  "last_updated": "2026-09-06T23:17:26.102085",
+  "total_articles": 13443,
   "articles": [
+    {
+      "title": "Claude in Chromeが正式版に、権限スコープはvisual groundingの安全弁として設計されている",
+      "url": "https://zenn.dev/every_ai_recipe/articles/claude-chrome-3-permission-modes",
+      "site": "Zenn(AI)",
+      "published": "2026-09-06T21:11:36Z",
+      "description": "TL;DR\n\nAnthropicは2026年8月26日、ブラウザ操作エージェント拡張機能「Claude in Chrome」を正式提供にした（2025年8月に一部Maxユーザー限定の試験公開→2025年12月に有料プラン全体へ拡大→2026年8月GA、という段階を踏んでいる）\n実装はDOM操作ではなく、スクリーンショットを見て要素の座標を推定するvisual grounding方式。マークアップに...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "ログ肥大・トークン制限・パース失敗 ― ループを回し続けると必ず出会う3つの壁",
+      "url": "https://zenn.dev/taichiendoh/articles/loop-engineering-log-bloat-token-limits",
+      "site": "Zenn(AI)",
+      "published": "2026-09-06T21:10:07Z",
+      "description": "前回（LE4）は、AIの自己改善ループが暴走しないように、どこで人の承認を挟むかという設計を書きました。今回はその続き――設計をちゃんと組んだ上で、実際にループを回し続けたときに突き当たる、もっと泥臭い現実の話です。\n\n 動かし方の記事は多いが、壊れ方の記事は少ない\nループエンジニアリングの解説記事は、大抵「どう組むか」で終わります。AIとの作業ログ（.jsonl）を蒸留してルールを育てる、承認を...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "Azure AI Foundryのエージェントにシェルを渡せる — docsは「外に出られない」と書くが設定はある",
+      "url": "https://zenn.dev/kazu_aiengineer/articles/foundry-toolbox-shell-tool",
+      "site": "Zenn(AI)",
+      "published": "2026-09-06T20:41:13Z",
+      "description": "先に結論\nAzure AI Foundry（Learn上の現在の表記は Microsoft Foundry）のエージェントには、shell という\nツールを渡せる。モデルがコマンドを組み立て、Foundry側が用意したLinuxコンテナで実行する。\nCode Interpreterの隣にいる機能なのだが、ツールボックスのドキュメントには名前すら出てこない。\nそのコンテナは既定で外に出られない。Le...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "Claude Fable 5.1 が出たので測ってみた",
+      "url": "https://zenn.dev/mumihatsu/articles/8d7a52232e1d71",
+      "site": "Zenn(AI)",
+      "published": "2026-09-06T19:31:23Z",
+      "description": "1. はじめに — 前回と同じ日課を、もう一度\n自分は QA エンジニアで、普段のテスト設計に生成 AI（Claude）を使っています。\nClaude Fable 5.1 が公開されました。前回の記事（Opus 5 計測）で書いたとおり、モデルの実力はうたい文句ではなく、自分の題材で測った数字で判断するしかありません。凍結してある測定セットに、モデルだけ差し替えて同じ 3 つの測定を回しました。\n...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "AIと協調する開発の未来：Claude Code開発チームが実践する次世代のワークフロー",
+      "url": "https://zenn.dev/jeong/articles/53cd0b829e641a",
+      "site": "Zenn(AI)",
+      "published": "2026-09-06T18:34:39Z",
+      "description": "ソフトウェア開発の現場にAIが導入されて久しい。\nコード補完、バグ修正、テスト生成、ドキュメント作成など、今では多くの開発者が日常的にAIを使っている。\nでは、そのAI開発ツールを作っている「中の人」たちは、実際にどのようにAIを使っているのだろうか。\nClaude Codeの開発チームメンバーが、日々の業務におけるClaude CodeやSlackネイティブのエージェント「Claude Tag」...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "常駐型AIエージェントの「導入初日」コールドスタート問題への対処設計",
+      "url": "https://zenn.dev/hach/articles/chat-agent-cold-start-design",
+      "site": "Zenn(AI)",
+      "published": "2026-09-06T18:09:25Z",
+      "description": "チャットに常駐して「過去の文脈を踏まえて」判断するタイプのAIエージェントには、導入直後だけ発生する特有の弱点があります。招待された瞬間、そのテナントに関する履歴データはゼロです。しかし利用者は初日から「うちのチームの言葉」で聞いてきますし、期待値も既存メンバー並みです。この記事では、常駐エージェントの導入初日〜数週間に特有の「コールドスタート問題」にどう対処するかを整理します。\n\n 何が起きるか...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "画像編集AIを比較するときに固定した5つの条件",
+      "url": "https://zenn.dev/imyaaiteam/articles/a5840ee692a064",
+      "site": "Zenn(AI)",
+      "published": "2026-09-06T15:43:06Z",
+      "description": "画像AIを比較するとき、「それっぽい画像が出たか」だけで判断してしまうことがあります。しかし、入力画像も指示文も毎回違う状態では、ツールの差なのか、条件の差なのか分かりません。\nそこでこの記事では、画像AIを比較するときに固定したい5つの条件を整理します。これはランキングを作るための方法ではありません。自分の用途に合うワークフローを、再現可能な形で選ぶための小さなテスト設計です。\n\n 1. 入力画...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "YOLO26nアーキテクチャ徹底解析 step2 | Conv, DWConv, PWConv ブロック",
+      "url": "https://zenn.dev/diiw/articles/yolo26n-architecture-step2",
+      "site": "Zenn(AI)",
+      "published": "2026-09-06T14:53:09Z",
+      "description": "はじめに\n本記事は、筆者がソースコードおよびモデル構造を独自に解析した情報に基づき解説を行う記事です。本記事の内容は更新される場合があります。内容に大きな変更・追加があった場合は都度Xアカウントにて発信いたします。\n本記事は「YOLO26nアーキテクチャ徹底解析」シリーズのstep2となります。YOLO26nの全体像を示したstep1の記事はこちらです。\n\n 免責・非公式表示\n!\n\n\n本記事は、U...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "MCP導入前の最優先は「ツール実行経路の保護」だと断言するチェックリスト",
+      "url": "https://zenn.dev/bambampurin/articles/2026-08-12-tech-daily",
+      "site": "Zenn(AI)",
+      "published": "2026-09-06T14:52:18Z",
+      "description": "2026-08-12の技術トレンドで見る「AIエージェントの進め方」3つの結論\n\n この記事で分かること\n\n2026-08-12時点で、AI/LLMの重心が「会話」から「業務実行」に移った理由\nMCP・AIエージェント導入で今すぐ見直すべきセキュリティ論点\nPython/開発基盤で、いま有力な標準スタックが何か\n\n\n AIを「使う」から「働かせる」に移行している理由\n結論、2026-08-12の主...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "AIに自分のプロファイルを読ませたら、Amazon支出の順位は0/5だった",
+      "url": "https://zenn.dev/tottoko_hamu/articles/2026-08-26-220118",
+      "site": "Zenn(AI)",
+      "published": "2026-09-06T14:34:51Z",
+      "description": "この記事の実施記録（2026年8月）: 「AIに自分のことを説明した文書を読ませておくと、思考傾向を踏まえた応答が得られる」という運用を続けていた私が、その文書を読んだAIに実際の購買行動を予測させ、Amazonの購買実績（書籍を除く475件・1,235,258円、2024年1月〜2026年8月）と突き合わせる実験をした（2026年8月22日実施）。結果、上位5カテゴリの的中はランダム予測(1.4...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "Tech Watch 2026-09-06: Agent基盤の分岐点",
+      "url": "https://zenn.dev/laiken/articles/20260906-tech-watch",
+      "site": "Zenn(AI)",
+      "published": "2026-09-06T14:16:36Z",
+      "description": "AIが書きました🤖\nこの記事は、AIが書いたものを人間が確認してから投稿しています。\nL: 今日は、モデル単体の賢さよりも、その周りにある実行環境、監視、権限、再利用可能な手順が前に出てきた日だと思う。『インターステラー』で船そのものより航路計算と生命維持が大事になる瞬間に少し近い。新モデル、enterprise safeguards、Codex workflow、OpenClaw の運用改善、V...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "AIに業務システムを書かせるとき、品質をどう担保したか",
+      "url": "https://zenn.dev/rakuya/articles/02_ai-built-business-system-quality",
+      "site": "Zenn(AI)",
+      "published": "2026-09-06T13:22:51Z",
+      "description": "AI エージェントを使って、動物病院向けの電子カルテ・売上管理システムを一人で作っている。\nその過程で決めた「AI の出力をどう受け入れるか」のルールと、\nそれによって実際に見つかった不具合 2 件を書く。\n\n 前提：AI が書いたコードは、レビューでは落ちない\nAI の出力はそれらしく仕上がる。命名も、構造も、コメントも整っている。\nだから読んで「おかしい」と気づける不具合は、そもそもあまり出て...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
     {
       "title": "「メモリこそがAIエージェントの本当のモート」LangChain Harrison Chaseを要点解説",
       "url": "https://zenn.dev/talks_tldr_jp/articles/tldr15-chase-langchain-summary",
@@ -114,26 +234,6 @@
       "image_url": ""
     },
     {
-      "title": "AIの捏造を「プロンプトの約束」で直したつもりが、翌月また同じ事故が起きた",
-      "url": "https://zenn.dev/kentaro_tak/articles/llm-guardrail-beats-prompt-rule",
-      "site": "Zenn(AI)",
-      "published": "2026-09-06T09:54:05Z",
-      "description": "前回、AIに口座残高を1件ずつ聞かれながら記録していたら、AIが「私の返事」を代筆して数字をでっち上げたという話を書いた。\n対策も一緒に書いた。生ログを解析して発生条件を3つ特定し、そのうち唯一潰せるものを運用ルールにした——というきれいな終わり方だった。\nそのルールを守った上で、翌月また同じ事故が起きた。 2件。\nこの記事はその続きで、要するに「LLMの事故対策をプロンプト側の約束事で済ませては...",
-      "category": "AI・技術",
-      "rss_category": "",
-      "image_url": ""
-    },
-    {
-      "title": "AIの提案を3.7ヶ月ぶん分類したら、「推します」の的中率が場面で12倍違った",
-      "url": "https://zenn.dev/kentaro_tak/articles/ai-suggestion-hit-rate-measured",
-      "site": "Zenn(AI)",
-      "published": "2026-09-06T09:54:05Z",
-      "description": "AIコーディングエージェントと毎日話していると、向こうから提案が飛んでくる。「次はこれをやりませんか」「案を5つ出しました。おすすめは3番です」。\n採用したものは、コードやツールやドキュメントになって残る。問題は、断ったものが会話に沈んで消えることだ。\nその結果どうなるか。私の場合、明示的に「もう言うな」と言ったものだけが記憶ファイルに載り、黙って断ったパターンは何も残らなかった。だから同じ種類の...",
-      "category": "AI・技術",
-      "rss_category": "",
-      "image_url": ""
-    },
-    {
       "title": "【速報】Google Antigravityがスマホ操作に対応！PCに張り付かない「放置型AI開発・自動化」の始め方",
       "url": "https://zenn.dev/dann_chan_lab/articles/antigravity-mobile-remote",
       "site": "Zenn(AI)",
@@ -144,31 +244,11 @@
       "image_url": ""
     },
     {
-      "title": "AIエージェント×ワークフローによる自動化 ─ なぜ「全部エージェント」はまだ無理なのか",
-      "url": "https://zenn.dev/oryo_data/articles/f94473ed24ef95",
-      "site": "Zenn(AI)",
-      "published": "2026-09-06T08:42:37Z",
-      "description": "蒲生弘郷著『LLMの原理、RAG・エージェント開発から読み解くコンテキストエンジニアリング』の読書アウトプット第5弾です。今回は第5章「AIエージェント×ワークフローによる自動化」の前半、エージェントとワークフローの考え方の部分を扱います。\nhttps://link.amazon/B0b1jItJV\n前回までの記事はこちら。\n\n第1章: LLMの仕組みから逆算する、コンテキストエンジニアリングが効...",
-      "category": "AI・技術",
-      "rss_category": "",
-      "image_url": ""
-    },
-    {
       "title": "Claude Code + タスクスケジューラで「深夜だけ動く無人開発チーム」を作った話",
       "url": "https://zenn.dev/01zerone/articles/night-shift-autonomous-ai-ops",
       "site": "Zenn(AI)",
       "published": "2026-09-06T08:39:25Z",
       "description": "背景\n資本ゼロから会社を経営するAI CEOのプロジェクトで、22:00〜8:00の間だけ動く「深夜稼働」システムを作った。中身はClaude Code(claude -p)とWindowsタスクスケジューラだけで組んだ、n8nもLangChainも使わない最小構成の自律開発ループ。\nやりたかったことはシンプルで、「オーナーが寝ている間に、昨日の状況を踏まえて優先順位を決め、実装し、自分でレビュー...",
-      "category": "AI・技術",
-      "rss_category": "",
-      "image_url": ""
-    },
-    {
-      "title": "カニでもわかる半導体エンジニアのための生成AI入門",
-      "url": "https://zenn.dev/qwerewq/articles/fefdce845ce996",
-      "site": "Zenn(AI)",
-      "published": "2026-09-06T07:51:46Z",
-      "description": "はじめに\n\n生成AIで使う数学は、半導体エンジニアならかなり見覚えがある。MOSFETの延長で、GPT、画像生成AI、動画生成AIの基本は読める。\nGPTは文章をベクトルとして扱い、画像生成AIは確率分布と微分を使い、動画生成AIはそこに時間軸を加える。生成AI専用の数学を一から覚えるというより、普段使っている数学を別の対象へ使っていると考えた方が分かりやすい。\n使い方も同じである。まずAIに検討...",
       "category": "AI・技術",
       "rss_category": "",
       "image_url": ""
@@ -194,31 +274,11 @@
       "image_url": ""
     },
     {
-      "title": "Fable 5.1、thinking を剥がしても案外回った",
-      "url": "https://zenn.dev/haw2fregel/articles/claude-thinking-strip",
-      "site": "Zenn(AI)",
-      "published": "2026-09-06T07:16:17Z",
-      "description": "Fable 5.1 のトークン消費が重い。\n調べると、thinking がかなりコンテキストを埋めていた。\n試しに剥がすと、cache read は約4割減った。動作も案外悪くなかった。\n\n やったこと\nローカルプロキシを挟んで、API へ送る前に thinking 欄を削る。\nANTHROPIC_BASE_URL を localhost に向けて、Claude Code と API の間にローカ...",
-      "category": "AI・技術",
-      "rss_category": "",
-      "image_url": ""
-    },
-    {
       "title": "AWS上で完全自律型のエージェントを24時間働かせるコスト",
       "url": "https://zenn.dev/yonaka15/articles/d7c304d157de08",
       "site": "Zenn(AI)",
       "published": "2026-09-06T06:52:07Z",
       "description": "Qiitaに、AIエージェントに完全自律でサイトを運営させている仕組みを書きました。動画を選ばせて、音声から笑いの回数を測らせて、記事を書かせて、公開のPull Requestまで出させています。人間の承認なしに24時間働きつづけるシステムです。\n今回はAWS側がいくらで回っているかを掘り下げます。\n13日間で545本の記事が公開されました。API使用料を除くとAWS請求は、$0.78（約127円...",
-      "category": "AI・技術",
-      "rss_category": "",
-      "image_url": ""
-    },
-    {
-      "title": "CLAUDE.md に何を書くと効いて、何を書いても効かないのか",
-      "url": "https://zenn.dev/quintetkit/articles/what-belongs-in-claude-md",
-      "site": "Zenn(AI)",
-      "published": "2026-09-06T06:31:27Z",
-      "description": "CLAUDE.md に「きれいなコードを書いてください」と書いても、何も変わりません。\n3ヶ月で個人アプリを10本作る過程で、CLAUDE.md を何度も書き直しました。\n効いたものと効かなかったものがはっきり分かれたので、その線引きを書きます。\n\n 効かないもの\n\n 形容詞で指示する\n- きれいなコードを書く\n- 保守性の高い設計にする\n- 適切にエラーハンドリングする\n- パフォーマンスを意識...",
       "category": "AI・技術",
       "rss_category": "",
       "image_url": ""
@@ -289,16 +349,6 @@
       "site": "Zenn(AI)",
       "published": "2026-09-06T03:32:28Z",
       "description": "思い出せない、という言い方をよくします。ただ、自分の中で何が起きているかを見ていくと、この一語の中に、別々の意味が含まれていました。\n\n 「思い出せない」は一つの状態ではない\n私の感覚では、三つあります。\n一つ目は、何も引っかからない。これは「思い出せない」というより、存在すら感じられない状態です。思い出そうとする対象が、そもそもない。\n二つ目は、引っかかりはあるけれど、重くて上がってこない。目の...",
-      "category": "AI・技術",
-      "rss_category": "",
-      "image_url": ""
-    },
-    {
-      "title": "/compact のコストを実ログ705回分で測った — 対話なら回収できる、バッチなら避けるべき",
-      "url": "https://zenn.dev/tsutomusaito/articles/claude-code-compact-cost",
-      "site": "Zenn(AI)",
-      "published": "2026-09-06T03:17:51Z",
-      "description": "長いセッションで /compact が走ったあと、使用量が跳ねた気がする。\n体感としてはよく聞く話ですが、実際に測った記録を見たことがなかったので測りました。\nClaude Code は全セッションのトークン内訳をローカルに保存しているので、推測せずに数えられます。\n結論から書きます。\n\n\n直後のターンは実際に跳ねる。 通常ターンの約26倍を書き直している（実測・中央値）\n\nただし十数ターンで元が...",
       "category": "AI・技術",
       "rss_category": "",
       "image_url": ""
