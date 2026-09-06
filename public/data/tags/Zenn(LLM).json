@@ -1,8 +1,28 @@
 {
   "site": "Zenn(LLM)",
-  "last_updated": "2026-09-06T15:50:23.822105",
-  "total_articles": 5908,
+  "last_updated": "2026-09-06T17:50:53.241973",
+  "total_articles": 5913,
   "articles": [
+    {
+      "title": "OpenAI の API キーを削除したのに課金が続いた話（Inactive の鍵は消せない）",
+      "url": "https://zenn.dev/mohhh_ok/articles/2026-09-openai-api-key-deleted-still-charged",
+      "site": "Zenn(LLM)",
+      "published": "2026-09-06T12:38:33Z",
+      "description": "2026 年 9 月 6 日の夜、OpenAI の API キーを不正利用されて 1 日で $269.19 を使われました。8 月 29 日にも同じ鍵で $3.51 の利用があり、合計 $272.70。自動チャージが月の上限で止まっていたので、残高は -$99.60 のまま残っています。\n金額そのものより、途中で気づいて鍵を削除したあとも約 15 分リクエストが通り続けたことと、8 月 29 日に...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "個人実証：AzureネイティブRAGでERP導入ナビゲーターを構築した(第1回:設計・インジェスト・セッション管理編)",
+      "url": "https://zenn.dev/yuninaka/articles/azure-rag-navigator-build",
+      "site": "Zenn(LLM)",
+      "published": "2026-09-06T11:17:50Z",
+      "description": "1. 概要\n\n 1.1 やったこと(3行サマリ)\n\n過去にNeo4j×LangChain Agentでグラフ×ベクトルのハイブリッドRAGを検証した(個人実証：設備保全ナレッジベースで見えた限界、シリーズを通じて最終的にgolden_qa平均1.00を達成)のに対し、今回はAzureネイティブスタック(Azure OpenAI Service / Azure AI Search / Cosmos ...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
     {
       "title": "Claude.aiのカスタムコネクタでMCPサーバーを繋ぐ時のOAuth要件まとめ",
       "url": "https://zenn.dev/butanokakuni/articles/3598140b667b02",
@@ -14,11 +34,41 @@
       "image_url": ""
     },
     {
+      "title": "Fable 5.1、thinking を剥がしても案外回った",
+      "url": "https://zenn.dev/haw2fregel/articles/claude-thinking-strip",
+      "site": "Zenn(LLM)",
+      "published": "2026-09-06T07:16:17Z",
+      "description": "Fable 5.1 のトークン消費が重い。\n調べると、thinking がかなりコンテキストを埋めていた。\n試しに剥がすと、cache read は約4割減った。動作も案外悪くなかった。\n\n やったこと\nローカルプロキシを挟んで、API へ送る前に thinking 欄を削る。\nANTHROPIC_BASE_URL を localhost に向けて、Claude Code と API の間にローカ...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
       "title": "llama-serverとPi Coding Agentをつなぐ",
       "url": "https://zenn.dev/ibuky/articles/5fc44494d51e55",
       "site": "Zenn(LLM)",
       "published": "2026-09-06T04:52:16Z",
       "description": "pi内の/loginからではローカル動作するllama-serverとうまくつなぐことができなかったので、huggingface/pi-llamaのプラグインを使用して接続が成功した。\n\n 環境設定\n# プラグインをインストール\npi install git:github.com/huggingface/pi-llama\n# 環境変数の設定\nexport LLAMA_BASE_URL=\"http:...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "AI チャットに履歴を全部投げたら破綻した — 忘れることは、思い出すためにある",
+      "url": "https://zenn.dev/officekamiya/articles/forgetting-and-remembering",
+      "site": "Zenn(LLM)",
+      "published": "2026-09-06T03:32:28Z",
+      "description": "思い出せない、という言い方をよくします。ただ、自分の中で何が起きているかを見ていくと、この一語の中に、別々の意味が含まれていました。\n\n 「思い出せない」は一つの状態ではない\n私の感覚では、三つあります。\n一つ目は、何も引っかからない。これは「思い出せない」というより、存在すら感じられない状態です。思い出そうとする対象が、そもそもない。\n二つ目は、引っかかりはあるけれど、重くて上がってこない。目の...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "なぜ、私のブログ記事作成方法を天国の外山滋比古さんが聞いたら理想的だと評価してくれそうなのか？",
+      "url": "https://zenn.dev/pdfractal/articles/48e68d10b9832c",
+      "site": "Zenn(LLM)",
+      "published": "2026-09-06T03:06:07Z",
+      "description": "はじめに\n私は現在、ブログ記事を書くときに、最初からAIへ「この記事を書いてください」と依頼しているわけではありません。日常生活の中で疑問や違和感を覚え、そこから自分なりの仮説を立て、ChatGPTとかなり長く討論します。その過程で反論を受け、事実関係を確認し、説明の弱い部分を修正して、ある程度納得できるところまで考えます。そのうえで「これは未来の自分が読み返す価値がある」と判断した場合だけ、討論...",
       "category": "AI・技術",
       "rss_category": "",
       "image_url": ""
