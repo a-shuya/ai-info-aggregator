@@ -1,8 +1,58 @@
 {
   "site": "Zenn(AI)",
-  "last_updated": "2026-09-06T23:17:26.102085",
-  "total_articles": 13443,
+  "last_updated": "2026-09-07T01:07:52.097683",
+  "total_articles": 13445,
   "articles": [
+    {
+      "title": "AIは、そこにある関数をもう一度書く — RepoExecが測った「依存を再利用する力」",
+      "url": "https://zenn.dev/hidetzu/articles/repoexec-dependency-reuse",
+      "site": "Zenn(AI)",
+      "published": "2026-09-06T22:30:06Z",
+      "description": "🎯 はじめに\nAIにコードを書かせていて、いちばん静かに困るのはこれである。\nリポジトリに is_string() があるのに、isinstance(x, str) と書かれる。\nテストは通ってしまうことがある。レビューでも「まあ動くしな」で流れる。半年後、バリデーションの仕様を変えたときに、is_string() を直しただけでは直りきらない場所が出てくる。\nこれは「AIがバグを書いた」話ではな...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "RAGの心臓部 — Embeddingとベクトル検索で「意味」を捉える",
+      "url": "https://zenn.dev/yukihayama/articles/rag-embedding-basics",
+      "site": "Zenn(AI)",
+      "published": "2026-09-06T22:08:43Z",
+      "description": "RAGの心臓部 — Embeddingとベクトル検索で「意味」を捉える\nChatGPTやClaudeに「自社のデータを読み込ませたい」と思ったことはありませんか？そこで鍵になるのがEmbeddingとベクトル検索です。RAG（Retrieval-Augmented Generation）の中核を担うこの技術について、実装の視点から解説します。\n\n なぜ「キーワード検索」では足りないのか\n従来のキー...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "描いたラクガキがモンスターになるゲーム『ラクガキビースト』を個人開発しています",
+      "url": "https://zenn.dev/marvelousu/articles/rakugaki-beast-intro",
+      "site": "Zenn(AI)",
+      "published": "2026-09-06T22:08:24Z",
+      "description": "描いたラクガキが属性と能力を持ったモンスターになって動き出すゲームを、個人で作っています。\nSteam のストアページを公開し、ブラウザで一部を試せるようにしたので、その紹介です。\n\n\n はじめに\n個人でゲームを作っています。作るならこれまでにないゲーム体験になるものを作りたいと思っていて、その手がかりのひとつとして、AI をゲームの仕組みそのものに組み込むことを考えるようになりました。\nそのとき...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "git worktreeで実現する、Claude Codeの並行開発",
+      "url": "https://zenn.dev/collabostyle/articles/d32c62c99bc241",
+      "site": "Zenn(AI)",
+      "published": "2026-09-06T22:02:09Z",
+      "description": "TL;DR\n\nClaude Codeのようなコーディングエージェントに設計・実装・レビュー対応を任せる開発スタイル（AI-DLC: AI-Driven Development Lifecycleのような、要件→設計→計画→実装→レビューを段階的に進める手法）では、各ステップの間に「エージェントが考えている間」「人間が承認・レビューする間」の待ち時間が必ず挟まる。\n\ngit worktree で同じ...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "AGENTS.md は書けば効くのか — 手書き+4%、AI生成-3%という実測と、私の手書きが0件だった話",
+      "url": "https://zenn.dev/hwaun_dev_open/articles/agents-md-does-it-work",
+      "site": "Zenn(AI)",
+      "published": "2026-09-06T22:00:05Z",
+      "description": "CLAUDE.md や AGENTS.md を書いている人は多いと思います。私も書いています。\nでは聞きますが、それが効いていることを、どうやって確認しましたか。\n私は確認していませんでした。書いて、なんとなく動いている気がして、それで終わりにしていました。実際に測ったら、私の書いたルールは一度も発動していませんでした。\n同じ時期に、ETH Zurichがこの問いを正面から評価した論文を出していま...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
     {
       "title": "Claude in Chromeが正式版に、権限スコープはvisual groundingの安全弁として設計されている",
       "url": "https://zenn.dev/every_ai_recipe/articles/claude-chrome-3-permission-modes",
@@ -69,16 +119,6 @@
       "site": "Zenn(AI)",
       "published": "2026-09-06T15:43:06Z",
       "description": "画像AIを比較するとき、「それっぽい画像が出たか」だけで判断してしまうことがあります。しかし、入力画像も指示文も毎回違う状態では、ツールの差なのか、条件の差なのか分かりません。\nそこでこの記事では、画像AIを比較するときに固定したい5つの条件を整理します。これはランキングを作るための方法ではありません。自分の用途に合うワークフローを、再現可能な形で選ぶための小さなテスト設計です。\n\n 1. 入力画...",
-      "category": "AI・技術",
-      "rss_category": "",
-      "image_url": ""
-    },
-    {
-      "title": "YOLO26nアーキテクチャ徹底解析 step2 | Conv, DWConv, PWConv ブロック",
-      "url": "https://zenn.dev/diiw/articles/yolo26n-architecture-step2",
-      "site": "Zenn(AI)",
-      "published": "2026-09-06T14:53:09Z",
-      "description": "はじめに\n本記事は、筆者がソースコードおよびモデル構造を独自に解析した情報に基づき解説を行う記事です。本記事の内容は更新される場合があります。内容に大きな変更・追加があった場合は都度Xアカウントにて発信いたします。\n本記事は「YOLO26nアーキテクチャ徹底解析」シリーズのstep2となります。YOLO26nの全体像を示したstep1の記事はこちらです。\n\n 免責・非公式表示\n!\n\n\n本記事は、U...",
       "category": "AI・技術",
       "rss_category": "",
       "image_url": ""
@@ -169,26 +209,6 @@
       "site": "Zenn(AI)",
       "published": "2026-09-06T11:47:55Z",
       "description": "これなに？\n最近考えていることと試していることの現在地。\nAIの速度が速すぎて数日で変わってしまうので本当に今のリアルタイム。\n人間が心温まる手書きで書いています。頭の中をザクっと出したので若干構成とか悪いかも。\n\n 結局今何が問題なのか？\nなんとなく感じているところをさくっとまとめる。\n\n Skills Rules MCP等の悪いところ。\nごちゃごちゃする。\n基本的に余計なコンテキストが多すぎる...",
-      "category": "AI・技術",
-      "rss_category": "",
-      "image_url": ""
-    },
-    {
-      "title": "AIは毎回忘れる。だから引き継ぎプロンプトを38版まで育てた",
-      "url": "https://zenn.dev/hanamilo/articles/8348ff15c868e2",
-      "site": "Zenn(AI)",
-      "published": "2026-09-06T11:47:48Z",
-      "description": "半年で38版になった\n社内向けのWebツールを、半年かけて作った。Claudeとチャットで対話しながら、少しずつ。\n私は現場の人間で、専門の開発者ではない。\n作っているあいだ、ずっと困っていたことがある。\nチャットが切れると、AIは何も覚えていない。\n前回どう決めたのか。なぜその形にしたのか。どこを触ってはいけないのか。\n全部ゼロに戻る。新しいチャットを開くたびに、私は同じ説明を繰り返していた。\n...",
-      "category": "AI・技術",
-      "rss_category": "",
-      "image_url": ""
-    },
-    {
-      "title": "スキルを MCP で配る \"Skills over MCP\" を読む — SEP-2640 の設計を追う",
-      "url": "https://zenn.dev/aws_japan/articles/skills-over-mcp",
-      "site": "Zenn(AI)",
-      "published": "2026-09-06T11:40:42Z",
-      "description": "はじめに\nこんにちは、AWS Japan でソリューションアーキテクトをしているいなりくです。\nMCP サーバーをつないだとき、「ツールは生えたけど、このツール群をどう組み合わせれば目的を達成できるのか」がエージェントに伝わらず、結局こちらが手順を書いて渡した、という経験はないでしょうか。ツールの説明は「その 1 つが何をするか」は語りますが、「複数のツールをどう組み合わせるか」は語りません。\nこ...",
       "category": "AI・技術",
       "rss_category": "",
       "image_url": ""
