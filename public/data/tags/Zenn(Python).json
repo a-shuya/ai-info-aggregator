@@ -1,14 +1,24 @@
 {
   "site": "Zenn(Python)",
-  "last_updated": "2026-09-07T01:07:52.097683",
-  "total_articles": 6255,
+  "last_updated": "2026-09-07T06:05:54.280905",
+  "total_articles": 6256,
   "articles": [
     {
-      "title": "TimesFM 3をColabで試す：関連データや予定を足すと予測は変わる？",
-      "url": "https://zenn.dev/sunyeul89/articles/timesfm-3-handson",
+      "title": "カーリルAPIで全国15都市286館の貸出状況を毎朝観測する仕組み",
+      "url": "https://zenn.dev/sutokei/articles/251329d34a14c5",
       "site": "Zenn(Python)",
-      "published": "2026-09-06T16:49:39Z",
-      "description": "はじめに\n「売上を予測するなら、来店数や来月のセール予定も一緒に見てほしい」。時系列モデルを使うとき、こんな情報も渡せたら、と思うことはありませんか。\nTimesFM 3.0でうれしいのが、関連する系列も、未来の予定も、モデルに直接まとめて渡せるところです。あらかじめ学習されたモデルなので、まずは追加学習なしで試せます。\nたとえば、こんな比較ができます。\n\n\n関連する系列を一緒に予測 → 1本ずつ...",
+      "published": "2026-09-06T23:00:05Z",
+      "description": "図書館の本は、返却された日が「借りどき」です。人気の本ほど貸出中が続き、予約すると数ヶ月待ち。でも実は、都市によって空き具合はまったく違います。\nその「今日、どの街の図書館でどの本が借りられるか」を毎朝観測して記事にするサイト(借りどき)を運営しています。観測の心臓部がカーリルの図書館APIです。この記事は、全国15都市・286館・335冊を毎朝観測する仕組みを、実測値と一緒にまとめたものです。\n...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "AIは、そこにある関数をもう一度書く — RepoExecが測った「依存を再利用する力」",
+      "url": "https://zenn.dev/hidetzu/articles/repoexec-dependency-reuse",
+      "site": "Zenn(Python)",
+      "published": "2026-09-06T22:30:06Z",
+      "description": "🎯 はじめに\nAIにコードを書かせていて、いちばん静かに困るのはこれである。\nリポジトリに is_string() があるのに、isinstance(x, str) と書かれる。\nテストは通ってしまうことがある。レビューでも「まあ動くしな」で流れる。半年後、バリデーションの仕様を変えたときに、is_string() を直しただけでは直りきらない場所が出てくる。\nこれは「AIがバグを書いた」話ではな...",
       "category": "開発",
       "rss_category": "",
       "image_url": ""
@@ -94,21 +104,21 @@
       "image_url": ""
     },
     {
-      "title": "緑のテストが何も守っていない4つの形 —— カバレッジは通ったことしか教えてくれない",
-      "url": "https://zenn.dev/chiwapome/articles/green-tests-that-assert-nothing",
-      "site": "Zenn(Python)",
-      "published": "2026-09-06T08:50:50Z",
-      "description": "2日のあいだに、何も検査していないのに緑だったテストを3件見つけた。\nどれもカバレッジには計上される。行は通っている。だがバグを戻しても赤くならない。\nさらに数日後、同じ形をもう1件踏んだ。合計4件、全部ちがう理由で空振りしていた。\nこの記事は、その4つの形と、それぞれをどう捕まえるか。\n\n 大前提：カバレッジは「通った」しか言っていない\ndef test_発注できる():\n    place_o...",
-      "category": "開発",
-      "rss_category": "",
-      "image_url": ""
-    },
-    {
       "title": "自作の死活監視は、一番困るときに一番静かになる —— ノートPCで24時間監視をやめるまで",
       "url": "https://zenn.dev/chiwapome/articles/deadman-switch-monitoring",
       "site": "Zenn(Python)",
       "published": "2026-09-06T08:50:50Z",
       "description": "常駐プロセスが落ちたら気づきたい。素直に書くとこうなる。\n# 5分ごとに動かす\nif not process_is_alive():\n    notify(\"プロセスが落ちています\")\nこれは動く。そして一番困る状況で、一番静かになる。\n\n\n\n障害\nこの監視\nデッドマン装置\n\n\n\n\nプロセスだけ落ちた\n検知できる\n検知できる\n\n\nマシンがスリープした\n検知できない\n検知できる\n\n\nマシンが落ちた・...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "緑のテストが何も守っていない4つの形 —— カバレッジは通ったことしか教えてくれない",
+      "url": "https://zenn.dev/chiwapome/articles/green-tests-that-assert-nothing",
+      "site": "Zenn(Python)",
+      "published": "2026-09-06T08:50:50Z",
+      "description": "2日のあいだに、何も検査していないのに緑だったテストを3件見つけた。\nどれもカバレッジには計上される。行は通っている。だがバグを戻しても赤くならない。\nさらに数日後、同じ形をもう1件踏んだ。合計4件、全部ちがう理由で空振りしていた。\nこの記事は、その4つの形と、それぞれをどう捕まえるか。\n\n 大前提：カバレッジは「通った」しか言っていない\ndef test_発注できる():\n    place_o...",
       "category": "開発",
       "rss_category": "",
       "image_url": ""
