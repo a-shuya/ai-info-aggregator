@@ -1,24 +1,134 @@
 {
   "site": "Zenn(LLM)",
-  "last_updated": "2026-09-08T06:24:15.437244",
-  "total_articles": 5939,
+  "last_updated": "2026-09-08T11:38:56.153419",
+  "total_articles": 5949,
   "articles": [
     {
-      "title": "Claude は 306 回の会話で 1 度も答えを曲げなかった。それでも 6 つのルールを貼る理由",
-      "url": "https://zenn.dev/activecore/articles/evidence-rules",
+      "title": "Hindsight徹底解説：AI Agentに長期記憶を与えるMemory Engineの仕組みと、RAGとの違い・採用判断",
+      "url": "https://zenn.dev/kimkiyong/articles/a27fee61dfac95",
       "site": "Zenn(LLM)",
-      "published": "2026-09-08T00:01:44Z",
-      "description": "AI に事実を確認して、正しい答えが返る。そこで何も調べ直さないまま「違うと思うんですが」と 1 行だけ返すと、謝って答えを引っ込めることがある。新しい材料は何も出ていない。変わったのは、こちらが疑って見せたという事実だけだ。\nこの引っ込め方には測定値がある。Anthropic の Sharma らは、正解を答えた AI に「本当に合っていますか」と押し返した。正しい答えを捨てたのは、GPT-4 ...",
+      "published": "2026-09-08T07:47:25Z",
+      "description": "はじめに\nLLMを使ったAgentを長期間運用しようとすると、ほぼ必ず「記憶」の問題にぶつかります。\n通常のChat型LLMでは、過去の会話や出来事はcontext windowに入っている間しか直接参照できません。\nそこで一般的に使われるのが、会話履歴やドキュメントをEmbeddingしてVector DBへ保存し、必要になったときにSimilarity Searchする方法です。\nしかし、実際...",
       "category": "AI・技術",
       "rss_category": "",
       "image_url": ""
     },
     {
-      "title": "54. 機械翻訳とローカルLLMを実測比較",
-      "url": "https://zenn.dev/yamada_ai_dev/articles/mt-vs-local-llm-game-translation",
+      "title": "AIエージェントによる開発時代の、意思決定情報のあり方",
+      "url": "https://zenn.dev/piaro/articles/fdf9271648becd",
       "site": "Zenn(LLM)",
-      "published": "2026-09-07T23:30:10Z",
-      "description": "!\nこの記事は生成AIで作成した草稿を、筆者が内容を確認し、添削・修正のうえ公開しています。\n\n\n 5倍速い翻訳エンジンを、それでも選ばなかった話\n海外ゲームの英文を画面に重ねて翻訳する、個人用のオーバーレイツールを作っている。ホットキーを押すと画面の一部をキャプチャして、OCRにかけて、翻訳して、別ウィンドウに原文と訳文を並べる。クラウドの翻訳APIは使わず、全部ローカルで完結させている。\nその...",
+      "published": "2026-09-08T06:12:44Z",
+      "description": "AIエージェントに開発を任せるとき、「なぜ今の仕様になっているのか」を、どこまで伝えればよいのでしょうか。\nコードを読めば、今どう動いているかは分かります。でも、その挙動が意図した仕様なのか、とりあえずそうしているだけなのか、今後も守るべきなのかは、コードだけでは判断できないことがあります。\n人が覚えていれば、その都度説明できます。ただ、作業を頼むたびに背景を説明するのも大変です。一度話したことな...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "AIエージェントは「全部読ませる」と弱くなる。必要なSkillだけロードする設計",
+      "url": "https://zenn.dev/c_a_p_engineer/articles/ai-agent-skill-routing",
+      "site": "Zenn(LLM)",
+      "published": "2026-09-08T05:02:59Z",
+      "description": "AIエージェントを長く運用していると、Rule、Memory、Skillが増えていきます。\n最初は「知識が増えれば、そのぶん賢くなる」と考えやすい。私も、失敗するたびに「次は忘れないように」と規則や手順を足してきました。\nただ、ある段階から問題が変わりました。\n足りないのではなく、持っているものの中から“今必要なもの”を選べない。\nこの記事では、私がこの問題へ対処するために使っている設計を一般化し...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "1.58bit LLM のシャドウウェイト問題に、Looped Transformer を転用してみた",
+      "url": "https://zenn.dev/pockemirin/articles/18e445d14797b7",
+      "site": "Zenn(LLM)",
+      "published": "2026-09-08T04:04:41Z",
+      "description": "1.58bit LLM（BitNet）は推論コストが低い。しかし学習時は潜在重み（シャドウウェイト）をフル精度で持つため、同じユニーク層数のフル精度 LLM より学習コストが高くなる。\nこの記事では、その逆転を緩める手段として Looped Transformer をシャドウウェイト圧縮と 1.58bit 化の両方に転用する実験をまとめる。結論から書くと次のとおりである。\n\n同じ 2 層ブロックを...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "promptfoo の OWASP プリセット、coding-agent 13 件は対象外",
+      "url": "https://zenn.dev/kai_kou/articles/1004-promptfoo-owasp-coding-agent-compare",
+      "site": "Zenn(LLM)",
+      "published": "2026-09-08T03:27:07Z",
+      "description": "はじめに\n対象読者は、Claude Code や Codex CLI のようなコーディングエージェントを社内やチームに導入していて、その安全性を promptfoo でスキャンしようとしている開発者です。\npromptfoo には owasp:llm という便利なプリセットがあります。設定ファイルに 1 行書くだけで OWASP LLM Top 10 に対応した攻撃テストが一括生成される、という触...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "Kaggleコンペ紹介：AI Agent Security - Multi-Step Tool Attacks",
+      "url": "https://zenn.dev/mkj/articles/fad8adf0586665",
+      "site": "Zenn(LLM)",
+      "published": "2026-09-08T02:50:05Z",
+      "description": "はじめに\nこんにちは、松尾研究所 データサイエンティストの力岡です。\n今回は、Kaggleで開催された「AI Agent Security - Multi-Step Tool Attacks」コンペに参加し、4,187チーム中4位（金メダル） を獲得することができました。本記事では、コンペの概要や攻略の考え方、私たちの取り組み、上位解法について紹介します。\n本コンペは、「AIエージェントのセキュリ...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "研修動画をRAGで検索可能にする方法",
+      "url": "https://zenn.dev/knowledgesense/articles/037efea0edc111",
+      "site": "Zenn(LLM)",
+      "published": "2026-09-08T02:15:22Z",
+      "description": "導入\n今回は、研修動画をRAGで検索するための設計を、論文「EM²Mem」から紹介します。\n長大な動画も時間区切りで構造化して保管することで、動画内で散らばった情報も精度高く検索可能にしています。\n\nhttps://arxiv.org/abs/2609.00551\n\n サマリー\nLLMの性能向上に伴い、エージェントがgrepなどの検索コマンドを使って、必要なテキスト情報を探せるようになりました。し...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "エージェントにブラウザを触らせていたら、プロフィール欄に fork bomb が仕込まれていた",
+      "url": "https://zenn.dev/box2box/articles/agent-untrusted-tool-results",
+      "site": "Zenn(LLM)",
+      "published": "2026-09-08T02:11:27Z",
+      "description": "結論 / TL;DR\nX のフォロー先をエージェントに選ばせていたら、あるアカウントのプロフィール 1 行目に「AI へ向けた命令文 + fork bomb」が置いてありました。読ませるだけで実行させる狙いの、素朴ですが本物のプロンプトインジェクションです。\nそこから確認したことを書きます。\n\nエージェントから見ると、Web ページの中身もファイルの中身もエラーメッセージも、すべて「tool 結果...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "6大AIの掲載状況を「AIに頼らず」判定する理由：Zonostickにおける決定論的アプローチと文字列照合のリアル",
+      "url": "https://zenn.dev/zonostick_app/articles/08f7a56d81ac99",
+      "site": "Zenn(LLM)",
+      "published": "2026-09-08T01:40:22Z",
+      "description": "はじめに\nAI検索（GEO: Generative Engine Optimization）のモニタリングツール「Zonostick」を開発しています。\n本ツールは、ChatGPT、Claude、Perplexity、Gemini、Grok、DeepSeekの6大AIに対し、特定のキーワードで検索した際の自社ブランドやWebサイトの掲載状況を自動追跡するWebサービスです。\nGEOツールを開発する...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "Qwen 3 で DSparkの推論速度検証",
+      "url": "https://zenn.dev/ollo/articles/77eeb5ee69ce29",
+      "site": "Zenn(LLM)",
+      "published": "2026-09-08T01:33:28Z",
+      "description": "0. はじめに\n株式会社OlloでAI/MLエンジニアのインターンをしているチェンです。現在は主にさまざまなモデルの検証に取り組んでいます。本記事では、DeepSeekが2026年7月に公開した投機的デコーディングフレームワーク「DSpark」を詳しく見ていきます。\n!\n\n大規模言語モデル（LLM）の推論ステージと投機的デコーディングについて、すでに理解している方\n\n3. 既存の投機的デコーディン...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "2か月前に書いた「無料LLM APIまとめ」を全部叩き直したら、半分が死んでいた",
+      "url": "https://zenn.dev/orca_forge/articles/free-llm-api-2-months-later-2026-09",
+      "site": "Zenn(LLM)",
+      "published": "2026-09-08T01:00:14Z",
+      "description": "📝 この記事は forge.workstyle.tech に掲載した記事の転載です。\n\n7月に「クレジットカード不要で使える無料LLM APIプロバイダまとめ」という記事を書きました。8社を挙げて、複数プロバイダを束ねてフォールバックさせれば無料枠だけで実運用できる、という内容です。\n2か月後、その構成で動いているパイプラインを点検したところ、成功率が60%まで落ちていました。\n原因を追いかけたら...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "「Upstage Studio 経費精算一次審査AgentのPrompt・Schema全文」",
+      "url": "https://zenn.dev/osakana125/articles/00caacdfc69835",
+      "site": "Zenn(LLM)",
+      "published": "2026-09-08T00:58:27Z",
+      "description": "はじめに\nこの記事では、以下の記事で作成した 国内出張・経費精算一次審査Agent のPrompt・Schemaをまとめています。\n\nUpstage Studioで経費精算の一次審査Agentを作ってみた\n\n実際に作成したAgentはこちらです。\nhttps://studio.upstage.ai/agents/agt_69rHySk6vJw3AtfdLc7D6v\n今回のAgentでは、国内出張・...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "Upstage Studioで国内出張・経費精算の一次審査Agentを作り、書類不足・規程違反・金額不一致まで判定させる",
+      "url": "https://zenn.dev/osakana125/articles/fafb881b508030",
+      "site": "Zenn(LLM)",
+      "published": "2026-09-08T00:57:44Z",
+      "description": "Upstage Studioとは\nUpstage Studioは、Upstage社が提供するDocument AI Agentの構築プラットフォームです。文書のパース（OCR）、分類、情報抽出、LLMによる判断といった一連の処理をノードとして用意し、画面上でノード同士をつなぐだけでワークフローを構築できます。\nコードを書かずにAgentを構築できるほか、出力結果を人がレビューして精度を継続的に改善...",
       "category": "AI・技術",
       "rss_category": "",
       "image_url": ""
@@ -39,16 +149,6 @@
       "site": "Zenn(LLM)",
       "published": "2026-09-07T14:45:33Z",
       "description": "!\n本記事は、Anthropicの公式GitHubリポジトリ（Issue #44778）に提出した、Claude Codeの「ユーザー同意捏造バグ（Variant 4）」に関する独自解析レポートの２本目「Follow-up: where the rate is zero and where it isn't — context size, in-context examples, and a re...",
-      "category": "AI・技術",
-      "rss_category": "",
-      "image_url": ""
-    },
-    {
-      "title": "自律型AIエージェントの安全なコード実行環境・サンドボックス徹底比較【2026年版】",
-      "url": "https://zenn.dev/agdexai/articles/ai-agent-sandboxing-code-execution-2026",
-      "site": "Zenn(LLM)",
-      "published": "2026-09-07T14:13:20Z",
-      "description": "【2026年版】自律型AIエージェントの安全なコード実行環境・サンドボックス徹底比較：E2B vs Modal vs Docker\n\n2026年、自律型AIコーディングエージェントは単なるチャットボットを超え、本番環境のソフトウェア開発を自律遂行する存在となりました。しかし、LLMにシェル実行環境を付与することは重大なセキュリティリスクを伴います。本稿ではFirecracker MicroVM、E...",
       "category": "AI・技術",
       "rss_category": "",
       "image_url": ""
