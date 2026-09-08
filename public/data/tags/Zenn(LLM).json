@@ -1,8 +1,38 @@
 {
   "site": "Zenn(LLM)",
-  "last_updated": "2026-09-07T23:36:46.520067",
-  "total_articles": 5939,
+  "last_updated": "2026-09-08T01:24:02.178836",
+  "total_articles": 5942,
   "articles": [
+    {
+      "title": "54. 機械翻訳とローカルLLMを実測比較",
+      "url": "https://zenn.dev/yamada_ai_dev/articles/mt-vs-local-llm-game-translation",
+      "site": "Zenn(LLM)",
+      "published": "2026-09-07T23:30:10Z",
+      "description": "!\nこの記事は生成AIで作成した草稿を、筆者が内容を確認し、添削・修正のうえ公開しています。\n\n\n 5倍速い翻訳エンジンを、それでも選ばなかった話\n海外ゲームの英文を画面に重ねて翻訳する、個人用のオーバーレイツールを作っている。ホットキーを押すと画面の一部をキャプチャして、OCRにかけて、翻訳して、別ウィンドウに原文と訳文を並べる。クラウドの翻訳APIは使わず、全部ローカルで完結させている。\nその...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "2026-08-14 今日の技術トレンド",
+      "url": "https://zenn.dev/bambampurin/articles/2026-08-14-tech-daily",
+      "site": "Zenn(LLM)",
+      "published": "2026-09-07T22:01:27Z",
+      "description": "!\n本日のトレンドは、LLM単体から業務特化AIエージェントへの重心移動です。具体的には、WAIC 2026やナレッジワーク、富士通、SAPの見出しが、業界特化LLMとマルチエージェントの実装競争を示しました。一方で、Vercel・AWS・Google関連のエージェント脆弱性やMCP悪用報道から、2026年の実務課題は“作ること”より“安全に接続・実行すること”に移っています。加えて、OpenAI...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "常駐型AIエージェントで退職者・異動者のアクセス権限を即座に失効させる設計",
+      "url": "https://zenn.dev/hach/articles/chat-agent-deprovisioning-design",
+      "site": "Zenn(LLM)",
+      "published": "2026-09-07T21:13:17Z",
+      "description": "Slack / Teams / Chatworkなどに常駐して働くAIエージェントは、ユーザー本人になり代わって過去の会話・議事録・タスクを横断的に参照します。導入初期はメンバーの入れ替わりが少なく気にならないのですが、運用が長くなるほど「退職した人・異動した人の権限がいつまで生きているか」が事故の温床になります。この記事では、常駐エージェントの権限管理を設計する中で固めた、失効(デプロビジョニン...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
     {
       "title": "『基盤モデルとロボットの融合』で学ぶPhysical AIの全体像 ── 基盤モデルはなぜロボットを変えるのか",
       "url": "https://zenn.dev/rinrin_ds_17/articles/1335bb504dbf5b",
@@ -24,6 +54,26 @@
       "image_url": ""
     },
     {
+      "title": "擬似AGENTS.local.mdを読み込ませる",
+      "url": "https://zenn.dev/nana/articles/4c2f165fe9a641",
+      "site": "Zenn(LLM)",
+      "published": "2026-09-07T14:41:34Z",
+      "description": "課題\nAGENTS.local.md が公式でサポートされていない。\nhttps://github.com/openai/codex/issues/28739\nでも、ローカルだけで反映させて動きを見たい。\nAIの運用はしばらく使って分かることが多いので、しばらくローカルで試したいと言う気持ちがある。\nただ、それをいきなりチームに適用するのは重い。\n特殊性癖な自分好みのアウトプット形式を楽しみたい人...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "ローカルCoding Agentの検証記録",
+      "url": "https://zenn.dev/gyu07/articles/d6afd6715c7764",
+      "site": "Zenn(LLM)",
+      "published": "2026-09-07T14:21:34Z",
+      "description": "!\n本記事は、dev.toに公開した\"Why My Local Coding Agent Could Act but Couldn't Finish\"を日本語向けに一部再構成したものです。\n\n\nNote\nこの記事は2026年4月に検証した内容をもとにしています。ローカルLLMやCoding Agent周辺は変化が速いため、モデルや実行環境の性能・挙動については、現在と異なる部分があるかもしれません...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
       "title": "自律型AIエージェントの安全なコード実行環境・サンドボックス徹底比較【2026年版】",
       "url": "https://zenn.dev/agdexai/articles/ai-agent-sandboxing-code-execution-2026",
       "site": "Zenn(LLM)",
@@ -39,26 +89,6 @@
       "site": "Zenn(LLM)",
       "published": "2026-09-07T13:59:39Z",
       "description": "M1 Max 64GB でローカルLLMのエージェントを組んでいます。ランタイムを乗り換えるか判断するために、同じモデル・同じ19kトークンの文脈で decode 速度を測りました。\n\n\nRapid-MLX 0.13.4: 66.7 tok/s\n\nOllama 0.33.0: 18.6 tok/s\n\n3.6倍。しかも Rapid-MLX は長文脈でもほとんど劣化しません（短文脈70.3 → 19k...",
-      "category": "AI・技術",
-      "rss_category": "",
-      "image_url": ""
-    },
-    {
-      "title": "アイアンマンのジャービスを作ろうとしたら、賢さの問題じゃなかった",
-      "url": "https://zenn.dev/motimotinotch/articles/548af60e4059c4",
-      "site": "Zenn(LLM)",
-      "published": "2026-09-07T11:42:59Z",
-      "description": "アイアンマンのジャービスをご存知だろうか。\nトニー・スタークの屋敷とスーツに住んでいる、声だけのAIだ。計算をやり、状況を報告し、スーツの製造を回し、ときどき皮肉を言う。\n先に断っておくと、この記事は夏休みの自由研究くらいの温度感で読んでほしい。厳密な検証でも実装ガイドでもない。映画を1本見直して、手元の環境と突き合わせて、足りないものを数えただけの話だ。\nあと、ここで見ているのは1作目（2008...",
-      "category": "AI・技術",
-      "rss_category": "",
-      "image_url": ""
-    },
-    {
-      "title": "# くらべたら爆速 - Appleの新「Core AI」を実機ベンチ",
-      "url": "https://zenn.dev/mlboydaisuke/articles/f19d0e81ffbe5ce5672e",
-      "site": "Zenn(LLM)",
-      "published": "2026-09-07T10:25:05Z",
-      "description": "Appleの新フレームワークでオンデバイスLLMをMLXと比較した\n実際に比較してみるのって大切ですね。\nどうせ遅いと思ってた。\n使いやすいようにぬるい感じになってるんでしょって。\nゴリゴリ最適化されてるMLXとかの方が速いんでしょって。\n結果で度肝を抜かれた。\n\nクソ速えやん!!\n🐥\nWWDC 2026 で発表された Core AI（Core ML の後継）で LLM を iPhone 17 P...",
       "category": "AI・技術",
       "rss_category": "",
       "image_url": ""
@@ -94,6 +124,16 @@
       "image_url": ""
     },
     {
+      "title": "2026年9月版：主要LLM 料金・スペック・共通ベンチマーク比較",
+      "url": "https://zenn.dev/okikusan/articles/14f30fcd3202e7",
+      "site": "Zenn(LLM)",
+      "published": "2026-09-07T05:40:45Z",
+      "description": "この記事について\n本記事はClaudeに調査を依頼してまとめた内容です。自分用の備忘録として作成しており、書いてある内容は一次情報を都度参照するようにはしていますが、鵜呑みにせず参考程度にご覧ください。\nClaude・GPT・Gemini・Grok・DeepSeekなど主要LLMについて、2026年9月時点の料金・コンテキストサイズ・性能を横並びで整理します。\n性能比較で厄介なのが、各社が公表する...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
       "title": "【2026年版】生成AIを学ぶための51冊 ― LLM・RAG・AIエージェント・LLMOps・Physical AIまで",
       "url": "https://zenn.dev/aokikenichi/articles/0e8c7dd1b66bc0",
       "site": "Zenn(LLM)",
@@ -109,16 +149,6 @@
       "site": "Zenn(LLM)",
       "published": "2026-09-07T02:28:08Z",
       "description": "自然言語仕様をコンパイルする──Compile by Trainingで再利用可能な神経関数を生成する\n\n TL;DR\n「メールの件名を見て即時対応か待機かを判定する関数」──こうした反復的テキスト関数は、ルールで書くには曖昧すぎ、毎回大規模LLMを呼ぶには重すぎる。本論文はCompile by Trainingを提案する：自然言語仕様を与えると、コンパイル時に教師モデルが例を合成し、その例でコン...",
-      "category": "AI・技術",
-      "rss_category": "",
-      "image_url": ""
-    },
-    {
-      "title": "Pythonで作るAIエージェントのTools入門",
-      "url": "https://zenn.dev/monoocean/books/4f9b47768efe0b",
-      "site": "Zenn(LLM)",
-      "published": "2026-09-07T01:42:56Z",
-      "description": "AIエージェントの「Tools」は、外部の情報や機能を使って処理するための仕組みです。本書では、Windows 11 + PowerShell + Python + OpenAI APIを使い、ニュースRSSの取得、Python関数のTool化、Tool schema、ToolRegistry、Tool Call、Tool Resultまでを短いコードで段階的に実装します。最後は、LLMが必要なT...",
       "category": "AI・技術",
       "rss_category": "",
       "image_url": ""
