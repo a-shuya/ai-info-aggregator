@@ -1,8 +1,78 @@
 {
   "site": "Zenn(Python)",
-  "last_updated": "2026-09-09T16:15:01.681756",
-  "total_articles": 6310,
+  "last_updated": "2026-09-09T19:20:19.752751",
+  "total_articles": 6318,
   "articles": [
+    {
+      "title": "GPT-6 AstraのPrompt Cacheを実測 — 呼び出し元リージョンを変えてもcache hitを確認",
+      "url": "https://zenn.dev/kashiwabaray/articles/adf354987dcacd",
+      "site": "Zenn(Python)",
+      "published": "2026-09-09T14:49:24Z",
+      "description": "1. はじめに\n長いシステムプロンプトや業務ドキュメントを毎回のリクエストへ載せる構成では、input トークンの単価がそのまま運用コストになります。Prompt Cache は同じプレフィックスの再送分を割引単価に振り替える仕組みですが、実際に割引が乗るかどうかは「キャッシュエントリが同じキーとして扱われるか」で決まります。キーが分かれれば、割引ではなく書き込み単価の上乗せだけが残ります。\nAW...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "TransactWriteItemsでUpdateItem権限不足にハマった話",
+      "url": "https://zenn.dev/satoru_o/articles/28782e77982c0e",
+      "site": "Zenn(Python)",
+      "published": "2026-09-09T14:05:03Z",
+      "description": "この記事は誰向けか\nLambda(Python)からDynamoDBのTransactWriteItemsを呼び出すシステムをTerraformで構築している人が、Update操作を含むトランザクションでAccessDeniedExceptionに遭遇した際の原因の切り分け方と、IAMポリシー側の対策を得られる記事です。\nLambda(Python) + API Gateway + DynamoD...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "PythonSCAD探求記：「歯車をつくる」",
+      "url": "https://zenn.dev/yokamak/articles/74e024e2ef5bf3",
+      "site": "Zenn(Python)",
+      "published": "2026-09-09T13:52:28Z",
+      "description": "PythonSCADコミュニティ・開発者に感謝申し上げます。ありがとうございます。\nhttps://www.pythonscad.org/\nhttps://zenn.dev/yokamak/articles/29e80e765a86c2\nhttps://qiita.com/yokamak/items/5b3d7ef25ccad05d55a3\nhttps://qiita.com/yokamak/it...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "iPhoneのObsidian同期を10倍速くした",
+      "url": "https://zenn.dev/minato8080/articles/056cc708fce0e6",
+      "site": "Zenn(Python)",
+      "published": "2026-09-09T13:34:40Z",
+      "description": "背景/概要\nObsidianをiPhone・Windows・Androidで使っています。複数端末で使うときに課題になるのが同期。特にiPhone問題。\n前まではRemotely Save（Cloudflare R2経由）で同期していました。とてもいいプラグインではあるのですが、iPhoneでは同期に毎回1分以上かかったり、処理が最後まで完了しなかったりして、普段使いに支障がありました。\n経緯は後...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "FXは強いトレンドだけ狙えば勝てる？移動平均線の傾きを検証",
+      "url": "https://zenn.dev/hiro_algo/articles/fx-ma-slope-wfo-rejection",
+      "site": "Zenn(Python)",
+      "published": "2026-09-09T13:01:43Z",
+      "description": "「上昇が弱いときは買わず、強いトレンドだけを狙えば成績が良くなるのでは」と考え、USDJPYの15分足戦略で移動平均線の傾きを検証しました。\n最初の集計では、傾きが弱い下位20%が-263.7 pips・PF 0.81、強い上位20%が+831.0 pips・PF 1.69でした。固定条件を追加したバックテストも、DukascopyとMT5の両方で改善しました。\nしかし、過去期間で毎月条件を選び直...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "ジェネレータ式とjoinを組み合わせた文字除去処理",
+      "url": "https://zenn.dev/sousquared/articles/filter-unicode-other-numbers",
+      "site": "Zenn(Python)",
+      "published": "2026-09-09T12:37:08Z",
+      "description": "はじめに\n以下のコードは、文字列からUnicodeカテゴリがNoの文字を除去し、残った文字を1つの文字列に戻す処理。\nreturn \"\".join(\n    ch for ch in text\n    if unicodedata.category(ch) != \"No\"\n)\nこの処理を分解する。\n\n 処理の流れ\nこのコードは、次の3つの処理を組み合わせている。\n\n文字列から1文字ずつ取り出す\nU...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "同じデータで「88%劣化」とも「117%改善」とも書けてしまった話",
+      "url": "https://zenn.dev/naporit/articles/backtest-split-changes-conclusion",
+      "site": "Zenn(Python)",
+      "published": "2026-09-09T12:25:40Z",
+      "description": "ひとつの過去データと、ひとつの手続きから、正反対の結論を5通り作れてしまいました。どちらを「訓練期間」と呼ぶか、どの年を評価に含めるか。それだけで「劣化した」とも「改善した」とも書けます。\nこの記事は、自分がその5通りを全部出してしまった記録です。題材は米雇用統計の発表前後の値動きですが、話は相場に限りません。訓練と検証を1回だけ切って結論を出す場面すべてに当てはまります。\n!\n過去データの統計分...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
     {
       "title": "日本語には語の区切りが無い。切り出すのをやめて、辞書に当てにいく",
       "url": "https://zenn.dev/shinsei99/articles/japanese-no-word-boundary",
@@ -19,6 +89,16 @@
       "site": "Zenn(Python)",
       "published": "2026-09-09T07:47:09Z",
       "description": "はじめに\n\n「__init__.pyは無くても良い」と本に書いてあるのですが、「無くても良いってどういう意味？」と気になったので調べてみました。\nこの記事では、__init__.pyの歴史的な変化・「名前空間パッケージ」についてまとめています。\n間違い等あれば、指摘いただけると助かります。\n\n\n 結論\n__init__.pyについて、この記事の要点は以下の4点です。\n\nPython 3.2以前では...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "プログラム冒頭コメントの基本",
+      "url": "https://zenn.dev/qwerewq/articles/4a8ab6ccd06b14",
+      "site": "Zenn(Python)",
+      "published": "2026-09-09T06:19:39Z",
+      "description": "プログラム冒頭コメントの基本\nプログラムの先頭には、後から見ても内容が分かる最低限の情報を残しておくと便利です。\nCode        : プログラム名\nDate        : 作成・更新日\nVersion     : バージョン\nStatus      : 動作確認済み / 検証中\nPurpose     : 目的\nEnvironment : 動作確認した環境\nLanguage    : ...",
       "category": "開発",
       "rss_category": "",
       "image_url": ""
