@@ -1,8 +1,148 @@
 {
   "site": "Zenn(LLM)",
-  "last_updated": "2026-09-09T06:40:47.707893",
-  "total_articles": 5957,
+  "last_updated": "2026-09-09T11:54:32.699893",
+  "total_articles": 5971,
   "articles": [
+    {
+      "title": "外部依存ゼロの日本語意味理解エンジン KotobaCore を 1.0 にした — 「誰が何にどう感じたか」まで構造化する",
+      "url": "https://zenn.dev/kiyobo/articles/697db22401f147",
+      "site": "Zenn(LLM)",
+      "published": "2026-09-09T07:22:09Z",
+      "description": "日本語テキストを 分割・固有表現・宛先付きの評価と感情・意図・述語項構造・RAG 用クエリ に一括変換するエンジン KotobaCore が 1.0.0 になりました（Apache-2.0）。\n前回の記事（v0.2）では「感情・意図・RAG キーワードを 1 回の analyze() で JSON にする」ところまででした。1.0 では出力を Semantic IR（中間表現）として凍結 し、文単...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "Mac Studio M3 Ultra 96GBでローカルLLMを検証してみた",
+      "url": "https://zenn.dev/sikkim/articles/9255daea70afe6",
+      "site": "Zenn(LLM)",
+      "published": "2026-09-09T06:06:52Z",
+      "description": "はじめに\n最近、会社にMac Studioがやってきました。昨今の半導体不足の影響で注文から3か月ほど待たされ、その間に新モデルが発表されたりもしましたが、とにかく無事に手元に届きました。このMac Studioは2台目で、1台目はFileMaker Serverとして働いています。2台目はローカルLLMを載せて、顧客情報などを社外に出さずに処理することが期待されています。\n\nMac Studio...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "Three.js × Claude Visionで「商品が売り場でどれだけ目立つか」をシミュレーションしてみた",
+      "url": "https://zenn.dev/minedia/articles/d80db62dca1546",
+      "site": "Zenn(LLM)",
+      "published": "2026-09-09T04:44:27Z",
+      "description": "3秒まとめ 📝\n\nThree.jsで小売店の売り場を3D再現し、買い物客視点のウォークスルー画像を Claude(Vision)に採点させて、商品の「目立ちやすさ」を数値化してみた\nパッケージの配色を11パターン差し替えて同一条件で比較したところ、現行の濃紺は11色中9位。1位のハイビズオレンジでは視認性スコアが約1.6倍(30.4 → 48.9)になった\n売り場・商品・ラベルをすべてコードで生成...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "「求人票を1件ずつチェックする」案件探しをClaudeで自動化するツールを作った",
+      "url": "https://zenn.dev/fd2025/articles/a6346763468da8",
+      "site": "Zenn(LLM)",
+      "published": "2026-09-09T04:41:12Z",
+      "description": "はじめに\nフリーランス/業務委託エンジニアの案件探しは、求人票を1件開くたびに\n\n必須スキルを1行ずつ目で照合する\n歓迎条件との差分を確認する\nリモート可否・稼働日数・単価が自分の希望と合っているか確認する\n応募するかどうかを判断し、応募するなら応募文を書く\n\nという単調な作業の繰り返しになりがちです。\nこの地道な照合作業を何十件も繰り返して当落線上の案件に時間を費やしたくないと考え、スキルシート...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "日本語RAGのテストケース設計 — 「文書にない」を正解にする",
+      "url": "https://zenn.dev/jinno_ai/articles/japanese-rag-test-case-design",
+      "site": "Zenn(LLM)",
+      "published": "2026-09-09T03:29:46Z",
+      "description": "社内文書にAIを接続するRAG構成の導入判断では、デモを見せてもらった時の受けが良い製品と、業務に投入しても耐える製品が混ざっている。両者の差は回答生成のモデルだけではなく、検索・根拠・権限・日本語処理のそれぞれで失敗するケースをどれだけ潰しているかによる。そしてそこを測るかどうかは、テストケースの設計が決める。\n本稿は、日本語のRAG評価パックと採点エンジンを運用している筆者が、テストケースの設...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "多様な視点が暗記に勝つ──補助ビューがLLMの事前学習を加速する仕組み",
+      "url": "https://zenn.dev/lixian/articles/auxiliary-views-knowledge-acquisition",
+      "site": "Zenn(LLM)",
+      "published": "2026-09-09T02:18:00Z",
+      "description": "TL;DR\nLLMは事前学習中にどうやって知識を身につけるのか？本稿は「補助ビュー（auxiliary views）」——同一知識の別表現（教科書・ブログ・Q&amp;Aなど）——に着目し、制御実験でその効果を分離した。主な知見は5つ：\n\n\nトークン予算を固定しても、反復より補助ビューに割いた方が学習が改善（事実回想も！）\n\n補助ビューの有効性は教師モデルの強さに依存しない（GPT-5でもGemm...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "LLMの構造的限界から考える、AIエージェントの設計原則",
+      "url": "https://zenn.dev/knowledge_graph/articles/llm-what-is-not-guaranteed",
+      "site": "Zenn(LLM)",
+      "published": "2026-09-09T01:03:49Z",
+      "description": "「LLM は次のトークンを予測しているだけ」。\nAPI の課金単位にもトークンという言葉が使われます。ここでいうトークンは、人間が読む「1 文字」や「1 単語」そのものではありません。入力は Tokenizer により、よく出る文字列のかたまりに分割されます。モデルが見ているのはその並びで、次に続きそうなかたまりを確率で選んでいます。\n次トークン予測という計算系には、何が明示的に存在せず、それをシ...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "2026年4月以降、Einoはどこまでエージェント基盤になったのか",
+      "url": "https://zenn.dev/nonejp/articles/decd95a37ab8c7",
+      "site": "Zenn(LLM)",
+      "published": "2026-09-09T01:03:28Z",
+      "description": "はじめに\n「Einoの更新が多いが、結局どれが重要なのか」を知りたい人向けに、2026年4月以降の主な更新を整理します。[1][2][3]\n結論を先に述べると、今回の変化は個別の便利APIの追加にとどまりません。Einoは、長いツール履歴を制御する仕組み、プロバイダー固有のAgentイベントを構造のまま扱う仕組み、中断・再開を前提に状態を持つ仕組みを順に加えています。[1:1][2:1][3:1]...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "検索ヒット率をLLMで底上げしつつコストを抑える『安価モデル事前スクリーニング』設計",
+      "url": "https://zenn.dev/stock_inc/articles/cheap-model-prescreening-search",
+      "site": "Zenn(LLM)",
+      "published": "2026-09-09T01:00:08Z",
+      "description": "「LLMを噛ませれば検索精度は上がる。でも全リクエストに高価なモデルを通したらコストが持たない」——検索やサジェストにLLMを組み込むとき、多くのチームがぶつかるトレードオフです。この記事では、安価モデルによる事前スクリーニングでこのジレンマを解く設計を紹介します。\n\n 全部を高精度モデルに通すと、コストが合わない\nきっかけは、検索で「候補は出るのにヒットしない」問題でした。素朴な解決策は「候補の...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "LLMのトークン効率化で気をつけたいことまとめ",
+      "url": "https://zenn.dev/ml_bear/articles/e5cc1047cba176",
+      "site": "Zenn(LLM)",
+      "published": "2026-09-09T00:31:26Z",
+      "description": "!\nこの記事は2026年9月時点の情報で書いています。状況はすぐに変化するので適宜調べ直していただけると幸いです。Claude Code や Codex をサブスクで使ってる人は、「コスト」を「利用枠 (リミット) の消費」として読んでいただけるとわかりやすいかと思います\n\n\n これはなに？\n端的に言うとこの友人に送ったメモを清書したものです。基礎的な内容が多いですが、トークン効率化で気をつけたい...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "【図解】TPかPPか問題：社内ローカルLLMを複数GPUに載せる判断軸",
+      "url": "https://zenn.dev/koounosuke/articles/2beff5b0fba241",
+      "site": "Zenn(LLM)",
+      "published": "2026-09-09T00:21:12Z",
+      "description": "はじめに：27Bモデルが48GB GPUに載らない\n社内GPUでLLMを動かそうとすると、かなり早い段階で次の問題にぶつかります。\n\nモデルが1枚のGPUに載らない。では、Tensor ParallelとPipeline Parallelのどちらで分けるべきか？\n\nこの章では、Hiromu Nakamura氏の発表「Driving AI Adoption Using In-House GPUs t...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "勝手に最新へ移るLLMエイリアスを固定IDで縛る判断基準",
+      "url": "https://zenn.dev/dev_ctun/articles/model-alias-snapshot-pinning-2",
+      "site": "Zenn(LLM)",
+      "published": "2026-09-08T23:00:16Z",
+      "description": "LLMのモデル指定を最新追従のエイリアスに委ねるか、特定版のスナップショット固定IDで縛るべきか。私は作業の途中でこの選択に引っかかった。\n自作のターミナルツールで推論モデルを更新していた私は、新顔の旗艦モデルを追加して問題なく推論が返ってくることを確かめていた。だが設定ファイルを見直すと、指定した文字列は特定の版を固定したIDではなく、ただのエイリアスだった。このまま放置すると、次のモデル更新が...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "AIエージェントにセキュリティ要件をどこまで任せられるか — ASVSで仕分けたら3種類しかなかった",
+      "url": "https://zenn.dev/xtm_blog/articles/asvs-agent-security-decision-triage",
+      "site": "Zenn(LLM)",
+      "published": "2026-09-08T23:00:05Z",
+      "description": "はじめに\nこんにちは、Foundation Dept.の川田です。\n私たちのチームでは、要求仕様書を渡すと、設計、実装、テスト、Pull Request作成までを自律的に進める仕組みを内製しています。この仕組みについては、こちらの記事でも書いています。\n\nYAML 1枚で開発エージェントチームを動かす\nAIエージェント基盤のアーキテクチャを10層で整理する：OSS/SDK比較のための地図\nAIエー...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "2026-08-24 今日の技術トレンド",
+      "url": "https://zenn.dev/bambampurin/articles/2026-08-24-tech-daily",
+      "site": "Zenn(LLM)",
+      "published": "2026-09-08T22:09:49Z",
+      "description": "!\nAI分野では単一LLMから「自己進化型マルチAIエージェント」や「具身知能」への移行が進む一方、ガートナーの指摘に見られるようLLM単体依存の限界と実装戦略への注視が高まっています。OpenAIは最新モデル「GPT-5.6 Sol」の20%以上値下げを発表したほか、Astral買収を通じてPython開発環境（uv/Ruff等）の主導権確保を進めています。Web開発分野ではReact Comp...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
     {
       "title": "ローカルLLMに哲学者を2人召喚して、AIについて延々と議論させてみた",
       "url": "https://zenn.dev/nero931/articles/4b5dd7f1993560",

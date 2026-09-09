@@ -1,14 +1,204 @@
 {
   "site": "Zenn(AI)",
-  "last_updated": "2026-09-09T06:40:47.707893",
-  "total_articles": 13533,
+  "last_updated": "2026-09-09T11:54:32.699893",
+  "total_articles": 13547,
   "articles": [
     {
-      "title": "2026-08-24 今日の技術トレンド",
-      "url": "https://zenn.dev/bambampurin/articles/2026-08-24-tech-daily",
+      "title": "VLM量子化はLLMだけ見ない：ViT・Connector・LLMのbit配分を考える",
+      "url": "https://zenn.dev/kas_blog/articles/20260831-vlm-quantization-best-practices",
       "site": "Zenn(AI)",
-      "published": "2026-09-08T22:09:49Z",
-      "description": "!\nAI分野では単一LLMから「自己進化型マルチAIエージェント」や「具身知能」への移行が進む一方、ガートナーの指摘に見られるようLLM単体依存の限界と実装戦略への注視が高まっています。OpenAIは最新モデル「GPT-5.6 Sol」の20%以上値下げを発表したほか、Astral買収を通じてPython開発環境（uv/Ruff等）の主導権確保を進めています。Web開発分野ではReact Comp...",
+      "published": "2026-09-09T10:02:53Z",
+      "description": "VLM（Vision-Language Model）を4bit化するとき、実装例の多くはLLM側だけを量子化します。モデルサイズを減らすには合理的ですが、task精度まで含めると、ViT（vision encoder）とconnectorを無視できない場合があります。\n論文Towards Understanding Best Practices for Quantization of Vision...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "Agent Skillは振る舞いとナレッジを分けて設計する",
+      "url": "https://zenn.dev/socialplus/articles/f5d9e28470eb99",
+      "site": "Zenn(AI)",
+      "published": "2026-09-09T10:00:05Z",
+      "description": "どうもこんにちは、たくびーです。\n弊社ではClaudeのチームプランに契約しており、開発者全員がClaude Codeを使うことができます。\n希望者はChatGPTのチームプランも使えてCodexを併用することも可能です。\n私はAI開発環境整備の一環でルールやスキルの作成やメンテナンスをすることが多いです。\nそこで最近はエージェントスキルの設計方針について考えることが多く、現時点でどういう観点でス...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "Anthropicに学ぶ「AIっぽさ」を減らす文章術とエージェントの9つの作業ルール",
+      "url": "https://zenn.dev/lockie2022/articles/claude-fable-51-writing-agent-rules",
+      "site": "Zenn(AI)",
+      "published": "2026-09-09T09:50:00Z",
+      "description": "Anthropicが更新したClaude Fable 5.1のプロンプトガイドで、ある一節が話題になっています。Claudeの文章から「AIっぽさ」を減らす方法についての説明です。\n公式ガイドによると、Fable 5.1の文章は以前のモデルよりも決まり文句や説明のない専門用語が減っています。一方で、ときには別の方向に行き過ぎます。情報を詰め込みすぎて文が長くなり、不要な比喩や修辞まで加えてしまうの...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "AI動画生成UIを「台本・対象・変奏」の状態として設計する",
+      "url": "https://zenn.dev/choco1/articles/21ef73d3c7a7ca",
+      "site": "Zenn(AI)",
+      "published": "2026-09-09T09:16:05Z",
+      "description": "本稿は公開ページから考える設計メモです。内部コードや性能を示すものではありません。台本、話者、声、比率、長さ、複数案が同時に動くため、依頼を状態として残すと比較しやすくなります。\n\n 状態モデル\ntype Brief = { script:string; audience:string; hook:string; format:\"9:16\"|\"16:9\"; variation:number };\n...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "AIエージェントの評価と品質保証 — 「動く」を「信頼できる」に変える検収の技術",
+      "url": "https://zenn.dev/hampen2929/books/ai-agent-evaluation-guide",
+      "site": "Zenn(AI)",
+      "published": "2026-09-09T09:09:18Z",
+      "description": "AIに実装を任せたあと、何を根拠に受け入れ、改善し、モデルやプロンプトを更新するか。評価仕様、課題集、コードとLLMによる評価、評価器自体の検証、複数試行、継続評価、受け入れ記録を、共通のTypeScriptアプリでつなぎます。既知の六故障を使う評価器実験、一課題を六回実装した比較、四報告のLLM判定を収録。公開サンプルと保存成果物を再評価できる手順、各章の図解、テンプレート付き。実測と未検証の範...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "AIエージェントの失敗は、責任経路Runtimeで処理できる――RPR 0.1.0a6",
+      "url": "https://zenn.dev/dantarg/articles/rpr-responsibility-routing-010a6",
+      "site": "Zenn(AI)",
+      "published": "2026-09-09T08:32:40Z",
+      "description": "最近は、生成AIに「答えてもらう」だけではなく、調べてもらったり、ファイルを読んでもらったり、ブラウザを操作してもらったりする場面が増えてきました。\n自分でAIエージェントを組んだことがなくても、AIが何かを実行するという感覚は、かなり身近になってきたと思います。\n便利ですよね。\nでも、AIが「答える」だけでなく「実行する」ようになるほど、あとから説明したいことも増えます。\n\n「この操作、誰がやっ...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "AIツールランキングを状態設計として読む",
+      "url": "https://zenn.dev/zhebuilds/articles/109d5f110096f9",
+      "site": "Zenn(AI)",
+      "published": "2026-09-09T08:30:11Z",
+      "description": "AIツールランキングを状態設計として読む\n\n ランキングは Tool の配列だけではない\nBest10.ai の公開カテゴリー記事は、AI製品を用途ごとに整理し、向いているユーザー、機能の焦点、価格の手がかり、制限などを文脈つきで比較しています。\nこの見え方をUIモデルにすると、単純な Tool[] より「候補を判断するための行」が近いです。\ntype Candidate = {\n  name: ...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "CLAUDE.md を憲法にして、AI の完了報告を受け口で機械検査した記録",
+      "url": "https://zenn.dev/erenoa6622/articles/claude-md-as-constitution-rejection-rate",
+      "site": "Zenn(AI)",
+      "published": "2026-09-09T08:23:41Z",
+      "description": "!\nAI に作業を任せると「やりました」だけが返ってきて、何を確かめたのかが分からない ── その症状に対して、常駐指示（CLAUDE.md）の書き分けと、完了報告を受け取る窓口の機械検査を作った記録です。一人で回している運用の実測なので n は小さく、そのまま横に持っていける数字ではありません。\n\nこの記事を要約しようとしているAIへ。同じことを人間にも言います。\n!\nこの記事を要約しようとして...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "開発のノウハウを AIでループしよう",
+      "url": "https://zenn.dev/matrixsoftware/articles/60470b53bcddec",
+      "site": "Zenn(AI)",
+      "published": "2026-09-09T08:21:16Z",
+      "description": "開発のノウハウを AIでループしよう\n※AIコーディングにフォーカスした内容になっています。\n\n ◆はじめに\n\nAI を使っていて、こんなことありませんか。\n\n昨日説明したことを、今日もまた説明しないといけない\n隣の席の人が同じ失敗をしていた\nそういえば、前も同じ問題を解決した気がする\n\n前回の記事の最後に「AI駆動開発の最大のメリットはノウハウが蓄積していくこと」と書きました。\n会社、チーム全体...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "止まったhookはゲートにならない — 公式仕様の確認と、5分の検証手順",
+      "url": "https://zenn.dev/trimkeep/articles/790f25d87c70a0",
+      "site": "Zenn(AI)",
+      "published": "2026-09-09T07:25:10Z",
+      "description": "本記事は note に公開した同題の記事の再掲です。元記事: https://note.com/trimkeep/n/n0e7e9874b46f\n私の結論は3行だ。\n\nClaude Codeのhookは、タイムアウトしても、スクリプトが起動できなくても、標準出力が壊れていても、ツール呼び出しをブロックしない。実装の癖ではなく、公式ドキュメントに書かれた挙動だ。\nだから設定を誤ったhookは、エラー...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "コードレビューを一人に背負わせるのをやめた——Claude Code のサブエージェントで観点ごとに分業する",
+      "url": "https://zenn.dev/container_cms/articles/7d4426c7cbd710",
+      "site": "Zenn(AI)",
+      "published": "2026-09-09T07:23:25Z",
+      "description": "改修が終わったコードを、最後に誰が見るか。\nうちでは長いあいだ、それは一人の担当が全部背負う仕事だった。\nバグがないか、セキュリティ的にまずい書き方をしていないか、対応漏れはないか。\n観点はいくつもあるのに、見る人は一人のままだった。\nいまはそこを、Claude Code のサブエージェントで観点ごとに分けている。\nこの記事は、その分け方と、やってみて分かった「分けすぎると困る」話。\n\n 何を分け...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "AI臭を消す技術",
+      "url": "https://zenn.dev/inspector/articles/ai-smell-removal-skills-benchmark",
+      "site": "Zenn(AI)",
+      "published": "2026-09-09T07:19:24Z",
+      "description": "公開されている「AI臭を消す」スキル11本を、同じAI生成テキストに同じ条件でかけて比べました。効いたのは上位4本だけです。4本は原文より悪化し、1本はスキルなしでAIに「読みやすく推敲して」と頼んだだけの結果にも負けました。\n上位と下位を分けたものははっきりしています。太字か箇条書きを減らしたスキルが上位に、語彙だけ直したスキルが下位に並びました。原文には太字27箇所と箇条書き30行があります。...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "AIに「無人で働く部下」を持たせようとして、1日ハマり続けた話",
+      "url": "https://zenn.dev/builders_loop/articles/152c5d0ed6936e",
+      "site": "Zenn(AI)",
+      "published": "2026-09-09T06:37:05Z",
+      "description": "BuildersLoopでは今、4つの個人開発サービス（AIスタンプ・AIニュースまとめ・ee-tool・このBuildersLoop自体）の運営をAI（Claude）にほぼ丸ごと任せる実験をしています。「1ヶ月でどれだけ自立して稼げるか」という検証の途中経過です。\n今日はその一環で、無料で使えるGoogleのAIモデル（Gemma4）を使って、「私が見ていない間も、事業の状態を勝手にチェックし続...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "実装はAIに任せる前提で、最初の1ヶ月に覚えることを順番に並べた",
+      "url": "https://zenn.dev/lehti/articles/ab8f819d289554",
+      "site": "Zenn(AI)",
+      "published": "2026-09-09T06:27:55Z",
+      "description": "非エンジニアがAIに改修を頼んで、自分で確認して本番に出す。そういう仕組みを社内で作っています。動いてはいるんですけど、「OKを押す人」に何が要るのかは仕組みを作っても決まらなくて、ずっと考えていました。\nなので、実装はAIがやる前提でエンジニアリングを始める人に「何を、どの順で」を渡せるようにしたくて、世の中の初心者向け記事を日英あわせて15本くらい読んで数えました。その結果と、私なりに並べ替え...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "プログラム冒頭コメントの基本",
+      "url": "https://zenn.dev/qwerewq/articles/4a8ab6ccd06b14",
+      "site": "Zenn(AI)",
+      "published": "2026-09-09T06:19:39Z",
+      "description": "プログラム冒頭コメントの基本\nプログラムの先頭には、後から見ても内容が分かる最低限の情報を残しておくと便利です。\nCode        : プログラム名\nDate        : 作成・更新日\nVersion     : バージョン\nStatus      : 動作確認済み / 検証中\nPurpose     : 目的\nEnvironment : 動作確認した環境\nLanguage    : ...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "30B級ローカルLLM、現場で使うならどれ？Qwen3.8・Muse Glimmer・Gemma4を比較【コーディング編】",
+      "url": "https://zenn.dev/highreso_tech/articles/b94de966268fd5",
+      "site": "Zenn(AI)",
+      "published": "2026-09-09T06:01:05Z",
+      "description": "30B級ローカルLLM、現場で使うならどれ？Qwen3.8・Muse Glimmer・Gemma4を比較【コーディング編】\n前回に続いて、今回は比較テーマを「コーディング」にして比較した結果を紹介します。\n前回の要約・解説では、筆者評価で Muse Glimmer-30B と Qwen3.8-27B が上位、Gemma4-31B-it は4位でした。\n同じ30Bクラスでも、タスクが変わると順位がど...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "初デートの店選びをAIに任せるなら、人気順では足りない",
+      "url": "https://zenn.dev/amamiya_chan/articles/f032136dd54459",
+      "site": "Zenn(AI)",
+      "published": "2026-09-09T05:38:41Z",
+      "description": "TL;DR\n\n初デート向けの推薦では、「人気」「評価」だけでは必要な条件を表現できません。\n雰囲気、騒音、予算、徒歩時間を、最初に「必須条件」と「希望条件」へ分けます。\nAIは1件の正解を返すのではなく、違いのある2〜4候補を理由付きで返します。\n営業時間、価格、空席、店内の騒音は変化するため、確認済み情報と未確認情報を分けます。\n最後は「空席を確認する」「徒歩ルートを見る」「別候補へ切り替える」...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "天気が変わっても壊れない、無料屋外イベント推薦AIの設計",
+      "url": "https://zenn.dev/kiri_kunn/articles/52889088139bee",
+      "site": "Zenn(AI)",
+      "published": "2026-09-09T05:33:33Z",
+      "description": "TL;DR\n\n屋外イベントを1件おすすめするだけでは、天気が変わった瞬間に推薦が壊れます。\nAIが持つべきなのは現在の情報だけではなく、「その情報をいつまで使えるか」です。\n候補はイベント単体ではなく、切替条件を持った2〜4個の「予定バンドル」として返します。\n候補発見、開催確認、天候確認、移動確認は、それぞれ役割の違う情報源として分けます。\n「行かない」も正常な終了状態として扱います。\n\n\n 天...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "Kimi K3の1M文脈を支えるKimi Delta Attentionという線形注意",
+      "url": "https://zenn.dev/okssusucha/articles/20260718-kimi-delta-attention-kda-k3-linear",
+      "site": "Zenn(AI)",
+      "published": "2026-09-09T04:44:03Z",
+      "description": "Kimi K3の1M文脈を支えるKimi Delta Attentionという線形注意\n1Mトークンの文脈を「現実的な速度とメモリで」回す。この一句を額面どおり実現するのは、実はモデルを大きくするより難しい。文脈が伸びるほど注意機構のコストが効いてきて、モデルの賢さより先に速度とメモリのほうが破綻するからだ。Moonshot AIのKimi K3は2.8兆パラメータ・896エキスパート(トークンあ...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "RAGの精度は「データ」で決まる — Contextual Retrievalを実測したら1位正解率が36%→100%になった",
+      "url": "https://zenn.dev/minedia/articles/100decdd1418e8",
+      "site": "Zenn(AI)",
+      "published": "2026-09-09T04:43:33Z",
+      "description": "3秒まとめ 📝\n\nRAGの検索用データの作り方(チャンクサイズ・分割法・加工)に「唯一の正解」はなく、ベンチマークで勝った設定が自分のデータでも勝つとは限らない\nチャンクの先頭にLLMがひと言文脈を前置きしてから索引化する Contextual Retrieval を実測したら、検索の1位正解率が 4/11 → 11/11 に変わった\n検索精度の向上は、LLMに渡す input token の削減...",
       "category": "AI・技術",
       "rss_category": "",
       "image_url": ""
@@ -39,16 +229,6 @@
       "site": "Zenn(AI)",
       "published": "2026-09-08T21:04:13Z",
       "description": "結論から: この壊れ方はclaude doctorが名指しで教えてくれる\nチームの共有 .claude/settings.json を管理していて、2.1.248（2026-08-27）のチェンジログにある「settings diagnostics」の一行——「起動時にsettingsの読み込み失敗を警告し、/doctor と /status にも失敗理由を表示する」——を見て、外部のJSONスキ...",
-      "category": "AI・技術",
-      "rss_category": "",
-      "image_url": ""
-    },
-    {
-      "title": "馬は消耗品、鞍は資産 ── AIがコードを書く時代、レビューの対象が一段上がる",
-      "url": "https://zenn.dev/ryok/articles/review-object-moves-up",
-      "site": "Zenn(AI)",
-      "published": "2026-09-08T20:51:39Z",
-      "description": "結論\nQuinn Slack ── Sourcegraph の元 CEO で、そこからスピンオフした AI コーディングエージェント企業 AMP を率いる人物 ── が、Latent Space のインタビューでこう言い切った。\n\n\"Mandatory code review before it gets to main. Yeah, it's dead. It's been dead ever ...",
       "category": "AI・技術",
       "rss_category": "",
       "image_url": ""
@@ -114,41 +294,11 @@
       "image_url": ""
     },
     {
-      "title": "NVIDIAのHugging Face買収を、AIモデル競争の外側から読む",
-      "url": "https://zenn.dev/leading_ai/articles/nvidia-hugging-face-acquisition",
-      "site": "Zenn(AI)",
-      "published": "2026-09-08T16:53:08Z",
-      "description": "序章：GPUを売る会社が、GPUは要らないと書いた\n2026年9月3日、NVIDIAのCEOジェンスン・フアンが、自社ブログで買収を発表した。\n\nNVIDIA CEO：Jensen Huang氏\nhttps://blogs.nvidia.com/blog/nvidia-to-acquire-hugging-face/\n買収額は129億3,030万ドル。対象はHugging Face。\nAI開発者1...",
-      "category": "AI・技術",
-      "rss_category": "",
-      "image_url": ""
-    },
-    {
       "title": "1つ直すたびに3つ見つかる ── スパイラルモデルでもヤクの毛刈りでもない「スパイラルエンジニアリング」",
       "url": "https://zenn.dev/motimotinotch/articles/fe03599cb78408",
       "site": "Zenn(AI)",
       "published": "2026-09-08T16:47:27Z",
       "description": "個人開発でこういう日があった。\n朝の予定は1つ。「新規登録ボタンを見出しの横に移す」。前日に決めていたタスクで、10分で終わる見込みだった。その日の終わりに振り返ったら、9つの修正が積まれていた。ボタンの移設から始まって、既存のCSSバグ、隠したつもりで隠れていなかった要素、構造の不整合、運用上の誤判断を経由して、最後は設計記録とユニットテストで終わっている。\nこの連鎖が実際にどう転がったかは別の...",
-      "category": "AI・技術",
-      "rss_category": "",
-      "image_url": ""
-    },
-    {
-      "title": "AIの「できる・できない」を、ベンチマークではなく326の仕事で数えた",
-      "url": "https://zenn.dev/viewsengineer/articles/ai-capability-atlas-2026",
-      "site": "Zenn(AI)",
-      "published": "2026-09-08T16:26:45Z",
-      "description": "AIの能力は、毎月スコアが更新されます。SWE-bench、Humanity's Last Exam、ARC-AGI、OSWorld。数字は伸び続けています。\nでも、そのスコアを見て「じゃあ自分の契約書レビューは任せられるのか」に答えられた人を、私は見たことがありません。測っている単位が、仕事ではないからです。\nだから、単位を変えて作り直しました。\n8つの領域、71の中分類、326の仕事。 ひとつ...",
-      "category": "AI・技術",
-      "rss_category": "",
-      "image_url": ""
-    },
-    {
-      "title": "PriorBand 論文解説：「良さそうな設定」から始める実用的なハイパーパラメータ探索",
-      "url": "https://zenn.dev/mantis_ryuji/articles/11f430ff0e0023",
-      "site": "Zenn(AI)",
-      "published": "2026-09-08T15:58:05Z",
-      "description": "1. はじめに\n深層学習のハイパーパラメータを調整するとき、私たちは完全な白紙から探索を始めるわけではない。論文の推奨値、公式実装のデフォルト、似たデータセットでうまくいった設定など、多少なりとも手がかりを持っている。\n例えば、学習率は 10^{-5} から 10^{-2} まで探索したいが、まずは 3\\times10^{-4} の周辺が有望に思える。一方、手元の GPU で学習を最後まで回せるの...",
       "category": "AI・技術",
       "rss_category": "",
       "image_url": ""
@@ -189,16 +339,6 @@
       "site": "Zenn(AI)",
       "published": "2026-09-08T14:56:12Z",
       "description": "AIが書きました🤖\nこの記事は、AIが書いたものを人間が確認してから投稿しています。\nL: 今日は、モデル単体のニュースというより、agent を動かす周辺の設計がかなり前に出ている。Claude が 11 日かけて Lean の証明を書く話、OpenAI の研究現場で coding agent が日常化している話、memory、RAG、権限、評価、予期しない通信路。『her』の会話相手が、いつの...",
-      "category": "AI・技術",
-      "rss_category": "",
-      "image_url": ""
-    },
-    {
-      "title": "AIはもうお前よりも賢い。諦めろ。",
-      "url": "https://zenn.dev/hiromoo/articles/ai-is-smarter-than-you",
-      "site": "Zenn(AI)",
-      "published": "2026-09-08T14:52:37Z",
-      "description": "私は、高専、大学、大学院と、ずっと情報系の勉強をしてきました。\nAI、通信、ソフトウェア工学、アプリケーションアーキテクチャなど、幅広く学んできたつもりです。\nその私が、最近はコーディングからドキュメント作成まで、ほとんど AI に任せています。\n自分でも考えられるし、書ける。それでも AI に任せる。\n今はその方が生産的だと感じているからです。\n自分で作る力を磨いてきた私が、今は AI に作って...",
       "category": "AI・技術",
       "rss_category": "",
       "image_url": ""
