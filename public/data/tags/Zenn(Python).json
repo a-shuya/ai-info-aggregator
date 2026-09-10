@@ -1,8 +1,168 @@
 {
   "site": "Zenn(Python)",
-  "last_updated": "2026-09-10T11:48:43.443896",
-  "total_articles": 6325,
+  "last_updated": "2026-09-10T15:14:48.050043",
+  "total_articles": 6340,
   "articles": [
+    {
+      "title": "段階的リファクタリングで理解するクリーンアーキテクチャ ～過剰設計の罠まで～",
+      "url": "https://zenn.dev/yymm/articles/20260905-refactoring-to-clean-architecture",
+      "site": "Zenn(Python)",
+      "published": "2026-09-10T14:40:33Z",
+      "description": "初めに\n「クリーンアーキテクチャの同心円の図は見たことがあるけれど、実際のコードにどう落とし込めばいいかわからない」\nクリーンアーキテクチャを学ぼうとしたとき、このような壁にぶつかった経験はないでしょうか。\n昨今、生成AIによるコード生成が当たり前になったからこそ、「保守しやすく破綻しないアーキテクチャを設計する力」の重要性はますます高まっています。しかし、概念や用語だけを丸暗記しても、現場で適切...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "PRのCIが赤かった理由は、そのPRじゃなかった話",
+      "url": "https://zenn.dev/flipslidersand/articles/ci-red-unrelated-debt",
+      "site": "Zenn(Python)",
+      "published": "2026-09-10T14:18:31Z",
+      "description": "TL;DR\nDXクリーンアップだけの小さなPRでCIが3ジョブ赤になった。原因を追うと、PRの変更とは無関係な3つの既存不具合が同時に浮かび上がった——放置されていたAPI呼び出しの不一致、設定漏れ、そしてlintツールをバージョン固定していなかったことによるローカル/CI間の乖離。それぞれ切り離して直したら、全部でPR4本になった。\n\n\n 症状\n型アノテーションの整理とCIキャッシュ追加だけの、...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "レイクハウスとAI",
+      "url": "https://zenn.dev/piroyoung/articles/2cd06213275b9c",
+      "site": "Zenn(Python)",
+      "published": "2026-09-10T14:05:40Z",
+      "description": "ご無沙汰してます．ミズカミヒロキです．どうですか，みなさん最近なにしてますか？ループエンジニアリング？\nAIへの熱狂を象徴する曖昧な言葉が生まれては消える昨今ですが，今日は地に足のついたテーブルデータの加工にAIモデルを効率よく活用する原理とアイディアについて紹介します．\n対象読者は，データ活用に携わるデータエンジニア，アナリスト，および関連ビジネスに従事されている方です．\n\n 前書き\nさて，そろ...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "AIで設計書を書くときに、設計書専用のLinterを作った話",
+      "url": "https://zenn.dev/kana001_bit/articles/design-doc-linter",
+      "site": "Zenn(Python)",
+      "published": "2026-09-10T13:26:13Z",
+      "description": "Claude Code と Markdown で設計書を書いていたら、200行くらい離れたところで自分と矛盾していました。\nしかも一度ではなく、レビューするたびに似たようなものが出てきます。\n最初は目で直していたのですが、途中から「これ前もやったな」となって、同じ種類の矛盾が2回出たら検査を書くことにしました。\n最終的に tools/check.py は2,010行、検査項目は34個になりました。...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "他通貨ペアを加えるとEURUSDの予測は改善する？4通貨ペアで検証",
+      "url": "https://zenn.dev/hiro_algo/articles/fx-eurusd-cross-pair-increment",
+      "site": "Zenn(Python)",
+      "published": "2026-09-10T13:21:14Z",
+      "description": "EURUSDだけを見るより、関連する通貨ペアも一緒に見た方が、相場の方向を判断しやすくなるのでしょうか。\n今回はEURUSDの15分足戦略へ、次の4通貨ペアの値動きを追加しました。\n\nEURJPY\nUSDJPY\nGBPJPY\nGBPUSD\n\n結論から言うと、他通貨ペアを加えても結果はほとんど変わりませんでした。\nLongのPFは0.400から0.408、Shortは0.649から0.670です。わ...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "P値は帰無仮説が誤っている確率ではない",
+      "url": "https://zenn.dev/hiroki_honma/articles/3230273f197d86",
+      "site": "Zenn(Python)",
+      "published": "2026-09-10T13:05:04Z",
+      "description": "この記事は、私が X に書いた次の投稿を出発点にしています。投稿では言葉で説明したことを、この記事では数式と実験で確かめます。まず、その投稿(元の投稿へのリンク)を全文再掲します。\n\nP値が小さいことと、帰無仮説が誤っている確率が高いことは、別の話です。この二つを同一視する誤解は、t検定を含む統計的仮説検定全体で最も繰り返されている誤解だと思います。P値が測っているのは、帰無仮説が正しいという前提...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "【Seaborn入門 #10】実践EDA",
+      "url": "https://zenn.dev/haruhiro1020/articles/967bfa0e9acca1",
+      "site": "Zenn(Python)",
+      "published": "2026-09-10T13:00:05Z",
+      "description": "はじめに\n本記事は「Pythonでデータを可視化するSeaborn入門」シリーズの第10回です．\n本シリーズでは， Pythonのデータ可視化ライブラリである Seaborn を使って，「データを可視化できる」ようになること を目標としています．\n第9回では，Pandasとの連携方法 について説明しました．\n第10回では，実際の分析の流れ（EDA：探索的データ分析） について説明します．\nこれまで...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "【FileSearchExplorer 特別回・Qiita41回目】自分のアプリが200DLを突破した件",
+      "url": "https://zenn.dev/unknown777hello/articles/c7d1da4e98449e",
+      "site": "Zenn(Python)",
+      "published": "2026-09-10T12:11:18Z",
+      "description": "はじめに\nこんにちは、Unknown777です。\n今回は、FileSearchExplorerが200DLを超えましたということで、記念ブログを書きました。\nリンクはこちら\n[Githubへのリンク]\n\n FileSearchExplorerとは？\nFileSearchExplorerは、自分（Unknown777）がWindows向けに開発した、キーワードやファイル内容から目的のファイルを素早く...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "launchd から起動すると CloudStorage が読めない。FDA を与える相手が違っていた",
+      "url": "https://zenn.dev/shinsei99/articles/launchd-cannot-read-cloud",
+      "site": "Zenn(Python)",
+      "published": "2026-09-10T11:04:44Z",
+      "description": "紙の書類をスマホで撮ってクラウド同期フォルダへ送り、Mac側のアプリがそれを取り込む、という運用をしています。\nこのアプリを launchd で常時起動にしたら、取り込みだけが動かなくなりました。\nPermissionError: [Errno 1] Operation not permitted:\n  '/Users/apple/Library/CloudStorage/Dropbox-個人/書...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "DeepDive: Pydantic × ドメイン駆動設計 (1/4) parseと不変条件を分けてValue Objectを書く",
+      "url": "https://zenn.dev/neoai/articles/z-20260625-8f3a63fc3b5a61",
+      "site": "Zenn(Python)",
+      "published": "2026-09-10T09:00:05Z",
+      "description": "はじめに\n株式会社neoAIでエンジニアをしている加藤です。\nFastAPIでアプリを書いていると、Pydanticがあまりに便利なので、気づくとAPIのリクエストもドメインモデルも、ORMに渡す手前のデータもぜんぶPydanticのBaseModelになっていることがあります。\nそうなると「外部入力の検証」と「ドメインの不変条件」が同じ層でごちゃ混ぜになり、@model_validatorの中に...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "表記ゆれの解消をLLMに任せた。ただし、自動確定はさせていない",
+      "url": "https://zenn.dev/obataku/articles/vendor-name-matching-llm-human-review",
+      "site": "Zenn(Python)",
+      "published": "2026-09-10T08:36:16Z",
+      "description": "請求書に記載された業者名は、法人格の有無や全角半角、旧字体でいくつも表記が割れる。「株式会社山田商事」と「(株)山田商事」は、人間にはひと目で同じ会社だとわかるが、機械にとっては別の文字列でしかない。\nこの表記ゆれを解消するツールを作った。LLMに候補を選ばせている。ただし、LLMの回答をそのまま信用して自動確定する設計にはしていない。\n\n なぜ自動確定を怖がったか\nきっかけは、警備会社向けの請求...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "【連載 #1】現場特化のWindowsポータブルツール100本開発記：プロジェクト全体像と共通基盤の設計思想",
+      "url": "https://zenn.dev/nichesoftmakers/articles/0970cc8accd296",
+      "site": "Zenn(Python)",
+      "published": "2026-09-10T04:28:21Z",
+      "description": "1. はじめに：現場の「隙間」を埋める100本開発プロジェクト\n業務の自動化スクリプトを書くこと自体は、現代のエンジニアにとって決して難しくありません。Pythonを使えば、音声のラウドネス調整も、Excelの差分突合も、わずか数十行から数百行のコードで実現できます。\nしかし、その自動化が「真に現場の役に立っているか」と問われると、多くの現場で疑問符がつきます。\n日々の実務において、人間の時間を最...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "XのリストをBlueskyへ自動転載するPythonスクリプトを作った — x2b",
+      "url": "https://zenn.dev/loach/articles/x2b-x-to-bluesky-crosspost",
+      "site": "Zenn(Python)",
+      "published": "2026-09-10T04:01:07Z",
+      "description": "はじめに\nXとBlueskyを併用していると、同じ情報を両方で追うのが少し面倒です。\n特に自分の場合、Xでは特定ジャンルの公式アカウントなどをリストにまとめて見ています。一方で、普段のSNSとしてはBlueskyを見ることが増えてきました。\nそこで、Xのリストに流れてきた投稿をBlueskyへ自動的にクロスポストするPythonスクリプト「x2b」を作りました。\n\n最初は「Xから取得してBlues...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "個人開発SaaSの「今月いくら使ったか」を8プロバイダ横断で自動記録する",
+      "url": "https://zenn.dev/kaigiai/articles/beddb358001f3b",
+      "site": "Zenn(Python)",
+      "published": "2026-09-10T03:16:36Z",
+      "description": "AI議事録サービス（Kaigi AI）を個人で開発・運用しています。AI SaaSは原価が「使った分だけ」で膨らむので、支出の把握は経理の話ではなく設計の話です。\nしかし数ヶ月運用して気づいたのは、支出が8つのダッシュボードに散らばっていて、月末になるまで合計が誰にも分からないという間抜けな状態でした。OpenAI、Anthropic、DigitalOcean、AWS、Stripe、Recall....",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "検証は「買えない銘柄」で儲けていた ― 本番のガードが検証に1つも入っていなかった",
+      "url": "https://zenn.dev/codecraft/articles/backtest-unbuyable-symbols-spread-guard-gap",
+      "site": "Zenn(Python)",
+      "published": "2026-09-10T01:45:40Z",
+      "description": "暗号資産の自動売買Botを作っています。基本はdry_run(仮想売買)での検証がメインで、実弾はごく小さいパイロット(2万円)を1本だけ動かしている段階です。\nこの記事は、「最近ぜんぜんエントリーしないな」と思って実弾ログを数えたら、原因が相場ではなく検証の欠陥だった話です。検証は、本番なら絶対に約定しない銘柄で利益を計上していました。\n\n\n きっかけ: 4日間ゼロエントリー\n実弾を投入してから...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "PythonでPowerPointに箇条書きや番号付きリストを作成する方法",
+      "url": "https://zenn.dev/techblogger/articles/a0c93f1e4e0bb3",
+      "site": "Zenn(Python)",
+      "published": "2026-09-10T01:27:08Z",
+      "description": "PowerPointで複数の項目を並べたり、手順を順番に説明したりするときは、箇条書きや番号付きリストを使うと内容を整理しやすくなります。\n手作業なら、リボンから箇条書きの種類を選んだり、インデントを調整したりすれば済みます。ただ、同じ形式のスライドを大量に作成する場合や、既存のプレゼンテーションの書式をまとめて変更する場合は、こうした操作を一つずつ行うのは大変です。\nPythonからPowerP...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
     {
       "title": "Claude APIで商談準備とフォローを一気通貫にする",
       "url": "https://zenn.dev/liatris/articles/20260910-sales-prep-followup-ai",
@@ -109,16 +269,6 @@
       "site": "Zenn(Python)",
       "published": "2026-09-09T12:25:40Z",
       "description": "ひとつの過去データと、ひとつの手続きから、正反対の結論を5通り作れてしまいました。どちらを「訓練期間」と呼ぶか、どの年を評価に含めるか。それだけで「劣化した」とも「改善した」とも書けます。\nこの記事は、自分がその5通りを全部出してしまった記録です。題材は米雇用統計の発表前後の値動きですが、話は相場に限りません。訓練と検証を1回だけ切って結論を出す場面すべてに当てはまります。\n!\n過去データの統計分...",
-      "category": "開発",
-      "rss_category": "",
-      "image_url": ""
-    },
-    {
-      "title": "LLM判定は、安いフィルタの後ろに置く",
-      "url": "https://zenn.dev/miyakona/articles/llm-filter-pipeline-order",
-      "site": "Zenn(Python)",
-      "published": "2026-09-09T11:57:11Z",
-      "description": "外部サイトから集めた記事候補を、関連するものだけに絞るバッチを運用しています。候補のタイトルと要約を大規模言語モデル（LLM）へ渡し、関連があればダウンロードする仕組みです。\n処理が遅くなったとき、私はダウンロード部分が原因だろうと考えていました。ところがフェーズ別の時間を計測すると、ダウンロードよりも、その前にある要約取得とLLM判定が大半を占めていました。しかも、後で「無料では読めない」と分か...",
       "category": "開発",
       "rss_category": "",
       "image_url": ""
