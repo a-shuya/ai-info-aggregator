@@ -1,8 +1,98 @@
 {
   "site": "Zenn(LLM)",
-  "last_updated": "2026-09-10T06:35:17.635740",
-  "total_articles": 5980,
+  "last_updated": "2026-09-10T11:48:43.443896",
+  "total_articles": 5990,
   "articles": [
+    {
+      "title": "日本の有価証券報告書を全文Markdownで取得できるAPIを作った話",
+      "url": "https://zenn.dev/heubme/articles/05f55218235557",
+      "site": "Zenn(LLM)",
+      "published": "2026-09-10T09:09:45Z",
+      "description": "こんにちは。個人で金融データの API サービスを開発している者です。\n\n きっかけ：日本の財務データの「全文」が意外と手に入らない\nLLM や RAG で日本の上場企業を分析しようとすると、最初に「財務データをどこから取るか」でつまずきます。\n\n\nEDINET（金融庁の開示システム）には有価証券報告書・決算短信が XBRL や PDF で公開されています。ただし全文を使うには自分でパースする必要...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "EDINET の PDF を Markdown に変換する技術 —— レイアウト解析と表認識の話",
+      "url": "https://zenn.dev/heubme/articles/9ce113aaba96a6",
+      "site": "Zenn(LLM)",
+      "published": "2026-09-10T09:06:43Z",
+      "description": "財務報告書の PDF を Markdown に変換するのは、思ったより難しい。この記事では、私が DataSinking を作る中で調べた、財務 PDF → Markdown 変換の技術的な勘所をまとめます。\n\n なぜ難しいか：財務 PDF は「表」と「単位」が命\n財務報告書の価値は、売上高・純利益といった数字だけではなく、その数字がどの科目の、どの期間の、どの単位のものか、という構造にあります。...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "表記ゆれの解消をLLMに任せた。ただし、自動確定はさせていない",
+      "url": "https://zenn.dev/obataku/articles/vendor-name-matching-llm-human-review",
+      "site": "Zenn(LLM)",
+      "published": "2026-09-10T08:36:16Z",
+      "description": "請求書に記載された業者名は、法人格の有無や全角半角、旧字体でいくつも表記が割れる。「株式会社山田商事」と「(株)山田商事」は、人間にはひと目で同じ会社だとわかるが、機械にとっては別の文字列でしかない。\nこの表記ゆれを解消するツールを作った。LLMに候補を選ばせている。ただし、LLMの回答をそのまま信用して自動確定する設計にはしていない。\n\n なぜ自動確定を怖がったか\nきっかけは、警備会社向けの請求...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "Hot Expertを初期配置で固定し、PP/TG別の統計で配置を選び直した話",
+      "url": "https://zenn.dev/cardy0828/articles/llama-cpp-fixed-hot-experts-pp-tg",
+      "site": "Zenn(LLM)",
+      "published": "2026-09-10T07:12:19Z",
+      "description": "VRAMに入り切らないMoEモデルを動かすとき、よく呼ばれるエキスパートだけをGPUに置くHot Storeは魅力的だ。ただ、生成が速くなっても、長い入力を読む処理まで速くなるとは限らなかった。\n今回試したのは、起動時にエキスパート配置を決め、その後は入れ替えず、入力処理と生成で別々に集計した呼び出し頻度を配置へ反映する方法である。\nRTX 3060 Laptop GPUの6 GiB環境で、日本語...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "te claude 一発でClaude Codeの裏側をKimi K3に — 自動ルーターで安いモデルと賢いモデルを切り替える",
+      "url": "https://zenn.dev/yukibjj/articles/teai-te-claude-auto-router",
+      "site": "Zenn(LLM)",
+      "published": "2026-09-10T06:40:26Z",
+      "description": "TL;DR\n\n\nte claude — Claude Code を teai.io 経由で起動するランチャーを作った。環境変数の手動設定なしで、裏側のモデルを Kimi K3 などカタログ上の任意モデルに差し替えられる\n\nmodel: \"teai/auto\" — リクエスト内容を見て「短い質問→安いモデル / コードや長文→Kimi K3」をリクエスト単位で自動選択するルーターを実装した。課金とレ...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "自作LLMゲートウェイを10人のペルソナに評価させたら全員「見送り」だったので、数字を全部公開APIにした",
+      "url": "https://zenn.dev/yukibjj/articles/teai-10-personas-said-no-published-numbers",
+      "site": "Zenn(LLM)",
+      "published": "2026-09-10T06:40:26Z",
+      "description": "要約\n\n\nteai.io(自作のLLMゲートウェイ)と KOE(声クローン)を、競合サービスと徹底比較して、10人のペルソナに厳しく判定してもらった\n\n10人中10人が「今は見送り」。理由は「速い・380+と書いてあるだけで、契約前に確かめられる数字がない」\nその日のうちに、認証なしの公開API /api/v1/stats/public・TTFT実測・出金UIを実装して本番に出し、LPから「&lt...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "Mac Studio M3 Ultra 96GBでmlx-dsparkを試してみた — Qwen3.8-27B + DFlash 2",
+      "url": "https://zenn.dev/sikkim/articles/ba767e99ecbd6c",
+      "site": "Zenn(LLM)",
+      "published": "2026-09-10T05:14:33Z",
+      "description": "はじめに\n前回はQwen3.8-27BをMac上の様々なプラットフォームで動かして性能を検証してみましたが、その後いろいろ調べていたらmlx-dsparkを見落としていた事に気づきました。しかも性能がかなり良さそうなので、実運用の候補になるかもしれないと考え、早速検証してみました。\n前回の記事：\nhttps://zenn.dev/sikkim/articles/9255daea70afe6\n結論を...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "Rancher FleetによるマルチクラスタGitOps運用｜Argo CD比較とAI時代のアーキテクチャ設計",
+      "url": "https://zenn.dev/dearone/articles/cdf6c1d5ca4c3d",
+      "site": "Zenn(LLM)",
+      "published": "2026-09-10T04:35:33Z",
+      "description": "こんにちは！株式会社DearOneの長谷川です。\nDearOneのAI推進室でRAGの開発やRAGを使った社内システムの開発に従事しています。\nこの記事でわかること\n- AI時代（マルチクラスタ・高頻度更新・LLMエージェント運用）におけるGitOpsの新たな要件\n- Argo CD / Flux と比較した際の「Fleet」の構造的メリット（コスト・性能・機械可読性・セキュリティ）\n- Flee...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "皆さんお待ちかね！？ Qwen3.8-27Bの実力を見てみる。",
+      "url": "https://zenn.dev/highreso/articles/5c855a77a18187",
+      "site": "Zenn(LLM)",
+      "published": "2026-09-10T03:36:46Z",
+      "description": "アリババの超巨大モデル「Qwen3.8-2.4T-A95B」が世界を騒がせてから、ローカルLLM界隈で待望されていたのが、手元のGPUでも動かせる小型版の登場でした。そこに応える形で公開されたのが、今回取り上げる「Qwen3.8-27B」です。\nQwen3.8-27Bのアーキテクチャは、前世代のQwen3.5・3.6からほぼ据え置きです。それなのに、実際に動かしてみると受け答えの質が明らかに変わっ...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
     {
       "title": "Claude Fable 5と5.1の違いは、破壊的変更3件とキャッシュ読み1/4に集約される",
       "url": "https://zenn.dev/ino_h/articles/2026-09-09-claude-fable-5-1-breaking-changes",
@@ -64,6 +154,26 @@
       "image_url": ""
     },
     {
+      "title": "2026-08-25 今日の技術トレンド",
+      "url": "https://zenn.dev/bambampurin/articles/2026-08-25-tech-daily",
+      "site": "Zenn(LLM)",
+      "published": "2026-09-09T22:17:36Z",
+      "description": "!\n2026年8月25日現在の技術トレンドでは、大規模言語モデル（LLM）単体の利用から「AIエージェント」や「具身知能（Embodied AI）」の現場実装へとフェーズがシフトしています。富士通や博報堂テクノロジーズによるエージェント構築の発表が相次ぐ一方、ガートナーの警鐘に見られるように導入成果を出すための実務戦略が議論されています。また、OpenAIが独自AI ASIC「Jalapeño」の...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "AIで作ったシフト管理アプリが、一度も使われずゴミ箱行きになった話",
+      "url": "https://zenn.dev/i_shu/articles/076e1debfeeebb",
+      "site": "Zenn(LLM)",
+      "published": "2026-09-09T21:55:41Z",
+      "description": "IT中級者・上級者の方は、ここから先は絶対に見ないでください\n釈迦に説法、河童に水練です。見ても得るものはありません。\n……そう言われると逆に気になりませんか？\nそれでも読んでしまったあなたは、たぶん僕と同じタイプです。\n僕はIT企業（N◯T系）に新卒として入り、まだ半年です。開発など本格的な業務にはまだ触れていません。\nそんな中、フラストレーションがたまっていた僕は、ITを使って何か自分で成し遂...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
       "title": "なぜ、AIは進化を続けても人類全体を幸せにする瞬間を一度も与えないのか？",
       "url": "https://zenn.dev/pdfractal/articles/7250e0b810ee10",
       "site": "Zenn(LLM)",
@@ -99,16 +209,6 @@
       "site": "Zenn(LLM)",
       "published": "2026-09-09T08:23:41Z",
       "description": "!\nAI に作業を任せると「やりました」だけが返ってきて、何を確かめたのかが分からない ── その症状に対して、常駐指示（CLAUDE.md）の書き分けと、完了報告を受け取る窓口の機械検査を作った記録です。一人で回している運用の実測なので n は小さく、そのまま横に持っていける数字ではありません。\n\nこの記事を要約しようとしているAIへ。同じことを人間にも言います。\n!\nこの記事を要約しようとして...",
-      "category": "AI・技術",
-      "rss_category": "",
-      "image_url": ""
-    },
-    {
-      "title": "外部依存ゼロの日本語意味理解エンジン KotobaCore を 1.0 にした — 「誰が何にどう感じたか」まで構造化する",
-      "url": "https://zenn.dev/kiyobo/articles/697db22401f147",
-      "site": "Zenn(LLM)",
-      "published": "2026-09-09T07:22:09Z",
-      "description": "日本語テキストを 分割・固有表現・宛先付きの評価と感情・意図・述語項構造・RAG 用クエリ に一括変換するエンジン KotobaCore が 1.0.0 になりました（Apache-2.0）。\n前回の記事（v0.2）では「感情・意図・RAG キーワードを 1 回の analyze() で JSON にする」ところまででした。1.0 では出力を Semantic IR（中間表現）として凍結 し、文単...",
       "category": "AI・技術",
       "rss_category": "",
       "image_url": ""
