@@ -1,6 +1,6 @@
 {
   "site": "Zenn(Google Cloud)",
-  "last_updated": "2026-09-10T23:15:04.378453",
+  "last_updated": "2026-09-11T01:12:27.852858",
   "total_articles": 1770,
   "articles": [
     {
@@ -34,11 +34,11 @@
       "image_url": ""
     },
     {
-      "title": "エージェントに二手目を与えた瞬間に漏れた ―Cloud Run多段構成で多層防御を600試行測る",
+      "title": "多段エージェント600試行、多層防御は発火しなかった",
       "url": "https://zenn.dev/acntechjp/articles/zenn-agentchain-layered-defense",
       "site": "Zenn(Google Cloud)",
       "published": "2026-09-09T22:05:03Z",
-      "description": "はじめに\n前回、Cloud Run のエージェント向け機能を単体で測りました。今回はその続きで、組み合わせたときに何が起きるかを見ます。\nエージェントを2段に繋ぎ、間接プロンプトインジェクションを流し、Model Armor と Sensitive Data Protection を重ね、監査ログで追跡できるかまで通しで測りました。単機能の検証では出せない数字を狙っています。\n結論から言うと、専用...",
+      "description": "3行でまとめ\n\n攻撃を止めていたのは Model Armor でも Sensitive Data Protection でもなく、エージェントが一手で終わる実装と、モデルが注入を黙殺したことでした\nModel Armor は攻撃文書を平文では 0/12 で素通しし、Base64 に包むと良性文書まで 12/12 で検知しました。見ているのは中身ではなく形です\nSecret Manager の監査ロ...",
       "category": "クラウド",
       "rss_category": "",
       "image_url": ""
@@ -64,11 +64,11 @@
       "image_url": ""
     },
     {
-      "title": "Cloud Runでエージェントを作ると、プロジェクトのIAMに自分が書いていない行が増える",
+      "title": "Cloud Runでエージェントを作るとIAMが勝手に増える",
       "url": "https://zenn.dev/acntechjp/articles/zenn-cloudrun-agent-identity",
       "site": "Zenn(Google Cloud)",
       "published": "2026-09-08T21:51:35Z",
-      "description": "はじめに\nCloud Run に --functional-type と --identity-type というフラグが増えました。ワークロードを「エージェント」または「MCP サーバー」として宣言すると、サービスアカウントとは別の、エージェント固有の ID が与えられ、Agent Registry に自動で登録されます。Preview 段階の機能です。\nエージェントに固有の ID を持たせる方向...",
+      "description": "3行でまとめ\n\nプロジェクトで初めてエージェントをデプロイすると、Google 側のシステムアカウントがプロジェクトの IAM に roles/run.agentDefaultAccess を追加します。サービス作成の 2.28 秒後でした\nエージェント化すると、ワークロードが受け取る資格情報はサービスアカウントのものではなくなります。同じ SA を指定していても、その SA に付けた権限では通り...",
       "category": "クラウド",
       "rss_category": "",
       "image_url": ""

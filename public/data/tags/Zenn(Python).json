@@ -1,14 +1,14 @@
 {
   "site": "Zenn(Python)",
-  "last_updated": "2026-09-10T23:15:04.378453",
-  "total_articles": 6344,
+  "last_updated": "2026-09-11T01:12:27.852858",
+  "total_articles": 6343,
   "articles": [
     {
-      "title": "タイヤメーカーがロボットハンド特許の1位だった。特許367件をAIで地図にして分かったこと",
-      "url": "https://zenn.dev/cyanary/articles/8ff79d2be0ef8a",
+      "title": "LLM判定が失敗しても、全件通さない",
+      "url": "https://zenn.dev/miyakona/articles/llm-invariant-tests-fail-closed",
       "site": "Zenn(Python)",
-      "published": "2026-09-10T23:08:36Z",
-      "description": "ロボットハンドの特許を数えたら、1位はロボットメーカーではなくブリヂストンだった。\nそして特許367件をAIで「地図」にすると、特許庁が「ロボットハンド」の一言でまとめている領域が、いくつかの島に分かれて見えた。半導体の島、医療の島、そしてブリヂストンが陣取る島。\nこの記事は、その地図を作った手順と、途中で失敗した箇所の記録だ。使ったのは無料のツールだけで、費用はゼロ、登録したのはメールアドレスだ...",
+      "published": "2026-09-10T23:20:43Z",
+      "description": "収集した候補を大規模言語モデル（LLM）で分類し、関連するものだけを後段へ送るバッチのテストを見直していました。LLMの出力は毎回同じとは限らないので、「入力Aなら必ず関連あり」と固定するテストは不安定になります。\nかといって判定部分をテストから外すと、分類器を変更したときに、候補が途中で消えても気づけません。\nもう一つ気になったのが、LLMを呼べないときの挙動でした。APIキーがない、空の値が返...",
       "category": "開発",
       "rss_category": "",
       "image_url": ""
@@ -59,16 +59,6 @@
       "site": "Zenn(Python)",
       "published": "2026-09-10T13:26:13Z",
       "description": "Claude Code と Markdown で設計書を書いていたら、200行くらい離れたところで自分と矛盾していました。\nしかも一度ではなく、レビューするたびに似たようなものが出てきます。\n最初は目で直していたのですが、途中から「これ前もやったな」となって、同じ種類の矛盾が2回出たら検査を書くことにしました。\n最終的に tools/check.py は2,010行、検査項目は34個になりました。...",
-      "category": "開発",
-      "rss_category": "",
-      "image_url": ""
-    },
-    {
-      "title": "他通貨ペアを加えるとEURUSDの予測は改善する？4通貨ペアで検証",
-      "url": "https://zenn.dev/hiro_algo/articles/fx-eurusd-cross-pair-increment",
-      "site": "Zenn(Python)",
-      "published": "2026-09-10T13:21:14Z",
-      "description": "EURUSDだけを見るより、関連する通貨ペアも一緒に見た方が、相場の方向を判断しやすくなるのでしょうか。\n今回はEURUSDの15分足戦略へ、次の4通貨ペアの値動きを追加しました。\n\nEURJPY\nUSDJPY\nGBPJPY\nGBPUSD\n\n結論から言うと、他通貨ペアを加えても結果はほとんど変わりませんでした。\nLongのPFは0.400から0.408、Shortは0.649から0.670です。わ...",
       "category": "開発",
       "rss_category": "",
       "image_url": ""
