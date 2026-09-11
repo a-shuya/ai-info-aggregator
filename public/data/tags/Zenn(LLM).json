@@ -1,8 +1,18 @@
 {
   "site": "Zenn(LLM)",
-  "last_updated": "2026-09-11T18:28:48.364958",
-  "total_articles": 6012,
+  "last_updated": "2026-09-11T21:13:21.192549",
+  "total_articles": 6017,
   "articles": [
+    {
+      "title": "Anthropic社「Fable 5」「Mythos 5」を巡る技術的・地政学的分析：攻撃能力とAI統制の深層",
+      "url": "https://zenn.dev/emilia_lab/articles/anthropic-fable5-mythos5-geopolitics",
+      "site": "Zenn(LLM)",
+      "published": "2026-09-11T11:16:32Z",
+      "description": "導入：兵器化するフロンティアAIと地政学的な歴史的転換点\n2026年6月上旬、世界の人工知能およびサイバーセキュリティの歴史において、最も劇的かつ物議を醸す出来事が発生した。米国サンフランシスコに拠点を置くAI開発企業Anthropicは、同社史上最も強力なAIモデルである「Claude Fable 5」と、その無制限版に位置づけられる「Claude Mythos 5」を同時に発表した。これらの「...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
     {
       "title": "RAGで十分？ 学習する？――LLMを自社向けに適応する技術の選び方",
       "url": "https://zenn.dev/highreso/articles/a593d3556c2cc9",
@@ -14,11 +24,61 @@
       "image_url": ""
     },
     {
+      "title": "AIエージェントに会社の実務を回させるとき、私が引いている3本の線",
+      "url": "https://zenn.dev/rust_start/articles/0adc828c3bc37a",
+      "site": "Zenn(LLM)",
+      "published": "2026-09-11T07:59:36Z",
+      "description": "連載「空いた手で」第1回。AI に会社を運転させ、空いた手で日本の文化を次の世代へ渡す、ということを実際にやっています。この回は前半——どうやって手を空けたかの話です。\n\n会社の実務を、複数台の Mac に常駐させたコーディングエージェントに回させている。1台が司令塔、残りが受付と実行。タスク・意思決定・報告は1つの DB と git に集めてあり、エージェントはそこからタスクを取り（claim）...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
       "title": "Claude Code運用におけるフックのLLM呼び出し分離設計：レート制限とオーバーヘッドの最適化",
       "url": "https://zenn.dev/sh39works/articles/39d930f9c0ac30",
       "site": "Zenn(LLM)",
       "published": "2026-09-11T07:44:27Z",
       "description": "0. 結論\nClaude Codeのフック（Hook）は「自動化できる」ことと「安く自動化できる」ことが別軸であり、両者を混同すると意図せずレート制限に到達する。本稿では実際にレート制限を踏んだ事例をもとに、フック設計の見直し指針を4点にまとめる。\n\n\nフック実行によるサブセッション生成の罠： SessionEndやPreCompact等のフックは、処理内容が空であってもClaude Codeのサ...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "Claude Codeの設定を消す前に、僕が決めた基準",
+      "url": "https://zenn.dev/gemcook/articles/2336f653026c9e",
+      "site": "Zenn(LLM)",
+      "published": "2026-09-11T07:29:45Z",
+      "description": "はじめに\nモデルを変えた途端に、前のモデルのために書いた注意書きが効かなくなる。この半年で何度も踏んだ場面で、9 月に入って X でこの投稿を見たとき、正直ちょっと身に覚えがありました。\nhttps://x.com/kawasin73/status/2096030851217887431\n僕は AI ツールに毎月上限まで課金して使い倒し、Claude Code・Codex CLI・Grok Bui...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "AIエージェントの失敗を228件記録したら、根本原因は3つしかなかった",
+      "url": "https://zenn.dev/tokium_dev/articles/ai-agent-failure-patterns-228",
+      "site": "Zenn(LLM)",
+      "published": "2026-09-11T06:34:12Z",
+      "description": "!\nこの記事は何の話か（3 行まとめ）\n\nAI（Claude Code）が失敗するたびに教訓を1ファイル1パターンで記録する運用を数ヶ月続けたら228件たまったので、全件を分類集計しました\n教訓の大半は「Yする前にXせよ」「XはYではない」の2つの構文に収束しており、規律系の失敗の根本原因は3つ（代理シグナルの過信・否定の早撃ち・浦島太郎現象）しかありませんでした\n\ndb:prepare が ex...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "文字数・バイト数からのトークン数推定は実際どれくらいズレるのか",
+      "url": "https://zenn.dev/aiforall/articles/63501821b1e50e",
+      "site": "Zenn(LLM)",
+      "published": "2026-09-11T05:33:13Z",
+      "description": "背景\n実務で、LLM への入力テキストがトークン数の上限を超えてエラーになる事象が発生し、対策を検討する場面がありました。対策案として、LLM に投げる前に文字数やバイト数、あるいは tiktoken のようなトークナイザーでトークン数を事前に見積もり、上限を超えそうであれば送信前にエラーを表示する「事前バリデーション」方式が候補に挙がりました。\nしかし議論の中で、「その見積もりが、実際に LLM...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "CLAUDE_CODE_SUBAGENT_MODELだけではpin済みsubagentのモデルを変えられない",
+      "url": "https://zenn.dev/clopy/articles/claude-subagent-model-force-precedence-gap",
+      "site": "Zenn(LLM)",
+      "published": "2026-09-11T04:13:38Z",
+      "description": "結論から: 環境変数だけでは足りない\n.claude/agents/*.md にコスト重視のカスタムsubagentを model: sonnet で固定し、CIや共有devcontainerで CLAUDE_CODE_SUBAGENT_MODEL=haiku をexportしている場合、それだけでは狙い通りにコストを抑えられません。\nClaude Code 2.1.257で実際に検証したところ、...",
       "category": "AI・技術",
       "rss_category": "",
       "image_url": ""
@@ -89,16 +149,6 @@
       "site": "Zenn(LLM)",
       "published": "2026-09-11T00:50:05Z",
       "description": "AIを使っているのに、LLMのことを説明できないエンジニアへ\nエンジニアのためのAI基礎教養 #1\nChatGPTにコードを書かせる。\nエラーメッセージを貼って原因を聞く。\n仕様書を要約させる。\nレビューを手伝ってもらう。\n今では、AIを使って開発すること自体は珍しくなくなりました。\nでも、こんな質問をされたらどうでしょう。\n\n「そもそもChatGPTって、何をしているの？」\n\n\n「LLMって普通...",
-      "category": "AI・技術",
-      "rss_category": "",
-      "image_url": ""
-    },
-    {
-      "title": "LLM判定が失敗しても、全件通さない",
-      "url": "https://zenn.dev/miyakona/articles/llm-invariant-tests-fail-closed",
-      "site": "Zenn(LLM)",
-      "published": "2026-09-10T23:20:43Z",
-      "description": "収集した候補を大規模言語モデル（LLM）で分類し、関連するものだけを後段へ送るバッチのテストを見直していました。LLMの出力は毎回同じとは限らないので、「入力Aなら必ず関連あり」と固定するテストは不安定になります。\nかといって判定部分をテストから外すと、分類器を変更したときに、候補が途中で消えても気づけません。\nもう一つ気になったのが、LLMを呼べないときの挙動でした。APIキーがない、空の値が返...",
       "category": "AI・技術",
       "rss_category": "",
       "image_url": ""
