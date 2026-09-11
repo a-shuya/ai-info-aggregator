@@ -1,8 +1,38 @@
 {
   "site": "Zenn(Python)",
-  "last_updated": "2026-09-11T01:12:27.852858",
-  "total_articles": 6343,
+  "last_updated": "2026-09-11T06:07:29.346308",
+  "total_articles": 6346,
   "articles": [
+    {
+      "title": "検査は壊れていないのに判定が嘘になる。値の意味が時間で変わる3つの型",
+      "url": "https://zenn.dev/menshiba/articles/1c8ee1eeebfd0b",
+      "site": "Zenn(Python)",
+      "published": "2026-09-10T23:54:12Z",
+      "description": "この記事でわかること\n\n検査のコードは正しく走っているのに、判定だけが静かに嘘になる型が3つあること\n①会期・期限で状態が元に戻る値 ②人が追記する前提のリスト ③効いていないクエリパラメータ\nそれぞれ「症状 → なぜ気づけなかったか → 検知できる設計」\n結論として、判定条件を書いた日に当てるべき問いは1つだけだということ\n\n\n 前提\n個人ブログとその周辺の運用を、Python スクリプトと l...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "自動検査は「異常0件」を返しながら死ぬ。1日で4件見つかった壊れ方の型と、横断監査",
+      "url": "https://zenn.dev/menshiba/articles/2e8e1e56dd2a42",
+      "site": "Zenn(Python)",
+      "published": "2026-09-10T23:53:50Z",
+      "description": "この記事でわかること\n\n「わざと壊して確かめた」検知でも、その後で静かに死ぬこと。同じ日に4件見つかった実例\n壊れ方は4つの型に分かれる: 正規表現の置き去り / 判定の複製 / 固定文字列の状態 / 本番環境の依存欠如\nそれぞれ「症状 → なぜ気づけなかったか → 検知できる設計」\n個別に直すのではなく、各検査が「最後に成功データを返した日時」を横断で見る監査に落とすまで\n\n\n 前提\n個人ブログ...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "ヘッドレス（Excelインストールせずに）でExcelファイルを編集したりVBAを実行できるライブラリを開発した",
+      "url": "https://zenn.dev/kent_kamome/articles/a09832e968c20f",
+      "site": "Zenn(Python)",
+      "published": "2026-09-10T23:25:17Z",
+      "description": "Excelをインストールできない環境で、既存のExcelファイルを編集したり、VBAを動かしたりしたいことがあります。\nCIやサーバーのバッチで実行するたびにExcelを起動するのは扱いにくいです。大きなファイルになると、読み込みと保存だけで時間がかかり、メモリ使用量も気になります。かといって、すでに使われているワークブックやVBAを別の形式に書き換えるのも簡単ではありません。\nこの問題を自分で解...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
     {
       "title": "LLM判定が失敗しても、全件通さない",
       "url": "https://zenn.dev/miyakona/articles/llm-invariant-tests-fail-closed",
