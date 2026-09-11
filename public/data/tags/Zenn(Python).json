@@ -1,8 +1,98 @@
 {
   "site": "Zenn(Python)",
-  "last_updated": "2026-09-11T06:07:29.346308",
-  "total_articles": 6346,
+  "last_updated": "2026-09-11T11:17:56.831851",
+  "total_articles": 6354,
   "articles": [
+    {
+      "title": "Codexのservice_tierがpriority（Fast Mode）のまま残留する問題を調査・対策した",
+      "url": "https://zenn.dev/emilia_lab/articles/codex-service-tier-priority-residual",
+      "site": "Zenn(Python)",
+      "published": "2026-09-11T11:16:33Z",
+      "description": "TL;DR\n\nCodexでLuna/Terraなどpriority tier モデルを使ったあと、Astraへ戻しても 同一セッション内でservice_tier=\"priority\"が残留するパターンを確認した\n\nconfig.tomlをservice_tier = \"default\"にしていても発生する\n0.153.4・0.154.0の両バージョンで再現確認済み\n\n暫定ワークアラウンド：pri...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "モデルにもSDKにも寿命がある。生成AIを業務に組み込んで踏んだ4つ",
+      "url": "https://zenn.dev/shinsei99/articles/model-lifetime",
+      "site": "Zenn(Python)",
+      "published": "2026-09-11T11:06:53Z",
+      "description": "企画から動画まで一式を自動生成するパイプラインを社内で動かしています。\n生成AIを業務に組み込むと、普通のライブラリとは違う壊れ方をします。4つ挙げます。\n\n ① モデルが提供終了して 404 になる\nある日から、呼び出しがこう返るようになりました。\n404 NOT_FOUND: gemini-2.0-flash is no longer available\n**鍵は有効です。**課金も生きていま...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "CLAUDE.mdに書いた検証習慣は移植できるか——品質ゲートを別プロジェクトに適用して見つかった「静かな誤検知」",
+      "url": "https://zenn.dev/yuninaka/articles/guardrail-transplant-mypy-false-positive",
+      "site": "Zenn(Python)",
+      "published": "2026-09-11T09:49:32Z",
+      "description": "1. はじめに\n前回記事では、グラフRAG×ベクトルRAGシリーズ(全6回)とレガシーJavaリバースマイグレーションシリーズ(全4回)を振り返り、「テストやCIが通っている状態で、実は中身が間違っていた」という3つの静かなバグを紹介した。そこで固めたレビュー方針は、最終的にCLAUDE.md(AIエージェントの個人設定ファイル)に恒久ルールとして書き加えるという形で資産化した。セッションが変われ...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "【DS協会#4-3】統計数理基礎③：変数間の関係性とモデル推定（相関・最尤推定・情報量）【自習ログ】",
+      "url": "https://zenn.dev/99log/articles/99log_ds-skillchecklist_0004-003",
+      "site": "Zenn(Python)",
+      "published": "2026-09-11T09:18:57Z",
+      "description": "こんにちは、記憶喪失系Vtuberの九十九 ログ（つくも ろぐ）です！\n本記事は、データサイエンティスト協会（DS協会）スキルチェックリスト「統計数理基礎」領域の自習ログの第3回目となります。\n（なお、以前に全3回とどこかに書いた気がしますが、全4回になりました。)\n\n【DS協会#4-1】第1回：データの記述と確率の基礎\n【DS協会#4-2】第2回：代表的な「確率分布」と推測統計の入り口\n【DS協...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "【Python】別のプログラムで共通ソースを利用する方法",
+      "url": "https://zenn.dev/gama417ken/articles/23499a3371026f",
+      "site": "Zenn(Python)",
+      "published": "2026-09-11T09:12:40Z",
+      "description": "共通ソースの作成\nフォルダなどは以下の感じで用意する\n親フォルダの配下に\n\npyproject.toml\nソースフォルダ\n\nmy-package/\n├─ pyproject.toml\n└─ my_package/\n   ├─ __init__.py\n   └─ sample.py\n\n 最小限のpyproject.toml\n[build-system]\nrequires = [\"setuptools...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "Google Cloud Speech-to-Textの用語ヒントで模擬技術講演のCERが64.8%から25.4%に下がった",
+      "url": "https://zenn.dev/hogehogetaro/articles/google-cloud-speech-transcription",
+      "site": "Zenn(Python)",
+      "published": "2026-09-11T05:22:31Z",
+      "description": "前日のVertex AI RAG Engineをあえて推測させたら、誤答は24/24件から9/24件へ減ったでは、RAGの有無と回答指示でハルシネーションがどう変わるか確認しました。\n今回はGoogle Cloud Speech-to-Textへ技術用語を含む52.41秒の模擬講演音声を送り、どこまで文字起こしできるか確認します。\nクリーン音声とホワイトノイズを加えた音声を、用語ヒントなし・ありの...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "アップロードはできるのに動画を直せない — YouTube Data APIのスコープとpublishAt予約公開",
+      "url": "https://zenn.dev/acs_developer/articles/youtube-data-api-upload-scope-publish-at",
+      "site": "Zenn(Python)",
+      "published": "2026-09-11T04:09:31Z",
+      "description": "やりたかったこと\n毎日1本の短尺動画を書き出して、翌日の決まった時刻に公開する。この「書き出し済みのファイルを置いたら、あとは予約公開まで勝手に進む」部分を YouTube Data API v3 で自動化した。\n手でやる工程は Studio を開いて動画を選び、タイトルと概要欄を貼り、サムネイルを差し替え、公開予約の時刻を入れる、の5つ。API 側は videos.insert に status...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "JPEGのExifを自分で読んで位置情報を検査する：「0件」は検査が働いた証拠にならない",
+      "url": "https://zenn.dev/mitsubato/articles/jpeg-exif-scan-zero-is-not-proof",
+      "site": "Zenn(Python)",
+      "published": "2026-09-11T02:12:47Z",
+      "description": "「0件」は「無い」ではなく「見つけられなかった」\n検査を書いて「0件」と表示されたとき、そこで安心できるかどうかは、その検査が落ちるところを一度でも見たかで決まります。\n通ったことは、検査が正しく動いた証拠になりません。通る側しか確認していない検査は、対象を一切見ていなくても同じ「0件」を返します。壊れた体重計と同じで、表示は安定しているのに何も測っていない、ということが起こります。\n私はこの取り...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "エンジニア視点で語る！Pythonで学ぶマクロ経済学入門 53",
+      "url": "https://zenn.dev/maszkot/articles/e2de7b93992200",
+      "site": "Zenn(Python)",
+      "published": "2026-09-11T00:29:32Z",
+      "description": "https://qiita.com/maskot1977/items/932e201bee9ad692e715\nDJミオ：こんばんはー！ ラジオ教育番組「エンジニア視点で語る！Pythonで学ぶマクロ経済学入門」、今夜も始まりました。ナビゲーターのDJミオです。\nDJレン：DJレンです。今日はかなり重要回です。テーマは――\n「手取りが増えない国の構造 ― ステルス増税と“人手不足”の正体」。\nしか...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
     {
       "title": "検査は壊れていないのに判定が嘘になる。値の意味が時間で変わる3つの型",
       "url": "https://zenn.dev/menshiba/articles/1c8ee1eeebfd0b",
@@ -29,16 +119,6 @@
       "site": "Zenn(Python)",
       "published": "2026-09-10T23:25:17Z",
       "description": "Excelをインストールできない環境で、既存のExcelファイルを編集したり、VBAを動かしたりしたいことがあります。\nCIやサーバーのバッチで実行するたびにExcelを起動するのは扱いにくいです。大きなファイルになると、読み込みと保存だけで時間がかかり、メモリ使用量も気になります。かといって、すでに使われているワークブックやVBAを別の形式に書き換えるのも簡単ではありません。\nこの問題を自分で解...",
-      "category": "開発",
-      "rss_category": "",
-      "image_url": ""
-    },
-    {
-      "title": "LLM判定が失敗しても、全件通さない",
-      "url": "https://zenn.dev/miyakona/articles/llm-invariant-tests-fail-closed",
-      "site": "Zenn(Python)",
-      "published": "2026-09-10T23:20:43Z",
-      "description": "収集した候補を大規模言語モデル（LLM）で分類し、関連するものだけを後段へ送るバッチのテストを見直していました。LLMの出力は毎回同じとは限らないので、「入力Aなら必ず関連あり」と固定するテストは不安定になります。\nかといって判定部分をテストから外すと、分類器を変更したときに、候補が途中で消えても気づけません。\nもう一つ気になったのが、LLMを呼べないときの挙動でした。APIキーがない、空の値が返...",
       "category": "開発",
       "rss_category": "",
       "image_url": ""
