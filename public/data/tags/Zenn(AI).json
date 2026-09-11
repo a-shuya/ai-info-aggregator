@@ -1,7 +1,7 @@
 {
   "site": "Zenn(AI)",
-  "last_updated": "2026-09-11T15:05:55.810100",
-  "total_articles": 13614,
+  "last_updated": "2026-09-11T18:28:48.364958",
+  "total_articles": 13616,
   "articles": [
     {
       "title": "ブラウザ画像ぼかしUIを状態モデルとして分解する",
@@ -204,11 +204,31 @@
       "image_url": ""
     },
     {
+      "title": "文字数・バイト数からのトークン数推定は実際どれくらいズレるのか",
+      "url": "https://zenn.dev/aiforall/articles/63501821b1e50e",
+      "site": "Zenn(AI)",
+      "published": "2026-09-11T05:33:13Z",
+      "description": "背景\n実務で、LLM への入力テキストがトークン数の上限を超えてエラーになる事象が発生し、対策を検討する場面がありました。対策案として、LLM に投げる前に文字数やバイト数、あるいは tiktoken のようなトークナイザーでトークン数を事前に見積もり、上限を超えそうであれば送信前にエラーを表示する「事前バリデーション」方式が候補に挙がりました。\nしかし議論の中で、「その見積もりが、実際に LLM...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
       "title": "生成AIパスポート試験対策",
       "url": "https://zenn.dev/irukaboat/articles/df275295291679",
       "site": "Zenn(AI)",
       "published": "2026-09-11T04:56:27Z",
       "description": "第1章：AIの概要と歴史・機械学習の基礎\n\n 1.1 AI（人工知能）とロボットの違い\n試験ではAIとロボットの定義の違いがよく問われます。\n\n\n\n比較項目\nAI（人工知能）\nロボット\n\n\n\n\n存在形態\nソフトウェア / アプリケーション\n物理的な機械（身体をもつ）\n\n\n主な役割\n人間の知能を再現し、知的タスクを自動化\n物理的な作業を自動化\n\n\n\n※AIを「頭脳」、ロボットを「身体」として連携させ...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "CLAUDE_CODE_SUBAGENT_MODELだけではpin済みsubagentのモデルを変えられない",
+      "url": "https://zenn.dev/clopy/articles/claude-subagent-model-force-precedence-gap",
+      "site": "Zenn(AI)",
+      "published": "2026-09-11T04:13:38Z",
+      "description": "結論から: 環境変数だけでは足りない\n.claude/agents/*.md にコスト重視のカスタムsubagentを model: sonnet で固定し、CIや共有devcontainerで CLAUDE_CODE_SUBAGENT_MODEL=haiku をexportしている場合、それだけでは狙い通りにコストを抑えられません。\nClaude Code 2.1.257で実際に検証したところ、...",
       "category": "AI・技術",
       "rss_category": "",
       "image_url": ""

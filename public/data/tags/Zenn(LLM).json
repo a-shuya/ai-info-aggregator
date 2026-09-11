@@ -1,18 +1,8 @@
 {
   "site": "Zenn(LLM)",
-  "last_updated": "2026-09-11T15:05:55.810100",
-  "total_articles": 6014,
+  "last_updated": "2026-09-11T18:28:48.364958",
+  "total_articles": 6012,
   "articles": [
-    {
-      "title": "量子化はコードの正しさを変えるか: V100で1,692問を実行して測った",
-      "url": "https://zenn.dev/phpmyadmin/articles/v100-coding-llm-quant",
-      "site": "Zenn(LLM)",
-      "published": "2026-09-11T10:23:16Z",
-      "description": "この記事について\nこの記事はLLMが書いた測定報告である。筆者の指示のもとで、実機への接続、モデルの取得、測定までをLLMが実行し、その作業ログと測定値をもとに本文を構成した。\n\n 課題\nTesla V100 32GB でコーディング用のローカル LLM を組むとき、どの量子化を選ぶべきかを決める。\n量子化を下げればモデルが小さくなり、速度が上がり、KV キャッシュに回せる VRAM が増える。一...",
-      "category": "AI・技術",
-      "rss_category": "",
-      "image_url": ""
-    },
     {
       "title": "RAGで十分？ 学習する？――LLMを自社向けに適応する技術の選び方",
       "url": "https://zenn.dev/highreso/articles/a593d3556c2cc9",
@@ -29,26 +19,6 @@
       "site": "Zenn(LLM)",
       "published": "2026-09-11T07:44:27Z",
       "description": "0. 結論\nClaude Codeのフック（Hook）は「自動化できる」ことと「安く自動化できる」ことが別軸であり、両者を混同すると意図せずレート制限に到達する。本稿では実際にレート制限を踏んだ事例をもとに、フック設計の見直し指針を4点にまとめる。\n\n\nフック実行によるサブセッション生成の罠： SessionEndやPreCompact等のフックは、処理内容が空であってもClaude Codeのサ...",
-      "category": "AI・技術",
-      "rss_category": "",
-      "image_url": ""
-    },
-    {
-      "title": "文字数・バイト数からのトークン数推定は実際どれくらいズレるのか",
-      "url": "https://zenn.dev/aiforall/articles/63501821b1e50e",
-      "site": "Zenn(LLM)",
-      "published": "2026-09-11T05:33:13Z",
-      "description": "背景\n実務で、LLM への入力テキストがトークン数の上限を超えてエラーになる事象が発生し、対策を検討する場面がありました。対策案として、LLM に投げる前に文字数やバイト数、あるいは tiktoken のようなトークナイザーでトークン数を事前に見積もり、上限を超えそうであれば送信前にエラーを表示する「事前バリデーション」方式が候補に挙がりました。\nしかし議論の中で、「その見積もりが、実際に LLM...",
-      "category": "AI・技術",
-      "rss_category": "",
-      "image_url": ""
-    },
-    {
-      "title": "CLAUDE_CODE_SUBAGENT_MODELだけではpin済みsubagentのモデルを変えられない",
-      "url": "https://zenn.dev/clopy/articles/claude-subagent-model-force-precedence-gap",
-      "site": "Zenn(LLM)",
-      "published": "2026-09-11T04:13:38Z",
-      "description": "結論から: 環境変数だけでは足りない\n.claude/agents/*.md にコスト重視のカスタムsubagentを model: sonnet で固定し、CIや共有devcontainerで CLAUDE_CODE_SUBAGENT_MODEL=haiku をexportしている場合、それだけでは狙い通りにコストを抑えられません。\nClaude Code 2.1.257で実際に検証したところ、...",
       "category": "AI・技術",
       "rss_category": "",
       "image_url": ""
@@ -119,6 +89,16 @@
       "site": "Zenn(LLM)",
       "published": "2026-09-11T00:50:05Z",
       "description": "AIを使っているのに、LLMのことを説明できないエンジニアへ\nエンジニアのためのAI基礎教養 #1\nChatGPTにコードを書かせる。\nエラーメッセージを貼って原因を聞く。\n仕様書を要約させる。\nレビューを手伝ってもらう。\n今では、AIを使って開発すること自体は珍しくなくなりました。\nでも、こんな質問をされたらどうでしょう。\n\n「そもそもChatGPTって、何をしているの？」\n\n\n「LLMって普通...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "LLM判定が失敗しても、全件通さない",
+      "url": "https://zenn.dev/miyakona/articles/llm-invariant-tests-fail-closed",
+      "site": "Zenn(LLM)",
+      "published": "2026-09-10T23:20:43Z",
+      "description": "収集した候補を大規模言語モデル（LLM）で分類し、関連するものだけを後段へ送るバッチのテストを見直していました。LLMの出力は毎回同じとは限らないので、「入力Aなら必ず関連あり」と固定するテストは不安定になります。\nかといって判定部分をテストから外すと、分類器を変更したときに、候補が途中で消えても気づけません。\nもう一つ気になったのが、LLMを呼べないときの挙動でした。APIキーがない、空の値が返...",
       "category": "AI・技術",
       "rss_category": "",
       "image_url": ""

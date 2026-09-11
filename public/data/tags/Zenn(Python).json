@@ -1,24 +1,44 @@
 {
   "site": "Zenn(Python)",
-  "last_updated": "2026-09-11T15:05:55.810100",
+  "last_updated": "2026-09-11T18:28:48.364958",
   "total_articles": 6354,
   "articles": [
+    {
+      "title": "作問のテストケースを生成するのをpythonで作る",
+      "url": "https://zenn.dev/alpha0314alpha/articles/eee9340cce282d",
+      "site": "Zenn(Python)",
+      "published": "2026-09-11T11:42:47Z",
+      "description": "最近お誕生日コンテストを開きたいので作問をしていましたが、\ngen.pyを実行して入力を作ってsolve.pyやsolve.cppを実行して出力を出すのがめんどい、自動化できないか?\nと思いました。\nなのでそのためのコードを作りました。\n\n 1.ファイルを作る\nまずinディレクトリに入力を作ってoutディレクトリに出力を作ってsrcディレクトリに生成のためのコードを書いて実行するようにしようと思い...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "医療機関から「何km・何分」を圏外とするかまで動かせる、居住人口ヒートマップを作った",
+      "url": "https://zenn.dev/hajimeteradio3/articles/77450c56fa3657",
+      "site": "Zenn(Python)",
+      "published": "2026-09-11T11:33:22Z",
+      "description": "はじめに\n全国の地方厚生局から保険医療機関・保険薬局の最新の一覧を収集し、ブラウザ上で可変ヒートマップとして表示するPythonスクリプトを作っています。\n今回、新たに追加したのが 「指定距離圏外の居住人口」　です。(下記URLのkaggleジュピターのブックの出力セル上にあるアプリから、コントロールパネルの「表示する指標」を「指定距離圏外の居住人口」を選択すると、表示されます。)\nhttps:/...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "官報のPDFはコピペすると化ける。Adobe-Japan1のCIDを復号して法令の施行日を機械可読にした",
+      "url": "https://zenn.dev/politics/articles/3fd9e5e6fe0d13",
+      "site": "Zenn(Python)",
+      "published": "2026-09-11T11:25:05Z",
+      "description": "「その法律、いつから施行されるのか」を機械可読で持っている場所がない\n法律・政令・省令が公布されると、必ず施行日が決まります。「令和八年十月十六日から施行する」というあれです。実務ではこの日付が全てで、社労士や税理士が顧問先に案内するタイミングも、企業が就業規則を直す期限も、ここで決まります。\nところが、この日付を機械可読で配っているところが存在しません。\n\ne-Gov法令検索は施行後の条文を持っ...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
     {
       "title": "Codexのservice_tierがpriority（Fast Mode）のまま残留する問題を調査・対策した",
       "url": "https://zenn.dev/emilia_lab/articles/codex-service-tier-priority-residual",
       "site": "Zenn(Python)",
       "published": "2026-09-11T11:16:33Z",
       "description": "TL;DR\n\nCodexでLuna/Terraなどpriority tier モデルを使ったあと、Astraへ戻しても 同一セッション内でservice_tier=\"priority\"が残留するパターンを確認した\n\nconfig.tomlをservice_tier = \"default\"にしていても発生する\n0.153.4・0.154.0の両バージョンで再現確認済み\n\n暫定ワークアラウンド：pri...",
-      "category": "開発",
-      "rss_category": "",
-      "image_url": ""
-    },
-    {
-      "title": "モデルにもSDKにも寿命がある。生成AIを業務に組み込んで踏んだ4つ",
-      "url": "https://zenn.dev/shinsei99/articles/model-lifetime",
-      "site": "Zenn(Python)",
-      "published": "2026-09-11T11:06:53Z",
-      "description": "企画から動画まで一式を自動生成するパイプラインを社内で動かしています。\n生成AIを業務に組み込むと、普通のライブラリとは違う壊れ方をします。4つ挙げます。\n\n ① モデルが提供終了して 404 になる\nある日から、呼び出しがこう返るようになりました。\n404 NOT_FOUND: gemini-2.0-flash is no longer available\n**鍵は有効です。**課金も生きていま...",
       "category": "開発",
       "rss_category": "",
       "image_url": ""
@@ -39,16 +59,6 @@
       "site": "Zenn(Python)",
       "published": "2026-09-11T09:12:40Z",
       "description": "共通ソースの作成\nフォルダなどは以下の感じで用意する\n親フォルダの配下に\n\npyproject.toml\nソースフォルダ\n\nmy-package/\n├─ pyproject.toml\n└─ my_package/\n   ├─ __init__.py\n   └─ sample.py\n\n 最小限のpyproject.toml\n[build-system]\nrequires = [\"setuptools...",
-      "category": "開発",
-      "rss_category": "",
-      "image_url": ""
-    },
-    {
-      "title": "Google Cloud Speech-to-Textの用語ヒントで模擬技術講演のCERが64.8%から25.4%に下がった",
-      "url": "https://zenn.dev/hogehogetaro/articles/google-cloud-speech-transcription",
-      "site": "Zenn(Python)",
-      "published": "2026-09-11T05:22:31Z",
-      "description": "前日のVertex AI RAG Engineをあえて推測させたら、誤答は24/24件から9/24件へ減ったでは、RAGの有無と回答指示でハルシネーションがどう変わるか確認しました。\n今回はGoogle Cloud Speech-to-Textへ技術用語を含む52.41秒の模擬講演音声を送り、どこまで文字起こしできるか確認します。\nクリーン音声とホワイトノイズを加えた音声を、用語ヒントなし・ありの...",
       "category": "開発",
       "rss_category": "",
       "image_url": ""
@@ -109,16 +119,6 @@
       "site": "Zenn(Python)",
       "published": "2026-09-10T23:25:17Z",
       "description": "Excelをインストールできない環境で、既存のExcelファイルを編集したり、VBAを動かしたりしたいことがあります。\nCIやサーバーのバッチで実行するたびにExcelを起動するのは扱いにくいです。大きなファイルになると、読み込みと保存だけで時間がかかり、メモリ使用量も気になります。かといって、すでに使われているワークブックやVBAを別の形式に書き換えるのも簡単ではありません。\nこの問題を自分で解...",
-      "category": "開発",
-      "rss_category": "",
-      "image_url": ""
-    },
-    {
-      "title": "LLM判定が失敗しても、全件通さない",
-      "url": "https://zenn.dev/miyakona/articles/llm-invariant-tests-fail-closed",
-      "site": "Zenn(Python)",
-      "published": "2026-09-10T23:20:43Z",
-      "description": "収集した候補を大規模言語モデル（LLM）で分類し、関連するものだけを後段へ送るバッチのテストを見直していました。LLMの出力は毎回同じとは限らないので、「入力Aなら必ず関連あり」と固定するテストは不安定になります。\nかといって判定部分をテストから外すと、分類器を変更したときに、候補が途中で消えても気づけません。\nもう一つ気になったのが、LLMを呼べないときの挙動でした。APIキーがない、空の値が返...",
       "category": "開発",
       "rss_category": "",
       "image_url": ""
