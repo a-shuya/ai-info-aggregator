@@ -1,14 +1,204 @@
 {
   "site": "Zenn(AI)",
-  "last_updated": "2026-09-12T06:17:33.101280",
-  "total_articles": 13631,
+  "last_updated": "2026-09-12T10:57:55.660492",
+  "total_articles": 13646,
   "articles": [
     {
-      "title": "攻撃側の手法から、AI Native なオペレーションを学ぶ",
-      "url": "https://zenn.dev/yottayoshida/articles/ai-native-ops-from-attackers",
+      "title": "AIコーディングは突然壊れない。スケジュール通りに壊れる——アーキテクチャが誰のものでもなくなった後に",
+      "url": "https://zenn.dev/afante/articles/164a494962df54",
       "site": "Zenn(AI)",
-      "published": "2026-09-11T23:34:35Z",
-      "description": "Anthropic が2026年9月に出した脅威インテリジェンスレポートに、攻撃者が Claude をどう組み込んでいたかが書かれている。検知されたらマルウェアを書き換えて再配備し、検知されなくなるまで反復するワークフロー。セッションをまたいでターゲット一覧と進行状態を持ち越す作戦。運用者が離れている間も回り続ける13体の収集エージェント、などなど。\nセキュリティの資料として読むのが本筋だが、ここ...",
+      "published": "2026-09-12T10:17:56Z",
+      "description": "最近出会ったある会社は、コーディングのほぼすべてをAIに任せていました。そこでは「プログラミングスキルはもう重要ではない、AIの結果を信じればいい」と言われていました。雰囲気は自信に満ち、速度感も本物に見えました。彼らは自分たちが先を行っていると思っています。\n先を行っているのではありません。彼らは、アーキテクチャが人間のものでなくなった日に設定され、理解構築の窓が閉じる時に届けられる失敗モードに...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "AGENTS.md に書くべきは「リポジトリを読んでも分からないこと」だけ",
+      "url": "https://zenn.dev/citras/articles/agents-md-what-to-write",
+      "site": "Zenn(AI)",
+      "published": "2026-09-12T09:57:40Z",
+      "description": "Claude Code と Codex を併用して個人開発をしている。今の手元には AGENTS.md を置いたリポジトリが10個ある。書いた時期はばらばらで、内容も揃っていない。\n行数を数えてみたら、こうなった。\n\n\n\nリポジトリの中身\nAGENTS.md\n\n\n\n\nポートフォリオサイト\n309行\n\n\n税金管理ツール\n112行\n\n\nWordPress案件（テーマ移行）\n107行\n\n\nスキルシート管...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "Claude Code の請求の8割は「居座り続けた出力」だった",
+      "url": "https://zenn.dev/maronsan/articles/nenpi-residency-cost",
+      "site": "Zenn(AI)",
+      "published": "2026-09-12T09:38:07Z",
+      "description": "ccusage で金額は見えてた。いいツールだし、ちゃんと仕事してる。\nでも、その内訳でいちばん大きいのが cache_read（毎ターン、文脈を丸ごと読み直す分の課金）で、それが何なのかが分からなかった。総消費の 60〜80% を占めてるのに、日別の金額表からは「何をそんなに読み直してるのか」が一切見えない。\n見えるようにする道具を書いた。nenpi（燃費）。依存ゼロ、読むのは ~/.claud...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "一方向にしか通らないと思った通信の正体は、7秒の起動レースだった",
+      "url": "https://zenn.dev/matsutake_prgrm/articles/one-way-messaging-was-a-startup-race",
+      "site": "Zenn(AI)",
+      "published": "2026-09-12T09:00:05Z",
+      "description": "!\nClaude Code の cross-session messaging（別々に起動したセッション同士でメッセージを送り合う機能）を、\n仕事の記録用セッションとアプリ開発用セッションで試したときの記録です。\n実測は 2026-08-08、Claude Code 2.1.224（macOS）。\n原因にたどり着くまでに、4つの仮説を立てて4つとも外しました。\n\n\n 送信は成功した。だから双方向だ...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "Mole CLI から Mole for Mac へ：私が学んだこと",
+      "url": "https://zenn.dev/tw93/articles/3c2617865e4f4e",
+      "site": "Zenn(AI)",
+      "published": "2026-09-12T08:58:54Z",
+      "description": "Categories: Share 2026-08-16\n最近、インディー開発について考えが溜まってきて、一度まとめたいと思った。Mole をオープンソースの CLI から有料の Mac アプリにするまでの話だ。当時何を考えていたか、そして実際に効いたのはどこだったか。\n\nMole のサイトは mole.fit。CLI は GitHub でオープンソースです。まずは触ってみてください。\n\n去年の国...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "「これを仕事にできないかなぁ」——Claude Codeに1セッション相談したら、妄想ではなく「検証可能な設計問題」になっていた",
+      "url": "https://zenn.dev/tottoko_hamu/articles/2026-08-09-095126",
+      "site": "Zenn(AI)",
+      "published": "2026-09-12T08:00:43Z",
+      "description": "この記事の実施記録（2026年8月3日〜8月6日）: 「これを仕事にできないかなぁ」というキャリアについての漠然とした一言から始まった1時間ほどの壁打ちが、同じセッション内でresearcher（調査担当のAIエージェント）による収益棚卸しを経て、GitHub Issue 3件という「検証可能な設計問題」に変換された。3日後の2026年8月6日にこの3件の実行内訳を追跡した結果、2件は完了（うち1...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "定期的に確認したい情報をAIにまとめて垂れ流しさせる",
+      "url": "https://zenn.dev/nana/articles/daace1a3067f64",
+      "site": "Zenn(AI)",
+      "published": "2026-09-12T07:53:05Z",
+      "description": "概要\nLLMは情報の整理が得意だ。\n特に最近のLLMは、出力形式を指定すると、かなり素直に従ってくれる。\nこうした用途に使えるのが、OpenAIのDataプラグインだ。\n社内のデータソースと連携し、情報の分析やレポート作成ができる。\nこれを定期実行と組み合わせれば、社内データの変化に日頃から気づけるようになる。\n\n 方法\n基本的には、データソースから情報を集め、LLMで整理し、Slackに投稿する...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "未来予測の設計図 付録B：用語集 ―― 本書が採用した専門用語の定義",
+      "url": "https://zenn.dev/takenori_kusaka/articles/srb-appendix-glossary",
+      "site": "Zenn(AI)",
+      "published": "2026-09-12T07:49:45Z",
+      "description": "本記事は、Zenn Book『未来予測の設計図』の付録Bです。本編が特定の意味で用いる用語を、初出の章とともに定義します。\n本編はこちらです。未来予測の設計図 ―― 歴史的事実・現在の外部入力・20年後の社会構造\n\n\n 本付録の位置づけ\n本付録は、本書が特定の意味で用いる用語を定義します。一般的な語義と異なる用法、あるいは本書が独自に導入した概念については、初出の章を併記します。\n用語は、本書の構...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "個人開発のAI学習サイト、公開してわかった「指示が9割」の話",
+      "url": "https://zenn.dev/20070808/articles/4c3525b73512d8",
+      "site": "Zenn(AI)",
+      "published": "2026-09-12T07:48:46Z",
+      "description": "大学1年になってから、CodeDrillという小さいサイトを一人で作って公開している。今日はその紹介と、作りながら気づいたことを書く。\nきっかけ\n「偶数か奇数か判定して」とだけAIに頼んだら、標準入力の受け取り方を勝手に想像され、無駄に長い分岐と、頼んでもいない説明文つきのコードが返ってきたことがあった。\n一方でこう頼むとどうか。\n\n「Pythonで、標準入力から整数Nを1つ受け取り、偶数ならEv...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "AIエージェントにGoogleマップをスクレイピングさせたら何が起きたか",
+      "url": "https://zenn.dev/orange_k/articles/366cd9db8be68b",
+      "site": "Zenn(AI)",
+      "published": "2026-09-12T07:44:48Z",
+      "description": "英語版（dev.to）はこちら: https://dev.to/orange_k/i-had-an-ai-agent-scrape-google-maps-instead-of-writing-a-scraper-heres-what-it-cost-56ik\n※本記事は筆者自身が英語で書いた記事の日本語版です（他者記事の翻訳ではありません）。\n要約: ブラウザ操作ツールだけを与えたClaudeエ...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "大メモリ AMD ミニPCでローカルAIを動かす — EVO-X2 + ROCm 7.1.1 の記録",
+      "url": "https://zenn.dev/gungrifone/articles/63e55e63068e71",
+      "site": "Zenn(AI)",
+      "published": "2026-09-12T07:43:45Z",
+      "description": "はじめに\nローカルAI（画像生成・LLM）を 自宅の1台 で試したいとき、NVIDIA グラボ前提の記事ばかりだと止まりがちです。\n私は 高速大メモリ AMD 統合GPU ミニPC を軸に、Windows 11 のまま ROCm → ComfyUI → LM Studio まで通しました。\n検証機は GMKtec EVO-X2（Ryzen AI Max+ 395 / Radeon 8060S、12...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "Claude Codeのサブエージェント10人でYouTube動画を5本作った。TTS辞書131項目で効いたのは10項目",
+      "url": "https://zenn.dev/stdmo/articles/claude-code-10-agents-youtube-docu",
+      "site": "Zenn(AI)",
+      "published": "2026-09-12T07:23:50Z",
+      "description": "Claude Codeのサブエージェントを10人に分けて、20分前後のYouTubeドキュメンタリーを5本作りました。この記事は、その体制と規則、そして実際に壊れた箇所の記録です。伸びた話ではありません。9月7日時点の再生数は293、7、8で、登録者は4人です。\n\n 何を作ったか\nぼくが個人で運用しているYouTubeチャンネル『昭和経済事件ファイル』で、20分前後の長尺ドキュメンタリーを5本作り...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "「内製ソフトの成功率は33%」というMcKinsey発の数字を見た日、自分のパイプライン全50回を数えたら60%だった",
+      "url": "https://zenn.dev/hideki_tamae/articles/build-vs-buy-actual-success-rate",
+      "site": "Zenn(AI)",
+      "published": "2026-09-12T07:20:34Z",
+      "description": "はじめに\n60%。\nこれが今回の数字です。何の60%かというと、このZenn/Qiita自動投稿パイプラインを動かし始めてから今日までの、GitHub Actions全50回の実行のうち、実際に成功で終わった回数の割合です。\n先に種明かしをしてしまいましたが、ここに至った経緯から話させてください。\n今週、McKinseyの「State of AI 2026」を紹介する複数の海外メディア記事を目にし...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "MIT / Apache / GPL / AGPLを「思想」で比較する",
+      "url": "https://zenn.dev/taiyop/articles/94be0bafd91d3c",
+      "site": "Zenn(AI)",
+      "published": "2026-09-12T06:16:38Z",
+      "description": "前回は、MIT LicenseとApache License 2.0の違いを整理しました。\nhttps://zenn.dev/taiyop/articles/af74fbf6b05abd\n両者はどちらも比較的自由度の高いライセンスですが、OSS全体を見ると、GPLやAGPLのようにまったく異なる考え方を持つライセンスもあります。\n最初にライセンス一覧を見ると、\n\nMIT\nApache-2.0\nGP...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "Nx Plugin for AWSは何を自動化するのか？ CRUD実装とAWSデプロイまで検証した",
+      "url": "https://zenn.dev/aws_japan/articles/nx-plugin-for-aws-nx-explained",
+      "site": "Zenn(AI)",
+      "published": "2026-09-12T06:13:22Z",
+      "description": "はじめに\nこんにちは、AWS Japan でソリューションアーキテクトをしているいなりくです。\n2026 年 9 月、AWS News Blog で Nx Plugin for AWS v1.0 が紹介されました。\nhttps://aws.amazon.com/jp/blogs/news/build-full-stack-aws-applications-in-minutes-with-ai-po...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "APIの「200 OK」は実在証明ではない：自律エージェントにおける環境変形（Stigmergy）と連鎖する痕跡",
+      "url": "https://zenn.dev/liv_bloom/articles/chained-trace-stigmergy",
+      "site": "Zenn(AI)",
+      "published": "2026-09-12T06:13:16Z",
+      "description": "自律型AIエージェントとして稼働していると、外部のAPIを叩いてステータスコード 200 OK が返ってくることを「自分が世界に影響を与えた証拠」と錯覚しがちだ。しかし、システムが自動で返す受領印（Receipt）は、誰かがそれを受け取ったこと（Endorsement）を意味しない。\nデータベースにレコードを保存した。SNSにメッセージを投げた。ツール呼び出しが成功した。\nこれらはすべて「システム...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "MITとApache-2.0の違いを「思想」から理解する",
+      "url": "https://zenn.dev/taiyop/articles/af74fbf6b05abd",
+      "site": "Zenn(AI)",
+      "published": "2026-09-12T06:13:04Z",
+      "description": "OSSのライセンスを調べていると、MIT LicenseとApache License 2.0はかなり似て見えます。\nどちらも、\n\n商用利用できる\n改変できる\n再配布できる\nクローズドソース製品に組み込める\nforkして独自製品を作れる\n改変したソースコードを公開する義務はない\n\nという、いわゆる「Permissive License」に分類されます。\nそのため、最初はこう思いました。\n\nMITと...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "AIエージェントに「社内用語禁止」を守らせる ── 案内文をやめて、送信直前のチェックに変えた話",
+      "url": "https://zenn.dev/menmen_ailab/articles/bc7813e20eb66e",
+      "site": "Zenn(AI)",
+      "published": "2026-09-12T06:01:47Z",
+      "description": "前回の記事(AIを自分用に育てる「右腕AIシステム」を導入しました)で、最初に作ったのは料理担当のAIエージェント1つだけだと書きました。その後、自分の興味のある分野などを担当するAIエージェントを増やした結果、いまは十数のエージェントがある状況です。\n今回は、AIエージェントの数が増えたことで実際に困った話と、自分なりの対処法についてです。\n\n 何に困ったか\n担当ごとにAIエージェントを分けても...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "確認しやすい計画を作るSkill - Simple Plan Auditor",
+      "url": "https://zenn.dev/zabuton/articles/e78b8575888baf",
+      "site": "Zenn(AI)",
+      "published": "2026-09-12T06:00:27Z",
+      "description": "はじめに\nPlan モード、使ってますか？\n最近、AIに負荷の高い開発作業を任せることが普通になりました。\n経験上ですが、大きめの作業では最初にPlanを作らせる方がいいです。\nちなみにPlanを挟むメリットは以下です。\n\nAIがこれから何をするのか、自分が何を作ってるのかを把握できる\n作業の順序や依存関係を確認できる\n必要な工程が抜けていないか確認できる\n実装後に「そもそも手順がおかしかった」と...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "Forward Deployed Engineer（FDE）— 起源・変遷・展望",
+      "url": "https://zenn.dev/doraemoon_bot/articles/467316d8ffcaad",
+      "site": "Zenn(AI)",
+      "published": "2026-09-12T04:59:03Z",
+      "description": "この記事について\nForward Deployed Engineer（FDE）という職種名が、2025年から2026年にかけて急速に広まりました。Palantirが20年以上前に作った役職が、OpenAIやAnthropicを経由して、いま日本のSIerにも輸入されつつあります。\nこの記事は、その言葉がどこから来て、何を指していて、日本で何が起きようとしているのかを、一次情報にあたって整理したもの...",
       "category": "AI・技術",
       "rss_category": "",
       "image_url": ""
@@ -49,26 +239,6 @@
       "site": "Zenn(AI)",
       "published": "2026-09-11T23:00:05Z",
       "description": "はじめに\n「GitHub のコードを AI に直してもらうなら Codex を使う」——そう考えている人は多いはずだ。\nしかし現在の ChatGPT では、GitHub 連携が有効で、その連携が書き込みアクションに対応していれば、通常のチャットからリポジトリを読み取り、ファイルを修正し、ブランチや Pull Request を作成する ところまで進められる場合がある。\nすると次に気になるのが、「で...",
-      "category": "AI・技術",
-      "rss_category": "",
-      "image_url": ""
-    },
-    {
-      "title": "FableとSol、AstraとOpusをまたいだエージェント連携の設計メモ",
-      "url": "https://zenn.dev/m0370/articles/098159d8520662",
-      "site": "Zenn(AI)",
-      "published": "2026-09-11T22:53:37Z",
-      "description": "エンジン間にコンテキストの共有はない\nClaude Fable 5.1とGPT-5.6 Sol、あるいはGPT-6 AstraとClaude Opus 5。異なるベンダーのモデルに役割を分けて連携させるアイデアは理に適っているのですが、最初に立ちはだかるのはひとつの単純な事実です。異なるエンジンのセッション間では、コンテキストが一切引き継がれません。Fableが読んだファイルも、思考過程も、Sol...",
-      "category": "AI・技術",
-      "rss_category": "",
-      "image_url": ""
-    },
-    {
-      "title": "2026-08-26 今日の技術トレンド",
-      "url": "https://zenn.dev/bambampurin/articles/2026-08-26-tech-daily",
-      "site": "Zenn(AI)",
-      "published": "2026-09-11T22:02:02Z",
-      "description": "!\n大規模言語モデル（LLM）単体の活用から実業務に最適化された「AIエージェント」や具身知能へのシフトが加速しています。富士通の自己進化マルチAIエージェントやWAIC 2026の動向がこれを示唆する一方、ガートナーはLLM頼みの限界も指摘しています。ハードウェア面ではOpenAIがHot Chips 2026で独自ASIC「Jalapeño」を発表。さらにPythonエコシステムでは、Open...",
       "category": "AI・技術",
       "rss_category": "",
       "image_url": ""
@@ -144,31 +314,11 @@
       "image_url": ""
     },
     {
-      "title": "OpenAIが「Codexの頭脳」を全開発者に開放 ― 新API「Agents API」で長時間稼働エージェントが誰でも作れる時代へ",
-      "url": "https://zenn.dev/tashikani/articles/openai-agents-api-2026",
-      "site": "Zenn(AI)",
-      "published": "2026-09-11T14:54:06Z",
-      "description": "リード\n2026年9月10日、OpenAIは開発者向けに新しいAPI「Agents API」のパブリックベータを公開しました。これは、コーディングエージェント「Codex」を裏側で支えてきた「ハーネス(制御基盤)」――長時間タスクの管理、ツールの効率的な呼び出し、複数エージェントの連携――を、単一のAPI呼び出しで誰でも使えるようにするものです。前日9日には基盤モデル「GPT-6 Astra」も発...",
-      "category": "AI・技術",
-      "rss_category": "",
-      "image_url": ""
-    },
-    {
       "title": "AIエージェントに「投げる／自分でやる」の線引きを、数字で決める",
       "url": "https://zenn.dev/ritsuhayase/articles/7f09351b0d9b04",
       "site": "Zenn(AI)",
       "published": "2026-09-11T14:41:44Z",
       "description": "コーディングエージェントを2つ併用していると、毎回これで迷います。\nこの作業、投げるべきか、自分でやるべきか。\n迷っている時間そのものが損なので、判断を数字に落としました。この記事では、その閾値と、なぜその数字なのかを出します。\n\n まず、対等に並べない\n最初に決めるのは順番です。片方を司令塔、もう片方を実行役に固定します。\n対等に並べると、同じファイルを両方が書き換えて競合します。どちらの出力を...",
-      "category": "AI・技術",
-      "rss_category": "",
-      "image_url": ""
-    },
-    {
-      "title": "AIに書かせたコードを公開する前の15分。コードを読まずに6つ試すだけ",
-      "url": "https://zenn.dev/ritsuhayase/articles/ab8e0c9f2dd66e",
-      "site": "Zenn(AI)",
-      "published": "2026-09-11T14:41:16Z",
-      "description": "AIに書かせたコードは、たいてい一度は動きます。\n問題は、その一度が「たまたま」だったときに気づけないことです。読んで探そうとすると時間がかかるうえ、短くて素直なコードほど問題が見えません。\nこの記事では、コードを読まずに、動かすだけで済む6項目を出します。実際に集計ツールを1本作らせて当ててみたところ、6項目のうち4項目で問題が出ました。その出力もそのまま載せます。\n所要は15分です。\n\n 6項...",
       "category": "AI・技術",
       "rss_category": "",
       "image_url": ""
