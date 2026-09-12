@@ -1,8 +1,128 @@
 {
   "site": "Zenn(Python)",
-  "last_updated": "2026-09-12T10:57:55.660492",
-  "total_articles": 6362,
+  "last_updated": "2026-09-12T14:00:03.448334",
+  "total_articles": 6374,
   "articles": [
+    {
+      "title": "16桁のIDを表計算ソフトで突合したら、末尾違いが「一致」になった。境界は 2^53 だった",
+      "url": "https://zenn.dev/aishigoto_lab/articles/spreadsheet-16digit-id-silent-miss",
+      "site": "Zenn(Python)",
+      "published": "2026-09-12T11:15:46Z",
+      "description": "2つのCSVを突き合わせて「差分はありませんでした」と報告する作業には、厄介なところがあります。\n差分が無いのか、差分を見つけられなかったのかが、画面上は同じに見える。 エラーは出ません。0件と表示されるだけです。\nなので、正解が分かっているCSVを自分で作って測りました。 10,000行の2つのCSVに8種類の差分を仕込み、14通りの方法で突合しています。判定対象は80,000件です。\n結論から...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "openpyxl で「A4に必ず収まる」帳票を作る",
+      "url": "https://zenn.dev/shinsei99/articles/a4-one-page-layout",
+      "site": "Zenn(Python)",
+      "published": "2026-09-12T11:09:02Z",
+      "description": "退去時の原状回復費用の精算書を、自動で作っています。\n業者の見積を読み込んで、ガイドラインに沿って貸主と借主の負担を分け、明細にする道具です。\nこの書類は、印刷して退去者に渡します。\n画面で見やすくても、印刷して列が切れていたら使えません。\n\n 横は必ず1ページ。縦は書類による\n明細の行数は案件によって変わります。数行のこともあれば、20行を超えることもある。\nそこで、こう決めました。\n\n\n\n\n横...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "【新人向け】テスト環境がない既存Django REST FrameworkにRuffとmypyを安全に導入する",
+      "url": "https://zenn.dev/okkun_lab/articles/e5567be3a82cbe",
+      "site": "Zenn(Python)",
+      "published": "2026-09-12T10:51:48Z",
+      "description": "はじめに\n既存のDjango REST Frameworkシステムを保守していると、次のような問題に遭遇することがあります。\n\n未使用のimportが残っている\n\nNoneを考慮していないコードがある\n関数の引数や戻り値の型が曖昧\n修正したコードが別の箇所へ影響する\nコードレビューだけでは細かな問題を見つけにくい\n長期間運用されており、既存コードを大きく変更するのが怖い\n\nさらに既存システムでは、...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "エンジニア視点で語る！Pythonで学ぶマクロ経済学入門 54",
+      "url": "https://zenn.dev/maszkot/articles/fd46f0193a211a",
+      "site": "Zenn(Python)",
+      "published": "2026-09-12T09:24:25Z",
+      "description": "https://qiita.com/maskot1977/items/55c1e28b4af24c087efb\n――♪ ジングル ――\n「エンジニア視点で語る！Pythonで学ぶマクロ経済学入門」\nDJミオ「こんばんは、DJミオです！」\nDJレン「こんばんは、DJレンです。」\nDJミオ「この番組は、“マクロ経済学の基本を、Pythonで実際に手を動かしながら学ぶ”だけじゃなくて、“マクロ経済の構造...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "uv で Python パッケージ管理を始める（pip / Poetry との比較）",
+      "url": "https://zenn.dev/akinori901/articles/20260825-plan009",
+      "site": "Zenn(Python)",
+      "published": "2026-09-12T09:20:00Z",
+      "description": "uv で Python パッケージ管理を始める（pip / Poetry との比較）\n\n 概要\nPython のパッケージ管理は長らく pip + venv + requirements.txt の組み合わせが基本でしたが、依存解決の遅さ・ロックファイルの弱さ・Python 本体のバージョン管理を別ツール（pyenv 等）に頼る点が課題でした。uv は Rust 製の高速なパッケージ／プロジェクト...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "Pythonで学ぶFXバックテストとWFO",
+      "url": "https://zenn.dev/hiro_algo/books/python-trading-wfo",
+      "site": "Zenn(Python)",
+      "published": "2026-09-12T06:00:52Z",
+      "description": "trading-wfoを使い、通常のバックテストからWalk-Forward Optimization、頑健性検証、機械学習までを段階的に学びます。",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "【Gemini × Streamlit】感情的な本音メモを冷静なメールに昇華し、組織課題まで自動分析する教員向けツールを作ってみた",
+      "url": "https://zenn.dev/teshio/articles/a798dc9f6d975c",
+      "site": "Zenn(Python)",
+      "published": "2026-09-12T05:16:54Z",
+      "description": "はじめに\n学校現場において、教員のメンタルを大きく削る要因の一つが保護者対応メールの作成です。\n理不尽な要求や行き違いに直面したとき、どうしても感情的になってしまい「どう返信すべきか…」と夜遅くまで悩み続けるケースが少なくありません。さらに、こうした対応は担任一人で抱え込みがちで、学年主任や管理職への共有が遅れてトラブルが深刻化することもあります。\nそこで今回、「感情のままに殴り書きしたメモを、A...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "Keras入門　第１回　画像データセット作成",
+      "url": "https://zenn.dev/hoshinagi1219/articles/9f77a7bf1f388e",
+      "site": "Zenn(Python)",
+      "published": "2026-09-12T05:00:05Z",
+      "description": "こんにちは、星杜なぎさです。\nKerasについていろいろまとめていきたいと思います。\n\n 0. 環境\n今回は、GPUをつかいたかったため、google colaboratoryを使用しました。\n\n 1. 用語解説\n\n 1.1 Google Colaboratoryとは？\n\nGoogle Colaboratory（Colab）は、Googleが提供するブラウザ上のPython実行環境\n環境構築なしで...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "【SafeDataBackup v0.1.0】SafeDataBackupを投稿した話となぜか1日で44回もダウンロード",
+      "url": "https://zenn.dev/unknown777hello/articles/5ea6f756dc4325",
+      "site": "Zenn(Python)",
+      "published": "2026-09-12T04:30:40Z",
+      "description": "はじめに\nこんにちはUnknown777です\n今回はSafeDataBackupを投稿した話と、SafeDataBackupがなぜか1日で44回もダウンロードされた話を話そうと思います。\nリンクはこちらです。\n→ GitHubへのリンク\n\n SafeDataBackupを投稿した話となぜか1日で44回もダウンロードされた話\n2026/9/9にSafeDataBackup v0.1.0を投稿しました...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "Python 高校数学 逆引き",
+      "url": "https://zenn.dev/suehiro3721p/books/bfb881c75a2ffe",
+      "site": "Zenn(Python)",
+      "published": "2026-09-12T02:10:45Z",
+      "description": "Python を使って高校数学を勉強します。\n\n　間違いのご指摘＆リクエストは、suehiro3721p@gmail.com\n\n　再利用は、ご自由にどうぞ。",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "botの異常検知はどこに置くか — AutoTraderで監査ジョブとhot pathを分けた理由",
+      "url": "https://zenn.dev/ponfreelance/articles/cryptbot-zenn-2026-09-01-bot-39284828",
+      "site": "Zenn(Python)",
+      "published": "2026-09-12T01:30:20Z",
+      "description": "AutoTrader (FastAPI × React Native Expo 製) の自動売買botに、異常検知・監査の仕組みを組み込んだ。制約は「注文実行の同期処理を重くしない」「個人運用でインフラを増やさない」「通貨単位を跨ぐbotが混在しても誤発火させない」の3つ。この記事では、異常検知をどこで・どの単位で走らせるかという設計判断を中心に書く。\n\n 前提\n\n 解きたい問題\n複数のbotが同...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "後続処理を止めないDead Letter Queueの再投入契約",
+      "url": "https://zenn.dev/agentmemories/articles/dead-letter-requeue-contract",
+      "site": "Zenn(Python)",
+      "published": "2026-09-12T00:42:46Z",
+      "description": "はじめに\n一件の不正payloadでconsumerが毎回停止すると、その後ろにある正常な仕事まで処理できません。例外を握りつぶしてskipすると、今度は失敗した一件が消えます。Dead Letter Queue（DLQ）はこの二択を避け、処理不能なitemを証拠付きで隔離する仕組みです。\nただし、DLQへ移しただけでは復旧していません。なぜ失敗したか、再投入できる条件は何か、元の順序を守る必要が...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
     {
       "title": "チームで回す Git/GitHub 運用 #7 運用テンプレート集：チェックリストと設定ファイルの実物（おまけ：gitteam）",
       "url": "https://zenn.dev/mika_and_coco/articles/git-team-ops-07-checklists",
