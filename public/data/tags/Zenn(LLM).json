@@ -1,18 +1,8 @@
 {
   "site": "Zenn(LLM)",
-  "last_updated": "2026-09-12T01:24:56.159004",
-  "total_articles": 6023,
+  "last_updated": "2026-09-12T06:17:33.101280",
+  "total_articles": 6022,
   "articles": [
-    {
-      "title": "2026-08-26 今日の技術トレンド",
-      "url": "https://zenn.dev/bambampurin/articles/2026-08-26-tech-daily",
-      "site": "Zenn(LLM)",
-      "published": "2026-09-11T22:02:02Z",
-      "description": "!\n大規模言語モデル（LLM）単体の活用から実業務に最適化された「AIエージェント」や具身知能へのシフトが加速しています。富士通の自己進化マルチAIエージェントやWAIC 2026の動向がこれを示唆する一方、ガートナーはLLM頼みの限界も指摘しています。ハードウェア面ではOpenAIがHot Chips 2026で独自ASIC「Jalapeño」を発表。さらにPythonエコシステムでは、Open...",
-      "category": "AI・技術",
-      "rss_category": "",
-      "image_url": ""
-    },
     {
       "title": "Amazon Bedrockの初回利用でAnthropicモデルがAccessDeniedになったときに確認したこと",
       "url": "https://zenn.dev/fusic/articles/1b762e38a7fc54",
@@ -29,16 +19,6 @@
       "site": "Zenn(LLM)",
       "published": "2026-09-11T21:26:09Z",
       "description": "この記事で分かること\n「llama.cppが音声モデルに対応した」というポストを見て「もう llama-server で動くのか」と思ったなら、それは半分だけ正解です。\n\n\nLFM2.5-Audio-1.5B は音声認識（ASR）なら実機で動きます。ただし本家 llama.cpp ではなく、Liquid AI が配布する専用ビルドが必要です\nテキスト読み上げ（TTS）は本家 llama.cpp に...",
-      "category": "AI・技術",
-      "rss_category": "",
-      "image_url": ""
-    },
-    {
-      "title": "次トークン予測を「目的関数・文脈内学習・評価」に分解する",
-      "url": "https://zenn.dev/kas_blog/articles/20260509-llm-10-next-token-prediction",
-      "site": "Zenn(LLM)",
-      "published": "2026-09-11T18:35:31Z",
-      "description": "LLMの学習目標を「次のtokenを当てるだけ」と説明すると、質問応答、翻訳、コード生成、few-shot適応との間に大きな飛躍が残ります。\n重要なのは、目的関数が単純であることと、目的関数を広いdata上で解くための内部計算が単純であることは別だという点です。次tokenの条件付き確率を改善するには、局所的な共起だけでなく、文書内の参照、taskの規則、複数段階の手順を使う方が有利な場面がありま...",
       "category": "AI・技術",
       "rss_category": "",
       "image_url": ""
@@ -69,6 +49,16 @@
       "site": "Zenn(LLM)",
       "published": "2026-09-11T13:55:30Z",
       "description": "本記事は 実装タスクを外注するモデルは何が適切なのか？ミニゲームを実装させるベンチマーク のシリーズです。このベンチマークを読む上での注意点は以下を参照してください。\n\n今回は親エージェントを claude-opus-5@max、子エージェント（実装の外注先）を Devin CLI 上の SWE-2 に固定して、SWE-2 の各 effort でどのように性能が変化するのかを詳しく見ます。\n\n 今...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "圧縮KVキャッシュを下書きに使い、出力を変えず最大4倍にするVeriCache",
+      "url": "https://zenn.dev/okssusucha/articles/20260719-vericache-lossless-kv-cache",
+      "site": "Zenn(LLM)",
+      "published": "2026-09-11T12:12:51Z",
+      "description": "KVキャッシュを圧縮すると、短い応答ならほとんど気づかない。ところが長いコード生成やエージェントのツール呼び出しでは、途中から出力がじわじわ崩れて、最後には別物になる。この「短距離では無害、長距離では致命的」という性質が、KV圧縮を本番に持ち込むときの一番の悩みどころだった。\nVeriCache という論文（arXiv:2605.17613、2026年5月）は、この問題を真正面から潰そうとするので...",
       "category": "AI・技術",
       "rss_category": "",
       "image_url": ""
