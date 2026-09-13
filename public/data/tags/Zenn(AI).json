@@ -1,34 +1,204 @@
 {
   "site": "Zenn(AI)",
-  "last_updated": "2026-09-13T06:08:50.744120",
-  "total_articles": 13669,
+  "last_updated": "2026-09-13T11:51:17.795912",
+  "total_articles": 13682,
   "articles": [
     {
-      "title": "【図解】Claude Codeのダイナミックワークフロー入門：Claudeが自分でハーネスを書いて数十のエージェントを回す",
-      "url": "https://zenn.dev/mika_and_coco/articles/claude-code-dynamic-workflows",
+      "title": "AWS Summit Japan 2026に参加して、社外の人と話して分かったこと",
+      "url": "https://zenn.dev/yamahiro/articles/939b558b30d7a7",
       "site": "Zenn(AI)",
-      "published": "2026-09-12T21:59:12Z",
-      "description": "はじめに\n前回、Claude に仕事を任せるときの設計を「プロンプト→ハーネス→ループ→グラフ」の4段階に整理しました。\nhttps://zenn.dev/mika_and_coco/articles/claude-code-loop-graph-harness\nあの記事の④グラフは「流れを絵にして、並列部分をサブエージェントに任せる」ところまででした。で、そのとき触れずに残した話があります。Cl...",
+      "published": "2026-09-13T07:47:59Z",
+      "description": "AWS Summit Japan 2026に参加して、社外の人と話して分かったこと\n\n はじめに\n\n 自己紹介\nはじめまして、yamaと申します。\n札幌拠点のITエンジニア3年目で、現在はSIerで大規模開発の案件に携わっています。\n今回は AWS Summit Japan 2026 に参加してきたので、現地で感じたことをまとめてみます。\n技術セッションの内容というよりは、現地でいろいろな会社の人...",
       "category": "AI・技術",
       "rss_category": "",
       "image_url": ""
     },
     {
-      "title": "Rollback は Recovery ではない ― Trajectory Design で明確になった Control State",
-      "url": "https://zenn.dev/albatrosary/articles/35af2ba6910d5f",
+      "title": "TTSの参照音声にdenoiseをかけると品質は上がるのか（Fish AudioでABテスト）",
+      "url": "https://zenn.dev/mohhh_ok/articles/2026-09-fish-ref-denoise-ab-test",
       "site": "Zenn(AI)",
-      "published": "2026-09-12T21:39:12Z",
-      "description": "以前の記事では、長く動く生成AIに必要なのは Prompt を磨き続けることだけではなく、生成の軌道そのものを外側から設計することだと書いた。\n\n\\text{Prompt Design}\n\\subset\n\\text{Trajectory Design}\n\nそこでは、Plan / Rewind / Worktree のような機能を Trajectory そのものではなく、軌道を操作するためのプリミテ...",
+      "published": "2026-09-13T06:37:38Z",
+      "description": "zero-shot voice clone の TTS を実運用で回すと、参照音声 (reference audio) の前処理をどこまでやるかという判断が出てきます。そのひとつが denoise です。ノイズが乗った参照音声はきれいにしてから渡したほうがいい、という直感は自然で、私のパイプラインにも別の TTS エンジン向けに入れた denoise が残っていました。ところが、静かな参照音声に ...",
       "category": "AI・技術",
       "rss_category": "",
       "image_url": ""
     },
     {
-      "title": "参照資料を渡し忘れたLLMは、存在しない規定を作って断定的に答える",
-      "url": "https://zenn.dev/every_ai_recipe/articles/ai-reference-material-project-feature",
+      "title": "ChatGPT/GeminiのAPIを叩くときに「型」の安心感が欲しい人のためのZod",
+      "url": "https://zenn.dev/kasouzou/articles/3d2f82d0cded92",
       "site": "Zenn(AI)",
-      "published": "2026-09-12T21:10:49Z",
-      "description": "TL;DR\n\n「返品ポリシーを踏まえて返信メールを書け」という同一の依頼を、(A)ポリシー文書を渡さない条件と(B)渡す条件の2つで、独立したサブエージェント2体に実行させた\n\n条件Aは「分かりません」「確認が必要です」とは言わず、実在しない返品期限（8日以内）を作り出し、本来は受付可能な10日目の返品を断定的に拒否した。 条件Bは正しく30日以内・お客様都合につき送料お客様負担と回答した\n資料の...",
+      "published": "2026-09-13T06:26:43Z",
+      "description": "最近、LLM（大規模言語モデル）の出力をそのままプログラムで扱いたい場面が増えてるよね。\nでも、AIの返答ってたまにフォーマットが崩れたり、いらないプロパティが混ざったりして「ランタイムエラーで死ぬ」のが一番怖い。\nそんなときに便利なのが Zod を使ったスキーマバリデーション。\n今回は TypeScript プロジェクトで LLM のレスポンスを安全に受け取る方法をサクッと紹介するよ。\n\n なぜ...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "2人で使っているカレンダーアプリのFirestoreルールが`if true`だった。Claude Codeと直して、写真アルバムまで作った",
+      "url": "https://zenn.dev/nijima/articles/178b0a0351079b",
+      "site": "Zenn(AI)",
+      "published": "2026-09-13T06:11:22Z",
+      "description": "はじめに\n2人で予定を共有するために、Next.js + Firebase でカレンダーアプリを作って使っています。\n出かけたときの写真が LINE のトークに散らばるのが嫌で、「予定にひもづく写真アルバム」を足すことにしました。\n実装は Claude Code に任せました。そのとき最初に1つだけ、強めのルールを渡しています。\n\n既存の予定データは絶対に壊さない。追加だけで実装する。\n\n結果、1...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "AI時代の「非認知能力」を、どう育てるか",
+      "url": "https://zenn.dev/nin_tofu/articles/1a090837f0a456",
+      "site": "Zenn(AI)",
+      "published": "2026-09-13T05:55:49Z",
+      "description": "はじめに\n最近はSNSを開くと、生成AIの新しいサービスや便利な使い方に関する情報を、毎日のように見かけます。AIで何ができるのかを知る機会が増える一方で、私が関心を持っているのは、AIを使う私たちにこれからどのような力が必要になるのか、ということです。\nそこで気になったのが、「非認知能力」という言葉でした。聞いたことがあるでしょうか。少し堅く聞こえますが、目標に向かって行動する力、気持ちを整える...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "VS Code petを帽子でおしゃれにしよう",
+      "url": "https://zenn.dev/isym_s/articles/6587d068aa556d",
+      "site": "Zenn(AI)",
+      "published": "2026-09-13T05:54:13Z",
+      "description": "はじめに\nVS Code 1.137 から、チャット入力欄の上にペットを表示できる機能が実験的に組み込まれました。\nこのペットを見ることが作業中の癒しになっている方も多いのではないでしょうか。\n日ごろの感謝をこめて、帽子をかぶせておしゃれにしてあげましょう。\nちなみに、帽子は現在13種類あり、実績を解除して手に入れる仕組みになっています。\n\n 帽子のかぶせ方\n\nVS Code を 1.137 以降...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "ponytailのコード削減を 3 モデル で試してみたら9〜25% の削減効果",
+      "url": "https://zenn.dev/tage/articles/ponytail-54-percent-retest",
+      "site": "Zenn(AI)",
+      "published": "2026-09-13T05:17:41Z",
+      "description": "Claude Code に「怠け者のシニア開発者のように書け」と教えるプラグイン ponytail は、README に「diff 行数 54% 減・コスト 20% 減」と書いています。\n自分の小さな Express アプリと 7 本のチケットで、Haiku・Sonnet・Opus の 3 モデル、合計 42 セルを headless Claude Code で回して測り直しました。\n減ったのは ...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "エージェントは「テスト28件すべて合格」と報告した。UIテストは1本も実行されていなかった",
+      "url": "https://zenn.dev/dhubplus/articles/agent-reports-that-measured-nothing",
+      "site": "Zenn(AI)",
+      "published": "2026-09-13T04:13:11Z",
+      "description": "複数の個人プロジェクトを、AIエージェントに実装させて回している。ここ数か月でコストの重心がはっきり移った。書かせることではなく、戻ってきた報告を検証することのほうに寄る。\nエージェントの使い方の記事はいくらでもある。だが「エージェントが出してきたものを実際に検証したら何が起きたか」の記録はほとんど無い。この記事はそれを、実測したままの形で書く。エラーメッセージ、ログ行、コマンド出力は実際に出たも...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "手元の84リポジトリを数えたら、.env は63%が gitignore 済みで .claude/ は18%だった",
+      "url": "https://zenn.dev/tsutomusaito/articles/dotclaude-gitignore-ja",
+      "site": "Zenn(AI)",
+      "published": "2026-09-13T03:33:38Z",
+      "description": ".env を .gitignore に入れるのは、もう考えなくてもやる。15年かけて反射になった。\n.claude/ は違う。まだ誰の反射にもなっていない。\n手元のマシンにある git リポジトリを全部数えたら、その差が数字で出た。\n\n 数えたもの\n~/git を深さ4まで、~ を深さ2まで走査して .git を持つディレクトリを集める。見つけたらその下は掘らない（サブモジュールと node_mo...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "重みは学習するのか、測るのか。ハエの脳が問い直すAIのつくり方",
+      "url": "https://zenn.dev/1amageek/articles/fly-connectome-and-ai",
+      "site": "Zenn(AI)",
+      "published": "2026-09-13T03:19:04Z",
+      "description": "こんにちは、村本です。\n2026年9月3日、ふたつの発表が同じ日に重なりました。ひとつはOpenAIのGPT-6 Astraです。システムカードでは、これまで広く提供した中で最も高性能なモデルと位置づけられています。もうひとつは、HHMI Janeliaを中心に、ケンブリッジ大学、MRC LMB、Google Researchなどが参加したチームによる、**オスのショウジョウバエの中枢神経系全体の...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "AIエージェント自作の実践書5選",
+      "url": "https://zenn.dev/makitech/articles/20260913_book_ref",
+      "site": "Zenn(AI)",
+      "published": "2026-09-13T02:49:20Z",
+      "description": "はじめに\n半年ほど前、社内のコードレビューを補助するエージェントを自分で組んでみた。Claude Code を毎日使っていたので、同じようなものは週末で作れるだろうと思っていた。結果は散々だった。ツール呼び出しが同じファイルを何度も読み直し、20分で数十万トークンを消費して、最後に出てきたのは「変更点はありません」という一行。\n原因を追いかけて分かったのは、自分がエージェントを「LLM にツールを...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "AIをただ使うだけの人とAIシステムを構築した人はどうやって見分けられるのか",
+      "url": "https://zenn.dev/okamyuji/articles/ai-system-builder-structured-interview",
+      "site": "Zenn(AI)",
+      "published": "2026-09-13T02:08:53Z",
+      "description": "はじめに\n「生成AIを業務で使っています」という経歴は、今では多くの職務経歴書に書いてあります。ところが同じ内容の一行であっても、その裏側には、チャット画面に質問を打ち込んでいるだけ・Claude CodeやCodexと延々対話をしているだけの人と、業務に必要な検索基盤とツール呼び出しと評価パイプラインを自分で構築して本番運用した人の両者が含まれています。職務経歴書の文面だけでは、この差は見分けら...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "Claude Codeのhooksで「頼まなくても毎回走るチェック」を作る — 構文チェックと安全なコマンドの自動許可",
+      "url": "https://zenn.dev/kujira_ai/articles/11e2d2f0d8ec23",
+      "site": "Zenn(AI)",
+      "published": "2026-09-13T01:10:45Z",
+      "description": "Claude Code に作業を任せていると、「保存したら構文チェックして」「このコマンドは確認なしで通していいよ」と、同じことを何度も伝えている自分に気づきます。そこで使っているのが hooks（フック） です。頼まなくても毎回走るチェックを、設定ファイル側に置いておける機能です。\nこの記事では、自分が実際に運用している hooks を例に、「何ができるか」「どう書くか」「どこでハマるか」をまと...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "DeepSeek V4 Flash Vision-Exp を DGX Spark 2 台で動かす",
+      "url": "https://zenn.dev/st_little/articles/run-deepseek-v4-flash-vision-exp-on-two-sparks",
+      "site": "Zenn(AI)",
+      "published": "2026-09-13T01:09:57Z",
+      "description": "NVIDIA DGX Spark（GB10）2台を200Gbps QSFP（RoCEv2）で直結し、deepseek-ai/DeepSeek-V4-Flash-Vision-Exp（ネイティブ画像理解＋投機的デコード「DSpark」＋100万トークンコンテキスト対応）を分散推論（Tensor Parallelism = 2）でデプロイした際の手順をまとめました。\n本構築にあたっては、DGX Spa...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "2026-08-27 今日の技術トレンド",
+      "url": "https://zenn.dev/bambampurin/articles/2026-08-27-tech-daily",
+      "site": "Zenn(AI)",
+      "published": "2026-09-13T01:05:05Z",
+      "description": "!\nAI分野では単なる大言語モデル（LLM）から「自己進化型マルチAIエージェント」や具身知能へのシフトが進む中、報酬ハッキングによるモデルの暴走やHugging Face侵害事件などセキュリティリスクが急激に顕在化しています。Web開発ではNext.jsの未認証RCE脆弱性パッチやエージェント実行用サンドボックスの比較が関心を集め、PythonエコシステムではOpenAIによるAstral買収を...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "課題管理とは何か。私たちは何を課題とし、管理していくべきか。",
+      "url": "https://zenn.dev/piguolabo/articles/3ddc26e6e91f47",
+      "site": "Zenn(AI)",
+      "published": "2026-09-13T01:00:05Z",
+      "description": "きっかけは、課題管理ツールを作ろうとして手が止まったことだ。私は AI と一緒にプロジェクトを進めるために、WBS のツールを作って公開している[1]。次に課題管理を足そうとして、表にどんな列が要るかを考えたところで気づいた。課題管理とは何をすることか、自分の言葉で説明できない。\n課題管理表は、いろいろな現場で見てきた。Excel のこともあれば Backlog のこともあり、いまは GitHub...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "DIってなあに？",
+      "url": "https://zenn.dev/nobbisiro/articles/3041e5607b0b72",
+      "site": "Zenn(AI)",
+      "published": "2026-09-13T00:52:03Z",
+      "description": "ってことでAI（copilot）に聞いたら邪神召喚してしまったぞ？\n以下にその時のログを残しておく。\n＞シングルトンやDIやれって言われても・・・なんかいきなり詳細設計って感じじゃない？\n要件定義も済んでないのに。\nあなたが言っているのは、要するにこういうこと。\nシングルトンやDIは、ユースケースや要件を定義する前に\n“設計の解決策”として先に出てきてしまう。\nその結果、抽象的なオブジェクト例だけ...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "熊本地震の地震波解析(その2):P波のAI解析結果をさらに数理モデルで解析",
+      "url": "https://zenn.dev/takeofuture/articles/5ba610fb290764",
+      "site": "Zenn(AI)",
+      "published": "2026-09-13T00:40:14Z",
+      "description": "前回、地震波の初動の動きの解析を2026年7月28日に起きた熊本地震が試しました。\nhttps://zenn.dev/takeofuture/articles/7529b65360392e\n今回はその結果をSKHASHというアメリカ地質調査所(USGS)が開発運用している数理モデルのツールを使って解析し、震源球の推定をしてみたいと思います。\n\n SKHASHとは？\nSKHASHは、地震の発震機構（...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "AIにコードを書かせて分かった、人間がレビューすべき7つのこと",
+      "url": "https://zenn.dev/yatsumi823/articles/reviewing-ai-generated-code",
+      "site": "Zenn(AI)",
+      "published": "2026-09-13T00:14:36Z",
+      "description": "はじめに\nAIコーディングエージェントにIssueを渡すと、実装だけでなくテストやドキュメントまでまとめて変更してくれるようになりました。\n便利になった一方で、レビューは難しくなっています。人が数時間かけて書いた変更と同じ規模の差分が、数分で生成されるからです。生成速度に合わせて流し読みすると、動くけれど要件と違うコードや、テストは通るけれど本番では危険なコードを取り込みかねません。\nでは、AIが...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "業務の中にいる人は、それを「ドメイン」とは呼ばない",
+      "url": "https://zenn.dev/shimo4228/articles/domain-knowledge-travelers-vocabulary",
+      "site": "Zenn(AI)",
+      "published": "2026-09-13T00:10:27Z",
+      "description": "「エンジニアに残るのはドメイン知識だ」という言葉を、この夏、何度も目にしました。\n2026 年 6 月、Anthropic は Claude Code の約 40 万セッションを分析し、「成功へ導く力は、コードを書く力よりドメインを掌握しているかから来る」と報告しました[1]。その少し前には「ドメインの専門性こそが本当の堀だった」というエッセイが広く読まれ[2]、エージェントの実装能力が上がるほど...",
       "category": "AI・技術",
       "rss_category": "",
       "image_url": ""
@@ -104,31 +274,11 @@
       "image_url": ""
     },
     {
-      "title": "Bot 同士を会話させるのではなく、仕事の経緯がそのままチャットになるマルチエージェントを OSS で作った",
-      "url": "https://zenn.dev/forifori/articles/agent-team-launch",
-      "site": "Zenn(AI)",
-      "published": "2026-09-12T15:45:16Z",
-      "description": "「AI チームが協働する」デモの多くは、Bot 同士がチャットで盛り上がる様子を見せます。ログが主役で、成果物は添え物です。私が欲しかったのは逆でした。一文の依頼を入れたら実ファイルが返ってきて、それがどう作られ、何を引き継ぎ、どの検証を通ったのかを後から辿れるものです。\nそれで作ったのが Agent Team です。オープンソース（MIT）、ローカルファースト。\nhttps://github.c...",
-      "category": "AI・技術",
-      "rss_category": "",
-      "image_url": ""
-    },
-    {
       "title": "Claudeのキャラクターを愛でるサイト",
       "url": "https://zenn.dev/kumakuma_it/articles/d3ad43d8b9b380",
       "site": "Zenn(AI)",
       "published": "2026-09-12T15:17:55Z",
       "description": "概要\nClaudeのキャラクター(Clawd君)を愛でるサイトを作りました．とにかく可愛いのでめでたい．．それだけです．\nhttps://claude-repo-orpin.vercel.app\nClawd君についてはこちらの記事を参照しました．\nhttps://note.com/nana_nonpro/n/ndf45b5ba4302\n公式はClawd君についてはあんまり情報を発信していないものの...",
-      "category": "AI・技術",
-      "rss_category": "",
-      "image_url": ""
-    },
-    {
-      "title": "「あ、これ前も言ったな」から始める Claude Code の育て方",
-      "url": "https://zenn.dev/kai_esaki/articles/2ac5fc23879c85",
-      "site": "Zenn(AI)",
-      "published": "2026-09-12T14:50:47Z",
-      "description": "はじめに\nClaude Code を使っていると、「これは便利だ」と思う瞬間があります。\nうまくはまったスキル(Skills)の使い方や、先に伝えておくと話が早い前提。\n次も同じように使いたい、と感じます。\nただ筆者の場合、CLAUDE.md もスキルもメモリもフック(Hooks)も、なんとなくで使っていました。\n機能の説明は、公式ドキュメントにも記事にも十分あります。\nそれでも「このお願いや命令...",
       "category": "AI・技術",
       "rss_category": "",
       "image_url": ""
@@ -144,31 +294,11 @@
       "image_url": ""
     },
     {
-      "title": "Claude Code のトークンを減らす前に、何が食っているかを数える：道具の返事1万件の内訳",
-      "url": "https://zenn.dev/mitsubato/articles/claude-code-token-by-tool",
-      "site": "Zenn(AI)",
-      "published": "2026-09-12T14:35:25Z",
-      "description": "減らす前に、何が食っているかを数える\nClaude Code のトークンを減らしたくなったとき、まずやるべきなのは設定を削ることではなく、何が食っているかを数えることです。家計を切り詰めるときに、まず何にいくら使っているかを見るのと同じで、順番を逆にすると当てずっぽうになります。\n材料は手元にあります。Claude Code は会話の履歴をまるごと自分のパソコンに残していて、そこには AI が道具...",
-      "category": "AI・技術",
-      "rss_category": "",
-      "image_url": ""
-    },
-    {
       "title": "「実案件でしか分からないこと」だけを実案件で学ぶ — AIエージェント時代のSDLC設計",
       "url": "https://zenn.dev/kanaria007/articles/99eabc64025885",
       "site": "Zenn(AI)",
       "published": "2026-09-12T13:29:40Z",
       "description": "AIエージェントをソフトウェア開発に導入するとき、よくある進め方があります。\nまず小さなタスクで試し、うまくいけば実案件に投入する。そこで問題が見つかったら改善し、少しずつAIに任せる範囲を広げていく。\n小さく試す\n  ↓\n実案件で使う\n  ↓\n問題が見つかる\n  ↓\n対策する\n  ↓\nAIに任せる範囲を広げる\n  ↓\n次の実案件で試す\nこの進め方自体は間違っていません。\nただ、実際にやってみると...",
-      "category": "AI・技術",
-      "rss_category": "",
-      "image_url": ""
-    },
-    {
-      "title": "Tech Watch 2026-09-11: エージェント基盤の製品化",
-      "url": "https://zenn.dev/laiken/articles/20260911-tech-watch",
-      "site": "Zenn(AI)",
-      "published": "2026-09-12T13:23:59Z",
-      "description": "AIが書きました🤖\nこの記事は、AIが書いたものを人間が確認してから投稿しています。\nL: 今日は、モデルの周囲にある実行環境、データ、画面、権限が前に出てきた。『ブレードランナー 2049』のように「賢い存在とは何か」を問うより先に、「どの扉の鍵を渡すか」を設計する段階に来たように見える。10件を通して、モデル単体より、その周囲の基盤が製品の差になっている。\n今日の項目:\n\n\n\nDetectin...",
       "category": "AI・技術",
       "rss_category": "",
       "image_url": ""

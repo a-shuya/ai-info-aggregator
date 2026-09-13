@@ -1,14 +1,144 @@
 {
   "site": "Zenn(Python)",
-  "last_updated": "2026-09-13T06:08:50.744120",
-  "total_articles": 6382,
+  "last_updated": "2026-09-13T11:51:17.795912",
+  "total_articles": 6395,
   "articles": [
     {
-      "title": "LangChainのメモリ設計 — 会話が続くAIアプリの実装パターン",
-      "url": "https://zenn.dev/yukihayama/articles/langchain-memory-long-term",
+      "title": "例外は出ない。一致率だけが落ちる。任意依存の「静かな劣化」を画面に出す",
+      "url": "https://zenn.dev/shinsei99/articles/kana-name-matching",
       "site": "Zenn(Python)",
-      "published": "2026-09-12T22:47:29Z",
-      "description": "LangChainのメモリ設計 — 会話が続くAIアプリの実装パターン\nChatGPTのような「会話が続くAI」を自分で作ろうとして、最初の壁にぶつかる人が多いのが**メモリ（記憶）**です。\nLangChainでチャットボットを組んでみると、こんな症状が出ます。\n\n1回目の「私の名前は悠希です」を、2回目の質問で忘れている\n会話を重ねるうちにトークン数が増え、コストがどんどん膨らむ\n古い話題を突...",
+      "published": "2026-09-13T11:11:12Z",
+      "description": "家賃の入金消込を自動化しています。銀行からダウンロードした入金データと、こちらの入金一覧Excelを\n突き合わせて、入金済み・未入金・金額ズレに仕分けるだけの道具です。\nこれを別のPCで動かしたら、未突合の件数だけが増えました。エラーは出ません。画面も普通に出ます。\n落ちないので、気づくまでに時間がかかりました。\n原因は、漢字をカナに変換するライブラリを入れ忘れていたことです。\n無いと例外で落ちる...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "【設計・移行編】GASの限界を感じてPythonローカルバッチへ移行した話 〜淡路島・洲本市のホテル空室を自動監視するアーキテクチャ〜",
+      "url": "https://zenn.dev/okaito/articles/dc5277da421f11",
+      "site": "Zenn(Python)",
+      "published": "2026-09-13T10:49:39Z",
+      "description": "はじめに\n旅行や出張のハイシーズン、人気エリアのホテルは争奪戦になります。\n私は兵庫県淡路島・洲本市周辺の特定条件（予算8,500円以下など）に合致するホテルの空き状況を監視するため、当初は手軽に組める Google Apps Script（GAS） で監視アプリを運用していました。\nしかし、取得期間を延ばし、監視の頻度を上げ、通知の精度を高めようとすればするほど、クラウド環境特有の制約（クォータ...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "エージェントワークフローを実際に組む ─ 制御・終了判定・コンテキスト肥大化との戦い",
+      "url": "https://zenn.dev/oryo_data/articles/d4cb16c7bb198a",
+      "site": "Zenn(Python)",
+      "published": "2026-09-13T10:21:34Z",
+      "description": "蒲生弘郷著『LLMの原理、RAG・エージェント開発から読み解くコンテキストエンジニアリング』の読書アウトプット第6弾、これで最終回です。今回は第5章「AIエージェント×ワークフローによる自動化」の後半、前回整理した「エージェントワークフロー」という考え方を実際に実装に落とすときの論点を扱います。\nhttps://link.amazon/B03uwwv57\n前回までの記事はこちら。\n\n第1章: LL...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "その分布、なぜその形？をPythonで確かめる ─ メカニズムを捉えるデータ可視化",
+      "url": "https://zenn.dev/oryo_data/articles/56e354c4f63d11",
+      "site": "Zenn(Python)",
+      "published": "2026-09-13T10:18:33Z",
+      "description": "『指標・特徴量の設計から始める データ可視化学入門』（江崎貴裕、ソシム）をPythonで確かめながら読むシリーズの2本目です。前回（第1〜2章）は「数量をどの視覚チャネルに載せるか」の話でした。今回の第3章はテーマが一段深くなり、分布や時間変化の「形」から、データを生み出した背後のメカニズムを読むという話です。\nhttps://link.amazon/B09fyVDEM\n前回と同じく、「定義を読ん...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "同じOCRエンジンは、設定を変えても同じ字を同じように間違える",
+      "url": "https://zenn.dev/naporit/articles/ocr-same-engine-settings-correlate",
+      "site": "Zenn(Python)",
+      "published": "2026-09-13T09:42:43Z",
+      "description": "OCRの精度を上げたいとき、同じエンジンを設定違いで複数回走らせて、食い違った箇所だけ人が見るという手があります。エンジンを増やさずに済むので手軽です。\n10様式の帳票を4通りに劣化させて測ったところ、同じエンジンの設定違いは、基準の誤りのうち8〜41%を、同じ位置で同じように間違えていました。 同じ劣化どうしで比べると、原理の違うエンジンでは0.65〜8%です。\n食い違わないものは、突き合わせて...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "数年前に買ったRaspberry Piを引っ張り出して、2026年の環境で作り直してみた",
+      "url": "https://zenn.dev/ryuchama/articles/f257ceb8a05b01",
+      "site": "Zenn(Python)",
+      "published": "2026-09-13T07:39:47Z",
+      "description": "はじめに\n最近「Raspberry Piで〇〇」みたいな記事をいくつか書き始めました。\n今回は、それらの記事で使っている開発環境について紹介します。\n今回のコンセプトは、ラズパイを自宅に置いたまま、外出先からでも開発できる常時稼働環境を作ることです。\n今回構築した環境は以下のようになっています。\n                     Internet\n                     ...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "4年前に自分が作った日報の限界を、AIで超えてみた",
+      "url": "https://zenn.dev/shinya_uno/articles/ab7b137983788e",
+      "site": "Zenn(Python)",
+      "published": "2026-09-13T06:56:52Z",
+      "description": "雑談から始まった\n4年前、現場で使っていた記録の仕組みを、別のものに切り替えることになりました。\n新しい方は、現場の書き方に合っていませんでした。\nある日、課長から相談されました。正式な依頼ではなく、雑談の中の愚痴に近いものです。\n「なんとかならないか」\nそのとき私は、Excel マクロというものがあることすら知りませんでした。\n社内に少し知っている人がいたので教えてもらいました。ただ、その人も簡...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "【e-Stat】産業連関表を分析に渡す前に監査するPythonライブラリ ioaudit を作った",
+      "url": "https://zenn.dev/naaao9999/articles/036adede73ccc5",
+      "site": "Zenn(Python)",
+      "published": "2026-09-13T05:21:52Z",
+      "description": "はじめに\n産業連関表は、イベントによる経済波及効果の推計や地域経済の産業構造、サプライチェーン上の依存関係の分析などに使われます。環境負荷や雇用データを組み合わせれば、CO₂排出量や雇用誘発の分析にも利用できます。\n一方で、（e-Statデータ全般に言えるのですが）実際に分析へ使おうとすると、空行やセル結合、表題、注記、複数行の見出し、小計・合計行などを確認しながら、必要な部分を切り出す作業が必要...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "個人実証：機微データに触れないログ異常検知は成立するか（型で強制する設計と実測精度）",
+      "url": "https://zenn.dev/yuninaka/articles/log-anomaly-detection-metadata-only",
+      "site": "Zenn(Python)",
+      "published": "2026-09-13T05:10:01Z",
+      "description": "再現性の確認や実装の詳細を追う場合は、以下のリポジトリを参照されたい。\nリポジトリ: log-anomaly-detection-poc\n(この記事時点のコード: article-metadata-only-anomaly-detectionタグ)\n\n サマリ\n\n顧客の機密データを扱うドメインで、AIが機微データ(生ログ・実データ)に一切触れない設計のまま異常検知としての価値を出せるか、というPo...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "読書メモ『強化学習を学びたい人が最初に読む本』",
+      "url": "https://zenn.dev/morim34/articles/85994d7b38603b",
+      "site": "Zenn(Python)",
+      "published": "2026-09-13T03:58:50Z",
+      "description": "この本について\n先日参加したkaggleのポケカコンペに挑むにあたり読みました。コンペに直接的に役立つことはなかったですが、本のタイトルの通り、強化学習の基礎がとても分かりやすくまとめられていました。\nhttps://info.nikkeibp.co.jp/media/NSW/atcl/books/111100051/\n以下は自分の備忘録として読書メモをまとめます。1章から３章はPythonや教師...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "大学受験の物理・化学・生物を微分方程式でつなぐ制御工学入門",
+      "url": "https://zenn.dev/qwerewq/articles/af8261f46e090a",
+      "site": "Zenn(Python)",
+      "published": "2026-09-13T02:33:56Z",
+      "description": "はじめに\n高校の物理・化学・生物では、多くの現象が別々の公式として登場します。\nしかし、大学数学や工学の視点で見ると、その多くは\n\n微分方程式\n初期条件\n解\n解の代入確認\n伝達関数\n状態方程式\n行列表現\n\nという共通の枠組みで整理できます。\n物理では位置・速度・電圧・電流、化学では濃度、生物では個体数を「時間とともに変化する量」として扱います。\n\n\n 1. 微分方程式とは\n微分方程式は、\n「ある量...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "[自分用メモ] pytest の骨格を理解したい",
+      "url": "https://zenn.dev/noah11/articles/d7248386582cc5",
+      "site": "Zenn(Python)",
+      "published": "2026-09-13T01:20:10Z",
+      "description": "自分用のメモです\n\nAPI のテストフォルダを開くと、conftest.py と test_*.py が並んでいます。フィーチャーテストという言葉は聞いたことがあっても、いま見ているファイルが何のスタックの上で、何を書いて、何を通しているのかが先に揃っていないと、後半の fixture や yield が浮きます。\nこの記事では、よくある API プロジェクトを架空の構成で置いたあと、フィーチャー...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "余っていたNature Remoで、一人暮らしの親を見守る仕組みを作った",
+      "url": "https://zenn.dev/takuyima/articles/nature-remo-line-monitor",
+      "site": "Zenn(Python)",
+      "published": "2026-09-13T00:15:45Z",
+      "description": "TL;DR\nモーションセンサーを搭載したNature Remoを活用した個人用見守りサービスの導入方法を知れます。\n\n初期費用\n\nNature Remo 本体代（モーションセンサー搭載モデル）\n設置方法・場所により、ケーブルカバーやNature Remo の固定具など\n\n\nランニングコスト（ほぼゼロ円）\n\nNature Remo 電気代\nAWS\nLINE 公式アカウント（無料枠）\n\n\n\n公開用の構...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "TypeScript 経験者が Python で最初に戸惑う 10 の違い",
+      "url": "https://zenn.dev/gaku_wtnb/articles/1ce65684bae557",
+      "site": "Zenn(Python)",
+      "published": "2026-09-13T00:00:08Z",
+      "description": "React や Next.js を書いてきた人が、Django や FastAPI の案件で Python を触り始めると、文法そのものより「TS ではこう書くのに、Python だとなぜ動かないの?」という小さな違いで手が止まります。\nこの記事では、JS/TS 経験者が Python を始めたときに最初につまずきやすい違いを 10 個に絞って、両言語のコードを並べて紹介します。\n\n 1. let...",
       "category": "開発",
       "rss_category": "",
       "image_url": ""
@@ -19,6 +149,16 @@
       "site": "Zenn(Python)",
       "published": "2026-09-12T17:01:26Z",
       "description": "Python学習で.venvの代わりにDockerを使ってみる\nある日UdemyでPythonについて学習していると、venv（.venv）を使って仮想環境を作る方法で学習する講座に出会いました。\n今はコンテナを学んでいるしインフラエンジニアの僕としては今後のことを考えると、\n\nPythonの学習環境もDockerで作った方が実務に近いのでは？\n\nと考えました。\nそこで、.venvの手順をDock...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "Bot 同士を会話させるのではなく、仕事の経緯がそのままチャットになるマルチエージェントを OSS で作った",
+      "url": "https://zenn.dev/forifori/articles/agent-team-launch",
+      "site": "Zenn(Python)",
+      "published": "2026-09-12T15:45:16Z",
+      "description": "「AI チームが協働する」デモの多くは、Bot 同士がチャットで盛り上がる様子を見せます。ログが主役で、成果物は添え物です。私が欲しかったのは逆でした。一文の依頼を入れたら実ファイルが返ってきて、それがどう作られ、何を引き継ぎ、どの検証を通ったのかを後から辿れるものです。\nそれで作ったのが Agent Team です。オープンソース（MIT）、ローカルファースト。\nhttps://github.c...",
       "category": "開発",
       "rss_category": "",
       "image_url": ""
@@ -49,16 +189,6 @@
       "site": "Zenn(Python)",
       "published": "2026-09-12T14:11:06Z",
       "description": "はじめに\n前回は、「何もない」という状態を一種類として扱ってよいのかを考えました。artifactが確認できないという同じ見た目でも、生成段階へ到達していない、生成を試みて失敗した、正常な非生成だった、生成後に失われた、observerが確認できなかった、といった複数の可能性があります。\nつまり、0件やmissingという結果だけを見ても、その状態がどのように生じたのかまでは分かりません。では、そ...",
-      "category": "開発",
-      "rss_category": "",
-      "image_url": ""
-    },
-    {
-      "title": "28分のPyCon JP講演をGoogle CloudとWhisperで文字起こししたら、技術用語は最大15/18だった",
-      "url": "https://zenn.dev/hogehogetaro/articles/speech-to-text-vs-whisper",
-      "site": "Zenn(Python)",
-      "published": "2026-09-12T13:57:37Z",
-      "description": "前日のGoogle Cloud Speech-to-Textの用語ヒントで模擬技術講演のCERが64.8%から25.4%に下がったでは、52.41秒の合成音声を使いました。\n同じ条件を繰り返せる点はよかったのですが、1分未満では長尺音声の処理時間や後半の崩れ方が見えません。\nそこで今回は、PyCon JP 2019の「入門 自作検索エンジン」をGoogle Cloud Speech-to-Text...",
       "category": "開発",
       "rss_category": "",
       "image_url": ""
