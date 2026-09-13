@@ -1,8 +1,38 @@
 {
   "site": "Zenn(LLM)",
-  "last_updated": "2026-09-13T11:51:17.795912",
-  "total_articles": 6044,
+  "last_updated": "2026-09-13T15:53:15.348872",
+  "total_articles": 6051,
   "articles": [
+    {
+      "title": "vLLMを学んでみた #1：LLM Servingの全体像からPagedAttention・KV Cache・初期化まで",
+      "url": "https://zenn.dev/koounosuke/articles/48f9612c09b8ef",
+      "site": "Zenn(LLM)",
+      "published": "2026-09-13T08:23:22Z",
+      "description": "はじめに\nLLMを「使う」だけなら、OpenAI APIやAmazon BedrockのようなAPIサービスを呼び出せば十分です。\n一方で、自社GPUサーバ上にQwenやLlama系モデルを配置し、複数ユーザーへ安定して提供しようとすると、単にモデルが動くだけでは足りません。\n本番環境では、\n\n複数のRequestをどうまとめるか\nGPUをどう遊ばせずに使うか\nKV Cacheをどう管理するか\nP...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "LLMを起動する前に判定するワーカーゲートを作った",
+      "url": "https://zenn.dev/tamat_llc/articles/llm-agent-worker-gate",
+      "site": "Zenn(LLM)",
+      "published": "2026-09-13T08:14:12Z",
+      "description": "こんにちは！webエンジニア目指して10年のTakehiroTです！\nTamaT という、顧客提案から要件定義・設計・開発まで一気通貫で担う少数精鋭の開発会社でやってます。\n社内のタスク管理ツールを確認し、自分の担当タスクを進める AI エージェントを cron で定期実行しています。\nしかし、運用を始めてすぐにひとつの問題に気づきました。\n仕事が何もない時間帯であっても、毎回まったく同じペースで...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "AIに会話を覚えさせる前に、何を「事実」として残すかを決める",
+      "url": "https://zenn.dev/gitmeshi/articles/3bda3079225b97",
+      "site": "Zenn(LLM)",
+      "published": "2026-09-13T07:06:27Z",
+      "description": "AIにSNSの返信を任せる仕組みを作るとき、最初は文章の自然さに目が向きます。語尾を柔らかくする、質問を一つ添える、同じ挨拶を繰り返さない。どれも大切ですが、それ以前に「相手は何に答えているのか」を読めなければ会話は続きません。\nOSS情報を届けるGitMeshiの運用を整備する中で、公開された会話をMarkdownのボルトに残し、返信対象からたどれるようにしました。今回は、その過程で考えた記憶に...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
     {
       "title": "小規模データと LoRA で作る SLM ベースのクエリ解釈モデル",
       "url": "https://zenn.dev/mahiya/articles/5eb765715e2753",
@@ -24,11 +54,51 @@
       "image_url": ""
     },
     {
+      "title": "AIエージェント自作の実践書5選",
+      "url": "https://zenn.dev/makitech/articles/20260913_book_ref",
+      "site": "Zenn(LLM)",
+      "published": "2026-09-13T02:49:20Z",
+      "description": "はじめに\n半年ほど前、社内のコードレビューを補助するエージェントを自分で組んでみた。Claude Code を毎日使っていたので、同じようなものは週末で作れるだろうと思っていた。結果は散々だった。ツール呼び出しが同じファイルを何度も読み直し、20分で数十万トークンを消費して、最後に出てきたのは「変更点はありません」という一行。\n原因を追いかけて分かったのは、自分がエージェントを「LLM にツールを...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "AIをただ使うだけの人とAIシステムを構築した人はどうやって見分けられるのか",
+      "url": "https://zenn.dev/okamyuji/articles/ai-system-builder-structured-interview",
+      "site": "Zenn(LLM)",
+      "published": "2026-09-13T02:08:53Z",
+      "description": "はじめに\n「生成AIを業務で使っています」という経歴は、今では多くの職務経歴書に書いてあります。ところが同じ内容の一行であっても、その裏側には、チャット画面に質問を打ち込んでいるだけ・Claude CodeやCodexと延々対話をしているだけの人と、業務に必要な検索基盤とツール呼び出しと評価パイプラインを自分で構築して本番運用した人の両者が含まれています。職務経歴書の文面だけでは、この差は見分けら...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
       "title": "捨ててはいけない──Layer DropoutがLLMの訓練効率と推論弾性を同時に開く仕組み",
       "url": "https://zenn.dev/lixian/articles/dont-drop-dropout-layer-sparsity-efficient-llm",
       "site": "Zenn(LLM)",
       "published": "2026-09-13T02:03:29Z",
       "description": "TL;DR\n大規模言語モデル（LLM）の事前学習からdropoutが消えつつある。激活dropoutは大規模単パス訓練で精度を劣化させるという観測が広まったためだ。だが本論文は、layer dropout（層単位のstochastic depth）は別物であることを2400本超の訓練実験で証明した。増加層分布（ILD）＋漸減時刻スケジュール（DTS）の組み合わせにより、訓練FLOPsを最大25%削...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "DeepSeek V4 Flash Vision-Exp を DGX Spark 2 台で動かす",
+      "url": "https://zenn.dev/st_little/articles/run-deepseek-v4-flash-vision-exp-on-two-sparks",
+      "site": "Zenn(LLM)",
+      "published": "2026-09-13T01:09:57Z",
+      "description": "NVIDIA DGX Spark（GB10）2台を200Gbps QSFP（RoCEv2）で直結し、deepseek-ai/DeepSeek-V4-Flash-Vision-Exp（ネイティブ画像理解＋投機的デコード「DSpark」＋100万トークンコンテキスト対応）を分散推論（Tensor Parallelism = 2）でデプロイした際の手順をまとめました。\n本構築にあたっては、DGX Spa...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "2026-08-27 今日の技術トレンド",
+      "url": "https://zenn.dev/bambampurin/articles/2026-08-27-tech-daily",
+      "site": "Zenn(LLM)",
+      "published": "2026-09-13T01:05:05Z",
+      "description": "!\nAI分野では単なる大言語モデル（LLM）から「自己進化型マルチAIエージェント」や具身知能へのシフトが進む中、報酬ハッキングによるモデルの暴走やHugging Face侵害事件などセキュリティリスクが急激に顕在化しています。Web開発ではNext.jsの未認証RCE脆弱性パッチやエージェント実行用サンドボックスの比較が関心を集め、PythonエコシステムではOpenAIによるAstral買収を...",
       "category": "AI・技術",
       "rss_category": "",
       "image_url": ""
