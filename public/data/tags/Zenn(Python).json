@@ -1,14 +1,54 @@
 {
   "site": "Zenn(Python)",
-  "last_updated": "2026-09-14T06:14:13.360056",
-  "total_articles": 6407,
+  "last_updated": "2026-09-14T13:01:37.739452",
+  "total_articles": 6412,
   "articles": [
     {
-      "title": "事件簿：「頭にきた」が喜びになる ― 一語が全体を狂わせる ― KotobaCore開発秘話（4/8）",
-      "url": "https://zenn.dev/kiyobo/articles/374f7e429caf15",
+      "title": "古い .doc / .xls / 横向きスキャン。中身を読む前に形を揃える",
+      "url": "https://zenn.dev/shinsei99/articles/legacy-office-convert",
       "site": "Zenn(Python)",
-      "published": "2026-09-14T00:38:54Z",
-      "description": "前回（第3回）は、意味の単位を壊さないためのトークナイザーの話でした。今回は、トークナイザーが正しく切っても起きる誤判定の話です。辞書ベースの言語処理では、たった一語の登録が、システム全体の挙動を変えます。開発ログに残った4つの「事件」を、原因を辞書の一行まで追い詰めた順に書きます。\nどれも笑い話のようでいて、辞書ベースの本質を突いています。\n\n 事件簿1：「頭にきた」が喜びになる\n2026年5月...",
+      "published": "2026-09-14T11:13:28Z",
+      "description": "不動産の書類は、古い形式のまま渡ってきます。\n\n公式書式（協会が配布）は .doc\n\n他社の物件資料は .xls（画像が埋め込まれている）\n現地で撮った書類は、横向きの PDF\n\n中身の処理を書く前に、形を揃える必要がありました。ここでやったことをまとめます。\n\n ① .doc を、表を壊さずに .docx へ\npython-docx は .doc（旧バイナリ形式）を読めません。公式書式14本がそ...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "Python で PowerPoint にテキストの透かしを入れる",
+      "url": "https://zenn.dev/techblogger/articles/9c260a5d668f42",
+      "site": "Zenn(Python)",
+      "published": "2026-09-14T09:29:00Z",
+      "description": "社外に共有する資料に「Confidential」や「社外秘」を表示したり、レビュー中の資料に「Draft」と入れたりすることがあります。\nPowerPoint ではスライドマスターを使ってこうした表示を設定できますが、特定のスライドだけに透かしを入れたい場合や、複数の PowerPoint ファイルをまとめて処理したい場合は、手作業だと少し面倒です。\nPython から透かしを追加できるようにして...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "PanderaのSchemaErrorとSchemaErrorsの違いを理解して入力検証を統一した話",
+      "url": "https://zenn.dev/anoyo/articles/b91455204d4241",
+      "site": "Zenn(Python)",
+      "published": "2026-09-14T07:22:05Z",
+      "description": "はじめに\n業務で入力データの検証を実装していた際、入力チェックの実装方法が統一されておらず、保守性に課題を感じていました。\n具体的には、\n\nPanderaによるスキーマ検証\nPython の if 文 + Exception\n\n\nが混在していました。\n今回は入力検証を Pandera に集約した際に遭遇した、\n\n「複数のカスタムチェックエラーをどう扱うか」\n\nという課題と、その解決方法について紹介...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "郵便番号 0600001 が 196609 になる — 先頭の 0 を YAML・TOML・JSON・CSV で比べた",
+      "url": "https://zenn.dev/devkitlab/articles/6909c52ba39fe4",
+      "site": "Zenn(Python)",
+      "published": "2026-09-14T07:03:39Z",
+      "description": "北海道と、青森・岩手・秋田の郵便番号は 0 から始まります。これを設定ファイルにそのまま書くと、どう読まれるでしょうか。\n\nzip.yml\n# どちらも札幌市の郵便番号\na: 0600808   # 北区北八条西\nb: 0600001   # 中央区北一条西\n\nRuby で読み込むと、こうなります。\nrequire 'yaml'\np YAML.safe_load(File.read('zip.ym...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "自分の出品ページを毎朝スクレイプして「0」と「取得不可」を分けたら、初めて売れた日が分かった",
+      "url": "https://zenn.dev/mana_mrl/articles/068be2f8e417db",
+      "site": "Zenn(Python)",
+      "published": "2026-09-14T02:35:39Z",
+      "description": "自分で作ったものを note / BOOTH / DLsite / Zenn / GitHub に置いていると、\n「今日は売れたか」「反応はあったか」を見に行くだけで6サイト分のタブを開くことになります。\nそして大抵は何も変わっていない。見に行く回数だけが増えて、数字は増えない。\nこれを、毎朝07:30に1本のスクリプトが公開ページを取りに行って、前回と変わった項目だけをMarkdownで書き出す...",
       "category": "開発",
       "rss_category": "",
       "image_url": ""
@@ -79,6 +119,16 @@
       "site": "Zenn(Python)",
       "published": "2026-09-13T16:40:16Z",
       "description": "はじめに\n前回は、観測地の緯度・経度に応じて星空と時刻表示が正しく連動するように、バックエンドのロジックを整理しました。\nhttps://zenn.dev/punita_mama/articles/312d434743cee5\nただ、前回時点では緯度・経度の変更はコードの数値を直接書き換えるしかできませんでした。今回は、その続きとして観測地変更ダイアログを実装し、GUI上から緯度・経度・タイムゾー...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "🦙 ALPACA-FW #03｜前身「ALPACA-template」はどう動くのか――アーキテクチャ概要",
+      "url": "https://zenn.dev/alpaca_village/articles/alpaca-fw-03-template-architecture",
+      "site": "Zenn(Python)",
+      "published": "2026-09-13T15:39:58Z",
+      "description": "はじめに\nここからの「🦙 ALPACA-FW」連載では、しばらく概念論から離れて、実際に作った仕組みを技術的に分解していきたいと思います。\nただし、いきなり現在開発中のALPACA-FWへ進むのではありません。まず扱うのは、その前身として一度完成させた ALPACA-template です。\nALPACA-templateは、Claude CodeやCodexのようなAIコーディングエージェントに...",
       "category": "開発",
       "rss_category": "",
       "image_url": ""

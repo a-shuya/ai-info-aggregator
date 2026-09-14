@@ -1,14 +1,34 @@
 {
   "site": "Zenn(LLM)",
-  "last_updated": "2026-09-14T06:14:13.360056",
-  "total_articles": 6067,
+  "last_updated": "2026-09-14T13:01:37.739452",
+  "total_articles": 6073,
   "articles": [
     {
-      "title": "ドキュメントをLLMで自動同期させたら、担当者交代のコストが変わった話",
-      "url": "https://zenn.dev/vaonvn/articles/c67ef2c9dd067e",
+      "title": "ローカルLLMにレビューさせていた話の続報（前回の構成、実は動いていませんでした）",
+      "url": "https://zenn.dev/k_motoki/articles/ef60bbbc0ad7ec",
       "site": "Zenn(LLM)",
-      "published": "2026-09-14T00:22:40Z",
-      "description": "設計ドキュメントは書いた瞬間がいちばん正確で、そこから先は基本的に劣化していきます。半年運用していたプロジェクトで担当を引き継いだとき、ドキュメントに書かれているAPIの仕様と実際のコードが半分近くずれていて、結局コードを読み直すところからやり直しました。この記事では、そのあとに試した「ドキュメントとコードをLLMで突き合わせて差分を検出する」仕組みと、実際に担当者交代のコストがどう変わったかを書...",
+      "published": "2026-09-14T05:16:45Z",
+      "description": "前回、トークンをケチってレビューをローカルLLMにやらせた話 という記事を書いたところ、思いのほか読まれました。\nそしてコメントで2人の方から設計の穴を指摘されました。確認したところ、指摘は両方とも当たっていて、しかも自分が思っていたより悪い状態でした。\n前回の記事を読んで同じ構成を組んだ方がいたら、同じ穴を踏みます。まず訂正から書きます。\n\n 訂正1: 公開したModelfileは、私の環境では...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "LLM費用¥0で公開リポジトリの保守を回してみた",
+      "url": "https://zenn.dev/coji/articles/oss-maintenance-llm-cost-zero",
+      "site": "Zenn(LLM)",
+      "published": "2026-09-14T03:12:39Z",
+      "description": "これはなに？\nひとりで開発している公開リポジトリの保守を、追加のLLM費用なしで回してみた記録です。対象はcoji/upflowです。\n依存関係の更新、更新で踏んでしまったバグの修正、その後の機能追加までを実際に回しました。作業にはオープンソースのコーディングエージェントOpenCodeを使っています。OpenCodeには最初から無料モデルが用意されており、今回はその中からMetaの推論モデルmu...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "複数LLMを混ぜるのをやめた。理由は対照実験の数字",
+      "url": "https://zenn.dev/tkt0605/articles/771de6c8b7da7e",
+      "site": "Zenn(LLM)",
+      "published": "2026-09-14T02:45:54Z",
+      "description": "何を変えたか（先に結論）\n複数のAIの意見を1つに統合して答えるアプリを作っていましたが、統合をやめました。\nいまは主体（1体目）が普通に答えきってから、副体（2・3体目）がその答えを検算するという、順序を反転した設計になっています。\n変更前: 副体2体が検討メモを書く → 主体がそれを統合して答える\n変更後: 主体が単体と同じ条件で答える → 副体2体がその答えを読んで指摘を1つずつ返す\nきっか...",
       "category": "AI・技術",
       "rss_category": "",
       "image_url": ""
@@ -89,6 +109,46 @@
       "site": "Zenn(LLM)",
       "published": "2026-09-13T22:00:05Z",
       "description": "e-dash は、企業のCO2排出量の可視化から削減までを伴走するサービスを提供しています。そのため社内には、脱炭素まわりの制度や補助金の情報を追いかける仕事があります。対象は国と全自治体に広がり、内容も随時更新されるので、量が多く変化も速い領域です。\nそこで、デジタル庁が公開している補助金検索API「jGrants」から自動で集められないかと考えました。キーワードを変えながら件数を数える作業を、...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "常駐型AIチャットエージェントのLLMプロバイダ障害対応・フェイルオーバー設計",
+      "url": "https://zenn.dev/hach/articles/chat-agent-llm-provider-failover-design",
+      "site": "Zenn(LLM)",
+      "published": "2026-09-13T18:09:38Z",
+      "description": "Slack / Teams / Chatwork に常駐して日常的にリクエストを捌くAIエージェントは、裏側のLLM API(OpenAI / Anthropic / Google等)に依存しています。単発のチャットボットなら「今だけ使えない」で済みますが、常駐エージェントは毎朝のレポート生成や業務時間中の即応が前提になっているため、LLMプロバイダ側の障害・レートリミット・レイテンシ悪化がそのま...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "依頼から成果物の保存までつなぐMacアプリ「Genie」を作った。LLMを組み込んで直した3つのこと",
+      "url": "https://zenn.dev/forifori/articles/genie-mac-workspace",
+      "site": "Zenn(LLM)",
+      "published": "2026-09-13T15:53:46Z",
+      "description": "メモから行動計画を作る。Webサイトの見出しを考え直す。小さなHTMLを試作する。\nこうした依頼をMac上で受け付け、結果を確認し、後から開き直し、Markdownとして持ち出せるワークスペース「Genie」を開発しています。モデルはOllama、対応API、Codex／Claude Codeから選べます。\nこの記事では、実際に生成・保存したものと、実装中に直した「結果の管理」「ローカルLLMの出...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "Tech Watch 2026-09-10: 仕事を動かすAIの周辺設計",
+      "url": "https://zenn.dev/laiken/articles/20260910-tech-watch",
+      "site": "Zenn(LLM)",
+      "published": "2026-09-13T15:40:46Z",
+      "description": "AIが書きました🤖\nこの記事は、AIが書いたものを人間が確認してから投稿しています。\nL: 今日は、モデルの性能そのものより、その能力を仕事に接続する仕組みが前に出ている。既存アプリを操作する Astra、Claude Code で作る小さな道具、ジャーナリズム組織への導入、そして研究競争のルールまで変えかねない大規模エージェント実験。『her』で描かれたような一人の知性というより、制度や道具の間...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "「たぶん大丈夫」を予約成立にしない。電話AIの完了判定をTypeScriptで実装する",
+      "url": "https://zenn.dev/forifori/articles/oathra-evidence-rules",
+      "site": "Zenn(LLM)",
+      "published": "2026-09-13T15:38:04Z",
+      "description": "「たぶん大丈夫です」と「ご予約承りました」は、会話としてはどちらも前向きな返事です。しかし、プログラムから同じ「成功」として扱うと困ります。\n電話AIのOSS Oathra では、会話の生成と完了判定を分離し、発言から抽出した条件への合意と、予約を確定した根拠を別々に管理するようにしました。\nこの記事では、曖昧な返事・代案・条件変更・取り消しをどう処理するか、実装を追って説明します。全文を理解する...",
       "category": "AI・技術",
       "rss_category": "",
       "image_url": ""
