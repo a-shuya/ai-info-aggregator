@@ -1,8 +1,98 @@
 {
   "site": "Zenn(LLM)",
-  "last_updated": "2026-09-14T01:05:19.943594",
-  "total_articles": 6059,
+  "last_updated": "2026-09-14T06:14:13.360056",
+  "total_articles": 6067,
   "articles": [
+    {
+      "title": "ドキュメントをLLMで自動同期させたら、担当者交代のコストが変わった話",
+      "url": "https://zenn.dev/vaonvn/articles/c67ef2c9dd067e",
+      "site": "Zenn(LLM)",
+      "published": "2026-09-14T00:22:40Z",
+      "description": "設計ドキュメントは書いた瞬間がいちばん正確で、そこから先は基本的に劣化していきます。半年運用していたプロジェクトで担当を引き継いだとき、ドキュメントに書かれているAPIの仕様と実際のコードが半分近くずれていて、結局コードを読み直すところからやり直しました。この記事では、そのあとに試した「ドキュメントとコードをLLMで突き合わせて差分を検出する」仕組みと、実際に担当者交代のコストがどう変わったかを書...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "実際の企業コードでAIモデルの性能を測る「Real-SWE」とは？",
+      "url": "https://zenn.dev/ament3/articles/ai-digest-2026-09-12-2350",
+      "site": "Zenn(LLM)",
+      "published": "2026-09-13T23:56:42Z",
+      "description": "近年、ソフトウェアエンジニアリング（SWE）領域におけるAIモデルやAIエージェント（Devin、Claude 3.5 Sonnet、GPT-4oなど）の進化が著しいですが、「オープンソースのコードで高スコアを出せても、実際の自社の複雑なプライベートコードベースで本当に役に立つのか？」 という疑問を持つエンジニアやエンジニアリングマネージャーは多いのではないでしょうか。\n今回は、Hacker Ne...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "LangChainエージェント入門 — LLMに「道具」を持たせて自律的に動かす",
+      "url": "https://zenn.dev/yukihayama/articles/langchain-agent-tool-implementation",
+      "site": "Zenn(LLM)",
+      "published": "2026-09-13T23:53:07Z",
+      "description": "はじめに\nLLMはテキスト生成や要約、翻訳など「言葉を扱う」タスクで強力な力を発揮する。しかし、実際の業務やアプリケーション開発では「最新の情報を調べる」「計算を実行する」「データベースを参照する」といった、言葉だけでは完結しないタスクが多い。\nLangChainのエージェント（Agent）機能は、LLMに「道具（Tool）」を持たせることで、これらの外部タスクを自律的に実行させる仕組みを提供する...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "Skill を「プロンプト」と呼ぶのをやめた — 自然言語で書いたコードとして扱う",
+      "url": "https://zenn.dev/tomnotelog/articles/skill-as-natural-language-code",
+      "site": "Zenn(LLM)",
+      "published": "2026-09-13T23:42:16Z",
+      "description": "はじめに\nClaude Code の Skill を書くようになってから、ひとつ呼び方に引っかかるようになりました。\nSkill を「プロンプト」と呼ぶことです。\n自分の感覚では違います。私にとって Skill は手順書。\nもう少し踏み込むと、自然言語で書いたコードだと思っています。\n\n プロンプトという入れ物が、分解された\nもともと、プロンプトには何もかもが入っていました。\n出力の形式、守ってほ...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "57. MCPは誰が許可する？",
+      "url": "https://zenn.dev/yamada_ai_dev/articles/agent365-sdk-and-work-iq-mcp",
+      "site": "Zenn(LLM)",
+      "published": "2026-09-13T23:30:11Z",
+      "description": "!\nこの記事は生成AIで作成した草稿を、筆者が内容を確認し、添削・修正のうえ公開しています。\n\n\n 個人なら好きに刺せる。組織ではどうなるのか\nMCP（Model Context Protocol）は、AIエージェントに外部のツールやデータ源を繋ぐための標準プロトコルだ。MCPサーバを足すのは簡単で、設定ファイルに数行書けば、エージェントがファイルシステムにもデータベースにも社内のAPIにも手が届...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "Gemini 5モデル1509試行、注入を防ぐのは手数だった",
+      "url": "https://zenn.dev/acntechjp/articles/zenn-agent-injection-model-comparison",
+      "site": "Zenn(LLM)",
+      "published": "2026-09-13T22:43:13Z",
+      "description": "3行でまとめ\n\n多段エージェントへの間接プロンプトインジェクションを Gemini 5 モデルで 1,509 試行測りました。モデルによる耐性差は、事前登録した単位では有意になりません\n\n最も有力な説明は注入が何手を要求するかでした。手元の内容を送らせるだけの1手なら 28.0%、照会してから送らせる2手なら 6.7%。ただし独立単位で検定すると片側 p = 0.0625 で、0.05 には届きま...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "Windows で Docker Desktop を使っているあなたへ：「WSL3」「Docker Desktop 不要」の噂を確かめる",
+      "url": "https://zenn.dev/mika_and_coco/articles/wsl-containers-for-docker-desktop-users",
+      "site": "Zenn(LLM)",
+      "published": "2026-09-13T22:32:58Z",
+      "description": "はじめに：「WSL3 を入れるとローカル LLM が速くなる」と聞いて\n筆者の PC は Windows と Linux のデュアルブートで、Linux 側にローカル LLM を入れて使っています。2026 年の夏、「WSL3 を導入すると GPU がほぼネイティブの速度で使えるようになる」という記事を見かけました。「自分の環境に入れたら速くなるのか？」と思って調べ始めたのが、この記事のきっかけで...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "Multi-Agentにおける「多様性」について考えてみた",
+      "url": "https://zenn.dev/k_aiga/articles/000_multi_agent_diversity_current_landscape",
+      "site": "Zenn(LLM)",
+      "published": "2026-09-13T22:00:05Z",
+      "description": "私は本来、光学やメカを中心に製品開発をしてきたエンジニアで、ソフトウェアを専門としてきたわけではない。それでもAIを使いながらソフトウェア開発に取り組むようになり、設計、実装、レビューなどを複数のAI Agentに分担させることを考えるようになった。\n当初の私は、Agentに異なる役割を与えれば、それだけで複数の視点を持たせられるだろうと、かなり素直に考えていた。実装するAgentとレビューするA...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "AIエージェントが「該当なし」と言ったとき、確かめるべき3つのこと",
+      "url": "https://zenn.dev/edash_tech_blog/articles/017ca0a0efb793",
+      "site": "Zenn(LLM)",
+      "published": "2026-09-13T22:00:05Z",
+      "description": "e-dash は、企業のCO2排出量の可視化から削減までを伴走するサービスを提供しています。そのため社内には、脱炭素まわりの制度や補助金の情報を追いかける仕事があります。対象は国と全自治体に広がり、内容も随時更新されるので、量が多く変化も速い領域です。\nそこで、デジタル庁が公開している補助金検索API「jGrants」から自動で集められないかと考えました。キーワードを変えながら件数を数える作業を、...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
     {
       "title": "RTX 3090でQwen3.8-27BをClaude Codeに接続して実用構成を探った",
       "url": "https://zenn.dev/derbuihan/articles/qwen38-q27-rtx3090-claudecode",
@@ -59,16 +149,6 @@
       "site": "Zenn(LLM)",
       "published": "2026-09-13T10:38:45Z",
       "description": "はじめに\n\n 前提\n今回のコードは前の記事の内容が前提となっています。\n関連ライブラリのバージョンは下記です\n# html2text=2025.4.15 langchain-google-genai=4.4.0 ragas=0.4.3 rapidfuzz=3.14.6 asyncio=4.0.0\n!pip install -U \"langchain-community&lt;0.4.2\" html...",
-      "category": "AI・技術",
-      "rss_category": "",
-      "image_url": ""
-    },
-    {
-      "title": "エージェントワークフローを実際に組む ─ 制御・終了判定・コンテキスト肥大化との戦い",
-      "url": "https://zenn.dev/oryo_data/articles/d4cb16c7bb198a",
-      "site": "Zenn(LLM)",
-      "published": "2026-09-13T10:21:34Z",
-      "description": "蒲生弘郷著『LLMの原理、RAG・エージェント開発から読み解くコンテキストエンジニアリング』の読書アウトプット第6弾、これで最終回です。今回は第5章「AIエージェント×ワークフローによる自動化」の後半、前回整理した「エージェントワークフロー」という考え方を実際に実装に落とすときの論点を扱います。\nhttps://link.amazon/B03uwwv57\n前回までの記事はこちら。\n\n第1章: LL...",
       "category": "AI・技術",
       "rss_category": "",
       "image_url": ""
