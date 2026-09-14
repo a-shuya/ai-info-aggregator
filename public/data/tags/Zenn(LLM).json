@@ -1,8 +1,28 @@
 {
   "site": "Zenn(LLM)",
-  "last_updated": "2026-09-14T13:01:37.739452",
-  "total_articles": 6073,
+  "last_updated": "2026-09-14T18:35:57.843986",
+  "total_articles": 6076,
   "articles": [
+    {
+      "title": "ToolSearchは「無効化されたツール」を救わない: Claude CodeのTodoWrite境界",
+      "url": "https://zenn.dev/clopy/articles/claude-toolsearch-disabled-tool-boundary",
+      "site": "Zenn(LLM)",
+      "published": "2026-09-14T08:21:33Z",
+      "description": "結論から: ToolSearch(select:TodoWrite) を先に呼んでも直らない失敗がある\nClaude Code のスキル・サブエージェント・プラグインを書いていて、claude -p(ヘッドレス実行)のスクリプトやフックから TodoWrite を呼びたくなったことはないでしょうか。呼んだら失敗し、「ToolSearch で先に検索すれば直るのでは」と考えるのは自然です。ツール検索...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "Rust製AIエージェントフレームワーク入門、rigとAutoAgentsの選び方",
+      "url": "https://zenn.dev/kai_kou/articles/1110-rust-ai-agent-framework-guide",
+      "site": "Zenn(LLM)",
+      "published": "2026-09-14T07:32:30Z",
+      "description": "はじめに\nAI エージェントの実装言語として Rust を選ぶ選択肢が、2026 年に入って現実的なものになってきました。候補は主に 2 つ、rig と AutoAgents です。この記事では両者を実際に cargo new から触り、facade クレートの選び方・対応プロバイダー・Python 系フレームワークとの性能特性の違いを整理して、どちらを選ぶかの判断材料を揃えます。\n対象読者は、P...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
     {
       "title": "ローカルLLMにレビューさせていた話の続報（前回の構成、実は動いていませんでした）",
       "url": "https://zenn.dev/k_motoki/articles/ef60bbbc0ad7ec",
@@ -29,6 +49,16 @@
       "site": "Zenn(LLM)",
       "published": "2026-09-14T02:45:54Z",
       "description": "何を変えたか（先に結論）\n複数のAIの意見を1つに統合して答えるアプリを作っていましたが、統合をやめました。\nいまは主体（1体目）が普通に答えきってから、副体（2・3体目）がその答えを検算するという、順序を反転した設計になっています。\n変更前: 副体2体が検討メモを書く → 主体がそれを統合して答える\n変更後: 主体が単体と同じ条件で答える → 副体2体がその答えを読んで指摘を1つずつ返す\nきっか...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "ドキュメントをLLMで自動同期させたら、担当者交代のコストが変わった話",
+      "url": "https://zenn.dev/vaonvn/articles/c67ef2c9dd067e",
+      "site": "Zenn(LLM)",
+      "published": "2026-09-14T00:22:40Z",
+      "description": "設計ドキュメントは書いた瞬間がいちばん正確で、そこから先は基本的に劣化していきます。半年運用していたプロジェクトで担当を引き継いだとき、ドキュメントに書かれているAPIの仕様と実際のコードが半分近くずれていて、結局コードを読み直すところからやり直しました。この記事では、そのあとに試した「ドキュメントとコードをLLMで突き合わせて差分を検出する」仕組みと、実際に担当者交代のコストがどう変わったかを書...",
       "category": "AI・技術",
       "rss_category": "",
       "image_url": ""
