@@ -1,8 +1,58 @@
 {
   "site": "Zenn(AI)",
-  "last_updated": "2026-09-14T18:35:57.843986",
-  "total_articles": 13721,
+  "last_updated": "2026-09-14T22:02:41.554832",
+  "total_articles": 13725,
   "articles": [
+    {
+      "title": "コーディングエージェント5モデルを日英で試す：正答率・トークン・復旧時間の測り方",
+      "url": "https://zenn.dev/nomurasan/articles/coding-agent-japanese-english-reliability",
+      "site": "Zenn(AI)",
+      "published": "2026-09-14T12:22:55Z",
+      "description": "API経由でコーディングエージェントを使うとき、日本語の依頼を英語に変えると結果は変わるのか。5モデルに同じ修正課題を日英それぞれ1回ずつ実行させ、合否・所要時間・トークン量を記録しました。\n有効な設定で動いた10試行は、すべて5項目のチェックに合格しました。一方、その前には設定不一致によるAPIエラーが4回発生しています。\n今回得られたのは、モデルの優劣を決める結果というより、「課題に正解できた...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "成功ログ100本でエージェントの失敗ステップを当てるOAT",
+      "url": "https://zenn.dev/okssusucha/articles/20260720-oat-failure-attribution-from-success-traj",
+      "site": "Zenn(AI)",
+      "published": "2026-09-14T12:18:28Z",
+      "description": "エージェントが40ステップ走って、最後の答えが間違っていた。さて、どこで壊れたのか。\nこの問いに真面目に答えようとしたことがある人は、それが想像以上に難しいのを知っている。ログを頭から読むと、どのステップも単体では「まあ妥当」に見える。検索クエリは自然だし、ツール呼び出しも形式は正しい。それでも結果は間違っている。実際には7ステップ目でファイルパスを取り違えていて、以降の30ステップはその誤りの上...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "同じ警告が32回。通知の重複抑止で踏んだ穴3つ",
+      "url": "https://zenn.dev/selftailor/articles/8c4968b0f9399f",
+      "site": "Zenn(AI)",
+      "published": "2026-09-14T12:18:25Z",
+      "description": "AIエージェントを15セッション・77日運用した記録の3本目です。\n\n1本目: 壊れ方が例外の形をしていない\n\n2本目: その監視を作った話（launchd移設と検査4種）\n\n\n2本目の最後に、こう書いた。機械に走査させるところまでは作ったが、最後に人が読んで判断する部分が残っている。 今回はそこの話をする。\n結論を先に書くと、いちばん難しかったのは検出精度ではなく、検出を人に届ける量だった。そし...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "AI研究者が辞めるほどの危険な競争に、企業はどう向き合うべきか",
+      "url": "https://zenn.dev/syoshida07/articles/b8a6fafb9b9b82",
+      "site": "Zenn(AI)",
+      "published": "2026-09-14T12:17:03Z",
+      "description": "2026年、AI開発は人類史上かつてない速度で進化し、特にGPT‑6 Astraの登場は世界の政治・産業・学術界に衝撃を与えた。\nAstraは、従来のAIが持ち得なかった自律的な問題解決能力、未知の脆弱性発見能力、そして自己改善の兆候を示し、AI研究者の間では「人類が制御可能な範囲を超え始めたのではないか」という危機感が急速に広がっている。\nこの危機感は単なる技術的懸念ではなく、国家安全保障レベル...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "AIエージェントを増やす前に、Frontend開発を4つの責務に分ける",
+      "url": "https://zenn.dev/heftykoo/articles/173a375b3c3752",
+      "site": "Zenn(AI)",
+      "published": "2026-09-14T11:02:05Z",
+      "description": "実装するエージェントと、レビューするエージェントを用意する。いかにも堅牢そうな構成だ。\nただし二人目が、一人目の変更したワークスペースと「テストは通りました」という自己申告だけを読んでいるなら、レビュー役は独立していない。同じ書き換え可能なルールを共有し、同じ証拠しか見ないままエージェントを増やしても、自己採点を二回にしただけである。\n先に分けるべきなのはエージェントの人数ではない。仕事の順序、副...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
     {
       "title": "読まない技術 第8回：修正履歴を読まない技術",
       "url": "https://zenn.dev/garplab/articles/f7c9c30f567aee",
@@ -159,16 +209,6 @@
       "site": "Zenn(AI)",
       "published": "2026-09-14T03:43:40Z",
       "description": "3行で\n\n手元のセッションログ 389 ファイル・166 MB を走査した。thinking ブロックは 6,258 件。そのうち 6,244 件（99.8%）は本文が空で、暗号署名だけが残っている。\n署名はログ全体の **9.03%（15.0 MB）**を占める。読める思考の本文は 12,793 字、0.0077%。\n本文が残っていたのは1つのモデルだけだった。他の5モデルは 0.0%、そのモデ...",
-      "category": "AI・技術",
-      "rss_category": "",
-      "image_url": ""
-    },
-    {
-      "title": "BigQueryのAIエージェント全体像2026 — 何があって、どう使い分けるのか",
-      "url": "https://zenn.dev/web_benriya/articles/bigquery-ai-agents-landscape-2026",
-      "site": "Zenn(AI)",
-      "published": "2026-09-14T03:40:19Z",
-      "description": "はじめに\nBigQuery に AI 関連の機能が一気に増えました。AI.GENERATE、Conversational Analytics、Data Engineering Agent、MCP サーバー、Knowledge Catalog……次々と名前が登場します。しかしどれが何をするもので、自分の仕事のどこに刺さるのかが整理できていない、という方は多いと思います。私もそうでした。\nこの記事はシ...",
       "category": "AI・技術",
       "rss_category": "",
       "image_url": ""
