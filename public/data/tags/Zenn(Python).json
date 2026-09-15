@@ -1,8 +1,38 @@
 {
   "site": "Zenn(Python)",
-  "last_updated": "2026-09-14T22:02:41.554832",
+  "last_updated": "2026-09-15T00:36:05.814046",
   "total_articles": 6419,
   "articles": [
+    {
+      "title": "リトライしたら二重登録された — 冪等キーの実装とリトライ設計の手順",
+      "url": "https://zenn.dev/k4raage/articles/http-idempotency-retry-design",
+      "site": "Zenn(Python)",
+      "published": "2026-09-15T00:00:19Z",
+      "description": "同じ注文が2件入っている、同じ人に2回請求が飛んだ。ログを見ると、タイムアウトのあとにリトライが走っている。\nこの記事はその状態を止めるための手順書です。「POST は冪等ではない」では現場は直らないので、サーバ側に冪等キーをどう実装するか、クライアント側でどのエラーを再送してよいかを動くコードで書きます。\nコードは Python 3.11 で実行し、出力を貼っています。外部には接続しません（サー...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "Promise.all は asyncio.gather。では Promise 自体は? TS 視点で理解する Python の非同期処理",
+      "url": "https://zenn.dev/gaku_wtnb/articles/a1c76962d4f28a",
+      "site": "Zenn(Python)",
+      "published": "2026-09-15T00:00:19Z",
+      "description": "TS で async / await を書き慣れている人ほど、Python の asyncio で「見た目はほぼ同じなのに、なぜか動かない」という体験をします。\n原因の多くは、Promise に相当するものが Python では何なのかを取り違えていることです。この記事では、TS の非同期の知識を Python にそのまま持ち込むための対応関係を整理します。\n\n 対応表を先に\n\n\n\nTypeScr...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "【FileSearchExplorer】自分のアプリがすごい伸び方をして400DLを超えて416DLになった件",
+      "url": "https://zenn.dev/unknown777hello/articles/c185829503a42f",
+      "site": "Zenn(Python)",
+      "published": "2026-09-14T22:47:21Z",
+      "description": "はじめに\nこんにちは、Unknown777です。\n今回は、私が個人開発しているWindows向けファイル検索アプリ「FileSearchExplorer」が、400DLを突破して416DLを達成したので、その記録を書いていきたいと思います。\nここまで少しずつダウンロード数を増やしてきましたが、400DLを超えたのはかなり嬉しかったです。\n\n FileSearchExplorerとは\nFileSea...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
     {
       "title": "現代制御工学と状態方程式で学ぶ線形代数学計算問題",
       "url": "https://zenn.dev/qwerewq/articles/658bfd786a958a",
@@ -49,16 +79,6 @@
       "site": "Zenn(Python)",
       "published": "2026-09-14T14:13:58Z",
       "description": "プレゼントを選ぶとき、「30代女性におすすめ30選」のような記事を読んでも決まらない。相手のことを知っているのは自分なのに、記事は相手を知らないからです。\nそれなら逆に、相手のことをこちらが答えて、候補を絞ってもらう形にすればいい。そう考えて 欲しいもの.com という診断サイトを作りました。相手について 10〜16 問答えると、「もしかして、高級パジャマ？」のように贈り物の種類を当てにいきます。...",
-      "category": "開発",
-      "rss_category": "",
-      "image_url": ""
-    },
-    {
-      "title": "2026-08-28 今日の技術トレンド",
-      "url": "https://zenn.dev/bambampurin/articles/2026-08-28-tech-daily",
-      "site": "Zenn(Python)",
-      "published": "2026-09-14T14:00:59Z",
-      "description": "!\n2026年8月28日の最新ニュースでは、単体大規模言語モデル（LLM）から「AIエージェント」および「具身知能」へのシフトが加速する一方、AIセキュリティ危機やシステム脆弱性への対応が急務となっています。Web・開発基盤領域では、Next.jsにおける重大な未認証RCE脆弱性の修正や、エージェント用Sandboxインフラの台頭が注目を集めています。さらに、OpenAIによるAstral買収に象...",
       "category": "開発",
       "rss_category": "",
       "image_url": ""
@@ -124,31 +144,11 @@
       "image_url": ""
     },
     {
-      "title": "日本語の文字起こしを空白区切りのWERで測ったら533.3%、Sudachiでは14.0%だった",
-      "url": "https://zenn.dev/hogehogetaro/articles/japanese-asr-wer-cer-evaluation",
-      "site": "Zenn(Python)",
-      "published": "2026-09-14T00:31:40Z",
-      "description": "日本語音声認識の評価には前処理と分かち書きの定義が必須である\n\n 結論と検証結果の要約\n日本語の文字起こしをWER（単語誤り率）やCER（文字誤り率）で評価する際は、前処理や単語の分割ルールの明記が必須です。\n前処理や分割方法によって評価値が大きく変動するためです。\n本記事では、2026年9月11日の記事Google Cloud Speech-to-Textの用語ヒントで模擬技術講演のCERが64...",
-      "category": "開発",
-      "rss_category": "",
-      "image_url": ""
-    },
-    {
       "title": "エンジニア視点で語る！Pythonで学ぶマクロ経済学入門 55",
       "url": "https://zenn.dev/maszkot/articles/c5deb2b4a6b9df",
       "site": "Zenn(Python)",
       "published": "2026-09-14T00:21:58Z",
       "description": "https://qiita.com/maskot1977/items/4295ab691307d7edfa6b\n――――――――――\nラジオ教育番組\n「エンジニア視点で語る！Pythonで学ぶマクロ経済学入門」\n今回のテーマ：\nなぜ日本だけ財政破綻を信じているのか ― \"国の借金1000兆円\" という物語\n――――――――――\nDJミオ（女）：\nこんばんは、DJミオです。\nDJレン（男）：\nこんば...",
-      "category": "開発",
-      "rss_category": "",
-      "image_url": ""
-    },
-    {
-      "title": "疎結合とは何か ― Python実装とGCPインフラ構成を例に",
-      "url": "https://zenn.dev/atsushimemet/articles/loose-coupling",
-      "site": "Zenn(Python)",
-      "published": "2026-09-14T00:13:40Z",
-      "description": "疎結合とは何か ― Python実装とGCPインフラ構成を例に\n疎結合とは、システムを構成する要素同士の依存関係を小さくする設計を指す。\nある部品を変更しても、別の部品への影響ができるだけ小さい状態が「疎結合」である。\n\n Python実装における疎結合\n例えば、注文完了時に通知を送る処理を考える。\nclass EmailSender:\n    def send(self, message):\n ...",
       "category": "開発",
       "rss_category": "",
       "image_url": ""
