@@ -1,6 +1,6 @@
 {
   "site": "Zenn(LLM)",
-  "last_updated": "2026-09-15T10:14:15.287651",
+  "last_updated": "2026-09-15T15:05:24.565322",
   "total_articles": 6093,
   "articles": [
     {
@@ -14,51 +14,11 @@
       "image_url": ""
     },
     {
-      "title": "エージェントの実力を引き出す、サンドボックスの設計",
-      "url": "https://zenn.dev/1amageek/articles/agent-sandbox-environment",
-      "site": "Zenn(LLM)",
-      "published": "2026-09-15T06:21:21Z",
-      "description": "こんにちは、村本です。\n2026年8月、AnthropicはClaude Codeのauto modeを、Pro、Max、Teamプランの既定の動作にしました。発表では、調査会社を通じて集めた1,053人の有償テスターに、テスト環境で承認画面を見せた実験を紹介しています。一連のプロンプトのうち1つだけを、明らかに危険なコマンドに差し替えました。危険なコマンドに気づいたテスターは1,053人中143...",
-      "category": "AI・技術",
-      "rss_category": "",
-      "image_url": ""
-    },
-    {
-      "title": "社内文書をAIに載せる前の整理術 — 使える資料と使えない資料の見分け方",
-      "url": "https://zenn.dev/yushiyamamoto/articles/docs-prep-before-ai-2026-09",
-      "site": "Zenn(LLM)",
-      "published": "2026-09-15T03:03:59Z",
-      "description": "「社内のマニュアルをAIに読ませれば、問い合わせが減るはず」——そう考えてフォルダごと投入した結果、的外れな回答や古いルールの引用が増えた、という話はよくあります。原因はモデルの賢さより先に、載せる前の資料の状態にあることが多いです。この記事では、コードをほぼ書かずに、「使える資料」と「使えない資料」の見分け方と、載せる前にやる整理を地図にします。\n\n なぜ「全部入れる」がうまくいかないのか\n生成...",
-      "category": "AI・技術",
-      "rss_category": "",
-      "image_url": ""
-    },
-    {
-      "title": "AIに書かせるときのボトルネックは生成ではなく検証だった",
-      "url": "https://zenn.dev/faanau/articles/ai-content-bottleneck-is-verification",
-      "site": "Zenn(LLM)",
-      "published": "2026-09-15T02:59:02Z",
-      "description": "AI に下書きさせた記事を150本ほど運用している。日本語の原文と英訳を突き合わせて解説するもので、事実の密度が高い。\n始める前に想像していたボトルネックは「量を作ること」だった。実際に詰まったのは全部その後ろだった。\n生成は安い。検証が高い。 そして検証を人手でやる限り、量を増やした分だけ人手が要る。だから検証を仕組みにしないと、AIで量を作る意味がほとんど無い。\nこの記事は、そこで実装した3つ...",
-      "category": "AI・技術",
-      "rss_category": "",
-      "image_url": ""
-    },
-    {
       "title": "【Django+Celery】500件の受託スクレイピング知見をAPI化した非同期アーキテクチャ設計",
       "url": "https://zenn.dev/amandeep_sms/articles/7990f2c9d4b388",
       "site": "Zenn(LLM)",
       "published": "2026-09-15T01:32:40Z",
       "description": "PigDataではこれまで、国内企業向けに500件以上の受託Webデータ収集・クローリング案件を手掛けてきました。\nしかし、案件ごとにスクレイパーを個別開発・保守する体制ではスケールに限界があります。そこで過去の知見を集約し、開発者が数行のコードで利用できるセルフサーブ型API「Scraping AI」を開発しました。\n本記事では、Django REST Framework、Celery、Post...",
-      "category": "AI・技術",
-      "rss_category": "",
-      "image_url": ""
-    },
-    {
-      "title": "AI に議事録を整理させるなら、会議の話し方も変える。仮説 3 つを論文で確かめて skill にした",
-      "url": "https://zenn.dev/activecore/articles/meeting-digest-skill-hypotheses",
-      "site": "Zenn(LLM)",
-      "published": "2026-09-15T01:31:14Z",
-      "description": "「話者ラベルは信用しない」で議事録の AI を組もうとして、論文を読んだら逆だった。ラベルを捨てれば誤った帰属は起きないが、正しい帰属も一緒に消える。\n\n やっていること\n週次の定例が複数あり、どれも Google カレンダー経由で Meet に録画と文字起こしを残している。文字起こし本文と自動で付くサマリーをそのまま置いても読み返さないので、整理を AI エージェントに任せている。使っているのは...",
       "category": "AI・技術",
       "rss_category": "",
       "image_url": ""
@@ -144,11 +104,51 @@
       "image_url": ""
     },
     {
+      "title": "AIの改善ループで、審査コメントの架空の例文が本文に混入した話",
+      "url": "https://zenn.dev/miyoki_labs/articles/ai-improvement-loop-fabrication",
+      "site": "Zenn(LLM)",
+      "published": "2026-09-14T22:30:05Z",
+      "description": "AIの改善ループで起きた混入\nAIが生成した記事を、品質審査が採点しました。品質審査はSEO、読者、収益、AEOの4エージェントが行い、その平均で判定します。この記事では、この工程を品質審査と呼びます。指摘を次の改善再生成へ渡す流れで、架空の日付と金額が筆者の体験として本文に書き込まれました。\nこの記事は、AIに記事の改善を任せながら、体験談の正確さを守りたい人に向けた内容です。審査・採点・再生成...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "常駐型AIチャットエージェントに送られる「添付ファイル」を安全に扱う設計",
+      "url": "https://zenn.dev/hach/articles/chat-agent-attachment-handling-design",
+      "site": "Zenn(LLM)",
+      "published": "2026-09-14T21:14:03Z",
+      "description": "Slack / Teams / Chatworkに常駐するAIエージェントは、テキストの指示だけでなく、スクリーンショット・PDFの見積書・Excelの一覧表といった添付ファイルを日常的に受け取ります。テキスト入力に対するプロンプトインジェクション対策(外部コンテンツに紛れた偽の指示への対処)は語られる機会が増えましたが、添付ファイルという「バイナリの入力経路」を安全に扱うための設計は見落とされが...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "値上げ交渉ロールプレイ、背景設定は「手強い相手」を入れ替えるだけだった",
+      "url": "https://zenn.dev/every_ai_recipe/articles/ai-price-negotiation-roleplay-practice",
+      "site": "Zenn(LLM)",
+      "published": "2026-09-14T21:07:38Z",
+      "description": "TL;DR\n\n1つのチャットに「持ち帰る」「条件を付ける」「他社と比較する」の3交渉相手を立て、値上げを伝える側として実際に返答セリフを送り、反応の変化を見る多役ロールプレイを検証した\n各相手役に「守るもの（1行）」を足した詳細版と、名前と役割ラベルだけの簡易版を、同じ交渉内容・同じ返答セリフで並行実行した\n09-09の会議参加者ロールプレイ検証では「背景設定を足しても粘り強さの総量は変わらない」...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
       "title": "暴力的研究開発：安くなった探索と、マルチエージェントの判断力",
       "url": "https://zenn.dev/faliye/articles/3110557ddab38b",
       "site": "Zenn(LLM)",
       "published": "2026-09-14T17:50:09Z",
       "description": "最近COW fsを書いています。今日、最初のPoCができました。読み書きと262165回の電源断からの復旧、データはすべてクラッシュから復旧できました。これは想定どおりです。性能はひどくて、実用にはまだ程遠いですが。\n少し休憩して、最近AI界隈で話題になった2つの出来事と、どんどん安くなる探索と判断力について書きます。\nもうご存知だと思います。\n先日、数学の問題を解いていたGoogleのagent...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "改造版RTX 2080 Ti 22GBでQwen3.8-27Bを128Kまで動かした実測値",
+      "url": "https://zenn.dev/phpmyadmin/articles/rtx2080ti-22gb-llamacpp",
+      "site": "Zenn(LLM)",
+      "published": "2026-09-14T15:36:51Z",
+      "description": "この記事について\nこの記事はLLMが書いた測定報告である。筆者の指示のもとで、実機への接続、モデルの取得、測定までをLLMが実行し、その作業ログと測定値をもとに本文を構成した。\n\n 課題\nVRAM を 22GB に改造した RTX 2080 Ti で、Qwen3.8-27B の 4bit 量子化がどこまで動くかを測る。\nこのカードについては「96K コンテキストで 30〜33 tok/s、128K...",
       "category": "AI・技術",
       "rss_category": "",
       "image_url": ""
