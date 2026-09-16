@@ -1,24 +1,74 @@
 {
   "site": "Zenn(Python)",
-  "last_updated": "2026-09-16T14:27:00.545743",
-  "total_articles": 6448,
+  "last_updated": "2026-09-16T18:21:58.758616",
+  "total_articles": 6453,
   "articles": [
     {
-      "title": "PDFに仕込まれた「見えない文字」を検出するツールを作った ― 白文字・極小フォント・不可視指定を機械的に見つける",
-      "url": "https://zenn.dev/okinawasoftware/articles/cc6ebe37f66bc1",
+      "title": "venv+pipコマンドとuvコマンドを対応づけて理解するという試み",
+      "url": "https://zenn.dev/usasan/articles/f9395017057392",
       "site": "Zenn(Python)",
-      "published": "2026-09-16T06:48:58Z",
-      "description": "PDFには、人間の目には見えないのにデータとしては存在する文字を仕込めます。白い紙に白い文字を書く。0.4ptで書く。「描画しない」と指定して書く。ページの外に書く。どれもPDFの仕様の範囲内で、Acrobatで開いても何も見えません。\nところが、テキストを機械的に取り出すプログラムはこれを全部読みます。コピー＆ペーストでも、検索でも、そしてAIに要約させるときも。\n「この書類を要約して」とAIに...",
+      "published": "2026-09-16T12:01:06Z",
+      "description": "はじめに\n自分はこれまで、venvとpipを用いてPythonの仮想環境の構築からパッケージ管理を行なってきました。しかし、どうやら最近「uv」というオールインワンなツールがトレンドだそうです。\nしかし、自分はvenvとpipを使ってきた人間。\nuvを使うにもハードルというものが存在します。したがって、この記事では自分のようなオールドファッションな人間でもuvの使い方が理解できるように、「venv...",
       "category": "開発",
       "rss_category": "",
       "image_url": ""
     },
     {
-      "title": "PythonでReactが書けるPrefabを触ってみる",
-      "url": "https://zenn.dev/asor/articles/342640a89f2f17",
+      "title": "Django の on_delete=CASCADE の注意点",
+      "url": "https://zenn.dev/shintaro05/articles/e7a89b4e4ea04e",
       "site": "Zenn(Python)",
-      "published": "2026-09-16T06:45:28Z",
-      "description": "はじめに\nこんにちは。普段フルスタックエンジニアとして活動しているAsorです。\nこの前Youtubeを見ていたら Genarative UI... in Python? という気になる動画を見つけました。\n観たらPythonでReact×ShadcnのUIが簡単に作成できるというので早速試してみます。\n!\n本記事の内容は、筆者が軽く試して得られた内容を元に記載しているので誤りや過不足が多いと思い...",
+      "published": "2026-09-16T11:46:36Z",
+      "description": "事象\nclass Inquiry(BaseModel):\n    user = models.ForeignKey(settings.AUTH_USER_MODEL, on_delete=models.CASCADE)\nコードとしては問題なし。ただ「この CASCADE、本番で 100 万件紐づいた親を消したら何が起きる？」という問いから、実際にあった障害の話になりました。\n\n 原因\nCASCAD...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "【FileSearchExplorer v0.9.5】おまたせしましたv0.9.5を公開しました",
+      "url": "https://zenn.dev/unknown777hello/articles/8f87dd47158a5e",
+      "site": "Zenn(Python)",
+      "published": "2026-09-16T11:27:39Z",
+      "description": "はじめに\nこんにちは、Unknown777です。\n今回は、FileSearchExplorer v0.9.5を公開したことについてお話しします。\n2026/9/13をピークに、FileSearchExplorerを多くの方に利用していただきました。\nこのピークに合わせて公開できるよう準備していたのですが、少し遅れてしまいました。すみません……。\nリンクはこちらです。\nhttps://github....",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "エンジニア視点で語る！Pythonで学ぶマクロ経済学入門 57",
+      "url": "https://zenn.dev/maszkot/articles/30d02ae8eacd21",
+      "site": "Zenn(Python)",
+      "published": "2026-09-16T11:26:16Z",
+      "description": "https://qiita.com/maskot1977/items/ac027bc03be2d105fb83\nDJミオ：こんばんは！ ラジオ教育番組「エンジニア視点で語る！Pythonで学ぶマクロ経済学入門」、ナビゲーターのDJミオです。\nDJレン：こんばんは、DJレンです。今日はかなり骨太です。テーマは――\n「税収12兆円の代償 ― 日本の土地は誰のものになるのか」。\nしかもただの政策トークで...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "画像アップロードAPIのセキュリティ対策を、実装レベルで振り返る",
+      "url": "https://zenn.dev/vaonvn/articles/60db18b885e760",
+      "site": "Zenn(Python)",
+      "published": "2026-09-16T10:52:07Z",
+      "description": "ラベルを撮影した画像を受け取り、シリアル番号や型番を読み取って返すOCRのAPIを作りました。外から任意の画像を受け付け、C言語で書かれたデコーダーに通し、インターネットから落としてきたモデルの重みを読み込む。画像アップロードを受けるAPIとしてはごく普通の構成ですが、セキュリティの観点で見ると、入口が3つあることになります。今回実装した対策を、なぜそれが必要だったのかと一緒に振り返ります。途中で...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "カバレッジは率より、欠けた行を読む",
+      "url": "https://zenn.dev/miyakona/articles/coverage-missing-lines-weekly",
+      "site": "Zenn(Python)",
+      "published": "2026-09-16T10:20:09Z",
+      "description": "Pythonのテストが増えてきたので、coverage.pyをCIへ入れようとしていました。最初に考えたのは、全体のカバレッジ率へ閾値を置き、下回ったPRを落とす形です。\nところが、最初のレポートをファイルごとに読むと、気になったのは全体率ではありませんでした。よく通る小さな関数は測れている一方で、処理を組み立てるエントリーポイント（CLIやジョブから最初に呼ばれる入口）に未実行の分岐がまとまって...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "元鉄鋼営業がClaude APIで「商談メモ要約＆ネクストアクション抽出ツール」を作った話",
+      "url": "https://zenn.dev/isobeage/articles/steel-sales-note-tool-devlog01",
+      "site": "Zenn(Python)",
+      "published": "2026-09-16T08:02:15Z",
+      "description": "作ったもの\n商談メモ・営業日報をテキストで貼り付けると、Claude APIが鉄鋼業界（ステンレス鋼板販売）特有の項目を構造化JSONとして抽出し、要約とネクストアクションを一覧できる個人開発ツールです。\nデプロイ先: https://steel-sales-note-tool.onrender.com/\nリポジトリ: https://github.com/isobeage0810/steel-s...",
       "category": "開発",
       "rss_category": "",
       "image_url": ""
