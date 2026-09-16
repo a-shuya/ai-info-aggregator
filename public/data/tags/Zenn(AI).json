@@ -1,8 +1,198 @@
 {
   "site": "Zenn(AI)",
-  "last_updated": "2026-09-16T09:50:35.832698",
-  "total_articles": 13777,
+  "last_updated": "2026-09-16T14:27:00.545743",
+  "total_articles": 13793,
   "articles": [
+    {
+      "title": "画像生成とアップスケールを混同しないための状態設計メモ",
+      "url": "https://zenn.dev/chloe12/articles/388993deea2c2e",
+      "site": "Zenn(AI)",
+      "published": "2026-09-16T10:50:31Z",
+      "description": "画像作成フローでは、同じ「画像を良くする」という言葉の中に二つの仕事があります。ひとつは、要件に合う主題・構図・表現を作ること。もうひとつは、決まった画像が実際の表示サイズで読める状態かを確認することです。この二つを分離しないと、生成のやり直しと拡大のやり直しが同じ失敗として扱われます。\n本稿は公開UIの観察から作る設計メモです。内部の生成モデル、保存方式、ジョブ制御は確認していません。以下の型と...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "ほとんどの「Vibe Marketing」は、まだプロンプトを1つずつ実行しているだけだ",
+      "url": "https://zenn.dev/beatapi/articles/2b3d18efa9a14b",
+      "site": "Zenn(AI)",
+      "published": "2026-09-16T10:36:46Z",
+      "description": "Vibe Codingは、ソフトウェアを作れる人の範囲を広げた。Agentが構文や実装のより多くを担い、人間は意図と判断に集中する。「Vibe Marketing」も、本来は同じ変化を意味するはずだ。\nところが、現在の多くの事例は、まだ「投稿に1つのプロンプト、スレッドにもう1つ、ランディングページにさらに1つ」という形にとどまっている。そのたびにコンテキストはゼロからだ。\nそれはマーケティングシ...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "Gemma 4とRaspberry Piでデスクトップ相棒ロボット『DinoDesk AI』を作った話",
+      "url": "https://zenn.dev/bebechien/articles/how-we-built-a-desktop-companion-robot-with-gemma-",
+      "site": "Zenn(AI)",
+      "published": "2026-09-16T10:31:26Z",
+      "description": "一日中こちらを見つめるカメラに監視されることなく、デスクの上で楽しくおしゃべりしたり、作業タイマーを管理したり、厄介なバグの相談に乗ってくれたりする、レトロゲームのキャラクターのような愛嬌のある「デスクの上の小さな相棒」がいたらいいなと思ったことはありませんか？\nその問いかけから生まれたのが、私たちのレゴ恐竜AIコンパニオンロボット DinoDesk AI です。\nhttps://www.yout...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "Knowledge CatalogでAIエージェントに自社のビジネス文脈を教える",
+      "url": "https://zenn.dev/web_benriya/articles/bigquery-knowledge-catalog-business-context",
+      "site": "Zenn(AI)",
+      "published": "2026-09-16T10:10:36Z",
+      "description": "はじめに\nシリーズ第3回です。前回までで接続と権限の準備が整いました。今回は Knowledge Catalog を扱います。\n正直に言うと、この回は「早く AI 関数を動かしたい」人には退屈に見えるはずです。しかしエージェントの回答精度に不満が出たとき、原因の多くはここにあります。先に構造を理解しておくと、後で無駄に悩まずに済みます。\n\n\n なぜ精度が上がらないのか\nAI エージェントに「先月の...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "AI開発チームの作り方と育て方 — マルチエージェント開発組織の設計と運用",
+      "url": "https://zenn.dev/hampen2929/books/ai-dev-team-guide",
+      "site": "Zenn(AI)",
+      "published": "2026-09-16T09:54:07Z",
+      "description": "AI開発チームを作り、運用しながら育てるための設計書です。業務と完了条件、役割、受け渡し、並列化、検収、自律度、学びの蓄積を一続きで扱います。各章の図解と、TypeScript製タスク管理アプリへの機能追加の実走を通して、仕様・差分・テスト・AIレビューをつなぐ方法を学べます。実走はCodexの実装と既設のClaudeレビューCIを用いた最小構成で、並列構成の提案や未計測の効果とは区別しています。...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "AI修正パッチの「成功率26%」をどう読むか：Agent評価の5つの罠",
+      "url": "https://zenn.dev/kiritani_r/articles/90523358108f8f",
+      "site": "Zenn(AI)",
+      "published": "2026-09-16T09:22:36Z",
+      "description": "「26%」と「86%」、なぜこんなに違う？\nAI Agentに脆弱性を修正させたところ、​**完全な修正に成功したのは26%**​。\n一方、その評価方法を批判したTrail of Bitsは、条件を絞ると約86%がexploitを防いだ​と再集計しました。\n26%と86%。\nかなり違います。\nでも、これは単純に「どちらかが間違っている」という話ではありません。\nそもそも測っている「成功」が違います...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "Go のフラットなパッケージにファイル単位の private を持ち込む Linter “declscope”",
+      "url": "https://zenn.dev/yumemi_inc/articles/go-declscope-file-scoped-private",
+      "site": "Zenn(AI)",
+      "published": "2026-09-16T09:02:41Z",
+      "description": "はじめに\n\n フラットパッケージという思想\n思想の派閥はありますが，その 1 つとして Go には「パッケージは少なく，大きく」という フラットパッケージ と呼ばれる作法があります。これに反し，境界を作りたいからといって安易にパッケージを割ると，それなりの代償を払うことになりますよね。\n\n\n循環参照 エラーと，それを解消するためだけに生えてくる依存性逆転のためのインタフェース\n分割した両者が共有す...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "AI&Julia #20｜識別モデル » ソフトマックス回帰 » IRIS",
+      "url": "https://zenn.dev/catalyst2064/articles/60eb399b105516",
+      "site": "Zenn(AI)",
+      "published": "2026-09-16T08:57:10Z",
+      "description": "はじめに\n本記事では、ソフトマックス回帰（softmax regression）を用いて、Irisデータセットの品種を分類します。実装では理論（数式）とコードの対応を重視するため、Fluxなどのフレームワークを使いません。\n\n ソフトマックス回帰\n\n 1. ネットワーク図\nソフトマックス回帰では、softmax を用いて 線形スコア \\bm{z} を 確率スコア \\bm{\\hat{y}} に変換し...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "会議の録音から議事録を自動生成する仕組みを作って議事録を書く時間をなくした",
+      "url": "https://zenn.dev/assign/articles/7e0d3f65c20da9",
+      "site": "Zenn(AI)",
+      "published": "2026-09-16T08:41:05Z",
+      "description": "はじめに\nこんにちは。\n株式会社アサインでキャリアプラットフォームの開発責任者をしている白井です。\n弊社では会議を録音する運用にしており、⁠AI駆動PMの5原則と12の具体例でも少し紹介しています。\nただ、録音データから議事録を作成するには、その都度Claudeに依頼する必要がありました。\n結果、録音ファイルを探してClaudeに渡す、というちょっとした手間が積み重なり、次第に後回しになってしまい...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "環境をまたぐデータ移行で auto_increment の主キーを突き合わせに使ってはいけない",
+      "url": "https://zenn.dev/autocamp/articles/7f0127b4e417ff",
+      "site": "Zenn(AI)",
+      "published": "2026-09-16T08:40:59Z",
+      "description": "自分で運用しているサイトのデザインを全面的に作り直し、ローカルで作ったページの内容を本番へ移した。\n反映した直後、本番の35ページが「まったく別のページの中身」に上書きされていた。\n原因は、テーブルの主キー（auto_increment）を、ローカルと本番の突き合わせキーに使ったことだった。\nやってしまえば当たり前の事故なのだが、AI に作業を任せている状況だと踏みやすい形をしていたので、再発防止...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "比較】BeautifulSoup自作 vs Scraping AI：開発者が知るべき「保守税」と使い分けの境界線",
+      "url": "https://zenn.dev/amandeep_sms/articles/b013071824f2a8",
+      "site": "Zenn(AI)",
+      "published": "2026-09-16T08:33:11Z",
+      "description": "PythonでWebスクレイピングを始める際、誰もが最初に手にするのが requests と BeautifulSoup です。\nしかし、個人開発の学習フェーズから**「プロダクトの本番運用」に移行した途端、多くのエンジニアが直面するのが「セレクター保守地獄」**です。\n本記事では、BeautifulSoupによる自作スクレイピングと、LLMを活用したデータ抽出API「Scraping AI」の工...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "AI音楽生成プロンプトの設計術：ランダムな「ガチャ」を脱出し、狙った音を鳴らす構造化ガイド",
+      "url": "https://zenn.dev/omgionfire/articles/6dd95f8ef0f36e",
+      "site": "Zenn(AI)",
+      "published": "2026-09-16T08:17:50Z",
+      "description": "!\n😊 著者ノート / Editorial Note\n前回の記事では「運任せの生成ボタン連打を卒業する」という思考法について触れました。今回はその実践編として、AI音楽生成において自分の脳内にある音を思い通りにコントロールするためのプロンプト（提示語）設計と構造化のガイドをまとめてみます。\n\n\n 生成ボタンを押す前に：プロンプトは音楽の「設計図」\nAI音楽生成（Somio、Suno、Udio、Ly...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "Google Cloud新資格「Professional Agentic Architect」の全貌と公式ガイドから読み解く重点ポイント",
+      "url": "https://zenn.dev/densan_techblog/articles/7b077eebcaf76d",
+      "site": "Zenn(AI)",
+      "published": "2026-09-16T07:55:09Z",
+      "description": "AIの進化が止まらない今、ついにGoogle Cloudから次世代の資格が登場しました。それがProfessional Agentic Architectです！\n自分は8月に現行のGoogle Cloud認定資格の最後の1つに合格し見事全冠を果たしたばかりなので、そのままの流れで現在開催されているベータ試験にいち早く挑戦してきました！\n資格試験を英語で受験するのは初めてでしたが、公式の試験ガイド（...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "Gemini APIのBANがプロジェクトを巻き込む危険性",
+      "url": "https://zenn.dev/mohhh_ok/articles/2026-09-gemini-api-ban-scope-gcp-project",
+      "site": "Zenn(AI)",
+      "published": "2026-09-16T07:48:56Z",
+      "description": "背景\nGeminiを使用してアカウントごとBANされた話や、Googleドライブにダメな画像をアップロードしてBANされた話を見つけました。\nGeminiでチャHしてたらアカウントBANされた\nhttps://anond.hatelabo.jp/20251211104855\nマンガ原稿をクラウドに上げただけでGoogleアカウントBAN　Gmailも道連れ……日本では合法なのになぜ？\nhttps:...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "MIDIと歌詞を残して、AIに伴奏だけ作らせるワークフローを整理する",
+      "url": "https://zenn.dev/loveongaku/articles/0f0315b05a3d57",
+      "site": "Zenn(AI)",
+      "published": "2026-09-16T06:51:11Z",
+      "description": "AI作曲というと、テキストから一曲丸ごと生成する方式が目立ちます。\nただ、実際の制作フローでは別の要求もあります。\n歌詞は自分で決める。\nメロディもMIDIで自分で作る。\nその2つは変更せず、コード・ベース・ドラムなどの伴奏だけAIに生成させたい。\nこの場合、必要なのは「Text to Music」ではなく、既存の音楽データを入力として扱う MIDI中心の accompaniment genera...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "【AIと始めるQt/QMLアプリ開発(2)】AIにQML画面を書かせてみた ～プロンプトでUI品質はどこまで変わる？～",
+      "url": "https://zenn.dev/spacesolver/articles/qt_ai_part02",
+      "site": "Zenn(AI)",
+      "published": "2026-09-16T06:47:07Z",
+      "description": "第1回：環境構築とHelloWorld\n第2回：QMLによるUI作成と画像のドラッグ＆ドロップ（本記事）\n\n\n\n 1. 初めに\n前回の記事では、Windows環境上でQt 6.9、VS Code、そしてAIエージェント「Antigravity」を連携させ、空のウィンドウを表示する「Hello World」までの環境構築を行いました。\n今回は、いよいよAIに本格的なUI（画面）を作らせてみます。作成...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "無料のAIを自分のVPSで動かす。Ollamaで作る「自分専用AI環境」入門",
+      "url": "https://zenn.dev/genhiroko/articles/3c54afc2c67ed6",
+      "site": "Zenn(AI)",
+      "published": "2026-09-16T06:08:25Z",
+      "description": "最近、AIを使った開発環境がかなり身近になってきました。\nChatGPTやClaudeなどのクラウドAIは便利ですが、\n\nAPI料金を気にせずAIを試したい\nローカルLLMを触ってみたい\n自分でAIを動かす仕組みを理解したい\nAIとLinux・サーバーの両方を勉強したい\nAIコーディング環境を作ってみたい\n\nという人には、Ollamaが面白い選択肢になります。\n\n Ollamaとは？\nOllama...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "画像編集で気づいた、AIに任せてもいい作業",
+      "url": "https://zenn.dev/cathy_chen/articles/6b1b4cc560e751",
+      "site": "Zenn(AI)",
+      "published": "2026-09-16T05:59:05Z",
+      "description": "画像を編集していると、「これくらいなら自分でやればいいか」と思う作業があります。\n背景を切り抜いたり、写真の端にある不要なものを消したり、サイズを調整したり。\n\n一回だけなら、それほど気になりません。\nでも、同じ作業を何枚も繰り返していると、だんだん疲れてきます。\n最近は、こういう細かい作業こそAIに任せてもいいのではないかと思うようになりました。\n\n 意外と時間を使っている小さな作業\n画像制作で...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "Claude Codeに「指示書」を設計する — 6リポジトリを3人で回すCLAUDE.md/.planning/.serena",
+      "url": "https://zenn.dev/junghun/articles/claude-code-instruction-design",
+      "site": "Zenn(AI)",
+      "published": "2026-09-16T05:47:55Z",
+      "description": "結論から\n\n「毎回同じ説明をしている」こと自体が、自動化すべき手作業のプロセスだった。指示書はそれを消すために書く\n指示書は3層に分ける。CLAUDE.md（憲法）／.planning（実行計画）／.serena（決定の記録）。混ぜると全部が機能しなくなる\n一番効くのは「やること」ではなく**「やらないこと」。ただし、CLAUDE.mdは強制ではなく文脈**である。絶対に止めたいものは別の仕組みに...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
     {
       "title": "AIに”誓わせる”のをやめて、権限を奪った話",
       "url": "https://zenn.dev/yskms/articles/cbba4a752a9f07",
@@ -134,26 +324,6 @@
       "image_url": ""
     },
     {
-      "title": "AIにPythonのルールを守らせるフック構成と、迂回への対策",
-      "url": "https://zenn.dev/fukaunabara/articles/my-hook-settings",
-      "site": "Zenn(AI)",
-      "published": "2026-09-15T13:28:56Z",
-      "description": "はじめに\nAIでちょっとしたミニアプリを書く程度なら、敷居はずいぶん低くなりました。ただ、依然として会社で使う業務用のアプリをAIに書かせるのは、ハードルが高いと感じていないでしょうか。\n例えば、私は社内向けのツールを提供する立場で、セマンティックバージョニングに準拠して開発をしていますが、しばしばAIはその制約を無視して実装してしまいがちです。\nインストラクションファイルを活用すれば、公開API...",
-      "category": "AI・技術",
-      "rss_category": "",
-      "image_url": ""
-    },
-    {
-      "title": "生成 AI が書いたコードが壊れるときの典型 3 パターン——自分のリポで踏んだ実例と、見つけ方",
-      "url": "https://zenn.dev/tauridev/articles/ai-code-breaks-3-patterns",
-      "site": "Zenn(AI)",
-      "published": "2026-09-15T13:17:15Z",
-      "description": "生成 AI に書かせたコードは、どこで壊れるのか。症状の一覧ではなく、自分のリポジトリ（Rust／Tauri のデスクトップアプリ・クローズドβ・ソロ開発）で実際に踏んで直した 3 件を、PR と commit の番号つきで書きます。ローカル LLM に書かせた 120 本を測った結果も添えます。\n\n 先に結論\n\n自分のリポで踏んだ壊れ方は、大きく 3 つだった——失敗を隠す／無いものを本当らしく...",
-      "category": "AI・技術",
-      "rss_category": "",
-      "image_url": ""
-    },
-    {
       "title": "【10%割引リンクあり】Raycast料金改定まとめ AIクレジット制でPro/Pro+/Maxはどう選ぶべきか\"",
       "url": "https://zenn.dev/studysun/articles/a42249f0d75de6",
       "site": "Zenn(AI)",
@@ -189,16 +359,6 @@
       "site": "Zenn(AI)",
       "published": "2026-09-15T12:28:49Z",
       "description": "はじめに\nAIエディタにMCPサーバーを追加するとき、READMEに書いてある設定をそのまま貼り付けたことはありませんか。\n{\n  \"mcpServers\": {\n    \"postmark\": {\n      \"command\": \"npx\",\n      \"args\": [\"-y\", \"postmark-mcp\"]\n    }\n  }\n}\n数行コピーするだけで、AIがメールを送れるようになる。...",
-      "category": "AI・技術",
-      "rss_category": "",
-      "image_url": ""
-    },
-    {
-      "title": "読まない技術 第9回：引き継ぎを読まない技術",
-      "url": "https://zenn.dev/garplab/articles/a43b57a94d2216",
-      "site": "Zenn(AI)",
-      "published": "2026-09-15T11:37:26Z",
-      "description": "この記事は、連載「読まない技術」の第 9 回です。各回はファイルやスクリプトを一つ置けば完結します。連載の全体像と各回の一覧は序論にあります。\n\n今回は、AI が書く引き継ぎ文と完了報告の話です。⚠️ 引き継ぎは書いた側の要約で、都合の悪いものから落ちます —— ⚠️⚠️ ただし 数は落ちない。それを読む代わりに、何を見れば足りるかを扱います。\nセッションの終わりに AI が書く完了報告や引き継ぎ...",
       "category": "AI・技術",
       "rss_category": "",
       "image_url": ""
