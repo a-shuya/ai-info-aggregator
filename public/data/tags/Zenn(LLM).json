@@ -1,8 +1,48 @@
 {
   "site": "Zenn(LLM)",
-  "last_updated": "2026-09-16T18:21:58.758616",
-  "total_articles": 6115,
+  "last_updated": "2026-09-16T21:34:24.939359",
+  "total_articles": 6119,
   "articles": [
+    {
+      "title": "Jevのconfidenceは何を測っているのか ── 公式サンプル6件から算出式を逆算した",
+      "url": "https://zenn.dev/genelab_999/articles/f1fe86a4767fe8",
+      "site": "Zenn(LLM)",
+      "published": "2026-09-16T15:20:03Z",
+      "description": "TL;DR\n\n2026年9月15日にTypeSafe AIが公開した Jev は、文字列を生成せず「型付きの判断＋確率＋confidence」だけを返すモデル。LLMの代わりに、コード内の分類・振り分けを担う\nconfidence の算出式は非公開。公式ドキュメントのChoice回答例6件で逆算すると、5件は (K·p_max − 1)/(K − 1) に丸め誤差内で一致した。ただしQuick s...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "なぜ、LLM AIは性能アップの度にキャラがより強くなるのか？",
+      "url": "https://zenn.dev/pdfractal/articles/970d723724dda7",
+      "site": "Zenn(LLM)",
+      "published": "2026-09-16T15:17:34Z",
+      "description": "はじめに\nLLM AIは性能が上がれば上がるほど、メーカーによる違いが小さくなっていくようにも思えます。同じ質問に正答でき、同じコードを書けるようになれば、最終的にはどのモデルも似た存在になると考えるのが自然です。しかし実際に最新世代のモデルを長時間使っていると、逆の現象が起きています。AnthropicのClaudeは「真面目な委員長」、OpenAIのGPTは「陽気な相棒」という、以前から存在し...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "DPOを4本のlog probabilityから実装する",
+      "url": "https://zenn.dev/kas_blog/articles/20260509-llm-14-dpo",
+      "site": "Zenn(LLM)",
+      "published": "2026-09-16T15:00:59Z",
+      "description": "DPO（Direct Preference Optimization、直接選好最適化）は、同じpromptに対するchosen responseとrejected responseを使い、言語モデルを直接更新する手法です。\n「報酬モデルもPPOも不要」という説明は正しい一方、それだけでは実装時に迷います。DPO lossへ入るのは、policyとreference modelがchosen/rej...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "AIが作った問題をAIで検証していたが、意味がなかった",
+      "url": "https://zenn.dev/aiu_aiu/articles/671828f81467d8",
+      "site": "Zenn(LLM)",
+      "published": "2026-09-16T14:10:48Z",
+      "description": "基本情報技術者試験の「科目B」だけに絞った学習サービスを個人で作っています。\n科目Bは公開されている問題が少なく、数えたら50問でした。本番が20問なので2.5回分です。足りないぶんは LLM に作らせているのですが、AI が作った問題をそのまま出すわけにはいかないので、検証の工程を置いています。\nAI が作ったものを AI が検証する。字面だけ見ると不安しかありませんが、ちゃんと設計すれば機能し...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
     {
       "title": "改造RTX 2080 Ti 22GBとTesla V100 32GBを同一条件で比較した実測値",
       "url": "https://zenn.dev/phpmyadmin/articles/rtx2080ti-22gb-vs-v100-32gb",
@@ -19,6 +59,16 @@
       "site": "Zenn(LLM)",
       "published": "2026-09-16T11:50:29Z",
       "description": "RAGシステムをPoCから本番運用へ移行する際、「思ったような回答精度が出ない」「リリース後に品質が低下した」といった課題に直面し、頭を抱えるエンジニアは少なくありません。特に、RAGの品質維持を人力で行うのは非現実的であり、安定した運用には自動化が不可欠です。\nこの記事では、RAGシステムを本番運用する上での主要な課題を解決するために、評価指標に基づいた品質維持の自動化戦略と具体的な実装パターン...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "比較】BeautifulSoup自作 vs Scraping AI：開発者が知るべき「保守税」と使い分けの境界線",
+      "url": "https://zenn.dev/amandeep_sms/articles/b013071824f2a8",
+      "site": "Zenn(LLM)",
+      "published": "2026-09-16T08:33:11Z",
+      "description": "PythonでWebスクレイピングを始める際、誰もが最初に手にするのが requests と BeautifulSoup です。\nしかし、個人開発の学習フェーズから**「プロダクトの本番運用」に移行した途端、多くのエンジニアが直面するのが「セレクター保守地獄」**です。\n本記事では、BeautifulSoupによる自作スクレイピングと、LLMを活用したデータ抽出API「Scraping AI」の工...",
       "category": "AI・技術",
       "rss_category": "",
       "image_url": ""
@@ -119,16 +169,6 @@
       "site": "Zenn(LLM)",
       "published": "2026-09-16T02:37:18Z",
       "description": "この記事は「Claude Code 101を日本語で」シリーズの第1回です。\nAnthropic（アンソロピック／Claudeの開発元）が無料で公開している学習コース「Claude Code 101」を、一から順番に受講しながら、学んだことを日本語でまとめていきます。コースは英語だけなので、「英語のコースはちょっと……」という人の入口になれば、という趣旨です。\n!\nコースの中身をそのまま翻訳する記...",
-      "category": "AI・技術",
-      "rss_category": "",
-      "image_url": ""
-    },
-    {
-      "title": "AIで採用スクリーニングする前に — 個人情報を守る匿名化前処理パイプライン",
-      "url": "https://zenn.dev/stock_inc/articles/anonymization-pipeline-before-ai-screening",
-      "site": "Zenn(LLM)",
-      "published": "2026-09-16T01:00:07Z",
-      "description": "個人情報を含む文書をLLMに渡す場面は増えていますが、「匿名化しています」と言うだけでは意味がありません。具体的にどう名前を検出し、どう置換し、どうやって生データを手元から出さないか——この記事は、その仕組みそのものを解説します。題材は応募書類（PDF）のスクリーニング補助ですが、PIIを含む文書全般に応用できます。\n\n本記事は個別の対象者・評価内容には一切触れず、匿名化の仕組みのみを一般化して扱...",
       "category": "AI・技術",
       "rss_category": "",
       "image_url": ""
