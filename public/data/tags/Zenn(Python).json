@@ -1,8 +1,38 @@
 {
   "site": "Zenn(Python)",
-  "last_updated": "2026-09-15T22:05:57.822122",
-  "total_articles": 6438,
+  "last_updated": "2026-09-16T00:16:10.099567",
+  "total_articles": 6440,
   "articles": [
+    {
+      "title": "簡易掲示板アプリでXSSを再現して修正する",
+      "url": "https://zenn.dev/yukakawa/articles/0478431fa03f2a",
+      "site": "Zenn(Python)",
+      "published": "2026-09-15T22:30:05Z",
+      "description": "はじめに\nセキュリティについて、なるべく手を動かして勉強をしたい！と思い、生成AIに相談したら、学習用アプリを作ってくれました！この記事では生成AIのことを親しみと敬意を込めて、「トレント先生」と呼んでいます。\n前回はSQLインジェクションを扱いましたが、今回は**XSS(クロスサイトスクリプティング)**に挑戦します。\n前回作ってもらった簡易掲示板アプリ(Flask + SQLite)の投稿の表...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "落ちないから気づけない。社内ツールで踏んだ不具合10本まとめ（前編）",
+      "url": "https://zenn.dev/shinsei99/articles/silent-failures-10",
+      "site": "Zenn(Python)",
+      "published": "2026-09-15T22:13:07Z",
+      "description": "不動産会社で、社内向けの業務ツールを30本ほど作って、事務所のMacで常時起動させています。\n書いた本人が運用も兼ねているので、壊れ方をひととおり自分で踏みました。\nそのうち、エラーが出ないまま壊れていたものを10本ぶん、記事にしました。この記事はその索引です。\n共通しているのは、処理は成功していて、画面も正常で、ログにも何も出ないという点です。\n落ちるバグは遅くとも次の実行で分かります。落ちない...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "Psi4とRDKitでFukui Index（福井指数）計算_第2回：反応性を直感的に捉える可視化アルゴリズム",
+      "url": "https://zenn.dev/pincolo/articles/4e8ddfaf6c5bac",
+      "site": "Zenn(Python)",
+      "published": "2026-09-15T21:30:05Z",
+      "description": "はじめに：数字の羅列から「化学的インサイト」を引き出す\n全5回でお届けするFukui Index（福井指数）紹介シリーズ。\n前回の第1回では、量子化学計算ライブラリ「Psi4」と「RDKit」を連携させ、分子の局所的な反応性を示すFukui Indexを自動計算するプログラムの設計について紹介しました。\nしかし、計算プログラムが出力する結果は、各原子に紐付いた「数字の羅列（配列データ）」に過ぎませ...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
     {
       "title": "わからないものは自分が理解できる単位まで分解する",
       "url": "https://zenn.dev/khiro_maru/articles/0d0880003e2d0b",
@@ -14,21 +44,11 @@
       "image_url": ""
     },
     {
-      "title": "AIにPythonのルールを守らせるフック構成と、迂回への対策",
-      "url": "https://zenn.dev/fukaunabara/articles/my-hook-settings",
+      "title": "予測精度54.8%のAIは利益を出せるのか？WFOから売買戦略まで検証した | 第8回：AIで為替の未来予測は本当にできるのか？",
+      "url": "https://zenn.dev/hiro_algo/articles/fx-seq2seq-wfo-strategy",
       "site": "Zenn(Python)",
-      "published": "2026-09-15T13:28:56Z",
-      "description": "はじめに\nAIでちょっとしたミニアプリを書く程度なら、敷居はずいぶん低くなりました。ただ、依然として会社で使う業務用のアプリをAIに書かせるのは、ハードルが高いと感じていないでしょうか。\n例えば、私は社内向けのツールを提供する立場で、セマンティックバージョニングに準拠して開発をしていますが、しばしばAIはその制約を無視して実装してしまいがちです。\nインストラクションファイルを活用すれば、公開API...",
-      "category": "開発",
-      "rss_category": "",
-      "image_url": ""
-    },
-    {
-      "title": "生成 AI が書いたコードが壊れるときの典型 3 パターン——自分のリポで踏んだ実例と、見つけ方",
-      "url": "https://zenn.dev/tauridev/articles/ai-code-breaks-3-patterns",
-      "site": "Zenn(Python)",
-      "published": "2026-09-15T13:17:15Z",
-      "description": "生成 AI に書かせたコードは、どこで壊れるのか。症状の一覧ではなく、自分のリポジトリ（Rust／Tauri のデスクトップアプリ・クローズドβ・ソロ開発）で実際に踏んで直した 3 件を、PR と commit の番号つきで書きます。ローカル LLM に書かせた 120 本を測った結果も添えます。\n\n 先に結論\n\n自分のリポで踏んだ壊れ方は、大きく 3 つだった——失敗を隠す／無いものを本当らしく...",
+      "published": "2026-09-15T15:02:42Z",
+      "description": "前回は、ドル円（USD/JPY）の5分足を使い、LSTMへ入力する過去データの長さと予測時間を比較しました。\nその結果、今回のデータでは、\n\n入力時間：4時間\n予測時間：90分\n特徴量：Close、Diff、MACD、Momentum\n\nという条件が比較的良い結果になりました。\n前回の記事：4時間入力が最も高精度だった\nただし、前回の評価は1つの学習期間とテスト期間を分けた比較です。\n相場の期間を...",
       "category": "開発",
       "rss_category": "",
       "image_url": ""
