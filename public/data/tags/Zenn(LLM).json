@@ -1,24 +1,14 @@
 {
   "site": "Zenn(LLM)",
-  "last_updated": "2026-09-17T07:36:19.243353",
-  "total_articles": 6132,
+  "last_updated": "2026-09-17T12:47:13.151495",
+  "total_articles": 6129,
   "articles": [
     {
-      "title": "GPU数万枚の強化学習に、デスクトップ1台と数ドルのコード進化で迫る — 自律最適化エンジン「TANREN」の設計",
-      "url": "https://zenn.dev/suzukishoten/articles/68cd8e1f82858d",
+      "title": "LLM 推論コスト最適化の考え方と Amazon Bedrock の活用法",
+      "url": "https://zenn.dev/yqt/articles/e24b000392ceab",
       "site": "Zenn(LLM)",
-      "published": "2026-09-17T06:57:47Z",
-      "description": "TL;DR\n\n数万GPUでの強化学習や、推論時に大量トークンを消費し続けるアプローチに対抗し、デスクトップ1台・数ドルのAPI代でアルゴリズムを自律最適化する仕組み「TANREN（鍛錬）」を作りました。\n重み（Weight）を訓練するのではなく、凍結LLMに候補コードを書かせ、決定論的検証器で評価して「読める数十行のPythonコード」を進化させます（DeepMind FunSearchの軽量化）...",
-      "category": "AI・技術",
-      "rss_category": "",
-      "image_url": ""
-    },
-    {
-      "title": "TypeSafeのJevを正しく驚く、それってLLMでできませんか？",
-      "url": "https://zenn.dev/nwn/articles/824026c76116e0",
-      "site": "Zenn(LLM)",
-      "published": "2026-09-17T06:56:15Z",
-      "description": "Jevとは？\nTypeSafe AIの「Jev」は、文章を生成する代わりに、ソフトウェアがそのまま使える判断と確率を高速に返すモデルです。\n詳しい説明に関しては公式サイトに譲ります\nこれをみて正直なところ「それは既存のLLMでもできるのでは？」と思ってしまいました。\n\n JSON出力\nまず注目したのはこのデモです。\nLLMでJSON出力するのに比べてJevを使って並列に推論することで大幅に高速化し...",
+      "published": "2026-09-17T08:52:01Z",
+      "description": "はじめに\n皆さん、こんにちは。Amazon Web Services のソリューションアーキテクト、Yuqi です。\nLLM を活用したアプリケーションを開発・評価・運用していると、必ずぶつかる問いがあります。\n\nトークンの使用量を最適化して、コストを削減するにはどうすればいいのか？\n\nAWS に入社する前、私は Amazon Bedrock を使った LLM 搭載機能の開発に携わり、推論コストの...",
       "category": "AI・技術",
       "rss_category": "",
       "image_url": ""
@@ -34,31 +24,11 @@
       "image_url": ""
     },
     {
-      "title": "文字列を捨てたモデル。Jevはなぜ桁で速いのか",
-      "url": "https://zenn.dev/1amageek/articles/typesafe-jev-system-one-model",
-      "site": "Zenn(LLM)",
-      "published": "2026-09-17T04:47:41Z",
-      "description": "こんにちは、村本です。\n2026年9月15日、TypeSafe AIというサンフランシスコの会社がステルスを抜けて、Jevというモデルを公開しました。会社の説明はこうです。\n\nThink of Jev as a frontier-intelligence function call: unstructured state in, typed probabilistic decisions out....",
-      "category": "AI・技術",
-      "rss_category": "",
-      "image_url": ""
-    },
-    {
       "title": "TypeSafe JevとClaudeでニュース選別を53日分比べた — 1日1秒・0.1セントの判定器",
       "url": "https://zenn.dev/acropapa330/articles/typesafe-jev-news-triage-53days",
       "site": "Zenn(LLM)",
       "published": "2026-09-17T04:42:11Z",
       "description": "きっかけ\n2026年9月15日、TypeSafe社が「System One Model」と銘打った Jev を発表しました。創業者の Diogo Almeida は、OpenAIで言語モデルを指示に従わせ、人と会話できるようにする手法づくりに関わった人物です(ChatGPTの研究に参加)。\nJevは文章を書きません。状況(state)と質問を渡すと、型の決まった答えだけを返すモデルです。発表ブログ...",
-      "category": "AI・技術",
-      "rss_category": "",
-      "image_url": ""
-    },
-    {
-      "title": "ツールをJavaScriptから呼ばせるOpenAIのProgrammatic Tool Calling",
-      "url": "https://zenn.dev/okssusucha/articles/20260720-openai-programmatic-tool-calling",
-      "site": "Zenn(LLM)",
-      "published": "2026-09-17T04:41:18Z",
-      "description": "在庫APIを10商品ぶん叩いて、在庫が5個未満のものだけ抜き出し、その一覧をSlackに投げる。エージェントにやらせると、10回ぶんのJSONレスポンスが丸ごとモデルのコンテキストを通過する。使うのは「available_units」の数値だけなのに、だ。しかも1往復ごとにモデルの推論が走るので、レイテンシも課金も往復回数に比例して膨らむ。\nこの構造的なムダに対して、OpenAIが7月9日にRes...",
       "category": "AI・技術",
       "rss_category": "",
       "image_url": ""

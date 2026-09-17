@@ -1,8 +1,108 @@
 {
   "site": "Zenn(Python)",
-  "last_updated": "2026-09-17T07:36:19.243353",
-  "total_articles": 6458,
+  "last_updated": "2026-09-17T12:47:13.151495",
+  "total_articles": 6469,
   "articles": [
+    {
+      "title": "AIに最初のモデルを作らせる。58%を見て喜ぶ前に",
+      "url": "https://zenn.dev/data_boatrace/articles/a924ab6d9bb34c",
+      "site": "Zenn(Python)",
+      "published": "2026-09-17T11:33:09Z",
+      "description": "AIにコードを書かせて、1着になる艇を選ぶ小さなモデルを作りました。\n評価した362レースのうち、210レースで的中。的中率は58.01%です。\nこの数字だけなら、よく当たっているように見えるかもしれません。しかし、同じ362レースで「いつも1号艇を選ぶ」と211レース的中し、58.29%でした。今回のモデルは、基準線より1レース少ない結果です。\n今回は、モデルを動かし、この差を自分で確かめるとこ...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "名前が1件も衝突していないのに、一括リネームでファイルが消えた（432件中50件）",
+      "url": "https://zenn.dev/aishigoto_lab/articles/filename-rename-silent-loss",
+      "site": "Zenn(Python)",
+      "published": "2026-09-17T11:27:07Z",
+      "description": "大量のファイル名を一括で変える前に、危険な名前が混ざっていないかを検出したい。そう考えて検出コードを書き、7通りの方法で測りました。\nその過程で、検出方法をすべて通過するのに実際にファイルが消えるケースが出てきたので、その話を書きます。この記事では結果より検証の組み方を厚めに書きます。\n\n まず、名前の衝突は検出できる\n大文字小文字だけが違う名前、Unicode正規化の違い（NFC/NFD）、全角...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "「請求書.pdf.exe」を開く前に見抜く ― ファイルの正体を先頭バイトから判定するツールを作った（偽装・拡張子なし）",
+      "url": "https://zenn.dev/okinawasoftware/articles/952b94a2dd779b",
+      "site": "Zenn(Python)",
+      "published": "2026-09-17T08:45:56Z",
+      "description": "Windowsは既定で拡張子を隠します。なので「請求書.pdf.exe」という実行ファイルは、エクスプローラーでは「請求書.pdf」と表示されます。アイコンもPDFのものに差し替えられていれば、見た目で区別する手がかりはありません。\n一方で、ファイルの拡張子は「名乗り」にすぎません。PDFの先頭は必ず %PDF- で始まり、Windowsの実行ファイルは MZ で始まる。名前は何とでも言えますが、...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "985万文字のXMLが、1バイトのせいで読めませんでした",
+      "url": "https://zenn.dev/rapls/articles/53271acadf81ce",
+      "site": "Zenn(Python)",
+      "published": "2026-09-17T06:32:15Z",
+      "description": "WordPress のエクスポートを解析しようとして、1行目から進めませんでした。\nxml.etree.ElementTree.ParseError: not well-formed (invalid token): line 24688, column 26\nファイルは985万文字あります。原因は、そのうちの1文字でした。\n先に断っておくと、XML 1.0 で使える文字の範囲は仕様に明記されてい...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "1.2円のズレでBotが10日間止まっていた ― 原因は取引所の自動ステーキングだった",
+      "url": "https://zenn.dev/codecraft/articles/staking-reward-false-positive-10day-halt",
+      "site": "Zenn(Python)",
+      "published": "2026-09-17T03:39:46Z",
+      "description": "暗号資産の自動売買Botを作っています。基本はdry_run(仮想売買)での検証がメインで、実弾はごく小さいパイロット(2万円)を1本だけ動かしている段階です。\nこの記事は、「なんかめっちゃログ送ってきてるから見て」という一言から始まった調査の話です。原因を追うと、1.2円のズレのせいで新規エントリーが10日間止まっていました。\n\n\n きっかけ: 15秒ごとに同じ警告\nDiscordに同じ警告が延...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "野鳥の声を識別し1800年代風アートを描くE-ink額縁「fugleramme」",
+      "url": "https://zenn.dev/ament3/articles/ai-digest-2026-09-16-0001",
+      "site": "Zenn(Python)",
+      "published": "2026-09-17T00:11:49Z",
+      "description": "はじめに\nHacker Newsで大きな話題を呼んでいるオープンソースプロジェクト**「fugleramme」**をご存知でしょうか？\nこれは、マイクで拾った野鳥の鳴き声をリアルタイムで解析（種を特定）し、その鳥の姿を1800年代の博物画（ビンテージな科学イラスト）スタイルで生成AIに描かせ、電子ペーパー（E-ink）の額縁に表示するという非常に魅力的なIoT×AI作品です。\n単なる「AIの画像生...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "答えを四択で選ばせない、途中式を打って解く数学の問題集を作っています【MathLab】",
+      "url": "https://zenn.dev/sorapenguin/articles/mathlab-type-the-expression",
+      "site": "Zenn(Python)",
+      "published": "2026-09-17T00:00:06Z",
+      "description": "MathLab とは\n途中の式を、式のまま打ち込んで解く数学の問題集です。\nhttps://mathlab.sorapenguin.dev\n四択から選ぶのではなく、(x-1)(x-3) のように自分で書きます。文字の一致では見ていないので、同じ式を x^2-4x+3 と書いても通ります。ログインもインストールも要らず、開けばその場で解けます。スマホでも打てます。数式用のキーパッドが下から出てくるの...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "無効化したプラグインを自動で復活させる — 冷却期間から証拠ベースのシャドー実行へ作り直した話",
+      "url": "https://zenn.dev/sktt_panda/articles/rakuscan-plugin-shadow-execution-auto-reenable",
+      "site": "Zenn(Python)",
+      "published": "2026-09-16T23:55:28Z",
+      "description": "3行まとめ\n\nRakuScan（自分用の株式スクリーニングツール）は、勝率が悪化した分析プラグインを自動で無効化する仕組みを持つ。だが最初に作った「冷却期間が過ぎたら無条件で復活」方式は、無効化後にデータが貯まらず事実上の片道切符になっていた\n作り直した方式は、無効化中のプラグインも毎日裏側で実行し続けて評価データを蓄積するシャドー実行。証拠（勝率の回復）に基づいてのみ自動再有効化する\nこれが成立...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "Gemini APIとPythonで新規テキスト自動分析、要約とキーワードをJSON保存",
+      "url": "https://zenn.dev/ikuokuotiak/articles/gemini-api-python-new-text-auto-analysis-json",
+      "site": "Zenn(Python)",
+      "published": "2026-09-16T22:00:59Z",
+      "description": "はじめに\nahicは日々の業務で13体のAIエージェントを運用し、多くの作業をAIやRPAで自動化しています。その中でも、特にテキストデータの処理は、情報の整理・検索効率に直結するため、重要な自動化テーマの一つです。\n現代の業務では、議事録、メモ、ログファイル、ダウンロードしたドキュメントなど、膨大な量のテキストデータが日々生成されます。これらを後から手動で分類したり、内容を把握するために一つずつ...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "Claude APIで学習ログのつまずきを構造化検出する",
+      "url": "https://zenn.dev/liatris/articles/20260917-learner-stuckpoint-mining",
+      "site": "Zenn(Python)",
+      "published": "2026-09-16T22:00:06Z",
+      "description": "!\nこの記事は、Claude Codeを執筆支援に使った \"毎朝1本書く\" 取り組みの一環で書いています。\n\n目的: 自分のAI活用キャッチアップ。仕組み自体も毎月アップデートしていきます\n体制: 題材選定・実装・下書きをClaude Codeで補助、Liatrisが動作確認と編集を経て公開判断\n方針: Zennのガイドラインに真摯に向き合い、運営から指摘や警告があれば即座に取り組みを停止します\n...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
     {
       "title": "Claude Code に Kindle 本を2冊書かせて KDP に出すまでに踏んだ罠（目次警告・AI申告・表紙）",
       "url": "https://zenn.dev/takuyaauto/articles/0415482c3aa61b",
@@ -29,6 +129,16 @@
       "site": "Zenn(Python)",
       "published": "2026-09-16T15:11:49Z",
       "description": "ゴールデンクロスは、FXを始めると早い段階で目にする売買サインです。\n短期の移動平均線が長期線を上回ったら買い、下回ったら売り。説明は明快ですが、実際に売買して利益が残るかは別の問題です。\nそこでUSDJPYの実データを使い、時間足、移動平均線の種類、計算期間を変えた24条件を検証しました。\n結論からいうと、2023～2024年に最も良かった条件は+4,015.0 pipsでした。しかし同じ設定を...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "2026-08-29 今日の技術トレンド",
+      "url": "https://zenn.dev/bambampurin/articles/2026-08-29-tech-daily",
+      "site": "Zenn(Python)",
+      "published": "2026-09-16T14:38:18Z",
+      "description": "!\n本日の技術トレンドでは、AIエージェントとフィジカルAI（具身知能）への主役交代が鮮明になる一方、プラットフォームとツールチェーンを巡る激震が起きています。OpenAIによるSpaceX傘下Cursorへのモデル提供停止や、Next.jsのRCE脆弱性修正、エージェント用サンドボックス環境（Vercel, E2B等）の比較評価、PythonエコシステムにおけるAstral（uv/Ruff）買収...",
       "category": "開発",
       "rss_category": "",
       "image_url": ""
