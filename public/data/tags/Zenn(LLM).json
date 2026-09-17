@@ -1,7 +1,7 @@
 {
   "site": "Zenn(LLM)",
-  "last_updated": "2026-09-17T20:24:37.458382",
-  "total_articles": 6131,
+  "last_updated": "2026-09-17T23:00:19.152795",
+  "total_articles": 6129,
   "articles": [
     {
       "title": "LoRAをW₀x+sBAxから実装する：rank・初期化・mergeの勘所",
@@ -28,37 +28,7 @@
       "url": "https://zenn.dev/yqt/articles/e24b000392ceab",
       "site": "Zenn(LLM)",
       "published": "2026-09-17T08:52:01Z",
-      "description": "はじめに\nこんにちは、AWS Japan のソリューションアーキテクト、Yuqi です。\nLLM を活用したアプリケーションを開発・評価・運用していると、必ずぶつかる問いがあります。\n\nトークンの使用量を最適化して、コストを削減するにはどうすればいいのか？\n\n私は Amazon Bedrock を使った LLM 搭載機能の開発に携わり、推論コストの最適化に取り組んでいました。この記事では、その経験...",
-      "category": "AI・技術",
-      "rss_category": "",
-      "image_url": ""
-    },
-    {
-      "title": "TypeSafeのJevを正しく驚く、それってLLMでできませんか？",
-      "url": "https://zenn.dev/nwn/articles/824026c76116e0",
-      "site": "Zenn(LLM)",
-      "published": "2026-09-17T06:56:15Z",
-      "description": "Jevとは？\nTypeSafe AIの「Jev」は、文章を生成する代わりに、ソフトウェアがそのまま使える判断と確率を高速に返すモデルです。\n詳しい説明に関しては公式サイトに譲ります\nこれをみて正直なところ「それは既存のLLMでもできるのでは？」と思ってしまいました。\n\n JSON出力\nまず注目したのはこのデモです。\nLLMでJSON出力するのに比べてJevを使って並列に推論することで大幅に高速化し...",
-      "category": "AI・技術",
-      "rss_category": "",
-      "image_url": ""
-    },
-    {
-      "title": "文字列を捨てたモデル。Jevはなぜ桁で速いのか",
-      "url": "https://zenn.dev/1amageek/articles/typesafe-jev-system-one-model",
-      "site": "Zenn(LLM)",
-      "published": "2026-09-17T04:47:41Z",
-      "description": "こんにちは、村本です。\n2026年9月15日、TypeSafe AIというサンフランシスコの会社がステルスを抜けて、Jevというモデルを公開しました。会社の説明はこうです。\n\nThink of Jev as a frontier-intelligence function call: unstructured state in, typed probabilistic decisions out....",
-      "category": "AI・技術",
-      "rss_category": "",
-      "image_url": ""
-    },
-    {
-      "title": "ツールをJavaScriptから呼ばせるOpenAIのProgrammatic Tool Calling",
-      "url": "https://zenn.dev/okssusucha/articles/20260720-openai-programmatic-tool-calling",
-      "site": "Zenn(LLM)",
-      "published": "2026-09-17T04:41:18Z",
-      "description": "在庫APIを10商品ぶん叩いて、在庫が5個未満のものだけ抜き出し、その一覧をSlackに投げる。エージェントにやらせると、10回ぶんのJSONレスポンスが丸ごとモデルのコンテキストを通過する。使うのは「available_units」の数値だけなのに、だ。しかも1往復ごとにモデルの推論が走るので、レイテンシも課金も往復回数に比例して膨らむ。\nこの構造的なムダに対して、OpenAIが7月9日にRes...",
+      "description": "はじめに\n皆さん、こんにちは。Amazon Web Services のソリューションアーキテクト、Yuqi です。\nLLM を活用したアプリケーションを開発・評価・運用していると、必ずぶつかる問いがあります。\n\nトークンの使用量を最適化して、コストを削減するにはどうすればいいのか？\n\nAWS に入社する前、私は Amazon Bedrock を使った LLM 搭載機能の開発に携わり、推論コストの...",
       "category": "AI・技術",
       "rss_category": "",
       "image_url": ""
@@ -129,6 +99,16 @@
       "site": "Zenn(LLM)",
       "published": "2026-09-17T00:30:05Z",
       "description": "Chrome DevTools の Performance トレース（Trace-*.json）は、少し込み入った調査だとすぐ数百MBになります。これを Claude のような LLM にそのまま渡して「重い処理を特定して」とやるのは、筋が悪い。\nざっくり1トークンが4バイトとして、525MB のトレースは約1.3億トークン相当です。1M コンテキストに桁で入りません。分割して読ませても、課金と時...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "anthropic 1.6.0 は Retry-After 120 で 240 秒止まる",
+      "url": "https://zenn.dev/sora_endo/articles/aether-anthropic-sdk-retry-after-60s",
+      "site": "Zenn(LLM)",
+      "published": "2026-09-17T00:22:48Z",
+      "description": "本記事は要約です。初出: https://aether-echoes.com/posts/anthropic-sdk-python-1-6-retry-after-over-60s\n\n\n 1.6.0 に上げると、429 のあと何秒止まるのか\nanthropic-sdk-python を 1.5.0 から 1.6.0 に上げると、429 を受けたときに SDK が眠る時間が変わる。release n...",
       "category": "AI・技術",
       "rss_category": "",
       "image_url": ""
