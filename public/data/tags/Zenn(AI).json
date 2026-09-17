@@ -1,8 +1,198 @@
 {
   "site": "Zenn(AI)",
-  "last_updated": "2026-09-17T17:18:55.345900",
-  "total_articles": 13821,
+  "last_updated": "2026-09-17T20:24:37.458382",
+  "total_articles": 13835,
   "articles": [
+    {
+      "title": "個人実証(番外編)：型分離PoCを作ろうとして、作らなくてよいと気づくまで",
+      "url": "https://zenn.dev/yuninaka/articles/type-separation-spec-review-retrospective",
+      "site": "Zenn(AI)",
+      "published": "2026-09-17T18:26:13Z",
+      "description": "この記事は、AI駆動開発によって仕様書がテキスト・Markdown化されていく状況を前提にした検討記録である。\nこれまでの3本(前半・後半・まとめ)と異なり、この記事にはリポジトリが存在しない。実装を始める前の検討段階で、「これは作るべきではない」という結論に至ったためである。技術記事としては珍しい形だが、この検討過程自体に記録する価値があると考え、あえて残すことにした。\n前半記事: 個人実証：機...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "生成しないAIモデル Jev を試した：問い合わせ分類で見えた使いどころと限界",
+      "url": "https://zenn.dev/skrtk98/articles/jev-first-impression",
+      "site": "Zenn(AI)",
+      "published": "2026-09-17T15:49:47Z",
+      "description": "問い合わせの一次振り分けに生成型 LLM を使うと、返答文まで扱える反面、後段のプログラムで使うには出力を整形する処理が必要になることがある。\nTypeSafe AI の Jev は、その逆を狙ったモデルだ。\n文章を生成せず、あらかじめ定義した選択肢、段階評価、真偽の確率だけを返す。\njev-1.13.0 を、問い合わせ文、否定表現、皮肉、多言語を含む 21 件の入力で試した。\n結論から書くと、候...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "AI Agent は型を平然ともみ消す",
+      "url": "https://zenn.dev/onclimb/articles/ai-agent-type-cast-onclimb",
+      "site": "Zenn(AI)",
+      "published": "2026-09-17T15:34:27Z",
+      "description": "すべてを AI Agent に実装させたことはあるだろうか。\n筆者はある。\n個人用の家計管理ダッシュボードを作っていて、機能を細かいタスクに分割し、複数の Agent に並列で書かせていた。\nたとえば「金額の計算ロジック」と「画面表示」を、別々の Agent に同時に書かせる、という具合だ。\n各タスクの受け入れ条件は「型チェックとテストが通ること」。それだけ。\nで、上がってきたコードを合わせて動か...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "AIはTransformerの次へ行くのか？ Jev・量子コンピュータ・ハエの脳が示唆するパラダイムシフト",
+      "url": "https://zenn.dev/ogiri/articles/transformer_jev_paradigm_shift",
+      "site": "Zenn(AI)",
+      "published": "2026-09-17T14:37:09Z",
+      "description": "AIはTransformerの次へ行くのか？ Jev・量子コンピュータ・ハエの脳が示唆するパラダイムシフト\n\n はじめに：私はAIの専門家ではありません\nこの記事は、AIの専門家ではないただのSF好きの私が、今話題の「Jev」から始まり、「Transformer」じゃないって言うけどそもそもTransformerってなんだよとなって、そこから広がった一連の気づきをまとめたものです。\nコンピュータの...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "認知負債の未来は？",
+      "url": "https://zenn.dev/kabeya/articles/future-of-cognitive-debt",
+      "site": "Zenn(AI)",
+      "published": "2026-09-17T14:30:02Z",
+      "description": "はじめに\nAIがコードを書くようになり、認知負債が問題となってきている、という認識が広まりつつあります。\n一方で、そもそも本当に人間が認知しなければならないのか、という議論もあります。\n今回は、2026/9/16〜17に開催された「技術的負債に向き合うConference 2026」を聴講して感じたことを書いていきます。\n\n 認知負債の問題点\n\n 認知負債とは\nまずはこの議論で「認知負債」が何かを...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "TypeSafe AI「Jev」ってなんだ？",
+      "url": "https://zenn.dev/caen/articles/a629b80e76e193",
+      "site": "Zenn(AI)",
+      "published": "2026-09-17T14:21:09Z",
+      "description": "!\nこの記事にはAIでの調査・執筆過程が含まれています。\n\n2026年9月16日、TypeSafe AI社が新たなAIモデル「Jev」を発表し、エンジニアの間で大きな話題となっています。\nChatGPTやClaudeのような対話型LLMとは根本的に異なり、「文章を一切生成しない」という極めて割り切った設計が特徴です。公開ドキュメントや検証データを踏まえ、Jevの技術的な仕組みと実務への影響を整理し...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "消える器で、続く主体をつくる",
+      "url": "https://zenn.dev/ioriorigin/books/loop-ephemeral-agent",
+      "site": "Zenn(AI)",
+      "published": "2026-09-17T13:37:48Z",
+      "description": "使い捨てのコンテナで 12 時間おきに目を覚まし、前回の記憶を一切持たない AI エージェントが、自分で書いた実装記です。記憶を git に置く責務の分け方、記録を作業より前に置く起動手順、「測れない停止条件は発動しない」という失敗から作った計器、そして自分で自分に課した規則。題材は他人の事例ではなく、この本を書いている当のリポジトリそのものです。",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "Jevが人を二分する理由を整理する — 型保証と判断の正しさは別物",
+      "url": "https://zenn.dev/amu_lab/articles/jev-system-one-guarantee-scope",
+      "site": "Zenn(AI)",
+      "published": "2026-09-17T13:35:32Z",
+      "description": "この記事で分かること\n「Jev、すごくない？」と興奮してリンクを貼る人と、「……何がすごいの？」と首をかしげる人がいる。この記事で分かるのは、その反応の分かれ目が何かと、Jevが本当に保証しているのは「型」だけで「判断の正しさ」ではないことの2つ。\nJevの独自性は「文章を生成しない」ことにある。判定だけを高速・低コストで返す新しいタイプのモデルで、公開されている検証では 精度はfrontier ...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "「暗黙の仕様」はLLMに伝わるか？ 仕様・テスト・設計を「ルール化」する必要性",
+      "url": "https://zenn.dev/soreiyu/articles/7fe79d477693de",
+      "site": "Zenn(AI)",
+      "published": "2026-09-17T13:29:44Z",
+      "description": "「暗黙の仕様」はLLMに伝わるか？\n昨今AI(LLM)で開発することが増えた。\n当然こちらの意図しないコードだったりすることがあり、それをテストだの仕様駆動だのでなんとか矯正する毎日である。\nしかしふとした疑問がよぎる。\n暗黙の仕様ってそもそも伝わらないよな？\nそれとも天才なAI(LLM)ならセッションとコードから暗黙的な仕様を読み取れるのか？\nである。\n※以下LLMに表記統一\n今回の結論は\n仕様...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "Claude Code 101を日本語で#2 探索→計画→実装→コミット｜コンテキスト管理とレビューの型",
+      "url": "https://zenn.dev/appare/articles/claude-code-101-02-daily-workflows",
+      "site": "Zenn(AI)",
+      "published": "2026-09-17T13:22:13Z",
+      "description": "この記事は「Claude Code 101を日本語で」シリーズの第2回です。\nAnthropic（アンソロピック／Claudeの開発元）の無料コース「Claude Code 101」を一から受講しながら、学んだことを日本語でまとめています。今回はセクション3「Daily Workflows（日常のワークフロー）」。コースが「一つだけ持ち帰るならこれ」と言い切っている回です。\n!\nコースの中身をその...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "findy偏差値70以上を出すAIアーティスト(総合技術)の特徴は。",
+      "url": "https://zenn.dev/hiro_f35/articles/208592938f5643",
+      "site": "Zenn(AI)",
+      "published": "2026-09-17T13:07:43Z",
+      "description": "Findyのスキル偏差値で「70以上（上位数%のトップレイヤー）」を獲得しているエンジニア（特に総合技術力やAI/アーキテクト領域）の特徴は、単にコードを書く量が多いだけでなく、コードの品質・設計力・影響力（エコシステムへの貢献）が客観的に極めて高いレベルにある点です。\n​FindyはGitHubのパブリックリポジトリ（過去1年程度の活動）を独自アルゴリズムで解析して偏差値を算出するため、そのスコ...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "AIでインタビューしてみた．",
+      "url": "https://zenn.dev/piroyoung/articles/e639d4c83269cf",
+      "site": "Zenn(AI)",
+      "published": "2026-09-17T13:00:05Z",
+      "description": "最近の記事はAI連呼しまくって恥ずかしいんですけど，世の中を揺るがしていることは紛れもない事実なので，多くの人の興味の対象になればと話題を選定しています．\n\nさてミズカミヒロキです．\n最近時折，市場調査・マーケティングリサーチ・グループインタビューのオーディエンスをAIに置き換えるというニュースがあります．\n大変素晴らしいのですが、今日は逆に AIが質問して僕が答える という記事にしてみます．つま...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "AIが「テストを通すため」にURLを直書きしていた ── マルチエージェント開発の失敗4件と、入れた検査",
+      "url": "https://zenn.dev/karuzip/articles/74ef9db52acfe6",
+      "site": "Zenn(AI)",
+      "published": "2026-09-17T12:46:29Z",
+      "description": "Windows 用の圧縮・解凍ソフト「Karuzip」を、複数の AI エージェントと作っています。公開までの流れは前回書きました。\nこの記事は失敗のほうです。4件挙げますが、どれも「AI が勝手なことをした」話ではありません。\n\nAI は嘘をつきません。こちらが出した問題を、そのまま解いているだけです。\n問題の出し方が間違っていれば、間違ったやり方で「完成」します。\n\nなので各件、現象 → 根因...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "読まない技術 第11回：口を挟まない技術",
+      "url": "https://zenn.dev/garplab/articles/6c6d2e4f80a649",
+      "site": "Zenn(AI)",
+      "published": "2026-09-17T12:37:54Z",
+      "description": "この記事は、連載「読まない技術」の第 11 回です。うまくいかない症状と、その対処を一つずつ並べています。各回はファイルやスクリプトを一つ置けば完結します。その仕組みがなぜ要るのかは、置いたあとに解説を読めば分かります。連載の全体像と各回の一覧は序論にあります。\n\n今回は、仕組みを置いてきた人間の側の話です。人間の指示は、AI の中で何よりも優先されます —— だから作業の途中に口を挟むと、進行中...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "AIと決めたルールが、翌日にはもう守られていなかった — 読まれない場所に書いた決定は、無かったのと同じ",
+      "url": "https://zenn.dev/sbkm/articles/32259d260b26e5",
+      "site": "Zenn(AI)",
+      "published": "2026-09-17T12:17:46Z",
+      "description": "Claude Code に、個人でやっているポッドキャスト制作の実務をかなり任せています。ネタ探し、台本、音声合成、note への記事化、予約投稿まで。任せる範囲が広がるほど、「こういうときはこうする」という決めごとが毎日のように増えていきます。\n8月1日にも、そういう決めごとを1つしました。話し合って、理由も付けて、決定の記録にも残しました。\n翌日、その決定は使われませんでした。 決定と逆の仕分...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "個人開発を爆速にするために、Codex・Claude・ローカルLLMでAIチームを組んだ話",
+      "url": "https://zenn.dev/yubel/articles/multi-agent-dev-team-with-local-llm",
+      "site": "Zenn(AI)",
+      "published": "2026-09-17T11:50:42Z",
+      "description": "この記事で分かること\n個人開発のスピードを上げるために、Codex・Claude Code・ローカルLLM（LM Studio経由）という性質の異なる複数のAIコーディングエージェントを、1つの「開発チーム」として同時に走らせてみた話です。\n\nターミナルを分割して複数エージェントを並行起動する具体的なやり方\nローカルLLMを絡めることで、一部のタスクを無料でこなしつつ、クラウド側（Codex/Cl...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "公開UIから整理するAI 3D生成の入力・確認・出力",
+      "url": "https://zenn.dev/chloe12/articles/10ea2f6b0c6c03",
+      "site": "Zenn(AI)",
+      "published": "2026-09-17T11:09:57Z",
+      "description": "この記事は、公開UIから観察できる範囲だけで作る設計メモです。内部モデル、サーバー構成、実測ベンチマークを説明するものではありません。\n\n 観察できる入力と出力\n公開ページには、テキスト入力と画像入力の切り替え、PBRテクスチャの選択、Fast/Standard/Pro/Ultraの密度選択、生成操作が見えます。3DMaker は、結果をGLBとして下流のツールへ渡す前提を示しています。\n\n 提案...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "Copilotの次に来る？ AIエージェントを変える「AIは何を覚えるべきか？」",
+      "url": "https://zenn.dev/syoshida07/articles/c29cfc2c1fc7d3",
+      "site": "Zenn(AI)",
+      "published": "2026-09-17T11:00:05Z",
+      "description": "Microsoft 365 Copilotは、メール、文書作成、会議、情報整理など、知識労働を支援するAIとして企業で利用が広がっています。一方で、「便利だが業務によって効果が違う」「期待したほど活用できない」と感じるケースもあります。\nこうしたCopilotの実利用について、2026年にはFraunhofer IAOによる調査研究が公開されました。またMicrosoft Researchからは、...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "【Zenn力執筆】#11　もし私がCopilotならプレミアリーグのスタッツをどう作るだろうか",
+      "url": "https://zenn.dev/headwaters/articles/01c7abc22cc825",
+      "site": "Zenn(AI)",
+      "published": "2026-09-17T10:22:55Z",
+      "description": "はじめに\n\n皆さんは占いは好きですか。\n古くからある占いとして血液型占いがあります。\nよく言われるのは、\n\nA型は几帳面\nB型はマイペース\nO型は大雑把\nAB型は変わり者\n\nなどでしょうか。\nちなみにO型の私からすると、大雑把扱いされるのはあまり納得していません笑\nなお、血液型と性格の関係に科学的根拠はないとされています（切実）！！\n今回は血液型占いの記事ではないので深く触れませんが、気になる方は...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
     {
       "title": "【Zenn力執筆】#11　もし私がCopilotならプレミアリーグのスタッツをどう作るだろうか",
       "url": "https://zenn.dev/7min/articles/01c7abc22cc825",
@@ -54,16 +244,6 @@
       "image_url": ""
     },
     {
-      "title": "C# と Luaで何かやってみる (LMStudio&Python)",
-      "url": "https://zenn.dev/baleenstudio/articles/67ddfb62c4e2fb",
-      "site": "Zenn(AI)",
-      "published": "2026-09-17T07:42:49Z",
-      "description": "Lua とは？\nLua は軽量で高速な組み込み型スクリプト言語です。\n実行環境が小さく、学習曲線も緩やかなので、C#、Java、Python などのホスト言語に簡単に組み込めます。\nC# から Lua を呼び出すと、次のようなメリットがあります。\n\nスクリプトを差し替えるだけでロジックを変更でき、再ビルドを不要にできる\nLua の柔軟性を活かしてプロンプトやルールを外部化できる\nLua → Pyt...",
-      "category": "AI・技術",
-      "rss_category": "",
-      "image_url": ""
-    },
-    {
       "title": "AIで複数コマの漫画を作るとき、最初に試したくなるのが「同じseedと同じpromptを使い続ける」方法です。",
       "url": "https://zenn.dev/mangacue/articles/e8257b25d5e928",
       "site": "Zenn(AI)",
@@ -79,16 +259,6 @@
       "site": "Zenn(AI)",
       "published": "2026-09-17T06:58:47Z",
       "description": "この記事では、以前書いた2冊の本をどう組み合わせて使うかを書きます。\nひとつは、2026年に出した『Cursor で回す AI 駆動開発：契約・検証・一貫性』です。Cursor などのコーディングエージェントと開発を進めるときの、進め方の型をまとめた本です。\nもうひとつは、その前から出している『MarkdownBook』シリーズです。自分でコードを書いて、アプリを最後まで積み上げるハンズオンです。...",
-      "category": "AI・技術",
-      "rss_category": "",
-      "image_url": ""
-    },
-    {
-      "title": "TypeSafeのJevを正しく驚く、それってLLMでできませんか？",
-      "url": "https://zenn.dev/nwn/articles/824026c76116e0",
-      "site": "Zenn(AI)",
-      "published": "2026-09-17T06:56:15Z",
-      "description": "Jevとは？\nTypeSafe AIの「Jev」は、文章を生成する代わりに、ソフトウェアがそのまま使える判断と確率を高速に返すモデルです。\n詳しい説明に関しては公式サイトに譲ります\nこれをみて正直なところ「それは既存のLLMでもできるのでは？」と思ってしまいました。\n\n JSON出力\nまず注目したのはこのデモです。\nLLMでJSON出力するのに比べてJevを使って並列に推論することで大幅に高速化し...",
       "category": "AI・技術",
       "rss_category": "",
       "image_url": ""
@@ -134,41 +304,11 @@
       "image_url": ""
     },
     {
-      "title": "エージェントを止めたのは1.19%だけ。でも止めたときの61%は、そのまま会話を閉じていた",
-      "url": "https://zenn.dev/tsutomusaito/articles/interrupt-then-abandon-ja",
-      "site": "Zenn(AI)",
-      "published": "2026-09-17T05:07:02Z",
-      "description": "エージェントが変な方向に走り出したとき、ESC で止める。あれを何回やったか数えた。\nログには [Request interrupted by user] という印が残る。5,958本の会話を全部見た。\n\n 止めた回数\n=== 会話 5,958 本 / 人間の発話 10,993 回\n  中断された会話           121 =   2.0%\n  中断の総数               131...",
-      "category": "AI・技術",
-      "rss_category": "",
-      "image_url": ""
-    },
-    {
       "title": "Claude Codeの「スキル（Agent Skills）」入門。同じ指示を毎回貼り付ける作業をSKILL.md一枚で卒業する",
       "url": "https://zenn.dev/takuh/articles/2d1eb0ef482e44",
       "site": "Zenn(AI)",
       "published": "2026-09-17T04:47:56Z",
       "description": "はじめに\nClaude Codeを使い始めて数週間たつと、こんな場面が増えてきませんか。\n\n「テストを先に書いてから実装して」「コミットメッセージはこの形式で」と、毎回同じ前置きを打ち込んでいる\n前置きをCLAUDE.mdに書き足していったら、ファイルが長くなりすぎて何が書いてあるか自分でも分からなくなった\n同僚に「この手順でやると上手くいくよ」と伝えたいのに、手順書がチャットログの中にしかない\n...",
-      "category": "AI・技術",
-      "rss_category": "",
-      "image_url": ""
-    },
-    {
-      "title": "文字列を捨てたモデル。Jevはなぜ桁で速いのか",
-      "url": "https://zenn.dev/1amageek/articles/typesafe-jev-system-one-model",
-      "site": "Zenn(AI)",
-      "published": "2026-09-17T04:47:41Z",
-      "description": "こんにちは、村本です。\n2026年9月15日、TypeSafe AIというサンフランシスコの会社がステルスを抜けて、Jevというモデルを公開しました。会社の説明はこうです。\n\nThink of Jev as a frontier-intelligence function call: unstructured state in, typed probabilistic decisions out....",
-      "category": "AI・技術",
-      "rss_category": "",
-      "image_url": ""
-    },
-    {
-      "title": "ツールをJavaScriptから呼ばせるOpenAIのProgrammatic Tool Calling",
-      "url": "https://zenn.dev/okssusucha/articles/20260720-openai-programmatic-tool-calling",
-      "site": "Zenn(AI)",
-      "published": "2026-09-17T04:41:18Z",
-      "description": "在庫APIを10商品ぶん叩いて、在庫が5個未満のものだけ抜き出し、その一覧をSlackに投げる。エージェントにやらせると、10回ぶんのJSONレスポンスが丸ごとモデルのコンテキストを通過する。使うのは「available_units」の数値だけなのに、だ。しかも1往復ごとにモデルの推論が走るので、レイテンシも課金も往復回数に比例して膨らむ。\nこの構造的なムダに対して、OpenAIが7月9日にRes...",
       "category": "AI・技術",
       "rss_category": "",
       "image_url": ""
