@@ -1,8 +1,68 @@
 {
   "site": "Zenn(生成 AI)",
-  "last_updated": "2026-09-16T23:50:04.058621",
-  "total_articles": 3989,
+  "last_updated": "2026-09-17T02:03:30.829991",
+  "total_articles": 3995,
   "articles": [
+    {
+      "title": "作るものが決まらないのは、発想力のせいなのか？：AIハッカソンで優勝したときのアイデアの出し方",
+      "url": "https://zenn.dev/usen_ict/articles/a9051de6bf2b84",
+      "site": "Zenn(生成 AI)",
+      "published": "2026-09-17T00:00:08Z",
+      "description": "一人で作れるのに、作るものが決まらない\nハッカソンに応募して最初に詰まったのは、実装ではありませんでした。何を作るかが決まりません。手は空いているのに、お題を眺めている時間だけが過ぎます。。\nClaude Code のようなコーディングエージェントが実用になって、フロントもバックもインフラも一人で組めるようになりました。作れないから諦める、という理由はだいぶ減りました。\n私は本業がデータエンジニア...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "メインは Opus、読み役は Gemini Flash。dr opencode でトークンを半分にした",
+      "url": "https://zenn.dev/datarobotjp/articles/16e8067ab3280c",
+      "site": "Zenn(生成 AI)",
+      "published": "2026-09-16T23:08:05Z",
+      "description": "Spotify のエンジニアリングブログに、Claude Code のトークン消費を 90% 減らしたという記事が出ていました。\nhttps://engineering.atspotify.com/2026/9/portal-by-spotify-cut-my-claude-code-token-usage-by-90\nやっていることは単純で、大きいファイルの読み込みを安いモデルに肩代わりさせる、...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "AIにデータベースを作らせる。1レースの差を見逃さない",
+      "url": "https://zenn.dev/data_boatrace/articles/f809d8f751d442",
+      "site": "Zenn(生成 AI)",
+      "published": "2026-09-16T22:35:55Z",
+      "description": "番組表は1,392レース。競走成績は1,391レース。\n同じ7日間の公式データをSQLiteに入れたところ、件数に差がありました。両方に存在する行だけを結合すると、番組表にあった1レースが消えます。\n調べると、2026年1月2日の宮島12Rでした。公式の結果ページには「レース中止」と表示されています。\n今回は、この差を消さずに残すデータベースを作ります。データが減った理由を説明できるところまでが、...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "自作エージェントの OTel 導入から見る、GenAI セマンティック規約の現在地",
+      "url": "https://zenn.dev/kumewata/articles/agent-telemetry-to-warehouse",
+      "site": "Zenn(生成 AI)",
+      "published": "2026-09-16T22:15:30Z",
+      "description": "!\nこの記事の内容は 2026年9月時点のスナップショットです。GenAI セマンティック規約は Development のため、以後の記事内容と実際の仕様が乖離している可能性があります。\n\n\n 背景\nLLM エージェントは、表面上もっともらしいテキストを返すため、内部の異常（不要なツール呼び出しや過剰なトークン消費など）を外から検知しにくいブラックボックスになりがちです。\n本記事では、可観測性を...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "問い合わせを次担当へ渡す前に作るAIコンテキスト・パケット設計",
+      "url": "https://zenn.dev/miraigent/articles/ai-inquiry-context-packet-before-handoff",
+      "site": "Zenn(生成 AI)",
+      "published": "2026-09-16T20:39:33Z",
+      "description": "問い合わせ対応にAIを入れると、要約は作れても「次の担当者が何を確認すればよいか」が抜けることがあります。この記事では、AIの要約文ではなく、引き継ぎに必要な項目を固定した「コンテキスト・パケット」を設計します。\n対象読者は、フォームやメールの問い合わせをSheets・CRMで管理している小規模チームです。AIは整理と下書きまで、人間は事実確認・例外判断・送信承認まで担当します。\n\n 作るもの\n1...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "生成 AI の限定実行を評価工程にする Human-in-the-loop のゲート設計",
+      "url": "https://zenn.dev/id774/articles/59ceda1e48630f",
+      "site": "Zenn(生成 AI)",
+      "published": "2026-09-16T15:03:05Z",
+      "description": "AI を業務へ組み込むとき、よく使われる設計は「AI が候補を生成し、人間が評価してから実行する」という流れである。\n生成 → 評価 → 実行\nこの構造は、実行前に評価対象を十分に観察できる場合には機能する。文章なら公開前に全文を読める。コードなら静的解析やテストを実行できる。設定変更なら差分を確認できる。\nしかし、実行しなければ評価に必要な情報そのものが得られない処理もある。この場合、人間を最終...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
     {
       "title": "AIに「全部作り直して」と頼んだら、8回とも変わったのは1か所だけだった。なのに送られた文字数は16.8倍",
       "url": "https://zenn.dev/numarn/articles/prompt-full-rewrite-vs-partial-edit-handson",
