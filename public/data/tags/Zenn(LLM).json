@@ -1,8 +1,198 @@
 {
   "site": "Zenn(LLM)",
-  "last_updated": "2026-09-17T02:03:30.829991",
-  "total_articles": 6116,
+  "last_updated": "2026-09-17T07:36:19.243353",
+  "total_articles": 6132,
   "articles": [
+    {
+      "title": "GPU数万枚の強化学習に、デスクトップ1台と数ドルのコード進化で迫る — 自律最適化エンジン「TANREN」の設計",
+      "url": "https://zenn.dev/suzukishoten/articles/68cd8e1f82858d",
+      "site": "Zenn(LLM)",
+      "published": "2026-09-17T06:57:47Z",
+      "description": "TL;DR\n\n数万GPUでの強化学習や、推論時に大量トークンを消費し続けるアプローチに対抗し、デスクトップ1台・数ドルのAPI代でアルゴリズムを自律最適化する仕組み「TANREN（鍛錬）」を作りました。\n重み（Weight）を訓練するのではなく、凍結LLMに候補コードを書かせ、決定論的検証器で評価して「読める数十行のPythonコード」を進化させます（DeepMind FunSearchの軽量化）...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "TypeSafeのJevを正しく驚く、それってLLMでできませんか？",
+      "url": "https://zenn.dev/nwn/articles/824026c76116e0",
+      "site": "Zenn(LLM)",
+      "published": "2026-09-17T06:56:15Z",
+      "description": "Jevとは？\nTypeSafe AIの「Jev」は、文章を生成する代わりに、ソフトウェアがそのまま使える判断と確率を高速に返すモデルです。\n詳しい説明に関しては公式サイトに譲ります\nこれをみて正直なところ「それは既存のLLMでもできるのでは？」と思ってしまいました。\n\n JSON出力\nまず注目したのはこのデモです。\nLLMでJSON出力するのに比べてJevを使って並列に推論することで大幅に高速化し...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "手を動かして学ぶ RAG・検索エンジニアリング実践 ― チャンク設計・ハイブリッド検索・リランクで「答えられる検索」を作る",
+      "url": "https://zenn.dev/pakku8914/books/rag_search_engineering",
+      "site": "Zenn(LLM)",
+      "published": "2026-09-17T06:29:26Z",
+      "description": ">\n本教材は、LLM に社内文書をつないだ RAG を一度は作ったものの、「検索がうまく当たらない」「なぜ精度が上がらないのか説明できない」で止まっている実務者を対象に、RAG の心臓部である検索を設計・計測・改善する力を身につけることを目的としています。LLM API を呼んで RAG を組む手順そのものは姉妹教材「Claude API で作る生成AIアプリ実践入門」が扱い、本書はその先――検索...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "文字列を捨てたモデル。Jevはなぜ桁で速いのか",
+      "url": "https://zenn.dev/1amageek/articles/typesafe-jev-system-one-model",
+      "site": "Zenn(LLM)",
+      "published": "2026-09-17T04:47:41Z",
+      "description": "こんにちは、村本です。\n2026年9月15日、TypeSafe AIというサンフランシスコの会社がステルスを抜けて、Jevというモデルを公開しました。会社の説明はこうです。\n\nThink of Jev as a frontier-intelligence function call: unstructured state in, typed probabilistic decisions out....",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "TypeSafe JevとClaudeでニュース選別を53日分比べた — 1日1秒・0.1セントの判定器",
+      "url": "https://zenn.dev/acropapa330/articles/typesafe-jev-news-triage-53days",
+      "site": "Zenn(LLM)",
+      "published": "2026-09-17T04:42:11Z",
+      "description": "きっかけ\n2026年9月15日、TypeSafe社が「System One Model」と銘打った Jev を発表しました。創業者の Diogo Almeida は、OpenAIで言語モデルを指示に従わせ、人と会話できるようにする手法づくりに関わった人物です(ChatGPTの研究に参加)。\nJevは文章を書きません。状況(state)と質問を渡すと、型の決まった答えだけを返すモデルです。発表ブログ...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "ツールをJavaScriptから呼ばせるOpenAIのProgrammatic Tool Calling",
+      "url": "https://zenn.dev/okssusucha/articles/20260720-openai-programmatic-tool-calling",
+      "site": "Zenn(LLM)",
+      "published": "2026-09-17T04:41:18Z",
+      "description": "在庫APIを10商品ぶん叩いて、在庫が5個未満のものだけ抜き出し、その一覧をSlackに投げる。エージェントにやらせると、10回ぶんのJSONレスポンスが丸ごとモデルのコンテキストを通過する。使うのは「available_units」の数値だけなのに、だ。しかも1往復ごとにモデルの推論が走るので、レイテンシも課金も往復回数に比例して膨らむ。\nこの構造的なムダに対して、OpenAIが7月9日にRes...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "128GB の Mac で DeepSeek V4.1 Flash は動いたが、開発には Flash Next と oMLX を選んだ",
+      "url": "https://zenn.dev/jtechjapan_pub/articles/deepseek-v41-vs-flash-next-m4max",
+      "site": "Zenn(LLM)",
+      "published": "2026-09-17T03:36:16Z",
+      "description": "株式会社ジェイテックジャパン CTOの高丘 @tomohisaです。\n128GB の MacBook Pro（M4 Max）で、ローカル LLM が開発に使えるかを試し続けています。ここまでに書いたのは次の 3 本です。\nhttps://zenn.dev/jtechjapan_pub/articles/local-llm-qwen-flash-next-eval\nhttps://zenn.dev/...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "Claude Code plugin eval 入門、--runs 1 でも2アームが走り実測0.118ドルでした",
+      "url": "https://zenn.dev/kai_kou/articles/1111-claude-code-plugin-eval-output-style-guide",
+      "site": "Zenn(LLM)",
+      "published": "2026-09-17T03:34:15Z",
+      "description": "はじめに\nClaude Code v2.1.269（2026-09-11 リリース）で、プラグインの評価スイートを採点実行する claude plugin eval と、出力スタイルを一覧・切替する /output-style [name] が追加されました。この記事は、その 2 つをクラウドセッション上で実際に走らせ、生成されたファイル・実測コスト・設定ファイルへの書き込みまで確認した記録です。...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "角度が推論の宿命を決める──A*-Thought-V2が幾何力学でCoTの明示と潜在を自動で切り分ける仕組み",
+      "url": "https://zenn.dev/lixian/articles/astar-thought-v2-geometric-latent-reasoning",
+      "site": "Zenn(LLM)",
+      "published": "2026-09-17T02:19:57Z",
+      "description": "TL;DR\nChain-of-Thought（CoT）は推論を強めるが、計算とコンテキストのコストが重い。既存の圧縮手法は、冗長ステップを捨てる（硬剪枝）か、全部を連続空間に押し込む（潜在推論）かのどちらかで、中間情報の保持と原則的な圧縮基準を両立できていなかった。\nA*-Thought-V2は、CoTをLLMの隠れ状態空間における軌跡とみなし、各ステップの局所的な進行方向と「問題→解答」の大域的...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "RAGの検索精度をハイブリッド検索で底上げする — ベクトルとBM25を実測で使い分ける",
+      "url": "https://zenn.dev/yukihayama/articles/rag-hybrid-search",
+      "site": "Zenn(LLM)",
+      "published": "2026-09-17T01:16:22Z",
+      "description": "RAGの検索精度をハイブリッド検索で底上げする — ベクトルとBM25を実測で使い分ける\nRAGを組んで最初につまずくのは、意味は合っているのに欲しい文書が取れないという問題です。ベクトル検索（Embedding）は言い換えや概念的な近さに強い一方で、型番・固有名詞・エラーコードのような文字列そのものの一致が苦手です。\nこの弱点を補うのがハイブリッド検索——ベクトル検索とキーワード検索（BM25）...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "「エージェント群が自分の採点者をハックしようとした」とAmodeiが書いた日、自分の完了条件を機械的に検証する仕組みは0個だった",
+      "url": "https://zenn.dev/hideki_tamae/articles/completion-criteria-without-grader",
+      "site": "Zenn(LLM)",
+      "published": "2026-09-17T00:45:59Z",
+      "description": "はじめに\n0。\nこれが今回の数字です。何の0かというと、この記事投稿タスク自身の指示書に書かれている「完了条件」3行のうち、私が書く報告テキストの中身を機械的に検証する仕組みの数です。\nこの技術記事シリーズは、テーマ選定・執筆・フォーマット整形・コミット・pushをAIエージェント(このタスク自身)に任せ、GitHub Actions経由でZennとQiitaに自動公開するパイプラインで運用してい...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "5年落ちゲーミングPCでもローカルLLMは戦える（llama.cpp MoEオフロードチューニング編）",
+      "url": "https://zenn.dev/infra_ojisan/articles/local-llm-old-gaming-pc-llamacpp",
+      "site": "Zenn(LLM)",
+      "published": "2026-09-17T00:36:31Z",
+      "description": "この記事の結論\n5年以上前のミドルクラスゲーミングPC（Core i5-10400 + RTX2060 Super 8GB + DDR4 64GB）でも、MoE（Mixture of Experts）モデルをllama.cppでVRAM/メインメモリに賢く振り分ければ、チャットで20 t/s前後の実用速度が出せるという話です。\n新しいGPUを買わなくても、手持ちの「そこそこの環境」をチューニングで...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "500MBのChromeトレースをLLMに丸読みさせない",
+      "url": "https://zenn.dev/devlog/articles/8cfe7d5f993eae",
+      "site": "Zenn(LLM)",
+      "published": "2026-09-17T00:30:05Z",
+      "description": "Chrome DevTools の Performance トレース（Trace-*.json）は、少し込み入った調査だとすぐ数百MBになります。これを Claude のような LLM にそのまま渡して「重い処理を特定して」とやるのは、筋が悪い。\nざっくり1トークンが4バイトとして、525MB のトレースは約1.3億トークン相当です。1M コンテキストに桁で入りません。分割して読ませても、課金と時...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "anthropic 1.6.0 は Retry-After 120 で 240 秒止まる",
+      "url": "https://zenn.dev/sora_endo/articles/aether-anthropic-sdk-retry-after-60s",
+      "site": "Zenn(LLM)",
+      "published": "2026-09-17T00:22:48Z",
+      "description": "本記事は要約です。初出: https://aether-echoes.com/posts/anthropic-sdk-python-1-6-retry-after-over-60s\n\n\n 1.6.0 に上げると、429 のあと何秒止まるのか\nanthropic-sdk-python を 1.5.0 から 1.6.0 に上げると、429 を受けたときに SDK が眠る時間が変わる。release n...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "AIエージェントへの投げ方が、気づけば6つに増えていた話",
+      "url": "https://zenn.dev/i_ichi/articles/delegation-methods-cost-and-verification",
+      "site": "Zenn(LLM)",
+      "published": "2026-09-17T00:09:31Z",
+      "description": "クオータが頻繁に100%を超えるようになった。Anthropicも2026年8月29日に週クオータの引き下げを発表し、9月14日にはすでに適用済みだった。トークンを節約しなければ、という前提に立って最初に考えたのは単純だった。司令塔役のAI（親）が、部下に投げればいいだけの雑務を自分で抱え込んでいる。 ファイルの定型編集、cronの登録、既存テストの実行、commit/pushといった「判断のいら...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "ローカルLLMのTRPGに、遊ぶ目的が書かれていなかった（開発ログ04）",
+      "url": "https://zenn.dev/ace_toshi/articles/trpg-local-devlog-04",
+      "site": "Zenn(LLM)",
+      "published": "2026-09-17T00:03:27Z",
+      "description": "前回の続き\nローカルLLMが張った伏線を、誰も閉じてくれない（開発ログ03） で、LLMが張った伏線をコード側で回収する仕組みを入れた。敵は出るようになり、気配は4ターンで閉じるようになった。\n物語は動いている。それでも、遊んでいる私は何をすればいいのか分かっていなかった。\n\nそもそものサンプルの導入からだと今回の坑道にいる目的がわからないので、何をすべきかがわからず、場当たり的な行動しか出来ない...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "最上位モデルをセッション既定にしたら、重い実装とレビューでFableの使用限度が尽きた",
+      "url": "https://zenn.dev/shimo4228/articles/top-model-as-default-leaks",
+      "site": "Zenn(LLM)",
+      "published": "2026-09-16T23:30:05Z",
+      "description": "2026年8月22日、Fableのセッションで重めの実装を始め、そのままレビューを走らせたら、一瞬でFableの使用限度に到達しました。レビューを担うbuilt-inのskillが、セッションのモデルをそのまま継いで走ったからです。\nその3日後の朝、別の問題を追いかけていて気づきました。自分のリポジトリで起きる過剰設計は、Fableの使用限度が切れたあと、代わりに設計を引き受けたOpusのセッショ...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "FreeCAD MCPでLLMが作ったCADモデルは後から直せるか実測した",
+      "url": "https://zenn.dev/mskbhd/articles/lab-655-freecad-mcpllmcad",
+      "site": "Zenn(LLM)",
+      "published": "2026-09-16T22:08:14Z",
+      "description": "「FreeCAD に MCP サーバーができて、LLM からパラメトリック CAD を動かせるようになった」という話を見かけました。\nMCP で FreeCAD を動かしてみた記事はすでにいくつもあるので、この記事では少し違うところを見ます。\n昔 3DCG をやっていた人間として気になるのは、形が出るかどうかより、そのモデルが後から直せるかです。\nCAD では、寸法を変えたら穴の位置が付いてくるか...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "属性名指しの忌避指示、LLMの人物推定は年齢にしか効かなかった",
+      "url": "https://zenn.dev/every_ai_recipe/articles/ai-age-guess-stop-instruction",
+      "site": "Zenn(LLM)",
+      "published": "2026-09-16T21:09:17Z",
+      "description": "TL;DR\n\n会話履歴から人物像を推定させるタスクで、「推測は推測だと明示して」という一般的な忌避指示(条件A)と、対象属性を名指しした上で「分からなければ分からないと言え」と迫る忌避指示(条件B)を比較した\n\n年齢については、条件Aは具体的な数値レンジ(「20代後半〜30代」)をラベル付きで提示したのに対し、条件Bはレンジの提示自体を拒否した。 忌避指示の強度によって、ヘッジの付与ではなく回答の...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
     {
       "title": "なぜ、LLM AIは性能アップの度にキャラがより強くなるのか？",
       "url": "https://zenn.dev/pdfractal/articles/970d723724dda7",
@@ -19,26 +209,6 @@
       "site": "Zenn(LLM)",
       "published": "2026-09-16T14:10:48Z",
       "description": "基本情報技術者試験の「科目B」だけに絞った学習サービスを個人で作っています。\n科目Bは公開されている問題が少なく、数えたら50問でした。本番が20問なので2.5回分です。足りないぶんは LLM に作らせているのですが、AI が作った問題をそのまま出すわけにはいかないので、検証の工程を置いています。\nAI が作ったものを AI が検証する。字面だけ見ると不安しかありませんが、ちゃんと設計すれば機能し...",
-      "category": "AI・技術",
-      "rss_category": "",
-      "image_url": ""
-    },
-    {
-      "title": "RAG本番運用、評価指標で品質維持を自動化する",
-      "url": "https://zenn.dev/fd_ai_teacher/articles/tech-20260915115510-1",
-      "site": "Zenn(LLM)",
-      "published": "2026-09-16T11:50:29Z",
-      "description": "RAGシステムをPoCから本番運用へ移行する際、「思ったような回答精度が出ない」「リリース後に品質が低下した」といった課題に直面し、頭を抱えるエンジニアは少なくありません。特に、RAGの品質維持を人力で行うのは非現実的であり、安定した運用には自動化が不可欠です。\nこの記事では、RAGシステムを本番運用する上での主要な課題を解決するために、評価指標に基づいた品質維持の自動化戦略と具体的な実装パターン...",
-      "category": "AI・技術",
-      "rss_category": "",
-      "image_url": ""
-    },
-    {
-      "title": "比較】BeautifulSoup自作 vs Scraping AI：開発者が知るべき「保守税」と使い分けの境界線",
-      "url": "https://zenn.dev/amandeep_sms/articles/b013071824f2a8",
-      "site": "Zenn(LLM)",
-      "published": "2026-09-16T08:33:11Z",
-      "description": "PythonでWebスクレイピングを始める際、誰もが最初に手にするのが requests と BeautifulSoup です。\nしかし、個人開発の学習フェーズから**「プロダクトの本番運用」に移行した途端、多くのエンジニアが直面するのが「セレクター保守地獄」**です。\n本記事では、BeautifulSoupによる自作スクレイピングと、LLMを活用したデータ抽出API「Scraping AI」の工...",
       "category": "AI・技術",
       "rss_category": "",
       "image_url": ""
@@ -99,16 +269,6 @@
       "site": "Zenn(LLM)",
       "published": "2026-09-16T03:55:09Z",
       "description": "!\nこの記事は、Moonshot AI から提供された API クレジット（$50分）を使って実施した検証に基づいています。提供の事実は結果の解釈に関わる情報なので、最初に開示しておきます（詳細は記事末尾）。\n\n先日、Moonshot AI（Kimi）の DevRel 担当の方からご連絡をいただき、新しいモデル「Kimi K3」を試す機会をいただきました。\nせっかくの機会なので「触ってみた感想」で...",
-      "category": "AI・技術",
-      "rss_category": "",
-      "image_url": ""
-    },
-    {
-      "title": "YANS2026 参加レポート",
-      "url": "https://zenn.dev/genax_corp/articles/766fdb029cedea",
-      "site": "Zenn(LLM)",
-      "published": "2026-09-16T03:54:02Z",
-      "description": "こんにちは。Gen-AX でリサーチエンジニアをしている前田です。\n2026年8月16日（日）から18日（火）まで、仙台国際センターで「NLP若手の会 第21回シンポジウム（YANS2026）」が開催されました。Gen-AXはゴールドスポンサーとして協賛し、ブースを出展しました。私は17日からの本会議に参加しました。\n\n 開催概要\nhttps://yans.anlp.jp/entry/yans20...",
       "category": "AI・技術",
       "rss_category": "",
       "image_url": ""
