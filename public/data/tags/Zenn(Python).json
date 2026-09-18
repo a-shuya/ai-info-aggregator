@@ -1,7 +1,7 @@
 {
   "site": "Zenn(Python)",
-  "last_updated": "2026-09-18T21:02:23.380587",
-  "total_articles": 6495,
+  "last_updated": "2026-09-18T23:16:39.123285",
+  "total_articles": 6499,
   "articles": [
     {
       "title": "【連載 #2】現場特化のWindowsポータブルツール100本開発記：音響信号処理と低遅延バイナリの深層実装",
@@ -84,6 +84,16 @@
       "image_url": ""
     },
     {
+      "title": "【自動化】10分で作る複数ECサイト競合価格監視＆Slack値下げ通知パイプライン（セレクター不要・Python）",
+      "url": "https://zenn.dev/amandeep_sms/articles/98c94b06eed8d9",
+      "site": "Zenn(Python)",
+      "published": "2026-09-18T08:19:49Z",
+      "description": "EC事業や物販において、競合他社の価格変動をデイリーで把握することは売上・利益率に直結します。\nしかし、自作のスクレイピングで複数ECサイトの価格を監視しようとすると、以下の課題に直面します：\n\nサイトごとに異なるHTML構造とCSSセレクターの記述\n「税込 / 税抜」「セール価格 / 通常価格」など日本特有の表記揺れ\nサイトのデザイン改修によるセレクター破損と定期的なメンテ工数\n\n本記事では、L...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
       "title": "依存を入れないテストは、緑のまま壊れる",
       "url": "https://zenn.dev/miyakona/articles/dependency-free-tests-container-smoke",
       "site": "Zenn(Python)",
@@ -99,6 +109,16 @@
       "site": "Zenn(Python)",
       "published": "2026-09-18T05:17:11Z",
       "description": "この 3 行にバグがあります\ncount=$(gh pr list --state open 2&gt;/dev/null | wc -l)\necho \"open PR: ${count} 件\"\ngh が 401 を返した日、これは open PR: 0 件 と出ます。\nエラーは 2&gt;/dev/null が捨てました。パイプの先の wc -l は空の入力を受け取って 0 を返します。パイプラ...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "LLMとJevで判断速度の違いを体感できるテトリスをつくってみた",
+      "url": "https://zenn.dev/yrd/articles/64d4e2f4c3e71c",
+      "site": "Zenn(Python)",
+      "published": "2026-09-18T05:05:23Z",
+      "description": "TypeSafe AIの「Jev」のアカウントを手に入れて、性能を体感できるデモを作ってみました。\nClaude Haiku 4.5 と Jev にテトリスを打たせ、先に20ライン消したほうが勝ち、というベンチマークです。\nまずは動画をどうぞ。\nhttps://youtu.be/UTLVJ00Z9fE\n\n Jevとは何か\nJevは、TypeSafe AIが「System One モデル」と呼ぶ分類...",
       "category": "開発",
       "rss_category": "",
       "image_url": ""
@@ -124,6 +144,16 @@
       "image_url": ""
     },
     {
+      "title": "tool calling 満点のモデルが、多段タスクを2回とも完遂できなかった",
+      "url": "https://zenn.dev/tarowhitey/articles/tool-calling-vs-task-completion",
+      "site": "Zenn(Python)",
+      "published": "2026-09-18T04:27:18Z",
+      "description": "tool calling を 3 項目 × 9 回で試したモデルがありました。\n\nT1: 正しい道具を、正しい引数で呼ぶ\nT2: 1 つ目の戻り値を、2 つ目の呼出へ渡す\nT3: 道具が不要な場面では呼ばない\n\n結果は 27/27。満点です。\nそのモデルにオーケストレータ役を任せ、複数工程の実装タスクを 2 回渡しました。2 回とも完遂せず、実装を別の役へ渡す道具は一度も呼ばれませんでした。\n満点...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
       "title": "本番で動いているサービスの実装が、リポジトリに一度も入っていなかった",
       "url": "https://zenn.dev/tarowhitey/articles/runtime-manifest-drift-checker",
       "site": "Zenn(Python)",
@@ -139,6 +169,16 @@
       "site": "Zenn(Python)",
       "published": "2026-09-18T03:52:15Z",
       "description": "結論\n\n自分が使ってきた「押し目買い」のルールを、東証プライム全銘柄の 10 年分の株価で試しました。\n結果は、毎週くじ引きで銘柄を選んで買うのと同じ成績でした。\n試した中で唯一成績が良かったのは「大きく崩れた銘柄が戻るのを待つ」という、押し目買いとは逆の買い方でした。\n\nもっとうまくいくと思っていました。何を試して、何が残らなかったかを書きます。\n\n なぜ試したか\n今話題の「AI × 株式投資」...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "aiderをローカルLLMで非対話実行して分かった、表示と終了コードの落とし穴",
+      "url": "https://zenn.dev/ikinokori/articles/aider-ollama-local-noninteractive-pitfalls",
+      "site": "Zenn(Python)",
+      "published": "2026-09-18T03:00:13Z",
+      "description": "ローカルの Ollama につないだ aider を、対話画面ではなく --message で依頼を一度だけ投げる形で回した。無人のバッチから呼びたかったからだ。そこで詰まったのは、モデルが賢いかどうかより手前の層だった。エージェントがどうファイルを編集し、その結果をどう表示し、どんな終了コードを返すか。この3つがどれも、素直に読むと実際に起きたことと食い違っていた。\n題材は売上CSVを集計する小...",
       "category": "開発",
       "rss_category": "",
       "image_url": ""

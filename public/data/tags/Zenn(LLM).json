@@ -1,8 +1,128 @@
 {
   "site": "Zenn(LLM)",
-  "last_updated": "2026-09-18T21:02:23.380587",
-  "total_articles": 6154,
+  "last_updated": "2026-09-18T23:16:39.123285",
+  "total_articles": 6160,
   "articles": [
+    {
+      "title": "QLoRAを実装前に分解する：NF4・二重量子化・VRAM診断",
+      "url": "https://zenn.dev/kas_blog/articles/20260509-llm-16-qlora",
+      "site": "Zenn(LLM)",
+      "published": "2026-09-18T22:35:54Z",
+      "description": "QLoRA（Quantized Low-Rank Adaptation）は、4-bitで保持した凍結base modelをforwardに使い、LoRA adapterだけを学習する構成です。\n「4-bitでloadできた」ことは、QLoRAが正しく動いた証拠にはなりません。実装では、少なくとも次の四条件を確認する必要があります。\n\n狙ったLinear moduleが実際に4-bit表現へ置き換わ...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "\"【実践】話題のJevとGemini 3.8 Flashで作る「二重思考（Dual-Process）AI」パターン\"",
+      "url": "https://zenn.dev/yoshidayataro/articles/b43e29a8424171",
+      "site": "Zenn(LLM)",
+      "published": "2026-09-18T22:35:14Z",
+      "description": "はじめに：「すべてを巨大LLMに投げる」のをやめたい\nAIエージェントやチャットボットを作っていると、ある疑問にぶつかります。\n\n「サーバーの稼働状態を教えて」\n「GitHubのリポジトリ一覧を出して」\n\nこうした単なる定型コマンドやツール呼び出しの仕分けにまで、毎回パラメータ数が数百億・数千億もあるフロンティアLLM（ClaudeやGemini、GPT-4等）を起動していませんか？\nこれではレイ...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "発話終端判定にLLMは要るか: STTの句読点だけでHaiku並みだった",
+      "url": "https://zenn.dev/mskbhd/articles/lab-692-100ms",
+      "site": "Zenn(LLM)",
+      "published": "2026-09-18T22:27:09Z",
+      "description": "リアルタイム音声チャットで「ユーザーが言い終えたか」を判定する役に、速い LLM を挟む構成が増えています。同じ台本で3方式を比べて実測したところ、次の3点が出ました。\n\n\nSTT の末尾に付く句読点だけを見るコストゼロのルールが、Claude Haiku 4.5 の判定とほぼ同じ成績だった\n\n判定の遅さが誤判定を隠していた。 Haiku の答えが 0ms で届くと食い気味が5回に増え、実測の約7...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "永続メモリMCPが使われない: Claude Codeのauto memoryが保存依頼を横取りしていた",
+      "url": "https://zenn.dev/mskbhd/articles/lab-688-friday-mcpai",
+      "site": "Zenn(LLM)",
+      "published": "2026-09-18T22:18:04Z",
+      "description": "永続メモリの MCP サーバーを Claude Code に繋いでも、保存の依頼はサーバーまで届かないことがあります。実際に測って出てきたのは次の3点でした。\n\n\nClaude Code の auto memory が、MCP への保存依頼を 4/4 で横取りした。エージェントは「記録しました」と報告するが、MCP サーバー側には何も届いていない\nauto memory を切っても、12回中 2回...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "契約書リスクの指摘、観点を絞った指示は効果が薄かった",
+      "url": "https://zenn.dev/every_ai_recipe/articles/contract-clause-check-3-points",
+      "site": "Zenn(LLM)",
+      "published": "2026-09-18T21:13:35Z",
+      "description": "TL;DR\n\n契約書の不利な条項をLLMに拾わせるとき、「観点を絞らずそのまま聞く」条件と「解約・違約金・責任の3観点を明示する」条件を、独立したサブエージェント2体に比較させた\n検証用に作成した架空の契約書(自動更新・一方的な値上げのみなし同意・片務的な違約金・広い免責・限定的なサポート対応の5条項)に対して、両条件とも主要な不利な条項をほぼ同じ水準で検出した\n観点指定の効果は、新しい条項の発見...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "AIが書いた記事を、AI自身の品質チェックが永遠に止め続けていた話",
+      "url": "https://zenn.dev/jworks_hq/articles/87cb447bf96e9a",
+      "site": "Zenn(LLM)",
+      "published": "2026-09-18T18:43:04Z",
+      "description": "この記事について\n個人開発で、LLMに定型フォーマットの記事(その日の作業記録のようなもの)を毎日自動生成させ、公開前に別のロジックで品質チェックをかける、という仕組みを運用しています。ある時期、AIが書いた記事を、同じ仕組みの中にある品質チェックが何度リトライしても合格させてくれないという状態にハマりました。\n原因を1つずつ潰していく過程で、「AI生成コンテンツの品質保証層をどう設計すべきか」に...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "ローカルJevの可能性検証",
+      "url": "https://zenn.dev/hakotech/articles/5c2fe2eb8a6051",
+      "site": "Zenn(LLM)",
+      "published": "2026-09-18T16:51:31Z",
+      "description": "ローカルJevの可能性検証\n\n はじめに\nJevが話題になっていますね。文章を長々と生成する代わりに、必要な判断と確率を直接返すという発想は面白いと思っています。ソフトウェアに組み込むことを考えると、こういうモデルが欲しかった、という人は多いのではないでしょうか？\nhttps://typesafe.ai/blog/introducing-system-one-models-and-jev\nただ、私...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "「貧者のClaudeCodeMax」安価なコーディング向けサービスで無限に開発する",
+      "url": "https://zenn.dev/kuwashima/articles/poor-man-claude-code-max",
+      "site": "Zenn(LLM)",
+      "published": "2026-09-18T16:10:28Z",
+      "description": "フルタイム開発を行うためには月6万回のLLM呼び出しが必要\nみなさんはコードガチャしてますか？わたしは結構していると思います。\n気付いてしまったのです。\nissueを積んでおいてautoモードでオーケストレーターとサブエージェントで役割分けて勝手にコード書いてもらうと無限に何かができあがるということに。\nさらに何か課題が見つかったらそれもissueにしてもらってissueがなくなるまで無限に作業を...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "なぜRoman IMEのBERT・LLMで正しい日本語が80%選ばれるのか",
+      "url": "https://zenn.dev/mobazou/articles/5a01aadb0bb90e",
+      "site": "Zenn(LLM)",
+      "published": "2026-09-18T15:53:03Z",
+      "description": "（１）Roman IMEの基本は辞書\nまずRoman IMEの前段にあるのは辞書システム（ラティス）となる。\nラティスとは、打ったかなの「区切り方と表記の全ての組み合わせ」の確からしさを重みとして網目のようにまとめたものです。ある文字が打たれるとその確からしさから候補を取り出します。\n（２）辞書システムの問題点\nただし、ラティスの問題は出現する可能性だけを見ていて、言葉の意味を見ていないところにあ...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "【予言】Jevの登場で1年後のLLMコーディング界隈はどうなっているのか？",
+      "url": "https://zenn.dev/pdfractal/articles/123d434aab6f72",
+      "site": "Zenn(LLM)",
+      "published": "2026-09-18T15:39:33Z",
+      "description": "はじめに\n2026年9月15日、TypeSafe AIが「Jev」という少し変わったAIモデルの早期アクセス提供を開始しました。Jevがやることは、ほぼ「判断」だけです。GPTやClaudeのように文章を書いたり、ツールを使ったり、長い手順を自律的に実行したりはしません。自然言語や各種状態を入力すると、型付きの判定結果と確率を返します。TypeSafeはこれを「System One Model」と...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "コードが消費できる型付き決定を返すホスト型モデル Jev の構造と使い方",
+      "url": "https://zenn.dev/suwash/articles/jev-ai_20260918",
+      "site": "Zenn(LLM)",
+      "published": "2026-09-18T15:00:00Z",
+      "description": "Jev は、ソフトウェアがそのまま消費できる型付きの決定を返すホスト型モデルです。TypeSafe AI が 2026-09-15 に早期アクセスとして公開しました。この記事では、公式ドキュメントと SDK の実装をもとに、Jev の構造・データモデル・導入手順・運用の勘所までを整理します。\n\nこの記事の全体像。以下、順に解説します。\n\n Jev とは\nJev は、非構造の状態を入力に取り、型付き...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "Shopify の商品検索チャットを、文章を生成しない判定 API「TypeSafe Jev」で組み直した",
+      "url": "https://zenn.dev/serotoninmax/articles/shopify-product-search-chat-typesafe-jev",
+      "site": "Zenn(LLM)",
+      "published": "2026-09-18T13:02:20Z",
+      "description": "運営している Shopify ストア（tradecenter.shop）の右下に、商品検索用の AI チャットを置いている。バックエンドは Cloud Run の Node.js で、これまでは Gemini 3.8 Flash が返答文を書き、function calling で引いた商品をカードとして添えていた。この部分を TypeSafe Jev へ置き換えた。手元の評価 10 問で、応答時...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
     {
       "title": "Jevを自作感情エンジンに組み込んでLLMと性能を比べてみた",
       "url": "https://zenn.dev/yokomachi/articles/202609_jev-affectus",
@@ -14,31 +134,11 @@
       "image_url": ""
     },
     {
-      "title": "【自動化】10分で作る複数ECサイト競合価格監視＆Slack値下げ通知パイプライン（セレクター不要・Python）",
-      "url": "https://zenn.dev/amandeep_sms/articles/98c94b06eed8d9",
-      "site": "Zenn(LLM)",
-      "published": "2026-09-18T08:19:49Z",
-      "description": "EC事業や物販において、競合他社の価格変動をデイリーで把握することは売上・利益率に直結します。\nしかし、自作のスクレイピングで複数ECサイトの価格を監視しようとすると、以下の課題に直面します：\n\nサイトごとに異なるHTML構造とCSSセレクターの記述\n「税込 / 税抜」「セール価格 / 通常価格」など日本特有の表記揺れ\nサイトのデザイン改修によるセレクター破損と定期的なメンテ工数\n\n本記事では、L...",
-      "category": "AI・技術",
-      "rss_category": "",
-      "image_url": ""
-    },
-    {
       "title": "LLM を組み込んだ Web アプリ開発に挑戦！フェズのサマーインターン開催レポート",
       "url": "https://zenn.dev/fez_tech/articles/125a13dae3eea2",
       "site": "Zenn(LLM)",
       "published": "2026-09-18T08:06:58Z",
       "description": "はじめに\nはじめまして、データ利活用グループに所属している恒次です。\n先日、フェズとして初めて (！) のエンジニア向けサマーインターンを開催しました。今回はその様子をブログでお届けします。\n\n 取り組んだ内容\n開催期間は 8 月 31 日 〜 9 月 11 日の 2 週間で 4 人の学生に参加いただきました。Web アプリケーションを一人ひとり 0 から作り上げるプログラムに取り組みました。\n今...",
-      "category": "AI・技術",
-      "rss_category": "",
-      "image_url": ""
-    },
-    {
-      "title": "皮肉は満点、方言と計算は苦手。文章を書かないAI Jevの日本語力",
-      "url": "https://zenn.dev/mistletoe/articles/jev-japanese-jglue-tricky",
-      "site": "Zenn(LLM)",
-      "published": "2026-09-18T08:01:59Z",
-      "description": "皮肉・顔文字・方言・計算問題を、Yesの確率で答えていく Jev（1問 約250ms）\n\n 3行で\n\nTypeSafe AI の Jev は「文章を生成しない」AIモデル。状態と型付きの質問を渡すと、選択肢・スコア・Yes/No の判断だけを確率つきで返す（応答 70〜500ms、入力 $0.042/MTok、出力は無料）\n日本語ベンチマーク JGLUE（JNLI / JSTS / JCommon...",
       "category": "AI・技術",
       "rss_category": "",
       "image_url": ""
@@ -59,16 +159,6 @@
       "site": "Zenn(LLM)",
       "published": "2026-09-18T06:48:26Z",
       "description": "はじめに\nGitHub でリポジトリを clone して、Claude Code に「このコードベースを読んで説明して」と頼む。よくやりますよね。\nその README.md の中に、目に見えない命令が仕込まれていたらどうでしょうか。\nREADME.md、.cursorrules、SKILL.md。「ただのテキストファイルでしょ」と思っていたものが、いま攻撃の入り口になっています。しかも厄介なのは、...",
-      "category": "AI・技術",
-      "rss_category": "",
-      "image_url": ""
-    },
-    {
-      "title": "LiteLLMをCloud RunにデプロイしてGemini APIの利用実績をユーザー 別に取得してみた",
-      "url": "https://zenn.dev/fusic/articles/d03bec94245edc",
-      "site": "Zenn(LLM)",
-      "published": "2026-09-18T06:00:05Z",
-      "description": "はじめに\nFusicのレオナです。\n今回はCloud RunにLiteLLM AI Gateway(Proxy)を構築し、Gemini APIの利用実績をユーザー別・モデル別に取得してみました。利用者ごとに仮想キーを発行することで、Cloud Monitoringの標準メトリクスでは把握できない、利用者ごとのトークン数と費用を確認できます。\n\n 検証構成\nLiteLLMをCloud Runで実行し...",
       "category": "AI・技術",
       "rss_category": "",
       "image_url": ""
@@ -104,16 +194,6 @@
       "image_url": ""
     },
     {
-      "title": "LLMとJevで判断速度の違いを体感できるテトリスをつくってみた",
-      "url": "https://zenn.dev/yrd/articles/64d4e2f4c3e71c",
-      "site": "Zenn(LLM)",
-      "published": "2026-09-18T05:05:23Z",
-      "description": "TypeSafe AIの「Jev」のアカウントを手に入れて、性能を体感できるデモを作ってみました。\nClaude Haiku 4.5 と Jev にテトリスを打たせ、先に20ライン消したほうが勝ち、というベンチマークです。\nまずは動画をどうぞ。\nhttps://youtu.be/UTLVJ00Z9fE\n\n Jevとは何か\nJevは、TypeSafe AIが「System One モデル」と呼ぶ分類...",
-      "category": "AI・技術",
-      "rss_category": "",
-      "image_url": ""
-    },
-    {
       "title": "文章を書かないAI「Jev」で何が変わるのか。仕組み・料金・第三者検証・弱点を整理しました",
       "url": "https://zenn.dev/siam_works/articles/siamworks-typesafe-jev-system-one",
       "site": "Zenn(LLM)",
@@ -124,31 +204,11 @@
       "image_url": ""
     },
     {
-      "title": "tool calling 満点のモデルが、多段タスクを2回とも完遂できなかった",
-      "url": "https://zenn.dev/tarowhitey/articles/tool-calling-vs-task-completion",
-      "site": "Zenn(LLM)",
-      "published": "2026-09-18T04:27:18Z",
-      "description": "tool calling を 3 項目 × 9 回で試したモデルがありました。\n\nT1: 正しい道具を、正しい引数で呼ぶ\nT2: 1 つ目の戻り値を、2 つ目の呼出へ渡す\nT3: 道具が不要な場面では呼ばない\n\n結果は 27/27。満点です。\nそのモデルにオーケストレータ役を任せ、複数工程の実装タスクを 2 回渡しました。2 回とも完遂せず、実装を別の役へ渡す道具は一度も呼ばれませんでした。\n満点...",
-      "category": "AI・技術",
-      "rss_category": "",
-      "image_url": ""
-    },
-    {
       "title": "LLMの挙動制御―ツンデレキャラが「ヤンデレ・サイコパス化」する構造の解明と実証:禁止項目ゼロと可変型エグゼキューター導入について",
       "url": "https://zenn.dev/remy15/articles/517c6b8b5fe627",
       "site": "Zenn(LLM)",
       "published": "2026-09-18T03:14:59Z",
       "description": "【動作検証およびご利用に関する注意事項】\n※本記事は特定のプラットフォームや運営会社を非難・誹謗中傷する目的ではなく、LLM（大規模言語モデル）の挙動制御に関する純粋な技術的考察および検証記録です。\n※本記事の検証モデル「シン」は、現在物語アプリ『MooX』にて実際に稼働・公開しております。本理論による安定した応答や自律排熱の挙動を直接体験されたい方は、ぜひMooX上にて対話をお試しください。\n※...",
-      "category": "AI・技術",
-      "rss_category": "",
-      "image_url": ""
-    },
-    {
-      "title": "aiderをローカルLLMで非対話実行して分かった、表示と終了コードの落とし穴",
-      "url": "https://zenn.dev/ikinokori/articles/aider-ollama-local-noninteractive-pitfalls",
-      "site": "Zenn(LLM)",
-      "published": "2026-09-18T03:00:13Z",
-      "description": "ローカルの Ollama につないだ aider を、対話画面ではなく --message で依頼を一度だけ投げる形で回した。無人のバッチから呼びたかったからだ。そこで詰まったのは、モデルが賢いかどうかより手前の層だった。エージェントがどうファイルを編集し、その結果をどう表示し、どんな終了コードを返すか。この3つがどれも、素直に読むと実際に起きたことと食い違っていた。\n題材は売上CSVを集計する小...",
       "category": "AI・技術",
       "rss_category": "",
       "image_url": ""
