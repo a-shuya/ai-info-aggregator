@@ -1,14 +1,34 @@
 {
   "site": "Zenn(LLM)",
-  "last_updated": "2026-09-17T23:00:19.152795",
-  "total_articles": 6129,
+  "last_updated": "2026-09-18T01:13:49.192606",
+  "total_articles": 6132,
   "articles": [
+    {
+      "title": "recall@5は90.0%だったのに、正解文書ありでも57.4%が誤答した — rag-mini-wikipediaで60問実測",
+      "url": "https://zenn.dev/tama_program/articles/5bfac1f1236fed",
+      "site": "Zenn(LLM)",
+      "published": "2026-09-17T21:26:45Z",
+      "description": "RAGの検索失敗を分類すると「空」「圏外」より多いのは「誤答」だった。rag-mini-wikipediaで60問実測、recall@5は90.0%なのに、正解文書ありでの生成正答率は42.6%。recallと生成の誤答は別物であり、本番運用でも同様の失敗パターン（検索は当たっているのに生成が誤る）が起こりうると考えられる。\nrecall@kはRAGの検索品質を測る定番指標だが、これが高いこととエ...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
     {
       "title": "LoRAをW₀x+sBAxから実装する：rank・初期化・mergeの勘所",
       "url": "https://zenn.dev/kas_blog/articles/20260509-llm-15-lora",
       "site": "Zenn(LLM)",
       "published": "2026-09-17T19:03:38Z",
       "description": "LoRA（Low-Rank Adaptation、低ランク適応）は、事前学習済みの重みを固定し、更新差分だけを低ランク行列で学習するPEFT（Parameter-Efficient Fine-Tuning、少数パラメータだけを更新する追加学習）手法です。\n式は短いですが、実装では次の点を混同しやすくなります。\n\n低ランク化するのはbase weightではなく更新差分\nrankはadapterの容...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "個人開発を爆速にするために、Codex・Claude・ローカルLLMでAIチームを組んだ話",
+      "url": "https://zenn.dev/yubel/articles/multi-agent-dev-team-with-local-llm",
+      "site": "Zenn(LLM)",
+      "published": "2026-09-17T11:50:42Z",
+      "description": "この記事で分かること\n個人開発のスピードを上げるために、Codex・Claude Code・ローカルLLM（LM Studio経由）という性質の異なる複数のAIコーディングエージェントを、1つの「開発チーム」として同時に走らせてみた話です。\n\nターミナルを分割して複数エージェントを並行起動する具体的なやり方\nローカルLLMを絡めることで、一部のタスクを無料でこなしつつ、クラウド側（Codex/Cl...",
       "category": "AI・技術",
       "rss_category": "",
       "image_url": ""
@@ -28,7 +48,27 @@
       "url": "https://zenn.dev/yqt/articles/e24b000392ceab",
       "site": "Zenn(LLM)",
       "published": "2026-09-17T08:52:01Z",
-      "description": "はじめに\n皆さん、こんにちは。Amazon Web Services のソリューションアーキテクト、Yuqi です。\nLLM を活用したアプリケーションを開発・評価・運用していると、必ずぶつかる問いがあります。\n\nトークンの使用量を最適化して、コストを削減するにはどうすればいいのか？\n\nAWS に入社する前、私は Amazon Bedrock を使った LLM 搭載機能の開発に携わり、推論コストの...",
+      "description": "はじめに\nこんにちは、AWS Japan のソリューションアーキテクト、Yuqi です。\nLLM を活用したアプリケーションを開発・評価・運用していると、必ずぶつかる問いがあります。\n\nトークンの使用量を最適化して、コストを削減するにはどうすればいいのか？\n\n私は Amazon Bedrock を使った LLM 搭載機能の開発に携わり、推論コストの最適化に取り組んでいました。この記事では、その経験...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "文字列を捨てたモデル。Jevはなぜ桁で速いのか",
+      "url": "https://zenn.dev/1amageek/articles/typesafe-jev-system-one-model",
+      "site": "Zenn(LLM)",
+      "published": "2026-09-17T04:47:41Z",
+      "description": "こんにちは、村本です。\n2026年9月15日、TypeSafe AIというサンフランシスコの会社がステルスを抜けて、Jevというモデルを公開しました。会社の説明はこうです。\n\nThink of Jev as a frontier-intelligence function call: unstructured state in, typed probabilistic decisions out....",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "ツールをJavaScriptから呼ばせるOpenAIのProgrammatic Tool Calling",
+      "url": "https://zenn.dev/okssusucha/articles/20260720-openai-programmatic-tool-calling",
+      "site": "Zenn(LLM)",
+      "published": "2026-09-17T04:41:18Z",
+      "description": "在庫APIを10商品ぶん叩いて、在庫が5個未満のものだけ抜き出し、その一覧をSlackに投げる。エージェントにやらせると、10回ぶんのJSONレスポンスが丸ごとモデルのコンテキストを通過する。使うのは「available_units」の数値だけなのに、だ。しかも1往復ごとにモデルの推論が走るので、レイテンシも課金も往復回数に比例して膨らむ。\nこの構造的なムダに対して、OpenAIが7月9日にRes...",
       "category": "AI・技術",
       "rss_category": "",
       "image_url": ""
@@ -99,16 +139,6 @@
       "site": "Zenn(LLM)",
       "published": "2026-09-17T00:30:05Z",
       "description": "Chrome DevTools の Performance トレース（Trace-*.json）は、少し込み入った調査だとすぐ数百MBになります。これを Claude のような LLM にそのまま渡して「重い処理を特定して」とやるのは、筋が悪い。\nざっくり1トークンが4バイトとして、525MB のトレースは約1.3億トークン相当です。1M コンテキストに桁で入りません。分割して読ませても、課金と時...",
-      "category": "AI・技術",
-      "rss_category": "",
-      "image_url": ""
-    },
-    {
-      "title": "anthropic 1.6.0 は Retry-After 120 で 240 秒止まる",
-      "url": "https://zenn.dev/sora_endo/articles/aether-anthropic-sdk-retry-after-60s",
-      "site": "Zenn(LLM)",
-      "published": "2026-09-17T00:22:48Z",
-      "description": "本記事は要約です。初出: https://aether-echoes.com/posts/anthropic-sdk-python-1-6-retry-after-over-60s\n\n\n 1.6.0 に上げると、429 のあと何秒止まるのか\nanthropic-sdk-python を 1.5.0 から 1.6.0 に上げると、429 を受けたときに SDK が眠る時間が変わる。release n...",
       "category": "AI・技術",
       "rss_category": "",
       "image_url": ""
