@@ -1,8 +1,98 @@
 {
   "site": "Zenn(Python)",
-  "last_updated": "2026-09-18T11:09:06.473171",
-  "total_articles": 6479,
+  "last_updated": "2026-09-18T14:59:57.125443",
+  "total_articles": 6488,
   "articles": [
+    {
+      "title": "出力に前の案件が残る。テンプレとフォールバックの落とし穴",
+      "url": "https://zenn.dev/shinsei99/articles/leftover-in-output",
+      "site": "Zenn(Python)",
+      "published": "2026-09-18T11:02:58Z",
+      "description": "書類を自動生成するツールで、出力に前の案件の内容が残る事故を2通り踏みました。\nどちらも、出来上がった書類は正常に見えます。だから気づくのが遅れます。\n\n ① 同梱していたテンプレートが、白紙ではなかった\n賃貸の契約書類を、雛形（templates/*.xlsx）に値を書き込んで作っていました。\n出来上がった書類に、身に覚えのない会社名が載っていました。\n雛形4本を開いて確認したら、他社の実案件が...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "依存を入れないテストは、緑のまま壊れる",
+      "url": "https://zenn.dev/miyakona/articles/dependency-free-tests-container-smoke",
+      "site": "Zenn(Python)",
+      "published": "2026-09-18T05:17:41Z",
+      "description": "Pythonのテストを速く安定させるため、CIでは外部パッケージをひとつも入れず、標準ライブラリとフェイク（外部パッケージの代わりにテスト中だけ使う実装）だけで走らせています。パッケージの取得失敗でテストが落ちなくなり、普段の変更を短い時間で確認できるようになりました。\n一方で、依存定義やDockerfileを変えるPRを見ていると、通常のテストが緑でも「固定した依存同士を本当に解決できるか」「本...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "2>/dev/null と wc -l で作った件数は、失敗したとき 0 件になる",
+      "url": "https://zenn.dev/tarowhitey/articles/silent-zero-in-scripts",
+      "site": "Zenn(Python)",
+      "published": "2026-09-18T05:17:11Z",
+      "description": "この 3 行にバグがあります\ncount=$(gh pr list --state open 2&gt;/dev/null | wc -l)\necho \"open PR: ${count} 件\"\ngh が 401 を返した日、これは open PR: 0 件 と出ます。\nエラーは 2&gt;/dev/null が捨てました。パイプの先の wc -l は空の入力を受け取って 0 を返します。パイプラ...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "pip install したのに ModuleNotFoundError。npm 育ちがハマる Python の「どこに入ったか」問題",
+      "url": "https://zenn.dev/gaku_wtnb/articles/f703246ba856c4",
+      "site": "Zenn(Python)",
+      "published": "2026-09-18T05:01:02Z",
+      "description": "pip install requests は成功したのに、実行すると落ちる。\nModuleNotFoundError: No module named 'requests'\nnpm しか使ってこなかった人がほぼ必ず一度は踏みます。原因は Python が悪いわけではなく、パッケージの「置き場所」の決まり方が npm と根本的に違うことにあります。\n\n npm と pip で何が違うのか\nnpm は...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "カルマンフィルタの使い方",
+      "url": "https://zenn.dev/dai62zk/books/kalman-filter",
+      "site": "Zenn(Python)",
+      "published": "2026-09-18T04:55:13Z",
+      "description": "線形カルマンフィルタ・拡張カルマンフィルタ（EKF）・無香料カルマンフィルタ（UKF）・パーティクルフィルタについて、数式の導出からRLC回路・モータ・移動ロボットの自己位置推定・レーダー追跡・倒立振子制御などの例題まで、道具として使えるようになることを目指して解説する。",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "本番で動いているサービスの実装が、リポジトリに一度も入っていなかった",
+      "url": "https://zenn.dev/tarowhitey/articles/runtime-manifest-drift-checker",
+      "site": "Zenn(Python)",
+      "published": "2026-09-18T04:25:47Z",
+      "description": "ある日、自分の端末で動いているサービスを一覧しました。\nsystemd --user で active (running)、ポートも listen していて、実際に使われている。その実装ファイルと unit ファイルが、リポジトリに一度も入っていませんでした。\nPR が起票されないままローカルブランチに留まっていた。端末が飛べば復元不能です。\n同じ棚卸しで、他に 6 本の自作 unit が同じ状態...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "10 年分の株価で試したら、私の押し目買いはくじ引きと同じだった",
+      "url": "https://zenn.dev/yankeeeneko/articles/swing-rules-vs-random-10y",
+      "site": "Zenn(Python)",
+      "published": "2026-09-18T03:52:15Z",
+      "description": "結論\n\n自分が使ってきた「押し目買い」のルールを、東証プライム全銘柄の 10 年分の株価で試しました。\n結果は、毎週くじ引きで銘柄を選んで買うのと同じ成績でした。\n試した中で唯一成績が良かったのは「大きく崩れた銘柄が戻るのを待つ」という、押し目買いとは逆の買い方でした。\n\nもっとうまくいくと思っていました。何を試して、何が残らなかったかを書きます。\n\n なぜ試したか\n今話題の「AI × 株式投資」...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "Jevを判定器にするか、特徴量抽出器にするか — 3タスクで実測した精度とコスト",
+      "url": "https://zenn.dev/neomaru/articles/llm-judge-vs-feature-extraction",
+      "site": "Zenn(Python)",
+      "published": "2026-09-18T01:00:00Z",
+      "description": "TypeSafe AIのJevは、テキストと質問リストを渡すと0〜1のスコアを返す判定APIです。入力は$0.042/1Mトークン・出力無料、コンテキストは約32k、問いごとの自信も返します。これを分類タスクでどう使うか。選択肢は2つあります。1行につき1つの問いを投げて閾値で切る「直接判定」と、1行につき12〜14の観点をスコアリングし、その生スコアを自分のラベルで学習した線形モデルに入れる「特...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "recall@5は90.0%だったのに、正解文書ありでも57.4%が誤答した — rag-mini-wikipediaで60問実測",
+      "url": "https://zenn.dev/tama_program/articles/5bfac1f1236fed",
+      "site": "Zenn(Python)",
+      "published": "2026-09-17T21:26:45Z",
+      "description": "RAGの検索失敗を分類すると「空」「圏外」より多いのは「誤答」だった。rag-mini-wikipediaで60問実測、recall@5は90.0%なのに、正解文書ありでの生成正答率は42.6%。recallと生成の誤答は別物であり、本番運用でも同様の失敗パターン（検索は当たっているのに生成が誤る）が起こりうると考えられる。\nrecall@kはRAGの検索品質を測る定番指標だが、これが高いこととエ...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
     {
       "title": "FastAPI × Claude API で作る日本語ビジネス文書API",
       "url": "https://zenn.dev/matsutake4949/articles/fastapi-claude-api",
