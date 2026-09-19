@@ -1,8 +1,58 @@
 {
   "site": "Zenn(LLM)",
-  "last_updated": "2026-09-19T06:02:13.662259",
-  "total_articles": 6163,
+  "last_updated": "2026-09-19T10:53:41.597625",
+  "total_articles": 6166,
   "articles": [
+    {
+      "title": "一つ直すと、次の「何を機械可読とみなすか」が顔を出す",
+      "url": "https://zenn.dev/nekoemon/articles/5506085c5d8a7a",
+      "site": "Zenn(LLM)",
+      "published": "2026-09-19T04:00:05Z",
+      "description": "一つ直すと、次の「何を機械可読とみなすか」が顔を出す\n\n 0. 何を作っているか\n\n\n開発対象: AWSセキュリティアドバイザリ（ALAS）と自前の構成情報（stack-profile.yaml）を突き合わせ、CVE単位でトリアージ判定を行う最小パイプライン。\n\n既存ツール（AWS Inspector等）との差別化:\n\nバージョン一致で警告を出すツールと異なり、「自前構成で該当モジュールが無効なら...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "LLMの生成コードをpytestで自動採点する——ハーネスは採点の手前で3回壊れた",
+      "url": "https://zenn.dev/ikinokori/articles/local-llm-pytest-bench-harness-pitfalls",
+      "site": "Zenn(LLM)",
+      "published": "2026-09-19T03:00:07Z",
+      "description": "ローカルLLMに小さな関数を書かせて、実務で使えるかを判断したかった。ところが生成物を目視でレビューしていると、何本か見たあたりで印象しか残らず、モデルを入れ替えたときに何が良くなったのかを言えなくなる。そこで、タスク集とpytestで合否を機械的に付ける小さなハーネスを書いて、ollama で3モデル×6問を回した。\n出来上がってから分かったのは、最初に壊れるのはモデルの実力を測る部分ではないと...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "日本語入力システムSumibiの開発 part24: iPhone版Sumibi 1.2.0で「文体プリセット」を追加しました",
+      "url": "https://zenn.dev/kiyoka/articles/japanese-input-method-sumibi-24",
+      "site": "Zenn(LLM)",
+      "published": "2026-09-19T02:02:35Z",
+      "description": "はじめに\niPhone版の「Sumibi - AI日本語キーボード」を 1.2.0 に更新しました。App Storeでは2026年9月16日から配信しています。\nいちばん大きな変更は 文体プリセット です。変換のときにAIへ渡す追加の指示(変換プロンプト)を保存しておき、切り替えて使えます。\nもともとは、論文スタイルの句読点「，」「．」で変換したくて作った機能です。そのあと悪ノリで、韓国語や中国...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "見えないものを信じる──BSEがLLMエージェントにPOMDPの最適性保証を取り戻す仕組み",
+      "url": "https://zenn.dev/lixian/articles/belief-state-engine-pomdp-llm",
+      "site": "Zenn(LLM)",
+      "published": "2026-09-19T01:59:43Z",
+      "description": "TL;DR\nLLMエージェントは、観測が不完全な環境（POMDP）に入ると体系的に崩れる──早すぎる確信、誤った仮説への収束、履歴が伸びるほどの政策ドリフト。本論文はその根本原因を「LLMが隠状態上の信念（確率分布）を明示的に持たない」ことに特定し、LLMの外にBayesフィルタを置く Belief-State Engine（BSE） を提案する。四つの公理で信念整合性を規定し、BSE付きLLMが...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "TWSNMP FKがAIを内蔵！外部サーバー不要・WebGPUで高速動作する完全ローカルネットワーク監視AI",
+      "url": "https://zenn.dev/twsnmp/articles/twsnmpfk-embedded-ai",
+      "site": "Zenn(LLM)",
+      "published": "2026-09-19T01:06:35Z",
+      "description": "はじめに\nオープンソースのデスクトップ型ネットワーク統合監視ツール TWSNMP FK が、最新の v2.4.0 において大きな進化を遂げました。\nなんと、AI（ローカルLLM）推論エンジンがアプリ本体に完全内蔵 されました！\nこれまで TWSNMP FK でも OpenAI / Gemini / Claude などのクラウドAPI連携や、Ollama を使ったローカルLLM連携に対応していました...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
     {
       "title": "\"【実践】話題のJevとGemini 3.8 Flashで作る「二重思考（Dual-Process）AI」パターン\"",
       "url": "https://zenn.dev/yoshidayataro/articles/b43e29a8424171",
@@ -89,26 +139,6 @@
       "site": "Zenn(LLM)",
       "published": "2026-09-18T15:39:33Z",
       "description": "はじめに\n2026年9月15日、TypeSafe AIが「Jev」という少し変わったAIモデルの早期アクセス提供を開始しました。Jevがやることは、ほぼ「判断」だけです。GPTやClaudeのように文章を書いたり、ツールを使ったり、長い手順を自律的に実行したりはしません。自然言語や各種状態を入力すると、型付きの判定結果と確率を返します。TypeSafeはこれを「System One Model」と...",
-      "category": "AI・技術",
-      "rss_category": "",
-      "image_url": ""
-    },
-    {
-      "title": "コードが消費できる型付き決定を返すホスト型モデル Jev の構造と使い方",
-      "url": "https://zenn.dev/suwash/articles/jev-ai_20260918",
-      "site": "Zenn(LLM)",
-      "published": "2026-09-18T15:00:00Z",
-      "description": "Jev は、ソフトウェアがそのまま消費できる型付きの決定を返すホスト型モデルです。TypeSafe AI が 2026-09-15 に早期アクセスとして公開しました。この記事では、公式ドキュメントと SDK の実装をもとに、Jev の構造・データモデル・導入手順・運用の勘所までを整理します。\n\nこの記事の全体像。以下、順に解説します。\n\n Jev とは\nJev は、非構造の状態を入力に取り、型付き...",
-      "category": "AI・技術",
-      "rss_category": "",
-      "image_url": ""
-    },
-    {
-      "title": "2026-08-30 今日の技術トレンド",
-      "url": "https://zenn.dev/bambampurin/articles/2026-08-30-tech-daily",
-      "site": "Zenn(LLM)",
-      "published": "2026-09-18T14:05:02Z",
-      "description": "2026年のAI・Web開発環境で今すぐ対応すべき4つの構造変化\n\n この記事で分かること\n\nCursorアクセス停止に伴うAI開発ツールの依存リスク対策と安全設計\nNext.jsのクリティカル脆弱性対策とAI Agent用サンドボックスの選定軸\nOpenAIによるAstral買収がもたらすuv中心のPython基盤統合\n\n\n\n 1. Cursorアクセス停止から学ぶAI開発ツールの依存リスク対策...",
       "category": "AI・技術",
       "rss_category": "",
       "image_url": ""
