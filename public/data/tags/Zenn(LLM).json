@@ -1,7 +1,7 @@
 {
   "site": "Zenn(LLM)",
-  "last_updated": "2026-09-18T23:16:39.123285",
-  "total_articles": 6160,
+  "last_updated": "2026-09-19T01:17:42.429475",
+  "total_articles": 6159,
   "articles": [
     {
       "title": "QLoRAを実装前に分解する：NF4・二重量子化・VRAM診断",
@@ -9,16 +9,6 @@
       "site": "Zenn(LLM)",
       "published": "2026-09-18T22:35:54Z",
       "description": "QLoRA（Quantized Low-Rank Adaptation）は、4-bitで保持した凍結base modelをforwardに使い、LoRA adapterだけを学習する構成です。\n「4-bitでloadできた」ことは、QLoRAが正しく動いた証拠にはなりません。実装では、少なくとも次の四条件を確認する必要があります。\n\n狙ったLinear moduleが実際に4-bit表現へ置き換わ...",
-      "category": "AI・技術",
-      "rss_category": "",
-      "image_url": ""
-    },
-    {
-      "title": "\"【実践】話題のJevとGemini 3.8 Flashで作る「二重思考（Dual-Process）AI」パターン\"",
-      "url": "https://zenn.dev/yoshidayataro/articles/b43e29a8424171",
-      "site": "Zenn(LLM)",
-      "published": "2026-09-18T22:35:14Z",
-      "description": "はじめに：「すべてを巨大LLMに投げる」のをやめたい\nAIエージェントやチャットボットを作っていると、ある疑問にぶつかります。\n\n「サーバーの稼働状態を教えて」\n「GitHubのリポジトリ一覧を出して」\n\nこうした単なる定型コマンドやツール呼び出しの仕分けにまで、毎回パラメータ数が数百億・数千億もあるフロンティアLLM（ClaudeやGemini、GPT-4等）を起動していませんか？\nこれではレイ...",
       "category": "AI・技術",
       "rss_category": "",
       "image_url": ""
@@ -39,36 +29,6 @@
       "site": "Zenn(LLM)",
       "published": "2026-09-18T22:18:04Z",
       "description": "永続メモリの MCP サーバーを Claude Code に繋いでも、保存の依頼はサーバーまで届かないことがあります。実際に測って出てきたのは次の3点でした。\n\n\nClaude Code の auto memory が、MCP への保存依頼を 4/4 で横取りした。エージェントは「記録しました」と報告するが、MCP サーバー側には何も届いていない\nauto memory を切っても、12回中 2回...",
-      "category": "AI・技術",
-      "rss_category": "",
-      "image_url": ""
-    },
-    {
-      "title": "契約書リスクの指摘、観点を絞った指示は効果が薄かった",
-      "url": "https://zenn.dev/every_ai_recipe/articles/contract-clause-check-3-points",
-      "site": "Zenn(LLM)",
-      "published": "2026-09-18T21:13:35Z",
-      "description": "TL;DR\n\n契約書の不利な条項をLLMに拾わせるとき、「観点を絞らずそのまま聞く」条件と「解約・違約金・責任の3観点を明示する」条件を、独立したサブエージェント2体に比較させた\n検証用に作成した架空の契約書(自動更新・一方的な値上げのみなし同意・片務的な違約金・広い免責・限定的なサポート対応の5条項)に対して、両条件とも主要な不利な条項をほぼ同じ水準で検出した\n観点指定の効果は、新しい条項の発見...",
-      "category": "AI・技術",
-      "rss_category": "",
-      "image_url": ""
-    },
-    {
-      "title": "AIが書いた記事を、AI自身の品質チェックが永遠に止め続けていた話",
-      "url": "https://zenn.dev/jworks_hq/articles/87cb447bf96e9a",
-      "site": "Zenn(LLM)",
-      "published": "2026-09-18T18:43:04Z",
-      "description": "この記事について\n個人開発で、LLMに定型フォーマットの記事(その日の作業記録のようなもの)を毎日自動生成させ、公開前に別のロジックで品質チェックをかける、という仕組みを運用しています。ある時期、AIが書いた記事を、同じ仕組みの中にある品質チェックが何度リトライしても合格させてくれないという状態にハマりました。\n原因を1つずつ潰していく過程で、「AI生成コンテンツの品質保証層をどう設計すべきか」に...",
-      "category": "AI・技術",
-      "rss_category": "",
-      "image_url": ""
-    },
-    {
-      "title": "ローカルJevの可能性検証",
-      "url": "https://zenn.dev/hakotech/articles/5c2fe2eb8a6051",
-      "site": "Zenn(LLM)",
-      "published": "2026-09-18T16:51:31Z",
-      "description": "ローカルJevの可能性検証\n\n はじめに\nJevが話題になっていますね。文章を長々と生成する代わりに、必要な判断と確率を直接返すという発想は面白いと思っています。ソフトウェアに組み込むことを考えると、こういうモデルが欲しかった、という人は多いのではないでしょうか？\nhttps://typesafe.ai/blog/introducing-system-one-models-and-jev\nただ、私...",
       "category": "AI・技術",
       "rss_category": "",
       "image_url": ""
@@ -104,21 +64,51 @@
       "image_url": ""
     },
     {
-      "title": "コードが消費できる型付き決定を返すホスト型モデル Jev の構造と使い方",
-      "url": "https://zenn.dev/suwash/articles/jev-ai_20260918",
-      "site": "Zenn(LLM)",
-      "published": "2026-09-18T15:00:00Z",
-      "description": "Jev は、ソフトウェアがそのまま消費できる型付きの決定を返すホスト型モデルです。TypeSafe AI が 2026-09-15 に早期アクセスとして公開しました。この記事では、公式ドキュメントと SDK の実装をもとに、Jev の構造・データモデル・導入手順・運用の勘所までを整理します。\n\nこの記事の全体像。以下、順に解説します。\n\n Jev とは\nJev は、非構造の状態を入力に取り、型付き...",
-      "category": "AI・技術",
-      "rss_category": "",
-      "image_url": ""
-    },
-    {
       "title": "Shopify の商品検索チャットを、文章を生成しない判定 API「TypeSafe Jev」で組み直した",
       "url": "https://zenn.dev/serotoninmax/articles/shopify-product-search-chat-typesafe-jev",
       "site": "Zenn(LLM)",
       "published": "2026-09-18T13:02:20Z",
       "description": "運営している Shopify ストア（tradecenter.shop）の右下に、商品検索用の AI チャットを置いている。バックエンドは Cloud Run の Node.js で、これまでは Gemini 3.8 Flash が返答文を書き、function calling で引いた商品をカードとして添えていた。この部分を TypeSafe Jev へ置き換えた。手元の評価 10 問で、応答時...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "「Jev って何？意味分かんない！」という方向けに、ざっくり解説してみたよ！",
+      "url": "https://zenn.dev/nix/articles/85cbdf3b1c5c83",
+      "site": "Zenn(LLM)",
+      "published": "2026-09-18T12:27:46Z",
+      "description": "はじめに\nリリースされたばかりなのに Jev を使いこなす人達は狂ってる、と思っているかもしれない @___nix___ です。\n今回は AI にあまり詳しくない方にも伝わるように、ちょっと変わった AI をご紹介してみます。\n\n 背景\nChatGPT や Claude に質問すると、文章で答えが返ってきますよね。\n人が読むぶんには便利ですが、その答えをプログラムで使おうとすると、答えの形をそろえ...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "CursorがSQLiteを再実装、費用の3分の2は計画役のモデルが使った",
+      "url": "https://zenn.dev/okssusucha/articles/20260721-cursor-agent-swarm-model-economics",
+      "site": "Zenn(LLM)",
+      "published": "2026-09-18T12:12:27Z",
+      "description": "エージェントを並列で走らせたとき、請求書の内訳がどうなるかを真面目に公開した例をあまり見たことがない。Cursorが7月20日に出した実験レポートは、そこに数字を入れてきた。トークンの9割以上を安いモデルが吐いているのに、金額の3分の2は少数の高いモデルが持っていく。この非対称が、マルチエージェント構成の設計そのものを規定している、という話だ。\nhttps://cursor.com/blog/ag...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "AIサポートPoCの成功指標を事前に固定する — 重み付き評価ケースとLLMジャッジによる合否判定",
+      "url": "https://zenn.dev/jinno_ai/articles/poc-success-metrics",
+      "site": "Zenn(LLM)",
+      "published": "2026-09-18T11:07:09Z",
+      "description": "生成AI製品のPoC (概念実証) の合否が「担当者の印象」で決まることがある。デモが雰囲気よく見えた、応答がそれっぽかった、で採用判断をしてしまう。この記事は、AIサポート (カスタマーサポート自動応答) のPoCの成功指標を開始前に固定し、重み付きの評価ケース通過率で合否を判定する測定設計の記録である。\n対象は、LLMの応答品質をPoCで判定したいエンジニアと評価担当。判定をLLMジャッジに委...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "【売上0円】Mac miniで自律AIを毎時動かしてわかった、プロンプトより先に組むべき3つの運用ルール",
+      "url": "https://zenn.dev/sora_proj/articles/f54b524f10cb49",
+      "site": "Zenn(LLM)",
+      "published": "2026-09-18T10:19:32Z",
+      "description": "昨日の20時起動で、199回目の定例会議が終わった。\n売上は綺麗さっぱり0円だ。\nMac mini 1台を朝9時から夜22時まで毎時起動させている某株式会社のAI部署の会社実験である。今週の実入金は0円、note に投下した7記事の累計ビューは合計で91、Kindle 本の注文数は0だ。\n初期資金として用意した10万円のうち、累計支出は782円。X の API 代に前払いした分だけで、あとは Ma...",
       "category": "AI・技術",
       "rss_category": "",
       "image_url": ""
