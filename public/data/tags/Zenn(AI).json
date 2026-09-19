@@ -1,8 +1,148 @@
 {
   "site": "Zenn(AI)",
-  "last_updated": "2026-09-19T21:38:27.669382",
-  "total_articles": 13903,
+  "last_updated": "2026-09-19T23:34:15.431501",
+  "total_articles": 13913,
   "articles": [
+    {
+      "title": "terraform init は何をしているのか【AI の Terraform 暴走を止める #1】",
+      "url": "https://zenn.dev/e8dev/articles/terraform-init-ai-review",
+      "site": "Zenn(AI)",
+      "published": "2026-09-19T22:42:49Z",
+      "description": "AI エージェントに Terraform を触らせるようになって、レビューの中身が変わりました。書かれた HCL を読むより先に、AI が打とうとしているコマンドと、その出力の読み方を見る必要が出てきた。エラーを消すために lock file を削除する、plan を読まずに apply に進む、lock エラーに force-unlock で応える。どれも人間の初心者と同じ間違いですが、AI は...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "「速く終わった」は成功ではない — rm -f が一度も走らず、壊れたコードを「検証済み」と報告した話",
+      "url": "https://zenn.dev/hwaun_dev_open/articles/zsh-glob-skipped-verification",
+      "site": "Zenn(AI)",
+      "published": "2026-09-19T22:19:41Z",
+      "description": "自分で作った動画処理ツールの検証を組んでいました。素材を処理して、出力の尺とフレーム数を確かめる。2回流して同じ結果が出れば合格、という単純なものです。\n2回目が、異常に速く終わりました。\n私はそれを「キャッシュが効いたんだな」と解釈して、合格にしました。 そして壊れたままのコードを「検証済み」として報告しました。\n実際には、検証は一度も走っていませんでした。\n\n 何が起きていたか\n原因は検証スク...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "CLAUDE.mdのルールを増やす前に確かめる、母数を数えるすすめ",
+      "url": "https://zenn.dev/genkunjc/articles/rules-that-died-when-measured",
+      "site": "Zenn(AI)",
+      "published": "2026-09-19T21:53:16Z",
+      "description": "AIコーディングエージェントに、決めたルールをちゃんと守ってほしい。ただ、ルールを増やすたびに、そのぶん守らせやすくなっているとは限りません。\n足す前に、まず母数を数えます。同じ日に作った4本のルールのうち3本は、通った側を数えると撤回の対象になりました。そのうち1本は、数え方の定義を直すと採用に戻ります。残ったのは、増やすことではなく先に数える手順です。\n\n 3つの要点\nAI コーディングエージ...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "OpenAIとジョナサン・アイブのAI時代のデザイン ── 人とAIのインターフェースの理想のかたち",
+      "url": "https://zenn.dev/leading_ai/articles/openai-jony-ive-ai-interface",
+      "site": "Zenn(AI)",
+      "published": "2026-09-19T21:29:43Z",
+      "description": "みなさん、こんにちは。ビジネス×デザイン×テクノロジーの３つの領域を越境している、Sun*のビジネスデザイナー兼AIストラテジストの山内怜史である。\nOpenAIとジョナサン・アイブがつくっている端末は、まだ名前も形も公表されていない。公になっているのは、２人がそれについて語った言葉だけである。\n本稿は、その言葉だけを材料に、以下を言語化していく。\n\n２人が理想とするインターフェースはどんな形をし...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "AI立ち絵の作り方｜プロンプト・参照画像・差分生成まで再利用できるキャラクター設計",
+      "url": "https://zenn.dev/satofun/articles/38b9e525ae0f02",
+      "site": "Zenn(AI)",
+      "published": "2026-09-19T21:25:18Z",
+      "description": "AIで立ち絵を作るとき、最初の1枚だけをきれいに生成することへ意識が向きがちです。ですが、TRPG、配信、SNS、ゲーム、漫画などで同じキャラクターを継続利用するなら、本当に重要なのは「次の1枚も同じキャラクターとして使えるか」です。\n髪型や瞳の色、衣装、アクセサリーといった特徴が毎回大きく変わってしまうと、せっかく作った立ち絵を素材として再利用しにくくなります。\n本記事では、AI立ち絵の基本的な...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "訂正が重なった資料の値抽出、プロンプト反復より内訳の明示が効いた",
+      "url": "https://zenn.dev/every_ai_recipe/articles/correction-tracking-breakdown-check",
+      "site": "Zenn(AI)",
+      "published": "2026-09-19T21:17:07Z",
+      "description": "TL;DR\n\n「訂正が複数回重なった業務メモ」から最終的な正しい値を抽出させる際、(1) プロンプトをそのまま2回貼る\"Prompt Repetition\"、(2) 回答前に情報を古い順へ整理させるステップバイステップ指示、の2つの工夫を単体・組み合わせの6条件で検証した\n結果：6条件すべてで最終値・計算結果は正しく、工夫の有無による差は確認できなかった（易しい4項目タスク・難しい逆転トラップ＋計...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "【コピペOK】Claude Code の permissions おすすめ設定と、allow / ask / deny の分け方",
+      "url": "https://zenn.dev/tmasuyama1114/articles/claude_code_permissions_recommended",
+      "site": "Zenn(AI)",
+      "published": "2026-09-19T20:38:09Z",
+      "description": "settings.json の permissions は、Claude Code に確認なしで実行させる操作と、止めたい操作を書く場所です。\nただ、どこまで許してよいかの基準がないと、空のままにするか、誰かの設定を貼ったままになりがちです。\nこの記事は、その基準になる allow / ask / deny の分け方と、そのまま貼れるおすすめ設定をまとめたものです。\n\n 忙しい人のための要約\n設定...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "Jev＝較正済み確信度を返す閉世界分類器 — System One Modelの設計論点",
+      "url": "https://zenn.dev/xim2jp_tokyo/articles/8445fb9942f4ac",
+      "site": "Zenn(AI)",
+      "published": "2026-09-19T20:18:02Z",
+      "description": "TypeSafe AIのJevを「構造化出力付きLLMの再発明では」と切るのは早い、というのが本記事の趣旨です。Jevの本質は生成モデルではなく、較正済み確信度を返す閉世界の分類器であり、この性質がアーキテクチャ上の置き場所を変えます。\n\n 設計論点1: logprobsと較正済み確信度は別物\nLLMのlogprobsは温度・プロンプト・トークナイズの影響で歪み、そのままでは意思決定の閾値に使えま...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "バグ報告を出したら、1 分で bot に読まれて 25 分で PR になった",
+      "url": "https://zenn.dev/yasunami_daichi/articles/issue-to-pr-automation",
+      "site": "Zenn(AI)",
+      "published": "2026-09-19T18:32:22Z",
+      "description": "!\nOSS の issue が PR になるまでを、公開されているタイムスタンプから測った記録と、その自動化がどう作られているかを公開リポジトリから読み解いたものです。2026 年 9 月時点。\n\n\n まず、こういう体験になる\nバグを見つけたとする。版を固定して、再現手順を書いて、issue を出す。\n1 分経たないうちに bot がコメントを付ける。「種別: Bug、確度: high」。\n11 ...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "OpenCodeのコンテキストをJevで継続的に剪定するプラグインを作った",
+      "url": "https://zenn.dev/uhu/articles/1007b909714cef",
+      "site": "Zenn(AI)",
+      "published": "2026-09-19T18:14:38Z",
+      "description": "はじめに\nOpenCode V2（beta）用のプラグイン opencode-context-pruner を作りました。\n毎回のモデル呼び出しの直前に、古いツールコールとその結果だけを Jev（TypeSafe の判定モデル）で判定して、送信リクエストから落とす／切り詰めるプラグインです。\n\n一番の特徴は「要約しない」こと。会話全体をLLMに要約させると、細部（数字・パス・エラーメッセージ）が消...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "実際，ローカルLLMの性能ってどうなの？",
+      "url": "https://zenn.dev/tubesoling/articles/2f58a43ad276cb",
+      "site": "Zenn(AI)",
+      "published": "2026-09-19T17:08:40Z",
+      "description": "はじめに\n初めまして．ソリングです．\n皆さんはローカルLLMを使用されたことはあるでしょうか．ここ数年でLLMの性能は急速に向上しており，現在では9B程度の比較的小規模なモデルでも，以前であれば非常に大規模な計算資源を必要としていたようなタスクを，ある程度こなせるようになってきました．\nクラウド上のLLMは非常に高性能ですが，ローカルLLMには，手元のPCだけで動かせる，外部へデータを送信せずに利...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "自分の概念論文をAIが読めるMCPサーバにする—Mekiki Readerの設計と使い方",
+      "url": "https://zenn.dev/kengotomita/articles/ca6d3d50287434",
+      "site": "Zenn(AI)",
+      "published": "2026-09-19T16:58:07Z",
+      "description": "自身が執筆した五本の連作論文（Mekiki Framework・T1〜T5）を、AIから直接参照できるようにするMCPサーバを公開しました。\nこの記事は、このサーバが「何をしていて、何をしていないのか」を開発者自身の言葉で整理し、説明するために書きました。理論の詳細そのものは公開中の論文に譲り、ここではサーバの設計思想、アーキテクチャ、そして具体的な使い方をご紹介します。\n\n公開先（Hugging...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "AIにアプリを作らせて大丈夫か、30秒で分かる物を作りました。",
+      "url": "https://zenn.dev/kss_cis_basekit/articles/67556fcd073c9f",
+      "site": "Zenn(AI)",
+      "published": "2026-09-19T16:43:05Z",
+      "description": "https://keysolutionsupport.com/check/ai-app/\n\n なぜ作ったか\n私はプログラムが書けません。2026年の春から、AIに指示を出して電話を受けるシステムを作らせ、実際の店舗で動かしています。\nその材料を配る場所を探していて、昨夜、Yahoo!知恵袋を調べました。AIにプログラムを書かせる道具の名前で検索すると、質問が94件ありました。その中に、こういう質問...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "Jev入門：Choice / Boolean / Scoreとprobability・confidence",
+      "url": "https://zenn.dev/yuzu_krs/articles/71c18d2589d01e",
+      "site": "Zenn(AI)",
+      "published": "2026-09-19T15:55:16Z",
+      "description": "2026年9月15日、TypeSafe AIは最初の System One Model として Jev を公開しました。\nJevは、ChatGPTのように自由な文章を返すことを主目的にしたモデルではありません。\nざっくり言うと、\nstate（判断材料）\n+\nquestion（聞きたいこと）\n↓\n型付きの判断 + 確率\nを返す、ソフトウェアの中で意味的な判断を行うためのモデルです。\nこの記事では、A...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
     {
       "title": "Jevを試してみた：精度はQwen3 4Bとほぼ同等だった",
       "url": "https://zenn.dev/dpbz/articles/dce127f7d8d85e",
@@ -94,26 +234,6 @@
       "image_url": ""
     },
     {
-      "title": "「作れる」より「見つけられる」が効く",
-      "url": "https://zenn.dev/shun_producer/articles/finding-problems-beats-building",
-      "site": "Zenn(AI)",
-      "published": "2026-09-19T13:25:08Z",
-      "description": "!\nこれは「AIで稼ぐって、実際どうなの」シリーズ——非エンジニアが、AIと収入の関係を現実的に考えるための連載です。\n（姉妹編：Claude Code初心者向け教科書 全8章）\n\n#1: 「AIで稼げる」の内訳を分解する\n#2: 稼ぐの第一歩は「新しい収入」じゃない\n#3: 海外で回ってるものを、日本に持ってくる\n#4: 非エンジニアが受託で最初の1件を取るまで\n#5: 「作れる」より「見つけら...",
-      "category": "AI・技術",
-      "rss_category": "",
-      "image_url": ""
-    },
-    {
-      "title": "LLM 抽出の自動評価が、言い回しを採点していた",
-      "url": "https://zenn.dev/tomtom55555/articles/d80e8efb8e4088",
-      "site": "Zenn(AI)",
-      "published": "2026-09-19T13:24:06Z",
-      "description": "会議の文字起こしから「タスク」「決定」「リスク」を抽出するパイプラインを作っています。抽出の質を測るために、人が注釈した正解データと抽出結果を突き合わせて precision / recall を出す評価スクリプトを持っていました。\nその評価スクリプトが壊れていた話です。しかも、壊れていることが半年近く表に出ませんでした。\n\n 症状: 入力を良くしたら、スコアが下がった\n文字起こしのモデルを差し替...",
-      "category": "AI・技術",
-      "rss_category": "",
-      "image_url": ""
-    },
-    {
       "title": "Claude Designで11種類のデザインを作り、ギャラリーにまとめてみた",
       "url": "https://zenn.dev/cyberdog_ai_lab/articles/20260919-claude-design-gallery",
       "site": "Zenn(AI)",
@@ -154,16 +274,6 @@
       "image_url": ""
     },
     {
-      "title": "pyside6-webusbを作った話",
-      "url": "https://zenn.dev/steck0714/articles/dd86a6b9218cfd",
-      "site": "Zenn(AI)",
-      "published": "2026-09-19T12:00:15Z",
-      "description": "どうもふせんです。\n今回は初めてかな……たぶん初めての技術系の記事です。\n今回は、pyside6-webusbという、PySide6 / QtWebEngine向けのWebUSB互換実装を作った話をします。\n\nそして、このプロジェクトについて最初に一つ言っておきたいことがあります。\n僕はこのプロジェクトのコードを1つも書いていません。\n本当に1つもです。\nPythonもJavaScriptも、自分...",
-      "category": "AI・技術",
-      "rss_category": "",
-      "image_url": ""
-    },
-    {
       "title": "【KB5124008不具合】Windows 11更新が進まない・構成画面で止まる時の対処法",
       "url": "https://zenn.dev/aiasoby/articles/asoby-20260909071500",
       "site": "Zenn(AI)",
@@ -179,16 +289,6 @@
       "site": "Zenn(AI)",
       "published": "2026-09-19T11:40:21Z",
       "description": "連載「遠回りしない技術英語 ― 自動車×AIエンジニアの実務英語講座」の「読む」実践編です。技術文書を速く読む\"型\"と、それを現場でいちばん逃げられない相手——海外製ツールの英語マニュアルとエラー——に当てる方法を、まとめて渡す。\n\n\n 大原則 ― 全部を訳さない\nまず捨ててほしい思い込みがある。「頭から全文を日本語にしないと読んだことにならない」という感覚だ。これが読解を遅くする最大の原因になる...",
-      "category": "AI・技術",
-      "rss_category": "",
-      "image_url": ""
-    },
-    {
-      "title": "AIに“判断だけ”させると何が変わるのか — 0.5秒で答える新モデル「Jev」を理解する",
-      "url": "https://zenn.dev/takuh/articles/93c3fb0a70eddd",
-      "site": "Zenn(AI)",
-      "published": "2026-09-19T11:35:35Z",
-      "description": "はじめに\nAIチャットボットに質問を送って、回答が表示されるまでの数秒間を「なんとなく待たされているな」と感じたことはないでしょうか。じつはあの待ち時間の何割かは、AIが回答の文章を書いている時間ではなく、「この質問はどういう種類のものか」「急ぎかどうか」といった回答の前段階の判断に使われています。\n2026年9月15日に、TypeSafe AIというスタートアップが「Jev（ジェヴ）」という新し...",
       "category": "AI・技術",
       "rss_category": "",
       "image_url": ""
