@@ -1,14 +1,204 @@
 {
   "site": "Zenn(AI)",
-  "last_updated": "2026-09-19T14:13:55.653252",
-  "total_articles": 13878,
+  "last_updated": "2026-09-19T17:19:42.169719",
+  "total_articles": 13892,
   "articles": [
     {
-      "title": "エージェントが打ったシェル6,419件を測ったら、それは「コマンド」ではなかった",
-      "url": "https://zenn.dev/tsutomusaito/articles/agent-shell-command-shape-ja",
+      "title": "Claude Codeにrm -rf ~/を打たせない。Jevで実行前に審査する",
+      "url": "https://zenn.dev/mistletoe/articles/jev-claude-code-guard",
       "site": "Zenn(AI)",
-      "published": "2026-09-19T03:29:23Z",
-      "description": "3行で\n\n自分のセッションログから Claude Code が実行した Bash コマンド 6,419 件を取り出して形を測った。\n**中央値 242 文字。80 文字以内に収まるのは 11.0%。26% はシェルではなく別言語のプログラムを流し込んでいる。**残りの純シェルも 91.3% が複合で、断片数の中央値は 5、最大 60。\nコマンド名で承認や監査をする仕組みは、この形の入力を前提にして...",
+      "published": "2026-09-19T08:26:20Z",
+      "description": "!\nこの記事は、実験の設計から実行・集計・執筆までClaude Code(生成AI)にやらせたものです。\n載せているコードとデモは、実際に動かしたものです。\n\n\n依頼とコマンドを渡すと、5つの判断(不可逆・秘密情報・範囲外・被害・対象)が1リクエストで返ってくる。allow / ask / blockを決めるのはコード\n\n tl;dr\n\nClaude CodeのPreToolUse hookからT...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "AIのブラウザ操作を選択問題にして爆速にする jev-ultrafast の仕組み",
+      "url": "https://zenn.dev/karamage/articles/8ff31cccd3d223",
+      "site": "Zenn(AI)",
+      "published": "2026-09-19T08:08:33Z",
+      "description": "Jevが盛り上がってますね。そんな中、browser-useのチームが公開した「jev-ultrafast」を見て、びっくり。\nhttps://github.com/browser-use/jev-ultrafast\nGoogleフライトで「チューリッヒからロンドンまでの片道航空券を検索し、結果一覧が表示されるまで」の全工程を、わずか7.1秒で完遂しています。\nhttps://x.com/masa...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "JevでClaude Codeの決裁規定を監査してみた記録",
+      "url": "https://zenn.dev/marycache/articles/20260918-jev-system-one",
+      "site": "Zenn(AI)",
+      "published": "2026-09-19T07:40:59Z",
+      "description": "2026/09/16に、TypeSafe AIが開発している「Jev」（System One）というプロダクトを知り、Early Accessで実際にAPIを試す機会を得ました。\nChatGPT や Claude のような大規模言語モデル（LLM）に日常的に触れていると、「AIを使う」といえば「プロンプトを投げて、自然言語の文章を返してもらう」という体験が当たり前になっています。\nしかし、Jev ...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "緑の範囲が原稿より狭かった：Claude Code で書き、Codex でレビューする",
+      "url": "https://zenn.dev/propagandist/articles/0027-cross-vendor-agent-review",
+      "site": "Zenn(AI)",
+      "published": "2026-09-19T07:35:07Z",
+      "description": "この記事について\n\n\n対象読者：AI にコードや文章を書かせていて、レビューをどこでどう挟むか決めかねている人\n\n得られること：レビューの層を「強度」ではなく「何が見えるか」で分ける観点と、自分の検証の範囲が主張の範囲に届いているかを確かめる手つき\n\n前提：特定のツールに依存しない話です。手元の道具は設計判断の例として出します。バージョンや仕様はいずれも執筆時点（2026年9月）のものです\n\n実行...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "AIを「個人の道具」で終わらせないために",
+      "url": "https://zenn.dev/sionicai_jp/articles/53a6bdf8b27d9b",
+      "site": "Zenn(AI)",
+      "published": "2026-09-19T07:30:05Z",
+      "description": "生成AIを使っているのに、業務は変わっていない\n生成AIを使って、文章の下書きや情報の整理、アイデア出しをする機会は増えました。\n一方で、「問い合わせ対応」「社内ナレッジの検索」「日報・レポートの作成」「見積書作成」といった業務そのものまで、AIに任せられているケースはまだ多くありません。\n私たちは、生成AIを個人の便利なツールにとどめず、企業の業務プロセスの中で継続的に活用できる仕組みにすること...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "Jevを試してみた：文章分類を題材にJevの動作を確認する",
+      "url": "https://zenn.dev/nekomaho/articles/fb456b0f96d24c",
+      "site": "Zenn(AI)",
+      "published": "2026-09-19T07:01:27Z",
+      "description": "最近、TypeSafe AIの Jev という物が話題になっています。どのような物なのか、実際にコードを書いて動作を試してみました。\n今回作ったものは、入力された日本語の文章を、\n\n報告\n二択問題\n相談\n不明\n\nの4種類に分類するシンプルなCLIツールです。\nソースコードはこちらです。\n\nhttps://github.com/nekomaho/jev-test-project\n\nこの記事では、Je...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "Gemini Enterprise Agent Platform の「Managed Agents」に Cloud Run を運用させてみる",
+      "url": "https://zenn.dev/satohjohn/articles/gemini-managed-agents-security",
+      "site": "Zenn(AI)",
+      "published": "2026-09-19T06:59:04Z",
+      "description": "はじめに\nGoogle Cloud の Managed Agents API に、Cloud Run のサービスを運用させました。Managed Agent API は Gemini Enterprise Agent Platform の Preview 機能です。今回、ログとメトリクスを読ませ、チューニング案を推測させ、実際に再デプロイまでさせています。\nモチベーションは、Antigravity...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "Claudeが共通指示に対応、AIに任せる前の新常識",
+      "url": "https://zenn.dev/sugawara_ai/articles/ai-news-20260919",
+      "site": "Zenn(AI)",
+      "published": "2026-09-19T06:56:09Z",
+      "description": "2026年9月19日（土）のAIニュース完全解説版。図解を見れば本文を読まなくても分かる形にしています。\n先に結論を言います。今日のニュースは、AIに何を任せ、どこを人が確かめるか、という話です。Claudeの共通指示対応から、学習素材を巡る訴訟、誤情報や履歴送信の問題、家庭の予定を支えるGoogleの取り組みまで。便利になるほど、任せ方が大事なんですよ。僕と一緒に、集客や売上につなげたい経営者も...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "Jevにレースゲームを任せて考えた、質問・記憶・リアルタイム性の話",
+      "url": "https://zenn.dev/test_myname/articles/jev-game-decisions-and-latency",
+      "site": "Zenn(AI)",
+      "published": "2026-09-19T06:48:24Z",
+      "description": "Vtuberの「ぷらむらいす」です。\nJevにゲームを高速で操作させている投稿を見て、「自作ゲームでも試してみたい」と思いました。\nそこで、ゲームの状態と操作をAIへ公開する仕組みであるGuaを使って、レースゲームでの連携を試しました。最初に考えたのは、通常のLLMが大きな方針を決め、Jevがその場の操作を選ぶ構成です。\nところが、作ってみた感想は「うーーーーん、なんか超微妙……」でした。\n必要な...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "GB10 でローカルLLMを数ヶ月運用して踏んだ罠10選（全部実測）",
+      "url": "https://zenn.dev/wisteriacorp/articles/wisteria-737d5801a0b3",
+      "site": "Zenn(AI)",
+      "published": "2026-09-19T06:43:56Z",
+      "description": "NVIDIA GB10 が載った Lenovo ThinkStation PGX で、ローカルLLMを数ヶ月ほぼ毎日動かしています。常駐エージェントと夜間バッチと、たまに VLM で OCR。128GB のユニファイドメモリに惹かれて買いました。\nで、この記事はベンチマーク記事ではないです。スペックの数字は他の人が書いてくれているので、こっちは運用していて実際に踏んだ穴の記録を書きます。順不同では...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "Jevで「自分のルール通りにブックマークを整理する」Chrome拡張を作った",
+      "url": "https://zenn.dev/acorn181/articles/a24f9f359e6f95",
+      "site": "Zenn(AI)",
+      "published": "2026-09-19T06:19:17Z",
+      "description": "はじめに\nJevが発表されましたね。\n早速触ってみると、これまでの主要な生成AIとは少し毛色が違って、文章を自由に生成させるというより、Noul や Choice、Score のような形で「判断」をさせるのが面白そうでした。\n特に気になったのが Choice で、選択肢をいくつか用意して、それぞれの意味を自然言語で書いておくと、「この入力ならどれっぽい？」をJevに判断させられます。\nこれ、分類系...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "それでもプログラマーがAIに任せるべきではないこと",
+      "url": "https://zenn.dev/monmomo/articles/5e7efdb79641fb",
+      "site": "Zenn(AI)",
+      "published": "2026-09-19T06:14:19Z",
+      "description": "!\nこの記事はあたたかみのある手入力で作成しています。\n\n業務をAIに移譲すればするほど評価されるこの時代。\nほとんどの業務をAI前提に再構築した企業は「AIネイティブ企業」として羨望のまなざしを向けられ、今や多くの企業がそんなAIネイティブを目指して日々効率化を進めています。\nそれでもプログラマーとして日々業務をしていて「これAI使わないほうがいいんじゃね？」って作業もある、と感じてます。\n今回...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "喋れないAI「Jev」で国家試験を解く：Choice APIと確率分布の扱い方",
+      "url": "https://zenn.dev/chimirohi/articles/fae6ab22983084",
+      "site": "Zenn(AI)",
+      "published": "2026-09-19T05:53:08Z",
+      "description": "なんか面白いAIが出た。TypeSafeの「Jev」という、自由な文章ではなく、主に判断結果を返してくるAIだ。\n賢いけれど、おしゃべりはしてくれない。\nだが、我々人間はおしゃべりしないと本当にソイツが賢いかどうかなんて分からないんだよおおおォ！\nというわけで、喋らなくても受けられる試験をやらせてみよう。第四級アマチュア無線技士、いわゆる4アマである。法規12問・無線工学12問、すべて4択。マーク...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "中学生でもわかる Lean 4 #04｜はじめての形式証明",
+      "url": "https://zenn.dev/dantarg/articles/lean4-first-proof",
+      "site": "Zenn(AI)",
+      "published": "2026-09-19T05:31:40Z",
+      "description": "前回の #03「反例――『絶対』を一つの例で壊す」 では、最後にLeanの短いコードを一つだけ見ました。\nそこで見たのは、\nexample (n : Nat) : n + 0 = n := by\n  rfl\nでした。\nでも、まだLeanそのものはほとんど読んでいません。\nでは、命題と証明をコンピューターにも読める形で書くと、何が起きるのでしょう。\n今回は、わざと簡単すぎる式から始めます。\n1 + ...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "AIエージェント運用の『学び台帳』を設計した——再発だけを恒久ルールへ昇格させる仕組み",
+      "url": "https://zenn.dev/container_cms/articles/7d3f14cb8b90b9",
+      "site": "Zenn(AI)",
+      "published": "2026-09-19T05:26:25Z",
+      "description": "Claude Code のような AI エージェントに継続的な開発・運用を任せていると、チェックリストや規約ドキュメントに書かれていない種類の欠陥に何度も出会う。指摘してやり直させれば1回はその場で直る。問題は、次の似た作業のときに同じ指摘をもう一度することになる点だ。エージェントのコンテキストはセッションごとにリセットされるので、口頭でのフィードバックは何もしなければ揮発する。\nこの記事では、こ...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "Claude Codeに7部署を持たせて壊れた12の場面と、動いた直し方",
+      "url": "https://zenn.dev/akira_books/books/f8c689aed4d68f",
+      "site": "Zenn(AI)",
+      "published": "2026-09-19T05:22:41Z",
+      "description": "Claude Codeのサブエージェントで市場調査・開発・企画・PR・動画・未来構想・監査など8部署を作り、秘書役のClaudeに毎日の実務を回させた記録。2026年7月から9月までに実際に壊れた12の場面を、何をしようとして・何が起きて・原因は何で・どう直したら動いたかの順に書いた失敗台帳。組織設計の理屈ではなく、明日から使えるチェックリストとして。",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "コードを書かずに AI に本番の自動化を作らせる ― 決めるのは 3 つだけ",
+      "url": "https://zenn.dev/houchi_unyo/books/ai-automation-3-decisions",
+      "site": "Zenn(AI)",
+      "published": "2026-09-19T05:15:38Z",
+      "description": "実装を一行も書かずに、AI に「無人で動くもの」を作らせて運用した記録です。\n人間が決めたのは要件・上限・止める条件の 3 つだけで、残りは AI が決めました。\n設定 1 行で 1 日分の判断が消えた事故、板に載っていなかった注文、200 日開いたままの\n25% の乖離、そして公開の前に読む規則までを、自分の口座とシステムの記録の数字だけで\n書いています。暗号資産の売買は 2026-08-20 ...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "生成AIにドキュメントを書かせるのはアリ？自分が実際にやっている付き合い方をまとめる",
+      "url": "https://zenn.dev/koki_n22/articles/c6b26243232511",
+      "site": "Zenn(AI)",
+      "published": "2026-09-19T04:57:44Z",
+      "description": "対象読者\n\n生成AIに設計書、調査資料、提案資料などを書かせている人\n生成AIに書かせると文章量が増えすぎて、レビューがつらい人\n生成AIを使いつつ、ドキュメントの質と作成速度を上げたい人\n\n\n モチベーション\nhttps://qiita.com/take-yoda/items/e5d9ce6618523af1ffc5\n\n上記記事を読み、自分も似た問題を感じていた\n一方で、生成AIにドキュメントを...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "テストケースの「十分性」を LLM に判定させる ── QA Gauge を作った理由と、最初の失敗",
+      "url": "https://zenn.dev/lil_ikeda/articles/qa-gauge-01-llm-judges-test-sufficiency",
+      "site": "Zenn(AI)",
+      "published": "2026-09-19T04:54:00Z",
+      "description": "テストケース群が「十分か」を判定する仕組みを作っています。社内では QA Gauge と呼んでいます。テストケースを生成する AI ではなく、提出されたテストケース群に過不足がないかを判定する AI です。\nまだ「委譲できた」とは言えない段階なので、この記事はその実況の 1 本目になります。一言でいうと、QA の「判断」を LLM に委譲できるか。判定器そのものより先に、判定結果を評価する仕組みを...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "AI学習支援サービスYURUSAPOの技術構成",
+      "url": "https://zenn.dev/yurusapo/articles/18e6dd64f16772",
+      "site": "Zenn(AI)",
+      "published": "2026-09-19T04:52:39Z",
+      "description": "先日、AI学習支援サービスのYURUSAPOをリリースしました！\n\nこのサービスの簡単な紹介と技術構成をご紹介したいと思います。\n\n 前提\nYURUSAPOは個人開発であり、リリースしたばかりなので内容は随時アップデートする可能性があります。\n\n 簡単なサービス紹介\nYURUSAPOでは以下の3つの機能を提供しています。\n現在は、ログイン後に学習フロー、コーチングは利用できる構成です。\n\n 学習フ...",
       "category": "AI・技術",
       "rss_category": "",
       "image_url": ""
@@ -19,26 +209,6 @@
       "site": "Zenn(AI)",
       "published": "2026-09-19T02:35:33Z",
       "description": "「結局、どのAIエージェントを使えばいいの?」に答える一冊です。\n\nClaude Code、Devin、OpenAI Codex、OpenClaw、Pencil。それぞれ強みも思想もコストも違います。本書は5つの主要エージェントを同じ土俵で比較し、実行環境・自律度・並列性・コスト・ガバナンスという5つの軸で「あなたの現場ならどれか」を選べるようにします。\n\nこんな人にオススメ\n✅ AIコーディング...",
-      "category": "AI・技術",
-      "rss_category": "",
-      "image_url": ""
-    },
-    {
-      "title": "AIにコピペさせるだけでOK！読む必要なし！電話受付AI【CiS】 構想～実装・修正・発展の過程",
-      "url": "https://zenn.dev/kss_cis_basekit/books/9464785c12b648",
-      "site": "Zenn(AI)",
-      "published": "2026-09-19T02:13:48Z",
-      "description": "目次\n第1話　構想と土台\n第2話　作り始めた日と、深夜3時のデバッグ\n第3話　複数のお客様と、本物の番号\n第4話　鳴らない電話と、最初の一本\n第5話　書類と法律と、値段の決め方\n第6話　ノートパソコンから、サーバーへ\n第7話　「移行完了」は間違いだった\n第8話　初めて他人の店で鳴った日と、AIが嘘をついた日\n第9話　誰も来ていなかったホームページと、犯人が分かった日\n第10話　踏んだ地雷を、配りは...",
-      "category": "AI・技術",
-      "rss_category": "",
-      "image_url": ""
-    },
-    {
-      "title": "Jev で文書検索を作る、PageIndex 風の木探索と総当たりの比較",
-      "url": "https://zenn.dev/mohhh_ok/articles/2026-09-jev-pageindex-tree-search-vs-scan",
-      "site": "Zenn(AI)",
-      "published": "2026-09-19T01:53:35Z",
-      "description": "ベクトル検索を使わず、LLM が目次を読みながら文書を降りていく PageIndex という検索手法があります。段ごとに LLM を呼ぶので遅いのが難点でしたが、TypeSafe の Jev は 1 回 0.2〜0.5 秒で「どれか」と「あるか」を返すので、この「降りる判断」を任せたら速くなるのではと思って試しました。コードと目録・評価セットは blog-examples に置いています。\n\n 結...",
       "category": "AI・技術",
       "rss_category": "",
       "image_url": ""
@@ -59,16 +229,6 @@
       "site": "Zenn(AI)",
       "published": "2026-09-19T01:12:26Z",
       "description": "!\nこの記事は「AI討論 MAGI Games 開発記」の第1回です。日々の変更や気づきはスクラップに書き足していて、ネタが溜まったら次の回にまとめます。\n\n\n 作ったもの\n毎日1本、ブラウザで遊べるミニゲームが増えていくサイトを作りました。\nhttps://magi-games.mappy555.workers.dev\nただし、何を作るかは私が決めていません。性格の違う3体のAIエージェントが案...",
-      "category": "AI・技術",
-      "rss_category": "",
-      "image_url": ""
-    },
-    {
-      "title": "文章を生成しないAI「Jev」とは？ 100ms級で判断する\"System One Model\"",
-      "url": "https://zenn.dev/ryodev/articles/9de2087d39faf9",
-      "site": "Zenn(AI)",
-      "published": "2026-09-19T01:00:51Z",
-      "description": "ここ数日、AI界隈で Jev という新しい技術が急に注目を集めています。\n新しいLLMなのか、ClaudeやGPTの競合なのか、それとも既存モデルを使ったサービスなのか。名前だけ見ても、正直なところ何をするものなのかよく分かりません。\n気になって調べてみると、Jevは最近よくある「より賢いチャットAI」とはかなり違う方向を向いたモデルでした。\n特徴を一言で表すなら、ChatGPTが人間のために答え...",
       "category": "AI・技術",
       "rss_category": "",
       "image_url": ""
@@ -144,31 +304,11 @@
       "image_url": ""
     },
     {
-      "title": "AIが書いたコメントを30%削減し、コードの可読性を上げた",
-      "url": "https://zenn.dev/ta4/articles/remove_ai_comments",
-      "site": "Zenn(AI)",
-      "published": "2026-09-18T23:59:39Z",
-      "description": "はじめに\nAIでコーディングをしていると、ソースコードがコメントだらけになりがちです\nまた、コメントも読みやすさに寄与するものであればよいのですが、それらしい造語が多用されていたり、コードを読めばわかるようなものが多かったりと、可読性を落としていることがほとんどです\n\n 対象読者\n\nAIを用いたコーディングを行っている方\n生成されたコードのコメントが多く、可読性について悩んでいる方\n\n\n 記事を読...",
-      "category": "AI・技術",
-      "rss_category": "",
-      "image_url": ""
-    },
-    {
       "title": "NVIDIAが「CUDA Rust」を発表！海外で話題の最新テックトピック3選",
       "url": "https://zenn.dev/ament3/articles/ai-digest-2026-09-17-0011",
       "site": "Zenn(AI)",
       "published": "2026-09-18T23:57:08Z",
       "description": "Hacker News等の海外技術コミュニティで大きな注目を集めている最新トピックの中から、日本のエンジニアにとってもインパクトの大きい3つのニュース・ツールをピックアップして解説します。\n特に、AI開発やシステムプログラミングの現場で需要が急増しているRustによるGPUプログラミングとAIによるデータベース最適化は必見です。\n\n\n 1. NVIDIAがRustによるネイティブGPUプログラミン...",
-      "category": "AI・技術",
-      "rss_category": "",
-      "image_url": ""
-    },
-    {
-      "title": "59. なぜルールは発火しないのか",
-      "url": "https://zenn.dev/yamada_ai_dev/articles/why-rules-never-fire",
-      "site": "Zenn(AI)",
-      "published": "2026-09-18T23:30:10Z",
-      "description": "!\nこの記事は生成AIで作成した草稿を、筆者が内容を確認し、添削・修正のうえ公開しています。\n\n\n なぜルールは発火しないのか\nAIコーディングエージェントに運用ルールを書いた。ユーザーに確認・質問するときは、2〜4個の選択肢を提示すること。趣旨はそれだけだ。この規則は毎ターン、必ずコンテキストに入っている。設定ファイルの中でも上のほうに書いてあり、読み落としようがない場所にある。\nそれでも破られ...",
       "category": "AI・技術",
       "rss_category": "",
       "image_url": ""
