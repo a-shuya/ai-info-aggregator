@@ -1,8 +1,68 @@
 {
   "site": "Zenn(機械学習)",
-  "last_updated": "2026-09-19T10:53:41.597625",
-  "total_articles": 1853,
+  "last_updated": "2026-09-19T14:13:55.653252",
+  "total_articles": 1859,
   "articles": [
+    {
+      "title": "保存したモデルを翌週で検証する。基準線に勝っても黒字とは限らない",
+      "url": "https://zenn.dev/data_boatrace/articles/a136ee9f96f730",
+      "site": "Zenn(機械学習)",
+      "published": "2026-09-19T13:51:03Z",
+      "description": "前回までで、公式データを取得し、小型モデルを学習し、保存したモデルで別日の番組表を予測できるようになりました。\n今回は、そのモデルを変えずに翌週で採点します。\n結果を先に書くと、1月8〜14日のうち条件を満たす953レースで、モデルの単勝回収率は94.69%。1号艇固定の93.97%を少し上回りました。ただし100円ずつの紙上計算では5,060円のマイナスです。\n基準線を上回ったことと、お金が増え...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "リザバーの能力を測る指標について(MC ・IPC)",
+      "url": "https://zenn.dev/kotton_mas/articles/rc-basics-03-capacity",
+      "site": "Zenn(機械学習)",
+      "published": "2026-09-19T09:55:51Z",
+      "description": "はじめに\n前回で ESP が成立する領域が分かったので、次はその中でリザバーがどれだけの能力を持つのかを数値で測ってみます。記憶容量(MC)と情報処理容量(IPC)の話です。\nそれに加えて 、RC のベンチマークとして定番となっているNARMA10タスクも併せて実施してみました。\n\n 1. 記憶容量(MC)\nMC は Jaeger (2002) の短期記憶容量で、「遅延 k の入力 u[t-k] ...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "Claude Codeと作る競馬予測システム開発記(6) 予測スクリプト変遷史編",
+      "url": "https://zenn.dev/teruyotasaki/articles/horse-racing-ml-dev-06-script-evolution",
+      "site": "Zenn(機械学習)",
+      "published": "2026-09-19T09:38:52Z",
+      "description": "はじめに\n前回は、crontab・Slack通知・パドックメモ機能といった日々の運用体制について書きました。\n第6回となる今回は少し違う角度から、本番で実際に動いている予測スクリプトそのものが、どう置き換わってきたかを振り返ります。3本のスクリプトが登場しますが、どれも「仮説を立てて試し、ダメなら次を試す」というサイクルの跡そのものです。\nscripts/run_prediction_cell.p...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "【銅メダル】SIGNATEコンペ「近赤外研究会 スペクトル分析チャレンジ」反省会",
+      "url": "https://zenn.dev/rikutw/articles/f7aeef4c9bc0f6",
+      "site": "Zenn(機械学習)",
+      "published": "2026-09-19T06:11:40Z",
+      "description": "1. はじめに\nこの記事はSIGNATEコンペ「近赤外研究会 スペクトル分析チャレンジ」で得た知見をまとめたものになります。学部研究で生体信号を用いた動作意図推定の研究に取り組んだ経験をもっと活かしたいと思い、このコンペに参加しました。結果として80位/937位で銅メダルを獲得し、過程を通して学んだことも多かったので記事を書くに至りました。\n\n 2. 方針の概要\nこのコンペは一言でいうと木材の近赤...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "Qwen3-0.6Bで自作Jev: 固定ヘッドよりラベルを読ませる方が強かった",
+      "url": "https://zenn.dev/mskbhd/articles/lab-704-llmjev",
+      "site": "Zenn(機械学習)",
+      "published": "2026-09-19T06:01:11Z",
+      "description": "文章を生成せず、型付きの判断と確率だけを1回の forward で返すモデル。TypeSafe AI の Jev がこの形を「System One モデル」と呼んで出してきました。これを見て、オープン LLM の lm_head を外して分類ヘッドに載せ替えれば同じものが自作できるのでは、と考えました。Qwen3-0.6B で実際に作り、精度・キャリブレーション・レイテンシを測りました。\n先に結果...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "Jevを、自然言語で分類基準を渡せる識別モデルとして使う",
+      "url": "https://zenn.dev/cybernetics/articles/4f3762bd470fc4",
+      "site": "Zenn(機械学習)",
+      "published": "2026-09-19T04:29:37Z",
+      "description": "はじめに\nJevの使い方は、確率的分類器から考えると分かりやすい。\n通常の分類器では、入力を x、クラスを y として、予測する分布を\n\n\\hat p_\\theta(y\\mid x)\n\nと書く。\\theta は学習済みパラメータ、ハットは推定された確率であることを表す。テキスト分類なら、x は文章、y はその文章に付けるラベルである。\nJevのChoiceでは、判定対象に加えて、質問 q と候補の...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
     {
       "title": "XGBoostの数学",
       "url": "https://zenn.dev/hiroki_honma/books/c6771fc1e22a21",

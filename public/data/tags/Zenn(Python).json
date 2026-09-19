@@ -1,8 +1,128 @@
 {
   "site": "Zenn(Python)",
-  "last_updated": "2026-09-19T10:53:41.597625",
-  "total_articles": 6504,
+  "last_updated": "2026-09-19T14:13:55.653252",
+  "total_articles": 6516,
   "articles": [
+    {
+      "title": "Cloudflare Workers では相手の証明書が読めないので、SSL 証明書チェッカーを VPS の openssl で作った",
+      "url": "https://zenn.dev/omikuji/articles/ssl-checker-workers-openssl-vps",
+      "site": "Zenn(Python)",
+      "published": "2026-09-19T12:40:05Z",
+      "description": "ホスト名を入れると、証明書の有効期限・SAN・発行者・チェーン・TLS 1.0〜1.3 の受け付け状況・検証結果（期限切れ / ホスト名不一致 / 自己署名 / チェーン不備）を出すツールを作りました。\n👉 SSL 証明書チェッカー（無料・登録不要）\nサイトは Cloudflare Workers で動いているのですが、Workers からは相手の証明書を読めません。この記事は、その制約をどう回避...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "問い合わせ対応を自動化するAIパイプラインを作った話 - 実装の裏側と、実際にいくら得するのかの計算",
+      "url": "https://zenn.dev/genka_build/articles/8643ae10dbf8bf",
+      "site": "Zenn(Python)",
+      "published": "2026-09-19T12:24:06Z",
+      "description": "「問い合わせ対応に毎日何時間も取られている」\n中小企業のオーナーや業務担当者からよく聞く悩みです。同じような質問が繰り返し来るのに、その都度メールを読んで、内容を理解して、返信を一から書く。この作業自体は難しくありませんが、積み重なると膨大な時間になります。\nこの記事では、その課題に対して実際に作った自動化パイプラインの中身と、それが「本当にどれくらい得なのか」を数字で説明します。技術的な実装の話...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "pyside6-webusbを作った話",
+      "url": "https://zenn.dev/steck0714/articles/dd86a6b9218cfd",
+      "site": "Zenn(Python)",
+      "published": "2026-09-19T12:00:15Z",
+      "description": "どうもふせんです。\n今回は初めてかな……たぶん初めての技術系の記事です。\n今回は、pyside6-webusbという、PySide6 / QtWebEngine向けのWebUSB互換実装を作った話をします。\n\nそして、このプロジェクトについて最初に一つ言っておきたいことがあります。\n僕はこのプロジェクトのコードを1つも書いていません。\n本当に1つもです。\nPythonもJavaScriptも、自分...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "見た目が同じで、機械には別物。日本語の業務データで揃えるもの",
+      "url": "https://zenn.dev/shinsei99/articles/normalize-japanese-data",
+      "site": "Zenn(Python)",
+      "published": "2026-09-19T11:05:12Z",
+      "description": "日本語の業務データを扱っていると、見た目が同じなのに一致しないという形の不具合が定期的に出ます。\nうちで実際に踏んだ3つを挙げます。\n\n ① ハイフンに見える記号は、7種類ある\n住所を町名と番地に分割する処理で、特定の物件だけ失敗していました。\n（住所）… 1136−291     ← これが分割できない\n（住所）… 1136-291     ← これは分割できる\n区切りに使われていたのは U+2...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "Jevを企業で使うなら？規約・安全性・導入方法を調べてみた",
+      "url": "https://zenn.dev/yamato_snow/articles/jev-enterprise-security-guide",
+      "site": "Zenn(Python)",
+      "published": "2026-09-19T10:42:28Z",
+      "description": "話題のJev、会社の業務にも使えそうですよね🧐\nでも、顧客の問い合わせや社内文書を送るとなると、安さだけでは決められません。\n「学習に使われない？」「データは残る？」「そもそも、どんな会社？」\nAPIの使い方を知る前に、確かめたいことがいろいろ出てきます😅\nそこで今回は、TypeSafe AIの判断特化モデル「Jev」を、企業で導入するならどうかという視点で調べました。\n規約と安全性を確認しながら...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "相場の取り分は寄りの30分にあった。戦略を3本に絞り直した理由（振り返り第4回）",
+      "url": "https://zenn.dev/denny/articles/where-the-edge-was",
+      "site": "Zenn(Python)",
+      "published": "2026-09-19T08:22:38Z",
+      "description": "先に前提を書く\n私はプログラムが書けない会社員である。楽天証券のマーケットスピードII RSSとClaudeを使って、自動売買の仕組みを作っている。この記事の数字は、すべて次の条件で得たものだ。\n\n\n一円も動かしていない。 発注しない常駐エージェントを作り、実データで売買判断だけをシミュレートしている\n東証の監視86銘柄の1分ごとの値、8月11日〜9月18日の28営業日。資金2,000万円・1銘柄...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "iPhoneの写真は、アップロードAPIのゲートの手前で縮める",
+      "url": "https://zenn.dev/vaonvn/articles/34c7fc7c403d82",
+      "site": "Zenn(Python)",
+      "published": "2026-09-19T08:17:52Z",
+      "description": "前回の記事「画像アップロードAPIのセキュリティ対策を、実装レベルで振り返る」に、iOSで写真をAI処理するアプリを開発中の方から、「圧縮はゲート手前でかける必要がある」というコメントをいただきました。気になって確かめてみると、前回書いたゲートは、iPhoneで撮った写真をそのままでは通さない作りになっていました。この記事では、その確認結果と、端末側で縮める処理、サーバー側に残す処理の分け方を書き...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "エンジニア視点で語る！Pythonで学ぶマクロ経済学入門 59",
+      "url": "https://zenn.dev/maszkot/articles/b0953f49f26eab",
+      "site": "Zenn(Python)",
+      "published": "2026-09-19T07:35:53Z",
+      "description": "https://qiita.com/maskot1977/items/e12e5c07548b173c68b1\nDJミオ：こんばんは、「エンジニア視点で語る！Pythonで学ぶマクロ経済学入門」。ナビゲーターのDJミオです。\nDJレン：DJレンです。今日はシリーズ第59回相当の内容を、がっつり整理していきます。テーマは――\n「現代貨幣理論は本当に危険なのか？ ― 日本経済で検証する5つの誤解」。\n...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "喋れないAI「Jev」で国家試験を解く：Choice APIと確率分布の扱い方",
+      "url": "https://zenn.dev/chimirohi/articles/fae6ab22983084",
+      "site": "Zenn(Python)",
+      "published": "2026-09-19T05:53:08Z",
+      "description": "なんか面白いAIが出た。TypeSafeの「Jev」という、自由な文章ではなく、主に判断結果を返してくるAIだ。\n賢いけれど、おしゃべりはしてくれない。\nだが、我々人間はおしゃべりしないと本当にソイツが賢いかどうかなんて分からないんだよおおおォ！\nというわけで、喋らなくても受けられる試験をやらせてみよう。第四級アマチュア無線技士、いわゆる4アマである。法規12問・無線工学12問、すべて4択。マーク...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "venv・Docker・VM、結局どれを使えばいい？環境構築の使い分けを整理する",
+      "url": "https://zenn.dev/rickysb527/articles/venv-docker-vm-comparison",
+      "site": "Zenn(Python)",
+      "published": "2026-09-19T04:15:06Z",
+      "description": "はじめに\n大学でComputer Scienceを学び始める前、独学でプログラミングを勉強していたときに「仮想環境」という言葉を初めて知りました。\nその後Dockerについて知ったものの、venvのようなVirtual Environment、Docker Container、Virtual Machine（VM）の違いをきちんと説明できず、「結局どれも環境を分けるためのものでは？」という曖昧な理...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "売掛金の発生・回収ペアを機械的に突合する方法",
+      "url": "https://zenn.dev/ponfreelance/articles/journalpilot-type-a-20260918-064603",
+      "site": "Zenn(Python)",
+      "published": "2026-09-19T01:30:24Z",
+      "description": "月末になると、売掛金の消し込み作業に2〜3時間溶かしていないだろうか。\n請求書を出した記録と、入金明細を目視で突き合わせる作業は、件数が増えるほど地獄になる。俺は個人事業主として複数の取引先とやり取りしていて、月に30件前後の請求が発生する状態で、この突合作業を手作業でやっていた時期がある。\nこの記事は、C言語エンジニアで副業や個人事業をやっていて、経理作業を自分でこなしている人向けに書いている。...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "Notion APIで定型業務を自動化する — ページ作成・検索・更新の3操作をPythonで実装",
+      "url": "https://zenn.dev/yukihayama/articles/notion-api-automation",
+      "site": "Zenn(Python)",
+      "published": "2026-09-19T01:17:48Z",
+      "description": "Notion APIで定型業務を自動化する — ページ作成・検索・更新の3操作をPythonで実装\n毎週月曜の朝、Notionのデータベースに先週分のタスクを手で20件追加している。転記ミスも起きるし、正直ただの作業だ。\nこの記事では、その手作業を消す。Notion APIの操作は40以上あるが、実務の自動化で使うのは「検索・作成・更新」の3つだけだ。この3操作をコピペで動く完全なコードで実装し、...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
     {
       "title": "腕のめり込み補正が前後に跳ねる ── 動的計画法で逃がす方向を決める",
       "url": "https://zenn.dev/orca_forge/articles/arm-clearance-flipping-front-to-back",
