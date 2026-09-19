@@ -1,14 +1,54 @@
 {
   "site": "Zenn(機械学習)",
-  "last_updated": "2026-09-19T01:17:42.429475",
-  "total_articles": 1849,
+  "last_updated": "2026-09-19T06:02:13.662259",
+  "total_articles": 1853,
   "articles": [
+    {
+      "title": "XGBoostの数学",
+      "url": "https://zenn.dev/hiroki_honma/books/c6771fc1e22a21",
+      "site": "Zenn(機械学習)",
+      "published": "2026-09-19T00:41:05Z",
+      "description": "XGBoostは、なぜ高い精度が出るのでしょうか。\n\n「勾配ブースティングに二階微分を取り入れたから」\n「ニュートン法のように曲率まで見るから収束が速い」\n\nそんな説明を見かけます。\n\nしかし、数式を追っていくと、話はそれほど単純ではありません。\n\n損失関数が二乗誤差なら、XGBoostの「二次近似」は近似ですらありません。正則化を外せば、XGBoostが計算する葉の値はただの残差平均になり、木の...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "R×ベイズ×強化学習の定番書4選",
+      "url": "https://zenn.dev/soraml/articles/20260919_book_ref",
+      "site": "Zenn(機械学習)",
+      "published": "2026-09-19T00:26:27Z",
+      "description": "はじめに\n自分が機械学習の仕事で一番冷や汗をかいたのは、社内レビューで「その特徴量を入れると精度が上がるのは分かった。で、なぜ汎化するの？」と聞かれた時だった。手元のノートブックは動いていたし、交差検証のスコアも出ていた。それでも一言も返せなかった。\n原因ははっきりしていた。ライブラリのドキュメントとブログ記事を継ぎ足して知識を作っていたからだ。scikit-learn の引数の意味は言えるのに、...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "QLoRAを実装前に分解する：NF4・二重量子化・VRAM診断",
+      "url": "https://zenn.dev/kas_blog/articles/20260509-llm-16-qlora",
+      "site": "Zenn(機械学習)",
+      "published": "2026-09-18T22:35:54Z",
+      "description": "QLoRA（Quantized Low-Rank Adaptation）は、4-bitで保持した凍結base modelをforwardに使い、LoRA adapterだけを学習する構成です。\n「4-bitでloadできた」ことは、QLoRAが正しく動いた証拠にはなりません。実装では、少なくとも次の四条件を確認する必要があります。\n\n狙ったLinear moduleが実際に4-bit表現へ置き換わ...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
     {
       "title": "Amari–Chentsovテンソルと歪度",
       "url": "https://zenn.dev/misgnros/articles/3fac451a2b988c",
       "site": "Zenn(機械学習)",
       "published": "2026-09-18T15:06:27Z",
       "description": "情報幾何学を勉強していると、Amari–Chentsovテンソルというものが出てくる（たとえば、文献[1]の式47, 103あたり）。\nこれはcubic tensorとかskewness tensorとかいう呼ばれ方もしており、要は歪度と関係しているらしい記述が出てくるのだが、一方でいわゆる普通の統計の教科書に出てくる歪度と一致しているのかどうか、少なくとも個人的にはすぐにわからなかった。\n以下で...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "ショウジョウバエの嗅覚回路を求人の名寄せに使ったら、今のデータでは要らなかった",
+      "url": "https://zenn.dev/fumi3333/articles/flyhash-job-matching",
+      "site": "Zenn(機械学習)",
+      "published": "2026-09-18T14:55:35Z",
+      "description": "リゾートバイトの求人を派遣会社6社から集めて横断比較するサイトを作っています。掲載は12,864件です。\nこのサイトには、会社をまたいで「同じような求人」を突き合わせ、時給差を抽出する処理が入っています。そこに FlyHash——ショウジョウバエの嗅覚回路を模した局所性鋭敏型ハッシュ——を使いました。実装は229行、抽出できたのは85,377ペアです。\nそして本番に載せたあと、今のデータでは Fl...",
       "category": "AI・技術",
       "rss_category": "",
       "image_url": ""

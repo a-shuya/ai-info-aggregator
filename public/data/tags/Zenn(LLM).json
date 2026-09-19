@@ -1,14 +1,14 @@
 {
   "site": "Zenn(LLM)",
-  "last_updated": "2026-09-19T01:17:42.429475",
-  "total_articles": 6159,
+  "last_updated": "2026-09-19T06:02:13.662259",
+  "total_articles": 6163,
   "articles": [
     {
-      "title": "QLoRAを実装前に分解する：NF4・二重量子化・VRAM診断",
-      "url": "https://zenn.dev/kas_blog/articles/20260509-llm-16-qlora",
+      "title": "\"【実践】話題のJevとGemini 3.8 Flashで作る「二重思考（Dual-Process）AI」パターン\"",
+      "url": "https://zenn.dev/yoshidayataro/articles/b43e29a8424171",
       "site": "Zenn(LLM)",
-      "published": "2026-09-18T22:35:54Z",
-      "description": "QLoRA（Quantized Low-Rank Adaptation）は、4-bitで保持した凍結base modelをforwardに使い、LoRA adapterだけを学習する構成です。\n「4-bitでloadできた」ことは、QLoRAが正しく動いた証拠にはなりません。実装では、少なくとも次の四条件を確認する必要があります。\n\n狙ったLinear moduleが実際に4-bit表現へ置き換わ...",
+      "published": "2026-09-18T22:35:14Z",
+      "description": "はじめに：「すべてを巨大LLMに投げる」のをやめたい\nAIエージェントやチャットボットを作っていると、ある疑問にぶつかります。\n\n「サーバーの稼働状態を教えて」\n「GitHubのリポジトリ一覧を出して」\n\nこうした単なる定型コマンドやツール呼び出しの仕分けにまで、毎回パラメータ数が数百億・数千億もあるフロンティアLLM（ClaudeやGemini、GPT-4等）を起動していませんか？\nこれではレイ...",
       "category": "AI・技術",
       "rss_category": "",
       "image_url": ""
@@ -29,6 +29,36 @@
       "site": "Zenn(LLM)",
       "published": "2026-09-18T22:18:04Z",
       "description": "永続メモリの MCP サーバーを Claude Code に繋いでも、保存の依頼はサーバーまで届かないことがあります。実際に測って出てきたのは次の3点でした。\n\n\nClaude Code の auto memory が、MCP への保存依頼を 4/4 で横取りした。エージェントは「記録しました」と報告するが、MCP サーバー側には何も届いていない\nauto memory を切っても、12回中 2回...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "契約書リスクの指摘、観点を絞った指示は効果が薄かった",
+      "url": "https://zenn.dev/every_ai_recipe/articles/contract-clause-check-3-points",
+      "site": "Zenn(LLM)",
+      "published": "2026-09-18T21:13:35Z",
+      "description": "TL;DR\n\n契約書の不利な条項をLLMに拾わせるとき、「観点を絞らずそのまま聞く」条件と「解約・違約金・責任の3観点を明示する」条件を、独立したサブエージェント2体に比較させた\n検証用に作成した架空の契約書(自動更新・一方的な値上げのみなし同意・片務的な違約金・広い免責・限定的なサポート対応の5条項)に対して、両条件とも主要な不利な条項をほぼ同じ水準で検出した\n観点指定の効果は、新しい条項の発見...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "AIが書いた記事を、AI自身の品質チェックが永遠に止め続けていた話",
+      "url": "https://zenn.dev/jworks_hq/articles/87cb447bf96e9a",
+      "site": "Zenn(LLM)",
+      "published": "2026-09-18T18:43:04Z",
+      "description": "この記事について\n個人開発で、LLMに定型フォーマットの記事(その日の作業記録のようなもの)を毎日自動生成させ、公開前に別のロジックで品質チェックをかける、という仕組みを運用しています。ある時期、AIが書いた記事を、同じ仕組みの中にある品質チェックが何度リトライしても合格させてくれないという状態にハマりました。\n原因を1つずつ潰していく過程で、「AI生成コンテンツの品質保証層をどう設計すべきか」に...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "ローカルJevの可能性検証",
+      "url": "https://zenn.dev/hakotech/articles/5c2fe2eb8a6051",
+      "site": "Zenn(LLM)",
+      "published": "2026-09-18T16:51:31Z",
+      "description": "ローカルJevの可能性検証\n\n はじめに\nJevが話題になっていますね。文章を長々と生成する代わりに、必要な判断と確率を直接返すという発想は面白いと思っています。ソフトウェアに組み込むことを考えると、こういうモデルが欲しかった、という人は多いのではないでしょうか？\nhttps://typesafe.ai/blog/introducing-system-one-models-and-jev\nただ、私...",
       "category": "AI・技術",
       "rss_category": "",
       "image_url": ""
@@ -59,6 +89,26 @@
       "site": "Zenn(LLM)",
       "published": "2026-09-18T15:39:33Z",
       "description": "はじめに\n2026年9月15日、TypeSafe AIが「Jev」という少し変わったAIモデルの早期アクセス提供を開始しました。Jevがやることは、ほぼ「判断」だけです。GPTやClaudeのように文章を書いたり、ツールを使ったり、長い手順を自律的に実行したりはしません。自然言語や各種状態を入力すると、型付きの判定結果と確率を返します。TypeSafeはこれを「System One Model」と...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "コードが消費できる型付き決定を返すホスト型モデル Jev の構造と使い方",
+      "url": "https://zenn.dev/suwash/articles/jev-ai_20260918",
+      "site": "Zenn(LLM)",
+      "published": "2026-09-18T15:00:00Z",
+      "description": "Jev は、ソフトウェアがそのまま消費できる型付きの決定を返すホスト型モデルです。TypeSafe AI が 2026-09-15 に早期アクセスとして公開しました。この記事では、公式ドキュメントと SDK の実装をもとに、Jev の構造・データモデル・導入手順・運用の勘所までを整理します。\n\nこの記事の全体像。以下、順に解説します。\n\n Jev とは\nJev は、非構造の状態を入力に取り、型付き...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "2026-08-30 今日の技術トレンド",
+      "url": "https://zenn.dev/bambampurin/articles/2026-08-30-tech-daily",
+      "site": "Zenn(LLM)",
+      "published": "2026-09-18T14:05:02Z",
+      "description": "2026年のAI・Web開発環境で今すぐ対応すべき4つの構造変化\n\n この記事で分かること\n\nCursorアクセス停止に伴うAI開発ツールの依存リスク対策と安全設計\nNext.jsのクリティカル脆弱性対策とAI Agent用サンドボックスの選定軸\nOpenAIによるAstral買収がもたらすuv中心のPython基盤統合\n\n\n\n 1. Cursorアクセス停止から学ぶAI開発ツールの依存リスク対策...",
       "category": "AI・技術",
       "rss_category": "",
       "image_url": ""
@@ -229,16 +279,6 @@
       "site": "Zenn(LLM)",
       "published": "2026-09-18T01:31:24Z",
       "description": "Webサービスや社内ツールの裏側にLLMを組み込もうとして、レイテンシの遅さやコストの大きさに頭を抱えていたのですが。。。\nしかし、それは今まさにJevの登場によってガラッと大きく変わろうとしてます！\nこの記事で伝えたいこと：\n\nなぜプロダクトの裏側にLLMを組み込むと、これほど遅く、壊れやすく、高価になるのか？\n私たちは「テキスト生成」と「意思決定」を混同していた。\nシステムが欲しいのは文章より...",
-      "category": "AI・技術",
-      "rss_category": "",
-      "image_url": ""
-    },
-    {
-      "title": "Jev 所感 ダラダラと書く",
-      "url": "https://zenn.dev/meijin/articles/jev-impressions",
-      "site": "Zenn(LLM)",
-      "published": "2026-09-17T23:13:45Z",
-      "description": "https://docs.typesafe.ai/introduction\n\n\nJev そのものが覇権を取るかは知らんが、構造化出力に特化したAIは今後も残りそう\n\n\nちょうど猫も杓子もAIエージェントという時代になりつつあるところで発表されて、タイミングがうまい\n\n\n一般には、CodexやClaudeにさせている日常業務の一部を高速化することに役立てられそう\n\n\nBrowser Useなど特定の...",
       "category": "AI・技術",
       "rss_category": "",
       "image_url": ""
