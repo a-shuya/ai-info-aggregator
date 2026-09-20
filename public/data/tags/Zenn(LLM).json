@@ -1,14 +1,44 @@
 {
   "site": "Zenn(LLM)",
-  "last_updated": "2026-09-20T18:54:48.155584",
-  "total_articles": 6199,
+  "last_updated": "2026-09-20T21:18:07.650918",
+  "total_articles": 6201,
   "articles": [
+    {
+      "title": "LLMにタスクの紐付けまで一度にやらせたら、88%が誤爆した",
+      "url": "https://zenn.dev/tomtom55555/articles/5c726b4b0738d2",
+      "site": "Zenn(LLM)",
+      "published": "2026-09-20T13:04:19Z",
+      "description": "LLM に「会議の完了報告を拾って、手元のタスクの状態を更新する」をやらせていました。動かして出てきた候補を 1 件ずつ人の目で確かめたら、88% が関係のないタスクに貼られていました。\n原因はプロンプトの書き方ではなく、1 つのプロンプトに 2 つの仕事をさせていたことでした。\n\n 旧設計: 検知と紐付けを 1 回でやらせる\nやらせていたのはこれです。\n\n未完了タスクの一覧をプロンプトに入れる\n...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "GitHub NextがJev互換OSS「LocalJev」を電撃公開！Waitlist待ちをスキップして手元で動かす完全ガイド",
+      "url": "https://zenn.dev/kanta13jp1/articles/localjev-github-next-system-one-guide",
+      "site": "Zenn(LLM)",
+      "published": "2026-09-20T12:43:37Z",
+      "description": "はじめに：GitHub Nextが放った電撃の一手\n「文章を書かないAI」「LLMのためのGPU」としてエンジニア界隈のタイムラインを席巻している TypeSafe AI 社の判定特化型モデル「Jev」。\nスーパーマリオを51msでリアルタイム操作するデモなど、その圧倒的な速度と設計思想に注目が集まる一方で、開発者にとって最大のハードルとなっていたのが「現在はアーリーアクセスのWaitlist（先...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
     {
       "title": "Jevって何ができる？マリオを51msで動かす「文章を書かないAI」の活用事例と本番実装パターン",
       "url": "https://zenn.dev/kanta13jp1/articles/jev-realtime-use-cases-deep-dive",
       "site": "Zenn(LLM)",
       "published": "2026-09-20T11:56:54Z",
       "description": "はじめに：タイムラインを騒がせる「Jevって何ができる？」\nTypeSafe AI社が発表した判定特化型AIモデル「Jev」。\n前回の記事『既存のLLMがCPUなら、Jevは「GPU」——話題の判定特化AIが拓く、新しいエージェント設計の夜明け』では、なぜJevが「文章を書かない」のか、なぜLLMの「GPU」と呼ばれるのかという基礎的な設計思想を解説しました。\nその後、国内・海外のエンジニアコミュ...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "Agent が一日中行う 3 つの判断：JEV の 18 ユースケースと、使わない方がよい場面",
+      "url": "https://zenn.dev/beatapi/articles/7453fea3fe92bd",
+      "site": "Zenn(LLM)",
+      "published": "2026-09-20T11:06:29Z",
+      "description": "本番で動く Agent は、一日中同じ 3 種類の呼び出しを行っている。一覧から 1 つ選ぶ、値を尺度で採点する、はい・いいえで答える。多くのチームは、この 3 つをすべて長文を書くモデルに任せている。\nJEV はこの 3 つのために作られている。有効な答えを事前に宣言すると、確率付きの型付き応答が返る。以下は試す価値のある 18 か所だ。ほとんどについて、Awesome JEV カタログの中で近...",
       "category": "AI・技術",
       "rss_category": "",
       "image_url": ""
@@ -29,16 +59,6 @@
       "site": "Zenn(LLM)",
       "published": "2026-09-20T08:16:22Z",
       "description": "この記事でやったこと\nOpenAI Responses API で web_search + code_interpreter + 自作のRAGツールを持たせたリサーチエージェントを作り、実務的なコンサル調査クエリを1本投げて、返ってきたストリーミングイベント6,556件を全部記録して解析しました。\n「ReActエージェントは幅優先で調べるのか深さ優先なのか」「web_searchは並列で叩けるの...",
-      "category": "AI・技術",
-      "rss_category": "",
-      "image_url": ""
-    },
-    {
-      "title": "既存のLLMがCPUなら、Jevは「GPU」——話題の判定特化AIが拓く、新しいエージェント設計の夜明け",
-      "url": "https://zenn.dev/kanta13jp1/articles/jev-is-gpu-for-llms-note",
-      "site": "Zenn(LLM)",
-      "published": "2026-09-20T07:42:40Z",
-      "description": "はじめに：AIの「新しいパラダイム」が来た\n2026年9月中旬、エンジニア界隈のタイムラインを駆け巡った mizchi 氏の記事『既存の LLM が CPU なら、 Jev はその GPU みたいなやつ』を読み、強い衝撃を受けました。\nChatGPTやClaudeに代表される「巨大LLM」をどう賢く動かすかという議論が続く中、TypeSafe AI社が投入した「Jev」は、全く異なるアプローチを取...",
       "category": "AI・技術",
       "rss_category": "",
       "image_url": ""
