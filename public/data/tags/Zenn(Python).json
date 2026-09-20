@@ -1,14 +1,134 @@
 {
   "site": "Zenn(Python)",
-  "last_updated": "2026-09-19T23:34:15.431501",
-  "total_articles": 6519,
+  "last_updated": "2026-09-20T01:37:44.909708",
+  "total_articles": 6531,
   "articles": [
+    {
+      "title": "3/3 と 1/3 に割れた2モデルは、同じ性能だった",
+      "url": "https://zenn.dev/tarowhitey/articles/small-sample-llm-eval-n3-to-n9",
+      "site": "Zenn(Python)",
+      "published": "2026-09-19T23:19:46Z",
+      "description": "ローカル LLM の候補を 2 つ、同じ課題で 3 回ずつ走らせました。\n結果は 3/3 と 1/3 でした。片方は全勝、もう片方は 1 勝 2 敗。選ぶまでもない差に見えます。\n課題も判定器も変えず、試行だけ 9 回に増やしました。\n\n\n\n候補\nn=3\nn=9\n\n\n\n\ngpt-oss:20b\n3/3\n6/9\n\n\nqwen3-coder:30b\n1/3\n6/9\n\n\n\n同率でした。\n\n なぜ 3 回...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "リファクタで挙動が変わった60件、そして「たまたま」検知されなかった数件——消費税率変更に備えたゴールデンマスターテストの実務ノート",
+      "url": "https://zenn.dev/yuninaka/articles/characterization-testing-blind-spot",
+      "site": "Zenn(Python)",
+      "published": "2026-09-19T17:07:05Z",
+      "description": "1. はじめに\n消費税率変更のような、頻繁に改正が入る制度対応のテスト工程を任されるとしたら、どう備えるか。この手の案件で必ず出てくるのが、「税額計算のロジックは、当時の担当者しか経緯を知らないレガシーコードに埋まっている」という状況だ。仕様書はなく、テストもない。触れば動くので誰も触っていない。だが税率が変わる以上、いつかは触らざるを得ない。\nこういうコードに手を入れる前提として、まず「保護テス...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "遠隔操縦の探検車 ANEx3の開発  ⑤ センサー",
+      "url": "https://zenn.dev/inufox/articles/49c3a2f3bae5c4",
+      "site": "Zenn(Python)",
+      "published": "2026-09-19T16:47:53Z",
+      "description": "全体目次\n\nフロントページ\n使った部品について\n全体の概要\n車体、動力系\nセンサー（このページ）\nカメラ\nPCとの通信\n制御プログラム\nフィールドテスト\n\n\n 5. センサー\n\n\n\n\nANEx = ANa Explorer防空壕(穴)を探検するためのロボットカー現在3代目（だんだん小さくなってる）\n\n\n\nこのページでは探検車ANEx3に使ってる各種センサーを説明します。\nセンサーはコントローラーE...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "遠隔操縦の探検車 ANEx3の開発④ 車体、動力系",
+      "url": "https://zenn.dev/inufox/articles/15c8de06bc84bf",
+      "site": "Zenn(Python)",
+      "published": "2026-09-19T16:46:45Z",
+      "description": "全体目次\n\nフロントページ\n使った部品について\n全体の概要\n車体、動力系（このページ）\nセンサー\nカメラ\nPCとの通信\n制御プログラム\nフィールドテスト\n\n\n 4. 車体、動力系\n\n\n\n\nANEx = ANa Explorer防空壕(穴)を探検するためのロボットカー現在3代目（だんだん小さくなってる）\n\n\n\n駆動系は要はフレームにモーターを固定してタイヤをつければ出来上がりなんですが、一番のポイン...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "遠隔操縦の探検車 ANEx3の開発③ 全体の概要",
+      "url": "https://zenn.dev/inufox/articles/9728c9f2bba4c5",
+      "site": "Zenn(Python)",
+      "published": "2026-09-19T16:45:31Z",
+      "description": "全体目次\n\nフロントページ\n使った部品について\n全体の概要（このページ）\n車体、動力系\nセンサー\nカメラ\nPCとの通信\n制御プログラム\nフィールドテスト\n\n\n 3. 全体の概要\n\n\n\n\nANEx = ANa Explorer防空壕(穴)を探検するためのロボットカー現在3代目（だんだん小さくなってる）\n\n\n\n\n 全体の結線と構成図\nここでは配置図と制御系の全体を説明します。\n\n\n\n 全体の概要\n\n ...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "遠隔操縦の探検車 ANEx3の開発② 使った部品について",
+      "url": "https://zenn.dev/inufox/articles/efaf36a4c99303",
+      "site": "Zenn(Python)",
+      "published": "2026-09-19T16:43:22Z",
+      "description": "全体目次\n\nフロントページ\n使った部品について（このページ）\n全体の概要\n車体、動力系\nセンサー\nカメラ\nPCとの通信\n制御プログラム\nフィールドテスト\n\n\n 2. 使った部品について\n使った部品をリストにしました。\n各部品の入手先へのリンクも張ってます。\n\n\n\n\nANEx = ANa Explorer防空壕(穴)を探検するためのロボットカー現在3代目（だんだん小さくなってる）\n\n\n\n\n 部品入手...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "遠隔操縦の探検車 ANEx3の開発① フロントページ",
+      "url": "https://zenn.dev/inufox/articles/0bdabb4f8864ab",
+      "site": "Zenn(Python)",
+      "published": "2026-09-19T16:40:46Z",
+      "description": "全体目次\n\nフロントページ（このページ）\n使った部品について\n全体の概要\n車体、動力系\nセンサー\nカメラ\nPCとの通信\n制御プログラム\nフィールドテスト\n\n\n フロントページ\n遠隔操作のロボットカーANEx3（ANa Explorer3）について書いてゆきます。\n「いや、待てよ、お前ANEx2の方がまだだろ！？」と突っ込んだあなた。いつもありがとうございます。\n実はANEx2は多機能なんですがゴー...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "syslogのタイムスタンプを \\d{2} で受けたら、3件中2件のログが消えた",
+      "url": "https://zenn.dev/ac5net/articles/35c833d339426e",
+      "site": "Zenn(Python)",
+      "published": "2026-09-19T16:27:54Z",
+      "description": "syslogのメッセージをPythonでパースする簡単なスクリプトを書きました。正規表現を1本書いて終わり、のつもりでした。\n実サンプル3件で試したところ、2件がマッチしませんでした。 例外は出ません。マッチしなかった行が静かに捨てられるだけです。\n原因はRFC 3164の、1行だけの規定でした。\n\n 最初に書いたもの\nRFC 3164のヘッダは &lt;PRI&gt;Mmm dd hh:mm:s...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "日本の主要20ドメインのMTA-STSを調べたら、導入はゼロだった",
+      "url": "https://zenn.dev/ac5net/articles/4ed169eadb6a34",
+      "site": "Zenn(Python)",
+      "published": "2026-09-19T16:26:27Z",
+      "description": "SPF・DKIM・DMARCが「送信者のなりすまし」を防ぐ仕組みなのに対して、MTA-STSは「配送経路の盗聴と改ざん」を防ぐ仕組みです。RFC 8461 で定義されています。\n名前は知っていたものの、実際にどれくらい使われているのか感覚が無かったので、主要30ドメインを調べました。導入していたのは2件だけでした。\n\n 調べ方\nDNS over HTTPS（dns.google）で _mta-st...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "含み損は何分待てば戻る？押し目と損失拡大の違いを調べた",
+      "url": "https://zenn.dev/hiro_algo/articles/fx-unrealized-loss-recovery-time",
+      "site": "Zenn(Python)",
+      "published": "2026-09-19T15:40:01Z",
+      "description": "買った後、いったん下がってから上昇する。そんな押し目まで損切りすると、本来得られた利益を失います。一方で、「そのうち戻る」と待っている間に、損失が大きくなることもあります。\nそれなら、利益になった取引が回復するまでの時間を調べて、その時間だけ待つ方法は使えないでしょうか。\nAUDUSDの保存済み実験を調べると、利益で終わった取引の回復時間は、2023〜2024年も2025〜2026年も中央値30分...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "Qwen3.5-9B を config.json から読み解く：パラメータ数と KV キャッシュを計算して checkpoint と突き",
+      "url": "https://zenn.dev/takeo_tei/articles/6d225946cd4853",
+      "site": "Zenn(Python)",
+      "published": "2026-09-19T15:00:03Z",
+      "description": "はじめに\nQwen3.5-9B は、線形注意（Gated DeltaNet）とフル注意を組み合わせたハイブリッド構成のモデルです。この記事では、公式リポジトリの config.json だけからパラメータ数と KV キャッシュのサイズを計算し、実際の checkpoint のサイズと突き合わせます。\n結果を先に書くと、計算したパラメータ数を BF16 のバイト数に換算した値は、model.safe...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
     {
       "title": "Cloudflare Workers では相手の証明書が読めないので、SSL 証明書チェッカーを VPS の openssl で作った",
       "url": "https://zenn.dev/omikuji/articles/ssl-checker-workers-openssl-vps",
       "site": "Zenn(Python)",
       "published": "2026-09-19T12:40:05Z",
       "description": "ホスト名を入れると、証明書の有効期限・SAN・発行者・チェーン・TLS 1.0〜1.3 の受け付け状況・検証結果（期限切れ / ホスト名不一致 / 自己署名 / チェーン不備）を出すツールを作りました。\n👉 SSL 証明書チェッカー（無料・登録不要）\nサイトは Cloudflare Workers で動いているのですが、Workers からは相手の証明書を読めません。この記事は、その制約をどう回避...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "問い合わせ対応を自動化するAIパイプラインを作った話 - 実装の裏側と、実際にいくら得するのかの計算",
+      "url": "https://zenn.dev/genka_build/articles/8643ae10dbf8bf",
+      "site": "Zenn(Python)",
+      "published": "2026-09-19T12:24:06Z",
+      "description": "「問い合わせ対応に毎日何時間も取られている」\n中小企業のオーナーや業務担当者からよく聞く悩みです。同じような質問が繰り返し来るのに、その都度メールを読んで、内容を理解して、返信を一から書く。この作業自体は難しくありませんが、積み重なると膨大な時間になります。\nこの記事では、その課題に対して実際に作った自動化パイプラインの中身と、それが「本当にどれくらい得なのか」を数字で説明します。技術的な実装の話...",
       "category": "開発",
       "rss_category": "",
       "image_url": ""
