@@ -1,8 +1,58 @@
 {
   "site": "Zenn(機械学習)",
-  "last_updated": "2026-09-20T01:37:44.909708",
-  "total_articles": 1859,
+  "last_updated": "2026-09-20T07:01:49.328245",
+  "total_articles": 1863,
   "articles": [
+    {
+      "title": "MLXで始める論理ゲート式NN：学習した回路をビット演算だけで動かす",
+      "url": "https://zenn.dev/knd73/articles/8250afa54871a9",
+      "site": "Zenn(機械学習)",
+      "published": "2026-09-20T06:03:05Z",
+      "description": "はじめに\nこんにちは。\nどうやら最近は論理ゲート式ニューラルネットワークが流行っているようなので、勉強してみました。\n今回使用させていただいた「difflogic」というリポジトリの実装ではCUDA環境が必要でした（一応なければCPU実行も可能）が、Macしか持っていなかったのでついでにMLXで再実装しながら学ぶことにしました。\n\n この記事の対象となる人\n\n論理ゲート式ニューラルネットワークをは...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "KV Cacheのtensor形状・計算量・メモリ見積もりを整理する",
+      "url": "https://zenn.dev/kas_blog/articles/20260509-llm-17-kv-cache",
+      "site": "Zenn(機械学習)",
+      "published": "2026-09-20T04:56:43Z",
+      "description": "KV Cache（Key-Value Cache）は、自己回帰decodeで過去tokenのKeyとValueを再計算しないための状態です。実装では「cacheを有効にする」と覚えるより、各層のtensorがどの軸を持ち、1 tokenごとにどの軸が伸びるかを押さえる方が役に立ちます。\nこの記事では、KV Cacheをtensor形状、decode loop、メモリ予算の順に整理します。概念を図か...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "TypeSafe AIの「Jev」とは？ System Oneモデルという新カテゴリのAIを調べてみた",
+      "url": "https://zenn.dev/iwaken71/articles/typesafe-jev-welcome-page",
+      "site": "Zenn(機械学習)",
+      "published": "2026-09-20T03:07:09Z",
+      "description": "TypeSafe AI社の Welcome ページに、新モデル「Jev」の紹介が掲載されていました。\n生成AIチャットとは違う方向性の、コード内で使う「判断用モデル」という立ち位置が面白かったのでメモしておきます。\n参考:\n\n\nhttps://typesafe.ai/ （Welcome ページ）\n\nWelcomeページのスクリーンショットはこちら。\n\n\n Jevとは何か\nTypeSafe AI初の...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "Jev＝較正済み確信度を返す閉世界分類器 — System One Modelの設計論点",
+      "url": "https://zenn.dev/xim2jp_tokyo/articles/8445fb9942f4ac",
+      "site": "Zenn(機械学習)",
+      "published": "2026-09-19T20:18:02Z",
+      "description": "TypeSafe AIのJevを「構造化出力付きLLMの再発明では」と切るのは早い、というのが本記事の趣旨です。Jevの本質は生成モデルではなく、較正済み確信度を返す閉世界の分類器であり、この性質がアーキテクチャ上の置き場所を変えます。\n\n 設計論点1: logprobsと較正済み確信度は別物\nLLMのlogprobsは温度・プロンプト・トークナイズの影響で歪み、そのままでは意思決定の閾値に使えま...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "Jev入門：Choice / Boolean / Scoreとprobability・confidence",
+      "url": "https://zenn.dev/yuzu_krs/articles/71c18d2589d01e",
+      "site": "Zenn(機械学習)",
+      "published": "2026-09-19T15:55:16Z",
+      "description": "2026年9月15日、TypeSafe AIは最初の System One Model として Jev を公開しました。\nJevは、ChatGPTのように自由な文章を返すことを主目的にしたモデルではありません。\nざっくり言うと、\nstate（判断材料）\n+\nquestion（聞きたいこと）\n↓\n型付きの判断 + 確率\nを返す、ソフトウェアの中で意味的な判断を行うためのモデルです。\nこの記事では、A...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
     {
       "title": "保存したモデルを翌週で検証する。基準線に勝っても黒字とは限らない",
       "url": "https://zenn.dev/data_boatrace/articles/a136ee9f96f730",
@@ -49,16 +99,6 @@
       "site": "Zenn(機械学習)",
       "published": "2026-09-19T06:01:11Z",
       "description": "文章を生成せず、型付きの判断と確率だけを1回の forward で返すモデル。TypeSafe AI の Jev がこの形を「System One モデル」と呼んで出してきました。これを見て、オープン LLM の lm_head を外して分類ヘッドに載せ替えれば同じものが自作できるのでは、と考えました。Qwen3-0.6B で実際に作り、精度・キャリブレーション・レイテンシを測りました。\n先に結果...",
-      "category": "AI・技術",
-      "rss_category": "",
-      "image_url": ""
-    },
-    {
-      "title": "Jevを、自然言語で分類基準を渡せる識別モデルとして使う",
-      "url": "https://zenn.dev/cybernetics/articles/4f3762bd470fc4",
-      "site": "Zenn(機械学習)",
-      "published": "2026-09-19T04:29:37Z",
-      "description": "はじめに\nJevの使い方は、確率的分類器から考えると分かりやすい。\n通常の分類器では、入力を x、クラスを y として、予測する分布を\n\n\\hat p_\\theta(y\\mid x)\n\nと書く。\\theta は学習済みパラメータ、ハットは推定された確率であることを表す。テキスト分類なら、x は文章、y はその文章に付けるラベルである。\nJevのChoiceでは、判定対象に加えて、質問 q と候補の...",
       "category": "AI・技術",
       "rss_category": "",
       "image_url": ""

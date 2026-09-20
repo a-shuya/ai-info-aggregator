@@ -1,14 +1,44 @@
 {
   "site": "Zenn(LLM)",
-  "last_updated": "2026-09-20T01:37:44.909708",
-  "total_articles": 6185,
+  "last_updated": "2026-09-20T07:01:49.328245",
+  "total_articles": 6187,
   "articles": [
+    {
+      "title": "訂正が重なった資料の値抽出、プロンプト反復より内訳の明示が効いた",
+      "url": "https://zenn.dev/every_ai_recipe/articles/correction-tracking-breakdown-check",
+      "site": "Zenn(LLM)",
+      "published": "2026-09-19T21:17:07Z",
+      "description": "TL;DR\n\n「訂正が複数回重なった業務メモ」から最終的な正しい値を抽出させる際、(1) プロンプトをそのまま2回貼る\"Prompt Repetition\"、(2) 回答前に情報を古い順へ整理させるステップバイステップ指示、の2つの工夫を単体・組み合わせの6条件で検証した\n結果：6条件すべてで最終値・計算結果は正しく、工夫の有無による差は確認できなかった（易しい4項目タスク・難しい逆転トラップ＋計...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "実際，ローカルLLMの性能ってどうなの？",
+      "url": "https://zenn.dev/tubesoling/articles/2f58a43ad276cb",
+      "site": "Zenn(LLM)",
+      "published": "2026-09-19T17:08:40Z",
+      "description": "はじめに\n初めまして．ソリングです．\n皆さんはローカルLLMを使用されたことはあるでしょうか．ここ数年でLLMの性能は急速に向上しており，現在では9B程度の比較的小規模なモデルでも，以前であれば非常に大規模な計算資源を必要としていたようなタスクを，ある程度こなせるようになってきました．\nクラウド上のLLMは非常に高性能ですが，ローカルLLMには，手元のPCだけで動かせる，外部へデータを送信せずに利...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
     {
       "title": "なぜ、「ハルシネーション」という言葉はすでに死語なのか？",
       "url": "https://zenn.dev/pdfractal/articles/726013ac1d9b15",
       "site": "Zenn(LLM)",
       "published": "2026-09-19T16:25:00Z",
       "description": "はじめに\n生成AIについて語るとき、「ハルシネーション」という言葉は長らく最重要語の一つでした。AIはもっともらしい嘘をつくため、その回答を鵜呑みにしてはいけないという説明です。2023年から2024年頃までは、この説明にそれほど違和感はありませんでした。ところが2026年現在、上位モデルの間違いを何でもハルシネーションと呼ぶことには強い違和感があります。その理由は、AIが間違えなくなったことでは...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "TypeSafe AI「Jev」の実効性能検証レポート（約2.8万リクエストによる精度・速度・コスト評価）",
+      "url": "https://zenn.dev/biscuit/articles/typesafe-ai-jev-benchmark-2026-09",
+      "site": "Zenn(LLM)",
+      "published": "2026-09-19T15:10:17Z",
+      "description": "TypeSafe AIの「Jev」は、文章を生成せず、判定結果だけを返すモデルである。判定対象のデータ（JSON）と、「この発話はアラーム設定の依頼か？」のような質問を1リクエストにまとめて送ると、Yes/Noの確率や、選んだ選択肢とその確信度（confidence）といった数値・ラベルが返ってくる。質問の文面ではJSONのどのフィールド（キー）を判定するかを名前で指定し、1リクエストに数百問をま...",
       "category": "AI・技術",
       "rss_category": "",
       "image_url": ""
@@ -29,16 +59,6 @@
       "site": "Zenn(LLM)",
       "published": "2026-09-19T14:45:59Z",
       "description": "はじめに\n個人でアプリやWebサービスを作って運用しようとすると、サーバー、ドメイン、APIなどのコストが恒常的にかかります。VPSを借りて1台に複数のサービスを載せても、メモリが圧迫されがちです。SWAPで補強しても、1台に多数の本番環境を載せるのには限界があります。\nかといってVPSを増やすと、アプリが増えるたびにまた手一杯になります。何か良い方法はないかと考えていたところ、あるイベントサイト...",
-      "category": "AI・技術",
-      "rss_category": "",
-      "image_url": ""
-    },
-    {
-      "title": "ローカルLLMの企業運用に正解を出してみる",
-      "url": "https://zenn.dev/nocodesolutions/articles/4ca795a1e3e61c",
-      "site": "Zenn(LLM)",
-      "published": "2026-09-19T14:28:04Z",
-      "description": "はじめに：Ollamaが動いた。その先の企業運用をどう判断するか\n機密データを外部のAIに渡せない。それなら社内で動くローカルLLMを使おう。ここまでは話が早く、Ollamaも手元のPCですぐに動きました。困ったのはその先です。どのモデルなら、何人で、どの業務まで任せられるのか。企業運用へ進むための数字がありません。\nそこで本記事では、費用、待ち時間、日本語での正確さを調べました。先行研究の数値と...",
       "category": "AI・技術",
       "rss_category": "",
       "image_url": ""
