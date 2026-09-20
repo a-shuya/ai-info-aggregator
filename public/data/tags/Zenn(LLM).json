@@ -1,14 +1,14 @@
 {
   "site": "Zenn(LLM)",
-  "last_updated": "2026-09-20T16:18:10.648985",
-  "total_articles": 6203,
+  "last_updated": "2026-09-20T18:54:48.155584",
+  "total_articles": 6199,
   "articles": [
     {
-      "title": "LLMOpsを3ヶ月試してみて、変わったこと・変わらなかったこと",
-      "url": "https://zenn.dev/vaonvn/articles/c7cb50a0aa0584",
+      "title": "Jevって何ができる？マリオを51msで動かす「文章を書かないAI」の活用事例と本番実装パターン",
+      "url": "https://zenn.dev/kanta13jp1/articles/jev-realtime-use-cases-deep-dive",
       "site": "Zenn(LLM)",
-      "published": "2026-09-20T09:44:14Z",
-      "description": "開発プロセスの中でLLMを使うやり方を、個人の工夫ではなくチームの運用として回し始めて、3ヶ月ほど経ちました。区切りがいいので、LLMOpsの振り返りとして、変わったことと変わらなかったことを分けて書いておきます。うまくいった話だけを残すと、次に何を直すべきか自分たちでも見えなくなりそうなので、変わらなかった側もそのまま書きます。\nなお、LLMOpsという言葉は、LLMを組み込んだプロダクトの監視...",
+      "published": "2026-09-20T11:56:54Z",
+      "description": "はじめに：タイムラインを騒がせる「Jevって何ができる？」\nTypeSafe AI社が発表した判定特化型AIモデル「Jev」。\n前回の記事『既存のLLMがCPUなら、Jevは「GPU」——話題の判定特化AIが拓く、新しいエージェント設計の夜明け』では、なぜJevが「文章を書かない」のか、なぜLLMの「GPU」と呼ばれるのかという基礎的な設計思想を解説しました。\nその後、国内・海外のエンジニアコミュ...",
       "category": "AI・技術",
       "rss_category": "",
       "image_url": ""
@@ -24,16 +24,6 @@
       "image_url": ""
     },
     {
-      "title": "Claude Code のガードレール — hook は822回止めたのに、危険な操作は書き方を変えるだけで通っていた",
-      "url": "https://zenn.dev/kuu_dqx/books/blocked-is-not-safe",
-      "site": "Zenn(LLM)",
-      "published": "2026-09-20T09:15:07Z",
-      "description": "LLM のエージェントに作業をさせるとき、危ないコマンドを止めるための hook を入れます。私の環境では160セッションで822回ブロックしていました。ところが、本番のデータベースへ DDL を適用したコマンドは、その hook を一度も通っていませんでした。一方で、使い捨てのコンテナに対する DROP は3回止まっています。ブロックの回数は、守られた量を測っていませんでした。この本は、自分が入...",
-      "category": "AI・技術",
-      "rss_category": "",
-      "image_url": ""
-    },
-    {
       "title": "OpenAI Responses APIのエージェントは実際どう動くのか",
       "url": "https://zenn.dev/braindumper/articles/60ae985830416a",
       "site": "Zenn(LLM)",
@@ -44,41 +34,11 @@
       "image_url": ""
     },
     {
-      "title": "AIレビューでは、読み手が閉じる場所が出てこない——4つの数字と貼れるスクリプト",
-      "url": "https://zenn.dev/tomatomerde/articles/where-readers-close",
-      "site": "Zenn(LLM)",
-      "published": "2026-09-20T07:57:11Z",
-      "description": "Zennやnoteの記事、README、設計書など、他人に見せる文章をAIに書かせています。\nそして、AIの言う事は基本的に信じず細かく直す。それが私の現在です。\n書かせたものを同じAIにレビューさせると、「構成は明快で、読みやすいです」と返ってきます。\nこれを信用する理由がありません。読む側のAIは最後まで読むからです。人間は読みません。\nそこが違います。\nだからレビューでは、「読者」が閉じる場...",
-      "category": "AI・技術",
-      "rss_category": "",
-      "image_url": ""
-    },
-    {
       "title": "既存のLLMがCPUなら、Jevは「GPU」——話題の判定特化AIが拓く、新しいエージェント設計の夜明け",
       "url": "https://zenn.dev/kanta13jp1/articles/jev-is-gpu-for-llms-note",
       "site": "Zenn(LLM)",
       "published": "2026-09-20T07:42:40Z",
       "description": "はじめに：AIの「新しいパラダイム」が来た\n2026年9月中旬、エンジニア界隈のタイムラインを駆け巡った mizchi 氏の記事『既存の LLM が CPU なら、 Jev はその GPU みたいなやつ』を読み、強い衝撃を受けました。\nChatGPTやClaudeに代表される「巨大LLM」をどう賢く動かすかという議論が続く中、TypeSafe AI社が投入した「Jev」は、全く異なるアプローチを取...",
-      "category": "AI・技術",
-      "rss_category": "",
-      "image_url": ""
-    },
-    {
-      "title": "日本語検索1位を達成したLLMベースの日本語埋め込みモデル",
-      "url": "https://zenn.dev/sionicai_jp/articles/a97e20332f8881",
-      "site": "Zenn(LLM)",
-      "published": "2026-09-20T07:30:06Z",
-      "description": "自社埋め込みモデルが、日本語検索１位を達成しました\n弊社 Sionic AI が自社で開発した日本語埋め込みモデルが、検索ベンチマークで一位を達成しました。（2026年8月7日現在）\n\nSionic AI は EUREKA(Extremely Universal Robust Embedding for Knowledge Access) プロジェクトを進めています。その名の通り、どんな言語・ドメ...",
-      "category": "AI・技術",
-      "rss_category": "",
-      "image_url": ""
-    },
-    {
-      "title": "数字は合っていたのに、文は嘘だった — Claude Code に書かせた文章のチェックが見ていなかったもの",
-      "url": "https://zenn.dev/kuu_dqx/articles/numbers-right-sentence-wrong",
-      "site": "Zenn(LLM)",
-      "published": "2026-09-20T07:17:20Z",
-      "description": "前に、LLM に毎日ブログ記事を書かせて無人で公開している話を書きました。\nhttps://zenn.dev/kuu_dqx/articles/headless-claude-code-43days\nその記事の結論は「LLM そのものは思ったより素直で、怖いのは周りの運用だった」でした。LLM の出力はチェックで止めていて、その中心は「本文に書かれた数値が、入力データに実在するか」の照合です。これ...",
       "category": "AI・技術",
       "rss_category": "",
       "image_url": ""
