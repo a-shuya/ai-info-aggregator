@@ -1,8 +1,88 @@
 {
   "site": "Zenn(Python)",
-  "last_updated": "2026-09-20T07:01:49.328245",
-  "total_articles": 6538,
+  "last_updated": "2026-09-20T12:18:23.996297",
+  "total_articles": 6548,
   "articles": [
+    {
+      "title": "【通信・並行処理編】楽天APIの429をねじ伏せる「ThreadPoolExecutor × 適応的レートリミッター × 指数バックオフ」",
+      "url": "https://zenn.dev/okaito/articles/ca85a06b795e55",
+      "site": "Zenn(Python)",
+      "published": "2026-09-20T11:55:05Z",
+      "description": "はじめに\n前回の第1回【設計・移行編】では、GASの実行時間制限から脱却し、Pythonローカルバッチへと移行した全体アーキテクチャを紹介しました。\nローカル環境に移ったことで実行時間の制約（6分の壁）からは解放されましたが、次に直面したのが**「外部APIのレートリミット（429 Too Many Requests）」**という高い壁です。\n1日ずつ直列で31日分を巡回すると安全ですが、APIレ...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "終了コード0で中断していた。「成功した」の判定を、成果物の件数に変える",
+      "url": "https://zenn.dev/shinsei99/articles/exit-code-zero-partial",
+      "site": "Zenn(Python)",
+      "published": "2026-09-20T11:07:28Z",
+      "description": "不動産の公式書式（Word・Excel）を200本ほど扱うツールを作っています。\n書式ごとに「どのセルが何の入力欄か」を登録した一覧を持っていて、これを走査で作り直します。\n一覧を作り直したあと、画面で書式を選ぼうとしたらあるはずの書式が出てきません。\n数えると、200本あるはずが126本しか登録されていませんでした。\nコマンドは正常に終わっています。終了コードは 0 でした。\n\n 原因は3行\n対...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "機械学習システムの設計と運用 ― ボートレース予想サイトの開発で学ぶデータ収集・モデル・評価・配信",
+      "url": "https://zenn.dev/mahiguch/books/boatrace-ml-system",
+      "site": "Zenn(Python)",
+      "published": "2026-09-20T10:25:40Z",
+      "description": "機械学習を含むシステムを設計し、評価し、運用し続ける方法を、ボートレース予想サイト boatrace-fun.net の開発を題材に解説する実践書です。\n公式サイトから収集した 1 レース 1 行の CSV を出発点に、偏差値化・ベイズ収縮・非負制約付き最小二乗による\n「強さポイント」を作り、回収率と log-loss で評価し、Cloud Run Jobs と Pub/Sub で 2 分毎に更新...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "特性要因図はテキストで持つと壊れなくなった",
+      "url": "https://zenn.dev/handa_lab/articles/06-fishbone-from-text",
+      "site": "Zenn(Python)",
+      "published": "2026-09-20T10:21:48Z",
+      "description": "特性要因図の作図ツールを作っていて、最初につまずいたのがレイアウトだった。1次要因を1つ足すと周りの枝とぶつかり、そのたびに図の形が崩れる。要因は検証が進むほど増えていくのに、増やすたびに図を描き直す羽目になる。QC七つ道具の作図ツールを作るなかで、特性要因図だけは「図を直接いじる」のをやめて、テキストの定義ファイルを正にした。図はそこから毎回生成する。\n定義はこれだけ書ければいい形にした。\n特性...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "Codexの上限を調べるための診断メモ：利用枠・トークン履歴・コンテキストを分ける",
+      "url": "https://zenn.dev/ofoxai/articles/a2fad3bb94abe3",
+      "site": "Zenn(Python)",
+      "published": "2026-09-20T08:35:50Z",
+      "description": "Codexが止まったとき、残量の数字だけを集めても原因を絞れないことがあります。まず「アカウントの利用枠」「消費したトークンの履歴」「現在の会話のコンテキスト」を別々に記録します。この記事では、ChatGPTアカウントでCodexを使う方向けに、その記録方法を整理します。\nOfox運営チームによる技術メモです。公式ブログの診断部分をもとに構成し直し、2026年9月20日にOpenAI公式資料を確認...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "FastAPI で DB セッションを close し忘れると接続数が枯渇する",
+      "url": "https://zenn.dev/shintaro05/articles/41384ea6c77280",
+      "site": "Zenn(Python)",
+      "published": "2026-09-20T08:15:11Z",
+      "description": "事象\ndef get_db():\n    db = SessionLocal()\n    return db\nユーザー ID を指定してプロフィールを取得する API が 500 を返す。普段は問題ないが、高負荷時にレスポンスが急激に遅くなり、時々 DB の接続数が上限に達する。\n共同開発コースの MT で、この障害を「面接官に質問しながら原因を絞り込む」コーディングインタビュー形式で練習しました...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "Django のマイグレーションでキャッシュを消してはいけない理由",
+      "url": "https://zenn.dev/shintaro05/articles/10f8ef0224f0f8",
+      "site": "Zenn(Python)",
+      "published": "2026-09-20T08:15:03Z",
+      "description": "事象\n# 0015_split_search_keywords.py\ndef forwards(apps, schema_editor):\n    Game = apps.get_model(\"games\", \"Game\")\n    for game in Game.objects.all():\n        # 説明文の先頭にある (エイリアス) を search_keywords に分離\n ...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "MLXで始める論理ゲート式NN：学習した回路をビット演算だけで動かす",
+      "url": "https://zenn.dev/knd73/articles/8250afa54871a9",
+      "site": "Zenn(Python)",
+      "published": "2026-09-20T06:03:05Z",
+      "description": "はじめに\nこんにちは。\nどうやら最近は論理ゲート式ニューラルネットワークが流行っているようなので、勉強してみました。\n今回使用させていただいた「difflogic」というリポジトリの実装ではCUDA環境が必要でした（一応なければCPU実行も可能）が、Macしか持っていなかったのでついでにMLXで再実装しながら学ぶことにしました。\n\n この記事の対象となる人\n\n論理ゲート式ニューラルネットワークをは...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
     {
       "title": "日本の人気サイト1,000件をPageSpeedで計測したら、TBSが「モバイル100点」だった",
       "url": "https://zenn.dev/vera/articles/pagespeed-benchmark-data-quality",
@@ -28,7 +108,7 @@
       "url": "https://zenn.dev/fygar256/articles/14c011c2a747f4",
       "site": "Zenn(Python)",
       "published": "2026-09-20T03:40:12Z",
-      "description": "AHONOKO TANKをネットワークを使って対戦できるようにしました。\nLEFT(Cyan)は、wxadが上下左右で、zが発射で、RIGHT(Yellow)は8246（テンキー）が上下左右で、0が発射です。qを押したらquitです。ゲームは3ポイント先取したほうが勝ちです。\nLANの２台のコンピュータでもネットワーク対戦ができます。通信ポートにTCP(8001)を使います。\n8001というポート...",
+      "description": "AHONOKO TANKをネットワークを使って対戦できるようにしました。\nLEFT(Cyan)は、wxadが上下左右で、zが発射で、RIGHT(Yellow)は8246（テンキー）が上下左右で、0が発射です。qを押したらquitです。ゲームは3ポイント先取したほうが勝ちです。\nLANの２台のコンピュータでネットワーク対戦ができます。通信ポートにTCP(8001)を使います。\n8001というポートナ...",
       "category": "開発",
       "rss_category": "",
       "image_url": ""
@@ -59,6 +139,26 @@
       "site": "Zenn(Python)",
       "published": "2026-09-20T02:14:34Z",
       "description": "前回は、Raspberry Pi 4(以下、Pi 4)をMCP(Model Context Protocol)サーバにして、MCPの公式ドキュメントの「天気サーバ」をFastMCP仕様に変更し、Streamable HTTPで待ち受けさせました。クライアント側はClaude Desktopから接続して、ツール一覧の取得からget_alertsの呼び出しまでを確認しました。\nhttps://zenn...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "Claude Code で作った実運用エージェント3選 ─ Zenn自動公開パイプラインから PRレビューまで",
+      "url": "https://zenn.dev/correlate_dev/articles/claude-code-3-zenn",
+      "site": "Zenn(Python)",
+      "published": "2026-09-20T01:59:34Z",
+      "description": "はじめに\n「Claude Code でエージェントを作る」という言葉を聞いて、実際に何が動くのかイメージできるでしょうか。\nチュートリアルの hello world 的な例は増えてきましたが、「実際に運用して価値が出ている」実装の話はまだ少ない印象です。本記事では、筆者が実際に動かしている3つのエージェントを、コードとともに紹介します。\nなお、 この記事自体が Zenn 自動公開パイプラインのアウ...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "Next.js",
+      "url": "https://zenn.dev/bambampurin/articles/2026-08-31-tech-daily",
+      "site": "Zenn(Python)",
+      "published": "2026-09-20T00:57:03Z",
+      "description": "【2026年8月最新】OpenAIのAstral買収とNext.js緊急RCE脆弱性が示す3つの技術潮流\n\n この記事で分かること\n\nNext.jsにおける未認証RCE脆弱性の詳細と開発現場で直ちに必要な修正対応\nVercelのWebGPUライブラリ「vgpu」公開とマルチAIエージェント領域へのシフト\nOpenAIによるAstral買収がPythonエコシステムとAIコーディング環境に与える影響...",
       "category": "開発",
       "rss_category": "",
       "image_url": ""
