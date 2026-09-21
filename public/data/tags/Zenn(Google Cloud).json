@@ -1,8 +1,58 @@
 {
   "site": "Zenn(Google Cloud)",
-  "last_updated": "2026-09-21T13:20:45.240187",
-  "total_articles": 1814,
+  "last_updated": "2026-09-21T18:50:19.055103",
+  "total_articles": 1819,
   "articles": [
+    {
+      "title": "Private Service Connectの接続承認・DNS・HTTP疎通を分けて確認する",
+      "url": "https://zenn.dev/hogehogetaro/articles/private-service-connect-endpoint-dns",
+      "site": "Zenn(Google Cloud)",
+      "published": "2026-09-21T16:13:25Z",
+      "description": "Private Service Connect (PSC)の接続が ACCEPTED でも、HTTPは通らないことがありました。\n別々のVPCをPSCでつなぎ、接続承認、DNSレコード、ファイアウォールを1つずつ変えて確認しました。\nDNSのAレコードを削除すると、IPでのHTTPは3回とも成功し、名前でのHTTPは3回とも名前解決に失敗しました。\nPSC用NAT範囲からのHTTP許可を無効にする...",
+      "category": "クラウド",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "Autowareを公式の手順でゼロからビルドした。6時間35分のあいだに壊れたのは、全部自分の道具だった",
+      "url": "https://zenn.dev/hocky3/articles/d17230400accc9",
+      "site": "Zenn(Google Cloud)",
+      "published": "2026-09-21T12:46:24Z",
+      "description": "Autoware（自動運転のオープンソーススタック）を、公式の手順のとおりにソースからビルドしました。GCE上の使い捨てのUbuntu 24.04 VMで、CPU向けのuniverse-develターゲットを最初から作るのに6時間35分26秒（23,726.25秒）かかり、488パッケージ（universe-devel全体）・78パッケージ（core-devel）・55パッケージ（core dep...",
+      "category": "クラウド",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "OAuth 同意画面のユーザーサポートメールを、個人の Gmail から製品ドメインに変える（Google Auth Platform）",
+      "url": "https://zenn.dev/hirajo/articles/oauth-user-support-email",
+      "site": "Zenn(Google Cloud)",
+      "published": "2026-09-21T10:14:29Z",
+      "description": "Google Cloud で OAuth 同意画面を作ると、最初に「ユーザーサポートメール」を選ばされます。\n個人の Google アカウントでプロジェクトを作っていると、ここに出てくる選択肢はほぼ自分の Gmail だけです。\nそのまま選んで進めると、ログイン画面でアプリ名を押した人全員に、その Gmail が表示されます。\n製品の問い合わせ先（info@製品ドメイン）に差し替える手順を、202...",
+      "category": "クラウド",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "複数検証環境へのデプロイ運用を GitHub Actions で整理したんじゃ",
+      "url": "https://zenn.dev/genai/articles/github-actions-multi-env-deploy",
+      "site": "Zenn(Google Cloud)",
+      "published": "2026-09-21T07:30:05Z",
+      "description": "初めに\nいや〜もう9月も半ばですね〜\n今年の夏は去年ほど暑くなくてよかったなと思っているオメガマスターです〜\n今回担当しているプロジェクトでは、検証環境が develop1〜６ / staging1〜６ / production と複数並立しています。そんなにいる？って意見はまともです実際は月日が経つにつれて現在はdevelop5、６ / staging5、６ / productionの5つのみ動...",
+      "category": "クラウド",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "Oracle から BigQuery に移行するシミュレーションをしてみた #2 机上シミュレーションの進め方",
+      "url": "https://zenn.dev/mika_and_coco/articles/oracle-to-bigquery-02-how-to-proceed",
+      "site": "Zenn(Google Cloud)",
+      "published": "2026-09-21T05:42:41Z",
+      "description": "今回の議題\n第 1 回で、架空の地方銀行「A 銀行」の情報系を更改元として丸ごと提示しました。BigQuery の説明に入る前に、Oracle エンジニアなら先にこう聞きたくなるはずです。\n\n「シミュレーションと言うが、結局この連載は何を決めたいのか？」\n「実環境を持ち出せないのに、机上で何が分かるのか？」\n「Claude に出させた構成を Claude と検討して、その結論は信用できるのか？」\n...",
+      "category": "クラウド",
+      "rss_category": "",
+      "image_url": ""
+    },
     {
       "title": "TypeSafe AIの「Jev」をCloud Runで試したら、30件のログ分類は一致しても判断の迷いが残った",
       "url": "https://zenn.dev/hogehogetaro/articles/typesafe-jev-log-classification",
