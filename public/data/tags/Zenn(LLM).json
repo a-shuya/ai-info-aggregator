@@ -1,7 +1,7 @@
 {
   "site": "Zenn(LLM)",
-  "last_updated": "2026-09-21T18:50:19.055103",
-  "total_articles": 6225,
+  "last_updated": "2026-09-21T22:21:44.880593",
+  "total_articles": 6230,
   "articles": [
     {
       "title": "Connect-Foce～会話と画面から、次の業務につなげるエージェント～ 🏷️",
@@ -54,16 +54,6 @@
       "image_url": ""
     },
     {
-      "title": "Jevをローカルでどこまで再現できるか検証しました",
-      "url": "https://zenn.dev/null_teck/articles/local-jev-reproduce",
-      "site": "Zenn(LLM)",
-      "published": "2026-09-21T13:58:24Z",
-      "description": "!\nTL;DR（3行要約）\n\n\n身近なツールでJevのインターフェースは再現できる: 専用ライブラリを使わずとも、ローカルの llama-server に Qwen3.5-4B.gguf（約2.8GB）を読み込ませ、思考モードをオフにして Logprobs を取得するだけで、「高度な比喩表現や微妙なニュアンスの境界判定（嘘をつくことと正体を隠すことの違いなど）」をゼロショットで極めて正確に見抜く判...",
-      "category": "AI・技術",
-      "rss_category": "",
-      "image_url": ""
-    },
-    {
       "title": "バイブコーディングがGUIを壊す真の理由と、Jevで防ぐAI駆動型対策プロンプト",
       "url": "https://zenn.dev/aidocs/articles/4b2feb7fcb20f9",
       "site": "Zenn(LLM)",
@@ -99,6 +89,66 @@
       "site": "Zenn(LLM)",
       "published": "2026-09-21T08:04:32Z",
       "description": "つむぎンの3時間クッキング ／ 第2回\nQwen3.8-Flash-Next（512 experts / top-10 / 48 層・MXFP4+FP8 で 118 GB）を\nIntel Arc Pro B70（32GB）×2 で動かした時の、外れ続けた記録です。\n第1回 → https://zenn.dev/tsumugi_xe/articles/flashnext-on-arc-b70\n\nメモ...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "Jev は外部世界とソフトウェアをどう接続するのか",
+      "url": "https://zenn.dev/jugyo/articles/5ba60511fe4681",
+      "site": "Zenn(LLM)",
+      "published": "2026-09-21T07:13:32Z",
+      "description": "Jev は、与えられた状態から選択・評価・判定を行う。\n新しい選択肢そのものを自由に生成するわけではないため、生成モデルに慣れていると制約のように見えるかもしれない。\nただ、ソフトウェアの中で取りうる選択肢が本当に無限であることは稀だ。API や状態遷移、ワークフローなど、システムが扱う概念や行動の多くはあらかじめ有限に定義されている。\nもう少し広く捉えると、ソフトウェアとは「外部世界で起きる出来...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "OpenClaw 2のBrowser Toolが重すぎたので、5分超→2分台まで詰めてみた",
+      "url": "https://zenn.dev/610birth/articles/269ab963c16677",
+      "site": "Zenn(LLM)",
+      "published": "2026-09-21T07:11:50Z",
+      "description": "はじめに\n前回、OpenClaw 2 + Qwen3.8 27B系のローカルLLM環境で、通常応答を約2分から26秒程度まで改善しました。\n今回はその続きです。\nOpenClaw 2にはBrowser Toolがあり、ブラウザを実際に開いて、\n\nページを開く\nsnapshotを取得する\n要素のrefを特定する\n入力する\nクリックする\nスクリーンショットを撮る\n\nといった操作ができます。\nこれをロー...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "kohaku:チャットもGUIも同じ画面になるGenerative UIライブラリ",
+      "url": "https://zenn.dev/yosuque/articles/ad36218ac653cf",
+      "site": "Zenn(LLM)",
+      "published": "2026-09-21T06:47:30Z",
+      "description": "はじめに\nLLMに画面を作らせる「Generative UI」が現実的になってきた一方で、アプリケーションに組み込もうとすると、出力が安定しない、数値の転記をLLMに任せてよいのか分からない、自由生成したものをどう管理するのか、といった課題にぶつかります。\nこれらの課題をきっかけに、UIをコードではなくデータとして扱い、生成と描画を分離するGUIライブラリ「kohaku」を作り、このたびOSSとし...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "DeepSeek-V4.1-Flash：890 bytes/tokenの容量設計",
+      "url": "https://zenn.dev/kiritani_r/articles/cbb5805437e0bb",
+      "site": "Zenn(LLM)",
+      "published": "2026-09-21T06:39:03Z",
+      "description": "890 bytes/token。\nDeepSeek-V4.1-Flashの技術報告で、最も運用に近い数字はこれだ。1M tokensという最大コンテキスト長より地味だが、同時に何本のAgentを保持できるかは、こちらから計算できる。\n長文脈モデルを見るとき、最大長だけを比較するのは足りない。必要なのは、実際に生きているトークン数と同時session数を掛け、HBMと永続cacheへ戻すことだ。\n\n...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "Jev・ルールベース・GPTで問い合わせ分類を比較する",
+      "url": "https://zenn.dev/tkada/articles/372d48f8dc52f8",
+      "site": "Zenn(LLM)",
+      "published": "2026-09-21T05:44:52Z",
+      "description": "概要\n\nLLMへの問い合わせを型付きの小さな質問に分解するJevというモデルが公開されました。プロンプトを一枚のテキストとして書くのではなく、選択肢から選ばせるChoiceや、真偽の判断を数値で受け取るNoulといった部品を組み合わせて使います。\n従来の一枚岩のプロンプトは、出力の一部だけがおかしいときに原因の切り分けが難しいという問題がありました。今回はこのJevと、ルールベース、GPT-5.6...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "文章を書かないAI「Jev」徹底解剖：70msで判断だけを返す仕組みと実践活用法",
+      "url": "https://zenn.dev/lumichy/articles/typesafe-jev-guide-2026",
+      "site": "Zenn(LLM)",
+      "published": "2026-09-21T04:44:28Z",
+      "description": "「LLMに頼みたいのは文章の執筆ではなく、このエラーログがどのチームの管轄かという判断だけなのに、なぜ毎回長文のJSON出力を待たなければならないのか」\n生成AIを本番システムの監視アラート、トリアージ基盤、あるいは自律エージェントの意思決定ループに組み込んだ経験があるエンジニアなら、誰もが一度はこの壁に直面したことがあるはずです。OpenAIのStructured OutputsやJSONモード...",
       "category": "AI・技術",
       "rss_category": "",
       "image_url": ""
