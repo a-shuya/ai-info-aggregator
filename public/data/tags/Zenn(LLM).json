@@ -1,8 +1,38 @@
 {
   "site": "Zenn(LLM)",
-  "last_updated": "2026-09-21T06:31:42.130656",
-  "total_articles": 6208,
+  "last_updated": "2026-09-21T13:20:45.240187",
+  "total_articles": 6215,
   "articles": [
+    {
+      "title": "Jev は説明しない。では誰が説明するのか — 判断特化 AI と「判定機」の構造比較",
+      "url": "https://zenn.dev/exapolicy/articles/06c15d967e4245",
+      "site": "Zenn(LLM)",
+      "published": "2026-09-21T01:23:59Z",
+      "description": "2026 年 9 月 15 日、TypeSafe AI が「Jev」の早期アクセスを始めた。ChatGPT の共同開発者が立ち上げた会社のモデルで、公式サイトの説明はこうだ。\n\nSend Jev structured questions and get typed decisions with probabilities and confidence that your software can ...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "文章を書かないモデルJevのスキル選択は、0.3秒でOpusにどこまで近づくか",
+      "url": "https://zenn.dev/shimo4228/articles/jev-vs-opus-skill-selection",
+      "site": "Zenn(LLM)",
+      "published": "2026-09-21T01:02:00Z",
+      "description": "自律エージェントが行動の前にやる「いまの状況に当てはまるスキルを一覧から選ぶ」処理を、同じ150件の状況で、JevとClaude Opusにやらせて比べました。Jevは、TypeSafeが2026年9月15日に早期アクセスを始めたモデルです。文章を書かず、選択肢に対する答えと確率だけを返します（TypeSafeの発表）。\n物差しはOpus自身です。Opusに同じ150件をもう1回選ばせると、1回目...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "Azure OpenAIに支出のハードリミットは無い — pause APIなら推論は423で止まる",
+      "url": "https://zenn.dev/kazu_aiengineer/articles/azure-openai-spend-limit-tpm",
+      "site": "Zenn(LLM)",
+      "published": "2026-09-20T19:10:00Z",
+      "description": "エージェントに好きなだけ推論させていると月末の請求が怖くなる。OpenAI の API には\n「上限に達したら止まる」設定があるので、Azure にもあると思って探した。無かった。\n\nWhile OpenAI has an option for hard limits that prevent you from going over your budget,\nAzure OpenAI doesn'...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
     {
       "title": "社内RAGで最初に壊れるのは検索精度ではなく権限管理",
       "url": "https://zenn.dev/preferred/articles/enterprise-rag-agentic-rag-2026",
@@ -44,11 +74,41 @@
       "image_url": ""
     },
     {
+      "title": "Jev完全入門ガイド",
+      "url": "https://zenn.dev/titosemi/articles/cb9152ce202280",
+      "site": "Zenn(LLM)",
+      "published": "2026-09-20T15:00:30Z",
+      "description": "〜圧倒的な速さと低コストで、AIの判断をソフトウェアに組み込む〜\n\n\n はじめに\nJevとは何か？ 一言でいえば、Jevは「文章を書かないAI」です。\nJevは、AIスタートアップ企業のTypesafe AIが開発した、System One モデルと呼ばれる新しいカテゴリーのAIモデルです。ChatGPTのような一般的な生成AIが「人間が読むための文章」を作ることを目的としているのに対し、Jevは...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "Jevのキラーアプリ「意味で探す grep」の衝撃：なぜベクトル検索ではダメで、System OneならAND/NOTが効くのか？",
+      "url": "https://zenn.dev/kanta13jp1/articles/jev-semgrep-meaning-based-search",
+      "site": "Zenn(LLM)",
+      "published": "2026-09-20T14:28:20Z",
+      "description": "はじめに：正規表現の限界と、LLMの「遅さ」の狭間で\nエンジニアが日常的に行うログ調査やコードリーディングにおいて、grep は半世紀にわたり開発者の右腕であり続けてきました。\nしかし、現代の複雑なシステムログや多言語化されたテキストにおいて、従来の grep は度々壁にぶつかります。\n\n\n「失敗しました」 と 「エラーです」 を同時に拾うために、正規表現パターンを延々と継ぎ足すストレス\n\n「co...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
       "title": "a64fx SVE1.0 での LLM 量子化 dequant 効率化メモ",
       "url": "https://zenn.dev/syoyo/articles/705612cc048032",
       "site": "Zenn(LLM)",
       "published": "2026-09-20T13:30:25Z",
       "description": "とりま\na64fx で量子化 weight の LLM decode tok/s 極めたかった.\nHBM2 bandwidth peak(~230 GB/s/CMG)をターゲット\nint4/fp4(w4a16), int8/fp8(w8a16) で sdot or fp16 fma で 200 ~ 230 gb/s なんとか達成!\nw\n\n Fused dequantization and GEMV...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "LLMにタスクの紐付けまで一度にやらせたら、88%が誤爆した",
+      "url": "https://zenn.dev/tomtom55555/articles/5c726b4b0738d2",
+      "site": "Zenn(LLM)",
+      "published": "2026-09-20T13:04:19Z",
+      "description": "LLM に「会議の完了報告を拾って、手元のタスクの状態を更新する」をやらせていました。動かして出てきた候補を 1 件ずつ人の目で確かめたら、88% が関係のないタスクに貼られていました。\n原因はプロンプトの書き方ではなく、1 つのプロンプトに 2 つの仕事をさせていたことでした。\n\n 旧設計: 検知と紐付けを 1 回でやらせる\nやらせていたのはこれです。\n\n未完了タスクの一覧をプロンプトに入れる\n...",
       "category": "AI・技術",
       "rss_category": "",
       "image_url": ""
@@ -79,6 +139,16 @@
       "site": "Zenn(LLM)",
       "published": "2026-09-20T11:06:29Z",
       "description": "本番で動く Agent は、一日中同じ 3 種類の呼び出しを行っている。一覧から 1 つ選ぶ、値を尺度で採点する、はい・いいえで答える。多くのチームは、この 3 つをすべて長文を書くモデルに任せている。\nJEV はこの 3 つのために作られている。有効な答えを事前に宣言すると、確率付きの型付き応答が返る。以下は試す価値のある 18 か所だ。ほとんどについて、Awesome JEV カタログの中で近...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "LLMOpsを3ヶ月試してみて、変わったこと・変わらなかったこと",
+      "url": "https://zenn.dev/vaonvn/articles/c7cb50a0aa0584",
+      "site": "Zenn(LLM)",
+      "published": "2026-09-20T09:44:14Z",
+      "description": "開発プロセスの中でLLMを使うやり方を、個人の工夫ではなくチームの運用として回し始めて、3ヶ月ほど経ちました。区切りがいいので、LLMOpsの振り返りとして、変わったことと変わらなかったことを分けて書いておきます。うまくいった話だけを残すと、次に何を直すべきか自分たちでも見えなくなりそうなので、変わらなかった側もそのまま書きます。\nなお、LLMOpsという言葉は、LLMを組み込んだプロダクトの監視...",
       "category": "AI・技術",
       "rss_category": "",
       "image_url": ""
