@@ -1,8 +1,58 @@
 {
   "site": "Zenn(LLM)",
-  "last_updated": "2026-09-20T23:19:21.677164",
-  "total_articles": 6203,
+  "last_updated": "2026-09-21T01:16:20.588480",
+  "total_articles": 6208,
   "articles": [
+    {
+      "title": "社内RAGで最初に壊れるのは検索精度ではなく権限管理",
+      "url": "https://zenn.dev/preferred/articles/enterprise-rag-agentic-rag-2026",
+      "site": "Zenn(LLM)",
+      "published": "2026-09-20T17:11:49Z",
+      "description": "社内文書をLLMに読ませるRAGは、PoCまでなら数日で動く。ベクトルDBを立てて、PDFをチャンクに割って、埋め込みを入れて、Top-Kを引いてプロンプトに詰める。それだけで「おお、社内規程に答えてくれる」というデモになる。\n本番に出すとき最初に壊れるのは、たいてい検索精度ではない。権限だ。\n人事部のフォルダにあった評価シートが、一般社員の質問に対する回答の根拠として出てくる。ファイルサーバー上...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "なぜ、JevはAIをAGI/ASIへ少しも導かないのに、AI史上最大の発明かもしれないのか？",
+      "url": "https://zenn.dev/pdfractal/articles/e8d65cceb33d3b",
+      "site": "Zenn(LLM)",
+      "published": "2026-09-20T16:27:31Z",
+      "description": "はじめに\n2026年9月、TypeSafe AIがJevという新しいAIモデルを発表しました。Jevは同社がSystem One Modelと呼ぶモデルの最初の実装であり、文章を生成することを主目的とせず、与えられた状態について「どれを選ぶか」「どの程度か」「どれくらい確からしいか」といった型付きの判断を返します。本稿で扱いたいのは、Jevという一製品の背後にある考え方です。本稿ではTypeSaf...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "カメラで食物アレルゲンを推定するアプリを作って Jev を評価した話",
+      "url": "https://zenn.dev/daisuke7/articles/4d7a9ba6aa49ba",
+      "site": "Zenn(LLM)",
+      "published": "2026-09-20T16:13:49Z",
+      "description": "TypeSafe の System One モデル「Jev」を評価したくて、カメラで写した料理から日本の法定アレルゲン（義務 9 品目・推奨 20 品目）を推定するスマホアプリを試作しました。1 日で試作を 14 回まわし、最後は iPhone と Pixel で 3 秒周期の連続判定が動くところまで行きました。\n先に結論を書くと、Jev は「見えたものから材料を推定する」判定層として問題なく機能...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "個人開発のLLMアプリ、原価を計算したら月額600円で原価6,000円だった",
+      "url": "https://zenn.dev/matthewstry/articles/a6deffcda2e120",
+      "site": "Zenn(LLM)",
+      "published": "2026-09-20T15:42:14Z",
+      "description": "英単語アプリを個人開発しています。有料プランを作ろうとして料金を決めたのですが、\n実装がほぼ終わってから原価を計算したら、月額600円のプランの原価が月6,000円でした。\n1人契約するたびに5,400円溶ける計算です。\nこの記事は、LLMを使ったアプリで課金を始める前に確かめておくべきことを、\n実際にやらかした順に書いたものです。同じ構成で作っている人の役に立てば。\n\n 作ったもの\nCortex...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "a64fx SVE1.0 での LLM 量子化 dequant 効率化メモ",
+      "url": "https://zenn.dev/syoyo/articles/705612cc048032",
+      "site": "Zenn(LLM)",
+      "published": "2026-09-20T13:30:25Z",
+      "description": "とりま\na64fx で量子化 weight の LLM decode tok/s 極めたかった.\nHBM2 bandwidth peak(~230 GB/s/CMG)をターゲット\nint4/fp4(w4a16), int8/fp8(w8a16) で sdot or fp16 fma で 200 ~ 230 gb/s なんとか達成!\nw\n\n Fused dequantization and GEMV...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
     {
       "title": "GitHub NextがJev互換OSS「LocalJev」を電撃公開！Waitlist待ちをスキップして手元で動かす完全ガイド",
       "url": "https://zenn.dev/kanta13jp1/articles/localjev-github-next-system-one-guide",

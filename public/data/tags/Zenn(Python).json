@@ -1,8 +1,58 @@
 {
   "site": "Zenn(Python)",
-  "last_updated": "2026-09-20T23:19:21.677164",
-  "total_articles": 6549,
+  "last_updated": "2026-09-21T01:16:20.588480",
+  "total_articles": 6554,
   "articles": [
+    {
+      "title": "自作MCPサーバーに認証と権限スコープを入れる — 3層の分離設計で危険なツールを封じる",
+      "url": "https://zenn.dev/yukihayama/articles/mcp-server-auth-scope",
+      "site": "Zenn(Python)",
+      "published": "2026-09-21T00:01:55Z",
+      "description": "自作MCPサーバーに認証と権限スコープを入れる — 3層の分離設計で危険なツールを封じる\n自作MCPサーバーをチームに配った翌日、Claudeが delete_note を呼んだ。消えたのはテスト用の1件だったから笑い話で済んだが、あれが本番のDBだったら終わっていた。\n原因は単純で、ツールを登録した時点で「AIが呼べる」状態になっていた。認証もスコープも無い。APIキーは「サーバーが使う資格情報...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "経路計画を、アルゴリズムの話から始めない：探索器を選ぶ前に決める5つのこと",
+      "url": "https://zenn.dev/haruhiro1020/articles/fa7d78d8fcf944",
+      "site": "Zenn(Python)",
+      "published": "2026-09-20T21:55:45Z",
+      "description": "「RRT と A*、どちらを使うべきですか」\nこの質問に、私はいつも即答していました。Qiita に経路生成（Path Planning：障害物を避けて始点から終点までの道筋を自動で作る処理）の記事を20本以上書いたあとだったので、それぞれの得意不得意は言えます。速さなら RRT-Connect、最短を保証したいなら A*、経路の質を上げたいなら RRT*。ここまで一息で答えて、相手が「なるほど」...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "記事の死活監視でタイムアウトを「削除」にしない：Pythonの小さな状態分類",
+      "url": "https://zenn.dev/hoyeon/articles/2b4be2a5118210",
+      "site": "Zenn(Python)",
+      "published": "2026-09-20T20:42:29Z",
+      "description": "対象ときっかけ\n公開記事を管理するとき、HTTPの取得結果と「記事が残っている」という判定を同じ列に保存すると、障害時に誤判定しやすくなります。本稿ではネットワーク取得部分を実装する前に、観測結果を分類する小さな純粋関数を作ります。Pythonで管理ツールを書く人向けの例です。\nきっかけは、公開済み記事の確認でブラウザに ERR_CONNECTION_TIMED_OUT が表示され、同じ環境からト...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "気象庁データの取得・比較・運用で踏んだ地雷集",
+      "url": "https://zenn.dev/moshimo_weather/articles/5efd07f893626c",
+      "site": "Zenn(Python)",
+      "published": "2026-09-20T18:46:18Z",
+      "description": "「もしも天気」は、自分の予想を気象庁のデータと毎日比較して自己採点している。この記事は、そのデータ取得・比較・日次バッチの運用でこれまでに踏んだ地雷をまとめたもの。\n\n pandasのバージョンでinterpolate()が例外になっていた\n日時の列を文字列型のまま残した状態でDataFrame全体にinterpolate()を呼んでいたため、「文字列型はinterpolateできない」という例外...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "【GA版】Microsoft Agent Framework でシンプルなAIエージェントを作るハンズオン（Python）",
+      "url": "https://zenn.dev/fujota1230/articles/a755fb0942d4fc",
+      "site": "Zenn(Python)",
+      "published": "2026-09-20T18:23:46Z",
+      "description": "はじめに\n2026年4月、Microsoft Agent Framework の 1.0 が GA（一般提供） になりました。Semantic Kernel と AutoGen を統合した後継フレームワークで、.NET と Python で安定版 API が提供されています。\nところが、ネット上に出回っているサンプルコードの多くは ベータ期のまま だったりします。GA に至るまでのリリースで Az...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
     {
       "title": "効いている脆弱性だけをIssueにする",
       "url": "https://zenn.dev/miyakona/articles/security-advisory-alert-intersection",
