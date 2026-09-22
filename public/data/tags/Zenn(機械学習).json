@@ -1,8 +1,58 @@
 {
   "site": "Zenn(機械学習)",
-  "last_updated": "2026-09-22T15:46:03.785451",
-  "total_articles": 1878,
+  "last_updated": "2026-09-22T19:17:23.009310",
+  "total_articles": 1882,
   "articles": [
+    {
+      "title": "AI 研究エージェントを自律化するには評価ループを閉じる必要がある",
+      "url": "https://zenn.dev/id774/articles/1f4ddc5d3eb7e6",
+      "site": "Zenn(機械学習)",
+      "published": "2026-09-22T15:11:53Z",
+      "description": "AI エージェントに研究を任せるとき、文献調査、実装、実験、分析までを自動化できることと、研究全体を自律的に進められることは同じではない。研究では、実験結果を得た後に、その結果をどう評価し、次の仮説や実験設計へどう反映するかという処理が続く。\nこの違いを整理する鍵は、評価結果を次の探索へ戻せるかである。既稿では、AI による研究自動化の境界を、実行可能な工程と評価可能な工程の違いから整理した[1]...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "FlashAttentionのIO-aware設計と実装上の確認点",
+      "url": "https://zenn.dev/kas_blog/articles/20260509-llm-19-flashattention",
+      "site": "Zenn(機械学習)",
+      "published": "2026-09-22T14:57:15Z",
+      "description": "FlashAttentionを導入するとき、確認すべきなのはAPI名ではなく、実際に選ばれたkernelとデータ移動です。scaled_dot_product_attentionを呼んでも、GPU、dtype、shape、maskが対応条件を満たさなければ別backendへfallbackします。\nこの記事ではFlashAttentionを、次の3点から実装者向けに整理します。\n\nN×Nのscor...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "深層オートエンコーダはPCAに勝てなかった——NASAの軸受データ、リークを塞いだ評価設計での実測",
+      "url": "https://zenn.dev/hocky3/articles/5769afb14be1a2",
+      "site": "Zenn(機械学習)",
+      "published": "2026-09-22T13:42:45Z",
+      "description": "NASA の IMS ベアリングデータセット——実際に軸受が壊れるまで回し続けた3つの試験系列——で、PyTorch の深層オートエンコーダによる異常検知を実装しました。ラベルを使わない one-class 検知で、評価は「リークを塞ぐこと」を最優先に設計しています。\nこの実装は、残存寿命や故障時刻を予測するものではなく、正常からの逸脱を検知する異常検知器です。知りたかったのは一点だけでした。別の...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "Jevはサイコロを振らないがローカルLLMは振れるのか？｜「較正された確率」の検証",
+      "url": "https://zenn.dev/null_teck/articles/jev-dice-calibration",
+      "site": "Zenn(機械学習)",
+      "published": "2026-09-22T13:38:36Z",
+      "description": "!\n先に結論を言います\n\n\n客観的な統計確率としての限界: 先行研究（林寛太氏）が示した通り、本家Jevであっても手がかりのない公平な6面サイコロでは平均 82.9% と確信度を過大報告し（先頭バイアス）、低確率域でも過大評価が生じる。Jevの確率較正は、主として「知識タスクにおけるメタ認知（無知の自覚）」に閉じたものである。\n\nローカル Qwen3.5-4B との実機比較検証: 同一のサイコロ問...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "みんなJevの話してる。やってないの俺だけ",
+      "url": "https://zenn.dev/unsoluble_sugar/articles/jev-system-one-model-intro",
+      "site": "Zenn(機械学習)",
+      "published": "2026-09-22T13:11:24Z",
+      "description": "はじめに\n2026年9月中旬あたりから、タイムラインが急に「Jev」の話題で埋まりました。「LLMより200倍速い」「出力トークン無料」「ハルシネーションしない」と景気のいい言葉が並ぶ一方で、自分はまだAPIキーすら持っていません。\nやってないのは俺だけか…という焦りを燃料に、Jevとは何か、なぜ騒がれているのか、LLMと何が違うのかを一次情報と検証記事から調べた整理メモです。\n!\nJevは202...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
     {
       "title": "一夜でバズった\"Jev\"を疑ってみた ── 判断特化AIの正体と、確率を信じてはいけない理由",
       "url": "https://zenn.dev/ryok/articles/jev-calibration-trap",
@@ -129,16 +179,6 @@
       "site": "Zenn(機械学習)",
       "published": "2026-09-20T12:39:25Z",
       "description": "Sony Semiconductor SolutionsのModel Compression Toolkit（MCT）を使い、量子化前後の精度・モデル容量・推論時間を1枚の表にまとめるCLIを作りました。\n公開の学習済みモデルに8bitと4bitの量子化を適用し、Fashion-MNISTのtest split全10,000画像で評価しました。W4A8（重み4bit・活性値8bit）のaccura...",
-      "category": "AI・技術",
-      "rss_category": "",
-      "image_url": ""
-    },
-    {
-      "title": "機械学習システムの設計と運用 ― ボートレース予想サイトの開発で学ぶデータ収集・モデル・評価・配信",
-      "url": "https://zenn.dev/mahiguch/books/boatrace-ml-system",
-      "site": "Zenn(機械学習)",
-      "published": "2026-09-20T10:25:40Z",
-      "description": "機械学習を含むシステムを設計し、評価し、運用し続ける方法を、ボートレース予想サイト boatrace-fun.net の開発を題材に解説する実践書です。\n公式サイトから収集した 1 レース 1 行の CSV を出発点に、偏差値化・ベイズ収縮・非負制約付き最小二乗による\n「強さポイント」を作り、回収率と log-loss で評価し、Cloud Run Jobs と Pub/Sub で 2 分毎に更新...",
       "category": "AI・技術",
       "rss_category": "",
       "image_url": ""
