@@ -1,8 +1,168 @@
 {
   "site": "Zenn(Python)",
-  "last_updated": "2026-09-22T11:41:22.231965",
-  "total_articles": 6578,
+  "last_updated": "2026-09-22T15:46:03.785451",
+  "total_articles": 6594,
   "articles": [
+    {
+      "title": "キーは有効。通信も成功。それでも結果がいつも空だった",
+      "url": "https://zenn.dev/shinsei99/articles/api-wrong-endpoint",
+      "site": "Zenn(Python)",
+      "published": "2026-09-22T11:11:47Z",
+      "description": "物件の所在地から、用途地域・災害情報・周辺の統計をまとめて調べるツールを作っています。\n公的なAPIをいくつも叩くのですが、そこで踏んだ3つを書きます。\n\n ① 用途地域が、いつも空だった\n鍵は有効。HTTPは200。エラーも出ない。それでも結果がいつも空でした。\n原因は、似た識別子の別のデータを呼んでいたことです。\nXKT001 … 別の種類のデータ\nXKT002 … 用途地域        ←...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "1枚絵から動く2Dキャラを作るChibiRigKit — AIに制作工程を任せ、完成後はブラウザだけで動かす",
+      "url": "https://zenn.dev/milkc0de/articles/5c3ad30dfda602",
+      "site": "Zenn(Python)",
+      "published": "2026-09-22T10:14:29Z",
+      "description": "🎮 Interactive Demo\nChibiRigKitを実際に触って遊べるGitHub Pagesを公開しています。\nMotion Arcade、9方向 Head Pose Challenge、実際のブラウザリグまで、そのまま体験できます。\nhttps://milkc0de.github.io/ChibiRigKit/\n\nこの記事では、ChibiRigKitの実装だけでなく、\nAIを制作工程...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "Claude の利用量上限を「寝かせずに」乗り越える：resume-queue パターンの設計と実装",
+      "url": "https://zenn.dev/tarooo137/articles/claude-usage-limit-resume-queue",
+      "site": "Zenn(Python)",
+      "published": "2026-09-22T08:54:51Z",
+      "description": "この記事は、Slack Bot に「ちょっと待って」と言われ続けたところから始まります。\n個人で運用している AI 自動化システム（メディア投稿パイプライン・各種監視ジョブ・CI 通知の集約など）の司令塔として、Slack Bot を立てていました。Claude CLI をバックエンドに、スレッドの文脈を引き継ぎながら claude -p を叩くシンプルな構成です。ところが夜間バッチが連続して実行...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "[Day 1] Google Colab ＋ CrewAI ＋ Geminiで最初に踏む全地雷（OpenAI誤認・404・非同期）を30分",
+      "url": "https://zenn.dev/taihong7803/articles/e805ade91c50ec",
+      "site": "Zenn(Python)",
+      "published": "2026-09-22T07:50:51Z",
+      "description": "なぜこの100日連載をやるのか\n「AIエージェントを作ろう」とチュートリアルを開く。\n……だが、動かない。依存関係のコンフリクト、突然のモデル消失、裏側で勝手に暴れ出すOpenAIの幻影。\nキレイな完成品コードの裏にある 「泥臭い地雷原（バトグラウンド）」 こそ、いま一番シェアする価値があるはず。\nGoogle Colab ＋ CrewAI ＋ Gemini（3.6-flash）の組み合わせで、毎...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "FXはレンジ相場なら逆張りで勝てる？ボリンジャーバンド戦略を検証",
+      "url": "https://zenn.dev/hiro_algo/articles/fx-range-bollinger-reversion",
+      "site": "Zenn(Python)",
+      "published": "2026-09-22T06:41:28Z",
+      "description": "FXでは「レンジ相場なら、安くなったところで買い、高くなったところで売ればよい」とよく言われます。\nそこで、USDJPYの15分足を使い、ボリンジャーバンドの端から中央への戻りを狙うレンジ逆張り戦略を検証しました。MT5とDukascopyの2種類の価格データを使い、2023〜2025年を年ごとに確認しています。\n最終的な独立バックテストは6区分すべてマイナスでした。合計するとMT5は-495.9...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "Playwright は『失敗せずに間違える』— 検証コードで確かめた4つの取得パターン",
+      "url": "https://zenn.dev/ryub/articles/playwright-silent-failure-patterns",
+      "site": "Zenn(Python)",
+      "published": "2026-09-22T06:35:57Z",
+      "description": "Web ページから定期的にデータを取り出すツールを書いてきて、一番厄介だったのは\n「例外が飛ぶ失敗」ではありませんでした。例外が飛べば、その場で気づいて直せます。\n厄介なのは、スクリプトが最後まで走りきって終了コード 0 を返し、\n中身だけが静かに間違っているケースです。\n!\nこの記事で扱う 4 パターンに共通するのは、Playwright が仕様どおりに動いているのに、\n呼び出し側の前提が違って...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "「書いた Python がそのまま戦う」学習ゲームをブラウザで動かした話（Pyodide × TypeScript）",
+      "url": "https://zenn.dev/bananafish0825/articles/21d00cb31cda98",
+      "site": "Zenn(Python)",
+      "published": "2026-09-22T06:12:34Z",
+      "description": "何を作ったか\nCODE SURVIVOR という、Python 未経験者向けの学習ゲームを作りました。ブラウザで無料で遊べます。\nhttps://bananafish0825.itch.io/code-survivor-web\n見た目は「敵が湧き続ける中を 10 分生き延びる」タイプのアクションゲームですが、自機の攻撃は全部、プレイヤーが書いた Python の関数 decide(snapshot...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "【Claude API】あなたの関心領域を可視化する『My読書マップ』の作り方",
+      "url": "https://zenn.dev/wwaaoonn/articles/b0551259bcbe80",
+      "site": "Zenn(Python)",
+      "published": "2026-09-22T05:40:01Z",
+      "description": "https://note.com/wwaaoonn_data/n/n2e44cbcb0512\n以前noteで『My読書マップ』と銘打ち投稿したところ、予想以上に評価をいただくことができた。調べた限り「自分が過去に読んだ本」を「自然言語処理の技術で分類する」という類似の事例は少なく、その物珍しさが一定の注目を集めたのかもしれない。\n本記事では、当時分析に使用したコードに修正を加えた上で、他の人も使え...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "【量子コンピューティング実装】超密度符号化の実装",
+      "url": "https://zenn.dev/nonnn/articles/cf810fb71cfb41",
+      "site": "Zenn(Python)",
+      "published": "2026-09-22T05:28:11Z",
+      "description": "こんにちは！Nonです。3回目の投稿です。\n今日は、超密度符号化の実装をしたいと思います。\nIBMのQiskitのチュートリアルをベースにしています。(ほぼそのままですが、覚書として書いてます。)\n実装詳細はGithubにあります。\n\nc = \"1\"\nd = \"0\"\nここで、古典情報2bit分を定義しています。古典2bitを1ebitのエンタングルメントを消費することで伝送することを考えます。\np...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "【AI HACK】元編集者・ライターが作ったコスト68%削減の「自律型AI編集部」【OrcaRouter】",
+      "url": "https://zenn.dev/pulsar_k/articles/b7ae2cb7c5f2e8",
+      "site": "Zenn(Python)",
+      "published": "2026-09-22T04:59:18Z",
+      "description": "はじめに\nこんにちは！　(前の記事と大分テンション変えていこうと思います😅)\n今回、「AI HACK」 というハッカソンイベントに個人参加し、『Orca-Editorial Agent』 というライター・クリエイター向けの業務自動化エージェントを開発しました。　私はPCやゲーム雑誌の元編集者・ライターなのですが、当時こんなツールがあったらどんなに良かったか...と思うようなツールに仕上がったと思い...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "Ruff で Python の Lint + Format を一括実行する",
+      "url": "https://zenn.dev/akinori901/articles/20260922-plan037",
+      "site": "Zenn(Python)",
+      "published": "2026-09-22T04:32:36Z",
+      "description": "Ruff で Python の Lint + Format を一括実行する\n\n 概要\nPython の Lint と Format は、長らく flake8 / isort / black / pyflakes などを組み合わせるのが定番だった。ツールごとに設定ファイルが分かれ、実行も別々で、CI のステップも増える。\nRuff は Rust 製の Lint + Formatter で、これらを ...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "サクソバンク OpenAPI × VPS で FX 自動売買を検証・ペーパー運用する",
+      "url": "https://zenn.dev/yohakucode/books/saxo-openapi-vps-autotrade",
+      "site": "Zenn(Python)",
+      "published": "2026-09-22T04:21:04Z",
+      "description": "1 日トークンを手で貼り直す運用から卒業する。OAuth 自動更新、コストを織り込んだバックテスト、複数戦略をネットする FX ペーパートレード、React の読み取り専用監視画面まで、Python と cron で組む最小構成を、動くコード(MIT)付きで解説します。",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "節の切り出し正規表現が本文を99文字落としていた — 先読み終端は本文中の見出しにも当たる",
+      "url": "https://zenn.dev/acs_developer/articles/regex-section-split-heading-in-body",
+      "site": "Zenn(Python)",
+      "published": "2026-09-22T04:13:28Z",
+      "description": "症状：エラーは出ていないのに、本文の末尾4行だけが消えていた\n筆者は動画の投稿を自動化していて、タイトル案・本文・タグ・運用メモを1ファイルにまとめた「投稿用テキスト」を作り、そこから必要な節をPythonで抜き出してAPIへ渡している。節の区切りは行頭の ■ で、こういうファイルになる（節名は一般化した）。\n■ タイトル案（採用＝1）\n1) サンプルのタイトル\n\n■ 固定コメント案\n公開直後に自...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "SPICEとRLC回路で学ぶ 微分積分・線形代数学・確率統計・応用数学",
+      "url": "https://zenn.dev/qwerewq/articles/3dc193ed076596",
+      "site": "Zenn(Python)",
+      "published": "2026-09-22T01:51:28Z",
+      "description": "第1章　微分積分学\n\n微分\n積分\nテイラー展開\n偏微分\n全微分\n常微分方程式\n\n\n 第2章　線型代数学\n\nベクトル\n行列\n連立一次方程式 Ax=b\nガウス消去法\nLU分解\n固有値・固有ベクトル\n疎行列\nヤコビ行列\n微分方程式の行列表記\n\n\n 第3章　確率統計学\n\n平均\n分散\n標準偏差\n確率変数\n期待値\n確率密度関数\n累積分布関数\n正規分布\n標準正規分布\nσ\n共分散\n相関係数\n多変量正規分布\nモンテ...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "ポジションサイジングの上限をどう持つか — AutoTraderで通貨非依存のリスク設計に直した理由",
+      "url": "https://zenn.dev/ponfreelance/articles/cryptbot-zenn-2026-09-08-7b6e5b84",
+      "site": "Zenn(Python)",
+      "published": "2026-09-22T01:30:25Z",
+      "description": "AutoTrader (FastAPI × React Native Expo 製) の自動売買botで、損失上限（daily/weekly loss limit）の持ち方を見直した。制約は「複数の通貨建てbotが同一システム上で混在する」「リスク判定は同期・確定的に保つ」「誤発火で不要な停止を起こさない」の3つ。この記事では、リスク許容度をどの単位で表現するかという設計判断を中心に書く。\n\n 前...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "【個人開発#10】エゴでも完成させることが成長になる",
+      "url": "https://zenn.dev/fine_dev/articles/4bed01b758c59d",
+      "site": "Zenn(Python)",
+      "published": "2026-09-22T01:29:51Z",
+      "description": "こんにちは。\n前回は私が３度のアウトプットで協力者を得て、一人で悩むくらいなら一度人に聞いてみることの重要性に気づくまでをお話ししました。\n今回は、またも私が別の人から開発について厳しい指摘をもらって壁にぶち当たり、悩み、そして励まされてもう一度進み始めた話をしようと思います。\n\n 自分の中で静かに浮上した疑念\n心強いアドバイザーを味方につけ、いよいよ「四季報分析ツール（就活生用）」の開発を本格的...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
     {
       "title": "SQLFluffの構文木の力を借りる：dbt独自ルールを文字列検索から見直す",
       "url": "https://zenn.dev/a1008u/articles/sqlfluff-parse-tree-custom-rules",
