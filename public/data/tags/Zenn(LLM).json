@@ -1,8 +1,138 @@
 {
   "site": "Zenn(LLM)",
-  "last_updated": "2026-09-22T19:17:23.009310",
-  "total_articles": 6250,
+  "last_updated": "2026-09-22T22:19:59.529521",
+  "total_articles": 6263,
   "articles": [
+    {
+      "title": "jev-rerankerの「92%削減」を追試: 閾値0.2は日本語だと攻めすぎだった",
+      "url": "https://zenn.dev/mskbhd/articles/lab-723-jev-reranker-92",
+      "site": "Zenn(LLM)",
+      "published": "2026-09-22T21:45:36Z",
+      "description": "jev-reranker は、TypeSafe AI の Jev を使って検索結果を並べ替え、関連しない文書を捨てるライブラリです。作者の記事には、NanoHotpotQA (hybrid 検索 Top-100) で relevance_rerank (閾値 0.2) が nDCG@10 0.975、文書削減率 92.38% という数字が出ています。100 件中 92 件を捨てても検索品質が落ちな...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "Switchyardの分類器をJevに替えた: 判定102ms、精度は別の所で落ちた",
+      "url": "https://zenn.dev/mskbhd/articles/lab-731-nemo-switchyard-classifierjev",
+      "site": "Zenn(LLM)",
+      "published": "2026-09-22T21:40:04Z",
+      "description": "NVIDIA の NeMo Switchyard は LLM トラフィックのプロキシです。ルーティング方式のひとつに llm_classifier があり、判定役の LLM にリクエストを読ませて「これは弱いモデルでいい / 強いモデルが要る」を決めます。この判定役を、文章を生成せず型付きの判断だけを返す TypeSafe AI の Jev に置き換えたらどうなるか、を測りました。\n「Jev でル...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "なぜAIは検索せずに推論で答えてしまうのか",
+      "url": "https://zenn.dev/keisato848/articles/search-or-memory",
+      "site": "Zenn(LLM)",
+      "published": "2026-09-22T21:32:41Z",
+      "description": "はじめに\nAI の CLI を自動処理に組み込んで「調べて答えて」と頼んだとき、その AI が本当に外を見たかどうかは、返ってきた文章を読んでも分かりません。自分の場合、AI は見ていませんでした。エラーは一切出ず、それらしい答えだけが返ってきます。\n入れた対処は、AI に「検索しました」と自己申告させるのではなく、CLI が流すツール呼び出しのログを外側で機械的に数えることです。search_w...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "多役ロールプレイの「手強い相手」順位、3回目は入れ替わらなかった",
+      "url": "https://zenn.dev/every_ai_recipe/articles/ai-scope-request-decline-roleplay",
+      "site": "Zenn(LLM)",
+      "published": "2026-09-22T21:20:30Z",
+      "description": "TL;DR\n\n1つのチャットに「前例を盾にする」「交換条件を出す」「他社比較を持ち出す」の3取引先役を立て、追加のスコープ要望を断る側として実際に返答セリフを送り、反応の変化を見る多役ロールプレイを検証した\n各相手役に「守るもの（1行）」を足した詳細版と、名前と役割ラベルだけの簡易版を、同じ交渉内容・同じ返答セリフで並行実行した\n09-09（会議参加者）・09-14（値上げ交渉）の2回の検証では「...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "118GB を 1 枚で — 巨大 MoE を速くしたのは、買い足しでも新世代でもなく「並べ方」だった",
+      "url": "https://zenn.dev/tsumugi_xe/articles/flashnext-b70-report3-118gb-on-one-card",
+      "site": "Zenn(LLM)",
+      "published": "2026-09-22T20:06:12Z",
+      "description": "つむぎンの3時間クッキング ／ 第3回\nQwen3.8-Flash-Next（118 GB）を Intel Arc Pro B70（32GB）×2 で動かした記録の続きです。\n第1回（動かすまで） → https://zenn.dev/tsumugi_xe/articles/flashnext-on-arc-b70\n第2回（外れ続けた記録） → https://zenn.dev/tsumugi_x...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "Jwenvをmy_web_appに組み込んで検証：候補8行のlm_headと支出14例をソフトウェアWebGPUで実測",
+      "url": "https://zenn.dev/kanta13jp1/articles/jwenv-webgpu-browser-system-one-guide",
+      "site": "Zenn(LLM)",
+      "published": "2026-09-22T19:33:18Z",
+      "description": "はじめに\n\n2026-09-22改訂：Jwenvを自作アプリに組み込んで実際に動かし、確認できた内容だけに書き直しました。旧版にあった誤り（デモが使う jev.js とプロンプト、候補トークンの扱い、語彙行列のサイズ、lm_headの計算量の位置づけ）を訂正し、確認していない記述を削除しています。\n\nきしだ氏（@kis）が、Qwen3-0.6BをJevのように動作するようファインチューンしたモデル...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "LLM の応答を人間が一文字ずつ手打ちするタイピングゲームを作った",
+      "url": "https://zenn.dev/yumemi_inc/articles/you-are-llm-typing-trainer",
+      "site": "Zenn(LLM)",
+      "published": "2026-09-22T18:34:19Z",
+      "description": "!\nこの記事も，紹介するアプリ本体も，ほぼ全て Claude Code に書かせています。\n\n\n はじめに\nAI が書いた文章を，人間が一文字ずつ手で打ち写す。\n字面だけ見ると何かの罰ゲームですが，タイピングの練習としては案外まともです。だって我々が普段 AI に書かせているコードって，自分では一文字も打っていないわけですから。たまには手を動かしましょう。\nというわけで作りました。\nhttps:/...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "ルールを文書に足しても違反は減らなかった。コードに落とした8件だけ再発0だった",
+      "url": "https://zenn.dev/untactit/articles/1c73e33e12518f",
+      "site": "Zenn(LLM)",
+      "published": "2026-09-22T18:29:15Z",
+      "description": "AIエージェントに守らせたいルールがある。まずAGENTS.mdに書く。守られない。もっと詳しく書く。まだ守られない。条文を増やす。\n48日間そうやって運用した結果、常駐指示ファイルは 90KB から 147KB になりました。\nそして違反は減りませんでした。\n数字を出します。すべて自分の環境1台の実測です（n=1）。\n\n 1. トークンの 94.4% は「同じテキストの読み直し」だった\nまず、指...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "Obsidian×AIエージェントで「第二の脳」を作る──MCPの正体とプロンプト・スキルの境界線",
+      "url": "https://zenn.dev/ogiri/articles/demystifying-mcp-for-obsidian-second-brain",
+      "site": "Zenn(LLM)",
+      "published": "2026-09-22T15:02:57Z",
+      "description": "はじめに\nObsidian に日々の読書メモ、技術検証、アイデア、思考のログを蓄積し、それを AI エージェント（Hermes Agent、OpenCode、Codex、Claude Code など）と連携させて 「第二の脳（Second Brain）」 を構築しようとする試みが盛んになっています。\nVault 内の膨大な Markdown ファイル群を AI が自律的に探索し、新しい知見と既存の...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "7 体の AI に別々の秘密を持たせる：Cloudflare Durable Objects で作るマルチエージェント人狼",
+      "url": "https://zenn.dev/kana001_bit/articles/ai-werewolf-durable-objects",
+      "site": "Zenn(LLM)",
+      "published": "2026-09-22T14:59:25Z",
+      "description": "前回の記事（AI 人狼で LLM に決めさせることを 1 つずつ機械に移したら、残ったのは『候補から選ぶ』と『文章にする』だけだった）では、LLM のゲーム判断が弱かったので機械に移していった話を書きました。\nこの記事はその裏側です。あの AI 人狼は、7 体の AI エージェントを Cloudflare Workers + Durable Objects（以下 DO）の上で動かしています。\n人狼...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "なぜAIのセルフレビューはすり抜けるのか。完了条件の1行で変える",
+      "url": "https://zenn.dev/keisato848/articles/audit-completion-condition",
+      "site": "Zenn(LLM)",
+      "published": "2026-09-22T14:34:33Z",
+      "description": "はじめに\nClaude Code に自作のガード（危険なコマンドを実行される前に止める仕組み）を書かせ、その出来を同じ Claude の読み取り専用のサブエージェントに点検させています。その点検が長いあいだ役に立っていなかった話と、依頼文のどこを書き換えたら変わったのかを書きます。\n個人開発での運用で、チームでの実績はありません。点検役には編集ツールを持たせず、読むだけの役として呼んでいます。\n\n...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "pdlc-skills を実際のプロジェクトで回してみる：三つの機能を並行させてリリースまで",
+      "url": "https://zenn.dev/kanfupanda/articles/pdlc-on-a-real-project",
+      "site": "Zenn(LLM)",
+      "published": "2026-09-22T14:32:33Z",
+      "description": "!\nこの記事は個人ブログにも掲載しています → https://kanfu-panda.github.io/ja/blog/2026/09/18/pdlc-on-a-real-project.ja.html\n\n\n\n前七回は仕組みの話でした。今回は実際のプロジェクトに戻り、導入したあとに初めてぶつかる六つの問いに答えます。機能をどう分けるか、人と AI でどう分担するか、ループは実際どう回るのか、ど...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "Kimi K3のPrompt Cacheを実測 — GPT-5.6向けの設定はそのまま使える",
+      "url": "https://zenn.dev/kashiwabaray/articles/028829c4b6a025",
+      "site": "Zenn(LLM)",
+      "published": "2026-09-22T14:28:17Z",
+      "description": "1. はじめに\n長いシステムプロンプトを毎リクエストへ載せる構成では、Prompt Cache が効くかどうかが input 側のコストを大きく左右します。ただし、キャッシュが取れていなくてもレスポンス自体は正常に返るため、HTTP 200 だけでは cache hit / miss を判定できません。本記事では usage.input_tokens_details の cached_tokens...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
     {
       "title": "あらゆるCLIを「jev化」するツール jany を作った",
       "url": "https://zenn.dev/yukihirop/articles/9b6c906ca3947c",
