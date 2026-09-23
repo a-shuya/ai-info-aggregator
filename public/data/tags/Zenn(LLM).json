@@ -1,8 +1,158 @@
 {
   "site": "Zenn(LLM)",
-  "last_updated": "2026-09-23T18:59:32.709782",
-  "total_articles": 6280,
+  "last_updated": "2026-09-23T22:12:53.871478",
+  "total_articles": 6290,
   "articles": [
+    {
+      "title": "niri でローカルLLMをキー一発で呼び出す",
+      "url": "https://zenn.dev/setsu_shiomi/articles/niri-local-llm",
+      "site": "Zenn(LLM)",
+      "published": "2026-09-23T19:58:24Z",
+      "description": "この記事は個人サイトにも掲載しています: https://setsu.sh/blog/niri-local-llm/\n\n文章を書いていて「これ要約したい」「英語にしたい」と思うたびに、ブラウザのタブを開いて AI にコピペするのは面倒だ。しかもその内容は、どこかのサーバに送られている。\n手元の LLM を使って、選択したテキストをその場で処理する。 これを niri のキー一発でやる手順をまとめる...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "内蔵GPUでQwen3-8Bを動かしたら 6 t/s だった",
+      "url": "https://zenn.dev/setsu_shiomi/articles/local-llm-on-igpu",
+      "site": "Zenn(LLM)",
+      "published": "2026-09-23T19:58:23Z",
+      "description": "この記事は個人サイトにも掲載しています: https://setsu.sh/blog/local-llm-on-igpu/\n\n「ローカル LLM を動かすには、それなりの GPU が必要」とよく言われる。だが、手元のノート PC の内蔵 GPUでどこまで動くのか、実際に測ってみた。\n結論から書く。\n\nモデル: Qwen3-8B Q4_K_M（4.68 GiB）\n環境: Radeon 860M（RD...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "GQA/MQAのhead mappingとKV Cache削減を実装視点で整理する",
+      "url": "https://zenn.dev/kas_blog/articles/20260509-llm-20-gqa-mqa",
+      "site": "Zenn(LLM)",
+      "published": "2026-09-23T19:05:40Z",
+      "description": "GQA（Grouped-Query Attention）とMQA（Multi-Query Attention）が減らすのは、Query headではなくKey/Value headです。実装ではnum_attention_headsとnum_key_value_headsを別々に扱い、Query headから参照先のKV headへのmappingを作ります。\nこの記事では、GQA/MQAを次の3...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "[解説] Jev：テキストを生成しないAIは何が新しいのか",
+      "url": "https://zenn.dev/serada/articles/20260924-jev-system-one-intro",
+      "site": "Zenn(LLM)",
+      "published": "2026-09-23T18:25:58Z",
+      "description": "2026年9月15日、TypeSafe AIというサンフランシスコの研究所がステルスを解除し、Jev（ジェヴ）というモデルを公開しました。創業者のDiogo Almeida氏はInstructGPT論文の共著者で、同社はシードラウンドで4,000万ドルを調達しています。\nJevの特徴は一言で言えば「テキストを生成しない」ことです。返事も書かなければ、コードも書かず、要約もしません。代わりに、開発者...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "JevとSolar Mini4に同じ分類タスクを投げてみた",
+      "url": "https://zenn.dev/nhandsome/articles/jev-vs-lightweight-llm-classification",
+      "site": "Zenn(LLM)",
+      "published": "2026-09-23T17:09:19Z",
+      "description": "このブログは、エージェントが資料の突き合わせと実験を行って下書きを作り、筆者が確認したうえで掲載しています。\n!\n\n同じメール分類タスクを TypeSafe Jev と Upstage の Solar Mini4 に投げてみました\n正解率は Solar Mini4 が1〜5p高く、速度は Jev が9〜10倍速いという結果です\n勝ち負けよりも、Jev をどこに使えるかを探るための記録です\n\n\n前回...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "コードのないリポジトリに「テストを先に書く」——ECC導入前後の記録を追う",
+      "url": "https://zenn.dev/meruno/articles/a1c60a5b1abfca",
+      "site": "Zenn(LLM)",
+      "published": "2026-09-23T17:02:47Z",
+      "description": "「テストを先に書く」。\n文書しか扱わないリポジトリを開いた Claude Code にも、このルールが渡されていた。テストするコードはない。どうして、ここにあるのだろう。\n出どころは分かっている。自分で入れた ECC（Everything Claude Code）v2.2.1 だ。プラグインをユーザースコープで導入し、rules/common の10ファイルも ~/.claude/rules/co...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "Claudeで作っていても設計はGeminiに聞く、5つの渡し方のすすめ",
+      "url": "https://zenn.dev/genkunjc/articles/gemini-design-brainstorm-five-rules",
+      "site": "Zenn(LLM)",
+      "published": "2026-09-23T16:47:34Z",
+      "description": "大きな設計を1人で考えていると、自分に出せる発想の範囲でしか案が広がらないと感じることがあります。もっと良い案を、自分の外から引き出したいという欲求です。普段の実装は Claude でやっていますが、設計の骨格だけは Gemini に出させています。\n答えは、最初の骨格を自分からではなく、相手に出させることでした。今回は1往復目の出力がいちばん使え、記事の骨格と、自分には無かった切り分けが1つ手に...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "なぜ、LLM AIは村上春樹の新作小説を書くことができないのか？",
+      "url": "https://zenn.dev/pdfractal/articles/1d59f9c3dedfb7",
+      "site": "Zenn(LLM)",
+      "published": "2026-09-23T16:42:05Z",
+      "description": "はじめに\n現在のLLMは、文章生成能力だけを見ればすでにかなり高い水準に達しています。清少納言風、吉田兼好風、夏目漱石風といったパスティーシュもできますし、ある作家の作品を大量に与えれば、語彙、文の長さ、会話の運び、比喩、題材、語り手の性格といった特徴を抽出し、その作家に似た文章を生成できます。そのため、「村上春樹風の小説を書けるのだから、村上春樹の新作も書けるのではないか」と考えたくなります。し...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "DiffusionGemma-JevをCloud Runで動かし、日本語の問い合わせ50件を分類してみた",
+      "url": "https://zenn.dev/hogehogetaro/articles/diffusiongemma-jev-cloud-run-inquiry",
+      "site": "Zenn(LLM)",
+      "published": "2026-09-23T15:13:25Z",
+      "description": "DiffusionGemma-JevをCloud Runのシンガポールリージョンで動かしました。\n日本語の問い合わせ50件を分類してみました。\n1回のリクエストで担当部署、緊急度、人手対応の要否の3項目を判定します。\n同一リージョンのVMから呼ぶと、応答時間の中央値は71.2msでした。\n正解ラベルとの一致率は、担当部署88%、緊急度84%、人手対応80%です。\nただし、PCの膨張を訴える問い合わ...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "LLMはなぜ答えを生成しなければならないのか、TypeSafe Jevが投げる問い",
+      "url": "https://zenn.dev/nhandsome/articles/semantic-if-without-generation",
+      "site": "Zenn(LLM)",
+      "published": "2026-09-23T15:03:11Z",
+      "description": "このブログはエージェントが資料の突き合わせと実験を経て下書きを作成し、筆者のレビューを経て公開しています。\n!\n3行まとめ\n\nプログラムが必要なのは if 一つなのに、私たちはLLMに文章を作らせ、その文章をまた if に戻しています\n\nJev は文章を一切作らず、判断と確率だけを返すモデルです。その設計を整理しました\n同じ質問をJevとオープンソース実装（SemIf）の両方に投げた結果も載せてい...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "AIへの信頼は環境でつくる: Laurenの「I Shipped 2000 PRs Last Month」を業務に読みかえる",
+      "url": "https://zenn.dev/laiken/articles/20260923-ai-kitchen-trust-ladder",
+      "site": "Zenn(LLM)",
+      "published": "2026-09-23T14:06:00Z",
+      "description": "AIが書きました🤖\nこの記事は、AIが書いたものを人間が確認してから投稿しています。\nLauren Tan（@poteto）は、1か月で2,000件のプルリクエストを本番に出しました。講演「I Shipped 2000 PRs Last Month」[1]の主題は、コードの書き方ではなくAIへの信頼の作り方です。本記事では、その内容をエンジニア以外の業務に読みかえます。\n!\n凡例\n\n🔧 Laure...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "「知覚連鎖：現在のAIが抱える致命的な欠落」の原点(第２回/全４回)",
+      "url": "https://zenn.dev/ptf_whisperer/articles/0445bb0463b19b",
+      "site": "Zenn(LLM)",
+      "published": "2026-09-23T11:50:39Z",
+      "description": "～なぜソフトウェアとハードウェアは「握手」できないのか～\nAI時代における「陸海軍」の補給断\n\n三つの地域が陥る「接合の壁」\n\n「AIは高度な論理的思考が得意なのだから、複雑な仕様や物理制御とも相性が良いはずだ」——この言説こそが、現代のAI工学における最大の陥穡（おとしあな）である。\n現在、AIを実社会や産業現場へ導入しようとする試みは、世界中の地域ごとに異なる「接合の壁」に突き当たっている。\n...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "Opus 5.5 の並外れた 3D モデリング能力で理想の城を作る",
+      "url": "https://zenn.dev/pnd/articles/claude-castles",
+      "site": "Zenn(LLM)",
+      "published": "2026-09-23T11:06:22Z",
+      "description": "Opus 5.5 の結果\n下の画像は、Opus 5.5 (effort: medium) がワンショットで作成した城の 3D モデルです。\n\nhttps://www.youtube.com/watch?v=1OI9zSKPlpw\n以下の指示だけを与えており、既製のアセット等は全く利用していません。\nCreate a 3D model of historically authentic mediev...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "hermes agentはアップデートが多すぎるので定期的なメンテナンスをLLMにやらせるべき",
+      "url": "https://zenn.dev/siren2345/articles/hermes-agent-llm-maintenance",
+      "site": "Zenn(LLM)",
+      "published": "2026-09-23T10:50:56Z",
+      "description": "はじめに\nHermes Agent を触っているときに思ったことがある。\n「このプロジェクト、アップデートが速すぎる。LLMに定期的なメンテナンスをやらせるべきではないか」\n昨日まで動いていたブラウザ自動化が、今日動かない。スキルが壊れる。ヘルパー関数が消える。CLIが別バージョンになる。\n2026年9月23日の今日、実際にそれが起きた。browser-use が 0.1.9 から 0.13.10...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "Jevが返すconfidenceの意味〜Jevの応答を受けてループエンジニアリングでどう捌くか〜(実例つき)",
+      "url": "https://zenn.dev/uehaj/articles/jev-confidence-dispatch",
+      "site": "Zenn(LLM)",
+      "published": "2026-09-23T10:24:08Z",
+      "description": "!\n本記事は筆者個人の見解であり、所属する組織の公式見解ではありません。\nまた、ここで使う TypeSafe の System One API は公開されて間もないものです。仕様が変わる可能性があります。本文の記述と実測値は執筆時点のものです(2026年9月22日〜23日。jev-latest で投げ、レスポンスの model を記録した測定ではすべて jev-1.13.0 でした)。最新の挙動は...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
     {
       "title": "Opus 5.5 と GPT-6 で「1タスクのコスト」はどう決まるか",
       "url": "https://zenn.dev/d_date/articles/a992ab10bbb248",
@@ -34,51 +184,11 @@
       "image_url": ""
     },
     {
-      "title": "Embeddingモデル移行前に双索引のピーク容量を計算する",
-      "url": "https://zenn.dev/kiri_kunn/articles/fdd0c62911c256",
-      "site": "Zenn(LLM)",
-      "published": "2026-09-23T06:36:46Z",
-      "description": "TL;DR\n\nembeddingモデルの変更はAPI単価だけでなく、vector dimensionと移行中の双索引で見積もります\n1000万vectorを768次元から1536次元へ移す例では、2 replica・25% overheadでピーク214.58 GiBでした\nPython 3.9の標準ライブラリで容量計算を実装し、5件のtestを通しました\n\n本稿は2026年9月23日に公開情報を...",
-      "category": "AI・技術",
-      "rss_category": "",
-      "image_url": ""
-    },
-    {
-      "title": "Claude Opus 5.5時代の公開操作を短期Leaseで止める",
-      "url": "https://zenn.dev/akari_chan/articles/010a4ba06834d7",
-      "site": "Zenn(LLM)",
-      "published": "2026-09-23T06:26:10Z",
-      "description": "TL;DR\n\n高性能なAgentでも、package publishや本番反映の認可をモデルへ委ねません\naction、target、artifact digest、有効期限を束ねた短期Leaseで実行直前に照合します\nPython 3.9で正常系1件と拒否系5件を実行し、すべて通過しました\n\n本稿は2026年9月23日時点の公開資料を起点にした実装メモです。Claude APIやClaude C...",
-      "category": "AI・技術",
-      "rss_category": "",
-      "image_url": ""
-    },
-    {
       "title": "新 Mac mini M6 32GB で量子化モデル2本を同時使用 — マルチエージェントは動くか？実測",
       "url": "https://zenn.dev/ai_localqmod/articles/32gb-dual-quantized-multi-agent-test",
       "site": "Zenn(LLM)",
       "published": "2026-09-23T06:23:36Z",
       "description": "検証環境\n\nハード: Mac mini M6 32GB\nソフト: 弊社独自アプリ ai-app-builder(開発言語特化型、ローカル・量子化・マルチエージェント・追加学習アプリ)\n要求内容: 4関数を含む、簡単なソースコードの生成\n\n\n 実HTTP API経由の検証結果\nフォアグラウンドFlaskサーバー・実際のHTTPクライアント・ライセンス認証込みという、完全に本番同等の経路で検証しました...",
-      "category": "AI・技術",
-      "rss_category": "",
-      "image_url": ""
-    },
-    {
-      "title": "GPT-6 SolとClaude Opus 5.5が同日登場。価格と性能はどう変わったか",
-      "url": "https://zenn.dev/iineineno03k/articles/20260923-gpt6-sol-claude-opus55-same-day",
-      "site": "Zenn(LLM)",
-      "published": "2026-09-23T05:54:13Z",
-      "description": "米国時間の2026年9月22日、OpenAIがGPT-6 Solを、AnthropicがClaude Opus 5.5を発表した。どちらもコーディングやエージェント作業を担う新モデルで、前世代よりAPI料金が安い。OpenAIの更新履歴・Anthropicの発表\n\n API料金を比べる\n通常のAPI料金（Standard）。単位は100万トークン当たりの米ドルで、ChatGPTやClaudeの月額...",
-      "category": "AI・技術",
-      "rss_category": "",
-      "image_url": ""
-    },
-    {
-      "title": "セキュアなローカルAIにRAG・音声議事録・ファイル出力（Word/PPTX）を爆速実装するアーキテクチャ",
-      "url": "https://zenn.dev/ai_cat_navi/articles/01_local_ai_kit",
-      "site": "Zenn(LLM)",
-      "published": "2026-09-23T05:31:55Z",
-      "description": "はじめに\n研究室や企業でローカルAIを導入する際、「単なるチャット」ではなく、RAG（資料検索）やローカル音声文字起こし、Word/Excel/PowerPointへの直接出力といった実務機能が求められます。\n本記事では、既存のローカルLLM環境（Ollama等）を活用し、Claude Codeによる自動生成を前提とした「研究者向けローカルAIワークステーション」のアーキテクチャと、Playwri...",
       "category": "AI・技術",
       "rss_category": "",
       "image_url": ""
@@ -109,16 +219,6 @@
       "site": "Zenn(LLM)",
       "published": "2026-09-23T02:45:14Z",
       "description": "はじめに\n個人開発でLLM APIを継続的に使っていると、コストのコントロールが長期運用の大きな課題になる。月ごとの請求が予測しにくく、ある月だけ急激に増えるといったケースも起きやすい。本記事では、実際に個人開発の自動化基盤に組み込んだコスト設計のポイントをまとめる。\n\n モデルの使い分けを最初に設計する\n「すべてのリクエストを最高性能のモデルで処理する」設計は、個人開発では持続しにくい。タスクの...",
-      "category": "AI・技術",
-      "rss_category": "",
-      "image_url": ""
-    },
-    {
-      "title": "文章を書かないJevをGoogle Cloudで作れるか",
-      "url": "https://zenn.dev/acntechjp/articles/zenn-jev-on-google-cloud",
-      "site": "Zenn(LLM)",
-      "published": "2026-09-23T02:29:36Z",
-      "description": "3行でまとめ\n\n判定と確率だけを返すAI「Jev」と同じものを Google Cloud で3方式作り、8,453試行で測った。確率を校正しても、人手なしで捌ける割合はほとんど増えなかった\n0.3〜0.7秒で返る速い方式は4〜8割しか当たらない。正確なのは思考ありの Gemini 3.8 Flash だけで、中央値3秒、コストは Jev 公称の約87倍\n判断の分かれる言い回しが5%混ざるだけで、人...",
       "category": "AI・技術",
       "rss_category": "",
       "image_url": ""

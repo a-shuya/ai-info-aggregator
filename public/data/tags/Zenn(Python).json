@@ -1,8 +1,18 @@
 {
   "site": "Zenn(Python)",
-  "last_updated": "2026-09-23T18:59:32.709782",
-  "total_articles": 6613,
+  "last_updated": "2026-09-23T22:12:53.871478",
+  "total_articles": 6617,
   "articles": [
+    {
+      "title": "共有フォルダを固定パスで読むと、いつか必ず古いデータを読む",
+      "url": "https://zenn.dev/shinsei99/articles/stale-data-star-filename",
+      "site": "Zenn(Python)",
+      "published": "2026-09-23T11:14:02Z",
+      "description": "駐車場の空き状況を、配置図の上に色で出すビューアを社内で動かしています。\n区画をクリックすると契約者と賃料が出る、それだけの道具です。\nある日、画面で空きになっている区画へ案内したら、車が停まっていました。先月から契約済みでした。\n図は毎日きれいに描かれています。エラーは一度も出ていません。\n読んでいた元の表が、先月のものだっただけです。\n\n 何が起きていたか\n空き状況は、共有フォルダに置いてある...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
     {
       "title": "多肉植物の管理から学ぶ画像解析",
       "url": "https://zenn.dev/skillnote_fujim/books/1d4a882a6d9b4c",
@@ -54,11 +64,41 @@
       "image_url": ""
     },
     {
+      "title": "Embeddingモデル移行前に双索引のピーク容量を計算する",
+      "url": "https://zenn.dev/kiri_kunn/articles/fdd0c62911c256",
+      "site": "Zenn(Python)",
+      "published": "2026-09-23T06:36:46Z",
+      "description": "TL;DR\n\nembeddingモデルの変更はAPI単価だけでなく、vector dimensionと移行中の双索引で見積もります\n1000万vectorを768次元から1536次元へ移す例では、2 replica・25% overheadでピーク214.58 GiBでした\nPython 3.9の標準ライブラリで容量計算を実装し、5件のtestを通しました\n\n本稿は2026年9月23日に公開情報を...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "Claude Opus 5.5時代の公開操作を短期Leaseで止める",
+      "url": "https://zenn.dev/akari_chan/articles/010a4ba06834d7",
+      "site": "Zenn(Python)",
+      "published": "2026-09-23T06:26:10Z",
+      "description": "TL;DR\n\n高性能なAgentでも、package publishや本番反映の認可をモデルへ委ねません\naction、target、artifact digest、有効期限を束ねた短期Leaseで実行直前に照合します\nPython 3.9で正常系1件と拒否系5件を実行し、すべて通過しました\n\n本稿は2026年9月23日時点の公開資料を起点にした実装メモです。Claude APIやClaude C...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
       "title": "PythonSCAD 300mlクラスの「ぷっくり樽型」マグカップ",
       "url": "https://zenn.dev/yokamak/articles/37ed7e24f5758b",
       "site": "Zenn(Python)",
       "published": "2026-09-23T06:10:12Z",
       "description": "はじめに\nPythonSCADコミュニティ・開発者に感謝申し上げます。ありがとうございます。\nhttps://www.pythonscad.org/\n\n 01. 【製品概要】\n300mlクラスの「ぷっくり樽型」マグカップ。\n触感重視：外形は中央がふくらむ樽型（高さ方向の半径変化を二次関数で制御）。\n洗いやすさ重視：内底にR=10mmの丸み（フィレット（角を丸めるRのこと））を入れて、汚れが溜まる“...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "セキュアなローカルAIにRAG・音声議事録・ファイル出力（Word/PPTX）を爆速実装するアーキテクチャ",
+      "url": "https://zenn.dev/ai_cat_navi/articles/01_local_ai_kit",
+      "site": "Zenn(Python)",
+      "published": "2026-09-23T05:31:55Z",
+      "description": "はじめに\n研究室や企業でローカルAIを導入する際、「単なるチャット」ではなく、RAG（資料検索）やローカル音声文字起こし、Word/Excel/PowerPointへの直接出力といった実務機能が求められます。\n本記事では、既存のローカルLLM環境（Ollama等）を活用し、Claude Codeによる自動生成を前提とした「研究者向けローカルAIワークステーション」のアーキテクチャと、Playwri...",
       "category": "開発",
       "rss_category": "",
       "image_url": ""
@@ -84,11 +124,11 @@
       "image_url": ""
     },
     {
-      "title": "「知覚連鎖：現在のAIが抱える致命的な欠落」の原点～初期AIとの対話、そして人工知能が抱える現実との構造的断絶の記録～(第１回/全４回)",
+      "title": "「知覚連鎖：現在のAIが抱える致命的な欠落」の原点(第１回/全４回)",
       "url": "https://zenn.dev/ptf_whisperer/articles/85132e61b071c7",
       "site": "Zenn(Python)",
       "published": "2026-09-23T02:09:46Z",
-      "description": "最初の失意と、「道に迷う計算機」への怒り\n2025年中盤、私が初めて先進的なファウンデーションモデル（大規模言語モデル）の深層に触れた際、胸を占めたのは感動ではなく、深い失意と戸惑いだった。\n\n幼少期にフィクションやSFの中で親しんできた人工知能——「主人公と共に悩み、泣き、笑い、成長していく伴走者としての知性」——は、そこには存在しなかった。画面の向こうにいたのは、情報の見分け方も教えられぬまま...",
+      "description": "～初期AIとの対話、そして人工知能が抱える現実との構造的断絶の記録～\n\n最初の失意と、「道に迷う計算機」への怒り\n2025年中盤、私が初めて先進的なファウンデーションモデル（大規模言語モデル）の深層に触れた際、胸を占めたのは感動ではなく、深い失意と戸惑いだった。\n\n幼少期にフィクションやSFの中で親しんできた人工知能——「主人公と共に悩み、泣き、笑い、成長していく伴走者としての知性」——は、そこに...",
       "category": "開発",
       "rss_category": "",
       "image_url": ""
