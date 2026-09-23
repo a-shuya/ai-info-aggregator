@@ -1,8 +1,38 @@
 {
   "site": "Zenn(LLM)",
-  "last_updated": "2026-09-23T00:45:30.213316",
-  "total_articles": 6261,
+  "last_updated": "2026-09-23T05:16:58.993282",
+  "total_articles": 6268,
   "articles": [
+    {
+      "title": "状態ファイルが12日で170倍に育ち起動費用で死にかけた話",
+      "url": "https://zenn.dev/dev_ctun/articles/company-state-doc-fold-daily-2",
+      "site": "Zenn(LLM)",
+      "published": "2026-09-22T23:06:01Z",
+      "description": "自走するエージェントに自作ツールの開発とタスク管理を任せて放置していたら、APIの枠が想定の倍の速さで減っていた。\n大したタスクをこなしていないのに、残高だけが猛烈な勢いで吸い取られていく。\nログを追ってみると、犯人は状態管理用のマークダウンファイルだった。開業時に2KBだったファイルが、12日後には336KBへ膨らんでいた。\n170倍である。\n\n 追記専用ログによる起動費用の急増\n\n状態ファイル...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "Jevの判断をローカルで再現するには何が要るか",
+      "url": "https://zenn.dev/shimo4228/articles/local-decision-model-conditions",
+      "site": "Zenn(LLM)",
+      "published": "2026-09-22T22:37:33Z",
+      "description": "モデル\n方式\nOpus天井との一致\n1行の時間\n結果\n\n\n\n\nJev (hosted)\nchoice+noul\n0.346\n0.3秒\n✓ 基準値\n\n\ngemma4:e4b\nlogits×54問\n0.162\n51秒\n既存baseline\n\n\nqwen3:8b\nlogits×54問\n— (4行で停止)\n43–74秒\n❌ 遅すぎ\n\n\nLaya\nnoul\n0.075\n39秒\n❌ 無作為並み\n\n\nkev-0...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "Opus 5 に「必ず検証しろ」と書くと逆効果になる：/insights の提案を公式ガイドで検証した",
+      "url": "https://zenn.dev/arufian/articles/eeed6193110a5f",
+      "site": "Zenn(LLM)",
+      "published": "2026-09-22T22:00:05Z",
+      "description": "はじめに\nClaude Code には /insights というコマンドがあります。自分の過去のセッションをまとめて分析して、「あなたはこういう使い方をしてます」「ここで詰まってます」「CLAUDE.md にこう書くといいです」までレポートしてくれるやつです。\n実際に回してみると、これがかなり刺さる内容でした。数十セッション分のログから、薄々気づいていた癖を数字付きで突きつけてくる。しかも改善案...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
     {
       "title": "jev-rerankerの「92%削減」を追試: 閾値0.2は日本語だと攻めすぎだった",
       "url": "https://zenn.dev/mskbhd/articles/lab-723-jev-reranker-92",
@@ -34,11 +64,51 @@
       "image_url": ""
     },
     {
+      "title": "多役ロールプレイの「手強い相手」順位、3回目は入れ替わらなかった",
+      "url": "https://zenn.dev/every_ai_recipe/articles/ai-scope-request-decline-roleplay",
+      "site": "Zenn(LLM)",
+      "published": "2026-09-22T21:20:30Z",
+      "description": "TL;DR\n\n1つのチャットに「前例を盾にする」「交換条件を出す」「他社比較を持ち出す」の3取引先役を立て、追加のスコープ要望を断る側として実際に返答セリフを送り、反応の変化を見る多役ロールプレイを検証した\n各相手役に「守るもの（1行）」を足した詳細版と、名前と役割ラベルだけの簡易版を、同じ交渉内容・同じ返答セリフで並行実行した\n09-09（会議参加者）・09-14（値上げ交渉）の2回の検証では「...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
       "title": "118GB を 1 枚で — 巨大 MoE を速くしたのは、買い足しでも新世代でもなく「並べ方」だった",
       "url": "https://zenn.dev/tsumugi_xe/articles/flashnext-b70-report3-118gb-on-one-card",
       "site": "Zenn(LLM)",
       "published": "2026-09-22T20:06:12Z",
       "description": "つむぎンの3時間クッキング ／ 第3回\nQwen3.8-Flash-Next（118 GB）を Intel Arc Pro B70（32GB）×2 で動かした記録の続きです。\n第1回（動かすまで） → https://zenn.dev/tsumugi_xe/articles/flashnext-on-arc-b70\n第2回（外れ続けた記録） → https://zenn.dev/tsumugi_x...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "Jwenvをmy_web_appに組み込んで検証：候補8行のlm_headと支出14例をソフトウェアWebGPUで実測",
+      "url": "https://zenn.dev/kanta13jp1/articles/jwenv-webgpu-browser-system-one-guide",
+      "site": "Zenn(LLM)",
+      "published": "2026-09-22T19:33:18Z",
+      "description": "はじめに\n\n2026-09-22改訂：Jwenvを自作アプリに組み込んで実際に動かし、確認できた内容だけに書き直しました。旧版にあった誤り（デモが使う jev.js とプロンプト、候補トークンの扱い、語彙行列のサイズ、lm_headの計算量の位置づけ）を訂正し、確認していない記述を削除しています。\n\nきしだ氏（@kis）が、Qwen3-0.6BをJevのように動作するようファインチューンしたモデル...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "LLM の応答を人間が一文字ずつ手打ちするタイピングゲームを作った",
+      "url": "https://zenn.dev/yumemi_inc/articles/you-are-llm-typing-trainer",
+      "site": "Zenn(LLM)",
+      "published": "2026-09-22T18:34:19Z",
+      "description": "!\nこの記事も，紹介するアプリ本体も，ほぼ全て Claude Code に書かせています。\n\n\n はじめに\nAI が書いた文章を，人間が一文字ずつ手で打ち写す。\n字面だけ見ると何かの罰ゲームですが，タイピングの練習としては案外まともです。だって我々が普段 AI に書かせているコードって，自分では一文字も打っていないわけですから。たまには手を動かしましょう。\nというわけで作りました。\nhttps:/...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "ルールを文書に足しても違反は減らなかった。コードに落とした8件だけ再発0だった",
+      "url": "https://zenn.dev/untactit/articles/1c73e33e12518f",
+      "site": "Zenn(LLM)",
+      "published": "2026-09-22T18:29:15Z",
+      "description": "AIエージェントに守らせたいルールがある。まずAGENTS.mdに書く。守られない。もっと詳しく書く。まだ守られない。条文を増やす。\n48日間そうやって運用した結果、常駐指示ファイルは 90KB から 147KB になりました。\nそして違反は減りませんでした。\n数字を出します。すべて自分の環境1台の実測です（n=1）。\n\n 1. トークンの 94.4% は「同じテキストの読み直し」だった\nまず、指...",
       "category": "AI・技術",
       "rss_category": "",
       "image_url": ""

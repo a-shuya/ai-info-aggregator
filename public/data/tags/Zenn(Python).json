@@ -1,8 +1,78 @@
 {
   "site": "Zenn(Python)",
-  "last_updated": "2026-09-23T00:45:30.213316",
-  "total_articles": 6599,
+  "last_updated": "2026-09-23T05:16:58.993282",
+  "total_articles": 6606,
   "articles": [
+    {
+      "title": "claude -p を自動化に組み込んだら、サブスク契約なのに従量課金が静かに溶けていた",
+      "url": "https://zenn.dev/anikuma/articles/claude-code-env-api-key-billing",
+      "site": "Zenn(Python)",
+      "published": "2026-09-23T03:59:00Z",
+      "description": "定額のサブスク（Claude のMaxプランやProプラン）を契約しているのに、claude -p（Claude Code の非対話モード）を自動化スクリプトから呼んでいたら、裏で API の従量課金を消費していた——という事故を踏みました。\nしかも気づいたのは、API残高がゼロになって定時ジョブが全滅したときです。それまでは何のエラーも出ず、静かに課金が溶けていました。\n原因はシンプルで、.en...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "dry-runは移動予定を覚えないと、実行より穏やかな予告を出す",
+      "url": "https://zenn.dev/ikinokori/articles/dry-run-planned-paths-mismatch-check",
+      "site": "Zenn(Python)",
+      "published": "2026-09-23T03:00:05Z",
+      "description": "ファイル整理スクリプトに dry-run を足した。既定では何も動かさず、--apply を付けたときだけ実際にファイルを移す、よくある形だ。書いた本人としては、これで「実行前に何が起きるか読める」ようになったつもりでいた。実際には、この dry-run は実行結果とズレていた。しかも被害が小さく見える方向にズレていた。\nこの記事は、そのズレがどこから構造的に生まれるのか、どう直すのか、直った状態...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "東京都と厚労省の介護オープンデータを突き合わせたら、246件の「矛盾」が出てきた話",
+      "url": "https://zenn.dev/kaigonotonari/articles/b65ab4f1adef03",
+      "site": "Zenn(Python)",
+      "published": "2026-09-23T02:06:32Z",
+      "description": "介護事業所を市区町村単位でまとめたサイトを個人で作っています。データは全部、行政が公開しているオープンデータです。\n作る過程で、「2つの公的データが同じ事業所について違うことを言っている」 という場面に何度もぶつかりました。片方を捨てれば話は早いのですが、調べてみるとどちらも正しくて、測っているものが違うだけでした。\n同じデータを触る人がまた同じところで止まると思うので、ハマったところを残しておき...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "機械学習モデルの評価指標と統計的検定",
+      "url": "https://zenn.dev/972697325291316/articles/7aba4350e0fbb3",
+      "site": "Zenn(Python)",
+      "published": "2026-09-23T01:33:07Z",
+      "description": "はじめに\n機械学習モデルを評価するとき、「Accuracyが0.85でした」で終わってしまうケースをよく見かけます。しかし実務や論文では、\n\nそもそもAccuracy以外にどんな指標を見るべきか\nクラス不均衡があるときにどう評価するか\nモデルAとモデルBの差は「本当に意味のある差」なのか、それとも「たまたま」なのか\n\nといった点まで詰めて考える必要があります。この記事では、まず分類問題でよく使われ...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "スクレイピングエージェントを作る(1)",
+      "url": "https://zenn.dev/drbobt1122/articles/blog26092301",
+      "site": "Zenn(Python)",
+      "published": "2026-09-23T00:06:28Z",
+      "description": "以前からWebスクレイピングには興味があり、自身のブログのアクセスログを抽出したり、\nhttps://takacity.blog.fc2.com/blog-entry-542.html\n日経電子版記事をまとめてスクレイピングしたことがありました。\nhttps://takacity.blog.fc2.com/blog-entry-449.html\nスクレイピングのプログラムを書かれた経験がある方は、...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "エンジニア視点で語る！Pythonで学ぶマクロ経済学入門 61",
+      "url": "https://zenn.dev/maszkot/articles/90595a1cf50c0f",
+      "site": "Zenn(Python)",
+      "published": "2026-09-22T23:04:04Z",
+      "description": "https://qiita.com/maskot1977/items/b2e60b1383d3e9e091cb\nDJミオ：こんばんは。ラジオ教育番組「エンジニア視点で語る！Pythonで学ぶマクロ経済学入門」、今夜も始まりました。ナビゲーターはDJミオです。\nDJレン：DJレンです。今夜は第61回相当の内容、「マクロだけでもミクロだけでもダメ ― 日本経済を立て直す“二階建て”経済政策」を、エンジ...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "LeetCode 1944: Number of Visible People in a Queue 日本語解説",
+      "url": "https://zenn.dev/rinn5/articles/leetcode-1944",
+      "site": "Zenn(Python)",
+      "published": "2026-09-22T22:49:09Z",
+      "description": "LeetCode 1944: Number of Visible People in a Queue を O(N) で解く方法を紹介します。\n\n 1. 右側の人を順に調べる O(N^2) 解法\n各人について右側を順に調べ、途中の誰よりも背が高い人を数えます。自分より背が高い人に出会ったら、それより先は見えないため探索を終了します。\nclass Solution:\n    def canSeePer...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
     {
       "title": "ls -v も sort -V も全角数字では並ばない：ファイル名の並べ替え13通りを844件で測った",
       "url": "https://zenn.dev/aishigoto_lab/articles/filename-sort-order-13-methods",
