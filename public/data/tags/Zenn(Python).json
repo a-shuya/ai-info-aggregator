@@ -1,7 +1,7 @@
 {
   "site": "Zenn(Python)",
-  "last_updated": "2026-09-22T22:19:59.529521",
-  "total_articles": 6597,
+  "last_updated": "2026-09-23T00:45:30.213316",
+  "total_articles": 6599,
   "articles": [
     {
       "title": "ls -v も sort -V も全角数字では並ばない：ファイル名の並べ替え13通りを844件で測った",
@@ -54,11 +54,31 @@
       "image_url": ""
     },
     {
+      "title": "Claude Codeの利用制限でも国試演習を止めない—Codexへのフェイルオーバーを作った",
+      "url": "https://zenn.dev/med_ai_study/articles/kokushi-exercise-failover-claude-code-codex",
+      "site": "Zenn(Python)",
+      "published": "2026-09-22T09:46:20Z",
+      "description": "結論\nClaude Codeで回していた国試演習を、利用制限に達したときだけCodexへ切り替えられるようにした。\nただし、同じプロンプトをCodexへ渡しただけでは切り替わらなかった。問題提示までは動いても、その後の採点、feedback生成、演習履歴への記録がClaude Code専用のhookに依存していたからだ。\nそこで、問題の状態遷移と記録処理を共通Pythonへ寄せ、Claude Co...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
       "title": "Claude の利用量上限を「寝かせずに」乗り越える：resume-queue パターンの設計と実装",
       "url": "https://zenn.dev/tarooo137/articles/claude-usage-limit-resume-queue",
       "site": "Zenn(Python)",
       "published": "2026-09-22T08:54:51Z",
       "description": "この記事は、Slack Bot に「ちょっと待って」と言われ続けたところから始まります。\n個人で運用している AI 自動化システム（メディア投稿パイプライン・各種監視ジョブ・CI 通知の集約など）の司令塔として、Slack Bot を立てていました。Claude CLI をバックエンドに、スレッドの文脈を引き継ぎながら claude -p を叩くシンプルな構成です。ところが夜間バッチが連続して実行...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "Jevで作るTODOアプリ",
+      "url": "https://zenn.dev/mnt/articles/6cdfc81143dfb8",
+      "site": "Zenn(Python)",
+      "published": "2026-09-22T08:34:01Z",
+      "description": "最近、TypeSafe AI から jev というモデルが公開されました。文章を書かずに「判断」と「確率」だけを返すタイプのAIモデルになっており、圧倒的な速さと安さで注目されています。\nこの jev を typesafe-sdk 経由で使い、TODOアプリに組み込んでみました。\n\n Jevとは何か\n一般的なLLMは、テキストを渡すとテキストが返ってきます。構造化データが欲しい場合は、プロンプトで...",
       "category": "開発",
       "rss_category": "",
       "image_url": ""
