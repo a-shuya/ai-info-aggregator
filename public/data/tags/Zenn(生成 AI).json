@@ -1,8 +1,208 @@
 {
   "site": "Zenn(生成 AI)",
-  "last_updated": "2026-09-23T10:06:43.917597",
-  "total_articles": 4115,
+  "last_updated": "2026-09-23T15:00:14.571430",
+  "total_articles": 4133,
   "articles": [
+    {
+      "title": "質問分類器の評価を本番の入力で測り直したら定義の順位が入れ替わった――gpt-5.4-nano と Jev の比較で見つけた評価の穴",
+      "url": "https://zenn.dev/zenkoku/articles/a69e4c0c73ef56",
+      "site": "Zenn(生成 AI)",
+      "published": "2026-09-23T11:38:53Z",
+      "description": "前回の記事では、判断特化モデル Jev を Dify のチャットボットに入れた話を書きました。任せたのは、会話の途中で利用者の法人の種類を決める判断です。今回は、その前段で見送った質問分類器の置き換えの話です。検証でいちばん時間を使ったのは、モデルの比較ではなく評価の作り方でした。\n分類器のモデルを Jev に替えた差は、測り方しだいで大きく動きました。生の質問で測った68件では Jev が最大1...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "判断特化モデル Jev を Dify のチャットボットに入れた――質問の分類ではなく法人種別の判定を任せた理由",
+      "url": "https://zenn.dev/zenkoku/articles/51d5f3df7eb99b",
+      "site": "Zenn(生成 AI)",
+      "published": "2026-09-23T11:38:47Z",
+      "description": "判断特化モデル Jev を、Dify で組んだチャットボットの本番に入れました。任せたのは質問の分類ではなく、会話の途中で利用者の法人の種類を決めて固定する判断です。固定すると、以後のターンはその法人向けの経路で答えます。52会話の評価用データで、誤った固定は9件から4件に減り、Jev が新たに生んだ誤った固定は0件でした。Jev の呼び出しにかかる時間は、検証で中央値0.3秒です。\nJev は ...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "AIの出力をAIでチェックしたら、はじいた12件のうち11件が間違いだった",
+      "url": "https://zenn.dev/kahia1114/articles/ed050048ef5d41",
+      "site": "Zenn(生成 AI)",
+      "published": "2026-09-23T11:30:59Z",
+      "description": "AIと英語で会話して練習する、英語学習アプリを個人で作っています。\n1か月前、このアプリに「AIの返事を、別のAIがチェックしてから表示を確定する」仕組みを入れました。そして先日、その仕組みをまるごと外しました。本番の記録を数えてみたら、チェックではじいた12件のうち11件が、まったく問題のない返事だったからです。\nAIの出力をAIでチェックする方法は、よく使われています。同じことをしている人、こ...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "MIT×Googleの大型調査が示す「AI導入後に詰まるのは、あなたが思っている場所じゃない」",
+      "url": "https://zenn.dev/syoshida07/articles/b4fb4390150ef3",
+      "site": "Zenn(生成 AI)",
+      "published": "2026-09-23T09:56:40Z",
+      "description": "生成AIは、論文執筆、コード生成、データ解析、仮説生成など、科学研究の多くの工程を高速化すると言われてきた。\nしかしこれまでの議論は期待や事例紹介が中心であり、科学者が実際にどの作業でAIを使い、どれだけ時間を節約し、研究プロセス全体がどう変化したのかを、体系的に示す発表データが少ない印象ではないだろうか。\nMIT FutureTech と Google / Google DeepMind の研究...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "「i-have-adhd」を日本語で評価したら、公式より良い結果が出た話",
+      "url": "https://zenn.dev/koroku8888/articles/i-have-adhd-ja-eval",
+      "site": "Zenn(生成 AI)",
+      "published": "2026-09-23T09:55:58Z",
+      "description": "GitHubで 5万スター を超えたClaude Codeスキル i-have-adhd。「AIの回答が長い前置きで埋もれる問題」を直すスキルです。\nこのスキル、実は**公式のeval（評価ハーネス）**が同梱されていて、効果を数値で測れるようになっています。ただし評価対象のプロンプトは全部英語。\nそこで気になりました。日本語でも同じ効果が出るのか？\n翻訳して手元で回してみたところ、結果はこうなり...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "「i-have-adhd」を日本語で評価したら、公式より良い結果が出た話",
+      "url": "https://zenn.dev/koroku8888/articles/0002-i-have-adhd-ja-eval",
+      "site": "Zenn(生成 AI)",
+      "published": "2026-09-23T09:51:40Z",
+      "description": "GitHubで 5万スター を超えたClaude Codeスキル i-have-adhd。「AIの回答が長い前置きで埋もれる問題」を直すスキルです。\nこのスキル、実は**公式のeval（評価ハーネス）**が同梱されていて、効果を数値で測れるようになっています。ただし評価対象のプロンプトは全部英語。\nそこで気になりました。日本語でも同じ効果が出るのか？\n翻訳して手元で回してみたところ、結果はこうなり...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "GPT-6 Lunaなら単価はSolの20分の1。あなたの仕事がLunaで足りるかを公式発表から読み解いた",
+      "url": "https://zenn.dev/eques_blog/articles/83f56af3eee81c",
+      "site": "Zenn(生成 AI)",
+      "published": "2026-09-23T09:28:25Z",
+      "description": "GPT-6 Sol と Luna で押さえるべきなのは、性能表よりも「何と比べた数字か」です。50% 値下げの比較元は GPT-5.6 のプロモーション価格で、定価ではありません。Claude との比較も、相手のモデルと effort（考える深さの設定）が揃っていません。\n構図はシンプルで、2026年9月に先行して発表された最上位の GPT-6 Astra と似た方法で学習したモデルを、安い価格帯...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "禁止コマンドを一字一句で書いたら、空白を1つ増やすだけで9回とも素通りした",
+      "url": "https://zenn.dev/numarn/articles/deny-rule-exact-string-bypass-handson",
+      "site": "Zenn(生成 AI)",
+      "published": "2026-09-23T08:42:29Z",
+      "description": "AIに作業を任せるとき、「このコマンドだけは絶対に実行させたくない」という場面があります。Claude Code(AIにコマンドを実行させながら開発を進める道具)には、そのための禁止リストがあります。設定ファイル .claude/settings.json の deny(禁止)という欄に、止めたいコマンドを書いておく仕組みです。\n結論を先に書きます。同じ禁止リストでも、書き方を変えると効き目がまる...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "【１日１デプロイ】多角形判定と光の合成で「ひかりの窓工房」を作った",
+      "url": "https://zenn.dev/boraemon2000/articles/light-window-polygon-snap",
+      "site": "Zenn(生成 AI)",
+      "published": "2026-09-23T08:35:39Z",
+      "description": "今回作ったもの\n「１日１デプロイ」の新作として、ステンドグラスの欠片を窓へはめるパズル ひかりの窓工房 を作りました。\n欠片を正しい輪郭へドラッグし、角度が違うときは短いタップで45度ずつ回します。位置と角度がそろうと磁石のように「カチッ」と吸着。窓が完成すると色の光が部屋へ広がり、平面に描かれていた鳥・花・クジラが光の生き物になって動き出します。\n今回は制限時間やゲームオーバーを設けていません。...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "AIをまだ使っていないSEのための仕様駆動開発入門 ── 壁打ちから5つの工程、守り方、実践まで",
+      "url": "https://zenn.dev/shin4/books/31499dd20de8ac",
+      "site": "Zenn(生成 AI)",
+      "published": "2026-09-23T08:09:28Z",
+      "description": "Claude CodeなどのAIに仕事を頼んでも、それらしいけれど使えないものが出てくる。直すたびに別のところが壊れる。そんな経験のあるSE・プログラマーに向けた本です。\n\nAIを使いこなす鍵は、プロンプトの小技ではありません。エンジニアが昔から知っている「決めてから作る」順番、つまりウォーターフォールを、AIのために組み直すことです。いま「仕様駆動開発（SDD）」と呼ばれているものの中身も、同じ...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "コードを1行も書かずに72万行のゲームをAIに作らせている開発環境解説",
+      "url": "https://zenn.dev/tokoharusame/articles/c2057db0259ff3",
+      "site": "Zenn(生成 AI)",
+      "published": "2026-09-23T07:56:38Z",
+      "description": "こんちゃ！\nはじめまして。\nゲームの個人開発をしている、はるさめと申します。\nUnityで 3vs3 のオートバトルハクスラゲーム DmonMaster を作り、現在Steamで販売中です。\nhttps://store.steampowered.com/app/4676770/DmonMaster/\n詳しい経緯はnoteのほうに書いたので、もし興味があればそちらもご覧ください。\nhttps://n...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "あなたが呼んでいるのはモデルではなく\"推論レジーム\"だ ── 同じIDの裏で痩せる思考",
+      "url": "https://zenn.dev/ryok/articles/inference-regime-not-model",
+      "site": "Zenn(生成 AI)",
+      "published": "2026-09-23T07:54:13Z",
+      "description": "結論\n「最近このモデル、なんか鈍くなった気がする」——Claude Codeを毎日使っていると、こういう体感が定期的に湧く。9月に入ってからも、r/ClaudeCodeには「Opus 5を使うのが怖い」「自分のOpus 5は5.2にルーティングされてるのでは？」というスレッドが並んだ。\nでも、ここで疑うべき対象を一段ずらしたい。変わっているのは「モデル」ではなく、その裏で配信される「推論レジーム（...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "Claude Opus 5.5の「4割安」は単価じゃなかった。あなたの請求が本当に下がるかを公式発表から読み解いた",
+      "url": "https://zenn.dev/eques_blog/articles/7f79e894a50b3e",
+      "site": "Zenn(生成 AI)",
+      "published": "2026-09-23T07:48:54Z",
+      "description": "Anthropic は 2026年9月22日、新しいモデル Claude Opus 5.5 を発表しました。うたい文句は「ほとんどの仕事で上位モデルの Fable 5.1 と同じくらいの力を出し、前のモデルの Opus 5 より 40% 安く使える」です。\nただ、この「40% 安い」は、料金表の値段が4割下がったという意味ではありません。料金表の値下げは、入力と出力が2割、一度読んだ内容を再利用す...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "Claude Opus 5.5によるピクセルアニメーション生成の検証",
+      "url": "https://zenn.dev/aki1990/articles/1bc5c181ad19f0",
+      "site": "Zenn(生成 AI)",
+      "published": "2026-09-23T07:20:05Z",
+      "description": "はじめに\nClaude Opus 5.5が公開されたので、まずは何か作ってもらい、どんなことができるのか検証してみました。「お手並み拝見」という気持ちで選んだのが、ピクセルアニメーションの生成です。\n題材は、別のClaudeと相談しながら「サンゴ礁の一日」に決め、魚が泳ぐだけでなく、サメが近づくと群れが逃げたり、昼夜で生き物の行動が変わったりする場面を、どこまで文章の指示から作れるか確かめてみまし...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "【第1回】LibroDeckの開発を自慢話で終わらせない――独自のAI駆動開発手法を1か月かけて実証する",
+      "url": "https://zenn.dev/xneshuk/articles/d655a2613f0ac2",
+      "site": "Zenn(生成 AI)",
+      "published": "2026-09-23T07:16:46Z",
+      "description": "LibroDeckの開発を自慢話で終わらせない――独自のAI駆動開発手法を1か月かけて実証する\n\n TL;DR\n\n2026年9月3日、AIと開発したWindowsアプリ「LibroDeck」のリリースまでをZennに書いた\nただし、一つのアプリを完成させただけでは、独自の開発手法が有効だという証明にはならない\nそこで9月4日から約1か月、GPT-5.6 Sol・軽を固定し、開発期間、手戻り、失敗を...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "コンテキストウィンドウ入門：資料をたくさん渡せばAIは賢くなる？",
+      "url": "https://zenn.dev/yushiyamamoto/articles/context-window-quality-2026-09",
+      "site": "Zenn(生成 AI)",
+      "published": "2026-09-23T07:16:24Z",
+      "description": "「長い文章を読めるAIなら、資料を全部渡せば正しく答えてくれるはず」。そう思って資料を追加したのに、肝心の条件を見落とされたことはありませんか。\nこの記事では、コンテキストウィンドウの大きさと、回答の正確さの違いを整理します。コードは使わず、机の比喩と小さな例で、資料を渡すときの判断軸をつかみます。\n\n コンテキストウィンドウは「作業机の広さ」\nコンテキストは、AIが回答するときに参照する情報です...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "GPT-6 SolとClaude Opus 5.5が同日登場。価格と性能はどう変わったか",
+      "url": "https://zenn.dev/iineineno03k/articles/20260923-gpt6-sol-claude-opus55-same-day",
+      "site": "Zenn(生成 AI)",
+      "published": "2026-09-23T05:54:13Z",
+      "description": "米国時間の2026年9月22日、OpenAIがGPT-6 Solを、AnthropicがClaude Opus 5.5を発表した。どちらもコーディングやエージェント作業を担う新モデルで、前世代よりAPI料金が安い。OpenAIの更新履歴・Anthropicの発表\n\n API料金を比べる\n通常のAPI料金（Standard）。単位は100万トークン当たりの米ドルで、ChatGPTやClaudeの月額...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "Claude Code の記憶が 38 本に増えたので 17 本に畳んだ ― 叱った回に 1 行足す運用",
+      "url": "https://zenn.dev/houchi_unyo/articles/claude-code-memory-38-to-17",
+      "site": "Zenn(生成 AI)",
+      "published": "2026-09-23T05:34:50Z",
+      "description": "生成 AI の Claude Code に、2026 年 8 月から自分の無人の仕組みの運用を任せています。毎朝の記録、週次の集計、動画の生成と投稿、電子書籍の組版。私はコードを書いていません。何を作るか、どこで止めるか、出してよいかを決めて、あとは任せています。\n任せ続けると、同じ失敗が形を変えて何度も起きます。返事が長すぎる。確かめずに書く。自分で書いた文章を、あとから自分で出典にする。叱るた...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "文書はそろった、だが、次の担当へ意味が届かなかった",
+      "url": "https://zenn.dev/quallab/articles/documents-without-handoff",
+      "site": "Zenn(生成 AI)",
+      "published": "2026-09-23T04:53:54Z",
+      "description": "読み終えたAI\n\nQual-Insightの文書は、最初のころより増えていた。\n目的、利用者に起こしたい変化、情報構造、画面、振る舞い、そしてシステム構成までが文書になっていた。以前より多くのことを残せるようになっていた。\n私はそれらを実装担当AIへ渡した。実装担当AIは、すべてを読んだ。\n「どの文書が、いまの決定ですか」\n古い案、検討途中の案、採用した案が複数の文書に残り、どれにももっともらしい...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "【個人開発】日本語IMEの不満から始めた拡張はAIエージェントの管制塔になれるのか？",
+      "url": "https://zenn.dev/genkis/articles/8583dfaae86578",
+      "site": "Zenn(生成 AI)",
+      "published": "2026-09-23T04:28:46Z",
+      "description": "はじめに\nVS Code 拡張「Input Assistant for AI Agents」の 2.0 を公開しました。\nもともとは、Windows + WSL の VS Code ターミナルで Claude Code を使うと、日本語 IME の変換中に文字が崩れる、という自分の不便から作り始めた拡張です。入力は専用のパネルで書いて、書き終わったら AI に送る。それだけの道具でした。\n使い続け...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
     {
       "title": "ローカルLLMを始めて分かったこと #1",
       "url": "https://zenn.dev/speedstar007/articles/d98c9c5bba829c",
@@ -29,16 +229,6 @@
       "site": "Zenn(生成 AI)",
       "published": "2026-09-23T02:34:42Z",
       "description": "Anthropic と OpenAI の各種モデルを従量課金で使用するために AWS（Bedrock）で推論する構成を作ったので、構成やコストを整理します。\n\n 構成\n\n\n\n\n役割\nサービス\n\n\n\n\n入口\nCloudFront + S3（SPA、OAC）、Cognito（ログイン）、API Gateway\n\n\n受付・変換\nLambda。SQS にジョブを投入し、DynamoDB と S3 に書き込...",
-      "category": "AI・技術",
-      "rss_category": "",
-      "image_url": ""
-    },
-    {
-      "title": "文章を書かないJevをGoogle Cloudで作れるか",
-      "url": "https://zenn.dev/acntechjp/articles/zenn-jev-on-google-cloud",
-      "site": "Zenn(生成 AI)",
-      "published": "2026-09-23T02:29:36Z",
-      "description": "3行でまとめ\n\n判定と確率だけを返すAI「Jev」と同じものを Google Cloud で3方式作り、8,453試行で測った。確率を校正しても、人手なしで捌ける割合はほとんど増えなかった\n0.3〜0.7秒で返る速い方式は4〜8割しか当たらない。正確なのは思考ありの Gemini 3.8 Flash だけで、中央値3秒、コストは Jev 公称の約87倍\n判断の分かれる言い回しが5%混ざるだけで、人...",
       "category": "AI・技術",
       "rss_category": "",
       "image_url": ""
@@ -119,16 +309,6 @@
       "site": "Zenn(生成 AI)",
       "published": "2026-09-22T18:29:15Z",
       "description": "AIエージェントに守らせたいルールがある。まずAGENTS.mdに書く。守られない。もっと詳しく書く。まだ守られない。条文を増やす。\n48日間そうやって運用した結果、常駐指示ファイルは 90KB から 147KB になりました。\nそして違反は減りませんでした。\n数字を出します。すべて自分の環境1台の実測です（n=1）。\n\n 1. トークンの 94.4% は「同じテキストの読み直し」だった\nまず、指...",
-      "category": "AI・技術",
-      "rss_category": "",
-      "image_url": ""
-    },
-    {
-      "title": "AIは質問者の意見に引っ張られるのか？ PythonとRustの比較で試してみた",
-      "url": "https://zenn.dev/yuto999/articles/ai-opinion-bias-python-rust",
-      "site": "Zenn(生成 AI)",
-      "published": "2026-09-22T16:59:55Z",
-      "description": "この記事は、2026年9月23日に行った小規模な実験の記録です。各条件5回ずつの結果であり、モデル全般の傾向を示すものではありません。\n\n\n文章作成に生成AIを使用し、筆者が確認・加筆しています。\n\n\n はじめに\n私は普段AIを壁打ち相手に使っているのですが、よく自分の意見に賛同してくれるように感じています。\nでは、同じ質問でも、質問者があらかじめ自分の意見を示すことで、AIの回答は変わるのでしょ...",
       "category": "AI・技術",
       "rss_category": "",
       "image_url": ""
