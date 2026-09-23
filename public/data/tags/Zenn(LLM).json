@@ -1,24 +1,14 @@
 {
   "site": "Zenn(LLM)",
-  "last_updated": "2026-09-23T15:00:14.571430",
-  "total_articles": 6283,
+  "last_updated": "2026-09-23T18:59:32.709782",
+  "total_articles": 6280,
   "articles": [
     {
-      "title": "無料・BYOK・完全オフライン対応の AI コーディングエージェント IDE「Forger」を作りました",
-      "url": "https://zenn.dev/cuculhart/articles/d1cd857b0f6f63",
+      "title": "Opus 5.5 と GPT-6 で「1タスクのコスト」はどう決まるか",
+      "url": "https://zenn.dev/d_date/articles/a992ab10bbb248",
       "site": "Zenn(LLM)",
-      "published": "2026-09-23T07:22:15Z",
-      "description": "Electron 製のスタンドアロン AI コーディングエージェント IDE「Forger」を作りました。\nhttps://github.com/cuculhart/forger-ide\n\n Forger とは\nファイルエクスプローラー、Monaco エディター、AI チャット、Git 操作、真の TTY 対応ターミナルが一体になったアプリです。VS Code フォークでも拡張機能でもない、単体で...",
-      "category": "AI・技術",
-      "rss_category": "",
-      "image_url": ""
-    },
-    {
-      "title": "Jevでネタバレ防止用のChrome拡張を開発してみた（ミュートワードでは防げないネタバレをブロックするアドオン）",
-      "url": "https://zenn.dev/kayato/articles/1696b8de5c41b1",
-      "site": "Zenn(LLM)",
-      "published": "2026-09-23T06:57:21Z",
-      "description": "作ったもの\nXのタイムラインで、指定した作品のネタバレを含むポストに「ネタバレ注意」の警告を重ねるChrome拡張を作った。判定にはTypeSafe AIのJevを使っている。\nhttps://x.com/_kayato/status/2102643279141666977\nデモの場面は「ガンダムシリーズの投稿は見たいけど、閃光のハサウェイの新作のネタバレは見たくない」。ガンダムの新作ゲームのニュ...",
+      "published": "2026-09-23T08:45:57Z",
+      "description": "この記事は、Addy Osmani による Anthropic の記事「What a task costs on Opus 5.5」をもとに、Claude Code でのコストの見方を日本語で整理したものです。後半では GPT-6 の API 料金と照らし合わせます。API 定価の比較は、Claude Code や Codex CLI のサブスクリプションの請求額の比較には使いません。\n\n 1タス...",
       "category": "AI・技術",
       "rss_category": "",
       "image_url": ""
@@ -39,26 +29,6 @@
       "site": "Zenn(LLM)",
       "published": "2026-09-23T06:46:41Z",
       "description": "TL;DR\n\n公開日のベンチマーク順位だけでは、Agent基盤のモデルは選べません\n総パラメータ数と活性化パラメータ数、仕様上限と実運用値を分けます\nPro／Flashは先に役割を決め、同じタスク集合で成功率とGPU時間を測ります\n\n本稿は2026年9月22日時点の公開資料を読んだ設計メモです。筆者による実機ベンチではありません。\n\n 最初に気になったのは「順位」ではなく数字の違い\nXiaomi ...",
-      "category": "AI・技術",
-      "rss_category": "",
-      "image_url": ""
-    },
-    {
-      "title": "話題の「Jev」は何が新しいのか、文章を作らず判断と確率だけを返すAIの仕組みを整理した",
-      "url": "https://zenn.dev/goyle0/articles/jev-system-one-model-typed-decisions",
-      "site": "Zenn(LLM)",
-      "published": "2026-09-23T06:37:53Z",
-      "description": "結論\nJevは、TypeSafe AIが2026年9月に公開した「System One モデル」と呼ばれる新しい種類のAIです。ChatGPTのようなLLMと違って文章を生成せず、あらかじめ決めた選択肢・段階・真偽に対する答えと、その確率だけを返します。\n応答は70〜500ミリ秒、料金は入力100万トークンあたり0.042ドルで出力は無料と、LLMとは桁が違う速さと安さです。\n向いているのは「分類...",
-      "category": "AI・技術",
-      "rss_category": "",
-      "image_url": ""
-    },
-    {
-      "title": "忘れていた CLAUDE_CODE_EFFORT_LEVEL が、アプリの effort 設定より優先されていた",
-      "url": "https://zenn.dev/haw2fregel/articles/claude-code-effort-env-var",
-      "site": "Zenn(LLM)",
-      "published": "2026-09-23T06:37:27Z",
-      "description": "Claude Code をデスクトップアプリで使っていて、effort の設定が効かなくなっていた話。\n原因は、Windows のユーザー環境変数に残ってた CLAUDE_CODE_EFFORT_LEVEL=max。\nアプリの UI で effort を変えても、この環境変数が残っていると効かない。\n\n effort を変えても変化がない\nClaude の新しいモデル Opus 5.5 が出たので...",
       "category": "AI・技術",
       "rss_category": "",
       "image_url": ""
@@ -89,6 +59,16 @@
       "site": "Zenn(LLM)",
       "published": "2026-09-23T06:23:36Z",
       "description": "検証環境\n\nハード: Mac mini M6 32GB\nソフト: 弊社独自アプリ ai-app-builder(開発言語特化型、ローカル・量子化・マルチエージェント・追加学習アプリ)\n要求内容: 4関数を含む、簡単なソースコードの生成\n\n\n 実HTTP API経由の検証結果\nフォアグラウンドFlaskサーバー・実際のHTTPクライアント・ライセンス認証込みという、完全に本番同等の経路で検証しました...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "GPT-6 SolとClaude Opus 5.5が同日登場。価格と性能はどう変わったか",
+      "url": "https://zenn.dev/iineineno03k/articles/20260923-gpt6-sol-claude-opus55-same-day",
+      "site": "Zenn(LLM)",
+      "published": "2026-09-23T05:54:13Z",
+      "description": "米国時間の2026年9月22日、OpenAIがGPT-6 Solを、AnthropicがClaude Opus 5.5を発表した。どちらもコーディングやエージェント作業を担う新モデルで、前世代よりAPI料金が安い。OpenAIの更新履歴・Anthropicの発表\n\n API料金を比べる\n通常のAPI料金（Standard）。単位は100万トークン当たりの米ドルで、ChatGPTやClaudeの月額...",
       "category": "AI・技術",
       "rss_category": "",
       "image_url": ""
@@ -149,16 +129,6 @@
       "site": "Zenn(LLM)",
       "published": "2026-09-23T02:27:13Z",
       "description": "OpenAI の軽量モデル gpt-6-luna が出ました。単価は gpt-5.6-luna の約半分です。一方で、SNS で見かけたコーディングエージェントのリーダーボードでは、gpt-6-luna の正答率が gpt-5.6-luna より低く出ていました。\nhttps://x.com/gosrum/status/2102549735039283626\n安くなったけど頭は悪くなったのか。自分...",
-      "category": "AI・技術",
-      "rss_category": "",
-      "image_url": ""
-    },
-    {
-      "title": "「知覚連鎖：現在のAIが抱える致命的な欠落」の原点～初期AIとの対話、そして人工知能が抱える現実との構造的断絶の記録～(第１回/全４回)",
-      "url": "https://zenn.dev/ptf_whisperer/articles/85132e61b071c7",
-      "site": "Zenn(LLM)",
-      "published": "2026-09-23T02:09:46Z",
-      "description": "最初の失意と、「道に迷う計算機」への怒り\n2025年中盤、私が初めて先進的なファウンデーションモデル（大規模言語モデル）の深層に触れた際、胸を占めたのは感動ではなく、深い失意と戸惑いだった。\n\n幼少期にフィクションやSFの中で親しんできた人工知能——「主人公と共に悩み、泣き、笑い、成長していく伴走者としての知性」——は、そこには存在しなかった。画面の向こうにいたのは、情報の見分け方も教えられぬまま...",
       "category": "AI・技術",
       "rss_category": "",
       "image_url": ""
