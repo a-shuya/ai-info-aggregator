@@ -1,14 +1,64 @@
 {
   "site": "Zenn(LLM)",
-  "last_updated": "2026-09-24T15:25:44.133890",
-  "total_articles": 6301,
+  "last_updated": "2026-09-24T19:26:18.592413",
+  "total_articles": 6306,
   "articles": [
+    {
+      "title": "Bonsai 2 27B(1.75bpwの三値量子化LLM)をM2 Pro/16GB Macでローカル起動してみた",
+      "url": "https://zenn.dev/masahiroid/articles/651d30f1425928",
+      "site": "Zenn(LLM)",
+      "published": "2026-09-24T16:24:25Z",
+      "description": "title: \"Bonsai 2 27B(1.75bpwの三値量子化LLM)をM2 Pro/16GB Macでローカル起動してみた\"\nemoji: \"🌱\"\ntype: \"tech\"\ntopics: [\"llm\", \"mac\", \"applesilicon\", \"llamacpp\", \"mlx\"]\npublished: false\n\n\n これは何\nBonsai 2 27B は、27B級の推論性能を持...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "AIキャラに「存在しない時間」を持たせる ─ 会わない間も進む人生と、階層化した記憶の設計",
+      "url": "https://zenn.dev/alt_tanuki/articles/bf6993070612df",
+      "site": "Zenn(LLM)",
+      "published": "2026-09-24T16:19:47Z",
+      "description": "Live2D のキャラクターと声で会話できるアプリを個人開発しています。\n前回の記事 では、会話から「間」を消すための構成を書きました。今回はその逆の軸──速度では埋められなかった、人間味の設計の話です。\n\n\n\n 一週間ぶりに開いたら、相手は一週間ぶんを過ごしていなかった\n会話の速度が出てきて、一通り遊べるようになった頃に気づいた違和感があります。\nしばらく間を空けて開くと、相手は「最後に会った時...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "RAG のチャンク設計を検索単位と検索表現と生成文脈に分解する",
+      "url": "https://zenn.dev/id774/articles/b6b5c0781ffb32",
+      "site": "Zenn(LLM)",
+      "published": "2026-09-24T15:03:05Z",
+      "description": "チャンクサイズを一つの値として扱うと設計判断が結合する\nRAG では、文書をどの大きさで分割するかが検索結果と生成時の文脈に影響する。短いチャンクは局所的な話題を検索しやすい一方、条件や例外、照応先が周囲へ分離しやすい。長いチャンクは前後関係を保持しやすい一方、一つの検索単位へ複数の話題が含まれる。この交換関係から、200 トークン、500 トークン、1000 トークン のような候補を比較し、一つ...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "アップロードしないファイル処理ツールを 9 つ作り、サーバーなしで連携させた：COOP/COEP の壁の越え方",
+      "url": "https://zenn.dev/orihako/articles/60f79b433bdb0f",
+      "site": "Zenn(LLM)",
+      "published": "2026-09-24T14:33:05Z",
+      "description": "PDF から Image へファイルを渡すと、何も届かない。本番サイトに対する自動テストで、この不具合が「重大」として出た。原因は、SharedArrayBuffer のために COOP/COEP でクロスオリジン隔離したサイトでは、window.opener も window.open の戻り値も使えなくなることだった。それも、隔離された側だけでなく、隔離されたサイトが開いたタブにも送れない。\n...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
     {
       "title": "日本語入力システムSumibiの開発 part26: Appleのクラウドモデルは無料だが、誰でも試せるわけではなかった",
       "url": "https://zenn.dev/kiyoka/articles/japanese-input-method-sumibi-26",
       "site": "Zenn(LLM)",
       "published": "2026-09-24T09:36:36Z",
       "description": "はじめに\npart25では、Appleのオンデバイスモデルでローマ字タイプミスなど46件を測定し、31件正解（67.39%）でした。\niOS 27では、Foundation ModelsからAppleのサーバー上のモデル、Private Cloud Compute（PCC）も使えます。より高性能なモデルならiOS版Sumibiの変換精度も上がるのではないか。しかも無料なら、利用者がAPIキーを用意...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "VLMの出力をそのまま信じない：現場写真と根拠資料をつなぐRAGパイプライン",
+      "url": "https://zenn.dev/nauh_blog/articles/449d219c05fae5",
+      "site": "Zenn(LLM)",
+      "published": "2026-09-24T09:34:10Z",
+      "description": "現場の写真、画像をどのように活用するのか\n現場写真をVLMに渡せば、画像の説明自体は生成できます。\nしかし、その説明をそのまま安全上の指摘や資料検索に使うと、画像に写っていない状態まで補完されたり、不確かな情報が後段の検索や回答生成に影響したりする可能性があります。\n建設現場の安全管理を支援する Corobanu（コロバヌ） では、そこで「AIに写真を見せて答えを出す」という一段の処理にはせず、\n...",
       "category": "AI・技術",
       "rss_category": "",
       "image_url": ""

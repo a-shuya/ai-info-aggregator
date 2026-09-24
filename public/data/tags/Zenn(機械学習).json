@@ -1,8 +1,38 @@
 {
   "site": "Zenn(機械学習)",
-  "last_updated": "2026-09-24T15:25:44.133890",
-  "total_articles": 1892,
+  "last_updated": "2026-09-24T19:26:18.592413",
+  "total_articles": 1894,
   "articles": [
+    {
+      "title": "判断特化AI「Jev」入門──チケット振り分け・ガードレール実践例",
+      "url": "https://zenn.dev/gixo/articles/typesafe-jev-system-one-ai",
+      "site": "Zenn(機械学習)",
+      "published": "2026-09-24T11:50:27Z",
+      "description": "はじめに\n2026年9月15日、米スタートアップ TypeSafe AI が、新しいAIモデル Jev を公開しました。このモデルはChatGPTやClaudeのような「文章を書く」LLMとは対照的に、文章そのものは生成せず、代わりに、選択肢・スコア・確率といった「型付きの判断結果」だけを数十〜数百ミリ秒という速度で結果を返してきます。\n創業者のDiogo Almeida氏は元OpenAI研究者で...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "OCI (Artificial Intelligence)AI Foundations(JP) Hands-on Workshop",
+      "url": "https://zenn.dev/shoryuken/books/oci-ai-foundations-workshop-ja",
+      "site": "Zenn(機械学習)",
+      "published": "2026-09-24T08:20:26Z",
+      "description": "Oracle Cloud Infrastructure AI Foundations Associate (1Z0-1122-26) の実習を日本語で完走するハンズオン・ワークショップです。OCI コンピュート上に JupyterLab を立ち上げ、単変量／多変量線形回帰、ロジスティック回帰、多層パーセプトロン、K-Means クラスタリングを Python で動かしながら機械学習の基本を体感しま...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "説明上手なAIの次に来るもの ― Jevの「確率で答えるAI」を見て考えたこと",
+      "url": "https://zenn.dev/rehabforjapan/articles/jev-calibrated-trust",
+      "site": "Zenn(機械学習)",
+      "published": "2026-09-24T08:20:19Z",
+      "description": "はじめに\nRehab for JAPANでCTOを務めている@rkyuragiです。\n9月15日に、TypeSafe AIが「Jev」というモデルを発表しました（Introducing System One Models &amp; Jev）。「LLMより40〜200倍速い」「入力は100万トークンあたり$0.042で、出力トークンは無料」といった数字が先に話題になっていましたが、自分が気になった...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
     {
       "title": "線形代数シリーズ3：固有値・固有ベクトルから特異値分解",
       "url": "https://zenn.dev/972697325291316/articles/e73e10f5eb45f6",
@@ -24,11 +54,11 @@
       "image_url": ""
     },
     {
-      "title": "JevとローカルLLMは何が違うのか？｜未知知識の挙動と「Jevでしか無理な要件」の検証",
+      "title": "JevとローカルLLMは何が違うのか？｜未知知識の挙動、ルール判定、そして「三値論理」によるグレーゾーン救出",
       "url": "https://zenn.dev/null_teck/articles/jev-vs-local-usecases",
       "site": "Zenn(機械学習)",
       "published": "2026-09-24T03:04:46Z",
-      "description": "!\n先に結論を言います\n\n\n「Jevでしか無理な要件」はあるのか？: 技術的・機能的に「Jevでしか絶対に実現できない要件」は存在しない（見つけられなかった）。テキスト生成を介さないTyped Decisionや比喩文脈の識別力はオープンモデル（WSL2 ＋ SGLang、SemIf等）で手元で完全に再現可能。実態は 「GPUインフラ管理不要 × 社外公開データ × 数行のAPI呼び出し」というZ...",
+      "description": "!\n先に結論を言います: 推論精度や機能はローカルで完全に代替できるため「インフラ要件（GPUの有無・機密性）」で使い分けるのが正しく、どちらを使う場合も Yes/No を捨てて「三値論理（保留）」で設計するのが鉄則です。\n\n\n\n 1. はじめに：確率較正の先にある「実務での適用境界」\n前回の検証記事『Jevはサイコロを振らないがローカルLLMは振れるのか？｜「較正された確率」の検証と命題設計のブ...",
       "category": "AI・技術",
       "rss_category": "",
       "image_url": ""
@@ -134,11 +164,11 @@
       "image_url": ""
     },
     {
-      "title": "Jevはサイコロを振らないがローカルLLMは振れるのか？｜「較正された確率」の検証",
+      "title": "Jevはサイコロを振らないがローカルLLMは振れるのか？｜「較正された確率」の検証と命題設計のブレークスルー",
       "url": "https://zenn.dev/null_teck/articles/jev-dice-calibration",
       "site": "Zenn(機械学習)",
       "published": "2026-09-22T13:38:36Z",
-      "description": "!\n先に結論を言います\n\n\n客観的な統計確率としての限界: 先行研究（林寛太氏）が示した通り、本家Jevであっても手がかりのない公平な6面サイコロでは平均 82.9% と確信度を過大報告し（先頭バイアス）、低確率域でも過大評価が生じる。Jevの確率較正は、主として「知識タスクにおけるメタ認知（無知の自覚）」に閉じたものである。\n\nローカル Qwen3.5-4B との実機比較検証: 同一のサイコロ問...",
+      "description": "!\n先に結論を言います\n\n\n「モデルがサイコロを振らないのではない。Yes/Noという質問の立て方が事象空間を壊していた」:\n未観測情報ゼロ下で「出目1か？（はい/いいえ）」と問うと、肯定バイアスと最大エントロピーにより確率が 50% 前後に縮退します。しかし、選択肢を 「出目は1である」vs「出目は2〜Nのいずれかである」 と補集合を明示する質問形式に改めるだけで、Kev-4B や Qwen3....",
       "category": "AI・技術",
       "rss_category": "",
       "image_url": ""
@@ -179,16 +209,6 @@
       "site": "Zenn(機械学習)",
       "published": "2026-09-21T15:18:44Z",
       "description": "第6回では、1,164レースを予測し、そのうち953レースを採点しました。残る211レースは中止・特殊成績・同着です。\nこの除外は、普通の着順が付いたレースでモデルを比較するための条件でした。ところが「予測したレースに毎回100円を割り当てたら、いくら残るのか」という問いには、その953レースだけでは答えられません。\n今回は、予測を一つも消さずに精算します。保存モデルと選択艇は変更しません。できあ...",
-      "category": "AI・技術",
-      "rss_category": "",
-      "image_url": ""
-    },
-    {
-      "title": "CNNの二つのインダクティブバイアス：空間的同変性と局所性",
-      "url": "https://zenn.dev/972697325291316/articles/2e6bb822bf691c",
-      "site": "Zenn(機械学習)",
-      "published": "2026-09-21T13:34:23Z",
-      "description": "CNN（畳み込みニューラルネットワーク）が画像タスクで強力な理由としてよく挙げられるのが、「空間的同変性（spatial equivariance / translation equivariance）」と「局所性（locality）」という二つのインダクティブバイアスです。この記事では、この二つの性質について、定義から数式による裏付け、そしてなぜそれが強力なバイアスとして機能するのかまでを整理し...",
       "category": "AI・技術",
       "rss_category": "",
       "image_url": ""
