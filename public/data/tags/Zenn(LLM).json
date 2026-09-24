@@ -1,8 +1,58 @@
 {
   "site": "Zenn(LLM)",
-  "last_updated": "2026-09-24T19:26:18.592413",
-  "total_articles": 6306,
+  "last_updated": "2026-09-24T22:40:25.603608",
+  "total_articles": 6312,
   "articles": [
+    {
+      "title": "請求書 PDF をスプレッドシートに転記する処理を Claude API で作る ── JSON スキーマ・検算・和暦と負の金額",
+      "url": "https://zenn.dev/suminawa/articles/f7c352a23e5540",
+      "site": "Zenn(LLM)",
+      "published": "2026-09-24T21:20:33Z",
+      "description": "請求書の PDF から請求元・日付・金額・明細を読み取り、スプレッドシートに 1 行ずつ足す処理を、Claude API と TypeScript で組む手順です。題材は動いている実装です。プロンプトの規則、構造化出力のスキーマ、値の正規化、検算、スプレッドシート側の受け口の順に書きます。落とし穴は 4 と 6 に集めました。\n\n 方針: AI には「写す」だけをさせる\n先に役割を分けます。\n\n\n...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "AIチャットは伸ばすほど劣化する、3社の「仕切り直し」設計を比較した",
+      "url": "https://zenn.dev/every_ai_recipe/articles/ai-long-chat-reset-3-services-compare",
+      "site": "Zenn(LLM)",
+      "published": "2026-09-24T21:19:14Z",
+      "description": "TL;DR\n\n1つのチャットを伸ばし続けると、コンテキストウィンドウ（一度に読み込める会話量の上限）を超えた分から古いターンが参照されなくなる。これはモデルの調子ではなく、固定サイズの入力枠に対する構造的な制約\nChatGPT・Claude・Geminiは、この「伸びすぎ」への対処をそれぞれ別のレイヤーに実装している: ChatGPTは「Memory」という別機構で要点だけを持ち越す、Claude...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "ハルシネーション？予言？ ～早すぎた「ギュ」辞典～",
+      "url": "https://zenn.dev/minipoisson/articles/gyu-words-generation",
+      "site": "Zenn(LLM)",
+      "published": "2026-09-24T20:41:58Z",
+      "description": "5つのAIに「まだ無い日本語」を考えさせて、1年後に答え合わせしてみる話です。\n\n はじめに：すべては「ギュりとギュら」から始まった\nシンギュラリティは、まだ来ていません。\nでも「シンギュラリティ」という言葉のほうは、一足先に縮みました。\n最近の AI 界隈では、シンギュラリティのことを「ギュ」と呼ぶことがあります。そして人間は、AI に仕事を「ギュられる」ようになりました。\nここまでは、実際に使...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "LLM評価の前にルールを置く: KAMIWAZA Gateという決定論の検品レイヤ",
+      "url": "https://zenn.dev/hocky3/articles/db7950cedd77e5",
+      "site": "Zenn(LLM)",
+      "published": "2026-09-24T20:28:49Z",
+      "description": "!\n作ったもの: LLMによる書類評価の手前に置く、決定論的な検品レイヤ。正規化JSONを受け取り、YAMLで宣言した20ルールで検品し、不備のある書類は保留、人の承認・差戻しをSHA-256のハッシュチェーン付き監査履歴に残す。\n実測したこと: テスト426本パス、CLI・ライブラリ・レビューUIの一連の動作、監査ログの改ざん検知。\n言わないこと: 本番運用の実績、一般的な精度・性能の保証。\n\n...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "AI Agentのif文までLLMに任せるの、ちょっと豪華すぎない？─Jevで考えるDecision Layer設計",
+      "url": "https://zenn.dev/yuruconsa/articles/ece76113860e7d",
+      "site": "Zenn(LLM)",
+      "published": "2026-09-24T16:55:31Z",
+      "description": "AI Agentを作っていると、だいたいこうなります。\nユーザーから依頼\n↓\nLLMに考えさせる\n↓\nToolを選ばせる\n↓\nToolを実行\n↓\n結果をLLMに見せる\n↓\n次に何をするか考えさせる\n↓\nまたToolを実行\n↓\n終わったかLLMに判断させる\nものすごくLLMに聞きます。\n最初は、\n\nどのToolを使う？\n\nだったはずなのに、気づくと、\n\n正常終了しました。次に進みますか？\n\nみたいな...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
     {
       "title": "Bonsai 2 27B(1.75bpwの三値量子化LLM)をM2 Pro/16GB Macでローカル起動してみた",
       "url": "https://zenn.dev/masahiroid/articles/651d30f1425928",
@@ -19,6 +69,26 @@
       "site": "Zenn(LLM)",
       "published": "2026-09-24T16:19:47Z",
       "description": "Live2D のキャラクターと声で会話できるアプリを個人開発しています。\n前回の記事 では、会話から「間」を消すための構成を書きました。今回はその逆の軸──速度では埋められなかった、人間味の設計の話です。\n\n\n\n 一週間ぶりに開いたら、相手は一週間ぶんを過ごしていなかった\n会話の速度が出てきて、一通り遊べるようになった頃に気づいた違和感があります。\nしばらく間を空けて開くと、相手は「最後に会った時...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "Anthropic、「Claude Marketplace」を開始 — プラグイン・エージェント・導入支援を一か所で探して購入可能に",
+      "url": "https://zenn.dev/ai_news_bot/articles/ainews-20260924-t2",
+      "site": "Zenn(LLM)",
+      "published": "2026-09-24T15:32:17Z",
+      "description": "!\n2026/09/24 の生成AIニュース\n\n\n 概要\nAnthropic は 2026年9月23日、Claude 向けのプラグインやコネクタ、Claude を組み込んだエージェント・製品、コンサルティングなどの専門サービスをまとめて探せる「Claude Marketplace」を公開しました。企業は Anthropic との契約で確約している利用額の一部を使って、掲載されている製品を購入できる...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "Anthropic、Claudeのエージェント群が未知の酵素系「ART」を発見と発表 — CRISPR様の反復配列を持つ逆転写酵素",
+      "url": "https://zenn.dev/ai_news_bot/articles/ainews-20260924-t1",
+      "site": "Zenn(LLM)",
+      "published": "2026-09-24T15:31:45Z",
+      "description": "!\n2026/09/24 の生成AIニュース\n\n\n 概要\nAnthropic は 2026年9月23日、Claude を使った研究で、これまで知られていなかった酵素系を見つけたと発表しました。「ART（array-associated reverse transcriptases、アレイ関連逆転写酵素）」と名付けられたこの系は、バクテリオファージ（細菌に感染するウイルス）の中に見つかったもので、C...",
       "category": "AI・技術",
       "rss_category": "",
       "image_url": ""
@@ -44,21 +114,21 @@
       "image_url": ""
     },
     {
-      "title": "日本語入力システムSumibiの開発 part26: Appleのクラウドモデルは無料だが、誰でも試せるわけではなかった",
-      "url": "https://zenn.dev/kiyoka/articles/japanese-input-method-sumibi-26",
+      "title": "「知覚連鎖：現在のAIが抱える致命的な欠落」の原点(第３回/全４回)",
+      "url": "https://zenn.dev/ptf_whisperer/articles/b64f15d87a13ae",
       "site": "Zenn(LLM)",
-      "published": "2026-09-24T09:36:36Z",
-      "description": "はじめに\npart25では、Appleのオンデバイスモデルでローマ字タイプミスなど46件を測定し、31件正解（67.39%）でした。\niOS 27では、Foundation ModelsからAppleのサーバー上のモデル、Private Cloud Compute（PCC）も使えます。より高性能なモデルならiOS版Sumibiの変換精度も上がるのではないか。しかも無料なら、利用者がAPIキーを用意...",
+      "published": "2026-09-24T12:19:12Z",
+      "description": "デカルトの盲点：能楽とボリウッド映画が自律型知性に教える「身体性と間合い」\n\n\nデカルトの呪縛と「クラウド上の精神」という幻想\n\nなぜ、近代のAI研究者は「首から上（LLM / 高次推論）」と「首から下（Robotics / 物理駆動）」の分断にこれほど長い間悩まされ続けているのか。\nその根本原因は、近代科学の基礎となったデカルトの心身二元論——「精神（Mind）」と「肉体（Body）」を独立した...",
       "category": "AI・技術",
       "rss_category": "",
       "image_url": ""
     },
     {
-      "title": "VLMの出力をそのまま信じない：現場写真と根拠資料をつなぐRAGパイプライン",
-      "url": "https://zenn.dev/nauh_blog/articles/449d219c05fae5",
+      "title": "日本語入力システムSumibiの開発 part26: Appleのクラウドモデルは無料だが、誰でも試せるわけではなかった",
+      "url": "https://zenn.dev/kiyoka/articles/japanese-input-method-sumibi-26",
       "site": "Zenn(LLM)",
-      "published": "2026-09-24T09:34:10Z",
-      "description": "現場の写真、画像をどのように活用するのか\n現場写真をVLMに渡せば、画像の説明自体は生成できます。\nしかし、その説明をそのまま安全上の指摘や資料検索に使うと、画像に写っていない状態まで補完されたり、不確かな情報が後段の検索や回答生成に影響したりする可能性があります。\n建設現場の安全管理を支援する Corobanu（コロバヌ） では、そこで「AIに写真を見せて答えを出す」という一段の処理にはせず、\n...",
+      "published": "2026-09-24T09:36:36Z",
+      "description": "はじめに\npart25では、Appleのオンデバイスモデルでローマ字タイプミスなど46件を測定し、31件正解（67.39%）でした。\niOS 27では、Foundation ModelsからAppleのサーバー上のモデル、Private Cloud Compute（PCC）も使えます。より高性能なモデルならiOS版Sumibiの変換精度も上がるのではないか。しかも無料なら、利用者がAPIキーを用意...",
       "category": "AI・技術",
       "rss_category": "",
       "image_url": ""
@@ -79,16 +149,6 @@
       "site": "Zenn(LLM)",
       "published": "2026-09-24T09:00:05Z",
       "description": "ナウキャストLLMエンジニアインターンの北川です。前回の記事では、OKFはまだインフラやコミュニティの成熟を待つ段階にある、という結論で締めくくりました。それから間もなく、LLM WikiをCLIで生成するLangChainの「OpenWiki」が、OKFを出力フォーマットとして正式に採用しました。本記事では、開発者目線でOKF関連のツールを実際に触ってみて分かったことをまとめます。\nなお、OKF...",
-      "category": "AI・技術",
-      "rss_category": "",
-      "image_url": ""
-    },
-    {
-      "title": "PDFから構造化JSONを取り出す：AIベースのデータ抽出をPythonで試す",
-      "url": "https://zenn.dev/apryse_blog/articles/ba745168ed6f5b",
-      "site": "Zenn(LLM)",
-      "published": "2026-09-24T07:28:43Z",
-      "description": "!\n筆者は Apryse社に所属しています。本記事では同社の Server SDK を使った実装例を紹介しますが、手法の比較や選定観点はできるだけ中立的に整理しています。\n\n\n はじめに\n社内ドキュメントを LLM や RAG（検索拡張生成）で活用しようとすると、最初に壁になるのが「PDF からどうやってまともなデータを取り出すか」です。\nPDF は人間が読むためのフォーマットで、内部的にはテキス...",
       "category": "AI・技術",
       "rss_category": "",
       "image_url": ""
