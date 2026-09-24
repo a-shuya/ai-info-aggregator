@@ -1,84 +1,14 @@
 {
   "site": "Zenn(LLM)",
-  "last_updated": "2026-09-24T00:35:06.238357",
-  "total_articles": 6289,
+  "last_updated": "2026-09-24T05:23:41.769607",
+  "total_articles": 6283,
   "articles": [
-    {
-      "title": "今日の技術トレンド",
-      "url": "https://zenn.dev/bambampurin/articles/2026-09-02-tech-daily",
-      "site": "Zenn(LLM)",
-      "published": "2026-09-23T22:32:25Z",
-      "description": "!\n本日のニュースでは、LLM単体の活用から「自律型AIエージェントの実装」およびそれを支える開発インフラの最適化へとトレンドが大きくシフトしていることが示されています。OpenAIによるPython開発ツールメーカー「Astral」の買収は、Codexやエージェントエコシステムの強化に向けた象徴的な動きです。また、AWSによるステートレスなMCP（Model Context Protocol）サ...",
-      "category": "AI・技術",
-      "rss_category": "",
-      "image_url": ""
-    },
     {
       "title": "niri でローカルLLMをキー一発で呼び出す",
       "url": "https://zenn.dev/setsu_shiomi/articles/niri-local-llm",
       "site": "Zenn(LLM)",
       "published": "2026-09-23T19:58:24Z",
       "description": "この記事は個人サイトにも掲載しています: https://setsu.sh/blog/niri-local-llm/\n\n文章を書いていて「これ要約したい」「英語にしたい」と思うたびに、ブラウザのタブを開いて AI にコピペするのは面倒だ。しかもその内容は、どこかのサーバに送られている。\n手元の LLM を使って、選択したテキストをその場で処理する。 これを niri のキー一発でやる手順をまとめる...",
-      "category": "AI・技術",
-      "rss_category": "",
-      "image_url": ""
-    },
-    {
-      "title": "内蔵GPUでQwen3-8Bを動かしたら 6 t/s だった",
-      "url": "https://zenn.dev/setsu_shiomi/articles/local-llm-on-igpu",
-      "site": "Zenn(LLM)",
-      "published": "2026-09-23T19:58:23Z",
-      "description": "この記事は個人サイトにも掲載しています: https://setsu.sh/blog/local-llm-on-igpu/\n\n「ローカル LLM を動かすには、それなりの GPU が必要」とよく言われる。だが、手元のノート PC の内蔵 GPUでどこまで動くのか、実際に測ってみた。\n結論から書く。\n\nモデル: Qwen3-8B Q4_K_M（4.68 GiB）\n環境: Radeon 860M（RD...",
-      "category": "AI・技術",
-      "rss_category": "",
-      "image_url": ""
-    },
-    {
-      "title": "GQA/MQAのhead mappingとKV Cache削減を実装視点で整理する",
-      "url": "https://zenn.dev/kas_blog/articles/20260509-llm-20-gqa-mqa",
-      "site": "Zenn(LLM)",
-      "published": "2026-09-23T19:05:40Z",
-      "description": "GQA（Grouped-Query Attention）とMQA（Multi-Query Attention）が減らすのは、Query headではなくKey/Value headです。実装ではnum_attention_headsとnum_key_value_headsを別々に扱い、Query headから参照先のKV headへのmappingを作ります。\nこの記事では、GQA/MQAを次の3...",
-      "category": "AI・技術",
-      "rss_category": "",
-      "image_url": ""
-    },
-    {
-      "title": "[解説] Jev：テキストを生成しないAIは何が新しいのか",
-      "url": "https://zenn.dev/serada/articles/20260924-jev-system-one-intro",
-      "site": "Zenn(LLM)",
-      "published": "2026-09-23T18:25:58Z",
-      "description": "2026年9月15日、TypeSafe AIというサンフランシスコの研究所がステルスを解除し、Jev（ジェヴ）というモデルを公開しました。創業者のDiogo Almeida氏はInstructGPT論文の共著者で、同社はシードラウンドで4,000万ドルを調達しています。\nJevの特徴は一言で言えば「テキストを生成しない」ことです。返事も書かなければ、コードも書かず、要約もしません。代わりに、開発者...",
-      "category": "AI・技術",
-      "rss_category": "",
-      "image_url": ""
-    },
-    {
-      "title": "JevとSolar Mini4に同じ分類タスクを投げてみた",
-      "url": "https://zenn.dev/nhandsome/articles/jev-vs-lightweight-llm-classification",
-      "site": "Zenn(LLM)",
-      "published": "2026-09-23T17:09:19Z",
-      "description": "このブログは、エージェントが資料の突き合わせと実験を行って下書きを作り、筆者が確認したうえで掲載しています。\n!\n\n同じメール分類タスクを TypeSafe Jev と Upstage の Solar Mini4 に投げてみました\n正解率は Solar Mini4 が1〜5p高く、速度は Jev が9〜10倍速いという結果です\n勝ち負けよりも、Jev をどこに使えるかを探るための記録です\n\n\n前回...",
-      "category": "AI・技術",
-      "rss_category": "",
-      "image_url": ""
-    },
-    {
-      "title": "コードのないリポジトリに「テストを先に書く」——ECC導入前後の記録を追う",
-      "url": "https://zenn.dev/meruno/articles/a1c60a5b1abfca",
-      "site": "Zenn(LLM)",
-      "published": "2026-09-23T17:02:47Z",
-      "description": "「テストを先に書く」。\n文書しか扱わないリポジトリを開いた Claude Code にも、このルールが渡されていた。テストするコードはない。どうして、ここにあるのだろう。\n出どころは分かっている。自分で入れた ECC（Everything Claude Code）v2.2.1 だ。プラグインをユーザースコープで導入し、rules/common の10ファイルも ~/.claude/rules/co...",
-      "category": "AI・技術",
-      "rss_category": "",
-      "image_url": ""
-    },
-    {
-      "title": "Claudeで作っていても設計はGeminiに聞く、5つの渡し方のすすめ",
-      "url": "https://zenn.dev/genkunjc/articles/gemini-design-brainstorm-five-rules",
-      "site": "Zenn(LLM)",
-      "published": "2026-09-23T16:47:34Z",
-      "description": "大きな設計を1人で考えていると、自分に出せる発想の範囲でしか案が広がらないと感じることがあります。もっと良い案を、自分の外から引き出したいという欲求です。普段の実装は Claude でやっていますが、設計の骨格だけは Gemini に出させています。\n答えは、最初の骨格を自分からではなく、相手に出させることでした。今回は1往復目の出力がいちばん使え、記事の骨格と、自分には無かった切り分けが1つ手に...",
       "category": "AI・技術",
       "rss_category": "",
       "image_url": ""
@@ -99,6 +29,16 @@
       "site": "Zenn(LLM)",
       "published": "2026-09-23T15:13:25Z",
       "description": "DiffusionGemma-JevをCloud Runのシンガポールリージョンで動かしました。\n日本語の問い合わせ50件を分類してみました。\n1回のリクエストで担当部署、緊急度、人手対応の要否の3項目を判定します。\n同一リージョンのVMから呼ぶと、応答時間の中央値は71.2msでした。\n正解ラベルとの一致率は、担当部署88%、緊急度84%、人手対応80%です。\nただし、PCの膨張を訴える問い合わ...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "LLMはなぜ答えを生成しなければならないのか、TypeSafe Jevが投げる問い",
+      "url": "https://zenn.dev/nhandsome/articles/semantic-if-without-generation",
+      "site": "Zenn(LLM)",
+      "published": "2026-09-23T15:03:11Z",
+      "description": "このブログはエージェントが資料の突き合わせと実験を経て下書きを作成し、筆者のレビューを経て公開しています。\n!\n3行まとめ\n\nプログラムが必要なのは if 一つなのに、私たちはLLMに文章を作らせ、その文章をまた if に戻しています\n\nJev は文章を一切作らず、判断と確率だけを返すモデルです。その設計を整理しました\n同じ質問をJevとオープンソース実装（SemIf）の両方に投げた結果も載せてい...",
       "category": "AI・技術",
       "rss_category": "",
       "image_url": ""

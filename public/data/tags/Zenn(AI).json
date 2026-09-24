@@ -1,8 +1,138 @@
 {
   "site": "Zenn(AI)",
-  "last_updated": "2026-09-24T00:35:06.238357",
-  "total_articles": 14071,
+  "last_updated": "2026-09-24T05:23:41.769607",
+  "total_articles": 14083,
   "articles": [
+    {
+      "title": "今日の技術トレンド",
+      "url": "https://zenn.dev/bambampurin/articles/2026-09-02-tech-daily",
+      "site": "Zenn(AI)",
+      "published": "2026-09-23T22:32:25Z",
+      "description": "!\n本日のニュースでは、LLM単体の活用から「自律型AIエージェントの実装」およびそれを支える開発インフラの最適化へとトレンドが大きくシフトしていることが示されています。OpenAIによるPython開発ツールメーカー「Astral」の買収は、Codexやエージェントエコシステムの強化に向けた象徴的な動きです。また、AWSによるステートレスなMCP（Model Context Protocol）サ...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "「2か所」は、数えたら8か所だった",
+      "url": "https://zenn.dev/hanamilo/articles/kazoezu-ni-susumu",
+      "site": "Zenn(AI)",
+      "published": "2026-09-23T22:30:06Z",
+      "description": "3番目に多かった型\n前の記事で、半年分の失敗223件を7つの型に分けた、と書いた。\nそのあとも記録は増えて、298件になった。型は12に増えた。\n1位は変わらず「資料と実物の食い違い」で55件。2位が「確認せずに決めつける」で46件。\n3番目に多かったのが「数えずに進む」だった。33件。298件の11%。\nこの型は、最初の分類には無かった。引き継ぎプロンプトの記事で書いた4つの型にも入っていない。...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "Claude Codeの会話ログは既定30日で消える：cleanupPeriodDaysの確認と集計の組み方",
+      "url": "https://zenn.dev/kujira_ai/articles/a0d57ca2de4a63",
+      "site": "Zenn(AI)",
+      "published": "2026-09-23T22:14:08Z",
+      "description": "Claude Code に自分の利用状況を集計させています。どの機能を何回使ったか、どんな失敗が何件あったか。元データはパソコンに残っている会話ログ（.jsonl）です。\n先日、同じ条件で数え直したはずの件数が、数日前より減っていました。集計スクリプトのバグを疑って直させましたが、数字は戻りません。原因はスクリプトではなく、Claude Code が古い会話ログを既定で30日たつと自動で消している...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "Claude Code の auto モードで止められた作業と、止められたときの決めごと",
+      "url": "https://zenn.dev/y3chi5z/articles/claude-code-auto-mode-classifier-blocks",
+      "site": "Zenn(AI)",
+      "published": "2026-09-23T22:12:03Z",
+      "description": "Claude Code を auto モードで使っています。1 つずつ許可を求められずに作業が進むので、業務システムの移行や記事の執筆など、長い作業を任せるときに便利です。\nauto モードでは、実行しようとした操作を分類器が判定し、危ないと見なしたものは 実行前に止めます。使っていると、ときどき止められます。止められた場面を 2 つ書き、そのときにどうすると決めたかをまとめます。\n\n 止められた...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "HarnessRouter の「ハーネス切り替え」は何がうれしいのか ─ Hermes と比べて分かった、記憶を外に出す設計",
+      "url": "https://zenn.dev/takna/articles/harnessrouter-harness-switching",
+      "site": "Zenn(AI)",
+      "published": "2026-09-23T21:48:30Z",
+      "description": "HarnessRouter は、Codex や Claude Code、Hermes といったエージェントハーネスを、自社サービスの裏側で 1 本の API から動かすための中継基盤です。この記事では、普段 Hermes Agent を VPS に常駐させて利用している私が、公式情報を読み解く中で感じた疑問を順に紐解きながら、何がうれしいのか、どのような場面で効果を発揮するのかを整理します。\n!\n...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "AIソフトウェア工場の設計——要求から本番運用までをつなぐアーキテクチャ",
+      "url": "https://zenn.dev/hampen2929/books/ai-software-factory-architecture",
+      "site": "Zenn(AI)",
+      "published": "2026-09-23T21:00:25Z",
+      "description": "人が望む成果を渡したあと、何を根拠に変更を進め、どこで止め、どう結果を確かめるのか。\n一件のAPI変更を軸に、要求、情報基盤、PCでの実装、PR、ビルド・テスト、AIレビュー、進行判断、デプロイ、運用をつなぐ設計を解説します。\n合意した条件と対象版を各工程へ引き継ぎ、失敗・欠測・古い結果を扱う方法を、2枚の構成図と全文収録のNode.js教材で確かめます。",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "内蔵GPUでQwen3-8Bを動かしたら 6 t/s だった",
+      "url": "https://zenn.dev/setsu_shiomi/articles/local-llm-on-igpu",
+      "site": "Zenn(AI)",
+      "published": "2026-09-23T19:58:23Z",
+      "description": "この記事は個人サイトにも掲載しています: https://setsu.sh/blog/local-llm-on-igpu/\n\n「ローカル LLM を動かすには、それなりの GPU が必要」とよく言われる。だが、手元のノート PC の内蔵 GPUでどこまで動くのか、実際に測ってみた。\n結論から書く。\n\nモデル: Qwen3-8B Q4_K_M（4.68 GiB）\n環境: Radeon 860M（RD...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "[解説] Jev：テキストを生成しないAIは何が新しいのか",
+      "url": "https://zenn.dev/serada/articles/20260924-jev-system-one-intro",
+      "site": "Zenn(AI)",
+      "published": "2026-09-23T18:25:58Z",
+      "description": "2026年9月15日、TypeSafe AIというサンフランシスコの研究所がステルスを解除し、Jev（ジェヴ）というモデルを公開しました。創業者のDiogo Almeida氏はInstructGPT論文の共著者で、同社はシードラウンドで4,000万ドルを調達しています。\nJevの特徴は一言で言えば「テキストを生成しない」ことです。返事も書かなければ、コードも書かず、要約もしません。代わりに、開発者...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "Claude Codeを本当に並列で走らせる - git worktree と、直列にすべき工程",
+      "url": "https://zenn.dev/quintetkit/articles/claude-code-worktree-isolation",
+      "site": "Zenn(AI)",
+      "published": "2026-09-23T17:28:06Z",
+      "description": "Claude Codeで複数の作業を同時に走らせたら、こうなった人向けです。\n\n片方が npm install している最中に、もう片方が package.json を読んで壊れた\n\ndist/ のビルド成果物が混ざり、どちらの出力か分からなくなった\n片方の git checkout が、もう片方の未コミットの変更を巻き込んだ\n\n論理的な担当範囲を分けても、作業ディレクトリが同じなら物理的に衝突し...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "JevとSolar Mini4に同じ分類タスクを投げてみた",
+      "url": "https://zenn.dev/nhandsome/articles/jev-vs-lightweight-llm-classification",
+      "site": "Zenn(AI)",
+      "published": "2026-09-23T17:09:19Z",
+      "description": "このブログは、エージェントが資料の突き合わせと実験を行って下書きを作り、筆者が確認したうえで掲載しています。\n!\n\n同じメール分類タスクを TypeSafe Jev と Upstage の Solar Mini4 に投げてみました\n正解率は Solar Mini4 が1〜5p高く、速度は Jev が9〜10倍速いという結果です\n勝ち負けよりも、Jev をどこに使えるかを探るための記録です\n\n\n前回...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "コードのないリポジトリに「テストを先に書く」——ECC導入前後の記録を追う",
+      "url": "https://zenn.dev/meruno/articles/a1c60a5b1abfca",
+      "site": "Zenn(AI)",
+      "published": "2026-09-23T17:02:47Z",
+      "description": "「テストを先に書く」。\n文書しか扱わないリポジトリを開いた Claude Code にも、このルールが渡されていた。テストするコードはない。どうして、ここにあるのだろう。\n出どころは分かっている。自分で入れた ECC（Everything Claude Code）v2.2.1 だ。プラグインをユーザースコープで導入し、rules/common の10ファイルも ~/.claude/rules/co...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "Claudeで作っていても設計はGeminiに聞く、5つの渡し方のすすめ",
+      "url": "https://zenn.dev/genkunjc/articles/gemini-design-brainstorm-five-rules",
+      "site": "Zenn(AI)",
+      "published": "2026-09-23T16:47:34Z",
+      "description": "大きな設計を1人で考えていると、自分に出せる発想の範囲でしか案が広がらないと感じることがあります。もっと良い案を、自分の外から引き出したいという欲求です。普段の実装は Claude でやっていますが、設計の骨格だけは Gemini に出させています。\n答えは、最初の骨格を自分からではなく、相手に出させることでした。今回は1往復目の出力がいちばん使え、記事の骨格と、自分には無かった切り分けが1つ手に...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "Claude Codeのスラッシュコマンド一覧（公式ドキュメントの114個・2026年9月時点）",
+      "url": "https://zenn.dev/lbfuvuvxb/articles/claude-code-slash-commands-114",
+      "site": "Zenn(AI)",
+      "published": "2026-09-23T16:43:04Z",
+      "description": "私がふだん使っている / コマンドは、/clear、/compact、/code-review の3つだけです。ほかにどんなコマンドがあるのか、公式ドキュメントを読んで一覧にしました。\nClaude Codeの入力欄で / を打つと、コマンドメニューが出てきます。公式ドキュメントの「Commands」のページの表には、2026年9月24日時点で114個が載っていました。このうち3つは削除済みで、3...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
     {
       "title": "Lean 4でAIが提案した定理名が見つからないときの確認手順",
       "url": "https://zenn.dev/matsuteru/articles/lean4-unknown-identifier",
@@ -79,16 +209,6 @@
       "site": "Zenn(AI)",
       "published": "2026-09-23T15:06:32Z",
       "description": "きっかけ\n個人的な趣味で、牧場経営×血統育成シミュレーションゲームを1本作った。いわゆる「ダビスタ系」と呼ばれるジャンルのジェネリック版で、調教やレースには一切手を出さず、配合・育成方針・事業拡大の意思決定だけで日本競馬の頂点を目指す、という牧場経営に振り切った作りにしている。\n個人でこつこつ作っていたら、奇しくもジャンルの元祖である某ダービー系シミュレーションの最新作が2026年9月24日に発売...",
-      "category": "AI・技術",
-      "rss_category": "",
-      "image_url": ""
-    },
-    {
-      "title": "LLMはなぜ答えを生成しなければならないのか、TypeSafe Jevが投げる問い",
-      "url": "https://zenn.dev/nhandsome/articles/semantic-if-without-generation",
-      "site": "Zenn(AI)",
-      "published": "2026-09-23T15:03:11Z",
-      "description": "このブログはエージェントが資料の突き合わせと実験を経て下書きを作成し、筆者のレビューを経て公開しています。\n!\n3行まとめ\n\nプログラムが必要なのは if 一つなのに、私たちはLLMに文章を作らせ、その文章をまた if に戻しています\n\nJev は文章を一切作らず、判断と確率だけを返すモデルです。その設計を整理しました\n同じ質問をJevとオープンソース実装（SemIf）の両方に投げた結果も載せてい...",
       "category": "AI・技術",
       "rss_category": "",
       "image_url": ""

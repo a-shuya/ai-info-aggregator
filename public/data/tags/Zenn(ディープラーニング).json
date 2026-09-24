@@ -1,7 +1,7 @@
 {
   "site": "Zenn(ディープラーニング)",
-  "last_updated": "2026-09-24T00:35:06.238357",
-  "total_articles": 435,
+  "last_updated": "2026-09-24T05:23:41.769607",
+  "total_articles": 436,
   "articles": [
     {
       "title": "RTX 3090（24GB）で7Bモデル学習を成立― 個人GPUで大規模Transformerを動かすための実践記録",
@@ -9,6 +9,16 @@
       "site": "Zenn(ディープラーニング)",
       "published": "2026-09-20T22:45:09Z",
       "description": "はじめに\nRTX 3090（VRAM 24GB）1枚、WSL2上のUbuntuという環境で、7Bパラメータ規模のTransformer系モデルを事前学習させるプロジェクトに取り組んでいます。\nクラウドGPUではなく手元のハードウェアだけで完結させたい。その動機は単純で、研究の全工程を自分の手の届く範囲に置いておきたかったからです。\n結論から言えば、最終的にはVRAM 22.6GBで安定動作し、約1...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "【012】再帰Transformerの「常識」は間違いだった — d=1は再帰ではなかった",
+      "url": "https://zenn.dev/nakatada_lab/articles/04058b3def365e",
+      "site": "Zenn(ディープラーニング)",
+      "published": "2026-09-20T22:40:50Z",
+      "description": "この記事の要約\n\n重み共有再帰Transformerでは、全ての再帰ステップが「同じ処理の繰り返し」だと暗黙に仮定されてきた。\nd=1は収束解析でも「ノイズ」として除外するのが定石だった。\nしかし d=1（初回ステップ）は再帰ではない。プレリュードからの「注入」である。\nこの区別を無視した結果、7.0Bモデルの学習で制御系が完全に非稼働状態に陥り、連鎖的な崩壊が発生した。\nd=1に対する制御方針を...",
       "category": "AI・技術",
       "rss_category": "",
       "image_url": ""
