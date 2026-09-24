@@ -1,24 +1,104 @@
 {
   "site": "Zenn(Python)",
-  "last_updated": "2026-09-24T10:23:46.015436",
-  "total_articles": 6631,
+  "last_updated": "2026-09-24T15:25:44.133890",
+  "total_articles": 6639,
   "articles": [
+    {
+      "title": "モバイルゲーミングPC の Intel Arc GPU でローカル画像生成 —— Qwen-Image 2.1 GGUF で次元エラー",
+      "url": "https://zenn.dev/maruhana/articles/comfyui-qwen-image-21-gguf-12288",
+      "site": "Zenn(Python)",
+      "published": "2026-09-24T11:09:30Z",
+      "description": "!\n先に、この記事の要約（専門用語なし）\n\n手に持って遊ぶ大きさのゲーム用 PC で、画像生成モデルをローカルで動かそうとして、途中で計算の形が合わないというエラーで止まった\nエラーの数字は「本体側が壊れている」と読めた。実際に中身を直接開いて確かめたら、本体は正しかった\n壊れていたのは、文章を解釈する側の部品だった。読み込みの途中で画像を見る機能が落ちていて、別モデル用の部品として認識されていた...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "15個のテクニカル指標を情報係数で測ったら、5分足では全部「無効」だった",
+      "url": "https://zenn.dev/naporit/articles/technical-indicators-ic-m5-usdjpy",
+      "site": "Zenn(Python)",
+      "published": "2026-09-24T11:04:29Z",
+      "description": "RSI、ボリンジャーバンド、MACD、ストキャスティクスなど、EA（自動売買プログラム）のエントリーによく使われる指標を15個選び、ドル円の5分足で「その後の値動きをどれだけ当てるか」を測りました。物差しは情報係数（IC）です。\n結果は、15個 × 保有時間4通りの60通りすべてが、事前に決めた基準で「無効」でした。測る途中で分かったこともあります。\n\n15個の指標は、中身で見ると実質4種類しかな...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "[Day 3] CrewAIエージェントに「外部検索ツール（DuckDuckGo）」を持たせてリアルタイム情報を自力でハックさせる",
+      "url": "https://zenn.dev/taihong7803/articles/c46515e5360e16",
+      "site": "Zenn(Python)",
+      "published": "2026-09-24T11:00:42Z",
+      "description": "なぜエージェントに検索ツールが必要なのか\nこれまでのDay 1・Day 2で構築したエージェントは、LLM（Gemini 3.6-flash）が持っている「学習済みの内部知識」だけで回答していた。\nしかし、朝5時の自動ブログ生成やトレンドを追うファクトリーにおいて、「ネット上の最新データ（今日のニュース、最新ライブラリのリリースノートなど）」を自力で拾えないのは致命傷になる。\n今回は、追加のAPI...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "家族の写真・動画から「1分の思い出動画」を自動生成するツールをPythonで作った",
+      "url": "https://zenn.dev/yukimomo/articles/weekly-slideshow-engine",
+      "site": "Zenn(Python)",
+      "published": "2026-09-24T10:51:44Z",
+      "description": "はじめに\n子どもの写真や動画は、スマホで撮るたびに増えていきます。ただ、撮る量に比べて、あとから見返す機会は多くありませんでした。短い動画にまとめれば見返しやすくなりますが、毎回手作業で編集するのは続きません。\nそこで、写真・動画のフォルダを渡すと1分ほどの動画を自動で作るツールを Python で作りました。名前は Weekly Slideshow Engine です。\nただ、作って終わりではあ...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "エンジニア視点で語る！Pythonで学ぶマクロ経済学入門 62",
+      "url": "https://zenn.dev/maszkot/articles/fdf94b710b82d8",
+      "site": "Zenn(Python)",
+      "published": "2026-09-24T10:46:34Z",
+      "description": "https://qiita.com/maskot1977/items/a20b60419ff231107d70\n\n オープニング\nDJミオ\nみなさん、こんばんは。DJミオです。\nこの番組は、「マクロ経済学の基本を、Pythonで実際に手を動かしながら学んでいこう」、そしてもうひとつ、**「マクロ経済の構造を、エンジニアにとって分かりやすい言葉で表現する」**をテーマにお届けするラジオ教育番組です。...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "【第3回】pywebviewで5つの複雑画面を別Window化する――画面分離より難しかった所有権と状態同期",
+      "url": "https://zenn.dev/xneshuk/articles/969bf98404b165",
+      "site": "Zenn(Python)",
+      "published": "2026-09-24T09:19:24Z",
+      "description": "pywebviewで5つの複雑画面を別Window化する――画面分離より難しかった所有権と状態同期\n\n TL;DR\n\npywebviewには複数Window機能がある。それでも、単一画面内で成長した機能を後から分離すると、暗黙に共有していた状態、保存処理、画面更新、終了処理の再設計が必要になる\nLibroDeckでは5画面を新たに別Windowへ移し、既存の2画面を含む7画面を共通管理へ統合した\n...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "Claude Code の開発を「ドット絵オフィスで社員が働く映像」に変換する作り方",
+      "url": "https://zenn.dev/pico_shacho/articles/faa01e4a7b4dc5",
+      "site": "Zenn(Python)",
+      "published": "2026-09-24T08:28:51Z",
+      "description": "Claude Code の開発ログが、そのままドット絵オフィスで働く社員に変わる\n\n この記事について\n想定読者：Claude Code を使う個人開発者で、日々の開発の様子を発信の映像素材として使ってみたい人。\nこれで何ができるか：開発中に自動でたまる作業ログを、ローカルだけで動く「ドット絵オフィス」の画面に変換します。役割（社長・番頭・役員・各部署）が机で働く様子として一覧でき、いま誰が動いた...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "AirflowにおけるDAGファイルの定期パースとPythonのimportの話",
+      "url": "https://zenn.dev/churadata/articles/22a8c1821a42f9",
+      "site": "Zenn(Python)",
+      "published": "2026-09-24T04:37:07Z",
+      "description": "はじめに\n最近「DAG ファイルのトップレベルに必要のない処理を書くな」というAirflowのベストプラクティスを知る機会がありました。\nトップレベルのコードがどのように影響するのかをローカルでコンテナ環境を作って検証をしてみると、Pythonのimportの挙動についても理解を深めることができたため、記事に残したいと思います。\n\n 検証環境\n検証環境は Airflow 3.3.1（apache/...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "非エンジニアの私が、スマホから Claude Code の問いに答える中継を tmux で自作した",
+      "url": "https://zenn.dev/jinc_tdil/articles/claude-code-phone-session-gateway",
+      "site": "Zenn(Python)",
+      "published": "2026-09-24T04:04:37Z",
+      "description": "非エンジニアの私が、Mac で動かしている Claude Code の「訊かれごと」をスマホで読んで答えるための中継（ゲートウェイ）を9月16日から作り始め、いまは実際の仕事で使っています。\n設計の判断は私がして、コードは Claude Code に書かせました。この記事では、何に困っていたか、どう組んだか、採らなかった方法とその理由、使い始めて数日で実際に起きたことを順に書きます。\n対象は、Cl...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
     {
       "title": "オントロジーの決定論推論を Owlready2 で実際に動かしてみる",
       "url": "https://zenn.dev/aws_japan/articles/f12dd19cb5a964",
       "site": "Zenn(Python)",
       "published": "2026-09-24T03:01:45Z",
       "description": "TL;DR\n\nNeuro-Symbolic AI（確率推論 ＋ 決定論推論）を試すには、まず「決定論の推論エンジン」が何をしているのかを体験してみた。\nOwlready2 という Python ライブラリで、SWRL ルールを書いてsync_reasoner()を呼ぶと、書いていない事実が自動的に導出される。\n製造業の設備故障診断というシナリオで、モーターの軸受加熱が発生している→高リスクという決...",
-      "category": "開発",
-      "rss_category": "",
-      "image_url": ""
-    },
-    {
-      "title": "眉毛が消えるモデルと向き合う",
-      "url": "https://zenn.dev/suzukimain/articles/bef0dc4a1510c3",
-      "site": "Zenn(Python)",
-      "published": "2026-09-24T01:17:19Z",
-      "description": "AnimeSegは、アニメイラストを髪・目・眉・服などに分けるPythonライブラリです。Live2Dなどで使える部位分割を目指して、教師データを作り、確かめる仕組みも開発しました。眉毛の欠落や、部位のマスクを重ねた際の隙間を通じて、その試行錯誤を振り返ります。\nコードと学習済みモデルはAnimeSegとして公開しています。\n記事で触れた5つの構成の推論結果と使い方は、AnimeSeg Demoで...",
       "category": "開発",
       "rss_category": "",
       "image_url": ""
