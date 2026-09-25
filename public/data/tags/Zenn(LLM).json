@@ -1,18 +1,8 @@
 {
   "site": "Zenn(LLM)",
-  "last_updated": "2026-09-25T15:57:26.647053",
-  "total_articles": 6321,
+  "last_updated": "2026-09-25T19:58:26.990779",
+  "total_articles": 6320,
   "articles": [
-    {
-      "title": "Jevが迷ったら、誰に聞く？──7つのベンチマーク比較から考えるLLMへの振り分け",
-      "url": "https://zenn.dev/canly/articles/c46092b01cd1c9",
-      "site": "Zenn(LLM)",
-      "published": "2026-09-25T10:06:49Z",
-      "description": "こんにちは。株式会社カンリーでCAIOをしている萩野です。\n有害な投稿を止める。RAGの回答が根拠と食い違っていないか調べる。こうした判定を全部LLMに任せるとき、費用を抑えるために「安い判定器を前に置き、迷った入力だけLLMへ回す」という構成を考えるかもしれません。\nでは、迷った入力を渡せば、本当に判定はよくなるのか。\nTypeSafeの判定モデルJevと5種類のLLMを、7つのベンチマークで比...",
-      "category": "AI・技術",
-      "rss_category": "",
-      "image_url": ""
-    },
     {
       "title": "日本語ベンチマークでJevの性能を検証する",
       "url": "https://zenn.dev/ivry/articles/65c1c4242e1156",
@@ -34,11 +24,11 @@
       "image_url": ""
     },
     {
-      "title": "ヤンデレのセリフで小型LLMを学習したら、何を聞いても一言で返すようになった話",
-      "url": "https://zenn.dev/atemoya/articles/bba5829af630f0",
+      "title": "10000ターン会話させてみた。AIの記憶はどこから「記憶らしく」なくなるのか",
+      "url": "https://zenn.dev/mitsukida/articles/5f081dbcd22667",
       "site": "Zenn(LLM)",
-      "published": "2026-09-25T08:34:32Z",
-      "description": "はじめに\nヤンデレ・ツンデレなどのキャラクターのセリフを日本語にして、小さな LLM（Qwen3.5-0.8B / 4B、Spark-X2.5-4B）に LoRA で学習させてみました。確かめたかったのは次の2点です。\n\n\nキャラクターの人格は安定するのか：一人称が揺れたり、「AIなので感情はありません」とキャラが崩れたりしなくなるか\n\nモデルは壊れるのか：一般常識や、長い文章を書く力が落ちないか...",
+      "published": "2026-09-25T08:32:39Z",
+      "description": "10000ターン会話させてみた。AIの記憶はどこから「記憶らしく」なくなるのか\nAI彼女アプリを作っている。\nこれまで、\n記憶を保存する。\n思い出す。\n思い出したものを会話に使う。\nそんな仕組みをずっと作ってきた。\nそして最近、\n少し違うことを始めた。\nとにかく長く会話させてみる。\n100ターン。\n1000ターン。\n3000ターン。\nそして、\n10000ターン。\n\n\n 10000ターンやってみたか...",
       "category": "AI・技術",
       "rss_category": "",
       "image_url": ""
@@ -79,6 +69,16 @@
       "site": "Zenn(LLM)",
       "published": "2026-09-25T06:58:11Z",
       "description": "Anthropic の公式ブログは、Claude Opus 5.5 がひとつ前のモデル Opus 5 と比べて変わった振る舞い（癖）として、長い作業を自分で続けること、したことを平易に伝えること、返事の前に考えることの3つを挙げています。そのため、Opus 5 に合わせて書いた指示文（プロンプト）の一部は見直したほうがよくなりました。\n分かりやすい例は「よく考えてから答えて」という一文です。Opu...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "Claude Opus 5.5 は何が変わったのか。単価は下がったが、仕事あたりのコストは横ばい",
+      "url": "https://zenn.dev/e8dev/articles/claude-opus-5-5-what-changed",
+      "site": "Zenn(LLM)",
+      "published": "2026-09-25T05:51:11Z",
+      "description": "2026-09-22 に Claude Opus 5.5 がリリースされました。この記事は、AI の動きをレビューする人向けの 1 分動画シリーズ「AI を止めるサイン」の Opus 5.5 回のテキスト版です。ニュースの要約ではなく、「モデルが新しくなったとき、何を見て乗り換えを判断するか」の観点で書いています。\n\n数字はリリース翌日(09-23)に公式発表・移行ガイド・Artificial A...",
       "category": "AI・技術",
       "rss_category": "",
       "image_url": ""
@@ -129,16 +129,6 @@
       "site": "Zenn(LLM)",
       "published": "2026-09-25T03:03:41Z",
       "description": "RAG を組んだあと、最初にぶつかるのが「答えが微妙」という状態です。完全な間違いではないけれど、聞いたことに答えていない。惜しいけれど使えない。\nこのときやってしまいがちなのが、プロンプトをいじることです。指示を丁寧に書き直し、「資料に基づいて答えてください」を強めてみる。ところが直らない。理由は単純で、悪かったのが生成側ではなかったからです。\nこの記事では、RAG の不調を「検索が悪いのか、生...",
-      "category": "AI・技術",
-      "rss_category": "",
-      "image_url": ""
-    },
-    {
-      "title": "文章を返さないAI「Jev」を試してみた ── 社内問い合わせのエスカレーション先は判定できるか",
-      "url": "https://zenn.dev/yesodco/articles/yesod-jev-typesafe-inquiry-triage",
-      "site": "Zenn(LLM)",
-      "published": "2026-09-25T02:18:13Z",
-      "description": "こんにちは、株式会社イエソドでバックエンドエンジニアをしているik-fib（@ik11235）です。\n\n はじめに\n先日、TypeSafe AIからJevが公開されました。Jevは「System One Model」と名乗っていて、LLMとは返すものが違います。\n渡したテキストについて、こちらが型付きで用意した問いに、確率やスコアだけを返します。返ってくるのは0.93という数字であって、「〜と思わ...",
       "category": "AI・技術",
       "rss_category": "",
       "image_url": ""
