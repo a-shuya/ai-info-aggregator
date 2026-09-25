@@ -1,14 +1,54 @@
 {
   "site": "Zenn(Python)",
-  "last_updated": "2026-09-25T11:42:15.521506",
-  "total_articles": 6656,
+  "last_updated": "2026-09-25T15:57:26.647053",
+  "total_articles": 6660,
   "articles": [
     {
-      "title": "文章を返さないAI「Jev」を試してみた ── 社内問い合わせのエスカレーション先は判定できるか",
-      "url": "https://zenn.dev/yesodco/articles/yesod-jev-typesafe-inquiry-triage",
+      "title": "同じ秒に2件入ると順序が決まらない。精度を上げても直らない",
+      "url": "https://zenn.dev/shinsei99/articles/sqlite-transaction",
       "site": "Zenn(Python)",
-      "published": "2026-09-25T02:18:13Z",
-      "description": "こんにちは、株式会社イエソドでバックエンドエンジニアをしているik-fib（@ik11235）です。\n\n はじめに\n先日、TypeSafe AIからJevが公開されました。Jevは「System One Model」と名乗っていて、LLMとは返すものが違います。\n渡したテキストについて、こちらが型付きで用意した問いに、確率やスコアだけを返します。返ってくるのは0.93という数字であって、「〜と思わ...",
+      "published": "2026-09-25T11:36:26Z",
+      "description": "鍵と備品の貸出を、NFCタグをかざすだけで記録する台帳を作っています。\n貸出・返却の履歴が全部残るので、「誰がいつ持ち出したか」が後から追えます。\nこの台帳で、同じ秒に2件入ると並び順が決まらないという問題が出ました。\n\n 表示のたびに、前後が入れ替わる\nSELECT * FROM checkouts ORDER BY checkout_at DESC;\n同じデータを見ているのに、実行するたびに2...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "ウェビナー字幕をCLAUDE.mdに全文で入れると？ Claude Codeで18回比べたら採点は同点・入力トークン約4割増",
+      "url": "https://zenn.dev/kanta13jp1/articles/claude-md-webinar-transcript-ab-test",
+      "site": "Zenn(Python)",
+      "published": "2026-09-25T11:12:06Z",
+      "description": "先に結論\n「Claude Codeの公式ウェビナーを文字起こしして、CLAUDE.mdに入れれば最強では？」という発想を、実際に測りました。3種類のCLAUDE.md × 3課題 × 各2回、計18回の比較です。\n\n\n\nCLAUDE.mdの中身\n全問合格\n入力トークン（1回平均）\n報告コスト（6回合計）\n\n\n\n\nA: 共通ルールのみ（7行）\n6/6\n172,170\n$0.76\n\n\nB: A＋ウェビ...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "国の省エネ基準の計算プログラム（pyhees）をTypeScriptに移植して、エアコンの電気代をブラウザで8,760時間計算する",
+      "url": "https://zenn.dev/ikurakakaruno/articles/bd72734cd12cac",
+      "site": "Zenn(Python)",
+      "published": "2026-09-25T09:54:31Z",
+      "description": "はじめに\nエアコンの電気代を計算するサイトはたくさんあります。ただ、多くは「消費電力 × 使用時間 × 電気料金単価」の計算です。\n実際の消費電力は、外の気温・部屋の広さ・家の断熱性能で大きく変わります。とくに暖房は、外が寒いほど効率が落ちます。\nそこで、住宅の省エネ基準（建築物省エネ法）の評価で使われている国の計算方法をそのまま使って、エアコンの電気代を計算するサイトを作りました。\nhttps:...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "【量子コンピューティング実装】Deutsh-Jozsaのアルゴリムの実装",
+      "url": "https://zenn.dev/nonnn/articles/1f3b5b5a467452",
+      "site": "Zenn(Python)",
+      "published": "2026-09-25T08:06:44Z",
+      "description": "こんにちは！Nonです。4回目の投稿になります。\n今回はIBMのQiskitの記事を参照しながらDeutsh-Jozsaアルゴリズムを実装しようと思います。\n全実装Github\n\n Deutsch-Jozsa問題\ninput: 関数 f: \\{0, 1\\}^n\\rightarrow \\{0, 1\\}\npromise: fは一定か均衡のいずれかである\noutput: fが定数なら0, fが均衡なら1...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "脆弱性情報を自動で収集・要約してSlackへ通知するBotを開発した話",
+      "url": "https://zenn.dev/kurojica/articles/4b11aaeb1d664e",
+      "site": "Zenn(Python)",
+      "published": "2026-09-25T06:10:30Z",
+      "description": "こんにちは、AI Labの加藤 颯です。\nお客様に提供しているサーバーのセキュリティ対応では、情報収集工程において脆弱性情報の確認が担当者個人の気付きに依存しています。それにより、見落としや初動遅れが発生しやすい状態になっています。\n今回は、脆弱性情報の見落としや共有の遅れによる初動遅れを防ぐ第一歩として、NVD（National Vulnerability Database）から脆弱性情報を取得...",
       "category": "開発",
       "rss_category": "",
       "image_url": ""

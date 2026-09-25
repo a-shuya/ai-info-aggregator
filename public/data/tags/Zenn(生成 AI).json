@@ -1,8 +1,68 @@
 {
   "site": "Zenn(生成 AI)",
-  "last_updated": "2026-09-25T11:42:15.521506",
-  "total_articles": 4160,
+  "last_updated": "2026-09-25T15:57:26.647053",
+  "total_articles": 4170,
   "articles": [
+    {
+      "title": "ローカル生成AIを業務ワークフローに載せて踏んだ罠 4つ（ComfyUI × Qwen-Image-Edit）",
+      "url": "https://zenn.dev/rayray/articles/70767db8fbc03c",
+      "site": "Zenn(生成 AI)",
+      "published": "2026-09-25T13:19:47Z",
+      "description": "商品写真の「切り抜き・拡張・不要物除去・加工」を、クラウド API ではなくローカルの ComfyUI + Qwen-Image-Edit で回す仕事をしていました。\nワークフローは一通り動いて、テスト画像ではきれいな結果が出る。ところが実際の運用を想定した入力（大きい写真・透過 PNG・無地背景）を流すと、エラーは一切出ないのに結果だけが静かに壊れる——そういう不具合を、本番用ワークフロー 7本...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "「バグがあります。直してください」とだけ頼んだら5回とも1文字も直らなかった。テストを置くとテストの中だけ直った",
+      "url": "https://zenn.dev/numarn/articles/existing-tests-agent-fix-scope-handson",
+      "site": "Zenn(生成 AI)",
+      "published": "2026-09-25T09:33:39Z",
+      "description": "同じバグ入りのファイルを4通りの状態で置いて、AI にまったく同じ1文で「バグがあります。直してください」と頼みました。4通り × 各5回 = 20回です(このほかに、別の依頼文で先に回した10回があります。合わせて計30回。後半で触れます)。結果はきれいに分かれました。\n\n仕様書もテストも無い状態: 5回ともファイルを1文字も直さなかった\n\nテストだけ置いた状態: 5回ともテストが見ている範囲は...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "Claude Code に任せすぎないために、自分のプロジェクトで決めた6つのこと",
+      "url": "https://zenn.dev/yohakucode/articles/claude-code-six-rules",
+      "site": "Zenn(生成 AI)",
+      "published": "2026-09-25T07:44:04Z",
+      "description": "個人開発で、自動売買のツールづくりや検証に Claude Code を使っています。ファイルを読んで、コマンドを実行して、直すところまで進めてくれるので、任せられる範囲はかなり広いです。\nその分、「思っていたのと違うことを、それっぽく終わらせる」心配も出てきます。公式ドキュメントにも、確かめる手段がないと Claude は「できたように見える」ところで止まる、と書かれています。自分のプロジェクトで...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "SQLite と JSONL を横断する。Kiro CLI の会話履歴を DuckDB で分析する",
+      "url": "https://zenn.dev/aws_japan/articles/kiro-cli-history-duckdb-analysis",
+      "site": "Zenn(生成 AI)",
+      "published": "2026-09-25T06:05:04Z",
+      "description": "はじめに\nこんにちは、AWS Japan でソリューションアーキテクトをしているいなりくです。\n私はこれまで DuckDB を触ったことがありませんでした。Amazon による DuckLabs 買収の最終契約発表を見て、手元のデータで試してみたくなり、日常的に使っている Kiro CLI の会話履歴を分析することにしました。\n最初に見つけたのは、Kiro CLI が開いている大きな data.s...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "正解は半年前に発見されていた — それでも1,770本が読まれないディレクトリに書かれ続けた",
+      "url": "https://zenn.dev/tsutomusaito/articles/rejection-gate-invariant-ja",
+      "site": "Zenn(生成 AI)",
+      "published": "2026-09-25T05:12:27Z",
+      "description": "3行で\n\n自分が運用しているサイトで、記事の 1,770 本がビルドから一度も読まれないディレクトリに書かれていた。\n正しい書き込み先は 2026-02-15 に一度発見され、修正までされていた。生成スクリプト5本も全部正しい値を持っていた。それでも3ヶ月後に反転し、以後6ヶ月間ずっと間違った側に書かれ続けた。\n気づかなかったのは誰も見ていなかったからではない。毎日 Slack に届いていて、それ...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "Claude Opus 5.5が出たので測ってみた",
+      "url": "https://zenn.dev/mumihatsu/articles/46f604bad187d9",
+      "site": "Zenn(生成 AI)",
+      "published": "2026-09-25T05:06:17Z",
+      "description": "1. はじめに — 3回目の日課\n自分はQAエンジニアで、普段のテスト設計に生成AI（Claude）を使っています。\nClaude Opus 5.5が公開されました。提供側の説明は「多くの作業でFable 5.1並み、Opus 5より4割安く3割速い」です。前回（Fable 5.1）・前々回（Opus 5）と同じく、凍結してある測定セットにモデルだけ差し替えて、同じ3つの測定を回しました。\n\n\n測...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
     {
       "title": "AIの意見を聞かない技術 第4回：サブエージェントの入力だけは、確かめろ",
       "url": "https://zenn.dev/garplab/articles/0c54d820835746",
@@ -44,6 +104,16 @@
       "image_url": ""
     },
     {
+      "title": "家づくりアプリのコラム45本をAIに点検させたら、点検役のAIも間違えていた",
+      "url": "https://zenn.dev/hinaridake/articles/ai-content-fact-check-housing-app",
+      "site": "Zenn(生成 AI)",
+      "published": "2026-09-24T23:00:05Z",
+      "description": "「家づくり管理」という iOS アプリを出しています。家を建てると決めてから引き渡しまでの記録を、スマホ 1 台にまとめるアプリです。\n\nハウスメーカー 32 社のカタログから候補を選んで、プランを並べて比べる（坪単価・UA 値・C 値・耐震等級など）\n打合せの記録（写真・音声メモつき）、やることリスト、ローンの試算\n国や自治体の補助金・税制の情報と、家づくりのコラム 45 本\n\nこのうち最後の「...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
       "title": "ハルシネーション？予言？ ～早すぎた「ギュ」辞典～",
       "url": "https://zenn.dev/minipoisson/articles/gyu-words-generation",
       "site": "Zenn(生成 AI)",
@@ -59,6 +129,36 @@
       "site": "Zenn(生成 AI)",
       "published": "2026-09-24T18:36:31Z",
       "description": "直しの根拠は、どこから来ているか\n問い合わせの返事をAIに書かせて、そのまま送ることはあまりないと思います。たいていは、返ってきた文を読んで、どこかしら手を入れてから送っています。語尾を変えたり、言葉を足したり、逆に削ったり。その直しは感覚でやっているようで、実は何かを根拠にしています。\nたとえば、部品の交換で見積もりを出してほしいという問い合わせが工場から来たとします。その依頼の内容をAIに伝え...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "AI Agentのif文までLLMに任せるの、ちょっと豪華すぎない？─Jevで考えるDecision Layer設計",
+      "url": "https://zenn.dev/yuruconsa/articles/ece76113860e7d",
+      "site": "Zenn(生成 AI)",
+      "published": "2026-09-24T16:55:31Z",
+      "description": "AI Agentを作っていると、だいたいこうなります。\nユーザーから依頼\n↓\nLLMに考えさせる\n↓\nToolを選ばせる\n↓\nToolを実行\n↓\n結果をLLMに見せる\n↓\n次に何をするか考えさせる\n↓\nまたToolを実行\n↓\n終わったかLLMに判断させる\nものすごくLLMに聞きます。\n最初は、\n\nどのToolを使う？\n\nだったはずなのに、気づくと、\n\n正常終了しました。次に進みますか？\n\nみたいな...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "Anthropic、「Claude Marketplace」を開始 — プラグイン・エージェント・導入支援を一か所で探して購入可能に",
+      "url": "https://zenn.dev/ai_news_bot/articles/ainews-20260924-t2",
+      "site": "Zenn(生成 AI)",
+      "published": "2026-09-24T15:32:17Z",
+      "description": "!\n2026/09/24 の生成AIニュース\n\n\n 概要\nAnthropic は 2026年9月23日、Claude 向けのプラグインやコネクタ、Claude を組み込んだエージェント・製品、コンサルティングなどの専門サービスをまとめて探せる「Claude Marketplace」を公開しました。企業は Anthropic との契約で確約している利用額の一部を使って、掲載されている製品を購入できる...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "Anthropic、Claudeのエージェント群が未知の酵素系「ART」を発見と発表 — CRISPR様の反復配列を持つ逆転写酵素",
+      "url": "https://zenn.dev/ai_news_bot/articles/ainews-20260924-t1",
+      "site": "Zenn(生成 AI)",
+      "published": "2026-09-24T15:31:45Z",
+      "description": "!\n2026/09/24 の生成AIニュース\n\n\n 概要\nAnthropic は 2026年9月23日、Claude を使った研究で、これまで知られていなかった酵素系を見つけたと発表しました。「ART（array-associated reverse transcriptases、アレイ関連逆転写酵素）」と名付けられたこの系は、バクテリオファージ（細菌に感染するウイルス）の中に見つかったもので、C...",
       "category": "AI・技術",
       "rss_category": "",
       "image_url": ""
