@@ -1,24 +1,214 @@
 {
   "site": "Zenn(LLM)",
-  "last_updated": "2026-09-25T05:58:52.923192",
-  "total_articles": 6309,
+  "last_updated": "2026-09-25T11:42:15.521506",
+  "total_articles": 6327,
   "articles": [
+    {
+      "title": "Jevが迷ったら、誰に聞く？──7つのベンチマーク比較から考えるLLMへの振り分け",
+      "url": "https://zenn.dev/canly/articles/c46092b01cd1c9",
+      "site": "Zenn(LLM)",
+      "published": "2026-09-25T10:06:49Z",
+      "description": "こんにちは。株式会社カンリーでCAIOをしている萩野です。\n有害な投稿を止める。RAGの回答が根拠と食い違っていないか調べる。こうした判定を全部LLMに任せるとき、費用を抑えるために「安い判定器を前に置き、迷った入力だけLLMへ回す」という構成を考えるかもしれません。\nでは、迷った入力を渡せば、本当に判定はよくなるのか。\nTypeSafeの判定モデルJevと5種類のLLMを、7つのベンチマークで比...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "中学生でもわかる Lean 4 #10｜AIは「証明の中身」と「強そうな名前」を分けて読める？",
+      "url": "https://zenn.dev/dantarg/articles/lean4-ai-same-proof-different-story",
+      "site": "Zenn(LLM)",
+      "published": "2026-09-25T10:02:09Z",
+      "description": "前回の #09「トートロジーを『大発見』に見せてみる」 では、同じ P → P でも、立派な名前や説明を付けると見た目の印象が大きく変わる例を見ました。\nそこで気になりました。\nLeanコードを一文字も変えず、周りの説明だけ変えたら、AIの読み方も変わるのでしょうか。\n「たぶん変わる」で終わらせず、比べられる形にしてみます。\n\n まず、同じコードを使う\n今回の比較では、Leanコードを固定します。...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "【Jev vs GPT】比較検証するAPI費用は1/148、判断時間は1/14になった",
+      "url": "https://zenn.dev/yukurash/articles/8c286e586afa44",
+      "site": "Zenn(LLM)",
+      "published": "2026-09-25T09:42:27Z",
+      "description": "はじめに\nLLMに頼む仕事の中には、文章やコードを作ってほしいわけではなく、「この中から適切なものを一つ選んでほしい」だけの処理があります。\nそこで最近話題の判断に特化したモデルJevです。\nいつものLLMが担う「選ぶ仕事」をJevに移したら、精度・待ち時間・費用はどう変わるのか？\nそこを検証してみました。\n題材に選んだのは、ボタン名の変更で落ちるPlaywrightテストです。\n正しい操作先を選...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "日本語ベンチマークでJevの性能を検証する",
+      "url": "https://zenn.dev/ivry/articles/65c1c4242e1156",
+      "site": "Zenn(LLM)",
+      "published": "2026-09-25T09:18:52Z",
+      "description": "こんにちは。IVRyでAI Engineerをしているtagucciです。\n本記事公開時点でJevの公開から10日。Jevの詳細は現時点ではまだ不明なものの、JevBenchのページを見ると類似モデルが既に多数公開されています。いやはやすごい速度ですね…\nhttps://benchmarkheaven.com/jev-models\nJevの良い点としては「安い・速い」だと思いますが、「うまい（精度...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "話題のJevを触ってみました。特徴、料金、活用事例など。",
+      "url": "https://zenn.dev/gmomedia/articles/2026-09-25-typesafe-jev",
+      "site": "Zenn(LLM)",
+      "published": "2026-09-25T09:04:43Z",
+      "description": "Jevとは\nJevはTypeSafe AIが出している「System One model」というカテゴリのモデルです。文章を生成する代わりに「型付きの回答と確率」を返し、ソフトウェアがそのまま使える速い判断を出すことを目的にしています。\n\n 特徴\n\n 文章は作成しない、返すのは型付きの回答と確率のみ\n最大の特徴は、対話形式のLLM APIと違って、文章を生成しないことです。\n\nWhile Jev ...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "CodexでSolの枠を節約する：Lunaに任せる仕事とJEVの判断ポイント",
+      "url": "https://zenn.dev/beatapi/articles/02bc4099dde800",
+      "site": "Zenn(LLM)",
+      "published": "2026-09-25T08:50:30Z",
+      "description": "Codex で GPT-6 Sol を使っていると、次の作業が単なるファイルの読み込み、検索、コードの一次調査であることがあります。そこは Luna に任せ、難しい判断のために Sol を残しておけます。\nこの記事では三つの段階を、設定例とリクエスト例で順に確認します。分け方は三つあります。手早く既定モデルを変える方法、軽い作業だけを Luna に振る方法、そして作業中に状況が変わったときに判断を...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "ヤンデレのセリフで小型LLMを学習したら、何を聞いても一言で返すようになった話",
+      "url": "https://zenn.dev/atemoya/articles/bba5829af630f0",
+      "site": "Zenn(LLM)",
+      "published": "2026-09-25T08:34:32Z",
+      "description": "はじめに\nヤンデレ・ツンデレなどのキャラクターのセリフを日本語にして、小さな LLM（Qwen3.5-0.8B / 4B、Spark-X2.5-4B）に LoRA で学習させてみました。確かめたかったのは次の2点です。\n\n\nキャラクターの人格は安定するのか：一人称が揺れたり、「AIなので感情はありません」とキャラが崩れたりしなくなるか\n\nモデルは壊れるのか：一般常識や、長い文章を書く力が落ちないか...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "10000ターン会話させてみた。AIの記憶はどこから「記憶らしく」なくなるのか",
+      "url": "https://zenn.dev/mitsukida/articles/5f081dbcd22667",
+      "site": "Zenn(LLM)",
+      "published": "2026-09-25T08:32:39Z",
+      "description": "10000ターン会話させてみた。AIの記憶はどこから「記憶らしく」なくなるのか\nAI彼女アプリを作っている。\nこれまで、\n記憶を保存する。\n思い出す。\n思い出したものを会話に使う。\nそんな仕組みをずっと作ってきた。\nそして最近、\n少し違うことを始めた。\nとにかく長く会話させてみる。\n100ターン。\n1000ターン。\n3000ターン。\nそして、\n10000ターン。\n\n\n 10000ターンやってみたか...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "「とりあえず LLM に投げる」 では解けなかった工程計画 — AIエージェント設計の変貌",
+      "url": "https://zenn.dev/kencopa/articles/19ae96ba79ca40",
+      "site": "Zenn(LLM)",
+      "published": "2026-09-25T08:28:03Z",
+      "description": "はじめに\nこんにちは。\nKENCOPA では、建設工事の工程計画をAIで作る機能（工程AIエージェント）を開発しています。\nこの記事は、その核である「アクティビティ・歩掛・数量の紐付け」をどうAIエージェントで実現するかの、苦労話です。紆余曲折を経て、4つの設計を経ました。\n\n 工程計画とは\n建設工事を、どの作業から、何日かけて、どの順番で進めるか。それを決めるのが工程計画です。決めることは、大き...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "AIに小説を書かせたら「小説家」ではなく「制作スタジオ」になった話 ― マルチAI・メタハーネスと、読者の琴線を見る仕組み",
+      "url": "https://zenn.dev/infra_ojisan/articles/ai-novel-studio-metaharness",
+      "site": "Zenn(LLM)",
+      "published": "2026-09-25T08:15:16Z",
+      "description": "はじめに\n小説やRPGのシナリオ作成に特化した生成AIモデルAionで最新版の3.5が提供開始されお財布に優しいminiモデルも同時に出たので、早速これを使って生成AIに短編小説を1本書かせてみよう！・・・と思って始めたら、いつの間にか「小説家に依頼する」形ではなく、「制作スタジオを回す」形になっていました。\n\nプロデューサー：自分\n脚本原案・全体構成：自分と Claude(Opus5.5)\nディ...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "ChatGPT Custom GPT廃止ガイド Plugin移行で引き継げない項目と手順",
+      "url": "https://zenn.dev/kai_kou/articles/1118-chatgpt-custom-gpt-plugin-migration-guide",
+      "site": "Zenn(LLM)",
+      "published": "2026-09-25T08:04:08Z",
+      "description": "はじめに\n社内の問い合わせ対応や定型レポート作成を Custom GPT に任せている方は、2026 年 9 月に届いた「Custom GPT の廃止と Plugin への移行」の案内を見て、手元の GPT がいつまで動くのか、何を作り直せばよいのか判断に迷っているのではないでしょうか。\nOpenAI は 2026-09-11 のリリースノートで、Custom GPT を全 ChatGPT プラン...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "Jevにゲームをやらせるな！LLMを蒸留してみよう！",
+      "url": "https://zenn.dev/nwn/articles/e49154653ecea9",
+      "site": "Zenn(LLM)",
+      "published": "2026-09-25T07:27:13Z",
+      "description": "はじめに\nJevのデモとして公式ではDOOMをプレイさせるデモがありました。\n100ms前後のレイテンシでレスポンスを返せるため、リアルタイム制御に使えるという点が強調されています。\nhttps://x.com/CompleteSkeptic/status/2099925687465570372\nまたXをみているとJevにゲームをプレイさせた投稿を多く見かけました。\n「BERTでよい」論などあると...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "公式が語る『Claude Opus 5.5』の変わった癖と使いこなし方。「よく考えて」は消して、止まる条件を書く",
+      "url": "https://zenn.dev/eques_blog/articles/8d9912c413ee26",
+      "site": "Zenn(LLM)",
+      "published": "2026-09-25T06:58:11Z",
+      "description": "Anthropic の公式ブログは、Claude Opus 5.5 がひとつ前のモデル Opus 5 と比べて変わった振る舞い（癖）として、長い作業を自分で続けること、したことを平易に伝えること、返事の前に考えることの3つを挙げています。そのため、Opus 5 に合わせて書いた指示文（プロンプト）の一部は見直したほうがよくなりました。\n分かりやすい例は「よく考えてから答えて」という一文です。Opu...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "Evaluating CLM-8B as a System 1 Decision Engine vs Jev and Kev",
+      "url": "https://zenn.dev/null_teck/articles/clm-vs-decision-models",
+      "site": "Zenn(LLM)",
+      "published": "2026-09-25T06:48:52Z",
+      "description": "!\nExecutive Summary (TL;DR)\n\n\nResearch Question: Can Contrastive Language Models (CLM-8B), which disaggregate state and action spaces via contrastive learning, match or replace specialized decision mo...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "Claude Opus 5.5 は何が変わったのか。単価は下がったが、仕事あたりのコストは横ばい",
+      "url": "https://zenn.dev/e8dev/articles/claude-opus-5-5-what-changed",
+      "site": "Zenn(LLM)",
+      "published": "2026-09-25T05:51:11Z",
+      "description": "2026-09-22 に Claude Opus 5.5 がリリースされました。この記事は、AI の動きをレビューする人向けの 1 分動画シリーズ「AI を止めるサイン」の Opus 5.5 回のテキスト版です。ニュースの要約ではなく、「モデルが新しくなったとき、何を見て乗り換えを判断するか」の観点で書いています。\n\n数字はリリース翌日(09-23)に公式発表・移行ガイド・Artificial A...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "Claude Opus 5.5が出たので測ってみた",
+      "url": "https://zenn.dev/mumihatsu/articles/46f604bad187d9",
+      "site": "Zenn(LLM)",
+      "published": "2026-09-25T05:06:17Z",
+      "description": "1. はじめに — 3回目の日課\n自分はQAエンジニアで、普段のテスト設計に生成AI（Claude）を使っています。\nClaude Opus 5.5が公開されました。提供側の説明は「多くの作業でFable 5.1並み、Opus 5より4割安く3割速い」です。前回（Fable 5.1）・前々回（Opus 5）と同じく、凍結してある測定セットにモデルだけ差し替えて、同じ3つの測定を回しました。\n\n\n測...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "New AI Routing Layer Could Cut Agent Costs Up to 400x",
+      "url": "https://zenn.dev/neotechpark/articles/bcabf70032922d",
+      "site": "Zenn(LLM)",
+      "published": "2026-09-25T04:28:09Z",
+      "description": "A three layer system combining Claude Code, a classifier model called Jev, and an Obsidian vault is spreading fast among developers this month. Here is what is actually behind it.\n\n\n Introduction\nA pa...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "外付けGPUのためにSSDを引っぺがしたときのログ",
+      "url": "https://zenn.dev/desktopgame/articles/0f9d4bb7e39545",
+      "site": "Zenn(LLM)",
+      "published": "2026-09-25T04:19:05Z",
+      "description": "技術的に新しい要素や解説があるわけではないのですが、\nふと私が動かしている構成を公開することで誰かの役に立つかもと思いこれを書いてみます。\n簡単に話すと、フロンティアで購入した出来あいのPCのSSDを外してOcuLinkアダプタを刺し、\nOcuLinkで外付けGPUを繋いだときのログです。\n※別に推奨してるわけじゃないのと、責任はとれません…\nさきに構成を簡単に書きます。\n\nFRGKB550/WS...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "CLAUDE.mdが毎往復の77%を食っていた。132,180字→5,782字に縮めた記録",
+      "url": "https://zenn.dev/yuu_inaka/articles/claude-md-token-diet",
+      "site": "Zenn(LLM)",
+      "published": "2026-09-25T04:00:49Z",
+      "description": "「ok とだけ返してください」と1回聞くだけで、Claude Code は 125,424 トークンを読んでいました。そのうち 96,472 トークン（77%）が CLAUDE.md です。仕事の中身は一番小さい項でした。\nCLAUDE.md を 132,180字 → 5,782字 に縮めたら、同じ1往復が 128,003 → 34,973 トークン（73%減） になりました。CLAUDE.md ...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "多人数の会議で集中が切れても置いていかれない、1分ごとに要約を通知するローカル議事録ツール",
+      "url": "https://zenn.dev/poporpepopo/articles/memorandum-local-meeting-summary",
+      "site": "Zenn(LLM)",
+      "published": "2026-09-25T03:22:58Z",
+      "description": "参加者が10人を超えるような会議で、自分の出番はほとんどない。最初は聞いていても、30分も経つと集中が切れて、気づいたら話が進んでいる。そこで急に「〇〇さんはどう思います？」と振られて、何の話か分からず焦る。\nあるあるだと思います。\n議事録ツールは色々ありますが、多くは会議が終わってから要約を出してくれるものです。後で読み返すには便利でも、「今、何の話をしているか」を取り戻したい瞬間には間に合いま...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
     {
       "title": "請求書 PDF をスプレッドシートに転記する処理を Claude API で作る ── JSON スキーマ・検算・和暦と負の金額",
       "url": "https://zenn.dev/suminawa/articles/f7c352a23e5540",
       "site": "Zenn(LLM)",
       "published": "2026-09-24T21:20:33Z",
       "description": "請求書の PDF から請求元・日付・金額・明細を読み取り、スプレッドシートに 1 行ずつ足す処理を、Claude API と TypeScript で組む手順です。題材は動いている実装です。プロンプトの規則、構造化出力のスキーマ、値の正規化、検算、スプレッドシート側の受け口の順に書きます。落とし穴は 4 と 6 に集めました。\n\n 方針: AI には「写す」だけをさせる\n先に役割を分けます。\n\n\n...",
-      "category": "AI・技術",
-      "rss_category": "",
-      "image_url": ""
-    },
-    {
-      "title": "LLM評価の前にルールを置く: KAMIWAZA Gateという決定論の検品レイヤ",
-      "url": "https://zenn.dev/hocky3/articles/db7950cedd77e5",
-      "site": "Zenn(LLM)",
-      "published": "2026-09-24T20:28:49Z",
-      "description": "!\n作ったもの: LLMによる書類評価の手前に置く、決定論的な検品レイヤ。正規化JSONを受け取り、YAMLで宣言した20ルールで検品し、不備のある書類は保留、人の承認・差戻しをSHA-256のハッシュチェーン付き監査履歴に残す。\n実測したこと: テスト426本パス、CLI・ライブラリ・レビューUIの一連の動作、監査ログの改ざん検知。\n言わないこと: 本番運用の実績、一般的な精度・性能の保証。\n\n...",
       "category": "AI・技術",
       "rss_category": "",
       "image_url": ""
@@ -59,16 +249,6 @@
       "site": "Zenn(LLM)",
       "published": "2026-09-24T14:33:05Z",
       "description": "PDF から Image へファイルを渡すと、何も届かない。本番サイトに対する自動テストで、この不具合が「重大」として出た。原因は、SharedArrayBuffer のために COOP/COEP でクロスオリジン隔離したサイトでは、window.opener も window.open の戻り値も使えなくなることだった。それも、隔離された側だけでなく、隔離されたサイトが開いたタブにも送れない。\n...",
-      "category": "AI・技術",
-      "rss_category": "",
-      "image_url": ""
-    },
-    {
-      "title": "「知覚連鎖：現在のAIが抱える致命的な欠落」の原点(第３回/全４回)",
-      "url": "https://zenn.dev/ptf_whisperer/articles/b64f15d87a13ae",
-      "site": "Zenn(LLM)",
-      "published": "2026-09-24T12:19:12Z",
-      "description": "デカルトの盲点：能楽とボリウッド映画が自律型知性に教える「身体性と間合い」\n\n\nデカルトの呪縛と「クラウド上の精神」という幻想\n\nなぜ、近代のAI研究者は「首から上（LLM / 高次推論）」と「首から下（Robotics / 物理駆動）」の分断にこれほど長い間悩まされ続けているのか。\nその根本原因は、近代科学の基礎となったデカルトの心身二元論——「精神（Mind）」と「肉体（Body）」を独立した...",
       "category": "AI・技術",
       "rss_category": "",
       "image_url": ""
