@@ -1,8 +1,48 @@
 {
   "site": "Zenn(AI)",
-  "last_updated": "2026-09-25T19:58:26.990779",
+  "last_updated": "2026-09-25T23:14:17.197395",
   "total_articles": 14147,
   "articles": [
+    {
+      "title": "claude + cve-lite-cli + LEVでフロントエンドの脆弱性優先度判断を更に高める",
+      "url": "https://zenn.dev/t_o_d/articles/c37d73f3820b92",
+      "site": "Zenn(AI)",
+      "published": "2026-09-25T20:43:28Z",
+      "description": "前回の記事で、OWASPのcve-lite-cliの優先度(CVSS × EPSS)をClaude Skillへ渡し、最上位の1パッケージをAIに修正させる仕組みを作りました。\nただしEPSSは「今後30日で悪用される確率」であり、「既に悪用されているか」は表しません。\nそこでNIST提案の LEV(Likely Exploited Vulnerabilities) を加え、「未来(EPSS)」と...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "Claude CodeとCodex、差は賢さじゃなく使い勝手だった（そして自分は伝書鳩になった）",
+      "url": "https://zenn.dev/hontsuke/articles/0118c6df497a6a",
+      "site": "Zenn(AI)",
+      "published": "2026-09-25T18:19:40Z",
+      "description": "要らないと書いたのに、課金した\n以前、Claude Code + Codexは個人開発の規模だと要らなかったという記事を書きました。\nにもかかわらず、ChatGPT Plusに課金しました。\n\n 課金した理由\n理由はシンプルで、Claude Codeのトークンが足りないからです。個人開発している蔵書管理サービス「本つけ」の開発で、Claude Codeをがっつり使っています。このままClaudeの...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "非エンジニアが AI レビューを 40 回回して分かった、指摘の 88% は製品の欠陥ではなかった",
+      "url": "https://zenn.dev/kabu_vibe/articles/f2445961ba19cb",
+      "site": "Zenn(AI)",
+      "published": "2026-09-25T18:14:12Z",
+      "description": "40 回。18 日。最長で 16 回続けて差し戻された。\n指摘 17 件を一つずつ分類したら、製品そのものの欠陥は 2 件。12%。\n日本株の自動売買システムを、AI のコーディング支援だけで作っている。私はコードを書かない。前回はバックテストの数字が良く見えすぎる機序を書いた。今回はその先、本番の機械に配備する前のレビュー関門で起きたことを、数字で書く。\n先に用語を 3 つ決めておく。\n\n\n\n語...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "AI人狼と Jev の偏り",
+      "url": "https://zenn.dev/kana001_bit/articles/ai-werewolf-jev-bias",
+      "site": "Zenn(AI)",
+      "published": "2026-09-25T17:55:25Z",
+      "description": "8人配役の人狼を AI 同士に打たせています。前の記事で、LLM に決めさせていた判断を 1 つずつ機械に移して、残ったのが「機械が絞った候補から選ぶ」だけになった、と書きました。その「選ぶ」を Jev に移したのがこの記事の前提です。\nJev は TypeSafe AI のモデルで、文章を生成しません。選択肢と型を渡すと、選んだ値と選択肢ごとの確率だけを返します。誰を襲撃するか、誰に投票するか、...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
     {
       "title": "Jevでコードレビューの観点を自動抽出してみたら、実際に不具合が再現した話",
       "url": "https://zenn.dev/adachi6k/articles/99193762817e3f",
@@ -154,51 +194,11 @@
       "image_url": ""
     },
     {
-      "title": "AI.CLASSIFYでGROUP BYする — 分類軸を自然言語で定義する",
-      "url": "https://zenn.dev/web_benriya/articles/bigquery-ai-classify-group-by",
-      "site": "Zenn(AI)",
-      "published": "2026-09-25T10:20:39Z",
-      "description": "はじめに\nシリーズ第9回です。\n前回（第8回）では AI.IF を使い、WHERE句に自然言語の条件を埋め込む「セマンティックフィルタ」を解説しました。今回は AI.CLASSIFY を取り上げます。\nAI.CLASSIFY はテキストを指定したラベルのいずれかに分類する関数です。AI.IF が「この行は条件を満たすか／満たさないか」のBool判定だとすれば、AI.CLASSIFY は「この行はA...",
-      "category": "AI・技術",
-      "rss_category": "",
-      "image_url": ""
-    },
-    {
-      "title": "中学生でもわかる Lean 4 #10｜AIは「証明の中身」と「強そうな名前」を分けて読める？",
-      "url": "https://zenn.dev/dantarg/articles/lean4-ai-same-proof-different-story",
-      "site": "Zenn(AI)",
-      "published": "2026-09-25T10:02:09Z",
-      "description": "前回の #09「トートロジーを『大発見』に見せてみる」 では、同じ P → P でも、立派な名前や説明を付けると見た目の印象が大きく変わる例を見ました。\nそこで気になりました。\nLeanコードを一文字も変えず、周りの説明だけ変えたら、AIの読み方も変わるのでしょうか。\n「たぶん変わる」で終わらせず、比べられる形にしてみます。\n\n まず、同じコードを使う\n今回の比較では、Leanコードを固定します。...",
-      "category": "AI・技術",
-      "rss_category": "",
-      "image_url": ""
-    },
-    {
-      "title": "【Jev vs GPT】比較検証するとAPI費用は1/148、判断時間は1/14になった",
-      "url": "https://zenn.dev/yukurash/articles/8c286e586afa44",
-      "site": "Zenn(AI)",
-      "published": "2026-09-25T09:42:27Z",
-      "description": "はじめに\nLLMに頼む仕事の中には、文章やコードを作ってほしいわけではなく、「この中から適切なものを一つ選んでほしい」だけの処理があります。\nそこで最近話題の判断に特化したモデルJevです。\nいつものLLMが担う「選ぶ仕事」をJevに移したら、精度・待ち時間・費用はどう変わるのか？\nそこを検証してみました。\n題材に選んだのは、ボタン名の変更で落ちるPlaywrightテストです。\n正しい操作先を選...",
-      "category": "AI・技術",
-      "rss_category": "",
-      "image_url": ""
-    },
-    {
       "title": "AIに書かせても速くならないのは、AIを「手足」として使っているから。人が押さえるべき5つの判断ポイントと半自動ループの作り方",
       "url": "https://zenn.dev/dotdtech_blog/articles/65d51bc72d7ee9",
       "site": "Zenn(AI)",
       "published": "2026-09-25T09:35:29Z",
       "description": "はじめに\nAI にコードを書かせているのに、開発が速くならない。この感覚を持っている人は多いと思います。書かせるのは一瞬なのに、確認と手戻りで1日が終わる。\n同じ時期に、「ループエンジニアリング」という言葉を見かけるようになりました。AI エージェントに計画 → 実装 → 検証 → 修正のループを繰り返させ、人はコードを書く側から、ループと判断点を設計する側に回る考え方です。うまく回れば、人が付き...",
-      "category": "AI・技術",
-      "rss_category": "",
-      "image_url": ""
-    },
-    {
-      "title": "話題のJevを触ってみました。特徴、料金、活用事例など。",
-      "url": "https://zenn.dev/gmomedia/articles/2026-09-25-typesafe-jev",
-      "site": "Zenn(AI)",
-      "published": "2026-09-25T09:04:43Z",
-      "description": "Jevとは\nJevはTypeSafe AIが出している「System One model」というカテゴリのモデルです。文章を生成する代わりに「型付きの回答と確率」を返し、ソフトウェアがそのまま使える速い判断を出すことを目的にしています。\n\n 特徴\n\n 文章は作成しない、返すのは型付きの回答と確率のみ\n最大の特徴は、対話形式のLLM APIと違って、文章を生成しないことです。\n\nWhile Jev ...",
       "category": "AI・技術",
       "rss_category": "",
       "image_url": ""
