@@ -1,8 +1,48 @@
 {
   "site": "Zenn(機械学習)",
-  "last_updated": "2026-09-26T01:40:44.023480",
-  "total_articles": 1900,
+  "last_updated": "2026-09-26T06:39:36.196101",
+  "total_articles": 1902,
   "articles": [
+    {
+      "title": "Claude Codeと作る競馬予測システム開発記(7) オッズスナップショットと市場心理編",
+      "url": "https://zenn.dev/teruyotasaki/articles/horse-racing-ml-dev-07-odds-snapshot",
+      "site": "Zenn(機械学習)",
+      "published": "2026-09-26T03:11:31Z",
+      "description": "はじめに\n前回は、本番予測スクリプトが仮説検証を重ねながらどう置き換わってきたかを振り返りました。\n第7回となる今回は、モデルの予測そのものではなく「市場（オッズ）の動きをどう観測し、どう活用しようとしているか」について書きます。第4回で「中央競馬は市場効率が高く、モデルが市場に勝つのは簡単ではない」と書きましたが、だからこそ市場そのものの動きをデータとして持っておく価値があると考えています。\n\n...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "欠損値は「なぜ欠けたか」で処理が変わる — MCAR / MAR / MNAR をPythonで理解する",
+      "url": "https://zenn.dev/salesanalytics/articles/14607aa54f858b",
+      "site": "Zenn(機械学習)",
+      "published": "2026-09-26T03:02:43Z",
+      "description": "機械学習モデルの精度が伸びない原因が、実は「欠損値の扱い方」にあった——というのはよくある話です。\n欠損値を「とりあえず平均値で埋める」「とりあえず行ごと削除する」前に押さえておきたいのが、欠損のメカニズム（MCAR・MAR・MNAR）です。この記事では、その要点だけをコンパクトにまとめます。\n\n 欠損値の処理は「なぜ欠けたか」で決まる\n欠損値とは、本来あるべきデータが何らかの理由で記録されていな...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "機械学習を試したいがデータが無い — 正解が勝手に降ってくる場所を探した",
+      "url": "https://zenn.dev/horibe/articles/ml-training-data-for-free",
+      "site": "Zenn(機械学習)",
+      "published": "2026-09-26T01:34:40Z",
+      "description": "機械学習を自分で一度やってみたい、と思ったときに最初にぶつかるのは\nアルゴリズムでもGPUでもなく、教師データが無いことだった。\n入門記事は大抵 Titanic か MNIST で、それは「もう誰かが正解を付けてくれたデータ」だ。\n自分の題材でやろうとすると、まず何百件も正解を手で付けるところから始まる。そこで力尽きる。\n自分のアプリの中に、正解が自動で降ってくる場所が埋まっていた話を書く。\nまだ...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "新モデル「Jev」とBERTを比較して整理する ― 「生成しない」モデルの本質的な違い",
+      "url": "https://zenn.dev/sudonotfound/articles/20260923-jev-vs-bert",
+      "site": "Zenn(機械学習)",
+      "published": "2026-09-25T21:42:17Z",
+      "description": "TL;DR\n\n2026年9月にTypeSafe AIが発表した新モデル「Jev」を、既存の代表的なエンコーダモデルBERTと比較しながら整理します\n両者は「自由形式のテキストを生成しない」という共通点を持ちますが、その理由も入出力の設計も大きく異なります\n「分類に使うモデルだ」という単純な理解では両者とも捉えきれない、という点を掘り下げます\n\n\n 背景・課題\n2026年9月15日、TypeSafe...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
     {
       "title": "Jevが迷ったら、誰に聞く？──7つのベンチマーク比較から考えるLLMへの振り分け",
       "url": "https://zenn.dev/canly/articles/c46092b01cd1c9",
@@ -169,26 +209,6 @@
       "site": "Zenn(機械学習)",
       "published": "2026-09-23T19:05:40Z",
       "description": "GQA（Grouped-Query Attention）とMQA（Multi-Query Attention）が減らすのは、Query headではなくKey/Value headです。実装ではnum_attention_headsとnum_key_value_headsを別々に扱い、Query headから参照先のKV headへのmappingを作ります。\nこの記事では、GQA/MQAを次の3...",
-      "category": "AI・技術",
-      "rss_category": "",
-      "image_url": ""
-    },
-    {
-      "title": "機械学習モデルの評価指標と統計的検定",
-      "url": "https://zenn.dev/972697325291316/articles/7aba4350e0fbb3",
-      "site": "Zenn(機械学習)",
-      "published": "2026-09-23T01:33:07Z",
-      "description": "はじめに\n機械学習モデルを評価するとき、「Accuracyが0.85でした」で終わってしまうケースをよく見かけます。しかし実務や論文では、\n\nそもそもAccuracy以外にどんな指標を見るべきか\nクラス不均衡があるときにどう評価するか\nモデルAとモデルBの差は「本当に意味のある差」なのか、それとも「たまたま」なのか\n\nといった点まで詰めて考える必要があります。この記事では、まず分類問題でよく使われ...",
-      "category": "AI・技術",
-      "rss_category": "",
-      "image_url": ""
-    },
-    {
-      "title": "機械学習からTransformerへ4冊",
-      "url": "https://zenn.dev/komatsu_ops/articles/20260923_book_ref",
-      "site": "Zenn(機械学習)",
-      "published": "2026-09-23T00:05:05Z",
-      "description": "はじめに\n数年前、社内の問い合わせログを分類するタスクを任された。そのときの自分はTF-IDFとロジスティック回帰を組み合わせたモデルを動かし、精度が7割そこそこで止まっていた。特徴量を足しても、ハイパーパラメータをいじっても数字が動かない。しかも、動かない理由を説明できなかった。\n原因は単純だった。写経したコードは動くのに、中身を理解していなかった。なぜこの前処理なのか、なぜこの損失関数なのか。...",
       "category": "AI・技術",
       "rss_category": "",
       "image_url": ""
