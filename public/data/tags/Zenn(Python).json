@@ -1,14 +1,54 @@
 {
   "site": "Zenn(Python)",
-  "last_updated": "2026-09-26T11:49:26.676339",
-  "total_articles": 6674,
+  "last_updated": "2026-09-26T15:09:18.086919",
+  "total_articles": 6678,
   "articles": [
+    {
+      "title": "読めなかったときに何を返すか。フォールバックの向きを間違えると外に出る",
+      "url": "https://zenn.dev/shinsei99/articles/safe-default-on-unreadable",
+      "site": "Zenn(Python)",
+      "published": "2026-09-26T11:47:17Z",
+      "description": "業務チャットに常駐しているAIが、未完了タスクの催促を自動で送ります。\n休業日には送らないという条件が付いています。会社の年間休暇スケジュール（Excel）を取り込んで判定しています。\nこれが、片方のPCだけ効いていませんでした。休みの日にも催促が飛んでいた。\nエラーは出ていません。設定画面上は「休業日判定：有効」でした。\n\n 原因は2段だった\n\n 1段目：参照先が、別のPCのパスだった\n休暇スケ...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "Pythonで叩いたAPIは沈黙して嘘をつく。エラーも0件も返さず、もっともらしい値が返る3つの実例",
+      "url": "https://zenn.dev/menshiba/articles/71055d4a501136",
+      "site": "Zenn(Python)",
+      "published": "2026-09-26T11:27:53Z",
+      "description": "前提\n個人ブログの運用を、自作の Python スクリプト群で半自動化している。外部サービスの状態は、だいたい内部 API を GET して数字を拾っている。\nその数字が、今日1日で3つ嘘をついていた。しかも全部 HTTP 200 で、全部「0件」でも「エラー」でもなく、ちょうどもっともらしい中間の値が返っていた。\n前に「「異常0件」は健全の証拠にならない。検知を作ったら、わざと壊して確かめる」と...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "ComfyUI で Qwen-Image 2.1 のテキストエンコードを先に済ませても、内蔵 GPU では 3% しか縮まなかった",
+      "url": "https://zenn.dev/maruhana/articles/qwen-image-21-two-phase-te-igpu",
+      "site": "Zenn(Python)",
+      "published": "2026-09-26T11:16:12Z",
+      "description": "!\n先に、この記事の要約（専門用語なし）\n\n画像生成は「指示文を数値に直す部品」と「絵を描く部品」の二つを順番に使う。1 枚ごとに二つを入れ替えるのが遅いのでは、と考えた\nそこで、全部の指示文を先に数値に直して保存しておき、あとで絵を描く部品だけで続けて描く形に作り替えた\n結果は 1 枚 128 秒が 124 秒。3% しか縮まなかった\n理由は、この PC では部品の入れ替えがもともと安かったこと...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
     {
       "title": "Gemini 3.8 Flash TTSではじめるテキスト読み上げ生成",
       "url": "https://zenn.dev/sdkfz181tiger/articles/4055b5a5c80a27",
       "site": "Zenn(Python)",
       "published": "2026-09-26T04:07:11Z",
       "description": "Gemini 3.8 Flash TTSではじめるテキスト読み上げ生成\n今回は、\"Gemini3.8-Flash-TTS\"を使ってテキスト読み上げ生成を試してみます。\n本モデルでは、130以上の言語がサポートされ、音声として30種類の事前構築済みセットがあらかじめ用意されています。\n単一話者の読み上げだけでなく、複数人での対話の再現や、感情・表現スタイルの細かな指定が可能です。\n\n 2種類のモデル...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "IPAmj明朝の6万字形をブラウザだけで扱うまでに踏んだ罠：消えた cmap format 14、fontkit、多重露光",
+      "url": "https://zenn.dev/jassdack/articles/b457df18efdbba",
+      "site": "Zenn(Python)",
+      "published": "2026-09-26T03:56:09Z",
+      "description": "IPAmj明朝の異体字（IVS）を、ブラウザだけで検索・比較・コピーし、PNG や SVG に書き出せる静的 Web ツールを作りました。本稿は、その実装で踏んだ罠の記録です。\nhttps://github.com/photoguild-ITteam/mj-variant-finder\n!\n異体字をめぐる3本の記事\n\n\n「髙」「邉」をコピペしたら普通の字に戻る問題：なぜ化けるのか、どう使えばいいの...",
       "category": "開発",
       "rss_category": "",
       "image_url": ""
@@ -64,7 +104,7 @@
       "image_url": ""
     },
     {
-      "title": "くりこみを身近な例から積み上げて、場の量子論までたどり着く(Pythonコード付き)",
+      "title": "くりこみについてまとめる（わからん）",
       "url": "https://zenn.dev/tabayashi/articles/renormalization-from-scratch",
       "site": "Zenn(Python)",
       "published": "2026-09-25T22:48:17Z",
