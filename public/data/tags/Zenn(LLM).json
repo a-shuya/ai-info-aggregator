@@ -1,14 +1,84 @@
 {
   "site": "Zenn(LLM)",
-  "last_updated": "2026-09-26T06:39:36.196101",
-  "total_articles": 6329,
+  "last_updated": "2026-09-26T11:49:26.676339",
+  "total_articles": 6336,
   "articles": [
     {
-      "title": "Microsoft、Copilotを刷新 — Home・Code・常駐エージェント「Autopilot」の3本柱に",
-      "url": "https://zenn.dev/ai_news_bot/articles/ainews-20260926-t1",
+      "title": "ChatGPTと学ぶvLLMの基礎：AWSでQwen3-4Bを動かしてLLM Servingを理解する",
+      "url": "https://zenn.dev/yukiko_50135/articles/b878a974b52e25",
       "site": "Zenn(LLM)",
-      "published": "2026-09-26T01:21:13Z",
-      "description": "!\n2026/09/26 の生成AIニュース\n\n\n 概要\nMicrosoft は 2026年9月25日（米国時間）、業務向け AI アシスタント「Copilot」の大幅な刷新を公式ブログで発表しました。新しい Copilot は「Home」「Code」「Autopilot」の3つの機能を柱に再構成されます。特に Autopilot は、利用者が操作していない間も Microsoft 365 の中で...",
+      "published": "2026-09-26T09:55:54Z",
+      "description": "はじめに\nローカルLLMを自分で動かしてみたいと思い、Serving基盤としてよく名前を見かける vLLM を触ってみることにしました。\n今回もChatGPTにハンズオン計画を立ててもらい、ハンズオンを進めながら\n\nvLLMが担当していること\nLLMモデルが持っている能力や設定\n\nを説明できるようになることを目的としました。\n\n ChatGPTとAWS vLLMハンズオンを設計する\nChatGPT...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "超かぐや姫!の月見ヤチヨに着想を得たAIバーチャルタレントシステムのアーキテクチャ提案",
+      "url": "https://zenn.dev/negi_infinity/articles/7f0a7ce1894584",
+      "site": "Zenn(LLM)",
+      "published": "2026-09-26T07:36:13Z",
+      "description": "※『超かぐや姫！』の内容に言及します。前提知識無しでも理解できるように書いていますが未視聴の人はご注意ください\n\n 最初に\n皆さん、『超かぐや姫！』はもう観ましたか?この作品の良さというのは散々語り尽くされているのでわざわざここでは書きませんが、名作だと思います。ところで、『超かぐや姫！』と関連情報を見ていたら、AIバーチャルタレント(AIタレント)あるいはいわゆるAITuberについて、タレント...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "PagedAttentionによるKV Cache管理",
+      "url": "https://zenn.dev/kas_blog/articles/20260509-llm-22-vllm-pagedattention",
+      "site": "Zenn(LLM)",
+      "published": "2026-09-26T05:00:47Z",
+      "description": "PagedAttentionは、LLM servingでrequestごとに伸びるKV Cacheを固定長blockへ分割し、logicalなtoken順序とGPU memory上のphysical配置を分離する仕組みです。vLLMのthroughputを支える中核ですが、単なる「KV Cacheの分割」ではありません。\n実装上のcontractは次の3点です。\n\nrequestはlogical ...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "AIに「待たせる仕事」をさせない。長時間Tool実行をLLM Contextから追い出す設計",
+      "url": "https://zenn.dev/c_a_p_engineer/articles/agent-wait-outside-context",
+      "site": "Zenn(LLM)",
+      "published": "2026-09-26T04:12:04Z",
+      "description": "AIエージェントに長い仕事を任せると、意外なところでContextを使います。\n考えているときではありません。\n待っているときです。\n例えば、ブラウザ操作、画像生成、動画生成、外部Job、CI、デプロイ、長い解析処理。\nToolを呼んだあと、すぐ終わらない処理は普通にあります。\nこのとき素朴なAgent loopを作ると、\n\nToolを開始する\n「まだ実行中」を受け取る\n少し待つ\n状態を確認する\n...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "Jevに「知名度」を推定させたら、前田利家より「三井市」が高く出た",
+      "url": "https://zenn.dev/meruno/articles/6b39edfd8e8ca9",
+      "site": "Zenn(LLM)",
+      "published": "2026-09-26T03:19:55Z",
+      "description": "「前田利家」と「三井市」なら、どちらが知られているだろう。\n前田利家は戦国武将で、大河ドラマの主人公にもなった人だ。一方の三井市は、実験のために市町村名の一部を組み合わせて作った名前。Wikipediaに同名の記事や転送がないことも確認した。\nいま話題の Jev(TypeSafe)には、次の質問を渡した。記事名 のところに、調べたい名前を入れている。\n\n記事名 は日本語版ウィキペディアの記事の題名...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "LLMを「信頼できない外部入力」として扱う設計 ― Jinの実装パーサーが検証している2つの観点",
+      "url": "https://zenn.dev/tanishi_z/articles/21-jin-llm-untrusted-input-design",
+      "site": "Zenn(LLM)",
+      "published": "2026-09-26T02:40:05Z",
+      "description": "対象読者と動作環境\n\n自分のアプリにLLM連携機能（コード生成・ファイル編集など）を組み込んでいる個人開発者\nLLMの出力をそのままファイルシステムに書き込む前に、何を検証すべきか設計指針が欲しい方\n動作確認環境: Node.js v24.14.0（package.json の engines は &gt;=24.0.0）/ TypeScript 5.9.3（package.json の指定は ^...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "AWE（自動作文評価）と想起練習の実装：間違えた英文をその場で隠して再発話させるUI設計",
+      "url": "https://zenn.dev/englishdue/articles/954cacadfa2e4b",
+      "site": "Zenn(LLM)",
+      "published": "2026-09-26T02:40:05Z",
+      "description": "TL;DR\n\n\n課題: オンライン英会話やAI添削で直された文法・前置詞の誤り（例: \"in Monday\" \\rightarrow \"on Monday\"）を、翌日も全く同じ形で繰り返してしまう。赤字添削を眺める受動的インプットでは、脳内の長期記憶（シナプス）が強化されない（Roediger &amp; Karpicke 2006）。\n\n解決のアプローチ: Gitの差分（Diff）検知とリベース...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "AIエージェントの監査ログをApache Iggyで外部には出さずに残してみた",
+      "url": "https://zenn.dev/okamyuji/articles/apache-iggy-ai-agent-audit-log",
+      "site": "Zenn(LLM)",
+      "published": "2026-09-26T02:05:26Z",
+      "description": "はじめに\nAIエージェントにツールを付与して実業務で使い始めると、監査担当から「何をして、なぜそう判断したのか」を後から示すよう求められることが多いと思います。金融や製造のように、データを外部サービスには送れない組織では、SaaSへLLM観測系のトレースデータを送る選択肢は最初から除外されがちです。そこで、エージェントの全行動を手元にあるホストだけで永続ストリームに記録し、時系列で再生表示する基盤...",
       "category": "AI・技術",
       "rss_category": "",
       "image_url": ""
@@ -19,6 +89,36 @@
       "site": "Zenn(LLM)",
       "published": "2026-09-26T00:12:19Z",
       "description": "3行まとめ\n\n2026年7月28日にリリースされたMCP（Model Context Protocol）新仕様の最大の変更は、initializeハンドシェイクとMcp-Session-Idの廃止。プロトコルがステートフルからステートレスなリクエスト/レスポンス方式に変わり、リモートMCPサーバーがスティッキーセッションなしで普通のロードバランサの後ろに置けるようになった\nサーバー起動の割り込みリ...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "AI人狼と Jev の偏り",
+      "url": "https://zenn.dev/kana001_bit/articles/ai-werewolf-jev-bias",
+      "site": "Zenn(LLM)",
+      "published": "2026-09-25T17:55:25Z",
+      "description": "8人配役の人狼を AI 同士に打たせています。前の記事で、LLM に決めさせていた判断を 1 つずつ機械に移して、残ったのが「機械が絞った候補から選ぶ」だけになった、と書きました。その「選ぶ」を Jev に移したのがこの記事の前提です。\nJev は TypeSafe AI のモデルで、文章を生成しません。選択肢と型を渡すと、選んだ値と選択肢ごとの確率だけを返します。誰を襲撃するか、誰に投票するか、...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "1,500行に畳んだ引き継ぎログを、Claude Code は3割しか読んでいなかった",
+      "url": "https://zenn.dev/miilaka/articles/claude-code-read-limit-handoff",
+      "site": "Zenn(LLM)",
+      "published": "2026-09-25T16:23:41Z",
+      "description": "Claude Code に「起動したら、まず引き継ぎログを読む」という決まりを持たせている人は多いと思います。前回の会話で何をしたかを、次の会話のAIへ渡すためのファイルです。\n著者の環境では、このファイルを1,500行に保つ仕組みを入れていました。Claude Code のファイルを読む道具（Read）は、既定で先頭の2,000行まで読むので、それより小さければ全部届くと考えていたからです。\n実...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "Claude Code に記憶と引き継ぎを持たせる — 3つの置き場と、実際に起きた事故の対策テンプレート",
+      "url": "https://zenn.dev/miilaka/books/claude-code-memory-handoff",
+      "site": "Zenn(LLM)",
+      "published": "2026-09-25T16:17:16Z",
+      "description": "Claude Code や Codex を毎日使っていると、前回の続きを忘れる、記録が膨らんで読まれなくなる、別のAIの記録を消す、といった事故が起きます。この本は、進行は Notion、個人の情報と資料は Obsidian、AIの動かし方は CLAUDE.md という分担と、引き継ぎログが2.7MBまで膨らんで最新の分が読まれなくなった件などの実際の事故と対策を、そのまま使えるテンプレートと、テ...",
       "category": "AI・技術",
       "rss_category": "",
       "image_url": ""
@@ -39,36 +139,6 @@
       "site": "Zenn(LLM)",
       "published": "2026-09-25T13:58:22Z",
       "description": "TL;DR\n\nSnowflakeの TPC-H サンプルデータ（地域・国・仕入れ先・部品・部品仕入れの5表）に対して、Semantic View と Cortex Agent を組み、Snowflake CoWork（Snowflake Intelligence）のチャット画面で日本語の質問に自然文で答えられる状態を構築しました\nACCOUNTADMIN は初期セットアップのみで使い、日常の作業は...",
-      "category": "AI・技術",
-      "rss_category": "",
-      "image_url": ""
-    },
-    {
-      "title": "Antigravity SDKのローカル実行を整理する — 16GB MacでGemma 4エージェントはどこまで回るか",
-      "url": "https://zenn.dev/amu_lab/articles/antigravity-sdk-local-agent-16gb-mac",
-      "site": "Zenn(LLM)",
-      "published": "2026-09-25T13:37:13Z",
-      "description": "この記事で分かること\n「社内が閉域網だから、AIエージェントは諦めていた」——この記事はその前提を壊すために書いた。\nGoogleが2026年9月23日にAntigravity SDKのローカルAIモデル対応を発表した。トークンコスト$0・データは端末から出ない・完全オフラインでエージェントワークフローが回る。ただし公式の目玉であるGemma 4 26Bは24GB以上のメモリ推奨。16GBマシンは...",
-      "category": "AI・技術",
-      "rss_category": "",
-      "image_url": ""
-    },
-    {
-      "title": "LangChainアプリをStreamlitで配る — ローカル30行でチャットUIを作る",
-      "url": "https://zenn.dev/yukihayama/articles/langchain-streamlit-ui",
-      "site": "Zenn(LLM)",
-      "published": "2026-09-25T13:09:09Z",
-      "description": "LangChainアプリをStreamlitで配る — ローカル30行でチャットUIを作る\n\n ターミナルでしか動かないアプリは、自分以外の誰も使えない\nLangChainでチェーンを組んで、動いた。でもそれは自分のターミナルの中だけで、python main.py を叩けるのは自分ひとりだけだ。同僚に「これ使ってみて」と渡そうとすると、Pythonのバージョン、pip install、APIキー...",
-      "category": "AI・技術",
-      "rss_category": "",
-      "image_url": ""
-    },
-    {
-      "title": "ウェビナー字幕をCLAUDE.mdに全文で入れると？ Claude Codeで18回比べたら採点は同点・入力トークン約4割増",
-      "url": "https://zenn.dev/kanta13jp1/articles/claude-md-webinar-transcript-ab-test",
-      "site": "Zenn(LLM)",
-      "published": "2026-09-25T11:12:06Z",
-      "description": "先に結論\n「Claude Codeの公式ウェビナーを文字起こしして、CLAUDE.mdに入れれば最強では？」という発想を、実際に測りました。3種類のCLAUDE.md × 3課題 × 各2回、計18回の比較です。\n\n\n\nCLAUDE.mdの中身\n全問合格\n入力トークン（1回平均）\n報告コスト（6回合計）\n\n\n\n\nA: 共通ルールのみ（7行）\n6/6\n172,170\n$0.76\n\n\nB: A＋ウェビ...",
       "category": "AI・技術",
       "rss_category": "",
       "image_url": ""
