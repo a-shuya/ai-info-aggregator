@@ -1,8 +1,38 @@
 {
   "site": "Zenn(機械学習)",
-  "last_updated": "2026-09-27T04:31:44.863745",
-  "total_articles": 1903,
+  "last_updated": "2026-09-27T10:12:12.689866",
+  "total_articles": 1906,
   "articles": [
+    {
+      "title": "欠損値の検出と可視化 — pandas と missingno で「現状把握」から始める",
+      "url": "https://zenn.dev/salesanalytics/articles/ce170d6176be8e",
+      "site": "Zenn(機械学習)",
+      "published": "2026-09-27T00:08:05Z",
+      "description": "欠損値を削除したり補完したりする前に、まずやるべきことがあります。それは「欠損の現状を正確に把握すること」です。\nどの列に、どれくらいの欠損があり、どんなパターンで発生しているのか。これを見える化して初めて、適切な処理方針が立てられます。この記事では、pandas と missingno を使った欠損の「検出」と「可視化」の要点をコンパクトにまとめます。\n!\n欠損の3つのメカニズム（MCAR・MA...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "PyTorch時代の機械学習書4選",
+      "url": "https://zenn.dev/soraml/articles/20260927_book_ref",
+      "site": "Zenn(機械学習)",
+      "published": "2026-09-27T00:03:46Z",
+      "description": "はじめに\n数年前、自分は社内の需要予測モデルを担当していた。精度はそれなりに出ていたのに、なぜその数字になるのかを説明できない状態が半年ほど続いた。特徴量を足し、ハイパーパラメータを振り、交差検証のスコアが上がったら採用する。その繰り返しだった。\n限界が来たのはレビューの場だ。「この特徴量を落とすとなぜ悪化するのか」と聞かれて、何も答えられなかった。手は動くが中身を知らない。そのことが一発でバレた...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "遅い教師を決定木に蒸留したら、真似しやすさが強さより大事だった",
+      "url": "https://zenn.dev/kaazujp/articles/9752ec2a1623d9",
+      "site": "Zenn(機械学習)",
+      "published": "2026-09-26T23:50:01Z",
+      "description": "はじめに\n先日、こちらの記事を読みました。\nhttps://zenn.dev/nwn/articles/e49154653ecea9\nタイトルに Jev が入ってるので、Jev の記事かと思ったのですが、Jev より、普通の機械学習のほうが良いこともあるというような内容に読めました。面白かったので、自分でもというか、Claude に同じようなデモが作れるか聞いてみました。\nプロンプトはこちら、モデ...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
     {
       "title": "LoRA したモデルが llama.cpp でだけ壊れた：学習率を半分にしたら直った話（原因は調査中）",
       "url": "https://zenn.dev/atemoya/articles/5032fc34095c5d",
@@ -69,6 +99,16 @@
       "site": "Zenn(機械学習)",
       "published": "2026-09-25T08:34:32Z",
       "description": "はじめに\nヤンデレ・ツンデレなどのキャラクターのセリフを日本語にして、小さな LLM（Qwen3.5-0.8B / 4B、Spark-X2.5-4B）に LoRA で学習させてみました。確かめたかったのは次の2点です。\n\n\nキャラクターの人格は安定するのか：一人称が揺れたり、「AIなので感情はありません」とキャラが崩れたりしなくなるか\n\nモデルは壊れるのか：一般常識や、長い文章を書く力が落ちないか...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "Jevにゲームをやらせるな！LLMを蒸留してみよう！",
+      "url": "https://zenn.dev/nwn/articles/e49154653ecea9",
+      "site": "Zenn(機械学習)",
+      "published": "2026-09-25T07:27:13Z",
+      "description": "はじめに\nJevのデモとして公式ではDOOMをプレイさせるデモがありました。\n100ms前後のレイテンシでレスポンスを返せるため、リアルタイム制御に使えるという点が強調されています。\nhttps://x.com/CompleteSkeptic/status/2099925687465570372\nまたXをみているとJevにゲームをプレイさせた投稿を多く見かけました。\n「BERTでよい」論などあると...",
       "category": "AI・技術",
       "rss_category": "",
       "image_url": ""
@@ -169,16 +209,6 @@
       "site": "Zenn(機械学習)",
       "published": "2026-09-24T03:22:38Z",
       "description": "なぜ行列の分解を学ぶのか\n株式会社DeploAIで代表取締役CTOをしている袖山剛です。\n統計を理解するために数学を学び直していて、今回は行列分解と最適化問題のつながりを整理します。\n統計や機械学習では、データや変数どうしの関係を行列で表します。その式がデータに何をしているかを理解するための土台が、線形代数です。\nその中で行列分解を学ぶ目的は、問題の構造を理解し、実際に解く方法を知ることです。元の...",
-      "category": "AI・技術",
-      "rss_category": "",
-      "image_url": ""
-    },
-    {
-      "title": "JevとローカルLLMは何が違うのか？｜未知知識の挙動、ルール判定、そして「三値論理」によるグレーゾーン救出",
-      "url": "https://zenn.dev/null_teck/articles/jev-vs-local-usecases",
-      "site": "Zenn(機械学習)",
-      "published": "2026-09-24T03:04:46Z",
-      "description": "!\n先に結論を言います: 推論精度や機能はローカルで完全に代替できるため「インフラ要件（GPUの有無・機密性）」で使い分けるのが正しく、どちらを使う場合も Yes/No を捨てて「三値論理（保留）」で設計するのが鉄則です。\n\n\n\n 1. はじめに：確率較正の先にある「実務での適用境界」\n前回の検証記事『Jevはサイコロを振らないがローカルLLMは振れるのか？｜「較正された確率」の検証と命題設計のブ...",
       "category": "AI・技術",
       "rss_category": "",
       "image_url": ""
