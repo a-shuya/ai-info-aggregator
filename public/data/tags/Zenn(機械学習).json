@@ -1,8 +1,58 @@
 {
   "site": "Zenn(機械学習)",
-  "last_updated": "2026-09-27T15:12:29.998899",
-  "total_articles": 1909,
+  "last_updated": "2026-09-27T19:03:22.859645",
+  "total_articles": 1913,
   "articles": [
+    {
+      "title": "Muonの数学-勾配行列の直行化は特異値を1に揃えていない-",
+      "url": "https://zenn.dev/hiroki_honma/books/6c3fec431ee9d4",
+      "site": "Zenn(機械学習)",
+      "published": "2026-09-27T16:08:12Z",
+      "description": "Muonは、なぜ大規模モデルの学習で選ばれているのでしょうか。\n\n「モーメンタムで貯めた勾配行列を直交化して、特異値を1に揃えるから」\n「大きさを捨てて、方向の情報だけを均等にして使うから」\n\nそんな説明を見かけます。\n\nしかし、実装が使っている計算を追うと、話はそれほど単純ではありません。\n\nMuonが使う五次のNewton-Schulz反復に1を入れると、返ってくるのは0.701です。1はこの...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "VAEをNumPyで実装：two moonsの再構成で隙間が埋まった理由を調べる",
+      "url": "https://zenn.dev/shakeailab/articles/vae-two-moons-experiment",
+      "site": "Zenn(機械学習)",
+      "published": "2026-09-27T15:46:29Z",
+      "description": "拡散モデルは「ノイズを少しずつ取り除く」流派、GANは「偽物職人と鑑定士を騙し合わせる」流派、Normalizing Flowは「可逆な変換だけを積み重ねる」流派だった。生成モデルの教科書には、もう1つ外せない第4の流派がある。VAE(Variational Autoencoder、変分オートエンコーダ) —— 「データを確率分布に圧縮してから、その分布からサンプリングして復元する」流派だ。\nこれ...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "RAGの検索・生成パイプラインを実装目線で整理する",
+      "url": "https://zenn.dev/kas_blog/articles/20260509-llm-23-rag",
+      "site": "Zenn(機械学習)",
+      "published": "2026-09-27T15:11:23Z",
+      "description": "RAG（Retrieval-Augmented Generation、検索拡張生成）は、外部knowledgeを検索してLLMへ渡す仕組みです。実装ではvector_search(query)とprompt templateだけに見えますが、productionで守るべきcontractはその前後にあります。\n\nどのsource versionからchunkを作ったか\nuserがそのchunkを検...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "パドック短評をJevでリアルタイム解析して危険な人気馬を排除したら、損失回避率97%だった話",
+      "url": "https://zenn.dev/toshipon/articles/jev-paddock-sentiment-loss-avoidance",
+      "site": "Zenn(機械学習)",
+      "published": "2026-09-27T13:17:00Z",
+      "description": "はじめに\n競馬の自動取引システム（クオンツ運用）を作っていて、長年課題になっていたのが「パドック情報（定性・自然言語）の扱い」でした。\n過去の走破時計、血統、オッズ推移、騎手勝率といった定量データは、GBDT（LightGBM）などの数理モデルに特徴量として組み込めます。しかし、レース発走の 15〜20 分前に現場から届くパドック短評（「ややチャカつきあり」「大量発汗で消耗気味」「気合乗り抜群」な...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "高専数学は工学・信号処理・機械学習・AIでどう使うのか 150問",
+      "url": "https://zenn.dev/qwerewq/articles/9c1d28e1823f0f",
+      "site": "Zenn(機械学習)",
+      "published": "2026-09-27T10:51:31Z",
+      "description": "高専数学は工学・信号処理・機械学習・AIでどう使うのか 150問\n\n はじめに\n高専で学ぶ数学は、数学の授業だけで完結するものではありません。\n基礎数学\n線形代数\n微分積分\n微分方程式\nLaplace変換\nFourier解析\n確率統計\nこれらは、回路、機械、制御、通信、半導体、信号処理、機械学習、AIを理解するための共通言語になります。\nこの150問では、まず高専数学そのものを理解しているかを確認...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
     {
       "title": "AIで為替の未来予測は本当にできるのか？",
       "url": "https://zenn.dev/hiro_algo/books/ai-fx-forecasting",
@@ -149,16 +199,6 @@
       "site": "Zenn(機械学習)",
       "published": "2026-09-25T07:12:58Z",
       "description": "はじめに\nこんにちは、五東研D3の坂口大門です。\n【POCLabリサーチハイライト】では、横浜国立大学 五東研究室（POCLab）の研究成果を紹介します。\n今回の研究では、競争反応からケトンの相対的な反応速度を共通の尺度でデータ化し、量子化学計算（DFT計算）や機械学習と組み合わせることで、複雑な分子の還元位置選択性・還元面選択性を予測しました。\n本成果は、米国化学会の学術誌「JACS Au」に掲...",
-      "category": "AI・技術",
-      "rss_category": "",
-      "image_url": ""
-    },
-    {
-      "title": "Evaluating CLM-8B as a System 1 Decision Engine vs Jev and Kev",
-      "url": "https://zenn.dev/null_teck/articles/clm-vs-decision-models",
-      "site": "Zenn(機械学習)",
-      "published": "2026-09-25T06:48:52Z",
-      "description": "!\nExecutive Summary (TL;DR)\n\n\nResearch Question: Can Contrastive Language Models (CLM-8B), which disaggregate state and action spaces via contrastive learning, match or replace specialized decision mo...",
       "category": "AI・技術",
       "rss_category": "",
       "image_url": ""
