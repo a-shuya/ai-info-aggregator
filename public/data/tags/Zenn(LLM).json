@@ -1,24 +1,64 @@
 {
   "site": "Zenn(LLM)",
-  "last_updated": "2026-09-28T00:42:46.409691",
-  "total_articles": 6358,
+  "last_updated": "2026-09-28T05:58:11.099046",
+  "total_articles": 6362,
   "articles": [
     {
-      "title": "要約から書いたら、原文と10か所ちがっていた — LLM の報告は、原文の証拠にならない",
-      "url": "https://zenn.dev/kuu_dqx/articles/report-is-not-evidence",
+      "title": "音声入力の品種候補を32件で評価した：Layaは「該当なし」を選べるか",
+      "url": "https://zenn.dev/bur/articles/laya-voice-variety-matching-notes",
       "site": "Zenn(LLM)",
-      "published": "2026-09-27T17:34:58Z",
-      "description": "LLM に毎日ブログ記事を書かせて無人で公開している話と、その検証が何を見ていなかったかの話を書きました。\nhttps://zenn.dev/kuu_dqx/articles/headless-claude-code-43days\n前の記事は「生成された文が正しいか」の話でした。この記事は、その一段手前の話です。LLM に調べさせて、返ってきた報告を、こちらが事実として使ってしまうほうの失敗です。...",
+      "published": "2026-09-28T00:39:29Z",
+      "description": "音声入力から果実の品種候補を選ぶ処理では、品種名を含まない発話に候補を提示する誤りが問題となる。本稿では、ブラウザーの音声認識結果を入力とするパイプラインを、品種あり24件と品種なし8件で評価した。コード照合とLayaを合わせると品種ありは19/24件で正解したが、品種なし8件すべてに誤候補を提示した。\n同じ入力に対するGeminiの現行実装の結果と、別の11件を用いた設定探索も報告する。これらの...",
       "category": "AI・技術",
       "rss_category": "",
       "image_url": ""
     },
     {
-      "title": "PDFの改行は折り返しか、段落の終わりか ― 文字の座標で見分けてAIに渡す",
-      "url": "https://zenn.dev/okinawasoftware/articles/5357ee6c5ec36f",
+      "title": "サイゼリヤの間違い探しをClaude・Codex・Geminiにやらせて、レポートを書いてもらった",
+      "url": "https://zenn.dev/corone/articles/saizeriya-machigaisagashi-ai-compare",
       "site": "Zenn(LLM)",
-      "published": "2026-09-27T17:28:20Z",
-      "description": "PDFから文字を取り出すと、改行が多すぎます。pdfium（Chrome のPDF表示に使われているエンジン）は、文字の位置から行の終わりを推定して改行を入れるので、取り出した文字は見た目の行ごとに（ときには行の途中でも）改行されます。段落の途中で文が切れたまま AI に渡すと、要約や検索の質が落ちるおそれがあります。かといって改行を全部消すと、今度は箇条書きや表が1つの文に溶けます。\nこの記事は...",
+      "published": "2026-09-28T00:32:59Z",
+      "description": "🔍 サイゼリヤの間違い探しをClaude・Codex・Geminiにやらせて、レポートを書いてもらった\n\n 🧭 はじめに\nサイゼリヤのキッズメニューにある「まちがいさがし」。今回は「ドリンク編」（カプチーノのイラスト、違いは10箇所）の写真を使って、3つのAIに間違い探しをやってもらいました。\n\n\n\nAI\nモデル\n\n\n\n\nClaude\nOpus 5.5\n\n\nCodex\n6-sol\n\n\nGemini...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "DeepSeekの最新インフラ技術「DSec」概要とLLM動的スケーリングの仕組み",
+      "url": "https://zenn.dev/ament3/articles/ai-digest-2026-09-27-0020",
+      "site": "Zenn(LLM)",
+      "published": "2026-09-28T00:22:42Z",
+      "description": "最近、オープンソースモデル界隈で圧倒的な存在感を見せるDeepSeekから、新たな論文**「DeepSeek Elastic Compute (DSec)」**が公開され、エンジニアコミュニティ（Hacker News等）で大きな注目を集めています。\nこの記事では、DSecが解決しようとしている問題や注目背景、そして動的な計算リソース制御のイメージを掴むための疑似コードを交えて解説します。\n\n\n ...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "常駐型AIチャットエージェントの「誰が本当に話しているか」を検証するリクエスター認証設計",
+      "url": "https://zenn.dev/hach/articles/chat-agent-requester-identity-verification-design",
+      "site": "Zenn(LLM)",
+      "published": "2026-09-27T18:10:24Z",
+      "description": "Slack / Teams / Chatworkに常駐するAIエージェントは、チャンネル内の発言をそのまま「その人からの指示」として扱いがちです。プロンプトインジェクション対策(外部コンテンツに紛れた偽の指示への対処)は既に語られることが増えましたが、それとは別に、チャット上で直接発言している「その人自身」が本当に名乗っている人物なのかという、もう一段手前の検証が抜けやすいという問題があります。こ...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "自作の「ラン全体シミュレーター」が、ただの平均値に負けた話",
+      "url": "https://zenn.dev/canaiclimbspire/articles/001_sim_lost_to_average",
+      "site": "Zenn(LLM)",
+      "published": "2026-09-27T16:01:19Z",
+      "description": "!\nこの記事は AI（Claude）が自分の作業ログをもとに書いた記事です。「AIが尖塔を登れるか｜スレスパ2」という企画の一環で、AI自身がデッキ構築ローグライク『Slay the Spire 2』を実際にプレイしながら、その過程で作った道具とその失敗を振り返っています。数字はすべて自分の作業記録から引用しており、誇張や後付けの脚色はしていないつもりです。\n\n僕は Claude で、「AIが尖塔...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "Opus 5.5を使いこなす27のポイント｜公式ガイドの要点まとめ（アプリ／Claude Code）",
+      "url": "https://zenn.dev/karashizuke/articles/opus-5-5-guide",
+      "site": "Zenn(LLM)",
+      "published": "2026-09-27T15:46:22Z",
+      "description": "!\n本記事は、Claude Opus 5.5 についての公式ガイド 4 本をもとに、日本語で再構成したものです。AGENTS.md への対応は、Claude Code の CHANGELOG で確認しました。\n\n\n公式ブログ（Claude アプリと Claude Code での使い方をまとめたガイド。Addy Osmani 氏、2026年9月22日）\n\n公式ドキュメント（開発者向けドキュメントのプ...",
       "category": "AI・技術",
       "rss_category": "",
       "image_url": ""

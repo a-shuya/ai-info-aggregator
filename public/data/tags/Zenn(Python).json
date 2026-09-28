@@ -1,8 +1,58 @@
 {
   "site": "Zenn(Python)",
-  "last_updated": "2026-09-28T00:42:46.409691",
-  "total_articles": 6708,
+  "last_updated": "2026-09-28T05:58:11.099046",
+  "total_articles": 6712,
   "articles": [
+    {
+      "title": "Gemini 3.8 Flash TTS を API キーの発行から使う。話者の選び方と style の限界",
+      "url": "https://zenn.dev/serotoninmax/articles/gemini-flash-tts-api-guide",
+      "site": "Zenn(Python)",
+      "published": "2026-09-28T02:31:10Z",
+      "description": "20 秒の動画のナレーションを、Gemini TTS（gemini-3.8-flash-tts）で作れるようにした。この記事では次のことを順に扱う。\n\nAPI キーを発行して呼べるようになるまでの手順\nInteractions API の呼び方\n話者の選び方\n\nstyle の書き方とその限界\n動画の生成から Gemini TTS を呼ぶラッパーの設計\n\n料金、モデル ID、話者の数、規約は変わりう...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "Jevを操作の門番にできる？実API24応答と61項目の故障試験で確かめた",
+      "url": "https://zenn.dev/kanta13jp1/articles/jev-gate-fail-closed-verification",
+      "site": "Zenn(Python)",
+      "published": "2026-09-28T02:24:39Z",
+      "description": "Jevをエージェントの判断役にするなら、判定精度に加えて「判定が壊れたときに何が起こるか」を確かめたい。そこで、合成データ12件を実APIへ送り、質問を明確にした追加試験12件と、周辺コードの故障注入61項目を実施しました。\n最初の質問では事前ラベルとの一致が10/12。許可する操作名と未承認時の扱いを明示した探索的追加試験では12/12でした。故障注入は61/61通過しました。 ただし、モデルの...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "opus5.5でPythonだけで15秒のMVを作ってみた",
+      "url": "https://zenn.dev/metaira/articles/python-only-motion-graphics-mv",
+      "site": "Zenn(Python)",
+      "published": "2026-09-28T01:08:09Z",
+      "description": "やったこと\nコーディング支援のAIに指示して、Pythonだけで15秒のミュージックビデオを作った。生成AIによる動画合成も、動画編集ソフトも使っていない。映像は1コマずつ数値の計算で描き、音楽も波形の計算でつくった。使ったのはNumPy・OpenCV・Pillowという画像・数値計算のライブラリと、書き出し用のffmpegだけである。\nなぜPythonだけで作ったのか。理由は、映像と音楽を同じ一...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "日曜日に勝手に働き出したAI：Celery beatの追いつき実行と、休場日ガード顛末記",
+      "url": "https://zenn.dev/charge0315/articles/84e6d78129995e",
+      "site": "Zenn(Python)",
+      "published": "2026-09-28T00:55:42Z",
+      "description": "「毎朝7時」に設定した定期実行は、本当に毎朝7時にしか動かないでしょうか。\n日本株のAI銘柄スクリーニング＆継続学習端末「ALPHA FORGE（アルファフォージ）」を、Claude Code と二人三脚で個人開発しています。止めていた定期実行を再開したら、相場の開いていない日曜日に、AIが張り切って銘柄を選び始めました。今回は、その原因と、3段のガードをテストで固定するまでの顛末をお話しします。...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "正確に取れない数字は出さない — 4,000社の財務データで選んだ「諦めて注記する」設計",
+      "url": "https://zenn.dev/edinetty/articles/54ba74d0b7215b",
+      "site": "Zenn(Python)",
+      "published": "2026-09-28T00:42:43Z",
+      "description": "はじめに\nedinetty.com という財務データサイトを個人で運営しています。EDINET の有価証券報告書10年分・4,175社ぶんを正規化して配信していて、タグの正規化がどれだけ大変かは以前書きました。今回はその逆側、正規化を諦めた数字の話です。\n運営方針として「不正確な数字を出すくらいなら出さない」と決めています。財務データサイトで一番まずいのは、間違った数字がもっともらしい顔で載ってい...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
     {
       "title": "被覆率100%と出ました。測れていない、という意味でした",
       "url": "https://zenn.dev/rapls/articles/eb55535b2f6095",
@@ -11589,16 +11639,6 @@
       "site": "Zenn(Python)",
       "published": "2026-08-07T08:26:38Z",
       "description": "DBにURLは残っているのに、先週生成したファイルだけ開けない。\n生成AI APIをバックエンドに組み込むと、このような時間差のトラブルが発生します。\n原因は、生成結果として返されたURLを、そのまま永続ファイルとして保存していることです。\nタスクがcompletedになっていても、そのURLが将来も利用できるとは限りません。\nこの記事では、生成AI APIから返されるoutputsをPython...",
-      "category": "開発",
-      "rss_category": "",
-      "image_url": ""
-    },
-    {
-      "title": "ネットワークエンジニアのためのPython基礎",
-      "url": "https://zenn.dev/moko_nw/books/au_python_01",
-      "site": "Zenn(Python)",
-      "published": "2026-08-07T07:44:49Z",
-      "description": "🚀 手作業のCLI運用から抜け出し、コードでネットワークを支配する\n  \n  画面上にいくつものターミナルを並べ、機器へ順番にログインしては show running-config を取得しExcelにまとめる。日々の運用の中で、手作業による単純作業の繰り返しや、コマンドの入力ミスによる心理的負担に悩まされた経験はないでしょうか。\n  \n  「Pythonで自動化しよう」と入門書を手に取ってみても...",
       "category": "開発",
       "rss_category": "",
       "image_url": ""
