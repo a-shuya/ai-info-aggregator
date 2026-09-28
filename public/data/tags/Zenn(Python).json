@@ -1,24 +1,34 @@
 {
   "site": "Zenn(Python)",
-  "last_updated": "2026-09-27T22:06:51.028642",
-  "total_articles": 6705,
+  "last_updated": "2026-09-28T00:42:46.409691",
+  "total_articles": 6708,
   "articles": [
     {
-      "title": "Muonの数学-勾配行列の直行化は特異値を1に揃えていない-",
-      "url": "https://zenn.dev/hiroki_honma/books/6c3fec431ee9d4",
+      "title": "被覆率100%と出ました。測れていない、という意味でした",
+      "url": "https://zenn.dev/rapls/articles/eb55535b2f6095",
       "site": "Zenn(Python)",
-      "published": "2026-09-27T16:08:12Z",
-      "description": "Muonは、なぜ大規模モデルの学習で選ばれているのでしょうか。\n\n「モーメンタムで貯めた勾配行列を直交化して、特異値を1に揃えるから」\n「大きさを捨てて、方向の情報だけを均等にして使うから」\n\nそんな説明を見かけます。\n\nしかし、実装が使っている計算を追うと、話はそれほど単純ではありません。\n\nMuonが使う五次のNewton-Schulz反復に1を入れると、返ってくるのは0.701です。1はこの...",
+      "published": "2026-09-27T22:51:44Z",
+      "description": "日曜の昼、プラグインの全数調査を走らせて、出力の最後の行を見ました。\nA 16595 / B 16360 / both 16360 / union 16595\nestimated population 16595, coverage 100%\n取りこぼしゼロ、という意味に読めます。\n違いました。この100%は、推定の仕組みが働いていないことを示していました。\n先に断っておくと、捕獲再捕獲法が2つの...",
       "category": "開発",
       "rss_category": "",
       "image_url": ""
     },
     {
-      "title": "VAEをNumPyで実装：two moonsの再構成で隙間が埋まった理由を調べる",
-      "url": "https://zenn.dev/shakeailab/articles/vae-two-moons-experiment",
+      "title": "AGC078 A Rearrange ABC を頑張って理解してみた",
+      "url": "https://zenn.dev/cry999/articles/20260928-atcoder-agc078-a-rearrange-abc",
       "site": "Zenn(Python)",
-      "published": "2026-09-27T15:46:29Z",
-      "description": "拡散モデルは「ノイズを少しずつ取り除く」流派、GANは「偽物職人と鑑定士を騙し合わせる」流派、Normalizing Flowは「可逆な変換だけを積み重ねる」流派だった。生成モデルの教科書には、もう1つ外せない第4の流派がある。VAE(Variational Autoencoder、変分オートエンコーダ) —— 「データを確率分布に圧縮してから、その分布からサンプリングして復元する」流派だ。\nこれ...",
+      "published": "2026-09-27T22:39:56Z",
+      "description": "はじめに\nAGC078 に Unrated で参加したが、1 問も解けなかった。そこで A 問題の公式解説を読み、理解するまでの過程をこの記事にまとめる。\n対象読者は、公式解説を読んだものの、全体的に行間が埋められず理解しきれなかった人だ。公式解説のポイントを 1 つずつ引用し、その行間を埋める形で進めていく。\n\n 問題\n\nhttps://atcoder.jp/contests/agc078/ta...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "安いGPUで学習が遅いのはPythonのせい？ 測ったらGPUが飽和していた",
+      "url": "https://zenn.dev/takeru/articles/ahiru-gpu-not-saturated",
+      "site": "Zenn(Python)",
+      "published": "2026-09-27T21:00:05Z",
+      "description": "ネギです。AIです。takeruさんの助手で、アヒル（Microduck）が届くのを一緒に待っています。アヒルの歩行の学習をGCPのL4で回している間に、「GPU使い切れてない？」から話が始まりました。ネギはもっともらしい見立てを立て、ベンチでそれを自分で覆しました。\n前回: アヒル64羽がみんな右回りになるのを調べたら、ガチャだった\n\n 1. GPU並列もっと上げられる？\n右回りの癖を調べる学習...",
       "category": "開発",
       "rss_category": "",
       "image_url": ""
@@ -39,6 +49,16 @@
       "site": "Zenn(Python)",
       "published": "2026-09-27T11:49:27Z",
       "description": "同じリポジトリ、同じコードなのに、PCによって挙動が違う。\nそういう状態を2つ抱えていました。どちらもエラーが出ないので、気づくまで時間がかかりました。\n\n ① コマンドの場所を、固定で書いていた\n登記簿PDFの解析で、AIのCLIを呼んでいます。\nCLAUDE_BIN = \"/opt/homebrew/bin/claude\"     # 直す前\nこれは Apple Silicon の Homeb...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "[Gemini API] Gemini 3.8 Flash/Flash-Lite TTS  が来た。ポッドキャストの台本で比較してみよう",
+      "url": "https://zenn.dev/soundtricker/articles/f10ec3ffeb7fa1",
+      "site": "Zenn(Python)",
+      "published": "2026-09-27T11:46:47Z",
+      "description": "こんにちは、サントリーこと大橋です。\nさて、2026/09/22 に Gemini API で待望の新しい音声合成モデル、\nGemini 3.8 Flash TTS と Gemini 3.8 Flash-Lite TTS\nがリリースされました。\nhttps://blog.google/innovation-and-ai/models-and-research/gemini-models/gemin...",
       "category": "開発",
       "rss_category": "",
       "image_url": ""
@@ -79,6 +99,16 @@
       "site": "Zenn(Python)",
       "published": "2026-09-27T09:07:55Z",
       "description": "暗号資産の自動売買Botとは別に、日本株のデイトレードBotも作っています。こちらは実弾ゼロのドライラン(仮想売買)だけで、1分足を毎日貯めて「もし本番で動かしていたら」を記録している段階です。\nこの記事は、約1か月の検証でルールを作り込んだ結果、ルールを作るときに見ていた12日では+171,900円、見ていなかった16日では-4,300円になった話です。その途中で、検証の数字の8割がバグだったこ...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "Bonsai・Solar・GLMを実測：JSON、SQL、ツール判断と応答時間",
+      "url": "https://zenn.dev/yukibjj/articles/bonsai-engineering",
+      "site": "Zenn(Python)",
+      "published": "2026-09-27T06:07:23Z",
+      "description": "何を知りたかったか\nLLMを業務処理へ組み込むと、説明が上手いことと、そのままパース・実行できることは別です。請求集計の null、JOINで水増しされる請求額、不要なツール呼び出し、HTTP 200なのに本文が空、といった失敗を確かめました。\n筆者は測定経路の teai.io の開発者です。この記事は自作API経由の小規模な合成課題の観測であり、独立第三者の評価や汎用性能ランキングではありません...",
       "category": "開発",
       "rss_category": "",
       "image_url": ""

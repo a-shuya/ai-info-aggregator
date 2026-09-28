@@ -1,8 +1,38 @@
 {
   "site": "Zenn(LLM)",
-  "last_updated": "2026-09-27T22:06:51.028642",
-  "total_articles": 6356,
+  "last_updated": "2026-09-28T00:42:46.409691",
+  "total_articles": 6358,
   "articles": [
+    {
+      "title": "要約から書いたら、原文と10か所ちがっていた — LLM の報告は、原文の証拠にならない",
+      "url": "https://zenn.dev/kuu_dqx/articles/report-is-not-evidence",
+      "site": "Zenn(LLM)",
+      "published": "2026-09-27T17:34:58Z",
+      "description": "LLM に毎日ブログ記事を書かせて無人で公開している話と、その検証が何を見ていなかったかの話を書きました。\nhttps://zenn.dev/kuu_dqx/articles/headless-claude-code-43days\n前の記事は「生成された文が正しいか」の話でした。この記事は、その一段手前の話です。LLM に調べさせて、返ってきた報告を、こちらが事実として使ってしまうほうの失敗です。...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "PDFの改行は折り返しか、段落の終わりか ― 文字の座標で見分けてAIに渡す",
+      "url": "https://zenn.dev/okinawasoftware/articles/5357ee6c5ec36f",
+      "site": "Zenn(LLM)",
+      "published": "2026-09-27T17:28:20Z",
+      "description": "PDFから文字を取り出すと、改行が多すぎます。pdfium（Chrome のPDF表示に使われているエンジン）は、文字の位置から行の終わりを推定して改行を入れるので、取り出した文字は見た目の行ごとに（ときには行の途中でも）改行されます。段落の途中で文が切れたまま AI に渡すと、要約や検索の質が落ちるおそれがあります。かといって改行を全部消すと、今度は箇条書きや表が1つの文に溶けます。\nこの記事は...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "中国語が混ざる4Bモデルを、27Bからの蒸留で日本語化した（混入18%→0%、数学は落ちず）",
+      "url": "https://zenn.dev/atemoya/articles/bd05a6a7d3f535",
+      "site": "Zenn(LLM)",
+      "published": "2026-09-27T14:12:24Z",
+      "description": "この記事で紹介すること\nSpark-X2.5-4B は、数学やエージェントの性能が高い 4B（40億パラメータ）の小さなモデルです。ただ、日本語で書かせると不自然になりやすく、回答に中国語が混ざることがありました。\nそこで、2段階の追加学習で日本語化し、Hugging Face で公開しました。\n\nモデル：Takenoko12345678/Spark-X2.5-4B-Japanese\n\nGGUF ...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
     {
       "title": "RAGのリランキングを実装する — Cross-Encoderで検索精度を実測比較",
       "url": "https://zenn.dev/yukihayama/articles/rag-rerank-cross-encoder",
@@ -59,16 +89,6 @@
       "site": "Zenn(LLM)",
       "published": "2026-09-27T06:23:41Z",
       "description": "はじめに\n前回の記事では、生成AIに短編小説を書かせようとしたら「小説家に頼む」形ではなく「制作スタジオを回す」形になった、という話を書きました。\nその後、同じスタジオで3冊を仕上げました。書き手のAIを入れ替え、ジャンルを変え、最後にはミステリを「読者役のAI」に解かせるところまでやっています。この記事では、3冊を通してわかったことをまとめます。\n以下、3作目のネタバレが含まれます。ネタバレは伏...",
-      "category": "AI・技術",
-      "rss_category": "",
-      "image_url": ""
-    },
-    {
-      "title": "Bonsai・Solar・GLMを実測：JSON、SQL、ツール判断と応答時間",
-      "url": "https://zenn.dev/yukibjj/articles/bonsai-engineering",
-      "site": "Zenn(LLM)",
-      "published": "2026-09-27T06:07:23Z",
-      "description": "何を知りたかったか\nLLMを業務処理へ組み込むと、説明が上手いことと、そのままパース・実行できることは別です。請求集計の null、JOINで水増しされる請求額、不要なツール呼び出し、HTTP 200なのに本文が空、といった失敗を確かめました。\n筆者は測定経路の teai.io の開発者です。この記事は自作API経由の小規模な合成課題の観測であり、独立第三者の評価や汎用性能ランキングではありません...",
       "category": "AI・技術",
       "rss_category": "",
       "image_url": ""
