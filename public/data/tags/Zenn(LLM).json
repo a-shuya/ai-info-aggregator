@@ -1,8 +1,98 @@
 {
   "site": "Zenn(LLM)",
-  "last_updated": "2026-09-28T13:41:58.414220",
-  "total_articles": 6370,
+  "last_updated": "2026-09-28T20:16:52.409912",
+  "total_articles": 6377,
   "articles": [
+    {
+      "title": "8GB GPU の 27B ternary は 9B より賢いか",
+      "url": "https://zenn.dev/beckento/articles/e4dbf65acd0fc9",
+      "site": "Zenn(LLM)",
+      "published": "2026-09-28T14:01:49Z",
+      "description": "はじめに\nTernary-Bonsai-2-27B は、27B モデルの重みを {−1, 0, +1} の 3 値に量子化し、約 6GB に収めたモデルです。8GB の GPU でも全層を載せて動かせます。では同じ GPU の定番である 9B モデルより本当に賢いのか。統計問題と競技プログラミングで、差が出るまで問題を難しくしながら確かめました。\n\n 結果\nRTX 3060 Ti（8GB）で Te...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "AIに資料を全面委任すると、なぜ手戻りが増えるのか",
+      "url": "https://zenn.dev/lhideki/articles/ai-document-creation-dependency",
+      "site": "Zenn(LLM)",
+      "published": "2026-09-28T12:38:43Z",
+      "description": "AIに資料を全面委任すると、なぜ手戻りが増えるのか\n本稿では、生成AIを用いた資料作成における全面委任と補助活用の違いを、資料本来の目的・思考プロセス・手戻りコストの観点から整理しています。AIは資料の生成速度を大幅に向上させますが、情報整理・推論・説明責任という作業構造を踏まえると、全面委任の費用対効果は見かけ上の速さよりも低くなる場面が少なくありません。適切な役割分担によって品質と効率を両立さ...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "エージェントのコストは設計変数である — プレフィックス安定性・ルーティング損益分岐・予算の仮押さえ",
+      "url": "https://zenn.dev/xim2jp_tokyo/articles/f11a0a0568e0c1",
+      "site": "Zenn(LLM)",
+      "published": "2026-09-28T11:07:19Z",
+      "description": "エージェントのコスト最適化を「プロンプトを短くする」話で終わらせないために、本記事では設計段階で決めるべき論点を3つに絞りました。管理単位は成功1件あたり単価（期間中のLLM費用 ÷ 成功タスク数）です。失敗の費用を成功が背負う形で集計するので、Evalsの成功率がそのままコスト指標に効いてきます。\n論点1: キャッシュはプレフィックスの安定性で決まる\n処理順は tools → system → ...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "React ウェブアプリで帳票PDFの個人情報を自動で墨消しする",
+      "url": "https://zenn.dev/apryse_blog/articles/4c8d73fb98dc4a",
+      "site": "Zenn(LLM)",
+      "published": "2026-09-28T10:18:46Z",
+      "description": "はじめに\nPDF の「墨消し（Redaction）」というと、Acrobat などのデスクトップアプリで手作業で黒塗りするイメージが強いかもしれません。しかし、文書管理や申請審査などの業務システムでは、アプリの中でそのまま墨消しできると便利な場面が多くあります。\nこの記事では、Apryse の WebViewer を React に組み込み、電気料金の請求書 PDF から 郵便番号・氏名・住所を自...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "RX 5500 XTからV100S×4まで、4台の計算機でローカルLLMを測り比べた話",
+      "url": "https://zenn.dev/c4n4242/articles/75659aebdd62d4",
+      "site": "Zenn(LLM)",
+      "published": "2026-09-28T10:09:32Z",
+      "description": "みなさんこんにちは。カノンと申します。\nこの記事では、とある事情で様々な計算機を使う機会があったので世代もメーカーもバラバラな4台の計算機にローカルLLMを載せて測り比べた結果を書き連ねていこうと思います。\n※ 数値はすべて2026年9月18〜19日の実測です。llama.cpp や ROCm は更新が速いので、今測ると違う値が出るかもしれません。\n\n はじめに\n今回比較した対象の計算機は次の4台...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "画像認識AIはVLMに置き換わる？ ―― 専用モデルから汎用モデルへの進化と評価指標",
+      "url": "https://zenn.dev/highreso_tech/articles/957e98a5c5014f",
+      "site": "Zenn(LLM)",
+      "published": "2026-09-28T09:51:16Z",
+      "description": "画像認識AIはVLMに置き換わる？ ―― 専用モデルから汎用モデルへの進化と評価指標\nChatGPTに画像を添付して内容を質問したり、Coding Agentに画面のスクリーンショットを渡して仕様を理解させたりすることが、身近になってきましたね。\n最近では、建築図面をAIに読み取らせ、壁や部屋の構造をJSONなどの構造化データへ変換する研究も発表されています。1\nこうした画像理解を支える技術の一つ...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "行列も微分も使わずにTransformerを説明するサイトを作ってもらったら、そのまま10Mパラメータの日本語SLMまで出てきた話",
+      "url": "https://zenn.dev/nextbeat/articles/2026-09-no-matrix-transformer-slm",
+      "site": "Zenn(LLM)",
+      "published": "2026-09-28T08:38:05Z",
+      "description": "はじめに\nこんにちは！株式会社ネクストビートでテクノロジー・エヴァンジェリストなる肩書きでお仕事をしている水島です。大学院の頃はPEG（Parsing Expression Grammar）の研究をしていて、構文解析やプログラミング言語処理系が専門です。\n以前、Claude Fable 5にプログラミング教育サイトを丸投げした話を書きました。今回はその続きのようなものです。今度のお題はTransf...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "AI組織に必要なのは「賢いAI」ではなく、「不確実なAIを扱える設計の仕組み」ではないか",
+      "url": "https://zenn.dev/k_aiga/articles/002_engineering_system_for_uncertain_ai",
+      "site": "Zenn(LLM)",
+      "published": "2026-09-28T07:00:05Z",
+      "description": "最初から「AIを使った設計システムを作ろう」と考えていたわけではない。\nもともとの出発点は、日々の技術的な課題をAIに壁打ちすることだった。設計案のトレードオフを一緒に整理する、見落としている論点を洗い出してもらう、コードを書かせる、書いたコードをレビューさせる。そうした使い方を重ねるうちに、単なる検索エンジンの代替や定型文の生成にとどまらず、「設計者が考えるプロセスそのものに伴走できるのではない...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "Z.ai Coding PlanをCodexアプリで使う",
+      "url": "https://zenn.dev/t_tokunaga/articles/2026-09-23-codex-switch-zai-coding-plan",
+      "site": "Zenn(LLM)",
+      "published": "2026-09-28T03:12:22Z",
+      "description": "Codexを使っていて、こんな経験はありませんか。\n\n作業の途中で、Codexの週間の利用上限を使い切ってしまった\nAppshots（前面のウィンドウを撮って会話に添える機能）やブラウザー、Computer Useが便利で、ほかのモデルでも使いたいと思った\n\nZ.aiのCoding Planを契約しているなら、その定額枠でCodexアプリを動かせます。アプリの画面や機能はそのままに、中で動くモデル...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
     {
       "title": "同じ依頼を「1行」と「完了条件つき」で claude -p に20回流して比べた",
       "url": "https://zenn.dev/keita_aiwork/articles/253d8371b205a3",
@@ -39,16 +129,6 @@
       "site": "Zenn(LLM)",
       "published": "2026-09-28T00:32:59Z",
       "description": "🔍 サイゼリヤの間違い探しをClaude・Codex・Geminiにやらせて、レポートを書いてもらった\n\n 🧭 はじめに\nサイゼリヤのキッズメニューにある「まちがいさがし」。今回は「ドリンク編」（カプチーノのイラスト、違いは10箇所）の写真を使って、3つのAIに間違い探しをやってもらいました。\n\n\n\nAI\nモデル\n\n\n\n\nClaude\nOpus 5.5\n\n\nCodex\n6-sol\n\n\nGemini...",
-      "category": "AI・技術",
-      "rss_category": "",
-      "image_url": ""
-    },
-    {
-      "title": "DeepSeekの最新インフラ技術「DSec」概要とLLM動的スケーリングの仕組み",
-      "url": "https://zenn.dev/ament3/articles/ai-digest-2026-09-27-0020",
-      "site": "Zenn(LLM)",
-      "published": "2026-09-28T00:22:42Z",
-      "description": "最近、オープンソースモデル界隈で圧倒的な存在感を見せるDeepSeekから、新たな論文**「DeepSeek Elastic Compute (DSec)」**が公開され、エンジニアコミュニティ（Hacker News等）で大きな注目を集めています。\nこの記事では、DSecが解決しようとしている問題や注目背景、そして動的な計算リソース制御のイメージを掴むための疑似コードを交えて解説します。\n\n\n ...",
       "category": "AI・技術",
       "rss_category": "",
       "image_url": ""
@@ -139,16 +219,6 @@
       "site": "Zenn(LLM)",
       "published": "2026-09-27T14:12:24Z",
       "description": "この記事で紹介すること\nSpark-X2.5-4B は、数学やエージェントの性能が高い 4B（40億パラメータ）の小さなモデルです。ただ、日本語で書かせると不自然になりやすく、回答に中国語が混ざることがありました。\nそこで、2段階の追加学習で日本語化し、Hugging Face で公開しました。\n\nモデル：Takenoko12345678/Spark-X2.5-4B-Japanese\n\nGGUF ...",
-      "category": "AI・技術",
-      "rss_category": "",
-      "image_url": ""
-    },
-    {
-      "title": "RAGのリランキングを実装する — Cross-Encoderで検索精度を実測比較",
-      "url": "https://zenn.dev/yukihayama/articles/rag-rerank-cross-encoder",
-      "site": "Zenn(LLM)",
-      "published": "2026-09-27T13:16:31Z",
-      "description": "RAGのリランキングを実装する — Cross-Encoderで検索精度を実測比較\n\n ベクトル検索を入れたのに、正しい文書が上位3件に入らない\n社内ルールをチャンク化してRAGを動かしたとき、「文書内に確かに書いてあるのに、回答が的外れになる」ことが続きました。生成側のプロンプトをいくらいじっても直らない。ログを追うと原因は検索側で、正しいチャンクはヒットしているのに上位3件に入らず7〜8位に沈...",
       "category": "AI・技術",
       "rss_category": "",
       "image_url": ""
