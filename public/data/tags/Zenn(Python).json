@@ -1,8 +1,58 @@
 {
   "site": "Zenn(Python)",
-  "last_updated": "2026-09-29T00:26:15.517793",
-  "total_articles": 6726,
+  "last_updated": "2026-09-29T06:02:24.407064",
+  "total_articles": 6730,
   "articles": [
+    {
+      "title": "AI議事録の「担当未定」を見逃さない。Pythonで引き継ぎJSONを点検する",
+      "url": "https://zenn.dev/adachi_builds/articles/c255b9b81940da",
+      "site": "Zenn(Python)",
+      "published": "2026-09-29T00:11:49Z",
+      "description": "表紙の人物と仕事場はAIで制作したイメージです。\nAIが出した議事録からタスクを転記するとき、担当者や期限が抜けていても、文章が自然だと気づきにくいことがあります。そこで、必要な欄があるかだけを点検する小さなPythonコードを作りました。\nNVIDIAのNemotron 3 Diarizationの記事では、誰がいつ話したかを区別する処理と文字起こしを分けて説明しています。今回のコードは音声モデ...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "Pythonで`not a < b`と`a >= b`は同じとは限らない",
+      "url": "https://zenn.dev/nakurei/articles/python-nan-float-comparison-pitfall",
+      "site": "Zenn(Python)",
+      "published": "2026-09-29T00:00:09Z",
+      "description": "これはなに\nPythonでfloat値を比較する場合、その比較値にNaNが含まれうるなら、not a &lt; bとa &gt;= bは異なる挙動を示すという話。\n\n 状況\nたとえば、範囲を指定するのにstartとendを定義する場合を考える。ここで、startはendよりも小さいという条件を設けることとする。つまり必ずstart &lt; endが成り立つと期待する。\nこの条件を事前にバリデーシ...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "Jevでダウンロードフォルダ自動仕分け: 正規表現だけで87.5%、Jevで96.7%",
+      "url": "https://zenn.dev/mskbhd/articles/lab-716-jev-note",
+      "site": "Zenn(Python)",
+      "published": "2026-09-28T23:52:37Z",
+      "description": "X で流れてきた一文がきっかけです。\n\nDeterministic selectors are cheaper than repeated LLM reads.\n\nMarcel Pociot が TypeSafe AI の Jev で Downloads フォルダの監視ツールを作った、という話に添えられていました。ファイルが請求書かどうかを Jev に判定させ、専用フォルダに正しい名前で移す。他の...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "Javaishからの卒業：JavaプログラマのためのPythonicガイド",
+      "url": "https://zenn.dev/alpine/articles/3254c19ee571b1",
+      "site": "Zenn(Python)",
+      "published": "2026-09-28T23:00:10Z",
+      "description": "対象読者: JavaでのOOP設計・例外処理・型システムに習熟しており、Pythonの基本構文（変数・制御構文・関数定義）は書けるが、Pythonicな書き方に慣れていないエンジニア\n本ドキュメントでは、構文はPythonで書けていても設計や発想がJavaのままになっているコードを 「Javaish（ジャバイッシュ）」 と呼びます。\nJavaishは動くコードであることがほとんどですが、Pytho...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "Self-AttentionをNumPyで検証：単語ベクトルだけでは「it」は「animal」を見なかった",
+      "url": "https://zenn.dev/shakeailab/articles/self-attention-qkv-experiment",
+      "site": "Zenn(Python)",
+      "published": "2026-09-28T18:42:19Z",
+      "description": "Transformerの解説記事を読むと、ほぼ必ず出てくる図がある。\"The animal didn't cross the street because it was too tired.\" という文で、\"it\" から \"animal\" に向かって太い矢印(高いattention重み)が伸びている、あの図だ。「Attentionは文脈の中で本当に重要な単語を自動的に見つけ出す」という説明とセット...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
     {
       "title": "エンジニア視点で語る！Pythonで学ぶマクロ経済学入門 65",
       "url": "https://zenn.dev/maszkot/articles/e2c6251fbae750",
@@ -129,16 +179,6 @@
       "site": "Zenn(Python)",
       "published": "2026-09-28T04:12:50Z",
       "description": "プログラミング言語の「いま」を測るのに、GitHub の統計を見る人は多いと思います。でもそれは「すでに使っている人」の分布です。今回は逆に、「これから学ぶ人」の動きを映す Google Trends のデータを使って、2016〜2025 年の言語トレンドを 14 の国・地域で比較してみました。\nインタラクティブな可視化を含む全文はこちらに公開しています。\nhttps://huhu-ai.net/...",
-      "category": "開発",
-      "rss_category": "",
-      "image_url": ""
-    },
-    {
-      "title": "Gemini 3.8 Flash TTS を API キーの発行から使う。話者の選び方と style の限界",
-      "url": "https://zenn.dev/serotoninmax/articles/gemini-flash-tts-api-guide",
-      "site": "Zenn(Python)",
-      "published": "2026-09-28T02:31:10Z",
-      "description": "20 秒の動画のナレーションを、Gemini TTS（gemini-3.8-flash-tts）で作れるようにした。この記事では次のことを順に扱う。\n\nAPI キーを発行して呼べるようになるまでの手順\nInteractions API の呼び方\n話者の選び方\n\nstyle の書き方とその限界\n動画の生成から Gemini TTS を呼ぶラッパーの設計\n\n料金、モデル ID、話者の数、規約は変わりう...",
       "category": "開発",
       "rss_category": "",
       "image_url": ""
