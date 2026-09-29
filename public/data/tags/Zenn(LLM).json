@@ -1,8 +1,158 @@
 {
   "site": "Zenn(LLM)",
-  "last_updated": "2026-09-29T06:02:24.407064",
-  "total_articles": 6386,
+  "last_updated": "2026-09-29T12:46:34.305584",
+  "total_articles": 6401,
   "articles": [
+    {
+      "title": "ゲームの敵をLLM の蒸留・強化学習・共進化で強くしてみた",
+      "url": "https://zenn.dev/ponyo877/articles/cd4e1091e90592",
+      "site": "Zenn(LLM)",
+      "published": "2026-09-29T10:03:05Z",
+      "description": "はじめに\nマリオに似た2DアクションゲームSuperTuxのいい感じの1ステージをブラウザで遊べるようにし、敵の動きをAIに決めさせて難しくする、ということを試しました。\n\n\n\n通常盤\nAI学習版\n\n\n\n\n\n\n\n\n\n今回は以下の順番で実験を重ねていきました!\n\n判断モデル（Jev, laya）に敵の動きを決めさせる\n敵の強さを数字で比べるための評価環境を作る\nOpus 5.5の判断をLightGB...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "Ollama の JSON Schema と tool calling で点検結果を受け取る — 形式と内容を分けて観察する",
+      "url": "https://zenn.dev/giteki/articles/004-structured-output",
+      "site": "Zenn(LLM)",
+      "published": "2026-09-29T08:55:44Z",
+      "description": "003 ではプロンプトの書き方を5通り入れ替え、ローカル LLM がトーン規約をどこまで読めるかを観察した。プロンプトで動かせたのは過剰検出と見逃しの両端で、書き換え案の官僚化はどの手法でも残った。あわせて、JSON が時々読めなくなる現象と、4b モデルが出力例の説明文を本文として引用してくる取り違えも残課題にした。\n本記事では、点検結果を受け取る形式を Ollama の API 側で2通り増や...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "AIに書かせた文書を、同じAIに採点させない。ローカルLLMだけで差し戻しが起きるか測った",
+      "url": "https://zenn.dev/forifori/articles/split-writer-and-reviewer",
+      "site": "Zenn(LLM)",
+      "published": "2026-09-29T05:55:25Z",
+      "description": "何が困るか\nLLM に文書を書かせると、それらしい成果物がすぐ出てきます。困るのは、出てきたものが正しいかどうかを、同じモデルに聞いても意味が薄いことです。\n自分が書いた文章を自分で採点させると、だいたい通ります。結果、確認を省くか、全部人間が読み直すかの二択になります。\nやったのは単純なことで、書く役と確かめる役を別のエージェントに分け、確かめる役に「差し戻す」権限を持たせただけです。\nこのツー...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "MacBook Air M4 16GBのローカルLLMを1日で打ち切った ── 天井は12.7GB、24Bと31Bは完走しなかった",
+      "url": "https://zenn.dev/ivyxon/articles/macbook-air-m4-16gb-local-llm",
+      "site": "Zenn(LLM)",
+      "published": "2026-09-29T05:26:48Z",
+      "description": "手元の MacBook Air M4 16GB で、ローカルLLM がどこまで実用になるか測りました。結論から言うと、今回の条件でベンチマークを完走できたのは 12B の Q4 まで。そこから先は「遅い」ではなく「数字が出ない」でした。そして1日で打ち切りました。\nネット上の M4 Mac + ローカルLLM の記事は「思ったより軽快だった」で終わっているものが多いので、ここでは逆向きに、どこで止...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "セミナー要点メモ: 2026/09/24 ハーネス設計入門 基礎知識の整理から実務へのステップアップ",
+      "url": "https://zenn.dev/makoto_kw/articles/111048209fafa9",
+      "site": "Zenn(LLM)",
+      "published": "2026-09-29T05:09:19Z",
+      "description": "https://findy-code.io/events/m_30FrG9ZZk_t\n\n スピーカー\n株式会社キー・プランニング 代表取締役\nKinopee / 木下雄一朗 @kinopee_ai\nAIを開発チームに採用する技術 ―27社の挑戦と成功法則―の著者\n\n メモ\n\n\nハーネスで5つの流派があったが今は収束している\n\nコンテキストが外か中の派閥があったが、重要なのは実装ということでAgen...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "Qwen Image 2.1 GGUF入門：量子化とローカル実行の始め方",
+      "url": "https://zenn.dev/jevaimodel/articles/db0f028c0a6aa7",
+      "site": "Zenn(LLM)",
+      "published": "2026-09-29T04:16:26Z",
+      "description": "Qwen Image 2.1は、テキストからの画像生成と画像編集に対応したモデルです。GGUF版は、コミュニティによって生成用の重みが量子化・変換されたファイルで、対応するローカル推論ツールから利用できます。\nGGUFファイルを1つダウンロードするだけでは、生成を始められません。実行環境に加えて、テキストエンコーダーと、画像表現をピクセルに戻すVAEも必要です。\nこの記事では、GGUF変換で何が変...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "LLMにURLを1文字も書かせない — 内部リンクはプレースホルダで受けてDBから組み立てる",
+      "url": "https://zenn.dev/acs_developer/articles/llm-internal-links-placeholder-sanitize",
+      "site": "Zenn(LLM)",
+      "published": "2026-09-29T04:07:34Z",
+      "description": "何を作ったか\nカテゴリ内の記事を束ねる「ハブページ」をLLMに書かせる機能を、WordPressプラグインとして実装しました。ハブページの価値は本文よりもリンクが全部正しいことにあります。存在しない記事へのリンク、他社サイトへのリンク、もっともらしいけれど1文字違うパーマリンクが1本でも混ざれば、そのページは公開できません。\nそこで方針を「LLMの出力をチェックして、おかしなリンクを直す」ではなく...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "「これ意味あるかな？」Claude Codeに入れたJevのプラグインを1週間で外すまで",
+      "url": "https://zenn.dev/shimo4228/articles/jev-guard-blind-to-local-verify",
+      "site": "Zenn(LLM)",
+      "published": "2026-09-29T03:47:00Z",
+      "description": "前回の記事の最後に、私はこう書きました。Jevでスキルを提案するプラグインを、何も足さずログだけを残す設定で動かし、Jevが選んだスキルと、Claude Codeが実際に使ったスキルを突き合わせる、と。\n2026年9月21日から1週間動かした結果、Jevがスキルを選んだ539回のうち、30分以内に同じセッションでそのスキルが使われたのは28回でした。私はそれ以上確かめずに、プラグインを外しました。...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "Claude Code / Codexで「私のlimit、減りすぎ…？」と思ったときに見る記事",
+      "url": "https://zenn.dev/tokium_dev/articles/ai-agent-usage-limit-long-sessions",
+      "site": "Zenn(LLM)",
+      "published": "2026-09-29T03:00:09Z",
+      "description": "こんにちは、TOKIUMの花房です。\nClaude CodeやCodexをサブスクリプションで使っていて、以下のように感じることはないでしょうか。\n\n週の半ばで週間上限が尽きる。作業量は先週と変わらないはずなのに\nSlack botやcron/launchdからエージェントを動かしていて、体感よりもリミット消費が多い\nプロンプトキャッシュにヒットしているはずなのに、やはり減りが多い気がする\n\nCo...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "文章を書かない AI「Jev」を触って分かった、判定だけを返す API の使いどころ",
+      "url": "https://zenn.dev/flinters_blog/articles/466c8de3de417d",
+      "site": "Zenn(LLM)",
+      "published": "2026-09-29T03:00:09Z",
+      "description": "はじめに\nこんにちは。FLINTERSの河内です。\n社内で毎週開いている AI 活用の勉強会で、今回（2026-09-28）は TypeSafe AI の Jev を取り上げました。担当は前回初参加だった松平さんで、今回が初発表です。デモを6本作り込んできてくれて、いつもよりずっと濃い回になりました。\nJev は文章を一切書かず、yes/no の確率、選択肢、点数の3種類だけを返す AI です。私...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "RAG精度を自己進化させる方法。知能が安い時代に。",
+      "url": "https://zenn.dev/knowledgesense/articles/aa71237da8bd75",
+      "site": "Zenn(LLM)",
+      "published": "2026-09-29T02:31:06Z",
+      "description": "本記事では、RAGの性能を高めるための「SELF-INDEX」 という手法について、ざっくり理解します。\n株式会社ナレッジセンスは、生成AIやRAGを使ったプロダクトを、エンタープライズ企業向けに開発しているスタートアップです。\n\n この記事は何\nこの記事は、検索インデックスを人手なしで改善し続ける手法「SELF-INDEX」の論文[1]について、日本語で簡単にまとめたものです。\nhttps://...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "エラーをAIに直させる自動デバッグ機能をJevを使用して作ってみた",
+      "url": "https://zenn.dev/gvatech_blog/articles/4d89cf7d5b9868",
+      "site": "Zenn(LLM)",
+      "published": "2026-09-29T02:12:51Z",
+      "description": "この記事の概要・想定読者\nSentry に届いたエラーを起点に、調査・修正・検証を経て PR の一歩手前までを自動化した記録です。修正するのは AI ですが、 AI が作った修正の合否を、AI 自身に判定させないように気を付けて作成しました。\n次のような関心のある方に向けて書いています。\n\nSentry に届くエラーを、もっと速く・面倒なく直したい\nAI にコードを書かせたいが、その成果物をどこま...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "公式発表と違う「言い切り」を、生成の段階で止める",
+      "url": "https://zenn.dev/mameresearcher/articles/stop-false-claims-at-generation",
+      "site": "Zenn(LLM)",
+      "published": "2026-09-29T02:09:20Z",
+      "description": "個人プロジェクトで、携帯回線の情報を扱う解説動画とポッドキャストを毎日自動で作って公開している。台本もタイトルも生成AIが書き、人が見るのは公開後だ。\n2026-09-28 の朝、その公開物に「パートナー回線が9/30終了?」というタイトルが並んでいるのに気づいた。キャリアの公式のお知らせ（9/5）はそうは言っていない。10月から「十分カバーできているエリア」ではパートナー回線を縮小し、カバーに時...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "「具体はAI、抽象は人間」──その抽象、どこから来るの？",
+      "url": "https://zenn.dev/motimotinotch/articles/9a4c45933d73a3",
+      "site": "Zenn(LLM)",
+      "published": "2026-09-29T01:27:19Z",
+      "description": "「AI時代の具体と抽象」が、この9月にまとまって話題になっていた。\n筋書きはだいたい共通している。具体（実装）は AI がやるようになる。人間は抽象（何を作るか、なぜ作るか）を担う。だから抽象の力が差になる。具体と抽象を往復するほど理解は深まる。\n半分は正しいと思う。ただ、この筋書きは「その抽象はどこから来るのか」を言っていない。この記事では、そこを1枚足してみる。\n\n 今週の「具体と抽象」\n先に...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "local で完結する「会議の外部記憶」Exolobe の紹介",
+      "url": "https://zenn.dev/branch/articles/0e7c62a1021c44",
+      "site": "Zenn(LLM)",
+      "published": "2026-09-29T01:00:08Z",
+      "description": "この記事で伝えたいこと\n\n会議が多いと、決まったことを「覚えておく」こと自体がボトルネックになる\nExolobe は Web 会議を録音し、文字起こし・話者識別・要約・検索・チャットまでを Mac の中だけで行うアプリ。会議の「外部記憶装置」として使う\n\n要約の精度だけなら Meet や Zoom の AI 要約に負ける。代わりに「元の音声まで 2 クリックで降りられる」「話者の帯で会議の流れが見...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
     {
       "title": "日本語が一番うまいLLMは誰なのか調べる",
       "url": "https://zenn.dev/arika/articles/20260929-what-is-good-llm-for-japanese",

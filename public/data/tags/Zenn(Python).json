@@ -1,14 +1,134 @@
 {
   "site": "Zenn(Python)",
-  "last_updated": "2026-09-29T06:02:24.407064",
-  "total_articles": 6730,
+  "last_updated": "2026-09-29T12:46:34.305584",
+  "total_articles": 6742,
   "articles": [
+    {
+      "title": "人間向けの紙を、機械に読ませる。社内ツールで踏んだ不具合12本まとめ（後編）",
+      "url": "https://zenn.dev/shinsei99/articles/silent-failures-12",
+      "site": "Zenn(Python)",
+      "published": "2026-09-29T11:53:50Z",
+      "description": "前編 の続きです。\n不動産会社で社内ツールを30本ほど作って運用した記録から、残りの12本を索引にしました。\n前編が「落ちないから気づけない」だったのに対して、こちらは\n人が読むためにできているものを、機械に渡したときに落ちるものが中心です。\n\n 11. 「指定しなければ localhost」ではない\n自分専用のつもりのアプリ2本が、社内の誰からでも開ける状態になっていました。\nStreamlit...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "Pythonではじめるロボット経路生成入門 ─ ダイクストラ法・A*からRRT・Informed RRT*まで",
+      "url": "https://zenn.dev/haruhiro1020/books/785c6ef387bb76",
+      "site": "Zenn(Python)",
+      "published": "2026-09-29T10:30:36Z",
+      "description": "ロボットの「経路生成（パスプランニング）」を、Pythonで手を動かしながら初学者向けにやさしく解説します。\n前半は2次元グリッド上の点ロボットでダイクストラ法・A*・ポテンシャル法を、後半はサンプリングベースのPRM・RRT・RRT-Connect・RRT*・Informed RRT* を実装し、最後にこれら8手法すべてを2軸ロボットアームの関節空間に適用（python-fcl による干渉判定つ...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "手で足した設定の1行が、いつの間にか消えている — 再生成は知らない項目を黙って落とす",
+      "url": "https://zenn.dev/ishiriku/articles/f6e381b5fbacd0",
+      "site": "Zenn(Python)",
+      "published": "2026-09-29T09:38:43Z",
+      "description": "Claude Code のデスクトップアプリで、定時に動くタスク（スケジュールタスク）をいくつか使っています。タスクの中身は SKILL.md というファイルで、先頭の YAML（frontmatter）に設定を書きます。\nある日、そこに手で足した1行が消えていました。調べると、どの会話セッションもそのファイルに書き込んでおらず、更新時刻はアプリ側のファイルの書き込みと秒まで一致していました。似た...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "HENNGE Mesh Network を使ってみた",
+      "url": "https://zenn.dev/hennge_cs/articles/8056e1ae6e442f",
+      "site": "Zenn(Python)",
+      "published": "2026-09-29T08:51:09Z",
+      "description": "こんにちは！HENNGE One の導入支援を担当している平川と申します。\n2026 年 10 月にリリースが迫る「HENNGE Mesh Network」、みなさんチェックしていただけているでしょうか？今回はリリースに先駆けて、実際に手を動かして触ってみたレポートを書きました。\n作ってみたのは「ネットワークカメラ（監視カメラ）」です。Raspberry Pi にカメラを接続し、撮影した動画を H...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "【Python】外務省の安全情報1.8万件をPandasで読み込み、国別リスクのヒートマップを作ってみた",
+      "url": "https://zenn.dev/risk_dataset/articles/9b194a7be87ff0",
+      "site": "Zenn(Python)",
+      "published": "2026-09-29T08:50:56Z",
+      "description": "はじめに\n外務省・在外公館が発出している「海外安全情報（領事メール）」約1.8万件（2021年〜2026年）の構造化JSONデータを使って、国別の危機管理リスク（一般犯罪・デモ・感染症など）の偏りを一目で把握できるヒートマップをPythonで作成しました。\nデータ分析の初歩であるクロス集計（pd.crosstab）と、seaborn による可視化、さらに日本語文字化け対策（japanize-mat...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "ローカルLLMで文字起こし・要約をやってハマった話（mlx-whisper × Ollama）",
+      "url": "https://zenn.dev/htanijiri/articles/01-local-llm-transcribe-gotchas",
+      "site": "Zenn(Python)",
+      "published": "2026-09-29T07:08:09Z",
+      "description": "会議や打ち合わせ、保護者会などの音声を文字起こしする（できれば要約も）、というのを全部ローカルでできないかと思い、Mac mini (M4)上にシステムを構築してみました。音声や動画ファイルを置くと文字起こしテキストと議事録が返ってくる、というだけのものです。\n動くものはわりとすぐできていましたが、そのあとのほうが時間がかかっていました。ローカルのWhisperやLLMではそれっぽい出力も返ってく...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "ベルヌーイ分布は「1回」なのに、なぜ確率分布なのか？",
+      "url": "https://zenn.dev/econ_data_lab/articles/bernoulli-one-trial",
+      "site": "Zenn(Python)",
+      "published": "2026-09-29T06:02:10Z",
+      "description": "ベルヌーイ分布は、よく「1回の試行を表す確率分布」と説明されます。\nここで、私は最初に少し引っかかりました。\n1回しか試行しないなら、実際に得られる結果は0か1のどちらか一つだけです。それなのに、なぜ「分布」を考えるのでしょうか。\nこの疑問を解く鍵は、\n\n1回の試行\n確率変数\n確率分布\n実際に観測された値\n\nを区別することです。\nこの記事では、成功確率30%の簡単な例を使いながら、PythonとR...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "入稿PDFの「フォント未埋め込み」を pypdf で検査したら、日本語フォントが全部「未埋め込み」になった話",
+      "url": "https://zenn.dev/sora_proj/articles/865d91484366e5",
+      "site": "Zenn(Python)",
+      "published": "2026-09-29T04:07:11Z",
+      "description": "同人誌の入稿データで印刷所に弾かれる定番のひとつが、フォントの埋め込み漏れだ。手元では正しく見えるのに、印刷所の機械で開くと別のフォントに置き換わり、記号や約物の字形が変わる。しまや出版は「全て埋め込み・サブセット100%」を明文にしていて、ポプルスは Word 入稿の時はフォントファイルを別途出すよう勧めている。\nこの「埋め込まれているか」を、入稿前に手元で機械的に確かめたかった。Acrobat...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "薄い流動性の板をキャッシュせず都度導出にした理由 — AutoTraderの残高集計設計",
+      "url": "https://zenn.dev/ponfreelance/articles/cryptbot-zenn-2026-09-15-77b5603d",
+      "site": "Zenn(Python)",
+      "published": "2026-09-29T01:30:27Z",
+      "description": "AutoTrader (FastAPI × React Native Expo 製) の scheduler で、通貨別の残高集計をどう組むかを見直した。制約は「取引所ごとに板の薄さ・約定タイミングが異なる」「全清算後の状態を正しく即座に反映する」「個人運用でリアルタイム性を担保する仕組みを別途持たない」の3つ。この記事では、残高集計をキャッシュ値ベースから都度導出ベースに切り替えた設計判断を中心...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "ニュースが全銘柄0件だった日：yfinanceの静かな仕様変更と「エラーの出ない失敗」",
+      "url": "https://zenn.dev/charge0315/articles/c644aa5204bd0f",
+      "site": "Zenn(Python)",
+      "published": "2026-09-29T01:16:21Z",
+      "description": "エラーで止まるバグは、まだ親切です。本当に怖いのは、例外を1つも出さずに、もっともらしい「0件」を返し続けるバグです。\n日本株のAI銘柄スクリーニング＆継続学習端末「ALPHA FORGE（アルファフォージ）」を、Claude Code と二人三脚で個人開発しています。ある朝、新機能を実データで試したら、すべての銘柄で「ニュースは0件」になっていました。今回は、その原因と直し方、そして8日後に別の...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "SRTとWebVTTの違いと、Pythonで相互変換する最小スクリプト",
+      "url": "https://zenn.dev/nadiakesslerdev/articles/5077de93a32ebe",
+      "site": "Zenn(Python)",
+      "published": "2026-09-29T00:44:24Z",
+      "description": "字幕ファイルの SRT と WebVTT はほぼ同じ構造ですが、ミリ秒の区切り文字、ヘッダー、キュー番号、時刻の省略可否が違います。動画編集ソフトは SRT、ブラウザの &lt;track&gt; 要素は WebVTT を求めることが多いので、片方しか手元にないときは変換が必要になります。この記事では両者の違いを整理し、標準ライブラリだけで書いた Python の相互変換スクリプトを載せます。\n\n...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "Zennの記事に最適なトピックを提案するCLIツールをつくった",
+      "url": "https://zenn.dev/northward/articles/zenn-topic-suggester",
+      "site": "Zenn(Python)",
+      "published": "2026-09-29T00:30:06Z",
+      "description": "Zennの記事に設定する最適なトピックを提案するCLIツールzenn-topic-suggesterを作りました。\n\npip install zenn-topic-suggesterなどでインストールし、以下のように記事のファイルを指定して実行すると、おすすめのトピックを提案します。\n\nこの記事を対象に実行した例\n$ zenn-topic-suggester ./articles/zenn-top...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
     {
       "title": "AI議事録の「担当未定」を見逃さない。Pythonで引き継ぎJSONを点検する",
       "url": "https://zenn.dev/adachi_builds/articles/c255b9b81940da",
       "site": "Zenn(Python)",
       "published": "2026-09-29T00:11:49Z",
-      "description": "表紙の人物と仕事場はAIで制作したイメージです。\nAIが出した議事録からタスクを転記するとき、担当者や期限が抜けていても、文章が自然だと気づきにくいことがあります。そこで、必要な欄があるかだけを点検する小さなPythonコードを作りました。\nNVIDIAのNemotron 3 Diarizationの記事では、誰がいつ話したかを区別する処理と文字起こしを分けて説明しています。今回のコードは音声モデ...",
+      "description": "表紙の人物と仕事場はAIで制作したイメージです。\n\n コピペして1件を点検するまで\nゴールは「担当者・期限などが不足している行を、人が確認する一覧へ戻せること」です。AIに議事録を作らせる機能や、会議サービスとの接続は含みません。まずは架空のデータだけで試します。\n\n空の作業フォルダを作ります。\n下の「check_actions.py 全文」と「test_actions.py 全文」を、それぞれ同...",
       "category": "開発",
       "rss_category": "",
       "image_url": ""

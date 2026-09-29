@@ -1,8 +1,58 @@
 {
   "site": "Zenn(機械学習)",
-  "last_updated": "2026-09-29T06:02:24.407064",
-  "total_articles": 1920,
+  "last_updated": "2026-09-29T12:46:34.305584",
+  "total_articles": 1924,
   "articles": [
+    {
+      "title": "AMDがフェイフェイ・リーのWorld Labsを82億ドルで買収すると発表した日、7か月前の資金調達時点の評価額との差は64%だった",
+      "url": "https://zenn.dev/hideki_tamae/articles/amd-world-labs-valuation-premium",
+      "site": "Zenn(機械学習)",
+      "published": "2026-09-29T06:28:07Z",
+      "description": "はじめに\n64%。\nこれが今回の数字です。何の64%かというと、AMDが2026年9月28日に発表した、フェイフェイ・リー氏が創業した「World Labs」の買収額(82億ドル)が、その7か月前にWorld Labs自身が調達した際の評価額(50億ドル)と比べて、何%上乗せされているかという数字です。\n自分はふだん、LLMにツールを呼ばせて文章やコードを書かせる、いわゆる「テキスト・API層」の...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "雑メモ・PyTorch 実践：DataLoader のバッチ化の仕組みとテンソル操作の注意点",
+      "url": "https://zenn.dev/972697325291316/articles/3d92ef982d74a0",
+      "site": "Zenn(機械学習)",
+      "published": "2026-09-29T05:34:04Z",
+      "description": "PyTorch で学習コードを書いていく中で、挙動を確認したり引っかかったりした点を整理したメモです。前半は Dataset / DataLoader がどのようにバッチを組み立てるか、後半はテンソル操作・自動微分・学習ループ周りの細かな注意点を扱います。PyTorch の基本的な使い方は知っている方を想定しています。\n\n DataLoader はどのようにバッチを作るのか\n\n 基本：__geti...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "欠損値の削除は行だけじゃない — 特徴量削除とペアワイズ削除の使いどころ",
+      "url": "https://zenn.dev/salesanalytics/articles/1000bed62cee37",
+      "site": "Zenn(機械学習)",
+      "published": "2026-09-29T04:46:07Z",
+      "description": "欠損値の削除というと、欠損を含む行を消す「リストワイズ削除」が思い浮かびます。でも、削除の方法はそれだけではありません。\nこの記事では、「列（特徴量）を削除する方法」と、分析ごとに使えるデータを最大化する「ペアワイズ削除」の要点をコンパクトにまとめます。行を消すか列を消すか、全体で消すかペアごとに消すか。この組み合わせを理解すると、削除戦略の引き出しが広がります。\n!\n題材は seaborn に組...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "自宅学習で応答30ms！軽量0.8Bの意思決定モデル「Jeff」が話題",
+      "url": "https://zenn.dev/ament3/articles/ai-digest-2026-09-29-0133",
+      "site": "Zenn(機械学習)",
+      "published": "2026-09-29T01:33:34Z",
+      "description": "大規模言語モデル（LLM）のマルチモーダル化や巨大化が進む一方で、軽量かつ低遅延で動作する「SLM（Small Language Model）」への注目度が高まっています。\nそんな中、Hacker Newsで話題を集めているのが、自宅のコンシューマ環境で学習された0.8B（8億パラメータ）の超軽量意思決定モデル**「Jeff」**です。\n\n 概要と注目されている背景\nJeff は、わずか8億パラメ...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "機械学習の理論と実装をつなぐ4冊",
+      "url": "https://zenn.dev/makitech/articles/20260929_book_ref",
+      "site": "Zenn(機械学習)",
+      "published": "2026-09-29T00:04:22Z",
+      "description": "はじめに\n数年前、退職した同僚から需要予測のモデルを引き継いだことがある。ノートブックは動いていたし、精度も一応出ていた。それでも困った。なぜこの特徴量が効いているのか、なぜこのモデルを選んだのかを、自分の言葉で説明できなかった。\nそのとき自分がやったのは、とりあえず手当たり次第に技術書を買うことだった。分厚い理論書を開いては数式で止まり、チュートリアル本を写経しては翌週忘れる。半年くらい遠回りし...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
     {
       "title": "Dense Retrievalを実装する：DPR・距離尺度・ANNの設計",
       "url": "https://zenn.dev/kas_blog/articles/20260509-llm-24-dense-retrieval",
@@ -19,16 +69,6 @@
       "site": "Zenn(機械学習)",
       "published": "2026-09-28T15:19:14Z",
       "description": "個人開発でタナゴ釣果記録アプリ「KIRIBAKO」を作っています。写真に写った魚の体長を、\nLiDAR の深度から測る機能があります。\n以前、その計測が 5cm の魚を 746mm と表示した事件を書きました\n(LiDAR が 5cm の魚を 746mm と測った日)。\n今回はその続きにあたる話で、「精度の悪いモデルを直そうとしたら、真因はその手前にあった」\nという記録です。\n結論を先に書くと、こ...",
-      "category": "AI・技術",
-      "rss_category": "",
-      "image_url": ""
-    },
-    {
-      "title": "機械学習の数学を理解したい",
-      "url": "https://zenn.dev/sodeyama/articles/math-road-to-transformer",
-      "site": "Zenn(機械学習)",
-      "published": "2026-09-28T13:18:25Z",
-      "description": "機械学習の数学を理解するために、何を学ぶのか\n株式会社DeploAIで代表取締役CTOをしている袖山剛です。営業を科学するプロダクトの開発に取り組みながら、2025年11月から数学を学び直しています。\nもともと応用物理学科で、線形代数・微分積分はもちろん、集合・位相論から始まる純粋数学もそれなりに勉強していました。その経験が土台にはあります。ただ、20年以上経っているので、当時学んだ内容は基本的に...",
       "category": "AI・技術",
       "rss_category": "",
       "image_url": ""
