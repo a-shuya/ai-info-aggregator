@@ -1,14 +1,84 @@
 {
   "site": "Zenn(LLM)",
-  "last_updated": "2026-09-29T18:20:16.424688",
-  "total_articles": 6401,
+  "last_updated": "2026-09-29T22:26:53.703813",
+  "total_articles": 6407,
   "articles": [
     {
-      "title": "ゲームの敵をLLM の蒸留・強化学習・共進化で強くしてみた",
-      "url": "https://zenn.dev/ponyo877/articles/cd4e1091e90592",
+      "title": "見守りカメラを、DGX Spark のローカル LLM で話すペットにした——モデル構成・音声の扱い・精度",
+      "url": "https://zenn.dev/sodeyama/articles/tech-dgx-spark-camera-voice-agent",
       "site": "Zenn(LLM)",
-      "published": "2026-09-29T10:03:05Z",
-      "description": "はじめに\nマリオに似た2DアクションゲームSuperTuxのいい感じの1ステージをブラウザで遊べるようにし、敵の動きをAIに決めさせて難しくする、ということを試しました。\n\n\n\n通常盤\nAI学習版\n\n\n\n\n\n\n\n\n\n今回は以下の順番で実験を重ねていきました!\n\n判断モデル（Jev, laya）に敵の動きを決めさせる\n敵の強さを数字で比べるための評価環境を作る\nOpus 5.5の判断をLightGB...",
+      "published": "2026-09-29T22:07:18Z",
+      "description": "家庭用カメラ1台とローカル LLM で、声で話すペットは作れるのか\n株式会社DeploAIで代表取締役CTOをしている袖山剛です。\n営業を科学するプロダクトの開発と、お客様の業務にAIを組み込む仕事をしています。手元の DGX Spark で、音声の対話エージェントを実際の機器につなぐとどこでつまずくかを確かめたくて、家の見守りカメラを「話すペット」にしてみました。\n結論から書くと、作れました。 ...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "RAG検索を分解して設計する：Chunking・RRF・Reranker",
+      "url": "https://zenn.dev/kas_blog/articles/20260509-llm-25-chunking-rerank",
+      "site": "Zenn(LLM)",
+      "published": "2026-09-29T20:00:44Z",
+      "description": "RAG（Retrieval-Augmented Generation、検索拡張生成）の検索品質を改善するとき、原因を切り分けたいならchunk_size、Embedding model、Hybrid Search、Rerankerの同時変更を避けます。最終回答が良くなっても、どの変更が効いたのか分からないからです。\n実装では、検索処理を次のstageへ分けます。\nsource → chunking...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "流行りの意思決定モデル（System 1 Model：いわゆるJev的なやつ）を使ったモデルルーターをRustで作ってみた",
+      "url": "https://zenn.dev/infra_ojisan/articles/llm-modelrouter-system1model-rust",
+      "site": "Zenn(LLM)",
+      "published": "2026-09-29T18:59:36Z",
+      "description": "LLMを使うタスクには、短い文章の整形から、長文の要約、画像の読み取り、複雑な設計・コーディングまで幅があります。これらを毎回同じモデルに送ると、軽い仕事にも高価なモデルを使ったり、逆に難しい仕事を小さなモデルへ送ったりします。\nそこで、リクエストを受け取り、内容に応じて転送先を選ぶローカルのモデルルーターをRustで作りました。\nソースコード：InfraOjisan/llm_router\n\n ロ...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "自律エージェントに「勝手に工夫させない」ための設計（ガードレール・決裁箱・自己拡大の禁止）",
+      "url": "https://zenn.dev/mamedougu/articles/agent-follow-the-playbook",
+      "site": "Zenn(LLM)",
+      "published": "2026-09-29T17:09:10Z",
+      "description": "前の2記事で、Claude Code + GitHub Actions だけで小さな会社を毎晩1営業日ぶん回している話（63日の落とし穴）と、クラウドと手元PCの二層の競合防止を書きました。この記事は3本目で、テーマは 「賢いエージェントに、賢く振る舞わせない」 です。\n矛盾して聞こえますが、無人で毎日動く業務では創意工夫がいちばんの事故原因でした。エージェントが「もっと良い方法があるはず」と手順...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "Jevの活用事例を製造業の目で調査 — 検査の一次選別からロボットの判断層まで",
+      "url": "https://zenn.dev/jodycraft/articles/jev-manufacturing-use-cases",
+      "site": "Zenn(LLM)",
+      "published": "2026-09-29T14:10:01Z",
+      "description": "!\n📋 この記事の前提\n\n連載の続きです。先に前回の 判定だけに特化したAIモデル「Jev」を、ループ→グラフ→判定の系譜で読み解く を読んでいると話が早いです。今回はその活用事例の調査編です\n製造業のDX担当・生産技術・AI導入を検討している開発者向けです\n\n数字は出典つきで、「ベンダー発表 / 企業の実測 / 個人の検証」を区別して書きます（2026年9月28日時点）\n\n\n\n 結論: 製造業の...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "Claude API の tool_use 実装で必ずハマる5つの罠",
+      "url": "https://zenn.dev/yunisuta/articles/ai1-dedup-ai-2026-05-10-ai-2026510-notic-zkxlod",
+      "site": "Zenn(LLM)",
+      "published": "2026-09-29T13:41:01Z",
+      "description": "はじめに\nAnthropic が公開した金融業務向けエージェントテンプレート群（KYC・ピッチブック生成・月次決算処理など）が注目を集めている。これらを参考に社内のドキュメント処理エージェントを実装しようとすると、tool_use (function calling) の実装ミスで詰まるエンジニアが後を絶たない。\n本稿では筆者が実際に踏んだ5つの典型的な落とし穴と、正しい実装パターンを紹介する。G...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "Claude Tool Use で作るKYC書類解析パイプライン：Anthropic金融エージェントの仕組みを自前実装で理解する",
+      "url": "https://zenn.dev/yunisuta/articles/ai1-dedup-ai-2026-05-10-ai-2026510-notic-zkxlob",
+      "site": "Zenn(LLM)",
+      "published": "2026-09-29T13:41:00Z",
+      "description": "書類1枚のOCR結果を渡したら、氏名・生年月日・書類番号がスキーマ崩れなしのJSONで返ってくる。Anthropicが2026年5月に公開した anthropics/financial-services リポジトリが話題だが、KYCスクリーナーのコアは意外とシンプルだ。Claude APIの Tool Use を使えば、同じ仕組みが30〜40行で自前実装できる。テンプレートをそのまま使うより、内部...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "失敗するエージェントを1手目で見抜き推論を最大6割削る早期中断",
+      "url": "https://zenn.dev/okssusucha/articles/20260725-llm-agent-early-abort-hidden-state-probe",
+      "site": "Zenn(LLM)",
+      "published": "2026-09-29T12:22:27Z",
+      "description": "エージェントに複雑なタスクを投げると、ときどき最初の数手で筋の悪い方針に入り込む。それでもエージェントは律儀に20手ほど回し続け、大量のツール呼び出しとトークンを消費してから、ようやく「できませんでした」と返してくる。この「詰んでいるのに走り続ける」時間が、自前でエージェントを回している人ほど地味に効いてくる。RLのロールアウト収集、評価バッチ、長時間ジョブでは、失敗するエピソードほど長く回りがち...",
       "category": "AI・技術",
       "rss_category": "",
       "image_url": ""
@@ -119,16 +189,6 @@
       "site": "Zenn(LLM)",
       "published": "2026-09-29T02:12:51Z",
       "description": "この記事の概要・想定読者\nSentry に届いたエラーを起点に、調査・修正・検証を経て PR の一歩手前までを自動化した記録です。修正するのは AI ですが、 AI が作った修正の合否を、AI 自身に判定させないように気を付けて作成しました。\n次のような関心のある方に向けて書いています。\n\nSentry に届くエラーを、もっと速く・面倒なく直したい\nAI にコードを書かせたいが、その成果物をどこま...",
-      "category": "AI・技術",
-      "rss_category": "",
-      "image_url": ""
-    },
-    {
-      "title": "公式発表と違う「言い切り」を、生成の段階で止める",
-      "url": "https://zenn.dev/mameresearcher/articles/stop-false-claims-at-generation",
-      "site": "Zenn(LLM)",
-      "published": "2026-09-29T02:09:20Z",
-      "description": "個人プロジェクトで、携帯回線の情報を扱う解説動画とポッドキャストを毎日自動で作って公開している。台本もタイトルも生成AIが書き、人が見るのは公開後だ。\n2026-09-28 の朝、その公開物に「パートナー回線が9/30終了?」というタイトルが並んでいるのに気づいた。キャリアの公式のお知らせ（9/5）はそうは言っていない。10月から「十分カバーできているエリア」ではパートナー回線を縮小し、カバーに時...",
       "category": "AI・技術",
       "rss_category": "",
       "image_url": ""
