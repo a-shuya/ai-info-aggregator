@@ -1,8 +1,68 @@
 {
   "site": "Zenn(LLM)",
-  "last_updated": "2026-09-30T18:56:47.428285",
-  "total_articles": 6420,
+  "last_updated": "2026-09-30T22:54:00.430890",
+  "total_articles": 6425,
   "articles": [
+    {
+      "title": "【セキュリティ】「Hacking OpenAI」から学ぶ、AIで変わる攻撃のコスト",
+      "url": "https://zenn.dev/ykbone/articles/202610-security-hacking-openai",
+      "site": "Zenn(LLM)",
+      "published": "2026-09-30T16:04:55Z",
+      "description": "はじめに\n2026年9月、セキュリティ企業 Hacktron の研究者3人が Hacking OpenAI というレポートを公開しました。OpenAIのバグバウンティ（脆弱性報奨金制度）の中で行った調査の報告です。フォーラムへの画像アップロードを起点に、72時間足らずでOpenAI従業員のChatGPT/Codexアカウントへのアクセスを得て、社内リポジトリに無害なプルリクエストを1件作るところま...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "Jevはローカルモデルで代替できるか？ lev・jeffを加えて追加で実機徹底比較",
+      "url": "https://zenn.dev/null_teck/articles/system-one-benchmark-s1bench-levbench",
+      "site": "Zenn(LLM)",
+      "published": "2026-09-30T15:53:15Z",
+      "description": "!\n先に結論を言います\n\n\n先行検証の振り返りと総括:\n前回の検証記事では、「汎用LLM（Qwen3.5）や専用モデル（Kev-4B）により、Jevの境界判定インターフェースはローカルでも十分に代替可能」と結論づけていました。しかし今回の検証で 「短文の特定タスクでは代替できても、長文の局所条項探索、多重入れ子例外、および高精度な確率較正において、モデル・アーキテクチャごとの明確な適用限界が存在す...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "Holmes AIの特徴と実力：調達向けLLM・4つのHub・GPTとの6問比較",
+      "url": "https://zenn.dev/headwaters/articles/ae053f4601ac6d",
+      "site": "Zenn(LLM)",
+      "published": "2026-09-30T15:47:59Z",
+      "description": "調達向けAIのHolmes AIとGPT-6.1-solに、契約判断やサプライヤー選定について6つの質問をしました。\n今回見えたHolmes AIの強みは、価格や評価データを使い、短時間で候補・概算・面談事項をまとめることです。一方、日本の開発会社を探した追加質問では、国内単価の不足を受けてインド活用へ提案を切り替えました。GPTは日本の候補を維持し、体制や開発範囲を調整しています。\nこの違いを、...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "無料・BYOKのAIコーディングエージェント14本を、GPUなしの普通のミニPCで全部実測した",
+      "url": "https://zenn.dev/cuculhart/articles/4fdcb13c60c5fe",
+      "site": "Zenn(LLM)",
+      "published": "2026-09-30T14:13:54Z",
+      "description": "サブスク不要・自分のAPIキーやローカルLLMで動く「エージェント型」AIコーディングツール14本を、\n同じタスク・同じプロンプト・同じPCで実測比較するサイト「AIエディターラボ」を公開しました。\nhttps://labo.mond.jp\n生データ（結果JSON・エージェントログ・生成物diff・計測スクリプト）もすべて公開しています。\nhttps://github.com/cuculhart/...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "検算できないLLM出力を、どう守るか — 「構造化できる一部」と「課金の粒度」",
+      "url": "https://zenn.dev/horibe/articles/unverifiable-llm-output-guardrails",
+      "site": "Zenn(LLM)",
+      "published": "2026-09-30T13:58:47Z",
+      "description": "TOEIC学習アプリに、Claude を使う機能を3つ入れてきた。\n\n一文をSVOCに割って、第何文型か出す\n発音採点の結果から、直すところを1つだけ助言する\n\nその一文を、家庭教師の口で解説してもらう ← 今回\n\n1と2は機械で検算できた（前の記事「LLMの答えを機械で検算する」で書いた）。\n区切りをつなげて原文に戻るか。助言が指している音が、実際に測った音の中にあるか。\n答えが正しいかどうかを...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "メモリ36GBのMacに235BのMoEモデルをねじ伏せて載せた記録 — llama.cppでIQ1_S＋純CPUストリーミング",
+      "url": "https://zenn.dev/toripy/articles/mac-36gb-235b-moe-llm-cpu-streaming",
+      "site": "Zenn(LLM)",
+      "published": "2026-09-30T11:38:13Z",
+      "description": "統合メモリ36GBのMacBook Pro（M5 Max）に、総パラメータ235BのMoEモデル Qwen3-235B-A22B（abliterated / IQ1_S・44.7GB） をllama.cppで載せて、3.6〜3.8トークン/秒で実際に会話できるところまで持っていった記録。\n結論だけ先に：\n\n\n\nモデル\n量子化\nファイル\n構成\n実測速度\n\n\n\n\nQwen3.8 27B系（無検閲）\nQ...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
     {
       "title": "オンデバイスLLMとクラウドLLMの使い分け設計",
       "url": "https://zenn.dev/techstudiolab/articles/on-device-cloud-llm-mobile-design",
@@ -49,16 +109,6 @@
       "site": "Zenn(LLM)",
       "published": "2026-09-30T05:32:56Z",
       "description": "政府のAIチャットに、こんなことを聞きました。\n「このサイト、何でできているんですか？」\nフロントエンド、バックエンド、ホスティング、AIモデル。開発者向けの資料があれば、それも読みたい。このサイトの作りが気になって始めた会話です。\nところが、質問を変えても技術名は一つも出てきませんでした。最後に案内されたのは、サイトのフィードバック窓口でした。\nでも、ログを読み返すと、別の疑問が残りました。\n私...",
-      "category": "AI・技術",
-      "rss_category": "",
-      "image_url": ""
-    },
-    {
-      "title": "Demand Discovery Engineを設計・実装した話──検索ボリュームを捨てて需要を発見する",
-      "url": "https://zenn.dev/io0323/articles/0553f3a5b15224",
-      "site": "Zenn(LLM)",
-      "published": "2026-09-30T04:32:05Z",
-      "description": "Demand Discovery Engineを設計・実装した話──検索ボリュームを捨てて需要を発見する\n記事テーマを選ぶ仕事には、二種類の時間がある。候補を集める時間と、候補を捨てる時間だ。前者はサジェストやトレンドを見ればいくらでも増やせる。難しいのは後者である。「検索されそう」「自分にも書けそう」「収益につながりそう」「それでも競合に飲み込まれなさそう」という、性質の違う判断を一つの画面で扱...",
       "category": "AI・技術",
       "rss_category": "",
       "image_url": ""
