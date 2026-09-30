@@ -1,8 +1,48 @@
 {
   "site": "Zenn(Google Cloud)",
-  "last_updated": "2026-09-30T13:55:31.074616",
-  "total_articles": 1868,
+  "last_updated": "2026-09-30T18:56:47.428285",
+  "total_articles": 1872,
   "articles": [
+    {
+      "title": "IoTセンサーデータどこに保存する？ PoCから大量データまで保存先の選び方",
+      "url": "https://zenn.dev/taiyyytai/articles/3c96ccf24dd163",
+      "site": "Zenn(Google Cloud)",
+      "published": "2026-09-30T09:30:10Z",
+      "description": "結論\n万能な保存先はない。データの粒度・送信頻度・保存期間・後工程を考慮して、単独で足りなければ組み合わせる。\nセンサーデータは「エッジで受ける → 直近のデータをダッシュボードで見る → 長く残す → まとめて分析する」という流れで扱われます。保存先はこの流れのどこを受け持つかで選ぶと迷いにくくなります。\n!\n\n本記事はセンサーデータの保存先を扱います。MQTTによる双方向通信（デバイス制御）や...",
+      "category": "クラウド",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "MCPサーバーのもうひとつの「ステートレス化」",
+      "url": "https://zenn.dev/lovegraph/articles/b5a3404aed5edd",
+      "site": "Zenn(Google Cloud)",
+      "published": "2026-09-30T09:02:50Z",
+      "description": "社内で動いているMCPサーバーを見返していたところ、過去3本のデプロイスクリプトすべてに同じ設定がありました。\n--max-instances=1\n--session-affinity\nCloud Runなのに1インスタンス固定！？\n調べてみると、OAuthの処理をエラーなく進めるために仕方なく設定しているものでした。\nこの問題に取り組む中で、MCP 2026-07-28とは別の「ステートレス化」...",
+      "category": "クラウド",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "AWSしか触ってこなかった私が、GCPで手が止まった話(前編:IAM・CI/CD・GKE)",
+      "url": "https://zenn.dev/scalar_sol_blog/articles/6164eacc9895f9",
+      "site": "Zenn(Google Cloud)",
+      "published": "2026-09-30T08:30:05Z",
+      "description": "この記事について\n社内のマルチクラウド(AWS/Azure/GCP)検証用リポジトリで、GCP側のTerraformを書くことになりました。AWSはそれなりに触ってきたので「まあ似たようなものだろう」くらいの気持ちで始めたのですが、実際には「あれ、AWSだとこうだったのに」と手が止まる場面が何度もありました。\nこの記事は、AWSの感覚のままGCPを触ったときに、どこで・なぜ止まったのかの記録です。...",
+      "category": "クラウド",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "Oracle から BigQuery に移行するシミュレーションをしてみた #11 月 2 億件を持つと、規模とコストは？",
+      "url": "https://zenn.dev/mika_and_coco/articles/oracle-to-bigquery-11-200m-rows",
+      "site": "Zenn(Google Cloud)",
+      "published": "2026-09-30T04:57:16Z",
+      "description": "今回の議題\n仕組みの話ばかりが続いて、そろそろ飽きてきた頃かもしれません。ここで一度、概算の金額を見ておきます。「なぜ移すのか」の部の最後は、費用です。前回までに、機能では差がつかないこと、運用者不在は Autonomous Database でも解けること、BigQuery だけの取り分は「管理対象がない」「従量」「ピークに合わせた大きさを買わない」に絞られることを確かめました。残るのは、それを...",
+      "category": "クラウド",
+      "rss_category": "",
+      "image_url": ""
+    },
     {
       "title": "BigQuery 会話分析 データエージェント超入門【作成編】",
       "url": "https://zenn.dev/softbank/articles/bd2251579c2f78",
