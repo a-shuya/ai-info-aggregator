@@ -1,6 +1,6 @@
 {
   "site": "Zenn(LLM)",
-  "last_updated": "2026-09-29T22:26:53.703813",
+  "last_updated": "2026-09-30T01:28:03.075981",
   "total_articles": 6407,
   "articles": [
     {
@@ -34,36 +34,6 @@
       "image_url": ""
     },
     {
-      "title": "自律エージェントに「勝手に工夫させない」ための設計（ガードレール・決裁箱・自己拡大の禁止）",
-      "url": "https://zenn.dev/mamedougu/articles/agent-follow-the-playbook",
-      "site": "Zenn(LLM)",
-      "published": "2026-09-29T17:09:10Z",
-      "description": "前の2記事で、Claude Code + GitHub Actions だけで小さな会社を毎晩1営業日ぶん回している話（63日の落とし穴）と、クラウドと手元PCの二層の競合防止を書きました。この記事は3本目で、テーマは 「賢いエージェントに、賢く振る舞わせない」 です。\n矛盾して聞こえますが、無人で毎日動く業務では創意工夫がいちばんの事故原因でした。エージェントが「もっと良い方法があるはず」と手順...",
-      "category": "AI・技術",
-      "rss_category": "",
-      "image_url": ""
-    },
-    {
-      "title": "Jevの活用事例を製造業の目で調査 — 検査の一次選別からロボットの判断層まで",
-      "url": "https://zenn.dev/jodycraft/articles/jev-manufacturing-use-cases",
-      "site": "Zenn(LLM)",
-      "published": "2026-09-29T14:10:01Z",
-      "description": "!\n📋 この記事の前提\n\n連載の続きです。先に前回の 判定だけに特化したAIモデル「Jev」を、ループ→グラフ→判定の系譜で読み解く を読んでいると話が早いです。今回はその活用事例の調査編です\n製造業のDX担当・生産技術・AI導入を検討している開発者向けです\n\n数字は出典つきで、「ベンダー発表 / 企業の実測 / 個人の検証」を区別して書きます（2026年9月28日時点）\n\n\n\n 結論: 製造業の...",
-      "category": "AI・技術",
-      "rss_category": "",
-      "image_url": ""
-    },
-    {
-      "title": "Claude API の tool_use 実装で必ずハマる5つの罠",
-      "url": "https://zenn.dev/yunisuta/articles/ai1-dedup-ai-2026-05-10-ai-2026510-notic-zkxlod",
-      "site": "Zenn(LLM)",
-      "published": "2026-09-29T13:41:01Z",
-      "description": "はじめに\nAnthropic が公開した金融業務向けエージェントテンプレート群（KYC・ピッチブック生成・月次決算処理など）が注目を集めている。これらを参考に社内のドキュメント処理エージェントを実装しようとすると、tool_use (function calling) の実装ミスで詰まるエンジニアが後を絶たない。\n本稿では筆者が実際に踏んだ5つの典型的な落とし穴と、正しい実装パターンを紹介する。G...",
-      "category": "AI・技術",
-      "rss_category": "",
-      "image_url": ""
-    },
-    {
       "title": "Claude Tool Use で作るKYC書類解析パイプライン：Anthropic金融エージェントの仕組みを自前実装で理解する",
       "url": "https://zenn.dev/yunisuta/articles/ai1-dedup-ai-2026-05-10-ai-2026510-notic-zkxlob",
       "site": "Zenn(LLM)",
@@ -84,11 +54,41 @@
       "image_url": ""
     },
     {
+      "title": "Claude Codeに全権限を渡しても止まる操作がある — 権限モードと安全チェックは別物だった",
+      "url": "https://zenn.dev/zeroyen_dev/articles/claude-code-permission-still-blocked",
+      "site": "Zenn(LLM)",
+      "published": "2026-09-29T11:06:51Z",
+      "description": "Claude Code の権限モードを bypassPermissions（すべて許可）にして、許可ルールも100件入れた状態で、それでも実行が拒否される操作がありました。\n拒否のメッセージはこれです。\nPermission for this action was denied by the Claude Code auto mode classifier.\nReason: Blocked by ...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
       "title": "Ollama の JSON Schema と tool calling で点検結果を受け取る — 形式と内容を分けて観察する",
       "url": "https://zenn.dev/giteki/articles/004-structured-output",
       "site": "Zenn(LLM)",
       "published": "2026-09-29T08:55:44Z",
       "description": "003 ではプロンプトの書き方を5通り入れ替え、ローカル LLM がトーン規約をどこまで読めるかを観察した。プロンプトで動かせたのは過剰検出と見逃しの両端で、書き換え案の官僚化はどの手法でも残った。あわせて、JSON が時々読めなくなる現象と、4b モデルが出力例の説明文を本文として引用してくる取り違えも残課題にした。\n本記事では、点検結果を受け取る形式を Ollama の API 側で2通り増や...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "skill-creator は自分のルールをどこで破っているか: 500行の予算、全大文字、検証スクリプトと仕様のズレ",
+      "url": "https://zenn.dev/skillselion/articles/c07e3fc3997737",
+      "site": "Zenn(LLM)",
+      "published": "2026-09-29T08:18:00Z",
+      "description": "最終更新: 2026-09-29\n\n 要点\nAnthropic の skill-creator は、スキルの書き方を定めたスキルです。ところが本人がそのルールを3か所で踏み越えています。SKILL.md は500行の目安の15行手前、全大文字の指示を「黄信号」と呼んだ149行後に自ら全大文字で書き、同梱の検証スクリプトは公開仕様と両方向に食い違います。\nこの記事は、Skillselion の sk...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "zvec-grepでローカルの検索性能向上を試してみる",
+      "url": "https://zenn.dev/kyopan_pan/articles/369315dee62348",
+      "site": "Zenn(LLM)",
+      "published": "2026-09-29T07:40:21Z",
+      "description": "はじめに\n先日このような記事を見かけました\nBM25を使用してCodexのトークンの消費を30%抑える\n記事内では実際にCodexのトークンを抑えることができていることが分かり有効性が確認できました。\nそして、自分はこう思いました。「使ってみたい！」\n記事内ではMCPを実際に作成してから検証しているように書かれているのでzeすが、そのMCP自体は公開されていません。\n自前で作成してみるのも一つの手...",
       "category": "AI・技術",
       "rss_category": "",
       "image_url": ""

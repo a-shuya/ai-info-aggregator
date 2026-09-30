@@ -1,14 +1,134 @@
 {
   "site": "Zenn(Python)",
-  "last_updated": "2026-09-29T22:26:53.703813",
-  "total_articles": 6751,
+  "last_updated": "2026-09-30T01:28:03.075981",
+  "total_articles": 6762,
   "articles": [
     {
-      "title": "話題の判断特化AI「Jev」に米国株を売買させたら、どの方法でも勝てなかった話",
-      "url": "https://zenn.dev/kohei03/articles/a3d749b239ad7a",
+      "title": "今日の技術トレンド",
+      "url": "https://zenn.dev/bambampurin/articles/2026-09-07-tech-daily",
       "site": "Zenn(Python)",
-      "published": "2026-09-29T17:43:25Z",
-      "description": "はじめに\n2026年9月に公開されて話題になった、TypeSafe AI の判断特化モデル「Jev」。文章を生成せず、選択肢から1つを選ぶ・点数をつける・Yes/Noの確率を返すことだけに特化していて、0.1〜0.5秒で答えが返ってきます。料金は入力100万トークンあたり0.042ドル（執筆時点）と、とても安いです。\n「速くて安い判断AIなら、株の自動売買に向いているのでは？」と思い、Alpaca...",
+      "published": "2026-09-30T00:08:48Z",
+      "description": "!\n2026年9月7日の技術トレンドでは、AI分野においてOpenAIの「GPT-6 Astra」の登場やマネージドエージェントの台頭、さらにWAIC 2026に象徴される「LLMからAIエージェント・具身知能（フィジカルAI）へのシフト」が鮮明になっています。PythonエコシステムではOpenAIによるAstral買収が大きな話題となり、uvやRuffを中心とした次世代開発環境の定着が進んでい...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "27 ブロックの XOR しかなかった — PS1版『lain』のセーブデータを外から作る",
+      "url": "https://zenn.dev/sakamoro/articles/lain-psx-save-format",
+      "site": "Zenn(Python)",
+      "published": "2026-09-30T00:00:08Z",
+      "description": "TL;DR\n\nPS1版『Serial Experiments Lain』のメモリーカードのセーブは 3,584 バイトで、magic は ASCII の \"LAIN\" でした。\n**そのうち 2,864 バイトが「ノード状態 4 バイト × 716 件」**で、ゲームが実行時に持っているデータ構造の一部が、加工されずそのまま書かれていました。\n保護は 128 バイト × 27 ブロックの 1 バイ...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "Keras入門　第３回　モデル構造の定義と学習・評価",
+      "url": "https://zenn.dev/hoshinagi1219/articles/787b3df0a18d4d",
+      "site": "Zenn(Python)",
+      "published": "2026-09-30T00:00:06Z",
+      "description": "星杜なぎさです。\n今回は実際に独自のKerasモデルの作成と評価までのプログラムをまとめました\n\n 0. 動作確認環境\n\nPython 3.13.15\n\nkeras==3.13.2\nmatplotlib==3.10.0\nscikit-learn==1.6.1\n\n\n\n\n 1. 各種必要ライブラリのインポート\nfrom pathlib import Path\n\nimport numpy as np\ni...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "SQLiteの読取診断がDBを更新していた：副作用を封じるWindows実装",
+      "url": "https://zenn.dev/cutlet_of_pork/articles/agy-readonly-diagnostics-sqlite-guard",
+      "site": "Zenn(Python)",
+      "published": "2026-09-29T23:43:16Z",
+      "description": "はじめに\n外部エージェントCLI（以下、AGY）を呼び出すラッパーに、実行履歴をSQLiteへ記録する仕組みを入れていました。失敗後の状態を調べるため、report と recovery planner は外部サービスを呼ばず、ローカルの台帳を読むだけという契約です。\nところが、旧スキーマのfixtureで診断前後のDBを比較すると、report を実行しただけでファイルが変わっていました。原因は...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "Jev の備忘録：判断を返す AI の概要と使い方",
+      "url": "https://zenn.dev/gingakuwagata/articles/jev-system-one-notes",
+      "site": "Zenn(Python)",
+      "published": "2026-09-29T23:24:22Z",
+      "description": "問い合わせの担当部署を決める、文書にタグを付ける、検索結果を回答に使ってよいか判定する。\nこうした小さな判断をソフトウェアに組み込むためのモデルが Jev です。\nTypeSafe AI が2026年9月15日に早期アクセスとして公開しました。\n自然言語で質問できますが、回答として返るのは選択肢やスコア、確率です。\n!\n2026年9月30日時点の公式資料と導入報告をもとにした備忘録です。\n掲載コー...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "TypeSafe AIのJevとは？APIの使い方を完全解説【エンジニア向け】",
+      "url": "https://zenn.dev/galirage/articles/jev-typesafe-internals-api",
+      "site": "Zenn(Python)",
+      "published": "2026-09-29T23:08:43Z",
+      "description": "はじめまして、ますみです！\n株式会社Galirage（ガリレージ）というAIスタートアップで、代表をしております^^\nその他にも、「AIとコミュニケーションする技術（インプレス出版）」という書籍を執筆させていただいたり、生成AIアカデミーというYouTubeチャンネルを運営したり、上智大学で非常勤講師をしたりしています！\n\nJevは、文章の分類や真偽の判断を型付きの値と確率で返す「判断特化型のAI...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "簡易掲示板アプリで「認証・セッションの不備」を再現して修正する",
+      "url": "https://zenn.dev/yukakawa/articles/cdf6a7ea20c385",
+      "site": "Zenn(Python)",
+      "published": "2026-09-29T23:00:06Z",
+      "description": "はじめに\nセキュリティについて、なるべく手を動かして勉強をしたい！と思い、生成AIに相談したら、学習用アプリを作ってくれました！この記事では生成AIのことを親しみと敬意を込めて、「トレント先生」と呼んでいます。\n前回・前々回はSQLインジェクション・XSSを体験しました。今回は、認証周りの脆弱性として、パスワードの持ち方とログイン状態(セッション)の守り方について扱います。\n今回も前回・前々回と同...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "AI投資botが儲かっていた理由を調べたら、壊れていた",
+      "url": "https://zenn.dev/saradapan/articles/47117d9ec2dbe7",
+      "site": "Zenn(Python)",
+      "published": "2026-09-29T22:30:05Z",
+      "description": "!\n3行で\n\nClaude Codeにほぼ丸投げで作った米国株bot（Python 1.4万行）が、実弾で+5.0%。同じ期間のS&amp;P500は+2.9%\n中身を開けたら、データ取得に失敗しても「中立」扱いで黙って動き続ける箇所が7つあった\n直してから測り直したら、AIのスコアの予測力はほぼゼロ。数行の単純なルールのほうがまだマシだった\n\n\n\n実際の口座。最初の入金はごく少額で、5月に約1,...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "エンジニア視点で語る！Pythonで学ぶマクロ経済学入門 66",
+      "url": "https://zenn.dev/maszkot/articles/202a9f93065e6e",
+      "site": "Zenn(Python)",
+      "published": "2026-09-29T22:27:56Z",
+      "description": "https://qiita.com/maskot1977/items/071e97ceb0a157a7c148\nDJミオ：こんばんは！ラジオ教育番組「エンジニア視点で語る！Pythonで学ぶマクロ経済学入門」、ナビゲーターのDJミオです。\nDJレン：DJレンです。今日はかなり重要回。テーマは――「なぜ私たちは財源を取り合うのか」。そして、その背景にある「税は財源」「国債は将来へのツケ」「インフレは...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "エクスプローラーには見えるのにPythonで開けない.docx ― OneDriveのクラウド専用ファイルとハイドレート",
+      "url": "https://zenn.dev/ai_daigakusei/articles/onedrive-cloud-only-file-python-reparsepoint",
+      "site": "Zenn(Python)",
+      "published": "2026-09-29T21:44:37Z",
+      "description": "フォルダ内の.docxを一括で読むスクリプトを書いたら、一部のファイルだけPackageNotFoundErrorで落ちました。エクスプローラーには見えてるのに、です。\n犯人はOneDriveの「ファイル オンデマンド」。実体がクラウドにしか無いファイルでした。\nこの記事は、それをPythonから検出して、読む前にローカルへ落とす（ハイドレートする）話です。同じエラーで検索の沼にハマってる人に届け...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "「今やってる？」と聞いてくる、壁紙の上のGoogleカレンダー",
+      "url": "https://zenn.dev/ai_daigakusei/articles/google-calendar-desktop-widget",
+      "site": "Zenn(Python)",
+      "published": "2026-09-29T21:40:27Z",
+      "description": "!\n一言でいうと：カレンダーに入れた作業を「入れただけ」で終わらせず、時間が来たら PC の画面に「今やってる？」と出して聞いてもらう仕組みを作る記事です。\n\n\n この記事でできるようになること\nカレンダーを開かなくても、今日と明日の予定と、次の予定まであと何分かを、デスクトップの壁紙の上に出しておけます（ふだんはほかの窓の後ろにいて、クリックすると前に出ます）。作業の開始時刻になると PC の画...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "PCから日本のEchoにしゃべらせる（非公式の方法）",
+      "url": "https://zenn.dev/ai_daigakusei/articles/alexa-speak-from-pc-japan",
+      "site": "Zenn(Python)",
+      "published": "2026-09-29T21:40:25Z",
+      "description": "!\n一言でいうと：PC から日本の Echo に好きな日本語をしゃべらせる話です。日本の Amazon アカウントだと、ログインに使う部品 alexa-cookie2 が最後のページ（maplanding）で404になって止まるので、その直し方も書きました。\n\n\n この記事でできるようになること\n自分は朝の起こしに使っています。昼の12時までに予定がある平日、8時20分を過ぎてもまだ家を出ていなか...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "Pythonの __del__ エラーから学ぶ、非同期バックグラウンドタスクとライフサイクルの落とし穴",
+      "url": "https://zenn.dev/3110mmn/articles/584a591889e32f",
+      "site": "Zenn(Python)",
+      "published": "2026-09-29T19:32:37Z",
+      "description": "DuckDBからGCS（Google Cloud Storage）上のParquetファイルを読み込む処理を実装したところ、少し奇妙な現象に遭遇しました。\nAPIの処理自体は正常に成功し、データも正しく返ってきているにもかかわらず、ログに以下のようなエラーが大量に流れていたのです。\nException ignored in: &lt;function AbstractBufferedFile.__...",
       "category": "開発",
       "rss_category": "",
       "image_url": ""
@@ -29,16 +149,6 @@
       "site": "Zenn(Python)",
       "published": "2026-09-29T14:43:55Z",
       "description": "「包み足が出たから反転する」「長い下ヒゲは買いのサイン」といった説明は、FXでよく見かけます。\n形が分かりやすいため、チャートを見た後なら効いているように感じます。しかし、本当に次の値動きを予測できるのでしょうか。\nそこでUSDJPYの1時間足を使い、8種類の有名なローソク足パターンが出た後の値動きを調べました。\n結果は、通常時より8時間後の平均損益が安定して高いと判断できたのは陽の包み足だけでし...",
-      "category": "開発",
-      "rss_category": "",
-      "image_url": ""
-    },
-    {
-      "title": "AI×Blenderでゲーム用キャラ素体の作成に挑戦した記録",
-      "url": "https://zenn.dev/yy7613/articles/c150ef962ccc1f",
-      "site": "Zenn(Python)",
-      "published": "2026-09-29T14:29:19Z",
-      "description": "はじめに\nこの記事では、ゲーム用のアニメ調キャラクターの素体(頭部とボディ)を、生成AIに指示を出しながらBlenderで作る手順を紹介します。\nBlender MCPとFable 5が出たころから試しはじめ、生成AIのモデルはFable 5・Fable 5.1・GPT-6 Astra・Claude Opus 5.5と乗り換えてきました。\nこの記事の手順は、主にClaude Code(Claude...",
       "category": "開発",
       "rss_category": "",
       "image_url": ""
