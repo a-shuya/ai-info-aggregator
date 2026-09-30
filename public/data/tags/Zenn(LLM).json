@@ -1,8 +1,168 @@
 {
   "site": "Zenn(LLM)",
-  "last_updated": "2026-09-30T07:17:49.328586",
-  "total_articles": 6406,
+  "last_updated": "2026-09-30T13:55:31.074616",
+  "total_articles": 6422,
   "articles": [
+    {
+      "title": "TORCSのレースAI大会で、IBM Graniteの8Bにテストで検収させながらコードを書かせた記録",
+      "url": "https://zenn.dev/sean_from_japan/articles/ibm-granite-8b-code-loop",
+      "site": "Zenn(LLM)",
+      "published": "2026-09-30T09:52:06Z",
+      "description": "13個の部品すべてがテストに合格したのに、組み上がった車は1周も走れませんでした。\nイギリスの大学に交換留学していた2026年の春、IBMがクライアントの授業で、レースシミュレータ TORCS を走るAIを作りました。この大会には、IBMのLLMである IBM Granite を使うことが条件として付いていました。私は、手元のPCで動かす80億パラメータ（8B）のGraniteに強化学習のエージェ...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "ローカル版Realtime API実現検証",
+      "url": "https://zenn.dev/jnch/articles/38d519e92bbeae",
+      "site": "Zenn(LLM)",
+      "published": "2026-09-30T09:44:02Z",
+      "description": "はじめに\nOpenAI Realtime APIのように、人間が話すとAIが音声で返してくれる Speech-to-Speech の体験を、クラウドAPIを使わずローカル環境だけでどこまで実現できるのか検証してみました。\n今回使ったのは、Hugging Faceで公開されている speech-to-speech です。\n構成としては、\nという、いわゆるカスケード型のSpeech-to-Speech...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "オンデバイスLLMとクラウドLLMの使い分け設計",
+      "url": "https://zenn.dev/techstudiolab/articles/on-device-cloud-llm-mobile-design",
+      "site": "Zenn(LLM)",
+      "published": "2026-09-30T09:26:39Z",
+      "description": "この記事で分かること\nモバイルアプリへLLMを組み込むとき、オンデバイスとクラウドを何を基準に使い分けるかを整理します。特に、利用者が入力した文章や業務データなど、外部送信を慎重に扱いたい情報があるアプリを想定します。\n対象読者\nFlutter、React Native、Swiftなどでモバイルアプリを作っていて、生成AI機能の設計を検討している方を想定しています。モデルの実装方法より、「どのデー...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "なぜ基板配線はアンテナ化し、PAM4が必要なのか：高速基板伝送の物理限界とLLM計算インフラ",
+      "url": "https://zenn.dev/nanashi_os/articles/0145a12f5a5287",
+      "site": "Zenn(LLM)",
+      "published": "2026-09-30T09:04:15Z",
+      "description": "TL;DR\nLLMのクラスター規模が数百〜数万GPUへ拡大する中、計算時間のボトルネックはGPU内部の演算処理から「GPU間・ノード間の高速通信（All-Reduce等）」へとシフトしています。\n本記事では、PCIe Gen5/6 や NVLink を支える高速信号伝送（Signal Integrity）の物理限界を解説します。「有線で無線をやる」と称される基板配線のマイクロストリップ化、矩形波の...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "ERPの受注入力をAIに任せる。注文の1行から商品を特定する精度を実測してみた",
+      "url": "https://zenn.dev/nocodesolutions/articles/11ec06c7241b1a",
+      "site": "Zenn(LLM)",
+      "published": "2026-09-30T08:01:52Z",
+      "description": "はじめに\nFAXやメールで届いた注文を、担当者が1行ずつ販売管理システムに入力していませんか。届いた紙やPDFを見ながら、社内の商品コードを思い出して打ち込む作業です。その入力をAIに任せられないか、と考えたことはないでしょうか。\nOCRの精度が上がれば解決する、と説明されることがあります。しかし文字にした時点で手に入るのは文字列だけです。たとえば「純米900 8c」という1行を読み取っても、社内...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "Claude Opus 5.5 の使い方：Claude Code でのモデル切り替えと effort 設定",
+      "url": "https://zenn.dev/kenji_harada/articles/claude-opus-guide-44dfed1f",
+      "site": "Zenn(LLM)",
+      "published": "2026-09-30T08:01:51Z",
+      "description": "Claude Code で Claude Opus 5.5 を使うときは、ユーザー設定の古いキーが Opus 5.5 に効かない点に注意が要ります。ユーザー設定の最上位に effortLevel を書いただけだと、Opus 5.5 は既定の medium のまま動きます。以下、手を動かす順に説明します。\n\n Claude Code で Opus 5.5 に切り替えるには？ (/model・--mo...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "TTSは黙って文を飛ばす：Macのローカル環境で多キャラ朗読ツールを作って分かったこと",
+      "url": "https://zenn.dev/houjun/articles/5330276b2b6c0d",
+      "site": "Zenn(LLM)",
+      "published": "2026-09-30T07:03:08Z",
+      "description": "はじめに\n小説の本文をそのまま貼り付けると、登場人物ごとに別の声で読み上げてくれる——そんなツール「VoxStage」を、Apple Silicon の Mac 上で完全にローカルで動くように作りました。クラウド API もアカウントも使いません。\nこの記事では、作る過程で分かった「ローカル TTS の落とし穴」と、それを設計にどう反映したかを書きます。\n※ 日本語が母語ではないため、不自然な表現...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "OpenAI DevDay 2026 全25発表と提供状況まとめ",
+      "url": "https://zenn.dev/eques_blog/articles/0274fea909d9a0",
+      "site": "Zenn(LLM)",
+      "published": "2026-09-30T04:34:41Z",
+      "description": "OpenAI は2026年9月29日、開発者向けイベント DevDay 2026 で、20を超える新しい機能やサービスを発表しました。公式の振り返り記事には25の項目が並んでいます。常時動き続ける AI エージェント（人に代わって作業を進める AI）の dots、新モデルの GPT-6.1 Sol、AI の応答を速くする Ultrafast などです。\nこの記事では、公式の振り返り記事に並んだ25...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "Demand Discovery Engineを設計・実装した話──検索ボリュームを捨てて需要を発見する",
+      "url": "https://zenn.dev/io0323/articles/0553f3a5b15224",
+      "site": "Zenn(LLM)",
+      "published": "2026-09-30T04:32:05Z",
+      "description": "Demand Discovery Engineを設計・実装した話──検索ボリュームを捨てて需要を発見する\n記事テーマを選ぶ仕事には、二種類の時間がある。候補を集める時間と、候補を捨てる時間だ。前者はサジェストやトレンドを見ればいくらでも増やせる。難しいのは後者である。「検索されそう」「自分にも書けそう」「収益につながりそう」「それでも競合に飲み込まれなさそう」という、性質の違う判断を一つの画面で扱...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "未認証ユーザに LLM を叩かせる API をどう守るか",
+      "url": "https://zenn.dev/studist/articles/unauthenticated-ai-search-defense-in-depth",
+      "site": "Zenn(LLM)",
+      "published": "2026-09-30T03:00:08Z",
+      "description": "こんにちは、スタディストで Teachme Biz の開発をしている水野です。\n利用者が書いたコンテンツについて LLM に質問できる機能を、ログインしていない閲覧者にも開きたい。公開ページを持つプロダクトなら、こうした要件はこれからどこでも出てくると思います。ただ「認証なしで LLM を呼べるエンドポイントを公開する」というのは、それだけ聞くとかなり怖い話です。\nこの記事では、その怖さをどう分解...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "SIGIR 2026 参加報告（後編） ── トップ研究者が集結する検索技術の最前線",
+      "url": "https://zenn.dev/msmtec/articles/sigir-2026-report-part2",
+      "site": "Zenn(LLM)",
+      "published": "2026-09-30T03:00:07Z",
+      "description": "はじめに\nこんにちは、yrksです。\nはたはたさんの前編記事に続き、SIGIR2026参加報告の後編記事となります。\n本記事では、検索アルゴリズム自体というよりも、その周辺の課題に対応した技術を中心にレポートします。なお、検索アルゴリズム自体については、はたはたさんの前編記事をご参照ください。\n現地の雰囲気もお伝えしますので、参加を検討されている方にとってご参考になれば幸いです。\n\n 注目セッショ...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "「ChatGPTに自分のモデル名を聞く」がアンチパターンな理由",
+      "url": "https://zenn.dev/nijima/articles/13ff2732d51409",
+      "site": "Zenn(LLM)",
+      "published": "2026-09-30T02:17:41Z",
+      "description": "はじめに\n最近『LLMの原理、RAG・エージェント開発から読み解く コンテキストエンジニアリング』（蒲生弘郷 著／技術評論社）を読み始めました。\n1章はLLMの仕組み（Tokenize、Embedding、Self-Attention、トークン生成）の解説で、正直かなり歯ごたえがあります。その中のコラムで、「LLMにLLM自身のことを聞くのは事実調査としてアンチパターン」という話が出てきて、とても...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "OpenAI DevDay 2026を整理する: GPT-6.1 Sol、dots、Agents APIからPro 500まで",
+      "url": "https://zenn.dev/fukubaka0825/articles/7187a700490090",
+      "site": "Zenn(LLM)",
+      "published": "2026-09-30T01:42:01Z",
+      "description": "!\nこの記事は「@fukubaka0825っぽい記事をAIに書かせる」実験で、AIに出力させたものです。内容は公式ドキュメントの整理で、動作は未検証です。\n\n2026年9月29日（米国太平洋時間）に、OpenAIのDevDay 2026が開かれました。公式の総括では、ChatGPT、Codex、モデル、APIにまたがる「20件超」の発表があったとされています。数が多いうえに、DevDayの前に出て...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "LLMにもEOLがある — モデルを依存ライブラリとして管理する",
+      "url": "https://zenn.dev/stock_inc/articles/llm-model-eol-lifecycle-management",
+      "site": "Zenn(LLM)",
+      "published": "2026-09-30T01:00:07Z",
+      "description": "LLMを本番に組み込むとき、私が最初に見落としていたのは「そのモデルはいつまで使えるのか」でした。\nRailsのバージョンなら誰でもEOLを気にします。PostgreSQLなら次のメジャーアップグレードを計画に入れます。ところがモデルについては、選定時の議論は精度とコストばかりで、寿命の話が出てこない。少なくとも私は出していませんでした。\n\n モデルには提供終了がある\n気づいたきっかけは、まったく...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "ゲーミングPC向けで LLMとデプロイ環境を最適化してみた話",
+      "url": "https://zenn.dev/knowledgework/articles/2691721311c2e4",
+      "site": "Zenn(LLM)",
+      "published": "2026-09-30T00:45:00Z",
+      "description": "はじめに\n翻訳LLMを軽くしようとして、まず気づいたのは「モデルファイルを小さくしても、VRAMは思ったほど減らない」ということでした。\nこの記事は、オンラインゲームのチャットを翻訳するために、翻訳特化LLMをゲーミングPC向けに最適化してデプロイした記録です。モデルファイル、プロセスのメモリ、そしてランタイムの3段階で削っていった結果、最終的には2〜3GBのVRAMで商用LLMに近いレベルの翻訳...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "Dify Enterprise を社内に入れる前に確認しておきたい7つのこと",
+      "url": "https://zenn.dev/sidejob/articles/a5d7c337f60f14769",
+      "site": "Zenn(LLM)",
+      "published": "2026-09-30T00:15:10Z",
+      "description": "この記事の立ち位置\n本業で社内向けAI・デジタル化推進を担当している。その中でDify Enterpriseを導入候補として検討したり、実際に関わったりする機会があった。\n公式ドキュメントには載っていない、現場の担当者として「先に知っておけばよかった」と感じたことを整理する。\n\n 1. セルフホストかクラウドか、最初に決める\nDify Enterpriseには大きく2つの展開方式がある。\n\n\nクラ...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
     {
       "title": "見守りカメラを、DGX Spark のローカル LLM で話すペットにした——モデル構成・音声の扱い・精度",
       "url": "https://zenn.dev/sodeyama/articles/tech-dgx-spark-camera-voice-agent",
