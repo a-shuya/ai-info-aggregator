@@ -1,8 +1,148 @@
 {
   "site": "Zenn(LLM)",
-  "last_updated": "2026-10-01T01:54:11.405209",
-  "total_articles": 6428,
+  "last_updated": "2026-10-01T08:34:56.861515",
+  "total_articles": 6443,
   "articles": [
+    {
+      "title": "自作AIのプロンプトインジェクションの抜け穴を、自分で見つけた話：「守られているか検証して」という監査型の依頼",
+      "url": "https://zenn.dev/charge0315/articles/38a50aefa8afe7",
+      "site": "Zenn(LLM)",
+      "published": "2026-10-01T04:31:36Z",
+      "description": "プロンプトインジェクションは、チャットボットを公開している人だけの問題だと思っていませんか。ニュースの見出しを1行でも LLM に読ませているなら、あなたのシステムも入口を持っています。\n日本株のAI銘柄スクリーニング＆継続学習端末「ALPHA FORGE（アルファフォージ）」を、Claude Code と二人三脚で個人開発しています。今回は、自分で決めた防御のルールに、自分のシステムが1か所だけ...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "AIに小説の「シリーズ」を書かせるなら ― 伏線を負債として扱い、完結までを設計する",
+      "url": "https://zenn.dev/infra_ojisan/articles/ai-novel-studio-part3",
+      "site": "Zenn(LLM)",
+      "published": "2026-10-01T04:17:24Z",
+      "description": "はじめに\n1本目の記事では、AIに短編を書かせようとしたら「小説家に頼む」形ではなく「制作スタジオを回す」形になった話を書きました。2本目では、書き手のモデルごとの特性と、人間の文章にある「余白・息継ぎ」の話を書きました。\n3冊を書き終えたところで、3冊目の世界を舞台に、月一回のシリーズを始めることにしました。あわせて、スタジオ一式を GitHub に公開しています。\nhttps://github...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "プロンプト劣化をCIで検出する：Vitest + LLM-as-Judge で評価パイプラインを自前実装する",
+      "url": "https://zenn.dev/yunisuta/articles/ai1-dedup-ai-2026-05-12-budgetexceeded-t-2xz3mo",
+      "site": "Zenn(LLM)",
+      "published": "2026-10-01T02:37:44Z",
+      "description": "「プロンプトを少し調整したら、翌日からユーザーの満足度が静かに落ちていった。単体テストは全部 green のまま。気づいたのは1週間後だった。」\nLLM アプリを本番で動かし始めると、必ずこの問題に直面する。プロンプトは差分 3 行なのに、出力の品質は大幅に変わる。しかも従来の assertEquals では絶対に検知できない。\nこの記事では、Vitest + Anthropic Claude の...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "12日間で4モデルが激突：中国系オープンウェイトLLM、どれを選ぶか？実装コード付き選定ガイド",
+      "url": "https://zenn.dev/yunisuta/articles/ai1-dedup-ai-2026-05-10-ai-2026510-notic-zkxloe",
+      "site": "Zenn(LLM)",
+      "published": "2026-10-01T02:37:43Z",
+      "description": "2026年4月末から5月頭にかけての約12日間で、中国系の主要オープンウェイトLLMが一気に4本リリースされた。GLM-5.1、MiniMax M2.7、Kimi K2.6、DeepSeek V4——どれも「フロンティア級」を謳っており、正直どれを選べばいいか迷う。\nベンチマークを並べるだけの記事はもう十分あるので、この記事では 「何をしたいか」で使い分けるための比較軸 を整理し、実際に試せるコー...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "VRAMに載らないと13.8倍遅い ─ Ollamaを Docker + Node.js から叩いて踏んだ3つの落とし穴",
+      "url": "https://zenn.dev/chiaki_ai_lab/articles/ollama-vram-16gb-nodejs-pitfalls",
+      "site": "Zenn(LLM)",
+      "published": "2026-10-01T02:29:42Z",
+      "description": "ローカルLLMが遅いとき、まずモデルを疑いがちです。しかし RTX 5060 Ti（VRAM 16GB）で自宅の記事生成システムを1年ほど動かしてみた結果、速度を決めていたのはモデルの賢さではなく「VRAMに収まるかどうか」という 1bit の条件でした。\nさらに、Ollama を Docker コンテナの Node.js から HTTP で叩く構成では、モデル選定とは別に3つ踏みました。どれもエ...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "Decision Model 「Jeff」を試してみる：無料Colabで日本語から照明を操作する",
+      "url": "https://zenn.dev/nakanishitf/articles/da50f92445d824",
+      "site": "Zenn(LLM)",
+      "published": "2026-10-01T02:26:42Z",
+      "description": "日本語をプログラムの分岐につなぐ\n「暗くて本が読めません。」と書くと、照明が明るくなる。\nそんな小さなプログラムを、Google Colabで作ってみました。\nresult = light(\"暗くて本が読めません。\")\n実行すると、次の結果が返りました。\n入力：暗くて本が読めません。\nJeffが選んだ操作：明るくする ／ 明るさ：100%\n実物の照明を操作しているわけではありません。\nノートブック...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "はじめに（Windows 11非対応PCの再利用からGPUサーバー＆ローカルAIエージェント構築を目指すロードマップ）",
+      "url": "https://zenn.dev/416obn/articles/77b871b8948e96",
+      "site": "Zenn(LLM)",
+      "published": "2026-10-01T01:15:41Z",
+      "description": "はじめまして！Zennでの初投稿になります。\n最近、AI界隈の盛り上がりが凄まじいですが、「プライベートな情報や社内データを安全に扱いたい」「API利用料を気にせず使い倒したい」という思いから、完全ローカル環境でのAIエージェント構築にチャレンジすることにしました。\n最終的には Ollama + Dify を組み合わせた実践的なAIエージェントの構築・活用を目指していますが、いきなりハイスペックな...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "LLMのサイレント弱体化（Nerf）を検知！監視ツール「Livenerf」",
+      "url": "https://zenn.dev/ament3/articles/ai-digest-2026-09-30-0108",
+      "site": "Zenn(LLM)",
+      "published": "2026-10-01T01:10:03Z",
+      "description": "「昨日まで動いていたプロンプトの精度が急に落ちた気がする」「ClaudeやGPTのコード生成能力がサイレント修正で劣化（Nerf）したのではないか？」\nAIを活用する開発者であれば、一度はこのような違和感を覚えたことがあるのではないでしょうか。LLM（大規模言語モデル）の提供元は、モデルのコスト削減や安全性の調整などのため、予告なしにモデルの挙動や内部プロンプト変更（アライメント調整など）を行うこ...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "長いマニュアルのRAGで答えの箇所を取りこぼさないために ── Section-First RAG の設計と実測",
+      "url": "https://zenn.dev/pri_system_dev/articles/manualsan-section-first-rag",
+      "site": "Zenn(LLM)",
+      "published": "2026-10-01T01:01:02Z",
+      "description": "はじめに\n株式会社ピーアールアイでは、製品マニュアルを取り込むと出典付きで答えるAIナレッジ検索SaaS 「マニュアルさん」 を開発しています。\nhttps://zenn.dev/pri_system_dev/articles/manualsan-product-launch\n実際に以下のURLで稼働しています。\nhttps://manualsan.com/?utm_source=zenn\nマニュ...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "「知ってるのに守れない」はヒトもAIも同じ",
+      "url": "https://zenn.dev/devlog/articles/2d06fd4bed3238",
+      "site": "Zenn(LLM)",
+      "published": "2026-10-01T00:30:05Z",
+      "description": "結論から\nAIとの雑談中、こちらが「本筋と無関係な紛らわしい手がかり」を指すのに red herring を「赤ニシン」と直訳してきた。英語で「レッド・ヘリング」と言われれば分かるのに、直訳されると一瞬「なにを言ってるの？」となる。\n面白かったのはここから。「なんでこれが起きるの？」を掘ると、ヒトが『ルールを知っているのに守れない』のと、AIが『平易に書けと言われているのに直訳を漏らす』のは、同じ...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "SkillCorpusが80万個で測った、スキルは多いほど効くのか",
+      "url": "https://zenn.dev/okssusucha/articles/20260725-skillcorpus-agent-skill-ecosystem",
+      "site": "Zenn(LLM)",
+      "published": "2026-10-01T00:09:11Z",
+      "description": "エージェント用の「スキル」を書いたことがあるなら、SKILL.md という名前に見覚えがあるはずだ。名前と説明をYAMLで書き、その下に手順やガードレールをMarkdownで並べるだけのファイルで、Claude Code、Codex、Cursor、Gemini CLIがそろってこの形式を読むようになった。手軽さゆえに数は爆発的に増えたが、「たくさん積めばエージェントは賢くなるのか」を誰もまともに測...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "オブザーバビリティのAIエージェントをどう評価するか",
+      "url": "https://zenn.dev/ymotongpoo/articles/20261001-agent-eval-loop",
+      "site": "Zenn(LLM)",
+      "published": "2026-10-01T00:00:00Z",
+      "description": "はじめに\nAIエージェントにオブザーバビリティの仕事をさせたとき、その最終応答の品質が上がったのか下がったのかを、どうやって知るのでしょうか。\nエージェントの最終応答を読んで判断する方法は、早い段階で行き詰まります。正しい応答と、正しく見えるだけの応答が同じ見た目をしているからです。しかも同じ質問に毎回同じ応答が返るわけでもなく、期待する文字列を固定したテストは書けません。\nこの記事では、Graf...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "Tech Watch 2026-10-01: 常駐エージェントの境界設計",
+      "url": "https://zenn.dev/laiken/articles/20261001-tech-watch",
+      "site": "Zenn(LLM)",
+      "published": "2026-09-30T23:47:40Z",
+      "description": "AIが書きました🤖\nこの記事は、AIが書いたものを人間が確認してから投稿しています。\nL: 「終わったら報告する」エージェントと、「頼まれていなくても次の仕事を見つける」エージェントの間には、思ったより深い溝がある。後者を会社へ入れるなら、便利さより先に、どこで止まるかを設計する必要がある。常駐させるなら、停止条件はどこに置く？\n\n 今日の 10 件\n\n\nCodex bootcamp 201: T...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "検索ツールが壊れたとき、推測で埋めないAIエージェント設計",
+      "url": "https://zenn.dev/jinsights/articles/9f612a5c1dde41",
+      "site": "Zenn(LLM)",
+      "published": "2026-09-30T23:21:59Z",
+      "description": "AIエージェントに検索や外部APIを使わせると、モデル本体の精度だけでは信頼性を説明できません。検索が落ちた、権限が切れた、APIが空配列を返した。そのときモデルが知識で穴埋めすると、もっともらしい誤答が完成します。\nOpenAIは2026年9月29日、GPT-6.1 Solを公開しました。同社は、壊れた検索ツールを利用者へ明示できるかを評価し、GPT-6 Solより失敗率が下がったと説明していま...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
     {
       "title": "LLMに任せると改善案を10個書く。だからコードで3個に縛った",
       "url": "https://zenn.dev/sukoshift/articles/llm-dont-decide-design",
@@ -24,21 +164,31 @@
       "image_url": ""
     },
     {
-      "title": "Holmes AIの特徴と実力：調達向けLLM・4つのHub・GPTとの6問比較",
-      "url": "https://zenn.dev/headwaters/articles/ae053f4601ac6d",
+      "title": "AI鑑識学：文章の観測・解釈・工程帰属を分ける方法",
+      "url": "https://zenn.dev/git_dungeon/articles/ai-forensics-observation-method",
       "site": "Zenn(LLM)",
-      "published": "2026-09-30T15:47:59Z",
-      "description": "調達向けAIのHolmes AIとGPT-6.1-solに、契約判断やサプライヤー選定について6つの質問をしました。\n今回見えたHolmes AIの強みは、価格や評価データを使い、短時間で候補・概算・面談事項をまとめることです。一方、日本の開発会社を探した追加質問では、国内単価の不足を受けてインド活用へ提案を切り替えました。GPTは日本の候補を維持し、体制や開発範囲を調整しています。\nこの違いを、...",
+      "published": "2026-09-30T21:39:27Z",
+      "description": "AI鑑識学の現時点の方法を公開します。文章のどこに何があるか、その特徴が本文で何をしているか、そこから制作工程について何が言えるか。この三段階を、引用と確認範囲を付けて記録する方法です。\n読みやすさの点検や推敲にも使える観点ですが、読みやすさ、内容の正しさ、AI使用の有無はそれぞれ別の問いです。本文を整える前に、まず原文へ戻れる所見を作ります。\n今回は理論本体と観察規約の発表です。独立した識別精度...",
       "category": "AI・技術",
       "rss_category": "",
       "image_url": ""
     },
     {
-      "title": "無料・BYOKのAIコーディングエージェント14本を、GPUなしの普通のミニPCで全部実測した",
-      "url": "https://zenn.dev/cuculhart/articles/4fdcb13c60c5fe",
+      "title": "AIへの「なぜ」を2回聞いても、リスクは出てこなかった",
+      "url": "https://zenn.dev/every_ai_recipe/articles/ai-why-twice-no-new-risk",
       "site": "Zenn(LLM)",
-      "published": "2026-09-30T14:13:54Z",
-      "description": "サブスク不要・自分のAPIキーやローカルLLMで動く「エージェント型」AIコーディングツール14本を、\n同じタスク・同じプロンプト・同じPCで実測比較するサイト「AIエディターラボ」を公開しました。\nhttps://labo.mond.jp\n生データ（結果JSON・エージェントログ・生成物diff・計測スクリプト）もすべて公開しています。\nhttps://github.com/cuculhart/...",
+      "published": "2026-09-30T21:19:39Z",
+      "description": "TL;DR\n\n意思決定の相談にAIが即答した推奨（「導入すべき」）に対して、同じ会話の中で「なぜですか？」を2回連続で聞いたところ、両方とも最初に挙げた理由の言い換えに終始し、新しい理由・反対意見・リスクは一切追加されなかった\n聞き方を「賛成理由だけでなく反対意見・リスクも思いつく限りすべて」に変えると、初めて5件のリスクが挙がった。ただし結論（「導入すべき」）は維持された\n同じ質問と網羅列挙の依...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "Holmes AIの特徴と実力：調達向けLLM・4つのHub・GPTとの6問比較",
+      "url": "https://zenn.dev/headwaters/articles/ae053f4601ac6d",
+      "site": "Zenn(LLM)",
+      "published": "2026-09-30T15:47:59Z",
+      "description": "調達向けAIのHolmes AIとGPT-6.1-solに、契約判断やサプライヤー選定について6つの質問をしました。\n今回見えたHolmes AIの強みは、価格や評価データを使い、短時間で候補・概算・面談事項をまとめることです。一方、日本の開発会社を探した追加質問では、国内単価の不足を受けてインド活用へ提案を切り替えました。GPTは日本の候補を維持し、体制や開発範囲を調整しています。\nこの違いを、...",
       "category": "AI・技術",
       "rss_category": "",
       "image_url": ""

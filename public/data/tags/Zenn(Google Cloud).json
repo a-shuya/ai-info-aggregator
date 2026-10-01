@@ -1,8 +1,58 @@
 {
   "site": "Zenn(Google Cloud)",
-  "last_updated": "2026-10-01T01:54:11.405209",
-  "total_articles": 1873,
+  "last_updated": "2026-10-01T08:34:56.861515",
+  "total_articles": 1878,
   "articles": [
+    {
+      "title": "BigQueryパイプラインがトリガーベースのスケジューリングに対応！アップデート情報の詳細と設定方法",
+      "url": "https://zenn.dev/e_agency/articles/997b1257173ed3",
+      "site": "Zenn(Google Cloud)",
+      "published": "2026-10-01T06:10:15Z",
+      "description": "はじめに：アップデートの概要\n2026年6月24日のアップデートにより、BigQueryパイプラインが トリガーベースのスケジューリング に対応しました。\n従来のパイプラインでは、定期的なデータ処理を行う場合「毎日朝8時」のような時間ベース（スケジュールベース）での実行が基本でした。今回のアップデートにより、特定のBigQueryテーブルの更新に基づいて自動的にパイプラインを実行させる、新たな実行...",
+      "category": "クラウド",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "Oracle から BigQuery に移行するシミュレーションをしてみた #12 結局、移すべき？ 判断チェックリスト",
+      "url": "https://zenn.dev/mika_and_coco/articles/oracle-to-bigquery-12-decision",
+      "site": "Zenn(Google Cloud)",
+      "published": "2026-10-01T05:00:27Z",
+      "description": "!\nこの連載はこの回で完結し、全 34 章の本にまとめました。第 13〜31 章は、なぜこれを選んだのかという、すごくマニアックな話になっているので、連載では割愛します（第 12・32 章と、おまけの第 34 章も書籍だけです）。書籍には載せてありますので、興味のある方はそちらをご覧ください（無料）→ Oracle エンジニアのための BigQuery 更改シミュレーション（Zenn の本）\nこの...",
+      "category": "クラウド",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "Oracle エンジニアのための BigQuery 更改シミュレーション",
+      "url": "https://zenn.dev/mika_and_coco/books/oracle-to-bigquery-sim",
+      "site": "Zenn(Google Cloud)",
+      "published": "2026-10-01T03:22:18Z",
+      "description": "架空の地方銀行「A 銀行」の情報系（Exadata 上の Oracle 19c、月 2 億件）を BigQuery に移すと、どれくらいのことができて、どのくらい安くなるのか。Oracle エンジニアが Claude に出させたモデルケースで、表の設計・JP1・PL/SQL・利息や引当金の計算・帳票・決算の凍結までを机上と実機で確かめ、Exadata 更改・Oracle Cloud の Exada...",
+      "category": "クラウド",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "terraform applyしたら、1ヶ月半前のコードが本番に出ていた",
+      "url": "https://zenn.dev/gonta_ganbareyo/articles/6256bf2008b2ef",
+      "site": "Zenn(Google Cloud)",
+      "published": "2026-09-30T23:45:42Z",
+      "description": "こんにちは。gontaです。\nGCP上でサービスを作っていて、インフラはTerraformで管理しています。\n先日、使わなくなった環境変数を削除してterraform applyしたところ、本番が落ちました。（まだリリースはしていない）\n調べてみたら、1ヶ月半前のコンテナイメージが本番で動いていました。\n原因はTerraformの使い方というか、コンテナをTerraformで扱うときの構造的な話の...",
+      "category": "クラウド",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "Claude CodeでGASを量産して、APIキーをSecret Managerに集めてみた",
+      "url": "https://zenn.dev/wisevine/articles/578d0b18ed6916",
+      "site": "Zenn(Google Cloud)",
+      "published": "2026-09-30T23:00:06Z",
+      "description": "気軽に作れるようになったら、鍵が散らかった\nClaude Code と clasp を使うようになってから、GAS のツールを作るのがすっかり気軽になりました。「このスプレッドシート、毎朝 Slack に流したいな」と思ったら、その場で Claude Code に頼んで、clasp で push すれば動き出します。\n気軽に作れるので、どんどん増えます。\n困ったのは、鍵です。\nSlack に投稿す...",
+      "category": "クラウド",
+      "rss_category": "",
+      "image_url": ""
+    },
     {
       "title": "IoTセンサーデータどこに保存する？ PoCから大量データまで保存先の選び方",
       "url": "https://zenn.dev/taiyyytai/articles/3c96ccf24dd163",
@@ -38,7 +88,7 @@
       "url": "https://zenn.dev/mika_and_coco/articles/oracle-to-bigquery-11-200m-rows",
       "site": "Zenn(Google Cloud)",
       "published": "2026-09-30T04:57:16Z",
-      "description": "今回の議題\n仕組みの話ばかりが続いて、そろそろ飽きてきた頃かもしれません。ここで一度、概算の金額を見ておきます。「なぜ移すのか」の部の最後は、費用です。前回までに、機能では差がつかないこと、運用者不在は Autonomous Database でも解けること、BigQuery だけの取り分は「管理対象がない」「従量」「ピークに合わせた大きさを買わない」に絞られることを確かめました。残るのは、それを...",
+      "description": "!\nこの連載は第 12 回で完結し、全 34 章の本にまとめました。「PL/SQL の回」「課金の回」のように、文中で先の回として挙げた検討は、書籍版の章で読めます（無料）→ Oracle エンジニアのための BigQuery 更改シミュレーション（Zenn の本）\n\n\n 今回の議題\n仕組みの話ばかりが続いて、そろそろ飽きてきた頃かもしれません。ここで一度、概算の金額を見ておきます。「なぜ移すのか...",
       "category": "クラウド",
       "rss_category": "",
       "image_url": ""
@@ -108,7 +158,7 @@
       "url": "https://zenn.dev/mika_and_coco/articles/oracle-to-bigquery-10-no-dba",
       "site": "Zenn(Google Cloud)",
       "published": "2026-09-29T04:55:25Z",
-      "description": "今回の議題\n前回、「運用者がいない」は Autonomous Database でも解ける、と書きました。A 銀行の困りごとの 1 番目は「Oracle を触れる担当が 2027 年 3 月に退職し、後任は見込めない」です。これを BigQuery に移す動機にしてよいのかを、DBA の仕事を一つずつ取り出して確かめます。\n\n「DBA がいないなら Autonomous Database でよいの...",
+      "description": "!\nこの連載は第 12 回で完結し、全 34 章の本にまとめました。「PL/SQL の回」「課金の回」のように、文中で先の回として挙げた検討は、書籍版の章で読めます（無料）→ Oracle エンジニアのための BigQuery 更改シミュレーション（Zenn の本）\n\n\n 今回の議題\n前回、「運用者がいない」は Autonomous Database でも解ける、と書きました。A 銀行の困りごとの...",
       "category": "クラウド",
       "rss_category": "",
       "image_url": ""
