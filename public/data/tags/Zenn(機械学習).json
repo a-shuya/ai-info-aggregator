@@ -1,8 +1,68 @@
 {
   "site": "Zenn(機械学習)",
-  "last_updated": "2026-10-01T08:34:56.861515",
-  "total_articles": 1943,
+  "last_updated": "2026-10-01T15:40:02.572368",
+  "total_articles": 1949,
   "articles": [
+    {
+      "title": "TORCSのレースAIを122秒から106秒台へ：区間ごとの切り替え、衝突区間の特定、補正ネットワーク",
+      "url": "https://zenn.dev/sean_from_japan/articles/torcs-racing-ai-106s",
+      "site": "Zenn(機械学習)",
+      "published": "2026-10-01T12:03:47Z",
+      "description": "122秒で頭打ちになったレースAIのタイムを、最後に大きく縮めたのは、コースの1か所にだけ置いた「時速71.4kmまで」という上限でした。その区間で起きていた衝突は、コースのデータと衝突した地点を突き合わせるだけで場所が特定できました。\n前の記事では、レースシミュレータ TORCS のAIで強化学習（SAC）をやめ、単純な制御の規則の定数をCMA-ESで調整する方法に切り替えて、261秒から122...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "TORCSのレースAIで強化学習をやめ、CMA-ESに切り替えた判断と設計",
+      "url": "https://zenn.dev/sean_from_japan/articles/torcs-racing-ai-cma-es",
+      "site": "Zenn(機械学習)",
+      "published": "2026-10-01T12:02:06Z",
+      "description": "6人のチームで、強化学習をやめたのは私だけでした。\nイギリスの大学に交換留学していた2026年の春、IBMがクライアントの授業で、レースシミュレータ TORCS を走るAIを作りました。チームの主軸は深層強化学習（SAC）でした。私は先に一人でSACを試していましたが、3月中旬から4月下旬まで試しても、車は1周を走りきれませんでした。\nそこで私は強化学習をやめ、すでに1周走れる単純な制御の規則の定...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "単語ベクトルの世界を3Dで探索できるツールを作った",
+      "url": "https://zenn.dev/akage/articles/dfaba4e5c8bd26",
+      "site": "Zenn(機械学習)",
+      "published": "2026-10-01T11:00:06Z",
+      "description": "きっかけ\n去年、YouTubeを何気なく見ていたときに、3Blue1Brownの「Transformerの仕組み」の動画に出会いました。\nhttps://youtu.be/wjZofJX0v4M\nその中で、LLMが言葉の意味を、一見ランダムに見える数字の並び（ベクトル）で表現していることが説明されていました。特に印象に残ったのが、「queen − king ≈ woman − man」という例です...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "命題レベル・アテンションと人間による命題精錬を備えた論理IDEの構想",
+      "url": "https://zenn.dev/kisaburo_y/articles/e5834adf138646",
+      "site": "Zenn(機械学習)",
+      "published": "2026-10-01T10:37:47Z",
+      "description": "この記事について\nLLMに論理推論をさせると、それらしいが途中で飛躍した答えが返ってくることがある。逆に昔ながらの記号的AIは厳密だが、「患者」と「対象者」が同じものだと教えるだけでも一苦労だった。この記事は、その中間を狙う一つの設計を考える。推論を「命題グラフ上の遷移」として表し、どの前提を使うかの 選択 はLLMとアテンションに任せ、規則の 適用 は従来のアルゴリズムで厳密に行う。合言葉は「演...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "[深層強化学習] Rust製ReinforceXをPythonから使う — FFI・並列学習・RNDの実装",
+      "url": "https://zenn.dev/kakky_hacker/articles/reinforcex-ffi-parallel-rnd",
+      "site": "Zenn(機械学習)",
+      "published": "2026-10-01T09:55:28Z",
+      "description": "はじめに\n個人開発しているRust製の強化学習フレームワーク、ReinforceXにPythonから学習させるためのFFIを整備したので、今回はその設計と実際に学習させてみた結果を紹介します。\n前回の記事では、RustからGymnasiumを呼び出してDQNを動かしました。今回は呼び出す向きを逆にして、環境はPython、エージェントの学習処理はRustに置いています。\nこれにより、Gymnasi...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "「9月なのにホワイトアウト99%」を追いかけたら、直すべき場所が4層あった",
+      "url": "https://zenn.dev/moshimo_weather/articles/db1f1b7a79981d",
+      "site": "Zenn(機械学習)",
+      "published": "2026-10-01T09:34:18Z",
+      "description": "この記事について\n個人開発している天気予報アプリ「もしも天気」(Cloudflare Workers + D1)で、9月なのに「ホワイトアウト・地吹雪」が全国ほぼ100%で表示され続けるというバグに遭遇した。原因を1つ直しても直しても別の層から同じ症状が再発し、最終的に4層を順番に剥がしてようやく収まった。\n同じ構造のバグが「霧」でも見つかったので、あわせて記録しておく。\n\n アプリの仕組み(前提...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
     {
       "title": "違うバグが同じ曲線を描く ― Week3 第2回:学習率・データ・構造",
       "url": "https://zenn.dev/miyamoto_gt/articles/transformer-0-1-w3-2",
