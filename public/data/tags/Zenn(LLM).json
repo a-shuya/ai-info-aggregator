@@ -1,18 +1,8 @@
 {
   "site": "Zenn(LLM)",
-  "last_updated": "2026-10-02T17:53:07.492398",
-  "total_articles": 6477,
+  "last_updated": "2026-10-02T21:59:44.996889",
+  "total_articles": 6481,
   "articles": [
-    {
-      "title": "Anthropic Batches APIで大量LLMリクエストのコストを50%削減する実装手順",
-      "url": "https://zenn.dev/yunisuta/articles/ai1-dedup-ai-2026-05-18-budgetexceeded-t-bucr8p",
-      "site": "Zenn(LLM)",
-      "published": "2026-10-02T10:36:19Z",
-      "description": "その for await ループ、本当に同期で回す必要があるか？\n5万件のユーザーレビューをカテゴリ分類するバッチジョブを組んだとき、Claude Sonnet に素直に for ループを回したら、完了前から「月換算したらいくらになるんだ」と計算して手が止まった。リアルタイム応答が不要なのに同期 API を使い続けるのは、純粋にコストの無駄だ。\nAnthropic の Message Batche...",
-      "category": "AI・技術",
-      "rss_category": "",
-      "image_url": ""
-    },
     {
       "title": "ロボットは仕事の34％を「できる」――でも人間より安いのは0.3％",
       "url": "https://zenn.dev/humanos_lab/articles/1af369101f7099",
@@ -34,11 +24,51 @@
       "image_url": ""
     },
     {
+      "title": "Claude 5 世代 移行ガイド ― Opus 5 / Sonnet 5 / Fable 5.1 で変わった API とプロンプト",
+      "url": "https://zenn.dev/persimmoq/books/claude-5-migration-guide",
+      "site": "Zenn(LLM)",
+      "published": "2026-10-02T09:16:01Z",
+      "description": "2026 年の Claude は、思考が既定でオン、サンプリングパラメータ廃止、プリフィル廃止、強制ツール呼び出し廃止、拒否の stop_reason、履歴編集の検査（preserved thinking）と、API の前提が大きく変わりました。本書は Opus 4.x / Sonnet 4.x 時代のコードとプロンプトを Claude Opus 5 / Sonnet 5 / Fable 5.1 ...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "Claude Opus 5 / Sonnet 5 に model だけ変えて移行すると壊れる 7 つの理由",
+      "url": "https://zenn.dev/persimmoq/articles/claude-opus-5-migration-400-errors",
+      "site": "Zenn(LLM)",
+      "published": "2026-10-02T09:16:00Z",
+      "description": "2025 年に書いた Claude API のコードを、model=\"claude-opus-5\" や claude-sonnet-5 に変えただけで動かすと、次のどれかが起きます。全部、2026 年 10 月時点の公式移行ガイドに書かれている変更です。この記事はその一覧と最短の直し方で、既存コードを静的に走査して該当箇所を file:line で出すツールも置いておきます。\nhttps://gi...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
       "title": "30B級ローカルLLM、現場で使うならどれ？Qwen3.8・Muse Glimmer・Gemma4を比較【VLM編】",
       "url": "https://zenn.dev/highreso_tech/articles/5a92e2eafb8814",
       "site": "Zenn(LLM)",
       "published": "2026-10-02T09:00:06Z",
       "description": "30B級ローカルLLM、現場で使うならどれ？Qwen3.8・Muse Glimmer・Gemma4を比較【VLM編】\n前回（コーディング編）に続いて、今回は比較テーマを「VLM（図表読み取り）」にして比較した結果を紹介します。\nテキストベースの解釈だけでなく、画像データに対する視覚性能がテーマになります。\n\n 1. 比較テーマ\n普段での活用シーンを想定すると、パワポで作成するような資料やPDFなど...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "Cloudflare の判定モデル Clef は Jev の代わりになるか — 精度・速度・料金・互換性を比べる",
+      "url": "https://zenn.dev/takuh/articles/f8eb30a4d459fa",
+      "site": "Zenn(LLM)",
+      "published": "2026-10-02T08:11:47Z",
+      "description": "2026年10月1日に公開された Cloudflare の発表記事（blog.cloudflare.com）\n\n この記事の確認範囲\nこの記事は、Cloudflare が 2026年10月1日に公開した判定モデル Clef（クレフ） と Clef-flash について、公式ブログ・開発者ドキュメント・Hugging Face のモデルカードを読み、実際に筆者の Mac から動かした結果をまとめたも...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "悩ましい営業メールを判定AI Jev で撃退した。2回聞いて揃ったときだけ機械が決める",
+      "url": "https://zenn.dev/hirajo/articles/jev-inbox-triage",
+      "site": "Zenn(LLM)",
+      "published": "2026-10-02T08:04:37Z",
+      "description": "プレスリリースを出したあと、窓口のアドレスに売り込みとセミナー案内が増えました。\nGmail のフィルタと正規表現で振り分けていましたが、追いつかなくなったので、文意を読む判定を AI に回しました。\nこの記事は、その作りと、線の引き方を実測で決めた記録です。\n調べた時点の結果だけ先に書きます。\n2026年10月2日、受信箱の92通が、仕分けのあと2通になりました（残ったのは請求書と、返信が必要な...",
       "category": "AI・技術",
       "rss_category": "",
       "image_url": ""
@@ -59,6 +89,16 @@
       "site": "Zenn(LLM)",
       "published": "2026-10-02T06:41:14Z",
       "description": "!\nこの記事は「@fukubaka0825っぽい記事をAIに書かせる」実験で、AIに出力させたものです。\n\n今回は、FAR.AI が 2026年2月に arXiv へ公開した論文「Exposing the Systematic Vulnerability of Open-Weight Models to Prefill Attacks」を紹介します。オープンウェイトの LLM に対する Prefi...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "Claude Managed Agents で「毎朝サイトを巡回して日報を書く」エージェントを30分で動かす",
+      "url": "https://zenn.dev/persimmoq/articles/claude-managed-agents-daily-report",
+      "site": "Zenn(LLM)",
+      "published": "2026-10-02T06:39:34Z",
+      "description": "Anthropic の Claude Managed Agents は、エージェントループもサンドボックスも Anthropic 側が運用してくれる「サーバー不要」のエージェント基盤です。この記事では、Python SDK だけで、\n\nWeb ページを巡回して Markdown の日報を書くエージェントを定義し\n1 回動かして成果物を手元に取り出し\n平日 8 時の cron（Deployment）...",
       "category": "AI・技術",
       "rss_category": "",
       "image_url": ""
