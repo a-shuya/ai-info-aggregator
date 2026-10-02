@@ -1,8 +1,168 @@
 {
   "site": "Zenn(LLM)",
-  "last_updated": "2026-10-02T05:52:24.289208",
-  "total_articles": 6458,
+  "last_updated": "2026-10-02T12:09:48.349693",
+  "total_articles": 6474,
   "articles": [
+    {
+      "title": "Anthropic Batches APIで大量LLMリクエストのコストを50%削減する実装手順",
+      "url": "https://zenn.dev/yunisuta/articles/ai1-dedup-ai-2026-05-18-budgetexceeded-t-bucr8p",
+      "site": "Zenn(LLM)",
+      "published": "2026-10-02T10:36:19Z",
+      "description": "その for await ループ、本当に同期で回す必要があるか？\n5万件のユーザーレビューをカテゴリ分類するバッチジョブを組んだとき、Claude Sonnet に素直に for ループを回したら、完了前から「月換算したらいくらになるんだ」と計算して手が止まった。リアルタイム応答が不要なのに同期 API を使い続けるのは、純粋にコストの無駄だ。\nAnthropic の Message Batche...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "ロボットは仕事の34％を「できる」――でも人間より安いのは0.3％",
+      "url": "https://zenn.dev/humanos_lab/articles/1af369101f7099",
+      "site": "Zenn(LLM)",
+      "published": "2026-10-02T10:17:21Z",
+      "description": "「ロボットができる仕事」と「企業がロボットへ置き換える仕事」は、同じではありません。\nAnthropicは2026年9月30日、現在のロボットが米国の仕事をどこまで実行できるかを、約900職種・約1万9,000タスクから分析した研究を公開しました。\n結論は少し意外です。現在のロボットは、物理タスクの74％を何らかの環境では実行できると評価されました。米国の全労働時間に換算すると34％です。一方、人...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "次世代アーキテクチャを先取り！Qwen3.8-Flash-Nextで覗くQwen4の設計思想",
+      "url": "https://zenn.dev/highreso/articles/9ad810772b9438",
+      "site": "Zenn(LLM)",
+      "published": "2026-10-02T09:18:00Z",
+      "description": "唐突に2026年8月26日のこと、Qwenチームがmodelscope及びHugging Faceに「8月27日0:00に新しいモデル Qwen3.8-Flash-Next をリリースするぞ」と告知が行われました。未だQwen3.8シリーズの性能の高さに賑わう中、そこに併記されていた「Qwen4に向けた次世代アーキテクチャ」の記述によって、界隈はさらなる興奮に包まれていました。\n次世代アーキテクチ...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "Claude 5 世代 移行ガイド ― Opus 5 / Sonnet 5 / Fable 5.1 で変わった API とプロンプト",
+      "url": "https://zenn.dev/persimmoq/books/claude-5-migration-guide",
+      "site": "Zenn(LLM)",
+      "published": "2026-10-02T09:16:01Z",
+      "description": "2026 年の Claude は、思考が既定でオン、サンプリングパラメータ廃止、プリフィル廃止、強制ツール呼び出し廃止、拒否の stop_reason、履歴編集の検査（preserved thinking）と、API の前提が大きく変わりました。本書は Opus 4.x / Sonnet 4.x 時代のコードとプロンプトを Claude Opus 5 / Sonnet 5 / Fable 5.1 ...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "Claude Opus 5 / Sonnet 5 に model だけ変えて移行すると壊れる 7 つの理由",
+      "url": "https://zenn.dev/persimmoq/articles/claude-opus-5-migration-400-errors",
+      "site": "Zenn(LLM)",
+      "published": "2026-10-02T09:16:00Z",
+      "description": "2025 年に書いた Claude API のコードを、model=\"claude-opus-5\" や claude-sonnet-5 に変えただけで動かすと、次のどれかが起きます。全部、2026 年 10 月時点の公式移行ガイドに書かれている変更です。この記事はその一覧と最短の直し方で、既存コードを静的に走査して該当箇所を file:line で出すツールも置いておきます。\nhttps://gi...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "30B級ローカルLLM、現場で使うならどれ？Qwen3.8・Muse Glimmer・Gemma4を比較【VLM編】",
+      "url": "https://zenn.dev/highreso_tech/articles/5a92e2eafb8814",
+      "site": "Zenn(LLM)",
+      "published": "2026-10-02T09:00:06Z",
+      "description": "30B級ローカルLLM、現場で使うならどれ？Qwen3.8・Muse Glimmer・Gemma4を比較【VLM編】\n前回（コーディング編）に続いて、今回は比較テーマを「VLM（図表読み取り）」にして比較した結果を紹介します。\nテキストベースの解釈だけでなく、画像データに対する視覚性能がテーマになります。\n\n 1. 比較テーマ\n普段での活用シーンを想定すると、パワポで作成するような資料やPDFなど...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "OpenAIのagentic software factoryを読み解く",
+      "url": "https://zenn.dev/fukubaka0825/articles/5aed205a51dc3a",
+      "site": "Zenn(LLM)",
+      "published": "2026-10-02T07:43:49Z",
+      "description": "!\nこの記事は「@fukubaka0825っぽい記事をAIに書かせる」実験で、AIに出力させたものです。\n\nThe Pragmatic Engineer に、OpenAI の社内を取材した記事「Inside OpenAI's agentic software factory」が出ました。\nhttps://newsletter.pragmaticengineer.com/p/openai-softw...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "オープンウェイトLLMはPrefill攻撃にどこまで弱いのか: FAR.AIの大規模評価を読む",
+      "url": "https://zenn.dev/fukubaka0825/articles/421cf455029bdc",
+      "site": "Zenn(LLM)",
+      "published": "2026-10-02T06:41:14Z",
+      "description": "!\nこの記事は「@fukubaka0825っぽい記事をAIに書かせる」実験で、AIに出力させたものです。\n\n今回は、FAR.AI が 2026年2月に arXiv へ公開した論文「Exposing the Systematic Vulnerability of Open-Weight Models to Prefill Attacks」を紹介します。オープンウェイトの LLM に対する Prefi...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "機械学習に学ぶプログラマーの生存戦略 ― テキスト勾配でアプリ開発を「学習」として読み解く",
+      "url": "https://zenn.dev/teba_eleven/articles/8586aa2092d974",
+      "site": "Zenn(LLM)",
+      "published": "2026-10-02T06:20:43Z",
+      "description": "図表1　テック文化祭2026 by Findy Studentで話したスライドの表紙\n2026年9月26日、「テック文化祭2026 by Findy Student」において、「機械学習に学ぶ プログラマーの生存戦略」と題して登壇した。本稿はその解説である。当日の5分では語り尽くせなかった〝テキスト勾配〟（textual gradient）という考え方について、スライドと解説アニメーションのコマを...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "ReActを実装目線で分解する：AI Agentの状態・停止・評価",
+      "url": "https://zenn.dev/kas_blog/articles/20260509-llm-27-react-agent",
+      "site": "Zenn(LLM)",
+      "published": "2026-10-02T05:40:49Z",
+      "description": "ReAct型のAI Agentを実装するとき、LLMへThought → Action → Observationという形式を出させるだけでは足りません。重要なのは、そのloopの外側をapplicationが所有することです。\n具体的には、Actionを未検証の提案として受け取り、Toolの実行前にschema・権限・承認を検査します。Observationは外部dataとして扱い、状態を更新し...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "AIに実務コードを頼んだら、正解でも次の回には答えが返らなかった",
+      "url": "https://zenn.dev/yukibjj/articles/llm-model-workbench-empty-response",
+      "site": "Zenn(LLM)",
+      "published": "2026-10-02T04:27:20Z",
+      "description": "AIを仕事に使うとき、どのモデルを選ぶか。\nSenteで使うモデルを選ぶために、短い実務課題を作って比べています。今回はDeepSeekとGPTの優劣を最初から決めず、実際に結果が分かれる問題を探しました。\n使ったAPIのモデル名は DeepSeek V4.1 Flash(deepseek/deepseek-v4.1-flash)と GPT-6 Astra(openai/gpt-6-astra)で...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "20年以上研究されたキャッシュの定石を X(旧Twitter)の本番データで上回った — TANREN 第3回",
+      "url": "https://zenn.dev/suzukishoten/articles/c8814048fc022c",
+      "site": "Zenn(LLM)",
+      "published": "2026-10-02T04:10:57Z",
+      "description": "TL;DR\n\n凍結 LLM にコードを書かせて検証器で選抜する進化エンジン「TANREN(鍛錬)」を、キャッシュの追い出しで実験しました。データは X(旧Twitter)が公開している本番キャッシュのアクセス記録です。\n人間が決めたのは「関数の形」と「採点の方法」だけです。ソースコード53 行の中身は、TANREN が LLM に候補を書かせては検証器でふるう、を 40 世代くり返して残したもので...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "Jev互換の判断モデル「d1」をLiquid AIが公開 — 多言語・無料・Jevと同じSDKでそのまま動く",
+      "url": "https://zenn.dev/saishunkansys/articles/8a6c160a713707",
+      "site": "Zenn(LLM)",
+      "published": "2026-10-02T04:04:45Z",
+      "description": "3行まとめ\n\n2026年9月29日、Liquid AI が初の判断モデル「d1」を出しました。Jev と同じ3形式（Yes/No・選択・スコア）で、文章を書かずに判断だけを確率付きで返すやつです\n\nJev と同じ SDK、同じ API 形式。 接続先を変えるだけで、手元の Jev コードがそのまま動きます。しかも今は無料（d1:free）\nLiquid いわく、Hugging Face の Dec...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "Google フォームの自由記述を Claude API で分類する GAS ── 20 件ずつ・id の照合・囲みの偽装・6 分の壁",
+      "url": "https://zenn.dev/suminawa/articles/cf361521854cb8",
+      "site": "Zenn(LLM)",
+      "published": "2026-10-02T01:43:12Z",
+      "description": "Google フォームの自由記述を、Google Apps Script から Claude API に 20 件ずつ渡し、分類・感情・要望・20 字の要約・要対応に分ける実装の記録です。題材は実際の実装（アンケート分析のキット）です。順に書きます。送る前の伏せ字、1 回分のリクエスト、返りの照合、送り直し、6 分の壁、そして API を呼ぶ側です。\n\n 何が困るか\n\n1 件ずつ API を呼ぶと...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "【Google】次世代AIモデル「Gemini 4 Argon」登場！特徴と開発での活用法",
+      "url": "https://zenn.dev/ament3/articles/ai-digest-2026-10-01-0108",
+      "site": "Zenn(LLM)",
+      "published": "2026-10-02T01:23:18Z",
+      "description": "Googleが提供するAIモデル「Gemini」シリーズに、新たなモデルGemini 4 Argonに関する情報が公開され、海外のエンジニアコミュニティやHacker Newsで大きな話題を呼んでいます。\n本記事では、Gemini 4 Argonの概要や今注目されている背景、そしてエンジニアが今すぐ活用するための実践例を解説します。\n\n\n 💡 Gemini 4 Argon とは？（概要と背景）\nG...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "不正アクセスを防ぐためには最低限どうすべきか。元インフラ屋が見る今のシステム防御策とは",
+      "url": "https://zenn.dev/git_dungeon/articles/unauthorized-access-defense-llm",
+      "site": "Zenn(LLM)",
+      "published": "2026-10-02T00:56:52Z",
+      "description": "不正アクセスや情報漏えいの公表を見ると、まず侵入口を知りたくなる。古いライブラリだったのか。VPN機器だったのか。認証情報を盗まれたのか。\nその関心は当然だと思う。ただ、入口を一つ塞ぐだけで十分だったのかというと、そこから先も見ないと判断できない。\n管理者アカウントを一つ奪われたとき、業務データまで読めるのか。ログを消せるのか。バックアップまで削除できるのか。夜中に異常を検知したら、誰がどの権限で...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
     {
       "title": "LLMの答えを機械で検算する — 「間違って書くより、書かない」を3か所で実装した話",
       "url": "https://zenn.dev/horibe/articles/verify-llm-output-mechanically",

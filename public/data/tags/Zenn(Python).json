@@ -1,8 +1,118 @@
 {
   "site": "Zenn(Python)",
-  "last_updated": "2026-10-02T05:52:24.289208",
-  "total_articles": 6809,
+  "last_updated": "2026-10-02T12:09:48.349693",
+  "total_articles": 6820,
   "articles": [
+    {
+      "title": "国際配送の見積りで通貨を混ぜない：Decimal と根拠を残す Python 設計",
+      "url": "https://zenn.dev/hoyeon/articles/ec545b7c383856",
+      "site": "Zenn(Python)",
+      "published": "2026-10-02T08:06:10Z",
+      "description": "日本→韓国の配送を案内する画面では、日本円の品代・国内送料と、韓国ウォンで表示する国際配送費が同じ見積りに現れることがあります。異なる通貨を数字だけで足すと、見積りが再計算できなくなります。本稿は実際の料金表を再現するものではなく、通貨と計算根拠を分けて保存する小さな Python の例です。\n\n まず通貨別のレーンを分ける\n品代 6,200 JPY と日本国内送料 700 JPY は同じ通貨なの...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "「未来のカンニング」を構造で防ぐ：上書きされるメモを学習に使う前に、AIへ「突き合わせ」を頼んだ話",
+      "url": "https://zenn.dev/charge0315/articles/d0e7796b3229d8",
+      "site": "Zenn(Python)",
+      "published": "2026-10-02T06:14:11Z",
+      "description": "バックテストの成績が良すぎるとき、まず疑うのは「過去のデータに、未来の情報が混ざっていないか」です。しかもこの種の間違いは、エラーになりません。コードは普通に動き、検証の成績はむしろ良くなります。\n日本株のAI銘柄スクリーニング＆継続学習端末「ALPHA FORGE（アルファフォージ）」を、Claude Code と二人三脚で個人開発しています。今回は、まだ起きていない事故を、設計の段階で見つけて...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "git diff を Laya に食わせようとしたら Docker + CUDA でハマった【解決済み】",
+      "url": "https://zenn.dev/sharl/articles/826123681894d7",
+      "site": "Zenn(Python)",
+      "published": "2026-10-02T05:00:00Z",
+      "description": "2026/10/02 時点での情報です\n\n Laya とは\nJevで話題の意思決定モデルをローカルで動かす Laya\nhttps://github.com/NandhaKishorM/laya\nJev Decision Index - a Hugging Face Space by multimodalart で #61 of 71\n※2026/10/02現在\n参考\nhttps://pc.watc...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "数字の「珍しさ」を全件列挙で測る：母集団と重複パターンの落とし穴",
+      "url": "https://zenn.dev/shortsmonkey/articles/9739cb75c92758",
+      "site": "Zenn(Python)",
+      "published": "2026-10-02T04:00:54Z",
+      "description": "777777 は珍しく見えます。しかし「この整数そのものが出る確率」と「同じ数字だけでできた整数が出る確率」は違います。さらに、ゾロ目は回文でもあるので、二つの確率を掛ければよいわけでもありません。\n私は数字パターンを調べる RNGDLE.ART の開発に関わっています。本稿では、その実装で採用している有限の母集団と判定条件を題材に、確率の分母、特徴の重複、スコアの説明を整理します。以下の Pyt...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "A2A で他のエージェントを呼んだ結果を、2 行で署名付きの記録にする（公式 Python SDK）",
+      "url": "https://zenn.dev/toshikatsu_oga/articles/7728dfa40e7ef4",
+      "site": "Zenn(Python)",
+      "published": "2026-10-02T03:10:53Z",
+      "description": "自分のエージェントが A2A で他社のエージェントに仕事を頼む。返ってきた答えが後で揉めたとき、「その時点で何が返ってきたか」を示せるものは、手元のログくらいしかありません。ログは自分で書き換えられるので、相手にも第三者にも証拠として弱い。\nこの記事では、A2A の公式 Python SDK（a2a-sdk 1.x）に 2 行足すだけで、送ったすべての呼び出しを 自分の鍵で署名した記録 として残す...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "ローカル画像生成を再現可能にするため、モデル本体以外に何を保存するか",
+      "url": "https://zenn.dev/hirodeath/articles/local-image-generation-reproducibility",
+      "site": "Zenn(Python)",
+      "published": "2026-10-02T02:44:56Z",
+      "description": "ローカルにモデルを置けば、画像生成の条件も手元で管理できます。ただ、後から残った画像とモデル名だけを見ても、どのworkflowを、どの設定と実行環境で動かしたのかは分かりません。\nまず残したいのは、送信したworkflowの本体、モデルを特定する情報、実行環境、そして処理がどの段階まで進んだかです。local-anime-studioの実装を読み、実行記録に何が入り、どの失敗では記録が残らないか...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "5-1_AIで下駄を履いてなんかすごそうなゲームやらツールを作るのではなく、まずは再学習も兼ねて身の丈に合った開発から始めた話",
+      "url": "https://zenn.dev/sonnerie_9695/articles/d37e0f45b35a80",
+      "site": "Zenn(Python)",
+      "published": "2026-10-02T02:28:33Z",
+      "description": "https://zenn.dev/sonnerie_9695/articles/970968af9c7a6d\n前回↑は、FastAPIで、\nGET /health\n↓\nPython関数\n↓\nJSON Response\nという一番小さいAPIを作った。\n\nその中で、\nHTTP Request\n↓\nUvicorn\n↓\nFastAPI\n↓\nPython関数\n↓\nHTTP Response\nという流れを整...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "BigQueryのベクトル検索でZendeskヘルプ記事を案内するチャットボットの作成",
+      "url": "https://zenn.dev/wed_engineering/articles/zendesk_chatbot",
+      "site": "Zenn(Python)",
+      "published": "2026-10-02T02:17:51Z",
+      "description": "はじめに\nWED株式会社でMLエンジニアをしています、ishi2kiです。\nWEDでは、ユーザーの方々からレシートを買い取るアプリ「ONE」を開発運用しています。\n現在、ONEのヘルプセンターはZendeskで運用しており、問い合わせの多くは「既にヘルプ記事に書いてある内容」でした。\nしかし、ヘルプセンターの記事一覧から目的の記事を探すのは手間であり、問い合わせが多く飛んできていました。\nそこで、...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "iPhoneでNext.js 16を動かした — Node.js 24の組み込みとiOS制約への対応",
+      "url": "https://zenn.dev/toouei/articles/b45146b69884bb",
+      "site": "Zenn(Python)",
+      "published": "2026-10-02T01:45:42Z",
+      "description": "Macで書いているNext.jsプロジェクトをiPhoneへ送り、iPhoneのCPUとRAMを使って開発サーバーを起動する実験アプリ「ComputeBridge」を作りました。\n最初はMacとiPhoneでRAMを共有できないかと考えていました。しかし、macOSのプロセスが使うメモリをiPhoneへ透過的に移すことはできません。そこで対象を明示的な処理に絞り、MacをCoordinator、i...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "Jev を触りたかっただけなのに、気づいたら評価 CLI を v0.4.0 まで育てて測定ばっかりしてた話",
+      "url": "https://zenn.dev/spacemarket/articles/5719e8fe03df6f",
+      "site": "Zenn(Python)",
+      "published": "2026-10-02T01:41:52Z",
+      "description": "おはようございます、こんにちは、こんばんは。\nスペースマーケットでWebエンジニアをしています、s0arです。\nやまない雨はないとかじゃなくて今降ってるこの雨がもう耐えられないっつってんの\n今日はドキュメントを CI でチェックする CLI を作った話をします。\n\n この記事 is 何\nTypeSafe が出している判定用の API（モデル名は Jev）を使って、typesafe-eval という...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "Claudeの統合判断をプラグイン平均正解率で自動検証するシステムを実装する",
+      "url": "https://zenn.dev/sktt_panda/articles/rakuscan-claude-verdict-accuracy-verification",
+      "site": "Zenn(Python)",
+      "published": "2026-10-02T01:07:12Z",
+      "description": "3行まとめ\n\nRakuScan（自分用の日本株スクリーニングツール）は、複数の分析プラグインの判定結果をClaudeが統合してBUY/HOLD/SELLの最終判断を出す設計。だが「Claudeが複数の判定を混ぜること自体に価値があるのか」を確認する手段が最初はなかったので、専用の自動検証システムを作った\nシグナル発行後+1/3/5/10/20営業日のリターンをevaluate.pyが自動記録し、週...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
     {
       "title": "ローソク足パターンでFXの勝敗は見抜ける？134取引をブラインド検証",
       "url": "https://zenn.dev/hiro_algo/articles/fx-candlestick-pattern-blind-test",
