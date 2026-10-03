@@ -1,14 +1,64 @@
 {
   "site": "Zenn(Python)",
-  "last_updated": "2026-10-03T11:57:55.059509",
-  "total_articles": 6836,
+  "last_updated": "2026-10-03T16:09:27.925097",
+  "total_articles": 6841,
   "articles": [
+    {
+      "title": "逆運動学をPythonで実装する｜「手先をここに置きたい」から関節角度を求める",
+      "url": "https://zenn.dev/maru1228/articles/physical-ai-inverse-kinematics-python",
+      "site": "Zenn(Python)",
+      "published": "2026-10-03T14:14:40Z",
+      "description": "!\nこの記事は自サイト 逆運動学をPythonで実装する｜「手先をここに置きたい」から関節角度を求める の再掲（クロス投稿）です。図をインタラクティブに動かせる版は元記事でどうぞ。\n\n順運動学では「関節角度→手先位置」を三角関数だけで計算しました。実際のロボット制御で欲しいのはたいてい逆方向、「この位置に手先を置きたい、関節を何度にすればいい？」です。これが**逆運動学（Inverse Kinem...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "日本語の名前を一括置換してはいけない — 敬称で置換スコープを切った話",
+      "url": "https://zenn.dev/shinsei99/articles/name-substitution-misfires",
+      "site": "Zenn(Python)",
+      "published": "2026-10-03T11:04:58Z",
+      "description": "社内の書類を索引にして質問に答えるAIエージェントを運用しています。\n契約書・報告書・業務マニュアルを全文検索し、根拠つきで答える、いわゆる社内RAGです。\nここに要件が来ました。\n\nすでに退職した担当者の名前を、回答に出さないでほしい。\n\n資料には当時の担当者名がそのまま書かれています。だから「この物件の担当は誰？」と聞くと、\n退職者の名前が、あたかも現在の担当のように返ってきます。\nやることは...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "Xの記事告知でリンクを返信にぶら下げたら、URLの到達率は中央値29%だった（API v2で31件実測）",
+      "url": "https://zenn.dev/matsutake_prgrm/articles/link-in-reply-reaches-only-29-percent",
+      "site": "Zenn(Python)",
+      "published": "2026-10-03T09:00:06Z",
+      "description": "自分のブログや Zenn の記事を X（Twitter）で告知するために、Python で自動投稿ツールを作って運用しています。告知の出し方で1つ迷ったところがあって、半年運用して数字が出たので書きます。\n\n 本文に URL を混ぜず、返信にぶら下げる設計にした\n# 本文を投稿し、2投稿目以降とURLを順に返信としてぶら下げる。\n# リンクを本文に混ぜず末尾の返信に分けるのは、アカウント全体のリン...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
     {
       "title": "MX切替の影響は、宛先ではなくヘッダで数える",
       "url": "https://zenn.dev/miyakona/articles/mail-mx-cutover-header-audit",
       "site": "Zenn(Python)",
       "published": "2026-10-03T05:50:13Z",
       "description": "あるドメインのメール受信先を、共用ホスティングから別のメールサービスへ移すことになりました。移行先の利用者やグループは先に用意できますが、外部の送信サーバーが参照する配送先を変えるのはDNSのMXレコードです。MXは、宛先ドメインのメールをどのサーバーへ配送するかを示します。\n切替前の手順書には、管理者アドレス宛の通知について、こう書いていました。\n\nこの転送が必要なのは切替までです。切替後は移行...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "Cloud Scheduler × Cloud Run 実践パターン ─ 冪等バッチ・エラー通知・ジョブチェーンの完全ガイド",
+      "url": "https://zenn.dev/correlate_dev/articles/cloud-scheduler-patterns",
+      "site": "Zenn(Python)",
+      "published": "2026-10-03T02:34:50Z",
+      "description": "はじめに\n「毎朝6時にデータを同期したい」「月初だけ集計バッチを走らせたい」──GCPでバッチ処理を組む場面で必ず登場するのが Cloud Scheduler です。\nサーバーに crontab を書く方法と比べると、Cloud Scheduler には大きな優位点があります。ジョブの管理・確認・手動実行がコンソールやCLIから行えること、Cloud Monitoring との統合でジョブの成否が...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "AIのFX戦略をフォワードでも通用させるには？1000戦略の選び方を変えて検証",
+      "url": "https://zenn.dev/hiro_algo/articles/ai-fx-strategy-robust-selection-forward",
+      "site": "Zenn(Python)",
+      "published": "2026-10-03T02:16:15Z",
+      "description": "前回は、AIにUSDJPYの戦略を1000個作らせました。\n2023〜2024年のバックテスト1位は +1,886.2 pips。ところが、同じ条件を2025〜2026年へ適用すると -29.8 pips でした。\n原因として考えられるのは、1000個の中から「過去の利益が最大だった1個」を選んだことです。\nそこで今回は、利益1位を選ぶのをやめます。年を分け、コストを悪化させ、周辺パラメータも確認...",
       "category": "開発",
       "rss_category": "",
       "image_url": ""
