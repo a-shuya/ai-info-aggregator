@@ -1,14 +1,84 @@
 {
   "site": "Zenn(LLM)",
-  "last_updated": "2026-10-03T06:28:29.923020",
-  "total_articles": 6493,
+  "last_updated": "2026-10-03T11:57:55.059509",
+  "total_articles": 6498,
   "articles": [
+    {
+      "title": "Magnitudeの「llama.cpp比2倍」を整理する — 16GB Macでは逆だった",
+      "url": "https://zenn.dev/amu_lab/articles/magnitude-vs-llamacpp-16gb-mac-benchmark",
+      "site": "Zenn(LLM)",
+      "published": "2026-10-03T09:17:05Z",
+      "description": "この記事で分かること\n「llama.cpp より最大2倍速い、なら乗り換えたほうがいいのか」。9月30日に公開された推論エンジン Magnitude を見て、そう思った人は多いはずです。\n結論から書きます。16GBのM5 Macで同じGGUFを動かしたら、llama.cpp のほうが速かった。\n\n\n\n\nMagnitude 0.2.4\nllama.cpp b8680\nllama.cpp 最新（b11...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "ローカルLLMにチャートを読ませたら、どの銘柄も同じ答えだった：判断の前に「観察」を聞いて切り分ける",
+      "url": "https://zenn.dev/charge0315/articles/403143d306c79b",
+      "site": "Zenn(LLM)",
+      "published": "2026-10-03T08:09:51Z",
+      "description": "形のまったく違う2つのチャートをLLMに読ませたら、同じ答えが返ってきました。「横ばい、中立、確度40」。\n日本株のAI銘柄スクリーニング＆継続学習端末「ALPHA FORGE（アルファフォージ）」を、Claude Code と二人三脚で個人開発しています。今回は、手元のPCで動かしたマルチモーダルLLMにチャート画像を読ませた実験と、そこから撤退するまでの話です。\n!\n【要約：この記事で伝えたい...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "生成AIを理解し、問いを立て、運用するための4冊",
+      "url": "https://zenn.dev/infra_ojisan/articles/books_for_llm_recommend",
+      "site": "Zenn(LLM)",
+      "published": "2026-10-03T07:35:58Z",
+      "description": "はじめに\n僕は生成AIに対して懐疑的で慎重な立ち位置でした。「だってただのチャットでしょ？」と。とはいえ1年半使い続ける中で「まぁ便利かな」と思うようになったのは去年の夏くらい、去年の冬には「これ（AIのできることをしゃぶり尽くす）を最後の仕事にしよう」と覚悟を決めて原理から学ぶことにしました。いろんな書籍を読み、これは後輩にも読ませたいと思った書籍を紹介します。\nアフィリエイトは使用していません...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "権限昇格の経路分析を、Prologで推論し、LLMに読ませ、ファジーで順位づけする",
+      "url": "https://zenn.dev/lafine/articles/b43b5d1468fa11",
+      "site": "Zenn(LLM)",
+      "published": "2026-10-03T07:22:41Z",
+      "description": "「このユーザーは、どこまで権限を上げられるのか」を、端末の設定から洗い出してくれる分析ツールPathScopeを作りました。MacとLinuxの端末で動いて、一般のユーザーからrootや機密データに届く道を「経路」として出し、どこから直すと効果が大きいかまで教えてくれます。使い方の紹介は、Noteの記事にまとめました。\nこの記事では、その中身を書きます。推論にはPrologを、設定ファイルの読み取...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "RAGを支える6つの技術を調べてみた",
+      "url": "https://zenn.dev/bigshine/articles/rag-fundamentals",
+      "site": "Zenn(LLM)",
+      "published": "2026-10-03T05:24:51Z",
+      "description": "最近何かと話題のRAGという技術について調べ直した記事です!\n\n 概要\n\nRAG(Retrieval-Augmented Generation)は、LLMに答えさせる前に関連資料を検索させる仕組み\nこの記事では、RAGを支える技術を「チャンク分割」「埋め込み」「ベクトル検索」「ハイブリッド検索」「マルチホップ/Agentic RAG」「評価」の6つに分けて、それぞれ何をしていて何が課題なのかを整理...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
     {
       "title": "AI-OCRで「全部いっぺんに読ませる」のをやめたら、あとで使えて漏れチェックもしやすくなった",
       "url": "https://zenn.dev/polargiver/articles/kamiscan-ocr-template-design",
       "site": "Zenn(LLM)",
       "published": "2026-10-03T03:05:11Z",
       "description": "「氏名、ふりがな、メール」と項目名を書いて渡した。返ってきた表に、メールが無い。\n申込書をVLM（画像を入力できるLLM）に1枚まるごと渡して、読む列まで指定したのに、こうなります。しかも毎回、消える列が違います。\n結論から書くと、この方式は捨てました。行き着いたのは、帳票OCRの世界に何十年も前からある古い設計です。そして効いたのは精度より、出力の形が毎回同じになることでした。あとで使いやすく、...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "ドキュメントを読んでいて、どの瞬間でもすぐ AI とチャットできるリーダーを作った",
+      "url": "https://zenn.dev/ruri/articles/ubiqdoc-ai-chat-reader",
+      "site": "Zenn(LLM)",
+      "published": "2026-10-03T02:36:20Z",
+      "description": "TL;DR\n\nローカルの HTML 文書をブラウザで開き、分からない語句をドラッグすると、その場に小さなチャット窓が開きます。答えはポップオーバー・子セクション・リンクのどれかの形で、文書の本文に直接書き込まれます。前の答えを待たずに、次の語句をいくつでも並行して聞けます\n作った理由は、読んでいる自分の意識を途切れさせないためです。ターミナルに移って質問を打ち、前の返答を待っているうちに、さっきま...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "JevK5 v0.3実機検証｜Jev Decision Index・JevBench評価と全判断モデル比較マスター表",
+      "url": "https://zenn.dev/null_teck/articles/jevk5-benchmark-decision-index",
+      "site": "Zenn(LLM)",
+      "published": "2026-10-03T01:20:12Z",
+      "description": "!\n先に結論を言います\n\n\nJevK5 v0.3（4B）は現行の小型Jevライクオープンモデルではトップクラス:\nベンチマーク比較サイト「Benchmark Heaven」において JevK5 v0.3 4B は 総合 7 位 にランクインし、同規模の Imajev-4B（10位）を明確に突き放しました。当環境での実機検証でも、その極めて高い実力が裏付けられています。\n\n8B クラス（Lev-8B...",
       "category": "AI・技術",
       "rss_category": "",
       "image_url": ""
@@ -44,21 +114,21 @@
       "image_url": ""
     },
     {
-      "title": "GPT-6のプロンプトキャッシュを壊さない設計──固定プレフィックスと可変コンテキストを分離する",
-      "url": "https://zenn.dev/jinsights/articles/59d4ca6ece6a30",
+      "title": "Claude Code のトークンは96.3%が「読み直し」だった — 効いた対策と、効果の正しい測り方",
+      "url": "https://zenn.dev/kaz_hira/articles/claude-code-cache-read-measured",
       "site": "Zenn(LLM)",
-      "published": "2026-10-02T23:34:07Z",
-      "description": "長時間動くAIエージェントでは、同じシステム指示、ツール定義、参照情報を毎回送ることがあります。モデルの単価だけを下げても、この共有部分を毎回処理すれば、待ち時間と費用は積み上がります。\nOpenAIは2026年9月22日、GPT-6向けプロンプトキャッシュの改善と、キャッシュヒット率を監視・診断する機能を発表しました。本稿では公式情報を起点に、キャッシュを壊しにくいコンテキスト設計と、運用時に見...",
+      "published": "2026-10-03T00:19:35Z",
+      "description": "定額プランなのに週の上限に当たる。あるいは API 請求が思ったより伸びている。\nそんなとき、「何にトークンを使ったか」を1行で説明できますか?\n私はできませんでした。だから測りました。結果はかなり意外で、そして自分が疑っていた犯人は全員シロでした。\n先に結論を書きます。私の消費の **96.3% は、自分が書かせた文章ではなく「過去の文脈の読み直し」**でした。\nそして5週間後、運用を見直してか...",
       "category": "AI・技術",
       "rss_category": "",
       "image_url": ""
     },
     {
-      "title": "OpenAIの",
-      "url": "https://zenn.dev/bambampurin/articles/2026-09-08-tech-daily",
+      "title": "GPT-6のプロンプトキャッシュを壊さない設計──固定プレフィックスと可変コンテキストを分離する",
+      "url": "https://zenn.dev/jinsights/articles/59d4ca6ece6a30",
       "site": "Zenn(LLM)",
-      "published": "2026-10-02T22:31:47Z",
-      "description": "2026年の開発基盤で今すぐ対応すべき3つの大激変\n\n この記事で分かること\n\nLLM単体の精度推移から「業務特化型AIエージェント」および「具身知能」へ主役が交代した背景\nOpenAIによるAstral買収がPythonツールチェーンと開発体験に与える決定的な影響\nWebネイティブ化するMCPの動向と Next.jsで即座に対応すべき緊急RCE脆弱性の詳細\n\n\n LLM推論競争の終焉と「AIエー...",
+      "published": "2026-10-02T23:34:07Z",
+      "description": "長時間動くAIエージェントでは、同じシステム指示、ツール定義、参照情報を毎回送ることがあります。モデルの単価だけを下げても、この共有部分を毎回処理すれば、待ち時間と費用は積み上がります。\nOpenAIは2026年9月22日、GPT-6向けプロンプトキャッシュの改善と、キャッシュヒット率を監視・診断する機能を発表しました。本稿では公式情報を起点に、キャッシュを壊しにくいコンテキスト設計と、運用時に見...",
       "category": "AI・技術",
       "rss_category": "",
       "image_url": ""
@@ -149,26 +219,6 @@
       "site": "Zenn(LLM)",
       "published": "2026-10-02T09:18:00Z",
       "description": "唐突に2026年8月26日のこと、Qwenチームがmodelscope及びHugging Faceに「8月27日0:00に新しいモデル Qwen3.8-Flash-Next をリリースするぞ」と告知が行われました。未だQwen3.8シリーズの性能の高さに賑わう中、そこに併記されていた「Qwen4に向けた次世代アーキテクチャ」の記述によって、界隈はさらなる興奮に包まれていました。\n次世代アーキテクチ...",
-      "category": "AI・技術",
-      "rss_category": "",
-      "image_url": ""
-    },
-    {
-      "title": "Claude 5 世代 移行ガイド ― Opus 5 / Sonnet 5 / Fable 5.1 で変わった API とプロンプト",
-      "url": "https://zenn.dev/persimmoq/books/claude-5-migration-guide",
-      "site": "Zenn(LLM)",
-      "published": "2026-10-02T09:16:01Z",
-      "description": "2026 年の Claude は、思考が既定でオン、サンプリングパラメータ廃止、プリフィル廃止、強制ツール呼び出し廃止、拒否の stop_reason、履歴編集の検査（preserved thinking）と、API の前提が大きく変わりました。本書は Opus 4.x / Sonnet 4.x 時代のコードとプロンプトを Claude Opus 5 / Sonnet 5 / Fable 5.1 ...",
-      "category": "AI・技術",
-      "rss_category": "",
-      "image_url": ""
-    },
-    {
-      "title": "Claude Opus 5 / Sonnet 5 に model だけ変えて移行すると壊れる 7 つの理由",
-      "url": "https://zenn.dev/persimmoq/articles/claude-opus-5-migration-400-errors",
-      "site": "Zenn(LLM)",
-      "published": "2026-10-02T09:16:00Z",
-      "description": "2025 年に書いた Claude API のコードを、model=\"claude-opus-5\" や claude-sonnet-5 に変えただけで動かすと、次のどれかが起きます。全部、2026 年 10 月時点の公式移行ガイドに書かれている変更です。この記事はその一覧と最短の直し方で、既存コードを静的に走査して該当箇所を file:line で出すツールも置いておきます。\nhttps://gi...",
       "category": "AI・技術",
       "rss_category": "",
       "image_url": ""
