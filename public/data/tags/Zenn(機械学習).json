@@ -1,8 +1,18 @@
 {
   "site": "Zenn(機械学習)",
-  "last_updated": "2026-10-03T19:13:54.886527",
+  "last_updated": "2026-10-03T22:12:58.000984",
   "total_articles": 1959,
   "articles": [
+    {
+      "title": "Sparsely-Gated MoEを実装目線で読む：Router・Top-k・負荷分散",
+      "url": "https://zenn.dev/kas_blog/articles/20260509-llm-28-moe",
+      "site": "Zenn(機械学習)",
+      "published": "2026-10-03T14:44:36Z",
+      "description": "MoE（Mixture of Experts：複数のExpertから一部を選んで実行する構造）は、単に「巨大なのに軽いモデル」ではありません。実装目線では、次の処理を持つ疎なFFN（Feed-Forward Network：各tokenを個別に変換する層）です。\n\nRouterがtokenごとにExpertのscoreを計算する\nTop-kで少数のExpertを選ぶ\ntokenを選択先へ並べ替えて...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
     {
       "title": "Stable Diffusionからの概念消去㉜: ETC（論文）",
       "url": "https://zenn.dev/fmuuly/articles/1ae66f419ad19c",
@@ -189,16 +199,6 @@
       "site": "Zenn(機械学習)",
       "published": "2026-10-01T03:10:32Z",
       "description": "はじめに\n前回は、壊す前に「正常とは何か」を数値で定義した。4つの物差しを用意し、基準となるモデルを固定した。\n 4.174  ln(V)        何も知らない\n 3.30   ユニグラム    文字の頻度のみ覚えた\n 2.24   基準の到達点  文脈依存の規則を学んでいる\n今回から実際に壊す。扱うのは3つである。\n\n\n\n壊し方\n何を変えるか\n\n\n\n\n#1 学習率過大\n\nlr を100倍・...",
-      "category": "AI・技術",
-      "rss_category": "",
-      "image_url": ""
-    },
-    {
-      "title": "学習が「うまくいっている」とは何か ― Week3 第1回:4つの物差し",
-      "url": "https://zenn.dev/miyamoto_gt/articles/transformer-0-1-w3-1",
-      "site": "Zenn(機械学習)",
-      "published": "2026-10-01T03:10:31Z",
-      "description": "はじめに\n前回、自作のTransformer(GPTMini)をtiny_shakespeareで学習させ、val lossを1.83まで下げた。動くものはできた。ただ、こんな疑問が残った。\nもしどこかにバグがあったとして、私はそれに気づけるのか。\nlossが下がっていれば正常と判断していいのか。下がらなかったとき、原因をどう絞り込むのか。前回うまくいったのは「たまたま間違えなかった」だけかもしれ...",
       "category": "AI・技術",
       "rss_category": "",
       "image_url": ""
