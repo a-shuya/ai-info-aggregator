@@ -1,8 +1,98 @@
 {
   "site": "Zenn(Python)",
-  "last_updated": "2026-10-02T21:59:44.996889",
-  "total_articles": 6821,
+  "last_updated": "2026-10-03T01:04:54.016278",
+  "total_articles": 6830,
   "articles": [
+    {
+      "title": "Claude Codeと作る競馬予測システム開発記(8) オーバーレイ探索編",
+      "url": "https://zenn.dev/teruyotasaki/articles/horse-racing-ml-dev-08-overlay-search",
+      "site": "Zenn(Python)",
+      "published": "2026-10-03T00:03:00Z",
+      "description": "はじめに\n前回は、オッズの時系列データを使って市場の動きを観測する取り組みについて書きました。\n第8回となる今回は、そもそも「勝てる馬券」とは何なのか、という根本に戻って「オーバーレイ」という考え方と、ここまでの検証を踏まえた現実的な探索の落とし所について書きます。\n\n オーバーレイとは\nオーバーレイとは、期待値が1を超えている状態、つまり「実力に対して市場から過小評価されている（オッズが甘い）馬...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "str | None が TypeError になる。TS のユニオン型を Python に持ち込むときのバージョンの壁",
+      "url": "https://zenn.dev/gaku_wtnb/articles/ed2a4a951b06fd",
+      "site": "Zenn(Python)",
+      "published": "2026-10-03T00:00:05Z",
+      "description": "TS の string | null の感覚で Python の型ヒントを書いたら、実行した瞬間に落ちました。\nTypeError: unsupported operand type(s) for |: 'type' and 'type'\n型ヒントを書いただけなのに、なぜ実行時エラーになるのか。ここには TS と Python の決定的な違いが 2 つ隠れています。\n\n 再現コード\ndef fin...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "配布zipは検査に落ちても配布フォルダに残っていた。別の場所で作って、全部通ってから差し替える",
+      "url": "https://zenn.dev/kimura0314/articles/dist-staging-build-zip-fixed-mtime",
+      "site": "Zenn(Python)",
+      "published": "2026-10-02T23:00:05Z",
+      "description": "GAS の配布物（LP の HTML 1枚と、コード一式の zip）を Python のスクリプトで作っていました。ある日、検査が NG を出したのに、壊れた zip が配布フォルダにそのまま置かれていることに気づきました。\n原因はスクリプトの順番です。作る → 配布フォルダに書く → 検査する の順だったので、検査が落ちた時点で、もう配る場所に置かれていました。\n結論は2つです。\n\n配布フォルダ...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "写経プラネタリウムをカスタマイズしてみた⑤（いろいろ細々修正編）",
+      "url": "https://zenn.dev/punita_mama/articles/972c588943e897",
+      "site": "Zenn(Python)",
+      "published": "2026-10-02T16:49:45Z",
+      "description": "はじめに - 日経ソフトウエアの休刊に寄せて\nご無沙汰している間に、この写経元プラネタリウムを掲載していた「日経ソフトウエア」が2026年11月号をもって休刊してしまいました涙。\nこれまで数々の言語をこの雑誌で学んできましたし、今回久々のプログラミング熱に火をつけてくれたのもこの「日経ソフトウエア」だったので、休刊は本当に残念です。バイブコーディングが標準となりつつある今、時流に抗えなかったという...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "エンジニア視点で語る！Pythonで学ぶマクロ経済学入門 68",
+      "url": "https://zenn.dev/maszkot/articles/563b66108af3ab",
+      "site": "Zenn(Python)",
+      "published": "2026-10-02T16:20:43Z",
+      "description": "https://qiita.com/maskot1977/items/cb014c2be65c739b645f\nDJミオ：こんばんは！ ラジオ教育番組「エンジニア視点で語る！Pythonで学ぶマクロ経済学入門」、ナビゲーターのDJミオです。\nDJレン：こんばんは、DJレンです。今日は第68回「制度の穴が社会を揺らすとき ― 少数の影響が拡大する構造と持続可能な再設計」を、エンジニアにもわかりやすく...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "Foundry の評価機能をフル活用して、エージェントを「評価駆動」で育てよう！（Rubric・Optimizer・継続評価）",
+      "url": "https://zenn.dev/nomhiro/articles/foundry-eval-driven-agent-dev",
+      "site": "Zenn(Python)",
+      "published": "2026-10-02T13:47:50Z",
+      "description": "!\n本記事の内容は 2026年9月26日時点 の情報に基づいています。Rubric Evaluator、Agent Optimizer、合成データ生成、Cluster analysis、継続評価まわりは preview です。API や画面は変わる可能性があります。\n\n\n はじめに\nエージェントは、作って動いたら終わり、ではないですよね。実際に業務で使い続けていると、モデルが新しくなったり、業務ル...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "Grokと作った業務効率化オブジェクト指向RPGでOOPがスッキリわかった話【コード付き】",
+      "url": "https://zenn.dev/zenn_aqua/articles/9900ed665692af",
+      "site": "Zenn(Python)",
+      "published": "2026-10-02T13:10:34Z",
+      "description": "1.アクアがオブジェクト指向をバラバラに使ってミスしまくった理由（リアル裏話）\n8月でクラス、9月で継承を覚えた。\nでも実際の業務では「クラス単体」「継承単体」ではなく、\nタスク追加・完了・共有・ご褒美・レポートが全部つながっていないと使えなかった。\n部品は作れたのに、全体として動かない。\n「オブジェクト指向って、結局どう組み合わせるの？」で止まっていた頃の話。\n\n 2.オブジェクト指向の基本をお...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "Raspberry Piでuvを使ったPython開発環境を構築する",
+      "url": "https://zenn.dev/ryuchama/articles/eaf53400ffbaad",
+      "site": "Zenn(Python)",
+      "published": "2026-10-02T12:13:29Z",
+      "description": "はじめに\nこれまでの記事では、Raspberry Pi OSのインストールから始めて、SSH接続、Tailscale、VS Code Remote - SSHの設定まで行いました。\nここまでで、MacのVS Codeからラズパイに接続し、ラズパイ上のファイルを直接編集できるようになりました。\n今回は、ラズパイをPythonの開発環境として使える状態にしていきます。\nRaspberry Pi OSに...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "「件数が足りているか」で分岐してはいけない。フォールバックが常に top_k を埋めていた",
+      "url": "https://zenn.dev/shinsei99/articles/search-fallback-fills-topk",
+      "site": "Zenn(Python)",
+      "published": "2026-10-02T11:02:36Z",
+      "description": "社内資料を横断して答えるAIエージェントに、法令・ガイドライン・判例・実務書の索引を足しました。\n既存の社内書類は 4,291 文書。ここに 262 文書・約 33,000 チャンクを追加し、\n索引は合計 65,349 チャンクになりました。\n設計はこうです。\n\nまず社内書類だけで引く\n\n社内書類では答えが薄いときだけ、法令・判例・書籍まで広げる\n\n「最初から全部見る」と、業務の質問に一般論が混ざ...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
     {
       "title": "AIのおかげで、ずっと作れずにいた「自分専用の投資判断ツール」を作れた話",
       "url": "https://zenn.dev/yskms/articles/f4c6b973acaa62",
@@ -19,6 +109,16 @@
       "site": "Zenn(Python)",
       "published": "2026-10-02T08:06:10Z",
       "description": "日本→韓国の配送を案内する画面では、日本円の品代・国内送料と、韓国ウォンで表示する国際配送費が同じ見積りに現れることがあります。異なる通貨を数字だけで足すと、見積りが再計算できなくなります。本稿は実際の料金表を再現するものではなく、通貨と計算根拠を分けて保存する小さな Python の例です。\n\n まず通貨別のレーンを分ける\n品代 6,200 JPY と日本国内送料 700 JPY は同じ通貨なの...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "Claude Managed Agents で「毎朝サイトを巡回して日報を書く」エージェントを30分で動かす",
+      "url": "https://zenn.dev/persimmoq/articles/claude-managed-agents-daily-report",
+      "site": "Zenn(Python)",
+      "published": "2026-10-02T06:39:34Z",
+      "description": "Anthropic の Claude Managed Agents は、エージェントループもサンドボックスも Anthropic 側が運用してくれる「サーバー不要」のエージェント基盤です。この記事では、Python SDK だけで、\n\nWeb ページを巡回して Markdown の日報を書くエージェントを定義し\n1 回動かして成果物を手元に取り出し\n平日 8 時の cron（Deployment）...",
       "category": "開発",
       "rss_category": "",
       "image_url": ""
@@ -79,16 +179,6 @@
       "site": "Zenn(Python)",
       "published": "2026-10-02T02:28:33Z",
       "description": "https://zenn.dev/sonnerie_9695/articles/970968af9c7a6d\n前回↑は、FastAPIで、\nGET /health\n↓\nPython関数\n↓\nJSON Response\nという一番小さいAPIを作った。\n\nその中で、\nHTTP Request\n↓\nUvicorn\n↓\nFastAPI\n↓\nPython関数\n↓\nHTTP Response\nという流れを整...",
-      "category": "開発",
-      "rss_category": "",
-      "image_url": ""
-    },
-    {
-      "title": "BigQueryのベクトル検索でZendeskヘルプ記事を案内するチャットボットの作成",
-      "url": "https://zenn.dev/wed_engineering/articles/zendesk_chatbot",
-      "site": "Zenn(Python)",
-      "published": "2026-10-02T02:17:51Z",
-      "description": "はじめに\nWED株式会社でMLエンジニアをしています、ishi2kiです。\nWEDでは、ユーザーの方々からレシートを買い取るアプリ「ONE」を開発運用しています。\n現在、ONEのヘルプセンターはZendeskで運用しており、問い合わせの多くは「既にヘルプ記事に書いてある内容」でした。\nしかし、ヘルプセンターの記事一覧から目的の記事を探すのは手間であり、問い合わせが多く飛んできていました。\nそこで、...",
       "category": "開発",
       "rss_category": "",
       "image_url": ""
