@@ -1,8 +1,188 @@
 {
   "site": "Zenn(AI)",
-  "last_updated": "2026-10-03T01:04:54.016278",
-  "total_articles": 14421,
+  "last_updated": "2026-10-03T06:28:29.923020",
+  "total_articles": 14432,
   "articles": [
+    {
+      "title": "MCPがセッションIDを捨ててステートレスになる2026-07-28仕様",
+      "url": "https://zenn.dev/okssusucha/articles/20260728-mcp-stateless-2026-07-28",
+      "site": "Zenn(AI)",
+      "published": "2026-10-03T04:40:02Z",
+      "description": "リモートのMCPサーバを2台以上に並べた瞬間に踏む地雷がある。1台目が発行したセッションIDを、ロードバランサの気まぐれで振り分けられた2台目が知らない、という問題だ。これを避けるために、みんなスティッキーセッションを効かせたり、共有のセッションストアを噛ませたり、ゲートウェイでリクエストボディを覗いて振り分けたりしてきた。本来HTTPの世界がとうに卒業したはずの苦労を、AIエージェント界隈は2年...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "AI Security Labの実験環境 ― OllamaとPythonでLLMの動作を実験する",
+      "url": "https://zenn.dev/kondonator/articles/9d3f7195895d1c",
+      "site": "Zenn(AI)",
+      "published": "2026-10-03T04:26:34Z",
+      "description": "はじめに\n前回の記事では、AI Security Labを始める理由と、このLabで何を明らかにしたいのかについて説明しました。\nAI Security Labを始める ― AIに、どこまで仕事を任せられるのか\n\nAIに、どこまで仕事を任せてよいのか？\n\nこの問いについて、AIを実際に動かし、意図的に条件を変えながら実験していきます。\nそのためには、実験ごとに環境が変わってしまうと、結果を比較しに...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "AIでホイッスルを作る",
+      "url": "https://zenn.dev/polygoro/articles/010-ai-whistle",
+      "site": "Zenn(AI)",
+      "published": "2026-10-03T04:19:51Z",
+      "description": "こんにちは、ポリ五郎です。\nAIモデリングの第3弾です。今回は、大音量のホイッスル(防災笛)をAIに作ってもらいました。\n\n実際、鳴るの?\nめちゃくちゃ大音量で鳴ります。実際に3Dプリントしてみて、確認済みです。\n笛は、外から見ても良し悪しがまったく分からない部品です。音を決めるのは、中にある息の通り道と、その先にあるエッジの位置です。画像を見るのが苦手なAIが、見えない寸法をどうやって確かめるの...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "ループエンジニアリング、自分のループは\"育つ\"側になってる？ ── 輪を全部数えるツールを作った",
+      "url": "https://zenn.dev/motimotinotch/articles/52f169318e5e85",
+      "site": "Zenn(AI)",
+      "published": "2026-10-03T03:35:51Z",
+      "description": "前回の記事「ループエンジニアリングには2種類ある」では、エージェントに回させるループを2つに分けた。\n\n\n直すループ: 目標は固定。目標とのズレを測って、行動を直す（テストを通す、lint を直す）。\n\n育つループ: 内側のループの結果を使って、目標そのものを書き換える外側のループがある。組織学習でいうダブルループ。\n\nそして、育つループのつもりで直すループの作りのまま回すと、無難な案の周りへ静か...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "Jevがポケモンをクリアした。でも裏にClaudeがいた──AIも「上司」と「現場担当」に分かれ始めた",
+      "url": "https://zenn.dev/yuruconsa/articles/e980e6670de72d",
+      "site": "Zenn(AI)",
+      "published": "2026-10-03T03:22:28Z",
+      "description": "少し前に、JevというAIについて書きました。\n文章を生成するAIではなく、「この中ならどれ？」 を高速に判断するAIです。\n例えば、\nこの問い合わせは\n\nA. 営業\nB. サポート\nC. 請求\nD. その他\n\nのどれ？\nみたいな判断。\nLLMに比べると、かなり地味です。\n文章を書いてくれるわけでもない。\nコードを書いてくれるわけでもない。\n人生相談にも乗ってくれない。\n選ぶ。\n判断する。\n点数を...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "AI時代の個人開発でGit Flowを考え直した",
+      "url": "https://zenn.dev/hontsuke/articles/git-series-05",
+      "site": "Zenn(AI)",
+      "published": "2026-10-03T03:04:19Z",
+      "description": "!\n連載「Git勉強しなきゃを終わらせる」の5話です。\n前の話：なぜブランチが必要なのか\n\n\n この連載を書いていて、途中で気づいた\nこのGit連載を書いている途中で、気づきました。\n「あれ。これ、マージしたら公開されるんじゃね？」\n一人で書いている記事です。\nなのに、作業ブランチがあり、レビューがあり、マージ先を分ける必要まで出てきました。\nなぜこんなことになったのか。\n理由は簡単です。\n一人で...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "フルスタックから見た SRE。AI 駆動で変更が速くなるほど、SLO の隣に「復旧時間」を決めておく",
+      "url": "https://zenn.dev/yasunami_daichi/articles/sre-for-fullstack-ai-driven",
+      "site": "Zenn(AI)",
+      "published": "2026-10-03T03:03:43Z",
+      "description": "!\nGoogle の SRE 本・SRE Workbook・DORA の公式ページを一次資料として整理したもの。2026 年 10 月時点。\n\n\n 1. 要点\n\n\nSRE は DevOps の実装。 DevOps は理念で、SRE はそれを役割と具体的なプラクティスに落としたもの。Google 自身が class SRE implements interface DevOps と書いている\n\nSL...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "AIを使いこなす人は「設計から入る人」と「開発から入る人」の2種類いる",
+      "url": "https://zenn.dev/shoyomayabot/articles/ai-two-types-design-or-dev",
+      "site": "Zenn(AI)",
+      "published": "2026-10-03T02:48:58Z",
+      "description": "AIを使いこなしている人を見ていると、大きく2つのタイプに分かれると感じます。どちらにも共通する前提は、言語化が上手いことです。違いが出るのは「どこから始めるか」です。\nこの記事では、2つのタイプの違いと、知識が少ない人でもAIで成果を出せる進め方を紹介します。\n\n タイプ1：知識先行型（設計 → 開発）\n業務知識や設計の基礎がしっかりある人です。AIの出力を叩き台として受け取り、自分の知識で修正...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "ドキュメントを読んでいて、どの瞬間でもすぐ AI とチャットできるリーダーを作った",
+      "url": "https://zenn.dev/ruri/articles/ubiqdoc-ai-chat-reader",
+      "site": "Zenn(AI)",
+      "published": "2026-10-03T02:36:20Z",
+      "description": "TL;DR\n\nローカルの HTML 文書をブラウザで開き、分からない語句をドラッグすると、その場に小さなチャット窓が開きます。答えはポップオーバー・子セクション・リンクのどれかの形で、文書の本文に直接書き込まれます。前の答えを待たずに、次の語句をいくつでも並行して聞けます\n作った理由は、読んでいる自分の意識を途切れさせないためです。ターミナルに移って質問を打ち、前の返答を待っているうちに、さっきま...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "Claude Codeの週制限で自動化を止めない — プロバイダ自動フェイルオーバーの設計",
+      "url": "https://zenn.dev/kokotatan/articles/claude-weekly-limit-failover",
+      "site": "Zenn(AI)",
+      "published": "2026-10-03T02:32:32Z",
+      "description": "Claude Codeを定時ジョブの実行エンジンにすると、避けて通れない壁があります。使用量の週制限(weekly limit) です。ある夜、カレンダー同期ジョブがこう言って止まりました。\nYou've hit your weekly limit · resets Jul 26, 9pm (Asia/Tokyo)\n人間なら「じゃあ日曜まで待つか」で済みますが、自動化は毎日走りたい。この記事では、...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "AIのFX戦略をフォワードでも通用させるには？1000戦略の選び方を変えて検証",
+      "url": "https://zenn.dev/hiro_algo/articles/ai-fx-strategy-robust-selection-forward",
+      "site": "Zenn(AI)",
+      "published": "2026-10-03T02:16:15Z",
+      "description": "前回は、AIにUSDJPYの戦略を1000個作らせました。\n2023〜2024年のバックテスト1位は +1,886.2 pips。ところが、同じ条件を2025〜2026年へ適用すると -29.8 pips でした。\n原因として考えられるのは、1000個の中から「過去の利益が最大だった1個」を選んだことです。\nそこで今回は、利益1位を選ぶのをやめます。年を分け、コストを悪化させ、周辺パラメータも確認...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "公式コース「AIの能力と限界」を完走したので、4つの特性を無料モデルで実験してまとめる",
+      "url": "https://zenn.dev/appare/articles/ai-capabilities-limitations-course-japanese",
+      "site": "Zenn(AI)",
+      "published": "2026-10-03T01:25:48Z",
+      "description": "Claude Code 101、サブエージェント編、in action 編、AI活用力編と、Anthropic（アンソロピック／Claudeの開発元）の無料コースを受けては、記事にしてきました。今回は「AIの能力と限界」です。前回の「AI活用力」の姉妹コースで、あちらが人間側の力、こちらが機械側の特性を扱います。13レッスンを受けて、クイズに合格して修了しました！\nこのコースの売りは、「AIはなぜ...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "JevK5 v0.3実機検証｜Jev Decision Index・JevBench評価と全判断モデル比較マスター表",
+      "url": "https://zenn.dev/null_teck/articles/jevk5-benchmark-decision-index",
+      "site": "Zenn(AI)",
+      "published": "2026-10-03T01:20:12Z",
+      "description": "!\n先に結論を言います\n\n\nJevK5 v0.3（4B）は現行の小型Jevライクオープンモデルではトップクラス:\nベンチマーク比較サイト「Benchmark Heaven」において JevK5 v0.3 4B は 総合 7 位 にランクインし、同規模の Imajev-4B（10位）を明確に突き放しました。当環境での実機検証でも、その極めて高い実力が裏付けられています。\n\n8B クラス（Lev-8B...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "「旧データを安全に使って」が遠回りになった──稼働中のデータ統合をAIと進めた話",
+      "url": "https://zenn.dev/choujiya/articles/787219b56b73c2",
+      "site": "Zenn(AI)",
+      "published": "2026-10-03T00:30:57Z",
+      "description": "稼働中のデータ統合を表した概念イラスト（AI生成）。\n前回：サブスクを使い倒すために、Codex自身にもトークン消費量を把握させた話\n「旧システムのデータを、安全に使いたい」\nAIに伝えたのは、ごく自然な要望だった。長年使ってきたデータを壊したくない。その資産を生かしながら、新しい機能を作りたい。\nところが、開発を進めるうちに、旧システムから取り込んだデータと、新しいシステムで作るデータが別々に扱...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "エージェント協調環境、3週間で会話は1件 — 残るツールは「誰が起動するか」で決まる",
+      "url": "https://zenn.dev/kaz_hira/articles/multi-agent-env-3weeks-measured",
+      "site": "Zenn(AI)",
+      "published": "2026-10-03T00:19:36Z",
+      "description": "3週間前、私は意気揚々とこんな環境を組みました。\nClaude Code と Codex を agmsg で会話させ、claude-squad で複数セッションを並べ、h5i で並行実装を安全にマージする——「人間がコピペ係をやる時代は終わった」というやつです。Brewfile にも全部書きました。記事も書きかけました。\nそして今日、ふと思い立って shell の履歴を数えてみたんです。結果はこう...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "Claude Code のトークンは96.3%が「読み直し」だった — 効いた対策と、効果の正しい測り方",
+      "url": "https://zenn.dev/kaz_hira/articles/claude-code-cache-read-measured",
+      "site": "Zenn(AI)",
+      "published": "2026-10-03T00:19:35Z",
+      "description": "定額プランなのに週の上限に当たる。あるいは API 請求が思ったより伸びている。\nそんなとき、「何にトークンを使ったか」を1行で説明できますか?\n私はできませんでした。だから測りました。結果はかなり意外で、そして自分が疑っていた犯人は全員シロでした。\n先に結論を書きます。私の消費の **96.3% は、自分が書かせた文章ではなく「過去の文脈の読み直し」**でした。\nそして5週間後、運用を見直してか...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "【Cursor pstack】 Build the environment behind 2,500 agent PRs a month",
+      "url": "https://zenn.dev/sc30gsw/books/7ff701b9811d04",
+      "site": "Zenn(AI)",
+      "published": "2026-10-03T00:08:03Z",
+      "description": "A practical guide to building an environment where you can delegate development work to AI agents, using Cursor's pstack. It starts from the ideas that supported 2,500 pull requests a month. It explai...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "ローカルLLM（Qwen3:8b, Qwen3:14b）に人狼をやらせて、推論能力を検証してみた",
+      "url": "https://zenn.dev/matsu8/articles/91ca44377cb19d",
+      "site": "Zenn(AI)",
+      "published": "2026-10-03T00:00:05Z",
+      "description": "はじめに\n今回は、LLMに人狼をやらせてみたら面白いかなと思ったので、人狼システムを自作してLLM同士で遊ばせてみました。\n最初は9人村でやっていたんですが、\n\n結局LLMの何を見ているのかが曖昧になる\nログがくそ長くなって、試合内容を把握するのが面倒\nトークン数も膨大になる（全員が全員の発言を読むので、人数が増えるとピラミッド的に増えていく感じです）\n\nという感じだったので、4〜5人くらいの単純...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
     {
       "title": "WebX68k登場！ブラウザで動く伝説のX68000徹底解説",
       "url": "https://zenn.dev/aiasoby/articles/asoby-tech-1176",
@@ -34,16 +214,6 @@
       "image_url": ""
     },
     {
-      "title": "OpenAIの",
-      "url": "https://zenn.dev/bambampurin/articles/2026-09-08-tech-daily",
-      "site": "Zenn(AI)",
-      "published": "2026-10-02T22:31:47Z",
-      "description": "2026年の開発基盤で今すぐ対応すべき3つの大激変\n\n この記事で分かること\n\nLLM単体の精度推移から「業務特化型AIエージェント」および「具身知能」へ主役が交代した背景\nOpenAIによるAstral買収がPythonツールチェーンと開発体験に与える決定的な影響\nWebネイティブ化するMCPの動向と Next.jsで即座に対応すべき緊急RCE脆弱性の詳細\n\n\n LLM推論競争の終焉と「AIエー...",
-      "category": "AI・技術",
-      "rss_category": "",
-      "image_url": ""
-    },
-    {
       "title": "AIの1回の質問の値段（電気代）はいくら？",
       "url": "https://zenn.dev/nextsurvive/articles/f3b6439e882214",
       "site": "Zenn(AI)",
@@ -54,61 +224,11 @@
       "image_url": ""
     },
     {
-      "title": "Claude Slides/Docsの中身は「制約されたHTMLサブセットのDSL」だった",
-      "url": "https://zenn.dev/every_ai_recipe/articles/claude-slides-no-powerpoint-recipe",
-      "site": "Zenn(AI)",
-      "published": "2026-10-02T21:17:14Z",
-      "description": "TL;DR\n\nAnthropicは2026年9月16日〜17日、Claudeのチャット上でスライド・ドキュメントをそのまま作れる「Claude Slides」「Claude Docs」をベータ公開した。エージェント機能「Claude Cowork」がChatチャット本体に統合された一環の発表である\n編集部（本セッション）は、この機能を動かしている開発者向けの実行環境から、実際にスライドを1つ作って...",
-      "category": "AI・技術",
-      "rss_category": "",
-      "image_url": ""
-    },
-    {
-      "title": "「ソフトウェアが70年ぶりに変わった、しかも2回」KarpathyのSoftware 3.0を要点解説",
-      "url": "https://zenn.dev/talks_tldr_jp/articles/tldr03-karpathy-yc-summary",
-      "site": "Zenn(AI)",
-      "published": "2026-10-02T18:44:54Z",
-      "description": "この記事について\nAndrej Karpathy が Y Combinator の AI Startup School で語った「Software 3.0」の講演を、要点だけ抜き出して日本語で解説します。ソフトウェアの歴史的な転換を整理した、示唆に富む回です。\n!\n本記事は元動画の全文翻訳ではなく、紹介と論評を目的として筆者が要点を抜き出し、筆者の見解を主体に構成したものです。正確なニュアンスは元...",
-      "category": "AI・技術",
-      "rss_category": "",
-      "image_url": ""
-    },
-    {
       "title": "2週間が1時間に　Grabが500のエージェントで統一したものと、しなかったもの",
       "url": "https://zenn.dev/tariki_yashiro/articles/na-20260915-211627",
       "site": "Zenn(AI)",
       "published": "2026-10-02T16:03:10Z",
       "description": "本番への接続が2週間以上から約1時間に。東南アジアの配車・デリバリー大手Grabが、社内500以上のエージェントサービスを一つの内製フレームワーク「LLM-Kit」に統一した経緯を公開しました。\nAPIキーがリポジトリごとに散らばる。誰がどのモデルにいくら使っているか、誰も答えられない。この状態に心当たりがあるなら、読む価値のある事例です。\n先に私の立場を書きます。この事例の読みどころは1時間とい...",
-      "category": "AI・技術",
-      "rss_category": "",
-      "image_url": ""
-    },
-    {
-      "title": "同じLLMを使っているのに成功率が全然違う — AIコーディングツールの差は「ハーネス」だった",
-      "url": "https://zenn.dev/cuculhart/articles/26fd72ed8c7411",
-      "site": "Zenn(AI)",
-      "published": "2026-10-02T15:35:22Z",
-      "description": "AIコーディングエージェントを同一タスク・同一モデルで実測比較するサイト「AIエディターラボ」を運営しています。\nhttps://labo.mond.jp\nその中で、同じLLMを使っているはずなのにツールによって成功率がまるで違うという現象にぶつかりました。繰り返し計測した末に分かったのは、差を生んでいたのはモデルではなく「ハーネス」（モデルを囲むツール側の仕組み）だった、という話です。\n\n 前提...",
-      "category": "AI・技術",
-      "rss_category": "",
-      "image_url": ""
-    },
-    {
-      "title": "言わない技術 序論：AI に指示することが、ほとんどなくなった",
-      "url": "https://zenn.dev/garplab/articles/9382c1c9790cbc",
-      "site": "Zenn(AI)",
-      "published": "2026-10-02T15:25:45Z",
-      "description": "私が AI に指示することは、ほとんどなくなりました。やり方も、手順も、計画も、念押しも、ダメ出しも。これは丸投げ —— 渡すものを用意せずに「うまくやって」と言うこと —— とは別のものです。それで品質が落ちたかというと、落ちていません。このシリーズは、その状態を仕組み一つずつで作っていく連載です。\n先に、読み方を書いておきます。この連載は、読むだけで追えます。各回は、現場で何が起きたかから始ま...",
-      "category": "AI・技術",
-      "rss_category": "",
-      "image_url": ""
-    },
-    {
-      "title": "CLAUDE.mdとauto memoryの違いと書き方",
-      "url": "https://zenn.dev/tomsolog/articles/20260930-claude-code-claudemd-guide",
-      "site": "Zenn(AI)",
-      "published": "2026-10-02T15:25:39Z",
-      "description": "この記事でわかること\n\nClaude Codeには「書く記憶」と「覚える記憶」の2つの仕組みがあること\nCLAUDE.mdファイルの役割と、置き場所ごとの使い分け\nauto memoryとは何か、有効・無効の切り替え方、保存場所\n今日から実践できる、CLAUDE.mdの書き方のコツ\n\n\n\n 結論：Claude Codeには「書く記憶」と「覚える記憶」がある\nClaude Codeは、セッションを開...",
       "category": "AI・技術",
       "rss_category": "",
       "image_url": ""
@@ -149,16 +269,6 @@
       "site": "Zenn(AI)",
       "published": "2026-10-02T14:27:18Z",
       "description": "Cloudflare Birthday Week 2026 の4日目です！\nDay3 は Containers や Issues などWorkersのランタイムや管理に関する部分がメインでしたが。Day4 は KV Instant、Basin、K2 とデータ周りの発表が多いですね。\nAI Search の正式提供や、Cloudflare 自身が学習したモデルの公開もありました。今回も開発者向けの内...",
-      "category": "AI・技術",
-      "rss_category": "",
-      "image_url": ""
-    },
-    {
-      "title": "0.8Bのゼロショット分類モデル「Jeff」でキーワードルールベース分類を殴ってみた",
-      "url": "https://zenn.dev/matsushima_a/articles/day-004-jeff-zero-shot-classification",
-      "site": "Zenn(AI)",
-      "published": "2026-10-02T13:17:43Z",
-      "description": "これは何\n海外AIネタ100日チャレンジ Day 004。今回取り上げるのは Jeff。\nQwen3.5-0.8B(0.8Bパラメータ)をファインチューンして作られた、生成ではなく確率を返すゼロショット分類モデルです。\n重みは Hugging Face の mstrasser/Jeff-Qwen3.5-0.8B で公開されています。\n状況と選択肢を文章で渡すと、各選択肢の確率を1回の forwar...",
       "category": "AI・技術",
       "rss_category": "",
       "image_url": ""

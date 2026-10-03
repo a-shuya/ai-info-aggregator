@@ -1,8 +1,48 @@
 {
   "site": "Zenn(Python)",
-  "last_updated": "2026-10-03T01:04:54.016278",
-  "total_articles": 6830,
+  "last_updated": "2026-10-03T06:28:29.923020",
+  "total_articles": 6836,
   "articles": [
+    {
+      "title": "MX切替の影響は、宛先ではなくヘッダで数える",
+      "url": "https://zenn.dev/miyakona/articles/mail-mx-cutover-header-audit",
+      "site": "Zenn(Python)",
+      "published": "2026-10-03T05:50:13Z",
+      "description": "あるドメインのメール受信先を、共用ホスティングから別のメールサービスへ移すことになりました。移行先の利用者やグループは先に用意できますが、外部の送信サーバーが参照する配送先を変えるのはDNSのMXレコードです。MXは、宛先ドメインのメールをどのサーバーへ配送するかを示します。\n切替前の手順書には、管理者アドレス宛の通知について、こう書いていました。\n\nこの転送が必要なのは切替までです。切替後は移行...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "Cloud Scheduler × Cloud Run 実践パターン ─ 冪等バッチ・エラー通知・ジョブチェーンの完全ガイド",
+      "url": "https://zenn.dev/correlate_dev/articles/cloud-scheduler-patterns",
+      "site": "Zenn(Python)",
+      "published": "2026-10-03T02:34:50Z",
+      "description": "はじめに\n「毎朝6時にデータを同期したい」「月初だけ集計バッチを走らせたい」──GCPでバッチ処理を組む場面で必ず登場するのが Cloud Scheduler です。\nサーバーに crontab を書く方法と比べると、Cloud Scheduler には大きな優位点があります。ジョブの管理・確認・手動実行がコンソールやCLIから行えること、Cloud Monitoring との統合でジョブの成否が...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "行動ログから職業を判定するLLM実装で壊れやすい5か所と対策",
+      "url": "https://zenn.dev/ponfreelance/articles/alter-type-a-20261003-064618",
+      "site": "Zenn(Python)",
+      "published": "2026-10-03T01:30:25Z",
+      "description": "行動ログをLLMに渡して「この人は今どの職業に近いか」を判定する機能は、動くものだけなら1日あれば作れる。詰まるのはその後で、結果が日替わりで変わる、JSONが壊れる、無料枠のレート制限で止まる、といった運用側の問題が出てくる。\nこの記事は、Groqのような低コストのLLMで分類機能を組もうとしていて、動いた後の壊れ方を先に知っておきたい人向けに書いている。\n\n 結論\n壊れやすい箇所は5つあり、対...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "PCAの累積寄与率80%で十分？ 分散と分類性能が一致しないデータを作って検証する",
+      "url": "https://zenn.dev/shakeailab/articles/pca-explained-variance-trap",
+      "site": "Zenn(Python)",
+      "published": "2026-10-03T01:14:23Z",
+      "description": "主成分分析(PCA)をかけたあと、必ず決めなければならないことがある。何本残すかだ。\n定番の答えは決まっている。\n\n累積寄与率が80%(あるいは90%)を超えるところまで残す。\n\n私もそうしてきた。3行で書けるし、根拠を聞かれても「元の情報の8割を保っています」と言える。\n引っかかっていたのは、寄与率が「何の」8割なのかだ。実測したら、寄与率88.57%の成分に分類の手がかりが1つも入っておらず、...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
     {
       "title": "Claude Codeと作る競馬予測システム開発記(8) オーバーレイ探索編",
       "url": "https://zenn.dev/teruyotasaki/articles/horse-racing-ml-dev-08-overlay-search",
@@ -64,6 +104,16 @@
       "image_url": ""
     },
     {
+      "title": "0.8Bのゼロショット分類モデル「Jeff」でキーワードルールベース分類を殴ってみた",
+      "url": "https://zenn.dev/matsushima_a/articles/day-004-jeff-zero-shot-classification",
+      "site": "Zenn(Python)",
+      "published": "2026-10-02T13:17:43Z",
+      "description": "これは何\n海外AIネタ100日チャレンジ Day 004。今回取り上げるのは Jeff。\nQwen3.5-0.8B(0.8Bパラメータ)をファインチューンして作られた、生成ではなく確率を返すゼロショット分類モデルです。\n重みは Hugging Face の mstrasser/Jeff-Qwen3.5-0.8B で公開されています。\n状況と選択肢を文章で渡すと、各選択肢の確率を1回の forwar...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
       "title": "Grokと作った業務効率化オブジェクト指向RPGでOOPがスッキリわかった話【コード付き】",
       "url": "https://zenn.dev/zenn_aqua/articles/9900ed665692af",
       "site": "Zenn(Python)",
@@ -79,6 +129,16 @@
       "site": "Zenn(Python)",
       "published": "2026-10-02T12:13:29Z",
       "description": "はじめに\nこれまでの記事では、Raspberry Pi OSのインストールから始めて、SSH接続、Tailscale、VS Code Remote - SSHの設定まで行いました。\nここまでで、MacのVS Codeからラズパイに接続し、ラズパイ上のファイルを直接編集できるようになりました。\n今回は、ラズパイをPythonの開発環境として使える状態にしていきます。\nRaspberry Pi OSに...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "推論モデルの<think>の中のJSONを「答え」として拾ってしまう事故と、標準ライブラリだけの対策",
+      "url": "https://zenn.dev/tonbifun/articles/ed67a9f4526c7e",
+      "site": "Zenn(Python)",
+      "published": "2026-10-02T11:26:46Z",
+      "description": "この記事で分かること\n\n推論モデルの出力からJSONを取り出すとき、エラーにならないのに、間違った値が返ってくることがある\nその原因と、手元で10秒で再現できるコード\n標準ライブラリだけで書ける対策(そのままコピーして使えます)\n\n\n はじめに\nLLMの出力からJSONを取り出すとき、json.loads がエラーを出してくれるなら、まだ話は簡単です。困るのは、エラーにならずに、間違ったJSONが...",
       "category": "開発",
       "rss_category": "",
       "image_url": ""
