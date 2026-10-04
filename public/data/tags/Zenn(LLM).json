@@ -1,14 +1,84 @@
 {
   "site": "Zenn(LLM)",
-  "last_updated": "2026-10-04T17:06:40.132267",
-  "total_articles": 6522,
+  "last_updated": "2026-10-04T20:09:59.342789",
+  "total_articles": 6529,
   "articles": [
+    {
+      "title": "LLMに渡す文脈を、文字数予算で設計する",
+      "url": "https://zenn.dev/tanishi_z/articles/13-kurari-llm-context-budget-design",
+      "site": "Zenn(LLM)",
+      "published": "2026-10-04T11:19:32Z",
+      "description": "対象読者は、自分のアプリにLLMを組み込もうとしている個人開発者です。RAGやツール呼び出しのような仕組みを導入する前に、もっと素朴な方法で足りないか検討している方を想定しています。動作環境は Kotlin 2.1.21 / Spring Boot 3.5.16（Java 21 toolchain）です。\n個人開発中のチーム用ワークスペース「Kurari」（リポジトリ: https://githu...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "AIエージェント運用に eval を入れたら、直すべき場所が逆だった — 6つの場面で train/test を分けて測った",
+      "url": "https://zenn.dev/mameresearcher/articles/ai-agent-ops-evals-six-scenes",
+      "site": "Zenn(LLM)",
+      "published": "2026-10-04T11:18:10Z",
+      "description": "AIエージェントに約30の発信（ブログ・YouTube・SNS）を任せています。これまでは、失敗が出るたびに規則を1つ足して直してきました。\nAnthropic の公式ブログ「Automating eval design and hillclimbing with Claude」と、それを解説した動画を見て、この直し方そのものを測ってみることにしました。要点は4つです。\n\n本番に近い問題で評価する...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "AIエージェントのチームに小説を書かせたら、人狼ゲームになった ― 約束・検査・環境の三層で考えるAI運用",
+      "url": "https://zenn.dev/infra_ojisan/articles/ai-novel-studio-part5",
+      "site": "Zenn(LLM)",
+      "published": "2026-10-04T10:35:49Z",
+      "description": "はじめに\nこのシリーズでは、AIに小説を書かせる「制作スタジオ」を作ってきました。1本目はスタジオの仕組み、2本目は書き手のモデルの癖と文章の余白、3本目はシリーズものを伏線の負債として管理する話、4本目は書いた小説をなろうに公開するまでのエンジニアリングでした。\nこのネタ長いですがまだ続きます。おそらくもう1回書くんじゃないかな。\n今回は小説の話ではありません。小説を書かせようとしたら、AIエー...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "LLMが確実にJSONを返す仕組みを作る — instructorとPydanticで自動リトライ付き構造化出力を実装する",
+      "url": "https://zenn.dev/yunisuta/articles/ai1-dedup-ai-2026-06-03-pausedforhumanin-ydnddi",
+      "site": "Zenn(LLM)",
+      "published": "2026-10-04T10:14:38Z",
+      "description": "本番の LLM パイプラインで、こんなエラーと格闘したことがあるだろうか。\njson.JSONDecodeError: Expecting value: line 1 column 1 (char 0)\nKeyError: 'priority'\nValueError: invalid literal for int() with base 10: '高め'\n「JSON で返して」と指示しても、マー...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
     {
       "title": "Claude Code に記事生成を任せたら Qiita CI が14回全停止した — SKILL.md を直しても直らなかった理由と解決策",
       "url": "https://zenn.dev/joemike/articles/llm-article-automation-ci-stop-2026",
       "site": "Zenn(LLM)",
       "published": "2026-10-04T10:02:09Z",
       "description": "結論：LLM に「こう書いてね」とお願いしても、いつか必ず field は欠ける\n3行サマリー（効率厨の自戒）：\n\nAI に記事の量産を任せていたら、ある朝 Qiita / Zenn の publish CI が全部赤くなった。frontmatter の必須 field が欠けて、CLI が全記事の publish ごと止めていた\n「テンプレが悪い」とローカルの SKILL.md を何度直しても直...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "「手段を3つに絞れ」「自分で採点しろ」は効く？ 60回比べたら、効果より採点の落とし穴が出た",
+      "url": "https://zenn.dev/kanta13jp1/articles/prompt-constraint-selfcheck-60-trials",
+      "site": "Zenn(LLM)",
+      "published": "2026-10-04T09:57:12Z",
+      "description": "先に結論\nAIへの指示として紹介されていた2つの手法を、同じ課題・同じモデルで60回比べました。\n\n\n\n条件\n課題文に足した指示\n全問合格\nチェック合格率\n\n\n\n\nA\nなし（基準）\n14/15\n272/279（97.5%）\n\n\nB\n使ってよい手段を3つに限定\n12/15\n269/279（96.4%）\n\n\nC\n正しさの条件を5つ挙げ、自分で判定\n13/15\n275/279（98.6%）\n\n\nD\nBと...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "【翻訳】Strands Decider 2B の紹介：小さなオープンソースの判断モデル",
+      "url": "https://zenn.dev/aws_japan/articles/introducing-strands-decider-ja",
+      "site": "Zenn(LLM)",
+      "published": "2026-10-04T09:50:31Z",
+      "description": "!\nこの記事は、Strands Agents 公式ブログの記事「Introducing Strands Decider 2B: a small, open source, decision model」の日本語訳です。原文は 2026 年 10 月 1 日に公開され、著者は Marc Brooker、Mike Chambers、Fabio Nonato de Paula の 3 名です。\n\n翻訳元...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "MCP を直接呼ぶ版とコードで叩く版、同じ集計タスクで実際にトークンを数えてみた",
+      "url": "https://zenn.dev/ma2no4413/articles/mcp-code-execution-token-benchmark",
+      "site": "Zenn(LLM)",
+      "published": "2026-10-04T08:16:37Z",
+      "description": "Anthropic が 2025-11-04 に公開した Code execution with MCP は、「MCP のツールを直接呼ぶのをやめて、エージェントにコードを書かせて呼ばせると context の消費が減る」という提案です。記事内の実例(Google Drive → Salesforce)では 150,000 トークンから 2,000 トークンへ、98.7% の削減が出たとあります。...",
       "category": "AI・技術",
       "rss_category": "",
       "image_url": ""
@@ -28,7 +98,7 @@
       "url": "https://zenn.dev/kondonator/articles/dd282b7cb2efd8",
       "site": "Zenn(LLM)",
       "published": "2026-10-04T05:35:48Z",
-      "description": "はじめに\n前回の記事では、AI Security Labの実験環境や、何をやって何をやらないのかであったり、AI Security Labの考え方、姿勢について説明しました。\nAI Security Labの実験環境 ― OllamaとPythonでLLMの動作を実験する\n\nAIに文章を読ませ、その内容を要約してもらう。\nこれは、現在ではごく普通のAI活用方法になりました。\nたとえば、採用担当者が...",
+      "description": "はじめに\n前回の記事では、AI Security Labの実験環境や、何をやって何をやらないのかであったり、AI Security Labの考え方、姿勢について説明しました。\nAI Security Labの実験環境 ― OllamaとPythonでLLMの動作を実験する\nAIに文章を読ませ、その内容を要約してもらう。\nこれは、現在ではごく普通のAI活用方法になりました。\nたとえば、採用担当者が応...",
       "category": "AI・技術",
       "rss_category": "",
       "image_url": ""
