@@ -1,7 +1,7 @@
 {
   "site": "Zenn(Python)",
-  "last_updated": "2026-10-04T20:09:59.342789",
-  "total_articles": 6860,
+  "last_updated": "2026-10-04T23:11:18.239355",
+  "total_articles": 6863,
   "articles": [
     {
       "title": "標本分布の期待値・分散・標準偏差は何のため？ 標準誤差までつなげて考える",
@@ -114,11 +114,31 @@
       "image_url": ""
     },
     {
+      "title": "MCP を直接呼ぶ版とコードで叩く版、同じ集計タスクで実際にトークンを数えてみた",
+      "url": "https://zenn.dev/ma2no4413/articles/mcp-code-execution-token-benchmark",
+      "site": "Zenn(Python)",
+      "published": "2026-10-04T08:16:37Z",
+      "description": "Anthropic が 2025-11-04 に公開した Code execution with MCP は、「MCP のツールを直接呼ぶのをやめて、エージェントにコードを書かせて呼ばせると context の消費が減る」という提案です。記事内の実例(Google Drive → Salesforce)では 150,000 トークンから 2,000 トークンへ、98.7% の削減が出たとあります。...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
       "title": "ProcessPoolのfork前提を外す設計",
       "url": "https://zenn.dev/techstudiolab/articles/python-processpool-remove-fork-dependency",
       "site": "Zenn(Python)",
       "published": "2026-10-04T07:11:16Z",
       "description": "ProcessPoolExecutorで親プロセスの状態をforkに継承させているなら、Python 3.14への更新を機に、その依存を残すか判断したほうがよいです。\n私なら、ワーカーに必要な状態はinitializerと明示的な引数から構築する形を基本にします。\nforkを指定するのは、forkそのものが性能やメモリ設計の前提になっており、その制約を理解して維持すると決めた場合です。\n\n Pyt...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "AIにグラフを描画させるために Google ADK の Code Executor を使ってみた",
+      "url": "https://zenn.dev/xxkuboxx/articles/d4adc4ab05a67e",
+      "site": "Zenn(Python)",
+      "published": "2026-10-04T07:07:57Z",
+      "description": "この記事の趣旨\nAIと会話しているときに、グラフを出してもらいたいと思うことってありますよね。なんとなく、「できなさそうだな～」と思ってやっていなかったりしますが・・・。それではと思いブラウザ版Geminiアプリで実際にやってみると、以下の通りテキストベースでそれっぽい感じで返してはくれますが、やはり「これじゃない」感がありますよね。\n\n\n Google ADK の Code Executor に...",
       "category": "開発",
       "rss_category": "",
       "image_url": ""
@@ -149,6 +169,16 @@
       "site": "Zenn(Python)",
       "published": "2026-10-04T03:26:52Z",
       "description": "Claude の Opus 5.5 と Sonnet 5.5 を、同じお題で比べるシリーズの2本目です。今回は3DCGで、Blender を Python だけで動かして、静物・機械式時計・アニメーションの3つを作ってもらいました。\nこの記事は、動画で見せた作品と結果を、画像とコードでじっくり見られるようにまとめたものです。\n\n 結果のまとめ\nOpus 5.5 の2勝と引き分けが1つで、比較②3D...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "Jeff-0.8B vs Kev-0.8B 実機対決｜0.8B級判断モデル頂上決戦と並列スループット検証",
+      "url": "https://zenn.dev/null_teck/articles/jeff-08b-vs-kev-08b-decision-models",
+      "site": "Zenn(Python)",
+      "published": "2026-10-04T03:09:48Z",
+      "description": "!\n先に結論を言います\n\n\n高い並列スループット &amp; 長文汎用推論なら「Jeff-0.8B」が優位:\n\n単発推論レイテンシにおいて Kev-0.8B（150.4ms）に対し Jeff-0.8B は 15.7ms（約 9.6 倍高速）、さらに並列走査（Concurrency 4）でも Kev-0.8B（5.82 行/秒・全行走査 14.3分）に対し Jeff-0.8B は 毎秒 68.82 ...",
       "category": "開発",
       "rss_category": "",
       "image_url": ""
