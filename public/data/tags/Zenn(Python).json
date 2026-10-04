@@ -1,8 +1,108 @@
 {
   "site": "Zenn(Python)",
-  "last_updated": "2026-10-04T12:47:11.637058",
-  "total_articles": 6854,
+  "last_updated": "2026-10-04T17:06:40.132267",
+  "total_articles": 6868,
   "articles": [
+    {
+      "title": "標本分布の期待値・分散・標準偏差は何のため？ 標準誤差までつなげて考える",
+      "url": "https://zenn.dev/econ_data_lab/articles/sampling-distribution-moments",
+      "site": "Zenn(Python)",
+      "published": "2026-10-04T16:12:32Z",
+      "description": "計量経済学の授業で、標本平均は確率変数なので標本分布を考えられる、と習いました。\nそのあとに出てきたのが、\n\nE[\\bar{Y}],\\qquad Var(\\bar{Y}),\\qquad SD(\\bar{Y})\n\nです。\n式は追えるのですが、私はここで一度止まりました。\n標本分布の期待値・分散・標準偏差まで求めて、結局何につながるのでしょうか。\n整理してみると、これらは別々の公式ではなく、\n\n標本平...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "50層のMLPで初期化を比較：活性化と勾配が消える・発散する条件をNumPyで測る",
+      "url": "https://zenn.dev/shakeailab/articles/weight-init-gradient-scale",
+      "site": "Zenn(Python)",
+      "published": "2026-10-04T15:57:34Z",
+      "description": "深いニューラルネットワークは、少し前まで「ほぼ学習できない」ものだった。層を重ねれば重ねるほど賢くなるはずなのに、実際に10層、20層と積み上げると、なぜか全く学習が進まなくなる。この現象の主犯としてよく語られるのが重みの初期値だ。信号(活性化)と勾配は、層を1枚通過するたびに何倍かずつ拡大・縮小される。その倍率が1よりわずかでも小さければ、何十層も重ねるうちに信号は指数的にゼロへ潰れる(勾配消失...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "Step FunctionsのワークフローをPythonで書ける「sfnx」を作った",
+      "url": "https://zenn.dev/iwamot/articles/65bd0900005fd0",
+      "site": "Zenn(Python)",
+      "published": "2026-10-04T15:40:12Z",
+      "description": "Step FunctionsのワークフローをPythonで書けるツール、sfnxを公開しました。sfnxを使うと、ワークフローの保守の手間が減らせます。\nhttps://github.com/iwamot/sfnx\n\n 日常的な使い方の例\n以下、日常的な使い方の例です。\n\n ワークフローの定義\nまず、肝心のワークフローをPythonで定義します。例として、こんな処理を考えてみましょう。\n\nS3にア...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "DuckDB入門：ファイルをSQLで分析する仕組みと使いどころ",
+      "url": "https://zenn.dev/caron14/articles/duckdb-file-sql-introduction-20261004",
+      "site": "Zenn(Python)",
+      "published": "2026-10-04T14:59:33Z",
+      "description": "はじめに：手元のファイルをSQLで分析したい\nCSVやParquetを集計する際には、データベースへ取り込んだり、PythonでDataFrameとして読み込んだりする方法があります。ファイルの中身を確認するだけでも、取り込みや読み込みの処理が必要です。\nDuckDBは、アプリケーションのプロセス内で動く、分析向けのデータベースです。別のDBサーバーを立てずに、ファイルやDataFrameへSQL...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "深層学習のカテゴリ変数設計：未知カテゴリの割当先を学習させる",
+      "url": "https://zenn.dev/caron14/articles/categorical-encoding-for-dl",
+      "site": "Zenn(Python)",
+      "published": "2026-10-04T14:59:32Z",
+      "description": "はじめに\nカテゴリ変数をニューラルネットワークへ入力するときは、One-Hot Encoding と Embedding の選択に加え、推論時に初めて現れる値の扱いを決めます。以降、One-Hot Encoding を One-Hot と表記します。\nhandle_unknown=\"ignore\" を設定すれば、未知カテゴリで変換処理が止まることは避けられます。しかし、その入力に対してモデルがどの...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "【深層学習論文実装】LSTMを実装してみた",
+      "url": "https://zenn.dev/nonnn/articles/25ed011f905d66",
+      "site": "Zenn(Python)",
+      "published": "2026-10-04T13:46:45Z",
+      "description": "こんにちは！Nonです。\nLSTMの論文を実装しようと思ったのですが、様々なLSTMが存在するので、Pytorchの実装に合わせることにしました。\n全実装はこちら\nLSTMのネットワークは\ni_{t} = \\sigma(W_{ii}x_{t} + b_{ii} + W_{hi}h_{t-1} + b_{hi})\nf_{t} = \\sigma(W_{if}x_{t} + b_{if} + W_{hf...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "遠隔操縦の探検車 ANEx3の開発⑦ PCとの通信",
+      "url": "https://zenn.dev/inufox/articles/bffe79a9333aa3",
+      "site": "Zenn(Python)",
+      "published": "2026-10-04T13:33:09Z",
+      "description": "全体目次\n\nフロントページ\n使った部品について\n全体の概要\n車体、動力系\nセンサー\nカメラ\nPCとの通信（このページ）\n制御プログラム\nフィールドテスト\n\n\n 7. PCとの通信\n\n\n\n\nANEx = ANa Explorer防空壕(穴、洞窟)を探検するためのロボットカー現在3代目（だんだん小さくなってる）\n\n\n\nこのページではPCと探検車ANEx3の通信について解説します。まあプログラムを見ても...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "日本株バックテストツールを研究基盤へ — KabuForge と公式サイトの紹介",
+      "url": "https://zenn.dev/dudumimi/articles/kabuforge-research-platform",
+      "site": "Zenn(Python)",
+      "published": "2026-10-04T13:23:52Z",
+      "description": "Python や J-Quants で日本株を調べていて、新しいアイデアを試すたびに、データの読み込み、設定、実行、結果の整理を作り直していないでしょうか。\n以前公開した日本株バックテストツールを、 自分の ファクターと戦略 を接続し、同じルールで実行・比較・追跡するための研究基盤「KabuForge」 として開発しています。\n今回のテーマは、ファクター / 戦略 の拡張、MCP 経由の エージェ...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "まとまりで取りたいなら、まとまりの属性で並べる",
+      "url": "https://zenn.dev/miyakona/articles/latest-group-sort-by-group-attribute",
+      "site": "Zenn(Python)",
+      "published": "2026-10-04T12:53:48Z",
+      "description": "定期実行のバッチで、外部の一覧APIから「最新のひとまとまり」を列挙しています。1バッチ、1リリース、1回分の配信など、要素を1件だけではなく、同じグループに属する要素を全部取りたい処理です。\n以前の処理は、要素の公開日が新しい順にページを読み、古いグループが見えたら終了していました。ほとんどの対象では正しく動いていたため、素直な実装だと思っていました。\nところが、ある対象では最新グループの6分の...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "macOSのsecurityコマンドでキーチェーンに値を入れるとき、黙って壊れる3か所",
+      "url": "https://zenn.dev/zeroyen_dev/articles/macos-security-keychain-pitfalls",
+      "site": "Zenn(Python)",
+      "published": "2026-10-04T12:32:25Z",
+      "description": "パスワードを置く小さなCLIを書いていて、macOSの security コマンドで3回つまずきました。どれもエラーを出さずに壊れます。 返り値は0で、保存できたように見えます。\n\n 1. 値を引数で渡すとプロセス一覧に出る\nまずこれを避けたくて、標準入力から渡す方法を探しました。\n# 見えてしまう\nsecurity add-generic-password -a myacct -s mysvc ...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
     {
       "title": "サッカーくじ予測の的中率は47%で頭打ちだった — 試した改善策と、代わりに効いたこと",
       "url": "https://zenn.dev/kota_m/articles/333979b8239a82",
@@ -34,6 +134,26 @@
       "image_url": ""
     },
     {
+      "title": "LLMが確実にJSONを返す仕組みを作る — instructorとPydanticで自動リトライ付き構造化出力を実装する",
+      "url": "https://zenn.dev/yunisuta/articles/ai1-dedup-ai-2026-06-03-pausedforhumanin-ydnddi",
+      "site": "Zenn(Python)",
+      "published": "2026-10-04T10:14:38Z",
+      "description": "本番の LLM パイプラインで、こんなエラーと格闘したことがあるだろうか。\njson.JSONDecodeError: Expecting value: line 1 column 1 (char 0)\nKeyError: 'priority'\nValueError: invalid literal for int() with base 10: '高め'\n「JSON で返して」と指示しても、マー...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "「手段を3つに絞れ」「自分で採点しろ」は効く？ 60回比べたら、効果より採点の落とし穴が出た",
+      "url": "https://zenn.dev/kanta13jp1/articles/prompt-constraint-selfcheck-60-trials",
+      "site": "Zenn(Python)",
+      "published": "2026-10-04T09:57:12Z",
+      "description": "先に結論\nAIへの指示として紹介されていた2つの手法を、同じ課題・同じモデルで60回比べました。\n\n\n\n条件\n課題文に足した指示\n全問合格\nチェック合格率\n\n\n\n\nA\nなし（基準）\n14/15\n272/279（97.5%）\n\n\nB\n使ってよい手段を3つに限定\n12/15\n269/279（96.4%）\n\n\nC\n正しさの条件を5つ挙げ、自分で判定\n13/15\n275/279（98.6%）\n\n\nD\nBと...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
       "title": "推しのMVをWindowsの壁紙にしたら、デスクトップが優勝した！YouTubeプレイリストで推し活PCを作る",
       "url": "https://zenn.dev/taku0805/articles/f06ebf59d872c0",
       "site": "Zenn(Python)",
@@ -49,6 +169,26 @@
       "site": "Zenn(Python)",
       "published": "2026-10-04T08:35:06Z",
       "description": "!\nこの記事のコードは Jupyter Notebook として GitHub で公開しています。Google Colab でそのまま実行できます。\n\nロボットやドローンの姿勢（回転）を変数とする最適化問題を、Python と CasADi で解けるようになることを目指して、手を動かしながら学ぶノートブックです。\n回転行列は、足し算で更新すると回転行列でなくなってしまううえ、R^\\top R = ...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "MCP を直接呼ぶ版とコードで叩く版、同じ集計タスクで実際にトークンを数えてみた",
+      "url": "https://zenn.dev/ma2no4413/articles/mcp-code-execution-token-benchmark",
+      "site": "Zenn(Python)",
+      "published": "2026-10-04T08:16:37Z",
+      "description": "Anthropic が 2025-11-04 に公開した Code execution with MCP は、「MCP のツールを直接呼ぶのをやめて、エージェントにコードを書かせて呼ばせると context の消費が減る」という提案です。記事内の実例(Google Drive → Salesforce)では 150,000 トークンから 2,000 トークンへ、98.7% の削減が出たとあります。...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "Claude Code の usage limit 自動継続を止めていたのは Remote Control だった",
+      "url": "https://zenn.dev/daydreamer/articles/claude-code-usage-limit-auto-resume",
+      "site": "Zenn(Python)",
+      "published": "2026-10-04T08:07:12Z",
+      "description": "TL;DR\n\nusage limit のリセット後に作業を続ける自動継続(autoContinueAtUsageLimit、既定で有効)は、Remote Control のセッションでは自動では始まりません。私が探した範囲では、書かれているのは interactive-mode のページだけで、画面にも何も出ません。手元の履歴では、Remote Control に接続した状態で上限に当たった 10...",
       "category": "開発",
       "rss_category": "",
       "image_url": ""

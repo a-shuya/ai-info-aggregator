@@ -1,34 +1,14 @@
 {
   "site": "Zenn(LLM)",
-  "last_updated": "2026-10-04T12:47:11.637058",
-  "total_articles": 6517,
+  "last_updated": "2026-10-04T17:06:40.132267",
+  "total_articles": 6522,
   "articles": [
-    {
-      "title": "LLMが確実にJSONを返す仕組みを作る — instructorとPydanticで自動リトライ付き構造化出力を実装する",
-      "url": "https://zenn.dev/yunisuta/articles/ai1-dedup-ai-2026-06-03-pausedforhumanin-ydnddi",
-      "site": "Zenn(LLM)",
-      "published": "2026-10-04T10:14:38Z",
-      "description": "本番の LLM パイプラインで、こんなエラーと格闘したことがあるだろうか。\njson.JSONDecodeError: Expecting value: line 1 column 1 (char 0)\nKeyError: 'priority'\nValueError: invalid literal for int() with base 10: '高め'\n「JSON で返して」と指示しても、マー...",
-      "category": "AI・技術",
-      "rss_category": "",
-      "image_url": ""
-    },
     {
       "title": "Claude Code に記事生成を任せたら Qiita CI が14回全停止した — SKILL.md を直しても直らなかった理由と解決策",
       "url": "https://zenn.dev/joemike/articles/llm-article-automation-ci-stop-2026",
       "site": "Zenn(LLM)",
       "published": "2026-10-04T10:02:09Z",
       "description": "結論：LLM に「こう書いてね」とお願いしても、いつか必ず field は欠ける\n3行サマリー（効率厨の自戒）：\n\nAI に記事の量産を任せていたら、ある朝 Qiita / Zenn の publish CI が全部赤くなった。frontmatter の必須 field が欠けて、CLI が全記事の publish ごと止めていた\n「テンプレが悪い」とローカルの SKILL.md を何度直しても直...",
-      "category": "AI・技術",
-      "rss_category": "",
-      "image_url": ""
-    },
-    {
-      "title": "MCP を直接呼ぶ版とコードで叩く版、同じ集計タスクで実際にトークンを数えてみた",
-      "url": "https://zenn.dev/ma2no4413/articles/mcp-code-execution-token-benchmark",
-      "site": "Zenn(LLM)",
-      "published": "2026-10-04T08:16:37Z",
-      "description": "Anthropic が 2025-11-04 に公開した Code execution with MCP は、「MCP のツールを直接呼ぶのをやめて、エージェントにコードを書かせて呼ばせると context の消費が減る」という提案です。記事内の実例(Google Drive → Salesforce)では 150,000 トークンから 2,000 トークンへ、98.7% の削減が出たとあります。...",
       "category": "AI・技術",
       "rss_category": "",
       "image_url": ""
@@ -59,16 +39,6 @@
       "site": "Zenn(LLM)",
       "published": "2026-10-04T04:28:39Z",
       "description": "ALGO ARTISの大賀さんが作成した、AI臭い日本語をより論理的・構造的な日本語に書き換えてくれるSkillを使ってみた体験談です。あまりにも衝撃的で、しかも今の私の悩みを解決できるSkillだったので、共有したくて書いています。\nSkillの詳細はこちらの記事をご一読ください。現在も頻繁に細かな修正をしていただいているようで、とてもありがたいです！\nhttps://zenn.dev/algo...",
-      "category": "AI・技術",
-      "rss_category": "",
-      "image_url": ""
-    },
-    {
-      "title": "ライティングにJev編集長を入れたら、速さと引き換えに文章が普通になった",
-      "url": "https://zenn.dev/yuruconsa/articles/ad3567fcecb646",
-      "site": "Zenn(LLM)",
-      "published": "2026-10-04T04:03:57Z",
-      "description": "最近、Jevを触っています。\nJevは、ChatGPTのように文章を書くAIではありません。\n文章を渡して、\n\nこれは条件を満たしているか\nどのカテゴリに近いか\nどの程度良いか\n次にどの処理へ進めるべきか\n\nといった 「判断」だけを高速にやらせるAI です。\nざっくり言えば、\n\nLLMに長々と考えてもらうほどでもない判断を、高速に処理するAI\n\nという理解で、いまのところ私は使っています。\nでは、...",
       "category": "AI・技術",
       "rss_category": "",
       "image_url": ""
@@ -124,11 +94,91 @@
       "image_url": ""
     },
     {
+      "title": "非エンジニアが挑戦するフィジカルAI──センサー・音声・画像から始める",
+      "url": "https://zenn.dev/choujiya/articles/b89dd0fabd89dd",
+      "site": "Zenn(LLM)",
+      "published": "2026-10-04T00:57:23Z",
+      "description": "AI生成の概念イラスト。実際の画面や機器構成を示すものではない。\n温度はアプリA、スイッチはアプリB、電話などの音声は録音ファイル、カメラは別の画面。\nそれぞれは便利でも、「同じ時間に、同じ場所で、何が起きていたのか」を調べようとすると難しくなる。AIに分析を頼むにも、どの数値がどこの状態で、いつの情報なのかを渡す必要がある。\nセンサーを接続することと、AIが現場を理解できるようにすることは、別の...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "「4GB GPUで8Bモデルを学習できる」というSoupの主張をRTX 5060 Tiで検証したら、学習は本当に動いたがアダプタが空だった",
+      "url": "https://zenn.dev/matsushima_a/articles/day-005-soup-layer-streaming-4gb-gpu",
+      "site": "Zenn(LLM)",
+      "published": "2026-10-04T00:04:39Z",
+      "description": "これは何\n海外AIネタ100日チャレンジ Day 005。\n今回取り上げるのは Soup(Apache-2.0)。\n「単一YAML + 1コマンドでLLMをファインチューニングできる」CLIで、目玉機能はLayer Streaming。\n凍結したベースモデルの重みをVRAMに置かず、ホストRAMからデコーダ層を1層ずつGPUへ流し込むことで、4GB GPUでも8Bモデルのファインチューニングができ...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "Claude Opus 5.5とGPT-6 Solの大幅値下げ ── 安くなったもの、変わらなかったもの、見えないもの",
+      "url": "https://zenn.dev/leading_ai/articles/claude-opus-5-5-gpt-6-sol-price-cut",
+      "site": "Zenn(LLM)",
+      "published": "2026-10-03T23:35:52Z",
+      "description": "序章：AnthropicとOpenAIは、同じ9月22日に値下げを発表した\n2026年9月22日16時31分（UTC、日本時間では23日1時31分）、AnthropicはClaude Opus 5.5を発表した。\nhttps://x.com/AnthropicAI/status/2102435703535939725\nAnthropicが発表した約100分後の18時12分（日本時間3時12分）、今...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
       "title": "AIに評価させたら「Whisperの6分の1」。その数字を翌日撤回した理由",
       "url": "https://zenn.dev/ihsan/articles/ai-whisper-6-1-c3ddb3153854",
       "site": "Zenn(LLM)",
       "published": "2026-10-03T23:00:06Z",
       "description": "Claude Code に組ませた音声認識の比較で、Apple 標準の認識の誤り率は Whisper の約6分の1（5.4% 対 33.6%）と出ましたが、正解データが『Apple の出力を私が直したもの』だったため、翌日この数字を撤回しました。AI の文字起こしや要約、ラベルを人が直して評価の正解にしているなら、その評価は同じ仕組みで元の AI に甘くなります。\n\nApple の出力を私が直した...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "AI の書いた日本語を「人間が書いたっぽく」直す — chaffjs と LLM で 5 周ブラッシュアップした記録",
+      "url": "https://zenn.dev/singularity/articles/chaffjs-llm-brush-up-5-passes",
+      "site": "Zenn(LLM)",
+      "published": "2026-10-03T21:19:51Z",
+      "description": "AI にブログ記事を書かせると、文法は正しいし、情報も揃っています。それでも読み返すと、どうにも「AI が書いた感じ」が抜けきれない — 具体的にどこが悪いのか、どう直せばいいのか、この手触りが掴めないまま公開ボタンを押すか迷っている方は、多いはずです。\n本記事では、実際に AI 生成の技術ブログ 1 本を、chaffjs（日本語の文書健全性チェッカー）と LLM で 5 周ブラッシュアップした記...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "クレーム対応ロールプレイ、役に背景設定を足すと手強い相手が入れ替わる",
+      "url": "https://zenn.dev/every_ai_recipe/articles/complaint-call-role-detail-flip",
+      "site": "Zenn(LLM)",
+      "published": "2026-10-03T21:18:20Z",
+      "description": "TL;DR\n\n「クレーム電話の相手役を3人演じさせ、本番前に対応を練習する」ロールプレイで、各役に「守るもの（譲れない価値観）」を1行足した詳細版と、名前とラベルのみの簡易版を、同一状況・同一の自分の発言で比較した\n詳細版で最後まで抵抗したのは「原因究明を書面で求め続けた役」、簡易版で最後まで抵抗したのは「次回注文するか態度を保留し続けた役」で、同じ人物ではなかった\n\n背景設定は発言の具体性を上げ...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "Claude Code で他社製モデルをサブエージェントとして Claude と協働させる",
+      "url": "https://zenn.dev/ml/articles/6d0f27a130c0a6",
+      "site": "Zenn(LLM)",
+      "published": "2026-10-03T16:23:37Z",
+      "description": "トークンは足りないのに、枠は余っている\n普段の開発はほとんど Claude Code のサブスクリプションで行っている。いまの Claude Fable 5.1 と Opus 5.5 は非常によく働いてくれて、SOTA と呼んで差し支えないと思う。唯一の問題は、トークンがすぐに足りなくなることだ。\nその一方で、手元には他のモデルの枠が余っている。以前 Xiaomi の MiMo の無料枠をもらった...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "図 2 枚で整理する ローカル LLM と MCP の繋がり方",
+      "url": "https://zenn.dev/coffee_break/articles/dify-local-llm-needs-llm-server",
+      "site": "Zenn(LLM)",
+      "published": "2026-10-03T15:00:00Z",
+      "description": "",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "AIが研究チームになった——Geminiを使う「Cogentic」が5つの未解決問題に新成果",
+      "url": "https://zenn.dev/humanos_lab/articles/80c13016cf9daa",
+      "site": "Zenn(LLM)",
+      "published": "2026-10-03T14:44:49Z",
+      "description": "2026年9月30日、Google Researchの研究者らは、複数のAIエージェントを研究チームのように協働させる仕組み「Cogentic」の論文を公開しました。\n目を引くのは、AIが1回で証明を書いたことではありません。複数の証明AIが別々の方向を探索し、検証AIが疑い、確認済みの中間成果だけを台帳へ残して次のラウンドへ渡すことです。\n論文は、Geminiを基盤モデルとして、オンライン学習・...",
       "category": "AI・技術",
       "rss_category": "",
       "image_url": ""
