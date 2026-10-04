@@ -1,8 +1,148 @@
 {
   "site": "Zenn(Python)",
-  "last_updated": "2026-10-04T06:26:52.663126",
-  "total_articles": 6841,
+  "last_updated": "2026-10-04T12:47:11.637058",
+  "total_articles": 6854,
   "articles": [
+    {
+      "title": "サッカーくじ予測の的中率は47%で頭打ちだった — 試した改善策と、代わりに効いたこと",
+      "url": "https://zenn.dev/kota_m/articles/333979b8239a82",
+      "site": "Zenn(Python)",
+      "published": "2026-10-04T12:00:04Z",
+      "description": "この記事について\nサッカーくじ（toto / mini toto / toto GOAL3 / WINNER）の試合ごとの勝ち・引き分け・負けの確率を出し、買い目まで組み立てるWebサービス KACHIMATCH を個人で開発・運用しています。\nこの記事は、予測ロジックをどう作り直してきたか、そして精度を上げるために何を試したかの記録です。先に結論を書きます。\n\n\n1試合の的中率は約47%で頭打ち...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "「そのフォルダは存在しません」は嘘だった。クラウドのIDは1つとは限らない",
+      "url": "https://zenn.dev/shinsei99/articles/drive-url-to-local-path",
+      "site": "Zenn(Python)",
+      "published": "2026-10-04T11:07:19Z",
+      "description": "社内資料に答えるAIエージェントを運用しています。物件の資料はクラウドの共有フォルダに置いてあり、\nチャットには「この物件です」とフォルダのURLがそのまま貼られます。\n貼られたURLをAIが取りに行っても、非公開なので認証で弾かれます。\nなので、URLを同期済みのローカルの実体に読み替える道具を作りました。\nその道具が、実在するフォルダを「存在しません」と答えました。\nしかも「同期されていない別...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "read_csvのメモリが17.7倍になる条件と、pyarrowで5.5倍に縮む話（pandas 3）",
+      "url": "https://zenn.dev/terralien/articles/pandas-read-csv-memory-pyarrow",
+      "site": "Zenn(Python)",
+      "published": "2026-10-04T10:39:09Z",
+      "description": "!\nこの記事は、ブログ「猫だくさん」の記事を Zenn 向けに再構成・追加検証したものです。経緯や読み物としての話は元記事にあります。\n👉 動いたCSV読み込みが、メモリを17倍食べていた｜Pandasの読み込みと概観\n\n\n TL;DR\n\n10万行×4列の CSV を read_csv で読むと、dtype 指定なし：14.2MB → 指定あり：0.8MB（17.7倍差） になった\nただしこの差は...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "推しのMVをWindowsの壁紙にしたら、デスクトップが優勝した！YouTubeプレイリストで推し活PCを作る",
+      "url": "https://zenn.dev/taku0805/articles/f06ebf59d872c0",
+      "site": "Zenn(Python)",
+      "published": "2026-10-04T09:16:29Z",
+      "description": "PCを開いたら推し。ウィンドウを閉じても推し。そんなデスクトップ、欲しくないですか？\n私は iLiFE!やGirls²のMVプレイリスト を、Windowsの壁紙にして使っています。デスクトップへ戻るたびに「はい、かわいい」が発生する。これはもう推し活の設備です。\nただ、YouTubeのURLを貼っただけでは、画質・字幕・再生ボタン・シャッフルが思いどおりになりませんでした。そこで、無料の Suc...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "PythonとCasADiで学ぶLie群上の最適化",
+      "url": "https://zenn.dev/takuya_fukatsu/articles/069f5b78d7597f",
+      "site": "Zenn(Python)",
+      "published": "2026-10-04T08:35:06Z",
+      "description": "!\nこの記事のコードは Jupyter Notebook として GitHub で公開しています。Google Colab でそのまま実行できます。\n\nロボットやドローンの姿勢（回転）を変数とする最適化問題を、Python と CasADi で解けるようになることを目指して、手を動かしながら学ぶノートブックです。\n回転行列は、足し算で更新すると回転行列でなくなってしまううえ、R^\\top R = ...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "ProcessPoolのfork前提を外す設計",
+      "url": "https://zenn.dev/techstudiolab/articles/python-processpool-remove-fork-dependency",
+      "site": "Zenn(Python)",
+      "published": "2026-10-04T07:11:16Z",
+      "description": "ProcessPoolExecutorで親プロセスの状態をforkに継承させているなら、Python 3.14への更新を機に、その依存を残すか判断したほうがよいです。\n私なら、ワーカーに必要な状態はinitializerと明示的な引数から構築する形を基本にします。\nforkを指定するのは、forkそのものが性能やメモリ設計の前提になっており、その制約を理解して維持すると決めた場合です。\n\n Pyt...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "AIにグラフを描画させるために Google ADK の Code Executor を使ってみた",
+      "url": "https://zenn.dev/xxkuboxx/articles/d4adc4ab05a67e",
+      "site": "Zenn(Python)",
+      "published": "2026-10-04T07:07:57Z",
+      "description": "この記事の趣旨\nAIと会話しているときに、グラフを出してもらいたいと思うことってありますよね。なんとなく、「できなさそうだな～」と思ってやっていなかったりしますが・・・。それではと思いブラウザ版Geminiアプリで実際にやってみると、以下の通りテキストベースでそれっぽい感じで返してはくれますが、やはり「これじゃない」感がありますよね。\n\n\n Google ADK の Code Executor に...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "GPT-6.1 SolのMulti-agent対応を読む：ツール実行と最終回答の境界をPythonで検証する",
+      "url": "https://zenn.dev/aipha_euro/articles/773fbb4d115e74",
+      "site": "Zenn(Python)",
+      "published": "2026-10-04T04:26:31Z",
+      "description": "2026年9月29日、OpenAIからGPT-6.1 Solがリリースされました。変更履歴では、Responses APIのMulti-agentベータへの対応も案内されています。Multi-agent自体は7月9日のGPT-5.6の時点で登場しており、今回のニュースは新しいモデルでも使えるようになったことです。変更履歴\n複数のAIに仕事を分担させる、と聞くと、まず「何体動かせるか」が気になります...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "半導体の信頼性評価で学んだ「データの裏側を見る」ということ",
+      "url": "https://zenn.dev/ryuchama/articles/03e7d6a41e2c66",
+      "site": "Zenn(Python)",
+      "published": "2026-10-04T03:36:21Z",
+      "description": "はじめに\nまずは、自分の経歴について簡単に紹介したいと思います。\n私は半導体業界で約12年間働いていました。\n長いようで、振り返ってみるとあっという間でした。\n10年以上同じ業界で働いていると、それなりに色々な仕事をさせてもらいました。\nその中でも、今回は「製品の信頼性評価」の仕事について書いてみたいと思います。\nそして、この経験が現在のデータエンジニアとしての仕事にどうつながっているのかについて...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "Claude Opus 5.5 と Sonnet 5.5 に Blender で3DCGを作らせて比べた",
+      "url": "https://zenn.dev/morinokenjin/articles/opus-sonnet-55-blender",
+      "site": "Zenn(Python)",
+      "published": "2026-10-04T03:26:52Z",
+      "description": "Claude の Opus 5.5 と Sonnet 5.5 を、同じお題で比べるシリーズの2本目です。今回は3DCGで、Blender を Python だけで動かして、静物・機械式時計・アニメーションの3つを作ってもらいました。\nこの記事は、動画で見せた作品と結果を、画像とコードでじっくり見られるようにまとめたものです。\n\n 結果のまとめ\nOpus 5.5 の2勝と引き分けが1つで、比較②3D...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "Claude Opus 5.5 と Sonnet 5.5 を計算で比べた（暗算・プログラム・高速化）",
+      "url": "https://zenn.dev/morinokenjin/articles/opus-sonnet-55-keisan",
+      "site": "Zenn(Python)",
+      "published": "2026-10-04T03:00:18Z",
+      "description": "Claude の Opus 5.5 と Sonnet 5.5 を、同じお題で比べるシリーズの1本目です。今回は計算で、難しい暗算・プログラムで解く計算・遅い集計の高速化の3つを試しました。\nこの記事は、動画で見せた結果を、表とコードでじっくり見られるようにまとめたものです。\n\n 結果のまとめ\n3つとも、どちらのモデルも答えが正しく、引き分けでした。差が出たのは、時間・費用と、答えの確かめ方です。\n...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "ダウ理論は本当に有効？高値・安値の切り上げをUSDJPYで検証",
+      "url": "https://zenn.dev/hiro_algo/articles/fx-dow-theory-test",
+      "site": "Zenn(Python)",
+      "published": "2026-10-04T02:22:46Z",
+      "description": "「高値と安値が切り上がれば上昇トレンド」「両方が切り下がれば下降トレンド」。\nダウ理論は、FXのトレンド判断で最もよく使われる考え方の一つです。\nチャートを説明するには分かりやすい一方、構造が確定した時点では、すでに価格が動いた後です。それでも将来の方向予測や売買戦略に使えるのでしょうか。\nUSDJPYの実データを使い、高値・安値の判定から売買までを機械化して検証しました。\n\n 先に結論\n\n主検証...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "相場が上げて寄った日は、寄りの巻き戻しが効かない。2年分で確かめ直した（振り返り第5回）",
+      "url": "https://zenn.dev/denny/articles/regime-and-two-years",
+      "site": "Zenn(Python)",
+      "published": "2026-10-04T02:04:36Z",
+      "description": "先に前提を書く\n私はプログラムが書けない会社員である。楽天証券のマーケットスピードII RSSとClaudeを使って、自動売買の仕組みを作っている。この記事の数字は、すべて次の条件で得たものだ。\n\n\n一円も動かしていない。 発注しない常駐エージェントを作り、実データで売買判断だけをシミュレートしている\n東証の監視86銘柄の1分ごとの値（8月11日〜10月2日）と、Yahoo の1時間足（2024年...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "エンジニア視点で語る！Pythonで学ぶマクロ経済学入門 69",
+      "url": "https://zenn.dev/maszkot/articles/e452c1218ca773",
+      "site": "Zenn(Python)",
+      "published": "2026-10-04T01:07:53Z",
+      "description": "https://qiita.com/maskot1977/items/cf7a636dd47e4a12d052\nDJミオ（女）\nこんばんは、DJミオです。\nDJレン（男）\nこんばんは、DJレンです。\nミオ\n今夜のテーマは、\n「誰が悪いかより、どう変えるか ― 財源幻想を越えて日本を再設計する方法」\nです。\nレン\nシリーズ第69回にあたる内容ですね。今回はかなり大事です。単に「財政って難しいよね」で...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
     {
       "title": "クリーンアーキテクチャの前にOOPをPythonとTypeScriptで学んだ",
       "url": "https://zenn.dev/satoru_o/articles/9a585a14c4c586",
@@ -29,16 +169,6 @@
       "site": "Zenn(Python)",
       "published": "2026-10-03T05:50:13Z",
       "description": "あるドメインのメール受信先を、共用ホスティングから別のメールサービスへ移すことになりました。移行先の利用者やグループは先に用意できますが、外部の送信サーバーが参照する配送先を変えるのはDNSのMXレコードです。MXは、宛先ドメインのメールをどのサーバーへ配送するかを示します。\n切替前の手順書には、管理者アドレス宛の通知について、こう書いていました。\n\nこの転送が必要なのは切替までです。切替後は移行...",
-      "category": "開発",
-      "rss_category": "",
-      "image_url": ""
-    },
-    {
-      "title": "Cloud Scheduler × Cloud Run 実践パターン ─ 冪等バッチ・エラー通知・ジョブチェーンの完全ガイド",
-      "url": "https://zenn.dev/correlate_dev/articles/cloud-scheduler-patterns",
-      "site": "Zenn(Python)",
-      "published": "2026-10-03T02:34:50Z",
-      "description": "はじめに\n「毎朝6時にデータを同期したい」「月初だけ集計バッチを走らせたい」──GCPでバッチ処理を組む場面で必ず登場するのが Cloud Scheduler です。\nサーバーに crontab を書く方法と比べると、Cloud Scheduler には大きな優位点があります。ジョブの管理・確認・手動実行がコンソールやCLIから行えること、Cloud Monitoring との統合でジョブの成否が...",
       "category": "開発",
       "rss_category": "",
       "image_url": ""
