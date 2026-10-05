@@ -1,8 +1,78 @@
 {
   "site": "Zenn(機械学習)",
-  "last_updated": "2026-10-05T08:57:50.394007",
-  "total_articles": 1968,
+  "last_updated": "2026-10-05T18:18:00.279630",
+  "total_articles": 1975,
   "articles": [
+    {
+      "title": "最小二乗法は何に射影しているのか——列空間と残差から考える",
+      "url": "https://zenn.dev/sodeyama/articles/math-least-squares-projection",
+      "site": "Zenn(機械学習)",
+      "published": "2026-10-05T10:35:44Z",
+      "description": "「射影する」の行き先を確かめる\n株式会社DeploAIで代表取締役CTOをしている袖山剛です。\n営業を科学するプロダクトを作っていて、そこで使う統計を理解するために数学をやり直しています。この記事はその学習記録です。\n統計と機械学習を学び直していると、最小二乗法は何度も出てきます。統計の本では回帰係数の推定量として、最適化の本では目的関数として、機械学習では二乗誤差の損失として。本ごとに呼び方も前...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "S3データストリーミングによる大規模GPU学習の高速化：PB級データへのスケールと先読み設計",
+      "url": "https://zenn.dev/turing_motors/articles/c06193d7988fee",
+      "site": "Zenn(機械学習)",
+      "published": "2026-10-05T08:00:06Z",
+      "description": "はじめに\nTuring の mlops 3 チームの加藤です。2026 年 3 月に Turing に入社し、自動運転モデルの学習基盤の開発ワークフロー改善を担当しています。最近は主に学習を高速化しています。\n今回は、学習時に S3 から直接データを読み出すことで、学習データ容量の制限と、クラスタへの学習データのステージングを無くした時の話をしたいと思います。\n\n この記事の内容\n\n学習データを ...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "今更聞けない「Jev」や「Laya」ってなに？「文章を書かないAI」とは",
+      "url": "https://zenn.dev/tkishioka/articles/jev-explainer",
+      "site": "Zenn(機械学習)",
+      "published": "2026-10-05T06:52:18Z",
+      "description": "気づいたらタイムラインがJevだらけだった\n9月の半ばくらいから、ZennやLinkedInを開くたびに「Jev」という文字が目に入るようになりました。「LLMより数十〜数百倍速い」「出力トークンが無料」「ハルシネーションしない」と景気のいい言葉ばかり流れてきて、今更ですが気になったので、一次情報を頼りに自分なりに整理してみます。\n\n 一言でいうと「文章を書かないAI」\nJevは、サンフランシスコ...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "データ量を 4 分の 1 にしても答えが大きく変わらないのはなぜか？LLM の 4bit 量子化の仕組み",
+      "url": "https://zenn.dev/satto_workspace/articles/c02cef0929ebe3",
+      "site": "Zenn(機械学習)",
+      "published": "2026-10-05T06:48:26Z",
+      "description": "こんにちは！satto workspace でソフトウェアエンジニアをしている田村です。\n\n前回の記事では、ローカル LLM における量子化の基本的な仕組みや、配布されている GGUF ファイルの選び方を整理しました。\n\n配布されている LLM の多くは、重みと呼ばれる数値を 1 つあたり 16bit で持っています。\nこれを量子化によって 4bit に落とすと、単純計算でファイルの容量は 4 分...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "機械学習の理論と実装を埋める3冊",
+      "url": "https://zenn.dev/soraml/articles/20261005_book_ref",
+      "site": "Zenn(機械学習)",
+      "published": "2026-10-05T00:03:25Z",
+      "description": "はじめに\n数年前、自分は業務で需要予測のモデルを回していた。精度はそれなりに出ていたし、ダッシュボードにもきれいなグラフが並んだ。ところがレビューで「この特徴量、なんで効いてるの」と聞かれて何も答えられなかった。コードは書けていた。中で何が起きているかは、ほとんど説明できなかった。\nそこからしばらく、ライブラリのドキュメントを読み漁る日々が続いた。使い方はわかる。けれど正則化を強めるとなぜ汎化する...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "ノイズ除去で音をきれいにすると、異常検知は良くなるか？ — DCASE 2026から考える異常音検知 第2回",
+      "url": "https://zenn.dev/kasahart/articles/kasahart-20260919-dcase2026-asd-02",
+      "site": "Zenn(機械学習)",
+      "published": "2026-10-05T00:00:08Z",
+      "description": "はじめに\nこの記事では、同期した近接・遠方の2マイク録音を使い、近接のみ（B0）、遠方のみ（B1）、複素減算（W1）、スペクトル減算（SS）の4条件を比べます。後段の検知器を固定し、正常参照も各条件で作り直して、ノイズ除去が異常検知の成績にどう影響するかを確かめます。処理の仕組み、検知スコア、同じ実録音の図を順に見ていきます。\n前回の記事では、稼働中の機械の音から変化を見つける異常音検知と、DCA...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "Switch Transformerを実装目線で読む：Top-1 RoutingとExpert Parallelism",
+      "url": "https://zenn.dev/kas_blog/articles/20260509-llm-29-switch-transformer",
+      "site": "Zenn(機械学習)",
+      "published": "2026-10-04T23:12:50Z",
+      "description": "Switch Transformerは、MoE（Mixture of Experts：複数のExpertから一部だけを実行する構造）のroutingを、1 tokenにつき1 Expertへ絞ったTransformerです。\nTop-1と聞くと、「最大scoreのExpertを1つ選ぶだけ」に見えます。しかし実装では、次の処理が一体になって初めてSwitch layerとして動きます。\n\n全tok...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
     {
       "title": "50層のMLPで初期化を比較：活性化と勾配が消える・発散する条件をNumPyで測る",
       "url": "https://zenn.dev/shakeailab/articles/weight-init-gradient-scale",

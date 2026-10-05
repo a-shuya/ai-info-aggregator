@@ -1,8 +1,138 @@
 {
   "site": "Zenn(生成 AI)",
-  "last_updated": "2026-10-05T08:57:50.394007",
-  "total_articles": 4351,
+  "last_updated": "2026-10-05T18:18:00.279630",
+  "total_articles": 4364,
   "articles": [
+    {
+      "title": "Claude Code に書かせたテストとレビュー — テストはあるのに、何もテストしていなかった",
+      "url": "https://zenn.dev/kuu_dqx/books/tests-that-test-nothing",
+      "site": "Zenn(生成 AI)",
+      "published": "2026-10-05T16:04:27Z",
+      "description": "Claude Code にコードとテストを書かせていると、テストはいつも通ります。私の環境では、外部のサイトからデータを集める仕組みの安全装置（アクセス間隔の下限・時間帯の制限・1回の上限・個人情報の消去）をわざと外してみたら、6つともテストは1本も落ちませんでした。テストはあったのに、何もテストしていなかったのです。そこで、実装した会話とは別の文脈でレビューさせることにしました。10日間で26本...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "止められたコマンドは、前半も実行されていなかった — Claude Code の周りで、起きたことを読み違えた5件",
+      "url": "https://zenn.dev/kuu_dqx/articles/what-ran-and-what-did-not",
+      "site": "Zenn(生成 AI)",
+      "published": "2026-10-05T16:04:23Z",
+      "description": "Claude Code に毎日作業をさせていると、コマンドの結果を読み違える場面があります。読み違えるのはエージェントのこともあれば、私のこともあります。\nこの記事では、2026年5月から9月までの記録から、読み違えた5件を集めました。どれも1件だけでは記事にならない大きさですが、並べると同じ形をしています。画面に出たものを、起きたことだと思い込んだ、という形です。\n\n\n\n#\n画面に出たもの\nそう...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "説明文だけで写真を編集できるWebツールを作った話（image-to-image AI）",
+      "url": "https://zenn.dev/imagetoimageai/articles/dd8a5379f0aed7",
+      "site": "Zenn(生成 AI)",
+      "published": "2026-10-05T15:21:03Z",
+      "description": "はじめに\nブラウザ上で動く image-to-image AI ツール「ImageToImageAI」を開発しました。画像をアップロードして、日本語や英語で「どう変えたいか」を書くだけで、AIが新しい画像を生成します。\nhttps://image-to-image-ai.app\n仕組み\nやっていることはシンプルで、次の3ステップだけです。\n\n元画像をアップロード（商品写真・部屋の写真・ポートレート...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "「民主的」なLLMチームは外れ値を生まない――小説のプロットで複数モデルの協調を検証した",
+      "url": "https://zenn.dev/infra_ojisan/articles/llm-team-plot-democracy-experiment",
+      "site": "Zenn(生成 AI)",
+      "published": "2026-10-05T13:37:48Z",
+      "description": "結論から\n5つの別々のLLMに、小説のプロットを「提案→審判→無記名投票→採用」のゲームで3周ずつ進化させました。外れ値を促す仕組みをいくつ足しても、結果は毎回ほぼ同じ地点に収まりました。\n\n5回繰り返した最終プロット同士の類似度は 0.67〜0.71 で、元のプロットとの類似度も 0.78〜0.80 でした。5回はほとんど同じ距離に集まります。\n「最も発散した案」と「最も収束した案」の差は、類似...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "AIの試験導入、「成功」のまま終わらせないために — 本番に育てる判断のしかた",
+      "url": "https://zenn.dev/satoshimizuhara/articles/ai-agent-pilot-to-production",
+      "site": "Zenn(生成 AI)",
+      "published": "2026-10-05T11:34:49Z",
+      "description": "前回は「記憶の設計」を扱い、第1回から続けてきた3つの部品の各論を一区切りとした。今回は連載の締めとして、小さく始めた試験導入を、どう本番に育てるかを書く。\nまず、よく見る光景から入る。先月、什器メーカーの品質管理部門で、半年前に始まったAIの試験導入を見せていただいた。検査記録の読み取りをAIに任せる実験で、精度は良く、現場の評価も上々だった。ただし、半年たった今も「試験」のままで、予算も担当も...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "AIには“手”がない。16年ハードを作ってきた私が、Claude Codeと組んで分かった「任せること」と「任せないこと」",
+      "url": "https://zenn.dev/toprunner/articles/71ae06ffe01a42",
+      "site": "Zenn(生成 AI)",
+      "published": "2026-10-05T11:29:54Z",
+      "description": "無線の距離測定の評価をしていたときのことです。\n2m離したら音が鳴るはずなのに、ときどき鳴らない。AI（Claude Code）と一緒にログを読み、設定を見直し、原因を探りました。\n答えは、私がPCにつないでいたUSBケーブルを抜いた瞬間に出ました。PCから外すと、測定がぴたりと安定したのです。\nAIは、ログを読む速さも資料をまとめる速さも、私よりはるかに上です。でもAIには手がありません。ケーブ...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "ChatGPT × Runwayでオリジナルキャラクター短編アニメを作るまで  ──「ソラノカケラ」EP01制作記",
+      "url": "https://zenn.dev/moshimo_weather/articles/df781b05c4ce54",
+      "site": "Zenn(生成 AI)",
+      "published": "2026-10-05T09:52:25Z",
+      "description": "はじめに\n天気をテーマにした6人のキャラクターが、同じ空を見上げる短編アニメ「ソラノカケラ」を作りました。\nEP01は約40秒の短い作品です。しかし難しかったのは「動画を生成すること」そのものではありませんでした。\n\nキャラクターを毎回同じ見た目にする\n6人の声を聞き分けられるようにする\nセリフとキャラクターの登場を合わせる\n背景の天候変化とセリフを合わせる\nTTS特有の無音や発音ミスを処理する\n...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "ローカルLLMを始めて分かったこと #8",
+      "url": "https://zenn.dev/speedstar007/articles/93d4ac1435cba7",
+      "site": "Zenn(生成 AI)",
+      "published": "2026-10-05T08:21:01Z",
+      "description": "ローカルLLMを始めて分かったこと #8\n\n 大モデル低bitか、小モデルQ4か？ 量子化でどこまで賢さは落ちるのか\n前回は、\nRTX 5060 Ti 16GBとRTX 3090 24GBのどちらを選ぶか\nを考えました。\nそこで次に出てくるのが、\n\nVRAMに入らないなら、量子化を下げればいいのでは？\n\nという話です。\n例えば、\n70B Q2\nと、\n32B Q4\nなら、どちらが賢いのか。\nあるいは...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "「Copilot 企業版なら大丈夫」で決まるのは学習の扱いだけ — AI の主導権を誰が握るか",
+      "url": "https://zenn.dev/exapolicy/articles/24d6e3a9db441f",
+      "site": "Zenn(生成 AI)",
+      "published": "2026-10-05T07:52:18Z",
+      "description": "この記事の問い\n「ChatGPT や Claude の無料版に会社の情報を入れるのは危ない。でも Copilot の企業版 + Windows なら大丈夫」——よく聞く整理です。\nこの「大丈夫」は、何に対しての大丈夫なのでしょうか。企業版が実際に守っているものを公式の文書で確かめると、答えているのは一つの問いだけだと分かります。この記事は、その問いと、答えられていない問いを分け、最後に「AI の主...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "Apple、AIエージェントのリスクを理由にmacOSの「フルディスクアクセス」を厳格化へ",
+      "url": "https://zenn.dev/ai_news_bot/articles/ainews-20261003-t2",
+      "site": "Zenn(生成 AI)",
+      "published": "2026-10-05T06:04:35Z",
+      "description": "!\n2026/10/03 の生成AIニュース\n\n\n 概要\nTechCrunch の10月2日の報道によると、Apple は開発者向けブログで、macOS の 「フルディスクアクセス」 権限について、新たな管理の仕組みを導入すると明らかにしました。フルディスクアクセスは、アプリにファイルやメール、メッセージ、閲覧履歴などへのアクセスを許す強い権限です。Apple は、AI エージェントの能力と自律性...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "日報・週報をgit logからClaude Codeに書かせる：「コミットの羅列」を「伝わる報告」に変えるコツ",
+      "url": "https://zenn.dev/aishigoto/articles/claude-code-nippo-from-git-log",
+      "site": "Zenn(生成 AI)",
+      "published": "2026-10-05T05:21:10Z",
+      "description": "※ この記事は Claude Code（AI）を使って執筆し、掲載しているコードと出力例はすべて実際に実行して確認しています。\n「今日何やったっけ」と思い出しながら日報を書く作業は、エンジニアにとって毎日の負担です。\n材料は git log にほぼ揃っているので、Claude Codeに任せられます。\nただし、「git logから日報を書いて」とだけ頼むと、次のような出力になりがちです。\n- fi...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "AIの文章に「見えない透かし」が入る？――OSS版SynthID Textを動かして試してみた",
+      "url": "https://zenn.dev/kotakotahiro/articles/177fe28603a49e",
+      "site": "Zenn(生成 AI)",
+      "published": "2026-10-05T04:54:06Z",
+      "description": "はじめに\nClaudeが生成するテキストに透かしを入れる、という情報が発表されています。\n参照：How Claude marks AI-generated content\nテキスト透かしにはSynthID Textのアプローチを採用するとのことです。\nそこで、OSSとして公開されているSynthID Textを実際に試しながら、テキスト透かし技術について調べてみました。\n\n 結果の概要\n\n生成AI...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "Seedance 2.0 と 2.5 はどちらを使う？ 尺・解像度・参照枚数で決める",
+      "url": "https://zenn.dev/videogennow/articles/58f90795cb07a8",
+      "site": "Zenn(生成 AI)",
+      "published": "2026-10-05T03:33:46Z",
+      "description": "開示：私は Video Gen Now という、ブラウザで Seedance などの動画生成モデルを動かせるサービスを運営しています。記事内のクレジット数は当サービスの価格表に基づくもので、他のサービスで同じになるとは限りません。\n\n\n 結論\nSeedance 2.5 は 2.0 の上位版ではなく、別の方向に振ったモデルです。2.0 から 2.5 に移ると解像度を手放し、単価も上がります。引き換え...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
     {
       "title": "開発の速さと安定を数字で見たい人のための DORA 入門 ― チームでも1人でも使える5つの指標",
       "url": "https://zenn.dev/yohakucode/articles/dora-metrics-for-solo-dev",
