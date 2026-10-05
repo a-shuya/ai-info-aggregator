@@ -1,8 +1,78 @@
 {
   "site": "Zenn(Python)",
-  "last_updated": "2026-10-04T23:11:18.239355",
-  "total_articles": 6863,
+  "last_updated": "2026-10-05T02:06:11.394587",
+  "total_articles": 6870,
   "articles": [
+    {
+      "title": "機械学習の理論と実装を埋める3冊",
+      "url": "https://zenn.dev/soraml/articles/20261005_book_ref",
+      "site": "Zenn(Python)",
+      "published": "2026-10-05T00:03:25Z",
+      "description": "はじめに\n数年前、自分は業務で需要予測のモデルを回していた。精度はそれなりに出ていたし、ダッシュボードにもきれいなグラフが並んだ。ところがレビューで「この特徴量、なんで効いてるの」と聞かれて何も答えられなかった。コードは書けていた。中で何が起きているかは、ほとんど説明できなかった。\nそこからしばらく、ライブラリのドキュメントを読み漁る日々が続いた。使い方はわかる。けれど正則化を強めるとなぜ汎化する...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "Claude Sonnet 4.5の提供終了に備える Pythonでモデル台帳をCI点検する",
+      "url": "https://zenn.dev/aipha_euro/articles/e035c96f92baa5",
+      "site": "Zenn(Python)",
+      "published": "2026-10-05T00:00:52Z",
+      "description": "「モデル名は設定ファイルに切り出してある」。それでも、提供終了への対応は残ります。通常処理を更新しても、失敗時のフォールバックや夜間バッチに古いモデルが残っていれば、その経路だけ動かなくなるためです。\nAnthropicは2026年9月30日、Claude APIの claude-sonnet-4-5-20250929 を11月30日に提供終了する予定と告知しました。推奨移行先は claude-s...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "レーザー核融合｜一瞬で圧縮する慣性閉じ込め",
+      "url": "https://zenn.dev/maru1228/articles/fusion-laser-fusion",
+      "site": "Zenn(Python)",
+      "published": "2026-10-04T23:20:21Z",
+      "description": "!\nこの記事は自サイト レーザー核融合｜一瞬で圧縮する慣性閉じ込め の再掲（クロス投稿）です。図をインタラクティブに動かせる版は元記事でどうぞ。\n\n磁場でじっくり閉じ込める方式とは正反対のアプローチがレーザー核融合（慣性閉じ込め）。一瞬の勝負で核融合を起こします。\n\n 一瞬で圧縮・加熱する\n小さな燃料の粒（ペレット）に、四方八方から強力なレーザーを一斉に照射。表面が吹き飛ぶ反動で中心が猛烈に圧縮さ...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "サービス終了したSimpleHEMSを再利用して、スマートメーターの電力量を可視化した話",
+      "url": "https://zenn.dev/mitsukida/articles/33dc2f9abdcd4c",
+      "site": "Zenn(Python)",
+      "published": "2026-10-04T23:18:26Z",
+      "description": "はじめに\n数年前、ヤフオクで東芝の SimpleHEMS を格安で購入した。\n当時は、\n\nスマートメーターの値が見える\n売電量・買電量が見える\n\nという点に魅力を感じたものの、実際に使ってみるとかなり不満があった。\nまず画面が古い。\nいかにも2010年代前半のHEMSらしい画面で、現在のWebアプリのようなダッシュボードとは程遠い。\nそしてもっと大きな問題は、\n\n「その瞬間の値」は見えるが、「長期...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "「一番良い候補」はどう決める？ ボルダルールで複数指標の順位をまとめる",
+      "url": "https://zenn.dev/chagama01/articles/cdb5271694c1de",
+      "site": "Zenn(Python)",
+      "published": "2026-10-04T23:00:05Z",
+      "description": "性能ならA、安定性ならB、コストならC。指標ごとの1位がばらばらなとき、どの候補を「総合1位」とすればよいでしょうか。\n研究開発だけでなく、AIモデルやライブラリ、製品、外注先を選ぶ場面でも、すべての指標で優れた候補があるとは限りません。\nそこでこの記事では、各指標の順位を得点に変えて集約する**ボルダルール（Borda count）**を使います。もともとは投票の集計方法ですが、複数のランキング...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "Claude CodeからGmailを2アカウント読む(IMAPとアプリパスワードで小さなMCPサーバーを作る)",
+      "url": "https://zenn.dev/okamoto_tool/articles/claude-code-gmail-two-accounts-mcp",
+      "site": "Zenn(Python)",
+      "published": "2026-10-04T22:04:28Z",
+      "description": "Gmailを2つ使っています。ひとつは個人用、もうひとつは自分で作ったツールの発信用です。Claude Codeからどちらも読めるようにしたかったのですが、claude.aiのGmail連携(コネクタ)はGoogleアカウント1つにしかつながりませんでした。発信用でつなぎ直すと、今度は個人用が読めません。\nGmail API(OAuth)で自作する道もあります。ただ、Google Cloudでアプ...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "PythonでWeb監視ツールを個人開発して、実際に販売してみた",
+      "url": "https://zenn.dev/kyraze205/articles/8092b964f14e4d",
+      "site": "Zenn(Python)",
+      "published": "2026-10-04T22:00:05Z",
+      "description": "はじめに\nPythonを使って、Webサイトやキーワードを監視できるWindows向けのデスクトップツール「WebMonitor」を個人開発しました。\n現在は実際に販売も開始しています。\n今回は、なぜこのツールを作ったのか、どのような機能を実装したのか、そして個人開発したソフトを販売するところまで進めてみた過程を記録します。\nWebMonitorを作った理由\nWebサイトを定期的に確認していて、\n...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
     {
       "title": "標本分布の期待値・分散・標準偏差は何のため？ 標準誤差までつなげて考える",
       "url": "https://zenn.dev/econ_data_lab/articles/sampling-distribution-moments",
