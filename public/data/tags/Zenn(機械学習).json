@@ -1,8 +1,38 @@
 {
   "site": "Zenn(機械学習)",
-  "last_updated": "2026-10-06T19:03:54.067179",
-  "total_articles": 1983,
+  "last_updated": "2026-10-06T23:01:45.327128",
+  "total_articles": 1984,
   "articles": [
+    {
+      "title": "論文で読み違える英単語22選：significant は「重要な」ではない",
+      "url": "https://zenn.dev/matthewstry/articles/652c1e36e0217a",
+      "site": "Zenn(機械学習)",
+      "published": "2026-10-06T14:08:33Z",
+      "description": "英語の論文を読んでいて、単語の意味は全部わかるのに文の意味が通らない、ということがあります。\n多くの場合、原因は知っている単語を、辞書の最初の意味で読んでいることです。\nsignificant を「重要な」と読むと、「その差は統計的に重要だった」という、それらしいけれど違う文になります。正しくは「有意だった」で、主張の強さがまるで変わります。\nこの記事では、分野ごとに意味が変わる英単語を22個まと...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "Keras入門　第４回　Kerasモデルの量子化(LiteRT)",
+      "url": "https://zenn.dev/hoshinagi1219/articles/6c2446701595cc",
+      "site": "Zenn(機械学習)",
+      "published": "2026-10-06T13:23:05Z",
+      "description": "星杜なぎさです。\n今回は、Kerasモデルの量子化についてまとめてみました。\n\n 環境\n\ngoogle colaboratory\n\nPython : 3.13.15\n\nkeras：3.13.2\ntensorflow：2.21.0\nai-edge-litert：2.2.0\n\n\n\n\n\n\n 1. 準備\n\n 1.1 ライブラリの読み込み\n2026年10月6日現在、google colaboratoryには...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "polarsで数十万件のデータ処理を高速化",
+      "url": "https://zenn.dev/cafkaf/articles/why-use-polars-for-hundreds-thousands-of-records",
+      "site": "Zenn(機械学習)",
+      "published": "2026-10-06T10:25:57Z",
+      "description": "私は業務委託や研究で、数十万件規模のデータを使い、機械学習モデルを開発しています。モデル開発では、前処理、学習データの作成、評価、推論で同じデータを何度も読み込みます。工程ごとに全件を読み直すと、RAM を圧迫するだけでなく、不要な列や行を読む時間も積み重なります。\n当初は、読み込んだレコードを list にため、まとめて DataFrame へ変換していました。データ量が増えると、変換前の Py...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
     {
       "title": "アリ型ロボットは別の階へ迂回して渋滞を抜る",
       "url": "https://zenn.dev/morc_b13/articles/e47a8b93c8087c",
@@ -169,26 +199,6 @@
       "site": "Zenn(機械学習)",
       "published": "2026-10-04T15:04:26Z",
       "description": "はじめに\nLLMをエッジデバイスやコスト制約の厳しい環境で動かしたいとき、構造化プルーニング（structured pruning）は実用的な選択肢になる。FFNの隠れ次元を丸ごと削るので、cuBLASやSDPAといった標準カーネルのままで推論が速くなる。ところが既存手法の前提を見ると、話はややこしい。Wandaは校準データからの活性化統計が必須、SliceGPTは大量の校準サンプルでPCA回転を...",
-      "category": "AI・技術",
-      "rss_category": "",
-      "image_url": ""
-    },
-    {
-      "title": "深層学習のカテゴリ変数設計：未知カテゴリの割当先を学習させる",
-      "url": "https://zenn.dev/caron14/articles/categorical-encoding-for-dl",
-      "site": "Zenn(機械学習)",
-      "published": "2026-10-04T14:59:32Z",
-      "description": "はじめに\nカテゴリ変数をニューラルネットワークへ入力するときは、One-Hot Encoding と Embedding の選択に加え、推論時に初めて現れる値の扱いを決めます。以降、One-Hot Encoding を One-Hot と表記します。\nhandle_unknown=\"ignore\" を設定すれば、未知カテゴリで変換処理が止まることは避けられます。しかし、その入力に対してモデルがどの...",
-      "category": "AI・技術",
-      "rss_category": "",
-      "image_url": ""
-    },
-    {
-      "title": "【深層学習論文実装】LSTMを実装してみた",
-      "url": "https://zenn.dev/nonnn/articles/25ed011f905d66",
-      "site": "Zenn(機械学習)",
-      "published": "2026-10-04T13:46:45Z",
-      "description": "こんにちは！Nonです。\nLSTMの論文を実装しようと思ったのですが、様々なLSTMが存在するので、Pytorchの実装に合わせることにしました。\n全実装はこちら\nLSTMのネットワークは\ni_{t} = \\sigma(W_{ii}x_{t} + b_{ii} + W_{hi}h_{t-1} + b_{hi})\nf_{t} = \\sigma(W_{if}x_{t} + b_{if} + W_{hf...",
       "category": "AI・技術",
       "rss_category": "",
       "image_url": ""
