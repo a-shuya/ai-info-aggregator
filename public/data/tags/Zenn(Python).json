@@ -1,14 +1,164 @@
 {
   "site": "Zenn(Python)",
-  "last_updated": "2026-10-06T06:23:05.241646",
-  "total_articles": 6891,
+  "last_updated": "2026-10-06T13:32:10.040996",
+  "total_articles": 6906,
   "articles": [
     {
-      "title": "Claude Opus 5.5 / Sonnet 5.5 へ model だけ変えると 400 になる 5 つの設定",
-      "url": "https://zenn.dev/persimmoq/articles/claude-opus-5-5-sonnet-5-5-breaking-changes",
+      "title": "地域防災計画のRAG：文字数分割から、文書の階層を使うチャンク設計へ",
+      "url": "https://zenn.dev/nakato_tomohito/articles/databricks-rag-parent-chunks",
       "site": "Zenn(Python)",
-      "published": "2026-10-05T23:40:01Z",
-      "description": "2026 年 9 月 22 日に Claude Opus 5.5（claude-opus-5-5、$4 / $20）、9 月 28 日に Claude Sonnet 5.5（claude-sonnet-5-5、$2 / $10）が出ました。Opus 5 / Sonnet 5 で動いているコードの model だけを変えると、公式移行ガイドに書かれている次の 5 つのどれかで 400 になります。全...",
+      "published": "2026-10-06T10:33:33Z",
+      "description": "はじめに\n長いPDFからAIに回答させるRAGを作るとき、資料はどこで区切ればよいのでしょうか。文字数で区切ると別の項目が混ざり、条項ごとに細かく区切ると、回答に必要な前提が別の断片になることがあります。\n海老名市の地域防災計画を使うRAGでは、Databricks上で次の順に設計を見直しました。\n\nページ内の文章を最大1,000文字で分割する。\n章・節・条項のまとまりで分割し、見出しの階層を持た...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "polarsで数十万件のデータ処理を高速化",
+      "url": "https://zenn.dev/cafkaf/articles/why-use-polars-for-hundreds-thousands-of-records",
+      "site": "Zenn(Python)",
+      "published": "2026-10-06T10:25:57Z",
+      "description": "私は業務委託や研究で、数十万件規模のデータを使い、機械学習モデルを開発しています。モデル開発では、前処理、学習データの作成、評価、推論で同じデータを何度も読み込みます。工程ごとに全件を読み直すと、RAM を圧迫するだけでなく、不要な列や行を読む時間も積み重なります。\n当初は、読み込んだレコードを list にため、まとめて DataFrame へ変換していました。データ量が増えると、変換前の Py...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "「アルコール入り美容液は高評価」はブランドの効果だった ― ドイツdm.deの美容液172製品を統計で疑う",
+      "url": "https://zenn.dev/yuki_hogehoge/articles/dm_serum_analysis_fragrance_alcohol_rating",
+      "site": "Zenn(Python)",
+      "published": "2026-10-06T09:59:47Z",
+      "description": "はじめに\nドイツの大手ドラッグストア dm.de の美容液(Serum &amp; Kur)172製品について、価格・rating・成分を集めて統計分析するシリーズの第2弾です。\n\n第1弾: 成分の配合順位と価格の関係\nデータ収集パイプラインの解説\nコードは GitHub にあります\n\n今回の問いはこれです。\n\n香料やアルコール系溶媒が入っている美容液は、ユーザー評価(rating)が低いのか?\n...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "AI で開発が速くなったので、リリース前のチェックを GitHub Actions に移した話",
+      "url": "https://zenn.dev/jtcc/articles/release-checks-lost-commit-guard",
+      "site": "Zenn(Python)",
+      "published": "2026-10-06T09:14:14Z",
+      "description": "こんにちは。日本トレカセンターでバックエンドエンジニアをしている小林です。\n日本トレカセンターでは、AI を使った開発が進み、デプロイの頻度も大きく上がりました。一方で、リリース前の確認は人が差分や管理画面を見比べる運用のままでした。\nリリースが増えると、環境変数の設定や hotfix の取り込みを忘れる機会も増えます。開発が速くなったぶん、リリース前の確認も今の頻度に合わせて見直す必要がありまし...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "HDMIキャプチャでSwitchの画面を読み、ポケモンの「そらをとぶ」を自動で操作する（OpenCV）",
+      "url": "https://zenn.dev/yadevloper/articles/7b7ca1c2c03a49",
+      "site": "Zenn(Python)",
+      "published": "2026-10-06T08:58:06Z",
+      "description": "PCからNintendo Switchを操作する仕組みを作っている。前回までで、PCのCLI（swctl）からFT232とPro Micro経由でSwitchのボタンを押せるようになった。\nhttps://zenn.dev/yadevloper/articles/8511421f3b37d7\n今回は、HDMIキャプチャでSwitchの画面をPCに取り込み、画面を読みながら操作する。題材はポケモン ...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "データで見るV・ファーレン長崎 #12026シーズン序盤8試合から「勝利の条件」を考える",
+      "url": "https://zenn.dev/zyohyo/articles/969b77eea5a26a",
+      "site": "Zenn(Python)",
+      "published": "2026-10-06T08:53:13Z",
+      "description": "データで見るV・ファーレン長崎 #1\n\n 2026シーズン序盤8試合から「勝利の条件」を考える\n\n ① はじめに\nV・ファーレン長崎を応援する中で、\n\n「長崎が勝つ試合と負ける試合には、データ上どのような違いがあるのか？」\n\nという疑問を持った。\nそこで今回は、2026/27シーズン序盤8試合を対象に、\n\nシュート数\n枠内シュート\nボール支配率\nコーナーキック\nホーム・アウェイ\n相手の順位\n前半得...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "pandas 3で代入が静かに効かなくなる｜2系と結果が逆になる3パターンと、移行前の見つけ方",
+      "url": "https://zenn.dev/terralien/articles/pandas3-copy-on-write-silent-assignment",
+      "site": "Zenn(Python)",
+      "published": "2026-10-06T08:39:59Z",
+      "description": "!\nこの記事は、ブログ「猫だくさん」の記事を Zenn 向けに再構成し、検証を追加したものです。抽出と欠損処理の基本を読み物として書いた元記事はこちらです。\n👉 警告が出ても通ったので、表が変わったとは限らない｜Pandasの抽出と欠損処理\n\n\n TL;DR\n\npandas 3 は Copy-on-Write（CoW）が常に有効です。同じ代入コードを 2.2.3 / 2.3.3 / 3.0.6 で...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "Polarsのscan_csvは速いとは限らない｜explainと実測で見たlazyの効きどころと罠3つ",
+      "url": "https://zenn.dev/terralien/articles/polars-lazy-scan-csv-pitfalls",
+      "site": "Zenn(Python)",
+      "published": "2026-10-06T07:51:22Z",
+      "description": "!\nこの記事は、ブログ「猫だくさん」の記事を Zenn 向けに再構成し、計測を追加したものです。lazy の基本を読み物として書いた元記事はこちらです。\n👉 集計したのに料理が出てこない｜Polarsの遅延評価\n\n\n TL;DR\n\n2,000,000行×20列（315MB）の CSV で2列だけ集計したところ、scan_csv（lazy）は read_csv（eager）より速くなかった（中央値 ...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "定時タスクが止まった晩の分は、窓から外れると二度と戻らない — 冪等は取りこぼしを回収しない",
+      "url": "https://zenn.dev/ishiriku/articles/9a898bb76f0dec",
+      "site": "Zenn(Python)",
+      "published": "2026-10-06T07:11:51Z",
+      "description": "外部サービスにたまる日次の記録を、毎晩1回カレンダーへ転記する定時タスクを動かしていました。Claude Code の Scheduled Task から、転記用の Python スクリプトを呼ぶ形です。同じ記録を二重に入れないように、書く前にカレンダーを読んで、すでにある日は飛ばしていました。いわゆる冪等です。\nある日、カレンダーに抜けている日があるのに気づきました。調べると、抜けは2つの層にな...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "「失敗したら別経路へ」を、全部の失敗に効かせない",
+      "url": "https://zenn.dev/miyakona/articles/fallback-scope-by-failure-type",
+      "site": "Zenn(Python)",
+      "published": "2026-10-06T06:54:55Z",
+      "description": "外部からファイルを集めるバッチへ、「最初の取得に失敗したら、代わりの入手元を1回だけ試す」という処理を加えました。取り逃しを減らす、小さな改善のつもりでした。\nところが、導入後最初の実行で起きた振り替えは、すべて狙っていた失敗とは別のものでした。代わりの入手元から回収できたものはありません。それだけなら空振りで済みますが、次工程へ渡す作業リストでは、元の取得先が振り替え先のURLへ置き換わっていま...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "日本語入力が壊れないソフトウェア KVM を自作した話 ― 文字ではなく「キーの位置」を送る",
+      "url": "https://zenn.dev/yutakatsuhako/articles/a6131d55e385e6",
+      "site": "Zenn(Python)",
+      "published": "2026-10-06T04:26:19Z",
+      "description": "1 台のキーボードとマウスで Mac と Windows を行き来したい。それだけのことなのに、日本語入力が絡むとまともに動く道具がなかなか無い。この記事は、その問題を**「キーを文字に変換せず、物理キーの位置をそのまま送る」**という一点で解決した自作ソフトウェア KVM「rawkvm」の紹介です。\n先に作られた道具（ハードウェア切替器、USB リンクケーブル、Synergy 系、lan-mou...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "launchdで常駐させたサーバーがiCloudの画像を0バイトで返す — datalessファイルとEDEADLK",
+      "url": "https://zenn.dev/acs_developer/articles/icloud-dataless-launchd-edeadlk",
+      "site": "Zenn(Python)",
+      "published": "2026-10-06T04:13:29Z",
+      "description": "自宅のMacで常駐させている自作の画像ギャラリー（FastAPI製・LaunchAgentで起動）で、ある日から画像の大半が表示されなくなりました。アクセスログはすべて 200 OK です。\n原因は、iCloud Driveの「Macストレージを最適化」で実体がクラウドへ退避された（dataless）ファイルと、launchdから起動したプロセスはdatalessファイルを自動で取り寄せないという...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "エンジニア視点で語る！Pythonで学ぶマクロ経済学入門 〜第1回から第70回まで総復習スペシャル〜",
+      "url": "https://zenn.dev/maszkot/articles/b79e009401956e",
+      "site": "Zenn(Python)",
+      "published": "2026-10-06T03:37:23Z",
+      "description": "https://qiita.com/maskot1977/items/36a9458ee2b8bbb62794\n「エンジニア視点で語る！Pythonで学ぶマクロ経済学入門」\n\nDJミオ（女）\nこんばんは、DJミオです！\nDJレン（男）\nこんばんは、DJレンです。この番組は、マクロ経済学の基本をPythonで実際に手を動かしながら学ぶと同時に、マクロ経済の構造をエンジニアにも分かりやすい言葉で捉え直...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "ボタン一つで「隣町の今夜泊まれる宿」を出す家出アプリを、自宅のラズパイとCloudflareの無料枠で作った",
+      "url": "https://zenn.dev/otona_lab/articles/3c9edf2092dc00",
+      "site": "Zenn(Python)",
+      "published": "2026-10-06T02:56:05Z",
+      "description": "作ったもの\n大人の家出 — https://otona-iede.otona-lab.app/?src=zenn\n家に帰りたくない夜に、ボタンを一つ押すと、いまいる場所から少し離れた（初期設定5km以上）今夜泊まれる宿を一軒だけ出します。気に入ったら、そのまま楽天トラベルで予約できます。\n\n\n画面にあるのは「今夜、ここから家出する」のボタンと、場所の入力欄だけです。タイトルも説明も置いていません。...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "財務省の為替介入データをPythonで読む（8月の15.4兆円の日別内訳は11月上旬に出る）",
+      "url": "https://zenn.dev/nexgendata/articles/2fe8b7f5740b97",
+      "site": "Zenn(Python)",
+      "published": "2026-10-06T02:33:13Z",
+      "description": "財務省は2026年8月28日、7月30日〜8月26日の為替介入額が 15兆3,993億円 だったと公表しました。ただ、月次の公表は合計額だけです。何日にいくら介入したか は四半期ごとの公表を待つ必要があり、7〜9月分は財務省の公表予定で 11月2日〜9日 となっています。\nこの記事では、財務省が公開している介入実績の全データ（CSV、1991年4月〜）をPythonの標準ライブラリだけで読み、更新...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "Claude Opus 5.5 と Sonnet 5.5 に家計簿アプリを直させ、見せていないテストで比べた",
+      "url": "https://zenn.dev/morinokenjin/articles/opus-sonnet-55-kaishu",
+      "site": "Zenn(Python)",
+      "published": "2026-10-06T02:09:13Z",
+      "description": "Claude の Opus 5.5 と Sonnet 5.5 を、同じお題で比べるシリーズの4本目です。今回はアプリ改修で、小さな家計簿アプリのバグ修正・機能追加・別の銀行の明細の取り込みを頼み、AI に見せていないテストで採点しました。\nこの記事は、動画で見せた結果を、表とコードでじっくり見られるようにまとめたものです。2つのモデルが実際に直したところを、差分でそのまま載せています。\n\n 結果の...",
       "category": "開発",
       "rss_category": "",
       "image_url": ""

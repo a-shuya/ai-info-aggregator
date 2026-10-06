@@ -1,8 +1,158 @@
 {
   "site": "Zenn(LLM)",
-  "last_updated": "2026-10-06T06:23:05.241646",
-  "total_articles": 6548,
+  "last_updated": "2026-10-06T13:32:10.040996",
+  "total_articles": 6563,
   "articles": [
+    {
+      "title": "Microsoft GraphRAG は何が違う？ ベクトル検索RAGと同じ社内文書で比べてみた",
+      "url": "https://zenn.dev/takuh/articles/c9dec6828136c7",
+      "site": "Zenn(LLM)",
+      "published": "2026-10-06T10:05:24Z",
+      "description": "「社内文書を RAG で検索できるようにしたのに、『この半年で繰り返し起きている問題は何？』と聞くと的外れな答えが返ってくる」。Dify などでナレッジ検索を作ったことがある人なら、一度はぶつかる壁だと思います。\nこの記事では、Microsoft が公開している GraphRAG が「ふつうのベクトル検索 RAG」と何が違うのかを仕組みから整理し、そのうえで 同じ34本の社内文書・同じ10問 を、...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "【godot-llm-gamebench】GPT-6.1 Solの遅さは解消したのか：高速化の告知後に全effortを測り直した",
+      "url": "https://zenn.dev/oubakiou/articles/a39f4bde8c7e74",
+      "site": "Zenn(LLM)",
+      "published": "2026-10-06T10:00:05Z",
+      "description": "本記事は 実装タスクを外注するモデルは何が適切なのか？ミニゲームを実装させるベンチマーク のシリーズです。このベンチマークを読む上での注意点は以下を参照してください。\n\n過去の記事では、公開翌日の 2026/9/30 に gpt-6.1-sol を測り、「点数と品質は gpt-6-sol より安定したが、子の実働時間が 1.8〜4.2 倍に伸びた」という結果になりました。ただしこの時間の伸びは、モ...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "Claude Codeに自分のガードを直させたら、Codexのレビューが9往復した",
+      "url": "https://zenn.dev/cutlet_of_pork/articles/ai-agent-self-improvement-guard-review-loop",
+      "site": "Zenn(LLM)",
+      "published": "2026-10-06T06:42:58Z",
+      "description": "この間の話。Claude Code に業務ツールの改修を任せている最中に、私が仕込んでおいたフックに Claude Code 自身が引っかかって止まった。\n[EVAL_FACE_BASH] cp scripts/tests/guard-eval-face.test.sh /tmp/review/scripts/tests/\nレビュー用にリポジトリの構成を一時ディレクトリに写そうとしただけで、本物の...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "エージェントの記憶はどこに置くか —— Skills・AGENTS.md・引き継ぎノートをClaude CodeとIBM Bobで検証した",
+      "url": "https://zenn.dev/enterprise_ai/articles/b8856a49d7f6af",
+      "site": "Zenn(LLM)",
+      "published": "2026-10-06T05:59:59Z",
+      "description": "この記事のまとめ\nClaude CodeとIBM Bobで同じリポジトリを動かし、コーディングエージェントの「記憶の置き場所」について3つの検証をしました。\n\n\n\n検証\n確かめたこと\n結果\n\n\n\n\n1. Skills\ndescriptionの書き方で、Skillの呼ばれやすさは変わるか\n変わらなかった。手順型のSkillは全試行で呼ばれた\n\n\n2. 引き継ぎノート\nノートで、セッションやツールをま...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "AIエージェントに渡す権限をToken Exchange（RFC 8693）で絞る",
+      "url": "https://zenn.dev/painter/articles/a7f94aa30bdb16",
+      "site": "Zenn(LLM)",
+      "published": "2026-10-06T05:11:41Z",
+      "description": "はじめに\nAIエージェントをプロダクトに組み込むにあたって、エージェントがツールを呼び出すときの認可方式を検討しました。データを参照するツールと書き込むツールでは必要な権限が違うため、ツールごとに権限を分ける必要がありました。その方法として調べたのがOAuth 2.0 Token Exchange（RFC 8693）です。\nこの記事では、エージェントに渡す権限をToken Exchangeで絞る方...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "Snowflake の AI_EXTRACT で文章から項目を取り出す",
+      "url": "https://zenn.dev/mochitec_tech/articles/0eef883ba3ca67",
+      "site": "Zenn(LLM)",
+      "published": "2026-10-06T05:07:51Z",
+      "description": "はじめに\nEC サイトに届いた問い合わせの文章から、商品名・注文番号・症状・希望する対応の 4 つを、列として取り出したいとします。Snowflake の AI_EXTRACT を使い、架空の 10 件で試しました。注文番号がない行に何が返るかと、希望する対応の言い回しをそろえる方法も確かめました。\n\n AI_EXTRACT はどんな関数か\nAI_EXTRACT は、文章やファイルから、指定した情...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "その設計、2年後も運用できますか――ベクトルDB周辺コンポーネントの選び方",
+      "url": "https://zenn.dev/shintaroamaike/articles/cd45a1ab0e1fcf",
+      "site": "Zenn(LLM)",
+      "published": "2026-10-06T04:12:20Z",
+      "description": "はじめに:周辺コンポーネントは、2つの質問で決まる\nクライアントのデータをベクトル化してRAGに使う、という要件は共通していても、それを支えるシステムの内部構成は製品によってまったく異なる。\nある製品は合意形成や配信に汎用のミドルウェアを組み合わせ、別の製品は独自の仕組みを一から書く。索引やクエリエンジン以外の部分、具体的にはメタデータ管理、更新ログ、永続化、非同期処理をどう組み立てるかという裏方...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "Claude API を組み込んだアプリの原価は1回2.2円、約72%は出力だった — 失敗と再試行も原価に入れる",
+      "url": "https://zenn.dev/logdriven/articles/claude-api-cost-2-yen-per-call",
+      "site": "Zenn(LLM)",
+      "published": "2026-10-06T03:15:05Z",
+      "description": "Claude API を組み込んだ個人開発のアプリで、実際の使用量ログから1回あたりの費用を出したら、約2.2円だった。そのうち約72%は出力トークンだった。さらに、失敗や再試行の分も原価に含めて見積もり直した。\nCocoDate（AIデートプランナー）の判断ログ D-92〜D-101（2026-08-29〜30）と D-231（2026-09-13）から、価格と回数の上限をどう決めたかと、実測で...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "501Bの超巨大オープンウェイトモデル「Beam」登場！概要と使い方",
+      "url": "https://zenn.dev/ament3/articles/ai-digest-2026-10-06-0211",
+      "site": "Zenn(LLM)",
+      "published": "2026-10-06T02:12:18Z",
+      "description": "近年、商用プロプライエタリなLLM（GPT-4oやClaude 3.5 Sonnetなど）に対抗する形で、オープンウェイト（重み公開型）モデルの開発が急速に進んでいます。\nそんな中、Reflection AIから**501B（5,010億パラメータ）という圧倒的なスケールを誇る最新オープンウェイトモデル「Beam」**が発表され、海外のテックコミュニティ（Hacker News等）で大きな注目を集...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "必要なToolだけをAgentに渡すことで46.9%のトークン消費を抑える方法",
+      "url": "https://zenn.dev/knowledgesense/articles/f053192a51613f",
+      "site": "Zenn(LLM)",
+      "published": "2026-10-06T01:51:44Z",
+      "description": "導入\nこんにちは、株式会社ナレッジセンスの須藤英寿です。\n今回は、コーディングAgentを提供するCursorが実運用で取り入れている、Agentのトークン消費を抑えるための工夫について紹介します。\nhttps://cursor.com/blog/improved-token-efficiency\n\n\n サマリー\n開発の場面でAgentの利用は進んでいますが、LLMを繰り返し使う都合上、利用にはお...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "Claude Opus 5.5 / Sonnet 5.5 へ model だけ変えると 400 になる 5 つの設定",
+      "url": "https://zenn.dev/persimmoq/articles/claude-opus-5-5-sonnet-5-5-breaking-changes",
+      "site": "Zenn(LLM)",
+      "published": "2026-10-05T23:40:01Z",
+      "description": "2026 年 9 月 22 日に Claude Opus 5.5（claude-opus-5-5、$4 / $20）、9 月 28 日に Claude Sonnet 5.5（claude-sonnet-5-5、$2 / $10）が出ました。Opus 5 / Sonnet 5 で動いているコードの model だけを変えると、公式移行ガイドに書かれている次の 5 つのどれかで 400 になります。全...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "AIが書いた「違う鍵は弾く」テストは緑。順番を変えたら違う鍵に14バイト返ってきた",
+      "url": "https://zenn.dev/ihsan/articles/ai-14-9200b641f6e6",
+      "site": "Zenn(LLM)",
+      "published": "2026-10-05T23:00:05Z",
+      "description": "「違う鍵の端末は繋がらない」というテストが緑だった通信部分で、正しい鍵で一度つないだ後に違う鍵を試すと、拒否されずに 14バイトの応答 が返りました。AIエージェントが足して「検証済み」と報告したテストやフックも、違反入力で一度も赤くしたことがなければ、壊れていても同じ緑を返します。\n\nイメージ図：違う鍵のテストは緑だった。けれど正しい鍵で一度つないだ後なら、違う鍵のクライアントにも14バイトの応...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "今日の技術トレンド",
+      "url": "https://zenn.dev/bambampurin/articles/2026-09-09-tech-daily",
+      "site": "Zenn(LLM)",
+      "published": "2026-10-05T22:34:31Z",
+      "description": "!\n本日の技術トレンドでは、AI領域において単一のLLM活用から「AIエージェント」や「フィジカルAI（具身知能）」への実用化シフトが顕著になっています。一方、PythonエコシステムではOpenAIによるAstralの買収が大きな注目を集めており、uvやRuffをはじめとする次世代Python開発ツールチェーンの標準化が加速しています。\n\n\n AI/LLM：大規模言語モデルから「AIエージェント...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "常駐型AIチャットエージェントが扱うログの「保持期間・削除」設計",
+      "url": "https://zenn.dev/hach/articles/chat-agent-data-retention-deletion-design",
+      "site": "Zenn(LLM)",
+      "published": "2026-10-05T22:11:00Z",
+      "description": "チャットに常駐して会話・添付ファイル・要約結果を蓄積していくタイプのAIエージェントは、使えば使うほど「過去を覚えていて便利」になる一方、その裏側では契約金額・人事情報・取引先名といった機密を含む生ログがどこかに積み重なっていきます。この記事では、常駐エージェントが持つチャットログ・添付ファイル・ベクトル化した要約データを「いつまで持つか」「消してと言われたときにどこまで消えるか」という保持期間・...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "質問許可の指示は『聞くかどうか』でなく『どう聞くか』を変えた",
+      "url": "https://zenn.dev/every_ai_recipe/articles/ai-question-limit-3-no-guess-check",
+      "site": "Zenn(LLM)",
+      "published": "2026-10-05T21:27:24Z",
+      "description": "TL;DR\n\nnote版・ブログ版では非エンジニア向けに「AIへの丸投げ依頼に『質問は3つまでに絞って』と一言添えると、質問の数を減らせる」という手順を紹介した。Zenn版では、なぜこの指示が効いたのかを一歩掘り下げる\n情報がほぼ空の依頼（対象も内容も不明な「告知文を作って」）を、(A)無指示 (B)「質問は3つまで」 (C)B+「箇条書き・重要な順」の3条件で独立したサブエージェントに渡した\n\n...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
     {
       "title": "MCPツール説明文のリンターを、Pythonの試作から採点を1点も変えずにTypeScriptへ移植した",
       "url": "https://zenn.dev/nomunomu0504/articles/forecall-lint-port",
