@@ -1,8 +1,58 @@
 {
   "site": "Zenn(Python)",
-  "last_updated": "2026-10-05T18:18:00.279630",
-  "total_articles": 6879,
+  "last_updated": "2026-10-06T00:10:28.804090",
+  "total_articles": 6887,
   "articles": [
+    {
+      "title": "ARIMAで為替は予測できる？EURUSD・USDJPYをWalk-Forward検証",
+      "url": "https://zenn.dev/hiro_algo/articles/fx-arima-eurusd-usdjpy-walk-forward",
+      "site": "Zenn(Python)",
+      "published": "2026-10-05T13:44:39Z",
+      "description": "ARIMAは、過去の値動きから将来を予測する古典的な時系列モデルです。\n現在はLSTMやTransformerなどが注目されますが、複雑なAIを使う前に「昔からある統計モデルでも為替を予測できるのでは」と考える人もいるでしょう。\nそこで今回は、ARIMAを使ってEURUSDとUSDJPYの次の値動きを予測し、実際に売買した場合の損益を検証しました。\n結論から書くと、ARIMAの方向正解率はおおむね...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "ChatGPT広告の計測を設計する前に：帰属と因果をローカルコードで分ける",
+      "url": "https://zenn.dev/tsukaima_kobo/articles/ae1c2817ec508b",
+      "site": "Zenn(Python)",
+      "published": "2026-10-05T12:23:08Z",
+      "description": "広告の購入件数を正しく記録できても、その広告が購入を増やしたとは限りません。2026年10月5日のChatGPT広告の発表には、画像付きの新形式と測定の拡充が含まれています。本記事では、開発者が計測を組み込む前に考えたい「イベント」「帰属」「因果効果」の境界を、実行可能な小さな例で整理します。\n購入や登録のイベントを扱う開発者を想定しています。ChatGPT広告の実アカウントやPixel/CAPI...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "拾い直しの窓を過ぎた予約投稿は、承認済みのまま二度と出ない",
+      "url": "https://zenn.dev/tarowhitey/articles/scheduled-post-catchup-window",
+      "site": "Zenn(Python)",
+      "published": "2026-10-05T11:41:21Z",
+      "description": "承認済みなのに、出ていない投稿が2本ある\n予約投稿の台帳を検査にかけると、こう出ます。\n🔴 もう出ない投稿が 2 件: POST-0824, POST-0903\nどちらも状態は approved（承認済み）です。予定時刻はそれぞれ3週間以上前に過ぎています（ID はこの記事用に置き換えています）。\n台帳だけを見ると、この2本は「承認済みで、配信を待っている」ように見えます。実際には、もう二度と配信...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "1つのAIが2社を見る。「混ぜない」はプロンプトではなくSQLで守る",
+      "url": "https://zenn.dev/shinsei99/articles/multi-tenant-data-wall",
+      "site": "Zenn(Python)",
+      "published": "2026-10-05T11:09:35Z",
+      "description": "社内チャットに常駐しているAIエージェントに、2つの会社の資料を持たせています。\n\n全社が入っているチャット … A社の場\nある担当者との個人チャット … B社の場\n\n索引（SQLite + FTS5）は1つです。放っておくと、A社の場からB社の書類が検索できます。\n「絶対に混ぜないでほしい」という要件が出たときに何をしたか、その過程で踏んだ穴を残します。\n\n 方針: プロンプトで頼まない\n最初に...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "DUPLO互換ブロックを3Dプリンターで作る、実測寸法と公開データの比較、PETGのはめ合いと縮みの補正",
+      "url": "https://zenn.dev/noricha/articles/duplo-compatible-brick",
+      "site": "Zenn(Python)",
+      "published": "2026-10-05T10:55:23Z",
+      "description": "DUPLO（デュプロ、大きい方のレゴ）と混ぜて使えるブロックを、3D プリンターで作っています。\n先に結果を書くと、こうなりました。\n\n実物をノギスで測った寸法どおりに刷ったら、PETG では上下ともすかすかだった\nポッチを 0.30 mm 太く、裏の筒とリブを 0.15 mm きつくして、はめ合いがちょうどになった\nそのままだと外形が実物より約 0.17 mm 小さく出るので、外形とピッチだけ ...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
     {
       "title": "Python製トランスパイラー(tranp)の紹介",
       "url": "https://zenn.dev/rog_works/articles/bacd59f8ed2842",
@@ -74,11 +124,41 @@
       "image_url": ""
     },
     {
+      "title": "AIエージェントに渡す道具は、動詞で書いて2つの質問で止める｜呼び出し直前のゲートをPythonで書く",
+      "url": "https://zenn.dev/tsukurugawa/articles/1588c6a081d3a2",
+      "site": "Zenn(Python)",
+      "published": "2026-10-05T02:28:07Z",
+      "description": "AIエージェントに道具（ツール）を渡す段階になると、手が止まります。\nコードは書ける。APIもつながる。それでも「この道具を、エージェントに勝手に呼ばせていいのか」が決まらない。精度がもう少し上がれば任せられるはず、と待っているうちに、判断だけが先送りになっていきます。\n止まっている原因は、精度ではありません。道具の書き方と、問いの立て方です。\nこの記事では、エージェントが道具を呼ぶ直前に通す「ゲ...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "AIに任せる範囲を、会議で決めない｜判定表・判断ログ・検収基準の実装テンプレート",
+      "url": "https://zenn.dev/tsukurugawa/books/e82626dca8d74b",
+      "site": "Zenn(Python)",
+      "published": "2026-10-05T02:09:13Z",
+      "description": "「AIにどこまで任せるか」を会議で決めようとして、3回決まりませんでした。4回目は議論をやめて、表にしました。\n\nこの本は、そのとき使った判定表・設定ファイル・判断ログ・検収基準・集計スクリプトを、記入済みの状態でまとめた実装テンプレートです。\n\n・軸は2本だけ：取り返しがつくか／誰に届くか\n・L0〜L3 の割り当て表と、ビル設備の点検・賃貸物件の更新での記入例\n・理由のない上書きを FAIL に...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
       "title": "自作MCPサーバーをClaude Codeに登録する：設定は3行、つまづくのはパスとスコープだけ",
       "url": "https://zenn.dev/yukihayama/articles/mcp-claude-code-register",
       "site": "Zenn(Python)",
       "published": "2026-10-05T01:43:55Z",
       "description": "自作のMCPサーバーをClaude Codeに登録したのに、ツール一覧に何も出てこない。先週の私がまさにその状態でした。サーバー単体では普通に動くのに、Claude Code側からだけ見えない。切り分けに1時間使った結果、原因は「起動コマンドのパス指定」と「スコープの理解不足」という、登録まわりの2箇所だけに集約されました。この記事では、FastMCPで作ったPythonサーバーを登録する3行の手...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "CTWMメモリを縮小再現したら最初は惨敗、原因を直したら論文通りの傾向が出た話",
+      "url": "https://zenn.dev/matsushima_a/articles/day-006-core-tail-memory-prediction",
+      "site": "Zenn(Python)",
+      "published": "2026-10-05T01:26:15Z",
+      "description": "要約\n長期間動き続けるLLMエージェントが外部メモリを「凍結した世界モデル」として使うと、記憶が少数の「コア」状態に集中し、稀にしか訪れない「テール」状態の予測誤差が蓄積していく——という現象を報告した論文 Heavy-Tailed Memory Traces in Long-Horizon Language Agents(arXiv:2610.00010)を見つけた。著者らはこれに対して、Cor...",
       "category": "開発",
       "rss_category": "",
       "image_url": ""

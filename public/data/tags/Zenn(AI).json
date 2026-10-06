@@ -1,8 +1,118 @@
 {
   "site": "Zenn(AI)",
-  "last_updated": "2026-10-05T18:18:00.279630",
-  "total_articles": 14518,
+  "last_updated": "2026-10-06T00:10:28.804090",
+  "total_articles": 14526,
   "articles": [
+    {
+      "title": "ロボットモデルなしでアームを動かす — Claude × MCP で SO-101 を直接操作する",
+      "url": "https://zenn.dev/oggata/articles/0893726c1ebf3d",
+      "site": "Zenn(AI)",
+      "published": "2026-10-05T12:19:36Z",
+      "description": "ロボットモデルなしでアームを動かす — Claude × MCP で SO-101 を直接操作する\n今回は、ロボット用の学習を一切していない汎用 LLM（Claude）に、カメラ映像を見ながら直接アームを動かさせることに挑戦する。使うのは、LeRobot の Python API と、Claude Desktop から外部ツールを呼び出すための MCP（Model Context Protocol...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "Claude Code の cloud session に最大 $250 のクレジット ── 申請期限は10月8日 15:59（日本時間）",
+      "url": "https://zenn.dev/chooser/articles/deal-001-news",
+      "site": "Zenn(AI)",
+      "published": "2026-10-05T12:18:36Z",
+      "description": "上原正吉（EarthLink Network Co., Ltd.）。Claude Codeを開発の主体に据え、20を超えるプロダクトを1人で同時に開発・運用しています。これは、その現場の実測記です。\n\n\n Claude Code の cloud session に最大 $250 のクレジットが付きます ── 申請期限は日本時間 10月8日 15:59\n\n\n 結論\nClaude Code を Pro...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "AIへの指示頼みをやめ、ルールとコードで安全性を支えるようにした話",
+      "url": "https://zenn.dev/jworks_hq/articles/jworks-20261004-c9dd1e96",
+      "site": "Zenn(AI)",
+      "published": "2026-10-05T12:17:35Z",
+      "description": "PowerShellで既存のJavaScriptファイルを読み込み、別の文字コードで書き戻した結果、日本語部分が文字化けし、構文エラーになりました。ファイルを編集したつもりが、内容を壊していたのです。\nこの失敗をきっかけに、既存ソースの変更は差分編集に限定し、ファイル全体を読み直して書き戻す方法を禁止しました。ただ、後から振り返ると、これは単発の編集事故への対策だけではありませんでした。商品選定、...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "Hyperparameter Ensembles 論文解説：ハイパーパラメータ探索を予測の多様性へ変える",
+      "url": "https://zenn.dev/mantis_ryuji/articles/hyperparameter-ensembles",
+      "site": "Zenn(AI)",
+      "published": "2026-10-05T12:13:29Z",
+      "description": "1. はじめに\nハイパーパラメータ探索では、いくつもの設定でモデルを学習し、検証性能が最も高いものを選ぶ。最終的に欲しいのは一つのモデルなので、選ばれなかった学習結果は捨てられがちである。\nしかし、単体で二番手のモデルは、最良モデルとほとんど同じ入力で間違えるかもしれない。一方、単体では三番手のモデルが、最良モデルの苦手な入力に強いこともある。複数モデルを使うのであれば、「それぞれがどれだけ良いか...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "AIに画面操作させる前に考える、API・MCP Tool・Skill・E2Eの境界",
+      "url": "https://zenn.dev/tonbi_attack/articles/ai-operation-boundary",
+      "site": "Zenn(AI)",
+      "published": "2026-10-05T12:12:28Z",
+      "description": "はじめに\nAIエージェントに「ユーザーを無効にして」と依頼すると、画面を開き、対象を検索し、ボタンを押して完了メッセージを読む操作になりがちです。\n人間には自然な手順です。しかし、AIに同じ仕事を任せる経路として、画面操作が最も効率的とは限りません。AIは画面の読み取り、待機、クリック位置、表示文言、モーダルの変化を扱う必要があります。途中で失敗すると、何が更新済みかを画面だけから判断しにくくなり...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "# AIに何を答えさせるか。その先で、何を守らせるか。",
+      "url": "https://zenn.dev/khrt/articles/e1803efeab61c5",
+      "site": "Zenn(AI)",
+      "published": "2026-10-05T11:54:21Z",
+      "description": "AIと対話していると、答えを直してほしい場面がある。\n「そこまでは断定していない」\n「その条件を落とさないでほしい」\n「結論を変えた理由を示してほしい」\n一つひとつは、短い指摘だ。しかし、そこには、こちらが何を重視し、何を受け入れられないと考えているかが表れる。\n私は、このような修正・調整の発話に着目し、2026年9月、人工知能学会の言語・音声理解と対話処理研究会（SLUD）で発表した。長期対話か...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "Claude Code の横に TODO リストを出し続ける plugin を作った",
+      "url": "https://zenn.dev/aromarious/articles/20261005-todo-pane",
+      "site": "Zenn(AI)",
+      "published": "2026-10-05T11:51:29Z",
+      "description": "はじめに\nClaude Codeで長く作業していると、途中で寄り道や確認をはさむうちに「今なにをやっていて、何が残っているのか」が分からなくなる。以前はTodoWriteのタスク一覧が画面に出ていたが、最近のモデルでは出なくなった。\nClaudeは、TODOリストがなくても作業を進められるようになった。でも、人間の私はそんなに速く進化できない。覚えていられなくて泣きそうになる。\nそこで、Claud...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "AI文章のゲートは、AIっぽさではなく工程の痕跡で落とす",
+      "url": "https://zenn.dev/tarowhitey/articles/writing-gate-block-review",
+      "site": "Zenn(AI)",
+      "published": "2026-10-05T11:41:28Z",
+      "description": "「AIっぽい」を落とすゲートは、公開ゲートにならない\nLLM に記事や報告文を書かせる工程を組むと、公開前に機械のチェックを挟みたくなります。\nよくある最初の案は「AIっぽい表現」を落とすことです。重要な転換点 本記事では 今後が期待されます のような言い回しを禁止語リストにする。あるいは AI 検知器にかけて、点数が高いものを止める。\n当社も最初はその方向で考えました。結論としては、どちらも公開...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "Gitコマンド 一覧",
+      "url": "https://zenn.dev/heatshimmer/articles/34bb0f4bdb1603",
+      "site": "Zenn(AI)",
+      "published": "2026-10-05T11:40:05Z",
+      "description": "Gitコマンド一覧\nGitでよく使うコマンドを、自分用の備忘録としてまとめました。\n「何をするコマンドなのか」から探せるように、用途ごとに整理しています。\n!\nGitを使い始めたばかりの場合は、まず\ninit → add → commit → push\nの流れを覚えると分かりやすいです。\n\n\n Gitの基本的な流れ\nGitでファイルを管理するときの基本的な流れは次のとおりです。\nファイルを編集\n↓...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "指定したモデルと違うものが動いていた。APIのパラメータを信じすぎた話",
+      "url": "https://zenn.dev/limit_lab_works/articles/api-param-ignored-license-trap",
+      "site": "Zenn(AI)",
+      "published": "2026-10-05T11:38:23Z",
+      "description": "結論から言う。無料の画像生成APIで「このモデルを使う」と明示的に指定したのに、実際に動いていたのは別のモデルだった。しかもそのモデルは商用利用ができないライセンスだった。気づかずに商品素材として使っていたら、普通にアウトだった。\n\n 新しい事業に、画像生成の手段が必要になった\n今育てている案件の一つで、AI生成素材をBOOTHで販売する計画を進めている。着手前には必ず法務確認を通す運用にしている...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "AIには“手”がない。16年ハードを作ってきた私が、Claude Codeと組んで分かった「任せること」と「任せないこと」",
+      "url": "https://zenn.dev/toprunner/articles/71ae06ffe01a42",
+      "site": "Zenn(AI)",
+      "published": "2026-10-05T11:29:54Z",
+      "description": "無線の距離測定の評価をしていたときのことです。\n2m離したら音が鳴るはずなのに、ときどき鳴らない。AI（Claude Code）と一緒にログを読み、設定を見直し、原因を探りました。\n答えは、私がPCにつないでいたUSBケーブルを抜いた瞬間に出ました。PCから外すと、測定がぴたりと安定したのです。\nAIは、ログを読む速さも資料をまとめる速さも、私よりはるかに上です。でもAIには手がありません。ケーブ...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
     {
       "title": "AgentCoreで使うブラウザ選定 -AgentCore Browser-",
       "url": "https://zenn.dev/riku0120/articles/ed74ef9c3d7882",
@@ -94,26 +204,6 @@
       "image_url": ""
     },
     {
-      "title": "AIが返すJSONを信じない ― TypeScriptの「型は実行時に消える」から始めるAI開発",
-      "url": "https://zenn.dev/genhiroko/articles/468fc439f79b0b",
-      "site": "Zenn(AI)",
-      "published": "2026-10-05T09:52:24Z",
-      "description": "この記事で伝えたいこと\nAIを組み込んだアプリを作る言語として、TypeScriptを選ぶ人が増えています。理由はいくつもありますが、私が一番大事だと思っているのは次の一点です。\n\n型は「AIの出力を受け取る境界線」を設計するための道具になる。\n\nただし、そこで落とし穴になるのが 「TypeScriptの型は実行時には消える」 という性質です。この記事では、ここを入口にして、AI時代にTypeSc...",
-      "category": "AI・技術",
-      "rss_category": "",
-      "image_url": ""
-    },
-    {
-      "title": "無料のAIポートレート生成ツールおすすめ10選【2026年版】登録不要のツールも紹介",
-      "url": "https://zenn.dev/donaldxs/articles/847b19bf89c0bc",
-      "site": "Zenn(AI)",
-      "published": "2026-10-05T09:49:45Z",
-      "description": "この記事の対象と範囲\n対象読者：LinkedIn や履歴書、登壇資料のプロフィール欄に使う写真を、手元の自撮りから無料で作りたい方。登録せずに試せるか、ウォーターマークが入るか、商用で使えるかを先に知っておきたい方を想定しています。\n扱う範囲：自分の写真をもとにポートレートを作る10ツールの無料プランです。登録の要否、無料枠、ウォーターマーク、ダウンロードサイズ、スタイル、調整方法、商用利用、最安...",
-      "category": "AI・技術",
-      "rss_category": "",
-      "image_url": ""
-    },
-    {
       "title": "別の問いなのに前の結論へ戻るなら、そのチャットを閉じる",
       "url": "https://zenn.dev/amayann/articles/long-chat-restart",
       "site": "Zenn(AI)",
@@ -159,16 +249,6 @@
       "site": "Zenn(AI)",
       "published": "2026-10-05T09:03:19Z",
       "description": "公式: https://render.janction.jp\nJANCTION Render は、AI エージェントが MCP サーバーか HTTP API として呼べる、Blender のクラウド GPU レンダーファームです。この記事は、今週ふさいだ穴を 1 つだけ書きます。ブラウザの中で動いている AI に、手元の .blend をどう渡すか、です。\n\n 困っていたこと\nClaude.ai ...",
-      "category": "AI・技術",
-      "rss_category": "",
-      "image_url": ""
-    },
-    {
-      "title": "AIにCAD設計を任せたら、自由なPythonより制約付きDSLの方が成功した",
-      "url": "https://zenn.dev/0xliclog/articles/093e202c66fdd3",
-      "site": "Zenn(AI)",
-      "published": "2026-10-05T09:00:05Z",
-      "description": "前回の記事では、FreeCADを操作するAIエージェントに、定義済みのCAD操作をJSONで呼び出させる「DSL方式」と、Pythonコードを書かせる「コード生成方式」を比較しました。\nhttps://zenn.dev/0xliclog/articles/f8873eadc547c0\n指定寸法の箱や円柱、穴加工など、比較的単純な8タスクを各方式40回、合計80回試したところ、コード生成方式はDSL...",
       "category": "AI・技術",
       "rss_category": "",
       "image_url": ""
