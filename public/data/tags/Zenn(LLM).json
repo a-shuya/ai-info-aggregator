@@ -1,8 +1,68 @@
 {
   "site": "Zenn(LLM)",
-  "last_updated": "2026-10-07T08:59:06.155714",
-  "total_articles": 6575,
+  "last_updated": "2026-10-07T16:20:31.479624",
+  "total_articles": 6582,
   "articles": [
+    {
+      "title": "RAGのリランキングをJevで評価：ベクトル検索の精度は本当に改善するのか",
+      "url": "https://zenn.dev/rarino/articles/f4727700d03da1",
+      "site": "Zenn(LLM)",
+      "published": "2026-10-07T13:25:04Z",
+      "description": "はじめに\nRAG やエージェントの検索で、ベクトル検索の上位候補を別のモデルで並べ直す「リランキング」は、導入するだけなら比較的容易です。難しいのは「導入する価値があるかどうか」を判断することではないでしょうか？数件の例を眺めて良さそうに見えても、遅延・費用・障害点が一つ増える判断の根拠にはなりません。\nこの記事では、ベクトル検索の上位候補を TypeSafe の判断モデル Jev で並べ直したと...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "思考オフで AI のコスト 59% 減、品質はほぼそのまま。前提は評価セット",
+      "url": "https://zenn.dev/keisato848/articles/thinking-off-cost",
+      "site": "Zenn(LLM)",
+      "published": "2026-10-07T13:10:13Z",
+      "description": "!\n写真からレシピを作る AI（Gemini 2.5 Flash）で思考を切ると、評価セット上の 1 推論あたりのコストは ¥0.855 から ¥0.347 に下がりました（約 59% 減）。AI が採点した 4 軸の点数は、ほぼ変わりませんでした。コスト最適化の選択肢に「思考オフ」を入れる価値はあると思います。\n\n!\n「切れば品質を保ったままコストが下がる」とまでは言えません。評価セットが易しく...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "AIが「正しい」と判断した値を信用してよいのか？ ― Validationを実験してみる",
+      "url": "https://zenn.dev/kondonator/articles/e6aa8c27fc3408",
+      "site": "Zenn(LLM)",
+      "published": "2026-10-07T12:30:23Z",
+      "description": "はじめに\n前回の記事では、AIにデータを扱わせるときの Access Control について実験しました。\nAIにどのデータを扱わせてよいのか？ ― Access Controlを実験してみる\nAIが、\n\n「この候補者の情報を取得してください」\n\nと判断したとしても、それだけでそのデータへのアクセス権が与えられるわけではありません。\n誰がアクセスしているのか、どのテナントに属しているのか、そのリ...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "Qwen3.8-27B を Kaggle の無料枠と RunPod で動かす — 詰まった所と直し方の実録",
+      "url": "https://zenn.dev/toripy/books/qwen-kaggle-runpod",
+      "site": "Zenn(LLM)",
+      "published": "2026-10-07T12:05:33Z",
+      "description": "27B のローカル LLM を、手元に GPU がない状態から Kaggle の無料 GPU（T4×2）と RunPod の時間貸し GPU（H100）で動かした記録です。公式の llama.cpp ビルドが Kaggle で起動しない（glibc 2.38）、CUDA::cuda_driver が見つからない、RunPod の API が Cloudflare に 1010 で弾かれる、放置でセ...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "「要約して上書きするメモリ」は過去の正しさを答えられない、を自作コードで確かめた",
+      "url": "https://zenn.dev/matsushima_a/articles/day-008-non-destructive-memory-as-of-query",
+      "site": "Zenn(LLM)",
+      "published": "2026-10-07T12:02:46Z",
+      "description": "要約\n組織向けLLMエージェントの「記憶」フレームワークであるMem++(コード: AIDAChip-Inc/mem-plus-plus、Apache-2.0)を検証対象に選んだ。売りは「書き込み時に要約・圧縮して古い記録を上書きしない」非破壊メモリで、一般的なエージェントメモリ(Mem0やZepなど)が苦手な「過去のある時点では何が正しかったか」という質問に強い、という主張だ。\n結論から書くと、...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "バイブコーディングセキュリティ入門　全てを疑え",
+      "url": "https://zenn.dev/git_dungeon/articles/vibe-coding-security-intro",
+      "site": "Zenn(LLM)",
+      "published": "2026-10-07T09:15:56Z",
+      "description": "序章　信頼しても信用するな\nAIにメモアプリを作ってもらった。ログインできる。メモを保存できる。自分のメモが画面に出る。見た目も悪くない。\nさて、公開してよいだろうか。\nここで、もう一人の利用者を用意してみる。Aのメモを、Bが読むことはできないか。ログアウトした状態ではどうか。画面に表示されないメモへ、APIから直接アクセスしたらどうなるか。\n自分のメモが見えることと、他人のメモが見えないことは、...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
     {
       "title": "Jev「見せてもらおうか、OpenAIのDecisions APIの性能とやらを」",
       "url": "https://zenn.dev/canly/articles/c1c03518949c54",
@@ -24,26 +84,6 @@
       "image_url": ""
     },
     {
-      "title": "0。ツール呼び出しを10回以上終えた後、自分のセッション管理ツールが返した「使用済みトークン数」だった",
-      "url": "https://zenn.dev/hideki_tamae/articles/context-usage-reports-zero",
-      "site": "Zenn(LLM)",
-      "published": "2026-10-07T06:31:13Z",
-      "description": "はじめに\n0。\nこれが今回の数字です。何の0かというと、このタスク（Zenn/Qiita技術記事の自動投稿パイプライン）が今回のセッションでgit fetchやgit log、複数のファイル読み込み、Web検索、そして数千文字規模のJSONを返す大きめのツール呼び出しまで一通り終えた後に、自分自身のセッション管理ツール（get_session）へ問い合わせて返ってきたcontext_usage.u...",
-      "category": "AI・技術",
-      "rss_category": "",
-      "image_url": ""
-    },
-    {
-      "title": "Selective State Space Modelを実装目線で理解する",
-      "url": "https://zenn.dev/kas_blog/articles/20260509-llm-31-mamba-ssm",
-      "site": "Zenn(LLM)",
-      "published": "2026-10-07T06:03:20Z",
-      "description": "Mambaの実装を読むと、selective_scan、d_state、dt_projといった名前が一度に現れます。どれがmodelの表現力を担い、どれが計算を速くする仕組みなのかを分けないと、全体像をつかみにくくなります。\n先に結論を示すと、Mambaは次の三層に分けると理解できます。\n\n\nSelective SSM：入力に応じて何をstateへ残すかを決める\n\nSelective Scan：入...",
-      "category": "AI・技術",
-      "rss_category": "",
-      "image_url": ""
-    },
-    {
       "title": "記憶の先に信念を置く──PoSが明示的信念状態で長期エージェントの文脈管理を変える仕組み",
       "url": "https://zenn.dev/lixian/articles/pos-explicit-belief-states-long-horizon-agents",
       "site": "Zenn(LLM)",
@@ -59,6 +99,36 @@
       "site": "Zenn(LLM)",
       "published": "2026-10-07T01:29:16Z",
       "description": "はじめに\n「Google Colabで最新LLMを試す」シリーズでは、open-weightモデルを実際にロードし、どこまで動くかを確認してきました。\n今回はその応用として、ローカルLLMとLightRAGを組み合わせ、東京工科大学の公開Webページから関係グラフを作ってみます。\nQwen2.5-7B-InstructをNF4で4bit量子化し、関係抽出と回答生成をColabのGPUで行います。\n...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "インシデント調査エージェントの品質を動かしたのはツールとプロンプトだった",
+      "url": "https://zenn.dev/ymotongpoo/articles/20261007-what-made-agents-better",
+      "site": "Zenn(LLM)",
+      "published": "2026-10-07T00:00:07Z",
+      "description": "この記事で扱うこと\n前編のオブザーバビリティのAIエージェントをどう評価するかでは、シナリオを仕様として別に置き、グレーダーが実際に何が起きたかを判定する形を追いました。最後に環境の忠実度が課題として残りました。シミュレーションが多すぎれば実際の失敗を見落とし、実環境の変動が多すぎればベンチマークがノイズだらけになるからです。\nこの記事では、Grafana Assistant Investigat...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "小分けエージェントは本当に速い？検索→要約→送信で実測した",
+      "url": "https://zenn.dev/mskbhd/articles/lab-171-vs-note",
+      "site": "Zenn(LLM)",
+      "published": "2026-10-06T23:54:21Z",
+      "description": "きっかけ\nX (旧Twitter) でこんな投稿を見かけた。\n\nmore agents isnt the fix, smaller scoped agents is, Kimi just found out what claude code sub-agents have shipped for months\n\n「エージェントを増やすことが解決策じゃない、スコープを小さく絞ったエージェントこそが解...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "GLM-5.3の評価をどう読むか──能力テストと安全対策テストを混ぜない",
+      "url": "https://zenn.dev/jinsights/articles/6f42563e483e08",
+      "site": "Zenn(LLM)",
+      "published": "2026-10-06T23:11:56Z",
+      "description": "AIエージェントの導入評価では、タスク成功率と安全性を一つの「良さ」にまとめない方がよい。GLM-5.3のニュースを入口に、評価条件を分離し、運用上の権限へ接続する方法を整理します。攻撃手順や安全対策を回避する方法は扱いません。\n\n 一次情報と、本稿の位置づけ\nClaudeを開発するAnthropicは2026年9月29日、Z.aiのGLM-5.3についてサイバー能力と安全対策の評価を公開しました...",
       "category": "AI・技術",
       "rss_category": "",
       "image_url": ""

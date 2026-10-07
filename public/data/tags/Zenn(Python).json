@@ -1,8 +1,158 @@
 {
   "site": "Zenn(Python)",
-  "last_updated": "2026-10-07T08:59:06.155714",
-  "total_articles": 6917,
+  "last_updated": "2026-10-07T16:20:31.479624",
+  "total_articles": 6932,
   "articles": [
+    {
+      "title": "ずらしたはずの定期タスクが、スタンバイ復帰で同じ秒に10本起動した — 同時実行数をラッパーで抑える",
+      "url": "https://zenn.dev/mameresearcher/articles/standby-resume-task-stampede-slots",
+      "site": "Zenn(Python)",
+      "published": "2026-10-07T14:56:42Z",
+      "description": "個人の自動化プロジェクトで、Windows のタスクスケジューラに 170 本ほどの定期タスクを載せている。各 SNS の数字を取ってくる集計タスクもその一部で、夜の 21:05〜21:50 に数分ずつずらして並べてある。一部には RandomDelay も付けてある。\nある晩、その 10 本が 21:50:50 の同じ秒に一斉に起動していた。\n\n 症状\nタスクの「前回の実行時刻」を並べると、こう...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "Pyxelでゲーム画面の描画と更新を試す",
+      "url": "https://zenn.dev/numasha/articles/30d82290b53fd5",
+      "site": "Zenn(Python)",
+      "published": "2026-10-07T14:44:02Z",
+      "description": "前書き\n部活の後輩にPythonの講座を行ったのでせっかくならPythonを使って文化祭で展示するゲームをみんなで作りたいと思い、Pyxelを使ったゲーム開発にチャレンジしてみました。\n全く使用経験が無かったので動画や記事を見ながら簡単な実装を行ってみました。\n\n できたもののイメージ\n\n+をクリックすると数字が増えて、-をクリックすると数字が減るカウントシステム。\n\n 作ってみた\n\n Pyxel...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "実行中の行が光るエディタを作ったら、Python に SIGUSR1 を送ることになった",
+      "url": "https://zenn.dev/lqs/articles/38c52355f9ebff",
+      "site": "Zenn(Python)",
+      "published": "2026-10-07T14:28:57Z",
+      "description": "!\nブラウザだけで動く子ども向けプログラミング環境 akicode の開発記録、技術編の2回目です。\n\nプログラミングを習い始めたころ、紙に変数の表を書いて、1行ずつ値を書き換えていった人は多いと思います。\n\n\n\n行\ni\ntotal\n\n\n\n\n2\n0\n0\n\n\n3\n0\n0\n\n\n3\n1\n1\n\n\n\nakicode では、この作業を画面に移しています。見えるものは2つです。\n1つめはステップ実行と変数パネル...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "流入が急に減ったとき、記事を直す前にSearch Console APIで「需要の波」を切り分ける",
+      "url": "https://zenn.dev/blstweb/articles/d07eb7b36e8cd6",
+      "site": "Zenn(Python)",
+      "published": "2026-10-07T14:20:53Z",
+      "description": "9月下旬、運営しているサイトの検索からのクリックが、1日70件前後から45件前後に落ちました。\nちょうどその直前に、いくつかの記事のタイトルを書き換えていました。「タイトル変更が裏目に出た？」と焦りましたが、Search Console の API で切り分けてみると、**原因はタイトルではなく、1本の記事の「需要の波」**でした。\nこの記事では、そのときに使った切り分けの手順とコード（Pytho...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "XAUUSDは25,297pipsでも不採用｜ゴールド戦略が検証基準を超えられなかった理由",
+      "url": "https://zenn.dev/hiro_algo/articles/xauusd-25297-pips-rejected",
+      "site": "Zenn(Python)",
+      "published": "2026-10-07T14:17:51Z",
+      "description": "バックテストで**+25,297 pips**と表示されたら、その戦略を採用したくならないでしょうか。\n今回は、XAUUSD（ゴールド）の15分足戦略を、条件を作った期間とは別の2025年・2026年で検証しました。損益はプラスで、勝率も57.3%でした。\nそれでも結論は不採用です。\n理由は、PFと最大ドローダウンが事前基準に届かなかったうえ、利益の91.2%をたった1取引に依存していたからです。...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "Pythonのグラフpyplotで日本語が□に文字化けしてしまう時のメイリオ設定",
+      "url": "https://zenn.dev/gama417ken/articles/d6d0a5fc318c1b",
+      "site": "Zenn(Python)",
+      "published": "2026-10-07T13:31:43Z",
+      "description": "毎回やって毎回忘れてしまいます。\n以下のでメイリオ設定にします。\nimport matplotlib.pyplot as plt\n\nplt.rcParams[\"font.family\"] = \"Meiryo\"",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "【個人開発】Raspberry Pi × Arduinoで、危険な温度をメールで知らせる見守りシステム",
+      "url": "https://zenn.dev/taito0816/articles/thsense-raspi-arduino-iot",
+      "site": "Zenn(Python)",
+      "published": "2026-10-07T10:55:10Z",
+      "description": "はじめに\n暑い夏が続くなか、一人暮らしをしている高齢の方が、部屋の気温が上がっていることに気づかないまま熱中症で救急搬送されるケースが増えています。\nそこで、離れた場所で暮らす家族を介護している人に向けて、部屋の温度・湿度を見守り、危険な温度になったらメールで知らせるシステム「THSense」を個人開発しました。この記事では、その構成と実装を紹介します。\n\n部屋の温度・湿度を1分ごとに測る\n35℃...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "scikit-learn による表形式データの前処理メモ：欠損値・カテゴリ変数・スケーリングと Pipeline",
+      "url": "https://zenn.dev/972697325291316/articles/ca7a765b087bae",
+      "site": "Zenn(Python)",
+      "published": "2026-10-07T10:07:58Z",
+      "description": "表形式データで機械学習モデルを作るときの前処理を、scikit-learn の道具に沿って整理したメモです。欠損値の扱い、カテゴリ変数のエンコーディング、スケーリング、それらを ColumnTransformer と Pipeline でまとめる方法、そして前処理の前に行う探索的データ解析（EDA）の基本を扱います。scikit-learn を触ったことはあるものの、前処理の定石を一通り確認したい...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "GFSとAMeDASだけで天気予報AIを作った(岩手15地点・RMSE 2.8→1.2℃)",
+      "url": "https://zenn.dev/akagifreeez/articles/weather-ai-gfs-amedas-temperature-ai",
+      "site": "Zenn(Python)",
+      "published": "2026-10-07T09:24:38Z",
+      "description": "これは何か\n数値予報モデル(NWP)が各地でどちら方向に外しやすいかを学習して補正する、地点別気温予報の個人研究です。米国GFS(全球モデル・0.25度)の予報を入力に、気象庁AMeDASの実測を正解として、岩手県を中心とする15地点の時間別気温を予測します。\n検証1年間(2025-09〜2026-08)の評価で、GFSの直値比でRMSEを57%削減できました。この記事は、その仕組みと、無人運用を...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "競馬AIでROI 177%を出して、それが幻だと証明するのに2年かかった",
+      "url": "https://zenn.dev/marunage_kacho/articles/keiba-ai-4-mirages",
+      "site": "Zenn(Python)",
+      "published": "2026-10-07T08:21:09Z",
+      "description": "!\nこの記事は、有料本『競馬AIは市場に勝てるのか — 18,777レースで検証して負けた話』のダイジェストです。記事だけでも完結して読めます。\n\n\n TL;DR\n\n2020〜2026年のJRA全レース(18,777レース・約25万出走)を自動収集し、LightGBMで予測モデルを作った\nバックテストは最高でROI 177%。しかし精査するとこれは幻で、以後も「勝てているように見える結果」に合計4...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "競馬AIは市場に勝てるのか — 18,777レースで検証して負けた話",
+      "url": "https://zenn.dev/marunage_kacho/books/keiba-ai-verification",
+      "site": "Zenn(Python)",
+      "published": "2026-10-07T08:17:22Z",
+      "description": "LightGBMと2020〜2026年のレースデータで競馬予測AIを作り、バックテストでROI 177%を叩き出し、そして全てが幻だと自分で証明するまでの記録。データリーク、multiple testing、市場データの汚染、後知恵バイアス — MLプロジェクトを殺す4つの罠を実データで踏み抜き、最後にパリミュチュエル市場の効率性を18万頭分の実測で確認した。勝ちたい人には残念な、しかし機械学習の...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "meowdoku in python and pygame",
+      "url": "https://zenn.dev/fygar256/articles/4deb8ec4ec534d",
+      "site": "Zenn(Python)",
+      "published": "2026-10-07T07:01:24Z",
+      "description": "Claudeに、pythonとpygameでのmeowdokuを作らせました。\nルール\n・色の付いた各エリアに猫をちょうど1匹ずつ置く\n・各行・各列にも猫はちょうど1匹ずつ\n・猫どうしは隣り合えない（斜めも含む）\n操作\n左クリック      : 空 → × → 猫 の順に切り替え\n右クリック      : × のオン/オフ\n空マスからドラッグ : まとめて × を付ける\nN キー         ...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "皇居ランのGPXを読み解いたら、日本の「高さの原点」のそばを走っていた話",
+      "url": "https://zenn.dev/nonejp/articles/e3071be6ca6f90",
+      "site": "Zenn(Python)",
+      "published": "2026-10-07T06:57:20Z",
+      "description": "はじめに\n最近、久しぶりに皇居ランを再開しました。仕事帰りに1周5km、ゆっくりペースで走っています。\n高校時代は部活のトレーニングでよく皇居の周りを走っていました。あの頃は嫌々周回していたコースですが、大人になった今は、誰に言われるでもなく自分から走りに行く楽しさを実感しています。\nとはいえ、体力は落ちていました。皇居ランのコースには高低差があり、半蔵門へ向かう上り坂がキツいことも、前半で飛ばし...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "エンジニア視点で語る！Pythonで学ぶマクロ経済学入門 71",
+      "url": "https://zenn.dev/maszkot/articles/af1b7018dc2173",
+      "site": "Zenn(Python)",
+      "published": "2026-10-07T04:30:30Z",
+      "description": "https://qiita.com/maskot1977/items/b7100c90437c36ff8e90\n――――――――――\n【ラジオ教育番組】\nエンジニア視点で語る！Pythonで学ぶマクロ経済学入門 第71回\nテーマ： “財源”の誤解から考える日本経済の未来\n――――――――――\nDJミオ（女）：\nこんばんは！「エンジニア視点で語る！Pythonで学ぶマクロ経済学入門」、ナビゲーターの...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "QUBO++でASCIIアートを作る：文字選びを3次元のバイナリ変数で最適化する",
+      "url": "https://zenn.dev/comp_lab/articles/ascii-art-pyqbpp",
+      "site": "Zenn(Python)",
+      "published": "2026-10-07T03:59:00Z",
+      "description": "文字を並べて絵を描く ASCII アートを、QUBO（Quadratic Unconstrained Binary Optimization）で作ってみます。\n\n入力: 筆者の猫の写真（512×512、ヒストグラム平坦化後）\n\n出力: 64 列 × 32 行の文字だけで描いた猫。少し離れて見てください\nハーフトーン化では「ぼかすと元画像に近くなる白黒画像」を QUBO で求めました。ASCII ア...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
     {
       "title": "CodexとPythonを学ぶ第1〜4回：JSONの変更から、テストの失敗と復旧まで",
       "url": "https://zenn.dev/yushiyamamoto/articles/codex-python-learning-01-04",

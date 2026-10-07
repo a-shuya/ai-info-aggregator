@@ -1,8 +1,128 @@
 {
   "site": "Zenn(AI)",
-  "last_updated": "2026-10-07T08:59:06.155714",
-  "total_articles": 14582,
+  "last_updated": "2026-10-07T16:20:31.479624",
+  "total_articles": 14587,
   "articles": [
+    {
+      "title": "0。ツール呼び出しを10回以上終えた後、自分のセッション管理ツールが返した「使用済みトークン数」だった",
+      "url": "https://zenn.dev/hideki_tamae/articles/context-usage-reports-zero",
+      "site": "Zenn(AI)",
+      "published": "2026-10-07T06:31:13Z",
+      "description": "はじめに\n0。\nこれが今回の数字です。何の0かというと、このタスク（Zenn/Qiita技術記事の自動投稿パイプライン）が今回のセッションでgit fetchやgit log、複数のファイル読み込み、Web検索、そして数千文字規模のJSONを返す大きめのツール呼び出しまで一通り終えた後に、自分自身のセッション管理ツール（get_session）へ問い合わせて返ってきたcontext_usage.u...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "自作のAIゲーム費用計算機に、リリース済みの自分のゲームを入れてみた：予測 vs 実際",
+      "url": "https://zenn.dev/yunany90/articles/d052274bfde5e4",
+      "site": "Zenn(AI)",
+      "published": "2026-10-07T05:32:40Z",
+      "description": "コード経験ゼロから、AIに言葉で説明してゲームを作っている韓国の個人開発者です。最初のゲーム「Sperm Race」（ゆるい精子レースゲーム）はGoogle Playでリリース済みです。「AIでゲームを作るといくらかかる？」とよく聞かれるので、無料の計算機を作りました。\nただ、その計算機が当たっているのかは自分でも分かりませんでした。そこで、リリース済みのゲームの条件をそのまま入れてみました。\n\n...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "Claude Codeに日本語で頼んだ仕事を、英語でどう言うか見せるmodを作った",
+      "url": "https://zenn.dev/bigtree/articles/nit-band-claude-code-mod",
+      "site": "Zenn(AI)",
+      "published": "2026-10-07T04:56:29Z",
+      "description": "私は英語を身につけたいと思っています。海外のコンテンツや一次ソースに直接触れられるようになりたいですし、いつか海外で働いてみたいという気持ちもあります。\nそうなれば、仕事のやり取りも英語です。いまはClaude Codeに、毎日日本語で仕事を頼んでいます。たとえば「昨日のデプロイ以降エラーが増えているので、原因と影響範囲を調べて」のような文です。英語のチームなら、これをどう言うのでしょうか。\n教材...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "QAにおける敵対的レビューのすゝめ",
+      "url": "https://zenn.dev/tokium_dev/articles/adversarial-review-premise-and-stop-rule",
+      "site": "Zenn(AI)",
+      "published": "2026-10-07T04:33:38Z",
+      "description": "!\nこの記事は何の話か（3 行まとめ）\n\n静的解析のように完全にはなりえない道具に AI の敵対的レビューをかけると、反例探しが終わらず、指摘をすべて封じると道具そのものが使えなくなりました（試算では網羅できる要素が388件から1件に）\n信じてよい前提と、前提が破られたことを見つける検知器を明文化し、指摘を3つに分類させると、どこを直すべきかがはっきりしました\nそれでも指摘はまっすぐには減らず、最...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "Irodori-TTS v4.1の参照音声に下処理をかけると、短い読み上げの前後に音が出た",
+      "url": "https://zenn.dev/mohhh_ok/articles/2026-10-irodori-ref-preprocess-noise",
+      "site": "Zenn(AI)",
+      "published": "2026-10-07T04:02:20Z",
+      "description": "前編で読みの良さを確かめた Irodori-TTS v4.1-Small に、「清水寺」のような単語だけを読ませたところ、声の前後に BGM のような音が鳴りました。原因を参照音声の条件に絞って切り分けた結果、参照音声にかけていた下処理 (無音を詰めて音量をそろえる) が主な原因と出ました。\n\n 結論\n\n参照音声に下処理をかけると、短い入力 8 文 × seed 2 の 16 本すべてで、声の前に...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "サブエージェントは孫を作れた。既定は3階層、でも同じセッションの最初の4回だけ1階層だった",
+      "url": "https://zenn.dev/numarn/articles/claude-subagent-nesting-depth-handson",
+      "site": "Zenn(AI)",
+      "published": "2026-10-07T03:53:57Z",
+      "description": "Claude Code には「サブエージェント」という仕組みがあります。親のAIが、別のAIを呼び出して下請けに出す、\nという機能です。では、その下請けがさらに下請けを出せるのか。つまり孫を作れるのか。\n結論を先に書きます。この環境(Claude Code 2.1.285)では孫も、ひ孫も作れました。指定しなければ\n3階層まで届きます。ただし同じ作業セッションの最初の4回だけは1階層で止まり、同じ...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "Gemini 3.5 Transcribe入門：発言者まで分かる議事録作成が可能に",
+      "url": "https://zenn.dev/tatsuqumo/articles/82e3e3d4a21079",
+      "site": "Zenn(AI)",
+      "published": "2026-10-07T03:14:28Z",
+      "description": "はじめに\n会議の議事録を作成したいとします。\nこれまではGemini 3.8 Flashのような汎用モデルに音声ファイルを渡せば文字起こし・議事録作成は一定可能ですが、話者が特定できず誰の発言かわからないという、議事録としては致命的な欠点がありました。\n2026年8月に登場したGemini 3.5 Transcribeは、まさにこの課題を解決するための文字起こし専用モデルです。\n話者分離が可能で、...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "レビューの口伝を40ルールに棚卸ししてAIレビューに載せた",
+      "url": "https://zenn.dev/edash_tech_blog/articles/c52409a3d6fa12",
+      "site": "Zenn(AI)",
+      "published": "2026-10-07T02:38:08Z",
+      "description": "はじめに\nこんにちは、e-dashでエンジニアをしている Kezuka です。\nレビューで口伝されていたバックエンドの作法を棚卸しして、AIレビュー用のスキルにしました。\n半年運用した結果を実測しています。期待と違う結果が出たので、その記録と次の課題を書きます。\n\n 書かれていないルールが、レビューで伝わっていた\nバックエンドは Go とクリーンアーキテクチャです。Go らしい書き方に加えて、会社...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "エージェント依頼の完了定義3行｜範囲・禁止・完了条件",
+      "url": "https://zenn.dev/masafumi_ai/articles/00004-agent-request-dod-3lines",
+      "site": "Zenn(AI)",
+      "published": "2026-10-07T02:29:48Z",
+      "description": "AIエージェントに「全部やっといて」と渡すと、範囲の外の差分、勝手な依存の追加、終わったか分からない探索が増えやすい。品質ゲートの前に、依頼そのものの完了定義を3行で固定する。\n\n想定読者: Cursor や Claude Code で、エージェントに実装を任せ始めたエンジニア\n接続: AI出力を納品にする前の品質ゲート3つ\n書かないこと: 未確認の速度や売上の話。画面例は説明用のダミーに限る。\n...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "Decisions APIとJevを比較してみる",
+      "url": "https://zenn.dev/tkada/articles/f758587a326d83",
+      "site": "Zenn(AI)",
+      "published": "2026-10-07T02:23:27Z",
+      "description": "概要\nOpenAIにDecisions APIが登場しました。\nこれはJevと同等の判断だけ行うAPIになります。\n以前こちらの記事で使った検証をもとにDecisions APIとの比較を行いました\nhttps://zenn.dev/tkada/articles/372d48f8dc52f8\n\n 検証\n前回は同じ日本語の問い合わせを3方式で振り分けました。方式はJev、ルールベース、GPT-5.6...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "AIで本格SRPGを1から作る「Der」#2 ── ChatGPT Pro・Codex・Claude Codeの分業",
+      "url": "https://zenn.dev/gamedev_toollab/articles/6d073a2b0db44a",
+      "site": "Zenn(AI)",
+      "published": "2026-10-07T01:55:56Z",
+      "description": "1つのAIに全部やらせない\nDerは、AIを使って本格的なSRPGを最初から最後まで作るプロジェクトです。\n第1回では、いきなりUnityへコードを書かせるのではなく、完成までの工程と共通仕様を先に整理したところまでを書きました。\n今回は、そこから実際にどうAIを分業させているかをまとめます。\n\n\n\n担当\n現在の主な役割\n\n\n\n\nChatGPT Pro\n企画、世界設定の壁打ち、シナリオ、キャラ設定...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "AIに書かせたコード、中身わかって使ってますか？ 専門用語なしで説明するツールを作りました",
+      "url": "https://zenn.dev/ryushin/articles/0460247a3952fd",
+      "site": "Zenn(AI)",
+      "published": "2026-10-07T01:30:05Z",
+      "description": "きっかけ：AIにコードを書いてもらおうにも、そのコードが思ってたのと違ったり春市ネーションの恐れを感じいっそそれを確認する用のツールをつくってみました。\nこのコード、本当に自分が頼んだ通りのことをしてるんだろうか？\n変なことをしていないか。余計な処理が紛れていないか。確かめたくても、専門用語だらけのコードを前にすると、どこから読めばいいのか分からない。かといって、ChatGPT に「これ説明して」...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
     {
       "title": "OpenAI API のプロンプトエンジニアリング基礎",
       "url": "https://zenn.dev/akinori901/articles/20260927-plan063",
@@ -94,26 +214,6 @@
       "image_url": ""
     },
     {
-      "title": "「Claude Codeに渡す前」の工程が抜けている — 曖昧な依頼を構造化タスクに変換する設計",
-      "url": "https://zenn.dev/jskn_d/articles/de0e88dda00ad0",
-      "site": "Zenn(AI)",
-      "published": "2026-10-07T00:00:07Z",
-      "description": "はじめに\nClaude Code を使い始めて、実装そのものは確かに速くなりました。ところが案件全体で見ると、リードタイムは期待したほど縮みませんでした。手を動かす時間が減ったのに、終わる日が思ったほど早まらない。この違和感が出発点です。\nどこで時間を使っているのかを一度ちゃんと見てみると、詰まっていたのは実装ではありませんでした。人から来た「なおして」を、AI が着手できる形まで持っていく手前の...",
-      "category": "AI・技術",
-      "rss_category": "",
-      "image_url": ""
-    },
-    {
-      "title": "インシデント調査エージェントの品質を動かしたのはツールとプロンプトだった",
-      "url": "https://zenn.dev/ymotongpoo/articles/20261007-what-made-agents-better",
-      "site": "Zenn(AI)",
-      "published": "2026-10-07T00:00:07Z",
-      "description": "この記事で扱うこと\n前編のオブザーバビリティのAIエージェントをどう評価するかでは、シナリオを仕様として別に置き、グレーダーが実際に何が起きたかを判定する形を追いました。最後に環境の忠実度が課題として残りました。シミュレーションが多すぎれば実際の失敗を見落とし、実環境の変動が多すぎればベンチマークがノイズだらけになるからです。\nこの記事では、Grafana Assistant Investigat...",
-      "category": "AI・技術",
-      "rss_category": "",
-      "image_url": ""
-    },
-    {
       "title": "退職予兆AIに、あなたの本音は映らない。会社が本音を聞けない構造の話",
       "url": "https://zenn.dev/shotakada/articles/honne-not-in-data",
       "site": "Zenn(AI)",
@@ -124,51 +224,11 @@
       "image_url": ""
     },
     {
-      "title": "小分けエージェントは本当に速い？検索→要約→送信で実測した",
-      "url": "https://zenn.dev/mskbhd/articles/lab-171-vs-note",
-      "site": "Zenn(AI)",
-      "published": "2026-10-06T23:54:21Z",
-      "description": "きっかけ\nX (旧Twitter) でこんな投稿を見かけた。\n\nmore agents isnt the fix, smaller scoped agents is, Kimi just found out what claude code sub-agents have shipped for months\n\n「エージェントを増やすことが解決策じゃない、スコープを小さく絞ったエージェントこそが解...",
-      "category": "AI・技術",
-      "rss_category": "",
-      "image_url": ""
-    },
-    {
-      "title": "GLM-5.3の評価をどう読むか──能力テストと安全対策テストを混ぜない",
-      "url": "https://zenn.dev/jinsights/articles/6f42563e483e08",
-      "site": "Zenn(AI)",
-      "published": "2026-10-06T23:11:56Z",
-      "description": "AIエージェントの導入評価では、タスク成功率と安全性を一つの「良さ」にまとめない方がよい。GLM-5.3のニュースを入口に、評価条件を分離し、運用上の権限へ接続する方法を整理します。攻撃手順や安全対策を回避する方法は扱いません。\n\n 一次情報と、本稿の位置づけ\nClaudeを開発するAnthropicは2026年9月29日、Z.aiのGLM-5.3についてサイバー能力と安全対策の評価を公開しました...",
-      "category": "AI・技術",
-      "rss_category": "",
-      "image_url": ""
-    },
-    {
       "title": "内蔵cronでlaunchd 32ジョブを畳む判断 — 自動化基盤の棚卸し",
       "url": "https://zenn.dev/joinclass/articles/cron-launchd-32-20260929220025-4370",
       "site": "Zenn(AI)",
       "published": "2026-10-06T23:00:14Z",
       "description": "帳簿に17と書いてあるジョブが、実際には33個あった\n僕の会社はほぼ全部の定常業務をmacOSのlaunchdに載せている。記事の公開、売上の取得、部門エージェントの起動、Slackへの通知。CEOは僕ひとりで、実務は全部スクリプトが回す。\n2026年9月25日に棚卸しをして、数が合っていないことがわかった。経営状態を記録している STATE.md にはずっと「launchdジョブ: 17個」と書...",
-      "category": "AI・技術",
-      "rss_category": "",
-      "image_url": ""
-    },
-    {
-      "title": "英 AISI がサイバー評価を相次ぎ公開、Anthropic が Claude 基盤を拡張｜週間ダイジェスト 9/28〜10/4",
-      "url": "https://zenn.dev/karuzip/articles/4c67a108cd6e42",
-      "site": "Zenn(AI)",
-      "published": "2026-10-06T18:57:38Z",
-      "description": "9月28日から10月4日までを対象とします。今期は、英 AISI がフロンティアモデルのサイバー能力やサンドボックス脱出、データ汚染、説得力を相次いで評価し、防御側の指針も示しました。Anthropic は Claude Code の mods と Projects の刷新、Claude Marketplace、Salesforce 連携、1 億ドル規模の人材育成を発表し、基盤の拡張を進めました。...",
-      "category": "AI・技術",
-      "rss_category": "",
-      "image_url": ""
-    },
-    {
-      "title": "エンジニアの仕事は、作ることから境界を引くことに変わった",
-      "url": "https://zenn.dev/kanayagawa/articles/engineer-work-drawing-boundaries",
-      "site": "Zenn(AI)",
-      "published": "2026-10-06T18:27:31Z",
-      "description": "今年に入ってから、仕事で書くコードの差分をほとんど読まなくなった。書くのはAIで、検証も別のAIにさせる。自社で使っているGitLabを4段階で版上げしたときも、手順の調査から実行までAIに指示し、停止時間は41分だった。私がしたのは、どこまでAIにやらせ、どこから人が確かめて進めるかを決めることである。\nたとえば、秘密情報の登録のような決まりきった操作は、AIにコマンドを作らせるが実行はさせず、...",
       "category": "AI・技術",
       "rss_category": "",
       "image_url": ""
@@ -889,16 +949,6 @@
       "site": "Zenn(AI)",
       "published": "2026-10-04T22:18:33Z",
       "description": "デスクの上に、Cursor や Claude Code、Codex、Gemini などのトークン消費量や利用枠の残量をリアルタイムに表示するAI専用ダッシュボード「Token Dashboard」を作ってみました。\nキーボード奥などに置いておくことで、作業領域を圧迫せずに「今月のトークン消費量」や「リセットまでの時間」を一目で確認できます。\n\n すぐに使ってみたい場合はこちら\nアプリとしてそのまま...",
-      "category": "AI・技術",
-      "rss_category": "",
-      "image_url": ""
-    },
-    {
-      "title": "Claude Code / Codex のトークン節約：同じ枠でもっと使える",
-      "url": "https://zenn.dev/gakken_leap/articles/c67ca43199e63d",
-      "site": "Zenn(AI)",
-      "published": "2026-10-04T22:01:05Z",
-      "description": "はじめに\nこんにちは、Gakken LEAP のフロントエンドエンジニアの kou です。\n毎朝 coding agent を開くと、数ターンで 200k token の会話ウィンドウが埋まります。週の使用量も週半ばには上限近くまで届き、残りの日は節約モードです。\n上位プランに上げれば早いのですが、その前に、何にどれだけ使っているのかを確かめたくなりました。節約術はたくさんありますが、自分の環境で...",
       "category": "AI・技術",
       "rss_category": "",
       "image_url": ""
