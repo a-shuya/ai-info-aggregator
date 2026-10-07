@@ -1,14 +1,84 @@
 {
   "site": "Zenn(LLM)",
-  "last_updated": "2026-10-07T02:20:59.072346",
-  "total_articles": 6568,
+  "last_updated": "2026-10-07T08:59:06.155714",
+  "total_articles": 6575,
   "articles": [
     {
-      "title": "生成AIに独創的な提案を書かせたい――小説の収束から始めた考察と実験",
-      "url": "https://zenn.dev/infra_ojisan/articles/llm-originality-plot-and-proposal",
+      "title": "Jev「見せてもらおうか、OpenAIのDecisions APIの性能とやらを」",
+      "url": "https://zenn.dev/canly/articles/c1c03518949c54",
       "site": "Zenn(LLM)",
-      "published": "2026-10-06T21:54:31Z",
-      "description": "「なるほど」と思う。説明は合理的だし、批判するところもあまりない。\nでも、数日後には忘れている。何を提案されたか、なぜその会社と話を続けようと思ったかが残らない。\n最近、そんな資料が増えたように感じる。自分のことも他人のことも、あまり偉そうには言えない。生成AIを使えば、筋が通っていて、必要な項目を漏らさず、読みやすい資料をかなり簡単に作れるようになったからだ。\nただ、僕が欲しいのは、その先にある...",
+      "published": "2026-10-07T08:40:54Z",
+      "description": "こんにちは、カンリーの萩野です。\nJev、Clefと試してきた「確率を返す意思決定モデル」に、OpenAIも加わりました。Decisions APIがpublic betaになったので、さっそくJevと同じ7タスク、3,800件で比較しました。使用モデルはGPT-6 Lunaです。\nタイトルは強気ですが、結果は少し込み入っています。主要指標の数値は7タスクともJevが上。一方、幻覚検出を「実際に何...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "strix を さくらのAIを使って使う",
+      "url": "https://zenn.dev/at_yasu/articles/run-strix-with-sakura-ai",
+      "site": "Zenn(LLM)",
+      "published": "2026-10-07T07:12:46Z",
+      "description": "strix を さくらのAIを使って使う\nこれは、strixのLLMホスト指定が面倒な所があるので、それの部分のmemo書き。\nstrix のインストールはできる事を前提で書いてます。\nプロジェクトの脆弱性を探すStrixというのがあります。これはLLMを使ってプロジェクト内の脆弱性を探す物ですが、OpenAIとかAnthropicの課金枠を使ってやると（経済的に）死にそうな気がするので、さくらの...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "0。ツール呼び出しを10回以上終えた後、自分のセッション管理ツールが返した「使用済みトークン数」だった",
+      "url": "https://zenn.dev/hideki_tamae/articles/context-usage-reports-zero",
+      "site": "Zenn(LLM)",
+      "published": "2026-10-07T06:31:13Z",
+      "description": "はじめに\n0。\nこれが今回の数字です。何の0かというと、このタスク（Zenn/Qiita技術記事の自動投稿パイプライン）が今回のセッションでgit fetchやgit log、複数のファイル読み込み、Web検索、そして数千文字規模のJSONを返す大きめのツール呼び出しまで一通り終えた後に、自分自身のセッション管理ツール（get_session）へ問い合わせて返ってきたcontext_usage.u...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "Selective State Space Modelを実装目線で理解する",
+      "url": "https://zenn.dev/kas_blog/articles/20260509-llm-31-mamba-ssm",
+      "site": "Zenn(LLM)",
+      "published": "2026-10-07T06:03:20Z",
+      "description": "Mambaの実装を読むと、selective_scan、d_state、dt_projといった名前が一度に現れます。どれがmodelの表現力を担い、どれが計算を速くする仕組みなのかを分けないと、全体像をつかみにくくなります。\n先に結論を示すと、Mambaは次の三層に分けると理解できます。\n\n\nSelective SSM：入力に応じて何をstateへ残すかを決める\n\nSelective Scan：入...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "記憶の先に信念を置く──PoSが明示的信念状態で長期エージェントの文脈管理を変える仕組み",
+      "url": "https://zenn.dev/lixian/articles/pos-explicit-belief-states-long-horizon-agents",
+      "site": "Zenn(LLM)",
+      "published": "2026-10-07T02:13:47Z",
+      "description": "TL;DR\nLLMエージェントが長期タスクに取り組むとき、交互履歴をそのまま文脈に詰め込むだけでは、世界の現在状態について一貫した理解を保てない。本論文[1]はPoS（Progression of States）を提案する──推論時に明示的信念状態を構築・維持し、一貫性を検証し、Belief Trapping（動いているのに進んでいない状態）を検出・回復するフレームワークだ。4つのベンチマーク ×...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "Google ColabでGraphRAGを試す：LightRAGとローカルLLMで大学Webサイトからグラフを作る",
+      "url": "https://zenn.dev/nakanishitf/articles/fc11326a02e18d",
+      "site": "Zenn(LLM)",
+      "published": "2026-10-07T01:29:16Z",
+      "description": "はじめに\n「Google Colabで最新LLMを試す」シリーズでは、open-weightモデルを実際にロードし、どこまで動くかを確認してきました。\n今回はその応用として、ローカルLLMとLightRAGを組み合わせ、東京工科大学の公開Webページから関係グラフを作ってみます。\nQwen2.5-7B-InstructをNF4で4bit量子化し、関係抽出と回答生成をColabのGPUで行います。\n...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "Claude Codeの完了判定をLLMに任せたら、10日で488回差し戻された",
+      "url": "https://zenn.dev/ihsan/articles/claude-code-llm-10-488-72e747b780e2",
+      "site": "Zenn(LLM)",
+      "published": "2026-10-06T23:00:05Z",
+      "description": "Claude Code の Stop フックでエージェントの「完了」を LLM に判定させたら、10日間で488回差し戻し、うち1回は私の判断を正しく待つエージェントに、まだ採用していない戦略の実行を始めさせました。LLM-as-a-judge を品質ゲートに使うなら、判定役には会話の文字しか届かず、誰に決める権限があるか、何が未決かは見えないという前提で設計する必要があります。\n\n判定役（紫）は...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "会社で鬱になったので、GPTとClaudeに会社を作らせて養ってもらうことにした",
+      "url": "https://zenn.dev/think_node/articles/003baefa035f7e",
+      "site": "Zenn(LLM)",
+      "published": "2026-10-06T13:09:09Z",
+      "description": "AIに仕事を奪われるなら、AIに養ってもらえばいい\n会社で鬱になった。\nなので、AIに養ってもらうことにした。\n最近は「AIに仕事を奪われる」という話をよく聞く。\nだったら逆に、AIに仕事をさせて、人間を養わせればいいのでは？\nそう考えて始めたのが Project Tabula である。\n目標は単純だ。\nGPTとClaudeに会社を運営させ、月50万円の純利益を3か月連続で生み出させる。\nただし、...",
       "category": "AI・技術",
       "rss_category": "",
       "image_url": ""

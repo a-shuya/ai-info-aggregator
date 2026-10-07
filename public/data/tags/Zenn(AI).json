@@ -1,8 +1,138 @@
 {
   "site": "Zenn(AI)",
-  "last_updated": "2026-10-07T02:20:59.072346",
-  "total_articles": 14571,
+  "last_updated": "2026-10-07T08:59:06.155714",
+  "total_articles": 14582,
   "articles": [
+    {
+      "title": "OpenAI API のプロンプトエンジニアリング基礎",
+      "url": "https://zenn.dev/akinori901/articles/20260927-plan063",
+      "site": "Zenn(AI)",
+      "published": "2026-10-07T01:03:26Z",
+      "description": "OpenAI API のプロンプトエンジニアリング基礎\n\n 概要\nLLM を使ったアプリケーションを作るとき、モデルの性能そのものより「どう指示するか」で結果が大きく変わります。同じ GPT モデルでも、プロンプトの設計次第で精度・安定性・コストがまるで違ってきます。\nこの記事では OpenAI API を題材に、プロンプトエンジニアリングの基礎を入門者向けに整理します。API の呼び出し方から、...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "AI活用の知見をClaude内に閉じ込めない — Claude Codeと実Chromeを『相乗り』させる",
+      "url": "https://zenn.dev/stock_inc/articles/claude-code-chrome-extension-web-output",
+      "site": "Zenn(AI)",
+      "published": "2026-10-07T01:00:05Z",
+      "description": "ファイルやコードの作業はAIに任せられるようになりました。ところが材料がログイン必須のWebサービスの向こう側にあると、そこだけ手が届かない。結局、自分でブラウザを開いてコピペしてAIに貼る、という手作業に戻ります。\n「ログインの壁」を、Claude Codeと普段使いのChromeを同じセッションでつなぐことで越えた話です。読み取りだけでなく書き込みもできるので、AIで得た知見をClaudeの中...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "「システム構成図」は、絵でなくコードで書く",
+      "url": "https://zenn.dev/96logger/articles/719982d07b38e5",
+      "site": "Zenn(AI)",
+      "published": "2026-10-07T01:00:05Z",
+      "description": "構成図は重要\n新しく入ったシステムを理解するとき、最初に開くのは構成図だと思います。どこに入口があって、要求がどこを通って、データがどこに残るのか。文章で読めば数ページかかることが、1枚の図から、すばやく頭に入ります。\n構成図が雄弁なのは、関係が形として見えるからです。箱の並びと線のつながりを目で追うだけで、依存の向きと深さが分かります。この速さは、文章では出せません。\n\n 人が図を描くと、3つの...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "エージェントの手順書が図になり、開発のやり方が9つのコマンドで揃い、検索の索引が自分で直る日",
+      "url": "https://zenn.dev/hathat/articles/1126d5222381b7",
+      "site": "Zenn(AI)",
+      "published": "2026-10-07T00:55:03Z",
+      "description": "「このタスク、エージェントにやらせると毎回どこかで手順が抜ける」。指示文を足す、例を足す、また長くなる。そうやって膨らんだ手順書を、今日は別のかたちで持ち直す話が2本ありました。あわせて、コーディングの進め方そのものをコマンド化して配っている実用パックを1本。\n\n 今日の3本\n\n\nエージェントの手順書を「文章」ではなく「図」で持つ — 手順を点と矢印で書き、それを自動で書き換えて育てる。小さいモデ...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "JevとLiquid d1を日本語の問い合わせで比べてみた — ひっかけ問題・和暦・確信度まで",
+      "url": "https://zenn.dev/saishunkansys/articles/b6a0ca15afbea9",
+      "site": "Zenn(AI)",
+      "published": "2026-10-07T00:53:49Z",
+      "description": "3行まとめ\n\n架空の日本語の問い合わせ24件と和暦を含む日付8件を、Jev（jev-1.13.0）とd1（d1:free）に同じコードで判定させました\n対応部署の選択と解約・返金の判定はどちらもほぼ満点。二重否定・皮肉・熊本弁も含めて、日本語でも普通に使える水準でした\n差が出たのは「外れたときの確信度」とトークン数。Jevは外れると確信度が下がり、d1は断定的でトークンが約4割少なめでした\n\n\n ...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "AIエージェント開発時代に必須のMADRとは？今こそ「決定の記録」が要る理由",
+      "url": "https://zenn.dev/iostar/articles/91ee8642fbc12d",
+      "site": "Zenn(AI)",
+      "published": "2026-10-07T00:49:55Z",
+      "description": "コードを読めば、システムがどう動くかは分かります。しかし、なぜそう作ったのかは、コードのどこにも書いてありません。\n「なぜキャッシュに Redis を使わないのか」「なぜこの API だけ同期で呼んでいるのか」。こうした問いの答えは、決めた人の頭の中か、当時の会話の中にしかありません。人間だけのチームでも、この「なぜ」は少しずつ消えていきます。AIのコーディングエージェントと開発するようになって、...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "Claude Codeの軽い作業をCodexへ回す：規則を書くだけでは0件でした",
+      "url": "https://zenn.dev/yamato_snow/articles/claude-code-codex-sol-delegation",
+      "site": "Zenn(AI)",
+      "published": "2026-10-07T00:33:33Z",
+      "description": "Claude Code に「軽い作業は Codex に回してね」と CLAUDE.md で頼んだのに、1件も回らない。\nそんな状態になっていませんか？\n私の環境がまさにそれでした。\n規則を書いた翌日に会話記録を数えたら、実務で起動したサブエージェント46件のうち、Codex へ回した件数は0件、、、\nここから書くのは、委譲が回り始めるまでに入れた3つの仕組みと、試験を監査して見つけた問題です⚠️\n...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "Zennに公開する前に色々チェックするためのスキルを作った",
+      "url": "https://zenn.dev/ibukiyama2022/articles/skill-zenn-publish-check",
+      "site": "Zenn(AI)",
+      "published": "2026-10-07T00:23:22Z",
+      "description": "概要\nZenn・・・と言わず投稿物全般に対して言えることなのですが、何かを世に送り出す時って気にしなければいけないことが多いですよね。\n私はZennに投稿する時、主に下記のような観点をチェックするようにしています。\n\n既に同じ内容の記事が投稿されていないか\n著作権的に問題がないか\n記事内容の整合性に問題がないか\nリポジトリを参照している場合、記事との整合性に問題がないか\n書き方としておかしな点はな...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "MynaAgentを作った：マイナンバーカードの年齢証明からJPYC給付まで",
+      "url": "https://zenn.dev/bull/articles/mynaagent-zk-age-benefit",
+      "site": "Zenn(AI)",
+      "published": "2026-10-07T00:18:43Z",
+      "description": "ETHGlobal Tokyo 2026で、MynaWalletの中で動くAIエージェント、MynaAgentを作りました。「受け取れる給付を探して」と頼むと、給付の条件を調べ、本人の同意を得て申請を進めます。\nデモで用意したのは、20歳以上を条件とする500 JPYCの給付です。利用者がiPhoneにカードをかざすと、iPhoneが年齢のゼロ知識証明を作ります。Polygon Amoy上のコント...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "「Claude Codeに渡す前」の工程が抜けている — 曖昧な依頼を構造化タスクに変換する設計",
+      "url": "https://zenn.dev/jskn_d/articles/de0e88dda00ad0",
+      "site": "Zenn(AI)",
+      "published": "2026-10-07T00:00:07Z",
+      "description": "はじめに\nClaude Code を使い始めて、実装そのものは確かに速くなりました。ところが案件全体で見ると、リードタイムは期待したほど縮みませんでした。手を動かす時間が減ったのに、終わる日が思ったほど早まらない。この違和感が出発点です。\nどこで時間を使っているのかを一度ちゃんと見てみると、詰まっていたのは実装ではありませんでした。人から来た「なおして」を、AI が着手できる形まで持っていく手前の...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "インシデント調査エージェントの品質を動かしたのはツールとプロンプトだった",
+      "url": "https://zenn.dev/ymotongpoo/articles/20261007-what-made-agents-better",
+      "site": "Zenn(AI)",
+      "published": "2026-10-07T00:00:07Z",
+      "description": "この記事で扱うこと\n前編のオブザーバビリティのAIエージェントをどう評価するかでは、シナリオを仕様として別に置き、グレーダーが実際に何が起きたかを判定する形を追いました。最後に環境の忠実度が課題として残りました。シミュレーションが多すぎれば実際の失敗を見落とし、実環境の変動が多すぎればベンチマークがノイズだらけになるからです。\nこの記事では、Grafana Assistant Investigat...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "退職予兆AIに、あなたの本音は映らない。会社が本音を聞けない構造の話",
+      "url": "https://zenn.dev/shotakada/articles/honne-not-in-data",
+      "site": "Zenn(AI)",
+      "published": "2026-10-07T00:00:07Z",
+      "description": "勤怠の乱れや社内システムの利用状況から「辞めそうな社員」をAIが検知する。退職予兆AIと呼ばれる領域があり、HR系のイベントに行くと必ずと言っていいほど話題に出る。\n私はセキュリティ人材専門の採用コンサルタントで、キャリア相談も受けている。つまり利害の外で働く人の本音を聞く側の人間だ。その立場からこの技術を見ると、働く側にとって大事な構造が1つ見えてくる。\nあなたの本音はそもそも会社のデータに存在...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "小分けエージェントは本当に速い？検索→要約→送信で実測した",
+      "url": "https://zenn.dev/mskbhd/articles/lab-171-vs-note",
+      "site": "Zenn(AI)",
+      "published": "2026-10-06T23:54:21Z",
+      "description": "きっかけ\nX (旧Twitter) でこんな投稿を見かけた。\n\nmore agents isnt the fix, smaller scoped agents is, Kimi just found out what claude code sub-agents have shipped for months\n\n「エージェントを増やすことが解決策じゃない、スコープを小さく絞ったエージェントこそが解...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
     {
       "title": "GLM-5.3の評価をどう読むか──能力テストと安全対策テストを混ぜない",
       "url": "https://zenn.dev/jinsights/articles/6f42563e483e08",
@@ -99,26 +229,6 @@
       "site": "Zenn(AI)",
       "published": "2026-10-06T14:07:55Z",
       "description": "Claude Code の作業を横で見て確かめる macOS アプリ「tanacode」の 1.1.0 をリリースしました。\n長い作業を Claude Code に任せていると、こんなことはありませんか。\n\n最初に伝えた「終える前にこれを確かめて」が、圧縮のあとで守られなくなる\n細かい判断のたびに質問で止まり、席を外している間に作業が進まない\n5 時間枠が戻る時刻や翌朝に、続きの指示を出したい\n\n...",
-      "category": "AI・技術",
-      "rss_category": "",
-      "image_url": ""
-    },
-    {
-      "title": "Karpathyが語る「AIが別物になった日」とバイブコーディング — Sequoia講演を要点解説",
-      "url": "https://zenn.dev/talks_tldr_jp/articles/tldr02-karpathy-sequoia-summary",
-      "site": "Zenn(AI)",
-      "published": "2026-10-06T13:52:58Z",
-      "description": "この記事について\nAndrej Karpathy（OpenAI/Tesla出身）が Sequoia Capital で語った内容を、要点だけ抜き出して日本語で解説します。AIコーディングの最前線にいた人物が、自身の実感と失敗から「AI時代の開発」を語る回です。\n!\n本記事は元動画の全文翻訳ではなく、紹介と論評を目的として筆者が要点を抜き出し、筆者の見解を主体に構成したものです。正確なニュアンスは元...",
-      "category": "AI・技術",
-      "rss_category": "",
-      "image_url": ""
-    },
-    {
-      "title": "会社で鬱になったので、GPTとClaudeに会社を作らせて養ってもらうことにした",
-      "url": "https://zenn.dev/think_node/articles/003baefa035f7e",
-      "site": "Zenn(AI)",
-      "published": "2026-10-06T13:09:09Z",
-      "description": "AIに仕事を奪われるなら、AIに養ってもらえばいい\n会社で鬱になった。\nなので、AIに養ってもらうことにした。\n最近は「AIに仕事を奪われる」という話をよく聞く。\nだったら逆に、AIに仕事をさせて、人間を養わせればいいのでは？\nそう考えて始めたのが Project Tabula である。\n目標は単純だ。\nGPTとClaudeに会社を運営させ、月50万円の純利益を3か月連続で生み出させる。\nただし、...",
       "category": "AI・技術",
       "rss_category": "",
       "image_url": ""
