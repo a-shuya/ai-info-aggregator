@@ -1,8 +1,48 @@
 {
   "site": "Zenn(Python)",
-  "last_updated": "2026-10-07T16:20:31.479624",
-  "total_articles": 6932,
+  "last_updated": "2026-10-07T21:24:53.962581",
+  "total_articles": 6933,
   "articles": [
+    {
+      "title": "2枚の画像を自然に合成するには？ アルファブレンドからシームレス合成まで",
+      "url": "https://zenn.dev/kevinbai199505/articles/17f2b373dae5a8",
+      "site": "Zenn(Python)",
+      "published": "2026-10-07T16:51:18Z",
+      "description": "写真を2枚組み合わせて1枚の画像を作る処理は、一見すると「重ねるだけ」に見えます。しかし実際に試すと、境界に不自然な線が出たり、被写体が二重に透けたりと、素朴な実装ではうまくいかない場面が多いです。\nこの記事では、2枚の画像を自然に合成するために使われている代表的な手法を、実装の観点から整理します。\n\n 素朴なアルファブレンドとその限界\n最も基本的なのは、ピクセルごとに重み付き平均を取るアルファブ...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "【自動採点つき】SQL練習問題10問 ― 環境構築なし、Pythonだけで解けるSQLiteドリル",
+      "url": "https://zenn.dev/kurikuri1024/articles/sql-drill-chapter1",
+      "site": "Zenn(Python)",
+      "published": "2026-10-07T16:44:58Z",
+      "description": "SELECTは書けるけれど、NULLや日付の条件で結果がずれて自信がない人向けの、SQLの練習問題10問です。\nDockerもデータベースのインストールも要らず、Pythonだけで、書いたSQLをその場で自動採点できます。\n読み終えるころには、実務でよく起きる「NULLで行が消える」「月末のデータが抜ける」といったミスを、自分で避けられるようになります。\n\n 結論:3ステップで始められます\n\n採点...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "CodexにSnipping Toolで撮影した動画を渡してみた",
+      "url": "https://zenn.dev/yy7613/articles/13f9c4824616c4",
+      "site": "Zenn(Python)",
+      "published": "2026-10-07T15:18:05Z",
+      "description": "はじめに\nCodexやClaude CodeといったAIエージェントに業務自動化を依頼するとき、普段の作業手順をチャットで伝えることが多いかと思います。ただ、画面上の操作を｢画面のどこをクリックして｣や｢どのメニューを開いて｣と説明するのは手間がかかりますよね。\nそこで普段の作業を撮影した動画をCodexに渡して自動化スクリプトの作成につなげる方法を提案します。\n\n Snipping Tool\n\n...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "小さいモデルで足りる仕事はどこか — 34MBの判定役をMacで動かし、どこからクラウドに渡すかを数字で決める",
+      "url": "https://zenn.dev/hathat/books/ab1314f3612cdc",
+      "site": "Zenn(Python)",
+      "published": "2026-10-07T15:07:50Z",
+      "description": "アプリに「予定を入れて」「タイマーを7分」程度の自然文入力を足したい。それだけのために毎回フロンティアモデル(最上位の巨大モデル)のAPIを叩くと、往復の遅延と課金が乗り、オフラインでは何もできなくなる。かといって手元で動く小さいモデルは、JSONすらまともに返さないという評判がある。この「小さいモデルで足りるのはどこまでか」を、感覚ではなく自分のマシンで出た数字で線引きする。",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
     {
       "title": "ずらしたはずの定期タスクが、スタンバイ復帰で同じ秒に10本起動した — 同時実行数をラッパーで抑える",
       "url": "https://zenn.dev/mameresearcher/articles/standby-resume-task-stampede-slots",
@@ -79,36 +119,6 @@
       "site": "Zenn(Python)",
       "published": "2026-10-07T10:07:58Z",
       "description": "表形式データで機械学習モデルを作るときの前処理を、scikit-learn の道具に沿って整理したメモです。欠損値の扱い、カテゴリ変数のエンコーディング、スケーリング、それらを ColumnTransformer と Pipeline でまとめる方法、そして前処理の前に行う探索的データ解析（EDA）の基本を扱います。scikit-learn を触ったことはあるものの、前処理の定石を一通り確認したい...",
-      "category": "開発",
-      "rss_category": "",
-      "image_url": ""
-    },
-    {
-      "title": "GFSとAMeDASだけで天気予報AIを作った(岩手15地点・RMSE 2.8→1.2℃)",
-      "url": "https://zenn.dev/akagifreeez/articles/weather-ai-gfs-amedas-temperature-ai",
-      "site": "Zenn(Python)",
-      "published": "2026-10-07T09:24:38Z",
-      "description": "これは何か\n数値予報モデル(NWP)が各地でどちら方向に外しやすいかを学習して補正する、地点別気温予報の個人研究です。米国GFS(全球モデル・0.25度)の予報を入力に、気象庁AMeDASの実測を正解として、岩手県を中心とする15地点の時間別気温を予測します。\n検証1年間(2025-09〜2026-08)の評価で、GFSの直値比でRMSEを57%削減できました。この記事は、その仕組みと、無人運用を...",
-      "category": "開発",
-      "rss_category": "",
-      "image_url": ""
-    },
-    {
-      "title": "競馬AIでROI 177%を出して、それが幻だと証明するのに2年かかった",
-      "url": "https://zenn.dev/marunage_kacho/articles/keiba-ai-4-mirages",
-      "site": "Zenn(Python)",
-      "published": "2026-10-07T08:21:09Z",
-      "description": "!\nこの記事は、有料本『競馬AIは市場に勝てるのか — 18,777レースで検証して負けた話』のダイジェストです。記事だけでも完結して読めます。\n\n\n TL;DR\n\n2020〜2026年のJRA全レース(18,777レース・約25万出走)を自動収集し、LightGBMで予測モデルを作った\nバックテストは最高でROI 177%。しかし精査するとこれは幻で、以後も「勝てているように見える結果」に合計4...",
-      "category": "開発",
-      "rss_category": "",
-      "image_url": ""
-    },
-    {
-      "title": "競馬AIは市場に勝てるのか — 18,777レースで検証して負けた話",
-      "url": "https://zenn.dev/marunage_kacho/books/keiba-ai-verification",
-      "site": "Zenn(Python)",
-      "published": "2026-10-07T08:17:22Z",
-      "description": "LightGBMと2020〜2026年のレースデータで競馬予測AIを作り、バックテストでROI 177%を叩き出し、そして全てが幻だと自分で証明するまでの記録。データリーク、multiple testing、市場データの汚染、後知恵バイアス — MLプロジェクトを殺す4つの罠を実データで踏み抜き、最後にパリミュチュエル市場の効率性を18万頭分の実測で確認した。勝ちたい人には残念な、しかし機械学習の...",
       "category": "開発",
       "rss_category": "",
       "image_url": ""
