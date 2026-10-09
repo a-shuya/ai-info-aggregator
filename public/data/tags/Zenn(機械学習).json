@@ -1,8 +1,28 @@
 {
   "site": "Zenn(機械学習)",
-  "last_updated": "2026-10-09T19:21:15.872524",
-  "total_articles": 2008,
+  "last_updated": "2026-10-09T23:25:33.110850",
+  "total_articles": 2009,
   "articles": [
+    {
+      "title": "ViTのPatch EmbeddingとClass Tokenを整理する",
+      "url": "https://zenn.dev/kas_blog/articles/20260509-llm-33-vision-transformer",
+      "site": "Zenn(機械学習)",
+      "published": "2026-10-09T20:08:16Z",
+      "description": "Vision Transformer（ViT）の実装を読むとき、最初につまずきやすいのはTransformer Encoderではなく、その手前です。(B, C, H, W)の画像がいつ(B, N, D)のtoken列へ変わり、[CLS]と位置情報がどのaxisへ追加されるのか。ここを曖昧にすると、checkpointの解像度変更やtask headの接続でshapeが合わなくなります。\nViTの...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "競艇の確率モデルを作って分かった、市場に勝てる特徴量と勝てない特徴量",
+      "url": "https://zenn.dev/sazanami_dev/articles/f194e26643447c",
+      "site": "Zenn(機械学習)",
+      "published": "2026-10-09T16:58:34Z",
+      "description": "競艇の全レースの確率を出すサイト「イチマーク」を個人で作っています。1本目で確率が額面どおり合っていること、2本目で「市場より正確なのに舟券では勝てない」話を書いたので、今回はモデルをどう作ったかを書きます。\n機械学習をやっている人向けです。公営競技の予測は、答え合わせの相手として「市場」という強いベースラインが毎レース公開されている、ちょっと珍しい問題で、そこが一番面白かったところです。普通のK...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
     {
       "title": "日本の天文学は機械学習でどれくらい出遅れているのか",
       "url": "https://zenn.dev/rshimakawa/articles/astro-ml-adoption-japan",
@@ -179,16 +199,6 @@
       "site": "Zenn(機械学習)",
       "published": "2026-10-07T12:26:47Z",
       "description": "前の記事で、競艇の確率を出すサイト「イチマーク」の確率が額面どおりに合っていることを、26,560レースで示しました。「60%」と出した艇は59.8%勝つ、という話です。\nこの記事は、その続きです。モデルの確率は、市場（オッズ）より少し正確です。それでも、それを使って舟券を買うと、回収率は100%を下回ります。 なぜそうなるのかを、測った数字で書きます。\n先に結論を書くと、\n\n市場と混ぜた確率は、...",
-      "category": "AI・技術",
-      "rss_category": "",
-      "image_url": ""
-    },
-    {
-      "title": "Jev で日本語メッセージの対応優先度を仕分けてみた📨",
-      "url": "https://zenn.dev/surumechan/articles/8ba03b97cd92fa",
-      "site": "Zenn(機械学習)",
-      "published": "2026-10-07T10:19:37Z",
-      "description": "この記事で分かること\n\nTypeSafe の判定専用モデル Jev に、日本語の業務メッセージ(メール・チャット・予定・課題)360 件を渡し、「自分の対応・確認が必要か」の二値分類を試した結果\n\n判定基準(criteria)を書くと、返ってくる確率が「0.4 以下 = false / 0.8 以上 = true / その間 = pending」で綺麗に分かれたこと(両端の帯の誤り 0 件、pen...",
       "category": "AI・技術",
       "rss_category": "",
       "image_url": ""
