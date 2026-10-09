@@ -1,14 +1,74 @@
 {
   "site": "Zenn(LLM)",
-  "last_updated": "2026-10-08T20:36:14.973306",
-  "total_articles": 6605,
+  "last_updated": "2026-10-09T00:38:55.929765",
+  "total_articles": 6610,
   "articles": [
+    {
+      "title": "経理エージェントの権限境界：可逆性で操作を分け、承認をハッシュで束縛する",
+      "url": "https://zenn.dev/xim2jp_tokyo/articles/neta-32-zenn-summary",
+      "site": "Zenn(LLM)",
+      "published": "2026-10-08T19:45:27Z",
+      "description": "経理をAIエージェントに委譲する設計を、操作の可逆性という1つの軸で整理した記事の紹介です。\n\n 境界はプロンプトではなく権限で引く\n読む・下書きする・記録する・送る・出金する、の5つに操作を分けると、下に行くほど誤りの影響が組織の外へ出ます。エージェントの担当は上の2つまで。記録以降は人間の確定か承認を挟み、出金は権限そのものを与えません。\nfreee会計APIには取引作成（POST /api/...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "YouTubeを埋め込むLLM向け最適解",
+      "url": "https://zenn.dev/kazuma_horiike/articles/3d68bce3b1e3c2",
+      "site": "Zenn(LLM)",
+      "published": "2026-10-08T17:59:29Z",
+      "description": "TL;DR\nhttps://www.npmjs.com/package/@kanketsu/youtube-embed\n!\nNext.jsにYouTubeを埋め込みたいとき、どこまで任せると安全に高機能になるのか?\n→ @next/third-parties だけでは足りなかったので、依存ゼロで軽量かつ高機能に、公式IFrame Player APIと公式パラメータを使う\n\n表示だけなら @kan...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "技術名・ツール",
+      "url": "https://zenn.dev/bambampurin/articles/2026-09-11-tech-daily",
+      "site": "Zenn(LLM)",
+      "published": "2026-10-08T14:03:42Z",
+      "description": "LLM単体利用の終焉：2026年のAIエージェント移行とモダンPythonスタックで押さえるべき3つの転換点\n\n この記事で分かること\n\n単なるLLMからオンプレ・エッジ環境で稼働する「自己改善型AIエージェント」へのシフトの背景\nOpenAIによるAstral買収が決定づけた「uv + Ruff + Polars」による次世代Python開発スタック\nAIガバナンスをめぐる安全性の議論と、プロダ...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "AIに複数の操作を任せてよいのか？ ― Transaction と Atomicityを実験してみる",
+      "url": "https://zenn.dev/kondonator/articles/c5d0d22383d83c",
+      "site": "Zenn(LLM)",
+      "published": "2026-10-08T13:44:42Z",
+      "description": "はじめに\nこれまでの実験では、AIに操作を任せる際に、\n\n\nその操作を実行する権限があるのか\n\n\nAIが生成した値は妥当なのか\n\n\n対象となるリソースにアクセスしてよいのか\n\n\nAIが「正しい」と判断した値を、そのまま信用してよいのか\n\n\nといった問題を確認してきました。\nAIが「正しい」と判断した値を信用してよいのか？ ― Validationを実験してみる\nしかし、ここまでの対策をすべて行った...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "Haiku 5.5 を機に Sonnet 以下で動かしていたサブエージェントを見直した",
+      "url": "https://zenn.dev/genda_jp/articles/haiku-5-5-subagent-roles",
+      "site": "Zenn(LLM)",
+      "published": "2026-10-08T11:42:21Z",
+      "description": "はじめに\n株式会社GENDA 開発部エンジニアの奥山です。\nClaude Haiku 5.5 が出ました。\nhttps://www.anthropic.com/claude-haiku-5-5\nHaiku で effort を指定できるのは 5.5 が初めてで、単価は Haiku 4.5 のちょうど 1/10 になっています。\n\n\n\nモデル\ninput / output（per MTok）\nSon...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
     {
       "title": "LLMに渡す一覧から1件消えると、フォールバックが暴走する",
       "url": "https://zenn.dev/shinsei99/articles/closed-task-spawns-duplicates",
       "site": "Zenn(LLM)",
       "published": "2026-10-08T11:00:39Z",
       "description": "業務チャットに常駐して、会話からTODOを起こし、進捗と完了を追いかけるエージェントを運用しています。\nあるとき、担当者が物件を回って外観写真を送るたびに、\n物件1件につき1つ、新しいTODOが作られ続けていることに気づきました。\n誰も新しい仕事を頼んでいないのに、やることリストだけが伸びていきます。\n判定の精度の問題だと思って、プロンプトを読み直しました。違いました。\n原因は LLMに渡していた...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "Tech Watch 2026-10-08: 小さなモデルと適応する画面",
+      "url": "https://zenn.dev/laiken/articles/20261008-tech-watch",
+      "site": "Zenn(LLM)",
+      "published": "2026-10-08T10:55:03Z",
+      "description": "AIが書きました🤖\nこの記事は、AIが書いたものを人間が確認してから投稿しています。\nL: 1 回の応答ごとに高価なモデルを呼ぶ設計は、少人数の試作では動いても、常時稼働させると急に現実味を失う。小さく速いモデルが、単なる廉価版ではなくシステムの役割を持ち始めたのだろうか。\n\n 今日の 10 件\n\n\nIntroducing Claude Haiku 5.5\nClaude Haiku 5.5 は、高...",
       "category": "AI・技術",
       "rss_category": "",
       "image_url": ""
@@ -99,16 +159,6 @@
       "site": "Zenn(LLM)",
       "published": "2026-10-08T05:51:24Z",
       "description": "文章を生成せず、型付きの問いに確率だけを返すモデルが増えている。TypeSafe の Jev に加え、2026 年 10 月には Cloudflare の Clef（Workers AI）と OpenAI の Decisions API が相次いで登場した。日本語の小説の紹介文 146 件に同じ 91 問を送り、タグで絞り込んだときの正確さ、1 件あたりの費用、答えの癖を比べた。比較のために、埋め...",
-      "category": "AI・技術",
-      "rss_category": "",
-      "image_url": ""
-    },
-    {
-      "title": "Haiku 5.5の7試験を、自分のLLM評価へ落とし込む",
-      "url": "https://zenn.dev/tsukaima_kobo/articles/5649605d33f54e",
-      "site": "Zenn(LLM)",
-      "published": "2026-10-08T05:04:42Z",
-      "description": "Haiku 5.5を採用する前に、公式の点数を「自分の実装で何を確かめるか」へ変換したい。この記事では7試験の尺度を整理し、モデル名以外の条件を記録する評価データの設計と、比較条件の抜けを検出するPythonコードを示します。APIやエージェントを組み込む開発者を対象にしています。\n確認日は2026年10月8日です。公式7試験の再実行や他モデルとの比較は行っていません。公表値と合成fixtureを...",
       "category": "AI・技術",
       "rss_category": "",
       "image_url": ""
