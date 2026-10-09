@@ -1,8 +1,108 @@
 {
   "site": "Zenn(Google Cloud)",
-  "last_updated": "2026-10-09T06:45:24.220068",
-  "total_articles": 1919,
+  "last_updated": "2026-10-09T13:52:00.237285",
+  "total_articles": 1932,
   "articles": [
+    {
+      "title": "並列化が効かなかったクイズ生成を「作り置き＋選ぶだけ」に分けて、作り置きから出す1回の費用を 1/40 にした",
+      "url": "https://zenn.dev/4geru/articles/quiz-agent-adk-category-selection",
+      "site": "Zenn(Google Cloud)",
+      "published": "2026-10-09T13:18:20Z",
+      "description": "!\nこの記事は、Google Cloud Japan AI Hackathon Vol.5 に提出した「海遊館いきものガチャ図鑑」の技術解説シリーズの1本です。作品の全体像は提出記事（公開後にリンクします）をご覧ください。\n\n\n TL;DR\n\n「13カテゴリ全部のクイズを作ってから1問選ぶ」エージェントは、1回 36.6 秒かかり、6回中2回失敗した。並列化しても速くならなかった\n原因は思考トーク...",
+      "category": "クラウド",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "LINE Bot 1つで2キャラが掛け合う — sender を付けた text を並べるだけで、Flex もいらなかった",
+      "url": "https://zenn.dev/4geru/articles/line-bot-sender-character-dialogue",
+      "site": "Zenn(Google Cloud)",
+      "published": "2026-10-09T13:18:19Z",
+      "description": "!\nこの記事は、Google Cloud Japan AI Hackathon Vol.5 に提出した「海遊館いきものガチャ図鑑」の技術解説シリーズの1本です。作品の全体像は提出記事（公開後にリンクします）をご覧ください。この記事は、その中のキャラの掛け合いの実装を掘り下げます。\n\n\n TL;DR\n\n\nMessage.sender で名前とアイコンを差し替え、text メッセージをキャラごとに並べ...",
+      "category": "クラウド",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "水族館の解説パネル、読んでますか？ — 撮ると図鑑がうまる LINE Bot「博士と助教授のひみつ研究室」",
+      "url": "https://zenn.dev/4geru/articles/ikimono-gacha-zukan-submission",
+      "site": "Zenn(Google Cloud)",
+      "published": "2026-10-09T13:18:18Z",
+      "description": "はじめに\nこんにちは、チーム「水族館。」です。Google Cloud Japan AI Hackathon Vol.5 に向けて、水族館の解説パネルを撮ると、LINE の図鑑がひとつうまる LINE Bot「博士と助教授のひみつ研究室」を作りました。舞台は大阪の海遊館、図鑑に載るのは海遊館の生きもの 243種 です。\nまずは3分の紹介動画をご覧ください。\n\n\n紹介ページ: https://kai...",
+      "category": "クラウド",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "案内板の文字を Gemini に読ませても、種を決めさせてはいけない — 243種との全件照合で誤マッチを分類した",
+      "url": "https://zenn.dev/4geru/articles/guide-panel-identify-gemini-vision-scoring",
+      "site": "Zenn(Google Cloud)",
+      "published": "2026-10-09T13:18:18Z",
+      "description": "!\nこの記事は、Google Cloud Japan AI Hackathon Vol.5 に提出した「海遊館いきものガチャ図鑑」の技術解説シリーズの1本です。作品の全体像は提出記事（公開後にリンクします）、ほかの技術解説は末尾の「シリーズの他の記事」をご覧ください。\n\n\n TL;DR\n\n水族館の案内板の写真は、Gemini Vision には「文字を読む」ことだけを任せ、どの種かを決めるのは海遊...",
+      "category": "クラウド",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "Generative AI Leaderの最初の学習：試験ガイドの次に開く公式資料と、先へ進む目安",
+      "url": "https://zenn.dev/ray_keymaso/articles/gail-official-docs-guide",
+      "site": "Zenn(Google Cloud)",
+      "published": "2026-10-09T10:52:58Z",
+      "description": "Generative AI Leaderの試験ガイドを開くと、4つのセクションに項目が並び、項目ごとに用語が挙がっています。\n用語を一つ調べ始めると、製品のドキュメントを次々に開き、どこで切り上げて次へ進めばよいのかがわからなくなりがちです。\n学習を始めた段階で決めておきたいのは、次の3つです。\n今どの資料を開くか、その資料で何を探すか、どこまでわかったら次のテーマへ進むか。\n!\nPassCraf...",
+      "category": "クラウド",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "漏えい続発の今、Google Cloudの備えは効くか実測",
+      "url": "https://zenn.dev/acntechjp/articles/zenn-gcp-leak-9types",
+      "site": "Zenn(Google Cloud)",
+      "published": "2026-10-09T08:16:59Z",
+      "description": "3行でまとめ\n\n10月7日、国内クラウドの一部がランサムで停止した。復旧に動けるかどうかは、バックアップの置き場所で分かれた\n個人情報保護委員会の9事例に Google Cloud で備える baseline.sh と、効いているかを確かめる verify.sh を公開した\nロックしたバックアップはオーナーでも消せなかったが、プロジェクトごとは消せた。入れた仕組みは、必ず実際に試して確かめる\n\n本...",
+      "category": "クラウド",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "Google CloudのPub/Sub",
+      "url": "https://zenn.dev/nowex35/articles/949cf16738de78",
+      "site": "Zenn(Google Cloud)",
+      "published": "2026-10-09T07:44:59Z",
+      "description": "参考\nhttps://docs.cloud.google.com/pubsub/docs/overview?hl=ja\nhttps://docs.cloud.google.com/pubsub/docs/pubsub-basics?hl=ja\n\n 概要\nメッセージを生成するサービスを、メッセージを処理するサービスと切り離すサービス。\nたとえば、イベントを検知したサービスからのメッセージを非同期に受...",
+      "category": "クラウド",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "DBのパスワードがCIのログに出てしまっていて、パスワードにサヨナラをした",
+      "url": "https://zenn.dev/gonta_ganbareyo/articles/6ec21656797409",
+      "site": "Zenn(Google Cloud)",
+      "published": "2026-10-09T07:24:43Z",
+      "description": "はじめに\nこんにちは。gontaです。\n最近Xを見ていると、毎日どこかの会社でセキュリティ事故が起きています。他人事ではなく、自分の関わるサービスでも同じことが起こるかもしれません。今はAIで簡単にものが作れる時代でもあるので、作るときの考慮漏れはできるだけ減らしたいと思っています。\nそう思っていたところで、自分も何かやらかしているんじゃないかと思い調べてみると、個人開発でやっているサービスのGi...",
+      "category": "クラウド",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "若手社員がGoogle Cloud Next Tokyo 26に参加してきたよ！（DAY 1）",
+      "url": "https://zenn.dev/nttdata_tech/articles/9529402895037a",
+      "site": "Zenn(Google Cloud)",
+      "published": "2026-10-09T02:00:06Z",
+      "description": "NTTデータ2年目社員の湯川と、1年目社員の喜田(@kidatakeru)と齋藤(@maaya)です。\nクラウドインフラ領域に携わる若手エンジニア3名で、2026年7月30日・31日に東京ビッグサイトで開催された Google Cloud Next Tokyo 2026に参加しました。\n本記事では、参加したセッションや展示から、クラウドインフラやSREの業務とのつながりを感じた内容を紹介します。\n...",
+      "category": "クラウド",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "若手社員がGoogle Cloud Next Tokyo 26に参加してきたよ！（DAY 2）",
+      "url": "https://zenn.dev/nttdata_tech/articles/d517fc75777a56",
+      "site": "Zenn(Google Cloud)",
+      "published": "2026-10-09T02:00:05Z",
+      "description": "NTTデータ3年目社員の栫と、1年目社員の喜田（@kidatakeru）、齋藤（@maaya）です。\n2026年7月30日・31日に東京ビッグサイトで開催されたGoogle Cloud Next Tokyo 26のDAY 2レポートです。\nDAY 2で特に印象に残ったのは、運用に関する話題の多さです。\n基調講演ではAIエージェントを動かし続けるための基盤が紹介され、各セッションでもデータベース移行...",
+      "category": "クラウド",
+      "rss_category": "",
+      "image_url": ""
+    },
     {
       "title": "ゼロから声を作れる音声生成モデル「Gemini 3.8 Flash TTS」とは何者？",
       "url": "https://zenn.dev/tatsuqumo/articles/b104113133c4d7",
@@ -24,6 +124,16 @@
       "image_url": ""
     },
     {
+      "title": "AI関数のコスト最適化 — トークン課金を膨らませない設計",
+      "url": "https://zenn.dev/web_benriya/articles/bigquery-ai-functions-cost-optimization",
+      "site": "Zenn(Google Cloud)",
+      "published": "2026-10-08T10:18:15Z",
+      "description": "この記事で解決する課題\nBigQueryのAI関数（AI.GENERATE、AI.CLASSIFY、AI.SCOREなど）を試したところ、想定外の請求が来た――そういう事例が増えています。\nAI関数はトークン単位の課金モデルです。通常のBigQueryクエリのバイトスキャン課金とは構造が異なるため、既存のコスト管理の感覚が通用しません。この記事では、AI関数の課金構造を整理し、コストを膨らませない...",
+      "category": "クラウド",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
       "title": "AIで何でも作れる時代に、AWSを0から学んだ理由",
       "url": "https://zenn.dev/ktsm/articles/95f83d30511adb",
       "site": "Zenn(Google Cloud)",
@@ -38,7 +148,27 @@
       "url": "https://zenn.dev/koichikamachi/articles/66570bbc6a6991",
       "site": "Zenn(Google Cloud)",
       "published": "2026-10-08T06:34:29Z",
-      "description": "title: \"答えを出してはいけない場面で止まるAI ― 経営診断思考補助システム DiaDoc\"\nemoji: \"🩺\"\ntype: \"idea\"\ntopics: [\"googlecloud\", \"gemini\", \"cloudrun\", \"langgraph\", \"aiagent\"]\npublished: false\n!\nこの記事は「第5回 Agentic AI Hackathon with ...",
+      "description": "!\nこの記事は「第5回 Agentic AI Hackathon with Google Cloud」への提出作品 DiaDoc（Dialectic-BizDoctor） の解説です。\n登場する会社・金融機関・人物は、すべて架空です。\n\n\n 1. はじめに：何を作ったか\nDiaDoc は、単一AI特有の安易な楽観論を退け、公認会計士や中小企業診断士など専門家の推論を支える　**「経営診断思考補助シ...",
+      "category": "クラウド",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "ペタバイト規模（約8兆レコード）の DMM データ基盤、Embulk やめました",
+      "url": "https://zenn.dev/dmmdata/articles/embulk-to-dlt-migration",
+      "site": "Zenn(Google Cloud)",
+      "published": "2026-10-08T05:06:54Z",
+      "description": "はじめに\nEmbulk を使い続けて数年。そろそろ移行したいと思いつつ、そのままになっていませんか。\nDMM では、Embulk のメンテナンスモード移行の発表に伴い、長年運用してきたデータ取り込みを dlt へ移行しました。\nしかも、5 名のチームで技術選定から検証、取り込み処理の実装を約 3 週間で進め、一部テーブルの新旧並行稼働に着手しました。\nそこから対象を広げ、移行開始から約 4 か月で...",
+      "category": "クラウド",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "BigQueryの記事本文をSQLiteで配信する：防災DBの課金とキャッシュ設計",
+      "url": "https://zenn.dev/nakato_tomohito/articles/bousaidb-bigquery-sqlite-serving",
+      "site": "Zenn(Google Cloud)",
+      "published": "2026-10-08T05:00:48Z",
+      "description": "防災DBでは、公的な災害データをBigQueryで集約・加工し、Webで地域の情報を公開しています。その運用で困ったのが、記事を1件表示するだけの処理に、BigQueryの読み取り課金が積み上がっていたことでした。\n対策は、データを更新するときにBigQueryから配信用のSQLiteファイルを作り、記事を閲覧するときはそのファイルから本文を1件ずつ取得することです。記事一覧などで繰り返し使うタイ...",
       "category": "クラウド",
       "rss_category": "",
       "image_url": ""

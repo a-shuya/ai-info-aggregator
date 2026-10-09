@@ -1,8 +1,58 @@
 {
   "site": "Zenn(機械学習)",
-  "last_updated": "2026-10-09T06:45:24.220068",
-  "total_articles": 2005,
+  "last_updated": "2026-10-09T13:52:00.237285",
+  "total_articles": 2008,
   "articles": [
+    {
+      "title": "日本の天文学は機械学習でどれくらい出遅れているのか",
+      "url": "https://zenn.dev/rshimakawa/articles/astro-ml-adoption-japan",
+      "site": "Zenn(機械学習)",
+      "published": "2026-10-09T12:18:11Z",
+      "description": "天文学で機械学習を使う研究をしていると、「日本は海外に比べて遅れている」という話を何度も耳にします。\nただそれは学会の雰囲気や、身の回りで目にする論文から受ける個人的な印象かもしれません。\nということで、講演や申請書の背景で今後使えるかもと思い、実際に数字で確かめてみた、というのがこの記事です。\n2020〜2025 年に arXiv の astro-ph に投稿された論文を全部数えて、機械学習を使...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "高周波トランス回路理論に基づくLLM制御: 差動Attention・三次巻線NFB・バイファイラーDual-StreamのPyTorch実装",
+      "url": "https://zenn.dev/nanashi_os/articles/e1db7246bcf463",
+      "site": "Zenn(機械学習)",
+      "published": "2026-10-09T11:45:26Z",
+      "description": "概要\n本記事では、LLM（大規模言語モデル）におけるハルシネーションや文脈ドリフトの課題に対し、高周波トランス（変成器）回路の物理法則をアナロジーとして用いたアーキテクチャ拡張を提案します。\n従来のアテンション機構（Softmax Attention）が抱える「背景バイアス（同相ノイズ）への同期」や「寄生フィードバックによる自己発振（ハルシネーション）」に対し、以下の3つの高周波制御ロジックを数理...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "AI関数の精度を検証する — 評価用データセットとテストの作り方",
+      "url": "https://zenn.dev/web_benriya/articles/bigquery-ai-accuracy-validation-framework",
+      "site": "Zenn(機械学習)",
+      "published": "2026-10-09T10:18:47Z",
+      "description": "この記事で解決する課題\nBigQueryのAI関数（AI.CLASSIFY、AI.GENERATE、AI.SCOREなど）を本番データに適用する前に、精度を定量的に確認できていますか。\n「なんとなく動いている」で運用を始めると、モデルのアップデートや入力データの変化によって静かに精度が劣化し、誤った分析結果が意思決定に使われてしまいます。この記事では、評価用データセットの設計からSQL単体テストの...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "LLM Agentの長時間シミュレーションで見えた、推論力だけでは分からないモデル差",
+      "url": "https://zenn.dev/scien/articles/206a6c90fd8345",
+      "site": "Zenn(機械学習)",
+      "published": "2026-10-09T00:41:37Z",
+      "description": "はじめに\nLLM Agentは、情報を覚えていれば本当に「うまく行動できる」のでしょうか。\n最近はLong Contextや長期記憶の研究が進み、過去の情報を保持し、必要なときに取り出せるかがよく評価されています。\nでも、実際にAgentとして動かすと、必要なのはそれだけではありません。\n例えば、数時間前に得た情報を覚えていても、\n\nその情報を今使うべきだと気づく\n誰に働きかけるかを決める\n新しい...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "Python機械学習の実践書4選",
+      "url": "https://zenn.dev/komatsu_ops/articles/20261009_book_ref",
+      "site": "Zenn(機械学習)",
+      "published": "2026-10-09T00:03:35Z",
+      "description": "はじめに\n数年前、自分は社内の需要予測モデルをひとりで抱えていた。検証データでのスコアは悪くない。それなのに本番に出すと予測が外れる。コードを何度見直してもバグはない。原因は交差検証の切り方で、時系列の未来の情報が学習側に漏れていた。\nこの手の失敗は、ネットの断片的なチュートリアルでは見つけにくい。手順は書いてあっても、なぜその手順なのかは書かれていない。自分がつまずいていたのは実装の腕ではなく、...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
     {
       "title": "半陽的微分代数方程式の解を微分する：VJP編",
       "url": "https://zenn.dev/wheatear11/articles/c293bb49ad3ae7",
@@ -154,31 +204,11 @@
       "image_url": ""
     },
     {
-      "title": "Attentionの種類を整理する",
-      "url": "https://zenn.dev/chimutaro/articles/bacf9b916d6b7f",
-      "site": "Zenn(機械学習)",
-      "published": "2026-10-07T10:00:05Z",
-      "description": "目次\n\nはじめに\n名前の読み方\nQKVのおさらい\n\n基本形\n\nSelf-attention\nCross-attention\nMulti-head attention\n\n\n\n見る範囲を絞る\n\nマスクで見る\n2次元の特徴マップ上での範囲\nDeformable attention\nLinear attention\n\n\n\n軸と紛らわしい別系統\n\nSpatial・Temporal・Joint\nspatial...",
-      "category": "AI・技術",
-      "rss_category": "",
-      "image_url": ""
-    },
-    {
       "title": "GFSとAMeDASだけで天気予報AIを作った(岩手15地点・RMSE 2.8→1.2℃)",
       "url": "https://zenn.dev/akagifreeez/articles/weather-ai-gfs-amedas-temperature-ai",
       "site": "Zenn(機械学習)",
       "published": "2026-10-07T09:24:38Z",
       "description": "これは何か\n数値予報モデル(NWP)が各地でどちら方向に外しやすいかを学習して補正する、地点別気温予報の個人研究です。米国GFS(全球モデル・0.25度)の予報を入力に、気象庁AMeDASの実測を正解として、岩手県を中心とする15地点の時間別気温を予測します。\n検証1年間(2025-09〜2026-08)の評価で、GFSの直値比でRMSEを57%削減できました。この記事は、その仕組みと、無人運用を...",
-      "category": "AI・技術",
-      "rss_category": "",
-      "image_url": ""
-    },
-    {
-      "title": "Adam に L2 を足しても weight decay にならない｜勾配の大きさで縮み方が変わる実測",
-      "url": "https://zenn.dev/terralien/articles/adam-l2-vs-adamw-weight-decay",
-      "site": "Zenn(機械学習)",
-      "published": "2026-10-07T09:10:56Z",
-      "description": "!\nこの記事は、E資格の勉強で作ったノートの1枚を Zenn 向けに再構成し、実測を足したものです。ノートは一次情報（論文・公式ドキュメント）だけで書いています。\n👉 Adam系最適化｜E資格ノート\n👉 ノートのソース：Terralien-jp/e-shikaku-notes\n\n\n TL;DR\n\n\ntorch.optim.Adam(..., weight_decay=λ) は L2 正則化です。λ...",
       "category": "AI・技術",
       "rss_category": "",
       "image_url": ""
