@@ -1,8 +1,88 @@
 {
   "site": "Zenn(Python)",
-  "last_updated": "2026-10-10T15:14:54.700482",
-  "total_articles": 6986,
+  "last_updated": "2026-10-10T19:22:04.197892",
+  "total_articles": 6994,
   "articles": [
+    {
+      "title": "Googleスプレッドシートの .xlsx は Excel で静かに壊れる — IFERROR が握りつぶした203セル",
+      "url": "https://zenn.dev/aulvem/articles/d6c4936d036437",
+      "site": "Zenn(Python)",
+      "published": "2026-10-10T16:30:05Z",
+      "description": "Googleスプレッドシートで作った表を .xlsx で書き出して配ると、受け取った側の Excel では別のものが開きます。ARRAYFORMULA や QUERY は Excel に無いので当然といえば当然なのですが、やっかいなのはエラーが出ないことです。\n配布していたファイルを openpyxl で開いたら、Google 専用関数が203セル残っていました。そして203セル全部が IFERR...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "Claude Academyを起点にSNS集計を実装：12ケースで初回コードの失敗を見つけた",
+      "url": "https://zenn.dev/kanta13jp1/articles/academy-sns-csv-twelve-cases",
+      "site": "Zenn(Python)",
+      "published": "2026-10-10T16:09:43Z",
+      "description": "Claude Academyを見て「学んだ内容を何で確かめるか」を考え、架空のSNS投稿CSVを集計する小さな演習を作りました。\nClaude Code CLIで1回生成したPythonコードを、生成前に固定した12ケースで実行したところ、10件合格、2件失敗でした。集計式は合っていても、空行の扱いと全角数字の入力検査が仕様を満たしていませんでした。\nこの記事は独自の実践記録です。公式講座の課題や...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "SQL 100本ノック【自動採点つき】基礎から実務の分析まで、SQLiteで解く",
+      "url": "https://zenn.dev/kurikuri1024/books/sql-100knock",
+      "site": "Zenn(Python)",
+      "published": "2026-10-10T14:19:00Z",
+      "description": "書いたSQLをその場で自動採点できる、SQLの練習問題集です。SELECTの基本から、集計、JOIN、ウィンドウ関数、テーブル設計、インデックス、売上やリピート率の分析まで、100問を難しさの順に解きます。インストールは要らず、ブラウザだけで解けます。手元のPythonで採点することもできます。各問に段階的なヒント、模範解答、なぜそう書くのかの解説、よくある間違いを付けました。第0章と第1章は無料...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "Garmin FITのランニングダイナミクスを取り出したv1.7.0：エクスポートデータの形が変わっていた",
+      "url": "https://zenn.dev/tsubotti63/articles/garmin-fit-running-dynamics-v1-7",
+      "site": "Zenn(Python)",
+      "published": "2026-10-10T14:00:00Z",
+      "description": "Garmin Running Data Normalizer v1.7.0 で、FIT ファイルのランニングダイナミクス（上下動、接地時間、歩幅など）を取り出せるようにしました。FIT のセッションとラップに6項目、AI 分析の入口になる表に10列を足しています。この記事は v1.7.0 の時点の内容です。\nきっかけは、新しく取得した Garmin のエクスポートデータ（Account Data ...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "再試行を、永久に止めない",
+      "url": "https://zenn.dev/miyakona/articles/retry-caps-need-expiration",
+      "site": "Zenn(Python)",
+      "published": "2026-10-10T13:06:33Z",
+      "description": "失敗したジョブを毎回やり直すバッチへ、「同じ失敗が続いたら、以後は試さない」という上限を加えようとしていました。重い処理の無駄打ちを止める、自然な変更に見えます。\n実装案をレビューしていて気になったのは、その回数を実行間で共有するために永続化したときでした。対象が後から処理できる状態へ変わっても、失敗回数は上限のままです。ジョブは入口でスキップされ続けるため、新しい状態を一度も確かめません。\nこの...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "GitHub CodespacesでOceanBaseを起動して、Python・Jupyter・dbtから接続してみた",
+      "url": "https://zenn.dev/ymd65536/articles/oceanbase_codespace",
+      "site": "Zenn(Python)",
+      "published": "2026-10-10T11:43:13Z",
+      "description": "この記事のポイント\n\nGitHub Codespaces上にOceanBase Community Editionの検証環境を構築し、ブラウザだけで試せる環境を作る\nPyMySQL、JupyterLab、dbt-mysqlなど複数のクライアントやツールからOceanBaseへ接続する\n「MySQL互換」であっても、利用するコネクターや実装経路によって挙動が異なる場合があることを確認する\n\n\n はじ...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "AIに正しいExcel操作コードを一発生成させる！超高速エンジン「osbxl」の公式サンプル集を公開",
+      "url": "https://zenn.dev/osb_office_com/articles/e59a329848b4c2",
+      "site": "Zenn(Python)",
+      "published": "2026-10-10T11:37:49Z",
+      "description": "概要\nExcelファイルの自動生成や帳票出力は、Webアプリや業務システム開発における定番要件です。\nしかし、大規模データでのパフォーマンス不足や、昨今の Cursor / GitHub Copilot / Gemini といった AI コーディングツールで「存在しない API をハルシネーション（嘘）される」という新しい悩みに直面することも増えてきました。\nそこで、ネイティブ C++ コアによる...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "その数字は日付ではない — Excelの日付シリアルと実測値は値では見分けられない",
+      "url": "https://zenn.dev/shinsei99/articles/number-that-looks-like-a-date",
+      "site": "Zenn(Python)",
+      "published": "2026-10-10T11:05:43Z",
+      "description": "ビルの水道・電気メーターの検針表（Excel）を読んで、「その月の検針が済んでいるか」を\n判定する仕組みを作りました。\n最初の版は、検針していない物件を「実施済み」と表示しました。\n拾っていたのは検針日ではなく、メーターの指針値でした。\nエラーは出ません。もっともらしい日付が入っているので、表を見ても間違いに見えません。\n\n 前提：Excelの日付は、ただの連番\nExcel の日付は、1899-1...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
     {
       "title": "次元とは何か？ ― 1次元から5次元を、立体・回転・時間で描く ―",
       "url": "https://zenn.dev/morc_b13/articles/9bfa44be23050c",
