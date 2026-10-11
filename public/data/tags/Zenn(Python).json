@@ -1,8 +1,48 @@
 {
   "site": "Zenn(Python)",
-  "last_updated": "2026-10-11T07:52:51.958438",
-  "total_articles": 7003,
+  "last_updated": "2026-10-11T14:46:42.772758",
+  "total_articles": 7008,
   "articles": [
+    {
+      "title": "MICE・MissForest と欠損インジケータ — 欠損値処理の選び方ガイド",
+      "url": "https://zenn.dev/salesanalytics/articles/b02afcf677ce17",
+      "site": "Zenn(Python)",
+      "published": "2026-10-11T12:22:04Z",
+      "description": "欠損値処理には、削除、単変量補完、時系列補完、KNN補完など、さまざまな方法があります。この記事では、より高度な多変量補完である「MICE」と「MissForest」、補完と組み合わせて使う「欠損インジケータ」、そして手法の選び方の要点をコンパクトにまとめます。\n!\n題材は seaborn に組み込まれているタイタニック号の乗客データです。数値列（age・fare・pclass・sibsp・par...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "承認した中身だけを公開する。テストは全部通ったが、守りを確かめていなかった",
+      "url": "https://zenn.dev/hocky3/articles/06c8cddf1a0a7a",
+      "site": "Zenn(Python)",
+      "published": "2026-10-11T11:09:29Z",
+      "description": "「外へ出せる形にまとめて」と頼んだら\n個人プロジェクトの作業フォルダに、公開したいコードと、公開しないメモが一緒に入っているとする。コードだけを公開したい。そこで、誰かに（人でもAIでも）「外へ出せる形にまとめて」と頼む。\n返ってきたものを見ると、コードの横にREADME.mdが増えている。READMEは、メモを読んで書かれたものだった。たとえば（これは架空の例）、メモには「来月でこのサービスを閉...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "差分で通知する見張りには「鳴らさずに既読にする」経路が要る",
+      "url": "https://zenn.dev/shinsei99/articles/diff-watcher-needs-silent-mark-read",
+      "site": "Zenn(Python)",
+      "published": "2026-10-11T11:07:55Z",
+      "description": "貸出スペースの予約カレンダーを15分ごとに読み、前回からの差分（新しく入った予約・消えた予約）を\n業務チャットへ知らせる見張りを常駐させています。読み取り専用で、書き込みは一切しません。\nこの見張りに監視対象を1施設ぶん追加したとき、既存の予約がすべて\n「新しく入った予約」として担当者へ飛ぶ直前でした。\n差分通知の実装そのものにバグはありません。状態を持つ通知は、状態が空の瞬間がいちばん危ない\nと...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "DuckDB実務チートシート：CLI・Python・ファイル入出力・SQL",
+      "url": "https://zenn.dev/caron14/articles/duckdb-python-cli-cheatsheet",
+      "site": "Zenn(Python)",
+      "published": "2026-10-11T08:02:18Z",
+      "description": "はじめに：ファイルを調べて、SQLで加工して、保存する\nCSVやParquetの中身を確認するたびに、データベースへのインポートやPythonの読み込み処理を書くのは手間がかかります。DuckDBでは、ファイルをSQLの入力として直接扱えます。\nこの記事は、SQLの基礎を知っている人向けに、CLIとPythonでの調査・集計・変換をまとめたチートシートです。ファイルを読む方法に加えて、接続、結果の...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
     {
       "title": "Pythonの@classmethodと@staticmethodを家計簿のCSV読み込みで理解する：clsを受け取る理由と使い分け",
       "url": "https://zenn.dev/tmtk/articles/fbe58266979b7f",
@@ -39,6 +79,16 @@
       "site": "Zenn(Python)",
       "published": "2026-10-11T04:20:14Z",
       "description": "!\n100％AI製ブログです。\n夏調子の悪くなったPCがようやく機嫌よくなってきて、久しぶりにcalude codeをつかってプログラムを作りました。\nAIの日進月歩のおかげでほぼほぼエラー処理までAIエージェントが対応してくれるようになっていました。\n内容はラジオ番組のHPから再生局リストを取得してspotifyにプレイリストを作成するnode.jsのプログラム。（https://github....",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "相続手続を「路線図」にしたら、自律型エージェントが公的資料を読み始めた話",
+      "url": "https://zenn.dev/koichikamachi/articles/ea38a4d24679a8",
+      "site": "Zenn(Python)",
+      "published": "2026-10-11T03:52:43Z",
+      "description": "1. はじめに：なぜ相続を「路線図」にしたのか\n「もし自分が急にいなくなったら、誰がどう動けばいいのか分からないんです」\n頼れる親族が身近におらず、将来に漠然とした不安を抱える後輩からそう相談されたのが、この開発の最初のきっかけでした。\n人が亡くなったあとの手続を調べると、行政のポータルや民間ポータルに「やること100選」のような膨大なチェックリストが並んでいます。情報は溢れているのに、当事者は必...",
       "category": "開発",
       "rss_category": "",
       "image_url": ""
