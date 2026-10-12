@@ -1,24 +1,144 @@
 {
   "site": "Zenn(Python)",
-  "last_updated": "2026-10-12T09:24:45.821907",
-  "total_articles": 7030,
+  "last_updated": "2026-10-12T19:15:07.948108",
+  "total_articles": 7040,
   "articles": [
+    {
+      "title": "[Python/C++] 安全なプロセス終了(signal)",
+      "url": "https://zenn.dev/taiyaki_sec9/articles/safety_signal",
+      "site": "Zenn(Python)",
+      "published": "2026-10-12T12:38:50Z",
+      "description": "📌 概要\n\n ⚠️ 課題\nプログラムの実行中に Ctrl+C を押すと，通常は処理が中断される．しかし，プログラムによっては，モータの停止やソケットの切断など，アプリケーション固有の終了処理が実行されない可能性がある．\n特にロボットの制御では，プログラムが終了してもモータが動き続けるといった危険な状態につながるおそれがある．\n\n 💡 結論\nPythonの signal モジュールやC++の std...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "「圏外でもつながる」で、報告は期限内に届くのか。HAPSと衛星直接通信を小さな計算で読む",
+      "url": "https://zenn.dev/hocky3/articles/eb011aefd335d2",
+      "site": "Zenn(Python)",
+      "published": "2026-10-12T12:38:47Z",
+      "description": "圏外の現場から、報告を期限内に事務所へ送りたい\n携帯電話の電波が届かない山で設備を点検し、写真と位置を事務所へ送りたい。災害で普段の基地局が止まり、家族へ無事を知らせたい。どちらも「圏外でもつながる」と言われる場面だが、必要な量も、届ける相手も、使える地上設備も違う。\n\n圏外を埋める手段として挙がる二つを、この記事では読む。成層圏に滞空する通信設備のHAPSと、対応スマホが衛星へ直接つながる衛星直...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "SEC APIの厳しい制限を突破し、業種を跨いだ財務データを安定的に収集するPython実装術",
+      "url": "https://zenn.dev/quant_rtm/articles/50706c9a14c617",
+      "site": "Zenn(Python)",
+      "published": "2026-10-12T12:28:42Z",
+      "description": "はじめに\nクオンツ運用やファンダメンタル分析において、米国証券取引委員会（SEC）が提供するEDGAR APIは宝の山です。しかし、実際に大規模な銘柄群（S&amp;P500など）から財務データを自動収集しようとすると、いくつかの高い壁にぶつかります。\n特に、**「厳格なレートリミットによるIP BANのリスク」と、「企業や業種によって異なるXBRLタグの多義性」**は、単純なスクリプトでは解決で...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "[tc・netem]Linuxでネットワーク遅延の再現・使用上の注意点",
+      "url": "https://zenn.dev/taiyaki_sec9/articles/make-linux-delay",
+      "site": "Zenn(Python)",
+      "published": "2026-10-12T11:20:32Z",
+      "description": "🌐 概要\n\n 🧩 課題\nネットワークを利用するシステムを開発する際，通信遅延やパケットロスが発生した場合の動作を検証したいことがある．\nしかし，実際のネットワークで通信品質の悪化を再現するには，環境の準備や条件の統一が難しい．\n例えば，以下のようなケースが考えられる．\n\n遠隔地との通信を想定した遅延の再現\n通信が不安定な環境での動作確認\n通信遅延が制御性能に与える影響の評価\nパケットロスが発生した...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "書いた注意書きが翌週消える — 毎週上書きするExcelの「機械の領地」を決める",
+      "url": "https://zenn.dev/shinsei99/articles/excel-machine-owned-rows",
+      "site": "Zenn(Python)",
+      "published": "2026-10-12T11:10:17Z",
+      "description": "建物の法定点検（受水槽・消防・昇降機など）を月ごとに並べた年度計画表という Excel があります。\nこれに、週1回、業者の点検報告書フォルダを走査して「今年度に実施したか」のチェックを\n自動で入れています。\nこの表は、機械の出力物ではありません。担当者が実施日や備考を書き込む現役の帳票です。\nつまり1枚のシートに、\n\n毎週まっさらに書き直される部分\n人が書いたら残らなければいけない部分\n\nが同居...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "whisperの文字起こしにJevで話者ラベルを付けようとしたら、Jevは要らなかった",
+      "url": "https://zenn.dev/ik11235/articles/whisper-jev-speaker-label",
+      "site": "Zenn(Python)",
+      "published": "2026-10-12T10:30:01Z",
+      "description": "はじまり\n皆さん、会議の議事録などはどうしているでしょうか？\n最近はAI関連のツールが豊富で、たとえばNotionならAIミーティングノート、Google MeetならGeminiによる文字起こしがあります。\nさらにNotionのAIミーティングノートは話者を特定してラベルを付けてくれるので、誰の発言かを文脈や録画から追わなくても確認できます。\n（Meetでも一部のエディションで話者分離が使えると...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "余っていたPCとRaspberry Piで作るオフィス管理システム【第2回：システム構成と開発環境】",
+      "url": "https://zenn.dev/techcraft_lab/articles/office-terminal-02-system-architecture",
+      "site": "Zenn(Python)",
+      "published": "2026-10-12T09:01:36Z",
+      "description": "このシリーズの記事\n\n第1回：UbuntuとPythonでオフィスの点検・在席管理システムを自作した\n\n第2回：余っていたPCとRaspberry Piで作るオフィス管理システム （この記事）\n\n第3回：オフィス管理システムの中身を見てみる。FastAPIとSQLiteの設計\n\n\n はじめに\n前回の記事では、事務所の日常点検と社員の在席管理を行うWebアプリ「office_terminal」につい...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "Pythonで依存性注入（DI）を手で書く：為替APIとSQLiteを差し替え、テストには固定レートを渡す",
+      "url": "https://zenn.dev/tmtk/articles/3f401dabe9bb1f",
+      "site": "Zenn(Python)",
+      "published": "2026-10-12T08:24:00Z",
+      "description": "はじめに\nオブジェクト指向を勉強していると、依存性の注入（Dependency Injection、DI）という言葉をよく見かけます。筆者は、Pythonプログラミング VTuber サプーさんの動画「【DI】依存性の注入って何？！〜Pythonでオブジェクト指向プログラミング〜インターフェースを上手に使おう〜」でDIを学びました。動画では、ユーザー情報をデータベースから取得するクラスとWeb A...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "地域の浸水リスクをどう比較する？Pythonで面積と人口の2軸から評価を試す",
+      "url": "https://zenn.dev/nakato_tomohito/articles/python-flood-area-population",
+      "site": "Zenn(Python)",
+      "published": "2026-10-12T06:58:54Z",
+      "description": "大雨による浸水被害に備えるために、市区町村が、どれほど洪水の影響を受けやすいのかをデータで把握できないかと考えました。2024年にも、能登半島や山形県・秋田県で、河川の洪水などによる床上・床下浸水が報告されています。国土交通省の水害被害報告\nその手がかりとして、浸水が想定される土地の割合と、その区域に住むと推計される人口の割合を、市区町村ごとに比較する評価の試作をしました。土地の広がりと、住民のい...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "worklistを、別環境との実行契約にする",
+      "url": "https://zenn.dev/miyakona/articles/worklist-as-execution-contract",
+      "site": "Zenn(Python)",
+      "published": "2026-10-12T06:38:04Z",
+      "description": "1つのバッチに、候補を見つける工程、対象かを判断する工程、成果物を作る工程がありました。最初は、すべてを同じ実行環境で順番に動かしていました。\nところが、工程ごとに必要な実行条件が異なり、1か所では完了できなくなりました。前半の列挙と判断は環境A、成果物を作る処理は環境Bへ分けます。実行条件そのものを変えるのではなく、それぞれが実行できる工程だけを担当する形です。\n最初に考えたのは、すでに人が読ん...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "利用者が上げた 3D モデルを、GPU なしのアプリで商品写真にする 40 行（アップロード → 固定価格の注文 → webhook）",
+      "url": "https://zenn.dev/renderjanction/articles/f0ddbc52b9081f",
+      "site": "Zenn(Python)",
+      "published": "2026-10-12T06:34:24Z",
+      "description": "公式: https://render.janction.jp\n結論から書くと、利用者が 3D モデルを上げるアプリに GPU は要りません。ファイルを描画 API に送り、走る前に値段の分かる商品写真を注文し、できあがったら webhook を 1 回受け取るだけです。JANCTION Render は、プログラムや AI エージェントが HTTP API か MCP サーバーとして呼べる、Ble...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "遠隔操縦の探検車 ANEx3の開発⑨ 制御プログラム（ANEx本体側ESP32）",
+      "url": "https://zenn.dev/inufox/articles/9606005cc331b2",
+      "site": "Zenn(Python)",
+      "published": "2026-10-12T06:20:38Z",
+      "description": "全体目次\n\nフロントページ\n使った部品について\n全体の概要\n車体、動力系\nセンサー\nカメラ\nPCとの通信\n制御プログラム（PC側）\n制御プログラム（ANEx側）（このページ）\nフィールドテスト\n補稿（地磁気センサー/コンパスのキャリブレーション）\n\n\n 9. 制御プログラム（ANEx本体側ESP32）\n\n\n\n\nANEx = ANa Explorer防空壕(穴、洞窟)を探検するためのロボットカー現在...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "ヒューマノイドG1改造2日目 ― 顔認識はすぐできた。でも「ついてきて」は難しかった",
+      "url": "https://zenn.dev/digirise/articles/f8cefb0414d5cf",
+      "site": "Zenn(Python)",
+      "published": "2026-10-12T05:21:23Z",
+      "description": "オフィスのG1と代表のチャエン\nこんにちは。株式会社デジライズ フィジカルAI事業部です。\nヒューマノイドロボット「Unitree G1」の改造記録、2日目です。\n前回の記事では、G1と日本語で会話して「前に30cm歩いて」で体を動かすところまでを書きました（最後に一度暴走しています）。\n2日目のテーマは「目」です。\n\nAI専用のコックピット（Web操作画面）を作る\nカメラで人の顔を覚えて、名前で...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
     {
       "title": "JSONが正しくても結論は変わる：入力と重みを分けて検査する",
       "url": "https://zenn.dev/russlanramdowar/articles/e2a387e4e1a891",
       "site": "Zenn(Python)",
       "published": "2026-10-12T05:07:42Z",
       "description": "JSONをパースできることと、その数値が意味する結論を確認できることは別です。AIの集約結果を扱うときは、元の値、集約の重み、計算方法をそれぞれ保存すると、変化した場所を追いやすくなります。\n私が公開した「When Models Judge Models」の数値再現パッケージでは、98件の元レポートと56件の集約出力について、392件の構造・算術検査がすべて成功します。この検査は保存された計算を扱...",
-      "category": "開発",
-      "rss_category": "",
-      "image_url": ""
-    },
-    {
-      "title": "Claude Haiku 5.5 へ Haiku 4.5 から移行するときに壊れる 6 つと、単価が 5 倍になる条件",
-      "url": "https://zenn.dev/persimmoq/articles/claude-haiku-5-5-migration-from-4-5",
-      "site": "Zenn(Python)",
-      "published": "2026-10-12T04:53:31Z",
-      "description": "2026 年 10 月 7 日に Claude Haiku 5.5（claude-haiku-5-5）が出ました。Haiku 系で初めて adaptive thinking と effort を持ち、1M コンテキスト・128K 出力で、API の形は Opus 5.5 / Sonnet 5.5 に揃っています。単価は $0.10 / $0.50 と Haiku 4.5 の 1/10 ですが、プロ...",
       "category": "開発",
       "rss_category": "",
       "image_url": ""
@@ -48,7 +168,7 @@
       "url": "https://zenn.dev/techcraft_lab/articles/office-terminal-01-introduction",
       "site": "Zenn(Python)",
       "published": "2026-10-12T03:36:47Z",
-      "description": "はじめに\n事務所の退室点検と社員の在席状況を管理するWebアプリケーション「office_terminal」を作りました。\nUbuntu Server上でPythonのFastAPIを動かし、タブレットやPCのブラウザから操作する構成です。最初は退室点検簿の電子化が目的でしたが、在席管理や履歴、カレンダーなども追加しました。\nもう一つの目的は、若手エンジニアの開発教育です。まず自分で最低限動作する...",
+      "description": "このシリーズの記事\n\n\n第1回：UbuntuとPythonでオフィスの点検・在席管理システムを自作した （この記事）\n\n第2回：余っていたPCとRaspberry Piで作るオフィス管理システム\n第3回：オフィス管理システムの中身を見てみる。FastAPIとSQLiteの設計\n\n\n はじめに\n事務所の退室点検と社員の在席状況を管理するWebアプリケーション「office_terminal」を作りま...",
       "category": "開発",
       "rss_category": "",
       "image_url": ""
@@ -74,31 +194,11 @@
       "image_url": ""
     },
     {
-      "title": "中継API選びで見るべき5指標と最小プローブ（同じモデル同士で比べる）",
-      "url": "https://zenn.dev/searching/articles/c3b4a295427ef1",
-      "site": "Zenn(Python)",
-      "published": "2026-10-12T03:07:31Z",
-      "description": "同じモデル名でも、中継（リレー／リセラー）が違うと挙動はかなり変わります。ピークだけ落ちる、中央値は速いのにP95が汚い、ステータスは200なのにボディがエラー——よくあるパターンです。\n契約前に私が実際に見ているチェックリストと、手元で動かせる小さなスクリプトを置きます。Qiitaにも近いテーマを書きましたが、こちらは「選び方の意思決定」に寄せています。\n\n 見るべき5つ\n\n\n同じモデル同士だけ...",
-      "category": "開発",
-      "rss_category": "",
-      "image_url": ""
-    },
-    {
       "title": "settings.json の検査器を書くとき、判定の正をどこに置くか",
       "url": "https://zenn.dev/ikinokori/articles/claude-code-permissions-lint-oracle",
       "site": "Zenn(Python)",
       "published": "2026-10-12T03:00:07Z",
       "description": "自分で書いた検査器が偽陽性を1件出すと、その道具はそこで終わる。CI に置いた lint が「無効な設定が残っている」と言い、調べたら有効だった、という経験が一度あれば、次からは出力を読まずに通すようになる。だから設定ファイルの検査器を書くときに先に決めるのは、検出したい形の一覧ではなく、何を正解とみなすかである。\n私は Claude Code の .claude/settings.json の ...",
-      "category": "開発",
-      "rss_category": "",
-      "image_url": ""
-    },
-    {
-      "title": "PDF・Word・Webの「隠し指示」はAIに届くのか？ 36ファイル×10通りの抽出で実測した",
-      "url": "https://zenn.dev/kagaage/articles/7f670b3a59a94d",
-      "site": "Zenn(Python)",
-      "published": "2026-10-12T02:50:30Z",
-      "description": "外部から受け取ったPDFやWord、Webページを、AIに要約・採点させる場面が増えました。応募書類の一次確認、提案書の比較、論文の査読補助、取引先資料の要約などです。\nそこで問題になるのが、人には見えないのに、AIに渡るテキストには残る「隠し指示」です。2025年7月、arXivに投稿された論文17本に、AI査読者向けの隠し指示（「肯定的な評価だけをせよ」など）が白文字や極小文字で埋め込まれてい...",
       "category": "開発",
       "rss_category": "",
       "image_url": ""

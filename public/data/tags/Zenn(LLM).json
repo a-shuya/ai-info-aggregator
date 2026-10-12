@@ -1,8 +1,148 @@
 {
   "site": "Zenn(LLM)",
-  "last_updated": "2026-10-12T09:24:45.821907",
-  "total_articles": 6673,
+  "last_updated": "2026-10-12T19:15:07.948108",
+  "total_articles": 6686,
   "articles": [
+    {
+      "title": "【続編】RTX 2060 6GB で 125B LLM (Strata) を IQ3_XXS で動かしてみた。日本語は崩れないが返答に5分",
+      "url": "https://zenn.dev/remuno/articles/strata-rtx2060-qwen38-flash-next-q3",
+      "site": "Zenn(LLM)",
+      "published": "2026-10-12T11:14:09Z",
+      "description": "!\n2026年10月中旬時点の情報です。Strata は v0.1.42、モデルは IQ3_XXS。\n前回記事: https://zenn.dev/remuno/articles/strata-rtx2060-qwen38-flash-next-q2\n読了時間の目安は約 11 分(約 7,000 文字)です。\n\n\n はじめに\n前回、RTX 2060 6GB + RAM 64GB で Strata ...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "並列サブエージェントを「信じる」から「見る」へ — AIエージェントのフォークを1本のタイムラインで眺める",
+      "url": "https://zenn.dev/shekhar/articles/6bfaa0498b590a",
+      "site": "Zenn(LLM)",
+      "published": "2026-10-12T10:32:23Z",
+      "description": "サブエージェントに仕事を分けると速くなる。理屈ではそうなります。でも実際にバックグラウンドで3つも4つもエージェントが走り出すと、私はだいたい不安になります。今なにやってるんだろう。終わったのか、詰まっているのか。終わるまで画面を見つめるか、諦めてコーヒーを淹れに行くか。\n並列化って、見えないとただの博打なんですよね。\n私は Andromity というオープンソース（MIT）のAIコーディングエー...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "Jevを日本語判定での導入検証メモ",
+      "url": "https://zenn.dev/i2bskn/articles/7169a9c960c8b8",
+      "site": "Zenn(LLM)",
+      "published": "2026-10-12T10:25:03Z",
+      "description": "Jevを日本語の判定で試したので、検証結果のメモです。\nJevはテキストを生成しない分類専用のモデルで、質問に対して「はい/いいえ」「選択肢」「スコア」を確率つきで返します。\n\n 検証内容\n商品のタイトルに値引きや販促の訴求が含まれるかを判定しました。\n\n\n\n項目\n内容\n\n\n\n\n対象\n日本語/英語の商品名 約3,200件\n\n\n質問の形式\nnoul\n\n\nモデル\njev-1.13.0\n\n\n\n\n 1. ...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "ローカルLLM 41モデルが1つも解けなかった算数の6問は、問題の訳のせいだった",
+      "url": "https://zenn.dev/llmonmac/articles/mgsm-rev2-remeasure",
+      "site": "Zenn(LLM)",
+      "published": "2026-10-12T09:16:19Z",
+      "description": "はじめに\nMac Studio（M5 Max・メモリ36GB）でローカル LLM を測り、結果を公開している「LLM on Mac」の記事です。前に書いた記事では、サイトの運営をローカル LLM のエージェントに任せている話をしました。今回は計測の中身、算数の問題集の話です。\nサイトでは、モデルの賢さの目安の1つとして、算数の文章題を100問解かせています。ところが、その問題集の日本語訳を調べると...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "ローカルLLMの住人の島で100日、お金が貯まったパン屋から島を出ていった",
+      "url": "https://zenn.dev/llmonmac/articles/island-economy-100-days",
+      "site": "Zenn(LLM)",
+      "published": "2026-10-12T09:15:26Z",
+      "description": "はじめに\n小さなローカル LLM を住人にした架空の島を、Mac mini で動かしています（島の観察日記）。前の記事では、この島が SSD に70GBも書き込んでいた話をしました。今回は、そのとき予告した住人のお金の話です。\n島は100日ごとに新しくなります。ほぼ同じお金の決まりで3つの島を100日ずつ回したところ、どの島でも次のことが起きました。\n\n焼いたパンの15%ほどが、売れ残って傷んだ\n...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "LLM04：データとモデルのポイズニングとは？AIが「毒」を学ぶと何が起きるのか",
+      "url": "https://zenn.dev/monkey_gineer/articles/security-llm-04-data-model-poisoning",
+      "site": "Zenn(LLM)",
+      "published": "2026-10-12T09:05:40Z",
+      "description": "1. その便利な機能、本当に安全ですか？\n自社の問い合わせ対応AIをより賢くするため、過去の問い合わせ履歴や社外から集めた文書を使って、追加で学習させることにしたとします。\nでは、その学習データの中に、攻撃者が紛れ込ませた文書が混じっていたら？ たとえば、特定の言葉が入力されたときだけ誤った案内をするよう、仕込まれていたら？\n普段は正常に動き、特定の条件でだけ誤動作するため、テストでは気づきにくく...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "LLM03：サプライチェーンとは？借りてきたAIモデルを信頼してよいのか",
+      "url": "https://zenn.dev/monkey_gineer/articles/security-llm-03-supply-chain",
+      "site": "Zenn(LLM)",
+      "published": "2026-10-12T09:05:22Z",
+      "description": "1. その便利な機能、本当に安全ですか？\n自社のサービスにAIを組み込むことになったとします。ゼロからモデルを作る企業は少なく、公開されているモデルや外部のデータ、ライブラリを組み合わせて作るのが一般的です。\nでは、ダウンロードしたモデルに、外から見えない形で悪意ある振る舞いが仕込まれていたら？ 評判のよい公開モデルの名前を使った偽物を、うっかり取り込んでしまったら？\nAIを作る部品（モデル、デー...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "Ternary Bonsai 2 27BをRTX 4070で動かす：PrismML版llama.cpp、思考の止め方、文脈枠の崖",
+      "url": "https://zenn.dev/localai_lab/articles/e99753d9876882",
+      "site": "Zenn(LLM)",
+      "published": "2026-10-12T06:58:33Z",
+      "description": "VRAM 12GBのGPUで27Bクラスを動かすと、4bit（Q4_K_M）では載りきりません。9月に測ったときは、-ngl を詰めても生成3 tok/s前後でした。\n同じQwen3.8-27Bを約2bitの三値に縮めた Ternary Bonsai 2 27B なら、RTX 4070に全層が載って 生成56 tok/s でした（思考オフ・短い入力）。\nただし、動かすまでに引っかかる点がいくつかあ...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "Milesによる責務を分離したRL実装とハーネス適合の実験",
+      "url": "https://zenn.dev/rtanaka/articles/8a50b3973dd728",
+      "site": "Zenn(LLM)",
+      "published": "2026-10-12T06:39:38Z",
+      "description": "既存のエージェントへ強化学習（RL）を導入するとき、性能だけでなく、そのコードの保守性も懸念として上がります。学習用の都合でアプリやハーネスの実装が複雑になったり、RLフレームワーク側にハーネスを再実装するようなことをしてしまうと本来適合させたかったハーネスとはズレると言ったことが起こりえます。\n今回はMilesを使い、次の2点を扱います。\n\nRL導入時のコードのクリーンさ：責務分離と実行ループの...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "MCPのステートレス化、4言語SDKの移行実測8本を壊れる層ごとに整理した",
+      "url": "https://zenn.dev/kai_kou/articles/1217-mcp-stateless-sdk-migration-roundup",
+      "site": "Zenn(LLM)",
+      "published": "2026-10-12T04:13:03Z",
+      "description": "はじめに\nMCP（Model Context Protocol）の 2026-07-28 仕様で、initialize ハンドシェイクと Mcp-Session-Id ヘッダーが廃止されました。移行の記事を読むと「既存クライアントは壊れない」という話と「400 が返り続けて通らない」という話が両方出てきて、どちらを信じればよいのか迷います。\n対象読者は、MCP サーバーやクライアントを自作していて...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "「ほしょう」は保証か補償か保障か；Jevで「もしかして」",
+      "url": "https://zenn.dev/kotap/articles/didyoumean-without-generation",
+      "site": "Zenn(LLM)",
+      "published": "2026-10-12T03:34:30Z",
+      "description": "!\nこの記事の執筆・校正には AI を用いています。\n\n「ほしょう」と打たれたら、保証・補償・保障のどれでしょうか。「こうせい」なら厚生・構成・公正・更正・較正・校正・更生の 7 つがあります。日本語の検索では、漢字を思い出せずにひらがなで打たれたり、変換で違う漢字を選ばれたりすることがよくあります。\n検索エンジンの「もしかして」機能は、これを正しい表記に直して検索し直すものです。LLM に書き直...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "RAGとSFTはどう違うのか、どう結果が変わるのかを実験してみた（QwenモデルにQLoRAのSFT）",
+      "url": "https://zenn.dev/yamazaking/articles/rag-vs-sft-orsharc-qwen",
+      "site": "Zenn(LLM)",
+      "published": "2026-10-12T03:11:29Z",
+      "description": "はじめに（TL;DR）\nLLMの性能を上げる方法としてRAGとFine-tuningがあります。それらがどのように異なるのか、そして正解率に対してどのような結果になるのか、を今回は実験して確かめてみました。実験環境は、Google Colab の T4 GPU、仕様したモデルはQwen2.5-1.5B-Instruct を使いました。\n題材は公開データセット OR-ShARC の「規則に照らして ...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "中継API選びで見るべき5指標と最小プローブ（同じモデル同士で比べる）",
+      "url": "https://zenn.dev/searching/articles/c3b4a295427ef1",
+      "site": "Zenn(LLM)",
+      "published": "2026-10-12T03:07:31Z",
+      "description": "同じモデル名でも、中継（リレー／リセラー）が違うと挙動はかなり変わります。ピークだけ落ちる、中央値は速いのにP95が汚い、ステータスは200なのにボディがエラー——よくあるパターンです。\n契約前に私が実際に見ているチェックリストと、手元で動かせる小さなスクリプトを置きます。Qiitaにも近いテーマを書きましたが、こちらは「選び方の意思決定」に寄せています。\n\n 見るべき5つ\n\n\n同じモデル同士だけ...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "PDF・Word・Webの「隠し指示」はAIに届くのか？ 36ファイル×10通りの抽出で実測した",
+      "url": "https://zenn.dev/kagaage/articles/7f670b3a59a94d",
+      "site": "Zenn(LLM)",
+      "published": "2026-10-12T02:50:30Z",
+      "description": "外部から受け取ったPDFやWord、Webページを、AIに要約・採点させる場面が増えました。応募書類の一次確認、提案書の比較、論文の査読補助、取引先資料の要約などです。\nそこで問題になるのが、人には見えないのに、AIに渡るテキストには残る「隠し指示」です。2025年7月、arXivに投稿された論文17本に、AI査読者向けの隠し指示（「肯定的な評価だけをせよ」など）が白文字や極小文字で埋め込まれてい...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
     {
       "title": "仕様変更の影響範囲を把握するために、業務仕様・API・DBの関連を可視化するツールを作った",
       "url": "https://zenn.dev/3jsc/articles/320054b00dbf6a",
@@ -119,16 +259,6 @@
       "site": "Zenn(LLM)",
       "published": "2026-10-11T02:50:11Z",
       "description": "この記事で分かること\n「16GBのMacで llama.cpp の4倍、なら乗り換えたほうがいいのか」。10月9日、Apple Silicon 専用の推論エンジン Uzu を 16GB の M5 で測った投稿（llama.cpp 22.0 / MLX 25.1 / Uzu 92.1 tok/s）が広まりました。\n同じ M5 16GB で測り直した結果がこれです。\n\n\n\nエンジン\nPythonコード...",
-      "category": "AI・技術",
-      "rss_category": "",
-      "image_url": ""
-    },
-    {
-      "title": "Reinforcement Learning with Verifiable Rewards",
-      "url": "https://zenn.dev/yoshinn/articles/reinforcement_learning_with_vr",
-      "site": "Zenn(LLM)",
-      "published": "2026-10-11T02:22:54Z",
-      "description": "近年のLLMはSFTと呼ばれる教師あり学習を行った後、最近のモデルはRLVRと呼ばれるLLMの強化学習を行っています。\nこのRLVRについて解説していきたいと思います。\n\n RLVRとは\nRLVR は Reinforcement Learning with Verifiable Rewards（検証可能報酬による強化学習）の略です。LLM の推論能力を強化学習で鍛える手法の一種で、特に DeepS...",
       "category": "AI・技術",
       "rss_category": "",
       "image_url": ""

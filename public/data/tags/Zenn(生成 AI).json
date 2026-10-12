@@ -1,14 +1,154 @@
 {
   "site": "Zenn(生成 AI)",
-  "last_updated": "2026-10-12T09:24:45.821907",
-  "total_articles": 4466,
+  "last_updated": "2026-10-12T19:15:07.948108",
+  "total_articles": 4480,
   "articles": [
+    {
+      "title": "倉庫と配送の仕事、AIに任せる線はどこまでですか？ — 物流の職制で決める",
+      "url": "https://zenn.dev/satoshimizuhara/articles/ai-agent-warehouse-layers",
+      "site": "Zenn(生成 AI)",
+      "published": "2026-10-12T11:33:39Z",
+      "description": "前回は、工場の職制の3つの階層にAI任せの工程を置くという話で、産業別に寄せて読む回の1回目をした。本稿はその続きで、2回目の物流業で、テーマは「倉庫の仕分け指示・在庫照会・配送日の説明という仕事を、ドライバー、リーダー、マネジャーの職制の中でどこに置くか」だ。倉庫は、現場の人数は工場に負けないのに、役割の書き方が工場ほど固まっていない支店がある。書き方が薄い現場ほど、任せる範囲が個人の勘に頼りや...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "Claude Codeのmodsを35行で書いた。検証コマンドは誤り3件を止めたが、素通り3通りには何も言わなかった",
+      "url": "https://zenn.dev/numarn/articles/claude-code-mods-hook-test-handson",
+      "site": "Zenn(生成 AI)",
+      "published": "2026-10-12T11:06:21Z",
+      "description": "Claude Code(ターミナルから AI に作業を頼む道具)に mods という拡張の仕組みが入った、と X で見かけました\n(出典の投稿は 2.1.287 で追加されたと伝えています。手元で確かめたのは 2.1.289 だけです)。\n数行の TypeScript を置くと、AI の手が動く前に割り込める、というものです。\nいちばん分かりやすい使い道が「rm -rf(フォルダごと問答無用で消す...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "Excelの名寄せでAIに任せるのは候補出しまで — 検算は人間の仕事に戻す",
+      "url": "https://zenn.dev/yoshitokinosita/articles/0012-excel-ai-nayose",
+      "site": "Zenn(生成 AI)",
+      "published": "2026-10-12T10:11:11Z",
+      "description": "消えない表記ゆれを、どう捌くか\n経理の月末に必ず残るのが名寄せです。顧客マスタと請求書の宛名、仕入先台帳と領収書の会社名。同じ取引先なのに、行ごとに書き方が違う。\n㈱と株式会社。全角と半角の英数字。スペースの有無。移管や改称の前に旧名称のまま残る行。担当者の苗字だけ一致して会社が違うケース。目視で消していくと、終わる頃には次の表の締めが溜まっています。\n前回は月末締めの全体像を書きました。この連載...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "AI自動化で「同じ処理を2回実行しない」ためのIdempotency設計",
+      "url": "https://zenn.dev/aiai_tool/articles/8da1bff2484356",
+      "site": "Zenn(生成 AI)",
+      "published": "2026-10-12T09:17:06Z",
+      "description": "生成AIをAPIや自動化ツールと組み合わせると、1回の操作から複数の処理を実行できるようになります。\n例えば、\nAIで文章を生成する\n↓\nデータベースに保存する\n↓\nメールを送信する\n↓\nSlackに通知する\nというワークフローです。\n便利な一方で、ネットワークエラーや再試行によって「同じ処理が2回実行される」という問題が起きることがあります。\nこうした重複処理を防ぐ考え方の一つがIdempote...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "業務フロー図を Excel で描くのはもうやめたい —— AI も読める業務フローエディタ「AFdraw」",
+      "url": "https://zenn.dev/thirtypower/articles/afdraw-business-flow-editor",
+      "site": "Zenn(生成 AI)",
+      "published": "2026-10-12T08:21:49Z",
+      "description": "AFdraw ブラウザ版はこちらから、すぐに試せます（インストール・アカウント不要。開いて「試す」を押すと、下の画像の架空のサンプルが入ります）\nhttps://dtl1oinhowkx5.cloudfront.net/\n\n架空のサンプル「受注〜出荷」。工程の位置も線の経路も、人は一度も指定していません\nERP の導入プロジェクトでは、業務フロー図を何十枚、多いときは何百枚も描きます。部署ごとに列...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "AIでコミットは240%増えた。なのにリリースは30%増――GitHubの大規模研究から見る開発のボトルネック",
+      "url": "https://zenn.dev/kotakotahiro/articles/7ce3ac51c8e1ee",
+      "site": "Zenn(生成 AI)",
+      "published": "2026-10-12T03:12:29Z",
+      "description": "AIコーディングエージェントに仕事を頼むと、少し不思議な感覚になります。\nまず、「この機能を追加して」と伝えます。するとAIは関連ファイルを探し、実装し、テストを書き、ときにはプルリクエストの説明文まで用意してくれます。人間が一つずつ進めていた作業が、驚くほどの勢いで前に進みます。\nこうなると、自然に期待してしまいます。「コードを書く活動が3倍以上になるなら、出荷できるソフトウェアも同じように増え...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "頭が爆発したので、仕様駆動開発（SDD）プラグインを自作してみた",
+      "url": "https://zenn.dev/daichi0713/articles/spec-ramo-intro",
+      "site": "Zenn(生成 AI)",
+      "published": "2026-10-12T03:10:52Z",
+      "description": "AI が書いた PR を、自分で説明できますか\n\n「ここはなぜこうしたの？」\n\nレビューでこう聞かれて、自分の PR なのに即答できなかったことが多々ありました。\nコードを書いたのは AI で、自分の理解は浅いままでした。\n現場は巨大なモノリスのプロジェクト。\n実装は速くなったのに、開発全体はかえって遅く、品質も低いまま。\n体調まで崩して、さすがにまずい、と。\n速く作れるようになったぶん、「自分が...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "【１日１デプロイ】しぐさを読む短編RPG「みっつのわざと雲の竜」を作った",
+      "url": "https://zenn.dev/boraemon2000/articles/cloud-dragon-telegraph-preview",
+      "site": "Zenn(生成 AI)",
+      "published": "2026-10-12T02:44:14Z",
+      "description": "今回作ったもの\n「１日１デプロイ」の新作として、竜のしぐさを読んで戦う短編ミニRPG みっつのわざと雲の竜 を作りました。\nプレイヤーが使うのは、次の三つの技だけです。\n\n\nすきありには「こうげき」\n\n炎をためるには「まもる」\n\nうろこを固めるには「まほう」\n\n正しい技を選ぶと竜のHPが減り、「読み」が3つたまると必殺技の晴天斬りを使えます。間違えても約0.7秒で次のしぐさへ進むため、答えを覚えな...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "ものづくりのでは雑でもメモを残そう！NotebookLMでCADマニュアルと経験を共有",
+      "url": "https://zenn.dev/fibujrsl/articles/b3f3419d80286c",
+      "site": "Zenn(生成 AI)",
+      "published": "2026-10-12T02:28:57Z",
+      "description": "はじめに\n複数人でものづくりをするなら、自分が困ったことや気づいたことは、どんなに雑でもいいからメモに残しておいたほうがいいと思っています。\n特にCADのような専門的なソフトウェアを使っていると、操作方法がわからなかったり、原因不明のエラーに遭遇したりすることがあります。\n苦労して解決できたとしても、その経験を自分の頭の中だけに残しておくのはもったいないです。\n例えば、こんな経験はないでしょうか。...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "新しいモデルが出るたびに何を試せばいいかわからないので、Xの個人ベンチを調べた",
+      "url": "https://zenn.dev/uguisu_blog/articles/45fc19e9e1fe6d",
+      "site": "Zenn(生成 AI)",
+      "published": "2026-10-12T02:21:05Z",
+      "description": "新しいモデルが出た日に、とりあえず適当なコードを書かせて「すごいな」で終わったことありません？私はいつもXか社内のslackで誰かがレビューしてくれるのを待っていました。\n公式のベンチマークの表は出るんですが、何GitHubのなんとかベンチで何%です!と言われても自分の仕事がどう楽になるのかは想像がつきません。どういうお題ならベンチとして成り立つのかを調べて、最後に1つ作って回したのがこの記事です...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "止められたのは grep で、通ったのは本番の設定の削除だった — Claude Code の auto モードの判定を30日分数えた",
+      "url": "https://zenn.dev/kuu_dqx/articles/denied-grep-allowed-delete",
+      "site": "Zenn(生成 AI)",
+      "published": "2026-10-12T01:32:34Z",
+      "description": "Claude Code の auto モードでは、エージェントが打つコマンドを、実行の前に Claude Code の側で判定します。危ないと判定されたものは止まり、エージェントには次の文言が返ります（文中の classifier がこの判定の仕組みです）。この記事では、これを auto モードの判定と呼びます。\nPermission for this action was denied by t...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "AI導入を見送った判断を、次の検討に使える記録へ変える",
+      "url": "https://zenn.dev/miraigent/articles/ai-adoption-not-now-reconsideration",
+      "site": "Zenn(生成 AI)",
+      "published": "2026-10-12T01:20:48Z",
+      "description": "AI導入の会議で「今回は見送ります」と決めた後、その理由はどこに残るでしょうか。\n議事録に一行だけ残り、数か月後に別の担当者が同じ調査を始める。あるいは、前提が変わっていないのに「今ならAIでできるかもしれない」と再び議論する。こうしたやり直しは、見送りが間違いだったから起きるのではありません。見送った判断が、次の人にとって再開可能な形になっていないから起きます。\nこの記事では、AI導入を進めない...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
     {
       "title": "AI エージェントに見せるツールは何個まで？ Postman が 170 個から 15 個に絞った本番設計",
       "url": "https://zenn.dev/takuh/articles/6c02d8705609ea",
       "site": "Zenn(生成 AI)",
       "published": "2026-10-12T00:04:49Z",
       "description": "はじめに\nAI エージェントに社内システムを操作させようとすると、最初は「できることを増やす」ことに目が向きます。MCP（Model Context Protocol：AI に外部のツールをつなぐための共通の約束事）のサーバーを足し、API ごとにツールを作り、気づけばツールが 50 個、100 個と増えていきます。\nところが、ある時点からエージェントの様子がおかしくなります。「承認して」と頼んだ...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "AirbnbのAIネイティブ化 ── CEOの決算発言とCTOの証言で読む、AIファーストな組織とは？",
+      "url": "https://zenn.dev/leading_ai/articles/airbnb-ai-native-organization",
+      "site": "Zenn(生成 AI)",
+      "published": "2026-10-11T22:16:52Z",
+      "description": "序章：Airbnbは、「AIファーストのアプリになる」と語った1年後、「AIネイティブな会社に作り直した」と宣言した\n2025年8月6日、Airbnbの共同創業者でCEO（最高経営責任者）のブライアン・チェスキー氏は、決算説明会でこう述べた。\n今後数年で、Airbnbは「AI-first application（AIファーストのアプリ）」になる。\n\nAirbnb 共同創業者/CEO：ブライアン・チ...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "プログラミング初心者が複数のAIでアプリ開発に挑戦する｜RecurAI開発記録 #1",
+      "url": "https://zenn.dev/smalltools_lab/articles/e401d34944e4c1",
+      "site": "Zenn(生成 AI)",
+      "published": "2026-10-11T20:05:05Z",
+      "description": "はじめまして。RecurAI（リカーAI） です。\nプログラミングの専門知識がない状態から、複数のAIを活用してWebアプリや便利なツールを開発するプロジェクトを始めました。\nこの記事では、RecurAIを立ち上げた目的と、これからの開発方針を紹介します。\n\n なぜAIでアプリを開発するのか\n日常生活や仕事では、ちょっとした不便を感じることがあります。\n\n毎回同じ作業を繰り返している\nExcelや...",
       "category": "AI・技術",
       "rss_category": "",
       "image_url": ""
