@@ -1,8 +1,148 @@
 {
   "site": "Zenn(Python)",
-  "last_updated": "2026-10-12T02:16:23.871483",
-  "total_articles": 7017,
+  "last_updated": "2026-10-12T09:24:45.821907",
+  "total_articles": 7030,
   "articles": [
+    {
+      "title": "JSONが正しくても結論は変わる：入力と重みを分けて検査する",
+      "url": "https://zenn.dev/russlanramdowar/articles/e2a387e4e1a891",
+      "site": "Zenn(Python)",
+      "published": "2026-10-12T05:07:42Z",
+      "description": "JSONをパースできることと、その数値が意味する結論を確認できることは別です。AIの集約結果を扱うときは、元の値、集約の重み、計算方法をそれぞれ保存すると、変化した場所を追いやすくなります。\n私が公開した「When Models Judge Models」の数値再現パッケージでは、98件の元レポートと56件の集約出力について、392件の構造・算術検査がすべて成功します。この検査は保存された計算を扱...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "Claude Haiku 5.5 へ Haiku 4.5 から移行するときに壊れる 6 つと、単価が 5 倍になる条件",
+      "url": "https://zenn.dev/persimmoq/articles/claude-haiku-5-5-migration-from-4-5",
+      "site": "Zenn(Python)",
+      "published": "2026-10-12T04:53:31Z",
+      "description": "2026 年 10 月 7 日に Claude Haiku 5.5（claude-haiku-5-5）が出ました。Haiku 系で初めて adaptive thinking と effort を持ち、1M コンテキスト・128K 出力で、API の形は Opus 5.5 / Sonnet 5.5 に揃っています。単価は $0.10 / $0.50 と Haiku 4.5 の 1/10 ですが、プロ...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "架電システム",
+      "url": "https://zenn.dev/kensudo1203/articles/2d925e7c978e32",
+      "site": "Zenn(Python)",
+      "published": "2026-10-12T04:34:31Z",
+      "description": "架電システムのバグは、画面の 500 ではなく相手の携帯として届きます。二重発信は2回鳴ることで、DNC 漏れは断った相手にもう一度かけることです。どちらもロールバックできません。\nKadenSaas では「かけてよいか」は Spring の DialingGate だけが決めます。FastAPI の voice は Twilio の calls.create を dialer.py の1関数に限...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "モンテカルロ×粒子フィルタで知事選を予測したら、勝率75%の側が負けた ── 外れ方を全部記録した話",
+      "url": "https://zenn.dev/yoyo0821/articles/24b754466ff29c",
+      "site": "Zenn(Python)",
+      "published": "2026-10-12T04:22:10Z",
+      "description": "個人的な検証プロジェクトです。公式な選挙予測ではありません。特定の候補者や政党を応援・批判する意図もありません。\n都道府県知事選の勝率と得票数をモンテカルロ・シミュレーションで予測し、開票当夜は粒子フィルタで途中経過から最終結果を推定するサイトを作った\n\n予測は投開票前に凍結して、後から書き換えられないようにした\n長野は得票数を 205票差 で当てた。沖縄は勝率75.5%を付けた側が負けた\n\n沖縄...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "UbuntuとPythonでオフィスの点検・在席管理システムを自作した【開発記録 #1】",
+      "url": "https://zenn.dev/techcraft_lab/articles/office-terminal-01-introduction",
+      "site": "Zenn(Python)",
+      "published": "2026-10-12T03:36:47Z",
+      "description": "はじめに\n事務所の退室点検と社員の在席状況を管理するWebアプリケーション「office_terminal」を作りました。\nUbuntu Server上でPythonのFastAPIを動かし、タブレットやPCのブラウザから操作する構成です。最初は退室点検簿の電子化が目的でしたが、在席管理や履歴、カレンダーなども追加しました。\nもう一つの目的は、若手エンジニアの開発教育です。まず自分で最低限動作する...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "将来の100万円をそのまま足していい？ キャッシュフローを現在価値で考える理由",
+      "url": "https://zenn.dev/econ_data_lab/articles/present-value-cash-flows",
+      "site": "Zenn(Python)",
+      "published": "2026-10-12T03:34:06Z",
+      "description": "金融工学の授業では、**キャッシュフロー（cash flow）**という言葉がよく出てきます。\nこの記事では、「時点の違うお金を、なぜそのまま足して投資価値として扱えないのか」という、私が授業でつまずいた疑問を整理します。\nその前に、まずキャッシュフローそのものから確認します。\n\n そもそもキャッシュフローとは\nキャッシュフローとは、簡単にいえば、ある時点で発生するお金の出入りです。\nたとえば、今...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "EmbeddingGemma 2を日本語の社内文書で試したら、初代・Ruri v3と差がつかなかった話",
+      "url": "https://zenn.dev/rio09/articles/15bf930d5d2e35",
+      "site": "Zenn(Python)",
+      "published": "2026-10-12T03:20:15Z",
+      "description": "2026年10月6日にGoogleがEmbeddingGemma 2を公開しました。テキストだけでなく、画像・動画・音声まで同じベクトル空間に埋め込める、ローカルで動く小型モデルです。\n「社内文書の検索に使うなら、初代や日本語特化モデルから乗り換えるべきか？」が気になったので、Windows 10のノートPC（GPUなし）で、3つのモデルを同じデータで比べてみました。\n\n 結論\n\n日本語の社内規程...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "中継API選びで見るべき5指標と最小プローブ（同じモデル同士で比べる）",
+      "url": "https://zenn.dev/searching/articles/c3b4a295427ef1",
+      "site": "Zenn(Python)",
+      "published": "2026-10-12T03:07:31Z",
+      "description": "同じモデル名でも、中継（リレー／リセラー）が違うと挙動はかなり変わります。ピークだけ落ちる、中央値は速いのにP95が汚い、ステータスは200なのにボディがエラー——よくあるパターンです。\n契約前に私が実際に見ているチェックリストと、手元で動かせる小さなスクリプトを置きます。Qiitaにも近いテーマを書きましたが、こちらは「選び方の意思決定」に寄せています。\n\n 見るべき5つ\n\n\n同じモデル同士だけ...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "settings.json の検査器を書くとき、判定の正をどこに置くか",
+      "url": "https://zenn.dev/ikinokori/articles/claude-code-permissions-lint-oracle",
+      "site": "Zenn(Python)",
+      "published": "2026-10-12T03:00:07Z",
+      "description": "自分で書いた検査器が偽陽性を1件出すと、その道具はそこで終わる。CI に置いた lint が「無効な設定が残っている」と言い、調べたら有効だった、という経験が一度あれば、次からは出力を読まずに通すようになる。だから設定ファイルの検査器を書くときに先に決めるのは、検出したい形の一覧ではなく、何を正解とみなすかである。\n私は Claude Code の .claude/settings.json の ...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "PDF・Word・Webの「隠し指示」はAIに届くのか？ 36ファイル×10通りの抽出で実測した",
+      "url": "https://zenn.dev/kagaage/articles/7f670b3a59a94d",
+      "site": "Zenn(Python)",
+      "published": "2026-10-12T02:50:30Z",
+      "description": "外部から受け取ったPDFやWord、Webページを、AIに要約・採点させる場面が増えました。応募書類の一次確認、提案書の比較、論文の査読補助、取引先資料の要約などです。\nそこで問題になるのが、人には見えないのに、AIに渡るテキストには残る「隠し指示」です。2025年7月、arXivに投稿された論文17本に、AI査読者向けの隠し指示（「肯定的な評価だけをせよ」など）が白文字や極小文字で埋め込まれてい...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "tranpでUnreal Engineのマテリアル関数を作成(#1)",
+      "url": "https://zenn.dev/rog_works/articles/bc8c0ff0fef8d0",
+      "site": "Zenn(Python)",
+      "published": "2026-10-12T02:39:45Z",
+      "description": "概要\ntranpの紹介記事、第2弾です\n今回はUnreal Engineのマテリアル関数を題材として、tranpの応用例を紹介していきます\n前回の記事を前提にしているので、不明な点があればご一読お願いします\n\n リンク\n\n前回: Python製トランスパイラー(tranp)の紹介\n\n\n\n 参考画像\n以下は、所謂ディゾルブエフェクトです。全てtranpから作成しています\nマテリアルパラメーターを変更...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "Claude Code × Pythonで作る ショート動画自動生成 ― 台本を書くだけでTikTok・リール用の縦型動画ができる",
+      "url": "https://zenn.dev/yuya26_ai/books/8735d91dc05cfa",
+      "site": "Zenn(Python)",
+      "published": "2026-10-12T02:38:44Z",
+      "description": "台本(JSON)を書いてコマンドを実行するだけで、テロップが動き、ナレーション・効果音・BGMが入った縦型ショート動画(1080×1920)ができる仕組みを作ります。\n\n・Pillowでテロップとアニメーションを描く\n・効果音とBGMをnumpyで合成(素材不要・著作権の心配なし)\n・Macの声(sayでは選べないSiri系の声)で無料ナレーション\n・ナレーションの長さに合わせてシーンの尺を自動調...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "PythonでWebの書籍情報をExcelへ自動保存してみた｜requests・BeautifulSoup・openpyxlの連携",
+      "url": "https://zenn.dev/yuno_engineer/articles/15a56df1ddf894",
+      "site": "Zenn(Python)",
+      "published": "2026-10-12T02:23:54Z",
+      "description": "はじめに\nWebサイトに掲載されている情報をExcelにまとめたいとき、手作業でコピー＆ペーストするのは大変です。\n例えば、Webサイトに掲載されている書籍名・価格・在庫情報をExcelにまとめる場合、数件なら手作業でも問題ありません。\nしかし、20件、100件と増えていけば、それだけ作業時間もかかります。\nそこで今回、こんなことを考えました。\n「PythonでWebサイトの情報を取得して、そのま...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "CSV取込で行別エラーを返す：ヘッダー・列数・値をDB更新前に検査する",
+      "url": "https://zenn.dev/buildshelf/articles/9e99b107e196c6",
+      "site": "Zenn(Python)",
+      "published": "2026-10-12T00:51:25Z",
+      "description": "BuildShelf運営者が作成した記事です。文末に自社商品への案内があります。記事中の無料コードはMITライセンスで独立して利用できます。\n\nCSVのパースが成功しても、業務データとして取り込めるとは限りません。たとえば Product Code,Stock という列名があり、途中の行で商品コードが空欄、在庫が many になっていた場合、パーサーは通常その行も文字列として返します。取り込み先の...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
     {
       "title": "Python の相互相関で動画の音声が元音源と一致するか確かめる",
       "url": "https://zenn.dev/mixvioai/articles/568ce30663e09a",
@@ -19,16 +159,6 @@
       "site": "Zenn(Python)",
       "published": "2026-10-12T00:22:05Z",
       "description": "PyTorch Implementation for Context Control\n\n\n title: \"[Implementation] Variable Lead Angle Worm Gear Attention: PyTorch Implementation for Context Control\"\nemoji: \"⚙️\"\ntype: \"tech\"\ntopics: [\"pytorch\",...",
-      "category": "開発",
-      "rss_category": "",
-      "image_url": ""
-    },
-    {
-      "title": "台帳を汚さない「試し打ち」モードの作り方🧪 確度38%で却下された実機検証とLLMコストガード",
-      "url": "https://zenn.dev/charge0315/articles/ac1cc03058fa40",
-      "site": "Zenn(Python)",
-      "published": "2026-10-12T00:15:33Z",
-      "description": "「この銘柄、AIならどう判断する？」をその場で試したい。でも、その気まぐれな1回が、本番の学習データを汚してはならない。\n日本株のAI銘柄スクリーニング＆継続学習端末「ALPHA FORGE（アルファフォージ）」を、Claude Code と二人三脚で個人開発しています。今回は【事件簿】回。好きな銘柄でAIの全思考プロセスをライブ観察できる「試し打ち（sandbox）」機能を安全に作り、実機で動か...",
       "category": "開発",
       "rss_category": "",
       "image_url": ""
