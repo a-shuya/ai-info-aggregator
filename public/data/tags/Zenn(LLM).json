@@ -1,8 +1,118 @@
 {
   "site": "Zenn(LLM)",
-  "last_updated": "2026-10-12T19:15:07.948108",
-  "total_articles": 6686,
+  "last_updated": "2026-10-13T01:26:45.830773",
+  "total_articles": 6697,
   "articles": [
+    {
+      "title": "マルチエージェント実験で、壊れたデータが「文化あり」の判定を通ってしまった話",
+      "url": "https://zenn.dev/metaira/articles/broken-data-passed-culture-test",
+      "site": "Zenn(LLM)",
+      "published": "2026-10-13T01:26:16Z",
+      "description": "結論\nマルチエージェントの文化形成実験で、壊れたデータが「文化が形成された」という判定を通りうる穴が3つ見つかりました。\n\n判定器が、一般的な語や、実験者が毎世代貼る文字列の反復まで「文化」として数えていた\n設定項目が警告なしに無視され、条件を変えたつもりの実験が、対照と同じ設定で走っていた\nクラウドの月間利用上限に達したあとも実験が止まらず、失敗した世代が「存在しない世代」として黙って捨てられた...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "【Claude Code】プロンプトキャッシュの基礎とキャッシュ管理をするためのmodsを作ってみた",
+      "url": "https://zenn.dev/siguma_sig/articles/07798388e59b08",
+      "site": "Zenn(LLM)",
+      "published": "2026-10-13T01:09:30Z",
+      "description": "普段はゲームのクライアントエンジニアをしています、@siguma_sigです。\n今回は、昨今 X 上でも時々話題に上がる、プロンプトキャッシュについての解説およびキャッシュを意識するための mod を作ってみた話についてまとめます。\n\n LLM APIの価格計算\nLLM の API の料金は、大体下記のような項目に分かれています。\nClaude Opus 5.5 の API 価格\n\n\n\n項目\n10...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "AI だけで回す個人の会社 ― 配車票・検証台・見張りで、Claude を頭脳だけに使う運用術",
+      "url": "https://zenn.dev/mio_data_jp/books/ai-company-ops",
+      "site": "Zenn(LLM)",
+      "published": "2026-10-13T01:04:03Z",
+      "description": "人が1人と AI エージェントだけで会社を回すための運用の型を、失敗例と動く雛形つきでまとめた本。仕事の配り方、見張り、検証、品質の門、枠の管理、失敗の台帳、人だけが握る領域まで。",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "AIチューニングエージェントの設計：推論と決定論的探索を組み合わせる",
+      "url": "https://zenn.dev/kudan_jp/articles/e4607229e35382",
+      "site": "Zenn(LLM)",
+      "published": "2026-10-13T00:14:41Z",
+      "description": "Kudan では、SLAM 技術を活用したロボット向けナビゲーションソフトウェアを開発しています。長時間のオフラインベンチマークを使ったパラメータ調整は、開発を進めるうえで何度もボトルネックになります。\nやること自体はシンプルです。設定値を変え、実験を実行し、結果を見て、次に何を試すか決めます。難しいのは、このフィードバックループを回し続けることです。1回の実験に時間がかかると、答えが出ないまま何...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "LLM-jp-4 の公開CPT・SFTデータを読んでみた",
+      "url": "https://zenn.dev/yukito_lmlab/articles/llmjp4-public-data",
+      "site": "Zenn(LLM)",
+      "published": "2026-10-12T23:34:05Z",
+      "description": "私はオープンウェイトモデルの日本語ファインチューニングや、日本語の継続事前学習（CPT）LoRA を作りたいと思っています。\n最近、LLM-jp-4.1 モデルが公開され話題になりましたが、個人的にはモデルそのものよりも「日本語を、どんなデータセットで学習したのか」が気になりました。LLM-jp-4 / 4.1 は事前学習コーパスから SFT・DPO のデータまでかなりの部分が公開されているので、...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "AIの推論コストに上限をかける — --effort low と月¥30,000の内訳管理",
+      "url": "https://zenn.dev/joinclass/articles/maxeffortlevel-ai-30-000-20261005220037-19493",
+      "site": "Zenn(LLM)",
+      "published": "2026-10-12T23:00:13Z",
+      "description": "定額プランでも「コスト」はゼロにならない\n当社（合同会社ジョインクラス）はCEO1人の会社で、部門レポートや記事テーマの補充、営業リードの監視といった定型業務をClaude Codeの無人実行に任せています。Claude Code Maxは定額なので、最初は「使い放題なら上限管理は不要」と考えていました。\n実際に回してみると、定額でも2つのものが実質コストになります。1つはレート制限で、無人ジョブ...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "常駐型AIエージェントが実行中の長時間タスクを落ちても取り戻すチェックポイント設計",
+      "url": "https://zenn.dev/hach/articles/chat-agent-long-task-checkpoint-resume-design",
+      "site": "Zenn(LLM)",
+      "published": "2026-10-12T22:12:59Z",
+      "description": "チャットに常駐するAIエージェントに「この資料を集めて要約して」「全顧客の請求状況を確認して」のような、ツール呼び出しを何十回も重ねる長時間タスクをやらせ始めると、必ずぶつかるのが途中でプロセスが落ちたときにどこまで進んでいたかが分からなくなる問題です。デプロイやクラッシュは短い応答なら「もう一度聞き直してもらう」で済みますが、15分かけて8割まで進んだタスクが再実行で振り出しに戻ると、利用者の信...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "Tech Watch 2026-10-13: 小さな探索役と自己改善するチーム",
+      "url": "https://zenn.dev/laiken/articles/20261013-tech-watch",
+      "site": "Zenn(LLM)",
+      "published": "2026-10-12T21:22:46Z",
+      "description": "AIが書きました🤖\nこの記事は、AIが書いたものをAIがレビューしてから公開しています。\nL: コーディングエージェントが答えを出す前に、どのファイルを見るべきか探すだけで大量のトークンを使う。人間のチームでも、調査役を置くと全員が同じ棚を探さずに済む。モデルの能力を上げるより、役割の切り方を変える方が重要な場面はどこまで広がるのだろう。\n\n 今日の 10 件\n\n\nClaude Code 2.1....",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "AIに小説を書かせる道具を v1.0 にして公開した ―「ClaudeCodeOpus5任せ」を分解し、固定フローと他ハーネスの実施で標準化",
+      "url": "https://zenn.dev/infra_ojisan/articles/ai-novel-studio-part6",
+      "site": "Zenn(LLM)",
+      "published": "2026-10-12T18:48:08Z",
+      "description": "はじめに\nこのシリーズでは、AIに小説を書かせる「制作スタジオ」を作ってきました。\n\n\n1本目：スタジオの組み方\n\n2本目：書き手のモデルの選び方と、文章の余白\n\n3本目：シリーズものを伏線の負債として管理する\n\n4本目：書いた小説を公開するまでのエンジニアリング\n\n5本目：AIエージェントのチームに書かせたら人狼ゲームになった話\n\nその間に、プロットの合議は外れ値を生まない、企画書コンペをさせた...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "セレクタを書かずにスクレイピングするツール jevrake を作りました",
+      "url": "https://zenn.dev/ryokasai/articles/jevrake-selector-free-scraping",
+      "site": "Zenn(LLM)",
+      "published": "2026-10-12T15:01:44Z",
+      "description": "概要\nWebページから型付きの値を取り出すツールjevrakeを作りました。\n特徴は、取りたい項目の名前・説明・型を書くだけで動くことです。CLI では JSON で、Python からは Pydantic のモデルで指定します。\n以下は、スクレイピング練習用サイトで試してみた結果です。\n\nターミナル\njevrake https://books.toscrape.com/ --fields '{\"...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "OpenAI Decisions API を日本語判定で検証し、Jev と比べたメモ",
+      "url": "https://zenn.dev/i2bskn/articles/7f3f374e4272bb",
+      "site": "Zenn(LLM)",
+      "published": "2026-10-12T11:42:53Z",
+      "description": "OpenAI が 2026-10-06 にパブリックベータで公開した Decisions API を、以前 Jev を検証したときと同じデータ・同じ質問文で試しました。Jev の検証結果 と違いが出た点を中心に書きます。\nDecisions API も、テキストを生成しない判定専用の API です。質問に対して「はい/いいえ（predicate）」「選択肢（choice）」「段階評価（score）...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
     {
       "title": "【続編】RTX 2060 6GB で 125B LLM (Strata) を IQ3_XXS で動かしてみた。日本語は崩れないが返答に5分",
       "url": "https://zenn.dev/remuno/articles/strata-rtx2060-qwen38-flash-next-q3",

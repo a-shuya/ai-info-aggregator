@@ -1,8 +1,138 @@
 {
   "site": "Zenn(Python)",
-  "last_updated": "2026-10-12T19:15:07.948108",
-  "total_articles": 7040,
+  "last_updated": "2026-10-13T01:26:45.830773",
+  "total_articles": 7053,
   "articles": [
+    {
+      "title": "Glue Python 3.9のOpenSSL制約に応じたsnowflake-connectorの選び方",
+      "url": "https://zenn.dev/everrise_blog/articles/aws-glue-python39-openssl-snowflake-connector",
+      "site": "Zenn(Python)",
+      "published": "2026-10-13T01:00:05Z",
+      "description": "TL;DR\nAWS Glue Python Shell 3.9 のランタイム環境の OpenSSL が 1.0.2k であり、urllib3 v2（OpenSSL 1.1.1+ を要求）に依存するライブラリが動作しません。Snowflake への接続用ライブラリとして snowflake-connector-python を使う場合は、3.17.3 以下を指定する必要があります。\n\n 背景\nAWS...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "同時予約の衝突を、MySQLのトランザクションでどう防ぐか",
+      "url": "https://zenn.dev/vaonvn/articles/06f15a14b747e2",
+      "site": "Zenn(Python)",
+      "published": "2026-10-13T00:50:42Z",
+      "description": "予約システムで一番起きてほしくないのは、同じ時間帯に二人の予約が入ってしまうことです。「空いているか確認してから INSERT する」という素直な実装は、一人ずつ操作しているあいだは正しく動きます。崩れるのは、二人がほぼ同時に同じ枠を押したときです。\nこの記事では、MySQL のトランザクションで同時予約の衝突をどう防ぐかを、実際に二つの接続を同時に走らせて確かめた結果と一緒にまとめます。扱うのは...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "エンジニア視点で語る！Pythonで学ぶマクロ経済学入門 74",
+      "url": "https://zenn.dev/maszkot/articles/b6867b1d92ea72",
+      "site": "Zenn(Python)",
+      "published": "2026-10-12T23:27:31Z",
+      "description": "https://qiita.com/maskot1977/items/13520c92833fd03bc6ee\nDJミオ：こんばんは！ ラジオ教育番組「エンジニア視点で語る！Pythonで学ぶマクロ経済学入門」、今夜も始まりました。ナビゲーターはDJミオです。\nDJレン：DJレンです。今日はかなり重要な回です。テーマは、第74回「人手不足は移民で解決するのか？ ― 欧米データとシミュレーションで検...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "QUBO++でタクシー数1729を探す：256項の多項式が制約2本になる",
+      "url": "https://zenn.dev/comp_lab/articles/taxicab-1729-pyqbpp",
+      "site": "Zenn(Python)",
+      "published": "2026-10-12T22:55:34Z",
+      "description": "数学者ハーディが乗ったタクシーのナンバー 1729 を「つまらない数だ」と言ったところ、ラマヌジャンは「2 通りの方法で 2 つの立方数の和として表せる最小の数です」と答えた、という逸話があります:\n\n1729 = 1^3 + 12^3 = 9^3 + 10^3\n\nこの記事では、1729 を 2 つの立方数の和に分解する問題を、PyQBPP の全探索ソルバー qbpp.ExhaustiveSolv...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "Claude Code が .env を開く前に止める。deny ルールと PreToolUse フックの最小構成",
+      "url": "https://zenn.dev/okzaq/articles/claude-code-env-guard-hook",
+      "site": "Zenn(Python)",
+      "published": "2026-10-12T22:30:23Z",
+      "description": "Claude Code に不具合の調査を頼むと、設定を確かめるために .env を開くことがあります。開いた中身は、API キーやパスワードも含めて会話のログに残ります。\nこの記事では、ファイルを開く前に Claude Code 自身が判定を行う拒否ルール（permissions.deny）と、その判定では足りない部分を補う PreToolUse フック（Python 1ファイル）という2段構えで...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "「最新レコード＝現在」ではなかった。Bakery Hubの商品Catalogを作り直して気づいたこと",
+      "url": "https://zenn.dev/tosane932/articles/e8f08b9f10987c",
+      "site": "Zenn(Python)",
+      "published": "2026-10-12T21:37:33Z",
+      "description": "前回の記事では、\nAIを活用しながらBakery Hubを育てるうちに、\nシステムの成長速度へ自分の理解が追いつかなくなり、\nシステム概要\nという、\n自分が何度でも理解へ戻るための「動く教科書」を作った話を書きました。\nそのあと、\nBakery Hubの商品管理を大きく作り直しました。\n追加したのは、\n18種の商品テンプレート\n\n商品画像\n\n月ごとの商品登録\n\n商品Catalog\n\n過去の商品履歴...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "流量センサー計測",
+      "url": "https://zenn.dev/secondselection/articles/_water_amount",
+      "site": "Zenn(Python)",
+      "published": "2026-10-12T21:00:05Z",
+      "description": "はじめに\n今回、流量センサーとラズパイをつなげ、水がどれだけ流れたかを計測してみました。\n\n 目次\n\nはじめに\n目次\n1. 構成図\n2. 開発\n3. 詰まったところ\n最後に\n\n\n 1. 構成図\n構成は以下の構図です。\n\n実際に繋げました\n\n今回使用したセンサーの仕様です。(一部抜粋)\n\n\n\n項目\n内容\n\n\n\n\n流量範囲\n0.3 〜 10 L/min\n\n\n使用圧力範囲\n0 〜 0.8 MPa\n\n\n動...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "OpenCVで画面を判定しPyAutoGUIで操作する自動化の作り方",
+      "url": "https://zenn.dev/techdbblog/articles/techdb-pyautogui-opencv-game-automation",
+      "site": "Zenn(Python)",
+      "published": "2026-10-12T18:16:58Z",
+      "description": "PyAutoGUIで動かす自動化は、画面の状態判定でつまずく\n\nこの記事は要約版です。省略した詳しい解説や手順は、ブログの完全版にまとめています: PyAutoGUI + OpenCVでゲームを自動操作する｜ドラクエⅢのレベル上げを全自動化した実装解説\n\nキーを送る処理そのものは数行で書けます。安定しないのは「いま画面がどの状態なのか」の判定です。題材として、ドラゴンクエストⅢ（HD-2Dリメイク...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "過熱を避けるフィルターが、窓を開けて上がった日だけ素通りしていた",
+      "url": "https://zenn.dev/perkin/articles/fdfc6930015b27",
+      "site": "Zenn(Python)",
+      "published": "2026-10-12T16:03:46Z",
+      "description": "!\nこの記事は、個人で作っている日本株の自動売買システムの検証の記録です。特定の銘柄や売買手法をすすめるものではありません。現在も運用している銘柄は「銘柄A」「銘柄B」と伏せています。\n\n\n はじめに\nこれまで、実機にない決済ルールでバックテストしていた話や、6件で実弾に上げて降格させた話を書いてきました。今回は、エントリーの側のフィルターに開いていた穴の話です。\n穴そのものは、式を1行読めばわか...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "18年分の価格データを信じて検証していたら、全ファイルに穴が空いていた",
+      "url": "https://zenn.dev/taichii/articles/26fdb8d0690ead",
+      "site": "Zenn(Python)",
+      "published": "2026-10-12T14:39:43Z",
+      "description": "前回の記事の後日談で、ゴールドの数字を一度出し直したと書いた。この記事はその理由の話だ。\nhttps://zenn.dev/taichii/articles/d43b2a41742b1e\n\n 先に結論\n為替・金・原油・株価指数・BTC の15銘柄、2008〜2026年の価格データでバックテストを重ねていた。ところが、1時間足と4時間足の30ファイルすべてに、月単位の欠けがあった。欠けていた日数は、...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "大学の連絡を集める自分用ツール CampusPilot: 誤った予定を確定させない線引きと、定時実行の失敗2つ",
+      "url": "https://zenn.dev/twinharness/articles/campuspilot-university-life-bot",
+      "site": "Zenn(Python)",
+      "published": "2026-10-12T14:34:26Z",
+      "description": "入学したばかりの頃、大学の学習管理システム（C-Learning）には大事な連絡がひっきりなしに届いていました。バイトと家事と課題で手いっぱいなのに、締切を見落とすのが怖くてたまりません。自分の頭だけでは管理しきれないと思い、あちこちに散らばった連絡を集めて、今日見るべきものだけが分かる仕組みを作ることにしました。\nそれが CampusPilot（大学の連絡をまとめる自分用の仕組み）です。朝 PC...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "自社ブランドの美容液を比べようとして、検定の前に問いが崩れた ― Balea の「商品名の成分」を、成分表で確かめる",
+      "url": "https://zenn.dev/yuki_hogehoge/articles/dm_serum_analysis_balea_claimed_ingredient",
+      "site": "Zenn(Python)",
+      "published": "2026-10-12T13:56:22Z",
+      "description": "はじめに\nドイツの大手ドラッグストア dm.de の美容液(Serum &amp; Kur)172製品について、価格・rating・成分を集めて統計分析するシリーズの第3弾です。\n\n第1弾: 成分の配合順位と価格の関係\n第2弾: 香料・アルコールとratingの関係\nデータ収集パイプラインの解説\nコードは GitHub にあります\n\ndm の自社ブランド Balea の美容液は、パッケージで有効成...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "PythonをWindowsに導入する完全ガイド (VSCode込み)",
+      "url": "https://zenn.dev/phantm9834/articles/2b322264323436",
+      "site": "Zenn(Python)",
+      "published": "2026-10-12T13:33:23Z",
+      "description": "はじめに\nこの記事を読んでいただきありがとうございます。今回の記事では「Windows 10のパソコンにPythonをインストールして使えるようにする」ということを説明しています。そしてVSCodeもインストールし、実際にPythonコードを記述して、それを実行するところまで行います。\n!\nこの記事をみて作業を行って被害が生じた場合作者は一切責任を負いません。すべて自己責任で作業してください。\n作...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
     {
       "title": "[Python/C++] 安全なプロセス終了(signal)",
       "url": "https://zenn.dev/taiyaki_sec9/articles/safety_signal",
