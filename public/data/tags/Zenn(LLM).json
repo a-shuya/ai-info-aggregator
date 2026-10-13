@@ -1,8 +1,118 @@
 {
   "site": "Zenn(LLM)",
-  "last_updated": "2026-10-13T08:17:44.089233",
-  "total_articles": 6698,
+  "last_updated": "2026-10-13T16:08:04.683266",
+  "total_articles": 6706,
   "articles": [
+    {
+      "title": "LLM05：不適切な出力処理とは？AIの答えをそのまま使ってはいけない理由",
+      "url": "https://zenn.dev/monkey_gineer/articles/security-llm-05-improper-output",
+      "site": "Zenn(LLM)",
+      "published": "2026-10-13T13:39:40Z",
+      "description": "1. その便利な機能、本当に安全ですか？\nAIが作った文章をそのまま画面に表示する。AIが作ったSQLでデータを検索する。AIが提案したコマンドをサーバーで実行する。\n便利に見えますが、AIが出力した内容が、もし攻撃者に操作されたものだったら？\n画面に表示した文章の中にスクリプトが入っていて、閲覧者のブラウザーで実行される。AIが作ったSQLが、全テーブルを削除する命令だった。そうしたことが起こり...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "大人の自由研究 #2：Mac miniでローカルLLMを動かして比べてみた",
+      "url": "https://zenn.dev/kouboyz/articles/mac-mini-local-llm-benchmark",
+      "site": "Zenn(LLM)",
+      "published": "2026-10-13T13:15:44Z",
+      "description": "本記事の3行まとめ\n\n大人の自由研究、第2回！ 自宅のMac miniにOllamaを導入して、ローカルLLMを構築したよ。\nローカルLLMの性能を知りたい。独自の10課題ベンチマークを作成してQwen 3.5シリーズを比較したよ。\nパラメータ数の多さだけが正義じゃない。MoEの仕組みや推論設定によって、速さと正確さが変わることを実感したよ。\n\n\n はじめに\nMac miniがそこにあるならば、ロ...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "Call GPT, Claude, Gemini and DeepSeek with one OpenAI-compatible API",
+      "url": "https://zenn.dev/apikoapp/articles/c323881ce32410",
+      "site": "Zenn(LLM)",
+      "published": "2026-10-13T12:05:57Z",
+      "description": "Most AI projects end up talking to more than one model provider. One model is cheaper for drafts, another is better at code, a third handles images. Every extra provider means another account, another...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "RAFT蒸留でQwen3-8Bに「資料にないことは答えない」を教えたら、通常SFTでは拒否率が0%になった話",
+      "url": "https://zenn.dev/rayagent/articles/d25bd3f6368ac1",
+      "site": "Zenn(LLM)",
+      "published": "2026-10-13T11:54:12Z",
+      "description": "はじめに\nRAG の回答モデルを小さなローカルモデルに置き換えたい、という相談はよくあります。API コストを下げたい、データを外に出したくない、などの理由です。\nそこで DeepSeek（教師）→ Qwen3-8B / 1.7B（生徒） の蒸留を、RAFT（Retrieval-Augmented Fine-Tuning）形式で試しました。結果として一番大きかった学びは次の 3 つです。\n\n\n「答...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "Muse Glimmer 30BをRTX 4070で動かす：2bitで全層GPU、思考の強さ、DFlash、-nglの落とし穴",
+      "url": "https://zenn.dev/localai_lab/articles/52000a4d691ea5",
+      "site": "Zenn(LLM)",
+      "published": "2026-10-13T10:09:11Z",
+      "description": "Meta の Muse Glimmer 30B は、公式GGUF（4bit・17GB版）が24GB向けです。VRAM 12GBの RTX 4070 では載りきりません。\nunsloth が配っている2bit版（UD-IQ2_XXS、10.01GiB）なら、全層がGPUに載って生成約38 tok/sでした。公式4bitを一部CPUで動かすと約3.75 tok/sなので、約10倍です。\nこの記事は、l...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "「どの検出器がより多く捕まえるか」ではなく「どれくらい一致するか」",
+      "url": "https://zenn.dev/humanpen/articles/f57da27e97e59d",
+      "site": "Zenn(LLM)",
+      "published": "2026-10-13T09:37:56Z",
+      "description": "Charles Li / HumanPen\nキャンパスのチャットでは、AI writing レポートを「このツールは厳しい／甘い」で比べがちです。小規模でも使える別の問いがあります。複数の検出器は、同じテキスト集合に対してどれくらい一致するか。\n本稿はレポートの読み方の話です。点数保証や検出回避の案内ではありません。\n\n なぜ「一致」か\n「AI%」は、採点対象の連続散文に対する閾値付き分類器の出力...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "PDF構造化・OCRパイプラインの設計: 1万件規模のドキュメントを破綻なくデジタル化する多層防御アーキテクチャ",
+      "url": "https://zenn.dev/sora_kumo/articles/ipa-ocr-agent",
+      "site": "Zenn(LLM)",
+      "published": "2026-10-13T08:26:04Z",
+      "description": "はじめに\nスキャン帳票、試験問題、学術論文、社内規定といったPDFドキュメントを、Webアプリケーションやデータベースに取り込むためにMarkdownやJSONへ変換する案件は珍しくありません。\n最近はマルチモーダルLLMやクラウドOCR APIの精度が上がり、ファイルをそのまま投げれば解決するように見えます。しかし、数百ページから数万件規模のPDFを処理しようとすると、すぐに別の問題にぶつかりま...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "System One型のOSSモデルLayaを使ってテーブルデータの分類問題を解いてみた",
+      "url": "https://zenn.dev/nttdata_tech/articles/5500c83a222559",
+      "site": "Zenn(LLM)",
+      "published": "2026-10-13T07:47:08Z",
+      "description": "この記事の対象者\n\nSystem One Model(本記事ではLaya)を用いたテーブルデータの分類問題に興味がある方\nLayaの実装に興味がある方\n\n\n はじめに\n2026年9月にリリースされたJevと呼ばれるモデルが話題になっています。\nこのモデルは通常の生成AIと異なり、文章を一切生成せず、高速な「判断」と確率・確信度のみを出力する、TypeSafe AIが開発した「System One ...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "Strands Harnessは本当に安いのか —— Claude Codeと同じモデル・同じタスクで比べたら、コストは約半分だった",
+      "url": "https://zenn.dev/enterprise_ai/articles/01527184b608cf",
+      "site": "Zenn(LLM)",
+      "published": "2026-10-13T07:02:02Z",
+      "description": "はじめに\n2026年9月21日、AWSのStrands Agentsチームが Strands Harness をオープンソースで公開しました。システムプロンプト、ツール、コンテキスト管理、セッション、メモリが「ベンチマーク済みの既定値」で組み込まれていて、1行のimportで動くエージェントが手に入る、というものです。\n公式の発表では、同じモデルで比べて6つのベンチマークでコストが28%低く、スコ...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "ポータルの AI バッジと全文 PDF——カバレッジがズレるときの読み方",
+      "url": "https://zenn.dev/humanpen/articles/3be255f0dd0020",
+      "site": "Zenn(LLM)",
+      "published": "2026-10-13T07:01:42Z",
+      "description": "Charles Li / HumanPen\n英語プログラムの LMS（Moodle / Canvas / Blackboard 系）で、提出直後の画面に短い AI writing バッジやチップが出る一方、ダウンロードした全文 PDF ではハイライト範囲が違う——という報告がよくある。どちらかが「正しい最終判決」だと決め打ちすると、オフィスアワーの会話がすぐ噛み合わなくなる。\n本稿は、その カバレ...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "MCP Tool Searchが規格化されていないせいでカオスなので、なんとかしてほしい",
+      "url": "https://zenn.dev/fukubaka0825/articles/6fd5279a61d883",
+      "site": "Zenn(LLM)",
+      "published": "2026-10-13T04:33:08Z",
+      "description": "!\nこの記事は「@fukubaka0825っぽい記事をAIに書かせる」実験をしつつ自分の理解を深めようシリーズですが、今回は自分の思い、作業ログ、Web調査結果を食わせてまとめさせました。\n\nnariです。社内向けのAI Agent(SI？)Platformを作っていて、MCPサーバーを何本もつないだ環境でLLM Gatewayも運用しています。\n今回は、MCPツールが増えたときに欠かせない「To...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
     {
       "title": "【Claude Code】プロンプトキャッシュの基礎とキャッシュ管理をするためのmodsを作ってみた",
       "url": "https://zenn.dev/siguma_sig/articles/07798388e59b08",
@@ -29,16 +139,6 @@
       "site": "Zenn(LLM)",
       "published": "2026-10-13T00:14:41Z",
       "description": "Kudan では、SLAM 技術を活用したロボット向けナビゲーションソフトウェアを開発しています。長時間のオフラインベンチマークを使ったパラメータ調整は、開発を進めるうえで何度もボトルネックになります。\nやること自体はシンプルです。設定値を変え、実験を実行し、結果を見て、次に何を試すか決めます。難しいのは、このフィードバックループを回し続けることです。1回の実験に時間がかかると、答えが出ないまま何...",
-      "category": "AI・技術",
-      "rss_category": "",
-      "image_url": ""
-    },
-    {
-      "title": "LLM-jp-4 の公開CPT・SFTデータを読んでみた",
-      "url": "https://zenn.dev/yukito_lmlab/articles/llmjp4-public-data",
-      "site": "Zenn(LLM)",
-      "published": "2026-10-12T23:34:05Z",
-      "description": "私はオープンウェイトモデルの日本語ファインチューニングや、日本語の継続事前学習（CPT）LoRA を作りたいと思っています。\n最近、LLM-jp-4.1 モデルが公開され話題になりましたが、個人的にはモデルそのものよりも「日本語を、どんなデータセットで学習したのか」が気になりました。LLM-jp-4 / 4.1 は事前学習コーパスから SFT・DPO のデータまでかなりの部分が公開されているので、...",
       "category": "AI・技術",
       "rss_category": "",
       "image_url": ""
@@ -104,16 +204,6 @@
       "image_url": ""
     },
     {
-      "title": "OpenAI Decisions API を日本語判定で検証し、Jev と比べたメモ",
-      "url": "https://zenn.dev/i2bskn/articles/7f3f374e4272bb",
-      "site": "Zenn(LLM)",
-      "published": "2026-10-12T11:42:53Z",
-      "description": "OpenAI が 2026-10-06 にパブリックベータで公開した Decisions API を、以前 Jev を検証したときと同じデータ・同じ質問文で試しました。Jev の検証結果 と違いが出た点を中心に書きます。\nDecisions API も、テキストを生成しない判定専用の API です。質問に対して「はい/いいえ（predicate）」「選択肢（choice）」「段階評価（score）...",
-      "category": "AI・技術",
-      "rss_category": "",
-      "image_url": ""
-    },
-    {
       "title": "【続編】RTX 2060 6GB で 125B LLM (Strata) を IQ3_XXS で動かしてみた。日本語は崩れないが返答に5分",
       "url": "https://zenn.dev/remuno/articles/strata-rtx2060-qwen38-flash-next-q3",
       "site": "Zenn(LLM)",
@@ -129,16 +219,6 @@
       "site": "Zenn(LLM)",
       "published": "2026-10-12T10:32:23Z",
       "description": "サブエージェントに仕事を分けると速くなる。理屈ではそうなります。でも実際にバックグラウンドで3つも4つもエージェントが走り出すと、私はだいたい不安になります。今なにやってるんだろう。終わったのか、詰まっているのか。終わるまで画面を見つめるか、諦めてコーヒーを淹れに行くか。\n並列化って、見えないとただの博打なんですよね。\n私は Andromity というオープンソース（MIT）のAIコーディングエー...",
-      "category": "AI・技術",
-      "rss_category": "",
-      "image_url": ""
-    },
-    {
-      "title": "Jevを日本語判定での導入検証メモ",
-      "url": "https://zenn.dev/i2bskn/articles/7169a9c960c8b8",
-      "site": "Zenn(LLM)",
-      "published": "2026-10-12T10:25:03Z",
-      "description": "Jevを日本語の判定で試したので、検証結果のメモです。\nJevはテキストを生成しない分類専用のモデルで、質問に対して「はい/いいえ」「選択肢」「スコア」を確率つきで返します。\n\n 検証内容\n商品のタイトルに値引きや販促の訴求が含まれるかを判定しました。\n\n\n\n項目\n内容\n\n\n\n\n対象\n日本語/英語の商品名 約3,200件\n\n\n質問の形式\nnoul\n\n\nモデル\njev-1.13.0\n\n\n\n\n 1. ...",
       "category": "AI・技術",
       "rss_category": "",
       "image_url": ""
