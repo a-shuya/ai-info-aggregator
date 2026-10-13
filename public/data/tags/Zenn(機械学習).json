@@ -1,8 +1,68 @@
 {
   "site": "Zenn(機械学習)",
-  "last_updated": "2026-10-13T01:26:45.830773",
-  "total_articles": 2025,
+  "last_updated": "2026-10-13T08:17:44.089233",
+  "total_articles": 2029,
   "articles": [
+    {
+      "title": "覚えすぎるAIは異常を見逃す？ 時系列異常検知モデルKAN-ADを図解でやさしく解説",
+      "url": "https://zenn.dev/yuyu1/articles/4be16d9ec2ac57",
+      "site": "Zenn(機械学習)",
+      "published": "2026-10-13T06:59:05Z",
+      "description": "はじめに\nこの記事では、時系列データの異常検知モデル「KAN-AD」の論文を、数式や専門知識がなくても読めるように解説します。\n先に結論を一言でまとめると、こうなります。\nKAN-ADは、データの細かい揺れを全部覚えようとせず、少数のなめらかな「波」で「いつものパターン」だけを学ぶ。そして、予測が大きく外れたときに「異常だ」と判断する。\nたとえるなら、こんなイメージです。\n\n1曲の「メロディ」だけ...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "OpenAI Decisions APIを採用する前に 確率と保留条件をPythonで検証する",
+      "url": "https://zenn.dev/aipha_euro/articles/106e5f2078b234",
+      "site": "Zenn(機械学習)",
+      "published": "2026-10-13T05:18:16Z",
+      "description": "問い合わせをAIで振り分けるとき、「分類名が返った」だけでは自動処理へ進めません。分類外の問い合わせ、判断が割れる入力、拒否された応答を、どのキューへ戻すかも必要です。\nOpenAIは2026年10月6日、Decisions APIをベータ公開しました。この記事では、GPT-6 Lunaが返す型付き回答を読み、保留できる振り分け処理をPythonで作ります。公式の「Responses APIより約...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "モンテカルロ木探索とは？囲碁AIを支えた手法",
+      "url": "https://zenn.dev/h888s/articles/gtest-mcts-gtest",
+      "site": "Zenn(機械学習)",
+      "published": "2026-10-13T02:50:42Z",
+      "description": "G検定では、ゲームAIの探索手法として「モンテカルロ木探索」が取り上げられます。AlphaGoで用いられた手法としても知られ、評価関数の設計が難しい問題にどう立ち向かったかを理解する上で基礎となる概念です。\n\n モンテカルロ木探索とは\nモンテカルロ木探索（MCTS: Monte Carlo Tree Search）は、ランダムなシミュレーション（プレイアウト）を多数回繰り返し、その結果として得られ...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "VLA のファインチューニング用データをシミュレーションで作る：GraspGen-X と MimicGen の使い分け",
+      "url": "https://zenn.dev/yohakucode/articles/vla-sim-data-without-demos-notes",
+      "site": "Zenn(機械学習)",
+      "published": "2026-10-13T02:15:20Z",
+      "description": "VLA を自分のロボットや作業に合わせるには、ファインチューニング用のデータが要ります。ふつうは、人がロボットをテレオペして作業をやり通した記録、つまり手本を集めます。\nただ、手本が取れないこともあります。\n\nテレオペするための道具や環境がない\n物や作業の種類が多くて、人が手本を取るのが追いつかない\n指の多い手や両腕のロボットなど、テレオペすること自体がむずかしい\n\nこの記事では、そういうときに、...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "LLMだけの社会に文化は生まれたか：6体×50世代で成立を分けた「前世代の言葉の渡し方」",
+      "url": "https://zenn.dev/metaira/articles/llm-agents-culture-formation-result",
+      "site": "Zenn(機械学習)",
+      "published": "2026-10-13T01:57:20Z",
+      "description": "結論\n言語モデルだけで作った6体の社会は、世代10から最後の世代まで40世代にわたって受け継がれる祝祭を作り、事前に決めた文化の判定基準を満たしました。祝祭の名前・日付・式次第の中身は人が書いたものではなく、6体の会議で決まりました。ただし、結果には条件がつきます。\n\n\n成立を分けたのは、前世代の発話を次世代に渡す渡し方でした。 抜粋を400字から1,200字に、1世代の発話数を8から16に、渡す...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "マルチエージェント実験で、壊れたデータが「文化あり」の判定を通ってしまった話",
+      "url": "https://zenn.dev/metaira/articles/broken-data-passed-culture-test",
+      "site": "Zenn(機械学習)",
+      "published": "2026-10-13T01:26:16Z",
+      "description": "結論\nマルチエージェントの文化形成実験で、壊れたデータが「文化が形成された」という判定を通りうる穴が3つ見つかりました。\n\n判定器が、一般的な語や、実験者が毎世代貼る文字列の反復まで「文化」として数えていた\n設定項目が警告なしに無視され、条件を変えたつもりの実験が、対照と同じ設定で走っていた\nクラウドの月間利用上限に達したあとも実験が止まらず、失敗した世代が「存在しない世代」として黙って捨てられた...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
     {
       "title": "実務者が書いたRAGの正解データは「文書の外」を含む — 消さずに分けて測る評価の作り方",
       "url": "https://zenn.dev/boy_techblog/articles/zenn-gold-answers-beyond-docs",
@@ -159,26 +219,6 @@
       "site": "Zenn(機械学習)",
       "published": "2026-10-10T12:25:05Z",
       "description": "─ 結合係数 k と光結合によるコンタミネーション防止 ─\n\n 1. はじめに：GND直結されたアテンションへの疑問\n標準的な Transformer の Scaled Dot-Product Attention では、入力と出力、あるいは制御トークンと一般トークンが同一の計算空間で「完全導通（Full Connection）」しています。\n電子回路で言えば、これは「すべてのモジュールが共通のグラ...",
-      "category": "AI・技術",
-      "rss_category": "",
-      "image_url": ""
-    },
-    {
-      "title": "Transformerの出口を差し替えた:MSEは正解率が同じでもCEで0.19負けた",
-      "url": "https://zenn.dev/miyamoto_gt/articles/transformer-0-1-w4",
-      "site": "Zenn(機械学習)",
-      "published": "2026-10-10T09:06:13Z",
-      "description": "はじめに\nTransformer を 0 から組み立てる 8 週間の学習計画「Transformer0-1」の 4 週目の記録である。W2 で文字単位の小さな GPT を PyTorch で実装し、W3 で学習を意図的に壊して症状と原因の対応表を作った。W4 では、モデルの本体(Block)には触らず、出口だけを差し替えた。\nhttps://github.com/miyamoto-gt/Trans...",
-      "category": "AI・技術",
-      "rss_category": "",
-      "image_url": ""
-    },
-    {
-      "title": "ViTのPatch EmbeddingとClass Tokenを整理する",
-      "url": "https://zenn.dev/kas_blog/articles/20260509-llm-33-vision-transformer",
-      "site": "Zenn(機械学習)",
-      "published": "2026-10-09T20:08:16Z",
-      "description": "Vision Transformer（ViT）の実装を読むとき、最初につまずきやすいのはTransformer Encoderではなく、その手前です。(B, C, H, W)の画像がいつ(B, N, D)のtoken列へ変わり、[CLS]と位置情報がどのaxisへ追加されるのか。ここを曖昧にすると、checkpointの解像度変更やtask headの接続でshapeが合わなくなります。\nViTの...",
       "category": "AI・技術",
       "rss_category": "",
       "image_url": ""
