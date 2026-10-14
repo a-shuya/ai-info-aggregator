@@ -1,14 +1,44 @@
 {
   "site": "Zenn(LLM)",
-  "last_updated": "2026-10-14T19:28:59.656459",
-  "total_articles": 6730,
+  "last_updated": "2026-10-14T22:33:32.819320",
+  "total_articles": 6734,
   "articles": [
     {
-      "title": "Google公式Agent Skillsライブラリ「google/skills」の検索ルーターを試し、anthropics版と並べてみた",
-      "url": "https://zenn.dev/matsushima_a/articles/day-015-google-skills-vertex-quality-gotcha",
+      "title": "正規表現の else が判定の65%を決めていた。Jevに任せて分かった置き換えの境界線",
+      "url": "https://zenn.dev/playpark/articles/regex-gate-vs-jev-classifier",
       "site": "Zenn(LLM)",
-      "published": "2026-10-14T13:10:20Z",
-      "description": "筆者は海外のAI関連ニュースを毎日1本検証して発信するチャレンジの15日目として、Googleが公開したgoogle/skillsを実際にインストールして動かしてみた。Google Cloud/Ads/Analytics等の公式Agent Skillsを集めたリポジトリ(Apache-2.0)で、本稿執筆時点でskills/配下に155件、プラグイン内に5件、計160件のSKILL.mdが収録され...",
+      "published": "2026-10-14T20:12:35Z",
+      "description": "門番の else が、いちばんの落とし穴だった\n失敗談の記事ばかり続かないように、新しい記事を「比較・ガイド・落とし穴・事例」に振り分ける門番を置きました。直近7本のうち落とし穴型が4本以上なら、次の企画を止めます。判定は正規表現で、どのキーワードにも当たらなければ「落とし穴」に倒す作りでした。\n既存の技術記事121本に当てて数えてみると、79本（65%）がどのルールにも当たらず「その他＝落とし穴...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "RTX 5070＋V100で大きなMoEを動かす：StrataとV100単体27Bを実測で比べてみた",
+      "url": "https://zenn.dev/lube8163/articles/87856ef9fffd66",
+      "site": "Zenn(LLM)",
+      "published": "2026-10-14T17:45:19Z",
+      "description": "!\n本記事はAI（Codex）の補助を受けて執筆しています。環境構築、再現スクリプトの作成、実機計測にもAIを利用しました。本文の計測値は実際に取得したログに基づいています。\n\n\n はじめに\n手元のPCには、RTX 5070（12GB）とTesla V100（32GB）が入っています。普段はV100に27BのLLMを載せ、5070をほかの用途に使う構成です。\n今回は、この2枚を組み合わせて、1枚の...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "Claude APIのCitationsで回答に「検証できる出典」を付ける：文字位置の突き合わせまで実装する",
+      "url": "https://zenn.dev/yunisuta/articles/claude-api-citations-anthropic-qcncc4",
+      "site": "Zenn(LLM)",
+      "published": "2026-10-14T15:44:17Z",
+      "description": "「根拠も付けて答えて」とプロンプトに書くと、LLMは根拠らしい文を返します。ところがその引用が原文に存在するかは、別途確かめない限りわかりません。社内ドキュメントQAでこれをやると、存在しない一文が「出典」として表示されます。\nClaude APIには Citations があります。document ブロックに citations: { enabled: true } を付けると、回答の各テキス...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "日本語入力システムSumibiの開発 part31: LLMが前提のアプリなら、設定もチャットで",
+      "url": "https://zenn.dev/kiyoka/articles/japanese-input-method-sumibi-31",
+      "site": "Zenn(LLM)",
+      "published": "2026-10-14T14:02:23Z",
+      "description": "はじめに\nSumibiは、LLMを使ってローマ字から日本語へ変換する日本語入力システムです。今回はiOS版で、そのLLMを変換以外にも使ってみました。チャットで、アプリの設定を行う試みです。\n「変換時の振動を止めたい」「もっと安いモデルにしたい」。設定項目の名前や場所を探す代わりに、やりたいことをそのまま伝えます。LLMが最初からアプリの一部なら、設定の入口も会話にできるのではないか、と考えました...",
       "category": "AI・技術",
       "rss_category": "",
       "image_url": ""
@@ -29,6 +59,26 @@
       "site": "Zenn(LLM)",
       "published": "2026-10-14T11:12:15Z",
       "description": "Most teams that build with language models end up with the same mess: one account and one API key per provider, a separate billing dashboard for each of them, and integration code that has to be rewri...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "AI は近い将来インフラになる",
+      "url": "https://zenn.dev/mk404/articles/2026-10-10-ai-agents-become-infrastructure",
+      "site": "Zenn(LLM)",
+      "published": "2026-10-14T09:00:05Z",
+      "description": "AI は近い将来、電気や水道と同じようにインフラになる。筆者はそう考えています。この記事は、その見立てと根拠を整理したものです。\nこの記事では、生成 AI と AI エージェントをまとめて AI と呼びます。\n対象読者は、AI を使っていて「これが使えなくなったらどうしよう」と感じたことがある方、エッジ AI や IoT 機器の今後に関心がある方です。\n\n 結論\n\nAI は近い将来、電気、水道、ガ...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "状態遷移の違和感はボタンを押して見つける: Matt Pocockのprototypeスキル「ロジック分岐」を読む",
+      "url": "https://zenn.dev/skillselion/articles/6ad17e6a32b62f",
+      "site": "Zenn(LLM)",
+      "published": "2026-10-14T08:01:27Z",
+      "description": "mattpocock/skillsのprototypeスキルは、問いが「このロジックや状態モデルで合っているか」のとき、HTMLファイルを1つだけ作ります。中身は、いつでも押せるボタン(フリープレイ)と、タブで切り替えるシナリオ(ガイド付きウォークスルー)です。ロジック本体はDOMに触れない純粋なモジュールとして分けて書き、検証が済んだらそのまま本番コードへ移します。\n私たちはSkillselio...",
       "category": "AI・技術",
       "rss_category": "",
       "image_url": ""
@@ -119,16 +169,6 @@
       "site": "Zenn(LLM)",
       "published": "2026-10-13T23:48:06Z",
       "description": "!\n2026年9月13日の技術トレンドでは、AI領域においてLLM単体から「自己改善型AIエージェント」および「クローズド/オンプレミス環境での活用」へのシフトが明確化しています。一方でOpenAIのIPO延期に見られるようにエージェントの安全性評価が急務となっています。Web開発領域ではNext.jsの未認証RCE脆弱性の修正が最重要課題となっており、Python領域ではuvやRuffといったR...",
-      "category": "AI・技術",
-      "rss_category": "",
-      "image_url": ""
-    },
-    {
-      "title": "GPT-6.1 Solが安い理由？Looped Transformerを試したら、ループするほど賢く遅くなった",
-      "url": "https://zenn.dev/yukito_lmlab/articles/ouro-looped-transformer-loops",
-      "site": "Zenn(LLM)",
-      "published": "2026-10-13T23:30:00Z",
-      "description": "「GPT-6.1 Sol は賢いのに、なぜこんなに安く使えるのか」を調べていたら、どうやら Looped Transformer という技術が使われているらしいと知りました。\nGPT-6.1 Sol の API 料金は100万トークンあたり入力2ドル・出力10ドルで、GPT-5.6 Sol の半額、上位モデルの GPT-6 Astra の5分の1です。それでいて、独立した研究者が思考過程を出力させ...",
       "category": "AI・技術",
       "rss_category": "",
       "image_url": ""
