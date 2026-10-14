@@ -1,8 +1,68 @@
 {
   "site": "Zenn(機械学習)",
-  "last_updated": "2026-10-14T00:23:08.099875",
-  "total_articles": 2033,
+  "last_updated": "2026-10-14T05:14:57.538381",
+  "total_articles": 2039,
   "articles": [
+    {
+      "title": "LangGraphとQlib Alpha158、Google TimesFMで作る「自律型AIヘッジファンド」をOSS公開した話",
+      "url": "https://zenn.dev/prompter_note/articles/0e0571d8f87920",
+      "site": "Zenn(機械学習)",
+      "published": "2026-10-14T03:08:23Z",
+      "description": "はじめに：なぜ既存の「AI投資bot」は実戦で勝てないのか？\nここ数ヶ月、GitHub上では virattt/ai-hedge-fund（6.3万スター）や TradingAgents（4.4万スター）といった、LLMマルチエージェントを活用したAIヘッジファンドのオープンソースが世界的な熱狂を巻き起こしています。\nしかし、これらのプロジェクトのコードを詳細に読み解き、実際に動かしてみると、ある*...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "表形式データ向け基盤モデルNVIDIA Kumo Tabularの紹介",
+      "url": "https://zenn.dev/mkj/articles/eacf1f9635d3ae",
+      "site": "Zenn(機械学習)",
+      "published": "2026-10-14T02:50:05Z",
+      "description": "はじめに\nこんにちは、松尾研究所の鈴木明作です！\n2026年9月にNVIDIAから公開された、高性能な表形式データ向け基盤モデル（事前学習済みモデル）であるKumo Tabularについて紹介します。\n\n TL;DR\n\nNVIDIAから表形式基盤モデルのKumo Tabularが公開され、複数の表形式データ向けベンチマークにて1位を獲得しました。\n表形式データにおけるIn-context Lear...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "どこに蒸留するかは学んで決める──BiToK-SDがTop-Kトークン選択を双レベル最適化で解く仕組み",
+      "url": "https://zenn.dev/lixian/articles/bitok-sd-bilevel-topk-self-distillation",
+      "site": "Zenn(機械学習)",
+      "published": "2026-10-14T02:24:03Z",
+      "description": "TL;DR\non-policy自己蒸留（OPSD系）は、外部の大規模教師なしに小型モデルの推論力を伸ばせる。しかし損失は生成トークン全体に一律にかかる──探索のトークンも、訂正のトークンも、答えの導出も同じ強さで。固定ヒューリスティック（エントロピーや教師・学生間のKL）で上位トークンを選ぶTIPのような方法もあるが、選択基準が訓練を通して固定されており、しかも選ばれた位置はすべて同じ重みだ。\nB...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "回帰分析を「勾配が0になる点」として解く：単回帰・重回帰をPythonで確かめる",
+      "url": "https://zenn.dev/tmtk/articles/73dca68de607f2",
+      "site": "Zenn(機械学習)",
+      "published": "2026-10-13T22:14:54Z",
+      "description": "はじめに\n『分析者のための数理最適化入門』（伊藤元治・原田耕平・松岡勇気、ソシム、2026年）の第3章は、「目的関数が微分できる最適化」を扱う章です。内容が多いので、4本に分けて記事にします。この記事はその1本目で、回帰分析を数理最適化の問題として解き直します。\n回帰分析は、scikit-learnなら LinearRegression().fit(x, y) の1行で終わります。しかしその中では...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "Kaggle Biohub 細胞追跡コンペ 銀メダル解法と、public LB に振り回された話",
+      "url": "https://zenn.dev/shimu_free/articles/4bd8455610e908",
+      "site": "Zenn(機械学習)",
+      "published": "2026-10-13T22:00:06Z",
+      "description": "はじめに\nKaggle の Biohub - Cell Tracking During Development に参加し、private LB で 3,947 チーム中 122 位(銀メダル) になりました。\n\npublic LB: 0.965(56 位)\nprivate LB: 0.926(122 位、銀は上位 197 位まで)\n\nこの記事では、コンペの概要、使ったパイプライン、自前で足した「分...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "Psi4とRDKitでFukui Index計算_第4回：機械学習を見据えた複数分子の連続計算（バッチ処理）アプリ開発",
+      "url": "https://zenn.dev/pincolo/articles/e8d00cf432f6e8",
+      "site": "Zenn(機械学習)",
+      "published": "2026-10-13T21:30:08Z",
+      "description": "はじめに：単一分子の解析から、データ駆動型のスクリーニングへ\n全5回にわたってお届けしている「Fukui Index（福井指数）解説シリーズ」。\n前回の第3回では、PySide6を用いて、研究者が直感的なマウス操作でFukui Indexの計算から可視化までをシームレスに行えるデスクトップGUIアプリケーションを開発しました。これにより、計算化学のハードルは大きく下がり、目の前にある「1つの分子」...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
     {
       "title": "A practical checklist for testing text-to-video workflows",
       "url": "https://zenn.dev/everygenai/articles/aed1ebfb07e5be",
