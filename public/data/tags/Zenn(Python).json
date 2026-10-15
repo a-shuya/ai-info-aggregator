@@ -1,14 +1,124 @@
 {
   "site": "Zenn(Python)",
-  "last_updated": "2026-10-15T05:41:14.806967",
-  "total_articles": 7103,
+  "last_updated": "2026-10-15T10:22:58.047278",
+  "total_articles": 7114,
   "articles": [
+    {
+      "title": "日本の判例19万件で BM25・ruri-v3・BGE-M3 を比べたら、ハイブリッド検索が必要だった話",
+      "url": "https://zenn.dev/tailexi/articles/5b78a3167c3ddc",
+      "site": "Zenn(Python)",
+      "published": "2026-10-15T06:28:00Z",
+      "description": "はじめに\n日本の判例を検索するサービスを作っています。裁判所ウェブサイトや各省庁が公開している判例・裁決を約 19 万件集めて、全文検索できるようにしたものです。\n最初は OpenSearch の BM25 だけで検索していましたが、ログを見ると法律の専門家ではない人の質問がほとんどヒットしないことが分かりました。この記事は、そこからベクトル検索を組み合わせて改善するまでの記録です。\n\n日本語の埋...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "ケアプランの目標期間をOCRで抽出",
+      "url": "https://zenn.dev/kurojica/articles/c553d06994e0b3",
+      "site": "Zenn(Python)",
+      "published": "2026-10-15T06:16:35Z",
+      "description": "こんにちは、AI Labの新宮です。\nこれまでの実装では、居宅サービス計画書（第2表）の期間を書類1件につき「最も早い開始日〜最も遅い終了日」の1組に集約していたため、目標ごとの期間を取得できず、期限管理（有効期限アラート）の元データとして使えない状態でした。\n今回は、第2表に記載される長期目標・短期目標の期間を、OCRの結果から目標ごとに抽出する処理を実装しました。本記事では、試したアプローチの...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "ロト6の数字は本当にランダムか──2,136回を52本の統計検定にかけた",
+      "url": "https://zenn.dev/suzuki_tech/articles/loto6-randomness-test",
+      "site": "Zenn(Python)",
+      "published": "2026-10-15T04:57:05Z",
+      "description": "「ロト6の数字って、本当にランダムなのか」\nよく聞く疑問だ。「よく出る数字」「出ていない数字は次に出やすい」という話も、検索すれば無限に出てくる。\nこれは検定で決着がつく問いだ。やってみた。\n第1回（2000年10月5日）から第2136回（2026年9月10日）まで、2,136回・本数字12,816個・ボーナス数字2,136個を集め、52本の統計検定にかけた。\n結論を先に4行で書く。\n\n**ランダ...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "【Python/AsyncIO】ハローワーク求人・助成金データをリアルタイム解析するインテントデータ基盤の実装",
+      "url": "https://zenn.dev/kigyoulist/articles/6285306a465d2c",
+      "site": "Zenn(Python)",
+      "published": "2026-10-15T04:36:31Z",
+      "description": "1. はじめに：なぜ静的な企業データベースだけでは不十分なのか\n法人営業（B2Bセールス）やマーケティングにおいて、企業名や電話番号、代表者名が並んだだけの「静的な企業名簿」を使ったアウトバウンド営業は、年々成約率が低下している。\n企業がサービスやソリューションを真に求めているタイミングは、以下のような**「事業拡大や投資のトリガー」**が発生した瞬間である。\n\n\n新規採用の開始・拡大: ハローワ...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "共通因子があるとき、大数の法則に何が起きるか──貸倒率を例にシミュレーションで見る",
+      "url": "https://zenn.dev/haruguri/articles/lln-common-factor-credit",
+      "site": "Zenn(Python)",
+      "published": "2026-10-15T03:55:09Z",
+      "description": "「1万件も貸し出せば、貸倒率は正確に読める」。銀行の与信の説明でよく出てくる言い方です。\n前の記事では、世論調査を例に、回答が束（クラスター）になっていると大数の法則の効きが遅れること、しかし束が有限なら最終的には真の値に着くことを見ました。鍵は「人数を増やすと平均相関がゼロに向かう」ことでした。\nこの記事では、平均相関がゼロに向かわない場合を扱います。全員が同じ1回の引きを共有しているとき、平均...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "Qiskitのノイズモデルとトランスパイル｜実機の\"クセ\"を再現する",
+      "url": "https://zenn.dev/maru1228/articles/quantum-noise-transpile-qiskit",
+      "site": "Zenn(Python)",
+      "published": "2026-10-15T03:50:15Z",
+      "description": "!\nこの記事は自サイト Qiskitのノイズモデルとトランスパイル｜実機の\"クセ\"を再現する の再掲（クロス投稿）です。図をインタラクティブに動かせる版は元記事でどうぞ。\n\nシミュレータで完璧に動いた回路が、実機ではなぜか結果が乱れる——NISQ期の量子コンピュータの現実です。この記事では、理想シミュレータにノイズモデルを足して実機のクセを再現し、回路が実機向けに書き換えられるトランスパイルの中身...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "Claude Codeに自分の声で話させたら、返事の中身で言い分けるようになった",
+      "url": "https://zenn.dev/takamasa_ai/articles/14dfe1741e140d",
+      "site": "Zenn(Python)",
+      "published": "2026-10-15T01:10:22Z",
+      "description": "はじめに\n52歳です。いくつかの事業をやりながら、毎日Claude Codeを使っています。ホームページの修正やブログ、動画づくり、SNSの投稿、アプリづくりまで、ほとんど任せています。\n困っていたのは、作業が終わったことに気づかないことでした。ピコーンと音は鳴っているのですが、何が終わったのかまでは分かりません。あとで画面を見て「これまだ終わってなかったのか」「頼んだのを忘れてた」ということが何...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "【Python/DuckDB】日本の官公庁オープンデータを1行で分析する3分レシピ（入札・法人・44年間地価・医療）",
+      "url": "https://zenn.dev/jpopendata/articles/35c11457a141b5",
+      "site": "Zenn(Python)",
+      "published": "2026-10-15T00:52:55Z",
+      "description": "はじめに：日本のオープンデータはなぜこんなにも扱いづらいのか\n日本の公的機関（官公庁・自治体・e-Stat等）が公開しているオープンデータは、世界屈指の網羅性と信頼性を誇ります。\nしかし、いざデータ分析や機械学習、Webアプリケーションの開発に使おうとすると、以下のような「泥臭い罠」に直面します。\n\n\n文字コードの罠: Shift_JIS や CP932 で保存されており、現代のPython環境で...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "yfinanceの日本株データは米国株と埋まり方が違う — アナリスト予想修正プラグインを実測ベースで設計した話",
+      "url": "https://zenn.dev/sktt_panda/articles/rakuscan-analyst-revision-field-reliability-design",
+      "site": "Zenn(Python)",
+      "published": "2026-10-15T00:09:27Z",
+      "description": "3行まとめ\n\nRakuScan（自分用の投資分析ツール）に新しいファクタープラグインを追加する際、設計をClaudeに委譲する前に「使う予定のyfinanceフィールドが日本株で本当に埋まるか」を実測した\n結果、半分近いフィールドが日本株では空またはNaN多発だと分かり、学術的に正しい手法でも「データが取れる形」に設計を落とし込み直す工程が必要になった\n欠損が起きても例外を投げず、取れた部品だけで...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "Claude APIのOpenTelemetry対応：トークン使用量の二重計上をPythonで防ぐ",
+      "url": "https://zenn.dev/aipha_euro/articles/08bf8e5734b58a",
+      "site": "Zenn(Python)",
+      "published": "2026-10-15T00:05:09Z",
+      "description": "AIの利用状況を調べるためにトレースを増やしたら、ダッシュボード上のトークン数まで増えた。そんなとき、利用者が急に増えたとは限りません。同じ処理をクライアント側とサーバー側から観測し、両方を足している可能性があります。\nAnthropicは2026年10月14日、Claude APIのOpenTelemetry exportをベータ公開しました。Messages APIやManaged Agent...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
     {
       "title": "Gemini APIとPythonで簡易RAG！ドキュメントから自動で回答を生成する実践",
       "url": "https://zenn.dev/ikuokuotiak/articles/gemini-api-python-document-answer-system",
       "site": "Zenn(Python)",
       "published": "2026-10-14T22:02:31Z",
       "description": "はじめに\nこんにちは、ahicです。\n日々の業務を13体のAIエージェントとRPAで自動化し、生産性向上に努めています。Claude Code、Python、launchd、Gemini APIを駆使して、泥臭い作業をAIに任せています。\n今回は、Gemini APIとPythonを活用して、社内ドキュメントからの情報検索を効率化する「簡易RAG（Retrieval-Augmented Gener...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "AIエージェントの「完了しました」を、実行ログの証拠で検証する",
+      "url": "https://zenn.dev/liatris/articles/20261015-agent-completion-proof",
+      "site": "Zenn(Python)",
+      "published": "2026-10-14T22:00:06Z",
+      "description": "!\nこの記事は、Claude Codeを執筆支援に使った \"毎朝1本書く\" 取り組みの一環で書いています。\n\n目的: 自分のAI活用キャッチアップ。仕組み自体も毎月アップデートしていきます\n体制: 題材選定・実装・下書きをClaude Codeで補助、平野が動作確認と編集を経て公開判断\n方針: Zennのガイドラインに真摯に向き合い、運営から指摘や警告があれば即座に取り組みを停止します\n\n仕組みの...",
       "category": "開発",
       "rss_category": "",
       "image_url": ""

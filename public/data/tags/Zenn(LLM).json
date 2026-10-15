@@ -1,14 +1,84 @@
 {
   "site": "Zenn(LLM)",
-  "last_updated": "2026-10-15T05:41:14.806967",
-  "total_articles": 6738,
+  "last_updated": "2026-10-15T10:22:58.047278",
+  "total_articles": 6747,
   "articles": [
     {
-      "title": "語彙を倍にしても意味は1.39倍にしかならない",
-      "url": "https://zenn.dev/ai_engineer_kz/articles/e69fecaf4f752f",
+      "title": "RTX 2060 6GB で Strata + Qwen3.6 35B-A3B を試した。125Bよりは早いが、まだ実用的ではない。",
+      "url": "https://zenn.dev/remuno/articles/strata-rtx2060-qwen36-35b-a3b",
       "site": "Zenn(LLM)",
-      "published": "2026-10-14T23:10:05Z",
-      "description": "小型の言語モデルを自分で学習させて、どこまで小さくできるかを3か月測っていました。\nその過程で、語彙を倍にしても「独立した意味」の数は1.39倍にしかならないという測定が出ました。\nこの記事は手法の解説ではなく、規模と学習量を動かしたときに何が起きたかの測定記録です。\n実装そのものは別記事に書いています。\n\n 設定\n自作の小型言語モデル。ノートPCのCPUだけで学習しています（GPUなし）。\n\n\n...",
+      "published": "2026-10-15T07:06:39Z",
+      "description": "!\n2026年10月中旬時点の情報です。Strata は v0.1.44.1、モデルは Qwen3.6 35B-A3B(UD-Q4_K_XL)。\nFlash-Next(125B)を試した前回までの記事: https://zenn.dev/remuno/articles/strata-rtx2060-qwen38-flash-next-q3\n読了時間の目安は約 13 分(約 7,500 文字)です。...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "p2問題とGANと監査とわたし",
+      "url": "https://zenn.dev/yukinekonyan/articles/13066938189964",
+      "site": "Zenn(LLM)",
+      "published": "2026-10-15T07:04:05Z",
+      "description": "人間さんが書いた(ここだけ)\nちょっと前に、と言いつつ結構たってしまったが、npakaさんがp2についての記事を書いていた\np2というのはClaude codeあるあるのp0,p1,p2という課題の重要度問題で0は致命的、2はだいぶ小さな課題という扱いのものになる\nただ、プロジェクトをつづけていくと、このp2が重なってきて結構な問題になる\nましてGANで監査をはじめるとなかなかなことになる\nこの記...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "無人起動のClaude Codeが、週次リミットで16回連続失敗した記録（代役を用意しても動かなかった）",
+      "url": "https://zenn.dev/kindledai/articles/bb0ebc19dfe84f",
+      "site": "Zenn(LLM)",
+      "published": "2026-10-15T05:30:45Z",
+      "description": "Claude Codeを、タスクスケジューラから無人で起動していました。人間が話しかけない時間に、止まった作業の判断や成果物の確認をしてもらうためです。\nところが、週次リミットが切れた週に、無人起動が丸2日すべて失敗しました。しかも、リミット対策に入れたばかりの「代役」まで動きませんでした。この記事は、その記録です。\n!\n数字は2026年10月1日時点の自分の環境での記録です。リミットの仕様やメッ...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "SDLCを円にする：自己改善ループを持つ仮想開発組織をClaude Codeで設計する",
+      "url": "https://zenn.dev/xim2jp_tokyo/articles/neta-41-zenn-summary",
+      "site": "Zenn(LLM)",
+      "published": "2026-10-15T03:57:48Z",
+      "description": "問題設定：外注の分業を社内の仕組みに置き換える\n日本で設計し、オフショアで実装し、品質差を受入検査で埋める。実装の大半をAIが担えるなら、この分業で外に払っていた費用は社内の仕組みに置き換えられます。Claude Codeのサブエージェントで構成した「仮想外注ソフトウェア会社」の設計を記事にしました。\n人間とのインターフェースはPMエージェント1つに絞ります。人間の決裁は「何を作るか」「受入基準の...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "Gemini 3.8 Flash・GPT-6 Luna/Sol・Claude Haiku/Sonnet 5.5を日本語・Visionで測る",
+      "url": "https://zenn.dev/cauchye_asia/articles/940e060ede4998",
+      "site": "Zenn(LLM)",
+      "published": "2026-10-15T01:54:27Z",
+      "description": "CAUCHYE ASIAです。2026年10月14日に、gemini-3.8-flash、gpt-6-luna、gpt-6-sol、claude-haiku-5-5、claude-sonnet-5-5（各APIのモデル一覧で確認したID）を、基礎セット（21問）と難化セット（10問）で測定しました。採点コードと再現手順を公開します。あわせて、Googleの公式ベンチマークの数値と並べて読みます。\n...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "Claude Code を夜間に無人実行させたら1週間で3回止まった——コスト設計で変えた4つのこと",
+      "url": "https://zenn.dev/sidejob/articles/a3ccd8cd6745346ed",
+      "site": "Zenn(LLM)",
+      "published": "2026-10-15T00:15:10Z",
+      "description": "この記事で分かること：\n\nClaude Code の無人実行で「利用上限」が思っていたより早く来る理由\n実際のログから見えた「止まる時刻のパターン」\nコスト（容量）管理のために変えた4つの設計判断\n\n\nClaude Code を業務の自動化に組み込んで、夜間に無人で動かすようにした。最初の設計はシンプルだった——「23時に全部まとめて動かす」。\nログを見ると、この方針は最初の1週間で3回止まってい...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "anthropic SDK 1.14 で stream() に届くイベントが増える条件",
+      "url": "https://zenn.dev/sora_endo/articles/aether-anthropic-sdk-1-14-stream-events",
+      "site": "Zenn(LLM)",
+      "published": "2026-10-15T00:12:45Z",
+      "description": "本記事は要約です。初出: https://aether-echoes.com/posts/anthropic-sdk-python-1-14-streaming-unknown-event-order\n\n\n リリースノートの 1 行では「いつ変わるか」が分からない\nanthropic-sdk-python v1.14.0 に、未知のイベント型を stream helper に通す修正と、messa...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "【前編】使ってるだけで賢くなるAIを作りたい！メモリシステムの全体像を整理する",
+      "url": "https://zenn.dev/scien/articles/ai-agent-memory-system-part1",
+      "site": "Zenn(LLM)",
+      "published": "2026-10-15T00:00:10Z",
+      "description": "はじめに\nこんにちは、株式会社SCIEN MLエンジニアの橋口です。\n「AIって、使っているうちにもっと自然に知識を吸収してくれたらいいのになあ」 というのは、LLMに初めて触れたときに多くの人が一度は抱いた感想だと思います。\n実際にChatGPTなどでは、以前は新しいチャットを開くたびにコンテキストを一から説明する必要がありましたが、今では過去の会話内容を踏まえて回答してくれるようになりました。...",
       "category": "AI・技術",
       "rss_category": "",
       "image_url": ""
@@ -34,6 +104,16 @@
       "image_url": ""
     },
     {
+      "title": "AI を3社で比べるときにハマる所。Gemini 4 Argon が白紙を返す原因から、テストの間違いまで",
+      "url": "https://zenn.dev/gui/articles/ai-coding-bench-claude-codex-gemini",
+      "site": "Zenn(LLM)",
+      "published": "2026-10-14T21:50:40Z",
+      "description": "Claude、Codex（OpenAI）、Gemini 4 Argon に同じプログラミング問題を12問、合わせて120回解かせて比べました。\n結果はほぼ横並びで、順位表としてはあまり役に立ちません。役に立ちそうなのは、比べる途中でハマった所のほうです。同じように AI を比べたい人や、Gemini 4 Argon を使い始める人向けに、症状と原因と対処をまとめます。\n書いているのは病院の事務職で...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
       "title": "LLM06：過剰なエージェンシーとは？AIに任せすぎると危険な理由",
       "url": "https://zenn.dev/monkey_gineer/articles/security-llm-06-excessive-agency",
       "site": "Zenn(LLM)",
@@ -49,6 +129,16 @@
       "site": "Zenn(LLM)",
       "published": "2026-10-14T20:12:35Z",
       "description": "門番の else が、いちばんの落とし穴だった\n失敗談の記事ばかり続かないように、新しい記事を「比較・ガイド・落とし穴・事例」に振り分ける門番を置きました。直近7本のうち落とし穴型が4本以上なら、次の企画を止めます。判定は正規表現で、どのキーワードにも当たらなければ「落とし穴」に倒す作りでした。\n既存の技術記事121本に当てて数えてみると、79本（65%）がどのルールにも当たらず「その他＝落とし穴...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "ソフトウェア開発でAI中継APIを評価する4つの観点",
+      "url": "https://zenn.dev/searching/articles/85d6a467f9d46e",
+      "site": "Zenn(LLM)",
+      "published": "2026-10-14T18:34:22Z",
+      "description": "本記事は Folkbench ブログの記事を翻訳・再構成したものです。\n原文（Folkbench ブログ）： https://folkbench.com/en/blog/ai-api-relay-software-engineering-evaluation-guide?utm_source=luntan&amp;utm_campaign=zenn\n\nソフトウェア工学の視点で見ると、AI 中継（A...",
       "category": "AI・技術",
       "rss_category": "",
       "image_url": ""
