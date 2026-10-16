@@ -1,7 +1,7 @@
 {
   "site": "Zenn(LLM)",
-  "last_updated": "2026-10-16T21:22:17.691583",
-  "total_articles": 6778,
+  "last_updated": "2026-10-16T23:47:09.468789",
+  "total_articles": 6782,
   "articles": [
     {
       "title": "開発に使うAIモデルのコストと性能の最適化に挑戦（3）：OpenCode Goの月の上限をほぼ使い切ったので、内訳を調べて選び方を探った話",
@@ -9,16 +9,6 @@
       "site": "Zenn(LLM)",
       "published": "2026-10-16T14:50:50Z",
       "description": "このシリーズでは、Claude Opusと同じ結果を、なるべく安く手に入れる方法を探しています。題材は、自宅のAIエージェントがテレビを操作するためのコマンドの開発です。\n（1）では、低価格モデルに開発を任せました。テスト結果を見せて1回直させる方法が、いちばん安く満点に届いています。（2）では、Opusに設計書を書かせても、安くはなりませんでした。\n低価格モデルは、OpenCode Goから使っ...",
-      "category": "AI・技術",
-      "rss_category": "",
-      "image_url": ""
-    },
-    {
-      "title": "RAGの検索結果が毎回違う — top_k明示・同点の決定打・スナップショット隔離の3点で再現性を取る",
-      "url": "https://zenn.dev/yukihayama/articles/rag-topk-index-drift",
-      "site": "Zenn(LLM)",
-      "published": "2026-10-16T13:21:50Z",
-      "description": "RAGの検索結果が毎回違う — top_k明示・同点の決定打・スナップショット隔離の3点で再現性を取る\n社内ナレッジを検索する RAG を本番運用に載せてから 2 週間で、営業チームから静かなクレームが上がった。 同一質問 なのに、昨日と今日で参照ドキュメントが入れ替わる、という内容だ。生成側は temperature を 0 に固定しており、プロンプトもモデルも変えていない。つまり揺らいでいるの...",
       "category": "AI・技術",
       "rss_category": "",
       "image_url": ""
@@ -39,26 +29,6 @@
       "site": "Zenn(LLM)",
       "published": "2026-10-16T12:41:14Z",
       "description": "はじめに\nOpenCodeが、DeepSeek V4.1 Flashを無料枠で提供し始めた。DeepSeek本体のAPIは無料枠を持たず従量課金なので、素朴に「なぜタダで配れるのか」が気になった。\nそこで、その疑問をそのまま OpenCode上の無料DeepSeekに記事として書かせてみた。書かせたのは、個人のデジタルガーデンに置く一本のノートだ。\n👉 なぜOpenCodeはDeepSeekを無料...",
-      "category": "AI・技術",
-      "rss_category": "",
-      "image_url": ""
-    },
-    {
-      "title": "OpenAI SDK のコードを Grok API に移したら、変更は2か所・費用は計測できた分で約$0.16だった",
-      "url": "https://zenn.dev/fk2000/articles/grok-api-openai-sdk",
-      "site": "Zenn(LLM)",
-      "published": "2026-10-16T12:39:50Z",
-      "description": "結論（先に）\n\nOpenAI SDK のコードから変更が必要だった箇所：api_key と base_url の2か所だけ（4本とも、ほかの変更なしで動きました）\n検証にかかった費用の合計：約 $0.164（API の usage に返ってきた金額の合計。stream.py の分は含みません）。うち約 $0.153 が検索ありの1回でした\nWeb 検索ツールの有無による違い：検索なしは「確認できる...",
-      "category": "AI・技術",
-      "rss_category": "",
-      "image_url": ""
-    },
-    {
-      "title": "AI前提の開発組織をつくる — 3つの個人リポジトリで検証した権限設計・マージ条件・ガードレール",
-      "url": "https://zenn.dev/yukamiya/articles/claude-harness-engineering-three-repos",
-      "site": "Zenn(LLM)",
-      "published": "2026-10-16T09:19:51Z",
-      "description": "TL;DR\n\n個人リポジトリ 3 つ（ポッドキャスト運用 / 個人サイト運用 / 収益化ツール開発）を実験場に、企画からマージ・運用までの開発プロセスを AI に自律実行させる仕組みを 1 ヶ月半かけて組みました\n権限は最初から渡さず、Can（届く範囲）/ May（実行時の承認）/ Act（ゲートを通って初めて効力を持つ） の 3 層で段階的に earn させる設計にしています\nマージ条件を機械可...",
       "category": "AI・技術",
       "rss_category": "",
       "image_url": ""
@@ -169,6 +139,76 @@
       "site": "Zenn(LLM)",
       "published": "2026-10-16T03:00:24Z",
       "description": "はじめに\nこんにちは！株式会社ネクストビートでテクノロジー・エバンジェリストなる肩書きでお仕事をしている水島です。\n今回は「LLMにとって書きやすい構文とはどういうものか」を、小さな実験で確かめてみた話です。\n対象にしたのは、既存のプログラミング言語ではなく、 プロンプトの中で初めて文法を説明される未知の言語 です。学習データに大量に含まれる言語だと「その言語を知っているから書ける」のか「構文の設...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "Claude Managed Agents 実践ガイド ― サーバーを持たずに動き続けるエージェントを作る",
+      "url": "https://zenn.dev/persimmoq/books/claude-managed-agents-jp",
+      "site": "Zenn(LLM)",
+      "published": "2026-10-16T02:58:21Z",
+      "description": "Anthropic の Claude Managed Agents は、エージェントループもサンドボックスも Anthropic 側が運用する「サーバー不要」のエージェント基盤です。本書は Python SDK で、毎朝サイトを巡回して日報を書くエージェントを題材に、最初のセッションから定期実行（cron）・秘密情報の扱い（Vault）・MCP・記憶（Memory Store）・複数エージェント・...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "Claude Code だけで、寝てる間に働く AI 部下を作った話 ― 公式ドキュメントの差分を毎朝 Slack に流す",
+      "url": "https://zenn.dev/persimmoq/articles/claude-code-routines-docs-watch-agent",
+      "site": "Zenn(LLM)",
+      "published": "2026-10-16T02:58:19Z",
+      "description": "Claude Code には、クラウドで cron 実行されるエージェント（routine）が入っています。ノート PC を閉じていても、指定した時刻に Anthropic 側のサンドボックスでセッションが立ち上がり、リポジトリを clone して、Slack や Gmail に書き込んで、終了します。追加のサーバーも、新しいツールも要りません。\nこの記事は、それで「毎朝 9 時に公式ドキュメント...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "Qwen3.8-27Bは有料サブスクの代わりになるか？Claude Opus 4.6と2つの作業で比較してみた",
+      "url": "https://zenn.dev/bita/articles/37f13b02234a83",
+      "site": "Zenn(LLM)",
+      "published": "2026-10-16T02:54:07Z",
+      "description": "Intro\n最近公開されたQwen3.8が、その凄まじい性能で大きな注目を集めています。\nHugging Faceのモデルカードによると、Qwen3.8の27Bモデルは、実際のissue解決能力を測るSWE-bench ProでClaude Opus 4.6 Maxの53.4を上回る61.7を記録しているそうです。\nこれを見て、ふとこう思いました。\n\n有料サブスクを契約しなくても、ローカルLLMで...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "ベクトルDBを使わない「階層ナビゲーション型RAG」を作って、ベクトルDB版RAGと比較してみた",
+      "url": "https://zenn.dev/aiforall/articles/8e1803396534de",
+      "site": "Zenn(LLM)",
+      "published": "2026-10-16T02:30:05Z",
+      "description": "階層ナビゲーション型RAGとは\n「階層ナビゲーション型RAG」は、ベクトルDBを使わずに文書を探すRAGです。準備段階で文書の山から階層的な目次を自動で作っておき、質問が来たらLLMがその目次を上から順に辿って、答えが書かれていそうな文書を選びます。質問のたびにベクトル検索をしない点が、一般的なベクトルDB版RAGとの違いです。\nこの記事では、この仕組みを論文の手法(Corpus2Skill)を参...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "GLM 5.3 Flash運用記は一晩150ドルの誤選択が教訓｜ds4とMythos79件",
+      "url": "https://zenn.dev/ainewsdaily/articles/20261010_general_t1",
+      "site": "Zenn(LLM)",
+      "published": "2026-10-16T02:16:12Z",
+      "description": "2026年9/28〜10/4の週に話題になったAIニュース8本のうち、手を動かす人に効く3本をまとめた記事です。\n取り上げるのは、GLM 5.3 Flash の1か月運用記、Redis の作者による推論エンジン ds4、Linux 側が AI の脆弱性報告79件を精査した講演です。\nhttps://youtu.be/eBzRecwJwvg\n\n 今週の地図：詳しく見るのは3本\n日付は Hacker ...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "AEO対策は、施策の前に curl で「現状」を記録する——30分の監査と baseline の取り方",
+      "url": "https://zenn.dev/jadaq/articles/d02cc9e54db71f",
+      "site": "Zenn(LLM)",
+      "published": "2026-10-16T02:05:11Z",
+      "description": "AIに聞いたとき回答に引用される側に回るための最適化——AEO（Answer Engine Optimization）の施策リスト自体は、もう検索すれば手に入ります。robots.txt、構造化データ、sitemap、llms.txt。\nただ、実際にクライアントサイト2件へ施策を入れてみて痛感したのは、施策より先に「現状の記録」を取っておかないと、90日後に効果を語る手段がなくなることでした。施策...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "Opus 5.5は1タスク$13.43→$3.97で性能差1.8pt｜CursorBench 4.0で見る「トークン単価≠タスクのコスト」",
+      "url": "https://zenn.dev/cauchye_asia/articles/a7a508f0682998",
+      "site": "Zenn(LLM)",
+      "published": "2026-10-16T01:54:32Z",
+      "description": "結論（先に）\n\nCursorBench 4.0 の公開値では、Opus 5.5 は Max が 57.8%／1タスク平均 $13.43、High が 56.0%／$3.97 です。スコア差は1.8ポイント、コスト差は約3.4倍（$13.43 ÷ $3.97 の計算値）。\nGemini 3.8 Flash（High）は 39.6%／$4.70。トークン単価は安いのに、1タスクのコストは Sonnet...",
       "category": "AI・技術",
       "rss_category": "",
       "image_url": ""

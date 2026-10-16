@@ -1,7 +1,7 @@
 {
   "site": "Zenn(Python)",
-  "last_updated": "2026-10-16T21:22:17.691583",
-  "total_articles": 7155,
+  "last_updated": "2026-10-16T23:47:09.468789",
+  "total_articles": 7154,
   "articles": [
     {
       "title": "設計標準書からレビュー用チェックリストを自動生成する",
@@ -34,6 +34,36 @@
       "image_url": ""
     },
     {
+      "title": "科学研究向けAgent Skills集を試す: 統計スキルは「結論」ではなく「裏付けの質」を変えた",
+      "url": "https://zenn.dev/matsushima_a/articles/day-017-scientific-agent-skills-stat-review",
+      "site": "Zenn(Python)",
+      "published": "2026-10-16T13:39:10Z",
+      "description": "筆者は海外のAI関連ニュースを毎日1本検証して発信するチャレンジの17日目として、K-Dense-AI/scientific-agent-skills(MIT、旧Claude Scientific Skills)を検証した。生物学・化学・医学・物理・データ解析など幅広い研究分野をカバーするAgent Skills集で、実際に数えたところ177種のスキルが収録されていた。\n結論から書く。statis...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "RAGの検索結果が毎回違う — top_k明示・同点の決定打・スナップショット隔離の3点で再現性を取る",
+      "url": "https://zenn.dev/yukihayama/articles/rag-topk-index-drift",
+      "site": "Zenn(Python)",
+      "published": "2026-10-16T13:21:50Z",
+      "description": "RAGの検索結果が毎回違う — top_k明示・同点の決定打・スナップショット隔離の3点で再現性を取る\n社内ナレッジを検索する RAG を本番運用に載せてから 2 週間で、営業チームから静かなクレームが上がった。 同一質問 なのに、昨日と今日で参照ドキュメントが入れ替わる、という内容だ。生成側は temperature を 0 に固定しており、プロンプトもモデルも変えていない。つまり揺らいでいるの...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "OpenAI SDK のコードを Grok API に移したら、変更は2か所・費用は計測できた分で約$0.16だった",
+      "url": "https://zenn.dev/fk2000/articles/grok-api-openai-sdk",
+      "site": "Zenn(Python)",
+      "published": "2026-10-16T12:39:50Z",
+      "description": "結論（先に）\n\nOpenAI SDK のコードから変更が必要だった箇所：api_key と base_url の2か所だけ（4本とも、ほかの変更なしで動きました）\n検証にかかった費用の合計：約 $0.164（API の usage に返ってきた金額の合計。stream.py の分は含みません）。うち約 $0.153 が検索ありの1回でした\nWeb 検索ツールの有無による違い：検索なしは「確認できる...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
       "title": "Pull Requestはレビューのためだけじゃなかった。Bakery Hubの商品追加で気づいた「変更を止める場所」の価値",
       "url": "https://zenn.dev/tosane932/articles/c8a5231199425c",
       "site": "Zenn(Python)",
@@ -59,36 +89,6 @@
       "site": "Zenn(Python)",
       "published": "2026-10-16T08:29:32Z",
       "description": "ターミナルの中で対戦できるボンバーマン風のゲームを作りました。\nhttps://github.com/u17220/BombConsole\nサーバは C++、クライアントは Python 3 の標準ライブラリだけで書いた 1 ファイルです。遊ぶ人はそのファイルを取ってきて python3 で起動するだけで、何もインストールしなくて済みます。\nまずは 1 人で、Bot 2 体を相手に試せます(g++...",
-      "category": "開発",
-      "rss_category": "",
-      "image_url": ""
-    },
-    {
-      "title": "AIエージェントに無人で書き込ませる前の実装ガイド ― 二重送信・暴走・夜間停止を防ぐPython",
-      "url": "https://zenn.dev/neuralalpha/books/agent-ops-guide",
-      "site": "Zenn(Python)",
-      "published": "2026-10-16T07:56:06Z",
-      "description": "AIエージェント・ボット・定期ジョブに、人が見ていない状態で投稿・送信・公開・支払いをさせる前に入れておく仕組みを、実際に起きた失敗と、Python標準ライブラリだけで書けるコードで解説します。記録帳（attempt/sent/unknown）、緊急停止、1日の上限と最小間隔、アカウント確認、死活監視、費用メーター、再現可能な納品ZIP、Windows・夜間実行の落とし穴、Claude Code自...",
-      "category": "開発",
-      "rss_category": "",
-      "image_url": ""
-    },
-    {
-      "title": "手で動かすと動くのに、夜中の自動実行だけ落ちるPython（Windows・cp932）の確認リスト",
-      "url": "https://zenn.dev/neuralalpha/articles/windows-night-job-ja",
-      "site": "Zenn(Python)",
-      "published": "2026-10-16T07:55:53Z",
-      "description": "Claude Code で作った小さな自動運用（予約投稿・商品の集計・夜間のログ記録）を、Windows のタスクスケジューラで動かしています。\n無人で動かしていた夜中のジョブが、UnicodeEncodeError で止まったことがあります。手で実行したときは毎回正常に動いていたスクリプトです。\n原因は、コンソールの文字コード（cp932）が、ログに含まれる文字を出力できなかったことでした。手で...",
-      "category": "開発",
-      "rss_category": "",
-      "image_url": ""
-    },
-    {
-      "title": "Claude Code に「緊急停止」と「危険コマンドのブロック」を足すプラグインを作った（標準ライブラリのみ）",
-      "url": "https://zenn.dev/neuralalpha/articles/claude-code-guardrails-plugin-ja",
-      "site": "Zenn(Python)",
-      "published": "2026-10-16T07:55:52Z",
-      "description": "Claude Code に作業を任せていると、「今の、止めたかった」という瞬間があります。私の場合は、予約投稿や商品の公開など外部に書き込む作業を任せているので、止めたいときに確実に止まる仕組みが欲しくなりました。\nそこで、Claude Code の フック（PreToolUse / PostToolUse） を使って、書き込み系のツール呼び出しにガードを掛けるプラグインを作りました。Python...",
       "category": "開発",
       "rss_category": "",
       "image_url": ""
@@ -139,16 +139,6 @@
       "site": "Zenn(Python)",
       "published": "2026-10-16T04:33:41Z",
       "description": "JevとJevライクなモデルの乱立ぶりが凄いですね👀\nいやまあ、さすがに、コレは類似モデル乱立するだろうとは思っていましたが、、、( ´ー｀)y-~~\n\nそして、Jevの本家やOpenAI Decision API、Jevライクも続々と画像入力に対応してきたので、それらの性能の雰囲気が知りたく、Wikimedia CommonsのCC0/パブリックドメイン画像と合成画像で作った自作ベンチで味見して...",
-      "category": "開発",
-      "rss_category": "",
-      "image_url": ""
-    },
-    {
-      "title": "Claude Managed Agents 実践ガイド ― サーバーを持たずに動き続けるエージェントを作る",
-      "url": "https://zenn.dev/persimmoq/books/claude-managed-agents-jp",
-      "site": "Zenn(Python)",
-      "published": "2026-10-16T02:58:21Z",
-      "description": "Anthropic の Claude Managed Agents は、エージェントループもサンドボックスも Anthropic 側が運用する「サーバー不要」のエージェント基盤です。本書は Python SDK で、毎朝サイトを巡回して日報を書くエージェントを題材に、最初のセッションから定期実行（cron）・秘密情報の扱い（Vault）・MCP・記憶（Memory Store）・複数エージェント・...",
       "category": "開発",
       "rss_category": "",
       "image_url": ""
