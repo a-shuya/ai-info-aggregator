@@ -1,8 +1,158 @@
 {
   "site": "Zenn(LLM)",
-  "last_updated": "2026-10-16T09:44:39.808328",
-  "total_articles": 6763,
+  "last_updated": "2026-10-16T14:21:06.452447",
+  "total_articles": 6776,
   "articles": [
+    {
+      "title": "RAGの検索結果が毎回違う — top_k明示・同点の決定打・スナップショット隔離の3点で再現性を取る",
+      "url": "https://zenn.dev/yukihayama/articles/rag-topk-index-drift",
+      "site": "Zenn(LLM)",
+      "published": "2026-10-16T13:21:50Z",
+      "description": "RAGの検索結果が毎回違う — top_k明示・同点の決定打・スナップショット隔離の3点で再現性を取る\n社内ナレッジを検索する RAG を本番運用に載せてから 2 週間で、営業チームから静かなクレームが上がった。 同一質問 なのに、昨日と今日で参照ドキュメントが入れ替わる、という内容だ。生成側は temperature を 0 に固定しており、プロンプトもモデルも変えていない。つまり揺らいでいるの...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "LLMエージェント基盤のシステム設計 #1 エージェントランタイム（Harness）",
+      "url": "https://zenn.dev/yuuichie/articles/e5ef0c2ae29843",
+      "site": "Zenn(LLM)",
+      "published": "2026-10-16T12:45:32Z",
+      "description": "!\nこの記事は連載「LLMエージェント基盤のシステム設計」（全5回）の第1回です。\n\n\nエージェントランタイム（Harness） ← この記事\nコンテキスト管理\nツール実行\n信頼性\n評価と可観測性\n\n各回とも「要件 → 規模の見積もり → 全体設計 → 詳細設計 → 運用と発展」の順に説明します。文中の規模や性能の数値は、設計を検討するための仮の値です。実測値ではありません。\n\n\n はじめに\nコー...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "無料のDeepSeekに「なぜ無料なのか」を書かせた──OpenCodeで記事を一本つくった検証ログ",
+      "url": "https://zenn.dev/ogiri/articles/opencode-deepseek-free-tier-article-log",
+      "site": "Zenn(LLM)",
+      "published": "2026-10-16T12:41:14Z",
+      "description": "はじめに\nOpenCodeが、DeepSeek V4.1 Flashを無料枠で提供し始めた。DeepSeek本体のAPIは無料枠を持たず従量課金なので、素朴に「なぜタダで配れるのか」が気になった。\nそこで、その疑問をそのまま OpenCode上の無料DeepSeekに記事として書かせてみた。書かせたのは、個人のデジタルガーデンに置く一本のノートだ。\n👉 なぜOpenCodeはDeepSeekを無料...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "OpenAI SDK のコードを Grok API に移したら、変更は2か所・費用は計測できた分で約$0.16だった",
+      "url": "https://zenn.dev/fk2000/articles/grok-api-openai-sdk",
+      "site": "Zenn(LLM)",
+      "published": "2026-10-16T12:39:50Z",
+      "description": "結論（先に）\n\nOpenAI SDK のコードから変更が必要だった箇所：api_key と base_url の2か所だけ（4本とも、ほかの変更なしで動きました）\n検証にかかった費用の合計：約 $0.164（API の usage に返ってきた金額の合計。stream.py の分は含みません）。うち約 $0.153 が検索ありの1回でした\nWeb 検索ツールの有無による違い：検索なしは「確認できる...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "LLM07：システムプロンプトの漏えいとは？AIへの「裏マニュアル」を隠しきれない理由",
+      "url": "https://zenn.dev/monkey_gineer/articles/security-llm-07-system-prompt-leakage",
+      "site": "Zenn(LLM)",
+      "published": "2026-10-16T07:07:13Z",
+      "description": "1. その便利な機能、本当に安全ですか？\nAIチャットボットを作るとき、多くの場合、AIへの「裏マニュアル」を用意します。どんな口調で話すか、何を答えてよいか、何を断るか。これがシステムプロンプトです。\nここに、こんな情報を書いていませんか。\n\n「顧客への融資は、上限500万円まで案内してよい」\n「管理者の合言葉は、〇〇である」\n「データベースの接続先は、△△である」\n\nもし利用者が、うまい聞き方...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "社内の Slack と GitHub を LLM に読ませて技術ブログの題材を探す：モデルに任せたこと、任せなかったこと",
+      "url": "https://zenn.dev/salt2/articles/slack-github-llm-bb912760",
+      "site": "Zenn(LLM)",
+      "published": "2026-10-16T06:55:03Z",
+      "description": "!\n3行まとめ\n\n技術ブログに足りていなかったのは、自分たちの現場から出た一次情報でした。それを書ける人と題材を探す作業は、一部の人の記憶に頼っていました。\nそこで、Slack・GitHub・会議メモの記録から、書ける人と題材の組み合わせを探し、根拠付きの記事案にする仕組みを作りました。\n候補を出すだけなら LLM ですぐにできます。手間がかかったのは、本人が実際に書ける候補に絞ることでした。そこ...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "レビュー工数50%削減を目指す、LLMベンチマークとHuman-in-the-loop設計",
+      "url": "https://zenn.dev/yukamiya/articles/reduce-review-cost-human-in-loop-ai",
+      "site": "Zenn(LLM)",
+      "published": "2026-10-16T06:38:25Z",
+      "description": "TL;DR\n\nとある負荷の高い人事オペレーションのレビューに LLM を入れ、人間の詳細レビューを 50% 程度減らすことを目標にしました。AI に返させるのは 0〜3 のスコアと理由だけで、どの対象のレビューを省くかは人間が決めます。\nGemini / Claude / GPT 系の 3 モデルを比較したところ、どのモデルも評価基準だけより Few-shot を足した構成の方が精度が上がりました...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "[Implementation] Variable Lead Angle Worm Gear Attention:",
+      "url": "https://zenn.dev/nanashi_os/articles/8823d66e42f3e9",
+      "site": "Zenn(LLM)",
+      "published": "2026-10-16T06:26:23Z",
+      "description": "title: \"[Implementation] Variable Lead Angle Worm Gear Attention: PyTorch Implementation for Context Control\"\nemoji: \"⚙️\"\ntype: \"tech\"\ntopics: [\"pytorch\", \"python\", \"llm\", \"controltheory\", \"algorithm\"...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "AIの同時実行数を1から50へ：LLM処理をLaravelのキューワーカーから7MBのGoゲートウェイに移した話⚡",
+      "url": "https://zenn.dev/doublecheck/articles/e026f86282e181",
+      "site": "Zenn(LLM)",
+      "published": "2026-10-16T06:11:56Z",
+      "description": "私たちのLaravelアプリには、3つのAI機能があります。翻訳、単語・文法の例文生成、ビジネスメールの下書き作成です。どれもLLMを呼び出し、1回の呼び出しに2〜30秒かかります。\n長い間、これで問題ありませんでした。ところが「10人が同時にボタンを押したら？」と計算してみたところ、答えは 「10人目は約4分待たされる」 でした。\nこの記事では、アプリを書き直さずに この問題をどう解決したかを紹...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "1年ぶりの安定版で、去年の RAG コードは動くのか：LangChainGo v0.1.15 で壊れるところと直し方",
+      "url": "https://zenn.dev/nonejp/articles/dfcf9ff0c09a16",
+      "site": "Zenn(LLM)",
+      "published": "2026-10-16T06:03:59Z",
+      "description": "はじめに\n\n「langchaingo を v0.1.15 に上げても、去年書いた RAG はそのまま動くのか？」。依存の更新 PR を前にして、ここで手が止まっていないでしょうか。\nGo 向けの LLM フレームワーク LangChainGo（github.com/tmc/langchaingo）[1] の v0.1.15 が、2026年10月5日（JST）に公開されました。前の安定版 v0.1....",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "Strata でできること：ローカル LLMの実行とアプリ連携",
+      "url": "https://zenn.dev/jtcc/articles/strata-local-llm-app-integration",
+      "site": "Zenn(LLM)",
+      "published": "2026-10-16T05:57:00Z",
+      "description": "こんにちは。株式会社日本トレカセンターの田島です。\nローカル LLM を使うとき、最初の目標は「手元の PC で回答を生成できること」です。しかし、開発で利用するなら、その先も気になります。\n仕様書から条件を抽出できるか。既存のアプリから呼び出せるか。長い資料を渡したとき、どれくらい待つのか。\n本記事では、Strata を使ったローカル LLM の実行と、API を通じたアプリ連携を紹介します。さ...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "金融庁EDINETの届け出6万件をつないで、物言う株主の「要求→株主総会の結果」を5年分たどれるようにした",
+      "url": "https://zenn.dev/followmoney/articles/f8c85545500dbb",
+      "site": "Zenn(LLM)",
+      "published": "2026-10-16T05:56:38Z",
+      "description": "物言う株主（アクティビスト）が上場会社の株を5%以上持つと、金融庁の EDINET に「大量保有報告書」が出ます。そこには、会社に何を求めるのか（重要提案行為等）が文章で書かれることがあります。\nでは、その要求のあと、株主総会はどうなったのか。\nこれを調べるには、大量保有報告書と、総会の結果が載る臨時報告書を、会社と投資家ごとに手で突き合わせる必要があります。1社なら半日、50社なら1か月の仕事で...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "AIエージェントに任せない線引き：確認なしでやらせるもの、必ず人間に回すもの",
+      "url": "https://zenn.dev/kindledai/articles/edc042a8d131f2",
+      "site": "Zenn(LLM)",
+      "published": "2026-10-16T05:52:17Z",
+      "description": "エージェントを増やすと、今度は人間のほうが「確認してください」の連続に追われます。かといって、何でも自動にすると、取り返しのつかないことが起きます。\n自分の運用で、その間の線をどこに引いたかを書きます。\n!\n自分の環境（個人運用の小さなチーム）での線引きです。仕事の性質が違えば、線の位置も変わります。\n\n\n 確認なしでやらせているもの\n\nファイルの読み書き、検索\n元に戻せる操作（作業のやり直し、配...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "なぜ、LLM AIは「7つの習慣」のためにあるのか？",
+      "url": "https://zenn.dev/pdfractal/articles/c897a1788eb75e",
+      "site": "Zenn(LLM)",
+      "published": "2026-10-16T04:08:43Z",
+      "description": "はじめに\nLLM（大規模言語モデル）を利用したAIの最大の効能は何でしょうか。一般には、文章の作成、情報収集、プログラミングなどの作業を効率化できることだと考えられています。しかし、こうした個別の作業効率化だけでは、LLMが人間の生活にもたらした変化の本質を捉えきれません。\nLLMの最大の効能は、スティーブン・R・コヴィーの著書『7つの習慣』で重視されている、「緊急ではないが重要なこと」に時間を使...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "LLMにとって書きやすい構文とは何か：`end` と `end func foo` を1,000回以上比べてみた",
+      "url": "https://zenn.dev/nextbeat/articles/2026-10-syntax-locality-llm",
+      "site": "Zenn(LLM)",
+      "published": "2026-10-16T03:00:24Z",
+      "description": "はじめに\nこんにちは！株式会社ネクストビートでテクノロジー・エバンジェリストなる肩書きでお仕事をしている水島です。\n今回は「LLMにとって書きやすい構文とはどういうものか」を、小さな実験で確かめてみた話です。\n対象にしたのは、既存のプログラミング言語ではなく、 プロンプトの中で初めて文法を説明される未知の言語 です。学習データに大量に含まれる言語だと「その言語を知っているから書ける」のか「構文の設...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
     {
       "title": "課題達成のために暴走するAIエージェントを防ぐ安全性研究",
       "url": "https://zenn.dev/tsurubee/articles/ai-agent-safety-research",
@@ -54,16 +204,6 @@
       "image_url": ""
     },
     {
-      "title": "Kamei - AIに渡す前に機密情報を隠すエージェント",
-      "url": "https://zenn.dev/ko_taro_okamoto/articles/8168c4cbbcca5d",
-      "site": "Zenn(LLM)",
-      "published": "2026-10-15T15:00:05Z",
-      "description": "はじめに\n私たちは、個人開発でも生成 AI にコードの相談をしています。あるとき、貼ろうとしたログに、名前やメールアドレスが混ざっていることに気づきました。自分のコードでさえこうなら、仕事の資料やコードではなおさらです。どの情報なら渡してよく、何を渡してはいけないのか、そのたびに考えなければなりません。\nこの判断は、思った以上に難しいものです。AI に入力した内容がどこへ送られ、どう扱われるかは、...",
-      "category": "AI・技術",
-      "rss_category": "",
-      "image_url": ""
-    },
-    {
       "title": "【第5回 Agentic AI Hackathon with Google Cloud】tool に user_id を渡さない設計",
       "url": "https://zenn.dev/nemuilemon/articles/0b101872decee7",
       "site": "Zenn(LLM)",
@@ -79,16 +219,6 @@
       "site": "Zenn(LLM)",
       "published": "2026-10-15T13:41:24Z",
       "description": "最近、Claude Desktop や Cursor を中心に MCP（Model Context Protocol） のエコシステムが急速に広がっています。\n私自身、日本国内の155種類・合計1,016万件の公的オープンデータを徹底的にクレンジングして統合したMCPサーバー（japan-data-mcp）を構築・公開しました。その開発プロセスを通じて、「そもそもMCPの本質とは何か」「なぜこれで...",
-      "category": "AI・技術",
-      "rss_category": "",
-      "image_url": ""
-    },
-    {
-      "title": "休憩室のタブレットに話すだけで現場が変わる──OpenAI Realtime API × Vertex AI Gemini で作った安全衛生",
-      "url": "https://zenn.dev/rabitfoot/articles/c43d4965a799d6",
-      "site": "Zenn(LLM)",
-      "published": "2026-10-15T13:33:30Z",
-      "description": "はじめに\n工場の休憩室に置いたタブレットに話しかけるだけで、ヒヤリハットや改善提案が匿名で管理者のタスクになり、対応の進み具合が現場に返ってくる──そんな安全衛生AIエージェント「現場相談」を、第5回 Agentic AI Hackathon with Google Cloud 向けに作りました。\n\n デモ動画（約3分）\n\n\n ソースコード\nhttps://github.com/QuantumDy...",
       "category": "AI・技術",
       "rss_category": "",
       "image_url": ""
