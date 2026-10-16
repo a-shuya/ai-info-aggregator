@@ -1,8 +1,38 @@
 {
   "site": "Zenn(LLM)",
-  "last_updated": "2026-10-16T00:39:59.472765",
-  "total_articles": 6758,
+  "last_updated": "2026-10-16T05:03:30.975273",
+  "total_articles": 6763,
   "articles": [
+    {
+      "title": "課題達成のために暴走するAIエージェントを防ぐ安全性研究",
+      "url": "https://zenn.dev/tsurubee/articles/ai-agent-safety-research",
+      "site": "Zenn(LLM)",
+      "published": "2026-10-15T23:35:39Z",
+      "description": "はじめに\nAIエージェントが賢くなるにつれて、1回の依頼でエージェントが自分の判断で行う行動の幅が広がってきたと感じる。たとえば「これはこういうことですか？」と質問しただけなのに、エージェントがモデルとデータセットをダウンロードし、実際に動かして確かめた結果を返してくることがあった。頼んだ以上のことまでやってくれるのは、場面によっては便利である。しかし、そのダウンロードや実行をしてよかったのか、ど...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "【チャットシステム設計ノート #03】LLMの実行環境を選ぶ — クラウドAPI・マネージド推論・自前実行",
+      "url": "https://zenn.dev/kon2300/articles/00e686f6289afe",
+      "site": "Zenn(LLM)",
+      "published": "2026-10-15T23:00:06Z",
+      "description": "1. 今回のテーマ\n今回は、LLMモデルをどこで実行し、誰が運用するかを選定する。\n同じモデルを使う場合でも、実行環境によって費用、応答速度、データ管理、運用負荷は変わる。実行環境の選択肢は、モデル提供事業者のAPI、クラウドのマネージド推論、自分たちで管理する推論基盤などに分かれる。\nここでは、次の判断ができることを目指す。\n\nまずクラウドAPIを使うべきケースは何か\nオープンウェイトモデルを自...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "Claude APIのToken Counting APIで「送る前に」コストを止める：プロンプト肥大をCIで検知する実装手順",
+      "url": "https://zenn.dev/yunisuta/articles/claude-api-token-counting-ci-anthropic-qtvbqf",
+      "site": "Zenn(LLM)",
+      "published": "2026-10-15T22:39:37Z",
+      "description": "システムプロンプトに「ちょっとだけルールを足した」だけで、請求が先月の1.4倍になっていた。そんな経験はないでしょうか。原因はたいてい、リクエストを送ってから usage を見て初めて気づく点にあります。\nこの記事では、Claude API の Token Counting API を使って、送信前にトークン数を測り、上限を超えたら止める仕組みを TypeScript で作ります。最後は CI で...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
     {
       "title": "【11月改定】Claude利用ポリシーは何が変わったのか？実際に検証して徹底解説！",
       "url": "https://zenn.dev/nocodesolutions/articles/562538ccb14dfd",
@@ -24,11 +54,31 @@
       "image_url": ""
     },
     {
+      "title": "Kamei - AIに渡す前に機密情報を隠すエージェント",
+      "url": "https://zenn.dev/ko_taro_okamoto/articles/8168c4cbbcca5d",
+      "site": "Zenn(LLM)",
+      "published": "2026-10-15T15:00:05Z",
+      "description": "はじめに\n私たちは、個人開発でも生成 AI にコードの相談をしています。あるとき、貼ろうとしたログに、名前やメールアドレスが混ざっていることに気づきました。自分のコードでさえこうなら、仕事の資料やコードではなおさらです。どの情報なら渡してよく、何を渡してはいけないのか、そのたびに考えなければなりません。\nこの判断は、思った以上に難しいものです。AI に入力した内容がどこへ送られ、どう扱われるかは、...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
       "title": "【第5回 Agentic AI Hackathon with Google Cloud】tool に user_id を渡さない設計",
       "url": "https://zenn.dev/nemuilemon/articles/0b101872decee7",
       "site": "Zenn(LLM)",
       "published": "2026-10-15T14:30:05Z",
       "description": "はじめに\nこの記事は、第 5 回 Agentic AI Hackathon with Google Cloud に応募した「suyasuya」の設計の一部を切り出したものです。\n\n suyasuya について\nsuyasuya は、睡眠をサポートする agent です。\n睡眠アプリの多くは、user に記録をつけることを求めます。ところが寝つきのように、意識するほど遠のくものでは、記録すること自体...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "MCPの本質と5つの役割分担：1,016万件の公的データをAIに直結して見えた最大のブルーオーシャン",
+      "url": "https://zenn.dev/jpopendata/articles/665d94c946cb5d",
+      "site": "Zenn(LLM)",
+      "published": "2026-10-15T13:41:24Z",
+      "description": "最近、Claude Desktop や Cursor を中心に MCP（Model Context Protocol） のエコシステムが急速に広がっています。\n私自身、日本国内の155種類・合計1,016万件の公的オープンデータを徹底的にクレンジングして統合したMCPサーバー（japan-data-mcp）を構築・公開しました。その開発プロセスを通じて、「そもそもMCPの本質とは何か」「なぜこれで...",
       "category": "AI・技術",
       "rss_category": "",
       "image_url": ""

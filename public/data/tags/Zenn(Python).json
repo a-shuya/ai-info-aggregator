@@ -1,8 +1,118 @@
 {
   "site": "Zenn(Python)",
-  "last_updated": "2026-10-16T00:39:59.472765",
-  "total_articles": 7128,
+  "last_updated": "2026-10-16T05:03:30.975273",
+  "total_articles": 7139,
   "articles": [
+    {
+      "title": "OpenAI whisper-1からModalのfaster-whisperへ：移行手順とメリット・デメリット",
+      "url": "https://zenn.dev/yukiharada1228/articles/3d73fdd92db0fb",
+      "site": "Zenn(Python)",
+      "published": "2026-10-16T01:46:12Z",
+      "description": "OpenAIのwhisper-1 APIで行っていた日本語の文字起こしを、Modal上のfaster-whisperへ移しました。この記事では、移行手順とメリット・デメリットをまとめます。実装例はこちらのコードです。\n\n 結論\n\n\n費用：冒頭5分の日本語講義音声で、OpenAIの料金相当4.80円に対し、Modalの請求額は0.81円（約83%減）でした。\n\n難所：GPUの起動より、バッチ推論で字...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "対話の再訪と進展を、3D表示から切り離して測れるか？",
+      "url": "https://zenn.dev/kotanpolin/articles/topodialogue-measurement-before-shape",
+      "site": "Zenn(Python)",
+      "published": "2026-10-16T01:43:31Z",
+      "description": "同じ話題に戻ったとき、何が増えていたか\nAIとの対話を分析したり、会話ログの可視化を作ったりする研究者・エンジニアに向けた記事です。扱いたいのは、「同じ話題に戻った（堂々巡り）」と「そこで何かが増えた」を、画面に描いた曲線の印象に頼らず区別する方法です。\nたとえば、次の短い会話を考えます。説明用に作った架空の例です。\n\nユーザー：「庭づくりについて考えたい」\nAI：「作業の予定も決めましょう」\nユ...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "subprocess.run(timeout=600) が5時間戻らなかった — Windows の .cmd ラッパーと孫プロセスのパイプ",
+      "url": "https://zenn.dev/mameresearcher/articles/subprocess-timeout-grandchild-holds-pipe",
+      "site": "Zenn(Python)",
+      "published": "2026-10-16T01:16:58Z",
+      "description": "個人の自動化プロジェクトで、記事やSNS投稿の下書きを LLM の CLI に書かせている。Python から CLI を呼ぶ箇所は30か所ほどあり、すべてに timeout= を付けていた。CLI が固まっても、10分で諦めて次に進むつもりだった。\nある日、そのうちの1本が 5時間 止まっていた。Task Scheduler の実行時間の上限に当たって強制終了されるまで、一度も戻ってこなかった(...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "CIは緑、ログは「完了」。でもデータは7ヶ月前から空だった",
+      "url": "https://zenn.dev/marunage_kacho/articles/ci-green-7months",
+      "site": "Zenn(Python)",
+      "published": "2026-10-16T01:13:53Z",
+      "description": "趣味で競馬の予測AIを作っています。毎週土曜に血統データを取りに行くバッチがあって、CIは毎回緑。ログにも「完了」と出ている。だから動いていると思っていました。\nある日ふと最終更新日を見たら、1月で止まっていた。7ヶ月前です。\n今年出走した馬の4頭に1頭、血統が空のまま学習に使われていました。\n\n 何が起きていたか\n原因は、保存先のカラム名とスクレイパーが返すキー名が微妙に違っていたことでした。h...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "単体アプリを別アプリから呼んだら成果物がcwdに吐かれた。Codex 3本並列で直すまで",
+      "url": "https://zenn.dev/cutlet_of_pork/articles/codex-parallel-delegation-finish-tkinter-app",
+      "site": "Zenn(Python)",
+      "published": "2026-10-16T00:16:22Z",
+      "description": "Claude Code にフォルダのパスを一つ貼って「仕上げて」と頼んだ。Tkinter 製の統合ツールで、既存の単体アプリ 3 つを ttk.Notebook のタブとして束ねたやつ。6 タブのうち 2 タブだけ先に完成させたい、と途中で付け足した。\n最初に返ってきた調査結果。\n228 passed in 115.65s (0:01:55)\nテストは全部通ってる。NotImplementedEr...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "Metaの最新オープンモデル「Muse Spark Open」の衝撃と実践",
+      "url": "https://zenn.dev/ament3/articles/ai-digest-2026-10-16-0008",
+      "site": "Zenn(Python)",
+      "published": "2026-10-16T00:09:00Z",
+      "description": "はじめに\nMeta AIが新たに発表したオープンソースAIプロジェクト「Muse Spark Open」が、海外のテックコミュニティ（Hacker Newsなど）で大きな注目を集めています。\n近年、MetaはLlamaシリーズをはじめとする高品質なオープンAIモデルを精力的に公開し、AI技術のオープン化を牽引してきました。今回話題となっている「Muse Spark Open」も、開発者や研究者がロ...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "GitHub AI Scan一般提供：有効化と検査済みをPythonで分ける",
+      "url": "https://zenn.dev/aipha_euro/articles/25ea707968805b",
+      "site": "Zenn(Python)",
+      "published": "2026-10-16T00:05:24Z",
+      "description": "GitHubは2026年10月15日、PR向けのAI Scanを一般提供にしました。PHPやShell、Terraformなど、CodeQLがカバーしていない言語・フレームワークの変更に検出を追加する機能です。導入時に気を付けたいのは、設定が有効であることと、そのPRを検査したことを同じ意味にしない点です。この記事では、実行前の条件をローカルで点検するPythonコードを作ります。一般提供の発表\n...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "エンジニア視点で語る！Pythonで学ぶマクロ経済学入門 76",
+      "url": "https://zenn.dev/maszkot/articles/efa2bb98aceaf0",
+      "site": "Zenn(Python)",
+      "published": "2026-10-15T23:44:21Z",
+      "description": "https://qiita.com/maskot1977/items/a0e5d60c951f0bd0984a\nDJミオ：こんばんは、「エンジニア視点で語る！Pythonで学ぶマクロ経済学入門」。ナビゲーターのDJミオです。\nDJレン：DJレンです。今回は第76回、「相続税・低賃金・移民政策はどうつながるのか？―欧米の教訓から考える成長と財政の設計」を、エンジニアにも分かりやすく、しかもPytho...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "heartbeat を書いているのに、誰も読んでいなかった ― 設定表が3つに分かれていて、新設のジョブ4本が監視から漏れた",
+      "url": "https://zenn.dev/masamitsu_sera/articles/c04870a62c9201",
+      "site": "Zenn(Python)",
+      "published": "2026-10-15T22:30:05Z",
+      "description": "常駐の Mac で launchd のジョブを回し、その死活を外の見張りで見ています。監視の対象にしたジョブは、成功したときなど決めた条件で Google Drive へ時刻を書き（heartbeat）、Google Apps Script（GAS）が朝晩その鮮度を見て、古すぎれば通知します。\n2026年8月21〜22日、月次ジョブの監視の穴を直す作業の中で設定表を突き合わせたところ、heartb...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "五十日の仲値アノマリーを「月の中でラベルを並べ替える」帰無で測り直したら、2023年以降はドル円もクロス円も消えていた",
+      "url": "https://zenn.dev/taichii/articles/5b89606d642114",
+      "site": "Zenn(Python)",
+      "published": "2026-10-15T22:30:05Z",
+      "description": "やったこと: 「五十日（ゴトー日）は、東京仲値の 9:55 に向けてドル円が上がる」という時刻のアノマリーを、Dukascopy の1時間足（2008〜2026年6月）で追試した。五十日とふつうの日の差を Welch の t と月クラスタの t で、クロス円（ユーロ円・ポンド円）への広がりと「仲値前に上がった五十日だけ仲値後に売る」という条件つきの主張を、月の中で五十日のラベルを並べ替える帰無で測...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "Online Vocello",
+      "url": "https://zenn.dev/fygar256/articles/623ed8e1309837",
+      "site": "Zenn(Python)",
+      "published": "2026-10-15T21:38:04Z",
+      "description": "ネットワークで対戦をするオセロゲームです。簡易版で、コンピュータとの対戦はできません。\npython online_vocello.pyとすると画面が立ち上がり、タイトルファイルtitle.jpgがないとサーバ・クライアント選択画面に移り、両プレイヤーでサーバ（黒）か、クライアント（白）を決めます。サーバはTCPポート9801をlistenし、クライアントがサーバに接続をするまで待ちます。クライア...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
     {
       "title": "受託開発の見積もりを三点見積（PERT）で出す：Python10行と「スコープ外」の書き方",
       "url": "https://zenn.dev/aishigoto/articles/pert-three-point-estimate-python",
