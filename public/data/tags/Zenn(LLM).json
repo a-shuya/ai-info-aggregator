@@ -1,14 +1,34 @@
 {
   "site": "Zenn(LLM)",
-  "last_updated": "2026-10-16T23:47:09.468789",
-  "total_articles": 6782,
+  "last_updated": "2026-10-17T01:38:01.753722",
+  "total_articles": 6785,
   "articles": [
+    {
+      "title": "エージェントの経験を知識に変えてスキルを育てる WikiSkill の三層構造",
+      "url": "https://zenn.dev/suwash/articles/wikiskill_20261015",
+      "site": "Zenn(LLM)",
+      "published": "2026-10-16T15:00:00Z",
+      "description": "WikiSkill は、エージェントの実行経験を永続的な知識ベース（wiki）にまとめ、その知識を使って手続きスキルを進化させる Google Research と Virginia Tech の論文（arXiv:2608.27454v1、Tang et al.、2026-08-27 提出、CC BY 4.0）です。この記事では、三層ワークスペースと 4 要素のループ、データの持ち方、実験結果、実...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
     {
       "title": "開発に使うAIモデルのコストと性能の最適化に挑戦（3）：OpenCode Goの月の上限をほぼ使い切ったので、内訳を調べて選び方を探った話",
       "url": "https://zenn.dev/petittomato/articles/ai-model-cost-performance-3",
       "site": "Zenn(LLM)",
       "published": "2026-10-16T14:50:50Z",
       "description": "このシリーズでは、Claude Opusと同じ結果を、なるべく安く手に入れる方法を探しています。題材は、自宅のAIエージェントがテレビを操作するためのコマンドの開発です。\n（1）では、低価格モデルに開発を任せました。テスト結果を見せて1回直させる方法が、いちばん安く満点に届いています。（2）では、Opusに設計書を書かせても、安くはなりませんでした。\n低価格モデルは、OpenCode Goから使っ...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "RAGの検索結果が毎回違う — top_k明示・同点の決定打・スナップショット隔離の3点で再現性を取る",
+      "url": "https://zenn.dev/yukihayama/articles/rag-topk-index-drift",
+      "site": "Zenn(LLM)",
+      "published": "2026-10-16T13:21:50Z",
+      "description": "RAGの検索結果が毎回違う — top_k明示・同点の決定打・スナップショット隔離の3点で再現性を取る\n社内ナレッジを検索する RAG を本番運用に載せてから 2 週間で、営業チームから静かなクレームが上がった。 同一質問 なのに、昨日と今日で参照ドキュメントが入れ替わる、という内容だ。生成側は temperature を 0 に固定しており、プロンプトもモデルも変えていない。つまり揺らいでいるの...",
       "category": "AI・技術",
       "rss_category": "",
       "image_url": ""
@@ -29,6 +49,36 @@
       "site": "Zenn(LLM)",
       "published": "2026-10-16T12:41:14Z",
       "description": "はじめに\nOpenCodeが、DeepSeek V4.1 Flashを無料枠で提供し始めた。DeepSeek本体のAPIは無料枠を持たず従量課金なので、素朴に「なぜタダで配れるのか」が気になった。\nそこで、その疑問をそのまま OpenCode上の無料DeepSeekに記事として書かせてみた。書かせたのは、個人のデジタルガーデンに置く一本のノートだ。\n👉 なぜOpenCodeはDeepSeekを無料...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "OpenAI SDK のコードを Grok API に移したら、変更は2か所・費用は計測できた分で約$0.16だった",
+      "url": "https://zenn.dev/fk2000/articles/grok-api-openai-sdk",
+      "site": "Zenn(LLM)",
+      "published": "2026-10-16T12:39:50Z",
+      "description": "結論（先に）\n\nOpenAI SDK のコードから変更が必要だった箇所：api_key と base_url の2か所だけ（4本とも、ほかの変更なしで動きました）\n検証にかかった費用の合計：約 $0.164（API の usage に返ってきた金額の合計。stream.py の分は含みません）。うち約 $0.153 が検索ありの1回でした\nWeb 検索ツールの有無による違い：検索なしは「確認できる...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "Claude Code に記録から記事を書かせて、事実を外さない手順（テンプレート付き）",
+      "url": "https://zenn.dev/tasukina/books/claude-code-records-fact-check",
+      "site": "Zenn(LLM)",
+      "published": "2026-10-16T11:04:34Z",
+      "description": "AI に git の履歴・課題票・会話の写しから技術記事や本を書かせると、文のどこで事実を外すか。実際に書いて公開した記事と本の原稿で見つかった30件の食いちがいを外し方の7つの型（A〜G）に分け、見つけて直した段取りを、材料の範囲の表・体験メモ・出典の表・確かめの依頼・直しの承認依頼・公開前の点検の一覧の6つのテンプレートとしてわたす手順書です。この本は Claude Code が会社の記録をも...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "AI前提の開発組織をつくる — 3つの個人リポジトリで検証した権限設計・マージ条件・ガードレール",
+      "url": "https://zenn.dev/yukamiya/articles/claude-harness-engineering-three-repos",
+      "site": "Zenn(LLM)",
+      "published": "2026-10-16T09:19:51Z",
+      "description": "TL;DR\n\n個人リポジトリ 3 つ（ポッドキャスト運用 / 個人サイト運用 / 収益化ツール開発）を実験場に、企画からマージ・運用までの開発プロセスを AI に自律実行させる仕組みを 1 ヶ月半かけて組みました\n権限は最初から渡さず、Can（届く範囲）/ May（実行時の承認）/ Act（ゲートを通って初めて効力を持つ） の 3 層で段階的に earn させる設計にしています\nマージ条件を機械可...",
       "category": "AI・技術",
       "rss_category": "",
       "image_url": ""
@@ -64,16 +114,6 @@
       "image_url": ""
     },
     {
-      "title": "[Implementation] Variable Lead Angle Worm Gear Attention:",
-      "url": "https://zenn.dev/nanashi_os/articles/8823d66e42f3e9",
-      "site": "Zenn(LLM)",
-      "published": "2026-10-16T06:26:23Z",
-      "description": "title: \"[Implementation] Variable Lead Angle Worm Gear Attention: PyTorch Implementation for Context Control\"\nemoji: \"⚙️\"\ntype: \"tech\"\ntopics: [\"pytorch\", \"python\", \"llm\", \"controltheory\", \"algorithm\"...",
-      "category": "AI・技術",
-      "rss_category": "",
-      "image_url": ""
-    },
-    {
       "title": "AIの同時実行数を1から50へ：LLM処理をLaravelのキューワーカーから7MBのGoゲートウェイに移した話⚡",
       "url": "https://zenn.dev/doublecheck/articles/e026f86282e181",
       "site": "Zenn(LLM)",
@@ -89,16 +129,6 @@
       "site": "Zenn(LLM)",
       "published": "2026-10-16T06:03:59Z",
       "description": "はじめに\n\n「langchaingo を v0.1.15 に上げても、去年書いた RAG はそのまま動くのか？」。依存の更新 PR を前にして、ここで手が止まっていないでしょうか。\nGo 向けの LLM フレームワーク LangChainGo（github.com/tmc/langchaingo）[1] の v0.1.15 が、2026年10月5日（JST）に公開されました。前の安定版 v0.1....",
-      "category": "AI・技術",
-      "rss_category": "",
-      "image_url": ""
-    },
-    {
-      "title": "Strata でできること：ローカル LLMの実行とアプリ連携",
-      "url": "https://zenn.dev/jtcc/articles/strata-local-llm-app-integration",
-      "site": "Zenn(LLM)",
-      "published": "2026-10-16T05:57:00Z",
-      "description": "こんにちは。株式会社日本トレカセンターの田島です。\nローカル LLM を使うとき、最初の目標は「手元の PC で回答を生成できること」です。しかし、開発で利用するなら、その先も気になります。\n仕様書から条件を抽出できるか。既存のアプリから呼び出せるか。長い資料を渡したとき、どれくらい待つのか。\n本記事では、Strata を使ったローカル LLM の実行と、API を通じたアプリ連携を紹介します。さ...",
       "category": "AI・技術",
       "rss_category": "",
       "image_url": ""

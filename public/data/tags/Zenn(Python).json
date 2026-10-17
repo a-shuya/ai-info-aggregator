@@ -1,8 +1,18 @@
 {
   "site": "Zenn(Python)",
-  "last_updated": "2026-10-16T23:47:09.468789",
-  "total_articles": 7154,
+  "last_updated": "2026-10-17T01:38:01.753722",
+  "total_articles": 7157,
   "articles": [
+    {
+      "title": "3Dデータの処理基盤をTemporalに全面移行した話",
+      "url": "https://zenn.dev/bestat/articles/7106fdf2f399e1",
+      "site": "Zenn(Python)",
+      "published": "2026-10-16T22:10:51Z",
+      "description": "はじめに\n私たちは、3D.Coreという産業（主に製造業・インフラ業）向けの3Dモデル生成・活用プラットフォームを開発しています。3D.Coreの裏側では、お客様がアップロードしたデータに対して、例えば次のような処理が動いています。\n\nスマホアプリで撮影した画像から、3Dモデルを生成する\nアップロードされた点群を、ブラウザで表示できる形式に変換したり、メッシュにしたりする\n3Dデータの最適化や解析...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
     {
       "title": "設計標準書からレビュー用チェックリストを自動生成する",
       "url": "https://zenn.dev/kensudo1203/articles/1988b9999d48b1",
@@ -29,36 +39,6 @@
       "site": "Zenn(Python)",
       "published": "2026-10-16T13:42:27Z",
       "description": "バイクで日帰りする周回ルートを5本、静岡の清水駅発着で組みました。知りたかったのは2つです。\n\n朝に出て、夕方までに帰ってこられるか（走行時間）\nルートで一番高い所は何℃か（秋から冬に、峠で凍えないか）\n\n走行時間は Google の Routes API で出し、気温は「平地の最高気温から、100m上がるごとに0.6℃引く」という目安で出しました。途中で何度か引っかかったので、そのつど実験して確...",
-      "category": "開発",
-      "rss_category": "",
-      "image_url": ""
-    },
-    {
-      "title": "科学研究向けAgent Skills集を試す: 統計スキルは「結論」ではなく「裏付けの質」を変えた",
-      "url": "https://zenn.dev/matsushima_a/articles/day-017-scientific-agent-skills-stat-review",
-      "site": "Zenn(Python)",
-      "published": "2026-10-16T13:39:10Z",
-      "description": "筆者は海外のAI関連ニュースを毎日1本検証して発信するチャレンジの17日目として、K-Dense-AI/scientific-agent-skills(MIT、旧Claude Scientific Skills)を検証した。生物学・化学・医学・物理・データ解析など幅広い研究分野をカバーするAgent Skills集で、実際に数えたところ177種のスキルが収録されていた。\n結論から書く。statis...",
-      "category": "開発",
-      "rss_category": "",
-      "image_url": ""
-    },
-    {
-      "title": "RAGの検索結果が毎回違う — top_k明示・同点の決定打・スナップショット隔離の3点で再現性を取る",
-      "url": "https://zenn.dev/yukihayama/articles/rag-topk-index-drift",
-      "site": "Zenn(Python)",
-      "published": "2026-10-16T13:21:50Z",
-      "description": "RAGの検索結果が毎回違う — top_k明示・同点の決定打・スナップショット隔離の3点で再現性を取る\n社内ナレッジを検索する RAG を本番運用に載せてから 2 週間で、営業チームから静かなクレームが上がった。 同一質問 なのに、昨日と今日で参照ドキュメントが入れ替わる、という内容だ。生成側は temperature を 0 に固定しており、プロンプトもモデルも変えていない。つまり揺らいでいるの...",
-      "category": "開発",
-      "rss_category": "",
-      "image_url": ""
-    },
-    {
-      "title": "OpenAI SDK のコードを Grok API に移したら、変更は2か所・費用は計測できた分で約$0.16だった",
-      "url": "https://zenn.dev/fk2000/articles/grok-api-openai-sdk",
-      "site": "Zenn(Python)",
-      "published": "2026-10-16T12:39:50Z",
-      "description": "結論（先に）\n\nOpenAI SDK のコードから変更が必要だった箇所：api_key と base_url の2か所だけ（4本とも、ほかの変更なしで動きました）\n検証にかかった費用の合計：約 $0.164（API の usage に返ってきた金額の合計。stream.py の分は含みません）。うち約 $0.153 が検索ありの1回でした\nWeb 検索ツールの有無による違い：検索なしは「確認できる...",
       "category": "開発",
       "rss_category": "",
       "image_url": ""
@@ -94,6 +74,36 @@
       "image_url": ""
     },
     {
+      "title": "AIエージェントに無人で書き込ませる前の実装ガイド ― 二重送信・暴走・夜間停止を防ぐPython",
+      "url": "https://zenn.dev/neuralalpha/books/agent-ops-guide",
+      "site": "Zenn(Python)",
+      "published": "2026-10-16T07:56:06Z",
+      "description": "AIエージェント・ボット・定期ジョブに、人が見ていない状態で投稿・送信・公開・支払いをさせる前に入れておく仕組みを、実際に起きた失敗と、Python標準ライブラリだけで書けるコードで解説します。記録帳（attempt/sent/unknown）、緊急停止、1日の上限と最小間隔、アカウント確認、死活監視、費用メーター、再現可能な納品ZIP、Windows・夜間実行の落とし穴、Claude Code自...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "手で動かすと動くのに、夜中の自動実行だけ落ちるPython（Windows・cp932）の確認リスト",
+      "url": "https://zenn.dev/neuralalpha/articles/windows-night-job-ja",
+      "site": "Zenn(Python)",
+      "published": "2026-10-16T07:55:53Z",
+      "description": "Claude Code で作った小さな自動運用（予約投稿・商品の集計・夜間のログ記録）を、Windows のタスクスケジューラで動かしています。\n無人で動かしていた夜中のジョブが、UnicodeEncodeError で止まったことがあります。手で実行したときは毎回正常に動いていたスクリプトです。\n原因は、コンソールの文字コード（cp932）が、ログに含まれる文字を出力できなかったことでした。手で...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "Claude Code に「緊急停止」と「危険コマンドのブロック」を足すプラグインを作った（標準ライブラリのみ）",
+      "url": "https://zenn.dev/neuralalpha/articles/claude-code-guardrails-plugin-ja",
+      "site": "Zenn(Python)",
+      "published": "2026-10-16T07:55:52Z",
+      "description": "Claude Code に作業を任せていると、「今の、止めたかった」という瞬間があります。私の場合は、予約投稿や商品の公開など外部に書き込む作業を任せているので、止めたいときに確実に止まる仕組みが欲しくなりました。\nそこで、Claude Code の フック（PreToolUse / PostToolUse） を使って、書き込み系のツール呼び出しにガードを掛けるプラグインを作りました。Python...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
       "title": "Decision Model「JPT-4B」を試してみる：Colabのテトリスを自動で動かすハンズオン",
       "url": "https://zenn.dev/nakanishitf/articles/0053291ad09f3b",
       "site": "Zenn(Python)",
@@ -119,6 +129,26 @@
       "site": "Zenn(Python)",
       "published": "2026-10-16T06:38:24Z",
       "description": "開発会議のあとに残る「誰かが Issue にしておく」は、ささやかですが抜けやすい仕事です。\n今回、この作業を減らすために meeting-watcher を作りました。Google Docs の議事録から実行すると決まった Next Action を Gemini で抽出し、Slack に届けます。ただし、Slack 投稿から Issue 作成までを自動でつなぐのではありません。人が内容を確認し...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "[Implementation] Variable Lead Angle Worm Gear Attention:",
+      "url": "https://zenn.dev/nanashi_os/articles/8823d66e42f3e9",
+      "site": "Zenn(Python)",
+      "published": "2026-10-16T06:26:23Z",
+      "description": "title: \"[Implementation] Variable Lead Angle Worm Gear Attention: PyTorch Implementation for Context Control\"\nemoji: \"⚙️\"\ntype: \"tech\"\ntopics: [\"pytorch\", \"python\", \"llm\", \"controltheory\", \"algorithm\"...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "Strata でできること：ローカル LLMの実行とアプリ連携",
+      "url": "https://zenn.dev/jtcc/articles/strata-local-llm-app-integration",
+      "site": "Zenn(Python)",
+      "published": "2026-10-16T05:57:00Z",
+      "description": "こんにちは。株式会社日本トレカセンターの田島です。\nローカル LLM を使うとき、最初の目標は「手元の PC で回答を生成できること」です。しかし、開発で利用するなら、その先も気になります。\n仕様書から条件を抽出できるか。既存のアプリから呼び出せるか。長い資料を渡したとき、どれくらい待つのか。\n本記事では、Strata を使ったローカル LLM の実行と、API を通じたアプリ連携を紹介します。さ...",
       "category": "開発",
       "rss_category": "",
       "image_url": ""
