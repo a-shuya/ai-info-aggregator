@@ -1,7 +1,7 @@
 {
   "site": "Zenn(Python)",
-  "last_updated": "2026-10-17T14:07:35.731916",
-  "total_articles": 7174,
+  "last_updated": "2026-10-17T17:08:32.686389",
+  "total_articles": 7173,
   "articles": [
     {
       "title": "決算イベントの日時を変換するとき、tickerからタイムゾーンを決めない",
@@ -19,26 +19,6 @@
       "site": "Zenn(Python)",
       "published": "2026-10-17T11:25:13Z",
       "description": "不動産の契約実務で使う書式（契約書・重要事項説明書・付帯設備表など）は、業界団体が配る雛形を\nそのまま使います。これを共有フォルダに置いたまま走査して、入力欄つきの台帳を作り、\n画面から選んで値を流し込むツールを作りました。実測で 201本・13分類あります。\n雛形をアプリに同梱しない理由は単純で、団体が版を更新するからです。置き場から毎回読めば追従します。\nその代わり、置き場の構造がそのまま分類...",
-      "category": "開発",
-      "rss_category": "",
-      "image_url": ""
-    },
-    {
-      "title": "対話イベントを変換するとき、欠落と訂正をどう記録するか？",
-      "url": "https://zenn.dev/kotanpolin/articles/topodialogue-event-conversion-audit",
-      "site": "Zenn(Python)",
-      "published": "2026-10-17T11:02:07Z",
-      "description": "TopoDialogueとは\nTopoDialogue（トポダイアログ）は、人とAIの会話が、同じ話題に戻ったり、新しい見方へ進んだりする様子を、あとから確かめられる記録にする研究です。たとえば、同じ話を繰り返していても、前と同じところで止まっているのか、言い直して少し先へ進んだのかは違います。その違いを、会話のどの部分を根拠にしたかと一緒に扱います。\n今回取り上げるのは、その中でも「会話を記録へ...",
-      "category": "開発",
-      "rss_category": "",
-      "image_url": ""
-    },
-    {
-      "title": "Kaggleの作業で「うっかり提出」をなくす：Kaggle CLIと確認ラッパーと、本番と同じハードで測る話",
-      "url": "https://zenn.dev/koheip/articles/kaggle-safe-submit-workflow",
-      "site": "Zenn(Python)",
-      "published": "2026-10-17T10:29:54Z",
-      "description": "はじめに\nKaggleの作業を、LLMのエージェントやスクリプトに手伝ってもらいながら進めています。自動化すると楽になる反面、「確認しないまま提出まで進んでしまう」ような事故も起きかけました。\nこの記事では、Kaggle CLIでノートブックを扱う方法と、人の確認を必ず挟むためのラッパー、それから検証環境と本番環境の違いで学んだことをまとめます。\n\n 1. Kaggle CLIでノートブックの状態...",
       "category": "開発",
       "rss_category": "",
       "image_url": ""
@@ -189,6 +169,16 @@
       "site": "Zenn(Python)",
       "published": "2026-10-16T23:59:49Z",
       "description": "3行まとめ\n\nRakuScan（自分用の投資分析ツール）で月次のユニバース（スクリーニング対象銘柄群）再構築後、日次バッチがToo many open filesで落ちた\n原因をたどると、本来200銘柄前後のはずのユニバースが679銘柄まで膨張していた。フィルタの「データ取得不可なら通過させる」という一行のコメントが、実質的にフィルタを無効化していた\n原因を直しただけでは再発防止として不十分と判断...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "AIの応答を待つ間に元データが変わったら？ Firestoreで古い改定案を確定させない設計",
+      "url": "https://zenn.dev/yun_bow/articles/72433e0a2d061f",
+      "site": "Zenn(Python)",
+      "published": "2026-10-16T23:00:05Z",
+      "description": "はじめに\n「AIに開発ルールの改定案を依頼した。その応答を待っている間に、別の人が新しいルールを承認した」\nAIは正常に応答し、JSONの形式も正しい。本文も、依頼した時点のルールには合っている。しかし、その回答を今のルールに対する提案として保存してよいとは限らない。\nAIの応答が成功したことと、その判断に使った前提がまだ有効であることは別だ。\n開発ルールを管理するRule Branchでは、改定...",
       "category": "開発",
       "rss_category": "",
       "image_url": ""
