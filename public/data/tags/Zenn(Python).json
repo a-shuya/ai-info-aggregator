@@ -1,8 +1,58 @@
 {
   "site": "Zenn(Python)",
-  "last_updated": "2026-10-17T17:08:32.686389",
-  "total_articles": 7173,
+  "last_updated": "2026-10-17T19:23:38.527916",
+  "total_articles": 7177,
   "articles": [
+    {
+      "title": "RAGチャットボットが出典つきで嘘をついた日 ― ありがちな事故を全部詰め込んだ架空のポストモーテム",
+      "url": "https://zenn.dev/zumiraku/articles/df23687030e149",
+      "site": "Zenn(Python)",
+      "published": "2026-10-17T14:13:05Z",
+      "description": "社員A：今年の夏季休暇って何日ですか？\nボット：夏季休暇は5日間です。\n　　　　（出典：就業規則_2023.pdf 12ページ）\n社員A：ありがとうございます！\n正解は3日でした。\n2026年度から制度が変わって、夏季休暇は3日になり、その代わりに好きな時期に取れる休暇が2日増えていた。ボットは古い版の就業規則を、ページ番号まで添えて、とても丁寧に読み上げたわけです。\n出典がない嘘は疑ってもらえま...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "Pillowで画像入力を検証する：最小辺240pxとアスペクト比チェック",
+      "url": "https://zenn.dev/mixvioai/articles/cb5e6c246380ff",
+      "site": "Zenn(Python)",
+      "published": "2026-10-17T13:52:36Z",
+      "description": "Pillowで画像入力を検証する：最小辺240pxとアスペクト比チェック\n画像をアップロードさせるサービスでは、サーバー側に届いた画像を処理する前に「そもそも処理できる画像か」を確認したくなります。ファイル形式、最小サイズ、極端な縦横比などを最初に弾いておけば、後段の処理で原因の分かりにくい失敗が減ります。\nこの記事では、Python の画像ライブラリ Pillow を使って、次の4つを検証する関...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "LangChainの会話で最初の指示が消える — 固定指示分離・token管理・要約圧縮の3段構え",
+      "url": "https://zenn.dev/yukihayama/articles/langchain-history-window-trim",
+      "site": "Zenn(Python)",
+      "published": "2026-10-17T13:22:43Z",
+      "description": "LangChainの会話で最初の指示が消える — 固定指示分離・token管理・要約圧縮の3段構え\n顧客対応ボットをLangChainで運用し始めて2週間、AIが最初に決めた出力ルールを無視するようになった。表形式で出す約束を破り、途中から自由文で返答し始めた。ログを辿った結果、原因はtrim_messagesによる履歴の切り詰めだった。trimは直近を優先（strategy=\"last\"）で古い...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "gemini embedding 2 による資料の類似性は見た目で決まる？ 内容で決まる？ PDF と画像で検証してみた",
+      "url": "https://zenn.dev/bekku/articles/bdf265a70d27be",
+      "site": "Zenn(Python)",
+      "published": "2026-10-17T12:26:03Z",
+      "description": "!\nこの記事は、「2026/03/21に公開した記事」を誤って削除してしまったものを復元したものです🥲\n\n前回、gemini-embedding-2 を使って、OCR しづらい資料でもそれっぽく近いものを拾えそう、という話を書きました。\nhttps://zenn.dev/bekku/articles/5fcbeae4ec5afb\n今回はその続きとして、もう少し気になっていたことを試しました。\nそれ...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "正規表現の一括置換でコード内の記号まで壊した話と、それを防ぐ退避パターン",
+      "url": "https://zenn.dev/anikuma/articles/regex-codeblock-stash-restore",
+      "site": "Zenn(Python)",
+      "published": "2026-10-17T12:16:54Z",
+      "description": "公開記事に、生の ** が残っていた\n私は副業で、AIに記事のHTMLを書かせてブログ（WordPress）へ投稿するパイプラインを動かしています。あるとき公開済みの記事を見直すと、本文に **&lt;code&gt;...&lt;/code&gt;** のような生のMarkdown太字が、変換されないまま表示されていました。LLMがHTMLを出力する途中に、Markdownの書き方を混ぜてしまっ...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
     {
       "title": "決算イベントの日時を変換するとき、tickerからタイムゾーンを決めない",
       "url": "https://zenn.dev/signumhq/articles/beb1a2e5a1b3c2",
@@ -169,16 +219,6 @@
       "site": "Zenn(Python)",
       "published": "2026-10-16T23:59:49Z",
       "description": "3行まとめ\n\nRakuScan（自分用の投資分析ツール）で月次のユニバース（スクリーニング対象銘柄群）再構築後、日次バッチがToo many open filesで落ちた\n原因をたどると、本来200銘柄前後のはずのユニバースが679銘柄まで膨張していた。フィルタの「データ取得不可なら通過させる」という一行のコメントが、実質的にフィルタを無効化していた\n原因を直しただけでは再発防止として不十分と判断...",
-      "category": "開発",
-      "rss_category": "",
-      "image_url": ""
-    },
-    {
-      "title": "AIの応答を待つ間に元データが変わったら？ Firestoreで古い改定案を確定させない設計",
-      "url": "https://zenn.dev/yun_bow/articles/72433e0a2d061f",
-      "site": "Zenn(Python)",
-      "published": "2026-10-16T23:00:05Z",
-      "description": "はじめに\n「AIに開発ルールの改定案を依頼した。その応答を待っている間に、別の人が新しいルールを承認した」\nAIは正常に応答し、JSONの形式も正しい。本文も、依頼した時点のルールには合っている。しかし、その回答を今のルールに対する提案として保存してよいとは限らない。\nAIの応答が成功したことと、その判断に使った前提がまだ有効であることは別だ。\n開発ルールを管理するRule Branchでは、改定...",
       "category": "開発",
       "rss_category": "",
       "image_url": ""
