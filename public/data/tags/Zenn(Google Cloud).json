@@ -1,8 +1,48 @@
 {
   "site": "Zenn(Google Cloud)",
-  "last_updated": "2026-10-17T10:56:39.708688",
-  "total_articles": 2014,
+  "last_updated": "2026-10-17T14:07:35.731916",
+  "total_articles": 2019,
   "articles": [
+    {
+      "title": "Data Engineering Agentで既存パイプラインを改修・移行する",
+      "url": "https://zenn.dev/web_benriya/articles/bigquery-data-engineering-agent-migration",
+      "site": "Zenn(Google Cloud)",
+      "published": "2026-10-17T10:18:18Z",
+      "description": "既存パイプラインの改修はなぜ難しいのか\nBigQueryで運用を続けているデータパイプラインには、次のような課題が蓄積しやすい。\n\nスケジュールクエリが増えすぎて依存関係が把握できない\n旧来のML.GENERATE_TEXTを使っているためAI.*関数へ移行したい\n書いた担当者が離れ、意図が読めないSQLが残っている\nパーティション設計が古く、コストが増え続けている\n\nこうした改修や移行作業は、影...",
+      "category": "クラウド",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "Cloud SQL MySQL 8.0→8.4 インプレースアップグレードのダウンタイムを実測(シングルゾーン vs HA)",
+      "url": "https://zenn.dev/toge510/articles/3ee1f43e8ab901",
+      "site": "Zenn(Google Cloud)",
+      "published": "2026-10-17T10:01:12Z",
+      "description": "はじめに\nCloud SQL for MySQL を 8.0 から 8.4 にインプレースでメジャーバージョンアップグレードするとき、どのくらい接続できなくなるのかを実測しました。シングルゾーン構成と、マルチゾーンの高可用性(HA)構成で比べています。\n「HA ならフェイルオーバーで止まらずに済むのでは」と期待していましたが、結果は逆でした。\n\n 結論\n\n\n\n\n\nシングルゾーン\nHA(マルチゾーン...",
+      "category": "クラウド",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "「合鍵」を全部数えたら、使っていないものが18個あった ─ 個人開発の権限（IAM）棚卸し",
+      "url": "https://zenn.dev/miki_mini/articles/062146cd10b244",
+      "site": "Zenn(Google Cloud)",
+      "published": "2026-10-17T08:00:05Z",
+      "description": "美容系勤務独学初心者マリー・アントワネット系エンジニア目指してます！\n今回は 「合鍵が多すぎて管理できない」 なら 使っていない合鍵は捨てればいいじゃない 👸🍰です。\n\n読了時間の目安：約 10分\n\n!\n3行まとめ\n\n個人開発の私が、クラウドとサーバーに渡している 「合鍵」を全部数えたら、使っていないものが18個 出てきました。その中には、作ってから 1年近く生きていて、この1か月は一度も使われて...",
+      "category": "クラウド",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "3Dデータの処理基盤をTemporalに全面移行した話",
+      "url": "https://zenn.dev/bestat/articles/7106fdf2f399e1",
+      "site": "Zenn(Google Cloud)",
+      "published": "2026-10-16T22:10:51Z",
+      "description": "はじめに\n私たちは、3D.Coreという産業（主に製造業・インフラ業）向けの3Dモデル生成・活用プラットフォームを開発しています。3D.Coreの裏側では、お客様がアップロードしたデータに対して、例えば次のような処理が動いています。\n\nスマホアプリで撮影した画像から、3Dモデルを生成する\nアップロードされた点群を、ブラウザで表示できる形式に変換したり、メッシュにしたりする\n3Dデータの最適化や解析...",
+      "category": "クラウド",
+      "rss_category": "",
+      "image_url": ""
+    },
     {
       "title": "HomeGuardian：住宅仕様を 30 年のライフサイクルコストと温熱環境で比較する｜第5回 Agentic AI Hackathon",
       "url": "https://zenn.dev/sky_road/articles/2e79eacbfad2a9",
@@ -59,6 +99,16 @@
       "site": "Zenn(Google Cloud)",
       "published": "2026-10-16T07:17:34Z",
       "description": "ハッカソンの作品、提出して終わりじゃもったいない！\n第5回 Agentic AI Hackathon with Google Cloud、参加された皆さん、運営の皆さん、お疲れさまでした！\nハッカソンの作品を見て回るのは楽しいですね。\n自分では思いつかなかったアイデアや、知らなかった技術の使い方に出会えます。\nただ、作品がたくさん集まっているからこそ、ちょっともったいないなと思ったことがあります。...",
+      "category": "クラウド",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "議事録から開発タスクへ。人の承認を挟む meeting-watcher の設計",
+      "url": "https://zenn.dev/yukamiya/articles/meeting-watcher-architecture",
+      "site": "Zenn(Google Cloud)",
+      "published": "2026-10-16T06:38:24Z",
+      "description": "開発会議のあとに残る「誰かが Issue にしておく」は、ささやかですが抜けやすい仕事です。\n今回、この作業を減らすために meeting-watcher を作りました。Google Docs の議事録から実行すると決まった Next Action を Gemini で抽出し、Slack に届けます。ただし、Slack 投稿から Issue 作成までを自動でつなぐのではありません。人が内容を確認し...",
       "category": "クラウド",
       "rss_category": "",
       "image_url": ""
