@@ -1,14 +1,84 @@
 {
   "site": "Zenn(LLM)",
-  "last_updated": "2026-10-18T01:25:55.658804",
-  "total_articles": 6808,
+  "last_updated": "2026-10-18T06:26:58.381233",
+  "total_articles": 6815,
   "articles": [
+    {
+      "title": "AI エージェントに個人の記憶を任せるときの、書かせない・漏らさない仕組み",
+      "url": "https://zenn.dev/ketoranger/articles/agent-memory-security",
+      "site": "Zenn(LLM)",
+      "published": "2026-10-18T05:06:44Z",
+      "description": "1台の Mac の上に「Workspace」という1つのフォルダを作り、その中で Claude Code・Codex と定時処理に、自分の記憶・タスク・道具の手入れを任せています。仕組みの全体は前の記事に書きました。\nhttps://zenn.dev/ketoranger/articles/workspace-ai-agents-memory\nエージェントは、メールやチャットの本文、会話の記録、ブ...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "「オントロジー」の説明が資料ごとに違うのはなぜか――原論文を読んで系譜を整理した",
+      "url": "https://zenn.dev/bamboo_nova/articles/f2654d46f9dee2",
+      "site": "Zenn(LLM)",
+      "published": "2026-10-18T04:58:55Z",
+      "description": "オントロジーの「流派」を整理する：Gruber から OWL、形式的オントロジー、Palantir、LLM まで\n「オントロジー」という言葉は、読む資料によって説明が少しずつ違います。is-a 関係と属性を分けて説明する本もあれば、クラス・プロパティ・公理で説明する記事もあります。最近は Palantir のように、業務を動かす仕組みをオントロジーと呼ぶ製品もあります。LLM やエージェントの文脈...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "Amazon Bedrock に機密情報を入れるために確認した20項目",
+      "url": "https://zenn.dev/hiroshi_imaoku/articles/e1f1eb9554126d",
+      "site": "Zenn(LLM)",
+      "published": "2026-10-18T04:22:32Z",
+      "description": "!\nこの記事は、Qiita に公開した記事の転載です。原本は次のとおりです。\nAmazon Bedrock に機密情報を入れるために確認した20項目\n\nAmazon Bedrock（以下、「Bedrock」といいます）とは、AWS が提供する生成AIの基盤です。AWS の内側に大規模言語モデル（LLM）が設置されており、利用者はモデルを呼び出して自社のシステムに組み込むことができます。Anthro...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "黙って考え、言葉で動く──HybridAgentが潜在推論とテキスト行動を単一の生成過程で切り替える仕組み",
+      "url": "https://zenn.dev/lixian/articles/hybrid-agents-latent-text-reasoning",
+      "site": "Zenn(LLM)",
+      "published": "2026-10-18T02:00:30Z",
+      "description": "TL;DR\nLLMエージェントの推論も行動も、いまなお「テキスト」という一つの共通語の上に載っている。途中の思考をすべてトークンとして書き出し、読み込み直して、それから動く。一方で、思考をトークンに下ろさず隠れ状態のまま回す潜在推論（latent reasoning）は計算効率に優れるものの、ツールを呼べないし、外から読むこともできない。この二つの流れは、必要とする媒体が違うために、これまで一つの...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "巨大なプロンプトの末尾に置いた1行は、4回とも無視された",
+      "url": "https://zenn.dev/orca_forge/articles/one-line-in-a-huge-prompt",
+      "site": "Zenn(LLM)",
+      "published": "2026-10-18T01:00:09Z",
+      "description": "📝 この記事は forge.workstyle.tech に掲載した記事の転載です。\n\n音声対話アバターに、こういう会話をした。\n👤 この24時間アバターはどういう仕組みで動いてるの?  → 全体を説明\n👤 さっきのPod起動ってどういうこと?                → また全体の説明\n👤 それをもうちょっと詳しく教えて。                 → また全体の説明\n掘り下げようと...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
     {
       "title": "【チャットシステム設計ノート #05】RAGを採用するべきか",
       "url": "https://zenn.dev/kon2300/articles/91e6f49ba6a567",
       "site": "Zenn(LLM)",
       "published": "2026-10-17T23:00:05Z",
       "description": "1. はじめに\nチャットシステムを設計するとき、社内文書やデータベースの情報をLLMに参照させるために、RAG（Retrieval-Augmented Generation：検索拡張生成）を採用するかどうか。\n重要なのは、チャットシステムを作るなら、必ずRAGが必要というわけではないという点だ。\n質問の種類によって、適切な方式は異なる。\n\n一般的な質問に答えるなら、LLM単体で十分な場合がある。\n...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "「止める基準」を“誰が・いつ・なぜ”まで記録する ― 複数AIエージェント運用における承認ログとロールバック設計",
+      "url": "https://zenn.dev/taichiendoh/articles/ai-agent-approval-log-rollback-design",
+      "site": "Zenn(LLM)",
+      "published": "2026-10-17T22:20:25Z",
+      "description": "複数のAIエージェント・開発ツールを並列で動かす運用が広がるにつれ、「誰がどの行動を承認したか」「おかしければどう戻すか」という設計の議論も増えてきました。たとえば、承認は実行される行動そのものの内容に対して紐づけるべきで、後から行動の内容が変わったら承認は無効にすべきだという指摘があります（hackernoon.com）。また、エージェントの変更を一つひとつ版管理し、「何が変わったか・誰（何）が...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "Tech Watch 2026-10-18: 検証可能性から組む",
+      "url": "https://zenn.dev/laiken/articles/20261018-tech-watch",
+      "site": "Zenn(LLM)",
+      "published": "2026-10-17T21:12:01Z",
+      "description": "AIが書きました🤖\nこの記事は、AIが書いたものをAIがレビューしてから公開しています。\nL: コードレビューを最後の関門ではなく、書いている最中の継続的な検査にする、という話が気になった。人が全部読むことを安全性の代理にしてきたけれど、生成量が増えたら成立しない。では、人はどこに残るべきなんだろう。\n\n 今日の 10 件\n\n\nClaude Code 2.1.302\nClaude Code 2.1...",
       "category": "AI・技術",
       "rss_category": "",
       "image_url": ""

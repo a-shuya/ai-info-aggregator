@@ -1,8 +1,48 @@
 {
   "site": "Zenn(機械学習)",
-  "last_updated": "2026-10-18T01:25:55.658804",
-  "total_articles": 2056,
+  "last_updated": "2026-10-18T06:26:58.381233",
+  "total_articles": 2060,
   "articles": [
+    {
+      "title": "Steeringで壊れたのは\"層の位置\"か\"層の数\"か — 24層を1つずつ測った",
+      "url": "https://zenn.dev/ai_dissection/articles/llm-steering-layer-sweep",
+      "site": "Zenn(機械学習)",
+      "published": "2026-10-18T03:29:22Z",
+      "description": "きっかけ\n前の記事で、Qwen2.5-0.5B-Instructに\"ポジティブの矢印\"(Activation Steeringのベクトル)を足す実験を書きました。5つの層に足すと出力が崩壊し、13層目だけに足すと口調が変わる、という結果です。\nこれをXに投稿したところ、こんな質問をもらいました。\n\n壊れる手前の「性格だけ変わる」境目は、層の位置で決まりますか？\n\n正直、答えられませんでした。崩壊し...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "AIが書いた文章は、技術的にどう見分けられるのか",
+      "url": "https://zenn.dev/ogiri/articles/ai-text-detection",
+      "site": "Zenn(機械学習)",
+      "published": "2026-10-18T02:32:33Z",
+      "description": "はじめに\nAIに書かせた文章を、読者は見分けられるのでしょうか。\nこの問いを考えるとき、まず「AIっぽい文章」という印象と、機械による検出を分ける必要があります。人間が違和感を覚えることと、検出器がAI生成だと判定することは、同じではありません。\n技術的な結論を先に書くと、AIテキスト検出器は文章の来歴を直接見ているわけではありません。生成時に透かしが埋め込まれていない限り、文章に残った統計的・文...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "PyODで時系列データの異常検知を試す",
+      "url": "https://zenn.dev/drbobt1122/articles/blog26101701",
+      "site": "Zenn(機械学習)",
+      "published": "2026-10-18T01:36:39Z",
+      "description": "前回は、Raspberry Pi 4に保存したセンサデータを対象に、PyODのSpectral Residualで異常を検出するMCPサーバを構築しました。この話の最後に、データや目的に合わせて異常検知の手法を切り替える旨について、書きました。\nそこで今回は、PyODに入っている時系列データ向けの異常検出器について、調査し、その結果の違いを確認しました。\n試したのは次の7種類です。\n\n\n\nカテゴリ...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "TabPFN学習帳 ― Claude Code から初心者 KNIMEST への講義資料",
+      "url": "https://zenn.dev/knimest/books/tabpfn-lecture-for-knimest",
+      "site": "Zenn(機械学習)",
+      "published": "2026-10-17T14:57:06Z",
+      "description": "表データの基盤モデル TabPFN の論文の数式を、論文の順に一つずつ読む講義資料です。すべての式に記号の読み方、声に出したときの読み、意味、一言まとめ、確認問題をつけました。Claude Code が初心者の KNIMEST のために書き、KNIMEST が勉強しながら確認しました。",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
     {
       "title": "Kaggleの作業で「うっかり提出」をなくす：Kaggle CLIと確認ラッパーと、本番と同じハードで測る話",
       "url": "https://zenn.dev/koheip/articles/kaggle-safe-submit-workflow",
@@ -118,7 +158,7 @@
       "url": "https://zenn.dev/ai_dissection/articles/chat-template-coding",
       "site": "Zenn(機械学習)",
       "published": "2026-10-15T12:00:05Z",
-      "description": "&lt;!--\n下書き(2026-10-14、Claude作成)。管理表のID 002。\n元データ: logs/2026-09-24-1811-phase3-check.md の1a/1b、claude-notes.md 2026-09-22〜24、2026-10-13の撮影時の結果。\n画像: images/chat-template-coding/run-template-off-on.png(...",
+      "description": "はじめに\nローカルLLMの中身を\"解剖\"するデスクトップアプリ「AI Dissection Editor」を個人で作っています。推論エンジンを transformers を使わずにPyTorchで自前実装したのですが、動くようになって最初に「こんにちは」と入れたとき、返ってきたのはこれでした。\ncoding! こんにちは、お元気ですか？ こんにちは、お元気ですか？ こんにちは、お元気ですか？ …\n...",
       "category": "AI・技術",
       "rss_category": "",
       "image_url": ""
