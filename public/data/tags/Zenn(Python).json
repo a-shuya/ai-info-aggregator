@@ -1,14 +1,34 @@
 {
   "site": "Zenn(Python)",
-  "last_updated": "2026-10-18T11:36:18.407033",
-  "total_articles": 7196,
+  "last_updated": "2026-10-18T14:49:13.256853",
+  "total_articles": 7195,
   "articles": [
     {
-      "title": "生成AI APIとは？チャット画面との違いをPOS売上分析で理解する",
-      "url": "https://zenn.dev/salesanalytics/articles/291480b9030d5f",
+      "title": "ダッシュボードを誰も見ていないのに、Durable Objectsの書き込み枠が埋まりかけた",
+      "url": "https://zenn.dev/llmonmac/articles/durable-objects-dashboard-writes",
       "site": "Zenn(Python)",
-      "published": "2026-10-18T08:36:53Z",
-      "description": "ChatGPT や Gemini を使っていると、「API」という言葉をよく目にします。「Python から生成AI APIを呼び出して、分析を自動化する」と言われても、チャット画面と何が違うのか、ピンとこない方も多いのではないでしょうか。\n結論から言うと、大きな違いは「誰が生成AIへ依頼するのか」です。この記事では、POS売上分析を題材に、その要点をコンパクトにまとめます。\n\n 違いは「誰が依頼...",
+      "published": "2026-10-18T09:59:05Z",
+      "description": "小さなダッシュボードに、使用量の通知が来た\n複数のMacで動かしている仕事を、ブラウザーから確認するダッシュボードを作っています。\n各Macから状態を送り、Cloudflare WorkersとDurable Objectsで受け取ります。ブラウザーはWebSocketで更新通知を受け取り、仕事の「いま」と「次」を表示します。\n大勢が見るものではありません。それなのに、Durable Object...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "標本数を増やせば内生性は解決する？ データを増やしてもOLSのズレが消えない理由",
+      "url": "https://zenn.dev/econ_data_lab/articles/endogeneity-sample-size",
+      "site": "Zenn(Python)",
+      "published": "2026-10-18T09:55:26Z",
+      "description": "計量経済学では、標本数が大きくなると推定が安定すると習います。では、説明変数と誤差項が相関する内生性があっても、データを十分に集めれば問題を解決できるのでしょうか。\nこの記事では、欠落変数によって内生性が生じる小さなモデルを使い、\n\n標本数を増やすと何が改善するのか\nなぜ内生性によるズレは消えないのか\n「ばらつきが小さい」と「真値に近い」はなぜ別なのか\n\nを、数式とPython / Rのシミュレー...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "WiMAXとStarlinkを、Pythonで計測して比較してみた",
+      "url": "https://zenn.dev/shojio/articles/5d40f5faa9eada",
+      "site": "Zenn(Python)",
+      "published": "2026-10-18T09:03:56Z",
+      "description": "はじめに\n今はWiMAXを使っています。紹介キャンペーンでStarlinkの端末が無料になったので、導入してみました。\n「技術に触れる機会」として、体感ではなく数字で比較します。\n\n 比較の方針\n\n 性質の違い\n\n\n\n観点\nWiMAX\nStarlink\n\n\n\n\n通信方式\nモバイル回線(基地局経由)\n衛星経由\n\n\n設置\n置くだけ・持ち運びやすい\n空が開けた場所に端末を設置\n\n\n電波の影響\n建物・場所...",
       "category": "開発",
       "rss_category": "",
       "image_url": ""
@@ -64,16 +84,6 @@
       "image_url": ""
     },
     {
-      "title": "AI エージェントに個人の記憶を任せるときの、書かせない・漏らさない仕組み",
-      "url": "https://zenn.dev/ketoranger/articles/agent-memory-security",
-      "site": "Zenn(Python)",
-      "published": "2026-10-18T05:06:44Z",
-      "description": "1台の Mac の上に「Workspace」という1つのフォルダを作り、その中で Claude Code・Codex と定時処理に、自分の記憶・タスク・道具の手入れを任せています。仕組みの全体は前の記事に書きました。\nhttps://zenn.dev/ketoranger/articles/workspace-ai-agents-memory\nエージェントは、メールやチャットの本文、会話の記録、ブ...",
-      "category": "開発",
-      "rss_category": "",
-      "image_url": ""
-    },
-    {
       "title": "BPMが半分・倍で表示されるのはなぜ？90 BPMのクリック音で確かめる",
       "url": "https://zenn.dev/creatunealex/articles/95cf1b00a65c0f",
       "site": "Zenn(Python)",
@@ -114,31 +124,11 @@
       "image_url": ""
     },
     {
-      "title": "AIエージェント時代のローカル環境セキュリティ対策：おとり（🐤カナリア）検知と差分Trivy検疫の実践",
-      "url": "https://zenn.dev/sprocket_knd/articles/eeee21302de2d8",
-      "site": "Zenn(Python)",
-      "published": "2026-10-18T01:47:40Z",
-      "description": "はじめに\n本記事では、私自身の個人開発の現場で実践しているセキュリティ対策として、PCの動作を重くせずにAIエージェントの暴走と誤コミットを水際で防ぐ**「ローカル欺瞞防御（カナリア配置と SIGSTOP によるプロセス制御）」と「ステージング差分限定のTrivyコミット前検疫フック」**の設計・運用アプローチを共有します。\nCursor や Claude Code、Windsurf、あるいはロー...",
-      "category": "開発",
-      "rss_category": "",
-      "image_url": ""
-    },
-    {
       "title": "Ubuntu 26.04でShoestringを使ってSymbolノードを構築する",
       "url": "https://zenn.dev/ccharvestasya/articles/symbol-node-install-shoestring",
       "site": "Zenn(Python)",
       "published": "2026-10-18T01:42:22Z",
       "description": "Symbolノードは、公式の構築ツール Shoestring を使うと、Pythonのコマンドから設定ファイルや証明書、Docker Composeの構成を生成できます。\nこの記事では、Ubuntu 26.04 LTSにSymbol MainnetのPeer＋Light APIノードを新規構築し、起動と基本的な動作確認までを説明します。デリゲートハーベスティングを受け付ける構成に統一し、所有者もウ...",
-      "category": "開発",
-      "rss_category": "",
-      "image_url": ""
-    },
-    {
-      "title": "【特許出願中】AIエージェントに環境を乗っ取られないための「ローカル欺瞞防御」と「自動検疫フック」実装ガイド",
-      "url": "https://zenn.dev/sprocket_knd/books/47244134277177",
-      "site": "Zenn(Python)",
-      "published": "2026-10-18T01:30:28Z",
-      "description": "Claude Code、Cursor、Windsurf、ローカルLLMにターミナル権限やファイル読み書きを委譲する時代。プロンプトインジェクションやAIの暴走による.env・SSH鍵の窃取を50ms以下で検知・一時停止する『カナリア欺瞞防御』と、コミット差分（Diff）のみを高速スキャンしてシークレット・脆弱性混入を水際阻止する『自動検疫フック』を1時間で構築する実践ガイド＆汎用スクリプト集。",
       "category": "開発",
       "rss_category": "",
       "image_url": ""
