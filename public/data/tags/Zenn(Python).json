@@ -1,8 +1,28 @@
 {
   "site": "Zenn(Python)",
-  "last_updated": "2026-10-18T06:26:58.381233",
-  "total_articles": 7190,
+  "last_updated": "2026-10-18T11:36:18.407033",
+  "total_articles": 7196,
   "articles": [
+    {
+      "title": "生成AI APIとは？チャット画面との違いをPOS売上分析で理解する",
+      "url": "https://zenn.dev/salesanalytics/articles/291480b9030d5f",
+      "site": "Zenn(Python)",
+      "published": "2026-10-18T08:36:53Z",
+      "description": "ChatGPT や Gemini を使っていると、「API」という言葉をよく目にします。「Python から生成AI APIを呼び出して、分析を自動化する」と言われても、チャット画面と何が違うのか、ピンとこない方も多いのではないでしょうか。\n結論から言うと、大きな違いは「誰が生成AIへ依頼するのか」です。この記事では、POS売上分析を題材に、その要点をコンパクトにまとめます。\n\n 違いは「誰が依頼...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "【Python】ホーナー法とは？多項式をO(n)で計算する流れを追う",
+      "url": "https://zenn.dev/student_blog/articles/horner-method-python",
+      "site": "Zenn(Python)",
+      "published": "2026-10-18T07:11:02Z",
+      "description": "多項式へ値を代入するとき、x ** 4、x ** 3のように各べき乗を別々に計算していないでしょうか。式どおりに書ける一方、次数が増えるほど計算の重複が見えにくくなります。\nこの記事では、**ホーナー法（Horner's method）**で多項式を評価する流れを、1つの変数の状態表で追います。持ち帰ることは一つだけです。高次の係数から順に「いまの結果へxを掛け、次の係数を足す」と、べき乗を作らず...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
     {
       "title": "毎日回るデータ収集を壊さないために：PDF1つで再読み取りが止まった話",
       "url": "https://zenn.dev/fumi3333/articles/haikou-daily-health",
@@ -44,6 +64,16 @@
       "image_url": ""
     },
     {
+      "title": "AI エージェントに個人の記憶を任せるときの、書かせない・漏らさない仕組み",
+      "url": "https://zenn.dev/ketoranger/articles/agent-memory-security",
+      "site": "Zenn(Python)",
+      "published": "2026-10-18T05:06:44Z",
+      "description": "1台の Mac の上に「Workspace」という1つのフォルダを作り、その中で Claude Code・Codex と定時処理に、自分の記憶・タスク・道具の手入れを任せています。仕組みの全体は前の記事に書きました。\nhttps://zenn.dev/ketoranger/articles/workspace-ai-agents-memory\nエージェントは、メールやチャットの本文、会話の記録、ブ...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
       "title": "BPMが半分・倍で表示されるのはなぜ？90 BPMのクリック音で確かめる",
       "url": "https://zenn.dev/creatunealex/articles/95cf1b00a65c0f",
       "site": "Zenn(Python)",
@@ -74,11 +104,41 @@
       "image_url": ""
     },
     {
+      "title": "点の確認と線の確認 — 人は間違える前提のHITL設計",
+      "url": "https://zenn.dev/shisei_kbrg322/articles/7eaabc919a5cb1",
+      "site": "Zenn(Python)",
+      "published": "2026-10-18T01:50:24Z",
+      "description": "!\nこの記事のポイント\n\n引き継ぎ時だけの確認では、シミュレーション上、途中で起きた途切れの約4分の3を見逃す\n確認の頻度は、見逃したくない異常の長さとコストから逆算して決める\nAIのHuman in the Loopでも、「承認時だけの確認」は同じ盲点を生む\nシミュレーションのコードはGitHubで公開している\n\n\n\n はじめに：人を入れただけでは安全にならない\nAIの運用では「最後は人が確認す...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "AIエージェント時代のローカル環境セキュリティ対策：おとり（🐤カナリア）検知と差分Trivy検疫の実践",
+      "url": "https://zenn.dev/sprocket_knd/articles/eeee21302de2d8",
+      "site": "Zenn(Python)",
+      "published": "2026-10-18T01:47:40Z",
+      "description": "はじめに\n本記事では、私自身の個人開発の現場で実践しているセキュリティ対策として、PCの動作を重くせずにAIエージェントの暴走と誤コミットを水際で防ぐ**「ローカル欺瞞防御（カナリア配置と SIGSTOP によるプロセス制御）」と「ステージング差分限定のTrivyコミット前検疫フック」**の設計・運用アプローチを共有します。\nCursor や Claude Code、Windsurf、あるいはロー...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
       "title": "Ubuntu 26.04でShoestringを使ってSymbolノードを構築する",
       "url": "https://zenn.dev/ccharvestasya/articles/symbol-node-install-shoestring",
       "site": "Zenn(Python)",
       "published": "2026-10-18T01:42:22Z",
       "description": "Symbolノードは、公式の構築ツール Shoestring を使うと、Pythonのコマンドから設定ファイルや証明書、Docker Composeの構成を生成できます。\nこの記事では、Ubuntu 26.04 LTSにSymbol MainnetのPeer＋Light APIノードを新規構築し、起動と基本的な動作確認までを説明します。デリゲートハーベスティングを受け付ける構成に統一し、所有者もウ...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "【特許出願中】AIエージェントに環境を乗っ取られないための「ローカル欺瞞防御」と「自動検疫フック」実装ガイド",
+      "url": "https://zenn.dev/sprocket_knd/books/47244134277177",
+      "site": "Zenn(Python)",
+      "published": "2026-10-18T01:30:28Z",
+      "description": "Claude Code、Cursor、Windsurf、ローカルLLMにターミナル権限やファイル読み書きを委譲する時代。プロンプトインジェクションやAIの暴走による.env・SSH鍵の窃取を50ms以下で検知・一時停止する『カナリア欺瞞防御』と、コミット差分（Diff）のみを高速スキャンしてシークレット・脆弱性混入を水際阻止する『自動検疫フック』を1時間で構築する実践ガイド＆汎用スクリプト集。",
       "category": "開発",
       "rss_category": "",
       "image_url": ""
