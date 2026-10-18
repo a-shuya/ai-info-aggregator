@@ -1,14 +1,34 @@
 {
   "site": "Zenn(Python)",
-  "last_updated": "2026-10-17T23:26:24.778365",
-  "total_articles": 7177,
+  "last_updated": "2026-10-18T01:25:55.658804",
+  "total_articles": 7179,
   "articles": [
     {
-      "title": "RAGチャットボットが出典つきで嘘をついた日 ― ありがちな事故を全部詰め込んだ架空のポストモーテム",
-      "url": "https://zenn.dev/zumiraku/articles/df23687030e149",
+      "title": "RPGⅢをAIで読むときに、行番号を創作しない",
+      "url": "https://zenn.dev/kensudo1203/articles/488ac74d576ff1",
       "site": "Zenn(Python)",
-      "published": "2026-10-17T14:13:05Z",
-      "description": "社員A：今年の夏季休暇って何日ですか？\nボット：夏季休暇は5日間です。\n　　　　（出典：就業規則_2023.pdf 12ページ）\n社員A：ありがとうございます！\n正解は3日でした。\n2026年度から制度が変わって、夏季休暇は3日になり、その代わりに好きな時期に取れる休暇が2日増えていた。ボットは古い版の就業規則を、ページ番号まで添えて、とても丁寧に読み上げたわけです。\n出典がない嘘は疑ってもらえま...",
+      "published": "2026-10-17T19:06:23Z",
+      "description": "生産計画を RPG ILE で作り直すとき、先に壊れるのは新規側ではありません。旧 RPGⅢ の「読んでいない行」です。\nAI は CHAIN の失敗を全経路スキップと読み、BOM 展開を多段と決め、動的 CALL の先を静的なプログラム名に結わえます。行番号が付いていても、原本にその行が無いことがあります。\nこの記事は、固定桁スキャナで事実だけを抜き、解釈と推測をラベル分けしてから ILE に渡...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "AIエージェントの支払い指示をハッシュで固定する：RFC 8785（JCS）をPythonで再現したら3回ハマった",
+      "url": "https://zenn.dev/send21/articles/bef98f71bdcf35",
+      "site": "Zenn(Python)",
+      "published": "2026-10-17T18:36:19Z",
+      "description": "この記事で分かること\nAIエージェントに「支払いの実行」ではなく「支払い指示の作成」だけを任せる設計と、その指示が途中で書き換えられていないことを署名者側で確かめる方法です。公開されているテストベクタをPythonで再計算し、一致させるまでに踏んだ落とし穴を3つ紹介します。\n前提：エージェントに鍵を持たせない\nプロンプトインジェクションを考えると、秘密鍵を持つエージェントは「いつか想定外の送金をす...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "Hall の定理で量子将棋の収束アルゴリズムを導く",
+      "url": "https://zenn.dev/id774/articles/0fa4d1663fad89",
+      "site": "Zenn(Python)",
+      "published": "2026-10-17T15:03:05Z",
+      "description": "量子将棋では、各駒の種類は指し手を通じて絞られる。それと同時に、初期陣営ごとの駒種の枚数が決まっているため、ある駒の移動が、離れた別の駒の候補にも影響する。例えば飛車は 1 枚、香車は 2 枚である。3 枚の駒がいずれも「飛車または香車」に限定された時点で、残り 17 枚から飛車と香車の可能性を取り除ける。\nこの処理は、各駒の候補集合と駒種ごとの容量を与えた割当問題として定式化できる。Hall の...",
       "category": "開発",
       "rss_category": "",
       "image_url": ""
@@ -19,26 +39,6 @@
       "site": "Zenn(Python)",
       "published": "2026-10-17T13:52:36Z",
       "description": "Pillowで画像入力を検証する：最小辺240pxとアスペクト比チェック\n画像をアップロードさせるサービスでは、サーバー側に届いた画像を処理する前に「そもそも処理できる画像か」を確認したくなります。ファイル形式、最小サイズ、極端な縦横比などを最初に弾いておけば、後段の処理で原因の分かりにくい失敗が減ります。\nこの記事では、Python の画像ライブラリ Pillow を使って、次の4つを検証する関...",
-      "category": "開発",
-      "rss_category": "",
-      "image_url": ""
-    },
-    {
-      "title": "LangChainの会話で最初の指示が消える — 固定指示分離・token管理・要約圧縮の3段構え",
-      "url": "https://zenn.dev/yukihayama/articles/langchain-history-window-trim",
-      "site": "Zenn(Python)",
-      "published": "2026-10-17T13:22:43Z",
-      "description": "LangChainの会話で最初の指示が消える — 固定指示分離・token管理・要約圧縮の3段構え\n顧客対応ボットをLangChainで運用し始めて2週間、AIが最初に決めた出力ルールを無視するようになった。表形式で出す約束を破り、途中から自由文で返答し始めた。ログを辿った結果、原因はtrim_messagesによる履歴の切り詰めだった。trimは直近を優先（strategy=\"last\"）で古い...",
-      "category": "開発",
-      "rss_category": "",
-      "image_url": ""
-    },
-    {
-      "title": "gemini embedding 2 による資料の類似性は見た目で決まる？ 内容で決まる？ PDF と画像で検証してみた",
-      "url": "https://zenn.dev/bekku/articles/bdf265a70d27be",
-      "site": "Zenn(Python)",
-      "published": "2026-10-17T12:26:03Z",
-      "description": "!\nこの記事は、「2026/03/21に公開した記事」を誤って削除してしまったものを復元したものです🥲\n\n前回、gemini-embedding-2 を使って、OCR しづらい資料でもそれっぽく近いものを拾えそう、という話を書きました。\nhttps://zenn.dev/bekku/articles/5fcbeae4ec5afb\n今回はその続きとして、もう少し気になっていたことを試しました。\nそれ...",
       "category": "開発",
       "rss_category": "",
       "image_url": ""
@@ -74,6 +74,16 @@
       "image_url": ""
     },
     {
+      "title": "対話イベントを変換するとき、欠落と訂正をどう記録するか？",
+      "url": "https://zenn.dev/kotanpolin/articles/topodialogue-event-conversion-audit",
+      "site": "Zenn(Python)",
+      "published": "2026-10-17T11:02:07Z",
+      "description": "TopoDialogueとは\nTopoDialogue（トポダイアログ）は、人とAIの会話が、同じ話題に戻ったり、新しい見方へ進んだりする様子を、あとから確かめられる記録にする研究です。たとえば、同じ話を繰り返していても、前と同じところで止まっているのか、言い直して少し先へ進んだのかは違います。その違いを、会話のどの部分を根拠にしたかと一緒に扱います。\n今回取り上げるのは、その中でも「会話を記録へ...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
       "title": "年賀状の宛名をExcelの住所録から印刷する手順",
       "url": "https://zenn.dev/temanashi/articles/8351e4e2c479f4",
       "site": "Zenn(Python)",
@@ -99,6 +109,16 @@
       "site": "Zenn(Python)",
       "published": "2026-10-17T06:25:03Z",
       "description": "やったこと: 「通貨強度メーターで最強の通貨を買い、最弱の通貨を売る。入るのはロンドン・NYの重複時間帯」という組み立てを、Dukascopy の1時間足（主要7通貨・2008〜2026年6月）で3つの問いに分けて測った。強度の作り方は最小二乗の解との相関で、合図の予測力はラベル列の循環シフトの帰無で、入る時間帯は毎日ランダムな開始時刻の窓の帰無で比べた。判定の規則はどれも結果を見る前にスクリプト...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "Jevの選択肢確率を使った選択的予測をJNLIで評価する",
+      "url": "https://zenn.dev/hshicalu/articles/jev-jnli-selective-prediction",
+      "site": "Zenn(Python)",
+      "published": "2026-10-17T05:58:30Z",
+      "description": "TypeSafeのモデルJevは、選択式の質問に対して、答えと各選択肢の確率を返します。この確率を基準にすれば、条件を満たす予測だけを採用し、残りは保留できます。\nただ、採用する予測を絞って正解率が上がっても、ほとんどの予測を保留してしまうようでは、使える場面が限られます。そこで今回は、日本語の自然言語推論データセットJNLIを使い、目標とする正解率に対して、どの程度の予測を採用できるかを調べまし...",
       "category": "開発",
       "rss_category": "",
       "image_url": ""
