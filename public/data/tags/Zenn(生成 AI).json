@@ -1,8 +1,178 @@
 {
   "site": "Zenn(生成 AI)",
-  "last_updated": "2026-10-19T10:13:05.738514",
-  "total_articles": 4601,
+  "last_updated": "2026-10-19T17:02:07.005818",
+  "total_articles": 4618,
   "articles": [
+    {
+      "title": "MCPを旧仕様のまま理解しない：stateless化と責務境界",
+      "url": "https://zenn.dev/kas_blog/articles/20260908-mcp-model-context-protocol",
+      "site": "Zenn(生成 AI)",
+      "published": "2026-10-19T10:48:44Z",
+      "description": "MCP（Model Context Protocol）は、LLM applicationと外部のdata・toolを接続するopen protocolです。ただし、MCPを「AI modelがtoolを使えるようにする機能」とだけ捉えると、model、Host、Serverの責務が混ざります。\n結論から言えば、MCPが標準化する中心はHostとcapability providerの間の接続境界で...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "Excelの差分チェックでAIに任せるのは条件式の下書きまで — 台帳は番号で合わせる",
+      "url": "https://zenn.dev/yoshitokinosita/articles/0019-excel-ai-sabun-check",
+      "site": "Zenn(生成 AI)",
+      "published": "2026-10-19T10:19:07Z",
+      "description": "台帳を移し替えた日は、移す前と比べる\n人事システムの入替えや台帳の改訂が済むと、移し替えた台帳を前の台帳と並べて確かめる日が1回入ります。部署が替わったはずの人が書き替わっているか。支払口座は変わっていないか。すでに退職した人が、新しい台帳に来ていないか。前の台帳と新しい台帳とでは、行の順番も見出しの読み方も替わっているので、行数が重なると、並べて目で追うのはすぐに限界が来ます。\n前回は締めの手前...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "【特別編2】AI開発を特定ベンダーに閉じ込めない――開発契約と実行環境を分離する設計",
+      "url": "https://zenn.dev/xneshuk/articles/0373d9ab69ce76",
+      "site": "Zenn(生成 AI)",
+      "published": "2026-10-19T10:10:12Z",
+      "description": "AI開発を特定ベンダーに閉じ込めない――開発契約と実行環境を分離する設計\n\n TL;DR\n\n強力なAIサービスを使うこと自体が問題なのではない。開発の記憶・判断・受入条件・証拠まで一つのサービスへ閉じ込めると、障害や仕様変更、アカウント問題が開発停止へ直結する\nLibroDeckでは、現在の仕様を決める文書、変更契約、検査結果、引継ぎ、成果物をプロジェクト側へ残し、AI環境を交換可能な実行エンジン...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "Claude Codeの会話を55分放っておいたら、272,422トークンが13,522に圧縮されていました ― アイドル圧縮の観測",
+      "url": "https://zenn.dev/ojisan_ai_lab/articles/claude-code-idle-compaction-20261019",
+      "site": "Zenn(生成 AI)",
+      "published": "2026-10-19T09:29:39Z",
+      "description": "Claude Code のターミナルで27万トークンの会話を claude --resume で開いて1行だけ送り、あとは何も打たずに置いておきました。55.6分後、その会話は13,522トークンまで圧縮されていました。\n前々回の記事で、同じ会話でも1時間あけて戻ると、キャッシュから読める割合が6.1%まで落ちると書きました。その1時間が切れる少し前に、放置された会話を要約しておく「アイドル圧縮」...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "複数のAI APIを安全に切り替えるためのFailover設計",
+      "url": "https://zenn.dev/aiai_tool/articles/d59ac16e64fd1c",
+      "site": "Zenn(生成 AI)",
+      "published": "2026-10-19T09:23:45Z",
+      "description": "AI APIを業務システムに組み込む場合、1つのサービスだけに完全に依存すると、そのAPIが一時的に利用できなくなったときにワークフロー全体が停止する可能性があります。\nそこで考えたいのが、メインのAI APIが利用できないときに別の処理へ切り替えるFailover設計です。\n単純に「別のAIを呼び出す」だけではなく、どの条件で切り替え、どの処理まで代替を許可するかを決めておくことが重要です。\n\n...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "画像から動画を生成するAIで、入力条件を一つずつ変えて確認する",
+      "url": "https://zenn.dev/proper_willet/articles/c4bb1804766bf8",
+      "site": "Zenn(生成 AI)",
+      "published": "2026-10-19T08:31:30Z",
+      "description": "「カメラを近づける」という指示を加えた動画と、加えていない動画を比べたい。そのとき画像や動画の長さまで変えてしまうと、何が違いにつながったのかを読み取りにくくなります。\n画像から動画を生成するAIの入力を比較するなら、同じ許諾済み画像を使い、変更する指示を一つに絞ります。この記事では、比較条件の決め方と、入力・日時・出力・判定項目を残す方法を示します。生成の実測は行っておらず、以下の指示文と記録欄...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "ソースコードから現行仕様書を起こすときに、AIに任せたことと人が確かめたこと",
+      "url": "https://zenn.dev/vaonvn/articles/6dcecdc2ba880d",
+      "site": "Zenn(生成 AI)",
+      "published": "2026-10-19T08:14:29Z",
+      "description": "仕様書のない稼働中のシステムを引き継ぐ、あるいは作り直す案件で、まず必要になるのは「今このシステムは何をしているのか」を書いた文書です。実際の案件で、これをAIにソースコードを読ませて起こす進め方をやってきました。\n先に書いておくと、速さや正確さの計測値は持っていません。「何割減った」「何件間違えた」は出てきませんし、案件やお客様が特定できる話も書きません。代わりに、コードベースの渡し方、AIへの...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "Agentは何に収束するのか ― 確率的生成・決定論的検証・人間の意思決定 ―",
+      "url": "https://zenn.dev/albatrosary/articles/abb264e94c4bea",
+      "site": "Zenn(生成 AI)",
+      "published": "2026-10-19T07:35:37Z",
+      "description": "はじめに\n筆者は現在、生成AIそのものの性能改善よりも、LLMの外側で実行を制御する外部Harnessの開発に力を入れている。この Portable Agent では、Guard、Verification、Checkpoint、ReturnなどをLLMから分離し、生成結果を仕事として扱うための制御を実装している。\nその過程で、興味深い差を感じている。仕様からコードを作る、Unit Testコードを...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "【１日１デプロイ】安全かリボンか、屋根ルートを選ぶ「ピョン！風車村の屋根わたり」を作った",
+      "url": "https://zenn.dev/boraemon2000/articles/windmill-rooftop-run-route-design",
+      "site": "Zenn(生成 AI)",
+      "published": "2026-10-19T07:12:18Z",
+      "description": "今回作ったもの\n「１日１デプロイ」の新作として、夕焼けの瓦屋根を跳び渡る短編2Dアクション ピョン！風車村の屋根わたり を作りました。\n目指すのは、風車塔の手前にある金色の鐘です。右へ進み、ジャンプの短押しと長押しを使い分けて、3つの区間を越えます。\n各区間には、幅の広い下の安全ルートと、風のリボンを取れる上のルートがあります。まず鐘まで行くか、難しい屋根へ上がってランクを狙うか。同じゴールへ向か...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "【Moodle×AI】AI-TAを1学期運用して分かったこと――回答の限界と，学生の問いの広がり",
+      "url": "https://zenn.dev/kase_lab/articles/ab9b1323429215",
+      "site": "Zenn(生成 AI)",
+      "published": "2026-10-19T06:16:02Z",
+      "description": "はじめに：AIをTAにして，学生の質問はどう変わるのか\n大学における私の担当講義では，LETUS（本学で使用しているMoodle）に質問・コメント送信ボックスを設置して，いつでも学生が質問できる環境を整えていました．しかしながら，実際に利用する学生は限られていました．\n学生にとって，教員へ質問を送るのは案外ハードルが高いのかもしれません．確かに自分が学生だった時分を思い出すと，授業の終わりにその場...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "なぜ、AIは頭が悪い人の仕事を効率化出来ないのか？",
+      "url": "https://zenn.dev/pdfractal/articles/9ba62b3b02e879",
+      "site": "Zenn(生成 AI)",
+      "published": "2026-10-19T04:57:49Z",
+      "description": "はじめに\n生成AIの急速な進化によって、これまで人間が行ってきた多くの知的作業をAIに任せられるようになりました。特にソフトウェア開発では、何を作りたいのかを明確に伝えれば、AIが設計から実装までの相当部分を担えるようになっています。従来はプログラミング能力がなければ実現できなかったことが、要件を伝えるだけで実現できる時代に近づいています。\nそれならば、AIの普及によって知的能力の低い人も高度な仕...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "確かめない技術 序論：AI のいうことを、もう確かめていない",
+      "url": "https://zenn.dev/garplab/articles/da06fe0ff2571e",
+      "site": "Zenn(生成 AI)",
+      "published": "2026-10-19T04:47:12Z",
+      "description": "AIのいうことを、私は確かめずに済ませています。「テストは通っています」も、「画面で確認しました」も、「修正は完了しました」も同じです。それでも、確認は済んでいます。自動テストのように、AIに読まれなくても落ちる仕組みが、私より先に走っているからです。この仕組みは、問題があれば失敗を返します。この連載では、確認が先に済んでいる状態を、仕組みを一つずつ置いて作っていきます。\n各回の終盤の節が、「検証...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "Snowflake の AI_SENTIMENT で項目別の満足度を出す前に",
+      "url": "https://zenn.dev/mochitec_tech/articles/9394ce40b44725",
+      "site": "Zenn(生成 AI)",
+      "published": "2026-10-19T04:18:32Z",
+      "description": "はじめに\nレビューや問い合わせ本文の列を、配送・価格・品質のような項目ごとに集計したいことがあります。Snowflake の AI_SENTIMENT は、文章全体の感情と、指定した項目ごとの感情を返す関数です。架空のレビュー 10 件を日本語のまま渡して、どこまで使えるのかを試しました（この 10 件は各 1 回）。項目名を英語にしたときの差と、一緒に渡す項目を変えたときの差も見ています。\n\n ...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "オリジナルキャラ「サニーくん」を3D化してみた｜ChatGPTの絵から、無料のAIで立体データに",
+      "url": "https://zenn.dev/toprunner/articles/d30f2235e5ef8b",
+      "site": "Zenn(生成 AI)",
+      "published": "2026-10-19T03:52:14Z",
+      "description": "TOP RUNNERのマスコット「サニーくん」を、立体にしてみました。\nきっかけは、最近よく見かけるキーボード型のキーホルダーです。キーを押すとカチッと鳴るあれに、サニーくんを載せたら楽しそうだなと思いました。キーの上に載せるには、まず3Dデータが要ります。\nいつもChatGPTで描いてもらっているサニーくんの絵から、Fusionで加工できる3Dデータを作れるのか。やってみた流れと、ハマったところ...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "仕様書からGitHub Issuesを切る：Claude Codeに受け入れ条件付きで分解させ、番号を付け替えて登録する",
+      "url": "https://zenn.dev/aishigoto/articles/claude-code-spec-to-github-issues",
+      "site": "Zenn(生成 AI)",
+      "published": "2026-10-19T03:13:25Z",
+      "description": "※ この記事は Claude Code（AI）を使って執筆し、掲載しているコードと出力例はすべて実際に実行して確認しています。\n箇条書き6行の仕様メモから、受け入れ条件と依存関係の付いたGitHub Issuesを作る手順を紹介します。\nClaude Codeに分解させた実際の出力を載せます。計画をIssueとして登録するときに必要な番号の付け替えは、Pythonスクリプトで処理します。\n\n 分解...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "AI開発ガバナンスの実装 — 自動テスト・設計規約・品質基準をどう設計したか",
+      "url": "https://zenn.dev/ken2618/articles/2ea704c57730ef",
+      "site": "Zenn(生成 AI)",
+      "published": "2026-10-19T03:02:05Z",
+      "description": "AI支援開発の速度向上が、18ヶ月後の保守コストに転嫁されている——という構造について、別の記事で書きました。\nhttps://zenn.dev/ken2618/articles/e0a998a638ac98\nこの記事はその続きで、では具体的に何を作るのかという話です。\n結論から言うと、ガバナンスは文書ではありません。強制力のある仕組みです。 「規約を作った」で止まっているなら、それは存在しないの...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "AIがテスト設計書を書く時代、QAの主役は探索チャーターになった",
+      "url": "https://zenn.dev/zenkigen_tech/articles/6582574fc862fb",
+      "site": "Zenn(生成 AI)",
+      "published": "2026-10-19T03:00:07Z",
+      "description": "AIがテスト設計書を書く時代、QAの主役は探索チャーターになった\n\n はじめに\n株式会社ZENKIGENでQAエンジニアをしている横田です。\n6月の記事「AIと歩む、点の自動化からフローの自動化へ」では、Claude Code を使って QA の業務フロー全体をパイプライン化した話を書きました。仕様書からテスト設計書を作り、テスト設計書からテスト項目書を作る。この流れをスキルとして整えたことで、成...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
     {
       "title": "AIにXの下書きを任せて、4日で32本中3本しか使わなかった ── 手元に戻した仕事と、任せ続けている仕事",
       "url": "https://zenn.dev/menmen_ailab/articles/103cad12dfa825",

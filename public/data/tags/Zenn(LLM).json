@@ -1,8 +1,148 @@
 {
   "site": "Zenn(LLM)",
-  "last_updated": "2026-10-19T10:13:05.738514",
-  "total_articles": 6830,
+  "last_updated": "2026-10-19T17:02:07.005818",
+  "total_articles": 6844,
   "articles": [
+    {
+      "title": "Jev で X のレスバを派閥分類してみた",
+      "url": "https://zenn.dev/gon/articles/a9d97099e9a2f9",
+      "site": "Zenn(LLM)",
+      "published": "2026-10-19T13:20:00Z",
+      "description": "はじめに\nX のレスバを眺めていると、いつもどっちの派閥が多いのか気になります。X のレスバに関する投稿を、Typesafe の Jev で「どの派閥に属するか」分類して数えるサイト、レスバ速報 を作りました。\nやっていることは単純で、派閥の説明を文章で書いて、投稿といっしょに Jev に渡して分類しているだけです。また、ユーザーの属性や投稿が攻撃的かどうかもついでに出してます。\n\n性質上、センシ...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "LLMで落とす前に、必要なものを拾えるようにしたい",
+      "url": "https://zenn.dev/miyakona/articles/llm-gate-to-label",
+      "site": "Zenn(LLM)",
+      "published": "2026-10-19T11:19:00Z",
+      "description": "人が大量の資料を目視で確認し、必要なものを選ぶ作業を、少しずつシステムへ任せようとしています。候補のタイトルや要約をLLM（大規模言語モデル）に渡し、関連があると判定した候補を後段へ送る仕組みです。\nところが、人の判断結果と突き合わせると、人が「必要」としたものをシステムが除外していました。この状態では任せられず、人の確認作業を減らすところへ進めません。\n私が先に実現したかったのは、不要な候補が少...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "Cloudflare Pages Functions + Workers AI で Jev を呼ぶ",
+      "url": "https://zenn.dev/temple_c_tech/articles/jev-on-cloudflare-pages",
+      "site": "Zenn(LLM)",
+      "published": "2026-10-19T10:19:40Z",
+      "description": "はじめに\n個人開発で、漫画『ざつ旅 -That's Journey-』の聖地巡礼を支援する Web アプリを作っています[1]。作中に登場するエリアやスポットを地図で探したり、ルーレットで旅先を決めたりできるアプリで、Next.js の静的エクスポートを Cloudflare Pages で配信しています。\n今回、このアプリに「温泉でのんびりしたい」「電車だけで行けてレトロな街を歩きたい」のような...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "ローカルLLMの島を同じ決まりで4回動かしたら、パン屋は黒字で去り、赤字で残った",
+      "url": "https://zenn.dev/llmonmac/articles/island-rules-four-islands",
+      "site": "Zenn(LLM)",
+      "published": "2026-10-19T10:13:12Z",
+      "description": "同じ決まりなら、似た島になると思っていました\nMac miniで、小さなローカルLLMを住人にした架空の島を動かしています。住人の言葉や選択をモデルが生成し、お金・食事・天気はPythonの規則で動きます。\n前の記事では、100日暮らした住人のお金を見ました。今回は、その裏にある決まりの話です。\n同じお金の決まりで4つの島を100日ずつ動かすと、どの島でもパンが1割以上傷みました。でもパン屋の暮ら...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "「判断はAI、決定はコード」——LLMオーケストレーションがたどり着いた境界線",
+      "url": "https://zenn.dev/nagumo_giken/articles/3aa382e433357a",
+      "site": "Zenn(LLM)",
+      "published": "2026-10-19T09:31:07Z",
+      "description": "多段ゲートの破綻から、人間の調査手順を再現する「メモ先行パイプライン」へ回帰するまで\nある話題について、人間がWebで調べて裏を取る作業をLLMに代行させる。本稿は、そのための非同期調査パイプラインを本番で壊し、作り直した記録だ。\n!\n3行でまとめると（TL;DR）\n\nLLMに自律的な多段バリデーションを持たせたら、正しい文を誤爆判定して削除しまくり、本番が崩壊した。\n賢い自律推論を諦め、人間のO...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "S3 Vectors × Bedrock × LangGraphで作るSelf-RAGの設計",
+      "url": "https://zenn.dev/ma_sa_shi/articles/5b15aa0b2577b3",
+      "site": "Zenn(LLM)",
+      "published": "2026-10-19T09:00:06Z",
+      "description": "S3 VectorsやBedrock、LangGraphなどを組み合わせてSelf-RAGを作成したので、設計や工夫を本記事で紹介します。\n\n どのようなRAGか\nドキュメントを取り込んでS3 Vectorsに登録しておき、ユーザーの質問に関連する文書を検索して回答を生成するRAGです。\nソースコードは以下のリポジトリで公開しています。\nhttps://github.com/ma-sa-shi/s...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "AIエージェントのRouting参照コストを測る：51,666文字→約13,000文字の意味と限界",
+      "url": "https://zenn.dev/c_a_p_engineer/articles/routing-reference-cost-20261019",
+      "site": "Zenn(LLM)",
+      "published": "2026-10-19T08:34:58Z",
+      "description": "AIエージェントのRouting参照コストを測る：51,666文字→約13,000文字の意味と限界\nAIエージェントにSkill（作業手順）が増えると、「必要なものだけ読む」設計でも、 どれを読むか決めるための一覧 が大きくなります。\n私の実行基盤では、その一覧を毎回全文読む代わりに、軽量索引から候補を絞る仕組みを試しています。今回測ったのは、軽量索引の大きさだけではありません。 候補を選び、正規...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "Claude Code のセッション引き継ぎ: handoff 系スキル5本はどこが違うか",
+      "url": "https://zenn.dev/skillselion/articles/2dc8a05db34a21",
+      "site": "Zenn(LLM)",
+      "published": "2026-10-19T08:10:29Z",
+      "description": "長いセッションはコンテキストが尽きます。新しいセッションには、それまでの記憶がありません。この穴を埋めるのが handoff（引き継ぎ）スキルです。やることは一つで、いまの作業状態を短い文書に書き出し、次のエージェントに読ませます。\nカタログで「handoff」を名前に含むスキルを調べると、インストール数が最も多いのは mattpocock/skills の handoff スキル で、1,002...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "model: \"auto\" は何をしているのか — Auto Router v6 の中身を読む",
+      "url": "https://zenn.dev/brian166/articles/27d1f77aeb7559",
+      "site": "Zenn(LLM)",
+      "published": "2026-10-19T07:05:47Z",
+      "description": "AI の API をいくつも契約していると、「どのモデルに投げるか」の判断がコードのあちこちに散らばっていきます。分岐が増え、モデル名の変更がテストを壊し、障害時の切り替えは誰も書かなくなります。\nAICraft は OpenAI 互換の 1 エンドポイントで 100 以上のモデルを扱うサービスですが、この記事では宣伝ではなく、model: \"auto\" が裏で何をしているのかを、ドキュメントに書...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "LLMに「書かれていないこと」を書かせない — 7,800店の犬同伴条件を抽出した設計",
+      "url": "https://zenn.dev/mashihara/articles/8e308bbe9d34d9",
+      "site": "Zenn(LLM)",
+      "published": "2026-10-19T05:56:17Z",
+      "description": "犬と一緒に入れる飲食店を探せるサイト dog lunch を作った。\n関東・甲信越・東海の 12 都県で 7,878 店を掲載している（2026-10 時点）。\nこの記事は集客の話ではなく、LLM に「書かれていないこと」を書かせないために\nどういう設計にしたかの話です。精度を上げる工夫ではなく、\n間違いを世に出さないための工夫を書きます。\n\n 何が問題だったか\nグルメサイトの犬情報は「ペット可」...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "AI に推測させないアレルギー判定と「AI が演じるお客様」での評価 ── 飲食店の音声 AI 接客",
+      "url": "https://zenn.dev/ryoro777/articles/5e3ca719019a90",
+      "site": "Zenn(LLM)",
+      "published": "2026-10-19T05:13:53Z",
+      "description": "飲食店のテーブルに置く、タブレットの AI 接客「NOREN」を作りました。お客様が話しかけるだけで、AI がアレルギーや苦手なものを聞き、おすすめし、注文を受けます。\n\nデモ：https://noren-270044604850.asia-northeast1.run.app/demo （アカウント不要。Chrome でマイクを許可してください）\nコード：https://github.com/R...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "Mac miniで完全ローカルなAIコーディング環境をつくる：Ollama × Qwen × Pi Coding Agent",
+      "url": "https://zenn.dev/semicolonc/articles/local-ai-ollama-qwen-pi",
+      "site": "Zenn(LLM)",
+      "published": "2026-10-19T05:07:43Z",
+      "description": "この記事はSemicolon Consultingのブログで公開した記事の転載です。\n\n はじめに\n普段の仕事ではフロンティアモデルのOpus 5.5をClaude Codeで使っています。ただ最近、仕事柄ローカルの環境で閉じた状態でAIを使いたいことがあり、手元のMac miniだけで動く「完全ローカルなAI」も試していて、これが想像以上にいい感じだったので共有です。\n今回の環境はこちらです：\n...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "ADR-0001：記事のレビューにLLMを雇う。ただしマージ権限は渡さない【GitHub Actions × Claude】",
+      "url": "https://zenn.dev/zumiraku/articles/a21dcca5e9f5cf",
+      "site": "Zenn(LLM)",
+      "published": "2026-10-19T02:43:05Z",
+      "description": "2本前の記事の最後に、「次回は、この CI に LLM のレビュアーを1人雇う話を書く」と書きました。\nそして、その次の回に僕が書いたのは RAG のポストモーテムでした。\n約束を1本ぶん延滞しています。延滞料のつもりで、今回は少し丁寧にやります。\nふつうのブログ記事として書いてもよかったのですが、今回は ADR(Architecture Decision Record) の形式にしました。ADR...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "加速する側だけが世間知らず──Ospreyが投機デコードのドラフター事前学習を再利用可能にする仕組み",
+      "url": "https://zenn.dev/lixian/articles/osprey-target-agnostic-drafter-pretraining",
+      "site": "Zenn(LLM)",
+      "published": "2026-10-19T02:22:33Z",
+      "description": "TL;DR\n投機デコード（speculative decoding）は、軽量なdrafterが未来のトークンを予測し、巨大なtargetがそれを一括で照合するという、無損失で推論を加速する鉄板技術だ。しかしその速度向上はもろい。drafter は単一 target・狭い分布に向けて訓練されるため、チャットからコードへ、単言語から多言語へ、という workload シフトで受入率が崩壊する。例えば ...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
     {
       "title": "LLM09：誤情報とは？AIがもっともらしい嘘をつく理由",
       "url": "https://zenn.dev/monkey_gineer/articles/security-llm-09-misinformation",
