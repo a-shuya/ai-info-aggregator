@@ -1,8 +1,38 @@
 {
   "site": "Zenn(LLM)",
-  "last_updated": "2026-10-18T21:54:43.853333",
-  "total_articles": 6825,
+  "last_updated": "2026-10-19T00:00:38.456505",
+  "total_articles": 6827,
   "articles": [
+    {
+      "title": "LLM-jp-4.1をVRAM 6GBで動かす：32B-A3Bは--n-cpu-moeで8Bより生成が速かった",
+      "url": "https://zenn.dev/localai_lab/articles/8c101b0a90ad4c",
+      "site": "Zenn(LLM)",
+      "published": "2026-10-18T18:35:41Z",
+      "description": "国立情報学研究所の LLM-jp-4.1 を、VRAM 6GB の GPU を積んだPC 1台（RAM 32GB、画面表示もこの GPU）で動かしました。公式の4bit（Q4_K_M）の 8B と 32B-A3B を比べると、ファイルが約20GiBある 32B-A3B のほうが、8B より速く生成しました。\n\n32B-A3B：エキスパート（MoE の専門家の部分）の大半を CPU 側に置く設定（-...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "Claude Message Batches APIで1000件の分類ジョブを半額で回す：TypeScript実装と結果突き合わせの落とし穴",
+      "url": "https://zenn.dev/yunisuta/articles/claude-message-batches-api-1000-nd7z9h",
+      "site": "Zenn(LLM)",
+      "published": "2026-10-18T15:43:15Z",
+      "description": "夜中に回すだけのジョブを、リアルタイムAPIの料金で払っていないか\n問い合わせチケットの分類、過去ログのタグ付け、ドキュメント要約。こうした「今すぐ結果が要らない」処理を messages.create のループで回していると、待ち時間もレート制限の管理も料金も全部自分で持つことになります。\nAnthropicのMessage Batches APIは、リクエストをまとめて投げて非同期で結果を受け...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "JevとClefはなぜ生まれたのか ソフトウェアに組み込む判断モデルの設計",
+      "url": "https://zenn.dev/kimkiyong/articles/a469680b9bd39a",
+      "site": "Zenn(LLM)",
+      "published": "2026-10-18T14:42:08Z",
+      "description": "LLMで問い合わせを分類し、担当チームを決め、次の処理へ進む。こうした自動化を作ると、「必要なのは短い判断なのに、毎回文章生成を呼び出している」と気づくことがある。\nTypeSafeのJevとCloudflareのClefは、この種類の仕事を主な対象とするモデルだ。状態と質問を渡し、コードで扱える値と確率を受け取る。この記事では、登場した背景と仕組みを整理し、Issueレビューへの組み込み方を考え...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
     {
       "title": "【KaniVolcanoEngine】LLMに自作ゲームエンジンでゲームを作らせる",
       "url": "https://zenn.dev/otinpan/articles/a2215fcf315987",
@@ -119,16 +149,6 @@
       "site": "Zenn(LLM)",
       "published": "2026-10-18T02:00:05Z",
       "description": "はじめに：「指示待ち」を超えたAIエージェントを目指して\n近年、LLM（大規模言語モデル）に外部ツールを組み合わせたAIエージェントの開発が急速に進んでいます。しかし、多くのエージェントは依然として「ユーザーがプロンプトを入力し、それに対して1回限りのタスクを実行して終了する」という、一問一答の枠組みから抜け出せていません。\nもしAIが、過去のやり取りや文脈を記憶し、継続的に活動しながら、より自然...",
-      "category": "AI・技術",
-      "rss_category": "",
-      "image_url": ""
-    },
-    {
-      "title": "AIエージェント時代のローカル環境セキュリティ対策：おとり（🐤カナリア）検知と差分Trivy検疫の実践",
-      "url": "https://zenn.dev/sprocket_knd/articles/eeee21302de2d8",
-      "site": "Zenn(LLM)",
-      "published": "2026-10-18T01:47:40Z",
-      "description": "はじめに\n本記事では、私自身の個人開発の現場で実践しているセキュリティ対策として、PCの動作を重くせずにAIエージェントの暴走と誤コミットを水際で防ぐ**「ローカル欺瞞防御（カナリア配置と SIGSTOP によるプロセス制御）」と「ステージング差分限定のTrivyコミット前検疫フック」**の設計・運用アプローチを共有します。\nCursor や Claude Code、Windsurf、あるいはロー...",
       "category": "AI・技術",
       "rss_category": "",
       "image_url": ""
