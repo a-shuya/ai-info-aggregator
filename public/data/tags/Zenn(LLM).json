@@ -1,7 +1,7 @@
 {
   "site": "Zenn(LLM)",
-  "last_updated": "2026-10-19T17:02:07.005818",
-  "total_articles": 6844,
+  "last_updated": "2026-10-19T21:30:50.680053",
+  "total_articles": 6845,
   "articles": [
     {
       "title": "Jev で X のレスバを派閥分類してみた",
@@ -44,16 +44,6 @@
       "image_url": ""
     },
     {
-      "title": "「判断はAI、決定はコード」——LLMオーケストレーションがたどり着いた境界線",
-      "url": "https://zenn.dev/nagumo_giken/articles/3aa382e433357a",
-      "site": "Zenn(LLM)",
-      "published": "2026-10-19T09:31:07Z",
-      "description": "多段ゲートの破綻から、人間の調査手順を再現する「メモ先行パイプライン」へ回帰するまで\nある話題について、人間がWebで調べて裏を取る作業をLLMに代行させる。本稿は、そのための非同期調査パイプラインを本番で壊し、作り直した記録だ。\n!\n3行でまとめると（TL;DR）\n\nLLMに自律的な多段バリデーションを持たせたら、正しい文を誤爆判定して削除しまくり、本番が崩壊した。\n賢い自律推論を諦め、人間のO...",
-      "category": "AI・技術",
-      "rss_category": "",
-      "image_url": ""
-    },
-    {
       "title": "S3 Vectors × Bedrock × LangGraphで作るSelf-RAGの設計",
       "url": "https://zenn.dev/ma_sa_shi/articles/5b15aa0b2577b3",
       "site": "Zenn(LLM)",
@@ -69,16 +59,6 @@
       "site": "Zenn(LLM)",
       "published": "2026-10-19T08:34:58Z",
       "description": "AIエージェントのRouting参照コストを測る：51,666文字→約13,000文字の意味と限界\nAIエージェントにSkill（作業手順）が増えると、「必要なものだけ読む」設計でも、 どれを読むか決めるための一覧 が大きくなります。\n私の実行基盤では、その一覧を毎回全文読む代わりに、軽量索引から候補を絞る仕組みを試しています。今回測ったのは、軽量索引の大きさだけではありません。 候補を選び、正規...",
-      "category": "AI・技術",
-      "rss_category": "",
-      "image_url": ""
-    },
-    {
-      "title": "Claude Code のセッション引き継ぎ: handoff 系スキル5本はどこが違うか",
-      "url": "https://zenn.dev/skillselion/articles/2dc8a05db34a21",
-      "site": "Zenn(LLM)",
-      "published": "2026-10-19T08:10:29Z",
-      "description": "長いセッションはコンテキストが尽きます。新しいセッションには、それまでの記憶がありません。この穴を埋めるのが handoff（引き継ぎ）スキルです。やることは一つで、いまの作業状態を短い文書に書き出し、次のエージェントに読ませます。\nカタログで「handoff」を名前に含むスキルを調べると、インストール数が最も多いのは mattpocock/skills の handoff スキル で、1,002...",
       "category": "AI・技術",
       "rss_category": "",
       "image_url": ""
@@ -139,6 +119,36 @@
       "site": "Zenn(LLM)",
       "published": "2026-10-19T02:22:33Z",
       "description": "TL;DR\n投機デコード（speculative decoding）は、軽量なdrafterが未来のトークンを予測し、巨大なtargetがそれを一括で照合するという、無損失で推論を加速する鉄板技術だ。しかしその速度向上はもろい。drafter は単一 target・狭い分布に向けて訓練されるため、チャットからコードへ、単言語から多言語へ、という workload シフトで受入率が崩壊する。例えば ...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "DeepSeek-V4.1-Flash-1017 を Claude Code の委譲先と検索 MCP にする",
+      "url": "https://zenn.dev/serotoninmax/articles/deepseek-v41-flash-claude-code-delegate",
+      "site": "Zenn(LLM)",
+      "published": "2026-10-19T02:15:02Z",
+      "description": "Claude Code から DeepSeek-V4.1-Flash-1017（2026-10-17 公開、MIT）を使う仕組みを 2 つ作った。実装の委譲と、検索 MCP サーバーである。委譲では Claude Code の子プロセス（claude -p）を起動し、OpenRouter の Anthropic 互換エンドポイントに向ける。\nこのモデルは利用料金が安い。一方で第三者評価では誤答が多...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "LLM APIを使うと何ができるのか？",
+      "url": "https://zenn.dev/tessei/articles/91cfb23f215822",
+      "site": "Zenn(LLM)",
+      "published": "2026-10-19T01:34:55Z",
+      "description": "LLM APIを使うと何ができるのか？\nChatGPTを使えば、文章の作成や要約、プログラムの相談など、さまざまなことができます。\nでは、自分たちが開発しているWebアプリケーションや業務システムに、同じようなAIの機能を組み込むことはできるのでしょうか。\n答えは、できます。\nそのために使われる技術のひとつが「LLM API」です。\nLLMやプロンプトについて理解していても、実際のアプリケーション...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "RAG のチャンクは「今|日」で切れていた：Go 製 nibble の日本語分割を青空文庫で確かめる",
+      "url": "https://zenn.dev/ousiass/articles/cde25ed34e5320",
+      "site": "Zenn(LLM)",
+      "published": "2026-10-19T01:14:15Z",
+      "description": "はじめに：そのチャンク、日本語のどこで切れていますか\n\nRAG（検索拡張生成）の前処理で、文書をチャンク（検索に使うために分けた文章の一片）に分けたあと、実際に「どこで切れたか」を一つずつ確かめたことはありますか？ 英語なら空白で区切れるので大きく外れにくいのですが、日本語は単語の間に空白がありません。「今日」が「今」と「日」に分かれたり、句点だけが次のチャンクの先頭に回ったりしても、ベクトル検索...",
       "category": "AI・技術",
       "rss_category": "",
       "image_url": ""
