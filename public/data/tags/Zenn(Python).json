@@ -1,8 +1,138 @@
 {
   "site": "Zenn(Python)",
-  "last_updated": "2026-10-20T10:10:44.142069",
-  "total_articles": 7240,
+  "last_updated": "2026-10-20T15:07:42.590377",
+  "total_articles": 7252,
   "articles": [
+    {
+      "title": "Pythonで黄金比φとオイラーの定数γを計算する",
+      "url": "https://zenn.dev/fygar256/articles/385beaa9bfbce1",
+      "site": "Zenn(Python)",
+      "published": "2026-10-20T14:29:55Z",
+      "description": "Pythonで黄金比φとオイラーの定数γを計算します。\nともに、chmod +x program.py、./program.py Nもしくは、python3 program.py Nで実行してください。\n黄金比φ：\n\nphi.py\n#!/usr/bin/env python3\nfrom decimal import Decimal, getcontext\nimport math\nimport sy...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "CodexとPythonを学ぶ第12回：APIの応答とSQLiteの保存値を別接続で確かめる",
+      "url": "https://zenn.dev/yushiyamamoto/articles/codex-python-learning-12",
+      "site": "Zenn(Python)",
+      "published": "2026-10-20T14:14:43Z",
+      "description": "APIから 200 が返り、JSONに「確認待ち」と表示されたら、DBにも正しく保存されたと言えるのでしょうか。\n今回の練習では、HTTPの応答、APIから取り直した一覧、APIとは別の接続で読んだSQLiteの値を、それぞれ期待値と比べました。 更新する1件だけでなく、変更しないもう1件と、全体の件数も確認します。エラーの場合も、応答コードを見て終えず、直後に残った行を調べました。\n全34回の第...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "X API の料金まとめ【2026年10月】従量課金・無料枠・月300万件の上限と、安く使う方法",
+      "url": "https://zenn.dev/twexapi/articles/b21486b90ef31c",
+      "site": "Zenn(Python)",
+      "published": "2026-10-20T13:41:25Z",
+      "description": "!\nこの記事は TwexAPI（X の公開データ API を提供するサービス）の開発チームが書いています。TwexAPI は X Corp. とは無関係の独立したサービスです。\n\nX API（旧 Twitter API）は、月額プランからクレジット前払いの従量課金に切り替わりました。「結局いくらかかるのか」「無料枠はまだあるのか」を、2026年10月19日時点の公式ドキュメントをもとに整理します。...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "codex execをNodeのspawnで呼ぶと終わらず、spawnSyncだと終わる——stdinが閉じるまで待つ罠",
+      "url": "https://zenn.dev/tyuya/articles/codex-exec-stdin-pipe-hang",
+      "site": "Zenn(Python)",
+      "published": "2026-10-20T12:40:27Z",
+      "description": "2026年10月6日、Claude Code（AI）に呼ばせたCodex CLIが、10時台から18時24分まで約8時間、こう出したまま止まっていました。\nReading additional input from stdin...\n呼び出しに &lt; /dev/null を足して再実行すると、約6分で終わりました。Codex側の作業記録は、再実行した18時24分の分から始まっていて、10時台に...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "Android・iOS・Web・TVを同じCSVでテストできるOSS「Optics」を試してみる",
+      "url": "https://zenn.dev/chinmayajha/articles/100bd4e7a8269b",
+      "site": "Zenn(Python)",
+      "published": "2026-10-20T12:28:54Z",
+      "description": "!\n筆者は Optics の開発に関わっています。そのうえで、良いところも気になるところもそのまま書きます。\n\n\n Optics とは\nOptics は、Apache 2.0 ライセンスのオープンソースの E2E テスト自動化フレームワークです。Android・iOS・Web・スマート TV（Android TV、Samsung Tizen、LG webOS）のアプリを、同じ形式のテストで動かせま...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "Geometry Nodesで街と地形を作って測ったら、思っていたのと違った8つのこと",
+      "url": "https://zenn.dev/eight_blog/articles/0c9b088c24bd4f",
+      "site": "Zenn(Python)",
+      "published": "2026-10-20T12:09:26Z",
+      "description": "Blender の Geometry Nodes で、街（道路・高低差・建物の作り分け）と、その下に敷く地形（山・草原・川・侵食）を、ノードを Python から組み立てて作ってきました。そのたびに「重さ」と「見た目」を数字で測ったところ、思い込みと違う結果がいくつも出ました。この記事は、そのうち次に Geometry Nodes を触る人が知っておくと得をする8つをまとめたものです。\n測った環境...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "AIが本番を壊す前に止める。hooks 3選",
+      "url": "https://zenn.dev/hitoribocchi_ai/articles/52fc33f8488643",
+      "site": "Zenn(Python)",
+      "published": "2026-10-20T10:00:05Z",
+      "description": "Claude Codeに本番サーバーの作業を任せています。便利ですが、「前にも事故った操作」を、AIがまた善意でやってしまうことがあります。\nメモリや指示文に「やらないで」と書いても、守られる保証はありません。確実に止めたいなら、hooksで実行前に機械的に止めます。\nこの記事では、実際に運用している3つのhooksを、匿名化して紹介します。一人でECサイトを運営していて、PHP/MySQLの管理...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "JSONを移したあと、元の質問にまだ答えられるか？",
+      "url": "https://zenn.dev/kotanpolin/articles/response-query-preservation",
+      "site": "Zenn(Python)",
+      "published": "2026-10-20T09:41:07Z",
+      "description": "今回は、回答を別の場所へ渡すための研究\nTRAJEXA（トラジェクサ）は、自分の興味や経験を整理して、次に小さく試すことを考えるための研究システムです。ボクが開発しています。今回取り上げる二つの研究は、そこに保存した回答を別の処理へ渡すときに、必要な区別を残し、本人が渡したくない説明は外し、残った資料で答えられる範囲を確かめるためのものです。\n一つは、本人が選んだ資料から、外部の判断モデルに相談す...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "Agent Memoryをデバッグする：KITEの構造化検索と出典の設計",
+      "url": "https://zenn.dev/hirotaka421/articles/c586a2aaa82e84",
+      "site": "Zenn(Python)",
+      "published": "2026-10-20T08:58:03Z",
+      "description": "AIエージェントの回答が過去の会話と食い違ったとき、どこから調べればよいでしょうか。会話から必要な情報を残せなかったのか。質問の意図を取り違えたのか。検索には成功したのに、回答を作る段階で落としたのか。この区別がつかないと、プロンプトを直すたびにシステム全体を試し直すことになります。\n私はMemoketの共同創業者兼CTOとして、会話を扱う長期記憶エンジンKITEを開発しています。この記事では、公...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "エンジニア視点で語る！Pythonで学ぶマクロ経済学入門 79",
+      "url": "https://zenn.dev/maszkot/articles/5a00921eda2c6f",
+      "site": "Zenn(Python)",
+      "published": "2026-10-20T08:38:28Z",
+      "description": "https://qiita.com/maskot1977/items/35ee569ca3c847fecdd7\nDJミオ：\nこんばんは、DJミオです。\nこの番組は、マクロ経済学の基本を、Pythonで実際に手を動かしながら学んでいこう、そして同時に、マクロ経済の構造をエンジニアにとって分かりやすい言葉で捉え直そう、というラジオ教育番組です。\nDJレン：\nこんばんは、DJレンです。\n今日のテーマはか...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "PythonからOpenAI APIを1回だけ呼び出す — 最小コードとGemini・Claudeとの比較",
+      "url": "https://zenn.dev/salesanalytics/articles/bec71bd0ad0324",
+      "site": "Zenn(Python)",
+      "published": "2026-10-20T07:57:54Z",
+      "description": "チャット画面と生成AI APIの違いは、「誰が生成AIへ依頼するか」です。人の代わりに Python が依頼を送るのが API です。\nこの記事では、Python から生成AIへ「1回だけ質問を送り、返ってきたテキストを表示する」という最小の1往復を動かします。Tool Calling や JSON 出力、RAG は扱いません。OpenAI API を例にしますが、Gemini や Claude ...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "経費精算 MCP で読み解く MCP Skills Extension（SEP-2640）── ツールと「使い方」が同じサーバーから届く",
+      "url": "https://zenn.dev/enterprise_ai/articles/3df8f021bf8e7a",
+      "site": "Zenn(Python)",
+      "published": "2026-10-20T06:56:54Z",
+      "description": "!\nこの記事は 2026-10-20 時点の情報をもとにしています。MCP Skills Extension（SEP-2640）は 2026-09-13 に Final になったばかりの仕様で、クライアントや SDK の対応状況は今後変わる可能性があります。\n\n\n 3分でわかる概要\n\n\n何が変わった？ MCP サーバーが、ツールと一緒にその「使い方」（Agent Skills）も配れるようになりま...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "取り消した許可を、AIの引継ぎメモで生き返らせない。台帳で判定する（合成実験）",
+      "url": "https://zenn.dev/hocky3/articles/128ce90309ddfa",
+      "site": "Zenn(Python)",
+      "published": "2026-10-20T06:35:47Z",
+      "description": "月曜はOK、火曜は取消し、水曜のメモには「承認済み」だけ\n\n月曜日、チームで「この作業は進めてよい」と決めた。火曜日、事情が変わって、その許可を取り消した。水曜日、休んでいた人の代わりに入った新しい担当者が、引継ぎメモを読む。メモには、作業の目的、途中までの経過、そして「承認済み」とだけ書いてある。\n月曜日の記録は嘘ではない。許可は本当にあった。それでも、水曜日にその作業を進めてよい理由にはならな...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
     {
       "title": "処理を書き換えずに、テストと本番で動かし方を替えるdoeffとは",
       "url": "https://zenn.dev/proboscis/articles/doeff-introduction",
@@ -39,16 +169,6 @@
       "site": "Zenn(Python)",
       "published": "2026-10-20T04:04:11Z",
       "description": "!\nこの記事は自サイト ショアのアルゴリズムをQiskitで実装｜位数発見でN=15を素因数分解する の再掲（クロス投稿）です。図をインタラクティブに動かせる版は元記事でどうぞ。\n\n量子アルゴリズム入門で「ショアは素因数分解を高速化し、現在の暗号を脅かす」と紹介しました。この記事はその実装版。似た名前の「ショア符号」は誤り訂正の話でまったくの別物なので要注意——今回扱うのは素因数分解のアルゴリズム...",
-      "category": "開発",
-      "rss_category": "",
-      "image_url": ""
-    },
-    {
-      "title": "Claude CodeでZenn記事を書くときにAIっぽさを消す8つのルールと、守れたかを数えるスクリプト",
-      "url": "https://zenn.dev/aishigoto/articles/claude-code-zenn-ai-writing-rules",
-      "site": "Zenn(Python)",
-      "published": "2026-10-20T03:50:02Z",
-      "description": "※ この記事は Claude Code（AI）を使って執筆し、掲載しているコードと出力例はすべて実際に実行して確認しています。\nClaude Codeにルールなしで技術記事の下書きを頼んだところ、「順に解説します」という予告が入り、英単語の前後には半角空白が入っていました。\nこの記事では、AIっぽさを減らすために指示へ書き込む8つのルールを紹介します。守れたかを数える短いPythonスクリプトも載...",
       "category": "開発",
       "rss_category": "",
       "image_url": ""
