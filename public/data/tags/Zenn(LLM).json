@@ -1,8 +1,48 @@
 {
   "site": "Zenn(LLM)",
-  "last_updated": "2026-10-20T00:36:06.758157",
-  "total_articles": 6853,
+  "last_updated": "2026-10-20T05:16:17.934112",
+  "total_articles": 6858,
   "articles": [
+    {
+      "title": "文脈を直し、logitを曲げる──EMOが閉ループtest-time計算で凍結LLMを伸ばす仕組み",
+      "url": "https://zenn.dev/lixian/articles/emo-closed-loop-test-time-computation",
+      "site": "Zenn(LLM)",
+      "published": "2026-10-20T02:35:37Z",
+      "description": "TL;DR\nTextGrad に代表される test-time context optimization は、正解を知らないジャッジのフィードバックでプロンプト（文脈）を書き換え、凍結した LLM を質問ごとに適応させる。しかし通常の条件付き生成には、文脈の更新がもたらす分布の変化を「どれだけ強く」出力に反映するかを制御するつまみがない。北京大学と Samsung Research Beijing...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "Claude Codeをヘッドレスで回すときのstream-jsonログの読み方と集計",
+      "url": "https://zenn.dev/kosukeozawa/articles/claude-code-headless-logs",
+      "site": "Zenn(LLM)",
+      "published": "2026-10-20T02:24:19Z",
+      "description": "Claude Code を claude -p --output-format stream-json --verbose で毎日自動実行していると、1実行につき数百行の JSON ログが溜まります。この記事では、その stream-json ログの行の種類と各フィールドの意味を公式ドキュメントで確認しながら、完了した実行だけを抜き出して集計する小さな Python スクリプトを作り、手元の実ログ...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "OpenHands Model Routerの費用試算とCline既定モデル変更の確認点",
+      "url": "https://zenn.dev/ainewsdaily/articles/20261016_harness_t1",
+      "site": "Zenn(LLM)",
+      "published": "2026-10-20T02:16:50Z",
+      "description": "今週の要点\nOSS系のコーディングエージェントで、2026年10月6日〜9日に動きがありました。作業ごとにモデルを振り分けるModel RouterがOpenHandsの本体に入り、Clineは既定モデルが2週続けて変わっています。\nこの記事は、動画を見ていない人にもそのまま渡せるように、費用の試算と、上げる前の確認事項をまとめたものです。費用の数字は当チャンネルの机上の計算で、実測ではありません...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "その個人情報、LLMに漏れていませんか：Go製マスキング deidentify は日本語の氏名と電話番号を見逃した",
+      "url": "https://zenn.dev/nonejp/articles/61a31da50ef2c2",
+      "site": "Zenn(LLM)",
+      "published": "2026-10-20T01:17:36Z",
+      "description": "はじめに：LLM に渡す問い合わせ文から、個人情報はどこまで消えるのか\n\n問い合わせの要約や分類を LLM API に任せようとすると、「顧客の氏名や電話番号をそのまま外部に送ってよいのか」という問題に最初にぶつかりませんか。送る前にアプリ側で個人情報を偽の値に置き換えておけば、外に出る情報を減らせる可能性があります。ただし、要約や分類の質への影響は別途評価が必要です。Go のサービスでこれをやる...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
     {
       "title": "WindowsでローカルLLMを「毎日動かす」ために必要な4つのこと",
       "url": "https://zenn.dev/warrobotsxyz/articles/ollama-local-llm-automation-book-guide",
@@ -44,6 +84,16 @@
       "image_url": ""
     },
     {
+      "title": "Next.jsと",
+      "url": "https://zenn.dev/bambampurin/articles/2026-09-16-tech-daily",
+      "site": "Zenn(LLM)",
+      "published": "2026-10-19T22:43:31Z",
+      "description": "!\n本日は外部ニュースフィードの取得エラーが発生したため、特定のニュースヘッドライン記事の代わりに、現在注目のAI/LLM、Agent Frameworks、MCP、Web開発、Pythonエコシステムにおける技術トレンドと展望を概括します。\n\n\n ニュースフィード取得状況について\n本日（2026年9月16日）の自動収集処理において、Google News RSSからのデータ取得時にネットワーク名...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
       "title": "Dify の RAG が外れる原因を Claude Code に特定させる。LangSmith のトレースで検索チャンクを読む",
       "url": "https://zenn.dev/okzaq/articles/dify-rag-eval-claude-code-langsmith",
       "site": "Zenn(LLM)",
@@ -54,21 +104,21 @@
       "image_url": ""
     },
     {
-      "title": "画面1枚しか見ないAI実況に「状況メモ」を持たせて、さっきの出来事を覚えさせた",
-      "url": "https://zenn.dev/aidelivusagi/articles/ai-jikkyo-scene-memo",
+      "title": "【今更聞けないLLM 前編】70B・4bit・128Kトークンって結局なに？数式なしで理解する",
+      "url": "https://zenn.dev/takumi_shida/articles/2026-10-20-zenn-llm-basics-part1-model",
       "site": "Zenn(LLM)",
-      "published": "2026-10-19T22:00:05Z",
-      "description": "TikTok Live で、ゲーム画面を見ながら AI が喋り続ける実況配信を作っています。声とキャラクターは、VOICEVOX のキャラクター中国うさぎをお借りしています。この実況は設計の都合で、毎回その瞬間のゲーム画面1枚だけを見て喋っていたため、さっき流れた台詞や少し前の出来事を踏まえられず、状況を正確に伝えることができませんでした。\nそこで、実況とは別に画面を定期的に見て「状況メモ」(LL...",
+      "published": "2026-10-19T22:30:05Z",
+      "description": "「70Bモデル」「4bit量子化」「128Kトークン対応」\nAI関連のニュースや技術記事で日常的に目にする言葉ですが、それぞれの数字が実務において何を意味しているのか、正確に説明しようとすると曖昧になりがちです。\n本記事では、以下の4つの疑問について数式を使わずに整理します。\n\n70Bの「B」が表す具体的な意味\n量子化によってモデルサイズが縮小する仕組み\n数値を粗くしても実用的な性能が保たれる理由...",
       "category": "AI・技術",
       "rss_category": "",
       "image_url": ""
     },
     {
-      "title": "Windowsで動かすローカルLLM自動化：Ollama実測ガイド",
-      "url": "https://zenn.dev/warrobotsxyz/books/windows-local-llm-automation",
+      "title": "常駐型AIチャットエージェントの「処理中」サイン設計 — 既読後の沈黙をどう埋めるか",
+      "url": "https://zenn.dev/hach/articles/chat-agent-progress-acknowledgment-design",
       "site": "Zenn(LLM)",
-      "published": "2026-10-19T16:14:47Z",
-      "description": "Windows 11 + Ollamaで、ローカルLLMを「単発で試す」から「毎日自動で動かす」へ。HTTP API、ストリーミング、VRAM、生成速度、タスクスケジューラ、失敗時の運用まで、実機で確認した手順と数値だけをまとめました。最後に、手元のメモを毎朝要約する「ローカルAIダイジェスト」を標準ライブラリだけで作ります。",
+      "published": "2026-10-19T22:13:06Z",
+      "description": "チャットに常駐するAIエージェントが、調査・集計・複数ツール呼び出しを伴う依頼を受けると、回答までに数十秒から数分かかることがあります。人間の同僚であれば「ちょっと確認します」と一言添えてから作業に入りますが、エージェントが何も発言せずに処理だけを進めると、利用者には「既読はついたのに何も反応がない」状態に見えます。複数チャネルでの重複質問の記事で触れた「5分後に返事が来ないので念のためメールでも...",
       "category": "AI・技術",
       "rss_category": "",
       "image_url": ""

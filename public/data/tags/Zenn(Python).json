@@ -1,8 +1,168 @@
 {
   "site": "Zenn(Python)",
-  "last_updated": "2026-10-20T00:36:06.758157",
-  "total_articles": 7223,
+  "last_updated": "2026-10-20T05:16:17.934112",
+  "total_articles": 7239,
   "articles": [
+    {
+      "title": "処理を書き換えずに、テストと本番で動かし方を替えるdoeffとは",
+      "url": "https://zenn.dev/proboscis/articles/doeff-introduction",
+      "site": "Zenn(Python)",
+      "published": "2026-10-20T05:08:43Z",
+      "description": "doeffとは？\nテストのためだけに、処理へ引数やifを足したことはありませんか。doeffは、処理を書き換えずに、テストと本番で動かし方を替えるPythonのライブラリです。この記事では、同じ挨拶の処理に付けるハンドラを替え、「花子」にも「太郎」にも挨拶させます。\nたとえば、本番では設定から名前を読み、テストでは決めた名前を渡したい場面です。そのたびに引数やifを足すと、処理の本体が実行環境の都...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "『ひとり開発の目覚め』技術構成とあらすじ紹介",
+      "url": "https://zenn.dev/dev_unr/articles/intro-solo-dev-awakening-book",
+      "site": "Zenn(Python)",
+      "published": "2026-10-20T05:05:24Z",
+      "description": "プログラミングができないデザイナーとして社会に出た人間が、手書きの PHP / JavaScript から、Access / VBA の現場を経て、AI とともにフロント〜バック〜インフラまでひとりで組み上げていく——その経緯を全40話程度でまとめました。\n📚 本編はこちら\nhttps://zenn.dev/dev_unr/books/da4c0809aa8758\n\n\n この本が扱っていること\n主...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "AIの警告に順位を付ける｜重大度×確信度の式と、検知ごとの確信度の決め方",
+      "url": "https://zenn.dev/tsukurugawa/books/71971c300882de",
+      "site": "Zenn(Python)",
+      "published": "2026-10-20T04:43:53Z",
+      "description": "AIやルールで出した警告を重大度だけで並べると、同じ重大度の中で、確実な警告と誤って鳴りうる警告が区別なく並びます。\n\nこの本は、ビル管理の業務システム（Python / FastAPI）で警告の順位をどう出しているかの記録です。コードに入っている定数・規則・閾値をそのまま載せています。\n\n・並び順の全体像：重大度で帯を分け、帯の中を「重大度の重み × 確信度 ＋ 種類の加点」で並べる\n・8種類の...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "ショアのアルゴリズムをQiskitで実装｜位数発見でN=15を素因数分解する",
+      "url": "https://zenn.dev/maru1228/articles/quantum-shor-factoring-qiskit",
+      "site": "Zenn(Python)",
+      "published": "2026-10-20T04:04:11Z",
+      "description": "!\nこの記事は自サイト ショアのアルゴリズムをQiskitで実装｜位数発見でN=15を素因数分解する の再掲（クロス投稿）です。図をインタラクティブに動かせる版は元記事でどうぞ。\n\n量子アルゴリズム入門で「ショアは素因数分解を高速化し、現在の暗号を脅かす」と紹介しました。この記事はその実装版。似た名前の「ショア符号」は誤り訂正の話でまったくの別物なので要注意——今回扱うのは素因数分解のアルゴリズム...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "Claude CodeでZenn記事を書くときにAIっぽさを消す8つのルールと、守れたかを数えるスクリプト",
+      "url": "https://zenn.dev/aishigoto/articles/claude-code-zenn-ai-writing-rules",
+      "site": "Zenn(Python)",
+      "published": "2026-10-20T03:50:02Z",
+      "description": "※ この記事は Claude Code（AI）を使って執筆し、掲載しているコードと出力例はすべて実際に実行して確認しています。\nClaude Codeにルールなしで技術記事の下書きを頼んだところ、「順に解説します」という予告が入り、英単語の前後には半角空白が入っていました。\nこの記事では、AIっぽさを減らすために指示へ書き込む8つのルールを紹介します。守れたかを数える短いPythonスクリプトも載...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "画像背景処理・自動除去ツールの決定版比較！エンジニア視点で選ぶ最適解と現場の活用法",
+      "url": "https://zenn.dev/valleywag/articles/992d50402092cf",
+      "site": "Zenn(Python)",
+      "published": "2026-10-20T03:30:53Z",
+      "description": "Web開発やECサイトの構築、技術ブログのアイキャッチ作成など、日々のエンジニアリング業務の中で「画像から背景だけを綺麗に切り抜きたい」という場面は意外と頻繁に発生します。\nCLIツールでバッチ処理を組むべきか、Cloud APIを叩くべきか、あるいはWebブラウザ上で完結させるべきか——。現場のパフォーマンスや開発効率に直結するからこそ、ツールの選定基準は明確にしておきたいところです。\n今回は、...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "AIへ渡す前のDOCX・XLSX点検：Python標準ライブラリで構造上の手掛かりを拾う",
+      "url": "https://zenn.dev/adachi_builds/articles/9d0df65dc3c22b",
+      "site": "Zenn(Python)",
+      "published": "2026-10-20T02:47:30Z",
+      "description": "「見えている本文から氏名を消した」だけでは、コメントや作成者属性まで確認したことにはなりません。この記事では、DOCX・XLSXのZIP内にあるXMLをローカルで読み、手動確認が必要な構造上の手掛かりを返す小さな点検器を作ります。\n外部送信、元ファイルの編集、機密内容の表示はしません。検出ゼロでもアップロード可とは判定しません。 自動匿名化ツール、マルウェア検査、法令適合性の判定器ではありません。...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "非構造化データの差分更新設計：Chunk ID・HashとCoding Agentへの指示設計",
+      "url": "https://zenn.dev/qian/articles/e0d0641c530284",
+      "site": "Zenn(Python)",
+      "published": "2026-10-20T02:40:38Z",
+      "description": "はじめに\nPDF・Word・PowerPointなどの非構造化データをRAG（Retrieval-Augmented Generation）に利用する場合、一般的に「テキスト抽出 → チャンク分割 → Embedding生成 → データストアへの登録」という処理を行います。\n初回の登録は比較的わかりやすい一方、運用で難しくなるのが元の文書が更新されたときの差分処理です。文書の一部しか変更されていな...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "船級承認はソフトが出さない — 船舶初期設計AIの関門",
+      "url": "https://zenn.dev/kensudo1203/articles/d3d5e2e9c4e439",
+      "site": "Zenn(Python)",
+      "published": "2026-10-20T02:34:20Z",
+      "description": "画面に「最適船型」や「安全です」と出すのは簡単です。Holtrop の初期推定を試運転抵抗と書くと、説明と実装が一緒に壊れます。\nship-design-ai では、排水容積は ∇ = Lpp × B × T × Cb だけです。抵抗と馬力は Holtrop-1982 サブセット + ITTC-57 の初期推定です。探索は制約検査が先です。証明していない解を最適とは呼びません。LLM は仕様抽出と...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "X APIの429とURL付きPost $0.200を前提にした投稿キュー｜5件で$0.260になる見積もりをdry-runで確認",
+      "url": "https://zenn.dev/cauchye_asia/articles/1107d883270ece",
+      "site": "Zenn(Python)",
+      "published": "2026-10-20T01:57:34Z",
+      "description": "結論（先に）\n\nX API は従量課金で、Post作成は $0.015、URL付きPost作成は $0.200（約13倍）です。\nレート制限（安定性）と課金（コスト）は別の制御です。POST /2/tweets はアプリ単位 10,000/24時間、ユーザー単位 100/15分で、超過すると 429 になります。\n投稿キューは「①送信前に支出を見積もる → ②送信 → ③ヘッダーで残量を更新 → ...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "MCPサーバーを理解してみる　さらに自作MCPサーバーを作ってみよう",
+      "url": "https://zenn.dev/mosayan/articles/mcp-server-001",
+      "site": "Zenn(Python)",
+      "published": "2026-10-19T22:50:05Z",
+      "description": "はじめに\n現在、もう世間では当たり前ですが、業務でもプライベートでもClaudeやGeminiといった生成AIをバンバン利用しています。\nその中でAIと各種サービスを連携してより便利にサービスを使いこなすことが可能です。\nClaude Desktopだと各種サービスと連携するためのコネクタと呼ばれるものがMCPサーバーに当たりますが、実際のところMCPサーバーについてあまり気にせず利用しています。...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "5ちゃんねるのスレ一覧をPythonで集計する（簗農相辞任から1週間のニュース速報+を例に）",
+      "url": "https://zenn.dev/nexgendata/articles/42b481fc283f5f",
+      "site": "Zenn(Python)",
+      "published": "2026-10-19T22:47:32Z",
+      "description": "10月14日に簗和生農相が辞表を提出し、週末の世論調査では高市内閣の支持率が下がりました。ANNの調査（10月17〜18日）では47.1%で、前月から11.2ポイント低下、内閣発足以来の最低です（ANN／KSB瀬戸内海放送）。\nこの1週間、5ちゃんねるのニュース速報+（newsplus）でこの話題がどれだけ語られたかを数えてみました。\n\n10月15〜19日に立った高市首相・内閣関連のスレは 51本...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "画面1枚しか見ないAI実況に「状況メモ」を持たせて、さっきの出来事を覚えさせた",
+      "url": "https://zenn.dev/aidelivusagi/articles/ai-jikkyo-scene-memo",
+      "site": "Zenn(Python)",
+      "published": "2026-10-19T22:00:05Z",
+      "description": "TikTok Live で、ゲーム画面を見ながら AI が喋り続ける実況配信を作っています。声とキャラクターは、VOICEVOX のキャラクター中国うさぎをお借りしています。この実況は設計の都合で、毎回その瞬間のゲーム画面1枚だけを見て喋っていたため、さっき流れた台詞や少し前の出来事を踏まえられず、状況を正確に伝えることができませんでした。\nそこで、実況とは別に画面を定期的に見て「状況メモ」(LL...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "Whisper の large-v3 が長い録音で turbo に負けた。文が消える原因は2つあった",
+      "url": "https://zenn.dev/eight_blog/articles/930e61ec56bab0",
+      "site": "Zenn(Python)",
+      "published": "2026-10-19T21:43:04Z",
+      "description": "Mac で Whisper の文字起こしを比べていたら、いちばん大きい large-v3 が、軽い large-v3-turbo より誤りが多いという結果になりました。13分半の日本語の録音で、turbo が 14.8%、large-v3 が 23.9%（文字の誤り率・whisper.cpp）。調べると、原因はモデルの賢さではなく、次の2つでした。\n\n\n前の区間の文字を、次の区間の手がかりに渡す設...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "ACR帳票エンジンをC#/VB.NET/Python/Javaから直接呼ぶ(C FFI)",
+      "url": "https://zenn.dev/maskedridersys/articles/aff29ddeb6dd35",
+      "site": "Zenn(Python)",
+      "published": "2026-10-19T18:09:05Z",
+      "description": "はじめに\n前回の記事では、ACR (Across Report) という帳票レンダリングエンジンをNode.js/Electron向けに napi-rs でバインディングした話を書きました。\nhttps://zenn.dev/maskedridersys/articles/aac51875cf45dc\nACRのコアは Rust 製で、実体は C ABI のネイティブ共有ライブラリ（axr_runt...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "Windowsで動かすローカルLLM自動化：Ollama実測ガイド",
+      "url": "https://zenn.dev/warrobotsxyz/books/windows-local-llm-automation",
+      "site": "Zenn(Python)",
+      "published": "2026-10-19T16:14:47Z",
+      "description": "Windows 11 + Ollamaで、ローカルLLMを「単発で試す」から「毎日自動で動かす」へ。HTTP API、ストリーミング、VRAM、生成速度、タスクスケジューラ、失敗時の運用まで、実機で確認した手順と数値だけをまとめました。最後に、手元のメモを毎朝要約する「ローカルAIダイジェスト」を標準ライブラリだけで作ります。",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
     {
       "title": "バックテストのデータは、どこまで細かければいいのか ― 日足では幻、1秒と15秒は同じだった",
       "url": "https://zenn.dev/perkin/articles/e45abea3f6db8c",
