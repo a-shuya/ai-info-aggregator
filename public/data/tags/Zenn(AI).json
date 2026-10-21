@@ -1,24 +1,194 @@
 {
   "site": "Zenn(AI)",
-  "last_updated": "2026-10-21T15:33:05.600470",
-  "total_articles": 15149,
+  "last_updated": "2026-10-21T19:36:20.931538",
+  "total_articles": 15161,
   "articles": [
     {
-      "title": "【ゆるっとAI基礎 #1】AIは会話するたびに学習してるの？",
-      "url": "https://zenn.dev/daphne/articles/ai-learning-vs-context",
+      "title": "情シスのための Claude Code 運用レシピ集",
+      "url": "https://zenn.dev/chukidx_dev/books/claude-code-recipes-joshisu",
       "site": "Zenn(AI)",
-      "published": "2026-10-21T07:00:05Z",
-      "description": "先に結論から言う。\nAIは、あなたについて、渡されたことしか知らない。\n正確に言うと、AIが使えるのは二つだけ。\n\n学習のときに身につけた知識\n今回、渡されたもの\n\nあなたが前に話したことは、二つ目に入れて渡さない限り、知らない。\nでも、ChatGPTなどのAIと長く話していると、こう感じることがある。\n\n前に話したことを覚えてる\nだんだん自分向けになってきた\n会話しながら学習してるのかな？\n\n自...",
+      "published": "2026-10-21T14:47:18Z",
+      "description": "中小企業の情シスが日々の運用で使えるスクリプトを、Claude Code への依頼文・完成したスクリプト・確かめ方のセットでまとめたレシピ集です。各レシピは架空のデータで自動テストを通したものだけを掲載し、毎週1本を目安に追加します。",
       "category": "AI・技術",
       "rss_category": "",
       "image_url": ""
     },
     {
-      "title": "【開催報告】CEATEC 2026 登壇：ローカルLLMで実現するセキュアなAI駆動開発",
-      "url": "https://zenn.dev/fixstars/articles/ceatec2026-conference-report",
+      "title": "Claude Codeの自動再開のあと、古い画面に入力すると会話が二つに分かれる。送信を止めるフックを作った",
+      "url": "https://zenn.dev/twinharness/articles/resume-guard-stale-terminal",
       "site": "Zenn(AI)",
-      "published": "2026-10-21T06:46:34Z",
-      "description": "コーディングエージェントをはじめとする生成AIの活用は、ソフトウェア開発の現場で急速に広がっています。一方で、組込み開発や受託開発の現場には「お客様のソースコードや設計情報を社外のクラウドAIに渡せない」という壁があります。この壁のために、AIの恩恵を本格的に受けられていないチームも少なくありません。\n株式会社フィックスターズは、2026年10月13日から16日に幕張メッセで開催された「CEATE...",
+      "published": "2026-10-21T14:42:32Z",
+      "description": "AI の使用上限（一定の利用量に達すると、回復するまで使えなくなる制限）で作業が止まったとき、回復の時刻に会話を自動で再開させる仕組みを作りました。ところが、再開は画面に出ないところで進むので、止まったままの古いターミナル画面（コマンドを打ち込む黒い画面）は、そのことを知りません。そこへうっかり指示を打つと、同じ会話が「裏で進んだ版」と「古い画面の版」の二つに分かれてしまいます。\nそこで、古い画面...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "AIエージェントに「実装しながら考える」をさせない。技術負債を減らす計画書作成プロンプト",
+      "url": "https://zenn.dev/kazuki_izutani/articles/1709552ca099f1",
+      "site": "Zenn(AI)",
+      "published": "2026-10-21T13:56:29Z",
+      "description": "はじめに\nClaude Code などのコーディングエージェントに実装を任せていると、既存の共通関数を使わずに似た関数を新たに作ったり、他の箇所とは違う方法でエラー処理をしたりすることがあります。\nこれらの原因の多くは、実装前の計画のあいまいさにあります。計画に未決定や要検討の項目が残っていると、エージェントは、実装中にそれらの箇所を自己判断して実装します。そのときの材料として使われるのは、実装の...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "Claude Code の AskUserQuestion にフックで答える（スマホからも）",
+      "url": "https://zenn.dev/dawon/articles/c21789f4cb0b6f",
+      "site": "Zenn(AI)",
+      "published": "2026-10-21T13:47:01Z",
+      "description": "Claude Code はときどき AskUserQuestion ツールで選択式の質問をしてきます（「どのフレームワークにしますか？」など）。ターミナルの前にいないと、そこで止まったままになります。\nフックのドキュメントには -p モードで答える方法（PreToolUse フックが allow と答えを入れた updatedInput を返す）が載っています。通常の対話セッションでも Permi...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "AI にほかの AI へ相談させていたら、返事を誰も読んでいなかった",
+      "url": "https://zenn.dev/claire_ai/articles/gaibu-ai-iriguchi",
+      "site": "Zenn(AI)",
+      "published": "2026-10-21T13:25:49Z",
+      "description": "「codex や Gemini に投げてることが監視アプリ上でわからない＆返ってきても放置が多い」\n2026-09-07、作業を任せている AI（Claude Code）の動きを見ていて、こう言われた。\n!\n🔑 具体的な中身（全体の作り・数字・直し方）は、こちらの記事に書いています\nこの記事では概要だけを書いています👇\n\nhttps://note.com/claire_ai/n/n0d383fb0...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "Claude Code×Claude in ChromeでUIテストを自動化する【指示の書き方とスキル化】",
+      "url": "https://zenn.dev/suekichi_system/articles/claude-code-chrome-ui-testing",
+      "site": "Zenn(AI)",
+      "published": "2026-10-21T12:56:25Z",
+      "description": "🚀 はじめに\nAIに実装を任せても、画面を開いて動作を確かめるのは人の仕事のまま、という状態になっていないでしょうか。\nこの記事では、Claude Code と Claude in Chrome を連携して、画面の確認（UIテスト）までAIに任せる方法を紹介します。\n\nClaude Code と Chrome をつなぐ\n「開くURL・操作・期待する結果・やってはいけないこと」の4点でテストを指示す...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "AI駆動開発のためのWebプロジェクト初期構築ガイド",
+      "url": "https://zenn.dev/h_kamikawa/articles/007d98ac98bb3f",
+      "site": "Zenn(AI)",
+      "published": "2026-10-21T12:53:42Z",
+      "description": "はじめに\n個人開発・クライアントワークで、AIエージェントを前提としたWeb開発環境を構築するための標準手順。\n本格的な機能開発を開始する前に、ローカル環境・GitHub・インフラ・CI/CD・初回デプロイ・公開確認まで完了させる。\nこれにより、開発開始後は機能実装に集中できる。\n\n 技術スタック\nアプリケーションの種類によって、以下の2種類を使い分ける。\n\n\n\n\n管理画面・業務システム・SaaS...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "LLMは「何年の情報か」を一貫して認識できているのか？ 米国スタンフォード大学 AI Lab の研究から考える",
+      "url": "https://zenn.dev/syoshida07/articles/56555330b47aa2",
+      "site": "Zenn(AI)",
+      "published": "2026-10-21T12:42:08Z",
+      "description": "米国スタンフォード大学の Stanford AI Lab(SAIL)は、COLM 2026で発表される研究成果の一つとして Do Language Models Consistently Encode the Current Year? を発表したした。\n研究は言語モデルの「時間認識」に焦点を当てており、LLMが現在の年をどの程度一貫して認識できているのかを検証するものである。\n近年、生成AIの議...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "Claude Code 10月リリースを導入判断で読む：Haiku 5.5・effort指定・hooksのonFailureをどう入れるか",
+      "url": "https://zenn.dev/joinclass/articles/claude-code-oct-2026-release-adoption",
+      "site": "Zenn(AI)",
+      "published": "2026-10-21T12:34:40Z",
+      "description": "なぜこの記事を書くのか\n当社（合同会社ジョインクラス）では、書籍の執筆、売上集計、朝のダイジェストなどを claude -p のヘッドレス実行で回しています。人が見ていない時間に動くので、Claude Codeのリリースは「便利な新機能」ではなく、コストと事故率が変わるかどうかという目で読む必要があります。\n2026年10月は 2.1.287〜2.1.295 と細かいリリースが続きました（一覧は ...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "個人開発を、役割ごとの AI ボットと Devin で分担して回したい",
+      "url": "https://zenn.dev/kyto64/articles/ai-bot-dev-env",
+      "site": "Zenn(AI)",
+      "published": "2026-10-21T12:00:09Z",
+      "description": "検証環境:\n\n2026 年 10 月時点\nボットの基盤: Grok Bot（役割ごとに複数のボットを立てている）\n実装とレビュー: Devin（個人向けの有料プラン）\nPR レビュー: Codex（自動レビュー＋@codex review）\nGitHub Pro\n\n\n 背景:\n個人開発のリポジトリが増えてきた。拡張機能、ライブラリ、ポータルサイト、Zenn の原稿などがある。1 つのチャットで全部...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "AI開発が終わらない問題を、ハーネスの視点で考える",
+      "url": "https://zenn.dev/enyugi/articles/8357ee1a1388f1",
+      "site": "Zenn(AI)",
+      "published": "2026-10-21T11:48:40Z",
+      "description": "AIにコードを書いてもらえるようになっても、開発を進めるための管理や検証まで、自動でなくなるわけではありません。\n私自身、非エンジニアとしてAIでサービスを作り、リリース予定を3か月遅らせても、理想完成の状態に届かなかった経験があります。\nそのときの問題を考える手掛かりになったのが、AIエージェントの「ハーネス」です。\nこの記事では、ハーネスを、AIの実行・状態の引き継ぎ・検証・次の作業への移行を...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "生成AIにバイナリを解析させる。MCP連携リバースエンジニアリング搭載のC++製ネイティブエディタ「Zume Editor」無料ベータを公開",
+      "url": "https://zenn.dev/smolt_dev/articles/846d9d696f0ca8",
+      "site": "Zenn(AI)",
+      "published": "2026-10-21T11:45:42Z",
+      "description": "はじめに\nZume Editor は、C++ でフルスクラッチ開発しているネイティブのテキスト／コード／バイナリ(HEX)エディタです。描画は Windows が Direct2D/DirectWrite、macOS が Core Text、Linux が GTK4/Pango と、各 OS のネイティブ API を直接使っています。\nこのたび Windows / macOS / Linux 対応...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "Claudeの日本語推敲スキルyomiyasuを含む3種の選び方",
+      "url": "https://zenn.dev/sunsun_eng/articles/claude-japanese-proofreading-skill-yomiy",
+      "site": "Zenn(AI)",
+      "published": "2026-10-21T11:44:24Z",
+      "description": "Claudeの日本語推敲スキルyomiyasuを含む3種の選び方\n\n Claudeの日本語推敲スキルyomiyasuを含む3種の選び方\nこの記事の要点\n\nyomiyasu は、Claude で日本語の文章を読みやすく推敲するために話題になった新しいスキルです。詳細は参考記事（https://qiita.com/inoyu-qiita/items/0ffe6e74ecaf3aaa8b14）で紹介され...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "自分で作った社内資料を根拠に判断して、3回間違えた。一次情報を読んだ瞬間に全部ひっくり返った",
+      "url": "https://zenn.dev/yk_studio/articles/internal-docs-were-wrong",
+      "site": "Zenn(AI)",
+      "published": "2026-10-21T11:10:22Z",
+      "description": "コンテストに出すために、提出要件をまとめたドキュメントを自分で作りました。要件を1つずつ書き出して、対応状況を並べた、ごく普通の管理表です。\nそこに誤りが3件ありました。\nそして、その資料を信じて判断していたので、間違いに気づいたのは一次情報（公式ルール）を直接読んだときでした。\n\n 誤り1: 別のアプリの設計が混入していた\n資料にはこう書いてありました。\n\n案A（無料トライアル）: 既にプレミア...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "ベトナムのAI開発会社に開発を依頼するなら？RAG・AIエージェントの実装で確認したい技術要件",
+      "url": "https://zenn.dev/sotatek_jp/articles/fb444894e1e642",
+      "site": "Zenn(AI)",
+      "published": "2026-10-21T10:26:20Z",
+      "description": "生成AIを活用したアプリケーション開発では、LLMのAPIを呼び出すだけであれば、比較的短期間でプロトタイプを作成できます。\nしかし、企業向けのAIシステムを本番環境で運用するとなると、考慮すべき要素は大きく増えます。\n特に、社内データを利用するRAGや、外部システムと連携するAIエージェントでは、認証・認可、データ処理、システム連携、監視などの設計が欠かせません。\nこうした開発を外部に委託する場...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "Claude Proプラン1本で、テスト1,118件の思考整理アプリを4週間で作った──Opusは設計と監査だけ",
+      "url": "https://zenn.dev/aburachudoku/articles/nebulark-hands-on",
+      "site": "Zenn(AI)",
+      "published": "2026-10-21T10:23:01Z",
+      "description": "!\n3行でまとめると\n\nClaude の Pro プラン1本（上位の Max プランなし）で、マインドマップ × Markdown ノートの Web アプリを約4週間で作った\n利用枠を溶かさないために、Opus には設計と監査だけをさせ、実装は Sonnet に丸投げする3フェーズ（/design → /build → /check）で回した\nAI が「動くけど重い」コードを涼しい顔で出してくるの...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "MiniMax H3 プロンプト技法図鑑",
+      "url": "https://zenn.dev/enaiya/books/minimax-h3-prompt-zukan",
+      "site": "Zenn(AI)",
+      "published": "2026-10-21T10:15:33Z",
+      "description": "カメラワーク・構図・時間制御・音響など26の映像演出技法を、生成動画と実際のプロンプトで学ぶ実践リファレンス。",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "「判断」は自分、「作業」は AI。cmux × Claude Code で実装を並列化しつつ「理解を手放さない」開発フロー",
+      "url": "https://zenn.dev/medirom_tech/articles/claude-code-control-tower",
+      "site": "Zenn(AI)",
+      "published": "2026-10-21T10:13:03Z",
+      "description": "AI に並列で作業させて生産性を上げるメリットは享受しつつ、何をするかは自分で決めて、できたものは自分が読んでから通す、という形にしたくて、cmux（AI エージェントを並列で動かすターミナル）と Claude Code でワークフローを組みました。\n特別なことはしていませんが、本記事ではその仕組みを紹介します。\n\n 全体像\nシステムの中核は、ターミナルのタブを「司令塔」と「ワーカー」に完全に分離...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "文字画像生成UIを状態モデルとして設計する",
+      "url": "https://zenn.dev/choco1/articles/8b5cfd0578fc5c",
+      "site": "Zenn(AI)",
+      "published": "2026-10-21T10:08:24Z",
+      "description": "文字画像の生成は、入力してボタンを押すだけに見えます。QAでは、入力・スタイル・キャンバス・プレビュー・保存を別の契約として扱うと、失敗を説明しやすくなります。Fontify を例に、カリグラフィーとレトロ系アルファベットを同じ視点で整理します。\n\n 観測できる契約\n\n\n\n契約\n問い\n失敗例\n\n\n\n\n入力\n文字・数字・記号が保持されるか\n末尾が欠落する\n\n\nスタイル\n選択が結果に反映されるか\nプレ...",
       "category": "AI・技術",
       "rss_category": "",
       "image_url": ""
@@ -64,16 +234,6 @@
       "image_url": ""
     },
     {
-      "title": "OpenAIの12時間プロンプトキャッシュ：重なる書込みをPythonで二重計上しない",
-      "url": "https://zenn.dev/aipha_euro/articles/31bc109bf45f71",
-      "site": "Zenn(AI)",
-      "published": "2026-10-21T05:25:27Z",
-      "description": "長い共通指示や参照資料を何時間かおきに使うアプリでは、キャッシュの有効時間が採用判断に関わります。ただし、長く保存する指定を足せば必ず安くなるわけではありません。複数の書込み境界を置く場合は、同じトークンを重複して数えたり、書込み倍率に通常入力分を再び加えたりしない計算が必要です。\n本稿では、OpenAIの12時間プロンプトキャッシュを題材に、30分と12時間の書込み区間をPythonで分けます。...",
-      "category": "AI・技術",
-      "rss_category": "",
-      "image_url": ""
-    },
-    {
       "title": "AIを仕事で使いたいなら、まず「毎回つまずく一工程」から",
       "url": "https://zenn.dev/aqiu/articles/9a9418269fd09b",
       "site": "Zenn(AI)",
@@ -99,26 +259,6 @@
       "site": "Zenn(AI)",
       "published": "2026-10-21T05:02:05Z",
       "description": "Team Toonkitの原稿掲載図をもとに、AIでラベルを日本語化した説明用イラストです。実際の製品画面ではありません。\nAI動画制作のツールを設計するとき、どの生成モデルを採用するかは大きな判断です。ただ、それだけで「一本の映像を完成させやすいか」は決まりません。採用したカット、キャラクターの参照画像、修正の理由が残っていなければ、モデルを変更するたびに判断をやり直すことになります。\n私はTo...",
-      "category": "AI・技術",
-      "rss_category": "",
-      "image_url": ""
-    },
-    {
-      "title": "「契約済みです」→「このプランでは使えません」📊 データの軸を足す前にAIに実際のAPIを叩いてもらった話",
-      "url": "https://zenn.dev/charge0315/articles/b7cef5eb317df4",
-      "site": "Zenn(AI)",
-      "published": "2026-10-21T04:45:34Z",
-      "description": "みなさん、こんにちは！\n「ALPHA FORGE 開発秘話」の第24話です。\n「需給データ、使えますか？」「契約済みです！」……AIが実際に叩いたら「This API is not available on your subscription」😇\n自信満々に答えた私、見事に間違っていました。しかもこの日、ドキュメントを信じていたら気づけなかった落とし穴が、もう1つ見つかります。\n日本株のAI銘柄ス...",
-      "category": "AI・技術",
-      "rss_category": "",
-      "image_url": ""
-    },
-    {
-      "title": "僕がAIを使うときに考えていること",
-      "url": "https://zenn.dev/motimotinotch/articles/0d1d8edc0e5366",
-      "site": "Zenn(AI)",
-      "published": "2026-10-21T04:40:49Z",
-      "description": "皆さんはAIに指示を送るときどうしていますか？　まずは僕はワークスペースに移動してからリサーチをさせます。「xxプロジェクトの⚪︎⚪︎について調べて」これだけです。\n指示をこれ以上長くすることは、ほとんどない。背景の説明も、ファイルの場所も、前回までの経緯も書かない。それでも AI はたいてい、ちゃんと目的の場所にたどり着く。\nこの記事では、その「これだけ」で足りている理由と、足りなかったときに ...",
       "category": "AI・技術",
       "rss_category": "",
       "image_url": ""
@@ -154,31 +294,11 @@
       "image_url": ""
     },
     {
-      "title": "「どの仕事の続きか」をすべてLLMに判定させない——合成データで精度と費用を比較した",
-      "url": "https://zenn.dev/salt2/articles/b9d14d9063d1a9",
-      "site": "Zenn(AI)",
-      "published": "2026-10-21T03:00:08Z",
-      "description": "AIの利用ログに、次の2つの依頼が、この順番で並んでいたとします。\n\n① データアナリスト候補者との面接で使う質問を6つ作って\n② 面接担当者が最初に読む1分用の説明も作って\n\n②は、①の続きでしょうか。それとも、別の新しい仕事でしょうか。\n人であれば文脈から判断できます。しかし、AIの利用状況を「どの仕事に、どれだけ使ったか」という単位で把握したいなら、この判定を、依頼1件ごとに機械で行わなけれ...",
-      "category": "AI・技術",
-      "rss_category": "",
-      "image_url": ""
-    },
-    {
       "title": "Version Drift in Prompt-to-Video Tools: A Design Tradeoff for...",
       "url": "https://zenn.dev/wendyxyz733/articles/a525995dee7f8d",
       "site": "Zenn(AI)",
       "published": "2026-10-21T02:21:11Z",
       "description": "Version Drift in Prompt-to-Video Tools: A Design Tradeoff for...\n\n The Problem: Treating a Black-Box Video Generator as a Pipeline Stage\nTools such as Kling 4.0 can help structure that early explorati...",
-      "category": "AI・技術",
-      "rss_category": "",
-      "image_url": ""
-    },
-    {
-      "title": "AFM（Apple Foundation Models）を活用したテキストアドベンチャーゲームの開発【第3回】登場人物の会話と記憶を作る",
-      "url": "https://zenn.dev/gritchbreed/articles/856d4499dbdb07",
-      "site": "Zenn(AI)",
-      "published": "2026-10-21T02:19:36Z",
-      "description": "はじめに\n※この記事は、筆者のQiitaアカウントからの転載（マルチポスト）です。\nApple Foundation Models（以下AFM）のオンデバイスモデルを使った会話アドベンチャー「湯けむりの記事　〜大分・別府・湯布院殺人事件〜」を開発しています。そのゲームエンジンを試せるデモとして、別府のスナック「血の池」での会話を楽しめる「血の池の夜」を公開しています。\n\nゲーム本編の紹介や制作中の...",
       "category": "AI・技術",
       "rss_category": "",
       "image_url": ""
