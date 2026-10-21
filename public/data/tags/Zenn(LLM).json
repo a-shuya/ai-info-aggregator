@@ -1,8 +1,88 @@
 {
   "site": "Zenn(LLM)",
-  "last_updated": "2026-10-21T10:29:17.647017",
-  "total_articles": 6882,
+  "last_updated": "2026-10-21T15:33:05.600470",
+  "total_articles": 6890,
   "articles": [
+    {
+      "title": "reasoning_effortが接続先で変わるときの3つの失敗と対処",
+      "url": "https://zenn.dev/orca_forge/articles/openai-compatible-reasoning-effort",
+      "site": "Zenn(LLM)",
+      "published": "2026-10-21T13:06:32Z",
+      "description": "📝 この記事は forge.workstyle.tech に掲載した記事の転載です。\n\nOpenAI互換の接続先でも、同じ欄名が同じ動作を意味するとは限りません。reasoning_effortをクラウド、自前のvLLM、中継サーバーに送ると、値の拒否や逐次応答の空など、異なる結果になりました。400の本文と接続先ごとの実測を見て設定を分ける必要がありました。\n\n ① クラウドは、ツールと設定の組...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "LLMの評価を楽にしたいので、Pydantic Evalsを使ってみる",
+      "url": "https://zenn.dev/straydog/articles/915146b34d876a",
+      "site": "Zenn(LLM)",
+      "published": "2026-10-21T12:17:34Z",
+      "description": "はじめに\nここ1年ほど、LLMの調整をする中で、特に大変だったのが品質の確認です。調整のたびに結果を評価し直す必要があり、その繰り返しがしんどくなることも多くありました。評価用ライブラリがいくつも登場しているのも、同じような苦労をしている開発者が多いからではないかと思います。\nまた、JevのようなDecisionモデルも出てきているので、モデルの判断を数値で確かめることは、これからさらに大事になる...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "MCPが「ステートレス」になった日 — 2026-07-28仕様を、金融系フルスタックエンジニアの視点で読み解く",
+      "url": "https://zenn.dev/ojineko/articles/5369ceca94cd17",
+      "site": "Zenn(LLM)",
+      "published": "2026-10-21T10:01:23Z",
+      "description": "セッションを捨てる、とはどういうことか。AIエージェント連携の土台であるMCPが、静かに、しかし決定的に設計思想を変えた。\n\n2026年7月28日、Model Context Protocol（MCP）の新仕様 2026-07-28 が公開された。本記事執筆時点（2026年8月3日）で、まだ1週間も経っていない。\n見出しだけ追うと「ステートレスになりました」で終わってしまう。だが、これは単なる最適...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "311スキル入りのEverything Claude Codeを、3スキルと1ルールパックに絞る",
+      "url": "https://zenn.dev/skillselion/articles/06e00facc82273",
+      "site": "Zenn(LLM)",
+      "published": "2026-10-21T08:41:16Z",
+      "description": "Everything Claude Code（affaan-m/ECC）は、311個のスキルと71個のエージェント、97個のコマンドシムが1つのリポジトリに入った「全部入り」キットです。GitHub スターは約28万5000、フォークは約4万2000（GitHub API、2026年10月21日取得）。\nただ、全部入れるのが正解とは限りません。この記事では、ECC を「必要な分だけ」取り出すときに...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "Claude Sonnet 5.5へ載せ替えると400になる4つの書き方：smokeテストで先に潰す",
+      "url": "https://zenn.dev/yunisuta/articles/claude-sonnet-400-smoke-anthropic-tnzgdo",
+      "site": "Zenn(LLM)",
+      "published": "2026-10-21T06:45:22Z",
+      "description": "モデルIDを claude-sonnet-5-5 に書き換えただけで、本番のジョブが全部 400 で落ちる。載せ替えで起きがちな事故です。\nSonnet 5.5 は、以前のモデルで普通に通っていたリクエストの形をいくつか拒否します。この記事では、拒否される形を最小リクエストで再現するsmokeテストを書き、新しい書き方に直すところまでを手順にします。\n前提は @anthropic-ai/sdk と...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "VRAM 8GB・12GB でローカルLLMはどれだけ遅くなる？ 同じモデルで実測した",
+      "url": "https://zenn.dev/shacikku3/articles/vram-8gb-12gb-local-llm-speed",
+      "site": "Zenn(LLM)",
+      "published": "2026-10-21T06:08:27Z",
+      "description": "この記事で分かること\nローカルLLM（自分のPCで動かすAIのモデル）を試そうとすると、まず気になるのが「自分のGPUのVRAM（GPUのメモリ）で、どれくらいの速さが出るのか」です。\nこの記事では、同じモデル（gemma4:12b-it-q8_0、約13〜14GB）を、筆者のPCで次の4つの条件で動かし、文章を出す速さを測った結果を紹介します。\n\nGPU（RTX 4080 16GB）にすべて載せ...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "LINE Messaging API × LLM ボットを本番運用して残った、5つの実装パターン",
+      "url": "https://zenn.dev/satsumacreative/articles/ed413db32dcdf5",
+      "site": "Zenn(LLM)",
+      "published": "2026-10-21T06:04:26Z",
+      "description": "台湾・台北で LINE ボットを開発・運用している薩摩創意(Satsuma Creative)です。自社サービスを含めて4つの LINE ボットを本番運用していて、そのうちいくつかは LLM(Claude)で返答を作っています。\nLLM をつなぐこと自体は数十行でできます。本番で問題になったのは、LLM の外側でした。この記事では、運用中に障害や事故を経験して、結果としてコードに残った5つのパター...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "仕様書が整っていないWebアプリの今の挙動をREAで調べ、仕様かどうかを確かめる",
+      "url": "https://zenn.dev/mumihatsu/articles/6ca0221bc96c55",
+      "site": "Zenn(LLM)",
+      "published": "2026-10-21T05:18:50Z",
+      "description": "はじめに\n仕様書が無い、古い、一部しか無い、という既存のWebシステムのテストを頼まれることがあります。仕様書などが整っていない場合は、今の挙動を調べて、それが仕様かどうかを判断する必要があります。今の挙動には不具合も混ざっています。\nREA（Reverse Engineer Anything）がWebサイトも調べられると知り、公式の練習用アプリで試しました。この記事では、REAで今の挙動の何が取...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
     {
       "title": "MiniCPM5-2BをVRAM 6GBで動かす：約115 tok/s、思考の切り方・min_p・Ollamaテンプレートの注意",
       "url": "https://zenn.dev/localai_lab/articles/3ff120145cb92d",

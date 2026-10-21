@@ -1,14 +1,144 @@
 {
   "site": "Zenn(生成 AI)",
-  "last_updated": "2026-10-21T10:29:17.647017",
-  "total_articles": 4642,
+  "last_updated": "2026-10-21T15:33:05.600470",
+  "total_articles": 4655,
   "articles": [
+    {
+      "title": "画像生成 AI を業務に「渡す」ときに必要だったもの（フォーム・日本語入力・検証・言い方）",
+      "url": "https://zenn.dev/rayray/articles/d033e4fa61c850",
+      "site": "Zenn(生成 AI)",
+      "published": "2026-10-21T14:36:55Z",
+      "description": "商品写真の「切り抜き・拡張・不要物除去・加工・背景差し替え・三面図」を、ローカルの ComfyUI + Qwen-Image-Edit 2511 で回す仕組みを作り、ほかの人が使える形にして渡しました。\nモデルは誰でもダウンロードできます。ComfyUI のワークフローも、公式テンプレートを開けば動きます。それでも、そこから「ほかの人が毎日の仕事で使える」状態までには、思っていたよりずっと距離があ...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "DGX Spark 1台で画像生成 AI を実運用して分かったこと（統合メモリ・熱・GPU 権限・LAN 直結）",
+      "url": "https://zenn.dev/rayray/articles/ba78ed0bffaa99",
+      "site": "Zenn(生成 AI)",
+      "published": "2026-10-21T14:35:42Z",
+      "description": "NVIDIA DGX Spark（GB10）1台で、ComfyUI + Qwen-Image-Edit 2511 の画像処理ワークフロー（切り抜き・拡張・不要物除去・加工・背景差し替え・三面図）を業務用に回しています。同じ機体では LLM（llama.cpp）や 3D 生成も動かしていて、ジョブはキューで 1本ずつ流しています。\nモデルを動かすところまでは、どの解説記事の通りにやっても動きます。こ...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "AIエージェントに「実装しながら考える」をさせない。技術負債を減らす計画書作成プロンプト",
+      "url": "https://zenn.dev/kazuki_izutani/articles/1709552ca099f1",
+      "site": "Zenn(生成 AI)",
+      "published": "2026-10-21T13:56:29Z",
+      "description": "はじめに\nClaude Code などのコーディングエージェントに実装を任せていると、既存の共通関数を使わずに似た関数を新たに作ったり、他の箇所とは違う方法でエラー処理をしたりすることがあります。\nこれらの原因の多くは、実装前の計画のあいまいさにあります。計画に未決定や要検討の項目が残っていると、エージェントは、実装中にそれらの箇所を自己判断して実装します。そのときの材料として使われるのは、実装の...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "確認1行は2か月連続の修正ゼロで戻す — 降格した箱を2段で昇格させる運用の型",
+      "url": "https://zenn.dev/takumahayami/articles/eigyou-ai-shokaku-2dankai-sen",
+      "site": "Zenn(生成 AI)",
+      "published": "2026-10-21T12:56:47Z",
+      "description": "商談前メモ5箱の運用では、AIの案をそのまま使う箱から「AIの案＋人の確認1行」へ降格させる箱を、月に2箱まで動かします。前回の止めた行は消さずに降格させるでは、降格した箱を置く降格表（箱名・降格形・確認の問い1行・戻る基準）と、読む順番の最後尾から降格する順番、▲確認つきの商談メモ1枚の読み方を扱いました。\n降格を続けると、▲の行が下がるたびに商談メモ1枚の中で人間の手が増えていきます。降格は「...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "Seedream 5.5で画像を仕上げるには？透過素材・部分編集・文字入れの確認ポイント",
+      "url": "https://zenn.dev/nathanli200011/articles/0e4c4ce206013a",
+      "site": "Zenn(生成 AI)",
+      "published": "2026-10-21T12:45:34Z",
+      "description": "Seedream 5.5を制作に取り入れるなら、最初に確認したいのは「透過素材として使えるか」「修正しても被写体が変わらないか」「文字を正しく読めるか」の3点です。ECの商品画像、SNSの告知、店舗のポスターでは、この違いが仕上げに必要な作業量を左右します。\nこの記事では、公開されている機能説明をもとに、画像を実際のデザインに組み込むための確認方法と、書き換えて使えるプロンプトを紹介します。掲載す...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "LLMは「何年の情報か」を一貫して認識できているのか？ 米国スタンフォード大学 AI Lab の研究から考える",
+      "url": "https://zenn.dev/syoshida07/articles/56555330b47aa2",
+      "site": "Zenn(生成 AI)",
+      "published": "2026-10-21T12:42:08Z",
+      "description": "米国スタンフォード大学の Stanford AI Lab(SAIL)は、COLM 2026で発表される研究成果の一つとして Do Language Models Consistently Encode the Current Year? を発表したした。\n研究は言語モデルの「時間認識」に焦点を当てており、LLMが現在の年をどの程度一貫して認識できているのかを検証するものである。\n近年、生成AIの議...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "建設の工程表と遅れの返事、AIはどこまで任せられますか？ — 遅れの先で決める",
+      "url": "https://zenn.dev/satoshimizuhara/articles/ai-agent-construction-schedule-delay",
+      "site": "Zenn(生成 AI)",
+      "published": "2026-10-21T11:38:27Z",
+      "description": "昨日は、施工日報と安全点検の仕事で、建設の現場に寄せて読む1回目を書いた。本稿はその2回目で、昨日予告した通り、同じ建設の現場の、工程の読みと遅れの返事の仕事を置く。工程表のたたき台や実績との突き合わせ、遅れの一覧は機械が速く並べられる。しかし遅れの返事は、同じ「3日遅れ」という数字でも、その先に届く仕事によって、動く人と動く金が変わる仕事で、この境目の切り方に、複数の現場の工程を束ねる建設会社は...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "Excelの仕訳入力でAIに任せるのは科目候補の表まで — 例外の行は人間の仕分けに残す",
+      "url": "https://zenn.dev/yoshitokinosita/articles/0021-excel-ai-shiwake",
+      "site": "Zenn(生成 AI)",
+      "published": "2026-10-21T10:41:48Z",
+      "description": "月末が来ると、銀行明細を仕訳に置く日が来る\n月末が来ると、銀行の入出金明細を会計ソフトに取り込む日が1回入ります。ネットバンキングから落とした明細を、1行を1仕訳に置き替える表に直す作業です。摘要は銀行の様式のままで長く、相手名は略称で並ぶ。行の数はその月の入出金の件数の分だけ必要で、1行ずつ目で見て借方と貸方を置いていきます。大半は毎月同じ定形(給与の振込、家賃、水道光熱費、リース料、法人カード...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "MiniMax H3 プロンプト技法図鑑",
+      "url": "https://zenn.dev/enaiya/books/minimax-h3-prompt-zukan",
+      "site": "Zenn(生成 AI)",
+      "published": "2026-10-21T10:15:33Z",
+      "description": "カメラワーク・構図・時間制御・音響など26の映像演出技法を、生成動画と実際のプロンプトで学ぶ実践リファレンス。",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "最低限のAI環境で、資料生成をローカルに実装する方法",
+      "url": "https://zenn.dev/xinome/articles/64a27ba30281f3",
+      "site": "Zenn(生成 AI)",
+      "published": "2026-10-21T10:00:05Z",
+      "description": "最低限のAI環境で、資料生成をローカルに実装する\n勉強会の発表資料を、自分のマシンの上で下書きまで組み立てています。用意したAI環境は、文章を返す呼び出しと、文章をベクトルにする呼び出しの二つです。モデルの配置、GPU、ジョブキュー、オブジェクトストレージは持っていません。\n依頼の受付、索引、検証、ファイルの組み立て、画面への返却は、一つのバックエンドにまとめてあります。実行場所は自分のマシンです...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "AI APIの無駄な再実行を減らすための「Cache Key」設計",
+      "url": "https://zenn.dev/aiai_tool/articles/ebb3db3e72ce3f",
+      "site": "Zenn(生成 AI)",
+      "published": "2026-10-21T07:33:45Z",
+      "description": "AI APIを業務システムに組み込むと、同じ入力に対して何度も同じ処理を実行していることがあります。\n例えば、\n同じ文章の分類\n同じ商品説明の要約\n同じFAQへの回答\n同じ文書からの情報抽出\nなどです。\n処理結果が一定時間変わらないのであれば、毎回AI APIを呼び出す必要はありません。\nそこで利用できるのがCacheです。\nただし、AI処理では単純に入力文字列だけをCache Keyにすると、誤...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "Amazon Bedrock Guardrails を AnswerCarefully で試してみた",
+      "url": "https://zenn.dev/aws_japan/articles/bedrock-guardrails-japanese-tier",
+      "site": "Zenn(生成 AI)",
+      "published": "2026-10-21T05:08:24Z",
+      "description": "Amazon Bedrock Guardrails は、生成 AI モデルに届く前の入力と、モデルが生成した後の出力を検査します。有害だと判定した内容は、利用者へ渡さずにブロックできます。\nユーザー入力 → Guardrail の入力判定 → モデル → Guardrail の出力判定 → 利用者\nこの記事では、Guardrail が入力や出力を遮断することを「ブロック」、Guardrail を通...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
     {
       "title": "Devinに問い合わせ調査を任せて見えてきた「原因未特定」の正体。過去の約700件を分類してみた",
       "url": "https://zenn.dev/canly/articles/9c19bb123e208c",
       "site": "Zenn(生成 AI)",
       "published": "2026-10-21T01:10:05Z",
       "description": "こんにちは、カンリー店舗集客チームの山下です。\n私たちのチームでは、CSやCRといった顧客対応のチームから開発に来る問い合わせの一次調査を、AIエージェントのDevinにやってもらっています。\n運用を始めてしばらく経ちましたが、AIが原因まで特定できる問い合わせと、「原因未特定」としてエンジニアに引き継がれる問い合わせがあると感じていました。\nでは、AIが原因を特定しきれないのはどんな問い合わせな...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "安くて速い Jev を6回チューニングしたら、最後に Claude の grep に2倍差で負けた話",
+      "url": "https://zenn.dev/koudai0711/articles/f7a5cc10496820",
+      "site": "Zenn(生成 AI)",
+      "published": "2026-10-20T23:39:57Z",
+      "description": "結論\n新しいモデルを試す前に、今のやり方を測ってください！\n言いたいのはこれだけです。\n私はこれをやらずに、4時間半ほど遠回りしました。\nObsidian のノート選びを Jev に任せようとして、6回チューニングしました。\n「提示したノートの外れが0%」という数字まで出ました。\nで、最後に今まで通り Claude（Opus）に grep させる方式と比べたら、\n当てた数は Opus が52件、J...",
       "category": "AI・技術",
       "rss_category": "",
       "image_url": ""
