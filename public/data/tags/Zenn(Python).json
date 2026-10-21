@@ -1,8 +1,108 @@
 {
   "site": "Zenn(Python)",
-  "last_updated": "2026-10-21T00:48:28.165220",
-  "total_articles": 7249,
+  "last_updated": "2026-10-21T05:24:48.883530",
+  "total_articles": 7259,
   "articles": [
+    {
+      "title": "保全日報を RAG に載せるとき、ベクトルだけでは設備名が落ちる",
+      "url": "https://zenn.dev/kensudo1203/articles/871dfc236e1fa0",
+      "site": "Zenn(Python)",
+      "published": "2026-10-21T04:54:01Z",
+      "description": "製造現場の技術継承を「チャットボット」と呼ぶと、だいたい失敗します。ベテランの知見は PDF ではなく、Excel の保全実績と、空行だらけの日報と、Comp-A03 と コンプレッサA-03 が混在したメモに残っています。\nTechnologySuccession（画面上の名前は技術継承プラットフォーム）は、その原票を PostgreSQL + pgvector に直し、ベクトル検索とキーワード...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "gpt-realtime でツール呼び出しを試してみた 〜単一・並列呼び出しの実装とモデル別比較〜",
+      "url": "https://zenn.dev/enterprise_ai/articles/ea1777efb5579e",
+      "site": "Zenn(Python)",
+      "published": "2026-10-21T04:30:14Z",
+      "description": "はじめに\nAzure OpenAI の Realtime API において、ツール呼び出し（Function Calling）の動作と応答速度を検証しました。\n検証対象モデルは、gpt-realtime（v1）と gpt-realtime-2.1、gpt-realtime-2.1-mini の計3モデルです。\nまずは単一ツール呼び出しにおける実装の流れと各モデルの応答速度を確認し、続いてv2以降で...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "グラフのセルオートマトンから、超高速な因果発見エンジンへ",
+      "url": "https://zenn.dev/katnap/articles/from-cellular-automata-to-causal-graphs",
+      "site": "Zenn(Python)",
+      "published": "2026-10-21T02:55:50Z",
+      "description": "グラフのセルオートマトンから、超高速な因果発見エンジンへ\n前回の記事（スマホとCursorだけで、6年放置したリポジトリをuv時代の構成に作り直した話）では、graphnet-automata を現代化しました。あのリポジトリの核は「隣接行列を局所ルールで更新し、ネットワークを育てる」というアイデアでした。\n本稿はその続きです。同じ「行列をセルオートマトン（CA）として進化させる」発想が、観測デー...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "TastelessCTF 2019 に参加したので、[Crypto] babypad という問題をどう解いたかを解説します。",
+      "url": "https://zenn.dev/spookies/articles/3f8b08a4cfc723",
+      "site": "Zenn(Python)",
+      "published": "2026-10-21T02:10:05Z",
+      "description": "!\nこの記事ははてなブログ（2019年11月12日公開）からの移行記事です。\n内容が古い場合がありますのでご注意ください。\n\nこんにちは。ロックです。\n先日、TastelessCTF 2019 に参加しました。この記事では、なんとか解くことが出来た問題 [Crypto] babypad についてお話します。\nhttps://ctftime.org/event/872\n\n\n\n\n TastelessC...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "Pythonで経理業務を自動化する！クラウド会計APIとの連携ロードマップと実践手順",
+      "url": "https://zenn.dev/noa_senn/articles/python-accounting-cloud-api",
+      "site": "Zenn(Python)",
+      "published": "2026-10-21T02:08:47Z",
+      "description": "経理業務の煩雑さに追われ、「もっと本質的な仕事に時間を使いたい」と悩んでいませんか？この記事では、Pythonでクラウド会計のAPIを呼び出して仕訳（取引）の登録を自動化するまでの全体像と、freee会計APIを例にした動くコードを紹介します。\n\n なぜ今、経理業務に「Python×クラウド会計」の自動化が必要なのか？\n経理の世界では「紙の領収書」や「手入力の仕訳」が依然として大きな壁となっていま...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "AIツールの順序違反を外側で止める──Python標準機能だけの最小ゲート",
+      "url": "https://zenn.dev/jinsights/articles/4ab6a55d704207",
+      "site": "Zenn(Python)",
+      "published": "2026-10-21T01:04:42Z",
+      "description": "ツールを呼べることと、その順序で呼んでよいことは別です。本稿では「前提となる操作が済んでいなければ、呼び出しを止める」最小例を動かします。\n検証環境はPython 3.12.10。標準機能だけを使い、ネットワーク通信、ファイル変更、実アカウント操作はしません。AWS製品の動作検証ではなく、メモリ内のダミー操作による設計例です。\n\n AWSの発表から、順序だけを取り出す\nAWSのShawn Bice...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "簡易掲示板アプリでクリックジャッキングを再現して対策する",
+      "url": "https://zenn.dev/yukakawa/articles/700aed7af3cb7d",
+      "site": "Zenn(Python)",
+      "published": "2026-10-20T23:30:05Z",
+      "description": "はじめに\nセキュリティについて、なるべく手を動かして勉強をしたい！と思い、生成AIに相談したら、学習用アプリを作ってくれました！この記事では生成AIのことを親しみと敬意を込めて、「トレント先生」と呼んでいます。\n今回はクリックジャッキングを扱います。\n前回のCSRF（クロスサイトリクエストフォージェリ）は「偽造したリクエストを送らせる」攻撃でしたが、クリックジャッキングは「本物の画面を、気づかれず...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "取引所の「1日」は朝6時に始まる。それを日足には入れて、5分足には入れ忘れていた",
+      "url": "https://zenn.dev/codecraft/articles/gmo-5min-cache-day-boundary-6am",
+      "site": "Zenn(Python)",
+      "published": "2026-10-20T23:14:34Z",
+      "description": "暗号資産の自動売買Botを作っています。口座2万円ほどの少額で動かしながら、検証と本番の動きが一致しているかを毎週点検しています。\n前回、4時間足の「区切り」の時刻が検証と本番でずれていた話を書きました。その最後に「日足は6時始まりなので、次はそこを測る」と書いたのですが、先に見つかったのは日足ではなく、5分足のほうの6時のずれでした。しかも今回は、実際のお金で1件、入るべきでない取引に入っていま...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "Webhook署名をHMACからEd25519へ：Correct Hooksで「秘密鍵1本」の検証をPythonで実装する【検証済み】",
+      "url": "https://zenn.dev/daichi01278/articles/correct-hooks-webhook-auth-ja",
+      "site": "Zenn(Python)",
+      "published": "2026-10-20T23:00:06Z",
+      "description": "概要（Overview）\nWebhook を送る側（producer）になると、署名の仕組みを決める必要があります。よく使われるのは Stripe や GitHub と同じ HMAC（共通鍵） 方式です。ただし HMAC では、送り先のエンドポイントごとに秘密鍵を発行し、保管し、ローテーションしなければなりません。顧客が増えるほど、管理する秘密鍵も増えていきます。\n公開鍵署名（非対称署名） を使え...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "Decision Model「Tev1」を試してみる：Colabで資料の根拠をチェックする",
+      "url": "https://zenn.dev/nakanishitf/articles/3a797bd828e077",
+      "site": "Zenn(Python)",
+      "published": "2026-10-20T22:17:42Z",
+      "description": "その説明は、資料に書いてあるか\n商品についての返信を書いた後で、「この説明は、資料から本当に言えるだろうか」と確認したくなることがあります。\n生成AIに下書きを任せる場合も、資料にない機能や保証が混ざっていないかは気になります。\n例えば、翻訳機の資料に次のように書かれていたとします。\n\nこの翻訳機は、日本語と英語の音声翻訳に対応しています。\n翻訳にはインターネット接続が必要です。\n満充電時の連続使...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
     {
       "title": "Pythonで黄金比φとオイラーの定数γを計算する",
       "url": "https://zenn.dev/fygar256/articles/385beaa9bfbce1",

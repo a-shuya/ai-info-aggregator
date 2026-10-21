@@ -1,14 +1,144 @@
 {
   "site": "Zenn(LLM)",
-  "last_updated": "2026-10-21T00:48:28.165220",
-  "total_articles": 6870,
+  "last_updated": "2026-10-21T05:24:48.883530",
+  "total_articles": 6883,
   "articles": [
+    {
+      "title": "MiniCPM5-2BをVRAM 6GBで動かす：約115 tok/s、思考の切り方・min_p・Ollamaテンプレートの注意",
+      "url": "https://zenn.dev/localai_lab/articles/3ff120145cb92d",
+      "site": "Zenn(LLM)",
+      "published": "2026-10-21T02:38:29Z",
+      "description": "OpenBMB の MiniCPM5-2B を、画面表示にも使っている VRAM 6GB の GPU の PC で動かしました。公式 GGUF の Q4_K_M は、llama.cpp で全層が GPU に載り、生成 約115 tok/s。Q8_0 でも約81 tok/s でした（文脈設定4096〔llama.cpp の -c、Ollama の num_ctx〕・思考オフ）。\nこの記事は、llam...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "Dify × AutoHyDE法：チャットボットに「察する力」を与える実装ノート_v2",
+      "url": "https://zenn.dev/upgradetech/articles/ff0131e53bfefe",
+      "site": "Zenn(LLM)",
+      "published": "2026-10-21T01:38:43Z",
+      "description": "Dify × AutoHyDE法：チャットボットに「察する力」を与える実装ノート_v2\n\n この記事を読むとわかること\n本記事では、RAGを利用した問い合わせチャットの検索精度改善を目指す手法として、AutoHyDEを紹介します。\nまた、Difyの標準ノードを使ってAutoHyDEの考え方を簡易的に再現し、その実装方法と注意点を解説します。\n本記事では、以下の内容を扱います。\n\nAutoHyDEと...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "ローカル LLM を ChatGPT や Claude のように使いたくて、セルフホスト型の AI チャット「OmniChat」を作った",
+      "url": "https://zenn.dev/remuno/articles/omnichat-selfhosted-ai-chat",
+      "site": "Zenn(LLM)",
+      "published": "2026-10-21T01:14:14Z",
+      "description": "!\n2026年10月21日時点の情報です。OmniChat v0.5.0 で確認しました。\n読了時間の目安は約 20 分(約 12,300 文字)です。\n\n\n作ったアプリ「OmniChat」。ローカル LLM と、こんな画面で会話できる。(左下の tester は、撮影用のテストアカウントです)\n\n はじめに\n最近、自宅の PC でローカル LLM をいろいろ動かしています。LM Studio に...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "Ollama で LLM のテキスト生成と会話、Tool Call、Agent Loop を体験する",
+      "url": "https://zenn.dev/yutawatanabe/articles/ee753ef8969795",
+      "site": "Zenn(LLM)",
+      "published": "2026-10-21T00:23:26Z",
+      "description": "Claude Code や Codex などの AI コーディングエージェントが普及し、LLM の仕組みを詳しく知らなくても、AI を使ってソフトウェアを開発できるようになりました。大学生の中には、最初から Claude Code や Codex で開発を始めたという人も少なくありません。\n一方で、LLM がどのようにテキストを生成し、会話を成立させ、ツールを呼び出しているのかを知らないと、AI ...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "LLMのstrictなツール引数を実行直前に再検証する",
+      "url": "https://zenn.dev/techstudiolab/articles/llm-strict-tool-arguments-pre-execution-validation",
+      "site": "Zenn(LLM)",
+      "published": "2026-10-21T00:13:25Z",
+      "description": "LLMのツール引数にstrictを指定しても、副作用のある処理では実行直前の業務検証を省略しません。\nJSON Schemaへの準拠と、現在の利用者がその操作を実行できることは別の条件です。\n判断の境界は、LLMが生成した引数をDTOとして受け取り、権限と現在状態を確認してから実行コマンドに変換する位置に置きます。\nただし、検証と更新を別々に実行すると競合が残るため、在庫などの不変条件は更新と同じ...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "コーディングエージェントPiのフックはbashを本当に止められるか実測した",
+      "url": "https://zenn.dev/mskbhd/articles/lab-313-pi-in-process-tool",
+      "site": "Zenn(LLM)",
+      "published": "2026-10-20T23:20:24Z",
+      "description": "きっかけ\nvoluntas 氏の記事(ローカル LLM 雑感 (2026-08))で、コーディングエージェントとして OpenCode と Pi が並べて語られていた。分かっていることとして、Pi は read/write/edit/bash の4ツールだけを持ち、システムプロンプトが1,000トークン未満と極端に小さく、拡張はエージェントループと同一ランタイムで動く in-process 方式だ...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "公開されたClaudeのシステムプロンプトを手元のClaude Codeで実際に検証してみた",
+      "url": "https://zenn.dev/mskbhd/articles/lab-306-claude-claude-code",
+      "site": "Zenn(LLM)",
+      "published": "2026-10-20T23:20:24Z",
+      "description": "この検証は 2026年8月に、当時の Claude Code と当時のモデル世代で実施した。 その後モデルは\n更新されている（記事公開時点では Sonnet 5.5 世代）ので、同じ質問で同じ挙動になるとは限らない。\n読みどころは個々の項目の合否より、「公開されているのは claude.ai 向けの一部で、\nCLAUDE.md やフックは別レイヤーである」という構造の方。\n\n\n きっかけ\nAnth...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "AIエージェントを司令官と部下に分けて、開発を自律運用してみた（1）はじめに",
+      "url": "https://zenn.dev/xin_tech/articles/agent-ops-field-notes-01",
+      "site": "Zenn(LLM)",
+      "published": "2026-10-20T22:35:08Z",
+      "description": "この記事は、下書きと文章の整理に生成AIを使っています。内容は、著者が生成AIを使ってタスクを自律的に回し続けるやり方を実際に試して検証し、そのやり方と感想を記録したものです。\n\n\n この連載は何の記録か\nこの連載は、AIコーディングエージェントを複数の役割に分けて、1つのプロジェクトを自律的に回した記録です。使ったのは Claude Code で、作業の場は D:\\project のような1つの...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "モデルを疑う前に評価環境を疑う：LLMコード評価ハーネスの「gold check」",
+      "url": "https://zenn.dev/koheip/articles/gold-check-eval-env",
+      "site": "Zenn(LLM)",
+      "published": "2026-10-20T19:08:05Z",
+      "description": "はじめに\nこんにちは、ZEN大学2年の松延です。AIエンジニアを目指して、LLMまわりの開発を勉強しながら手を動かしています。\n最近、LLMが生成したコードを自動テスト（pytest）で採点する、ローカルの評価ハーネスを作っていました。「タスクを渡す → モデルがコードを書く → テストを流す → 通ったら正解」という、よくある仕組みです。\nその中で、モデルではなく評価環境のほうが原因でテストが落...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "Microsoft-Decision-1、選択肢の並びを変えたら確率が少し動いた",
+      "url": "https://zenn.dev/kazu_aiengineer/articles/microsoft-decision-1-option-order",
+      "site": "Zenn(LLM)",
+      "published": "2026-10-20T18:51:42Z",
+      "description": "Microsoft-Decision-1が2026-10-09にMicrosoft Foundryで使えるようになりました。問い合わせの振り分けや、返信が返金を約束していないかのチェックのような「選ぶ・判定する」処理を、文章生成なしで安く速く回すためのモデルです。公式ドキュメントの手順で試してみたい人向けの記事です。\nデプロイと認証でつまずいた点、リクエストとレスポンスの形、そしてドキュメントが注...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "【REA/KaniVolcano】AIエージェントで「青鬼」を解析し、自作ゲームエンジンで再現",
+      "url": "https://zenn.dev/otinpan/articles/db9b35d16768b2",
+      "site": "Zenn(LLM)",
+      "published": "2026-10-20T18:16:14Z",
+      "description": "概要\nゲームの実行ファイルをもとに、自作ゲームエンジンでゲームの再現実装をしたことの記事です。\nREAを使って、LLMに実行ファイルからゲームのロジックを推測してもらい、仕様書を書いてもらいます。その後、LLMが自作のゲームエンジンのAPIを使い、もとのゲームを再現します。\n「青鬼」を対象とした結果です\n\n解析+仕様書 : 約15分\nKaniVolcanoEngineでの実装: 約1時間\nコードサ...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "AIエージェントやローカルLLMを夜通し回すとき、Macのスリープで止めない方法",
+      "url": "https://zenn.dev/nosleep_app/articles/a973a918f7b5bc",
+      "site": "Zenn(LLM)",
+      "published": "2026-10-20T17:07:21Z",
+      "description": "Claude Code などの AI エージェントに長いタスクを任せたり、ローカル LLM・画像生成・動画生成を一晩回したりしていると、朝になって「Mac がスリープしていて途中で止まっていた」ということが起きます。\nこの記事では、まず macOS 標準の caffeinate と pmset でこれを防ぐ方法を整理し、最後に「毎回コマンドを打つのが面倒」という人向けの選択肢を一つ紹介します。\n動...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
     {
       "title": "LINEに送った写真と音声メモを、自宅のPCが文字にしてくれるようにした",
       "url": "https://zenn.dev/hilopon/articles/line-local-ai-photo-voice-capture",
       "site": "Zenn(LLM)",
       "published": "2026-10-20T14:37:43Z",
       "description": "会議のホワイトボードを写真に撮る。帰り道に「来週までに見積り」と声で残す。ここまでは誰でもやっています。問題はそのあとで、撮った写真も録った声も、二度と開かない。私のスマホには、読み返されたことのない音声メモが何十本も眠っています。\nそこで、LINEに写真か音声を送るだけで、自宅のPCが文字に起こして、日記用のリポジトリへ分類してしまってくれる仕組みを作りました。文字起こしも要約もクラウドのAIは...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "日本語の指示だけでBlenderに3Dシーンを作らせてみた(mcp-for-blender)",
+      "url": "https://zenn.dev/matsushima_a/articles/day-021-mcp-for-blender-dungeon-room",
+      "site": "Zenn(LLM)",
+      "published": "2026-10-20T13:45:43Z",
+      "description": "本日のGitHub Trending(Python/全言語)で+2,098star/日という伸びを見せていたahujasid/mcp-for-blender(MIT License、旧称blender-mcp)を実際に手元の環境で動かしてみた。\nAIクライアント(Claude Desktop/Claude Code等)からModel Context Protocol(MCP)経由でBlenderの...",
       "category": "AI・技術",
       "rss_category": "",
       "image_url": ""
