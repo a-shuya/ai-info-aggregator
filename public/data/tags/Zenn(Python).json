@@ -1,8 +1,78 @@
 {
   "site": "Zenn(Python)",
-  "last_updated": "2026-10-22T16:02:49.179200",
-  "total_articles": 7294,
+  "last_updated": "2026-10-22T20:03:58.849140",
+  "total_articles": 7301,
   "articles": [
+    {
+      "title": "画像の選択範囲を元サイズへ戻す：整数演算で矩形を外向きに丸める",
+      "url": "https://zenn.dev/vectorick/articles/d14cf83a6a4a99",
+      "site": "Zenn(Python)",
+      "published": "2026-10-22T14:15:09Z",
+      "description": "縮小表示した画像の上で範囲を選んでも、その座標を元画像へそのまま渡すことはできません。切り抜き、注釈、領域マスクなどの処理では、表示座標と元画像の座標を区別する必要があります。\nここでは、整数の表示座標で指定した矩形を元画像へ戻し、選択した範囲を欠かさないように外向きに丸める、小さなPython関数を作ります。\n\n 矩形の意味を先に固定する\n矩形は (x0, y0, x1, y1) とし、右端と下...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "【scikit-learn入門 #4】分類入門 ─ ロジスティック回帰とk近傍法（KNN）",
+      "url": "https://zenn.dev/haruhiro1020/articles/ab521f1e85b2aa",
+      "site": "Zenn(Python)",
+      "published": "2026-10-22T13:00:05Z",
+      "description": "はじめに\n本記事は「Pythonで機械学習を行うscikit-learn入門」シリーズの第4回です．\n第3回では「数値を予測する」回帰 を学びました．\n第4回では「カテゴリ（種類）を予測する」分類（Classification） を扱います．\n分類は，「このメールは迷惑メールか」「この花はどの品種か」のように，\n答えが種類（ラベル）になる 問題です．身近で応用範囲が広いテーマです．\n私のsciki...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "変更は一つだけ。元のモデルと同じ条件で比べる",
+      "url": "https://zenn.dev/data_boatrace/articles/58260a194b93ff",
+      "site": "Zenn(Python)",
+      "published": "2026-10-22T11:43:02Z",
+      "description": "前回「モデルを変える前に、検証台帳を1行書く」では、モーター2連率だけを外す比較計画を保存しました。今回はその計画を使って、実際に学習と比較を行います。\n結果は、選択が67レースで変わり、比較モデルの紙上差引が元モデルより3,290円悪くなりました。改善しなかったからといって、別の設定へ差し替えません。\n何を変えて、どの条件で何が起きたかを残すことが、今回の成果です。\n\n モデルを二つ、同じ条件で...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "MEMOKET NOTEのローカルMCPでノートを読み書きする",
+      "url": "https://zenn.dev/hirotaka421/articles/e10cf2907ea74a",
+      "site": "Zenn(Python)",
+      "published": "2026-10-22T11:03:26Z",
+      "description": "ノートをエージェントに読ませるたび、ファイルの場所や文書の背景を説明し直す。下書きが返ったら、今度はエディタに戻して保存する。この受け渡しを、ノートを持っているアプリ側の道具として扱えないか、という実装を試しました。\n今回の接続確認は、私のローカル環境でAIアシスタントを使って行いました。\n対象は、KITEを使ったコミュニティの個人開発MEMOKET NOTEです。私はMemoketでKITEの開...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "時系列に2027年の出来事が並んだ — パスから拾った日付は「予定」かもしれない",
+      "url": "https://zenn.dev/shinsei99/articles/date-meant-when-to-delete",
+      "site": "Zenn(Python)",
+      "published": "2026-10-22T11:02:55Z",
+      "description": "社内のメール・書類・チャットを横断して、1つの物件について起きたことを日付順に並べ直す道具を書きました。\n検索は1件ずつしか返しませんが、並べると「7月に決めたまま止まっている話」「3年前の指摘が片付いていない」\nといった、前後関係でしか見えないものが出てきます。\n組み上がった年表を見たら、末尾にまだ来ていない年の行が8件並んでいました。\nエラーも警告も出ません。内容は普通の契約書や検針表です。\n...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "2つのCSVを照合するとき、何をキーにすればいい？――重複・欠損・不一致を分ける設計",
+      "url": "https://zenn.dev/aiofficelab/articles/ba8c8f890980d7",
+      "site": "Zenn(Python)",
+      "published": "2026-10-22T10:30:05Z",
+      "description": "毎月、2つのExcelファイルを見比べる仕事があります。\n社員台帳と給与マスタ、請求一覧と入金一覧、システムの出力データと管理表。見比べる項目は違っても、「同じデータを探して、違うところを確認する」という作業は共通しています。\nこうした仕事は、AIに相談すれば比較的簡単に照合ツールを作れそうです。\nでも実際には、単に「同じ番号の金額を比較する」だけでは済まないことがあります。\n特に考えておきたいの...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "平均も標準偏差も同じなのに、リスク評価が逆転する？ VaRとESで比べる2つの投資",
+      "url": "https://zenn.dev/econ_data_lab/articles/var-es-risk-ranking",
+      "site": "Zenn(Python)",
+      "published": "2026-10-22T09:50:26Z",
+      "description": "「投資Aと投資B、どちらの方が危険ですか？」\n直感的には、危険な方を一つ選べそうです。ところが、何をリスクとして測るかによって、異なる答えが出ます。\n今回は、期待リターンがどちらも2%、標準偏差がどちらも10%という、架空の2つの投資を用意しました。95% VaRと95% ESを計算すると、こうなります。\n\n\n\n指標\n投資A\n投資B\n大きい数値\n\n\n\n\n期待リターン\n2%\n2%\n同じ\n\n\n標準偏差...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
     {
       "title": "Python 3.15.0 が正式リリースされたので早速変更点を確認してみた",
       "url": "https://zenn.dev/ctenopoma/articles/python_315_update",
