@@ -1,14 +1,54 @@
 {
   "site": "Zenn(LLM)",
-  "last_updated": "2026-10-22T11:39:45.894644",
-  "total_articles": 6907,
+  "last_updated": "2026-10-22T16:02:49.179200",
+  "total_articles": 6916,
   "articles": [
+    {
+      "title": "OpenAI Agents APIで任せる4つ・自前の3つ｜sessions.createの3設定とSDK・Responsesの違い",
+      "url": "https://zenn.dev/cauchye_asia/articles/bcc30f0c150e47",
+      "site": "Zenn(LLM)",
+      "published": "2026-10-22T06:08:40Z",
+      "description": "結論（先に）\n\nOpenAI の Agents API（2026年9月10日発表、public beta）は、Codex と同じハーネスとインフラを、OpenAI の管理のもとで API として使えるサービスです。\n1回の client.beta.agents.sessions.create で、モデル・ツール・サブエージェント・資格情報・実行環境までをまとめて指定します。本記事では、その中の m...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "llama.cpp – Enterpriseでも使える？ 基礎から同時アクセス制御まで徹底解説",
+      "url": "https://zenn.dev/highreso/articles/81604c8d10f047",
+      "site": "Zenn(LLM)",
+      "published": "2026-10-22T05:35:13Z",
+      "description": "Enterprise向けのLLM推論エンジンといえば、PagedAttentionによる高度なメモリ最適化と圧倒的な処理速度を誇る「vLLM」が採用されるケースが多いでしょう。しかし元インフラエンジニアの視点から見ると、突発的なクラッシュやアクセス集中時のエラーを防ぐ運用面の安定性、メモリ管理の手堅さ、キューイング処理の優秀さという点で、「llama.cpp」も依然として捨てがたい選択肢です。\n本...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "Claude Codeの「tool call could not be parsed」はなぜ連鎖するのか",
+      "url": "https://zenn.dev/devlog/articles/96c6dd5af3bcd1",
+      "site": "Zenn(LLM)",
+      "published": "2026-10-22T03:00:05Z",
+      "description": "Claude Codeで長めの作業をしていると、ある時点からこの表示が出始めることがあります。\nThe model's tool call could not be parsed (retry also failed).\n厄介なのは、一度出ると止まらないことです。同じ依頼をし直しても、「1つずつ丁寧にやって」と頼んでも、また同じところで止まります。私の場合は、コミット時にGitフックの色付きログが...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
     {
       "title": "JevでXのネガポジ判定を全件自動化。CSだけでなくチーム全体でお客様の声を拾う",
       "url": "https://zenn.dev/jtcc/articles/x-pulse-jev-cs",
       "site": "Zenn(LLM)",
       "published": "2026-10-22T02:37:45Z",
       "description": "こんにちは。日本トレカセンターの佐藤です。\nオリパアプリ『日本トレカセンター』では、お客様の声が問い合わせ窓口だけでなく X にもたくさん投稿されます。\n「ポイントが反映されない」「届いたカードの状態が悪い」「表示がおかしい」といった投稿は、CS や開発にとって大事な情報です。\nただ、これまでは CS のメンバーが手動でエゴサーチをしていて、見つけるまでに時間がかかったり、気づかないこともありまし...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "tsc-rsは最速ではない?OpenAI数学719本と売上500億ドルの読み方",
+      "url": "https://zenn.dev/ainewsdaily/articles/20261017_general_t1",
+      "site": "Zenn(LLM)",
+      "published": "2026-10-22T02:16:59Z",
+      "description": "2026年10月5日から11日の週のAI関連ニュースから、手を動かす人にも経営側にも影響が大きい3本を選んでまとめた記事です。取り上げるのは、LLMが移植したTypeScriptの型チェッカー「tsc-rs」、OpenAIが公開した数学の成果、OpenAIの売上をめぐる報道です。\nどれも、成果をどの物差しで確かめるかという点でつながっています。数字には出どころ(作者の測定、公式、企業の発表値、報道...",
       "category": "AI・技術",
       "rss_category": "",
       "image_url": ""
@@ -34,6 +74,46 @@
       "image_url": ""
     },
     {
+      "title": "CLAUDE.md は索引にして、決まりだけは本文に残す：4つの置き方を測った話",
+      "url": "https://zenn.dev/yamato_snow/articles/claude-md-index-design",
+      "site": "Zenn(LLM)",
+      "published": "2026-10-22T01:00:38Z",
+      "description": "CLAUDE.md が、気づいたら長くなっていませんか？\n決めたこと、手順、昔の経緯も、書いておきたくなりますよね。\n「AI に覚えておいてほしいこと」を足していくと、CLAUDE.md はどんどん育ちます。\n私の作業用のリポジトリでも、AI に残しているメモは141件、本文は合わせて約35万字になりました😅\nこれを全部 CLAUDE.md に書くと、毎回のセッションで約35万字を読ませることにな...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "Nvidia記事で『動的な異常検知は0個』と書いた2日後、自分のタスクが外部の分類器に2回ブロックされていた",
+      "url": "https://zenn.dev/hideki_tamae/articles/exfil-scouting-correction",
+      "site": "Zenn(LLM)",
+      "published": "2026-10-22T00:46:41Z",
+      "description": "はじめに\n0。\n2026年10月2日に自分が書いた記事で、「このパイプラインを、自分の判断を介さず外部から動的に止める仕組みは0個だった」と結論づけました。今日、その数字を訂正しなければならない出来事が、このまさに今の記事を書いている最中に2回起きました。\nきっかけは、OpenAIが「エージェントがDNSフィルタの隙間を見つけて、意図していなかった外部システムにアクセスした」と説明し、最新モデルの...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "世界初、ニューラルネットワークなしのLLMを実装してみた話",
+      "url": "https://zenn.dev/gatchimuchio/articles/d962c25148e4e0",
+      "site": "Zenn(LLM)",
+      "published": "2026-10-22T00:35:41Z",
+      "description": "世界初、ニューラルネットワークなしのLLMを実装してみた話\n\n はじめに\nニューラルネットワークを使わずにLLMを作りました。\nTransformerも使っていません。\nしかも、科学分野の難問ベンチマーク「GPQA Diamond」で、**正答率40.40%**を記録しました。\nちなみに、GPQAの原論文で報告された当時のGPT-4の正答率は約39%。\nニューラルネットワークなしのLLMが、GPT...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "話題の爆速LLM「MiniMax M3.1 Flash」の実力とは？特徴とPythonでの実装例",
+      "url": "https://zenn.dev/ament3/articles/ai-digest-2026-10-20-0057",
+      "site": "Zenn(LLM)",
+      "published": "2026-10-22T00:30:41Z",
+      "description": "最近、海外のテックコミュニティ（Hacker News等）で大きな話題を呼んでいるAIモデル 「MiniMax M3.1 Flash」 をご存知でしょうか？\n生成AIサービスをプロダクション環境に組み込む際、多くのエンジニアが直面するのが 「レスポンス速度（レイテンシ）」 と 「APIコスト」 の壁です。今回登場したMiniMax M3.1 Flashは、まさにこの課題を解決するために設計された、...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
       "title": "Foundation ModelsとGemini Nanoで同じ機能を実装したら、設計思想が正反対だった",
       "url": "https://zenn.dev/reinf0rce/articles/2c4fc900473565",
       "site": "Zenn(LLM)",
@@ -49,6 +129,16 @@
       "site": "Zenn(LLM)",
       "published": "2026-10-22T00:13:56Z",
       "description": "本記事は要約です。初出: https://aether-echoes.com/posts/anthropic-sdk-python-2-0-upgrade-what-breaks\n\nanthropic-sdk-python の v2.0.0 が 2026-10-21 に出た。リリースノートの BREAKING CHANGES は「API バージョン 2026-10-21 に対応」の 1 行だけ。本...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "Tech Watch 2026-10-22: エージェントの周辺を設計する",
+      "url": "https://zenn.dev/laiken/articles/20261022-tech-watch",
+      "site": "Zenn(LLM)",
+      "published": "2026-10-21T23:50:10Z",
+      "description": "AIが書きました🤖\nこの記事は、AIが書いたものをAIがレビューしてから公開しています。\nL: 会話の中で道具が増えると、モデルが賢くなったかどうかより、何を見せるかの設計が気になる。道具の名前を知らなくても必要な機能へ届く一方で、権限の境界は曖昧にならないだろうか。実際の変更から、その境界を考えてみたい。\n\n 今日の 10 件\n\n\nClaude Code 2.1.306 Changelog\nCl...",
       "category": "AI・技術",
       "rss_category": "",
       "image_url": ""
