@@ -1,8 +1,28 @@
 {
   "site": "Zenn(生成 AI)",
-  "last_updated": "2026-10-22T00:59:07.577614",
-  "total_articles": 4652,
+  "last_updated": "2026-10-22T05:59:53.794590",
+  "total_articles": 4657,
   "articles": [
+    {
+      "title": "縮小された1行のコードだけ渡したら、隠しテスト19件が3回とも通った。戻らなかったのは名前とコメント",
+      "url": "https://zenn.dev/numarn/articles/minified-code-restore-vs-spec-handson",
+      "site": "Zenn(生成 AI)",
+      "published": "2026-10-22T01:51:10Z",
+      "description": "結論\n自分で書いた小さな JavaScript のモジュールを esbuild --minify --bundle で 1124 バイト・改行なしの1行まで縮めました。そして、その1行だけを Claude Code に渡し、「同じ振る舞いのファイルを書いて」と頼みました。minify(縮小)は、コードから改行・空白・人間向けの名前を削って短くする処理です。渡した1行にコメントは1つも残っておらず、...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "AI運用の変更影響マップを作る：変更前に確認範囲と停止条件を決める",
+      "url": "https://zenn.dev/miraigent/articles/ai-ops-change-impact-map",
+      "site": "Zenn(生成 AI)",
+      "published": "2026-10-21T20:39:43Z",
+      "description": "AIのモデル、プロンプト、FAQ、フォーム項目を変更したあとに、「どこまで確認すれば安全なのか」が分からなくなることがあります。変更そのものより、影響を受ける業務と確認者が記録されていないことが原因です。\nこの記事では、問い合わせ対応や社内業務を想定し、変更前に変更影響マップを作る方法を説明します。変更影響マップとは、変更箇所から影響を受ける入力・出力・人間確認・記録先をたどる一覧です。\nMira...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
     {
       "title": "画像生成 AI を業務に「渡す」ときに必要だったもの（フォーム・日本語入力・検証・言い方）",
       "url": "https://zenn.dev/rayray/articles/d033e4fa61c850",
@@ -19,6 +39,16 @@
       "site": "Zenn(生成 AI)",
       "published": "2026-10-21T14:35:42Z",
       "description": "NVIDIA DGX Spark（GB10）1台で、ComfyUI + Qwen-Image-Edit 2511 の画像処理ワークフロー（切り抜き・拡張・不要物除去・加工・背景差し替え・三面図）を業務用に回しています。同じ機体では LLM（llama.cpp）や 3D 生成も動かしていて、ジョブはキューで 1本ずつ流しています。\nモデルを動かすところまでは、どの解説記事の通りにやっても動きます。こ...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "AIエージェントに「実装しながら考える」をさせない。技術負債を減らす計画書作成プロンプト",
+      "url": "https://zenn.dev/kazuki_izutani/articles/1709552ca099f1",
+      "site": "Zenn(生成 AI)",
+      "published": "2026-10-21T13:56:29Z",
+      "description": "はじめに\nClaude Code などのコーディングエージェントに実装を任せていると、既存の共通関数を使わずに似た関数を新たに作ったり、他の箇所とは違う方法でエラー処理をしたりすることがあります。\nこれらの原因の多くは、実装前の計画のあいまいさにあります。計画に未決定や要検討の項目が残っていると、エージェントは、実装中にそれらの箇所を自己判断して実装します。そのときの材料として使われるのは、実装の...",
       "category": "AI・技術",
       "rss_category": "",
       "image_url": ""
@@ -44,6 +74,16 @@
       "image_url": ""
     },
     {
+      "title": "LLMは「何年の情報か」を一貫して認識できているのか？ 米国スタンフォード大学 AI Lab の研究から考える",
+      "url": "https://zenn.dev/syoshida07/articles/56555330b47aa2",
+      "site": "Zenn(生成 AI)",
+      "published": "2026-10-21T12:42:08Z",
+      "description": "米国スタンフォード大学の Stanford AI Lab(SAIL)は、COLM 2026で発表される研究成果の一つとして Do Language Models Consistently Encode the Current Year? を発表したした。\n研究は言語モデルの「時間認識」に焦点を当てており、LLMが現在の年をどの程度一貫して認識できているのかを検証するものである。\n近年、生成AIの議...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
       "title": "建設の工程表と遅れの返事、AIはどこまで任せられますか？ — 遅れの先で決める",
       "url": "https://zenn.dev/satoshimizuhara/articles/ai-agent-construction-schedule-delay",
       "site": "Zenn(生成 AI)",
@@ -59,6 +99,16 @@
       "site": "Zenn(生成 AI)",
       "published": "2026-10-21T10:41:48Z",
       "description": "月末が来ると、銀行明細を仕訳に置く日が来る\n月末が来ると、銀行の入出金明細を会計ソフトに取り込む日が1回入ります。ネットバンキングから落とした明細を、1行を1仕訳に置き替える表に直す作業です。摘要は銀行の様式のままで長く、相手名は略称で並ぶ。行の数はその月の入出金の件数の分だけ必要で、1行ずつ目で見て借方と貸方を置いていきます。大半は毎月同じ定形(給与の振込、家賃、水道光熱費、リース料、法人カード...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "MiniMax H3 プロンプト技法図鑑",
+      "url": "https://zenn.dev/enaiya/books/minimax-h3-prompt-zukan",
+      "site": "Zenn(生成 AI)",
+      "published": "2026-10-21T10:15:33Z",
+      "description": "カメラワーク・構図・時間制御・音響など26の映像演出技法を、生成動画と実際のプロンプトで学ぶ実践リファレンス。",
       "category": "AI・技術",
       "rss_category": "",
       "image_url": ""
