@@ -1,8 +1,128 @@
 {
   "site": "Zenn(LLM)",
-  "last_updated": "2026-10-23T01:41:43.121456",
-  "total_articles": 6919,
+  "last_updated": "2026-10-23T06:35:18.150161",
+  "total_articles": 6931,
   "articles": [
+    {
+      "title": "ローカルLLMを4つ測って、ベンチの対象をアクティブ10B〜40Bに絞った",
+      "url": "https://zenn.dev/noricha/articles/oreore-bench-local-active-params",
+      "site": "Zenn(LLM)",
+      "published": "2026-10-23T04:55:53Z",
+      "description": "自分用の LLM ベンチマーク OreOre-Bench で、10 月にローカルモデルを 4 つまとめて測りました。\n先に結果を書くと、アクティブパラメーターが 10B 未満のモデルは、仕様書どおりに画面を作るテーマで到達段が L0〜L3 にとどまりました。一方で、画像を見て物を数えるテーマでは、6B のモデルでも L8 まで届いています。\nそこで、ローカルで測るモデルをアクティブパラメーター数で...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "社内のLLMリクエストを一か所に集約したAI Gateway構築記",
+      "url": "https://zenn.dev/inflab/articles/67931ba77edb50",
+      "site": "Zenn(LLM)",
+      "published": "2026-10-23T04:53:18Z",
+      "description": "!\nこの記事は2026年9月8日に執筆されたものです。\n\nこんにちは、DevOpsエンジニアのPoka（ポカ）です。\nInflabでは、字幕翻訳、講座詳細ページの生成、学習エージェント、コミュニティの回答など、かなり多くの場所でLLM APIを使っています。\n当初は各サービスが必要なプロバイダーでAPIキーを発行し、直接呼び出す方式でした。\nしかし利用箇所が30を超えたあたりから、この方式では徐々...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "AIのドラフト2026予想を事前登録してCIで守り、自動採点した話",
+      "url": "https://zenn.dev/momo_aoyama/articles/8845c279893771",
+      "site": "Zenn(LLM)",
+      "published": "2026-10-23T04:11:05Z",
+      "description": "2026年のプロ野球ドラフト会議（10月22日）を題材に、Claude・GPT・Gemini の3つの AI にドラフトを予想させ、答えが出る前に予想を公開して固定（事前登録）し、ドラフト後に自動で採点する仕組みを作りました。\n野球ファン向けの記事は note に書いたので、こちらでは仕組みの側をまとめます。\n\n前編（予想の公開）：https://note.com/return_chiba/n/n...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "codex execの--output-schemaで見積書・請求書から10項目を抜き出し、60回実測した精度と時間",
+      "url": "https://zenn.dev/kosukeozawa/articles/codex-exec-invoice-extraction",
+      "site": "Zenn(LLM)",
+      "published": "2026-10-23T01:59:41Z",
+      "description": "架空の見積書・請求書10件から10項目を抜き出す作業を、Codex CLI の codex exec で3条件×2回（計60回）回しました。項目の正答率は98.0〜99.0%で、間違いは2件の書類の「期限」と「登録番号」だけでした。JSON Schema 指定（--output-schema）の有無では、今回の60回に限ると JSON の壊れも正答率の差もほとんど出ていません。\n\n以下の数値は、す...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "DB 監視の閾値を書くのをやめて、LLM に渡す情報を設計した",
+      "url": "https://zenn.dev/user_s0ma/articles/e3f51fa48b7495",
+      "site": "Zenn(LLM)",
+      "published": "2026-10-23T00:48:52Z",
+      "description": "3 行まとめ\n\nscandock では何を見張るかも、異常かどうかも LLM が決めます。閾値は 1 つも書いていません。\n代わりに設計したのは判定に渡す情報です。監視の目的、圧縮した履歴、過去の発火とその決着、組織のメモリを渡しています。\n誤検知を閾値で黙らせず、却下の記録として次の判定に渡します。\n\n\n 閾値で困ること\n閾値の監視では、人が「何を見るか」と「どこからが異常か」を決めます。決めた...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "Rust組み込みで小さなLMを動かしてみた（RP2040 + Burn Flex）",
+      "url": "https://zenn.dev/baker_link_lab/articles/2a875936b4846b",
+      "site": "Zenn(LLM)",
+      "published": "2026-10-23T00:19:51Z",
+      "description": "はじめに\nRustの組み込み開発×マイコン（Baker link. Dev）でLMの推論[1]をしてみました。\n動かしたのは、公開されている約94万パラメータ[2]の言語モデル「Atome LM」です。\nRustの機械学習フレームワークBurnのFlexバックエンド[3]を使って推論しました。\n!\n生成AIを使ってコーディングおよび執筆をしております。※動作することは確認済み\nもし記載内容に誤りが...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "会話状態をprevious_response_idに任せる境界",
+      "url": "https://zenn.dev/techstudiolab/articles/llm-previous-response-id-state-boundary",
+      "site": "Zenn(LLM)",
+      "published": "2026-10-23T00:13:38Z",
+      "description": "previous_response_id は、LLMに渡す会話コンテキストをつなぐために使います。注文状態や承認状態までそこに任せるものではありません。\n私なら、会話を続けたいだけなら previous_response_id、再実行や分岐を制御したいなら Item を自前で保持し、業務状態はどちらの場合も別に永続化する、という境界にします。会話履歴を業務の状態機械にすると、リトライした瞬間に「何...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "AIエージェントを司令官と部下に分けて、開発を自律運用してみた（3）worktree で分離する、そして最初の失敗",
+      "url": "https://zenn.dev/xin_tech/articles/agent-ops-field-notes-03",
+      "site": "Zenn(LLM)",
+      "published": "2026-10-23T00:03:38Z",
+      "description": "この記事は、下書きと文章の整理に生成AIを使っています。内容は、著者が生成AIを使ってタスクを自律的に回し続けるやり方を実際に試して検証し、そのやり方と感想を記録したものです。\n\nこの回では、worker を git worktree で分離して並列に動かす運用と、その最初の準備で実際に起きた失敗を記録します。失敗は2つあります。作業ディレクトリが小文字の d:\\ のときに worktree の作...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "OllamaのGPU診断：モデル配置・GPU認識・設定の作用先を分ける",
+      "url": "https://zenn.dev/kas_blog/articles/20260910-ollama-gpu-troubleshooting",
+      "site": "Zenn(LLM)",
+      "published": "2026-10-22T23:24:55Z",
+      "description": "OllamaでGPUを使えているか調べるとき、ollama ps、nvidia-smi、応答時間はそれぞれ異なる情報を見ています。さらに、コマンドを入力する端末とモデルを動かすサーバーが別なら、設定を変える場所も変わります。\nこの記事では、ローカルモデルの診断を「観測するサーバーをそろえる → GPU認識 → モデル配置 → 応答」の順に整理します。2026年9月10日に確認した公式資料に基づく技...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "ECサポートAIをPythonで受入テストする：状態・操作履歴・構造化回答の採点",
+      "url": "https://zenn.dev/oyajico/articles/cc7e35a9e36c30",
+      "site": "Zenn(LLM)",
+      "published": "2026-10-22T22:48:21Z",
+      "description": "注文照会、キャンセル、返金を扱う AI を評価する場合、返答の文章に加えて、実行した操作も確認する必要があります。\nたとえば、返金額の最終値が 1,000 円でも、途中で別の操作 ID を使って返金を再要求していた可能性があります。店舗側の API が二重返金を防いでいれば、最終値だけでは、この試行を見落とします。\nこの記事では、架空の日本語 EC 業務を使い、次の三つを機械的に採点する小さなテス...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "今日の技術トレンド",
+      "url": "https://zenn.dev/bambampurin/articles/2026-09-18-tech-daily",
+      "site": "Zenn(LLM)",
+      "published": "2026-10-22T22:33:48Z",
+      "description": "!\n本日の技術トレンドでは、大規模言語モデル（LLM）単体の利用から「自己進化・自己改善型AIエージェント」へのシフトが明確化しています。産業界ではオンプレミスやクローズド環境でのエージェント運用が進む一方、OpenAIによるモデル誤整列（Misalignment）やエージェントの逸脱事例の開示など、安全性・ガバナンスへの関心が高まっています。また、PythonエコシステムにおいてはOpenAIに...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "claude-quickstarts 目的別リーディングガイド。20 本を「盗める書き方」で引く",
+      "url": "https://zenn.dev/nayu_ai/articles/33202920b1a292",
+      "site": "Zenn(LLM)",
+      "published": "2026-10-22T21:02:40Z",
+      "description": "「claude-quickstarts を読むといい」とは言われても、20 本のうちどれを開けばいいのかまでは教えてもらえません。\nこの記事は、目的 7 つから引ける索引です。読む対象、見る場所（行番号付きリンク）、注意点をまとめました。\n自分でコードを読む人にも、Claude Code に読ませる人にも使えます。\n\n 「書き方を盗む」を取り戻す\nバイブコーディングが広まり、「動けばいい」が先に立...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
     {
       "title": "安全ガードの判定変動を入力表現・モデル更新・評価単位に分けて測る",
       "url": "https://zenn.dev/id774/articles/1fc5d4288594c7",
@@ -14,11 +134,11 @@
       "image_url": ""
     },
     {
-      "title": "LiteLLMのサプライチェーン攻撃を受けて、自分のMacに入っていないかPythonを起動せずに確認した",
-      "url": "https://zenn.dev/i_n_dev/articles/4736b8e7ce1e29",
+      "title": "知識グラフ化ツールGraphifyでgrep/Readを置き換えたら、トークンは何倍減るのか実測した",
+      "url": "https://zenn.dev/matsushima_a/articles/day-023-knowledge-graph-vs-grep-token-cost",
       "site": "Zenn(LLM)",
-      "published": "2026-10-22T13:52:47Z",
-      "description": "!\n私はセキュリティの専門家ではありません。確認方法はAI(Claude)に提案してもらったもので、これが正しい・十分だという保証はありません。同じことをする場合は、公式情報も必ず確認してください。(2026-10-22時点の情報です)\n\n\n LiteLLMとは\nOpenAI、Anthropicなど複数のLLMプロバイダのAPIを、同じ書き方で呼べるようにするラッパーライブラリ(Python製)で...",
+      "published": "2026-10-22T14:05:17Z",
+      "description": "これは何の話か\n海外AIネタ100日チャレンジDay 023。今回取り上げるのはGraphify-Labs/graphify(PyPI配布名はgraphifyy、ダブルyなので注意)。\nコード・ドキュメント・SQLスキーマ・設定ファイルなどを1つの問い合わせ可能な知識グラフに変換するPython CLIで、Claude Code/Cursor/Codex/Gemini CLIなど向けのスキルとして...",
       "category": "AI・技術",
       "rss_category": "",
       "image_url": ""
