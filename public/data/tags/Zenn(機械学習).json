@@ -1,8 +1,28 @@
 {
   "site": "Zenn(機械学習)",
-  "last_updated": "2026-10-24T18:24:06.836531",
-  "total_articles": 2086,
+  "last_updated": "2026-10-24T21:06:02.488901",
+  "total_articles": 2087,
   "articles": [
+    {
+      "title": "量子化が引き起こすButterfly Effect？ — World Modelの誤差蓄積と計画性能の限界",
+      "url": "https://zenn.dev/akisayo/articles/world-model-quantization-butterfly-effect",
+      "site": "Zenn(機械学習)",
+      "published": "2026-10-24T17:19:20Z",
+      "description": "ロボットに「この箱を右側に押して」と指示したとします。\n人間なら、箱を押した後の動きを何となく想像できます。右から押せば左に動くし、斜めから押せば回転するかもしれません。\nでは、ロボットが同じように「これから起こること」を頭の中でシミュレーションできたら？\nこの発想を実現しようとする研究のひとつが、**World Model（世界モデル）**です。\nWorld Modelは環境の変化を学習し、ある...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "MultiheadAttentionの高速経路がVRAMを18GB食っていた話",
+      "url": "https://zenn.dev/genelab_999/articles/387bf151caf716",
+      "site": "Zenn(機械学習)",
+      "published": "2026-10-24T09:00:37Z",
+      "description": "TL;DR\n\n\nnn.MultiheadAttention は、eval かつ勾配なしの推論でマスクを渡すと、need_weights=False を付けていても SDPA を使わず、ヘッド数 × P × P の注意行列を丸ごと作る\nXiaomi-Lens-0 では flash-attn が無いときの代替経路がまさにこれで、3 MP の画像でマスク生成段の追加 VRAM が 18.02 GB、8 ...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
     {
       "title": "Claude の中では何が起きているか。Anthropic の解釈可能性研究者が語った11の発見（#38 解説）",
       "url": "https://zenn.dev/talks_tldr_jp/articles/tldr38-ameisen-summary",
@@ -189,16 +209,6 @@
       "site": "Zenn(機械学習)",
       "published": "2026-10-20T03:02:00Z",
       "description": "!\nざっくり3行で言うと、\n\nQwen3.8-27B-piは、特定のAgent harnessで仕事を進めるために調整したモデル\n成功した作業履歴をSFTで学び、RLでは正しさを優先しながらeffortごとの思考量を整える\n参考になるのはモデルの調整だけでなく、学習タスクと採点器も改善していること\n\n\n\n はじめに：lowの方が余計に考えていた\n推論の設定にlow、medium、xhighと並んで...",
-      "category": "AI・技術",
-      "rss_category": "",
-      "image_url": ""
-    },
-    {
-      "title": "LLMは「大きくする」だけじゃない──同じ層を回すLooped Transformer入門",
-      "url": "https://zenn.dev/acrosstudioblog/articles/895e38a8893223",
-      "site": "Zenn(機械学習)",
-      "published": "2026-10-20T02:36:33Z",
-      "description": "!\nざっくり3行で言うと、\n\nLooped Transformer は、同じ Transformer の層を何度も使って計算するモデル\nパラメータを増やさずに、計算上の深さを増やせる。ただし計算が無料になるわけではない\n面白いのは「何Bか」と「どれだけ計算するか」が、少しずつ別の話になっていること\n\n\n\n はじめに：NVIDIAも同じ層を繰り返す\nLLMの仕様を見るとき、まず目に入るのは「何Bか」...",
       "category": "AI・技術",
       "rss_category": "",
       "image_url": ""
