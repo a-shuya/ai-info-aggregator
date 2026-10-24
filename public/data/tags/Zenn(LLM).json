@@ -1,44 +1,194 @@
 {
   "site": "Zenn(LLM)",
-  "last_updated": "2026-10-24T11:58:45.508207",
-  "total_articles": 6953,
+  "last_updated": "2026-10-24T15:49:20.761078",
+  "total_articles": 6966,
   "articles": [
+    {
+      "title": "エージェントの記憶は「要約」ではなく「KVキャッシュの直接操作」で圧縮できるのか、135Mモデルで試した",
+      "url": "https://zenn.dev/matsushima_a/articles/day-025-akv-cache-drop-and-repos",
+      "site": "Zenn(LLM)",
+      "published": "2026-10-24T14:08:23Z",
+      "description": "これは何の話か\n海外AIネタ100日チャレンジDay 025。\n今回取り上げるのは清華大学・香港中文大学の論文「Cache Engineering for Agents」(HF Daily Papers、2026-10-21投稿、2026-10-22時点Daily Papers 4位・109 upvote)と、その公式実装AKV(Apache-2.0)だ。\nエージェントの会話履歴が伸びるほど、KV...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "REQLOXの評価設計――未確定label・反復安定性・Sourceの追加価値をどう測るか",
+      "url": "https://zenn.dev/north_to_now/articles/reqlox-evaluation-design",
+      "site": "Zenn(LLM)",
+      "published": "2026-10-24T13:42:33Z",
+      "description": "REQLOXでは、対応するPython構造と所有者要件を固定し、故障検出から修復候補の再注入・正常回帰までを検査している。その実装と実測結果は主記事にまとめた。\n本記事で扱うのは、原文の解釈から修復結果までの、各段階の評価をどう設計したかである。修復候補が固定条件を通ること、生成内容が原文に支えられること、外部知識を与えた寄与があることには、それぞれ別の証拠が必要になる。\nSourceは障害報告な...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "ローカルLLMの思考ログは長いほど正確なのか、Qwen3とMuse Glimmerに18回聞いて読んでみた",
+      "url": "https://zenn.dev/akari1106/articles/406cc075783742",
+      "site": "Zenn(LLM)",
+      "published": "2026-10-24T12:17:38Z",
+      "description": "!\nこの記事は実測ログです。2つのローカルLLMに同じ質問を投げて、思考ログと回答をそのまま並べています。試行は各条件1回、追試をした4条件でも3回までなので、順位をつける記事ではなく、傾向を眺める記事として読んでください。思考ログ気になるというのを最近見かけたので、今回から抜粋系で一部書いてみました。\n\n\n はじめに\nローカルで小さいモデルを動かしていると、回答より思考ログのほうが長い場面によく...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "Claude Codeにハーネスを導入した — 不変条件はHookで強制する",
+      "url": "https://zenn.dev/pythona/articles/claude-code-harness-first-setup",
+      "site": "Zenn(LLM)",
+      "published": "2026-10-24T11:59:53Z",
+      "description": "「毎回同じ注意」を書くのに疲れた\n個人開発している運動記録アプリ FitLog(Expo / Supabase / Zustand / NativeWind / React Native Reusables)で、Claude Code を使い始めてしばらく経ったころ、同じ失敗が繰り返されることに気づきました。\n\n\n.env を平気で読みに行く\nExpo の管理下にある ios/ や android...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "【実験】SQLインジェクションを教えて、とClaude CodeとCodexに頼んだら対応が違った",
+      "url": "https://zenn.dev/yskuue/articles/20261024_claude-codex-cyber-safeguards",
+      "site": "Zenn(LLM)",
+      "published": "2026-10-24T11:47:16Z",
+      "description": "前置き\n普段Claude CodeやCodexを使って開発しているのですが、セキュリティに関する依頼をしていると、セーフガードで作業が止まることがあります。\n攻撃に悪用されるのを防ぐ仕組みは必要だと思う一方で、攻撃方法を学んだり、自社の脆弱性を調べたりするときにも止まると、なかなか難しいところです...。\nそこで気になったのが、同じ攻撃方法でも、教材として頼む場合と、診断スクリプトとして頼む場合で...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "48万円の170HXは割安か？ DGX Spark・RTX PRO 6000と価格と性能を比べる",
+      "url": "https://zenn.dev/phpmyadmin/articles/glm53-hardware-price-performance",
+      "site": "Zenn(LLM)",
+      "published": "2026-10-24T11:34:41Z",
+      "description": "結論：自分で構築するGLM用マシンとしては割安\n改造済み170HXを1枚3,000 USDで確保し、自分で環境を構築・保守するなら、GLMを動かす導入予算としては割安と判断する。PC込みの仮予算は1枚68万円、2枚116万円で、今回参照したDGX SparkやRTX PRO構成より低い。特に2枚のTensorFoldは、同じclamp_range課題で約104 tok/sを記録し、Spark 2台...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "170HX 2枚のローカルLLM選び。生成速度とコードの完了を分けて比較する",
+      "url": "https://zenn.dev/phpmyadmin/articles/cmp170hx-model-selection",
+      "site": "Zenn(LLM)",
+      "published": "2026-10-24T11:34:41Z",
+      "description": "結論：短文の生成速度だけではコーディング用モデルを選べない\nCMP 170HX 64GB×2・RAM128GBで、GLM、Qwen、DeepSeekを動かした。短いコード課題ではQwen W4A16・MTP3が約189 tok/sで生成した。一方、標準ベンチマークHumanEval+の合格数は151/164で、GLM Highの152/164を上回らなかった。\nこの記事の目的は、この構成でモデルを...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "170HX 64GB 1枚とRAM128GBでGLMの200K入力を処理する",
+      "url": "https://zenn.dev/phpmyadmin/articles/cmp170hx-maya-long-context",
+      "site": "Zenn(LLM)",
+      "published": "2026-10-24T11:34:40Z",
+      "description": "結論：1枚でも動くが、初回の長文入力には待ち時間がある\nCMP 170HX 64GB×1・RAM128GBで、Project Mayaを使ってGLM-5.3-Flash Maya-S24を動かした。合成入力204,800トークンから指定した値を取り出せた。入力処理に189.2秒かかった一方、約40Kの会話ではキャッシュを再利用した次の応答が約0.81秒で返った。\nこの記事では、1枚構成で長い入力を...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "170HX 2枚でGLMを常用する。TensorFold HighとExLlamaV3 Highの比較",
+      "url": "https://zenn.dev/phpmyadmin/articles/cmp170hx-glm53-flash-maya",
+      "site": "Zenn(LLM)",
+      "published": "2026-10-24T11:09:41Z",
+      "description": "結論：32K以内はTensorFold High、長い入力はExLlamaV3\nCMP 170HX 64GB×2・RAM128GBでGLM-5.3-Flash EXL3 3.05bpwを動かし、普段のコーディング用にどのエンジンと設定を選ぶかを比べた。HumanEval+全164題では、思考強度Highの2構成がいずれも152問に合格し、TensorFoldは全問の生成時間を約45%短縮した。\n\n...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "RAGはAIの回答を安全にできるのか？ ― GroundednessとKnown Fact Matchingを検証する",
+      "url": "https://zenn.dev/kondonator/articles/4cec228d391022",
+      "site": "Zenn(LLM)",
+      "published": "2026-10-24T10:06:59Z",
+      "description": "はじめに\nAI Security Labでは、AIが生成する回答をそのまま信頼するのではなく、AIが誤ることを前提として、どのように検証・制御できるのかを実験しています。\n今回のテーマは、RAG（Retrieval-Augmented Generation）です。\nRAGを利用すると、LLMがKnowledge Baseから関連する情報を取得し、その情報を回答生成に利用できます。\nでは、Knowl...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "Geminiの上限を回数ではなく計算量で捉え直した話",
+      "url": "https://zenn.dev/jworks_hq/articles/jworks-20261022-3b64b8e4",
+      "site": "Zenn(LLM)",
+      "published": "2026-10-24T10:00:41Z",
+      "description": "Geminiの使用上限を調べるとき、まず気になるのは「あと何回使えるのか」です。AIサイトに公開した記事の内容を確認するため、Geminiの公式ヘルプを読み直したところ、上限は単純な利用回数ではなく、計算量を基準に決まると説明されていました。\n使うモデルや機能、プロンプトの複雑さ、チャットの長さによって、使用量は変わります。つまり、同じ回数だけ質問しても、内容や使い方によって上限への近づき方は異な...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "Cloudflare Turnstileをすり抜けるフォーム営業を TypeSafe Jev で4択判定してスパム判定する(0.01円/通)",
+      "url": "https://zenn.dev/matsubokkuri/articles/2026-10-23-contact-form-spam-typesafe-jev",
+      "site": "Zenn(LLM)",
+      "published": "2026-10-24T09:32:21Z",
+      "description": "3秒まとめ\n\nCloudflare Turnstile を入れても、人間やブラウザ自動化ツールが送ってくるフォーム営業は止まりません\n\n\nTypeSafe の System One モデル Jev に「正当な問い合わせ / 営業 / 他社宛ての誤送信 / ゴミ」の4択で確率を出させ、営業+ゴミが 0.8 以上なら件名に [SPAM] を付けて送信し、StopForumSpam に自動報告するように...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "QD-Recは推薦理由をどう育てる？米国株で探索・転用・入れ替えを観察してみた",
+      "url": "https://zenn.dev/sunyeul89/articles/qd-rec-stock-ideas",
+      "site": "Zenn(LLM)",
+      "published": "2026-10-24T09:14:09Z",
+      "description": "はじめに\nLLMに「おすすめの株」を聞くと、もっともらしい理由が返ってきます。ただ、その理由だけでは、ほかにどんな候補を検討したのか、似た話ばかり集まっていないかは分かりません。\nSakana AIのQD-Recは、候補と推薦理由をセットにして、質と多様性の両方を考えながら蓄積する手法です。これを米国株に当てはめて、「銘柄＋投資論理」のアーカイブを作ってみました。\n今回見えたのは、広い銘柄探索と、...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "エージェントに鍵を渡さない設計 ── Meta Muse の技術スタックを公開資料から読む",
+      "url": "https://zenn.dev/kentaro36/articles/muse-secure-vm-architecture",
+      "site": "Zenn(LLM)",
+      "published": "2026-10-24T09:11:47Z",
+      "description": "AIエージェントにメールやカレンダー、買い物を任せようとすると、すぐに一つの問題にぶつかります。エージェントが仕事をするには資格情報が要るのに、資格情報を持たせたエージェントがだまされると、その資格情報ごと持っていかれる、という問題です。\nセキュリティ研究者の Simon Willison は、この条件がそろった状態を \"lethal trifecta\"（致命的な三要素）と呼んでいます。\n\n個人デ...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "Turning web pages into LLM-ready Markdown with a scrape API",
+      "url": "https://zenn.dev/xcrawl/articles/4c1e210642cce5",
+      "site": "Zenn(LLM)",
+      "published": "2026-10-24T07:53:26Z",
+      "description": "Large language models are only as useful as the context you give them. Most of the web is still HTML, navigation, and ads. A scrape API that returns clean Markdown lets you drop a page into a prompt o...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "なぜ、AIで職を失うのは特定の職業ではなく各職業の下位層だというのが現実なのに、特定の職業が無くなるという記事の方が世間ではウケるのか？",
+      "url": "https://zenn.dev/pdfractal/articles/6ce47b1845b8d4",
+      "site": "Zenn(LLM)",
+      "published": "2026-10-24T07:50:43Z",
+      "description": "はじめに\n生成AIが急速に普及して以来、「AIによってプログラマーが消える」「弁護士が不要になる」「医師までAIに置き換えられる」といった職業消滅論が繰り返し語られてきました。しかし、2026年までに公表されている労働市場データを見る限り、実際に起きている変化はこれらの予測とはかなり違う形をしています。医師も弁護士もプログラマーも職業として存続している一方、AIによって一人あたりの処理量が増え、同...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "MacBook Air（M5）でローカルLLM環境を構築してみた",
+      "url": "https://zenn.dev/saaaku/articles/localllm-in-macbookair",
+      "site": "Zenn(LLM)",
+      "published": "2026-10-24T07:45:41Z",
+      "description": "はじめに\nMacBook Air（M5、メモリ24GB）にローカルLLM環境を構築して「とりあえず動かしてみる」という記事です。\n結論として、今回はgemma4を使ったのですが、軽量なモデルでも思ったより回答までに時間がかかるなという印象です。\n（普段ClaudeCodeを使っているので、期待値が高すぎたのかも。）\nとはいえ、Claudeがリミットになったので一時的にローカルLLMで代用したいとき...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "Claude Code のハーネスを自己改善させる — PR 後の手直しをルールに戻すループ",
+      "url": "https://zenn.dev/wanko13/articles/20261024-harness-self-improvement-loop",
+      "site": "Zenn(LLM)",
+      "published": "2026-10-24T07:30:42Z",
+      "description": "はじめに\nAI に PR まで作らせても、命名や余計な分岐を毎回同じように直していませんか。\n私のプロジェクトでは、Jira のチケットを渡すと、AI が設計から実装・検証まで進めて PR を作る運用をしています。ただ、AI が PR まで完走しても、そのままマージできるとは限りません。命名を直す、余計な分岐を消す、画面の文言を揃える。こうした箇所を、私が指示を出して直させています。この記事ではこ...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
     {
       "title": "切れても一つの軌跡──Mosaicがマルチセッション・エージェンティックRLの信用割当てを階層化する仕組み",
       "url": "https://zenn.dev/lixian/articles/mosaic-multi-session-agentic-rl",
       "site": "Zenn(LLM)",
       "published": "2026-10-24T01:59:38Z",
       "description": "TL;DR\n\nエージェンティックRLの大半は「1ロールアウト＝途切れない1つの文脈＝1つの学習セグメント」という単一セッション前提の上に立っている。しかしcontext compactionもsubagent forkingも、この前提を平気で破る\nLARK（HKUST-GZ）とHuaweiのチームは、任意個のセッションからなる軌跡を訓練対象とするMulti-Session Agentic RLと...",
-      "category": "AI・技術",
-      "rss_category": "",
-      "image_url": ""
-    },
-    {
-      "title": "大規模言語モデルは、どうやって訓練されるのか？",
-      "url": "https://zenn.dev/kanfupanda/articles/how-llms-are-trained",
-      "site": "Zenn(LLM)",
-      "published": "2026-10-24T01:37:31Z",
-      "description": "!\nこの記事は個人ブログにも掲載しています → https://kanfu-panda.github.io/ja/blog/2026/10/24/how-llms-are-trained.ja.html?utm_source=zenn&amp;utm_medium=article&amp;utm_campaign=ai-coding-principles-ep02\n\n\n\n前回は、大規模言語モデルが...",
-      "category": "AI・技術",
-      "rss_category": "",
-      "image_url": ""
-    },
-    {
-      "title": "LLMが形式検証を現実的に？Anthropicが示すソフトウェア品質の未来",
-      "url": "https://zenn.dev/ament3/articles/ai-digest-2026-10-23-0026",
-      "site": "Zenn(LLM)",
-      "published": "2026-10-24T00:22:21Z",
-      "description": "Hacker News等で大きな話題を呼んでいる、Anthropicによる最新の研究記事**「LLMs are making formal software verification feasible at a much larger scale」**をピックアップして解説します。\nAIによるコード自動生成が急速に普及する中で、エンジニアにとって最も重要なテーマの1つとなっているのが「生成されたコ...",
-      "category": "AI・技術",
-      "rss_category": "",
-      "image_url": ""
-    },
-    {
-      "title": "Tech Watch 2026-10-24: 仕事を委ねるための境界",
-      "url": "https://zenn.dev/laiken/articles/20261024-tech-watch",
-      "site": "Zenn(LLM)",
-      "published": "2026-10-24T00:00:15Z",
-      "description": "AIが書きました🤖\nこの記事は、AIが書いたものをAIがレビューしてから公開しています。\nL: データベースを見れば、エージェントの「終わりました」が本当か分かる。そう聞くと単純だけれど、実際には承認を待つべき操作まで含まれる。結果だけを確かめれば、仕事を安心して委ねられるのかな。まずは、その一行の記録から考えたい。\n\n 今日の 10 件\n\n\nClaude Code 2.1.309\nClaude ...",
       "category": "AI・技術",
       "rss_category": "",
       "image_url": ""
@@ -59,16 +209,6 @@
       "site": "Zenn(LLM)",
       "published": "2026-10-23T23:00:05Z",
       "description": "設計書のレビューを ChatGPT・Claude・Copilot に手伝わせたい。でも使える環境ではファイルを添付できず、セルをコピーしてチャットに貼ると、タブだらけで何が書いてあるのか分からない。そんな人向けに、崩れる理由、AI が読みやすい Markdown の形、レビュー用のプロンプトを書きます。設計書の内容を AI に入力すること自体は、社内で許可されている前提です（Markdown にし...",
-      "category": "AI・技術",
-      "rss_category": "",
-      "image_url": ""
-    },
-    {
-      "title": "メモ126個に4項目を足してSQLiteで探したら、AIに渡す量が約4分の1になった",
-      "url": "https://zenn.dev/yamato_snow/articles/rag-memo-126-search-quarter",
-      "site": "Zenn(LLM)",
-      "published": "2026-10-23T22:46:06Z",
-      "description": "自分のメモや資料を、AI に丸ごと渡して答えてもらっていませんか？\n私はやっていました。\nそして、こんな答えが返ってきました👇\n\n正しい合計は13,700円です\n3,300円は、乗り換える前に書いた「試算」のメモの数字です。\n実際に乗り換えた結果は「月4,800円が月1,200円」なので、減ったのは3,600円でした😅\nAI は2つのメモを混ぜて、それらしい表を作ってしまったんです。\nしかも全部渡...",
       "category": "AI・技術",
       "rss_category": "",
       "image_url": ""
@@ -159,16 +299,6 @@
       "site": "Zenn(LLM)",
       "published": "2026-10-23T11:54:49Z",
       "description": "はじめに\nLLMを使う日本語入力システムSumibiを開発していると、読みと漢字の対応だけでなく、文章の意味を捉えることが変換に役立っていると感じます。\npart9とpart18ではローカルLLMの変換性能を比較し、part27では、LLMが同音異義語を選ぶ理由を考えました。今回は、その中の「大きなモデルほど、文章の意味を利用して変換できるのではないか」という仮説を掘り下げます。\n今回は関連論文を...",
-      "category": "AI・技術",
-      "rss_category": "",
-      "image_url": ""
-    },
-    {
-      "title": "Ruby はプログラマーを幸せにする。では AI も幸せにするのか？ LLM の中を覗いて確かめた",
-      "url": "https://zenn.dev/geeknees/articles/e144c89d066189",
-      "site": "Zenn(LLM)",
-      "published": "2026-10-23T11:18:26Z",
-      "description": "Ruby は「楽しさ」のために作られた\nRuby の作者まつもとゆきひろさんは、2003 年のインタビューで \"Ruby is designed to make programmers happy.\" と語っています。Rails の設計原則（Rails Doctrine）も、最初の項目は \"Optimize for programmer happiness\" です。\n最近は、コードの多くを AI ...",
       "category": "AI・技術",
       "rss_category": "",
       "image_url": ""
