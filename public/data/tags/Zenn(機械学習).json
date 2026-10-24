@@ -1,8 +1,18 @@
 {
   "site": "Zenn(機械学習)",
-  "last_updated": "2026-10-24T07:01:30.985811",
-  "total_articles": 2086,
+  "last_updated": "2026-10-24T11:58:45.508207",
+  "total_articles": 2087,
   "articles": [
+    {
+      "title": "MultiheadAttentionの高速経路がVRAMを18GB食っていた話",
+      "url": "https://zenn.dev/genelab_999/articles/387bf151caf716",
+      "site": "Zenn(機械学習)",
+      "published": "2026-10-24T09:00:37Z",
+      "description": "TL;DR\n\n\nnn.MultiheadAttention は、eval かつ勾配なしの推論でマスクを渡すと、need_weights=False を付けていても SDPA を使わず、ヘッド数 × P × P の注意行列を丸ごと作る\nXiaomi-Lens-0 では flash-attn が無いときの代替経路がまさにこれで、3 MP の画像でマスク生成段の追加 VRAM が 18.02 GB、8 ...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
     {
       "title": "Claude の中では何が起きているか。Anthropic の解釈可能性研究者が語った11の発見（#38 解説）",
       "url": "https://zenn.dev/talks_tldr_jp/articles/tldr38-ameisen-summary",
