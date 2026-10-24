@@ -1,14 +1,124 @@
 {
   "site": "Zenn(LLM)",
-  "last_updated": "2026-10-24T01:52:41.727420",
-  "total_articles": 6940,
+  "last_updated": "2026-10-24T07:01:30.985811",
+  "total_articles": 6950,
   "articles": [
+    {
+      "title": "AIコードレビューの不合格率が51%→13%に。3モデル中2つは判定していなかった",
+      "url": "https://zenn.dev/taka8823/articles/2df36d66844c15",
+      "site": "Zenn(LLM)",
+      "published": "2026-10-24T02:50:01Z",
+      "description": "自分用のタスク管理アプリを、4ヶ月半ほど自律エージェントに開発させている。実装後の diff を別のモデルにレビューさせ、不合格なら差し戻す「敵対的差分レビュー」を入れていた。\nその不合格率が、7月の51.1%から10月には13.4%まで下がっていた。ところがログを調べると、3モデルでレビューするはずが、10月は全209件で1モデルしか判定していなかった。\n残りの2モデルは、すべて unknown...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "切れても一つの軌跡──Mosaicがマルチセッション・エージェンティックRLの信用割当てを階層化する仕組み",
+      "url": "https://zenn.dev/lixian/articles/mosaic-multi-session-agentic-rl",
+      "site": "Zenn(LLM)",
+      "published": "2026-10-24T01:59:38Z",
+      "description": "TL;DR\n\nエージェンティックRLの大半は「1ロールアウト＝途切れない1つの文脈＝1つの学習セグメント」という単一セッション前提の上に立っている。しかしcontext compactionもsubagent forkingも、この前提を平気で破る\nLARK（HKUST-GZ）とHuaweiのチームは、任意個のセッションからなる軌跡を訓練対象とするMulti-Session Agentic RLと...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "LLMエージェント基盤のシステム設計 #2 コンテキスト管理（会話履歴・RAG・長さ制限）",
+      "url": "https://zenn.dev/acntechjp/articles/ee3ea86c1af439",
+      "site": "Zenn(LLM)",
+      "published": "2026-10-24T00:00:08Z",
+      "description": "!\nこの記事は連載「LLMエージェント基盤のシステム設計」（全5回）の第2回です。\n\nエージェントランタイム（Harness）\n\nコンテキスト管理 ← この記事\nツール実行\n信頼性\n評価と可観測性\n\n各回とも「要件 → 規模の見積もり → 全体設計 → 詳細設計 → 運用と発展」の順に説明します。文中の規模や性能の数値は、設計を検討するための仮の値です。実測値ではありません。\n\n\n はじめに\nLL...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "Excel方眼紙の設計書をChatGPT・Claudeでレビューする：コピペが崩れる理由とMarkdown変換",
+      "url": "https://zenn.dev/hagmit/articles/excel-design-doc-to-markdown-for-llm",
+      "site": "Zenn(LLM)",
+      "published": "2026-10-23T23:00:05Z",
+      "description": "設計書のレビューを ChatGPT・Claude・Copilot に手伝わせたい。でも使える環境ではファイルを添付できず、セルをコピーしてチャットに貼ると、タブだらけで何が書いてあるのか分からない。そんな人向けに、崩れる理由、AI が読みやすい Markdown の形、レビュー用のプロンプトを書きます。設計書の内容を AI に入力すること自体は、社内で許可されている前提です（Markdown にし...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "Cloudflareの監査スキルはそのままでは動かなかった",
+      "url": "https://zenn.dev/neomaru/articles/cloudflare-security-audit-harness",
+      "site": "Zenn(LLM)",
+      "published": "2026-10-23T18:40:05Z",
+      "description": "Cloudflareが公開したセキュリティ監査スキルを、自分のリポジトリに対して3回回しました。スキル自体はよくできています。検証まで含めて本物のバグが出ました。ただし、そのままでは動きませんでした。理由はスキルの不出来ではなく、スキルが前提にしている実行環境が自分の環境と違ったからです。\n足したのは3つです。サブエージェントを起動できる実行系、対象コードを実行するためのOSレベルのサンドボックス...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "MetaのMuse、10億トークンの紹介特典を公式料金で換算したら約9ドルだった",
+      "url": "https://zenn.dev/neomaru/articles/meta-muse-referral-token-math",
+      "site": "Zenn(LLM)",
+      "published": "2026-10-23T15:52:00Z",
+      "description": "MetaのパーソナルAIエージェント「Muse」が2026年10月23日に日本で提供開始されました。北米以外では初めての展開です。開始と同時に、招待コードによる紹介制度（双方に10億Museトークン）が各所で共有されています。\n結論から書きます。10億トークンは、Meta自身が公表している料金表で換算すると約9ドルです。招待枠をすべて埋めても155〜185ドル相当。数字の見た目ほど大きくありません...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "「怠惰なシニア開発者」をClaude Codeに演じさせたら本当にコードは減るのか(ponytail実測)",
+      "url": "https://zenn.dev/matsushima_a/articles/day-024-ponytail-lazy-senior-dev",
+      "site": "Zenn(LLM)",
+      "published": "2026-10-23T14:08:22Z",
+      "description": "要約\n\nGitHub Trendingで急上昇していたDietrichGebert/ponytail(MITライセンス)は、コーディングエージェントに「最も怠惰なシニア開発者」を演じさせ、新しいコードを書く前に既存コード・標準ライブラリ・プラットフォーム標準機能の再利用を優先させるルールセット(スキル)。\n公式ベンチマークは「コード行数-53%・トークン-45%・コスト-26%・時間-41%」(O...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
     {
       "title": "AIレビュー1回 $2.43 を $0.77 に　最初のリクエストがキャッシュを読んでいなかった",
       "url": "https://zenn.dev/tariki_yashiro/articles/na-20261020-193000",
       "site": "Zenn(LLM)",
       "published": "2026-10-23T12:46:09Z",
       "description": "Cloudflare が社内で動かしている AI コードレビューの費用を、1回あたり平均 $2.43 から $0.77 に下げた記録を公開しました。元記事は「68%減」と書いています。$2.43 は、削減に取りかかる前の最も高かった2週間の平均です。\nあわせて、レビューの所要時間の中央値も 4分9秒から 1分32秒になったそうです。\n読みどころは、費用がどこに消えていたかを突き止めた手順のほうでし...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "AIのチームでサイトを運営するとき、着手と公開の承認を分ける",
+      "url": "https://zenn.dev/hirosta/articles/ai-team-site-security-boundaries",
+      "site": "Zenn(LLM)",
+      "published": "2026-10-23T12:36:34Z",
+      "description": "AIエージェントにサイトの修正を任せるとき、作業を始めてよいことと、本番へ公開してよいことを分けています。あわせて、変更内容だけでなく、AIが書いた報告文も公開前の検査対象にしています。\n私たちは、自社の静的サイトを、AIのエージェントがIssue起点で作業し、人が承認する形で運営しています。mainへのマージはGitHub Actionsによる本番公開につながります。したがって、マージの承認は公...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "AI で60万字の技術書を書いて、独立検証を4回回したら、毎回「主役」が変わった",
+      "url": "https://zenn.dev/mizu_jun/articles/ai-book-four-verification-rounds",
+      "site": "Zenn(LLM)",
+      "published": "2026-10-23T12:34:29Z",
+      "description": "要約\n\n情シス向けの技術書（32章・約60万字）を Claude Code と書き、公開前に「是正済みであることを伏せて」別の AI エージェント群に読ませる独立検証を4回回しました。\n重大指摘の推移は 29 → 6 → 10 → 3 件でした。減ったのではなく、回ごとに見つかる誤りの型が入れ替わったのが要点です。\n第1回は「再識別」、第2回は「出典の誤り」、第3回は「書き換えの残骸」、第4回は「...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "なぜAIは1回の出力上限を超えて巨大コードを書けるのか？コーディングエージェント徹底解剖",
+      "url": "https://zenn.dev/lumichy/articles/coding-agent-large-scale-development-2026",
+      "site": "Zenn(LLM)",
+      "published": "2026-10-23T12:30:30Z",
+      "description": "Claude Code や Cursor、GitHub Copilot のエージェントモードなど、近年のコーディングエージェントに大きなタスクを投げると、何十個ものファイルを読み書きし、テストを走らせ、エラーを自律修復しながら、数千〜数万行に及ぶ大規模なソースコードをいつの間にか書き上げてしまいます。\nしかし、冷静に考えると不思議ではないでしょうか。\nLLM（大規模言語モデル）のAPI仕様書を見れ...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "日本語のエージェントスキルは何件ある？15,739件のSKILL.mdを文字種で数えた",
+      "url": "https://zenn.dev/skillselion/articles/e38011295b8820",
+      "site": "Zenn(LLM)",
+      "published": "2026-10-23T12:28:35Z",
+      "description": "!\n初出：Skillselion の2026年10月版「エージェントスキル言語調査（Language Census）」（調査日 2026年10月23日）。この記事は、そのうち日本語に関わる部分を日本の開発者向けにまとめ直したものです。私たちは Claude Code・Codex・Cursor 向けのスキルと MCP サーバーをインストール数で並べる独立ディレクトリ Skillselion を運営し...",
       "category": "AI・技術",
       "rss_category": "",
       "image_url": ""
@@ -49,16 +159,6 @@
       "site": "Zenn(LLM)",
       "published": "2026-10-23T10:47:18Z",
       "description": "!\n先に、この記事の要約\n\nSurface Laptop Ultra（Arm の Windows・NVIDIA の GPU）で、同じモデルのファイル（Qwen3.6-35B-A3B の GGUF）を Ollama と Llama-Windows で動かした\n既定の設定のままでは、Llama-Windows が Ollama より 15% ほど遅かった。ただ、Ollama の中身も llama.cp...",
-      "category": "AI・技術",
-      "rss_category": "",
-      "image_url": ""
-    },
-    {
-      "title": "「明日の需要」と「最短ルート」を、そのまま信じない",
-      "url": "https://zenn.dev/kensudo1203/articles/2968d602e166a0",
-      "site": "Zenn(LLM)",
-      "published": "2026-10-23T10:25:52Z",
-      "description": "ダッシュボードに「明日は18個」「これが最短ルートです」と出すこと自体は難しくありません。危ないのは、その数字の出自を曖昧にしたまま出すことです。移動平均を真の需要と書いたり、地図上の直線を道路の所要時間と書いたりすると、あとから説明が追いつきません。さらに LLM に個数まで作らせると、検証用の誤差も、配送の時間窓も残らなくなります。\n公開リポジトリは kensudogit/gistics-de...",
       "category": "AI・技術",
       "rss_category": "",
       "image_url": ""
