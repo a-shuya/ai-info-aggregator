@@ -1,14 +1,14 @@
 {
   "site": "Zenn(Python)",
-  "last_updated": "2026-10-25T15:01:35.054987",
-  "total_articles": 7362,
+  "last_updated": "2026-10-25T18:23:35.184061",
+  "total_articles": 7364,
   "articles": [
     {
-      "title": "Cohere Rerank 5 に乗り換える価値はあるか：日本語の業務文書40問で精度・Context Focus・較正スコアを実測した",
-      "url": "https://zenn.dev/codetech/articles/cohere-rerank5-ja-rag-eval",
+      "title": "eMudhra 中間CAインシデント 対応確認ガイド",
+      "url": "https://zenn.dev/masahide/articles/be60dc1cdf7a7b",
       "site": "Zenn(Python)",
-      "published": "2026-10-25T10:39:52Z",
-      "description": "日本語の業務文書（国税庁タックスアンサーの源泉所得税）で作った40問で、Cohere Rerank 5 と Rerank 4 Pro、日本語OSSの ruri-v3-reranker を比べました。結論は次の3つです。\n\n精度は、リランカーを入れると大きく上がりますが、Rerank 4 Pro から 5 Pro／5 Fast に替えても差は見えませんでした（40問では誤差の範囲）\n1問あたりの費用...",
+      "published": "2026-10-25T12:22:05Z",
+      "description": "更新後に、使っているクライアントが対象の証明書を拒否するか確認する手順です。HTTPSなどのTLS通信を対象とし、コード署名の検証は扱いません。\nまだ更新していない場合は、先に対応手順を進めてください。確認が必要な理由は前提の説明にまとめています。\n\nブラウザ・一般アプリの確認\n開発ツールの確認\nCAバンドルの直接検証\nサーバーの確認\n結果の判定\n\n最終情報確認：2026年10月25日 21:12...",
       "category": "開発",
       "rss_category": "",
       "image_url": ""
@@ -44,6 +44,16 @@
       "image_url": ""
     },
     {
+      "title": "【はじめに】AIと一緒に作る自動売買。手動売買との違い。",
+      "url": "https://zenn.dev/yoru_build/articles/42e6c0a575d75d",
+      "site": "Zenn(Python)",
+      "published": "2026-10-25T09:32:50Z",
+      "description": "この連載は何か\nAIと一緒に、自動売買のシステムを一から作っています。この連載は、その記録です。自動売買とは、売買の判断と発注を、人間の代わりにプログラムが行う仕組みのことです。\n画面に出る、株価指数に連動する商品の価格を読み取って記録し、過去のデータで検証し、売買の判断を出す作りです。どの順で作って、どこで躓いたのかを、順番に書いていきます。長くならないよう、1本の記事では1つのことだけを書きま...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
       "title": "pptxgenjsやpython-pptxで作ったPowerPointは、日本語の禁則処理が効いていない",
       "url": "https://zenn.dev/haihan19955/articles/6bd0d7607f51cb",
       "site": "Zenn(Python)",
@@ -74,11 +84,21 @@
       "image_url": ""
     },
     {
-      "title": "科学コードベンチ SciCode を80問まるごと解説したら、ベンチマーク側の欠陥179件が見えた",
-      "url": "https://zenn.dev/jinno_ai/articles/scicode-80-audit-grand-tour",
+      "title": "スト6のフレームメーターでシミー練習を自動採点しようとして、やめた話",
+      "url": "https://zenn.dev/shiryutech/articles/sf6-frame-meter-shimmy",
       "site": "Zenn(Python)",
-      "published": "2026-10-25T07:31:41Z",
-      "description": "はじめに: 「全部やる」という罠\nLLM が科学計算コードを書けるのか。それを測るベンチマークとして知られているのが SciCode（NeurIPS 2024 D&amp;B Track）です。ガウシアンビームの収差から Ewald 総和、Davidson 法、マクスウェル方程式のソルバ、GADC 量子チャネルまで、実際の研究現場の Python 製科学技術計算コードを 80 問・338 サブ問題...",
+      "published": "2026-10-25T05:40:32Z",
+      "description": "スト6のトレーニングモードで練習したシミーを録画して、合否や反応の速さを自動で採点するツールを作ろうとしました。AI にコードを書いてもらいながら約3か月続けて、完成させる前にやめました。\nこの記事は、その失敗談です。\n\n「フレームメーターを読めば、動画の解析はすぐ済む」と思って始めたこと\n手探りでメーターを読んでいって分かったこと\nメーターを読むだけでは厳しかったこと、アプリが大掛かりになってい...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "LiteLLM 1.107.0 のマルウェア ― AI 開発者が 5 分で確かめることと、次から 3 日待つ設定",
+      "url": "https://zenn.dev/persimmoq/articles/litellm-1-107-0-compromise-check",
+      "site": "Zenn(Python)",
+      "published": "2026-10-25T04:27:40Z",
+      "description": "2026 年 10 月 21 日、PyPI の litellm に、情報窃取型のマルウェアが入った版（1.107.0）が公開されました。2026 年 3 月の事案とは別の、2 度目の侵害です。PyPI からは削除済みで、安全な版は 1.106.2 です。\nLiteLLM は、Claude や GPT など複数のモデルを同じ形で呼ぶためのライブラリです。AI エージェントやプロキシの依存に入っている...",
       "category": "開発",
       "rss_category": "",
       "image_url": ""
