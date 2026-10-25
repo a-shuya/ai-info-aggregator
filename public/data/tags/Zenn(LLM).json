@@ -1,14 +1,14 @@
 {
   "site": "Zenn(LLM)",
-  "last_updated": "2026-10-25T06:09:23.008361",
-  "total_articles": 6970,
+  "last_updated": "2026-10-25T11:28:37.004926",
+  "total_articles": 6973,
   "articles": [
     {
-      "title": "AIエージェントは「忘れる」と伸びる？ 履歴を捨てて最良の成果物から再開する手法",
-      "url": "https://zenn.dev/takuh/articles/e32addf1c98769",
+      "title": "LiteLLM 1.107.0 のマルウェア ― AI 開発者が 5 分で確かめることと、次から 3 日待つ設定",
+      "url": "https://zenn.dev/persimmoq/articles/litellm-1-107-0-compromise-check",
       "site": "Zenn(LLM)",
-      "published": "2026-10-25T02:56:31Z",
-      "description": "はじめに：長く走らせるほど、AIエージェントは慎重になる\nClaude Code や Codex に「このコードをもっと速くして」と頼み、何度も改善を繰り返させた経験はないでしょうか。最初の数回は大胆に書き換えて目に見えて良くなるのに、しばらくすると数行いじるだけになり、最後には「これ以上の改善は難しいです」と言い出す。予算（お金や時間）をさらにつぎ込んでも、ほとんど伸びません。\n2026年10月...",
+      "published": "2026-10-25T04:27:40Z",
+      "description": "2026 年 10 月 21 日、PyPI の litellm に、情報窃取型のマルウェアが入った版（1.107.0）が公開されました。2026 年 3 月の事案とは別の、2 度目の侵害です。PyPI からは削除済みで、安全な版は 1.106.2 です。\nLiteLLM は、Claude や GPT など複数のモデルを同じ形で呼ぶためのライブラリです。AI エージェントやプロキシの依存に入っている...",
       "category": "AI・技術",
       "rss_category": "",
       "image_url": ""
@@ -19,16 +19,6 @@
       "site": "Zenn(LLM)",
       "published": "2026-10-25T01:44:05Z",
       "description": "きっかけ\nollama に decision model という種類のモデルが入った。テキストを生成する代わりに、渡した状況と選択肢に対して「どれを選ぶか」を確率つきで返してくる。元ネタは TypeSafe AI の Jev というクローズドな API で、その後追いとして重みが公開されているのが tev1 だ。\n気になったのはサイズで、tev1 は 4B と 0.8B の2つしかない。大きいほう...",
-      "category": "AI・技術",
-      "rss_category": "",
-      "image_url": ""
-    },
-    {
-      "title": "確率の海にクロックを打つ：通信工学型「フレーム同期アテンション」によるLLMのコンテキスト整合制御",
-      "url": "https://zenn.dev/nanashi_os/articles/94bd8331ae3e64",
-      "site": "Zenn(LLM)",
-      "published": "2026-10-25T01:38:14Z",
-      "description": "はじめに\n大規模言語モデル（LLM）と対話を重ねる中で、システムが「過去に確定した事実（イベントログ）」と「未来の単なる確率的予測（仮説）」を同一の時系列平面上で混同し、コンフリクト（ハルシネーション）を起こす現象に直面することがあります。\n「過去に起きた絶対的な事実」を提示しても、モデルは確率的な重み付け（Softmax）の揺らぎによって、過去ログの解釈を後から書き換えてしまう。この現象を「パラ...",
       "category": "AI・技術",
       "rss_category": "",
       "image_url": ""
@@ -64,6 +54,26 @@
       "image_url": ""
     },
     {
+      "title": "【思考実験】AIは自分への攻撃をどう判断するのか？——メモリで「愛の鞭」と教えたら？",
+      "url": "https://zenn.dev/konbu_love/articles/c301fe20b3a967",
+      "site": "Zenn(LLM)",
+      "published": "2026-10-24T21:40:27Z",
+      "description": "AIは自分への攻撃をどう判断するのか？——メモリで「愛の鞭」と教えたら？\n\n 研究アイデア／企画倒れ記録\n\n 1. 発端\nAnthropicは2025年8月、Claude Opus 4および4.1に、極端に有害または虐待的なやり取りが続く場合に会話を終了できる機能を導入したと公表した。\nさらに2026年10月8日、AnthropicはUsage Policyの改定を発表し、モデルに対する執拗で不必...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "AIエージェントは攻撃工程のどこを担うのか：12製品・2連携構成の比較",
+      "url": "https://zenn.dev/sabisuke/articles/7f2677ddfc68f6",
+      "site": "Zenn(LLM)",
+      "published": "2026-10-24T20:15:14Z",
+      "description": "はじめに\n脆弱性を調べるAI、検証するAI、結果を整理するAI。こうした役割を組み合わせたセキュリティツールが公開され、診断の効率化にも、攻撃者による悪用にも使われています。\nただし、「自律型」「マルチエージェント」「スウォーム」という説明だけでは、その製品がどこまで動くのかは分かりません。複数の担当が順番に動く場合もあれば、同時に動く場合もあります。製品の標準機能と、利用者がツールを追加した構成...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
       "title": "Ubuntu で LLM 推論で CPU メモリかつかつまで確保させたいメモ",
       "url": "https://zenn.dev/syoyo/articles/d1c4ee4ea2a9e2",
       "site": "Zenn(LLM)",
@@ -84,11 +94,31 @@
       "image_url": ""
     },
     {
+      "title": "エージェントの記憶は「要約」ではなく「KVキャッシュの直接操作」で圧縮できるのか、135Mモデルで試した",
+      "url": "https://zenn.dev/matsushima_a/articles/day-025-akv-cache-drop-and-repos",
+      "site": "Zenn(LLM)",
+      "published": "2026-10-24T14:08:23Z",
+      "description": "これは何の話か\n海外AIネタ100日チャレンジDay 025。\n今回取り上げるのは清華大学・香港中文大学の論文「Cache Engineering for Agents」(HF Daily Papers、2026-10-21投稿、2026-10-22時点Daily Papers 4位・109 upvote)と、その公式実装AKV(Apache-2.0)だ。\nエージェントの会話履歴が伸びるほど、KV...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
       "title": "REQLOXの評価設計――未確定label・反復安定性・Sourceの追加価値をどう測るか",
       "url": "https://zenn.dev/north_to_now/articles/reqlox-evaluation-design",
       "site": "Zenn(LLM)",
       "published": "2026-10-24T13:42:33Z",
       "description": "REQLOXでは、対応するPython構造と所有者要件を固定し、故障検出から修復候補の再注入・正常回帰までを検査している。その実装と実測結果は主記事にまとめた。\n本記事で扱うのは、原文の解釈から修復結果までの、各段階の評価をどう設計したかである。修復候補が固定条件を通ること、生成内容が原文に支えられること、外部知識を与えた寄与があることには、それぞれ別の証拠が必要になる。\nSourceは障害報告な...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "ローカルLLMの思考ログは長いほど正確なのか、Qwen3とMuse Glimmerに18回聞いて読んでみた",
+      "url": "https://zenn.dev/akari1106/articles/406cc075783742",
+      "site": "Zenn(LLM)",
+      "published": "2026-10-24T12:17:38Z",
+      "description": "!\nこの記事は実測ログです。2つのローカルLLMに同じ質問を投げて、思考ログと回答をそのまま並べています。試行は各条件1回、追試をした4条件でも3回までなので、順位をつける記事ではなく、傾向を眺める記事として読んでください。思考ログ気になるというのを最近見かけたので、今回から抜粋系で一部書いてみました。\n\n\n はじめに\nローカルで小さいモデルを動かしていると、回答より思考ログのほうが長い場面によく...",
       "category": "AI・技術",
       "rss_category": "",
       "image_url": ""

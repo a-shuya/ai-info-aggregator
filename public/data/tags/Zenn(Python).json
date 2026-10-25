@@ -1,8 +1,138 @@
 {
   "site": "Zenn(Python)",
-  "last_updated": "2026-10-25T06:09:23.008361",
-  "total_articles": 7349,
+  "last_updated": "2026-10-25T11:28:37.004926",
+  "total_articles": 7362,
   "articles": [
+    {
+      "title": "Cohere Rerank 5 に乗り換える価値はあるか：日本語の業務文書40問で精度・Context Focus・較正スコアを実測した",
+      "url": "https://zenn.dev/codetech/articles/cohere-rerank5-ja-rag-eval",
+      "site": "Zenn(Python)",
+      "published": "2026-10-25T10:39:52Z",
+      "description": "日本語の業務文書（国税庁タックスアンサーの源泉所得税）で作った40問で、Cohere Rerank 5 と Rerank 4 Pro、日本語OSSの ruri-v3-reranker を比べました。結論は次の3つです。\n\n精度は、リランカーを入れると大きく上がりますが、Rerank 4 Pro から 5 Pro／5 Fast に替えても差は見えませんでした（40問では誤差の範囲）\n1問あたりの費用...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "まとめサイトをターミナルで読む TUI「matome」を作った",
+      "url": "https://zenn.dev/synchrium_dev/articles/1964c4c4691b55",
+      "site": "Zenn(Python)",
+      "published": "2026-10-25T10:30:05Z",
+      "description": "まとめサイトをターミナルの中で読むための TUI「matome」を作って、公開しました。\nhttps://github.com/synchrium/matome\n\nデモのサイトと記事は架空のものです。画像は NASA のパブリックドメインの写真を使っています\nターミナルから離れずにまとめサイトを読みたかったのが、作ったきっかけです。\n設計の相談からコードを書くところまで、Claude Code と...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "torch.cuda.is_available()のFalseを、同じPythonの診断値から切り分ける",
+      "url": "https://zenn.dev/kas_blog/articles/20260910-pytorch-cuda-unavailable",
+      "site": "Zenn(Python)",
+      "published": "2026-10-25T09:50:38Z",
+      "description": "torch.cuda.is_available() が False のときは、失敗しているPythonで環境とビルド情報を記録すると、調べる先を絞れます。nvidia-smi の表示だけでは、どのPyTorchを読み込んでいるかは分かりません。この記事では、同じプロセスの観測値から次の確認を選び、利用可否と演算成功を分ける手順を整理します。\n!\n2026年9月10日確認の公式資料に基づく、NVID...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "自動売買システムの全体像を1枚の図で:価格の取得・記録・バックテスト・判断(Python・PAD)",
+      "url": "https://zenn.dev/yoru_build/articles/b5569fce05651a",
+      "site": "Zenn(Python)",
+      "published": "2026-10-25T09:43:44Z",
+      "description": "私が作っている自動売買(売り買いの判断と注文を、プログラムに任せる仕組み)は、「取得・記録・判断・発注」の4つの段を順に通る流れと、記録した価格で戦略(どういう条件で売買するかのルール)を試す「バックテスト」の、2つでできています。この記事では、その全体を1枚の図で表現します。\n\n 売買の対象\nシステムが扱っているのは、国内の証券会社で扱っている、株価指数(多くの株の値動きを、一つの数字で表したも...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "pptxgenjsやpython-pptxで作ったPowerPointは、日本語の禁則処理が効いていない",
+      "url": "https://zenn.dev/haihan19955/articles/6bd0d7607f51cb",
+      "site": "Zenn(Python)",
+      "published": "2026-10-25T09:32:44Z",
+      "description": "pptxgenjs や python-pptx で日本語のスライドを作ると、こういう行が出てきます。\n…営業利益率は8.4%となった\n、経営層のコミットメントが不可欠である\n「、」が行頭に来ています。日本語の組版では「行頭禁則」といって、句読点や閉じ括弧、長音「ー」、小さい「ッ」などは行頭に置かないのが決まりです。Word や、PowerPoint で手で打った資料ではまず起きません。\nなぜコード...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "「2週間で終わります」が当たる確率は13%だった。駆け出しの自分に宛てた、見積もりの手紙【Pythonでモンテカルロ】",
+      "url": "https://zenn.dev/zumiraku/articles/a687f1380515e7",
+      "site": "Zenn(Python)",
+      "published": "2026-10-25T08:49:05Z",
+      "description": "拝啓\n駆け出しのころの僕へ。\n元気にしていますか。たぶん、元気です。そして、たぶん忙しい。初めて個人で受けた案件の見積もりを前に、エディタとカレンダーを交互ににらんでいるころだと思います。\n君はこれから、お客さんにこう言います。\n「2週間で終わります」\nその言葉を、いまの僕が少しだけ計算してみました。結果から言うと、君の見積もりが当たる確率は、だいたい13% です。\n怒らないで聞いてください。君の...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "Pythonの基礎学習が終わったら、Pythonでスクレイピングを始めよう！",
+      "url": "https://zenn.dev/momiji_ai/articles/67c7ce4c54fad3",
+      "site": "Zenn(Python)",
+      "published": "2026-10-25T07:46:55Z",
+      "description": "自己紹介\n普段はセキュリティやAIに興味があり、脆弱性、CVE-2026-73683を発見し、報告したことで採番されたり、AIを個人的に勉強している現役学生です。\n\n この記事を書く目的\n\n業務でPyppeteerを使うシステムのコスト削減に取り組んだから\n応用的な使い方も説明したいから\n\n\n はじめに\nこの記事では、Python から本物のブラウザを動かしてスクレイピングできるライブラリ Pyp...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "科学コードベンチ SciCode を80問まるごと解説したら、ベンチマーク側の欠陥179件が見えた",
+      "url": "https://zenn.dev/jinno_ai/articles/scicode-80-audit-grand-tour",
+      "site": "Zenn(Python)",
+      "published": "2026-10-25T07:31:41Z",
+      "description": "はじめに: 「全部やる」という罠\nLLM が科学計算コードを書けるのか。それを測るベンチマークとして知られているのが SciCode（NeurIPS 2024 D&amp;B Track）です。ガウシアンビームの収差から Ewald 総和、Davidson 法、マクスウェル方程式のソルバ、GADC 量子チャネルまで、実際の研究現場の Python 製科学技術計算コードを 80 問・338 サブ問題...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "Copilotのカスタム利用指標を読む：MCP接続回数をツール実行数にしない",
+      "url": "https://zenn.dev/aipha_euro/articles/9a189e0f9da468",
+      "site": "Zenn(Python)",
+      "published": "2026-10-25T04:12:44Z",
+      "description": "GitHub Copilotで社内スキルやMCPサーバーを配り始めると、「何が使われているか」を知りたくなります。しかし、名前が見えるようになっても、その数字が業務の実行回数を表すとは限りません。\n2026年10月22日、GitHubは利用指標APIでカスタマイズの設定名を報告する変更を発表しました。本稿では、この変更を利用状況の可視化へ取り込む際の設計を扱います。結論は、名前別ランキングより先に...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "LiteLLM 1.107.0侵害、Claude Code経由説は誤り。トークン流出の原因と、自分が該当するかの確かめ方",
+      "url": "https://zenn.dev/hoshiorange/articles/40-litellm-compromise-claude-code-rumor",
+      "site": "Zenn(Python)",
+      "published": "2026-10-25T02:42:41Z",
+      "description": "「LiteLLM のハッカー被害、原因は Claude Code 経由で漏れた GitHub トークン」。10月下旬、こんな見出しを見かけた方もいると思います。毎日 Claude Code を使っていると不安になりますが、先に結論を書くと、この見出しは誤りでした。\nこの記事は、Claude Code や LiteLLM を使っていて、その見出しを見て判断に迷っている人向けです。10月21日に起きた...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "SQLAlchemy / Alembic入門",
+      "url": "https://zenn.dev/g_kamoshirenai/articles/59853ba91f9463",
+      "site": "Zenn(Python)",
+      "published": "2026-10-25T02:13:05Z",
+      "description": "PythonでDBを扱うとき、SQLAlchemyとAlembicを一緒に使うことがあります。SQLAlchemyはアプリからDBを読み書きするための道具です。AlembicはDBの構造を変更し、その履歴を残すために使います。\nこの記事では、SQLiteにusersテーブルを作り、後から列を1つ追加します。手を動かしながら、モデルを書くだけではなぜテーブルができないのか、自動生成したマイグレーショ...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "分析コードを信じる前に、答えの分かるデータで壊してみた — 変異テストで見逃しが2つ出た",
+      "url": "https://zenn.dev/zeroyen_dev/articles/audit-with-known-answers",
+      "site": "Zenn(Python)",
+      "published": "2026-10-25T01:00:20Z",
+      "description": "AI（Claude Code）に、ブログの運用と、その成績の分析を任せています。\n分析の結果は「どの記事を直すか」「どの検索語を狙うか」の判断に使います。計算が間違っていれば、判断も間違います。それなのに、計算が合っているかを確かめずに使っていました。\n2026年10月24日、分析コードを書き直すにあたって、次の3つを先に決めました。\n\n答えが分かるテストデータを、自分で作る\n計算結果が、手計算の...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "Pythonのデコレータを実務で使いこなす",
+      "url": "https://zenn.dev/akinori901/articles/20260929-plan044",
+      "site": "Zenn(Python)",
+      "published": "2026-10-25T00:58:20Z",
+      "description": "Pythonのデコレータを実務で使いこなす\n\n 概要\nPythonのデコレータは「関数やクラスに手を加えずに、その前後へ処理を差し込む」ための仕組みです。入門書では @ 記号の使い方までは説明されても、実務でどこに効くのかまでは踏み込まないことが多いと感じます。\nこの記事では、デコレータの基礎から、ログ・計測・リトライ・キャッシュ・認可チェックといった実務で頻出するパターンまでを、そのままコピーし...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
     {
       "title": "AWSにデプロイせず、FastAPI製Lambdaのarm64実行をCIで検証する",
       "url": "https://zenn.dev/shingokumon/articles/4da5acb9697d56",
