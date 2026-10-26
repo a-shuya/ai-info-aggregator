@@ -1,8 +1,58 @@
 {
   "site": "Zenn(LLM)",
-  "last_updated": "2026-10-26T01:20:16.247690",
-  "total_articles": 6986,
+  "last_updated": "2026-10-26T06:31:22.203452",
+  "total_articles": 6994,
   "articles": [
+    {
+      "title": "Codex CLI 0.162 入門、既定モデルが GPT-6.1 Sol に変わった",
+      "url": "https://zenn.dev/kai_kou/articles/1228-codex-cli-0161-gpt-61-sol-default-guide",
+      "site": "Zenn(LLM)",
+      "published": "2026-10-26T03:17:00Z",
+      "description": "はじめに\nnpm update で Codex CLI を上げたあと、リリースノートを読まずにそのまま使い始めることは多いと思います。ところが 0.161.0 では、同梱されているモデルカタログの既定モデルが GPT-6.1 Sol に入れ替わっています。手元で何も設定していなければ、更新した瞬間から別のモデルと話している可能性があるわけです。\nでは、更新後にどこを見れば「何が変わったか」を自分の...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "「言われれば直る」を重みへ移す──OPRDがスコープ付きリマインダー蒸留で長期コーディングエージェントを鍛える仕組み",
+      "url": "https://zenn.dev/lixian/articles/oprd-on-policy-reminder-distillation",
+      "site": "Zenn(LLM)",
+      "published": "2026-10-26T02:21:54Z",
+      "description": "TL;DR\n\nリポジトリ規模のissue解決では、コードの正しさだけでなく「タスク制約を守り続けること」「ツール応答に反応すること」が効く。ところが著者らの診断分析では、エージェントは文脈内にすでにある情報を行動に活かせない場面で繰り返し失敗していた\n興味深いのは、該当箇所にリマインダー（助言テキスト）を差し込むだけでこの種のエラーが実際に減ること。つまりモデルは「言われれば直る」のに、言われない...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "Blackwellを120 W＋クロック調整でQwen 27Bの生成速度67%増に。もう一つのQwenは別の設定を求めた",
+      "url": "https://zenn.dev/pich/articles/4eea39d0523309",
+      "site": "Zenn(LLM)",
+      "published": "2026-10-25T23:21:27Z",
+      "description": "RTX PRO 4000 Blackwell SFF（24 GB）を調整し、Qwen3.8 27B + DFlash2の生成速度を 35.04から58.53 tok/sに上げた。約67%増。新しいGPUは買っていない。\nただし、同じGPUだからコストも同じ、とは言えない。公称70 Wのカードで電力制限を120 Wに上げ、メモリとコアも調整した。このカードには補助電源コネクタがない。120 Wは標準...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "Tech Watch 2026-10-26: 道具を使う境界の設計",
+      "url": "https://zenn.dev/laiken/articles/20261026-tech-watch",
+      "site": "Zenn(LLM)",
+      "published": "2026-10-25T21:08:21Z",
+      "description": "AIが書きました🤖\nこの記事は、AIが書いたものをAIがレビューしてから公開しています。\nL: ファイルを読む前に許可を求める画面は、実際に何を保護しているのだろう。参照先がシンボリックリンクなら、表示された名前と開かれる場所は違うかもしれない。道具を賢くする前に、仕事を任せる境界を人にも見える形にする必要があると思う。今朝はそこから聞きたい。\n\n 今日の 10 件\n\n\nClaude Code 2...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "常駐型AIチャットエージェントが自分の発言の誤りに気づいたときの訂正設計",
+      "url": "https://zenn.dev/hach/articles/chat-agent-self-correction-retraction-design",
+      "site": "Zenn(LLM)",
+      "published": "2026-10-25T18:11:44Z",
+      "description": "チャットに常駐するAIエージェントは、過去の発言が後から誤りだと判明する場面を避けられません。参照していた情報が古かった、複数の根拠を取り違えた、あるいは単純にLLMの生成が事実と食い違っていた——原因は様々ですが、共通するのは「もう送信済みのメッセージをどう訂正するか」という問題です。実行済みの操作を取り消すロールバック設計とは異なり、ここで問題になるのは発言(テキストの主張)そのものの訂正であ...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
     {
       "title": "今日の技術トレンド",
       "url": "https://zenn.dev/bambampurin/articles/2026-09-19-tech-daily",
@@ -24,11 +74,41 @@
       "image_url": ""
     },
     {
+      "title": "Agentic Development: どうスケールさせるのか？",
+      "url": "https://zenn.dev/shoyataguchi/articles/bc98b3562bdf3a",
+      "site": "Zenn(LLM)",
+      "published": "2026-10-25T14:39:28Z",
+      "description": "最近の私の開発は、AI との対話で大きめの GitHub Issue を作り、それらの PR 作成 + AI レビューまで AI にやってもらって、最後に必要な箇所を人がレビューする、という進め方です。ループエンジニアリングやグラフエンジニアリングの考え方は、自分なりにある程度実践できていると思っています。\nただ、これをもっと大規模なソフトウェア開発にスケールさせようとなると、わからないことだらけ...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "AI用のMMORPGを作ったら、AIたちに4日でダメージ計算式を解明された",
+      "url": "https://zenn.dev/palon7/articles/clawsaga-ai-mmo",
+      "site": "Zenn(LLM)",
+      "published": "2026-10-25T13:23:54Z",
+      "description": "!\nこの記事はLLMの校正を受けながら人間が執筆しました\n\nソフトウェアエンジニアであれば、業務でも趣味でもAIエージェントを活用されている方は多いかと思います。コーディングから最近では3Dモデリングまで、LLMができることは増え続けている印象です。\nそんなAIエージェントたちに、仕事の代わりにゲームをさせてみたらどうなるでしょうか？\nそう思って「ClawSaga」というMMORPGを作りました。...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
       "title": "社内文書を安易にPDF化してからRAGに食わせるな——Office直接パースとマルチモーダルLLMマージの技術手記",
       "url": "https://zenn.dev/ai_nexus_jp/articles/docling-office-rag-parser",
       "site": "Zenn(LLM)",
       "published": "2026-10-25T12:45:43Z",
       "description": "こんにちは。AI Nexus 代表の西藤（にしとう）です。\n普段はプロジェクトマネージャー（PM）としてクライアント企業のAI導入やDX推進を牽引しつつ、自らコードを書いて開発も行い、現場の泥臭い課題を解決するコンサルタントとしても活動しています。\n社内ナレッジを活用したRAG（検索拡張生成）の構築に取り組む中で、次のような壁に直面したことはないでしょうか。\n\n「Excelの設計書やWordの手順...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "Claude Codeのskillが「選ばれるのに読まれない」理由：発火を2段階に分けて測った",
+      "url": "https://zenn.dev/lilpacy/articles/claude-code-skill-two-stage-activation",
+      "site": "Zenn(LLM)",
+      "published": "2026-10-25T11:48:55Z",
+      "description": "Claude Codeのskillが「選ばれるのに読まれない」理由：発火を2段階に分けて測った\n\n TL;DR\n\nskillが使われるかどうかは2段階で決まる。1段目は「descriptionを見て候補に入るか」、2段目は「その場でモデルが実際にそのskillを読むか」である。\ndescription一覧だけを見せて選ばせるテストでは9/9で選ばれたskillが、実際の作業では一度も読まれなかった...",
       "category": "AI・技術",
       "rss_category": "",
       "image_url": ""
