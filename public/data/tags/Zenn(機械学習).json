@@ -1,8 +1,38 @@
 {
   "site": "Zenn(機械学習)",
-  "last_updated": "2026-10-26T06:31:22.203452",
-  "total_articles": 2098,
+  "last_updated": "2026-10-26T13:33:26.600557",
+  "total_articles": 2100,
   "articles": [
+    {
+      "title": "日本株向け AI クオンツシステムの紹介",
+      "url": "https://zenn.dev/gzh1994/articles/quantg-introduction",
+      "site": "Zenn(機械学習)",
+      "published": "2026-10-26T07:53:37Z",
+      "description": "はじめに\n日本株を対象に、データの取得から因子（銘柄を選ぶための指標）の発掘、毎日の売買判断、模擬口座での検証までを自動で回す AI クオンツシステム「QuantG」を個人で作っています。\n中心にあるのは、LLM に因子を自分で掘らせることです。この記事では、細かい実装よりも、このシステムをどんな考え方で組み立てたかを紹介します。\n\n 全体の流れ\nデータの自動取得\n  ↓\n時点を揃えたデータ（その...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "定数ステップサイズとモメンタム法を自分で書く：100万件の回帰で、勾配法の計算を減らす",
+      "url": "https://zenn.dev/tmtk/articles/123a240f8e2db1",
+      "site": "Zenn(機械学習)",
+      "published": "2026-10-26T03:58:50Z",
+      "description": "はじめに\n『分析者のための数理最適化入門』（伊藤元治・原田耕平・松岡勇気、ソシム、2026年）の第4章を、5本に分けて記事にしています。この記事は3本目で、データが多いときに勾配法の計算を節約する方法を扱います。\n第3章で扱った最急降下法は、反復のたびに、全データを使って目的関数と勾配を計算しました。データが100件なら気になりませんが、100万件になると、1回の計算でも100万件ぶんの足し算が必...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "ゼロショットで予測できる TimesFM 3.0 を BigQuery で動かしてみた",
+      "url": "https://zenn.dev/gixo/articles/bigquery-timesfm-forecast",
+      "site": "Zenn(機械学習)",
+      "published": "2026-10-26T02:04:42Z",
+      "description": "はじめに\nBigQuery で TimesFM 3.0 が使えるという紹介ブログを見て、少し興味を持ちました。ゼロショットで予測できるモデルっぽいから、使えるなら使ってみたいかなあ、くらいの気持ちです。\nそこで、BigQuery の公開データを使って TimesFM 3.0 を動かし、前のバージョンの 2.5 と比べたり、祝日や天気を渡したりしてみました。自分の備忘録も兼ねて、分かったことをまとめ...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
     {
       "title": "Kaggle を 1 人で回すための作業環境づくりと提出記録",
       "url": "https://zenn.dev/recdnd/articles/k-rec-kaggle-solo-workflow-local-env-and",
@@ -65,7 +95,7 @@
     },
     {
       "title": "【研究者に学ぶ】線形自由エネルギー関係に基づくデータ科学と触媒設計 — 山口滋先生講演会",
-      "url": "https://zenn.dev/saka_poclab/articles/chemical-data-science-lecture-yamaguchi",
+      "url": "https://zenn.dev/poclab_techblog/articles/chemical-data-science-lecture-yamaguchi",
       "site": "Zenn(機械学習)",
       "published": "2026-10-25T10:09:57Z",
       "description": "1. 講演会の概要\n五東研究室D3の坂口大門です。\n2026年10月15日（木）13:00–14:30、横浜国立大学の化学・生命系学科の学部生向け「化学データサイエンス」の授業の一環として、山口滋先生にご講演いただきました。\n続く14:40–16:10には、一般向けに「線形自由エネルギー関係に基づくデータ科学と触媒設計」と題して、最新の研究内容も含めてお話しいただきました。\n以下は、一般向けの講演...",
@@ -75,7 +105,7 @@
     },
     {
       "title": "【研究者に学ぶ】線形自由エネルギー関係に基づくデータ科学と触媒設計 — 山口滋先生講演会",
-      "url": "https://zenn.dev/poclab_techblog/articles/chemical-data-science-lecture-yamaguchi",
+      "url": "https://zenn.dev/saka_poclab/articles/chemical-data-science-lecture-yamaguchi",
       "site": "Zenn(機械学習)",
       "published": "2026-10-25T10:09:57Z",
       "description": "1. 講演会の概要\n五東研究室D3の坂口大門です。\n2026年10月15日（木）13:00–14:30、横浜国立大学の化学・生命系学科の学部生向け「化学データサイエンス」の授業の一環として、山口滋先生にご講演いただきました。\n続く14:40–16:10には、一般向けに「線形自由エネルギー関係に基づくデータ科学と触媒設計」と題して、最新の研究内容も含めてお話しいただきました。\n以下は、一般向けの講演...",
@@ -179,16 +209,6 @@
       "site": "Zenn(機械学習)",
       "published": "2026-10-23T07:42:09Z",
       "description": "教材のコードを、自分で説明し、変更できるようになりたい方へ。\n\nNumPy・pandas・Matplotlibの操作を、小さな配列や表の入出力から読み解きます。前処理・学習・評価・改善を順につなぎ、Titanicの生存予測をStreamlitアプリとして動かします。関数の引数や戻り値、評価指標の意味、データリークを防ぐ処理まで、コードと理由を対応づけて学びます。\n\nPythonの基本構文を知り、教...",
-      "category": "AI・技術",
-      "rss_category": "",
-      "image_url": ""
-    },
-    {
-      "title": "機械学習の数式に強くなる定番書4選",
-      "url": "https://zenn.dev/makitech/articles/20261023_book_ref",
-      "site": "Zenn(機械学習)",
-      "published": "2026-10-23T00:03:30Z",
-      "description": "はじめに\n自分が機械学習を初めて触ったとき、やっていたことは fit と predict を呼ぶだけだった。チュートリアルをなぞれば精度は出る。それで仕事になっている気になっていた。\n崩れたのは、本番データで精度が落ちた理由を聞かれた時だ。説明できなかった。特徴量を足したり木の深さを変えたりして数字は動くのに、なぜ動いたのかを言葉にできない。手順は覚えたが、手法の中身は空っぽだった。\nそこから、ブ...",
       "category": "AI・技術",
       "rss_category": "",
       "image_url": ""

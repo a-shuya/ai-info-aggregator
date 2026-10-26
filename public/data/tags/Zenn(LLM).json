@@ -1,8 +1,108 @@
 {
   "site": "Zenn(LLM)",
-  "last_updated": "2026-10-26T06:31:22.203452",
-  "total_articles": 6994,
+  "last_updated": "2026-10-26T13:33:26.600557",
+  "total_articles": 7007,
   "articles": [
+    {
+      "title": "AIエージェントかWorkflowか ― QCDとリスクで考える使い分け",
+      "url": "https://zenn.dev/taru_neko/articles/ai-agent-vs-workflow",
+      "site": "Zenn(LLM)",
+      "published": "2026-10-26T12:53:27Z",
+      "description": "AIを業務システムに組み込むとき、\n「Workflowで作るべきか、AIエージェントに任せるべきか」\nという話がよく出ます。\nこの2つの大きな違いは、\n「次に何をするか」を事前に決めるか、実行時にAIへ判断させるか\nです。\nこの記事では、WorkflowとAIエージェントの違いを整理し、QCDとリスクの観点から使い分けを考えます。\n\n WorkflowとAIエージェントの違い\n例えば、CPU高騰の...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "サブエージェントfork・プリロードによるコンテキストの効率化について",
+      "url": "https://zenn.dev/shikamaru/articles/d3142afedf9997",
+      "site": "Zenn(LLM)",
+      "published": "2026-10-26T12:32:30Z",
+      "description": "はじめに\nフリーランスで Web 系の SE をしている しかまる です。\nいま参画している案件で、AI エージェントの skill を開発しています。\n本案件でぶつかった課題としまして skill の規模が大きくなるにつれエージェントの動きが重くなり、手順や規約の抜け漏れが出るようになりました。\n起きていた問題は、次のとおりです。\n\nメインエージェントのコンテキストが大きくなりすぎて、1回の応答...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "vLLM を 3 種類の GPU で比較: Qwen2.5-7B のトークン/秒と 100 万トークンあたりのコスト（RTX A6000、L",
+      "url": "https://zenn.dev/runcrateai/articles/3a791e14e1ad40",
+      "site": "Zenn(LLM)",
+      "published": "2026-10-26T11:08:28Z",
+      "description": "小さめのモデルをセルフホストする GPU を選ぶ前に、どうしても知りたい数字がひとつありました。サーバーが実際に忙しく動いているとき、生成トークン 100 万個あたりのコストはカードごとにいくらになるのか、です。スペックシートには答えが載っていないので、今朝（2026-10-26）Runcrate でシングル GPU のマシンを 3 台借り、それぞれで同じ vLLM ベンチマークを実行し、数値がデ...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "AIエージェントを司令官と部下に分けて、開発を自律運用してみた（4）状態をファイルに残す ― tasks.json・PROGRESS.md",
+      "url": "https://zenn.dev/xin_tech/articles/agent-ops-field-notes-04",
+      "site": "Zenn(LLM)",
+      "published": "2026-10-26T10:47:25Z",
+      "description": "この記事は、下書きと文章の整理に生成AIを使っています。内容は、著者が生成AIを使ってタスクを自律的に回し続けるやり方を実際に試して検証し、そのやり方と感想を記録したものです。\n\nこの回では、司令官（メインセッション）の状態を会話ではなくファイルに置く仕組みを、実際のファイルとコードを引用しながら説明します。扱うのは3つです。完了の基準を passes ひとつに絞った tasks.json、再開で...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "コードをほぼ書かずに商用ソフトを作る：AIエージェントに開発を任せる体制と運用ルール",
+      "url": "https://zenn.dev/ray_9618/articles/f7884033741464",
+      "site": "Zenn(LLM)",
+      "published": "2026-10-26T08:52:30Z",
+      "description": "はじめに\n個人で商用ソフトMegrab Studio（動画ダウンローダ。macOS / Windows / Android の3プラットフォーム＋ライセンスサーバー＋公式サイト）を開発し、販売開始に向けて準備を進めています。\nひとつ特徴があるとすれば、コードはほぼAIエージェントに書かせていることです。自分は仕様を決め、問題を言語化して指示し、出来上がったものを検収する側に回っています。\nこの体制...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "AIエージェントの権限設計を考える ― 委譲権限と自律権限だけでは足りない",
+      "url": "https://zenn.dev/taru_neko/articles/ai-agent-authorization-design",
+      "site": "Zenn(LLM)",
+      "published": "2026-10-26T08:45:54Z",
+      "description": "AIエージェントから社内システムやAPIを操作できるようにするとき、避けて通れないのが権限設計です。\n最初は単純に、\n\n人がAIに指示するなら委譲権限\nバッチや監視など自動実行ならAI自身の権限\n\nと分ければよいのではないか、と考えていました。\nしかし整理してみると、AIエージェントではそれだけでは足りません。\n結論から言うと、委譲権限かAI自身の権限かをAgent全体で決めるのではなく、AIが利...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "The LLM Proposes, Code Decides: Live Website Edits With 14 Verbs",
+      "url": "https://zenn.dev/zahiraifer/articles/c5112bcaca43dc",
+      "site": "Zenn(LLM)",
+      "published": "2026-10-26T07:42:56Z",
+      "description": "By Zahi Raifer\nThere is a tempting way to build an AI editor for websites: hand the model the page, ask for the new page, and save whatever comes back. It demos well. It also means the model's worst o...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "AI体験記 vol.18 — 誰が倉庫を回していたのか",
+      "url": "https://zenn.dev/mizutamari/articles/local-llm-vol018",
+      "site": "Zenn(LLM)",
+      "published": "2026-10-26T07:26:32Z",
+      "description": "!\n前回（vol.17）の続きで、オーケストレーション編の最終回です。\n技術的な正確さより、体験の正直さ優先。復習も兼ねています。\n\n前回、倉庫番のGを面接にかけて、結局そのまま残した話を書いた。\nその面接のとき、速さもメモリも測った。ついでに報告書の中身も数えた。\n数えたら、笑えない数字が出た。\n\n\n 7割\nGの報告書には、「この話はどこから来たか」を書く欄がある。差出人の名前だ。\nその欄を、全...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "OpenAI Decisions API（gpt-6-luna）にJevのバッチ判定を移植・実測。キャッシュと配列参照の罠",
+      "url": "https://zenn.dev/jtcc/articles/openai-decisions-api-jev",
+      "site": "Zenn(LLM)",
+      "published": "2026-10-26T07:10:43Z",
+      "description": "こんにちは。日本トレカセンターの佐藤です。\n前回の記事では、X 上の自社サービスに関する投稿を 5 分ごとに集めてネガポジや類型を判定し、Slack に通知する社内ツール「x-pulse」を紹介しました。\nx-pulse では、判定モデルに TypeSafe の「Jev（jev-1.13.0）」を使っています。\n前回の記事の最後に「System One のほかのモデルも検証していきたい」と書きまし...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "AI体験記 vol.17 — Gは、嘘をつけない",
+      "url": "https://zenn.dev/mizutamari/articles/local-llm-vol017",
+      "site": "Zenn(LLM)",
+      "published": "2026-10-26T06:31:25Z",
+      "description": "!\n前回（vol.16）の続きです。今回から、働いているAIに名前をつけて書きます。\n技術的な正確さより、体験の正直さ優先。復習も兼ねています。\n\nX は外回り。街に出て、噂を集めて帰ってくる。足が速い。持ち帰る話は玉石混交で、半分は使い物にならない。\nG は倉庫番だ。Xが担いできた荷物を開けて、中身を検める。使えるものだけを次に渡す。\nO は広げ役。Gが選んだものを受け取って、そこから話を膨らま...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
     {
       "title": "Codex CLI 0.162 入門、既定モデルが GPT-6.1 Sol に変わった",
       "url": "https://zenn.dev/kai_kou/articles/1228-codex-cli-0161-gpt-61-sol-default-guide",
@@ -14,11 +114,41 @@
       "image_url": ""
     },
     {
+      "title": "「任せる範囲」を先に決めたら、AIが止まらなくなった",
+      "url": "https://zenn.dev/hitoribocchi_ai/articles/06111dd916fe76",
+      "site": "Zenn(LLM)",
+      "published": "2026-10-26T02:58:19Z",
+      "description": "Claude Codeに作業を任せていると、2つの失敗が起きます。\n\n\n聞きすぎる。 「実行してよいですか？」が毎回出て、作業が止まる。\n\n任せすぎる。 何も聞かずに進めて、取り返しのつかない操作をする。\n\nどちらも、AIの性格ではなく、「どこまでやってよいか」を私が決めていなかったのが原因でした。\n今は、3つの区分を先に決めて、CLAUDE.mdに書いています。一人でECを運営している環境の実例...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "AI エージェント 生成エージェント ~ STORM Act #1",
+      "url": "https://zenn.dev/sionicai_jp/articles/88bd276e27cc2f",
+      "site": "Zenn(LLM)",
+      "published": "2026-10-26T02:32:55Z",
+      "description": "本記事の目的\nAIエージェントを作る手法はいくつかあり、日々増えていっています。特にノーコード・ローコードの手法もいくつか存在し、AIエージェント自作への障壁はだいぶ下がってきています。\nしかし、ノーコードであっても、処理フローの設計や各ステップへの指示には試行錯誤が必要です。\n本記事では、その作成作業をAIが支援する、弊社 Sionic AI の STORM Act を紹介します。まずは前提とし...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
       "title": "「言われれば直る」を重みへ移す──OPRDがスコープ付きリマインダー蒸留で長期コーディングエージェントを鍛える仕組み",
       "url": "https://zenn.dev/lixian/articles/oprd-on-policy-reminder-distillation",
       "site": "Zenn(LLM)",
       "published": "2026-10-26T02:21:54Z",
       "description": "TL;DR\n\nリポジトリ規模のissue解決では、コードの正しさだけでなく「タスク制約を守り続けること」「ツール応答に反応すること」が効く。ところが著者らの診断分析では、エージェントは文脈内にすでにある情報を行動に活かせない場面で繰り返し失敗していた\n興味深いのは、該当箇所にリマインダー（助言テキスト）を差し込むだけでこの種のエラーが実際に減ること。つまりモデルは「言われれば直る」のに、言われない...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "外部LLMに原稿を送る前に、ローカルでマスキングする校正パイプラインを作った",
+      "url": "https://zenn.dev/yuu7/articles/llm-masking-proofread-pipeline",
+      "site": "Zenn(LLM)",
+      "published": "2026-10-26T00:48:21Z",
+      "description": "未公開の記事原稿を外部のAIに校正してもらうために、送る前にローカルでマスキングし、戻ってきたらローカルで元に戻す仕組みを作りました。使ったのは SB Intuitions の Sarashina3 で、モデルは sarashina3-mini です。\nそのまま送らなかった理由は、そのAPIの利用条件です。送信した入力と生成結果は、サービス提供や改善のために使われうる、とありました。学習を含む、と...",
       "category": "AI・技術",
       "rss_category": "",
       "image_url": ""

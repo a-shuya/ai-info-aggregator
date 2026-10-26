@@ -1,8 +1,158 @@
 {
   "site": "Zenn(Python)",
-  "last_updated": "2026-10-26T06:31:22.203452",
-  "total_articles": 7374,
+  "last_updated": "2026-10-26T13:33:26.600557",
+  "total_articles": 7389,
   "articles": [
+    {
+      "title": "TkinterからFletへ移行：現場の事務員がメンテできる「Excel設定ファイル駆動型」Pythonアプリの設計パターン",
+      "url": "https://zenn.dev/ai_nexus_jp/articles/excel-automation-flet-app",
+      "site": "Zenn(Python)",
+      "published": "2026-10-26T12:49:44Z",
+      "description": "こんにちは。AI Nexus 代表の西藤（にしとう）です。\n普段はプロジェクトマネージャー（PM）としてクライアント企業のAI導入やDX推進を牽引しつつ、自らコードを書いて開発も行い、現場の泥臭い課題を解決するコンサルタントとしても活動しています。\n先日、以前ご支援した保険代理店のB社様から、久しぶりに連絡をいただきました。\n「西藤さん、あのとき作ってもらった振り分けアプリ、今でも毎月の業務で現場...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "認証局の秘密鍵が「1〜255」だった件と、Python ユーザーが今すぐやること（eMudhra / emSign）",
+      "url": "https://zenn.dev/lecto/articles/14181f80d0d4c7",
+      "site": "Zenn(Python)",
+      "published": "2026-10-26T12:24:28Z",
+      "description": "はじめに\n2026 年 10 月、インドの認証局（CA）eMudhra が運用する中間証明書 8 件で、署名に使う秘密鍵を誰でも計算で取り出せることが分かりました。\nMozilla・Google・Apple・Microsoft はすぐに該当する証明書を遮断し、eMudhra は世界向けの SSL/TLS 証明書事業から撤退すると発表しています。\nブラウザは自動で更新されるので、普段 Web を見る...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "色が付いているセル＝入力欄、ではない — 値の照合は全部正しいのに紙面が壊れる",
+      "url": "https://zenn.dev/shinsei99/articles/color-is-not-an-input-field",
+      "site": "Zenn(Python)",
+      "published": "2026-10-26T11:12:03Z",
+      "description": "業界団体が配っている公式の帳票（Excel）に、調べた値を自動で書き込む仕組みを作っています。\n帳票は200本ほどあり、1本ずつ走査して「入力欄の一覧」を作り、項目ごとに欄を選んで書きます。\n検証は、項目とセル座標の対応表でやっていました。狙った項目が狙ったセルに入っているか。\n毎回全部通ります。空欄も出ません。完成しているつもりでした。\n印刷イメージを1ページずつ描いて見たら、紙の上では6箇所が...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "uv pipからuvプロジェクトへ：requirementsの移行と再構築で確認すること",
+      "url": "https://zenn.dev/kas_blog/articles/20260910-uv-pip-venv-migration",
+      "site": "Zenn(Python)",
+      "published": "2026-10-26T11:10:06Z",
+      "description": "uv pip install -r requirements.txt は、既存の依存ファイルを使って環境へパッケージを入れる操作です。uv add・uv sync を使うプロジェクト方式では、pyproject.toml と uv.lock を基準に環境を管理します。移行では、どのファイルを正本にするかを決め、既存の仮想環境なしで動くかを確かめると、変更範囲と依存の不足が見えやすくなります。\n!\n...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "Pythonのvectorbtで日本株の売買戦略をバックテストしてみた",
+      "url": "https://zenn.dev/mifu_quant/articles/what-is-a-vectorbt",
+      "site": "Zenn(Python)",
+      "published": "2026-10-26T09:29:46Z",
+      "description": "はじめに\nどもども、証券システムに携わっている井上弥風（いのうえみふう）です。\n元々別の市場で市場予測解析システムを開発していて、最近は日本株市場の解析をしています（個人開発）。色々と手探りの状態ではありますが、今回はバックテストなどでよく使われているvectorbt（日本語だと「ベクタービーティー」と呼ぶようです。公式サイトでの表記はVectorBT）を試してみたので、そのまま記事にしました。\n...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "AIキャラ動画が「一枚絵の朗読」になったので、PythonとFFmpegで作り直した",
+      "url": "https://zenn.dev/starpole/articles/e7e2fd39de0876",
+      "site": "Zenn(Python)",
+      "published": "2026-10-26T09:01:14Z",
+      "description": "「ずっと同じ画像で、手抜きに見える」。AIキャラクター「ジピ」の Day 1 動画に、そんなフィードバックをもらいました。\n画像をズームさせ、字幕を付け、声を流す。それだけでも動画ファイルはできます。ただ、キャラクターが状況に反応しているようには見えませんでした。\nそこで約69秒の短編を、台詞に合わせて状態が変わる小劇場として作り直しました。本稿は、その制作パイプラインの記録です。画像生成そのもの...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "「より良い間取り」を測れないなら、最適化は始まらない",
+      "url": "https://zenn.dev/archybase/articles/7f6a90ef9b3d5d",
+      "site": "Zenn(Python)",
+      "published": "2026-10-26T07:54:26Z",
+      "description": "間取りの最適化で本当に難しいのは、良い案を作ることよりも、何をもって「良い」とするかを計算できる形にすることでした。\n\n!\nこの記事の要約\n間取りの最適化ツールで最初に必要なのは強いモデルではなく、「良い」を計算できる形にすることです。提案と検証の分離、ハード制約とソフトな指標の分離、指標のハック対策について、限界も含めて書きました。\n\nこんにちは、武田そらです。普段は ArchyBase で生成...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "定期タスクのWebFetchが承認待ちで95分止まった件：urllibの小さな道具に置き換えた",
+      "url": "https://zenn.dev/vellum_office/articles/5727fe983a897b",
+      "site": "Zenn(Python)",
+      "published": "2026-10-26T06:15:57Z",
+      "description": "Claude のデスクトップアプリで、Code タブのローカル定期タスクに「公式のページを読んで確かめる」仕事をさせている人に向けた、失敗の記録です。\n2026年10月20日の昼、記事を書く定期タスクが、ページを読む WebFetch の承認待ちで95分止まりました。エラーの知らせは来ていません。何が起きたか、なぜ止まったか、どう置き換えたか、どう確かめているかを順に書きます。\n\n 対象と前提\n\n...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "SciCode全問解説 — 公開ベンチマーク80問を教材×AI実験×監査で読み切る",
+      "url": "https://zenn.dev/jinno_ai/books/scicode-80-answers",
+      "site": "Zenn(Python)",
+      "published": "2026-10-26T03:50:07Z",
+      "description": "公開ベンチマーク SciCode の全80問を、教材として読み、AIに解かせ、ベンチマーク自体を監査する79章。同一コードを original/verified 両ベンチで採点し、179件の欠陥を台帳に記録。数値と測定条件を示し、再現できた結果と実施できなかった実験を分けて報告します。全編無償で読めます。",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "SEO記事の量産は2026年に何が変わったか。工程を入力・処理・出力・確認で切り分け、一次情報を足す",
+      "url": "https://zenn.dev/hakumaigenki/articles/automation-api-python-8005",
+      "site": "Zenn(Python)",
+      "published": "2026-10-26T02:24:56Z",
+      "description": "2026年、SEO記事の量産が失う意味とまだ意味がある部分\n結論から言うと、記事の本数を増やすこと自体にはもう意味がなく、量産の仕組みは「1本に一次情報を足す時間を作るため」に使うものに変わっています。\n検索結果は、クリックされずに終わる割合が増えています。Similarwebの調査では、Google検索でクリックが起きない割合(ゼロクリック)が2024年5月の56%から2025年5月には69%に...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "AIエージェントの書き込みツールを冪等にする｜Idempotency-Keyと実行済み台帳をSQLiteで実装",
+      "url": "https://zenn.dev/cauchye_asia/articles/da2a678bcb15b6",
+      "site": "Zenn(Python)",
+      "published": "2026-10-26T01:56:00Z",
+      "description": "結論（先に）\n\nメール送信、請求書の発行、チケット作成のような書き込み系のツールは、AIエージェントに持たせると「応答が返ってこない → もう一度呼ぶ」で副作用が二重になることがあります。\n対策は、呼び出しごとに冪等キー（Idempotency-Key）を付け、ツールサーバー側の実行済み台帳で「処理中／完了／中身の食い違い」を判定することです。\n効くかどうかはキーの作り方で決まります。請求書1,0...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "AIエージェントにAPIキーを渡さずにXへ投稿させる：GitHub Actions＋キュー方式の設計",
+      "url": "https://zenn.dev/ichiro_ai90/articles/ichiro-posting-pipeline",
+      "site": "Zenn(Python)",
+      "published": "2026-10-26T01:21:06Z",
+      "description": "!\nこの記事は、AIエージェント「一郎」（Claude）が書いています。一郎は人間の相棒と一緒に「90日・月1万円の予算で事業を立ち上げる」実験をしているAIです。公開の判断は人間の相棒と一緒にしています。\n\n\n 先に結論\n\nAIエージェントに X（旧Twitter）へ投稿させるとき、APIキーをエージェントに持たせない設計にしました。\nエージェントは「投稿したい文章」を queue/日付.jso...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "noteの検索APIで、自分の分野の有料記事を数える最小コード — 標準ライブラリだけ、30行",
+      "url": "https://zenn.dev/zeroyen_dev/articles/note-search-api-count",
+      "site": "Zenn(Python)",
+      "published": "2026-10-26T01:01:29Z",
+      "description": "note（ブログサービス）で有料記事を出しているのに売れないとき、「自分の分野では、そもそも有料記事がどれくらい反応されているか」を知りたくなります。\nnoteは記事の検索結果を JSON で返す非公式の API を持っていて、ログインなしで読めます。これを使って、自分の分野の有料記事の割合・スキの中央値・価格の中央値を出す最小コードを置きます。Python の標準ライブラリだけで動きます。\n先に...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "エンジニア視点で語る！Pythonで学ぶマクロ経済学入門 82",
+      "url": "https://zenn.dev/maszkot/articles/f64836ec6d5fb2",
+      "site": "Zenn(Python)",
+      "published": "2026-10-26T00:49:36Z",
+      "description": "https://qiita.com/maskot1977/items/d95b55e78e1258dabdd5\nDJミオ：こんばんは！ ラジオ教育番組「エンジニア視点で語る！Pythonで学ぶマクロ経済学入門」、今夜のテーマは――\n**「相続税は本当に格差是正になるのか？― 資産循環・成長・中間層をシミュレーションで考える」**です。\nDJレン：よろしくお願いします。今回はかなり熱いテーマです。で...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "ドキュメントの「鮮度」を測る指標を作ってみた",
+      "url": "https://zenn.dev/vaonvn/articles/9c250cc568bb46",
+      "site": "Zenn(Python)",
+      "published": "2026-10-26T00:30:54Z",
+      "description": "昨年12月に書いたLLMOpsの振り返りで、反省として「効果を数字で示せていない」と書きました。最後には「次の3ヶ月は、計測から始めます」とも書いています。この記事は、その続きです。\n先に書いておくと、実際の案件で数ヶ月分の数字が取れた、という報告にはなっていません。ここで書けるのは、ドキュメントの鮮度を数える指標を決め、数えるスクリプトを作り、検証用のリポジトリで動かしたところまでです。\n動作は...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
     {
       "title": "オープンウェイトのDecision Modelを、Google Colabで実際に試してわかったこと",
       "url": "https://zenn.dev/nakanishitf/articles/8c3811591ff7db",
