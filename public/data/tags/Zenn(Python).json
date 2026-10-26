@@ -1,8 +1,78 @@
 {
   "site": "Zenn(Python)",
-  "last_updated": "2026-10-26T19:33:40.659747",
-  "total_articles": 7396,
+  "last_updated": "2026-10-26T23:20:31.580230",
+  "total_articles": 7403,
   "articles": [
+    {
+      "title": "QUBO++でノノグラムを解く：塊の移動量をドメインウォールで表し、補助変数のないQUBOに",
+      "url": "https://zenn.dev/comp_lab/articles/nonogram-pyqbpp",
+      "site": "Zenn(Python)",
+      "published": "2026-10-26T22:53:24Z",
+      "description": "ノノグラムは、手がかりの数字をもとにマスを黒く塗り、絵を完成させるパズルです。お絵かきロジックとも呼ばれます。\nこの記事では、次の 15\\times 15 の問題を PyQBPP（QUBO++ の Python 版）で解きます。\n\n15 × 15 の問題。左と上の数字が手がかり\n答えを塗ると、QUBO++ のロゴが現れます。\n\n答え（解は 1 つだけ）\nこの記事の見どころは 4 つです：\n\n各塊の...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "macOS 27 の更新後、Chrome のプロファイル置き場が読めなくなり、「失敗したら黙る」hook が7日間黙っていた",
+      "url": "https://zenn.dev/masamitsu_sera/articles/58916187eada6a",
+      "site": "Zenn(Python)",
+      "published": "2026-10-26T22:30:05Z",
+      "description": "Claude Code の PostToolUse hook で、Claude in Chrome の list_connected_browsers（接続中のブラウザ一覧）が返るたびに、「どのブラウザがどの Google アカウントのプロファイルか」の対応表を、Chrome のファイルを読んで作り、会話に差し込んでいました。\n2026年9月28日に macOS を 27.0 に上げた日の午後から...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "Claude Code のスキルを claude -p で試運転したら、Buffer API の予約一覧が10件で切れていた",
+      "url": "https://zenn.dev/okzaq/articles/claude-code-skill-trial-buffer-pagination",
+      "site": "Zenn(Python)",
+      "published": "2026-10-26T22:30:05Z",
+      "description": "自分用に使っていた X / Threads の週次予約投稿の仕組みを、他の人も使える Claude Code のスキル一式にまとめました。配る前に、claude -p で初期設定から予約・取り消しまでを本物の Buffer API で通したところ、予約一覧が10件で切れる不具合が見つかりました。\nこの記事では、質問を挟むスキルを claude -p の複数ターンで動かす方法と、試運転中にスキルが何...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "MCPツール設計：じゃらんnetの複数施設の料金と在庫をエージェントで確認する",
+      "url": "https://zenn.dev/claudedelville/articles/2da34f2b9991da",
+      "site": "Zenn(Python)",
+      "published": "2026-10-26T22:22:50Z",
+      "description": "旅館やホテルを二つ、三つと運営している会社では、毎朝「各施設のじゃらんnetの料金と在庫がおかしくなっていないか」を誰かが確認しています。連休前に在庫がゼロのまま放置されていた、料金の改定が一つの施設にだけ反映されていなかった、といった事故は、気づくのが一日遅れるだけで売上に響きます。\nこの確認をAIエージェントに手伝わせたい、という相談はよくあります。ただ、ここで最初に決めるべきなのは「エージェ...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "同じコードをローカル・AWS・Azureで動かす：設計書レビュー基盤で学ぶクラウドとMCP",
+      "url": "https://zenn.dev/shoyomayabot/articles/aws-azure-same-code-review-platform",
+      "site": "Zenn(Python)",
+      "published": "2026-10-26T22:17:07Z",
+      "description": "AWSやAzureの勉強をしていると、「サービスの名前は覚えたけれど、実際にどう組み合わせるのか分からない」となりがちです。\nこの記事では、1つの題材をローカル・AWS・Azureの3か所で同じコードのまま動かすことで、クラウドの部品の役割と違いを比べながら学ぶ方法を紹介します。題材は「設計書とコードの差分をAIでレビューする基盤」です。VS CodeのCopilotからMCPで呼べるようにもして...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "Dockerfileのビルドとコンテナの中の確認",
+      "url": "https://zenn.dev/mutsu_zenn/articles/62895d07e7ef23",
+      "site": "Zenn(Python)",
+      "published": "2026-10-26T22:00:05Z",
+      "description": "はじめに\nDockerについて勉強中。ハンズオン形式で学習したことを備忘録としてまとめました。\n長くなったので2本にわけ本てます。本記事は前編としてイメージを作ってコンテナの中を確認しました。後編はレイヤーとキャッシュの確認をしました。後日公開します。\n\n 環境\n\nWindows 11\nWSL2（Ubuntu）\nDocker Desktop（Ubuntu側のターミナルから操作）\n作業フォルダ：~/...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "ブラックジャックの確率論(1) 準備: 手札の状態と遷移",
+      "url": "https://zenn.dev/monty/articles/f7e8166c8c7742",
+      "site": "Zenn(Python)",
+      "published": "2026-10-26T19:49:49Z",
+      "description": "本記事は「ブラックジャックの確率論」と名付けられたシリーズ記事の1つです。全体の目次は下記の記事にまとめられています。\nhttps://zenn.dev/monty/articles/bb39331965c182\nまた、本記事シリーズで触れられているプログラムはGitHubの下記の場所にて公開されています。\nhttps://github.com/monty-orlac/BlackJack-Anal...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
     {
       "title": "Threads APIの長期トークンは更新しないと60日で切れる：切れる前に更新を仕組みに入れた記録",
       "url": "https://zenn.dev/vellum_office/articles/0db40cc9919d41",
@@ -44,26 +114,6 @@
       "image_url": ""
     },
     {
-      "title": "AIにTerraformを書かせる。人とAI共通のナレッジポータルとMCPサーバ",
-      "url": "https://zenn.dev/kumamk2/articles/8b4d46090210aa",
-      "site": "Zenn(Python)",
-      "published": "2026-10-26T14:22:10Z",
-      "description": "概要\nAIにTerraformを書かせたいがアプリケーションのコードと違ってなかなかうまくいかないという問題があった。\n原因はTerraformを書くときはコードの外にある情報を、参照する必要性が大きいことだった。\n例えばリソース名は命名規則に従う必要があり、ラベルもFinOPSや資産管理のために付与するキーが決まっている。\nまた各リソースや環境ごとにIPレンジやサブネットが決まっているのでそれら...",
-      "category": "開発",
-      "rss_category": "",
-      "image_url": ""
-    },
-    {
-      "title": "【HN話題】もっと野心的なソフトを作ろう！AI時代のエンジニア論",
-      "url": "https://zenn.dev/ament3/articles/ai-digest-2026-10-25-0003",
-      "site": "Zenn(Python)",
-      "published": "2026-10-26T14:22:02Z",
-      "description": "海外のエンジニアコミュニティ Hacker News にて、Dan Luu 氏による論考**「We should be more ambitious with the software we build（私たちはもっと野心的なソフトウェアを作るべきだ）」**が大きな話題を呼んでいます。\n日常的なタスクの自動化やCRUDアプリの構築にとどまらず、「エンジニアが本来持つべき開発への野心とは何か？」を問...",
-      "category": "開発",
-      "rss_category": "",
-      "image_url": ""
-    },
-    {
       "title": "Notion APIの429リトライで行が3倍になった — 冪等PUT（upsert）・事前照合・台帳の3設計",
       "url": "https://zenn.dev/yukihayama/articles/notion-429-upsert-idempotency",
       "site": "Zenn(Python)",
@@ -94,6 +144,16 @@
       "image_url": ""
     },
     {
+      "title": "CLAUDE.md とコードが違ったら、Claude Code はどちらに従う？：Sonnet は気づいても古い方に従った",
+      "url": "https://zenn.dev/kakushigoto/articles/stale-claude-md-vs-code",
+      "site": "Zenn(Python)",
+      "published": "2026-10-26T11:43:41Z",
+      "description": "X で、AGENTS.md（エージェント向けのプロジェクトの説明書）が古くなったときの話が話題になりました。投稿によると、説明書がコードと合っていないと分かっていても、Claude Code は古い説明書に従ってしまう。研究者が罠を仕掛けて 80 回試したら 79 回引っかかった。ただし、ある 1 行を足すと、コードに従う割合は 4% から 91% に上がった、というものです。\n日本で Claud...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
       "title": "色が付いているセル＝入力欄、ではない — 値の照合は全部正しいのに紙面が壊れる",
       "url": "https://zenn.dev/shinsei99/articles/color-is-not-an-input-field",
       "site": "Zenn(Python)",
@@ -109,6 +169,16 @@
       "site": "Zenn(Python)",
       "published": "2026-10-26T11:10:06Z",
       "description": "uv pip install -r requirements.txt は、既存の依存ファイルを使って環境へパッケージを入れる操作です。uv add・uv sync を使うプロジェクト方式では、pyproject.toml と uv.lock を基準に環境を管理します。移行では、どのファイルを正本にするかを決め、既存の仮想環境なしで動くかを確かめると、変更範囲と依存の不足が見えやすくなります。\n!\n...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "自律型AIヘッジファンドを本気で作る：3.6nsのRust番犬とRedditクオンツ知見の逆輸入",
+      "url": "https://zenn.dev/prompter_note/articles/ca551abca1b84b",
+      "site": "Zenn(Python)",
+      "published": "2026-10-26T10:38:37Z",
+      "description": "自律型AIヘッジファンドを本気で作る：3.6nsのRust番犬とRedditクオンツ知見の逆輸入\n個人開発でオープンソースのAIヘッジファンドエンジン 「Lumina Capital」 を開発・運用しています。\nhttps://github.com/ramuza0113-sketch/lumina-ai-hedge-fund\n前回のバージョンでは、LangGraphによるマルチエージェント合議、M...",
       "category": "開発",
       "rss_category": "",
       "image_url": ""
