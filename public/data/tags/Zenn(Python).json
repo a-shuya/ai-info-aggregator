@@ -1,8 +1,78 @@
 {
   "site": "Zenn(Python)",
-  "last_updated": "2026-10-26T13:33:26.600557",
-  "total_articles": 7389,
+  "last_updated": "2026-10-26T19:33:40.659747",
+  "total_articles": 7396,
   "articles": [
+    {
+      "title": "Threads APIの長期トークンは更新しないと60日で切れる：切れる前に更新を仕組みに入れた記録",
+      "url": "https://zenn.dev/vellum_office/articles/0db40cc9919d41",
+      "site": "Zenn(Python)",
+      "published": "2026-10-26T15:09:36Z",
+      "description": "Threads に API で自動投稿している人に向けた、予防の記録です。\n先に書いておくと、私のトークンはまだ一度も切れていません。切れる前に気づいて、延長（API の言葉では更新、refresh）を自動の仕事に入れた、という話です。切れたらどうなるかは、公式の資料に書いてあることまでを書きます。\n\n 対象と前提\n\n対象は、Threads の API で使う長期のアクセストークンです\n公式の資料...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "サイバー攻撃の影響範囲をアクセス権限と依存グラフで評価する",
+      "url": "https://zenn.dev/id774/articles/e46c1ee80073ec",
+      "site": "Zenn(Python)",
+      "published": "2026-10-26T15:03:05Z",
+      "description": "サイバー攻撃によって侵害されたシステムと、実際に影響を受けるシステムは一致するとは限らない。共通の管理権限を侵害されれば複数の資源に操作が及び、共通基盤が停止すれば、その基盤に依存する別の業務も停止し得る。被害が管理主体の境界を越えて広がる構造は、国内の複数の事例を比較した分析でも論点となっている[1]。\n侵害に伴う影響範囲を設計段階で評価するには、少なくとも二つの関係を調べる必要がある。一つは、...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "観測システムが作れたらな〜",
+      "url": "https://zenn.dev/tyaruo/articles/4b2251a36a06f0",
+      "site": "Zenn(Python)",
+      "published": "2026-10-26T14:40:43Z",
+      "description": "Cyber Telescope v0.14.2：安全なセキュリティ監視サービスを目指して\nはじめに\nセキュリティ対策というと、ファイアウォールやWAF、侵入検知システムなどを思い浮かべる人が多いと思います。\nしかし、既存のソフトウェアをすべて置き換えることなく、独立した立場からシステムの状態を観測し、異常を検知して警告する仕組みも重要です。\nそこで開発を進めているのが、Cyber Telescop...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "止めたあとの再送が通った 。通信が切れた装置は止まり、戻すのは人にする。期限と再送の7つの決め事（Mac上の試験）",
+      "url": "https://zenn.dev/hocky3/articles/1ca319958cfa24",
+      "site": "Zenn(Python)",
+      "published": "2026-10-26T14:34:21Z",
+      "description": "v0.1.0 を公開する前の版で、同じ命令の列を二度流した。ARM、SET、DISARM。そして、もう一度 ARM と SET。止めたあとの二度目が、そのまま受理された。実機につないでいれば、止めたつもりの軸が動いていた。見つけたのは、サーボも基板もつながっていない Mac の上だ。\n回線は、人の都合とは関係なく切れる。切れた回線は、再接続のあとに古い命令を吐き出すことがある。装置の側から見れば、...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "AIにTerraformを書かせる。人とAI共通のナレッジポータルとMCPサーバ",
+      "url": "https://zenn.dev/kumamk2/articles/8b4d46090210aa",
+      "site": "Zenn(Python)",
+      "published": "2026-10-26T14:22:10Z",
+      "description": "概要\nAIにTerraformを書かせたいがアプリケーションのコードと違ってなかなかうまくいかないという問題があった。\n原因はTerraformを書くときはコードの外にある情報を、参照する必要性が大きいことだった。\n例えばリソース名は命名規則に従う必要があり、ラベルもFinOPSや資産管理のために付与するキーが決まっている。\nまた各リソースや環境ごとにIPレンジやサブネットが決まっているのでそれら...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "【HN話題】もっと野心的なソフトを作ろう！AI時代のエンジニア論",
+      "url": "https://zenn.dev/ament3/articles/ai-digest-2026-10-25-0003",
+      "site": "Zenn(Python)",
+      "published": "2026-10-26T14:22:02Z",
+      "description": "海外のエンジニアコミュニティ Hacker News にて、Dan Luu 氏による論考**「We should be more ambitious with the software we build（私たちはもっと野心的なソフトウェアを作るべきだ）」**が大きな話題を呼んでいます。\n日常的なタスクの自動化やCRUDアプリの構築にとどまらず、「エンジニアが本来持つべき開発への野心とは何か？」を問...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "Notion APIの429リトライで行が3倍になった — 冪等PUT（upsert）・事前照合・台帳の3設計",
+      "url": "https://zenn.dev/yukihayama/articles/notion-429-upsert-idempotency",
+      "site": "Zenn(Python)",
+      "published": "2026-10-26T13:37:39Z",
+      "description": "Notion APIの429リトライで行が3倍になった — 冪等PUT（upsert）・事前照合・台帳の3設計\nNotionのタスクDBを開いたら、同じタスクが3行ずつ並んでいました。夜間バッチが429で失敗した翌朝に「失敗した分だけ」を手実行したところ、実際には書けていた行まで再登録され、確認と除去の間に同一内容の行が三重になったままです。原因は、Notion APIのPOSTに冪等性が無いこと...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
     {
       "title": "TkinterからFletへ移行：現場の事務員がメンテできる「Excel設定ファイル駆動型」Pythonアプリの設計パターン",
       "url": "https://zenn.dev/ai_nexus_jp/articles/excel-automation-flet-app",
