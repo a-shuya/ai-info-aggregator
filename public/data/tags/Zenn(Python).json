@@ -1,8 +1,68 @@
 {
   "site": "Zenn(Python)",
-  "last_updated": "2026-10-27T14:25:00.480903",
-  "total_articles": 7415,
+  "last_updated": "2026-10-27T19:34:03.568984",
+  "total_articles": 7422,
   "articles": [
+    {
+      "title": "claude -p --json-schema の成否は、終了コードではなく structured_output で判定する",
+      "url": "https://zenn.dev/masaki_mori72/articles/7682a6c0f13528",
+      "site": "Zenn(Python)",
+      "published": "2026-10-27T15:58:31Z",
+      "description": "claude -p に --json-schema を付けると、出力がスキーマで検証されます。スクリプトから呼ぶときは「exit 0 なら成功」で済ませたくなりますが、exit 0・subtype: \"success\" なのに、出力が入っていない ことがあります。\nこの記事では、バッチ処理から claude -p --json-schema を呼ぶときの判定のしかたと、付けておくオプションをまとめ...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "Pythonのファイル操作からTOCTOU脆弱性を根絶する",
+      "url": "https://zenn.dev/genelab_999/articles/f6156cb1e7608c",
+      "site": "Zenn(Python)",
+      "published": "2026-10-27T14:57:47Z",
+      "description": "はじめに：AIエージェント時代の新しいセキュリティ境界\nLLMを活用したAIエージェントやMCPサーバーがローカル環境で自律的にファイルを読み書きする時代になり、指定したワークスペースの外に絶対に出さないサンドボックス制御の重要性がかつてないほど高まっています。\nしかし、Pythonで広く使われている os.path.realpath() や Path.resolve() を用いた境界チェックには...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "間違って実機を動かさないための権限設計。既定は拒否、自己申告のフラグと「現物の錠」を分ける（Mac上の試験）",
+      "url": "https://zenn.dev/hocky3/articles/cf84198e88ecf9",
+      "site": "Zenn(Python)",
+      "published": "2026-10-27T14:40:44Z",
+      "description": "守りが無ければ、仮想デバイスで試した手順の宛先を一語書き換えるだけで、同じコマンドが実機を動かす。これは想定であって、事故ではない。ただ、夜中に手順書をコピーして貼る自分を想像すると、一度の取り違えで通る形にはしたくなかった。そこで、Mac からサーボ1軸を動かすための小さな系で、「実機を動かす」という取り返しのつかない操作に、ホスト側の同意2つと、装置側の錠1つを置いた。既定では何も送らない。\n...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "CPU上限の半分も使っていないのに、なぜ遅い？ — CPU制限とアクセスの集中を実験する",
+      "url": "https://zenn.dev/kamuidash/articles/93411833a72a8b",
+      "site": "Zenn(Python)",
+      "published": "2026-10-27T14:23:56Z",
+      "description": "CPU使用量に余裕があれば、応答も速いはず。そんな見方だけでは説明できない遅さを、小さな実験で確かめました。\n小さなHTTPサーバーを用意し、CPUの上限を0.25コアにして、毎秒20件のリクエストを送りました。平均CPU使用量は約0.10〜0.11コア。上限の半分にも届いていません。\nそれでも、送り方によって応答時間が変わりました。50msごとに1件ずつ送ると 10.1ms 、400msごとに8...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "uvxで起動するMCPサーバーがPydantic 2.14で止まる原因と対処",
+      "url": "https://zenn.dev/orca_forge/articles/pydantic-214-breaks-old-mcp-servers",
+      "site": "Zenn(Python)",
+      "published": "2026-10-27T13:04:13Z",
+      "description": "📝 この記事は forge.workstyle.tech に掲載した記事の転載です。\n\n古いmcp&lt;1.10は、Pydanticの内部関数eval_type_backportを読み込みます。\nPydantic 2.14ではその関数がなくなったため、サーバーの起動時にImportErrorが発生します。\nPydanticを2.14未満に固定し、再接続後にサーバーごとのinitialize応答を...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "スキルシートの経験年数、並行案件を二重に数えていませんか？",
+      "url": "https://zenn.dev/sudo_man/articles/47e61f53f621ee",
+      "site": "Zenn(Python)",
+      "published": "2026-10-27T11:05:05Z",
+      "description": "スキルシートの「Java 5 年」のような経験年数を、営業や面談のたびに案件の期間を足して計算し直していませんか。私はずっとそうしていました。四半世紀を超える経歴になると、整理するだけで億劫になります。\n特に掛け持ちしていた時期があると、その月を二重に数えてしまい、正しい年数がわからなくなることもありました。\n\n 例\n\n\n\n案件\n期間\n言語\n\n\n\n\nA\n2019-04〜2021-03\nJava\n\n...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
     {
       "title": "【Python/pgvector】全国500万社規模の法人テキストを多次元空間に埋め込み、類似企業・競合をミリ秒で推薦するベクトル検索アーキ",
       "url": "https://zenn.dev/kigyoulist/articles/fda038d63a423a",
@@ -79,6 +139,16 @@
       "site": "Zenn(Python)",
       "published": "2026-10-27T03:29:14Z",
       "description": "はじめに\n2026 年 10 月 23 日、Web Search on Amazon Bedrock で、検索結果のドメインを絞り込むドメインフィルタと、利用者のおおよその位置を渡す user_location が使えるようになりました[1]。Web Search on Amazon Bedrock は、OpenAI 互換の Responses API の tools に web_search を...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "Decision Model「InnerJev」を試してみる：視聴済みの話数に合わせてネタバレを隠せるか",
+      "url": "https://zenn.dev/nakanishitf/articles/3a6747ae4a864e",
+      "site": "Zenn(Python)",
+      "published": "2026-10-27T03:24:46Z",
+      "description": "同じコメントでも、読んでよい人は違う\n「あの親切な店主が犯人だったとは。」\nドラマの感想欄にこのコメントがあったら、まだ第1話しか見ていない人には隠したくなります。\n一方、最終話まで見終わった人には、そのまま表示してもよさそうです。\n同じ文章でも、読者がどこまで知っているかによって、ネタバレになるかどうかは変わります。\n今回は、公開モデルの InnerJev を使って、視聴済み話数に応じてコメント...",
       "category": "開発",
       "rss_category": "",
       "image_url": ""
