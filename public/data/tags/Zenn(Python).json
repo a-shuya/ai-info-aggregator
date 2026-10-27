@@ -1,8 +1,98 @@
 {
   "site": "Zenn(Python)",
-  "last_updated": "2026-10-27T02:12:30.347533",
-  "total_articles": 7402,
+  "last_updated": "2026-10-27T08:01:25.290749",
+  "total_articles": 7411,
   "articles": [
+    {
+      "title": "間取りを3Dにしても、壁は1ミリも動いてはいけない",
+      "url": "https://zenn.dev/archybase/articles/640081144d8540",
+      "site": "Zenn(Python)",
+      "published": "2026-10-27T06:43:43Z",
+      "description": "2D の間取りを 3D のカットアウェイにするとき、本当に守るべきなのは見た目の良さではなく「何が変わってはいけないか」の約束でした。\n\n!\nこの記事の要約\n2D の間取り図を 3D 化するときに「変わってはいけないもの」（壁の端点、部屋の接続、開口の位置）を先に決め、変換前後を構造として比較して検証する考え方をまとめました。目視でできる確認方法と、3D 化では分からないことも整理しています。\n\n...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "ピックルボール解析 Part 2：ボール軌道と手首のポーズから打球・バウンド候補を探す",
+      "url": "https://zenn.dev/nauh_blog/articles/3c43e0637e8da5",
+      "site": "Zenn(Python)",
+      "published": "2026-10-27T05:51:48Z",
+      "description": "今回はボールと選手の動きを組み合わせる\nPart 1では、コートの四隅を指定してピックルボール用の俯瞰表示を作りました。今回は、ボールの位置と選手のポーズを組み合わせ、打球・バウンド・得点につながるイベントを推定する実験を紹介します。\nここでいう「判定」は、映像から条件に合う候補を抽出する処理です。正解ラベルとの比較はまだ行っておらず、公式なIN/OUT判定や試合スコアの再現には至っていません。\n...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "AES暗号をPythonで実装する｜共通鍵で安全にデータを暗号化する",
+      "url": "https://zenn.dev/maru1228/articles/security-aes-encryption-python",
+      "site": "Zenn(Python)",
+      "published": "2026-10-27T04:16:01Z",
+      "description": "!\nこの記事は自サイト AES暗号をPythonで実装する｜共通鍵で安全にデータを暗号化する の再掲（クロス投稿）です。図をインタラクティブに動かせる版は元記事でどうぞ。\n\n保存データや通信を守る主役が、共通鍵暗号 AES です。この記事ではPythonで、改ざん検知までできる AES-GCM を実装します。暗号の基礎の\"実装版\"。同じ鍵で暗号化・復号する仕組みを手を動かして理解します。\n\n AE...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "Bedrock の Web Search がドメインフィルタと位置情報の指定に対応したので試してみた",
+      "url": "https://zenn.dev/aws_japan/articles/bedrock-web-search-domain-location",
+      "site": "Zenn(Python)",
+      "published": "2026-10-27T03:29:14Z",
+      "description": "はじめに\n2026 年 10 月 23 日、Web Search on Amazon Bedrock で、検索結果のドメインを絞り込むドメインフィルタと、利用者のおおよその位置を渡す user_location が使えるようになりました[1]。Web Search on Amazon Bedrock は、OpenAI 互換の Responses API の tools に web_search を...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "airflow をサブディレクトリで動かす",
+      "url": "https://zenn.dev/spookies/articles/4f09629dc45b9e",
+      "site": "Zenn(Python)",
+      "published": "2026-10-27T02:38:57Z",
+      "description": "!\nこの記事ははてなブログ（2020年03月08日公開）からの移行記事です。\n内容が古い場合がありますのでご注意ください。\n\nJenkins （ハドソン）おじさんには、だいぶ長い間お世話になりました。\n枯れているオジサンも良いのですが、ナウでヤングにバカウケしたい私たちは、 airflow に浮気してしまうのです。\nこのご時世、ポートが制限されていて、ドメイン名も自由がきかなくてサブレクトリで動作...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "Python 3.15のTypedDictはどこまで閉じるべきか",
+      "url": "https://zenn.dev/techstudiolab/articles/python-315-typeddict-closed-api-boundaries",
+      "site": "Zenn(Python)",
+      "published": "2026-10-27T00:14:01Z",
+      "description": "外部APIのレスポンスをTypedDictで定義するとき、未知のキーを禁止すべきでしょうか。\n私の判断は、内部で生成するデータはclosed=True、外部APIの受信データは原則として開いたままです。拡張フィールドの値に共通の型を要求できる場合だけ、extra_itemsを使います。\nPython 3.15で導入されるPEP 728の仕組みは、この境界を型として表現できます。ただし、型チェッカー...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "VOICEVOX は使うときだけ起動し、1行ずつキャッシュし、字幕の時刻は音声の長さから決める。読みの直しは地名と数字に集中した",
+      "url": "https://zenn.dev/ai_hacchu/articles/voicevox-local-line-cache-subtitles-from-audio",
+      "site": "Zenn(Python)",
+      "published": "2026-10-27T00:00:07Z",
+      "description": "この記事で分かること\n\nVOICEVOX ENGINE をローカルで「必要なときだけ起動して、終わったら止める」ための作り。既に動いていれば使い、自分で起こしたものだけ止める\nナレーションを1行ずつ WAV にしてキャッシュし、台本を直した行だけ合成し直す仕組み。鍵に何を入れたか\n字幕の時刻を音声認識なしで決める方法。1行の音声の長さと、前後の間から計算する\n7本の動画（ナレーション 943行）で...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "日本語の文字起こしモデル11個を無料GPUで比べたら、読み上げ1位が放送音声で8位だった",
+      "url": "https://zenn.dev/yukobayashi500/articles/849115a7c596f7",
+      "site": "Zenn(Python)",
+      "published": "2026-10-26T23:44:11Z",
+      "description": "日本語の文字起こしに、どの公開モデルを使えばいいのか。調べてみたら、まとまった比較が見当たりませんでした。\nHugging Face には英語中心の Open ASR Leaderboard がありますが、多言語の欄に日本語はありません。日本語の比較は企業ブログの単発の記事がいくつかあるくらいで、条件もそれぞれ違います。そこで、11モデルを同じ条件で測ってみました。使ったのは Google Col...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "平均が途中で変わるとき、大数の法則に何が起きるか──引出率を例にシミュレーションで見る",
+      "url": "https://zenn.dev/haruguri/articles/lln-regime-shift-deposit",
+      "site": "Zenn(Python)",
+      "published": "2026-10-26T23:21:34Z",
+      "description": "「直近30日のブレに惑わされるな。1年の平均の方が日数が多いぶん正確だ」。預金の引出率のように、日々ぶれる数字を見るときによく出てくる言い方です。\n前の記事では、全員が同じ1回の引きを共有していると、標本平均は落ち着くのに真の値には着かないことを見ました。崩れていたのは「薄まる」の側、つまり標本平均の分散がゼロに向かう条件でした。\nこの記事では、もう一方の条件を崩します。観測は独立のまま、平均その...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
     {
       "title": "QUBO++でノノグラムを解く：塊の移動量をドメインウォールで表し、補助変数のないQUBOに",
       "url": "https://zenn.dev/comp_lab/articles/nonogram-pyqbpp",
