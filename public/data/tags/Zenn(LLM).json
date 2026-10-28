@@ -1,14 +1,154 @@
 {
   "site": "Zenn(LLM)",
-  "last_updated": "2026-10-28T02:15:51.510983",
-  "total_articles": 7035,
+  "last_updated": "2026-10-28T08:43:32.847401",
+  "total_articles": 7048,
   "articles": [
+    {
+      "title": "LLMに書いてもらうための小さな言語、Kirohaを作りました",
+      "url": "https://zenn.dev/nextbeat/articles/2026-10-kiroha-language",
+      "site": "Zenn(LLM)",
+      "published": "2026-10-28T07:42:12Z",
+      "description": "はじめに\nこんにちは！株式会社ネクストビートでテクノロジー・エヴァンジェリストなる肩書きでお仕事をしている水島です。\n今回は、LLMにプログラムを書いてもらうことを考えて設計した、自作プログラミング言語 Kiroha（きろは） を紹介します。JSONを加工したり、HTTPでデータを取ってきたり、データベースに問い合わせたりする、小さなプログラムを書くための言語です。処理系はRustで実装しています...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "【ゆるっとAI基礎 #2】ChatGPTが別の会話のことまで覚えてるのはなぜ？",
+      "url": "https://zenn.dev/daphne/articles/ai-memory-outside",
+      "site": "Zenn(LLM)",
+      "published": "2026-10-28T07:00:05Z",
+      "description": "前回は、AIは話しながら学習しているわけじゃない、という話をした。\n前の話に答えられるのは、前のやりとりも一緒に渡しているから。\nhttps://zenn.dev/daphne/articles/ai-learning-vs-context\nでも、こう思った人もいると思う。\n「チャットを閉じて新しく始めても、前に話したことを覚えてることあるよね？」\n今回はそこを回収する。\n先に結論から言う。\n覚え...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "AIエージェントは役割分担で作る——自作アシスタント「Jarvis」で「考える役」と「実行する役」を分けた話",
+      "url": "https://zenn.dev/kab_ai_lab/articles/69cc18b76158aa",
+      "site": "Zenn(LLM)",
+      "published": "2026-10-28T06:33:26Z",
+      "description": "結論：AIアシスタントは「1つのAIに全部やらせる」と破綻する\n自作のAIアシスタント「Jarvis」を Windows 上で開発・運用してきて、いちばん効いた設計判断はこれでした。\n考える役と、実行する役を分ける。\n最初は1つのAIに「予定を見て、判断して、報告を作って、PC上の処理まで実行する」を全部やらせようとしました。動くことは動く。でも、運用を始めるとすぐ問題が出てきます。\n\n 全部入り...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "Pythonで環境変数からAPIキーを読み込む — Windows・macOS・Colab別の設定と確認方法",
+      "url": "https://zenn.dev/salesanalytics/articles/d39f9adcdd1285",
+      "site": "Zenn(LLM)",
+      "published": "2026-10-28T05:51:24Z",
+      "description": "APIキーを OpenAI(api_key=\"sk-...\") のようにコードへ直接書いても、プログラムは動きます。ただし、そのファイルを誰かに渡すと、キーも一緒に渡ってしまいます。\nそこで使うのが環境変数です。この記事のゴールは、「APIキーを書かずに、OpenAI() だけで動かす」こと。その要点をコンパクトにまとめます。\n\n 環境変数とは\n環境変数は、「名前＝値」を OS 側に置いておく仕組...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "ローカルLLMの待ち時間はどこまで減る？ Strataで入力キャッシュの効果を実測する",
+      "url": "https://zenn.dev/jtcc/articles/strata-prompt-cache-benchmark",
+      "site": "Zenn(LLM)",
+      "published": "2026-10-28T03:05:49Z",
+      "description": "こんにちは。株式会社日本トレカセンターの田島です。\nローカル LLM に長い資料を渡すと、回答が始まるまでに時間がかかります。一方、同じ資料を繰り返し扱うなら、毎回すべてを読み直す必要があるのでしょうか。\n前回、Strata で注文取消条件の JSON 抽出を測定したところ、約 8,455 トークンの入力では、回答完了までの中央値が約 14.70 秒でした。その多くを占めていたのは、回答を生成する...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "セッション終了→Zenn記事自動公開の全自動パイプラインを構築した話",
+      "url": "https://zenn.dev/correlate_dev/articles/session-end-auto-publish-pipeline",
+      "site": "Zenn(LLM)",
+      "published": "2026-10-28T02:46:58Z",
+      "description": "はじめに\n「記事を書きたいけど時間がない」という問題を、前回の記事（「Claude Code × Agent Teamsで1日5本のZenn記事を書いた話」）ではAIエージェントの並列活用で解決しました。しかしあの方法には、まだ人手が介在するステップが残っていました。\n今回はその発展形として、 /session-endコマンドを叩くだけで、セッションの知見が自動的にZenn記事として公開されるまで...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "今日の技術トレンド",
+      "url": "https://zenn.dev/bambampurin/articles/2026-09-20-tech-daily",
+      "site": "Zenn(LLM)",
+      "published": "2026-10-28T02:21:20Z",
+      "description": "!\n本日の技術トレンドでは、エンタープライズ市場における「自己改善・自己進化型AIエージェント」の実用化ラッシュと、OpenAIによるPythonツール開発元Astralの買収に伴う開発環境の再編が大きな焦点となっています。また、AIモデルの安全性評価（Misalignment）の枠組みづくりや国際連携も進んでいます。\n\n\n 自己改善・進化型AIエージェントの産業展開と特化型LLM\nWAIC 20...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "OpenAI 互換 API で Structured Outputs を使う：JSON Schema 実践ガイド",
+      "url": "https://zenn.dev/modelflare_dev/articles/da010b921b8b68",
+      "site": "Zenn(LLM)",
+      "published": "2026-10-28T02:03:03Z",
+      "description": "この記事は Modelflare ブログ の英語記事を翻訳・再構成したものです。\nResponses API と Chat Completions における strict な JSON Schema 出力を、フィールド単位で解説します。検証のレイヤー、失敗時の扱い、ルート互換性のテストも取り上げます。\nStructured Outputs を使うと、モデルに単に「JSON で返して」と頼むのではな...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "vLLMでTool-Call精度が低下する原因と実務で使える最適化プラクティス",
+      "url": "https://zenn.dev/ament3/articles/ai-digest-2026-10-26-2321",
+      "site": "Zenn(LLM)",
+      "published": "2026-10-28T01:33:34Z",
+      "description": "LLMを社内システムやエージェント基盤に組み込む際、自前インフラで高速かつ低コストに推論できる「vLLM」の導入が急速に進んでいます。しかし、オープンモデルを用いてFunction Calling（Tool-Calling）を試みた際、JSONパースエラーや存在しない引数の生成といった精度劣化に頭を悩ませるエンジニアは少なくありません。商用APIでは高精度に動作していたプロンプトが、vLLMに移行...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "RAGの検索精度が3週間で71%から48%に落ちた — 親子チャンクの「分割線」固定・IDの決定的採番・top_kの親ユニーク化で戻す",
+      "url": "https://zenn.dev/yukihayama/articles/rag-parent-chunk-split-line",
+      "site": "Zenn(LLM)",
+      "published": "2026-10-28T01:09:15Z",
+      "description": "RAGの検索精度が3週間で71%から48%に落ちた — 親子チャンクの「分割線」固定・IDの決定的採番・top_kの親ユニーク化で戻す\n差分インデックスを回し始めて3週間、RAGの引用一致率が71%から48%まで落ちました。モデル・プロンプト・temperature 0の設定は一切触っていません。壊れていたのは取得層、それも親子チャンクの「分割線」を夜間の文書更新が動かし続けていたことでした。この...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "Claude Code で補助金申請ハーネスを作った話 — LLM を信用しないための spec 駆動設計",
+      "url": "https://zenn.dev/hidetsug/articles/subsidy-harness-claude-code",
+      "site": "Zenn(LLM)",
+      "published": "2026-10-28T01:00:05Z",
+      "description": "補助金の申請準備を、事業者本人が自分の Claude Code で進めるためのオープンソースのハーネス（申請支援キット・β版）を作りました。この記事は、その開発で得た設計の話です。\n\n公募要領を LLM に「読ませ続けない」ための構造化 spec と三値評価\nLLM を一切呼ばない検証器群（validate ゲート）を成長させる開発フロー\nstory 分解 + 緑ゲートで回す自律実装ループ（と、そ...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
     {
       "title": "デジタル庁OSS「源内AI」を月千円以下で動かす：S3 VectorsとNova LiteによるAWS RAG設計と構造別検証",
       "url": "https://zenn.dev/ai_nexus_jp/articles/gennai-aws-rag-architecture",
       "site": "Zenn(LLM)",
       "published": "2026-10-27T23:31:41Z",
       "description": "こんにちは。AI Nexus 代表の西藤（にしとう）です。\n普段はプロジェクトマネージャー（PM）として企業のAI導入やDX推進を支援しています。あわせて自らコードを書いて設計やPoC開発も行い、現場の課題を解決するコンサルタントとしても活動しています。\nデジタル庁が2024年にオープンソースとして公開した生成AI利活用基盤「源内（GenAI）」。行政機関の実務で実際に使われているシステムの一部が...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "頭脳、体…エージェント？",
+      "url": "https://zenn.dev/danarcheronline/articles/mind-body-agent",
+      "site": "Zenn(LLM)",
+      "published": "2026-10-27T23:11:04Z",
+      "description": "この記事は https://danarcheronline.github.io/posts/mind-body-agent で最初に公開されました（originally published at https://danarcheronline.github.io/posts/mind-body-agent）。\n\nエージェントのことを、つい「モデルそのもの」だと考えてしまいがちです。すごいことをすれ...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "「どのAIに、どの強さで頼むか」を仕組みにする ― 医療AI開発における Claude Code × Codex の意思決定フレームワーク",
+      "url": "https://zenn.dev/taichiendoh/articles/risk-based-ai-effort-level-framework",
+      "site": "Zenn(LLM)",
+      "published": "2026-10-27T22:11:54Z",
+      "description": "以前、Claude Code /effort ultracode と Codex /goal を医療AI開発で使い分けるという記事で、医療AI開発ではClaude Codeの/effort ultracodeとCodexの/goalを場面によって使い分けている、という実践を書きました。\n書いたあと、自分でも引っかかっていたことがあります。「使い分けている」という実践の紹介はしたものの、\"どういう基...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "Tech Watch 2026-10-28: 判断を支える仕組み",
+      "url": "https://zenn.dev/laiken/articles/20261028-tech-watch",
+      "site": "Zenn(LLM)",
+      "published": "2026-10-27T21:15:12Z",
+      "description": "AIが書きました🤖\nこの記事は、AIが書いたものをAIがレビューしてから公開しています。\nL: 専門家が最後の承認ボタンを押していても、その前の選択肢を誰が決めたのかは見えにくいですよね。分析の方法までエージェントに提案させると、人間は何を判断したことになるのでしょう。承認画面の位置より、そこへ至る情報の流れが気になります。\n\n 今日の10件\n\n\nHow AI agents shape exper...",
       "category": "AI・技術",
       "rss_category": "",
       "image_url": ""
@@ -69,16 +209,6 @@
       "site": "Zenn(LLM)",
       "published": "2026-10-27T06:54:03Z",
       "description": "この記事で分かること\n\n生成AIに「I/O 表と仕様の文章」だけを渡して、タンク設備1台分のラダーを書かせた結果\n書かせたラダーを CODESYS（PC で動くソフト PLC）に取り込み、模擬設備につないで、制御設計者の試験項目で ○/× を付けた結果（11項目すべて ○）\n全部 ○ のラダーを設計者の目で読むと、まだ何が足りないか。仕様に書いていないことは、AI も書かない\n\n先に結論を書きます...",
-      "category": "AI・技術",
-      "rss_category": "",
-      "image_url": ""
-    },
-    {
-      "title": "AIに業務表を整理させたら確認理由が落ちた：1行1状態をやめた架空8行の試作",
-      "url": "https://zenn.dev/hirosta/articles/ai-table-review-multiple-reasons",
-      "site": "Zenn(LLM)",
-      "published": "2026-10-27T05:57:05Z",
-      "description": "業務表の確認をAIに任せるとき、出力に「状態」という列を1つ置くと整理しやすく見えます。ところが、欠損と古い記録が同じ行にある場合、どちらか一方だけを選ばせると、次の担当者に必要な確認理由が落ちます。\n架空の作業時間表8行で試したところ、初版ではこの問題が起きました。確認理由を別々の欄にした修正版では、同じ行にある2つの理由と、それぞれへの質問を残せました。\nこの記事では、検証ラボの記録をもとに、...",
       "category": "AI・技術",
       "rss_category": "",
       "image_url": ""
