@@ -1,14 +1,134 @@
 {
   "site": "Zenn(Python)",
-  "last_updated": "2026-10-28T08:43:32.847401",
-  "total_articles": 7432,
+  "last_updated": "2026-10-28T15:31:39.828498",
+  "total_articles": 7444,
   "articles": [
+    {
+      "title": "ゴールドバッハの星座図 ― 素数ペアを天体観測する",
+      "url": "https://zenn.dev/march26/articles/f625d63cb657e8",
+      "site": "Zenn(Python)",
+      "published": "2026-10-28T09:25:12Z",
+      "description": "はじめに\n一見簡単そうで、いざ証明しようとすると非常に難しい、数学の未解決問題の一つに「ゴールドバッハ予想」がある。\n\n4以上の偶数はすべて、2つの素数の和で表せる。\n\nゴールドバッハ予想は、少なくとも非常に大きな範囲までは、計算によって成り立つことが確認されている。本稿では、この予想が成り立つことを前提に、そのまわりに現れるいくつかの模様を可視化して眺めてみたい。\n具体的には、まず「ゴールドバッ...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "Excelで開くとCSVの先頭ゼロが消える・文字化けする。Pythonで文字コードを判定して xlsx に渡す",
+      "url": "https://zenn.dev/sakinisen/articles/3fa896c7ac3f43",
+      "site": "Zenn(Python)",
+      "published": "2026-10-28T08:59:04Z",
+      "description": "顧客から届いた CSV を Excel で開いたら、顧客コード 00123 が 123 になっていた。別の CSV では日本語が文字化けしていた。業務データを扱うと一度は当たる問題です。この記事では、Python 標準ライブラリと openpyxl で、文字コードの判定・空白の整理・先頭ゼロの保持までを行う最小のスクリプトを示します。\n\n 何が起きているか\n原因は 2 つに分かれます。\n\n\n文字コ...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "たまに桁違いの値が出るとき、大数の法則に何が起きるか──保険金を例にシミュレーションで見る",
+      "url": "https://zenn.dev/haruguri/articles/lln-heavy-tail-insurance",
+      "site": "Zenn(Python)",
+      "published": "2026-10-28T07:31:47Z",
+      "description": "「件数が多ければ平均は信頼できる」という言い方には、前提が1つ隠れています。平均そのものが存在することです。保険金や投資の利益のように、めったに出ないがとても大きな値が混ざる分布では、この前提が怪しくなります。\n前の3本（束がある場合・共通因子がある場合・平均が途中で変わる場合）は、独立か同一分布のどちらかを外しました。この記事では両方を保ったまま、1件の大きさの分布の裾だけを重くします。大きな値...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "業務マスタの新規登録をSeleniumで連続化したら、「新規」の判定を2回直すことになった【Python】",
+      "url": "https://zenn.dev/cutlet_of_pork/articles/selenium-rpa-new-entry-key-definition",
+      "site": "Zenn(Python)",
+      "published": "2026-10-28T07:08:48Z",
+      "description": "同じキーの行が 1 件あります。新規の対象は、その行が無いものだけです。\n登録し終わったデータを、わざともう一度流したときに出た行（語は少し伏せた）。「登録」は押さずに止まっている。\nこの 1 行が出るようになるまでに、何を「新規」と呼ぶかを 2 回直した。その後、同じキーの行があったときの扱いを分け、保留にしていた更新も入れて、今はこの 1 行はもう出ない。この記事はその順に書く。\n\n 何をして...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "macOSセキュリティアップデートのcurl/git等使用者向け追加対応をやってみた",
+      "url": "https://zenn.dev/i_n_dev/articles/6c1d6d933012fe",
+      "site": "Zenn(Python)",
+      "published": "2026-10-28T07:05:38Z",
+      "description": "!\n筆者はセキュリティの専門家ではありません。Apple公式ドキュメントを読みながら実際にAIと相談しながら、手を動かした記録です。実行は自己責任でお願いします。\n\n\n このニュースで知りました\nhttps://news.yahoo.co.jp/articles/6db21acfe5025e9d5513d9a80e34887d77daf114\n\nSafari / Mail など Apple のフレ...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "AIへ渡すCSVを列の許可リストで縮小する：重複ヘッダーで止めるPython実装",
+      "url": "https://zenn.dev/adachi_builds/articles/1e16a821a192be",
+      "site": "Zenn(Python)",
+      "published": "2026-10-28T06:42:49Z",
+      "description": "「氏名の列だけ落とせばよい」と考えると、残す列が増えたときの確認が抜けます。そこで、残してよい列を呼び出し側が明示する、小さなCSV→JSON変換関数を作りました。ネットワーク通信・元ファイルの変更・AIへの送信処理はありません。\n列の選択は匿名化ではありません。残した列の自由記述に個人情報があれば、そのまま残ります。出力を自動でAIへ送る処理にはつなぎません。\n\n 先に、入力と実出力\n2026年...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "高校生と先生のための「第3章 コンピュータとプログラミング」その8",
+      "url": "https://zenn.dev/yokamak/articles/46bb95a09ea348",
+      "site": "Zenn(Python)",
+      "published": "2026-10-28T06:35:12Z",
+      "description": "はじめに\n高等学校情報科「情報Ⅰ」教員研修用教材（本編）の\n「第3章　コンピュータとプログラミング」 (PDF:9.3MB)\nに、Pythonのソースコードが約27ほど、載っています。\n標準ライブラリとは別に、micro:bit、numpy, matplotlibをインストールする必要があり、学校によっては、PC教室環境の設定変更が必要になります。\nGoogle ColabやPython Edit...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "「取り直してマージ」でも追記は消える",
+      "url": "https://zenn.dev/miyakona/articles/conditional-write-shared-json",
+      "site": "Zenn(Python)",
+      "published": "2026-10-28T06:22:04Z",
+      "description": "複数のバッチが、同じ「処理済み台帳」のJSONへ追記していました。バッチの1回の実行を、ここではrunと呼びます。runごとに別の作業を進めても、最後にはそれぞれの記録が共有台帳へ残ってほしい、という構成です。\n以前、手元の台帳を丸ごと上書きして別のrunの追記を消したことがありました。そこで「書く直前に最新を取り直し、自分の追記とマージしてから書く」に変え、解決したつもりでいました。\nそれでも、...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "ブラックジャックの確率論(2) ディーラーの最終点数の分布",
+      "url": "https://zenn.dev/monty/articles/79d318b995b0d1",
+      "site": "Zenn(Python)",
+      "published": "2026-10-28T05:08:53Z",
+      "description": "本記事は「ブラックジャックの確率論」と名付けられたシリーズ記事の1つです。全体の目次は下記の記事にまとめられています。\nhttps://zenn.dev/monty/articles/bb39331965c182\nまた、本記事シリーズで触れられているプログラムはGitHubの下記の場所にて公開されています。\nhttps://github.com/monty-orlac/BlackJack-Anal...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "Panasonic VL-MWD701の通信を解析する：SIP登録とNOTIFYを再現し、ローカルから状態を取得する",
+      "url": "https://zenn.dev/mitsukida/articles/ff397508719702",
+      "site": "Zenn(Python)",
+      "published": "2026-10-28T03:59:43Z",
+      "description": "はじめに\nメーカーのサポートが終了した家電は少し困る。\n壊れたなら諦めもつくが、本体は普通に動いている。LANにもつながっている。それなのにアプリやサービスが終了しただけで一部の機能まで使えなくなるのは、なんとなくもったいない。\n今回調べたのは、Panasonicのドアホン VL-MWD701 と、旧Androidアプリ「ドアホン」が行っていたローカル通信だった。\n目的は公式アプリを復元することで...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
     {
       "title": "エンジニア視点で語る！Pythonで学ぶマクロ経済学入門 83",
       "url": "https://zenn.dev/maszkot/articles/7f6bba09864976",
       "site": "Zenn(Python)",
       "published": "2026-10-28T02:09:37Z",
       "description": "https://qiita.com/maskot1977/items/f3ea6b4dd29e327c0d43\n（SE：軽快なジングル）\nDJミオ：こんばんは！ラジオ教育番組 「エンジニア視点で語る！Pythonで学ぶマクロ経済学入門」、ナビゲーターのDJミオです！\nDJレン：DJレンです。今回のテーマはかなり重要です。\n「人を育てる企業ほど損をする？ ― “囚人のジレンマ”から考える日本経済の構...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "vLLMでTool-Call精度が低下する原因と実務で使える最適化プラクティス",
+      "url": "https://zenn.dev/ament3/articles/ai-digest-2026-10-26-2321",
+      "site": "Zenn(Python)",
+      "published": "2026-10-28T01:33:34Z",
+      "description": "LLMを社内システムやエージェント基盤に組み込む際、自前インフラで高速かつ低コストに推論できる「vLLM」の導入が急速に進んでいます。しかし、オープンモデルを用いてFunction Calling（Tool-Calling）を試みた際、JSONパースエラーや存在しない引数の生成といった精度劣化に頭を悩ませるエンジニアは少なくありません。商用APIでは高精度に動作していたプロンプトが、vLLMに移行...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "RAGの検索精度が3週間で71%から48%に落ちた — 親子チャンクの「分割線」固定・IDの決定的採番・top_kの親ユニーク化で戻す",
+      "url": "https://zenn.dev/yukihayama/articles/rag-parent-chunk-split-line",
+      "site": "Zenn(Python)",
+      "published": "2026-10-28T01:09:15Z",
+      "description": "RAGの検索精度が3週間で71%から48%に落ちた — 親子チャンクの「分割線」固定・IDの決定的採番・top_kの親ユニーク化で戻す\n差分インデックスを回し始めて3週間、RAGの引用一致率が71%から48%まで落ちました。モデル・プロンプト・temperature 0の設定は一切触っていません。壊れていたのは取得層、それも親子チャンクの「分割線」を夜間の文書更新が動かし続けていたことでした。この...",
       "category": "開発",
       "rss_category": "",
       "image_url": ""
