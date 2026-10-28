@@ -1,24 +1,154 @@
 {
   "site": "Zenn(Python)",
-  "last_updated": "2026-10-27T23:09:47.910860",
-  "total_articles": 7422,
+  "last_updated": "2026-10-28T02:15:51.510983",
+  "total_articles": 7436,
   "articles": [
+    {
+      "title": "エンジニア視点で語る！Pythonで学ぶマクロ経済学入門 83",
+      "url": "https://zenn.dev/maszkot/articles/7f6bba09864976",
+      "site": "Zenn(Python)",
+      "published": "2026-10-28T02:09:37Z",
+      "description": "https://qiita.com/maskot1977/items/f3ea6b4dd29e327c0d43\n（SE：軽快なジングル）\nDJミオ：こんばんは！ラジオ教育番組 「エンジニア視点で語る！Pythonで学ぶマクロ経済学入門」、ナビゲーターのDJミオです！\nDJレン：DJレンです。今回のテーマはかなり重要です。\n「人を育てる企業ほど損をする？ ― “囚人のジレンマ”から考える日本経済の構...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "vLLMでTool-Call精度が低下する原因と実務で使える最適化プラクティス",
+      "url": "https://zenn.dev/ament3/articles/ai-digest-2026-10-26-2321",
+      "site": "Zenn(Python)",
+      "published": "2026-10-28T01:33:34Z",
+      "description": "LLMを社内システムやエージェント基盤に組み込む際、自前インフラで高速かつ低コストに推論できる「vLLM」の導入が急速に進んでいます。しかし、オープンモデルを用いてFunction Calling（Tool-Calling）を試みた際、JSONパースエラーや存在しない引数の生成といった精度劣化に頭を悩ませるエンジニアは少なくありません。商用APIでは高精度に動作していたプロンプトが、vLLMに移行...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "RAGの検索精度が3週間で71%から48%に落ちた — 親子チャンクの「分割線」固定・IDの決定的採番・top_kの親ユニーク化で戻す",
+      "url": "https://zenn.dev/yukihayama/articles/rag-parent-chunk-split-line",
+      "site": "Zenn(Python)",
+      "published": "2026-10-28T01:09:15Z",
+      "description": "RAGの検索精度が3週間で71%から48%に落ちた — 親子チャンクの「分割線」固定・IDの決定的採番・top_kの親ユニーク化で戻す\n差分インデックスを回し始めて3週間、RAGの引用一致率が71%から48%まで落ちました。モデル・プロンプト・temperature 0の設定は一切触っていません。壊れていたのは取得層、それも親子チャンクの「分割線」を夜間の文書更新が動かし続けていたことでした。この...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "Codex CLI を Python から呼ぶとき、Windows で最初に当たる 3 つのエラーと切り分け",
+      "url": "https://zenn.dev/d_fa_at/articles/codex-cli-windows-first-three-errors",
+      "site": "Zenn(Python)",
+      "published": "2026-10-28T01:09:03Z",
+      "description": "Windows 11 で、Python（標準ライブラリだけ）から codex exec を呼んで JSON を受け取る、という作業をしました。動くまでに踏んだエラーは 3 つで、どれも「CLI の仕様」というより Windows 環境の事情です。同じところで止まっている人向けに、症状 → 確認コマンド → 対処の順で書きます。検証日は 2026-10-27、codex-cli 0.164.0-al...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "Windows 11 で Claude Code と Codex CLI をつなぐ ― 最小構成と失敗の切り分け",
+      "url": "https://zenn.dev/d_fa_at/books/claude-code-codex-cli-windows",
+      "site": "Zenn(Python)",
+      "published": "2026-10-28T01:08:22Z",
+      "description": "Windows 11 の PowerShell 環境で、Claude Code（実装担当）から Codex CLI（企画・レビュー担当、ChatGPT ログイン）を Python で呼び出し、JSON Schema で構造化した回答を受け取る最小構成を、実機ログつきで解説します。第 2 章の最小スクリプトは標準ライブラリのみ、第 4 章のラッパーは jsonschema を使用。PATH に co...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "PowerShell 5.1の「-Encoding UTF8」はBOM付き：実際にハマる3例と回避策",
+      "url": "https://zenn.dev/warrobotsxyz/articles/powershell-utf8-bom-pitfalls",
+      "site": "Zenn(Python)",
+      "published": "2026-10-28T00:00:27Z",
+      "description": "はじめに\nWindows PowerShell 5.1 の Set-Content -Encoding UTF8 は、BOM（EF BB BF）付きのUTF-8でファイルを書き出す。BOMは画面に表示されないため、「同じ文字列を書いたはず」なのに読み込む側で認証失敗やパースエラーの原因になる。実際に遭遇した3例と、バイト単位の確認方法・回避策をまとめる。\n\n 環境\n\nWindows 11（ビルド ...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "「確信度が高い」は「正しい」ではなかった — 2位との差で測ると、根拠が1件のとき最大になる",
+      "url": "https://zenn.dev/shinsei99/articles/confidence-score-was-not-accuracy",
+      "site": "Zenn(Python)",
+      "published": "2026-10-27T23:55:47Z",
+      "description": "社員が受け皿のフォルダに放り込んだ書類を、毎晩まとめて正しい棚へ移す。\nそういう仕組みが作れるかどうかを、本番の書類を1バイトも書き換えずに測りました。\n測り方はこうです。この1年に置かれたファイルは、社員が置いた場所がそのまま正解になっている。\nなので、ファイルを読むだけで振り分けの精度が出せます。\n全体の的中率は高くありません。行き先は約2,700フォルダあり、\nこの1年に実際に何かが入った棚...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "4時間足の「区切り」を1時間ずらしたら、検証の利益が半分以下になった",
+      "url": "https://zenn.dev/codecraft/articles/intraday-4h-bar-boundary-luck",
+      "site": "Zenn(Python)",
+      "published": "2026-10-27T23:14:00Z",
+      "description": "暗号資産の自動売買Botを作っています。いくつかの戦略を組み合わせていて、今は口座2万円ほどの少額で動かしながら、検証と本番の動きが一致しているかを毎週確かめています。\nその中の1つに、4時間足を使う逆張りの戦略があります。\n\n直近24時間(4時間足6本)で10%以上下げた銘柄を買う\n最大4日(96時間)持って売る\n\nこの戦略の本番の記録を見ていて、「4時間足」の区切りの時刻が、検証と本番で1時間...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "QUBO++でグラフの分割問題を解く：最大カット・二分割幅・カット幅を同じカットの式で",
+      "url": "https://zenn.dev/comp_lab/articles/graph-partition-pyqbpp",
+      "site": "Zenn(Python)",
+      "published": "2026-10-27T23:11:24Z",
+      "description": "グラフを 2 つに切ったとき、何本の辺が切れるでしょうか。\nこの記事では、切れる辺の数を考える 3 つの問題、最大カット・二分割幅・カット幅を、PyQBPP（QUBO++ の Python 版）で解きます。\n例に使うのは、4 次元超立方体（頂点 16 個・辺 32 本）です。\nこの記事の見どころは 3 つです：\n\n3 つの問題は、どれも同じカットの式 x[i] * ~x[j] + ~x[i] * ...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "【Excel】楽天証券APIの提供範囲とMARKET SPEED II RSSの使い方",
+      "url": "https://zenn.dev/student_blog/articles/rakuten-securities-api-guide",
+      "site": "Zenn(Python)",
+      "published": "2026-10-27T23:01:37Z",
+      "description": "「楽天証券のAPIをPythonから呼び、株価取得や自動売買をしたい」と考えて検索すると、APIキーやHTTPリクエストを使うコードが見つかることがあります。\nしかし、楽天証券の公式FAQは、株取引のAPIを開放していないと明記しています。公式に用意されているプログラム連携手段は、一般的なREST APIではなく、Excelアドインの MARKET SPEED II RSS です。ここでのRSSは...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "印刷した顔写真を REST API に送ったら「なりすまし」と判定された話（curl / Python）",
+      "url": "https://zenn.dev/toshikazuohno/articles/b70bc77fbd4ebe",
+      "site": "Zenn(Python)",
+      "published": "2026-10-27T23:00:05Z",
+      "description": "顔認証は「登録された本人か」を見る仕組みで、カメラの前にあるのが本物の顔か、写真や画面かは見ていません。そのため、本人の写真をかざすだけで通ってしまうことがあります。\nこれを防ぐのが「なりすまし判定（ライブネス検知）」です。本記事では、画像1枚を POST するだけで判定できる REST API を使い、curl と Python で実際に判定結果を受け取るところまでを試します。印刷写真を送ったと...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "Psi4とRDKitでFukui Index計算_第5回：大域・局所特徴量を統合した機械学習データセット作成アプリの完成",
+      "url": "https://zenn.dev/pincolo/articles/889b59ccd90342",
+      "site": "Zenn(Python)",
+      "published": "2026-10-27T21:30:07Z",
+      "description": "はじめに：局所から全体へ、予測モデルの精度を決める「特徴量」\n全5回にわたってお届けしてきた「Fukui Index解説シリーズ」も、いよいよ今回が最終回です。\n前回の第4回では、多数の分子に対するFukui Indexの連続計算（バッチ処理）を全自動化し、グラフニューラルネットワーク（GNN）の学習に有用な「原子（ノード）ごとのデータベース」を構築するアプリケーションを紹介しました。\nしかし、実...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "Raspberry Pi Pico 2 W を Switch 2 の有線コントローラーにして、PC から Wi-Fi で操作する",
+      "url": "https://zenn.dev/kaazujp/articles/94e338c5e8982a",
+      "site": "Zenn(Python)",
+      "published": "2026-10-27T21:16:45Z",
+      "description": "はじめに\nAIVTuber に、Nintendo Switch 2 のゲームを操作させたいと思って、方法をクロードに聞きました。いくつか候補があったのですが、クロード推奨が、Raspberry Pi Pico 2 Wだったので、実際にやってみました。クロードによると、pico2 ではダメで、pico2w が必要なので、購入する場合は注意が必要です。\nこの記事は、Raspberry Pi Pico ...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "MCP の 406 Not Acceptable（Client must accept text/event-stream）の原因と解決方法",
+      "url": "https://zenn.dev/catkingac/articles/0480285b0234e2",
+      "site": "Zenn(Python)",
+      "published": "2026-10-27T17:58:31Z",
+      "description": "結論\n\n\n406 Not Acceptable は、Streamable HTTP の MCP サーバーへのリクエストで Accept ヘッダーが足りないときに返されます。\nPOST では Accept: application/json, text/event-stream、ストリームを開く GET では Accept: text/event-stream を送れば解決します。\n自分のクライアン...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
     {
       "title": "claude -p --json-schema の成否は、終了コードではなく structured_output で判定する",
       "url": "https://zenn.dev/masaki_mori72/articles/7682a6c0f13528",
       "site": "Zenn(Python)",
       "published": "2026-10-27T15:58:31Z",
       "description": "claude -p に --json-schema を付けると、出力がスキーマで検証されます。スクリプトから呼ぶときは「exit 0 なら成功」で済ませたくなりますが、exit 0・subtype: \"success\" なのに、出力が入っていない ことがあります。\nこの記事では、バッチ処理から claude -p --json-schema を呼ぶときの判定のしかたと、付けておくオプションをまとめ...",
-      "category": "開発",
-      "rss_category": "",
-      "image_url": ""
-    },
-    {
-      "title": "Pythonのファイル操作からTOCTOU脆弱性を根絶する",
-      "url": "https://zenn.dev/genelab_999/articles/f6156cb1e7608c",
-      "site": "Zenn(Python)",
-      "published": "2026-10-27T14:57:47Z",
-      "description": "はじめに：AIエージェント時代の新しいセキュリティ境界\nLLMを活用したAIエージェントやMCPサーバーがローカル環境で自律的にファイルを読み書きする時代になり、指定したワークスペースの外に絶対に出さないサンドボックス制御の重要性がかつてないほど高まっています。\nしかし、Pythonで広く使われている os.path.realpath() や Path.resolve() を用いた境界チェックには...",
       "category": "開発",
       "rss_category": "",
       "image_url": ""
@@ -39,6 +169,16 @@
       "site": "Zenn(Python)",
       "published": "2026-10-27T14:23:56Z",
       "description": "CPU使用量に余裕があれば、応答も速いはず。そんな見方だけでは説明できない遅さを、小さな実験で確かめました。\n小さなHTTPサーバーを用意し、CPUの上限を0.25コアにして、毎秒20件のリクエストを送りました。平均CPU使用量は約0.10〜0.11コア。上限の半分にも届いていません。\nそれでも、送り方によって応答時間が変わりました。50msごとに1件ずつ送ると 10.1ms 、400msごとに8...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "pip install しただけで鍵が盗まれる？ LiteLLM 1.107.0 乗っ取りの仕組みと対処",
+      "url": "https://zenn.dev/lecto/articles/9b314222f5dfa4",
+      "site": "Zenn(Python)",
+      "published": "2026-10-27T13:53:02Z",
+      "description": "はじめに\n2026 年 10 月 21 日、AI のモデルを呼び出す Python のライブラリ LiteLLM の 1.107.0 が、鍵を盗むマルウェア入りの偽物にすり替えられました。PyPI と Docker のイメージの両方です。\nこの件で一番わかりづらいのは、LiteLLM を import していなくても、Python を起動しただけで動くことです。さらに、新しい版に更新するだけでは安...",
       "category": "開発",
       "rss_category": "",
       "image_url": ""

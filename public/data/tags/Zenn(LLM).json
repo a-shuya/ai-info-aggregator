@@ -1,8 +1,48 @@
 {
   "site": "Zenn(LLM)",
-  "last_updated": "2026-10-27T23:09:47.910860",
-  "total_articles": 7030,
+  "last_updated": "2026-10-28T02:15:51.510983",
+  "total_articles": 7035,
   "articles": [
+    {
+      "title": "デジタル庁OSS「源内AI」を月千円以下で動かす：S3 VectorsとNova LiteによるAWS RAG設計と構造別検証",
+      "url": "https://zenn.dev/ai_nexus_jp/articles/gennai-aws-rag-architecture",
+      "site": "Zenn(LLM)",
+      "published": "2026-10-27T23:31:41Z",
+      "description": "こんにちは。AI Nexus 代表の西藤（にしとう）です。\n普段はプロジェクトマネージャー（PM）として企業のAI導入やDX推進を支援しています。あわせて自らコードを書いて設計やPoC開発も行い、現場の課題を解決するコンサルタントとしても活動しています。\nデジタル庁が2024年にオープンソースとして公開した生成AI利活用基盤「源内（GenAI）」。行政機関の実務で実際に使われているシステムの一部が...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "Untie で AI と一緒に業務を整理する",
+      "url": "https://zenn.dev/tan_go238/articles/e0f63848fe89ea",
+      "site": "Zenn(LLM)",
+      "published": "2026-10-27T15:06:52Z",
+      "description": "業務を整理するとき、現場の人はすでに何かしらの課題感を持っていると思います。\nただ、それが業務のどこに潜んでいるのか、他の作業とどう関係しているのかは、業務を並べてみないとわからない部分もあります。\n例えば、業務一覧を Excel にまとめても、他の業務マニュアルや他の部署の業務とのつながりまではわからない、ということもあると思います。\nUntie は、そうした業務のつながりを整理しながら、困りご...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "Pythonのファイル操作からTOCTOU脆弱性を根絶する",
+      "url": "https://zenn.dev/genelab_999/articles/f6156cb1e7608c",
+      "site": "Zenn(LLM)",
+      "published": "2026-10-27T14:57:47Z",
+      "description": "はじめに：AIエージェント時代の新しいセキュリティ境界\nLLMを活用したAIエージェントやMCPサーバーがローカル環境で自律的にファイルを読み書きする時代になり、指定したワークスペースの外に絶対に出さないサンドボックス制御の重要性がかつてないほど高まっています。\nしかし、Pythonで広く使われている os.path.realpath() や Path.resolve() を用いた境界チェックには...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "「賢いメモリ」は過去を消す。自作の縮小実験でAIエージェントメモリの変異リスクを確かめた",
+      "url": "https://zenn.dev/matsushima_a/articles/day-028-naive-rag-vs-mutating-memory",
+      "site": "Zenn(LLM)",
+      "published": "2026-10-27T14:11:55Z",
+      "description": "今日のネタ元\nHugging Face Daily Papersに掲載されていた以下の論文を検証した。\n\n\"Is Complex Agentic Memory Always Needed? Naive RAG Is Stronger Than We Thought\"\n\nhttps://huggingface.co/papers/2610.30755 (arXiv:2610.30755、投稿日202...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
     {
       "title": "個人 AI 基盤のセキュリティ対策 — 書けない場所・読めない秘密・従わない入力を機械で守る",
       "url": "https://zenn.dev/wisteriacorp/articles/wisteria-ca987c111d5f",
@@ -29,6 +69,16 @@
       "site": "Zenn(LLM)",
       "published": "2026-10-27T06:54:03Z",
       "description": "この記事で分かること\n\n生成AIに「I/O 表と仕様の文章」だけを渡して、タンク設備1台分のラダーを書かせた結果\n書かせたラダーを CODESYS（PC で動くソフト PLC）に取り込み、模擬設備につないで、制御設計者の試験項目で ○/× を付けた結果（11項目すべて ○）\n全部 ○ のラダーを設計者の目で読むと、まだ何が足りないか。仕様に書いていないことは、AI も書かない\n\n先に結論を書きます...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "AIに業務表を整理させたら確認理由が落ちた：1行1状態をやめた架空8行の試作",
+      "url": "https://zenn.dev/hirosta/articles/ai-table-review-multiple-reasons",
+      "site": "Zenn(LLM)",
+      "published": "2026-10-27T05:57:05Z",
+      "description": "業務表の確認をAIに任せるとき、出力に「状態」という列を1つ置くと整理しやすく見えます。ところが、欠損と古い記録が同じ行にある場合、どちらか一方だけを選ばせると、次の担当者に必要な確認理由が落ちます。\n架空の作業時間表8行で試したところ、初版ではこの問題が起きました。確認理由を別々の欄にした修正版では、同じ行にある2つの理由と、それぞれへの質問を残せました。\nこの記事では、検証ラボの記録をもとに、...",
       "category": "AI・技術",
       "rss_category": "",
       "image_url": ""
