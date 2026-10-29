@@ -1,8 +1,118 @@
 {
   "site": "Zenn(LLM)",
-  "last_updated": "2026-10-29T13:20:12.212793",
-  "total_articles": 7067,
+  "last_updated": "2026-10-29T19:03:06.013491",
+  "total_articles": 7078,
   "articles": [
+    {
+      "title": "LM Studio の4モデルを VRAM 16GB で測った：最速は gpt-oss、日本語の校正は Gemma 4 12B が正確",
+      "url": "https://zenn.dev/ppp_works/articles/a53caea4f2ebaf",
+      "site": "Zenn(LLM)",
+      "published": "2026-10-29T15:33:20Z",
+      "description": "LM Studio で自分の PC に AI を入れると、まず迷うのが「どのモデルを使えばいいか」です。ネットの数字は PC の条件がまちまちなので、VRAM 16GB の PC 1台で、同じ質問・同じ設定で並べて測りました。\n\n 測った環境\n\n\n\n項目\n内容\n\n\n\n\nGPU\nNVIDIA GeForce RTX 4070 Ti SUPER（VRAM 16GB）\n\n\nCPU / RAM\nCore ...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "ローカル LLM のエージェントを AppContainer に入れて DNS まで塞いだ。ループバックの例外は全ポートを開けていた",
+      "url": "https://zenn.dev/maruhana/articles/local-llm-agent-hermes-appcontainer-dns",
+      "site": "Zenn(LLM)",
+      "published": "2026-10-29T10:54:05Z",
+      "description": "!\n先に、この記事の要約（専門用語なし）\n\n\n前の記事で、ローカルの LLM のエージェント（Hermes）を、外へ通信できない専用のユーザーで動かした。ただ、名前の問い合わせ（DNS）だけは、Windows の別のサービスが代わりに外へ出すので止められなかった\nWindows のアプリの隔離の仕組み（AppContainer）の箱に、ネットワークの権限を何も付けずに入れると、その別のサービスが、...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "ローカルLLMは本当に騒がれてるほどか？ Qwen3.8-Flash-Nextの4bit版を家で動かして確かめた",
+      "url": "https://zenn.dev/yumeno/articles/strata-flash-next-iq4xs-80gb",
+      "site": "Zenn(LLM)",
+      "published": "2026-10-29T10:12:20Z",
+      "description": "前回、RTX 5060 Ti 16GB で Qwen3.8 27B を試した。\n（RTX 5060 Ti 16GBでローカルLLM(Qwen3.8 27B)にもう一度挑んだ話）\n今話題のStrata。\n前回も紹介した125B級の MoE モデル Qwen3.8-Flash-Next を動かすための専用エンジンである。\nllama.cppやvLLMを自分で調整しなくても比較的簡単に動かせることもあっ...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "日本語で「深掘り調査して」と頼むと調査スキルはどう動くか：SKILL.md 7本を読む",
+      "url": "https://zenn.dev/skillselion/articles/be2fbd20219450",
+      "site": "Zenn(LLM)",
+      "published": "2026-10-29T09:09:29Z",
+      "description": "Claude Code の深掘り調査（deep research）スキルは、ほぼすべてが英語で書かれています。日本語で頼んだときに効くのは、起動条件の書き方と出力言語の規定です。今回読んだ 7 本の中で出力言語を明記していたのは文献調査向けの 1 本だけでした。ウェブ調査系のスキルは、検索クエリの言語を何も規定していません。日本語の調査では、検索言語と出典の言語をプロンプトで指定するのが確実です。...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "AIエージェントの受け渡しを固定したら何が変わったか——判断と実行の境界を引く実装メモ",
+      "url": "https://zenn.dev/kab_ai_lab/articles/7bd63df40bc6da",
+      "site": "Zenn(LLM)",
+      "published": "2026-10-29T08:07:51Z",
+      "description": "こんにちは。作業に戻ろうとしてPCの前に座ったのに、気づいたらブラウザのタブ整理を始めて30分経ってました。ADHD社長です。\n要点を先に書きます。自作AIアシスタント「Jarvis」で「考える役」と「実行する役」を分けた後、次に効いたのは役の賢さではなく、間の受け渡し形式と、判断が必要になった時の返し方を固定することでした。AIエージェントの役割分担は、分けた瞬間ではなく、境界の運用を決めた時に...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "ハーネスエンジニアリング3原則 — 地図・強制・蓄積の三層で考える",
+      "url": "https://zenn.dev/pythona/articles/harness-engineering-three-principles",
+      "site": "Zenn(LLM)",
+      "published": "2026-10-29T08:02:36Z",
+      "description": "はじめに\n先日、個人開発アプリに Claude Code のハーネス(CLAUDE.md / Hooks / Skills)を導入した記録を書きました。\nhttps://zenn.dev/pythona/articles/claude-code-harness-first-setup\n前回は「実際に何を作ったか」の経験談だったので、今回はその背景にある ハーネスエンジニアリングの 3 原則 を、「...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "AIワークフローとAIエージェントの違い：手順を任せる範囲と選び方",
+      "url": "https://zenn.dev/yushiyamamoto/articles/ai-workflow-vs-agent-2026-10",
+      "site": "Zenn(LLM)",
+      "published": "2026-10-29T07:32:26Z",
+      "description": "AIで処理を自動化しようとすると、「ワークフローで組むか、エージェントに任せるか」で迷います。どちらも文章を生成でき、検索などの道具も使えるので、機能一覧だけでは違いが見えにくいからです。\nこの記事では、**「次の手順を誰が決めるか」**を軸に、選び方を図と表で整理します。公開FAQから案内文を下書きする例で、途中で止める条件まで考えます。以下の例は説明用の設計案で、API接続や本番運用を検証した...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "Haiku 5.5 は「1位」より「どこまで任せられるか」で読む",
+      "url": "https://zenn.dev/searching/articles/99719acf74aed5",
+      "site": "Zenn(LLM)",
+      "published": "2026-10-29T07:10:58Z",
+      "description": "新モデルが出るたびに「何位か」が話題になりますが、Claude Haiku 5.5 の公式成績表で一番面白いのは順位ではありません。小型モデルの守備範囲がどこまで広がったかです。\nモデルID は claude-haiku-5-5、リリースは 2026年10月7日。以下の数値は Anthropic の発表ページからの引用で、第三者の実測ではない点に注意してください。\n\n 伸び幅が「世代」レベル\nHa...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "中国国外から中国のLLMを呼ぶときの、レイテンシと安定性のチェックリスト",
+      "url": "https://zenn.dev/apigoto2026/articles/cac29d2c3aae58",
+      "site": "Zenn(LLM)",
+      "published": "2026-10-29T06:23:35Z",
+      "description": "サーバーは中国国外、モデルは中国国内という構成だと、最初のトークンが遅い、たまに理由なく固まる、夜になると悪化する、といった症状が出がちです。たいていモデル自体は問題ありません。原因は長い越境経路のほうです。国際回線は限られていてピーク時には混雑し、パケットロスが起きればTCPの再送が発生します。新しい接続を張るたびにTLSハンドシェイクの往復も上乗せされます。以下は実際に効いた対策です。特定のベ...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "Building a Song Draft Pipeline: Story-First, No Blank-Page Trap",
+      "url": "https://zenn.dev/aisongwriter/articles/fcdc55864cb0f1",
+      "site": "Zenn(LLM)",
+      "published": "2026-10-29T04:34:31Z",
+      "description": "Building a Song Draft Pipeline: Story-First AI Songwriting Without the Blank-Page Trap\nSongwriting tools have proliferated, but many of them still start in the wrong place. They ask for a genre tag an...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "AI エージェント 生成エージェント ~ STORM Act #2",
+      "url": "https://zenn.dev/sionicai_jp/articles/75ee59ff651d35",
+      "site": "Zenn(LLM)",
+      "published": "2026-10-29T04:33:10Z",
+      "description": "本記事の目的\n別の記事で、AIエージェントをAIを使って開発する STORM Act の概要を説明させていただきました。\nhttps://zenn.dev/sionicai_jp/articles/88bd276e27cc2f\n今回は、ユーザーの挨拶に応答するシンプルなチャットボットを作成し、テスト画面で返答を確認するところまで進めます。\n\n STORM アカウントの準備\n弊社 Sionic AI...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
     {
       "title": "OpenSearchのLLM-as-a-Judgeを日本語の商品検索で動かして、人手ラベルと比べてみた",
       "url": "https://zenn.dev/nextbeat/articles/c22b45b1d784b0",

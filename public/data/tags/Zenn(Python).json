@@ -1,14 +1,24 @@
 {
   "site": "Zenn(Python)",
-  "last_updated": "2026-10-29T13:20:12.212793",
+  "last_updated": "2026-10-29T19:03:06.013491",
   "total_articles": 7472,
   "articles": [
     {
-      "title": "AIエージェントの二重実行を止める「冪等性キー」の最小実装",
-      "url": "https://zenn.dev/growl/articles/d7dafe774009b7",
+      "title": "仮想オフィスの「近くの人にだけ声が届く」を、LiveKit の購読の許可で SFU に守らせる",
+      "url": "https://zenn.dev/hotori/articles/5e2cd643a77ae6",
       "site": "Zenn(Python)",
-      "published": "2026-10-29T13:08:03Z",
-      "description": "なぜ二重実行は起きるのか\nAIエージェントに「メールを送る」「請求を作る」のような副作用のある処理を任せると、通信のリトライやタイムアウトの再実行で、同じ処理が2回走ることがあります。人間が画面で見ている分には気づけますが、エージェントのループの中では誰も止めません。\nこれは注意不足ではなく、仕組みの不足です。止める仕組みが「冪等性キー」です。\n\n 冪等性キーの考え方\n\n論理的な処理ごとに、キーを...",
+      "published": "2026-10-29T16:01:03Z",
+      "description": "ブラウザで使う「声の仮想オフィス」を作っています。2D の地図の上をアバターで歩き、相手に近づくと声がつながり、離れると切れる作りです。\nこの「近くの人にだけ声が届く」を、はじめは聞く側のクライアントが購読を切り替えるだけで作っていました。これだと、ブラウザの開発者ツールから購読を頼めば、同じスペースにいる全員の声を聞けてしまいます。\nそこで LiveKit の購読の許可（setTrackSubs...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "「変わらなければ書かない」にしたら、監視が鳴った",
+      "url": "https://zenn.dev/miyakona/articles/noop-write-monitor-records",
+      "site": "Zenn(Python)",
+      "published": "2026-10-29T13:46:53Z",
+      "description": "夜間バッチの書き込みを減らしたら、翌朝、結果の反映に失敗したという通知が届きました。調べると、必要なレコードも成果物も保存されていました。最後に書き戻す差分が無かっただけです。\nバッチは、処理結果を共有の台帳ファイルへ記録します。途中でもチェックポイントとして書き戻し、最後にも書き戻していました。ここでいうrunは、バッチの1回の実行です。\n以前は、最後の書き戻しで台帳全体のupdated_atが...",
       "category": "開発",
       "rss_category": "",
       "image_url": ""
@@ -99,16 +109,6 @@
       "site": "Zenn(Python)",
       "published": "2026-10-29T07:26:13Z",
       "description": "はじめに\nAzure OpenAI の Realtime API と OpenAI Agents SDK を使用し、マルチエージェント構成における動作と音声応答速度を検証しました。\n検証対象は、Handoff、ツール経由のDelegation、Agent as Tool の3つの構成です。使用モデルは、gpt-realtime（v1）、gpt-realtime-2.1、gpt-realtime-2...",
-      "category": "開発",
-      "rss_category": "",
-      "image_url": ""
-    },
-    {
-      "title": "中国国外から中国のLLMを呼ぶときの、レイテンシと安定性のチェックリスト",
-      "url": "https://zenn.dev/apigoto2026/articles/cac29d2c3aae58",
-      "site": "Zenn(Python)",
-      "published": "2026-10-29T06:23:35Z",
-      "description": "サーバーは中国国外、モデルは中国国内という構成だと、最初のトークンが遅い、たまに理由なく固まる、夜になると悪化する、といった症状が出がちです。たいていモデル自体は問題ありません。原因は長い越境経路のほうです。国際回線は限られていてピーク時には混雑し、パケットロスが起きればTCPの再送が発生します。新しい接続を張るたびにTLSハンドシェイクの往復も上乗せされます。以下は実際に効いた対策です。特定のベ...",
       "category": "開発",
       "rss_category": "",
       "image_url": ""
