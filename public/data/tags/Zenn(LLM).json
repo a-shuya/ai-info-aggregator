@@ -1,8 +1,38 @@
 {
   "site": "Zenn(LLM)",
-  "last_updated": "2026-10-29T19:03:06.013491",
-  "total_articles": 7078,
+  "last_updated": "2026-10-29T23:15:58.608321",
+  "total_articles": 7080,
   "articles": [
+    {
+      "title": "【EmbeddingGemma 2】お客様の申告の件数を、判定の確率で按分して数える",
+      "url": "https://zenn.dev/michy/articles/d4c97cd7a57240",
+      "site": "Zenn(LLM)",
+      "published": "2026-10-29T17:51:09Z",
+      "description": "はじめに\nこの記事はお客様の申告をカテゴリーに分けて件数を監視するときに、件数のずれを小さくする方法をまとめたものです。\n申告を1つのカテゴリーに決める二値の判定（そのカテゴリーに入るか入らないか）をやめ、エンベディング（埋め込み）を使って判定をカテゴリーごとのスコアに変えている点が、この方法のポイントです。件数はこのスコアをそのまま足し合わせて数えます。1件の申告を「動力伝達 0.45件、エンジ...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "AIペンテストツールARTEXの攻撃ログを防御側から見てみた",
+      "url": "https://zenn.dev/shinji_bk/articles/403b2510054c6a",
+      "site": "Zenn(LLM)",
+      "published": "2026-10-29T17:29:12Z",
+      "description": "はじめに\nAIが自分でWebアプリ上を探索して脆弱性を突いてくれる「AIペンテストツール」が増えてきました。攻撃側の動きにも興味がありますが、個人的に知りたかったのは その攻撃が守る側のログにどう残るのか です。\nそこで、オープンソースのAIペンテストツール ARTEX を、わざと脆弱に作られたWebアプリに向けて走らせ、ログを眺めてみました。\n※基本的に作業のお供はClaudeですが、今回はTe...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "音声AIの割り込み品質をLLM-as-a-Judgeに丸投げしない評価設計",
+      "url": "https://zenn.dev/susie/articles/d9b4473e50a8b3",
+      "site": "Zenn(LLM)",
+      "published": "2026-10-29T17:17:19Z",
+      "description": "音声コンパニオンのデモが会話として成立しても、リリース判断では別の難しさが出てきます。\n\nユーザーが割り込んだ後も、AIの音声が残っていないか\n停止後、古い回答の続きを話していないか\n短い相づちを割り込みと誤認していないか\n応答が遅いのか、単にユーザーが考えているのか\n\n全件を人が聞くのは重い。一方、LLM-as-a-Judgeへ文字起こしだけを渡すと、もっともらしい説明付きで誤判定することがあり...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
     {
       "title": "LM Studio の4モデルを VRAM 16GB で測った：最速は gpt-oss、日本語の校正は Gemma 4 12B が正確",
       "url": "https://zenn.dev/ppp_works/articles/a53caea4f2ebaf",
@@ -29,6 +59,16 @@
       "site": "Zenn(LLM)",
       "published": "2026-10-29T10:12:20Z",
       "description": "前回、RTX 5060 Ti 16GB で Qwen3.8 27B を試した。\n（RTX 5060 Ti 16GBでローカルLLM(Qwen3.8 27B)にもう一度挑んだ話）\n今話題のStrata。\n前回も紹介した125B級の MoE モデル Qwen3.8-Flash-Next を動かすための専用エンジンである。\nllama.cppやvLLMを自分で調整しなくても比較的簡単に動かせることもあっ...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "Google's Strongest Gemini Is One You Can't Use Yet",
+      "url": "https://zenn.dev/neotechpark/articles/46633d0d8672df",
+      "site": "Zenn(LLM)",
+      "published": "2026-10-29T09:37:55Z",
+      "description": "Google just announced its \"strongest\" Gemini model. In the same announcement, it told almost everyone that they cannot use it yet.\nThat is the whole story of Gemini 4 Carbon, and it is more interestin...",
       "category": "AI・技術",
       "rss_category": "",
       "image_url": ""
@@ -129,26 +169,6 @@
       "site": "Zenn(LLM)",
       "published": "2026-10-29T02:08:34Z",
       "description": "きっかけは、自宅サーバーの ext4 障害\n株式会社DeploAIで代表取締役CTOをしている袖山剛です。\n営業を科学するプロダクトの開発と、お客様の業務にAIを組み込む仕事をしています。\n2026年10月、自宅の Linux サーバー（開発用に使っているマシンで、EVO と呼んでいます）で、ルートの ext4 が壊れました。ファイルシステムのエラーが出続け、再起動すると起動の途中で止まり、「fs...",
-      "category": "AI・技術",
-      "rss_category": "",
-      "image_url": ""
-    },
-    {
-      "title": "MCPのツール定義は何トークン使うか｜tiktokenで実測し、ツールを絞る基準を決める",
-      "url": "https://zenn.dev/cauchye_asia/articles/e6b81183b34ef4",
-      "site": "Zenn(LLM)",
-      "published": "2026-10-29T02:00:52Z",
-      "description": "2026-10-29時点の情報です。\n本記事のコードと数値は、CAUCHYE ASIA が 2026-10-28 に Python 3.13.5 / tiktoken 0.14.0 で実行した結果です。公開日の 2026-10-29 に再実行し、同じ結果になることを確認しました。引用した公式ドキュメントの記述も、2026-10-29 に再確認しました。\n\n 結論（先に）\n\n1ツールのトークン数は、...",
-      "category": "AI・技術",
-      "rss_category": "",
-      "image_url": ""
-    },
-    {
-      "title": "RAGをLangChainで組むか自作するか — 保守2.4倍・デバッグ40分差・交差は4ヶ月の実測",
-      "url": "https://zenn.dev/yukihayama/articles/rag-langchain-or-custom-criteria",
-      "site": "Zenn(LLM)",
-      "published": "2026-10-29T01:10:55Z",
-      "description": "RAGをLangChainで組むか自作するか — 保守2.4倍・デバッグ40分差・交差は4ヶ月の実測\nRAGの検索精度が出ない夜に、必ずこの問いが出ます——「LangChainで組み直せば直るのでは」。社内の質問回答RAG（資料500ページ・1日80問）で同じ分岐に3週間悩み、結局両方を組んで実測しました。結果は、初期構築はLangChain側が4時間速く、月次保守はLangChain側が2.4倍...",
       "category": "AI・技術",
       "rss_category": "",
       "image_url": ""
