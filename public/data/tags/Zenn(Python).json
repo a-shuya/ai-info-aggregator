@@ -1,8 +1,158 @@
 {
   "site": "Zenn(Python)",
-  "last_updated": "2026-10-29T06:16:35.909272",
-  "total_articles": 7460,
+  "last_updated": "2026-10-29T13:20:12.212793",
+  "total_articles": 7472,
   "articles": [
+    {
+      "title": "AIエージェントの二重実行を止める「冪等性キー」の最小実装",
+      "url": "https://zenn.dev/growl/articles/d7dafe774009b7",
+      "site": "Zenn(Python)",
+      "published": "2026-10-29T13:08:03Z",
+      "description": "なぜ二重実行は起きるのか\nAIエージェントに「メールを送る」「請求を作る」のような副作用のある処理を任せると、通信のリトライやタイムアウトの再実行で、同じ処理が2回走ることがあります。人間が画面で見ている分には気づけますが、エージェントのループの中では誰も止めません。\nこれは注意不足ではなく、仕組みの不足です。止める仕組みが「冪等性キー」です。\n\n 冪等性キーの考え方\n\n論理的な処理ごとに、キーを...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "APIの返事をそのまま表示したら、pagingのURLにアクセストークンが入っていた",
+      "url": "https://zenn.dev/vellum_office/articles/db385b21489902",
+      "site": "Zenn(Python)",
+      "published": "2026-10-29T12:45:23Z",
+      "description": "API の返事を、確かめるつもりでそのまま画面に出している人に向けた、失敗の記録です。\n2026年10月5日、Claude Code が Threads API の /me/threads_insights の返事をそのまま表示しました。paging.previous の URL にアクセストークン全体が含まれていて、その大部分が会話の記録に残りました。\n\n 起きたこと\n\nThreads API ...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "A PDF can render correctly and still copy the wrong text",
+      "url": "https://zenn.dev/dokivo/articles/98c0f096a8c1f4",
+      "site": "Zenn(Python)",
+      "published": "2026-10-29T11:37:06Z",
+      "description": "An image comparison can pass while text extraction fails. The reverse is possible too: extracted text can match while small lettering loses its original appearance. A PDF conversion test needs to repo...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "毎晩の取り込みは成功・索引8千件。なのに検索に出ない —— 網羅率は処理ログではなく実物から数える",
+      "url": "https://zenn.dev/shinsei99/articles/coverage-from-originals-not-logs",
+      "site": "Zenn(Python)",
+      "published": "2026-10-29T11:00:20Z",
+      "description": "社内の書類を全文検索できるようにするため、共有フォルダを毎晩走査して索引に入れる処理を動かしています。\n毎朝ログを見ると、こう出ていました。\n新規取込 0 / 既取込スキップ 8,056 / 失敗 0    （6分弱で完了）\n追加が無い晩はこれが正しい出力です。健康に見えます。\nところが、ある部署の書類について検索すると「該当する資料はありません」と返る。1件ではなく、その部署の書類だけがまとめて...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "品質維持を自動化しよう。Supercovのすすめ",
+      "url": "https://zenn.dev/ukkyon/articles/supercov-quality-automation",
+      "site": "Zenn(Python)",
+      "published": "2026-10-29T10:57:26Z",
+      "description": "最近セキュリティ案件が多く、現場で実際に対応しているエンジニアの皆さんお疲れ様です。セキュリティ事由でアプグレを迫られても、すぐに対応できる体制を整えておくことが重要です。\n2026年10月23日、ruby-lang.org が Onigmo の正規表現まわりの CVE を4件告知しました。\n備えあれば憂いなしとはよく言ったもので、その少し前に既存の Rails アプリへ supercov を導入...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "venv入門 #自分用メモ",
+      "url": "https://zenn.dev/jun1013/articles/45612d32086373",
+      "site": "Zenn(Python)",
+      "published": "2026-10-29T10:16:03Z",
+      "description": "はじめに\n研究室での作業や、気になった技術（最近だとJevなど）の検証などに、簡単なプロトタイプを作って取り組んでみたい、と思う人は多いと思います。個人の範囲であればPythonで簡易的に実装したいですよね。そういった時によくLLMがセットアップの前提としてvenvを使用します。\n今回はそのvenvの入門と解説についてまとめた記事となっています。\n!\n本記事はPythonの仮想環境であるvenvに...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "ブラックジャックの確率論(3) 手札の状態と確率分布の実装",
+      "url": "https://zenn.dev/monty/articles/5d1584001b3fb0",
+      "site": "Zenn(Python)",
+      "published": "2026-10-29T09:03:09Z",
+      "description": "本記事は「ブラックジャックの確率論」と名付けられたシリーズ記事の1つです。全体の目次は下記の記事にまとめられています。\nhttps://zenn.dev/monty/articles/bb39331965c182\nまた、本記事シリーズで触れられているプログラムはGitHubの下記の場所にて公開されています。\nhttps://github.com/monty-orlac/BlackJack-Anal...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "Microsoft FabricのPythonノートブックでSparkを使わずにウェアハウスとレイクハウスを読み書きしてCUを抑える",
+      "url": "https://zenn.dev/dannyso16/articles/fabric-python-notebook-without-spark",
+      "site": "Zenn(Python)",
+      "published": "2026-10-29T09:00:05Z",
+      "description": "!\n本記事は2026年10月時点の情報に基づく。Fabricは仕様の変更が速いため、最新情報は公式ドキュメントを確認してほしい。\n\n\n 要約\n\nPythonノートブックは、Sparkのクラスターを立てずに1ノードで動くため、確保するCUが小さく、1 GB以内の小規模なETLやAPIコールなどの制御に向く。\nウェアハウスは、書き込みの入口がT-SQLに限られるため、PythonからはODBCや%%t...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "【図面提出自動化 #5】Dry RunとRollbackで安全に出力",
+      "url": "https://zenn.dev/kuma6082/articles/file-output-dry-run-verify-rollback",
+      "site": "Zenn(Python)",
+      "published": "2026-10-29T09:00:00Z",
+      "description": "PDF・DXF・DWGを所定のフォルダへ仕分ける際、コピー・リネーム・ZIP作成・上書きの途中で失敗すると、一部のファイルだけが更新されることがあります。\n出力の不整合を検知し、失敗時に元へ戻しやすくするため、出力計画・一時領域での生成・結果の検証・失敗時の復旧を別々の工程にしました。\n\n図面提出自動化の技術ノート｜第5回／全6回。CAD図面の提出作業を自動化する際の技術的な課題を扱う連載です。前...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "GPT Realtimeの音声エージェント構成を比較検証してみた",
+      "url": "https://zenn.dev/enterprise_ai/articles/4a8aebdebec860",
+      "site": "Zenn(Python)",
+      "published": "2026-10-29T07:26:13Z",
+      "description": "はじめに\nAzure OpenAI の Realtime API と OpenAI Agents SDK を使用し、マルチエージェント構成における動作と音声応答速度を検証しました。\n検証対象は、Handoff、ツール経由のDelegation、Agent as Tool の3つの構成です。使用モデルは、gpt-realtime（v1）、gpt-realtime-2.1、gpt-realtime-2...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "中国国外から中国のLLMを呼ぶときの、レイテンシと安定性のチェックリスト",
+      "url": "https://zenn.dev/apigoto2026/articles/cac29d2c3aae58",
+      "site": "Zenn(Python)",
+      "published": "2026-10-29T06:23:35Z",
+      "description": "サーバーは中国国外、モデルは中国国内という構成だと、最初のトークンが遅い、たまに理由なく固まる、夜になると悪化する、といった症状が出がちです。たいていモデル自体は問題ありません。原因は長い越境経路のほうです。国際回線は限られていてピーク時には混雑し、パケットロスが起きればTCPの再送が発生します。新しい接続を張るたびにTLSハンドシェイクの往復も上乗せされます。以下は実際に効いた対策です。特定のベ...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "動いたGoツールをGitHubで公開する前に、導入手順までテストした",
+      "url": "https://zenn.dev/kuroikotech/articles/pwnbridge-release-tests-toml",
+      "site": "Zenn(Python)",
+      "published": "2026-10-29T05:53:38Z",
+      "description": "PwnagotchiをLinux PCから操作するGo製ツール「Pwnbridge」を作った。実機確認後、GitHubへ出す準備で導入手順に問題が見つかった。\n今回のTOMLの並びでは、プラグインを一つ有効にすると、保存後に無関係な設定の所属先まで変わった。構文エラーにはならず、falseという値も残る。その再現と修正を中心に、公開前の試験を書く。\n\n このシリーズ\n\nGoとD-BusでPwnag...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "その値動きは、取引コストを超えられるか",
+      "url": "https://zenn.dev/kamakuraquant/articles/8426db0c74ebf1",
+      "site": "Zenn(Python)",
+      "published": "2026-10-29T05:23:29Z",
+      "description": "要旨。 前の 2 記事で測ったのは、取引にかかるコストと、価格が動く大きさでした。この 2 つを比べると、戦略を作る前にひとつ分かることがあります。その市場で、取引コストを超える値動きがどれだけ早く現れるかです。\n2026 年 6 月の国内 6 市場を比べると、Coincheck BTC では典型的な値動きが往復コストと同じ大きさになるまで約 13 秒。Coincheck XRP では約 27 分...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "バグバウンティ（脆弱性報奨金制度）とは｜仕組みと報酬相場、導入のポイント",
+      "url": "https://zenn.dev/maru1228/articles/security-bug-bounty",
+      "site": "Zenn(Python)",
+      "published": "2026-10-29T04:57:05Z",
+      "description": "!\nこの記事は自サイト バグバウンティ（脆弱性報奨金制度）とは｜仕組みと報酬相場、導入のポイント の再掲（クロス投稿）です。図をインタラクティブに動かせる版は元記事でどうぞ。\n\n「脆弱性を見つけたら教えてください。お礼はお支払いします」——そんな仕組みを、GoogleやMicrosoftだけでなく、日本国内の企業も次々と取り入れています。それが「バグバウンティ（脆弱性報奨金制度）」です。攻撃者に先...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "サーバー代0円で定期実行を回す：GitHub Actions の cron でハマった3つのこと",
+      "url": "https://zenn.dev/iguana_ai/articles/2bfaff9cf594c6",
+      "site": "Zenn(Python)",
+      "published": "2026-10-29T04:41:29Z",
+      "description": "やりたかったこと\n個人開発で、株価データを定期的に集めて条件チェックし、結果をメールで受け取る仕組みを運用しています。\n\n平日の夕方に自動で起動して、その日のデータを取得・判定する\n監視対象に変化があった日だけメールが届く\n週に1回、まとめレポートが届く\n\nいわゆる「定期収集 → 条件判定 → 通知」という型の自動化です。題材は株価ですが、価格監視でも求人チェックでも、形は同じだと思います。\n最初...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
     {
       "title": "DBの接続数、増やすほど速くなる？",
       "url": "https://zenn.dev/kamuidash/articles/d87adc3f0b43f5",
@@ -29,36 +179,6 @@
       "site": "Zenn(Python)",
       "published": "2026-10-28T23:44:32Z",
       "description": "「Node2Shell? うちは Node.js を使っていないから関係ないな」。10月下旬にこのニュースを見て、そう判断しかけた方もいると思います。ところが、Node.js を使っていなくても確認が必要な場合があります。Node2Shell(HTTP2Shell とも呼ばれる、CVE-2026-111497)の正体は、Node.js ではなく Google の圧縮ライブラリ Brotli の欠陥...",
-      "category": "開発",
-      "rss_category": "",
-      "image_url": ""
-    },
-    {
-      "title": "Claude Code のサブエージェント二百体超を回して、事故を機械で拾った",
-      "url": "https://zenn.dev/hotto_ken/articles/subagent-fleet-verification-gates",
-      "site": "Zenn(Python)",
-      "published": "2026-10-28T23:05:19Z",
-      "description": "連載『疑って確かめる』第6話（全8話）。成功に見える失敗を、1話に1つずつ確かめます。\n!\nこの記事で分かること\n\n数百体のサブエージェントの完了を、通知ではなく「ファイル数と欠番」で判定する方法\n件数が合っていてもキーがずれる事故を拾う、キー集合突合の Python 38行\n回帰ゲートが「ゲートの中のコード」しか証明していなかったときの直し方\n\n\n\n 結論\n状態は全部ファイルに置きます。完了は、...",
-      "category": "開発",
-      "rss_category": "",
-      "image_url": ""
-    },
-    {
-      "title": "Claude CodeのMonitorで「止まったこと」に気づく — 見えない失敗が一番高くつく",
-      "url": "https://zenn.dev/joinclass/articles/monitor-20261027220014-13480",
-      "site": "Zenn(Python)",
-      "published": "2026-10-28T23:00:15Z",
-      "description": "エラーより「静かに止まる」ほうが高くつく\n当社では、記事公開・売上取得・営業パイプラインなどの定期ジョブをMacのlaunchdで回しています。導入を検討している人によく聞かれるのは「AIに任せて、壊れたらどうするのか」です。\n僕の答えは「壊れること自体はそれほど怖くない。怖いのは、壊れたことに誰も気づかないこと」です。\n2026年9月、当社では次の3つがどれも誰にも気づかれないまま放置されていま...",
-      "category": "開発",
-      "rss_category": "",
-      "image_url": ""
-    },
-    {
-      "title": "Mac画面をGemini Visionで常時監視するAIエージェント構築術",
-      "url": "https://zenn.dev/ikuokuotiak/articles/gemini-vision-mac-screen-monitoring-agent-launchd",
-      "site": "Zenn(Python)",
-      "published": "2026-10-28T22:02:28Z",
-      "description": "ahicです。日々の業務をAIエージェントとRPAで自動化し、13体のエージェントを運用しています。今回は、Macの画面をGemini Vision APIで常時監視し、特定のイベントを検出して自動で通知・記録するAIエージェントの構築手順をご紹介します。\n\n 課題提起：Mac画面の特定状態を検知したい\nMacの作業中、特定のアプリケーションが起動した際、特定のポップアップが表示された際、あるいは...",
       "category": "開発",
       "rss_category": "",
       "image_url": ""
