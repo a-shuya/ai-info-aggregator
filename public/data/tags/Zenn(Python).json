@@ -1,8 +1,58 @@
 {
   "site": "Zenn(Python)",
-  "last_updated": "2026-10-29T00:24:09.565803",
-  "total_articles": 7456,
+  "last_updated": "2026-10-29T06:16:35.909272",
+  "total_articles": 7460,
   "articles": [
+    {
+      "title": "DBの接続数、増やすほど速くなる？",
+      "url": "https://zenn.dev/kamuidash/articles/d87adc3f0b43f5",
+      "site": "Zenn(Python)",
+      "published": "2026-10-29T02:35:45Z",
+      "description": "接続プールを5本から20本に増やすと、接続を借りるまでの待ちはほぼ消えました。それでも、リクエスト全体の応答は速くなりませんでした。\n同じSQLを毎秒40件、10件ずつまとめて送った実験でのことです。プール取得待ちは平均22.1msから0.03msへ。一方、遅い側の応答を見るp99は、約126msから約133msになりました。100本まで増やしても、p99は約132msです。\n取得待ちが減ったのに...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "【セキュリティ】コードを検査しても見落とす4つの盲点 : Node2Shell・LiteLLM・PHP2Shell・eMudhraから考える",
+      "url": "https://zenn.dev/cybernet_itsol/articles/c3ae5e94dfe315",
+      "site": "Zenn(Python)",
+      "published": "2026-10-29T00:20:31Z",
+      "description": "コードを検査しても見落とす4つの盲点 : Node2Shell・LiteLLM・PHP2Shell・eMudhraから考える\n「SAST」によるソースコードの検査、「SCA」による依存ライブラリの脆弱性チェック、「CI/CDへのセキュリティスキャンの組み込み」 …これらは、今では多くの開発チームで採用されている対策かと思います。\nしかし、「ソースコード」や「依存ライブラリ」を検査していても、本番シ...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "Node2ShellはNode.jsだけの話ではない。Brotliの欠陥でPythonも対象、CVE-2026-111497の該当判定",
+      "url": "https://zenn.dev/hoshiorange/articles/41-brotli-node2shell-not-only-nodejs",
+      "site": "Zenn(Python)",
+      "published": "2026-10-28T23:44:32Z",
+      "description": "「Node2Shell? うちは Node.js を使っていないから関係ないな」。10月下旬にこのニュースを見て、そう判断しかけた方もいると思います。ところが、Node.js を使っていなくても確認が必要な場合があります。Node2Shell(HTTP2Shell とも呼ばれる、CVE-2026-111497)の正体は、Node.js ではなく Google の圧縮ライブラリ Brotli の欠陥...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "Claude Code のサブエージェント二百体超を回して、事故を機械で拾った",
+      "url": "https://zenn.dev/hotto_ken/articles/subagent-fleet-verification-gates",
+      "site": "Zenn(Python)",
+      "published": "2026-10-28T23:05:19Z",
+      "description": "連載『疑って確かめる』第6話（全8話）。成功に見える失敗を、1話に1つずつ確かめます。\n!\nこの記事で分かること\n\n数百体のサブエージェントの完了を、通知ではなく「ファイル数と欠番」で判定する方法\n件数が合っていてもキーがずれる事故を拾う、キー集合突合の Python 38行\n回帰ゲートが「ゲートの中のコード」しか証明していなかったときの直し方\n\n\n\n 結論\n状態は全部ファイルに置きます。完了は、...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "Claude CodeのMonitorで「止まったこと」に気づく — 見えない失敗が一番高くつく",
+      "url": "https://zenn.dev/joinclass/articles/monitor-20261027220014-13480",
+      "site": "Zenn(Python)",
+      "published": "2026-10-28T23:00:15Z",
+      "description": "エラーより「静かに止まる」ほうが高くつく\n当社では、記事公開・売上取得・営業パイプラインなどの定期ジョブをMacのlaunchdで回しています。導入を検討している人によく聞かれるのは「AIに任せて、壊れたらどうするのか」です。\n僕の答えは「壊れること自体はそれほど怖くない。怖いのは、壊れたことに誰も気づかないこと」です。\n2026年9月、当社では次の3つがどれも誰にも気づかれないまま放置されていま...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
     {
       "title": "Mac画面をGemini Visionで常時監視するAIエージェント構築術",
       "url": "https://zenn.dev/ikuokuotiak/articles/gemini-vision-mac-screen-monitoring-agent-launchd",
@@ -29,16 +79,6 @@
       "site": "Zenn(Python)",
       "published": "2026-10-28T21:07:04Z",
       "description": "note の記事の投稿と手直しを、Playwright（ブラウザを動かすライブラリ）で自動にしています。書くのも直すのも Claude Code です。\nある日、記事の最後の案内文の値段を「980円」から「500円」に直すため、公開中の記事9本を道具で保存し直しました。直した後に外から読み戻すと、本文も値段も合っていました。\nところが、本人が手で応募していた note のコンテストの応募が、9本と...",
-      "category": "開発",
-      "rss_category": "",
-      "image_url": ""
-    },
-    {
-      "title": "🐸にハロウィンを教えたら、ターミナルが少しホラーになった ― The Haunted Frog",
-      "url": "https://zenn.dev/emilia_lab/articles/haunted-frog-cse-halloween",
-      "site": "Zenn(Python)",
-      "published": "2026-10-28T19:44:31Z",
-      "description": "以前、🐸を1匹飼うと、言語モデルの中身が見える ― pip install cse-frog という記事で、学習用の小さな言語モデル cse-frog を紹介しました。\n今回はその 🐸 にハロウィンの言葉を覚えさせて、ターミナルに住まわせてみました。\n海外の開発者コミュニティ DEV のハッカソン「Hacktoberfest Open-Source AI Challenge」（Week 4 のテー...",
       "category": "開発",
       "rss_category": "",
       "image_url": ""
