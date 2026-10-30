@@ -1,8 +1,158 @@
 {
   "site": "Zenn(LLM)",
-  "last_updated": "2026-10-30T09:04:41.961696",
-  "total_articles": 7083,
+  "last_updated": "2026-10-30T15:53:10.252052",
+  "total_articles": 7097,
   "articles": [
+    {
+      "title": "0。Anthropicが上場に向けてS-1を提出した日、自分の実行モデル3スロットに他社の名前は1つも無かった",
+      "url": "https://zenn.dev/hideki_tamae/articles/anthropic-ipo-s1-single-vendor-model-slots",
+      "site": "Zenn(LLM)",
+      "published": "2026-10-30T06:32:23Z",
+      "description": "はじめに\n0。\nこれが今回の数字です。何の0かというと、この記事を自動で書いて投稿している自分自身のタスクが、起動時に指定している実行モデル(プライマリ1つ・フォールバック2つ、計3スロット)のうち、Anthropic以外の会社名が入っているスロットの数です。\nきっかけは、Anthropicが2026年10月26日、新規株式公開(IPO)に向けてSECにS-1を提出したという発表でした(Anthr...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "【AI駆動開発ブートキャンプ】Sprint1成果発表会：LLMが「OK」でも人に回す。緊急の判定をLLMに任せない",
+      "url": "https://zenn.dev/salt2/articles/ai-sprint1-llm-ok-llm-ce7b81df",
+      "site": "Zenn(LLM)",
+      "published": "2026-10-30T06:10:53Z",
+      "description": "LLMが「OK」と判定しても、危険につながりそうな言葉が含まれていれば人へつなぐ。SALT2のAI駆動開発ブートキャンプ（2026 Autumn）のSprint1成果発表会で、受講生の1人が自作の問い合わせポータルに組み込んでいた判定です。2026年10月15日、同じ会場で続けて発表した受講生Aと受講生Bの実装と、評価担当のエンジニアとの質疑は、LLMアプリの「緊急判定」をどこに置くかという一点で...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "GPT-5は分類に4秒かかる：判断特化AI「Jev」「Decision-1」と挑む日本語80問4モデル実測比較",
+      "url": "https://zenn.dev/ai_nexus_jp/articles/jev-vs-decision1-benchmark",
+      "site": "Zenn(LLM)",
+      "published": "2026-10-30T04:34:21Z",
+      "description": "こんにちは。AI Nexus 代表の西藤（にしとう）です。\n普段はプロジェクトマネージャー（PM）としてクライアント企業のAI導入やDX推進を牽引しつつ、自らコードを書いて開発も行い、現場の泥臭い課題を解決するコンサルタントとしても活動しています。\n近年の生成AI開発において、多くの現場やPoCで以下のような要望が寄せられます。\n\n「ユーザーからの問い合わせを適切な部署へ自動ルーティングしたい」\n...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "Message Batchesのcustom_idに外部IDを入れると400 — 「.」1つでバッチ全体が弾かれる",
+      "url": "https://zenn.dev/acs_developer/articles/anthropic-batch-custom-id-pattern-400",
+      "site": "Zenn(LLM)",
+      "published": "2026-10-30T04:09:03Z",
+      "description": "何が起きたか\nYouTubeのコメントを分類するバッチ処理を、AnthropicのMessage Batches APIへ移した時の話です。結果をコメントへ戻すには、各リクエストの custom_id に何かのキーを入れる必要があります。最初に思いつくのは「元データのIDをそのまま入れる」方法です。\nところがYouTubeのコメントIDには . が入ることがあります（返信コメントのIDは親スレッド...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "Claude Code のモデル4種に同じ課題を96回解かせた",
+      "url": "https://zenn.dev/acerola_jp/articles/claude-code-model-cost-96runs",
+      "site": "Zenn(LLM)",
+      "published": "2026-10-30T03:00:05Z",
+      "description": "Haiku 5.5・Sonnet 5.5・Opus 5.5・Fable 5.1 のどれを使うか。「難しいことは上のモデルに」とよく言われますが、どのくらいの難しさから上が要るのか、そのとき費用と時間はどれだけ変わるのかは、自分で測らないと分かりません。\nそこで、隠しテストで機械的に合否が決まる小さな課題6つを、Claude Code（2.1.303）の claude -p で4モデルに各4回ずつ、...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "Claude Tool Runnerで「独自ツールを呼ぶAIエージェント」をTypeScriptで実装する",
+      "url": "https://zenn.dev/yunisuta/articles/claude-tool-runner-ai-typescript-llm-mer3vi",
+      "site": "Zenn(LLM)",
+      "published": "2026-10-30T02:29:57Z",
+      "description": "「Claude Agent SDK」で検索して迷子になった話\n「Claude エージェント 実装」で調べると、Claude Codeをライブラリ化した @anthropic-ai/claude-agent-sdk の紹介記事がよく出てくる。ファイル読み書きやBashが最初から使えて便利そうに見えるが、実際に欲しかったのは「自社の在庫APIや監視システムを叩く、こちらが定義した2〜3個のツールだけを...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "問い合わせメールのAI振り分けに「要確認」の箱が必要な理由：不動産メール40通・480回で確かめた",
+      "url": "https://zenn.dev/kosukeozawa/articles/ai-inquiry-triage-review-box",
+      "site": "Zenn(LLM)",
+      "published": "2026-10-30T01:56:03Z",
+      "description": "問い合わせメールを AI で部署ごとに振り分けるとき、分類の選択肢を「内見」「修繕」「退去」のような業務カテゴリだけにしていませんか。その作り方だと、どこにも当てはまらないメールや、人がすぐ読むべきメールも、AI はどれかの箱に入れてしまいます。\n不動産会社に届きそうなメール40通（架空）を Codex CLI で480回分類しました。業務カテゴリ7つだけで分類させると、「弁護士に相談して家賃も止...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "強いLLMならPrompt Injectionに耐えられる？ 7つのローカルLLMで検証した",
+      "url": "https://zenn.dev/sun_asterisk/articles/8370ad0dbca870",
+      "site": "Zenn(LLM)",
+      "published": "2026-10-30T01:55:42Z",
+      "description": "はじめに\nSun* の魯です。5〜6年ほどデータサイエンティストとして分析・モデリングの仕事をしてきて、ここ最近は AI / LLM を組み込んだシステムの設計・実装を担当しています。\nここ1〜2年、PoC で終わっていた agent が実案件に乗るようになり、「ツールを持たせて自律的に動かす」構成を扱う機会が増えました。そして agent をお客様に出す段になると、社内レビューでも先方との打ち合...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "Claude Codeのコンテキストが最初から7万トークン埋まっている、その内訳の調べ方",
+      "url": "https://zenn.dev/starken/articles/claude-code-startup-context-tokens",
+      "site": "Zenn(LLM)",
+      "published": "2026-10-30T01:36:15Z",
+      "description": "観測日: 2026-09-08、2026-09-11、2026-09-14 ／ 記事の作成: 2026-10-29（Claude Code 2.1.270、macOS 13.7.8）\n\nClaude Code Desktop では、1ターン目の時点で、コンテキストに約7万トークンが載っていました。\n総量はセッションの記録ファイルにある usage を足せば出て、内訳は同じファイルの attachm...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "ローカルLLM study5: Ornith-1.5-9Bをstudy2〜4の手法で深掘りする",
+      "url": "https://zenn.dev/tkpurine/articles/local-llm-study-005-ornith-1-5-deep-dive",
+      "site": "Zenn(LLM)",
+      "published": "2026-10-30T01:29:37Z",
+      "description": "この記事について\nstudy1-c で、新しく公開された Ornith-1.5-9B を単発Q&amp;Aタスクで検証したところ、Ornith-1.0-9B より2〜3倍遅く、正確さは同等という結果でした。この記事では同じモデルを、study2（Aiderでの自律バグ修正）・study3（カルマンフィルタ/SVDの3段階タスク）・study4（自作ドライバmonocoder）の手法でさらに深掘りし...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "RTX 3090のGPU Unlockを検証：速くなる処理、変わらない処理",
+      "url": "https://zenn.dev/sora_lnv/articles/rtx3090-gpu-unlock",
+      "site": "Zenn(LLM)",
+      "published": "2026-10-30T01:27:22Z",
+      "description": "RTX 3090で比較した処理\nGPU Unlockを適用すると、RTX 3090で動かすLLMや画像生成はどの程度速くなるのか。行列演算のベンチマークだけでは、普段使う処理への効果は分からない。同じRTX 3090で27Bの量子化LLM、小型のBF16 LLM、画像生成、学習を実行し、適用前後を比較した記録を整理した。\n\n GPU Unlockの仕組み\n使用したのはZagitta/gpu-unl...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "Claude API 2026-10-21の破壊的変更を自作ツールで検証——SDK 2.0でtemperatureが消えた",
+      "url": "https://zenn.dev/sktt_panda/articles/claude-api-2026-10-21-migration-rakuscan",
+      "site": "Zenn(LLM)",
+      "published": "2026-10-30T01:23:10Z",
+      "description": "3行まとめ\n\n2026年10月21日、Claude APIに3年ぶりの新しいAPIバージョン 2026-10-21 が出た。temperature / top_p / top_k は既定値でも400エラー、SDKはAPIキーを Authorization: Bearer で送るようになり、MessageParam は役割ごとの型のunionに変わった\n新しいメジャーのSDK（Python 2.0....",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "仕様回答ボットを作り直した──AIは質問理解と事実選択、回答はコードで組み立てる",
+      "url": "https://zenn.dev/oakensushi/articles/ecba1b633f6ff3",
+      "site": "Zenn(LLM)",
+      "published": "2026-10-29T23:37:53Z",
+      "description": "業務上の仕様確認を題材に、仕様書を根拠に答えるボットを自主開発し、少しずつ設計を見直しています。\n1本目の記事では、引用が実在することと、回答が正しいことを分けて評価しました。2本目の記事では、仕様の採用状態や時点を整理し、確認済み情報を渡す経路を調べました。\n今回はその続きです。根拠を整理しても、正しい事実が回答に使われるとは限りません。そこで、今回比較した構成では、AIに回答本文を自由に書かせ...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "ドキュメントの無いリポジトリを AI に把握させる。コードから仕様を起こす Agent Skill",
+      "url": "https://zenn.dev/redamoon/articles/article54-code-spec-extractor",
+      "site": "Zenn(LLM)",
+      "published": "2026-10-29T23:36:26Z",
+      "description": "AI が開発に入ってくる前に関わったプロジェクトのコードを、最近あらためて読む機会がありました。\n自分も関わったはずなのに、仕様はほとんど覚えていません。\nどの画面がどのデータを使い、どんなルールで動き、どの共通部品に依存していたのか。\nそれを思い出すために、AI にコードを読ませて仕様を抜き出してもらうことにしました。\n最初は都度プロンプトで頼んでいました。\nただ、毎回同じ指示を書くことになるう...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "小さなローカルLLMは、迷うと「その他」に逃げる。ふさぐと「仕事」に逃げる",
+      "url": "https://zenn.dev/hilopon/articles/local-llm-classify-falls-into-other",
+      "site": "Zenn(LLM)",
+      "published": "2026-10-29T23:00:07Z",
+      "description": "LINEに送ったメモや写真や声を、自宅のPCが文字にして、仕事・家庭・地域・学び・その他のどれかに分けて日記に残す。そういう仕組みを毎日使っています。分類をしているのは、Ollama で動かしている qwen3-vl:4b-instruct というモデルです。\n名前の「4b」は、モデルの大きさのことです。中の数値（パラメータ）が約40億個あるという意味で、ファイルにすると3.3GBほど。ChatG...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
     {
       "title": "Tech Watch 2026-10-30: エージェントの判断と監視",
       "url": "https://zenn.dev/laiken/articles/20261030-tech-watch",
@@ -189,16 +339,6 @@
       "site": "Zenn(LLM)",
       "published": "2026-10-29T02:55:28Z",
       "description": "はじめに\nSearch Relevance Workbench（SRW）は、OpenSearch 3.1で導入された検索品質を評価するための機能です。クエリと検索設定、正解データを組み合わせてNDCGなどの指標を計算できます。正解データは自分で用意するのが一般的ですが、SRWにはLLMに検索結果の関連度を採点させて正解データを作る、LLM-as-a-Judgeという機能も用意されています。\n英語の...",
-      "category": "AI・技術",
-      "rss_category": "",
-      "image_url": ""
-    },
-    {
-      "title": "AIに物理キーボードを渡して、BIOS操作からPCのトラブル対応まで丸投げしてみた——M5Stack Tab5のカメラとUSBだけで",
-      "url": "https://zenn.dev/sodeyama/articles/tech-tab5-camera-usb-pc-diagnosis",
-      "site": "Zenn(LLM)",
-      "published": "2026-10-29T02:08:34Z",
-      "description": "きっかけは、自宅サーバーの ext4 障害\n株式会社DeploAIで代表取締役CTOをしている袖山剛です。\n営業を科学するプロダクトの開発と、お客様の業務にAIを組み込む仕事をしています。\n2026年10月、自宅の Linux サーバー（開発用に使っているマシンで、EVO と呼んでいます）で、ルートの ext4 が壊れました。ファイルシステムのエラーが出続け、再起動すると起動の途中で止まり、「fs...",
       "category": "AI・技術",
       "rss_category": "",
       "image_url": ""
