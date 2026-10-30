@@ -1,8 +1,188 @@
 {
   "site": "Zenn(Python)",
-  "last_updated": "2026-10-30T02:41:30.454298",
-  "total_articles": 7476,
+  "last_updated": "2026-10-30T09:04:41.961696",
+  "total_articles": 7494,
   "articles": [
+    {
+      "title": "「名前重要」の原則で、昔のIoTのコードの命名を見直してみた",
+      "url": "https://zenn.dev/taito0816/articles/naming-is-important-refactoring",
+      "site": "Zenn(Python)",
+      "published": "2026-10-30T09:03:11Z",
+      "description": "はじめに\nプログラミングの原則に「名前重要（Naming is important）」というものがあります。書籍『プリンシプル オブ プログラミング』でも、KISSやDRYと並ぶ原則のひとつとして紹介されています。\nhttps://www.hanmoto.com/bd/isbn/9784798046143\nこの原則を学んだあと、以前チーム開発で書いたIoTのコード（Raspberry Piで測った...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "確率的LLMを制御工学で再定義する：Hi-Z状態・不感帯・クランク位相同期によるマルチエージェント調停アーキテクチャ",
+      "url": "https://zenn.dev/nanashi_os/articles/8afad61441e367",
+      "site": "Zenn(Python)",
+      "published": "2026-10-30T08:54:11Z",
+      "description": "はじめに\n大規模言語モデル（LLM）やマルチエージェントシステムの実装において、私たちは長らく「確率的空間における無限のトークン生成」と向き合ってきた。入力に対して常に何かを出力し続けようとする従来のデンスモデルは、複雑な推論時やマルチエージェントの協調環境において、バス衝突（情報の混濁）、チャター現象（無駄なラリー）、そしてサージング（コンテキスト破綻・無限ループ）を引き起こしやすい。\n本記事で...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "Pythonのソケット通信でJSONが途中で切れる原因と対策：TCPには「区切り」がない",
+      "url": "https://zenn.dev/taito0816/articles/iot-tcp-socket-messages",
+      "site": "Zenn(Python)",
+      "published": "2026-10-30T08:27:30Z",
+      "description": "はじめに\nRaspberry Piで測ったセンサーの値を、ネットワーク経由でPCに送る。IoTの入門でよく作る構成です。PythonならTCPソケットで手軽に実装でき、次のようなコードを見かけることも多いと思います。\n\n送信側（よくある書き方）\nsock.send(json.dumps(readings).encode(\"utf-8\"))\n\n\n受信側（よくある書き方）\ndata = conn.re...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "IoTのセンサー値、「表示された」で終わらせず、「値の正しさ」を確かめるテストの考え方",
+      "url": "https://zenn.dev/taito0816/articles/iot-sensor-data-testing",
+      "site": "Zenn(Python)",
+      "published": "2026-10-30T07:59:59Z",
+      "description": "はじめに\n温度センサーの値をRaspberry Piで受け取り、データベースに保存して、ブラウザに表示する。IoTシステムを作ると、画面に値が出た時点で「動いた！」と安心してしまいがちです。\nでも、画面に値が表示されることと、その値が正しいことは別の話です。センサーの値は、読み取り・通信・保存・計算・表示と何段階も経由して画面に届くので、どこかで値がずれていても、画面だけ見ていては気づけません。\n...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "丸めはポリシーだ",
+      "url": "https://zenn.dev/sangkyoonnam/articles/rounding-is-policy",
+      "site": "Zenn(Python)",
+      "published": "2026-10-30T07:53:09Z",
+      "description": "この記事は Namsang Labs 技術ブログ からの転載です。\n\n朝、出社してすぐSlackの通知が鳴った。経理担当のKさんだった。\n「A社の今月の精算額が請求書と1ウォンずれてるんですけど、何か変わりました？」\n変えていない。何も変えていない。なのに1ウォン違う。\n午後いっぱいかけて掘った。原因はあっけなかった。整数除算で小数点以下が静かに切り捨てられていた。直すのは1行だった。データをもう...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "ログを1行増やすと、APIはどれだけ遅くなる？",
+      "url": "https://zenn.dev/kamuidash/articles/d907bfe35a4f24",
+      "site": "Zenn(Python)",
+      "published": "2026-10-30T06:24:51Z",
+      "description": "16KiBのJSONを1行出すAPIで、出力先だけを遅くしたところ、応答時間のp99は4.42msから3,005msへ伸びました。同じJSONをキュー経由で出すとp99は4.86ms。ただし、最後のAPI応答が返った後も、ログの読み取りに平均2.11秒かかりました。\nこれは、毎秒20件を8秒間送る、小さな専用APIでの結果です。JSONの出力量は毎秒320KiB、遅い読み取り先の上限は毎秒256K...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "Jupyterのimport失敗を切り分ける：pip・カーネル・実行Pythonの対応",
+      "url": "https://zenn.dev/kas_blog/articles/20260911-jupyter-modulenotfounderror",
+      "site": "Zenn(Python)",
+      "published": "2026-10-30T05:52:38Z",
+      "description": "ターミナルでpip installが成功し、NotebookでModuleNotFoundErrorが出ると、パッケージを入れ直したくなります。その前に、その2つの操作が同じPython環境を見ているかを確認すると、導入先の違いを切り分けられます。\nNotebookでは、画面を提供するサーバーと、コードを実行するカーネル（実行プロセス）を別環境に置けます。Jupyter公式のトラブルシューティング...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "Message Batchesのcustom_idに外部IDを入れると400 — 「.」1つでバッチ全体が弾かれる",
+      "url": "https://zenn.dev/acs_developer/articles/anthropic-batch-custom-id-pattern-400",
+      "site": "Zenn(Python)",
+      "published": "2026-10-30T04:09:03Z",
+      "description": "何が起きたか\nYouTubeのコメントを分類するバッチ処理を、AnthropicのMessage Batches APIへ移した時の話です。結果をコメントへ戻すには、各リクエストの custom_id に何かのキーを入れる必要があります。最初に思いつくのは「元データのIDをそのまま入れる」方法です。\nところがYouTubeのコメントIDには . が入ることがあります（返信コメントのIDは親スレッド...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "エンジニア視点で語る！Pythonで学ぶマクロ経済学入門 84",
+      "url": "https://zenn.dev/maszkot/articles/8e374c028758ae",
+      "site": "Zenn(Python)",
+      "published": "2026-10-30T02:57:21Z",
+      "description": "https://qiita.com/maskot1977/items/a4ea362c0302e72a44bd\n\n 第84回「賃上げと人材育成、二つの“囚人のジレンマ”を同時に壊すには」\nDJミオ（女）\nこんばんは、「エンジニア視点で語る！Pythonで学ぶマクロ経済学入門」、ナビゲーターのDJミオです。\nDJレン（男）\nこんばんは、DJレンです。今日はかなり重要回です。テーマは、\n「賃上げと人材...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "4時間のCeleryタスクが、終わった直後にもう一度最初から🔂 solo workerとvisibility_timeoutの二重実行",
+      "url": "https://zenn.dev/charge0315/articles/4e0aae4a4feff2",
+      "site": "Zenn(Python)",
+      "published": "2026-10-30T02:36:07Z",
+      "description": "みなさん、こんにちは！\n「ALPHA FORGE 開発秘話」の第29話です。\n約4時間かかったデータ収集が、やっと終わった。そう思った次の瞬間、同じ仕事が同じタスクIDで、もう一度最初から始まりました🔂\nしかもこれ、同じ根っこの事件としては3回目です。\n日本株のAI銘柄スクリーニング＆継続学習端末「ALPHA FORGE（アルファフォージ）」を、Claude Code と二人三脚で個人開発していま...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "通話AIの遅延予算を測る｜faster-whisperを実測し、LLMとTTSの待ちは仮定で振る",
+      "url": "https://zenn.dev/cauchye_asia/articles/d09aa8121ccea4",
+      "site": "Zenn(Python)",
+      "published": "2026-10-30T02:01:19Z",
+      "description": "2026-10-30時点の情報です。\n本記事の数値は、CAUCHYE ASIA が 2026-10-29（日本時間）に Python 3.13.5 / faster-whisper 1.2.1 / CTranslate2 4.8.4 で実行した結果です。引用した資料の記述は、2026-10-30 に再確認しました（ITU-T G.114 の数値は 2026-10-29 に勧告本文で確認）。LLM ...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "NASAの衛星データは防災にどこまで使える？千葉豪雨を試して見えた可能性と限界",
+      "url": "https://zenn.dev/nakato_tomohito/articles/nasa-opera-flood-history",
+      "site": "Zenn(Python)",
+      "published": "2026-10-30T01:55:29Z",
+      "description": "NASAの衛星データを使えば、日本の住所ごとに「過去に浸水したことがあるか」を調べられるのではないか。\n防災DBを開発する中でそう考え、2026年8月の千葉豪雨を例に、豪雨前後の水域を衛星データで比較してみました。\n結果は、期待していたほど単純ではありませんでした。水域の変化を地図に表示するところまではできましたが、住所ごとに浸水の有無を判定することはできませんでした。 豪雨期間中の画像では、試し...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "Wan 2.7 の4つの生成モードを「手元の素材」から選ぶ：判定表と小さな Python スクリプト",
+      "url": "https://zenn.dev/yoxi957/articles/3e6c0f255458d6",
+      "site": "Zenn(Python)",
+      "published": "2026-10-30T01:34:53Z",
+      "description": "動画生成ツールに複数のモードがあると、最初に迷うのは「どれを選べばいいか」です。テキストから作るのか、画像を動かすのか、参照素材で被写体を指定するのか、既存の動画を編集するのか。しかもモードごとに対応する長さや入力が違うため、選んだあとで「この長さは使えない」と気づくこともあります。この記事では Wan 2.7 の4モードを、手元にある素材から逆算して選ぶ方法を整理し、判定を自動化する短い Pyt...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "ローカルLLM study5: Ornith-1.5-9Bをstudy2〜4の手法で深掘りする",
+      "url": "https://zenn.dev/tkpurine/articles/local-llm-study-005-ornith-1-5-deep-dive",
+      "site": "Zenn(Python)",
+      "published": "2026-10-30T01:29:37Z",
+      "description": "この記事について\nstudy1-c で、新しく公開された Ornith-1.5-9B を単発Q&amp;Aタスクで検証したところ、Ornith-1.0-9B より2〜3倍遅く、正確さは同等という結果でした。この記事では同じモデルを、study2（Aiderでの自律バグ修正）・study3（カルマンフィルタ/SVDの3段階タスク）・study4（自作ドライバmonocoder）の手法でさらに深掘りし...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "Claude API 2026-10-21の破壊的変更を自作ツールで検証——SDK 2.0でtemperatureが消えた",
+      "url": "https://zenn.dev/sktt_panda/articles/claude-api-2026-10-21-migration-rakuscan",
+      "site": "Zenn(Python)",
+      "published": "2026-10-30T01:23:10Z",
+      "description": "3行まとめ\n\n2026年10月21日、Claude APIに3年ぶりの新しいAPIバージョン 2026-10-21 が出た。temperature / top_p / top_k は既定値でも400エラー、SDKはAPIキーを Authorization: Bearer で送るようになり、MessageParam は役割ごとの型のunionに変わった\n新しいメジャーのSDK（Python 2.0....",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "月末の集計数が日報と合わない。Obsidianノートの食い違い3種をDataviewで10分で摘出した話",
+      "url": "https://zenn.dev/yukihayama/articles/obsidian-monthend-tally-mismatch",
+      "site": "Zenn(Python)",
+      "published": "2026-10-30T01:14:49Z",
+      "description": "10月末にあわてた。手書きの日報は28日分並んでいるのに、Obsidianの集計ノートが数えてくれたのは25。3件がどこかで消えている。翌朝提出の月次報告の前日だ。ノートを1ファイルずつ開いて目視確認していたら、28ファイルで30分が溶けた。原因を突き止めた結果、「書き方」を原因とする食い違いが3種類あることが分かった。この記事では、DataviewとPythonで3種を10分で摘出する方法と、翌...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "PyInstaller onefileのデータ保存先：消える一時領域と残る場所を実測",
+      "url": "https://zenn.dev/warrobotsxyz/articles/pyinstaller-onefile-data-path",
+      "site": "Zenn(Python)",
+      "published": "2026-10-30T00:00:10Z",
+      "description": "はじめに\nPyInstallerの --onefile でexeを配布すると、「開発中は動いていた設定保存が、配布版では消える」という現象に出くわす。原因は onefileが実行のたびに自分自身を一時フォルダ（sys._MEIPASS）へ展開し、終了時に削除すること。実験用の小さなアプリで、パスの実際の挙動を実測した。\n\n 環境\n\nWindows 11（ビルド 10.0.26200）\nPython...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "「日本はいくつの圏に分かれるか」をどう設計し、どう確かめたか：コミュニティ検出の結果を疑う手順",
+      "url": "https://zenn.dev/takayuki0127/articles/f06e650996569a",
+      "site": "Zenn(Python)",
+      "published": "2026-10-29T23:54:05Z",
+      "description": "都道府県間の引っ越し（総務省「住民基本台帳人口移動報告」）をネットワークとして見て、日本をいくつかの「圏」に分ける分析をしました。結論は「2025年は4つに分かれ、1990年からほとんど変わっていない」です。\nただ、コミュニティ検出（ネットワークの中で、内側のつながりが外側より強いまとまりを探す手法）は、設定を変えれば結果も変わります。この記事では、手法をどう選び、どの設定を動かして、結果がどう動...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
     {
       "title": "仮想オフィスの「近くの人にだけ声が届く」を、LiveKit の購読の許可で SFU に守らせる",
       "url": "https://zenn.dev/hotori/articles/5e2cd643a77ae6",
