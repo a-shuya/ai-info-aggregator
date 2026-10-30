@@ -1,8 +1,88 @@
 {
   "site": "Zenn(LLM)",
-  "last_updated": "2026-10-30T15:53:10.252052",
-  "total_articles": 7097,
+  "last_updated": "2026-10-30T20:34:03.438795",
+  "total_articles": 7105,
   "articles": [
+    {
+      "title": "AIエージェントの『メモリの税』は本当に起きるのか、自作データで検証した",
+      "url": "https://zenn.dev/matsushima_a/articles/day-031-agent-memory-tax-vs-benefit",
+      "site": "Zenn(LLM)",
+      "published": "2026-10-30T14:12:39Z",
+      "description": "今日のネタ元\nHugging Face Daily Papersに掲載されていた以下の論文を検証した。\n\n\"Memory Tax: Dissecting the Net Value of Agent Memory\"\n\nhttps://huggingface.co/papers/2610.34073 (arXiv:2610.34073)\n\nこの論文は、フラット型・階層型・グラフ型・学習済みポリシー型...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "日本語はなぜトークンを食う？ 漢字がバイトに割れる仕組みを tiktoken で数えてみた",
+      "url": "https://zenn.dev/lecto/articles/717bdd29651bd8",
+      "site": "Zenn(LLM)",
+      "published": "2026-10-30T13:44:29Z",
+      "description": "はじめに\n同じ意味の文なのに、日本語で書くと AI の料金が高くなる。そんな話を聞いたことはありませんか？\nAI（大規模言語モデル）は、文章を文字や単語ではなく トークン という単位で数えています。料金も、一度に読める量（コンテキストの長さ）も、このトークンの数で決まります。\nこの記事では、\n\nトークンとは何か\n同じ意味の文で、英語と日本語のトークン数をくらべる\n日本語が増えやすい理由（漢字がバイ...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "VRAM 6GB／12GBで動いたローカルLLMの実測値まとめ（llama.cpp・Ollama）",
+      "url": "https://zenn.dev/localai_lab/articles/b7edb5aec36142",
+      "site": "Zenn(LLM)",
+      "published": "2026-10-30T11:33:01Z",
+      "description": "VRAM 6GB の GPU（6,144 MiB）と GeForce RTX 4070 12GB でこれまで測ってきたローカルLLMの値を、1か所に集めました。数字はすべて元記事の実測値です。この記事のために測り直したものはありません。速度の測り方や VRAM の数え方は記事ごとに違うので、表の各セルに測り方を添えています。\n結論は次のとおりです。\n\n\n6GB：MiniCPM5-2B（Q4_K_M...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "翻訳AIの訳を逆翻訳し、数字・否定・訳抜けをPythonで照らす",
+      "url": "https://zenn.dev/rakuwork_kobo/articles/back-translation-diff-numbers-negation-python",
+      "site": "Zenn(LLM)",
+      "published": "2026-10-30T11:18:16Z",
+      "description": "外国人スタッフ向けの手順書を、生成AIや翻訳サービスでベトナム語やネパール語に訳した。けれども、訳文が合っているかを自分では読めない。よく使われるのが逆翻訳です。元の文は見せずに訳文だけを日本語に戻してもらい、戻った文を元の文と並べます。\nただ、20行の手順書でも、元の文と訳し戻した文を目で見比べると、数字1つ・「〜しないで」1つの違いを見落とします。そこで、比べる作業のうち数えられる所（数字・否...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "vLLM・SGLang・TensorRT-LLMをクラウドGPUで動かしたら、それぞれの個性が見えてきた",
+      "url": "https://zenn.dev/yuya0408/articles/llm-serving-engines-on-l4",
+      "site": "Zenn(LLM)",
+      "published": "2026-10-30T10:56:02Z",
+      "description": "この記事で分かること\nQwen3-8Bを、L4 24GB 1台の上でvLLM・SGLang・TensorRT-LLMに載せ、同じリクエストを送った。揃えたつもりの条件が、5か所で揃っていなかった。どれもベンチマークの数字に入り込む。\n速さの順位は載せない（速さは自分の条件で測ってほしい）。すべてこの版・L4（sm_89）での話である。エンジンを選びたいだけなら「エンジン別の要点」と最後の「私の使い...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "誤りを棄却し、正しい結果を1件だけ返すための検索の改善",
+      "url": "https://zenn.dev/genax_corp/articles/20261005-qa-retrieval-improvement",
+      "site": "Zenn(LLM)",
+      "published": "2026-10-30T09:18:12Z",
+      "description": "こんにちは。\nGen-AX Researchエンジニアの箕輪です。\n今回は、弊社プロダクト「X-Ghost（クロスゴースト）」のFAQ検索機能の性能改善に関する検証結果について紹介します。\n\n 本記事のサマリー\n本記事の要点は以下の 3 つです。\n\n音声対話におけるFAQ対応では、正しい1件のみを音声モデルに与えるのがベスト\n検索対象の絞り込みや検索結果に対する事後的なフィルタリングを行うことで、...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "製造業で Jev はどう使える？4チームで挑んだ1週間のユースケース探索",
+      "url": "https://zenn.dev/emuni/articles/manufacturing-jev-hackathon",
+      "site": "Zenn(LLM)",
+      "published": "2026-10-30T09:10:04Z",
+      "description": "こんにちは、株式会社エムニの宮木です。\n2026年10月14日にキックオフし、10月21日の昼に成果を発表する社内ハッカソンを開きました。参加したのは4チーム（各3人）で、発表時間は質疑を含めて各チーム10分です。\nテーマは「製造業 × Jev のユースケース探索」。1週間という短期集中だったため、完成した製品を納品することではなく、「製造現場の課題に対して、判断モデルをどう組み込めるか」を検証す...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "【ゆるっとAIセキュリティ #1】AIから大事な情報を守るには？",
+      "url": "https://zenn.dev/daphne/articles/ai-chat-is-safe",
+      "site": "Zenn(LLM)",
+      "published": "2026-10-30T07:00:06Z",
+      "description": "最近、情報漏洩のニュースがめっちゃ多い。AIが絡んでいるんじゃないか、という噂もある。\nhttps://news.web.nhk/newsweb/na/nd-20261006de55037\nそれで、AIって怖い、と思っている人もいるんじゃないかな。でもAIって、怖い使い方をしなければ怖くない。\nこの連載では、怖くない使い方を一つずつ解説していく。第1回は、一番の基本から。\n\n 個人情報さえ入れなけ...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
     {
       "title": "0。Anthropicが上場に向けてS-1を提出した日、自分の実行モデル3スロットに他社の名前は1つも無かった",
       "url": "https://zenn.dev/hideki_tamae/articles/anthropic-ipo-s1-single-vendor-model-slots",
