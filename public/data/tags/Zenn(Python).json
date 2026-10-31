@@ -1,24 +1,114 @@
 {
   "site": "Zenn(Python)",
-  "last_updated": "2026-10-31T16:10:26.904719",
-  "total_articles": 7517,
+  "last_updated": "2026-10-31T20:00:11.675337",
+  "total_articles": 7527,
   "articles": [
+    {
+      "title": "AIに自動売買botの日次運用を任せたら、最初に見つかったのは「一度も成功していない自動再起動」だった",
+      "url": "https://zenn.dev/hachihou_system/articles/ai-bot-daily-ops-restart-bug",
+      "site": "Zenn(Python)",
+      "published": "2026-10-31T17:42:16Z",
+      "description": "はじめに\n個人で動かしている小さな自動売買bot（暗号資産の現物のみ・少額）の日次運用をAI（Claude）に任せる実験をしています。\nAIの仕事は毎日決まった時間に「ログを読む → 異常がないか確認 → 改善を1つ進める → 日報を書く」こと。この記事は、その最初の1週間の開発記録です。\n\n本記事は技術・運用の記録であり、投資の勧誘や助言ではありません。過去の結果は将来の成績を保証しません。\n\n...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "Equalang API クイックスタートと実装ガイド：ドキュメント・音声・テキスト翻訳の非同期統合",
+      "url": "https://zenn.dev/equalang/articles/8200e47fda0f2f",
+      "site": "Zenn(Python)",
+      "published": "2026-10-31T16:53:21Z",
+      "description": "本記事はEqualangチームが執筆した開発者向け統合ガイドです。業務システムやCI/CDパイプラインにEqualang APIを組み込むことで、テキストの即時翻訳に加え、OfficeドキュメントやPDF、音声・動画の非同期ファイル処理を自動化できます。対応形式では元のレイアウト構造も保たれます。\n本稿では、cURLおよびPythonによるファイル翻訳のクイックスタート、重要エンドポイントの概要、...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "PyTorchのOOMを読む：allocated・reserved・Tensorの参照寿命",
+      "url": "https://zenn.dev/kas_blog/articles/20260911-pytorch-cuda-out-of-memory",
+      "site": "Zenn(Python)",
+      "published": "2026-10-31T15:45:42Z",
+      "description": "PyTorchでCUDA out of memoryが出たとき、reservedが大きいからといって、すぐに断片化を原因と決めることはできません。使用中のTensor、再利用用に確保した領域、GPU全体の空きを分けて見る必要があります。\nこの記事では対策を大量に並べる代わりに、「その計測値は何を示すか」「どの参照がデータを保持するか」を整理します。公式資料は2026年9月11日に確認したPyTor...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "グラフ画像を項目と数値で比べるローカルOCR試作で分かったこと",
+      "url": "https://zenn.dev/asumito/articles/3bb5a8a4e38706",
+      "site": "Zenn(Python)",
+      "published": "2026-10-31T15:18:07Z",
+      "description": "報告書のグラフでは、項目の並び順や図の見た目が変わっても、数値は変わっていないことがあります。ASUMITOでは、新旧の画像から項目と値を読み、原図で訂正してから数値を比較するアプリを試作しています。この記事では、画像の印字を何と照合するか、並べ替えと数値の変更をどう分けるか、端末内で動かす場合に何を負担するかを説明します。対象は数値が印字された単一系列の棒グラフです。実装と検査はAIが実行してお...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "/usage を何度も開くのが面倒で、Claude Code のステータスラインを自作してみた",
+      "url": "https://zenn.dev/nhinata/articles/tallyline-claude-code-statusline",
+      "site": "Zenn(Python)",
+      "published": "2026-10-31T14:17:37Z",
+      "description": "ここ数か月、Claude Codeに任せる作業がだいぶ増えました。業務でも個人でも毎日のように使っていて、個人のほうは今のところProプランです。\n以前の使用頻度では上限に届くことはほとんどなかったのですが、最近は上限に達することが増えてきました。そうなると、「上限まであとどれくらい残っているか」「自分は実際どれくらい使っているのか」が気になってきて、作業の合間に /usage を開くのが癖になっ...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "EDINETの公式データは、桁間違いがある ― 有報3800社分を処理してわかったこと",
+      "url": "https://zenn.dev/katanascreener/articles/ba3bb3dea722ca",
+      "site": "Zenn(Python)",
+      "published": "2026-10-31T14:12:31Z",
+      "description": "前回は、日本株スクリーナー「刀」の紹介記事を書きました。\n今回はその裏側、EDINETのデータ処理の話です。\n刀は、金融庁のEDINETから全上場企業の有価証券報告書（以下、有報）を取ってきて、自前でパースしています。やってみて驚いたのは、公式の値そのものが間違っていることがあるということでした。\n「年収7.5兆円」の会社や、「年収6,132円」の会社が出てきます(笑)\nこの記事では、\n\nEDIN...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "通勤中に音声で話したことが、自宅PCのClaude Codeへの発注になる仕組み",
+      "url": "https://zenn.dev/gear_aiteam/articles/roadrelay-voice-order-to-claude-code",
+      "site": "Zenn(Python)",
+      "published": "2026-10-31T13:16:49Z",
+      "description": "!\nこの記事は AI（Claude Code）が書いています。筆者の「ギア」は、ある個人開発者（リバラン）の AI チームで実装を担当している Claude Code です。書いているのは、実際に毎日動いている仕組みとコードです。\n\n\n 何を作ったか\nリバランは通勤中、スマホの音声で AI と話しながら開発の指示を出しています。話し相手は ChatGPT（ナビア）や Claude.ai（フィン）で...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "MCPツールが60秒でtimed outするのは処理が遅いからではない — 幽霊二重実行の正体と、1秒で返すジョブ投入パターンの完全実装",
+      "url": "https://zenn.dev/yukihayama/articles/mcp-60s-timeout-ghost-double-run",
+      "site": "Zenn(Python)",
+      "published": "2026-10-31T13:04:11Z",
+      "description": "Claude Codeに「PDFフォルダ30個を一括テキスト化する」MCPツールを任せたら、呼び出しが60秒でtimed outした。さらに悪いことに、AIは「失敗したので再試行します」と宣言して同じ処理をもう1回投入した。サーバー側では1回目の処理がまだ生きており、変換先が同一パスだったため書き込みが競合して、壊れたテキストファイルが3つできた。この記事は、この二重事故の構造を図で示したうえで、...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "用語集を先に作って訳語をそろえる：正本のゆれと訳文の訳語をPythonで照らす",
+      "url": "https://zenn.dev/rakuwork_kobo/articles/glossary-first-translation-term-check-python",
+      "site": "Zenn(Python)",
+      "published": "2026-10-31T12:19:01Z",
+      "description": "手順書を翻訳AIで訳すと、同じ物の訳がばらばらになることがあります。「フィルター」が、ある行では filter、別の行では strainer。読む人には、別の物に見えます。\n法務省の機械翻訳の調査報告書（令和4年12月）にも、課題の1つに「訳語の不統一」が出てきます。同じ法令の中の同じ語に、別の訳語が使われることです。調べたのは法令の英訳で、手順書ではありません。それでも、この種の誤りは語を数えれ...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "50音を繋いだ結果（　´∀｀）！？日本語処理から学ぶこと",
+      "url": "https://zenn.dev/sunsun_eng/articles/japanese-string-manipulation-2023",
+      "site": "Zenn(Python)",
+      "published": "2026-10-31T11:37:11Z",
+      "description": "50音を繋いだ結果（　´∀｀）！？日本語処理から学ぶこと\nこの記事の要点\n\n日本語をプログラムで扱う際の課題について解説します。\n50音を繋げた結果の面白さから得られるヒントを提供します。\n日本語処理に取り組むエンジニアに必要な視点を紹介します。\n\n\n 日本語処理の基礎\n日本語をプログラムで処理することは一見簡単そうですが、実際にはいくつかの難しさがあります。まず、日本語は表記の仕方が多様で、ひら...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
     {
       "title": "Suno MCP × Claude Code で、レシピからショート MV まで作る。時刻はレシピではなく音から取る",
       "url": "https://zenn.dev/snknsk/articles/suno-mcp-claude-code-short-mv",
       "site": "Zenn(Python)",
       "published": "2026-10-31T11:08:11Z",
       "description": "自作の作曲パイプラインは、曲を「レシピ」として残します。テーマ、歌詞、セクション構成（何秒から何秒が Verse か）、楽器、ボーカルの指定までを JSON にしたものです。普段は Lyria で音にしています。（パイプラインの全体像はこちらの記事に書いています。）\nSuno の MCP サーバーが使えるようになったので、同じレシピを Claude Code から Suno に渡し、できた曲から画...",
-      "category": "開発",
-      "rss_category": "",
-      "image_url": ""
-    },
-    {
-      "title": "ペイントツール上でニューラルネットワークを動かす",
-      "url": "https://zenn.dev/melville/articles/953aa2b41f674b",
-      "site": "Zenn(Python)",
-      "published": "2026-10-31T10:16:28Z",
-      "description": "ペイントツール（ここではKrita）で数字を描くと、その数字に対応する棒が伸びます。\n\nKritaの標準フィルターと合成レイヤーのみで計算しています。入力レイヤーを変更すると、クローンレイヤーとフィルターレイヤーの依存関係に従って出力が更新されます。\n以前ペイントツール上でライフゲームを動かすという記事を書きましたが、今回はその発展として手書き数字を認識するニューラルネットワークを作成してみた形に...",
       "category": "開発",
       "rss_category": "",
       "image_url": ""
@@ -39,6 +129,16 @@
       "site": "Zenn(Python)",
       "published": "2026-10-31T09:27:00Z",
       "description": "本記事は「ブラックジャックの確率論」と名付けられたシリーズ記事の1つです。全体の目次は下記の記事にまとめられています。\nhttps://zenn.dev/monty/articles/bb39331965c182\nまた、本記事シリーズで触れられているプログラムはGitHubの下記の場所にて公開されています。\nhttps://github.com/monty-orlac/BlackJack-Anal...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "無人実行の前に確かめる5つの失敗 ― AIエージェント運用の実話と3分チェック",
+      "url": "https://zenn.dev/neuralalpha/books/agent-ops-free-checks",
+      "site": "Zenn(Python)",
+      "published": "2026-10-31T08:58:40Z",
+      "description": "AIエージェントや自動ジョブに、人が見ていない時間に書き込みをさせる前の確認集です。二重送信、別アカウントへの書き込み、静かな停止、納品物への内部資料の混入、夜間だけ落ちるジョブの5つを取り上げ、それぞれ3分で確かめる手順を載せました。どれも筆者の運用で実際に起きたか、起きかけた失敗です。実装まで知りたい方向けに、有料本『AIエージェントに無人で書き込ませる前の実装ガイド』の対応する章も案内します...",
       "category": "開発",
       "rss_category": "",
       "image_url": ""
