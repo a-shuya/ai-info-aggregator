@@ -1,8 +1,128 @@
 {
   "site": "Zenn(Python)",
-  "last_updated": "2026-10-31T00:02:31.414152",
-  "total_articles": 7495,
+  "last_updated": "2026-10-31T05:32:00.542660",
+  "total_articles": 7507,
   "articles": [
+    {
+      "title": "OpenAI互換APIの接続をcurlで切り分ける：Base URL・モデルID・ストリーミング",
+      "url": "https://zenn.dev/taodock/articles/cb532eed204483",
+      "site": "Zenn(Python)",
+      "published": "2026-10-31T03:46:00Z",
+      "description": "OpenAI互換APIをチャットクライアントや自作アプリに接続するとき、APIキーを入力しただけでは動かないことがあります。接続先のパスが重複している、モデルIDが違う、通常のJSONとストリーミングを同じ方法で読んでいる、といった原因を分けて確認する必要があります。\nこの記事では、最終的なURL → 認証 → モデルID → 通常のチャット → ストリーミングの順に、curlとPython標準ラ...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "待たずにタイムアウトをテストする――sanstunから考えるsans-IO設計",
+      "url": "https://zenn.dev/meidot/articles/fabf4094dbe46d",
+      "site": "Zenn(Python)",
+      "published": "2026-10-31T03:38:46Z",
+      "description": "タイムアウトのテストを書くために、テストでも10秒待つ。そんなコードから抜け出す鍵は、時計を速めることではなく、時計をロジックの外へ出すことです。\n\n 今日の話題はRust。でも持ち帰れるのは設計\n2026年10月31日12:25 JSTの確認時点で、Hacker Newsのsanstun紹介投稿は72ポイント・14コメントでした。これは一時点の観測で、利用者数や品質の証明ではありません。\nFir...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "今日の技術トレンド",
+      "url": "https://zenn.dev/bambampurin/articles/2026-09-21-tech-daily",
+      "site": "Zenn(Python)",
+      "published": "2026-10-31T02:15:24Z",
+      "description": "!\n2026年9月21日の技術トレンドでは、AI領域において単なる「ツール利用」から自主的に動作する「エージェンティックAI」や「Managed Agents」への移行が加速しています。一方、Claude Opus 5を用いた攻撃シナリオやNext.jsの重大な脆弱性修正に見られるよう、AIとWeb基盤双方でのセキュリティ対応が急務となっています。Pythonエコシステムでは、OpenAIによるA...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "BlenderのManifoldブーリアンで窓を1万個開けたら、形は正しいのに窓がふさがって見えた",
+      "url": "https://zenn.dev/eight_blog/articles/dae9b40042337c",
+      "site": "Zenn(Python)",
+      "published": "2026-10-31T02:09:31Z",
+      "description": "Blender 4.5 で入った Mesh Boolean の Manifold ソルバは、速くて壊れにくいのが売りです。ところが、マンションの外壁のように窓を数千個開けると、一部の窓が向こうまで抜けずに、ふさがって見えました。\n調べてみると、Manifold が返した形そのものは正しく、ふさがって見えるのは、巨大な1枚の面を三角形に分ける段階での失敗でした。壁の面を先に細かく分けておくと、窓1万...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "API では「公開」なのに、誰にも見えていなかった YouTube の固定コメント",
+      "url": "https://zenn.dev/mameresearcher/articles/api-says-public-but-comment-invisible",
+      "site": "Zenn(Python)",
+      "published": "2026-10-31T02:07:52Z",
+      "description": "個人プロジェクトで、YouTube のショート動画を毎日自動で公開している。動画ごとに、自分のチャンネルから案内のコメントを1件付けて固定する。説明欄は「もっと見る」を開かないと読まれないが、固定コメントはコメント欄の一番上に出る。押してもらえる場所として、いちばん効くと考えていた。\nコメントが付いているかは、YouTube Data API で確かめていた。commentThreads.list...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "AIエージェントのAPIキーは大抵、権限が広すぎる：10分でできる棚卸し",
+      "url": "https://zenn.dev/growl/articles/df24573bb99943",
+      "site": "Zenn(Python)",
+      "published": "2026-10-31T01:29:54Z",
+      "description": "事故は「モデルの暴走」ではなく、広すぎる鍵から起きる\nAIエージェントの事故というと、モデルが勝手なことをした話に聞こえます。でも実務で起きるパターンはもっと地味です。エージェントが持っているAPIキーが、作ったときの初期設定のまま管理者権限になっていて、プロンプトインジェクションやループの暴走が起きた瞬間に、小さなミスがアカウント全体の事故に変わる。それだけです。\n怖いのは、鍵の権限は普段は見え...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "国会の会議録を正解にして、自作の書き起こしとYouTubeの自動字幕の誤りを数えたら、取り違えが約3分の1だった",
+      "url": "https://zenn.dev/kirinukiauto/articles/91d8bdb1d65273",
+      "site": "Zenn(Python)",
+      "published": "2026-10-31T01:00:22Z",
+      "description": "政治の切り抜きチャンネルの制作を、Claude Code に丸ごと任せています。字幕も、元の動画の声を AI が書き起こして作っています。\n最近、誤字が目に見えて減ってきました。では、本当にどれくらい正確なのか。YouTube が自動で付ける字幕より良いのか。感覚ではなく、数字で確かめることにしました。\n\n 正解に何を使うか\n書き起こしの誤りを数えるには、正解の全文が要ります。自分で聞き直して作る...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "Copilotの組織向けサーバー認証：短命トークンの更新と再実行を分ける",
+      "url": "https://zenn.dev/aipha_euro/articles/3de06431af1ed9",
+      "site": "Zenn(Python)",
+      "published": "2026-10-31T00:07:41Z",
+      "description": "個人のログインに依存するAIジョブは、担当者の異動や認証切れが運用上の問題になります。GitHubは2026年10月27日、組織にインストールしたGitHub Appの認証でCopilotを呼べる機能をパブリックプレビューとして発表しました。サービス自身のIDで動かせる点が変化です。ただし、短命トークンを更新すれば長時間ジョブをそのまま継続できる、と考えると事故につながります。\nこの記事では、認証...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "SQLiteのバックアップはファイルコピーでは壊れる：WALモードで実測した安全な方法",
+      "url": "https://zenn.dev/warrobotsxyz/articles/sqlite-wal-safe-backup",
+      "site": "Zenn(Python)",
+      "published": "2026-10-31T00:00:24Z",
+      "description": "はじめに\nSQLiteは「1ファイルのDB」として手軽だが、WALモードで運用していると、素朴なファイルコピーは安全なバックアップにならない。バックアップ目的で .db ファイルをコピーしたのに、コピー先を開くとデータが古い（最悪、テーブルすら無い）——という事故が起きる。実際にどれくらい壊れるのか、Pythonの sqlite3 で検証し、安全な方法を比較した。\n\n 環境\n\nWindows 11...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "お金・安全・電気・水を一枚で見る「牧場モニター」の設計",
+      "url": "https://zenn.dev/kensaurus/articles/0994e37e2dc59f",
+      "site": "Zenn(Python)",
+      "published": "2026-10-30T23:11:51Z",
+      "description": "群馬県嬬恋村、標高1,444mの「Tsumagoi Work&amp;Camp」は、受付に人のいない山の24時間ラウンジです（お客さまが寝るのはご自分の車かテント）。私がひとりで回していて、妻が手伝ってくれます。\nこの場所は、全部自分の貯金（約2,500万円）で始めました。浄化槽も草刈りもゴミの処分も初めてで、都会では誰かがやってくれていたことを一つずつ覚えているところです。ここでつくる仕組みは、...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "VPS導入前に自分の作業が常時稼働向きか見極める手順",
+      "url": "https://zenn.dev/hakumaigenki/articles/vps-automation-indie-2341",
+      "site": "Zenn(Python)",
+      "published": "2026-10-30T22:11:53Z",
+      "description": "VPSとは何か、何のためにこのサイトで使っているか\nVPSとは、自分の自動化処理のうち「電源を落とせない部分」だけを置いておく専用の箱です。\nVPS(Virtual Private Server)は、1台の物理サーバーを仮想的に分割して、1区画を丸ごと自分専用に借りられるサービスです。レンタルサーバーと違って root権限があるため、好きなソフトを入れ、好きな時間に動かし続けられます。\nこのサイト...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "ブラウザで動く無料の回路シミュレータ「Wirely」を作りました",
+      "url": "https://zenn.dev/richiewillmott/articles/32013c85682a75",
+      "site": "Zenn(Python)",
+      "published": "2026-10-30T21:19:01Z",
+      "description": "Wirely は、回路を描いて再生ボタンを押すだけで動かせる、無料・オープンソースの回路シミュレータです。ブラウザだけで動き、インストールもアカウント登録も要りません。バージョン 1.5.4 から 日本語表示 に対応しました。\nhttps://wirely-app.github.io/?lang=ja\n\n 作った理由\n仕事でも家でも、回路を組む前に試したいと思っていました。ドラッグ&amp;ドロッ...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
     {
       "title": "ブラックジャックの確率論(4) ディーラーの分布の実装と考察",
       "url": "https://zenn.dev/monty/articles/e85f50d39eab87",
