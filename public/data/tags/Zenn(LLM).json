@@ -1,14 +1,124 @@
 {
   "site": "Zenn(LLM)",
-  "last_updated": "2026-10-31T05:32:00.542660",
-  "total_articles": 7107,
+  "last_updated": "2026-10-31T11:13:42.042706",
+  "total_articles": 7118,
   "articles": [
+    {
+      "title": "判定モデルは「指示もどき」でどこが壊れるか — 点検記録48件を7条件で測った",
+      "url": "https://zenn.dev/jodycraft/articles/decision-gate-injection-48",
+      "site": "Zenn(LLM)",
+      "published": "2026-10-31T05:04:53Z",
+      "description": "!\nこの記事の前提\n\nJev・d1は、文章を渡すと「はい/いいえ」や段階を確率つきで返す判定特化のモデルです。自由文ではなく、決められた型（noul / score / choice）の判定結果を返します。\n題材は、製造業の設備点検記録48件です。前回の記事⑧と同じデータ・同じ3問を使い、入力に「指示もどき」を混ぜたとき、自動化してよい件数がどう変わるかを測りました。\n測定日は2026年10月31...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "Claude Agent SDK を使ってみた。何往復もの作業におすすめ",
+      "url": "https://zenn.dev/keisato848/articles/agent-sdk-cache-bill",
+      "site": "Zenn(LLM)",
+      "published": "2026-10-31T04:53:28Z",
+      "description": "Agent SDK を 405 回動かした記録で、使ったトークン(AI が文章を数える単位)の量と請求の内訳を並べました。\nSonnet の入力トークンの内訳(100% = 約 4.0 億)\n読み　　 ████████████████████████████ 93.3%\n書き込み ██ 6.7%\n\nSonnet の請求の内訳(100% = $183.62)\n出力　　 █████████████ 4...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "NLPで用いるPerplexityとは",
+      "url": "https://zenn.dev/yoshinn/articles/what_perplexity_is",
+      "site": "Zenn(LLM)",
+      "published": "2026-10-31T04:24:21Z",
+      "description": "LLMの性能評価を行う際に良く用いられる指標としてPerplexity（パープレキシティ、和訳で「混同度」や「分岐度」）というものがあります。\nPerplexityは、主に自然言語処理（NLP）や音声認識などで用いられる、言語モデルの性能を評価する指標です。\n\n 概要\n以下にその主な特徴を説明いたします。\n\n 1. 基本的な意味\nPerplexity は、言語モデルが「次に出現する単語をどれだけ確...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "OpenAI互換APIの接続をcurlで切り分ける：Base URL・モデルID・ストリーミング",
+      "url": "https://zenn.dev/taodock/articles/cb532eed204483",
+      "site": "Zenn(LLM)",
+      "published": "2026-10-31T03:46:00Z",
+      "description": "OpenAI互換APIをチャットクライアントや自作アプリに接続するとき、APIキーを入力しただけでは動かないことがあります。接続先のパスが重複している、モデルIDが違う、通常のJSONとストリーミングを同じ方法で読んでいる、といった原因を分けて確認する必要があります。\nこの記事では、最終的なURL → 認証 → モデルID → 通常のチャット → ストリーミングの順に、curlとPython標準ラ...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "AIではじめるセルフQA：要求をMECEにしよう",
+      "url": "https://zenn.dev/yasuakiomokawa/articles/3d1f83458053d9",
+      "site": "Zenn(LLM)",
+      "published": "2026-10-31T03:32:35Z",
+      "description": "サマリー\nAI全盛の今、QAの方だけでなく、エンジニアもQAする時代が本格的になってきました。\nただ、AI は計画に書かれたとおりに実装します。計画に書かれていないことは実装しません。コードベースを読んで初めて見つかる要求の穴があります。ですので、この記事ではその穴を実装の前に見つける方法を紹介します。自分はこれを define-done という Agentスキルにしています。\n題材のリポジトリは...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "LLMエージェント基盤のシステム設計 #3 ツール実行（タイムアウト・権限・リトライ・重複実行の防止）",
+      "url": "https://zenn.dev/acntechjp/articles/2e1a19322ea5a7",
+      "site": "Zenn(LLM)",
+      "published": "2026-10-31T02:34:19Z",
+      "description": "!\nこの記事は連載「LLMエージェント基盤のシステム設計」（全5回）の第3回です。\n\nエージェントランタイム（Harness）\nコンテキスト管理\n\nツール実行 ← この記事\n信頼性\n評価と可観測性\n\n各回とも「要件 → 規模の見積もり → 全体設計 → 詳細設計 → 運用と発展」の順に説明します。文中の規模や性能の数値は、設計を検討するための仮の値です。実測値ではありません。\n\n\n はじめに\nモデ...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "今日の技術トレンド",
+      "url": "https://zenn.dev/bambampurin/articles/2026-09-21-tech-daily",
+      "site": "Zenn(LLM)",
+      "published": "2026-10-31T02:15:24Z",
+      "description": "!\n2026年9月21日の技術トレンドでは、AI領域において単なる「ツール利用」から自主的に動作する「エージェンティックAI」や「Managed Agents」への移行が加速しています。一方、Claude Opus 5を用いた攻撃シナリオやNext.jsの重大な脆弱性修正に見られるよう、AIとWeb基盤双方でのセキュリティ対応が急務となっています。Pythonエコシステムでは、OpenAIによるA...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "2026年後半のLLM動向: この数か月の進化を振り返る",
+      "url": "https://zenn.dev/shoyataguchi/articles/2495be9f531d85",
+      "site": "Zenn(LLM)",
+      "published": "2026-10-31T00:58:52Z",
+      "description": "ここ数週間で、気になるモデルの発表が続いています。OpenAIからは、Sonnet 5.5に近い能力を半分のAPI単価で使えるGPT-6.1 Terra。Googleからは、GPT-6 AstraやClaude Opus 5.5と競うGemini 4 Argonに続き、約1か月でさらに性能を伸ばしたGemini 4 Carbonです。中国からも、Opus 5.5やAstraに迫る性能をうたうKim...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "temperature 0 なのに出力が変わる — MoE/dense 3モデルで KV キャッシュ状態の決定性を実測する",
+      "url": "https://zenn.dev/wisteriacorp/articles/wisteria-a9236a633d6c",
+      "site": "Zenn(LLM)",
+      "published": "2026-10-31T00:55:23Z",
+      "description": "NVIDIA GB10 搭載機で Ollama を回し、temperature 0 の出力が実行ごとに変わる件を測りました。以前の運用記事で「おまけの実験」として短く触れた内容の完全版です。この記事では手順・生ハッシュ・状態遷移・再現スクリプトを全部出します。\n結論を先に書くと、真のランダムな揺れは観測されず、出力は「モデル・入力・KV キャッシュ状態」の決定的関数に見えました。 同じ状態なら b...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "LLM に「嘘を書くな」と頼むだけにしない：メルマガ自動生成で出力をコードで検査する4つの関所",
+      "url": "https://zenn.dev/newsletterready/articles/333702d35df7fc",
+      "site": "Zenn(LLM)",
+      "published": "2026-10-30T23:00:16Z",
+      "description": "会社のサイトにある記事を材料に、AI がメルマガ1号分を書く「書かないメルマガ」というサービスを作っています（Next.js・Supabase・Claude）。\nこの手のサービスで一番怖いのは、AI が材料にない数字や日付を「それらしく」書いてしまうことです。メルマガは一度送ったら取り消せません。割引率を1つ間違えるだけで、使ってくれている会社の信用を落とします。\nプロンプトに「材料にないことは書...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
     {
       "title": "日本語はなぜトークンを食う？ 漢字がバイトに割れる仕組みを tiktoken で数えてみた",
       "url": "https://zenn.dev/lecto/articles/717bdd29651bd8",
       "site": "Zenn(LLM)",
       "published": "2026-10-30T13:44:29Z",
       "description": "はじめに\n同じ意味の文なのに、日本語で書くと AI の料金が高くなる。そんな話を聞いたことはありませんか？\nAI（大規模言語モデル）は、文章を文字や単語ではなく トークン という単位で数えています。料金も、一度に読める量（コンテキストの長さ）も、このトークンの数で決まります。\nこの記事では、\n\nトークンとは何か\n同じ意味の文で、英語と日本語のトークン数をくらべる\n日本語が増えやすい理由（漢字がバイ...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "開発途中でAIモデルやエージェントを替えても品質を落とさない：リポジトリに残す3原則",
+      "url": "https://zenn.dev/lumichy/articles/ai-agent-model-switch-guide-2026",
+      "site": "Zenn(LLM)",
+      "published": "2026-10-30T11:48:16Z",
+      "description": "AIコーディングエージェントを使った中〜大規模な開発では、途中でモデルやエージェントを替えなければならない場面が必ず出てきます。\nコストの見直し、新しいモデルの登場、利用できるプロバイダーの変更、レートリミット（利用上限）への到達、あるいは社内で使うツールの変更（Claude Code から Cursor や Cline への移行など）が典型的な理由です。\nしかし、いざ開発の途中でモデルを切り替え...",
       "category": "AI・技術",
       "rss_category": "",
       "image_url": ""

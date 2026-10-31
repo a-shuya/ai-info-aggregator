@@ -1,14 +1,144 @@
 {
   "site": "Zenn(Python)",
-  "last_updated": "2026-10-31T05:32:00.542660",
-  "total_articles": 7507,
+  "last_updated": "2026-10-31T11:13:42.042706",
+  "total_articles": 7519,
   "articles": [
     {
-      "title": "OpenAI互換APIの接続をcurlで切り分ける：Base URL・モデルID・ストリーミング",
-      "url": "https://zenn.dev/taodock/articles/cb532eed204483",
+      "title": "Suno MCP × Claude Code で、レシピからショート MV まで作る。時刻はレシピではなく音から取る",
+      "url": "https://zenn.dev/snknsk/articles/suno-mcp-claude-code-short-mv",
       "site": "Zenn(Python)",
-      "published": "2026-10-31T03:46:00Z",
-      "description": "OpenAI互換APIをチャットクライアントや自作アプリに接続するとき、APIキーを入力しただけでは動かないことがあります。接続先のパスが重複している、モデルIDが違う、通常のJSONとストリーミングを同じ方法で読んでいる、といった原因を分けて確認する必要があります。\nこの記事では、最終的なURL → 認証 → モデルID → 通常のチャット → ストリーミングの順に、curlとPython標準ラ...",
+      "published": "2026-10-31T11:08:11Z",
+      "description": "自作の作曲パイプラインは、曲を「レシピ」として残します。テーマ、歌詞、セクション構成（何秒から何秒が Verse か）、楽器、ボーカルの指定までを JSON にしたものです。普段は Lyria で音にしています。（パイプラインの全体像はこちらの記事に書いています。）\nSuno の MCP サーバーが使えるようになったので、同じレシピを Claude Code から Suno に渡し、できた曲から画...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "ペイントツール上でニューラルネットワークを動かす",
+      "url": "https://zenn.dev/melville/articles/953aa2b41f674b",
+      "site": "Zenn(Python)",
+      "published": "2026-10-31T10:16:28Z",
+      "description": "ペイントツール（ここではKrita）で数字を描くと、その数字に対応する棒が伸びます。\n\nKritaの標準フィルターと合成レイヤーのみで計算しています。入力レイヤーを変更すると、クローンレイヤーとフィルターレイヤーの依存関係に従って出力が更新されます。\n以前ペイントツール上でライフゲームを動かすという記事を書きましたが、今回はその発展として手書き数字を認識するニューラルネットワークを作成してみた形に...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "個人開発の数字を、Claude Codeの定期実行で3時間おきに集める",
+      "url": "https://zenn.dev/atsushi_apps/articles/auto-collect-app-sns-stats",
+      "site": "Zenn(Python)",
+      "published": "2026-10-31T10:00:05Z",
+      "description": "iPhoneアプリを一人で作っている Atsushi です。アプリの告知のために、X・Threads・Instagram・TikTok・YouTube・note の6つのSNSを運用しています。\n公開すると、数字が気になります。でも、SNSごと・アプリごとに画面を開いて回るのは大変です。そこで、数字を3時間おきに自動で集めて、1つのダッシュボードにまとめるようにしました。\nこの記事では、その仕組み...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "ブラックジャックの確率論(5) プレイヤーのstand / hitの定式化",
+      "url": "https://zenn.dev/monty/articles/5f3048690efc77",
+      "site": "Zenn(Python)",
+      "published": "2026-10-31T09:27:00Z",
+      "description": "本記事は「ブラックジャックの確率論」と名付けられたシリーズ記事の1つです。全体の目次は下記の記事にまとめられています。\nhttps://zenn.dev/monty/articles/bb39331965c182\nまた、本記事シリーズで触れられているプログラムはGitHubの下記の場所にて公開されています。\nhttps://github.com/monty-orlac/BlackJack-Anal...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "無人実行の前に確かめる5つの失敗 ― AIエージェント運用の実話と3分チェック",
+      "url": "https://zenn.dev/neuralalpha/books/agent-ops-free-checks",
+      "site": "Zenn(Python)",
+      "published": "2026-10-31T08:58:40Z",
+      "description": "AIエージェントや自動ジョブに、人が見ていない時間に書き込みをさせる前の確認集です。二重送信、別アカウントへの書き込み、静かな停止、納品物への内部資料の混入、夜間だけ落ちるジョブの5つを取り上げ、それぞれ3分で確かめる手順を載せました。どれも筆者の運用で実際に起きたか、起きかけた失敗です。実装まで知りたい方向けに、有料本『AIエージェントに無人で書き込ませる前の実装ガイド』の対応する章も案内します...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "Windows × Claude Code ── PowerShell 5.1 で黙って壊れる14か所と、守る・止める・確かめる仕組み",
+      "url": "https://zenn.dev/kamijo_aoto/books/windows-claude-code-traps",
+      "site": "Zenn(Python)",
+      "published": "2026-10-31T08:11:49Z",
+      "description": "Windows 11 と Windows PowerShell 5.1 で Claude Code を自動で回すと、エラーも警告も出ないのに結果だけが壊れる場所があります。作者の PC で全部再現した14か所の原因・確かめ方・直し方（0〜4章、無料）と、それを最初から踏まないための部品（書き込み先を絞る安全装置、夜に無人で回す仕組み、手元のファイルを点検する健康診断）の実装と設計（5章以降）をまと...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "高いGPUを回す前に、安いCPUランタイムで「1タスクだけ」スモークテストしよう",
+      "url": "https://zenn.dev/koheip/articles/cheap-runtime-smoke-test",
+      "site": "Zenn(Python)",
+      "published": "2026-10-31T07:29:32Z",
+      "description": "はじめに\nこんにちは、ZEN大学の通信課程で学んでいる2年生の松延です。AIエンジニアを目指して、ノートブックやクラウドのランタイムでLLMの出力やコードを評価する実験パイプラインを個人で回しています。\nGPUランタイムは便利ですが、時間あたりのコストが高く、使えるコンピュートユニットにも上限があります。私はこれまでに「GPUを確保して本番ジョブを流したら、最初の数分で落ちていた」「落ちたことに気...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "CTRが下がったのは記事のせいか、構成のせいか。全体の数字を2つに分けて読む方法",
+      "url": "https://zenn.dev/kimshoshi/articles/google-bing-ctr-gap",
+      "site": "Zenn(Python)",
+      "published": "2026-10-31T06:46:06Z",
+      "description": "Search Console を開いたら、先月より CTR（クリック率）が下がっていた。Google の CTR が Bing の半分しかない。そう見えたとき、すぐにタイトルや説明文を直したくなります。\nところが CTR は、全体で比べると、中身のどの部分でも勝っている側が「負けている」ように見えることがあります。統計ではシンプソンのパラドックスと呼ばれる現象です。成約率（CVR）や A/B テス...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "自動売買を始める前に決める3つのこと(範囲・上限・記録)",
+      "url": "https://zenn.dev/yoru_build/articles/c1211f930535ae",
+      "site": "Zenn(Python)",
+      "published": "2026-10-31T06:27:34Z",
+      "description": "自動売買を自分で作る場合、コードを書く前に、紙に書いておいてほしいことが3つあります。それは、自動化する範囲、失ってよい金額の上限と止める条件、何を記録に残すかです。先に、この連載を追うのに必要なものを並べます。\n\n 必要なもの\n次回以降は、次のものがあれば追えるように書きます。\n\nWindows のパソコン(常時つけておけるもの。プログラムは、電源が入っている間しか動かないためです)\nPytho...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "使い終わったメモリは、いつOSに戻る？",
+      "url": "https://zenn.dev/kamuidash_tech/articles/c81c2521a0870d",
+      "site": "Zenn(Python)",
+      "published": "2026-10-31T06:26:48Z",
+      "description": "Pythonで小さなデータを80,000個作り、そのうち98%以上の参照を捨てたところ、メモリ使用量がほとんど下がらないケースがありました。\n「参照を捨てる」は、変数やリストからデータへのつながりを切る操作です。一方、ガベージコレクション（GC）は、プログラムから使えなくなったデータを回収する仕組みです。ほかの変数やリストからまだ使えるデータは、GCを動かしても回収されません。\n残していた参照は、...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "CIに載っているテストが、落ちても緑だった",
+      "url": "https://zenn.dev/miyakona/articles/ci-tests-failure-propagation",
+      "site": "Zenn(Python)",
+      "published": "2026-10-31T06:22:27Z",
+      "description": "静的サイトを保守するリポジトリで、AIエージェントがテストを追加したら、GitHub Actionsのworkflowと、手元で実行するコマンドを載せた手順書の両方へ登録する決まりにしていました。登録漏れをレビューだけで見つけるのは難しいので、実ファイルと登録先を突き合わせるPythonの検査も置いていました。\nそれでも、テストを走らせる行を次のように変えると、登録の検査は成功していました。\n- ...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "DDoS攻撃とは｜31.4Tbpsの新記録とCloudflareが見た2026年の脅威地図",
+      "url": "https://zenn.dev/maru1228/articles/security-ddos-attack",
+      "site": "Zenn(Python)",
+      "published": "2026-10-31T04:43:10Z",
+      "description": "!\nこの記事は自サイト DDoS攻撃とは｜31.4Tbpsの新記録とCloudflareが見た2026年の脅威地図 の再掲（クロス投稿）です。図をインタラクティブに動かせる版は元記事でどうぞ。\n\n「たった35秒」——2025年12月、史上最大規模となる31.4TbpsのDDoS攻撃が観測されましたが、攻撃が続いたのはわずか35秒でした。人間の担当者がアラートに気づいた頃には、もう終わっている。それ...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "消費増税の「駆け込み」と「反動」をどう測り、どう確かめたか：イベントスタディの設計と偽の増税月",
+      "url": "https://zenn.dev/takayuki0127/articles/def7e55c9a1963",
+      "site": "Zenn(Python)",
+      "published": "2026-10-31T04:42:31Z",
+      "description": "2014年4月（5→8%）と2019年10月（8→10%）の消費増税の前後で、家計の支出がどれだけ前倒しされ（駆け込み）、その後どれだけ減ったか（反動）を、総務省「家計調査」の月次データで測りました。結論は「前月の跳ね上がりは両年とも大きく、反動は2014年のほうがずっと大きい。2019年に軽減税率で据え置かれた食料は、増税後に落ち込まなかった」です。\nこの記事では、なぜこの手法を選んだのか、どの...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "公的統計の月次パイプラインをどう設計し、どう確かめたか：「止まるべきときに止まるか」を試す",
+      "url": "https://zenn.dev/takayuki0127/articles/1dc98c245c026e",
+      "site": "Zenn(Python)",
+      "published": "2026-10-31T04:41:09Z",
+      "description": "物価・雇用・賃金の4つの公的統計を、毎月同じコードで「取得 → DuckDB → dbt → ダッシュボード」と流せるようにしました。結論は「全体が約32秒で流れ、テスト20本が合格。わざと壊したデータではテストが3本失敗し、指標の表は作られずに止まった」です。\nこの記事では、なぜその道具と構成を選んだのか、どんな試験で何を確かめ、途中で何が見つかったか、何が言えないかを書きます。実装の細部は G...",
       "category": "開発",
       "rss_category": "",
       "image_url": ""
@@ -19,16 +149,6 @@
       "site": "Zenn(Python)",
       "published": "2026-10-31T03:38:46Z",
       "description": "タイムアウトのテストを書くために、テストでも10秒待つ。そんなコードから抜け出す鍵は、時計を速めることではなく、時計をロジックの外へ出すことです。\n\n 今日の話題はRust。でも持ち帰れるのは設計\n2026年10月31日12:25 JSTの確認時点で、Hacker Newsのsanstun紹介投稿は72ポイント・14コメントでした。これは一時点の観測で、利用者数や品質の証明ではありません。\nFir...",
-      "category": "開発",
-      "rss_category": "",
-      "image_url": ""
-    },
-    {
-      "title": "今日の技術トレンド",
-      "url": "https://zenn.dev/bambampurin/articles/2026-09-21-tech-daily",
-      "site": "Zenn(Python)",
-      "published": "2026-10-31T02:15:24Z",
-      "description": "!\n2026年9月21日の技術トレンドでは、AI領域において単なる「ツール利用」から自主的に動作する「エージェンティックAI」や「Managed Agents」への移行が加速しています。一方、Claude Opus 5を用いた攻撃シナリオやNext.jsの重大な脆弱性修正に見られるよう、AIとWeb基盤双方でのセキュリティ対応が急務となっています。Pythonエコシステムでは、OpenAIによるA...",
       "category": "開発",
       "rss_category": "",
       "image_url": ""
