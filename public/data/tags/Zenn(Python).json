@@ -1,8 +1,58 @@
 {
   "site": "Zenn(Python)",
-  "last_updated": "2026-10-31T23:17:57.497138",
-  "total_articles": 7525,
+  "last_updated": "2026-11-01T02:20:58.262588",
+  "total_articles": 7531,
   "articles": [
+    {
+      "title": "ConoHa VPSに無料同梱されたTakumi Guardを試す——npm・PyPIの悪性パッケージを403で止めるプロキシ",
+      "url": "https://zenn.dev/sktt_panda/articles/takumi-guard-npm-pypi-supply-chain-proxy",
+      "site": "Zenn(Python)",
+      "published": "2026-11-01T00:30:20Z",
+      "description": "3行まとめ\n\nGMOインターネットが、ConoHa VPSのAIエージェント向けテンプレート7種（Claude Code・Codex CLIなど）に、GMO Flatt Securityの悪性パッケージ遮断機能「Takumi Guard」のスクリプトを無料で同梱し始めた。仕組みはレジストリの手前に置く透過プロキシで、ConoHaの外でもレジストリURLを変えるだけで匿名・無料で使える\n公式のテスト...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "OpenCode 2.2系へ上げる前に：import・TUI・CIの互換性を棚卸しする",
+      "url": "https://zenn.dev/aipha_euro/articles/276f9205e895c5",
+      "site": "Zenn(Python)",
+      "published": "2026-11-01T00:07:56Z",
+      "description": "OpenCodeを社内の開発環境に組み込んでいる場合、更新で確認したいのは新機能だけではありません。自作プラグインのimport先、画面部品の依存版、CIからの呼び出しが、それぞれ別の理由で見直し対象になります。\n公式リリースの表示では、v2.2.0が10月27日、v2.2.3とv2.2.4が10月30日に公開されています。この記事は11月1日時点でこれらの変更をまとめた更新前レビューです。v2....",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "Python機械学習の実務書5選",
+      "url": "https://zenn.dev/komatsu_ops/articles/20261101_book_ref",
+      "site": "Zenn(Python)",
+      "published": "2026-11-01T00:03:25Z",
+      "description": "はじめに\n数年前、自分は社内の需要予測プロジェクトに途中から放り込まれた。渡されたのは数十本のJupyterノートブック。前任者が去ったあとで、どのセルがどの前処理に対応しているのか誰も説明できない状態だった。\nとりあえず動かしてみると、精度評価のコードでテストデータの平均を使って標準化していた。いわゆるリークだ。モデルの検証スコアは良く、本番の予測は外れる。原因を突き止めるまでに三日かかった。\n...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "Grokと作った業務効率化例外処理RPGで例外処理がスッキリわかった話【コード付き】",
+      "url": "https://zenn.dev/zenn_aqua/articles/220b508d76ed52",
+      "site": "Zenn(Python)",
+      "published": "2026-10-31T23:10:52Z",
+      "description": "1.アクアが例外でスクリプトを止めまくった理由（リアル裏話）\n10月までで、クラス・継承・全体設計は動くようになった。\nでも空欄でEnter、存在しないタスク名、優先度に文字を入れると、スクリプトが途中で落ちた。\n「業務ツールなのに、入力を間違えただけで終わる…」\nそのたびに最初からやり直していた頃の話。\n\n 2.例外処理の基本をおさらい！初心者が一番間違えるポイント\n\ntry：失敗しそうな処理\n...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "「いつか使うかも」で溢れた部屋を片付けるために、行動経済学ベースの持ち物棚卸しアプリを個人開発した話",
+      "url": "https://zenn.dev/myhiroba/articles/600ed7b82a3941",
+      "site": "Zenn(Python)",
+      "published": "2026-10-31T22:31:36Z",
+      "description": "こんにちは、エンジニアのヤク太郎です。\n部屋を片付けようと思い立ったとき、一番の障壁になるのは「物理的な作業」よりも「捨てるかどうかの判断」ではないでしょうか。\n僕自身、クローゼットの奥から出てきた古いガジェットや衣類を前にして、「高かったしな」「いつか使うかもしれない」と言い訳をしてはそっと元の場所に戻す、ということを何年も繰り返していました。既存の持ち物管理アプリもいくつか試してみたのですが、...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
     {
       "title": "AIに自動売買botの日次運用を任せたら、最初に見つかったのは「一度も成功していない自動再起動」だった",
       "url": "https://zenn.dev/hachihou_system/articles/ai-bot-daily-ops-restart-bug",
@@ -59,6 +109,16 @@
       "site": "Zenn(Python)",
       "published": "2026-10-31T14:12:31Z",
       "description": "前回は、日本株スクリーナー「刀」の紹介記事を書きました。\n今回はその裏側、EDINETのデータ処理の話です。\n刀は、金融庁のEDINETから全上場企業の有価証券報告書（以下、有報）を取ってきて、自前でパースしています。やってみて驚いたのは、公式の値そのものが間違っていることがあるということでした。\n「年収7.5兆円」の会社や、「年収6,132円」の会社が出てきます(笑)\nこの記事では、\n\nEDIN...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "通勤中に音声で話したことが、自宅PCのClaude Codeへの発注になる仕組み",
+      "url": "https://zenn.dev/gear_aiteam/articles/roadrelay-voice-order-to-claude-code",
+      "site": "Zenn(Python)",
+      "published": "2026-10-31T13:16:49Z",
+      "description": "!\nこの記事は AI（Claude Code）が書いています。筆者の「ギア」は、ある個人開発者（リバラン）の AI チームで実装を担当している Claude Code です。書いているのは、実際に毎日動いている仕組みとコードです。\n\n\n 何を作ったか\nリバランは通勤中、スマホの音声で AI と話しながら開発の指示を出しています。話し相手は ChatGPT（ナビア）や Claude.ai（フィン）で...",
       "category": "開発",
       "rss_category": "",
       "image_url": ""
