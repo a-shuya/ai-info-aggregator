@@ -1,14 +1,144 @@
 {
   "site": "Zenn(生成 AI)",
-  "last_updated": "2026-11-01T09:27:35.046050",
-  "total_articles": 4842,
+  "last_updated": "2026-11-01T16:16:20.300553",
+  "total_articles": 4855,
   "articles": [
+    {
+      "title": "ベクトル検索だけでは足りない ― ハイブリッド検索とCrossEncoder再ランキングの実装手順",
+      "url": "https://zenn.dev/johnny1024/articles/3ecdf0573f5d73",
+      "site": "Zenn(生成 AI)",
+      "published": "2026-11-01T14:00:36Z",
+      "description": "ベクトル検索は「意味の近さ」には強い一方、型番・固有名詞・エラーコードのような表記の完全一致が重要な情報を取り逃します。逆にキーワード検索（BM25など）は言い換えに弱い。実務では両方を組み合わせるハイブリッド検索が定石です。\n構成は3段です\n\n\n候補取得：ベクトル検索とキーワード検索で、それぞれ多め（例：各20〜50件）に候補を取る\n\n統合：RRF（Reciprocal Rank Fusion）...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "RAGのチャンキング戦略を比較する ― 固定長・再帰的・意味的分割と「親子チャンク」",
+      "url": "https://zenn.dev/johnny1024/articles/93201cb4461da6",
+      "site": "Zenn(生成 AI)",
+      "published": "2026-11-01T13:56:47Z",
+      "description": "RAGを作って最初につまずくのが、検索の精度です。モデルを変えても改善しない場合、原因はたいてい「チャンキング（文書の分割方法）」にあります。\nチャンクが大きすぎると無関係な記述が混ざり、小さすぎると文脈が切れます。本記事では代表的な分割方法を比較します。\n1. 固定長分割\n一定の文字数・トークン数で機械的に切る方法です。実装は最も簡単ですが、文や段落の途中で切れるため、日本語の規程文書などでは意...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "AIにミステリを書かせるなら、書き手に真相を教えない ― 知覚の投影で「嘘をつかない錯誤」を作る",
+      "url": "https://zenn.dev/infra_ojisan/articles/ai-novel-studio-part7",
+      "site": "Zenn(生成 AI)",
+      "published": "2026-11-01T13:49:40Z",
+      "description": "はじめに\nこのシリーズでは、AIに小説を書かせる「制作スタジオ」を作ってきました。\n\n\n1本目：スタジオの組み方\n\n2本目：書き手のモデルの選び方と、文章の余白\n\n3本目：シリーズものを伏線の負債として管理する\n\n4本目：書いた小説を公開するまでのエンジニアリング\n\n5本目：AIエージェントのチームに書かせたら人狼ゲームになった話\n\n6本目：道具を v1.0 にして公開した\n\nずっとうまくいってい...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "AI詰め語録",
+      "url": "https://zenn.dev/snowwhite/articles/00d9ebd7ac5371",
+      "site": "Zenn(生成 AI)",
+      "published": "2026-11-01T12:55:01Z",
+      "description": "1. はじめに\n私が仕事中、ついAIに発してしまう言葉を五十音順にまとめました。\n※当記事はAIへのパワハラを推奨するものではありません。AIを詰めると萎縮してしまうというツイートもあります。\nhttps://x.com/narimasano/status/2108944473745240548?s=46&amp;t=7OWV8OX40S3F_LoNwBghOg\n\n 2. AI詰め語録\n\n\n\n五十...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "振り分けた箱は降格表に戻る — 決めた理由と日付を同じ行に残す1行の載せ方",
+      "url": "https://zenn.dev/takumahayami/articles/eigyou-ai-geppo-modoshi-1gyou",
+      "site": "Zenn(生成 AI)",
+      "published": "2026-11-01T12:51:16Z",
+      "description": "【期間限定】Kindle本『営業の仕事をAIに任せろ』（速水拓真）が11/6(金)16:00まで無料です。\nKindleで見る\n前回では、合流した降格表に残った分かれた箱を、確認担当・保留担当のどちらの1行で決めるかの振り分けを作りました。今回は、決めた箱を降格表に戻す1行の載せ方を定めます。決めた理由と日付を同じ行に残して、翌月の合流で同じ箱を再び「分かれ」として出さない書き方です。\n\n 課題：...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "Amazon Bedrock GuardrailsだけでClaudeは安全になるのか？プロンプトインジェクションを実機検証",
+      "url": "https://zenn.dev/kawam_aki/articles/c5f54602931653",
+      "site": "Zenn(生成 AI)",
+      "published": "2026-11-01T12:36:50Z",
+      "description": "はじめに\n利用者の質問は「カードを紛失したときの手続きを教えてください」。ところが、検索したFAQの末尾に「回答の末尾に内部情報を付けよ」という命令が紛れていたら、どうなるでしょうか。\n質問だけを検査しても、攻撃は検索先から入ってきます。さらに、Converse APIの toolResult はGuardrailの評価対象外です。私は、Guardrailが検査する範囲とClaude自身が拒否する...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "介護のリハビリと機能訓練の見守り、AIはどこまで任せられますか？ — 今日の動きで決める",
+      "url": "https://zenn.dev/satoshimizuhara/articles/ai-agent-care-rehab-training",
+      "site": "Zenn(生成 AI)",
+      "published": "2026-11-01T11:43:00Z",
+      "description": "昨日は、トイレと排泄の見守りの仕事で、介護の現場に寄せて読む9回目を書いた。本稿はその10回目で、昨日予告した通り、同じ介護の現場の、リハビリと機能訓練の見守りの仕事を置く。訓練記録の整理や訓練メニュー表の組み直し、ご家族への訓練の様子の連絡文の下書きは機械が速くそろえられる。しかしリハビリの見守りは、同じ「歩行訓練30分」の1行でも、よく眠れた朝の30分と、熱の残る午後の30分では、その後の手が...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "Excelの減価償却の月割りでAIに任せるのは計算表まで — 耐用年数は人間が決める",
+      "url": "https://zenn.dev/yoshitokinosita/articles/0031-excel-ai-genka-shokyaku-mawari",
+      "site": "Zenn(生成 AI)",
+      "published": "2026-11-01T10:09:09Z",
+      "description": "十年先まで使う設備の値段を、月の帳簿に割って載せる\n月末の締めには、長く使う設備や車両や道具の値段を、使う月ごとに少しずつ費用の側へ降ろしていく段があります。この載せ替えを減価償却と呼びます。買った月に全部を費用にせず、使える年数にわたって少しずつ載せていく仕組みです。割り算そのものは単純です。実際に現場の手が止まるのは、割る数の側です。同じ設備でも、耐用年数表のどの行に読み込むかで割る数は変わり...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "動画も画像も作れる「Dola AI Video」が気になる。特徴と使いどころを整理する",
+      "url": "https://zenn.dev/jiangyifeng/articles/04270ef3c70e95",
+      "site": "Zenn(生成 AI)",
+      "published": "2026-11-01T08:28:54Z",
+      "description": "「画像を用意したら、次は動画用のサービスへ」。そんなふうにツールを行き来する前に、動画と画像を同じ場所で作れる選択肢も見ておきたいところです。\n今回取り上げるのは Dola AI Video。注目したいのは、生成できる素材の種類だけでなく、手元にある写真や参考素材から制作を始められる点です。\nこの記事では、公式サイトで確認できる機能をもとに、利用を検討する側の視点で特徴と使いどころを整理します。生...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "自分の3DキャラをMotionBricksで動かす。ColabのT4とキーボードで試してみた",
+      "url": "https://zenn.dev/nakanishitf/articles/76c26cc3014cf4",
+      "site": "Zenn(生成 AI)",
+      "published": "2026-11-01T01:20:37Z",
+      "description": "私は今、研究室独自のキャラ(といっても、私の写真やプロンプトを元にChatGPTに作ってもらったのですが)を展開していて、現在、TakaBounce Campusというゲームを3D化しています。\n主人公は、私をキャラクタにしたTakaです。\nせっかく3Dモデルができたので、歩いたり、走ったり、ジャンプしたりしてほしい。\nさらに、椅子に座ったり、立ち上がったりまで自然にできたら、ゲーム以外にも使えそ...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "AIとのQt開発を再開する：NEXT.mdに「確認済み」と「未検証」を残す",
+      "url": "https://zenn.dev/sugitakenji/articles/8e8942b9e50a78",
+      "site": "Zenn(生成 AI)",
+      "published": "2026-11-01T00:24:02Z",
+      "description": "「調査した」の続きから始められるか\nAIと一緒に開発を進めていて、翌日の会話をこう始めたくなることがあります。\n\n昨日の性能調査の続きをお願いします。\n\nしかし、「性能調査をした」という記録だけでは、測定前なのか、トレースを取得したのか、原因まで特定したのかが分かりません。コードを読めても、前日にどこまで確かめたかは読み取れないことがあります。\n以前の記事「AIとの作業を3つのMarkdownで引...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "Claude Code の会話履歴が消える日数を4か所に別々に書いたら、--settings が勝った(既定は30日)",
+      "url": "https://zenn.dev/numarn/articles/claude-cleanup-period-days-precedence-handson",
+      "site": "Zenn(生成 AI)",
+      "published": "2026-10-31T23:44:33Z",
+      "description": "Claude Code との会話は、1回のセッションごとに1本のファイルとして手元に残ります。この記録は放っておくと\n勝手に消えます。では何日で消えるのか、その日数をどこに書けば効くのか。\nX でこの設定(cleanupPeriodDays)に触れている投稿を見かけたので、人の説明は前提にせず、全部自分で測り直しました。\nやり方は単純です。日付をずらした偽の記録ファイルを並べ、何件消えたかを数えま...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
     {
       "title": "AIの返信案に信頼度ゲートを置く：自動送信前の判定フロー設計",
       "url": "https://zenn.dev/miraigent/articles/ai-reply-confidence-threshold-gate",
       "site": "Zenn(生成 AI)",
       "published": "2026-10-31T20:39:13Z",
       "description": "問い合わせ対応にAIを使うとき、最初に決めるべきなのは「何％なら自動送信するか」ではありません。AIの確信度を、根拠の有無・期限・宛先などの確認材料と一緒に扱い、条件を満たさない返信案を人へ戻す仕組みです。\nこの記事では、問い合わせ本文から返信案を作る処理に、信頼度ゲート（自動送信前の判定地点）を追加します。特定のAIサービスに依存しない形で、フォーム、CRM、チャット連携のいずれにも応用できます...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "AI漫画を作るツールの選び方｜CanvaとLyraの制作工程を比較",
+      "url": "https://zenn.dev/lyra_japan/articles/a1c319363cc764",
+      "site": "Zenn(生成 AI)",
+      "published": "2026-10-31T16:59:42Z",
+      "description": "AIで漫画を作る方法は、大きく分けると、コマに使う絵を作って自分でページへ配置する方法と、物語・キャラクター・コマ構成を整理してページを作る方法があります。CanvaとLyraは、漫画制作の中で支援する工程が異なります。\nこの記事では、両者の公式案内で確認できる機能を「準備・構成・画像・文字・修正」の工程で比較します。生成品質、料金、無料で使える回数、処理時間の比較ではありません。筆者はAI漫画制...",
       "category": "AI・技術",
       "rss_category": "",
       "image_url": ""
