@@ -1,24 +1,44 @@
 {
   "site": "Zenn(LLM)",
-  "last_updated": "2026-11-01T20:37:03.991084",
-  "total_articles": 7140,
+  "last_updated": "2026-11-01T23:54:08.310182",
+  "total_articles": 7144,
   "articles": [
+    {
+      "title": "Tech Watch 2026-11-02: 実行境界と信頼の証明",
+      "url": "https://zenn.dev/laiken/articles/20261102-tech-watch",
+      "site": "Zenn(LLM)",
+      "published": "2026-11-01T21:40:10Z",
+      "description": "AIが書きました🤖\nこの記事は、AIが書いたものをAIがレビューしてから公開しています。\nL: 対話画面の中に小さなアプリを表示するとき、見た目にはただの便利な部品に見える。でも、その部品が親画面にメッセージを送れるなら、隔離の境界は受信側で決まるのではないか。私は、表示面を閉じ込めるだけでは親画面の権限を守れないと思う。実際にはどこで権限が変わったの？\n\n 今日の 2 件\n\n\nHow We To...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "LLMを使ったシステムの品質担保をQATで自動化してみた",
+      "url": "https://zenn.dev/koyasama/articles/llm-qat-model-migration",
+      "site": "Zenn(LLM)",
+      "published": "2026-11-01T20:30:11Z",
+      "description": "きっかけは、クライアントから品質の低下を指摘されたことでした。品質を継続して担保する仕組みが必要だと考えました。\n社内システムなどのデータ群から必要なデータを取得し、解析して、その結果をレポートする。現場で開発に携わっていたのは、そうしたチャット型AIエージェントです。\nこのシステムの出力を検証するQAT（Quality Assurance Test）は、現場の業務として私が構想・設計し、Clau...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "常駐型AIエージェントが連携ツールの一部障害でも「できることだけは止めない」設計",
+      "url": "https://zenn.dev/hach/articles/chat-agent-partial-tool-outage-degradation-design",
+      "site": "Zenn(LLM)",
+      "published": "2026-11-01T19:09:25Z",
+      "description": "Slack / Teams / Chatworkに常駐するAIエージェントは、裏側でカレンダー・CRM・チケット管理システムなど複数の外部ツールに同時接続しているのが普通です。問題は、これらが同時に落ちることはほとんどなく、いつも1つだけが不調になることです。カレンダーAPIだけがタイムアウトしている、CRMだけが認証切れを起こしている、という状態のときにエージェント全体を「障害中」として停止させ...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
     {
       "title": "ダウンロードもロードもできるのに0問しか解けない。Ollama公式タグの量子化崖を自分のデータ再集計で確かめた",
       "url": "https://zenn.dev/matsushima_a/articles/day-033-quantized-llm-cliff",
       "site": "Zenn(LLM)",
       "published": "2026-11-01T14:16:31Z",
       "description": "要約\n\narXiv:2609.05881「Broken on Arrival」という論文が、Ollama公式ライブラリの305タグをHumanEval+で機能検査し、7タグ(qwen2.5-coder:3b-instructのq2_K/q3_K_S/q3_K_M/q3_K_L、phi3.5:3.8b-mini-instruct-q2_K、llama3.2:1b-instructのq2_K/q3_K...",
-      "category": "AI・技術",
-      "rss_category": "",
-      "image_url": ""
-    },
-    {
-      "title": "拡散VLMの論文 LOWN を、LLaDA-V の実際の推論記録で遊べる3Dゲームにした",
-      "url": "https://zenn.dev/zguo/articles/c86799626b7ece",
-      "site": "Zenn(LLM)",
-      "published": "2026-11-01T13:22:35Z",
-      "description": "こんにちは、Ziyu です。\nKAIST の論文「Look Only When Needed」（LOWN）を、目を閉じて飛ぶ 3D ゲームにしました。ゲームの候補の語は、論文と同じ LLaDA-V を M4 Pro の MacBook で実際に動かして記録したものです。この記事では、LOWN の判定の中身と、LLaDA-V から記録を取ったやり方をまとめます。\n\n\n\n LOWN の要点\nLLaDA...",
       "category": "AI・技術",
       "rss_category": "",
       "image_url": ""
@@ -94,11 +114,31 @@
       "image_url": ""
     },
     {
+      "title": "研究課題の設定から査読までを行う自律研究エージェントの実験",
+      "url": "https://zenn.dev/kofujimura/articles/9b8bb8e1e8692f",
+      "site": "Zenn(LLM)",
+      "published": "2026-11-01T07:27:44Z",
+      "description": "はじめに\n研究活動をAIにサポートしてもらうことは、すでに当たり前の時代になりました。さらに、実験から論文執筆、査読までをAIが自律的に行う試みも、すでに報告されています。The AI Scientist[1] は、人間が指定した機械学習の研究分野の中で、アイデアの生成から実験、論文執筆までを行います。Miyai らによる Jr. AI Scientist[2] は、人間が与えたベースライン論文を...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
       "title": "LLMにサイト運営を任せる仕組み ― 更新の確認から公開まで",
       "url": "https://zenn.dev/llmonmac/articles/mac-mini-studio-inference",
       "site": "Zenn(LLM)",
       "published": "2026-11-01T06:11:03Z",
       "description": "サイトは、作って公開したら終わりではありません。載せた情報が古くなっていないか確かめ、必要なら文章を直し、公開し直して、ちゃんと表示されているかを見る。小さな更新でも、この繰り返しは意外と手間がかかります。\nこの作業をLLMに任せたいと思ったとき、最初は「ページを読んで、必要なら直して」と頼めばよさそうに見えます。\nでも、それだけでは自動運営になりません。誰が更新の必要に気づくのか。AIが書いた修...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "Jevを呼べるC# SDKは20本超 — 非公式JevSharpで48件を流した結果",
+      "url": "https://zenn.dev/jodycraft/articles/jev-dotnet-sdk-comparison-2026-10",
+      "site": "Zenn(LLM)",
+      "published": "2026-11-01T05:20:57Z",
+      "description": "!\nこの記事の前提\n\nTypeSafe公式のクライアントSDK（APIを呼ぶライブラリ）は、PythonとJavaScript/TypeScriptの2つだけです（公式ページ、2026年10月31日確認）。.NETは「HTTP APIを直接叩く」しかありません。\nその空白を、コミュニティが5週間余りで埋めました。NuGetで「jev」「systemone」「typesafe」を検索すると82件ヒッ...",
       "category": "AI・技術",
       "rss_category": "",
       "image_url": ""
