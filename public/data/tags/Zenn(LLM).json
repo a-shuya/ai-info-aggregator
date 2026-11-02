@@ -1,10 +1,90 @@
 {
   "site": "Zenn(LLM)",
-  "last_updated": "2026-11-02T13:39:17.701609",
-  "total_articles": 7155,
+  "last_updated": "2026-11-02T22:29:14.233726",
+  "total_articles": 7166,
   "articles": [
     {
-      "title": "社内AIエージェントを自社開発して学んだこと #2 — 権限は「データ層」で制御する",
+      "title": "プロンプトインジェクション対策を小さな社内ツールで：AIの出力を信じない作り（Python）",
+      "url": "https://zenn.dev/rakuwork_kobo/articles/prompt-injection-small-internal-tool-python",
+      "site": "Zenn(LLM)",
+      "published": "2026-11-02T13:07:42Z",
+      "description": "問い合わせメールをAIに要約させて、担当の受付箱に振り分ける。社内ツールとしては小さな部類です。それでもプロンプトインジェクションは他人事ではありません。メールの本文は、社外の誰でも書けるからです。\nそういうツール（架空）を題材に、AIがだまされた前提で被害を小さくする「AIの外側」を Python で書きます。AIは呼びません。AIの出力の代わりに、だまされたらこう返すかもしれない、という文字を...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "全部禁止にしたらAIが使えない──オンプレ・ZDR時代のエージェント権限設計",
+      "url": "https://zenn.dev/ogiri/articles/ai-security-ban-paradox",
+      "site": "Zenn(LLM)",
+      "published": "2026-11-02T10:00:01Z",
+      "description": "はじめに：調査できないエージェント\n「このライブラリ、最新版でAPI変わってる？」\nエージェントにそう聞いた瞬間、自分でブラウザを開いている。\n検索は禁止。webfetch も禁止。curl も禁止。理由はそれぞれある。情報漏洩が怖い。間接プロンプトインジェクションが怖い。持ち出し経路になる。どれも間違っていない。\nだが、その結果として残ったのは、社内文書を読んで要約するだけの、非常に高価な文章要...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "LLMアプリケーションの仕組みが「LLM」と「ハーネス」に２つに分けたら全体像が見えてきた。",
+      "url": "https://zenn.dev/pitodon/articles/10bfdcc93f8ecd",
+      "site": "Zenn(LLM)",
+      "published": "2026-11-02T09:31:46Z",
+      "description": "先に結論\n\nLLMアプリケーション（ChatGPT, Claude Code など）はLLMとハーネスでできている\nLLMとハーネスは異なるサーバ環境で起動されている\nハーネスはLLMを呼び出したり、そのレスポンス内容を実行するだけのプログラム。LLMは推論するだけの関数。\n\n\n 1. 身近なLLMアプリケーション\n最近は、LLMアプリケーションが身近になってきているかと思います。\nブラウザから利...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "OpenAI API で構造化出力（JSON mode / Structured Outputs）を使う",
+      "url": "https://zenn.dev/akinori901/articles/20261004-plan070",
+      "site": "Zenn(LLM)",
+      "published": "2026-11-02T08:05:21Z",
+      "description": "OpenAI API で構造化出力（JSON mode / Structured Outputs）を使う\n\n 概要\nLLM をアプリに組み込むとき、一番つらいのは「返ってくるテキストが毎回少しずつ違う」ことです。プロンプトで「JSON で返して」とお願いしても、前後に 申し訳ありませんが… が付いたり、````json` のコードフェンスで囲まれたり、たまにキー名が揺れたりします。そのたびに後処理...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "Vercel AI Gateway入門：1つのキーで複数モデルを使い、エラーに強いAI機能を作る",
+      "url": "https://zenn.dev/mugend_ai/articles/4319eb0877822f",
+      "site": "Zenn(LLM)",
+      "published": "2026-11-02T07:53:56Z",
+      "description": "はじめに\nはじめまして、オランダ出身・東京在住のプロダクトオーナー兼フルスタックエンジニア、ペレスです。今は総合型選抜対策プラットフォーム「アオマル」のプロダクトを担当しています。\nアオマルは、小論文などをAIが添削するサービスです。そのため、AIモデルの呼び出しが不安定になると、そのままユーザー体験に響きます。\n特に生徒さんがまだ少なかった初期は、GoogleやOpenAIなどのプロバイダー側で...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "AIで電子ペーパーのダッシュボードを作ってみたい",
+      "url": "https://zenn.dev/weiyi/articles/blog-1eeb36df8634b011",
+      "site": "Zenn(LLM)",
+      "published": "2026-11-02T06:28:08Z",
+      "description": "James Devonportが小さなものを作っていました。机に置いた電子ペーパーに、列車の発車情報を定期的に表示するものです。\nこういうのはいいですね。大きなプロジェクトではありませんが、ちゃんと役に立つ。情報をちらっと見るために、スマホのロックを解除したり、別のページを開いたりしなくて済みます。\n私ならまず、ブログ関連の情報を置くかもしれません。サイトが開くか、最後の記事はいつ公開したか、何か...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "ゼロから始めるAI動画制作①：最初のフレームを準備する",
+      "url": "https://zenn.dev/weiyi/articles/blog-0e2794e1634c68df",
+      "site": "Zenn(LLM)",
+      "published": "2026-11-02T06:28:07Z",
+      "description": "生成ページを開いて、入力欄の前で止まってしまう。「映画っぽく」と書きたいけれど、何を映せばいいのかわからない。\nいったん入力欄から離れましょう。最初に決めるのは、画面に何があり、それがどう動くかです。\nこのシリーズでは「開店前のカフェ」を題材に、十数秒の動画を作ります。今日は一つのカットだけを準備します。\n\n シンプルな写真を撮る\n窓辺にコーヒーカップを置き、スマートフォンで撮影します。背景を整理...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "AI エージェント 生成エージェント ~ STORM Act #3",
+      "url": "https://zenn.dev/sionicai_jp/articles/a6d8fb07c9d376",
+      "site": "Zenn(LLM)",
+      "published": "2026-11-02T04:26:21Z",
+      "description": "本記事の目的\n別の記事で、AIエージェントをAIを使って開発する STORM Act の概要と使用方法の導入を説明いたしました。\nhttps://zenn.dev/sionicai_jp/articles/75ee59ff651d35\n今回は、より実践的な例を説明いたします。\n\n 今回作成する AIエージェント\n\n 👤 誰が使う想定か\n経営会議の前に、各部門から資料を集めて集計している経営企画・営...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "社内AIエージェントを自社開発して学んだこと #2 — 権限は「データ層」で制御する | 副社長・共同創業者 グエン・ディン・バー",
       "url": "https://zenn.dev/sypartners/articles/fb0c304fd5dd63",
       "site": "Zenn(LLM)",
       "published": "2026-11-02T04:15:17Z",
@@ -29,6 +109,36 @@
       "site": "Zenn(LLM)",
       "published": "2026-11-02T02:29:12Z",
       "description": "English version: https://github.com/otsukiLabo-NUCOE/creative-ai-hypothesis-generation/blob/main/docs/tutorial_en.md\n!\nご利用にあたって\n\nこの記事で紹介するコードは、研究成果の再現と活用のために公開しているものです。個別のサポート（インストールや実行時のトラブル、環境ごとの不具合...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "LLM API の負荷テスト：誤解を招く結果を避けるための実践ガイド",
+      "url": "https://zenn.dev/modelflare_dev/articles/974adc39061d9c",
+      "site": "Zenn(LLM)",
+      "published": "2026-11-02T02:07:11Z",
+      "description": "この記事は Modelflare ブログ の英語記事を翻訳・再構成したものです。\n本番運用のためのガイド：誤解を招かない LLM API の負荷テスト。決定的に再現できる成果物、失敗の境界、ロールアウト時のチェック、出典を明示した制約事項をまとめています。\n\n まず判断基準を決める\n誤解を招かない LLM API の負荷テストは、単発のコード変更ではなく、本番環境における明示的な契約です。トラフィ...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "同じリポジトリでAIが毎回同じ罠を踏むのを防ぐ！「毎回コールドスタート探索」vs「5項目のMEMORY.md継承」実機検証",
+      "url": "https://zenn.dev/tappers/articles/ai-labo-e20-episodic-gotchas-memory",
+      "site": "Zenn(LLM)",
+      "published": "2026-11-02T01:44:41Z",
+      "description": "!\n本記事は、SNS（X / Threads）や海外エンジニアコミュニティで提唱されている「AIコーディングエージェントの実践設計パターン」を、完全オフラインの隔離サンドボックスVM上で 同一モデル・同一初期課題（非公開テスト20ケース）を用いて定量A/Bテストした実証シリーズ（AI Labo 検証シリーズ E20） です。\n👉 全実験の比較ランキング＆黄金パターン総集編はこちら\n\n\n\n実験ID:...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "専門知識ゼロ・クラウドAIとのチャットのみでローカルAI構築 4巻 —— 日本語での会話成立, 前処理モデルSQGGの導入, RAG設計",
+      "url": "https://zenn.dev/bpf/books/2b8f1816f40eb9",
+      "site": "Zenn(LLM)",
+      "published": "2026-11-02T01:27:09Z",
+      "description": "このシリーズは, 私共BpFが プログラミング知識ゼロの状態から クラウドAIとのチャットのみで ローカルAI環境を構築して行く過程をリアルタイムで記録したノンフィクションです.\n一般的な How to ものにはない リアルな試行錯誤の過程を追っていただけます.\n\n4巻では, 日本語のローカルLLM との会話の成立, 前処理モデルSQGGの導入（名付け・21問の試験・回答モデルとのつなぎ）, RA...",
       "category": "AI・技術",
       "rss_category": "",
       "image_url": ""

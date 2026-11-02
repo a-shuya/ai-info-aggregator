@@ -1,8 +1,158 @@
 {
   "site": "Zenn(Python)",
-  "last_updated": "2026-11-02T13:39:17.701609",
-  "total_articles": 7558,
+  "last_updated": "2026-11-02T22:29:14.233726",
+  "total_articles": 7573,
   "articles": [
+    {
+      "title": "KarpathyのHackerTubeとJEPA論文に学ぶ「ノイズ除去と表現収束」の技術トレンド",
+      "url": "https://zenn.dev/ament3/articles/ai-digest-2026-11-02-0150",
+      "site": "Zenn(Python)",
+      "published": "2026-11-02T20:25:20Z",
+      "description": "情報過多の現代において、「膨大なデータからいかに質の高いシグナルを抽出するか」は、人間にとってもAIモデルにとっても共通の最重要課題です。元Tesla/OpenAIのAndrej Karpathy氏が公開した「HackerTube」および派生プロジェクトの「HackerBooks」は、Hacker News (HN) コミュニティのコンテキストを活用した高度なノイズフィルタリング手法として注目を集...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "uvの--lockedと--frozenを検証する：CIの同期成功は何を保証するか",
+      "url": "https://zenn.dev/kas_blog/articles/20260911-uv-github-actions",
+      "site": "Zenn(Python)",
+      "published": "2026-11-02T20:23:41Z",
+      "description": "uv sync --frozenが成功しても、pyproject.tomlへ追加した依存が入っているとは限りません。\n小さなプロジェクトでlockfileの更新漏れを作ったところ、--lockedはエラーで止まり、--frozenは成功しました。ただし後者では、新しく追加したidnaをimportできる状態になっていませんでした。\nこの記事では、この差を再現し、CI（変更のたびにテストなどを実行す...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "CPU使用量は低いのに応答が遅い。Gunicornの送信待ちを調べる",
+      "url": "https://zenn.dev/kamuidash_tech/articles/d41dae8734b45d",
+      "site": "Zenn(Python)",
+      "published": "2026-11-02T14:54:51Z",
+      "description": "この記事の主な対象は、Gunicornの同期ワーカーを2個使い、それぞれが1件ずつ応答を書き込む構成です。 フレームワークを使わずに書いた小さなPythonアプリで、受信の遅い要求があるとき、別の要求への応答がどう変わるかを測りました。\n同期ワーカーは、担当する応答の書き込みが終わるまで次の要求を扱わないプログラムです。「ワーカー」は、このような要求の処理を担当するプログラムを指します。受信側がゆ...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "未払いを一行足したら、正しい集計がテストで落ちた",
+      "url": "https://zenn.dev/mayumi_kondou/articles/0a2752c328c4c1",
+      "site": "Zenn(Python)",
+      "published": "2026-11-02T14:23:05Z",
+      "description": "月ごとの売上レポートに、「支払い済みの合計額」と「全取引に占める支払い済みの件数割合」を載せるとします。CSVから、指定した月の二つの値を計算するPython関数を作ります。\n動作を確かめるため、まず10月の支払い済み売上1200を一件だけ渡します。結果は合計1200、支払い済みの割合100%でした。\nそこへ、同じ10月の未払い800を一件足します。合計額は1200のまま、割合は50%になりました...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "VOICEVOXの読み間違いをAmiVoiceで探したら、見つかったのは別の問題だった",
+      "url": "https://zenn.dev/nanotoylab/articles/22059bc51b749c",
+      "site": "Zenn(Python)",
+      "published": "2026-11-02T13:40:47Z",
+      "description": "短い動画の読み上げにVOICEVOXを使っています。読み間違いは聞いて確かめるしかなく、本数が増えると手間です。\nそこで、読み上げた音声をAmiVoice APIで文字に戻し、台本と比べて読み間違いを自動で探すツールを作りました。\n結果を先に書きます。\n\n投稿予定の動画3本（12セリフ）で要確認になったのは2件で、どちらも読み間違いではなかった\n読み間違いを混ぜた実験では、正しい読みを人が書けば5...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "コピペ卒業、複数Excelを自動集計する本",
+      "url": "https://zenn.dev/kuroikotech/books/python-excel-automation-vol2",
+      "site": "Zenn(Python)",
+      "published": "2026-11-02T12:39:27Z",
+      "description": "毎月何十個も送られてくるExcelファイルを手で開いて集計している人向けに、複数シート・ヘッダー位置のズレ・結合セルといったExcel特有の汚さに対応しながら自動集計する実践ガイド。「コピペ卒業、CSV・Excel集計を自動化する本」の続編で、CSVではなくExcelファイルそのものが届く場合を扱う。",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "ブラックジャックの確率論(7) ダブルダウン・スプリットの定式化",
+      "url": "https://zenn.dev/monty/articles/9697c12dc5642d",
+      "site": "Zenn(Python)",
+      "published": "2026-11-02T12:35:13Z",
+      "description": "本記事は「ブラックジャックの確率論」と名付けられたシリーズ記事の1つです。全体の目次は下記の記事にまとめられています。\nhttps://zenn.dev/monty/articles/bb39331965c182\nまた、本記事シリーズで触れられているプログラムはGitHubの下記の場所にて公開されています。\nhttps://github.com/monty-orlac/BlackJack-Anal...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "1,000枚のキャラ素材を自動生成して配布サイトにした話",
+      "url": "https://zenn.dev/siru/articles/c15fef44b3eb5e",
+      "site": "Zenn(Python)",
+      "published": "2026-11-02T12:11:37Z",
+      "description": "二次元キャラ用の「髪型・目・衣装・ポーズ」の画像を 1,097枚 生成して、Danbooruタグつきの配布サイトにしました。公開版はこれです。\nhttps://charadb-2fi.pages.dev/\n作ったもの:\n\nタグ表(Python の辞書)→ items.json\n\nStable Diffusion WebUI(A1111)の API で、seed 固定・固定キャラ・白背景で全部生成\n...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "夜間バッチが2秒で終わる — 「ファイルがある」は「中身が読める」ではない",
+      "url": "https://zenn.dev/shinsei99/articles/file-exists-but-body-does-not",
+      "site": "Zenn(Python)",
+      "published": "2026-11-02T11:11:00Z",
+      "description": "社内の共有書類はクラウド同期フォルダに置いてあります。そこを毎晩走査して、本文を全文検索の索引に入れる処理を動かしています。\nこの処理が、ある晩は 2秒で終わり、別の晩は 上限の120分を使い切って取込0件 になりました。\n症状は正反対ですが、原因は同じでした。ファイルは一覧に出るのに、本体が手元に降りていなかった。\n\n 前提：同期フォルダでは「在る」と「読める」が別\n容量を節約するため、同期アプ...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "セル結合したExcelをデジタル庁のHarunobuで採点してみた",
+      "url": "https://zenn.dev/nakanishitf/articles/eeecbb1222124b",
+      "site": "Zenn(Python)",
+      "published": "2026-11-02T10:51:16Z",
+      "description": "デジタル庁が、行政データの機械可読性に関するルールと、チェックツールのサンプル実装を公開しています。\nセル結合を使った表を見て、「これはExcel職人には厳しいのでは」と半分冗談で思い、Google Colabで試してみました。\nhttps://github.com/digital-go-jp/machine_readability_rule\n今回使うのは、PythonからExcelやCSVを採点...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "WAFで偽装AI UAを弾いても解析からは消えない — 403も集計され、スキャンは本物と同じ名前に移る",
+      "url": "https://zenn.dev/aulvem/articles/1d7b86a128b24d",
+      "site": "Zenn(Python)",
+      "published": "2026-11-02T09:34:05Z",
+      "description": "AI クローラーを騙った認証情報スキャン（/.env や /wp-config.php を叩くやつ）を、Cloudflare の WAF で遮断しました。入口で止まれば解析の数字も綺麗になる、と思っていました。\n1か月後の数字はそうなりませんでした。遮断していた Perplexity-User は8日間で595リクエスト計上されたまま、内訳は403のみ。さらにスキャンは、遮断していない Amazo...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "トークンを節約しながら、動画作成者向けライセンス管理GUIアプリを作った",
+      "url": "https://zenn.dev/beive60/articles/772c94effa5d64",
+      "site": "Zenn(Python)",
+      "published": "2026-11-02T09:02:24Z",
+      "description": "背景と作ったもの\n動画投稿や配信活動をしていると、BGMやエフェクトなどの「素材のライセンス管理」や「概要欄へのクレジット記載」が非常に煩雑になります。映像学区さんの動画（リンク）でも言及されている通り、ファイル管理は多くのクリエイターの悩みの種です。たぶんクレジット表記も悩んでいるはず。\n私自身、これまではPowerShellスクリプトでファイルを走査し、JSONで素材情報を管理する自作ツールを...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "【LLMOps】FDEの開発を支えるトレーシング基盤の開発",
+      "url": "https://zenn.dev/aishift/articles/e761cff4f079cd",
+      "site": "Zenn(Python)",
+      "published": "2026-11-02T09:00:08Z",
+      "description": "はじめに\nこんにちは、AI Shift AIチームの林崎 (@u_hyszk) です。\nAIエージェントを導入した後に「そろそろ評価をして改善に繋げよう」となった段階で、評価に使うための実行履歴を集める基盤が整っていなかった...という経験はないでしょうか？実行履歴を集めようにも、どのようにすれば良いのかが分からず、優先順位が下がってしまった...という経験もないでしょうか？\n本記事では、AI W...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "ペーパートレード日誌 2026年11月",
+      "url": "https://zenn.dev/denny/articles/paper-trading-log-2026-11",
+      "site": "Zenn(Python)",
+      "published": "2026-11-02T07:22:08Z",
+      "description": "これは何か\n楽天証券のマーケットスピードII RSSから実データを読み、発注は一切せずに売買判断と約定だけをシミュレートする常駐エージェントを作っている。その日々の記録である。\n自分用のメモを兼ねているので、結論も教訓も無い日がある。読み物として整えるより、その日に起きたことをそのまま残すことを優先する。\n\n\n一円も動かしていない。 建玉も損益も、すべてシミュレーション上のものである\n資金2,00...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "【Python×金融工学】増し玉の逆指値滑り負けを0%に封殺！時間差2毛作・5段階動的ケリー複利エンジン",
+      "url": "https://zenn.dev/prompter_note/articles/lumina-compound-v11-apex-dual-crop-kelly",
+      "site": "Zenn(Python)",
+      "published": "2026-11-02T05:55:37Z",
+      "description": "はじめに\n個人開発している自律型AIヘッジファンド『Lumina AI』では、これまで以下の3つの独立したクオンツ運用チャンバー（運用室）を設計・構築してきました。\n\n\n第1号室（Lumina-Capital）：日米株ファンダメンタルズ ＆ サプライチェーン因果グラフによる中長期スイング運用（IBKR連携）\n\n第2号室（Lumina-Prop）：Moomoo OpenD 60段階フル板（Level...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
     {
       "title": "eol=lfを書いても、WindowsのPythonで書き換えたGASはCRLFのままclasp pushされる",
       "url": "https://zenn.dev/kimura0314/articles/windows-python-crlf-clasp-push",
