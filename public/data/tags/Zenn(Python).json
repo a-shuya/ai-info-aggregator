@@ -1,8 +1,128 @@
 {
   "site": "Zenn(Python)",
-  "last_updated": "2026-11-01T23:54:08.310182",
-  "total_articles": 7546,
+  "last_updated": "2026-11-02T05:11:11.200911",
+  "total_articles": 7558,
   "articles": [
+    {
+      "title": "eol=lfを書いても、WindowsのPythonで書き換えたGASはCRLFのままclasp pushされる",
+      "url": "https://zenn.dev/kimura0314/articles/windows-python-crlf-clasp-push",
+      "site": "Zenn(Python)",
+      "published": "2026-11-02T02:23:51Z",
+      "description": "Windows の Python で GAS のソースを open(p, 'w') で書き換えると、改行が CRLF になります。.gitattributes に eol=lf を書いてあっても、直るのは Git の中に入る分だけです。作業フォルダのファイルは CRLF のまま残ります。そして clasp push は作業フォルダのファイルをそのまま送るので、Apps Script 側にも CRL...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "GASのMCPサーバーに新しいPython SDKがつながらない。1.30.0から別オリジンへの302を追わなくなった",
+      "url": "https://zenn.dev/kimura0314/articles/gas-mcp-python-sdk-130-redirect",
+      "site": "Zenn(Python)",
+      "published": "2026-11-02T02:19:38Z",
+      "description": "GASのWebアプリで立てたMCPサーバーに、公式のPython SDK（mcp パッケージ）の新しいバージョンからはつながらなくなっています。境目は 1.30.0 で、1.29.0 までは通ります。\nこんにちは、kimuraです。\n以前「GASだけでMCPサーバーを立てる」という記事を書きました。2026/08/01 に Gemini Spark から接続できた話です。ところが 2026/11/...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "note の統計に出てこない記事を、公開APIで毎日1行だけ記録する — 40行の Python と、同日は後勝ちの規則",
+      "url": "https://zenn.dev/zeroyen_dev/articles/note-product-pulse",
+      "site": "Zenn(Python)",
+      "published": "2026-11-02T01:10:14Z",
+      "description": "note（ブログサービス）で、2026年10月24日に有料記事を1本公開しました。公開から6日間、note のアクセス状況の一覧にその記事が出てきませんでした。 10月5日と10月20日に出した無料記事2本も同じです。理由は分かっていません（公開中で、ログアウトしても開けます）。\n閲覧数が取れないと、何をしても効いたかどうかが分かりません。そこで、ログインなしで取れる値（スキ数・コメント数・フォロ...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "AIにパスワードを渡さずに、noteとZennへ毎日自動で投稿している：人が1回ログインして状態だけ保存する",
+      "url": "https://zenn.dev/kirinukiauto/articles/ad0afc0c3547bb",
+      "site": "Zenn(Python)",
+      "published": "2026-11-02T01:00:17Z",
+      "description": "政治の切り抜きチャンネルの制作を Claude Code に丸ごと任せていて、その記録を note と Zenn に毎日出しています。投稿も Playwright で自動です。\n先日、AI エージェントにパスワードを渡さずにログインさせる、という製品の紹介を見かけました。読みながら、うちはどうしているかを確かめたので、その形を書きます。\n\n AI はパスワードを一度も見ていない\nうちのやり方は単純...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "Gemini Computer UseのGAを確認：操作案・実行・結果照合を分ける",
+      "url": "https://zenn.dev/humanos_lab/articles/644686c48ecb98",
+      "site": "Zenn(Python)",
+      "published": "2026-11-02T00:47:31Z",
+      "description": "画面の入力や確認をAIへ任せたい。でも「押したはず」と「反映された」は別です。Googleは2026年10月30日、Gemini APIのComputer UseをInteractions APIとGenerateContent APIで正式提供（GA）にしました。確認日：11月2日（日本時間）。\n今回変わったのは、開発者向けの道具の提供段階です。Geminiアプリが誰のPCでも無条件に操作できる...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "【Python】区間和がKになる個数を数える｜累積和と辞書の更新順",
+      "url": "https://zenn.dev/student_blog/articles/subarray-sum-k-prefix-count-python",
+      "site": "Zenn(Python)",
+      "published": "2026-11-01T23:08:06Z",
+      "description": "区間和がKになる個数を数えたいのに、負数が入ると区間の伸ばし方が分からなくなる。そんなときは、区間を動かす代わりに、過去の累積和の出現回数を辞書に覚えます。\nこの記事は、累積和で区間の合計を求められる人が、そこから「条件に合う区間を全部数える」へ進むための解説です。持ち帰るのは、現在の累積和からKを引いた値を過去の辞書で照会し、そのあと現在値を登録するという順番です。\n\n 1. 負数を含む4要素か...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "同じ変更を4回測ったら、却下→採用→却下→判定不能と答えが毎回変わった",
+      "url": "https://zenn.dev/codecraft/articles/same-change-measured-four-ways",
+      "site": "Zenn(Python)",
+      "published": "2026-11-01T23:07:23Z",
+      "description": "暗号資産の自動売買Botを作っています。口座2万円ほどの少額で動かしながら、検証と本番の動きが一致しているかを毎週点検しています。\n今回は、ある小さな変更を入れるかどうかを決めるために同じ問いを4回測り、4回とも違う答えが出た話です。どの回も、その時点では「ちゃんと測った」と思っていました。間違っていたのは変更ではなく、毎回の測り方でした。\n\n\n 1. 問い: 追加で入金したら、順張りの枠を買い増...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "serverToolUseでAIが裏で何を呼んだかを把握する — 取引先に説明できるAI利用ログの作り方",
+      "url": "https://zenn.dev/joinclass/articles/servertooluses-ai-ai-20261031220032-17602",
+      "site": "Zenn(Python)",
+      "published": "2026-11-01T23:00:09Z",
+      "description": "なぜこれを作ったか\n当社（合同会社ジョインクラス）は、Claude Codeを claude -p でヘッドレス実行するジョブを毎日いくつも回しています。以前、営業メールを確認なしで自動送信して、敬語のおかしいメールが取引先に届いたことがありました。それ以来、対外アクションはすべて draft → 承認 → 実行 の順に通しています。\nただ、承認の段階で見えるのは出力だけです。「このドラフトを書く...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "簡易掲示板アプリでFlaskのdebug=Trueの危険性を再現して修正する",
+      "url": "https://zenn.dev/yukakawa/articles/466b5144731c00",
+      "site": "Zenn(Python)",
+      "published": "2026-11-01T23:00:06Z",
+      "description": "はじめに\nセキュリティについて、なるべく手を動かして勉強をしたい！と思い、生成AIに相談したら、学習用アプリを作ってくれました！この記事では生成AIのことを親しみと敬意を込めて、「トレント先生」と呼んでいます。\n今回はFlaskのdebug=True を扱います。\n&lt;学習の流れ&gt;\n\n\ndebug=Trueの便利さを知る\nわざとエラーを起こし、デバッグ画面を確認する\nなぜこれが危険なのか...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "DjangoでECサイトに「セット商品」機能を追加した話2：ビジネスロジック",
+      "url": "https://zenn.dev/linmj/articles/09e120c9c5e0b1",
+      "site": "Zenn(Python)",
+      "published": "2026-11-01T22:30:05Z",
+      "description": "前回はモデルの設計を紹介しました。次の段階（管理画面向けのAPI実装）へ進む前に、まずはビジネスロジック（業務ルール）をしっかりと確定させる必要があります。今回は、そのビジネスロジックの全貌についてご紹介します。\n本記事ではソースコードは含みませんが、複雑なECの業務ロジックを整理することは、堅牢なコードを書くための重要なステップです。非エンジニアのプロダクトマネージャー（PM）や、ECの開発に初...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "ClaudeとPythonでCSVデータを自動整形！launchd常駐で業務効率化",
+      "url": "https://zenn.dev/ikuokuotiak/articles/claude-python-csv-auto-transform-launchd",
+      "site": "Zenn(Python)",
+      "published": "2026-11-01T22:01:38Z",
+      "description": "Claude CodeとPythonでCSVデータを自動整形！launchd常駐で業務効率化\n\n 課題提起：手作業でのCSVデータ加工はもうやめませんか？\n日々発生するCSVデータの整形・加工は、時間がかかりヒューマンエラーの温床です。特にデータ形式が不規則だったり、加工ルールが複雑だったりする場合、手動での対応は非効率。私は13体のAIエージェント運用の中で、この自動化が不可欠だと感じていました...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "ChatGPTアカウント乗っ取り事例に学ぶOAuth認証の罠とOSSフォークのセキュリティリスク",
+      "url": "https://zenn.dev/ament3/articles/ai-digest-2026-10-31-2241",
+      "site": "Zenn(Python)",
+      "published": "2026-11-01T16:51:30Z",
+      "description": "Webアプリケーション開発において、認証・認可の設計不備やオープンソース（OSS）依存のリスクは、プロダクション障害や情報漏洩の最大の要因です。直近で海外テックコミュニティにて「OpenAIアカウント乗っ取り（Account Takeover）の脆弱性報告」と「Signalのフォークアプリ『Molly』の更新停止と脆弱性放置」が同時に話題となりました。規模の大小を問わず、認証基盤の実装ミスやサード...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
     {
       "title": "PythonとAIでYouTubeの音声をMIDIに自動変換する方法【Google Colab・Basic Pitch】",
       "url": "https://zenn.dev/fibujrsl/articles/35547351d65d0e",
