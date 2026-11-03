@@ -1,7 +1,7 @@
 {
   "site": "Zenn(Python)",
-  "last_updated": "2026-11-03T18:36:40.925876",
-  "total_articles": 7592,
+  "last_updated": "2026-11-03T23:40:26.268098",
+  "total_articles": 7596,
   "articles": [
     {
       "title": "XLSXのメタデータ削除をPythonで検証する：属性値とZIP部品の回帰チェック",
@@ -49,6 +49,16 @@
       "site": "Zenn(Python)",
       "published": "2026-11-03T13:27:06Z",
       "description": "iPhoneアプリを一人で作っている Atsushi です。App Store Connect の作業の多くを、Claude Code にスクリプトで回してもらっています。\n\nアップロードしたビルドの処理が終わったかを確かめる\n新しいレビューを毎朝確かめる\n日ごと・国ごとのダウンロード数を集める\n\nこれらは、App Store Connect API で取れます。この記事では、外部のライブラリ（P...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "日本語のコミットメッセージをClaude Codeに書かせる：既存の履歴から規約を読み取らせ、形式はフックで検査する",
+      "url": "https://zenn.dev/aishigoto/articles/claude-code-japanese-commit-message",
+      "site": "Zenn(Python)",
+      "published": "2026-11-03T13:27:00Z",
+      "description": "※ この記事は Claude Code（AI）を使って執筆し、掲載しているコードと出力例はすべて実際に実行して確認しています。\nClaude Codeにコミットメッセージを頼むと、チームの書き方と違う形式で返ってくることがあります。\nこの記事では、既存のコミット履歴と設定ファイルから規約を読み取らせる指示と、その結果を機械的に検査するcommit-msgフックを紹介します。小さなリポジトリで実際に...",
       "category": "開発",
       "rss_category": "",
       "image_url": ""
@@ -104,6 +114,16 @@
       "image_url": ""
     },
     {
+      "title": "スマホ動画1本から領収書・名刺をCSVに ― Gemini APIで「推測させない・残さない」読み取りアプリ",
+      "url": "https://zenn.dev/shimodata/articles/gemini-video-receipt-csv",
+      "site": "Zenn(Python)",
+      "published": "2026-11-03T07:09:57Z",
+      "description": "作ったもの\nスマホで撮った動画（最長3分）をアップロードすると、映っている領収書・名刺を読み取って表とCSVにする Web アプリを作りました。身内数人で試すためのプロトタイプです。\n1枚ずつ写真を撮るのではなく、書類を順番に机に置いて動画で撮るだけで済むのがポイントです。読み取る書類は、アップロード画面で3つのモードから選びます。\n\n\n\nモード\n用途\n主な項目\n\n\n\n\n経費精算\n受け取った領収書...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
       "title": "【Python×Docker】金・銀時系列の相転移を攻略！5年1254日連続黒字の2段階ATRレジーム切替AI",
       "url": "https://zenn.dev/prompter_note/articles/lumina-gold-v61-dual-atr-regime-engine",
       "site": "Zenn(Python)",
@@ -119,6 +139,26 @@
       "site": "Zenn(Python)",
       "published": "2026-11-03T05:52:22Z",
       "description": "!\nこの記事は自サイト HMACでAPIリクエストを署名・検証する｜改ざんとなりすましを防ぐ の再掲（クロス投稿）です。図をインタラクティブに動かせる版は元記事でどうぞ。\n\nStripeやgithubのwebhook、社内API——「このリクエストは本物か、途中で書き換えられていないか」を確かめるのに広く使われるのが HMAC署名です。この記事ではPythonの標準ライブラリだけでHMAC署名を実...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "ゲームの録画からGeminiで装備一覧CSVを作る ― LLMの誤読を「仕様で検証して直す」設計",
+      "url": "https://zenn.dev/shimodata/articles/gemini-video-charm-csv",
+      "site": "Zenn(Python)",
+      "published": "2026-11-03T05:44:16Z",
+      "description": "作ったもの\nモンスターハンターワイルズの「護石」（ランダムにスキルとスロットが付く装備アイテム）を、ゲーム画面の録画から読み取ってCSVにするツールを作りました。\n護石は大量に集まるのに、ゲーム内の並べ替え・絞り込みは機能が限られています。そこで「装備詳細」画面を1つずつ映した動画を Gemini API に渡し、1つの護石＝1行の CSV にして、スプレッドシートで自由に並べ替えられるようにしま...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "日本語の個人情報を黒塗りするAPIを作ってみた",
+      "url": "https://zenn.dev/kuronurikun/articles/9d313b033592fa",
+      "site": "Zenn(Python)",
+      "published": "2026-11-03T05:39:27Z",
+      "description": "業務でChatGPTやClaude、Geminiなどの大規模言語モデル(LLM)を使おうとすると、「個人情報をそのまま外部のAPIに送っていいのか」という壁にぶつかると思います。\nそこで、日本語のテキストから個人情報を見つけて伏せ、LLMの回答を元に戻せるAPIを作ってみました。この記事では、作った理由、できること、仕組み、そして今できないことを書きます。\n\n なぜ作ったか\nLLMに渡す前に個人情...",
       "category": "開発",
       "rss_category": "",
       "image_url": ""

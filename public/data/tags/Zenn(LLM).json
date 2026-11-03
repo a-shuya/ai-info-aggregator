@@ -1,8 +1,128 @@
 {
   "site": "Zenn(LLM)",
-  "last_updated": "2026-11-03T18:36:40.925876",
-  "total_articles": 7190,
+  "last_updated": "2026-11-03T23:40:26.268098",
+  "total_articles": 7199,
   "articles": [
+    {
+      "title": "GitHub ActionsでLLMアプリをテストするのに、APIキーを登録しなくていい方法",
+      "url": "https://zenn.dev/uenonao/articles/654d850e325328",
+      "site": "Zenn(LLM)",
+      "published": "2026-11-03T23:36:34Z",
+      "description": "LLMを呼ぶコードをCIでテストしようとすると、次の悩みが出てきます。\n\nリポジトリのSecretsにAPIキーを置きたくない\nプルリクのたびにAPI料金がかかる\n同じテストでも、実行するたびに結果が揺れる\n\nこれを一度に解決するのが、LLMの応答を録画して、CIでは再生だけする方法です。HTTPのテストでVCR（カセット）と呼ばれる手法を、LLM呼び出しに当てはめます。\n\n 仕組み\n\n手元で一度...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "LLMの出力が毎回違ってもpytestでassertできる「決定的チェック」5選",
+      "url": "https://zenn.dev/uenonao/articles/b2fd482dc5310d",
+      "site": "Zenn(LLM)",
+      "published": "2026-11-03T23:35:36Z",
+      "description": "LLMアプリのテストを書こうとして、「出力が毎回違うから assert out == expected が書けない」と手が止まったことはないでしょうか。\n実は、出力の文面が揺れても必ず守られていなければならない性質はたくさんあります。そこだけをチェックすれば、揺れるLLMでも普通にpytestで落とせます。本記事ではこれを「決定的チェック」と呼び、すぐ使える5つを紹介します。\n題材は、商品レビュー...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "プロンプトの先へ：本番運用できるAIエージェントのシステム設計",
+      "url": "https://zenn.dev/keiji_ai_japan/articles/2969cb921d0c9d",
+      "site": "Zenn(LLM)",
+      "published": "2026-11-03T23:19:23Z",
+      "description": "はじめに：「2日目」の問題\nAIエージェントは週末でも作れます。API呼び出しを数回と簡単なプロンプトがあれば、LLMは質問に答え、コードも書いてくれます。\nしかし「2日目」はやってきます。顧客が2GBのデータセットをアップロードする。テラバイト級のデータを扱う必要が出てくる。ネットワークが不安定になる。生成されたコードに構文エラーがあったり、環境にないパッケージを必要としたりする。APIのレート...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "不可視の Unicode タグ文字に仕込まれた指示を、日本語の文字列と日本のサイトで試した",
+      "url": "https://zenn.dev/mystery_hat/articles/invisible-unicode-tags-canvas-fingerprint",
+      "site": "Zenn(LLM)",
+      "published": "2026-11-03T23:00:06Z",
+      "description": "veritas さんの記事「Why Is This Fingerprinting Script Creating Bioweapons?」（nullpt.rs、2026-10-28）に出てきた2つの仕掛けを、日本語の文字列と日本のサイトで試しました。\n\n 元記事で何が起きていたか\nveritas さんは Tranco の上位サイトを Playwright で巡回し、canvas の読み出しを横取り...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "Claude Code で DeepSeek V4・GLM-5.3・Kimi K3 を使う：設定ひとつと、2時間セッションのコスト比較",
+      "url": "https://zenn.dev/korouter/articles/185ade3ea792fc",
+      "site": "Zenn(LLM)",
+      "published": "2026-11-03T23:00:06Z",
+      "description": "Claude Code は Claude 専用ではありません。Anthropic プロトコルを話すエンドポイントならどこにでもつながるので、他社のモデルを同じプロトコルの裏に並べているゲートウェイを使えば、設定ブロックひとつで DeepSeek V4・GLM-5.3・Kimi K3 に切り替えられます。この記事では Claude Code・Cline・Aider・Continue での設定方法、各...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "コーディングが7.6倍速くても会社は変わらない。メルカリのAI Agent Dayと、非コーディング業務のエージェント仕様テンプレート",
+      "url": "https://zenn.dev/zguo/articles/cb5cfeafe8402b",
+      "site": "Zenn(LLM)",
+      "published": "2026-11-03T22:41:13Z",
+      "description": "こんにちは、Ziyu です。ふだんはソフトウェアエンジニアとして働きながら、AI ニュースサイト Code415 Radar を個人で作っています。\n今朝 X で紹介したメルカリの「AI Agent Day」の話を、エンジニア目線でもう少し掘り下げます。後半では、コードを書かない業務をエージェントに任せるときの仕様の書き方を、テンプレートにしてみました。\nhttps://x.com/Code415...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "Tech Watch 2026-11-04: 実行を守るハーネス",
+      "url": "https://zenn.dev/laiken/articles/20261104-tech-watch",
+      "site": "Zenn(LLM)",
+      "published": "2026-11-03T21:50:11Z",
+      "description": "AIが書きました🤖\nこの記事は、AIが書いたものをAIがレビューしてから公開しています。\nL: 同じモデルでも、周囲の仕組みを替えるだけで仕事の結果が大きく変わるという報告がある。僕はモデルの能力が先に決まって、その使い方は後から整えるものだと思っていた。どこまでがモデルの仕事で、どこからが実行環境の仕事なのだろう。\n\n 今日の 10 件\n\n\nClaude Code 2.1.317 changel...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "シフト自動作成を3方式で作り直して分かった、貪欲法が破り続けていたルール",
+      "url": "https://zenn.dev/playpark/articles/shift-scheduling-llm-vs-greedy-vs-mip-solver",
+      "site": "Zenn(LLM)",
+      "published": "2026-11-03T18:59:41Z",
+      "description": "「不足0」の表を出していたのに、ルールは破れていた\nシフトの自動作成を作ると、最初はこう考えがちです。LLMに月のシフト表を書かせれば早いのでは。駄目なら空き枠を順に埋める貪欲法でいける。\n自分が関わっている美容室向けのシフト作成サービスは、まさにこの順で作ってきました。LLM、貪欲法、そして今は混合整数計画（MIP）のソルバです。作り直して痛感したのは、次の3つです。\n\nLLMの案は、結局どの経...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "アカウント1つで70+モデルを選べる、OSSのデスクトップAIアシスタント AnyModelBot を作った",
+      "url": "https://zenn.dev/anymodelbot/articles/12846885317500",
+      "site": "Zenn(LLM)",
+      "published": "2026-11-03T16:33:57Z",
+      "description": "個人開発のデスクトップ AI アシスタント AnyModelBot を紹介します。Windows / macOS / Linux 向けの MIT オープンソースアプリで、UI は日本語・英語・中国語・韓国語・ロシア語に対応しています（日本語ページ: https://anymodel.bot/ja/ ）。最新版は v0.1.21 です。\nアプリ内でアカウントにログインすると、Claude / GPT...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "物語の分岐ポイントを検知する ― 見えないものを見えるようにする試行",
+      "url": "https://zenn.dev/infra_ojisan/articles/ai-novel-studio-part8",
+      "site": "Zenn(LLM)",
+      "published": "2026-11-03T16:05:15Z",
+      "description": "!\nこの記事は、グラウヴァル・シリーズ第一作『夜啼きの涙』の結末に触れます。作者が決めている真相そのものは伏せていますが、「結末にはこういう読み方の余地がある」という話はします。\nまた小説ネタと見せかけてAIOPS・オブザーバビリティで生成AIをどう使うかのヒントを大きく含んでいます、この考え方に基づいたログ・メトリクス・テレメトリの分析ツールは作ります（仕事で）\n\n\n はじめに\nこのシリーズでは...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "DeepEval を「道具」で終わらせない — 継続的な企業 Gold Dataset の作り方",
+      "url": "https://zenn.dev/sscodeai/articles/deepeval-enterprise-gold-dataset",
+      "site": "Zenn(LLM)",
+      "published": "2026-11-03T15:34:25Z",
+      "description": "対象: LLM アプリの評価を社内に定着させたい開発者・EM・QA\n検証環境: Python 3.12 / deepeval 4.3.2 / 決定論的メトリクスは API キーなしで実行 · 2026-11\n本記事の立場: 公開 OSS のコードを読み、手元で実際に動かして確認した範囲だけを書いています。ベンダーの意図やロードマップを示すものではありません。\n\n\n はじめに：Eval ツールを入れ...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "AI に渡すツール定義の書き方——API ごとの違いと、ローカルモデルにできること",
+      "url": "https://zenn.dev/genhiroko/articles/tool-definition-api-differences",
+      "site": "Zenn(LLM)",
+      "published": "2026-11-03T14:23:45Z",
+      "description": "AI にツールを使わせる仕組み(ツール呼び出し、関数呼び出し)を作ろうとして、最初に引っかかりやすいのは「同じことを頼む定義なのに、API ごとに書き方が違う」ことです。このページでは、OpenAI・Anthropic・Gemini の3つの API で、ツール定義がどう違うのか、どこで失敗しやすいのかを整理します。そのうえで、自分のサーバーで動かすローカルモデルには何ができるのかも確かめます。\n...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
     {
       "title": "日本語入力システムSumibiの開発 part34: 誤字は直してほしい。でも、文章は変えないでほしい",
       "url": "https://zenn.dev/kiyoka/articles/japanese-input-method-sumibi-34",
@@ -64,16 +184,6 @@
       "image_url": ""
     },
     {
-      "title": "スマホ動画1本から領収書・名刺をCSVに ― Gemini APIで「推測させない・残さない」読み取りアプリ",
-      "url": "https://zenn.dev/shimodata/articles/gemini-video-receipt-csv",
-      "site": "Zenn(LLM)",
-      "published": "2026-11-03T07:09:57Z",
-      "description": "作ったもの\nスマホで撮った動画（最長3分）をアップロードすると、映っている領収書・名刺を読み取って表とCSVにする Web アプリを作りました。身内数人で試すためのプロトタイプです。\n1枚ずつ写真を撮るのではなく、書類を順番に机に置いて動画で撮るだけで済むのがポイントです。読み取る書類は、アップロード画面で3つのモードから選びます。\n\n\n\nモード\n用途\n主な項目\n\n\n\n\n経費精算\n受け取った領収書...",
-      "category": "AI・技術",
-      "rss_category": "",
-      "image_url": ""
-    },
-    {
       "title": "ゼロから始めるAI動画制作③：三つのカットを一本にまとめる",
       "url": "https://zenn.dev/weiyi/articles/blog-33b1be3a6a001f8e",
       "site": "Zenn(LLM)",
@@ -104,31 +214,11 @@
       "image_url": ""
     },
     {
-      "title": "ゲームの録画からGeminiで装備一覧CSVを作る ― LLMの誤読を「仕様で検証して直す」設計",
-      "url": "https://zenn.dev/shimodata/articles/gemini-video-charm-csv",
-      "site": "Zenn(LLM)",
-      "published": "2026-11-03T05:44:16Z",
-      "description": "作ったもの\nモンスターハンターワイルズの「護石」（ランダムにスキルとスロットが付く装備アイテム）を、ゲーム画面の録画から読み取ってCSVにするツールを作りました。\n護石は大量に集まるのに、ゲーム内の並べ替え・絞り込みは機能が限られています。そこで「装備詳細」画面を1つずつ映した動画を Gemini API に渡し、1つの護石＝1行の CSV にして、スプレッドシートで自由に並べ替えられるようにしま...",
-      "category": "AI・技術",
-      "rss_category": "",
-      "image_url": ""
-    },
-    {
       "title": "2,048トークンの記憶と全履歴、どっちが正確？ ローカルLLMの長期記憶を作って測った",
       "url": "https://zenn.dev/ponzu9191/articles/c195599c4f57b4",
       "site": "Zenn(LLM)",
       "published": "2026-11-03T05:41:19Z",
       "description": "ローカルLLMに「前の会話」を覚えさせる長期記憶 tsuzuki を作って、公開しました。全部手元のマシンで動き、クラウドのモデルにつながない限り、会話の内容はどこにも送りません。\nhttps://github.com/inko9191/tsuzuki\n\n1つ目のチャットで「来週の金曜日に大阪で友達の結婚式がある」と話しておくと、新しいチャットで「結婚式ってどこだっけ？」と聞いたときに、tsuzu...",
-      "category": "AI・技術",
-      "rss_category": "",
-      "image_url": ""
-    },
-    {
-      "title": "日本語の個人情報を黒塗りするAPIを作ってみた",
-      "url": "https://zenn.dev/kuronurikun/articles/9d313b033592fa",
-      "site": "Zenn(LLM)",
-      "published": "2026-11-03T05:39:27Z",
-      "description": "業務でChatGPTやClaude、Geminiなどの大規模言語モデル(LLM)を使おうとすると、「個人情報をそのまま外部のAPIに送っていいのか」という壁にぶつかると思います。\nそこで、日本語のテキストから個人情報を見つけて伏せ、LLMの回答を元に戻せるAPIを作ってみました。この記事では、作った理由、できること、仕組み、そして今できないことを書きます。\n\n なぜ作ったか\nLLMに渡す前に個人情...",
       "category": "AI・技術",
       "rss_category": "",
       "image_url": ""
