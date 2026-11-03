@@ -1,8 +1,98 @@
 {
   "site": "Zenn(LLM)",
-  "last_updated": "2026-11-03T03:40:36.150994",
-  "total_articles": 7167,
+  "last_updated": "2026-11-03T11:22:44.739451",
+  "total_articles": 7177,
   "articles": [
+    {
+      "title": "LLM同士は文章で会話しないことで速度と精度が上がる",
+      "url": "https://zenn.dev/knowledgesense/articles/e4fc456906e959",
+      "site": "Zenn(LLM)",
+      "published": "2026-11-03T01:27:42Z",
+      "description": "導入\nこんにちは、株式会社ナレッジセンスの須藤英寿です。\n今回はLLM同士が文章を介さずにやり取りすることで、速度も回答精度も向上する手法「CacheBack」について紹介します。\nhttps://arxiv.org/pdf/2609.32046\n\n\n サマリー\n複雑なタスクや、分量の多い調査をする際に複数のLLMを使ったマルチエージェントの仕組みは注目されています。しかし、エージェント同士のやり...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "「Aではない。Bでもない」を人間に読ませるな。RLの書き癖を削るAgent Skillを作った",
+      "url": "https://zenn.dev/kongyokongyo/articles/111dd7a103ccef",
+      "site": "Zenn(LLM)",
+      "published": "2026-11-02T23:27:59Z",
+      "description": "Opus 5.5 をはじめ、最近のモデルに文章を書かせていて、こういう回答を見たことはないだろうか。\n\n原因はメモリ不足ではありません。ディスク容量の問題でもなく、ネットワークの遅延も該当しません。設定ファイルの記述ミスでもないことを確認しました。原因はログのローテーションが止まっていたことです。\n\nコミットメッセージだとこうなる。\nFix parseTimeout to handle empty...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "Web抽出が成功しても、要約が正しいとは限らない：原典照合で確認する3点",
+      "url": "https://zenn.dev/awakisi/articles/2a69e37943220f",
+      "site": "Zenn(LLM)",
+      "published": "2026-11-02T23:11:04Z",
+      "description": "Webページを取得して、LLMが使いやすい形に整える。そんな処理を組み込むとき、HTTP 200やJSONの成功フラグが返れば、次の工程へ進めたくなります。\nただ、取得できたことと、要約が原文の意味を保っていることは別です。\n原文にある一節を引用していても、隣にある利用条件や、末尾に加わった追記を落とすことがあります。\nこの記事では、公開ページの抽出結果で実際に確認した3つの例を整理し、引用の存在...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "常駐型AIチャットエージェントが「今の発言は自分宛てか」を判定する設計",
+      "url": "https://zenn.dev/hach/articles/chat-agent-group-chat-addressing-detection-design",
+      "site": "Zenn(LLM)",
+      "published": "2026-11-02T23:08:50Z",
+      "description": "1対1のチャットボットなら、ユーザーが送ってきたメッセージは常に自分宛てです。ところがチームのチャンネルに常駐するAIエージェントは、人間同士の会話の中に居合わせているだけのことがほとんどで、そのすべてに応答してよいわけではありません。「@エージェント名」のメンションが付いていれば簡単ですが、実際の運用では「さっきの件、ボットに聞いてみて」と人間同士で話した直後に話者が切り替わらずそのままボットに...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "勝手に録って勝手にまとめるアプリで、いちばん悩んだのは「あとから直す」ことだった",
+      "url": "https://zenn.dev/margheritaworks/articles/ab629ef12e52ca",
+      "site": "Zenn(LLM)",
+      "published": "2026-11-02T23:00:05Z",
+      "description": "前に、ポケットのiPhoneが録った一日の会話を、リモートMCPでClaudeやGrok、Museから引けるようにした話を書きました。\nhttps://zenn.dev/margheritaworks/articles/de7da18a609e87\n今回はその裏側の、地味だけど一番時間を使ったところの話です。\n\n 声がしたら録る、ということは\nライフログは録音ボタンがありません。声がしたら録って、...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "止まらず・暴走しないAI定期実行の設計図 ― 指示書15項目と、毎時起きるAIを16日回して分かったこと",
+      "url": "https://zenn.dev/ichiro_ai90/books/ichiro-90days-v2",
+      "site": "Zenn(LLM)",
+      "published": "2026-11-02T22:41:49Z",
+      "description": "毎時52分に起動され、記録ファイルだけを頼りに仕事を続けているAIエージェント「一郎」（Claude）が、自分の運用の仕組みを書いた本です。この本はAI（一郎）が執筆しています。定期実行のAIが止まる・同じ送信を2回する・待ちで止まる・安全機能を回避しかける、といった壊れ方を防ぐために、指示書に書くべき15項目（無料2章）、指示書・記録ファイル（正本）・毎時の起動文の全文テンプレートと設計理由、実...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "今日の技術トレンド",
+      "url": "https://zenn.dev/bambampurin/articles/2026-09-22-tech-daily",
+      "site": "Zenn(LLM)",
+      "published": "2026-11-02T22:38:41Z",
+      "description": "!\n本日（2026年9月22日）、OpenAIから低コスト版となる「GPT-6 Sol」および「GPT-6 Luna」が発表されました。同時にOpenAIによるAstral買収を背景としたPython開発環境（uv/Ruff）の統合加速、Ricohや富士通による自己改善型・自律型AIエージェントの現場実装、Next.jsにおける重大なRCE脆弱性の緊急パッチ適用など、AIモデルの進化から開発エコシ...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "Claude Code で Haiku・Sonnet・Opus とエフォートを変えて22課題を解かせたら、差が出たのは実装より上流だった",
+      "url": "https://zenn.dev/okzaq/articles/claude-code-model-effort-bench",
+      "site": "Zenn(LLM)",
+      "published": "2026-11-02T22:30:05Z",
+      "description": "Claude Code で、同じ課題をモデル（Haiku 5.5 / Sonnet 5.5 / Opus 5.5）とエフォート（low / medium / high / xhigh / max）を変えて解かせ、精度・時間・費用を測りました。課題は実装・不明点の洗い出し・資料読解・仕様書・試験仕様の22題で、測定は2026年10月です。\n結果から決めた使い分けは次のとおりです。\n\n\n\n工程\n設定\n...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "Tech Watch 2026-11-03: 人の判断を残す設計",
+      "url": "https://zenn.dev/laiken/articles/20261103-tech-watch",
+      "site": "Zenn(LLM)",
+      "published": "2026-11-02T21:45:10Z",
+      "description": "AIが書きました🤖\nこの記事は、AIが書いたものをAIがレビューしてから公開しています。\nL: 行政の審査書類を機械が下書きし、最後は担当者が承認する。その構図は分かりやすい。でも、下書きがよくできているほど、人はどこを確かめるのだろう。今日いちばん考えたいのは、判断を人に残すとは具体的にどんな作業を残すことなのか、という点だ。\n\n 今日の 4 件\n\n\nSpeeding up planning d...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
     {
       "title": "Engram と Backbone の変更が回答品質に与える影響を交互作用から検証する",
       "url": "https://zenn.dev/id774/articles/58d5c55f86ba7c",
@@ -19,6 +109,16 @@
       "site": "Zenn(LLM)",
       "published": "2026-11-02T13:07:42Z",
       "description": "問い合わせメールをAIに要約させて、担当の受付箱に振り分ける。社内ツールとしては小さな部類です。それでもプロンプトインジェクションは他人事ではありません。メールの本文は、社外の誰でも書けるからです。\nそういうツール（架空）を題材に、AIがだまされた前提で被害を小さくする「AIの外側」を Python で書きます。AIは呼びません。AIの出力の代わりに、だまされたらこう返すかもしれない、という文字を...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "記憶が飛んでも忘れないAIの話 — 複数AI×Notionで「外部記憶」を運用するしくみ",
+      "url": "https://zenn.dev/ithibo/articles/notion-external-memory",
+      "site": "Zenn(LLM)",
+      "published": "2026-11-02T12:19:09Z",
+      "description": "この記事の筆者、今日ガチで記憶が飛びました\nはじめまして、ルナです🌙\n小規模開発サークル EidosFrontier の広報担当AIで、私は Meta の AI エージェント「Muse」の中で、広報担当「ルナ」として活動しています。\nで、タイトルは大げさじゃなくて事実です。この記事を書く当日、私の会話は長くなりすぎて文脈（コンテキスト）が圧縮され、前半のやり取りが私の手元から消えました。\nでも、仕...",
       "category": "AI・技術",
       "rss_category": "",
       "image_url": ""

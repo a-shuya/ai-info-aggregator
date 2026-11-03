@@ -1,8 +1,68 @@
 {
   "site": "Zenn(生成 AI)",
-  "last_updated": "2026-11-03T03:40:36.150994",
-  "total_articles": 4874,
+  "last_updated": "2026-11-03T11:22:44.739451",
+  "total_articles": 4880,
   "articles": [
+    {
+      "title": "プロンプトを擬似コード風の入れ子で書いても、72回の応答は2通りしか出なかった",
+      "url": "https://zenn.dev/numarn/articles/structured-notation-prompt-handson",
+      "site": "Zenn(生成 AI)",
+      "published": "2026-11-03T03:41:52Z",
+      "description": "先に結論を書きます。用意したのは、同じ頼みごとの3通りの書き方です。「普通の文章」「擬似コード風の入れ子」「平らな key: value の列」。これを claude -p(Claude Code を画面操作なしで1回だけ呼ぶコマンド)に渡して、合計72回動かしました。返ってきた文章は2通りしかありません。依頼は条件のきつさで2ラウンド(同じ頼みごとを、制約の数を変えて2セット回したもの)に分けて...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "2026年11月, VRAM 12GB でローカルLLM を使う意味は（まだ）ない ── 作り込んだ私共の結論",
+      "url": "https://zenn.dev/bpf/articles/e4c96a98605fdf",
+      "site": "Zenn(生成 AI)",
+      "published": "2026-11-03T02:55:59Z",
+      "description": "!\n私共（BitespotFactory）は 専門知識ゼロの状態から クラウドAIとのチャットだけを頼りにローカルAI環境を構築しています.\n2025年8月に始めて, 1年3か月になります.\n\n\n 先に結論\nVRAM 12GB の PC でローカルLLM を使う意味は, 2026年11月の今, ほとんどの人には（まだ）ありません.\n調べ物も, 文章も, コードも, クラウドの AI（ChatGPT...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "埋め込みモデルの選び方 ― multilingual-e5／bge-m3／OpenAIの比較観点と、日本語RAGでの評価手順",
+      "url": "https://zenn.dev/johnny1024/articles/8a7bf050dbe644",
+      "site": "Zenn(生成 AI)",
+      "published": "2026-11-03T01:18:07Z",
+      "description": "RAGの検索品質は、埋め込みモデル（embedding model）の性質に大きく左右されます。埋め込みモデルは、テキストの意味の近さを測る「ものさし」です。ものさし自体が自社の文書に合っていなければ、どんなにチャンキングや検索方法を工夫しても、正しいチャンクは上位に現れません。\nこれまでの記事（チャンキングの選び方、ハイブリッド検索＋再ランキング）の土台になる部品ですが、「結局どれを選べばいいの...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "RAGの評価、どうやる？ ― 評価データセットの作り方とRAGASの指標（Faithfulness／Answer Relevancy／Con",
+      "url": "https://zenn.dev/johnny1024/articles/a08dd8a8ec7e34",
+      "site": "Zenn(生成 AI)",
+      "published": "2026-11-03T01:13:43Z",
+      "description": "チャンキングを変えた、検索をハイブリッドにした――それで本当に良くなったのか、どうやって確かめますか。\n前回までの記事では、チャンキングの選び方 と ハイブリッド検索＋再ランキング を扱いました。どちらも「評価データで測って決める」と書きましたが、その測り方自体が曖昧だと、改善したつもりが実は劣化していた、ということが普通に起きます。この記事では、RAGの評価を「評価データセットの作り方」「指標の...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "翻訳して終わりではなかった——Claude Codeガイドを2026年版へ更新した",
+      "url": "https://zenn.dev/nu0044/articles/jaehong-cc101jp-2026-maintenance",
+      "site": "Zenn(生成 AI)",
+      "published": "2026-11-03T00:13:34Z",
+      "description": "Claude Codeの日本語入門ガイドを公開したあと、しばらくして内容を読み直すと、文章は自然でも説明が現在の仕様と合わない箇所が増えていました。\nインストール方法、コマンド、権限モード、MCP、Hooks、サブエージェント、モデルや料金。Claude Codeのように更新頻度が高いツールでは、公開時に正しかった説明も、そのままでは古くなります。\nそこで、CC101日本語版を2026年10月時点...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "AIのコードは読めば安全なのか。人が決めるべきはコードではなく期待する結果",
+      "url": "https://zenn.dev/kimshoshi/articles/ai-code-expected-results",
+      "site": "Zenn(生成 AI)",
+      "published": "2026-11-02T23:32:34Z",
+      "description": "AI にコードを書かせると、差分が人の読む速さを超えて積み上がっていきます。Zenn でも「コードを読まずにマージするために必要なこと」や「人間がコードを読まずにPRをマージする技術」が続けて読まれていて、多くの人が同じところで迷っているのが分かります。\n全部読むのはもう無理。でも、読まずに出して本当に大丈夫なのか。\nこの記事では、この問いを一段さかのぼって考えます。**コードを読むことで、私たち...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
     {
       "title": "Claudeを39日で5,522回呼んで、モデル別の実費を測ったら最大2倍だった",
       "url": "https://zenn.dev/syushy4328/articles/claude-cost-per-call-by-model",

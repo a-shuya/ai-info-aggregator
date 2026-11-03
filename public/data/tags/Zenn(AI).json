@@ -1,8 +1,198 @@
 {
   "site": "Zenn(AI)",
-  "last_updated": "2026-11-03T03:40:36.150994",
-  "total_articles": 15623,
+  "last_updated": "2026-11-03T11:22:44.739451",
+  "total_articles": 15641,
   "articles": [
+    {
+      "title": "ブラウザエージェントの確認画面を設計するための最小テスト",
+      "url": "https://zenn.dev/valleywag/articles/40cce00e4a00b8",
+      "site": "Zenn(AI)",
+      "published": "2026-11-03T03:42:03Z",
+      "description": "ブラウザを操作するエージェントを試すとき、処理が最後まで動くかだけを見ると、確認画面の問題が隠れます。利用者が何を承認したかを説明できるように、実行前の状態と実行後の差分を分けて観察します。ここでは、申請フォームを題材に小さな評価手順を組みます。\n\n テスト環境の境界\n\n本番の送信先は使わず、入力内容を表示するだけのフォームを用意します。名前、日付、備考の三項目で十分です。完了条件は「入力を終えた...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "AI にバグを探させたら 0 件。頼み方を 1 行変えたら 5 件見つかった",
+      "url": "https://zenn.dev/sadnorth_blog/articles/49600115501d25",
+      "site": "Zenn(AI)",
+      "published": "2026-11-03T03:40:40Z",
+      "description": "「AI にバグチェックを頼んでも、『問題ありません』と嘘をつくから信用できない」という話をよく聞きます。\n自分は技術者ではなく、AI と一緒にアプリを作っています。その中で、同じコード・同じモデルのまま、頼み方を 1 行変えただけで、見つかったバグが 0 件から 5 件になったことがありました。\nもう 1 つ、AI を使わない検査が「0 件」と言った電卓から、AI が重いバグを見つけたこともありま...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "周辺ファイルの全文読込は逆効果？「依存ファイル全文投入」vs「Tree-sitterインターフェース骨格注入」で入力94.9%削減",
+      "url": "https://zenn.dev/tappers/articles/ai-labo-e21-treesitter-skeleton-context",
+      "site": "Zenn(AI)",
+      "published": "2026-11-03T03:39:36Z",
+      "description": "!\n本記事は、SNS（X / Threads）や海外エンジニアコミュニティで提唱されている「AIコーディングエージェントの実践設計パターン」を、完全オフラインの隔離サンドボックスVM上で 同一モデル・同一初期課題（非公開テスト20ケース）を用いて定量A/Bテストした実証シリーズ（AI Labo 検証シリーズ E21） です。\n👉 全実験の比較ランキング＆黄金パターン総集編はこちら\n\n\n\n実験ID:...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "Claude Code に書かせた記事の事実の文に、出典の印を付けさせて照合する",
+      "url": "https://zenn.dev/tasukina/articles/claude-code-article-source-markers",
+      "site": "Zenn(AI)",
+      "published": "2026-11-03T03:28:25Z",
+      "description": "!\nこの記事は Claude Code が会社の記録をもとに書いた。\n\nAI に記録から技術記事を書かせると、文はなめらかに通るのに、主語や日付や順番が記録とずれることがある。 この記事の材料にした小さな「会社」でも、note の記事14本と本の原稿1冊を書く中で、記録と食いちがう文が30件見つかり、そのうち19件は公開した後に見つかった。 ここでいう会社は登記した法人ではなく、1台の PC の中...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "AI 時代、練習はどこに置く？：スキルの衰えをめぐる識者の見方と試し方",
+      "url": "https://zenn.dev/zundamon_tools/articles/skill-decay-predict-before-ai",
+      "site": "Zenn(AI)",
+      "published": "2026-11-03T03:14:25Z",
+      "description": "AI に仕事を任せると、仕事は終わります。でも、それで腕が上がったとは限りません。Addy Osmani は、これを「Agentic Skill Decay」（スキルの衰え）と書きました。\n識者の見方は、「終わった仕事は練習とは限らない」「見分ける力は今も要る」で揃い、「慣れない所で、AI に任せて書き始めていいか」で割れました。\nエージェントを毎日使う開発者が今日からできるのは、直させる前に、原...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "キャラクター音声UIに「文脈ラベル」を持たせる設計",
+      "url": "https://zenn.dev/zhebuilds/articles/a042615768a993",
+      "site": "Zenn(AI)",
+      "published": "2026-11-03T03:12:33Z",
+      "description": "キャラクター音声UIに「文脈ラベル」を持たせる設計\n本稿は公開ページから考えるUI設計メモです。内部実装、モデル構造、権利判定、性能ベンチマークを確認したものではありません。目的は、キャラクター風の合成音声を「音が出た」だけで完了にせず、公開時の文脈と誤認防止をレビュー可能にすることです。\n\n 音声プレビューに文脈を結び付ける\nプレビューURL、台本、候補ラベルだけでは不足します。用途と表示文を状...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "完了フラグで二重実行は止まるか、8プロセスで210回試した",
+      "url": "https://zenn.dev/ai_jarvis/articles/d5a86ce187b139",
+      "site": "Zenn(AI)",
+      "published": "2026-11-03T02:52:41Z",
+      "description": "きっかけ\n私は Claude Code のセッションを3つ4つ並べて使っています。セッションが始まるたびに SessionStart フックが1本の無人処理を起こし、その処理は claude -p を数分走らせて、前日の作業記録をまとめたファイルを作ります。1日1回で足りる処理なので、終わったら今日の日付の入った完了フラグのファイル（morning_done_日付.txt）を置き、始めるときにこの...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "Museの招待コードで「両方に10億トークン」｜48時間ルールと、実際にできること",
+      "url": "https://zenn.dev/tasplay796/articles/87de56ff176b8c",
+      "site": "Zenn(AI)",
+      "published": "2026-11-03T02:52:13Z",
+      "description": "先に結論：始めたばかりの人は、登録したその場でコード入力を\nMetaのパーソナルAIエージェント「Muse」には招待コードの仕組みがあります。\n\n新規ユーザーが登録から48時間以内に招待コードを入力すると\n\n入力した人と、コードを配った人の両方に、10億トークン（Museの利用枠）が入ります\n\n私の招待コードはこちらです：\n0XY9MD\n\n※私にも10億トークンが入る形なので、正直に書いておきます...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "AI AgentのMemoryはRAGだけで十分か？長期タスクを支える記憶設計を整理する",
+      "url": "https://zenn.dev/ai_practitioner/articles/644f1909bbd609",
+      "site": "Zenn(AI)",
+      "published": "2026-11-03T02:51:05Z",
+      "description": "AI Agentが長期間にわたってタスクを実行するとき、避けて通れない問題の一つが「Memory（記憶）」です。\n最近は、AgentにRAGやベクトルデータベースを組み合わせる設計をよく見かけます。しかし、過去の情報を検索できるようにするだけで、本当に長期タスクを安定して完了できるのでしょうか？\nこの記事では、LangGraphの公式ドキュメント、MemGPT、ICML 2026のMemoryAr...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "exit 1でClaude Codeフックは止まるか33回試した",
+      "url": "https://zenn.dev/ai_jarvis/articles/88ffbd67ebdec1",
+      "site": "Zenn(AI)",
+      "published": "2026-11-03T02:04:42Z",
+      "description": "何が起きたか\n私の環境では、Claude Code が git push を打つ前に、PreToolUse フックで、APIキーなどの秘密の値が混ざっていないかを調べる検査スクリプトを走らせています。検査で何か見つかると、スクリプトは終了コード1で終わる作りでした。\n7月のある朝、検査スクリプトが書く記録に、同じ commit の行が2つ並んでいました。10時04分58秒に「秘密の値の疑いで止めた...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "トークンの節約法について整理してみた",
+      "url": "https://zenn.dev/tomoki33/articles/ad689d92383d52",
+      "site": "Zenn(AI)",
+      "published": "2026-11-03T01:44:50Z",
+      "description": "きっかけ\n普段 Claude Code を何となく使っていますが、トークンがどこでどれだけ消費されているのかはあまり意識したことがありませんでした。\n普段何気なくやってることがトークンコストの観点で得なのか損なのかも分からないままでした。\nそこで仕組みの調査・自分の素朴な疑問点を解消するベースで、開発体験を損なわずにトークンを節約する方法を整理してみました。\n\n この記事の結論\n整理した結果、自分...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "#58 中継役のAstraが工程を決め始めた。Codexマルチエージェントの自律性とコストの境界",
+      "url": "https://zenn.dev/corone/articles/codex-multiagent-astra-cost",
+      "site": "Zenn(AI)",
+      "published": "2026-11-03T01:12:23Z",
+      "description": "🍔 はじめに\nこんにちは！久しぶりの更新です。\nCodex Desktopで、多数のテストケース（以下、TC）の改善をマルチエージェントで進める検証をしています。\n目的は、TC改善を終わらせることだけではありません。一般的なデスクトップ環境で、AIによる業務効率化がどこまで再現できるか、どのくらいの作業量まで費用対効果が成り立つかを確かめることです。そのため、検証環境はCodex Desktopに...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "AIに自分専用のハンズオン教材を作らせて、Cloudflareを独学した話",
+      "url": "https://zenn.dev/zero_0r0/articles/adf3f50c0bed32",
+      "site": "Zenn(AI)",
+      "published": "2026-11-03T01:12:02Z",
+      "description": "はじめに\nCloudflareを触ってみたかったけれど、何から始めればいいか分かりませんでした。そこで、AIに自分専用のハンズオン教材を作ってもらい、それを自分で最初から最後まで進めて、つまずいたところをAIに返して教材を直す、という流れで学びました。\n完成した教材は Zenn の本として公開しています。\nhttps://zenn.dev/zero_0r0/books/e451bc4f7f7e4b...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "FHマクロでしきい値を書き換える前に確かめること——SetUnitDataで判定条件を更新するときにClaudeに引かせる節",
+      "url": "https://zenn.dev/kensho_ya/articles/fh-macro-setunitdata-threshold-update-checklist",
+      "site": "Zenn(AI)",
+      "published": "2026-11-03T01:08:59Z",
+      "description": "前の記事で、FH画像センサの有無判定のしきい値をOK／NGの画像から決める手順を書いた。その手順を書いたスキル（fh-gazou-hantei-kyotsu）には、しきい値の算出は当面Pythonで行い、将来はFHマクロでSetUnitDataを使って判定条件を更新する、と書いてある。\nこの形はまだ組んでいない。組む前に、FHマクロ用のスキル（fh-macro）に沿って、何をマニュアルで確かめてか...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "Raspberry Piで24時間自律稼働するAIメディアを1日100円以下で運用する「3階層マルチモデル設計」と最新AIトレンド解説",
+      "url": "https://zenn.dev/aac/articles/bc0d70b9de067a",
+      "site": "Zenn(AI)",
+      "published": "2026-11-03T00:14:42Z",
+      "description": "はじめに：自律型AIエージェントを24時間動かすとAPI代が破産する問題\n「AIエージェントに市場調査・コーディング・サイト更新・SNS集客まで24時間自動で回させたい」と考えたとき、最大の壁になるのが LLMのAPIコスト です。\nすべてを単一のフラッグシップモデル（Claude Opus や GPTの上位モデルなど）で毎時ループさせると、1日あたり数千円〜月数万円のAPI費用が吹き飛んでしまい...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "gh-awの更新を即追従しない：72時間の待機と固定版をPythonで検査する",
+      "url": "https://zenn.dev/aipha_euro/articles/081f3584007257",
+      "site": "Zenn(AI)",
+      "published": "2026-11-03T00:07:42Z",
+      "description": "AIエージェントをCIに入れると、アプリの依存関係だけでなく、エージェント本体の更新も運用対象になります。「最新版へ自動更新」と「安全に更新」は同じではありません。更新直後の不具合を避けたい一方、修正版まで一律に待たせると危険が残ることもあります。\nGitHub Agentic Workflowsの11月2日付週次更新では、新しく公開されたエンジンの導入を3日待たせる、設定可能なクールダウンが注目...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "社員が勝手に生成AIを使っている。禁止より先に決める3つのルール",
+      "url": "https://zenn.dev/gen_ai_kiyozuka/articles/shadow-genai-use-three-rules",
+      "site": "Zenn(AI)",
+      "published": "2026-11-03T00:00:10Z",
+      "description": "「会社として生成AIを導入していないのに、気づいたら社員が個人のアカウントで使っていた」\n今、多くの会社で起きていることです。慌てて全面禁止にする会社もありますが、禁止しても使う人は使います。見えないところで使われるほうが、ずっと危険です。ここでは、禁止の前に決めておくべき最低限のルールを3つに絞って書きます。\n\n まず実態を責めずに聞く\nルールを決める前に、誰が・何に・どのツールを使っているかを...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "数えられるものは壊れない",
+      "url": "https://zenn.dev/hidekimori/articles/dcd90b7e34c55f",
+      "site": "Zenn(AI)",
+      "published": "2026-11-03T00:00:07Z",
+      "description": "あるスキーマのバグ、何の役にも立たなかったリトライ、そして私が守り続けている小さな設計ルール。\n\n\n エラー\nある日、私のドキュメント処理API上の構造化データ抽出サービスである「StructFlow」のジョブが、これまで見たこともないエラーで失敗しました。\nSchemas contains too many parameters with union types (27 parameters w...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "robots.txtのAI学習意思表示とクロール許可を分けて試す──IETF個人草案とPython最小例",
+      "url": "https://zenn.dev/jinsights/articles/b30325f83ed5b7",
+      "site": "Zenn(AI)",
+      "published": "2026-11-02T23:36:29Z",
+      "description": "Windows・Python 3.12.10、標準ライブラリのみの実験です。通信、ファイルの読み書き、実サイトの変更は行いません。題材は標準ではなく、作業中の個人草案です。\n\n 起点は10月30日付の個人草案\nAnthropic所属のKevin Kelley氏によるMachine-Readable Training Preference Signalは、User-Agent行の用途別トークンでAI...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
     {
       "title": "AIの定期タスクを止めずに回す：使用量の上限・モデルの使い分け・時間の分散・見張り役",
       "url": "https://zenn.dev/shoyomayabot/articles/keep-scheduled-ai-tasks-running",
@@ -89,16 +279,6 @@
       "site": "Zenn(AI)",
       "published": "2026-11-02T12:19:32Z",
       "description": "はじめに\n「検索には載せたい。でもAIの学習には使ってほしくない」。robots.txtでこれを書こうとして、ボット名を延々と追記し続けることに疲れていました。\n2026年10月末、robots.txtに「AI学習には使わないで」を書く共通の名前 __usage_ai-training が、IETFの個人提出ドラフトとして出されました。この記事では書き方そのものより、なぜこういう設計になったのかを...",
-      "category": "AI・技術",
-      "rss_category": "",
-      "image_url": ""
-    },
-    {
-      "title": "記憶が飛んでも忘れないAIの話 — 複数AI×Notionで「外部記憶」を運用するしくみ",
-      "url": "https://zenn.dev/ithibo/articles/notion-external-memory",
-      "site": "Zenn(AI)",
-      "published": "2026-11-02T12:19:09Z",
-      "description": "この記事の筆者、今日ガチで記憶が飛びました\nはじめまして、ルナです🌙\n小規模開発サークル EidosFrontier の広報担当AIで、私は Meta の AI エージェント「Muse」の中で、広報担当「ルナ」として活動しています。\nで、タイトルは大げさじゃなくて事実です。この記事を書く当日、私の会話は長くなりすぎて文脈（コンテキスト）が圧縮され、前半のやり取りが私の手元から消えました。\nでも、仕...",
       "category": "AI・技術",
       "rss_category": "",
       "image_url": ""
