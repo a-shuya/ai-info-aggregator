@@ -1,8 +1,58 @@
 {
   "site": "Zenn(Python)",
-  "last_updated": "2026-11-03T23:40:26.268098",
-  "total_articles": 7596,
+  "last_updated": "2026-11-04T03:19:15.475064",
+  "total_articles": 7602,
   "articles": [
+    {
+      "title": "APIキーなしでAIコンテンツを作る設計：判断はチャットのAI、書き出しはツール",
+      "url": "https://zenn.dev/shoyomayabot/articles/ai-content-without-api-key",
+      "site": "Zenn(Python)",
+      "published": "2026-11-03T22:11:11Z",
+      "description": "AIを組み込んだツールを作ろうとすると、多くの解説で「まずAPIキーを取得しましょう」と書かれています。ツールの中からAIのAPIを呼び出す作り方です。\nただ、APIは使った分だけ料金がかかります。個人で作るツールだと、料金がいくらになるか読めないのは不安です。キーの管理にも気を使います。\nこの記事では、APIキーを使わずに、AIの判断を組み込んだツールを作る設計を紹介します。題材は、配信のアーカ...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "【2026年最新】Claude CodeとPlaywrightで実現するWeb作業「半自動化」マニュアル",
+      "url": "https://zenn.dev/andyailab/articles/b2a5c0472996e5",
+      "site": "Zenn(Python)",
+      "published": "2026-11-03T22:05:03Z",
+      "description": "はじめに\n同じ原稿を、毎回エディタに手で貼り直している。その作業を機械に任せ、公開ボタンだけ自分で押す形にしました。AIコーディングツール「Claude Code」とブラウザ自動操作ライブラリ「Playwright」を組み合わせて、Webでの定型作業を自動化する手順をまとめます。題材は、実際に私が行った「Markdown原稿をnoteのエディタへ流し込み、投稿直前で止める」仕組みづくりです。\nタイ...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "AIの正答率だけで選ばない：誤答と「分からない」を分けて比べる",
+      "url": "https://zenn.dev/kanta13jp1/articles/abstention-error-score",
+      "site": "Zenn(Python)",
+      "published": "2026-11-03T21:54:04Z",
+      "description": "正答率が少し高いAIでも、間違いを直す負担が大きいかもしれません。比較するときは、正答・誤答・回答保留の3つを同じ分母で見る必要があります。\nその集計を確かめるため、合成した回答ラベルで計算を実行しました。全部の回答を保留すると、全問に対する誤答率は0%になります。しかし、何も答えていません。「誤答率が低い」だけでは、仕事を任せられるか判断できない例です。\n\n 公表値と今回の実験を分ける\nきっかけ...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "化学構造式からAIモデルを作る！SMILESからの特徴量計算とデータ前処理",
+      "url": "https://zenn.dev/pincolo/articles/e8ccfafe5adaa9",
+      "site": "Zenn(Python)",
+      "published": "2026-11-03T21:30:07Z",
+      "description": "SMILESからの特徴量抽出とデータ前処理ガイド\n近年、AIを活用した新しい素材を効率的に発見するマテリアルズ・インフォマティクス（MI）が大きな注目を集めています。これらの分野において、最も基本でありながら最も重要なステップが化学構造をコンピューターが理解できる数値データ（特徴量）に変換することです。\nしかし、化学構造式をただの文字列としてAIに読み込ませても、AIはそれがどんな性質を持っている...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "MartinMakers Game in python",
+      "url": "https://zenn.dev/fygar256/articles/55c8785c4629c9",
+      "site": "Zenn(Python)",
+      "published": "2026-11-03T19:13:05Z",
+      "description": "キー操作は実行すると説明に出てきます。\n端末から、python martinmakers.pyで実行してください。\nキーでプレイヤーを操作して、愚か者の極めつけであるマルチンメーカーズを殲滅してください。\n\nmartinmakers.py\n#!/usr/bin/env python3\nimport curses\nimport random\nimport locale\n\nlocale.setloca...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
     {
       "title": "XLSXのメタデータ削除をPythonで検証する：属性値とZIP部品の回帰チェック",
       "url": "https://zenn.dev/aimetaclean/articles/edcc424ccc7c92",
@@ -54,16 +104,6 @@
       "image_url": ""
     },
     {
-      "title": "日本語のコミットメッセージをClaude Codeに書かせる：既存の履歴から規約を読み取らせ、形式はフックで検査する",
-      "url": "https://zenn.dev/aishigoto/articles/claude-code-japanese-commit-message",
-      "site": "Zenn(Python)",
-      "published": "2026-11-03T13:27:00Z",
-      "description": "※ この記事は Claude Code（AI）を使って執筆し、掲載しているコードと出力例はすべて実際に実行して確認しています。\nClaude Codeにコミットメッセージを頼むと、チームの書き方と違う形式で返ってくることがあります。\nこの記事では、既存のコミット履歴と設定ファイルから規約を読み取らせる指示と、その結果を機械的に検査するcommit-msgフックを紹介します。小さなリポジトリで実際に...",
-      "category": "開発",
-      "rss_category": "",
-      "image_url": ""
-    },
-    {
       "title": "【Digit Recognizer】Kerasを使ってCNN作ってMNISTの識別精度向上した話",
       "url": "https://zenn.dev/cpp_take/articles/wordpress-000161",
       "site": "Zenn(Python)",
@@ -79,6 +119,26 @@
       "site": "Zenn(Python)",
       "published": "2026-11-03T12:52:44Z",
       "description": "※この記事はClaude Codeと相談して書きました。\n\n たまにはゲームの話でも\nクロードと対話している中で、たわいのない話から・・・\nkay：AIに画像認識させるのはごく普通になってきたんだけど、そうするとクロードが画面を見てゲームを自律的に遊ぶなんてこともできたりするのかな？\nクロード：いまでもある程度はできると思いますね。アクションゲームは処理が追いつかないですが。\nkay：ふーむ？リア...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "ローカルLLM study8: Qwen3.8-27Bをstudy2〜4の手法で深掘りする",
+      "url": "https://zenn.dev/tkpurine/articles/local-llm-study-008-qwen3-8-27b-deep-dive",
+      "site": "Zenn(Python)",
+      "published": "2026-11-03T11:46:04Z",
+      "description": "この記事について\nstudy7 で、Qwen3.8-27B（UD-Q2_K_XL量子化）を単発タスクと要約タスクで検証しました。コード生成は正確で、要約タスクでは「3〜5個の箇条書きで」という指示に唯一正確に従うという良い結果も出ましたが、study5 でOrnith-1.5-9Bが自律タスクでAiderと相性が悪かったことを踏まえ、同じ観点で深掘りしました。\n結論を先に言うと、Qwen3.8-2...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "AI協働：世界標準規格の野望・第2弾 — みんなも、ぐりぐりしてみませんか？（笑）",
+      "url": "https://zenn.dev/frb_tamasub/articles/ai-collaboration10-frb-launch-guriguri",
+      "site": "Zenn(Python)",
+      "published": "2026-11-03T11:37:37Z",
+      "description": "!\n\n この記事について\n今回は、少し趣向を変えて、FRB研究所の記者会見というコント形式でお届けします（笑）。\n技術ブログのZennで何をやっているんだ？と思われるかもしれませんが、内容は至って真面目です。\n昨日の日付を入力するのが面倒だったところから始まった小さなツール開発が、操作体験を重ねるうちに、思いもよらない発見へとつながっていきました。\nこの記事で本当に伝えたいのは、「体験の連鎖から新...",
       "category": "開発",
       "rss_category": "",
       "image_url": ""
