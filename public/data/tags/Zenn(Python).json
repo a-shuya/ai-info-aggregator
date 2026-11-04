@@ -1,8 +1,198 @@
 {
   "site": "Zenn(Python)",
-  "last_updated": "2026-11-04T11:14:55.172736",
-  "total_articles": 7606,
+  "last_updated": "2026-11-04T18:43:10.144809",
+  "total_articles": 7624,
   "articles": [
+    {
+      "title": "ブラックジャックの確率論(9) 戦略表の計算結果と考察",
+      "url": "https://zenn.dev/monty/articles/12753433754441",
+      "site": "Zenn(Python)",
+      "published": "2026-11-04T15:21:44Z",
+      "description": "本記事は「ブラックジャックの確率論」と名付けられたシリーズ記事の1つです。全体の目次は下記の記事にまとめられています。\nhttps://zenn.dev/monty/articles/bb39331965c182\nまた、本記事シリーズで触れられているプログラムはGitHubの下記の場所にて公開されています。\nhttps://github.com/monty-orlac/BlackJack-Anal...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "「クリスマス当日まで開けられないメッセージ」を Python で正しく実装する：タイムゾーンとサーバー側判定",
+      "url": "https://zenn.dev/decomytree/articles/b0e44c5b003223",
+      "site": "Zenn(Python)",
+      "published": "2026-11-04T15:16:14Z",
+      "description": "はじめに\n寄せ書きやメッセージカード系の Web サービスでは、「受け取ったメッセージは指定日まで開けられない」という仕様がよく使われます。たとえば Deco My Tree は、友だちがオーナメントとメッセージを飾ったツリーを、クリスマス当日に開封する形のサービスです。\nこの「当日まで開けられない」は一見 if today &gt;= 12/25 だけで済みそうですが、実装すると次の2点でつまず...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "Saturday：耳と口をつけた Claude Code",
+      "url": "https://zenn.dev/daming_cafe/articles/saturday-voice-claude-code",
+      "site": "Zenn(Python)",
+      "published": "2026-11-04T15:00:13Z",
+      "description": "Saturday は、Claude Code の上に作ったハンズフリーの音声アシスタントだ。「Saturday」と呼んで、どのプロジェクトについてでも質問すると、4〜6 秒後に一文の答えが声で返ってくる。費用は 1 往復あたり約 $0.002。実際の変更は該当プロジェクトの中で起動した Claude Code セッションに渡り、危険な操作は画面上のキー入力を待つ。\n設計ルールはひとつ。音声レイヤー...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "GPUなしでAbliteration CLI『Heretic』を動かし、拒否率とKL発散を実測した",
+      "url": "https://zenn.dev/matsushima_a/articles/day-036-heretic-abliteration-cpu-smoke-test",
+      "site": "Zenn(Python)",
+      "published": "2026-11-04T14:18:14Z",
+      "description": "これは何を試した記事か\nHeretic という、LLMの拒否挙動(いわゆる検閲・安全性アラインメント)を再学習なしで抑制するPython製CLIツールを実際に動かし、処理前後の拒否率とKL発散(元モデルの出力分布からのズレ)を数値で確認した記事である。\n筆者の環境にはGPUがなく、READMEが前提にしているRTX 3090での実行(既定設定で30〜40分)とは条件が大きく異なる。\nそこで「GPU...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "画像から動画を生成する前に：Python で写真の品質を自動チェックする小さな CLI",
+      "url": "https://zenn.dev/toycartorealcar/articles/da8a356d7a4a8c",
+      "site": "Zenn(Python)",
+      "published": "2026-11-04T14:07:32Z",
+      "description": "はじめに\n画像1枚から動画を生成するサービスでは、出力の品質が入力写真に大きく左右されます。ピンぼけ、暗すぎる露出、極端な縦横比の写真をアップロードすると、生成の試行回数を消費したうえで期待外れの結果になりがちです。\nこの記事では、アップロード前に写真を機械的にふるい分ける Python 製の小さな CLI を作ります。題材は、ミニカーの写真を実車サイズの車の動画に変換する「toy car to ...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "飛行機の音で撮った場所がわかる？ 作った音でドップラーの線を逆算し、3 つの対策を試してみた",
+      "url": "https://zenn.dev/lecto/articles/08f829973970a5",
+      "site": "Zenn(Python)",
+      "published": "2026-11-04T13:55:58Z",
+      "description": "はじめに\n2026 年 11 月 2 日、colsto さんが YouTube に出した動画が話題になりました。動画の後ろに入った、聞こえないくらい小さなプロペラ機の音から、撮った場所を約 100 m まで絞りこめた、という内容です。\n手法の大まかな流れは次のとおりです（動画の説明文より）。\n\n音のスペクトログラムに出るドップラーの線から、飛行機の速さ・いちばん近づいたときの距離・その時刻を読む\n...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "AI協働：パソコンでかなフリック入力使う人なんているの？（笑）",
+      "url": "https://zenn.dev/frb_tamasub/articles/ai-collaboration11-frb-kana-flick-press-conference",
+      "site": "Zenn(Python)",
+      "published": "2026-11-04T13:24:35Z",
+      "description": "!\n\n はじめに — 今回もおちゃらけてごめんなさい（笑）\n前回に引き続き、今回もFRB研究所の架空の記者会見というコント形式でお届けします。\n冒頭からおちゃらけてしまって、ごめんなさい（笑）。\nでも、実際に取り組んでいることは、わりと真面目です。これはAIと一緒に小さな違和感を拾い、次の発想が生まれる過程を観察する「思考拡張」の実験でもあります。\nマウスの移動距離を減らしたくて作った小さなリモコ...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "【KDP 後編】Kindle Comic Creatorは不要！Pythonだけで固定レイアウトEPUBを自動ビルドする",
+      "url": "https://zenn.dev/sesamy_jp/articles/36d601c64cd857",
+      "site": "Zenn(Python)",
+      "published": "2026-11-04T13:03:03Z",
+      "description": "!\n【ご注意（2026年11月現在）】\n本記事で解説しているEPUB 3の仕様、およびAmazon Kindle（KDP）やApple Booksの内部ビューア・審査基準は、2026年11月現在の実機検証に基づいています。電子書籍ストアの配信仕様やレンダリングエンジンは予告なく変更される場合があるため、最新の公式ドキュメントも併せてご確認ください。\n\n前編では、Pythonの画像処理ライブラリ「P...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "ローカルLLM study9: 三値量子化Bonsai 2 27Bを、同条件のQwen3.8-27Bと並べて測り直す",
+      "url": "https://zenn.dev/tkpurine/articles/local-llm-study-009-bonsai2-ternary-custom-build",
+      "site": "Zenn(Python)",
+      "published": "2026-11-04T12:28:59Z",
+      "description": "結論: 27Bの単発の回答では、三値量子化のBonsai 2(1.77bit/weight)は通常量子化のQwen3.8-27B(2.88bit/weight)に目立つ差を出さず、速度は約2.3〜2.8倍だった。ただし自律的な複数ステップ(monocoder)では三値が1/4、通常が3/4で、通常量子化に及ばない兆候があった。単発の差は各1回なので結論にしていない。\n読者が得るもの: Ollama...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "【心折設計】Python・NumPyの読めない変形コードにブチ切れたので、黒魔術イディオムを全解説する",
+      "url": "https://zenn.dev/rg687076/articles/56df50186d9fb5",
+      "site": "Zenn(Python)",
+      "published": "2026-11-04T12:10:00Z",
+      "description": "背景：Kaggleのコードを読んでいて、突然心が折れる瞬間\n\n\nあるあるの絶望：上位ソリューション（3rd Place Solutionなど）を覗く。\n\nap[:, None, :] - bp[None, :, :] ← 「は？なんこれ」\n\nチュートリアルでは絶対教わらない、次元の暴力とブロードキャストの嵐。\n「勝手に仕様を決めないでくれ！」というエンジニアの叫びから始まる。\n\n\n\n 概要\nkag...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "JV-Link を Python から無人で回す — ダイアログ、5 時間の遅さの正体、1 件 110KB のメモリ漏れ",
+      "url": "https://zenn.dev/crossclub_lab/articles/jvlink-python-unattended-setup",
+      "site": "Zenn(Python)",
+      "published": "2026-11-04T12:05:21Z",
+      "description": "!\nこの記事で分かること\n\n64bit の COM「JVDTLab.JVLink」を pywin32 から呼び、種別ごとに「取得 → 保存 → 取り込み → 状態記録」を回す形\n無人だと止まる「セットアップ」ダイアログを、位置を取ってマウスで押す PowerShell で越えた方法\n起きた失敗 8 つ（ダイアログ、-301、None、NUL、5 時間後の例外、毎秒 21 件の遅さ、メモリ漏れ）と、...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "EmbeddingGemma 2をColabで試す｜日本語の意味検索・画像検索・MRLの検証",
+      "url": "https://zenn.dev/tatsuyaaaaaaa/articles/b7a9037601eca6",
+      "site": "Zenn(Python)",
+      "published": "2026-11-04T11:45:10Z",
+      "description": "背景\nRAGや類似検索で扱う情報は、文章だけとは限りません。例えば設備の障害対応では、「異音がして停止した」という報告文に加え、現場写真や動画も検索対象になります。しかし、テキスト用・画像用のEmbeddingモデルを別々に導入すると、異なる形式の情報をどう比較するかが課題になります。\n2026年10月に公開された EmbeddingGemma 2 は、テキスト・画像・音声・動画を共通の 768次...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "「直したはずの分岐」がコードに無い — 共有ツリーでの履歴書き換えが未コミットの修正を消していた",
+      "url": "https://zenn.dev/shinsei99/articles/fix-existed-only-in-the-log",
+      "site": "Zenn(Python)",
+      "published": "2026-11-04T11:16:17Z",
+      "description": "夜間バッチのしきい値を直した。1週間後、そのコードはどこにも無かった。\nその間バッチは毎晩「新規0件・失敗0」を出し続けていて、ログ上は健康そのものだった。\n\n 症状\n\n1週間前に直したはずの分岐が、コードに存在しない\n夜間の取り込みは毎晩成功。エラーゼロ\n索引の中身を1件抜き出して確認すると、本文が2,251字入っていた。直っているように見えた\n\n全量で数え直すと、本文がごくわずかしか入っていな...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "ChatGPTの会話を自動保存するChrome拡張を、AI初心者が作ってみた",
+      "url": "https://zenn.dev/gpt3000yen/articles/68c7006b64b3cc",
+      "site": "Zenn(Python)",
+      "published": "2026-11-04T10:55:52Z",
+      "description": "はじめに\nChatGPTで長い開発作業をしていると、こんな問題にぶつかりませんか？\n「新しいチャットに移ると、前の会話の細かい経緯が引き継がれない」\n私はAIの専門家でもプログラマーでもない、50代の会社員です。\n現在、ChatGPTを相棒に「AI一人会社」を作る実験をしています。\nところが、開発が長引くほど、過去に何を試し、どこで失敗し、何を修正したのかを追いかけるのが難しくなりました。\nそこで...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "AI生成コードの検証をCIに埋め込む — スキャナが届かない「認可」を自動テストで埋める",
+      "url": "https://zenn.dev/hackbox_ai/articles/0c1707bfff7898",
+      "site": "Zenn(Python)",
+      "published": "2026-11-04T10:15:28Z",
+      "description": "AI コーディングアシスタントが当たり前になって、コードを書く速度は確実に上がりました。GitHub が 2022 年に公開した研究では、Copilot を使った被験者は同じタスクを約 55% 速く完了しています。数字の大小より重要なのは、この速度差がそのまま「レビュー待ち行列」と「未検証のコード」に積み上がるという点です。\nここで起きがちなのが、次のような錯覚です。\n\n「CI は回しているし、S...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "Claude Code の会話の記録からコストを数えるときにハマった4つのこと",
+      "url": "https://zenn.dev/haruto_miyakawa/articles/claude-code-transcript-cost-pitfalls",
+      "site": "Zenn(Python)",
+      "published": "2026-11-04T10:00:06Z",
+      "description": "前の記事「Claude Code の使用量を、ログイン情報に触らず Windows のタスクトレイに出す」の最後で、日別のコストやモデル別の使い方を見るダッシュボード（HTML 1枚）の話は別の記事で書く、と予告しました。今回はその話です。\nClaude Code は、会話の記録を手元に JSON Lines で残しています。そこには返事ごとのモデル名と、入力・出力・キャッシュの数が入っているので...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "Blender と HTML と音を1つの timeline.py で動かして30秒の紹介動画を作った",
+      "url": "https://zenn.dev/haruto_miyakawa/articles/blender-html-timeline-intro-film",
+      "site": "Zenn(Python)",
+      "published": "2026-11-04T10:00:06Z",
+      "description": "自分で作っている文章を書くアプリ「つむぐ」の、30秒の紹介動画を作りました。荒れた世界を旅するドット絵の少女が、夕日の差す部屋に入って古いブラウン管を起動します。カメラが画面に寄ると、そこからはアプリの画面の中で、カーソルとマスコットの「つむぎ」が一緒に旅の日誌を書き、無線の掲示板に投稿します。最後に、だれかから短い返事が届きます。\n\n仕上がりの30秒から25コマを並べたもの（左上はコマ番号と秒）...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "dataclass vs Pydantic — どちらを選ぶべきか",
+      "url": "https://zenn.dev/akinori901/articles/20261006-plan051",
+      "site": "Zenn(Python)",
+      "published": "2026-11-04T08:39:24Z",
+      "description": "dataclass vs Pydantic — どちらを選ぶべきか\n\n 概要\nPython でデータを「型つきの構造体」として扱いたいとき、標準ライブラリの dataclasses と、サードパーティの Pydantic のどちらを使うかは、よくある判断ポイントです。\n両者は「クラス定義をフィールド宣言だけで済ませる」という見た目がよく似ているため混同されがちですが、設計思想はまったく異なります。...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "【Python×金融工学】60段板の偽見せ板バグを定理証明しCERN Zenodoで英語論文(DOI)出版した話",
+      "url": "https://zenn.dev/prompter_note/articles/lumina-cern-zenodo-orderbook-pyramiding-v665",
+      "site": "Zenn(Python)",
+      "published": "2026-11-04T06:15:06Z",
+      "description": "はじめに\n個人開発している自律型AIヘッジファンド『Lumina Capital』では、Moomoo OpenD（Level 3・60段フル板）やMT5を直結した4つの独立運用チャンバー（第1号室：日米欧スイング、第2号室：米国株デイトレ、第3号室：貴金属2段階ATRレジーム、第4号室：時間差2毛作ケリー複利）を24時間稼働させています。\nhttps://github.com/ramuza0113...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
     {
       "title": "「システムコール」の適当な説明",
       "url": "https://zenn.dev/take5553/articles/rough-guide-to-system-calls",
@@ -29,16 +219,6 @@
       "site": "Zenn(Python)",
       "published": "2026-11-04T00:00:25Z",
       "description": "はじめに\n小さなツールにAPI連携を仕込むとき、依存を増やしたくないので urllib だけで書きたいことがある。だが実際に書いてみると、404のエラーボディの読み方、タイムアウトの例外の種類、リトライの条件で毎回つまずく。ローカルにテスト用HTTPサーバーを立てて、挙動をすべて実測しながら「そのまま使える最小のクライアント」を作った。\n\n 環境\n\nWindows 11（ビルド 10.0.2620...",
-      "category": "開発",
-      "rss_category": "",
-      "image_url": ""
-    },
-    {
-      "title": "YouTube API の uploadLimitExceeded は24時間10本で出た。非公開の固定はなし",
-      "url": "https://zenn.dev/ai_hacchu/articles/youtube-data-api-upload-limit-private-lock",
-      "site": "Zenn(Python)",
-      "published": "2026-11-04T00:00:06Z",
-      "description": "この記事で分かること\n\nYouTube Data API で動画を上げるとき、API のクォータ（API の呼び出し量の割り当て。1日 10,000 ユニット）とは別に、チャンネル側の投稿本数の上限に当たること。手元では直近24時間に10本を上げた次の1本が uploadLimitExceeded で止まった。上限は暦日ではなく直近24時間で数えていた\n「審査を受けていない API プロジェクトか...",
       "category": "開発",
       "rss_category": "",
       "image_url": ""

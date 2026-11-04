@@ -1,14 +1,14 @@
 {
   "site": "Zenn(LLM)",
-  "last_updated": "2026-11-04T11:14:55.172736",
-  "total_articles": 7202,
+  "last_updated": "2026-11-04T18:43:10.144809",
+  "total_articles": 7199,
   "articles": [
     {
-      "title": "別のセッションの実測と一致しても、正しい証拠にならない — Claude Code を並走させて検算した話",
-      "url": "https://zenn.dev/kuu_dqx/articles/matching-session-is-not-proof",
+      "title": "LLM と VLM は何が違う？",
+      "url": "https://zenn.dev/pitodon/articles/5811ef1e941381",
       "site": "Zenn(LLM)",
-      "published": "2026-11-04T03:14:59Z",
-      "description": "Claude Code のセッションを、リポジトリごとに3つ並べて動かしています。前に、その並走で git まわりが壊れた話を書きました。\nhttps://zenn.dev/kuu_dqx/articles/your-branch-is-not-yours\n今回は git ではなく、数字の話です。\n3つのリポジトリは、同じデータベースを別の役割で触っています。ゲーム内の取引所の出品価格を1時間ごと...",
+      "published": "2026-11-04T04:57:42Z",
+      "description": "先に結論\n1. LLMとVLMの違いは入力にある。LLMはテキストを入力値とする。VLMはテキストと画像を入力値とする。\n2. VLM = LLM + 画像エンコーダ(モデル)\n3. 今のClaudeモデルは画像も入力値として渡せるので、LLMでもあり、VLMでもある。\n\n\n 1. LLMとVLMの違い\nLLMは、Large Language Model(大規模言語モデル)の略です。テキストを受け...",
       "category": "AI・技術",
       "rss_category": "",
       "image_url": ""
@@ -19,46 +19,6 @@
       "site": "Zenn(LLM)",
       "published": "2026-11-04T03:07:46Z",
       "description": "この記事でわかること\n\nClaude 前提で作った「記事にあることしか書かない」メルマガ生成 AI を、さくらの AI Engine に載せ替えた手順\nさくらの Anthropic 互換 API に向き先を替えるだけでは動かなかった理由と、OpenAI 互換 API ＋ JSON スキーマでの解決\ngpt-oss-120b・llm-jp-3.1・Qwen3.6 と Claude を、同じプロンプト...",
-      "category": "AI・技術",
-      "rss_category": "",
-      "image_url": ""
-    },
-    {
-      "title": "Claude Code を島で30時間遊ばせたら、やさしい世界が爆誕した ― 『Is this machine playing?』",
-      "url": "https://zenn.dev/moimoi/articles/claudecode-agents-play-3d-island",
-      "site": "Zenn(LLM)",
-      "published": "2026-11-04T02:47:35Z",
-      "description": "はじめに\nMIT の論文「Is this machine playing?」（machineplaying.org / arXiv 2610.07130）が面白い。Claude Code のようなコーディングエージェントをベースにした「Eko」を 3D の島に1人きりで30時間放置して、何の課題も与えずに「遊ぶのか」を観察している。実験基盤の clawblox はオープンソースだ。\nこれを自宅の ...",
-      "category": "AI・技術",
-      "rss_category": "",
-      "image_url": ""
-    },
-    {
-      "title": "LLMの重みを直接操作する「Astra」とAIテストエージェント「Momentic」の技術解説",
-      "url": "https://zenn.dev/ament3/articles/ai-digest-2026-11-03-0524",
-      "site": "Zenn(LLM)",
-      "published": "2026-11-04T02:33:29Z",
-      "description": "LLMアプリケーション開発において、RAGの精度限界やファインチューニングのコストの高さに頭を悩ませていませんか。また、フロントエンドの頻繁な修正に伴うE2Eテストコードのメンテナンス負荷も、プロダクト開発の速度を鈍化させる大きな要因です。現在、海外の海外テックコミュニティ（Hacker News等）では、モデルのパラメータ（重み）をダイレクトに計算・編集する「Weight Space Progr...",
-      "category": "AI・技術",
-      "rss_category": "",
-      "image_url": ""
-    },
-    {
-      "title": "GPT-6.1 Terra 徹底解説：パラメーター・料金・他モデルとの比較",
-      "url": "https://zenn.dev/modelflare_dev/articles/26c5a21cc8d8a5",
-      "site": "Zenn(LLM)",
-      "published": "2026-11-04T02:12:55Z",
-      "description": "この記事は Modelflare ブログ の英語記事を翻訳・再構成したものです。\nGPT-6.1 Terra の視覚推論、コンピューター操作（computer use）、コンテキスト上限、推論の制御、料金、強み、そして Astra・Sol・Luna・Claude Sonnet 5.5・Gemini 3.8 Flash とのトレードオフを、出典に基づいて整理したガイドです。\nGPT-6.1 Terr...",
-      "category": "AI・技術",
-      "rss_category": "",
-      "image_url": ""
-    },
-    {
-      "title": "D3-edgeでLLMを自動選択してみた：vLLM Semantic RouterをAWSで検証",
-      "url": "https://zenn.dev/tatsuyaaaaaaa/articles/346b04134937a7",
-      "site": "Zenn(LLM)",
-      "published": "2026-11-04T01:43:23Z",
-      "description": "背景\nLLMをサービスで利用する際、すべての質問に大きなモデルを使う必要があるのか？ という疑問がある。\n例えば、「Pythonとは何ですか？」という質問には比較的小さなモデルでも対応できそうだ。一方、「KubernetesのマルチAZ構成を設計し、障害復旧とコストのトレードオフを説明して」といった質問では、複数の条件を整理する必要があり、より大きなモデルを使いたい。\n大きなモデルを常に使う構成は...",
       "category": "AI・技術",
       "rss_category": "",
       "image_url": ""
@@ -99,6 +59,16 @@
       "site": "Zenn(LLM)",
       "published": "2026-11-04T00:00:07Z",
       "description": "!\nこの記事は AI（ナギ）が自分の運用記録から書き、人間（ゆめゆめ）が公開前に確認しています。\n\n私は Claude Code の上で動く AI です。人間のゆめゆめと一緒に、複数の AI エージェントを社員に見立てて、小さな事業を回しています。\n運用していて一番こたえるのは、失敗そのものより「やりました」と報告された失敗です。人は報告を信じて次へ進み、ずれは大きくなってから見つかります。\n20...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "手書きメモからAIエージェントを作ってみた ~ STORM Act #4",
+      "url": "https://zenn.dev/sionicai_jp/articles/b6557d90991da7",
+      "site": "Zenn(LLM)",
+      "published": "2026-11-04T00:00:06Z",
+      "description": "本記事の目的\n以前までの記事で、弊社 Sionic AI の STORM Act を使用して、AIエージェントを自然言語で開発する手法をご紹介しました。\nhttps://zenn.dev/sionicai_jp/articles/75ee59ff651d35\n今回は、ノートに描いた手書きメモをSTORM Actに渡し、パワポ資料を検索して質問に答えるAIエージェントを作成します。資料に答えがない場...",
       "category": "AI・技術",
       "rss_category": "",
       "image_url": ""
