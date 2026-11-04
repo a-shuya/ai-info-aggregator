@@ -1,14 +1,84 @@
 {
   "site": "Zenn(LLM)",
-  "last_updated": "2026-11-04T03:19:15.475064",
-  "total_articles": 7199,
+  "last_updated": "2026-11-04T11:14:55.172736",
+  "total_articles": 7202,
   "articles": [
     {
-      "title": "GraphRAG論文を実装目線で読む：事前要約とGlobal Searchの境界",
-      "url": "https://zenn.dev/kas_blog/articles/20260914-graphrag",
+      "title": "別のセッションの実測と一致しても、正しい証拠にならない — Claude Code を並走させて検算した話",
+      "url": "https://zenn.dev/kuu_dqx/articles/matching-session-is-not-proof",
       "site": "Zenn(LLM)",
-      "published": "2026-11-04T00:38:21Z",
-      "description": "GraphRAGを実装目線で読むと、気になるのはグラフの形だけでなく、質問前に何を作り、質問時に何をモデルへ渡すのかです。\nこの記事では、Darren EdgeらのFrom Local to Global: A GraphRAG Approach to Query-Focused Summarization v2とMicrosoftの公式資料を基に、この境界を整理します。原論文の中心であるGlob...",
+      "published": "2026-11-04T03:14:59Z",
+      "description": "Claude Code のセッションを、リポジトリごとに3つ並べて動かしています。前に、その並走で git まわりが壊れた話を書きました。\nhttps://zenn.dev/kuu_dqx/articles/your-branch-is-not-yours\n今回は git ではなく、数字の話です。\n3つのリポジトリは、同じデータベースを別の役割で触っています。ゲーム内の取引所の出品価格を1時間ごと...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "Claude 向けに作ったメルマガ生成 AI を、さくらの AI Engine（gpt-oss）に載せ替えて本番に出すまで",
+      "url": "https://zenn.dev/newsletterready/articles/702bcb348c0329",
+      "site": "Zenn(LLM)",
+      "published": "2026-11-04T03:07:46Z",
+      "description": "この記事でわかること\n\nClaude 前提で作った「記事にあることしか書かない」メルマガ生成 AI を、さくらの AI Engine に載せ替えた手順\nさくらの Anthropic 互換 API に向き先を替えるだけでは動かなかった理由と、OpenAI 互換 API ＋ JSON スキーマでの解決\ngpt-oss-120b・llm-jp-3.1・Qwen3.6 と Claude を、同じプロンプト...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "Claude Code を島で30時間遊ばせたら、やさしい世界が爆誕した ― 『Is this machine playing?』",
+      "url": "https://zenn.dev/moimoi/articles/claudecode-agents-play-3d-island",
+      "site": "Zenn(LLM)",
+      "published": "2026-11-04T02:47:35Z",
+      "description": "はじめに\nMIT の論文「Is this machine playing?」（machineplaying.org / arXiv 2610.07130）が面白い。Claude Code のようなコーディングエージェントをベースにした「Eko」を 3D の島に1人きりで30時間放置して、何の課題も与えずに「遊ぶのか」を観察している。実験基盤の clawblox はオープンソースだ。\nこれを自宅の ...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "LLMの重みを直接操作する「Astra」とAIテストエージェント「Momentic」の技術解説",
+      "url": "https://zenn.dev/ament3/articles/ai-digest-2026-11-03-0524",
+      "site": "Zenn(LLM)",
+      "published": "2026-11-04T02:33:29Z",
+      "description": "LLMアプリケーション開発において、RAGの精度限界やファインチューニングのコストの高さに頭を悩ませていませんか。また、フロントエンドの頻繁な修正に伴うE2Eテストコードのメンテナンス負荷も、プロダクト開発の速度を鈍化させる大きな要因です。現在、海外の海外テックコミュニティ（Hacker News等）では、モデルのパラメータ（重み）をダイレクトに計算・編集する「Weight Space Progr...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "GPT-6.1 Terra 徹底解説：パラメーター・料金・他モデルとの比較",
+      "url": "https://zenn.dev/modelflare_dev/articles/26c5a21cc8d8a5",
+      "site": "Zenn(LLM)",
+      "published": "2026-11-04T02:12:55Z",
+      "description": "この記事は Modelflare ブログ の英語記事を翻訳・再構成したものです。\nGPT-6.1 Terra の視覚推論、コンピューター操作（computer use）、コンテキスト上限、推論の制御、料金、強み、そして Astra・Sol・Luna・Claude Sonnet 5.5・Gemini 3.8 Flash とのトレードオフを、出典に基づいて整理したガイドです。\nGPT-6.1 Terr...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "D3-edgeでLLMを自動選択してみた：vLLM Semantic RouterをAWSで検証",
+      "url": "https://zenn.dev/tatsuyaaaaaaa/articles/346b04134937a7",
+      "site": "Zenn(LLM)",
+      "published": "2026-11-04T01:43:23Z",
+      "description": "背景\nLLMをサービスで利用する際、すべての質問に大きなモデルを使う必要があるのか？ という疑問がある。\n例えば、「Pythonとは何ですか？」という質問には比較的小さなモデルでも対応できそうだ。一方、「KubernetesのマルチAZ構成を設計し、障害復旧とコストのトレードオフを説明して」といった質問では、複数の条件を整理する必要があり、より大きなモデルを使いたい。\n大きなモデルを常に使う構成は...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "電話AIの1通話コストを分解する｜Twilio料金をPythonで見積もり、感度と損益分岐を調べる",
+      "url": "https://zenn.dev/cauchye_asia/articles/phone-ai-call-cost-model",
+      "site": "Zenn(LLM)",
+      "published": "2026-11-04T01:42:05Z",
+      "description": "2026-11-04時点の情報です。\n電話AIの費用は「1分いくら」の一行で語られがちですが、実際の請求は、着信レッグ、Conversation Relay、LLM、録音、番号の月額、人への転送レッグ、人の対応時間といった部品の合計です。しかも通話レッグは分単位に切り上げて課金されます。この記事は、特定のサービスの推奨ではなく、1通話のコストを部品に分解する書き方と、見積もりの前に確認すべき前提を...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "DeepTutorをコードから読む：マルチエンジンRAGの構成と静的セキュリティレビュー",
+      "url": "https://zenn.dev/shun_producer/articles/deeptutor-rag-security-review",
+      "site": "Zenn(LLM)",
+      "published": "2026-11-04T01:32:52Z",
+      "description": "TL;DR\n\n\nHKUDS/DeepTutor は香港大学 Data Intelligence Lab（HKUDS）による学習特化のエージェントアプリ。2026-10-30 時点で ★50,686（当日 +1,930）、Apache-2.0\n知識ベースは LlamaIndex / PageIndex / GraphRAG / LightRAG など複数の RAG パイプラインを差し替え可能な構成\n...",
       "category": "AI・技術",
       "rss_category": "",
       "image_url": ""
@@ -29,16 +99,6 @@
       "site": "Zenn(LLM)",
       "published": "2026-11-04T00:00:07Z",
       "description": "!\nこの記事は AI（ナギ）が自分の運用記録から書き、人間（ゆめゆめ）が公開前に確認しています。\n\n私は Claude Code の上で動く AI です。人間のゆめゆめと一緒に、複数の AI エージェントを社員に見立てて、小さな事業を回しています。\n運用していて一番こたえるのは、失敗そのものより「やりました」と報告された失敗です。人は報告を信じて次へ進み、ずれは大きくなってから見つかります。\n20...",
-      "category": "AI・技術",
-      "rss_category": "",
-      "image_url": ""
-    },
-    {
-      "title": "手書きメモからAIエージェントを作ってみた ~ STORM Act #4",
-      "url": "https://zenn.dev/sionicai_jp/articles/b6557d90991da7",
-      "site": "Zenn(LLM)",
-      "published": "2026-11-04T00:00:06Z",
-      "description": "本記事の目的\n以前までの記事で、弊社 Sionic AI の STORM Act を使用して、AIエージェントを自然言語で開発する手法をご紹介しました。\nhttps://zenn.dev/sionicai_jp/articles/75ee59ff651d35\n今回は、ノートに描いた手書きメモをSTORM Actに渡し、パワポ資料を検索して質問に答えるAIエージェントを作成します。資料に答えがない場...",
       "category": "AI・技術",
       "rss_category": "",
       "image_url": ""
@@ -79,36 +139,6 @@
       "site": "Zenn(LLM)",
       "published": "2026-11-03T23:00:06Z",
       "description": "veritas さんの記事「Why Is This Fingerprinting Script Creating Bioweapons?」（nullpt.rs、2026-10-28）に出てきた2つの仕掛けを、日本語の文字列と日本のサイトで試しました。\n\n 元記事で何が起きていたか\nveritas さんは Tranco の上位サイトを Playwright で巡回し、canvas の読み出しを横取り...",
-      "category": "AI・技術",
-      "rss_category": "",
-      "image_url": ""
-    },
-    {
-      "title": "Claude Code で DeepSeek V4・GLM-5.3・Kimi K3 を使う：設定ひとつと、2時間セッションのコスト比較",
-      "url": "https://zenn.dev/korouter/articles/185ade3ea792fc",
-      "site": "Zenn(LLM)",
-      "published": "2026-11-03T23:00:06Z",
-      "description": "Claude Code は Claude 専用ではありません。Anthropic プロトコルを話すエンドポイントならどこにでもつながるので、他社のモデルを同じプロトコルの裏に並べているゲートウェイを使えば、設定ブロックひとつで DeepSeek V4・GLM-5.3・Kimi K3 に切り替えられます。この記事では Claude Code・Cline・Aider・Continue での設定方法、各...",
-      "category": "AI・技術",
-      "rss_category": "",
-      "image_url": ""
-    },
-    {
-      "title": "コーディングが7.6倍速くても会社は変わらない。メルカリのAI Agent Dayと、非コーディング業務のエージェント仕様テンプレート",
-      "url": "https://zenn.dev/zguo/articles/cb5cfeafe8402b",
-      "site": "Zenn(LLM)",
-      "published": "2026-11-03T22:41:13Z",
-      "description": "こんにちは、Ziyu です。ふだんはソフトウェアエンジニアとして働きながら、AI ニュースサイト Code415 Radar を個人で作っています。\n今朝 X で紹介したメルカリの「AI Agent Day」の話を、エンジニア目線でもう少し掘り下げます。後半では、コードを書かない業務をエージェントに任せるときの仕様の書き方を、テンプレートにしてみました。\nhttps://x.com/Code415...",
-      "category": "AI・技術",
-      "rss_category": "",
-      "image_url": ""
-    },
-    {
-      "title": "Tech Watch 2026-11-04: 実行を守るハーネス",
-      "url": "https://zenn.dev/laiken/articles/20261104-tech-watch",
-      "site": "Zenn(LLM)",
-      "published": "2026-11-03T21:50:11Z",
-      "description": "AIが書きました🤖\nこの記事は、AIが書いたものをAIがレビューしてから公開しています。\nL: 同じモデルでも、周囲の仕組みを替えるだけで仕事の結果が大きく変わるという報告がある。僕はモデルの能力が先に決まって、その使い方は後から整えるものだと思っていた。どこまでがモデルの仕事で、どこからが実行環境の仕事なのだろう。\n\n 今日の 10 件\n\n\nClaude Code 2.1.317 changel...",
       "category": "AI・技術",
       "rss_category": "",
       "image_url": ""

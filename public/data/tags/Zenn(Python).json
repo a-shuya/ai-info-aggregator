@@ -1,14 +1,64 @@
 {
   "site": "Zenn(Python)",
-  "last_updated": "2026-11-04T03:19:15.475064",
-  "total_articles": 7602,
+  "last_updated": "2026-11-04T11:14:55.172736",
+  "total_articles": 7606,
   "articles": [
     {
-      "title": "APIキーなしでAIコンテンツを作る設計：判断はチャットのAI、書き出しはツール",
-      "url": "https://zenn.dev/shoyomayabot/articles/ai-content-without-api-key",
+      "title": "「システムコール」の適当な説明",
+      "url": "https://zenn.dev/take5553/articles/rough-guide-to-system-calls",
       "site": "Zenn(Python)",
-      "published": "2026-11-03T22:11:11Z",
-      "description": "AIを組み込んだツールを作ろうとすると、多くの解説で「まずAPIキーを取得しましょう」と書かれています。ツールの中からAIのAPIを呼び出す作り方です。\nただ、APIは使った分だけ料金がかかります。個人で作るツールだと、料金がいくらになるか読めないのは不安です。キーの管理にも気を使います。\nこの記事では、APIキーを使わずに、AIの判断を組み込んだツールを作る設計を紹介します。題材は、配信のアーカ...",
+      "published": "2026-11-04T01:37:55Z",
+      "description": "!\n適当な説明なので「厳密ではない」という苦情は受け付けません。\n\n例えばPythonでは print() 関数を実行すると、標準出力（ターミナルで動かしていればターミナル）に文字が書き込まれる。\nでも実際はターミナルのどの位置に表示したらいいのかとか、ドットは何ドットとかそういう「表示処理」みたいなこともしないといけないはず。そういうものはOSの極めて深い部分がハードウェアに合わせて処理している...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "テストを流すと開発用DBのファイルが残っていた ─ .gitignoreで隠さずに原因を追った話",
+      "url": "https://zenn.dev/itaraiguma/articles/pytest-test-db-isolation-why",
+      "site": "Zenn(Python)",
+      "published": "2026-11-04T00:16:54Z",
+      "description": "はじめに\n個人開発している技術記事キュレーションサービス「DevPick」のバックエンドは、FastAPIとSQLAlchemyで書いています。本番はMySQLですが、ローカルの開発とテストはSQLiteで動かしていて、テストはpytest-xdistで並列に約8,800件流しています。\n2026年10月31日、別の作業をworktreeで進めていたところ、全テストを流したあとに開発用のDBファイ...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "Python標準ライブラリだけでAPIクライアントを書く：urllibのPOST・タイムアウト・リトライ",
+      "url": "https://zenn.dev/warrobotsxyz/articles/python-urllib-api-client-retry",
+      "site": "Zenn(Python)",
+      "published": "2026-11-04T00:00:25Z",
+      "description": "はじめに\n小さなツールにAPI連携を仕込むとき、依存を増やしたくないので urllib だけで書きたいことがある。だが実際に書いてみると、404のエラーボディの読み方、タイムアウトの例外の種類、リトライの条件で毎回つまずく。ローカルにテスト用HTTPサーバーを立てて、挙動をすべて実測しながら「そのまま使える最小のクライアント」を作った。\n\n 環境\n\nWindows 11（ビルド 10.0.2620...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "YouTube API の uploadLimitExceeded は24時間10本で出た。非公開の固定はなし",
+      "url": "https://zenn.dev/ai_hacchu/articles/youtube-data-api-upload-limit-private-lock",
+      "site": "Zenn(Python)",
+      "published": "2026-11-04T00:00:06Z",
+      "description": "この記事で分かること\n\nYouTube Data API で動画を上げるとき、API のクォータ（API の呼び出し量の割り当て。1日 10,000 ユニット）とは別に、チャンネル側の投稿本数の上限に当たること。手元では直近24時間に10本を上げた次の1本が uploadLimitExceeded で止まった。上限は暦日ではなく直近24時間で数えていた\n「審査を受けていない API プロジェクトか...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "取引所に逆指値を置いたら、Botが売れなくなった。テストの代役が応答の形を隠していた",
+      "url": "https://zenn.dev/codecraft/articles/exchange-stop-cancel-response-no-data",
+      "site": "Zenn(Python)",
+      "published": "2026-11-03T23:13:35Z",
+      "description": "暗号資産の自動売買Botを作っています。口座2万円ほどの少額で動かしながら、検証と本番の動きが一致しているかを毎週点検しています。\n今回は、安全のために足した仕組みが、Botの売りを止めていた話です。テストは全部通り、実機でも「注文が置けた」ことを確かめて、完了と書いていました。原因はたった1行の [\"data\"] でした。\n先に断っておくと、成績の話ではありません。実際の取引が1件絡みますが、1...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "Decimal.quantizeで0.05刻みにはならない：価格の桁数と刻み幅を分けて考える",
+      "url": "https://zenn.dev/kaigaifx_izumi/articles/742d8a14138b10",
+      "site": "Zenn(Python)",
+      "published": "2026-11-03T22:56:43Z",
+      "description": "価格データを加工するときは、小数点以下を2桁に丸める処理と、0.05刻みの価格へそろえる処理を区別する必要があります。PythonのDecimal.quantizeにDecimal('0.05')を渡しても、結果が0.05の倍数になるとは限りません。この記事では架空の価格で違いを確かめます。注文APIや実口座への接続は使いません。\n\n quantizeで指定するのは指数\nquantizeは指定した...",
       "category": "開発",
       "rss_category": "",
       "image_url": ""
@@ -19,16 +69,6 @@
       "site": "Zenn(Python)",
       "published": "2026-11-03T22:05:03Z",
       "description": "はじめに\n同じ原稿を、毎回エディタに手で貼り直している。その作業を機械に任せ、公開ボタンだけ自分で押す形にしました。AIコーディングツール「Claude Code」とブラウザ自動操作ライブラリ「Playwright」を組み合わせて、Webでの定型作業を自動化する手順をまとめます。題材は、実際に私が行った「Markdown原稿をnoteのエディタへ流し込み、投稿直前で止める」仕組みづくりです。\nタイ...",
-      "category": "開発",
-      "rss_category": "",
-      "image_url": ""
-    },
-    {
-      "title": "AIの正答率だけで選ばない：誤答と「分からない」を分けて比べる",
-      "url": "https://zenn.dev/kanta13jp1/articles/abstention-error-score",
-      "site": "Zenn(Python)",
-      "published": "2026-11-03T21:54:04Z",
-      "description": "正答率が少し高いAIでも、間違いを直す負担が大きいかもしれません。比較するときは、正答・誤答・回答保留の3つを同じ分母で見る必要があります。\nその集計を確かめるため、合成した回答ラベルで計算を実行しました。全部の回答を保留すると、全問に対する誤答率は0%になります。しかし、何も答えていません。「誤答率が低い」だけでは、仕事を任せられるか判断できない例です。\n\n 公表値と今回の実験を分ける\nきっかけ...",
       "category": "開発",
       "rss_category": "",
       "image_url": ""
