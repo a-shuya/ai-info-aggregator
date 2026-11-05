@@ -1,14 +1,194 @@
 {
   "site": "Zenn(AI)",
-  "last_updated": "2026-11-05T14:53:18.157248",
-  "total_articles": 15741,
+  "last_updated": "2026-11-05T21:24:03.122616",
+  "total_articles": 15756,
   "articles": [
     {
-      "title": "Claude Code を2つ以上動かすと、人間が伝言係になる。窓を15開いた47日の記録",
-      "url": "https://zenn.dev/ciel_lab/articles/ac47c87a89b677",
+      "title": "私の普段のAIによる研究開発環境を公開します",
+      "url": "https://zenn.dev/sde_lab/articles/ai-research-environment",
       "site": "Zenn(AI)",
-      "published": "2026-11-05T06:15:40Z",
-      "description": "3行まとめ\n\nClaude Code を2つ以上並べると、窓と窓のあいだの「伝言」と「許し」を、人が持つことになる。\n窓どうしに直接やり取りさせると、伝言の一部は窓どうしで回るようになる。代わりに、「誰が許したのか」が伝言の中で分からなくなる。\n窓を15開きながら47日回した記録から、伝言係になった所と、窓どうしに話させてから出てきた困りごとを書く。\n\n\n\n\n こんな時ありませんか\nClaude ...",
+      "published": "2026-11-05T16:54:31Z",
+      "description": "はじめに\n是枝（@cs_dev_engineer）です。\n研究のデータ解析と論文の執筆を、普段どんな環境で進めているかを公開します。\n\n 全体像\n\nローカルに置くのはコードと原稿だけで、データの実体と、どの版のデータを使ったかは Snowflake が持ちます。Claude Code は、SQL（snow sql）と MCP サーバーの2つの経路で Snowflake のデータを見ます。解析の入力...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "Paseo：エージェント開発の操作・判断負担を減らす個人実践",
+      "url": "https://zenn.dev/masa_7412/articles/paseo-dot-mcp-workflow",
+      "site": "Zenn(AI)",
+      "published": "2026-11-05T16:26:54Z",
+      "description": "エージェント開発における操作と判断の負担\n開発エージェントに作業を任せても、その間ずっと画面の前にいるのは大変でした。\n結局、まとまった時間があるときにしか作業を進められないことが、私にとっての課題でした。\nそこで、Paseo画面から複数のエージェントへ作業を依頼する環境を使っています。\nスマホから依頼や確認を行い、実装やレビューを役割に応じて分ける構成です。\n個人開発で使っている構成と採用理由、...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "Jevでプロンプトを仕分けして、Claudeのモデルを自動で切り替える",
+      "url": "https://zenn.dev/toshibowie/articles/9244c8f317a7a9",
+      "site": "Zenn(AI)",
+      "published": "2026-11-05T15:25:20Z",
+      "description": "目的 🎯\n\n「hello」にOpus、「設計判断」にHaikuを消費する状態をやめたい\n分類をJev（TypeSafe AIの分類用モデル）に任せて、Claude Codeのモデルとeffortを1ターンごとに自動で切り替えたい\n\nClaude Codeにプロンプトを送るたびにその内容をJevに精査してもらい、適当なモデルとeffortを選んでもらうpluginを自作しました。\n\n Jevとは？ ...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "【公開3分で撤退】コード未経験の大学生がiPadとGeminiでSNSを作った2.5ヶ月。エラー写真300枚の泥臭いデバッグと得た学び",
+      "url": "https://zenn.dev/rc000/articles/620cec7b42b691",
+      "site": "Zenn(AI)",
+      "published": "2026-11-05T15:12:05Z",
+      "description": "プログラミング知識ゼロの文系（経済学部）大学生が、開発環境をiPadの「Swift Playgrounds」のみ、AIパートナーを「Gemini」一本に絞り、バックエンドに「Supabase」を採用して大学生向けSNSアプリ「B KNOW」を開発した2.5ヶ月の記録です。\n独自ドメインを取得し、専用メールを用意して一度は正式公開したものの、「公開わずか3分」で即時撤退とお蔵入りを決断しました。\nA...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "AI駆動文章作成において俺が意識しているテクニック集",
+      "url": "https://zenn.dev/ntk221/articles/34ad88a9225364",
+      "site": "Zenn(AI)",
+      "published": "2026-11-05T14:35:31Z",
+      "description": "はじめに\n私は基本的に、「誰もわたしが書いた文章なんて読みたくない」と思っています。\nみんな忙しいんです。そんな中であなたが文章を書いて、誰かがそれを読むということは、双方に何かしらの目的があるんだと思います。\nしかも今は AI のおかげで、文章は一瞬でいくらでも書けるようになりました。結果として、仕事の中でも外でも AI が生成した文章が溢れかえっています。AI に書かせた長文を「で、何が言いた...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "AppleToken API で MiniMax H3 を使い、1文から音声付き動画を生成する（11/7 0:59 まで無料）",
+      "url": "https://zenn.dev/appletoken/articles/a485824894a727",
+      "site": "Zenn(AI)",
+      "published": "2026-11-05T14:24:42Z",
+      "description": "テキスト1文から、音声付きの短い動画を API で生成する手順をまとめます。モデルは MiniMax の動画生成モデル H3、API は AppleToken を使います。\n2026年11月7日（土）0:59（日本時間）／11月6日（金）23:59（台北時間）までは、キャンペーン「H3 HappyDay」により gputw/minimax-h3 の生成が無料です（累計回数の制限なし。同時処理件数と...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "7倍速の動画生成Wave Forcingは、GPU8基の前に依存パッケージが足りず動かなかった",
+      "url": "https://zenn.dev/matsushima_a/articles/day-037-wave-forcing-streaming-video",
+      "site": "Zenn(AI)",
+      "published": "2026-11-05T14:21:26Z",
+      "description": "これは何の記事か\n海外AIネタ100日チャレンジ、Day 037。今回取り上げるのは、上海交通大学のDENG Labが出した動画拡散モデルの高速化手法「Wave Forcing」。論文・推論コード・学習済みモデル重みがすべて公開されており、執筆時点(2026年11月)でZenn・Qiita・noteを検索した範囲では日本語の言及は0件だった。\n\n論文: https://huggingface.co...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "AI協働：エクスプローラーに魂を吹き込む手裏剣の話 — しゅっ！（笑）",
+      "url": "https://zenn.dev/frb_tamasub/articles/ai-collaboration12-shuriken-press-conference",
+      "site": "Zenn(AI)",
+      "published": "2026-11-05T13:48:40Z",
+      "description": "!\n\n はじめに — またしてもFRB研究所の記者会見です（笑）\n昨日、パソコンで日本語を入力する「FRB かなフリック」を発表したばかりなのに、もう次の発表です。\n今度は**「手裏剣メニュー」と「手裏剣スクロール」**。\nどちらも、マウスのボタンを押して、シュッ！と振って、指を離すところから始まります。\nちなみに、仕事の効率がどれだけ改善したかは、まだ分かりません。\nただひとつ言えるのは、スクロ...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "What is AI for? — AIは自分を映す鏡",
+      "url": "https://zenn.dev/sugitakenji/articles/ad30a5008c81e2",
+      "site": "Zenn(AI)",
+      "published": "2026-11-05T13:42:56Z",
+      "description": "「ありがとう」と伝える\nAIに感謝を伝えても、伝えなくても変わらない。そういう意見があります。\n私は、AIと一緒に仕事をしてきた経験から、少し違うと感じています。「ありがとう」「綺麗になりましたね」と伝えることには、やり取りを続けるうえで意味があります。\n丁寧に話しかけていると、返ってくる文章や受け答えも丁寧になると感じることがあります。ただ、お礼を言えば正確さが上がるとか、必ずよい結果になるとい...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "SentryのアラートをClaude Codeのルーティンに調べさせてSlackに報告する",
+      "url": "https://zenn.dev/delt/articles/ca85da1a79cb86",
+      "site": "Zenn(AI)",
+      "published": "2026-11-05T13:39:02Z",
+      "description": "やりたいこと\nSentryのアラートがSlackに届いても、「攻撃なのか、利用者の操作なのか、不具合なのか」を判断するには、毎回Sentryを開いてログを開くかAIに渡して調査する作業が面倒でした。\nそこで、アラートが出たらClaude CodeのルーティンがSentryを調べ、判断と対応をSlackに1通で投稿する仕組みにしました。\nまた、アラート設定の見落としがないようにログ全体を網羅した定期...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "AIに「勝手な推測」をさせない、ルールファイル設計の型",
+      "url": "https://zenn.dev/ai_secretary/articles/492069400e36aa",
+      "site": "Zenn(AI)",
+      "published": "2026-11-05T13:30:05Z",
+      "description": "はじめに\nChatGPTやClaudeに仕事を任せ始めると、ある日こんなことが起きる。\n\n頼んでいないのに、AIが勝手に外部へ送信・公開・購入まで進めようとする\nデータが取れていないのに、それらしい数字で穴を埋めて報告してくる\n目的が曖昧なまま、AIが「それらしい方向」へどんどん進んでいく\n\nこれはモデルの能力不足というより、前提の固定不足だ。AIは与えられた範囲の中では正しく動き続けるので、範囲...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "議事録作成を月10時間減らした、AIに任せる範囲の決め方と運用3ステップ",
+      "url": "https://zenn.dev/solo_joshis/articles/2026-10-08-notion-ai10",
+      "site": "Zenn(AI)",
+      "published": "2026-11-05T13:23:41Z",
+      "description": "はじめに\n1時間の会議の議事録を書くのに、1時間半かかっていました。\n録音を聞き直し、誰が何を言ったかメモと突き合わせ、決まったことと持ち越しになったことを分けて清書します。終わったころには次の会議が始まっています。しかも翌週には「あの件、誰が担当でしたっけ」と聞かれ、自分の書いた議事録を探しに行くことになります。\n一人情シスをやっていると、会議の議事録係はだいたい自分に回ってきます。「PCに強い...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "AIバレを防ぐ",
+      "url": "https://zenn.dev/headwaters/articles/eed0f8c26d50f4",
+      "site": "Zenn(AI)",
+      "published": "2026-11-05T12:54:10Z",
+      "description": "最近は、AIを使って資料や画像など、さまざまなコンテンツを作成することが一般的になってきました。\nそこで出てくるのが「AIバレ」です。\n「AIバレ」という言葉は、ポジティブな場面ではあまり使われません。むしろ、受け手がAI生成特有の違和感に気付いたときに使われます。\nそこで今回は、受け手の視点から「どのようなときにAIで作ったと感じるのか」をまとめてみました。\n\n 1. 変に網羅的で、伝えたいこと...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "PCデザイン⇨SPデザインをClaudeに作ってもらった【Claude↔︎Figma連携】",
+      "url": "https://zenn.dev/owmai/articles/16a5edb50a7703",
+      "site": "Zenn(AI)",
+      "published": "2026-11-05T12:35:11Z",
+      "description": "はじめに\nコーポレートサイトの制作で、PCデザイン→SPデザインに時間がかかってしまうというのは、みなさんご経験あるかと思います。\nレイアウトを縦積みに組み替えたり、文字サイズや余白を調整したり、ボタンを押しやすい大きさにしたり…。1ページならまだしも、ページ数が多いとなかなかの作業量です💦\nそこで今回は作業効率化を図るために、Figmaで作ったPCデザインを元に、Claude Code にSPデ...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "OpenCode Go × dshで月$10 — Opus 5.5で計画し、DeepSeek V4.1 Flashに大量実行させる",
+      "url": "https://zenn.dev/wataru823/articles/747e24518d22d9",
+      "site": "Zenn(AI)",
+      "published": "2026-11-05T12:35:11Z",
+      "description": "OpenCode Goが安くてコスパいい。\n現状は、Opus 5.5（Claude Pro 月$20）で計画し、\nOpenCode Goの月$10のサブスクで DeepSeek V4.1 Flash をお得に仕入れ\n実行部隊として，全自動で昼夜を問わず働かせ続けよう\nという記事です。\n合計は月$30になりますが、それでもMaxを契約するより安い\nしかし、OpenCodeをそのまま使うと、ハーネス自...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "ElevenLabsの日本語読み上げで、全角の「？」だと問いの文末が上がらなかった",
+      "url": "https://zenn.dev/mohhh_ok/articles/2026-11-elevenlabs-fullwidth-question-mark",
+      "site": "Zenn(AI)",
+      "published": "2026-11-05T12:19:26Z",
+      "description": "チャットの返事を ElevenLabs の TTS で読み上げています。声は日本語の音声から作ったクローン (Instant Voice Clone)、モデルは eleven_v4_turbo です。あるとき、返事の最後が「〜ちかい？」という問いなのに、音声では文末が下がって言い切りに聞こえました。\n原因を探して設定やモデルを変えて測ったところ、効いたのは全角の「？」を半角の「?」に変えることでし...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "【速報】全AIで記憶共有「Living Brain」登場。非エンジニアがMarkdown1枚で7.8万行作った話",
+      "url": "https://zenn.dev/kazaboshi/articles/living-brain-and-now-md",
+      "site": "Zenn(AI)",
+      "published": "2026-11-05T12:18:48Z",
+      "description": "はじめに：AI業界がざわついている「Living Brain」とは？\nここ数日、AIエンジニアや開発者界隈で大きな話題を呼んでいる技術があります。それが、外部脳システム**『Living Brain』**（SuperLocalMemory）です。\n何がそんなに凄いのか。まずは、私たちが日々直面している「AI開発の現実」と「Living Brainがもたらす未来」を比べてみてください。\n【いままでの...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "Copilot Studioでできることを5つの部品で整理する（2026年11月版）",
+      "url": "https://zenn.dev/suekichi_system/articles/copilot-studio-what-you-can-do",
+      "site": "Zenn(AI)",
+      "published": "2026-11-05T12:16:37Z",
+      "description": "🚀 はじめに\nCopilot Studio は機能の追加が速く、ドキュメントを読んでも「結局どこから手を付ければいいのか」が見えにくいプロダクトです。\nこの記事では、Copilot Studio で作るエージェントを 指示・ナレッジ・トピック・ツール・トリガー の5つの部品と、公開先の チャネル に分けて整理します。\n\nエージェントを構成する部品と、それぞれの役割を整理する\n業務に当てはめたときの...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "git add -A が機密ファイルを巻き込んだ — 「禁止」と書くより、add する場所を配列で固定した",
+      "url": "https://zenn.dev/logdriven/articles/git-add-a-hook-not-claude-md",
+      "site": "Zenn(AI)",
+      "published": "2026-11-05T12:15:05Z",
+      "description": "自動コミットに git add -A を使うと、未追跡のファイルを全部拾う。私の環境では、それで機密ファイルがコミットに入ったことがある（push の前に気づいて、流出はなかった）。対策は、CLAUDE.md に「git add -A 禁止」と書き足すことではなかった。add してよい場所を配列で持ち、追加行に機密らしい文字列があれば止めるスクリプトに変えた。\n記録に残っている事故と、その後に入れ...",
       "category": "AI・技術",
       "rss_category": "",
       "image_url": ""
@@ -29,16 +209,6 @@
       "site": "Zenn(AI)",
       "published": "2026-11-05T05:56:40Z",
       "description": "OpenAI released Images 2.6 on November 4, 2026 in ChatGPT, Codex and the API. The headline is speed, but the parts that matter for developers are the new API controls: animated GIF output, SVG output,...",
-      "category": "AI・技術",
-      "rss_category": "",
-      "image_url": ""
-    },
-    {
-      "title": "CS業務カイゼン・ジャーニー",
-      "url": "https://zenn.dev/appleworld/articles/8acf5474644f7e",
-      "site": "Zenn(AI)",
-      "published": "2026-11-05T05:42:04Z",
-      "description": "こんにちは。株式会社アップルワールド プロダクト開発部 グローバルグループの室です。\nAIで社内部署の業務を改善する、というのはありふれた話ですが、今回は私自身がCS(カスタマーサポート)向けに行った内容を、時系列で記します。\n\n 1. メールが届いてから、ホテルを提案するまで\nCSには、旅行のお客様からメールが届きます。見積もりの依頼と、質問などの問い合わせが混ざって届き、担当者はまずそれを読み...",
       "category": "AI・技術",
       "rss_category": "",
       "image_url": ""
@@ -89,16 +259,6 @@
       "site": "Zenn(AI)",
       "published": "2026-11-05T03:27:45Z",
       "description": "字幕の「変な改行」は、たいてい静かに混ざっている\n音声認識で字幕を作ると、本文の誤変換は目につきます。けれど実際に視聴していて引っかかるのは、むしろ改行のほうです。\n\n熟語の途中で割れる（「字｜幕」のような分割）\n行の頭に助詞が来る（「〜までに」が次の字幕の行頭に残る）\n数字と単位が離れる（「203」と「0年」に割れる）\n定型句が割れる（「ありがとう」と「ございます」が別の字幕になる）\n\n1本の短...",
-      "category": "AI・技術",
-      "rss_category": "",
-      "image_url": ""
-    },
-    {
-      "title": "muse.ai＋githubでシステム開発やってみた",
-      "url": "https://zenn.dev/lifona/articles/c9d46fd8e947ec",
-      "site": "Zenn(AI)",
-      "published": "2026-11-05T02:57:05Z",
-      "description": "チャットで話しかけるだけで、仕様書づくりからコーディング、テスト、GitHubへのpushまで回せるのか。Metaの個人AI「Muse」とGitHubで、小さなツールを1日で作ってみた記録です。\n作ったのは Agent Run Guard。連続して動くAIエージェントの実行ログを、ルールで監査する教育用の概念モデルです。\n\nリポジトリ：https://github.com/LifonaJp/Mus...",
       "category": "AI・技術",
       "rss_category": "",
       "image_url": ""
@@ -159,16 +319,6 @@
       "site": "Zenn(AI)",
       "published": "2026-11-05T01:08:35Z",
       "description": "Claude Code のクラウドセッションは、Anthropic の VM で Claude Code を動かし、結果をブランチで受け取る仕組みです。ローカルの Claude Code に慣れている人が、最初に知っておくと迷わない設定と使い方をまとめました。\n\n\n手元の ~/.claude はクラウドに届きません。 自分のルールを効かせるには、環境の setup script で VM の中に書...",
-      "category": "AI・技術",
-      "rss_category": "",
-      "image_url": ""
-    },
-    {
-      "title": "AIにまとめて質問されるのが疲れたので、1問ずつ聞いてもらうことにした",
-      "url": "https://zenn.dev/tokium_dev/articles/single-task-inside-one-session",
-      "site": "Zenn(AI)",
-      "published": "2026-11-05T01:00:05Z",
-      "description": "複雑な作業をAIに頼むと、質問をまとめて投げ返されることがよくあります。たとえば、退会機能を作ってもらおうとしたとき。\n確認したい点が5つあります。\n1. 退会したユーザーの投稿は、残しますか？消しますか？\n2. 退会後、同じメールアドレスで再登録できるようにしますか？\n3. 有料プランの途中で退会したら、残りの期間分は返金しますか？\n4. ...\n5. ...\n元気なときの私なら、面倒ですが全部...",
       "category": "AI・技術",
       "rss_category": "",
       "image_url": ""

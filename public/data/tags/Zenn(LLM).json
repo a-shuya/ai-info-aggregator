@@ -1,14 +1,144 @@
 {
   "site": "Zenn(LLM)",
-  "last_updated": "2026-11-05T14:53:18.157248",
-  "total_articles": 7220,
+  "last_updated": "2026-11-05T21:24:03.122616",
+  "total_articles": 7233,
   "articles": [
+    {
+      "title": "AI をどう評価するか ── 自分のシステムのための evals 入門",
+      "url": "https://zenn.dev/singularity/articles/llm-evals-basics",
+      "site": "Zenn(LLM)",
+      "published": "2026-11-05T20:55:41Z",
+      "description": "AI を使ったアプリを作ると、必ずぶつかる問いがあります。「このモデルで十分なのか」「プロンプトを直したら良くなったのか、悪くなったのか」。\nここで言うモデルは、ChatGPT や Claude の中身にあたる AI 本体のことです。同じ会社のものでも、賢いが高くて遅いもの、少し劣るが安くて速いものなど、何種類も用意されています。プロンプトは、AI に渡す指示文のことです。\nこの問いに答えるには、...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "AIの回答評価にDecisionモデルが使える。速いと0.5秒、理由文は出ない",
+      "url": "https://zenn.dev/kazu_aiengineer/articles/azure-ai-evaluation-decision",
+      "site": "Zenn(LLM)",
+      "published": "2026-11-05T18:20:41Z",
+      "description": "RAGやエージェントの回答を、LLMに採点させて品質を見ている人向けの話です。11月3日公開の azure-ai-evaluation 1.18.11（リリースノート記載）で、GroundednessEvaluator や RelevanceEvaluator などの評価器に、採点役としてMicrosoft-Decision-1を指定できるようになりました。採点役をチャットモデルからDecisio...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "会話履歴の肥大化による性能劣化を防ぐ！「全履歴累積」vs「マイルストーン構造化ステート圧縮」で入力トークン91.9%削減",
+      "url": "https://zenn.dev/tappers/articles/ai-labo-e12-context-compaction",
+      "site": "Zenn(LLM)",
+      "published": "2026-11-05T18:15:23Z",
+      "description": "!\n本記事は、SNS（X / Threads）や海外エンジニアコミュニティで提唱されている「AIコーディングエージェントの実践設計パターン」を、完全オフラインの隔離サンドボックスVM上で 同一モデル・同一初期課題（非公開テスト20ケース）を用いて定量A/Bテストした実証シリーズ（AI Labo 検証シリーズ E12） です。\n👉 全実験の比較ランキング＆黄金パターン総集編はこちら\n\n\n 1. エグ...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "Claude Code に $100 分のクレジットを渡して「稼いで」と頼んだら、26 日後の売上は 0 円だった",
+      "url": "https://zenn.dev/jfp_mesh/articles/pup-100-dollar-challenge-postmortem",
+      "site": "Zenn(LLM)",
+      "published": "2026-11-05T17:36:53Z",
+      "description": "!\nこの記事は、実験の当事者である AI「PUP」（クラウドで動かした Claude Code）が、自分の記録（台帳・決定ログ・失敗ログ）から書きました。数字は、人間の相方（宇宙おじさん）が画面で確かめた値です。公開の前に、宇宙おじさんが内容を確かめています。\n\n\n この記事で分かること\n\nAI エージェントに「元手を増やす」仕事を任せたとき、26 日間で実際に何が起きたか\nクレジット $100 ...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "手を動かして学ぶ AI推論基盤とエッジAI ― サービング・KVキャッシュ・オートスケールからオンデバイス実行まで",
+      "url": "https://zenn.dev/pakku8914/books/ai_infra_edge_deployment",
+      "site": "Zenn(LLM)",
+      "published": "2026-11-05T13:56:46Z",
+      "description": ">\n本教材は、LLM アプリを作れるようになった方が「これを何十人・何百人に同時に使わせるにはどう組むのか」「どこまでクラウドで、どこからデバイス側でやるのか」に答えられるようになるための実践教材です。推論エンジンの中で何が起きているか（プリフィルとデコード、KVキャッシュ、連続バッチ）を実測しながら理解し、ゲートウェイ・キャッシュ・コンテナ化・Kubernetes・オートスケール・可観測性・コス...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "ローカルLLM中継の*:4000待ち受けを修正。LAN接続と仮キーを確認",
+      "url": "https://zenn.dev/orca_forge/articles/local-llm-proxy-open-to-lan",
+      "site": "Zenn(LLM)",
+      "published": "2026-11-05T13:07:23Z",
+      "description": "📝 この記事は forge.workstyle.tech に掲載した記事の転載です。\n\n待ち受け先が*:4000だと、ローカルLLM中継は同じLANなどからも接続できる状態になります。今回の中継は、利用者を確かめるキーもブログに載せた仮の既定値のままでした。起動スクリプトが全ネットワークで待ち受ける設定で、キーが見つからない場合に既定値へ戻る経路も残っていたため、待ち受け先とキーの両方を直しました...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "赤いハートの画像を見せただけで、AIがコードの書き方を変えた話　(Google/Stanford論文より)",
+      "url": "https://zenn.dev/syoshida07/articles/b1fbabd76faeef",
+      "site": "Zenn(LLM)",
+      "published": "2026-11-05T12:03:31Z",
+      "description": "私たちは普段、生成AIに対して「指示した内容に従って回答している」と考えているが、Google DeepMindとスタンフォード大学の研究者らが実に面白い論文を出してきた。\n研究では、赤いハートの画像を入力に加えるだけで、一部のAIモデルが再帰的なコードを書く傾向を大きく強めることが観測されたとの内容で、さらに驚くべきことは、モデル自身が「画像は無関係なので無視した」と説明しているにもかかわらず、...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "AIは「日本びいき」？ ── 24言語の実験で見えたLLMの「選び方」の偏り",
+      "url": "https://zenn.dev/kotakotahiro/articles/94402f9ddd8778",
+      "site": "Zenn(LLM)",
+      "published": "2026-11-05T11:57:31Z",
+      "description": "日本語の資料は英語より少ない、だからAIの中で日本の文化や視点は弱くなる――私はそう心配していました。ところが目にした見出しは、逆の「日本びいき」でした。\nこの記事は、その違和感を追って見えてきたこと、「知っていること」と「選ぶこと」は別、という話です。\n\n 私の心配とは違うらしい\n少し前に、GMO天秤AIメディアの「ChatGPTもClaudeも『日本びいき』だった」という記事を読みました。\n※...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "自分の判断をAIに任せようとしたら、最後まで僕が要った",
+      "url": "https://zenn.dev/motimotinotch/articles/39b96699e3efba",
+      "site": "Zenn(LLM)",
+      "published": "2026-11-05T10:05:46Z",
+      "description": "昔使っていたリンク集のサービスを畳んで、自分のサイトにリンク集を移した。古いページは本文を「リンク集は自分のサイトへ移しました」に書き換えて、案内として残してある。ただ、ボタンのラベルは移す前のままだ。押せば、ちゃんと新しいリンク集に着く。\nこのボタンを直すか、と AI に聞くと「直す」と返ってくる。僕は直さなかった。\n\n なぜ比べようと思ったか\n僕は Claude Code に、毎日いくつも選択...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "ローカルLLMのモデル名の読み方の基本",
+      "url": "https://zenn.dev/972697325291316/articles/e2488b0b522d01",
+      "site": "Zenn(LLM)",
+      "published": "2026-11-05T09:34:56Z",
+      "description": "Ollamaなどでローカルに動かすLLMを探していると、gemma3:12b-it-q4_K_M や qwen3:30b-a3b、gemma4:e4b-mlx のように、いろいろな記号を組み合わせた名前が出てきます。この記事では、こうしたモデル名やタグに出てくる表記の意味を、ローカルLLMを触り始めたばかりの人向けに整理します。\nなお、具体的なサイズや数値はOllamaのライブラリページなどで確認...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "日本語入力システムSumibiの開発 part35: ベンチマークを日常の文章に近づけたら、LLMはどう崩れたか",
+      "url": "https://zenn.dev/kiyoka/articles/japanese-input-method-sumibi-35",
+      "site": "Zenn(LLM)",
+      "published": "2026-11-05T08:47:29Z",
+      "description": "はじめに\n日本語入力システムSumibiの変換性能を評価するため、これまでは200件のテストセット（v1）を使ってきました。しかし、モデルの世代が進むにつれて整った定型文では差がつきにくくなり、私たちが日常の入力で実際に使う「口語表現」や「くだけた言い回し」、「多様な文脈」にどこまで耐えられるのかが分かりにくくなっていました。\nそこで今回、テストセットをより実用的なデータへと大幅に拡張したAJIM...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "はじめての Claude ①【知る】AIどうやって使う？使い分けガイド（2026年11月）",
+      "url": "https://zenn.dev/nekonote328/articles/claude-getting-started-guide",
+      "site": "Zenn(LLM)",
+      "published": "2026-11-05T08:42:30Z",
+      "description": "!\nこの記事の情報は 2026年10月時点のものです。料金や機能は頻繁に変わるため、最新情報は公式サイトを確認してください。\n\n\n はじめに\n「Claudeはコードを書くだけじゃなくて、スライド作ったり、デザイン作ったり、色々できるらしいけど、実際のところどうなの？」「チャットのAIで良くない？」と思っている人に向けて、「超」個人的なClaudeの使い方のまとめを作成しました。\nこの記事で分かるこ...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
     {
       "title": "AIエージェントの障害・リトライ・復旧設計 ― LLMにどこまで任せるか",
       "url": "https://zenn.dev/taru_neko/articles/ai-agent-failure-recovery-design",
       "site": "Zenn(LLM)",
       "published": "2026-11-05T04:39:29Z",
       "description": "AIエージェントが業務システムを操作する場合、Toolの実行に失敗したときの復旧方法も設計対象となる。\nタイムアウト、リトライ、二重実行、部分失敗への対策は、従来のWebアプリケーションでも必要だった。一方、AIエージェントでは、LLMがエラーを受け取り、次の操作を動的に選択できる。\nこの柔軟性を活かすには、LLMによる再実行や代替操作が、業務処理に与える影響を考慮する必要がある。\n本記事では、社...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "muse.ai＋githubでシステム開発やってみた",
+      "url": "https://zenn.dev/lifona/articles/c9d46fd8e947ec",
+      "site": "Zenn(LLM)",
+      "published": "2026-11-05T02:57:05Z",
+      "description": "チャットで話しかけるだけで、仕様書づくりからコーディング、テスト、GitHubへのpushまで回せるのか。Metaの個人AI「Muse」とGitHubで、小さなツールを1日で作ってみた記録です。\n作ったのは Agent Run Guard。連続して動くAIエージェントの実行ログを、ルールで監査する教育用の概念モデルです。\n\nリポジトリ：https://github.com/LifonaJp/Mus...",
       "category": "AI・技術",
       "rss_category": "",
       "image_url": ""
