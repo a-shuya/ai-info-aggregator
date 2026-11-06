@@ -1,8 +1,118 @@
 {
   "site": "Zenn(LLM)",
-  "last_updated": "2026-11-06T08:33:35.977944",
-  "total_articles": 7237,
+  "last_updated": "2026-11-06T16:16:07.537161",
+  "total_articles": 7247,
   "articles": [
+    {
+      "title": "NVIDIAの『ループ型』4Bモデル Dory1.0-4B、標準ツールで動かそうとしたら2箇所で止まった",
+      "url": "https://zenn.dev/matsushima_a/articles/day-038-dory-looped-transformer-ecosystem-gap",
+      "site": "Zenn(LLM)",
+      "published": "2026-11-06T14:22:33Z",
+      "description": "これは何を試した記事か\nNVIDIAが公開したDory1.0-4Bという4Bパラメータのモデルを、公式のモデルカードが案内するとおりの手順で動かそうとした記事である。\nDory1.0-4Bは、1つの重み(チェックポイント)のまま「再帰ブロックを何回ループさせるか」を1〜4回の間で切り替えることで、再学習なしに推論時の計算量と精度をトレードオフできる「ループ型Transformer」である。\n出典は...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "Self-RAG論文を実装目線で読む：検索判断と回答の裏付けを分ける",
+      "url": "https://zenn.dev/kas_blog/articles/20260914-self-rag",
+      "site": "Zenn(LLM)",
+      "published": "2026-11-06T12:59:58Z",
+      "description": "Self-RAGを実装の観点で読むなら、何を評価した値なのかを、入力とセットで扱うことが出発点になります。資料が質問に関連することと、生成した回答をその資料が支持することは、異なる判定です。\nSelf-RAG（Self-Reflective Retrieval-Augmented Generation）は、検索の必要性や生成内容の品質を表す特殊なトークン（モデルが扱う記号）を、文章とともに出せるよ...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "LINEの非公式APIとWasmをCloudflare Workersで動かし、安全なAI自動返信システムを構築した裏側",
+      "url": "https://zenn.dev/kiva/articles/5fa5a62e7f90e4",
+      "site": "Zenn(LLM)",
+      "published": "2026-11-06T12:13:39Z",
+      "description": "株式会社Kivaで Samurai App を開発しているエンジニアです。今回は自社製品の裏側として、「個人の LINE に届いた連絡へ AI が即レスする機能」を Cloudflare Workers(Durable Objects)の上でどのように動かしているかを紹介します。\n最近、ちょうど linejs の CLI が登場したこともあり、「AI エージェントに LINE を操作させる」という...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "よく読ませたら的中率が半分になった — 行き先を「選ばせる」か「書かせる」か",
+      "url": "https://zenn.dev/shinsei99/articles/free-text-answer-points-nowhere",
+      "site": "Zenn(LLM)",
+      "published": "2026-11-06T11:23:47Z",
+      "description": "社員が共有フォルダに置いた書類を、正しい棚へ振り分ける仕組みを作っています。\n安い方法（似た書類を探して、その書類が入っている棚へ投票させる）で 43.4% まで来たので、\n次は1件ずつ本文をじっくり読ませれば上がるはずだと考えました。\n20.4% でした。 読む量も考える時間も増やしたのに、半分以下に落ちた。\n結論から書くと、落ちた原因は判断力ではなく 答えの書かせ方 でした。\n\n 先に、測り方...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "スマホで自由に会話できるモデルを検討してるんですが",
+      "url": "https://zenn.dev/daishiro/articles/on-device-llm-english-roleplay-benchmark",
+      "site": "Zenn(LLM)",
+      "published": "2026-11-06T09:24:13Z",
+      "description": "はじめに\nこんにちは、daishir0 です。平日は会社員、夜と週末に Claude Code と一緒にスマホアプリを作って、ストアに出す遊びをしています。\nその中の 1 本が「いえるかな」という瞬間英作文アプリです。日本語の文を見て、声で英語を言う。それを端末の音声認識で文字にして、模範と比べて「つうじた／おしい／ちがう」を判定する。カフェ・レストラン・ホテル・職場など 10 場面、332 文を...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "Sakura AI Engineを無償プランで検証した：3モデルに同じ3課題を解かせて分かったこと",
+      "url": "https://zenn.dev/kentaro36/articles/sakura-ai-engine-verification",
+      "site": "Zenn(LLM)",
+      "published": "2026-11-06T08:40:19Z",
+      "description": "1. はじめに\nLLM の API を試そうとすると、2つの不安が先に立ちます。\n\n\n無料枠で触っているつもりが、いつの間にか課金されていないか\n入力した文章が学習に使われないか\n\n\nさくらの AI Engine は、この2点に公式の答えを用意しています。入力データを学習・保存しない方針（ZDR）と、月3,000リクエストまでの無償プランです。\n本記事では、無償プランの Playground で3...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "AIエージェントのテスト設計 ― 実行結果と判断過程をどう評価するか",
+      "url": "https://zenn.dev/taru_neko/articles/ai-agent-testing-design",
+      "site": "Zenn(LLM)",
+      "published": "2026-11-06T07:23:02Z",
+      "description": "従来のWebアプリケーションでは、入力に対して期待する処理結果を定義し、テストで検証する。\nAIエージェントでも基本は変わらない。ただし、LLMがToolの選択や実行順序を判断する場合、同じ依頼でも異なる手順で処理される可能性がある。\nそのため、正しい業務結果が得られたかだけでなく、そこに至る操作が適切だったかも評価する必要がある。\n本記事では、社内の経費精算システムを例に、AIエージェントの機能...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "記事は短くていい",
+      "url": "https://zenn.dev/herp_inc/articles/90d6052024a30f",
+      "site": "Zenn(LLM)",
+      "published": "2026-11-06T07:19:00Z",
+      "description": "採用広報などでブログを書くノルマがある方は多いのではないだろうか。\nもっと言うと、ノルマをクリアするために生成AIを使って記事をかさ増ししていないだろうか。\nその必要はないと声を大にして伝えたい。\nLLMがある今、文章は低コストで大量に生み出せるが、生み出した分だけ価値の総量が増えるわけではない。まず、文章を書くコストが減ったとしても、文章を読むコストが減ったわけではない。むしろ、文章が長いほど、...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "メール解析AIをサブスク管理に組み込んで学んだ、承認・時刻・再試行・原価管理の設計",
+      "url": "https://zenn.dev/enjoydarts/articles/94e72ea1a7e332",
+      "site": "Zenn(LLM)",
+      "published": "2026-11-06T07:01:31Z",
+      "description": "はじめに\n請求メールからサブスクリプションの情報を抽出し、まとめて管理するWebアプリ Cycrio（サイクリオ） を個人開発しています。\n最初に考えていたのは、メールをLLMに渡してサービス名・金額・請求周期・次回請求日を取り出す、という比較的単純な仕組みでした。しかし実装してみると、難しいのは情報を取り出すことより、取り出した情報をいつ、どの条件で、契約データに反映してよいかでした。\n例えば請...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "【ゆるっとAIセキュリティ #2】AIに作ってもらったツール、自分のPCで動かして大丈夫？",
+      "url": "https://zenn.dev/daphne/articles/ai-review-new-chat",
+      "site": "Zenn(LLM)",
+      "published": "2026-11-06T07:00:05Z",
+      "description": "前回は、PCではAIのデスクトップアプリを使わず、ブラウザやスマホで使おう、という話をした。\nAIの作業は向こうの箱で動くから、自分のPCには届かない。\nhttps://zenn.dev/daphne/articles/ai-chat-is-safe\n向こうの箱でも、たいていのことはできる。でも、自分のPCのファイルを相手にする作業は、ちょっと事情が違う。\nたとえば、スマホから移した写真。名前が「...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "スマホを「見えない裏画面」で操作するAI「Mika」とは何か ― できること・できないこと・注意点まとめ",
+      "url": "https://zenn.dev/tasplay796/articles/cd367ab4ae425f",
+      "site": "Zenn(LLM)",
+      "published": "2026-11-06T06:59:24Z",
+      "description": "3行まとめ\n\n「Mika」は、チャットで答えるAIではなく、スマホそのものを操作するAI\n\nあなたがスマホを使っている間も、見えない裏の画面でアプリを開いて、タップや入力を代行する\nただし**「お金が動く操作」以外は確認なしで実行される**。便利さと怖さはセットになっている\n\n\n 1. あなたが使っている間、裏ではAIが別の画面を操作している\n質問に答えるAIではなく、スマホそのものを操作するAI...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
     {
       "title": "LoRAファインチューニングで実際に学習しているのはどこか",
       "url": "https://zenn.dev/bestaitools/articles/0f72b1da5e7c68",
@@ -39,16 +149,6 @@
       "site": "Zenn(LLM)",
       "published": "2026-11-06T02:15:34Z",
       "description": "この記事は Modelflare ブログ の英語記事を翻訳・再構成したものです。\n本番運用のためのガイド：LLM リクエストごとのトークン費用を計算する。決定的に再現できる成果物、失敗の境界、ロールアウト時のチェック、出典を明示した制約事項をまとめています。\n\n まず判断基準を決める\nLLM リクエストごとのトークン費用を計算するは、単発のコード変更ではなく、本番環境における明示的な契約です。トラ...",
-      "category": "AI・技術",
-      "rss_category": "",
-      "image_url": ""
-    },
-    {
-      "title": "長い変更履歴の「今の状態」はコードで出す｜StateBenchの4段階をPythonとSQLiteで再現",
-      "url": "https://zenn.dev/cauchye_asia/articles/statebench-event-ledger-sqlite",
-      "site": "Zenn(LLM)",
-      "published": "2026-11-06T01:47:41Z",
-      "description": "2026-11-06時点の情報です。\n「Aの担当をBへ移す」「在庫を3つ減らす」「この項目を別の項目と入れ替える」。メールやチャットに積み上がった変更履歴から、今の状態を LLM に読み取らせると、履歴が長くなるほど外れます。Ai2 の StateBench は、この種の状態追跡を測るベンチマークです。\nこの記事は、StateBench の4段階（r-trivial、aperiodic、solub...",
       "category": "AI・技術",
       "rss_category": "",
       "image_url": ""
