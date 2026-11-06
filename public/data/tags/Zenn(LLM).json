@@ -1,24 +1,34 @@
 {
   "site": "Zenn(LLM)",
-  "last_updated": "2026-11-06T16:16:07.537161",
-  "total_articles": 7247,
+  "last_updated": "2026-11-06T21:37:32.599062",
+  "total_articles": 7249,
   "articles": [
     {
-      "title": "NVIDIAの『ループ型』4Bモデル Dory1.0-4B、標準ツールで動かそうとしたら2箇所で止まった",
-      "url": "https://zenn.dev/matsushima_a/articles/day-038-dory-looped-transformer-ecosystem-gap",
+      "title": "「それっぽい答え」より「何を見て答えたか」が見える、日本語PDFのRAGデモを作った",
+      "url": "https://zenn.dev/koheip/articles/rag-visible-sources",
       "site": "Zenn(LLM)",
-      "published": "2026-11-06T14:22:33Z",
-      "description": "これは何を試した記事か\nNVIDIAが公開したDory1.0-4Bという4Bパラメータのモデルを、公式のモデルカードが案内するとおりの手順で動かそうとした記事である。\nDory1.0-4Bは、1つの重み(チェックポイント)のまま「再帰ブロックを何回ループさせるか」を1〜4回の間で切り替えることで、再学習なしに推論時の計算量と精度をトレードオフできる「ループ型Transformer」である。\n出典は...",
+      "published": "2026-11-06T17:53:01Z",
+      "description": "はじめに\nこんにちは、ZEN大学の通信課程で学んでいる2年生の松延です。AIエンジニアを目指して、LLMまわりの仕組みを自分の手で作りながら勉強しています。\nLLMに資料のことを聞くと、たいていはそれらしい日本語で答えが返ってきます。ただ、私が気になったのは「その答え、資料のどこを見て言っているの？」という点でした。答えが正しそうに聞こえるかどうかではなく、モデルが何を見て答えたのかがはっきりわか...",
       "category": "AI・技術",
       "rss_category": "",
       "image_url": ""
     },
     {
-      "title": "Self-RAG論文を実装目線で読む：検索判断と回答の裏付けを分ける",
-      "url": "https://zenn.dev/kas_blog/articles/20260914-self-rag",
+      "title": "PLaMo 3 Translate でローカル翻訳APIとゲームの差分翻訳ツールを作った",
+      "url": "https://zenn.dev/marvelousu/articles/plamo-local-translation",
       "site": "Zenn(LLM)",
-      "published": "2026-11-06T12:59:58Z",
-      "description": "Self-RAGを実装の観点で読むなら、何を評価した値なのかを、入力とセットで扱うことが出発点になります。資料が質問に関連することと、生成した回答をその資料が支持することは、異なる判定です。\nSelf-RAG（Self-Reflective Retrieval-Augmented Generation）は、検索の必要性や生成内容の品質を表す特殊なトークン（モデルが扱う記号）を、文章とともに出せるよ...",
+      "published": "2026-11-06T16:59:31Z",
+      "description": "PLaMo 3 Translate をローカルで動かす翻訳APIを作りました。別のアプリやスクリプトから呼べる形にし、ゲームの更新分だけを翻訳するツールも作って、手動で修正した訳を残しながら更新できるところまで試しました。\n\n\n TL;DR\n\nPLaMo 3 Translate の0.8Bモデルを llama.cpp で動かし、ローカルのHTTP APIとして呼べるようにしました。\nAPIとCLI...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "8GBのVRAMをやりくりした知見は、16GBでも効いた",
+      "url": "https://zenn.dev/ace_toshi/articles/local-model-selection-by-spec",
+      "site": "Zenn(LLM)",
+      "published": "2026-11-06T16:21:28Z",
+      "description": "結論から\nローカルLLMのモデル選定で私が最後まで基準にしていたのは、ベンチマークの知能スコアではなく「GPUに100%常駐できるか」の一点だった。\nRTX 3050 8GB の環境で gemma4:12b-it-qat を動かすと、モデルがVRAMに収まらず一部の演算がCPU側へオフロードされ、GPU完全常駐の gemma4:e4b-it-qat と比べて約8倍遅くなった。賢いモデルを選んだつも...",
       "category": "AI・技術",
       "rss_category": "",
       "image_url": ""
@@ -49,6 +59,16 @@
       "site": "Zenn(LLM)",
       "published": "2026-11-06T09:24:13Z",
       "description": "はじめに\nこんにちは、daishir0 です。平日は会社員、夜と週末に Claude Code と一緒にスマホアプリを作って、ストアに出す遊びをしています。\nその中の 1 本が「いえるかな」という瞬間英作文アプリです。日本語の文を見て、声で英語を言う。それを端末の音声認識で文字にして、模範と比べて「つうじた／おしい／ちがう」を判定する。カフェ・レストラン・ホテル・職場など 10 場面、332 文を...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "MuleSoft Inference Connectorの機能と実装例",
+      "url": "https://zenn.dev/globalway_blog/articles/ba9ea72d899cde",
+      "site": "Zenn(LLM)",
+      "published": "2026-11-06T09:06:18Z",
+      "description": "エグゼクティブサマリー\nMuleSoft Inference Connectorを使うと、OpenAI、Azure OpenAI、Anthropic、Geminiなど30を超えるプロバイダーのLLMを、Muleの連携フローから共通の操作で呼び出せます。\n当社では、似た機能を持つMuleSoft AI Chain Connectorと性能を比較しました。当社の検証環境では、同時リクエストではInfe...",
       "category": "AI・技術",
       "rss_category": "",
       "image_url": ""
