@@ -1,8 +1,48 @@
 {
   "site": "Zenn(機械学習)",
-  "last_updated": "2026-11-06T01:44:19.794884",
-  "total_articles": 2169,
+  "last_updated": "2026-11-06T08:33:35.977944",
+  "total_articles": 2173,
   "articles": [
+    {
+      "title": "Clef はなぜ「取引先」にだまされるのか",
+      "url": "https://zenn.dev/starai_org/articles/clef-decision-model-scoring-review",
+      "site": "Zenn(機械学習)",
+      "published": "2026-11-06T07:18:24Z",
+      "description": "はじめに\nこんにちは、STAR AI の RYO です。決定モデルの話、3 回目です。\n前回の 50 文の中に、気になる 1 文がありました。\n\n展示会で配布したパンフレットに、主要な取引先の社名一覧を載せています。\n\n配ったパンフレットの話なので、機密ではありません。でも Clef は 0.85 で「業務機密」と答えました。文の頭に「公開済みの資料より」と付けてもだまされなかったモデルが、「取引...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "「何%」を信じられる決定モデルはどれか ― Ollaya でモデルを試した",
+      "url": "https://zenn.dev/starai_org/articles/ollaya-decision-model-comparison",
+      "site": "Zenn(機械学習)",
+      "published": "2026-11-06T06:57:30Z",
+      "description": "はじめに\nお疲れ様です！STAR AIの RYOです。\n前回は TypeSafe の Jev で「機密情報チェッカー」を作りました。Jev は文章を読んで報告書を書くのではなく、こちらが用意したチェックリストに「○と確率」をつけるモデルです。空港の手荷物検査員にたとえると、荷物を開けて長い報告を書く代わりに、「刃物あり 97%」とチェックシートに書く人でした。\nそのあと気になったのが「同じ仕事がで...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "PyTorchモデル移植でハマった「自動リナンバー」の罠",
+      "url": "https://zenn.dev/hydriod/articles/69d2996b6d508c",
+      "site": "Zenn(機械学習)",
+      "published": "2026-11-06T03:59:24Z",
+      "description": "TL;DR\n\n\nburn-store の PytorchStore には、パスの数値インデックスを 0, 1, 2, ... に詰め直す map_indices_contiguous という処理があり、デフォルトで有効\n\nPyTorch 側のキーが 0, 2 のように飛び飛びで、Burn 側もその飛びを再現している場合、この詰め直しで重みが別の層にずれる\nしかもこの処理は with_key_rem...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "日本語の推論過程付き数量推論データセット「JaMathCoT」を作成し，Sarashina2.2をSFTしてみた",
+      "url": "https://zenn.dev/ao1neko/articles/cd64c5152ffcd2",
+      "site": "Zenn(機械学習)",
+      "published": "2026-11-06T02:16:05Z",
+      "description": "日本語の数学推論データセット「JaMathCoT」を作成し，Sarashina2.2をSFTしてみた\n\n はじめに\n大規模言語モデル（LLM）の推論能力を向上させる方法の1つとして，問題の最終回答だけでなく，回答に至るまでの中間的な推論過程を自然言語で出力するChain-of-Thought（CoT）（Wei et al., 2022）という手法があります．\n今回，こうしたCoTを用いたLLMの日...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
     {
       "title": "【scikit-learn入門 #6】分類モデルの評価 ─ 混同行列・適合率・再現率・F1",
       "url": "https://zenn.dev/haruhiro1020/articles/21a52b0dcf5812",
@@ -144,11 +184,11 @@
       "image_url": ""
     },
     {
-      "title": "話者分離がうまくいかず、モデルを 7 つ替えても直らなかった",
+      "title": "録音した会話の声の聞き分け精度を 78% → 98% にした",
       "url": "https://zenn.dev/kaji_kaji/articles/diarization-ground-truth-before-model-swap",
       "site": "Zenn(機械学習)",
       "published": "2026-11-04T00:00:07Z",
-      "description": "&lt;!-- タイトル候補:\n\n話者分離の精度が出ないとき、最初に作るべきは正解データ 10 か所だった\n「モデルを替えれば直る」は 1 本目で当たって 2 本目で外れた\n--&gt;\n\n\n はじめに\n最近英語を話す機会が多いので、自分の英語の改善のためにも、英会話の内容をもとに AI に復習プランを作成してもらいたいと考えました。最初は ChatGPT に録音をそのまま読み込ませようとしたので...",
+      "description": "はじめに\n最近英語を話す機会が多いので、自分の英語の改善のためにも、英会話の内容をもとに AI に復習プランを作成してもらいたいと考えました。最初は ChatGPT に録音をそのまま読み込ませようとしたのですが、長すぎて読み込めませんでした。\nそこで文字起こしアプリをいくつか調べていたのですが、調べていくうちに、月額料金が思ったより高いことに気づきました。私がやりたいのは、文字起こしをして、それを...",
       "category": "AI・技術",
       "rss_category": "",
       "image_url": ""

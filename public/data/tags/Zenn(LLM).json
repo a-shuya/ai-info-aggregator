@@ -1,14 +1,94 @@
 {
   "site": "Zenn(LLM)",
-  "last_updated": "2026-11-06T01:44:19.794884",
-  "total_articles": 7229,
+  "last_updated": "2026-11-06T08:33:35.977944",
+  "total_articles": 7237,
   "articles": [
     {
-      "title": "AI をどう評価するか ── 自分のシステムのための evals 入門",
-      "url": "https://zenn.dev/singularity/articles/llm-evals-basics",
+      "title": "LoRAファインチューニングで実際に学習しているのはどこか",
+      "url": "https://zenn.dev/bestaitools/articles/0f72b1da5e7c68",
       "site": "Zenn(LLM)",
-      "published": "2026-11-05T20:55:41Z",
-      "description": "AI を使ったアプリを作ると、必ずぶつかる問いがあります。「このモデルで十分なのか」「プロンプトを直したら良くなったのか、悪くなったのか」。\nここで言うモデルは、ChatGPT や Claude の中身にあたる AI 本体のことです。同じ会社のものでも、賢いが高くて遅いもの、少し劣るが安くて速いものなど、何種類も用意されています。プロンプトは、AI に渡す指示文のことです。\nこの問いに答えるには、...",
+      "published": "2026-11-06T02:45:16Z",
+      "description": "「LoRAはモデルの1%だけを学習する」というのがよくある説明です。間違いではありませんが、これだと手元のマシンで動くか、どれくらい回るかを決める部分が見えません。どの層にアダプターが付くのか、ランクで数がどう変わるのか、固定したおもみはどの精度で載っているのか、少ないデータで実際に何回更新されるのか、です。\nここでは具体的な1回分として、Qwen2.5-1.5B-Instructをランク16で、...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "LLMが改善したスキルは、別のLLMにも効く？ ローカル3系列でSkillOptを検証",
+      "url": "https://zenn.dev/scien/articles/5cfad6388c0f01",
+      "site": "Zenn(LLM)",
+      "published": "2026-11-06T02:30:06Z",
+      "description": "はじめに\nこんにちは。株式会社SCIEN MLエンジニアの河合です。\nモデルを更新したとき、以前のモデルに合わせて調整したプロンプトを、そのまま使っていませんか？\n時間をかけて調整したプロンプトは、モデルのバージョンアップや別モデルへの切り替え後も使い続けたいものです。ただ、以前のモデルで効果があった指示が、新しいモデルでも役立つとは限りません。\nそこで調べたのが、あるLLMに合わせて調整したプロ...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "引く前に検査を済ませるな──PACTが拡散LMの並列デコーディングで書いたtokenそのものを認証する仕組み",
+      "url": "https://zenn.dev/lixian/articles/pact-certifying-written-tokens-parallel-decoding",
+      "site": "Zenn(LLM)",
+      "published": "2026-11-06T02:27:27Z",
+      "description": "引く前に検査を済ませるな──PACTが拡散LMの並列デコーディングで書いたtokenそのものを認証する仕組み\n\n TL;DR\nマスク拡散言語モデル（dLLM）の並列デコーディングを速くするcommit rule──Fast-dLLMやEB-Samplerなど──は、予測分布の統計量を検査して「このステップでどの位置を確定するか」を決める。しかしデコードがサンプリングで行われるとき、実際に書かれるの...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "LLMリクエストごとのトークン費用を計算する",
+      "url": "https://zenn.dev/modelflare_dev/articles/ec70ffdad5d304",
+      "site": "Zenn(LLM)",
+      "published": "2026-11-06T02:15:34Z",
+      "description": "この記事は Modelflare ブログ の英語記事を翻訳・再構成したものです。\n本番運用のためのガイド：LLM リクエストごとのトークン費用を計算する。決定的に再現できる成果物、失敗の境界、ロールアウト時のチェック、出典を明示した制約事項をまとめています。\n\n まず判断基準を決める\nLLM リクエストごとのトークン費用を計算するは、単発のコード変更ではなく、本番環境における明示的な契約です。トラ...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "長い変更履歴の「今の状態」はコードで出す｜StateBenchの4段階をPythonとSQLiteで再現",
+      "url": "https://zenn.dev/cauchye_asia/articles/statebench-event-ledger-sqlite",
+      "site": "Zenn(LLM)",
+      "published": "2026-11-06T01:47:41Z",
+      "description": "2026-11-06時点の情報です。\n「Aの担当をBへ移す」「在庫を3つ減らす」「この項目を別の項目と入れ替える」。メールやチャットに積み上がった変更履歴から、今の状態を LLM に読み取らせると、履歴が長くなるほど外れます。Ai2 の StateBench は、この種の状態追跡を測るベンチマークです。\nこの記事は、StateBench の4段階（r-trivial、aperiodic、solub...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "シナリオまで Gemini に任せた人狼ゲームを没にして、物語固定の謎解きADVを作った話",
+      "url": "https://zenn.dev/ttomo_tommy/articles/adk-loop-adv-game",
+      "site": "Zenn(LLM)",
+      "published": "2026-11-05T22:00:05Z",
+      "description": "まとめ\n\nシナリオまで Gemini に生成させた人狼ゲームではAIエージェントの制御が上手くいかず、ゲームの骨格が崩れたため没にした。\n物語を固定し、Gemini の生成範囲を「行間と自由入力への返答」に絞ると、ある程度遊べるものになった。\nADVゲームはストーリーが大事なんだと再認識した。\n\n\n ゲームの設定\nGemini でループもののテキストアドベンチャーゲーム（以下ADVゲーム）を作りま...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "Jevでプロンプトを仕分けして、Claudeのモデルを自動で切り替える",
+      "url": "https://zenn.dev/toshibowie/articles/9244c8f317a7a9",
+      "site": "Zenn(LLM)",
+      "published": "2026-11-05T15:25:20Z",
+      "description": "目的 🎯\n\n「hello」にOpus、「設計判断」にHaikuを消費する状態をやめたい\n分類をJev（TypeSafe AIの分類用モデル）に任せて、Claude Codeのモデルとeffortを1ターンごとに自動で切り替えたい\n\nClaude Codeにプロンプトを送るたびにその内容をJevに精査してもらい、適当なモデルとeffortを選んでもらうpluginを自作しました。\n\n Jevとは？ ...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "7倍速の動画生成Wave Forcingは、GPU8基の前に依存パッケージが足りず動かなかった",
+      "url": "https://zenn.dev/matsushima_a/articles/day-037-wave-forcing-streaming-video",
+      "site": "Zenn(LLM)",
+      "published": "2026-11-05T14:21:26Z",
+      "description": "これは何の記事か\n海外AIネタ100日チャレンジ、Day 037。今回取り上げるのは、上海交通大学のDENG Labが出した動画拡散モデルの高速化手法「Wave Forcing」。論文・推論コード・学習済みモデル重みがすべて公開されており、執筆時点(2026年11月)でZenn・Qiita・noteを検索した範囲では日本語の言及は0件だった。\n\n論文: https://huggingface.co...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "SentryのアラートをClaude Codeのルーティンに調べさせてSlackに報告する",
+      "url": "https://zenn.dev/delt/articles/ca85da1a79cb86",
+      "site": "Zenn(LLM)",
+      "published": "2026-11-05T13:39:02Z",
+      "description": "やりたいこと\nSentryのアラートがSlackに届いても、「攻撃なのか、利用者の操作なのか、不具合なのか」を判断するには、毎回Sentryを開いてログを開くかAIに渡して調査する作業が面倒でした。\nそこで、アラートが出たらClaude CodeのルーティンがSentryを調べ、判断と対応をSlackに1通で投稿する仕組みにしました。\nまた、アラート設定の見落としがないようにログ全体を網羅した定期...",
       "category": "AI・技術",
       "rss_category": "",
       "image_url": ""
