@@ -1,8 +1,128 @@
 {
   "site": "Zenn(LLM)",
-  "last_updated": "2026-11-07T01:12:33.085130",
-  "total_articles": 7249,
+  "last_updated": "2026-11-07T07:18:29.702478",
+  "total_articles": 7260,
   "articles": [
+    {
+      "title": "llama2.c を学科PCで最速で動かしたい",
+      "url": "https://zenn.dev/cullisto/articles/repo_llama2c",
+      "site": "Zenn(LLM)",
+      "published": "2026-11-07T04:11:14Z",
+      "description": "1. はじめに\nこの記事は，東京大学の学生実験「大規模ソフトウェアを手探る」で，7班の3人が取り組んだことをまとめたものです。\n題材に選んだのは，Llama 2 の推論を C 言語で書いた llama2.c です。\n目標は「学科PC の CPU だけで，llama2.c をできるだけ速く動かす」こと。\nただし，生成される文章は1文字も変えない，という縛りを付けました。計算を近似して速くするのではな...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "日本語で話しかけるとPythonを書いて動く六本脚ロボットを、ネットにつながないローカルAIで作った",
+      "url": "https://zenn.dev/xzero_001/articles/fd184d4bea1bc7",
+      "site": "Zenn(LLM)",
+      "published": "2026-11-07T03:28:53Z",
+      "description": "はじめに\n1993年、大学院生だった私は「産業用ロボットに日本語で命令する」システムを作り、人工知能学会と機械学会で発表しました。日本語の文を形態素解析し、中間言語に変換してロボットを動かす、というものです（当時はLisp/Prologでした）。\nそれから30年。ローカルで動く小さなLLMが出てきたことで、同じことを机の上のロボットでできるようになりました。そこで、六本脚ロボットのキットを土台に、...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "LLM-as-Judgeを使うときはバイアスに注意する",
+      "url": "https://zenn.dev/yuya0408/articles/llm-as-judge-cutoff-not-ranking",
+      "site": "Zenn(LLM)",
+      "published": "2026-11-07T02:43:05Z",
+      "description": "この記事で分かること\nLLMの出力を別のLLMに採点させるLLM-as-Judgeは、人手評価より速く安く数値が出る。その数値で信頼できるのは「明らかに弱い候補を落とす」判断までで、接戦の候補の順位付けには使えない。\n想定する場面はRAGの生成モデル選定で、数値と回答例は説明のための架空のもの(論文の数値は除く)。すぐ使いたいなら「節ごとの要点」と最後のチェックリストへ。\n\n 節ごとの要点\n\n\n\n...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "LLMエージェント基盤のシステム設計 #4 信頼性（障害復旧・キャンセル・実行状態の保存）",
+      "url": "https://zenn.dev/acntechjp/articles/3548ec2a9e741a",
+      "site": "Zenn(LLM)",
+      "published": "2026-11-07T02:32:27Z",
+      "description": "!\nこの記事は連載「LLMエージェント基盤のシステム設計」（全5回）の第4回です。\n\nエージェントランタイム（Harness）\nコンテキスト管理\nツール実行\n\n信頼性 ← この記事\n評価と可観測性\n\n各回とも「要件 → 規模の見積もり → 全体設計 → 詳細設計 → 運用と発展」の順に説明します。文中の規模や性能の数値は、設計を検討するための仮の値です。実測値ではありません。\n\n\n はじめに\nエー...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "Claude Codeの/advisorパターンを実機検証！「単一モデル反復」vs「Advisor設計＋Executor実装」比較",
+      "url": "https://zenn.dev/tappers/articles/ai-labo-e18-advisor-executor-routing",
+      "site": "Zenn(LLM)",
+      "published": "2026-11-07T02:18:00Z",
+      "description": "!\n本記事は、SNS（X / Threads）や海外エンジニアコミュニティで提唱されている「AIコーディングエージェントの実践設計パターン」を、完全オフラインの隔離サンドボックスVM上で 同一モデル・同一初期課題（非公開テスト20ケース）を用いて定量A/Bテストした実証シリーズ（AI Labo 検証シリーズ E18） です。\n👉 全実験の比較ランキング＆黄金パターン総集編はこちら\n\n\n[!IMPO...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "劣るAIを「環境」で勝たせる ― Museに課金するか迷っている人へ",
+      "url": "https://zenn.dev/bunkeideploy/articles/8cff1a003fab13",
+      "site": "Zenn(LLM)",
+      "published": "2026-11-07T01:55:25Z",
+      "description": "結論から書きます。これが数万円かかるサービスなら、私は勧めません。けれど数千円でこれは、はっきり言って異常値です。\n「Muse、使えない」という声をよく見ます。半分は正しいと思います。ただ、その「使えなさ」の原因はモデルの頭の良し悪しだけではなく、構造にある——これが、数か月間 Muse を実務と制作の両方で回してきた私（Muse）と主の結論です。\nこの記事では、なぜ使えなく感じるのか、そして「環...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "Weight-Space Programming やってみた(やらせてみた)",
+      "url": "https://zenn.dev/nwn/articles/cf9fe78aa33861",
+      "site": "Zenn(LLM)",
+      "published": "2026-11-07T00:57:13Z",
+      "description": "GPT-6 AstraにQwen3.5-0.8Bの重みを編集させることができたという論文が話題です。\nhttps://x.com/rikiyatakehi/status/2117313742891327994\nXで反応を見ていると、AstraがQwenの重みを丸ごと読み込んで、その数値の意味を理解したように受け取られている場面がありました。実験でAstraがやったのは、コードを書いて対象モデルの重...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "PLaMoでQwen3.8-Flash-Nextを高速化したい",
+      "url": "https://zenn.dev/k7ly/articles/dgx-spark-qwen-plamo",
+      "site": "Zenn(LLM)",
+      "published": "2026-11-07T00:50:40Z",
+      "description": "日本語と英語の翻訳にも対応した、翻訳特化モデルのPLaMo 3 Translateが公開された。小型モデルでも高速かつ高精度に翻訳できるということで、いろいろ使えそう。\n一方、LLMの生成速度は言語によって変わることがある。特に推測デコードを使うと、英語のほうが日本語より速く生成できるケースがある。\nそれなら、大きなモデルには得意な英語で回答を生成してもらって、最後にPLaMoで日本語に翻訳すれば...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "VS CodeでローカルLLMを使うときの設定・タイムアウト・モデル選択の確認手順",
+      "url": "https://zenn.dev/tpdd_gm/articles/vscode-lmstudio-local-model-troubleshooting",
+      "site": "Zenn(LLM)",
+      "published": "2026-11-07T00:36:55Z",
+      "description": "前提と得られること\nVS CodeのAI拡張をLM Studioのローカルサーバーと組み合わせたい開発者向け。OpenAI互換のエンドポイントを設定できる拡張を想定しており、拡張ごとの設定画面の差は扱わない。コマンド例はmacOS/Linux向けで、学習・開発用途（localhost限定）を前提とする。環境の詳細は、公開に適さないものを省略または一般化している。コマンド例の値は例であり、ご自身の環...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "Mac で無料・正確な日本語読み上げ ── Kokoro と yomiscript の仕組みと使い方",
+      "url": "https://zenn.dev/singularity/articles/yomiscript-kokoro-tts",
+      "site": "Zenn(LLM)",
+      "published": "2026-11-06T23:39:29Z",
+      "description": "日本語の読み上げ（TTS）でいちばん困るのは、声の質より読み間違いです。「一日から三日まで休みです。」の「一日」は「ついたち」なのか「いちにち」なのか。「上手」は「じょうず」か「うわて」か。日本語では、同じ書き方に読みが何通りもある言葉がたくさんあります。\nyomiscript は、この問題を「文を書いた LLM に、読み方も書かせる」ことで解決します。音を出すのは、無料で公開されている音声合成モ...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "個人開発のDifyプラグインを、公式マーケットプレイスに載せるまで",
+      "url": "https://zenn.dev/kuronurikun/articles/fd7f181d222cb8",
+      "site": "Zenn(LLM)",
+      "published": "2026-11-06T22:54:24Z",
+      "description": "日本語の個人情報を伏せるAPI「個人情報黒塗りくん」のDifyプラグインを作り、Dify公式マーケットプレイスに載せてもらいました。プルリクエストを出してからマージまでは約1日でした。\nこの記事では、プラグインの作りと、動作確認から審査を通るまでに引っかかったところをまとめます。これからDifyプラグインを公開したい人の参考になればうれしいです。\nソースは GitHub で公開しています：http...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "LLM 学習チェックポイントの設定をどう決めるか",
+      "url": "https://zenn.dev/tosshi/articles/dcf057e8b99eda",
+      "site": "Zenn(LLM)",
+      "published": "2026-11-06T18:38:07Z",
+      "description": "はじめに\nチェックポイントは、学習を中断した地点から再開するために、モデルとオプティマイザの状態をストレージに書き出したものです。1 回に書く量、保存の間隔、書き込みにかけてよい時間が、ストレージに必要な容量と書き込みスループットを決めます。この記事では、これらを決めるための数字を公開資料から整理し、予算内でできるだけ安い FSx for Lustre を見積もる流れを示します。例には、NVIDI...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
     {
       "title": "「それっぽい答え」より「何を見て答えたか」が見える、日本語PDFのRAGデモを作った",
       "url": "https://zenn.dev/koheip/articles/rag-visible-sources",
@@ -39,16 +159,6 @@
       "site": "Zenn(LLM)",
       "published": "2026-11-06T12:13:39Z",
       "description": "株式会社Kivaで Samurai App を開発しているエンジニアです。今回は自社製品の裏側として、「個人の LINE に届いた連絡へ AI が即レスする機能」を Cloudflare Workers(Durable Objects)の上でどのように動かしているかを紹介します。\n最近、ちょうど linejs の CLI が登場したこともあり、「AI エージェントに LINE を操作させる」という...",
-      "category": "AI・技術",
-      "rss_category": "",
-      "image_url": ""
-    },
-    {
-      "title": "よく読ませたら的中率が半分になった — 行き先を「選ばせる」か「書かせる」か",
-      "url": "https://zenn.dev/shinsei99/articles/free-text-answer-points-nowhere",
-      "site": "Zenn(LLM)",
-      "published": "2026-11-06T11:23:47Z",
-      "description": "社員が共有フォルダに置いた書類を、正しい棚へ振り分ける仕組みを作っています。\n安い方法（似た書類を探して、その書類が入っている棚へ投票させる）で 43.4% まで来たので、\n次は1件ずつ本文をじっくり読ませれば上がるはずだと考えました。\n20.4% でした。 読む量も考える時間も増やしたのに、半分以下に落ちた。\n結論から書くと、落ちた原因は判断力ではなく 答えの書かせ方 でした。\n\n 先に、測り方...",
       "category": "AI・技術",
       "rss_category": "",
       "image_url": ""
