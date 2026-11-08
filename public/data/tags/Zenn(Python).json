@@ -1,14 +1,164 @@
 {
   "site": "Zenn(Python)",
-  "last_updated": "2026-11-08T15:07:37.815197",
-  "total_articles": 7697,
+  "last_updated": "2026-11-08T19:40:22.299634",
+  "total_articles": 7711,
   "articles": [
+    {
+      "title": "FastAPI + async SQLAlchemy のテストを Testcontainers で書く",
+      "url": "https://zenn.dev/parkwestlabs/articles/testcontainers-py-fastapi-async",
+      "site": "Zenn(Python)",
+      "published": "2026-11-08T15:33:16Z",
+      "description": "!\nこれは下書きです。コードは hello-testcontainers-py の現在の内容に合わせています。\n\n\n この記事で扱うこと\n\nTestcontainers とは何か、Docker Compose とどう違うか\nFastAPI + async SQLAlchemy の構成で、本物の PostgreSQL に対するテストを書く方法\nテストごとにデータを分離する方法（rollback を使...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "いまさらながら契約駆動開発をやってみた(会議室予約で実践)",
+      "url": "https://zenn.dev/satoru_o/articles/57991c052ea191",
+      "site": "Zenn(Python)",
+      "published": "2026-11-08T13:50:30Z",
+      "description": "はじめに\n本稿は、契約(Design by Contract)という考え方を解説し、会議室予約のプログラムで実践した記録です。契約とは、メソッドを呼ぶ前に成り立っているべき条件(事前条件)、メソッドが処理を終えた後に成り立っているべき条件(事後条件)、常に成り立っているべき条件(不変条件)を、コードとして書き、実行時に検査する考え方です。\n\n 契約を試した背景\n筆者が契約を試した背景は、2 つあり...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "Python(Pillow)だけでKindleペーパーバックを完全自動生成（A5判・右開き・縦書き歌画集の実践ガイド）",
+      "url": "https://zenn.dev/sesamy_jp/articles/a113fc251f9b3d",
+      "site": "Zenn(Python)",
+      "published": "2026-11-08T11:51:10Z",
+      "description": "はじめに\nKindle出版といえばEPUB形式の電子書籍が主流ですが、KDP（Kindle Direct Publishing）のペーパーバック機能を使えば、初期費用ゼロ・在庫リスクなしで本格的な「紙の書籍（オンデマンド印刷）」を全世界へ出版できます。\n通常、印刷用の完全データ（入稿PDF）を作成するにはInDesignなどの高価なDTPソフトが使われます。しかし、画像処理を自動化できるエンジニア...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "全セル同じなのに重複として出ない — ハッシュはバイト列の同一性しか答えていない",
+      "url": "https://zenn.dev/shinsei99/articles/hash-missed-the-duplicate",
+      "site": "Zenn(Python)",
+      "published": "2026-11-08T11:29:04Z",
+      "description": "共有フォルダに溜まった約2万2千件の書類から、消してよい重複を機械で洗い出しました。\n最初に決めた線は単純です。\n\n名前でも日付でもなく、中身のバイト列が完全に一致したものだけを重複と呼ぶ\n\n名前が違っても拾えるので、まったく無関係な名前の2本が同一で13か所に散っている、といった組も見つかりました。この線は半分は正しく、半分は間違っていました。\n本稿はその間違った半分、つまり ハッシュ一致という...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "git branch --mergedに出ない取り込み済みブランチを見分ける――556本を整理した実例",
+      "url": "https://zenn.dev/veripsa/articles/github-branch-cleanup-squash-556",
+      "site": "Zenn(Python)",
+      "published": "2026-11-08T11:23:44Z",
+      "description": "GitHubでPRを取り込んだはずなのに、作業ブランチが残っている。git branch --merged mainを見ても、その枝が出てこない。\n個人開発の公開リポジトリを整理したとき、リモートに556本のブランチがありました。PRの取り込み記録と現在のheadを照合し、453本を整理して103本を残しました。その候補453本のうち、保存時のmainからGitの祖先関係で到達できたのは50本で、...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "WhatsAppのチャット履歴をCSVに書き出して、Pythonで分析する方法",
+      "url": "https://zenn.dev/selen0725/articles/fedd9141ad0bcb",
+      "site": "Zenn(Python)",
+      "published": "2026-11-08T10:57:37Z",
+      "description": "はじめに\nWhatsAppを仕事やプロジェクトの連絡に使っていると、チャット履歴がいつの間にか数千件、数万件になることがあります。\n過去のやり取りを確認するだけならWhatsAppの検索機能でも対応できますが、次のような分析をしたい場合は少し不便です。\n\nどの時間帯にメッセージが多いのか\n誰がどのくらい発言しているのか\n特定のキーワードが何回登場したのか\n月ごとのメッセージ数はどう変化しているのか...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "AIで競馬予想モデルを作り、毎週答え合わせする：LightGBMとバックテストの基本",
+      "url": "https://zenn.dev/shoyomayabot/articles/keiba-ai-lightgbm-backtest",
+      "site": "Zenn(Python)",
+      "published": "2026-11-08T10:08:50Z",
+      "description": "AIエージェントと一緒に、競馬の予想モデルを作りました。Pythonと、表形式のデータに強い機械学習ライブラリのLightGBMを使っています。\n先に結論を書きます。長く続けて確実に勝てる買い方は、見つかりませんでした。 それでも、機械学習で「予測して、確かめる」流れを学ぶ題材としては、とても良いものでした。\nこの記事では、予測モデルの作り方よりも、予測が本当に当たっているかを確かめる方法を中心に...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "GCS の楽観ロックが失敗し続けた。原因は Python の Blob の使い回しで、読む世代が固定されていた",
+      "url": "https://zenn.dev/maruhana/articles/stackchan-gcs-blob-generation-lock",
+      "site": "Zenn(Python)",
+      "published": "2026-11-08T10:04:24Z",
+      "description": "!\n先に、この記事の要約（専門用語なし）\n\nスタックチャンに「毎日 13 時に声をかけて」のような予定を覚えさせている。予定表は、クラウドの保存場所（Google Cloud Storage）に置いたファイル 1 つだ\nサーバーが 2 台同時に動くと、片方が書いた予定をもう片方が上書きして消すおそれがある。そこで「読んだときから誰も書き換えていなければ書く。書き換えられていたら読み直してやり直す」...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "Cloudflare Turnstile のトークンは 300 秒で失効する — Python で取得・検証するときの落とし穴",
+      "url": "https://zenn.dev/seencxy/articles/f3df33c25b5d55",
+      "site": "Zenn(Python)",
+      "published": "2026-11-08T09:47:05Z",
+      "description": "はじめに\nCloudflare Turnstile は「チェックボックスを出さない CAPTCHA」として急速に普及しました。導入する側の記事はたくさんありますが、トークンを受け取って検証する側の実装の話は意外と少ないです。\nこの記事は、Turnstile のトークンを Python から扱うときに必ず踏む落とし穴を、実際に踏んだ順に並べたものです。対象は「自社サイトの E2E テスト」「許可を得...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "pytestでテストが検出時にエラーになり安全検査4本が未実行だった原因と直し方",
+      "url": "https://zenn.dev/hakumaigenki/articles/pytest-p310-8110",
+      "site": "Zenn(Python)",
+      "published": "2026-11-08T08:49:10Z",
+      "description": "この記事で切り分けられること\npytest の実行結果の末尾に「passed」が並んでいて一見問題なさそうに見えるのに、実は一部のテストが一度も実行されていないケースを切り分けられる。特に tmp_path を使うテストが Windows 環境で収集時点から失敗する場合の見分け方と直し方を扱う。\n\n 症状\npytest tests/ -q を実行すると毎回「6 errors」が出ていたが、最終行だ...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "創作上の2031年をRSSに流さない――静的サイトで3つの日時を分ける",
+      "url": "https://zenn.dev/veripsa/articles/fiction-date-rss-static-site",
+      "site": "Zenn(Python)",
+      "published": "2026-11-08T08:24:10Z",
+      "description": "創作サイトの画面には、現実と違う日時を載せたくなることがあります。その表示日時をRSSや検索向けのメタデータにも使うと、作品内の演出が実際の公開日時として流れてしまいます。\n未発生新聞は「5年後の小さな珍事」を新聞として読むサイトです。この実装では、日時を用途別に持ち、ページの見た目と外部配信で使い分けています。この記事では、その境界だけを取り出します。静的サイトや架空世界の作品ページを作る人向け...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "Claude Codeの「許可待ち」をosFoundryが見分けるしくみ",
+      "url": "https://zenn.dev/bbt/articles/b7855f3b14ef17",
+      "site": "Zenn(Python)",
+      "published": "2026-11-08T07:36:18Z",
+      "description": "Claude Code 2.1.303がコマンド実行の許可を求めるとき、端末に流れてくるバイト列は次のとおりである。osFoundryがテスト用に保存している実キャプチャ（resources/agent-detection/fixtures/claude.blocked.raw）から抜き出した。\n\\r\\x1b[1C\\x1b[1B\\x1b[39mDo\\x1b[5Gyou\\x1b[9Gwant\\x1b...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "【React+Recharts】データ可視化のために1プロジェクトだけReactを選んだ話 ― 第五弾フロントエンド実装記",
+      "url": "https://zenn.dev/junko_jp/articles/daigo-frontend",
+      "site": "Zenn(Python)",
+      "published": "2026-11-08T06:29:35Z",
+      "description": "この記事でわかること\n\nStreamlit統一ではなく、あえて1プロジェクトだけReactを採用した判断基準\nダミーデータ先行→本物のAPI接続、という開発の進め方\n会員向け・スタッフ向け2画面の構成と、実際に使ったAPIエンドポイント\n実機CSVデータを取り込むための投球者自動特定ロジック\n\n\n なぜここだけReactなのか\nこれまでのプロジェクト(第一弾・第二弾)はStreamlitでフロント...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "【Python×MT5】日次損失-5%で即失格のFTMOに挑む！米国株デイトレ特化AIの設計と実装全記録",
+      "url": "https://zenn.dev/prompter_note/articles/lumina-prop-ftmo-us-equities-mt5-design",
+      "site": "Zenn(Python)",
+      "published": "2026-11-08T06:15:06Z",
+      "description": "はじめに\n先週、個人開発している自律型AIヘッジファンド『Lumina AI』のアーキテクチャ解説記事をQiitaに投稿したところ、大変ありがたいことに多くの反響とストックをいただきました。\nhttps://github.com/ramuza0113-sketch/lumina-ai-hedge-fund\n本家のLumina AIは、**「米株・日本株の現物スイングトレード（数日〜数週間保有）」*...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
     {
       "title": "サブスク利用でも API 換算コストを把握したい：Claude Code フック + launchd で記録の仕組みを作る",
       "url": "https://zenn.dev/no215/articles/claude-code-api-cost-log",
       "site": "Zenn(Python)",
       "published": "2026-11-08T05:05:19Z",
       "description": "Claude Code をサブスクリプションで使っていると、トークンをどれだけ使ったかを意識する機会がほとんどありません。この記事では、セッションごとに「API で使ったらいくらだったか」を円で自動記録し、毎月1日に先月分を集計する仕組みを紹介します。Claude Code のフック、Python の標準ライブラリだけで書いたスクリプト、macOS の launchd を組み合わせます。コードは全...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "Claude Codeが「41分止まっています、止めてよいですか」と聞いてきた処理は、動画を描いている最中だった：記録の空白で止まったと決め",
+      "url": "https://zenn.dev/kirinukiauto/articles/0a96477a82655c",
+      "site": "Zenn(Python)",
+      "published": "2026-11-08T04:20:41Z",
+      "description": "政治の切り抜き動画づくりを、Claude Code に丸ごと任せています。私はプログラムを書けないので、コードは読んでいません。\nある日の昼、「動いてるか？」と聞いたら、Claude Code がこう返してきました。\n\n動画を作る流れの1本が、41分間、記録に何も書いていない\nGPU を使う順番の権利を、別の文字起こしの処理が50分ほど持ったまま\nその処理を止めて、流れを進めてよいか\n\n最後に、私...",
       "category": "開発",
       "rss_category": "",
       "image_url": ""
@@ -49,16 +199,6 @@
       "site": "Zenn(Python)",
       "published": "2026-11-07T23:26:42Z",
       "description": "はじめに — 昨日の差し棒が、もう古くなった（笑）\n昨日、FRB研究所は新型ポインティングふぅ装置「マウス差し棒」を発表した。\n小さな青い操作エリアでマウスを動かすと、画面に長い棒が現れる。ホイールをぐりぐりすると伸び縮みする。先端で離れた場所を指し、クリックまでできる。\n「たった2cmのマウス移動をなくしたい」という、実に壮大な研究だった（笑）。\nそして翌日。\nマウス差し棒が、もう新型ではなくな...",
-      "category": "開発",
-      "rss_category": "",
-      "image_url": ""
-    },
-    {
-      "title": "bigframes の ai.if_ は既定のままだと安くならない",
-      "url": "https://zenn.dev/nabeyan_dev/articles/bigframes-ai-if-cost",
-      "site": "Zenn(Python)",
-      "published": "2026-11-07T23:12:31Z",
-      "description": "検証の全手順・ログ・費用の内訳はこちら: https://fullstack-notes.dev/blog/bigframes-ai-if-cost/\nbigframes の ai.if_() を使うと、pandas の DataFrame から BigQuery の AI.IF を呼べる。公式ブログによると、既定でコスト最適化が効くらしい。蒸留モデルが大半の行を判定して、残りだけを Gemini...",
       "category": "開発",
       "rss_category": "",
       "image_url": ""

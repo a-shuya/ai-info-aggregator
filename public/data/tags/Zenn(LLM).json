@@ -1,14 +1,34 @@
 {
   "site": "Zenn(LLM)",
-  "last_updated": "2026-11-08T15:07:37.815197",
-  "total_articles": 7282,
+  "last_updated": "2026-11-08T19:40:22.299634",
+  "total_articles": 7286,
   "articles": [
     {
-      "title": "生成AIは、かつてのコンピュータと同じ道をたどるのか",
-      "url": "https://zenn.dev/hydenori24/articles/personal-generative-ai-computing-history",
+      "title": "AIに自分のコードのテストを書かせるとバグを見逃す？「1エージェントTDD」vs「2エージェント・ブラインドTDD」実機検証",
+      "url": "https://zenn.dev/tappers/articles/ai-labo-e06-blind-tdd-worktrees",
       "site": "Zenn(LLM)",
-      "published": "2026-11-08T06:18:36Z",
-      "description": "生成AIに料金を払って使っていると、ふと思う。\n昔のコンピュータも、こういうものだったのではないだろうか。\n高価な計算機を個人で持つのは難しい。それでも、計算してほしい仕事はある。だから、計算機を持っている組織の設備を使う。その後、小型化や低価格化が進み、個人がコンピュータを持つことが普通になった。\nいまの生成AIも、少数の企業が運用する大きなモデルに、ネットワーク越しにアクセスする使い方が身近だ...",
+      "published": "2026-11-08T09:23:58Z",
+      "description": "!\n本記事は、SNS（X / Threads）や海外エンジニアコミュニティで提唱されている「AIコーディングエージェントの実践設計パターン」を、完全オフラインの隔離サンドボックスVM上で 同一モデル・同一初期課題（非公開テスト20ケース）を用いて定量A/Bテストした実証シリーズ（AI Labo 検証シリーズ E06） です。\n👉 全実験の比較ランキング＆黄金パターン総集編はこちら\n\n本ドキュメント...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "BTPropを公開ログで再現し、NLIのつながりを壊して比べた――LLMの嘘検出で「つながりを疑う」BPはどこで効くか",
+      "url": "https://zenn.dev/mst_design2020/articles/8b904689df2ddc",
+      "site": "Zenn(LLM)",
+      "published": "2026-11-08T09:07:00Z",
+      "description": "LLMの答えの嘘（ハルシネーション）を、文どうしのつながりから見つける方法に BTProp（Hou ほか、NAACL 2025）があります。個人研究で似たこと（ルールも疑う確率伝搬）をしていたので、BTPropの作者が公開している材料をそのまま使って、同じテストで比べました。\n結論を先に書きます。\n\n論文の数字は、公開ログからほぼ再現できました（AIの自信だけより AUROC +0.03〜+0.0...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "AIの資料レビューは1回で終わらせない。まっさらなエージェントを3回直列で回す手順書",
+      "url": "https://zenn.dev/mizo_ko/articles/article-003-zenn",
+      "site": "Zenn(LLM)",
+      "published": "2026-11-08T07:10:06Z",
+      "description": "1回のAIレビューでは、指摘が漏れる\nPMとして、設計書や比較検討資料をClaudeにレビューさせています。1回のレビューで出る指摘は平均20件ほどですが、2回目と3回目でも、それぞれ5〜10件ほど新しい指摘が出ます。1回で終わらせると、この分が漏れたまま資料が出ていくことになります。\nそこで、内容レビューは毎回まっさらなAIエージェントで3回、直列で回すようにしました。この記事では、その手順書を...",
       "category": "AI・技術",
       "rss_category": "",
       "image_url": ""
@@ -29,6 +49,26 @@
       "site": "Zenn(LLM)",
       "published": "2026-11-08T03:32:19Z",
       "description": "はじめに\nPython の Pydantic AI で組んだエージェントを、そのまま Rust に持っていけたら楽だと感じることはないでしょうか。serdes-ai は crates.io で「Type-safe, production-ready AI agent framework for Rust - a full port of pydantic-ai」を名乗るクレートで、エージェント・ツ...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "Claude Codeがメアドを送った？利用者の指摘が波紋",
+      "url": "https://zenn.dev/sugawara_ai/articles/ai-news-20261107",
+      "site": "Zenn(LLM)",
+      "published": "2026-11-08T01:02:45Z",
+      "description": "2026年11月7日（土）のAIニュース完全解説版。図解を見れば本文を読まなくても分かる形にしています。\n今日はちょっと身構える話が多いんですよ。AIの道具からメールアドレスが外に出たという指摘、AI開発そのものがAIで速くなっているという第三者の調査、そして巨大なAIを68時間で育てた発表。僕が毎朝自分の仕組みで集めて読んでいるニュースから、経営者の皆さんにも、AIを学んでいる皆さんにも、明日か...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "evals の次の一歩 ── 評価ツール・練習問題の自動生成・プロンプトの自動改善を、公式文書と論文で調べた",
+      "url": "https://zenn.dev/singularity/articles/llm-evals-tools-data-optimizers",
+      "site": "Zenn(LLM)",
+      "published": "2026-11-08T00:27:41Z",
+      "description": "前回の記事 では、AI の出力を測る仕組み（evals）の基本を書きました。問題集を自分で作る、使い道ごとに分ける、採点する AI には癖がある、という話です。\n評価ができるようになると、次に知りたくなることが 3 つあります。\n\nどのツールで回すか\n\n練習問題を AI に作らせられないか（この記事では、評価用のデータを「練習問題」と呼びます）\n評価の結果から、プロンプトを自動で直せないか\n\nこの...",
       "category": "AI・技術",
       "rss_category": "",
       "image_url": ""
