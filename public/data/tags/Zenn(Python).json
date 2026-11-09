@@ -1,8 +1,88 @@
 {
   "site": "Zenn(Python)",
-  "last_updated": "2026-11-08T23:10:18.340863",
-  "total_articles": 7710,
+  "last_updated": "2026-11-09T02:40:35.838250",
+  "total_articles": 7719,
   "articles": [
+    {
+      "title": "AI応答ログのハッシュ連鎖は、モデルの出自を証明しない──FlashProveとの境界をPythonで試す",
+      "url": "https://zenn.dev/jinsights/articles/e2637428ace7c1",
+      "site": "Zenn(Python)",
+      "published": "2026-11-09T00:52:11Z",
+      "description": "AIの応答を業務ログに残す開発者向けの記事です。ハッシュ連鎖と、別に保持した末尾のハッシュを使うと、保存後の変更を検出できます。ただし、どのモデルが答えたかも、回答の正しさも証明できません。\nPython標準ライブラリのみ、ダミーの応答をメモリ内で扱います。通信・ファイル読み書き・API呼び出しはありません。後述の実行結果はこのコードの検査であり、FlashProveの再現ではありません。\n\n A...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "Codex CLI と Claude Code に同じ CSV 集計を頼んで比べた — 違いは「許可の仕組み」と「指示していない部分」",
+      "url": "https://zenn.dev/chukidx_dev/articles/codex-vs-claudecode-trial",
+      "site": "Zenn(Python)",
+      "published": "2026-11-08T23:59:01Z",
+      "description": "Codex CLI(OpenAI のターミナル上で動く AI コーディングエージェント)と Claude Code(Anthropic のターミナル上で動く AI コーディングエージェント)に、まったく同じ依頼文で小さな業務スクリプトを書かせて、結果を並べました。\nこの記事では、試した手順・結果・見えた違いと、そこから考えた使い分けの案をまとめます。架空のデータを使った1つのタスク・各2回だけの記...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "アプリのインストールが制限された 業務PC（Windows） で、Markdown の表をターミナルで見やすくする",
+      "url": "https://zenn.dev/no215/articles/terminal-markdown-table-uv-rich",
+      "site": "Zenn(Python)",
+      "published": "2026-11-08T23:43:40Z",
+      "description": "業務 PC の Git Bash で Markdown の表を見ると、| や --- がそのまま並んでいて読みにくいものです。この記事では、新しいアプリをインストールせずに、ターミナル上で表を整えて表示する方法を紹介します。使うのは uv と、Python のライブラリ rich だけです。mdp（全部表示）と mdpp（ページ送り表示）という 2 つのエイリアスを作ります。途中でつまずいた点と、...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "キャッシュのしくみをPythonでシミュレーション｜\"速いメモリ\"の魔法",
+      "url": "https://zenn.dev/maru1228/articles/semiconductor-cache-simulator-python",
+      "site": "Zenn(Python)",
+      "published": "2026-11-08T23:19:20Z",
+      "description": "!\nこの記事は自サイト キャッシュのしくみをPythonでシミュレーション｜\"速いメモリ\"の魔法 の再掲（クロス投稿）です。図をインタラクティブに動かせる版は元記事でどうぞ。\n\nCPUはメモリよりずっと速いため、そのままでは「データ待ち」で性能が出ません。そこで キャッシュ という小さくて速いメモリが橋渡しをします。この記事ではPythonでキャッシュのヒット率をシミュレーションし、なぜ効くのかを...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "デイトレの合図の逆をやっても負けた。負けていたのは合図ではなく、売り方だった",
+      "url": "https://zenn.dev/codecraft/articles/signal-vs-execution-spread",
+      "site": "Zenn(Python)",
+      "published": "2026-11-08T23:06:27Z",
+      "description": "日本株のデイトレードBotを、実弾ゼロのドライランで検証しています。これまでに数百通りの改善案を試し、どれも基準を通りませんでした。\n今回、その「通らなかった」の中に、合図の良し悪しではなく、売り方のせいで負けていたものが混ざっていたことに気づきました。この記事はその記録です。\n\n\n 記録していたのに、判断には使っていなかった\nこのBotでは、証券会社(三菱UFJ eスマート証券)のkabuステー...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "【Python】KMP法で文字列検索｜分割したログの境界をまたぐ目印を探す",
+      "url": "https://zenn.dev/student_blog/articles/kmp-streaming-log-search-python",
+      "site": "Zenn(Python)",
+      "published": "2026-11-08T23:05:59Z",
+      "description": "ログを少しずつ読み込むとき、探している目印が二つの読み込みに分かれたら、どう見つければいいでしょうか。KMP法では、いま目印の先頭から何文字まで一致しているかを次の読み込みに引き継ぎます。 読み終えたログの文字列を、検索用に保存し直す必要はありません。\nログが ABAB、ABAC の順に届き、目印が ABABAC だとします。位置はログ全体の先頭を 0 として数えます。\n\n\n\n探し方\n同じログでの...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "PythonとlaunchdでAIエージェントの死活監視",
+      "url": "https://zenn.dev/ikuokuotiak/articles/launchd-python-agent-watchdog",
+      "site": "Zenn(Python)",
+      "published": "2026-11-08T22:00:42Z",
+      "description": "課題: 止まっていることに気づけない\n複数のAIエージェントをlaunchdで常駐・定期実行していると、一番困るのは「エラーで落ちる」ことではなく「静かに止まっている」ことです。launchdのジョブ自体は登録されたままで、スクリプト内部のAPI認証切れや無限待ちで処理が進まなくなっても、Macは何も教えてくれません。\n私は13体のエージェントを動かしていますが、数日経ってから「そういえば日次の処...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "「駐車場はありません」が「あります」で返ってきた。小さなローカルLLMの写真読み取りを試す",
+      "url": "https://zenn.dev/hilopon/articles/local-vlm-ocr-confident-misread",
+      "site": "Zenn(Python)",
+      "published": "2026-11-08T21:30:44Z",
+      "description": "LINEに送った写真の文字を、自宅のPCに書き写させています。読ませているのは Ollama で動かしている qwen3-vl:4b-instruct というモデル。名前の「4b」は中の数値（パラメータ）が約40億個という意味で、ファイルにすると3.3GBほどです。家庭用のゲーミングPCで、1枚6秒前後。\nこの仕組みの作り方を本にまとめたとき、写真の章に「確かめたのは、はっきりした文字の画像だけ」...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
     {
       "title": "FastAPI + async SQLAlchemy のテストを Testcontainers で書く",
       "url": "https://zenn.dev/parkwestlabs/articles/testcontainers-py-fastapi-async",
@@ -14,11 +94,31 @@
       "image_url": ""
     },
     {
+      "title": "変異は生成できても、テストの穴はそれだけでは見つからない",
+      "url": "https://zenn.dev/miyakona/articles/mutation-generator-needs-structural-review",
+      "site": "Zenn(Python)",
+      "published": "2026-11-08T13:55:46Z",
+      "description": "AIエージェントにコードの修正を任せるとき、テストが通ったという報告だけでは、テストが変更を守れているかまでは分かりません。そこで、push前のセルフレビューに「わざとコードを壊し、それでもテストが通るか」を確かめる担当を置いていました。\nこの担当もAIエージェントです。実装を読み、壊した版の一覧をJSONで作り、実行用のハーネスへ渡します。ハーネスは、変異を1件ずつ当ててテストを実行する仕組みで...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
       "title": "いまさらながら契約駆動開発をやってみた(会議室予約で実践)",
       "url": "https://zenn.dev/satoru_o/articles/57991c052ea191",
       "site": "Zenn(Python)",
       "published": "2026-11-08T13:50:30Z",
       "description": "はじめに\n本稿は、契約(Design by Contract)という考え方を解説し、会議室予約のプログラムで実践した記録です。契約とは、メソッドを呼ぶ前に成り立っているべき条件(事前条件)、メソッドが処理を終えた後に成り立っているべき条件(事後条件)、常に成り立っているべき条件(不変条件)を、コードとして書き、実行時に検査する考え方です。\n\n 契約を試した背景\n筆者が契約を試した背景は、2 つあり...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "AI×Blenderで下絵からアニメ調の髪をモデリングした記録",
+      "url": "https://zenn.dev/yy7613/articles/921a7fe3ffffc7",
+      "site": "Zenn(Python)",
+      "published": "2026-11-08T13:14:23Z",
+      "description": "はじめに\nこの記事では生成AIと1枚の下絵からアニメ調キャラクターの髪を作る仕組みと手順を紹介します。\n\n第1部では短い髪と片側の結びと編み込みを加えたショートを題材に下絵から髪を作る仕組みを解説します。\n第2部では腰まで届く盛ったボリュームのあるウェーブしたロング髪に挑戦し、同じ仕組みが通用しなかったときにどう方法を見直したかを解説します。\n第3部では形状の指標と検査の計算方法について解説します...",
       "category": "開発",
       "rss_category": "",
       "image_url": ""
@@ -59,16 +159,6 @@
       "site": "Zenn(Python)",
       "published": "2026-11-08T10:57:37Z",
       "description": "はじめに\nWhatsAppを仕事やプロジェクトの連絡に使っていると、チャット履歴がいつの間にか数千件、数万件になることがあります。\n過去のやり取りを確認するだけならWhatsAppの検索機能でも対応できますが、次のような分析をしたい場合は少し不便です。\n\nどの時間帯にメッセージが多いのか\n誰がどのくらい発言しているのか\n特定のキーワードが何回登場したのか\n月ごとのメッセージ数はどう変化しているのか...",
-      "category": "開発",
-      "rss_category": "",
-      "image_url": ""
-    },
-    {
-      "title": "GCS の楽観ロックが失敗し続けた。原因は Python の Blob の使い回しで、読む世代が固定されていた",
-      "url": "https://zenn.dev/maruhana/articles/stackchan-gcs-blob-generation-lock",
-      "site": "Zenn(Python)",
-      "published": "2026-11-08T10:04:24Z",
-      "description": "!\n先に、この記事の要約（専門用語なし）\n\nスタックチャンに「毎日 13 時に声をかけて」のような予定を覚えさせている。予定表は、クラウドの保存場所（Google Cloud Storage）に置いたファイル 1 つだ\nサーバーが 2 台同時に動くと、片方が書いた予定をもう片方が上書きして消すおそれがある。そこで「読んだときから誰も書き換えていなければ書く。書き換えられていたら読み直してやり直す」...",
       "category": "開発",
       "rss_category": "",
       "image_url": ""
