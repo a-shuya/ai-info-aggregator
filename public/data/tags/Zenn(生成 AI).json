@@ -1,8 +1,148 @@
 {
   "site": "Zenn(生成 AI)",
-  "last_updated": "2026-11-09T10:23:16.349903",
-  "total_articles": 4995,
+  "last_updated": "2026-11-09T20:59:29.817714",
+  "total_articles": 5009,
   "articles": [
+    {
+      "title": "AI返信の二重送信を防ぐ：idempotency keyと状態遷移の最小設計",
+      "url": "https://zenn.dev/miraigent/articles/ai-reply-idempotency-key",
+      "site": "Zenn(生成 AI)",
+      "published": "2026-11-09T20:47:32Z",
+      "description": "問い合わせ返信をAIに下書きさせる運用では、文章の誤りだけでなく同じ返信を二度送る事故にも注意が必要です。\n\n送信ボタンを二度押した\n送信結果が画面に返らず、担当者が再実行した\nタイムアウト後にジョブやWebhookが再試行した\n承認済みの下書きを別の担当者がもう一度送信した\n\nこの問題には、文章の品質チェックとは別に、同じ業務上の送信を一度だけ成立させる識別子が必要です。この記事では、**ide...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "「AIで何かしたい」を解ける課題に変える ― AIソリューション設計の実践ガイド",
+      "url": "https://zenn.dev/inf_e/books/ai-solution-design-guide",
+      "site": "Zenn(生成 AI)",
+      "published": "2026-11-09T19:00:07Z",
+      "description": "「AIで何かしたい」という曖昧な要望を、解くべき課題に置き換え、AIとデータで解決策を設計し、効果と進め方まで示すための実践ガイドです。AI導入の基礎知識、要件定義の7ステップ、15のソリューションパターン、製造・物流・金融などの業界別の代表例、8つのケーススタディを収録しています。",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "「AIで何かしたい」を解ける課題に変える ― AIソリューション設計の全体像",
+      "url": "https://zenn.dev/inf_e/articles/ai-solution-design-overview",
+      "site": "Zenn(生成 AI)",
+      "published": "2026-11-09T19:00:05Z",
+      "description": "!\n本記事は、調査した内容をもとに、生成AIを多分に活用して執筆しています。\n\n「AIで何かできないか」「検査をAIで自動化したい」「生成AIを入れたのに、使われていない」。こうした相談は、業界や職種を問わず増えています。けれど、要望の言葉をそのまま形にしても、多くの場合うまくいきません。本当に解くべき課題がずれていたり、作ったAIが業務の中で使われなかったりするからです。\nこの記事では、曖昧な要...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "AIがどう変われば、低スキル者のAI生成物がゴミでなくなるのか？",
+      "url": "https://zenn.dev/pdfractal/articles/1100d36cc433b0",
+      "site": "Zenn(生成 AI)",
+      "published": "2026-11-09T16:03:12Z",
+      "description": "はじめに\n生成AIの普及によって、専門知識や高度な技能を持たない人でも、見栄えのよい資料やプログラムを簡単に作成できるようになりました。しかし、生成された成果物が実際の業務に役立つかというと、話は別です。外見上は整然としていても、分類体系が破綻していたり、名称の意味が曖昧だったり、そもそも業務上の目的に合致していなかったりする成果物が生まれています。\n本稿でいう低スキル者とは、業務を遂行するための...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "月報は点検の結果を1行の末尾に連結する — 読み返しの入口が翌月も1行である形",
+      "url": "https://zenn.dev/takumahayami/articles/eigyou-ai-geppo-renketsu-1gyou",
+      "site": "Zenn(生成 AI)",
+      "published": "2026-11-09T13:02:37Z",
+      "description": "前回では、書き戻しの結果の表をAIに読ませて、月頭の時点で未直の行だけを残す点検の形を定めました。今回は、その点検の結果を月報に戻す手続きです。未直の行の数と外れた箱の数を、月報の読み返しページの1行の末尾に連結し、翌月の読み返しがその1行から始められる形を定めます。\n\n 課題：点検の結果が月報に残らないと、読み返しの入口が翌月に消える\n月報は月末に読み返しの1行で閉じ、点検は月頭に別の表で動きま...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "「作れる」が発注の理由にならなくなったら ― AIで試作品を先に作り、課題を1つに絞る受託の進め方",
+      "url": "https://zenn.dev/tmiyachi/articles/prototype-first-consulting",
+      "site": "Zenn(生成 AI)",
+      "published": "2026-11-09T12:22:13Z",
+      "description": "株式会社AI Orchestraの代表、みやっち🧑‍💻です。弊社は、昔は外注していたデザインや動画編集を、いまは自分たちでAIを使って作っています。ホームページもLPもバナーもCodexとGPT Image 2.5で作り、私のYouTubeの10月以降の動画は、すべてClaude Codeで編集しています。プログラミングも、本業のエンジニアではない私が、AIチャットつくーるというSaaSを1人で開...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "介護の送迎の運行と点呼の記録、AIはどこまで任せられますか？ — 出発前の1行で決める",
+      "url": "https://zenn.dev/satoshimizuhara/articles/ai-agent-care-run-roll-call",
+      "site": "Zenn(生成 AI)",
+      "published": "2026-11-09T11:48:10Z",
+      "description": "昨日は、介護の感染症の初動と記録の仕事で、介護の現場に寄せて読む17回目を書いた。本稿はその18回目で、昨日予告した通り、同じ介護の現場の、送迎の運行と点呼の記録の仕事を置く。送迎の運行計画表の下書き、利用者の乗降の名簿、車両と運転できる職員の割り当て、迎えの順路の候補、月次の走行距離の集計は機械が速くそろえられる。しかし送迎の運行と点呼の記録は、計画表が完成した瞬間の乗降人数と、当日の迎えの道の...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "音声つき動画生成AI「MiniMax H3」をRunPod Serverlessで1本約12円｜公式API料金の約1/5",
+      "url": "https://zenn.dev/fkky/articles/fe03f88a6ac650",
+      "site": "Zenn(生成 AI)",
+      "published": "2026-11-09T10:55:07Z",
+      "description": "概要\nこんにちは、ふきです！\nこの記事では、2026年8月にオープンウェイト公開された音声つき動画生成モデル MiniMax H3 を、Runpod Serverless 上で自分のAPIとして動かす方法を紹介します。\n先に結論を書いておきます。\n\n768p・10秒の動画1本が、わずか約0.30ドル（約48円）で生成できる。(公式APIだと約125円）\n480pで試作するなら、5秒1本 数円レベル...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "Excelの発注残の点検でAIに任せるのは残数の式まで — 検収の日付は人間が置く",
+      "url": "https://zenn.dev/yoshitokinosita/articles/0039-excel-ai-hacchu-zan-tenken",
+      "site": "Zenn(生成 AI)",
+      "published": "2026-11-09T10:13:48Z",
+      "description": "買う側の残は、検収の入口で閉じる\n月末の仕入の段。発注書の控えの帳、現場から上がる検収の紙、仕入先から届く請求の束、部分で納まる納品、納期の送れた行。食品の会社の帳では、卸先と外注と包材が1か月の帳に混ざり、発注の約束の数に対して2回落ちてくる日、検収の紙が仕入の伝票に追いつかない日が同じ月に並びます。発注残の点検は、買った約束と届いた事実と請求の紙を突き合わせる、仕入の入口の点検です。手が止まる...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "Vidu動画のウォーターマークを整理するには？再出力・トリミング・AI除去の選び方",
+      "url": "https://zenn.dev/chengzhixiao/articles/1b096102d22812",
+      "site": "Zenn(生成 AI)",
+      "published": "2026-11-09T08:57:23Z",
+      "description": "Viduで作成した商品動画を広告に使うとき、確認したいのは映像の雰囲気だけではありません。商品の輪郭、パッケージの文字、画面内に残るウォーターマークも、編集前に見ておきたい部分です。\n表示を整理する方法には、元のプロジェクトからの再出力、トリミング、AIによる除去などがあります。ただし、適した方法は手元のファイルと構図によって変わります。ここでは、自分で制作し、編集する権限を持つ動画を対象に、選ぶ...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "Claude Code に1行で頼んで会話で直すやり方は、呼び出し2倍でも料金0.893倍だった",
+      "url": "https://zenn.dev/numarn/articles/spec-upfront-vs-fix-in-chat-handson",
+      "site": "Zenn(生成 AI)",
+      "published": "2026-11-09T08:39:58Z",
+      "description": "X でこんな投稿を見かけました。\n\nClaude Codeで自動化を始めて気づいたんだけど、「完璧な仕様書」より「動くプロトタイプ」を先に作った方が圧倒的に早い。\n仕様を詰めてから実装じゃなくて、ざっくり動かしてから会話で修正していく。これがClaude Codeの正しい使い方じゃないかと思う。\n#AI自動化 #ClaudeCode\n\n出典: https://x.com/ncyukio/statu...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "Snowflake の AI_COUNT_TOKENS で、AI 関数に投げる前に入力トークンを見積もる",
+      "url": "https://zenn.dev/mochitec_tech/articles/909dc2f54a19e2",
+      "site": "Zenn(生成 AI)",
+      "published": "2026-11-09T07:21:15Z",
+      "description": "はじめに\n日本語の問い合わせを大量に AI_COMPLETE で要約する前に、入力のトークン数を知りたい場面を考えます。Snowflake の AI_COUNT_TOKENS を使い、同じ内容を日本語と英語で書いた架空の問い合わせ 3 組（6 件）で試しました。流す前の見積もりはどう出せばよく、どこまで当てにできるのでしょうか。\n\n AI_COUNT_TOKENS はどんな関数か\nAI_COUNT...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "AIですぐに作れる時代に、何と向き合うか",
+      "url": "https://zenn.dev/peoplex_blog/articles/2611-what-to-face-when-ai-builds-fast",
+      "site": "Zenn(生成 AI)",
+      "published": "2026-11-09T04:49:20Z",
+      "description": "こんにちは。PeopleX AI面接の開発をしている坂津です。\nここ1年で、私はコードを一切手で書かなくなりました。\nClaude Opus 5.5 が登場してからは AI が書いたコードの細部もそこまで気にしなくなっています。正しく指示をすれば、Opus 5.5 が書くコードは品質が高く、設計の意図に沿った読みやすいコードがそのまま出てくることがほとんどです。それにアプリケーションのコードはあと...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "リリース前のセキュリティレビューとPRごとのゲートの分担　/security-reviewの差分の範囲と、指摘の仕分け",
+      "url": "https://zenn.dev/vaonvn/articles/0af70538621b3d",
+      "site": "Zenn(生成 AI)",
+      "published": "2026-11-09T04:16:20Z",
+      "description": "PRごとのセキュリティゲートがすべて緑でも、バージョンとしてまとめて見ると出てくる問題があります。私たちのチームでは、PRごとのゲートとは別に、リリース前にバージョン全体の変更をClaude Codeでセキュリティレビューし、その結果を人が仕分けてからリリースを決めています。\nこの記事では、2つのゲートの分担と、Claude Codeの /security-review が何と何を比べているか、そ...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
     {
       "title": "AIに任せても「判断は自分」のつもりだった――専門家もハマる、Anthropicの実験が示す落とし穴",
       "url": "https://zenn.dev/kotakotahiro/articles/13a574ff492335",
