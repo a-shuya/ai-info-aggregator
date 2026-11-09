@@ -1,8 +1,38 @@
 {
   "site": "Zenn(機械学習)",
-  "last_updated": "2026-11-09T02:40:35.838250",
-  "total_articles": 2193,
+  "last_updated": "2026-11-09T10:23:16.349903",
+  "total_articles": 2195,
   "articles": [
+    {
+      "title": "BTPropのNLIを実際のモデルに替えて比べ直した――本物のつながりの誤りでは「疑う」BPの出番はなかった",
+      "url": "https://zenn.dev/mst_design2020/articles/bc3e1c916a4baa",
+      "site": "Zenn(機械学習)",
+      "published": "2026-11-09T03:43:20Z",
+      "description": "前回の記事で、BTProp（Hou ほか、NAACL 2025）の公開ログを使い、NLIのつながりをくじで逆にすると BTProp は崩れ、つながりも疑う確率伝搬（以下、疑うBP）は崩れにくい、と書きました。\nhttps://zenn.dev/mst_design2020/articles/8b904689df2ddc\nただ、くじで逆にした外れは、本物のNLIの誤りとは形が違います。そこで今回は、...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "DIY AutoMLの誤差評価を検査する：選定・条件付き区間・反復の設計",
+      "url": "https://zenn.dev/okamasaya/articles/diy-automl-ds-uncertainty",
+      "site": "Zenn(機械学習)",
+      "published": "2026-11-09T02:13:39Z",
+      "description": "スコアと一緒に、推定対象を記録する\n評価表に95%区間が付いていても、それが何の変動を含むかは別に確認したいところです。test標本だけを動かしたのか、学習や選定からやり直したのか。初期化seedを変えた結果と、同じ量として読めるのか。\nDIY AutoMLでは、その問いに戻れるように、分割・予測・反復値・設定を残します。この記事では、自分で計算と保存結果を検査するための条件を、数式と実装に沿って...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "機械学習のスコアに、誤差評価まで添えたくてAutoMLを自作しています",
+      "url": "https://zenn.dev/okamasaya/articles/diy-automl-evaluation-framework",
+      "site": "Zenn(機械学習)",
+      "published": "2026-11-09T02:00:46Z",
+      "description": "その評価値を、どこまで信用してよいのか\n機械学習のモデルをいくつか動かすと、正解率やF1といった評価値が出てきます。数字を並べれば、どのモデルの成績がよかったかは分かります。\nただ、その先で気になることがありました。別のデータで調べたら、どれくらい変わるのか。データを増やせば改善しそうなのか。それとも、集め方や正解ラベルを見直す必要があるのか。\n自分の出発点は、統計量があるか、データの品質はどうか...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
     {
       "title": "Python機械学習の実践書4選",
       "url": "https://zenn.dev/makitech/articles/20261109_book_ref",
@@ -179,16 +209,6 @@
       "site": "Zenn(機械学習)",
       "published": "2026-11-07T02:15:36Z",
       "description": "はじめに\n前回は、複数のモデルを並べて使い分ける仕組みについて書きました。\n第11回となる今回は、予測を出したあとの「答え合わせ」と、毎日のレビューの仕組みについて書きます。地味な話ですが、このプロジェクトでは、レビューのために作った「見える化」が、結果的にデータのバグ発見につながったことが何度もありました。その実例も紹介します。\n\n 毎日の答え合わせ\n予測と買い目は、レースが終わった後に実際の結...",
-      "category": "AI・技術",
-      "rss_category": "",
-      "image_url": ""
-    },
-    {
-      "title": "ResNetの構造を基礎から整理する：畳み込み・残差接続・BatchNormの位置",
-      "url": "https://zenn.dev/972697325291316/articles/4888ab583d2f45",
-      "site": "Zenn(機械学習)",
-      "published": "2026-11-07T02:14:30Z",
-      "description": "ResNet（Residual Network）の構造を、畳み込みの重みの数え方から順に整理した記事です。残差接続でなぜ深いネットワークを学習できるのか、ブロックとネットワーク全体がどう組まれているのか、BatchNormをどこに置くのか、を扱います。大学の基礎的な数学（微分、行列）がわかれば読める範囲で書いています。\n\n 畳み込みの重みはいくつあるのか\nResNetの部品を見る前に、畳み込み（c...",
       "category": "AI・技術",
       "rss_category": "",
       "image_url": ""

@@ -1,24 +1,154 @@
 {
   "site": "Zenn(Python)",
-  "last_updated": "2026-11-09T02:40:35.838250",
-  "total_articles": 7719,
+  "last_updated": "2026-11-09T10:23:16.349903",
+  "total_articles": 7731,
   "articles": [
     {
-      "title": "AI応答ログのハッシュ連鎖は、モデルの出自を証明しない──FlashProveとの境界をPythonで試す",
-      "url": "https://zenn.dev/jinsights/articles/e2637428ace7c1",
+      "title": "duとFinderでフォルダのサイズが違う理由",
+      "url": "https://zenn.dev/bestaitools/articles/12c7b00cdc9f20",
       "site": "Zenn(Python)",
-      "published": "2026-11-09T00:52:11Z",
-      "description": "AIの応答を業務ログに残す開発者向けの記事です。ハッシュ連鎖と、別に保持した末尾のハッシュを使うと、保存後の変更を検出できます。ただし、どのモデルが答えたかも、回答の正しさも証明できません。\nPython標準ライブラリのみ、ダミーの応答をメモリ内で扱います。通信・ファイル読み書き・API呼び出しはありません。後述の実行結果はこのコードの検査であり、FlashProveの再現ではありません。\n\n A...",
+      "published": "2026-11-09T09:05:55Z",
+      "description": "フォルダに du -sh をかけてFinderのサイズと比べると、数字が合わないことがよくあります。数GBずれることもあります。どちらかが間違っているわけではなく、答えている問いが違います。ファイルの長さと、ディスクを実際にどれだけ使っているか、です。ディスクがいっぱいのときに意味があるのは後者だけで、正しく出すには st_size を足し合わせるだけでは足りません。\n以下は、デスクトップアプリ ...",
       "category": "開発",
       "rss_category": "",
       "image_url": ""
     },
     {
-      "title": "Codex CLI と Claude Code に同じ CSV 集計を頼んで比べた — 違いは「許可の仕組み」と「指示していない部分」",
-      "url": "https://zenn.dev/chukidx_dev/articles/codex-vs-claudecode-trial",
+      "title": "CodexにRustとTypeScriptの関係を引かせる――契約グラフをMCPへ切り出す",
+      "url": "https://zenn.dev/veripsa/articles/tauri-command-contract-graph",
       "site": "Zenn(Python)",
-      "published": "2026-11-08T23:59:01Z",
-      "description": "Codex CLI(OpenAI のターミナル上で動く AI コーディングエージェント)と Claude Code(Anthropic のターミナル上で動く AI コーディングエージェント)に、まったく同じ依頼文で小さな業務スクリプトを書かせて、結果を並べました。\nこの記事では、試した手順・結果・見えた違いと、そこから考えた使い分けの案をまとめます。架空のデータを使った1つのタスク・各2回だけの記...",
+      "published": "2026-11-09T08:56:36Z",
+      "description": "Rustのコマンド名を変える前に、TypeScript側のどのファイルを一緒に確認すればよいか。\nTauriのように言語をまたぐ構成では、フロントからRustの関数を直接importするわけではありません。コマンド名という文字列を介して呼び出すため、言語内の参照検索とは別に、その対応を見る入口がほしくなります。\n個人開発していたVeripsa Coreには、こうした関係を契約のグラフへ変換する実装...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "広告費を動かしているものが売上も動かすとき、回帰の傾きに何が起きるか──年末商戦を例にシミュレーションで見る",
+      "url": "https://zenn.dev/haruguri/articles/regression-confounding-yearend",
+      "site": "Zenn(Python)",
+      "published": "2026-11-09T08:33:03Z",
+      "description": "「広告費と売上を回帰したら傾きが2.24で、標準誤差も0.06と小さい。だから広告の効果は1万円あたり2.24万円」。前回の記事で作った仮想の世界に、年末商戦を1つ足すと、回帰分析はこういう結果を返します。本当の値は1.5のままです。\nシリーズ「前提が崩れると何が起きるか（回帰分析編）」の2本目です。前回は、前提がすべて成り立つ世界を作り、回帰線が本当の関係を当て、標準誤差がそのブレを正しく見積も...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "AI協働：FRB Launch 第6回 記者会見風 — 世界標準規格の野望・第3弾！ぐりぐりは止まらない（笑）",
+      "url": "https://zenn.dev/frb_tamasub/articles/ai-collaboration15-frb-launch-hybrid-three-world",
+      "site": "Zenn(Python)",
+      "published": "2026-11-09T07:33:02Z",
+      "description": "はじめに — 公開準備をしていたはずなのに（笑）\n前回の記者会見では、「マウス差し棒」を進化させた結果、**ぐりぐりしなくても使える「ぐりぐりスピナー」**が誕生した。\nあれからFRB Launchは、公開に向けて配布ファイルや画面を整理している。\n機能を減らしたり、メニューを隠したり、フォルダーアイコンを一つ消したり。\n……地味である。\nところが、その裏で、マウスホイールの「ぐりぐり」が妙な進化...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "日本語のファイル名10種でtext=Trueの文字化けを試した",
+      "url": "https://zenn.dev/ai_jarvis/articles/bc7a15aabab8ea",
+      "site": "Zenn(Python)",
+      "published": "2026-11-09T07:31:13Z",
+      "description": "Windows の Python で subprocess.run(..., text=True) を使い、日本語のファイル名を受け取ると、例外で止まったり、気づかないうちに別の文字へ化けたりします。以下では、subprocess を呼ぶ側の Python を「親」、呼ばれて名前を出力するもう1つの Python を「子」と呼びます。環境は日本語 Windows の既定であるコードページ932（c...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "Pythonで処理時間を測るとき、時刻と経過時間を分ける",
+      "url": "https://zenn.dev/routerbase/articles/87c39298159eca",
+      "site": "Zenn(Python)",
+      "published": "2026-11-09T07:23:30Z",
+      "description": "APIクライアントのログに「いつ実行したか」と「何ミリ秒かかったか」を残す場合、この二つは別の時計で測れます。実行時刻には日時を使い、処理にかかった時間は同じプロセス内で time.monotonic_ns() の差を取ります。単調時計はシステム時刻の変更に影響されず、値そのものに日時としての意味はありません。\nたとえば、同じワーカー内でキューに入った時点と処理を始めた時点を記録すると、待ち時間と...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "temperatureとmax_output_tokensをどう決めるか — 推論トークンで「1文字も返らない」を防ぐ",
+      "url": "https://zenn.dev/salesanalytics/articles/1eb506ea735c62",
+      "site": "Zenn(Python)",
+      "published": "2026-11-09T06:20:54Z",
+      "description": "OpenAI の Responses API には、temperature と max_output_tokens という2つの「つまみ」があります。temperature は回答の「ばらつき」をどのくらい許すか、max_output_tokens は1回の回答で使えるトークン数の上限です。\n分析用途で欲しいのは、数値が変わらないこと、同じ条件なら似た傾向の文章になること、必要な情報が途中で切れな...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "Windowsの一括リネームで事故らない：大文字小文字の衝突・名前の交換・UndoをPythonで実装",
+      "url": "https://zenn.dev/warrobotsxyz/articles/windows-safe-bulk-rename-undo",
+      "site": "Zenn(Python)",
+      "published": "2026-11-09T06:19:45Z",
+      "description": "はじめに\nファイル名の一括変更は、1件ずつ os.rename() を呼ぶだけに見える。しかしWindowsでは、次のようなケースで「途中まで変更された」「別のファイルを上書きした」という事故が起きる。\n\n変換先に既存ファイルがある\n\nphoto.JPG と photo.jpg のように、大文字小文字だけが違う名前が混在する\n\na.txt → b.txt、b.txt → a.txt のような名前の...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "ブラックボックス検査とコード監査を、ひとつのパイプラインに置く",
+      "url": "https://zenn.dev/hackbox_ai/articles/0d04112d363a1b",
+      "site": "Zenn(Python)",
+      "published": "2026-11-09T05:53:43Z",
+      "description": "認可の不具合は、テストを厚くしても減りません。減らない理由は検出力ではなく、テストの入力が足りないからです。外から叩く検査は、こちらが組み立てたリクエストのバリエーションしか試せず、コードに書かれた判定条件そのものは最後まで見えません。\nこの記事では、コードを読んで当たりを付け、実行して証明する、という二段構えを CI に載せる話をします。実装は小さく、効果は測定できます。\n\n なぜ外側からの検査...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "StimでFTQCシミュレータをゼロから作る本を公開しました（ソースコード付き）",
+      "url": "https://zenn.dev/forest1040/articles/588f4d59dd3a68",
+      "site": "Zenn(Python)",
+      "published": "2026-11-09T04:37:39Z",
+      "description": "誤り耐性量子計算（FTQC：Fault-Tolerant Quantum Computation）を基礎から学び、実際にシミュレータを構築するための本を公開しました。\n『ゼロから作る FTQC シミュレータ（基礎編） — Stim で学ぶ誤り耐性量子計算の実装』\nhttps://forest1040.github.io/ftqc-book/\n全278ページ、25章構成です。書籍のPDFだけでなく、...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "TokenEconomizer: Microsoft's Free Plugin That Cut Claude Code's Cost",
+      "url": "https://zenn.dev/neotechpark/articles/6193867acb6073",
+      "site": "Zenn(Python)",
+      "published": "2026-11-09T02:46:09Z",
+      "description": "If you use Claude Code on the same project every day, you pay for the same things again and again. The agent rediscovers that the tests run with python -m pytest, not pytest. It sends the definition o...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "日本語の文章点検をスキルにする：検出件数と意味の保持を分けたai-smell-ja",
+      "url": "https://zenn.dev/hirosta/articles/ai-smell-ja-review-candidates",
+      "site": "Zenn(Python)",
+      "published": "2026-11-09T02:41:53Z",
+      "description": "文章の点検を自動化するとき、検出した表現をすべて消すと、元の意味まで変わることがあります。ai-smell-jaでは、機械で候補を拾う工程と、文脈を読んで書き直す工程を分けています。\nこの記事は、文章の点検をAIや補助スクリプトに任せる機能を作る技術者向けです。公開済みの架空の短文3本と点検デモを材料に、候補を残す理由、検出件数には出ない修正、意味と語調の照合を説明します。新しい実験結果の報告では...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "24時間ライブ配信の3つの小技：カメラの音の時計で風をつくる、跳ねずに1文字ずつ打つ、24時間くり返さない台詞",
+      "url": "https://zenn.dev/kensaurus/articles/66059b36ae6bae",
+      "site": "Zenn(Python)",
+      "published": "2026-11-09T02:22:32Z",
+      "description": "English summary: I stream an outdoor camera on our mountain deck (1,444 m, Tsumagoi, Japan) to YouTube 24/7 from one Intel NUC with ffmpeg on VAAPI. This post covers three small tricks: a generated wi...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "エンジニア視点で語る！Pythonで学ぶマクロ経済学入門 87",
+      "url": "https://zenn.dev/maszkot/articles/35b2da8ba28d33",
+      "site": "Zenn(Python)",
+      "published": "2026-11-09T01:38:15Z",
+      "description": "https://qiita.com/maskot1977/items/ece21303a62f2664bcca\nDJミオ：こんばんは！ ラジオ教育番組「エンジニア視点で語る！Pythonで学ぶマクロ経済学入門」、ナビゲーターのDJミオです。\nDJレン：DJレンです。今回は第87回、「利権はなぜ生まれるのか？ ― 競争・統制・財源幻想を超えて考える“供給能力”」を、エンジニアにも分かりやすい言葉でし...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "ニュースをAIで訳して採点し、鮮度と値動きで裏を取る ― 投資判断支援の作り方",
+      "url": "https://zenn.dev/kensudo1203/articles/8c88fc713837ce",
+      "site": "Zenn(Python)",
+      "published": "2026-11-09T01:21:00Z",
+      "description": "!\nこの記事は、投資判断を支援する仕組みについての記事です。特定の銘柄や戦略を勧めるものではなく、投資助言でもありません。発注はペーパー口座（模擬取引）だけで、実資金は扱いません。\n\n\n はじめに\n米国株・ETF・暗号資産のスイング戦略を検証し、Alpaca のペーパー口座だけで取引する1人用のデスク「HedgeDesk」を、Claude Code と作っています。\nhttps://github....",
       "category": "開発",
       "rss_category": "",
       "image_url": ""
@@ -69,16 +199,6 @@
       "site": "Zenn(Python)",
       "published": "2026-11-08T22:00:42Z",
       "description": "課題: 止まっていることに気づけない\n複数のAIエージェントをlaunchdで常駐・定期実行していると、一番困るのは「エラーで落ちる」ことではなく「静かに止まっている」ことです。launchdのジョブ自体は登録されたままで、スクリプト内部のAPI認証切れや無限待ちで処理が進まなくなっても、Macは何も教えてくれません。\n私は13体のエージェントを動かしていますが、数日経ってから「そういえば日次の処...",
-      "category": "開発",
-      "rss_category": "",
-      "image_url": ""
-    },
-    {
-      "title": "「駐車場はありません」が「あります」で返ってきた。小さなローカルLLMの写真読み取りを試す",
-      "url": "https://zenn.dev/hilopon/articles/local-vlm-ocr-confident-misread",
-      "site": "Zenn(Python)",
-      "published": "2026-11-08T21:30:44Z",
-      "description": "LINEに送った写真の文字を、自宅のPCに書き写させています。読ませているのは Ollama で動かしている qwen3-vl:4b-instruct というモデル。名前の「4b」は中の数値（パラメータ）が約40億個という意味で、ファイルにすると3.3GBほどです。家庭用のゲーミングPCで、1枚6秒前後。\nこの仕組みの作り方を本にまとめたとき、写真の章に「確かめたのは、はっきりした文字の画像だけ」...",
       "category": "開発",
       "rss_category": "",
       "image_url": ""
