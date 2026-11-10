@@ -1,8 +1,118 @@
 {
   "site": "Zenn(LLM)",
-  "last_updated": "2026-11-10T11:36:40.199050",
-  "total_articles": 7318,
+  "last_updated": "2026-11-10T18:49:56.743041",
+  "total_articles": 7328,
   "articles": [
+    {
+      "title": "AMP（Agentic Manipulation Policy）をCaP-Gymで試してみた",
+      "url": "https://zenn.dev/dxclab/articles/77898dd547ade9",
+      "site": "Zenn(LLM)",
+      "published": "2026-11-10T13:12:42Z",
+      "description": "はじめに\nロボットを動かすAIといえば、画像と言語指示から関節の動きを直接出力するVLA（Vision-Language-Action）モデルが主流です。ロボットのデータでの学習が必要になります。\nこれに対して、LLMにコードを書かせてロボットを動かす CaP（Code-as-Policy） という方式があります。CaP-X の論文は、CaPを、データを大量に必要とするVLAの代わりに、生成したプ...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "VRAM 12GBで5モデル17構成を実測：Qwythos-9B v2のQ4_K_Mは約71 tok/s、27Bは1.656 tok/s",
+      "url": "https://zenn.dev/localai_lab/articles/b29699d3e9a2cf",
+      "site": "Zenn(LLM)",
+      "published": "2026-11-10T13:08:56Z",
+      "description": "VRAM 12GB の GPU で、Qwythos-9B v2（Q4_K_M・Q5_K_M・Q8_0）、MiniCPM5-1B（Q4_K_M・Q8_0）、LLM-jp-4.1 32B-A3B、Recursive Flint、Qwythos-27B の5モデル・17構成を、同じ日・同じ測り方で動かした実測です。llama.cpp b12005 の llama-server、思考オフ、-ngl 99 ...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "小さいLLMの自信ある誤りを辞書の説明文で直す――語義選びだけLLMにさせると取り違え64%→4%",
+      "url": "https://zenn.dev/mst_design2020/articles/5d3feab2c2fff8",
+      "site": "Zenn(LLM)",
+      "published": "2026-11-10T12:16:38Z",
+      "description": "前回（E4・E5）は、小さなAI（Gemma-2 2B）の「X は C の一種か」という答えを網にまとめ、ルールで確かめました。\nhttps://zenn.dev/mst_design2020/articles/545424bd00f46f\nルールでは、Gemma が強い自信で言い切る誤りはあまり直せませんでした（例：「beagle is a type of sport」に強く Yes）。\n今回は...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "AIに記憶を持たせれば、経験を生かせるようになるのか",
+      "url": "https://zenn.dev/noah33/articles/agent-evolution-lab-memory",
+      "site": "Zenn(LLM)",
+      "published": "2026-11-10T10:45:09Z",
+      "description": "はじめに — 覚えているのに、うまくできない\nAIに記憶を持たせれば、同じ失敗を繰り返さなくなるのか。\nそう考えたくなるのは、人間も仕事のメモを残し、過去の経験を頼りに次の仕事を進めているからです。\n前の作業で何につまずき、何を調べて、どう直したのか。それを記録して必要なときに読み返せば、AIも次は少しうまくできるように思えます。\n以前、OpenClawで作った個人用AIアシスタント「Sara」に...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "PRのタイトルがCIのシークレットを盗む — Comment-and-Controlを自前環境で再現し、Semgrepで検知する",
+      "url": "https://zenn.dev/toitoitoitoi/articles/9e1042d9716d32",
+      "site": "Zenn(LLM)",
+      "published": "2026-11-10T10:21:59Z",
+      "description": "0. 要約\nCI/CD に組み込まれた AI コーディングエージェント（およびその下地となる GitHub Actions ワークフロー）には、「信頼できない入力」と「シークレットにアクセスできる実行コンテキスト」が同じステップで混ざる、という構造的な欠陥が繰り返し現れます。本記事では、攻撃者が制御できるテキスト（Pull Request のタイトル・本文・コメント）が、シークレットを読める実行コ...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "いきなりVibe Coding vs 仕様書先行（Spec-First SDD）で手戻りとトークン消費はどう変わるか？実機A/B検証",
+      "url": "https://zenn.dev/tappers/articles/ai-labo-e08-spec-first-sdd",
+      "site": "Zenn(LLM)",
+      "published": "2026-11-10T10:17:05Z",
+      "description": "!\n本記事は、SNS（X / Threads）や海外エンジニアコミュニティで提唱されている「AIコーディングエージェントの実践設計パターン」を、完全オフラインの隔離サンドボックスVM上で 同一モデル・同一初期課題（非公開テスト20ケース）を用いて定量A/Bテストした実証シリーズ（AI Labo 検証シリーズ E08） です。\n👉 全実験の比較ランキング＆黄金パターン総集編はこちら\n\n\n\n実行日: ...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "MCPサーバの危険な実装をSemgrepで静的検出する ── ツール引数という新しい攻撃面",
+      "url": "https://zenn.dev/toitoitoitoi/articles/644229ae65d729",
+      "site": "Zenn(LLM)",
+      "published": "2026-11-10T09:53:10Z",
+      "description": "この記事で作るもの: MCP（Model Context Protocol）サーバのソースコードを読んで、危険な実装を自動で指摘する Semgrep ルール集を紹介します。既存の LLM アプリ向けルール集 semgrep-llm-security に 7 本の MCP サーバ用ルールを追加し、合計 14 本になりました。すべて実際に動かして検証したところまで載せます。\n\n\n 1. 導入：MCPの...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "LLMアプリの脆弱性は「モデル」ではなく「境界」に出る ── Semgrepで危険な配線を静的検出する",
+      "url": "https://zenn.dev/toitoitoitoi/articles/9bba8a00cee311",
+      "site": "Zenn(LLM)",
+      "published": "2026-11-10T09:01:46Z",
+      "description": "この記事で作るもの: LLMを組み込んだアプリのソースコードを読んで、危険な書き方を自動で指摘する Semgrep ルール集 semgrep-llm-security を紹介します。実際に動かして検証したところまで載せます。\n\n\n はじめに：LLMアプリの穴はどこに出るか\nChatGPT や Claude の API を組み込んだアプリが一気に増えました。チャットボット、RAG、エージェント……。...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "Claude Fable 5.2に移行してみた。5.1のコードのままでは動かない3つの変更と実費1.8倍",
+      "url": "https://zenn.dev/jtcc/articles/claude-fable-5-2-migration",
+      "site": "Zenn(LLM)",
+      "published": "2026-11-10T07:01:35Z",
+      "description": "こんにちは。日本トレカセンターの佐藤です。\n2026 年 11 月 9 日に、Anthropic から Claude Fable 5.2 が公開されました。\n5.1 からの移行を想定して、実際の Claude API で動かしてみました。\n検証したのは、料金、速度、fast mode、そして 5.1 のコードのままでは動かなくなる変更です。\n計測は 2026-11-10 12:18〜12:30（J...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "AnyModelBot 0.1.30：アカウント不要で自分の API キーを使える、公式ボットはデスクトップのワークスペースに",
+      "url": "https://zenn.dev/modelflare/articles/066142200cce86",
+      "site": "Zenn(LLM)",
+      "published": "2026-11-10T05:34:16Z",
+      "description": "開示：私は AnyModelBot チームのメンバーです。AnyModelBot は Modelflare チームが開発しているオープンソース（MIT）のデスクトップ AI エージェントアプリで、Windows・macOS・Linux（Docker も可）で動きます。以下の内容は公開している更新履歴にもとづいています。\n\nAnyModelBot では、ペルソナ・既定のモデル・ワークスペース・メモリ...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "RTX PRO 6000 Blackwell の3つのエディションを比較する（冷却・電力・筐体）",
+      "url": "https://zenn.dev/jpailab/articles/3ee4eb43ecbc20",
+      "site": "Zenn(LLM)",
+      "published": "2026-11-10T05:27:10Z",
+      "description": "RTX PRO 6000 Blackwell には、Server Edition、Workstation Edition、Max-Q Workstation Edition の3つのエディションがあります。GPUメモリはどれも96GB GDDR7（ECC付き）ですが、冷却方式・消費電力・想定する筐体がまったく違います。\nこの記事では、NVIDIA が公開している仕様をもとに、3つのエディションの違...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
     {
       "title": "クラウドAI禁止の電力会社向けに、llama.cpp + Qwen でローカル完結の AI ワークベンチを作った話",
       "url": "https://zenn.dev/sukrit/articles/b35993c863f74e",
@@ -14,21 +124,11 @@
       "image_url": ""
     },
     {
-      "title": "承認してから動くAIは、承認を何に束縛するか｜送信・支出・マージの3パターンを比べる",
-      "url": "https://zenn.dev/cauchye_asia/articles/approval-binding-send-spend-merge",
+      "title": "Meta「Muse」まとめ——9月の発表から日本上陸・Muse Voice・Spacesまでの2か月を時系列で整理",
+      "url": "https://zenn.dev/sktt_panda/articles/meta-muse-ai-agent-overview-2026-11",
       "site": "Zenn(LLM)",
-      "published": "2026-11-10T03:20:46Z",
-      "description": "2026-11-10時点の情報です。\n先行記事との違い：先行記事（承認待ちで止めて再開する）は、承認を待って止まり、承認後に別プロセスで再開するときの二重実行と、結果が不明な送信の扱いを書きました。本記事は別の問いです。承認は、何に対して有効なのか。承認したあとに、送る本文・支払う金額・取り込むコミットが変わったとき、その承認はまだ有効なのかを、送信・支出・マージの3つで比べます。\n\n 結論（先に...",
-      "category": "AI・技術",
-      "rss_category": "",
-      "image_url": ""
-    },
-    {
-      "title": "AIの不動産メールをlintしたら、誇大語より値下げ前の価格が問題だった",
-      "url": "https://zenn.dev/kosukeozawa/articles/ai-realestate-email-lint",
-      "site": "Zenn(LLM)",
-      "published": "2026-11-10T02:01:44Z",
-      "description": "不動産会社でお客様への返信メールを AI に下書きさせるとき、まず気にするのは「最高」「格安」「完璧」のような言葉ではないでしょうか。業界の広告ルール（不動産の表示に関する公正競争規約）で、根拠がなければ使えない言葉だからです。\nところが、架空の物件4件への問い合わせに AI が書いた返信 320通を正規表現の lint にかけると、その手の言葉は0回でした。審査や値引きを約束する言い回しも0回で...",
+      "published": "2026-11-10T03:51:21Z",
+      "description": "3 行まとめ\n\nMeta のパーソナル AI エージェント「Muse」は、2026年9月8日に米国で始まった。10月23日には北米以外で初めて日本でも提供が始まり、11月には音声通話の Muse Voice（米国のみ）と、会話で自分用のミニアプリを作れる Spaces が加わった\n中身は「ユーザーごとの専用クラウド VM 上で動くエージェント」で、外部へのアクセスは別プロセスの Sentinel ...",
       "category": "AI・技術",
       "rss_category": "",
       "image_url": ""

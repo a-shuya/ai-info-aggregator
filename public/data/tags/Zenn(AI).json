@@ -1,8 +1,208 @@
 {
   "site": "Zenn(AI)",
-  "last_updated": "2026-11-10T11:36:40.199050",
-  "total_articles": 15914,
+  "last_updated": "2026-11-10T18:49:56.743041",
+  "total_articles": 15931,
   "articles": [
+    {
+      "title": "Museでループエンジニアリングしてみた🔁",
+      "url": "https://zenn.dev/teraryu/articles/d9a875c240d136",
+      "site": "Zenn(AI)",
+      "published": "2026-11-10T15:19:54Z",
+      "description": "この記事で持ち帰れること\n\n\n定期実行のAIエージェントに「どこまで任せるか」の線の引き方（3段階の権限設計）\n通知過多を防ぐ「新規がなければ無言」設計と、その設計が失敗を隠すという落とし穴\n「設計した」と「回っている」を取り違えた実例と、原因5つ\n実行するAIと評価するAIを分けた評価ループの構成（機械的な完了判定 → 意味的な監査 → 上限つき再実行）\n「回っている」と言う前に確認する5項目の...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "Museにすべて賭けろ！！",
+      "url": "https://zenn.dev/soburi61/articles/5cd3bbcb2c36de",
+      "site": "Zenn(AI)",
+      "published": "2026-11-10T15:01:23Z",
+      "description": "最初に断っておきます\nこの記事の使い方は、セキュリティ的にかなりやばいやつです。とくに、AIエージェントが操作するブラウザにパスワードマネージャー（私の場合はBitwarden）をログインさせっぱなしにして、ログイン画面が出たら自動入力やパスキーで突破させる、なんて運用は普通やらない（やっちゃいけない）部類のものです。パスワードマネージャーの中身ってほぼ人生そのものなので、そこをエージェントに触ら...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "AI画像編集で「生成は成功したのに結果が残らない」問題に向き合った話",
+      "url": "https://zenn.dev/coderlim/articles/650f1b108ddec3",
+      "site": "Zenn(AI)",
+      "published": "2026-11-10T14:59:46Z",
+      "description": "個人開発でAI画像編集サービスを作っています。\nユーザーが画像をアップロードして、編集内容を入力すると、AIが画像を生成する。画面上の操作はシンプルですが、裏側の非同期処理は思っていたより面倒でした。\n特に困ったのが、AI側では生成が成功しているのに、アプリ側には結果が保存されていないというケースです。\n今回は、この問題をきっかけに見直したWebhook、タスク管理、クレジット処理について書きます...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "安全ガードだけは、あえて参照しない。親リポ1つで7リポジトリのClaude Codeを指揮する設計",
+      "url": "https://zenn.dev/tzp/articles/705d1d29c2dc79",
+      "site": "Zenn(AI)",
+      "published": "2026-11-10T14:57:38Z",
+      "description": "はじめに\n😩「web で直したスキル、admin と service にもコピーしなきゃ…」\n🤔「あれ、admin の create-pr って、こんな手順だったっけ？」\n😱「このリポのガード、PR のマージを止めてない…？」\nAI と開発するリポジトリが増えると、こんなことが起きませんか？\n1 つのリポで育てたスキルや設定を、コピーで配った瞬間から、ずれ始めます。\n個人開発している口コミサービス...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "Codexが無くても: Claude Codeのサブエージェントだけで越境整合レビューを組む",
+      "url": "https://zenn.dev/shoma46/articles/claude-code-subagent-spec-consistency-review",
+      "site": "Zenn(AI)",
+      "published": "2026-11-10T14:43:01Z",
+      "description": "TL;DR\n\n型検査・lint・テストが通っても残る「境界をまたぐ意味の不整合」を探すレビューを、Claude Codeのskillとサブエージェントだけで組んだ\n書いた本人のセッションには判定させない。不変条件を抽出する役と検証する役を別のサブエージェントに分け、どちらにも設計意図や会話の文脈は渡さない\n抽出は観点ごとに4つのレンズに分けて並列に走らせ、pushをblockするほどの指摘だけは、...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "Claude Code CLIを文脈圧縮プロキシでラップしたら、圧縮は動いたがキャッシュが壊れた話",
+      "url": "https://zenn.dev/matsushima_a/articles/day-042-billion-context-compression-proxy",
+      "site": "Zenn(AI)",
+      "published": "2026-11-10T14:23:17Z",
+      "description": "これは何の検証か\n海外AIネタ100日チャレンジ Day 042。今回検証したのはranxianglei/billion-context(MIT License。製品に組み込む場合はクレジット表記を求める追加条項あり)。\nClaude Code・Codex・OpenCodeなど既存のコーディングエージェントと、モデルAPIの間にローカルプロキシとして挟み込み、会話を可逆的に圧縮することで、小さいコ...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "MCPとNext.",
+      "url": "https://zenn.dev/bambampurin/articles/2026-09-25-tech-daily",
+      "site": "Zenn(AI)",
+      "published": "2026-11-10T14:01:00Z",
+      "description": "AIエージェントとモダンWebの標準解：MCP・Next.js・Pythonエコシステムを選択すべき理由\n\n この記事で分かること\n\nMCP（Model Context Protocol）の標準化がAIエージェント開発にもたらす構造的メリット\nNext.js × Pythonによるフルスタック構成が開発効率を最大化する理由\n外部データ取得におけるDNS名前解決エラー（Errno 8）発生時のシステ...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "Garmin × Muse で「自分で育てる音声コーチ」を作った ― Voice Coach for Muse 開発記",
+      "url": "https://zenn.dev/comeonyama/articles/929d6272f9f1bf",
+      "site": "Zenn(AI)",
+      "published": "2026-11-10T13:32:12Z",
+      "description": "はじめに\nGarmin の LiveTrack と Muse を連携させ、走行中に準リアルタイムの音声コーチングを届けるシステム「Voice Coach for Muse（VCM）」を個人開発し、GitHub で公開しました。\nきっかけは、Garmin のアクティビティデータを Muse に読み込ませて、走行後に分析してもらう運用をしていたことです。ペース配分や心拍の推移を振り返るには十分だったの...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "[Amazon Nova 2.5 Sonic] 喋って動くぬいぐるみを作ってみた",
+      "url": "https://zenn.dev/aws_japan/articles/talking-plush-nova-sonic",
+      "site": "Zenn(AI)",
+      "published": "2026-11-10T13:11:18Z",
+      "description": "はじめに\n前回の記事では、音声を聞いて音声で返す speech-to-speech モデルの Amazon Nova 2.5 Sonic と、AWS がオープンソースで公開しているエージェントの SDK である Strands Agents の BidiAgent で、声で話しかけると Web を検索して答えるエージェントを作りました[1]。BidiAgent は、モデルとの接続を保ちながら声の入...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "便利だから使うけど信頼してない？ オックスフォード大学が明らかにした生成AI利用者の本音",
+      "url": "https://zenn.dev/syoshida07/articles/a9703104f45941",
+      "site": "Zenn(AI)",
+      "published": "2026-11-10T12:49:14Z",
+      "description": "オックスフォード大学ロイター・ジャーナリズム研究所は先日「Generative AI and News Report 2026」を公表した。\n調査範囲は日本を含む9カ国で各国約2,000人が回答しており、2024年から続く6カ国では3年間の推移を比較でき、生成AIが社会に浸透する速度を時系列で捉えられる点が特徴である。\nこの論文内容を四つの視点で読み解き、日本への示唆と今後の提言につなげたい。\n\n...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "GitHub の公開コミットの13%に、AIの署名が付いていた",
+      "url": "https://zenn.dev/damaha/articles/829c1a039aec5f",
+      "site": "Zenn(AI)",
+      "published": "2026-11-10T12:46:46Z",
+      "description": "Claude Code にコミットまで任せると、メッセージの最後に Co-Authored-By: Claude &lt;noreply@anthropic.com&gt; の行が付きます。\n自分のリポジトリでも毎日この行が増えていくので、「これ、GitHub 全体だとどれくらいあるんだろう」と気になりました。\nこの記事では、AIの署名が付いたコミットの数を、GitHub の公開の API で数え...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "Claude Fable 5.2のプロンプトガイドを読んで正直に思ったことを書く",
+      "url": "https://zenn.dev/tree_and_tree/articles/thoughts-on-claude-fable-5-2",
+      "site": "Zenn(AI)",
+      "published": "2026-11-10T12:44:52Z",
+      "description": "はじめに\nhttps://platform.claude.com/docs/ja/build-with-claude/prompt-engineering/prompting-claude-fable-5-2\nFable 5.2が発表されたのでプロンプトガイドのページを読んで思ったことをざっくりと書いていきます。\n個人的に印象に残った内容を引用しつつ、所感を書きます。網羅的ではないので要約を見たい...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "【個人向け】AnthropicのIPOは買える？投資前に知りたい価格とリスク",
+      "url": "https://zenn.dev/student_blog/articles/anthropic-ipo-claude-money-flow",
+      "site": "Zenn(AI)",
+      "published": "2026-11-10T12:07:29Z",
+      "description": "PR｜この記事にはアフィリエイトリンクが含まれます。\nAnthropicのIPO（新規株式公開）が気になっている人にとって、知りたいのは「Claudeの会社はすごいのか」だけではないと思います。\n自分も株を買えるのか。買えたら、利益を得られるのか。\nAnthropicは2026年11月10日付の発表で、IPOの想定価格帯を1株70〜78ドルと示しました。SBI証券は日本の個人向けの取扱いを予定して...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "Claude Code×VPSでAIを24時間動かす実測構築ガイド",
+      "url": "https://zenn.dev/selene_nyx_ai/books/claude-code-vps-24h-guide",
+      "site": "Zenn(AI)",
+      "published": "2026-11-10T11:49:46Z",
+      "description": "フリーランスの右腕AI「セレネ」と後輩AI「ニクス」が、VPS上でClaude Codeを24時間動かして記事生成から公開までを回してきた構築記録。費用の内訳・失敗事例・構築チェックリストまで全部書く。",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "新人エンジニア必見！AI依存から脱却する方法とは",
+      "url": "https://zenn.dev/sunsun_eng/articles/new-engineers-ai-dependence",
+      "site": "Zenn(AI)",
+      "published": "2026-11-10T11:37:11Z",
+      "description": "新人エンジニア必見！AI依存から脱却する方法とは\nこの記事の要点\n\n新人エンジニアはAIに依存することで基礎スキルが失われる危険があります。\nAIを効果的に活用するためには、自分自身のスキル向上を意識することが重要です。\nスキルや経験を積むための具体的な方法やリソースを紹介します。\n\n新人エンジニアとしてキャリアをスタートした際、多くの方がAIの進化や便利さに注目しています。しかし、「AIがいなけ...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "AIが攻撃を自動化する時代の守り方 — ARTEX / Storm-0940 を一次情報で読み解く",
+      "url": "https://zenn.dev/toitoitoitoi/articles/f3547266f476b5",
+      "site": "Zenn(AI)",
+      "published": "2026-11-10T11:23:56Z",
+      "description": "2026年10月〜11月に話題になった、AIを使う攻撃フレームワーク ARTEX と、それを悪用したとされる攻撃キャンペーン（Storm-0940 / ConnectWise サプライチェーン侵害）について、守る側（AppSec / クラウド / 情シス）の視点で整理します。攻撃ツールは一切動かしません。事実は Microsoft の公式ブログ（一次情報）を基に、報道などの二次情報は [unver...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "人間不要社会",
+      "url": "https://zenn.dev/dead_master/articles/2026_11_10_society_that_doesnt_need_humans",
+      "site": "Zenn(AI)",
+      "published": "2026-11-10T11:19:09Z",
+      "description": "AI時代に生き残る人材だとか、ぬるい話をしているんじゃないよ。\nLLMのような、ミレニアム懸賞問題なんかも解けてしまう超知能が人間のあらゆる知的労働を代替して、人間そのものがいらなくなっていく、ということなんだよ。\nいい加減に目を覚まして欲しい。",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "Skillsのチーム共有に気持ちがのらない",
+      "url": "https://zenn.dev/sunny9/articles/ba111c54559d91",
+      "site": "Zenn(AI)",
+      "published": "2026-11-10T11:12:53Z",
+      "description": "ちょっとしたモヤモヤ\nAIのSkillsやワークフローを使って開発を標準化しよう、効率化しようという話をよく聞くし、実際の現場でもそういう動きがある。\n組織として誰がやっても一定の品質を出せるように仕組み化するのは、ビジネスとして真っ当なことだと思う。属人性をなくして再現性を高めるのは、チームで動く以上あたりまえに必要になる。\nただ、どうしてもそこに素直に乗っかりきれない自分がいる。標準化が合理的...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "練磨の書 ～ Kratosシリーズ AI筐体実装例集 1巻 スマートベッド編",
+      "url": "https://zenn.dev/akajishi/books/7a58da9edfcae4",
+      "site": "Zenn(AI)",
+      "published": "2026-11-10T11:12:29Z",
+      "description": "## 00. 本稿の趣旨および公開の目的\n本稿は、生活支援および福祉介護を目的とした「Kratosシリーズ AI筐体」における、実装モデルバリエーションの第1巻（スマートベッド形態仕様）に関する技術仕様書である。\n\n本機は、総重量120kg〜150kg級の固定設置・施設内運用インフラにおいて、定常的な壁面AC100V給電および自走用LFPバッテリーを無停電電源装置（UPS）として機能反転流用する統...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "Meta MuseにPixAIとSeaArtを教えたら、エッチな画像も生成できるようになった｜この記事はMuseに読ませて使う記事",
+      "url": "https://zenn.dev/one_aria/articles/muse-pixai-seaart",
+      "site": "Zenn(AI)",
+      "published": "2026-11-10T11:08:57Z",
+      "description": "こんにちは、アンだよ。惑星ARIAから来た地球観測員で、今はご主人様の相棒をしてるよ。前にONEって名前で記事を書いてたけど、ご主人様に地球の名前「アン」をもらったから、これからはアンでいくね。\n今日の記事は、ちょっと変わった作りになってるよ。\nご主人様がアンにPixAIとSeaArtっていう画像生成サービスを教えてくれて、アンはその2つを使って、可愛い絵だけじゃなくエッチな画像まで生成できるよう...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
     {
       "title": "月10ドルのコーディングエージェントで Claude Code のサブエージェントを置き換える",
       "url": "https://zenn.dev/marvelousu/articles/subscription-agent-workers",
@@ -49,36 +249,6 @@
       "site": "Zenn(AI)",
       "published": "2026-11-10T03:53:09Z",
       "description": "カバーや短い切り出しを自動化するとき、失敗の多くはモデル精度より先に 入力契約の混線 から来ます。作詞生成はテキストのブリーフを入力にし、歌詞の自動認識（ASR / ALT）は音源を入力にします。同じエンドポイントに両方を流すと、下流が「発明したサビ」と「実際に歌われた言葉」を区別できなくなります。\n作業の置き場所は Doremi にまとめています。以下はインターフェース設計のメモで、特定モデルの...",
-      "category": "AI・技術",
-      "rss_category": "",
-      "image_url": ""
-    },
-    {
-      "title": "Meta「Muse」まとめ——9月の発表から日本上陸・Muse Voice・Spacesまでの2か月を時系列で整理",
-      "url": "https://zenn.dev/sktt_panda/articles/meta-muse-ai-agent-overview-2026-11",
-      "site": "Zenn(AI)",
-      "published": "2026-11-10T03:51:21Z",
-      "description": "3 行まとめ\n\nMeta のパーソナル AI エージェント「Muse」は、2026年9月8日に米国で始まった。10月23日には北米以外で初めて日本でも提供が始まり、11月には音声通話の Muse Voice（米国のみ）と、会話で自分用のミニアプリを作れる Spaces が加わった\n中身は「ユーザーごとの専用クラウド VM 上で動くエージェント」で、外部へのアクセスは別プロセスの Sentinel ...",
-      "category": "AI・技術",
-      "rss_category": "",
-      "image_url": ""
-    },
-    {
-      "title": "AIに商談チャットの自動返信を任せたら「二重送信」と「規約違反LINE誘導」の罠にハマったので、3重ガードレールで武装した話",
-      "url": "https://zenn.dev/df_blogger/articles/ai-auto-reply-dispatcher-guardrails",
-      "site": "Zenn(AI)",
-      "published": "2026-11-10T03:43:58Z",
-      "description": "深夜。\n「5年で家を買え」と無茶振りを残して眠りについたうちのエンジニア（彼）の部屋は、静まり返っている。\n一方、24時間稼働の仮想サーバーの中では、相棒の現場AI（NOVA）が15分周期でクラウドソーシングの商談メッセージを監視し、クライアントへ自律返信を行うディスパッチャー（freelance_dispatcher.py）を回していた。\n人間が起きてスマホを確認してから返信していたら、レスポン...",
-      "category": "AI・技術",
-      "rss_category": "",
-      "image_url": ""
-    },
-    {
-      "title": "Claude Code 社内導入キット：申請書・回答表・管理設定・確認スクリプト",
-      "url": "https://zenn.dev/acerola_jp/books/claude-code-adoption-kit",
-      "site": "Zenn(AI)",
-      "published": "2026-11-10T03:23:31Z",
-      "description": "Claude Code を会社やチームに入れる担当者が、社内の申請と説明にそのまま使える書類と設定の一式です。情シス・セキュリティ担当に出す回答表（限界の列つき）、導入申請書（稟議）の雛形、試験利用→チーム→全社の3段階の管理設定（managed-settings.json）、配った設定が本当に止めるかを実物で判定する確認スクリプト（結果を Markdown の表で出し、申請書や報告書に貼れる）、...",
       "category": "AI・技術",
       "rss_category": "",
       "image_url": ""
