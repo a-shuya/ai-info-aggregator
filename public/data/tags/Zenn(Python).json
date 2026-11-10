@@ -1,8 +1,168 @@
 {
   "site": "Zenn(Python)",
-  "last_updated": "2026-11-10T03:25:08.356455",
-  "total_articles": 7741,
+  "last_updated": "2026-11-10T11:36:40.199050",
+  "total_articles": 7757,
   "articles": [
+    {
+      "title": "Ruff 0.16から0.17へ上げて実際に変わった4つの挙動",
+      "url": "https://zenn.dev/kurosaki_ren/articles/ruff-017-migration-log",
+      "site": "Zenn(Python)",
+      "published": "2026-11-10T11:12:28Z",
+      "description": "flake8・black・isort を Ruff にまとめる検証の途中で、Ruff 0.16.10 と 0.17.0 の違いも比べました。移行自体は設定を pyproject.toml に集約して ruff check と ruff format を回すだけですが、0.17 では既定値の変更が4箇所に出ています。\n先に結論です。target-version と lint の select を明示...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "広告は何日後に売上に効く？ クロス相関（CCF）で2つの時系列の「ずれ」を見つける",
+      "url": "https://zenn.dev/salesanalytics/articles/819c8bc30d6937",
+      "site": "Zenn(Python)",
+      "published": "2026-11-10T09:56:25Z",
+      "description": "広告を出した日に、売上はすぐ増えるのでしょうか。チラシを見た人が来店するまでには、何日かの「ずれ」があるかもしれません。\nこの記事では、広告費と売上という2つの日次時系列から「ずれは何日なのか」を見つける道具、クロス相関（相互相関、CCF）の要点をコンパクトにまとめます。結論は次の3点です。\n\n同じ日どうしで比べると、ずれがあるため関係が見えない（今回のデータでは相関 −0.072）\n片方をずらし...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "AIの答えを輪の多い網にまとめたら、効いていたのはルールで、ルールの損に見えた分の多くは正解表にあった",
+      "url": "https://zenn.dev/mst_design2020/articles/545424bd00f46f",
+      "site": "Zenn(Python)",
+      "published": "2026-11-10T09:43:09Z",
+      "description": "前回は、資料を網でつないで「分からない」と控える方法を比べました。網は輪のない小さな形でした。\nhttps://zenn.dev/mst_design2020/articles/c1537032d8943c\n今回は、小さなAI（Gemma-2 2B）が答えた何千もの「X は Y の一種か」を、輪のとても多い1つの因子グラフにまとめました。そのうえで、自信の低い答えを控える（selective pr...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "AIエージェントに許可した書き込み先が変わったら？ SQLiteで6ケース検証した",
+      "url": "https://zenn.dev/asagiman/articles/6177de40f34d06",
+      "site": "Zenn(Python)",
+      "published": "2026-11-10T08:01:40Z",
+      "description": "AIエージェントに draft への書き込みを許可したとします。\n実行前の権限チェックはPASS。しかし、実際に書き込む直前、実行アダプターへ渡される対象が protected に変わったらどうなるでしょうか。\nもう一つ厄介なケースがあります。書き込み自体は成功し、データベースに保存された。しかし、その直後に応答が途切れ、エージェントにはタイムアウトしか届かなかった。\nこの状態で再実行すると、同じ...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "中断したら片付けるCLIは、Ctrl-Cの2発目まで考える",
+      "url": "https://zenn.dev/miyakona/articles/cli-interrupt-cleanup-second-signal",
+      "site": "Zenn(Python)",
+      "published": "2026-11-10T07:48:33Z",
+      "description": "AIエージェントがコードの修正をセルフレビューするとき、わざとコードを壊して、テストが失敗するかを確かめる道具を使っていました。普段の作業場所を汚さないように、道具が一時的なgit worktreeを作り、その中でテストを実行します。worktreeは、同じGitリポジトリから別の作業ディレクトリを作る機能です。\nこの道具には「中断したら、走っているテストを止め、作業場とGitの登録を片付けて終わ...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "Co-Packaged Optics（CPO）— AIデータセンターの次のボトルネックを解く光配線技術",
+      "url": "https://zenn.dev/maru1228/articles/semiconductor-co-packaged-optics",
+      "site": "Zenn(Python)",
+      "published": "2026-11-10T06:34:23Z",
+      "description": "!\nこの記事は自サイト Co-Packaged Optics（CPO）— AIデータセンターの次のボトルネックを解く光配線技術 の再掲（クロス投稿）です。図をインタラクティブに動かせる版は元記事でどうぞ。\n\n生成AIの学習・推論クラスタは、数万〜数十万個のGPUを高速ネットワークでつないで「1台の巨大なコンピュータ」のように動かしています。その帯域を支えてきた電気配線（銅配線）とプラガブル光トラン...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "【完全網羅】Python×Rust×金融工学で作る自律型AIヘッジファンドの全アーキテクチャ徹底解説",
+      "url": "https://zenn.dev/prompter_note/articles/lumina-full-architecture-python-rust-quant",
+      "site": "Zenn(Python)",
+      "published": "2026-11-10T06:15:06Z",
+      "description": "&lt;!--\nQiita 投稿用メタデータ\nタイトル: 【完全網羅】Python × Rust × 金融工学で作る自律型AIヘッジファンドの全アーキテクチャ・全機能徹底解説（OSS公開）\nタグ: Python, Rust, 金融工学, 機械学習, LangGraph\n--&gt;\n\n はじめに\n以前、LangGraphとQlib Alpha158、Google TimesFMで作る「自律型AIヘ...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "Python dataclass完全ガイド ： field・slots・frozen・継承で型安全なデータクラスを設計",
+      "url": "https://zenn.dev/correlate_dev/articles/python-dataclass-advanced",
+      "site": "Zenn(Python)",
+      "published": "2026-11-10T04:56:29Z",
+      "description": "Python 3.7 で標準ライブラリに加わった dataclasses モジュールは、今や Python プロジェクトにおけるデータモデル設計の中心的な存在です。しかし「フィールド定義と __init__ が自動生成される」という基本機能しか使っていない方も多いのではないでしょうか。\n本記事では field() 関数のオプション全解説から、__post_init__ によるバリデーション、fro...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "0.1 + 0.2 が 0.3 にならない理由と、お金を扱うコードで決めておくこと",
+      "url": "https://zenn.dev/genhiroko/articles/float-error-money-js-python",
+      "site": "Zenn(Python)",
+      "published": "2026-11-10T04:28:42Z",
+      "description": "「合計金額が1円合わない」「テストで 0.3 と比べたら落ちた」。こうした不具合の多くは、同じ一つの性質から来ています。JavaScript と Python で同じ実験をしながら、0.1 + 0.2 が 0.3 にならない理由と、お金を扱うコードで何を決めておけばよいかを順に整理します。\n\n まず手元で再現する\nJavaScript ならブラウザの開発者ツールに、次の2行を打つだけです。\ncon...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "展示タイムを会場の差でそろえる ── 平均と散らばりで割る",
+      "url": "https://zenn.dev/yutakacraft/articles/519510904f7ffa",
+      "site": "Zenn(Python)",
+      "published": "2026-11-10T02:59:27Z",
+      "description": "個人で競艇(ボートレース)の予想アプリとデータのサイトを作っています。今回は、レース前の「展示タイム」という数を、会場の違いをならしてから使う方法をまとめます。\n展示タイムは、本番の前の周回展示で、直線の一部の区間を走ったタイムです。小さいほど速い、という分かりやすい数ですが、水面や風の違いをそのまま含んでいます。ある会場の 1 走と別の会場の 1 走を、生の秒数のまま並べると、艇の速さではなく会...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "介護保険の請求書類の読み取り誤りを、マスタ照合と計算で自動検出してみた",
+      "url": "https://zenn.dev/kurojica/articles/27127c51c7107c",
+      "site": "Zenn(Python)",
+      "published": "2026-11-10T02:31:24Z",
+      "description": "こんにちは。AI Labの堂上拓です。\n今回は、サービス提供票の「別表」を読み取り、その内容が正しいかを自動で検証する機能の技術的な詳細をご紹介します。\n別表は、利用者が1か月に使ったサービスの単位数や金額が、事業所ごとに並んだ大きな表です。\n\n\n ・課題\n別表は数字だらけの表で、OCRで文字を読むだけでは足りません。\n\n表のどのセルが何の項目かが分からないと、文字を意味のある値として扱えない\nO...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "Pythonでログを調べる：5xxエラーと遅いリクエストを見つける【Day 1】",
+      "url": "https://zenn.dev/wenlo/articles/23ddb39483c8fe",
+      "site": "Zenn(Python)",
+      "published": "2026-11-10T01:45:54Z",
+      "description": "レスポンスが遅いことと、サーバーエラーが発生していることは、それぞれ別の手がかりです。今回は短いログ解析スクリプトで、次の3点を調べます。\n\nどのエンドポイントでサーバーエラーが発生しているか\n応答時間の中央値はどれくらいか\nとくに時間のかかったリクエストはどれか\n\nデータは架空のもので、コードに直接記述しています。サーバーや実際のアクセスログ、ネットワーク接続は不要です。Pythonの標準ライブ...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "WebSocket再接続と約定取りこぼし防止を『約定の一意性』から設計し直す",
+      "url": "https://zenn.dev/ponfreelance/articles/cryptbot-zenn-2026-10-13-websocket-d760ae89",
+      "site": "Zenn(Python)",
+      "published": "2026-11-10T01:30:32Z",
+      "description": "AutoTrader (FastAPI × React Native Expo 製) の自動売買botで、WebSocket 配信と約定記録をどう分担させ、再接続や取りこぼしを前提に約定を失わない構成をどう考えたかを整理した。制約は「BOT は毎分回る」「個人運用でレビュー体制を厚くできない」「取引所ごとに約定取得 API の対応状況が違う」の3つ。この記事は、材料として与えられたコード抜粋から読...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "note の有料記事153件を乱数で選んで、無料部分の作りを数えた — 公開APIだけで測る手順",
+      "url": "https://zenn.dev/zeroyen_dev/articles/note-free-part-sampling",
+      "site": "Zenn(Python)",
+      "published": "2026-11-10T01:04:17Z",
+      "description": "note（ブログサービス）の有料記事は、ログインしていない相手にも無料部分だけを返します。この性質を使うと、「無料部分に何が置いてあるか」を外から数えられます。\n2026年11月8日に、有料記事153件を乱数で選んで数えました。結果、無料部分に画像がある記事のスキは中央値33、ない記事は10でした。この記事は、その測り方と、気をつけた点の記録です。\n\n 何を数えたか\n公開APIの body は、有...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "Claude Codeに作らせた「前もって文字起こしする仕組み」が3日間0件だった：Windowsでは0番の処理がいつも生きている",
+      "url": "https://zenn.dev/kirinukiauto/articles/1fc826cc0d413f",
+      "site": "Zenn(Python)",
+      "published": "2026-11-10T01:00:18Z",
+      "description": "政治の切り抜き動画づくりを、Claude Code に丸ごと任せています。私はプログラムを書けないので、コードは読んでいません。\nその中に、使いそうな元の動画が見つかった時点で、文字起こしだけ先に済ませておく仕組みがあります。動画を作る順番が来た時に、一番時間のかかる文字起こしが終わっているようにするためです。\nこの仕組みが、3日間1件も動いていませんでした。\n\n 記録の件数\n先取りの記録を日ごと...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "MartinMakers Game [元気になって；永遠の出口で]",
+      "url": "https://zenn.dev/fygar256/articles/470f88c2424953",
+      "site": "Zenn(Python)",
+      "published": "2026-11-10T00:50:08Z",
+      "description": "キー操作は実行すると説明に出てきます。\n端末から、python martinmakers.pyで実行してください。\nキーでプレイヤーを操作して、愚か者の極めつけであるマルチンメーカーズを殲滅してください。\n\nmartinmakers.py\n#!/usr/bin/env python3\nimport curses\nimport random\nimport locale\n\nlocale.setloca...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
     {
       "title": "iPhone・iPadで「書く・試す・形にする」をつなぐPythonIDEの開発環境",
       "url": "https://zenn.dev/wenlo/articles/e996df625d284a",

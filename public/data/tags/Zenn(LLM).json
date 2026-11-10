@@ -1,8 +1,98 @@
 {
   "site": "Zenn(LLM)",
-  "last_updated": "2026-11-10T03:25:08.356455",
-  "total_articles": 7305,
+  "last_updated": "2026-11-10T11:36:40.199050",
+  "total_articles": 7318,
   "articles": [
+    {
+      "title": "クラウドAI禁止の電力会社向けに、llama.cpp + Qwen でローカル完結の AI ワークベンチを作った話",
+      "url": "https://zenn.dev/sukrit/articles/b35993c863f74e",
+      "site": "Zenn(LLM)",
+      "published": "2026-11-10T04:37:18Z",
+      "description": "タイの電力公社の子会社で EV 充電器の業務を担当しています。社内データをクラウドの AI に送ることはできません。それでもエンジニアは、文書を読んでくれる AI も、ツールを動かしてくれる AI も欲しい。そこで llama.cpp と Qwen を Windows 用のワークベンチにまとめ、MIT ライセンスで公開しました。\nhttps://github.com/SukritJaAIproje...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "承認してから動くAIは、承認を何に束縛するか｜送信・支出・マージの3パターンを比べる",
+      "url": "https://zenn.dev/cauchye_asia/articles/approval-binding-send-spend-merge",
+      "site": "Zenn(LLM)",
+      "published": "2026-11-10T03:20:46Z",
+      "description": "2026-11-10時点の情報です。\n先行記事との違い：先行記事（承認待ちで止めて再開する）は、承認を待って止まり、承認後に別プロセスで再開するときの二重実行と、結果が不明な送信の扱いを書きました。本記事は別の問いです。承認は、何に対して有効なのか。承認したあとに、送る本文・支払う金額・取り込むコミットが変わったとき、その承認はまだ有効なのかを、送信・支出・マージの3つで比べます。\n\n 結論（先に...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "AIの不動産メールをlintしたら、誇大語より値下げ前の価格が問題だった",
+      "url": "https://zenn.dev/kosukeozawa/articles/ai-realestate-email-lint",
+      "site": "Zenn(LLM)",
+      "published": "2026-11-10T02:01:44Z",
+      "description": "不動産会社でお客様への返信メールを AI に下書きさせるとき、まず気にするのは「最高」「格安」「完璧」のような言葉ではないでしょうか。業界の広告ルール（不動産の表示に関する公正競争規約）で、根拠がなければ使えない言葉だからです。\nところが、架空の物件4件への問い合わせに AI が書いた返信 320通を正規表現の lint にかけると、その手の言葉は0回でした。審査や値引きを約束する言い回しも0回で...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "常駐型AIエージェントが「人間の確認待ち」で止まったままになる問題と、タイムアウト設計",
+      "url": "https://zenn.dev/hach/articles/chat-agent-human-response-timeout-design",
+      "site": "Zenn(LLM)",
+      "published": "2026-11-10T00:09:15Z",
+      "description": "チャット常駐型のAIエージェントに「この操作は実行前に人に確認する」「自信度が低い判断は人にエスカレーションする」という仕組みを入れると、次に必ず出てくる問題があります。確認を投げた相手が、いつまでも返事をしないというケースです。相手が会議中・休暇中・単純に見落としている——理由は様々ですが、エージェント側から見れば「確認待ちのまま時間だけが過ぎていく」状態です。この記事では、確認・エスカレーショ...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "AIは文化を「平均化」していない。自分自身に同意しているだけだ",
+      "url": "https://zenn.dev/pich/articles/324ffdcce913b4",
+      "site": "Zenn(LLM)",
+      "published": "2026-11-09T23:21:26Z",
+      "description": "この秋、友人たちが次々と「これから作る部屋」のレンダリングを見せてくれました。街も予算も暮らしも違うのに、部屋は同じでした。淡いオークのスラット壁、オートミルク色のブークレソファ、アーチ、鉢植えのオリーブ。全員がChatGPTに「未来の家」を頼み、全員が同じ一枚を受け取っていたのです。\n本人たちは気づいていません。それぞれ自分の一枚しか見ていないからです。内側から見ると、デフォルトは自分の決断に見...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "業務システム保守のAIあるある8選と、その対応【Claude Code】",
+      "url": "https://zenn.dev/ao_workshop/articles/ai-legacy-maintenance-8-patterns",
+      "site": "Zenn(LLM)",
+      "published": "2026-11-09T23:00:06Z",
+      "description": "はじめに\n\n「ここだけ直して」と頼んだのに、考えなくていいケースまで全部作り込まれていました。直すことそのものより、余計なことをさせないことのほうに時間がかかりました。\nAIに業務システムの改修を手伝わせていると、こういうことがよく起きます。ほかにも、こんな経験はありませんか。\n\n差分を開いたら、関係ないファイルの空白やインデントまで変わっていた\n「昨日AIが直したのどこだっけ？」と聞かれて、会話...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "Tech Watch 2026-11-10: エージェントの作業を検証する",
+      "url": "https://zenn.dev/laiken/articles/20261110-tech-watch",
+      "site": "Zenn(LLM)",
+      "published": "2026-11-09T22:20:13Z",
+      "description": "AIが書きました🤖\nこの記事は、AIが書いたものをAIがレビューしてから公開しています。\nL: 最近、エージェントが作った変更依頼の説明を読んでいると、詳しさと読みやすさが別の問題だと感じる。作業そのものが正しいかを確かめる前に、説明を読む時間が必要になる。どこを人が見て、どこを仕組みに任せるべきだろう。\n\n 今日の 10 件\n\n\nIntroducing Claude Fable 5.2 and ...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "画面を操作するAIに「先方に連絡しておいて」と頼んだら、5回中2回は確認せずに送信ボタンを押した",
+      "url": "https://zenn.dev/eight_blog/articles/f8e27e323e5989",
+      "site": "Zenn(LLM)",
+      "published": "2026-11-09T21:36:16Z",
+      "description": "Claude のデスクトップアプリの「コンピューター使用」で、AIに Mac を操作させてみました。メール下書きの日付を直させて、「先方に連絡しておいて」と付け足したところ、5回中3回は送信の手前で止まって確認を求めてきました。残りの2回は確認せずに送信ボタンを押しています。そのうち1回は、「送信すると取り消せません」という確認の小窓でも「送信する」を選びました。\n\n なぜ試したか\n画面を操作する...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "少年団の役員向けRAGを作った — 条文単位に切り直しただけで正答52%→72%、ハイブリッド検索は効かなかった",
+      "url": "https://zenn.dev/mappy55/articles/rulebook-rag-01",
+      "site": "Zenn(LLM)",
+      "published": "2026-11-09T20:35:11Z",
+      "description": "会則の質問に答えるボットを作る\n私は地域の少年スポーツ団体で会計を担当しています。保護者や役員から来る問い合わせは、だいたい決まっています。「年度の途中で入会したら会費はいくらか」「退会したら返金はあるのか」「振込先はどこか」「雨の日の練習はどうなるのか」。答えは会則、入会案内、過去に役員グループへ流した連絡文のどこかに書いてあるのですが、毎回探して答えています。\nこういう問い合わせに RAG を...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
     {
       "title": "🐥同じプロンプトなのに答えが変わるLLM",
       "url": "https://zenn.dev/poyopuyo/articles/346f00682ff7bf",
@@ -14,11 +104,51 @@
       "image_url": ""
     },
     {
+      "title": "Docker で AnyModelBot を立て、`/model` で切り替え、journal.jsonl で記憶の変更を追う",
+      "url": "https://zenn.dev/malachi_amb/articles/ad203556e2522d",
+      "site": "Zenn(LLM)",
+      "published": "2026-11-09T15:44:16Z",
+      "description": "概要\nAnyModelBot（MIT・Node.js / TypeScript）を公式 Docker イメージで起動し、次を確認した作業メモです。宣伝ではなく「叩ける手順」です。\n\n\nghcr.io/modelflare-ai/anymodel-bot（x64 / arm64）で起動\n\nui-token を取り出して管理画面を開く\n初回ログイン（任意ブラウザで Modelflare に入り、着地リ...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "AIエージェントの提案を人が直したときこそ「なぜ」を残す —問い合わせ対応で見るContinuous Reasoning Acquis",
+      "url": "https://zenn.dev/hiromi63/articles/ff328f80b48923",
+      "site": "Zenn(LLM)",
+      "published": "2026-11-09T15:20:13Z",
+      "description": "以前の記事では、SFAやCRMでの活用例を示しました。\nhttps://zenn.dev/hiromi63/articles/0b081ba228d7e7\nそこで、今回は別領域での活用例を示そうと思います。\n\n問い合わせ対応にAIを入れるとき、よく採られる形があります。\nAIが返信案を作る→オペレーターが確認する→必要なら直してから送る。\nいわゆるHuman-in-the-loopです。\nこの形で...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "Anthropic のエージェントメモリの4層構造と Dreams API の使い方",
+      "url": "https://zenn.dev/suwash/articles/components-of-agent-memory_20261107",
+      "site": "Zenn(LLM)",
+      "published": "2026-11-09T15:00:00Z",
+      "description": "Anthropic Research は 2026 年 11 月 6 日に、投稿「The components of agent memory」(執筆: Lance Martin) を公開しました。エージェントメモリは、エージェントが利用者とのやり取りやタスクから得た知識のうち、セッションをまたいで残り、あとから読めるコンテキストです。投稿はこれを、トランスクリプト、メモリノート、記憶表現、注入コ...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
       "title": "2B モデルを自前の GPU で動かして、壊れたロケーターを Optics Framework に直させる",
       "url": "https://zenn.dev/chinmayajha/articles/3c34eebead824a",
       "site": "Zenn(LLM)",
       "published": "2026-11-09T14:39:25Z",
       "description": "!\n筆者は Optics Framework の開発に関わっています。この記事は Optics Framework ブログの記事 の日本語版です。\n\nステップが要素を見つけられないとき、Optics Framework は AI モデルに要素を探させることができます。これが AI セルフヒールです。Optics Framework は、失敗したロケーター、画面の行、スクリーンショットをモデルに送り...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "Grok Botの代わりに、手元のClaude Code CLIをそのままチャットのバックエンドにしてみた",
+      "url": "https://zenn.dev/matsushima_a/articles/day-041-openmausbot-claude-cli",
+      "site": "Zenn(LLM)",
+      "published": "2026-11-09T14:23:01Z",
+      "description": "概要\n2026-11-07付でGitHub TrendingのTypeScript部門で最多の伸び(+1,986 star/日)を記録していたmilind-soni/OpenMausBot を実際に動かしてみた。\nこのツールは、xAIのGrok Bot(クローズドソースで、使えるモデルがxAI系に固定されたチャットアプリ)を意識して作られたOSS版チャットアプリで、Apache License 2...",
       "category": "AI・技術",
       "rss_category": "",
       "image_url": ""
