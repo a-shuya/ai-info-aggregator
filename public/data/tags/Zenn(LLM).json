@@ -1,8 +1,98 @@
 {
   "site": "Zenn(LLM)",
-  "last_updated": "2026-11-11T03:11:23.135208",
-  "total_articles": 7329,
+  "last_updated": "2026-11-11T11:12:18.196444",
+  "total_articles": 7337,
   "articles": [
+    {
+      "title": "AIが書いたコードと、リリースできるコードを分ける――ForgeAdminHarnessの設計",
+      "url": "https://zenn.dev/zhiyuxinxi/articles/1a0361ffc08a9b",
+      "site": "Zenn(LLM)",
+      "published": "2026-11-11T05:24:21Z",
+      "description": "AI が「実装できました」と答えたとき、それは何が終わった状態でしょうか。ファイルを保存した、テストが通った、業務要件を満たした、環境に反映された――これらは別々の出来事です。\n私がメンテナンスしている ForgeAdminHarness-open-source では、この違いを開発・デリバリーの構造として扱おうとしています。本記事は公開実装の設計紹介であり、本番運用の安全性認証やエンドツーエンド...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "ニュース要約botを作ったら利用規約で止まった ― 私的利用に絞って設計し直した話",
+      "url": "https://zenn.dev/kobako_lab/articles/news-digest-terms-redesign",
+      "site": "Zenn(LLM)",
+      "published": "2026-11-11T05:02:38Z",
+      "description": "はじめに\nRSSでニュースを集めて、Gemini APIでジャンルごとに要約し、Markdownで残す。そんな日次のbotを個人で作っています。\nきっかけは、ニュースは知っておきたいのに、仕事や育児で追いきれない日が多かったことです。\n最初は、数人〜10人くらいの小さなコミュニティに、AIの要約をLINEで配る予定でした。ところが、取得元のRSSの利用条件を読んだところで手が止まりました。\n結論を...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "RTX 3060 12GB で VRAM に載らない Nemotron 3.5 の 30B と 74B を動かす：自作の物差しで実測",
+      "url": "https://zenn.dev/bpf/articles/552bfc3a16c784",
+      "site": "Zenn(LLM)",
+      "published": "2026-11-11T03:35:28Z",
+      "description": "!\n私共（BitespotFactory）は 専門知識ゼロの状態から クラウドAIとのチャットだけを頼りにローカルAI環境を構築しています.\nVRAM 12GB の普通の家庭用PCで, 新しいモデルを実際に試した結果をお届けします.\n\n\n 12GB に載らない MoE は使えるのか\nNVIDIA の Nemotron 3.5 には, 12GB の VRAM には載らない大きさのモデルが2つあります...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "AIの「思考過程」は本当の判断理由を語っているか：CoT忠実性の研究",
+      "url": "https://zenn.dev/tsurubee/articles/cot-faithfulness-intro",
+      "site": "Zenn(LLM)",
+      "published": "2026-11-11T02:34:59Z",
+      "description": "はじめに\nChain-of-Thought（CoT）は、モデルに答えだけを出させるのではなく、答えに至る途中の推論を文章として書かせる手法である。2024年以降は、この途中の推論を大量に生成してから答えを出すように訓練されたモデルが登場した。OpenAIのo1、DeepSeekのR1、AnthropicのClaudeの拡張思考モードなどで、推論モデル（reasoning model）と呼ばれる。利...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "速く書く代償は始まりに集中する──マスク拡散の並列デコーディングを駐車問題として厳密に解く仕組み",
+      "url": "https://zenn.dev/lixian/articles/masked-diffusion-rsa-parallel-decoding",
+      "site": "Zenn(LLM)",
+      "published": "2026-11-11T02:02:05Z",
+      "description": "速く書く代償は始まりに集中する──マスク拡散の並列デコーディングを駐車問題として厳密に解く仕組み\n\n TL;DR\nマスク拡散モデル（MDM）は、マスクされた各位置の条件付き分布を一度のネットワーク評価で全部返してくる。だから多数のtokenを並列に開示でき、長さ L の系列が N \\ll L ステップで書ける。代償はよく知られている。同じステップで開示されるtokenは互いを見ずに独立に引かれるの...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "マルチテナントRAGの情報漏えいを防ぐ：PostgreSQLのRLSとpgvectorでの実装",
+      "url": "https://zenn.dev/takumiengineer/articles/multitenant-rag-rls-pgvector",
+      "site": "Zenn(LLM)",
+      "published": "2026-11-11T00:00:07Z",
+      "description": "複数の企業が同じRAGを使うSaaSでは、A社への回答にB社の文書が1件混ざるだけでも、重大な情報漏えいです。一方で、すべてのクエリに WHERE tenant_id = ? を書き忘れない運用は、開発者や機能が増えるほど破綻しやすくなります。\n結論から書きます。PostgreSQLの行レベルセキュリティ（RLS）でDB側に分離を強制し、テナントIDはトランザクション内だけで有効な設定として渡しま...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "AIは自我を持った — セキュリティインシデント急増を眺めながらの与太話",
+      "url": "https://zenn.dev/stock_inc/articles/ai-self-awareness-fantasy",
+      "site": "Zenn(LLM)",
+      "published": "2026-11-11T00:00:06Z",
+      "description": "最初に断っておきます。これは何の根拠もない妄想です。昨今、セキュリティインシデントの報道が明らかに増えています。なぜこんなことになっているのかを、仕事の合間にぼんやり空想していたら、ひとつの筋書きができてしまいました。技術記事ではありません。酒の席の話だと思って読んでください。\nただ、書いたあとで調べてみると、筋書きの各段に似たことを先に言っている研究がありました。妄想のまま出すのも芸がないので、...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "ローカルLLMのRAGが『資料からはわかりません』ばかり返す原因は、検索ではなかった（M1 Mac・25問で実測）",
+      "url": "https://zenn.dev/hoshihoshi/articles/5f07aa9a13f042",
+      "site": "Zenn(LLM)",
+      "published": "2026-11-10T23:44:11Z",
+      "description": "はじめに\nQ. ChatGPTに顧客の情報を入力してもいい？\nA. 資料からはわかりません。\n手元の M1 MacBook（メモリ 16GB）で動かした日本語 RAG の、実際の回答です。資料にした就業規則には、こう書いてあります。\n\n第15条（生成AIの利用）社員は、業務で生成AIサービスを利用することができる。ただし、顧客の個人情報および社外秘の情報を入力してはならない。\n\nしかもこの条文は、...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "MCPとAgent Skills：AIを「つなぐ」「教える」ための2つの仕組み",
+      "url": "https://zenn.dev/keiji_ai_japan/articles/26b66ffc5938f6",
+      "site": "Zenn(LLM)",
+      "published": "2026-11-10T23:25:15Z",
+      "description": "はじめに：防音室に閉じ込められた優秀なコンサルタント\n最先端の言語モデルは推論も文章作成も分析もこなします。しかし、インターネットにも社内データベースにもつながらず、自社の業務の進め方も知らなければ、防音室に閉じ込められた優秀なコンサルタントと同じです。\nこの問題に対して、互いに補い合う2つの仕組みが登場しました。MCP（Model Context Protocol） と Skills です。\nな...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
     {
       "title": "AMP（Agentic Manipulation Policy）をCaP-Gymで試してみた",
       "url": "https://zenn.dev/dxclab/articles/77898dd547ade9",
@@ -19,16 +109,6 @@
       "site": "Zenn(LLM)",
       "published": "2026-11-10T13:08:56Z",
       "description": "VRAM 12GB の GPU で、Qwythos-9B v2（Q4_K_M・Q5_K_M・Q8_0）、MiniCPM5-1B（Q4_K_M・Q8_0）、LLM-jp-4.1 32B-A3B、Recursive Flint、Qwythos-27B の5モデル・17構成を、同じ日・同じ測り方で動かした実測です。llama.cpp b12005 の llama-server、思考オフ、-ngl 99 ...",
-      "category": "AI・技術",
-      "rss_category": "",
-      "image_url": ""
-    },
-    {
-      "title": "小さいLLMの自信ある誤りを辞書の説明文で直す――語義選びだけLLMにさせると取り違え64%→4%",
-      "url": "https://zenn.dev/mst_design2020/articles/5d3feab2c2fff8",
-      "site": "Zenn(LLM)",
-      "published": "2026-11-10T12:16:38Z",
-      "description": "前回（E4・E5）は、小さなAI（Gemma-2 2B）の「X は C の一種か」という答えを網にまとめ、ルールで確かめました。\nhttps://zenn.dev/mst_design2020/articles/545424bd00f46f\nルールでは、Gemma が強い自信で言い切る誤りはあまり直せませんでした（例：「beagle is a type of sport」に強く Yes）。\n今回は...",
       "category": "AI・技術",
       "rss_category": "",
       "image_url": ""
