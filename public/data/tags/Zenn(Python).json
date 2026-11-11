@@ -1,14 +1,154 @@
 {
   "site": "Zenn(Python)",
-  "last_updated": "2026-11-11T11:12:18.196444",
-  "total_articles": 7776,
+  "last_updated": "2026-11-11T18:45:29.101090",
+  "total_articles": 7789,
   "articles": [
+    {
+      "title": "Akamai の _abck：Cookie は「渡される鍵」ではなく、サーバーが書き換え続ける台帳",
+      "url": "https://zenn.dev/seencxy/articles/173c773fe20032",
+      "site": "Zenn(Python)",
+      "published": "2026-11-11T15:21:26Z",
+      "description": "Akamai Bot Manager は、Cookie そのものより「その Cookie がどう書き換えられてきたか」で判定される、少し変わった製品です。注目は _abck に集まりますが、次のリクエストが通るかどうかを決めるのは、_abck が通ってきた更新の並びと、一緒に返ってきたヘッダーです。\nこの記事では、実際に Akamai の自動化が壊れる 3 点を扱います。_abck を一度きりのト...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "【Python】内包表記がいまだにパッとわからないので整理してみた",
+      "url": "https://zenn.dev/teeduck/articles/python-comprehension-memo",
+      "site": "Zenn(Python)",
+      "published": "2026-11-11T15:18:09Z",
+      "description": "はじめに\nリストの内包表記って、最初ぱっと見では全然わからないですよね。\n僕も競プロの問題を解いたとき、解答コードで内包表記をよく目にするのですが、\n「直感的にわからんな〜」となって、結局慣れている for 文で書いてしまいます。\nそれでまた後から解答を見て、「あ〜、内包表記で書けばよかった」と後悔する……そんなことを繰り返していました。\nいい加減しっかり整理したいなと思ったので、今回まとめてみる...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "構造変更後のエラー率低下を要求構成比の標準化と対照条件で検証する",
+      "url": "https://zenn.dev/id774/articles/ec922ad045f5bc",
+      "site": "Zenn(Python)",
+      "published": "2026-11-11T15:09:51Z",
+      "description": "構造変更の前後でサービスのエラー率が低下したとき、その差を変更の効果と判断できるだろうか。呼び出し経路の追加・削除は構成の差分として計測できる。一方、エラー率はソフトウェアが受け付けた要求の種類、外部依存の状態、計測対象の定義によっても変動する。両者を結び付けるには、構造の測定と運用指標の比較を、それぞれの対象に即して設計する必要がある。\n例えば、構造変更後の全体エラー率が 8.2% から 2.8...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "CIは成功したのに本番が変わらないとき、どこを確かめるか",
+      "url": "https://zenn.dev/veripsa/articles/ci-success-deployed-revision",
+      "site": "Zenn(Python)",
+      "published": "2026-11-11T13:59:19Z",
+      "description": "CIの画面は緑なのに、公開URLを開いても変更が見えない。こういうときは、キャッシュ削除から始める前に「何が成功したのか」を分けて確認すると、調べる場所を絞れます。\nまず確認する順番は、期待する版 → デプロイ先の環境 → 公開URLの応答 → 代表コンテンツです。HTTP 200だけでは、意図した版が配信されているかまでは分かりません。\nこの記事では、WebサイトをCI/CDで公開するときの切り...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "Claude CodeにAndroidアプリを操作させるMCPを自作してみた",
+      "url": "https://zenn.dev/kamomekun/articles/2a39ccf2bf544b",
+      "site": "Zenn(Python)",
+      "published": "2026-11-11T11:23:21Z",
+      "description": "Androidアプリの動作確認をClaude Codeに任せたくて、ローカルMCPサーバーを一から作ってみました。\n!\nローカルMCPサーバーは、思っていたよりずっと簡単に作れました。 使い方に合わせて作り込みたいなら、自作もアリだと思います。\n\n\n きっかけ\n前回の記事では、Xcode MCPでiOSの動作確認をClaude Codeに任せてみました。これをAndroidでもやりたくなったのがき...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "ユーザーインタビューの録音を audio to text で付箋カードにする：KJ法の下ごしらえを30分で終わらせる手順",
+      "url": "https://zenn.dev/joy_research/articles/c4a32bf755c946",
+      "site": "Zenn(Python)",
+      "published": "2026-11-11T11:01:21Z",
+      "description": "ユーザーインタビューを5本やった翌週、いちばん重いのは分析そのものではなく「付箋を書く作業」でした。\n録音を聞き直して、気になった発話を付箋に手書きして、壁に貼る。1本60分のインタビューで、聞き直しに90分。5本で7時間半。チームで親和図を作る日までに終わらせるには、正直ちょっと現実的ではありません。\nそこで今回は、録音 → 逐字稿 → 発話ごとのカードCSV → Miro / FigJam に...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "上書きされたドラレコの映像は、ファイルの“余り”にまだ残っていた",
+      "url": "https://zenn.dev/haruto_miyakawa/articles/dashcam-overwritten-video-in-file-slack",
+      "site": "Zenn(Python)",
+      "published": "2026-11-11T10:00:05Z",
+      "description": "ある日、車に乗っていたとき、目の前で事故がありました。自分の車には何もぶつかっていません。ドラレコの映像を残そうと思ったのは、次の日でした。\nカードを PC に挿すと、その時刻のファイルはもうありませんでした。ドラレコは、カードがいっぱいになると古い録画から上書きしていきます。半日走っただけで、1周していたのです。復元ソフトにかけても出てきません。\nあきらめかけたところで、ファイルの大きさが全部ぴ...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "Claude Codeの「don't ask again」でパスワードが保存されるので、防ぐ + αのプラグインを作った",
+      "url": "https://zenn.dev/koki_n22/articles/a1463cc65c7973",
+      "site": "Zenn(Python)",
+      "published": "2026-11-11T09:13:52Z",
+      "description": "対象読者\n\nClaude Codeで「Yes, and don't ask again」を使用している人\nClaude Codeの権限設定やセッションログにパスワード・APIトークンが残ることを防ぎたい人\n\n\n モチベーション\n\nClaude Codeの「don't ask again」で保存されたパスワードがGitHubに公開されていたという記事を読んだ\nClaude Codeの標準機能や既存の...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "Claude Code で xlsx が読めない：Read の拒否文と openpyxl の data_only が None のとき",
+      "url": "https://zenn.dev/agentkiyaku/articles/cea5e5c8a732d3",
+      "site": "Zenn(Python)",
+      "published": "2026-11-11T07:45:59Z",
+      "description": "Claude Code の Read は .xlsx を開かず、「バイナリは読めない」という拒否文を返します（2.1.322 で確認）。中身が欲しいときは、openpyxl・pandas・LibreOffice のようにファイルを直接読める道具を使います。\nただし openpyxl の data_only=True は、数式セルの計算結果がファイルに保存されていないと None を返します。今回の...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "Claude CLIをシェルから呼んでカード画像を自動で読み取る — にじなな非公式カードサイトの自動更新の仕組み",
+      "url": "https://zenn.dev/t_okubo/articles/ca0aed06e4ca5e",
+      "site": "Zenn(Python)",
+      "published": "2026-11-11T07:31:33Z",
+      "description": "NIJISANJI 7colors card game（通称「にじなな」）のカード情報をまとめた非公式ファンサイト nijinana.kognis.jp を公開している。全カードを属性・ライバー・#タグで検索でき、デッキ構築にも使える。\n新カードが公式 X アカウントで告知されるたびに、手作業で画像を見てカード情報を入力していた。品番・名前・効果テキスト・属性・レベル・パワーを読み取って HTML...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "LLMに必要なGPUメモリを見積もる（パラメーター数・量子化・KVキャッシュ）",
+      "url": "https://zenn.dev/jpailab/articles/ff7fc5268b68cf",
+      "site": "Zenn(Python)",
+      "published": "2026-11-11T06:11:05Z",
+      "description": "「このモデル、手元のGPUで動く？」を判断するには、GPUメモリの使い道を分けて考えるのが近道です。この記事では、モデルの重みとKVキャッシュを中心に、必要なGPUメモリをざっくり見積もる方法を整理します。\n数字はすべて目安です。1GB = 10^9 バイトで計算しています。\n\n GPUメモリの内訳\n推論時のGPUメモリは、大きく次の3つに分かれます。\n\n\nモデルの重み：パラメーター数 × 1パラ...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "「攻撃成功（200 OK）」を偽装してハッカーを自滅させる。能動的欺瞞（Active Deception）という新発想",
+      "url": "https://zenn.dev/rp_holdings/articles/20ee5b526ed619",
+      "site": "Zenn(Python)",
+      "published": "2026-11-11T05:21:29Z",
+      "description": "はじめに：なぜ防御側はいつも消耗戦を強いられるのか？\nWebサービスの防御において、守る側は構造的な不利を背負わされています。\n\n\n【守る側】 365日24時間、何万行のコード・無数のエンドポイントで1つのミスも許されない（失敗コスト：莫大なインシデント対応費・社会的信用失墜）\n\n【攻撃側】 自動化スキャナーを放置し、ノーリスクで1つの穴を探し当てるだけ（失敗コスト：ほぼゼロ）\n\n悪意ある通信（S...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "ニュース要約botを作ったら利用規約で止まった ― 私的利用に絞って設計し直した話",
+      "url": "https://zenn.dev/kobako_lab/articles/news-digest-terms-redesign",
+      "site": "Zenn(Python)",
+      "published": "2026-11-11T05:02:38Z",
+      "description": "はじめに\nRSSでニュースを集めて、Gemini APIでジャンルごとに要約し、Markdownで残す。そんな日次のbotを個人で作っています。\nきっかけは、ニュースは知っておきたいのに、仕事や育児で追いきれない日が多かったことです。\n最初は、数人〜10人くらいの小さなコミュニティに、AIの要約をLINEで配る予定でした。ところが、取得元のRSSの利用条件を読んだところで手が止まりました。\n結論を...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
     {
       "title": "指のリグで指先が甲側へめくれる原因は二重変換",
       "url": "https://zenn.dev/orca_forge/articles/connected-bones-transformed-twice",
       "site": "Zenn(Python)",
       "published": "2026-11-11T01:01:47Z",
       "description": "📝 この記事は forge.workstyle.tech に掲載した記事の転載です。\n\n指のリグを組んで指を握らせたところ、指先が手のひら側ではなく甲側へめくれました。リグは、骨の動きでメッシュ（形状を作る頂点の集まり）を動かす仕組みです。私は頂点が動くことを確認して「正しく入っていました」と答えましたが、ビューア（モデルを表示して動きを確かめる画面）で指の動きを見ると、関節の位置がずれていました...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "担当の報告を1行の JSON にする：Claude Code の定期実行を台帳につなぐ",
+      "url": "https://zenn.dev/neuralalpha/articles/one-line-json-report-ledger",
+      "site": "Zenn(Python)",
+      "published": "2026-11-11T00:52:06Z",
+      "description": "はじめに\n事業ごと、あるいはプロジェクトごとに Claude Code のセッションを立てて、定期的に「今日の作業を報告して」と頼むと、丁寧な文章が返ってきます。読めば分かりますが、担当が4つあれば4つの長文です。しかも「今月の売上は？」「返事が要る質問は？」を探すのは自分です。\nこの記事では、報告の最後に、機械が読める1行の JSON を付ける決まりと、それを台帳（JSON Lines のファイ...",
       "category": "開発",
       "rss_category": "",
       "image_url": ""
@@ -129,16 +269,6 @@
       "site": "Zenn(Python)",
       "published": "2026-11-10T14:01:00Z",
       "description": "AIエージェントとモダンWebの標準解：MCP・Next.js・Pythonエコシステムを選択すべき理由\n\n この記事で分かること\n\nMCP（Model Context Protocol）の標準化がAIエージェント開発にもたらす構造的メリット\nNext.js × Pythonによるフルスタック構成が開発効率を最大化する理由\n外部データ取得におけるDNS名前解決エラー（Errno 8）発生時のシステ...",
-      "category": "開発",
-      "rss_category": "",
-      "image_url": ""
-    },
-    {
-      "title": "Google Cloudの利用額上限がGA！API自動化や安全な課金停止を解説",
-      "url": "https://zenn.dev/adopture/articles/1643f392dd0c4e",
-      "site": "Zenn(Python)",
-      "published": "2026-11-10T14:00:24Z",
-      "description": "はじめに（TL;DR）\nGoogle Cloudを運用するエンジニアにとって長年の課題だった「予算超過時の強制ストッパー問題」に対して、待望のネイティブな解決策が登場しました。Google Cloudの予算管理機能において、リソース削除のリスクなしに対象ワークロードの費用急増をブロックできる「利用額上限（Spend Caps）」が一般提供（GA）となりました。\n今回のGAに伴い、以下の3大機能が追...",
       "category": "開発",
       "rss_category": "",
       "image_url": ""
