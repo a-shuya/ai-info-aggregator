@@ -1,8 +1,188 @@
 {
   "site": "Zenn(Python)",
-  "last_updated": "2026-11-12T01:03:55.016162",
-  "total_articles": 7789,
+  "last_updated": "2026-11-12T08:16:27.172749",
+  "total_articles": 7807,
   "articles": [
+    {
+      "title": "麻雀の点数計算をPythonで書く：符と翻から支払いまで、早見表も自動で作る",
+      "url": "https://zenn.dev/axostoxast/articles/8c23c25f9f9526",
+      "site": "Zenn(Python)",
+      "published": "2026-11-12T06:37:24Z",
+      "description": "麻雀の点数は「早見表を暗記するもの」と思われがちですが、中身は1本の式と、いくつかの丸めのルールでできています。点数計算のWebページを作ったときに整理した内容を、Pythonのコードにして紹介します。\nできたページはこちらです（符と翻を選ぶと点数が出ます）。\nhttps://axostoxast.github.io/tanacount-support/mahjong-tensu/\nこの記事のコー...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "AIデータセンターの液冷技術 — なぜDirect-to-Chipと二相冷却が『必須』になったのか",
+      "url": "https://zenn.dev/maru1228/articles/semiconductor-liquid-cooling-ai-datacenter",
+      "site": "Zenn(Python)",
+      "published": "2026-11-12T06:24:58Z",
+      "description": "!\nこの記事は自サイト AIデータセンターの液冷技術 — なぜDirect-to-Chipと二相冷却が『必須』になったのか の再掲（クロス投稿）です。図をインタラクティブに動かせる版は元記事でどうぞ。\n\n生成AIの学習・推論クラスタは、GPU1基あたりの消費電力が1kWを超えるようになり、ラック単位では100kWを軽く超える発熱を出すようになりました。従来のデータセンターを支えてきた空冷（ファン+...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "職場の内製スクリプトを公開リポジトリに切り出す ― 秘情報スキャン160件・既定値の撤廃・検証まで",
+      "url": "https://zenn.dev/pero819412/articles/7bb8462b200fd3",
+      "site": "Zenn(Python)",
+      "published": "2026-11-12T05:30:21Z",
+      "description": "はじめに\n歯科技工所で CAD/CAM を担当しながら、現場の小さな自動化スクリプトを30本ほど作って運用してきました。受注データの取り込み、ファイルの自動リネームと移動、STL の六面図作成、CAD/CAM ソフト間のデータ受け渡しなど、単機能のツールを1つのマネージャーから起動・停止・設定できる統合環境として使っています。\nこのたび、その中から環境依存の少ないものを切り出して、公開リポジトリと...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "FastAPIでMCPサーバーをゼロから作る──Claude Codeに自分だけのツールを繋ぐ実践ガイド",
+      "url": "https://zenn.dev/correlate_dev/articles/mcp-fastapi-api-claude-code",
+      "site": "Zenn(Python)",
+      "published": "2026-11-12T04:35:57Z",
+      "description": "「Claude Codeが賢いのはわかった。でも、自分のローカルDBは参照できないし、社内ツールには繋がらない。」── MCP（Model Context Protocol）はその壁を壊すプロトコルです。FastAPIを使えば、Pythonだけで自分専用のツールサーバーを立てられます。この記事では、概念説明を最小限に抑え、 実際に動かすことを最優先 に全工程を解説する。\n\n そもそもMCPとは？─...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "JSON Schemaに合っていても原文は守られる？さくらAI Engineで架空ログを比較検証",
+      "url": "https://zenn.dev/smallserverops/articles/64c9a888479d46",
+      "site": "Zenn(Python)",
+      "published": "2026-11-12T01:57:31Z",
+      "description": "結果\n2026年11月12日、さくらのAI Engineの2モデルで、固定書式の架空ログからJSONを作る限定実験を行いました。\ngpt-oss-120bの直接抽出では、完了・Schema適合の74回答中9回答で、messageのエスケープが原文と異なりました。 ID・IP・時刻については、この完了回答群で不一致を検出していません。\nGemmaの直接抽出は完了した74回答すべてで原文一致でした。一...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "Shift_JISとUTF-8が混ざったCSVをsheetstack-liteで結合・整形する",
+      "url": "https://zenn.dev/ebhow/articles/8c06028c815713",
+      "site": "Zenn(Python)",
+      "published": "2026-11-12T01:27:16Z",
+      "description": "Shift_JISとUTF-8が混ざったCSVをsheetstack-liteで結合・整形する\n日本の受注CSVは Shift_JIS、米国の出力は UTF-8（BOM付き）、英国の出力は Windows-1252、中国の出力は GB 系、という組み合わせはよくあります。日付も 2026/03/04、20260310、2026年3月14日、3/15/2026 が混在し、同じ伝票が二重に入っているこ...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "小さいLLMの答えの前に文を置くと、部分と全体の問いで効いた――自分で書いた文でもほぼ同じ（E10）",
+      "url": "https://zenn.dev/mst_design2020/articles/50e211cbd882af",
+      "site": "Zenn(Python)",
+      "published": "2026-11-12T01:21:57Z",
+      "description": "前回（E9）は、小さなAI（Gemma-2 2B）の「X は C の一種か」という答えを少しだけ辞書で確かめ、ルールの網で広げても、強い学習には勝てないことを書きました。\nhttps://zenn.dev/mst_design2020/articles/804eba1639b569\n効いていたのは網ではなく、外の資料で確かめることと、Gemma に語義を選ぶ役目だけをさせることでした。\n今回は、そ...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "公開後チェックを標準ライブラリだけで自動化する｜status・og:title・og:image・UTMの4点",
+      "url": "https://zenn.dev/cauchye_asia/articles/post-publish-check-stdlib-four-points",
+      "site": "Zenn(Python)",
+      "published": "2026-11-12T01:21:18Z",
+      "description": "2026-11-12時点の情報です。\n記事やページを公開したあとの確認を、目視で済ませていないでしょうか。公開直後の確認は「開いて、200で、タイトルが合っていればよし」と流れがちで、画像のリンク切れや、UTM の付け忘れは見落とします。この記事では、公開後の確認を Python の標準ライブラリだけで書いたスクリプトにして、故意に壊したページで何を検出できるかを実行して確かめます。\n\n 結論（先...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "少しだけ確かめた答えをルールの網で広げても、強い学習には勝てなかった――小さいLLMの答えを外から確かめる（E9）",
+      "url": "https://zenn.dev/mst_design2020/articles/804eba1639b569",
+      "site": "Zenn(Python)",
+      "published": "2026-11-12T01:19:08Z",
+      "description": "前回（E6〜E8）は、小さなAI（Gemma-2 2B）の「X は C の一種か」という答えを、Wiktionary の説明文で外から確かめました。\nhttps://zenn.dev/mst_design2020/articles/5d3feab2c2fff8\n一番効いたのは、Gemma に「この説明文の中で、この語はどの語義か」だけを選ばせて、辞書の説明文をたどるやり方でした。E2 から使ってき...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "Claude Codeの予約が一晩じゅう1回も動かなかった：承認の画面で会話ごと止まっていた",
+      "url": "https://zenn.dev/kirinukiauto/articles/f898809edff936",
+      "site": "Zenn(Python)",
+      "published": "2026-11-12T01:00:22Z",
+      "description": "切り抜き動画づくりと、その周りの作業を Claude Code に任せています。私はプログラムを書けないので、コードは読んでいません。\n止まらないように、Claude Code の予約の機能（決まった時刻に、決まった頼みを自分に送る機能）で見回りを入れています。毎時17分と47分の見回りと、毎時8分と38分の見張り合いです。\nある晩、この予約が21時7分から翌朝6時50分まで、1回も動きませんでし...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "Windowsで使用中ポートにbindできてしまう理由：SO_REUSEADDRを実測する",
+      "url": "https://zenn.dev/warrobotsxyz/articles/windows-port-in-use-bind-success",
+      "site": "Zenn(Python)",
+      "published": "2026-11-12T00:00:22Z",
+      "description": "はじめに\nローカルHTTPサーバーを起動したとき、bind() が成功したのにリクエストは別アプリが応答する——Windowsで起こり得る現象です。原因は SO_REUSEADDR の解釈がLinuxとWindowsで異なることです。\nこの記事では、Pythonのソケットで「使用中ポートへの多重bind」を再現し、安全なポート選択の方法を実測します。\n\n 環境\n\nWindows 11（ビルド 10...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "AIを使わず、ルールだけで詐欺メールを見分ける仕組みを作った",
+      "url": "https://zenn.dev/mamorune/articles/5e4ef5903fd180",
+      "site": "Zenn(Python)",
+      "published": "2026-11-11T23:59:52Z",
+      "description": "はじめに\n「【三菱UFJ銀行】口座が凍結されています」のような詐欺メールやSMSは、生成AIのおかげで日本語がとても自然になりました。文面の不自然さで見抜くのは、どんどん難しくなっています。\nそこで、文面のうまさを一切見ない判定の仕組みを作り、オープンソースで公開しました。名前は 勘合（kango） です。\nhttps://github.com/mamorune-com/kango\n\nAI（大規模...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "AmiVoice API×FastAPIで構築する現場音声ログのリアルタイム文字起こし＆Webhook通知基盤",
+      "url": "https://zenn.dev/toma_engineer4/articles/af2d5334cf7918",
+      "site": "Zenn(Python)",
+      "published": "2026-11-11T23:27:26Z",
+      "description": "1. 背景と課題\n現場作業やトレーニング中の「音声メモ」を即座にテキスト化し、Slackや社内ツールへ連携したいニーズは広く存在します。しかし、一般的なバッチ型の音声認識フローでは以下の課題に直面しがちです。\n\n\nレイテンシと通信負荷: 音声ファイル全体の録音完了を待ってからHTTP POST送信すると、発話が長くなるほど待ち時間が増大する\n\n専門用語・固有名詞の認識精度: 業務特有の単語やIT略...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "ChatGPT・ClaudeでRNA-seqを解析する前に知っておきたい、AIの間違いを見抜く5つのチェック",
+      "url": "https://zenn.dev/kepimaru_bio/articles/4e9d0b46bceec0",
+      "site": "Zenn(Python)",
+      "published": "2026-11-11T23:00:06Z",
+      "description": "実験系の研究者にとって、RNA-seqのデータ解析は高い壁です。最近は ChatGPT や Claude に聞きながら、解析のコードを書いてもらう人も増えました。私も自分の研究でRNA-seqデータを解析するときに、AIをよく使っています。\nただ、使っていて分かったことがあります。AIはエラーを消すのは得意ですが、「結果が正しいか」までは保証してくれません。コードがエラーなく最後まで動いても、増加...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "Gemini APIの429エラーをPython共通ラッパーで吸収する",
+      "url": "https://zenn.dev/ikuokuotiak/articles/gemini-api-retry-wrapper-python",
+      "site": "Zenn(Python)",
+      "published": "2026-11-11T22:53:44Z",
+      "description": "課題：複数のエージェントが同時にGemini APIを叩くと429が出る\n私はlaunchdで複数のPythonエージェントを定期実行し、その多くがGemini APIを呼んでいます。個別に動かしているうちは問題ありませんでしたが、実行タイミングが重なる時間帯に 429 RESOURCE_EXHAUSTED や 503 が散発し、ログに失敗が残るようになりました。\n各スクリプトに個別でtry/ex...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "形式は合格なのに中身が違う出力を、原文照合で弾く",
+      "url": "https://zenn.dev/liatris/articles/20261112-structured-output-grounding-check",
+      "site": "Zenn(Python)",
+      "published": "2026-11-11T22:00:05Z",
+      "description": "!\nこの記事は、Claude Codeを執筆支援に使った &quot;週1本書く&quot; 取り組みの一環で書いています。\n\n目的: 自分のAI活用キャッチアップ。仕組み自体も毎月アップデートしていきます\n体制: 題材選定・実装・下書きをClaude Codeで補助し、動作確認と編集を経て人が公開を判断\n方針: Zennのガイドラインに真摯に向き合い、運営から指摘や警告があれば即座に取り組みを停...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "1万件のnote記事で、売れ方を数えた",
+      "url": "https://zenn.dev/zeroyen_dev/books/note-10000-count",
+      "site": "Zenn(Python)",
+      "published": "2026-11-11T21:39:00Z",
+      "description": "AIにnoteを72本書かせて売れなかったあと、有料記事1,313件・書き手846人・公称部数745件を自分で数えました。価格と部数、無料部分の長さ、売れている人の記事数。調べた結果は無料のチャプターで全部読めます。有料のチャプターは、集計スクリプトの全文（Python・標準ライブラリのみ）と、AIに2アカウントを運用させた2か月の事故の記録です。",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "AIにコードを書いてもらう時代に、なぜプログラミングを学ぶ必要があるのか？🤔",
+      "url": "https://zenn.dev/aidevtrainer/articles/05331631929e4f",
+      "site": "Zenn(Python)",
+      "published": "2026-11-11T19:48:43Z",
+      "description": "はじめに ☕️\n最近のAI、すごいですよね〜。\nChatGPTやGitHub Copilotなどを使えば、「こんなプログラムを作って！」とお願いするだけで、あっという間にコードを書いてくれます。\n便利な時代になりましたね〜！😊\nまじで最近ハマりまくっています♪\nでも、ここでちょっと疑問が。\n「AIがコードを書いてくれるなら、もうプログラミングを勉強しなくてもいいのでは？」\nそう思ったことはありませ...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
     {
       "title": "Akamai の _abck：Cookie は「渡される鍵」ではなく、サーバーが書き換え続ける台帳",
       "url": "https://zenn.dev/seencxy/articles/173c773fe20032",
