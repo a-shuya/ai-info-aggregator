@@ -1,8 +1,98 @@
 {
   "site": "Zenn(機械学習)",
-  "last_updated": "2026-11-12T08:16:27.172749",
-  "total_articles": 2209,
+  "last_updated": "2026-11-12T16:53:49.157105",
+  "total_articles": 2217,
   "articles": [
+    {
+      "title": "森林回避におけるFlyWire特徴・PPO・LSTMの比較",
+      "url": "https://zenn.dev/bur/articles/flywire-ppo-lstm-navigation-study",
+      "site": "Zenn(機械学習)",
+      "published": "2026-11-12T16:14:09Z",
+      "description": "要旨\n固定FlyWire結線を用いた特徴、PPOによる読出し学習、LSTMによる記憶、全周距離観測を段階的に比較した。未学習配置では画像特徴LSTMが65/90到達し、FlyWire特徴LSTMは1/90であった。距離観測系はさらに到達数を増やしたが、観測・容量・学習量等を同時に変更しており、単一要因の効果ではない。\n!\n本稿は保存済み実験報告・集計から再構成したシミュレーション研究報告であり、査...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "閉ループ羽根・CFD・イオン風モデルの動作確認と未検証事項",
+      "url": "https://zenn.dev/bur/articles/flight-models-preliminary-note",
+      "site": "Zenn(機械学習)",
+      "published": "2026-11-12T16:14:08Z",
+      "description": "要旨\n閉ループ形状の羽根の可視化、SU2公式例、推力を仮定した1次元イオン風モデルの動作確認を整理した。外観変更の接続確認、数値計算の停止条件、質点モデルの整合性を確認した範囲に限り、空力性能や実機浮上を実証したものではない。\n!\n本稿は保存済み実験報告・集計から再構成したシミュレーション研究報告であり、査読論文ではない。実機での検証は行っていない。ここに記す数値は保存記録に基づき、記事化のために...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "樹冠上からの熱源観測：高度・画角・解像度による検出限界",
+      "url": "https://zenn.dev/bur/articles/canopy-thermal-resolution-study",
+      "site": "Zenn(機械学習)",
+      "published": "2026-11-12T16:14:08Z",
+      "description": "要旨\n不透明な樹冠モデルを使い、高度、画角、解像度、遮蔽、温度差の条件を比較した。遮蔽なし・画角50度・温度差6Kでは、60mで320相当は0/9、640相当は9/9の検出となった。完全遮蔽では検出できず、温かい岩の偽陽性も残った。実カメラや実森林を校正した結果ではない。\n!\n本稿は保存済み実験報告・集計から再構成したシミュレーション研究報告であり、査読論文ではない。実機での検証は行っていない。こ...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "【scikit-learn入門 #7】回帰モデルの評価 ─ MAE・MSE・RMSE・決定係数R²",
+      "url": "https://zenn.dev/haruhiro1020/articles/c60b9e17a43e5d",
+      "site": "Zenn(機械学習)",
+      "published": "2026-11-12T13:00:05Z",
+      "description": "はじめに\n本記事は「Pythonで機械学習を行うscikit-learn入門」シリーズの第7回です．\n第6回では 分類 モデルの評価指標を学びました．\n第7回では，回帰（数値予測） モデルの評価指標を扱います．\n第3回で線形回帰モデルを作りましたが，「で，それってどれくらい正確なの？」という\n肝心の問いには答えていませんでした．本記事でその答えを出します．\n私のscikit-learnライブラリの...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "9行のDSLでQwenをお嬢様言葉に: 勾配なし、重みは変えず、規則が働くまで元と一字も違わない",
+      "url": "https://zenn.dev/caphtech/articles/qwen-ojou-rules",
+      "site": "Zenn(機械学習)",
+      "published": "2026-11-12T08:32:19Z",
+      "description": "この記事は個人（と会社）の実験の記録です。モデルはQwen3.5-9B（Apache-2.0）、試験の問はELYZA-tasks-100（ELYZA、CC BY-SA 4.0）、学習の問はdatabricks-dolly-15k-ja（kunishou、CC BY-SA 3.0。元はDatabricksのdatabricks-dolly-15k）を使いました。実装と実行はClaude Code（A...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "競馬AI開発の罠。LightGBM実装で絶対に避けるべき「データリーク」と正しい特徴量設計",
+      "url": "https://zenn.dev/tubelink/articles/8d2aa0fae20bc0",
+      "site": "Zenn(機械学習)",
+      "published": "2026-11-12T07:01:10Z",
+      "description": "はじめに\n「よし、LightGBMのバックテストで回収率150%を超えるモデルができた！」\nそう意気込んで週末のメインレースで馬券を買ってみたら、結果は全く当たらず回収率は30%……。\n競馬予測AIの開発に挑戦したことがあるエンジニアなら、一度はこんな経験があるのではないでしょうか？\n競馬予測を題材にした機械学習は、データセットが豊富（netkeiba等）で目的変数も明確なため、データサイエンスの...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "新人DevOpsエンジニアがAI/MLでスパムフィルタリングを自動化した話",
+      "url": "https://zenn.dev/inflab/articles/d3d44a490ad217",
+      "site": "Zenn(機械学習)",
+      "published": "2026-11-12T03:25:37Z",
+      "description": "こんにちは、InflabのDevOpsエンジニアのPokaです。\n私にとって初めての会社であるInflabに入社して、早くも3か月が過ぎようとしています。\n今回は、AI/MLの専門職がいない私たちのようなスタートアップが、機械学習/AIを活用した自動スパムフィルタリングシステムを導入し、改善してきた過程を紹介します。\n\n Inflearnのスパムフィルタリングの始まり\n\n スパム問題の浮上\n\n\nス...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "少しだけ確かめた答えをルールの網で広げても、強い学習には勝てなかった――小さいLLMの答えを外から確かめる（E9）",
+      "url": "https://zenn.dev/mst_design2020/articles/804eba1639b569",
+      "site": "Zenn(機械学習)",
+      "published": "2026-11-12T01:19:08Z",
+      "description": "前回（E6〜E8）は、小さなAI（Gemma-2 2B）の「X は C の一種か」という答えを、Wiktionary の説明文で外から確かめました。\nhttps://zenn.dev/mst_design2020/articles/5d3feab2c2fff8\n一番効いたのは、Gemma に「この説明文の中で、この語はどの語義か」だけを選ばせて、辞書の説明文をたどるやり方でした。E2 から使ってき...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "臨床試験をひもとく：AI研究者のためのガイド（第4回）臨床試験で使われるAIモデル",
+      "url": "https://zenn.dev/keiji_ai_japan/articles/11973a8f1cc8c3",
+      "site": "Zenn(機械学習)",
+      "published": "2026-11-12T00:35:04Z",
+      "description": "はじめに\nAIは臨床試験のライフサイクル全体で活用が進んでいます。シリーズ最終回では、代表的なAI技術とその用途、課題を整理し、KEIJI AIの取り組みを紹介します。\n\n\n 自然言語処理（NLP）\nプロトコル、治験薬概要書、診療記録、適格基準など、臨床試験の情報の多くはテキストです。\n\n\n用途： 電子カルテや診療記録から、適格基準に合う患者さんを手作業よりはるかに速く見つける適格性スクリーニング...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
     {
       "title": "AIガバナンス【G検定 技術解説】",
       "url": "https://zenn.dev/tkrndisk/articles/g-kentei-ai-governance-tech",
@@ -104,11 +194,11 @@
       "image_url": ""
     },
     {
-      "title": "旅行・カフェ・買い物のデータを機械学習にかけたら、何が分かった？",
+      "title": "データを入れると、何が手元に残る？ Excelと3つの実験で読む機械学習の不確かさ",
       "url": "https://zenn.dev/okamasaya/articles/diy-automl-business-three-experiments",
       "site": "Zenn(機械学習)",
       "published": "2026-11-10T04:29:30Z",
-      "description": "身近な疑問を、公開データで確かめる\n「早めに予約したホテルは、キャンセルしやすいのか」「カフェ好きなら、カフェのクーポンを受け取りやすいのか」「たくさん買ってくれた人は、次も買ってくれるのか」。\nこうした疑問を、公開データと自作の評価ツールDIY AutoMLで試してみました。使ったのは既存の主要5モデルで、各テーマ最大2,000行の小さな試行です。\n結果を見ると、身近な見方と合う傾向はありました...",
+      "description": "仕事で知りたいのは、点数の先にあること\n「キャンセルしそうな予約を見つけたい」「クーポンの案内先を考えたい」「次も買ってくれそうな顧客を知りたい」。機械学習を使うなら、結果をこうした判断につなげたいところです。\nそのとき、正解率が何%だったかに加えて、どんな間違いがあったか、その成績をどこまで信用できそうか、使いたい場面でも同じように働きそうかが気になります。\n誤差を添えたいのは、何が不確実なのか...",
       "category": "AI・技術",
       "rss_category": "",
       "image_url": ""
@@ -189,16 +279,6 @@
       "site": "Zenn(機械学習)",
       "published": "2026-11-09T02:00:46Z",
       "description": "その評価値を、どこまで信用してよいのか\n機械学習のモデルをいくつか動かすと、正解率やF1といった評価値が出てきます。数字を並べれば、どのモデルの成績がよかったかは分かります。\nただ、その先で気になることがありました。別のデータで調べたら、どれくらい変わるのか。データを増やせば改善しそうなのか。それとも、集め方や正解ラベルを見直す必要があるのか。\n自分の出発点は、統計量があるか、データの品質はどうか...",
-      "category": "AI・技術",
-      "rss_category": "",
-      "image_url": ""
-    },
-    {
-      "title": "Python機械学習の実践書4選",
-      "url": "https://zenn.dev/makitech/articles/20261109_book_ref",
-      "site": "Zenn(機械学習)",
-      "published": "2026-11-09T00:04:18Z",
-      "description": "はじめに\n数年前、社内の在庫需要を予測するモデルを scikit-learn で組んだ。やったことは単純で、集めたテーブルを RandomForestRegressor に流し込み、交差検証のスコアが 0.9 を超えたので満足して本番に出した。結果、稼働初週で予測が実需から大きくずれた。\n原因は検証の切り方だった。時系列のデータをランダムにシャッフルして分割していたので、未来の情報が学習側に混ざっ...",
       "category": "AI・技術",
       "rss_category": "",
       "image_url": ""
