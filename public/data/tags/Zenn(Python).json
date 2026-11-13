@@ -1,8 +1,118 @@
 {
   "site": "Zenn(Python)",
-  "last_updated": "2026-11-13T18:09:20.846260",
-  "total_articles": 7828,
+  "last_updated": "2026-11-13T23:33:28.722541",
+  "total_articles": 7839,
   "articles": [
+    {
+      "title": "異常系テストのモックが、pytest自身のファイル操作も失敗させていた",
+      "url": "https://zenn.dev/yusuke_shiki/articles/pytest-mock-broke-capture",
+      "site": "Zenn(Python)",
+      "published": "2026-11-13T16:31:15Z",
+      "description": "ファイル操作をわざと失敗させて、アプリケーションが正しくエラーを扱えるかを確かめる。そんな異常系テストで、アプリケーションの処理を呼ぶ前にpytest側の処理が失敗していました。\n自作のagent-costで起きた問題です。料金設定ファイルを読み込むときに os.fstat などで OSError が発生したら、外部に公開しているエラー型 BillingPlanError に変換されることをテスト...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "動いたMCPサーバーを公開する、その前の数分。stdio と鍵の7つの確認",
+      "url": "https://zenn.dev/zeuslab/articles/7b1a294d6795ae",
+      "site": "Zenn(Python)",
+      "published": "2026-11-13T15:52:03Z",
+      "description": "夜、やっと動いたMCPサーバーを、そのまま公開する。\n翌朝リポジトリを開き直して、設定の見本に本物の鍵が残っているのに気づく。\nこれは、そうなる前の数分のための記事です。\n自作のMCPサーバーが、つながった直後に切れる。あるいは、動いたので公開したら、設定の見本に本物の鍵が残っていた。どちらも、公開の前の数分で見つけられる種類の綻びです。stdio で動く手元のMCPサーバー向けに、7つの確認を1...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "【Pyodide/Stlite】未発表データを守る！ブラウザ単体で動くPython統計解析・作図アプリを作った話",
+      "url": "https://zenn.dev/goto6056738/articles/85b7f05aa3f8a5",
+      "site": "Zenn(Python)",
+      "published": "2026-11-13T15:25:42Z",
+      "description": "はじめまして。生命科学系の博士課程（D3）でマウスの行動解析や神経科学の研究をしている後藤と申します。\n今回は、研究室特有の「Excelと統計ソフトの往復地獄」を解決するために、**Python（Pyodide / Stlite）を用いて、ブラウザのローカル環境だけで完結する完全無料の統計解析＆グラフ作成Webアプリ『解析くん』**を個人開発した話と、その技術的な裏側をご紹介します。\n!\n💡 本記...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "Excelの近似曲線を卒業する｜Pythonで検量線を引く方法（コード付き）",
+      "url": "https://zenn.dev/hathi0808/articles/ch1-calibration",
+      "site": "Zenn(Python)",
+      "published": "2026-11-13T14:39:10Z",
+      "description": "吸光度から濃度を求める「検量線」。実験のたびにExcelで散布図を作って、近似曲線を引いて、R²と式を読み取って、未知試料の濃度を計算して……という手作業を繰り返していませんか。\nPythonなら、この一連の流れを一度コードにしておけば、次からはデータファイルを差し替えて実行するだけです。この記事では、検量線の作成から未知試料の濃度計算までを、動くコードで紹介します。\n\n この記事でやること\n\n標...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "日本語 Web フォントを「サイトで使う文字だけ」に絞って自前配信したら、通信量が 6 割減った",
+      "url": "https://zenn.dev/umechanhika/articles/233ce5d6d83b9b",
+      "site": "Zenn(Python)",
+      "published": "2026-11-13T13:31:24Z",
+      "description": "個人開発しているアプリの紹介サイトで、Google Fonts から読んでいた日本語フォントを、自分のドメインから配る形に切り替えました。静的サイトなので、サイトに出てくる文字は全部分かっています。その文字だけを残したフォントを作ったところ、フォントの通信量が次のように減りました。\n\n\n\nページ\n切り替え前（Google Fonts）\n切り替え後（自前配信）\n\n\n\n\n日本語トップ\n53 リクエスト...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "GA4のシンガポール流入はボットか？ ASNなしで見分ける2つのチェック（画面解像度とChromeバージョン）",
+      "url": "https://zenn.dev/aulvem/articles/9dba90964ec9ad",
+      "site": "Zenn(Python)",
+      "published": "2026-11-13T12:09:16Z",
+      "description": "GA4 の国別レポートで、シンガポールからの Direct 流入が急に増えることがあります。自分のサイトでは28日で210セッション、エンゲージは1件、滞在は0秒でした。\n人ではなさそうだと分かっても、確かめる手段が意外と限られます。アクセス元のネットワーク（ASN）を見ればデータセンターかどうかは一発ですが、Cloudflare の無料プランでは API から ASN が取れません。\nここでは、...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "sqlite3.OperationalError: database is locked で128件取り逃した話― busy_timeout",
+      "url": "https://zenn.dev/temotools/articles/172a56322127bf",
+      "site": "Zenn(Python)",
+      "published": "2026-11-13T10:20:06Z",
+      "description": "はじめに\n競艇予想ソフト KyoteiLab には、締切前オッズを蓄積するための常駐プロセスがある。レースの締切10分前・5分前・3分前・1分前に公式サイトのオッズを取得し、SQLite のデータベースへ保存していく。確定オッズではなく締切前のスナップショットでモデルを評価する設計（Mode B）のため、その時刻に取り逃した枠は後から再取得できない。データベースは常駐プロセスだけでなく、朝・夜の収...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "YouTubeの自動生成字幕は引用に使えるのか",
+      "url": "https://zenn.dev/bestaitools/articles/464523d188482d",
+      "site": "Zenn(Python)",
+      "published": "2026-11-13T09:05:33Z",
+      "description": "YouTubeの動画の多くには文字起こしがあり、そのほとんどは音声認識で作られています。内容を追うだけならそれで十分ですが、論文や記事で引用するとなると、自動の文字が実際の発言からどれだけ離れているのか、時刻が正しい秒を指しているのかが問題になります。2種類の字幕がついた動画を1本比べると、答えがはっきりします。\n使ったのは、NASAがYouTubeに上げている、1962年のケネディ大統領のライス...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "バックアップ HDD の「静かな死」を防ぐ仕組み ― smartctl でヘルスチェック",
+      "url": "https://zenn.dev/r_goto/articles/smartctl-hdd-health-check",
+      "site": "Zenn(Python)",
+      "published": "2026-11-13T07:21:17Z",
+      "description": "この記事は、クリエーションライン株式会社の Tech Blog に掲載した記事の転載です。\n元の記事：バックアップ HDD の「静かな死」を防ぐ仕組み ― smartctl でヘルスチェック\n\n自宅のバックアップでよくあるのは、外付け HDD をもう 1 台つなぎ、毎晩 rsync などで複製しておく構成です。ただ、そのバックアップは、読まれないまま静かに壊れます。\nバックアップ用のドライブは書き...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "Pythonで暗号資産の価格・数量を扱うときのDecimal入門",
+      "url": "https://zenn.dev/allycrypto/articles/3bc001aa97e9a6",
+      "site": "Zenn(Python)",
+      "published": "2026-11-13T07:12:14Z",
+      "description": "はじめに\n暗号資産の価格や数量をPythonで扱うとき、最初に決めておきたいのが数値の表現方法です。\nグラフを描くための概算と、金額や数量を厳密に計算する処理では、必要な精度が異なります。\nこの記事では、外部APIには接続せず、架空のJSONデータを使って、標準ライブラリのdecimalによる小数計算を確認します。\n\n floatでは小さな誤差が生じる\nPythonのfloatは、一般的な環境では...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "Claude Code で日本語 CSV が文字化けする：CP932 は Read で化け、Edit と Write は拒否される",
+      "url": "https://zenn.dev/agentkiyaku/articles/8f4e4c0facd812",
+      "site": "Zenn(Python)",
+      "published": "2026-11-13T04:11:30Z",
+      "description": "Windows や Excel から書き出した日本語 CSV は、UTF-8 ではなく CP932（Microsoft の Shift_JIS 拡張）であることがよくあります。Claude Code 2.1.322 にこの CSV を Read させると日本語が �（U+FFFD）に化け、Edit は拒否されます。スクリプトで読むなら encoding=&quot;cp932&quot; を指定し...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
     {
       "title": "平均 ST を出す時に、フライング・出遅れ・欠場をどう扱うか",
       "url": "https://zenn.dev/yutakacraft/articles/5bcd046a1fcc43",
