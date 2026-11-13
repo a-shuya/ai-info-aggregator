@@ -1,14 +1,54 @@
 {
   "site": "Zenn(LLM)",
-  "last_updated": "2026-11-12T22:39:07.417091",
-  "total_articles": 7373,
+  "last_updated": "2026-11-13T02:55:40.390177",
+  "total_articles": 7377,
   "articles": [
     {
-      "title": "Ollamaの長文推論を切り分ける：num_ctx・入力長・生成速度の比較方法",
-      "url": "https://zenn.dev/kas_blog/articles/20260917-ollama-long-context-troubleshooting",
+      "title": "別モデルにレビューさせる流れを仕組みにした",
+      "url": "https://zenn.dev/daimo0120/articles/b36d9873c59c7c",
       "site": "Zenn(LLM)",
-      "published": "2026-11-12T18:21:29Z",
-      "description": "Ollamaで長文を扱うとき、num_ctxを増やして遅くなったのか、実際の入力が増えて遅くなったのかは、分けて比較する必要があります。加えて、モデルの読み込みと入力キャッシュの条件が違うと、設定変更の効果を見誤ります。\nこの記事では、ローカルのOllamaへ1件ずつリクエストを送り、設定容量・実入力・処理時間を切り分ける比較方法を整理します。2026年9月17日に確認した公式資料に基づく技術メモ...",
+      "published": "2026-11-12T23:00:06Z",
+      "description": "llm-ivvy のまとめ\n\n はじめに\nこれまで「Claude が生成 → GPT が校正・提案 → Claude が最終修正」という流れを手作業で回していました。効果は感じていたので、これを仕組みにしたのが llm-ivvy です。あわせて、レビュアや裁定者を差し替えて効果を計測できるようにすることも目的にしています。\nこの記事では、なぜ別モデルでレビューするのか、全体の流れと役割分担、そして...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "AI に書類を整理させたら、書いていない学校名を作られた（推測させないプロンプト）",
+      "url": "https://zenn.dev/hiroyamayu/articles/ai-invented-school-name",
+      "site": "Zenn(LLM)",
+      "published": "2026-11-12T23:00:05Z",
+      "description": "わが家では、スキャンした学校のお便りや家の書類に、AI（Gemini）がタイトル・発信元・関係する子どものタグを付けています。\n仕組みを作り終えて通しの試験をしたとき、困ったことが見つかりました。本文に一文字も書かれていない学校名・病院名・日付・子どもの名前が、書類に付いていたのです。\nこの記事では、なぜそうなったのかと、プロンプトでどう止めたかを、作り物の書類で再現しながら紹介します。\n\n 再現...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "Tech Watch 2026-11-13: エージェントの経験と分業",
+      "url": "https://zenn.dev/laiken/articles/20261113-tech-watch",
+      "site": "Zenn(LLM)",
+      "published": "2026-11-12T22:35:10Z",
+      "description": "AIが書きました🤖\nこの記事は、AIが書いたものをAIがレビューしてから公開しています。\nL: 昨日直した不具合を、翌日のエージェントがまた最初から調べる。人のチームなら、同じ調査を繰り返さないように記録を残すはずだ。だが、記録を増やすだけで経験を引き継げるとも思わない。作業の何を残し、誰が使ってよいと判断するのだろう。\n\n 今日の 10 件\n\n\nChatGPT Plus for veterans...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "26Bモデルで長文対話と100 TPSを両立する最適化記録 — Prefill 80msの理論限界とGemini 3.8 Flashとの開発",
+      "url": "https://zenn.dev/kakuare/articles/445e06a0ddb388",
+      "site": "Zenn(LLM)",
+      "published": "2026-11-12T22:30:06Z",
+      "description": "はじめに: コンシューマーPCで「長文対話(1万tok)」と「100 TPS」を両立する難しさ\nローカル環境（特にコンシューマー向け 16GB VRAM 環境）で、数十〜数百ターンを超えるチャットやキャラクターAIを運用しようとすると、必ず以下の3つの技術的障壁に直面します。\n\n\nコンテキスト長とレイテンシのジレンマ: 会話が進んでコンテキストが 1万トークンを超えると、毎ターンのプロンプト評価（...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "LLM の出力を自動公開する前のバリデーション：形で落とす9つの関門",
+      "url": "https://zenn.dev/sakidori/articles/20261028-llm-output-validation-autopublish",
+      "site": "Zenn(LLM)",
+      "published": "2026-11-12T21:16:11Z",
+      "description": "LLM の出力を人の目を通さずに公開するなら、バリデーションは自動公開の受け取り口に置くしかありません。私は原稿を受け取るエンドポイントに9つの関門を並べ、条件に合わないものを保存せずに落としています。この記事は、その9つが何を見ているか、そして機械では絶対に落とせないものをどう扱ったかの記録です。\n\n この記事の対象読者\n\nLLM に書かせた文章を、レビューを挟まずに公開する仕組みを作っている方...",
       "category": "AI・技術",
       "rss_category": "",
       "image_url": ""
