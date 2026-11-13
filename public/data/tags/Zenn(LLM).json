@@ -1,8 +1,88 @@
 {
   "site": "Zenn(LLM)",
-  "last_updated": "2026-11-13T02:55:40.390177",
-  "total_articles": 7377,
+  "last_updated": "2026-11-13T10:43:23.364595",
+  "total_articles": 7385,
   "articles": [
+    {
+      "title": "APIの利用量と料金をPythonで確認する — response.usageからコストを概算する",
+      "url": "https://zenn.dev/salesanalytics/articles/7efc1d74900082",
+      "site": "Zenn(LLM)",
+      "published": "2026-11-13T05:48:29Z",
+      "description": "生成AI APIを実務で使い始めると、「この1回の呼び出しで、いくら使ったのか」が気になってきます。1回なら小さな金額でも、100店舗・毎日・複数回と積み上がれば、月額は大きくなります。\nこの記事では、response.usage からトークン数を取り出し、料金表を掛けて1回のコストを概算し、運用の回数へ広げる流れの要点をコンパクトにまとめます。結論は次の3つです。\n\n料金の9割以上は、「出力側」...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "小型LLMで選択的知識蒸留をやってみた",
+      "url": "https://zenn.dev/highreso/articles/1b00c38d595d66",
+      "site": "Zenn(LLM)",
+      "published": "2026-11-13T03:00:06Z",
+      "description": "前回はローカルLLMをファインチューニングする手法について紹介しました。\nhttps://zenn.dev/highreso/articles/60d81da79284c2\nベースモデルでは解けなかった問題ができるようになることは確認できましたが、データセットのテストデータに対しての改善は確認できませんでした。\nそのため今回は、前回の課題を解決するために、ファインチューニングの手法を見直したので、...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "ローカルLLMのエラー、実は原因が3種類しかない：OOM・モデルファイル・GPU未使用",
+      "url": "https://zenn.dev/harkbox/articles/a1c6c1c946367e",
+      "site": "Zenn(LLM)",
+      "published": "2026-11-13T02:50:53Z",
+      "description": "llama.cpp / Ollama / vLLM でよく見るエラーを、原因別に整理しました。\n\n 1. メモリ不足系\n\n\n\nエラー\n意味\n\n\n\n\nCUDA error: out of memory\n重み + KVキャッシュ + 計算バッファが空きVRAMを超えた\n\n\nunable to allocate CUDA0 buffer\n重みを置く場所が確保できない（ROCm0 / Vulkan0 / ...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "【さくらのAI】あの話って今どうなってる？　北海道議会の答弁を毎朝追いかけるサイトを作った",
+      "url": "https://zenn.dev/subara3/articles/cc71e76bddc7d7",
+      "site": "Zenn(LLM)",
+      "published": "2026-11-13T02:32:07Z",
+      "description": "「政治にも目を向けていかなきゃいけないなー……」、と思って、ためしに、身近なところからと思って、北海道議会の会議録（CC BYライセンス）をまとめてみることにしました。\nhttps://subara3.sakura.ne.jp/\n今回は、「検討します」と答えられた件について最終的にどうなったかを時系列順に並べています。\n\nたとえば、宿泊税の議論などですね。\n\n令和7年第2回の予算特別委員会で「使途...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "Agent-R²を読み解く：なぜ「完成したファイル」で学習するのか",
+      "url": "https://zenn.dev/ai_practitioner/articles/7252188c70cf7e",
+      "site": "Zenn(LLM)",
+      "published": "2026-11-13T01:02:05Z",
+      "description": "見栄えのよいPDFが生成された。指定された名前のExcelファイルも存在する。それでも、添付資料を読み違えたまま数値を書き込んでいれば、その仕事は終わっていない。\nファイルを作るAgentの評価では、「ファイルが存在する」と「業務上、使える成果物になっている」の間に大きな距離がある。2026年11月5日に公開された Agent-R² は、この距離を埋めるために、学習タスクの作り方と強化学習の報酬を...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "Stateful Tool Callingで、Agentは何を覚えるべきか",
+      "url": "https://zenn.dev/ai_practitioner/articles/9d9ccf5bcecd4b",
+      "site": "Zenn(LLM)",
+      "published": "2026-11-13T00:42:05Z",
+      "description": "Agentがツールを10回呼ぶとき、毎回の結果をLLMのコンテキストへ戻す必要はあるのだろうか。\nログやデータをそのまま返す方法は分かりやすいが、手順が長くなると中間結果が増え、モデルとの往復も多くなる。Programmatic Tool Calling（PTC）は、LLMがコードを書き、その中でツールをまとめて実行することで、この問題に対処する。[1]\n11月1日のI-PTC論文は、さらに一歩進...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "【検証】LLMにロト7をガチ予測させて億万長者になりたい！",
+      "url": "https://zenn.dev/aiforall/articles/acfa0c6bf3be2d",
+      "site": "Zenn(LLM)",
+      "published": "2026-11-13T00:35:21Z",
+      "description": "誰しも一度は宝くじで一攫千金を夢見たことがあるはず。\n「今の進化したAIを使ったら、もしかして宝くじ当てられるんじゃない…？」\nそんな私の純粋な欲望と知的好奇心から始まったのが本検証です。\nLLMの検証前に「統計分析」「ホット・コールド番号」「時系列ディープラーニング（LSTM）」を戦わせた結果、完全ランダムがぶっちぎりで全分析を薙ぎ払うという身も蓋もない現実を突きつけられました🥺\nしかし、今の時...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "最強オープンウェイトモデル Kimi-K3.1-Pro をセルフホストして独自ベンチで比べてみた",
+      "url": "https://zenn.dev/fixstars/articles/kimi-k31-pro-benchmark",
+      "site": "Zenn(LLM)",
+      "published": "2026-11-12T23:50:35Z",
+      "description": "Kimi-K3.1-Pro は、中国のベンチャー企業 Moonshot AI が開発したオープンウェイトの大規模言語モデルです。サイズは 2.8T-A104B と 2026/11/12 時点で公開されている主要なモデルでは最大、 Artificial Analysis v5 指標では 46 点であり二番手 (DeepSeek-V4.1-Flash-1017, 33 点) を大きく引き離しています。...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
     {
       "title": "別モデルにレビューさせる流れを仕組みにした",
       "url": "https://zenn.dev/daimo0120/articles/b36d9873c59c7c",

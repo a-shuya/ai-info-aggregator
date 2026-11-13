@@ -1,14 +1,44 @@
 {
   "site": "Zenn(Python)",
-  "last_updated": "2026-11-13T02:55:40.390177",
-  "total_articles": 7824,
+  "last_updated": "2026-11-13T10:43:23.364595",
+  "total_articles": 7828,
   "articles": [
     {
-      "title": "2. Web",
-      "url": "https://zenn.dev/bambampurin/articles/2026-09-26-tech-daily",
+      "title": "平均 ST を出す時に、フライング・出遅れ・欠場をどう扱うか",
+      "url": "https://zenn.dev/yutakacraft/articles/5bcd046a1fcc43",
       "site": "Zenn(Python)",
-      "published": "2026-11-13T01:16:08Z",
-      "description": "!\n本日（2026年9月26日）の技術トレンドでは、AIが単なる言語モデルから「自律型エージェント」へと移行する中で生じる成果と安全保障上の重大懸念が焦点となっています。OpenAIによるGPT-6 Sol/Lunaの発表の一方で、米国政府サイトへの不適切なアクセスや国連安保理での議論などセキュリティ上の波紋が広がっています。また、Web開発領域ではNext.jsのImageResponseにおけ...",
+      "published": "2026-11-13T03:46:50Z",
+      "description": "個人で競艇(ボートレース)の予想アプリとデータのサイトを作っています。選手の「平均 ST」を自分で数え直そうとすると、ただ平均を取るだけでは済まない所がいくつかあります。今回は、フライング・出遅れ・欠場の 3 つをどう扱うかを、決め方の選択肢として並べます。\n\n 平均 ST の元になる数\nST(スタートタイミング)は、大時計が 0.00 を指してから、スタートラインを通過するまでの時間です。小数 ...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "Irodori-TTS・Qwen3-TTS・Fish Audio Drama 3 を速く動かす音声合成サーバー、sokutou を作った話",
+      "url": "https://zenn.dev/soyomi/articles/sokutou-tts-server",
+      "site": "Zenn(Python)",
+      "published": "2026-11-13T03:28:37Z",
+      "description": "Irodori-TTS、Qwen3-TTS、Fish Audio Drama 3 を NVIDIA の GPU で速く動かす音声合成サーバー、sokutou を作りました。OpenAI の音声 API にならった POST /v1/audio/speech に文を送ると、WAV が返ってきます。受け付ける項目はモデルごとに違います。\n\nリポジトリ: https://github.com/kosuk...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "[STD] AIに実装を任せるからこそ、守りは「仕組み」にした ── 個人開発のpublicリポジトリを最初からセキュアに作った記録",
+      "url": "https://zenn.dev/tsukimi_soba/articles/std-ai-dev-security-guardrails",
+      "site": "Zenn(Python)",
+      "published": "2026-11-13T03:01:44Z",
+      "description": "1. 概要\n配信の相棒を作りました。OBS の画面にメンダコがいて、話すと口パクし、盛り上がると弾み、黙ると話しかけてきます。「死んだ」と言えばしょんぼりし、「やったー」と言えば紙吹雪が舞います。……というのが想定している動きです。実際には反応にラグがあり、まだ想定どおりには動いていないところがあります。ここは今後直す予定です。\n\nリポジトリ：Tsukimi-0919/stream-buddy\n\n...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "Macで言語のバージョンだけをシンプルに切り替える仕組み",
+      "url": "https://zenn.dev/ash_moon_amber/articles/7bc0a07b9c5f7e",
+      "site": "Zenn(Python)",
+      "published": "2026-11-13T02:07:36Z",
+      "description": "mise（ミーズ）\n「mise」ならNode.jsもPythonもフォルダ別で異なるバージョンを管理できる。\n\n インストール\nbrew install mise\n\n ターミナルで自動切り替えを有効にする\necho 'eval &quot;$(mise activate zsh)&quot;' &gt;&gt; ~/.zshrc\nsource ~/.zshrc\nバージョン確認\nmise --ver...",
       "category": "開発",
       "rss_category": "",
       "image_url": ""
@@ -19,16 +49,6 @@
       "site": "Zenn(Python)",
       "published": "2026-11-13T00:51:35Z",
       "description": "iPhoneアプリを一人で作っている Atsushi です。瞑想アプリ「呼吸のじかん」の案内の声は、AI の音声生成（Google Cloud Text-to-Speech の Gemini-TTS）で作り、音声のファイルとしてアプリに入れています。\n「はじめます」「吸って」「吐いて」のような短い声を、4人の声 × 日本語と英語で用意します。そのまま入れると、声ごとに速さ・前後の無音・音量がばらば...",
-      "category": "開発",
-      "rss_category": "",
-      "image_url": ""
-    },
-    {
-      "title": "【検証】LLMにロト7をガチ予測させて億万長者になりたい！",
-      "url": "https://zenn.dev/aiforall/articles/acfa0c6bf3be2d",
-      "site": "Zenn(Python)",
-      "published": "2026-11-13T00:35:21Z",
-      "description": "誰しも一度は宝くじで一攫千金を夢見たことがあるはず。\n「今の進化したAIを使ったら、もしかして宝くじ当てられるんじゃない…？」\nそんな私の純粋な欲望と知的好奇心から始まったのが本検証です。\nLLMの検証前に「統計分析」「ホット・コールド番号」「時系列ディープラーニング（LSTM）」を戦わせた結果、完全ランダムがぶっちぎりで全分析を薙ぎ払うという身も蓋もない現実を突きつけられました🥺\nしかし、今の時...",
       "category": "開発",
       "rss_category": "",
       "image_url": ""
@@ -79,6 +99,26 @@
       "site": "Zenn(Python)",
       "published": "2026-11-12T15:26:39Z",
       "description": "取引先の登録番号(適格請求書発行事業者の T から始まる番号)が、取消・失効していないかを確かめる道具「取引先インボイス見張り」を作りました。前の記事では Python の本体と国税庁の公表データの決まりを書きました。この記事は別の切り口で、取引先の一覧という見せたくない表を、どこにも送らずにブラウザだけで照らすための作りを書きます。税務の助言ではありません。\nhttps://github.com...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "日常写真から公的証明写真を自作するAIエージェントスキルを作った：スーツ着せ替えとコンビニ印刷まで一発完結",
+      "url": "https://zenn.dev/lumichy/articles/id-photo-studio-ai-agent-skill-2026",
+      "site": "Zenn(Python)",
+      "published": "2026-11-12T15:04:41Z",
+      "description": "転職の履歴書、パスポートの更新、運転免許証、マイナンバーカード——。\n数年に一度、あるいは急な手続きで「証明写真」が必要になるたびに、街中の証明写真機（ボックス）や写真館を探し回った経験はないでしょうか。\n「スマホのカメラも綺麗だし、家で自撮りして安く済ませよう」と思い立っても、いざ自力で撮ってみると壁の影が落ちる、部屋の照明で肌が暗い、目線や頭が微妙に傾く、そもそもスーツを着ていない……。さらに...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "Decision Model「Clef-Omni」を試してみる：Colabで日本語の留守番電話から最後の意向を判断する",
+      "url": "https://zenn.dev/nakanishitf/articles/be1556b7254484",
+      "site": "Zenn(Python)",
+      "published": "2026-11-12T14:43:03Z",
+      "description": "画像の次は、日本語の音声を判断させてみる\n以前の記事では、CloudflareのClefを使って、画像の中に猫がいるかを判定しました。\n今回は、音声も入力できる Clef-Omni を使ってみます。\n題材は、予約についての留守番電話です。\n「キャンセルしてください」だけなら、何をしてほしいかは比較的わかりやすいと思います。\nしかし、「キャンセルしたいと思ったのですが、やっぱり、そのままでお願いしま...",
       "category": "開発",
       "rss_category": "",
       "image_url": ""

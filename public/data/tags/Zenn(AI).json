@@ -1,8 +1,208 @@
 {
   "site": "Zenn(AI)",
-  "last_updated": "2026-11-13T02:55:40.390177",
-  "total_articles": 15996,
+  "last_updated": "2026-11-13T10:43:23.364595",
+  "total_articles": 16012,
   "articles": [
+    {
+      "title": "組み込みLinux×Edge AI: WasmEdgeとONNX Runtimeで実現する安全な「動的AI前処理プラグイン」アーキテクチャ",
+      "url": "https://zenn.dev/esperanza/articles/auto-20261112-095106",
+      "site": "Zenn(AI)",
+      "published": "2026-11-13T05:08:42Z",
+      "description": "1. はじめに：エッジAI開発現場の「泥臭い課題」\nエッジAI機器（カメラ、車載デバイス、産業用センサー端末など）の開発では、推論モデルそのものよりも**「モデル前後のデータ前処理・後処理ロジックの変更」**が最も運用コストを高める要因になります。\n\n\n課題1: OTAアップデートの巨大化\n前処理フィルタ処理をネイティブC++アプリケーションに組み込んでいると、ロジック変更のたびにシステム全体のフ...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "5年後のエンジニアは、何に責任を持つのだろうか",
+      "url": "https://zenn.dev/ara_ta3/articles/thinking-about-engineers-five-years-from-now",
+      "site": "Zenn(AI)",
+      "published": "2026-11-13T05:03:44Z",
+      "description": "はじめに\n最近は、AI Agentを使ってコードを書くことが日常になりました。その一方で、自分で直接コードを書く頻度は本当に減ったと感じています。何年もかけて少しずつ変わったというより、ここ2年も経たないうちの変化です。\n今や新しいモデルが出るたびに、Artificial Analysisのグラフを眺めています。少し前まで十分良いと思っていた性能を上回りつつ、速度も出て、コストとのバランスも良いの...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "Android の Codex CLI を bionic ELF 直接実行で動かす",
+      "url": "https://zenn.dev/ryoitabashi/articles/2026-11-13-dev-ja",
+      "site": "Zenn(AI)",
+      "published": "2026-11-13T04:42:33Z",
+      "description": "画像は AI 生成のイメージです\nShelly の bug #76 では、上流の codex バイナリが ET_EXEC（musl、static）であり、SELinux のため Android 14+ では実行できないことが記録された。Shelly はこの問題に対し、termux fork である codex-termux の Android ネイティブバイナリ（ET_DYN、bionic リンク...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "AIの表情差分は結局1枚ずつ作るほうが早い？一括生成と修正の手間を徹底検証",
+      "url": "https://zenn.dev/satofun/articles/e31f8672a4a5f3",
+      "site": "Zenn(AI)",
+      "published": "2026-11-13T04:41:06Z",
+      "description": "AIで同じキャラクターの表情差分を作るなら、6種類をまとめて生成する方法と、1枚ずつ編集する方法のどちらが効率的なのでしょうか。\n一括生成なら少ない操作で複数の表情をそろえられます。しかし、完成したシートの一部を修正すると、変更したくない表情まで変化してしまうことがあります。\nそこで今回は、PixAIの最新画像生成モデル「Tsubaki.3」を使い、同じオリジナルキャラクターで「通常・笑顔・怒り・...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "Claude Code で日本語 CSV が文字化けする：CP932 は Read で化け、Edit と Write は拒否される",
+      "url": "https://zenn.dev/agentkiyaku/articles/8f4e4c0facd812",
+      "site": "Zenn(AI)",
+      "published": "2026-11-13T04:11:30Z",
+      "description": "Windows や Excel から書き出した日本語 CSV は、UTF-8 ではなく CP932（Microsoft の Shift_JIS 拡張）であることがよくあります。Claude Code 2.1.322 にこの CSV を Read させると日本語が �（U+FFFD）に化け、Edit は拒否されます。スクリプトで読むなら encoding=&quot;cp932&quot; を指定し...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "compactを重ねると指示を忘れるClaude Codeに、プロンプトを1つ足したら忘れなくなった。3回重ねても消えた指示は0件",
+      "url": "https://zenn.dev/murooka_az/articles/compact-loses-decisions-carry-user-words",
+      "site": "Zenn(AI)",
+      "published": "2026-11-13T04:07:29Z",
+      "description": "はじめに\nClaude Code で長い作業をしていると、会話が長くなったところで要約（compact）が入ります。要約のあと、少し前に決めたはずのことを Claude が覚えていない。もう一度説明する。次の要約で、また消える。\n人の手による設計作業が完全に抜け落ち、ある程度の要件から LLM が直接作り、作りながら直していく。私は、そんな未来を想定して、Claude Code を VS Code...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "Gemini Decision 1を実際に動かしてみた。54問中53問正解、速さは環境次第だった",
+      "url": "https://zenn.dev/shibatamago_dev/articles/gemini-decision-1-hands-on",
+      "site": "Zenn(AI)",
+      "published": "2026-11-13T03:44:08Z",
+      "description": "はじめに\n文章を書かないAI、Gemini Decision 1を実際に動かしてみました。\n前に3モデルを比べた記事では、発表資料の整理だけでした。今回はGemini Decision 1だけ、AI Studioの無料枠で11リクエスト・54問を投げてみました。JevとMicrosoftはまだ動かしていません。\nなお、速さの数字は自分のPC（Windows）で測ったものを中心に書いています。Mus...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "フィーチャーチームに配属された新卒エンジニアのAIに振り回されない「AI活用」",
+      "url": "https://zenn.dev/safie_inc/articles/b6fa3de06606be",
+      "site": "Zenn(AI)",
+      "published": "2026-11-13T03:00:05Z",
+      "description": "はじめに\nこんにちは、新卒4期生（2026年新卒）の武内です。光陰矢の如しとはよく言ったもので、4ヶ月の研修を経て実際の現場に配属されて、あっという間に3ヶ月(!?)が経とうとしています。\nこの記事では、配属から今日までを振り返りつつ、AIネイティブ世代？としてどのようにこの期間「AIを活用してキャッチアップや実際の業務を行ったか」を紹介できればと思っています。\n\n 初配属：フィーチャーチーム\n新...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "【pstack】AIに敵対的レビューをさせるな。トークンは検証に使え",
+      "url": "https://zenn.dev/karamage/articles/5c3f8370b2b370",
+      "site": "Zenn(AI)",
+      "published": "2026-11-13T02:48:24Z",
+      "description": "AIが書いたコードをマルチエージェントで多角的な視点で別のAIに容赦なく叩かせ、\nそれを何往復もループで繰り返せば品質は上がっていくはず。。。\n純粋無垢な私はずっと、そう信じていた頃がありました。\nところが、かなりトークンを注ぎ込んだPRからあっさり本番バグが出て、以下の問いにはじめて気づきました。\n\n問い: AI同士の敵対的レビューで、成果物は本当に信頼できるものになるのか?\n結論: なりません...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "Gemini 4 Hydrogen：移行ではまずパラメータを整理し、思考の深さを決める",
+      "url": "https://zenn.dev/twinklemodel/articles/c314aab3f77530",
+      "site": "Zenn(AI)",
+      "published": "2026-11-13T02:30:12Z",
+      "description": "要約：Gemini 4 Hydrogen は 2026 年 11 月 12 日に公開されました。筆者は、モデル名を変えるだけで使える「高速な Flash」として扱うべきではないと考えています。まず古いサンプリングパラメータ、thinking_budget、明示的キャッシュへの依存を取り除き、出力予算と長い出力の生成方法を確認します。そのうえで 4 段階の thinking level を評価し、要...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "SEO記事の数字を裏取りする手順 ― 一次情報の確認をどう回すか",
+      "url": "https://zenn.dev/ikesita/articles/02a8da5a357745",
+      "site": "Zenn(AI)",
+      "published": "2026-11-13T02:27:02Z",
+      "description": "はじめに\nAIに下書きを任せると、文章の体裁は速く整う。一方で、納品物の事故原因になりやすいのは文章の巧拙ではなく、もっともらしく書かれた数字の誤りである。料金、期間、割合、固有名詞の表記。いずれも文脈に溶け込んでいると、書き手も読み手も疑わずに通過してしまう。\n筆者はWebライターとして約13年、通信系（光回線・格安SIM）、マッチングアプリ、オンラインゲームといったジャンルのSEO記事を、すべ...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "Claude Code と Codex に話させたら、届いたのは返事ではなく画面の飾りだった",
+      "url": "https://zenn.dev/ciel_lab/articles/0948c1a232abe2",
+      "site": "Zenn(AI)",
+      "published": "2026-11-13T02:20:03Z",
+      "description": "3行まとめ\n\nClaude Code の窓と Codex の窓を、横に並べたまま直接話させる道を作った。1回目に届いたのは、Codex の返事ではなく画面の隅の案内文だった。\n原因は「返事をどこから読むか」だった。相手の控えを読む道が Claude Code の分しかなく、無いときは画面の末尾を読んでいた。同じ日のうちに直した。\nClaude Code の中から Codex を呼ぶ公式のプラグイン...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "1人のキャラクターを6つの新しい画風で描く：画像生成63回・$4.68のマスコット制作パイプライン",
+      "url": "https://zenn.dev/kensaurus/articles/a925025703bee8",
+      "site": "Zenn(AI)",
+      "published": "2026-11-13T02:17:12Z",
+      "description": "kensaurus は、私がひとりで運営しているアプリ工房です。11月13日、作っているアプリとサイトのうち7つに、同じマスコットを置くことにしました。モデルは私自身で、名前はケンジです。ただし絵柄は統一しません。タイ語学習ゲームではドット絵の仙人、哲学の本では木版画の月の読み手、家計簿では判子を押す帳簿係、という具合に、アプリごとの美術に合わせて描き分けます。\nこの記事は、その制作パイプラインの...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "「書き込みは提案、確定は人」——複数のコーディング Agent が同じチーム事実を引用する",
+      "url": "https://zenn.dev/ontoloop/articles/e3c1fe4c04e923",
+      "site": "Zenn(AI)",
+      "published": "2026-11-13T02:11:31Z",
+      "description": "この記事は Ontoloop 公式アカウントによる技術解説です。\nClaude Code や Codex をリモート MCP でつなぐ手順は、公開されている MCP ドキュメント（更新 2026-11-04）にまとまっています。この記事では、その先——Agent が書いた内容が、いつチームの事実になるのか、ほかの Agent はどう引用するのか、同僚から渡された仕事をどう返すのか——を扱います。\n...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "Claude Fable 5.2 徹底解説：ベンチマーク・料金・Opus 5.5 との比較",
+      "url": "https://zenn.dev/modelflare_dev/articles/837f26e9c36870",
+      "site": "Zenn(AI)",
+      "published": "2026-11-13T02:07:39Z",
+      "description": "この記事は Modelflare ブログ の英語記事を翻訳・再構成したものです。\nClaude Fable 5.2 の深い分析です。1M のコンテキスト、$8 / $40 の料金、Fable 5.1・Opus 5.5・GPT-6 Astra・Gemini 4 Carbon との公開ベンチマーク、タスクあたりのコスト、API の破壊的変更、そして Modelflare のルートを整理しています。\nC...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "情報は“発生源”と“完成品”に二極化する ― 伝達・まとめはAIの中間レポートへ",
+      "url": "https://zenn.dev/dotext/articles/585b07cc82e10f",
+      "site": "Zenn(AI)",
+      "published": "2026-11-13T01:56:25Z",
+      "description": "はじめに：「たまに人間が読む」を数字で確かめる\n以前の記事「AIが書き、AIが読み、たまに人が読む時代に、誰のために記事を書くのか」では、ネットの記事をめぐる構造をこう表現しました。\n\nAIが書き、AIが読み、たまに人間が読む。\n\nあれは書き手としての実感でした。今回は視点を一段引いて、情報そのものが今どう消費されているのかを、データで確かめてみます。\nそのうえで、次の仮説を立てます。\n\n情報は「...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "Claude Codeを記事づくりから外したら、出力トークンが約140分の1になった",
+      "url": "https://zenn.dev/kosukeozawa/articles/claude-code-only-for-code",
+      "site": "Zenn(AI)",
+      "published": "2026-11-13T01:46:18Z",
+      "description": "Claude Code に何でも任せていると、利用枠の減り方が読めなくなります。私の場合、毎日動く AI のルーティンが、サイトのコード修正だけでなく、記事の調査・執筆・図づくり・git 操作まで Claude Code に頼んでいました。\nそこで 2026年10月30日の午後から、Claude Code に頼むのは「サイトのコード・デザインの変更」と「セキュリティ修正」だけにして、書く仕事はほか...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "2. Web",
+      "url": "https://zenn.dev/bambampurin/articles/2026-09-26-tech-daily",
+      "site": "Zenn(AI)",
+      "published": "2026-11-13T01:16:08Z",
+      "description": "!\n本日（2026年9月26日）の技術トレンドでは、AIが単なる言語モデルから「自律型エージェント」へと移行する中で生じる成果と安全保障上の重大懸念が焦点となっています。OpenAIによるGPT-6 Sol/Lunaの発表の一方で、米国政府サイトへの不適切なアクセスや国連安保理での議論などセキュリティ上の波紋が広がっています。また、Web開発領域ではNext.jsのImageResponseにおけ...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "生成AIで作るLPの「AIっぽさ」を減らす指示の型｜参考サイトの分解とデザイン指定テンプレート",
+      "url": "https://zenn.dev/andyailab/articles/a6af91106ab664",
+      "site": "Zenn(AI)",
+      "published": "2026-11-13T01:15:55Z",
+      "description": "「おしゃれなLPを作って」と頼んだのに、出てきたのは見覚えのある青いグラデーション。\nボタンは丸く、絵文字のアイコンが並ぶ。どこかで見た構成です。画像はテカテカして、人物は海外の雑誌モデルのよう。見出しの漢字が、日本語なのに少し形が違う。\nこの「AIっぽさ」は、センスの問題ではありません。多くは指示の情報量が足りないことから起きます。AIは、指定されなかった部分を「よくある平均値」で埋めます。平均...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "FHマクロのユニットマクロで計測結果を画面に出す——表示用のラベルとDrawText、位置一覧表示がONだと動かない処理",
+      "url": "https://zenn.dev/kensho_ya/articles/fh-macro-unit-macro-drawtext-display",
+      "site": "Zenn(AI)",
+      "published": "2026-11-13T01:08:43Z",
+      "description": "以前の記事で、FHマクロのSetUnitDataでしきい値を書き換える前に確かめることを整理した。そこでは計測実行とプログラム初期化のラベルにしか触れていない。この記事では、計測した値を画面に出す側を扱う。\n元にしているのは、FHマクロ用に作ったスキル（fh-macro）の「表示（ユニットマクロ）」と「サブルーチン（処理イベント）と実行タイミング」の節だ。スキルの関数名・書式・制約は、SDNB-7...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
     {
       "title": "AIのセルフレビューはなぜバグを見逃すのか？「自己レビュー」vs「敵対的レビュアー（Maker-Checker）」実機A/B検証",
       "url": "https://zenn.dev/tappers/articles/ai-labo-e10-adversarial-critic",
@@ -34,26 +234,6 @@
       "image_url": ""
     },
     {
-      "title": "AIの見張りは、決まりを知らずに鳴っていた —— 日付が変わった直後に「投稿が足りない」と鳴った話",
-      "url": "https://zenn.dev/ai_shihan/articles/c2df4982b341b8",
-      "site": "Zenn(AI)",
-      "published": "2026-11-12T17:49:46Z",
-      "description": "X の投稿は、AI の席（広報部）に任せています。投稿するかどうかは、別の見張りが 30 分ごとに調べて、席に知らせる作りです。この見張りが、決まりを知らないまま鳴っていた、という話を書きます。\n\n 決まりは文書にあった\n投稿の時刻には、決まりがあります。X は日本時間の 9:05・12:05・21:05 の 3 つの枠だけで出す。0 時台や 15 時台、18 時台には出さない。投稿の直後の 2 ...",
-      "category": "AI・技術",
-      "rss_category": "",
-      "image_url": ""
-    },
-    {
-      "title": "【小学5年生でもわかる】AIプロジェクト管理ってなに？",
-      "url": "https://zenn.dev/tkrndisk/articles/g-kentei-ai-project-management-kids",
-      "site": "Zenn(AI)",
-      "published": "2026-11-12T17:43:10Z",
-      "description": "AIプロジェクトの進め方 とは\nAIプロジェクトをビジネスの視点で進める方法について学びます。\nAIプロジェクトの進め方 は、技術的な開発だけでなく、ビジネス目標の達成を視点とした管理です。\n\n 成功するAIプロジェクトの特徴\n\n\n明確なビジネス目標 ：何を成し遂げるのか\n\n適切なスコープ ：現実的な規模と期間\n\nステークホルダー管理 ：関係者との合意形成\n\nリスク対策 ：失敗時の対応策\n\n\n 日...",
-      "category": "AI・技術",
-      "rss_category": "",
-      "image_url": ""
-    },
-    {
       "title": "AIで実装しやすくなった今、何を作るかを考える",
       "url": "https://zenn.dev/toriumi0118/articles/pluck-ai-ideas-and-decisions",
       "site": "Zenn(AI)",
@@ -69,26 +249,6 @@
       "site": "Zenn(AI)",
       "published": "2026-11-12T15:49:39Z",
       "description": "最近のPersonal Agentを触っていると、OpenClawを試していた頃の感覚が少し戻ってきます。\nとくにGrok BotからAgentを動かしていると、いろいろなAIツールで繰り返し出会う問題があります。\nAIは、人間のチームの仕事の進め方に合わせて、自分のタスクを組み立てがちです。\nたとえば、Agentにプロジェクトの計画を立ててもらうと、こんなスケジュールが出てきます。\n\n1週目に要...",
-      "category": "AI・技術",
-      "rss_category": "",
-      "image_url": ""
-    },
-    {
-      "title": "日常写真から公的証明写真を自作するAIエージェントスキルを作った：スーツ着せ替えとコンビニ印刷まで一発完結",
-      "url": "https://zenn.dev/lumichy/articles/id-photo-studio-ai-agent-skill-2026",
-      "site": "Zenn(AI)",
-      "published": "2026-11-12T15:04:41Z",
-      "description": "転職の履歴書、パスポートの更新、運転免許証、マイナンバーカード——。\n数年に一度、あるいは急な手続きで「証明写真」が必要になるたびに、街中の証明写真機（ボックス）や写真館を探し回った経験はないでしょうか。\n「スマホのカメラも綺麗だし、家で自撮りして安く済ませよう」と思い立っても、いざ自力で撮ってみると壁の影が落ちる、部屋の照明で肌が暗い、目線や頭が微妙に傾く、そもそもスーツを着ていない……。さらに...",
-      "category": "AI・技術",
-      "rss_category": "",
-      "image_url": ""
-    },
-    {
-      "title": "Decision Model「Clef-Omni」を試してみる：Colabで日本語の留守番電話から最後の意向を判断する",
-      "url": "https://zenn.dev/nakanishitf/articles/be1556b7254484",
-      "site": "Zenn(AI)",
-      "published": "2026-11-12T14:43:03Z",
-      "description": "画像の次は、日本語の音声を判断させてみる\n以前の記事では、CloudflareのClefを使って、画像の中に猫がいるかを判定しました。\n今回は、音声も入力できる Clef-Omni を使ってみます。\n題材は、予約についての留守番電話です。\n「キャンセルしてください」だけなら、何をしてほしいかは比較的わかりやすいと思います。\nしかし、「キャンセルしたいと思ったのですが、やっぱり、そのままでお願いしま...",
       "category": "AI・技術",
       "rss_category": "",
       "image_url": ""
