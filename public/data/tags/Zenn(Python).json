@@ -1,8 +1,188 @@
 {
   "site": "Zenn(Python)",
-  "last_updated": "2026-11-14T03:33:05.798485",
-  "total_articles": 7841,
+  "last_updated": "2026-11-14T10:55:33.587999",
+  "total_articles": 7859,
   "articles": [
+    {
+      "title": "「プロンプト改善一辺倒」から脱却！AIの中身を理解して「精度改善」にコミットするエンジニアへ：RAGの失敗診断から学ぶ実務の基本",
+      "url": "https://zenn.dev/akisayo/articles/ai-engineering-rag-debugging-guide",
+      "site": "Zenn(Python)",
+      "published": "2026-11-14T10:24:50Z",
+      "description": "OpenAI APIを呼び出し、LangChainでRAGを組み立てる。今ではAIコーディングエージェントの助けを借りれば、こうしたアプリケーションは比較的短時間で作れます。\nでは、実際に運用してみて**「回答精度が期待ほど出ない」**と言われたら、どこから直すべきでしょうか？\nプロンプトを変更する？ Temperatureを下げる？ Retrieverを変える？ Rerankerを追加する？\nこ...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "最初からスパルタ vs できたら厳しく：歩行ロボットを15体強化学習させたら、一番厳しい練習をしていない方が強かった",
+      "url": "https://zenn.dev/yuya26_ai/articles/977266db42ea8e",
+      "site": "Zenn(Python)",
+      "published": "2026-11-14T10:22:00Z",
+      "description": "2本足の歩行ロボットを強化学習で鍛えるとき、練習の厳しさをどう上げていくかだけを変えて、15体を学習させました。\n\n\nスパ:最初から一番厳しい練習場\n\nジワ:時間とともに少しずつ厳しくする\n\nデキ:できるようになったら厳しくする\n\n結果は、一番厳しい練習を一度もしていないデキが、6つのテストすべてで一番でした。体重1.5倍のテストでは、スパ0.4%に対してデキ51%です。\nこの記事では、設定・コー...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "フィジカルAI入門:2本足ロボットを強化学習で鍛えて、研究として正しく評価する",
+      "url": "https://zenn.dev/yuya26_ai/books/4905ffb6271e17",
+      "site": "Zenn(Python)",
+      "published": "2026-11-14T10:21:26Z",
+      "description": "MuJoCoのWalker2dを強化学習(PPO)で学習させ、「押さない・押す・もっと押す」の3通りの育て方(ドメインランダム化)を5体ずつ比べた実験を題材に、環境構築から評価の統計(IQM・信頼区間)までを研究に使える形で解説します。後半では、カリキュラム学習・敵対的RL・模倣学習(BC/DAgger)・教師-生徒学習を小さな実験で確かめ、手法の地図、VLA、Sim2Realまで扱います。コード...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "問い合わせ対応AIチャットのRAG設計：引用つき回答・「分からない」判定・有人エスカレーション",
+      "url": "https://zenn.dev/ai_sns_io/articles/aa37d3cea95c6c",
+      "site": "Zenn(Python)",
+      "published": "2026-11-14T10:21:09Z",
+      "description": "問い合わせ対応にLLMを使うとき、いちばんの事故は「それらしい嘘」です。社内資料にない返品条件や料金を、AIが自信満々に答えてしまう。これを防ぐ定番がRAG（Retrieval-Augmented Generation）ですが、検索してプロンプトに貼るだけでは不十分です。\n本記事では、問い合わせ対応に特化したRAGの設計を、引用・「分からない」判定・有人エスカレーションの3点に絞って紹介します。\n...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "LLMの話者分離は「声」を聞いているのか？ 一人で全員を演じる落語で確かめた",
+      "url": "https://zenn.dev/nekoai_lab/articles/llm-diarization-rakugo-voice-or-context",
+      "site": "Zenn(Python)",
+      "published": "2026-11-14T09:45:46Z",
+      "description": "音声LLMに「声だけで話者を分けて」と頼んでも、実際には台詞の中身から分けているらしい。一人の落語家が演じ分けた1936年の録音で確かめると、音だけを使う専用エンジンは「一人」と判定した。一方、思考を多めに使ったGeminiだけが、声の高さがほぼ同じ二人の役も80〜94%の純度で分けた。\nきっかけは、コールセンターなどで使われる話者分離ツールが気になったことだ。同意の確認や「言った・言わない」の記...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "小さいLLMの答えを辞書で確かめる「TADORI」は、どこで効いて、どこで効かないか（E16〜E20）",
+      "url": "https://zenn.dev/mst_design2020/articles/45f9359416b8e5",
+      "site": "Zenn(Python)",
+      "published": "2026-11-14T09:43:26Z",
+      "description": "この連載では、小さな言葉のAI（Gemma-2 2B）を「口」として使い、その答えを AI の外に置いた部品で確かめられるかを、1つずつ試してきました。将来はこの「確かめる計算」を p-bit のような物理の部品に任せる、AKANE アーキテクチャという構想の部品の研究です。\n前回、E2〜E15 で最後まで残った確かめ方を TADORI（たどり） と名付けました。辞書（Wiktionary）の説明...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "Claude の定期タスクで複数の事業を回す【部品とひな形付き】",
+      "url": "https://zenn.dev/neuralalpha/books/claude-scheduled-ops-kit",
+      "site": "Zenn(Python)",
+      "published": "2026-11-14T09:17:45Z",
+      "description": "『Claude の定期タスクで複数の事業を回す』（¥1,000）の全章に、そのまま使える部品7つ（書き込み台帳・売上台帳・本人対応アラート・自動確認・回数の上限・タスク監視・安全な追記）とひな形（台帳・重要ルール・タスクの文面）をコードごと付けた上位版です。標準ライブラリだけの Python、テスト17件。はじめにと上位版の使い方は無料。",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "サイコパス診断をスマホから公開した ― WordPressの新ページ公開をREST化して承認3回にした設計",
+      "url": "https://zenn.dev/5naokichi/articles/psychopath-shindan-publish-kit",
+      "site": "Zenn(Python)",
+      "published": "2026-11-14T09:01:58Z",
+      "description": "はじめに\n15問でサイコパス度と6つのタイプがわかる サイコパス診断 を公開しました。\nhttps://hone-gumi.com/psychopath-shindan/\nこの診断は、テーマ選びから公開まで、スマホのクラウド版 Claude Code だけで進めました。手元のPCは使っていません。\n以前は、新しいツールを1本出すたびに、SSHでサーバーに入る、WordPressの管理画面でページを...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "SEC EDGARから決算資料を自動で集める：403で弾かれない取り方と、8-K・6-Kの見分け方",
+      "url": "https://zenn.dev/deke_pearson700/articles/f14c41b05c2bf8",
+      "site": "Zenn(Python)",
+      "published": "2026-11-14T08:29:55Z",
+      "description": "現在、新しい取り組みとして米国株の決算を追うために、決算が出たら資料と数字を自動で集めてくる仕組みを作っている。\nその入口になるのが米国 SEC の開示システム EDGAR なのだが、API はキーなしで使えて便利な一方でいくつかつまずいた。\n最初の1回目から403で弾かれたり、同じ日に何本も出る書類のどれが決算なのか分からなかったりしたので、ここに整理しておく。\n\n この記事で分かること\n\nSE...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "セットアップ手順を記憶で書こうとしてソースを読みに行ったら、3か所違っていた",
+      "url": "https://zenn.dev/horibe/articles/setup-steps-from-source-not-memory",
+      "site": "Zenn(Python)",
+      "published": "2026-11-14T06:00:14Z",
+      "description": "TOEICの学習アプリに「自分の声のまま、正しい発音のお手本を聞く」機能を入れようとしている。\n評価の物差し（似かた×発音の2軸）は先に作ってあるので、次は実際に1本作って測る段。\n使うのは OpenVoice V2 ＋ MeloTTS。手順を Colab のノートブックにまとめた。\nこの記事は、その手順を書くときに踏んだことの記録。中身は3つある。\n\n物差しを作っても出口が無ければ1ミリも進まな...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "ムーアの法則をPythonで可視化する｜「指数関数的成長」を回帰で確かめる",
+      "url": "https://zenn.dev/maru1228/articles/semiconductor-moores-law-python",
+      "site": "Zenn(Python)",
+      "published": "2026-11-14T05:35:12Z",
+      "description": "!\nこの記事は自サイト ムーアの法則をPythonで可視化する｜「指数関数的成長」を回帰で確かめる の再掲（クロス投稿）です。図をインタラクティブに動かせる版は元記事でどうぞ。\n\n「トランジスタ数は約2年で倍になる」——半導体の進歩を象徴するムーアの法則です。でも本当に倍増しているのか？ この記事では代表的なプロセッサのトランジスタ数を実データとして、Pythonの回帰で「何年で倍になっているか」...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "Windows で AI に開発させてつまずいたこと:Git Bash・改行・文字コード・PowerShell 5.1",
+      "url": "https://zenn.dev/k_iijima/articles/dddfb73b08564c",
+      "site": "Zenn(Python)",
+      "published": "2026-11-14T04:50:04Z",
+      "description": "はじめに\n私は、小さな事業者むけの業務ソフトを一人で作っています。開発は AI エージェント(Claude Code)にまかせています。\n開発に使っているのは Windows の PC です。AI のコードを動かす場所は、Linux のコンテナと Windows の両方があります。この組み合わせで、Linux では起きない落とし穴に何度も当たりました。\nこの記事では、その中から 6 つを書きます。...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "Claude Codeの定期タスクを、複数のPCで二重に動かさない仕組み",
+      "url": "https://zenn.dev/kano_shinichiro/articles/351f96a53b4cd1",
+      "site": "Zenn(Python)",
+      "published": "2026-11-14T04:03:04Z",
+      "description": "自宅のデスクトップ1台とノートPC2台で、Claude Code（デスクトップアプリ）の定期タスクを動かしています。毎朝の集計、平日夜の投信の評価、毎月のバックアップなど、10本ほどです。ClaudeのworkフォルダはGoogle Drive上に作り、これを各PCから参照させています。\nどのPCを開いていても定期タスクが動くようにしたところ、今度は3台が同じ時刻に同じタスクを動かし、同じ報告が3...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "エンジニア視点で語る！Pythonで学ぶマクロ経済学入門 89",
+      "url": "https://zenn.dev/maszkot/articles/447fa42273358b",
+      "site": "Zenn(Python)",
+      "published": "2026-11-14T03:01:54Z",
+      "description": "https://qiita.com/maskot1977/items/d01ec530f959322082f4\nDJミオ：こんばんは！ラジオ教育番組「エンジニア視点で語る！Pythonで学ぶマクロ経済学入門」、今夜のテーマは――\n**「負担は誰が払い、利益は誰が得るのか？― 中間層・人材育成・移民政策を構造から考える」**です。\nDJレン：よろしくお願いします。今回はかなり大事な回だね。単に「移民...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "なぜ今、Rustが注目されるのか：言語の歴史、Pythonとの関係、AI基盤の事例から",
+      "url": "https://zenn.dev/kentaro36/articles/why-rust-is-getting-attention",
+      "site": "Zenn(Python)",
+      "published": "2026-11-14T01:37:39Z",
+      "description": "なぜ今、Rustが注目されるのか：言語の歴史、Pythonとの関係、AI基盤の事例から\n\n調査日：2026年11月11日\n\n 1. はじめに\nRustと聞くと、CやC++に代わる言語という印象があるかもしれません。実際、OSやブラウザーなど、速さと細かな資源管理が求められる分野で使われています。\nただ、最近のRustの役割はそれだけではありません。Pythonで作られたサービスの一部をRustに置...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "ChatGPT API、キーを取ったあと最初に書く1本 — 会話が続くチャットを Responses API で作る",
+      "url": "https://zenn.dev/api_labo_jp/articles/cf3c59a83f4e34",
+      "site": "Zenn(Python)",
+      "published": "2026-11-14T01:23:39Z",
+      "description": "APIキーを取ったのに、そこから先に進めていない。そんな方へ。\n公式ドキュメントを読んでも「自分の仕事にどう使うか」が見えない、古い書き方の記事ばかりで今の推奨のやり方が分からない——そんな状態から抜けるには、動く1本を手元に置くのが一番早いです。\nこの記事では、会話が続くCLIチャットの基本形を、動くコード付きで紹介します。新規開発で推奨されている Responses API を使います。\n\n ...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "毎時の「連絡係」セッションで、複数の Claude セッションをつなぐ",
+      "url": "https://zenn.dev/neuralalpha/articles/hourly-relay-sessions",
+      "site": "Zenn(Python)",
+      "published": "2026-11-14T01:05:48Z",
+      "description": "はじめに\n担当ごとに Claude のセッションを立てると、すぐに困ることがあります。セッションどうしが話せないことです。報告は日に1回の確認でしか全体に届かず、「デザイン担当からブログ担当へ、この画像を使ってほしい」といった横の連絡は、自分が手で運ぶことになります。\nこの記事では、毎時に動く連絡係のセッションを1つ置き、次の3つを任せる構成を紹介します。\n\n担当の新しい返事を読み、報告行を台帳に...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "Claude Codeに縦のショートを作らせたら、検査は全部合格なのに字幕が5か所おかしかった",
+      "url": "https://zenn.dev/kirinukiauto/articles/b031c8dba3cea7",
+      "site": "Zenn(Python)",
+      "published": "2026-11-14T01:00:17Z",
+      "description": "長い動画を渡すと、山場を選んで縦のショート（1080×1920・字幕つき）にする道具を、Claude Code に作らせました。私はプログラムを書けないので、コードは読んでいません。\n道具には、出来上がりを測る検査も入れました。大きさが 1080×1920 か、長さが15〜180秒か、音があるか、音の大きさが -30〜-10dB の間か、です。\n首相官邸の会見（約15分）から3本作ると、検査は3本...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
     {
       "title": "AWS Emulator を CI に入れてええか判断する。S3・SQS・DynamoDB は通ったが IAM と Lambda は境界あり",
       "url": "https://zenn.dev/nabeyan_dev/articles/fsfn-aws-emulator-github-actions",

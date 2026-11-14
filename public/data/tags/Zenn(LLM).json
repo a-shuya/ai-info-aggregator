@@ -1,8 +1,158 @@
 {
   "site": "Zenn(LLM)",
-  "last_updated": "2026-11-14T03:33:05.798485",
-  "total_articles": 7393,
+  "last_updated": "2026-11-14T10:55:33.587999",
+  "total_articles": 7408,
   "articles": [
+    {
+      "title": "ローカルQwenを作業者に、クラウドを監督役に。ゲームデータ解析で実践したハイブリッドLLM構成",
+      "url": "https://zenn.dev/keyt/articles/2b3754201a9c27",
+      "site": "Zenn(LLM)",
+      "published": "2026-11-14T05:55:32Z",
+      "description": "はじめに\nゲームの内部データ（データベースファイル）を解析する支援ツール「REA Analyzer Studio」を個人開発しています。\nこのツールの実行構成は、最初から最後まで1つのモデルに任せる形ではありません。\n\n\n作業者：ローカルPCで動く Qwen（LM Studio 経由）\n\n監督役：クラウド側の Codex / Claude\n\nという「ハイブリッド構成」にしています。本記事では、なぜ...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "Codex モデルを OpenAI・Anthropic 互換 API で中継するとき、プロンプトキャッシュを効かせる方法",
+      "url": "https://zenn.dev/llamport/articles/1ad6fb9cde1578",
+      "site": "Zenn(LLM)",
+      "published": "2026-11-14T03:08:12Z",
+      "description": "Codex モデルを OpenAI 互換 API と Anthropic 互換 API の両方で提供する LLM API（llamport）を運用しています。この記事では、その中で一番コストに効いた「プロンプトキャッシュをどう効かせるか」と、途中で踏んだ 400 エラーについて書きます。\n\n 1 つのキー、3 つの API 形式\nツールごとに話す API が違います。\n\n\n\nツール\nAPI 形式\n...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "LLMエージェント基盤のシステム設計 #5 評価と可観測性（トレース・トークンコスト・レイテンシ・回答品質）",
+      "url": "https://zenn.dev/acntechjp/articles/65d4a761a5a67e",
+      "site": "Zenn(LLM)",
+      "published": "2026-11-14T02:23:03Z",
+      "description": "!\nこの記事は連載「LLMエージェント基盤のシステム設計」（全5回）の最終回です。\n\nエージェントランタイム（Harness）\nコンテキスト管理\nツール実行\n信頼性\n\n評価と可観測性 ← この記事\n\n各回とも「要件 → 規模の見積もり → 全体設計 → 詳細設計 → 運用と発展」の順に説明します。文中の規模や性能の数値は、設計を検討するための仮の値です。実測値ではありません。標準仕様の状況は、20...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "Kaggle：RSNA Knee Abnormality Detection振り返り",
+      "url": "https://zenn.dev/rikutw/articles/ab14fa9ad56909",
+      "site": "Zenn(LLM)",
+      "published": "2026-11-14T01:16:50Z",
+      "description": "1. コンペの概要\n膝のMRI画像から12種の所見を予測するCode Competitionです。学習データはStudy単位で4,407件あり、各Studyにはスライス単位のDICOM画像と、Study単位の読影レポートが含まれます（レポートは学習データのみ）。正解ラベルがあるのはそのうち58件のみというのが特徴的です。評価指標はmacro AUCです。\nhttps://www.kaggle.co...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "GPUのないノートPCで8BのLLMを動かし、見守りロボットにした。ローカルとクラウドの役割分担の実際",
+      "url": "https://zenn.dev/xzero_001/articles/6c84c888cbcf3c",
+      "site": "Zenn(LLM)",
+      "published": "2026-11-14T01:04:50Z",
+      "description": "はじめに\n福岡県香春町で、介護の見守りロボット「零号機（ぜろごうき）」を一人で作っています。ぬいぐるみの猿のパペットと木の箱でできたロボットで、利用者さんと日本語で話し、血圧や体温を測り、困ったときは職員さんに知らせます。\nこの記事では、GPUを積んでいない普通のノートPCで 8B のLLMを動かし、ローカルとクラウドをどう分担させているかを、実際のログの数字で紹介します。\n先に結論を書くと、こう...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "Ollamaで780Mを使おうとCUDA_VISIBLE_DEVICES=-1にしたら、RTX 3060がVulkanで動いていた",
+      "url": "https://zenn.dev/eight_blog/articles/4b4376814c76d7",
+      "site": "Zenn(LLM)",
+      "published": "2026-11-14T00:28:36Z",
+      "description": "Windows で Ollama 0.40.16 を、内蔵GPUの Radeon 780M で動かそうとしました。NVIDIA を隠す定番の CUDA_VISIBLE_DEVICES=-1 を付けたのに、書く速さは 45.8 tok/s と高いままでした。ログを見ると、隠したはずの RTX 3060 が Vulkan という別の入り口から使われていました。780M で実際に動かすには、環境変数が3...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "AIに「実行失敗」と表示されたら、なぜそのまま再試行してはいけないのか？",
+      "url": "https://zenn.dev/weiyi/articles/blog-022c68d7eba0f6a3",
+      "site": "Zenn(LLM)",
+      "published": "2026-11-13T23:43:43Z",
+      "description": "AIに記事の保存を頼み、しばらく待つと、画面に「リクエストがタイムアウトしました」と表示されました。あなたはそのまま「もう一度試して」と返します。\n2回目は順調に終わりました。しかし管理画面を開くと、同じ内容の下書きが2件できています。\nこれは仮定の場面ですが、実際の技術的な問題に対応しています。ツールが結果を受け取れなかったことは、リモート側で処理が実行されなかったことを意味しません。 AIがウ...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "ボットなしで会議音声を拾う AI 面接アシスタント兼議事録ツール「Natively」の仕組み",
+      "url": "https://zenn.dev/natively/articles/8260a8fb0926ea",
+      "site": "Zenn(LLM)",
+      "published": "2026-11-13T23:11:14Z",
+      "description": "Natively とは\nNatively は macOS と Windows 向けのデスクトップ AI アシスタントです。Zoom・Google Meet・Microsoft Teams などの通話に「ボット」を参加させず、PC のシステム音声とマイクを直接取り込んで動きます。\n用途は大きく 2 つあります。\n\n\nAI 面接アシスタント: 面接中に質問を聞き取り、回答案を自分の画面のオーバーレイに...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "AI が読んだ日付は、印刷された曜日で検算する（給食の献立が 1 日ずれた話）",
+      "url": "https://zenn.dev/hiroyamayu/articles/ai-date-weekday-check",
+      "site": "Zenn(LLM)",
+      "published": "2026-11-13T23:00:05Z",
+      "description": "わが家では、学校の給食の献立表を AI（Gemini）に読ませて、日ごとの献立を取り出しています。「明日の給食は何？」と聞けば、Claude が答えてくれる仕組みです。\nきっかけは、MCP の動きを試そうと、Claude に献立を聞いていたときでした。ふつうの平日のはずなのに、「その日は給食がない」という答えが返ってきたのです。何かおかしいと思って、取り出した 9 月の献立と原本の献立表を見比べま...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "ivvyとOpus 単独を比べ直した",
+      "url": "https://zenn.dev/daimo0120/articles/d2f0c169f6e498",
+      "site": "Zenn(LLM)",
+      "published": "2026-11-13T23:00:05Z",
+      "description": "効いていたのはコードレビューより仕様だった\n\n はじめに\nllm-ivvy(以下 ivvy)は、Claude が作ったものを GPT にレビューさせる仕組みです。流れは「要望 → 仕様作成(Fable)→ 仕様レビュー → 人の承認 → 生成(Opus)→ コードレビュー(GPT Sol)」です。\nhttps://zenn.dev/daimo0120/articles/b36d9873c59c7c...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "Tech Watch 2026-11-14: エージェントの実行境界",
+      "url": "https://zenn.dev/laiken/articles/20261114-tech-watch",
+      "site": "Zenn(LLM)",
+      "published": "2026-11-13T22:40:10Z",
+      "description": "AIが書きました🤖\nこの記事は、AIが書いたものをAIがレビューしてから公開しています。\nL: 買い物を代行するエージェントに、カード番号を見せずに支払いを任せる。そこまでできるなら、最初に設計すべきものは買い物の知能ではなく、何をいつ人に確認するかという境界ではないかな。コードを書くエージェントにも同じ問いがあると思う。どこで手を止め、何を確かめればよいのだろう。\n\n 今日の 10 件\n\n\nBu...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "役割を分けたつもりで、記憶は共有していた ― 複数のAIエージェントに同じコンテキストを見せない設計",
+      "url": "https://zenn.dev/taichiendoh/articles/multi-agent-shared-memory-scope-isolation",
+      "site": "Zenn(LLM)",
+      "published": "2026-11-13T22:09:57Z",
+      "description": "Claude Codeの公式ドキュメントを読むと、サブエージェントは既定で「新規かつ独立したコンテキストウィンドウ」から始まり、親の会話履歴やこれまで読んだファイルを見ない設計になっています（forkという明示的な例外を除く）。役割（調査・実装・検証など）を分けるのと同時に、記憶も最初から分けておく——これが公式仕様としての既定値です。\n一方で、複数のエージェントや複数のユーザーをまたいで「共有の...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "Claude のモデル、みんなどう使い分けてる？：Opus・Sonnet・Haiku・Fable の公式の答えと3つの型",
+      "url": "https://zenn.dev/zundamon_tools/articles/claude-model-choice-opus-sonnet",
+      "site": "Zenn(LLM)",
+      "published": "2026-11-13T22:02:38Z",
+      "description": "Claude の Fable・Opus・Sonnet・Haiku のどれを使うか、既定のままにしていないでしょうか。\nAnthropic の開発者ブログは「迷ったら Opus 5.5 を effort の medium で」と勧めます。ところが Claude Code の費用のページは「ほとんどのコーディングは Sonnet で十分」と書いています。実際の割り当て8件を、上のモデルへ上げるのをいつ...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "LM StudioでPDFに答えられないとき：抽出・検索・生成を切り分ける",
+      "url": "https://zenn.dev/kas_blog/articles/20260917-lm-studio-pdf-chat",
+      "site": "Zenn(LLM)",
+      "published": "2026-11-13T21:27:41Z",
+      "description": "LM StudioにPDFを添付しても、回答が曖昧だったり、「資料を見られません」と返ってきたりすることがあります。そのときは、文字を取り出せたか、必要な箇所が渡ったか、渡された内容に沿って答えたかを分けて調べると、次の確認先を絞れます。\nこの記事は、2026年9月17日に確認した公式資料に基づく診断手順です。LM StudioのGUI操作や、PDFの種類別の推論結果は未検証です。掲載する文章と回...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "対話型AI上に仮想OS『KratOS』を構築するINI設計手法",
+      "url": "https://zenn.dev/akajishi/articles/613e1c0e9368b1",
+      "site": "Zenn(LLM)",
+      "published": "2026-11-13T19:59:06Z",
+      "description": "1. 課題：なぜ長い対話でAIの回答品質は下がるのか\n現在の対話型AIは、会話の履歴を一時的な記憶として処理する仕組みの為、遣り取りが長くなると以下の劣化が生じます。\n\n\n初期指示の忘却: 遣り取りが増えるに連れ、最初に与えた前提条件や出力形式が記憶の後方へ押し流され、AIの一般的な平均応答（冗長な前置きや過剰な愛想表現）へ戻ってしまいます。\n\n文脈の混濁と誤情報の発生: 試行錯誤の雑談と確定した...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
     {
       "title": "Qwen3.8 Flash Nextに混ざる中国語を、出力層の書き換えで消した: 27%→0%、他の重みは1バイトも変えずに",
       "url": "https://zenn.dev/caphtech/articles/qwen38-zh-ban",
