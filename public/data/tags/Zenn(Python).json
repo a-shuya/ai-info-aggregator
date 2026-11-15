@@ -1,8 +1,78 @@
 {
   "site": "Zenn(Python)",
-  "last_updated": "2026-11-15T15:01:32.223110",
-  "total_articles": 7878,
+  "last_updated": "2026-11-15T20:22:58.743556",
+  "total_articles": 7885,
   "articles": [
+    {
+      "title": "退職所得控除の重複期間、引き算の順番を間違えていた",
+      "url": "https://zenn.dev/moneytools_lab/articles/1d533b62bb11a2",
+      "site": "Zenn(Python)",
+      "published": "2026-11-15T17:38:55Z",
+      "description": "個人で iDeCo の受け取り方を試算するシミュレーターを作っています。その中の退職所得控除の計算に、5か月気付かなかった誤りがありました。引き算の順番が違う、というだけの話なのですが、条件によっては控除額が数百万円ずれます。しかもテストは全部通っていました。\nどう間違えて、どう直して、なぜテストが守ってくれなかったのかを書きます。\nなお、私は税理士などの有資格者ではありません。制度の説明は国税庁...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "Qualcomm のモデルカタログにモデルを足す作業で、詰まったのは全部パッケージングだった",
+      "url": "https://zenn.dev/anguoyang/articles/809592a08332df",
+      "site": "Zenn(Python)",
+      "published": "2026-11-15T15:01:22Z",
+      "description": "Qualcomm の qai-hub-models に NanoDet を external recipe として載せる作業をしています（公式フローでは自分の Hugging Face 名前空間に公開され、カタログページに集約されます）。モデルのコードは一度も問題になりませんでした。ぶつかった壁は全部 Python パッケージングです。順に 4 つ。\n\n 壁 1：上流の wheel に自前のサブパ...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "東京都の有料老人ホーム一覧（Excel）をpandasで読んで、月額費用の相場を出してみた",
+      "url": "https://zenn.dev/hisyou_system/articles/e836a38759bde7",
+      "site": "Zenn(Python)",
+      "published": "2026-11-15T13:18:07Z",
+      "description": "前回は厚生労働省の介護サービス事業所のオープンデータを読みました。そのデータには費用の列がなかったので、費用が載っているデータを探しました。\nhttps://zenn.dev/hisyou_system/articles/00ec734539a70b\n見つかったのが、東京都が公開している「有料老人ホーム一覧」です。この記事ではそのExcelをpandasで読み、類型ごとの月額費用と前払金を集計しま...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "請求書登録後にAIエージェントが停止したら？二重登録を防ぐ復旧設計",
+      "url": "https://zenn.dev/techstudiolab/articles/invoice-workflow-safe-retry",
+      "site": "Zenn(Python)",
+      "published": "2026-11-15T13:02:20Z",
+      "description": "請求書の読み取りと台帳への登録は成功したのに、最後の担当者への通知だけ失敗した。最初から実行し直すと、請求書が二重登録されるかもしれません。一方、通知は本当に失敗したのか、それとも送信済みなのに応答が届かなかっただけなのか分かりません。\nAIエージェントに複数の業務を任せるなら、途中で止まった後の復旧方法まで設計しておく必要があります。処理状態を記録し、再実行、人の確認、補償の3種類に分けると、復...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "介護付き有料老人ホームのオープンデータをpandasで読んだら、定員の4割が0だった",
+      "url": "https://zenn.dev/hisyou_system/articles/00ec734539a70b",
+      "site": "Zenn(Python)",
+      "published": "2026-11-15T12:34:37Z",
+      "description": "介護施設の費用を比べるツールを作る準備として、厚生労働省が公開している介護サービス事業所のオープンデータをpandasで読んでみました。この記事では読み込みでつまずいた点と、集計する前に確かめておくべき点をまとめます。\n\n 使うデータ\n厚生労働省の「介護サービス情報の公表システムデータのオープンデータ」です。介護サービス情報公表システムに載っている事業所の情報が、サービスの種類ごとにCSVで公開さ...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "【FastAPI】Dependsで使うyieldの後処理",
+      "url": "https://zenn.dev/peishim/articles/ead9ca299bbce5",
+      "site": "Zenn(Python)",
+      "published": "2026-11-15T12:06:42Z",
+      "description": "はじめに\nfrom fastapi import Depends, FastAPI\n\napp = FastAPI()\n\n\ndef get_message():\n    yield &quot;ready&quot;\n    print(&quot;後処理&quot;)\n\n\n@app.get(&quot;/status&quot;)\ndef read_status(message: str = De...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "常に空を返すスタブが、書き込み先の誤りを隠していた — 実装し終えた日に書式が壊れる寸前と分かった",
+      "url": "https://zenn.dev/shinsei99/articles/stub-hid-the-wrong-wiring",
+      "site": "Zenn(Python)",
+      "published": "2026-11-15T12:05:01Z",
+      "description": "不動産の取引で使う公式の帳票（Excel）に、調べた値を自動で書き込む仕組みを作っています。\n帳票は200本ほどあり、改訂で行がずれるので、セル座標を書式ごとに表で持つのはやめました。\n代わりに「見出しの語を探して、その右にある入力欄を相手にする」という機械的な規則で当てています。\n災害に関する欄だけは、外部データが要るのでずっと後回しでした。\n取得する側は常に空文字を返すだけのスタブで置いてあり...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
     {
       "title": "ロックが消えたら起こす待機役を5つ残して160回試した",
       "url": "https://zenn.dev/ai_jarvis/articles/18526630acd22e",
@@ -74,7 +144,7 @@
       "image_url": ""
     },
     {
-      "title": "同じ店舗のデータが似ているとき、回帰の標準誤差に何が起きるか──店舗ごとの売上の水準を例にシミュレーションで見る",
+      "title": "同じ店舗の誤差に相関があるとき、回帰の標準誤差に何が起きるか──店舗ごとの売上の水準を例にシミュレーションで見る",
       "url": "https://zenn.dev/haruguri/articles/regression-clustered-errors",
       "site": "Zenn(Python)",
       "published": "2026-11-15T04:11:46Z",
