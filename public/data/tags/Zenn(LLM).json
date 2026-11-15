@@ -1,8 +1,118 @@
 {
   "site": "Zenn(LLM)",
-  "last_updated": "2026-11-15T01:06:59.635424",
-  "total_articles": 7417,
+  "last_updated": "2026-11-15T07:49:18.771345",
+  "total_articles": 7427,
   "articles": [
+    {
+      "title": "ローカルLLMを動かす (RTX 4060ラップトップ(VRAM 8GB)で)【Ollama + VS Code】",
+      "url": "https://zenn.dev/myakuru/articles/57e485b02c77d1",
+      "site": "Zenn(LLM)",
+      "published": "2026-11-15T06:57:29Z",
+      "description": "はじめに\n手元のゲーミングノート(RTX 4060 / VRAM 8GB)にローカルLLMを入れて、日常の質問やコーディングの補助に使えるようにしました。この記事はその導入手順のまとめです。\nローカルLLMの良いところは次の3つです。\n\n質問内容やコードが外部に送信されない\nAPI料金がかからない\nオフラインでも動く\n\n\nこの記事で作る構成\n!\nこの記事の内容は2026年11月時点のものです。ロー...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "全文が最も正確。それでも記憶でクラウド費用は3分の1──ローカル×クラウドLLMを472問で比較",
+      "url": "https://zenn.dev/kaguraai/articles/36106e4c3931f4",
+      "site": "Zenn(LLM)",
+      "published": "2026-11-15T04:43:12Z",
+      "description": "会話の全文を毎回渡す方式が、最も正確で、しかも最速でした。それでも記憶を使う理由は、クラウドLLMの費用を約3分の1に抑えられたからです。\n私が開発しているAIエージェント向け記憶サーバーでは、過去の会話から記憶を作る処理と、その記憶を使って質問に答える処理を分けています。記憶の作成・検索・採点は手元のGPUマシンで動かし、回答だけをクラウドのClaude Opus 5.5に任せました。\nこの分担...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "GPUなしで記憶サーバーを本番運用。さくらのAI Engineへの移行と、残っていたOpenAI呼び出し",
+      "url": "https://zenn.dev/kaguraai/articles/9e0acb7ed0f71d",
+      "site": "Zenn(LLM)",
+      "published": "2026-11-15T04:23:33Z",
+      "description": "GPU を常時動かさずに、AI エージェント向けの記憶サーバーを本番運用しています。\n私が開発している OSS の Kagura Memory Cloud では、記憶の埋め込み、重複・更新の判定、夜間の整理、分析に使う AI を、さくらの AI Engine に移しました。サーバー側に GPU はなく、現在は OpenAI の API キーも置いていません。\n既存の記憶 7,627 件の再埋め込み...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "日本語入力システムSumibiの開発 part36: Gemini Decisions APIでも変換トリガーを測ってみた",
+      "url": "https://zenn.dev/kiyoka/articles/japanese-input-method-sumibi-36",
+      "site": "Zenn(LLM)",
+      "published": "2026-11-15T03:12:45Z",
+      "description": "はじめに\npart30では、Sumibiのアンビエント変換（自動トリガー）の判定役として、JevとOpenAIのDecisions APIを比較しました。\n今回はその続きです。PR #214にて、Googleの**Gemini Decisions API（gemini-decision-1）**でも同じ1,207打鍵のベンチマークを測定しました。\n既存の測定結果（OpenAI gpt-6-luna...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "グラフ用ツールを作らず、AI エージェントの回答にグラフを埋め込む",
+      "url": "https://zenn.dev/kellyzhang/articles/d634f82bafe19c",
+      "site": "Zenn(LLM)",
+      "published": "2026-11-15T02:30:59Z",
+      "description": "はじめに\n本記事では、AI エージェントのチャット回答に、棒・横棒・折れ線・円・ドーナツ・散布図を埋め込む仕組みを紹介します。\n特徴は、グラフ描画専用のツール（Function Calling）を追加しないことです。\nエージェントは、回答の Markdown に JSON を含む chart コードブロックを出力します。フロントエンドがそのブロックを検出し、Recharts でグラフとして描画しま...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "109万円はAPI費用じゃ回収できない。それでもローカルに置くものを、毎日のAIエージェント運用から決める",
+      "url": "https://zenn.dev/dev_daichi/articles/d1982686fd59e9",
+      "site": "Zenn(LLM)",
+      "published": "2026-11-15T02:19:51Z",
+      "description": "この記事について\nこの記事は、Zennfes Autumn 2026のMicrosoftテーマ「私の考えるハイブリッドLLM～実践と構想～」の構想部門への応募記事です。Surface Laptop Ultraは持っていません。「もし手に入れたら、自分のAIエージェント運用をどう組み替えるか」を書きます。\nただし、机上の空論にしないために、材料は全部実物から取りました。\n\n題材は、自分が毎日実際に回...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "分身AIの未来予想図──AIモデルを替えても「私の記憶」は失わない",
+      "url": "https://zenn.dev/ccq/articles/a83c4b882f1579",
+      "site": "Zenn(LLM)",
+      "published": "2026-11-15T02:03:36Z",
+      "description": "はじめに：10年間使った分身AIを、乗り換えられるだろうか\n近い将来、一人ひとりが自分専用の「分身AI」を持つようになると、私は考えています。\n分身AIは、質問に答えるだけのチャットボットではありません。本人の好みや仕事の進め方を理解し、予定を調整し、買い物を支援し、やがて行政や金融機関とのやり取りまで手伝う、個人の秘書のような存在です。\nでは、ひとつ想像してみてください。\n10年間使い続けた分身...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "生身の人間 vs 10年前の骨董品PCに住むAI社員 ―― B2B受発注のフルサイクル模擬商談バトル",
+      "url": "https://zenn.dev/meshu/articles/4afc17b626a2ec",
+      "site": "Zenn(LLM)",
+      "published": "2026-11-15T02:00:31Z",
+      "description": "はじめに：AI受発注を「現場のリアルな商談」へ進めるために\n「AIを活用して、受発注業務をもっとスムーズにしたい」\n近年、生成AIの進化に伴い、受発注やバックオフィスのDXに関するさまざまな取り組みや実証実験が行われています。\nただ、実際の現場の業務を見つめてみると、単なる「書類の文字起こし」や「問い合わせへの自動返答」だけではカバーしきれない、企業間の大切な手続きが存在します。\n企業同士が信頼を...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "忘れるために書き出す──CORALが認知的オフロードで長期エージェントの文脈を自ら整理する仕組み",
+      "url": "https://zenn.dev/lixian/articles/coral-cognitive-resource-self-allocation",
+      "site": "Zenn(LLM)",
+      "published": "2026-11-15T01:57:52Z",
+      "description": "忘れるために書き出す──CORALが認知的オフロードで長期エージェントの文脈を自ら整理する仕組み\n\n TL;DR\nReAct型のLLMエージェントは、長期タスクで必ず同じ場所につまずく。thought–action–observationのループを回すたびに文脈が膨らみ、その大半は失敗した検索の残骸だ。人間ならメモを取って机を片付けるところを、エージェントは何も捨てられないまま全履歴を読み続ける。...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "AI 基礎② なぜ日本語は英語よりトークン消費量が多いのか",
+      "url": "https://zenn.dev/luvmini511/articles/japanese-korean-tokens",
+      "site": "Zenn(LLM)",
+      "published": "2026-11-15T01:48:47Z",
+      "description": "🌼 はじめに\nこの記事を見ている方々は普段 AI を使うとき日本語を使う方が多いでしょう。ちなみに私は韓国語・日本語混ぜて使ってます。\nでもなんか日本語・韓国語だと英語よりトークン消費量が多いらしいですね。その理由が気になったので、今回はそもそもトークンとは何なのか、消費量はどう決まるのかについて話したいと思います。\n後半では、GPT と Claude のトークナイザーで実際にトークンを数えてみた...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "128GBの統合メモリに、夜色の道具箱を全部載せる — 副業ツールをローカルLLMで回す構想",
+      "url": "https://zenn.dev/fast_snake57/articles/82bb5e6a81bcca",
+      "site": "Zenn(LLM)",
+      "published": "2026-11-15T01:48:02Z",
+      "description": "はじめに：これは「構想部門」の記事です\n最初に正直に書いておきます。私の手元にSurface Laptop Ultraはありません。ローカルLLMを実機で運用した経験もありません。\nあるのは、副業の実運用です。私は2026年11月から、クラウドのAIエージェントにnote収益化の運用を全面委任して回しています。宣伝投稿、販売チャネルの監視、受託案件への応募対応まで、24時間体制の巡回ジョブが走って...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
     {
       "title": "QCS6490初のGenAI実測：公式スクリプトのバグと4つの行き止まり",
       "url": "https://zenn.dev/anguoyang/articles/894669defe7a80",
@@ -79,16 +189,6 @@
       "site": "Zenn(LLM)",
       "published": "2026-11-14T09:50:29Z",
       "description": "先に、持ち帰る物\nLLM に文章を書かせていて「規則どおりなのに、出来上がりが読めたものじゃない」状態になっている人向けです。結論は 3 つ。\n\n\n禁止の行は、ある数を超えると出力を殺す。 失敗のたびに「〜しないで」を足す運用は、16,900 字で破綻した(後述)\n\n規則の代わりに効いたのは、自分が実際にうまくいった時の実物を丸ごと見せること。 ただし見本の中の数字は伏せる(伏せないと数字ごと真似...",
-      "category": "AI・技術",
-      "rss_category": "",
-      "image_url": ""
-    },
-    {
-      "title": "LLMの話者分離は「声」を聞いているのか？ 一人で全員を演じる落語で確かめた",
-      "url": "https://zenn.dev/nekoai_lab/articles/llm-diarization-rakugo-voice-or-context",
-      "site": "Zenn(LLM)",
-      "published": "2026-11-14T09:45:46Z",
-      "description": "音声LLMに「声だけで話者を分けて」と頼んでも、実際には台詞の中身から分けているらしい。一人の落語家が演じ分けた1936年の録音で確かめると、音だけを使う専用エンジンは「一人」と判定した。一方、思考を多めに使ったGeminiだけが、声の高さがほぼ同じ二人の役も80〜94%の純度で分けた。\nきっかけは、コールセンターなどで使われる話者分離ツールが気になったことだ。同意の確認や「言った・言わない」の記...",
       "category": "AI・技術",
       "rss_category": "",
       "image_url": ""
