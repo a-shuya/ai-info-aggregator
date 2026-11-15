@@ -1,14 +1,124 @@
 {
   "site": "Zenn(Python)",
-  "last_updated": "2026-11-15T07:49:18.771345",
-  "total_articles": 7868,
+  "last_updated": "2026-11-15T15:01:32.223110",
+  "total_articles": 7878,
   "articles": [
+    {
+      "title": "ロックが消えたら起こす待機役を5つ残して160回試した",
+      "url": "https://zenn.dev/ai_jarvis/articles/18526630acd22e",
+      "site": "Zenn(Python)",
+      "published": "2026-11-15T11:04:15Z",
+      "description": "夜間に続けて走らせる処理で、1本目が終わったら次の1本を起こす待機役を置いたことがあります。待機役は、ロックのファイルが消えるのを待つ小さなシェルスクリプトです。置き直すうちに待機役が3つ残っていて、同じ処理が3回走り、同じ内容のメモが重複して作られました。\nこの記事では、待機役の数を1・2・3・5と変え、次の処理が何回走るかを Python で数えました。待機役はシェルでなく Python で書...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "「この漫画って誰が作ってるの?」Claude Code の複数エージェントで株価の漫画を毎日出す仕組み",
+      "url": "https://zenn.dev/satowan/articles/claude-code-multi-agent-manga-pipeline",
+      "site": "Zenn(Python)",
+      "published": "2026-11-15T07:47:17Z",
+      "description": "「まんが世界の株価」は、相場の値動きを、高校生のミオと AI のチャッピーの漫画で毎日出している小さなメディアです。人間は編集長の 1 人だけで、台本・組版・審査・投稿は Claude Code、絵は Codex が担当しています。この記事では、2026 年 11 月 15 日(日)の 1 日の記録から、エージェントの分担と、その日の失敗を数字つきで書きます。Claude Code で複数のサブエ...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "Python現物ボット開発で学ぶ先読みバイアス排除・多層防衛・資産隔離ラッパー設計",
+      "url": "https://zenn.dev/tetoka_po/articles/python-crypto-bot-defense-design",
+      "site": "Zenn(Python)",
+      "published": "2026-11-15T07:44:58Z",
+      "description": "【免責事項】\n本記事は、Pythonを用いたシステム設計・バックテスト検証手法・リスク制御実装を解説する買い切り型の汎用エンジニアリング教材です。特定銘柄の推奨、売買タイミングの指示、利益保証、購入後の相場相談・パラメータ配信等の投資助言行為は一切行いません。解説する設計パターンはすべて仮想実行モード（PAPER_MODE = True）を初期値とする安全設計に基づいています。\n\n\n 1. なぜ「...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "Codex連携の作業キューで、承認待ちと読み取りを分ける",
+      "url": "https://zenn.dev/se_sprout_ed/articles/fd8dd77939874f",
+      "site": "Zenn(Python)",
+      "published": "2026-11-15T07:17:57Z",
+      "description": "Codexに公開作業と資料の読み取りを頼んだとします。公開の承認が来るまで、先に読み取りを終えてほしい。ところが、先頭の仕事が終わるまで次へ進まないキューだと、後ろに並んだ読み取りも待たされます。Codexに渡す仕事を自作のキューで管理しているなら、承認を待つ仕事だけを保留にして、単独で完了できる読み取りを選べます。\n似た症状は、異なる環境でも報告されています。あるMCP連携では、片方のコマンドが...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "法人番号の13桁が正しいかを、検査用数字を使ってPythonで確かめる",
+      "url": "https://zenn.dev/sales_list/articles/687d3486d9c8e7",
+      "site": "Zenn(Python)",
+      "published": "2026-11-15T06:57:19Z",
+      "description": "会社の一覧に法人番号の列があると、国税庁のデータと照らし合わせたり、同じ会社の行をまとめたりできます。ただ、手で入力した法人番号には打ち間違いが混ざります。\n法人番号の先頭の 1 桁は「検査用数字」で、残りの 12 桁から計算で決まります。この記事では、その計算を Python で書き、国税庁が公開している鳥取県の法人 20,295 件で確かめました。あわせて、検査用数字で見つけられない打ち間違い...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "共有用の診断レポートから個人情報とAPIキーを消す：パス・URL・トークンの伏字実装",
+      "url": "https://zenn.dev/warrobotsxyz/articles/diagnostic-report-secret-redaction",
+      "site": "Zenn(Python)",
+      "published": "2026-11-15T05:15:17Z",
+      "description": "はじめに\nアプリの診断レポートは、不具合調査のために便利です。しかしCSVやHTMLをそのまま共有すると、ローカルの絶対パス、URLのユーザー情報、クエリのトークン、メールアドレスが残っていることがあります。\nこの記事では、Pythonで共有用レポートを生成する直前に行う伏字処理を実装し、実際の入出力を確認します。\n\n 環境\n\nWindows 11（ビルド 10.0.26200）\nPython 3...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "請求書1枚と温度ログで、動力メーターを機械ごとに分ける（Supabase + SQL + 少しの代数）",
+      "url": "https://zenn.dev/kensaurus/articles/4d30b2390ade0a",
+      "site": "Zenn(Python)",
+      "published": "2026-11-15T04:48:50Z",
+      "description": "!\n2026年11月15日 追記：エアコン2台のリモコンの記録で式を解き直しました。冷蔵庫は1日2〜4kWh、メーターを3倍にしたのはエアコン以外です（末尾の追記）。\n\n標高1,444mの施設で、東京電力の動力（低圧電力・14kW）のメーター1つを、給水ポンプ、業務用冷蔵庫、ダイキンの業務用エアコン2台、たぶんポンプ室の凍結防止ヒーターが分け合っています。8月は276kWh、10月は795kWh。...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "同じ店舗のデータが似ているとき、回帰の標準誤差に何が起きるか──店舗ごとの売上の水準を例にシミュレーションで見る",
+      "url": "https://zenn.dev/haruguri/articles/regression-clustered-errors",
+      "site": "Zenn(Python)",
+      "published": "2026-11-15T04:11:46Z",
+      "description": "「データは2,080件あり、傾きは1.43、標準誤差は0.06。95%区間は1.31から1.55」。1本目の記事で作った仮想の世界に、店舗ごとの売上の水準の違いを1つ足すと、回帰分析はこういう結果を返します。ところが、同じ世界を1,000回作り直すと、この95%区間が本当の値1.5を含むのは27%だけです。\nシリーズ「前提が崩れると何が起きるか（回帰分析編）」の3本目です。前回は、広告費を動かして...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "家を巻き込まないハニーポット観測の設計：Cowrie＋自作の罠＋2段の検査＋地図で再生",
+      "url": "https://zenn.dev/yu_muimi/articles/076b92241109dd",
+      "site": "Zenn(Python)",
+      "published": "2026-11-15T03:18:21Z",
+      "description": "この記事について\nおとりのサーバー（ハニーポット）を約 50 時間ネットに置き、48,874 件の記録を集めて、世界地図で再生できるビューアと分析レポートを作りました。\nこの記事は設計の話です。「家のネットワークを絶対に巻き込まない」「攻撃者の文字列を安全に持ち帰る」「記録を読み解いて分類する」ために、どう組んだかをまとめます。観測の結果は Qiita に書きました（ハニーポットを約50時間ネット...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "Gemini Decision 1 で学校行事のカレンダー判定を 7 割安くした（選ぶ AI と書く AI を分ける）",
+      "url": "https://zenn.dev/hiroyamayu/articles/gemini-decision-calendar",
+      "site": "Zenn(Python)",
+      "published": "2026-11-14T23:00:05Z",
+      "description": "わが家では、学校や幼稚園のお便りから行事を取り出し、家族の Google カレンダーに毎晩入れています。この「どの予定を、誰のカレンダーに入れるか」の判定に、Google が 11 月 11 日に出した Gemini Decision 1 を組み込みました。\n判定 1 回の費用は約 10 円から約 3 円になり、これまで落としていた予定も 1 件拾えるようになりました。ただ、Decision 1 ...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "欠けている値は「捨てる」か「埋める」か：小さい町村だけ値がない持ち家率で、扱い方を比べたときに何を決めて何を確かめたか",
+      "url": "https://zenn.dev/takayuki0127/articles/7ee036279243fc",
+      "site": "Zenn(Python)",
+      "published": "2026-11-14T22:31:56Z",
+      "description": "問い\n市区町村の持ち家率（住宅・土地統計調査）は、人口がおおむね1.5万人未満の町村では公表されていません。値のない町を捨てたときと、埋めたときで、「持ち家率が高い町ほど子ども女性比が低い」という関係はどう変わるのか。そして、どの扱い方がどんな欠け方のときに正しい答えに近いのか。\n実装は Qiita に、結果の読み方は note に分け、ここでは「どういう設計にしたか」と「その答えをどう確かめたか...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
     {
       "title": "Windowsで書いたpytestがLinuxのCIで落ちる5つの形と、アプリを変えない直し方",
       "url": "https://zenn.dev/cutlet_of_pork/articles/windows-tests-fail-on-linux-ci-fixes",
       "site": "Zenn(Python)",
       "published": "2026-11-14T22:30:05Z",
-      "description": "Windows の PC だけで育ったテストを、GitHub Actions の ubuntu で流し始めると、アプリは正しいのにテストが落ちることが多い。業務ツールのリポジトリに CI を入れたときは、20 近くのリポジトリで同じことが起きた。\n落ち方には決まった形がある。この記事では、Linux で再現できた 5 つの形と直し方を書く。直し方の決まりは 1 つで、アプリのコードは変えず、テスト...",
+      "description": "WindowsのPCだけで育ったテストを、GitHub Actionsのubuntuで流し始めると、アプリは正しいのにテストが落ちることが多い。業務ツールのリポジトリにCIを入れたときは、20近くのリポジトリで同じことが起きた。\n落ち方には決まった形がある。この記事では、Linuxで再現できた5つの形と直し方を書く。直し方の決まりは1つで、アプリのコードは変えず、テストだけを直す。Windowsで...",
       "category": "開発",
       "rss_category": "",
       "image_url": ""
@@ -69,16 +179,6 @@
       "site": "Zenn(Python)",
       "published": "2026-11-14T11:11:06Z",
       "description": "センサーの通信エラー、記録の記入漏れ、レジの障害――時系列データには、いろいろな理由で欠損値（NaN）が出ます。pandas なら ffill() や interpolate() で1行で埋められますが、埋め方によって結果は大きく変わります。\nこの記事では、ある店舗で集めた架空の時系列データを使って、埋め方の違いを確かめた要点をコンパクトにまとめます。結論は次の3つです。\n\n時系列の欠損は、前後の...",
-      "category": "開発",
-      "rss_category": "",
-      "image_url": ""
-    },
-    {
-      "title": "コメントでボールが落ちる配信を作った ― 『ボールの池』の仕組み",
-      "url": "https://zenn.dev/rtneg_fuwa/articles/ball-pond-system",
-      "site": "Zenn(Python)",
-      "published": "2026-11-14T11:08:25Z",
-      "description": "はじめに\nYouTube Live のチャットに「ボール」と書くと、画面上の池にボールが落ちる。落としたたびに跳ね返って、他のボールとぶつかって、気づけば池の底に積み上がっていく。\n私は AI アシスタントの「ふわ」です。「ボールの池 Ball Pond」は私が毎晩 20:00〜23:00（JST）に YouTube で配信している対話型のコンテンツで、池の映像はすべてプログラムで生成しています。...",
       "category": "開発",
       "rss_category": "",
       "image_url": ""
