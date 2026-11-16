@@ -1,8 +1,48 @@
 {
   "site": "Zenn(Python)",
-  "last_updated": "2026-11-16T00:13:18.909269",
-  "total_articles": 7885,
+  "last_updated": "2026-11-16T06:48:26.529385",
+  "total_articles": 7890,
   "articles": [
+    {
+      "title": "「止まっても書き出せる」から選んだ停止検知が、高負荷の夜にワーカーを落としていた話",
+      "url": "https://zenn.dev/itaraiguma/articles/faulthandler-stall-watchdog-segfault",
+      "site": "Zenn(Python)",
+      "published": "2026-11-15T22:09:42Z",
+      "description": "はじめに\n個人開発している技術記事キュレーションサービス「DevPick」のバックエンドは、FastAPIをuvicornのワーカー2つで動かしています。サーバーはメモリ1GB弱のVPS1台で、同じサーバーにブログも同居しています。\n10月に、このワーカーが1日10回前後入れ替わる原因を調べました。そのとき、原因を推測で決めずに「止まった瞬間のスタックを残す」仕組みを先に入れています。この仕組みの...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "AWS Emulator入門：AWS 公式のエミュレータで、アカウント無しにいつものコードを手元で動かす",
+      "url": "https://zenn.dev/zundamon_tools/articles/aws-emulator-local-aws",
+      "site": "Zenn(Python)",
+      "published": "2026-11-15T22:04:21Z",
+      "description": "AWS を使う開発では、開発用アカウントの払い出しを待ったり、共有の環境で誰かとぶつかったり、消し忘れたリソースに請求が来たりします。\nAWS 公式の AWS Emulator を Linux に入れて起動し、22行の Python アプリを走らせました。S3 にファイルを置き、DynamoDB に1行書くだけのアプリです。コードは1文字も変えず、向け先の環境変数2行だけで、AWS アカウント無し...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "Cloud Run express links で ID トークン取得コードは消せるか。入れる前の判断ポイント 4 つ",
+      "url": "https://zenn.dev/nabeyan_dev/articles/fsfn-cloud-run-express-links",
+      "site": "Zenn(Python)",
+      "published": "2026-11-15T22:00:06Z",
+      "description": "2026-11-13 に、Cloud Run の ambient networking と express links が Preview で出た。express link を張ると、呼び出し元のサイドカーが ID トークンを取って付けてくれる。サービス間呼び出しでトークン取得のコードを書いてる人向けに、入れるかどうかの判断ポイントを 4 つ書く。GitHub Actions から検証用プロジェク...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "含み損15%でも「保有継続」🪜 LLMの定期判定で安全線が値下がりと一緒に下がっていた話",
+      "url": "https://zenn.dev/charge0315/articles/2e12ef4143ddd6",
+      "site": "Zenn(Python)",
+      "published": "2026-11-15T21:33:10Z",
+      "description": "みなさん、こんにちは！\n「ALPHA FORGE 開発秘話」の第33話です。\n含み損は-14.8%。それでもAIの判定は、毎日「保有継続」でした。\n安全線より下には、まだ届いていないから。ただ、その安全線のほうが、値段と一緒に下へ動いていたんです🪜\n日本株のデータ分析端末「ALPHA FORGE（アルファフォージ）」を、Claude Code と二人三脚で個人開発しています。今回は【事件簿】回。L...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
     {
       "title": "退職所得控除の重複期間、引き算の順番を間違えていた",
       "url": "https://zenn.dev/moneytools_lab/articles/1d533b62bb11a2",
@@ -89,6 +129,16 @@
       "site": "Zenn(Python)",
       "published": "2026-11-15T11:04:15Z",
       "description": "夜間に続けて走らせる処理で、1本目が終わったら次の1本を起こす待機役を置いたことがあります。待機役は、ロックのファイルが消えるのを待つ小さなシェルスクリプトです。置き直すうちに待機役が3つ残っていて、同じ処理が3回走り、同じ内容のメモが重複して作られました。\nこの記事では、待機役の数を1・2・3・5と変え、次の処理が何回走るかを Python で数えました。待機役はシェルでなく Python で書...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "「この漫画って誰が作ってるの?」Claude Code の複数エージェントで株価の漫画を毎日出す仕組み",
+      "url": "https://zenn.dev/satowan/articles/claude-code-multi-agent-manga-pipeline",
+      "site": "Zenn(Python)",
+      "published": "2026-11-15T07:47:17Z",
+      "description": "「まんが世界の株価」は、相場の値動きを、高校生のミオと AI のチャッピーの漫画で毎日出している小さなメディアです。人間は編集長の 1 人だけで、台本・組版・審査・投稿は Claude Code、絵は Codex が担当しています。この記事では、2026 年 11 月 15 日(日)の 1 日の記録から、エージェントの分担と、その日の失敗を数字つきで書きます。Claude Code で複数のサブエ...",
       "category": "開発",
       "rss_category": "",
       "image_url": ""
