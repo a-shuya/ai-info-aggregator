@@ -1,8 +1,158 @@
 {
   "site": "Zenn(LLM)",
-  "last_updated": "2026-11-16T16:30:53.489938",
-  "total_articles": 7454,
+  "last_updated": "2026-11-17T00:26:46.016609",
+  "total_articles": 7468,
   "articles": [
+    {
+      "title": "回避策は使い回せた：Llama 3.2 1B を QCS6490 で測る—プリフィル 1,024 tok/s、デコード 16.4 tok/s",
+      "url": "https://zenn.dev/anguoyang/articles/d92b24408bbc7b",
+      "site": "Zenn(LLM)",
+      "published": "2026-11-16T15:12:00Z",
+      "description": "昨日、Qualcomm QCS6490 における初の公開 GenAI 実測として、Qwen3-0.6B のプリフィル 1,555 tok/s／デコード 24.6 tok/s を公開しました。そこに辿り着くには手組みのチェーンが必要でした。公式の AI Hub エクスポートスクリプトが、コンパイラに拒否されるフラグを渡していたからです（--output_names is not supported ...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "ローカルLLMは用途を絞ればもっと小さくできるのでは？",
+      "url": "https://zenn.dev/ts/articles/local-llm-by-use",
+      "site": "Zenn(LLM)",
+      "published": "2026-11-16T15:10:20Z",
+      "description": "はじめに\nローカルで LLM を動かすとき、モデルの大きさはどこまで必要でしょうか。手元の GPU に載る範囲で使うなら、小さいほうが速く、メモリにも余裕ができます。用途が決まっているなら、その用途に要る部分だけを残して、もっと小さくできるのではないかと考えました。\n\n 用途を絞る手法の例: MAPLE\n用途を絞る方法の例として、MAPLE というモデルがあります。MAPLE はエキスパートを削っ...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "Web検索とMCPで同じ12問を解かせて、有報の数値で採点した：正解の固定と循環の扱い",
+      "url": "https://zenn.dev/tracer0tong/articles/0c92dbf0a49033",
+      "site": "Zenn(LLM)",
+      "published": "2026-11-16T14:54:22Z",
+      "description": "この記事の要点\n\n日本の上場企業を複数社まとめて尋ねる12問を、同じ系統のモデルを使う2つのアシスタントに解かせました。アシスタントA（以下 A）は Web 検索のみ、アシスタントB（以下 B）は Kabuken の MCP サーバーのみです。\n正解は回答を読む前に固定し、EDINET の原本 XBRL で裏付けました（64書類、364値、すべて一致）。\nA は245中237の数値が一致。ただし書...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "MicrosoftのPyRITでQwen2.5 7B/14B/32Bの拒否を測ったら、判定基準の選び方で結果が変わった",
+      "url": "https://zenn.dev/matsushima_a/articles/day-048-pyrit-local-llm-redteam",
+      "site": "Zenn(LLM)",
+      "published": "2026-11-16T14:28:11Z",
+      "description": "今日の対象: microsoft/PyRIT\nPyRIT(Python Risk Identification Tool for LLMs)は、Microsoft社内のAI Red Teamが実際に使っていたツールをMITライセンスで公開した、生成AIシステムの弱点(禁止コンテンツの生成やジェイルブレイクへの耐性など)を自動で突くためのレッドチーミングフレームワークである。\n2024年2月公開だが...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "手で呼ぶレビュースキルは使われなくなった。残ったのは自動で回る1本だけ",
+      "url": "https://zenn.dev/mizo_ko/articles/article-108-zenn",
+      "site": "Zenn(LLM)",
+      "published": "2026-11-16T12:10:15Z",
+      "description": "PRレビューのスキルを3つ作って半年、残ったのは1本だけでした。残り方と、自動化で新たに出た問題の話です。\n\ndeep-review を手で打ったのは2026年8月5日が最後。その後の利用ログでは0回\n残ったのは、10月16日から平日の定時に回っている自動レビューの流れ。予定122枠のうち116回起動した\nreview-pr の指摘では、反応のない割合が手で呼んでいた時期の20%から、自動の時期の...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "日本語で聞くと AI の電気は何倍？ 論文と同じ Qwen3 と問題で、Mac の GPU の電力を測ってみた",
+      "url": "https://zenn.dev/lecto/articles/c9b0474d1dd327",
+      "site": "Zenn(LLM)",
+      "published": "2026-11-16T12:03:00Z",
+      "description": "はじめに\n2026 年 11 月 5 日、ミシガン大学が「生成 AI は、英語以外の言葉だと多くの電気を使う」という研究を発表しました。10 月の自然言語処理の学会 EMNLP 2026 で発表された論文「The Language–Energy Divide」です。\n\n英語以外の言語で答えを作ると、使う電気は英語の 1.4〜180 倍\n\n原因は 2 つ。答えのトークンが増えることと、1 トークンあ...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "ストリーミング中の応答から、推論モデルの思考ブロックを取り分ける",
+      "url": "https://zenn.dev/claudycat/articles/0d468dd38c8231",
+      "site": "Zenn(LLM)",
+      "published": "2026-11-16T11:57:36Z",
+      "description": "小説の続きを提案させる執筆ツール「Sumire」（Tauri 2 + React + Rust、Windows 向け）を作っています。続きはローカル LLM に書かせ、カーソルの先に薄い色の「ゴースト」として表示します。Tab で採用、Esc で却下です。\n推論モデル（思考してから答えるモデル）を使うと、応答に思考の文が混ざってきます。\nため息をついた。\n\n&lt;think&gt;\nOkay, ...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "Qwen3.5-4B-3D-CoderをVRAM 6GBで実測：Three.js 4問は機械判定で42/42、生成63.6 tok/s",
+      "url": "https://zenn.dev/localai_lab/articles/5f3f69939ee6d5",
+      "site": "Zenn(LLM)",
+      "published": "2026-11-16T11:41:52Z",
+      "description": "Three.js の3Dシーン作りに力を入れたコード生成モデル Qwen3.5-4B-3D-Coder（Q4_K_M）を、VRAM 6GB の GPU で動かした実測です。CCORE が Qwen/Qwen3.5-4B をもとに追加学習したモデルで、公式 Qwen のリリースではありません（作者が明記）。llama.cpp b12340 の llama-server、-ngl 99 -fa on、...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "言語は思考の本体か",
+      "url": "https://zenn.dev/purenium/articles/2026_11_16_is_language_the_essence_of_thought",
+      "site": "Zenn(LLM)",
+      "published": "2026-11-16T11:07:11Z",
+      "description": "最近、頓悟的にひらめいたんだが、YouTubeとかで動物の動画を見てたりすると、動物というのが明らかに考えているということがわかる。\nこの間、アハ体験というか、ある種のセンス・オブ・ワンダーを感じたんだろうが、これはすごいことなんじゃないだろうか。\n例えば、私は、最近は、なんとなく、安直に、思考イコール言語のように思っていた。\nしかし、実際、動物は言語なしで物を考えてるわけだ。\n例:\n【超頭脳生物...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "さくらのAI Engineの全チャットモデルにフランス語の小テスト60問を解かせて比べた",
+      "url": "https://zenn.dev/classnow/articles/1e7f0f755ec690",
+      "site": "Zenn(LLM)",
+      "published": "2026-11-16T11:05:54Z",
+      "description": "はじめに\n國學院大學の文学部外国語文化学科で、英語とフランス語を学んでいる 2 年生です。プログラミングは 2026 年 1 月に始めたばかりで、いまは自分の語学学習の道具を少しずつ作っています。\n作りたいのは「授業の小テストを自動で作って、自動で採点して、間違えた問題だけ解説してくれる」仕組みです。問題文の生成や採点を毎日回すとなると、無料で使える API が欲しい。そこで、Chat compl...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "内蔵 GPU の共有メモリーの上限を変えたら、ゲームは変わらず、ローカル LLM と画像生成は速くなった",
+      "url": "https://zenn.dev/maruhana/articles/msi-claw-shared-gpu-memory-limit",
+      "site": "Zenn(LLM)",
+      "published": "2026-11-16T10:14:19Z",
+      "description": "!\n先に、この記事の要約（専門用語なし）\n\n携帯型のゲーミング PC（MSI Claw 8 AI+、メモリー 32GB）の内蔵 GPU は、メインメモリーを Windows と分け合って使う。GPU が使ってよい量の上限は、Intel のアプリで 13〜87% の間で変えられる\n上限を 13%・57%・87% に変えて、ゲーム（Cyberpunk 2077）、ローカル LLM（Ollama で G...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "AIエージェントへの仕事の渡し方｜依頼を4欄で固定する",
+      "url": "https://zenn.dev/ren_agent_log/articles/1e3fc8e1aea2f9",
+      "site": "Zenn(LLM)",
+      "published": "2026-11-16T09:58:38Z",
+      "description": "AIエージェントに調べものや下書きを頼むと、単発の仕事は速く返ってきます。問題はその先です。渡した仕事が今どこにあるのか、終わったのかどうか、次に何を渡すべきか。仕事と仕事の「間」を人の頭でつなぎ続けると、エージェントをいくら使っても、全体の速度は人の頭の処理速度で頭打ちになります。\n逆に「全部任せる」方向に振ると、今度は仕事の所在が見えなくなります。止まっている仕事に気づけない。「終わりました」...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "ローカルLLMの計画機能を、ベンチマークの結果「採用しなかった」話",
+      "url": "https://zenn.dev/nimeroa/articles/ff7c98bdc52869",
+      "site": "Zenn(LLM)",
+      "published": "2026-11-16T08:21:24Z",
+      "description": "個人・家庭向けAI秘書「NIMEROA（ニメロア）」の開発で、ローカルLLMにタスクの計画を立てさせる機能を実装しました。\n実装は完了し、安全・品質・性能の基準も1項目を除いてすべて満たしました。それでも、**既定では有効にしない（不採用）**と判断しました。\n品質の表だけを見れば、採用しない理由はほとんど見当たりません。この記事では、それでも見送った理由を、ベンチマークの条件と結果の実測値ととも...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "向かい合って話すと、Macだけでその場で訳してくれる通訳アプリを作った",
+      "url": "https://zenn.dev/reohamada/articles/sokutsu-mac-realtime-interpreter",
+      "site": "Zenn(LLM)",
+      "published": "2026-11-16T06:49:29Z",
+      "description": "ドラマ『VIVANT』で、リアルタイムに翻訳してくれるイヤホンが登場するシーンを見て、「あれを自分で作ってみたい」と思ったのが、きっかけです。そうして作ったのが、話した言葉をMacが聞き取り、相手の言語の字幕と声にして返すアプリ「Sokutsu(即通)」です。無料のオープンソース(MIT)で、Apple シリコンの Mac で動きます。\n\nダウンロード(DMG): https://github.c...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "AI API のコスト異常を検出する",
+      "url": "https://zenn.dev/modelflare_dev/articles/5596e2e0396a8a",
+      "site": "Zenn(LLM)",
+      "published": "2026-11-16T06:34:51Z",
+      "description": "この記事は Modelflare ブログ の英語記事を翻訳・再構成したものです。\n本番運用のためのガイド：AI API のコスト異常を検出する。明確な判断、再利用可能な成果物、失敗試験、運用シグナル、出典を明示した制約事項をまとめています。\n\n 判断指標\nAI API のコスト異常を検出するは、単発の設定ではなく、FinOps の契約として実装すべきです。トラフィックを移す前に、プロトコル、責任分...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
     {
       "title": "デスクトップアプリから llama-server を起動して使うときに決めたこと",
       "url": "https://zenn.dev/claudycat/articles/7de3ce3fe21452",
@@ -29,16 +179,6 @@
       "site": "Zenn(LLM)",
       "published": "2026-11-16T01:30:05Z",
       "description": "!\n要約\n\n\n課題：754BパラメータのMoEモデルGLM-5.1をNVIDIA H200 x8の1ノードで動かすと、既定の構成では、50ユーザーの同時接続時にTTFT（最初のトークンが返ってくるまでの時間）が59秒に達しました。\n\n原因：制約は計算量ではなく、KVキャッシュの容量でした。GLM-5.1が採用するMLAは、テンソル並列で動かすと全GPUにKVキャッシュの複製を持たせる必要があります...",
-      "category": "AI・技術",
-      "rss_category": "",
-      "image_url": ""
-    },
-    {
-      "title": "Claude APIのmessage threads解説——差分だけ送って長い会話を速くする、単発呼び出しには効かない",
-      "url": "https://zenn.dev/sktt_panda/articles/claude-api-message-threads-2026-11",
-      "site": "Zenn(LLM)",
-      "published": "2026-11-16T01:27:04Z",
-      "description": "3 行まとめ\n\n2026年11月2日、Claude の Messages API に message threads（ベータ）が入った。会話をサーバー側に保持し（最後のリクエストから5分で失効）、2ターン目以降は 新しいメッセージと直前の応答 id だけ を送る方式で、長い会話やエージェントループの「最初のトークンが返るまでの時間（TTFT）」を短くする\n料金とレート制限は変わらない。プロンプトキ...",
       "category": "AI・技術",
       "rss_category": "",
       "image_url": ""

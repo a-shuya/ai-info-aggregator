@@ -1,14 +1,194 @@
 {
   "site": "Zenn(生成 AI)",
-  "last_updated": "2026-11-16T16:30:53.489938",
-  "total_articles": 5134,
+  "last_updated": "2026-11-17T00:26:46.016609",
+  "total_articles": 5152,
   "articles": [
+    {
+      "title": "記事生成を分業したらトークン削減の前提が崩れた",
+      "url": "https://zenn.dev/miyoki_labs/articles/llm-codex-647584a329",
+      "site": "Zenn(生成 AI)",
+      "published": "2026-11-16T22:30:06Z",
+      "description": "はじめに\n記事生成を「執筆」「決定的リンター」「ファクトチェック」「文体チェック」「ゲート」に分けて運用しました。\n同じ記事のファクトチェックで、Claude サブエージェントは 62,488 トークン、Codex は新規127kトークンを使いました。\nキャッシュ込みでは Codex が 1.19M トークンになりました。新規トークンでは Codex が約2.0倍、キャッシュ込みでは約19倍です。...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "PowerBuilder ERPを壊さずに繋ぐ — 3DB分離・冪等API・サーキットブレーカー・部分UPDATE",
+      "url": "https://zenn.dev/junghun/articles/dax-03-legacy-erp-bridge",
+      "site": "Zenn(生成 AI)",
+      "published": "2026-11-16T21:33:18Z",
+      "description": "結論から\n\n目的は受注サイトを作ることではない。生産計画の入力データを作りに行くことだった。売上の6〜7割を占める海外の確定注文を、その日のうちに正しくERPへ\n邪魔していたのは、国内向け／海外向けで分かれた品目コードの選択ミス。速く入れるだけでは、間違いも速く流れ込む\nERPは直さない・統合しない。3DB分離をそのまま受け入れ、冪等キーとサーキットブレーカーで外側に責任を寄せる\n\n前回は、既存E...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "なぜ、「今後はAIが全てのコードを書くから、人間は読める必要は無い」という主張は成り立たないのか？",
+      "url": "https://zenn.dev/pdfractal/articles/c03e721a0b6540",
+      "site": "Zenn(生成 AI)",
+      "published": "2026-11-16T17:30:50Z",
+      "description": "はじめに\n生成AIによるプログラムの自動生成が進歩するにつれて、「今後はAIがすべてのコードを書くようになるのだから、人間がコードを読める必要もなくなる」という主張を耳にするようになりました。確かに、AIが人間に代わってプログラムを生成するようになれば、人間が自分の手でソースコードを記述する機会は大幅に減少するでしょう。AIによる検証技術も進歩すれば、生成されたコードを人間が逐一確認する必要性も低...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "最近、コードを真面目に読まなくなった",
+      "url": "https://zenn.dev/hiromoo/articles/reading-less-preparing-more",
+      "site": "Zenn(生成 AI)",
+      "published": "2026-11-16T15:24:23Z",
+      "description": "最近、コードを真面目に読むことが減りました。\nAIに実装を任せて、出てきた差分を最初から最後まで丁寧に追う。以前ほど、そういう時間を取らなくなっています。\n決して、不真面目になったつもりはありません。\n私の開発では、前提をきちんと整えておけば、AIが出すコードは大体正しいと感じることが増えたからです。\n大体正しいものを、毎回同じ熱量で読み込む。その時間に、以前と同じだけの意味があるのか。\nそれより...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "Gemini Omni Flashを多用する理由｜格安・高画質だが、画像リファレンスと日本語音声に課題",
+      "url": "https://zenn.dev/debug_queens/articles/3f33682aaae4ec",
+      "site": "Zenn(生成 AI)",
+      "published": "2026-11-16T13:57:33Z",
+      "description": "はじめに\nDEBUG QUEENSでは、生成AIを使って、IT・AIをテーマにしたさまざまな映像コンテンツを制作しています。\nAI SFドラマ、IT対決、ITコメディ、IT社会テーマ、ITサイバーバトルなど、作品のジャンルによって必要な映像表現は異なります。\nそのため、複数の動画生成AIを使い分けています。\n今回紹介するのは、制作で特に使用頻度の高い Gemini Omni Flash です。\nこ...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "小説を書いたことのない社会人が、AIと2か月で100万字 ― 連載小説12話を完結させた振り返り",
+      "url": "https://zenn.dev/infra_ojisan/articles/ai-novel-studio-part9",
+      "site": "Zenn(生成 AI)",
+      "published": "2026-11-16T13:21:29Z",
+      "description": "!\nこの記事は、グラウヴァル・シリーズ（第一シリーズ全12話）の制作の振り返りです。物語の結末そのものには触れませんが、各話の作り方と、制作中に決めた設定の一部に触れます。\n\n\n はじめに\nこのシリーズでは、AIに小説を書かせる「制作スタジオ」を作ってきました。\n\n\n1本目：スタジオの組み方\n\n2本目：書き手のモデルの選び方と、文章の余白\n\n3本目：シリーズものを伏線の負債として管理する\n\n4本目...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "週の締めで済み表を開く — 読み返しの箱数を実行して、直しと返すを1行に残す形",
+      "url": "https://zenn.dev/takumahayami/articles/eigyou-ai-geppo-yomikaeshi-1gyou",
+      "site": "Zenn(生成 AI)",
+      "published": "2026-11-16T13:13:41Z",
+      "description": "月頭の第一仕事「済み表に残った箱の読み返し」を4つの週に割り振ったのは前回です。割り振った数が週記録の各行に載り、月頭では箱名を決めていません。今回は、予告どおり、その割り振りを週の締めで実際に回す — 済み表を開いて箱を読み返し、判定を2つに絞り、実績を週記録の1行に載せる形を定めます。\n\n 締めで開くのは箱数と表だけ\n読み返しの週は、まず自分の週記録の行を見て「読み返し3箱」のように割り振られ...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "AG2 v1.3.2 で複数の判定を1回の API 呼び出しにまとめてみた",
+      "url": "https://zenn.dev/takuh/articles/580782b18b1b45",
+      "site": "Zenn(生成 AI)",
+      "published": "2026-11-16T12:16:59Z",
+      "description": "この記事の確認範囲\n\n対象：AG2 v1.3.2（2026年11月15日公開）。比較のため v1.3.1 も同じ Mac に入れて実行しました\n判定モデル：OpenAI Decisions API（gpt-6-luna）と TypeSafe Jev（jev-latest）\n検証環境：macOS（Apple M5 Max）、Python 3.12.15、uv 0.12.22\n実験：自作の求人票×候補...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "【改訂版】初心者向け。Difyで観光案内LINE Botを作るハンズオン",
+      "url": "https://zenn.dev/n0bisuke/books/dify-simple-linebot2",
+      "site": "Zenn(生成 AI)",
+      "published": "2026-11-16T12:14:10Z",
+      "description": "改訂作業中。国頭村の観光案内LINE Botを作り、やんばる森のおもちゃ美術館の公式情報を使ったRAGに取り組む初心者向け教材です。",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "介護の共用部の清掃と環境の点検、AIはどこまで任せられますか？ — 仕上げの1面で決める",
+      "url": "https://zenn.dev/satoshimizuhara/articles/ai-agent-care-common-area-cleaning",
+      "site": "Zenn(生成 AI)",
+      "published": "2026-11-16T11:54:40Z",
+      "description": "昨日は、介護の洗濯とリネンの段取りの仕事で、介護の現場に寄せて読む24回目を書いた。本稿はその25回目で、昨日予告した通り、同じ介護の現場に共用部の清掃と環境の点検の仕事を置く。返し棚の上で衣類の1枚の行き先を決める仕事は24回目に置いた。本稿で置くのは、その奥の、拭き上げた床と手すりとドアノブが、朝の送迎と昼の活動と夕食の動線の中を1日中往来する時間の段取りの仕事だ。清掃計画表の下書き、共用部の...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "Excelの歳暮の支払いでAIに任せるのは区分の式まで — 贈る先の名簿は人間が決める",
+      "url": "https://zenn.dev/yoshitokinosita/articles/0046-excel-ai-seibo-tenken",
+      "site": "Zenn(生成 AI)",
+      "published": "2026-11-16T10:22:56Z",
+      "description": "歳暮の支払いは、台帳に載る行の数から始める\n12月の締めの前の段の話です。11月の半ばになると、総務と経理の机で歳暮の準備が始まります。贈る先の名簿を集め、品目と金額を並べ、部門ごとに取りまとめを済ませるのが11月の後ろ半分、発注と到着が12月の上旬、支払いが12月の締めに乗る形が、年の中の型です。この回では、発注の前に置く台帳の段を扱います。\n歳暮の台帳の点検は、贈る先を決める段でも、金額を決め...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "生成AI時代に、質の高い技術記事を書くために考えたいこと",
+      "url": "https://zenn.dev/imsh/articles/0d564161453aae",
+      "site": "Zenn(生成 AI)",
+      "published": "2026-11-16T08:46:15Z",
+      "description": "生成AIの普及によって、技術記事を書くハードルは大きく下がりました\n情報収集から構成の検討、文章の執筆まで生成AIに任せられるため、以前よりもずっと簡単に記事を公開できるようになっています\n一方で、生成AIに書かせただけで、内容を十分に理解・検証していないような記事も増えていると感じます\n生成AIを活用して記事を書くこと自体は悪いことではありませんが、せっかく公開するのであれば、読者にとって価値の...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "AI Agentの無限ループを防ぐための「Step Budget」設計",
+      "url": "https://zenn.dev/aiai_tool/articles/0e38de871217ca",
+      "site": "Zenn(生成 AI)",
+      "published": "2026-11-16T07:31:53Z",
+      "description": "LLMのContext Windowが大きくなると、\n「とりあえず全部の情報をPromptに入れればよい」\nと考えたくなることがあります。\nしかし、入力できる情報量が増えたことと、すべての情報を毎回入力すべきことは同じではありません。\n大量の文書、会話履歴、検索結果、Tool Outputを無条件に追加すると、必要な情報が埋もれたり、処理コストが増えたり、回答生成までの時間が長くなったりする可能性...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "若手の「説明力」は、AI開発で育てられるか ― 資料レビューAIを題材にしたOJTの実践",
+      "url": "https://zenn.dev/nttdata_tech/articles/d159fdd9c38c00",
+      "site": "Zenn(生成 AI)",
+      "published": "2026-11-16T07:30:17Z",
+      "description": "1. はじめに\n生成AIを使えば、経験の浅いコンサルタントでも、短時間で整った資料を作れるようになりました。しかし「なぜ、この結論に決めたのか」を説明できなければ、責任を持った提案にはなり得ません。\n今年度、私は2年目社員のトレーナーとして、資料レビューAIの開発をテーマに指導に取り組んでいます。目指しているのは、実務で役立つAIを作ることと、その開発過程を本人の学びにつなげることです。育成は現在...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "ChatGPTの生成ファイルが落とせない？ Safariで試した11回の検証",
+      "url": "https://zenn.dev/akisayo/articles/chatgpt-file-download-safari-20261116",
+      "site": "Zenn(生成 AI)",
+      "published": "2026-11-16T06:56:44Z",
+      "description": "はじめに\nChatGPTに修士論文のWord草稿（DOCX）を作ってもらったところ、リンクを押してもダウンロードできませんでした。コンテンツブロッカーをオフにしても改善せず、英数字のファイル名に変えたら成功。そこで「日本語ファイル名が原因？」と思ったのですが、追加実験で予想外の結果になりました。\nこの記事は、2026年11月16日にSafari上のChatGPTで行った一連のユーザー側検証を記録し...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "Claude Codeが書いたコードを読む代わりにやっていること",
+      "url": "https://zenn.dev/linkedge/articles/claude-code-instead-of-reading-code",
+      "site": "Zenn(生成 AI)",
+      "published": "2026-11-16T05:04:44Z",
+      "description": "はじめに\n個人で作っているWebアプリの実装を、最近はClaude Codeに任せています。PRが増えて全部は読みきれなくなり、ほとんどコードを読まずにマージしています。テストもレビューも動作確認も、AIにやらせています。\nところが、作業を終える前にテストを回すはずの仕組みが、一度もテストを動かしていませんでした。毎回0.1秒かからずに通っていて、確認は全部通っていたので、しばらく気づきませんでし...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
     {
       "title": "画像で作った庭を歩ける箱庭に。Atlasで3D化して3D箱庭をつくるまで",
       "url": "https://zenn.dev/nakanishitf/articles/abf190b588c5ea",
       "site": "Zenn(生成 AI)",
       "published": "2026-11-16T03:24:11Z",
       "description": "小さな庭に、小屋と池がある。\nヨーロッパのどこかにありそうで、実際には存在しない、明るい緑の庭。\nそんな画像を作っていたら、自分のキャラクターを置いて歩かせたくなった。\n\n庭に立っているのは、もともと別のゲームで使っていたTaka。実際にブラウザで動かしている画面です。\nWorld LabsのAtlasを使い、写真風に生成した画像から3Dの箱庭を作った。\nさらにローカルのブラウザで表示して、Tak...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "現在、オープンモデル経済の規模はどれくらいなのか？―フロンティアモデルとの比較で見えたもの",
+      "url": "https://zenn.dev/leading_ai/articles/open-model-economy-scale",
+      "site": "Zenn(生成 AI)",
+      "published": "2026-11-16T02:10:46Z",
+      "description": "序章：OpenRouterは「7割」と言い、Menloは「4%」と言った\n2026年10月31日、OpenRouterが一つの数字を出した。\nOpenRouterは、世界中のAIモデルを1つの窓口から使えるようにしているサービスで、どのモデルがどれだけ使われたかを集計して公開している。\nその集計によると、利用量の多い上位50モデルのうち、重み（モデルの中身にあたる膨大な数値）が公開された「オープン...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "Sakana Chatの2モデル「Namazu」と「Fugu Max」の違いと選び方",
+      "url": "https://zenn.dev/kentaro36/articles/sakana-chat-namazu-fugu-max",
+      "site": "Zenn(生成 AI)",
+      "published": "2026-11-16T01:59:15Z",
+      "description": "Sakana Chatの2モデル「Namazu」と「Fugu Max」の違いと選び方\n\nNamazuは日本語に特化した単一モデル、Fugu Maxは複数モデルを統括するオーケストレーターです。 メモリー機能は両方で利用できます。\n\n 1. はじめに\nSakana Chatのモデル選択欄には、「Namazu」と「Fugu Max」が並んでいます。名前だけでは違いが分かりにくく、どちらを選ぶか迷うかも...",
       "category": "AI・技術",
       "rss_category": "",
       "image_url": ""
