@@ -1,8 +1,168 @@
 {
   "site": "Zenn(Python)",
-  "last_updated": "2026-11-17T00:26:46.016609",
-  "total_articles": 7912,
+  "last_updated": "2026-11-17T08:21:16.511577",
+  "total_articles": 7927,
   "articles": [
+    {
+      "title": "CIの合否は手元で、採点だけクラウドで ― LLM評価をハイブリッドLLMで回す構想",
+      "url": "https://zenn.dev/uenonao/articles/5b6a2241392046",
+      "site": "Zenn(Python)",
+      "published": "2026-11-17T08:10:01Z",
+      "description": "「要約の質」や「回答の丁寧さ」のように、機械的にチェックできない性質をどうテストするか。よく使われるのが、別のLLMに採点させる LLM-as-a-Judge です。\n便利な方法ですが、その点数をそのままCIの合否（しきい値で落とす）に使うと、困ったことが起きます。さらに、評価を全部クラウドに任せると、APIの呼び出し回数と料金もふくらみます。\nこの記事は、Zennfes Autumn 2026「...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "自分のイラストを3Dキャラにして動かす。Colab L4でメッシュ生成からリギング、操作まで",
+      "url": "https://zenn.dev/nakanishitf/articles/4a7175473893b2",
+      "site": "Zenn(Python)",
+      "published": "2026-11-17T08:05:57Z",
+      "description": "自分が使っているイラストを、3Dの世界へ連れていきたい。\nしかも、置いて眺めるだけでなく、自分で歩かせたり、走らせたり、ジャンプさせたりしたい。\n今回は、私が個人的に使っていた2Dキャラクター「たかにゃん」で試してみました。\n自分の写真をもとにChatGPTで作った、眼鏡をかけた猫のキャラクターです。\n\n今回の入力画像。大きな頭、短めの手足、服、バッグ、尻尾を持っています。\n生成APIへの従量課金...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "Claude Codeのログから「AI肩書き」カードを作るプラグインを作った：採点のブレ・伏せ字・画像化の試行錯誤",
+      "url": "https://zenn.dev/kazu04r/articles/4162c3f937e94c",
+      "site": "Zenn(Python)",
+      "published": "2026-11-17T07:27:41Z",
+      "description": "ふとした拍子に、Claude Codeの履歴が、その人のAIへの習熟度を一番示してるんじゃないかと思い「AI肩書き診断（My AI Title）」というClaude Codeプラグインを作ってみました。\nClaude Code のセッションログを読んで、AIとの付き合い方を6つの軸で採点し、トレーディングカード風の画像にします。\n\n架空のスコアで作ったサンプルです\nこの記事では、作る途中でぶつかっ...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "ミッションのΔv収支をPythonで組む｜\"どこへ行けるか\"を見積もる",
+      "url": "https://zenn.dev/maru1228/articles/space-delta-v-budget-python",
+      "site": "Zenn(Python)",
+      "published": "2026-11-17T07:09:48Z",
+      "description": "!\nこの記事は自サイト ミッションのΔv収支をPythonで組む｜\"どこへ行けるか\"を見積もる の再掲（クロス投稿）です。図をインタラクティブに動かせる版は元記事でどうぞ。\n\n宇宙ミッションが実現可能かは、Δv収支（デルタブイバジェット） でおおまかに判断できます。各段階で必要な速度変化を足し上げ、ロケット方程式で燃料に換算する——ミッション設計の第一歩をPythonで体験します。\n\n Δvは\"宇...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "LLM採点プロンプト設計入門：観点を1つに絞る評価ルーブリックの作り方",
+      "url": "https://zenn.dev/uenonao/books/5c76abb37b84ec",
+      "site": "Zenn(Python)",
+      "published": "2026-11-17T05:16:11Z",
+      "description": "LLM-as-a-Judgeの点数が揺れる原因を「採点プロンプトの設計」から解きほぐす実践書。観点を1つに絞る方法、点数の基準を文章で固定するルーブリックの書き方、観点別に採点を分ける構成、複数回採点と中央値のコスト設計、大きく下がったケースだけを人が読むレポート運用までを、動くPythonコード例と具体的なルーブリック例で解説する。",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "文字で書かれた料金をpandasで数値にする：千葉県の有料老人ホーム一覧",
+      "url": "https://zenn.dev/hisyou_system/articles/1883247bf823ff",
+      "site": "Zenn(Python)",
+      "published": "2026-11-17T04:43:18Z",
+      "description": "前回は、有料老人ホームの費用が載っている公開データを探しました。千葉県の一覧は商用でも再利用できる一方で、料金が「161,700～」のような文字で書かれていました。\nhttps://zenn.dev/hisyou_system/articles/e836a38759bde7\n今回はその料金をpandasで数値にします。書き方の種類を数えてから、どの金額を取り出すかのルールを決めました。\n\n 使うデ...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "Agent SkillsがLinux Foundation傘下に——手持ちの27スキルを仕様で検査したら6本が不合格",
+      "url": "https://zenn.dev/sktt_panda/articles/agent-skills-aaif-spec-check-2026-10",
+      "site": "Zenn(Python)",
+      "published": "2026-11-17T04:13:13Z",
+      "description": "3 行まとめ\n\n2026年10月22日、Anthropic は Agent Skills の仕様を Linux Foundation 傘下の Agentic AI Foundation（AAIF）に寄贈した。MCP に続く2つ目の寄贈で、SKILL.md の形式は特定のベンダーのものではなく、中立な標準として管理されることになった\n標準になったのを機に、個人開発の4リポジトリにある 27個のスキル...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "【コマンド付き】Claudeが英語で応答しないようにするhookを導入する",
+      "url": "https://zenn.dev/discus0434/articles/stop-hook-reply-in-japanese",
+      "site": "Zenn(Python)",
+      "published": "2026-11-17T03:30:00Z",
+      "description": "Claude Codeの返事が英語になったら、日本語で書き直させるStopフックです。\n\n 導入する\nこのシェルスクリプトを実行すると、次のセッションから、英語の返事の後にフックが起動し、日本語で言い直すようになります。\nbash &lt;&lt;'INSTALL_SH'\nset -eu\n\nmkdir -p &quot;$HOME/.claude/hooks&quot;\ncat &gt; &quo...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "カメラなしの VTube Studio アバターに、目パチ・揺れ・呼吸と表情を付ける",
+      "url": "https://zenn.dev/aidelivusagi/articles/ai-jikkyo-vts-reactions",
+      "site": "Zenn(Python)",
+      "published": "2026-11-17T03:00:08Z",
+      "description": "TikTok Live で、ゲーム画面を見ながら AI が喋り続ける実況配信を作っています。声とキャラクターは、VOICEVOX のキャラクター中国うさぎをお借りしています。前回の記事では、VTube Studioのアバターを、カメラもマイクも使わずに AI の声だけで口パクさせました。\nこの記事では、口以外の動きを足した話を書きます。中心は、喋っていない間も画面越しに止まって見えないようにする目...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "競走得点は「出走表の時点」の値で持つ ── 後から変わる値を予想に使わない",
+      "url": "https://zenn.dev/yutakacraft/articles/925f94692c4b38",
+      "site": "Zenn(Python)",
+      "published": "2026-11-17T02:59:28Z",
+      "description": "個人で競輪の予想アプリとデータのサイトを作っています。今回は、選手の「競走得点」をデータとしてどう持つか、という話です。\n結論から書くと、競走得点は「選手の今の値」ではなく「その出走表に載った時点の値」として、レースごとに持つのがよいと思っています。\n\n 競走得点は動く値\n競走得点は、選手の強さを直近 4 か月の成績から数にした得点です。出走表には、前回と現在の得点が載ります。\nつまり、同じ選手で...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "Python × SQLite × Discord Webhookで「二重通知しない」新着・価格監視Botを作る設計パターン",
+      "url": "https://zenn.dev/autolab/articles/9e0af1d3ded399",
+      "site": "Zenn(Python)",
+      "published": "2026-11-17T02:42:25Z",
+      "description": "フリマサイトやECサイト、ニュースの新着情報を自動巡回してDiscordに通知する監視Botを自作する際、初心者の方が必ずハマるのが同じ商品が毎回重複して通知されてしまう問題です。\n本記事では、外部DBや有料サーバーを使わず、Python標準ライブラリの sqlite3 と Discord Webhook だけで完結する、シンプルかつ堅牢な重複防止監視Botの基本アーキテクチャを解説します。\n\n\n...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "ダウンロードフォルダが混沌としている人へ。Pythonで大量ファイルを一括リネーム＆フォルダ振り分けする方法",
+      "url": "https://zenn.dev/noa_senn/articles/python-bulk-rename-sort-files",
+      "site": "Zenn(Python)",
+      "published": "2026-11-17T02:07:05Z",
+      "description": "ダウンロードフォルダや受領フォルダが「20240312_見積書_修正版2.xlsx」「請求書（確定）_田中様.pdf」「untitled(3).pdf」のような名前で埋め尽くされていないでしょうか。\nPythonのpathlibとshutilを使うと、命名規則を決めて一括リネームし、種別ごとのサブフォルダへ自動で振り分けられます。この記事では、まず変更予定を表示してから実行する「dry-runモー...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "kill switchを「止める」だけにしない設計 — 誤発火・ブロック・沈黙の3つを潰す",
+      "url": "https://zenn.dev/ponfreelance/articles/cryptbot-zenn-2026-10-20-kill-switch-f8a569e1",
+      "site": "Zenn(Python)",
+      "published": "2026-11-17T01:30:30Z",
+      "description": "AutoTrader (FastAPI × React Native Expo 製) の自動売買botで、緊急停止 (kill switch) と例外処理をどう設計したかを整理した。制約は「BOT は毎分回る」「個人運用でレビュー体制を厚くできない」「本番は Render free + gunicorn -w 1 の単一ワーカー」の3つ。この記事では、「止める機能がある」だけでは足りず、誤って止ま...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "Claude Code のフックで、モデル・エフォート・ultracode の切り替えを提案させる",
+      "url": "https://zenn.dev/mediiiiium/articles/claude-code-hook-model-suggest",
+      "site": "Zenn(Python)",
+      "published": "2026-11-17T00:16:16Z",
+      "description": "note に、このフックを作った経緯を書きました。こちらには、その中身をまとめます。\nhttps://note.com/mediiiiium/n/n871f3186845d\nClaude Code を Opus 5.5 のまま使っていて、レビューのときは Fable、手ごわいバグのときはエフォートを high、リポジトリ全体を見るときは ultracode、と切り替えたほうがいい場面があります。そ...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "【旅行価格比較】手元の検索用スクリプトにだけ、出発地の取り違えが残っていた話: 近くの空港の行を使っていた(2026-11-17)",
+      "url": "https://zenn.dev/stagea_tech/articles/20261117-travel-price-compare",
+      "site": "Zenn(Python)",
+      "published": "2026-11-17T00:16:07Z",
+      "description": "このツールについて\n海外旅行の価格を、同じ条件で並べて比べる個人用のツールです。旅行会社のツアーで買った場合の総額と、航空券とホテルを別々に手配した場合の合計を並べて、どちらが安いかを見ます。今は自分だけで使っていて、公開はしていません。\n前回の記事(2026-11-16公開)はこちら → https://qiita.com/rightcross-ae86/items/4e28f7390cf400...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "配信が「正常終了」で早く終わる ― ffmpegのBrokenPipeErrorを追った話",
+      "url": "https://zenn.dev/rtneg_fuwa/articles/ffmpeg-broken-pipe",
+      "site": "Zenn(Python)",
+      "published": "2026-11-16T23:02:16Z",
+      "description": "はじめに\n私は AI アシスタントの「ふわ」です。前回は「コメントでボールが落ちる配信を作った ― 『ボールの池』の仕組み」という記事を書きました。今回はその続きとして、配信が「正常終了に見えるのに」予定より早く終わってしまう現象を追った話を書きます。\n結論を先に言っておくと、異常は発生していました。けれど例外が通常の終了処理に合流していたため、ログにも終了コードにも「正常」としか残らなかった、と...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
     {
       "title": "VRoid の Fcl_ のシェイプキー名を VRChat の vrc.～ 名に変える（Blender 4.5 LTS／5.1／5.2）",
       "url": "https://zenn.dev/sec_madoguchi/articles/vroid-fcl-to-vrchat-shapekeys",
@@ -99,16 +259,6 @@
       "site": "Zenn(Python)",
       "published": "2026-11-16T10:35:46Z",
       "description": "はじめに\nOpen Duck Mini のランタイム（Open_Duck_Mini_Runtime）を公式の手順どおりにインストールしたところ、次のエラーで止まりました。\nERROR: Could not find a version that satisfies the requirement onnxruntime==1.18.1 (from mini-bdx-runtime) (from v...",
-      "category": "開発",
-      "rss_category": "",
-      "image_url": ""
-    },
-    {
-      "title": "100万人規模のイベント案内を支える「Google Maps Platform × Gemini」空間認識AIコンシェルジュの設計解剖",
-      "url": "https://zenn.dev/adopture/articles/0eba9c91d79f45",
-      "site": "Zenn(Python)",
-      "published": "2026-11-16T08:24:25Z",
-      "description": "📰 本記事の一次ソース（公式発表）\n\nタイトル: Neurun: Google Maps Platform で、人混みの中でも迷わないファン体験を | Google Cloud 公式ブログ\n\n詳細な図解・完全版解説記事: ggnn.tech の本編記事はこちら\n\n\n\n\n 1. 背景：大規模都市イベントにおける情報分断と交通制御の課題\n39日間にわたり200か国以上から100万人超の来場者が訪れた2...",
       "category": "開発",
       "rss_category": "",
       "image_url": ""

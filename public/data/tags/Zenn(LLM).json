@@ -1,14 +1,154 @@
 {
   "site": "Zenn(LLM)",
-  "last_updated": "2026-11-17T00:26:46.016609",
-  "total_articles": 7468,
+  "last_updated": "2026-11-17T08:21:16.511577",
+  "total_articles": 7482,
   "articles": [
     {
-      "title": "回避策は使い回せた：Llama 3.2 1B を QCS6490 で測る—プリフィル 1,024 tok/s、デコード 16.4 tok/s",
-      "url": "https://zenn.dev/anguoyang/articles/d92b24408bbc7b",
+      "title": "VPS に自分専用の AI チャット環境を作る——ノーコード型 AI ツールまで含めた設計の順番",
+      "url": "https://zenn.dev/genhiroko/articles/saba-self-hosted-ai-chat-design",
       "site": "Zenn(LLM)",
-      "published": "2026-11-16T15:12:00Z",
-      "description": "昨日、Qualcomm QCS6490 における初の公開 GenAI 実測として、Qwen3-0.6B のプリフィル 1,555 tok/s／デコード 24.6 tok/s を公開しました。そこに辿り着くには手組みのチェーンが必要でした。公式の AI Hub エクスポートスクリプトが、コンパイラに拒否されるフラグを渡していたからです（--output_names is not supported ...",
+      "published": "2026-11-17T03:49:54Z",
+      "description": "VPS に Open WebUI を立てて、ブラウザから使える自分専用の AI チャットを作る。もう一歩進めて、Dify のような「画面の操作で AI アプリを組み立てるツール」も自分のサーバーで動かす。どちらも、Docker が入った VPS があれば立ち上げ自体は難しくありません。\n難しいのは、立ち上げたあとです。誰がその画面に届くのか、どこで答えを作るのか、壊れたときに何を戻すのか。この3つ...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "効くプロンプトは審査員次第──多言語LLM-as-a-Judgeで戦略効果がモデル間で反転する仕組み",
+      "url": "https://zenn.dev/lixian/articles/llm-judge-multilingual-prompt-robustness",
+      "site": "Zenn(LLM)",
+      "published": "2026-11-17T03:38:54Z",
+      "description": "効くプロンプトは審査員次第──多言語LLM-as-a-Judgeで戦略効果がモデル間で反転する仕組み\n\n TL;DR\nLLM-as-a-Judgeで評価を組むとき、私たちは「Chain-of-Thoughtで理由付けを書かせる」「評価者の役割を与える」といった定番のプロンプト技法をなんとなく拾ってくる。その推奨のほとんどは英語ベンチマークで確立されたもので、別のジャッジモデルや別の言語にそのまま移...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "AIエージェントの一斉リトライを標準ライブラリで再現する｜固定・指数・ジッタ・Retry-Afterを同一条件で比べる",
+      "url": "https://zenn.dev/cauchye_asia/articles/retry-jitter-simulation-429-stdlib",
+      "site": "Zenn(LLM)",
+      "published": "2026-11-17T03:16:48Z",
+      "description": "2026-11-17時点の情報です。\nAIエージェントを複数動かしていると、API の 429（レート制限）にまとめて当たり、全員が同じタイミングで再試行する場面が起こりえます。待ち時間を指数的に伸ばしていても、全員の待ち時間が同じなら、リクエストはまとまって戻ってきます。この記事では、同時に送り始めた200台のクライアントが、上限を超えた分の 429 を受けて再試行する様子を、Python の標...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "LLM に別の LLM の重みを書き換えさせる Weight-Space Programming を、Claude で試してみた",
+      "url": "https://zenn.dev/flinters_blog/articles/d0e738719e0054",
+      "site": "Zenn(LLM)",
+      "published": "2026-11-17T03:00:09Z",
+      "description": "はじめに\nこんにちは。FLINTERSの河内です。\n社内で毎週開いている AI 活用の勉強会で、今回（2026-11-16）は私が担当でした。本編で取り上げたのは、MIT CSAIL のチームが 11 月 2 日にブログで発表した Weight-Space Programming です。小さな LLM の重みを、別の LLM のエージェントに直接書き換えさせたところ、数学のベンチマークの正答率が ...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "禁止語8つが拾ったのは9本中1本——AI下書き20本で機械チェックとAIレビューを数え比べた",
+      "url": "https://zenn.dev/tyuya/articles/sns-draft-machine-check-vs-ai-review",
+      "site": "Zenn(LLM)",
+      "published": "2026-11-17T02:36:11Z",
+      "description": "10月12日、AIに作らせたSNSの下書き7本に、機械チェックをかけました。結果は「問題なし」です。そのあとレビュー担当のAIに読ませると、【重大】が3件出ました（2件がこの7本、1件は前から作り置きしてあった1本）。1つは、農林水産省の「十分に加熱すると身がちぢむ」という説明を、「縮んだら火が通った合図」と逆向きの目安に書き換えたものでした。食中毒に関わる間違いです。\n機械チェックは何も止めず、...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "LLMが出力した「壊れたJSON」を自動修復し、TypeScript型定義とJSON Schemaを即時生成するブラウザ完結ツールの実装",
+      "url": "https://zenn.dev/t_shamoji/articles/6a09a0d9b9586e",
+      "site": "Zenn(LLM)",
+      "published": "2026-11-17T02:05:56Z",
+      "description": "はじめに：日々の開発で「JSONの整形・修復・型定義」に奪われる時間をゼロにしたい\nフロントエンド開発やLLM（大規模言語モデル）を組み込んだアプリケーション開発において、JSONを扱う作業は毎日のように発生します。\nしかし、標準の JSON.parse() は仕様上きわめて厳格であり、実務では以下のようなストレスが頻繁に発生します。\n\n\nLLM（ChatGPT / Claude / Gemini...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "AIに「3行で要約」と頼むと担当者が消える理由：一言で抜け10%→0%",
+      "url": "https://zenn.dev/kosukeozawa/articles/ai-summary-3lines-owner",
+      "site": "Zenn(LLM)",
+      "published": "2026-11-17T01:46:57Z",
+      "description": "会議メモや報告メールを AI に「3行で要約して」と頼むと、読みやすい3行が返ってきます。ただ、その3行から**「誰がやるのか」が静かに消えている**ことがあります。期限の日付は残っているので、ぱっと見では気づきにくい抜け方です。\n架空の業務文書8本（賃貸仲介の会議、管理会社の修繕報告、理事会の文字起こしなど）を、頼み方5通り・2モデル・各3回、合計 240回 要約させて、残るべき事実48個が残っ...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "記憶の検索は1.5秒で打ち切る：「止まっても邪魔しない」設計",
+      "url": "https://zenn.dev/bague/articles/0853f0fa13cc7e",
+      "site": "Zenn(LLM)",
+      "published": "2026-11-17T01:09:19Z",
+      "description": "株式会社BAGUE（バーグ）の伊藤です。\n前回は、ブラウザの拡張機能が「どのサイトに触ってよいか」の話を書きました。その中で「記憶を探す時間には上限があって、間に合わなければ記憶なしでそのまま送る。この話は次の回で」と書いていたので、今回はその続きです。\nBAGUE Memory は、ChatGPT・Gemini・Claude の画面で送信ボタンが押された瞬間に、関係のある記憶を探して、ユーザーの...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "お問い合わせの8割を、AIボットが解決するようになった話",
+      "url": "https://zenn.dev/rimo/articles/701d18b7764669",
+      "site": "Zenn(LLM)",
+      "published": "2026-11-17T01:05:13Z",
+      "description": "問い合わせ対応の自動化に取り組んだ背景\n\n 増え続ける問い合わせと少人数のCS体制\nRimoでは、サービス内のチャットウィジェットから届くお問い合わせに、カスタマーサポート（CS）のメンバーが回答する運用を続けてきました。ところが、利用者の増加に伴って問い合わせ数も増え続け、月に150件を超える状況になりました（154件、164件と増加）。これを2〜3人のCSで分担していたため、1件ずつ丁寧に対応...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "拾った微調整LLMにバックドアがないかを元のモデルとの重みの差から読む",
+      "url": "https://zenn.dev/caphtech/articles/kestrom-inspect-backdoor-weights",
+      "site": "Zenn(LLM)",
+      "published": "2026-11-16T23:32:18Z",
+      "description": "この記事は個人（と会社）の実験の記録です。モデルはQwen3.5-0.8BとQwen3.5-4B（Apache-2.0）、試験の一つでは公開の無検閲版（huihui-ai/Huihui-Qwen3.5-0.8B-abliterated、Apache-2.0）を土台にしました。実装と実行はClaude Codeと一緒に行い、バックドアの仕込みは別のエージェント（GPT）に任せました。\n検査には、私た...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "フロントエンドの logic と UI は、エージェントの責任範囲で分けられるのか",
+      "url": "https://zenn.dev/xtm_blog/articles/20261116-fd1702b0ba06cd",
+      "site": "Zenn(LLM)",
+      "published": "2026-11-16T23:00:05Z",
+      "description": "こんにちは、クロステック・マネジメント Foundation Dept. 所属の水本です。\nFoundation Dept. では、要求仕様書を渡すと、設計から実装、テスト、PR 作成までを AI エージェントが完走する開発基盤を作っています。\nエージェントに工程を自律的に回させるための実行の仕組みを、私たちはエージェントハーネスと呼んでいます（なぜエージェントハーネスで開発パイプラインを作ってい...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "ChatGPTのChat・Work・dotsは何が違う?目的と構成を図で整理する",
+      "url": "https://zenn.dev/monkey_gineer/articles/chatgpt-chat-work-dots-architecture",
+      "site": "Zenn(LLM)",
+      "published": "2026-11-16T22:35:41Z",
+      "description": "2026年のChatGPTには、Chat、ChatGPT Work、dotsという3つの使い方があります。名前は似ていますが、扱う「仕事の単位」がまったく違います。この記事では、3つの目的・違い・構成を図で整理し、どれを選ぶかの判断基準を示します。\n!\n対象読者\n\nChatGPTのChat / Work / dotsの使い分けで迷っているエンジニア\n社内でAIプロダクトを作っていて、「チャット型」...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "Claude CodeのCode Modeで上限は延びる？ トークン約6割減・料金換算は2割前後の実測",
+      "url": "https://zenn.dev/zundamon_tools/articles/claude-code-code-mode-tokens",
+      "site": "Zenn(LLM)",
+      "published": "2026-11-16T22:04:57Z",
+      "description": "Claude Code の Code Mode をオンにすると、5時間や週の上限に届きにくくなる。X ではそんな期待が多く見られましたが、何がどれだけ減るのかは公式に書かれていません。\n同じ依頼をオフとオンで流すと、読み込んだトークンは約12万から約5万へ、約6割減りました。ところが料金に換算した減りは2割前後で、オンのコードの中でコマンドを167回打ったリンク切れ探しと、誤字1か所の修正とで、減...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "LLMを用いたZero-shotランキング手法について",
+      "url": "https://zenn.dev/hukuda222/articles/0b4834c4b24e8c",
+      "site": "Zenn(LLM)",
+      "published": "2026-11-16T17:50:56Z",
+      "description": "TLDR\nJevやDecisions APIといったLLMを使って高速に分類を行うAPIが流行っているため、このアイデアをリランキング手法に応用できないかなぁと思って調べたところ、素人が思いつくようなアイデアは大体論文化されていたという話の紹介になります。\n\n 僕が当初考えたアイデア\nJevやDecisions APIの内部実装は非公開なのでわかりませんが、高速に分類を行う手法は多くの人が考察して...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "さくらの AI Engine を自作の多役割チャットに足して、同じモデル・別ホストで比べてみた",
+      "url": "https://zenn.dev/tsukitsukiss/articles/sakura-ai-engine-challenge",
+      "site": "Zenn(LLM)",
+      "published": "2026-11-16T16:36:50Z",
+      "description": "はじめに\n私は、複数の LLM に役割を与えて会話させるアプリを、自作しています。2024 年の中ごろから LangChain を使って作っていて、Git で管理し始めたのは 2025 年 7 月からです。そこから次の 2 つに発展してきました。\n\n\nMultiRoleChat: ロール（役割）ごとに LLM のプロバイダとモデルを設定して、複数の AI に会話させるアプリです。設定をエディタで直...",
       "category": "AI・技術",
       "rss_category": "",
       "image_url": ""
