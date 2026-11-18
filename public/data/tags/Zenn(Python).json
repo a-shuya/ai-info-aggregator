@@ -1,7 +1,7 @@
 {
   "site": "Zenn(Python)",
-  "last_updated": "2026-11-18T16:35:17.013822",
-  "total_articles": 7962,
+  "last_updated": "2026-11-18T23:07:35.637116",
+  "total_articles": 7966,
   "articles": [
     {
       "title": "暗号資産ファンディング金利の実質年利計算とWebCrypto静的納品アーキテクチャ",
@@ -104,26 +104,6 @@
       "image_url": ""
     },
     {
-      "title": "AIのサブエージェントを「課」に分けて、帳簿と承認で動かす小さなキットを公開しました",
-      "url": "https://zenn.dev/hachihou_system/articles/389a2800e92f64",
-      "site": "Zenn(Python)",
-      "published": "2026-11-18T08:54:14Z",
-      "description": "本記事は個人の運用記録とツールの紹介です。紹介するキットは現実のお金・暗号資産を扱いません。\n\nAIに毎日の作業を任せていると、サブエージェント（調べもの係、実装係、検証係…）を何人も動かすようになります。便利な一方で、次のことが分からなくなってきました。\n\nどの係が、どれだけ使ったのか\n次に何をやらせるのが良いのか\nAIが出した変更を、人間がどこで止められるのか\n\nそこで、サブエージェントを「課...",
-      "category": "開発",
-      "rss_category": "",
-      "image_url": ""
-    },
-    {
-      "title": "Claude Codeに危ないコマンドを打たせないフック — AIが作った安全装置は何も止めていなかった",
-      "url": "https://zenn.dev/miokuri_ai/articles/c8f93358846ac3",
-      "site": "Zenn(Python)",
-      "published": "2026-11-18T08:30:06Z",
-      "description": "この記事について\n目的: Claude Code に rm -rf や git reset --hard のような、取り返しのつかないコマンドを打たせないための「フック」の作り方を、動くコード付きで説明します。\n読者: Claude Code にコードを書かせている人。フックという仕組みを聞いたことはあるが、まだ入れていない人。\n筆者の背景: 筆者は個人で、競艇の予測AIを2年以上、Claude ...",
-      "category": "開発",
-      "rss_category": "",
-      "image_url": ""
-    },
-    {
       "title": "【FastAPI】金融系バックエンドを見据えた共通API基盤・検証環境・CI/CDのMVPをゼロから構築した記録🏦",
       "url": "https://zenn.dev/ai_training_nbs/articles/4d575ef4d9f528",
       "site": "Zenn(Python)",
@@ -164,11 +144,71 @@
       "image_url": ""
     },
     {
-      "title": "OpenAI API の Function Calling で外部ツールを連携する",
-      "url": "https://zenn.dev/akinori901/articles/20261011-plan077",
+      "title": "SQLiteのページ送りで同時刻の行を落とさない：時刻とIDを一緒にカーソルへ入れる",
+      "url": "https://zenn.dev/starpole/articles/4172a8e6b7d1af",
       "site": "Zenn(Python)",
-      "published": "2026-11-18T00:05:07Z",
-      "description": "OpenAI API の Function Calling で外部ツールを連携する\n\n 概要\nLLM は学習済みの知識で文章を生成するのは得意ですが、「今日の天気」「社内 DB の在庫数」「外部 API の実行結果」のような、モデルの外側にある最新・固有の情報は知りません。この隙間を埋める仕組みが Function Calling（現在の OpenAI API では tools パラメータ）です。...",
+      "published": "2026-11-18T05:12:17Z",
+      "description": "一覧の続きを取得するとき、前のページの最後にあった時刻を保存して、次は「その時刻より後」を検索する。短いコードで書けますが、同じ時刻の行がページをまたぐと、まだ表示していない行まで飛ばしてしまいます。\nこの記事ではPythonとSQLiteの架空データで欠落を再現し、(created_at, id)の組で続きを取得します。対象は更新されないデータを昇順に読む場合です。並行更新への対応や性能測定は扱...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "M4 MacBook Air で MuJoCo 4 × Gymnasium 1.4：ハマり3つと、MPS で学習に約13倍かかった実測",
+      "url": "https://zenn.dev/macsimlab/articles/37ce87f9a4a33e",
+      "site": "Zenn(Python)",
+      "published": "2026-11-18T04:44:13Z",
+      "description": "NVIDIA（CUDA）の GPU も実機のロボットも無しで、MacBook Air 1台だけでロボットの強化学習（MuJoCo × Gymnasium × Stable-Baselines3 の PPO）を試しました。\n2026年11月時点の最新版（MuJoCo 4.0.1・Gymnasium 1.4.0）で確かめた、引っかかった所3つと、Mac の GPU（MPS）で学習すると CPU の約1...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "保存に失敗したのに「正常終了しました」と出るPythonの業務ツールの直し方",
+      "url": "https://zenn.dev/cutlet_of_pork/articles/python-swallowed-error-false-success-message",
+      "site": "Zenn(Python)",
+      "published": "2026-11-18T04:04:25Z",
+      "description": "出力先の Excel を開いたまま業務ツールを動かすと、保存は PermissionError で失敗する。それなのに終了画面は「完了: 全ての処理が正常終了しました」になる。業務ツールのリポジトリを点検したところ、この形の不具合を、4 つのリポジトリの 7 本の PR で直した（2026-10-27〜30）。必須のダウンロードが 1 つ失敗したとき、加工で列が足りなかったとき、照会の結果が 0 ...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "Binance の先行は 1 年で変わったか — 2025 年 8 月と 2026 年 8 月を 100 ms で比べる",
+      "url": "https://zenn.dev/kamakuraquant/articles/1291db5844632f",
+      "site": "Zenn(Python)",
+      "published": "2026-11-18T03:33:11Z",
+      "description": "要旨。 Binance の BTC・ETH・XRP 現物と、GMO の同銘柄レバレッジ市場を、2025 年 8 月と 2026 年 8 月で比較しました。100 ms 単位の相関曲線のピークは、BTC が 500 → 500 ms、ETH が 600 → 500 ms、XRP が 600 → 500 ms。ピークは 1 年後も 500〜600 ms の帯にありました。一方、Binance の値動き...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "請求書PDFの表を毎回手入力している人へ。pdfplumberとpandasでCSVに変換する方法",
+      "url": "https://zenn.dev/noa_senn/articles/python-pdf-table-to-csv",
+      "site": "Zenn(Python)",
+      "published": "2026-11-18T02:09:34Z",
+      "description": "PDFで届く請求書や明細書の表を、Excelに手で打ち込む作業を繰り返していないでしょうか。ページ数が多いと転記ミスも起きますし、時間もかかります。\nPythonのpdfplumberというライブラリを使うと、PDFの中の表データをそのままCSVに書き出せます。インストールは1コマンドで終わり、基本的な使い方は10行程度のコードで動きます。この記事では、罫線（表の線）が引かれた一般的な表を対象に、...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "エンジニア視点で語る！Pythonで学ぶマクロ経済学入門 〜第1回から第90回まで総復習スペシャル〜",
+      "url": "https://zenn.dev/maszkot/articles/63fc164b748817",
+      "site": "Zenn(Python)",
+      "published": "2026-11-18T02:00:16Z",
+      "description": "https://qiita.com/maskot1977/items/21f4ef58e82ebb1042b8\nDJミオ：こんばんは！ラジオ教育番組「エンジニア視点で語る！Pythonで学ぶマクロ経済学入門」、ナビゲーターのDJミオです。\nDJレン：こんばんは、DJレンです。今回はかなり濃いです。Qiita連載「初心者でもわかる！Pythonで学ぶマクロ経済学入門」第1回から第90回までの総復習を...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "なぜ0.1+0.2は0.3にならないのか：浮動小数点数の仕組みと、比べ方・お金の扱い",
+      "url": "https://zenn.dev/masafumi_ai/articles/00016-float-0p1-0p2",
+      "site": "Zenn(Python)",
+      "published": "2026-11-18T01:00:05Z",
+      "description": "何が: 0.1 + 0.2 は 0.30000000000000004 になり、=== 0.3 は false になる。JavaScript の不具合ではない。0.1 を 2 進数でぴったり表せないのが原因だ。この記事では、実際に保存されている値と、足し算がその値になる流れを数字で追う\n\n誰が対象: 足し算や比較を書くエンジニア。金額や割合、センサーの値を float や double で扱ってい...",
       "category": "開発",
       "rss_category": "",
       "image_url": ""
