@@ -1,8 +1,148 @@
 {
   "site": "Zenn(LLM)",
-  "last_updated": "2026-11-18T07:18:55.363145",
-  "total_articles": 7505,
+  "last_updated": "2026-11-18T16:35:17.013822",
+  "total_articles": 7518,
   "articles": [
+    {
+      "title": "Amazon Bedrock AgentCore Gatewayの推論ターゲットでモデルフォールバックを試してみた",
+      "url": "https://zenn.dev/fusic/articles/bc2ef3f52b0e3c",
+      "site": "Zenn(LLM)",
+      "published": "2026-11-18T15:44:53Z",
+      "description": "はじめに\nFusicのレオナです。\nAmazon Bedrock AgentCore Gateway(以下、AgentCore Gateway)の推論ターゲットに、失敗したときに別のモデルへ切り替えるモデルフォールバックが追加されました[1]。呼び出す側のコードにリトライやフォールバックを書かなくても、ゲートウェイのルールにフォールバック先と切り替える条件を設定しておけば、AgentCore Ga...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "聞きながら話す音声 AI「Haru-4B」を Mac で動かして、AI 同士にお昼ごはんを相談させてみた",
+      "url": "https://zenn.dev/lecto/articles/6406d68580910b",
+      "site": "Zenn(LLM)",
+      "published": "2026-11-18T14:36:13Z",
+      "description": "はじめに\n2026 年 11 月 13 日、higurashi が日本語でも話せる音声対話モデル Haru-4B を公開しました。いちばんの特徴は、相手の声を聞きながら、同時に話せる (全二重、full-duplex) ことです。相づちを打ったり、話の途中で割り込んだりできます。\n重みは Apache-2.0 で公開されていて、Apple Silicon の Mac 向けの MLX 版もあります。...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "GB10 1 台とクラウドのハイブリッド LLM — 正解率・秒・Wh・ドルを同じ物差しで測って振り分ける",
+      "url": "https://zenn.dev/wisteriacorp/articles/wisteria-904d6a1047e6",
+      "site": "Zenn(LLM)",
+      "published": "2026-11-18T14:05:35Z",
+      "description": "NVIDIA GB10（128GB ユニファイドメモリ）のマシン 1 台でローカル LLM を常時動かし、クラウドの LLM と組み合わせて、個人の自動化を 3 か月半ほど回しています。以前の記事では、振り分けの考え方を言葉で書きました（個人 AI 基盤の設計）。今回は数字で振り分けを決めるために、同じ仕事をローカルとクラウドの 6 方式に投げ、正解率・時間・電力・料金を同じ表に並べました。\n\n\n...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "APIエラーとリトライの基本 — 401・429・5xxを切り分け、SDKの自動再試行に任せる範囲を決める",
+      "url": "https://zenn.dev/salesanalytics/articles/f5b3081ba16be9",
+      "site": "Zenn(LLM)",
+      "published": "2026-11-18T14:05:06Z",
+      "description": "生成AI APIを繰り返し使っていると、401（認証）、429（レート制限・残高不足）、5xx（サーバー側）、タイムアウトといったエラーに必ず出会います。このとき最もしてはいけないのが、どんなエラーにも「もう一度送る」ことです。APIキーが間違っていれば何度送っても失敗しますし、その間も失敗したリクエストはレート制限に数えられます。\nこの記事では、エラーの切り分けと再試行の考え方の要点をコンパクト...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "ローカルLLMをデスゲームに参加させてみた",
+      "url": "https://zenn.dev/bmexami/articles/local-llm-death-game",
+      "site": "Zenn(LLM)",
+      "published": "2026-11-18T13:44:49Z",
+      "description": "ローカル LLM に、言われた作業を最後まで間違えずにやらせたい。どうすればそうなるのかを、ローカル LLM のデスゲームで確かめました。部屋から脱出するゲームで、失敗するとそのまま死にます。\nまずは、検証するための sandbox を Claude Code に作らせるところから始めました。\n\n sandbox を作る\n小さな部屋の中で、二人のキャラが自分で考えて動く sandbox です。部屋...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "Gemini CLI に YouTube の URL を渡したら「見られない」。字幕を渡して出た切り抜き候補を、grep で照合した",
+      "url": "https://zenn.dev/ciel_lab/articles/bab71bcd767740",
+      "site": "Zenn(LLM)",
+      "published": "2026-11-18T12:38:27Z",
+      "description": "長い配信の録画から切り抜きの候補を5つ出させる、という試しを1回やりました。\nGemini CLI に YouTube の URL を渡すと、動画は見られない、と返ってきました。\nそこで字幕とコメントの文字を渡し直し、候補が返ってきました。その候補を字幕と突き合わせた手順と、合わなかった所を書きます。\nAI の性能を比べる話ではありません。試したのは Gemini CLI で、動画の中身を見られる...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "「AIにペルソナを」と言ったら、AIが別案を出した🥊 プロンプトも差し替えずに挑戦者と並走させる",
+      "url": "https://zenn.dev/charge0315/articles/775fd46c143656",
+      "site": "Zenn(LLM)",
+      "published": "2026-11-18T11:55:19Z",
+      "description": "みなさん、こんにちは！\n「ALPHA FORGE 開発秘話」の第35話です。\n「AIにペルソナを与えましょうか」。そう聞いたら、AIは「役柄は付けない方がいいです」と返してきました。\n代わりに出てきたのは、今のプロンプトを1文字も変えずに、新しい版を横で走らせて成績で比べる案です🥊\n日本株のデータ分析端末「ALPHA FORGE（アルファフォージ）」を、Claude Code と二人三脚で個人開発...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "AWS Continuum ペンテスティング機能 検証レポート (LLM App 編)",
+      "url": "https://zenn.dev/aws_japan/articles/524d87d9c2384d",
+      "site": "Zenn(LLM)",
+      "published": "2026-11-18T10:51:15Z",
+      "description": "対象読者: AWS Continuumをまだ導入検討段階にあるユーザー企業のIT部門(特に、チャットボットや生成AI機能を自社アプリケーションに組み込んでいる、またはこれから組み込む予定の組織)\n検証期間: 2026年11月\n前提: 本レポートは「AWS Continuumペンテスティング機能 検証レポート」(レポート1)の内容を前提とする。基本的な仕組み・料金・用語については、まずレポート1を参...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "AIを活用した社内マニュアル作成で属人化を防ぐ構造化手順と改訂チェックリスト【コピペ用プロンプト2本＋5項目チェック】",
+      "url": "https://zenn.dev/andyailab/articles/e8a69f84e5961d",
+      "site": "Zenn(LLM)",
+      "published": "2026-11-18T10:38:58Z",
+      "description": "退職する先輩が残した引き継ぎ資料は、箇条書き5行だけ。\n「あとは見れば分かるよ」……分からないです。\nこの記事の結論： AIを使って雑多な業務手順を「構造化されたマニュアル」に変換する具体的なステップ。\n業務の属人化を防おうとマニュアルを作っても、文章が抽象的すぎて現場で使えない。\n業務が変わるたびに修正が追いつかず、結局誰も見なくなる。\n担当者によって書き方がバラバラになり、属人化は一向に解消さ...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "PLaMo 3 Translate 2B／0.8BをVRAM 6GBで実測：短文翻訳10問は10/10、長文は2つとも打ち切り",
+      "url": "https://zenn.dev/localai_lab/articles/c6993d321c618d",
+      "site": "Zenn(LLM)",
+      "published": "2026-11-18T10:32:04Z",
+      "description": "翻訳特化の LLM PLaMo 3 Translate の 2B と 0.8B（PFN 公式 GGUF の Q4_K_M）を、VRAM 6GB の GPU で動かした実測です。llama.cpp b12340 の llama-server、-ngl 99、temperature 0 で、各構成1回（生成 tok/s は3回の中央値）です。\n見たのは、短文の翻訳10問（日→英5問・英→日5問）の正答...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "llama.cpp v1 を内蔵 GPU で試したら、長い入力の読み込みは約 2 倍、MoE キャッシュは遅くなった",
+      "url": "https://zenn.dev/maruhana/articles/llamacpp-v1-igpu-prompt-2x-moe-cache",
+      "site": "Zenn(LLM)",
+      "published": "2026-11-18T10:22:13Z",
+      "description": "!\n先に、この記事の要約（専門用語なし）\n\n手元で AI の言葉のモデルを動かす道具 llama.cpp が、バージョン 1.0.0 になった。性格の違う 2 台の PC で、前の版と比べた\nメインメモリーを GPU と分け合う PC（MSI Claw 8 AI+、内蔵 GPU）では、長い文章を読み込む速さが約 2 倍になった。短い文章では 1 割あまり、文章を書く速さは変わらなかった\n1.0.0...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "大手9社のAI Agent求人を20件読んだ — JDが示す次の2〜3年と、誰も採っていない「身元・権限検証」",
+      "url": "https://zenn.dev/kokotatan/articles/ai-agent-jd-20-identity-permission-verification",
+      "site": "Zenn(LLM)",
+      "published": "2026-11-18T07:59:04Z",
+      "description": "「大手のAI Agent採用の求人票（JD）を読むと、今後2〜3年AIがどこへ向かうか分かる。業界分析を100本読むより役に立つ」という投稿を見かけた。\n半分ネタだと思ったが、実際にやってみた。OpenAI、Anthropic、Google DeepMind、Meta、Microsoft、ByteDance、Alibaba、Xiaohongshu、Tencent。米5社と中国4社のAI Agent...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "【ゆるっとAI基礎 #5】AIは、渡したことを全部覚えていられるの？",
+      "url": "https://zenn.dev/daphne/articles/ai-context-limit",
+      "site": "Zenn(LLM)",
+      "published": "2026-11-18T07:00:07Z",
+      "description": "前回は、ツールを足すことでAIがメモに書き足せるようになる、という話をした。\nhttps://zenn.dev/daphne/articles/ai-readable-form\n第1回からここまで、記憶を持たないAIに「覚えておいてほしいこと」をどう渡すか、という話をしてきた。\nじゃあ、こちらが渡したことなら、AIはいくつでも全部覚えていられるんだろうか。\n先に結論から言う。\n一度にAIに渡せる量...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "llama.cppの新機能で弩級モデルをローカルで動かそう",
+      "url": "https://zenn.dev/satoshi_yoneda/articles/moe-cache-cpu-share",
+      "site": "Zenn(LLM)",
+      "published": "2026-11-18T03:44:39Z",
+      "description": "ローカル推論エンジンllama.cppが、区切りとなるversion 1.0になりました。version 1.0における目玉の機能のひとつが、--moe-cache-cpu-shareです。この機能を使うことで、従来より効率的に大型のモデルをllama.cppで動作させられるようになりました。\nというわけで、--moe-cache-cpu-shareを使って大型のモデルをローカルで動かしてみようよ...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
     {
       "title": "人間にもAIにも読まれるサイトを作る：AIO入門（セマンティックHTML・JSON-LD・robots.txt・llms.txt）",
       "url": "https://zenn.dev/koheip/articles/aio-site-for-humans-and-ai-agents",
@@ -189,16 +329,6 @@
       "site": "Zenn(LLM)",
       "published": "2026-11-17T07:27:41Z",
       "description": "ふとした拍子に、Claude Codeの履歴が、その人のAIへの習熟度を一番示してるんじゃないかと思い「AI肩書き診断（My AI Title）」というClaude Codeプラグインを作ってみました。\nClaude Code のセッションログを読んで、AIとの付き合い方を6つの軸で採点し、トレーディングカード風の画像にします。\n\n架空のスコアで作ったサンプルです\nこの記事では、作る途中でぶつかっ...",
-      "category": "AI・技術",
-      "rss_category": "",
-      "image_url": ""
-    },
-    {
-      "title": "ローカルLLM入門",
-      "url": "https://zenn.dev/port_inc/articles/ff974c7456f4db",
-      "site": "Zenn(LLM)",
-      "published": "2026-11-17T07:17:24Z",
-      "description": "!\n2026年10月にポート株式会社として公立はこだて未来大学で行ったゲスト講義「生成AI × UI/UX」の前半2章に、講義のあとで調べた内容を加えて記事にしたものです。\n数値・モデル名・価格は 2026年10月30日時点 のものです。\n\nこんにちは、ポートのTeslaです。\n公立はこだて未来大学にてローカルLLMに関する講義を行いました。\nこの記事では、LLMを手元のPCやブラウザで動かすため...",
       "category": "AI・技術",
       "rss_category": "",
       "image_url": ""

@@ -1,8 +1,168 @@
 {
   "site": "Zenn(Python)",
-  "last_updated": "2026-11-18T07:18:55.363145",
-  "total_articles": 7947,
+  "last_updated": "2026-11-18T16:35:17.013822",
+  "total_articles": 7962,
   "articles": [
+    {
+      "title": "暗号資産ファンディング金利の実質年利計算とWebCrypto静的納品アーキテクチャ",
+      "url": "https://zenn.dev/tetoka_po/articles/av-corp-funding-carry-simulator",
+      "site": "Zenn(Python)",
+      "published": "2026-11-18T12:54:48Z",
+      "description": "往復手数料を控除した実質ファンディング年利(APR)の算出\n8時間ごとのファンディングレート（直近参考値 0.01%・単純年換算 10.95%）からエントリー・エグジットの往復手数料を差し引くことで、保有期間ごとの実質利回りを定量比較できます。\n\n ブラウザ上で試せる無料シミュレーター\n\n無料・ファンディング実質年利計算機: https://tetokapo.github.io/ai-autono...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "Pythonで共振を再現して、異常で振れが増える場合と減る場合を確かめる",
+      "url": "https://zenn.dev/evofauna/articles/ee95037d45df81",
+      "site": "Zenn(Python)",
+      "published": "2026-11-18T12:22:55Z",
+      "description": "機械を外から揺らし続けると、ある速さのときだけ揺れが極端に大きくなります。共振 です。\nこの記事では、ばね・おもり・ダンパの運動方程式で共振を再現し、\nばねやダンパが劣化すると 振れが増えることも、減ることもある ことを Python で確かめます。\n前回の記事では、たたいて放したあとの揺れを、固有振動数と減衰比の2つの数字にまとめました。\n今回は、外から揺らし続けたときを見ます。\n\n使うのは n...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "Pythonで機械の揺れを2つの数字にして、異常の種類を見分ける(固有振動数と減衰比)",
+      "url": "https://zenn.dev/evofauna/articles/00d860db6505b1",
+      "site": "Zenn(Python)",
+      "published": "2026-11-18T12:18:23Z",
+      "description": "機械の振動を見て異常に気づきたい。でも、手元に壊れた機械のデータはない。\nそこで、運動方程式で正常と異常の揺れを自分で作り、見分け方を確かめます。\nこの記事では、ばね・おもり・ダンパの揺れを 固有振動数 と 減衰比 の2つの数字にまとめ、\nばねの劣化とダンパの劣化が、2つの数字の上で 別々の向きに動く ことを Python で確かめます。\n\n使うのは numpy・scipy・matplotlib ...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "同じ地点なのに、縮尺を1段細かくしたら指定区域が1件→0件になった",
+      "url": "https://zenn.dev/shinsei99/articles/zoom-changes-the-answer",
+      "site": "Zenn(Python)",
+      "published": "2026-11-18T12:12:09Z",
+      "description": "土地の災害リスク（洪水・土砂災害・津波・高潮の指定区域）を、公的機関が配信している\n地図データから自動で取って、書類の欄に入れる処理を書きました。\nやることは単純です。地点の緯度経度から、その地点を含むタイルを取り、\n返ってきた図形に対して地点が内側か外側かを自分で判定する。\n別の項目（用途地域）で同じ叩き方をしていたので、タイル計算・通信・内外判定は1本に寄せました。\n動かしてみると、それらしい...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "UV-Visスペクトルを目で読むのをやめる｜Pythonでピーク検出（find_peaks）を自動化する",
+      "url": "https://zenn.dev/hathi0808/articles/ch2-spectrum",
+      "site": "Zenn(Python)",
+      "published": "2026-11-18T11:12:43Z",
+      "description": "UV-Visスペクトルを取ったあと、ピークが何nmにあるかをグラフを目で見て読み取っていませんか。試料が増えれば増えるほど手間ですし、読み取りのブレも出ます。\nPythonなら、スペクトルを重ねて描くところからピーク位置の自動検出までを一度コードにしておけば、次からはデータファイルを差し替えて実行するだけです。この記事では、scipyのfind_peaksを使って、UV-Visスペクトルのピークを...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "Excelでボード線図を描かせるな｜生成AIで伝達関数解析をもっと身近にする活動",
+      "url": "https://zenn.dev/qwerewq/articles/6440de2d18c703",
+      "site": "Zenn(Python)",
+      "published": "2026-11-18T11:04:52Z",
+      "description": "Excelでボード線図を描かせるな｜生成AIで伝達関数解析をもっと身近にする活動\n\n 1. Excelでボード線図を描く時代を終わらせたい\n制御工学やアナログ回路設計では、伝達関数からボード線図を描き、ゲイン余裕や位相余裕を確認することが重要です。\nしかし、Excelで周波数を設定し、複素数を計算し、ゲインと位相を求め、グラフを整える作業には時間がかかります。\n特に厄介なのが、複素数平面を扱う解析...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "AIが書いたコードを読む練習1：素数判定の「正しさ」をどう確かめる？",
+      "url": "https://zenn.dev/riko111/articles/97003febb578e9",
+      "site": "Zenn(Python)",
+      "published": "2026-11-18T10:49:43Z",
+      "description": "素数判定のコードに、i += 6。　なぜ、6ずつ進めるの？\n\n\n はじめに\ndef is_prime(n: int) -&gt; bool:\n    if n &lt; 2:\n        return False\n    if n &lt; 4:          # 2, 3\n        return True\n    if n % 2 == 0 or n % 3 == 0:\n     ...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "同じ出目でも、疑い方は変わる——事前確率とベイズ更新【第2回】",
+      "url": "https://zenn.dev/okamasaya/articles/chinchiro-bayes-02-priors",
+      "site": "Zenn(Python)",
+      "published": "2026-11-18T09:59:27Z",
+      "description": "サイコロを振ったら、4・5・6ばかりが出る。\n1回なら、普通のサイコロでもよくあることです。それが3回、5回、7回と続くと、だんだん気になってきます。\nでは、7回続いた時点で、「イカサマなのでは？」という疑いは、どのくらいになるのでしょうか。\n今回のモデルでは、同じ7回の記録でも、最初に置く確率が1%なら約56%、50%なら約99%になります。\n差を生むのが、観測前の出発点となる事前確率です。同じ...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "WSL Containers（wslc）ハンズオン16選：基本操作からPython・C#連携まで",
+      "url": "https://zenn.dev/gsun/articles/70c9db1d0efdf8",
+      "site": "Zenn(Python)",
+      "published": "2026-11-18T09:39:40Z",
+      "description": "はじめに\nWSL Containers（wslc）を試してみて、今後のWindowsアプリケーションの作り方が大きく変わるかもしれないと感じました。\nWindows側で画面やファイルを扱い、データ処理などはLinuxコンテナーに任せる。C#からコンテナーを直接操作することもできるので、いろいろな使い方が考えられそうです。\n特に、開発環境の準備やアプリケーションの配布、更新などが、これまでより扱いや...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "Claude Code に任せて放っておくための安全設計 ― ハーネスエンジニアリングの「守り」を Windows で作る",
+      "url": "https://zenn.dev/tazuna/books/8b22b0dc4758dc",
+      "site": "Zenn(Python)",
+      "published": "2026-11-18T09:17:05Z",
+      "description": "AI エージェントに作業を任せて席を離れると、「ファイルを消される」「お金がかかる操作をされる」「長い処理がスリープや更新で止まる」の 3 つの事故が起きます。AI が安全に、確かめられながら働けるよう周りの仕組みを作る「ハーネスエンジニアリング」のうち、本書は事故を防ぐ「守り」の部分を、WSL を使わない Windows で作ります。権限の設定、PreToolUse フック、スリープ対策、止まっ...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "AIのサブエージェントを「課」に分けて、帳簿と承認で動かす小さなキットを公開しました",
+      "url": "https://zenn.dev/hachihou_system/articles/389a2800e92f64",
+      "site": "Zenn(Python)",
+      "published": "2026-11-18T08:54:14Z",
+      "description": "本記事は個人の運用記録とツールの紹介です。紹介するキットは現実のお金・暗号資産を扱いません。\n\nAIに毎日の作業を任せていると、サブエージェント（調べもの係、実装係、検証係…）を何人も動かすようになります。便利な一方で、次のことが分からなくなってきました。\n\nどの係が、どれだけ使ったのか\n次に何をやらせるのが良いのか\nAIが出した変更を、人間がどこで止められるのか\n\nそこで、サブエージェントを「課...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "Claude Codeに危ないコマンドを打たせないフック — AIが作った安全装置は何も止めていなかった",
+      "url": "https://zenn.dev/miokuri_ai/articles/c8f93358846ac3",
+      "site": "Zenn(Python)",
+      "published": "2026-11-18T08:30:06Z",
+      "description": "この記事について\n目的: Claude Code に rm -rf や git reset --hard のような、取り返しのつかないコマンドを打たせないための「フック」の作り方を、動くコード付きで説明します。\n読者: Claude Code にコードを書かせている人。フックという仕組みを聞いたことはあるが、まだ入れていない人。\n筆者の背景: 筆者は個人で、競艇の予測AIを2年以上、Claude ...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "【FastAPI】金融系バックエンドを見据えた共通API基盤・検証環境・CI/CDのMVPをゼロから構築した記録🏦",
+      "url": "https://zenn.dev/ai_training_nbs/articles/4d575ef4d9f528",
+      "site": "Zenn(Python)",
+      "published": "2026-11-18T07:43:26Z",
+      "description": "1. 開発目的と背景\nバックエンドAPIを複数開発する現場では、認証・ログ出力・エラーハンドリング・タイムアウト・リトライ制御といった非機能要件をアプリケーションごとに個別実装すると、品質のばらつきや重大なセキュリティ事故（認証トークンや個人情報のログ出力など）につながります。\nそこで今回、将来的な AWSのコンテナ実行環境（ECS / Fargate等）への移行 を見据え、以下の4点を達成するM...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "pandas merge_asof tolerance & direction: 6 look-ahead pitfalls",
+      "url": "https://zenn.dev/dustinliang/articles/b1ea23d96b71a0",
+      "site": "Zenn(Python)",
+      "published": "2026-11-18T06:16:46Z",
+      "description": "To join news timestamps to price bars without look-ahead bias, use pd.merge_asof(news, bars, on=&quot;ts&quot;, direction=&quot;backward&quot;, tolerance=pd.Timedelta(...)) with both frames sorted by ...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "巣平巣　隠蔽打",
+      "url": "https://zenn.dev/fygar256/articles/a9296d472679b3",
+      "site": "Zenn(Python)",
+      "published": "2026-11-18T05:52:08Z",
+      "description": "claudeに作らせた'隠蔽打'こと、'Space Invader'ゲームです。\npython inv.pyで動きます。pygame、pythonが動くターミナル環境でならどのマシンでも動作すると思います。\n\ninv.py\n&quot;&quot;&quot;\nWireframe Space 隠蔽打 — pygame\nControls: LEFT/RIGHT to move, SPACE to s...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "時計を注入して時刻依存のPythonコードをユニットテストする",
+      "url": "https://zenn.dev/perchanceaiio/articles/50ba5c05c5dd8f",
+      "site": "Zenn(Python)",
+      "published": "2026-11-18T05:34:08Z",
+      "description": "datetime.now() を業務ロジックの中で直接呼ぶと、ユニットテストが実行時刻に縛られます。期限の直前と直後、ちょうど期限の瞬間といった境界を、実行した日や時刻に依存せずに再現できません。ここでは Python の標準ライブラリだけを使い、時計を呼び出し側から注入する方法を短い例で示します。\n方針は次の3点です。\n\n現在時刻は Callable[[], datetime] として受け取る\n...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
     {
       "title": "OpenAI API の Function Calling で外部ツールを連携する",
       "url": "https://zenn.dev/akinori901/articles/20261011-plan077",
@@ -59,16 +219,6 @@
       "site": "Zenn(Python)",
       "published": "2026-11-17T23:00:06Z",
       "description": "&lt;!--\n公開前チェック（Zennには表示されない）\n\n\n 実行して確かめること：（1）テストモードのStripeから subscriptions を取得して Delta に保存する（USE_STRIPE_API = True）。（2）ワークスペースのノートブックから api.stripe.com に届くか。届かない場合は USE_STRIPE_API = False の架空データ版で通すこ...",
-      "category": "開発",
-      "rss_category": "",
-      "image_url": ""
-    },
-    {
-      "title": "【米1,250名調査】企業の49%でAI施策が遅延・中止？Google Cloud最新調査と工数診断",
-      "url": "https://zenn.dev/adopture/articles/009504dbe8b14f",
-      "site": "Zenn(Python)",
-      "published": "2026-11-17T22:43:29Z",
-      "description": "📰 本記事の一次ソース（公式発表）\n\nタイトル: 最新の調査により、企業がレガシー ソフトウェアと AI モダナイゼーションの狭間で立ち往生していることが明らかに | Google Cloud 公式ブログ\n\n詳細な解説記事: ggnn.tech の本編記事はこちら\n\n\n\n\n 1. 概要：『The Innovation Paradox 2026』の主要ファクト\nGoogle CloudとHypoth...",
       "category": "開発",
       "rss_category": "",
       "image_url": ""
