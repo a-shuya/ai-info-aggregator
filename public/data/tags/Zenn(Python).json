@@ -1,14 +1,154 @@
 {
   "site": "Zenn(Python)",
-  "last_updated": "2026-11-17T17:48:02.055599",
-  "total_articles": 7924,
+  "last_updated": "2026-11-18T00:02:10.027794",
+  "total_articles": 7938,
   "articles": [
     {
-      "title": "CIの合否は手元で、採点だけクラウドで ― LLM評価をハイブリッドLLMで回す構想",
-      "url": "https://zenn.dev/uenonao/articles/5b6a2241392046",
+      "title": "Forms の自動回答を Claudeにやらせる",
+      "url": "https://zenn.dev/ai_daigakusei/articles/microsoft-forms-draft-fill-human-submits",
       "site": "Zenn(Python)",
-      "published": "2026-11-17T08:10:01Z",
-      "description": "「要約の質」や「回答の丁寧さ」のように、機械的にチェックできない性質をどうテストするか。よく使われるのが、別のLLMに採点させる LLM-as-a-Judge です。\n便利な方法ですが、その点数をそのままCIの合否（しきい値で落とす）に使うと、困ったことが起きます。さらに、評価を全部クラウドに任せると、APIの呼び出し回数と料金もふくらみます。\nこの記事は、Zennfes Autumn 2026「...",
+      "published": "2026-11-17T17:38:30Z",
+      "description": "!\n一言でいうと：授業の課題が Microsoft Forms で出ることが多いので、Claude Code が作った答えの下書きを、フォームの欄に入れるところまで自動にしました。送信を押すかどうかは、入った全文を PC で読んでから自分が決めます。\n\n\n この記事でできるようになること\n課題のフォームのアドレスを渡すと、設問を読み取って、答えの下書きをフォームの欄に入れておいてくれる仕組みです。...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "Claude Code の会話記録から「今日AIと何時間作業したか」を数えて、カレンダーにする",
+      "url": "https://zenn.dev/ai_daigakusei/articles/claude-code-daily-ai-hours-calendar",
+      "site": "Zenn(Python)",
+      "published": "2026-11-17T16:45:42Z",
+      "description": "!\n一言でいうと：Claude Code が手元に残している会話の記録から、毎日「AI と何時間作業したか」を数え、GitHub の草のようなカレンダーにして自分のページに載せる記事です。\n\n\n この記事でできるようになること\n自分のポートフォリオ（就活などで見せる自己紹介のページ）に、毎日の作業時間を色の濃さで並べたカレンダーを置けます。マスを押すと、その日の時間と、やったことが出る形。時間は自...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "Pythonでオフライン変換ツールを作る：小数の入力ルールをPythonとJavaScriptでそろえる",
+      "url": "https://zenn.dev/wenlo/articles/b3fc003742cbac",
+      "site": "Zenn(Python)",
+      "published": "2026-11-17T16:17:02Z",
+      "description": "ブラウザーに入力欄を置くだけでは、入力のルールは決まりません。たとえば「2.5分」は受け付けても、「-1」や「1e3」はどう扱うのでしょうか。\n今回は、受け付ける小数の形式を先に決め、Pythonでテストしたうえで、同じルールを使うオフラインのHTMLページを生成します。HTMLにはスタイルとスクリプトを直接埋め込むため、変換時に外部サービスへアクセスする必要はありません。\n\n まず入力ルールを決...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "uv 0.13.9で、外部の仮想環境を.venvファイルから使ってみた",
+      "url": "https://zenn.dev/believe/articles/uv-venv-redirect-20261117-9f2a",
+      "site": "Zenn(Python)",
+      "published": "2026-11-17T15:38:18Z",
+      "description": "uvは、Pythonの環境やパッケージを管理するCLIです。プロジェクト用の仮想環境は、通常、プロジェクト直下の .venv ディレクトリに作られます。\n2026年11月17日のuv 0.13.9リリースで、この .venv を、別の場所にある環境へのパスを書いたファイルとしても使えるようになりました。環境をプロジェクトの外に置いたまま、uv run から使えます。\nリリースノートに「.venv ...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "【scratch】クラウド変数を用いて地震情報と緊急地震速報を取得してみる",
+      "url": "https://zenn.dev/shinanan/articles/a86c2cd576a913",
+      "site": "Zenn(Python)",
+      "published": "2026-11-17T14:50:33Z",
+      "description": "-はじめに-\n※この記事は 【scratch】クラウド変数を用いて地震情報と緊急地震速報を取得してみる のクロスポストです。\nPythonとScratch(TurboWarp)を連携させ、地震情報や緊急地震速報をリアルタイムに表示するプロジェクト「クラウド地震情報」を開発しました。\nScratch単体ではできない外部データの取得や処理をPython側で行い、その情報をクラウド変数経由でScratc...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "国税庁法人番号×位置参照情報×許認可台帳の名寄せ統合DB設計（137万社検証）",
+      "url": "https://zenn.dev/terselogic/articles/688584a946a78b",
+      "site": "Zenn(Python)",
+      "published": "2026-11-17T14:19:23Z",
+      "description": "日本の公的オープンデータ（国税庁の法人番号、国土交通省の位置参照情報・地価公示、厚生労働省・金融庁の許認可/事業所台帳、EDINET企業開示）を、商用利用・二次配布可能なライセンス条件のみに絞って統合するパイプライン jp-opendata-db を構築し、東京都データで実測検証しました。\n\nGitHub（パイプライン＋2,000社サンプルDB）: https://github.com/terse...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "ラップと疾走区間をGarmin FITから読むv2.3.0：インターバル用の靴の平均ペースは、休息を除くとどれだけ違うか",
+      "url": "https://zenn.dev/tsubotti63/articles/garmin-running-data-normalizer-v2-3",
+      "site": "Zenn(Python)",
+      "published": "2026-11-17T13:54:16Z",
+      "description": "v2.2.0 の記事で、入れていないことの1つ目に「FIT を読まないとできない見方（ラップの中の速く走った所とレストを分けるなど）」を書きました。正規化の出力には、ラップの区間の種類（ウォームアップ・ラン・インターバル・休息など）が入っていません。出力を変えずに見るページを作ってきたので、ここで止めていました。\nv2.3.0 では、正規化の出力は v2.2.1 のままにして、見るページが、必要な...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "Blender 5.3でGaussian Splattingのglbが読めないとき、中のSPZを取り出したら読めた",
+      "url": "https://zenn.dev/eight_blog/articles/d04eb74390a080",
+      "site": "Zenn(Python)",
+      "published": "2026-11-17T13:51:14Z",
+      "description": "Blender 5.3 は Gaussian Splatting を読み込んで、Workbench・EEVEE・Cycles のどれでも描けるようになりました。ところが、手元の glb を glTF として読み込むと「この拡張には対応していない」と止まりました。原因は、glb の中で粒のデータが SPZ という形式に圧縮されていたことです。中の SPZ を取り出して .spz として保存すると、5...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "Python cgkitでのBMPからTIFF変換エラーの解決方法とWindows版Sitex Air",
+      "url": "https://zenn.dev/yokamak/articles/ef72b8f51f2649",
+      "site": "Zenn(Python)",
+      "published": "2026-11-17T13:26:10Z",
+      "description": "01.　Pillow6.2.2でのエラー\nPython2.5時代から、Python cgkitでは、Pillowではなくて、PIL1.14をwindows版でインストールして使ってきました。これまでは、PNG形式のマップを使用していました。今回Metasequoiaのモデルをobjに変換し、パーツごとに呼び出して、マテリアルを割り当てしていました。\nPython2.7でのパッケージ一覧です。\nPa...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "AIエージェントに仕事を任せるための3つの道具を作った：止める・鍵を持たせない・見える化する",
+      "url": "https://zenn.dev/koheip/articles/ai-agent-stop-keyless-visible",
+      "site": "Zenn(Python)",
+      "published": "2026-11-17T12:42:09Z",
+      "description": "はじめに\nZEN大学で知能情報を学んでいる2年生の松延です。AIエージェントを作る・使う側のエンジニアを目指して、個人開発をしています。\n2026年10月、AIエージェントまわりのOSSを3つ作りました。\n\n\n\n名前\nひとことで\n言語\n\n\n\n\nヤタ（Yata）\n自分のPCで動く、日本語ファーストの個人AIアシスタント\nPython / TypeScript\n\n\nkagi（鍵）\nAIエージェントに本...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "実物のPDFで10項目中0項目 — 同じ書類を読む処理が、アプリごとに1本ずつあった",
+      "url": "https://zenn.dev/shinsei99/articles/two-copies-only-one-gets-fixed",
+      "site": "Zenn(Python)",
+      "published": "2026-11-17T12:09:44Z",
+      "description": "不動産の実務で使う書類を読ませるツールを何本か作っています。そのうちの1本に、\n実物の登記の証明書PDFを通したら、契約書と重要事項説明に必要な10項目のうち\n0項目しか取れませんでした。\n自前で用意した見本の文面では通っていました。通っていたから完成扱いにしていました。\nこの記事は、その0項目を「正規表現を直して9項目にした」話ではありません。\n直したのは正規表現ではなく、同じ処理の本数でした。...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "日本株向けPoint-in-Time財務×有報リスク変化スコア（148社検証）",
+      "url": "https://zenn.dev/terselogic/articles/03816bc8bc8f08",
+      "site": "Zenn(Python)",
+      "published": "2026-11-17T11:16:44Z",
+      "description": "日本株のシステムトレードやファンダメンタル・バックテストを組む際、次の2つがボトルネックになりがちです。\n\n\n先読みバイアス（Look-ahead Bias）と生存者バイアス: 訂正報告書で過去の数値が上書きされていたり、上場廃止銘柄が欠落していたりする。\n\n有報テキストの定性情報が数値化されていない: 「事業等のリスク」が前年と全く同じコピペなのか、大きく書き換わったのかをスクリーニングに組み込...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "API連携エラー自動再試行とログ切り分け：実装手順と復旧チェックリスト【そのまま動くコード2本＋5項目チェック】",
+      "url": "https://zenn.dev/andyailab/articles/ad023571f72bb7",
+      "site": "Zenn(Python)",
+      "published": "2026-11-17T10:34:56Z",
+      "description": "朝7時、同期ジョブのログの最後に「429 Too Many Requests」。\nそこから先は、何も動いていない。\nこの記事の結論： ステータスコード別（429・503・401など）のエラーログの正確な読み方と初動対応。\n自社製スクリプトやノーコードツールを運用していると、夜間バッチやアクセス集中時に突然のエラーが発生し、翌朝になってからトラブルに気づくことが少なくありません。\n英語やJSONの羅...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "18-⑨ Kaggle実践3 Biohub細胞トラッキング：5位の解法まとめ",
+      "url": "https://zenn.dev/rg687076/articles/0621c61505a485",
+      "site": "Zenn(Python)",
+      "published": "2026-11-17T10:05:16Z",
+      "description": "18-①Kaggle実践3 Biohub細胞トラッキング：環境構築から初回提出までの手順\n18-②Kaggle実践3 Biohub細胞トラッキング：初回提出コードを解説してみた\n18-③Kaggle実践3 Biohub細胞トラッキング：ローカル環境を構築してみた(交差検証(CV)込み)\n18-④Kaggle実践3 Biohub細胞トラッキング：3D U-Netの壁とCV微増(0.4483→0.45...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "noteの記事を、Markdownの下書きから本文と図までスクリプトで作る（Python＋headless Chrome）",
+      "url": "https://zenn.dev/atsushi_apps/articles/note-draft-markdown-html-headless-chrome",
+      "site": "Zenn(Python)",
+      "published": "2026-11-17T09:51:50Z",
+      "description": "iPhoneアプリを一人で作っている Atsushi です。アプリを作った話を、note に書いています。\nnote の記事は、Markdown の下書きから作っています。下書きから note に貼る本文の HTML を作り、見出し画像や記事の中の図も、HTML を書いて headless Chrome で撮って PNG にしています。\nこの記事では、その2つのスクリプトを紹介します。\n下書き.m...",
       "category": "開発",
       "rss_category": "",
       "image_url": ""
