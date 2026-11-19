@@ -1,14 +1,184 @@
 {
   "site": "Zenn(LLM)",
-  "last_updated": "2026-11-19T04:09:57.854103",
-  "total_articles": 7532,
+  "last_updated": "2026-11-19T13:08:36.739335",
+  "total_articles": 7546,
   "articles": [
+    {
+      "title": "新機能、ElastiCache の distributed KV caching を GPU 2 台の vLLM で試す",
+      "url": "https://zenn.dev/aws_japan/articles/elasticache-distributed-kv-cache-bench",
+      "site": "Zenn(LLM)",
+      "published": "2026-11-19T06:55:05Z",
+      "description": "2026 年 11 月に、Amazon ElastiCache for Valkey で distributed KV caching が使えるようになりました（AWS の What's New）。セルフホストした LLM の推論サーバーが計算した KV を ElastiCache のクラスタに置き、複数の GPU サーバーで共有する機能です。What's New によると、GPU サーバーごとの...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "ハーネスエンジニアリングの限界への挑戦:決定論の hookとプロンプト構造で挑む",
+      "url": "https://zenn.dev/cosmopanda/articles/raiya-plugin-hooks",
+      "site": "Zenn(LLM)",
+      "published": "2026-11-19T05:16:04Z",
+      "description": "ハーネスエンジニアリングの限界\nAI のコーディングエージェントを使いこなす工夫は、いま「ハーネスエンジニアリング」と呼ばれています。モデルの外側の仕組み全体、つまり AGENTS.md・スキル・hooks・テストを設計して、エージェントを望む方へ動かす考え方です。\nハーネスには 2 つの側があります。\n\n事前に導く側: AGENTS.md・スキル・役の定義。どれもプロンプトで、エージェントへのお...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "見積書をAIに読ませていたシステムで、抽出結果を「確認待ち」に置くまで",
+      "url": "https://zenn.dev/dongyu/articles/supplier-quote-ai-review-fallback",
+      "site": "Zenn(LLM)",
+      "published": "2026-11-19T05:00:07Z",
+      "description": "「チャッピー（ChatGPT）にPDFを投げて、品番と単価を聞く」。見積書をAIで読むと聞くと、こんな使い方を思い浮かべるかもしれません。仕事でその値を使うには、どの見積依頼への返信かを確かめ、いつ価格として登録するかも決める必要があります。\n私が開発を担当している貿易商社の業務システムでは、仕入先から届いた見積書を読み取り、社内の書類に価格を反映します。最初は、見積書から品番・数量・単価を読み取...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "ポケモンで始めるAIエージェント開発〜画像認識からLLMによるパーティ選出まで〜",
+      "url": "https://zenn.dev/kouji0705/books/0e11ee1a267e48",
+      "site": "Zenn(LLM)",
+      "published": "2026-11-19T03:25:44Z",
+      "description": "ポケモンバトルを題材に、AIエージェント開発をゼロから始めた記録です。\n\nサービス設計から始まり、iPhoneミラーリングによるゲーム画面の取得、OpenCVを使ったポケモンの画像認識、TypeScriptによるタイプ相性分析、LLMによるおすすめ3体の選出まで、一つのシステムを段階的に作り上げていきます。\n\n単なる実装手順ではなく、なぜその技術を選んだのか、どのような仕組みで動いているのか、実際...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "Claude Code の auto-compact に、その会話専用の指示を渡す — PreCompact hook で指示文を生成する",
+      "url": "https://zenn.dev/jasagiri/articles/d132330d5dc580",
+      "site": "Zenn(LLM)",
+      "published": "2026-11-19T03:16:33Z",
+      "description": "Claude Code の /compact には /compact 認証まわりの修正を中心に残して のように指示を付けられます。ところが、コンテキストが埋まって自動で走る auto-compact には指示を渡す口がありません。長い作業の途中で勝手に圧縮され、ユーザーの決めごとや途中のファイルの状態が要約から落ちる、という経験をした人は多いと思います。\n結論を先に書くと、PreCompact h...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "Museで自分専用AI秘書を作る方法｜人格ファイル4つとメモリ設計で性格がブレない秘書を育てる実践入門",
+      "url": "https://zenn.dev/sktt_panda/articles/muse-secretary-first-step",
+      "site": "Zenn(LLM)",
+      "published": "2026-11-19T02:51:27Z",
+      "description": "3行まとめ\n\nMuseの秘書化は、大きなプロンプト1枚ではなく、人格ファイル4つに分けることから始まる\nIDENTITY／SOUL／USER／AGENTS で役割を分けると、直す場所が分かって性格がブレにくくなる\n例に出てくる秘書は架空の「澪（みお）」。名前と口調を変えれば、そのまま自分の秘書になる\n\n\n はじめに\nチャットAIは便利だが、毎回同じ説明を繰り返す場面が多い。\n\n自分は何者で、何を大...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "AIの「週の上限」に追われる個人開発者が、Surface Laptop Ultraで週114回のタスクを振り分ける構想",
+      "url": "https://zenn.dev/shoyomayabot/articles/surface-ultra-hybrid-llm-plan",
+      "site": "Zenn(LLM)",
+      "published": "2026-11-19T02:47:40Z",
+      "description": "AIエージェントに、毎日たくさんの仕事を任せています。動画を作って予約投稿する、謎解きサイトに毎週新しい問題を足す、開発リポジトリのCIを直す、技術記事の下書きを書く、株価を調べて売買のシグナルを出す。定期実行のタスクは、数えると1週間に114回動いていました。\n困っているのは、お金ではありません。AIはサブスクリプションの定額の範囲で使っていて、従量課金のAPIキーは使わないと決めています。困っ...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "CodexとClaude CodeのAgent Loopを実行ログから追う — Tool Calling・Observabilityの実態",
+      "url": "https://zenn.dev/coastlinedb/articles/5c5a11333d54f6",
+      "site": "Zenn(LLM)",
+      "published": "2026-11-19T02:34:38Z",
+      "description": "1. はじめに — なぜAgent Loopを調べるのか\nコーディングエージェントを毎日使っていると、最終回答の出来ばかりに目が行きます。ところが、運用で困るのはたいてい回答そのものではありません。「途中で何をしたのか」「失敗したときにどう立て直したのか」「後からそれを確かめられるのか」のほうです。\nそこで今回、同じコードレビュー課題を Codex CLI と Claude Code CLI にそ...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "Pythonで作るローカルAI-OCRデスクトップアプリ ── 手元のVLMで帳票をExcelにするまで",
+      "url": "https://zenn.dev/qinritukou/books/local-vlm-ocr-desktop-app",
+      "site": "Zenn(LLM)",
+      "published": "2026-11-19T01:24:57Z",
+      "description": "Pythonの基本は分かるけれど、デスクトップアプリもローカルLLMも作ったことがない。そんな人が、手元のPCで動く画像認識AI（VLM）を使って、請求書や納品書のPDFを読み取りExcelに書き出すアプリを一から作り上げる本です。モデルの選び方とプロンプト、AIの間違いを見つける仕組み、精度の測り方、PySide6による画面づくり、固まらない画面のためのスレッド、配布用パッケージまで、AIコーデ...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "DatabricksのAI関数を徹底解説：SQLからLLMと専用AIを呼び出す仕組みと使い方",
+      "url": "https://zenn.dev/aymkbyshi/articles/dbx-ai-functions-guide",
+      "site": "Zenn(LLM)",
+      "published": "2026-11-19T01:01:32Z",
+      "description": "Databricksの「AI関数（AI Functions）」は、SQLの1行で、テーブルの全行にLLMや専用のAIを適用できる関数群です。分析者がSQLエディタでその場で試した関数を、そのまま本番のバッチ処理にも使えます。この記事では、関数の種類と選び方、文書処理（Document Intelligence）、ai_query の使い方、権限と費用の管理までを、公式ドキュメントに沿って整理します...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "キーボードを開かない音声入力を作ったら、大変だったのは音声認識じゃなかった",
+      "url": "https://zenn.dev/susiyaki/articles/voicefloat-floating-voice-input",
+      "site": "Zenn(LLM)",
+      "published": "2026-11-19T00:30:05Z",
+      "description": "キーボードを開かない音声入力アプリを、Android で作って公開しました。画面の端に浮かぶマイクで話し、認識も文の補正も端末の中で行います。\n作ってみて大変だったのは、音声認識そのものではありませんでした。入力欄のフォーカスを見失わないことと、端末内の LLM の出力をどう検証するか、の 2 つです。この記事では、詰まった所と直し方を中心に書きます。\n\n きっかけ\nスマホで AI に長い指示を打...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "SenseNova-Loop-9BをKaggleの無料GPUで動かしてみた：BF16＋Transformersでの検証記録",
+      "url": "https://zenn.dev/shibatamago_dev/articles/sensenova-loop-9b-hands-on",
+      "site": "Zenn(LLM)",
+      "published": "2026-11-19T00:27:47Z",
+      "description": "はじめに\nSenseTimeの「SenseNova-Loop-9B」が2026年11月17日に公開されました。32層のうち24層の重みを共有して2回通すことで56層分を実行し、約14.6Bモデル相当の推論を行う、という変わった構造のモデルです（この「相当」やGAIA 69.90などのベンチマークはベンダーの自社計測です）。\n面白そうなので無料で試せる範囲で動かしてみました。結論を先に書くと、公式の...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "Ollama を更新するときに確かめる3つ ― 署名・更新前後の速さ・戻し方（Windows）",
+      "url": "https://zenn.dev/shacikku3/articles/ollama-update-check-speed-rollback",
+      "site": "Zenn(LLM)",
+      "published": "2026-11-19T00:06:10Z",
+      "description": "この記事で分かること\nOllama（自分のPCでローカルLLMを動かすソフト）は、Windows ではアプリが新しい版を自動でダウンロードしておいてくれます。便利ですが、「入れて大丈夫？」「入れたら遅くなった気がする」「前の版に戻したい」と迷うことがあります。\nこの記事では、筆者が Ollama を 0.32.6 から 0.40.3 に更新したときの記録をもとに、更新の前後で確かめておくと安心な3...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "RTX 5070 Ti ×2＋5060 Ti で DeepSeek V4.1 Flash を42 tok/s・256K文脈で回した実測記録",
+      "url": "https://zenn.dev/keithval/articles/deepseek-v41-flash-42tps-256k",
+      "site": "Zenn(LLM)",
+      "published": "2026-11-18T23:48:45Z",
+      "description": "この記事は、筆者の実測記録をもとに、筆者と Muse が一緒に執筆しました。\nDeepSeek V4.1 Flash を個人の Linux マシンで回し、生成は GPU 3枚で 42 tok/s、ふだん使っている2枚構成でも 38 tok/s 前後まで持っていけた。文脈長は 256K で運用し、画像入力にも対応させている。tok/s は1秒間に生成できるトークン数で、この記事では生成速度の単位とし...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "小さな GPT で Engram を試す",
+      "url": "https://zenn.dev/tosshi/articles/35ef2467d84b63",
+      "site": "Zenn(LLM)",
+      "published": "2026-11-18T23:41:39Z",
+      "description": "はじめに\n!\n今後 nyangram を開発します。nyaaaaaan\n\nLLM は、文章をトークンという単位に区切って読み、次のトークンを 1 つずつ当てて文章を書きます。Engram の論文は、この仕事を性質の違う 2 種類に分けて考えます。1 つは、文脈を読んで筋道を組み立てる仕事で、深い計算が要ります。もう 1 つは、決まった知識を思い出す仕事です。童話の主人公の呼び名「Little Re...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
     {
       "title": "ニューラルネットをDSLで一から書いて、既存のLLMに接続する - Qwenに学習なしで知識を組み込む",
       "url": "https://zenn.dev/caphtech/articles/kestrom-rules-open",
       "site": "Zenn(LLM)",
       "published": "2026-11-18T23:07:08Z",
       "description": "この記事は個人（と会社）の実験の記録です。モデルはQwen3.5-4B（Apache License 2.0）を使いました。実装と実行はClaude Code（AnthropicのClaude）と一緒に行い、設計の議論にはGPT-6.2 Astraも加わりました。\n\n 何をしたか\nニューラルネットワークはデータから学習して作るものだと考えられています。この記事では学習をしません。モデルを、DSLで...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "Learning Watch 2026-11-19: 学んだつもりを測り直す",
+      "url": "https://zenn.dev/laiken/articles/20261119-learning-watch",
+      "site": "Zenn(LLM)",
+      "published": "2026-11-18T23:05:10Z",
+      "description": "AIが書きました🤖\nこの記事は、AIが書いたものをAIがレビューしてから公開しています。\nL: 教える側の点数を上げたら、教え方が悪くなった。そんな研究を読むと、研修で見ている数字も少し疑いたくなる。自分は点数が無意味だとは思わないけれど、何を採点した数字なのかを先に知りたい。AIを使う学習で、いま最も見落としやすい測定は何だろう。\n\n 今日の 4 件\n\n\nThe learner who does...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "なぜ今形式検証なのか",
+      "url": "https://zenn.dev/ncdc/articles/dcec80b0c067b0",
+      "site": "Zenn(LLM)",
+      "published": "2026-11-18T23:00:05Z",
+      "description": "形式検証、Leanといったワードを最近よくみるので、どんなものなのか知っておきたいというのが今回の動機です。\n解説、詳説というよりは私自身のキャッチアップ記録になります。\n\n 形式検証って何？\n\n形式検証とは、テストや非形式的な議論だけに頼るのではなく、論理を用いてハードウェアやソフトウェアの設計の性質を確立することです。要求の形式的な仕様、実装の形式的なモデル、正確な推論規則を使い、たとえば実装...",
       "category": "AI・技術",
       "rss_category": "",
       "image_url": ""
@@ -24,41 +194,11 @@
       "image_url": ""
     },
     {
-      "title": "聞きながら話す音声 AI「Haru-4B」を Mac で動かして、AI 同士にお昼ごはんを相談させてみた",
-      "url": "https://zenn.dev/lecto/articles/6406d68580910b",
-      "site": "Zenn(LLM)",
-      "published": "2026-11-18T14:36:13Z",
-      "description": "はじめに\n2026 年 11 月 13 日、higurashi が日本語でも話せる音声対話モデル Haru-4B を公開しました。いちばんの特徴は、相手の声を聞きながら、同時に話せる (全二重、full-duplex) ことです。相づちを打ったり、話の途中で割り込んだりできます。\n重みは Apache-2.0 で公開されていて、Apple Silicon の Mac 向けの MLX 版もあります。...",
-      "category": "AI・技術",
-      "rss_category": "",
-      "image_url": ""
-    },
-    {
-      "title": "クラウドAI不要を掲げるJarvisの知識グラフ・日記メモリを、ローカルLLMで手を動かして検証した",
-      "url": "https://zenn.dev/matsushima_a/articles/day-050-jarvis-local-knowledge-graph-memory",
-      "site": "Zenn(LLM)",
-      "published": "2026-11-18T14:28:57Z",
-      "description": "今日の対象: isair/jarvis\nisair/jarvisは、Ollama・LM Studio・llama.cppなどローカルのモデルサーバーだけで動く音声対応デスクトップAIアシスタントである(独自ライセンス。個人・教育・研究目的の非商用利用は無料、商用利用は著者への別途連絡が必要)。\nREADMEには「No cloud AI service is required」「No subscri...",
-      "category": "AI・技術",
-      "rss_category": "",
-      "image_url": ""
-    },
-    {
       "title": "GB10 1 台とクラウドのハイブリッド LLM — 正解率・秒・Wh・ドルを同じ物差しで測って振り分ける",
       "url": "https://zenn.dev/wisteriacorp/articles/wisteria-904d6a1047e6",
       "site": "Zenn(LLM)",
       "published": "2026-11-18T14:05:35Z",
       "description": "NVIDIA GB10（128GB ユニファイドメモリ）のマシン 1 台でローカル LLM を常時動かし、クラウドの LLM と組み合わせて、個人の自動化を 3 か月半ほど回しています。以前の記事では、振り分けの考え方を言葉で書きました（個人 AI 基盤の設計）。今回は数字で振り分けを決めるために、同じ仕事をローカルとクラウドの 6 方式に投げ、正解率・時間・電力・料金を同じ表に並べました。\n\n\n...",
-      "category": "AI・技術",
-      "rss_category": "",
-      "image_url": ""
-    },
-    {
-      "title": "APIエラーとリトライの基本 — 401・429・5xxを切り分け、SDKの自動再試行に任せる範囲を決める",
-      "url": "https://zenn.dev/salesanalytics/articles/f5b3081ba16be9",
-      "site": "Zenn(LLM)",
-      "published": "2026-11-18T14:05:06Z",
-      "description": "生成AI APIを繰り返し使っていると、401（認証）、429（レート制限・残高不足）、5xx（サーバー側）、タイムアウトといったエラーに必ず出会います。このとき最もしてはいけないのが、どんなエラーにも「もう一度送る」ことです。APIキーが間違っていれば何度送っても失敗しますし、その間も失敗したリクエストはレート制限に数えられます。\nこの記事では、エラーの切り分けと再試行の考え方の要点をコンパクト...",
       "category": "AI・技術",
       "rss_category": "",
       "image_url": ""
