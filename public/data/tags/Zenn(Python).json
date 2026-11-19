@@ -1,8 +1,138 @@
 {
   "site": "Zenn(Python)",
-  "last_updated": "2026-11-19T13:08:36.739335",
-  "total_articles": 7982,
+  "last_updated": "2026-11-19T21:30:39.579329",
+  "total_articles": 7995,
   "articles": [
+    {
+      "title": "pythonスクリプトが落ちる原因はUnboundLocalError、run_owner_todo.py list調査記録",
+      "url": "https://zenn.dev/hakumaigenki/articles/python-p300-8109",
+      "site": "Zenn(Python)",
+      "published": "2026-11-19T17:49:48Z",
+      "description": "この記事で切り分けられること\npython のスクリプトが毎回同じ箇所で UnboundLocalError を出して落ちる場合に、どこを見れば原因が分かるかをまとめる。特に「代入しているはずの変数なのに未代入エラーになる」ケースを扱う。対象は 2026-11-01 にクラウド側で見つかった run_owner_todo.py の list コマンドが落ちる不具合。\n\n 症状\n以下のコマンドを実行...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "1 分ごとに集計した API 利用量を請求期間に割り当てる：境目をまたぐ 1 分はどちらに入れるか",
+      "url": "https://zenn.dev/backupdrill/articles/2683e109c18a74",
+      "site": "Zenn(Python)",
+      "published": "2026-11-19T17:29:13Z",
+      "description": "API のリクエストを顧客ごとに 1 分単位で集計しておくと、書き込みが減り、請求システムには合計だけを送ればよくなる。ただし請求期間の境目は秒単位で決まる。毎月 17 日の 11:17:15 に更新される契約でも、手元にあるのは 11:17 台の合計だけで、15 秒より前の件数はそこからは取り出せない。Stripe 側も分単位で区切っているようで、サンドボックスでは 11:17:15 に始めたサ...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "\"メインフレームの日本語データ（EBCDIC）を開発PCとAIで読み書きするツールを作った【依存ゼロ・MCP対応】\"",
+      "url": "https://zenn.dev/yukidev25/articles/4950a2821d533c",
+      "site": "Zenn(Python)",
+      "published": "2026-11-19T14:17:57Z",
+      "description": "メインフレームの移行や保守の現場では、本番から抜いた固定長のデータを、コピーブック（COBOL のレコード定義）と一緒に受け取って、開発PCで中身を確かめる場面がよくあります。\nところが、日本語のデータになると急に手が止まります。カナや漢字が入った EBCDIC を読む手段が、手元に無いことが多いからです。そこで、メインフレームの日本語データを、開発PCや AI エージェントから読み書きするツール...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "Claude Code のフックは終了コード 1 では止まらない ― 「落ちたフックは全部通す」を防ぐ書き方",
+      "url": "https://zenn.dev/tazuna/articles/ac04625bf80e12",
+      "site": "Zenn(Python)",
+      "published": "2026-11-19T13:04:58Z",
+      "description": "Claude Code の PreToolUse フックを使うと、Claude が道具(Bash、PowerShell、Edit など)を使う直前に、\n自分のコードで中身を調べて止められます。ところが、止めるつもりのフックが 何も止めていない ことがあります。\nいちばん多い原因は終了コードです。公式ドキュメント(2026 年 11 月時点)と、筆者が Windows で実際にはまった例をもとにまと...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "Windows で Claude Code のフックを Python で書くと、文字コードで 3 回だまされる",
+      "url": "https://zenn.dev/tazuna/articles/dc6ff8503f6aa0",
+      "site": "Zenn(Python)",
+      "published": "2026-11-19T13:04:52Z",
+      "description": "Claude Code の PreToolUse フックで「プロジェクトの外は書き換えさせない」見張り役を Python で書き、\nWindows で動かしました。そのとき、文字コードの問題に 3 回ぶつかりました。\nどれも エラーが出ないまま、守っているつもりで守れていない 種類の問題です。\n\n\n\n\n起きること\n原因\n対策\n\n\n\n\n1\n日本語のパスで、フックが素通り・誤判定する\n標準入力が Wi...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "一覧要素の name と URL をどの階層から読むか",
+      "url": "https://zenn.dev/fulfillmentyx/articles/d2bfe6e9b1b048",
+      "site": "Zenn(Python)",
+      "published": "2026-11-19T12:42:11Z",
+      "description": "By YX Fulfillment\n倉庫一覧を表にすると、名前は取れても URL が空になる行がある。項目自体と、その中の item を分けて読み、宣言されている値がどちらにあるかを確かめた。\n対象は 公開ページの静的HTML。2026年11月18日の保存ファイルを sample.html とし、Python 3.9.6、Beautiful Soup 4.15.0 の html.parser で以...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "FAQPage の回答を静的 HTML の本文と照合する",
+      "url": "https://zenn.dev/fulfillmentyx/articles/657f6b153523fe",
+      "site": "Zenn(Python)",
+      "published": "2026-11-19T12:40:31Z",
+      "description": "By YX Fulfillment\nFAQ を二つの場所に出していると、本文だけ直した日に構造化データが古くなる。ここでは保存 HTML から空白をそろえて、FAQPage の回答を本文の範囲で探した。\n対象は 公開ページの静的HTML。2026年11月18日の保存ファイルを sample.html とし、Python 3.9.6、Beautiful Soup 4.15.0 の html.pars...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "「送らない」は「消す」ではない — upsert だけのクライアントと、押し返される旗",
+      "url": "https://zenn.dev/shinsei99/articles/omission-is-not-deletion",
+      "site": "Zenn(Python)",
+      "published": "2026-11-19T12:20:45Z",
+      "description": "毎月の検針（メーターの読み取り）を現場のスマホでやる社内アプリを作っています。\nPC 側が台帳の正本で、端末は配られた物件とメーターを持って回る。経路は2本だけです。\n\n\nGET /api/master … PC が持っている物件・メーターを端末へ配る\n\n\nPOST /api/sync … 端末の記録を PC へ送る\n\n\n現場から一言ありました。「連携させたら、検針が要らないビルがいっぱい出る」。...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "実務で役立つAPI設計と実装 第2版: FastAPIによる効率的な開発",
+      "url": "https://zenn.dev/egg_glass/books/fastapi-for-starters-v2",
+      "site": "Zenn(Python)",
+      "published": "2026-11-19T11:37:15Z",
+      "description": "FastAPIによる実務的なバックエンドAPIの開発を、設計・実装・テスト・デプロイまで\n一貫して学ぶ技術書です。SQLModel、Alembic、pytest、uv、\nFastAPI Cloud（fastapi deploy）などを扱います。\n\n第1〜16章（DBを使ったCRUDまで）と「おわりに」は無料で読めます。\n第17章以降のトランザクション、テスト、CI、デプロイ、運用は有料です。",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "集計 SQL の「直し忘れ」に、どのテストなら気づけるか：変異を作って測る設計と、共通ビューで問い直したこと",
+      "url": "https://zenn.dev/takayuki0127/articles/686fbbbe4b2186",
+      "site": "Zenn(Python)",
+      "published": "2026-11-19T11:28:50Z",
+      "description": "問い\n月次レポートの SQL には、「返品は元の売上日で」「既存店は12か月以上に」「月は21日締めで」といった定義の変更依頼が何度も来ます。怖いのは直した場所より、直し忘れた場所です。\nこの記事では、次の2つを確かめるために、何を設計し、どう確かめたかを書きます。\n\n書き方によって、1つの変更依頼で直す場所はどれだけ違うか\n直し忘れたとき、どのテストなら気づけるか\n\n題材は架空の小売「みどりマー...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "通常のサイコロを混ぜたら？——疑いが上がる出目、下がる出目【第3回】",
+      "url": "https://zenn.dev/okamasaya/articles/chinchiro-bayes-03-mixture",
+      "site": "Zenn(Python)",
+      "published": "2026-11-19T10:51:56Z",
+      "description": "4・5・6ばかりが続いていたところに、2が出た。\n「イカサマなのでは？」と思い始めていたとしても、普通の出目が出ると、少し見方が変わりそうです。\n前回のモデルでは、その1回で「常に456賽を使う」という仮説の確率が0になりました。ただ、相手が通常のサイコロも混ぜていたら、どうでしょうか。\n今回は、その可能性を仮説に入れてみます。すると、1〜3が出た後も疑いは残り、さらに、疑いが上がる出目と下がる出...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "マルチエージェント合議の「迎合」を断ち、Fail-FastなLLM基盤を作る（第3回）",
+      "url": "https://zenn.dev/colorfulwave/articles/2d78bc1788fb2f",
+      "site": "Zenn(Python)",
+      "published": "2026-11-19T08:51:23Z",
+      "description": "!\n本記事は、OSS評価エンジン「Intrinsic Value」の設計・実装を題材に、マルチエージェント合議のバイアス対策と堅牢なLLM基盤設計を解説する連載の第3回です。技術解説を目的としており、投資助言を行うものではありません。\n\n\n 1. 問題：1プロンプト合議で起きる「自己相関バイアス」\n複数の専門家の視点からリスクを洗い出す「合議制AI（Council）」は、単一プロンプトの評価よりも...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "LLMに投資判断をさせない設計：3層Gateと「減法の工学」によるAI評価エンジン（第1回）",
+      "url": "https://zenn.dev/colorfulwave/articles/ac8430465e2115",
+      "site": "Zenn(Python)",
+      "published": "2026-11-19T08:51:06Z",
+      "description": "!\n本連載は、ウォーレン・バフェットの投資哲学に基づき約3,000〜10,000社規模の上場企業をスクリーニング・バリュエーションするOSSエンジン「Intrinsic Value」の設計文書（ADR群）および実装を題材に、実務で通用するLLM応用システムの設計原則を解説する技術記事です。本記事は技術解説を目的としており、特定の金融商品の投資助言・勧誘を行うものではありません。\n\n\n 連載の全体像...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
     {
       "title": "【旅行価格比較】「だれでも予約できる最安」の1位に、泊まれないプランが混ざっていた話(前半): 学生限定の見逃し(2026-11-19)",
       "url": "https://zenn.dev/stagea_tech/articles/20261119-travel-price-compare",

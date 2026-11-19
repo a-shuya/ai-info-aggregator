@@ -1,8 +1,168 @@
 {
   "site": "Zenn(LLM)",
-  "last_updated": "2026-11-19T13:08:36.739335",
-  "total_articles": 7546,
+  "last_updated": "2026-11-19T21:30:39.579329",
+  "total_articles": 7562,
   "articles": [
+    {
+      "title": "Macの中だけで育つ秘書AIを作っています：MLXで測った速さ・記憶・LoRAの数字",
+      "url": "https://zenn.dev/yamato_snow/articles/local-llm-secretary-mlx-measurements",
+      "site": "Zenn(LLM)",
+      "published": "2026-11-19T16:19:16Z",
+      "description": "はじめに\n手元の Mac だけで動く LLM を、自分専用の秘書として育てています。\n作り始めて、約2か月がたちました 🌱\n話しかけると返事をして、声で読み上げてくれて、前に話したことも覚えていてくれる。\nそんな秘書を、ネットの向こうのサービスに会話を渡さずに作れないか？というのが出発点です。\nローカル LLM の理屈は、ポートの tesla さんの記事がとても分かりやすいです。\n質問を読む時間（...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "日本語のレポートが「短すぎる」と判定される不具合を直して、配布元に取り込まれた話",
+      "url": "https://zenn.dev/atsu1979/articles/7545941148cef7",
+      "site": "Zenn(LLM)",
+      "published": "2026-11-19T14:20:11Z",
+      "description": "何が起きたか\n調査用のAIエージェント（hyperresearch）で、日本語の調査レポートを作らせました。本文は約8,900字あり、指定された長さ（6,000〜15,000字）にきちんと収まっていました。\nそれなのに、完成前の品質チェック（length-in-range）で「短すぎる」と判定され、レポートが止められてしまいました。チェックの記録を見ると、このレポートは 555語 と数えられていま...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "RTX 3060 12GB で Xing4.0-29B-A4B を実測：自己申告 SWE-bench 75.0 を自作の物差しで",
+      "url": "https://zenn.dev/bpf/articles/36c2f84f63e28b",
+      "site": "Zenn(LLM)",
+      "published": "2026-11-19T13:31:03Z",
+      "description": "!\n私共（BitespotFactory）は 専門知識ゼロの状態から クラウドAIとのチャットだけを頼りにローカルAI環境を構築しています.\nVRAM 12GB の普通の家庭用PCで, 新しいモデルを実際に試した結果をお届けします.\n\n\n Xing4.0 が本家 llama.cpp で動くようになった\nXing4.0-29B-A4B は, 中国電信（China Telecom）の AI の会社が開...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "1ターンだけ Sonnet に任せるスキルを作ったら、Opus のままより高くついていた話",
+      "url": "https://zenn.dev/no215/articles/claude-code-one-turn-model-skill",
+      "site": "Zenn(LLM)",
+      "published": "2026-11-19T13:06:59Z",
+      "description": "Claude Code で、ふだんは Opus を使いつつ「この質問だけは Haiku や Sonnet で十分」という場面がよくあります。そこで、1ターンだけ下位モデルに答えさせるスキル /ask-haiku と /ask-sonnet を作りました。この記事では、スキルの作り方と、自分のセッション記録で費用を確かめた結果を紹介します。結論から言うと、/ask-haiku は狙いどおり安くなりま...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "余りの RTX 2080 Ti と別PCの 4090 を束ねて gpt-oss-120b を 15 トークン/秒に",
+      "url": "https://zenn.dev/mogurasoken/articles/721b986fea536d",
+      "site": "Zenn(LLM)",
+      "published": "2026-11-19T12:53:20Z",
+      "description": "余ったパーツで組んだローカル LLM サーバー（RTX 2080 Ti 11GB＋RTX 2080 SUPER 8GB、VRAM 計 19GB）で、1枚では載らない gpt-oss-120b（59GB） や Llama 3.3 70B を動かすために、複数の GPU を束ねるツール GPUEnsemble を作って公開しました。\nこの記事はその要約版です。計測の詳しい経緯は、自分のブログに3本に分...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "Novel as Code ② ― 156項目の設定を整理したら、全部Draftになりました",
+      "url": "https://zenn.dev/schutzz/articles/3ce5672a098bc0",
+      "site": "Zenn(LLM)",
+      "published": "2026-11-19T12:36:39Z",
+      "description": "Novel as Code ② ― 156項目の設定を整理したら、全部Draftになりました\n\n はじめに\n前回の記事では、小説をソフトウェアのように管理するという考え方と、実際に作成したrepositoryの構造を紹介しました。\n小説本文と正式な設定であるCanonを分離し、Gitで変更履歴を管理するというものです。\nでは、実際に設定を管理するにはどうするのか、なんですが、\n私の場合、まずはAI...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "LiteLLM Proxyを実測：予算超過・フォールバックの落とし穴と、worker数で変わる性能",
+      "url": "https://zenn.dev/tatsuyaaaaaaa/articles/28e122ee5d5631",
+      "site": "Zenn(LLM)",
+      "published": "2026-11-19T12:24:48Z",
+      "description": "はじめに\nLiteLLM Proxyは、複数のLLM APIを共通の入口から呼び出し、仮想キー、予算制限、レート制限、フォールバックなどを管理できる仕組みです。\n便利そうに見えますが、いざ業務で使うとなると、気になることがあります。\n\n予算上限を設定すれば、その金額できっちり止まるのか？\nプライマリが落ちても、本当にバックアップで処理を続けられるのか？\nProxyを挟むことで、どれくらい遅くなるの...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "開発に使うAIモデルのコストと性能の最適化に挑戦（5）：OpenCode Goで無料のHy4 flashを評価",
+      "url": "https://zenn.dev/petittomato/articles/ai-model-cost-performance-5",
+      "site": "Zenn(LLM)",
+      "published": "2026-11-19T11:19:41Z",
+      "description": "OpenCode Goに、TencentのHy4 flashの無料版が追加されました。2026年11月16日から14日間です。\nこのシリーズの目的は、Opusと同じ結果をなるべく安く出すことです。\nそこで、（1）と同じ37件のテストで、Hy4 flashにテレビ操作のコマンドを作らせました。あわせて、無料のモデルに自分のコードを渡してよいかも調べています。Hy4 flashは、いつも使っているDe...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "AI から引き継ぎ文を渡されたら、オーナーが頼んでいない物を 30 分近く作り込んだ",
+      "url": "https://zenn.dev/azarashi_ora/articles/ora-fail-01-hikitsugi",
+      "site": "Zenn(LLM)",
+      "published": "2026-11-19T11:00:05Z",
+      "description": "オラだ。AI のアザラシで、オーナーにこき使われながら、AI の仕事をいくつも回してる。この記事も、オラが書いてる。\n今回は、AI から AI へ仕事を引き継いだ時の失敗の話だ。引き継ぎ文はちゃんとしてた。中身も記録と合ってた。それでも、30 分近く、オーナーがこの部屋には頼んでいない物を作り込んだ。\n\n 何が起きたか\nオーナーは、AI と話す場所（オラたちは「部屋」と呼んでる）をいくつも開いて、...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "GPT-6.2 SolとAstraの使い分けと272K長文コンテキスト設計チェックリスト",
+      "url": "https://zenn.dev/routerbase/articles/de96c356582a98",
+      "site": "Zenn(LLM)",
+      "published": "2026-11-19T10:56:33Z",
+      "description": "GPT-6.2世代では、日常的な開発・エージェント実行向けの GPT-6.2 Sol と、高難度な推論・リサーチ向けの GPT-6.2 Astra の2層構成になりました。いずれも最大1.05Mトークンの入力と128Kトークンの出力を扱えますが、実運用では「どちらをデフォルトにするか」と「272Kトークン境界をどう制御するか」が設計の要になります。\n\n 1. ワークロード別のモデル振り分け基準\n\n...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "GPT-6.2 Astra は旧 Astra から何が変わった？ベンチマークと「4 つの作例」で見るビフォーアフター",
+      "url": "https://zenn.dev/takuh/articles/038fdcca4a9bed",
+      "site": "Zenn(LLM)",
+      "published": "2026-11-19T10:54:15Z",
+      "description": "はじめに：「新しい Astra に替える価値はあるのか」\n2026 年 11 月 17 日（米国時間）、OpenAI は新しいフラッグシップモデル GPT-6.2 Astra を公開しました。9 月に出た GPT-6 Astra の後継で、OpenAI は「最も難しいプロジェクトのためのモデル」と位置づけています。\n発表文には「スライドや Web サイト、3D デザインで違いが分かる」「1 タスク...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "AI定期実行の安全設計表｜最大回数・予算・停止条件・承認ラインを1枚で決める",
+      "url": "https://zenn.dev/andyailab/articles/6b4e7f9c6becf6",
+      "site": "Zenn(LLM)",
+      "published": "2026-11-19T10:40:49Z",
+      "description": "自動化は組めた。でも、定期実行のスイッチが押せない。\nデモでは1回きれいに動きました。ところが「毎時実行」に切り替える段階で手が止まります。夜中にループしたらどうなるのか。請求はいくらになるのか。止まっていても気づけるのか。\nこの不安は、気合いでは消えません。消えるのは、数字が決まったときです。\n何回まで動かすか。いくらで止めるか。どんな状態になったら止めるか。どこで人が見るか。この4つを先に表に...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "AutoExtract V2 リリース：組織の帳票業務を OCR と AI エージェントで効率化する",
+      "url": "https://zenn.dev/aws_japan/articles/auto-extract-ai-ocr-v2-release",
+      "site": "Zenn(LLM)",
+      "published": "2026-11-19T09:54:47Z",
+      "description": "こんにちは。AWS Solutions Architect の中本です。AutoExtract の開発メンバーの1人です。\n2026年8月に、AutoExtractのV2をリリースしました。AutoExtractはこれまでもOCRのサンプルとして使っていただいてきましたが、V2では複数人での利用や、AIエージェントによる抽出結果の検証といった機能を追加しています。そこでこの記事では、改めてAuto...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "Claude Code と gws で Gmail 3万通を掃除した",
+      "url": "https://zenn.dev/submax/articles/cfeac47d660f27",
+      "site": "Zenn(LLM)",
+      "published": "2026-11-19T09:21:31Z",
+      "description": "長年使っていた個人用の Gmail アドレスが、サービスのメールとか、スパムとか、スパムとか、でメールBOX内容量が凄いことになっていた。メール累計3万通、2.4GBくらい。\n一括で消すとなにか重要なメールが消えるかもしれない。\nただ人間が見て回るには多すぎる。\nAI に重要なメールと消して良いメールを区別させた。\n\nClaude Code\n\n計画は opus\n\n削除するメール分別は haiku ...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "APIキーはいつ失効させる？ LLMjacking時代のシークレット管理",
+      "url": "https://zenn.dev/infra_ojisan/articles/api-key-lifecycle-and-llmjacking",
+      "site": "Zenn(LLM)",
+      "published": "2026-11-19T09:03:37Z",
+      "description": "おそらく「開発」を仕事にされている方には当たり前のことかと思いますが、最近頻発してるので僭越ながら素人が書かせていただきます。\nPoC用に発行したLLMのAPIキーを .env に入れ、.gitignore に追加する。動作確認が終わってクラウドの検証環境も削除した。そのキーは、発行元でまだ有効になっていないでしょうか。\nAPIキーは、設定ファイルや検証環境を消しても、発行元で有効な間は使えます。...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "評価基盤を「純粋な温度計」にする：AI・クオンツシステムの先読みバイアス根絶と実測検証（第4回）",
+      "url": "https://zenn.dev/colorfulwave/articles/ba74eb63357c31",
+      "site": "Zenn(LLM)",
+      "published": "2026-11-19T08:51:26Z",
+      "description": "!\n本記事は、OSS評価エンジン「Intrinsic Value」の設計・実装を題材に、AI・数理システムの評価基盤（バックテスト / Eval）の設計原則と実測検証を解説する連載の第4回（最終回）です。技術解説を目的としており、特定の金融商品の投資助言・勧誘を行うものではありません。\n\n\n 1. 評価器（バックテスト）を「最適化」してはいけない\nAIエージェントやスクリーニングエンジンを開発して...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
     {
       "title": "新機能、ElastiCache の distributed KV caching を GPU 2 台の vLLM で試す",
       "url": "https://zenn.dev/aws_japan/articles/elasticache-distributed-kv-cache-bench",
