@@ -1,8 +1,98 @@
 {
   "site": "Zenn(Python)",
-  "last_updated": "2026-11-18T23:07:35.637116",
-  "total_articles": 7966,
+  "last_updated": "2026-11-19T04:09:57.854103",
+  "total_articles": 7976,
   "articles": [
+    {
+      "title": "MuJoCo で4脚ロボットを自作し PPO で歩かせる：転ぶ→回る→前へ歩くまでの7版（Mac の CPU だけ）",
+      "url": "https://zenn.dev/macsimlab/articles/5105d0ff38540e",
+      "site": "Zenn(Python)",
+      "published": "2026-11-18T23:11:13Z",
+      "description": "MuJoCo の XML（MJCF）で4本脚のロボットを自分で書き、Stable-Baselines3 の PPO で「前へ歩く」を覚えさせました。最初は数秒で転び、次は円を描いて回り続け、7版目で、学習3回のうち2回が、20秒で最初の前向きに13〜17m（出発点からの直線では15〜18m）進むようになりました。この記事は、その7版で何を変え、何が効いた「らしい」かの記録です。いくつも同時に変えた...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "「売上が落ちた理由」を偶然と分けるために、何を決め、答えの分かる合成データで何を確かめたか",
+      "url": "https://zenn.dev/takayuki0127/articles/ecafae4d701deb",
+      "site": "Zenn(Python)",
+      "published": "2026-11-18T22:29:59Z",
+      "description": "問い\n月次レポートで既存店の売上が前年を下回ると、会議で必ず「なぜ下がったのか」と聞かれます。そのとき、数字を細かく割っていけば、どこかに必ず「いちばん悪い地域」「いちばん悪い店」が見つかります。問題は、それが本当の理由なのか、たまたまの揺れなのかです。\nこの記事では、架空の食品スーパー「サンプルマート（架空）」の合成データで、2026年3月の既存店売上 −1.1% を説明するときに、どんな設計に...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "Claude Codeの-pモードをPythonとlaunchdで定期実行",
+      "url": "https://zenn.dev/ikuokuotiak/articles/claude-code-headless-python-launchd",
+      "site": "Zenn(Python)",
+      "published": "2026-11-18T22:00:45Z",
+      "description": "課題：対話なしでClaude Codeを回したい\nClaude Codeは対話で使うものと思われがちですが、claude -p（print モード）を使うと、プロンプトを渡して結果を標準出力に返すだけの非対話実行ができます。これをPythonから呼び、launchdで定期実行すれば、人が席にいなくても動くエージェントになります。\n私は複数のエージェントをこの形で運用しています。最初に詰まったのは次...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "固有名詞だらけの音声メモをAmiVoice APIで文字起こし：単語登録と音量そろえで誤り率を半分にした",
+      "url": "https://zenn.dev/classnow/articles/f245f53083a7ae",
+      "site": "Zenn(Python)",
+      "published": "2026-11-18T20:42:54Z",
+      "description": "はじめに\n國學院大學の文学部外国語文化学科で、英語とフランス語を学んでいる 2 年生です。プログラミングは 2026 年 1 月に始めました。\n授業のあと、駅まで歩きながらスマホに「今日のポイント」を声で吹き込んでいます。困るのは、外国語文化の授業は人名・地名・略語が多いことです。「カタルーニャ語」「マヨット」「CEP」のような語は、ふつうの音声認識ではほぼ確実に崩れます。\nそこで、AmiVoic...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "外の AI への相談に期限を付けたら、生きている処理を「消えた」と判定して二重に書いていた",
+      "url": "https://zenn.dev/claire_ai/articles/kigen-iriguchi",
+      "site": "Zenn(Python)",
+      "published": "2026-11-18T19:37:16Z",
+      "description": "Claude Code の作業の途中で、外の AI（Codex など）に相談を投げている。返事が来るまでは「走行中」として記録し、期限（900秒）を付けて見張っている。\n!\n🔑 具体的な中身（全体の作り・数字・直し方）は、こちらの記事に書いています\nこの記事では概要だけを書いています👇\n\nhttps://note.com/claire_ai/n/nd482786016e2\n\n 課題：生きている相談...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "メルカリ→BASEの「全自動出品」をあえてやらない理由と、代わりに作ったCSV整形パイプライン",
+      "url": "https://zenn.dev/keithval/articles/mercari-base-csv-pipeline",
+      "site": "Zenn(Python)",
+      "published": "2026-11-18T18:03:27Z",
+      "description": "はじめに\n「メルカリに出している商品を、BASEにも自動で出品したい」\nEC販売をしている方から、こういう相談を受けることがあります。気持ちはよく分かります。2つの販路で同じ商品を売るとき、一番つらいのは出品作業そのものより、手入力の手間と、在庫がズレる不安だからです。\nただ、僕はこの「全自動出品」を、そのままの形では作らないことにしました。この記事では、その理由と、代わりに作った「CSV整形パイ...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "pytestのparametrizeで境界値テストを1つの表にまとめる",
+      "url": "https://zenn.dev/hasib105/articles/f01b4bf2deaa95",
+      "site": "Zenn(Python)",
+      "published": "2026-11-18T17:51:59Z",
+      "description": "点数を成績に変換する関数のテストを書くとき、つい「テスト関数をコピーして値を2つ書き換える」ことをしていませんか。ケースが増えるほどコピーも増えて、メンテナンスがつらくなります。この記事では、@pytest.mark.parametrize で境界値のテストを1つの表にまとめる方法を紹介します。\n\n テスト対象\ngrading.py という小さな関数を用意します。\ndef grade(score)...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "Python文字化け対策:batのパスに改行コード(CR)が混入し終了コード2で落ちる原因と修正手順",
+      "url": "https://zenn.dev/hakumaigenki/articles/python-p267-8114",
+      "site": "Zenn(Python)",
+      "published": "2026-11-18T17:41:09Z",
+      "description": "この記事で切り分けられること\nWindows のタスクスケジューラで動かしている bat が、特定のタイミングから終了コード2(LastTaskResult=2)で落ちるようになった場合の切り分け方を書く。本体のスクリプトは動いているのに bat 全体は失敗する、というパターンが対象になる。\n\n 症状\n営業の定時タスク outreach_daily の LastTaskResult が 2 になっ...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "【Next.js/PostgreSQL】500万社B2BプラットフォームにおけるProgrammatic SEO＆都道府県・許認可ハブの爆速",
+      "url": "https://zenn.dev/kigyoulist/articles/ae3ff1e4ff590e",
+      "site": "Zenn(Python)",
+      "published": "2026-11-18T16:38:12Z",
+      "description": "1. はじめに\n500万件規模の法人データベースをWeb上に一般公開する際、エンジニアリング上の最大の課題は「人間にもクローラにも高速に応答する情報設計（IA）とDBインデックスの両立」である。\n全法人ページ（数百万URL）をフラットな構造で公開すると、以下の問題が発生する。\n\nクロールバジェットの分散により、重要な業種別・都道府県別・許認可別ハブへの再クロール頻度が低下する。\n\nOFFSET ベ...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
     {
       "title": "暗号資産ファンディング金利の実質年利計算とWebCrypto静的納品アーキテクチャ",
       "url": "https://zenn.dev/tetoka_po/articles/av-corp-funding-carry-simulator",
@@ -39,6 +129,16 @@
       "site": "Zenn(Python)",
       "published": "2026-11-18T12:12:09Z",
       "description": "土地の災害リスク（洪水・土砂災害・津波・高潮の指定区域）を、公的機関が配信している\n地図データから自動で取って、書類の欄に入れる処理を書きました。\nやることは単純です。地点の緯度経度から、その地点を含むタイルを取り、\n返ってきた図形に対して地点が内側か外側かを自分で判定する。\n別の項目（用途地域）で同じ叩き方をしていたので、タイル計算・通信・内外判定は1本に寄せました。\n動かしてみると、それらしい...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "18-⑩ Kaggle実践3 Biohub細胞トラッキング：6位の解法まとめ",
+      "url": "https://zenn.dev/rg687076/articles/93917fb7a4bcc9",
+      "site": "Zenn(Python)",
+      "published": "2026-11-18T11:22:09Z",
+      "description": "18-①Kaggle実践3 Biohub細胞トラッキング：環境構築から初回提出までの手順\n18-②Kaggle実践3 Biohub細胞トラッキング：初回提出コードを解説してみた\n18-③Kaggle実践3 Biohub細胞トラッキング：ローカル環境を構築してみた(交差検証(CV)込み)\n18-④Kaggle実践3 Biohub細胞トラッキング：3D U-Netの壁とCV微増(0.4483→0.45...",
       "category": "開発",
       "rss_category": "",
       "image_url": ""
