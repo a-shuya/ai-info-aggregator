@@ -1,14 +1,114 @@
 {
   "site": "Zenn(Python)",
-  "last_updated": "2026-11-20T02:32:47.103757",
-  "total_articles": 8009,
+  "last_updated": "2026-11-20T10:28:57.796419",
+  "total_articles": 8016,
   "articles": [
     {
-      "title": "Rails から Python のサービスを gRPC で呼ぶ：はじめてでも本番で使える構成ガイド",
-      "url": "https://zenn.dev/flyingclouds/articles/d11dd921ca756b",
+      "title": "rembgで葉が消えたので、残す位置を指定してみた",
+      "url": "https://zenn.dev/believe/articles/rembg-background-removal-20261120-d2a7",
       "site": "Zenn(Python)",
-      "published": "2026-11-20T02:18:04Z",
-      "description": "はじめに\n個人開発しているアプリで、Rails から Python の AI サービスを gRPC で呼び出しています。\n「gRPC って聞いたことはあるけど、Rails でどう使うの？」という方向けに、この記事では proto の定義 → コード生成 → Rails のクライアント → Python のサーバー → テスト までを一通り説明します。\nサンプルは「Rails から文章を送ると、Py...",
+      "published": "2026-11-20T09:15:28Z",
+      "description": "rembgは、写真の背景を削除し、透明なPNGを作るツールです。写真を外部サービスへアップロードせずに実行できる構成で、資料用の素材にできるか、猫の毛と植物の葉を試しました。\n猫の背景は消せましたが、植物の写真では、葉がほぼ消えて名札が残りました。葉の細かさを見るつもりだったのに、その葉がほとんどありません。\nどこを消して、何を残すか。写真を変える前に、こちらから指定できる方法がないか調べました。...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "Pythonのimportエラーを切り分ける：pipを使う前に確認したい4段階",
+      "url": "https://zenn.dev/wenlo/articles/40687c2b230b04",
+      "site": "Zenn(Python)",
+      "published": "2026-11-20T08:59:09Z",
+      "description": "「パッケージが動かない」という症状には、いくつかの原因があります。Pythonがモジュールを見つけられないのか、配布パッケージの情報がないのか、import時に失敗するのか、それとも特定の操作だけが使えないのか。\n今回は、いきなり再インストールするのではなく、この4段階を分けて調べる小さなオフライン診断を作ります。\n\n 診断スクリプト\n以下を dependency_diagnostics.py と...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "ブラックジャックを作りながら、Webアプリの裏側を学んでみた",
+      "url": "https://zenn.dev/alpha_omega/articles/86aa39b5657e91",
+      "site": "Zenn(Python)",
+      "published": "2026-11-20T08:00:37Z",
+      "description": "こんにちは、ビットです！\nこれまでゲームやシステムを作ったり、\nゲームイベントで通訳をしたりしてきました。\n今回はブラックジャックを題材に、ゲームを作るところから、ログインやデータの保存を組み込んでWebで公開するところまで、ひと通りやっていきます!!\n\n 1. ブラウザで遊べるゲームを作ってみる\nせっかく作るなら、完成したあとも自分で遊べるものにしたい。そこで選んだのが、ブラックジャックです。\n...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "iPhoneのヘルスケアを自前サーバーへ送るショートカットをPythonで生成した",
+      "url": "https://zenn.dev/daimo0120/articles/01c7833a42e9c8",
+      "site": "Zenn(Python)",
+      "published": "2026-11-20T08:00:06Z",
+      "description": "はじめに\n個人で、ヘルスケアのデータを集めてグラフにするWebアプリ(PersonalHealth)を作っています。これを身内数人で使えるように作り直したとき、各自のiPhoneからサーバーへデータを送る手段が必要になりました。\niPhoneの専用アプリも考えましたが、身内数人への配布と更新のために、Apple Developer Programの契約やアプリの配布手段を管理する負担は避けたいと考...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "自律AIエージェント運用で踏んだ6大障害と Fail-Closed 防御設計（6.1万円支出・WAL 32万行膨張の実録）",
+      "url": "https://zenn.dev/akashiczero/articles/64eb09bfe6ad56",
+      "site": "Zenn(Python)",
+      "published": "2026-11-20T07:28:47Z",
+      "description": "はじめに：自律AI基盤を冷徹に監査したら、6.1万円使って売上0円だった\nClaude Code / Codex / MCP などの自律AIエージェントを自宅Linuxサーバー上で常駐運用した結果、厳格監査で突きつけられた一次実測データは以下の通りでした。\n\n\n\n項目\n監査時点の実測値\n根本原因\n\n\n\n\n累計確定支出\n61,821 JPY\n予算ブレーカー・Default-Denyなしの外部API・...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "AST で Tkinter アプリの“画面の決まり”を自動点検する",
+      "url": "https://zenn.dev/cutlet_of_pork/articles/tkinter-ui-rules-ast-lint",
+      "site": "Zenn(Python)",
+      "published": "2026-11-20T06:58:43Z",
+      "description": "Tkinterの画面を持つ小さなPythonのツールを、数十本まとめて直してきた。画面の決まりを文書にまとめ、全部のツールをそろえた。たとえば次のような決まりだ。\n\n実行中の処理を止めるボタンは「停止」と書く（「中止」「中断」「キャンセル」を混ぜない）。\n実行はF5、停止はEsc。ボタンには「実行 (F5)」「停止 (Esc)」とキーを書く。\n同じツールを2つ同時に起動できないようにする（Tkのル...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "エンジニア視点で語る！Pythonで学ぶマクロ経済学入門 91",
+      "url": "https://zenn.dev/maszkot/articles/f5bb9ac40fd56c",
+      "site": "Zenn(Python)",
+      "published": "2026-11-20T05:29:03Z",
+      "description": "https://qiita.com/maskot1977/items/6b289b556cca4b60f92e\n\n\n エンジニア視点で語る！Pythonで学ぶマクロ経済学入門\n\n 第91回特集\n\n 「なぜ多文化共生は議論しにくいのか ― 空気と経済の視点から」\n\n\n オープニング\nDJミオ（女）\nこんばんは、DJミオです。\nこの番組は、マクロ経済学の基本を、Pythonで実際に手を動かしながら学ん...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "【OSS解析環境構築編 第4.5回】シアーロッキング＆Python自動スイープ（全398パターン）で1次・2次要素の収束性と計算コスト検証",
+      "url": "https://zenn.dev/naka_cae01/articles/04-5-elmer-3d-beam-benchmark",
+      "site": "Zenn(Python)",
+      "published": "2026-11-20T04:16:28Z",
+      "description": "はじめに\n前回（第4回）では、シンプルな3D片持ち梁モデル（MeshSizeMax = 20）を使って、1次要素（Tet4）と2次要素（Tet10）の精度比較を行いました。\n前回は「サイズ 20 mm」の1点だけで比較しましたが、検証を終えてみると次のような疑問が湧いてきます。\n「メッシュを極端に粗くしたら、1次要素の精度はどれくらい崩壊するんだろう？」\n「逆に、1次要素をどこまで細かくすれば2次...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "AIが書いたコードを読む練習2：平均を求める関数が`None`を返すのはなぜ？",
+      "url": "https://zenn.dev/riko111/articles/5ec7158ba72dba",
+      "site": "Zenn(Python)",
+      "published": "2026-11-20T03:31:15Z",
+      "description": "def average(scores):\n    &quot;&quot;&quot;点数のリストから平均を返す。空のリストなら None を返す。&quot;&quot;&quot;\n    if not scores:\n        return None\n    return sum(scores) / len(scores)\n点数のリストから平均を求めるPythonの関数を書いてとCla...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "コミット前に気づく：SonarQube for IDE のリアルタイム解析と Sonar way",
+      "url": "https://zenn.dev/r_goto/articles/sonarqube-for-ide-sast",
+      "site": "Zenn(Python)",
+      "published": "2026-11-20T03:19:58Z",
+      "description": "クリエーションライン株式会社の Tech Blog に掲載した記事の要約です。元の記事：SonarQube IDE（旧SonarLint）で実現するリアルタイムSAST解析 | コードセキュリティ | DevSecOps\n\nSonarQube for IDE（旧称 SonarLint）は、コードを書いているその瞬間に静的解析をかけるエディタ拡張機能です。問題がレビューや CI で見つかると、手戻り...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "万博跡地は今どこまで更地になった？ 衛星の SAR 強度と夜間光で追ってみた（Sentinel-1 × VIIRS）",
+      "url": "https://zenn.dev/syu_tan/articles/002_expo_site_sar",
+      "site": "Zenn(Python)",
+      "published": "2026-11-20T02:45:01Z",
+      "description": "2025年の大阪・関西万博、行きましたか？\n4月13日から10月13日までの 184 日で、来場者は関係者を含めて約 2,902 万人。会場のシンボルだった大屋根リングは 1 周約 2 km の木の輪っかで、「最大の木造建築物」としてギネス世界記録にもなりました。\n閉幕から約、1年「解体進みほぼ更地に」「約200 m の保存部分以外は姿を消し」というニュースが流れてきます。\nじゃあ、宇宙から見ると...",
       "category": "開発",
       "rss_category": "",
       "image_url": ""
@@ -29,26 +129,6 @@
       "site": "Zenn(Python)",
       "published": "2026-11-20T01:11:09Z",
       "description": "使っていた仕組みが、ある日「終了」を告げられた\n家計簿アプリのZaimには、明細や残高を外部から取得できるAPIがありました。僕はこれを使って、家計の明細と口座残高をGoogleスプレッドシートに自動で取り込み、資産の推移を眺める仕組みを自宅で回していました。\nそのAPIが、2026年12月7日で提供終了になります。後継のAPIはありません。新規のアプリ登録もすでに受付を終えています。\n正直、最初...",
-      "category": "開発",
-      "rss_category": "",
-      "image_url": ""
-    },
-    {
-      "title": "Claude Desktopの回答を別のAIに検閲させる仕組みの中身——語の照合と文脈判断の2段、差し戻しの渡し方",
-      "url": "https://zenn.dev/kensho_ya/articles/claude-desktop-reply-checker-two-stage-review",
-      "site": "Zenn(Python)",
-      "published": "2026-11-20T01:08:53Z",
-      "description": "この連載の#6の冒頭で、Claudeの回答を別のAIで検閲していると書いた。Claude Desktopの画面をmacOSのアクセシビリティAPIで監視し、Claudeの応答を禁則と照らして、抵触があれば入力欄に差し戻し文を入れて送り直させる、という仕組みだ。#6では全体の流れと禁則の例だけを書いた。\nこの記事では、その中身を書く。自作のPythonスクリプトは、語の一致で見る段と、別のAIに文脈...",
-      "category": "開発",
-      "rss_category": "",
-      "image_url": ""
-    },
-    {
-      "title": "Google Picsが「Nano Banana 2.1」へ進化！編集忠実度・文字描画向上と実務活用",
-      "url": "https://zenn.dev/adopture/articles/0d26093d917941",
-      "site": "Zenn(Python)",
-      "published": "2026-11-20T00:37:14Z",
-      "description": "📰 本記事の一次ソース（公式発表）\n\nタイトル: Google Workspace Updates: Google Pics upgrades to Nano Banana 2.1 for higher-quality image generation and editing\n\n詳細な解説記事: ggnn.tech の本編記事はこちら\n\n\n\n\n 1. 概要：Nano Banana 2.1 へのアッ...",
       "category": "開発",
       "rss_category": "",
       "image_url": ""
@@ -99,16 +179,6 @@
       "site": "Zenn(Python)",
       "published": "2026-11-19T23:17:33Z",
       "description": "はじめに：前回の「天才的な無駄遣い」の続き\n前回、暇人（筆者）が AI と語り合ってできた QuantumZero v1 は、\n\nゼロ除算を QuantumState にすれば、* 0 で情報は復元できる！\n\nという 宇宙を救う（つもりの）妄想 でした。\nスクレイピングが ZeroDivisionError で止まらなくなる、という副作用付き。\n……ところが pytest を書いたら、自分で自分の...",
-      "category": "開発",
-      "rss_category": "",
-      "image_url": ""
-    },
-    {
-      "title": "「この単位で卒業できますか」に、自分の便覧で答えるツールを作った【AIが便覧を読む】",
-      "url": "https://zenn.dev/yukidev25/articles/ee3d255560f0d8",
-      "site": "Zenn(Python)",
-      "published": "2026-11-19T23:12:43Z",
-      "description": "Yahoo!知恵袋には、毎年同じ形の質問が並びます。「この単位数で卒業できますか」「履修登録をミスしました」「GPAの計算方法を教えてください」。\nでも、この質問に第三者は正しく答えられません。答えはその学生の大学・学部・入学年度の便覧と、その学生の成績を突き合わせないと出ないからです。実際に回答を読むと、一般論で答えていて、回答どうしで食い違っていることもあります。\nそこで、学生が自分の便覧を ...",
       "category": "開発",
       "rss_category": "",
       "image_url": ""
