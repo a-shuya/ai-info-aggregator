@@ -1,24 +1,204 @@
 {
   "site": "Zenn(Python)",
-  "last_updated": "2026-11-21T07:30:07.360960",
-  "total_articles": 8031,
+  "last_updated": "2026-11-21T15:33:43.814166",
+  "total_articles": 8048,
   "articles": [
+    {
+      "title": "「あったらいいのに」第1回の集計：ランキングをやめて、AI検索とも比べてみた",
+      "url": "https://zenn.dev/oseisei/articles/needs-radar-first-report",
+      "site": "Zenn(Python)",
+      "published": "2026-11-21T15:20:35Z",
+      "description": "はじめに\nSNS の「あったらいいのに」「誰か作って」という声を集めて毎週紹介する needs-radar を作っています（作り始めた経緯は前回の記事に書きました）。\n今回は、実際に集めたデータで第 1 回の集計をしました。その途中で、前回の記事にとても参考になるコメントをいただき、集計のやり方を見直しています。\nこの記事では、集めてみて分かった数字、見直した内容、そして AI 検索（Perple...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "ロボットとPLCのログ、3秒ずれると先に見える異常が変わる",
+      "url": "https://zenn.dev/nagi_lab/articles/0e86158fcdd169",
+      "site": "Zenn(Python)",
+      "published": "2026-11-21T15:03:03Z",
+      "description": "ロボットとPLCのログを1本にまとめるとき、時刻でソートするだけでいいのか。時計が3秒ずれた架空のCSVを作って試すと、どちらの異常が先に記録されたように見えるかが入れ替わりました。\n使うログはすべてこの記事用に作った合成データです。実機との通信はせず、Pythonの標準ライブラリでCSVを読むだけです。\n\n 補正前：PLCのタイムアウトが2.2秒先に見える\n\n\n\nCSVに書かれた時刻\nログ\n内容...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "映画の原音セリフを -16 LUFS で揃えた Anki デッキ2種と、標準ライブラリだけで動く .apkg 検証スクリプトを公開した",
+      "url": "https://zenn.dev/nonacosa/articles/0b95d41628017a",
+      "site": "Zenn(Python)",
+      "published": "2026-11-21T14:47:43Z",
+      "description": "英語の映画や海外カンファレンスの言い回しを Anki に入れて回していると、だいたい次の2点で手が止まります。\n\n映画ごとに録音レベルがバラバラで、再生するたびに音量を調整しないといけない\nカードだけ独立していると、「その前後の文脈でどう話されていたか」をすぐ見返せない\n\nこのあたりを片付けるために、実際の映画シーンを -16 LUFS にラウドネス正規化した音声＋16:9 静止画つきで .apk...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "AIに丸投げしない設計論：「Pythonの定量フィルタ × Gemini API 1回リクエスト」で株式の情報収集を自動化した話",
+      "url": "https://zenn.dev/shimashimap/articles/3be54bfa332afc",
+      "site": "Zenn(Python)",
+      "published": "2026-11-21T14:22:43Z",
+      "description": "はじめに：「AIで投資なんて馬鹿げている」という誤解\nSNSやネット上では、「AIを使って株式投資をするなんて馬鹿げている」「AIの予測は当たらない」といった意見をよく見かけます。\n結論から言うと、その批判は「AIに丸投げする」という前提が間違っています。\nチャット画面に「これから上がる株を教えて」と打ち込んだり、ニュース記事をそのままAIに読ませて売買判断を任せたりすれば、うまくいかないのは当然...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "正規化した文字列を、グループ化のキーに使ってはいけない",
+      "url": "https://zenn.dev/shinsei99/articles/room-number-ate-the-building-name",
+      "site": "Zenn(Python)",
+      "published": "2026-11-21T12:25:21Z",
+      "description": "不動産管理の会社で、共有フォルダに散らばった過去の重要事項説明書を集めて、\n物件台帳（建物の所在地・床面積・構造・総戸数…）を起こす道具を書きました。\n依頼はこうです。\n\n重複は同じ建物であれば一旦、日付が最新のを採用。\n例えば201 205 306号とかあったとしても一旦1つでいい\n\n入居者ごとに重要事項説明書があるので、同じ建物のものが何本も出てきます。\n建物の型を作るのが目的なので、建物ごと...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "Spring Boot 経験者が FastAPI 初日に1ファイルで API + Swagger を動かした話",
+      "url": "https://zenn.dev/ko_tech/articles/springboot-dev-fastapi-day1",
+      "site": "Zenn(Python)",
+      "published": "2026-11-21T12:04:31Z",
+      "description": "はじめに\n私は実務で Java / Spring Boot（2年） と Nuxt / TypeScript（半年） の経験があります。\n今後、Web バックエンドの引き出しを広げつつ 生成AI（LLM・RAG）を組み込んだアプリ開発 にも踏み込みたくなり、Python / FastAPI の学習を始めました。\n最終的には「FastAPI + PostgreSQL（pgvector）+ 生成AI」で...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "依頼票の実測値と「候補未定」を別々に検証する",
+      "url": "https://zenn.dev/pechonfinzel/articles/3d923ad6dc2b2e",
+      "site": "Zenn(Python)",
+      "published": "2026-11-21T12:00:18Z",
+      "description": "By 慕予 MUYU\n廊下のくぼみは奥行き42 cm。現地の寸法が分かっても、候補の作品が決まるまでは「収まる」とは判定できません。採寸中に空欄でよい項目を、比較段階でもそのまま通すと、この二つの状態が混ざります。\n次は依頼票の説明用データです。長さ95 cm、奥行き42 cm、上部60 cmで、入口は短辺側。元のメモで値が明示されている項目だけを使います。実測か推定かは数値から復元できないので、...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "前作『VIVANT』の砂漠を人工衛星の情報で逃げてみた",
+      "url": "https://zenn.dev/syu_tan/articles/002_vivant_desert_path",
+      "site": "Zenn(Python)",
+      "published": "2026-11-21T11:02:14Z",
+      "description": "日曜劇場『VIVANT』の続編が、2026年7月26日から始まりましたね。\nhttps://www.tbs.co.jp/VIVANT_tbs/\n今回の大きな海外ロケはアゼルバイジャンだそうです。行ってみたいですね〜\nhttps://ja.wikipedia.org/wiki/アゼルバイジャン\n2023年の前作はモンゴルで撮影されて、劇中では架空の「バルカ共和国」でした。第1話の冒頭、乃木が砂漠を歩...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "pandas cut right=False: A Retrospective on 178 Mis-Tiered Mention Days",
+      "url": "https://zenn.dev/dustinliang/articles/08214fbe2835c0",
+      "site": "Zenn(Python)",
+      "published": "2026-11-21T10:34:32Z",
+      "description": "Use pd.cut(..., right=False) when your tier rule says &quot;at least&quot;: it builds left-closed bins such as [10, 50), so a day with exactly 10 mentions lands in the upper tier and a day with 0 ment...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "スクリーンショット転送に添えるべき素材フィールドの設計",
+      "url": "https://zenn.dev/adahandmade/articles/3a9fc656fe6a8e",
+      "site": "Zenn(Python)",
+      "published": "2026-11-21T10:00:13Z",
+      "description": "By ADAHANDMADE\n顧客から送られてくる画像には、商品レコードが付いていないことが多い。このとき、画像だけが社内や取引先に転送されると、受け取った側はそれぞれ別の前提で回答を作り始める。これを防ぐには、転送前に添えるフィールドを固定してしまうのが最も確実だ。\nまず決めるのは、転送物に必ず含める最小セットである。モデルのリンクまたは正確なデザイン名、レコードに公開されている通りの繊維表記、...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "ブランドカーペットの共通コンセプトを複数建物へ展開する台帳設計",
+      "url": "https://zenn.dev/adacarpet/articles/f24ba0150c5ae8",
+      "site": "Zenn(Python)",
+      "published": "2026-11-21T09:59:55Z",
+      "description": "By ADA CARPET\n同じ色設計を掲げる二つの建物を、別々の運営チームが引き継ぐ。清掃責任の分担も違う。このとき共有できるのは「見え方の基準」であって、繊維やバッキング、清掃要件まで同一にする理由にはならない。ここで判断軸を一つ置く。共通化する項目と建物ごとに承認する項目を分け、それぞれの承認者を台帳に明記する、というやり方だ。\n共有するのは、色・柄の参照範囲と、空間用途区分の対応表である。...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "AlphaGoの探索をClaude Codeに載せてみた",
+      "url": "https://zenn.dev/natsu529/articles/7b246228d11b82",
+      "site": "Zenn(Python)",
+      "published": "2026-11-21T09:59:30Z",
+      "description": "Claude CodeやCodex CLIに修正を頼むと、一回目の答えが外れることがある。そのとき、同じ会話の中で直させ続けるより、最初から別のやり方で解かせた方が早い場面も多い。この「何通りか試して、いちばんよい答えを選ぶ」作業を自動でやるツール「agent-mcts」を作り、MITライセンスで公開した。\nhttps://github.com/natsu0529/agent-mcts\n\n\n ag...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "ChatGPT/Claude送信前に機密をローカル可逆マスクするChrome MV3拡張と誤検知対策",
+      "url": "https://zenn.dev/pecopeko/articles/browser-local-reversible-pii-vault-chrome-mv3",
+      "site": "Zenn(Python)",
+      "published": "2026-11-21T08:35:28Z",
+      "description": "はじめに：業務文書をLLMに貼る前の「伏せ字」はなぜ現場で破綻するのか\nChatGPT・Claude・Gemini に請求書・問い合わせメール・障害ログを貼って要約やチェックを頼みたい場面は日常茶飯事です。しかし、社内の情報セキュリティ規定では「マイナンバー・適格請求書T番号・法人カード番号・顧客メールアドレスをそのまま外部LLMへ送るな」と定められています。\nこの対策として手元で簡易スクリプトや...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "途中の公開失敗を、成功扱いで隠さない",
+      "url": "https://zenn.dev/miyakona/articles/checkpoint-failure-keeps-pending",
+      "site": "Zenn(Python)",
+      "published": "2026-11-21T07:46:03Z",
+      "description": "短い回線断で、夜間バッチが終わってしまった\n数時間かけてファイルを処理する夜間バッチで、途中の公開に失敗し、残りの処理が翌日の実行へ持ち越されることがありました。バッチは、処理済みファイルと台帳を一定間隔でS3へ送り、最後にもまとめて公開していました。ここでいう公開は、インターネットへの一般公開ではなく、後続の処理が読める保存先へ反映することです。\n先に入れていた回線の自己復旧は、実行の冒頭でしか...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "簿記のルールをコードで守る：複合仕訳・貸借一致チェック・訂正仕訳の設計",
+      "url": "https://zenn.dev/burrata/articles/ssei-ledger-bookkeeping-rules",
+      "site": "Zenn(Python)",
+      "published": "2026-11-21T06:52:51Z",
+      "description": "!\nこの記事のポイント\n\n個人事業主向けの複式簿記アプリを、TypeScript（React）とPython（FastAPI）で個人開発しています（2026年10月〜）\n「貸借は必ず一致する」などの簿記のルールを、画面・API・保存の直前・データベースの4か所で分担してチェックしています\n記帳した仕訳は修正・削除せず、取消仕訳で訂正する設計にしました\n明らかな間違いは登録を止め、怪しいものは警告で...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "AI駆動開発テンプレート ツール編 — uv + ruff + mypy + pytest + typer で CLI を安全に作る",
+      "url": "https://zenn.dev/yochi/articles/ai-driven-dev-stack-tool",
+      "site": "Zenn(Python)",
+      "published": "2026-11-21T06:47:10Z",
+      "description": "全体像のツールバリアント(--type tool)の解説。\nCLI、スクリプト、自動化のような「人の代わりにファイルや外部サービスを触るプログラム」向け。\nAI に書かせるとき一番怖いのは破壊的な操作が既定で走ることなので、方針はそこに寄せている。\n\n 構成の全体像\nPython 3.12+   … 言語\nuv             … パッケージ / 仮想環境 / Python 本体の管理(p...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "【Python × Gemini API】PHP/Laravelの英語脆弱性（NVD）を1分で日本語レポート化する仕組み",
+      "url": "https://zenn.dev/shimashimap/articles/7053272e4d6093",
+      "site": "Zenn(Python)",
+      "published": "2026-11-21T06:28:23Z",
+      "description": "はじめに\n昨今、AIを活用した脆弱性の発見や攻撃手法の自動化が進んだこともあり、公開されるCVE（脆弱性情報）の件数は凄まじい勢いで増え続けています。\nPHP / Laravel / Composer 周りでも例外ではなく、実際に直近7日間だけで141件の関連情報、そのうち深刻度が高い（CVSS 7.0以上）ものだけで74件が報告されているのが現状です。\nこのペースで増え続けるNVD（米国脆弱性デ...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "OpenFOAM 自宅で深める 熱流体解析の基礎と応用 (1)",
+      "url": "https://zenn.dev/kamakiri/books/openfoam-starter-18",
+      "site": "Zenn(Python)",
+      "published": "2026-11-21T06:07:02Z",
+      "description": "OpenFOAMで熱流体解析の基礎を学ぶ本です。浮力キャビティの自然対流、円管内の流れと熱移動、2次元円柱まわりの流れと熱伝達を題材に、ヌセルト数などの理論式や実験結果と照らし合わせて、解析結果の妥当性を確かめる手順を解説します。",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "OpenFOAM 自宅で極める流体解析",
+      "url": "https://zenn.dev/kamakiri/books/openfoam-starter-17",
+      "site": "Zenn(Python)",
+      "published": "2026-11-21T06:07:01Z",
+      "description": "2次元円柱まわりの流れを題材に、OpenFOAMでの解析を一段深く学ぶ本です。抗力係数やストローハル数を実験値・理論と比べて結果の妥当性を確かめ、力学的相似性の検証、PyFoamを使ったパラメータスタディの自動化までを解説します。",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
     {
       "title": "456賽でも負ける——出目と勝敗は、同じ証拠なのか【第4回】",
       "url": "https://zenn.dev/okamasaya/articles/chinchiro-bayes-04-outcomes",
       "site": "Zenn(Python)",
       "published": "2026-11-21T00:48:05Z",
       "description": "イカサマを疑っていた相手が、負けた。\n「この人も普通に負けるのか」と思えば、疑いが少し薄れるかもしれません。ただ、仕掛けを使っていても、必ず勝てるとは限りません。\nこれまではサイコロ1個を見て、「1〜3が出た／4〜6が出た」という記録から更新してきました。今回は3個で役を作り、相手と勝敗を比べるところまで進めます。\nそこで見えてくるのは、勝ち負けが同じでも、出目の記録が持つ意味は違うということです...",
-      "category": "開発",
-      "rss_category": "",
-      "image_url": ""
-    },
-    {
-      "title": "【実装編】クライアント証明書認証にも対応！PythonとGitで10万行超のコードからレビュー対象を自動抽出する",
-      "url": "https://zenn.dev/okkun_lab/articles/5503b08a188c51",
-      "site": "Zenn(Python)",
-      "published": "2026-11-21T00:05:58Z",
-      "description": "【実装編】クライアント証明書認証にも対応！PythonとGitで10万行超のコードからレビュー対象を自動抽出する\n\n はじめに\n前回の記事では、GPUなし・追加利用可能メモリ16GB・完全オフラインという制約の中で、10万行以上のAngular・DjangoコードをAIでレビューするための構成を検討しました。\n今回から、その仕組みを実装していきます。\nまず作成するのは、Git差分から変更されたコー...",
       "category": "開発",
       "rss_category": "",
       "image_url": ""
@@ -49,16 +229,6 @@
       "site": "Zenn(Python)",
       "published": "2026-11-20T23:22:29Z",
       "description": "title: &quot;9.4GBのモデルは、サイズが合っていても壊れていた（sha256で照合する）&quot;\nemoji: &quot;🧩&quot;\ntype: &quot;tech&quot;\ntopics: [&quot;ComfyUI&quot;, &quot;HuggingFace&quot;, &quot;画像生成&quot;, &quot;ローカルAI&quot;, &quo...",
-      "category": "開発",
-      "rss_category": "",
-      "image_url": ""
-    },
-    {
-      "title": "市や図書館のイベント情報を毎晩集めて、子連れで行けるものだけ家族のカレンダーに入れる",
-      "url": "https://zenn.dev/hiroyamayu/articles/local-events-to-calendar",
-      "site": "Zenn(Python)",
-      "published": "2026-11-20T23:00:05Z",
-      "description": "子どもたちはまだ小さく、休みの日に一日家にいると、時間を持て余してしまいます。いろいろな経験を積ませたいので、地域のイベントには、できるだけ顔を出したいと思っていました。\nところが、イベントの情報はウェブ、チラシ、地域の情報誌など、いろいろな所に散らばっています。それを集めて、家族の予定と照らし合わせて確かめるのは、かなり大変でした。\nそこで、市や図書館などの公開カレンダーから毎晩イベントを集め、...",
       "category": "開発",
       "rss_category": "",
       "image_url": ""
