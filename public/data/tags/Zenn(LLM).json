@@ -1,24 +1,34 @@
 {
   "site": "Zenn(LLM)",
-  "last_updated": "2026-11-20T18:46:09.253861",
-  "total_articles": 7581,
+  "last_updated": "2026-11-21T00:20:55.587219",
+  "total_articles": 7584,
   "articles": [
     {
-      "title": "数十年前の社内マニュアルをRAGに食わせる前にやっておく5つの前処理",
-      "url": "https://zenn.dev/dxclab/articles/001ddb6d841ddf",
+      "title": "組み込みAI不要(embedded_models:false)Rust製MCP記憶「LongMemOS/MemoryBox 2.0」の設計",
+      "url": "https://zenn.dev/zeroos_fidwell/articles/589a526771fab2",
       "site": "Zenn(LLM)",
-      "published": "2026-11-20T11:11:09Z",
-      "description": "はじめに\nこんにちは。普段は生成AIを使った業務アプリのPoCを作っています。\n「社内のマニュアルを全部RAGに入れて、何でも答えてくれるAIを作りたい」という相談はとても多いです。そして実際に触ってみると、だいたい次のような状況になります。\n\n元ファイルは Word や PDF で、作られたのは10年〜20年前\n全角英数字、機種依存文字、謎の罫線がたっぷり\n「第3章 3.2.1」のような見出しは...",
+      "published": "2026-11-20T16:01:34Z",
+      "description": "背景：複数のAIコーディングツールを併用する現場で起きる「文脈の断絶」\n近年、日本の開発現場でも Claude Code、Cursor、Codex、OpenCode、Trae、OpenClaw など複数の AI エージェントを用途別に使い分ける運用が広がっています。一方で、ツールを切り替えるたびに「なぜこの API スキーマに決めたのか」「既存の ERP 連携テーブルに触れてはいけない条件は何か」...",
       "category": "AI・技術",
       "rss_category": "",
       "image_url": ""
     },
     {
-      "title": "AI営業ロールプレイの「お客様役」を本物っぽくするペルソナ設計",
-      "url": "https://zenn.dev/dxclab/articles/786bd805ba1169",
+      "title": "数億行の「クラウドに出せない機密データ」をどう分析する？128GBメモリ×DuckDB×ローカルLLMのハイブリッド分析基盤",
+      "url": "https://zenn.dev/ruriopcode/articles/4183ff66d90941",
       "site": "Zenn(LLM)",
-      "published": "2026-11-20T11:08:35Z",
-      "description": "はじめに\nこんにちは。普段は生成AIを使った業務アプリのPoCを作っています。\n最近、「LLMにお客様役をやってもらって、営業や窓口対応の練習をしたい」という相談をよく受けます。人同士のロールプレイは、相手役の時間を取るのが大変ですし、毎回同じ温度感で付き合ってもらうのも難しいからです。\nところが、何も考えずに「あなたは〇〇業界の部長です。営業担当と話してください」とお願いすると、だいたい次のよう...",
+      "published": "2026-11-20T11:16:28Z",
+      "description": "1. はじめに：データ分析基盤の現場で痛感する「コスト」と「機密」のジレンマ\n普段、AIやデータを扱う部署で企業のデータ分析基盤を構築・運用する仕事をしていますが、最近の「DWH×生成AI」のトレンドには大きな可能性を感じる一方で、実務ならではの強いジレンマも抱えています。\nたしかにSnowflake（Cortex AI）やBigQueryなどの進化によって、SQLから直接LLMを呼び出してテキス...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "MCPサーバーが増えてきたら「ゲートウェイ」を1枚かませよう",
+      "url": "https://zenn.dev/dxclab/articles/b8869222bdeeec",
+      "site": "Zenn(LLM)",
+      "published": "2026-11-20T11:13:49Z",
+      "description": "はじめに\nこんにちは。普段は生成AIを使った業務アプリのPoCを作っています。\nAIエージェントにツールを持たせる方法として、MCP（Model Context Protocol）はすっかり定番になりました。最初は「社内文書の検索」のMCPサーバーを1つ作ってつなぐだけなので、とても簡単です。\nところが、使い始めると次々に要望が出てきます。\n\n「顧客情報も見られるようにしたい」\n「チケット管理シス...",
       "category": "AI・技術",
       "rss_category": "",
       "image_url": ""
@@ -29,6 +39,26 @@
       "site": "Zenn(LLM)",
       "published": "2026-11-20T10:15:09Z",
       "description": "GPT-6.2 Astra と GPT-6.2 Sol は、2026-11-17 に ChatGPT Work・Codex と GitHub Copilot での提供が発表された、OpenAI のエージェントコーディング向けモデルです。この記事では、2026-11-17 の Codex と GitHub Copilot の changelog をもとに、使い始めるときに次の 3 つを順に決められる...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "新しい Grok Bot は優秀な新人だ。ただし、あなたの失敗は何も知らない",
+      "url": "https://zenn.dev/worked/articles/0f832f7af77d3c",
+      "site": "Zenn(LLM)",
+      "published": "2026-11-20T08:51:48Z",
+      "description": "Grok Bot を入れると、チャットが開いてカーソルが点滅する。「hi」と送ると、とても有能なアシスタントが、計画を待ってくれている。\nつまずくのは、だいたいここだ。ツールが難しいからではない。新しい Bot は新しい同僚と同じで、ルールも、すでに払った失敗も知らない。初日に直すための短いチェックリストを、公式ドキュメントに沿ってまとめた。詳細なリンクは英語の原文にある。\n以下は How to ...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "【ゆるっとAIセキュリティ #3】プロンプトインジェクションって？",
+      "url": "https://zenn.dev/daphne/articles/ai-prompt-injection-readme",
+      "site": "Zenn(LLM)",
+      "published": "2026-11-20T07:00:05Z",
+      "description": "第2回では、AIに作ってもらったツールを動かす前に、別のAIに見てもらう話をした。\nhttps://zenn.dev/daphne/articles/ai-review-new-chat\n最後にひとつ残した問いがある。ツールを作ってもらうとき、参考にしたWeb記事をコピーしてチャットに貼ることもある。普段のチャットで「このWeb記事をまとめて」と頼むときも同じだ。\nもしそのページの中に、別の命令が...",
       "category": "AI・技術",
       "rss_category": "",
       "image_url": ""

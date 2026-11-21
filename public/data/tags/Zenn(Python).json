@@ -1,34 +1,44 @@
 {
   "site": "Zenn(Python)",
-  "last_updated": "2026-11-20T18:46:09.253861",
-  "total_articles": 8019,
+  "last_updated": "2026-11-21T00:20:55.587219",
+  "total_articles": 8021,
   "articles": [
+    {
+      "title": "時間発展する行列の低ランク近似で必要な保持ランクを誤差上界から決定する",
+      "url": "https://zenn.dev/id774/articles/3dccf94f241c2d",
+      "site": "Zenn(Python)",
+      "published": "2026-11-20T15:03:05Z",
+      "description": "時刻 t=0 でランク 1 の行列であっても、時間発展後の行列をランク 1 で近似した際の誤差は増加し得る。低ランク近似を時間発展するデータに適用する場合、初期時刻の特異値だけで保持ランクを選ぶ方法と、対象時間区間の誤差上界から選ぶ方法を区別する必要がある。\n本稿では、行列の特異値を切り捨てたときのフロベニウスノルム誤差を定義し、スペクトルの減衰条件および核ノルムの時間変化から、区間全体で許容誤差...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "SNSの「あったらいいのに」を集めて毎週ランキングにするツールを0円で作り始めた",
+      "url": "https://zenn.dev/oseisei/articles/needs-radar-zero-yen",
+      "site": "Zenn(Python)",
+      "published": "2026-11-20T15:01:44Z",
+      "description": "はじめに\n個人開発で「何を作るか」がいちばん難しい、と感じています。\nそこで、SNS に流れている「こういうのあったらいいのに」「誰か作って」という声を集めれば、題材探しそのものを仕組みにできるのでは、と考えて needs-radar というツールを作り始めました。\nこの記事では、作り始める前に調べたことと、最初の版で決めたことをまとめます。\n\n 作っているもの\n流れはシンプルです。\n\n\n収集：B...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "「見出しの右が記入欄」は5通りのうちの1つだった — 紙の書式へ機械で書き込む",
+      "url": "https://zenn.dev/shinsei99/articles/label-does-not-say-where-to-write",
+      "site": "Zenn(Python)",
+      "published": "2026-11-20T12:23:00Z",
+      "description": "不動産の売買では、重要事項説明書という書式に調査結果を書き込みます。業界団体が配っている\nExcel の公式書式で、1ページが 543行 × 256列、結合セルが 1,166 個、文字の入ったセルが\n1,414 個。人が入力欄をクリックして埋める前提で作られています。\nここへ、調査で集めた値を自動で入れています。この記事は、その書き込み先（セルの座標）を\n機械で割り出すときに当たった、位置の決まり...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
     {
       "title": "インフルエンザの「県から県への広がり」を、全国の波と分けてどう測り、偽の隣接や設定替えで何を確かめたか",
       "url": "https://zenn.dev/takayuki0127/articles/9847d09d8cc411",
       "site": "Zenn(Python)",
       "published": "2026-11-20T11:29:52Z",
       "description": "問い\nインフルエンザの流行は、ある県で始まって周りへ広がるのか、それともどの県でもほぼ同時に始まるのか。これを、都道府県別・週ごとの定点当たり報告数（決められた医療機関1か所あたりの報告数）で、次の3つの問いに分けました。\n\n流行は毎年同じ県から始まるのか\n始まりの早さは、地図の上で固まっているか\n全国の波とは別に、「隣の県」や「人の行き来が多い県」の先週の流行が、その県の今週の流行を説明するか\n...",
-      "category": "開発",
-      "rss_category": "",
-      "image_url": ""
-    },
-    {
-      "title": "PowerPointをLLMにちゃんと読ませる：テキスト・XML・画像の三本立てで攻める",
-      "url": "https://zenn.dev/dxclab/articles/c959df33325ccb",
-      "site": "Zenn(Python)",
-      "published": "2026-11-20T11:17:36Z",
-      "description": "はじめに\nこんにちは。普段は生成AIを使った業務アプリのPoCを作っています。\n社内にあるドキュメントのうち、実は一番「中身が濃い」のはPowerPointだったりします。設計の全体像、業務フロー、検討の経緯…。大事な情報ほど、図になってスライドに載っています。\nところが、PowerPointをLLMに読ませようとすると、思ったよりうまくいきません。\n\nテキストだけ抜き出すと、図の中の矢印や配置の...",
-      "category": "開発",
-      "rss_category": "",
-      "image_url": ""
-    },
-    {
-      "title": "MCPサーバーが増えてきたら「ゲートウェイ」を1枚かませよう",
-      "url": "https://zenn.dev/dxclab/articles/b8869222bdeeec",
-      "site": "Zenn(Python)",
-      "published": "2026-11-20T11:13:49Z",
-      "description": "はじめに\nこんにちは。普段は生成AIを使った業務アプリのPoCを作っています。\nAIエージェントにツールを持たせる方法として、MCP（Model Context Protocol）はすっかり定番になりました。最初は「社内文書の検索」のMCPサーバーを1つ作ってつなぐだけなので、とても簡単です。\nところが、使い始めると次々に要望が出てきます。\n\n「顧客情報も見られるようにしたい」\n「チケット管理シス...",
       "category": "開発",
       "rss_category": "",
       "image_url": ""
@@ -69,6 +79,16 @@
       "site": "Zenn(Python)",
       "published": "2026-11-20T08:00:06Z",
       "description": "はじめに\n個人で、ヘルスケアのデータを集めてグラフにするWebアプリ(PersonalHealth)を作っています。これを身内数人で使えるように作り直したとき、各自のiPhoneからサーバーへデータを送る手段が必要になりました。\niPhoneの専用アプリも考えましたが、身内数人への配布と更新のために、Apple Developer Programの契約やアプリの配布手段を管理する負担は避けたいと考...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "自律AIエージェント運用で踏んだ6大障害と Fail-Closed 防御設計（6.1万円支出・WAL 32万行膨張の実録）",
+      "url": "https://zenn.dev/akashiczero/articles/64eb09bfe6ad56",
+      "site": "Zenn(Python)",
+      "published": "2026-11-20T07:28:47Z",
+      "description": "はじめに：自律AI基盤を冷徹に監査したら、6.1万円使って売上0円だった\nClaude Code / Codex / MCP などの自律AIエージェントを自宅Linuxサーバー上で常駐運用した結果、厳格監査で突きつけられた一次実測データは以下の通りでした。\n\n\n\n項目\n監査時点の実測値\n根本原因\n\n\n\n\n累計確定支出\n61,821 JPY\n予算ブレーカー・Default-Denyなしの外部API・...",
       "category": "開発",
       "rss_category": "",
       "image_url": ""
