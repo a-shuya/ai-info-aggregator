@@ -1,78 +1,8 @@
 {
   "site": "Zenn(LLM)",
-  "last_updated": "2026-11-22T01:16:06.776634",
-  "total_articles": 7620,
+  "last_updated": "2026-11-22T08:10:14.205184",
+  "total_articles": 7614,
   "articles": [
-    {
-      "title": "Zenn Book『ベンチマークを信じるな — AIエージェント評価の実務』を公開しました",
-      "url": "https://zenn.dev/kazu1/articles/benchmark-evals-book-intro",
-      "site": "Zenn(LLM)",
-      "published": "2026-11-21T22:56:13Z",
-      "description": "本はこちらから購入できます。\n\nhttps://zenn.dev/kazu1/books/benchmark-evals\nZenn Book『ベンチマークを信じるな — AIエージェント評価の実務』を書いた。この記事はその紹介である。\nこの本は、エージェントを本番に出すかどうか、出した後に悪化していないかを、根拠のある数字で判断するための本である。公開ベンチマークのスコアではなく、自分のタスク、自...",
-      "category": "AI・技術",
-      "rss_category": "",
-      "image_url": ""
-    },
-    {
-      "title": "1回85%でも4回連続成功は52% — pass@kでは本番の信頼性は測れない",
-      "url": "https://zenn.dev/kazu1/articles/pass-at-k-reliability",
-      "site": "Zenn(LLM)",
-      "published": "2026-11-21T22:54:22Z",
-      "description": "エージェントの評価結果として「成功率92%」という数字を見たとき、その数字がどう数えられたかを確認する人は意外と少ない。各タスクを1回しか走らせていないのか。複数回走らせて集計しているのか。同じタスクを何回走らせたうちの、何回成功したのか。\n複数回走らせた場合、「1回でも成功すれば成功」と数えたのか、「毎回成功して初めて成功」と数えたのか。数え方が違うだけで、同じエージェントでも報告される数字は大...",
-      "category": "AI・技術",
-      "rss_category": "",
-      "image_url": ""
-    },
-    {
-      "title": "一致率90%でもkappaは0 — LLMジャッジは校正しないとノイズ",
-      "url": "https://zenn.dev/kazu1/articles/llm-judge-calibration-noise",
-      "site": "Zenn(LLM)",
-      "published": "2026-11-21T22:52:58Z",
-      "description": "LLM-as-a-Judgeの導入は簡単である。評価対象の出力と採点基準をプロンプトに書き、別のモデルに渡せば、それらしいスコアが返ってくる。問題は、そのスコアを信じてよいかどうかを、導入した側がたいてい確認していないことだ。\n校正していないジャッジが出す数字は、測定ではなくノイズである。数字の形をしているので測定に見える。本当の正解とどれだけずれているか分からない以上、「先週より改善した」「この...",
-      "category": "AI・技術",
-      "rss_category": "",
-      "image_url": ""
-    },
-    {
-      "title": "SWE-bench『80.9%』を割り引いて読む — 公開ベンチマークの読み方",
-      "url": "https://zenn.dev/kazu1/articles/how-to-read-benchmarks",
-      "site": "Zenn(LLM)",
-      "published": "2026-11-21T22:51:41Z",
-      "description": "新しいモデルが出るたびに、ベンチマークのスコアが並ぶ。SWE-benchで何ポイント上がった、GAIAで何パーセントに達した、といった数字は分かりやすい。ただ、その数字を自分のプロダクトの品質にそのまま読み替えると判断を誤る。公開スコアは「あるモデルと、ベンチマーク側が用意した特定の実行環境（ハーネス）の組み合わせ」の成績である。訓練データ汚染と、合否を決めるテスト側の誤り（検証者エラー）の影響も...",
-      "category": "AI・技術",
-      "rss_category": "",
-      "image_url": ""
-    },
-    {
-      "title": "ベンチマークを信じるな — AIエージェント評価の実務",
-      "url": "https://zenn.dev/kazu1/books/benchmark-evals",
-      "site": "Zenn(LLM)",
-      "published": "2026-11-21T22:48:35Z",
-      "description": "「SWE-benchで高スコアだから、このエージェントは本番でも大丈夫」——そう判断していませんか。2026年、SWE-bench Verifiedは報告が停止され、GAIAのスコアは飽和しました。公開ベンチマークの数字は、自社エージェントの出荷判断には使えません。本書は、その判断を自社タスクの実測に切り替えるための、評価（Evals）の実務書です。\n【本書で扱うこと】\n・本番の失敗から評価セット...",
-      "category": "AI・技術",
-      "rss_category": "",
-      "image_url": ""
-    },
-    {
-      "title": "「使っていい」と言われた後に、エンジニアが確認する3つの設定 ― 医療機関のAI利用方針を技術設定に落とし込む",
-      "url": "https://zenn.dev/taichiendoh/articles/ai-usage-policy-zdr-log-model-checklist",
-      "site": "Zenn(LLM)",
-      "published": "2026-11-21T22:10:10Z",
-      "description": "厚生労働省医政局医療情報担当参事官室は2026年5月27日付の事務連絡で、「高性能AIの悪用リスクを踏まえたサイバーセキュリティ対策の強化について（医療機関等向け注意喚起）」を各都道府県の衛生主管部局に発出しました。背景にあるのは、同年5月18日に内閣官房などが重要インフラ事業者向けに出した注意喚起です。医療は機能停止が診療の継続に重大な支障をもたらす重要インフラの一つとされ、フロンティアAIモデ...",
-      "category": "AI・技術",
-      "rss_category": "",
-      "image_url": ""
-    },
-    {
-      "title": "LLM出力の壊れたJSONをPython標準ライブラリで決定的に修復・型検証する実装パターン",
-      "url": "https://zenn.dev/inemuri/articles/llm-broken-json-repair-validator",
-      "site": "Zenn(LLM)",
-      "published": "2026-11-21T18:07:38Z",
-      "description": "LLMにJSON形式での出力を指示しても、実運用では次のような「あと一歩で壊れているJSON」が必ず混ざります。\n\n前後に説明文や ```json ... ``` のコードフェンスが付く\n末尾カンマ（trailing comma）や // コメントが入る\nシングルクォートや Python の True / False / None が混ざる\n最大トークン上限に当たって末尾の } や ] が欠けたま...",
-      "category": "AI・技術",
-      "rss_category": "",
-      "image_url": ""
-    },
     {
       "title": "LLMの日本語評価で見落としがちな3つの地雷と「平均点」の罠（20問シードセット＋Cohen's κスクリプト公開）",
       "url": "https://zenn.dev/eleanoratlas/articles/aa0e5f941775fb",
@@ -139,6 +69,16 @@
       "site": "Zenn(LLM)",
       "published": "2026-11-21T14:08:28Z",
       "description": "この記事でわかること\n\nDatabricks で作ったエージェントの回答がおかしいときに、モデルを替える前に疑う4つの「コンテキストの失敗」\nトレースを見て、どれが起きているかを見分ける手順\nそれぞれの直し方と、Databricks で使える機能（MCP・AI Search・agent sessions / memory・MLflow 3 の評価）\n\n\n モデルより先に、コンテキストを疑う\nコンテ...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "AIのRTL最適化をどう評価するか：PPAとRISC-Vベンチマークの落とし穴",
+      "url": "https://zenn.dev/ai_practitioner/articles/3a6e8034c700d5",
+      "site": "Zenn(LLM)",
+      "published": "2026-11-21T12:23:05Z",
+      "description": "OpenAIが11月18日に公開したチップ設計の報告には、「最大14％のPPA改善」という目立つ数字がある。[1] ただ、エンジニアとして読むなら、その数字より後半のRISC-V評価方法の方が気になる。\n同じモデルでも、既存のプロセッサを改善するより、仕様書から新しく設計した方が高いスコアを取った。しかも、その理由の一部として、評価対象に含まれない機能を省略できることをOpenAI自身が挙げている...",
       "category": "AI・技術",
       "rss_category": "",
       "image_url": ""
