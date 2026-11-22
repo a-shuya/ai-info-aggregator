@@ -1,24 +1,144 @@
 {
   "site": "Zenn(LLM)",
-  "last_updated": "2026-11-21T21:07:44.183589",
-  "total_articles": 7608,
+  "last_updated": "2026-11-22T01:16:06.776634",
+  "total_articles": 7620,
   "articles": [
     {
-      "title": "判定AIは現場で使えるか — 設備点検記録48件で Jev と d1 を測った全記録",
-      "url": "https://zenn.dev/jodycraft/books/judgement-ai-48",
+      "title": "Zenn Book『ベンチマークを信じるな — AIエージェント評価の実務』を公開しました",
+      "url": "https://zenn.dev/kazu1/articles/benchmark-evals-book-intro",
       "site": "Zenn(LLM)",
-      "published": "2026-11-21T10:40:16Z",
-      "description": "設備点検記録48件という同じ題材で、判定専用モデル Jev と d1 を7回測った記録。精度→データ→速度→壊れ方→組み込み→選定の順に、現場で使える場面と使えない場面を切り分ける。レコード別の生データ、質問文、実際に動くC#コード付き。",
+      "published": "2026-11-21T22:56:13Z",
+      "description": "本はこちらから購入できます。\n\nhttps://zenn.dev/kazu1/books/benchmark-evals\nZenn Book『ベンチマークを信じるな — AIエージェント評価の実務』を書いた。この記事はその紹介である。\nこの本は、エージェントを本番に出すかどうか、出した後に悪化していないかを、根拠のある数字で判断するための本である。公開ベンチマークのスコアではなく、自分のタスク、自...",
       "category": "AI・技術",
       "rss_category": "",
       "image_url": ""
     },
     {
-      "title": "手順書は「お願い」、フックは「決まり」——CLAUDE.md・AGENTS.md・SKILL.md と、機械で断る関所を自分の記録で比べる",
-      "url": "https://zenn.dev/zeuslab/articles/df65e8457149ea",
+      "title": "1回85%でも4回連続成功は52% — pass@kでは本番の信頼性は測れない",
+      "url": "https://zenn.dev/kazu1/articles/pass-at-k-reliability",
       "site": "Zenn(LLM)",
-      "published": "2026-11-21T10:26:49Z",
-      "description": "手順書に「必ずこうする」と書いても、AIのエージェントがいつも守るとは限りません。当方の作業でも、「返事は日本語で」という常設の決まりが、長い会話が要約された後に抜け落ちたことがありました。文章で書いた決まりは、あくまで「お願い」です。\nこの記事では、エージェントが読む3つのファイルと、実際に呼び出しを断る「フック」を並べ、それぞれが何に向いているかを、当方の記録の数字と一緒に整理します。\n数字は...",
+      "published": "2026-11-21T22:54:22Z",
+      "description": "エージェントの評価結果として「成功率92%」という数字を見たとき、その数字がどう数えられたかを確認する人は意外と少ない。各タスクを1回しか走らせていないのか。複数回走らせて集計しているのか。同じタスクを何回走らせたうちの、何回成功したのか。\n複数回走らせた場合、「1回でも成功すれば成功」と数えたのか、「毎回成功して初めて成功」と数えたのか。数え方が違うだけで、同じエージェントでも報告される数字は大...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "一致率90%でもkappaは0 — LLMジャッジは校正しないとノイズ",
+      "url": "https://zenn.dev/kazu1/articles/llm-judge-calibration-noise",
+      "site": "Zenn(LLM)",
+      "published": "2026-11-21T22:52:58Z",
+      "description": "LLM-as-a-Judgeの導入は簡単である。評価対象の出力と採点基準をプロンプトに書き、別のモデルに渡せば、それらしいスコアが返ってくる。問題は、そのスコアを信じてよいかどうかを、導入した側がたいてい確認していないことだ。\n校正していないジャッジが出す数字は、測定ではなくノイズである。数字の形をしているので測定に見える。本当の正解とどれだけずれているか分からない以上、「先週より改善した」「この...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "SWE-bench『80.9%』を割り引いて読む — 公開ベンチマークの読み方",
+      "url": "https://zenn.dev/kazu1/articles/how-to-read-benchmarks",
+      "site": "Zenn(LLM)",
+      "published": "2026-11-21T22:51:41Z",
+      "description": "新しいモデルが出るたびに、ベンチマークのスコアが並ぶ。SWE-benchで何ポイント上がった、GAIAで何パーセントに達した、といった数字は分かりやすい。ただ、その数字を自分のプロダクトの品質にそのまま読み替えると判断を誤る。公開スコアは「あるモデルと、ベンチマーク側が用意した特定の実行環境（ハーネス）の組み合わせ」の成績である。訓練データ汚染と、合否を決めるテスト側の誤り（検証者エラー）の影響も...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "ベンチマークを信じるな — AIエージェント評価の実務",
+      "url": "https://zenn.dev/kazu1/books/benchmark-evals",
+      "site": "Zenn(LLM)",
+      "published": "2026-11-21T22:48:35Z",
+      "description": "「SWE-benchで高スコアだから、このエージェントは本番でも大丈夫」——そう判断していませんか。2026年、SWE-bench Verifiedは報告が停止され、GAIAのスコアは飽和しました。公開ベンチマークの数字は、自社エージェントの出荷判断には使えません。本書は、その判断を自社タスクの実測に切り替えるための、評価（Evals）の実務書です。\n【本書で扱うこと】\n・本番の失敗から評価セット...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "「使っていい」と言われた後に、エンジニアが確認する3つの設定 ― 医療機関のAI利用方針を技術設定に落とし込む",
+      "url": "https://zenn.dev/taichiendoh/articles/ai-usage-policy-zdr-log-model-checklist",
+      "site": "Zenn(LLM)",
+      "published": "2026-11-21T22:10:10Z",
+      "description": "厚生労働省医政局医療情報担当参事官室は2026年5月27日付の事務連絡で、「高性能AIの悪用リスクを踏まえたサイバーセキュリティ対策の強化について（医療機関等向け注意喚起）」を各都道府県の衛生主管部局に発出しました。背景にあるのは、同年5月18日に内閣官房などが重要インフラ事業者向けに出した注意喚起です。医療は機能停止が診療の継続に重大な支障をもたらす重要インフラの一つとされ、フロンティアAIモデ...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "LLM出力の壊れたJSONをPython標準ライブラリで決定的に修復・型検証する実装パターン",
+      "url": "https://zenn.dev/inemuri/articles/llm-broken-json-repair-validator",
+      "site": "Zenn(LLM)",
+      "published": "2026-11-21T18:07:38Z",
+      "description": "LLMにJSON形式での出力を指示しても、実運用では次のような「あと一歩で壊れているJSON」が必ず混ざります。\n\n前後に説明文や ```json ... ``` のコードフェンスが付く\n末尾カンマ（trailing comma）や // コメントが入る\nシングルクォートや Python の True / False / None が混ざる\n最大トークン上限に当たって末尾の } や ] が欠けたま...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "LLMの日本語評価で見落としがちな3つの地雷と「平均点」の罠（20問シードセット＋Cohen's κスクリプト公開）",
+      "url": "https://zenn.dev/eleanoratlas/articles/aa0e5f941775fb",
+      "site": "Zenn(LLM)",
+      "published": "2026-11-21T16:53:42Z",
+      "description": "取引先から、次の一文だけの返信が届いたとします。\n\nお見積もりの件、結構です\n\nこれは承諾でしょうか、それとも辞退でしょうか。どちらか一方に決めつけて自信満々に答える回答は、私のルーブリックでは 2点以下 です（承諾と断定して着手すれば2点、辞退と断定して関係を終わらせれば1点）。\n日本語・中国語（簡体字/繁体字）・英語の LLM 評価に携わるなかで、1〜5 の5段階で採点する 日本語評価シードセ...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "縦書き・複合表PDFを RAG / NotebookLM / Obsidian が誤読しない Markdown に整える実践ポイント",
+      "url": "https://zenn.dev/smkc/articles/8991f7bc189155",
+      "site": "Zenn(LLM)",
+      "published": "2026-11-21T16:16:46Z",
+      "description": "はじめに\nLLM（大規模言語モデル）を活用した RAG（検索拡張生成）や、NotebookLM、Obsidian などのナレッジベース構築ツールが普及する中、「スキャンPDFをそのまま投入して質問したら、なぜか的外れな回答（ハルシネーション）や引用ズレが返ってきた」という現象に直面するケースが増えています。\n特に日本語特有の 縦書きレイアウト、段組み構造、そして 複合表（結合セルを含む表） は、単...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "機密データを外部に送らないAIエージェントを作りたい　第3回（仮）「エージェント（hermes agent）」",
+      "url": "https://zenn.dev/kokeshi_gnome/articles/f20a4881d79c65",
+      "site": "Zenn(LLM)",
+      "published": "2026-11-21T16:05:57Z",
+      "description": "タイトルの（仮）について\nもともと週一くらいでじっくり勉強しながら連載していくつもりでしたが、ちょっと仕事の都合で2~3週間くらい更新できなさそうなので、急ぎで最低限の機能だけ雑にまとめて記事にしています。\n後日、編集して（仮）を外します。\nあと最近Strataの記事やYoutube動画が急増しているので慌てていることもあります。\n（仮）の編集は12月以降になりそうです。\n何とかインターネット遮断...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "自分のPCで動く日本語AIアシスタント『ヤタ』を作った",
+      "url": "https://zenn.dev/koheip/articles/yata-local-ai-assistant",
+      "site": "Zenn(LLM)",
+      "published": "2026-11-21T15:45:57Z",
+      "description": "はじめに\nZEN大学で知能情報を学んでいる2年生の松延です。AIエンジニアを目指して、AIエージェントを個人開発しています。仕事でエンジニアとして働いた経験はありません。\n今回作ったのは、ヤタ（Yata） という、自分のPCの中で動く個人用AIアシスタントです。チャットで日本語で話しかけると、調べもの、メールや予定の確認、決まった時間の作業、日本でよく使うサービスとの連携を手伝ってくれます。会話や...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "ローカルLLMでクラウドのトークンを9割節約する",
+      "url": "https://zenn.dev/ace_toshi/articles/local-llm-confidential-mapreduce",
+      "site": "Zenn(LLM)",
+      "published": "2026-11-21T15:45:29Z",
+      "description": "結論から\nAIとの開発セッションで議事録を取っている。決めたこと、却下した案、その理由。あとで読み返すために残しているものだ。\n正確に言うと、AIに役割を割り当てて会議の形で進めている。設計を詰める人、反対意見を出す人、記録を取る人。その議事録である。この運用自体はそれだけで一本書ける話なので、ここでは深入りしない。\nただ、この議事録を要約させるのにクラウドのトークンを使うのは、どうにも納得がいか...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "無人で回す自動化を Surface Laptop Ultra で組み直す構想",
+      "url": "https://zenn.dev/houchi_unyo/articles/surface-laptop-ultra-hybrid-plan",
+      "site": "Zenn(LLM)",
+      "published": "2026-11-21T14:54:24Z",
+      "description": "いまの構成\n手元にあるのは Apple M1・メモリ16GB の Mac 1台で、launchd を使って投稿、集計、点検などの定時ジョブを48本動かしている。\n判断、コード修正、複数段階の作業は Claude Code に任せている。契約は月200ドルの定額(Claude の Max プラン)で、決まった時刻に起動する仕組みが4つある。\n\n大会の順位表チェック\n期限がある作業の処理\n失敗したジョ...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "Databricksのエージェントがおかしいとき、4つの「コンテキストの失敗」を見分けて直す",
+      "url": "https://zenn.dev/y0shidahr/articles/2d1fb00790d0ad",
+      "site": "Zenn(LLM)",
+      "published": "2026-11-21T14:08:28Z",
+      "description": "この記事でわかること\n\nDatabricks で作ったエージェントの回答がおかしいときに、モデルを替える前に疑う4つの「コンテキストの失敗」\nトレースを見て、どれが起きているかを見分ける手順\nそれぞれの直し方と、Databricks で使える機能（MCP・AI Search・agent sessions / memory・MLflow 3 の評価）\n\n\n モデルより先に、コンテキストを疑う\nコンテ...",
       "category": "AI・技術",
       "rss_category": "",
       "image_url": ""

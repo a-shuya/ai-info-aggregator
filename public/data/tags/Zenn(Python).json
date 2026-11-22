@@ -1,8 +1,38 @@
 {
   "site": "Zenn(Python)",
-  "last_updated": "2026-11-21T21:07:44.183589",
+  "last_updated": "2026-11-22T01:16:06.776634",
   "total_articles": 8051,
   "articles": [
+    {
+      "title": "再起動で止まらないように「起動直後に実行」にした記事取得が、今度は再起動のたびに走っていた話",
+      "url": "https://zenn.dev/itaraiguma/articles/scheduler-startup-run-per-restart",
+      "site": "Zenn(Python)",
+      "published": "2026-11-21T23:33:32Z",
+      "description": "はじめに\n個人開発している技術記事キュレーションサービス「DevPick」では、FastAPIのバックエンドの中でAPSchedulerを動かし、外部のフィードから記事を取ってくる処理を60分ごとに回しています。複数のワーカーのうち1つだけがスケジューラを持ち、そのワーカーが入れ替わると、別のワーカーがスケジューラを引き継ぎます。\nこの記事取得は、初回をいつ実行するかの設定を二度直しています。一度...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "MuJoCoシミュレーションが破綻する典型原因と3段階の修正・検証手順",
+      "url": "https://zenn.dev/kanta13jp1/articles/mujoco-vibe-sim-three-stage-audit",
+      "site": "Zenn(Python)",
+      "published": "2026-11-21T23:33:07Z",
+      "description": "はじめに：初期モデルが物理的に破綻する原因をどう切り分けるか\nMuJoCo（ムジョコ：ロボットや剛体の動き・接触・摩擦を高速に計算する物理シミュレーションエンジン）で新しいシーンを作るとき、AIへ自然言語で要望を伝えてコードを生成しながら試行錯誤する開発スタイルは Vibe Sim（バイブシム）と呼ばれます。短時間で動くひな形を作れる一方、初期設定のまま動かすと次のような物理破綻が起きることがあり...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "最低賃金の雇用効果を4つの方法で並べたら、答えを決めていたのは「使える差」の小ささだった",
+      "url": "https://zenn.dev/takayuki0127/articles/01ec543c8c5686",
+      "site": "Zenn(Python)",
+      "published": "2026-11-21T22:27:06Z",
+      "description": "問い\n最低賃金の引き上げは、雇用を減らすのか。このリポジトリではこれまでに5本の記事でこの問いを扱い、答えはどれも「減ったとは言えない」でした。ただ、方法もデータもばらばらでした。\nそこで今回は、問いを少し変えました。\n\n同じ県×年のデータに、推定の方法を4つ当てると、答えはどこまで変わるのか\n変わらないなら、何が答えを決めているのか\n\nこの記事では、方法をどう選び、どう確かめ、結果がどう動いたか...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
     {
       "title": "二分探索で重複の先頭を見つける｜8日分の空き枠で境界を図解",
       "url": "https://zenn.dev/student_blog/articles/binary-search-first-threshold-python",
@@ -29,36 +59,6 @@
       "site": "Zenn(Python)",
       "published": "2026-11-21T18:07:38Z",
       "description": "AIエージェントに日本企業の調査・与信チェック・開示情報確認をさせたいとき、企業サイトや外部サービスを無断スクレイピングするのは利用規約・法的リスクが大きすぎます。\n実は日本政府の一次オープンデータAPIは、出典を明記すれば商用加工・再配布まで合法的に利用できる強力なデータ基盤が揃っています。\n\n\n国税庁 法人番号公表サイト（13桁法人番号の公式チェックデジット仕様）\n\n経済産業省 gBizINF...",
-      "category": "開発",
-      "rss_category": "",
-      "image_url": ""
-    },
-    {
-      "title": "LLMの日本語評価で見落としがちな3つの地雷と「平均点」の罠（20問シードセット＋Cohen's κスクリプト公開）",
-      "url": "https://zenn.dev/eleanoratlas/articles/aa0e5f941775fb",
-      "site": "Zenn(Python)",
-      "published": "2026-11-21T16:53:42Z",
-      "description": "取引先から、次の一文だけの返信が届いたとします。\n\nお見積もりの件、結構です\n\nこれは承諾でしょうか、それとも辞退でしょうか。どちらか一方に決めつけて自信満々に答える回答は、私のルーブリックでは 2点以下 です（承諾と断定して着手すれば2点、辞退と断定して関係を終わらせれば1点）。\n日本語・中国語（簡体字/繁体字）・英語の LLM 評価に携わるなかで、1〜5 の5段階で採点する 日本語評価シードセ...",
-      "category": "開発",
-      "rss_category": "",
-      "image_url": ""
-    },
-    {
-      "title": "自分のPCで動く日本語AIアシスタント『ヤタ』を作った",
-      "url": "https://zenn.dev/koheip/articles/yata-local-ai-assistant",
-      "site": "Zenn(Python)",
-      "published": "2026-11-21T15:45:57Z",
-      "description": "はじめに\nZEN大学で知能情報を学んでいる2年生の松延です。AIエンジニアを目指して、AIエージェントを個人開発しています。仕事でエンジニアとして働いた経験はありません。\n今回作ったのは、ヤタ（Yata） という、自分のPCの中で動く個人用AIアシスタントです。チャットで日本語で話しかけると、調べもの、メールや予定の確認、決まった時間の作業、日本でよく使うサービスとの連携を手伝ってくれます。会話や...",
-      "category": "開発",
-      "rss_category": "",
-      "image_url": ""
-    },
-    {
-      "title": "ローカルLLMでクラウドのトークンを9割節約する",
-      "url": "https://zenn.dev/ace_toshi/articles/local-llm-confidential-mapreduce",
-      "site": "Zenn(Python)",
-      "published": "2026-11-21T15:45:29Z",
-      "description": "結論から\nAIとの開発セッションで議事録を取っている。決めたこと、却下した案、その理由。あとで読み返すために残しているものだ。\n正確に言うと、AIに役割を割り当てて会議の形で進めている。設計を詰める人、反対意見を出す人、記録を取る人。その議事録である。この運用自体はそれだけで一本書ける話なので、ここでは深入りしない。\nただ、この議事録を要約させるのにクラウドのトークンを使うのは、どうにも納得がいか...",
       "category": "開発",
       "rss_category": "",
       "image_url": ""
