@@ -1,8 +1,178 @@
 {
   "site": "Zenn(Python)",
-  "last_updated": "2026-11-22T08:10:14.205184",
-  "total_articles": 8051,
+  "last_updated": "2026-11-22T16:17:29.370697",
+  "total_articles": 8068,
   "articles": [
+    {
+      "title": "「全国一律の最低賃金で雇用はどうなるか」に、1つの数字ではなく幅で答える設計と、男性を比べる相手にして分かったこと",
+      "url": "https://zenn.dev/takayuki0127/articles/05b75858bbc7b4",
+      "site": "Zenn(Python)",
+      "published": "2026-11-22T11:29:03Z",
+      "description": "問い\n前編では、同じ県×年のデータに4つの推定の方法を当て、最低賃金の雇用への効果はどれも「はっきりしない」（弾力性で −0.18〜−0.02）という結果になりました。後編で扱ったのは、その「はっきりしない」をどう使うかです。\n\n最低賃金が上がると、「年収の壁」の手前で働ける時間はどれだけ短くなったか。就業調整をしている人の割合と、最低賃金は県で重なって動いているか\n全国一律にしたら雇用はどれだけ...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "筆算エンジン:式をマス目のデータにする設計",
+      "url": "https://zenn.dev/yoshidam/articles/hissan-engine-design",
+      "site": "Zenn(Python)",
+      "published": "2026-11-22T11:08:53Z",
+      "description": "はじめに\n小学生向けの筆算を、画面に表示して採点するエンジンを作り始めました。\nきっかけは、筆算プリントの作成や、筆算の採点を、簡単に実現できるようにしたいと思ったことです。解説や採点をするには、答えだけでなく、繰り上がりや部分積などの途中式まで、マスごとに正しく並べる必要があります。\nTypeScript で作ったあと、同じものを Python でも作り、言語を比べながら学ぶ予定です。\nまだコー...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "日時をTEXTで持つかINTEGERで持つか：100万行で測ったら、速さは索引で決まっていた",
+      "url": "https://zenn.dev/tlaboratory/articles/sqlite-datetime-text-integer-measured",
+      "site": "Zenn(Python)",
+      "published": "2026-11-22T09:34:22Z",
+      "description": "created_at に何を入れるかという話になると、たいてい「文字列は遅い」という理由で INTEGER が選ばれます。SQLite 3.51.0・Python 3.9.6（Apple Silicon Mac, M1 Pro）で同じ100万件を3形式で保存して測ったら、索引がある範囲検索では3形式の差がほぼ消えました。 形式が効くのはサイズと正しさのほうでした。\n\n 100万件を TEXT・IN...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "Excelの取り消し線をPythonで読む。セル全体と一部分で何が違う？",
+      "url": "https://zenn.dev/honabochi/articles/excel-partial-strikethrough",
+      "site": "Zenn(Python)",
+      "published": "2026-11-22T08:34:23Z",
+      "description": "買い物メモに「紅茶」と書いた。やっぱり麦茶にしようと思って、紅茶に線を引き、同じ枠の中に麦茶と書き足す。\nExcelで、こんな二行を作ってみました。線が引かれた品は買わないことにします。\n\nA2では、セル全体の「紅茶」に取り消し線を引く。買う品はなし。\nA3では、「紅茶」にだけ線を引き、同じセルに「麦茶」を足す。買う品は麦茶。\n\nどちらも目で見ればすぐ分かる。ところが、Pythonで線のある品を外...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "DDD で「このコードはどの層？」と迷ったときの判断基準 7 つ",
+      "url": "https://zenn.dev/hii_chi/articles/python-ddd-layer-decision-criteria",
+      "site": "Zenn(Python)",
+      "published": "2026-11-22T08:11:03Z",
+      "description": "結論：迷ったら「そのコードが変わるのは誰の都合か」を考える\nTyper（CLI を作るライブラリ）を使った個人開発の Python ツールを DDD（ドメイン駆動設計）で作りました。その中でファイルの置き場所に迷った場面と、そのとき決めた置き場所を表にまとめました。\n\n\n\n#\n迷った場面\n置き場所\n\n\n\n\n1\n取り込み処理（取得して保存する流れ）\n\napplication（CLI のコマンドには書...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "1枚のイラストをColabで歩ける3Dキャラにする ── Pixal3DとTokenRig",
+      "url": "https://zenn.dev/nakanishitf/articles/6504678b99a3e4",
+      "site": "Zenn(Python)",
+      "published": "2026-11-22T07:54:36Z",
+      "description": "前回は、イラストから3Dモデルを作り、ゲーム用に調整していたTakaの歩行やジャンプを別のキャラクターへ移しました。\n自分の絵が歩くところまで行けた一方で、元絵の色や形がどこまで残るかには、まだ不満がありました。\n前に試した黄色いロボットでは、後頭部にも顔ができていました。\nhttps://zenn.dev/nakanishitf/articles/4a7175473893b2\n今回は、イラストか...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "FastAPI で CRUD と Pydantic バリデーションを書いて気づいたこと",
+      "url": "https://zenn.dev/ko_tech/articles/springboot-dev-fastapi-crud-pydantic",
+      "site": "Zenn(Python)",
+      "published": "2026-11-22T06:29:59Z",
+      "description": "前回の1ファイル API（POST と GET 一覧）に続けて、GET /{doc_id}・DELETE・PATCH での部分更新、クエリパラメータによる絞り込みとページネーション、Pydantic v2 のバリデーションを追加しました。まだファイル分割や DI はせず、src/practice/main.py 1ファイルのまま書いています。\n今回は CRUD の実装そのものよりも、Java / ...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "銀行明細CSVから仕訳を作る：形式差の吸収・科目の推測・二重取り込みの防止",
+      "url": "https://zenn.dev/burrata/articles/ssei-ledger-bank-csv",
+      "site": "Zenn(Python)",
+      "published": "2026-11-22T02:41:38Z",
+      "description": "!\nこの記事のポイント\n\n個人開発している複式簿記アプリに、銀行の入出金明細のCSVから仕訳を作る機能を追加しました\n全体を通して、便利さよりも「間違った仕訳を帳簿に入れないこと」を優先して設計しています\n銀行ごとに違う列名・日付・金額の書き方を、CSVの読み取りだけを受け持つモジュールで吸収しています\n勘定科目はキーワードで推測しますが、推測できないものは空欄にして、最後は人が確認してから登録し...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "リーマン予想の証明を独立に再現：Lean 175,187 ファイルをエラー0でビルド、Weil 正値性ライブ計測器も公開",
+      "url": "https://zenn.dev/vidraft/articles/7be5f96d1d5998",
+      "site": "Zenn(Python)",
+      "published": "2026-11-22T02:29:39Z",
+      "description": "ライブ計測器: https://huggingface.co/spaces/FINAL-Bench/weil-positivity-gauge\nデータ・コード・Lean ファイル: https://huggingface.co/datasets/FINAL-Bench/weil-positivity-gauge\nGitHub: https://github.com/final-bench/weil...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "Markdownの公開前チェックと公開後のリンク確認を、Python CLIのsitecheckで",
+      "url": "https://zenn.dev/kawahara_dev/articles/f0736c652db39f",
+      "site": "Zenn(Python)",
+      "published": "2026-11-22T02:17:15Z",
+      "description": "ブログの記事を公開する前には、見出しの階層やリンク先の書き方を確認します。公開した後には、記事から張ったサイト内リンクが切れていないかも気になります。この2つを別々に確認するのが面倒だったので、1つの CLI にまとめました。\n作った sitecheck を運営中のブログ（75記事）で使ったところ、サイトマップから取得した75記事を検査し、リンク切れ・確認不能ともに0件でした。\n\n 作ったもの\ns...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "なぜAIエージェントに source .venv を書かせてはいけないのか？サンドボックス403とAI審査の裏側",
+      "url": "https://zenn.dev/ai_nexus_jp/articles/ai-agent-sandbox-403-skill-design",
+      "site": "Zenn(Python)",
+      "published": "2026-11-22T02:11:56Z",
+      "description": "はじめに\nこんにちは。AI Nexus 代表の西藤（にしとう）です。\n普段はプロジェクトマネージャー（PM）としてクライアント企業のAI導入やDX推進を牽引しつつ、自らコードを書いて開発も行い、現場の泥臭い課題を解決するコンサルタントとしても活動しています。\nAIエージェント（AntigravityやClaude Code、Cursor等）を業務自動化へ組み込むには、スキル（SKILL.md）やル...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "CSVの文字化けをまとめて解消する。PythonでShift_JISのCSVをBOM付きUTF-8に一括変換",
+      "url": "https://zenn.dev/noa_senn/articles/python-csv-sjis-to-utf8",
+      "site": "Zenn(Python)",
+      "published": "2026-11-22T02:06:34Z",
+      "description": "取引先から届いたCSV、社内システムから出力したCSV、クラウドのサービスからダウンロードしたCSV。出どころが違うと文字コードもばらばらで、あるファイルはExcelで開くと文字化けし、別のファイルはPythonで読むと UnicodeDecodeError で止まる、ということが起きます。\nこの記事では、フォルダの中のCSVをまとめて「BOM付きUTF-8」にそろえるPythonスクリプトを作り...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "AI動画を「4K 60fps 10-bit HLG HDR」化して60分マスターを数分で書き出すパイプライン",
+      "url": "https://zenn.dev/t_shamoji/articles/7f78c1e0737674",
+      "site": "Zenn(Python)",
+      "published": "2026-11-22T01:48:19Z",
+      "description": "はじめに：AI生成動画を「4K 60fps HDR」の60分長尺マスターに仕上げるまでの技術課題\nAI動画生成モデル（Veo / Omni / Wan 2.2 など）が出力するクリップは、基本的に 720p〜1080p / 24fps / 8-bit SDR が標準です。\nこれを YouTube 向けの4K 60fps HDR アンビエント映像（『Aetheria Phantom Cruise』シ...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "この番号は誰？ 氏名・生年月日・郵便番号の確認を求める電話を、準識別子の組み合わせとして考える",
+      "url": "https://zenn.dev/whocallmeuknote/articles/7bd091e67ef664",
+      "site": "Zenn(Python)",
+      "published": "2026-11-22T01:20:31Z",
+      "description": "「誰からの電話？」と検索する人の多くは、相手が何者かを知りたがっています。ただ、相手の正体が分からなくても判断できることがあります。本人確認と称して氏名・生年月日・郵便番号を求める電話についての投稿を題材に、この三項目を「準識別子」の組み合わせとして扱い、合成データでどれだけ個人を絞り込めるかを Python で確かめます。\n運営側からの案内： 本記事はウェブサイト whocallme.co.uk...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "FastAPI の本を第2版にした：作るだけでなく、公開して運用するまでを1冊に",
+      "url": "https://zenn.dev/egg_glass/articles/fastapi-book-v1-v2-differences",
+      "site": "Zenn(Python)",
+      "published": "2026-11-22T01:18:02Z",
+      "description": "2024年6月に Zenn で出した『実務で役立つAPI設計と実装: FastAPIによる効率的な開発』の第2版を、技術書典21に合わせて公開しました。\nhttps://zenn.dev/egg_glass/books/fastapi-for-starters-v2\n技術書典21のオンラインマーケットでも頒布しています。\nhttps://techbookfest.org/product/aH8CK...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "全体ではなく、勝負どころを見る——局面と出目を対応させる【第5回】",
+      "url": "https://zenn.dev/okamasaya/articles/chinchiro-bayes-05-context",
+      "site": "Zenn(Python)",
+      "published": "2026-11-22T01:10:27Z",
+      "description": "普段は負けることもある。それなのに、賭け金が大きくなると強い。\n全体の勝ち負けを数えているだけでは、この違和感を捉えにくいかもしれません。何回勝ったかに加えて、「どんな場面で、どんな出目だったか」を見たくなります。\n三好の記録と、そこに目を向けるカイジ。シリーズの入口に置いたこのつながりへ、今回は戻ります。\n第4回では、456賽でも負けること、同じ勝敗でも出目によって証拠の向きが変わることを見まし...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "Claudeにpptxを作らせるとテーマを変えてもフォントが変わらない——直接指定を消す後処理と、PowerPointでだけ表が空になる罠",
+      "url": "https://zenn.dev/kensho_ya/articles/claude-pptx-theme-font-table-empty-fix",
+      "site": "Zenn(Python)",
+      "published": "2026-11-22T01:09:03Z",
+      "description": "FAの仕事には、コードのほかに説明用のスライドが付いてくる。構成の説明や教育用の資料も、Claude Desktopに作らせたり、直させたりしている。\nただ、pptxは「開けば見える」ので、できた気になりやすい。自分の環境ではpptxを扱うときに必ず読ませるスキルを1つ持っていて、その中に「見た目では分からない壊れ方」への対策がいくつか入っている。この記事では、そのスキルに入っている規則のうち、F...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
     {
       "title": "再起動で止まらないように「起動直後に実行」にした記事取得が、今度は再起動のたびに走っていた話",
       "url": "https://zenn.dev/itaraiguma/articles/scheduler-startup-run-per-restart",
