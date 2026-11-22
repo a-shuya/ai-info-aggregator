@@ -1,8 +1,48 @@
 {
   "site": "Zenn(Python)",
-  "last_updated": "2026-11-22T16:17:29.370697",
-  "total_articles": 8068,
+  "last_updated": "2026-11-22T21:55:12.576291",
+  "total_articles": 8073,
   "articles": [
+    {
+      "title": "GenBunnyの無料RedGIFsダウンローダー：ログイン不要でMP4を保存",
+      "url": "https://zenn.dev/genbunny_guides/articles/5f9e3e631b5645",
+      "site": "Zenn(Python)",
+      "published": "2026-11-22T15:10:23Z",
+      "description": "要約\n公開元から保存した自分の動画や、ダウンロードの許諾を得た動画を編集に取り込む前に、MP4 のトップレベルの構造と SHA-256 を確認する方法を紹介します。GenBunny の RedGIFs ダウンローダーは完全無料で、ログイン、アカウント、サブスクリプション、クレジットは不要です。公開の watch／ifr リンクから取得可能な MP4 を再エンコードせずに保存し、元ファイルに音声があ...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "JSONL を splitlines() で読むと、見えない1文字で行が切れる",
+      "url": "https://zenn.dev/xblacktea/articles/5d7eda4b7afdc8",
+      "site": "Zenn(Python)",
+      "published": "2026-11-22T13:44:38Z",
+      "description": "ensure_ascii=False で日本語をそのまま書いた JSON 2件のファイルを、splitlines() で読むと、3行になることがある。中の文字列に、画面では見えない1文字が入っているときだ。\n私の環境では、RSS で集めたニュースの見出しを、キュー（待ち行列）のファイルに1行1件の JSON（JSONL）で貯めている。貯まった見出しは、別の処理が定期実行で読み出してまとめる。10月...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "採算割れのマイニング機 3 台を暖房にした — 温湿度計 4 台で「何℃効いたか」を測る",
+      "url": "https://zenn.dev/wisteriacorp/articles/wisteria-1edd862be235",
+      "site": "Zenn(Python)",
+      "published": "2026-11-22T12:55:27Z",
+      "description": "採掘の採算が合わなくなり、1 台だけ動かしていた ASIC マイナー（IceRiver AL0・公称 100 W）を、冬のあいだ 3 台に増やしました。目的は採掘ではなく暖房です。排気をそのまま書斎に出すなら、マイナーが使った電力はほぼ全部この部屋の熱になります。同じワット数の電気ストーブと発熱量はほぼ同じです。ただし、エアコン（ヒートポンプ）は同じ電力で 2〜4 倍の熱を外から運んでくるので、暖...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "冪等な移行スクリプトで、控えのほうが消えていた（名前が分までだった）",
+      "url": "https://zenn.dev/shinsei99/articles/backup-name-stopped-at-minutes",
+      "site": "Zenn(Python)",
+      "published": "2026-11-22T12:27:39Z",
+      "description": "社内の検針台帳（水道・電気の指針から請求を作るシステム）で、指針の持ち方を変える移行スクリプトを書きました。\n説明文には「何回掛けても同じ」と書き、実際に3回掛けて確かめました。指針は確かに同じでした。\n消えていたのは、移行前の控えのほうでした。\n\n 何を移行していたか\n紙の検針表は、文字盤が一周しても数え続けます。4桁の水道メーターが 9999 の次に 0000 へ戻っても、紙には 10000 ...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
     {
       "title": "「全国一律の最低賃金で雇用はどうなるか」に、1つの数字ではなく幅で答える設計と、男性を比べる相手にして分かったこと",
       "url": "https://zenn.dev/takayuki0127/articles/05b75858bbc7b4",
@@ -19,6 +59,16 @@
       "site": "Zenn(Python)",
       "published": "2026-11-22T11:08:53Z",
       "description": "はじめに\n小学生向けの筆算を、画面に表示して採点するエンジンを作り始めました。\nきっかけは、筆算プリントの作成や、筆算の採点を、簡単に実現できるようにしたいと思ったことです。解説や採点をするには、答えだけでなく、繰り上がりや部分積などの途中式まで、マスごとに正しく並べる必要があります。\nTypeScript で作ったあと、同じものを Python でも作り、言語を比べながら学ぶ予定です。\nまだコー...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "AIがルールを読み飛ばすので、「ガードレール」に変えた：書き込み時に拒否するフックを作った記録",
+      "url": "https://zenn.dev/uzunaru/articles/f67ac6f4d8a540",
+      "site": "Zenn(Python)",
+      "published": "2026-11-22T09:56:02Z",
+      "description": "結論\nAI に守らせたいルールを、文章（AGENTS.md など）で書いても、調子の悪い日に読み飛ばされます。何度も破られたルールは、書き込み時に機械的に検査して、違反なら保存せずに拒否する「ガードレール」にしました。\nこの記事では、次を書きます。\n\nきっかけ（前の記事への、読者のコメント）\n調べたこと（Claude Code のフック、検査用ツール、回避されない置き場所）\n作ったもの（単体のスク...",
       "category": "開発",
       "rss_category": "",
       "image_url": ""

@@ -1,14 +1,124 @@
 {
   "site": "Zenn(LLM)",
-  "last_updated": "2026-11-22T16:17:29.370697",
-  "total_articles": 7627,
+  "last_updated": "2026-11-22T21:55:12.576291",
+  "total_articles": 7638,
   "articles": [
+    {
+      "title": "常駐型AIチャットエージェントが「送信先を取り違えない」ようにする出力先検証設計",
+      "url": "https://zenn.dev/hach/articles/chat-agent-outbound-destination-validation-design",
+      "site": "Zenn(LLM)",
+      "published": "2026-11-22T20:11:58Z",
+      "description": "常駐型のAIチャットエージェントをSlack・Teams・Chatworkなど複数チャネル・複数ワークスペースに展開していくと、人間の「誤送信・誤爆」に相当する事故がエージェント側にも構造的に発生しやすくなります。人間の誤送信は「宛先を選び間違えた」という単発の操作ミスですが、エージェントの誤送信は設計上の抜けが原因になりやすく、気づかれないまま同じ抜け道を繰り返し通ってしまう点が違います。この記...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "MCTS探索をClaude Codeに載せて、コーディング性能を向上させた",
+      "url": "https://zenn.dev/natsu529/articles/ef09f78c0dde1d",
+      "site": "Zenn(LLM)",
+      "published": "2026-11-22T19:28:07Z",
+      "description": "前回の記事では、Claude Codeに同じ修正を何通りか試させ、モンテカルロ木探索（MCTS）で最もよい答えを選ぶツール「agent-mcts」を紹介した。その時点の計測では、探索が一回だけ頼む場合より良い答えを返すとは言えなかった。\nその後、答えの点の付け方を変えて、20回ずつ測り直した。探索が返した答えは、同じ実行の最初の答え（一回だけ頼んだ場合に相当する）と比べて、20回中16回で良く、2...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "†Vibe-Coding†は古い、時代は†Vibe-Patching†。",
+      "url": "https://zenn.dev/ocha_no_taiko/articles/607136805710e1",
+      "site": "Zenn(LLM)",
+      "published": "2026-11-22T17:18:03Z",
+      "description": "Abstract\nArduino Uno Qとvolca modularを繋げて、プロンプトによってパッチングするモジュラーシンセを作りました。\n結論：Vibe-Codingならぬ、Vibe-Patchingってね！\n\n 背景\n再び、Zennを書くことになってしまった...\nしがない芸大生、Tusqです。よろしくお願いします。前回と口調が違う？そうです、私は丁寧語の方が話しやすいんです。なんか文句...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "Claude Code にさくらのAI Engine を使わせたら無償枠が 2 倍速で減っていたので、確かめて直した話",
+      "url": "https://zenn.dev/hikari_lab_dev/articles/f9c70aa388a13e",
+      "site": "Zenn(LLM)",
+      "published": "2026-11-22T15:17:59Z",
+      "description": "この記事のポイント\n何が起きるか\nClaude Code からさくらのAI Engine を使うと、1 回の実行が 2 リクエストに数えられます。\n月 3,000 リクエストの無償枠が倍の速さで減っていきます。\n（2026-11-22、Claude Code 2.1.330 で確認）\n自分の環境で起きているかの確認方法\n公式手順の環境変数を設定したうえで、デバッグログを取って送り直しの行を数えます...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "Auto OntologyでText-to-SQLはうまくいきそう：サンプルデータで技術検証",
+      "url": "https://zenn.dev/yaahmi/articles/auto-ontology-wwi",
+      "site": "Zenn(LLM)",
+      "published": "2026-11-22T15:15:31Z",
+      "description": "はじめに\nText-to-SQL(自然言語からSQLを作る技術)を業務で使おうとすると、SQLの書き方より前に、業務の言葉とデータの対応が、どこにも決まっていないことで詰まります。「売上」は受注なのか請求なのか、「顧客カテゴリ」はどのテーブルのことなのか。\nNVIDIAがOSS(Apache 2.0)として公開している Auto Ontology は、この対応を「セマンティックレイヤー」として自動...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "投稿の「定型の締め」探しを、正規表現とさくらの AI Engine で比べた",
+      "url": "https://zenn.dev/houchi_unyo/articles/sakura-ai-engine-stock-close-check",
+      "site": "Zenn(LLM)",
+      "published": "2026-11-22T15:10:34Z",
+      "description": "試したこと\nSNS の投稿や動画の説明欄といった短い文は自動で作ったあと、出す前に Python の点検を通している。AI らしい言い回しを数える仕組みで、「定型の締め」（どの投稿の最後にも付けられる決まり文句）は、決まった言い方の一覧を正規表現で探す。この点検が一覧の外の締めをどれだけ素通りさせるか、LLM ならどうかを数えた。\n材料は、点検を通って実際に公開した短い投稿40本である。\n\n15本...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "Opus 5.5とGemini 4 Neonに同じレガシーコードを発掘させて、根拠を全部開いて採点した",
+      "url": "https://zenn.dev/egu777/articles/opus55-vs-gemini4-neon-mifos",
+      "site": "Zenn(LLM)",
+      "published": "2026-11-22T14:50:33Z",
+      "description": "47万行のJavaレガシーコード（Mifos）を、Claude Opus 5.5とGemini 4 Neonに同じプロンプトで読ませた。出てきたレポートを正解表と突き合わせ、さらに「根拠」として書かれたパスと行番号を全部開いて確かめている。\n先に結果を書くと、正解表の点数は11点と10点でほぼ並んだ。ただし見つけた遺物はほとんど重なっておらず、かかったコストは約2.8倍違った。\nClaude好きの...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "17.6GB の Inkling 2 Mini を 12GB の GPU で動かす。置き方で 21→30、改造で 36 トークン／秒",
+      "url": "https://zenn.dev/gucchinworks/articles/inkling-2-mini-12gb",
+      "site": "Zenn(LLM)",
+      "published": "2026-11-22T13:50:58Z",
+      "description": "Inkling 2 Mini は、ggml-org が配っている中でいちばん小さい量子化（IQ4_NL）でも 17.6GB ある。12GB の GPU には載りきらない。\n載りきらない分をどこに置くかで、生成の速さは 21 から 36 トークン／秒まで変わった。RTX 4070 Ti（12GB）と llama.cpp で、3 つの置き方を測った記録である。\n!\nこの記事は、自分のブログに書いた 2...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "週刊 ローカルLLM＆AIコーディングツール更新まとめ（11/14〜11/20）",
+      "url": "https://zenn.dev/girigiri_se/articles/053b225dceb24b",
+      "site": "Zenn(LLM)",
+      "published": "2026-11-22T12:22:49Z",
+      "description": "はじめに\nOpen WebUI と Ollama を使い始めた立場から、ローカルLLMとAIコーディングツールの1週間分の更新を整理しています。\n今週は、Open WebUI に大きめのリリースがありました。\n対象期間は、2026年11月14日（土）〜11月20日（金）（日本時間）です。\n\n 今週のハイライト\n\nOpen WebUI v0.13.4：追加・変更の量が多い版です。DBのマイグレーショ...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "専用GPUなしで回すハイブリッドLLMを、Surface Laptop Ultraで組み替える構想",
+      "url": "https://zenn.dev/hydenori24/articles/hybrid-llm-cpu-harness",
+      "site": "Zenn(LLM)",
+      "published": "2026-11-22T12:13:51Z",
+      "description": "組込みCの品質改善を、24時間回す自作のハーネスを作っている。仕様書と既存コードを LLM に読ませて、仕様のずれを探したり、Unity の単体テストを設計・提案させたりする。\n最初は、手元のPCの小さいモデルだけで回すつもりだった。でも、それだけでは回らなかった。今は、手元の小型モデル、夜だけ使える別のPC、組織の管理下の LLM、有料のクラウド（Copilot 経由）を使い分けている。\n先に自...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
     {
       "title": "AIのハーネスは、できることを足し、やることを止める",
       "url": "https://zenn.dev/ponkotate/articles/2026-11-22-harness-add-and-stop",
       "site": "Zenn(LLM)",
       "published": "2026-11-22T10:20:25Z",
       "description": "ChatGPTやClaudeを使っていると、AIが自分で検索したり、コードを実行したりしているように見えます。けれど、LLM本体ができるのは、文章を作ることだけです。検索やコードの実行は、LLMの周りに付けたハーネスが担っています。\n私は、Claude Codeで開発するときに、プロジェクトごとにハーネスの部品を自作して足しています。改めて自分のハーネスを見返したところ、能力を足すものと同じくらい...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "【第19回】スキルを増やしっぱなしにするな。Hermes Agentはcronで作業履歴を毎朝自動同期し、使わないスキルも片付ける。",
+      "url": "https://zenn.dev/sora_biz/articles/hermes-vps-19-auto-sync-curator",
+      "site": "Zenn(LLM)",
+      "published": "2026-11-22T08:52:51Z",
+      "description": "!\nこの記事をAIに読ませる\nこの記事はGitHubの公開リポジトリで管理していて、本文のMarkdownをそのまま取得できる。Claude CodeやCodexなどのAIエージェントに手順を任せたいときは、次のURLを渡すだけでいい。\nhttps://raw.githubusercontent.com/Sora-bluesky/zenn-articles/main/articles/hermes...",
       "category": "AI・技術",
       "rss_category": "",
       "image_url": ""
@@ -29,6 +139,16 @@
       "site": "Zenn(LLM)",
       "published": "2026-11-22T08:16:53Z",
       "description": "Strataについて\n9月末に登場したLLMモデルの推論実行エンジンです。Qwen3.8 Flash Nextという強力なモデルを比較的強い一般PC上でも動かせるということで話題になりました。\nhttps://github.com/Niko1221/Strata\n普通、推論エンジンといえばllama.cppですが、強力なモデルを動かすなら強いGPUを使用するか低速で妥協するものでした。\nしかし、S...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "AIの「完了しました」を作業記録と照合する。Done Means Doneでできること",
+      "url": "https://zenn.dev/git_dungeon/articles/dmd-evidence-handoff",
+      "site": "Zenn(LLM)",
+      "published": "2026-11-22T07:24:48Z",
+      "description": "「原稿と表紙を所定のフォルダに入れてください」と頼んだ。エージェントから「納品しました」と返ってきた。記録を開くと、原稿を指定先から読み戻したログはある。表紙に触れた行はどこにもない。\nこの時点で受け手に渡せる一文は、こうなる。\n\n原稿は指定先で開けました。表紙画像の納品は、この記録では確認できません。\n\nこんにちは、黒パグです🐾　この一文を、エージェントが「完了しました」と送る直前に作るために、...",
       "category": "AI・技術",
       "rss_category": "",
       "image_url": ""
@@ -119,16 +239,6 @@
       "site": "Zenn(LLM)",
       "published": "2026-11-22T03:06:47Z",
       "description": "前に書いた運用の記事（失敗の記録）の続きで、判断の記録の部分だけを 1 枚にしたものです。\n最後に 2 つ伺いたいことがあります。\n\n 1. 何のための記録か\nエージェントの観測ツールは 2026 年時点で出揃っていて、主にトレースを撮ります。\nどのモデルを呼び、どのツールを実行し、何トークン使い、何を返したか。\n人がコメントや承認の可否、出力を採点した理由を書き込める欄を持つものはあります。\nた...",
-      "category": "AI・技術",
-      "rss_category": "",
-      "image_url": ""
-    },
-    {
-      "title": "Knowledge Studio を試してみました:AI の説明文を人はどこまで見るか",
-      "url": "https://zenn.dev/yuji_sakurai/articles/70f0d11e8fa0ac",
-      "site": "Zenn(LLM)",
-      "published": "2026-11-22T03:00:05Z",
-      "description": "背景\n　2026-11-19 に自社で開催したカンファレンスでは、Context 周りの話が多く出ていました。その中で、Google Cloud の発表に出てきた Knowledge Catalog（旧 Dataplex）のプレビュー機能 Knowledge Studio を、自社の本番側プロジェクトで試してみました。\n　本記事では、既存のデータ基盤に、どこまで手間なく載るかを見た結果と、感想をま...",
       "category": "AI・技術",
       "rss_category": "",
       "image_url": ""
