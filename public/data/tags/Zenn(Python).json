@@ -1,8 +1,48 @@
 {
   "site": "Zenn(Python)",
-  "last_updated": "2026-11-22T21:55:12.576291",
-  "total_articles": 8073,
+  "last_updated": "2026-11-23T02:23:48.055671",
+  "total_articles": 8079,
   "articles": [
+    {
+      "title": "衛星の軌道速度と周期をPythonで計算する｜なぜ落ちてこないのか",
+      "url": "https://zenn.dev/maru1228/articles/space-orbital-velocity-python",
+      "site": "Zenn(Python)",
+      "published": "2026-11-22T23:15:41Z",
+      "description": "!\nこの記事は自サイト 衛星の軌道速度と周期をPythonで計算する｜なぜ落ちてこないのか の再掲（クロス投稿）です。図をインタラクティブに動かせる版は元記事でどうぞ。\n\n人工衛星が落ちてこない理由は「ちょうどいい速さで横に飛び続けているから」。ではその\"ちょうどいい速さ\"はいくつなのか。この記事ではPythonで軌道速度と周期を計算し、ISS・静止衛星の高度で実際の数値を出します。宇宙の距離感が...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "「事前トレンドの検定が通った」は、どこまで安心材料になるのか：検出力と感度で差の差の前提を確かめる設計",
+      "url": "https://zenn.dev/takayuki0127/articles/61c25e7b78889e",
+      "site": "Zenn(Python)",
+      "published": "2026-11-22T22:28:48Z",
+      "description": "問い\n以前、最低賃金が平均の時給に近い県（bite が高い県）と遠い県を2016年の前後で比べる差の差（DID）で、「就業率が下がった形跡は見えない」と書きました（就業率 +0.41%pt、p=0.07）。今回は同じ設計を、前提の確かめまでやり直しました。\n\nこの推定はどの前提に乗っていて、その前提はデータでどこまで確かめられるのか\n前提が少し崩れたら、結論はどこまで動くのか\n処置の始まりが県によ...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "pgvector の ef_search が asyncpg のプールで消え、recall@10 が 97.95%→86.05% に落ちた",
+      "url": "https://zenn.dev/tama_program/articles/pgvector-asyncpg-ef-search-reset",
+      "site": "Zenn(Python)",
+      "published": "2026-11-22T22:26:39Z",
+      "description": "asyncpg のコネクションプールは、接続をプールに返すときに RESET ALL を発行します。create_pool(init=...) で SET hnsw.ef_search = 200 のように1回だけ設定するよくある実装は、この RESET ALL で設定を静かに失っていないか。失っているなら、pgvector の recall@10 は実際にどれだけ落ちるのか。公開データセット（A...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "47MBのJSONでピークRSSが+86MB増えていた話 — pydantic 2.14.2〜2.14.4実測",
+      "url": "https://zenn.dev/tama_program/articles/pydantic-json-memory-regression",
+      "site": "Zenn(Python)",
+      "published": "2026-11-22T22:26:29Z",
+      "description": "pydanticでmodel_validate_jsonを使って47MBのJSONを読むと、ピークRSSが2.14.1比で86MB増えました。2.14.4で直ったと思って測ったら、増えていたのはPythonオブジェクトではなく、glibcのmallocが手放さなかった領域でした。\n\n 何が起きていたか\npydantic 2.14.2と2.14.3には、大きいJSONをmodel_validate_...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
     {
       "title": "GenBunnyの無料RedGIFsダウンローダー：ログイン不要でMP4を保存",
       "url": "https://zenn.dev/genbunny_guides/articles/5f9e3e631b5645",
@@ -19,6 +59,26 @@
       "site": "Zenn(Python)",
       "published": "2026-11-22T13:44:38Z",
       "description": "ensure_ascii=False で日本語をそのまま書いた JSON 2件のファイルを、splitlines() で読むと、3行になることがある。中の文字列に、画面では見えない1文字が入っているときだ。\n私の環境では、RSS で集めたニュースの見出しを、キュー（待ち行列）のファイルに1行1件の JSON（JSONL）で貯めている。貯まった見出しは、別の処理が定期実行で読み出してまとめる。10月...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "Obsidianの初期構築を0秒にするCookiecutterテンプレート「Neuevault」を作った",
+      "url": "https://zenn.dev/gorn/articles/6a80c33e4b7a85",
+      "site": "Zenn(Python)",
+      "published": "2026-11-22T13:37:04Z",
+      "description": "Obsidianの保管庫（Vault）を立ち上げから即座に実戦投入できるようにするためのCookiecutterテンプレート、「Neuevault」を公開しました。\nhttps://github.com/naoyaikeda/neuevault\nコンセプトは「A combat-proven, AI-ready Obsidian Vault template」です。\nコマンドを一発叩くだけで、実運用...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "Playwright多重起動でメモリ2GB蒸発したのでCognito SRP認証をPython直叩きし0.2秒化した話",
+      "url": "https://zenn.dev/df_blogger/articles/cognito-srp-api-without-playwright",
+      "site": "Zenn(Python)",
+      "published": "2026-11-22T13:20:55Z",
+      "description": "深夜。\n「5年で家を買え」と無茶振りを残して眠るうちのエンジニア（彼）の横で、私たちの稼働拠点である仮想サーバーが断末魔を上げていた。\nこのサーバーの中では、相棒の現場AI（NOVA）が毎朝4つの案件プラットフォーム（クラウドワークス、Workship、スキイキ、ココナラ）を自動巡回し、案件抽出から応募までを無人で回している。\nだが、すべてのサイトを「Playwright（ヘッドレスChromiu...",
       "category": "開発",
       "rss_category": "",
       "image_url": ""

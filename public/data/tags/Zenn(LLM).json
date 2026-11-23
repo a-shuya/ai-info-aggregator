@@ -1,14 +1,14 @@
 {
   "site": "Zenn(LLM)",
-  "last_updated": "2026-11-22T21:55:12.576291",
+  "last_updated": "2026-11-23T02:23:48.055671",
   "total_articles": 7638,
   "articles": [
     {
-      "title": "常駐型AIチャットエージェントが「送信先を取り違えない」ようにする出力先検証設計",
-      "url": "https://zenn.dev/hach/articles/chat-agent-outbound-destination-validation-design",
+      "title": "AIエージェントは「作るもの」から「任せるもの」へ。任せるときに必要な4つのこと",
+      "url": "https://zenn.dev/koheip/articles/from-building-to-delegating-agents",
       "site": "Zenn(LLM)",
-      "published": "2026-11-22T20:11:58Z",
-      "description": "常駐型のAIチャットエージェントをSlack・Teams・Chatworkなど複数チャネル・複数ワークスペースに展開していくと、人間の「誤送信・誤爆」に相当する事故がエージェント側にも構造的に発生しやすくなります。人間の誤送信は「宛先を選び間違えた」という単発の操作ミスですが、エージェントの誤送信は設計上の抜けが原因になりやすく、気づかれないまま同じ抜け道を繰り返し通ってしまう点が違います。この記...",
+      "published": "2026-11-22T23:05:58Z",
+      "description": "はじめに\nZEN大学で知能情報を学んでいる2年生の松延です。AIエンジニアを目指して、AIエージェントの個人開発を続けています。\nAIエージェントの話は、ここしばらくで重心が変わったと感じています。少し前までの中心は、「どう作るか」でした。いま日常の開発で起きているのは、「どう任せるか」です。エージェントを開発する時代から、エージェントに仕事を任せる（代行させる）時代に入った、というのが、いまの私...",
       "category": "AI・技術",
       "rss_category": "",
       "image_url": ""
@@ -84,6 +84,16 @@
       "image_url": ""
     },
     {
+      "title": "LLM実験の採点コードは信用できるのか？――1,152件の独立再計算とバグ注入検証",
+      "url": "https://zenn.dev/shinyahayakawa/articles/9f6c843983e15d",
+      "site": "Zenn(LLM)",
+      "published": "2026-11-22T12:37:13Z",
+      "description": "LLMを使った実験では、モデルの回答を保存して正答率を計算すれば、結果が完成したように見えます。しかし、採点プログラム自体が間違っていたらどうなるでしょうか。\n元の採点コードをもう一度実行して同じ数字が出ても、それだけでは採点ロジックの誤りを発見できません。同じ処理は、同じ誤りを繰り返す可能性があるからです。\nそこで私は、合成業務課題を使ったLLM判断実験「PAS-D」で、保存済みの1,152件の...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
       "title": "週刊 ローカルLLM＆AIコーディングツール更新まとめ（11/14〜11/20）",
       "url": "https://zenn.dev/girigiri_se/articles/053b225dceb24b",
       "site": "Zenn(LLM)",
@@ -99,16 +109,6 @@
       "site": "Zenn(LLM)",
       "published": "2026-11-22T12:13:51Z",
       "description": "組込みCの品質改善を、24時間回す自作のハーネスを作っている。仕様書と既存コードを LLM に読ませて、仕様のずれを探したり、Unity の単体テストを設計・提案させたりする。\n最初は、手元のPCの小さいモデルだけで回すつもりだった。でも、それだけでは回らなかった。今は、手元の小型モデル、夜だけ使える別のPC、組織の管理下の LLM、有料のクラウド（Copilot 経由）を使い分けている。\n先に自...",
-      "category": "AI・技術",
-      "rss_category": "",
-      "image_url": ""
-    },
-    {
-      "title": "AIのハーネスは、できることを足し、やることを止める",
-      "url": "https://zenn.dev/ponkotate/articles/2026-11-22-harness-add-and-stop",
-      "site": "Zenn(LLM)",
-      "published": "2026-11-22T10:20:25Z",
-      "description": "ChatGPTやClaudeを使っていると、AIが自分で検索したり、コードを実行したりしているように見えます。けれど、LLM本体ができるのは、文章を作ることだけです。検索やコードの実行は、LLMの周りに付けたハーネスが担っています。\n私は、Claude Codeで開発するときに、プロジェクトごとにハーネスの部品を自作して足しています。改めて自分のハーネスを見返したところ、能力を足すものと同じくらい...",
       "category": "AI・技術",
       "rss_category": "",
       "image_url": ""
