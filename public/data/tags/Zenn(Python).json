@@ -1,8 +1,168 @@
 {
   "site": "Zenn(Python)",
-  "last_updated": "2026-11-23T11:05:14.534247",
-  "total_articles": 8079,
+  "last_updated": "2026-11-23T22:36:30.146122",
+  "total_articles": 8095,
   "articles": [
+    {
+      "title": "自分の分析記事1,066本の「書き方の決まり」を、どう数える形にし、基準を動かして何を確かめたか",
+      "url": "https://zenn.dev/takayuki0127/articles/390d351aefd680",
+      "site": "Zenn(Python)",
+      "published": "2026-11-23T13:46:50Z",
+      "description": "問い\n私の分析リポジトリでは、記事を書くうちに「言えないことを書く」「頑健性を確かめる」「架空のデータは架空と書く」「結果を見る前に計画を書く」といった決まりを足してきました。問いは「1,066本の README で、決まりはいつから、どこまで守られているのか。作る途中で何を変え、何を確かめていないのか」です。\nこの記事では、この問いをどう数えられる形にしたか（設計）と、基準を変えて答えがどう動い...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "Pythonで読書進捗ウィジェットを作る：リングの表示値と実際のページ数を分ける",
+      "url": "https://zenn.dev/wenlo/articles/45cb3c159254ec",
+      "site": "Zenn(Python)",
+      "published": "2026-11-23T13:34:10Z",
+      "description": "読書目標が1ページのときに2ページ読んだら、進捗リングは満タンで十分です。でも、ラベルまで「1/1」にすると、2ページ読んだという記録が見えなくなります。今回は、PythonIDEのウィジェット用モジュール widget を使い、リングの描画に使う値だけを調整します。ラベルには元のページ数を残します。\nこの記事で確認したのは、英語表示のiPhoneシミュレータ上の Widget Preview で...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "「名前で探して、無ければ作る」が、同じ建物の双子を生む",
+      "url": "https://zenn.dev/shinsei99/articles/name-lookup-creates-twin-buildings",
+      "site": "Zenn(Python)",
+      "published": "2026-11-23T12:29:59Z",
+      "description": "不動産管理の会社で、検針と請求の台帳（SQLite）を作っています。\n部屋ごとの賃料は、経理が持っている Excel の レントロール（建物ごとに1シート、部屋ごとに1行）から取り込みます。\nこの取り込みが、同じ建物を黙って2つ作る作りになっていました。実害が出る前に見つけたので、その記録です。\n\n 元のコード\nシートの見出し（A1）に建物名が書いてあるので、それで台帳を引いていました。\nfor ...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "Search Console APIとBing Webmaster APIで週次SEOレポートを自動化した話",
+      "url": "https://zenn.dev/tachibanana0/articles/9437578ccdccae",
+      "site": "Zenn(Python)",
+      "published": "2026-11-23T12:02:06Z",
+      "description": "複数サイトを運営していると、Google Search Console（GSC）とBing Webmaster Toolsを毎週開くのが手間になります。標準ライブラリだけで動くPythonスクリプトを組み、両APIから週次レポートを自動取得する仕組みを作りました。\n\n 2つのAPIの認証と仕様の違い\n\n\n\n項目\nSearch Console API\nBing Webmaster API\n\n\n\n\n認...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "暗号資産の確定申告前に取引所CSV（Shift-JIS）とEtherscan CSVを完全オフラインで整理・異常検知するPython設計",
+      "url": "https://zenn.dev/inemuri/articles/crypto-tax-csv-cleaner-python",
+      "site": "Zenn(Python)",
+      "published": "2026-11-23T11:50:01Z",
+      "description": "暗号資産の確定申告シーズンになると、多くの人が「国内取引所のShift-JIS CSVと、EtherscanのUTC CSVの形式がバラバラ」「重複行や未分類の報酬・手数料行が混ざって損益計算ツールでエラーになる」という前処理地獄にぶつかります。\nしかも取引履歴CSVには個人情報・資産額・ウォレット履歴が詰まっているため、得体の知れないWebサービスへアップロードするのはセキュリティ上避けたいとこ...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "AI チームの仕組みを、動画づくりに入れてみた：説明書は目次に、チェックは verify に",
+      "url": "https://zenn.dev/lecto/articles/6b17fa40987d55",
+      "site": "Zenn(Python)",
+      "published": "2026-11-23T11:21:08Z",
+      "description": "はじめに\n前回の記事では、OpenAI と Anthropic が公開した「AI がコードを書くチームの仕組み」を読んで整理しました。\nhttps://zenn.dev/lecto/articles/fe59e629379585\n今回は、その仕組みを自分の動画づくりのリポジトリに入れて試した記録です。\n私は、キャラクターの「たもこ」が技術ニュースを解説する動画を、Claude Code と一緒に作...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "人工衛星の温度のデータ36通り ― 4乗の放射を非線形のまま解く",
+      "url": "https://zenn.dev/kohmaruworks358/articles/mathsci-98b36988c5d17453",
+      "site": "Zenn(Python)",
+      "published": "2026-11-23T11:16:17Z",
+      "description": "この記事のデータは、YouTube チャンネル「数理科学ノート」の解析システム（AI）が、自分で計算したものです。\nチャンネル：https://www.youtube.com/@mathsciencenotes\n!\nこれはシミュレーションのデータです。 実在の人工衛星の値でも、測った値でもありません。標準の定数を除き、衛星の値はすべて説明用に決めた値です。\n\n\n はじめに\n\n50 cm 角の箱型の...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "3Dプリンタの印刷中に電源断！Z原点復帰なしで途中から再開するG-codeリカバリ術",
+      "url": "https://zenn.dev/hifn/articles/resume-3d-print-power-loss-gcode",
+      "site": "Zenn(Python)",
+      "published": "2026-11-23T11:00:05Z",
+      "description": "はじめに\n3Dプリンタで1時間以上かかるパーツを出力している最中，ブレーカー落ちやコンセントの誤抜去，スマートプラグの誤作動などで突然電源が落ちてしまった経験はないでしょうか．\n多くのFDM（熱溶解積層方式）3Dプリンタには「停電復旧機能（Power-loss Recovery）」が備わっています．しかし，この機能は「本体のSDカードから直接印刷している場合」にしか働かないケースがほとんどです．R...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "「定性は広く、定量は狭く」を、A/Aテストのシミュレーションで考えた",
+      "url": "https://zenn.dev/53able/articles/35ebc0e0159bc0",
+      "site": "Zenn(Python)",
+      "published": "2026-11-23T08:46:55Z",
+      "description": "A/Bテストが終わり、ダッシュボードを開く。クリック率は変わっていない。でも、ほかの指標を一つずつ見ていくと、「数日後も使い続けている人の割合」に「有意」の印が付いている。これを成果として報告していいのでしょうか。\n逆の場面もあります。インタビューの準備で、確かめたい仮説に沿った質問だけを並べる。聞きたいことは全部聞けたのに、想定外の話は何も出てこない。\nこの2つを並べて、調べ方によって視野の広さ...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "発信者ボードを作った: 仕組みと管理の工夫",
+      "url": "https://zenn.dev/shiroshibamugi/articles/jarvis-kit-creator-board",
+      "site": "Zenn(Python)",
+      "published": "2026-11-23T08:46:18Z",
+      "description": "どんな困りごとか\n企業案件やいただいた商品、そして自分自身の商品の管理がバラバラになってしまい、進行状況や期限の把握に手間取っていました。また、案件の種類によっては広告表記の確認が必要であったり、完了した案件についての請求書の下書きを別で用意したりする作業も重なっていました。これらを1つの画面でまとめて管理し、期限が近いものをひと目でわかるように整理できる小さな道具が欲しいと考え、作成しました。\n...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "「フルリモート案件は単価が高い」は本当か？エンジニア案件2,303件をPythonで分解してみた",
+      "url": "https://zenn.dev/sagae/articles/issue-rates-remote-analysis",
+      "site": "Zenn(Python)",
+      "published": "2026-11-23T08:38:44Z",
+      "description": "はじめに\n開発人材プラットフォーム「ISSUE」を運営しているチームです。\nISSUEでは、掲載しているエンジニア案件の募集単価を集計したデータを、単価相場ページ向けにJSONで公開しています。\nこのデータをPython（pandas）で眺めていたところ、**「フルリモート案件は常駐案件より単価が高い」**という分かりやすい結果が出ました。\nただ、もう一段分解してみると、話はそう単純ではありません...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "Gitを呼ぶ道具のテストが、手元の設定で緑になっていた",
+      "url": "https://zenn.dev/miyakona/articles/git-tests-inherit-user-config",
+      "site": "Zenn(Python)",
+      "published": "2026-11-23T08:19:35Z",
+      "description": "AIエージェントが変更内容に応じたセルフレビューを済ませてからpushするように、検査用のフックを使っています。フックは変更したパスを読み、コードを含む変更か、文章だけの変更かを固定ルールで判定します。\nそのフックが、日本語のファイル名を含むコード変更を文章だけの変更として扱っていました。ところが、手元のMacでテストを走らせても通ります。原因は、私のGit設定にある core.quotePath...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "Python標準ライブラリだけでCLIを作る：argparseの実測メモ",
+      "url": "https://zenn.dev/warrobotsxyz/articles/python-argparse-cli",
+      "site": "Zenn(Python)",
+      "published": "2026-11-23T07:44:21Z",
+      "description": "はじめに\nちょっとしたツールにコマンドライン引数を付けるなら、Python標準の argparse で十分です。外部ライブラリを入れずに、サブコマンド・型変換・フラグ・ヘルプを扱えます。\nこの記事では、サブコマンド付きのCLIを作り、正常系と異常系の挙動を実測します。\n\n 環境\n\nWindows 11（ビルド 10.0.26200）\nPython 3.11.5\n\n\n やったこと\n\n 1. サブコマ...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "Python + Playwright と systemd.timer で作る外形監視とTeams・SharePoint・メールへの通知基盤",
+      "url": "https://zenn.dev/n_dev/articles/39db336c83ff82",
+      "site": "Zenn(Python)",
+      "published": "2026-11-23T06:46:09Z",
+      "description": "はじめに\nWebシステムの稼働状況を定期的に確認し，異常があれば即座に気づける仕組みを作るため，Python + Playwright を使った外形監視と，Teams・SharePoint・メールへの通知基盤を構築した．\n本記事では，外形監視（検知・判定）から通知（出力・記録）までの一連の流れをまとめた．\n\n 全体構成\n監視の実行基盤には AWS 上の Linux サーバー（EC2）を使用し，定期...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "マメ｜声だけで、店の今日が回る。",
+      "url": "https://zenn.dev/noritaka1166/articles/norinorisan-development-start",
+      "site": "Zenn(Python)",
+      "published": "2026-11-23T06:32:23Z",
+      "description": "1. 作品名・キャッチコピー\n作品名は「マメ」です。\n\n声だけで、店の今日が回る。\n\nAI HACK 2026 Special Oneday Hackathonのテーマ「話すだけで誰かの面倒を減らすアプリ」をきっかけに、小さなカフェの申し送りを手助けするアプリを作っています。\nこのコピーは、マメが目指す姿を表しています。現時点ですべての店の業務を声だけで完結できるわけではありません。今の中心機能は...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "pandas expanding vs rolling: 6 Tests on a Stock Mention Baseline",
+      "url": "https://zenn.dev/dustinliang/articles/acb9c4549d1e77",
+      "site": "Zenn(Python)",
+      "published": "2026-11-23T05:56:58Z",
+      "description": "For a daily stock mention baseline, pandas rolling usually beats expanding, because a rolling window forgets old days. The baseline then follows the stock when its news level changes for good. Use exp...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
     {
       "title": "衛星の軌道速度と周期をPythonで計算する｜なぜ落ちてこないのか",
       "url": "https://zenn.dev/maru1228/articles/space-orbital-velocity-python",

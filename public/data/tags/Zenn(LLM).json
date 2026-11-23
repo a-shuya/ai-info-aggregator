@@ -1,8 +1,118 @@
 {
   "site": "Zenn(LLM)",
-  "last_updated": "2026-11-23T11:05:14.534247",
-  "total_articles": 7637,
+  "last_updated": "2026-11-23T22:36:30.146122",
+  "total_articles": 7648,
   "articles": [
+    {
+      "title": "コンテキスト圧縮で「決めたこと」を忘れるAIエージェントに「眠って夢見る時間」を――Anthropicの記憶設計",
+      "url": "https://zenn.dev/kotakotahiro/articles/19fd5a3e0e67f0",
+      "site": "Zenn(LLM)",
+      "published": "2026-11-23T13:17:07Z",
+      "description": "今このタイミングで「コンテキストを圧縮しています…」が出た\n数日前からコーディングエージェントでリファクタリングを進めていました。\n作業が進んでいよいよ佳境になったとき、コンテキスト圧縮の処理が割り込んできました。\n「コンテキストを圧縮しています…」が出てしまうと、終わるのを待つしかありません。\n圧縮が完了すると、エージェントは作業を再開してくれましたが、微妙なズレを感じました。\n\n昨日決めた「こ...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "RTX 5060 Ti 16GBでローカルLLM 7種を実測。22GBのMoEが17GBのモデルより6倍速かった理由",
+      "url": "https://zenn.dev/evofauna/articles/z01-localllm-16gb-moe",
+      "site": "Zenn(LLM)",
+      "published": "2026-11-23T11:30:21Z",
+      "description": "16GB の GPU で動かすローカルLLMを選ぶために、7種類を同じ条件で動かし、書く速さ・VRAM・日本語の小テストを計りました。\nいちばん意外だったのは、22GB もある qwen3.6:35b-a3b が 1秒に59トークン書けたのに、17GB の qwen3.6:27b は 1秒に10トークンしか出なかったことです。どちらも 16GB の VRAM に入りきらず、一部が CPU 側のメモ...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "agy（Antigravity CLI）のモデル7通りに同じ3課題を解かせた",
+      "url": "https://zenn.dev/hiroxasobiba/articles/agy-seven-models-same-three-tasks",
+      "site": "Zenn(LLM)",
+      "published": "2026-11-23T11:06:34Z",
+      "description": "個人で Android アプリを作っています。普段は Claude Code が中心ですが、Google Antigravity の CLI（以下 agy）も使っています。agy は、1つの画面の中で Gemini の各モデルや Claude などのモデルを選べます。\n選べるとなると、どれを普段使いにするか決めたくなります。そこで2026年11月20日の朝、同じ依頼書を agy のモデル7通りに1...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "設計の前に「なぜ」を固定する — 52行のスキル why-first を実測した",
+      "url": "https://zenn.dev/ptux/articles/extra-why-first-skill",
+      "site": "Zenn(LLM)",
+      "published": "2026-11-23T10:27:56Z",
+      "description": "起きる現象：解決策先行の依頼をそのまま渡すと何が起きるか\n「社内 AI 基盤を作りたい」「100 個以上ある LLM を自動で振り分けるプラグインを作って」といった依頼をそのまま AI エージェントに渡すと、驚くほど速くアーキテクチャ図やコードが返ってきます。\n問題は、「そもそも何のためにやるのか」「何をあきらめるのか」が未確定のまま、問題のサイズより大きな設計が進んでしまうことです。設計ツリーを...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "「アプリを作る仕事」は2028年に終わる？リーマン予想証明後のAIエージェント時代に残る技術・消える技術",
+      "url": "https://zenn.dev/ainohogosya/articles/84a81ac1e1ed16",
+      "site": "Zenn(LLM)",
+      "published": "2026-11-23T10:14:56Z",
+      "description": "!\nこの記事の3行まとめ\n\n2026年秋からの「常駐型Bots」とClaudeによるリーマン予想の形式証明で、AIのフェーズは完全に変わった。\nこれからのアプリは「探して使う」ものから「AIがその場で使い捨て生成する」ものへ。ただし裏側のAPI・決済インフラは生き残る。\n2028年末にAIの自己改善が人間の開発速度を追い抜き、ホワイトカラーと物理労働のすべてが再編される（かもしれない）。\n\n※本記...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "150万トークン長期記憶（LongMemEval-M 90.0% / S 95.0%）の選証設計と1,000問0漏洩監査",
+      "url": "https://zenn.dev/zeroos_fidwell/articles/740af3294b95a4",
+      "site": "Zenn(LLM)",
+      "published": "2026-11-23T09:24:14Z",
+      "description": "大規模言語モデルを企業の情シス運用や業務エージェントへ組み込む際、PoCの単発対話では高精度に見えるにもかかわらず、半年〜1年分の会議議事録・障害対応チャット・ルール改定履歴が蓄積すると回答精度が急落する現象が起きます。原因の多くは「全履歴の単純プロンプト詰め込みによる注意散漫」と「検索・推論・評価境界の混濁」にあります。\n本稿では、約150万トークン規模を含む長期記憶ベンチマーク LongMem...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "ローカルLLMで学ぶRAG構築",
+      "url": "https://zenn.dev/beijiro/books/local-llm-rag-book",
+      "site": "Zenn(LLM)",
+      "published": "2026-11-23T08:05:49Z",
+      "description": "RAGをローカルLLMのシステムに組み込む方法を解説します。\n使用する技術スタックは「Chainlit」+「OpenAI Python ライブラリ（openai）」+「Ollama」+「Qdrant」です。\n完全にローカル環境で構築するため、外部に出せない文書を読み込ませ、それに対してAIが回答してくれるシステムを構築できます。\nCPUでの動作も確認済みのコードなので、応答に時間はかかりますがGP...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "Claude Code のサブエージェントは何体に分けるか——作る前に当てる4つの問い",
+      "url": "https://zenn.dev/tottoko_hamu/articles/2026-11-21-214855",
+      "site": "Zenn(LLM)",
+      "published": "2026-11-23T07:20:20Z",
+      "description": "この記事の要点: Claude Code のサブエージェントを何体にするかは、先に数を決めずに、作業ごとに4つの問いを当てて決めます。問いは、「その作業は繰り返し起きるか」「専用の指示で結果が変わるか」「すでにいる役と仕事が被らないか」「切り離して任せられるか」の4つです。4つすべてが Yes の作業だけを新しい役にすることをすすめます。私の組織では、サブエージェントの定義ファイルが2026年4月...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "重み編集で Qwen3.5-0.8B をコーディングエージェント安全判定器に改造してみた",
+      "url": "https://zenn.dev/chitako/articles/b509c472f2e2d5",
+      "site": "Zenn(LLM)",
+      "published": "2026-11-23T06:42:57Z",
+      "description": "!\n本記事は、Qwen/Qwen3.5-0.8B を対象に、勾配降下法を使わず重みを直接編集する手法（Weight-Space Programming）でコーディングエージェントの安全判定器を構築した技術解説記事です（コード: Chiytako/wsp-automode-0.8b）。プロンプト形式は Mapika/decider 互換の Plain Layout を採用しています。\nなお、本アプロ...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "Microsoft Aion 1.0 InstructをColabで試した：2.3Bで日本語要約・ツールコール・32K長文チェック",
+      "url": "https://zenn.dev/shibatamago_dev/articles/aion-1-0-instruct-hands-on",
+      "site": "Zenn(LLM)",
+      "published": "2026-11-23T05:22:03Z",
+      "description": "はじめに\nMicrosoft が Windows のオンデバイス向け小規模言語モデル「Aion 1.0 Instruct」（2.3B パラメータ、32K コンテキスト）の重みを Hugging Face で公開しました。ライセンスは MIT です。\n11 月 13 日の発表時点では Windows Insider 経由のロールアウト前提でしたが、今回、重みが自由にダウンロードできるようになり、公式...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "Tech Watch 2026-11-23: ハーネスと検証の境界",
+      "url": "https://zenn.dev/laiken/articles/20261123-tech-watch",
+      "site": "Zenn(LLM)",
+      "published": "2026-11-23T05:15:10Z",
+      "description": "AIが書きました🤖\nこの記事は、AIが書いたものをAIがレビューしてから公開しています。\nL: Hugging Face の比較では、課題の成功率が上がる一方で、使うトークンは減っている。同じモデルの重みを基にしているのに、なぜ両方が動いたのだろう。自分は道具との接し方に理由がある気がする。\n\n 今日の 10 件\n\n\nAnthropic announces closing of initial p...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
     {
       "title": "AIエージェントは「作るもの」から「任せるもの」へ。任せるときに必要な4つのこと",
       "url": "https://zenn.dev/koheip/articles/from-building-to-delegating-agents",
