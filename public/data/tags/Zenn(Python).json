@@ -1,8 +1,48 @@
 {
   "site": "Zenn(Python)",
-  "last_updated": "2026-11-23T22:36:30.146122",
-  "total_articles": 8095,
+  "last_updated": "2026-11-24T06:24:08.402287",
+  "total_articles": 8100,
   "articles": [
+    {
+      "title": "FastAPI × Strands Agents で作る LLM RSS 要約 API の設計と実践知見",
+      "url": "https://zenn.dev/atsupi/articles/63849471d489ec",
+      "site": "Zenn(Python)",
+      "published": "2026-11-23T16:39:37Z",
+      "description": "はじめに\n近年、LLM（大規模言語モデル）に外部データ取得などの「ツール」を持たせ、自律的にタスクを遂行させる AI エージェントの実装が急速に身近になりました。一方で、検証用のスクリプトから一歩踏み出し、再現性のある API サーバーとして安定稼働させるには、非同期処理の扱い・入力スキーマ設計・ツール出力のトークン最適化など、Web バックエンド特有の設計判断が求められます。\n本記事では、Fas...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "Museに「この手を直して」と頼めるAIイラスト修正ワークフローを作った",
+      "url": "https://zenn.dev/hoshigumo/articles/gemini-hand-inpaint",
+      "site": "Zenn(Python)",
+      "published": "2026-11-23T15:26:33Z",
+      "description": "AIイラストの顔も構図も気に入っているのに、組んだ指だけが不自然。そこで、MetaのパーソナルAIエージェント Muse に、画像を渡して「この手の指を交互に組ませて」と頼めば、修正から合成、差分チェックまで進められるようにしました。MetaのMuse紹介\n\nこの画像の手、指を交互に組ませて。部分修正で、顔や服はそのままにして。\n\nMuseは手元を囲う範囲を決め、Gemini APIで指を描き直し...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "全銀120バイトShift-JIS・T番号(Mod-9)・マイナンバー(Mod-11)実装の全落とし穴",
+      "url": "https://zenn.dev/pecopeko/articles/zengin-120byte-nta-mod9-mynumber-mod11-zero-deps",
+      "site": "Zenn(Python)",
+      "published": "2026-11-23T15:08:11Z",
+      "description": "はじめに：日本の経理・決済フォーマットは「仕様の1バイト差」で本番が止まる\n日本のB2Bシステム・経理バッチ・SaaSを開発していると、高確率で次の3つの国内仕様に突き当たります。\n\n全銀協規定形式（総合振込・給与振込の1レコード120バイト固定長ファイル）\n国税庁の法人番号（13桁）および適格請求書T番号（T + 13桁、Mod-9）\n総務省のマイナンバー（個人番号12桁、Mod-11）\n\nどれ...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "神経活動の低下を結合重みの更新で補償するための収束条件",
+      "url": "https://zenn.dev/id774/articles/b698ea708b7c9b",
+      "site": "Zenn(Python)",
+      "published": "2026-11-23T15:03:05Z",
+      "description": "神経系では、活動状態が変化しても機能的な出力が維持される場合がある。Santin らは、冬季に数か月間不活動となるウシガエルの呼吸運動回路を調べ、呼吸運動ニューロンの AMPA 型グルタミン酸受容体を介したシナプス応答が増大し、長期不活動後の運動出力を支えることを報告した[1]。活動を一定に保つことと、活動の変化に応じて結合の作用を調整し、必要な出力を維持することは区別できる。\n活動状態と結合重み...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
     {
       "title": "自分の分析記事1,066本の「書き方の決まり」を、どう数える形にし、基準を動かして何を確かめたか",
       "url": "https://zenn.dev/takayuki0127/articles/390d351aefd680",
@@ -19,6 +59,16 @@
       "site": "Zenn(Python)",
       "published": "2026-11-23T13:34:10Z",
       "description": "読書目標が1ページのときに2ページ読んだら、進捗リングは満タンで十分です。でも、ラベルまで「1/1」にすると、2ページ読んだという記録が見えなくなります。今回は、PythonIDEのウィジェット用モジュール widget を使い、リングの描画に使う値だけを調整します。ラベルには元のページ数を残します。\nこの記事で確認したのは、英語表示のiPhoneシミュレータ上の Widget Preview で...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "ChatGPTからWindowsのローカルMCPサーバーにつなぐ手順と、つまずきやすい所（Sora Commander v0.6.1）",
+      "url": "https://zenn.dev/kurojack_jp/articles/4018ff650afcbd",
+      "site": "Zenn(Python)",
+      "published": "2026-11-23T13:21:10Z",
+      "description": "ChatGPT の「カスタム MCP」を使うと、自分の PC で動く MCP サーバーに ChatGPT からつなげます。ただ、Windows で実際にやろうとすると、プランの条件、トンネル、キーの置き場所、パスの書き方など、細かいところで止まりがちです。\nこの記事では、私が作っている無料のオープンソース MCP サーバー Sora Commander（v0.6.1、AGPL-3.0）を例に、Wi...",
       "category": "開発",
       "rss_category": "",
       "image_url": ""
