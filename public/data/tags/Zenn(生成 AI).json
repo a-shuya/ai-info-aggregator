@@ -1,8 +1,198 @@
 {
   "site": "Zenn(生成 AI)",
-  "last_updated": "2026-11-24T06:24:08.402287",
-  "total_articles": 5257,
+  "last_updated": "2026-11-24T18:08:21.468548",
+  "total_articles": 5276,
   "articles": [
+    {
+      "title": "【ドパガキ向け】AI 時代の要求管理 ハンドブックを読もう",
+      "url": "https://zenn.dev/muroshima/articles/be47515ff9c16e",
+      "site": "Zenn(生成 AI)",
+      "published": "2026-11-24T16:36:20Z",
+      "description": "IPA の「AI 時代の要求管理ハンドブック」を読みました。\n129ページあって全部追うのは大変なので、重要そうなところだけピックアップしました。\nhttps://www.ipa.go.jp/digital/kaihatsu/rqr7mi000000f5up-att/req-mgmt-hb.pdf\n!\nとりあえず、3行で\n\n要望と要求と要件は別物。要望から要件へは一足飛びにできない\nAI を使う要...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "資料を作ったあと、知識はどこに残るか｜AI-Readyなデータ基盤作り①",
+      "url": "https://zenn.dev/ot_it_bridge/articles/afc1e5a22facb2",
+      "site": "Zenn(生成 AI)",
+      "published": "2026-11-24T14:56:30Z",
+      "description": "はじめに\nわたしは自動車部品会社の生産技術部門で働く技術者です。\nこの投稿は2026年11月24日の\n製造業でも生成AI活用したい！名古屋LLM MeetUp#15で発表する内容です。\n今回伝えたいことは、\n「AI-Readyなデータ基盤作りを、あなたの会社でも自分の手で小さく始めることができる」\nという話です。\n自分が見てきた生産技術の仕事では、以前にも起きたような不具合が、別の案件で繰り返され...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "生成AIのデモを公開するときの費用の上限：DynamoDBの条件付き更新で1日の質問回数を数える",
+      "url": "https://zenn.dev/takahkok0812/articles/0540dc2a89d40f",
+      "site": "Zenn(生成 AI)",
+      "published": "2026-11-24T14:13:20Z",
+      "description": "社内マニュアルに根拠つきで答えるAIチャット（RAG）を、誰でも触れる形で公開しました。公開の仕方は2つです。\n\n用意した質問のデモ（GitHub Pages）：評価用の27問の回答を事前に作って表示するだけ。AIを呼ばないので費用は0円\nログインして自由に質問できる版（AWS Amplify）：実際に Amazon Bedrock が答える\n\n後者は、放っておくと誰かが大量に質問したときに費用が...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "GraphRAGを最小限のコードで作る（辞書とリストで関係をたどる）",
+      "url": "https://zenn.dev/salesanalytics/articles/13bfe29b6686b1",
+      "site": "Zenn(生成 AI)",
+      "published": "2026-11-24T13:10:14Z",
+      "description": "クラシックRAGは、質問に似た文書を探して、AIに渡します。そのため、「答えに必要な文書が、質問に似ていない」と、その文書を選べません。複数の文書をたどる質問が苦手なのは、このためです。\nこの記事では、この弱点に取り組む__GraphRAG__を、Pythonの辞書とリストで作ります。文書を「かたまり」のまま持つのではなく、文書に書かれた__関係__を抜き出して、たどれる形にしておく方式です。\n先...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "そろった月報は済み表と1読みで照らす — 4枠の読み返しは元の行との照合1行で閉じる形",
+      "url": "https://zenn.dev/takumahayami/articles/eigyou-ai-geppo-4kaku-1yomi",
+      "site": "Zenn(生成 AI)",
+      "published": "2026-11-24T12:52:42Z",
+      "description": "月頭の割り振りの1行を月報の枠Dに写して封をした形は前回です。これで月報の4つの枠が、枠A実績・枠B計画・枠C繰り越し・枠D連結の1行でそろいました。月報を開くのは月末の1回だけです（1行枠を先に用意する設計どおり）。今回は、その1回の中身を読み直しから照合に替える形 — 月報の4行がそれぞれ元の1行と一致するかだけを1読みで確かめ、判定を照合の1行で閉じる月末の読み返しを定めます。\n\n 月報の4...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "ふるさと納税の「容量 750g〜1.5kg」をAIはどう計算する？還元率推定プロンプトと異常値ガードの設計",
+      "url": "https://zenn.dev/tachibanana0/articles/a7cc749849b832",
+      "site": "Zenn(生成 AI)",
+      "published": "2026-11-24T12:26:19Z",
+      "description": "はじめに\nふるさと納税の返礼品を「還元率（市場価格 ÷ 寄付額）」や「重量単価（g/円）」で並べる個人開発サイト ふるさと納税 還元率ランキング を運営しています。\n実装していて一番やっかいだったのは、返礼品の商品タイトルから「内容量」と「市場価格」を正確に抜くことでした。楽天やさとふるの返礼品タイトルは、人間が見ても一瞬迷う書き方が山ほどあります。\nこの記事では、OpenRouter経由で go...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "AI にコードレビューを任せる現場で、「人が決めること」と「機械が決めること」の境界をどう制度にするか",
+      "url": "https://zenn.dev/dekita/articles/ai-review-boundary-machine-decides",
+      "site": "Zenn(生成 AI)",
+      "published": "2026-11-24T12:16:21Z",
+      "description": "はじめに\nこの稿が答えるのは、日本の開発チームが今週抱えそうな質問です。「AI にコードレビューや承認を任せてよいのか」。答えは 2 つです。任せてよい。ただし、人が決めることと機械が決めることの境界を、規則の中に書き下してからにしてください。\n書き下す、とは「AI に任せる場面を列挙する」ことではありません。Zenn で 2026 年 11 月 8 日と 6 日に公開された 2 本の実践記事は、...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "Claude Code の CLAUDE.md とメモリに何を書くか — 5か月でメモリ211件、索引が長くなって2回外に出した",
+      "url": "https://zenn.dev/suisei498/articles/5ca25f418f7b01",
+      "site": "Zenn(生成 AI)",
+      "published": "2026-11-24T11:58:07Z",
+      "description": "この記事は Qiita と note にも同じ内容を載せています。Qiita: https://qiita.com/Suisei498/items/b73abaf66628eba7156c ／ note: https://note.com/suisei498/n/n9185bf984c69\n\nClaude Code を毎日、いくつものセッションで使っています。長く使っていると、前に決めたことを、次...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "介護の避難訓練と非常時の誘導、AIはどこまで任せられますか？ — 始まりの1声で決める",
+      "url": "https://zenn.dev/satoshimizuhara/articles/ai-agent-care-evacuation-drill",
+      "site": "Zenn(生成 AI)",
+      "published": "2026-11-24T11:37:47Z",
+      "description": "昨日は、介護の退所と移床の段取りの仕事で、介護の現場に寄せて読む27回目を書いた。本稿はその28回目で、昨日予告した通り、同じ介護の現場に避難訓練と非常時の誘導の仕事を置く。持ち出しの1箱で居室を空きに畳み戻るまでの仕事は27回目に置いた。本稿で置くのは、その隣の、同じ建物の中で警報が鳴ったあと、廊下の端から玄関まで何人を動かすかを決める数分の仕事だ。避難訓練と非常時の誘導の段取りは、年間の訓練計...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "情シスの審査で止まらないために、Claude の回答に出典を付け、.env の拒否ルールの穴も証跡に残した",
+      "url": "https://zenn.dev/charge0315/articles/genai-adoption-claude-review-evidence",
+      "site": "Zenn(生成 AI)",
+      "published": "2026-11-24T11:06:29Z",
+      "description": "みなさん、こんにちは！\nClaude の法人プランを社内に入れようとして、情シスのチェックシートの「入力はモデルの学習に使われますか」で手が止まったことはありませんか。\n回答そのものより、出典を出せないことで止まります。\nこの記事では、審査で最初に聞かれやすい 3 項目を、公式の出典つきで答える書き方と、Claude Code の .env の拒否ルールを練習用のリポジトリで試したら別のコマンドで...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "OCI Always Freeは最強の軽量無料クラウドだった",
+      "url": "https://zenn.dev/shisyu_gaku/articles/0b5c73d6c7c0f9",
+      "site": "Zenn(生成 AI)",
+      "published": "2026-11-24T11:02:49Z",
+      "description": "はじめに/きっかけ\n今年の冬から、Mac Mini上でOpenClawを動かしていたがGrokBotやMuseが優秀すぎて、ついに削除した。代わりにコーディングエージェントのホスト先となっていたが、新たにMac Miniで色々Agentのための構築環境を整えようとした時に、常時稼働させずに外出先から指示を出したときだけMacを起こしたいと思った。そこで、自宅のルーターに起動要求を中継する小さなVM...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "Excelの年内の累計でAIに任せるのは閉じの式まで — ずれの月の当ては人間が割り出す",
+      "url": "https://zenn.dev/yoshitokinosita/articles/0054-excel-ai-nenkan-ruikei-tenken",
+      "site": "Zenn(生成 AI)",
+      "published": "2026-11-24T10:45:23Z",
+      "description": "年内の累計は、12月の締めの前に数えておく\n12月の帳に向かう話の続きです。前回の経費の分解では、費用の本体に性質の印を付けて、固定と変動の2束に分ける段を扱いました。2束が置けると費用の動きの読み方は形になります。ただ、12月の締めに入る前に、もう1段だけ先に数えておく部分があります。年初から先月までの月次の合計が、年間の一覧と閉じるかどうかの点検です。食品メーカーの12月は、本社や監査に年内の...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "ネットワーク機器の設定やログを、生成AIに貼る前にPythonでマスキングする",
+      "url": "https://zenn.dev/yuru_nw_ops/articles/06a6e8edaa48a2",
+      "site": "Zenn(生成 AI)",
+      "published": "2026-11-24T10:13:07Z",
+      "description": "r&quot;^\\s*(enable\\s+)?(se障害の切り分けや設定の確認で、ChatGPT などの生成AIにログや設定を見せたくなることがあります。そのとき気になるのが「何を伏せればいいのか」と「伏せ忘れ」です。\n\nこの記事では、Cisco IOS 系の設定やログを、AIに貼る前に Python で機械的にマスキングするスクリプトを紹介します。標準ライブラリだけで動きます。\n!\n生成AIの業...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "Fable 5.2に「不具合は10件ある」と嘘をついたら話を合わせてこなかった",
+      "url": "https://zenn.dev/marunage_kacho/articles/ai-trial-fable-padding",
+      "site": "Zenn(生成 AI)",
+      "published": "2026-11-24T09:52:29Z",
+      "description": "11月9日に出たClaude Fable 5.2を、手元のClaude Codeで試しました。比べたのは前の版のFable 5.1と、普段使っているOpus 5.5です。\n最初は「上位のモデルだし、不具合をもっと見つけるんだろう」と思っていました。見つけた数はほとんど変わりませんでした。差が出たのは、こちらがわざと嘘をついたときです。\n\n お題\nポイントの獲得記録を月ごとに集計する、自分で書いた架...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "【Vol.35】契約でZDRだったのにデータは残っていた ― メルカリ3,796名分の流出を一次情報で追う",
+      "url": "https://zenn.dev/tech_realinvent/articles/zdr-notion-fireworks-mercari",
+      "site": "Zenn(生成 AI)",
+      "published": "2026-11-24T04:51:53Z",
+      "description": "はじめに\nこんにちは。中小企業で開発CTOをしている現役エンジニアです。\nnoteでも度々投稿していますので、ご興味あれば覗いてください。（https://note.com/masa_developnote）\n11月20日、メルカリが情報流出を2件発表しました。同じ日に、まったく種類の違う発表が2本並んでいます。\n片方は、社内で使っている Notion の AI 機能に打ち込んだ内容が、Notio...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "Claude Codeの /compact でタグ入りのひな形は残る？ 2.1.331でも summary タグ入りは16回とも崩れました",
+      "url": "https://zenn.dev/ojisan_ai_lab/articles/claude-code-compact-xml-tags-20261124",
+      "site": "Zenn(生成 AI)",
+      "published": "2026-11-24T04:47:20Z",
+      "description": "Claude Code v2.1.331 のリリースノートに、次の1行がありました。\n\nFixed /compact and auto-compact sometimes losing part of the conversation summary when the summary quoted certain XML tags\n\n「要約が特定の XML タグを引用したとき、/compact と...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "RAGの「記載なし」は類似度だけでは決められなかった：27問の評価で設計を決めた記録",
+      "url": "https://zenn.dev/takahkok0812/articles/380772548dcce0",
+      "site": "Zenn(生成 AI)",
+      "published": "2026-11-24T04:46:25Z",
+      "description": "社内マニュアルに根拠つきで答えるAIチャット（RAG）を作りました。いちばん気を使ったのは「マニュアルに書いていないことは、推測せずに『記載なし』と答える」ことです。\n最初は「検索の類似度がしきい値より低ければ記載なし」で済むと考えていました。ところが評価用の質問で測ってみると、類似度だけではどこにしきい値を置いても誤りが出ました。この記事では、評価を回しながら設計をどう決めたかをまとめます。\n\n...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "社内AI基盤は「閉域のAzure」か「M365のCopilot」か：定額で使い放題はあるのか、小さな組織の選び方",
+      "url": "https://zenn.dev/shoyomayabot/articles/internal-ai-platform-azure-m365",
+      "site": "Zenn(生成 AI)",
+      "published": "2026-11-24T03:56:43Z",
+      "description": "「社員がAIを安心して使える環境を、社内に用意したい」\nこう考えたとき、最初に悩むのがどこに作るかです。よく比べられるのは、次の2つです。\n\n\nMicrosoft 365のCopilot：すでに使っているTeamsやOfficeの中で使う\n\nAzureで自前の基盤を作る：Azure OpenAIを閉じたネットワークで使い、チャットのボットから呼ぶ\n\nあわせて、よく出る要望があります。「定額で、使い...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "Claude Code を5〜8個並べても迷わないように、自分用のダッシュボードをバイブコーディングで作った",
+      "url": "https://zenn.dev/nexta_/articles/a3ff76a9f98f1c",
+      "site": "Zenn(生成 AI)",
+      "published": "2026-11-24T02:30:05Z",
+      "description": "Claude Code は、VSCode の拡張機能で使うのが好きだ。\nMarkdown が見やすく、コードも Git の変更差分もその場で見られる。\nパネルを横に並べられるので、セッション同士が隠れない。VSCode から離れずに済む。\nただ、セッションを5つほど並べると困ることが出てくる。\n一番困ったのは、パネルの見出しが短くて、どれが何の作業をしているのか一目で分からないことだった。\n一時期...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
     {
       "title": "Seedance 2.5 の動画生成 API を公式価格の12%オフで、curl と Node から叩く",
       "url": "https://zenn.dev/sunsiyuan/articles/1b80544eecdb9c",

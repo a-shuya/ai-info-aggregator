@@ -1,8 +1,158 @@
 {
   "site": "Zenn(Python)",
-  "last_updated": "2026-11-24T06:24:08.402287",
-  "total_articles": 8100,
+  "last_updated": "2026-11-24T18:08:21.468548",
+  "total_articles": 8115,
   "articles": [
+    {
+      "title": "令和8年(2026年)年末調整「178万・136万・197万円の壁」と特定親族特別控除のCSV自動検算実装",
+      "url": "https://zenn.dev/pecopeko/articles/reiwa8-2026-nenmatsu-178-136-197-csv-audit",
+      "site": "Zenn(Python)",
+      "published": "2026-11-24T15:50:21Z",
+      "description": "令和8年（2026年）12月1日施行の令和8年度税制改正により、11月下旬〜12月の令和8年分 年末調整では、昨年（令和7年分）の「123万・160万・188万円」から法定テーブルがもう一段階大きく書き換わっています。\n実務の給与計算システム・自作Excelマクロ・人事労務SaaS連携CSVの現場で今まさに多発するのが、「令和8年11月までは旧源泉徴収税額表のまま天引きし、12月の年末調整で一括し...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "「moov atom not found」は1つの原因ではない：開けないMP4の状態をPythonで見分ける",
+      "url": "https://zenn.dev/arturo/articles/865abc419b5e9d",
+      "site": "Zenn(Python)",
+      "published": "2026-11-24T15:43:52Z",
+      "description": "はじめに\n「動画が開けない」というとき、ffmpeg や ffprobe が出すエラーはたいてい moov atom not found です。ところが、状態のまったく違うファイルを 4 つ用意して ffprobe にかけてみると、どれも同じメッセージになりました。\n$ for f in broken.mp4 cut_end.mp4 zeros.mp4 empty.mp4; do ffprobe ...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "古いサイトの無料診断を作った: 公開ページ1枚から技術構成と移植方針を導く仕組み",
+      "url": "https://zenn.dev/shiroshibamugi/articles/jarvis-kit-legacy-check",
+      "site": "Zenn(Python)",
+      "published": "2026-11-24T15:12:02Z",
+      "description": "どんな困りごとか\n長年運用されてきたウェブサイトを作り直す際、まず「いま何で動いているのか」を把握するのに手間がかかることがあります。ドキュメントが残っていなかったり、開発元がなくなっていたりして、ソースコードやサーバーの中身を見られないケースも少なくありません。一方で、公開されているページだけなら誰でも閲覧できます。そこから使われている技術の目印を拾い、移植の方針や手間の目安を素早くまとめられれ...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "curl・Python requests・Node.jsでHTTP/SOCKS5プロキシを使い分ける：認証付きプロキシ、HTTP_PROXY",
+      "url": "https://zenn.dev/leolinflaship/articles/7019ab6ab4901c",
+      "site": "Zenn(Python)",
+      "published": "2026-11-24T15:06:23Z",
+      "description": "筆者：Leo Lin（シンガポール在住、FlashIP のプロダクトマネージャー）。プロキシサービスを提供する側の人間であることを前提にお読みください。\nプロキシ経由で通信するコードを書いていると、「curl では通るのに Python からだと 407 が返る」「HTTP_PROXY を設定したのに Node.js の fetch が素通りする」「SOCKS5 にしたら社内ドメインだけ名前解決に...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "関係が直線でないとき、回帰線を外側に伸ばした予測に何が起きるか──広告効果の逓減を例にシミュレーションで見る",
+      "url": "https://zenn.dev/haruguri/articles/regression-extrapolation-diminishing",
+      "site": "Zenn(Python)",
+      "published": "2026-11-24T14:13:05Z",
+      "description": "「傾きは1.52、標準誤差は0.06。広告費を200万円にしたときの売上の予測は648万円」。1本目の記事で作った仮想の世界で、売上の増え方を少しずつ小さくしていくと、回帰分析はこういう結果を返します。本当の値は517万円です。同じ世界を1,000回作り直しても、予測が604万円を下回ることはありません。\nシリーズ「前提が崩れると何が起きるか（回帰分析編）」の4本目です。前回は、店舗ごとに売上の水...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "PythonでJSON設定を検証する：重複キーと項目のミスを実行前に見つける",
+      "url": "https://zenn.dev/wenlo/articles/49da2b9c170d62",
+      "site": "Zenn(Python)",
+      "published": "2026-11-24T13:35:38Z",
+      "description": "JSONとして読み込めても、設定として使えるとは限りません。たとえば再試行回数が上限を超えていたり、retries が retry になっていたり、整数の欄に true が入っていたりします。実行しては1件ずつ直す代わりに、設定を使う前にまとめて確認します。\n\n 標準ライブラリだけで実行する\nPythonIDEで validate_json_config.py を作り、次のコードを貼り付けて実行し...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "DuckDBで日次ETLを冪等にする。同じParquetを2回投入しても二重計上しない設計",
+      "url": "https://zenn.dev/chando_ra/articles/duckdb-idempotent-etl",
+      "site": "Zenn(Python)",
+      "published": "2026-11-24T13:13:19Z",
+      "description": "朝、前日分の売上バッチに失敗の通知が来たとします。朝会までに数字を出したい。再実行ボタンに手が伸びますが、ログの最後には「書き込み完了」とあります。処理が本当に落ちたのは、売上を保存する前だったのでしょうか。それとも、保存した後に成功通知を返せなかっただけでしょうか。\n後者なら、同じファイルを追記するだけで、売上件数も金額も倍になります。前日の数字が急に跳ね上がって、ダッシュボードを見た人から聞か...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "取り込み直したら家賃が二重に。「足すだけ」の安全は項目名に乗っていた",
+      "url": "https://zenn.dev/shinsei99/articles/same-rent-two-names",
+      "site": "Zenn(Python)",
+      "published": "2026-11-24T12:32:09Z",
+      "description": "不動産管理の会社で、検針と請求の台帳（SQLite）を作っています。\n部屋ごとの賃料は、経理が持っている Excel の賃料表（レントロール）から取り込みます。\n税込と税抜が混ざっていたのを直すため、前に入れた賃料表をもう一度流しました。\n取り込みは「足すだけ・既にある行は消さない」作りで、同じ区画・同じ項目なら上書きします。\n2回流しても結果は同じ、のはずでした。\n流したあとに数えると、料金の行...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "台本をJSONにして、Python（Pillow＋ffmpeg）で縦型ショート動画を量産する",
+      "url": "https://zenn.dev/akisawa_takashi/articles/dc1b8460b70737",
+      "site": "Zenn(Python)",
+      "published": "2026-11-24T11:24:25Z",
+      "description": "専門学校の IT 系コースで教えています。授業の要点を 30 秒前後の YouTube ショートにして、毎日複数本を予約投稿しています。動画編集ソフトは使わず、台本を JSON で書き、Python で画像と音声を作って ffmpeg でつなぐ仕組みです。\nこの記事では、その設計を短いサンプルに書き直して紹介します。サンプルは記事の最後にまとめて載せた make_short_min.py（約 23...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "ロケット方程式をPythonで解く｜必要な燃料をツィオルコフスキーで計算する",
+      "url": "https://zenn.dev/maru1228/articles/space-rocket-equation-python",
+      "site": "Zenn(Python)",
+      "published": "2026-11-24T09:01:47Z",
+      "description": "!\nこの記事は自サイト ロケット方程式をPythonで解く｜必要な燃料をツィオルコフスキーで計算する の再掲（クロス投稿）です。図をインタラクティブに動かせる版は元記事でどうぞ。\n\n「なぜロケットはあんなに巨大なのに、宇宙に運べる荷物はほんの少しなのか」——その答えは1本の式に凝縮されています。ツィオルコフスキーのロケット方程式です。この記事ではPythonで実装し、実際の数値を入れて「燃料が指数...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "会議の文字起こしSRTをSQLite FTS5で横断検索する：2文字の語・字幕の切れ目・全角数字でつまずいたところ",
+      "url": "https://zenn.dev/tsukimori/articles/0c639e18c65385",
+      "site": "Zenn(Python)",
+      "published": "2026-11-24T08:41:46Z",
+      "description": "開示：月森 しおりです。VoxStudio を使っています。この記事は VoxStudio の支援を受けて書いています（記事末尾に追記あり）。\n\n\n やりたいこと\n定例会議の文字起こしが、毎週 SRT で 1 本ずつたまっていきます。三週間もすると「公開日を第2週に動かす話、最初に出たのはどの回で、誰が言ったんだっけ」という問いが出てきます。\ngrep でも探せますが、欲しいのは行そのものより ど...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "ROS 2 × Gazebo でGPSを使わずに飛ぶドローンをシミュレーションする（6）GNSS を意図的に失わせる",
+      "url": "https://zenn.dev/tetsunabe/articles/drone-sitl-06-gnss-loss",
+      "site": "Zenn(Python)",
+      "published": "2026-11-24T08:23:25Z",
+      "description": "&lt;!-- 下書き: 引用しているコードと数値は https://github.com/hirokiri/drone-sitl の 0180c97 のものです。公開前に最新と見比べてください。\n飛行はすべて headless (GUI なし) で行いました。GUI での見た目は未確認です。\n数値は 1 回ごとの飛行の実測で、IMU のノイズにより毎回変わります。 --&gt;\n\n この記事でや...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "ROS 2 × Gazebo でGPSを使わずに飛ぶドローンをシミュレーションする（5）ROS 2 からウェイポイントを飛ばす",
+      "url": "https://zenn.dev/tetsunabe/articles/drone-sitl-05-waypoint-mission",
+      "site": "Zenn(Python)",
+      "published": "2026-11-24T08:22:34Z",
+      "description": "&lt;!-- 下書き: 引用しているコードは https://github.com/hirokiri/drone-sitl の 9ab81dc の上に載せた未コミットの作業ツリーのものです。\nコミットしたらハッシュを書き換え、公開前に最新と見比べてください。\n飛行の確認はすべて headless (GUI なし) で行いました。GUI での見た目は未確認です。 --&gt;\n\n この記事でやるこ...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "記録から分かること、分からないこと——見えない状態をどう確かめるか【第7回】",
+      "url": "https://zenn.dev/okamasaya/articles/chinchiro-bayes-07-validation",
+      "site": "Zenn(Python)",
+      "published": "2026-11-24T08:02:41Z",
+      "description": "三好の記録から、相手の使い方を考える。\nサイコロの仕掛けを直接見なくても、出目と局面を対応させれば、考えられる説明を比べられました。これは、観測できる記録から、直接には見えないものを推定する一つの形です。\nただ、計算で高い確率が出たことと、現実の仕組みを正しく言い当てたことは、同じではありません。\n第6回では、仮説や判定規則を固定したモデルの下で、誤警報の確率を評価しました。シリーズの最後は、その...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "discord.py v2.x スラッシュコマンド設計パターン ─ Cog分割・Autocomplete・Modalを体系的に実装する",
+      "url": "https://zenn.dev/correlate_dev/articles/discord-slash-commands-cloudrun-bot",
+      "site": "Zenn(Python)",
+      "published": "2026-11-24T07:18:23Z",
+      "description": "はじめに\nDiscord Botの開発において、スラッシュコマンドはユーザー体験の中心を担います。入力補完・型チェック・ヘルプの自動生成など、従来のプレフィックスコマンドにはない利便性があります。\nしかし、discord.py v2.x で導入された app_commands モジュールは、v1.x までの commands.Bot と設計が大きく異なります。コマンドツリー（CommandTree...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
     {
       "title": "FastAPI × Strands Agents で作る LLM RSS 要約 API の設計と実践知見",
       "url": "https://zenn.dev/atsupi/articles/63849471d489ec",
