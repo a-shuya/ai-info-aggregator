@@ -1,8 +1,28 @@
 {
   "site": "Zenn(LLM)",
-  "last_updated": "2026-11-24T18:08:21.468548",
-  "total_articles": 7662,
+  "last_updated": "2026-11-25T02:24:53.670916",
+  "total_articles": 7669,
   "articles": [
+    {
+      "title": "プロンプトインジェクションと機密漏洩を“構造”で防ぎ、バイト単位で証明する：ローカルLLMの2系統デコード kestrom ifc",
+      "url": "https://zenn.dev/caphtech/articles/kestrom-ifc-twin-track",
+      "site": "Zenn(LLM)",
+      "published": "2026-11-24T19:49:05Z",
+      "description": "この記事は個人（と会社）の実験と実装の記録です。モデルは Qwen3.5-0.8B と Qwen3.5-4B（いずれも Apache License 2.0）、検証の一部で Gemma 4 E4B を使いました。実行環境は Apple Silicon Mac（MLX 0.31.1）です。\n公開している道具 Kestrom に、ローカル LLM のデコード時に 情報流制御（Information F...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "コード改修用のハーネスを一から作ってみた（構文解析 + グラフ検索 + RLM）",
+      "url": "https://zenn.dev/yumefuku/articles/codetwine-loom-agent",
+      "site": "Zenn(LLM)",
+      "published": "2026-11-24T18:59:22Z",
+      "description": "はじめに\nこの記事は自作したコード改修用エージェントのハーネスを解説する記事となります。\nなぜあえて自作してみたのかというと、Claude Codeなどのコーディングエージェントで作成した大量のコードや設計書が残っていない大規模リポジトリに対して、既存のコーディングエージェントでそのまま改修を頼むと対象ファイルの特定が荒くなってしまう（漏れの発生など）のではないかという考えがあったためです。\nこの...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
     {
       "title": "DolphinBench で Kagura Memory Cloud を試験して、結果を提出した",
       "url": "https://zenn.dev/kaguraai/articles/dolphinbench-kagura-first-trial",
@@ -24,11 +44,61 @@
       "image_url": ""
     },
     {
+      "title": "「100行のAIエージェント」mini-swe-agentにローカルLLMで1行のバグを直させたら、27回中4回しか直らなかった",
+      "url": "https://zenn.dev/matsushima_a/articles/day-056-mini-swe-agent-local-llm-bugfix",
+      "site": "Zenn(LLM)",
+      "published": "2026-11-24T14:38:06Z",
+      "description": "これは何を試した記事か\nSWE-benchやSWE-agentを作ったチームが公開しているmini-swe-agent(MIT)を、手元のOllamaで動くローカルLLMにつないで試した記事である。\nmini-swe-agentは、ツールをbashだけに絞り、LLMの返答に含まれるコマンドを実行して結果を会話に足していくだけの、とても小さなコーディングエージェントだ。\nREADMEは「エージェント...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "バカでもわかるMCP｜AIの「USB-C」の仕組み・APIとの違い・安全の注意点",
+      "url": "https://zenn.dev/nishi0001/articles/bakademo-wakaru-mcp-usb-c-for-ai",
+      "site": "Zenn(LLM)",
+      "published": "2026-11-24T14:22:23Z",
+      "description": "「MCPってよく聞くけど、何のこと？」と聞かれて、言葉に詰まったことはありませんか。\nAIにメモや予定表、データベースを触らせたいとき、以前は道具ごとに専用の配線を手作りしていました。\nタイトルの「バカ」は、読者のことではありません。前提知識がゼロの人（勘違いを全部やりそうな、私自身を含む）のことです。\nひとことで言うと、MCPはAIが読める道具の「超すごい説明書」を、共通の差し込み口で渡す決まり...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "「OpenAI・Anthropic互換」を鵜呑みにしない — さくらのAI Engine を公式SDKで12項目検証した",
+      "url": "https://zenn.dev/taketake36/articles/9a093b50571c83",
+      "site": "Zenn(LLM)",
+      "published": "2026-11-24T14:02:07Z",
+      "description": "!\nこの記事は Zennfes Autumn 2026「さくらのAIチャレンジ祭り」 への投稿です。\n\n\n 確かめたかったこと\nさくらのAI Engine は「OpenAI・Anthropic互換API」を謳っています。無償プランなら月3,000リクエストまで無料です。\nただ、「互換」という言葉は幅があります。\n\nURLの形が似ているだけなのか\n\n公式SDKのコードを1行も変えずに、base_ur...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
       "title": "RunPod Serverlessの使い方（OpenAI互換API）",
       "url": "https://zenn.dev/studysun/articles/729c3bade57215",
       "site": "Zenn(LLM)",
       "published": "2026-11-24T13:30:17Z",
       "description": "RunPod Serverlessは、リクエストがあるときだけGPUワーカーを起動して、LLMの推論APIを公開できる仕組みです。\nこの記事では、公式のvLLMワーカーを使い、OpenAI互換のチャットAPIを作る手順を説明します。\nできあがると、既存のOpenAIクライアントや、対応ツールから、自分で選んだモデルを呼べます。\n※紹介リンクを含みます。\nhttps://runpod.io?ref=...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "ついに「無名のテスト環境」にも攻撃AIが来るようになった？──おとりサーバーで初観測した自動攻撃の実態",
+      "url": "https://zenn.dev/null_teck/articles/first-wild-agentic-mcp-attack-honeypot",
+      "site": "Zenn(LLM)",
+      "published": "2026-11-24T12:38:55Z",
+      "description": "!\n先に結論を言います\nこれまで「企業ドメインすらない無名のテスト環境（野良サーバー）」には、コストが見合わないため わざわざ攻撃AIは来ないと考えていました。\nしかし2026年11月下旬、1ヶ月半にわたって運用していたおとりサーバー（ハニーポット）に、 初めて「AIを使った自動攻撃」が到来しました。\n今回のログから見えた現実（3つのポイント）：\n\n\nなぜ無名サーバーにも攻撃AIが来たのか（安上が...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "「LLM本体はテキスト生成しかできない」——AIエージェントの正体『ハーネス』の仕組みを図解する",
+      "url": "https://zenn.dev/inemuri/articles/llm-harness-vs-model-explained",
+      "site": "Zenn(LLM)",
+      "published": "2026-11-24T12:06:32Z",
+      "description": "ChatGPTやClaudeの画面で「Webを検索してくれた」「Pythonを実行してくれた」「ファイルを編集してくれた」という体験をすると、LLM（大規模言語モデル）本体がパソコンやブラウザを直接操作しているように見えます。\nしかし技術的な実態はまったく異なります。\n\nLLM本体は「入力されたテキストの続きを生成する」ことしかできません。\n検索も、ファイル読み書きも、コード実行も、時計を見ること...",
       "category": "AI・技術",
       "rss_category": "",
       "image_url": ""
