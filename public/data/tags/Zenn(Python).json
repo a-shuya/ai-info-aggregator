@@ -1,8 +1,168 @@
 {
   "site": "Zenn(Python)",
-  "last_updated": "2026-11-25T11:37:15.745593",
-  "total_articles": 8125,
+  "last_updated": "2026-11-25T20:39:43.608272",
+  "total_articles": 8141,
   "articles": [
+    {
+      "title": "日本語の決算PDFをRAGに入れたら表が崩れた。外部に送らず手元のLLMだけで直すまでの記録",
+      "url": "https://zenn.dev/okuriya/articles/5fd8016fff72f7",
+      "site": "Zenn(Python)",
+      "published": "2026-11-25T11:52:36Z",
+      "description": "決算資料を RAG(社内文書をAIに検索・要約させる仕組み)に入れて、「この会社の自己資本比率は?」と聞けるようにしようとしました。ところが、肝心の表がこう崩れて出てきました。\n8年12月期中間期 7年12月期 | 百万円 7,095 - | 百万円 2,149 - | ％ - -\n本来は「総資産 / 純資産 / 自己資本比率」を列に持つ、見出し行とデータ2行の計3行の表です。それが1行に潰れ、数...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "同棲用・個人用が兼用できる自分のための家計簿アプリ作ってみる〜#2 環境構築編〜",
+      "url": "https://zenn.dev/kakedasidandan/articles/1b805480e3dd3e",
+      "site": "Zenn(Python)",
+      "published": "2026-11-25T11:30:05Z",
+      "description": "はじめに\n前回は、画面デザインを作成していきました！\n今回は、開発していくための環境を整えていこうと思います！\n\n 選定技術\n\n 基盤：　OrbStack\n\nMac上で稼働する。Dockerコンテナを動かすための実行基盤。\nサードパーティが作成したDocker Desktop代替アプリ。裏側の実装が異なるだけでほとんどDockerと同じように使うことができる。\nDocker Desktopだと裏で...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "開始時期がずれる差の差で、新しい推定を「信じてよい場面」と「外れる場面」をどう切り分けたか：5つの場面で切り分けるシミュレーション設計",
+      "url": "https://zenn.dev/takayuki0127/articles/8dfbaf94646fce",
+      "site": "Zenn(Python)",
+      "published": "2026-11-25T11:28:57Z",
+      "description": "問い\n店舗ごとに施策を入れた月が違う、県ごとに制度が始まった年が違う。こういう「処置の開始時期がずれる」データで差の差（DID）を使うとき、昔からの二方向固定効果（TWFE）の回帰をやめて新しい推定に切り替えれば、それで安心してよいのか。\n2021年前後の論文は、TWFE が効果の時間変化に弱いことを示し、直し方を出しました。ただ、論文を読むだけでは「自分の仕事のデータで、どの直し方がどの穴をふさ...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "同じ試料を5回測った平均とばらつきをPythonで自動集計する｜繰り返し測定の平均・標準偏差とエラーバー",
+      "url": "https://zenn.dev/hathi0808/articles/ch3-replicates",
+      "site": "Zenn(Python)",
+      "published": "2026-11-25T11:11:57Z",
+      "description": "同じ試料を5回測って、平均と標準偏差を出す。地味ですが、実験データの信頼性を支える作業です。試料が3つ、5つ、10個と増えたとき、Excelではファイルを開いてコピーする回数も増えていきます。\nPythonなら、試料ごとのCSVをまとめて読み込み、検量線で濃度に換算して、平均・標準偏差の表とエラーバー付きグラフまでを自動で作れます。この記事では、繰り返し測定のまとめ方を紹介します。\n\n この記事で...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "ローカルLLMで1人作業通話っぽいことをやってみた",
+      "url": "https://zenn.dev/miko/articles/da32aaaa3e1323",
+      "site": "Zenn(Python)",
+      "published": "2026-11-25T11:01:42Z",
+      "description": "きっかけ\n以前から、音声で話した内容をブログ記事にできたらいいなと思っていました。\n最近はポッドキャストにも興味があり、話しながら文章のネタを出せるような環境があったら便利そうだな、と考えたのが今回の開発のきっかけです。\n最初はテキストベースのアプリを作ろうとも考えたのですが、せっかくなら「一人で作業通話をしているような感覚」で使えるものにしたいと思いました。\nChatGPTのボイス機能も試してみ...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "WhatsAppグループ名簿CSVを、電話番号を壊さず検証する",
+      "url": "https://zenn.dev/henriili2369/articles/e5fa918162f908",
+      "site": "Zenn(Python)",
+      "published": "2026-11-25T10:29:52Z",
+      "description": "グループメンバーの電話番号を CSV に落としたあと、いきなり本番の表計算や業務システムへ渡すのは早い。電話番号は識別子であって、加算する数値ではない。国番号の + を残したい気持ちと、表計算ソフトが先頭の = や +、-、@ を数式として扱う可能性があることは、同時に成立する。\n本稿は、自分が書き出した（または同じレイアウトだと分かっている）CSV を、読み取り専用で点検するための手順である。ネ...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "コラッツ逆木は何分木なのか（Part 1）― 逆向きに木を作る",
+      "url": "https://zenn.dev/march26/articles/a01a82ab57ac8d",
+      "site": "Zenn(Python)",
+      "published": "2026-11-25T09:10:48Z",
+      "description": "はじめに\n数学でよく知られた未解決問題にコラッツ予想がある。\n任意の自然数からスタートして、次の操作を繰り返す。\n\nその数が偶数なら、2で割る\nその数が奇数なら、3倍して1を足す\n\nどんな自然数でも、上の操作を繰り返すと、最後は「1」に到達する、という予想だ。\n\n例 …… 3 → 10 → 5 → 16 → 8 → 4 → 2 → 1\n\n非常に広い範囲で計算的には確かめられているが、一般の証明はま...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "【Python】閉じた玩具宇宙で、重力だけ・時間の矢・循環を「示唆」として眺める",
+      "url": "https://zenn.dev/cocoa3j21/articles/2fc28f602b0a6c",
+      "site": "Zenn(Python)",
+      "published": "2026-11-25T08:45:46Z",
+      "description": "この記事で言えること: 2 次元・軟化ニュートン・散逸なしの玩具宇宙で、保存量・相関・巻き戻し誤差を測った結果の示唆です。\n言わないこと: 宇宙論の証明、「宇宙の正体が判明した」、現実の宇宙にそのまま当てはまる断定。[1]\n\n逆円周率ノイズのマトリクス実験（前編：逆πは本当に SA を救うか）とは別系統で、「閉じた系で重力だけ動かすと何が見えるか」 を数値で追いました。AI エージェントとスクリプ...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "AutoCAD に入る前に：間取り DXF の単位・レイヤー・開口部をコードで検査する",
+      "url": "https://zenn.dev/tsukinoe/articles/aff7a5597fd399",
+      "site": "Zenn(Python)",
+      "published": "2026-11-25T08:18:41Z",
+      "description": "「AutoCAD で間取り図を作りたい」と調べると、まず操作コマンドの説明が出てきます。しかし、最初に間違えると後で修正が大きくなるのは、線の引き方より単位、入力寸法の出所、開口部の扱い、レイヤーの意味です。6000 と入力した線が 6000 mm なのか 6000 cm なのか、窓の記号が壁の上に置かれただけなのか、本当に壁が空いているのか。表示が整っていても、この違いは作図の目的を変えます。\n...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "Pythonで市ごと・職種ごとのページをまとめて作り、静的サイトに置く",
+      "url": "https://zenn.dev/hisyou_system/articles/6f8bf754821e57",
+      "site": "Zenn(Python)",
+      "published": "2026-11-25T07:39:01Z",
+      "description": "前回は、厚生労働省の賃金統計（Excel）をpandasで読んで、ITエンジニアの年収の目安を出しました。その集計は、ブラウザだけで動く小さな診断ツールにして公開しています。\nツールは1ページで完結していますが、検索から来る人にとっては「柏市の老人ホームの月額」「30代のエンジニアの年収」のように、条件ごとのページがあったほうが探しやすくなります。そこで、ツールと同じデータから、条件ごとの解説ペー...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "RA6M5 に USB シリアルだけで書き込む（TrustZone の落とし穴）",
+      "url": "https://zenn.dev/remote_sw/articles/a717e7d498a6b9",
+      "site": "Zenn(Python)",
+      "published": "2026-11-25T07:04:12Z",
+      "description": "はじめに\nルネサスの RA6M5（Arm Cortex-M33、200MHz）を載せた当社の基板に、J-Link を使わず、USB シリアル（USB-UART 変換 IC）だけでファームウェアを書き込む仕組みを作りました。\nRA ファミリには、マスク ROM にブートローダが入っています。MD 端子を Low にしてリセットすると、UART（SCI）か USB からフラッシュを読み書きできます。普...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "人と AI のための無料の電力系統 EMT シミュレータ「OpenKeito」を作った理由",
+      "url": "https://zenn.dev/yutanakamura/articles/openkeito-introduction",
+      "site": "Zenn(Python)",
+      "published": "2026-11-25T06:11:59Z",
+      "description": "電力系統の瞬時値を計算するソフト「OpenKeito（Keito は「系統」、英語の power system）」を公開しました。瞬時値の計算は EMT（electromagnetic transient、電磁過渡現象）解析とも呼ばれ、電圧と電流の波形を細かい時間刻みで計算します。事故電流、変圧器の励磁突入電流、インバータの制御の応答などを調べるときに使う解析です。\nこの記事では、まずなぜ作ったの...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "かなを韓国の公式表記法でハングルにする — 「けんた」はなぜ「겐타」なのか",
+      "url": "https://zenn.dev/ireum/articles/cd058d55de5131",
+      "site": "Zenn(Python)",
+      "published": "2026-11-25T05:48:48Z",
+      "description": "!\n私は日本語ができません。この記事は韓国語で書いたものを AI で日本語に翻訳して載せています。不自然な表現があれば、ご容赦ください。\n\n韓国のソウルで、外国の人が自分の名前を韓国語で知ることができるウェブサービス「Ireum」を作っています。先日、日本語版を公開しました。その中で一番手間がかかった「かな → ハングル」の変換と、名前の漢字を韓国語で読む処理について書きます。\n\n 「なんとなく」...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "バックテストで ETF に勝った戦略を「選んで使う」と負けた話（日本株・14通り＋ウォークフォワード）",
+      "url": "https://zenn.dev/cosmoships/articles/backtest-14-strategies-walk-forward",
+      "site": "Zenn(Python)",
+      "published": "2026-11-25T04:51:15Z",
+      "description": "!\n過去のデータでのシミュレーションの結果です。将来の成績を約束するものではなく、特定の銘柄や売買を勧めるものでも、投資の助言でもありません。\n\n株価の予測・自動売買をシミュレーションだけで試している実験の記録です。今回は、移動平均・モメンタム・リバーサルといった単純な戦略を14通り、手数料とスリッページを引いたうえで「TOPIX 連動の ETF を買って持つだけ」と比べました。\n結果を先に書くと...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "HTTPSの証明書は誰でも読める。攻撃者のサーバーも、あなたのサーバーも",
+      "url": "https://zenn.dev/12ban/articles/attack-infra-hunting-03-tls-certificates",
+      "site": "Zenn(Python)",
+      "published": "2026-11-25T04:24:29Z",
+      "description": "openssl と Python でサーバーの証明書と TLS のレスポンスを読み、その値から攻撃者のサーバーを探す\n!\nこの記事の3行まとめ\n\nHTTPS は暗号化されていても、自分で接続すれば、サーバーの証明書と TLS のレスポンスは読める。そこには作った人やツールの作り方が残る\nツールにしかない値なら、攻撃者のサーバーがまとめて見つかる。Cobalt Strike の固定の証明書を出すサー...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "プランク長の 0 番地から宇宙の地平面の 55 番地まで",
+      "url": "https://zenn.dev/morc_b13/articles/b8bb06e4367023",
+      "site": "Zenn(Python)",
+      "published": "2026-11-25T04:06:43Z",
+      "description": "第1章 13 のノードでは双曲線が裏返る ── 法 13 のフィボナッチ数と、一葉・二葉の入れ替わり&quot;\n宇宙編の一本目です。梯子を宇宙の側へ登る前に、番地と番地の継ぎ目（ノード）で何が起きるのかを、整数だけで確かめておきます。\nこの記事の内容は、整数と足し算と比較だけで再現できます。観測値も浮動小数も使いません。\n!\nこの記事では、記述を二つに分けて書きます。\n\n\n計算：スクリプトが出し...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
     {
       "title": "CSVの列がずれる原因と見分け方（区切り文字・引用符・文字コード）",
       "url": "https://zenn.dev/cutlet_of_pork/articles/csv-column-shift-causes-diagnosis",
