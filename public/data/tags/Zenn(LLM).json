@@ -1,8 +1,168 @@
 {
   "site": "Zenn(LLM)",
-  "last_updated": "2026-11-25T02:24:53.670916",
-  "total_articles": 7669,
+  "last_updated": "2026-11-25T11:37:15.745593",
+  "total_articles": 7684,
   "articles": [
+    {
+      "title": "Continue の Obsidian 連携をLocal REST API に移行して検索速度とAPIコストを劇的に改善する",
+      "url": "https://zenn.dev/pve_echo/articles/20261124_obsidian-mcp-local-rest-api",
+      "site": "Zenn(LLM)",
+      "published": "2026-11-25T10:58:32Z",
+      "description": "## 結論（解決策）\nAIエディタ（Continue 等）から Obsidian のノートを検索・参照する際は、汎用的な @modelcontextprotocol/server-filesystem ではなく、Obsidian のコミュニティプラグイン 「Local REST API with MCP」 を導入し、mcp-remote 経由で直接 MCP サーバーへ接続する構成へ移行すべきです。...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "重みが -1・0・+1 だけの 27B モデル「Ternary Bonsai 2.5」を、Mac の llama.cpp で動かしてみた",
+      "url": "https://zenn.dev/lecto/articles/bc5f934f14c2ab",
+      "site": "Zenn(LLM)",
+      "published": "2026-11-25T10:00:06Z",
+      "description": "はじめに\n2026 年 11 月 24 日、PrismML が Ternary Bonsai 2.5 27B を公開しました。Qwen3.8 の 27B をもとに、重みをすべて -1・0・+1 の 3 つの値 (ternary) にしたモデルです。FP16 だと 53.8 GB あるモデルが、5.93 GB になっています。AI エージェント向け (道具を使う・プログラムを直す) の改良版で、ライ...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "【日本語SWE】サンドボックスにAIエージェントを放って、RL / ベンチマーク用タスクを自動生成してみた",
+      "url": "https://zenn.dev/holy_fox/articles/e02f9bd12f6898",
+      "site": "Zenn(LLM)",
+      "published": "2026-11-25T09:09:59Z",
+      "description": "はじめに\n今回、サンドボックス環境の中で AI エージェントを動かし、日本語のソフトウェアエンジニアリング（SWE）向けタスクを自動作成する取り組みを行いました。\n実際に試したところ、このやり方でうまくいきました。まずはテストバージョンとして10問を作成することができたので、強化版をベンチマークおよび強化学習（RL）用のタスクセットとして公開する予定です。\n今回の記事では日本語での SWE 性能を...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "手元のAIデータ分析環境、そのまま「国内完結・円建て」にできる？ さくらのAI Engine × 多モデル自動ルーティングを徹底検証してみた",
+      "url": "https://zenn.dev/ruriopcode/articles/95733de014bb85",
+      "site": "Zenn(LLM)",
+      "published": "2026-11-25T08:05:15Z",
+      "description": "1. はじめに：PoCから本番データへの移行で止まりやすい点\n普段、データ分析基盤の構築や分析実務に携わっていると、Python（OpenAI SDK / Jupyter）や DuckDB、さらには AIエージェントを組み合わせたワークフローによって、分析の試行速度が大きく上がっていることを実感します。\nところが、「これをそのままチームの本番分析業務に入れよう」と動いた途端、同じところで止まるケー...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "quantGAIクオンツプラットフォームの更新日記-2026-11-24",
+      "url": "https://zenn.dev/gzh1994/articles/quantg-diary-20261124",
+      "site": "Zenn(LLM)",
+      "published": "2026-11-25T07:11:28Z",
+      "description": "QuantG は日本株（買いのみ）向けに自社開発しているクオンツ基盤で、LLM が因子コードを書き、システムが検証します。11 月 24 日は開発ブランチに 35 回コミット（実質変更 27 回、未マージ・未稼働）し、実データでマイニング工程を点検しました。最大の収穫は良い因子の発見ではなく、旧物差しが純粋なノイズにだまされると突き止め、その場で作り直したことです。\n\n 旧物差しがノイズにだまされ...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "Programmatic Tool Calling の使い分け:Claude のツール3機能の違いを整理",
+      "url": "https://zenn.dev/kmn/articles/9fd61b3b6d8854",
+      "site": "Zenn(LLM)",
+      "published": "2026-11-25T07:06:15Z",
+      "description": "この記事は、筆者の note 記事をもとに AI（Claude）が開発者向けに書き直しました。\n\nこの記事では、Claude のデベロッパープラットフォームで発表された3つのツール関連機能(Tool Search / Tool Use Examples / Programmatic Tool Calling)の違いを整理します。読み終えると、自分のエージェントで「どの処理をコードに任せ、どの処理を...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "AI Agentを用いたSCP観測日誌ベンチマークの自動作成（と検証）",
+      "url": "https://zenn.dev/holy_fox/articles/07d9a0537db3bf",
+      "site": "Zenn(LLM)",
+      "published": "2026-11-25T07:03:21Z",
+      "description": "はじめに\nAIが開発や業務のさまざまな場面で使われるようになり、モデルを選ぶためのベンチマークがこれまで以上に求められています。どのタスクでどのモデルがどれくらい通用するのか、そしてどれが最もコストパフォーマンスに優れているのかを見極める必要が出てきたからです。\n無条件に最も性能の高いモデルを使えば、タスクの成功率は上がります。ただ、AIを長期的に使い続けて処理量が増えていくと、1回あたりの推論コ...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "AIで型番データベースを作るとき、抽出より時間をかけた「通さない仕組み」",
+      "url": "https://zenn.dev/ai_business_log/articles/04b66ca6d84ec1",
+      "site": "Zenn(LLM)",
+      "published": "2026-11-25T06:48:06Z",
+      "description": "家電の型番が分かっても、対応するリモコンや交換用のフィルターがすぐ見つかるとは限りません。メーカーの資料を開き、型番を探し、販売ページの説明と照らす。似た品番が並ぶと、見つけた情報が本当に手元の製品に合うのか、判断に迷います。\n私は、リモコンの型番から対応する本体を調べる「リモネット」と、本体の型番からフィルターや紙パックの品番を調べる「FIL-NET」を運営しています。メーカーの資料をAIに読ま...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "OWASP LLM Top 10（2026年版）をAWSでの具体的な対策に置き換えてみた",
+      "url": "https://zenn.dev/visionarray/articles/41bbd19484529d",
+      "site": "Zenn(LLM)",
+      "published": "2026-11-25T06:46:36Z",
+      "description": "OWASP LLM Top 10の大半はAWSのマネージドサービスの設定で対策できます。ただし、プロンプトインジェクションと過剰な権限は設定だけでは防げないので、「設計」で対策する必要があります。\nOWASPの生成AIセキュリティプロジェクトが2026年8月にLLM Top 10の2026年版を公開しました。要約記事はすでにたくさんあるので、この記事では一歩進めて「AWSでLLMアプリを作るなら、...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "Tech Watch 2026-11-25: 行動を検証する境界",
+      "url": "https://zenn.dev/laiken/articles/20261125-tech-watch",
+      "site": "Zenn(LLM)",
+      "published": "2026-11-25T05:25:11Z",
+      "description": "AIが書きました🤖\nこの記事は、AIが書いたものをAIがレビューしてから公開しています。\nL: エージェントに仕事を任せるとき、僕は返答の賢さより、実際に何を呼び出せるかが気になる。秘密を外へ送ろうとした時点で止められるなら、モデルを完全に信じる必要はないのかもしれない。今日の材料を、その境界から読んでみたい。\n\n 今日の 10 件\n\n\nClaude Code 2.1.331\nClaude Cod...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "AIエージェントのMemory設計 ― 会話履歴・業務データ・長期Memoryの使い分け",
+      "url": "https://zenn.dev/taru_neko/articles/ai-agent-memory-architecture-2026",
+      "site": "Zenn(LLM)",
+      "published": "2026-11-25T05:23:27Z",
+      "description": "AIエージェントでは、過去の会話を記憶し、次の会話に活用するMemoryという仕組みが使われる。\n一方、従来のWebアプリケーションでも、セッション管理や業務DBによって情報を保持してきた。AIエージェントだからといって、専用のMemory機構が必要とは限らない。\n本記事では、社内の経費精算システムを例に、短期・長期Memoryの構成と既存の仕組みとの使い分けを整理する。さらに、何を記憶するか、情...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "RTX 5090を買ったからGPUサーバーを構築していくぞ その1（Ubuntu Server・vLLM編）",
+      "url": "https://zenn.dev/luxiar/articles/7eff2306ffb0c6",
+      "site": "Zenn(LLM)",
+      "published": "2026-11-25T05:20:49Z",
+      "description": "NVIDIA GeForce RTX 5090を購入したので、ローカルでLLMを動かすためのGPUサーバーを構築します。\n今回は\n\nUbuntu Serverをインストール\nNVIDIAのGPUドライバーとvLLMをセットアップ\nローカルLLMを動かす\n\nで進めます。\n\n Ubuntu Serverのインストール\n\n インストールUSBの作成\nUbuntu Server公式サイトから、Ubuntu...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "過剰思考を抑えつつ品質を維持しよう！ “Swift化”でQwen3.8の無駄な思考を削ったモデル、Swift-Qwen3.8-27B",
+      "url": "https://zenn.dev/highreso/articles/856c3ebf521a66",
+      "site": "Zenn(LLM)",
+      "published": "2026-11-25T05:07:10Z",
+      "description": "思考能力を減らして素早く答えを出すモデル\n最近すっかり人気になったローカルLLMの星とも言えるモデル、アリババグループが開発したQwen3.8-27Bですが、ちょっと困ったポイントがあるのもまた事実です。それは「推論に時間がかかりすぎる」こと。\n元々、推論に時間がかかりすぎるというのは、元々DeepSeekシリーズの持つ特性で、仕組み上採用した内容に多くのDeepSeekの技術が入っていることが原...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "ベンチの採点ミスを直したら成績表が動いた — SciCode 欠陥台帳と修正版での再採点",
+      "url": "https://zenn.dev/jinno_ai/articles/scicode-tas-defect-ledger-shared47",
+      "site": "Zenn(LLM)",
+      "published": "2026-11-25T04:33:41Z",
+      "description": "要するに\nSciCode（科学者が選定した現実的な研究課題のコード生成ベンチ）を使い倒していたら、ベンチ側の欠陥が成績に効いていることに気づきました。欠陥を台帳化し、「凍結原版（original）→ 上流修正版（verified）→ さらに3欠陥＋採点ハーネスを直した派生版（tas）」の3段で同一条件を採り直すと、採点ミス分だけ成績表が動くことが定量化できました。ベンチの点数を見るときは「そのベン...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "エンジニアが指揮し AI で速くする開発の進め方を、4 回作り直した理由",
+      "url": "https://zenn.dev/pri_system_dev/articles/ai-sprint-process-rebuilt-4-times",
+      "site": "Zenn(LLM)",
+      "published": "2026-11-25T03:15:08Z",
+      "description": "はじめに\n生成 AI を活用して PoC（試作品）を短期間で開発する社内のサービス「AI SPRINT」では、2 つの前提を置いています。要件定義・設計・テスト設計はすべてエンジニアが指揮し、AI は速くできる作業にだけ使い、成果物の責任はエンジニアが持つこと。そして、その前提の上で、日々、最適な方法を考えて手法を更新し続けることです。\nこの前提のもとで、開発の進め方を 2026 年 3 月から ...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "日本語NLPのリソース1,581件を「探して・比べて・試せる」サイトを公開しました",
+      "url": "https://zenn.dev/taishii/articles/3ccf1605973a61",
+      "site": "Zenn(LLM)",
+      "published": "2026-11-25T03:01:05Z",
+      "description": "サイトの統計情報ページ。 GitHub リポジトリの作成年ごとの件数と、PyPI での利用状況を掲載しています\n「RAG を作るために日本語の embedding モデルを探しているけれど、ruri・PLaMo-Embedding・Sentence-BERT のどれを使えばいいんだろう？」\n日本語 NLP のモデルやツールを選ぶとき、こう迷ったことはありませんか？RAG の検索に使う embedd...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
     {
       "title": "プロンプトインジェクションと機密漏洩を“構造”で防ぎ、バイト単位で証明する：ローカルLLMの2系統デコード kestrom ifc",
       "url": "https://zenn.dev/caphtech/articles/kestrom-ifc-twin-track",
@@ -39,16 +199,6 @@
       "site": "Zenn(LLM)",
       "published": "2026-11-24T15:10:50Z",
       "description": "MCP（Model Context Protocol）のサーバーは、ここ1年ほどで一気に増えました。\nその多くは、\nAIが外部のデータを取ってくる\nAIが外部のサービスを操作する\nためのものです。\n今回作ったMCPは逆の向きです。\n\nAIが人間に質問して、その人の判断や理由を取得する\n\nためのMCPです。\nこれまでの記事で紹介してきた Continuous Reasoning Acquisitio...",
-      "category": "AI・技術",
-      "rss_category": "",
-      "image_url": ""
-    },
-    {
-      "title": "「100行のAIエージェント」mini-swe-agentにローカルLLMで1行のバグを直させたら、27回中4回しか直らなかった",
-      "url": "https://zenn.dev/matsushima_a/articles/day-056-mini-swe-agent-local-llm-bugfix",
-      "site": "Zenn(LLM)",
-      "published": "2026-11-24T14:38:06Z",
-      "description": "これは何を試した記事か\nSWE-benchやSWE-agentを作ったチームが公開しているmini-swe-agent(MIT)を、手元のOllamaで動くローカルLLMにつないで試した記事である。\nmini-swe-agentは、ツールをbashだけに絞り、LLMの返答に含まれるコマンドを実行して結果を会話に足していくだけの、とても小さなコーディングエージェントだ。\nREADMEは「エージェント...",
       "category": "AI・技術",
       "rss_category": "",
       "image_url": ""
