@@ -1,14 +1,54 @@
 {
   "site": "Zenn(Google Cloud)",
-  "last_updated": "2026-11-26T12:30:45.080502",
-  "total_articles": 2155,
+  "last_updated": "2026-11-26T21:53:09.028247",
+  "total_articles": 2159,
   "articles": [
+    {
+      "title": "Google Cloud TTS Chirp 3: HDの日本語30声を聞き比べた ― 動画ナレーションへの導入検証",
+      "url": "https://zenn.dev/infra_chaya/articles/google-cloud-tts-chirp3-hd-review",
+      "site": "Zenn(Google Cloud)",
+      "published": "2026-11-26T10:11:37Z",
+      "description": "YouTubeチャンネルのナレーション用に、Google Cloud Text-to-Speech（以下、Cloud TTS）の最新モデル「Chirp 3: HD」を実際にセットアップし、日本語の声を聞き比べました。結論を先に置くと、日本語だけで30声から選べて、週1本の動画ナレーション程度の分量なら月100万文字の無料枠に収まるため、筆者の用途では十分に実用圏でした。一方で、セットアップではAP...",
+      "category": "クラウド",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "電力需要の予測はどれくらい当たる？ ― OCCTO公開データで作る予実パイプライン（BigQuery × dbt × Terraform）",
+      "url": "https://zenn.dev/shimodata/articles/kyushu-power-forecast-pipeline",
+      "site": "Zenn(Google Cloud)",
+      "published": "2026-11-26T07:37:55Z",
+      "description": "電力広域的運営推進機関（OCCTO）が公表している 電力需要の「2日前の予測」と「当日の最終値」 を毎朝自動で取り込み、予測がどれだけ当たったか（予実）を分析できるデータ基盤を Google Cloud 上に作りました。可視化は Looker Studio です。 ダッシュボードで答えたい問いは次の3つです。 九州の電力需要の予測は、どれくらい当たっているか どんなときに外れるか 外れた日に何が起...",
+      "category": "クラウド",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "「安全な経路」の判定から学ぶ、Unix ソケット経由の Cloud SQL 認証エラー",
+      "url": "https://zenn.dev/rescuenow/articles/0e7f5fc4e46be3",
+      "site": "Zenn(Google Cloud)",
+      "published": "2026-11-26T05:08:12Z",
+      "description": "MySQL の認証プラグインを mysql_native_password から caching_sha2_password に移行したところ、Cloud Run の組み込み Cloud SQL 接続（中身は Auth Proxy の Unix ソケット）で繋いでいるアプリが、正しいパスワードなのに 1045 Access denied で接続できなくなりました。同じ構成で同じ DB に繋いでいる...",
+      "category": "クラウド",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "gcloudのADCを使い回してSearch Console APIを叩く手順と落とし穴",
+      "url": "https://zenn.dev/tachibanana0/articles/1c670bb54871fd",
+      "site": "Zenn(Google Cloud)",
+      "published": "2026-11-26T01:04:24Z",
+      "description": "個人開発で複数サイトを運営していると、Google Search Console（GSC）の確認が手間になります。そこでローカルの gcloud ADC を使い回し、Python から Search Console API を叩く構成を組みました。 全体像は別記事に譲り、今回は**「なぜ OAuth（ADC）か」「既存クライアント流用の手順」「403 や PUT 等の落とし穴」**に絞ります。 サ...",
+      "category": "クラウド",
+      "rss_category": "",
+      "image_url": ""
+    },
     {
       "title": "【Vol.36】AIエージェントの監視は、OpenTelemetryのトレースを読む仕事になる",
       "url": "https://zenn.dev/tech_realinvent/articles/9b9e79ec4565f6",
       "site": "Zenn(Google Cloud)",
       "published": "2026-11-26T01:01:32Z",
-      "description": "はじめに\nこんにちは。中小企業で開発CTOをしている現役エンジニアです。\nnoteでも度々投稿していますので、ご興味あれば覗いてください。（https://note.com/masa_developnote）\nGoogleが、Gemini Enterprise Agent Platform 向けに「Agent Anomaly Detection（エージェント異常検知）」を発表しました。現在はPri...",
+      "description": "こんにちは。中小企業で開発CTOをしている現役エンジニアです。 noteでも度々投稿していますので、ご興味あれば覗いてください。（） Googleが、Gemini Enterprise Agent Platform 向けに「Agent Anomaly Detection（エージェント異常検知）」を発表しました。現在はPrivate Previewです。 ひとことで言うと、エージェントが出した Op...",
       "category": "クラウド",
       "rss_category": "",
       "image_url": ""
@@ -18,7 +58,7 @@
       "url": "https://zenn.dev/satohjohn/articles/cloudrun-static24-verify",
       "site": "Zenn(Google Cloud)",
       "published": "2026-11-26T00:00:10Z",
-      "description": "はじめに\nCloud Run に、静的サイトを配信するためのランタイム static24 が加わりました（Preview）。index.html のあるディレクトリを渡すと、Google が用意した Nginx のイメージに載せて配信します。Dockerfile も Nginx の設定も書きません。\nドキュメントに書かれた機能と、書かれていない挙動を、デプロイして確かめました。Cloud Stor...",
+      "description": "Cloud Run に、静的サイトを配信するためのランタイム static24 が加わりました（Preview）。index.html のあるディレクトリを渡すと、Google が用意した Nginx のイメージに載せて配信します。Dockerfile も Nginx の設定も書きません。 ドキュメントに書かれた機能と、書かれていない挙動を、デプロイして確かめました。Cloud Storage を...",
       "category": "クラウド",
       "rss_category": "",
       "image_url": ""
@@ -28,7 +68,7 @@
       "url": "https://zenn.dev/deloitte_jp_eng/articles/1532b5c9b11873",
       "site": "Zenn(Google Cloud)",
       "published": "2026-11-25T02:27:52Z",
-      "description": "この度、グーグル・クラウド・ジャパン合同会社から「Google Cloud Partner Top Engineer」アワード プログラムが発表され、デロイトトーマツ合同会社から4名、デロイトトーマツノード合同会社から3名が、卓越した技術力と広範な技術普及・ビジネス貢献が高く評価され、「Google Cloud Partner Top Engineer 2027」に選出されました。\nGoogle ...",
+      "description": "この度、グーグル・クラウド・ジャパン合同会社から「Google Cloud Partner Top Engineer」アワード プログラムが発表され、デロイトトーマツ合同会社から4名、デロイトトーマツノード合同会社から3名が、卓越した技術力と広範な技術普及・ビジネス貢献が高く評価され、「Google Cloud Partner Top Engineer 2027」に選出されました。 Google ...",
       "category": "クラウド",
       "rss_category": "",
       "image_url": ""
@@ -48,7 +88,7 @@
       "url": "https://zenn.dev/mbk_digital/articles/b9b389b8bc5e4e",
       "site": "Zenn(Google Cloud)",
       "published": "2026-11-24T05:02:48Z",
-      "description": "1. はじめに\n株式会社 MBK デジタルの古畑です。\n2026 年 11 月 18 日 (水) に Google 渋谷オフィスで開催された、Google Cloud 主催の「Data &amp; AI Summit ’26 Fall」に参加してきました。\n今回は一般参加ではなく、午前中に開催されたハンズオン【基礎編】「その AI エージェント、業務で使える？ ― 回答の品質・速さ・費用を比べて構...",
+      "description": "株式会社 MBK デジタルの古畑です。 2026 年 11 月 18 日 (水) に Google 渋谷オフィスで開催された、Google Cloud 主催の「Data & AI Summit ’26 Fall」に参加してきました。 今回は一般参加ではなく、午前中に開催されたハンズオン【基礎編】「その AI エージェント、業務で使える？ ― 回答の品質・速さ・費用を比べて構成を選ぶハンズオン」に、...",
       "category": "クラウド",
       "rss_category": "",
       "image_url": ""
@@ -58,7 +98,7 @@
       "url": "https://zenn.dev/adopture/articles/1bfe25a2e5cf40",
       "site": "Zenn(Google Cloud)",
       "published": "2026-11-24T05:00:50Z",
-      "description": "📰 本記事の一次ソース（公式発表）\n\nタイトル: Gemini Decisions API: Fast, calibrated multimodal decisions\n\n詳細な図解・完全版解説記事: ggnn.tech の本編記事はこちら\n\n\n\n\n 1. 背景：なぜ「LLMによるJSON分類・ルーティング」は遅くて高いのか\nAIエージェントのツール選択、モデルルーティング、ガードレール判定（ポリ...",
+      "description": "📰 本記事の一次ソース（公式発表） タイトル: Gemini Decisions API: Fast, calibrated multimodal decisions 詳細な図解・完全版解説記事: ggnn.tech の本編記事はこちら AIエージェントのツール選択、モデルルーティング、ガードレール判定（ポリシーチェック）、コンテキスト採点などの Bounded choices（閉集合の意思決定）...",
       "category": "クラウド",
       "rss_category": "",
       "image_url": ""
@@ -68,7 +108,7 @@
       "url": "https://zenn.dev/nttdata_tech/articles/dd0987466c448e",
       "site": "Zenn(Google Cloud)",
       "published": "2026-11-24T01:00:05Z",
-      "description": "こんにちは。クラウドやインフラ基盤の設計・構築に携わっているNTTデータの境野です。\n本記事は、2026年9月8日に開催された「Nutanix .NEXT On Tour Tokyo 2026」の参加レポート第3弾です。\n\n第1弾：企業のAI、どこで動かす？どう管理する？\n第2弾：Nutanixで考えるAI基盤の統合運用\n\nお客様がインフラ基盤に求める要件はさまざまです。NTTデータでは、セキュリ...",
+      "description": "こんにちは。クラウドやインフラ基盤の設計・構築に携わっているNTTデータの境野です。 本記事は、2026年9月8日に開催された「Nutanix .NEXT On Tour Tokyo 2026」の参加レポート第3弾です。 第1弾：企業のAI、どこで動かす？どう管理する？ 第2弾：Nutanixで考えるAI基盤の統合運用 お客様がインフラ基盤に求める要件はさまざまです。NTTデータでは、セキュリティ...",
       "category": "クラウド",
       "rss_category": "",
       "image_url": ""
@@ -78,7 +118,7 @@
       "url": "https://zenn.dev/satohjohn/articles/lev-cloudrun-gpu-coldstart",
       "site": "Zenn(Google Cloud)",
       "published": "2026-11-24T00:10:58Z",
-      "description": "はじめに\nJev は文章を生成せず、答えの形式（はい・いいえ、選択肢、段階など）を決めた質問に確率で答える判定モデルです。lev は、その API を個人が再現した小さなモデルで、LiquidAI の LFM2.5-350M を元にしています。M3 の Mac（MPS）では 1 件 80〜100 ms で答えます。\nこの lev を Cloud Run の GPU（NVIDIA L4）に置き、2 ...",
+      "description": "Jev は文章を生成せず、答えの形式（はい・いいえ、選択肢、段階など）を決めた質問に確率で答える判定モデルです。lev は、その API を個人が再現した小さなモデルで、LiquidAI の LFM2.5-350M を元にしています。M3 の Mac（MPS）では 1 件 80〜100 ms で答えます。 この lev を Cloud Run の GPU（NVIDIA L4）に置き、2 つの速さを...",
       "category": "クラウド",
       "rss_category": "",
       "image_url": ""
@@ -88,7 +128,7 @@
       "url": "https://zenn.dev/masuda_masuo/articles/2026-11-20-auth-design-system",
       "site": "Zenn(Google Cloud)",
       "published": "2026-11-23T02:58:08Z",
-      "description": "はじめに\n認証・認可の方式を同じ物差しで並べて整理するシリーズの2本目である。\n\n1本目：人間の認証\n\n2本目（この記事）：システム間の認証\n3本目：認証の後――トークンと認可\n\n\n物差しは1本目と同じ2つだ。\n\n\n\n原則\n意味\n\n\n\n\n送らない\n秘密そのものを通信先に渡さず、署名などで「持っていること」を証明する\n\n\n共有しない\n検証する側に同じ秘密を持たせない\n\n\n長く持たない\n有効期間を短く...",
+      "description": "認証・認可の方式を同じ物差しで並べて整理するシリーズの2本目である。 1本目：人間の認証 2本目（この記事）：システム間の認証 3本目：認証の後――トークンと認可 物差しは1本目と同じ2つだ。 1本目で見た人間の認証は、どの方式も「ログイン時に本人を確かめる」という同じ目的を、違う手段で実現していた。ところがシステム間の方式を並べてみると、そもそも担っている段階が違う。この記事では、まずその段階を...",
       "category": "クラウド",
       "rss_category": "",
       "image_url": ""
@@ -98,7 +138,7 @@
       "url": "https://zenn.dev/nabeyan_dev/articles/fsfn-dataflow-remote-mcp-server",
       "site": "Zenn(Google Cloud)",
       "published": "2026-11-23T02:40:05Z",
-      "description": "Dataflow に remote MCP server が Preview で付いた。ツールは get_job・list_jobs・list_job_steps の読み取り 3 つだけ。同じ 3 本のジョブ（バッチ成功、バッチ失敗、ストリーミング）を MCP・REST・gcloud で読み比べて、エージェントに渡すなら何を先に決めておくかを 4 つに絞って書く。\n数値は 2026-11-21 に...",
+      "description": "Dataflow に remote MCP server が Preview で付いた。ツールは get_job・list_jobs・list_job_steps の読み取り 3 つだけ。同じ 3 本のジョブ（バッチ成功、バッチ失敗、ストリーミング）を MCP・REST・gcloud で読み比べて、エージェントに渡すなら何を先に決めておくかを 4 つに絞って書く。 数値は 2026-11-21 に...",
       "category": "クラウド",
       "rss_category": "",
       "image_url": ""
@@ -108,7 +148,7 @@
       "url": "https://zenn.dev/tetsu_don/articles/8f01c3f3ecdce2",
       "site": "Zenn(Google Cloud)",
       "published": "2026-11-22T13:01:09Z",
-      "description": "てつどんです。データエンジニアとして、日々 BigQuery まわりのパイプラインを作っています。\n最近、BigQuery の Conversational Analytics（会話型分析） で「データエージェント」を作れるようになりました。テーブルを指定して、用語集や検証済みクエリを登録しておくと、自然言語の質問に SQL を書いて答えてくれる仕組みです。\n会社で導入するなら、Notion のナ...",
+      "description": "てつどんです。データエンジニアとして、日々 BigQuery まわりのパイプラインを作っています。 最近、BigQuery の Conversational Analytics（会話型分析） で「データエージェント」を作れるようになりました。テーブルを指定して、用語集や検証済みクエリを登録しておくと、自然言語の質問に SQL を書いて答えてくれる仕組みです。 会社で導入するなら、Notion のナ...",
       "category": "クラウド",
       "rss_category": "",
       "image_url": ""
@@ -118,7 +158,7 @@
       "url": "https://zenn.dev/web_benriya/articles/logistics-2026-bigquery-shipping-cost",
       "site": "Zenn(Google Cloud)",
       "published": "2026-11-22T11:40:33Z",
-      "description": "はじめに\n「送料が上がって利益が出ない」「どの商品が配送コストの足を引っ張っているのかわからない」――そうした声を、EC事業者の方から多くお聞きします。2024年問題と呼ばれる物流業界の労働規制強化（トラックドライバーの時間外労働上限規制）は、配送コストの構造的な上昇をもたらしました。2026年現在、その影響は中小ECにも着実に波及しており、以前と同じ感覚で送料設定を続けていると、売上が伸びても利...",
+      "description": "「送料が上がって利益が出ない」「どの商品が配送コストの足を引っ張っているのかわからない」――そうした声を、EC事業者の方から多くお聞きします。2024年問題と呼ばれる物流業界の労働規制強化（トラックドライバーの時間外労働上限規制）は、配送コストの構造的な上昇をもたらしました。2026年現在、その影響は中小ECにも着実に波及しており、以前と同じ感覚で送料設定を続けていると、売上が伸びても利益が縮小す...",
       "category": "クラウド",
       "rss_category": "",
       "image_url": ""
@@ -128,7 +168,7 @@
       "url": "https://zenn.dev/yuji_sakurai/articles/70f0d11e8fa0ac",
       "site": "Zenn(Google Cloud)",
       "published": "2026-11-22T03:00:05Z",
-      "description": "背景\n　2026-11-19 に自社で開催したカンファレンスでは、Context 周りの話が多く出ていました。その中で、Google Cloud の発表に出てきた Knowledge Catalog（旧 Dataplex）のプレビュー機能 Knowledge Studio を、自社の本番側プロジェクトで試してみました。\n　本記事では、既存のデータ基盤に、どこまで手間なく載るかを見た結果と、感想をま...",
+      "description": "2026-11-19 に自社で開催したカンファレンスでは、Context 周りの話が多く出ていました。その中で、Google Cloud の発表に出てきた Knowledge Catalog（旧 Dataplex）のプレビュー機能 Knowledge Studio を、自社の本番側プロジェクトで試してみました。 本記事では、既存のデータ基盤に、どこまで手間なく載るかを見た結果と、感想をまとめます。...",
       "category": "クラウド",
       "rss_category": "",
       "image_url": ""
@@ -138,7 +178,7 @@
       "url": "https://zenn.dev/nabeyan_dev/articles/fsfn-cloud-lb-post-quantum-tls",
       "site": "Zenn(Google Cloud)",
       "published": "2026-11-21T22:50:00Z",
-      "description": "2026-11-16 のリリースノートで、Cloud Load Balancing の TLS ポスト量子（以下 PQ）鍵交換が Phase 2 に入った。X25519MLKEM768 が既定オンになって、SSL ポリシーの DEFERRED で先送りできる。Phase 3（2027-10 以降）は常にオンや。\n検証用のプロジェクトで外部 ALB を 7 本立てて、2026-11-17 に測った。...",
+      "description": "2026-11-16 のリリースノートで、Cloud Load Balancing の TLS ポスト量子（以下 PQ）鍵交換が Phase 2 に入った。X25519MLKEM768 が既定オンになって、SSL ポリシーの DEFERRED で先送りできる。Phase 3（2027-10 以降）は常にオンや。 検証用のプロジェクトで外部 ALB を 7 本立てて、2026-11-17 に測った。...",
       "category": "クラウド",
       "rss_category": "",
       "image_url": ""
