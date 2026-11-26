@@ -1,14 +1,74 @@
 {
   "site": "Zenn(Python)",
-  "last_updated": "2026-11-25T20:39:43.608272",
-  "total_articles": 8141,
+  "last_updated": "2026-11-26T03:08:42.348964",
+  "total_articles": 8147,
   "articles": [
     {
-      "title": "日本語の決算PDFをRAGに入れたら表が崩れた。外部に送らず手元のLLMだけで直すまでの記録",
-      "url": "https://zenn.dev/okuriya/articles/5fd8016fff72f7",
+      "title": "Dev Containers×UV×Gemini CLIで作る最小AIプロトタイプ",
+      "url": "https://zenn.dev/atsupi/articles/fff382504df18c",
       "site": "Zenn(Python)",
-      "published": "2026-11-25T11:52:36Z",
-      "description": "決算資料を RAG(社内文書をAIに検索・要約させる仕組み)に入れて、「この会社の自己資本比率は?」と聞けるようにしようとしました。ところが、肝心の表がこう崩れて出てきました。\n8年12月期中間期 7年12月期 | 百万円 7,095 - | 百万円 2,149 - | ％ - -\n本来は「総資産 / 純資産 / 自己資本比率」を列に持つ、見出し行とデータ2行の計3行の表です。それが1行に潰れ、数...",
+      "published": "2026-11-25T15:16:21Z",
+      "description": "はじめに\n生成AIを活用したプロトタイピング（PoC）では、新しいSDKやCLIツールを素早く試したい一方で、「ローカル環境がグローバルパッケージで汚れる」「チームや別マシンで環境を再現できない」といった課題に直面しがちです。\n本記事では、VS Code Dev Containers・Pythonパッケージマネージャ uv・Gemini CLIを組み合わせた最小構成のプレイグラウンドリポジトリを題...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "筆算エンジン:掛け算・割り算の形と、学習指導要領で決める範囲",
+      "url": "https://zenn.dev/yoshidam/articles/hissan-multiplication-division",
+      "site": "Zenn(Python)",
+      "published": "2026-11-25T14:41:55Z",
+      "description": "はじめに\n前回の記事では、足し算と引き算のテストケースを作りました。今回は、掛け算と割り算のテストケースを作った話です。\n掛け算と割り算は、足し算・引き算より決めることが多くありました。どこまでの大きさの数を扱うかも、ここで決める必要がありました。\n\n 扱う範囲は、学習指導要領で決める\n割る数を何桁まで扱うかについては、文部科学省の学習指導要領(平成 29 年告示)を基準にしました。本文に「筆算」...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "壊れないWindows×Python業務ツール開発・配布・自動化の設計実務",
+      "url": "https://zenn.dev/warrobotsxyz/books/windows-python-tool-engineering",
+      "site": "Zenn(Python)",
+      "published": "2026-11-25T13:44:29Z",
+      "description": "「自分のPCでは動いたのに、他人のWindowsや自動運用で壊れる」をなくす実戦設計書。文字コード・BOM・System32罠の回避から、PyWebView/PyInstaller配布、SQLite WAL+FTS5日本語検索と安全バックアップ、CSV数式インジェクション・ZipSlip・伏字防御、Ed25519オフライン認証、まっさらフォルダ自動QA＆配布ZIP監査パイプラインまで、すべて実測検...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "pathlibでWindowsとPOSIXのパスを安全に扱う：PureWindowsPathの実測",
+      "url": "https://zenn.dev/warrobotsxyz/articles/python-pathlib-cross-platform",
+      "site": "Zenn(Python)",
+      "published": "2026-11-25T13:44:18Z",
+      "description": "はじめに\nPythonでパスを扱うとき、文字列連結や os.path.join ではなく pathlib を使うと、OS差異を意識しやすくなります。ただし、実行OSと解析対象のパス形式は別です。Windows形式のパスをPOSIX上で解析するときは PureWindowsPath を使います。\nこの記事では、PureWindowsPath / PurePosixPath / Path の挙動を実測...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "高校生のためのPythonSCAD練習帳 part33",
+      "url": "https://zenn.dev/yokamak/articles/c2c653b22fd14c",
+      "site": "Zenn(Python)",
+      "published": "2026-11-25T13:31:37Z",
+      "description": "はじめに\nPythonSCADコミュニティ・開発者に感謝申し上げます。ありがとうございます。\nhttps://www.pythonscad.org/\n\n 01. 角丸の立方体を作り、6面それぞれに球で浅いくぼみを削ってサイコロの目を作る\nPythonSCADを使用して、1辺が100mmの角丸立方体から、サイコロの目（1〜6）を表す球体をくり抜いた「6面ダイス」のスクリプトを生成してください。\n曲面...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "常駐だけPDFが読めない。ロケールを疑ったが、終了コードを見ていなかった",
+      "url": "https://zenn.dev/shinsei99/articles/empty-output-hid-the-crash",
+      "site": "Zenn(Python)",
+      "published": "2026-11-25T12:35:12Z",
+      "description": "不動産管理の会社で、入金の照合画面を作っています。口座振替の入金は銀行から一括で入るので、\nどの区画の分かは、銀行の「振替結果明細」PDFを読まないと分かりません。\nそこで PDF の文字を pdftotext で取り出し、明細の顔ぶれで一括入金を区画に割る処理を足しました。\n手元で流すと割れました。ところが、毎日使っている常駐（launchd で起動している画面）では、\n「入金あり」の印が1件も...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "Claude Code のサブエージェントで、ショート動画の台本を「執筆→校閲」の流れで並列に作る",
+      "url": "https://zenn.dev/akisawa_takashi/articles/02f8085d9bdf45",
+      "site": "Zenn(Python)",
+      "published": "2026-11-25T11:43:47Z",
+      "description": "教員として、授業の要点を 30 秒前後の YouTube ショートにして毎日出しています。いまは高校生物・AWS 認定（AI プラクティショナー）・共通テスト「情報Ⅰ」の 3 シリーズがあり、台本のストックを 10〜30 本単位で作り足しています。\n台本は JSON で書き、Python で画面と音声を作って ffmpeg でつないでいます（仕組みは前の記事「台本をJSONにして、Python（P...",
       "category": "開発",
       "rss_category": "",
       "image_url": ""
