@@ -1,14 +1,124 @@
 {
   "site": "Zenn(LLM)",
-  "last_updated": "2026-11-26T03:08:42.348964",
-  "total_articles": 7700,
+  "last_updated": "2026-11-26T12:30:45.080502",
+  "total_articles": 7710,
   "articles": [
+    {
+      "title": "RTX 5070 と Foundry Local でハイブリッド LLM のローカル側を実測：容量・品質と障害時の切り替え",
+      "url": "https://zenn.dev/hlt/articles/c2e3ed8ff9ddb8",
+      "site": "Zenn(LLM)",
+      "published": "2026-11-26T11:10:15Z",
+      "description": "12GB に qwen3-14b と Phi-4（14B）が載りましたが、ピークはカード全体の 96% 前後で余裕はほとんどありません。生成は 14B で毎秒 54〜61 トークン、ロードは 2.5 秒未満でした。gpt-oss-20b は、この記事の回避策の構成では読み込みの時点でエラーになり、載るかどうかを確かめられませんでした。 ローカルのモデル 2 つ（qwen3-8b と Phi-4）を...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "モデルはみんな偏科している：Neonは動画、Astraは3D、じゃあ何を信じるか",
+      "url": "https://zenn.dev/boxbox_jp/articles/e961e451939551",
+      "site": "Zenn(LLM)",
+      "published": "2026-11-26T11:05:15Z",
+      "description": "11月20日に、私は自分のXでこう書きました。モデルはみんな偏科している。Neonは動画、Astraは3D。一番の仕事はコードを書くことではなく、確認を待って、誰を信じるか決めることです。 この1週間、私が見ていたのは、まさにその偏科の連続でした。 Fable のロボットシミュレーションは、5.1 の 27.6% から 5.2 で 64.9% になりました。一代で倍以上です。向こうのアップグレード...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "GLM-5.3 Flashを自作エンジン（Maya）で常用する ― 量子化・熱・CPU配分の実測",
+      "url": "https://zenn.dev/keithval/articles/glm53-flash-maya-tuning",
+      "site": "Zenn(LLM)",
+      "published": "2026-11-26T10:59:56Z",
+      "description": "この記事は、筆者の実測記録をもとに、筆者と Muse が一緒に執筆しました。 GLM-5.3 Flash は、筆者が自作エンジン（Maya）で動かしてきたモデルです。実験の記録は、モデル名とエンジン名を合わせたファイル群で約60件あり、筆者の実験の中ではいちばん大きなまとまりになっています。それだけの記録が残ったのは、速くする作業だけでなく、常用に入れるかどうかを判断する作業が長く続いたためです。...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "RunPodでLoRA学習する",
+      "url": "https://zenn.dev/studysun/articles/10c04dcd231e72",
+      "site": "Zenn(LLM)",
+      "published": "2026-11-26T09:51:05Z",
+      "description": "RunPodには、Axolotlを使ってLLMをLoRA学習するためのFine-Tuning機能があります。 この記事では、公式ドキュメントに沿って、ベースモデルとデータセットの指定、Podの起動、config.yamlの修正、学習の実行、vLLMでの確認までを説明します。 初回の確認用として、公式が案内しているTinyLlamaとAlpaca形式のデータセットを使います。 ※紹介リンクを含みます...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "ML infra weekly",
+      "url": "https://zenn.dev/tosshi/books/ml-infra-weekly",
+      "site": "Zenn(LLM)",
+      "published": "2026-11-26T09:14:32Z",
+      "description": "最近読んだ分散学習と分散推論の基盤まわりのブログや arXiv のプレプリントを、号ごとに 1 章にまとめた本です。新しい号ほど前の章に置きます。各章は、その号の一覧の表、記事ごとのサマリーと私のコメント、元記事の図、参照元からの抜粋と要約、今後の調査の表、の順です。",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "quantGAIクオンツプラットフォームの更新日記-2026-11-25",
+      "url": "https://zenn.dev/gzh1994/articles/quantg-diary-20261125",
+      "site": "Zenn(LLM)",
+      "published": "2026-11-26T07:19:30Z",
+      "description": "QuantG は私が開発している日本株の研究基盤です。システムが「銘柄選びの法則」の候補（たとえば「会社の資産に対して株価が割安な銘柄は、その後に上がりやすい」など）を自動でいくつも出し、過去の相場データで本当に効くものか、ただの運かを検証します。11 月 25 日は 3 つのことを進めました。検証に使う「物差し」を決めて本番導入すること、動きの遅い法則向けに別の物差しを作ること、そして模擬口座の...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "LLM/RAG投入前の決定的PIIマスキングと構造保持チャンキングをPython標準ライブラリで作る",
+      "url": "https://zenn.dev/inemuri/articles/llm-rag-pii-redaction-chunking",
+      "site": "Zenn(LLM)",
+      "published": "2026-11-26T07:08:27Z",
+      "description": "社内ドキュメントや業務CSV・JSONをLLMやRAGへ投入するとき、そのままテキストを切り出して埋め込むと次の3つの事故が起きます。 個人情報やAPIキーの意図しない送信（メールアドレス、電話番号、IPアドレス、sk-... / ghp_... などのトークン） 見出しと本文の分断による検索精度の劣化（固定文字数でぶつ切りにすると「何の項目についての記述か」が消える） 重複チャンクの大量登録によ...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "120BをRTX 3060で採点したら、温度0でも同じ答えが返らなかった",
+      "url": "https://zenn.dev/jinno_ai/articles/scicode-gpt-oss-120b-local-dissection",
+      "site": "Zenn(LLM)",
+      "published": "2026-11-26T05:00:07Z",
+      "description": "「温度0・seed固定なら同じ答えが返る」と思っていませんか。gpt-oss-120b（総117B・active 5.1B MoE）を RTX 3060 12GB で動かし、SciCode の事前登録済み25問題・61ステップを pin 完全同一で2回生成したところ、byte 一致は15/61だけでした。採点も 18/47 vs 19/47 とズレます。加えて成績本体も測れて、ローカル120Bは2...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "AutoClip入門 ― 長い動画からShorts用の縦動画を切り出す。ローカルLLM＋WhisperでAPIキーなしで動かす",
+      "url": "https://zenn.dev/ikesita/articles/autoclip-local-llm-shorts",
+      "site": "Zenn(LLM)",
+      "published": "2026-11-26T04:58:35Z",
+      "description": "AIツールウォッチ第9回 / 検証日：2026-11-20 / 検証対象：AutoClip v1.5.8（zhouxiaoka/autoclip、MIT） ※「実測」と書いたものは検証環境で実際に測った値、「公式値」と書いたものは開発者の公開資料（GitHub・README）の値です。 AutoClip（オートクリップ）は、長い動画から、ショート動画（Shorts・Reels・TikTok）向けの...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "トークンバケットの容量と補充速度で、429と待ち時間はどう変わるか｜LLM APIのクライアント側レート制限を数える",
+      "url": "https://zenn.dev/cauchye_asia/articles/token-bucket-client-limit-429-stdlib",
+      "site": "Zenn(LLM)",
+      "published": "2026-11-26T03:18:15Z",
+      "description": "2026-11-26時点の情報です。 AIエージェントが LLM API を呼ぶとき、サーバー側の 429（Too Many Requests）に当たらないように、クライアント側で呼び出しの間隔を調整することがあります。代表的な方法がトークンバケットで、容量 b（たまっていられるトークンの数）と補充速度 r（1秒あたりに増えるトークンの数）の2つで決まります。この記事では、b と r を変えながら...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "決算の数字を80試行で検証：さくらのAI Engineで見えた一致と限界",
+      "url": "https://zenn.dev/shiba_inu/articles/ff7b0bda3eadc2",
+      "site": "Zenn(LLM)",
+      "published": "2026-11-26T03:05:20Z",
+      "description": "Appleの営業キャッシュフローを尋ねたら、数字は返ってこなかった。GLMもDeepSeekも、2回ずつ、同じ回答だった。 これは正解だ。渡したのは損益計算書の抜粋で、営業キャッシュフローは含めていない。一方、同じ10-Kのキャッシュフロー計算書、p.36には、2026年度の値として145,097百万米ドルがある。「資料全体にある数字」と「今回渡した範囲から答えてよい数字」は違う。 ケースM02は...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
     {
       "title": "「起こした」を「試した」と数えたら、取り込みに失敗したモデルの自動試行が 7 日待ちに入った",
       "url": "https://zenn.dev/tarowhitey/articles/9249f4bd688269",
       "site": "Zenn(LLM)",
       "published": "2026-11-26T02:22:20Z",
-      "description": "新しいモデルを週に 1 本、自動で試している\n手元の GPU マシンで、コードを書かせるローカル LLM を回しています。新しいモデルが公開されると、それを自動で取り込んで試し、今のモデルより合格率が高ければ残し、低ければ戻す仕組みがあります。\n流れは 3 つの部品に分かれています。\n\n選ぶ段（local-model-scout.py）: 公式のモデル一覧から、コード向き・未導入・まだ試していない...",
+      "description": "手元の GPU マシンで、コードを書かせるローカル LLM を回しています。新しいモデルが公開されると、それを自動で取り込んで試し、今のモデルより合格率が高ければ残し、低ければ戻す仕組みがあります。 流れは 3 つの部品に分かれています。 選ぶ段（local-model-scout.py）: 公式のモデル一覧から、コード向き・未導入・まだ試していない・大きさが上限以下の物を 1 つ選ぶ。前の自動の...",
       "category": "AI・技術",
       "rss_category": "",
       "image_url": ""
@@ -18,7 +128,7 @@
       "url": "https://zenn.dev/zeroos_fidwell/articles/fd94c30f5e99f5",
       "site": "Zenn(LLM)",
       "published": "2026-11-26T00:35:55Z",
-      "description": "業務向けAIエージェントの長期記憶を実装していると、「数十ターンまでは順調だったのに、数百セッションを超えたあたりから古い仕様を答えるようになった」という現象に必ず遭遇します。\n本記事では、従来のベクトルRAGおよび要約型メモリのボトルネックを整理したうえで、書き込み・召回時に生成式LLMを使わない設計（LongMemOS）と、RBAC・即時401失効を備えた制御面（ZeroOS）の2026年11...",
+      "description": "業務向けAIエージェントの長期記憶を実装していると、「数十ターンまでは順調だったのに、数百セッションを超えたあたりから古い仕様を答えるようになった」という現象に必ず遭遇します。 本記事では、従来のベクトルRAGおよび要約型メモリのボトルネックを整理したうえで、書き込み・召回時に生成式LLMを使わない設計（LongMemOS）と、RBAC・即時401失効を備えた制御面（ZeroOS）の2026年11...",
       "category": "AI・技術",
       "rss_category": "",
       "image_url": ""
@@ -89,16 +199,6 @@
       "site": "Zenn(LLM)",
       "published": "2026-11-25T20:30:43Z",
       "description": "この記事は個人（と会社）の実験と実装の記録です。モデルは Qwen3.5-0.8B（良性モデルの重みスキャンでは Qwen3.5-4B と公開の無検閲派生版も使用、いずれも Apache License 2.0）、実行環境は Apple Silicon Mac（MLX 0.31.1）です。\n前回の記事「拾った微調整LLMにバックドアがないかを元のモデルとの重みの差から読む」では、公式の元のモデルと...",
-      "category": "AI・技術",
-      "rss_category": "",
-      "image_url": ""
-    },
-    {
-      "title": "OpenCode で DeepSeek V4 を55%オフで使う設定",
-      "url": "https://zenn.dev/sunsiyuan/articles/deepseek-opencode-setup",
-      "site": "Zenn(LLM)",
-      "published": "2026-11-25T18:50:13Z",
-      "description": "!\nこの記事で使っている HaryAI は筆者が運営しているサービスです。\n\n設定は OpenAI Chat Completions 互換なので、DeepSeek の公式 API キーを持っているなら baseURL とキーを公式のものに差し替えるだけでそのまま使えます。\nOpenCode（@opencode/cli）で DeepSeek V4 を使う設定をまとめます。HaryAI 経由だと De...",
       "category": "AI・技術",
       "rss_category": "",
       "image_url": ""

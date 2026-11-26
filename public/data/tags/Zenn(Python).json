@@ -1,8 +1,168 @@
 {
   "site": "Zenn(Python)",
-  "last_updated": "2026-11-26T03:08:42.348964",
-  "total_articles": 8147,
+  "last_updated": "2026-11-26T12:30:45.080502",
+  "total_articles": 8163,
   "articles": [
+    {
+      "title": "Zenoh のテンプレートを作った",
+      "url": "https://zenn.dev/rk_work/articles/zenoh-pico-ros2-guide",
+      "site": "Zenn(Python)",
+      "published": "2026-11-26T11:26:25Z",
+      "description": "私の周りが皆ROS 2を使っていて、そろそろ違う通信ミドルウェアを使いたいなと思って、Zenohに手を出しました。 Zenoh は、pub/sub と問い合わせ(query)を同じキーの体系で扱える通信ミドルウェアです。ROS 2 の代替ミドルウェアにも選ばれていて、ROS 2 Kilted では Zenoh を使う RMW 実装(rmw_zenoh)が Tier 1 になりました。マイコン向けの...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "PythonでWAVの時間波形とFFTスペクトルを1枚のPNG化CLIを作る",
+      "url": "https://zenn.dev/toya_dev/articles/bd042d17ef97ab",
+      "site": "Zenn(Python)",
+      "published": "2026-11-26T11:17:24Z",
+      "description": "WAVファイルから時間波形とFFTによる波形を一つの画像にまとめるPython CLIを作成しました。 依存ライブラリをインストールし、テスト音源を作ります。 生成されるのは、48 kHz・16-bit・2秒のモノラルWAVです。440Hzと1000Hzのサイン波に乱数シードを固定した小さなホワイトノイズを加えています。 --outputと--n-fftを変更すれば、出力先とFFTの窓長を選べます...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "音声メモは「聞き直す」から「読む」へ — AmiVoice APIの単語データでフィラー除去と聞き取り不安箇所の可視化をするCLIを作った",
+      "url": "https://zenn.dev/starwingmaxx/articles/38528f0c84e80e",
+      "site": "Zenn(Python)",
+      "published": "2026-11-26T10:21:43Z",
+      "description": "スマホのボイスレコーダーに音声メモを吹き込むのは簡単です。でも、あとで聞き直すのが面倒で、結局たまる一方になりがちです。音声は「記録は速いが、読み返すのが遅い」メディアだからです。 そこで、音声認識API「AmiVoice API」で文字起こしするだけでなく、そのまま読めるメモに整えるCLIを作りました。やることは2つです。 フィラー除去: 「えー」「あのー」「えっと」を取り除いた読みやすいテキス...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "DuckDBで月次Parquetのスキーマ変更を検知する",
+      "url": "https://zenn.dev/chando_ra/articles/duckdb-parquet-schema-drift",
+      "site": "Zenn(Python)",
+      "published": "2026-11-26T09:52:28Z",
+      "description": "注文システムから毎月1本のParquetが届き、DuckDBで月次売上を集計する場面を考えます。流入チャネルのような任意列が増えても、集計は続けたい。一方、金額の型が変わったり、通貨列が消えたりした月は、売上を確定する前に止めたいところです。 DuckDB 2.0.1で3か月分を試すと、union_by_name = true で6件すべて読めました。それでも、3月の金額を TRY_CAST して...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "【Python/OpenData】国税庁法人番号APIとgBizINFOデータを全自動同期するモダンETLパイプライン",
+      "url": "https://zenn.dev/kigyoulist/articles/fa3e0b516eb673",
+      "site": "Zenn(Python)",
+      "published": "2026-11-26T09:10:16Z",
+      "description": "日本国内には現在、約500万社を超える法人（登記法人・行政機関・各種団体）が存在する。企業間取引（B2B）、与信管理、反社チェック、あるいは法人向けSaaSのリード獲得において、**「企業の実体が存在するか」「最新の商号・本店所在地であるか」「インボイス適格請求書発行事業者か」**の公的データ照合は、もはや避けて通れない必須要件となっている。 しかし、公的オープンデータの同期基盤をゼロから実運用し...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "型注釈では守れなかった、言語をまたぐJSONの項目名",
+      "url": "https://zenn.dev/miyakona/articles/cross-language-response-key-contract",
+      "site": "Zenn(Python)",
+      "published": "2026-11-26T08:57:18Z",
+      "description": "社内向けの管理画面を作っていたとき、PythonとTypeScriptの両方にテストがあるのに、その間の項目名を誰も確かめていないことが分かりました。 もともとPython製のworkerがあり、そこへTypeScriptの管理画面を追加した構成です。画面からの操作も既存workerと同じ処理・状態遷移を通す方針で、画面用に処理をもう一組作ることは避けていました。 管理APIがworkerの応答を...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "AIが選んだクリップの4本に1本を却下した：言葉と映像のずれを、関数のルールにするまで",
+      "url": "https://zenn.dev/kensaurus/articles/8f01633af0009f",
+      "site": "Zenn(Python)",
+      "published": "2026-11-26T08:53:33Z",
+      "description": "自作のリール作りアプリ Lazycow Studio を、自分たちのキャンプ場（群馬・嬬恋、標高1,444m）の投稿に18日間使いました。作ったリールは246本、そのうち58本を人の目で却下しています。却下の47本は「言葉と映像が合っていない」でした。 この記事は、そのずれをどうコードのルールに変えたか、そして運用で踏んだバグ（二重投稿、集計漏れ、知らせなしに切れるOAuth、予約投稿が届かない問...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "宇宙太陽光発電（SBSP）とは｜Meta向け1GW契約とNASA試算の20倍ギャップ",
+      "url": "https://zenn.dev/maru1228/articles/space-space-based-solar-power",
+      "site": "Zenn(Python)",
+      "published": "2026-11-26T07:30:09Z",
+      "description": "この記事は自サイト 宇宙太陽光発電（SBSP）とは｜Meta向け1GW契約とNASA試算の20倍ギャップ の再掲（クロス投稿）です。図をインタラクティブに動かせる版は元記事でどうぞ。 太陽光発電の弱点は「夜は発電できない」「天候に左右される」ことです。この弱点を、太陽が沈まない軌道上で発電し、電気を無線で地上に届けることで乗り越えようとする構想が「宇宙太陽光発電（SBSP）」です。1968年の提唱...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "１５パズル[python],[GAME言語新作！８]",
+      "url": "https://zenn.dev/fygar256/articles/d6fe1348e9345d",
+      "site": "Zenn(Python)",
+      "published": "2026-11-26T07:13:35Z",
+      "description": "15パズルです。矢印キーで駒の移動、'q'でquitです。100回シャッフルした必ず解ける盤面を出題します。FreeBSD,LinuxのANSIターミナルで動きます。",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "日本の現行法令23.9万条でRAG・検索学習データセットを作って公開しました",
+      "url": "https://zenn.dev/gababa63/articles/a19e7f98de1fec",
+      "site": "Zenn(Python)",
+      "published": "2026-11-26T07:07:38Z",
+      "description": "日本の法令で RAG や検索モデルを作ろうとすると、意外と最初のデータ整備で手が止まります。e-Gov 法令検索の XML をそのままテキスト化するとルビや目次が本文に混ざりますし、過去の改正履歴や未施行の条文が紛れ込んだり、ちょうどいい検索評価ベンチマークが見当たらなかったりするためです。 そこで今回、yuiseki/egov-laws-jp の公開コーパスをベースに、現在施行中の日本法令 8,...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "不採用になった4,090バイトのチェスエンジンを、UCI化してLichessで動かす",
+      "url": "https://zenn.dev/azally/articles/5793afeb05f336",
+      "site": "Zenn(Python)",
+      "published": "2026-11-26T06:38:25Z",
+      "description": "提出したチェスエンジンは、不採用になった。理由はエンジンの動作ではない。 提出物は4,090バイトであった。制限は4,096バイトである。残りは6バイトしかなかった。 そのエンジンは今、Lichessで対局している。提出後にUCI化し、小さなブリッジを介してボットとして公開した。エンジン本体には手を入れていない。 この記事では、4KBへの収め方、UCIへの変換、独立した実装による検証、不採用の理由...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "エンジニア視点で語る！Pythonで学ぶマクロ経済学入門 93",
+      "url": "https://zenn.dev/maszkot/articles/ff8fe9b97f6586",
+      "site": "Zenn(Python)",
+      "published": "2026-11-26T06:30:24Z",
+      "description": "DJミオ：こんばんは！ ラジオ教育番組「エンジニア視点で語る！Pythonで学ぶマクロ経済学入門」、今夜も始まりましたー！ DJレン：こんばんは、DJレンです。今日は第93回相当の内容、「犯罪対策費でもGDPは増える？ ― 割れ窓の誤謬と社会的信頼を考える」を、エンジニアにもわかりやすい形で整理していきます。 DJミオ：今回のポイントは、単に「マクロ経済学の用語を覚えましょう」じゃないんですよね。...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "作業前後の show ip interface brief を、Pythonでインターフェースごとに比べる",
+      "url": "https://zenn.dev/yuru_nw_ops/articles/37b84f7431233e",
+      "site": "Zenn(Python)",
+      "published": "2026-11-26T05:13:25Z",
+      "description": "夜間作業のあと、作業前と作業後の show ip interface brief を見比べて「落ちたポートはないか」「意図したインターフェースだけが増えたか」を確認する。ネットワーク運用ではおなじみの作業です。 テキストの差分ツールでも比べられますが、行単位の差分だと「どのインターフェースの、何が、どう変わったか」を自分で読み取る必要があります。 この記事では、show ip interface ...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "Pythonの戻り値[]が「休止」と「該当なし」を兼ねていた——空配列をLLMが1.1万字で分析した日",
+      "url": "https://zenn.dev/sktt_panda/articles/rakuscan-defensive-regime-empty-list-pitfall",
+      "site": "Zenn(Python)",
+      "published": "2026-11-26T03:48:52Z",
+      "description": "自作の投資分析ツールで、TOPIX が200日移動平均を割り込んだ初日（「守りレジーム」判定）に、残っているログの範囲では初めて守りの経路が本番で実行された。その結果、Claude に空配列 []（2文字）を渡して11,298文字のレポートを書かせ、保有銘柄のチェック通知は1件も送られなかった 根本原因は、スクリーナーの戻り値の 空リスト [] が「意図的な休止」「失敗」「対象なし」の3つの意味を...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "画像を元に手書き風イラストを作成する",
+      "url": "https://zenn.dev/sora_kumo/articles/illustration-creator",
+      "site": "Zenn(Python)",
+      "published": "2026-11-26T03:45:13Z",
+      "description": "イラストを生成するプログラムの開発を行っていたのですが、クオリティーがイマイチな結果しか出ませんでした。そのとき、こちらで面白いことをやっている方がいらっしゃいました。 これに触発を受けて、手書きに寄せて再実装させてみることにしました。 1 枚のラスターイラストを編集可能な形式へ変換する際、単純に減色して輪郭をポリゴンで塗りつぶす自動トレースだけでは、境界が硬く均一なベタ面が並ぶだけの見た目になり...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "BlenderのQuadriFlowが閉じたメッシュを「manifoldでない」と断るのは、長さ1e-4以下の辺があるから",
+      "url": "https://zenn.dev/gzer0/articles/blender-quadriflow-short-edge-manifold",
+      "site": "Zenn(Python)",
+      "published": "2026-11-26T03:20:47Z",
+      "description": "画像から3Dを作るモデル（TripoSR）で出したメッシュを、Blender 5.2.3のQuadriFlowで四角ポリゴンに直そうとしたところ、8体すべてで次の警告が出て取り消されました。 生成したメッシュには穴があるので、先にボクセルリメッシュ（bpy.ops.object.voxel_remesh()）で閉じた形に作り直してからかけました。それでも同じ警告が出ました。 ボクセルリメッシュの後...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
     {
       "title": "Dev Containers×UV×Gemini CLIで作る最小AIプロトタイプ",
       "url": "https://zenn.dev/atsupi/articles/fff382504df18c",
