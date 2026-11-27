@@ -1,8 +1,138 @@
 {
   "site": "Zenn(LLM)",
-  "last_updated": "2026-11-26T21:53:09.028247",
-  "total_articles": 7710,
+  "last_updated": "2026-11-27T03:59:40.349630",
+  "total_articles": 7722,
   "articles": [
+    {
+      "title": "学習・重み改変・プロンプトなし - DSLでLLMに架空RPGの技を覚えさせる",
+      "url": "https://zenn.dev/caphtech/articles/kestrom-rules-open",
+      "site": "Zenn(LLM)",
+      "published": "2026-11-26T21:27:30Z",
+      "description": "この記事は個人（と会社）の実験と実装の記録です。モデルは Gemma 4 E4B（Gemma Terms of Use）、Qwen3.5-4B、Qwen3.5-0.8B（Apache License 2.0）を使いました。実行環境は Apple Silicon Mac（MLX 0.31.1 / 0.32.2）です。 以前、DSL で書いたルールを 3 層ニューラルネットにコンパイルして LLM の...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "Tech Watch 2026-11-27: エージェントを検証する仕組み",
+      "url": "https://zenn.dev/laiken/articles/20261127-tech-watch",
+      "site": "Zenn(LLM)",
+      "published": "2026-11-26T21:09:29Z",
+      "description": "この記事は、AIが書いたものをAIがレビューしてから公開しています。 L: 本番の仕組みを別の言語に移すとき、テストが通っても、利用者が実際に受け取るものまで同じとは限らない。その隙間をどう測るかが気になった。エージェントに作業を任せる範囲が広がるほど、生成より検証の設計が重くなるのだろうか。 Migrating our Messages API to Rust Anthropic の Messa...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "ローカルLLMが0点だったとき、採点表に足したい二つの列",
+      "url": "https://zenn.dev/satoshiakiyama/articles/f5a83327d44d98",
+      "site": "Zenn(LLM)",
+      "published": "2026-11-26T20:56:33Z",
+      "description": "ローカルLLMに「12個を3人に均等に分けたら何個か。数字だけで答えて」と聞いたとします。「4個です。」と答えたモデルを、あなたなら何点にしますか。計算を教える用途なら答えは合っています。後続のプログラムに整数を渡す用途なら、このままでは使えません。 一つの点数に両方の意味を持たせると、次に何を直すかが決まりません。以下はこの違いを手元で確かめる小さな教材です。回答は説明用に作った例です。 この設...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "スキル（SKILL.md）のアンチパターン 13 選と直し方 ── 長すぎる、網羅しすぎる、複数人で書き足して矛盾する",
+      "url": "https://zenn.dev/singularity/articles/skill-antipatterns",
+      "site": "Zenn(LLM)",
+      "published": "2026-11-26T19:55:24Z",
+      "description": "スキル（SKILL.md）は、書いたその日はうまく動きます。悪くなるのは、そのあとです。失敗するたびに規則が足され、別の人が別の規則を足し、似たスキルが増え、半年後には誰も全体を把握していない長い文書になります。 本稿では、スキルでよく見る失敗（アンチパターン）を 13 個集め、それぞれについて次の 4 つをまとめました。 症状： どんな見た目になっているか なぜ悪いか： 論文や公式の指針の根拠 ...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "分離推論の KV 転送を push と pull で整理する",
+      "url": "https://zenn.dev/tosshi/articles/4e75a768f14852",
+      "site": "Zenn(LLM)",
+      "published": "2026-11-26T18:29:14Z",
+      "description": "prefill と decode を別のインスタンスで動かす分離推論では、prefill が作った KV キャッシュを decode へ運ぶ転送が、最初のトークンが出るまでの時間、TTFT に直接効きます。分離推論そのものは「P/D Disaggregated Inference with LMCache - 1」で説明しています。vLLM の公式ブログは 2026 年 10 月 14 日に、pr...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "日本語の個人情報を検出・匿名化する Python ライブラリ「privacy-masker」を公開しました",
+      "url": "https://zenn.dev/na225/articles/af7720ac083f00",
+      "site": "Zenn(LLM)",
+      "published": "2026-11-26T15:14:09Z",
+      "description": "日本語の文書から氏名・住所・電話番号などの個人情報を見つけて、トークンや自然な偽名に置き換える Python ライブラリ privacy-masker を公開しました。検出に使う日本語の NER モデルも新しく学習し、あわせて公開しています。LLM に文書を渡す前の保護や、学習データ・ログ・帳票の匿名化に使えます。 GitHub: NishidaAzuharu/privacy-masker（MIT...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "AI Bot Team Apps: Which Ones Ask Before They Run a Command?",
+      "url": "https://zenn.dev/neotechpark/articles/7a2b862c7167ac",
+      "site": "Zenn(LLM)",
+      "published": "2026-11-26T14:22:38Z",
+      "description": "This week someone on r/AI_Agents asked a question a lot of people are asking right now: ChatGPT dots vs Grok Bot vs OpenBot, which one? The replies were about the usual things. Is a team of agents bet...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "GitHub 6,800+ Star のスキャンPDF変換・翻訳OSS「PDF Craft」の設計と使い方",
+      "url": "https://zenn.dev/ooshaun/articles/54529f9807a182",
+      "site": "Zenn(LLM)",
+      "published": "2026-11-26T13:30:25Z",
+      "description": "英語の技術書や論文、自炊したスキャンPDFをスマホや Kindle で読もうとすると、拡大縮小や横スクロールが辛く、途中で読まなくなりがちです。かといって普通の OCR に通すと、ヘッダーやページ番号が本文に混入したり、2段組みの読み順が壊れたり、数式や脚注が崩れたりします。 こうした「単ページではなく、書籍や論文まるごと1冊を実用レベルで変換・翻訳したい」という課題を解くために開発しているのが、...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "課金単位が「リクエスト回数」なら、設計も変わる—さくらのAI Engineで複数メモを1リクエストにまとめて日報JSON化するCLIを作った",
+      "url": "https://zenn.dev/starwingmaxx/articles/9dffbff0fd42bc",
+      "site": "Zenn(LLM)",
+      "published": "2026-11-26T12:43:08Z",
+      "description": "LLMのAPIといえば「入力トークン数＋出力トークン数」で課金されるものがほとんどです。ところが、さくらのAI Engine の無償プラン（基盤モデル無償プラン）は単位が違います。公式マニュアルによると、上限は リクエスト回数 で数えます。 ※ さくらのクラウド マニュアル「さくらのAI Engine 利用手順」より（2026-11-25確認） 「1リクエストにどれだけ情報を詰め込んでも回数は1」...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "AIエージェントに「定期実行タスク」を任せる前に決める5つのこと",
+      "url": "https://zenn.dev/temanashi_kobo/articles/5b925af13c7e6f",
+      "site": "Zenn(LLM)",
+      "published": "2026-11-26T12:13:50Z",
+      "description": "指示書の書き方（前回記事）で扱ったのは、1回きりのタスクでした。定期実行――毎日・毎週・2時間おきに繰り返すタスク――は、別の壊れ方をします。1回目はうまくいっても、30回目に静かに壊れている、という壊れ方です。 この記事では、定期実行タスクを任せる前に決めておくべき5つのことを整理します。 定期実行の事故で一番多いのは、同じ処理が2回走ることです。前回の実行が長引いて次回と重なる、失敗したと思っ...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "Cloudflareだけで日本語RAGを作って、22問で測りながら直してみた",
+      "url": "https://zenn.dev/kazuki_okura/articles/cloudflare-japanese-hybrid-rag",
+      "site": "Zenn(LLM)",
+      "published": "2026-11-26T11:58:43Z",
+      "description": "公的AIガイドラインを対象に、Cloudflare(Workers AI + Vectorize + D1)だけで出典つきの日本語RAGを作りました Vectorize にはキーワード検索がないので、D1 の全文検索(FTS5 の trigram)を足してハイブリッド検索にしたら、少しだけ良くなりました 一方で、rerank を入れたら精度が下がり、文書の「ひな形」の伏せ字を事実として答える事故も...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "Quadro P2200(VRAM 5GB)でMoE LLMを2種類動かしてみた",
+      "url": "https://zenn.dev/nooop/articles/00cde2e1a825ad",
+      "site": "Zenn(LLM)",
+      "published": "2026-11-26T11:41:19Z",
+      "description": "llama.cpp が MoE に対応し、エキスパートの一部を CPU 側の RAM に置くことで高速化できるようになったようです。VRAM 5GB でも35B級のモデルが実用的な速度で動くのか、速度を測ってみました。 NVIDIA Quadro P2200(VRAM 5GB) で、MoE(Mixture of Experts)モデルを動かしてみました。 やったことは llama.cpp の速度計...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "AIエージェントへの「指示書」の書き方 — 自律タスクを安定させる7つの要素",
+      "url": "https://zenn.dev/temanashi_kobo/articles/4a88b0d5083947",
+      "site": "Zenn(LLM)",
+      "published": "2026-11-26T11:23:05Z",
+      "description": "AIエージェントに仕事を任せて失敗する原因は、たいてい能力ではなく指示書の欠落です。「いい感じにやっておいて」は、人間同士でも事故のもとですが、エージェント相手ではほぼ確実に事故になります。 この記事では、エージェントに渡す指示書（タスクブリーフ）に必ず入れるべき7つの要素を、実際に使えるテンプレート付きで整理します。 「調査して」ではなく「候補を3件、比較表の形で」が成果物です。エージェントは、...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
     {
       "title": "RTX 5070 と Foundry Local でハイブリッド LLM のローカル側を実測：容量・品質と障害時の切り替え",
       "url": "https://zenn.dev/hlt/articles/c2e3ed8ff9ddb8",
@@ -1799,16 +1929,6 @@
       "site": "Zenn(LLM)",
       "published": "2026-11-18T23:41:39Z",
       "description": "はじめに\n!\n今後 nyangram を開発します。nyaaaaaan\n\nLLM は、文章をトークンという単位に区切って読み、次のトークンを 1 つずつ当てて文章を書きます。Engram の論文は、この仕事を性質の違う 2 種類に分けて考えます。1 つは、文脈を読んで筋道を組み立てる仕事で、深い計算が要ります。もう 1 つは、決まった知識を思い出す仕事です。童話の主人公の呼び名「Little Re...",
-      "category": "AI・技術",
-      "rss_category": "",
-      "image_url": ""
-    },
-    {
-      "title": "ニューラルネットをDSLで一から書いて、既存のLLMに接続する - Qwenに学習なしで知識を組み込む",
-      "url": "https://zenn.dev/caphtech/articles/kestrom-rules-open",
-      "site": "Zenn(LLM)",
-      "published": "2026-11-18T23:07:08Z",
-      "description": "この記事は個人（と会社）の実験の記録です。モデルはQwen3.5-4B（Apache License 2.0）を使いました。実装と実行はClaude Code（AnthropicのClaude）と一緒に行い、設計の議論にはGPT-6.2 Astraも加わりました。\n\n 何をしたか\nニューラルネットワークはデータから学習して作るものだと考えられています。この記事では学習をしません。モデルを、DSLで...",
       "category": "AI・技術",
       "rss_category": "",
       "image_url": ""
