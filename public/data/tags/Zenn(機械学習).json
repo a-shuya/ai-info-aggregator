@@ -1,8 +1,78 @@
 {
   "site": "Zenn(機械学習)",
-  "last_updated": "2026-11-27T03:59:40.349630",
-  "total_articles": 2318,
+  "last_updated": "2026-11-27T13:43:46.399661",
+  "total_articles": 2325,
   "articles": [
+    {
+      "title": "類似事例の並べ替えを OpenAI Decisions API に任せてみた：店舗・事務所の賃料査定での実験",
+      "url": "https://zenn.dev/sumasate_tec/articles/decisions-api-tenant-rerank",
+      "site": "Zenn(機械学習)",
+      "published": "2026-11-27T07:58:05Z",
+      "description": "スマサテ株式会社のAIエンジニアのkoyanoです。 弊社は賃料査定システムを開発しており、私はその査定ロジックの改善などを担当しています。最近は、住居だけでなく店舗・事務所の賃料査定のロジックを作成していました。 店舗・事務所の査定では、周辺で募集されている「似ている事例」を選び、その賃料から査定額を出します。この「似ている」を、今は手作りの類似スコアで数値化して並べています。 ただ、実際の物件...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "Whisperの注意ヘッドを1個だけいじって、日本語の聞き取りが崩れないか120文で確かめてみた",
+      "url": "https://zenn.dev/akisayo/articles/whisper-head-edit-ja120",
+      "site": "Zenn(機械学習)",
+      "published": "2026-11-27T05:59:06Z",
+      "description": "音声認識モデルのWhisperには、音声にない文章を出力してしまう癖があります。無音や雑音の区間に、それらしい一文が出てくる現象です。 これを追加学習なしで、重みを少し書き換えるだけで抑えられないか。手元でそんな実験をしていて、その途中で日本語の聞き取りへの影響を確かめました。この記事はその検証記録です。 先に結論を書いておきます。 Whisper smallのデコーダで、注意ヘッドを1個だけ弱め...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "線画着色の評価を「毎回同じヒント」で: pip install hintauc ではじめる Hint-AUC",
+      "url": "https://zenn.dev/madorin2work/articles/cc95ca3e73da7a",
+      "site": "Zenn(機械学習)",
+      "published": "2026-11-27T04:38:05Z",
+      "description": "線画着色（line art colorization）の論文を読んでいると、「ユーザーが置いた色ヒント」をランダムに作って評価している例がよくあります。ランダムなので、同じモデルでも実行するたびにスコアが変わります。 そこで、イラストの領域からヒントを決定的に作る（DHT） ことと、ヒントの量を 0 % から 100 % まで変えたときのスコアを曲線の面積でまとめる（Hint-AUC） ことを提案...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "評価基準と現場の慣習が食い違うとき、注記を足すとLLM判定器はどう変わるか ― 999件と未見の300件で確かめた",
+      "url": "https://zenn.dev/quent/articles/0a29761c6d2cb9",
+      "site": "Zenn(機械学習)",
+      "published": "2026-11-27T02:33:04Z",
+      "description": "LLMに会話の品質を採点させるとき、評価基準の字面と現場の慣習が食い違うことがあります。たとえば「名前を呼ぶならファーストネームで」という基準は、日本で正しいとされる「名字＋様」とぶつかります。 このような食い違いがある箇所に、評価基準を変えずに「地域慣習の注記」を3行だけ足しました。その結果をClaudeの4モデル（Haiku 5.5・Sonnet 5.5・Opus 5.5・Fable 5.2）...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "【フィジカルAI解説】Egocentricとは？エゴセントリックデータの集め方について解説",
+      "url": "https://zenn.dev/nexdataai/articles/c7910bcec36edb",
+      "site": "Zenn(機械学習)",
+      "published": "2026-11-27T01:43:39Z",
+      "description": "フィジカルAIの研究開発で使う学習データは、「フィジカルAIデータピラミッド」として整理できます。土台となるのは、3D仮想環境で物体の位置や作業条件を変えて生成するシミュレーションデータ（合成データ）です。その上に、人が実際に作業する様子を記録した一人称視点データ、人が小型グリッパーを手に持って物のつかみ方や動かし方を実演したUMIデータ、そして人がロボットを遠隔操作して収集した実機のテレオペレー...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "DIY AutoML 開発メモ (2) TensorFlow・PyTorch・AutoGluon・H2Oで結果を照合する",
+      "url": "https://zenn.dev/okamasaya/articles/diy-automl-development-note-02-cross-check",
+      "site": "Zenn(機械学習)",
+      "published": "2026-11-27T01:05:40Z",
+      "description": "前回は、CSVの点検から分類モデルを選び、取り置いたデータで最後に評価するところまでを紹介しました。今回は、その結果を別のライブラリでも確かめてみます。題材はIrisとWineです。 TensorFlowとPyTorchには、同じ構成のニューラルネットワークを渡して、予測ラベルと確率を比べました。AutoGluonでは、選んだモデルをDIY AutoMLと同じ保留テスト行・評価指標で照合しました。...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "ML基盤から深層学習まで固める技術書5選",
+      "url": "https://zenn.dev/komatsu_ops/articles/20261127_book_ref",
+      "site": "Zenn(機械学習)",
+      "published": "2026-11-27T00:05:25Z",
+      "description": "去年の秋頃、LLMを使ったプロダクト開発に本格的に関わるようになった。プロンプトエンジニアリングやRAGの実装はなんとかこなせるものの、モデルの挙動が想定外になったとき「なぜそうなるのか」を説明できない自分に気づいた。APIの向こう側がブラックボックスのままだと、トラブルシュートで手が止まる。 そこで基礎を固め直そうと技術書を何冊か読み始めたが、途中で挫折する本が続いた。分厚い教科書を1ページ目か...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
     {
       "title": "RTX 3060 1枚・誤差逆伝播なしでゼロから日本語モデルを育てた「ENNE」の設計と限界",
       "url": "https://zenn.dev/cardy0828/articles/enne-growing-modular-japanese-lm",
@@ -48,7 +118,7 @@
       "url": "https://zenn.dev/quent/articles/2329d74464eff5",
       "site": "Zenn(機械学習)",
       "published": "2026-11-26T15:50:08Z",
-      "description": "架空の日本語サポート会話50件を、4つのLLM（Claude・Gemini・DeepSeek・Qwen）に品質監査させ、新しい会話で同じ指示文を原則3回ずつ流しました（Qwenは時間がかかるため1〜2回）。 同じ指示文でも、「名字＋様」を減点する回としない回がある。 Geminiは3回中2回、DeepSeekは3回中1回、Qwenは2回とも、名字＋様で呼んだ7件をすべて減点しました。Claudeは...",
+      "description": "架空の日本語サポート会話50件を、4つのLLM（Claude・Gemini・DeepSeek・Qwen）に品質監査させ、新しい会話で同じ指示文を原則3回ずつ流しました（Qwenは時間がかかるため1〜2回）。 同じ指示文でも、「名字＋様」を基準1どおりに減点する回と、現場の判定に寄せて減点しない回がある。 Geminiは3回中2回、DeepSeekは3回中1回、Qwenは2回とも、名字＋様で呼んだ7...",
       "category": "AI・技術",
       "rss_category": "",
       "image_url": ""
@@ -84,7 +154,7 @@
       "image_url": ""
     },
     {
-      "title": "✍️ PyTorchと量子アニーリング(D-Wave Quantum)の連携",
+      "title": "PyTorchと量子アニーリング(D-Wave Quantum)の連携",
       "url": "https://zenn.dev/qa_messenger/articles/9beef7e6924bb8",
       "site": "Zenn(機械学習)",
       "published": "2026-11-26T10:32:19Z",
@@ -94,11 +164,11 @@
       "image_url": ""
     },
     {
-      "title": "BQMLのTRANSFORM句が「学習と推論のズレ」を解決してくれる話",
+      "title": "BQMLのTRANSFORM句がTraining-Serving Skewを解決してくれる話",
       "url": "https://zenn.dev/ml_joshibu/articles/4_bqml-transform",
       "site": "Zenn(機械学習)",
       "published": "2026-11-26T05:56:27Z",
-      "description": "機械学習モデルを本番運用したことがある人なら、一度はこの問題を踏んでいると思います。 Training-Serving Skew(学習と推論のズレ)。 学習時に施した前処理と、推論時に施す前処理が微妙にズレていて、オフライン評価では好成績だったモデルが本番で使い物にならない——という、MLOpsの古典的な事故です。 BigQuery ML(BQML)には、この問題をSQLレベルで潰す TRANSF...",
+      "description": "機械学習モデルを本番運用したことがある人なら、一度はTraining-Serving Skew(学習と推論のズレ)問題を踏んでいると思います。 学習時に施した前処理と、推論時に施す前処理が微妙にズレていて、オフライン評価では好成績だったモデルが本番で使い物にならないという、MLOpsの古典的な事故です。 BigQuery ML(BQML)には、この問題をSQLレベルで解決できる TRANSFORM...",
       "category": "AI・技術",
       "rss_category": "",
       "image_url": ""

@@ -1,8 +1,128 @@
 {
   "site": "Zenn(Python)",
-  "last_updated": "2026-11-27T03:59:40.349630",
-  "total_articles": 8167,
+  "last_updated": "2026-11-27T13:43:46.399661",
+  "total_articles": 8179,
   "articles": [
+    {
+      "title": "FastAPI で pytest + TestClient の自動テストを書いて詰まった点とテスト設計",
+      "url": "https://zenn.dev/ko_tech/articles/springboot-dev-fastapi-pytest",
+      "site": "Zenn(Python)",
+      "published": "2026-11-27T12:15:51Z",
+      "description": "前回まで1ファイルに実装したドキュメント管理 API は、これまで Swagger UI の画面から手動で動作確認していました。次の段階で Router・Service・Repository への分割リファクタリングを進めるため、前もって pytest と TestClient を使って 27 ケースの自動テストを tests/test_documents.py に書きました。 テストを書く中で、...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "AI秘書の誤認識をAmiVoice APIで撃退！Whisperとガチ比較",
+      "url": "https://zenn.dev/nalt/articles/voxmate-amivoice-stt-benchmark",
+      "site": "Zenn(Python)",
+      "published": "2026-11-27T12:15:32Z",
+      "description": "これは実際の VoxMate の会話ログだ。私が言ったのは「デスクランプつけて」だった。 最近の LLM は賢いので、こうして「デスクラップ」と誤認識されても文脈から「デスクランプのことだな」と気を利かせて家電を点けてくれる。ただ、毎回文字起こしが少しズレたり、ノイズ混じりの発話で突然 補 Schweней のようなドイツ語とキリル文字が混ざった文字列が飛んできたりするうえに、M1 Mac min...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "OpenAPI 3.xのセキュリティ監査と破壊的変更検知をPython標準ライブラリだけで自動化する",
+      "url": "https://zenn.dev/inemuri/articles/openapi-security-audit-python",
+      "site": "Zenn(Python)",
+      "published": "2026-11-27T12:06:58Z",
+      "description": "REST APIの仕様書（OpenAPI 3.x）が大きくなると、目視レビューだけでは次のような重大ミスが必ずすり抜けます。 http:// の非TLSサーバーURLが本番仕様に残っている api_key や token のような機密情報がクエリ文字列（in: query）に渡されている（アクセスログやリファラに漏洩する） 内部参照（$ref: \"#/components/schemas/...\"...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "レガシーなPython 2.7 + cgkit環境をレジストリを汚さずポータブル構築し、VS Codeから実行する手順",
+      "url": "https://zenn.dev/yokamak/articles/6afdccb3851fe1",
+      "site": "Zenn(Python)",
+      "published": "2026-11-27T11:48:12Z",
+      "description": "3DCGのライブラリの一つである cgkit などのレガシーなPython 2.7資産を、現代のWindows環境（特にインストール権限やコマンドプロンプト起動制限がある学校のPC室など）で安全に動かすためのポータブル環境構築と、VS Codeのタスク機能を使った実行手順をまとめます。 レジストリ・システム環境変数を汚さない: WinPythonをベースにすることで、フォルダを解凍するだけで完結し...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "POMDP入門",
+      "url": "https://zenn.dev/enaiya/books/pomdp-with-games",
+      "site": "Zenn(Python)",
+      "published": "2026-11-27T10:48:21Z",
+      "description": "ゲームで学ぶ部分観測下の意思決定。",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "FastAPIで深く考えずにasync defを書くと詰む",
+      "url": "https://zenn.dev/taichan/articles/2de10a10f2acc0",
+      "site": "Zenn(Python)",
+      "published": "2026-11-27T10:44:46Z",
+      "description": "Python の async/await は「I/O を待つ間に別の仕事を進める」ための仕組み。並列計算を速くする魔法ではない FastAPI では def で書いた関数は別スレッドで動く。async def で書いた関数はイベントループの上で動く。ここの違いを知らないとつまずく async def の中で requests.get() や time.sleep() を呼ぶとサーバ全体が止まる 迷...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "Komachi で1日分のデータを取ってきて遊ぶ",
+      "url": "https://zenn.dev/kamakuraquant/articles/97a9941e5c0b0a",
+      "site": "Zenn(Python)",
+      "published": "2026-11-27T10:20:00Z",
+      "description": "これまではクオンツ研究の記事を書いてきましたが、これからは研究の記事と並行して、取引システム開発の知見も発信していきます。システム開発の記事では、バックテストの構築、戦略の実装、本番運用の実践を扱っていく予定です。 今回はその初回として、Komachi で取ってきたデータファイルそのものを覗き、データの構造と読み方、可視化の仕方を紹介します。使うのは2026年6月14日（日曜、日本時間）の1日分で...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "「営業日」は誰のカレンダーか：行政機関・銀行・民法の年末年始をPythonで比べる",
+      "url": "https://zenn.dev/wozo1004/articles/11fd6b334f9b27",
+      "site": "Zenn(Python)",
+      "published": "2026-11-27T09:38:35Z",
+      "description": "「5営業日後」と書かれた仕様を実装するとき、最初に決めるのは土日と祝日の扱いだと思います。ところが年末年始になると、同じ「営業日」でも誰の営業日かによって答えが変わります。 この記事では、2027年12月末から2028年1月初めを例に、次の3つの規則をPythonで実装して並べます。 行政機関の休日に関する法律（国の行政機関の休日） 銀行法と銀行法施行令（銀行の営業所の休日） 民法の期間計算（第1...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "User-Agentを偽っても、ブラウザではないとTLSでバレる",
+      "url": "https://zenn.dev/12ban/articles/attack-infra-hunting-05-ja4-plus",
+      "site": "Zenn(Python)",
+      "published": "2026-11-27T06:07:51Z",
+      "description": "curl・Python・ブラウザと自分のサーバーの JA4+ を取り、何が分かって何が分からないかを確かめる この記事の3行まとめ User-Agent を Chrome にしても、curl の JA4 は変わらない。JA4 は、TLS の接続を始めるときにクライアントが送る「使える暗号の一覧」と「拡張の一覧」から作るので、ブラウザかどうかが分かる ただし、JA4 で分かるのは主に TLS ライブ...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "【GIS×オープンデータ】国土交通省「不動産情報ライブラリ」APIと裁判所競売データを統合する空間データパイプライン設計｜TQC株式会社",
+      "url": "https://zenn.dev/keibaikoubai/articles/b6b05ea8147d39",
+      "site": "Zenn(Python)",
+      "published": "2026-11-27T04:42:53Z",
+      "description": "不動産競売（地方裁判所 BIT）や国税庁公売（NTA）物件の投資価値を評価する際、最も重要となるのが**「売却基準価額が近隣の適正市場価格に対してどの程度乖離しているか」**の定量判定です。 裁判所の評価書には不動産鑑定士による価格算定が記載されていますが、過去数ヶ月〜数年の最新成約動向とリアルタイムに比較するためには、公的オープンデータの統合パイプラインが不可欠となります。 本稿では、不動産競売...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "PythonでWAVのFFTスペクトルとチャープのスペクトログラムを描く",
+      "url": "https://zenn.dev/toya_dev/articles/audio-spectrum-cli",
+      "site": "Zenn(Python)",
+      "published": "2026-11-27T04:22:54Z",
+      "description": "WAVファイルをFFTで分析すると、どの周波数成分が含まれるか分かります。しかし、周波数が時間とともに移動する音では、ファイル全体のFFTだけでは「いつその周波数が現れたか」を読み取れません。この記事では、静止スペクトルと短時間フーリエ変換（STFT）によるスペクトログラムを作り、20 Hzから20 kHzへ上昇する対数チャープで比較します。 依存ライブラリをインストールし、テスト音源を作ります。...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "レースの「固さ」を 1 つの数にする ── 1 号艇の 1 着率から作る指標",
+      "url": "https://zenn.dev/yutakacraft/articles/ad5d20f6c63f46",
+      "site": "Zenn(Python)",
+      "published": "2026-11-27T02:59:21Z",
+      "description": "個人で競艇の予想アプリとデータのサイトを作っています。サイトに「どのレースが堅く、どのレースが荒れるか」を 24 場 × 12 レースの表にした頁を置きました。この記事では、「固さ」を 1 つの数にする時に何を選び、差をどう確かめたかを書きます。 固さを 1 つの数にする案は、いくつか考えられます。 今回は、いちばん下の 1 号艇の 1 着率(イン 1 着率) にしました。オッズが無くても着順と艇...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
     {
       "title": "iPadにCode-OSSの作業環境を持ち込んで、Pythonをオフラインで動かす",
       "url": "https://zenn.dev/wenlo/articles/779dfa4cf1842d",
