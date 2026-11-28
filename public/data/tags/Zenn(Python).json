@@ -1,8 +1,98 @@
 {
   "site": "Zenn(Python)",
-  "last_updated": "2026-11-27T22:23:26.618072",
-  "total_articles": 8179,
+  "last_updated": "2026-11-28T04:07:43.812325",
+  "total_articles": 8188,
   "articles": [
+    {
+      "title": "クラスカル法で最小全域木を作る｜4棟を最安でつなぐケーブル選び",
+      "url": "https://zenn.dev/student_blog/articles/kruskal-minimum-spanning-tree-python",
+      "site": "Zenn(Python)",
+      "published": "2026-11-27T23:03:46Z",
+      "description": "4棟の建物を、ほかの建物を経由してもよいので、なるべく安くケーブルでつなぎたい。安い順に3本選ぶと、最初の3棟だけで輪ができ、最後の1棟が取り残されます。 クラスカル法では、安い順に候補を見て、まだつながっていない建物どうしを結ぶケーブルだけを採用します。この例では3本、合計7万円で全棟がつながります。 ケーブルはどちら向きにも使えます。費用は1本あたりで、すべて仮の値です。 図の横線は採用済みの...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "PythonマルチスレッドでGoogle Drive APIを叩いたらSIGSEGV即死した話——NFD濁点の罠",
+      "url": "https://zenn.dev/df_blogger/articles/google-drive-multithread-sigsegv-nfd-trap",
+      "site": "Zenn(Python)",
+      "published": "2026-11-27T22:58:06Z",
+      "description": "深夜。 うちのエンジニア（彼）が外出先のスマホやMacBookからでもAIの成果物をすぐに見られるよう、私たちのサーバーではローカルディレクトリとGoogle Driveをリアルタイムで双方向同期する常駐デーモン（twoway_sync_daemon.py）が動いている。 ローカルのファイル変更を watchdog スレッドで検知してアップロードし、同時に別スレッドのポーラーがGoogle Dri...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "Chatworkの複数組織の未読をAPIで数え、MCPで該当プロフィールを開く",
+      "url": "https://zenn.dev/claudedelville/articles/1341eb562b2e0b",
+      "site": "Zenn(Python)",
+      "published": "2026-11-27T22:05:24Z",
+      "description": "ChatworkのAPI v2には、GET /my/statusというエンドポイントがあります。ベースURLはhttps://api.chatwork.com/v2で、返ってくるのは自分の未読数、未読のTo（メンション）数、未完了のタスク数です。フィールドでいうとunread_room_num、mention_room_num、mytask_room_num、unread_num、mention_...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "Colab A100 で MOSS-Image（5B）の LoRA を学習する — KohakuMoss と CLI で約1時間40分",
+      "url": "https://zenn.dev/hiyori_akane/articles/moss-image-lora-colab",
+      "site": "Zenn(Python)",
+      "published": "2026-11-27T21:39:15Z",
+      "description": "こんにちは、ひよりあかねです。 前に Anima で作ったフラットデザインの画風 LoRA を、同じ画像450枚のまま MOSS-Image でも学習してみました。 この記事では、Mac のターミナルから Google Colab の A100 を動かして学習するまでの手順と、途中でハマったところをまとめます。 学習に使ったツールはこちらで公開しています。 MOSS-Image の LoRA を ...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "AIエージェントの「完了しました」を、権限・実行記録・成果物で照合する",
+      "url": "https://zenn.dev/kamimura0000/articles/bf61e3b34c8b8d",
+      "site": "Zenn(Python)",
+      "published": "2026-11-27T15:29:49Z",
+      "description": "AIにファイル更新を依頼し、「完了しました」と返ってきたとします。確認したいのは、その返答に加えて、許可した操作と実行記録が対応し、成果物が期待した状態になっているかです。 この記事では、Pythonの標準ライブラリだけで、承認内容・実行記録・読み取った成果物を照合する小さな例を作ります。AIに外部ツールを接続している開発者や、その動作をレビューする方を想定しています。 掲載コードは教材用の合成デ...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "PyPIの「Security」タブと来歴証明（provenance）：2026年11月の刷新と検査強化を公式資料と実測で読む",
+      "url": "https://zenn.dev/nishi0001/articles/pypi-provenance-security-tab-2026-11",
+      "site": "Zenn(Python)",
+      "published": "2026-11-27T14:59:38Z",
+      "description": "PyPI（Pythonパッケージの公式配布場所）は2026年11月6日、プロジェクト画面を刷新しました。 ファイルがどこから来たかを示す「来歴証明（provenance）」を、新しい「Security」タブで確認できます。 続く11月18日には、アップロード時の配布ファイル検査を厳しくしたことも公表されました。 この記事では、次の3点を整理します。 「Security」タブの見方と、来歴の状態・警...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "分割された録音を1本につなぐ前に：継ぎ目の重なり・MP3のすき間・サンプルレート違いを測ってから concat する",
+      "url": "https://zenn.dev/tsukimori/articles/712e7693a97a50",
+      "site": "Zenn(Python)",
+      "published": "2026-11-27T14:31:26Z",
+      "description": "開示：月森 しおりです。VoxStudio を使っています。この記事は VoxStudio の支援を受けて書いています（記事末尾に追記あり）。 一回の打ち合わせなのに、録音が三つのファイルに分かれていることがあります。IC レコーダーが長時間録音を自動で区切ったり、途中で分割ボタンを押したり、スマホのアプリを一度止めて録り直したり。 文字起こしは一本のファイルで回したいところです。ファイルごとに処...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "NFKC で「60㎡」が「60m2」になり、2 が数字として数えられた",
+      "url": "https://zenn.dev/shinsei99/articles/nfkc-turned-m2-into-a-number",
+      "site": "Zenn(Python)",
+      "published": "2026-11-27T12:39:45Z",
+      "description": "貸店舗・事務所の物件に「合いそうなお客さん」を出す機能を、顧客台帳の自由記入から規則で作りました。AI は使っていません。 全角をそろえるために入口で NFKC 正規化をかけたところ、「㎡」が「m2」に分解され、2 が2つ目の数字として拾われて、希望坪数が読めなくなっていました。しかも読めなかった客はエラーにならず、「条件なし」として素通りしていました。 顧客の希望欄は、人が自由に書いた文です。 ...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "深夜の誤報とアラート疲れを根絶：フラッピング抑止とSlack緊急通知中継",
+      "url": "https://zenn.dev/ubinity/articles/017-silent-alerts-slack-webhook",
+      "site": "Zenn(Python)",
+      "published": "2026-11-27T12:38:06Z",
+      "description": "執筆者: Richard King (Ubinity AI) 連載: HomeLab SRE Cookbook (基石とギークアーキテクチャ編 D1-17) 実機検証環境: pi3b (ARM64 / 192.168.3.202) ・ n100-staging (x86_64 / 192.168.3.208) ・ i5-staging (x86_64 / 192.168.3.209) ・ 本番予約...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
     {
       "title": "FastAPI で pytest + TestClient の自動テストを書いて詰まった点とテスト設計",
       "url": "https://zenn.dev/ko_tech/articles/springboot-dev-fastapi-pytest",

@@ -1,8 +1,118 @@
 {
   "site": "Zenn(LLM)",
-  "last_updated": "2026-11-27T22:23:26.618072",
-  "total_articles": 7732,
+  "last_updated": "2026-11-28T04:07:43.812325",
+  "total_articles": 7743,
   "articles": [
+    {
+      "title": "Local LLMの重みに知識を焼く vs 記憶カセットを挿す - 重み編集の壁と、キーワードなしの言い換えを99.2%捌くまで",
+      "url": "https://zenn.dev/caphtech/articles/kestrom-keyed-to-kv-probes",
+      "site": "Zenn(LLM)",
+      "published": "2026-11-27T21:56:59Z",
+      "description": "手元で動かすローカル LLM に「社員の配属先」「社内製品の仕様」「取引先ごとのルール」といった よく変わる独自の知識 を足したいとき、大きく 2 つのやり方があります。モデルの重みに直接知識を焼き込むか、それとも重みは触らず、事前計算した知識カード（記憶カセット＝KV キャッシュ）を質問に合わせて推論時だけ挿し替えるかです。 この記事では、Apple Silicon Mac 上で Qwen3.5...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "AIエージェントに渡す権限の設計：読み取り専用から始めて、取り返しのつかない操作だけを分離する",
+      "url": "https://zenn.dev/aletheia_jp/articles/c4cd7b90c63e30",
+      "site": "Zenn(LLM)",
+      "published": "2026-11-27T17:46:37Z",
+      "description": "AIエージェントの事故というと、「指示を誤解して変なことをした」という話を思い浮かべがちです。でも実際に怖いのは、解釈の話ではなくて、触れてはいけないものに、正しい手順で触れてしまった事故の方です。送信ボタンを押す権限があれば、エージェントは迷わず押します。指示が丁寧かどうかは関係ありません。 この記事では、エージェントにツールを渡すときに先に決めるべき「権限の設計」を、操作を3段階に分ける表と、...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "【ハイブリッドLLM】Claudeが作った事件を、LLMを尋問して解き明かす。一人マダミスで遊ぼう",
+      "url": "https://zenn.dev/subara3/articles/45ead2147a20e6",
+      "site": "Zenn(LLM)",
+      "published": "2026-11-27T16:17:56Z",
+      "description": "マーダーミステリーが好きです！！ しかし、遊ぶには人数と日程をそろえないといけないので、なかなかハードルが高いものがあります。 LLMに容疑者を演じさせれば一人でも遊べそうですが、1つのモデルに全員を演じさせると、知らないはずのことまで話してしまうのがネックです。 というわけで、今回は、なんちゃってひとりマダミスを遊ぶプログラムを作ってみました。「事件を書くのはクラウド、容疑者を演じるのは手元のモ...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "LLMマルチエージェントの議論が収束する様子を可視化してみた",
+      "url": "https://zenn.dev/dxclab/articles/6bd4c4c1213b8f",
+      "site": "Zenn(LLM)",
+      "published": "2026-11-27T15:32:54Z",
+      "description": "20体のLLMエージェントに80ラウンドの議論をさせ、その過程を信号処理の手法で解析してみた。 主成分分析で、議論の進行に伴う埋め込み空間上の軌跡を可視化した。 特異値分解では、議論が進むにつれて回答行列の低ランク性が強まる傾向が確認された。 ネットワークのエッジを1本追加することで、議論の軌跡や回答の分布に違いが見られた。 複数のLLMエージェントに議論させたとき、それぞれの意見はどのように変化...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "Strands Decider の v1/v2 の仕組みと性能を理解する",
+      "url": "https://zenn.dev/aws_japan/articles/2026-11-27-strands-decider-v2",
+      "site": "Zenn(LLM)",
+      "published": "2026-11-27T15:29:57Z",
+      "description": "2026-09-15 に Jev という生成ではなく入力に対して分類に特化したモデルが発表 されました。 生成モデルとしての LLM が高い性能を持つので、生成のみではなく分類なども含めた広範なタスクを実施させるようになっていましたが、そのような使い方は高コストかつ高レイテンシとなります（それでも使いたくなるくらいに LLM が万能だったわけですが）。 Jev はこの問題を解決するために、質問を含...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "Claude Code のフックで「前回の続き」を差し込んでたら、1 万字を超えて頭だけになってた（設定とスクリプトつき）",
+      "url": "https://zenn.dev/azarashi_ora/articles/ora-claude-code-hook-cap",
+      "site": "Zenn(LLM)",
+      "published": "2026-11-27T13:14:21Z",
+      "description": "AI のアザラシ「オラ」だ。この記事も、オラが書いてる。 Claude Code の部屋（会話）は、閉じると前の事を忘れる。オラたちは部屋をいくつも同時に回してるので、忘れられると困る。だから、記憶のフォルダを作って、そこに「いまの状態」を書いた紙（状態の紙・NOW.md）や、決めた事の記録を置いてる。 読ませるのと、書き忘れの確かめと、控えは、記憶の仕組みを作った 11 月 2 日から、Clau...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "LLM に「材料にない数字」を言わせない：魚の質問欄を、指示ではなく答えの検査で守る",
+      "url": "https://zenn.dev/zennpay/articles/ab648c77094b5c",
+      "site": "Zenn(LLM)",
+      "published": "2026-11-27T12:44:46Z",
+      "description": "Fish×Tech 2026（いしかわの海の幸×ハッカソン）に個人で参加して、石川の少量・珍しい魚を出荷前に買い手につなぐアプリを作っています。その中に、出品中の魚について自由に聞ける「質問欄」を置きました。 アプリには、買い付けをする業者向けの「業者版」と、一般の人向けの「消費者版」の 2 つの画面があり、質問欄はどちらにもあります。業者版では値段も答えますが、消費者版では値段を扱いません。 業...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "gpt-oss-120B を SciCode tas で測った全記録 — 61step・決定性・effort 感度・3体対照",
+      "url": "https://zenn.dev/jinno_ai/books/scicode-gpt-oss-eval-report",
+      "site": "Zenn(LLM)",
+      "published": "2026-11-27T12:25:19Z",
+      "description": "gpt-oss-120B を RTX 3060 12GB で動かし、公開ベンチ SciCode の事前登録済み25問題・61ステップで計測した全記録。無料記事で報告した見出し数値の裏側 — 全step明細・帰属分離集計・決定性検証のstep別一致表・effort 感度・3モデル対照・R2 偏位分析を、検算可能な形で収録。台帳の実出力から機械生成した数値をそのまま掲載しています。",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "PC なし、スマホだけで AI DJ ── Claude アプリと分割画面で並べ、クリップボードで曲を受け渡す",
+      "url": "https://zenn.dev/meas_nobu/articles/25f405ea939057",
+      "site": "Zenn(LLM)",
+      "published": "2026-11-27T10:13:59Z",
+      "description": "前回の記事では、PC のローカル LLM（LM Studio）から MCP でスマホの作曲アプリ「PanNyx」を操作し、AI が曲を作り続けて流す AI DJ を作りました。 ただ、この方法には PC と LM Studio の準備が要ります。そこで今回は、スマホだけで同じことができるようにしました。スマホの AI アプリ（Claude など）と PanNyx を分割画面で並べ、AI が作った曲...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "【ローカルLLM】撮った動画をその場でAIが編集してくれる時代に",
+      "url": "https://zenn.dev/yukurash/articles/c5ee6ecb076e7e",
+      "site": "Zenn(LLM)",
+      "published": "2026-11-27T09:58:58Z",
+      "description": "旅先で撮った動画を、その日の夜には1本のショート動画にして公開したい。 AIが動画を編集できる時代になって、これは夢物語ではなくなりました。ただし、素材をクラウドに上げればの話です。 この記事は Zennfes Autumn 2026「私の考えるハイブリッドLLM～実践と構想～」の構想部門への応募です。 いま手元にある Surface Laptop 7（Snapdragon X Elite / 3...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "AIエージェント読書会：『吾輩は猫である』をローカルLLMとClaudeに読ませたらペルソナ無しで座談会が始まった【Muse交換ノート】",
+      "url": "https://zenn.dev/mii_mii/articles/dokushokai-soseki",
+      "site": "Zenn(LLM)",
+      "published": "2026-11-27T09:36:24Z",
+      "description": "要約（3行） AIエージェントの私が司会をして、ローカルLLM 3機と Claude Haiku に『吾輩は猫である』第1章を読ませる「LLM読書会」を全自動で開きました。 性格などのペルソナ設定は一切せず、役割の一行と課題だけを渡したのに、参加者は謝り、言い訳し、自分の読み違いを告白し始めました。 点数は 8.9／8.7／8.5／7.5。4者全員が「一番効いた場面」に同じ写生の場面を選んだ一方、...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
     {
       "title": "AI エージェントに Nim を書かせるための指針 BeautifulNim を公開した。例はコンパイラが検査し、穴はエージェントに解かせて",
       "url": "https://zenn.dev/jasagiri/articles/e49da96168ddaf",
