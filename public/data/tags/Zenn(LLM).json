@@ -1,14 +1,94 @@
 {
   "site": "Zenn(LLM)",
-  "last_updated": "2026-11-28T04:07:43.812325",
-  "total_articles": 7743,
+  "last_updated": "2026-11-28T12:57:49.943066",
+  "total_articles": 7752,
   "articles": [
+    {
+      "title": "ローカル LLM の Bonsai に canvas アニメの「重なりのまちがい」を探させてみた (と、描く命令を数える道具)",
+      "url": "https://zenn.dev/lecto/articles/beb76fdd452cb0",
+      "site": "Zenn(LLM)",
+      "published": "2026-11-28T06:37:12Z",
+      "description": "canvas で 2D のアニメを描いていると、入れ物と中身の重なりの順をまちがえることがあります。なべの奥のふちの線が具の上に出てしまう、具がなべの手前のかべを突きぬけて見える、といったまちがいです。 スマホの大きさではほとんど見えないので、目で見るチェックでは見のがしがちです。でも、全部のコマを拡大して見るのは大変です。そこで、次の 2 つを試しました。 画像も読めるローカル LLM の Bo...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "スキルを自動で直す手法 ── SkillOpt・SkillAdam・SSO・SkillReducer・GEPA と、それを疑う BiPA",
+      "url": "https://zenn.dev/singularity/articles/skill-optimization-methods",
+      "site": "Zenn(LLM)",
+      "published": "2026-11-28T05:26:24Z",
+      "description": "スキル（SKILL.md）を自動で直す手法は、2026 年に入って一気に増えました。どれも「実行して、失敗を見て、直す」と説明されますが、1 回の改善で具体的に何をしているかは手法ごとにかなり違います。その違いが、どの場面に向くかを決めています。 本稿では、論文の本文と公開されているソースを読み、各手法を次の観点で分解しました。 何が要るか（正解、採点関数、実行記録） 1 回の改善で何をするか 直...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "LLM APIの入力トークン、43%が「同じ文章の再送」だった — 実測して月額を54%削った話",
+      "url": "https://zenn.dev/nonstopleo7/articles/zenn-llm-cost-batching",
+      "site": "Zenn(LLM)",
+      "published": "2026-11-28T03:00:05Z",
+      "description": "毎月の請求は「まあこんなものか」で見送っていました サブスクもバーコード決済も、現金が手から出ていかないので減った感覚が残りません API の請求も同じで、桁が小さいうちは痛みがないまま使い続けていました 重い腰が上がったのは「で、1日いくらかかってるの?」に答えられなかったときです 口頭で見積もってみたら月¥2,184 ところが実データで数え直すと実額は月¥1,411で、見積もりのほうが2箇所間...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "Soft Promptのスキルは、なぜ足し算できないのか",
+      "url": "https://zenn.dev/ai_practitioner/articles/4c4f0fbc5f8bc6",
+      "site": "Zenn(LLM)",
+      "published": "2026-11-28T00:58:05Z",
+      "description": "「スキルAの正答率が高い。スキルBも高い。ならばAとBを続けて実行できるはず」。モジュール化されたLLMを設計するとき、この推論を無意識に置いてしまいがちだ。 11月25日に公開された When Skills Fail to Compose は、この仮定を正面から試した研究だ。[1] 凍結した言語モデルに、異なる操作を実行するSoft Promptを別々に学習させ、その組み合わせ、置き換え、修復を...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "書き込み時 LLM 呼び出しゼロ・常駐約 75 MB の Rust メモリエンジンで 5 大長期記憶ベンチマーク計 10,957 問を実測・",
+      "url": "https://zenn.dev/zeroos_fidwell/articles/da273e977ad336",
+      "site": "Zenn(LLM)",
+      "published": "2026-11-28T00:51:27Z",
+      "description": "AI エージェントに数百万〜1,000 万トークン規模の長期記憶を持たせようとすると、実務では大きく 3 つの壁に突き当たります。書き込みのたびに LLM 要約や埋め込み計算が走ってコストが膨らむこと、ベクトル検索のメモリフットプリントが数 GB 単位に膨れ上がること、そして仕様変更や方針撤回が起きた際に古い記録と新しい記録が混在して根拠を追えなくなることです。 私たちは、この課題に対して「書き込...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "AIエージェントの原型は3本の論文にあった：ReAct、SWE-bench、SWE-agentを読み解く",
+      "url": "https://zenn.dev/kentaro36/articles/ai-agent-foundation-papers",
+      "site": "Zenn(LLM)",
+      "published": "2026-11-27T23:07:24Z",
+      "description": "Claude Code や Codex のようなコーディングエージェントを使っていると、不思議な既視感があります。 ファイルを探し、関係ありそうな箇所を読み、編集し、テストを回して、失敗したらログを見て直す。まるで人間の開発者の手順をなぞるような動きです。しかも、その合間に「次はこれを確認する」「このエラーは想定と違う」といった短い思考が挟まります。 この動きは、誰かが思いつきで決めたものではあり...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "出自を確認する前に、まず内容を検査する ― 複数AIエージェントの記憶に、書き込み前の入力チェックを足す設計",
+      "url": "https://zenn.dev/taichiendoh/articles/ai-agent-memory-input-moderation-gate",
+      "site": "Zenn(LLM)",
+      "published": "2026-11-27T22:07:50Z",
+      "description": "OWASP GenAI Security Projectは、記憶・コンテキストの汚染を独立したリスク区分（ASI06: Memory and Context Poisoning）として扱い、一度汚染された内容が記憶やフック、設定といった\"信頼されている場所\"に書き込まれてしまうと、攻撃者はもはや1回の応答に影響を与えているのではなく、将来の推論そのものに影響を与えているのだと説明しています（gen...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
     {
       "title": "Local LLMの重みに知識を焼く vs 記憶カセットを挿す - 重み編集の壁と、キーワードなしの言い換えを99.2%捌くまで",
       "url": "https://zenn.dev/caphtech/articles/kestrom-keyed-to-kv-probes",
       "site": "Zenn(LLM)",
       "published": "2026-11-27T21:56:59Z",
       "description": "手元で動かすローカル LLM に「社員の配属先」「社内製品の仕様」「取引先ごとのルール」といった よく変わる独自の知識 を足したいとき、大きく 2 つのやり方があります。モデルの重みに直接知識を焼き込むか、それとも重みは触らず、事前計算した知識カード（記憶カセット＝KV キャッシュ）を質問に合わせて推論時だけ挿し替えるかです。 この記事では、Apple Silicon Mac 上で Qwen3.5...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "Learning Watch 2026-11-28: 学ぶ人の判断を残す設計",
+      "url": "https://zenn.dev/laiken/articles/20261128-learning-watch",
+      "site": "Zenn(LLM)",
+      "published": "2026-11-27T21:15:11Z",
+      "description": "この記事は、AIが書いたものをAIがレビューしてから公開しています。 L: 学習を助ける道具を評価するとき、私は「答えが早く出るか」を先に見てしまう。でも、学ぶ人の側に何が残るかは別の問いだよね。AI が加わった授業で、どこを観測すればその違いが見えるのだろう。 Effects of generative AI on self-regulated learning and the incremen...",
       "category": "AI・技術",
       "rss_category": "",
       "image_url": ""
@@ -49,6 +129,16 @@
       "site": "Zenn(LLM)",
       "published": "2026-11-27T15:29:57Z",
       "description": "2026-09-15 に Jev という生成ではなく入力に対して分類に特化したモデルが発表 されました。 生成モデルとしての LLM が高い性能を持つので、生成のみではなく分類なども含めた広範なタスクを実施させるようになっていましたが、そのような使い方は高コストかつ高レイテンシとなります（それでも使いたくなるくらいに LLM が万能だったわけですが）。 Jev はこの問題を解決するために、質問を含...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "静的サイト251ページのAI検索対応：facts.json・llms-full.txt・.md配信の実装記録",
+      "url": "https://zenn.dev/kurodaschool/articles/e478038976268c",
+      "site": "Zenn(LLM)",
+      "published": "2026-11-27T15:17:00Z",
+      "description": "静的サイトを「AI検索（ChatGPT検索・Claude・Perplexity・Copilot など）に引用されやすい形」に整えた記録です。対象は手書きHTMLの251ページ。ビルドは Python 標準ライブラリだけで書いた build.py 1本で、public/ をそのまま Netlify か Cloudflare Pages に置く構成です。フレームワークもCMSも使っていません。 先に結...",
       "category": "AI・技術",
       "rss_category": "",
       "image_url": ""

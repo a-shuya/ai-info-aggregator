@@ -1,8 +1,38 @@
 {
   "site": "Zenn(機械学習)",
-  "last_updated": "2026-11-28T04:07:43.812325",
-  "total_articles": 2327,
+  "last_updated": "2026-11-28T12:57:49.943066",
+  "total_articles": 2329,
   "articles": [
+    {
+      "title": "ENNEの「一時キャッシュノード」：重みに焼き込まず推論ごとに作業記憶グラフを組む設計",
+      "url": "https://zenn.dev/cardy0828/articles/enne-ephemeral-cache-node",
+      "site": "Zenn(機械学習)",
+      "published": "2026-11-28T12:57:03Z",
+      "description": "Transformer は Self-Attention（推論時は過去のキー・値を KV キャッシュとして再利用）によって、文脈に現れた未知語や一時的な仮前提をその場で参照し、比較や推移を処理できる。一方、Attention（）も誤差逆伝播も使わずに開発している日本語システム ENNE（Engineering Neural Network Engine） にとって、「会話の中だけで有効な未知語や前...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "Claude Codeと作る競馬予測システム開発記(14) 評価の切り方編",
+      "url": "https://zenn.dev/teruyotasaki/articles/horse-racing-ml-dev-14-data-split",
+      "site": "Zenn(機械学習)",
+      "published": "2026-11-28T06:47:04Z",
+      "description": "前回は、モデルの再学習パイプラインについて書きました。 第14回となる今回は、データを train / valid / test に分ける「評価の切り方」の失敗談です。第3回で少し触れた学習期間の短縮について、そこに至るまでの経緯を詳しく書きます。毎週きちんと再学習していたのに、学習データは新しくなっていなかった、という話です。 当初は、データを時系列に並べて、行数の80% / 10% / 10%...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "公式ツールでQwen2-VLを書き出したら、ネット上に存在しないエラーで死んだ話：行き止まり4つと検索不能のエラー1つ",
+      "url": "https://zenn.dev/anguoyang/articles/3b30f0695fef78",
+      "site": "Zenn(機械学習)",
+      "published": "2026-11-28T00:14:48Z",
+      "description": "手順書どおりにやりました。ベンダー公式のツールキット、公式のガイド、ツールキットが「対応」とうたうモデル。ビルドステップ371件が全部緑で流れていって——最後に、丁寧に死にました。エラーメッセージは、公開インターネット的には「誰にも起きたことがない」ものでした。 エラー全文がこれです。 検索してみてください。私も認めたくないくらい何度も検索しました。結果ゼロ。フォーラムにも、GitHub issu...",
+      "category": "AI・技術",
+      "rss_category": "",
+      "image_url": ""
+    },
     {
       "title": "【Stable Diffusion】写真から顔を似せたら、決め手は「輪かく」と「見た目を読む1枚」だった（GTX 1660）",
       "url": "https://zenn.dev/tainari/articles/sd15-faceid-rinkaku-mitame",
@@ -98,7 +128,7 @@
       "url": "https://zenn.dev/cardy0828/articles/enne-growing-modular-japanese-lm",
       "site": "Zenn(機械学習)",
       "published": "2026-11-26T22:58:24Z",
-      "description": "現在の言語モデルは、巨大な1つのネットワークを大規模なGPUクラスタで一括学習して完成させる前提で設計されている。本体の重みへ知識を追加したり振る舞いを直したりする場合、再学習や重い調整がつきまとう。 これに対して、知能を「一度学習して完成させる巨大な塊」ではなく、**「設計し、育て、後から部品を足していくシステム」**として作れないかと考えたのが ENNE（Engineering Neural ...",
+      "description": "現在の言語モデルは、巨大な1つのネットワークを大規模なGPUクラスタで一括学習して完成させる前提で設計されている。本体の重みへ知識を追加したり振る舞いを直したりする場合、再学習や重い調整がつきまとう。 これに対して、知能を「一度学習して完成させる巨大な塊」ではなく、「設計し、育て、後から部品を足していくシステム」として作れないかと考えたのが ENNE（Engineering Neural Netw...",
       "category": "AI・技術",
       "rss_category": "",
       "image_url": ""
@@ -179,16 +209,6 @@
       "site": "Zenn(機械学習)",
       "published": "2026-11-26T10:32:19Z",
       "description": "量子アニーリングは、量子ゆらぎ組合せ最適化において最適解を探索する手法[1]として知られていますが、近年では機械学習で必要なサンプルを高速に得るためのサンプラーとしての研究[2]も行われています。 そうした潮流の中で、昨年8月に量子アニーリングマシンを提供するD-Wave Quantum Inc.は、同社の量子アニーリングマシンをPyTorchから利用するためのオープンソースツールキットを発表しま...",
-      "category": "AI・技術",
-      "rss_category": "",
-      "image_url": ""
-    },
-    {
-      "title": "BQMLのTRANSFORM句がTraining-Serving Skewを解決してくれる話",
-      "url": "https://zenn.dev/ml_joshibu/articles/4_bqml-transform",
-      "site": "Zenn(機械学習)",
-      "published": "2026-11-26T05:56:27Z",
-      "description": "機械学習モデルを本番運用したことがある人なら、一度はTraining-Serving Skew(学習と推論のズレ)問題を踏んでいると思います。 学習時に施した前処理と、推論時に施す前処理が微妙にズレていて、オフライン評価では好成績だったモデルが本番で使い物にならないという、MLOpsの古典的な事故です。 BigQuery ML(BQML)には、この問題をSQLレベルで解決できる TRANSFORM...",
       "category": "AI・技術",
       "rss_category": "",
       "image_url": ""

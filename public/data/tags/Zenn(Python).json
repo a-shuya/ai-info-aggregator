@@ -1,8 +1,78 @@
 {
   "site": "Zenn(Python)",
-  "last_updated": "2026-11-28T04:07:43.812325",
-  "total_articles": 8188,
+  "last_updated": "2026-11-28T12:57:49.943066",
+  "total_articles": 8196,
   "articles": [
+    {
+      "title": "DIY AutoML 開発メモ (3) 元CSVを残し、ParquetとDuckDBで学習前のデータを整える",
+      "url": "https://zenn.dev/okamasaya/articles/diy-automl-development-note-03-parquet-duckdb",
+      "site": "Zenn(Python)",
+      "published": "2026-11-28T02:56:54Z",
+      "description": "データが大きくなるほど、モデルを比べ直すたびに元CSVを読み込み、文字列を解析して必要な列を取り出す作業に時間がかかります。DIY AutoMLでは、点検したデータをParquetやDuckDBの作業用ファイルにして、次の実行でも使えるようにしました。作業用データを扱いやすくするとともに、ストレージとの読み書き（I/O）とCSVの再解析を減らし、前処理を速く、効率よく進めるのが目的です。 処理の順...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "直線の当てはまりを残差プロットで確かめる：NumPyとMatplotlibの例",
+      "url": "https://zenn.dev/wenlo/articles/a2b9dcc1759bba",
+      "site": "Zenn(Python)",
+      "published": "2026-11-28T02:39:42Z",
+      "description": "直線がそれなりに当てはまって見えても、入力の大きさによって、予測が決まった方向にずれることがあります。そこで「観測値 − 予測値」を残差として、入力ごとにプロットしてみます。今回は、直線では表しきれない曲がりを含む架空のデータを使います。 np.linalg.lstsq で切片つきの直線を当てはめ、Matplotlibで観測値と残差を上下に並べます。下段にはゼロの基準線を引き、縦軸の範囲を上下対称...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "この番号は誰？ 予約の確認電話かもしれない着信を、自分のカレンダー（.ics）と突き合わせる",
+      "url": "https://zenn.dev/whocallmeuknote/articles/e7e8ad498d8369",
+      "site": "Zenn(Python)",
+      "published": "2026-11-28T01:47:45Z",
+      "description": "知らない固定電話の番号から着信があった。ちょうど眼科検診の予約が近いので、その確認の電話だったのかもしれない。でも店のウェブサイトに載っている番号とは違う。この番号は誰？と検索する前に、手元にもう一つ確かめられるものがあります。自分の予定表です。この記事では、そうした投稿を題材に、カレンダーの書き出しファイル（.ics）を標準ライブラリだけの Python で読み、着信の時刻と番号を予約と突き合わ...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "LLMO対策の前に：ChatGPT・Perplexity・Geminiに自サイトが引用されるかをPythonで確かめる",
+      "url": "https://zenn.dev/niedraaa/articles/763922566d3d4d",
+      "site": "Zenn(Python)",
+      "published": "2026-11-28T01:33:24Z",
+      "description": "「LLMO 対策」を始める前に、まず確かめておきたいのは、AI があなたのサイトを読めるかどうかと、実際に読みに来て引用しているかどうかです。手順は4つあります。robots.txt で AI の検索用クローラーを止めていないかを見る。アクセスログで実際に来ているか、ブロックされていないかを見る。AI 経由の訪問を数える。最後に、同じ質問を ChatGPT・Perplexity・Gemini に手...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "ccxt vs 取引所公式 SDK vs 素の requests：個人ボットの API クライアント選び",
+      "url": "https://zenn.dev/ponfreelance/articles/autotrader-type-b-20261103-064541",
+      "site": "Zenn(Python)",
+      "published": "2026-11-28T01:30:26Z",
+      "description": "本記事は、筆者が開発している教材「AutoTrader 実装学習キット」を比較対象に含みます。自社の項は他より詳しく書きますが、できるだけ客観的に評価します。アフィリエイトリンク（PR）は含みません。 仮想通貨の自動売買ボットを個人で作り始めると、最初に当たる分かれ道が「取引所 API をどう叩くか」です。ccxt を入れるのか、取引所公式の SDK を使うのか、素の requests で自前実装...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "Python の例外設計 — カスタム例外クラスの作り方",
+      "url": "https://zenn.dev/akinori901/articles/20261020-plan065",
+      "site": "Zenn(Python)",
+      "published": "2026-11-28T01:26:50Z",
+      "description": "Python でアプリケーションを書いていると、ValueError や RuntimeError といった組み込み例外をそのまま投げる場面が増えてきます。小さなスクリプトならそれで十分ですが、規模が大きくなると「この例外はどこから来たのか」「どう処理を分岐すればいいのか」が追いにくくなります。 この記事では、Python でカスタム例外クラスをどう設計するか、入門者向けに段階を追って整理します。...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "Claude DesktopのST・FHマクロで「検証済み」をスクリプトの出力に置き換える——文字数・コードフェンス・他言語構文の機械検査",
+      "url": "https://zenn.dev/kensho_ya/articles/lint-scripts-machine-verification-st-fh",
+      "site": "Zenn(Python)",
+      "published": "2026-11-28T01:09:06Z",
+      "description": "Claude DesktopにSTやFHマクロ、記事の原稿を書かせるとき、回答に「検証済み」「問題ありません」とだけ書かれても、何をどこまで確かめたのかはこちらからは見えない。この連載の#16で、出力に現れない検証は行われていないものとして扱う、という常時規則のスキルの原則を書いた。今回はその原則を、自作の検査スクリプト2本でどう具体化しているかを書く。 検証の段で言うと、#5で書いた仕様トレース...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
     {
       "title": "クラスカル法で最小全域木を作る｜4棟を最安でつなぐケーブル選び",
       "url": "https://zenn.dev/student_blog/articles/kruskal-minimum-spanning-tree-python",
@@ -29,6 +99,16 @@
       "site": "Zenn(Python)",
       "published": "2026-11-27T22:05:24Z",
       "description": "ChatworkのAPI v2には、GET /my/statusというエンドポイントがあります。ベースURLはhttps://api.chatwork.com/v2で、返ってくるのは自分の未読数、未読のTo（メンション）数、未完了のタスク数です。フィールドでいうとunread_room_num、mention_room_num、mytask_room_num、unread_num、mention_...",
+      "category": "開発",
+      "rss_category": "",
+      "image_url": ""
+    },
+    {
+      "title": "AIが「直りました」と言った。その修正、採っていい？",
+      "url": "https://zenn.dev/veripsa/articles/api-contract-repair-review",
+      "site": "Zenn(Python)",
+      "published": "2026-11-27T22:00:05Z",
+      "description": "AIにエラーを渡し、修正を頼む。しばらくすると、差分と一緒に「直りました。テストも通っています」と返ってくる。 実行すると、確かに動く。でも、変更されたコードを全部説明できるほど詳しくはない。このまま採ってよいのか、もう一度AIに聞くべきなのか。そこで手が止まる人へ向けた記事です。 まず、「何ができれば採るか」を書き、その条件を実際に確認した結果があるかを見るところから始めます。今回なら「合計が1...",
       "category": "開発",
       "rss_category": "",
       "image_url": ""
